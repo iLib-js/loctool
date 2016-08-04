@@ -39,27 +39,33 @@ if (!fs.existsSync(rootDir)) {
 }
 
 var projectTypes = {
-	"android": AndroidProject
+	"android": AndroidProject //,
+	// "iosobjc": IOSObjCProject,
+	// "iosswift": IOSSwiftProject,
+	// "web": WebProject
 };
 var resources;
 var project;
+var fileTypes;
 
 function walk(dir, project) {
-	//console.log(dir);
+	console.log(dir);
 	
-	var results = [], projectRoot = false,
-		fileTypes;
+	var results = [], projectRoot = false;
 	
 	var path = dir + "/project.json";
 	if (fs.existsSync(path)) {
 		var data = fs.readFileSync(path, 'utf8');
 		if (data.length > 0) {
 			var projectProps = JSON.parse(data);
-			console.log("project type: " + projectProps.projectType);
 			var projectType = projectTypes[projectProps.projectType];
 			project = new projectType(projectProps, dir);
-			console.log("loaded project " + projectProps.name);
+			console.log("-------------------------------------------------------------------------------------------");
+			console.log('Project "' + projectProps.name + '", type: ' + projectProps.projectType);
+			
 			fileTypes = project.getFileTypes();
+			//console.log("File Types: ");
+			//console.dir(fileTypes);
 		}
 		projectRoot = true;
 	}
@@ -70,15 +76,19 @@ function walk(dir, project) {
 		var stat = fs.statSync(path);
 		if (stat && stat.isDirectory()) {
 			if (project) {
-				// console.log("There is a project. Checking " + path);
-				if (project.excludes) {
+				//console.log("There is a project. Checking " + path);
+				//console.log("Project: ");
+				//console.dir(project);
+				if (project.options.excludes) {
 					//console.log("There are excludes ");
-					if (project.excludes.indexOf(path) === -1) {
+					if (project.options.excludes.indexOf(path) === -1) {
 						//console.log("Not excluded.");
 						walk(path, project);
+					//} else {
+						//console.log("Excluded");
 					}
 				} else {
-					//console.log("Neither includes or excludes");
+					//console.log("Neither includes or excludes.");
 					walk(path, project);
 				}
 			} else {
@@ -88,10 +98,13 @@ function walk(dir, project) {
 			if (fileTypes) {
 				for (var i = 0; i < fileTypes.length; i++) {
 					if (fileTypes[i].handles(path)) {
+						console.log("  " + path);
 						var file = fileTypes[i].newFile(path);
 						file.extract();
 					}
 				}
+			} else {
+				// no file types to check?
 			}
 		}
 	});
@@ -102,12 +115,18 @@ function walk(dir, project) {
 			fileTypes[i].generatePseudo();
 			fileTypes[i].write();
 		}
+		
+		project = undefined;
+		fileTypes = undefined;
 	}
 	return results;
 }
 
-walk(rootDir, undefined);
-
+try {
+	walk(rootDir, undefined);
+} catch (e) {
+	console.dir(e);
+}
 /*
 var obj = {};
 if (path.match(/[a-z]+\.jf/)) {

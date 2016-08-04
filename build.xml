@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+build.xml - build the translation circle app 
+
+Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
+-->
+
+<project name="loctool" default="test">
+	<!-- =================================================================== -->
+	<!-- properties                                                          -->
+	<!-- =================================================================== -->
+
+	<!-- Give user a chance to override properties without editing this file -->
+	<!-- (and without typing -D each time it compiles it)                    -->
+	<property file="build.properties"/>
+	<property file="version.properties"/>
+	
+	<!-- Properties that can be overridden -->
+	<!-- directories -->
+	<property name="build.base"						value="${basedir}"/>
+	<property name="build.src"						value="${build.base}/lib"/>
+	<property name="build.test"						value="${build.base}/test"/>
+	
+	<macrodef name="run">
+		<attribute name="executable"/>
+        <attribute name="script"/>
+        <attribute name="args"/>
+		<attribute name="dir"/>
+		<sequential>
+			<exec osfamily="unix" executable="@{executable}" dir="@{dir}" failifexecutionfails="true" failonerror="true">
+				<arg line="@{args}"/>
+				<arg line="@{script}"/>
+			</exec>
+			<exec osfamily="mac" executable="@{executable}" dir="@{dir}" failifexecutionfails="true" failonerror="true">
+				<arg line="@{args}"/>
+				<arg line="@{script}"/>
+			</exec>
+			<exec osfamily="windows" executable="@{executable}.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
+				<arg line="@{args}"/>
+				<arg line="@{script}"/>
+			</exec>
+		</sequential>
+	</macrodef>
+
+	<target name="test.translationset" description="Run only the translation set tests">
+		<run script="${build.test}/testTranslationSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+	</target>
+	
+	<target name="test" depends="test.translationset"></target>
+</project>
