@@ -1,0 +1,47 @@
+{
+    "name": "loctool",
+    "version": "1.0.0",
+    "main": "loctool.js",
+    "description": "A string resource extractor for multiple files types and project types",
+    "keywords": [
+        "internationalization", 
+        "i18n", 
+        "localization", 
+        "l10n", 
+        "globalization", 
+        "g11n",
+        "strings",
+        "resources",
+        "locale",
+        "translation"
+    ],
+    "email": "marketing@jedlsoft.com",
+    "author": {
+    	"name": "Edwin Hoogerbeets",
+    	"web": "http://www.healthtap.com/",
+    	"email": "edwin.hoogerbeets@healthtap.com"
+    },
+    "contributors": [
+        {
+            "name": "Edwin Hoogerbeets",
+            "email": "edwin.hoogerbeets@healthtap.com" 
+        } 
+    ],
+    "files": [
+        "lib",
+        "README.md"
+    ],
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": ""
+        }
+    ],
+    "engines": {
+        "nodejs": "<= 0.10.*"
+    }
+}
