@@ -67,10 +67,6 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 				<arg line="@{args}"/>
 				<arg line="@{script}"/>
 			</exec>
-			<exec osfamily="mac" executable="@{executable}" dir="@{dir}" failifexecutionfails="true" failonerror="true">
-				<arg line="@{args}"/>
-				<arg line="@{script}"/>
-			</exec>
 			<exec osfamily="windows" executable="@{executable}.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
 				<arg line="@{args}"/>
 				<arg line="@{script}"/>
