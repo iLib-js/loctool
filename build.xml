@@ -18,9 +18,45 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 	<!-- Properties that can be overridden -->
 	<!-- directories -->
 	<property name="build.base"						value="${basedir}"/>
-	<property name="build.src"						value="${build.base}/lib"/>
+	<property name="build.lib"						value="${build.base}/lib"/>
 	<property name="build.test"						value="${build.base}/test"/>
+	<property name="build.jsdoc"                    value="${build.base}/jsdoc"/>
 	
+    <target name="clean" description="Remove all generated files to start from scratch">
+        <delete dir="${build.jsdoc}"/>
+    </target>
+    
+    <target name="prepare" description="Prepare all directories that are needed before the project can be built">
+    </target>
+
+    <target name="testjsdoc" description="test whether or not the jsdocs need to be rebuilt">
+        <uptodate
+                property="jsdoc.not.needed"
+                targetfile="${build.jsdoc}/index.html">
+            <srcfiles dir="${build.lib}" includes="**/*.js"/>
+        </uptodate>
+    </target>
+
+    <target name="doc"
+            depends="prepare,testjsdoc"
+            description="creates jsdoc for all local javascript files in this project"
+            unless="jsdoc.not.needed">
+        <delete dir="${build.jsdoc}"/>
+        <mkdir dir="${build.jsdoc}"/>
+        <echo>Executing jsdoc ... </echo>
+        <java dir="${build.base}" jar="${JSDOCDIR}/jsrun.jar" fork="true">
+            <jvmarg value="-Djsdoc.dir=${JSDOCDIR}"/>
+            <jvmarg value="-Djsdoc.template.dir=${JSDOCDIR}/templates/jsdoc"/>
+            <jvmarg value="-Xmx1024m"/>
+            <jvmarg value="-XX:MaxPermSize=96m"/>
+            <arg value="${JSDOCDIR}/app/run.js"/>
+            <arg value="--directory=${build.jsdoc}"/>
+            <arg value="--recurse=100"/>
+            <arg value="--encoding=utf-8"/>
+            <arg value="${build.lib}"/>
+        </java>
+    </target>
+
 	<macrodef name="run">
 		<attribute name="executable"/>
         <attribute name="script"/>
