@@ -1,0 +1,25 @@
+<!-- 
+tests.html - test a user in the browser
+
+Copyright © 2016, Healthtap, Inc. All Rights Reserved.
+-->
+<html>
+  <head>
+    <title>Test Suite</title>
+    <link rel="stylesheet" href="nodeunit/nodeunit.css" type="text/css" />
+    <script type="text/javascript">
+    	var module = {};
+    </script>
+    <script src="nodeunit/nodeunit.js"></script>
+    <script src="../lib/Set.js"></script>
+    <script src="testSet.js"></script>
+  </head>
+  <body>
+    <h1 id="nodeunit-header">Loctool Test Suite</h1>
+    <script>
+      nodeunit.run({
+        'testSet': module.exports
+      });
+    </script>
+  </body>
+</html>
