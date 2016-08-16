@@ -74,6 +74,10 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		</sequential>
 	</macrodef>
 
+    <target name="test.resourcestring" description="Run only the resource string tests">
+        <run script="${build.test}/testResourceString.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+    </target>
+    
 	<target name="test.translationset" description="Run only the translation set tests">
 		<run script="${build.test}/testTranslationSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
@@ -82,5 +86,5 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
 	
-	<target name="test" depends="test.translationset,test.set"></target>
+	<target name="test" depends="test.translationset,test.set,test.resourcestring"></target>
 </project>
