@@ -10,12 +10,7 @@ if (!TranslationSet) {
 }
 
 module.exports = {
-    moduleSetUp: function(test) {
-        
-        test.done();
-    },
-    
-    testTranslationSetConstructor: function(test) {
+     testTranslationSetConstructor: function(test) {
         test.expect(1);
 
         var ts = new TranslationSet();
