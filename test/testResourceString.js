@@ -6,6 +6,8 @@
 
 if (!ResourceString) {
     var ResourceString = require("../lib/ResourceString.js");
+    var ilib = require("ilib");
+    var ResBundle = require("ilib/lib/ResBundle");
 }
 
 module.exports = {
@@ -125,7 +127,7 @@ module.exports = {
         test.done();
     },
     
-    testResourceAddTranslation: function(test) {
+    testResourceStringAddTranslation: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
@@ -143,7 +145,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceAddTranslationEmpty: function(test) {
+    testResourceStringAddTranslationEmpty: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
@@ -161,7 +163,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceAddTranslationNoLocale: function(test) {
+    testResourceStringAddTranslationNoLocale: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
@@ -179,7 +181,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceGetTranslationEmpty: function(test) {
+    testResourceStringGetTranslationEmpty: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
@@ -195,7 +197,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceAddTranslationMultiple: function(test) {
+    testResourceStringAddTranslationMultiple: function(test) {
         test.expect(3);
 
         var rs = new ResourceString({
@@ -215,7 +217,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceAddTranslationClear: function(test) {
+    testResourceStringAddTranslationClear: function(test) {
         test.expect(3);
 
         var rs = new ResourceString({
@@ -237,7 +239,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceGetTranslatedResource: function(test) {
+    testResourceStringGetTranslatedResource: function(test) {
         test.expect(6);
 
         var rs = new ResourceString({
@@ -261,7 +263,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceGetTranslatedResourceNoTranslation: function(test) {
+    testResourceStringGetTranslatedResourceNoTranslation: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
@@ -279,7 +281,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceGetTranslationLocales: function(test) {
+    testResourceStringGetTranslationLocales: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
@@ -298,7 +300,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceGetTranslationLocalesNoTranslations: function(test) {
+    testResourceStringGetTranslationLocalesNoTranslations: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
@@ -314,7 +316,7 @@ module.exports = {
         test.done();
     },
     
-    testResourceMerge: function(test) {
+    testResourceStringMerge: function(test) {
         test.expect(3);
 
         var rs = new ResourceString({
@@ -339,7 +341,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceMergeEmpty: function(test) {
+    testResourceStringMergeEmpty: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
@@ -356,7 +358,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceMergeSame: function(test) {
+    testResourceStringMergeSame: function(test) {
         test.expect(4);
 
         var rs = new ResourceString({
@@ -381,7 +383,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceMergeDup: function(test) {
+    testResourceStringMergeDup: function(test) {
         test.expect(3);
 
         var rs = new ResourceString({
@@ -407,7 +409,7 @@ module.exports = {
         test.done();
     },
 
-    testResourceMergeDupNoLocales: function(test) {
+    testResourceStringMergeDupNoLocales: function(test) {
         test.expect(3);
 
         var rs = new ResourceString({
@@ -431,4 +433,117 @@ module.exports = {
         test.done();
     },
 
+    testResourceStringGeneratePseudo: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        var rb = new ResBundle({
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        test.ok(!rs.getTranslation("de-DE"));
+        
+        rs.generatePseudo("de-DE", rb);
+
+        test.ok(rs.getTranslation("de-DE"));
+        
+        test.done();
+    },
+
+    testResourceStringGeneratePseudoRightString: function(test) {
+        test.expect(4);
+
+        var rs = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        var rb = new ResBundle({
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        test.ok(!rs.getTranslation("de-DE"));
+        
+        rs.generatePseudo("de-DE", rb);
+
+        var t = rs.getTranslation("de-DE");
+        test.ok(t);
+        test.equal(t, "Ťĥíš íš à ţëšţ");
+        
+        test.done();
+    },
+
+    testResourceStringGeneratePseudoAddToLocales: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        var rb = new ResBundle({
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        test.deepEqual(rs.getTranslationLocales(), []);
+        
+        rs.generatePseudo("de-DE", rb);
+
+        test.deepEqual(rs.getTranslationLocales(), ["de-DE"]);
+        
+        test.done();
+    },
+
+    testResourceStringGeneratePseudoBadLocale: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        var rb = new ResBundle({
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        test.deepEqual(rs.getTranslationLocales(), []);
+        
+        rs.generatePseudo(undefined, rb);
+
+        test.deepEqual(rs.getTranslationLocales(), []);
+        
+        test.done();
+    },
+
+    testResourceStringGeneratePseudoBadBundle: function(test) {
+        test.expect(4);
+
+        var rs = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        test.deepEqual(rs.getTranslationLocales(), []);
+        
+        rs.generatePseudo("de-DE", undefined);
+
+        test.ok(!rs.getTranslation("de-DE"));
+        test.deepEqual(rs.getTranslationLocales(), []);
+        
+        test.done();
+    }
 };
