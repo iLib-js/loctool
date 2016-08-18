@@ -112,21 +112,6 @@ module.exports = {
         test.done();
     },
 
-    testResourceStringGetSource: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-            id: "foo",
-            source: "source string",
-            pathName: "a/b/c.txt",
-            locale: "de-DE"
-        });
-        test.ok(rs);
-        test.equal(rs.getSource(), "source string");
-        
-        test.done();
-    },
-    
     testResourceStringAddTranslation: function(test) {
         test.expect(2);
 
@@ -257,8 +242,8 @@ module.exports = {
         test.ok(rs2);
         test.equal(rs2.getId(), "asdf");
         test.equal(rs2.getSource(), "Dies ist einem Test.");
-        test.equal(rs.locale, "de-DE");
-        test.equal(rs.pathName, "a/b/c.java");
+        test.equal(rs2.locale, "de-DE");
+        test.equal(rs2.pathName, "a/b/c.java");
                 
         test.done();
     },
