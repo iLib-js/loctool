@@ -87,7 +87,6 @@ Copyright © 2016, HealthTap Inc. All Rights Reserved.
 	<target name="clean" description="Remove all generated files to start from scratch">
 		<delete dir="${build.classes}"/>
 		<delete dir="${build.output}"/>
-		<delete dir="${build.data}"/>
 	</target>
 
 	<target name="prepare" description="Prepare all directories that are needed before the project can be built">
@@ -106,8 +105,8 @@ Copyright © 2016, HealthTap Inc. All Rights Reserved.
 	<!-- =================================================================== -->
 	<target name="jars" depends="jars.debug,jars.release" description="Create all jar files"/>
 
-	<target name="jars.debug" depends="data,jar.ilib.debug" description="Create all jar files in debug mode"/>
-	<target name="jars.release" depends="data,jar.ilib.release" description="Create all jar files in release mode"/>
+	<target name="jars.debug" depends="jar.ilib.debug" description="Create all jar files in debug mode"/>
+	<target name="jars.release" depends="jar.ilib.release" description="Create all jar files in release mode"/>
 
 	<!-- =================================================================== -->
 	<!-- Create the core jar file                                            -->
@@ -121,6 +120,7 @@ Copyright © 2016, HealthTap Inc. All Rights Reserved.
 				encoding="utf-8"
 			    includeAntRuntime="no"
                 optimize="${optimizeFlag}"
+				source="1.7"
 				target="1.7">
 			<classpath refid="${classPathRef}"/>
 			<exclude name="**/.svn/**"/>
