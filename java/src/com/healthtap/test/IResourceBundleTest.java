@@ -21,7 +21,7 @@ public class IResourceBundleTest extends TestCase
 	public IResourceBundleTest() {
 		System.out.println("Got here");
 	}
-	Resources res = new MockResources();
+	Resources res = MockResources.getSystem();
 	
 	public void testConstructorNotNull()
 	{
