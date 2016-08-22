@@ -587,7 +587,7 @@ public class IResourceBundle {
 		}
 		String value = "r" + hash;
 		
-		System.out.println("String '" + source + "' hashes to " + value);
+		// System.out.println("String '" + source + "' hashes to " + value);
 		
 		return isHTML_XML_Type() ? unescape(value) : value;
     }

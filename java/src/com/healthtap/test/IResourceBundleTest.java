@@ -19,10 +19,6 @@ import junit.framework.TestCase;
  */
 public class IResourceBundleTest extends TestCase
 {
-	public IResourceBundleTest() {
-		System.out.println("Got here");
-	}
-	
 	public class MockResources implements IStringProvider {
 		protected HashMap<Integer,String> map = new HashMap<Integer,String>();
 		
