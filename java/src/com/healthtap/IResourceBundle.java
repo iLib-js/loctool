@@ -11,9 +11,6 @@ import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import android.R;
-import android.content.res.Resources;
-
 /**
  * A class that represents a resource bundle for Android with methods 
  * that can look up
@@ -37,12 +34,13 @@ public class IResourceBundle {
 	
 	protected static volatile Locale sourceLocale		= new Locale("en-US");
 
-	protected Resources resources;
+	protected Class R;
+	protected IStringProvider resources;
     protected Locale targetLocale;
     protected String name;
     protected String type;
     protected Map<String, String> pseudoCharacters = null;
-	protected boolean lengthen;
+	protected boolean lengthen = true;
 	protected MissingType missing = MissingType.SOURCE;
 	
 	protected String[][] pseudoCyrl = {
@@ -258,15 +256,18 @@ public class IResourceBundle {
 	/**
 	 * Construct a new IResourceBundle and load in the Java
 	 * ResourceBundle for delegation.
-	 * @param resources the Android resources for this app
+	 * @param R class containing the unique string id to id number mapping
+	 * @param resources a string provider that is a source of string
 	 * @param locale the ilib locale for this bundle, or null to use
 	 * the current locale
 	 */
-	public IResourceBundle(Resources resources, Locale locale) {
-		System.out.println("rb Got here");
-		// TODO Auto-generated constructor stub
+	public IResourceBundle(Class R, IStringProvider resources, Locale locale) {
+		this.R = R;
 		this.resources = resources;
-		this.targetLocale = locale;
+		this.targetLocale = locale != null ? locale : Locale.forLanguageTag("en-US");
+		
+		this.type = RAW_TYPE;
+		initPseudoMap();
 	}
 
 	/**
@@ -274,10 +275,11 @@ public class IResourceBundle {
 	 * ResourceBundle for delegation. This uses the given base name
 	 * but the default locale.
 	 * 
-	 * @param resources the Android resources for this app
+	 * @param R class containing the unique string id to id number mapping
+	 * @param resources a string provider that is a source of string
 	 */
-	public IResourceBundle(Resources resources) {
-		this(resources, null);
+	public IResourceBundle(Class R, IStringProvider resources) {
+		this(R, resources, null);
 	}
 
 	/**
@@ -285,7 +287,7 @@ public class IResourceBundle {
 	 * @return
 	 */
 	public Enumeration<String> getKeys() {
-		Field[] fields = R.string.class.getFields();
+		Field[] fields = R.getFields();
 		HashSet<String> s = new HashSet<String>();
 		for (int i = 0; i < fields.length; i++) {
 			s.add(fields[i].getName());
@@ -299,7 +301,7 @@ public class IResourceBundle {
 
     	String[][] pseudo;
     	
-    	switch( targetLocale.getScript() ) {
+    	switch( ScriptInfo.getScriptByLocale(targetLocale) ) {
     		case "Cyrl":
     			pseudo = pseudoCyrl;
     			break;
@@ -340,7 +342,7 @@ public class IResourceBundle {
     public boolean containsSource(String source)
     {
     	try {
-    		Field f = R.string.class.getField(makeKey(source));
+    		Field f = R.getField(makeKey(source));
     		return f != null;
     	} catch (NoSuchFieldException e) {
     	}
@@ -349,21 +351,20 @@ public class IResourceBundle {
     }
 
     /**
-     * Examines if given unique key or source string has already been 
-     * translated or not.
+     * Examines if given unique key has already been translated or not.
      * 
-     * @param sourceOrKey unique key or source string to be examined
+     * @param key unique key to be examined
      * @return true if source string or unique key are found in translations. False otherwise.
      */
-    public boolean containsKey(String sourceOrKey)
+    public boolean containsKey(String key)
     {
     	try {
-    		Field f = R.string.class.getField(sourceOrKey);
+    		Field f = R.getField(key);
     		return f != null;
     	} catch (NoSuchFieldException e) {
     	}
     	
-    	return containsSource(sourceOrKey);
+    	return false;
     }
 
 	/**
@@ -586,6 +587,8 @@ public class IResourceBundle {
 		}
 		String value = "r" + hash;
 		
+		System.out.println("String '" + source + "' hashes to " + value);
+		
 		return isHTML_XML_Type() ? unescape(value) : value;
     }
     
@@ -598,7 +601,7 @@ public class IResourceBundle {
      */
     protected String getAndroidString(String keyName) {
     	try {
-	    	Field f = R.string.class.getField(keyName);
+	    	Field f = R.getField(keyName);
 	    	return resources.getString(f.getInt(null));
     	} catch (Exception e) {
     		return null;

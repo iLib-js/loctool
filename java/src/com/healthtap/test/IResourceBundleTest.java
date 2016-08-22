@@ -3,12 +3,13 @@
  */
 package com.healthtap.test;
 
+import java.util.HashMap;
 import java.util.Locale;
 
 import com.healthtap.IResourceBundle;
 import com.healthtap.IResourceBundle.MissingType;
+import com.healthtap.IStringProvider;
 
-import android.content.res.Resources;
 import junit.framework.TestCase;
 
 
@@ -21,47 +22,92 @@ public class IResourceBundleTest extends TestCase
 	public IResourceBundleTest() {
 		System.out.println("Got here");
 	}
-	Resources res = MockResources.getSystem();
 	
+	public class MockResources implements IStringProvider {
+		protected HashMap<Integer,String> map = new HashMap<Integer,String>();
+		
+		public MockResources() {}
+		
+		public MockResources(Locale locale) {
+			if (locale.getLanguage() == "fr") {
+				map.put(1, "Connexion en cours...");
+				map.put(6, "Services Palm");
+			} else if (locale.getLanguage() == "de") {
+				map.put(7, "Nicht aktualisieren");
+			} else if (locale.getLanguage() == "es") {
+				if (locale.getCountry() == "MX") {
+					map.put(2, "Falló la opción de no participar. Intenta más tarde");
+					map.put(3, "Listo");
+					map.put(5, "Se ha enviado un mensaje de verificación a {email}.");
+				} else {
+					map.put(2, "Falló la opción de no participar. Intentarlo más tarde.");
+					map.put(3, "Aceptar");
+					map.put(5, "Se envió un mensaje de verificación a {email}.");
+				}
+			} else if (locale.getLanguage() == "it") {
+				map.put(8,  "");
+				map.put(9,  "");
+			} else if (locale.getLanguage() == "zh") {
+				if (locale.getCountry() == "CN") {
+					map.put(4, "保持备份打开");
+				} else {
+					map.put(4, "保持備份打開");
+				}
+			}
+		}
+
+		public String getString(int id) {
+			String translation = map.get(id);
+			return translation;
+		}
+	}
+		
 	public void testConstructorNotNull()
 	{
-		IResourceBundle rb = new IResourceBundle(res);
+		MockResources res = new MockResources();
+		IResourceBundle rb = new IResourceBundle(R.string.class, res);
 		assertNotNull(rb);
 	}
 	
 	public void testConstructorResourcesNotNull()
 	{
-		IResourceBundle rb = new IResourceBundle(res);
+		MockResources res = new MockResources();
+		IResourceBundle rb = new IResourceBundle(R.string.class, res);
 		assertNotNull(rb);
 	}
 	
 	public void testNullLocale()
 	{
-		IResourceBundle rb = new IResourceBundle(res, null);
+		MockResources res = new MockResources();
+		IResourceBundle rb = new IResourceBundle(R.string.class, res, null);
 		assertNotNull(rb);
 		
-		assertEquals("en-US", rb.getLocale().toString());
+		assertEquals("en_US", rb.getLocale().toString());
 	}
 	
 	public void testEmptyLocale()
 	{
-		Locale l = new Locale("");
-		IResourceBundle rb = new IResourceBundle(res, l);
+		Locale l = Locale.getDefault();
+		MockResources res = new MockResources(l);
+		IResourceBundle rb = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(rb);
 		
-		assertEquals("en-US", rb.getLocale().toString());
+		assertEquals("en_US", rb.getLocale().toString());
 	}
 
 	public void testConstructorResourcesAndLocale()
 	{
-		Locale l = new Locale("fr-FR");
-		IResourceBundle rb = new IResourceBundle(res, l);
+		Locale l = Locale.forLanguageTag("fr-FR");
+		MockResources res = new MockResources(l);
+		IResourceBundle rb = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(rb);
 	}
 
 	public void testContainsSourceTrue()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("fr-FR"));
+		Locale l = Locale.forLanguageTag("fr-FR");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(resBundle);
 		
 		String result = resBundle.getString("Signing in...");
@@ -70,17 +116,21 @@ public class IResourceBundleTest extends TestCase
 
 	public void testContainsSourceFalse()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("fr-FR"));
+		Locale l = Locale.forLanguageTag("fr-FR");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res,l);
 		assertNotNull(resBundle);
 		
-		String result = resBundle.getString("Services Palm");
+		String result = resBundle.getString("Palm Services");
 		assertEquals("Services Palm", result.toString());
 		assertNotSame("Palm Services", result.toString());
 	}
 
 	public void testGetLocStringBaseLocale1()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("es-ES"));
+		Locale l = Locale.forLanguageTag("es-ES");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(resBundle);
 		
 		String result = resBundle.getString("Opt out failed. Try later");
@@ -89,7 +139,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetLocStringNonBaseLocale1()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("es-MX"));
+		Locale l = Locale.forLanguageTag("es-MX");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(resBundle);
 		
 		String result = resBundle.getString("Opt out failed. Try later");
@@ -99,7 +151,9 @@ public class IResourceBundleTest extends TestCase
 	
 	public void testGetLocStringBaseLocale2()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("es-ES"));
+		Locale l = Locale.forLanguageTag("es-ES");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(resBundle);
 		
 		String result = resBundle.getString("Done");
@@ -108,7 +162,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetLocStringNonBaseLocale2()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("es-MX"));
+		Locale l = Locale.forLanguageTag("es-MX");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(resBundle);
 		
 		String result = resBundle.getString("Done");
@@ -118,7 +174,9 @@ public class IResourceBundleTest extends TestCase
 	
 	public void testGetLocStringBaseLocale3()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("zh-Hans-CN"));
+		Locale l = Locale.forLanguageTag("zh-Hans-CN");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(resBundle);
 		
 		String result = resBundle.getString("Keep Backup On");
@@ -127,7 +185,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetLocStringNonBaseLocale3()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("zh-HK"));
+		Locale l = Locale.forLanguageTag("zh-HK");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(resBundle);
 		
 		String result = resBundle.getString("Keep Backup On");
@@ -137,7 +197,9 @@ public class IResourceBundleTest extends TestCase
 	
 	public void testGetLocStringWithExistedKey1()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("es-ES"));
+		Locale l = Locale.forLanguageTag("es-ES");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(resBundle);
 		
 		String result = resBundle.getString("A verification email was sent to {email}.");
@@ -146,7 +208,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetLocStringWithExistedKey2()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("es-MX"));
+		Locale l = Locale.forLanguageTag("es-MX");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(resBundle);
 		
 		String result = resBundle.getString("A verification email was sent to {email}.");
@@ -156,28 +220,22 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetLocStringWithNonExistedKey1()
 	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("it-IT"));
+		Locale l = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
 		assertNotNull(resBundle);
 		
+		// right string, wrong key means no match
 		String result = resBundle.getString("Email Sent", "emailsent");
-		//assertEquals("Email Sent", result.toString());
-		assertEquals("emailsent", result.toString());
-	}
-
-	public void testGetLocStringWithNonExistedKey2()
-	{
-		IResourceBundle resBundle = new IResourceBundle(res, new Locale("it-IT"));
-		assertNotNull(resBundle);
-		
-		String result = resBundle.getString("You must use a valid email address format.", "usevalidemail");
-		//assertEquals("You must use a valid email address format.", result.toString());
-		assertEquals("usevalidemail", result.toString());
+		assertEquals("Email Sent", result.toString());
+		// assertEquals("emailsent", result.toString());
 	}
 	
 	public void testGetLocaleWithResourcesGermany()
 	{
-		final Locale locale = new Locale("de-DE");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		assertNotNull(resBundle);
 
 		assertEquals(locale.toString(), resBundle.getLocale().toString());
@@ -185,8 +243,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetLocaleWithResourcesNetherlands()
 	{
-		final Locale locale = new Locale("nl-NL");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("nl-NL");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		assertNotNull(resBundle);
 
 		assertEquals(locale.toString(), resBundle.getLocale().toString());
@@ -194,8 +253,9 @@ public class IResourceBundleTest extends TestCase
 	
 	public void testGetStringDefaultPseudo()
 	{
-		final Locale locale = new Locale("zxx");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("zxx");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		assertNotNull(resBundle);
 
 		assertEquals("Ïñvàľíð Ňëţŵõŕķ Ňàmë9876543210", resBundle.getString("Invalid Network Name").toString());
@@ -203,8 +263,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetStringCyrlPseudo()
 	{
-		final Locale locale = new Locale("zxx-Cyrl-RU");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("zxx-Cyrl-RU");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		assertNotNull(resBundle);
 
 		assertEquals("Инвалид Нэтwорк Намэ9876543210", resBundle.getString("Invalid Network Name").toString());
@@ -212,8 +273,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetStringPseudo()
 	{
-		final Locale locale = new Locale("de-DE");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		assertNotNull(resBundle);
 
 		assertEquals("àçţüàľ šţàţë fõŕ Ŵífí: 6543210", resBundle.getStringPseudo("actual state for Wifi: ").toString());
@@ -221,8 +283,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetStringPseudoMissing()
 	{
-		final Locale locale = new Locale("de-DE");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setMissingType(MissingType.PSEUDO);
 		assertNotNull(resBundle);
 
@@ -233,8 +296,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetStringPseudoMissingLengthenFalse()
 	{
-		final Locale locale = new Locale("de-DE");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setMissingType(MissingType.PSEUDO);
 		resBundle.setLengthen(false);
 		assertNotNull(resBundle);
@@ -245,8 +309,9 @@ public class IResourceBundleTest extends TestCase
 	
 	public void testGetStringKeyValueNull()
 	{
-		final Locale locale = new Locale("de-DE");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		assertNotNull(resBundle);
 
 		assertNull(resBundle.getString(null));
@@ -254,38 +319,20 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetStringEmptyMissing()
 	{
-		final Locale locale = new Locale("de-DE");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setMissingType(MissingType.EMPTY);
 		assertNotNull(resBundle);
 
 		assertEquals("", resBundle.getString("Don't Update an email").toString());
 	}
 
-	public void testGetStringSameTargetAndSourceLocalesKeySource()
-	{
-		final Locale locale = new Locale("uk-UA");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
-		resBundle.setMissingType(MissingType.EMPTY);
-		assertNotNull(resBundle);
-
-		assertEquals("Здоровенькі були!", resBundle.getString("Здоровенькі були!", "Cheers!").toString());
-	}
-	
-	public void testGetStringSameTargetAndSourceLocalesSource()
-	{
-		final Locale locale = new Locale("uk-UA");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
-		resBundle.setMissingType(MissingType.EMPTY);
-		assertNotNull(resBundle);
-
-		assertEquals("Здоровенькі були!", resBundle.getString("Здоровенькі були!").toString());
-	}
-	
 	public void testGetPseudoStringLatnScript()
 	{
-		final Locale locale = new Locale("en-GB");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("en-GB");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setMissingType(MissingType.PSEUDO);
 		assertNotNull(resBundle);
 
@@ -294,8 +341,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetPseudoStringCyrlScript()
 	{
-		final Locale locale = new Locale("uk-UA");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("uk-UA");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setMissingType(MissingType.PSEUDO);
 		assertNotNull(resBundle);
 
@@ -304,8 +352,9 @@ public class IResourceBundleTest extends TestCase
 
 	public void testGetPseudoStringHebrScript()
 	{
-		final Locale locale = new Locale("he-IL");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("he-IL");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setMissingType(MissingType.PSEUDO);
 		assertNotNull(resBundle);
 
@@ -314,8 +363,9 @@ public class IResourceBundleTest extends TestCase
 	
 	public void testGetPseudoStringHansScript()
 	{
-		final Locale locale = new Locale("zh-HK");
-		IResourceBundle resBundle = new IResourceBundle(res, locale);
+		final Locale locale = Locale.forLanguageTag("zh-HK");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
 		resBundle.setMissingType(MissingType.PSEUDO);
 		resBundle.setLengthen(false);
 		assertNotNull(resBundle);
