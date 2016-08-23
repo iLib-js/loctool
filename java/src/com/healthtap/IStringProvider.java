@@ -4,7 +4,9 @@
 package com.healthtap;
 
 /**
- * @interface A provider of strings
+ * A provider of strings for the IResourceBundle class. Callers
+ * must wrap their own resource class with a class that implements
+ * this interface.
  * 
  * @author edwinhoogerbeets
  */
@@ -13,7 +15,7 @@ public interface IStringProvider {
 	 * Return a string based on the given numeric id.
 	 * 
 	 * @param id the numeric id to look up
-	 * @return
+	 * @return the translation with the given numeric id
 	 */
 	public String getString(int id);
 }

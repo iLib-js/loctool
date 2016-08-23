@@ -27,23 +27,23 @@ import java.util.Map;
  *
  */
 public class IResourceBundle {
-	protected static final String HTML_TYPE 				= "html";
-	protected static final String XML_TYPE 					= "xml";
-	protected static final String RAW_TYPE 					= "raw";
-	protected static final String PSEUDO_JSON				= "pseudomap.json";
+	private static final String HTML_TYPE 				= "html";
+	private static final String XML_TYPE 				= "xml";
+	private static final String RAW_TYPE 				= "raw";
+	private static final String PSEUDO_JSON				= "pseudomap.json";
 	
 	protected static volatile Locale sourceLocale		= new Locale("en-US");
 
 	protected Class R;
-	protected IStringProvider resources;
+	private IStringProvider resources;
     protected Locale targetLocale;
     protected String name;
     protected String type;
-    protected Map<String, String> pseudoCharacters = null;
+    private Map<String, String> pseudoCharacters = null;
 	protected boolean lengthen = true;
 	protected MissingType missing = MissingType.SOURCE;
 	
-	protected String[][] pseudoCyrl = {
+	private String[][] pseudoCyrl = {
 		{"a", "а"},
 		{"b", "б"},
 		{"c", "ч"},
@@ -95,7 +95,7 @@ public class IResourceBundle {
 		{"Y", "Я"},
 		{"Z", "З"}
 	};
-	protected String[][] pseudoHans = {
+	private String[][] pseudoHans = {
 		{"a", "阿"},
 		{"b", "不"},
 		{"c", "可"},
@@ -148,7 +148,7 @@ public class IResourceBundle {
 		{"Z", "子"}	
 	};
 	
-	protected String[][] pseudoHebr = {
+	private String[][] pseudoHebr = {
 		{"a", "ַ"},
 		{"b", "בּ"},
 		{"c", "ק"},
@@ -203,7 +203,7 @@ public class IResourceBundle {
 		{"Z", "ז"}
 	};
 
-	protected String[][] pseudoLatn = {
+	private String[][] pseudoLatn = {
 		{"a", "à"},
 		{"c", "ç"},
 		{"d", "ð"},
@@ -246,10 +246,30 @@ public class IResourceBundle {
 		{"Z", "Ż"}	
 	};
 
+	/**
+	 * Specifies the type of strategy to use when the translation of a source string or key is not found.
+	 * 
+	 * @author edwinhoogerbeets
+	 */
 	public enum MissingType {
+		/**
+		 * return source string if translation is not found.
+		 */
 		SOURCE,
+
+		/**
+		 * return pseudo localized string from source string if translation is not found.
+		 */
 		PSEUDO,
+
+		/**
+		 * return empty string if translation is not found.
+		 */
 		EMPTY,
+
+		/**
+		 * return a placeholder string instead.
+		 */
 		PLACEHOLDER
 	};
 
@@ -284,7 +304,7 @@ public class IResourceBundle {
 
 	/**
 	 * Delegated
-	 * @return
+	 * @return an array of keys in this bundle
 	 */
 	public Enumeration<String> getKeys() {
 		Field[] fields = R.getFields();
@@ -414,15 +434,17 @@ public class IResourceBundle {
 	
 	/**
 	 * Returns missing option - that option specifies behavior in case when translation is not found
-	 * by given key or value.
+	 * by given key or value.<p>
 	 * 
-	 * <info>
 	 * Possible values:
-	 * 		SOURCE - return source string if translation is not found;
-	 * 		PSEUDO - return pseudo localized string from source string if translation is not found;
-	 * 		EMPTY  - return empty string if translation is not found.
-	 * </info>
-	 * @return missing option value
+	 * 
+	 * <ul>
+	 * <li>MissingType.SOURCE - return source string if translation is not found.
+	 * <li>MissingType.PSEUDO - return pseudo localized string from source string if translation is not found.
+	 * <li>MissingType.EMPTY  - return empty string if translation is not found.
+	 * <li>MissingType.PLACEHOLDER - return a placeholder string instead.
+	 * </ul>
+	 * @return The type of strategy in use for missing strings
 	 */
 	public MissingType getMissing() {
 		return missing;
@@ -432,13 +454,16 @@ public class IResourceBundle {
 	 * Specifies missing option - option, that specifies behavior in case when translation is not found
 	 * by given key or value.
 	 * 
-	 * <info>
 	 * Possible values:
-	 * 		SOURCE - return source string if translation is not found;
-	 * 		PSEUDO - return pseudo localized string from source string if translation is not found;
-	 * 		EMPTY  - return empty string if translation is not found.
-	 * </info>
-	 * @param type
+	 * 
+	 * <ul>
+	 * <li>MissingType.SOURCE - return source string if translation is not found.
+	 * <li>MissingType.PSEUDO - return pseudo localized string from source string if translation is not found.
+	 * <li>MissingType.EMPTY  - return empty string if translation is not found.
+	 * <li>MissingType.PLACEHOLDER - return a placeholder string instead.
+	 * </ul>
+	 * 
+	 * @param type The type of strategy to use for missing strings
 	 */
 	public void setMissingType(MissingType type) {
 		this.missing = type;
@@ -630,9 +655,12 @@ public class IResourceBundle {
 	}
 
     /**
+     * Get the translation of the given source string and key combination. At
+     * least one of the source or the key must be specified.
      * 
-     * @param source
-     * @param key
+     * @param source The source string written in the source language, or null
+     * if no source string is available
+     * @param key The unique key being sought, or null if no key is available
      * @return the translation for the given source string/key combination
      */
     protected String getTranslation(String source, String key)
@@ -676,6 +704,11 @@ public class IResourceBundle {
     	return trans;
     }
 
+    /**
+     * Return true if the output file type is HTML or XML.
+     * 
+     * @return true if the output file type is HTML or XML.
+     */
     protected boolean isHTML_XML_Type()
     {
     	return (type.equals(XML_TYPE) || type.equals(HTML_TYPE));
@@ -701,8 +734,9 @@ public class IResourceBundle {
     }
 
     /**
+     * Return the pseudo-translated version of the source string.
      * 
-     * @param source
+     * @param source the source string to translate.
      * @return the pseudo-translated version of the source string
      */
     public String getStringPseudo(String source) {

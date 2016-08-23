@@ -6,9 +6,9 @@ Copyright © 2016, HealthTap Inc. All Rights Reserved.
 
 -->
 <!-- ======================================================================= -->
-<!-- Main build file for the ilib java bits            -->
+<!-- Main build file for the htglob java bits            -->
 <!-- ======================================================================= -->
-<project name="ilib" default="all">
+<project name="htglob" default="all">
 	<!-- =================================================================== -->
 	<!-- properties                                                          -->
 	<!-- =================================================================== -->
@@ -142,7 +142,7 @@ Copyright © 2016, HealthTap Inc. All Rights Reserved.
 		</antcall>
 	</target>
 
-	<target name="build.jar.htglob" description="Do the actual work of building the ilib jar">
+	<target name="build.jar.htglob" description="Do the actual work of building the htglob jar">
 		<jar jarfile="${outputDir}/${jar.htglob}" compress="on">
 			<fileset dir="${classesDir}">
 				<include name="**/*.class" />
@@ -213,8 +213,8 @@ Copyright © 2016, HealthTap Inc. All Rights Reserved.
 				<include name="**/*.jar" />
 			</fileset>
 		</copy>
-		<zip destfile="${build.dist}/ilib-${version}-tools-doc.zip" basedir="${build.javadoc}" />
-		<tar destfile="${build.dist}/ilib-${version}-tools-doc.tgz" basedir="${build.javadoc}" compression="gzip" />
+		<zip destfile="${build.dist}/htglob-${version}-doc.zip" basedir="${build.javadoc}" />
+		<tar destfile="${build.dist}/htglob-${version}-doc.tgz" basedir="${build.javadoc}" compression="gzip" />
 	</target>
 
 	<target name="test.core" depends="jars.debug" description="run the tests">
@@ -259,13 +259,10 @@ Copyright © 2016, HealthTap Inc. All Rights Reserved.
 	<target name="doc" depends="dist.release,testjavadoc" description="creates javadoc for all local java files in this project" unless="core.javadoc.not.needed">
 		<delete dir="${build.javadoc}" />
 		<mkdir dir="${build.javadoc}" />
-		<javadoc packagenames="com.ilib.*" sourcepath="${build.src}" destdir="${build.javadoc}" defaultexcludes="yes" excludepackagenames="**.tests" author="false" use="true" classPathRef="project.class.path.debug" windowtitle="ILib Core Library">
-
-			<doctitle>
-				<![CDATA[<h1>ILib Java Core Library.</h1>]]></doctitle>
-		<bottom>
-			<![CDATA[<i>Copyright &#169; 2013 JEDLSoft. All Rights Reserved.</i>]]></bottom>
-	<link href="http://java.sun.com/j2se/1.4/docs/api/" />
-</javadoc>
-</target>
+		<javadoc packagenames="com.healthtap.*" sourcepath="${build.src}" destdir="${build.javadoc}" defaultexcludes="yes" excludepackagenames="**/test" author="false" use="true" classPathRef="project.class.path.debug" windowtitle="ILib Core Library">
+			<doctitle><![CDATA[<h1>HealthTap Java Globalization Library.</h1>]]></doctitle>
+			<bottom><![CDATA[<i>Copyright &#169; 2016 HealthTap, Inc. All Rights Reserved.</i>]]></bottom>
+			<link href="http://java.sun.com/j2se/1.8/docs/api/" />
+		</javadoc>
+	</target>
 </project>
