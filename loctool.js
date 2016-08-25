@@ -10,6 +10,7 @@ var fs = require('fs');
 var util = require('util');
 
 var AndroidProject = require("./lib/AndroidProject.js");
+var ProjectFactory = require("./lib/ProjectFactory.js");
 
 function usage() {
 	console.log("Usage: loctool [-h] [root dir]\n" +
@@ -38,12 +39,6 @@ if (!fs.existsSync(rootDir)) {
 	usage();
 }
 
-var projectTypes = {
-	"android": AndroidProject //,
-	// "iosobjc": IOSObjCProject,
-	// "iosswift": IOSSwiftProject,
-	// "web": WebProject
-};
 var resources;
 var project;
 var fileTypes;
@@ -53,21 +48,14 @@ function walk(dir, project) {
 	
 	var results = [], projectRoot = false;
 	
-	var path = dir + "/project.json";
-	if (fs.existsSync(path)) {
-		var data = fs.readFileSync(path, 'utf8');
-		if (data.length > 0) {
-			var projectProps = JSON.parse(data);
-			var projectType = projectTypes[projectProps.projectType];
-			project = new projectType(projectProps, dir);
-			console.log("-------------------------------------------------------------------------------------------");
-			console.log('Project "' + projectProps.name + '", type: ' + projectProps.projectType);
-			
+	if (!project) {
+		project = ProjectFactory(dir);
+		if (project) {
 			fileTypes = project.getFileTypes();
-			//console.log("File Types: ");
-			//console.dir(fileTypes);
+			projectRoot = true;
+			console.log("-------------------------------------------------------------------------------------------");
+			console.log('Project "' + project.options.name + '", type: ' + project.options.projectType);
 		}
-		projectRoot = true;
 	}
 	
 	var list = fs.readdirSync(dir);
