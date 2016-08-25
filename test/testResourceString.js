@@ -42,7 +42,22 @@ module.exports = {
         
         test.done();
     },
-    
+
+    testResourceStringConstructorWithContext: function(test) {
+        test.expect(1);
+
+        var rs = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            locale: "de-DE",
+            pathName: "a/b/c.java",
+            context: "landscape"
+        });
+        test.ok(rs);
+        
+        test.done();
+    },
+
     testResourceStringConstructorRightContents: function(test) {
         test.expect(5);
 
@@ -62,7 +77,7 @@ module.exports = {
         test.done();
     },
     
-        testResourceStringGetId: function(test) {
+    testResourceStringGetId: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
@@ -83,6 +98,37 @@ module.exports = {
         var rs = new ResourceString();
         test.ok(rs);
         test.ok(!rs.getId());
+        
+        test.done();
+    },
+
+    testResourceStringGetContext: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+            id: "foo",
+            source: "source string",
+            pathName: "a/b/c.txt",
+            locale: "de-DE",
+            context: "landscape"
+        });
+        test.ok(rs);
+        test.equal(rs.getContext(), "landscape");
+        
+        test.done();
+    },
+
+    testResourceStringGetContextEmpty: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+            id: "foo",
+            source: "source string",
+            pathName: "a/b/c.txt",
+            locale: "de-DE"
+        });
+        test.ok(rs);
+        test.ok(!rs.getContext());
         
         test.done();
     },

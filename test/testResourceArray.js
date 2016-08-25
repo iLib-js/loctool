@@ -113,6 +113,37 @@ module.exports = {
         test.done();
     },
 
+    testResourceStringGetContext: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray({
+            id: "foo",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.txt",
+            locale: "de-DE",
+            context: "landscape"
+        });
+        test.ok(ra);
+        test.equal(ra.getContext(), "landscape");
+        
+        test.done();
+    },
+
+    testResourceStringGetContextEmpty: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray({
+            id: "foo",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.txt",
+            locale: "de-DE"
+        });
+        test.ok(ra);
+        test.ok(!ra.getContext());
+        
+        test.done();
+    },
+
     testResourceArrayGetArray: function(test) {
         test.expect(2);
 

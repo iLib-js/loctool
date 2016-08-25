@@ -150,6 +150,47 @@ module.exports = {
         test.done();
     },
 
+    testResourcePluralGetContext: function(test) {
+        test.expect(2);
+
+        var rs = new ResourcePlural({
+            id: "foo",
+            pathName: "a/b/c.txt",
+            locale: "en-US",
+            context: "landscape",
+            strings: {
+                "one": "This is singular",
+                "two": "This is double",
+                "few": "This is the few case",
+                "many": "This is the many case"
+            }
+        });
+        test.ok(rs);
+        test.equal(rs.getContext(), "landscape");
+        
+        test.done();
+    },
+
+    testResourcePluralGetContextEmpty: function(test) {
+        test.expect(2);
+
+        var rs = new ResourcePlural({
+            id: "foo",
+            pathName: "a/b/c.txt",
+            locale: "en-US",
+            strings: {
+                "one": "This is singular",
+                "two": "This is double",
+                "few": "This is the few case",
+                "many": "This is the many case"
+            }
+        });
+        test.ok(rs);
+        test.ok(!rs.getContext());
+        
+        test.done();
+    },
+
     testResourcePluralGetPlurals: function(test) {
         test.expect(2);
 
