@@ -271,13 +271,14 @@ module.exports = {
     },
 
     testResourceStringGetTranslatedResource: function(test) {
-        test.expect(6);
+        test.expect(7);
 
         var rs = new ResourceString({
         	id: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
-        	pathName: "a/b/c.java"
+        	pathName: "a/b/c.java",
+        	context: "foo"
         });
         test.ok(rs);
     
@@ -290,6 +291,7 @@ module.exports = {
         test.equal(rs2.getSource(), "Dies ist einem Test.");
         test.equal(rs2.locale, "de-DE");
         test.equal(rs2.pathName, "a/b/c.java");
+        test.equal(rs2.getContext(), "foo");
                 
         test.done();
     },
@@ -459,6 +461,33 @@ module.exports = {
         
         test.throws(function() {
         	rs.merge(rs2);
+        });
+        
+        test.done();
+    },
+
+    testResourceStringMergeDifferentContexts: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            locale: "en-US",
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        var rs2 = new ResourceString({
+            id: "asdf",
+            source: "Dies ist einem Test.",
+            locale: "de-DE",
+            pathName: "a/b/c.java",
+            context: "foo"
+        });
+        test.ok(rs2);
+        
+        test.throws(function() {
+            rs.merge(rs2);
         });
         
         test.done();

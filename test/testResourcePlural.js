@@ -409,7 +409,7 @@ module.exports = {
     },
 
     testResourcePluralGetTranslatedResource: function(test) {
-        test.expect(6);
+        test.expect(7);
 
         var rs = new ResourcePlural({
         	id: "asdf",
@@ -420,7 +420,8 @@ module.exports = {
         		"two": "This is double",
         		"few": "This is the few case",
         		"many": "This is the many case"
-        	}
+        	},
+        	context: "foo"
         });
         test.ok(rs);
     
@@ -443,6 +444,7 @@ module.exports = {
         });
         test.equal(rs2.locale, "de-DE");
         test.equal(rs2.pathName, "a/b/c.java");
+        test.equal(rs2.getContext(), "foo");
                 
         test.done();
     },
@@ -684,6 +686,43 @@ module.exports = {
         
         test.throws(function() {
         	rs.merge(rs2);
+        });
+        
+        test.done();
+    },
+
+    testResourcePluralMergeDifferentContext: function(test) {
+        test.expect(3);
+
+        var rs = new ResourcePlural({
+            id: "asdf",
+            locale: "en-US",
+            pathName: "a/b/c.java",
+            strings: {
+                "one": "This is singular",
+                "two": "This is double",
+                "few": "This is the few case",
+                "many": "This is the many case"
+            }
+        });
+        test.ok(rs);
+        
+        var rs2 = new ResourcePlural({
+            id: "asdf",
+            locale: "de-DE",
+            pathName: "a/b/c.java",
+            strings: {
+                "one": "Dies ist einem Test.",
+                "two": "Dies ist einem Dobles",
+                "few": "Dies ist den wenigen Fall",
+                "many": "Dies ist den vielen Fall"
+            },
+            context: "foo"
+        });
+        test.ok(rs2);
+        
+        test.throws(function() {
+            rs.merge(rs2);
         });
         
         test.done();

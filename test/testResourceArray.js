@@ -344,13 +344,14 @@ module.exports = {
     },
 
     testResourceArrayGetTranslatedResource: function(test) {
-        test.expect(6);
+        test.expect(7);
 
         var ra = new ResourceArray({
         	id: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
-        	pathName: "a/b/c.java"
+        	pathName: "a/b/c.java",
+        	context: "foo"
         });
         test.ok(ra);
     
@@ -363,6 +364,7 @@ module.exports = {
         test.deepEqual(ra2.getArray(), ["Dies ist einem Test.", null, null]);
         test.equal(ra2.locale, "de-DE");
         test.equal(ra2.pathName, "a/b/c.java");
+        test.equal(ra2.getContext(), "foo");
                 
         test.done();
     },
@@ -538,6 +540,33 @@ module.exports = {
         test.done();
     },
 
+    testResourceArrayMergeDifferentContext: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+            id: "asdf",
+            array: ["This is a test"],
+            locale: "en-US",
+            pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+        
+        var ra2 = new ResourceArray({
+            id: "asdf",
+            array: ["Dies ist einem Test."],
+            locale: "de-DE",
+            pathName: "a/b/c.java",
+            context: "foo"
+        });
+        test.ok(ra2);
+        
+        test.throws(function() {
+            ra.merge(ra2);
+        });
+        
+        test.done();
+    },
+    
     testResourceArrayGeneratePseudo: function(test) {
         test.expect(3);
 
