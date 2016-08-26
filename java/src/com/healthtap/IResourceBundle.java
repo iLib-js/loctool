@@ -284,7 +284,7 @@ public class IResourceBundle {
 	public IResourceBundle(Class R, IStringProvider resources, Locale locale) {
 		this.R = R;
 		this.resources = resources;
-		this.targetLocale = locale != null ? locale : Locale.forLanguageTag("en-US");
+		this.targetLocale = locale != null ? locale : Locale.getDefault();
 		
 		this.type = RAW_TYPE;
 		initPseudoMap();
