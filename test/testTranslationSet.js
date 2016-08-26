@@ -56,6 +56,42 @@ module.exports = {
         test.done();
     },
 
+    testTranslationSetGetWithContext: function(test) {
+        test.expect(6);
+
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+            id: "asdf",
+            source: "This is a test"
+            // no context
+        });
+        
+        ts.add(res);
+        
+        res = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            context: "different"
+        });
+        
+        ts.add(res);
+        
+        var r = ts.get("asdf");
+        
+        test.equal(r.getId(), "asdf");
+        test.equal(r.getSource(), "This is a test");
+        test.ok(!r.getContext());
+        
+        r = ts.get("asdf", "different");
+
+        test.equal(r.getId(), "asdf");
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getContext(), "different");
+        
+        test.done();
+    },
+
+
     testTranslationSetGetUndefined: function(test) {
         test.expect(1);
 
@@ -154,6 +190,41 @@ module.exports = {
         test.done();
     },
 
+    testTranslationSetGetBySourceWithContext: function(test) {
+        test.expect(6);
+
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+            id: "asdf",
+            source: "This is a test"
+            // no context
+        });
+        
+        ts.add(res);
+        
+        res = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            context: "foo"
+        });
+        
+        ts.add(res);
+        
+        var r = ts.getBySource("This is a test");
+        
+        test.equal(r.getId(), "asdf");
+        test.equal(r.getSource(), "This is a test");
+        test.ok(!r.getContext());
+        
+        r = ts.getBySource("This is a test", "foo");
+        
+        test.equal(r.getId(), "asdf");
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getContext(), "foo");
+        
+        test.done();
+    },
+
     testTranslationSetGetAll: function(test) {
         test.expect(6);
 
@@ -224,6 +295,33 @@ module.exports = {
         test.done();
     },
 
+    testTranslationSetAddTranslationDifferentContext: function(test) {
+        test.expect(2);
+
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            locale: "en-US"
+        });
+        
+        ts.add(res);
+        
+        res = new ResourceString({
+            id: "asdf",
+            source: "This is another test",
+            locale: "de-DE",
+            context: "foo"
+        });
+        
+        ts.add(res);
+        
+        var resources = ts.getAll();
+        test.ok(resources);
+        test.equal(resources.length, 2);
+        test.done();
+    },
+
     testTranslationSetAddTranslationTranslationAvailable: function(test) {
         test.expect(3);
 
@@ -277,8 +375,8 @@ module.exports = {
         test.done();
     },
 
-    testTranslationSetAddAllAllThere: function(test) {
-        test.expect(6);
+    testTranslationSetAddAllDifferentContexts: function(test) {
+        test.expect(8);
 
         var ts = new TranslationSet();
         
@@ -288,8 +386,9 @@ module.exports = {
 	            source: "This is a test"
 	        }),
 	        new ResourceString({
-	            id: "qwerty",
-	            source: "This is another test"
+	            id: "asdf",
+	            source: "This is a test",
+	            context: "foo"
 	        })
 	    ]);
         
@@ -301,11 +400,14 @@ module.exports = {
         
         test.equal(r.getId(), "asdf");
         test.equal(r.getSource(), "This is a test");
+        test.ok(!r.getContext());
         
         r = resources[1];
         
-        test.equal(r.getId(), "qwerty");
-        test.equal(r.getSource(), "This is another test");
+        test.equal(r.getId(), "asdf");
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getContext(), "foo");
         test.done();
     }
+
 };
