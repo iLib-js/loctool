@@ -80,19 +80,24 @@ function walk(dir, project) {
 					walk(path, project);
 				}
 			} else {
+			    console.log("found a dir");
 				walk(path, project);
 			}
 		} else {
 			if (fileTypes) {
-				for (var i = 0; i < fileTypes.length; i++) {
-					if (fileTypes[i].handles(path)) {
+			    for (var i = 0; i < fileTypes.length; i++) {
+			        console.log("Checking if file type " + fileTypes.name() + " handles " + path);
+	                if (fileTypes[i].handles(path)) {
 						console.log("  " + path);
 						var file = fileTypes[i].newFile(path);
 						file.extract();
+					} else {
+					    console.log("no");
 					}
 				}
 			} else {
 				// no file types to check?
+			    console.log("no file types");
 			}
 		}
 	});
