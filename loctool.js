@@ -9,7 +9,6 @@
 var fs = require('fs');
 var util = require('util');
 
-var AndroidProject = require("./lib/AndroidProject.js");
 var ProjectFactory = require("./lib/ProjectFactory.js");
 
 function usage() {
@@ -85,8 +84,10 @@ function walk(dir, project) {
 			}
 		} else {
 			if (fileTypes) {
+				console.log("fileTypes.length is " + fileTypes.length);
 			    for (var i = 0; i < fileTypes.length; i++) {
-			        console.log("Checking if file type " + fileTypes.name() + " handles " + path);
+			    	console.log("i is " + i);
+			        console.log("Checking if file type " + fileTypes[i].name() + " handles " + path);
 	                if (fileTypes[i].handles(path)) {
 						console.log("  " + path);
 						var file = fileTypes[i].newFile(path);
