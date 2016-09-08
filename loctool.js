@@ -7,9 +7,14 @@
  * This code is intended to be run under node.js
  */
 var fs = require('fs');
+var path = require('path');
 var util = require('util');
-
+var log4js = require("log4js");
 var ProjectFactory = require("./lib/ProjectFactory.js");
+
+log4js.configure(path.dirname(module.filename) + '/log4js.json')
+
+var logger = log4js.getLogger("loctool");
 
 function usage() {
 	console.log("Usage: loctool [-h] [root dir]\n" +
@@ -29,12 +34,12 @@ process.argv.forEach(function (val, index, array) {
 
 var rootDir = process.argv.length > 2 ? process.argv[2] : ".";
 
-console.log("loctool - extract strings from source code.\n");
+logger.info("loctool - extract strings from source code.\n");
 
-console.log("Searching root: " + rootDir + "\n");
+logger.info("Searching root: " + rootDir + "\n");
 
 if (!fs.existsSync(rootDir)) {
-	util.error("Could not access root dir " + rootDir);
+	logger.error("Could not access root dir " + rootDir);
 	usage();
 }
 
@@ -43,7 +48,7 @@ var project;
 var fileTypes;
 
 function walk(dir, project) {
-	console.log(dir);
+	logger.trace("Searching" + dir);
 	
 	var results = [], projectRoot = false;
 	
@@ -52,8 +57,8 @@ function walk(dir, project) {
 		if (project) {
 			fileTypes = project.getFileTypes();
 			projectRoot = true;
-			console.log("-------------------------------------------------------------------------------------------");
-			console.log('Project "' + project.options.name + '", type: ' + project.options.projectType);
+			logger.info("-------------------------------------------------------------------------------------------");
+			logger.info('Project "' + project.options.name + '", type: ' + project.options.projectType);
 		}
 	}
 	
@@ -63,42 +68,42 @@ function walk(dir, project) {
 		var stat = fs.statSync(path);
 		if (stat && stat.isDirectory()) {
 			if (project) {
-				//console.log("There is a project. Checking " + path);
-				//console.log("Project: ");
-				//console.dir(project);
+				logger.debug("There is a project. Checking " + path);
+				logger.trace("Project: ");
+				logger.trace(project);
 				if (project.options.excludes) {
-					//console.log("There are excludes ");
+					logger.trace("There are excludes ");
 					if (project.options.excludes.indexOf(path) === -1) {
-						//console.log("Not excluded.");
+						logger.trace("Not excluded.");
 						walk(path, project);
-					//} else {
-						//console.log("Excluded");
+					} else {
+						logger.trace("Excluded");
 					}
 				} else {
-					//console.log("Neither includes or excludes.");
+					logger.trace("Neither includes or excludes.");
 					walk(path, project);
 				}
 			} else {
-			    console.log("found a dir");
+			    logger.trace("found a dir");
 				walk(path, project);
 			}
 		} else {
 			if (fileTypes) {
-				console.log("fileTypes.length is " + fileTypes.length);
+				logger.trace("fileTypes.length is " + fileTypes.length);
 			    for (var i = 0; i < fileTypes.length; i++) {
-			    	console.log("i is " + i);
-			        console.log("Checking if file type " + fileTypes[i].name() + " handles " + path);
+			    	logger.trace("i is " + i);
+			    	logger.trace("Checking if file type " + fileTypes[i].name() + " handles " + path);
 	                if (fileTypes[i].handles(path)) {
-						console.log("  " + path);
+	                	logger.debug("  " + path);
 						var file = fileTypes[i].newFile(path);
 						file.extract();
 					} else {
-					    console.log("no");
+						logger.trace("no");
 					}
 				}
 			} else {
 				// no file types to check?
-			    console.log("no file types");
+				logger.trace("no file types");
 			}
 		}
 	});
@@ -119,7 +124,8 @@ function walk(dir, project) {
 try {
 	walk(rootDir, undefined);
 } catch (e) {
-	console.dir(e);
+	logger.error("caught exception: " + e);
+	logger.error(e.stack);
 }
 /*
 var obj = {};
