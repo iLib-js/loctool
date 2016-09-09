@@ -10,7 +10,7 @@
 	],
 	"levels": {
 		"[all]": "INFO",
-		"loctool.loctool":  "TRACE",
+		"loctool.loctool":  "INFO",
 		"loctool.lib.JavaFile": "TRACE",
 		"loctool.lib.JavaFileType": "TRACE"
 	}

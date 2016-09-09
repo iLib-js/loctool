@@ -241,6 +241,36 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileParseMultipleWithId: function(test) {
+        test.expect(10);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("This is a test", "x");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "y");');
+        
+        var set = p.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get("x");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.ok(!r.getAutoId());
+        test.equal(r.getId(), "x");
+        
+        r = set.get("y");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.ok(!r.getAutoId());
+        test.equal(r.getId(), "y");
+        
+        test.done();
+    },
+
     testJavaFileParseWithDups: function(test) {
         test.expect(6);
 
