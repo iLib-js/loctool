@@ -91,7 +91,6 @@ module.exports = {
         test.done();
     },
 
-
     testTranslationSetGetUndefined: function(test) {
         test.expect(1);
 
@@ -408,6 +407,106 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getContext(), "foo");
         test.done();
-    }
+    },
+    
+    testTranslationSetSize: function(test) {
+        test.expect(1);
 
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+            id: "asdf",
+            source: "This is a test"
+        });
+        
+        ts.add(res);
+        
+        test.equal(ts.size(), 1);
+        test.done();
+    },
+
+    testTranslationSetSizeMultiple: function(test) {
+        test.expect(1);
+
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+            id: "asdf",
+            source: "This is a test"
+            // no context
+        });
+        
+        ts.add(res);
+        
+        res = new ResourceString({
+            id: "asdf",
+            source: "This is a test",
+            context: "different"
+        });
+        
+        ts.add(res);
+        
+        test.equal(ts.size(), 2);
+        
+        test.done();
+    },
+
+    testTranslationSetEmpty: function(test) {
+        test.expect(1);
+
+        var ts = new TranslationSet();
+        
+        test.equal(ts.size(), 0);
+        test.done();
+    },
+
+    testTranslationSetSizeMerged: function(test) {
+        test.expect(3);
+
+        var ts = new TranslationSet();
+        
+        test.equal(ts.size(), 0);
+        
+        var res = new ResourceString({
+            id: "asdf",
+            source: "This is a test"
+        });
+        
+        ts.add(res);
+        
+        test.equal(ts.size(), 1);
+        
+        res = new ResourceString({
+            id: "asdf",
+            source: "This is another test",
+            locale: "de-DE"
+        });
+        
+        ts.add(res);
+        
+        test.equal(ts.size(), 1);
+
+        test.done();
+    },
+
+    testTranslationSetSizeAddAll: function(test) {
+        test.expect(2);
+
+        var ts = new TranslationSet();
+        
+        test.equal(ts.size(), 0);
+        
+        ts.addAll([
+	        new ResourceString({
+	            id: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            id: "qwerty",
+	            source: "This is another test"
+	        })
+	    ]);
+        
+        test.equal(ts.size(), 2);
+
+        test.done();
+    }
 };
