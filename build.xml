@@ -94,5 +94,9 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
 	
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural"></target>
+	<target name="test.javafile" description="Run only the java file tests">
+		<run script="${build.test}/testJavaFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+	</target>
+	
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile"></target>
 </project>

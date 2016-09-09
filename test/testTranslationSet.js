@@ -137,6 +137,7 @@ module.exports = {
         var ts = new TranslationSet();
         var res = new ResourceString({
             id: "asdf",
+            autoId: true,
             source: "This is a test"
         });
         
@@ -149,8 +150,8 @@ module.exports = {
         test.done();
     },
 
-    testTranslationSetGetBySourceFromMany: function(test) {
-        test.expect(4);
+    testTranslationSetGetBySourceNonAutoId: function(test) {
+        test.expect(1);
 
         var ts = new TranslationSet();
         var res = new ResourceString({
@@ -160,8 +161,28 @@ module.exports = {
         
         ts.add(res);
         
+        var r = ts.getBySource("This is a test");
+        
+        test.ok(!r);
+
+        test.done();
+    },
+
+    testTranslationSetGetBySourceFromMany: function(test) {
+        test.expect(4);
+
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+            id: "asdf",
+            autoId: true,
+            source: "This is a test"
+        });
+        
+        ts.add(res);
+        
         res = new ResourceString({
             id: "qwerty",
+            autoId: true,
             source: "This is another test"
         });
         
@@ -195,6 +216,7 @@ module.exports = {
         var ts = new TranslationSet();
         var res = new ResourceString({
             id: "asdf",
+            autoId: true,
             source: "This is a test"
             // no context
         });
@@ -203,6 +225,7 @@ module.exports = {
         
         res = new ResourceString({
             id: "asdf",
+            autoId: true,
             source: "This is a test",
             context: "foo"
         });
@@ -220,6 +243,43 @@ module.exports = {
         test.equal(r.getId(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getContext(), "foo");
+        
+        test.done();
+    },
+
+    testTranslationSetGetBySourceOnlyAutoIds: function(test) {
+        test.expect(6);
+
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+        	id: "r3423423",
+        	autoId: true,
+            source: "This is a test"
+        });
+        
+        ts.add(res);
+        
+        res = new ResourceString({
+            id: "explicit_id",
+            source: "This is a test"
+        });
+        
+        ts.add(res);
+        
+        var r = ts.getBySource("This is a test");
+        
+        test.equal(r.getId(), "r3423423");
+        test.equal(r.getSource(), "This is a test");
+        
+        r = ts.get("explicit_id");
+        
+        test.equal(r.getId(), "explicit_id");
+        test.equal(r.getSource(), "This is a test");
+        
+        r = ts.get("r3423423");
+        
+        test.equal(r.getId(), "r3423423");
+        test.equal(r.getSource(), "This is a test");
         
         test.done();
     },

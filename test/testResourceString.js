@@ -92,6 +92,37 @@ module.exports = {
         test.done();
     },
 
+    testResourceStringAutoId: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+            id: "foo",
+            source: "source string",
+            autoId: true,
+            pathName: "a/b/c.txt",
+            locale: "de-DE"
+        });
+        test.ok(rs);
+        test.ok(rs.getAutoId());
+        
+        test.done();
+    },
+
+    testResourceStringNotAutoId: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+            id: "foo",
+            source: "source string",
+            pathName: "a/b/c.txt",
+            locale: "de-DE"
+        });
+        test.ok(rs);
+        test.ok(!rs.getAutoId());
+        
+        test.done();
+    },
+
     testResourceStringGetIdEmpty: function(test) {
         test.expect(2);
 
