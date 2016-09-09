@@ -433,4 +433,74 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileExtractFile: function(test) {
+        test.expect(8);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p, "./java/t1.java");
+        test.ok(j);
+        
+        // should read the file
+        j.extract();
+        
+        var set = p.getTranslationSet();
+        
+        test.equal(set.size(), 2);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getId(), "r99578090116730");
+
+        var r = set.get("id1");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test with a unique id");
+        test.equal(r.getId(), "id1");
+        
+        test.done();
+    },
+    
+    testJavaFileExtractUndefinedFile: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        // should attempt to read the file and not fail
+        j.extract();
+        
+        var set = p.getTranslationSet();
+        
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testJavaFileExtractBogusFile: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p, "./java/foo.java");
+        test.ok(j);
+        
+        // should attempt to read the file and not fail
+        j.extract();
+        
+        var set = p.getTranslationSet();
+        
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
 };
