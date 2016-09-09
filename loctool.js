@@ -14,7 +14,7 @@ var ProjectFactory = require("./lib/ProjectFactory.js");
 
 log4js.configure(path.dirname(module.filename) + '/log4js.json')
 
-var logger = log4js.getLogger("loctool");
+var logger = log4js.getLogger("loctool.loctool");
 
 function usage() {
 	console.log("Usage: loctool [-h] [root dir]\n" +
@@ -94,7 +94,7 @@ function walk(dir, project) {
 			    	logger.trace("i is " + i);
 			    	logger.trace("Checking if file type " + fileTypes[i].name() + " handles " + path);
 	                if (fileTypes[i].handles(path)) {
-	                	logger.debug("  " + path);
+	                	logger.info("  " + fileTypes[i].name() + ": " + path);
 						var file = fileTypes[i].newFile(path);
 						file.extract();
 					} else {

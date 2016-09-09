@@ -1,5 +1,9 @@
 {
+  "appenders": [
+    { "type": "console" }
+  ],
   "levels": {
-    "loctool":  "INFO"
+  	"[all]": "INFO",
+    "loctool.loctool":  "DEBUG"
   }
 }
