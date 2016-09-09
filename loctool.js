@@ -59,6 +59,8 @@ function walk(dir, project) {
 			projectRoot = true;
 			logger.info("-------------------------------------------------------------------------------------------");
 			logger.info('Project "' + project.options.name + '", type: ' + project.options.projectType);
+			logger.trace("Project: ");
+			logger.trace(project);
 		}
 	}
 	
@@ -68,9 +70,7 @@ function walk(dir, project) {
 		var stat = fs.statSync(path);
 		if (stat && stat.isDirectory()) {
 			if (project) {
-				logger.debug("There is a project. Checking " + path);
-				logger.trace("Project: ");
-				logger.trace(project);
+				logger.info(path + "...");
 				if (project.options.excludes) {
 					logger.trace("There are excludes ");
 					if (project.options.excludes.indexOf(path) === -1) {
@@ -124,7 +124,7 @@ function walk(dir, project) {
 try {
 	walk(rootDir, undefined);
 } catch (e) {
-	logger.error("caught exception: " + e);
+	logger.error("caught exception: " + JSON.stringify(e));
 	logger.error(e.stack);
 }
 /*
