@@ -64,10 +64,12 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<attribute name="dir"/>
 		<sequential>
 			<exec osfamily="unix" executable="@{executable}" dir="@{dir}" failifexecutionfails="true" failonerror="true">
+				<env key="PATH" path="${node}/bin:${env.PATH}"/>
 				<arg line="@{args}"/>
 				<arg line="@{script}"/>
 			</exec>
 			<exec osfamily="windows" executable="@{executable}.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
+				<env key="PATH" path="${node}/bin;${env.PATH}"/>
 				<arg line="@{args}"/>
 				<arg line="@{script}"/>
 			</exec>
