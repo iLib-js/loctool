@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS translations CHARACTER SET = 'utf8';
+
+DROP USER 'ht'@'localhost', 'ht'@'%';
+
+CREATE USER 'ht'@'localhost' IDENTIFIED BY '';
+GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER
+    ON ht.*
+    TO 'ht'@'localhost';
+
+CREATE USER 'ht'@'%' IDENTIFIED BY '';
+GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER
+    ON ht.*
+    TO 'ht'@'%';
