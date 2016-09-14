@@ -91,7 +91,6 @@ function walk(dir, project) {
 			if (fileTypes) {
 				logger.trace("fileTypes.length is " + fileTypes.length);
 			    for (var i = 0; i < fileTypes.length; i++) {
-			    	logger.trace("i is " + i);
 			    	logger.trace("Checking if file type " + fileTypes[i].name() + " handles " + path);
 	                if (fileTypes[i].handles(path)) {
 	                	logger.info("  " + fileTypes[i].name() + ": " + path);

@@ -14,7 +14,7 @@ on your machine and in your path.
 Once it is installed, you need to use the package manager to install
 the following things:
 
-npm install log4js ilib node-mysql2
+npm install log4js ilib mysql2
 
 Running the Tool
 ----------------
