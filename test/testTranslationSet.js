@@ -43,7 +43,7 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test"
         });
         
@@ -51,7 +51,7 @@ module.exports = {
         
         var r = ts.get("asdf");
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.done();
     },
@@ -61,7 +61,7 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test"
             // no context
         });
@@ -69,7 +69,7 @@ module.exports = {
         ts.add(res);
         
         res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test",
             context: "different"
         });
@@ -78,13 +78,13 @@ module.exports = {
         
         var r = ts.get("asdf");
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getContext());
         
         r = ts.get("asdf", "different");
 
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getContext(), "different");
         
@@ -106,14 +106,14 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test"
         });
         
         ts.add(res);
         
         res = new ResourceString({
-            id: "qwerty",
+            key: "qwerty",
             source: "This is another test"
         });
         
@@ -121,12 +121,12 @@ module.exports = {
         
         var r = ts.get("asdf");
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         
         r = ts.get("qwerty");
         
-        test.equal(r.getId(), "qwerty");
+        test.equal(r.getKey(), "qwerty");
         test.equal(r.getSource(), "This is another test");
         test.done();
     },
@@ -136,8 +136,8 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
-            autoId: true,
+            key: "asdf",
+            autoKey: true,
             source: "This is a test"
         });
         
@@ -145,17 +145,17 @@ module.exports = {
         
         var r = ts.getBySource("This is a test");
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.done();
     },
 
-    testTranslationSetGetBySourceNonAutoId: function(test) {
+    testTranslationSetGetBySourceNonAutoKey: function(test) {
         test.expect(1);
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test"
         });
         
@@ -173,16 +173,16 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
-            autoId: true,
+            key: "asdf",
+            autoKey: true,
             source: "This is a test"
         });
         
         ts.add(res);
         
         res = new ResourceString({
-            id: "qwerty",
-            autoId: true,
+            key: "qwerty",
+            autoKey: true,
             source: "This is another test"
         });
         
@@ -190,12 +190,12 @@ module.exports = {
         
         var r = ts.getBySource("This is a test");
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         
         r = ts.getBySource("This is another test");
         
-        test.equal(r.getId(), "qwerty");
+        test.equal(r.getKey(), "qwerty");
         test.equal(r.getSource(), "This is another test");
         test.done();
     },
@@ -215,8 +215,8 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
-            autoId: true,
+            key: "asdf",
+            autoKey: true,
             source: "This is a test"
             // no context
         });
@@ -224,8 +224,8 @@ module.exports = {
         ts.add(res);
         
         res = new ResourceString({
-            id: "asdf",
-            autoId: true,
+            key: "asdf",
+            autoKey: true,
             source: "This is a test",
             context: "foo"
         });
@@ -234,33 +234,33 @@ module.exports = {
         
         var r = ts.getBySource("This is a test");
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getContext());
         
         r = ts.getBySource("This is a test", "foo");
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getContext(), "foo");
         
         test.done();
     },
 
-    testTranslationSetGetBySourceOnlyAutoIds: function(test) {
+    testTranslationSetGetBySourceOnlyAutoKeys: function(test) {
         test.expect(6);
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-        	id: "r3423423",
-        	autoId: true,
+        	key: "r3423423",
+        	autoKey: true,
             source: "This is a test"
         });
         
         ts.add(res);
         
         res = new ResourceString({
-            id: "explicit_id",
+            key: "explicit_id",
             source: "This is a test"
         });
         
@@ -268,17 +268,17 @@ module.exports = {
         
         var r = ts.getBySource("This is a test");
         
-        test.equal(r.getId(), "r3423423");
+        test.equal(r.getKey(), "r3423423");
         test.equal(r.getSource(), "This is a test");
         
         r = ts.get("explicit_id");
         
-        test.equal(r.getId(), "explicit_id");
+        test.equal(r.getKey(), "explicit_id");
         test.equal(r.getSource(), "This is a test");
         
         r = ts.get("r3423423");
         
-        test.equal(r.getId(), "r3423423");
+        test.equal(r.getKey(), "r3423423");
         test.equal(r.getSource(), "This is a test");
         
         test.done();
@@ -289,14 +289,14 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test"
         });
         
         ts.add(res);
         
         res = new ResourceString({
-            id: "qwerty",
+            key: "qwerty",
             source: "This is another test"
         });
         
@@ -308,12 +308,12 @@ module.exports = {
         
         var r = resources[0];
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         
         r = resources[1];
         
-        test.equal(r.getId(), "qwerty");
+        test.equal(r.getKey(), "qwerty");
         test.equal(r.getSource(), "This is another test");
         test.done();
     },
@@ -334,14 +334,14 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test"
         });
         
         ts.add(res);
         
         res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is another test",
             locale: "de-DE"
         });
@@ -359,7 +359,7 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test",
             locale: "en-US"
         });
@@ -367,7 +367,7 @@ module.exports = {
         ts.add(res);
         
         res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is another test",
             locale: "de-DE",
             context: "foo"
@@ -386,14 +386,14 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test"
         });
         
         ts.add(res);
         
         res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is another test",
             locale: "de-DE"
         });
@@ -402,7 +402,7 @@ module.exports = {
         
         var r = ts.get("asdf");
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         
         var t = r.getTranslation("de-DE");
@@ -418,18 +418,18 @@ module.exports = {
         
         ts.addAll([
 	        new ResourceString({
-	            id: "asdf",
+	            key: "asdf",
 	            source: "This is a test"
 	        }),
 	        new ResourceString({
-	            id: "qwerty",
+	            key: "qwerty",
 	            source: "This is another test"
 	        })
 	    ]);
         
         var r = ts.get("asdf");
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.done();
     },
@@ -441,11 +441,11 @@ module.exports = {
         
         ts.addAll([
 	        new ResourceString({
-	            id: "asdf",
+	            key: "asdf",
 	            source: "This is a test"
 	        }),
 	        new ResourceString({
-	            id: "asdf",
+	            key: "asdf",
 	            source: "This is a test",
 	            context: "foo"
 	        })
@@ -457,13 +457,13 @@ module.exports = {
         
         var r = resources[0];
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getContext());
         
         r = resources[1];
         
-        test.equal(r.getId(), "asdf");
+        test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getContext(), "foo");
         test.done();
@@ -474,7 +474,7 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test"
         });
         
@@ -489,7 +489,7 @@ module.exports = {
 
         var ts = new TranslationSet();
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test"
             // no context
         });
@@ -497,7 +497,7 @@ module.exports = {
         ts.add(res);
         
         res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test",
             context: "different"
         });
@@ -526,7 +526,7 @@ module.exports = {
         test.equal(ts.size(), 0);
         
         var res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test"
         });
         
@@ -535,7 +535,7 @@ module.exports = {
         test.equal(ts.size(), 1);
         
         res = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is another test",
             locale: "de-DE"
         });
@@ -556,11 +556,11 @@ module.exports = {
         
         ts.addAll([
 	        new ResourceString({
-	            id: "asdf",
+	            key: "asdf",
 	            source: "This is a test"
 	        }),
 	        new ResourceString({
-	            id: "qwerty",
+	            key: "qwerty",
 	            source: "This is another test"
 	        })
 	    ]);

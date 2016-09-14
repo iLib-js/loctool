@@ -33,7 +33,7 @@ module.exports = {
         test.expect(1);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -47,7 +47,7 @@ module.exports = {
         test.expect(1);
 
         var rs = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test",
             locale: "de-DE",
             pathName: "a/b/c.java",
@@ -62,14 +62,14 @@ module.exports = {
         test.expect(5);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
         });
         test.ok(rs);
     
-        test.equal(rs.getId(), "asdf");
+        test.equal(rs.getKey(), "asdf");
         test.equal(rs.getSource(), "This is a test");
         test.equal(rs.locale, "de-DE");
         test.equal(rs.pathName, "a/b/c.java");
@@ -77,58 +77,58 @@ module.exports = {
         test.done();
     },
     
-    testResourceStringGetId: function(test) {
+    testResourceStringGetKey: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
-            id: "foo",
+            key: "foo",
             source: "source string",
             pathName: "a/b/c.txt",
             locale: "de-DE"
         });
         test.ok(rs);
-        test.equal(rs.getId(), "foo");
+        test.equal(rs.getKey(), "foo");
         
         test.done();
     },
 
-    testResourceStringAutoId: function(test) {
+    testResourceStringAutoKey: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
-            id: "foo",
+            key: "foo",
             source: "source string",
-            autoId: true,
+            autoKey: true,
             pathName: "a/b/c.txt",
             locale: "de-DE"
         });
         test.ok(rs);
-        test.ok(rs.getAutoId());
+        test.ok(rs.getAutoKey());
         
         test.done();
     },
 
-    testResourceStringNotAutoId: function(test) {
+    testResourceStringNotAutoKey: function(test) {
         test.expect(2);
 
         var rs = new ResourceString({
-            id: "foo",
+            key: "foo",
             source: "source string",
             pathName: "a/b/c.txt",
             locale: "de-DE"
         });
         test.ok(rs);
-        test.ok(!rs.getAutoId());
+        test.ok(!rs.getAutoKey());
         
         test.done();
     },
 
-    testResourceStringGetIdEmpty: function(test) {
+    testResourceStringGetKeyEmpty: function(test) {
         test.expect(2);
 
         var rs = new ResourceString();
         test.ok(rs);
-        test.ok(!rs.getId());
+        test.ok(!rs.getKey());
         
         test.done();
     },
@@ -137,7 +137,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-            id: "foo",
+            key: "foo",
             source: "source string",
             pathName: "a/b/c.txt",
             locale: "de-DE",
@@ -153,7 +153,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-            id: "foo",
+            key: "foo",
             source: "source string",
             pathName: "a/b/c.txt",
             locale: "de-DE"
@@ -168,7 +168,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-            id: "foo",
+            key: "foo",
             source: "source string",
             pathName: "a/b/c.txt",
             locale: "de-DE"
@@ -193,7 +193,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -211,7 +211,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -229,7 +229,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -247,7 +247,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -263,7 +263,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -283,7 +283,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -305,7 +305,7 @@ module.exports = {
         test.expect(7);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
@@ -318,7 +318,7 @@ module.exports = {
         var rs2 = rs.getTranslatedResource("de-DE");
         
         test.ok(rs2);
-        test.equal(rs2.getId(), "asdf");
+        test.equal(rs2.getKey(), "asdf");
         test.equal(rs2.getSource(), "Dies ist einem Test.");
         test.equal(rs2.locale, "de-DE");
         test.equal(rs2.pathName, "a/b/c.java");
@@ -331,7 +331,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -349,7 +349,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -368,7 +368,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -384,14 +384,14 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	pathName: "a/b/c.java"
         });
         test.ok(rs);
         
         var rs2 = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "Dies ist einem Test.",
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -409,7 +409,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	pathName: "a/b/c.java"
         });
@@ -426,14 +426,14 @@ module.exports = {
         test.expect(4);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	pathName: "a/b/c.java"
         });
         test.ok(rs);
         
         var rs2 = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	pathName: "a/b/c.java"
         });
@@ -451,7 +451,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	locale: "en-US",
         	pathName: "a/b/c.java"
@@ -459,7 +459,7 @@ module.exports = {
         test.ok(rs);
         
         var rs2 = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "Dies ist einem Test.",
         	locale: "en-US",
         	pathName: "a/b/c.java"
@@ -477,14 +477,14 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	pathName: "a/b/c.java"
         });
         test.ok(rs);
         
         var rs2 = new ResourceString({
-        	id: "asdf",
+        	key: "asdf",
         	source: "Dies ist einem Test.",
         	pathName: "a/b/c.java"
         });
@@ -501,7 +501,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test",
             locale: "en-US",
             pathName: "a/b/c.java"
@@ -509,7 +509,7 @@ module.exports = {
         test.ok(rs);
         
         var rs2 = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "Dies ist einem Test.",
             locale: "de-DE",
             pathName: "a/b/c.java",
@@ -528,7 +528,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test",
             pathName: "a/b/c.java"
         });
@@ -551,7 +551,7 @@ module.exports = {
         test.expect(4);
 
         var rs = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test",
             pathName: "a/b/c.java"
         });
@@ -576,7 +576,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test",
             pathName: "a/b/c.java"
         });
@@ -599,7 +599,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test",
             pathName: "a/b/c.java"
         });
@@ -622,7 +622,7 @@ module.exports = {
         test.expect(4);
 
         var rs = new ResourceString({
-            id: "asdf",
+            key: "asdf",
             source: "This is a test",
             pathName: "a/b/c.java"
         });

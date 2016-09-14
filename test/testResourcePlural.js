@@ -33,7 +33,7 @@ module.exports = {
         test.expect(1);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -52,7 +52,7 @@ module.exports = {
         test.expect(5);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -64,7 +64,7 @@ module.exports = {
         });
         test.ok(rs);
     
-        test.equal(rs.getId(), "asdf");
+        test.equal(rs.getKey(), "asdf");
         test.deepEqual(rs.getPlurals(), {
     		"one": "This is singular",
     		"two": "This is double",
@@ -77,11 +77,11 @@ module.exports = {
         test.done();
     },
     
-    testResourcePluralGetId: function(test) {
+    testResourcePluralGetKey: function(test) {
         test.expect(2);
 
         var rs = new ResourcePlural({
-            id: "foo",
+            key: "foo",
             pathName: "a/b/c.txt",
             locale: "de-DE",
         	strings: {
@@ -92,7 +92,7 @@ module.exports = {
         	}
         });
         test.ok(rs);
-        test.equal(rs.getId(), "foo");
+        test.equal(rs.getKey(), "foo");
         
         test.done();
     },
@@ -101,7 +101,7 @@ module.exports = {
         test.expect(5);
 
         var rs = new ResourcePlural({
-            id: "foo",
+            key: "foo",
             pathName: "a/b/c.txt",
             locale: "en-US",
         	strings: {
@@ -124,7 +124,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-            id: "foo",
+            key: "foo",
             pathName: "a/b/c.txt",
             locale: "en-US",
         	strings: {
@@ -140,12 +140,12 @@ module.exports = {
         test.done();
     },
 
-    testResourcePluralGetIdEmpty: function(test) {
+    testResourcePluralGetKeyEmpty: function(test) {
         test.expect(2);
 
         var rs = new ResourcePlural();
         test.ok(rs);
-        test.ok(!rs.getId());
+        test.ok(!rs.getKey());
         
         test.done();
     },
@@ -154,7 +154,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-            id: "foo",
+            key: "foo",
             pathName: "a/b/c.txt",
             locale: "en-US",
             context: "landscape",
@@ -175,7 +175,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-            id: "foo",
+            key: "foo",
             pathName: "a/b/c.txt",
             locale: "en-US",
             strings: {
@@ -195,7 +195,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-            id: "foo",
+            key: "foo",
             pathName: "a/b/c.txt",
             locale: "de-DE",
         	strings: {
@@ -230,7 +230,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -263,7 +263,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -286,7 +286,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -309,7 +309,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -330,7 +330,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -375,7 +375,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -412,7 +412,7 @@ module.exports = {
         test.expect(7);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -435,7 +435,7 @@ module.exports = {
         var rs2 = rs.getTranslatedResource("de-DE");
         
         test.ok(rs2);
-        test.equal(rs2.getId(), "asdf");
+        test.equal(rs2.getKey(), "asdf");
         test.deepEqual(rs2.getPlurals(), {
         	"one": "Dies ist einem Test.",
         	"two": "Dies ist einem Dobles",
@@ -453,7 +453,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -476,7 +476,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -505,7 +505,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -526,7 +526,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	pathName: "a/b/c.java",
         	strings: {
@@ -539,7 +539,7 @@ module.exports = {
         test.ok(rs);
         
         var rs2 = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
         	strings: {
@@ -567,7 +567,7 @@ module.exports = {
         test.expect(2);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	source: "This is a test",
         	pathName: "a/b/c.java",
         	strings: {
@@ -590,7 +590,7 @@ module.exports = {
         test.expect(4);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	pathName: "a/b/c.java",
         	strings: {
         		"one": "This is singular",
@@ -602,7 +602,7 @@ module.exports = {
         test.ok(rs);
         
         var rs2 = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	pathName: "a/b/c.java",
         	strings: {
         		"one": "This is singular",
@@ -625,7 +625,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "en-US",
         	pathName: "a/b/c.java",
         	strings: {
@@ -638,7 +638,7 @@ module.exports = {
         test.ok(rs);
         
         var rs2 = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	locale: "en-US",
         	pathName: "a/b/c.java",
         	strings: {
@@ -661,7 +661,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	pathName: "a/b/c.java",
         	strings: {
         		"one": "This is singular",
@@ -673,7 +673,7 @@ module.exports = {
         test.ok(rs);
         
         var rs2 = new ResourcePlural({
-        	id: "asdf",
+        	key: "asdf",
         	pathName: "a/b/c.java",
         	strings: {
             	"one": "Dies ist einem Test.",
@@ -695,7 +695,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourcePlural({
-            id: "asdf",
+            key: "asdf",
             locale: "en-US",
             pathName: "a/b/c.java",
             strings: {
@@ -708,7 +708,7 @@ module.exports = {
         test.ok(rs);
         
         var rs2 = new ResourcePlural({
-            id: "asdf",
+            key: "asdf",
             locale: "de-DE",
             pathName: "a/b/c.java",
             strings: {
@@ -732,7 +732,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourcePlural({
-            id: "asdf",
+            key: "asdf",
             pathName: "a/b/c.java",
         	strings: {
         		"one": "This is singular",
@@ -760,7 +760,7 @@ module.exports = {
         test.expect(4);
 
         var rs = new ResourcePlural({
-            id: "asdf",
+            key: "asdf",
             pathName: "a/b/c.java",
         	strings: {
         		"one": "This is singular",
@@ -795,7 +795,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourcePlural({
-            id: "asdf",
+            key: "asdf",
             pathName: "a/b/c.java",
         	strings: {
         		"one": "This is singular",
@@ -823,7 +823,7 @@ module.exports = {
         test.expect(3);
 
         var rs = new ResourcePlural({
-            id: "asdf",
+            key: "asdf",
             pathName: "a/b/c.java",
         	strings: {
         		"one": "This is singular",
@@ -851,7 +851,7 @@ module.exports = {
         test.expect(4);
 
         var rs = new ResourcePlural({
-            id: "asdf",
+            key: "asdf",
             pathName: "a/b/c.java",
         	strings: {
         		"one": "This is singular",

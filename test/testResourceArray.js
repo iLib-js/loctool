@@ -43,7 +43,7 @@ module.exports = {
         test.expect(1);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -57,14 +57,14 @@ module.exports = {
         test.expect(5);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
         });
         test.ok(ra);
     
-        test.equal(ra.getId(), "asdf");
+        test.equal(ra.getKey(), "asdf");
         test.deepEqual(ra.getArray(), ["This is a test", "This is also a test", "This is not"]);
         test.equal(ra.locale, "de-DE");
         test.equal(ra.pathName, "a/b/c.java");
@@ -76,7 +76,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-            id: "asdf",
+            key: "asdf",
             array: ["This is a test", "This is also a test", "This is not"],
             locale: "de-DE",
             pathName: "a/b/c.java"
@@ -88,27 +88,27 @@ module.exports = {
         test.done();
     },
 
-    testResourceArrayGetId: function(test) {
+    testResourceArrayGetKey: function(test) {
         test.expect(2);
 
         var ra = new ResourceArray({
-            id: "foo",
+            key: "foo",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
             locale: "de-DE"
         });
         test.ok(ra);
-        test.equal(ra.getId(), "foo");
+        test.equal(ra.getKey(), "foo");
         
         test.done();
     },
 
-    testResourceArrayGetIdEmpty: function(test) {
+    testResourceArrayGetKeyEmpty: function(test) {
         test.expect(2);
 
         var ra = new ResourceArray();
         test.ok(ra);
-        test.ok(!ra.getId());
+        test.ok(!ra.getKey());
         
         test.done();
     },
@@ -117,7 +117,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-            id: "foo",
+            key: "foo",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
             locale: "de-DE",
@@ -133,7 +133,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-            id: "foo",
+            key: "foo",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
             locale: "de-DE"
@@ -148,7 +148,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-            id: "foo",
+            key: "foo",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
             locale: "de-DE"
@@ -173,7 +173,7 @@ module.exports = {
         test.expect(4);
 
         var ra = new ResourceArray({
-            id: "foo",
+            key: "foo",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
             locale: "de-DE"
@@ -190,7 +190,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-            id: "foo",
+            key: "foo",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
             locale: "de-DE"
@@ -205,7 +205,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-            id: "foo",
+            key: "foo",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
             locale: "de-DE"
@@ -220,7 +220,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-            id: "foo",
+            key: "foo",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.txt",
             locale: "de-DE"
@@ -235,7 +235,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -253,7 +253,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -271,7 +271,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -289,7 +289,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -305,7 +305,7 @@ module.exports = {
         test.expect(3);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -325,7 +325,7 @@ module.exports = {
         test.expect(3);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -347,7 +347,7 @@ module.exports = {
         test.expect(7);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java",
@@ -360,7 +360,7 @@ module.exports = {
         var ra2 = ra.getTranslatedResource("de-DE");
         
         test.ok(ra2);
-        test.equal(ra2.getId(), "asdf");
+        test.equal(ra2.getKey(), "asdf");
         test.deepEqual(ra2.getArray(), ["Dies ist einem Test.", null, null]);
         test.equal(ra2.locale, "de-DE");
         test.equal(ra2.pathName, "a/b/c.java");
@@ -373,7 +373,7 @@ module.exports = {
         test.expect(3);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -392,7 +392,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -411,7 +411,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -427,14 +427,14 @@ module.exports = {
         test.expect(3);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	pathName: "a/b/c.java"
         });
         test.ok(ra);
         
         var ra2 = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["Dies ist einem Test.", "Dies ist auch einem Test.", "Dieser ist nicht."],
         	locale: "de-DE",
         	pathName: "a/b/c.java"
@@ -452,7 +452,7 @@ module.exports = {
         test.expect(2);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test", "This is also a test", "This is not"],
         	pathName: "a/b/c.java"
         });
@@ -469,14 +469,14 @@ module.exports = {
         test.expect(4);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test"],
         	pathName: "a/b/c.java"
         });
         test.ok(ra);
         
         var ra2 = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test"],
         	pathName: "a/b/c.java"
         });
@@ -494,7 +494,7 @@ module.exports = {
         test.expect(3);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test"],
         	locale: "en-US",
         	pathName: "a/b/c.java"
@@ -502,7 +502,7 @@ module.exports = {
         test.ok(ra);
         
         var ra2 = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["Dies ist einem Test."],
         	locale: "en-US",
         	pathName: "a/b/c.java"
@@ -520,14 +520,14 @@ module.exports = {
         test.expect(3);
 
         var ra = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["This is a test"],
         	pathName: "a/b/c.java"
         });
         test.ok(ra);
         
         var ra2 = new ResourceArray({
-        	id: "asdf",
+        	key: "asdf",
         	array: ["Dies ist einem Test."],
         	pathName: "a/b/c.java"
         });
@@ -544,7 +544,7 @@ module.exports = {
         test.expect(3);
 
         var ra = new ResourceArray({
-            id: "asdf",
+            key: "asdf",
             array: ["This is a test"],
             locale: "en-US",
             pathName: "a/b/c.java"
@@ -552,7 +552,7 @@ module.exports = {
         test.ok(ra);
         
         var ra2 = new ResourceArray({
-            id: "asdf",
+            key: "asdf",
             array: ["Dies ist einem Test."],
             locale: "de-DE",
             pathName: "a/b/c.java",
@@ -571,7 +571,7 @@ module.exports = {
         test.expect(3);
 
         var ra = new ResourceArray({
-            id: "asdf",
+            key: "asdf",
             array: ["This is a test"],
             pathName: "a/b/c.java"
         });
@@ -594,7 +594,7 @@ module.exports = {
         test.expect(4);
 
         var ra = new ResourceArray({
-            id: "asdf",
+            key: "asdf",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java"
         });
@@ -619,7 +619,7 @@ module.exports = {
         test.expect(3);
 
         var ra = new ResourceArray({
-            id: "asdf",
+            key: "asdf",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java"
         });
@@ -642,7 +642,7 @@ module.exports = {
         test.expect(3);
 
         var ra = new ResourceArray({
-            id: "asdf",
+            key: "asdf",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java"
         });
@@ -665,7 +665,7 @@ module.exports = {
         test.expect(4);
 
         var ra = new ResourceArray({
-            id: "asdf",
+            key: "asdf",
             array: ["This is a test", "This is also a test", "This is not"],
             pathName: "a/b/c.java"
         });

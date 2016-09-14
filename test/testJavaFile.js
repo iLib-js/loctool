@@ -77,7 +77,7 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseSimpleGetById: function(test) {
+    testJavaFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
         var p = new AndroidProject({
@@ -95,7 +95,7 @@ module.exports = {
         var r = set.get("r99578090116730");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getId(), "r99578090116730");
+        test.equal(r.getKey(), "r99578090116730");
         
         test.done();
     },
@@ -118,7 +118,7 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getId(), "r99578090116730");
+        test.equal(r.getKey(), "r99578090116730");
         
         test.done();
     },
@@ -141,7 +141,7 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getId(), "r99578090116730");
+        test.equal(r.getKey(), "r99578090116730");
         
         test.done();
     },
@@ -169,7 +169,7 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseWithId: function(test) {
+    testJavaFileParseWithKey: function(test) {
         test.expect(5);
 
         var p = new AndroidProject({
@@ -187,12 +187,12 @@ module.exports = {
         var r = set.get("unique_id");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getId(), "unique_id");
+        test.equal(r.getKey(), "unique_id");
         
         test.done();
     },
 
-    testJavaFileParseWithIdCantGetBySource: function(test) {
+    testJavaFileParseWithKeyCantGetBySource: function(test) {
         test.expect(3);
 
         var p = new AndroidProject({
@@ -231,17 +231,17 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getId(), "r99578090116730");
+        test.equal(r.getKey(), "r99578090116730");
         
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
-        test.equal(r.getId(), "r90625302087578");
+        test.equal(r.getKey(), "r90625302087578");
         
         test.done();
     },
 
-    testJavaFileParseMultipleWithId: function(test) {
+    testJavaFileParseMultipleWithKey: function(test) {
         test.expect(10);
 
         var p = new AndroidProject({
@@ -259,14 +259,14 @@ module.exports = {
         var r = set.get("x");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.ok(!r.getAutoId());
-        test.equal(r.getId(), "x");
+        test.ok(!r.getAutoKey());
+        test.equal(r.getKey(), "x");
         
         r = set.get("y");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.ok(!r.getAutoId());
-        test.equal(r.getId(), "y");
+        test.ok(!r.getAutoKey());
+        test.equal(r.getKey(), "y");
         
         test.done();
     },
@@ -289,14 +289,14 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getId(), "r99578090116730");
+        test.equal(r.getKey(), "r99578090116730");
         
         test.equal(set.size(), 1);
         
         test.done();
     },
 
-    testJavaFileParseDupsDifferingByIdOnly: function(test) {
+    testJavaFileParseDupsDifferingByKeyOnly: function(test) {
         test.expect(8);
 
         var p = new AndroidProject({
@@ -314,12 +314,12 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getId(), "r99578090116730");
+        test.equal(r.getKey(), "r99578090116730");
         
         r = set.get("unique_id");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getId(), "unique_id");
+        test.equal(r.getKey(), "unique_id");
         
         test.done();
     },
@@ -453,12 +453,12 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getId(), "r99578090116730");
+        test.equal(r.getKey(), "r99578090116730");
 
         var r = set.get("id1");
         test.ok(r);
         test.equal(r.getSource(), "This is a test with a unique id");
-        test.equal(r.getId(), "id1");
+        test.equal(r.getKey(), "id1");
         
         test.done();
     },
