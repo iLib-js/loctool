@@ -350,7 +350,7 @@ module.exports = {
         
         var resources = ts.getAll();
         test.ok(resources);
-        test.equal(resources.length, 1);
+        test.equal(resources.length, 2);
         test.done();
     },
 
@@ -378,36 +378,6 @@ module.exports = {
         var resources = ts.getAll();
         test.ok(resources);
         test.equal(resources.length, 2);
-        test.done();
-    },
-
-    testTranslationSetAddTranslationTranslationAvailable: function(test) {
-        test.expect(3);
-
-        var ts = new TranslationSet();
-        var res = new ResourceString({
-            key: "asdf",
-            source: "This is a test"
-        });
-        
-        ts.add(res);
-        
-        res = new ResourceString({
-            key: "asdf",
-            source: "This is another test",
-            locale: "de-DE"
-        });
-        
-        ts.add(res);
-        
-        var r = ts.get("asdf");
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        
-        var t = r.getTranslation("de-DE");
-        
-        test.equal(t, "This is another test");
         test.done();
     },
 
@@ -542,7 +512,7 @@ module.exports = {
         
         ts.add(res);
         
-        test.equal(ts.size(), 1);
+        test.equal(ts.size(), 2);
 
         test.done();
     },

@@ -12,7 +12,8 @@ CREATE TABLE Resources (
     resType          VARCHAR(10),
     ordinal          INT,
     pluralClass      VARCHAR(10),
-    state            INT
+    state            INT,
+    comment          VARCHAR(256)
 );
 
 CREATE UNIQUE INDEX res ON Resources (`project`, `context`, `reskey`, `locale`);
