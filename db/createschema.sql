@@ -2,18 +2,17 @@ USE translations;
 
 CREATE TABLE Resources (
     id               INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    reskey           VARCHAR(100) NOT NULL,
-    text             TEXT NOT NULL,
-    locale           VARCHAR(15),
-    path             VARCHAR(512),
     project          VARCHAR(64),
     context          VARCHAR(20),
-    autoId           BOOLEAN,
-    resType          INT,
+    locale           VARCHAR(15),
+    reskey           VARCHAR(100) NOT NULL,
+    text             TEXT NOT NULL,
+    pathName         VARCHAR(512),
+    autoKey          BOOLEAN,
+    resType          VARCHAR(10),
     ordinal          INT,
-    class            VARCHAR(10),
+    pluralClass      VARCHAR(10),
     state            INT
 );
 
-
-
+CREATE UNIQUE INDEX res ON Resources (`project`, `context`, `reskey`, `locale`);
