@@ -1,0 +1,17 @@
+{
+	"appenders": [
+	    { 
+	    	"type": "console",
+	    	"layout": {
+				"type": "pattern",
+				"pattern": "%r %p %c: %m"
+			}
+		}
+	],
+	"levels": {
+		"[all]": "INFO",
+		"loctool.loctool":  "INFO",
+		"loctool.lib.JavaFile": "INFO",
+		"loctool.lib.JavaFileType": "INFO"
+	}
+}

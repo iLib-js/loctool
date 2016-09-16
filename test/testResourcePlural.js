@@ -226,6 +226,7 @@ module.exports = {
         test.done();
     },
 
+    /*
     testResourcePluralAddTranslation: function(test) {
         test.expect(2);
 
@@ -727,6 +728,7 @@ module.exports = {
         
         test.done();
     },
+    */
 
     testResourcePluralGeneratePseudo: function(test) {
         test.expect(3);
@@ -747,11 +749,10 @@ module.exports = {
             locale: "zxx-XX" // the pseudo-locale!
         });
 
-        test.ok(!rs.getTranslations("de-DE"));
-        
-        rs.generatePseudo("de-DE", rb);
+        var rs2 = rs.generatePseudo("de-DE", rb);
 
-        test.ok(rs.getTranslations("de-DE"));
+        test.ok(rs2);
+        test.equal(rs2.getLocale(), "de-DE");
         
         test.done();
     },
@@ -775,11 +776,12 @@ module.exports = {
             locale: "zxx-XX" // the pseudo-locale!
         });
 
-        test.ok(!rs.getTranslations("de-DE"));
-        
-        rs.generatePseudo("de-DE", rb);
+        var rs2 = rs.generatePseudo("de-DE", rb);
 
-        var t = rs.getTranslations("de-DE");
+        test.ok(rs2);
+        
+        var t = rs2.getPlurals();
+        
         test.ok(t);
         test.deepEqual(t, {
     		"one": "Ťĥíš íš šíñğüľàŕ",
@@ -791,6 +793,7 @@ module.exports = {
         test.done();
     },
 
+    /*
     testResourcePluralGeneratePseudoAddToLocales: function(test) {
         test.expect(3);
 
@@ -818,9 +821,10 @@ module.exports = {
         
         test.done();
     },
+    */
 
     testResourcePluralGeneratePseudoBadLocale: function(test) {
-        test.expect(3);
+        test.expect(2);
 
         var rs = new ResourcePlural({
             key: "asdf",
@@ -838,17 +842,14 @@ module.exports = {
             locale: "zxx-XX" // the pseudo-locale!
         });
 
-        test.deepEqual(rs.getTranslationLocales(), []);
-        
-        rs.generatePseudo(undefined, rb);
-
-        test.deepEqual(rs.getTranslationLocales(), []);
+        var rs2 = rs.generatePseudo(undefined, rb);
+        test.ok(!rs2);
         
         test.done();
     },
 
     testResourcePluralGeneratePseudoBadBundle: function(test) {
-        test.expect(4);
+        test.expect(2);
 
         var rs = new ResourcePlural({
             key: "asdf",
@@ -862,12 +863,9 @@ module.exports = {
         });
         test.ok(rs);
         
-        test.deepEqual(rs.getTranslationLocales(), []);
-        
-        rs.generatePseudo("de-DE", undefined);
+        var rs2 = rs.generatePseudo("de-DE", undefined);
 
-        test.ok(!rs.getTranslations("de-DE"));
-        test.deepEqual(rs.getTranslationLocales(), []);
+        test.ok(!rs2);
         
         test.done();
     }

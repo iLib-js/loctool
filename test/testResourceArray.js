@@ -231,6 +231,7 @@ module.exports = {
         test.done();
     },
 
+    /*
     testResourceArrayAddTranslation: function(test) {
         test.expect(2);
 
@@ -566,6 +567,7 @@ module.exports = {
         
         test.done();
     },
+    */
     
     testResourceArrayGeneratePseudo: function(test) {
         test.expect(3);
@@ -581,17 +583,16 @@ module.exports = {
             locale: "zxx-XX" // the pseudo-locale!
         });
 
-        test.ok(!ra.getTranslation(0, "de-DE"));
-        
-        ra.generatePseudo("de-DE", rb);
+        var ra2 = ra.generatePseudo("de-DE", rb);
 
-        test.ok(ra.getTranslation(0, "de-DE"));
+        test.ok(ra2);
+        test.ok(ra2.getLocale(), "de-DE");
         
         test.done();
     },
 
     testResourceArrayGeneratePseudoRightString: function(test) {
-        test.expect(4);
+        test.expect(6);
 
         var ra = new ResourceArray({
             key: "asdf",
@@ -604,17 +605,21 @@ module.exports = {
             locale: "zxx-XX" // the pseudo-locale!
         });
 
-        test.ok(!ra.getTranslation(0, "de-DE"));
-        
-        ra.generatePseudo("de-DE", rb);
+        var ra2 = ra.generatePseudo("de-DE", rb);
 
-        var t = ra.getTranslation(0, "de-DE");
-        test.ok(t);
-        test.equal(t, "Ťĥíš íš à ţëšţ");
+        test.ok(ra2);
+        test.ok(ra2.getLocale(), "de-DE");
+        
+        var strings = ra2.getArray();
+        
+        test.ok(strings);
+        test.equal(strings.length, 3);
+        test.equal(strings[0], "Ťĥíš íš à ţëšţ");
         
         test.done();
     },
 
+    /*
     testResourceArrayGeneratePseudoAddToLocales: function(test) {
         test.expect(3);
 
@@ -637,9 +642,10 @@ module.exports = {
         
         test.done();
     },
+    */
 
     testResourceArrayGeneratePseudoBadLocale: function(test) {
-        test.expect(3);
+        test.expect(2);
 
         var ra = new ResourceArray({
             key: "asdf",
@@ -652,17 +658,14 @@ module.exports = {
             locale: "zxx-XX" // the pseudo-locale!
         });
 
-        test.deepEqual(ra.getTranslationLocales(), []);
-        
-        ra.generatePseudo(undefined, rb);
-
-        test.deepEqual(ra.getTranslationLocales(), []);
+        var ra2 = ra.generatePseudo(undefined, rb);
+        test.ok(!ra2);
         
         test.done();
     },
 
     testResourceArrayGeneratePseudoBadBundle: function(test) {
-        test.expect(4);
+        test.expect(2);
 
         var ra = new ResourceArray({
             key: "asdf",
@@ -671,12 +674,9 @@ module.exports = {
         });
         test.ok(ra);
         
-        test.deepEqual(ra.getTranslationLocales(), []);
-        
-        ra.generatePseudo("de-DE", undefined);
+        var ra2 = ra.generatePseudo("de-DE", undefined);
 
-        test.ok(!ra.getTranslation("de-DE"));
-        test.deepEqual(ra.getTranslationLocales(), []);
+        test.ok(!ra2);
         
         test.done();
     }
