@@ -868,5 +868,113 @@ module.exports = {
         test.ok(!rs2);
         
         test.done();
+    },
+    
+    testResourcePluralClone: function(test) {
+        test.expect(10);
+
+        var ra = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        var ra2 = ra.clone();
+        
+        test.ok(ra2);
+        test.equal(ra2.project, ra.project);
+        test.equal(ra2.context, ra.context);
+        test.equal(ra2.locale, ra.locale);
+        test.equal(ra2.reskey, ra.reskey);
+        test.deepEqual(ra2.array, ra.array);
+        test.equal(ra2.pathName, ra.pathName);
+        test.equal(ra2.comment, ra.comment);
+        test.equal(ra2.state, ra.state);
+        
+        test.done();
+    },
+    
+    testResourcePluralCloneWithOverrides: function(test) {
+        test.expect(10);
+
+        var ra = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        var ra2 = ra.clone({
+        	locale: "fr-FR",
+        	state: "asdfasdf"
+        });
+        
+        test.ok(ra2);
+        test.equal(ra2.project, ra.project);
+        test.equal(ra2.context, ra.context);
+        test.equal(ra2.locale, "fr-FR");
+        test.equal(ra2.reskey, ra.reskey);
+        test.deepEqual(ra2.array, ra.array);
+        test.equal(ra2.pathName, ra.pathName);
+        test.equal(ra2.comment, ra.comment);
+        test.equal(ra2.state, "asdfasdf");
+        
+        test.done();
+    },
+    
+    testResourcePluralAddString: function(test) {
+        test.expect(2);
+
+        var ra = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        ra.addString(3, "This is the third one")
+        
+        test.equal(ra.get(3), "This is the third one");
+        
+        test.done();
+    },
+    
+    testResourcePluralAddString: function(test) {
+        test.expect(10);
+
+        var ra = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        ra.addString(3, "This is the third one")
+        
+        test.equal(ra.get(3), "This is the third one");
+        
+        test.done();
     }
+
 };

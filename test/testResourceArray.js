@@ -230,344 +230,6 @@ module.exports = {
         
         test.done();
     },
-
-    /*
-    testResourceArrayAddTranslation: function(test) {
-        test.expect(2);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-    
-        ra.addTranslation(0, "de-DE", "Dies ist einem Test.");
-        
-        test.equal(ra.getTranslation(0, "de-DE"), "Dies ist einem Test.");
-        
-        test.done();
-    },
-
-    testResourceArrayAddTranslationEmpty: function(test) {
-        test.expect(2);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-    
-        ra.addTranslation(0, "de-DE", undefined);
-        
-        test.ok(!ra.getTranslation(0, "de-DE"));
-        
-        test.done();
-    },
-
-    testResourceArrayAddTranslationNoLocale: function(test) {
-        test.expect(2);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-    
-        ra.addTranslation(0, undefined, "foo");
-        
-        test.ok(ra);
-        
-        test.done();
-    },
-
-    testResourceArrayGetTranslationEmpty: function(test) {
-        test.expect(2);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-    
-        test.ok(!ra.getTranslation(0, "de-DE"));
-        
-        test.done();
-    },
-
-    testResourceArrayAddTranslationMultiple: function(test) {
-        test.expect(3);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-    
-        ra.addTranslation(0, "de-DE", "Dies ist einem Test.");
-        ra.addTranslation(0, "fr-FR", "Ceci est une teste.");
-        
-        test.equal(ra.getTranslation(0, "de-DE"), "Dies ist einem Test.");
-        test.equal(ra.getTranslation(0, "fr-FR"), "Ceci est une teste.");
-        
-        test.done();
-    },
-
-    testResourceArrayAddTranslationClear: function(test) {
-        test.expect(3);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-    
-        ra.addTranslation(0, "de-DE", "Dies ist einem Test.");
-        
-        test.equal(ra.getTranslation(0, "de-DE"), "Dies ist einem Test.");
-
-        ra.addTranslation(0, "de-DE", undefined);
-        
-        test.ok(!ra.getTranslation("de-DE"));
-
-        test.done();
-    },
-
-    testResourceArrayGetTranslatedResource: function(test) {
-        test.expect(7);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	context: "foo"
-        });
-        test.ok(ra);
-    
-        ra.addTranslation(0, "de-DE", "Dies ist einem Test.");
-        
-        var ra2 = ra.getTranslatedResource("de-DE");
-        
-        test.ok(ra2);
-        test.equal(ra2.getKey(), "asdf");
-        test.deepEqual(ra2.getArray(), ["Dies ist einem Test.", null, null]);
-        test.equal(ra2.locale, "de-DE");
-        test.equal(ra2.pathName, "a/b/c.java");
-        test.equal(ra2.getContext(), "foo");
-                
-        test.done();
-    },
-
-    testResourceArrayGetTranslatedResourceNoTranslation: function(test) {
-        test.expect(3);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-    
-        var ra2 = ra.getTranslatedResource("de-DE");
-        
-        test.ok(ra2);
-        test.deepEqual(ra2.getArray(), [null, null, null]);
-                
-        test.done();
-    },
-
-    testResourceArrayGetTranslationLocales: function(test) {
-        test.expect(2);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-    
-        ra.addTranslation(0, "de-DE", "Dies ist einem Test.");
-        ra.addTranslation(0, "fr-FR", "Ceci est une teste.");
-        
-        test.deepEqual(ra.getTranslationLocales(), ["de-DE", "fr-FR"]);
-                
-        test.done();
-    },
-
-    testResourceArrayGetTranslationLocalesNoTranslations: function(test) {
-        test.expect(2);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-    
-        test.deepEqual(ra.getTranslationLocales(), []);
-                
-        test.done();
-    },
-    
-    testResourceArrayMerge: function(test) {
-        test.expect(3);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-        
-        var ra2 = new ResourceArray({
-        	key: "asdf",
-        	array: ["Dies ist einem Test.", "Dies ist auch einem Test.", "Dieser ist nicht."],
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra2);
-        
-        ra.merge(ra2);
-        
-        test.equal(ra.getTranslation(0, "de-DE"), "Dies ist einem Test.");
-        
-        test.done();
-    },
-
-    testResourceArrayMergeEmpty: function(test) {
-        test.expect(2);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test", "This is also a test", "This is not"],
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-                
-        ra.merge();
-        
-        test.ok(ra);
-        
-        test.done();
-    },
-
-    testResourceArrayMergeSame: function(test) {
-        test.expect(4);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test"],
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-        
-        var ra2 = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test"],
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra2);
-        
-        ra.merge(ra2);
-        
-        test.ok(ra);
-        test.ok(ra2);
-        
-        test.done();
-    },
-
-    testResourceArrayMergeDup: function(test) {
-        test.expect(3);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test"],
-        	locale: "en-US",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-        
-        var ra2 = new ResourceArray({
-        	key: "asdf",
-        	array: ["Dies ist einem Test."],
-        	locale: "en-US",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra2);
-        
-        test.throws(function() {
-        	ra.merge(ra2);
-        });
-        
-        test.done();
-    },
-
-    testResourceArrayMergeDupNoLocales: function(test) {
-        test.expect(3);
-
-        var ra = new ResourceArray({
-        	key: "asdf",
-        	array: ["This is a test"],
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-        
-        var ra2 = new ResourceArray({
-        	key: "asdf",
-        	array: ["Dies ist einem Test."],
-        	pathName: "a/b/c.java"
-        });
-        test.ok(ra2);
-        
-        test.throws(function() {
-        	ra.merge(ra2);
-        });
-        
-        test.done();
-    },
-
-    testResourceArrayMergeDifferentContext: function(test) {
-        test.expect(3);
-
-        var ra = new ResourceArray({
-            key: "asdf",
-            array: ["This is a test"],
-            locale: "en-US",
-            pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-        
-        var ra2 = new ResourceArray({
-            key: "asdf",
-            array: ["Dies ist einem Test."],
-            locale: "de-DE",
-            pathName: "a/b/c.java",
-            context: "foo"
-        });
-        test.ok(ra2);
-        
-        test.throws(function() {
-            ra.merge(ra2);
-        });
-        
-        test.done();
-    },
-    */
     
     testResourceArrayGeneratePseudo: function(test) {
         test.expect(3);
@@ -619,31 +281,6 @@ module.exports = {
         test.done();
     },
 
-    /*
-    testResourceArrayGeneratePseudoAddToLocales: function(test) {
-        test.expect(3);
-
-        var ra = new ResourceArray({
-            key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
-            pathName: "a/b/c.java"
-        });
-        test.ok(ra);
-        
-        var rb = new ResBundle({
-            locale: "zxx-XX" // the pseudo-locale!
-        });
-
-        test.deepEqual(ra.getTranslationLocales(), []);
-        
-        ra.generatePseudo("de-DE", rb);
-
-        test.deepEqual(ra.getTranslationLocales(), ["de-DE"]);
-        
-        test.done();
-    },
-    */
-
     testResourceArrayGeneratePseudoBadLocale: function(test) {
         test.expect(2);
 
@@ -677,6 +314,113 @@ module.exports = {
         var ra2 = ra.generatePseudo("de-DE", undefined);
 
         test.ok(!ra2);
+        
+        test.done();
+    },
+    
+    testResourceArrayClone: function(test) {
+        test.expect(10);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        var ra2 = ra.clone();
+        
+        test.ok(ra2);
+        test.equal(ra2.project, ra.project);
+        test.equal(ra2.context, ra.context);
+        test.equal(ra2.locale, ra.locale);
+        test.equal(ra2.reskey, ra.reskey);
+        test.deepEqual(ra2.array, ra.array);
+        test.equal(ra2.pathName, ra.pathName);
+        test.equal(ra2.comment, ra.comment);
+        test.equal(ra2.state, ra.state);
+        
+        test.done();
+    },
+    
+    testResourceArrayCloneWithOverrides: function(test) {
+        test.expect(10);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        var ra2 = ra.clone({
+        	locale: "fr-FR",
+        	state: "asdfasdf"
+        });
+        
+        test.ok(ra2);
+        test.equal(ra2.project, ra.project);
+        test.equal(ra2.context, ra.context);
+        test.equal(ra2.locale, "fr-FR");
+        test.equal(ra2.reskey, ra.reskey);
+        test.deepEqual(ra2.array, ra.array);
+        test.equal(ra2.pathName, ra.pathName);
+        test.equal(ra2.comment, ra.comment);
+        test.equal(ra2.state, "asdfasdf");
+        
+        test.done();
+    },
+    
+    testResourceArrayAddString: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        ra.addString(3, "This is the third one")
+        
+        test.equal(ra.get(3), "This is the third one");
+        
+        test.done();
+    },
+    
+    testResourceArrayAddString: function(test) {
+        test.expect(10);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        ra.addString(3, "This is the third one")
+        
+        test.equal(ra.get(3), "This is the third one");
         
         test.done();
     }
