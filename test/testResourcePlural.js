@@ -226,510 +226,6 @@ module.exports = {
         test.done();
     },
 
-    /*
-    testResourcePluralAddTranslation: function(test) {
-        test.expect(2);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", {
-        	"one": "Dies ist einem Test.",
-        	"two": "Dies ist einem Dobles",
-        	"few": "Dies ist den wenigen Fall",
-        	"many": "Dies ist den vielen Fall"
-        });
-        
-        test.deepEqual(rs.getTranslations("de-DE"), {
-        	"one": "Dies ist einem Test.",
-        	"two": "Dies ist einem Dobles",
-        	"few": "Dies ist den wenigen Fall",
-        	"many": "Dies ist den vielen Fall"
-        });
-        
-        test.done();
-    },
-
-    testResourcePluralAddTranslationEmpty: function(test) {
-        test.expect(2);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", undefined);
-        
-        test.ok(!rs.getTranslations("de-DE"));
-        
-        test.done();
-    },
-
-    testResourcePluralAddTranslationNoLocale: function(test) {
-        test.expect(2);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-    
-        rs.addTranslation(undefined, "foo");
-        
-        test.ok(rs);
-        
-        test.done();
-    },
-
-    testResourcePluralGetTranslationEmpty: function(test) {
-        test.expect(2);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-    
-        test.ok(!rs.getTranslations("fr-FR"));
-        
-        test.done();
-    },
-
-    testResourcePluralAddTranslationMultiple: function(test) {
-        test.expect(3);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", {
-        	"one": "Dies ist einem Test.",
-        	"two": "Dies ist einem Dobles",
-        	"few": "Dies ist den wenigen Fall",
-        	"many": "Dies ist den vielen Fall"
-        });
-        rs.addTranslation("fr-FR", {
-        	"one": "Ceci est une teste.",
-        	"two": "Ceci est la doble.",
-        	"few": "Ceci est le peu cas.",
-        	"many": "Ceci est le beaucoup cas."
-        });
-        
-        test.deepEqual(rs.getTranslations("de-DE"), {
-        	"one": "Dies ist einem Test.",
-        	"two": "Dies ist einem Dobles",
-        	"few": "Dies ist den wenigen Fall",
-        	"many": "Dies ist den vielen Fall"
-        });
-        test.deepEqual(rs.getTranslations("fr-FR"), {
-        	"one": "Ceci est une teste.",
-        	"two": "Ceci est la doble.",
-        	"few": "Ceci est le peu cas.",
-        	"many": "Ceci est le beaucoup cas."
-        });
-        
-        test.done();
-    },
-
-    testResourcePluralAddTranslationClear: function(test) {
-        test.expect(3);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", {
-        	"one": "Dies ist einem Test.",
-        	"two": "Dies ist einem Dobles",
-        	"few": "Dies ist den wenigen Fall",
-        	"many": "Dies ist den vielen Fall"
-        });
-        
-        test.deepEqual(rs.getTranslations("de-DE"), {
-        	"one": "Dies ist einem Test.",
-        	"two": "Dies ist einem Dobles",
-        	"few": "Dies ist den wenigen Fall",
-        	"many": "Dies ist den vielen Fall"
-        });
-
-        rs.addTranslation("de-DE", undefined);
-        
-        test.ok(!rs.getTranslations("de-DE"));
-
-        test.done();
-    },
-
-    testResourcePluralGetTranslatedResource: function(test) {
-        test.expect(7);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	},
-        	context: "foo"
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", {
-        	"one": "Dies ist einem Test.",
-        	"two": "Dies ist einem Dobles",
-        	"few": "Dies ist den wenigen Fall",
-        	"many": "Dies ist den vielen Fall"
-        });
-        
-        var rs2 = rs.getTranslatedResource("de-DE");
-        
-        test.ok(rs2);
-        test.equal(rs2.getKey(), "asdf");
-        test.deepEqual(rs2.getPlurals(), {
-        	"one": "Dies ist einem Test.",
-        	"two": "Dies ist einem Dobles",
-        	"few": "Dies ist den wenigen Fall",
-        	"many": "Dies ist den vielen Fall"
-        });
-        test.equal(rs2.locale, "de-DE");
-        test.equal(rs2.pathName, "a/b/c.java");
-        test.equal(rs2.getContext(), "foo");
-                
-        test.done();
-    },
-
-    testResourcePluralGetTranslatedResourceNoTranslation: function(test) {
-        test.expect(2);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-    
-        var rs2 = rs.getTranslatedResource("de-DE");
-        
-        test.ok(!rs2);
-                
-        test.done();
-    },
-
-    testResourcePluralGetTranslationLocales: function(test) {
-        test.expect(2);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", {
-        	"one": "Dies ist einem Test.",
-        	"two": "Dies ist einem Dobles",
-        	"few": "Dies ist den wenigen Fall",
-        	"many": "Dies ist den vielen Fall"
-        });
-        rs.addTranslation("fr-FR", "Ceci est une teste.");
-        
-        test.deepEqual(rs.getTranslationLocales(), ["de-DE", "fr-FR"]);
-                
-        test.done();
-    },
-
-    testResourcePluralGetTranslationLocalesNoTranslations: function(test) {
-        test.expect(2);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-    
-        test.deepEqual(rs.getTranslationLocales(), []);
-                
-        test.done();
-    },
-    
-    testResourcePluralMerge: function(test) {
-        test.expect(3);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	source: "This is a test",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-        
-        var rs2 = new ResourcePlural({
-        	key: "asdf",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	strings: {
-            	"one": "Dies ist einem Test.",
-            	"two": "Dies ist einem Dobles",
-            	"few": "Dies ist den wenigen Fall",
-            	"many": "Dies ist den vielen Fall"
-            }
-        });
-        test.ok(rs2);
-        
-        rs.merge(rs2);
-        
-        test.deepEqual(rs.getTranslations("de-DE"), {
-        	"one": "Dies ist einem Test.",
-        	"two": "Dies ist einem Dobles",
-        	"few": "Dies ist den wenigen Fall",
-        	"many": "Dies ist den vielen Fall"
-        });
-        
-        test.done();
-    },
-
-    testResourcePluralMergeEmpty: function(test) {
-        test.expect(2);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	source: "This is a test",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-                
-        rs.merge();
-        
-        test.ok(rs);
-        
-        test.done();
-    },
-
-    testResourcePluralMergeSame: function(test) {
-        test.expect(4);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-        
-        var rs2 = new ResourcePlural({
-        	key: "asdf",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs2);
-        
-        rs.merge(rs2);
-        
-        test.ok(rs);
-        test.ok(rs2);
-        
-        test.done();
-    },
-
-    testResourcePluralMergeDup: function(test) {
-        test.expect(3);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	locale: "en-US",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-        
-        var rs2 = new ResourcePlural({
-        	key: "asdf",
-        	locale: "en-US",
-        	pathName: "a/b/c.java",
-        	strings: {
-            	"one": "Dies ist einem Test.",
-            	"two": "Dies ist einem Dobles",
-            	"few": "Dies ist den wenigen Fall",
-            	"many": "Dies ist den vielen Fall"
-            }
-        });
-        test.ok(rs2);
-        
-        test.throws(function() {
-        	rs.merge(rs2);
-        });
-        
-        test.done();
-    },
-
-    testResourcePluralMergeDupNoLocales: function(test) {
-        test.expect(3);
-
-        var rs = new ResourcePlural({
-        	key: "asdf",
-        	pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-        
-        var rs2 = new ResourcePlural({
-        	key: "asdf",
-        	pathName: "a/b/c.java",
-        	strings: {
-            	"one": "Dies ist einem Test.",
-            	"two": "Dies ist einem Dobles",
-            	"few": "Dies ist den wenigen Fall",
-            	"many": "Dies ist den vielen Fall"
-            }
-        });
-        test.ok(rs2);
-        
-        test.throws(function() {
-        	rs.merge(rs2);
-        });
-        
-        test.done();
-    },
-
-    testResourcePluralMergeDifferentContext: function(test) {
-        test.expect(3);
-
-        var rs = new ResourcePlural({
-            key: "asdf",
-            locale: "en-US",
-            pathName: "a/b/c.java",
-            strings: {
-                "one": "This is singular",
-                "two": "This is double",
-                "few": "This is the few case",
-                "many": "This is the many case"
-            }
-        });
-        test.ok(rs);
-        
-        var rs2 = new ResourcePlural({
-            key: "asdf",
-            locale: "de-DE",
-            pathName: "a/b/c.java",
-            strings: {
-                "one": "Dies ist einem Test.",
-                "two": "Dies ist einem Dobles",
-                "few": "Dies ist den wenigen Fall",
-                "many": "Dies ist den vielen Fall"
-            },
-            context: "foo"
-        });
-        test.ok(rs2);
-        
-        test.throws(function() {
-            rs.merge(rs2);
-        });
-        
-        test.done();
-    },
-    */
-
     testResourcePluralGeneratePseudo: function(test) {
         test.expect(3);
 
@@ -793,36 +289,6 @@ module.exports = {
         test.done();
     },
 
-    /*
-    testResourcePluralGeneratePseudoAddToLocales: function(test) {
-        test.expect(3);
-
-        var rs = new ResourcePlural({
-            key: "asdf",
-            pathName: "a/b/c.java",
-        	strings: {
-        		"one": "This is singular",
-        		"two": "This is double",
-        		"few": "This is the few case",
-        		"many": "This is the many case"
-        	}
-        });
-        test.ok(rs);
-        
-        var rb = new ResBundle({
-            locale: "zxx-XX" // the pseudo-locale!
-        });
-
-        test.deepEqual(rs.getTranslationLocales(), []);
-        
-        rs.generatePseudo("de-DE", rb);
-
-        test.deepEqual(rs.getTranslationLocales(), ["de-DE"]);
-        
-        test.done();
-    },
-    */
-
     testResourcePluralGeneratePseudoBadLocale: function(test) {
         test.expect(2);
 
@@ -873,29 +339,34 @@ module.exports = {
     testResourcePluralClone: function(test) {
         test.expect(10);
 
-        var ra = new ResourcePlural({
+        var rp = new ResourcePlural({
         	project: "foo",
         	context: "blah",
         	locale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
-            pathName: "a/b/c.java",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case",
+        		"many": "This is the many case"
+        	},
+        	pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
         });
-        test.ok(ra);
+        test.ok(rp);
 
-        var ra2 = ra.clone();
+        var rp2 = rp.clone();
         
-        test.ok(ra2);
-        test.equal(ra2.project, ra.project);
-        test.equal(ra2.context, ra.context);
-        test.equal(ra2.locale, ra.locale);
-        test.equal(ra2.reskey, ra.reskey);
-        test.deepEqual(ra2.array, ra.array);
-        test.equal(ra2.pathName, ra.pathName);
-        test.equal(ra2.comment, ra.comment);
-        test.equal(ra2.state, ra.state);
+        test.ok(rp2);
+        test.equal(rp2.project, rp.project);
+        test.equal(rp2.context, rp.context);
+        test.equal(rp2.locale, rp.locale);
+        test.equal(rp2.reskey, rp.reskey);
+        test.deepEqual(rp2.strings, rp.strings);
+        test.equal(rp2.pathName, rp.pathName);
+        test.equal(rp2.comment, rp.comment);
+        test.equal(rp2.state, rp.state);
         
         test.done();
     },
@@ -903,78 +374,226 @@ module.exports = {
     testResourcePluralCloneWithOverrides: function(test) {
         test.expect(10);
 
-        var ra = new ResourcePlural({
+        var rp = new ResourcePlural({
         	project: "foo",
         	context: "blah",
         	locale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+        	strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case",
+        		"many": "This is the many case"
+        	},
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
         });
-        test.ok(ra);
+        test.ok(rp);
 
-        var ra2 = ra.clone({
+        var rp2 = rp.clone({
         	locale: "fr-FR",
         	state: "asdfasdf"
         });
         
-        test.ok(ra2);
-        test.equal(ra2.project, ra.project);
-        test.equal(ra2.context, ra.context);
-        test.equal(ra2.locale, "fr-FR");
-        test.equal(ra2.reskey, ra.reskey);
-        test.deepEqual(ra2.array, ra.array);
-        test.equal(ra2.pathName, ra.pathName);
-        test.equal(ra2.comment, ra.comment);
-        test.equal(ra2.state, "asdfasdf");
+        test.ok(rp2);
+        test.equal(rp2.project, rp.project);
+        test.equal(rp2.context, rp.context);
+        test.equal(rp2.locale, "fr-FR");
+        test.equal(rp2.reskey, rp.reskey);
+        test.deepEqual(rp2.strings, rp.strings);
+        test.equal(rp2.pathName, rp.pathName);
+        test.equal(rp2.comment, rp.comment);
+        test.equal(rp2.state, "asdfasdf");
         
         test.done();
     },
     
     testResourcePluralAddString: function(test) {
-        test.expect(2);
+        test.expect(3);
 
-        var ra = new ResourcePlural({
+        var rp = new ResourcePlural({
         	project: "foo",
         	context: "blah",
         	locale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+        	strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case",
+        		"many": "This is the many case"
+        	},
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
         });
-        test.ok(ra);
+        test.ok(rp);
 
-        ra.addString(3, "This is the third one")
+        test.ok(!rp.get("zero"));
+
+        rp.addString("zero", "This is the zero one")
         
-        test.equal(ra.get(3), "This is the third one");
+        test.equal(rp.get("zero"), "This is the zero one");
         
         test.done();
     },
     
-    testResourcePluralAddString: function(test) {
-        test.expect(10);
+    testResourcePluralAddStringReplace: function(test) {
+        test.expect(3);
 
-        var ra = new ResourcePlural({
+        var rp = new ResourcePlural({
         	project: "foo",
         	context: "blah",
         	locale: "de-DE",
             key: "asdf",
-            array: ["This is a test", "This is also a test", "This is not"],
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case",
+        		"many": "This is the many case"
+        	},
             pathName: "a/b/c.java",
             comment: "foobar foo",
             state: "accepted"
         });
-        test.ok(ra);
+        test.ok(rp);
 
-        ra.addString(3, "This is the third one")
+        test.equal(rp.get("two"), "This is double");
+
+        rp.addString("two", "This is two at a time")
         
-        test.equal(ra.get(3), "This is the third one");
+        test.equal(rp.get("two"), "This is two at a time");
+        
+        test.done();
+    },
+    
+    testResourcePluralAddStringSize: function(test) {
+        test.expect(3);
+
+        var rp = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(rp);
+
+        test.equal(rp.size(), 3);
+        
+        rp.addString("many", "This is the many one")
+        
+        test.equal(rp.size(), 4);
+        
+        test.done();
+    },
+    
+    testResourcePluralAddStringUndefined: function(test) {
+        test.expect(3);
+
+        var rp = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(rp);
+
+        test.equal(rp.get("one"), "This is singular");
+
+        rp.addString("one", undefined)
+        
+        test.equal(rp.get("one"), "This is singular");
+        
+        test.done();
+    },
+    
+    testResourcePluralAddStringNoClass: function(test) {
+        test.expect(3);
+
+        var rp = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(rp);
+
+        test.equal(rp.size(), 3);
+
+        rp.addString(undefined, "foobar")
+        
+        test.equal(rp.size(), 3);
+        
+        test.done();
+    },
+    
+    testResourcePluralAddStringEmpty: function(test) {
+        test.expect(3);
+
+        var rp = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(rp);
+
+        test.equal(rp.size(), 0);
+
+        rp.addString("one", "foobar")
+        
+        test.equal(rp.size(), 1);
+        
+        test.done();
+    },
+    
+    testResourcePluralAddStringEmptyRightContents: function(test) {
+        test.expect(3);
+
+        var rp = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(rp);
+
+        test.ok(!rp.get("one"));
+
+        rp.addString("one", "foobar")
+        
+        test.equal(rp.get("one"), "foobar");
         
         test.done();
     }
-
 };

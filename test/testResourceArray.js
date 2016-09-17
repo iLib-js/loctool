@@ -403,8 +403,8 @@ module.exports = {
         test.done();
     },
     
-    testResourceArrayAddString: function(test) {
-        test.expect(10);
+    testResourceArrayAddStringReplace: function(test) {
+        test.expect(3);
 
         var ra = new ResourceArray({
         	project: "foo",
@@ -418,10 +418,131 @@ module.exports = {
         });
         test.ok(ra);
 
+        test.equal(ra.get(2), "This is not");
+
+        ra.addString(2, "This isn't a test")
+        
+        test.equal(ra.get(2), "This isn't a test");
+        
+        test.done();
+    },
+    
+    testResourceArrayAddStringSize: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        test.equal(ra.size(), 3);
+        
         ra.addString(3, "This is the third one")
         
-        test.equal(ra.get(3), "This is the third one");
+        test.equal(ra.size(), 4);
+        
+        test.done();
+    },
+    
+    testResourceArrayAddStringUndefined: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        test.equal(ra.get(1), "This is also a test");
+
+        ra.addString(1, undefined)
+        
+        test.equal(ra.get(1), "This is also a test");
+        
+        test.done();
+    },
+    
+    testResourceArrayAddStringNoIndex: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        test.equal(ra.size(), 3);
+
+        ra.addString(undefined, "foobar")
+        
+        test.equal(ra.size(), 3);
+        
+        test.done();
+    },
+    
+    testResourceArrayAddStringEmpty: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        test.equal(ra.size(), 0);
+
+        ra.addString(0, "foobar")
+        
+        test.equal(ra.size(), 1);
+        
+        test.done();
+    },
+    
+    testResourceArrayAddStringEmptyRightContents: function(test) {
+        test.expect(3);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        test.ok(!ra.get(0));
+
+        ra.addString(0, "foobar")
+        
+        test.equal(ra.get(0), "foobar");
         
         test.done();
     }
+
 };
