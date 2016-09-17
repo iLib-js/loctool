@@ -188,343 +188,6 @@ module.exports = {
         
         test.done();
     },
-
-    /*
-    testResourceStringAddTranslation: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", "Dies ist einem Test.");
-        
-        test.equal(rs.getTranslation("de-DE"), "Dies ist einem Test.");
-        
-        test.done();
-    },
-
-    testResourceStringAddTranslationEmpty: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", undefined);
-        
-        test.ok(!rs.getTranslation("de-DE"));
-        
-        test.done();
-    },
-
-    testResourceStringAddTranslationNoLocale: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-    
-        rs.addTranslation(undefined, "foo");
-        
-        test.ok(rs);
-        
-        test.done();
-    },
-
-    testResourceStringGetTranslationEmpty: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-    
-        test.ok(!rs.getTranslation("de-DE"));
-        
-        test.done();
-    },
-
-    testResourceStringAddTranslationMultiple: function(test) {
-        test.expect(3);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", "Dies ist einem Test.");
-        rs.addTranslation("fr-FR", "Ceci est une teste.");
-        
-        test.equal(rs.getTranslation("de-DE"), "Dies ist einem Test.");
-        test.equal(rs.getTranslation("fr-FR"), "Ceci est une teste.");
-        
-        test.done();
-    },
-
-    testResourceStringAddTranslationClear: function(test) {
-        test.expect(3);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", "Dies ist einem Test.");
-        
-        test.equal(rs.getTranslation("de-DE"), "Dies ist einem Test.");
-
-        rs.addTranslation("de-DE", undefined);
-        
-        test.ok(!rs.getTranslation("de-DE"));
-
-        test.done();
-    },
-
-    testResourceStringGetTranslatedResource: function(test) {
-        test.expect(7);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	context: "foo"
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", "Dies ist einem Test.");
-        
-        var rs2 = rs.getTranslatedResource("de-DE");
-        
-        test.ok(rs2);
-        test.equal(rs2.getKey(), "asdf");
-        test.equal(rs2.getSource(), "Dies ist einem Test.");
-        test.equal(rs2.locale, "de-DE");
-        test.equal(rs2.pathName, "a/b/c.java");
-        test.equal(rs2.getContext(), "foo");
-                
-        test.done();
-    },
-
-    testResourceStringGetTranslatedResourceNoTranslation: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-    
-        var rs2 = rs.getTranslatedResource("de-DE");
-        
-        test.ok(!rs2);
-                
-        test.done();
-    },
-
-    testResourceStringGetTranslationLocales: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-    
-        rs.addTranslation("de-DE", "Dies ist einem Test.");
-        rs.addTranslation("fr-FR", "Ceci est une teste.");
-        
-        test.deepEqual(rs.getTranslationLocales(), ["de-DE", "fr-FR"]);
-                
-        test.done();
-    },
-
-    testResourceStringGetTranslationLocalesNoTranslations: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-    
-        test.deepEqual(rs.getTranslationLocales(), []);
-                
-        test.done();
-    },
-    
-    testResourceStringMerge: function(test) {
-        test.expect(3);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-        
-        var rs2 = new ResourceString({
-        	key: "asdf",
-        	source: "Dies ist einem Test.",
-        	locale: "de-DE",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs2);
-        
-        rs.merge(rs2);
-        
-        test.equal(rs.getTranslation("de-DE"), "Dies ist einem Test.");
-        
-        test.done();
-    },
-
-    testResourceStringMergeEmpty: function(test) {
-        test.expect(2);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-                
-        rs.merge();
-        
-        test.ok(rs);
-        
-        test.done();
-    },
-
-    testResourceStringMergeSame: function(test) {
-        test.expect(4);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-        
-        var rs2 = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs2);
-        
-        rs.merge(rs2);
-        
-        test.ok(rs);
-        test.ok(rs2);
-        
-        test.done();
-    },
-
-    testResourceStringMergeDup: function(test) {
-        test.expect(3);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	locale: "en-US",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-        
-        var rs2 = new ResourceString({
-        	key: "asdf",
-        	source: "Dies ist einem Test.",
-        	locale: "en-US",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs2);
-        
-        test.throws(function() {
-        	rs.merge(rs2);
-        });
-        
-        test.done();
-    },
-
-    testResourceStringMergeDupNoLocales: function(test) {
-        test.expect(3);
-
-        var rs = new ResourceString({
-        	key: "asdf",
-        	source: "This is a test",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-        
-        var rs2 = new ResourceString({
-        	key: "asdf",
-        	source: "Dies ist einem Test.",
-        	pathName: "a/b/c.java"
-        });
-        test.ok(rs2);
-        
-        test.throws(function() {
-        	rs.merge(rs2);
-        });
-        
-        test.done();
-    },
-
-    testResourceStringMergeDifferentContexts: function(test) {
-        test.expect(3);
-
-        var rs = new ResourceString({
-            key: "asdf",
-            source: "This is a test",
-            locale: "en-US",
-            pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-        
-        var rs2 = new ResourceString({
-            key: "asdf",
-            source: "Dies ist einem Test.",
-            locale: "de-DE",
-            pathName: "a/b/c.java",
-            context: "foo"
-        });
-        test.ok(rs2);
-        
-        test.throws(function() {
-            rs.merge(rs2);
-        });
-        
-        test.done();
-    },
-	*/
     
     testResourceStringGeneratePseudo: function(test) {
         test.expect(2);
@@ -569,31 +232,6 @@ module.exports = {
         test.done();
     },
 
-    /*
-    testResourceStringGeneratePseudoAddToLocales: function(test) {
-        test.expect(3);
-
-        var rs = new ResourceString({
-            key: "asdf",
-            source: "This is a test",
-            pathName: "a/b/c.java"
-        });
-        test.ok(rs);
-        
-        var rb = new ResBundle({
-            locale: "zxx-XX" // the pseudo-locale!
-        });
-
-        test.deepEqual(rs.getTranslationLocales(), []);
-        
-        rs.generatePseudo("de-DE", rb);
-
-        test.deepEqual(rs.getTranslationLocales(), ["de-DE"]);
-        
-        test.done();
-    },
-    */
-
     testResourceStringGeneratePseudoBadLocale: function(test) {
         test.expect(2);
 
@@ -628,6 +266,69 @@ module.exports = {
         var rs2 = rs.generatePseudo("de-DE", undefined);
 
         test.ok(!rs2);
+        
+        test.done();
+    },
+    
+    testResourceStringClone: function(test) {
+        test.expect(10);
+
+        var rs = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            source: "This is a test",
+        	pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(rs);
+
+        var rs2 = rs.clone();
+        
+        test.ok(rs2);
+        test.equal(rs2.project, rs.project);
+        test.equal(rs2.context, rs.context);
+        test.equal(rs2.locale, rs.locale);
+        test.equal(rs2.reskey, rs.reskey);
+        test.deepEqual(rs2.text, rs.text);
+        test.equal(rs2.pathName, rs.pathName);
+        test.equal(rs2.comment, rs.comment);
+        test.equal(rs2.state, rs.state);
+        
+        test.done();
+    },
+    
+    testResourceStringCloneWithOverrides: function(test) {
+        test.expect(10);
+
+        var rs = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+        	source: "This is a test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(rs);
+
+        var rs2 = rs.clone({
+        	locale: "fr-FR",
+        	state: "asdfasdf"
+        });
+        
+        test.ok(rs2);
+        test.equal(rs2.project, rs.project);
+        test.equal(rs2.context, rs.context);
+        test.equal(rs2.locale, "fr-FR");
+        test.equal(rs2.reskey, rs.reskey);
+        test.deepEqual(rs2.text, rs.text);
+        test.equal(rs2.pathName, rs.pathName);
+        test.equal(rs2.comment, rs.comment);
+        test.equal(rs2.state, "asdfasdf");
         
         test.done();
     }

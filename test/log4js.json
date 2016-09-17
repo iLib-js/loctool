@@ -11,7 +11,7 @@
 	"levels": {
 		"[all]": "INFO",
 		"loctool.loctool":  "INFO",
-		"loctool.lib.JavaFile": "INFO",
+		"loctool.lib.JavaFile": "ERROR",
 		"loctool.lib.JavaFileType": "INFO"
 	}
 }
