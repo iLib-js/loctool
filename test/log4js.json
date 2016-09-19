@@ -12,6 +12,8 @@
 		"[all]": "INFO",
 		"loctool.loctool":  "INFO",
 		"loctool.lib.JavaFile": "ERROR",
-		"loctool.lib.JavaFileType": "INFO"
+		"loctool.lib.JavaFileType": "INFO",
+		"loctool.lib.DBTranslationSet": "TRACE",
+		"loctool.lib.ResourceString": "TRACE"
 	}
 }

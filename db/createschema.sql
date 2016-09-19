@@ -1,7 +1,7 @@
 USE translations;
 
 CREATE TABLE Resources (
-    id               INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id               INT NOT NULL AUTO_INCREMENT UNIQUE KEY,
     project          VARCHAR(64),
     context          VARCHAR(20),
     locale           VARCHAR(15),
