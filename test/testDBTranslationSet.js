@@ -12,11 +12,27 @@ if (!DBTranslationSet) {
 }
 
 module.exports = {
-     testDBTranslationSetConstructor: function(test) {
+	testSetUp: function(test) {
+		test.expect(1);
+		
+		var ts = new DBTranslationSet();
+		
+		ts.clear(function() {
+			ts.size(function(s) {
+				test.equal(s, 0);
+				
+				ts.close();
+				test.done();
+			})
+		});
+	},
+
+    testDBTranslationSetConstructor: function(test) {
         test.expect(1);
 
         var ts = new DBTranslationSet();
         test.ok(ts);
+        ts.close();
         test.done();
     },
     
@@ -26,25 +42,27 @@ module.exports = {
         var ts = new DBTranslationSet();
         
         test.equal(ts.sourceLocale, "en-US");
+        ts.close();
         test.done();
     },
 
     testDBTranslationSetGetEmpty: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var ts = new DBTranslationSet();
         
         ts.getBy({
         	project: "asdf"
         }, function(r) {
-        	console.log("set get empty");
-            test.ok(!r);
+        	test.ok(r);
+            test.equal(r.length, 0);
+            ts.close();
             test.done();
         });        
     },
     
     testDBTranslationSetGet: function(test) {
-        test.expect(2);
+        test.expect(10);
 
         var ts = new DBTranslationSet();
         var res = new ResourceString({
@@ -56,18 +74,15 @@ module.exports = {
         });
         
         ts.add(res, function(err, info) {
-        	console.log("got here " + err + " " + JSON.stringify(info));
-        	test.equal(err, 0);
-        	test.ok(!info);
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 1);
         	
         	ts.getBy({
         		key: "asdf"
         	}, function(resources) {
         		test.ok(resources);
         		
-        		console.log("got here too ");
-        		console.dir(resources);
-            	
         		test.equal(resources.length, 1);
         		test.equal(resources[0].getProject(), "a");
         		test.equal(resources[0].getContext(), "b");
@@ -75,495 +90,334 @@ module.exports = {
         		test.equal(resources[0].getKey(), "asdf");
         		test.equal(resources[0].getSource(), "This is a test");
 
+        		ts.close();
         		test.done();
         	});
         });
     },
 
-    /*
-    testDBTranslationSetGetWithContext: function(test) {
-        test.expect(6);
+    testDBTranslationSetGetComplicated: function(test) {
+        test.expect(18);
 
         var ts = new DBTranslationSet();
         var res = new ResourceString({
-            key: "asdf",
-            source: "This is a test"
-            // no context
+        	project: "a",
+        	context: "b",
+        	locale: "de-DE",
+        	key: "foofoo",
+            source: "This is yet another test"
         });
         
-        ts.add(res);
-        
-        res = new ResourceString({
-            key: "asdf",
-            source: "This is a test",
-            context: "different"
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 1);
+        	
+        	res = new ResourceString({
+            	project: "a",
+            	context: "b",
+            	locale: "fr-FR",
+            	key: "asdf",
+                source: "Ceci est une teste."
+            });
+        	
+        	ts.add(res, function(err, info) {
+            	test.equal(err, null);
+            	test.ok(info);
+            	test.equal(info.affectedRows, 1);
+            	
+	        	ts.getBy({
+	        		project: "a",
+	        		context: "b",
+	        		key: "asdf"
+	        	}, function(resources) {
+	        		test.ok(resources);
+	        		
+	        		test.equal(resources.length, 2);
+	        		test.equal(resources[0].getProject(), "a");
+	        		test.equal(resources[0].getContext(), "b");
+	        		test.equal(resources[0].getLocale(), "de-DE");
+	        		test.equal(resources[0].getKey(), "asdf");
+	        		test.equal(resources[0].getSource(), "This is a test");
+	
+	        		test.equal(resources[1].getProject(), "a");
+	        		test.equal(resources[1].getContext(), "b");
+	        		test.equal(resources[1].getLocale(), "fr-FR");
+	        		test.equal(resources[1].getKey(), "asdf");
+	        		test.equal(resources[1].getSource(), "Ceci est une teste.");
+	
+	        		ts.close();
+	        		test.done();
+	        	});
+        	});
         });
-        
-        ts.add(res);
-        
-        var r = ts.get("asdf");
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        test.ok(!r.getContext());
-        
-        r = ts.get("asdf", "different");
-
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getContext(), "different");
-        
-        test.done();
     },
 
-    testDBTranslationSetGetUndefined: function(test) {
-        test.expect(1);
+    testDBTranslationSetGetNoMatches: function(test) {
+        test.expect(2);
 
         var ts = new DBTranslationSet();
-        var r = ts.get();
+    	ts.getBy({
+    		project: "asdfasdfasdf"
+    	}, function(resources) {
+    		test.ok(resources);
+    		
+    		test.equal(resources.length, 0);
+
+    		ts.close();
+    		test.done();
+    	});
+    },
+
+    testDBTranslationSetRemove: function(test) {
+        test.expect(13);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourceString({
+        	project: "a",
+        	context: "b",
+        	locale: "nl-NL",
+        	key: "foofoo",
+            source: "Dit is noch een test."
+        });
         
-        test.ok(!r);
-        test.done();
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 1);
+        	
+        	// make sure it is there
+        	ts.getBy({
+        		project: "a",
+        		context: "b",
+        		key: "foofoo",
+        		locale: "nl-NL"
+        	}, function(resources) {
+        		test.ok(resources);
+        		
+        		test.equal(resources.length, 1);
+        		test.equal(resources[0].getProject(), "a");
+        		test.equal(resources[0].getContext(), "b");
+        		test.equal(resources[0].getLocale(), "nl-NL");
+        		test.equal(resources[0].getKey(), "foofoo");
+        		test.equal(resources[0].getSource(), "Dit is noch een test.");
+
+        		// now remove it and make sure it is no longer there
+        		ts.remove(res, function(err, info) {
+        			test.equal(err, null);
+        			test.ok(info);
+
+                	ts.getBy({
+                		project: "a",
+                		context: "b",
+                		key: "foofoo",
+                		locale: "nl-NL"
+                	}, function(resources) {
+                		test.equal(resources.length, 0); // not found
+	        			ts.close();
+	            		test.done();
+                	});
+        		});
+        	});
+        });
     },
     
-    testDBTranslationSetGetFromMany: function(test) {
-        test.expect(4);
+    testDBTranslationSetRemoveNonExistent: function(test) {
+    	test.expect(5);
 
-        var ts = new DBTranslationSet();
-        var res = new ResourceString({
-            key: "asdf",
-            source: "This is a test"
-        });
-        
-        ts.add(res);
-        
-        res = new ResourceString({
-            key: "qwerty",
-            source: "This is another test"
-        });
-        
-        ts.add(res);
-        
-        var r = ts.get("asdf");
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        
-        r = ts.get("qwerty");
-        
-        test.equal(r.getKey(), "qwerty");
-        test.equal(r.getSource(), "This is another test");
-        test.done();
-    },
+    	var ts = new DBTranslationSet();
 
-    testDBTranslationSetGetBySource: function(test) {
-        test.expect(2);
+    	// make sure it is not there
+    	ts.getBy({
+    		project: "a",
+    		context: "b",
+    		key: "foofoo",
+    		locale: "nl-NL"
+    	}, function(resources) {
+    		test.ok(resources);
 
-        var ts = new DBTranslationSet();
-        var res = new ResourceString({
-            key: "asdf",
-            autoKey: true,
-            source: "This is a test"
-        });
-        
-        ts.add(res);
-        
-        var r = ts.getBySource("This is a test");
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        test.done();
-    },
+    		test.equal(resources.length, 0);
 
-    testDBTranslationSetGetBySourceNonAutoKey: function(test) {
-        test.expect(1);
+    		// now remove it and make sure it is no longer there
+    		ts.remove({
+        		project: "a",
+        		context: "b",
+        		key: "foofoo",
+        		locale: "nl-NL"    			
+    		}, function(err, info) {
+    			test.equal(err, null);
+    			test.ok(info);
 
-        var ts = new DBTranslationSet();
-        var res = new ResourceString({
-            key: "asdf",
-            source: "This is a test"
-        });
-        
-        ts.add(res);
-        
-        var r = ts.getBySource("This is a test");
-        
-        test.ok(!r);
-
-        test.done();
-    },
-
-    testDBTranslationSetGetBySourceFromMany: function(test) {
-        test.expect(4);
-
-        var ts = new DBTranslationSet();
-        var res = new ResourceString({
-            key: "asdf",
-            autoKey: true,
-            source: "This is a test"
-        });
-        
-        ts.add(res);
-        
-        res = new ResourceString({
-            key: "qwerty",
-            autoKey: true,
-            source: "This is another test"
-        });
-        
-        ts.add(res);
-        
-        var r = ts.getBySource("This is a test");
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        
-        r = ts.getBySource("This is another test");
-        
-        test.equal(r.getKey(), "qwerty");
-        test.equal(r.getSource(), "This is another test");
-        test.done();
-    },
-
-    testDBTranslationSetGetBySourceUndefined: function(test) {
-        test.expect(1);
-
-        var ts = new DBTranslationSet();
-        var r = ts.getBySource();
-        
-        test.ok(!r);
-        test.done();
-    },
-
-    testDBTranslationSetGetBySourceWithContext: function(test) {
-        test.expect(6);
-
-        var ts = new DBTranslationSet();
-        var res = new ResourceString({
-            key: "asdf",
-            autoKey: true,
-            source: "This is a test"
-            // no context
-        });
-        
-        ts.add(res);
-        
-        res = new ResourceString({
-            key: "asdf",
-            autoKey: true,
-            source: "This is a test",
-            context: "foo"
-        });
-        
-        ts.add(res);
-        
-        var r = ts.getBySource("This is a test");
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        test.ok(!r.getContext());
-        
-        r = ts.getBySource("This is a test", "foo");
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getContext(), "foo");
-        
-        test.done();
-    },
-
-    testDBTranslationSetGetBySourceOnlyAutoKeys: function(test) {
-        test.expect(6);
-
-        var ts = new DBTranslationSet();
-        var res = new ResourceString({
-        	key: "r3423423",
-        	autoKey: true,
-            source: "This is a test"
-        });
-        
-        ts.add(res);
-        
-        res = new ResourceString({
-            key: "explicit_id",
-            source: "This is a test"
-        });
-        
-        ts.add(res);
-        
-        var r = ts.getBySource("This is a test");
-        
-        test.equal(r.getKey(), "r3423423");
-        test.equal(r.getSource(), "This is a test");
-        
-        r = ts.get("explicit_id");
-        
-        test.equal(r.getKey(), "explicit_id");
-        test.equal(r.getSource(), "This is a test");
-        
-        r = ts.get("r3423423");
-        
-        test.equal(r.getKey(), "r3423423");
-        test.equal(r.getSource(), "This is a test");
-        
-        test.done();
-    },
-
-    testDBTranslationSetGetAll: function(test) {
-        test.expect(6);
-
-        var ts = new DBTranslationSet();
-        var res = new ResourceString({
-            key: "asdf",
-            source: "This is a test"
-        });
-        
-        ts.add(res);
-        
-        res = new ResourceString({
-            key: "qwerty",
-            source: "This is another test"
-        });
-        
-        ts.add(res);
-        
-        var resources = ts.getAll();
-        test.ok(resources);
-        test.equal(resources.length, 2);
-        
-        var r = resources[0];
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        
-        r = resources[1];
-        
-        test.equal(r.getKey(), "qwerty");
-        test.equal(r.getSource(), "This is another test");
-        test.done();
-    },
-
-    testDBTranslationSetGetAllEmpty: function(test) {
-        test.expect(2);
-
-        var ts = new DBTranslationSet();
-        var r = ts.getAll();
-        test.ok(r);
-        test.equal(r.length, 0);
-        
-        test.done();
+    			ts.getBy({
+    				project: "a",
+    				context: "b",
+    				key: "foofoo",
+    				locale: "nl-NL"
+    			}, function(resources) {
+    				test.equal(resources.length, 0); // still not found
+    				ts.close();
+    				test.done();
+    			});
+    		});
+    	});
     },
     
-    testDBTranslationSetAddTranslationMerged: function(test) {
-        test.expect(2);
+    testDBTranslationSetRemoveNoParams: function(test) {
+        test.expect(13);
 
         var ts = new DBTranslationSet();
         var res = new ResourceString({
-            key: "asdf",
-            source: "This is a test"
+        	project: "a",
+        	context: "b",
+        	locale: "nl-NL",
+        	key: "foofoo",
+            source: "Dit is noch een test."
         });
         
-        ts.add(res);
-        
-        res = new ResourceString({
-            key: "asdf",
-            source: "This is another test",
-            locale: "de-DE"
-        });
-        
-        ts.add(res);
-        
-        var resources = ts.getAll();
-        test.ok(resources);
-        test.equal(resources.length, 2);
-        test.done();
-    },
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 1);
+        	
+        	// make sure it is there
+        	ts.getBy({
+        		project: "a",
+        		context: "b",
+        		key: "foofoo",
+        		locale: "nl-NL"
+        	}, function(resources) {
+        		test.ok(resources);
+        		
+        		test.equal(resources.length, 1);
+        		test.equal(resources[0].getProject(), "a");
+        		test.equal(resources[0].getContext(), "b");
+        		test.equal(resources[0].getLocale(), "nl-NL");
+        		test.equal(resources[0].getKey(), "foofoo");
+        		test.equal(resources[0].getSource(), "Dit is noch een test.");
 
-    testDBTranslationSetAddTranslationDifferentContext: function(test) {
-        test.expect(2);
+        		// now remove with bogus params and make sure it didn't ruin the db
+        		ts.remove({
+        			resType: "string"
+        		}, function(err, info) {
+        			console.log("err is " + err + " and info is " + JSON.stringify(info));
+        			test.ok(err);
+        			test.ok(!info);
 
-        var ts = new DBTranslationSet();
-        var res = new ResourceString({
-            key: "asdf",
-            source: "This is a test",
-            locale: "en-US"
+                	ts.getBy({
+                		project: "a",
+                		context: "b",
+                		key: "foofoo",
+                		locale: "nl-NL"
+                	}, function(resources) {
+                		test.equal(resources.length, 1); // still there
+	        			ts.close();
+	            		test.done();
+                	});
+        		});
+        	});
         });
-        
-        ts.add(res);
-        
-        res = new ResourceString({
-            key: "asdf",
-            source: "This is another test",
-            locale: "de-DE",
-            context: "foo"
-        });
-        
-        ts.add(res);
-        
-        var resources = ts.getAll();
-        test.ok(resources);
-        test.equal(resources.length, 2);
-        test.done();
     },
 
     testDBTranslationSetAddAll: function(test) {
-        test.expect(2);
+        test.expect(20);
 
         var ts = new DBTranslationSet();
-        
-        ts.addAll([
-	        new ResourceString({
-	            key: "asdf",
-	            source: "This is a test"
+        var resources = [
+            new ResourceString({
+	        	project: "a",
+	        	context: "b",
+	        	locale: "en-US",
+	        	key: "barbar",
+	            source: "Elephants can fly!"
 	        }),
-	        new ResourceString({
-	            key: "qwerty",
-	            source: "This is another test"
-	        })
-	    ]);
-        
-        var r = ts.get("asdf");
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        test.done();
-    },
-
-    testDBTranslationSetAddAllDifferentContexts: function(test) {
-        test.expect(8);
-
-        var ts = new DBTranslationSet();
-        
-        ts.addAll([
-	        new ResourceString({
-	            key: "asdf",
-	            source: "This is a test"
+            new ResourceString({
+	        	project: "a",
+	        	context: "b",
+	        	locale: "de-DE",
+	        	key: "barbar",
+	            source: "Olifanten koennen fliegen!"
 	        }),
-	        new ResourceString({
-	            key: "asdf",
-	            source: "This is a test",
-	            context: "foo"
+            new ResourceString({
+	        	project: "a",
+	        	context: "b",
+	        	locale: "nl-NL",
+	        	key: "barbar",
+	            source: "Oliephanten kunnen fliegen!"
 	        })
-	    ]);
+	    ];
         
-        var resources = ts.getAll();
-        test.ok(resources);
-        test.equal(resources.length, 2);
-        
-        var r = resources[0];
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        test.ok(!r.getContext());
-        
-        r = resources[1];
-        
-        test.equal(r.getKey(), "asdf");
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getContext(), "foo");
-        test.done();
+        ts.addAll(resources, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 3);
+        	
+        	ts.getBy({
+        		project: "a",
+        		context: "b",
+        		key: "barbar",
+        		sort: "id"
+        	}, function(resources) {
+        		test.ok(resources);
+
+        		test.equal(resources.length, 3);
+        		test.equal(resources[0].getProject(), "a");
+        		test.equal(resources[0].getContext(), "b");
+        		test.equal(resources[0].getLocale(), "en-US");
+        		test.equal(resources[0].getKey(), "barbar");
+        		test.equal(resources[0].getSource(), "Elephants can fly!");
+
+        		test.equal(resources[1].getProject(), "a");
+        		test.equal(resources[1].getContext(), "b");
+        		test.equal(resources[1].getLocale(), "de-DE");
+        		test.equal(resources[1].getKey(), "barbar");
+        		test.equal(resources[1].getSource(), "Olifanten koennen fliegen!");
+
+        		test.equal(resources[2].getProject(), "a");
+        		test.equal(resources[2].getContext(), "b");
+        		test.equal(resources[2].getLocale(), "nl-NL");
+        		test.equal(resources[2].getKey(), "barbar");
+        		test.equal(resources[2].getSource(), "Oliephanten kunnen fliegen!");
+
+        		ts.close();
+        		test.done();
+        	});
+        });
     },
     
-    testDBTranslationSetSize: function(test) {
-        test.expect(1);
+    testDBTranslationSetAddArray: function(test) {
+        test.expect(10);
 
         var ts = new DBTranslationSet();
-        var res = new ResourceString({
-            key: "asdf",
-            source: "This is a test"
+        var res = new ResourceArray({
+        	project: "a",
+        	context: "b",
+        	locale: "nl-NL",
+        	key: "sultansofswing",
+            array: ["a one", "a two", "a one two three four", "hit it"]
         });
         
-        ts.add(res);
-        
-        test.equal(ts.size(), 1);
-        test.done();
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 1);
+        	
+        	// make sure it is there
+        	ts.getBy({
+        		project: "a",
+        		context: "b",
+        		key: "sultansofswing",
+        		locale: "nl-NL"
+        	}, function(resources) {
+        		test.ok(resources);
+        		
+        		test.equal(resources.length, 1);
+        		test.equal(resources[0].getProject(), "a");
+        		test.equal(resources[0].getContext(), "b");
+        		test.equal(resources[0].getLocale(), "nl-NL");
+        		test.equal(resources[0].getKey(), "sultansofswing");
+        		test.deepEqual(resources[0].getArray(), ["a one", "a two", "a one two three four", "hit it"]);
+        	});
+        });
     },
 
-    testDBTranslationSetSizeMultiple: function(test) {
-        test.expect(1);
-
-        var ts = new DBTranslationSet();
-        var res = new ResourceString({
-            key: "asdf",
-            source: "This is a test"
-            // no context
-        });
-        
-        ts.add(res);
-        
-        res = new ResourceString({
-            key: "asdf",
-            source: "This is a test",
-            context: "different"
-        });
-        
-        ts.add(res);
-        
-        test.equal(ts.size(), 2);
-        
-        test.done();
-    },
-
-    testDBTranslationSetEmpty: function(test) {
-        test.expect(1);
-
-        var ts = new DBTranslationSet();
-        
-        test.equal(ts.size(), 0);
-        test.done();
-    },
-
-    testDBTranslationSetSizeMerged: function(test) {
-        test.expect(3);
-
-        var ts = new DBTranslationSet();
-        
-        test.equal(ts.size(), 0);
-        
-        var res = new ResourceString({
-            key: "asdf",
-            source: "This is a test"
-        });
-        
-        ts.add(res);
-        
-        test.equal(ts.size(), 1);
-        
-        res = new ResourceString({
-            key: "asdf",
-            source: "This is another test",
-            locale: "de-DE"
-        });
-        
-        ts.add(res);
-        
-        test.equal(ts.size(), 2);
-
-        test.done();
-    },
-
-    testDBTranslationSetSizeAddAll: function(test) {
-        test.expect(2);
-
-        var ts = new DBTranslationSet();
-        
-        test.equal(ts.size(), 0);
-        
-        ts.addAll([
-	        new ResourceString({
-	            key: "asdf",
-	            source: "This is a test"
-	        }),
-	        new ResourceString({
-	            key: "qwerty",
-	            source: "This is another test"
-	        })
-	    ]);
-        
-        test.equal(ts.size(), 2);
-
-        test.done();
-    }
-    
-    */
 };
