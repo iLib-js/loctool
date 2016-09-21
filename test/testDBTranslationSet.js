@@ -399,7 +399,7 @@ module.exports = {
         ts.add(res, function(err, info) {
         	test.equal(err, null);
         	test.ok(info);
-        	test.equal(info.affectedRows, 1);
+        	test.equal(info.affectedRows, 4);
         	
         	// make sure it is there
         	ts.getBy({
@@ -416,8 +416,129 @@ module.exports = {
         		test.equal(resources[0].getLocale(), "nl-NL");
         		test.equal(resources[0].getKey(), "sultansofswing");
         		test.deepEqual(resources[0].getArray(), ["a one", "a two", "a one two three four", "hit it"]);
+        		
+        		ts.close();
+        		test.done();
         	});
         });
     },
+    
+    testDBTranslationSetAddArrayEmpty: function(test) {
+        test.expect(5);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourceArray({
+        	project: "a",
+        	context: "b",
+        	locale: "nl-NL",
+        	key: "jajajajaja"
+        });
+        
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 0);
+        	
+        	// make sure it is there
+        	ts.getBy({
+        		project: "a",
+        		context: "b",
+        		key: "jajajajaja",
+        		locale: "nl-NL"
+        	}, function(resources) {
+        		test.ok(resources);
+        		test.equal(resources.length, 0);
+        		
+        		ts.close();
+        		test.done();
+        	});
+        });
+    },
+
+    testDBTranslationSetAddPlural: function(test) {
+        test.expect(10);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourcePlural({
+        	project: "a",
+        	context: "b",
+        	locale: "nl-NL",
+        	key: "jawel",
+            strings: {
+            	one: "a one", 
+            	two: "a two", 
+            	few: "a one two three four", 
+            	many: "hit it"
+            }
+        });
+        
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 4);
+        	
+        	// make sure it is there
+        	ts.getBy({
+        		project: "a",
+        		context: "b",
+        		key: "jawel",
+        		locale: "nl-NL"
+        	}, function(resources) {
+        		test.ok(resources);
+        		
+        		test.equal(resources.length, 1);
+        		
+        		test.equal(resources[0].getProject(), "a");
+        		test.equal(resources[0].getContext(), "b");
+        		test.equal(resources[0].getLocale(), "nl-NL");
+        		test.equal(resources[0].getKey(), "jawel");
+        		test.deepEqual(resources[0].getPlurals(), {
+                	one: "a one", 
+                	two: "a two", 
+                	few: "a one two three four", 
+                	many: "hit it"
+                });
+        		
+        		ts.close();
+        		test.done();
+        	});
+        });
+    },
+    
+    testDBTranslationSetAddPluralEmpty: function(test) {
+        test.expect(5);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourcePlural({
+        	project: "a",
+        	context: "b",
+        	locale: "nl-NL",
+        	key: "gossie"
+        });
+        
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 0);
+        	
+        	console.log("Got here 1");
+        	
+        	// make sure it is there
+        	ts.getBy({
+        		project: "a",
+        		context: "b",
+        		key: "gossie",
+        		locale: "nl-NL"
+        	}, function(resources) {
+        		console.log("Got here 2");
+            	
+            	test.ok(resources);
+        		test.equal(resources.length, 0);
+        		
+        		ts.close();
+        		test.done();
+        	});
+        });
+    }
 
 };

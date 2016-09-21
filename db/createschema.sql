@@ -16,4 +16,4 @@ CREATE TABLE Resources (
     comment          VARCHAR(256)
 );
 
-CREATE UNIQUE INDEX res ON Resources (`project`, `context`, `reskey`, `locale`);
+CREATE UNIQUE INDEX res ON Resources (`project`, `context`, `reskey`, `locale`, `state`, `pluralClass`);
