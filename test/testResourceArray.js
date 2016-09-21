@@ -543,6 +543,35 @@ module.exports = {
         test.equal(ra.get(0), "foobar");
         
         test.done();
-    }
+    },
+    
+    testResourceArrayAddStringMultiple: function(test) {
+        test.expect(6);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["This is a test", "This is also a test", "This is not"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+
+        ra.addString(3, "This is the third one")
+        ra.addString(4, "This is the fourth one")
+
+        test.equal(ra.get(0), "This is a test");
+        test.equal(ra.get(1), "This is also a test");
+        test.equal(ra.get(2), "This is not");
+        test.equal(ra.get(3), "This is the third one");
+        test.equal(ra.get(4), "This is the fourth one");
+        
+        test.done();
+    },
+    
+
 
 };
