@@ -331,5 +331,137 @@ module.exports = {
         test.equal(rs2.state, "asdfasdf");
         
         test.done();
+    },
+    
+    testResourceStringEquals: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(ra1.equals(ra2));
+
+        test.done();
+    },
+
+    testResourceStringEqualsNot: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceString({
+        	project: "foo",
+        	context: "asdf",
+        	locale: "de-DE",
+            key: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(!ra1.equals(ra2));
+
+        test.done();
+    },
+
+    testResourceStringEqualsIgnoreSomeFields: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            source: "This is a test",
+            pathName: "x.java",
+            comment: "asdf asdf asdf asdf asdf",
+            state: "done"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(ra1.equals(ra2));
+
+        test.done();
+    },
+    
+    testResourceStringEqualsContentDifferent: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            source: "This is a test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceString({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            source: "This is not a test",
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(!ra1.equals(ra2));
+
+        test.done();
     }
 };

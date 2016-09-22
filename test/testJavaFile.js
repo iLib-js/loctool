@@ -89,7 +89,7 @@ module.exports = {
         
         j.parse('RB.getString("This is a test")');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.ok(set);
         
         var r = set.get("r99578090116730");
@@ -112,7 +112,7 @@ module.exports = {
         
         j.parse('RB.getString("This is a test")');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -135,7 +135,7 @@ module.exports = {
         
         j.parse('   RB.getString  (    \t "This is a test"    );  ');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -153,11 +153,11 @@ module.exports = {
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
-        var set = p.getTranslationSet();
         
         var j = new JavaFile(p);
         test.ok(j);
 
+        var set = j.getTranslationSet();
         test.equal(set.size(), 0);
 
         j.parse('RB.getString("This is a test")');
@@ -181,7 +181,7 @@ module.exports = {
         
         j.parse('RB.getString("This is a test", "unique_id")');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.ok(set);
         
         var r = set.get("unique_id");
@@ -204,7 +204,7 @@ module.exports = {
         
         j.parse('RB.getString("This is a test", "unique_id")');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -225,7 +225,7 @@ module.exports = {
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -253,7 +253,7 @@ module.exports = {
         
         j.parse('RB.getString("This is a test", "x");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "y");');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.ok(set);
         
         var r = set.get("x");
@@ -283,7 +283,7 @@ module.exports = {
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test");');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -308,7 +308,7 @@ module.exports = {
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "unique_id");');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -336,7 +336,7 @@ module.exports = {
         
         j.parse('RB.getString("This is a test" + " and this isnt");');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
 
         test.equal(set.size(), 0);
         
@@ -355,7 +355,7 @@ module.exports = {
         
         j.parse('RB.getString("This is a test" + foobar);');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.equal(set.size(), 0);
         
         test.done();
@@ -373,7 +373,7 @@ module.exports = {
         
         j.parse('RB.getString(foobar);');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.equal(set.size(), 0);
         
         test.done();
@@ -391,7 +391,7 @@ module.exports = {
         
         j.parse('RB.getString();');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.equal(set.size(), 0);
         
         test.done();
@@ -409,7 +409,7 @@ module.exports = {
         
         j.parse('EPIRB.getString("This is a test");');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.equal(set.size(), 0);
         
         test.done();
@@ -427,7 +427,7 @@ module.exports = {
         
         j.parse('App.RB.getString("This is a test");');
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         test.equal(set.size(), 1);
         
         test.done();
@@ -446,7 +446,7 @@ module.exports = {
         // should read the file
         j.extract();
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         
         test.equal(set.size(), 2);
         
@@ -476,7 +476,7 @@ module.exports = {
         // should attempt to read the file and not fail
         j.extract();
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         
         test.equal(set.size(), 0);
 
@@ -496,7 +496,7 @@ module.exports = {
         // should attempt to read the file and not fail
         j.extract();
         
-        var set = p.getTranslationSet();
+        var set = j.getTranslationSet();
         
         test.equal(set.size(), 0);
 

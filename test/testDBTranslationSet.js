@@ -521,8 +521,6 @@ module.exports = {
         	test.ok(info);
         	test.equal(info.affectedRows, 0);
         	
-        	console.log("Got here 1");
-        	
         	// make sure it is there
         	ts.getBy({
         		project: "a",
@@ -530,15 +528,61 @@ module.exports = {
         		key: "gossie",
         		locale: "nl-NL"
         	}, function(resources) {
-        		console.log("Got here 2");
-            	
-            	test.ok(resources);
+        		test.ok(resources);
         		test.equal(resources.length, 0);
         		
         		ts.close();
         		test.done();
         	});
         });
+    },
+    
+    testDBTranslationSetContains: function(test) {
+        test.expect(4);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourcePlural({
+        	project: "a",
+        	context: "c",
+        	locale: "ja-JP",
+        	key: "katakana",
+        	strings: {one: "one", two: "two", few: "few"}
+        });
+        
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 3);
+        	
+        	// make sure it is there
+        	ts.contains(res, function(there) {
+        		test.ok(there);
+        		
+        		ts.close();
+        		test.done();
+        	});
+        });
+    },
+
+    testDBTranslationSetContainsNot: function(test) {
+        test.expect(1);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourcePlural({
+        	project: "a",
+        	context: "c",
+        	locale: "ru-RU",
+        	key: "blahblah",
+        	strings: {one: "one", two: "two", few: "few"}
+        });
+        
+    	// make sure it is not there
+    	ts.contains(res, function(there) {
+    		test.ok(!there);
+    		
+    		ts.close();
+    		test.done();
+    	});
     }
 
 };

@@ -11,16 +11,20 @@ var path = require('path');
 var util = require('util');
 var log4js = require("log4js");
 var ProjectFactory = require("./lib/ProjectFactory.js");
+// var Git = require("simple-git");
 
 log4js.configure(path.dirname(module.filename) + '/log4js.json')
 
 var logger = log4js.getLogger("loctool.loctool");
+var pull = false;
 
 function usage() {
-	console.log("Usage: loctool [-h] [root dir]\n" +
+	console.log("Usage: loctool [-h] [-p] [root dir]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
+		"-p or --pull\n" +
+		"  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
 		"root dir\n" +
 		"  directory containing the git projects with the source code. Default: current dir.\n");
 	process.exit(1);
@@ -29,6 +33,8 @@ function usage() {
 process.argv.forEach(function (val, index, array) {
 	if (val === "-h" || val === "--help") {
 		usage();
+	} else if (val === "-p" || val === "--pull") {
+		pull = true;
 	}
 });
 
@@ -61,6 +67,13 @@ function walk(dir, project) {
 			logger.info('Project "' + project.options.name + '", type: ' + project.options.projectType);
 			logger.trace("Project: ");
 			logger.trace(project);
+			if (pull) {
+				/*
+				logger.info("Doing git pull to get the latest before scanning this dir.");
+				var git = new Git(dir);
+				git.pull();
+				*/
+			}
 		}
 	}
 	
