@@ -1,1 +1,3 @@
-DROP DATABASE IF EXISTS translations;
+use translations;
+
+DELETE FROM Resources;

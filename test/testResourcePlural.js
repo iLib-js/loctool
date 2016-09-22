@@ -595,5 +595,36 @@ module.exports = {
         test.equal(rp.get("one"), "foobar");
         
         test.done();
+    },
+    
+    testResourcePluralAddStringMultiple: function(test) {
+        test.expect(6);
+
+        var rp = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+        	strings: {
+        		"two": "This is double",
+        		"few": "This is the few case",
+        		"many": "This is the many case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(rp);
+
+        rp.addString("one", "This is singular");
+        rp.addString("zero", "This is the zero one");
+        
+        test.equal(rp.get("zero"), "This is the zero one");
+        test.equal(rp.get("one"), "This is singular");
+        test.equal(rp.get("two"), "This is double");
+        test.equal(rp.get("few"), "This is the few case");
+        test.equal(rp.get("many"), "This is the many case");
+        
+        test.done();
     }
 };

@@ -397,9 +397,10 @@ module.exports = {
         });
         
         ts.add(res, function(err, info) {
+        	console.log("got here err=" + err + " info " + JSON.stringify(info));
         	test.equal(err, null);
         	test.ok(info);
-        	test.equal(info.affectedRows, 1);
+        	test.equal(info.affectedRows, 4);
         	
         	// make sure it is there
         	ts.getBy({
@@ -416,6 +417,9 @@ module.exports = {
         		test.equal(resources[0].getLocale(), "nl-NL");
         		test.equal(resources[0].getKey(), "sultansofswing");
         		test.deepEqual(resources[0].getArray(), ["a one", "a two", "a one two three four", "hit it"]);
+        		
+        		ts.close();
+				test.done();
         	});
         });
     },
