@@ -109,6 +109,7 @@ function walk(dir, project) {
 	                	logger.info("  " + fileTypes[i].name() + ": " + path);
 						var file = fileTypes[i].newFile(path);
 						file.extract();
+						fileTypes[i].addSet(file.getTranslationSet());
 					} else {
 						logger.trace("no");
 					}

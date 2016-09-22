@@ -584,6 +584,147 @@ module.exports = {
     		ts.close();
     		test.done();
     	});
-    }
+    },
 
+    testDBTranslationSetGetProjects: function(test) {
+        test.expect(8);
+
+        var ts = new DBTranslationSet();
+        var resources = [
+            new ResourceString({
+	        	project: "a",
+	        	context: "b",
+	        	locale: "en-US",
+	        	key: "barbar",
+	            source: "Elephants can fly!"
+	        }),
+            new ResourceString({
+	        	project: "b",
+	        	context: "b",
+	        	locale: "de-DE",
+	        	key: "barbar",
+	            source: "Olifanten koennen fliegen!"
+	        }),
+            new ResourceString({
+	        	project: "c",
+	        	context: "b",
+	        	locale: "nl-NL",
+	        	key: "barbar",
+	            source: "Oliephanten kunnen fliegen!"
+	        })
+	    ];
+        
+        ts.addAll(resources, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 3);
+        	
+        	ts.getProjects(function(projects) {
+        		test.ok(projects);
+
+        		test.equal(projects.length, 3);
+        		test.equal(projects[0], "a");
+        		test.equal(projects[1], "b");
+        		test.equal(projects[2], "c");
+
+        		ts.close();
+        		test.done();
+        	});
+        });
+    },
+
+    testDBTranslationSetGetContexts: function(test) {
+        test.expect(8);
+
+        var ts = new DBTranslationSet();
+        var resources = [
+            new ResourceString({
+	        	project: "a",
+	        	context: "a",
+	        	locale: "en-US",
+	        	key: "barbar",
+	            source: "Elephants can fly!"
+	        }),
+            new ResourceString({
+	        	project: "a",
+	        	context: "b",
+	        	locale: "de-DE",
+	        	key: "barbar",
+	            source: "Olifanten koennen fliegen!"
+	        }),
+            new ResourceString({
+	        	project: "a",
+	        	context: "c",
+	        	locale: "nl-NL",
+	        	key: "barbar",
+	            source: "Oliephanten kunnen fliegen!"
+	        })
+	    ];
+        
+        ts.addAll(resources, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 3);
+        	
+        	ts.getContexts("a", function(contexts) {
+        		test.ok(contexts);
+
+        		test.equal(contexts.length, 3);
+        		test.equal(contexts[0], "a");
+        		test.equal(contexts[1], "b");
+        		test.equal(contexts[2], "c");
+
+        		ts.close();
+        		test.done();
+        	});
+        });
+    },
+
+    testDBTranslationSetGetLocales: function(test) {
+        test.expect(9);
+
+        var ts = new DBTranslationSet();
+        var resources = [
+            new ResourceString({
+	        	project: "a",
+	        	context: "a",
+	        	locale: "en-CA",
+	        	key: "barbar",
+	            source: "Elephants can fly!"
+	        }),
+            new ResourceString({
+	        	project: "a",
+	        	context: "a",
+	        	locale: "de-DE",
+	        	key: "barbar",
+	            source: "Olifanten koennen fliegen!"
+	        }),
+            new ResourceString({
+	        	project: "a",
+	        	context: "a",
+	        	locale: "nl-NL",
+	        	key: "barbar",
+	            source: "Oliephanten kunnen fliegen!"
+	        })
+	    ];
+        
+        ts.addAll(resources, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 3);
+        	
+        	ts.getLocales("a", "a", function(locales) {
+        		test.ok(locales);
+        		
+        		test.equal(locales.length, 4);
+        		test.equal(locales[0], "de-DE");
+        		test.equal(locales[1], "en-CA");
+        		test.equal(locales[2], "en-US");
+        		test.equal(locales[3], "nl-NL");
+
+        		ts.close();
+        		test.done();
+        	});
+        });
+    }
 };
