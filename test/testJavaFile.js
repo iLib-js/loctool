@@ -94,6 +94,7 @@ module.exports = {
         
         var r = set.get("r99578090116730");
         test.ok(r);
+        console.log("parsesimple: r is " + JSON.stringify(r));
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r99578090116730");
         
