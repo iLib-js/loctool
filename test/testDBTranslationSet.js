@@ -419,9 +419,171 @@ module.exports = {
         		test.deepEqual(resources[0].getArray(), ["a one", "a two", "a one two three four", "hit it"]);
         		
         		ts.close();
-				test.done();
+        		test.done();
         	});
         });
     },
+    
+    testDBTranslationSetAddArrayEmpty: function(test) {
+        test.expect(5);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourceArray({
+        	project: "a",
+        	context: "b",
+        	locale: "nl-NL",
+        	key: "jajajajaja"
+        });
+        
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 0);
+        	
+        	// make sure it is there
+        	ts.getBy({
+        		project: "a",
+        		context: "b",
+        		key: "jajajajaja",
+        		locale: "nl-NL"
+        	}, function(resources) {
+        		test.ok(resources);
+        		test.equal(resources.length, 0);
+        		
+        		ts.close();
+        		test.done();
+        	});
+        });
+    },
+
+    testDBTranslationSetAddPlural: function(test) {
+        test.expect(10);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourcePlural({
+        	project: "a",
+        	context: "b",
+        	locale: "nl-NL",
+        	key: "jawel",
+            strings: {
+            	one: "a one", 
+            	two: "a two", 
+            	few: "a one two three four", 
+            	many: "hit it"
+            }
+        });
+        
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 4);
+        	
+        	// make sure it is there
+        	ts.getBy({
+        		project: "a",
+        		context: "b",
+        		key: "jawel",
+        		locale: "nl-NL"
+        	}, function(resources) {
+        		test.ok(resources);
+        		
+        		test.equal(resources.length, 1);
+        		
+        		test.equal(resources[0].getProject(), "a");
+        		test.equal(resources[0].getContext(), "b");
+        		test.equal(resources[0].getLocale(), "nl-NL");
+        		test.equal(resources[0].getKey(), "jawel");
+        		test.deepEqual(resources[0].getPlurals(), {
+                	one: "a one", 
+                	two: "a two", 
+                	few: "a one two three four", 
+                	many: "hit it"
+                });
+        		
+        		ts.close();
+        		test.done();
+        	});
+        });
+    },
+    
+    testDBTranslationSetAddPluralEmpty: function(test) {
+        test.expect(5);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourcePlural({
+        	project: "a",
+        	context: "b",
+        	locale: "nl-NL",
+        	key: "gossie"
+        });
+        
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 0);
+        	
+        	// make sure it is there
+        	ts.getBy({
+        		project: "a",
+        		context: "b",
+        		key: "gossie",
+        		locale: "nl-NL"
+        	}, function(resources) {
+        		test.ok(resources);
+        		test.equal(resources.length, 0);
+        		
+        		ts.close();
+        		test.done();
+        	});
+        });
+    },
+    
+    testDBTranslationSetContains: function(test) {
+        test.expect(4);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourcePlural({
+        	project: "a",
+        	context: "c",
+        	locale: "ja-JP",
+        	key: "katakana",
+        	strings: {one: "one", two: "two", few: "few"}
+        });
+        
+        ts.add(res, function(err, info) {
+        	test.equal(err, null);
+        	test.ok(info);
+        	test.equal(info.affectedRows, 3);
+        	
+        	// make sure it is there
+        	ts.contains(res, function(there) {
+        		test.ok(there);
+        		
+        		ts.close();
+        		test.done();
+        	});
+        });
+    },
+
+    testDBTranslationSetContainsNot: function(test) {
+        test.expect(1);
+
+        var ts = new DBTranslationSet();
+        var res = new ResourcePlural({
+        	project: "a",
+        	context: "c",
+        	locale: "ru-RU",
+        	key: "blahblah",
+        	strings: {one: "one", two: "two", few: "few"}
+        });
+        
+    	// make sure it is not there
+    	ts.contains(res, function(there) {
+    		test.ok(!there);
+    		
+    		ts.close();
+    		test.done();
+    	});
+    }
 
 };

@@ -572,6 +572,135 @@ module.exports = {
         test.done();
     },
     
+    testResourceArrayEquals: function(test) {
+        test.expect(3);
 
+        var ra1 = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["a", "b", "c"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["a", "b", "c"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
 
+        test.ok(ra1.equals(ra2));
+
+        test.done();
+    },
+
+    testResourceArrayEqualsNot: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceArray({
+        	project: "foo",
+        	context: "asdf",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["a", "b", "c"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["a", "b", "c"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(!ra1.equals(ra2));
+
+        test.done();
+    },
+
+    testResourceArrayEqualsIgnoreSomeFields: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["a", "b", "c"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["a", "b", "c"],
+            pathName: "x.java",
+            comment: "asdf asdf asdf asdf asdf",
+            state: "done"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(ra1.equals(ra2));
+
+        test.done();
+    },
+    
+    testResourceArrayEqualsContentDifferent: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["a", "b", "c"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["a", "b", "d"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(!ra1.equals(ra2));
+
+        test.done();
+    }
 };

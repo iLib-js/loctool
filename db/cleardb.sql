@@ -1,3 +1,3 @@
-use translations;
+USE translations;
 
 DELETE FROM Resources;

@@ -614,6 +614,7 @@ module.exports = {
             comment: "foobar foo",
             state: "accepted"
         });
+
         test.ok(rp);
 
         rp.addString("one", "This is singular");
@@ -625,6 +626,170 @@ module.exports = {
         test.equal(rp.get("few"), "This is the few case");
         test.equal(rp.get("many"), "This is the many case");
         
+        test.done();
+    },
+    
+    testResourcePluralEquals: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case"
+        	},
+        	pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(ra1.equals(ra2));
+
+        test.done();
+    },
+
+    testResourcePluralEqualsNot: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourcePlural({
+        	project: "foo",
+        	context: "asdf",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(!ra1.equals(ra2));
+
+        test.done();
+    },
+
+    testResourcePluralEqualsIgnoreSomeFields: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case"
+        	},
+            pathName: "x.java",
+            comment: "asdf asdf asdf asdf asdf",
+            state: "done"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(ra1.equals(ra2));
+
+        test.done();
+    },
+    
+    testResourcePluralEqualsContentDifferent: function(test) {
+        test.expect(3);
+
+        var ra1 = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        var ra2 = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is a different case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        
+        test.ok(ra1);
+        test.ok(ra2);
+
+        test.ok(!ra1.equals(ra2));
+
         test.done();
     }
 };
