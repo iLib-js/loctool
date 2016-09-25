@@ -1150,22 +1150,24 @@ public class ScriptInfo {
 	 * @return native script for given locale and default script Latn if locale is not detected
 	 */
 	public static String getScriptByLocale(Locale target) {
-		if (locales != null && !locales.isEmpty()) {
-			Locale extractedLocale = null;
+		if (target != null && locales != null && !locales.isEmpty()) {
 			final String language = target.getLanguage();
 			final String region = target.getCountry();
 			final String langRegion = target.getLanguage() + DASH + target.getCountry();
-
+			String likely;
+			
 			if ( locales.containsKey(language) ) {
-				extractedLocale = Locale.forLanguageTag(locales.get(language));
-				return extractedLocale.getScript();
+				// extractedLocale = Locale.forLanguageTag(locales.get(language));
+				likely = locales.get(language);
 			} else if ( locales.containsKey(region) ) {
-				extractedLocale = Locale.forLanguageTag(locales.get(region));
-				return extractedLocale.getScript();
+				likely = locales.get(region);
 			} else if ( locales.containsKey(langRegion) ) {
-				extractedLocale = Locale.forLanguageTag(locales.get(langRegion) );
-				return extractedLocale.getScript();
+				likely = locales.get(langRegion);
+			} else {
+				return DEFAULT_SCRIPT;
 			}
+			String[] parts = likely.split("-");
+			return parts[1];
 		}
 
 		return DEFAULT_SCRIPT;
