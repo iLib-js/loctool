@@ -538,5 +538,292 @@ module.exports = {
         test.equal(ts.size(), 2);
 
         test.done();
+    },
+    
+    testTranslationSetAddSet: function(test) {
+        test.expect(2);
+
+        var ts1 = new TranslationSet(),
+        	ts2 = new TranslationSet();
+        
+        ts1.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test"
+	        })
+	    ]);
+
+        ts2.addAll([
+	        new ResourceString({
+	            key: "foobar",
+	            source: "This is yet another test"
+	        }),
+	        new ResourceString({
+	            key: "blahblah",
+	            source: "One of its feet is both the same."
+	        })
+	    ]);
+
+        test.equal(ts1.size(), 2);
+        
+        ts1.addSet(ts2);
+        
+        test.equal(ts1.size(), 4);
+
+        test.done();
+    },
+    
+    testTranslationSetAddSetRightContents: function(test) {
+        test.expect(10);
+
+        var ts1 = new TranslationSet(),
+        	ts2 = new TranslationSet();
+        
+        ts1.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test"
+	        })
+	    ]);
+
+        ts2.addAll([
+	        new ResourceString({
+	            key: "foobar",
+	            source: "This is yet another test"
+	        }),
+	        new ResourceString({
+	            key: "blahblah",
+	            source: "One of its feet is both the same."
+	        })
+	    ]);
+
+        ts1.addSet(ts2);
+        
+        var r = ts1.getAll();
+        
+        test.ok(r);
+        test.equal(r.length, 4);
+        
+        test.equal(r[0].reskey, "asdf");
+        test.equal(r[0].text, "This is a test");
+        
+        test.equal(r[1].reskey, "qwerty");
+        test.equal(r[1].text, "This is another test");
+        
+        test.equal(r[2].reskey, "foobar");
+        test.equal(r[2].text, "This is yet another test");
+        
+        test.equal(r[3].reskey, "blahblah");
+        test.equal(r[3].text, "One of its feet is both the same.");
+        
+        test.done();
+    },
+
+    testTranslationSetAddSetMerge: function(test) {
+        test.expect(2);
+
+        var ts1 = new TranslationSet(),
+        	ts2 = new TranslationSet();
+        
+        ts1.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test"
+	        })
+	    ]);
+
+        ts2.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "blahblah",
+	            source: "One of its feet is both the same."
+	        })
+	    ]);
+
+        test.equal(ts1.size(), 2);
+        
+        ts1.addSet(ts2);
+        
+        test.equal(ts1.size(), 3);
+
+        test.done();
+    },
+    
+    testTranslationSetAddSetMergeRightContents: function(test) {
+        test.expect(8);
+
+        var ts1 = new TranslationSet(),
+        	ts2 = new TranslationSet();
+        
+        ts1.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test"
+	        })
+	    ]);
+
+        ts2.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "blahblah",
+	            source: "One of its feet is both the same."
+	        })
+	    ]);
+
+        ts1.addSet(ts2);
+        
+        var r = ts1.getAll();
+        
+        test.ok(r);
+        test.equal(r.length, 3);
+        
+        test.equal(r[0].reskey, "asdf");
+        test.equal(r[0].text, "This is a test");
+        
+        test.equal(r[1].reskey, "qwerty");
+        test.equal(r[1].text, "This is another test");
+        
+        test.equal(r[2].reskey, "blahblah");
+        test.equal(r[2].text, "One of its feet is both the same.");
+        
+        test.done();
+    },
+
+    testTranslationSetAddSetEmpty: function(test) {
+        test.expect(2);
+
+        var ts1 = new TranslationSet(),
+        	ts2 = new TranslationSet();
+        
+        ts1.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test"
+	        })
+	    ]);
+
+        test.equal(ts1.size(), 2);
+        
+        ts1.addSet(ts2);
+        
+        test.equal(ts1.size(), 2);
+
+        test.done();
+    },
+    
+    testTranslationSetAddSetEmptyRightContents: function(test) {
+        test.expect(6);
+
+        var ts1 = new TranslationSet(),
+        	ts2 = new TranslationSet();
+        
+        ts1.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test"
+	        })
+	    ]);
+
+        ts1.addSet(ts2);
+        
+        var r = ts1.getAll();
+        
+        test.ok(r);
+        test.equal(r.length, 2);
+        
+        test.equal(r[0].reskey, "asdf");
+        test.equal(r[0].text, "This is a test");
+        
+        test.equal(r[1].reskey, "qwerty");
+        test.equal(r[1].text, "This is another test");
+        
+        test.done();
+    },
+
+    testTranslationSetAddSetUndefined: function(test) {
+        test.expect(2);
+
+        var ts1 = new TranslationSet();
+        
+        ts1.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test"
+	        })
+	    ]);
+
+        test.equal(ts1.size(), 2);
+        
+        ts1.addSet(undefined);
+        
+        test.equal(ts1.size(), 2);
+
+        test.done();
+    },
+    
+    testTranslationSetAddSetUndefinedRightContents: function(test) {
+        test.expect(6);
+
+        var ts1 = new TranslationSet();
+        
+        ts1.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test"
+	        })
+	    ]);
+
+        ts1.addSet(undefined);
+        
+        var r = ts1.getAll();
+        
+        test.ok(r);
+        test.equal(r.length, 2);
+        
+        test.equal(r[0].reskey, "asdf");
+        test.equal(r[0].text, "This is a test");
+        
+        test.equal(r[1].reskey, "qwerty");
+        test.equal(r[1].text, "This is another test");
+        
+        test.done();
     }
 };
