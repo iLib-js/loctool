@@ -123,9 +123,10 @@ function walk(dir, project) {
 
 	if (projectRoot) {
 		for (var i = 0; i < fileTypes.length; i++) {
-			fileTypes[i].collect();
-			fileTypes[i].generatePseudo();
-			fileTypes[i].write();
+			fileTypes[i].collect(function() {
+				fileTypes[i].generatePseudo();
+				fileTypes[i].write();
+			}.bind(this));
 		}
 		
 		project = undefined;
