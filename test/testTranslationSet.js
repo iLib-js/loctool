@@ -56,6 +56,75 @@ module.exports = {
         test.done();
     },
 
+    testTranslationIsDirtyNew: function(test) {
+        test.expect(1);
+
+        var ts = new TranslationSet();
+        
+        test.ok(!ts.isDirty());
+
+        test.done();
+    },
+
+    testTranslationIsDirtyTrue: function(test) {
+        test.expect(1);
+
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+            key: "asdf",
+            source: "This is a test"
+        });
+        
+        ts.add(res);
+        
+        test.ok(ts.isDirty());
+        
+        test.done();
+    },
+
+    testTranslationIsDirtyFalse: function(test) {
+        test.expect(1);
+
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+            key: "asdf",
+            source: "This is a test"
+        });
+        
+        ts.add(res);
+        ts.setClean();
+        
+        test.ok(!ts.isDirty());
+        
+        test.done();
+    },
+
+    testTranslationIsDirtyTrue2: function(test) {
+        test.expect(2);
+
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+            key: "asdf",
+            source: "This is a test"
+        });
+        
+        ts.add(res);
+        ts.setClean();
+        
+        test.ok(!ts.isDirty());
+        
+        res = new ResourceString({
+            key: "asdfasdfasdf",
+            source: "This is another test"
+        });
+
+        ts.add(res);
+        
+        test.ok(ts.isDirty());
+        
+        test.done();
+    },
+
     testTranslationSetGetWithContext: function(test) {
         test.expect(6);
 
