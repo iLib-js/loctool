@@ -123,10 +123,10 @@ function walk(dir, project) {
 
 	if (projectRoot) {
 		for (var i = 0; i < fileTypes.length; i++) {
-			fileTypes[i].collect(function() {
+			//fileTypes[i].collect(function() {
 				fileTypes[i].generatePseudo();
 				fileTypes[i].write();
-			}.bind(this));
+			//}.bind(this));
 		}
 		
 		project = undefined;
@@ -141,6 +141,8 @@ try {
 	logger.error("caught exception: " + JSON.stringify(e));
 	logger.error(e.stack);
 }
+logger.info("Done");
+
 /*
 var obj = {};
 if (path.match(/[a-z]+\.jf/)) {
