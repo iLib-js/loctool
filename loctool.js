@@ -129,8 +129,13 @@ function walk(dir, project) {
 			//}.bind(this));
 		}
 		
+		for (var i = 0; i < fileTypes.length; i++) {
+			fileTypes[i].close();
+		}
+
 		project = undefined;
 		fileTypes = undefined;
+		
 	}
 	return results;
 }
