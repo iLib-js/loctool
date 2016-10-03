@@ -143,8 +143,13 @@ function walk(dir, project) {
 try {
 	walk(rootDir, undefined);
 } catch (e) {
-	logger.error("caught exception: " + JSON.stringify(e));
+	logger.error("caught exception: " + e);
 	logger.error(e.stack);
+	if (fileTypes) {
+		for (var i = 0; i < fileTypes.length; i++) {
+			fileTypes[i].close();
+		}
+	}
 }
 logger.info("Done");
 
