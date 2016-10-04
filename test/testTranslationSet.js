@@ -126,7 +126,7 @@ module.exports = {
     },
 
     testTranslationIsDirtyAddSameResourceTwice: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var ts = new TranslationSet();
         var res = new ResourceString({
@@ -136,6 +136,8 @@ module.exports = {
         
         ts.add(res);
         ts.setClean();
+        
+        test.ok(!ts.isDirty());
         
         // should not set the flag to dirty because the resource 
         // is already there, so nothing is added
