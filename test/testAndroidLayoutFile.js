@@ -1,114 +1,135 @@
 /*
- * testJavaFile.js - test the Java file handler object.
+ * testAndroidLayoutFile.js - test the Java file handler object.
  *
  * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
  */
 
-if (!JavaFile) {
-    var JavaFile = require("../lib/JavaFile.js");
+if (!AndroidLayoutFile) {
+    var AndroidLayoutFile = require("../lib/AndroidLayoutFile.js");
     var AndroidProject =  require("../lib/AndroidProject.js");
 }
 
 module.exports = {
-    testJavaFileConstructor: function(test) {
+    testAndroidLayoutFileConstructor: function(test) {
         test.expect(1);
 
-        var j = new JavaFile();
-        test.ok(j);
+        var alf = new AndroidLayoutFile();
+        test.ok(alf);
         
         test.done();
     },
     
-    testJavaFileConstructorParams: function(test) {
+    testAndroidLayoutFileConstructorParams: function(test) {
         test.expect(1);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p, "./testfiles/java/t1.java");
+        var alf = new AndroidLayoutFile({
+        	project: p, 
+        	pathName: "./testfiles/res/layout/t1.xml",
+        	locale: "en-US"
+        });
         
-        test.ok(j);
+        test.ok(alf);
         
         test.done();
     },
 
-    testJavaFileConstructorNoFile: function(test) {
+    testAndroidLayoutFileConstructorNoFile: function(test) {
         test.expect(1);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
-        test.ok(j);
+        var alf = new AndroidLayoutFile({project: p, pathName: "foo"});
+        test.ok(alf);
         
         test.done();
     },
 
-    testJavaFileMakeKey: function(test) {
+    testAndroidLayoutFileMakeKey: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
-        test.ok(j);
+        var alf = new AndroidLayoutFile({project: p, pathName: "foo"});
+        test.ok(alf);
         
-        test.equal(j.makeKey("This is a test"), "r99578090116730");
+        test.equal(alf.makeKey("This is a test"), "This_is_a_test");
         
         test.done();
     },
 
-    testJavaFileMakeKeySameStringMeansSameKey: function(test) {
+    testAndroidLayoutFileMakeKeySameStringMeansSameKey: function(test) {
         test.expect(3);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
-        test.ok(j);
+        var alf = new AndroidLayoutFile({
+        	project: p,
+        	pathName: "foo"
+        });
+        test.ok(alf);
         
-        test.equal(j.makeKey("This is a test"), "r99578090116730");
-        test.equal(j.makeKey("This is a test"), "r99578090116730");
+        test.equal(alf.makeKey("This is a test"), "This_is_a_test");
+        test.equal(alf.makeKey("This is a test"), "This_is_a_test");
         
         test.done();
     },
 
-    testJavaFileParseSimpleGetByKey: function(test) {
+    testAndroidLayoutFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
-        test.ok(j);
+        var alf = new AndroidLayoutFile({
+        	project: p,
+        	pathName: "foo"
+        });
+        test.ok(alf);
         
-        j.parse('RB.getString("This is a test")');
+        alf.parse('<?xml version="1.0" encoding="utf-8"?>' +
+        		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" ' +
+        		  'android:layout_width="match_parent">' + 
+        		  '  <RelativeLayout ' + 
+        		  '      android:layout_width="match_parent">' + 
+        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
+        		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+        		  '      android:text="This is a test" ' + 
+        		  '      android:textColor="@color/error_red"/>' + 
+        		  '  </RelativeLayout>' + 
+        		  '</FrameLayout>');
         
-        var set = j.getTranslationSet();
+        var set = alf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("r99578090116730");
+        var r = set.get("This_is_a_test");
         test.ok(r);
-        
+        console.log("parsesimple: r is " + JSON.stringify(r));
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "r99578090116730");
+        test.equal(r.getKey(), "This_is_a_test");
         
         test.done();
     },
 
-    testJavaFileParseSimpleGetBySource: function(test) {
+    /*
+    testAndroidLayoutFileParseSimpleGetBySource: function(test) {
         test.expect(5);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString("This is a test")');
@@ -124,14 +145,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseSimpleIgnoreWhitespace: function(test) {
+    testAndroidLayoutFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(5);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('   RB.getString  (    \t "This is a test"    );  ');
@@ -148,14 +169,14 @@ module.exports = {
     },
 
 
-    testJavaFileParseSimpleRightSize: function(test) {
+    testAndroidLayoutFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
 
         var set = j.getTranslationSet();
@@ -170,14 +191,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseWithKey: function(test) {
+    testAndroidLayoutFileParseWithKey: function(test) {
         test.expect(5);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "unique_id")');
@@ -193,14 +214,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseWithKeyCantGetBySource: function(test) {
+    testAndroidLayoutFileParseWithKeyCantGetBySource: function(test) {
         test.expect(3);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "unique_id")');
@@ -214,14 +235,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseMultiple: function(test) {
+    testAndroidLayoutFileParseMultiple: function(test) {
         test.expect(8);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");');
@@ -242,14 +263,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseMultipleWithKey: function(test) {
+    testAndroidLayoutFileParseMultipleWithKey: function(test) {
         test.expect(10);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "x");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "y");');
@@ -272,14 +293,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseWithDups: function(test) {
+    testAndroidLayoutFileParseWithDups: function(test) {
         test.expect(6);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test");');
@@ -297,14 +318,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseDupsDifferingByKeyOnly: function(test) {
+    testAndroidLayoutFileParseDupsDifferingByKeyOnly: function(test) {
         test.expect(8);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString("This is a test");\n\ta.parse("This is another test.");\n\t\tRB.getString("This is a test", "unique_id");');
@@ -325,14 +346,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseBogusConcatenation: function(test) {
+    testAndroidLayoutFileParseBogusConcatenation: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString("This is a test" + " and this isnt");');
@@ -344,14 +365,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseBogusConcatenation2: function(test) {
+    testAndroidLayoutFileParseBogusConcatenation2: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString("This is a test" + foobar);');
@@ -362,14 +383,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseBogusNonStringParam: function(test) {
+    testAndroidLayoutFileParseBogusNonStringParam: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString(foobar);');
@@ -380,14 +401,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseEmptyParams: function(test) {
+    testAndroidLayoutFileParseEmptyParams: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('RB.getString();');
@@ -398,14 +419,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseWholeWord: function(test) {
+    testAndroidLayoutFileParseWholeWord: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('EPIRB.getString("This is a test");');
@@ -416,14 +437,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileParseSubobject: function(test) {
+    testAndroidLayoutFileParseSubobject: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         j.parse('App.RB.getString("This is a test");');
@@ -434,14 +455,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileExtractFile: function(test) {
+    testAndroidLayoutFileExtractFile: function(test) {
         test.expect(8);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p, "./java/t1.java");
+        var alf = new AndroidLayoutFile(p, "./java/t1.java");
         test.ok(j);
         
         // should read the file
@@ -464,14 +485,14 @@ module.exports = {
         test.done();
     },
     
-    testJavaFileExtractUndefinedFile: function(test) {
+    testAndroidLayoutFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p);
+        var alf = new AndroidLayoutFile(p);
         test.ok(j);
         
         // should attempt to read the file and not fail
@@ -484,14 +505,14 @@ module.exports = {
         test.done();
     },
 
-    testJavaFileExtractBogusFile: function(test) {
+    testAndroidLayoutFileExtractBogusFile: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaFile(p, "./java/foo.java");
+        var alf = new AndroidLayoutFile(p, "./java/foo.java");
         test.ok(j);
         
         // should attempt to read the file and not fail
@@ -503,5 +524,5 @@ module.exports = {
 
         test.done();
     },
-
+	*/
 };
