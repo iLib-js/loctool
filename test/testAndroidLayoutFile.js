@@ -435,5 +435,55 @@ module.exports = {
         test.equal(xml, expected);
         
         test.done();
+    },
+    
+    testAndroidLayoutFileGetXMLNoChange: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+			project: p,
+			pathName: "./testfiles/java/res/layout/foo.xml"
+		});
+        test.ok(alf);
+        
+        alf.parse('<?xml version="1.0" encoding="utf-8"?>' +
+      		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" ' +
+      		  '  android:layout_width="match_parent"' + 
+      		  '  android:title="@string/foo">' + 
+      		  '  <RelativeLayout ' + 
+      		  '    android:layout_width="match_parent"' + 
+      		  '    android:foo="This is also a test">' + 
+      		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
+      		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+      		  '      android:foo="This is a test" ' + 
+      		  '      android:textColor="@color/error_red"/>' + 
+      		  '  </RelativeLayout>' + 
+      		  '</FrameLayout>');
+        
+        var xml = alf._getXML();
+        
+        // same as above -- xml is not dirty, so no change
+        var expected = '<?xml version="1.0" encoding="utf-8"?>' +
+		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" ' +
+  		  '  android:layout_width="match_parent"' + 
+  		  '  android:title="@string/foo">' + 
+  		  '  <RelativeLayout ' + 
+  		  '    android:layout_width="match_parent"' + 
+  		  '    android:foo="This is also a test">' + 
+  		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
+  		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+  		  '      android:foo="This is a test" ' + 
+  		  '      android:textColor="@color/error_red"/>' + 
+  		  '  </RelativeLayout>' + 
+  		  '</FrameLayout>';
+        
+        test.equal(xml, expected);
+        
+        test.done();
     }
+
 };
