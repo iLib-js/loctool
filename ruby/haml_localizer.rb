@@ -72,14 +72,20 @@ def get_overlap_strings(orig_with_markup, stripped)
 end
 
 def accumulate_values(root, values)
+  orig = nil
   if (root.value && root.value[:value])
-    s = Sanitize.clean(root.value[:value])
-    if s == root.value[:value]
+    orig = root.value[:value]
+  elsif (root[:type] == :plain && root.value && root.value[:text])
+    orig = root.value[:text]
+  end
+  if orig
+    s = Sanitize.clean(orig)
+    if s == orig
       values << s
     else
-      values.concat(get_overlap_strings(root.value[:value], s))
+      toks = get_overlap_strings(orig, s)
+      values.concat(toks) if toks
     end
-
   end
   root.children.each{|c| accumulate_values(c, values)}
 end
