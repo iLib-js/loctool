@@ -2,6 +2,7 @@
 require 'haml'
 require 'csv'
 require 'sanitize'
+require 'yaml'
 
 class HTParser < Haml::Parser
   attr_accessor :parent, :node_to_texts, :text_to_nodes,
@@ -107,6 +108,7 @@ end
 def process_values(locale_mappings, values, unmapped_words)
   ret = {}
   values.each{|v|
+    next if v.strip.length == 0
     if locale_mappings[v]
       ret[v] = locale_mappings[v]
     else
@@ -124,12 +126,32 @@ def replace_with_translations(template, from_to)
   template
 end
 
+def produce_unmapped(unmapped_words)
+  # File.open('/tmp/test.yml', 'w') {|f| f.write h.to_yaml}
+  h = {}
+  unmapped_words.each{|w|
+    clean_w = w.gsub("\n", "");
+    h[clean_w.gsub(' ', '_')] = clean_w
+  }
+  File.open('/tmp/unmapped.yml', 'w') {|f|
+    h.each{|k, v|
+      f.write "#{k}:#{v}\n"
+    }
+
+  }
+end
+
 
 #file_name = "/Users/aseem/_language_form.html.haml"
 raise ArgumentError.new("Usage: ruby haml_localizer.rb <local-name> [<file-path>..]") if ARGV.count < 2
 local_name = ARGV[0]
+local_mapping_file_name = ARGV[1]
+local_mappings = nil
+if local_name != 'zxx-XX'
+  local_mappings = YAML.load(File.read(local_mapping_file_name))
+end
 
-ARGV[1, ARGV.length].each{|file_name|
+ARGV[2, ARGV.length].each{|file_name|
   puts "file_name=#{file_name} local_name=#{local_name}"
   file_name_components = file_name.split('.')
   raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
@@ -138,9 +160,15 @@ ARGV[1, ARGV.length].each{|file_name|
   x = HTParser.new(template, Haml::Options.new)
   root = x.parse
   values = []
+  unmapped_words = []
   accumulate_values(root, values)
 
-  from_to = process_pseudo_values(values)
+  if local_name == 'zxx-XX'
+    from_to = process_pseudo_values(values)
+  else
+    from_to = process_values(local_mappings, values, unmapped_words)
+    produce_unmapped(unmapped_words)
+  end
   puts from_to
 
   replace_with_translations(template, from_to)
