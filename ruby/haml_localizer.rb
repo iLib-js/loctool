@@ -101,6 +101,15 @@ def process_values(values)
   ret
 end
 
+def replace_with_translations(template, from_to)
+  from_to.keys.sort{|a| a.length}.reverse.each{|k|
+    v = from_to[k]
+    template.gsub!(k, v)
+  }
+  template
+end
+
+
 #file_name = "/Users/aseem/_language_form.html.haml"
 raise ArgumentError.new("Usage: ruby haml_localizer.rb <local-name> <file-path>") if ARGV.count < 2
 file_name = ARGV[1]
@@ -120,9 +129,7 @@ accumulate_values(root, values)
 from_to = process_values(values)
 puts from_to
 
-from_to.each{|k, v|
-  template.gsub!(k, v)
-}
+replace_with_translations(template, from_to)
 
 new_file_name = file_name_components[0, file_name_components.length - 2].join('') + ".#{local_name}.html.haml"
 puts new_file_name
