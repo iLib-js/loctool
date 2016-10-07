@@ -111,26 +111,29 @@ end
 
 
 #file_name = "/Users/aseem/_language_form.html.haml"
-raise ArgumentError.new("Usage: ruby haml_localizer.rb <local-name> <file-path>") if ARGV.count < 2
-file_name = ARGV[1]
+raise ArgumentError.new("Usage: ruby haml_localizer.rb <local-name> [<file-path>..]") if ARGV.count < 2
 local_name = ARGV[0]
-puts "file_name=#{file_name} local_name=#{local_name}"
-file_name_components = file_name.split('.')
-raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
 
-template = File.read(file_name)
-x = HTParser.new(template, Haml::Options.new)
-root = x.parse
-values = []
-special_values = []
-accumulate_values(root, values)
+ARGV[1, ARGV.length].each{|file_name|
+  puts "file_name=#{file_name} local_name=#{local_name}"
+  file_name_components = file_name.split('.')
+  raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
+
+  template = File.read(file_name)
+  x = HTParser.new(template, Haml::Options.new)
+  root = x.parse
+  values = []
+  special_values = []
+  accumulate_values(root, values)
 #puts x.node_to_text.count
 
-from_to = process_values(values)
-puts from_to
+  from_to = process_values(values)
+  puts from_to
 
-replace_with_translations(template, from_to)
+  replace_with_translations(template, from_to)
 
-new_file_name = file_name_components[0, file_name_components.length - 2].join('') + ".#{local_name}.html.haml"
-puts new_file_name
-File.open(new_file_name, 'w') { |file| file.write(template) }
+  new_file_name = file_name_components[0, file_name_components.length - 2].join('') + ".#{local_name}.html.haml"
+  puts new_file_name
+  File.open(new_file_name, 'w') { |file| file.write(template) }
+}
+
