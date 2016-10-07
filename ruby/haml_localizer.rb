@@ -143,7 +143,7 @@ end
 
 
 #file_name = "/Users/aseem/_language_form.html.haml"
-raise ArgumentError.new("Usage: ruby haml_localizer.rb <local-name> <lang-mapping> [<file-path>..]") if ARGV.count < 2
+raise ArgumentError.new("Usage: ruby haml_localizer.rb <local-name> <lang-mapping> [<file-path>..]") if ARGV.count < 3
 local_name = ARGV[0]
 local_mapping_file_name = ARGV[1]
 local_mappings = nil
