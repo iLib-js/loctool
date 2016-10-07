@@ -93,10 +93,25 @@ end
 
 PSUEDO_MAP = {    "a"=> "à",    "c"=> "ç",    "d"=> "ð",    "e"=> "ë",    "g"=> "ğ",    "h"=> "ĥ",    "i"=> "í",    "j"=> "ĵ",    "k"=> "ķ",    "l"=> "ľ",    "n"=> "ñ",    "o"=> "õ",    "p"=> "þ",    "r"=> "ŕ",    "s"=> "š",    "t"=> "ţ",    "u"=> "ü",    "w"=> "ŵ",    "y"=> "ÿ",    "z"=> "ž",    "A"=> "Ã",    "B"=> "ß",    "C"=> "Ç",    "D"=> "Ð",    "E"=> "Ë",    "G"=> "Ĝ",    "H"=> "Ħ",    "I"=> "Ï",    "J"=> "Ĵ",    "K"=> "ĸ",    "L"=> "Ľ",    "N"=> "Ň",    "O"=> "Ø",    "R"=> "Ŗ",    "S"=> "Š",    "T"=> "Ť",    "U"=> "Ú",    "W"=> "Ŵ",    "Y"=> "Ŷ",    "Z"=> "Ż"}
 #return <original string> => <string to repalce with>
-def process_values(values)
+def process_pseudo_values(values)
   ret = {}
   values.each{|v|
     ret[v] = v.split('').map{|c| PSUEDO_MAP[c] ? PSUEDO_MAP[c] : c}.join('')
+  }
+  ret
+end
+
+#param locale_mappings - The existing mappings in out system we can map values to
+# return <original string> => <string to repalce with>
+# out-param unmapped_words contains words we could not map
+def process_values(locale_mappings, values, unmapped_words)
+  ret = {}
+  values.each{|v|
+    if locale_mappings[v]
+      ret[v] = locale_mappings[v]
+    else
+      unmapped_words << v
+    end
   }
   ret
 end
@@ -123,11 +138,9 @@ ARGV[1, ARGV.length].each{|file_name|
   x = HTParser.new(template, Haml::Options.new)
   root = x.parse
   values = []
-  special_values = []
   accumulate_values(root, values)
-#puts x.node_to_text.count
 
-  from_to = process_values(values)
+  from_to = process_pseudo_values(values)
   puts from_to
 
   replace_with_translations(template, from_to)
