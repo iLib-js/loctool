@@ -9,9 +9,16 @@
 		}
 	],
 	"levels": {
-		"[all]": "TRACE",
-		"loctool.loctool":  "TRACE",
+		"[all]": "INFO",
+		"loctool.lib.DBTranslationSet": "TRACE",
 		"loctool.lib.JavaFile": "TRACE",
-		"loctool.lib.JavaFileType": "TRACE"
+		"loctool.lib.JavaFileType": "TRACE",
+		"loctool.lib.ResourceString": "TRACE",
+		"loctool.lib.ResourceArray": "TRACE",
+		"loctool.lib.ResourcePlural": "TRACE",
+		"loctool.lib.TranslationSet": "TRACE",
+		"loctool.lib.AndroidLayoutFile": "TRACE",
+		"loctool.lib.AndroidLayoutFileType": "TRACE",
+		"loctool.loctool":  "TRACE"
 	}
 }
