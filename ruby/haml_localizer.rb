@@ -93,7 +93,7 @@ end
 
 
 PSUEDO_MAP = {    "a"=> "à",    "c"=> "ç",    "d"=> "ð",    "e"=> "ë",    "g"=> "ğ",    "h"=> "ĥ",    "i"=> "í",    "j"=> "ĵ",    "k"=> "ķ",    "l"=> "ľ",    "n"=> "ñ",    "o"=> "õ",    "p"=> "þ",    "r"=> "ŕ",    "s"=> "š",    "t"=> "ţ",    "u"=> "ü",    "w"=> "ŵ",    "y"=> "ÿ",    "z"=> "ž",    "A"=> "Ã",    "B"=> "ß",    "C"=> "Ç",    "D"=> "Ð",    "E"=> "Ë",    "G"=> "Ĝ",    "H"=> "Ħ",    "I"=> "Ï",    "J"=> "Ĵ",    "K"=> "ĸ",    "L"=> "Ľ",    "N"=> "Ň",    "O"=> "Ø",    "R"=> "Ŗ",    "S"=> "Š",    "T"=> "Ť",    "U"=> "Ú",    "W"=> "Ŵ",    "Y"=> "Ŷ",    "Z"=> "Ż"}
-#return <original string> => <string to repalce with>
+#return <original string> => <string to replace with>
 def process_pseudo_values(values)
   ret = {}
   values.each{|v|
@@ -143,38 +143,41 @@ end
 
 
 #file_name = "/Users/aseem/_language_form.html.haml"
-raise ArgumentError.new("Usage: ruby haml_localizer.rb <local-name> <lang-mapping> [<file-path>..]") if ARGV.count < 3
-local_name = ARGV[0]
+raise ArgumentError.new("Usage: ruby haml_localizer.rb <locale-name> <lang-mapping> [<file-path>..]") if ARGV.count < 3
+locale_name = ARGV[0]
 local_mapping_file_name = ARGV[1]
 local_mappings = nil
-if local_name != 'zxx-XX'
-  local_mappings = YAML.load(File.read(local_mapping_file_name))
-end
+#if locale_name != 'zxx-XX'
+#  local_mappings = YAML.load(File.read(local_mapping_file_name))
+#end
 
-ARGV[2, ARGV.length].each{|file_name|
-  puts "file_name=#{file_name} local_name=#{local_name}"
+unmapped_words = []
+ 
+ARGV[2, ARGV.length].each{|path_name|
+  #puts "file_name=#{path_name} locale_name=#{locale_name}"
+  dirname = File.dirname(path_name)
+  file_name = File.basename(path_name)
   file_name_components = file_name.split('.')
-  raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
+  raise ArgumentError.new('file must end with .haml') unless file_name.end_with?('.haml')
 
-  template = File.read(file_name)
+  template = File.read(path_name)
   x = HTParser.new(template, Haml::Options.new)
   root = x.parse
   values = []
-  unmapped_words = []
   accumulate_values(root, values)
 
-  if local_name == 'zxx-XX'
+  #if locale_name == 'zxx-XX'
     from_to = process_pseudo_values(values)
-  else
-    from_to = process_values(local_mappings, values, unmapped_words)
-    produce_unmapped(unmapped_words)
-  end
-  puts from_to
+  #else
+  #  from_to = process_values(local_mappings, values, unmapped_words)
+  #end
+  #puts from_to
 
   replace_with_translations(template, from_to)
 
-  new_file_name = file_name_components[0, file_name_components.length - 2].join('') + ".#{local_name}.html.haml"
+  new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{locale_name}.html.haml"
   puts new_file_name
   File.open(new_file_name, 'w') { |file| file.write(template) }
 }
 
+produce_unmapped(unmapped_words)
