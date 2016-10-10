@@ -14,7 +14,15 @@ on your machine and in your path.
 Once it is installed, you need to use the package manager to install
 the following things:
 
-npm install log4js ilib mysql2
+npm install log4js ilib mysql2 xml2json yamljs
+
+You will also need to make sure ruby is installed on your machine
+and is in your path.
+
+Once it is installed, you need to install the following gems:
+
+gem install haml sanitize
+
 
 Running the Tool
 ----------------

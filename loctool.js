@@ -104,14 +104,12 @@ function walk(dir, project) {
 			if (fileTypes) {
 				logger.trace("fileTypes.length is " + fileTypes.length);
 			    for (var i = 0; i < fileTypes.length; i++) {
-			    	logger.trace("Checking if file type " + fileTypes[i].name() + " handles " + path);
+			    	logger.trace("Checking if " + fileTypes[i].name() + " handles " + path);
 	                if (fileTypes[i].handles(path)) {
 	                	logger.info("  " + fileTypes[i].name() + ": " + path);
 						var file = fileTypes[i].newFile(path);
 						file.extract();
 						fileTypes[i].addSet(file.getTranslationSet());
-					} else {
-						logger.trace("no");
 					}
 				}
 			} else {
