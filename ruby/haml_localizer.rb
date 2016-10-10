@@ -95,6 +95,7 @@ def get_overlap_strings2(orig_with_markup, stripped)
       return []
     end
   end
+  ret = []
   if md[3].length == 0
     ret = []
   elsif stripped.include?(md[3])
