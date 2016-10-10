@@ -86,6 +86,7 @@ end
 
 # new algo: search for markup identified by <, >
 def get_overlap_strings2(orig_with_markup, stripped)
+  puts "get_overlap_strings2 called with orig_with_markup=#{orig_with_markup} stripped=#{stripped} ol=#{orig_with_markup.length} sl=#{stripped.length} orig_with_markup.last=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
   return [] if orig_with_markup.length == 0
   md = /(.*)(<[^>]*>)(.*)/.match(orig_with_markup)
   if md.nil?
@@ -98,6 +99,9 @@ def get_overlap_strings2(orig_with_markup, stripped)
   if md[3].length == 0
     ret = []
   elsif stripped.include?(md[3])
+    (0..md.length-1).each{|i| puts "md [#{i}]=#{puts md[i]}\n"}
+    puts "res=#{md[3]}"
+    puts "last-char=#{orig_with_markup[orig_with_markup.length - 1]} ord=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
     ret = [md[3]]
   end
   ret.concat(get_overlap_strings2(md[1], stripped))
@@ -107,6 +111,9 @@ def accumulate_values(root, values)
   orig = nil
   if (root.value && root.value[:value])
     orig = root.value[:value]
+    if root.value[:parse]
+      orig = YAML.load(orig)
+    end
   elsif (root[:type] == :plain && root.value && root.value[:text])
     orig = root.value[:text]
   end
@@ -117,6 +124,10 @@ def accumulate_values(root, values)
     else
       puts "#######get_overlap called on orig=#{orig} s=#{s}"
       toks = get_overlap_strings2(orig, s)
+      if orig.include?("We will verify your new license and update your profile to start accepting patients i")
+        puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
+        #raise ArgumentError.new('debug')
+      end
       values.concat(toks) if toks
     end
   end
@@ -155,7 +166,13 @@ def replace_with_translations(template, from_to)
     next if k.include?('@') || k.include?('#{')
     v = from_to[k]
     puts "translating=#{k} WITH v=#{v}"
-    template.gsub!(k, v)
+    res = template.gsub!(k, v)
+    if res.nil?
+      puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
+      puts "include=#{template.include?(k)}"
+      puts "template=#{template}"
+      #raise ArgumentError.new("stop")
+    end
   }
   template
 end
@@ -196,6 +213,8 @@ ARGV[2, ARGV.length].each{|file_name|
   values = []
   unmapped_words = []
   accumulate_values(root, values)
+
+  puts "values=#{values}"
 
   if local_name == 'zxx-XX'
     from_to = process_pseudo_values(values)
