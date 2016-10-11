@@ -286,5 +286,5 @@ ARGV[2, ARGV.length].each{|file_name|
     ex.backtrace
   end
 }
-produce_unmapped(unmapped_words)
+produce_unmapped(unmapped_words.uniq)
 
