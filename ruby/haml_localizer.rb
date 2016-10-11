@@ -84,11 +84,25 @@ def get_overlap_strings(orig_with_markup, stripped)
   nil
 end
 
+# return array of words tokenizing around code blocks for each word in values
+# stripped is the originally Sanitized word
+def break_around_code(values, stripped)
+
+end
+
+
 # new algo: search for markup identified by <, >
 def get_overlap_strings2(orig_with_markup, stripped)
-  puts "get_overlap_strings2 called with orig_with_markup=#{orig_with_markup} stripped=#{stripped} ol=#{orig_with_markup.length} sl=#{stripped.length} orig_with_markup.last=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
+  #puts "get_overlap_strings2 called with orig_with_markup=#{orig_with_markup} stripped=#{stripped} ol=#{orig_with_markup.length} sl=#{stripped.length} orig_with_markup.last=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
   return [] if orig_with_markup.length == 0
-  md = /(.*)(<[^>]*>)(.*)/.match(orig_with_markup)
+  md = nil
+  if orig_with_markup.is_a?(Hash)
+    puts "orig_with_markup=#{orig_with_markup}"
+    #raise ArgumentError.new('debug')
+    return []
+  else
+    md = /(.*)(<[^>]*>)(.*)/.match(orig_with_markup)
+  end
   if md.nil?
     if stripped.include?(orig_with_markup)
       return [orig_with_markup]
@@ -112,7 +126,14 @@ def accumulate_values(root, values)
   if (root.value && root.value[:value])
     orig = root.value[:value]
     if root.value[:parse]
-      orig = YAML.load(orig)
+      begin
+        puts "orig=#{orig}"
+        orig = YAML.load(orig)
+      rescue Psych::SyntaxError => ex
+        puts "orig=#{orig}"
+        orig = nil
+      end
+
     end
   elsif (root[:type] == :plain && root.value && root.value[:text])
     orig = root.value[:text]
