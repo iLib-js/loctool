@@ -251,35 +251,40 @@ if local_name != 'zxx-XX'
   local_mappings = YAML.load(File.read(local_mapping_file_name))
 end
 
+unmapped_words = []
+
 ARGV[2, ARGV.length].each{|file_name|
-  puts "file_name=#{file_name} local_name=#{local_name}"
-  file_name_components = file_name.split('.')
-  raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
+  begin
+    puts "file_name=#{file_name} local_name=#{local_name}"
+    file_name_components = file_name.split('.')
+    raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
 
-  template = File.read(file_name)
-  x = HTParser.new(template, Haml::Options.new)
-  root = x.parse
-  #puts "root=#{root}"
-  values = []
-  unmapped_words = []
-  accumulate_values(root, values)
-  #puts "orig_values=#{values}"
-  values = reject_paran(break_aound_code_values(values))
+    template = File.read(file_name)
+    x = HTParser.new(template, Haml::Options.new)
+    root = x.parse
+    #puts "root=#{root}"
+    values = []
+    accumulate_values(root, values)
+    #puts "orig_values=#{values}"
+    values = reject_paran(break_aound_code_values(values))
 
-  #puts "values=#{values}"
+    #puts "values=#{values}"
 
-  if local_name == 'zxx-XX'
-    from_to = process_pseudo_values(values)
-  else
-    from_to = process_values(local_mappings, values, unmapped_words)
-    produce_unmapped(unmapped_words)
+    if local_name == 'zxx-XX'
+      from_to = process_pseudo_values(values)
+    else
+      from_to = process_values(local_mappings, values, unmapped_words)
+    end
+    #puts from_to
+
+    replace_with_translations(template, from_to)
+
+    new_file_name = file_name_components[0, file_name_components.length - 2].join('') + ".#{local_name}.html.haml"
+    #puts new_file_name
+    File.open(new_file_name, 'w') { |file| file.write(template) }
+  rescue => ex
+    ex.backtrace
   end
-  #puts from_to
-
-  replace_with_translations(template, from_to)
-
-  new_file_name = file_name_components[0, file_name_components.length - 2].join('') + ".#{local_name}.html.haml"
-  #puts new_file_name
-  File.open(new_file_name, 'w') { |file| file.write(template) }
 }
+produce_unmapped(unmapped_words)
 
