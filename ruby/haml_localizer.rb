@@ -215,7 +215,7 @@ def replace_with_translations(template, from_to)
     next if k.include?('@') || k.include?('#{')
     v = from_to[k]
     #puts "translating=#{k} WITH v=#{v}"
-    res = template.gsub!(/^#{k}$/, v)
+    res = template.gsub!(k, v)
     #if res.nil?
       #puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
       #puts "include=#{template.include?(k)}"
