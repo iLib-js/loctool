@@ -12,6 +12,8 @@
 		"[all]": "INFO",
 		"loctool.lib.AndroidLayoutFile": "TRACE",
 		"loctool.lib.AndroidLayoutFileType": "TRACE",
+		"loctool.lib.AndroidResourceFile": "TRACE",
+		"loctool.lib.AndroidResourceFileType": "TRACE",
 		"loctool.lib.DBTranslationSet": "TRACE",
 		"loctool.lib.HamlFile": "TRACE",
 		"loctool.lib.HamlFileType": "TRACE",
