@@ -116,20 +116,14 @@ end
 
 # new algo: search for markup identified by <, >
 def get_overlap_strings2(orig_with_markup, stripped)
-<<<<<<< HEAD
-  # puts "get_overlap_strings2 called with orig_with_markup=#{orig_with_markup} stripped=#{stripped} ol=#{orig_with_markup.length} sl=#{stripped.length} orig_with_markup.last=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
-  return [] if orig_with_markup.nil? || orig_with_markup.length == 0
-  md = /(.*)(<[^>]*>)(.*)/.match(orig_with_markup)
-=======
   #puts "get_overlap_strings2 called with orig_with_markup=#{orig_with_markup} stripped=#{stripped} ol=#{orig_with_markup.length} sl=#{stripped.length} orig_with_markup.last=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
-  return [] if orig_with_markup.length == 0
+  return [] if orig_with_markup.nil? || orig_with_markup.length == 0
   md = nil
   if orig_with_markup.is_a?(Hash)
     return []
   else
     md = /(.*)(<[^>]*>)(.*)/.match(orig_with_markup)
   end
->>>>>>> development
   if md.nil?
     if stripped.include?(orig_with_markup)
       return [orig_with_markup]
