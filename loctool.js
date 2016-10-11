@@ -54,7 +54,7 @@ var project;
 var fileTypes;
 
 function walk(dir, project) {
-	logger.trace("Searching" + dir);
+	logger.trace("Searching " + dir);
 	
 	var results = [], projectRoot = false;
 	
