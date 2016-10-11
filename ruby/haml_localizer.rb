@@ -286,7 +286,7 @@ ARGV[2, ARGV.length].each{|path_name|
 
   replace_with_translations(template, from_to)
 
-  new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{local_name}.html.haml"
+  new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{locale_name}.html.haml"
   #puts new_file_name
   File.open(new_file_name, 'w') { |file| file.write(template) }
 }
