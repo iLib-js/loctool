@@ -148,8 +148,9 @@ def accumulate_values(root, values)
   orig = nil
   if (root.value && root.value[:value])
     orig = root.value[:value]
-    begin
-    if root.value[:parse]
+    if root.value[:parse] && root.value[:name] == 'td'
+      orig = nil
+    elsif root.value[:parse]
       if orig.include?('[:')
         # assumed this entire node is piece of code. skip it
         orig = nil
@@ -162,9 +163,6 @@ def accumulate_values(root, values)
           orig = nil
         end
       end
-    end
-    rescue
-      puts "Got YAML error: #{orig}"
     end
   elsif root.value && root.value[:attributes] && root.value[:attributes]['title']
     #puts "Found title=#{root.value[:attributes]['title']}"
@@ -269,13 +267,13 @@ ARGV[2, ARGV.length].each{|file_name|
     template = File.read(file_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-    #puts "root=#{root}"
+    puts "root=#{root}"
     values = []
     accumulate_values(root, values)
-    #puts "orig_values=#{values}"
+    puts "orig_values=#{values}"
     values = reject_paran(break_aound_code_values(values))
 
-    #puts "values=#{values}"
+    puts "values=#{values}"
 
     #if local_name == 'zxx-XX'
       from_to = process_pseudo_values(values)
@@ -294,4 +292,4 @@ ARGV[2, ARGV.length].each{|file_name|
   end
 }
 
-produce_unmapped(unmapped_words)
+produce_unmapped(unmapped_words.uniq)
