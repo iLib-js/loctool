@@ -402,15 +402,15 @@ module.exports = {
         test.ok(alf);
         
         alf.parse('<?xml version="1.0" encoding="utf-8"?>' +
-      		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" ' +
+      		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"' +
       		  '  android:layout_width="match_parent"' + 
       		  '  android:title="@string/foo">' + 
-      		  '  <RelativeLayout ' + 
+      		  '  <RelativeLayout' + 
       		  '    android:layout_width="match_parent"' + 
       		  '    android:text="This is also a test">' + 
-      		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-      		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
-      		  '      android:text="This is a test" ' + 
+      		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView' + 
+      		  '      android:id="@+id/invalidpassowrdMsg"' + 
+      		  '      android:text="This is a test"' + 
       		  '      android:textColor="@color/error_red"/>' + 
       		  '  </RelativeLayout>' + 
       		  '</FrameLayout>');
@@ -418,18 +418,17 @@ module.exports = {
         var xml = alf._getXML();
         
         var expected = '<?xml version="1.0" encoding="utf-8"?>' +
-		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" ' +
-		  'android:layout_width="match_parent" ' + 
-		  'android:title="@string/foo">' + 
-		  '<RelativeLayout ' + 
-		  'android:layout_width="match_parent" ' + 
-		  'android:text="@string/android_text_This_is_also_a_test">' + 
-		  '<com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-		  'android:id="@+id/invalidpassowrdMsg" ' + 
-		  'android:text="@string/android_text_This_is_a_test" ' +
-		  'android:textColor="@color/error_red">' + 
-		  '</com.healthtap.userhtexpress.customviews.RobotoRegularTextView>' +
-		  '</RelativeLayout>' + 
+		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"' +
+		  '  android:layout_width="match_parent"' + 
+		  '  android:title="@string/foo">' + 
+		  '  <RelativeLayout' + 
+		  '    android:layout_width="match_parent"' + 
+		  '    android:text="@string/android_text_This_is_also_a_test">' + 
+		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView' + 
+		  '      android:id="@+id/invalidpassowrdMsg"' + 
+		  '      android:text="@string/android_text_This_is_a_test"' +
+		  '      android:textColor="@color/error_red"/>' + 
+		  '  </RelativeLayout>' + 
 		  '</FrameLayout>';
         
         test.equal(xml, expected);
@@ -458,7 +457,7 @@ module.exports = {
       		  '    android:layout_width="match_parent"' + 
       		  '    android:foo="This is also a test">' + 
       		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-      		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+      		  '      android:id="@+id/invalidpassowrdMsg" ' + 
       		  '      android:foo="This is a test" ' + 
       		  '      android:textColor="@color/error_red"/>' + 
       		  '  </RelativeLayout>' + 
@@ -475,7 +474,7 @@ module.exports = {
   		  '    android:layout_width="match_parent"' + 
   		  '    android:foo="This is also a test">' + 
   		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
-  		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+  		  '      android:id="@+id/invalidpassowrdMsg" ' + 
   		  '      android:foo="This is a test" ' + 
   		  '      android:textColor="@color/error_red"/>' + 
   		  '  </RelativeLayout>' + 
@@ -484,6 +483,139 @@ module.exports = {
         test.equal(xml, expected);
         
         test.done();
-    }
+    },
+    
+    testAndroidLayoutFileGetLocale: function(test) {
+        test.expect(2);
 
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+        	project: p, 
+        	pathName: "./res/layout/foo.xml"
+        });
+        test.ok(alf);
+        
+        var l = alf.getLocale();
+        
+        test.equal(l, "en-US");
+
+        test.done();
+    },
+
+    testAndroidLayoutFileGetLocaleFromDir: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+        	project: p,
+        	pathName: "./res/layout-en-rNZ/foo.xml"
+        });
+        test.ok(alf);
+        
+        var l = alf.getLocale();
+        
+        test.equal(l, "en-NZ");
+
+        test.done();
+    },
+
+    testAndroidLayoutFileGetContext: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+        	project: p,
+        	pathName: "./res/layout-bar/foo.xml"
+        });
+        test.ok(alf);
+        
+        test.equal(alf.getContext(), "bar");
+
+        test.done();
+    },
+
+    testAndroidLayoutFileGetLocaleAndContext1: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+        	project: p,
+        	pathName: "./res/layout-de-bar/foo.xml"
+        });
+        test.ok(alf);
+        
+        test.equal(alf.getLocale(), "de");
+        test.equal(alf.getContext(), "bar");
+
+        test.done();
+    },
+
+    testAndroidLayoutFileGetLocaleAndContext1: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+        	project: p,
+        	pathName: "./res/layout-de-bar/foo.xml"
+        });
+        test.ok(alf);
+        
+        test.equal(alf.getLocale(), "de");
+        test.equal(alf.getContext(), "bar");
+
+        test.done();
+    },
+
+    testAndroidLayoutFileGetLocaleAndContext2: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+        	project: p,
+        	pathName: "./res/layout-de-rCH-bar/foo.xml"
+        });
+        test.ok(alf);
+        
+        test.equal(alf.getLocale(), "de-CH");
+        test.equal(alf.getContext(), "bar");
+
+        test.done();
+    },
+    
+    testAndroidLayoutFileGetLocaleAndContext2: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+        	project: p, 
+        	pathName: "./res/layout-zh-sHant-rCN-bar/foo.xml"
+        });
+        test.ok(alf);
+        
+        test.equal(alf.getLocale(), "zh-Hant-CN");
+        test.equal(alf.getContext(), "bar");
+
+        test.done();
+    }
 };
