@@ -132,6 +132,7 @@ def get_overlap_strings2(orig_with_markup, stripped)
     end
   end
   ret = []
+  puts "md[1]=#{md[1]}"
   if md[3].length == 0
     ret = []
   elsif stripped.include?(md[3])
@@ -171,12 +172,11 @@ def accumulate_values(root, values)
   elsif (root[:type] == :plain && root.value && root.value[:text])
     orig = root.value[:text]
   end
-  if orig
+  if orig && orig.is_a?(String)
     s = Sanitize.clean(orig)
     if s == orig
       values << s
     else
-      #puts "#######get_overlap called on orig=#{orig} s=#{s}"
       toks = get_overlap_strings2(orig, s)
       if orig.include?("A doctor’s DocScore is a measure of their knowledge, trust,")
         #puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
