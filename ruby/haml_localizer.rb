@@ -147,7 +147,9 @@ def accumulate_values(root, values)
   orig = nil
   if (root.value && root.value[:value])
     orig = root.value[:value]
-    if root.value[:parse]
+    if root.value[:parse] && root.value[:name] == 'td'
+      orig = nil
+    elsif root.value[:parse]
       if orig.include?('[:')
         # assumed this entire node is piece of code. skip it
         orig = nil
@@ -262,13 +264,13 @@ ARGV[2, ARGV.length].each{|file_name|
     template = File.read(file_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-    #puts "root=#{root}"
+    puts "root=#{root}"
     values = []
     accumulate_values(root, values)
-    #puts "orig_values=#{values}"
+    puts "orig_values=#{values}"
     values = reject_paran(break_aound_code_values(values))
 
-    #puts "values=#{values}"
+    puts "values=#{values}"
 
     if local_name == 'zxx-XX'
       from_to = process_pseudo_values(values)
