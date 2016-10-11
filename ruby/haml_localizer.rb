@@ -84,10 +84,33 @@ def get_overlap_strings(orig_with_markup, stripped)
   nil
 end
 
-# return array of words tokenizing around code blocks for each word in values
+# return array of words tokenizing around code blocks for str
 # stripped is the originally Sanitized word
-def break_around_code(values, stripped)
+def break_around_code(str)
+  ret = []
+  if str.include?("\#{")
+    md = /(.*)#\{.*}(.*)/.match str
+  else
+    md = /(.*)\{.*}(.*)/.match str
+  end
+  if md.nil?
+    return [str]
+  end
+  if md[2].strip.length > 0
+    ret << md[2].strip
+  end
+  if md[1].strip.length > 0
+    ret.concat(break_around_code(md[1]))
+  end
+  ret
+end
 
+def break_aound_code_values(values)
+  values.map{|v| break_around_code(v)}.flatten.reject{|s| s.strip.length == 0}
+end
+
+def reject_paran(values)
+  values.reject{|c| ['(', ')'].include?(c)}
 end
 
 
@@ -97,8 +120,6 @@ def get_overlap_strings2(orig_with_markup, stripped)
   return [] if orig_with_markup.length == 0
   md = nil
   if orig_with_markup.is_a?(Hash)
-    puts "orig_with_markup=#{orig_with_markup}"
-    #raise ArgumentError.new('debug')
     return []
   else
     md = /(.*)(<[^>]*>)(.*)/.match(orig_with_markup)
@@ -113,9 +134,9 @@ def get_overlap_strings2(orig_with_markup, stripped)
   if md[3].length == 0
     ret = []
   elsif stripped.include?(md[3])
-    (0..md.length-1).each{|i| puts "md [#{i}]=#{puts md[i]}\n"}
-    puts "res=#{md[3]}"
-    puts "last-char=#{orig_with_markup[orig_with_markup.length - 1]} ord=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
+    #(0..md.length-1).each{|i| puts "md [#{i}]=#{puts md[i]}\n"}
+    #puts "res=#{md[3]}"
+    #puts "last-char=#{orig_with_markup[orig_with_markup.length - 1]} ord=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
     ret = [md[3]]
   end
   ret.concat(get_overlap_strings2(md[1], stripped))
@@ -126,15 +147,22 @@ def accumulate_values(root, values)
   if (root.value && root.value[:value])
     orig = root.value[:value]
     if root.value[:parse]
-      begin
-        puts "orig=#{orig}"
-        orig = YAML.load(orig)
-      rescue Psych::SyntaxError => ex
-        puts "orig=#{orig}"
+      if orig.include?('[:')
+        # assumed this entire node is piece of code. skip it
         orig = nil
+      else
+        begin
+          #puts "orig=#{orig}"
+          orig = YAML.load(orig)
+        rescue Psych::SyntaxError => ex
+          #puts "orig=#{orig}"
+          orig = nil
+        end
       end
-
     end
+  elsif root.value && root.value[:attributes] && root.value[:attributes]['title']
+    #puts "FOund title=#{root.value[:attributes]['title']}"
+    orig = root.value[:attributes]['title']
   elsif (root[:type] == :plain && root.value && root.value[:text])
     orig = root.value[:text]
   end
@@ -143,11 +171,11 @@ def accumulate_values(root, values)
     if s == orig
       values << s
     else
-      puts "#######get_overlap called on orig=#{orig} s=#{s}"
+      #puts "#######get_overlap called on orig=#{orig} s=#{s}"
       toks = get_overlap_strings2(orig, s)
-      if orig.include?("We will verify your new license and update your profile to start accepting patients i")
-        puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
-        #raise ArgumentError.new('debug')
+      if orig.include?("A doctor’s DocScore is a measure of their knowledge, trust,")
+        #puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
+        raise ArgumentError.new('debug')
       end
       values.concat(toks) if toks
     end
@@ -186,14 +214,14 @@ def replace_with_translations(template, from_to)
   from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
     next if k.include?('@') || k.include?('#{')
     v = from_to[k]
-    puts "translating=#{k} WITH v=#{v}"
-    res = template.gsub!(k, v)
-    if res.nil?
-      puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
-      puts "include=#{template.include?(k)}"
-      puts "template=#{template}"
+    #puts "translating=#{k} WITH v=#{v}"
+    res = template.gsub!(/^#{k}$/, v)
+    #if res.nil?
+      #puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
+      #puts "include=#{template.include?(k)}"
+      #puts "template=#{template}"
       #raise ArgumentError.new("stop")
-    end
+    #end
   }
   template
 end
@@ -231,11 +259,14 @@ ARGV[2, ARGV.length].each{|file_name|
   template = File.read(file_name)
   x = HTParser.new(template, Haml::Options.new)
   root = x.parse
+  #puts "root=#{root}"
   values = []
   unmapped_words = []
   accumulate_values(root, values)
+  #puts "orig_values=#{values}"
+  values = reject_paran(break_aound_code_values(values))
 
-  puts "values=#{values}"
+  #puts "values=#{values}"
 
   if local_name == 'zxx-XX'
     from_to = process_pseudo_values(values)
@@ -243,12 +274,12 @@ ARGV[2, ARGV.length].each{|file_name|
     from_to = process_values(local_mappings, values, unmapped_words)
     produce_unmapped(unmapped_words)
   end
-  puts from_to
+  #puts from_to
 
   replace_with_translations(template, from_to)
 
   new_file_name = file_name_components[0, file_name_components.length - 2].join('') + ".#{local_name}.html.haml"
-  puts new_file_name
+  #puts new_file_name
   File.open(new_file_name, 'w') { |file| file.write(template) }
 }
 
