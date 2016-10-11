@@ -257,38 +257,41 @@ local_mappings = nil
 #end
 
 unmapped_words = []
- 
-ARGV[2, ARGV.length].each{|path_name|
-  #puts "file_name=#{path_name} locale_name=#{locale_name}"
-  dirname = File.dirname(path_name)
-  file_name = File.basename(path_name)
-  file_name_components = file_name.split('.')
-  raise ArgumentError.new('file must end with .haml') unless file_name.end_with?('.haml')
 
-  template = File.read(path_name)
-  x = HTParser.new(template, Haml::Options.new)
-  root = x.parse
-  #puts "root=#{root}"
-  values = []
-  accumulate_values(root, values)
-  #puts "orig_values=#{values}"
-  values = reject_paran(break_aound_code_values(values))
+ARGV[2, ARGV.length].each{|file_name|
+  begin
+    puts "file_name=#{file_name} local_name=#{local_name}"
+    dirname = File.dirname(path_name)
+    file_name = File.basename(path_name)
+    file_name_components = file_name.split('.')
+    raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
 
-  #puts "values=#{values}"
+    template = File.read(file_name)
+    x = HTParser.new(template, Haml::Options.new)
+    root = x.parse
+    #puts "root=#{root}"
+    values = []
+    accumulate_values(root, values)
+    #puts "orig_values=#{values}"
+    values = reject_paran(break_aound_code_values(values))
 
-  #if local_name == 'zxx-XX'
-    from_to = process_pseudo_values(values)
-  #else
-  #  from_to = process_values(local_mappings, values, unmapped_words)
-  #  produce_unmapped(unmapped_words)
-  #end
-  #puts from_to
+    #puts "values=#{values}"
 
-  replace_with_translations(template, from_to)
+    #if local_name == 'zxx-XX'
+      from_to = process_pseudo_values(values)
+    #else
+    #  from_to = process_values(local_mappings, values, unmapped_words)
+    #end
+    #puts from_to
 
-  new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{locale_name}.html.haml"
-  #puts new_file_name
-  File.open(new_file_name, 'w') { |file| file.write(template) }
+    replace_with_translations(template, from_to)
+
+    new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{locale_name}.html.haml"
+    #puts new_file_name
+    File.open(new_file_name, 'w') { |file| file.write(template) }
+  rescue => ex
+    ex.backtrace
+  end
 }
 
 produce_unmapped(unmapped_words)
