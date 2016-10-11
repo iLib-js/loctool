@@ -36,46 +36,89 @@ class HTParser < Haml::Parser
 
 end
 
-# assumed one space between stripped?
-def toks_with_n_breaks(markup, stripped, num_breaks)
-  #puts "toks_with_n_breaks caleld with markup=#{markup} stripped=#{stripped} num_breaks=#{num_breaks}"
-  if num_breaks==0
-    if markup.strip.include?(stripped.strip)
-      return [stripped.strip]
+
+def toks_with_n_breaks2(markup, stripped, num_breaks, memoized)
+  puts "toks_with_n_breaks caleld with markup=#{markup} stripped=#{stripped} num_breaks=#{num_breaks}"
+  #sleep(1)
+  mem_key = "#{num_breaks}_#{markup}_#{stripped}"
+  mem = memoized[mem_key]
+  return nil if mem == 'nil'
+  return mem if mem
+
+  if num_breaks == 0
+    if markup.include?(stripped)
+      memoized[mem_key] = [stripped]
+      return [stripped]
     else
+      memoized[mem_key] = 'nil'
       return nil
     end
   end
-  stripped_words = stripped.split(' ').reject{|s| s.strip.empty?}
-  #break and recurse
-  for i in (1..stripped_words.count) do
-    cand = stripped_words[0, i].join(' ')
-    #puts "cand=#{cand}"
+
+  for i in (1..stripped.length) do
+    #puts "i=#{i}"
+    cand = stripped[0,i]
+    puts "cand=#{cand}"
     if markup.include?(cand)
       #found a break. recurse
-      ret = toks_with_n_breaks(markup.gsub(cand, ''), stripped.gsub(cand, ''), num_breaks - 1)
+      ret = toks_with_n_breaks2(markup.gsub(cand, ''), stripped.gsub(cand, ''), num_breaks - 1, memoized)
       if ret
+        memoized[mem_key] = [cand] + ret
         return [cand] + ret
       end
     end
   end
+  memoized[mem_key] = 'nil'
   nil
 end
+
 
 #return array of tokenized strings. Break into as few phrases as possible
 def get_overlap_strings(orig_with_markup, stripped)
   stripped_words = stripped.split(' ').reject{|s| s.empty?}
+  memoized = {}
   for num_breaks in (0..stripped_words.count) do
-    ret = toks_with_n_breaks(orig_with_markup, stripped, num_breaks)
+    ret = toks_with_n_breaks2(orig_with_markup, stripped, num_breaks, memoized)
     return ret if ret
   end
   nil
+end
+
+# new algo: search for markup identified by <, >
+def get_overlap_strings2(orig_with_markup, stripped)
+  # puts "get_overlap_strings2 called with orig_with_markup=#{orig_with_markup} stripped=#{stripped} ol=#{orig_with_markup.length} sl=#{stripped.length} orig_with_markup.last=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
+  return [] if orig_with_markup.nil? || orig_with_markup.length == 0
+  md = /(.*)(<[^>]*>)(.*)/.match(orig_with_markup)
+  if md.nil?
+    if stripped.include?(orig_with_markup)
+      return [orig_with_markup]
+    else
+      return []
+    end
+  end
+  ret = []
+  if md[3].length == 0
+    ret = []
+  elsif stripped.include?(md[3])
+    (0..md.length-1).each{|i| puts "md [#{i}]=#{puts md[i]}\n"}
+    puts "res=#{md[3]}"
+    puts "last-char=#{orig_with_markup[orig_with_markup.length - 1]} ord=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
+    ret = [md[3]]
+  end
+  ret.concat(get_overlap_strings2(md[1], stripped))
 end
 
 def accumulate_values(root, values)
   orig = nil
   if (root.value && root.value[:value])
     orig = root.value[:value]
+    begin
+    if root.value[:parse]
+      orig = YAML.load(orig)
+    end
+    rescue
+      puts "Got YAML error: #{orig}"
+    end
   elsif (root[:type] == :plain && root.value && root.value[:text])
     orig = root.value[:text]
   end
@@ -84,7 +127,12 @@ def accumulate_values(root, values)
     if s == orig
       values << s
     else
-      toks = get_overlap_strings(orig, s)
+      puts "#######get_overlap called on orig=#{orig} s=#{s}"
+      toks = get_overlap_strings2(orig, s)
+      if orig.include?("We will verify your new license and update your profile to start accepting patients i")
+        puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
+        #raise ArgumentError.new('debug')
+      end
       values.concat(toks) if toks
     end
   end
@@ -119,9 +167,17 @@ def process_values(locale_mappings, values, unmapped_words)
 end
 
 def replace_with_translations(template, from_to)
-  from_to.keys.sort{|a| a.length}.reverse.each{|k|
+  from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
+    next if k.include?('@') || k.include?('#{')
     v = from_to[k]
-    template.gsub!(k, v)
+    puts "translating=#{k} WITH v=#{v}"
+    res = template.gsub!(k, v)
+    if res.nil?
+      puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
+      puts "include=#{template.include?(k)}"
+      puts "template=#{template}"
+      #raise ArgumentError.new("stop")
+    end
   }
   template
 end
@@ -166,7 +222,9 @@ ARGV[2, ARGV.length].each{|path_name|
   values = []
   accumulate_values(root, values)
 
-  #if locale_name == 'zxx-XX'
+  #puts "values=#{values}"
+
+  #if local_name == 'zxx-XX'
     from_to = process_pseudo_values(values)
   #else
   #  from_to = process_values(local_mappings, values, unmapped_words)
