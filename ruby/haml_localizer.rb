@@ -114,7 +114,7 @@ def reject_paran(values)
 end
 
 def reject_special_words(values)
-  values.reject{|w| w.include?('__') || !w.include?(' ')} #skip or, and, which are common in method names
+  values.reject{|w| w.include?('__')} #skip or, and, which are common in method names
 end
 
 
@@ -219,12 +219,12 @@ end
 def replace_with_translations(template, from_to)
   from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
     next if k.include?('@') || k.include?('#{')
-    next if !k.include?(' ') # there are too many cases where it is substituring method calls and variable names. Skip if its not a sentence
+    #next if !k.include?(' ') # there are too many cases where it is substituring method calls and variable names. Skip if its not a sentence
     v = from_to[k]
     #puts "translating=#{k} WITH v=#{v}"
     #raise ArgumentError.new('test')
-    #res = template.gsub!(/(?<!_).*#{Regexp.escape(k)}.*(?!_)/, v)
-    res = template.gsub!(k, v)
+    res = template.gsub!(/\b#{Regexp.escape(k)}/, v)
+    #res = template.gsub!(k, v)
     if res.nil?
       #puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
       #puts "include=#{template.include?(k)}"
