@@ -113,6 +113,10 @@ def reject_paran(values)
   values.reject{|c| ['(', ')'].include?(c)}
 end
 
+def reject_special_words(values)
+  values.reject{|w| w.include?('__') || !w.include?(' ')} #skip or, and, which are common in method names
+end
+
 
 # new algo: search for markup identified by <, >
 def get_overlap_strings2(orig_with_markup, stripped)
@@ -132,7 +136,7 @@ def get_overlap_strings2(orig_with_markup, stripped)
     end
   end
   ret = []
-  puts "md[1]=#{md[1]}"
+  #puts "md[1]=#{md[1]}"
   if md[3].length == 0
     ret = []
   elsif stripped.include?(md[3])
@@ -151,7 +155,7 @@ def accumulate_values(root, values)
     if root.value[:parse] && root.value[:name] == 'td'
       orig = nil
     elsif root.value[:parse]
-      if orig.include?('[:')
+      if orig.include?('[:') || orig.include?('__')
         # assumed this entire node is piece of code. skip it
         orig = nil
       else
@@ -216,15 +220,18 @@ end
 def replace_with_translations(template, from_to)
   from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
     next if k.include?('@') || k.include?('#{')
+    next if !k.include?(' ') # there are too many cases where it is substituring method calls and variable names. Skip if its not a sentence
     v = from_to[k]
     #puts "translating=#{k} WITH v=#{v}"
+    #raise ArgumentError.new('test')
+    #res = template.gsub!(/(?<!_).*#{Regexp.escape(k)}.*(?!_)/, v)
     res = template.gsub!(k, v)
-    #if res.nil?
+    if res.nil?
       #puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
       #puts "include=#{template.include?(k)}"
       #puts "template=#{template}"
       #raise ArgumentError.new("stop")
-    #end
+    end
   }
   template
 end
@@ -267,11 +274,11 @@ ARGV[2, ARGV.length].each{|path_name|
     template = File.read(path_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-    puts "root=#{root}"
+    #puts "root=#{root}"
     values = []
     accumulate_values(root, values)
-    puts "orig_values=#{values}"
-    values = reject_paran(break_aound_code_values(values))
+    #puts "orig_values=#{values}"
+    values = reject_special_words(reject_paran(break_aound_code_values(values)))
 
     puts "values=#{values}"
 
@@ -288,6 +295,7 @@ ARGV[2, ARGV.length].each{|path_name|
     #puts new_file_name
     File.open(new_file_name, 'w') { |file| file.write(template) }
   rescue => ex
+    puts "#{ex}"
     puts ex.backtrace
   end
 }
