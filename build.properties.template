@@ -5,4 +5,5 @@
 # on your machine to match the changes.
 
 JSDOCDIR=tools/jsdoc_toolkit-2.4.0/jsdoc-toolkit
-nodeunit=../node_modules/nodeunit
+nodeunit=${build.base}/../node_modules/nodeunit
+node=/usr/local/Cellar/node/6.3.0/

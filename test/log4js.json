@@ -1,0 +1,24 @@
+{
+	"appenders": [
+	    { 
+	    	"type": "console",
+	    	"layout": {
+				"type": "pattern",
+				"pattern": "%r %p %c: %m"
+			}
+		}
+	],
+	"levels": {
+		"[all]": "INFO",
+		"loctool.lib.DBTranslationSet": "TRACE",
+		"loctool.lib.JavaFile": "INFO",
+		"loctool.lib.JavaFileType": "INFO",
+		"loctool.lib.ResourceString": "TRACE",
+		"loctool.lib.ResourceArray": "TRACE",
+		"loctool.lib.ResourcePlural": "TRACE",
+		"loctool.lib.TranslationSet": "TRACE",
+		"loctool.lib.AndroidLayoutFile": "TRACE",
+		"loctool.lib.AndroidLayoutFileType": "TRACE",
+		"loctool.loctool":  "INFO"
+	}
+}

@@ -27,11 +27,11 @@ import java.util.Map;
  *
  */
 public class IResourceBundle {
-	private static final String HTML_TYPE 				= "html";
-	private static final String XML_TYPE 				= "xml";
-	private static final String RAW_TYPE 				= "raw";
-	private static final String PSEUDO_JSON				= "pseudomap.json";
-	
+	public static final String HTML_TYPE 				= "html";
+	public static final String XML_TYPE 				= "xml";
+	public static final String RAW_TYPE 				= "raw";
+	public static final String JAVA_TYPE 				= "java";
+		
 	protected static volatile Locale sourceLocale		= new Locale("en-US");
 
 	protected Class R;
@@ -501,6 +501,24 @@ public class IResourceBundle {
 						}
 						if (i < source.length()) {
 							ret.append(source.charAt(i++));
+						}
+					}
+				}
+				if (type.equals(JAVA_TYPE)) {
+					if (i < source.length()) { 
+						if (source.charAt(i) == '\\') {
+							if (source.charAt(i+1) == 'u') {
+								// unicode character
+								if (i+5 < source.length()) {
+									ret.append(source.substring(i, i+6));
+									i += 6;
+								}
+							} else {
+								// non-unicode character, so just skip the next character instead of pseudo-localizing it
+								ret.append('\\');
+								ret.append(source.charAt(i+1));
+								i += 2;
+							}
 						}
 					}
 				}

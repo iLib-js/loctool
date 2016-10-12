@@ -14,81 +14,153 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 	<!-- (and without typing -D each time it compiles it)                    -->
 	<property file="build.properties"/>
 	<property file="version.properties"/>
-	
+
 	<!-- Properties that can be overridden -->
 	<!-- directories -->
 	<property name="build.base"						value="${basedir}"/>
 	<property name="build.lib"						value="${build.base}/lib"/>
 	<property name="build.test"						value="${build.base}/test"/>
 	<property name="build.jsdoc"                    value="${build.base}/jsdoc"/>
-	
-    <target name="clean" description="Remove all generated files to start from scratch">
-        <delete dir="${build.jsdoc}"/>
-    </target>
-    
-    <target name="prepare" description="Prepare all directories that are needed before the project can be built">
-    </target>
 
-    <target name="testjsdoc" description="test whether or not the jsdocs need to be rebuilt">
-        <uptodate
+	<target name="clean" description="Remove all generated files to start from scratch">
+		<delete dir="${build.jsdoc}"/>
+	</target>
+
+	<target name="prepare" description="Prepare all directories that are needed before the project can be built">
+	</target>
+
+	<target name="testjsdoc" description="test whether or not the jsdocs need to be rebuilt">
+		<uptodate
                 property="jsdoc.not.needed"
                 targetfile="${build.jsdoc}/index.html">
-            <srcfiles dir="${build.lib}" includes="**/*.js"/>
-        </uptodate>
-    </target>
+			<srcfiles dir="${build.lib}" includes="**/*.js"/>
+		</uptodate>
+	</target>
 
-    <target name="doc"
+	<target name="doc"
             depends="prepare,testjsdoc"
             description="creates jsdoc for all local javascript files in this project"
             unless="jsdoc.not.needed">
-        <delete dir="${build.jsdoc}"/>
-        <mkdir dir="${build.jsdoc}"/>
-        <echo>Executing jsdoc ... </echo>
-        <java dir="${build.base}" jar="${JSDOCDIR}/jsrun.jar" fork="true">
-            <jvmarg value="-Djsdoc.dir=${JSDOCDIR}"/>
-            <jvmarg value="-Djsdoc.template.dir=${JSDOCDIR}/templates/jsdoc"/>
-            <jvmarg value="-Xmx1024m"/>
-            <jvmarg value="-XX:MaxPermSize=96m"/>
-            <arg value="${JSDOCDIR}/app/run.js"/>
-            <arg value="--directory=${build.jsdoc}"/>
-            <arg value="--recurse=100"/>
-            <arg value="--encoding=utf-8"/>
-            <arg value="${build.lib}"/>
-        </java>
-    </target>
+		<delete dir="${build.jsdoc}"/>
+		<mkdir dir="${build.jsdoc}"/>
+		<echo>Executing jsdoc ... </echo>
+		<java dir="${build.base}" jar="${JSDOCDIR}/jsrun.jar" fork="true">
+			<jvmarg value="-Djsdoc.dir=${JSDOCDIR}"/>
+			<jvmarg value="-Djsdoc.template.dir=${JSDOCDIR}/templates/jsdoc"/>
+			<jvmarg value="-Xmx1024m"/>
+			<jvmarg value="-XX:MaxPermSize=96m"/>
+			<arg value="${JSDOCDIR}/app/run.js"/>
+			<arg value="--directory=${build.jsdoc}"/>
+			<arg value="--recurse=100"/>
+			<arg value="--encoding=utf-8"/>
+			<arg value="${build.lib}"/>
+		</java>
+	</target>
 
 	<macrodef name="run">
 		<attribute name="executable"/>
-        <attribute name="script"/>
-        <attribute name="args"/>
+		<attribute name="script"/>
+		<attribute name="args"/>
 		<attribute name="dir"/>
 		<sequential>
 			<exec osfamily="unix" executable="@{executable}" dir="@{dir}" failifexecutionfails="true" failonerror="true">
+				<env key="PATH" path="${node}/bin:${env.PATH}"/>
+				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
 				<arg line="@{args}"/>
 				<arg line="@{script}"/>
 			</exec>
 			<exec osfamily="windows" executable="@{executable}.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
+				<env key="PATH" path="${node}/bin;${env.PATH}"/>
+				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
 				<arg line="@{args}"/>
 				<arg line="@{script}"/>
 			</exec>
 		</sequential>
 	</macrodef>
 
-    <target name="test.resourcestring" description="Run only the resource string tests">
-        <run script="${build.test}/testResourceString.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
-    </target>
-    
-    <target name="test.resourcearray" description="Run only the resource array tests">
-        <run script="${build.test}/testResourceArray.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
-    </target>
-    
+	<target name="test.resourcestring" description="Run only the resource string tests">
+		<run script="${build.test}/testResourceString.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+	</target>
+
+	<target name="test.resourcearray" description="Run only the resource array tests">
+		<run script="${build.test}/testResourceArray.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+	</target>
+
+	<target name="test.resourceplural" description="Run only the plural resource tests">
+		<run script="${build.test}/testResourcePlural.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
+	</target>
+
 	<target name="test.translationset" description="Run only the translation set tests">
 		<run script="${build.test}/testTranslationSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
-	
+
 	<target name="test.set" description="Run only the set tests">
 		<run script="${build.test}/testSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
-	
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray"></target>
+
+	<target name="test.javafile" description="Run only the java file tests">
+		<run script="${build.test}/testJavaFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="test.dbtranslationset" description="Run only the database translation set tests">
+		<run script="${build.test}/testDBTranslationSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="test.androidlayoutfile" description="Run only the Android layout file tests">
+		<run script="${build.test}/testAndroidLayoutFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile">
+	</target>
+
+	<macrodef name="runsql">
+		<attribute name="file"/>
+		<attribute name="username"/>
+		<attribute name="password"/>
+		<attribute name="host"/>
+		<attribute name="database"/>
+		<sequential>
+			<exec osfamily="unix" executable="mysql" dir="${build.base}/db" failifexecutionfails="true" failonerror="true" input="@{file}">
+				<arg line="-u" />
+				<arg line="@{username}" />
+				<arg line="@{password}" />
+				<arg line="-v" />
+				<arg line="--host=@{host}" />
+				<arg line="@{database}" />
+			</exec>
+			<exec osfamily="mac" executable="mysql" dir="${build.base}/db" failifexecutionfails="true" failonerror="true" input="@{username}">
+				<arg line="-u" />
+				<arg line="@{username}" />
+				<arg line="@{password}" />
+				<arg line="-v" />
+				<arg line="--host=@{host}" />
+				<arg line="@{database}" />
+			</exec>
+			<exec osfamily="windows" executable="mysql.exe" dir="${build.base}/db" failifexecutionfails="true" failonerror="true" input="@{file}">
+				<arg line="-u" />
+				<arg line="@{username}" />
+				<arg line="@{password}" />
+				<arg line="-v" />
+				<arg line="--host=@{host}" />
+				<arg line="@{database}" />
+			</exec>
+		</sequential>
+	</macrodef>
+
+	<target name="createdb" description="Create the data base for the development environment">
+		<runsql username="root" password="-p" file="${build.base}/db/createdb.sql" host="localhost" database="" />
+	</target>
+
+	<target name="create.schema" description="Create the schema in the data base for the development environment">
+		<runsql username="ht" password="--password=dYw@j45XKk#$" file="${build.base}/db/createschema.sql" host="localhost" database="translations" />
+	</target>
+
+	<target name="cleardb" description="Initialize the data base for the development environment">
+		<runsql username="ht" 
+            password="--password=dYw@j45XKk#$" 
+            file="${build.base}/db/cleardb.sql"
+            host="localhost"
+            database="translations"/>
+	</target>
+
 </project>

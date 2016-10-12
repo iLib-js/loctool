@@ -368,4 +368,48 @@ public class IResourceBundleTest extends TestCase
 
 		assertEquals("俄尼个阿个俄们俄尼推 琶夥意尼推!",resBundle.getString("Engagement point!").toString());
 	}
+	
+	public void testGetStringPseudoTypeJava()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		assertNotNull(resBundle);
+
+		assertEquals("àçţüàľ šţàţë fõŕ Ŵífí: {0}76543210", resBundle.getStringPseudo("actual state for Wifi: {0}").toString());
+	}
+	
+	public void testGetStringPseudoTypeJavaSkipEscapedUnicode()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		 IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		assertNotNull(resBundle);
+
+		assertEquals("àçţüàľ šţàţë fõŕ Ŵífí: \u00A076543210", resBundle.getStringPseudo("actual state for Wifi: \u00A0").toString());
+	}
+	
+	public void testGetStringPseudoTypeJavaSkipReplacementParams()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		assertNotNull(resBundle);
+
+		assertEquals("àçţüàľ šţàţë fõŕ Ŵífí: {foobar}9876543210", resBundle.getStringPseudo("actual state for Wifi: {foobar}").toString());
+	}
+	
+	public void testGetStringPseudoTypeJavaSkipHTML()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		assertNotNull(resBundle);
+
+		assertEquals("àçţüàľ šţàţë fõŕ Ŵífí: {foobar}9876543210", resBundle.getStringPseudo("actual state for Wifi: {foobar}").toString());
+	}
 }
