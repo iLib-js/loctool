@@ -256,15 +256,15 @@ local_mappings = nil
 
 unmapped_words = []
 
-ARGV[2, ARGV.length].each{|file_name|
+ARGV[2, ARGV.length].each{|path_name|
+  puts "file_name=#{path_name} locale_name=#{locale_name}"
   begin
-    puts "file_name=#{file_name} local_name=#{local_name}"
     dirname = File.dirname(path_name)
     file_name = File.basename(path_name)
     file_name_components = file_name.split('.')
     raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
 
-    template = File.read(file_name)
+    template = File.read(path_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
     puts "root=#{root}"
@@ -288,7 +288,7 @@ ARGV[2, ARGV.length].each{|file_name|
     #puts new_file_name
     File.open(new_file_name, 'w') { |file| file.write(template) }
   rescue => ex
-    ex.backtrace
+    puts ex.backtrace
   end
 }
 
