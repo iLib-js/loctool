@@ -7,15 +7,24 @@
  * This code is intended to be run under node.js
  */
 var fs = require('fs');
+var path = require('path');
 var util = require('util');
+var log4js = require("log4js");
+var ProjectFactory = require("./lib/ProjectFactory.js");
+// var Git = require("simple-git");
 
-var AndroidProject = require("./lib/AndroidProject.js");
+log4js.configure(path.dirname(module.filename) + '/log4js.json')
+
+var logger = log4js.getLogger("loctool.loctool");
+var pull = false;
 
 function usage() {
-	console.log("Usage: loctool [-h] [root dir]\n" +
+	console.log("Usage: loctool [-h] [-p] [root dir]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
+		"-p or --pull\n" +
+		"  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
 		"root dir\n" +
 		"  directory containing the git projects with the source code. Default: current dir.\n");
 	process.exit(1);
@@ -24,44 +33,48 @@ function usage() {
 process.argv.forEach(function (val, index, array) {
 	if (val === "-h" || val === "--help") {
 		usage();
+	} else if (val === "-p" || val === "--pull") {
+		pull = true;
 	}
 });
 
 var rootDir = process.argv.length > 2 ? process.argv[2] : ".";
 
-console.log("loctool - extract strings from source code.\n");
+logger.info("loctool - extract strings from source code.\n");
 
-console.log("Searching root: " + rootDir + "\n");
+logger.info("Searching root: " + rootDir + "\n");
 
 if (!fs.existsSync(rootDir)) {
-	util.error("Could not access root dir " + rootDir);
+	logger.error("Could not access root dir " + rootDir);
 	usage();
 }
 
-var projectTypes = {
-	"android": AndroidProject
-};
 var resources;
 var project;
+var fileTypes;
 
 function walk(dir, project) {
-	//console.log(dir);
+	logger.trace("Searching " + dir);
 	
-	var results = [], projectRoot = false,
-		fileTypes;
+	var results = [], projectRoot = false;
 	
-	var path = dir + "/project.json";
-	if (fs.existsSync(path)) {
-		var data = fs.readFileSync(path, 'utf8');
-		if (data.length > 0) {
-			var projectProps = JSON.parse(data);
-			console.log("project type: " + projectProps.projectType);
-			var projectType = projectTypes[projectProps.projectType];
-			project = new projectType(projectProps, dir);
-			console.log("loaded project " + projectProps.name);
+	if (!project) {
+		project = ProjectFactory(dir);
+		if (project) {
 			fileTypes = project.getFileTypes();
+			projectRoot = true;
+			logger.info("-------------------------------------------------------------------------------------------");
+			logger.info('Project "' + project.options.name + '", type: ' + project.options.projectType);
+			logger.trace("Project: ");
+			logger.trace(project);
+			if (pull) {
+				/*
+				logger.info("Doing git pull to get the latest before scanning this dir.");
+				var git = new Git(dir);
+				git.pull();
+				*/
+			}
 		}
-		projectRoot = true;
 	}
 	
 	var list = fs.readdirSync(dir);
@@ -70,43 +83,73 @@ function walk(dir, project) {
 		var stat = fs.statSync(path);
 		if (stat && stat.isDirectory()) {
 			if (project) {
-				// console.log("There is a project. Checking " + path);
-				if (project.excludes) {
-					//console.log("There are excludes ");
-					if (project.excludes.indexOf(path) === -1) {
-						//console.log("Not excluded.");
+				logger.info(path + "...");
+				if (project.options.excludes) {
+					logger.trace("There are excludes ");
+					if (project.options.excludes.indexOf(path) === -1) {
+						logger.trace("Not excluded.");
 						walk(path, project);
+					} else {
+						logger.trace("Excluded");
 					}
 				} else {
-					//console.log("Neither includes or excludes");
+					logger.trace("Neither includes or excludes.");
 					walk(path, project);
 				}
 			} else {
+			    logger.trace("found a dir");
 				walk(path, project);
 			}
 		} else {
 			if (fileTypes) {
-				for (var i = 0; i < fileTypes.length; i++) {
-					if (fileTypes[i].handles(path)) {
+				logger.trace("fileTypes.length is " + fileTypes.length);
+			    for (var i = 0; i < fileTypes.length; i++) {
+			    	logger.trace("Checking if " + fileTypes[i].name() + " handles " + path);
+	                if (fileTypes[i].handles(path)) {
+	                	logger.info("  " + fileTypes[i].name() + ": " + path);
 						var file = fileTypes[i].newFile(path);
 						file.extract();
+						fileTypes[i].addSet(file.getTranslationSet());
 					}
 				}
+			} else {
+				// no file types to check?
+				logger.trace("no file types");
 			}
 		}
 	});
 
 	if (projectRoot) {
 		for (var i = 0; i < fileTypes.length; i++) {
-			fileTypes[i].collect();
-			fileTypes[i].generatePseudo();
-			fileTypes[i].write();
+			//fileTypes[i].collect(function() {
+				fileTypes[i].generatePseudo();
+				fileTypes[i].write();
+			//}.bind(this));
 		}
+		
+		for (var i = 0; i < fileTypes.length; i++) {
+			fileTypes[i].close();
+		}
+
+		project = undefined;
+		fileTypes = undefined;
+		
 	}
 	return results;
 }
 
-walk(rootDir, undefined);
+try {
+	walk(rootDir, undefined);
+} catch (e) {
+	logger.error("caught exception: " + e);
+	logger.error(e.stack);
+	if (fileTypes) {
+		for (var i = 0; i < fileTypes.length; i++) {
+			fileTypes[i].close();
+		}
+	}
+}
+logger.info("Done");
 
 /*
 var obj = {};

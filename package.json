@@ -35,13 +35,12 @@
         "type": "git",
         "url": ""
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": ""
-        }
-    ],
     "engines": {
         "nodejs": "<= 0.10.*"
-    }
+    },
+    "dependencies": [
+    	"ilib",
+    	"xml2json",
+    	"nodeunit"
+    ]
 }
