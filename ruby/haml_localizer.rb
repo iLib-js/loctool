@@ -227,7 +227,8 @@ def replace_with_translations(template, from_to)
     #puts "translating=#{k} WITH v=#{v}"
     #raise ArgumentError.new('test')
 
-    res = template.gsub(/\b(?<![\/:|])#{Regexp.escape(k)}(?![\.])/, v) # match starting with word boundary and doesn't have / | : right before k
+    res = template.gsub!(/\b(?<![\/:_|])#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
+    #res = template.gsub!(/\b#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(k, v)
     if res.nil?
       #puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
