@@ -176,13 +176,13 @@ def accumulate_values(root, values)
   end
   if orig && orig.is_a?(String)
     s = Sanitize.clean(orig)
-    if s == orig
-      values << s
+    if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
+      values << s.gsub(/[^[:print:]]/ , '')
     else
       toks = get_overlap_strings2(orig, s)
-      if orig.include?("A doctor’s DocScore is a measure of their knowledge, trust,")
-        #puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
-        raise ArgumentError.new('debug')
+      if orig.include?("Answers served")
+        puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
+        #raise ArgumentError.new('debug')
       end
       values.concat(toks) if toks
     end
