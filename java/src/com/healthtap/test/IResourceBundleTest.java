@@ -402,7 +402,9 @@ public class IResourceBundleTest extends TestCase
 		assertEquals("àçţüàľ šţàţë fõŕ Ŵífí: {foobar}9876543210", resBundle.getStringPseudo("actual state for Wifi: {foobar}").toString());
 	}
 	
-	public void testGetStringPseudoTypeJavaSkipHTML()
+	/*
+	 Do we even need this?
+	public void testGetStringPseudoTypeJavaSkipHTMLTags()
 	{
 		final Locale locale = Locale.forLanguageTag("de-DE");
 		MockResources res = new MockResources(locale);
@@ -410,6 +412,57 @@ public class IResourceBundleTest extends TestCase
 		resBundle.setType(IResourceBundle.JAVA_TYPE);
 		assertNotNull(resBundle);
 
-		assertEquals("àçţüàľ šţàţë fõŕ Ŵífí: {foobar}9876543210", resBundle.getStringPseudo("actual state for Wifi: {foobar}").toString());
+		assertEquals("àçţüàľ <span class=\"foo\">šţàţë</span> fõŕ Ŵífí: {foobar}9876543210", resBundle.getStringPseudo("actual <span class=\"foo\">state</span> for Wifi: {foobar}").toString());
+	}
+	*/
+	
+	public void testGetStringPseudoTypeJavaSkipPercentReplacements()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		assertNotNull(resBundle);
+
+		assertEquals("àçţüàľ %s 43210", resBundle.getStringPseudo("actual %s ").toString());
+		assertEquals("àçţüàľ %b 43210", resBundle.getStringPseudo("actual %b ").toString());
+		assertEquals("àçţüàľ %h 43210", resBundle.getStringPseudo("actual %h ").toString());
+		assertEquals("àçţüàľ %c 43210", resBundle.getStringPseudo("actual %c ").toString());
+		assertEquals("àçţüàľ %d 43210", resBundle.getStringPseudo("actual %d ").toString());
+		assertEquals("àçţüàľ %o 43210", resBundle.getStringPseudo("actual %o ").toString());
+		assertEquals("àçţüàľ %x 43210", resBundle.getStringPseudo("actual %x ").toString());
+		assertEquals("àçţüàľ %e 43210", resBundle.getStringPseudo("actual %e ").toString());
+		assertEquals("àçţüàľ %f 43210", resBundle.getStringPseudo("actual %f ").toString());
+		assertEquals("àçţüàľ %g 43210", resBundle.getStringPseudo("actual %g ").toString());
+		assertEquals("àçţüàľ %a 43210", resBundle.getStringPseudo("actual %a ").toString());
+		assertEquals("àçţüàľ %t 43210", resBundle.getStringPseudo("actual %t ").toString());
+		assertEquals("àçţüàľ %% 43210", resBundle.getStringPseudo("actual %% ").toString());
+		assertEquals("àçţüàľ %n 43210", resBundle.getStringPseudo("actual %n ").toString());
+		
+		assertEquals("àçţüàľ %S 43210", resBundle.getStringPseudo("actual %S ").toString());
+		assertEquals("àçţüàľ %B 43210", resBundle.getStringPseudo("actual %B ").toString());
+		assertEquals("àçţüàľ %H 43210", resBundle.getStringPseudo("actual %H ").toString());
+		assertEquals("àçţüàľ %C 43210", resBundle.getStringPseudo("actual %C ").toString());
+		assertEquals("àçţüàľ %X 43210", resBundle.getStringPseudo("actual %X ").toString());
+		assertEquals("àçţüàľ %E 43210", resBundle.getStringPseudo("actual %E ").toString());
+		assertEquals("àçţüàľ %G 43210", resBundle.getStringPseudo("actual %G ").toString());
+		assertEquals("àçţüàľ %A 43210", resBundle.getStringPseudo("actual %A ").toString());
+		assertEquals("àçţüàľ %T 43210", resBundle.getStringPseudo("actual %T ").toString());
+		assertEquals("àçţüàľ %% 43210", resBundle.getStringPseudo("actual %% ").toString());
+		
+		assertEquals("àçţüàľ %2$s 543210", resBundle.getStringPseudo("actual %2$s ").toString());
+		assertEquals("àçţüàľ %-d 43210", resBundle.getStringPseudo("actual %-d ").toString());
+		assertEquals("àçţüàľ %#d 43210", resBundle.getStringPseudo("actual %#d ").toString());
+		assertEquals("àçţüàľ %+d 43210", resBundle.getStringPseudo("actual %+d ").toString());
+		assertEquals("àçţüàľ % d 43210", resBundle.getStringPseudo("actual % d ").toString());
+		assertEquals("àçţüàľ %02d 543210", resBundle.getStringPseudo("actual %02d ").toString());
+		assertEquals("àçţüàľ %.2d 543210", resBundle.getStringPseudo("actual %.2d ").toString());
+		assertEquals("àçţüàľ %(2d 543210", resBundle.getStringPseudo("actual %(2d ").toString());
+		assertEquals("àçţüàľ %4$-2.2d 76543210", resBundle.getStringPseudo("actual %4$-2.2d ").toString());
+		
+		assertEquals("àçţüàľ %Ň 43210", resBundle.getStringPseudo("actual %N ").toString());
+		assertEquals("àçţüàľ %F 43210", resBundle.getStringPseudo("actual %F ").toString());
+		assertEquals("àçţüàľ %Ð 43210", resBundle.getStringPseudo("actual %D ").toString());
+		assertEquals("àçţüàľ %Ø 43210", resBundle.getStringPseudo("actual %O ").toString());
 	}
 }
