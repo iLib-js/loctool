@@ -280,7 +280,7 @@ ARGV[2, ARGV.length].each{|path_name|
     #puts "orig_values=#{values}"
     values = reject_special_words(reject_paran(break_aound_code_values(values)))
 
-    puts "values=#{values}"
+    #puts "values=#{values}"
 
     #if local_name == 'zxx-XX'
       from_to = process_pseudo_values(values)
