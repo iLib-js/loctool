@@ -150,7 +150,9 @@ end
 
 def accumulate_values(root, values)
   orig = nil
-  if (root.value && root.value[:value])
+  if root[:type] == :silent_script
+    #skip
+  elsif (root.value && root.value[:value])
     orig = root.value[:value]
     if root.value[:parse] && root.value[:name] == 'td'
       orig = nil
@@ -225,7 +227,7 @@ def replace_with_translations(template, from_to)
     #puts "translating=#{k} WITH v=#{v}"
     #raise ArgumentError.new('test')
 
-    res = template.gsub!(/\b(?<![\/:])#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
+    res = template.gsub(/\b(?<![\/:|])#{Regexp.escape(k)}(?![\.])/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(k, v)
     if res.nil?
       #puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
