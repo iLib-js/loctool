@@ -278,7 +278,7 @@ ARGV[2, ARGV.length].each{|path_name|
     template = File.read(path_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-    puts "root=#{root}"
+    #puts "root=#{root}"
     values = []
     accumulate_values(root, values)
     puts "orig_values=#{values}"
