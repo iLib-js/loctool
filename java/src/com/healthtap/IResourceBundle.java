@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.regex.*;
 
 /**
  * A class that represents a resource bundle for Android with methods 
@@ -273,6 +274,8 @@ public class IResourceBundle {
 		PLACEHOLDER
 	};
 
+	private Pattern percentPattern = Pattern.compile("%(\\d+\\$)?([\\-#\\+ 0,\\(])?(\\d+)?(\\.\\d+)?[bBhHsScCdoxXeEfgGaAtT%n]");
+	
 	/**
 	 * Construct a new IResourceBundle and load in the Java
 	 * ResourceBundle for delegation.
@@ -518,6 +521,15 @@ public class IResourceBundle {
 								ret.append('\\');
 								ret.append(source.charAt(i+1));
 								i += 2;
+							}
+						} else if (source.charAt(i) == '%') {
+							Matcher m = percentPattern.matcher(source.substring(i));
+							if (m.find()) {
+								ret.append(m.group(0));
+								i += m.end() - m.start();
+							} else {
+								ret.append('%');
+								i++;
 							}
 						}
 					}
