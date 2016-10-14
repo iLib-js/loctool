@@ -200,7 +200,8 @@ module.exports = {
         test.ok(rs);
         
         var rb = new ResBundle({
-            locale: "zxx-XX" // the pseudo-locale!
+            locale: "zxx-XX", // the pseudo-locale!
+            type: "c"
         });
 
         var rs2 = rs.generatePseudo("de-DE", rb);
@@ -221,13 +222,60 @@ module.exports = {
         test.ok(rs);
         
         var rb = new ResBundle({
-            locale: "zxx-XX" // the pseudo-locale!
+            locale: "zxx-XX", // the pseudo-locale!
+            type: "c"
         });
 
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
         test.equal(rs2.getSource(), "Ťĥíš íš à ţëšţ");
+        
+        test.done();
+    },
+
+    testResourceStringGeneratePseudoSkipPercents: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            key: "asdf",
+            source: "This %2$-2.2s is a %s test",
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        var rb = new ResBundle({
+        	type: "c",
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        var rs2 = rs.generatePseudo("de-DE", rb);
+
+        test.ok(rs2);
+        test.equal(rs2.getSource(), "Ťĥíš %2$-2.2s íš à %s ţëšţ");
+        
+        test.done();
+    },
+
+    testResourceStringGeneratePseudoSkipPercentsAndReplacements: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            key: "asdf",
+            source: "This %2$-2.2s is a %s {foobar} test",
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        var rb = new ResBundle({
+        	type: "c",
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        var rs2 = rs.generatePseudo("de-DE", rb);
+
+        test.ok(rs2);
+        test.equal(rs2.getSource(), "Ťĥíš %2$-2.2s íš à %s {foobar} ţëšţ");
         
         test.done();
     },
@@ -243,6 +291,7 @@ module.exports = {
         test.ok(rs);
         
         var rb = new ResBundle({
+        	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
         });
 
