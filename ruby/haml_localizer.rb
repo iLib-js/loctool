@@ -304,8 +304,10 @@ ARGV[2, ARGV.length].each{|path_name|
     #puts new_file_name
     File.open(new_file_name, 'w') { |file| file.write(template) }
   rescue => ex
+    puts path_name
     puts "#{ex}"
     puts ex.backtrace
+    break
   end
 }
 
