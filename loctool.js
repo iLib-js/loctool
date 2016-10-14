@@ -106,7 +106,7 @@ function walk(dir, project) {
 			    for (var i = 0; i < fileTypes.length; i++) {
 			    	logger.trace("Checking if " + fileTypes[i].name() + " handles " + path);
 	                if (fileTypes[i].handles(path)) {
-	                	logger.info("  " + fileTypes[i].name() + ": " + path);
+	                	logger.info("    " + path);
 						var file = fileTypes[i].newFile(path);
 						file.extract();
 						fileTypes[i].addSet(file.getTranslationSet());

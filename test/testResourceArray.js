@@ -242,6 +242,7 @@ module.exports = {
         test.ok(ra);
         
         var rb = new ResBundle({
+        	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
         });
 
@@ -254,7 +255,7 @@ module.exports = {
     },
 
     testResourceArrayGeneratePseudoRightString: function(test) {
-        test.expect(6);
+        test.expect(8);
 
         var ra = new ResourceArray({
             key: "asdf",
@@ -264,6 +265,7 @@ module.exports = {
         test.ok(ra);
         
         var rb = new ResBundle({
+        	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
         });
 
@@ -277,6 +279,39 @@ module.exports = {
         test.ok(strings);
         test.equal(strings.length, 3);
         test.equal(strings[0], "Ťĥíš íš à ţëšţ");
+        test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ");
+        test.equal(strings[2], "Ťĥíš íš ñõţ");
+        
+        test.done();
+    },
+
+    testResourceArrayGeneratePseudoSkipPercents: function(test) {
+        test.expect(8);
+
+        var ra = new ResourceArray({
+            key: "asdf",
+            array: ["This is a %s test", "This is also a %f test", "This is not %4$-2.2d"],
+            pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+        
+        var rb = new ResBundle({
+        	type: "c",
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        var ra2 = ra.generatePseudo("de-DE", rb);
+
+        test.ok(ra2);
+        test.ok(ra2.getLocale(), "de-DE");
+        
+        var strings = ra2.getArray();
+        
+        test.ok(strings);
+        test.equal(strings.length, 3);
+        test.equal(strings[0], "Ťĥíš íš à %s ţëšţ");
+        test.equal(strings[1], "Ťĥíš íš àľšõ à %f ţëšţ");
+        test.equal(strings[2], "Ťĥíš íš ñõţ %4$-2.2d");
         
         test.done();
     },
@@ -292,6 +327,7 @@ module.exports = {
         test.ok(ra);
         
         var rb = new ResBundle({
+        	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
         });
 

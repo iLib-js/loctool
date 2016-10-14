@@ -14,8 +14,8 @@ module.exports = {
     testResourcePluralConstructorEmpty: function(test) {
         test.expect(1);
 
-        var rs = new ResourcePlural();
-        test.ok(rs);
+        var rp = new ResourcePlural();
+        test.ok(rp);
         
         test.done();
     },
@@ -23,8 +23,8 @@ module.exports = {
 	testResourcePluralConstructorNoProps: function(test) {
 	    test.expect(1);
 	
-	    var rs = new ResourcePlural({});
-	    test.ok(rs);
+	    var rp = new ResourcePlural({});
+	    test.ok(rp);
 	    
 	    test.done();
 	},
@@ -32,7 +32,7 @@ module.exports = {
     testResourcePluralConstructor: function(test) {
         test.expect(1);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
         	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
@@ -43,7 +43,7 @@ module.exports = {
         		"many": "This is the many case"
         	}
         });
-        test.ok(rs);
+        test.ok(rp);
         
         test.done();
     },
@@ -51,7 +51,7 @@ module.exports = {
     testResourcePluralConstructorRightContents: function(test) {
         test.expect(5);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
         	key: "asdf",
         	locale: "de-DE",
         	pathName: "a/b/c.java",
@@ -62,17 +62,17 @@ module.exports = {
         		"many": "This is the many case"
         	}
         });
-        test.ok(rs);
+        test.ok(rp);
     
-        test.equal(rs.getKey(), "asdf");
-        test.deepEqual(rs.getPlurals(), {
+        test.equal(rp.getKey(), "asdf");
+        test.deepEqual(rp.getPlurals(), {
     		"one": "This is singular",
     		"two": "This is double",
     		"few": "This is the few case",
     		"many": "This is the many case"
         });
-        test.equal(rs.locale, "de-DE");
-        test.equal(rs.pathName, "a/b/c.java");
+        test.equal(rp.locale, "de-DE");
+        test.equal(rp.pathName, "a/b/c.java");
         
         test.done();
     },
@@ -80,7 +80,7 @@ module.exports = {
     testResourcePluralGetKey: function(test) {
         test.expect(2);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
             locale: "de-DE",
@@ -91,8 +91,8 @@ module.exports = {
         		"many": "This is the many case"
         	}
         });
-        test.ok(rs);
-        test.equal(rs.getKey(), "foo");
+        test.ok(rp);
+        test.equal(rp.getKey(), "foo");
         
         test.done();
     },
@@ -100,7 +100,7 @@ module.exports = {
     testResourcePluralGet: function(test) {
         test.expect(5);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
             locale: "en-US",
@@ -111,11 +111,11 @@ module.exports = {
         		"many": "This is the many case"
         	}
         });
-        test.ok(rs);
-        test.equal(rs.get("one"), "This is singular");
-        test.equal(rs.get("two"), "This is double");
-        test.equal(rs.get("few"), "This is the few case");
-        test.equal(rs.get("many"), "This is the many case");
+        test.ok(rp);
+        test.equal(rp.get("one"), "This is singular");
+        test.equal(rp.get("two"), "This is double");
+        test.equal(rp.get("few"), "This is the few case");
+        test.equal(rp.get("many"), "This is the many case");
         
         test.done();
     },
@@ -123,7 +123,7 @@ module.exports = {
     testResourcePluralGetNonExistent: function(test) {
         test.expect(2);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
             locale: "en-US",
@@ -134,8 +134,8 @@ module.exports = {
         		"many": "This is the many case"
         	}
         });
-        test.ok(rs);
-        test.ok(!rs.get("zero"));
+        test.ok(rp);
+        test.ok(!rp.get("zero"));
         
         test.done();
     },
@@ -143,9 +143,9 @@ module.exports = {
     testResourcePluralGetKeyEmpty: function(test) {
         test.expect(2);
 
-        var rs = new ResourcePlural();
-        test.ok(rs);
-        test.ok(!rs.getKey());
+        var rp = new ResourcePlural();
+        test.ok(rp);
+        test.ok(!rp.getKey());
         
         test.done();
     },
@@ -153,7 +153,7 @@ module.exports = {
     testResourcePluralGetContext: function(test) {
         test.expect(2);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
             locale: "en-US",
@@ -165,8 +165,8 @@ module.exports = {
                 "many": "This is the many case"
             }
         });
-        test.ok(rs);
-        test.equal(rs.getContext(), "landscape");
+        test.ok(rp);
+        test.equal(rp.getContext(), "landscape");
         
         test.done();
     },
@@ -174,7 +174,7 @@ module.exports = {
     testResourcePluralGetContextEmpty: function(test) {
         test.expect(2);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
             locale: "en-US",
@@ -185,8 +185,8 @@ module.exports = {
                 "many": "This is the many case"
             }
         });
-        test.ok(rs);
-        test.ok(!rs.getContext());
+        test.ok(rp);
+        test.ok(!rp.getContext());
         
         test.done();
     },
@@ -194,7 +194,7 @@ module.exports = {
     testResourcePluralGetPlurals: function(test) {
         test.expect(2);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
             key: "foo",
             pathName: "a/b/c.txt",
             locale: "de-DE",
@@ -205,8 +205,8 @@ module.exports = {
         		"many": "This is the many case"
         	}
         });
-        test.ok(rs);
-        test.deepEqual(rs.getPlurals(), {
+        test.ok(rp);
+        test.deepEqual(rp.getPlurals(), {
         	"one": "This is singular",
         	"two": "This is double",
         	"few": "This is the few case",
@@ -219,9 +219,9 @@ module.exports = {
     testResourcePluralGetPluralsEmpty: function(test) {
         test.expect(2);
 
-        var rs = new ResourcePlural();
-        test.ok(rs);
-        test.ok(!rs.getPlurals());
+        var rp = new ResourcePlural();
+        test.ok(rp);
+        test.ok(!rp.getPlurals());
         
         test.done();
     },
@@ -229,7 +229,7 @@ module.exports = {
     testResourcePluralGeneratePseudo: function(test) {
         test.expect(3);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
             key: "asdf",
             pathName: "a/b/c.java",
         	strings: {
@@ -239,16 +239,17 @@ module.exports = {
         		"many": "This is the many case"
         	}
         });
-        test.ok(rs);
+        test.ok(rp);
         
         var rb = new ResBundle({
+        	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
         });
 
-        var rs2 = rs.generatePseudo("de-DE", rb);
+        var rp2 = rp.generatePseudo("de-DE", rb);
 
-        test.ok(rs2);
-        test.equal(rs2.getLocale(), "de-DE");
+        test.ok(rp2);
+        test.equal(rp2.getLocale(), "de-DE");
         
         test.done();
     },
@@ -256,7 +257,7 @@ module.exports = {
     testResourcePluralGeneratePseudoRightString: function(test) {
         test.expect(4);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
             key: "asdf",
             pathName: "a/b/c.java",
         	strings: {
@@ -266,17 +267,18 @@ module.exports = {
         		"many": "This is the many case"
         	}
         });
-        test.ok(rs);
+        test.ok(rp);
         
         var rb = new ResBundle({
+        	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
         });
 
-        var rs2 = rs.generatePseudo("de-DE", rb);
+        var rp2 = rp.generatePseudo("de-DE", rb);
 
-        test.ok(rs2);
+        test.ok(rp2);
         
-        var t = rs2.getPlurals();
+        var t = rp2.getPlurals();
         
         test.ok(t);
         test.deepEqual(t, {
@@ -289,10 +291,47 @@ module.exports = {
         test.done();
     },
 
+    testResourcePluralGeneratePseudoSkipPercents: function(test) {
+        test.expect(4);
+
+        var rp = new ResourcePlural({
+            key: "asdf",
+            pathName: "a/b/c.java",
+        	strings: {
+        		"one": "This is %s singular",
+        		"two": "This is %d double",
+        		"few": "This is the few %2$-2.2f case",
+        		"many": "This is the many %7x case"
+        	}
+        });
+        test.ok(rp);
+        
+        var rb = new ResBundle({
+        	type: "c",
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        var rp2 = rp.generatePseudo("de-DE", rb);
+
+        test.ok(rp2);
+        
+        var t = rp2.getPlurals();
+        
+        test.ok(t);
+        test.deepEqual(t, {
+    		"one": "Ťĥíš íš %s šíñğüľàŕ",
+    		"two": "Ťĥíš íš %d ðõübľë",
+    		"few": "Ťĥíš íš ţĥë fëŵ %2$-2.2f çàšë",
+    		"many": "Ťĥíš íš ţĥë màñÿ %7x çàšë"
+    	});
+        
+        test.done();
+    },
+
     testResourcePluralGeneratePseudoBadLocale: function(test) {
         test.expect(2);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
             key: "asdf",
             pathName: "a/b/c.java",
         	strings: {
@@ -302,14 +341,15 @@ module.exports = {
         		"many": "This is the many case"
         	}
         });
-        test.ok(rs);
+        test.ok(rp);
         
         var rb = new ResBundle({
+        	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
         });
 
-        var rs2 = rs.generatePseudo(undefined, rb);
-        test.ok(!rs2);
+        var rp2 = rp.generatePseudo(undefined, rb);
+        test.ok(!rp2);
         
         test.done();
     },
@@ -317,7 +357,7 @@ module.exports = {
     testResourcePluralGeneratePseudoBadBundle: function(test) {
         test.expect(2);
 
-        var rs = new ResourcePlural({
+        var rp = new ResourcePlural({
             key: "asdf",
             pathName: "a/b/c.java",
         	strings: {
@@ -327,11 +367,11 @@ module.exports = {
         		"many": "This is the many case"
         	}
         });
-        test.ok(rs);
+        test.ok(rp);
         
-        var rs2 = rs.generatePseudo("de-DE", undefined);
+        var rp2 = rp.generatePseudo("de-DE", undefined);
 
-        test.ok(!rs2);
+        test.ok(!rp2);
         
         test.done();
     },
