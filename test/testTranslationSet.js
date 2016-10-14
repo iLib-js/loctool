@@ -7,6 +7,7 @@
 if (!TranslationSet) {
     var TranslationSet = require("../lib/TranslationSet.js");
     var ResourceString = require("../lib/ResourceString.js");
+    var ResourceArray = require("../lib/ResourceArray.js");
 }
 
 module.exports = {
@@ -174,11 +175,45 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getContext());
         
-        r = ts.get("asdf", "different");
+        r = ts.get("asdf", undefined, "different");
 
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getContext(), "different");
+        
+        test.done();
+    },
+
+    testTranslationSetGetDifferentTypesSameKeyIsOkay: function(test) {
+        test.expect(6);
+
+        var ts = new TranslationSet();
+        var res = new ResourceArray({
+            key: "asdf",
+            array: ["This is a test", "this too"]
+        });
+        
+        ts.add(res);
+        
+        res = new ResourceString({
+            key: "asdf", // same key
+            source: "This is a test"
+        });
+        
+        ts.add(res);
+        
+        // default type is string
+        var r = ts.get("asdf");
+        
+        test.equal(r.getKey(), "asdf");
+        test.equal(r.resType, "string");
+        test.equal(r.getSource(), "This is a test");
+        
+        r = ts.get("asdf", "array");
+
+        test.equal(r.getKey(), "asdf");
+        test.equal(r.resType, "array");
+        test.deepEqual(r.getArray(), ["This is a test", "this too"]);
         
         test.done();
     },
