@@ -114,7 +114,7 @@ def reject_paran(values)
 end
 
 def reject_special_words(values)
-  values.reject{|w| w.include?('__')} #skip or, and, which are common in method names
+  values.reject{|w| w.include?('__') || w.include?('_')} #skip or, and, which are common in method names
 end
 
 
@@ -227,7 +227,9 @@ def replace_with_translations(template, from_to)
     #puts "translating=#{k} WITH v=#{v}"
     #raise ArgumentError.new('test')
 
-    res = template.gsub!(/\b(?<![\/:_|])#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
+    # match starting with word boundary and doesn't have / | : right before k
+    # also skip k if suffix is .<something>. ex - topic.kb_attribute. Assumes regular english will have .<spave><char>
+    res = template.gsub!(/\b(?<![\/:_|])#{Regexp.escape(k)}(?![\.]\S)/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(/\b#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(k, v)
     if res.nil?
@@ -278,7 +280,7 @@ ARGV[2, ARGV.length].each{|path_name|
     template = File.read(path_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-    #puts "root=#{root}"
+    puts "root=#{root}"
     values = []
     accumulate_values(root, values)
     puts "orig_values=#{values}"
