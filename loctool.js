@@ -10,6 +10,8 @@ var fs = require('fs');
 var path = require('path');
 var util = require('util');
 var log4js = require("log4js");
+var Queue = require("js-stl").Queue;
+
 var ProjectFactory = require("./lib/ProjectFactory.js");
 // var Git = require("simple-git");
 
@@ -53,6 +55,33 @@ var resources;
 var project;
 var fileTypes;
 
+var projectQueue = new Queue();
+
+/**
+ * Process the next project in the project queue. This entails
+ * reading all the source files in the project, extracting their
+ * resources from the various file types, saving the new resources
+ * to the database, generating pseudo-localized resources, and
+ * writing out the various translated files for that project.
+ */
+function processNextProject() {
+	var project = !projectQueue.isEmpty() && projectQueue.dequeue();
+	
+	logger.debug("Processing project " + (project && project.id));
+	if (project) {
+		project.extract(function() {
+			project.save(function() {
+				project.generatePseudo();
+				project.write(function() {
+					project.close(function() {
+						processNextProject();
+					});
+				});
+			});
+		});
+	}
+}
+
 function walk(dir, project) {
 	logger.trace("Searching " + dir);
 	
@@ -61,7 +90,6 @@ function walk(dir, project) {
 	if (!project) {
 		project = ProjectFactory(dir);
 		if (project) {
-			fileTypes = project.getFileTypes();
 			projectRoot = true;
 			logger.info("-------------------------------------------------------------------------------------------");
 			logger.info('Project "' + project.options.name + '", type: ' + project.options.projectType);
@@ -74,33 +102,44 @@ function walk(dir, project) {
 				git.pull();
 				*/
 			}
+			
+			projectQueue.enqueue(project);
 		}
 	}
 	
 	var list = fs.readdirSync(dir);
 	list.forEach(function (file) {
-		var path = dir + '/' + file;
-		var stat = fs.statSync(path);
+		var pathName = path.join(dir, file);
+		var relPath = path.relative(project.getRoot(), pathName);
+		var stat = fs.statSync(pathName);
 		if (stat && stat.isDirectory()) {
 			if (project) {
-				logger.info(path + "...");
+				logger.info(pathName);
 				if (project.options.excludes) {
-					logger.trace("There are excludes ");
-					if (project.options.excludes.indexOf(path) === -1) {
+					logger.trace("There are excludes. Relpath is " + relPath);
+					if (project.options.excludes.indexOf(relPath) === -1) {
 						logger.trace("Not excluded.");
-						walk(path, project);
+						walk(pathName, project);
 					} else {
 						logger.trace("Excluded");
 					}
 				} else {
 					logger.trace("Neither includes or excludes.");
-					walk(path, project);
+					walk(pathName, project);
 				}
 			} else {
 			    logger.trace("found a dir");
-				walk(path, project);
+				walk(pathName, project);
 			}
 		} else {
+			if (project) {
+				logger.info(pathName);
+				project.addPath(pathName);
+			} else {
+				logger.trace("Ignoring non-project file: " + pathName);
+			}
+
+			/*
 			if (fileTypes) {
 				logger.trace("fileTypes.length is " + fileTypes.length);
 			    for (var i = 0; i < fileTypes.length; i++) {
@@ -116,9 +155,11 @@ function walk(dir, project) {
 				// no file types to check?
 				logger.trace("no file types");
 			}
+			*/
 		}
 	});
 
+	/*
 	if (projectRoot) {
 		for (var i = 0; i < fileTypes.length; i++) {
 			//fileTypes[i].collect(function() {
@@ -135,11 +176,15 @@ function walk(dir, project) {
 		fileTypes = undefined;
 		
 	}
+	*/
+	
 	return results;
 }
 
 try {
 	walk(rootDir, undefined);
+	
+	processNextProject();
 } catch (e) {
 	logger.error("caught exception: " + e);
 	logger.error(e.stack);

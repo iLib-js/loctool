@@ -42,5 +42,11 @@
     	"ilib",
     	"xml2json",
     	"nodeunit"
+		"log4js",
+		"mysql2",
+		"pretty-data",
+		"xml2json",
+		"yamljs",
+		"js-stl"
     ]
 }
