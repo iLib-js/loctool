@@ -170,6 +170,54 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileParseSimpleWithTranslatorComment: function(test) {
+        test.expect(6);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('\tRB.getString("This is a test"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r99578090116730");
+        test.equal(r.getComment(), "this is a translator's comment");
+        
+        test.done();
+    },
+
+    testJavaFileParseSimpleWithUniqueIdAndTranslatorComment: function(test) {
+        test.expect(6);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('\tRB.getString("This is a test", "foobar"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get("foobar");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "foobar");
+        test.equal(r.getComment(), "this is a translator's comment");
+        
+        test.done();
+    },
+
     testJavaFileParseWithKey: function(test) {
         test.expect(5);
 
@@ -268,6 +316,66 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getAutoKey());
         test.equal(r.getKey(), "y");
+        
+        test.done();
+    },
+
+    testJavaFileParseMultipleWithComments: function(test) {
+        test.expect(10);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("This is a test");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test");\t// i18n: bar');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r99578090116730");
+        test.equal(r.getComment(), "foo");
+        
+        r = set.getBySource("This is also a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is also a test");
+        test.equal(r.getKey(), "r90625302087578");
+        test.equal(r.getComment(), "bar");
+        
+        test.done();
+    },
+
+    testJavaFileParseMultipleWithUniqueIdsAndComments: function(test) {
+        test.expect(10);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("This is a test", "asdf");   // i18n: foo\n\ta.parse("This is another test.");\n\t\tRB.getString("This is also a test", "kdkdkd");\t// i18n: bar');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get("asdf");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "asdf");
+        test.equal(r.getComment(), "foo");
+        
+        r = set.get("kdkdkd");
+        test.ok(r);
+        test.equal(r.getSource(), "This is also a test");
+        test.equal(r.getKey(), "kdkdkd");
+        test.equal(r.getComment(), "bar");
         
         test.done();
     },

@@ -10,15 +10,19 @@
 	],
 	"levels": {
 		"[all]": "INFO",
+		"loctool.lib.AndroidLayoutFile": "INFO",
+		"loctool.lib.AndroidLayoutFileType": "INFO",
+		"loctool.lib.AndroidResourceFile": "INFO",
+		"loctool.lib.AndroidResourceFileType": "INFO",
 		"loctool.lib.DBTranslationSet": "TRACE",
-		"loctool.lib.JavaFile": "INFO",
-		"loctool.lib.JavaFileType": "INFO",
+		"loctool.lib.HamlFile": "INFO",
+		"loctool.lib.HamlFileType": "INFO",
+		"loctool.lib.JavaFile": "TRACE",
+		"loctool.lib.JavaFileType": "TRACE",
 		"loctool.lib.ResourceString": "TRACE",
 		"loctool.lib.ResourceArray": "TRACE",
 		"loctool.lib.ResourcePlural": "TRACE",
 		"loctool.lib.TranslationSet": "TRACE",
-		"loctool.lib.AndroidLayoutFile": "TRACE",
-		"loctool.lib.AndroidLayoutFileType": "TRACE",
 		"loctool.loctool":  "INFO"
 	}
 }
