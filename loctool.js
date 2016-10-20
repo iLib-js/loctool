@@ -193,6 +193,7 @@ try {
 			fileTypes[i].close();
 		}
 	}
+	log4js.shutdown();
 }
 logger.info("Done");
 
