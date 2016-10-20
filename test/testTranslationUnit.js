@@ -26,7 +26,8 @@ module.exports = {
         	 sourceLocale: "en-US",
         	 targetLocale: "de-DE",
         	 key: "foobar",
-        	 file: "foo/bar/asdf.java"         	
+        	 file: "foo/bar/asdf.java",
+        	 project: "ht-iosapp"
         });
         test.ok(tu);
         
@@ -50,7 +51,8 @@ module.exports = {
         	 file: "foo/bar/asdf.java",
         	 target: "german Asdf Asdf",
         	 state: "approved",
-        	 comment: "Gut!"
+        	 comment: "Gut!",
+        	 project: "ht-iosapp"
         });
         test.ok(tu);
         
@@ -66,7 +68,7 @@ module.exports = {
         test.done();
     },
 
-    testTranslationUnitConstructorMissingRequiredParams: function(test) {
+    testTranslationUnitConstructorMissingRequiredParamsKey: function(test) {
         test.expect(1);
 
         test.throws(function() {
@@ -79,5 +81,70 @@ module.exports = {
         });
         
         test.done();
+    },
+    
+    testTranslationUnitConstructorMissingRequiredParamsSourceLocale: function(test) {
+        test.expect(1);
+
+        test.throws(function() {
+        	new TranslationUnit({
+        		source: "Asdf asdf",
+        		targetLocale: "de-DE",
+        		key: "foobar",
+        		file: "foo/bar/asdf.java",
+        		project: "ht-iosapp"
+        	});
+        });
+
+        test.done();
+    },
+
+    testTranslationUnitConstructorMissingRequiredParamsTargetLocale: function(test) {
+    	test.expect(1);
+
+    	test.throws(function() {
+    		new TranslationUnit({
+    			source: "Asdf asdf",
+    			sourceLocale: "en-US",
+    			key: "foobar",
+    			file: "foo/bar/asdf.java",
+    			project: "ht-iosapp"
+    		});
+    	});
+
+    	test.done();
+    },
+
+    testTranslationUnitConstructorMissingRequiredParamsFile: function(test) {
+    	test.expect(1);
+
+    	test.throws(function() {
+    		new TranslationUnit({
+    			source: "Asdf asdf",
+    			sourceLocale: "en-US",
+    			targetLocale: "de-DE",
+    			key: "foobar",
+    			project: "ht-iosapp"
+    		});
+    	});
+
+    	test.done();
+    },
+
+    testTranslationUnitConstructorMissingRequiredParamsProject: function(test) {
+    	test.expect(1);
+
+    	test.throws(function() {
+    		new TranslationUnit({
+    			source: "Asdf asdf",
+    			sourceLocale: "en-US",
+    			targetLocale: "de-DE",
+    			key: "foobar",
+    			file: "foo/bar/asdf.java"
+    		});
+    	});
+
+    	test.done();
     }
+
 };
