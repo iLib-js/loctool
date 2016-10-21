@@ -31,7 +31,7 @@ module.exports = {
     },
     
     testXliffConstructorFull: function(test) {
-        test.expect(1);
+        test.expect(7);
 
         var x = new Xliff({
             "tool-id": "loctool",
@@ -68,7 +68,7 @@ module.exports = {
     
     
     testXliffSetPath: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var x = new Xliff({
             path: "foo/bar/x.xliff"
@@ -85,7 +85,7 @@ module.exports = {
     },
     
     testXliffSetPathInitiallyEmpty: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var x = new Xliff();
         test.ok(x);
@@ -259,7 +259,7 @@ module.exports = {
             targetLocale: "de-DE",
             key: "foobar",
             file: "foo/bar/asdf.java",
-            coment: "blah blah blah",
+            comment: "blah blah blah",
             project: "ht-webapp12"
         });
         
@@ -347,7 +347,7 @@ module.exports = {
             targetLocale: "fr-FR",
             key: "foobar",
             file: "foo/bar/asdf.java",
-            coment: "blah blah blah",
+            comment: "blah blah blah",
             project: "ht-webapp12"
         });
         
@@ -368,7 +368,7 @@ module.exports = {
         test.equal(tu2[0].file, "foo/bar/asdf.java");
         test.ok(!tu2[0].comment);
 
-        test.equal(tu2[1].source, "baby baby");
+        test.equal(tu2[1].source, "Asdf asdf");
         test.equal(tu2[1].sourceLocale, "en-US");
         test.equal(tu2[1].targetLocale, "fr-FR");
         test.equal(tu2[1].key, "foobar");
@@ -379,7 +379,7 @@ module.exports = {
     },
 
     testXliffGetTranslationUnitsMultiple: function(test) {
-        test.expect(8);
+        test.expect(13);
 
         var x = new Xliff();
         test.ok(x);
@@ -430,7 +430,7 @@ module.exports = {
     },
 
     testXliffSerializeWithSourceOnly: function(test) {
-        test.expect(6);
+        test.expect(2);
 
         var x = new Xliff();
         test.ok(x);
@@ -459,30 +459,60 @@ module.exports = {
         
         x.addTranslationUnit(tu);
 
+        var xml = x.serialize();
+        var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
+        '<xliff version="1.2">\n' +
+        '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+        '    <body>\n' +
+        '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+        '        <source>Asdf asdf</source>\n' +
+        '      </trans-unit>\n' +
+        '    </body>\n' +
+        '  </file>\n' + 
+        '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+        '    <body>\n' +
+        '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+        '        <source>baby baby</source>\n' +
+        '      </trans-unit>\n' +
+        '    </body>\n' +
+        '  </file>\n' +
+        '</xliff>';
+        
+        for (var i = 0; i < xml.length; i++) {
+        	if (xml[i] !== expected[i]) {
+        		console.log("found diff at char " + i);
+        		console.log("'" + xml.substring(i) + "'");
+        		console.log("'" + expected.substring(i) + "'");
+        		break;
+        	}
+        }
+        console.log(xml);
+        console.log(expected);
+        
         test.equal(x.serialize(), 
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-androidapp">\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '                <source>Asdf asdf</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' + 
-                '    <file original="foo/bar/j.java" source-language="en-US" target-langauge="fr-FR" product-name="ht-webapp12">' +
-                '        <body>\n' +
-                '            <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '                <source>baby baby</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
        
         test.done();
     },
     
     testXliffSerializeWithSourceAndTarget: function(test) {
-        test.expect(6);
+        test.expect(2);
 
         var x = new Xliff();
         test.ok(x);
@@ -512,31 +542,31 @@ module.exports = {
         x.addTranslationUnit(tu);
 
         test.equal(x.serialize(), 
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-webapp12">\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '                <source>Asdf asdf</source>\n' +
-                '                <target>foobarfoo</target>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' + 
-                '    <file original="foo/bar/j.java" source-language="en-US" target-langauge="fr-FR" product-name="ht-webapp12">' +
-                '        <body>\n' +
-                '            <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '                <source>baby baby</source>\n' +
-                '                <target>bebe bebe</target>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '        <target>foobarfoo</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '        <target>bebe bebe</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
        
         test.done();
     },
     
     testXliffSerializeWithHeader: function(test) {
-        test.expect(6);
+        test.expect(2);
 
         var x = new Xliff({
             "tool-id": "loctool",
@@ -571,35 +601,35 @@ module.exports = {
         x.addTranslationUnit(tu);
 
         test.equal(x.serialize(), 
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-webapp12">\n' +
-                '        <header>\n' +
-                    '            <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>' +
-                '        </header>\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar">\n' +
-                '                <source>Asdf asdf</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' + 
-                '    <file original="foo/bar/j.java" source-language="en-US" target-langauge="fr-FR" product-name="ht-webapp12">' +
-                '        <header>\n' +
-                    '            <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>' +
-                '        </header>\n' +
-                '        <body>\n' +
-                '            <trans-unit id="2" resname="huzzah">\n' +
-                '                <source>baby baby</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
+                '    <header>\n' +
+                    '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>' +
+                '    </header>\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '    <header>\n' +
+                    '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>' +
+                '    </header>\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah">\n' +
+                '        <source>baby baby</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
        
         test.done();
     },
 
     testXliffSerializeWithPlurals: function(test) {
-        test.expect(6);
+        test.expect(2);
 
         var x = new Xliff();
         test.ok(x);
@@ -631,25 +661,25 @@ module.exports = {
         x.addTranslationUnit(tu);
 
         test.equal(x.serialize(), 
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-androidapp">\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar" restype="plural" extype="one">\n' +
-                '                <source>There is 1 object.</source>\n' +
-                '            </trans-unit>\n' +
-                '            <trans-unit id="2" resname="foobar" restype="plural" extype="other">\n' +
-                '                <source>There are {n} objects.</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="plural" extype="one">\n' +
+                '        <source>There is 1 object.</source>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2" resname="foobar" restype="plural" extype="other">\n' +
+                '        <source>There are {n} objects.</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
        
         test.done();
     },
 
     testXliffSerializeWithArrays: function(test) {
-        test.expect(6);
+        test.expect(2);
 
         var x = new Xliff();
         test.ok(x);
@@ -694,28 +724,28 @@ module.exports = {
         x.addTranslationUnit(tu);
 
         test.equal(x.serialize(), 
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-androidapp">\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar" restype="array" extype="0">\n' +
-                '                <source>Zero</source>\n' +
-                '            </trans-unit>\n' +
-                '            <trans-unit id="2" resname="foobar" restype="array" extype="1">\n' +
-                '                <source>One</source>\n' +
-                '            </trans-unit>\n' +
-                '            <trans-unit id="3" resname="foobar" restype="array" extype="2">\n' +
-                '                <source>Two</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="array" extype="0">\n' +
+                '        <source>Zero</source>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2" resname="foobar" restype="array" extype="1">\n' +
+                '        <source>One</source>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="3" resname="foobar" restype="array" extype="2">\n' +
+                '        <source>Two</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
        
         test.done();
     },
 
     testXliffSerializeWithXMLEscaping: function(test) {
-        test.expect(6);
+        test.expect(2);
 
         var x = new Xliff();
         test.ok(x);
@@ -745,50 +775,106 @@ module.exports = {
         x.addTranslationUnit(tu);
 
         test.equal(x.serialize(), 
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-androidapp">\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '                <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' + 
-                '    <file original="foo/bar/j.java" source-language="en-US" target-langauge="fr-FR" product-name="ht-webapp12">' +
-                '        <body>\n' +
-                '            <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '                <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.done();
+    },
+
+    testXliffSerializeWithComments: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        var tu = new TranslationUnit({
+            source: "Asdf asdf",
+            sourceLocale: "en-US",
+            targetLocale: "de-DE",
+            key: "foobar",
+            file: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            resType: "string",
+            comment: "A very nice string"
+        });
+        
+        x.addTranslationUnit(tu);
+
+        tu = new TranslationUnit({
+            source: "baby baby",
+            sourceLocale: "en-US",
+            targetLocale: "fr-FR",
+            key: "huzzah",
+            file: "foo/bar/j.java",
+            project: "ht-webapp12",
+            resType: "string",
+            comment: "Totally awesome."
+        });
+        
+        x.addTranslationUnit(tu);
+
+        test.equal(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '        <note annotates="source">A very nice string</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '        <note annotates="source">Totally awesome.</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
        
         test.done();
     },
 
     testXliffDeserializeWithSourceOnly: function(test) {
-        test.expect(6);
+        test.expect(19);
 
         var x = new Xliff();
         test.ok(x);
         
         x.deserialize(
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-androidapp">\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '                <source>Asdf asdf</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' + 
-                '    <file original="foo/bar/j.java" source-language="en-US" target-langauge="fr-FR" product-name="ht-webapp12">' +
-                '        <body>\n' +
-                '            <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '                <source>baby baby</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
 
         var units = x.getTranslationUnits();
@@ -819,30 +905,30 @@ module.exports = {
     },
 
     testXliffDeserializeWithSourceAndTarget: function(test) {
-        test.expect(6);
+        test.expect(21);
 
         var x = new Xliff();
         test.ok(x);
         
         x.deserialize(
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-webapp12">\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '                <source>Asdf asdf</source>\n' +
-                '                <target>foobarfoo</target>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' + 
-                '    <file original="foo/bar/j.java" source-language="en-US" target-langauge="fr-FR" product-name="ht-webapp12">' +
-                '        <body>\n' +
-                '            <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '                <source>baby baby</source>\n' +
-                '                <target>bebe bebe</target>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '        <target>foobarfoo</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '        <target>bebe bebe</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
 
         var units = x.getTranslationUnits();
@@ -875,28 +961,28 @@ module.exports = {
     },
 
     testXliffDeserializeWithXMLUnescaping: function(test) {
-        test.expect(6);
+        test.expect(19);
 
         var x = new Xliff();
         test.ok(x);
         
         x.deserialize(
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-androidapp">\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '                <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' + 
-                '    <file original="foo/bar/j.java" source-language="en-US" target-langauge="fr-FR" product-name="ht-webapp12">' +
-                '        <body>\n' +
-                '            <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '                <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
 
         var units = x.getTranslationUnits();
@@ -927,24 +1013,24 @@ module.exports = {
     },
 
     testXliffDeserializeWithPlurals: function(test) {
-        test.expect(6);
+        test.expect(21);
 
         var x = new Xliff();
         test.ok(x);
         
         x.deserialize(
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-androidapp">\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar" restype="plural" extype="one">\n' +
-                '                <source>There is 1 object.</source>\n' +
-                '            </trans-unit>\n' +
-                '            <trans-unit id="2" resname="foobar" restype="plural" extype="other">\n' +
-                '                <source>There are {n} objects.</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="plural" extype="one">\n' +
+                '        <source>There is 1 object.</source>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2" resname="foobar" restype="plural" extype="other">\n' +
+                '        <source>There are {n} objects.</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
 
         var units = x.getTranslationUnits();
@@ -977,27 +1063,27 @@ module.exports = {
     },
 
     testXliffDeserializeWithArrays: function(test) {
-        test.expect(6);
+        test.expect(30);
 
         var x = new Xliff();
         test.ok(x);
         
         x.deserialize(
-                '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '    <file original="foo/bar/asdf.java" source-language="en-US" target-langauge="de-DE" product-name="ht-androidapp">\n' +
-                '        <body>\n' +
-                '            <trans-unit id="1" resname="foobar" restype="array" extype="0">\n' +
-                '                <source>Zero</source>\n' +
-                '            </trans-unit>\n' +
-                '            <trans-unit id="2" resname="foobar" restype="array" extype="1">\n' +
-                '                <source>One</source>\n' +
-                '            </trans-unit>\n' +
-                '            <trans-unit id="3" resname="foobar" restype="array" extype="2">\n' +
-                '                <source>Two</source>\n' +
-                '            </trans-unit>\n' +
-                '        </body>\n' +
-                '    </file>\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="array" extype="0">\n' +
+                '        <source>Zero</source>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2" resname="foobar" restype="array" extype="1">\n' +
+                '        <source>One</source>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="3" resname="foobar" restype="array" extype="2">\n' +
+                '        <source>Two</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
                 '</xliff>');
 
         var units = x.getTranslationUnits();
@@ -1005,7 +1091,7 @@ module.exports = {
         test.ok(units);
         
         test.equal(units.length, 3);
-        
+
         test.equal(units[0].source, "Zero");
         test.equal(units[0].sourceLocale, "en-US");
         test.equal(units[0].targetLocale, "de-DE");
@@ -1035,6 +1121,60 @@ module.exports = {
         test.equal(units[1].resType, "array");
         test.equal(units[1].ordinal, 2);
         test.equal(units[1].id, "3");
+
+        test.done();
+    },
+
+    testXliffDeserializeWithComments: function(test) {
+        test.expect(20);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+        	    '<?xml version="1.0" encoding="utf-8"?>\n' +
+        	    '<xliff version="1.2">\n' +
+        	    '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+        	    '    <body>\n' +
+        	    '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+        	    '        <source>Asdf asdf</source>\n' +
+        	    '        <note annotates="source">A very nice string</note>\n' +
+        	    '      </trans-unit>\n' +
+        	    '    </body>\n' +
+        	    '  </file>\n' + 
+        	    '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+        	    '    <body>\n' +
+        	    '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+        	    '        <source>baby baby</source>\n' +
+        	    '        <note annotates="source">Totally awesome.</note>\n' +
+        	    '      </trans-unit>\n' +
+        	    '    </body>\n' +
+        	    '  </file>\n' +
+        	    '</xliff>');
+
+        var units = x.getTranslationUnits();
+        
+        test.ok(units);
+        
+        test.equal(units[0].source, "Asdf asdf");
+        test.equal(units[0].sourceLocale, "en-US");
+        test.equal(units[0].targetLocale, "de-DE");
+        test.equal(units[0].key, "foobar");
+        test.equal(units[0].file, "foo/bar/asdf.java");
+        test.equal(units[0].project, "ht-androidapp");
+        test.equal(units[0].resType, "string");
+        test.equal(units[0].comment, "A very nice string");
+        test.equal(units[0].id, "1");
+
+        test.equal(units[1].source, "baby baby");
+        test.equal(units[1].sourceLocale, "en-US");
+        test.equal(units[1].targetLocale, "fr-FR");
+        test.equal(units[1].key, "huzzah");
+        test.equal(units[1].file, "foo/bar/j.java");
+        test.equal(units[1].project, "ht-webapp12");
+        test.equal(units[1].resType, "string");
+        test.equal(units[1].comment, "Totally awesome.");
+        test.equal(units[1].id, "2");
 
         test.done();
     }
