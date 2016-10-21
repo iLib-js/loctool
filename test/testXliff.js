@@ -459,36 +459,6 @@ module.exports = {
         
         x.addTranslationUnit(tu);
 
-        var xml = x.serialize();
-        var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
-        '<xliff version="1.2">\n' +
-        '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
-        '    <body>\n' +
-        '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-        '        <source>Asdf asdf</source>\n' +
-        '      </trans-unit>\n' +
-        '    </body>\n' +
-        '  </file>\n' + 
-        '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
-        '    <body>\n' +
-        '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-        '        <source>baby baby</source>\n' +
-        '      </trans-unit>\n' +
-        '    </body>\n' +
-        '  </file>\n' +
-        '</xliff>';
-        
-        for (var i = 0; i < xml.length; i++) {
-        	if (xml[i] !== expected[i]) {
-        		console.log("found diff at char " + i);
-        		console.log("'" + xml.substring(i) + "'");
-        		console.log("'" + expected.substring(i) + "'");
-        		break;
-        	}
-        }
-        console.log(xml);
-        console.log(expected);
-        
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -499,7 +469,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
@@ -552,7 +522,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
@@ -613,7 +583,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <header>\n' +
                     '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>' +
                 '    </header>\n' +
@@ -784,7 +754,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
@@ -839,7 +809,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
@@ -868,7 +838,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
@@ -921,7 +891,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
@@ -976,7 +946,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
@@ -1142,7 +1112,7 @@ module.exports = {
         	    '      </trans-unit>\n' +
         	    '    </body>\n' +
         	    '  </file>\n' + 
-        	    '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">' +
+        	    '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
         	    '    <body>\n' +
         	    '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
         	    '        <source>baby baby</source>\n' +
