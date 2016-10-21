@@ -575,7 +575,7 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
                 '    <header>\n' +
-                    '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>' +
+            	'      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
                 '    </header>\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar">\n' +
@@ -585,7 +585,7 @@ module.exports = {
                 '  </file>\n' + 
                 '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <header>\n' +
-                    '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."/>' +
+                '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
                 '    </header>\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah">\n' +
