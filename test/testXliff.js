@@ -578,7 +578,7 @@ module.exports = {
             	'      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
                 '    </header>\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -588,7 +588,7 @@ module.exports = {
                 '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
                 '    </header>\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah">\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
