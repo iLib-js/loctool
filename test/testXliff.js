@@ -5,8 +5,10 @@
  */
 
 if (!Xliff) {
-    var TranslationUnit = require("../lib/TranslationUnit.js");
-    var Xliff = require("../lib/Xliff.js");
+	var Xliff = require("../lib/Xliff.js");
+    var ResourceString = require("../lib/ResourceString.js");
+    var ResourceArray = require("../lib/ResourceArray.js");
+    var ResourcePlural = require("../lib/ResourcePlural.js");
 }
 
 module.exports = {
@@ -99,35 +101,41 @@ module.exports = {
         test.done();
     },
     
-    testXliffAddTranslationUnit: function(test) {
-        test.expect(8);
+    testXliffAddResource: function(test) {
+        test.expect(11);
 
         var x = new Xliff();
         test.ok(x);
-        
-        var tu = new TranslationUnit({
+
+        var res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            comment: "this is a comment",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
         
-        var tu2 = x.getTranslationUnits({
-            key: "foobar"
+        var reslist = x.getResources({
+            reskey: "foobar"
         });
         
-        test.ok(tu2);
+        test.ok(reslist);
         
-        test.equal(tu2.length, 1);
-        test.equal(tu2[0].source, "Asdf asdf");
-        test.equal(tu2[0].sourceLocale, "en-US");
-        test.equal(tu2[0].targetLocale, "de-DE");
-        test.equal(tu2[0].key, "foobar");
-        test.equal(tu2[0].file, "foo/bar/asdf.java");
+        test.equal(reslist.length, 1);
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getState(), "new");
+        test.equal(reslist[0].getContext(), "asdf");
+        test.equal(reslist[0].getComment(), "this is a comment");
+        test.equal(reslist[0].getProject(), "ht-webapp12");
        
         test.done();
     },
@@ -138,151 +146,148 @@ module.exports = {
         var x = new Xliff();
         test.ok(x);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
+            autoKey: false,
+            state: "new",
+            context: "asdf",
+            comment: "this is a comment",
             project: "ht-webapp12"
         });
         
         test.equal(x.size(), 0);
-        
-        x.addTranslationUnit(tu);
+
+        x.addResource(res);
         
         test.equal(x.size(), 1);
        
         test.done();
     },
 
-    testXliffAddMultipleTranslationUnits: function(test) {
+    testXliffAddMultipleResources: function(test) {
         test.expect(8);
 
         var x = new Xliff();
         test.ok(x);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            ocale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        tu = new TranslationUnit({
+        res = new ResourceString({
             source: "baby baby",
-            sourceLocale: "en-US",
-            targetLocale: "fr-FR",
+            locale: "en-US",
             key: "huzzah",
-            file: "foo/bar/j.java",
+            pathName: "foo/bar/j.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        var tu2 = x.getTranslationUnits({
-            key: "foobar"
+        var reslist = x.getResources({
+            reskey: "foobar"
         });
         
-        test.ok(tu2);
+        test.ok(reslist);
         
-        test.equal(tu2.length, 1);
-        test.equal(tu2[0].source, "Asdf asdf");
-        test.equal(tu2[0].sourceLocale, "en-US");
-        test.equal(tu2[0].targetLocale, "de-DE");
-        test.equal(tu2[0].key, "foobar");
-        test.equal(tu2[0].file, "foo/bar/asdf.java");
+        test.equal(reslist.length, 1);
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-webapp12");
        
         test.done();
     },
 
-    testXliffAddMultipleTranslationUnitsRightSize: function(test) {
+    testXliffAddMultipleResourcesRightSize: function(test) {
         test.expect(3);
 
         var x = new Xliff();
         test.ok(x);
         test.equal(x.size(), 0);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        tu = new TranslationUnit({
+        res = new ResourceString({
             source: "baby baby",
-            sourceLocale: "en-US",
-            targetLocale: "fr-FR",
+            locale: "en-US",
             key: "huzzah",
-            file: "foo/bar/j.java",
+            pathName: "foo/bar/j.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
         test.equal(x.size(), 2);
        
         test.done();
     },
 
-    testXliffAddMultipleTranslationUnitsOverwrite: function(test) {
+    testXliffAddMultipleResourcesOverwrite: function(test) {
         test.expect(9);
 
         var x = new Xliff();
         test.ok(x);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        // this one has the same source and target locales, key, and file
+        // this one has the same source, locale, key, and file
         // so it should overwrite the one above
-        tu = new TranslationUnit({
+        res = new ResourceString({
             source: "baby baby",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
             comment: "blah blah blah",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        var tu2 = x.getTranslationUnits({
-            key: "foobar"
+        var reslist = x.getResources({
+            reskey: "foobar"
         });
         
-        test.ok(tu2);
+        test.ok(reslist);
         
-        test.equal(tu2.length, 1);
-        test.equal(tu2[0].source, "baby baby");
-        test.equal(tu2[0].sourceLocale, "en-US");
-        test.equal(tu2[0].targetLocale, "de-DE");
-        test.equal(tu2[0].key, "foobar");
-        test.equal(tu2[0].file, "foo/bar/asdf.java");
-        test.equal(tu2[0].comment, "blah blah blah");
+        test.equal(reslist.length, 1);
+        test.equal(reslist[0].getSource(), "baby baby");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-webapp12");
+        test.equal(reslist[0].getComment(), "blah blah blah");
        
         test.done();
     },
 
-    testXliffAddMultipleTranslationUnitsOverwriteRightSize: function(test) {
+    testXliffAddMultipleResourcesOverwriteRightSize: function(test) {
         test.expect(4);
 
         var x = new Xliff();
@@ -290,141 +295,131 @@ module.exports = {
         
         test.equal(x.size(), 0);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
         test.equal(x.size(), 1);
         
-        // this one has the same source and target locales, key, and file
+        // this one has the same source, locale, key, and file
         // so it should overwrite the one above
-        tu = new TranslationUnit({
+        res = new ResourceString({
             source: "baby baby",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
-            coment: "blah blah blah",
+            pathName: "foo/bar/asdf.java",
+            comment: "blah blah blah",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
         test.equal(x.size(), 1);
        
         test.done();
     },
 
-    testXliffAddMultipleTranslationUnitsNoOverwrite: function(test) {
-        test.expect(15);
-
-        var x = new Xliff();
-        test.ok(x);
-        
-        var tu = new TranslationUnit({
-            source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
-            key: "foobar",
-            file: "foo/bar/asdf.java",
-            project: "ht-webapp12"
-        });
-        
-        x.addTranslationUnit(tu);
-
-        // this one has a different target locale
-        // so it should not overwrite the one above
-        tu = new TranslationUnit({
-            source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "fr-FR",
-            key: "foobar",
-            file: "foo/bar/asdf.java",
-            comment: "blah blah blah",
-            project: "ht-webapp12"
-        });
-        
-        x.addTranslationUnit(tu);
-
-        var tu2 = x.getTranslationUnits({
-            key: "foobar"
-        });
-        
-        test.ok(tu2);
-        
-        test.equal(tu2.length, 2);
-        
-        test.equal(tu2[0].source, "Asdf asdf");
-        test.equal(tu2[0].sourceLocale, "en-US");
-        test.equal(tu2[0].targetLocale, "de-DE");
-        test.equal(tu2[0].key, "foobar");
-        test.equal(tu2[0].file, "foo/bar/asdf.java");
-        test.ok(!tu2[0].comment);
-
-        test.equal(tu2[1].source, "Asdf asdf");
-        test.equal(tu2[1].sourceLocale, "en-US");
-        test.equal(tu2[1].targetLocale, "fr-FR");
-        test.equal(tu2[1].key, "foobar");
-        test.equal(tu2[1].file, "foo/bar/asdf.java");
-        test.equal(tu2[1].comment, "blah blah blah");
-
-        test.done();
-    },
-
-    testXliffGetTranslationUnitsMultiple: function(test) {
+    testXliffAddMultipleResourcesNoOverwrite: function(test) {
         test.expect(13);
 
         var x = new Xliff();
         test.ok(x);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        tu = new TranslationUnit({
+        // this one has a different locale
+        // so it should not overwrite the one above
+        res = new ResourceString({
+            source: "Asdf asdf",
+            locale: "fr-FR",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            comment: "blah blah blah",
+            project: "ht-webapp12"
+        });
+        
+        x.addResource(res);
+
+        var reslist = x.getResources({
+            reskey: "foobar"
+        });
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.ok(!reslist[0].getComment());
+
+        test.equal(reslist[1].getSource(), "Asdf asdf");
+        test.equal(reslist[1].getLocale(), "fr-FR");
+        test.equal(reslist[1].getKey(), "foobar");
+        test.equal(reslist[1].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[1].getComment(), "blah blah blah");
+
+        test.done();
+    },
+
+    testXliffGetResourcesMultiple: function(test) {
+        test.expect(11);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            locale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-webapp12"
+        });
+        
+        x.addResource(res);
+
+        res = new ResourceString({
             source: "baby baby",
-            sourceLocale: "en-US",
-            targetLocale: "fr-FR",
+            locale: "en-US",
             key: "huzzah",
-            file: "foo/bar/j.java",
+            pathName: "foo/bar/j.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        var tu2 = x.getTranslationUnits({
-            sourceLocale: "en-US"
+        var reslist = x.getResources({
+            locale: "en-US"
         });
         
-        test.ok(tu2);
+        test.ok(reslist);
         
-        test.equal(tu2.length, 2);
+        test.equal(reslist.length, 2);
         
-        test.equal(tu2[0].source, "Asdf asdf");
-        test.equal(tu2[0].sourceLocale, "en-US");
-        test.equal(tu2[0].targetLocale, "de-DE");
-        test.equal(tu2[0].key, "foobar");
-        test.equal(tu2[0].file, "foo/bar/asdf.java");
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
 
-        test.equal(tu2[1].source, "baby baby");
-        test.equal(tu2[1].sourceLocale, "en-US");
-        test.equal(tu2[1].targetLocale, "fr-FR");
-        test.equal(tu2[1].key, "huzzah");
-        test.equal(tu2[1].file, "foo/bar/j.java");
+        test.equal(reslist[1].getSource(), "baby baby");
+        test.equal(reslist[1].getLocale(), "en-US");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
 
         test.done();
     },
@@ -435,41 +430,37 @@ module.exports = {
         var x = new Xliff();
         test.ok(x);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            resType: "string"
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        tu = new TranslationUnit({
+        res = new ResourceString({
             source: "baby baby",
-            sourceLocale: "en-US",
-            targetLocale: "fr-FR",
+            locale: "en-US",
             key: "huzzah",
-            file: "foo/bar/j.java",
-            project: "ht-webapp12",
-            resType: "string"
+            pathName: "foo/bar/j.java",
+            project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
@@ -480,36 +471,147 @@ module.exports = {
        
         test.done();
     },
-    
+
+    testXliffSerializeWithContext: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            locale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            context: "foobar"
+        });
+        
+        x.addResource(res);
+
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            locale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            context: "asdf"
+        });
+        
+        x.addResource(res);
+
+        test.equal(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" x-context="foobar">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2" resname="foobar" restype="string" x-context="asdf">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.done();
+    },
+
+    testXliffSerializeWithExplicitIds: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            locale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            id: 4444444
+        });
+        
+        x.addResource(res);
+
+        res = new ResourceString({
+            source: "baby baby",
+            locale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "ht-webapp12"
+        });
+        
+        x.addResource(res);
+
+        test.equal(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="4444444" resname="foobar" restype="string">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="4444445" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.done();
+    },
+
     testXliffSerializeWithSourceAndTarget: function(test) {
         test.expect(2);
 
         var x = new Xliff();
         test.ok(x);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf asdf",
-            target: "foobarfoo",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        tu = new TranslationUnit({
-            source: "baby baby",
-            target: "bebe bebe",
-            sourceLocale: "en-US",
-            targetLocale: "fr-FR",
-            key: "huzzah",
-            file: "foo/bar/j.java",
+        var res = new ResourceString({
+            source: "foobarfoo",
+            locale: "de-DE",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
+
+        res = new ResourceString({
+            source: "baby baby",
+            locale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "ht-webapp12"
+        });
+        
+        x.addResource(res);
+
+        res = new ResourceString({
+            source: "bebe bebe",
+            locale: "fr-FR",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "ht-webapp12"
+        });
+        
+        x.addResource(res);
 
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
@@ -548,32 +650,30 @@ module.exports = {
         });
         test.ok(x);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        tu = new TranslationUnit({
+        res = new ResourceString({
             source: "baby baby",
-            sourceLocale: "en-US",
-            targetLocale: "fr-FR",
+            locale: "en-US",
             key: "huzzah",
-            file: "foo/bar/j.java",
+            pathName: "foo/bar/j.java",
             project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <header>\n' +
             	'      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
                 '    </header>\n' +
@@ -583,7 +683,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <header>\n' +
                 '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
                 '    </header>\n' +
@@ -604,36 +704,25 @@ module.exports = {
         var x = new Xliff();
         test.ok(x);
         
-        var tu = new TranslationUnit({
-            source: "There is 1 object.",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+        var res = new ResourcePlural({
+            strings: {
+            	"one": "There is 1 object.",
+            	"other": "There are {n} objects."
+            },
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
             project: "ht-androidapp",
             resType: "plural",
             quantity: "one"
         });
         
-        x.addTranslationUnit(tu);
-
-        tu = new TranslationUnit({
-            source: "There are {n} objects.",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
-            key: "foobar",
-            file: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            resType: "plural",
-            quantity: "other"
-        });
-        
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="plural" extype="one">\n' +
                 '        <source>There is 1 object.</source>\n' +
@@ -654,49 +743,20 @@ module.exports = {
         var x = new Xliff();
         test.ok(x);
         
-        var tu = new TranslationUnit({
-            source: "Zero",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+        var res = new ResourceArray({
+            array: ["Zero", "One", "Two"],
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            resType: "array",
-            ordinal: 0
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp"
         });
         
-        x.addTranslationUnit(tu);
-
-        tu = new TranslationUnit({
-            source: "One",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
-            key: "foobar",
-            file: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            resType: "array",
-            ordinal: 1
-        });
-        
-        x.addTranslationUnit(tu);
-
-        tu = new TranslationUnit({
-            source: "Two",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
-            key: "foobar",
-            file: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            resType: "array",
-            ordinal: 2
-        });
-        
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="array" extype="0">\n' +
                 '        <source>Zero</source>\n' +
@@ -720,41 +780,37 @@ module.exports = {
         var x = new Xliff();
         test.ok(x);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf <b>asdf</b>",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            resType: "string"
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        tu = new TranslationUnit({
+        res = new ResourceString({
             source: "baby &lt;b&gt;baby&lt;/b&gt;",
-            sourceLocale: "en-US",
-            targetLocale: "fr-FR",
+            locale: "en-US",
             key: "huzzah",
-            file: "foo/bar/j.java",
-            project: "ht-webapp12",
-            resType: "string"
+            pathName: "foo/bar/j.java",
+            project: "ht-webapp12"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string">\n' +
                 '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
@@ -772,36 +828,32 @@ module.exports = {
         var x = new Xliff();
         test.ok(x);
         
-        var tu = new TranslationUnit({
+        var res = new ResourceString({
             source: "Asdf asdf",
-            sourceLocale: "en-US",
-            targetLocale: "de-DE",
+            locale: "en-US",
             key: "foobar",
-            file: "foo/bar/asdf.java",
+            pathName: "foo/bar/asdf.java",
             project: "ht-androidapp",
-            resType: "string",
             comment: "A very nice string"
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
-        tu = new TranslationUnit({
+        res = new ResourceString({
             source: "baby baby",
-            sourceLocale: "en-US",
-            targetLocale: "fr-FR",
+            locale: "en-US",
             key: "huzzah",
-            file: "foo/bar/j.java",
+            pathName: "foo/bar/j.java",
             project: "ht-webapp12",
-            resType: "string",
             comment: "Totally awesome."
         });
         
-        x.addTranslationUnit(tu);
+        x.addResource(res);
 
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string">\n' +
                 '        <source>Asdf asdf</source>\n' +
@@ -809,7 +861,7 @@ module.exports = {
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby baby</source>\n' +
@@ -822,6 +874,7 @@ module.exports = {
         test.done();
     },
 
+    /*
     testXliffDeserializeWithSourceOnly: function(test) {
         test.expect(19);
 
@@ -847,29 +900,27 @@ module.exports = {
                 '  </file>\n' +
                 '</xliff>');
 
-        var units = x.getTranslationUnits();
+        var reslist = x.getResources();
         
-        test.ok(units);
+        test.ok(reslist);
         
-        test.equal(units.length, 2);
+        test.equal(reslist.length, 2);
         
-        test.equal(units[0].source, "Asdf asdf");
-        test.equal(units[0].sourceLocale, "en-US");
-        test.equal(units[0].targetLocale, "de-DE");
-        test.equal(units[0].key, "foobar");
-        test.equal(units[0].file, "foo/bar/asdf.java");
-        test.equal(units[0].project, "ht-androidapp");
-        test.equal(units[0].resType, "string");
-        test.equal(units[0].id, "1");
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "1");
 
-        test.equal(units[1].source, "baby baby");
-        test.equal(units[1].sourceLocale, "en-US");
-        test.equal(units[1].targetLocale, "fr-FR");
-        test.equal(units[1].key, "huzzah");
-        test.equal(units[1].file, "foo/bar/j.java");
-        test.equal(units[1].project, "ht-webapp12");
-        test.equal(units[1].resType, "string");
-        test.equal(units[1].id, "2");
+        test.equal(reslist[1].getSource(), "baby baby");
+        test.equal(reslist[1].getLocale(), "en-US");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
       
         test.done();
     },
@@ -901,32 +952,44 @@ module.exports = {
                 '  </file>\n' +
                 '</xliff>');
 
-        var units = x.getTranslationUnits();
+        var reslist = x.getResources();
         
-        test.ok(units);
+        test.ok(reslist);
         
-        test.equal(units.length, 2);
+        test.equal(reslist.length, 4);
         
-        test.equal(units[0].source, "Asdf asdf");
-        test.equal(units[0].target, "foobarfoo");
-        test.equal(units[0].sourceLocale, "en-US");
-        test.equal(units[0].targetLocale, "de-DE");
-        test.equal(units[0].key, "foobar");
-        test.equal(units[0].file, "foo/bar/asdf.java");
-        test.equal(units[0].project, "ht-androidapp");
-        test.equal(units[0].resType, "string");
-        test.equal(units[0].id, "1");
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "1");
 
-        test.equal(units[1].source, "baby baby");
-        test.equal(units[1].target, "bebe bebe");
-        test.equal(units[1].sourceLocale, "en-US");
-        test.equal(units[1].targetLocale, "fr-FR");
-        test.equal(units[1].key, "huzzah");
-        test.equal(units[1].file, "foo/bar/j.java");
-        test.equal(units[1].project, "ht-webapp12");
-        test.equal(units[1].resType, "string");
-        test.equal(units[1].id, "2");
+        test.equal(reslist[1].getSource(), "foobarfoo");
+        test.equal(reslist[1].getLocale(), "de-DE");
+        test.equal(reslist[1].getKey(), "foobar");
+        test.equal(reslist[1].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[1].getProject(), "ht-androidapp");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "1");
+
+        test.equal(reslist[2].getSource(), "baby baby");
+        test.equal(reslist[2].getLocale(), "en-US");
+        test.equal(reslist[2].getKey(), "huzzah");
+        test.equal(reslist[2].getPath(), "foo/bar/j.java");
+        test.equal(reslist[2].getProject(), "ht-webapp12");
+        test.equal(reslist[2].resType, "string");
+        test.equal(reslist[2].getId(), "2");
       
+        test.equal(reslist[3].getSource(), "bebe bebe");
+        test.equal(reslist[3].getLocale(), "fr-FR");
+        test.equal(reslist[3].getKey(), "huzzah");
+        test.equal(reslist[3].getPath(), "foo/bar/j.java");
+        test.equal(reslist[3].getProject(), "ht-webapp12");
+        test.equal(reslist[3].resType, "string");
+        test.equal(reslist[3].getId(), "2");
+
         test.done();
     },
 
@@ -939,14 +1002,14 @@ module.exports = {
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string">\n' +
                 '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
                 '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
@@ -955,35 +1018,33 @@ module.exports = {
                 '  </file>\n' +
                 '</xliff>');
 
-        var units = x.getTranslationUnits();
+        var reslist = x.getResources();
         
-        test.ok(units);
+        test.ok(reslist);
         
-        test.equal(units.length, 2);
+        test.equal(reslist.length, 2);
         
-        test.equal(units[0].source, "Asdf <b>asdf</b>");
-        test.equal(units[0].sourceLocale, "en-US");
-        test.equal(units[0].targetLocale, "de-DE");
-        test.equal(units[0].key, "foobar");
-        test.equal(units[0].file, "foo/bar/asdf.java");
-        test.equal(units[0].project, "ht-androidapp");
-        test.equal(units[0].resType, "string");
-        test.equal(units[0].id, "1");
+        test.equal(reslist[0].getSource(), "Asdf <b>asdf</b>");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "1");
 
-        test.equal(units[1].source, "baby &lt;b&gt;baby&lt;/b&gt;");
-        test.equal(units[1].sourceLocale, "en-US");
-        test.equal(units[1].targetLocale, "fr-FR");
-        test.equal(units[1].key, "huzzah");
-        test.equal(units[1].file, "foo/bar/j.java");
-        test.equal(units[1].project, "ht-webapp12");
-        test.equal(units[1].resType, "string");
-        test.equal(units[1].id, "2");
+        test.equal(reslist[1].getSource(), "baby &lt;b&gt;baby&lt;/b&gt;");
+        test.equal(reslist[1].getLocale(), "en-US");
+       test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
       
         test.done();
     },
 
     testXliffDeserializeWithPlurals: function(test) {
-        test.expect(21);
+        test.expect(10);
 
         var x = new Xliff();
         test.ok(x);
@@ -991,7 +1052,7 @@ module.exports = {
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="plural" extype="one">\n' +
                 '        <source>There is 1 object.</source>\n' +
@@ -1003,37 +1064,28 @@ module.exports = {
                 '  </file>\n' +
                 '</xliff>');
 
-        var units = x.getTranslationUnits();
+        var reslist = x.getResources();
         
-        test.ok(units);
+        test.ok(reslist);
         
-        test.equal(units.length, 2);
+        test.equal(reslist.length, 1);
         
-        test.equal(units[0].source, "There is 1 object.");
-        test.equal(units[0].sourceLocale, "en-US");
-        test.equal(units[0].targetLocale, "de-DE");
-        test.equal(units[0].key, "foobar");
-        test.equal(units[0].file, "foo/bar/asdf.java");
-        test.equal(units[0].project, "ht-androidapp");
-        test.equal(units[0].resType, "plural");
-        test.equal(units[0].quantity, "one");
-        test.equal(units[0].id, "1");
+        test.deepEqual(reslist[0].getPlurals(), {
+        	one: "There is 1 object.",
+        	other: "There are {n} objects."
+        });
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "plural");
+        test.equal(reslist[0].getId(), "1");
 
-        test.equal(units[1].source, "There are {n} objects.");
-        test.equal(units[1].sourceLocale, "en-US");
-        test.equal(units[1].targetLocale, "de-DE");
-        test.equal(units[1].key, "foobar");
-        test.equal(units[1].file, "foo/bar/asdf.java");
-        test.equal(units[1].project, "ht-androidapp");
-        test.equal(units[1].resType, "plural");
-        test.equal(units[1].quantity, "other");
-        test.equal(units[1].id, "2");
-      
         test.done();
     },
 
     testXliffDeserializeWithArrays: function(test) {
-        test.expect(30);
+        test.expect(9);
 
         var x = new Xliff();
         test.ok(x);
@@ -1056,47 +1108,24 @@ module.exports = {
                 '  </file>\n' +
                 '</xliff>');
 
-        var units = x.getTranslationUnits();
+        var reslist = x.getResources();
         
-        test.ok(units);
+        test.ok(reslist);
         
-        test.equal(units.length, 3);
+        test.equal(reslist.length, 1);
 
-        test.equal(units[0].source, "Zero");
-        test.equal(units[0].sourceLocale, "en-US");
-        test.equal(units[0].targetLocale, "de-DE");
-        test.equal(units[0].key, "foobar");
-        test.equal(units[0].file, "foo/bar/asdf.java");
-        test.equal(units[0].project, "ht-androidapp");
-        test.equal(units[0].resType, "array");
-        test.equal(units[0].ordinal, 0);
-        test.equal(units[0].id, "1");
-
-        test.equal(units[1].source, "One");
-        test.equal(units[1].sourceLocale, "en-US");
-        test.equal(units[1].targetLocale, "de-DE");
-        test.equal(units[1].key, "foobar");
-        test.equal(units[1].file, "foo/bar/asdf.java");
-        test.equal(units[1].project, "ht-androidapp");
-        test.equal(units[1].resType, "array");
-        test.equal(units[1].ordinal, 1);
-        test.equal(units[1].id, "2");
-
-        test.equal(units[1].source, "Two");
-        test.equal(units[1].sourceLocale, "en-US");
-        test.equal(units[1].targetLocale, "de-DE");
-        test.equal(units[1].key, "foobar");
-        test.equal(units[1].file, "foo/bar/asdf.java");
-        test.equal(units[1].project, "ht-androidapp");
-        test.equal(units[1].resType, "array");
-        test.equal(units[1].ordinal, 2);
-        test.equal(units[1].id, "3");
+        test.deepEqual(reslist[0].getArray(), ["Zero", "One", "Two"]);
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "array");
 
         test.done();
     },
 
     testXliffDeserializeWithComments: function(test) {
-        test.expect(20);
+        test.expect(18);
 
         var x = new Xliff();
         test.ok(x);
@@ -1104,7 +1133,7 @@ module.exports = {
         x.deserialize(
         	    '<?xml version="1.0" encoding="utf-8"?>\n' +
         	    '<xliff version="1.2">\n' +
-        	    '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+        	    '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
         	    '    <body>\n' +
         	    '      <trans-unit id="1" resname="foobar" restype="string">\n' +
         	    '        <source>Asdf asdf</source>\n' +
@@ -1112,7 +1141,7 @@ module.exports = {
         	    '      </trans-unit>\n' +
         	    '    </body>\n' +
         	    '  </file>\n' + 
-        	    '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+        	    '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
         	    '    <body>\n' +
         	    '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
         	    '        <source>baby baby</source>\n' +
@@ -1122,30 +1151,29 @@ module.exports = {
         	    '  </file>\n' +
         	    '</xliff>');
 
-        var units = x.getTranslationUnits();
+        var reslist = x.getResources();
         
-        test.ok(units);
+        test.ok(reslist);
         
-        test.equal(units[0].source, "Asdf asdf");
-        test.equal(units[0].sourceLocale, "en-US");
-        test.equal(units[0].targetLocale, "de-DE");
-        test.equal(units[0].key, "foobar");
-        test.equal(units[0].file, "foo/bar/asdf.java");
-        test.equal(units[0].project, "ht-androidapp");
-        test.equal(units[0].resType, "string");
-        test.equal(units[0].comment, "A very nice string");
-        test.equal(units[0].id, "1");
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getComment(), "A very nice string");
+        test.equal(reslist[0].getId(), "1");
 
-        test.equal(units[1].source, "baby baby");
-        test.equal(units[1].sourceLocale, "en-US");
-        test.equal(units[1].targetLocale, "fr-FR");
-        test.equal(units[1].key, "huzzah");
-        test.equal(units[1].file, "foo/bar/j.java");
-        test.equal(units[1].project, "ht-webapp12");
-        test.equal(units[1].resType, "string");
-        test.equal(units[1].comment, "Totally awesome.");
-        test.equal(units[1].id, "2");
+        test.equal(reslist[1].getSource(), "baby baby");
+        test.equal(reslist[1].getLocale(), "en-US");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getComment(), "Totally awesome.");
+        test.equal(reslist[1].getId(), "2");
 
         test.done();
     }
+    */
 };
