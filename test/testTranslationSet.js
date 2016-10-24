@@ -952,5 +952,678 @@ module.exports = {
         test.equal(r[1].text, "This is another test");
         
         test.done();
-    }
+    },
+    
+    testTranslationSetGetBySingleField: function(test) {
+        test.expect(6);
+
+        var ts = new TranslationSet()
+        
+        ts.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "ooo la la",
+	            project: "foo",
+	            context: "bar",
+	            locale: "fr-FR"
+	        }),	        
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "gossie",
+	            project: "foo",
+	            context: "bar",
+	            locale: "nl-NL"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is yet another test",
+	            project: "foo",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            source: "test test blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            context: "bar",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "test test d blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah",
+	            key: "llashdfoi",
+	            project: "yowza",
+	            context: "bar",
+	            locale: "en-US"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah en espanol",
+	            key: "ajajsdjdsj",
+	            project: "yowza",
+	            locale: "es-ES"
+	        })
+	    ]);
+
+        var r = ts.getBy({
+        	project: "yowza"
+        });
+        
+        test.ok(r);
+        test.equal(r.length, 2);
+        
+        test.equal(r[0].reskey, "llashdfoi");
+        test.equal(r[0].text, "blah blah blah");
+        
+        test.equal(r[1].reskey, "ajajsdjdsj");
+        test.equal(r[1].text, "blah blah blah en espanol");
+        
+        test.done();
+    },
+
+    testTranslationSetGetByDoubleFields: function(test) {
+        test.expect(17);
+
+        var ts = new TranslationSet()
+        
+        ts.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "ooo la la",
+	            project: "foo",
+	            context: "bar",
+	            locale: "fr-FR"
+	        }),	        
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "gossie",
+	            project: "foo",
+	            context: "bar",
+	            locale: "nl-NL"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is yet another test",
+	            project: "foo",
+	            locale: "pt-BR"
+	        }),
+	        new ResourceString({
+	            source: "test test blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            context: "bar",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "test test d blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah",
+	            key: "llashdfoi",
+	            project: "yowza",
+	            context: "bar",
+	            locale: "en-US"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah en espanol",
+	            key: "ajajsdjdsj",
+	            project: "yowza",
+	            locale: "es-ES"
+	        })
+	    ]);
+
+        var r = ts.getBy({
+        	project: "foo",
+        	locale: "de-DE"
+        });
+        
+        test.ok(r);
+        test.equal(r.length, 3);
+        
+        test.equal(r[0].reskey, "asdf");
+        test.equal(r[0].text, "This is a test");
+        test.equal(r[0].getProject(), "foo");
+        test.equal(r[0].getLocale(), "de-DE");
+        test.equal(r[0].getContext(), "bar");
+
+        test.equal(r[1].reskey, "qwerty");
+        test.equal(r[1].text, "This is another test");
+        test.equal(r[1].getProject(), "foo");
+        test.equal(r[1].getLocale(), "de-DE");
+        test.equal(r[1].getContext(), "bar");
+
+        test.equal(r[2].reskey, "qwerty");
+        test.equal(r[2].text, "This is another test");
+        test.equal(r[2].getProject(), "foo");
+        test.equal(r[2].getLocale(), "de-DE");
+        test.ok(!r[2].getContext());
+     
+        test.done();
+    },
+
+    testTranslationSetGetByDoubleFields: function(test) {
+        test.expect(17);
+
+        var ts = new TranslationSet()
+        
+        ts.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "ooo la la",
+	            project: "foo",
+	            context: "bar",
+	            locale: "fr-FR"
+	        }),	        
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "gossie",
+	            project: "foo",
+	            context: "bar",
+	            locale: "nl-NL"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is yet another test",
+	            project: "foo",
+	            locale: "pt-BR"
+	        }),
+	        new ResourceString({
+	            source: "test test blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            context: "bar",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "test test d blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah",
+	            key: "llashdfoi",
+	            project: "yowza",
+	            context: "bar",
+	            locale: "en-US"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah en espanol",
+	            key: "ajajsdjdsj",
+	            project: "yowza",
+	            locale: "es-ES"
+	        })
+	    ]);
+
+        var r = ts.getBy({
+        	project: "foo",
+        	locale: "de-DE"
+        });
+        
+        test.ok(r);
+        test.equal(r.length, 3);
+        
+        test.equal(r[0].reskey, "asdf");
+        test.equal(r[0].text, "This is a test");
+        test.equal(r[0].getProject(), "foo");
+        test.equal(r[0].getLocale(), "de-DE");
+        test.equal(r[0].getContext(), "bar");
+
+        test.equal(r[1].reskey, "qwerty");
+        test.equal(r[1].text, "This is another test");
+        test.equal(r[1].getProject(), "foo");
+        test.equal(r[1].getLocale(), "de-DE");
+        test.equal(r[1].getContext(), "bar");
+
+        test.equal(r[2].reskey, "qwerty");
+        test.equal(r[2].text, "This is another test");
+        test.equal(r[2].getProject(), "foo");
+        test.equal(r[2].getLocale(), "de-DE");
+        test.ok(!r[2].getContext());
+     
+        test.done();
+    },
+
+    testTranslationSetGetProjects: function(test) {
+        test.expect(5);
+
+        var ts = new TranslationSet()
+        
+        ts.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "ooo la la",
+	            project: "foo",
+	            context: "bar",
+	            locale: "fr-FR"
+	        }),	        
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "gossie",
+	            project: "foo",
+	            context: "bar",
+	            locale: "nl-NL"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is yet another test",
+	            project: "foo",
+	            locale: "pt-BR"
+	        }),
+	        new ResourceString({
+	            source: "test test blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            context: "bar",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "test test d blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah",
+	            key: "llashdfoi",
+	            project: "yowza",
+	            context: "bar",
+	            locale: "en-US"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah en espanol",
+	            key: "ajajsdjdsj",
+	            project: "yowza",
+	            locale: "es-ES"
+	        })
+	    ]);
+
+        var projects = ts.getProjects();
+        
+        test.ok(projects);
+        test.equal(projects.length, 3);
+        
+        test.equal(projects[0], "foo");
+        test.equal(projects[1], "asdf");
+        test.equal(projects[2], "yowza");
+     
+        test.done();
+    },
+
+    testTranslationSetGetProjectsEmpty: function(test) {
+        test.expect(1);
+
+        var ts = new TranslationSet()
+        
+        var projects = ts.getProjects();
+        
+        test.ok(!projects);
+        
+        test.done();
+    },
+
+    testTranslationSetGetContexts: function(test) {
+        test.expect(4);
+
+        var ts = new TranslationSet()
+        
+        ts.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "ooo la la",
+	            project: "foo",
+	            context: "bar",
+	            locale: "fr-FR"
+	        }),	        
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "gossie",
+	            project: "foo",
+	            context: "bar",
+	            locale: "nl-NL"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is yet another test",
+	            project: "foo",
+	            locale: "pt-BR"
+	        }),
+	        new ResourceString({
+	            source: "test test blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            context: "bar",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "test test d blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah",
+	            key: "llashdfoi",
+	            project: "yowza",
+	            context: "bar",
+	            locale: "en-US"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah en espanol",
+	            key: "ajajsdjdsj",
+	            project: "yowza",
+	            locale: "es-ES"
+	        })
+	    ]);
+
+        var contexts = ts.getContexts("foo");
+        
+        test.ok(contexts);
+        test.equal(contexts.length, 2);
+        
+        test.equal(contexts[0], "bar");
+        test.equal(contexts[1], "");
+     
+        test.done();
+    },
+
+    testTranslationSetGetContextsEmpty: function(test) {
+        test.expect(1);
+
+        var ts = new TranslationSet()
+
+        var contexts = ts.getContexts("foo");
+        
+        test.ok(!contexts);
+
+        test.done();
+    },
+
+    testTranslationSetGetContextsOnlyRoot: function(test) {
+        test.expect(3);
+
+        var ts = new TranslationSet()
+        
+        ts.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "ooo la la",
+	            project: "foo",
+	            context: "bar",
+	            locale: "fr-FR"
+	        }),	        
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "gossie",
+	            project: "foo",
+	            context: "bar",
+	            locale: "nl-NL"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is yet another test",
+	            project: "foo",
+	            locale: "pt-BR"
+	        }),
+	        new ResourceString({
+	            source: "test test blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            context: "bar",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "test test d blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah",
+	            key: "llashdfoi",
+	            project: "yowza",
+	            locale: "en-US"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah en espanol",
+	            key: "ajajsdjdsj",
+	            project: "yowza",
+	            locale: "es-ES"
+	        })
+	    ]);
+
+        var contexts = ts.getContexts("yowza");
+        
+        test.ok(contexts);
+        test.equal(contexts.length, 1);
+        
+        test.equal(contexts[0], "");
+     
+        test.done();
+    },
+
+    testTranslationSetGetLocales: function(test) {
+        test.expect(5);
+
+        var ts = new TranslationSet()
+        
+        ts.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            context: "bar",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "ooo la la",
+	            project: "foo",
+	            context: "bar",
+	            locale: "fr-FR"
+	        }),	        
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "gossie",
+	            project: "foo",
+	            context: "bar",
+	            locale: "nl-NL"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test",
+	            project: "foo",
+	            locale: "de-DE"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is yet another test",
+	            project: "foo",
+	            locale: "pt-BR"
+	        }),
+	        new ResourceString({
+	            source: "test test blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            context: "bar",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "test test d blah",
+	            key: "foobarfoo",
+	            project: "asdf",
+	            locale: "ja-JP"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah",
+	            key: "llashdfoi",
+	            project: "yowza",
+	            context: "bar",
+	            locale: "en-US"
+	        }),
+	        new ResourceString({
+	            source: "blah blah blah en espanol",
+	            key: "ajajsdjdsj",
+	            project: "yowza",
+	            locale: "es-ES"
+	        })
+	    ]);
+
+        var locales = ts.getLocales("foo", "bar");
+        
+        test.ok(locales);
+        test.equal(locales.length, 3);
+        
+        test.equal(locales[0], "de-DE");
+        test.equal(locales[1], "fr-FR");
+        test.equal(locales[2], "nl-NL");
+     
+        test.done();
+    },
+
+    testTranslationSetGetLocalesEmpty: function(test) {
+        test.expect(1);
+
+        var ts = new TranslationSet()
+        
+        var locales = ts.getLocales("foo", "bar");
+        
+        test.ok(!locales);
+     
+        test.done();
+    },
+
 };

@@ -166,6 +166,23 @@ module.exports = {
         test.done();
     },
 
+    testSetAddEmptyString: function(test) {
+        test.expect(4);
+
+        var s = new Set();
+        test.ok(s);
+        
+        test.ok(!s.contains(""));
+        
+        s.add("");
+        
+        test.ok(s.contains(""));
+        
+        test.equal(s.size(), 1);
+        
+        test.done();
+    },
+    
     testSetRemove: function(test) {
         test.expect(3);
 
