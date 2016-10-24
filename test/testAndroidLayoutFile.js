@@ -193,6 +193,45 @@ module.exports = {
         test.done();
     },
 
+    testAndroidLayoutFileParseWithTranslatorComment: function(test) {
+        test.expect(6);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+        	project: p,
+        	pathName: "foo"
+        });
+        test.ok(alf);
+        
+        alf.parse('<?xml version="1.0" encoding="utf-8"?>' +
+        		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" ' +
+        		  'android:layout_width="match_parent">' + 
+        		  '  <RelativeLayout ' + 
+        		  '      android:layout_width="match_parent">' + 
+        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
+        		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+        		  '      android:text="This is a test" ' +
+        		  '      i18n="This is a translator comment" ' +
+        		  '      android:textColor="@color/error_red"/>' + 
+        		  '  </RelativeLayout>' + 
+        		  '</FrameLayout>');
+        
+        var set = alf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get("android_text_This_is_a_test");
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "android_text_This_is_a_test");
+        test.equal(r.getComment(), "This is a translator comment");
+        
+        test.done();
+    },
+
     testAndroidLayoutFileParseMultiple: function(test) {
         test.expect(8);
 
@@ -276,6 +315,58 @@ module.exports = {
         test.done();
     },
 
+    testAndroidLayoutFileParseMultipleWithTranslatorComments: function(test) {
+        test.expect(14);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+			project: p,
+			pathName: "foo"
+		});
+        test.ok(alf);
+        
+        alf.parse('<?xml version="1.0" encoding="utf-8"?>' +
+        		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" ' +
+        		  '  android:layout_width="match_parent"' + 
+        		  '  android:title="foobar foo" i18n="translator comment 1">' + 
+        		  '  <RelativeLayout ' + 
+        		  '    android:layout_width="match_parent"' + 
+        		  '    android:text="This is also a test"' +
+        		  '    i18n="translator comment 2">' + 
+        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
+        		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
+        		  '      i18n="translator comment 3" ' + 
+        		  '      android:text="This is a test" ' + 
+        		  '      android:textColor="@color/error_red"/>' + 
+        		  '  </RelativeLayout>' + 
+        		  '</FrameLayout>');
+        
+        var set = alf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "android_text_This_is_a_test");
+        test.equal(r.getComment(), "translator comment 3");
+        
+        r = set.getBySource("This is also a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is also a test");
+        test.equal(r.getKey(), "android_text_This_is_also_a_test");
+        test.equal(r.getComment(), "translator comment 2");
+
+        r = set.getBySource("foobar foo");
+        test.ok(r);
+        test.equal(r.getSource(), "foobar foo");
+        test.equal(r.getKey(), "android_title_foobar_foo");
+        test.equal(r.getComment(), "translator comment 1");
+
+        test.done();
+    },
     testAndroidLayoutFileExtractFile: function(test) {
         test.expect(5);
 
