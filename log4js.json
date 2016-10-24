@@ -23,6 +23,7 @@
 		"loctool.lib.ResourceArray": "INFO",
 		"loctool.lib.ResourcePlural": "INFO",
 		"loctool.lib.TranslationSet": "INFO",
+		"loctool.lib.Xliff": "INFO",
 		"loctool.loctool":  "INFO"
 	}
 }

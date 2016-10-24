@@ -874,9 +874,8 @@ module.exports = {
         test.done();
     },
 
-    /*
     testXliffDeserializeWithSourceOnly: function(test) {
-        test.expect(19);
+        test.expect(17);
 
         var x = new Xliff();
         test.ok(x);
@@ -926,7 +925,7 @@ module.exports = {
     },
 
     testXliffDeserializeWithSourceAndTarget: function(test) {
-        test.expect(21);
+        test.expect(31);
 
         var x = new Xliff();
         test.ok(x);
@@ -934,7 +933,7 @@ module.exports = {
         x.deserialize(
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string">\n' +
                 '        <source>Asdf asdf</source>\n' +
@@ -994,7 +993,7 @@ module.exports = {
     },
 
     testXliffDeserializeWithXMLUnescaping: function(test) {
-        test.expect(19);
+        test.expect(17);
 
         var x = new Xliff();
         test.ok(x);
@@ -1034,7 +1033,7 @@ module.exports = {
 
         test.equal(reslist[1].getSource(), "baby &lt;b&gt;baby&lt;/b&gt;");
         test.equal(reslist[1].getLocale(), "en-US");
-       test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getKey(), "huzzah");
         test.equal(reslist[1].getPath(), "foo/bar/j.java");
         test.equal(reslist[1].getProject(), "ht-webapp12");
         test.equal(reslist[1].resType, "string");
@@ -1175,5 +1174,4 @@ module.exports = {
 
         test.done();
     }
-    */
 };
