@@ -14,7 +14,7 @@ on your machine and in your path.
 Once it is installed, you need to use the package manager to install
 the following things:
 
-npm install log4js ilib mysql2 pretty-data xml2json yamljs
+npm install log4js ilib mysql2 pretty-data xml2json yamljs js-stl
 
 You will also need to make sure ruby is installed on your machine
 and is in your path.

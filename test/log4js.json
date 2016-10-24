@@ -12,6 +12,7 @@
 		"[all]": "INFO",
 		"loctool.lib.AndroidLayoutFile": "INFO",
 		"loctool.lib.AndroidLayoutFileType": "INFO",
+		"loctool.lib.AndroidProject": "INFO",
 		"loctool.lib.AndroidResourceFile": "INFO",
 		"loctool.lib.AndroidResourceFileType": "INFO",
 		"loctool.lib.DBTranslationSet": "TRACE",
@@ -19,10 +20,12 @@
 		"loctool.lib.HamlFileType": "INFO",
 		"loctool.lib.JavaFile": "TRACE",
 		"loctool.lib.JavaFileType": "TRACE",
+		"loctool.lib.Project": "INFO",
 		"loctool.lib.ResourceString": "TRACE",
 		"loctool.lib.ResourceArray": "TRACE",
 		"loctool.lib.ResourcePlural": "TRACE",
 		"loctool.lib.TranslationSet": "TRACE",
+		"loctool.lib.WebProject": "INFO",
 		"loctool.lib.Xliff": "TRACE",
 		"loctool.loctool":  "INFO"
 	}
