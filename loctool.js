@@ -21,14 +21,28 @@ var logger = log4js.getLogger("loctool.loctool");
 var pull = false;
 
 function usage() {
-	console.log("Usage: loctool [-h] [-p] [root dir]\n" +
+	console.log("Usage: loctool [-h] [-p] [command [root dir]]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
 		"-p or --pull\n" +
 		"  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
+		"command\n" +
+		"  a command to execute. This is one of:\n" +
+		"    localize - extract strings and generate localized resource files. This is\n" +
+		"             the default command.\n" +
+		"    report - generate a loc report, but don't generate localized resource files.\n" +
+		"    export - export all the new strings to a set of xliff files.\n" +
+		"             Default: new-<locale>.xliff\n" +
+		"    import filename ... - import all the translated strings in the given\n" +
+		"             xliff files.\n" +
+		"    split (language|project) filename ... - split the given xliff files by\n" +
+		"             language or project.\n" +
+		"    merge outfile filename ... - merge the given xliff files to the named\n" +
+		"             outfile.\n" +
 		"root dir\n" +
-		"  directory containing the git projects with the source code. Default: current dir.\n");
+		"  directory containing the git projects with the source code. \n" +
+		"  Default: current dir.\n");
 	process.exit(1);
 }
 
@@ -138,45 +152,8 @@ function walk(dir, project) {
 			} else {
 				logger.trace("Ignoring non-project file: " + pathName);
 			}
-
-			/*
-			if (fileTypes) {
-				logger.trace("fileTypes.length is " + fileTypes.length);
-			    for (var i = 0; i < fileTypes.length; i++) {
-			    	logger.trace("Checking if " + fileTypes[i].name() + " handles " + path);
-	                if (fileTypes[i].handles(path)) {
-	                	logger.info("    " + path);
-						var file = fileTypes[i].newFile(path);
-						file.extract();
-						fileTypes[i].addSet(file.getTranslationSet());
-					}
-				}
-			} else {
-				// no file types to check?
-				logger.trace("no file types");
-			}
-			*/
 		}
 	});
-
-	/*
-	if (projectRoot) {
-		for (var i = 0; i < fileTypes.length; i++) {
-			//fileTypes[i].collect(function() {
-				fileTypes[i].generatePseudo();
-				fileTypes[i].write();
-			//}.bind(this));
-		}
-		
-		for (var i = 0; i < fileTypes.length; i++) {
-			fileTypes[i].close();
-		}
-
-		project = undefined;
-		fileTypes = undefined;
-		
-	}
-	*/
 	
 	return results;
 }
