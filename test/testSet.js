@@ -146,6 +146,26 @@ module.exports = {
         test.done();
     },
 
+    testSetAddUndefined: function(test) {
+        test.expect(5);
+
+        var s = new Set();
+        test.ok(s);
+        
+        s.add("a");
+        
+        test.ok(s.contains("a"));
+        
+        test.equal(s.size(), 1);
+        
+        s.add(undefined);
+        
+        test.equal(s.size(), 1);
+
+        test.ok(!s.contains(undefined));
+        test.done();
+    },
+
     testSetRemove: function(test) {
         test.expect(3);
 
@@ -317,7 +337,5 @@ module.exports = {
         test.equal(a.length, 3);
         
         test.done();
-    },
-
-
+    }
 };
