@@ -179,6 +179,22 @@ module.exports = {
         test.done();
     },
 
+    testResourceStringSize: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+            key: "foo",
+            source: "source string",
+            pathName: "a/b/c.txt",
+            locale: "de-DE"
+        });
+        
+        test.ok(rs);
+        test.equal(rs.size(), 1); // should always be 1
+        
+        test.done();
+    },
+
     testResourceStringGetSourceEmpty: function(test) {
         test.expect(2);
 
