@@ -149,6 +149,38 @@ module.exports = {
         test.done();
     },
 
+    testTranslationIsDirtyUpdateSource: function(test) {
+        test.expect(2);
+
+        var ts = new TranslationSet();
+        var res = new ResourceString({
+            key: "asdf",
+            project: "foo",
+            locale: "en-US",
+            source: "This is a test"
+        });
+        
+        ts.add(res);
+        ts.setClean();
+        
+        test.ok(!ts.isDirty());
+
+        res = new ResourceString({
+            key: "asdf",
+            project: "foo",
+            locale: "en-US",
+            source: "This is a new test"
+        });
+
+        // should not set the flag to dirty because the resource 
+        // is already there, so nothing is added
+        ts.add(res);
+        
+        test.ok(ts.isDirty());
+        
+        test.done();
+    },
+
     testTranslationSetGetWithContext: function(test) {
         test.expect(6);
 
