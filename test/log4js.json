@@ -16,6 +16,7 @@
 		"loctool.lib.AndroidResourceFile": "INFO",
 		"loctool.lib.AndroidResourceFileType": "INFO",
 		"loctool.lib.DBTranslationSet": "INFO",
+		"loctool.lib.FileType": "INFO",
 		"loctool.lib.HamlFile": "INFO",
 		"loctool.lib.HamlFileType": "INFO",
 		"loctool.lib.JavaFile": "INFO",
