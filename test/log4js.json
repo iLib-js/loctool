@@ -20,6 +20,7 @@
 		"loctool.lib.HamlFileType": "INFO",
 		"loctool.lib.JavaFile": "INFO",
 		"loctool.lib.JavaFileType": "INFO",
+		"loctool.lib.LocalRepository": "INFO",
 		"loctool.lib.Project": "INFO",
 		"loctool.lib.ResourceString": "INFO",
 		"loctool.lib.ResourceArray": "INFO",
