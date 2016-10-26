@@ -241,8 +241,9 @@ module.exports = {
 			project: "a",
 			context: "b",
 			reskey: "foofoo",
-			locale: "nl-NL"
-		}, function(resources) {
+			locale: "nl-NL",
+			resType: "string"
+		}, function(err, resources) {
 			test.ok(resources);
 
 			test.equal(resources.length, 0);
@@ -252,16 +253,18 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "foofoo",
-				locale: "nl-NL"    			
+				locale: "nl-NL",
+				resType: "string"
 			}, function(err, info) {
 				test.equal(err, null);
-				test.ok(info);
+				test.ok(!info);
 
 				repo.getBy({
 					project: "a",
 					context: "b",
 					reskey: "foofoo",
-					locale: "nl-NL"
+					locale: "nl-NL",
+					resType: "string"
 				}, function(err, resources) {
 					test.equal(resources.length, 0); // still not found
 					repo.close(function() {
@@ -294,7 +297,8 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "foofoo",
-				locale: "nl-NL"
+				locale: "nl-NL",
+				resType: "string"
 			}, function(err, resources) {
 				test.ok(resources);
 
@@ -309,15 +313,15 @@ module.exports = {
 				repo.remove({
 					resType: "string"
 				}, function(err, info) {
-					console.log("err is " + err + " and info is " + JSON.stringify(info));
-					test.ok(err);
+					test.ok(!err);
 					test.ok(!info);
 
 					repo.getBy({
 						project: "a",
 						context: "b",
 						reskey: "foofoo",
-						locale: "nl-NL"
+						locale: "nl-NL",
+						resType: "string"
 					}, function(err, resources) {
 						test.equal(resources.length, 1); // still there
 						repo.close(function() {
@@ -356,7 +360,7 @@ module.exports = {
 				key: "barbar",
 				source: "Oliefanten kunnen fliegen!"
 			})
-			]);
+		]);
 
 		repo.addAll(set, function(err, info) {
 			test.equal(err, null);
@@ -366,8 +370,7 @@ module.exports = {
 			repo.getBy({
 				project: "a",
 				context: "b",
-				reskey: "barbar",
-				sort: "id"
+				reskey: "barbar"
 			}, function(err, resources) {
 				test.ok(resources);
 
@@ -410,7 +413,6 @@ module.exports = {
 		});
 
 		repo.add(res, function(err, info) {
-			console.log("got here err=" + err + " info " + JSON.stringify(info));
 			test.equal(err, null);
 			test.ok(info);
 			test.equal(info.affectedRows, 4);
@@ -439,7 +441,7 @@ module.exports = {
 	},
 
 	testLocalRepositoryAddArrayEmpty: function(test) {
-		test.expect(5);
+		test.expect(6);
 
 		var repo = new LocalRepository();
 		var res = new ResourceArray({
@@ -462,7 +464,8 @@ module.exports = {
 				locale: "nl-NL"
 			}, function(err, resources) {
 				test.ok(resources);
-				test.equal(resources.length, 0);
+				test.equal(resources.length, 1);
+				test.equal(resources[0].size(), 0);
 
 				repo.close(function() {
 					test.done();
@@ -498,7 +501,8 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "jawel",
-				locale: "nl-NL"
+				locale: "nl-NL",
+				resType: "plural"
 			}, function(err, resources) {
 				test.ok(resources);
 
@@ -523,7 +527,7 @@ module.exports = {
 	},
 
 	testLocalRepositoryAddPluralEmpty: function(test) {
-		test.expect(5);
+		test.expect(6);
 
 		var repo = new LocalRepository();
 		var res = new ResourcePlural({
@@ -543,10 +547,12 @@ module.exports = {
 				project: "a",
 				context: "b",
 				reskey: "gossie",
-				locale: "nl-NL"
+				locale: "nl-NL",
+				resType: "plural"
 			}, function(err, resources) {
 				test.ok(resources);
-				test.equal(resources.length, 0);
+				test.equal(resources.length, 1);
+				test.equal(resources[0].size(), 0);
 
 				repo.close(function() {
 					test.done();
@@ -691,7 +697,7 @@ module.exports = {
 			repo.getContexts("a", function(contexts) {
 				test.ok(contexts);
 
-				test.equal(contexrepo.length, 3);
+				test.equal(contexts.length, 3);
 				test.equal(contexts[0], "a");
 				test.equal(contexts[1], "b");
 				test.equal(contexts[2], "c");
@@ -704,7 +710,7 @@ module.exports = {
 	},
 
 	testLocalRepositoryGetLocales: function(test) {
-		test.expect(9);
+		test.expect(8);
 
 		var repo = new LocalRepository();
 		var set = new TranslationSet();
@@ -730,7 +736,7 @@ module.exports = {
 				key: "barbar",
 				source: "Oliefanten kunnen fliegen!"
 			})
-			]);
+		]);
 
 		repo.addAll(set, function(err, info) {
 			test.equal(err, null);
@@ -740,11 +746,10 @@ module.exports = {
 			repo.getLocales("a", "a", function(locales) {
 				test.ok(locales);
 
-				test.equal(locales.length, 4);
+				test.equal(locales.length, 3);
 				test.equal(locales[0], "de-DE");
 				test.equal(locales[1], "en-CA");
-				test.equal(locales[2], "en-US");
-				test.equal(locales[3], "nl-NL");
+				test.equal(locales[2], "nl-NL");
 
 				repo.close(function() {
 					test.done();
