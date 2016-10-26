@@ -566,6 +566,57 @@ module.exports = {
         test.done();
     },
     
+    testTranslationSetAddAllRightSize: function(test) {
+        test.expect(2);
+
+        var ts = new TranslationSet();
+        
+        test.equal(ts.size(), 0);
+        
+        ts.addAll([
+	        new ResourceString({
+	            key: "asdf",
+	            source: "This is a test"
+	        }),
+	        new ResourceString({
+	            key: "qwerty",
+	            source: "This is another test"
+	        })
+	    ]);
+        
+        test.equal(ts.size(), 2);
+
+        test.done();
+    },
+
+    testTranslationSetAddAllEmpty: function(test) {
+        test.expect(2);
+
+        var ts = new TranslationSet();
+        
+        test.equal(ts.size(), 0);
+        
+        ts.addAll([]);
+        
+        test.equal(ts.size(), 0);
+
+        test.done();
+    },
+
+    testTranslationSetAddAllUndefined: function(test) {
+        test.expect(2);
+
+        var ts = new TranslationSet();
+        
+        test.equal(ts.size(), 0);
+        
+        ts.addAll(undefined);
+        
+        test.equal(ts.size(), 0);
+
+        test.done();
+    },
+
     testTranslationSetSize: function(test) {
         test.expect(1);
 
