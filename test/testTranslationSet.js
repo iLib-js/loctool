@@ -1799,7 +1799,7 @@ module.exports = {
     },
     
     testTranslationSetRemoveRightSize: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var ts = new TranslationSet();
         
@@ -1873,12 +1873,12 @@ module.exports = {
 
         test.equal(ts.size(), 10);
         
-        ts.remove({
+        test.ok(ts.remove(new ResourceString({
         	project: "asdf",
         	context: "bar",
         	locale: "ja-JP",
         	key: "foobarfoo"
-        });
+        })));
         
         test.equal(ts.size(), 9);
 
@@ -1886,7 +1886,7 @@ module.exports = {
     },
 
     testTranslationSetRemoveReallyGone: function(test) {
-        test.expect(2);
+        test.expect(10);
 
         var ts = new TranslationSet();
         
@@ -1962,38 +1962,41 @@ module.exports = {
         	project: "asdf",
         	context: "bar",
         	locale: "ja-JP",
-        	key: "foobarfoo"
+        	reskey: "foobarfoo",
+        	resType: "string"
         });
 
         test.ok(res);
         test.equal(res.length, 1);
         test.equal(res[0].getProject(), "asdf");
         test.equal(res[0].getContext(), "bar");
-        test.equal(res[0].getlocale(), "ja-JP");
+        test.equal(res[0].getLocale(), "ja-JP");
         test.equal(res[0].getKey(), "foobarfoo");
         test.equal(res[0].getSource(), "test test blah");
         
-        ts.remove({
+        test.ok(ts.remove(new ResourceString({
         	project: "asdf",
         	context: "bar",
         	locale: "ja-JP",
         	key: "foobarfoo"
-        });
-        
+        })));
+
         res = ts.getBy({
         	project: "asdf",
         	context: "bar",
         	locale: "ja-JP",
-        	key: "foobarfoo"
+        	reskey: "foobarfoo",
+        	resType: "string"
         });
         
-        test.ok(!res);
+        test.ok(res);
+        test.equal(res.length, 0);
         
         test.done();
     },
 
     testTranslationSetRemoveInsufficientFields: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var ts = new TranslationSet();
         
@@ -2068,10 +2071,10 @@ module.exports = {
         test.equal(ts.size(), 10);
         
         // have to specify everything needed to identify a single resource
-        test.throws(ts.getBy({
+        test.ok(!ts.remove({
         	context: "bar",
         	locale: "ja-JP",
-        	key: "foobarfoo"
+        	reskey: "foobarfoo"
         }));
         
         test.equal(ts.size(), 10);
@@ -2080,7 +2083,7 @@ module.exports = {
     },
 
     testTranslationSetRemoveBogusInput: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var ts = new TranslationSet();
         
@@ -2155,7 +2158,7 @@ module.exports = {
         test.equal(ts.size(), 10);
         
         // have to specify everything needed to identify a single resource
-        test.throws(ts.getBy(undefined));
+        test.ok(!ts.remove(undefined));
         
         test.equal(ts.size(), 10);
         
@@ -2163,7 +2166,7 @@ module.exports = {
     },
     
     testTranslationSetRemoveNoMatch: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var ts = new TranslationSet();
         
@@ -2238,12 +2241,12 @@ module.exports = {
         test.equal(ts.size(), 10);
         
         // does not match anything
-        ts.remove({
+        test.ok(!ts.remove(new ResourceString({
         	project: "ai jai jai",
         	context: "blech",
         	locale: "en-NZ",
-        	key: "juicy"
-        });
+        	reskey: "juicy"
+        })));
         
         test.equal(ts.size(), 10);
 
