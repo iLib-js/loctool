@@ -83,16 +83,18 @@ function processNextProject() {
 	
 	logger.debug("Processing project " + (project && project.id));
 	if (project) {
-		project.extract(function() {
-			project.save(function() {
-				project.generatePseudo();
-				project.write(function() {
-					project.close(function() {
-						processNextProject();
+		project.init(function() {
+			project.extract(function() {
+				project.save(function() {
+					project.generatePseudo();
+					project.write(function() {
+						project.close(function() {
+							processNextProject();
+						});
 					});
 				});
 			});
-		});
+		})
 	}
 }
 
@@ -170,6 +172,7 @@ try {
 			fileTypes[i].close();
 		}
 	}
+	log4js.shutdown();
 }
 logger.info("Done");
 

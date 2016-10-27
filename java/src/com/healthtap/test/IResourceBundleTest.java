@@ -465,4 +465,82 @@ public class IResourceBundleTest extends TestCase
 		assertEquals("àçţüàľ %Ð 43210", resBundle.getStringPseudo("actual %D ").toString());
 		assertEquals("àçţüàľ %Ø 43210", resBundle.getStringPseudo("actual %O ").toString());
 	}
+	
+	public void testMakeKeySimpleTexts1()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		assertNotNull(resBundle);
+		
+		assertEquals("r32020327", resBundle.makeKey("Medications in your profile"));
+		assertEquals("r835310324", resBundle.makeKey("All medications"));
+		assertEquals("r103883086", resBundle.makeKey("Conditions"));
+		assertEquals("r481086103", resBundle.makeKey("Symptoms"));
+		assertEquals("r343852585", resBundle.makeKey("Experts"));
+	}
+
+	public void testMakeKeySimpleTexts2()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		assertNotNull(resBundle);
+		
+		assertEquals("r807691021", resBundle.makeKey("Procedures"));
+		assertEquals("r941505899", resBundle.makeKey("Health Apps"));
+		assertEquals("r240633868", resBundle.makeKey("Conditions in your profile"));
+		assertEquals("r795086964", resBundle.makeKey("Treatment Reviews"));
+		assertEquals("r221604632", resBundle.makeKey("Answers"));
+	}
+
+	public void testMakeKeySimpleTexts3()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		assertNotNull(resBundle);
+		
+		assertEquals("r669315500", resBundle.makeKey("Private Health Profile"));
+		assertEquals("r710774033", resBundle.makeKey("People you care for"));
+		assertEquals("r284964820", resBundle.makeKey("Notifications"));
+		assertEquals("r613036745", resBundle.makeKey("News"));
+		assertEquals("r216617786", resBundle.makeKey("More Tips"));
+		assertEquals("r788359072", resBundle.makeKey("Goals"));
+		assertEquals("r140625167", resBundle.makeKey("Referral Link"));
+		assertEquals("r256277957", resBundle.makeKey("Questions"));
+		assertEquals("r18128760", resBundle.makeKey("Private consults"));
+		assertEquals("r584966709", resBundle.makeKey("Suggested doctors for you"));
+	}
+
+	public void testMakeKeyEscapes()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		
+		assertEquals("r926831062", resBundle.makeKey("Can\'t find treatment id"));
+		assertEquals("r909283218", resBundle.makeKey("Can\'t find an application for SMS"));
+	}
+	
+	public void testMakeKeyPunctuation()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		
+		assertEquals("r382554039", resBundle.makeKey("{topic_name}({topic_generic_name})"));
+		
+		assertEquals("r436261634", resBundle.makeKey("{doctor_name}, {sharer_name} {start}found this helpful{end}"));
+		assertEquals("r858107784", resBundle.makeKey("{sharer_name} {start}found this helpful{end}"));
+		assertEquals("r522565682", resBundle.makeKey("Grow your Care-Team"));
+		assertEquals("r1015770123", resBundle.makeKey("Failed to send connection request!"));
+		assertEquals("r993422001", resBundle.makeKey("{goal_name} Goals"));
+		assertEquals("r201354363", resBundle.makeKey("Referral link copied!"));
+	}
 }
