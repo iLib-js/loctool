@@ -146,6 +146,43 @@ module.exports = {
         test.done();
     },
 
+    testSetAddUndefined: function(test) {
+        test.expect(5);
+
+        var s = new Set();
+        test.ok(s);
+        
+        s.add("a");
+        
+        test.ok(s.contains("a"));
+        
+        test.equal(s.size(), 1);
+        
+        s.add(undefined);
+        
+        test.equal(s.size(), 1);
+
+        test.ok(!s.contains(undefined));
+        test.done();
+    },
+
+    testSetAddEmptyString: function(test) {
+        test.expect(4);
+
+        var s = new Set();
+        test.ok(s);
+        
+        test.ok(!s.contains(""));
+        
+        s.add("");
+        
+        test.ok(s.contains(""));
+        
+        test.equal(s.size(), 1);
+        
+        test.done();
+    },
+    
     testSetRemove: function(test) {
         test.expect(3);
 
@@ -317,7 +354,5 @@ module.exports = {
         test.equal(a.length, 3);
         
         test.done();
-    },
-
-
+    }
 };

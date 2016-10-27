@@ -9,6 +9,7 @@ if (!DBTranslationSet) {
     var ResourceString = require("../lib/ResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
+    var TranslationSet = require("../lib/TranslationSet.js");
 }
 
 module.exports = {
@@ -322,7 +323,8 @@ module.exports = {
         test.expect(20);
 
         var ts = new DBTranslationSet();
-        var resources = [
+        var set = new TranslationSet();
+        set.addAll([
             new ResourceString({
 	        	project: "a",
 	        	context: "b",
@@ -344,9 +346,9 @@ module.exports = {
 	        	key: "barbar",
 	            source: "Oliephanten kunnen fliegen!"
 	        })
-	    ];
+	    ]);
         
-        ts.addAll(resources, function(err, info) {
+        ts.addAll(set, function(err, info) {
         	test.equal(err, null);
         	test.ok(info);
         	test.equal(info.affectedRows, 3);
@@ -590,7 +592,8 @@ module.exports = {
         test.expect(8);
 
         var ts = new DBTranslationSet();
-        var resources = [
+        var set = new TranslationSet();
+        set.addAll([
             new ResourceString({
 	        	project: "a",
 	        	context: "b",
@@ -612,9 +615,9 @@ module.exports = {
 	        	key: "barbar",
 	            source: "Oliephanten kunnen fliegen!"
 	        })
-	    ];
+	    ]);
         
-        ts.addAll(resources, function(err, info) {
+        ts.addAll(set, function(err, info) {
         	test.equal(err, null);
         	test.ok(info);
         	test.equal(info.affectedRows, 3);
@@ -637,7 +640,8 @@ module.exports = {
         test.expect(8);
 
         var ts = new DBTranslationSet();
-        var resources = [
+        var set = new TranslationSet();
+        set.addAll([
             new ResourceString({
 	        	project: "a",
 	        	context: "a",
@@ -659,9 +663,9 @@ module.exports = {
 	        	key: "barbar",
 	            source: "Oliephanten kunnen fliegen!"
 	        })
-	    ];
+	    ]);
         
-        ts.addAll(resources, function(err, info) {
+        ts.addAll(set, function(err, info) {
         	test.equal(err, null);
         	test.ok(info);
         	test.equal(info.affectedRows, 3);
@@ -684,7 +688,8 @@ module.exports = {
         test.expect(9);
 
         var ts = new DBTranslationSet();
-        var resources = [
+        var set = new TranslationSet();
+        set.addAll([
             new ResourceString({
 	        	project: "a",
 	        	context: "a",
@@ -706,9 +711,9 @@ module.exports = {
 	        	key: "barbar",
 	            source: "Oliephanten kunnen fliegen!"
 	        })
-	    ];
+	    ]);
         
-        ts.addAll(resources, function(err, info) {
+        ts.addAll(set, function(err, info) {
         	test.equal(err, null);
         	test.ok(info);
         	test.equal(info.affectedRows, 3);

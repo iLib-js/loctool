@@ -622,7 +622,7 @@ public class IResourceBundle {
      * @param source input source string
      * @return unique key that contains no spaces, and modified equals and colon signs
      */
-    protected String makeKey(String source)
+    public String makeKey(String source)
     {
 		if ( source == null )
 			return null;
@@ -631,9 +631,9 @@ public class IResourceBundle {
 		// identifier.
 		
 		long hash = 0;
-		// these two numbers together = 63 bits so it won't blow out a long
-		long modulus = 140737488355213L;  // largest prime number that fits in 47 bits
-		long multiple = 65521;            // largest prime that fits in 16 bits, co-prime with the modulus
+		// these two numbers together = 46 bits so it won't blow out the precision of an integer in javascript
+		long modulus = 1073741789L;  // largest prime number that fits in 30 bits
+		long multiple = 65521;       // largest prime that fits in 16 bits, co-prime with the modulus
 		
 		for (int i = 0; i < source.length(); i++) {
 			hash += source.charAt(i);
@@ -642,7 +642,7 @@ public class IResourceBundle {
 		}
 		String value = "r" + hash;
 		
-		// System.out.println("String '" + source + "' hashes to " + value);
+		System.out.println("String '" + source + "' hashes to " + value);
 		
 		return isHTML_XML_Type() ? unescape(value) : value;
     }

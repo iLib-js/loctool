@@ -60,7 +60,7 @@ module.exports = {
         var alf = new AndroidLayoutFile({project: p, pathName: "foo"});
         test.ok(alf);
         
-        test.equal(alf.makeKey("android:text", "This is a test"), "android_text_This_is_a_test");
+        test.equal(alf.makeKey("android:text", "This is a test"), "text_This_is_a_test");
         
         test.done();
     },
@@ -112,11 +112,11 @@ module.exports = {
         var set = alf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("android_text_This_is_a_test");
+        var r = set.get("text_This_is_a_test");
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "android_text_This_is_a_test");
+        test.equal(r.getKey(), "text_This_is_a_test");
         
         test.done();
     },
@@ -153,7 +153,7 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "android_text_This_is_a_test");
+        test.equal(r.getKey(), "text_This_is_a_test");
         
         test.done();
     },
@@ -222,11 +222,11 @@ module.exports = {
         var set = alf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("android_text_This_is_a_test");
+        var r = set.get("text_This_is_a_test");
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "android_text_This_is_a_test");
+        test.equal(r.getKey(), "text_This_is_a_test");
         test.equal(r.getComment(), "This is a translator comment");
         
         test.done();
@@ -265,12 +265,12 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "android_text_This_is_a_test");
+        test.equal(r.getKey(), "text_This_is_a_test");
         
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
-        test.equal(r.getKey(), "android_text_This_is_also_a_test");
+        test.equal(r.getKey(), "text_This_is_also_a_test");
         
         test.done();
     },
@@ -308,7 +308,7 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "android_text_This_is_a_test");
+        test.equal(r.getKey(), "text_This_is_a_test");
         
         test.equal(set.size(), 2);
         
@@ -350,19 +350,19 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "android_text_This_is_a_test");
+        test.equal(r.getKey(), "text_This_is_a_test");
         test.equal(r.getComment(), "translator comment 3");
         
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
-        test.equal(r.getKey(), "android_text_This_is_also_a_test");
+        test.equal(r.getKey(), "text_This_is_also_a_test");
         test.equal(r.getComment(), "translator comment 2");
 
         r = set.getBySource("foobar foo");
         test.ok(r);
         test.equal(r.getSource(), "foobar foo");
-        test.equal(r.getKey(), "android_title_foobar_foo");
+        test.equal(r.getKey(), "title_foobar_foo");
         test.equal(r.getComment(), "translator comment 1");
 
         test.done();
@@ -391,7 +391,7 @@ module.exports = {
         var r = set.getBySource("Unlimited Doctor Consults");
         test.ok(r);
         test.equal(r.getSource(), "Unlimited Doctor Consults");
-        test.equal(r.getKey(), "android_text_Unlimited_Doctor_Consults");
+        test.equal(r.getKey(), "text_Unlimited_Doctor_Consults");
 
         test.done();
     },
@@ -458,7 +458,7 @@ module.exports = {
       		  '  android:title="@string/foo">' + 
       		  '  <RelativeLayout ' + 
       		  '    android:layout_width="match_parent"' + 
-      		  '    android:text="@string/android_text_This_is_a_test">' + 
+      		  '    android:text="@string/text_This_is_a_test">' + 
       		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
       		  '      android:id="@+id/invalidpassowrdMsg"  ' + 
       		  '      android:text="This is a test" ' + 
@@ -472,7 +472,7 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "android_text_This_is_a_test");
+        test.equal(r.getKey(), "text_This_is_a_test");
         
         test.equal(set.size(), 1);
         
@@ -514,10 +514,10 @@ module.exports = {
 		  '  android:title="@string/foo">' + 
 		  '  <RelativeLayout' + 
 		  '    android:layout_width="match_parent"' + 
-		  '    android:text="@string/android_text_This_is_also_a_test">' + 
+		  '    android:text="@string/text_This_is_also_a_test">' + 
 		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView' + 
 		  '      android:id="@+id/invalidpassowrdMsg"' + 
-		  '      android:text="@string/android_text_This_is_a_test"' +
+		  '      android:text="@string/text_This_is_a_test"' +
 		  '      android:textColor="@color/error_red"/>' + 
 		  '  </RelativeLayout>' + 
 		  '</FrameLayout>';
@@ -708,5 +708,6 @@ module.exports = {
         test.equal(alf.getContext(), "bar");
 
         test.done();
-    }
+    },
+    
 };
