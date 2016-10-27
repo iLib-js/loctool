@@ -61,6 +61,21 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileMakeKey2: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        test.equal(j.makeKey("Medications in your profile"), "r17056543106824");
+        
+        test.done();
+    },
+
     testJavaFileMakeKeySameStringMeansSameKey: function(test) {
         test.expect(3);
 
