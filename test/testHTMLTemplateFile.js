@@ -221,7 +221,7 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         
-        test.equal(set.size(), 1);
+        test.equal(set.size(), 2);
         
         test.done();
     },
@@ -268,72 +268,7 @@ module.exports = {
         
         test.done();
     },
-
-    testHTMLTemplateFileExtractFile: function(test) {
-        test.expect(5);
-
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new HTMLTemplateFile(p, "./tmpl/CookieFlowConciergeTemplate.tmpl.html");
-        test.ok(j);
-        
-        // should read the file
-        j.extract();
-        
-        var set = j.getTranslationSet();
-        
-        test.equal(set.size(), 2);
-        
-        var r = set.getBySource("Get doctor answers for free!");
-        test.ok(r);
-        test.equal(r.getSource(), "Get doctor answers for free!");
-        test.equal(r.getKey(), "Get doctor answers for free!");
-       
-        test.done();
-    },
     
-    testHTMLTemplateFileExtractUndefinedFile: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
-        
-        // should attempt to read the file and not fail
-        j.extract();
-        
-        var set = j.getTranslationSet();
-        
-        test.equal(set.size(), 0);
-
-        test.done();
-    },
-
-    testHTMLTemplateFileExtractBogusFile: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new HTMLTemplateFile(p, "./tmpl/bogus.tmpl.html");
-        test.ok(j);
-        
-        // should attempt to read the file and not fail
-        j.extract();
-        
-        var set = j.getTranslationSet();
-        
-        test.equal(set.size(), 0);
-
-        test.done();
-    },
-
     testHTMLTemplateFileParseNonBreakingTags: function(test) {
         test.expect(5);
 
@@ -357,6 +292,35 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "This is a <em>test</em> of the emergency parsing system.");
         test.equal(r.getKey(), "This is a <em>test</em> of the emergency parsing system.");
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileParseNonBreakingTagsOutside: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new HTMLTemplateFile(p);
+        test.ok(j);
+        
+        j.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <span id="foo" class="bar">  This is a test of the emergency parsing system.  </span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        // should not pick up the span tag because there is no localizable text
+        // before it or after it
+        var r = set.getBySource("This is a test of the emergency parsing system.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test of the emergency parsing system.");
+        test.equal(r.getKey(), "This is a test of the emergency parsing system.");
                 
         test.done();
     },
@@ -453,10 +417,10 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource('This is <a href="foo.html">a test</a> of non-breaking tags.');
+        var r = set.getBySource('This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.');
         test.ok(r);
-        test.equal(r.getSource(), 'This is <a href="foo.html">a test</a> of non-breaking tags.');
-        test.equal(r.getKey(), 'This is <a href="foo.html">a test</a> of non-breaking tags.');
+        test.equal(r.getSource(), 'This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.');
+        test.equal(r.getKey(), 'This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.');
         
         r = set.getBySource("localizable title");
         test.ok(r);
@@ -555,6 +519,91 @@ module.exports = {
         test.equal(r.getKey(), "This is a test of the emergency parsing system.");
         test.equal(r.getComment(), "this describes the text below");
                 
+        test.done();
+    },
+
+    testHTMLTemplateFileExtractFile: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new HTMLTemplateFile(p, "./tmpl/CookieFlowConciergeTemplate.tmpl.html");
+        test.ok(j);
+        
+        // should read the file
+        j.extract();
+        
+        var set = j.getTranslationSet();
+        
+        test.equal(set.size(), 4);
+        
+        var r = set.getBySource("Get doctor answers for free!");
+        test.ok(r);
+        test.equal(r.getSource(), "Get doctor answers for free!");
+        test.equal(r.getKey(), "Get doctor answers for free!");
+       
+        r = set.getBySource("Consult");
+        test.ok(r);
+        test.equal(r.getSource(), "Consult");
+        test.equal(r.getKey(), "Consult");
+
+        r = set.getBySource("Send question");
+        test.ok(r);
+        test.equal(r.getSource(), "Send question");
+        test.equal(r.getKey(), "Send question");
+
+        r = set.getBySource("Ask");
+        test.ok(r);
+        test.equal(r.getSource(), "Ask");
+        test.equal(r.getKey(), "Ask");
+
+        r = set.getBySource("Ask");
+        test.ok(r);
+        test.equal(r.getSource(), "Ask");
+        test.equal(r.getKey(), "Ask");
+
+        test.done();
+    },
+
+    testHTMLTemplateFileExtractUndefinedFile: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new HTMLTemplateFile(p);
+        test.ok(j);
+        
+        // should attempt to read the file and not fail
+        j.extract();
+        
+        var set = j.getTranslationSet();
+        
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testHTMLTemplateFileExtractBogusFile: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new HTMLTemplateFile(p, "./tmpl/bogus.tmpl.html");
+        test.ok(j);
+        
+        // should attempt to read the file and not fail
+        j.extract();
+        
+        var set = j.getTranslationSet();
+        
+        test.equal(set.size(), 0);
+
         test.done();
     },
 
