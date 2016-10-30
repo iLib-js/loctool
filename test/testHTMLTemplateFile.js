@@ -325,6 +325,35 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileParseNonBreakingTagsInside: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new HTMLTemplateFile(p);
+        test.ok(j);
+        
+        j.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        // should not pick up the span tag because there is no localizable text
+        // before it or after it
+        var r = set.getBySource('This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
+        test.ok(r);
+        test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
+        test.equal(r.getKey(), 'This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
+                
+        test.done();
+    },
+
     testHTMLTemplateFileParseLocalizableTitle: function(test) {
         test.expect(8);
 
