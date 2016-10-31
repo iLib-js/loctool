@@ -776,12 +776,12 @@ module.exports = {
         translations.add(new ResourceString({
         	project: "foo",
         	key: "This is a test",
-        	source: "Ceci est une teste",
+        	source: "Ceci est un essai",
         	locale: "fr-FR"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
-    		'<html><body>Ceci est une teste</body></html>\n');
+    		'<html><body>Ceci est un essai</body></html>\n');
         
         test.done();
     },
@@ -808,18 +808,634 @@ module.exports = {
         translations.add(new ResourceString({
         	project: "foo",
         	key: "This is a test",
-        	source: "Ceci est une teste",
+        	source: "Ceci est un essai",
         	locale: "fr-FR"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
     		'<html>\n' + 
     		'<body>\n' +
-    		'     Ceci est une teste    \n' +
+    		'     Ceci est un essai    \n' +
     		'</body>\n' + 
     		'</html>\n');
         
         test.done();
     },
 
+    testHTMLTemplateFileLocalizeTextMultiple: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       This is a test\n' +
+        		'       <div id="foo">\n' + 
+        		'           This is also a test\n' +
+        		'       </div>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "This is a test",
+        	source: "Ceci est un essai",
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "This is also a test",
+        	source: "Ceci est aussi un essai",
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       Ceci est un essai\n' +
+        		'       <div id="foo">\n' + 
+        		'           Ceci est aussi un essai\n' +
+        		'       </div>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextWithDups: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       This is a test\n' +
+        		'       <div id="foo">\n' + 
+        		'           This is also a test\n' +
+        		'       </div>\n' +
+        		'       This is a test\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "This is a test",
+        	source: "Ceci est un essai",
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "This is also a test",
+        	source: "Ceci est aussi un essai",
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       Ceci est un essai\n' +
+        		'       <div id="foo">\n' + 
+        		'           Ceci est aussi un essai\n' +
+        		'       </div>\n' +
+        		'       Ceci est un essai\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileSkipScript: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <head>\n' + 
+        		'   <script>\n' +
+        		'// comment text\n' +
+        		'if (locales.contains[thisLocale]) {\n' +
+        		'	document.write("<input id=\"locale\" class=\"foo\" title=\"bar\"></input>");\n' +
+        		'}\n' +
+        		'   </head>\n' + 
+        		'   </script>\n' + 
+        		'   <body>\n' + 
+        		'       This is a test\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "This is a test",
+        	source: "Ceci est un essai",
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    		'<html>\n' +
+    		'   <head>\n' + 
+    		'   <script>\n' +
+    		'// comment text\n' +
+    		'if (locales.contains[thisLocale]) {\n' +
+    		'	document.write("<input id=\"locale\" class=\"foo\" title=\"bar\"></input>");\n' +
+    		'}\n' +
+    		'   </head>\n' + 
+    		'   </script>\n' + 
+    		'   <body>\n' + 
+    		'       Ceci est un essai\n' +
+    		'   </body>\n' +
+    		'</html>\n');
+        
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextNonBreakingTags: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       This is a <em>test</em> of the emergency parsing system.  \n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "This is a <em>test</em> of the emergency parsing system.",
+        	source: "Ceci est un <em>essai</em> du système d'analyse syntaxique de l'urgence.",
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    		'<html>\n' +
+    		'   <body>\n' + 
+    		'       Ceci est un <em>essai</em> du système d\'analyse syntaxique de l\'urgence.  \n' +
+    		'   </body>\n' +
+    		'</html>\n');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextNonBreakingTagsOutside: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <span id="foo" class="bar">  This is a test of the emergency parsing system.  </span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "This is a test of the emergency parsing system.",
+        	source: "Ceci est un essai du système d'analyse syntaxique de l'urgence.",
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    		'<html>\n' +
+    		'   <body>\n' + 
+    		'       <span id="foo" class="bar">  Ceci est un essai du système d\'analyse syntaxique de l\'urgence.  </span>\n' +
+    		'   </body>\n' +
+    		'</html>\n');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextNonBreakingTagsInside: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.',
+        	source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de l\'urgence.</span>',
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    		'<html>\n' +
+    		'   <body>\n' + 
+    		'       Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de l\'urgence.</span>\n' +
+    		'   </body>\n' +
+    		'</html>\n');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextNonBreakingTagsInsideMultiple: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.',
+        	source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence</em>.</span>',
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    		'<html>\n' +
+    		'   <body>\n' + 
+    		'       Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence</em>.</span>\n' +
+    		'   </body>\n' +
+    		'</html>\n');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextNonBreakingTagsNotWellFormed: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.',
+        	source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</span>',
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextNonBreakingTagsNotWellFormedWithTerminatorTag: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <div>This is <span id="foo" class="bar"> a test of the <em>emergency parsing </div> system.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing',
+        	source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique',
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       <div>Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique </div> system.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextLocalizableTitle: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <div title="This value is localizable">\n' + 
+        		'           This is a test\n' +
+        		'       </div>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'This value is localizable',
+        	source: 'Cette valeur est localisable',
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'This is a test',
+        	source: 'Ceci est un essai',
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       <div title="Cette valeur est localisable">\n' + 
+        		'           Ceci est un essai\n' +
+        		'       </div>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextLocalizableAttributes: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <img src="http://www.test.test/foo.png" alt="Alternate text">\n' + 
+        		'       This is a test\n' +
+        		'       <input type="text" placeholder="localizable placeholder here">\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'Alternate text',
+        	source: 'Texte alternative',
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'This is a test',
+        	source: 'Ceci est un essai',
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'localizable placeholder here',
+        	source: 'espace réservé localisable ici',
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       <img src="http://www.test.test/foo.png" alt="Texte alternative">\n' + 
+        		'       Ceci est un essai\n' +
+        		'       <input type="text" placeholder="espace réservé localisable ici">\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextLocalizableAttributesAndNonBreakingTags: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       This is <a href="foo.html" title="localizable title">a test</a> of non-breaking tags.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.',
+        	source: 'Ceci est <a href="foo.html" title="{title}">un essai</a> des balises non-ruptures.',
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'localizable title',
+        	source: 'titre localisable',
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       Ceci est <a href="foo.html" title="titre localisable">un essai</a> des balises non-ruptures.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextBreakBetweenTemplateTags: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <% if(doctor){ %>\n' +
+                '           Consult\n' +
+                '       <% } else { %>\n' +
+                '           Get doctor answers for free!\n' +
+                '       <% } %>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'Consult',
+        	source: 'Une consultation',
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'Get doctor answers for free!',
+        	source: 'Obtenez des réponses de médecins gratuitement!',
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    		'<html>\n' +
+    		'   <body>\n' + 
+    		'       <% if(doctor){ %>\n' +
+            '           Une consultation\n' +
+            '       <% } else { %>\n' +
+            '           Obtenez des réponses de médecins gratuitement!\n' +
+            '       <% } %>\n' +
+    		'   </body>\n' +
+    		'</html>\n');
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextDontBreakBetweenTemplateEchoTags: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       Dr. <%= family_name %> is not available.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'Dr. <%= family_name %> is not available.',
+        	source: 'Dr. <%= family_name %> ne sont pas disponibles.',
+        	locale: "fr-FR"
+        }));
+        
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       Dr. <%= family_name %> ne sont pas disponibles.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextI18NComments: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' +
+        		'       <!-- i18n: this describes the text below -->\n' +
+        		'       This is a test of the emergency parsing system.  \n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'This is a test of the emergency parsing system.',
+        	source: 'Ceci est un essai du système d\'analyse syntaxique de l\'urgence.',
+        	locale: "fr-FR"
+        }));
+        
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' +
+        		'       \n' +
+        		'       Ceci est un essai du système d\'analyse syntaxique de l\'urgence.  \n' +
+        		'   </body>\n' +
+        		'</html>\n');
+                
+        test.done();
+    }
 };
