@@ -4,17 +4,21 @@
  * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
  */
 
+var path = require("path");
+
 if (!HTMLTemplateFile) {
     var HTMLTemplateFile = require("../lib/HTMLTemplateFile.js");
     var WebProject =  require("../lib/WebProject.js");
+    var TranslationSet =  require("../lib/TranslationSet.js");
+    var ResourceString =  require("../lib/ResourceString.js");
 }
 
 module.exports = {
     testHTMLTemplateFileConstructor: function(test) {
         test.expect(1);
 
-        var j = new HTMLTemplateFile();
-        test.ok(j);
+        var htf = new HTMLTemplateFile();
+        test.ok(htf);
         
         test.done();
     },
@@ -26,9 +30,9 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p, "./testfiles/tmpl/CookieFlowConciergeTemplate.tmpl.html");
+        var htf = new HTMLTemplateFile(p, "./testfiles/tmpl/CookieFlowConciergeTemplate.tmpl.html");
         
-        test.ok(j);
+        test.ok(htf);
         
         test.done();
     },
@@ -40,8 +44,8 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
         test.done();
     },
@@ -53,10 +57,10 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        test.equal(j.makeKey("This is a test"), "This is a test");
+        test.equal(htf.makeKey("This is a test"), "This is a test");
         
         test.done();
     },
@@ -68,12 +72,12 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html><body>This is a test</body></html>');
+        htf.parse('<html><body>This is a test</body></html>');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.get("This is a test");
@@ -92,12 +96,12 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html><body>This is a test</body></html>');
+        htf.parse('<html><body>This is a test</body></html>');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -115,16 +119,16 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' + 
+        htf.parse('<html>\n' + 
         		'<body>\n' +
         		'     This is a test    \n' +
         		'</body>\n' + 
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -135,7 +139,6 @@ module.exports = {
         test.done();
     },
 
-
     testHTMLTemplateFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
@@ -143,13 +146,13 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
 
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.equal(set.size(), 0);
 
-        j.parse('<html><body>This is a test</body></html>');
+        htf.parse('<html><body>This is a test</body></html>');
         
         test.ok(set);
         
@@ -165,10 +168,10 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       This is a test\n' +
         		'       <div id="foo">\n' + 
@@ -177,7 +180,7 @@ module.exports = {
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -200,10 +203,10 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       This is a test\n' +
         		'       <div id="foo">\n' + 
@@ -213,7 +216,7 @@ module.exports = {
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -233,10 +236,10 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <head>\n' + 
         		'   <script>\n' +
         		'// comment text\n' +
@@ -250,7 +253,7 @@ module.exports = {
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -276,16 +279,16 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       This is a <em>test</em> of the emergency parsing system.  \n' +
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a <em>test</em> of the emergency parsing system.");
@@ -303,16 +306,16 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       <span id="foo" class="bar">  This is a test of the emergency parsing system.  </span>\n' +
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         // should not pick up the span tag because there is no localizable text
@@ -332,16 +335,16 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.\n' +
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         // should pick up the span tag because there is localizable text
@@ -361,16 +364,16 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.\n' +
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         // tags should be nestable
@@ -389,16 +392,16 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.\n' +
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         // the end span tag should automatically end the em tag
@@ -417,16 +420,16 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       <div>This is <span id="foo" class="bar"> a test of the <em>emergency parsing </div> system.\n' +
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         // the end div tag ends all the other tags
@@ -445,17 +448,17 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       <div>This is <span id="foo" class="bar"> a test of the <em>emergency parsing</em> system.</div>\n' +
         		'       <div>This is <b>another test</b> of the emergency parsing </span> system.</div>\n' +
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         // the end div tag ends all the other tags
@@ -474,10 +477,10 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       <div title="This value is localizable">\n' + 
         		'           This is a test\n' +
@@ -485,7 +488,7 @@ module.exports = {
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -508,10 +511,10 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       <img src="http://www.test.test/foo.png" alt="Alternate text">\n' + 
         		'       This is a test\n' +
@@ -519,7 +522,7 @@ module.exports = {
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test");
@@ -547,16 +550,16 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       This is <a href="foo.html" title="localizable title">a test</a> of non-breaking tags.\n' +
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource('This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.');
@@ -579,10 +582,10 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       <% if(doctor){ %>\n' +
                 '           Consult\n' +
@@ -592,7 +595,7 @@ module.exports = {
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource('Consult');
@@ -615,16 +618,16 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' + 
         		'       Dr. <%= family_name %> is not available.\n' +
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource('Dr. <%= family_name %> is not available.');
@@ -642,17 +645,17 @@ module.exports = {
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
-        j.parse('<html>\n' +
+        htf.parse('<html>\n' +
         		'   <body>\n' +
         		'       <!-- i18n: this describes the text below -->\n' +
         		'       This is a test of the emergency parsing system.  \n' +
         		'   </body>\n' +
         		'</html>\n');
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         test.ok(set);
         
         var r = set.getBySource("This is a test of the emergency parsing system.");
@@ -667,17 +670,19 @@ module.exports = {
     testHTMLTemplateFileExtractFile: function(test) {
         test.expect(17);
 
+        var base = path.dirname(module.id);
+        
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, path.join(base, "testfiles"));
         
-        var j = new HTMLTemplateFile(p, "./tmpl/CookieFlowConciergeTemplate.tmpl.html");
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p, "./tmpl/CookieFlowConciergeTemplate.tmpl.html");
+        test.ok(htf);
         
         // should read the file
-        j.extract();
+        htf.extract();
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         
         test.equal(set.size(), 4);
         
@@ -712,17 +717,19 @@ module.exports = {
     testHTMLTemplateFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
+        var base = path.dirname(module.id);
+        
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, path.join(base, "testfiles"));
         
-        var j = new HTMLTemplateFile(p);
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
         
         // should attempt to read the file and not fail
-        j.extract();
+        htf.extract();
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         
         test.equal(set.size(), 0);
 
@@ -732,20 +739,86 @@ module.exports = {
     testHTMLTemplateFileExtractBogusFile: function(test) {
         test.expect(2);
 
+        var base = path.dirname(module.id);
+        
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, path.join(base, "testfiles"));
         
-        var j = new HTMLTemplateFile(p, "./tmpl/bogus.tmpl.html");
-        test.ok(j);
+        var htf = new HTMLTemplateFile(p, "./tmpl/bogus.tmpl.html");
+        test.ok(htf);
         
         // should attempt to read the file and not fail
-        j.extract();
+        htf.extract();
         
-        var set = j.getTranslationSet();
+        var set = htf.getTranslationSet();
         
         test.equal(set.size(), 0);
 
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeText: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	name: "foo",
+        	id: "foo",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html><body>This is a test</body></html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "This is a test",
+        	source: "Ceci est une teste",
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    		'<html><body>Ceci est une teste</body></html>\n');
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextPreserveWhitespace: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	name: "foo",
+        	id: "foo",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' + 
+        		'<body>\n' +
+        		'     This is a test    \n' +
+        		'</body>\n' + 
+        		'</html>\n');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "This is a test",
+        	source: "Ceci est une teste",
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    		'<html>\n' + 
+    		'<body>\n' +
+    		'     Ceci est une teste    \n' +
+    		'</body>\n' + 
+    		'</html>\n');
+        
         test.done();
     },
 
