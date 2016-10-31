@@ -1437,5 +1437,53 @@ module.exports = {
         		'</html>\n');
                 
         test.done();
+    },
+    
+    testHTMLTemplateFileGetLocalizePathSimple: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p, "simple.tmpl.html");
+        test.ok(htf);
+        
+        test.equal(htf.getLocalizedPath("fr-FR"), "simple.fr-FR.tmpl.html");
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileGetLocalizePathComplex: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.tmpl.html");
+        test.ok(htf);
+        
+        test.equal(htf.getLocalizedPath("fr-FR"), "./asdf/bar/simple.fr-FR.tmpl.html");
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileGetLocalizePathNotEnoughParts: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.html");
+        test.ok(htf);
+        
+        test.equal(htf.getLocalizedPath("fr-FR"), "./asdf/bar/simple.fr-FR.html");
+                
+        test.done();
     }
 };
