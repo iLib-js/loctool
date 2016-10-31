@@ -78,6 +78,27 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		</sequential>
 	</macrodef>
 
+	<macrodef name="debug">
+		<attribute name="script"/>
+		<attribute name="dir"/>
+		<sequential>
+			<exec osfamily="unix" executable="${node}/bin/node" dir="@{dir}" failifexecutionfails="true" failonerror="true">
+				<env key="PATH" path="${node}/bin:${env.PATH}"/>
+				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
+				<arg line="${nodeinspector}/bin/node-debug.js"/>
+				<arg line="${nodeunit}/bin/nodeunit"/>
+				<arg line="@{script}"/>
+			</exec>
+			<exec osfamily="windows" executable="${node}/bin/node.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
+				<env key="PATH" path="${node}/bin;${env.PATH}"/>
+				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
+				<arg line="${nodeinspector}/bin/node-debug.js"/>
+				<arg line="${nodeunit}/bin/nodeunit"/>
+				<arg line="@{script}"/>
+			</exec>
+		</sequential>
+	</macrodef>
+
 	<target name="test.resourcestring" description="Run only the resource string tests">
 		<run script="${build.test}/testResourceString.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
@@ -124,6 +145,10 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 
 	<target name="test.htmltemplatefile" description="Run only the tests for the HTML templates">
 		<run script="${build.test}/testHTMLTemplateFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.htmltemplatefile" description="Debug only the tests for the HTML templates">
+		<debug script="${build.test}/testHTMLTemplateFile.js" dir="${build.test}"/>
 	</target>
 
 	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.htmltemplatefile">
