@@ -5,6 +5,7 @@
  */
 
 var path = require("path");
+var fs = require("fs");
 
 if (!HTMLTemplateFile) {
     var HTMLTemplateFile = require("../lib/HTMLTemplateFile.js");
@@ -1426,8 +1427,7 @@ module.exports = {
         	source: 'Ceci est un essai du système d\'analyse syntaxique de l\'urgence.',
         	locale: "fr-FR"
         }));
-        
-        
+                
         test.equal(htf.localizeText(translations, "fr-FR"),
         		'<html>\n' +
         		'   <body>\n' +
@@ -1450,7 +1450,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "simple.tmpl.html");
         test.ok(htf);
         
-        test.equal(htf.getLocalizedPath("fr-FR"), "simple.fr-FR.tmpl.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/simple.fr-FR.tmpl.html");
                 
         test.done();
     },
@@ -1466,12 +1466,12 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.tmpl.html");
         test.ok(htf);
         
-        test.equal(htf.getLocalizedPath("fr-FR"), "./asdf/bar/simple.fr-FR.tmpl.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR.tmpl.html");
                 
         test.done();
     },
 
-    testHTMLTemplateFileGetLocalizePathNotEnoughParts: function(test) {
+    testHTMLTemplateFileGetLocalizePathRegularHTMLFileName: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -1482,8 +1482,181 @@ module.exports = {
         var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.html");
         test.ok(htf);
         
-        test.equal(htf.getLocalizedPath("fr-FR"), "./asdf/bar/simple.fr-FR.html");
+        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR.html");
                 
         test.done();
-    }
+    },
+    
+    testHTMLTemplateFileGetLocalizePathNotEnoughParts: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p, "./asdf/bar/simple");
+        test.ok(htf);
+        
+        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR");
+                
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalize: function(test) {
+        test.expect(5);
+
+        var base = path.dirname(module.id);
+        
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, path.join(base, "testfiles"));
+        
+        var htf = new HTMLTemplateFile(p, "./tmpl/CookieFlowConciergeTemplate.tmpl.html");
+        test.ok(htf);
+        
+        // should read the file
+        htf.extract();
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Get doctor answers for free!',
+        	source: 'Obtenir des réponses de médecins gratuitement!',
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Consult',
+        	source: 'Consultation',
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Ask',
+        	source: 'Poser un question',
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Send question',
+        	source: 'Envoyer la question',
+        	locale: "fr-FR"
+        }));
+        
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Get doctor answers for free!',
+        	source: 'Kostenlosen antworten von Ärzten erhalten!',
+        	locale: "de-DE"
+        }));
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Consult',
+        	source: 'Beratung',
+        	locale: "de-DE"
+        }));
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Ask',
+        	source: 'Eine Frage stellen',
+        	locale: "de-DE"
+        }));
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Send question',
+        	source: 'Frage abschicken',
+        	locale: "de-DE"
+        }));
+
+        htf.localize(translations, ["fr-FR", "de-DE"]);
+        
+        test.ok(fs.existsSync(path.join(base, "testfiles/tmpl/CookieFlowConciergeTemplate.fr-FR.tmpl.html")));
+        test.ok(fs.existsSync(path.join(base, "testfiles/tmpl/CookieFlowConciergeTemplate.de-DE.tmpl.html")));
+        
+        var content = fs.readFileSync(path.join(base, "testfiles/tmpl/CookieFlowConciergeTemplate.fr-FR.tmpl.html"), "utf-8");
+        
+        var expected =
+        	'<div class="upsell-ad-item clearfix">  \n' +
+    		'    <div class="modal_x"></div>\n' +
+    		'    <div class="upsell-ad-content">\n' +
+    		'      <div class="upsell-ad-header">\n' +
+    		'        <div class="caduceus-big cookie-flow"></div>\n' +
+    		'        <span class="upsell-header-bold"><%=title%></span>\n' +
+    		'          <% if(doctor){ %>\n' +
+    		'            <%=\n' +
+    		'              RB.getString(\'Consult  {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in practice:\').format({\n' +
+    		'                value: doctor.value,\n' +
+    		'                specialist_name: doctor.specialist_name,\n' +
+    		'                years: doctor.years_in_practice,\n' +
+    		'                span_tag_start: \'<span class="upsell-header-bold">\',\n' +
+    		'                span_tag_end: \'</span>\'\n' +
+    		'              })\n' +
+    		'            %>\n' +
+    		'            Consultation\n' +
+    		'          <% } else { %>\n' +
+    		'            Obtenir des réponses de médecins gratuitement!\n' +
+    		'          <% } %>\n' +
+    		'      </div>\n' +
+    		'      <div class="upsell-ad-wrapper" style="<%= doctor ? \'\' : \'padding-left: 0\' %>">\n' +
+    		'         <% if(doctor){ %>\n' +
+    		'          <a class="doctor-avatar" href="/experts/<%= doctor.id %>" style="background-image: url(<%= doctor.avatar_transparent_circular %>);"></a>\n' +
+    		'        <% } %>\n' +
+    		'        <input class="askInputArea-cookie desktop" maxlength="150" placeholder="<%= placeholder %>">\n' +
+    		'        <span class="askSendArea-cookie">\n' +
+    		'          <a class="askSendBtn-cookie" href="<%= doctor ? \'/experts/\' + doctor.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
+    		'            <div class="desktop-btn">Envoyer la question</div>\n' +
+    		'            <div class="mobile-btn">Poser un question</div>\n' +
+    		'          </a>\n' +
+    		'        </span>\n' +
+    		'      </div>\n' +
+    		'    </div>\n' +
+    		'</div>';
+        
+    	test.equal(content, expected);
+        
+        content = fs.readFileSync(path.join(base, "testfiles/tmpl/CookieFlowConciergeTemplate.de-DE.tmpl.html"), "utf-8");
+        
+        test.equal(content,
+    		'<div class="upsell-ad-item clearfix">  \n' +
+    		'    <div class="modal_x"></div>\n' +
+    		'    <div class="upsell-ad-content">\n' +
+    		'      <div class="upsell-ad-header">\n' +
+    		'        <div class="caduceus-big cookie-flow"></div>\n' +
+    		'        <span class="upsell-header-bold"><%=title%></span>\n' +
+    		'          <% if(doctor){ %>\n' +
+    		'            <%=\n' +
+    		'              RB.getString(\'Consult  {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in practice:\').format({\n' +
+    		'                value: doctor.value,\n' +
+    		'                specialist_name: doctor.specialist_name,\n' +
+    		'                years: doctor.years_in_practice,\n' +
+    		'                span_tag_start: \'<span class="upsell-header-bold">\',\n' +
+    		'                span_tag_end: \'</span>\'\n' +
+    		'              })\n' +
+    		'            %>\n' +
+    		'            Beratung\n' +
+    		'          <% } else { %>\n' +
+    		'            Kostenlosen antworten von Ärzten erhalten!\n' +
+    		'          <% } %>\n' +
+    		'      </div>\n' +
+    		'      <div class="upsell-ad-wrapper" style="<%= doctor ? \'\' : \'padding-left: 0\' %>">\n' +
+    		'         <% if(doctor){ %>\n' +
+    		'          <a class="doctor-avatar" href="/experts/<%= doctor.id %>" style="background-image: url(<%= doctor.avatar_transparent_circular %>);"></a>\n' +
+    		'        <% } %>\n' +
+    		'        <input class="askInputArea-cookie desktop" maxlength="150" placeholder="<%= placeholder %>">\n' +
+    		'        <span class="askSendArea-cookie">\n' +
+    		'          <a class="askSendBtn-cookie" href="<%= doctor ? \'/experts/\' + doctor.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
+    		'            <div class="desktop-btn">Frage abschicken</div>\n' +
+    		'            <div class="mobile-btn">Eine Frage stellen</div>\n' +
+    		'          </a>\n' +
+    		'        </span>\n' +
+    		'      </div>\n' +
+    		'    </div>\n' +
+    		'</div>'
+        );
+        
+        test.done();
+    },
+
 };
