@@ -19,7 +19,7 @@
 		"loctool.lib.FileType": "INFO",
 		"loctool.lib.HamlFile": "INFO",
 		"loctool.lib.HamlFileType": "INFO",
-		"loctool.lib.HTMLTemplateFile": "TRACE",
+		"loctool.lib.HTMLTemplateFile": "INFO",
 		"loctool.lib.HTMLTemplateFileType": "INFO",
 		"loctool.lib.JavaFile": "INFO",
 		"loctool.lib.JavaFileType": "INFO",

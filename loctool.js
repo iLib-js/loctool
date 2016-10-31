@@ -57,7 +57,6 @@ var settings = {
 	pull: false
 };
 
-
 var options = process.argv.filter(function (val, index, array) {
 	if (val === "-h" || val === "--help") {
 		usage();
@@ -231,7 +230,7 @@ try {
 			fileTypes[i].close();
 		}
 	}
-	log4js.shutdown();
+	log4js.shutdown(function() {});
 }
 logger.info("Done");
 

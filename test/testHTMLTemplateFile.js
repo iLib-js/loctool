@@ -140,6 +140,25 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileParseNoStrings: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<div class="noheader medrx"></div>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 0);
+        
+        test.done();
+    },
+
     testHTMLTemplateFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
@@ -544,6 +563,37 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileParseLocalizableAttributesSkipEmpty: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <img src="http://www.test.test/foo.png" alt="">\n' + 
+        		'       This is a test\n' +
+        		'       <input type="text" placeholder="">\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        test.equal(set.size(), 1);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+                
+        test.done();
+    },
+
     testHTMLTemplateFileParseLocalizableAttributesAndNonBreakingTags: function(test) {
         test.expect(8);
 
@@ -711,6 +761,49 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "Ask");
         test.equal(r.getKey(), "Ask");
+
+        test.done();
+    },
+
+    testHTMLTemplateFileExtractFile2: function(test) {
+        test.expect(14);
+
+        var base = path.dirname(module.id);
+        
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, path.join(base, "testfiles"));
+        
+        var htf = new HTMLTemplateFile(p, "./tmpl/topic_navigation_main.tmpl.html");
+        test.ok(htf);
+        
+        // should read the file
+        htf.extract();
+        
+        var set = htf.getTranslationSet();
+        
+        test.equal(set.size(), 4);
+        
+        var r = set.getBySource("Description");
+        test.ok(r);
+        test.equal(r.getSource(), "Description");
+        test.equal(r.getKey(), "Description");
+       
+        r = set.getBySource('Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
+        test.ok(r);
+        test.equal(r.getSource(), 'Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
+        test.equal(r.getKey(), 'Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
+
+        r = set.getBySource('and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
+        test.ok(r);
+        test.equal(r.getSource(), 'and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
+        test.equal(r.getKey(), 'and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
+
+        r = set.getBySource("Write a better description &raquo;");
+        test.ok(r);
+        test.equal(r.getSource(), "Write a better description &raquo;");
+        test.equal(r.getKey(), "Write a better description &raquo;");
 
         test.done();
     },
@@ -1659,4 +1752,41 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileLocalizeNoStrings: function(test) {
+        test.expect(3);
+
+        var base = path.dirname(module.id);
+        
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, path.join(base, "testfiles"));
+        
+        var htf = new HTMLTemplateFile(p, "./tmpl/nostrings.tmpl.html");
+        test.ok(htf);
+        
+        // should read the file
+        htf.extract();
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Get doctor answers for free!',
+        	source: 'Obtenir des réponses de médecins gratuitement!',
+        	locale: "fr-FR"
+        }));
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Get doctor answers for free!',
+        	source: 'Kostenlosen antworten von Ärzten erhalten!',
+        	locale: "de-DE"
+        }));
+
+        htf.localize(translations, ["fr-FR", "de-DE"]);
+        
+        test.ok(!fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.fr-FR.tmpl.html")));
+        test.ok(!fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.de-DE.tmpl.html")));
+        
+        test.done();
+    }
 };
