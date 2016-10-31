@@ -344,12 +344,125 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        // should not pick up the span tag because there is no localizable text
-        // before it or after it
+        // should pick up the span tag because there is localizable text
+        // before it and after it
         var r = set.getBySource('This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
         test.ok(r);
         test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
         test.equal(r.getKey(), 'This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileParseNonBreakingTagsInsideMultiple: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new HTMLTemplateFile(p);
+        test.ok(j);
+        
+        j.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        // tags should be nestable
+        var r = set.getBySource('This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.');
+        test.ok(r);
+        test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.');
+        test.equal(r.getKey(), 'This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileParseNonBreakingTagsNotWellFormed: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new HTMLTemplateFile(p);
+        test.ok(j);
+        
+        j.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        // the end span tag should automatically end the em tag
+        var r = set.getBySource('This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.');
+        test.ok(r);
+        test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.');
+        test.equal(r.getKey(), 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileParseNonBreakingTagsNotWellFormedWithTerminatorTag: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new HTMLTemplateFile(p);
+        test.ok(j);
+        
+        j.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <div>This is <span id="foo" class="bar"> a test of the <em>emergency parsing </div> system.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        // the end div tag ends all the other tags
+        var r = set.getBySource('This is <span id="foo" class="bar"> a test of the <em>emergency parsing');
+        test.ok(r);
+        test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing');
+        test.equal(r.getKey(), 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileParseNonBreakingTagsTagStackIsReset: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new HTMLTemplateFile(p);
+        test.ok(j);
+        
+        j.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <div>This is <span id="foo" class="bar"> a test of the <em>emergency parsing</em> system.</div>\n' +
+        		'       <div>This is <b>another test</b> of the emergency parsing </span> system.</div>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        // the end div tag ends all the other tags
+        var r = set.getBySource('This is <b>another test</b> of the emergency parsing');
+        test.ok(r);
+        test.equal(r.getSource(), 'This is <b>another test</b> of the emergency parsing');
+        test.equal(r.getKey(), 'This is <b>another test</b> of the emergency parsing');
                 
         test.done();
     },
@@ -552,7 +665,7 @@ module.exports = {
     },
 
     testHTMLTemplateFileExtractFile: function(test) {
-        test.expect(5);
+        test.expect(17);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
