@@ -140,6 +140,73 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileLocalizeTextDontExtractUnicodeWhitespace: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	name: "foo",
+        	id: "foo",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        // contains U+00A0 non-breaking space and other Unicode space characters
+        htf.parse('<div>            ​‌‍ ⁠⁡⁢⁣⁤</div>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        test.equal(set.size(), 0);
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextDontExtractNbspEntity: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	name: "foo",
+        	id: "foo",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<div>&nbsp; &nnbsp; &mmsp;</div>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        test.equal(set.size(), 0);
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextDoExtractOtherEntities: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	name: "foo",
+        	id: "foo",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<div>&uuml;</div>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        test.equal(set.size(), 1);
+        
+        test.done();
+    },
+
     testHTMLTemplateFileParseNoStrings: function(test) {
         test.expect(3);
 
