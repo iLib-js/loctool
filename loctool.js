@@ -21,19 +21,23 @@ var logger = log4js.getLogger("loctool.loctool");
 var pull = false;
 
 function usage() {
-	console.log("Usage: loctool [-h] [-p] [command [root dir]]\n" +
+	console.log("Usage: loctool [-h] [-p] [-l locales] [command [command-specific-arguments]]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
 		"-p or --pull\n" +
 		"  Do a git pull first to update to the latest. (Assumes clean dirs.)\n" +
+		"-l or --locales\n" +
+		"  Restrict operation to only the given locales. Locales should be given as\n" + 
+		"  a comma-separated list of BCP-47 locale specs. By default, this tool\n" +
+		"  will operate with all locales that are available in the translations.\n" +
 		"command\n" +
 		"  a command to execute. This is one of:\n" +
-		"    localize - extract strings and generate localized resource files. This is\n" +
-		"             the default command.\n" +
+		"    localize [root-dir-name] - extract strings and generate localized resource\n" +
+		"             files. This is the default command. Default root dir name is '.'\n" +
 		"    report - generate a loc report, but don't generate localized resource files.\n" +
-		"    export - export all the new strings to a set of xliff files.\n" +
-		"             Default: new-<locale>.xliff\n" +
+		"    export [filename] - export all the new strings to an xliff or a set of xliff\n" +
+		"             files. Default: a set of files named new-<locale>.xliff\n" +
 		"    import filename ... - import all the translated strings in the given\n" +
 		"             xliff files.\n" +
 		"    split (language|project) filename ... - split the given xliff files by\n" +
@@ -46,22 +50,76 @@ function usage() {
 	process.exit(1);
 }
 
-process.argv.forEach(function (val, index, array) {
+// the global settings object that configures how the tool will operate
+var settings = {
+	rootDir: ".",
+	locales: null,
+	pull: false
+};
+
+var options = process.argv.filter(function (val, index, array) {
 	if (val === "-h" || val === "--help") {
 		usage();
 	} else if (val === "-p" || val === "--pull") {
-		pull = true;
+		settings.pull = true;
+	} else if (val === "-l" || val === "--locales") {
+		if (i < array.length && array[index+1]) {
+			settings.locales = array[index+1].split(",");
+		}
+	} else {
+		return true;
 	}
+	
+	return false;
 });
 
-var rootDir = process.argv.length > 2 ? process.argv[2] : ".";
+var command = options.length > 2 ? options[2] : "localize";
+
+switch (command) {
+case "localize":
+	if (options.length > 3) {
+		settings.rootDir = options[3];
+	}
+	break;
+	
+case "export":
+	settings.outfile = (options.length > 3) && options[3];
+	break;
+
+case "import":
+	if (options.length > 3) {
+		settings.infiles = options.slice(3);
+	} else {
+		console.log("Error: must specify at least one input file to import.");
+		usage();
+	}
+	break;
+	
+case "split":
+	if (options.length < 5) {
+		console.log("Error: must specify a split type and at least one input file.");
+		usage();
+	}
+	settings.splittype = options[3];
+	settings.infiles = options.slice(4);
+	break;
+	
+case "merge":
+	if (options.length < 5) {
+		console.log("Error: must specify an output file name and at least one input file.");
+		usage();
+	}
+	settings.outfile = options[3]
+	settings.infiles = options.slice(4);
+	break;
+}
 
 logger.info("loctool - extract strings from source code.\n");
 
-logger.info("Searching root: " + rootDir + "\n");
+logger.info("Searching root: " + settings.rootDir + "\n");
 
-if (!fs.existsSync(rootDir)) {
-	logger.error("Could not access root dir " + rootDir);
+if (!fs.existsSync(settings.rootDir)) {
+	logger.error("Could not access root dir " + settings.rootDir);
 	usage();
 }
 
@@ -104,14 +162,14 @@ function walk(dir, project) {
 	var results = [], projectRoot = false;
 	
 	if (!project) {
-		project = ProjectFactory(dir);
+		project = ProjectFactory(dir, settings);
 		if (project) {
 			projectRoot = true;
 			logger.info("-------------------------------------------------------------------------------------------");
 			logger.info('Project "' + project.options.name + '", type: ' + project.options.projectType);
 			logger.trace("Project: ");
 			logger.trace(project);
-			if (pull) {
+			if (settings.pull) {
 				/*
 				logger.info("Doing git pull to get the latest before scanning this dir.");
 				var git = new Git(dir);
@@ -161,7 +219,7 @@ function walk(dir, project) {
 }
 
 try {
-	walk(rootDir, undefined);
+	walk(settings.rootDir, undefined);
 	
 	processNextProject();
 } catch (e) {
@@ -172,7 +230,7 @@ try {
 			fileTypes[i].close();
 		}
 	}
-	log4js.shutdown();
+	log4js.shutdown(function() {});
 }
 logger.info("Done");
 
