@@ -38,7 +38,7 @@ end
 
 
 def toks_with_n_breaks2(markup, stripped, num_breaks, memoized)
-  puts "toks_with_n_breaks caleld with markup=#{markup} stripped=#{stripped} num_breaks=#{num_breaks}"
+  #puts "toks_with_n_breaks caleld with markup=#{markup} stripped=#{stripped} num_breaks=#{num_breaks}"
   #sleep(1)
   mem_key = "#{num_breaks}_#{markup}_#{stripped}"
   mem = memoized[mem_key]
@@ -58,7 +58,7 @@ def toks_with_n_breaks2(markup, stripped, num_breaks, memoized)
   for i in (1..stripped.length) do
     #puts "i=#{i}"
     cand = stripped[0,i]
-    puts "cand=#{cand}"
+    #puts "cand=#{cand}"
     if markup.include?(cand)
       #found a break. recurse
       ret = toks_with_n_breaks2(markup.gsub(cand, ''), stripped.gsub(cand, ''), num_breaks - 1, memoized)
@@ -280,13 +280,13 @@ ARGV[2, ARGV.length].each{|path_name|
     template = File.read(path_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-    puts "root=#{root}"
+    # puts "root=#{root}"
     values = []
     accumulate_values(root, values)
-    puts "orig_values=#{values}"
+    #puts "orig_values=#{values}"
     values = reject_special_words(reject_paran(break_aound_code_values(values)))
 
-    puts "values=#{values}"
+    #puts "values=#{values}"
 
     #if local_name == 'zxx-XX'
       from_to = process_pseudo_values(values)
