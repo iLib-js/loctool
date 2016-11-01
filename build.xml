@@ -151,8 +151,12 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testHTMLTemplateFile.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test.htmltemplatefiletype" description="Run only the tests for the HTML template types">
+	<target name="test.htmltemplatefiletype" description="Run only the tests for the HTML template file type">
 		<run script="${build.test}/testHTMLTemplateFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.htmltemplatefiletype" description="Debug only the tests for the HTML template file type">
+		<debug script="${build.test}/testHTMLTemplateFileType.js" dir="${build.test}"/>
 	</target>
 
 	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.htmltemplatefile,test.htmltemplatefiletype">

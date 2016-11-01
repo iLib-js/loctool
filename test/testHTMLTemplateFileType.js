@@ -4,8 +4,8 @@
  * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
  */
 
-if (!HTMLTemplateFileTypeType) {
-    var HTMLTemplateFileTypeType = require("../lib/HTMLTemplateFileTypeType.js");
+if (!HTMLTemplateFileType) {
+    var HTMLTemplateFileType = require("../lib/HTMLTemplateFileType.js");
     var WebProject =  require("../lib/WebProject.js");
     var TranslationSet =  require("../lib/TranslationSet.js");
     var ResourceString =  require("../lib/ResourceString.js");
@@ -27,7 +27,7 @@ module.exports = {
     },
 
     testHTMLTemplateFileTypeHandlesTrue: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
@@ -41,8 +41,8 @@ module.exports = {
         test.done();
     },
 
-    testHTMLTemplateFileTypeHandlesFalseCllose: function(test) {
-        test.expect(1);
+    testHTMLTemplateFileTypeHandlesFalseClose: function(test) {
+        test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
@@ -57,7 +57,7 @@ module.exports = {
     },
     
     testHTMLTemplateFileTypeHandlesFalse: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
@@ -72,7 +72,7 @@ module.exports = {
     },
     
     testHTMLTemplateFileTypeHandlesTrueWithDir: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
@@ -84,5 +84,36 @@ module.exports = {
         test.ok(htf.handles("a/b/c/foo.tmpl.html"));
         
         test.done();
+    },
+
+    testHTMLTemplateFileTypeHandlesAlreadyLocalizedGB: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/foo.en-GB.tmpl.html"));
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileTypeHandlesAlreadyLocalizedCN: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/foo.zh-Hans-CN.tmpl.html"));
+        
+        test.done();
     }
+
 };
