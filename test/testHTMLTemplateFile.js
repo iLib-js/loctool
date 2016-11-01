@@ -1,5 +1,5 @@
 /*
- * testHTMLTemplateFile.js - test the Java file handler object.
+ * testHTMLTemplateFile.js - test the HTML template file handler object.
  *
  * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
  */
