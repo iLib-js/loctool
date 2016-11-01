@@ -140,7 +140,7 @@ module.exports = {
         test.done();
     },
 
-    testHTMLTemplateFileLocalizeTextDontExtractUnicodeWhitespace: function(test) {
+    testHTMLTemplateFileParseDontExtractUnicodeWhitespace: function(test) {
         test.expect(3);
 
         var p = new WebProject({
@@ -163,7 +163,7 @@ module.exports = {
         test.done();
     },
 
-    testHTMLTemplateFileLocalizeTextDontExtractNbspEntity: function(test) {
+    testHTMLTemplateFileParseDontExtractNbspEntity: function(test) {
         test.expect(3);
 
         var p = new WebProject({
@@ -185,7 +185,7 @@ module.exports = {
         test.done();
     },
 
-    testHTMLTemplateFileLocalizeTextDoExtractOtherEntities: function(test) {
+    testHTMLTemplateFileParseDoExtractOtherEntities: function(test) {
         test.expect(3);
 
         var p = new WebProject({
@@ -312,6 +312,66 @@ module.exports = {
         test.equal(r.getKey(), "This is a test");
         
         test.equal(set.size(), 2);
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileParseEscapeInvalidChars: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <div id="foo">\n' + 
+        		'           This is also a \u0003 test\n' +
+        		'       </div>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        // should use html entities to represent the invalid control chars
+        var r = set.getBySource("This is also a &#3; test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is also a &#3; test");
+        test.equal(r.getKey(), "This is also a &#3; test");
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileParseDontEscapeWhitespaceChars: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <div id="foo">\n' + 
+        		'           This is also a \u000C test\n' +
+        		'       </div>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        // leave the whitespace control chars alone
+        var r = set.getBySource("This is also a \u000C test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is also a \u000C test");
+        test.equal(r.getKey(), "This is also a \u000C test");
         
         test.done();
     },
