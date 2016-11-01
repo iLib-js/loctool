@@ -159,7 +159,39 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testHTMLTemplateFileType.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.htmltemplatefile,test.htmltemplatefiletype">
+	<target name="test.objectivecfile" description="Run only the tests for the Objective C file">
+		<run script="${build.test}/testObjectiveCFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.objectivecfile" description="Debug only the tests for the Objective C file">
+		<debug script="${build.test}/testObjectiveCFile.js" dir="${build.test}"/>
+	</target>
+	
+	<target name="test.objectivecfiletype" description="Run only the tests for the Objective C file type">
+		<run script="${build.test}/testObjectiveCFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.objectivecfiletype" description="Debug only the tests for the Objective C file type">
+		<debug script="${build.test}/testObjectiveCFileType.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.iosstringsfile" description="Run only the tests for the strings resource file">
+		<run script="${build.test}/testIosStringsFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.iosstringsfile" description="Debug only the tests for the strings resource file">
+		<debug script="${build.test}/testIosStringsFile.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.iosstringsfiletype" description="Run only the tests for the strings resource file type">
+		<run script="${build.test}/testIosStringsFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.iosstringsfiletype" description="Debug only the tests for the strings resource file type">
+		<debug script="${build.test}/testIosStringsFileType.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.htmltemplatefile,test.htmltemplatefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype">
 	</target>
 
 	<macrodef name="runsql">
