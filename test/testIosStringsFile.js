@@ -23,7 +23,8 @@ module.exports = {
         test.expect(1);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
         var j = new IosStringsFile(p, "./testfiles/objc/Base.lproj/Localizable.strings");
@@ -37,38 +38,29 @@ module.exports = {
         test.expect(1);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile(p);
+        var j = new IosStringsFile({
+			project: p
+		});
         test.ok(j);
-        
-        test.done();
-    },
-
-    testIosStringsFileMakeKey: function(test) {
-        test.expect(2);
-
-        var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new IosStringsFile(p);
-        test.ok(j);
-        
-        test.equal(j.makeKey("This is a test"), "This is a test");
         
         test.done();
     },
 
     testIosStringsFileParseSimpleGetByKey: function(test) {
-        test.expect(6);
+        test.expect(5);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile(p);
+        var j = new IosStringsFile({
+			project: p
+		});
         test.ok(j);
         
         j.parse('/* Class = "UIButton"; normalTitle = "Terms"; ObjectID = "2V9-YN-vxb"; */\n' +
@@ -77,37 +69,13 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("2V9-YN-vxb.normalTitle");
+        var r = set.getBy({
+        	reskey: "2V9-YN-vxb.normalTitle"
+        });
         test.ok(r);
         
-        test.equal(r.getSource(), "Terms");
-        test.equal(r.getKey(), "2V9-YN-vxb.normalTitle");
-        
-        test.done();
-    },
-
-    testIosStringsFileParseSimpleGetBySource: function(test) {
-        test.expect(6);
-
-        var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var j = new IosStringsFile(p);
-        test.ok(j);
-        
-        j.parse('/* Class = "UIButton"; normalTitle = "Terms"; ObjectID = "2V9-YN-vxb"; */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n');
-        
-        var set = j.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBySource("Terms");
-        test.ok(r);
-        
-        test.equal(r.getSource(), "Terms");
-        test.equal(r.getKey(), "2V9-YN-vxb.normalTitle");
-        test.ok(!r.getComment());
+        test.equal(r[0].getSource(), "Terms");
+        test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
         
         test.done();
     },
@@ -116,10 +84,13 @@ module.exports = {
         test.expect(6);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile(p);
+        var j = new IosStringsFile({
+			project: p
+		});
         test.ok(j);
         
         j.parse('/* i18n: this is the terms and conditions button label */\n' +
@@ -128,12 +99,14 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource("Terms");
+        var r = set.getBy({
+        	reskey: "2V9-YN-vxb.normalTitle"
+        });
         test.ok(r);
         
-        test.equal(r.getSource(), "Terms");
-        test.equal(r.getKey(), "2V9-YN-vxb.normalTitle");
-        test.equal(r.getComment(), "this is the terms and conditions button label");
+        test.equal(r[0].getSource(), "Terms");
+        test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
+        test.equal(r[0].getComment(), "this is the terms and conditions button label");
         
         test.done();
     },
@@ -142,10 +115,13 @@ module.exports = {
         test.expect(6);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile(p);
+        var j = new IosStringsFile({
+			project: p
+		});
         test.ok(j);
         
         j.parse('/* i18n: this is the terms and conditions button label */\n\n\n\n' +
@@ -154,12 +130,14 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource("This is a test");
+        var r = set.getBy({
+        	reskey: "2V9-YN-vxb.normalTitle"
+        });
         test.ok(r);
         
-        test.equal(r.getSource(), "Terms");
-        test.equal(r.getKey(), "2V9-YN-vxb.normalTitle");
-        test.equal(r.getComment(), "this is the terms and conditions button label");
+        test.equal(r[0].getSource(), "Terms");
+        test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
+        test.equal(r[0].getComment(), "this is the terms and conditions button label");
         
         test.done();
     },
@@ -169,10 +147,13 @@ module.exports = {
         test.expect(4);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile(p);
+        var j = new IosStringsFile({
+			project: p
+		});
         test.ok(j);
 
         var set = j.getTranslationSet();
@@ -194,10 +175,13 @@ module.exports = {
         test.expect(10);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile(p);
+        var j = new IosStringsFile({
+			project: p
+		});
         test.ok(j);
         
         j.parse('/* i18n: this is the terms and conditions button label */\n' +
@@ -208,17 +192,21 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource("Terms");
+        var r = set.getBy({
+        	reskey: "2V9-YN-vxb.normalTitle"
+        });
         test.ok(r);
-        test.equal(r.getSource(), "Terms");
-        test.equal(r.getKey(), "2V9-YN-vxb.normalTitle");
-        test.equal(r.getComment(), "this is the terms and conditions button label");
+        test.equal(r[0].getSource(), "Terms");
+        test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
+        test.equal(r[0].getComment(), "this is the terms and conditions button label");
         
-        r = set.getBySource("Are you a doctor?");
+        r = set.getBy({
+        	reskey: "MFI-qx-pQf.text"
+        });
         test.ok(r);
-        test.equal(r.getSource(), "Are you a doctor?");
-        test.equal(r.getKey(), "MFI-qx-pQf.text");
-        test.ok(!r.getComment());
+        test.equal(r[0].getSource(), "Are you a doctor?");
+        test.equal(r[0].getKey(), "MFI-qx-pQf.text");
+        test.ok(!r[0].getComment());
         
         test.done();
     },
@@ -227,7 +215,8 @@ module.exports = {
         test.expect(14);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
         var j = new IosStringsFile(p, "./objc/en.lproj/FGSignUpViewController.strings");
@@ -240,23 +229,29 @@ module.exports = {
         
         test.equal(set.size(), 15);
         
-        var r = set.getBySource("Login ›");
+        var r = set.getBy({
+        	reskey: "QCe-xG-x5k.normalTitle"
+        });
         test.ok(r);
-        test.equal(r.getSource(), "Login ›");
-        test.equal(r.getKey(), "QCe-xG-x5k.normalTitle");
-        test.ok(!r.getComment());
+        test.equal(r[0].getSource(), "Login ›");
+        test.equal(r[0].getKey(), "QCe-xG-x5k.normalTitle");
+        test.ok(!r[0].getComment());
 
-        r = set.getBySource("Your email");
+        var r = set.getBy({
+        	reskey: "WpN-ro-7NU.placeholder"
+        });
         test.ok(r);
-        test.equal(r.getSource(), "Your email");
-        test.equal(r.getKey(), "WpN-ro-7NU.placeholder");
-        test.ok(!r.getComment());
+        test.equal(r[0].getSource(), "Your email");
+        test.equal(r[0].getKey(), "WpN-ro-7NU.placeholder");
+        test.ok(!r[0].getComment());
         
-        r = set.getBySource("free, private");
+        var r = set.getBy({
+        	reskey: "DWd-6J-lLt.text"
+        });
         test.ok(r);
-        test.equal(r.getSource(), "free, private");
-        test.equal(r.getKey(), "DWd-6J-lLt.text");
-        test.ok(!r.getComment());
+        test.equal(r[0].getSource(), "free, private");
+        test.equal(r[0].getKey(), "DWd-6J-lLt.text");
+        test.ok(!r[0].getComment());
 
         test.done();
     },
@@ -265,10 +260,13 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile(p);
+        var j = new IosStringsFile({
+			project: p
+		});
         test.ok(j);
         
         // should attempt to read the file and not fail
@@ -285,7 +283,8 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
         var j = new IosStringsFile(p, "./objc/en.lproj/asdf.strings");
