@@ -17,7 +17,7 @@
 		"loctool.lib.AndroidResourceFileType": "INFO",
 		"loctool.lib.DBTranslationSet": "INFO",
 		"loctool.lib.FileType": "INFO",
-		"loctool.lib.HTMLTemplateFile": "TRACE",
+		"loctool.lib.HTMLTemplateFile": "INFO",
 		"loctool.lib.HTMLTemplateFileType": "INFO",
 		"loctool.lib.HamlFile": "INFO",
 		"loctool.lib.HamlFileType": "INFO",
