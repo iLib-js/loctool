@@ -80,11 +80,13 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("This is a test");
+        var r = set.getBy({
+        	reskey: "This is a test"
+        });
         test.ok(r);
         
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
+        test.equal(r[0].getSource(), "This is a test");
+        test.equal(r[0].getKey(), "This is a test");
         
         test.done();
     },
@@ -202,11 +204,13 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("foobar");
+        var r = set.getBy({
+        	reskey: "foobar"
+        });
         test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "foobar");
-        test.equal(r.getComment(), "this is a translator's comment");
+        test.equal(r[0].getSource(), "This is a test");
+        test.equal(r[0].getKey(), "foobar");
+        test.equal(r[0].getComment(), "this is a translator's comment");
         
         test.done();
     },
@@ -440,8 +444,8 @@ module.exports = {
         	reskey: "unique_id"
         });
         test.ok(r);
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "unique_id");
+        test.equal(r[0].getSource(), "This is a test");
+        test.equal(r[0].getKey(), "unique_id");
         
         test.done();
     },
@@ -588,8 +592,8 @@ module.exports = {
         	reskey: "id1"
         });
         test.ok(r);
-        test.equal(r.getSource(), "This is a test with a unique id");
-        test.equal(r.getKey(), "id1");
+        test.equal(r[0].getSource(), "This is a test with a unique id");
+        test.equal(r[0].getKey(), "id1");
         
         test.done();
     },
@@ -623,7 +627,7 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new JavaScriptFile(p, "./java/foo.java");
+        var j = new JavaScriptFile(p, "./java/foo.js");
         test.ok(j);
         
         // should attempt to read the file and not fail
