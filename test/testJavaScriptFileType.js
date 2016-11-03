@@ -1,67 +1,67 @@
 /*
- * testHTMLTemplateFileTypeType.js - test the HTML template file type handler object.
+ * testJavaScriptFileTypeType.js - test the HTML template file type handler object.
  *
  * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
  */
 
-if (!HTMLTemplateFileType) {
-    var HTMLTemplateFileType = require("../lib/HTMLTemplateFileType.js");
+if (!JavaScriptFileType) {
+    var JavaScriptFileType = require("../lib/JavaScriptFileType.js");
     var WebProject =  require("../lib/WebProject.js");
 }
 
 module.exports = {
-    testHTMLTemplateFileTypeConstructor: function(test) {
+    testJavaScriptFileTypeConstructor: function(test) {
         test.expect(1);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var htf = new HTMLTemplateFileType(p);
+        var htf = new JavaScriptFileType(p);
         
         test.ok(htf);
         
         test.done();
     },
 
-    testHTMLTemplateFileTypeHandlesTrue: function(test) {
+    testJavaScriptFileTypeHandlesTrue: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var htf = new HTMLTemplateFileType(p);
+        var htf = new JavaScriptFileType(p);
         test.ok(htf);
         
-        test.ok(htf.handles("foo.tmpl.html"));
+        test.ok(htf.handles("foo.js"));
         
         test.done();
     },
 
-    testHTMLTemplateFileTypeHandlesFalseClose: function(test) {
+    testJavaScriptFileTypeHandlesFalseClose: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var htf = new HTMLTemplateFileType(p);
+        var htf = new JavaScriptFileType(p);
         test.ok(htf);
         
-        test.ok(!htf.handles("foo.tml"));
+        test.ok(!htf.handles("foojs"));
         
         test.done();
     },
     
-    testHTMLTemplateFileTypeHandlesFalse: function(test) {
+    testJavaScriptFileTypeHandlesFalse: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var htf = new HTMLTemplateFileType(p);
+        var htf = new JavaScriptFileType(p);
         test.ok(htf);
         
         test.ok(!htf.handles("foo.html"));
@@ -69,49 +69,48 @@ module.exports = {
         test.done();
     },
     
-    testHTMLTemplateFileTypeHandlesTrueWithDir: function(test) {
+    testJavaScriptFileTypeHandlesTrueWithDir: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var htf = new HTMLTemplateFileType(p);
+        var htf = new JavaScriptFileType(p);
         test.ok(htf);
         
-        test.ok(htf.handles("a/b/c/foo.tmpl.html"));
+        test.ok(htf.handles("a/b/c/foo.js"));
         
         test.done();
     },
 
-    testHTMLTemplateFileTypeHandlesAlreadyLocalizedGB: function(test) {
+    testJavaScriptFileTypeHandlesAlreadyLocalizedGB: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var htf = new HTMLTemplateFileType(p);
+        var htf = new JavaScriptFileType(p);
         test.ok(htf);
         
-        test.ok(!htf.handles("a/b/c/foo.en-GB.tmpl.html"));
+        test.ok(!htf.handles("a/b/c/strings.en-GB.js"));
         
         test.done();
     },
 
-    testHTMLTemplateFileTypeHandlesAlreadyLocalizedCN: function(test) {
+    testJavaScriptFileTypeHandlesAlreadyLocalizedCN: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US"
         }, "./testfiles");
         
-        var htf = new HTMLTemplateFileType(p);
+        var htf = new JavaScriptFileType(p);
         test.ok(htf);
         
-        test.ok(!htf.handles("a/b/c/foo.zh-Hans-CN.tmpl.html"));
+        test.ok(!htf.handles("a/b/c/strings.zh-Hans-CN.js"));
         
         test.done();
     }
-
 };
