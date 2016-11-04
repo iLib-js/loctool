@@ -262,5 +262,20 @@ module.exports = {
         test.ok(!htf.handles("a/b/c/strings.zh-Hans-CN.tmpl.html"));
         
         test.done();
+    },
+    
+    testJavaScriptFileTypeHandleTemplateAlreadyLocalizedCN: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/strings.zh-Hans-CN.tmpl.html"));
+        
+        test.done();
     }
 };
