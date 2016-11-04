@@ -76,12 +76,14 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("This is a test");
+        var r = set.getBy({
+        	reskey: "This is a test"
+        });
         test.ok(r);
         
-        test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This is a test");
-        test.equal(r.getComment(), "translator's comment");
+        test.equal(r[0].getSource(), "This is a test");
+        test.equal(r[0].getKey(), "This is a test");
+        test.equal(r[0].getComment(), "translator's comment");
         
         test.done();
     },
@@ -107,6 +109,26 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.equal(r.getComment(), "translator's comment");
+        
+        test.done();
+    },
+
+    testObjectiveCFileParseIgnoreEmptyString: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new ObjectiveCFile(p);
+        test.ok(j);
+        
+        j.parse('NSLocalizedString(@"", @"translator\'s comment");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        test.equal(set.size(), 0);
         
         test.done();
     },
