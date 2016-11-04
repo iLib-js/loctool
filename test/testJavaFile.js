@@ -223,6 +223,26 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileParseIgnoreEmpty: function(test) {
+        test.expect(3);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("")');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        test.equal(set.size(), 0);
+        
+        test.done();
+    },
+
     testJavaFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(5);
 

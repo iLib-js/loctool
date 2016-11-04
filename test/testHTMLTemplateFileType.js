@@ -7,8 +7,6 @@
 if (!HTMLTemplateFileType) {
     var HTMLTemplateFileType = require("../lib/HTMLTemplateFileType.js");
     var WebProject =  require("../lib/WebProject.js");
-    var TranslationSet =  require("../lib/TranslationSet.js");
-    var ResourceString =  require("../lib/ResourceString.js");
 }
 
 module.exports = {

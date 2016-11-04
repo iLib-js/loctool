@@ -143,6 +143,22 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testUtils.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
 
+	<target name="test.javascriptfile" description="Run only the tests for the JavaScript file object">
+		<run script="${build.test}/testJavaScriptFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.javascriptfile" description="Debug only the tests for the JavaScript file object">
+		<debug script="${build.test}/testJavaScriptFile.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.javascriptfiletype" description="Run only the tests for the JavaScript file type">
+		<run script="${build.test}/testJavaScriptFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.javascriptfiletype" description="Debug only the tests for the JavaScript file type">
+		<debug script="${build.test}/testJavaScriptFileType.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.htmltemplatefile" description="Run only the tests for the HTML templates">
 		<run script="${build.test}/testHTMLTemplateFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
@@ -159,7 +175,7 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testHTMLTemplateFileType.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.htmltemplatefile,test.htmltemplatefiletype">
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype">
 	</target>
 
 	<macrodef name="runsql">
