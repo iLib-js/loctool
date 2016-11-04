@@ -401,7 +401,7 @@ module.exports = {
     },
 
     testJavaScriptFileParseMultipleSameLine: function(test) {
-        test.expect(5);
+        test.expect(12);
 
         var p = new WebProject({
         	id: "ht-webapp12",
@@ -673,6 +673,46 @@ module.exports = {
         
         test.done();
     },
+
+    testJavaScriptFileParsePunctuationBeforeRB: function(test) {
+        test.expect(9);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaScriptFile(p);
+        test.ok(j);
+        
+        j.parse(
+			"        <%\n" +
+			"        var listsOver4 = false;\n" +
+			"        var seemoreLen = 0;\n" +
+			"        var subcats = [RB.getStringJS('Personal'), RB.getStringJS('Family history')];\n" +
+			"        _.each(subcats, function(subcat, j){\n" +
+			"            var list = topic.attribute.kb_attribute_relationships[subcat] || [];\n" +
+			"            if (list.length > 0) {\n" +
+			"        %>\n");
+
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        test.equal(set.size(), 2);
+        
+        var r = set.getBySource("Personal");
+        test.ok(r);
+        test.equal(r.getSource(), "Personal");
+        test.equal(r.getKey(), "Personal");
+        
+        r = set.getBySource("Family history");
+        test.ok(r);
+        test.equal(r.getSource(), "Family history");
+        test.equal(r.getKey(), "Family history");
+        
+        test.done();
+    },
+
 
     testJavaScriptFileExtractFile: function(test) {
         test.expect(8);
