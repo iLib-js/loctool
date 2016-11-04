@@ -25,6 +25,8 @@
 		"loctool.lib.IosStringsFileType": "TRACE",
 		"loctool.lib.JavaFile": "INFO",
 		"loctool.lib.JavaFileType": "INFO",
+		"loctool.lib.JavaScriptFile": "TRACE",
+		"loctool.lib.JavaScriptFileType": "INFO",
 		"loctool.lib.LocalRepository": "INFO",
 		"loctool.lib.ObjectiveCFile": "TRACE",
 		"loctool.lib.ObjectiveCFileType": "TRACE",
