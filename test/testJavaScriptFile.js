@@ -115,6 +115,54 @@ module.exports = {
         test.done();
     },
 
+    testJavaScriptFileParseSimpleSingleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaScriptFile(p);
+        test.ok(j);
+        
+        j.parse("RB.getString('This is a test')");
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+        
+        test.done();
+    },
+
+    testJavaScriptFileParseMoreComplexSingleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaScriptFile(p);
+        test.ok(j);
+        
+        j.parse("if (subcat == 'Has types') {title = RB.getString('Types of {topic}').format({topic: topic.attribute.name})}");
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("Types of {topic}");
+        test.ok(r);
+        test.equal(r.getSource(), "Types of {topic}");
+        test.equal(r.getKey(), "Types of {topic}");
+        
+        test.done();
+    },
+    
     testJavaScriptFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(5);
 
@@ -175,6 +223,31 @@ module.exports = {
         test.ok(j);
         
         j.parse('\tRB.getString("This is a test"); // i18n: this is a translator\'s comment\n\tfoo("This is not");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getComment(), "this is a translator's comment");
+        
+        test.done();
+    },
+
+    testJavaScriptFileParseSingleQuotesWithTranslatorComment: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaScriptFile(p);
+        test.ok(j);
+        
+        j.parse("\tRB.getString('This is a test'); // i18n: this is a translator\'s comment\n\tfoo('This is not');");
         
         var set = j.getTranslationSet();
         test.ok(set);
@@ -323,6 +396,42 @@ module.exports = {
         test.equal(r[0].getSource(), "This is a test");
         test.ok(!r[0].getAutoKey());
         test.equal(r[0].getKey(), "y");
+        
+        test.done();
+    },
+
+    testJavaScriptFileParseMultipleSameLine: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaScriptFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("This is a test"), RB.getString("This is a second test"), RB.getString("This is a third test")');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        test.equal(set.size(), 3);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+        
+        r = set.getBySource("This is a second test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a second test");
+        test.equal(r.getKey(), "This is a second test");
+        
+        r = set.getBySource("This is a third test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a third test");
+        test.equal(r.getKey(), "This is a third test");
         
         test.done();
     },
@@ -597,7 +706,43 @@ module.exports = {
         
         test.done();
     },
-    
+
+    testJavaScriptFileExtractTemplateFile: function(test) {
+        test.expect(11);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaScriptFile(p, "./tmpl/topic_types.tmpl.html");
+        test.ok(j);
+        
+        // should read the file
+        j.extract();
+        
+        var set = j.getTranslationSet();
+        
+        test.equal(set.size(), 11);
+        
+        var r = set.getBySource("Medical Devices");
+        test.ok(r);
+        test.equal(r.getSource(), "Medical Devices");
+        test.equal(r.getKey(), "Medical Devices");
+
+        var r = set.getBySource("Medications");
+        test.ok(r);
+        test.equal(r.getSource(), "Medications");
+        test.equal(r.getKey(), "Medications");
+
+        var r = set.getBySource("Family history");
+        test.ok(r);
+        test.equal(r.getSource(), "Family history");
+        test.equal(r.getKey(), "Family history");
+        
+        test.done();
+    },
+
     testJavaScriptFileExtractUndefinedFile: function(test) {
         test.expect(2);
 

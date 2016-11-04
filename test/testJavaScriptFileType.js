@@ -24,7 +24,7 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileTypeHandlesTrue: function(test) {
+    testJavaScriptFileTypeHandlesJSTrue: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -39,7 +39,37 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileTypeHandlesFalseClose: function(test) {
+    testJavaScriptFileTypeHandlesHamlTrue: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(htf.handles("foo.html.haml"));
+        
+        test.done();
+    },
+
+    testJavaScriptFileTypeHandlesTemplatesTrue: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(htf.handles("foo.tmpl.html"));
+        
+        test.done();
+    },
+
+    testJavaScriptFileTypeHandlesJSFalseClose: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -50,6 +80,36 @@ module.exports = {
         test.ok(htf);
         
         test.ok(!htf.handles("foojs"));
+        
+        test.done();
+    },
+    
+    testJavaScriptFileTypeHandlesHamlFalseClose: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("foohtml.haml"));
+        
+        test.done();
+    },
+    
+    testJavaScriptFileTypeHandlesTemplateFalseClose: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("footmpl.html"));
         
         test.done();
     },
@@ -69,7 +129,7 @@ module.exports = {
         test.done();
     },
     
-    testJavaScriptFileTypeHandlesTrueWithDir: function(test) {
+    testJavaScriptFileTypeHandlesJSTrueWithDir: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -84,7 +144,37 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileTypeHandlesAlreadyLocalizedGB: function(test) {
+    testJavaScriptFileTypeHandlesHamlTrueWithDir: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(htf.handles("a/b/c/foo.html.haml"));
+        
+        test.done();
+    },
+
+    testJavaScriptFileTypeHandlesHamlTrueWithDir: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(htf.handles("a/b/c/foo.tmpl.html"));
+        
+        test.done();
+    },
+
+    testJavaScriptFileTypeHandlesJSAlreadyLocalizedGB: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -99,7 +189,37 @@ module.exports = {
         test.done();
     },
 
-    testJavaScriptFileTypeHandlesAlreadyLocalizedCN: function(test) {
+    testJavaScriptFileTypeHandlesHamlAlreadyLocalizedGB: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/strings.en-GB.html.haml"));
+        
+        test.done();
+    },
+
+    testJavaScriptFileTypeHandlesTemplateAlreadyLocalizedGB: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/strings.en-GB.tmpl.html"));
+        
+        test.done();
+    },
+
+    testJavaScriptFileTypeHandlesJSAlreadyLocalizedCN: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -110,6 +230,36 @@ module.exports = {
         test.ok(htf);
         
         test.ok(!htf.handles("a/b/c/strings.zh-Hans-CN.js"));
+        
+        test.done();
+    },
+    
+    testJavaScriptFileTypeHandleHamlAlreadyLocalizedCN: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/strings.zh-Hans-CN.html.haml"));
+        
+        test.done();
+    },
+    
+    testJavaScriptFileTypeHandleTemplateAlreadyLocalizedCN: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new JavaScriptFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/c/strings.zh-Hans-CN.tmpl.html"));
         
         test.done();
     }
