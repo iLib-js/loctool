@@ -23,6 +23,8 @@
 		"loctool.lib.HamlFileType": "INFO",
 		"loctool.lib.JavaFile": "INFO",
 		"loctool.lib.JavaFileType": "INFO",
+		"loctool.lib.JavaScriptFile": "TRACE",
+		"loctool.lib.JavaScriptFileType": "INFO",
 		"loctool.lib.LocalRepository": "INFO",
 		"loctool.lib.Project": "INFO",
 		"loctool.lib.ResourceString": "INFO",
