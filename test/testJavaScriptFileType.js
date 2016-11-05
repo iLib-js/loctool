@@ -1,5 +1,5 @@
 /*
- * testJavaScriptFileTypeType.js - test the HTML template file type handler object.
+ * testJavaScriptFileType.js - test the HTML template file type handler object.
  *
  * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
  */
