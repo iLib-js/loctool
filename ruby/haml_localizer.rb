@@ -197,6 +197,8 @@ def process_pseudo_values(values)
   ret = {}
   values.each{|v|
     ret[v] = v.split('').map{|c| PSUEDO_MAP[c] ? PSUEDO_MAP[c] : c}.join('')
+    string_padding = ((ret[v].length * 0.4).to_i).downto(1).to_a.join('')
+    ret[v] = ret[v].concat(string_padding)
   }
   ret
 end
