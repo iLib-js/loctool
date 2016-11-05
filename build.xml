@@ -175,7 +175,15 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testHTMLTemplateFileType.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype">
+	<target name="test.javascriptresourcefile" description="Run only the tests for the JavaScript resource file object">
+		<run script="${build.test}/testJavaScriptResourceFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.javascriptresourcefile" description="Debug only the tests for the JavaScript resource file object">
+		<debug script="${build.test}/testJavaScriptResourceFile.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile">
 	</target>
 
 	<macrodef name="runsql">
