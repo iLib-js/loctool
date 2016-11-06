@@ -199,6 +199,8 @@ def process_pseudo_values(values)
   ret = {}
   values.each{|v|
     ret[v] = v.split('').map{|c| PSUEDO_MAP[c] ? PSUEDO_MAP[c] : c}.join('')
+    string_padding = ((ret[v].length * 0.4).to_i).downto(1).to_a.join('')
+    ret[v] = ret[v].concat(string_padding)
   }
   ret
 end
@@ -299,8 +301,13 @@ ARGV[2, ARGV.length].each{|path_name|
     #parse again to ensure no failure
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-
-    new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{locale_name}.html.haml"
+    
+    if file_name_components[file_name_components.length - 3] == "en-US"
+      new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 3].join('') + ".#{locale_name}.html.haml"
+    else
+      new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{locale_name}.html.haml"
+    end
+    
     #puts new_file_name
     File.open(new_file_name, 'w') { |file| file.write(template) }
   rescue => ex
