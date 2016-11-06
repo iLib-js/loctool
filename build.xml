@@ -207,7 +207,23 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testIosStringsFileType.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype">
+	<target name="test.javascriptresourcefile" description="Run only the tests for the JavaScript resource file object">
+		<run script="${build.test}/testJavaScriptResourceFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.javascriptresourcefile" description="Debug only the tests for the JavaScript resource file object">
+		<debug script="${build.test}/testJavaScriptResourceFile.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.javascriptresourcefiletype" description="Run only the tests for the JavaScript resource file type object">
+		<run script="${build.test}/testJavaScriptResourceFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.javascriptresourcefiletype" description="Debug only the tests for the JavaScript resource file type object">
+		<debug script="${build.test}/testJavaScriptResourceFileType.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype">
 	</target>
 
 	<macrodef name="runsql">
