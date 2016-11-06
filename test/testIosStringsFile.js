@@ -51,7 +51,7 @@ module.exports = {
     },
 
     testIosStringsFileParseSimpleGetByKey: function(test) {
-        test.expect(5);
+        test.expect(6);
 
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
@@ -76,6 +76,7 @@ module.exports = {
         
         test.equal(r[0].getSource(), "Terms");
         test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
+        test.equal(r[0].getComment(), 'Class = "UIButton"; normalTitle = "Terms"; ObjectID = "2V9-YN-vxb";');
         
         test.done();
     },
@@ -93,7 +94,7 @@ module.exports = {
 		});
         test.ok(j);
         
-        j.parse('/* i18n: this is the terms and conditions button label */\n' +
+        j.parse('/* this is the terms and conditions button label */\n' +
 				'"2V9-YN-vxb.normalTitle" = "Terms";\n');
         
         var set = j.getTranslationSet();
@@ -124,7 +125,7 @@ module.exports = {
 		});
         test.ok(j);
         
-        j.parse('/* i18n: this is the terms and conditions button label */\n\n\n\n' +
+        j.parse('/*            this is the terms and conditions button label              */\n\n\n\n' +
 				'          "2V9-YN-vxb.normalTitle"      \t =    \t "Terms"    ;     \n');
         
         var set = j.getTranslationSet();
@@ -184,7 +185,7 @@ module.exports = {
 		});
         test.ok(j);
         
-        j.parse('/* i18n: this is the terms and conditions button label */\n' +
+        j.parse('/* this is the terms and conditions button label */\n' +
 				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
 				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
 				'"MFI-qx-pQf.text" = "Are you a doctor?";');
@@ -206,7 +207,7 @@ module.exports = {
         test.ok(r);
         test.equal(r[0].getSource(), "Are you a doctor?");
         test.equal(r[0].getKey(), "MFI-qx-pQf.text");
-        test.ok(!r[0].getComment());
+        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf";');
         
         test.done();
     },
@@ -219,7 +220,10 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile(p, "./objc/en.lproj/FGSignUpViewController.strings");
+        var j = new IosStringsFile({
+        	project: p, 
+        	pathName: "./objc/en.lproj/FGSignUpViewController.strings"
+        });
         test.ok(j);
         
         // should read the file
@@ -235,7 +239,7 @@ module.exports = {
         test.ok(r);
         test.equal(r[0].getSource(), "Login ›");
         test.equal(r[0].getKey(), "QCe-xG-x5k.normalTitle");
-        test.ok(!r[0].getComment());
+        test.equal(r[0].getComment(), 'Class = "UIButton"; normalTitle = "Login ›"; ObjectID = "QCe-xG-x5k";');
 
         var r = set.getBy({
         	reskey: "WpN-ro-7NU.placeholder"
@@ -243,7 +247,7 @@ module.exports = {
         test.ok(r);
         test.equal(r[0].getSource(), "Your email");
         test.equal(r[0].getKey(), "WpN-ro-7NU.placeholder");
-        test.ok(!r[0].getComment());
+        test.equal(r[0].getComment(), 'Class = "UITextField"; placeholder = "Your email"; ObjectID = "WpN-ro-7NU";');
         
         var r = set.getBy({
         	reskey: "DWd-6J-lLt.text"
@@ -251,7 +255,7 @@ module.exports = {
         test.ok(r);
         test.equal(r[0].getSource(), "free, private");
         test.equal(r[0].getKey(), "DWd-6J-lLt.text");
-        test.ok(!r[0].getComment());
+        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "free, private"; ObjectID = "DWd-6J-lLt";');
 
         test.done();
     },
@@ -287,7 +291,10 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile(p, "./objc/en.lproj/asdf.strings");
+        var j = new IosStringsFile({
+        	project: p, 
+        	pathName: "./objc/en.lproj/asdf.strings"
+        });
         test.ok(j);
         
         // should attempt to read the file and not fail
