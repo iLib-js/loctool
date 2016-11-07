@@ -251,7 +251,7 @@ def produce_unmapped(unmapped_words)
     clean_w = w.gsub("\n", "");
     h[clean_w.gsub(' ', '_')] = clean_w
   }
-  File.open('/tmp/unmapped.yml', 'w') {|f|
+  File.open('./unmapped.yml', 'w') {|f|
     h.each{|k, v|
       f.write "#{k}:#{v}\n"
     }
@@ -265,6 +265,7 @@ raise ArgumentError.new("Usage: ruby haml_localizer.rb <locale-name> <lang-mappi
 locale_name = ARGV[0]
 local_mapping_file_name = ARGV[1]
 local_mappings = nil
+local_mappings ||= {}
 #if locale_name != 'zxx-XX'
 #  local_mappings = YAML.load(File.read(local_mapping_file_name))
 #end
@@ -296,12 +297,19 @@ ARGV[2, ARGV.length].each{|path_name|
     #  from_to = process_values(local_mappings, values, unmapped_words)
     #end
     #puts from_to
+    process_values(local_mappings, from_to.keys, unmapped_words)
 
     replace_with_translations(template, from_to)
     #parse again to ensure no failure
-    x = HTParser.new(template, Haml::Options.new)
-    root = x.parse
-    
+    begin
+      x = HTParser.new(template, Haml::Options.new)
+      root = x.parse
+    rescue => e
+      puts "ERROR: Bad substitution created invalid template for #{path_name}"
+      #puts e.backtrace # toggle to print entire trace
+      next # if we make a bad file, do not try to print, just go to next file
+    end
+      
     if file_name_components[file_name_components.length - 3] == "en-US"
       new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 3].join('') + ".#{locale_name}.html.haml"
     else
