@@ -7,14 +7,15 @@
 if (!IosStringsFile) {
     var IosStringsFile = require("../lib/IosStringsFile.js");
     var ObjectiveCProject =  require("../lib/ObjectiveCProject.js");
+    var ResourceString =  require("../lib/ResourceString.js");
 }
 
 module.exports = {
     testIosStringsFileConstructor: function(test) {
         test.expect(1);
 
-        var j = new IosStringsFile();
-        test.ok(j);
+        var strings = new IosStringsFile();
+        test.ok(strings);
         
         test.done();
     },
@@ -27,9 +28,9 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile(p, "./testfiles/objc/Base.lproj/Localizable.strings");
+        var strings = new IosStringsFile(p, "./testfiles/objc/Base.lproj/Localizable.strings");
         
-        test.ok(j);
+        test.ok(strings);
         
         test.done();
     },
@@ -42,10 +43,10 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile({
+        var strings = new IosStringsFile({
 			project: p
 		});
-        test.ok(j);
+        test.ok(strings);
         
         test.done();
     },
@@ -58,15 +59,15 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile({
+        var strings = new IosStringsFile({
 			project: p
 		});
-        test.ok(j);
+        test.ok(strings);
         
-        j.parse('/* Class = "UIButton"; normalTitle = "Terms"; ObjectID = "2V9-YN-vxb"; */\n' +
+        strings.parse('/* Class = "UIButton"; normalTitle = "Terms"; ObjectID = "2V9-YN-vxb"; */\n' +
         		'"2V9-YN-vxb.normalTitle" = "Terms";\n');
         
-        var set = j.getTranslationSet();
+        var set = strings.getTranslationSet();
         test.ok(set);
         
         var r = set.getBy({
@@ -89,15 +90,15 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile({
+        var strings = new IosStringsFile({
 			project: p
 		});
-        test.ok(j);
+        test.ok(strings);
         
-        j.parse('/* this is the terms and conditions button label */\n' +
+        strings.parse('/* this is the terms and conditions button label */\n' +
 				'"2V9-YN-vxb.normalTitle" = "Terms";\n');
         
-        var set = j.getTranslationSet();
+        var set = strings.getTranslationSet();
         test.ok(set);
         
         var r = set.getBy({
@@ -120,15 +121,15 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile({
+        var strings = new IosStringsFile({
 			project: p
 		});
-        test.ok(j);
+        test.ok(strings);
         
-        j.parse('/*            this is the terms and conditions button label              */\n\n\n\n' +
+        strings.parse('/*            this is the terms and conditions button label              */\n\n\n\n' +
 				'          "2V9-YN-vxb.normalTitle"      \t =    \t "Terms"    ;     \n');
         
-        var set = j.getTranslationSet();
+        var set = strings.getTranslationSet();
         test.ok(set);
         
         var r = set.getBy({
@@ -152,15 +153,15 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile({
+        var strings = new IosStringsFile({
 			project: p
 		});
-        test.ok(j);
+        test.ok(strings);
 
-        var set = j.getTranslationSet();
+        var set = strings.getTranslationSet();
         test.equal(set.size(), 0);
 
-        j.parse('/* i18n: this is the terms and conditions button label */\n' +
+        strings.parse('/* i18n: this is the terms and conditions button label */\n' +
 				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
 				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
 				'"MFI-qx-pQf.text" = "Are you a doctor?";');
@@ -180,17 +181,17 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile({
+        var strings = new IosStringsFile({
 			project: p
 		});
-        test.ok(j);
+        test.ok(strings);
         
-        j.parse('/* this is the terms and conditions button label */\n' +
+        strings.parse('/* this is the terms and conditions button label */\n' +
 				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
 				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
 				'"MFI-qx-pQf.text" = "Are you a doctor?";');
        
-        var set = j.getTranslationSet();
+        var set = strings.getTranslationSet();
         test.ok(set);
         
         var r = set.getBy({
@@ -220,16 +221,16 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile({
+        var strings = new IosStringsFile({
         	project: p, 
         	pathName: "./objc/en.lproj/FGSignUpViewController.strings"
         });
-        test.ok(j);
+        test.ok(strings);
         
         // should read the file
-        j.extract();
+        strings.extract();
         
-        var set = j.getTranslationSet();
+        var set = strings.getTranslationSet();
         
         test.equal(set.size(), 15);
         
@@ -268,15 +269,15 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile({
+        var strings = new IosStringsFile({
 			project: p
 		});
-        test.ok(j);
+        test.ok(strings);
         
         // should attempt to read the file and not fail
-        j.extract();
+        strings.extract();
         
-        var set = j.getTranslationSet();
+        var set = strings.getTranslationSet();
         
         test.equal(set.size(), 0);
 
@@ -291,19 +292,63 @@ module.exports = {
 			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var j = new IosStringsFile({
+        var strings = new IosStringsFile({
         	project: p, 
         	pathName: "./objc/en.lproj/asdf.strings"
         });
-        test.ok(j);
+        test.ok(strings);
         
         // should attempt to read the file and not fail
-        j.extract();
+        strings.extract();
         
-        var set = j.getTranslationSet();
+        var set = strings.getTranslationSet();
         
         test.equal(set.size(), 0);
 
         test.done();   
-    }
+    },
+    
+    testIosStringsFileGetContent: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var strings = new IosStringsFile({
+        	project: p, 
+        	pathName: "./objc/de.lproj/asdf.strings"
+        });
+        test.ok(strings);
+        
+        [
+        	new ResourceString({
+        		project: "ht-iosapp",
+        		locale: "de-DE",
+        		key: "source text",
+        		source: "Quellen\"text",
+        		comment: "foo"
+        	}),
+        	new ResourceString({
+        		project: "ht-iosapp",
+        		locale: "de-DE",
+        		key: "more source text",
+        		source: "mehr Quellen\"text",
+        		comment: "bar"
+        	})
+        ].forEach(function(res) {
+        	strings.addResource(res);
+        });
+        
+        test.equal(strings.getContent(),
+        	'/* foo */\n' +
+        	'"source text"="Quellen\\"text";\n\n' +
+        	'/* bar */\n' +
+        	'"more source text"="mehr Quellen\\"text";\n\n'
+        );
+        
+        test.done();
+    },
+    
 };
