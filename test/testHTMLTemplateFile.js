@@ -1990,12 +1990,6 @@ module.exports = {
         	source: 'Dr. <%= family_name %> n\'est pas disponible.',
         	locale: "fr-FR"
         }));
-        translations.add(new ResourceString({
-        	project: "ht-webapp12",
-        	key: 'Dr. <%= family_name %> is not available.',
-        	source: 'Herr Dr. <%= family_name %> ist nict erhältlich.',
-        	locale: "de-DE"
-        }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
         		'<html>\n' +
