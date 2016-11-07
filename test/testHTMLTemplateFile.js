@@ -1659,7 +1659,7 @@ module.exports = {
         test.done();
     },
     
-    testHTMLTemplateFileGetLocalizePathSimple: function(test) {
+    testHTMLTemplateFileGetLocalizedPathSimple: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -1675,7 +1675,7 @@ module.exports = {
         test.done();
     },
 
-    testHTMLTemplateFileGetLocalizePathComplex: function(test) {
+    testHTMLTemplateFileGetLocalizedPathComplex: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -1691,7 +1691,7 @@ module.exports = {
         test.done();
     },
 
-    testHTMLTemplateFileGetLocalizePathRegularHTMLFileName: function(test) {
+    testHTMLTemplateFileGetLocalizedPathRegularHTMLFileName: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -1707,7 +1707,7 @@ module.exports = {
         test.done();
     },
     
-    testHTMLTemplateFileGetLocalizePathNotEnoughParts: function(test) {
+    testHTMLTemplateFileGetLocalizedPathNotEnoughParts: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -1723,6 +1723,22 @@ module.exports = {
         test.done();
     },
     
+    testHTMLTemplateFileGetLocalizedSourceLocale: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p, "./asdf/bar/simple.en-US.tmpl.html");
+        test.ok(htf);
+        
+        test.equal(htf.getLocalizedPath("fr-FR"), "testfiles/asdf/bar/simple.fr-FR.tmpl.html");
+                
+        test.done();
+    },
+
     testHTMLTemplateFileLocalize: function(test) {
         test.expect(5);
 
