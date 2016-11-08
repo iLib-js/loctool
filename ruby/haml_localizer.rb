@@ -37,53 +37,6 @@ class HTParser < Haml::Parser
 end
 
 
-def toks_with_n_breaks2(markup, stripped, num_breaks, memoized)
-  #puts "toks_with_n_breaks caleld with markup=#{markup} stripped=#{stripped} num_breaks=#{num_breaks}"
-  #sleep(1)
-  mem_key = "#{num_breaks}_#{markup}_#{stripped}"
-  mem = memoized[mem_key]
-  return nil if mem == 'nil'
-  return mem if mem
-
-  if num_breaks == 0
-    if markup.include?(stripped)
-      memoized[mem_key] = [stripped]
-      return [stripped]
-    else
-      memoized[mem_key] = 'nil'
-      return nil
-    end
-  end
-
-  for i in (1..stripped.length) do
-    #puts "i=#{i}"
-    cand = stripped[0,i]
-    #puts "cand=#{cand}"
-    if markup.include?(cand)
-      #found a break. recurse
-      ret = toks_with_n_breaks2(markup.gsub(cand, ''), stripped.gsub(cand, ''), num_breaks - 1, memoized)
-      if ret
-        memoized[mem_key] = [cand] + ret
-        return [cand] + ret
-      end
-    end
-  end
-  memoized[mem_key] = 'nil'
-  nil
-end
-
-
-#return array of tokenized strings. Break into as few phrases as possible
-def get_overlap_strings(orig_with_markup, stripped)
-  stripped_words = stripped.split(' ').reject{|s| s.empty?}
-  memoized = {}
-  for num_breaks in (0..stripped_words.count) do
-    ret = toks_with_n_breaks2(orig_with_markup, stripped, num_breaks, memoized)
-    return ret if ret
-  end
-  nil
-end
-
 # return array of words tokenizing around code blocks for str
 # stripped is the originally Sanitized word
 def break_around_code(str)
@@ -148,6 +101,7 @@ def get_overlap_strings2(orig_with_markup, stripped)
   ret.concat(get_overlap_strings2(md[1], stripped))
 end
 
+# populate values with strings to translate. root is dom-tree node
 def accumulate_values(root, values)
   orig = nil
   if root[:type] == :silent_script
