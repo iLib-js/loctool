@@ -185,7 +185,7 @@ def replace_with_translations(template, from_to)
 
     # match starting with word boundary and doesn't have / | : right before k
     # also skip k if suffix is .<something>. ex - topic.kb_attribute. Assumes regular english will have .<spave><char>
-    res = template.gsub!(/\b(?<![-\/:_\.|])#{Regexp.escape(k)}(?![\.]\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+    res = template.gsub!(/\b(?<![-\/:_\.|#%])#{Regexp.escape(k)}(?![\.]\S)/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(/\b#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(k, v)
     if res.nil?
@@ -214,21 +214,6 @@ def produce_unmapped(unmapped_words)
     puts "ERROR: Bad YAML created for object=#{h}"
   end
 end
-
-YAML_RESERVED_CHARACTERS = [':']
-
-def to_yaml_friendly_key(key)
-  "\"#{key.gsub(' ', '_')}\""
-end
-
-def to_yaml_friendly_value(value)
-  if (YAML_RESERVED_CHARACTERS & value.split('')).size > 0
-    "\"#{value}\""
-  else
-    value
-  end
-end
-
 
 #file_name = "/Users/aseem/_language_form.html.haml"
 raise ArgumentError.new("Usage: ruby haml_localizer.rb <locale-name> <lang-mapping> [<file-path>..]") if ARGV.count < 3
