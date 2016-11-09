@@ -1964,6 +1964,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
+        	id: "ht-webapp12",
         	sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -1995,7 +1996,7 @@ module.exports = {
         test.equal(htf.localizeText(translations, "fr-FR"),
         		'<html>\n' +
         		'   <body>\n' + 
-        		'       <span <% if (condition) { %>class="foo"<% } %>> Dr. <%= family_name %> n\'est pas disponible.</span>\n' +
+        		'       <span <% if (condition) { %> class="foo" <% } %>> Dr. <%= family_name %> n\'est pas disponible.</span>\n' +
         		'   </body>\n' +
         		'</html>\n');
 
