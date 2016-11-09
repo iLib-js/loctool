@@ -185,7 +185,7 @@ def replace_with_translations(template, from_to)
 
     # match starting with word boundary and doesn't have / | : right before k
     # also skip k if suffix is .<something>. ex - topic.kb_attribute. Assumes regular english will have .<spave><char>
-    res = template.gsub!(/\b(?<![-\/:_\.|])#{Regexp.escape(k)}(?![\.]\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+    res = template.gsub!(/\b(?<![-\/:_\.|#%])#{Regexp.escape(k)}(?![\.]\S)/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(/\b#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(k, v)
     if res.nil?
@@ -203,16 +203,17 @@ def produce_unmapped(unmapped_words)
   h = {}
   unmapped_words.each{|w|
     clean_w = w.gsub("\n", "");
-    h[clean_w.gsub(' ', '_')] = clean_w
+    h[ clean_w.gsub(' ', '_') ] = clean_w
   }
   File.open('./unmapped.yml', 'w') {|f|
-    h.each{|k, v|
-      f.write "#{k}:#{v}\n"
-    }
-
+    f.write(h.to_yaml)
   }
+  begin
+    YAML::load_file('./unmapped.yml')
+  rescue => e
+    puts "ERROR: Bad YAML created for object=#{h}"
+  end
 end
-
 
 #file_name = "/Users/aseem/_language_form.html.haml"
 raise ArgumentError.new("Usage: ruby haml_localizer.rb <locale-name> <lang-mapping> [<file-path>..]") if ARGV.count < 3
