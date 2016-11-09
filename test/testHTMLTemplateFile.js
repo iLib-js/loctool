@@ -9,6 +9,7 @@ var fs = require("fs");
 
 if (!HTMLTemplateFile) {
     var HTMLTemplateFile = require("../lib/HTMLTemplateFile.js");
+
     var WebProject =  require("../lib/WebProject.js");
     var TranslationSet =  require("../lib/TranslationSet.js");
     var ResourceString =  require("../lib/ResourceString.js");
@@ -816,6 +817,33 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileParseTemplateTagsInsideTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <span <% if (condition) { %>class="foo"<% } %>> Dr. <%= family_name %> is not available.</span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('Dr. <%= family_name %> is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
+        test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+                
+        test.done();
+    },
+
     testHTMLTemplateFileParseI18NComments: function(test) {
         test.expect(6);
 
@@ -1607,15 +1635,14 @@ module.exports = {
         translations.add(new ResourceString({
         	project: "foo",
         	key: 'Dr. <%= family_name %> is not available.',
-        	source: 'Dr. <%= family_name %> ne sont pas disponibles.',
+        	source: 'Dr. <%= family_name %> n\'est pas disponibles.',
         	locale: "fr-FR"
         }));
-        
-        
+             
         test.equal(htf.localizeText(translations, "fr-FR"),
         		'<html>\n' +
         		'   <body>\n' + 
-        		'       Dr. <%= family_name %> ne sont pas disponibles.\n' +
+        		'       Dr. <%= family_name %> n\'est pas disponibles.\n' +
         		'   </body>\n' +
         		'</html>\n');
                 
@@ -1930,6 +1957,48 @@ module.exports = {
         test.ok(!fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.fr-FR.tmpl.html")));
         test.ok(!fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.de-DE.tmpl.html")));
         
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <span <% if (condition) { %>class="foo"<% } %>> Dr. <%= family_name %> is not available.</span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('Dr. <%= family_name %> is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
+        test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Dr. <%= family_name %> is not available.',
+        	source: 'Dr. <%= family_name %> n\'est pas disponible.',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       <span <% if (condition) { %>class="foo"<% } %>> Dr. <%= family_name %> n\'est pas disponible.</span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+
         test.done();
     }
 };
