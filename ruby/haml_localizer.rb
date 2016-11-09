@@ -203,7 +203,7 @@ def produce_unmapped(unmapped_words)
   h = {}
   unmapped_words.each{|w|
     clean_w = w.gsub("\n", "");
-    h[clean_w.gsub(' ', '_')] = clean_w
+    h[ to_yaml_friendly_key(clean_w) ] = to_yaml_friendly_value(clean_w)
   }
   File.open('./unmapped.yml', 'w') {|f|
     h.each{|k, v|
@@ -211,6 +211,20 @@ def produce_unmapped(unmapped_words)
     }
 
   }
+end
+
+YAML_RESERVED_CHARACTERS = [':']
+
+def to_yaml_friendly_key(key)
+  "\"#{key.gsub(' ', '_')}\""
+end
+
+def to_yaml_friendly_value(value)
+  if (YAML_RESERVED_CHARACTERS & value.split('')).size > 0
+    "\"#{value}\""
+  else
+    value
+  end
 end
 
 
