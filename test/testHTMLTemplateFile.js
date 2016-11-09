@@ -2001,5 +2001,85 @@ module.exports = {
         		'</html>\n');
 
         test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags2: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+        	'<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(expert.entity_type == \'group\'){ %>checked=yes<% } %> >\n' +
+        	'<label for="entity_group" class="radio-label">Group</label>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('Group');
+        test.ok(r);
+        test.equal(r.getSource(), 'Group');
+        test.equal(r.getKey(), 'Group');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Group',
+        	source: 'Groupe',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(expert.entity_type == \'group\'){ %> checked="yes" <% } %>>\n' +
+            	'<label for="entity_group" class="radio-label">Groupe</label>');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags2: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+        	'    <select class=\'end_hour\' value=<%=end_hour%>>\n' +
+            '      foo\n' +
+            '    </select>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'    <select class=\'end_hour\' value="<%=end_hour%>">\n' +
+                '      asdf\n' +
+                '    </select>\n');
+
+        test.done();
     }
+    
+
 };
