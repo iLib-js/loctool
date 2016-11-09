@@ -2002,7 +2002,50 @@ module.exports = {
 
         test.done();
     },
-    
+
+    testHTMLTemplateFileLocalizeTextNonTemplateTagsInsideTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <span class="foo" <span class="bar"> Dr. <%= family_name %> is not available.</span></span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('Dr. <%= family_name %> is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
+        test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Dr. <%= family_name %> is not available.',
+        	source: 'Dr. <%= family_name %> n\'est pas disponible.',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       <span class="foo" span="" class="bar"> Dr. <%= family_name %> n\'est pas disponible.</span></span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+
+        test.done();
+    },
+
     testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags2: function(test) {
         test.expect(6);
 
@@ -2041,7 +2084,7 @@ module.exports = {
         test.done();
     },
     
-    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags2: function(test) {
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags3: function(test) {
         test.expect(6);
 
         var p = new WebProject({
@@ -2074,7 +2117,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'    <select class=\'end_hour\' value="<%=end_hour%>">\n' +
+        		'    <select class="end_hour" value="<%=end_hour%>">\n' +
                 '      asdf\n' +
                 '    </select>\n');
 
