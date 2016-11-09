@@ -203,14 +203,16 @@ def produce_unmapped(unmapped_words)
   h = {}
   unmapped_words.each{|w|
     clean_w = w.gsub("\n", "");
-    h[ to_yaml_friendly_key(clean_w) ] = to_yaml_friendly_value(clean_w)
+    h[ clean_w.gsub(' ', '_') ] = clean_w
   }
   File.open('./unmapped.yml', 'w') {|f|
-    h.each{|k, v|
-      f.write "#{k}:#{v}\n"
-    }
-
+    f.write(h.to_yaml)
   }
+  begin
+    YAML::load_file('./unmapped.yml')
+  rescue => e
+    puts "ERROR: Bad YAML created for object=#{h}"
+  end
 end
 
 YAML_RESERVED_CHARACTERS = [':']
