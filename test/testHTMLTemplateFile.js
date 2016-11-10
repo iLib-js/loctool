@@ -15,6 +15,19 @@ if (!HTMLTemplateFile) {
     var ResourceString =  require("../lib/ResourceString.js");
 }
 
+function diff(a, b) {
+	var min = Math.min(a.length, b.length);
+	
+	for (var i = 0; i < min; i++) {
+		if (a[i] !== b[i]) {
+			console.log("Found difference at character " + i);
+			console.log("a: " + a.substring(i));
+			console.log("b: " + b.substring(i));
+			break;
+		}
+	}
+}
+
 module.exports = {
     testHTMLTemplateFileConstructor: function(test) {
         test.expect(1);
@@ -2002,7 +2015,7 @@ module.exports = {
 
         test.done();
     },
-
+    
     testHTMLTemplateFileLocalizeTextNonTemplateTagsInsideTags: function(test) {
         test.expect(6);
 
@@ -2252,7 +2265,7 @@ module.exports = {
         	source: 'asdf',
         	locale: "fr-FR"
         }));
-
+        
         test.equal(htf.localizeText(translations, "fr-FR"),
     		'<% _.each(experts, function( val, index ){ %>\n' +
     		'  <div class="expert-review">\n' +
@@ -2261,7 +2274,7 @@ module.exports = {
     		'      <div class="doctor-info">\n' +
     		'        <div class="caduceus"></div>\n' +
     		'        <a class="doctor-name" href="<%= val.expert.url%>"><%= val.expert.name%></a>\n' +
-    		'        <div class ="specialty"><%= val.expert.intro%></div>\n' +
+    		'        <div class="specialty"><%= val.expert.intro%></div>\n' +
     		'      </div>\n' +
     		'    </div>\n' +
     		'    <div class="rating-stars">\n' +
@@ -2303,7 +2316,7 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), 'foo');
         test.equal(r.getKey(), 'foo');
-        
+    
         var translations = new TranslationSet();
         translations.add(new ResourceString({
         	project: "ht-webapp12",
@@ -2316,6 +2329,86 @@ module.exports = {
         		'<div class="select-wrap select-country left additional-field <%= version ? "new-version" : ""%>">\nasdf\n</div>');
 
         test.done();
-    }
+    },
     
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags8: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>"></div>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>"></div>');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags9: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+        		'  <% if(two_buttons){ %>\n' +
+        		'    <div class="btn grey btn-left"><%= cancel_btn.text %></div>\n' +
+        		'    <div class="btn btn-right blue"><%= confirm_btn.text %></div>\n' +
+        		'  <% } else { %>\n' +
+        		'    <div class="btn grey confirm-btn" style="width: 93%" ><%= confirm_btn.text %></div>\n' +
+        		'  <% } %>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'  <% if(two_buttons){ %>\n' +
+        		'    <div class="btn grey btn-left"><%= cancel_btn.text %></div>\n' +
+        		'    <div class="btn btn-right blue"><%= confirm_btn.text %></div>\n' +
+        		'  <% } else { %>\n' +
+        		'    <div class="btn grey confirm-btn" style="width: 93%"><%= confirm_btn.text %></div>\n' +
+        		'  <% } %>');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'  <% if(two_buttons){ %>\n' +
+        		'    <div class="btn grey btn-left"><%= cancel_btn.text %></div>\n' +
+        		'    <div class="btn btn-right blue"><%= confirm_btn.text %></div>\n' +
+        		'  <% } else { %>\n' +
+        		'    <div class="btn grey confirm-btn" style="width: 93%"><%= confirm_btn.text %></div>\n' +
+        		'  <% } %>');
+
+        test.done();
+    },
+
+
 };
