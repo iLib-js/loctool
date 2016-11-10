@@ -37,53 +37,6 @@ class HTParser < Haml::Parser
 end
 
 
-def toks_with_n_breaks2(markup, stripped, num_breaks, memoized)
-  #puts "toks_with_n_breaks caleld with markup=#{markup} stripped=#{stripped} num_breaks=#{num_breaks}"
-  #sleep(1)
-  mem_key = "#{num_breaks}_#{markup}_#{stripped}"
-  mem = memoized[mem_key]
-  return nil if mem == 'nil'
-  return mem if mem
-
-  if num_breaks == 0
-    if markup.include?(stripped)
-      memoized[mem_key] = [stripped]
-      return [stripped]
-    else
-      memoized[mem_key] = 'nil'
-      return nil
-    end
-  end
-
-  for i in (1..stripped.length) do
-    #puts "i=#{i}"
-    cand = stripped[0,i]
-    #puts "cand=#{cand}"
-    if markup.include?(cand)
-      #found a break. recurse
-      ret = toks_with_n_breaks2(markup.gsub(cand, ''), stripped.gsub(cand, ''), num_breaks - 1, memoized)
-      if ret
-        memoized[mem_key] = [cand] + ret
-        return [cand] + ret
-      end
-    end
-  end
-  memoized[mem_key] = 'nil'
-  nil
-end
-
-
-#return array of tokenized strings. Break into as few phrases as possible
-def get_overlap_strings(orig_with_markup, stripped)
-  stripped_words = stripped.split(' ').reject{|s| s.empty?}
-  memoized = {}
-  for num_breaks in (0..stripped_words.count) do
-    ret = toks_with_n_breaks2(orig_with_markup, stripped, num_breaks, memoized)
-    return ret if ret
-  end
-  nil
-end
-
 # return array of words tokenizing around code blocks for str
 # stripped is the originally Sanitized word
 def break_around_code(str)
@@ -148,6 +101,7 @@ def get_overlap_strings2(orig_with_markup, stripped)
   ret.concat(get_overlap_strings2(md[1], stripped))
 end
 
+# populate values with strings to translate. root is dom-tree node
 def accumulate_values(root, values)
   orig = nil
   if root[:type] == :silent_script
@@ -231,7 +185,7 @@ def replace_with_translations(template, from_to)
 
     # match starting with word boundary and doesn't have / | : right before k
     # also skip k if suffix is .<something>. ex - topic.kb_attribute. Assumes regular english will have .<spave><char>
-    res = template.gsub!(/\b(?<![-\/:_\.|])#{Regexp.escape(k)}(?![\.]\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+    res = template.gsub!(/\b(?<![-\/:_\.|#%])#{Regexp.escape(k)}(?![\.]\S)/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(/\b#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(k, v)
     if res.nil?
@@ -249,22 +203,24 @@ def produce_unmapped(unmapped_words)
   h = {}
   unmapped_words.each{|w|
     clean_w = w.gsub("\n", "");
-    h[clean_w.gsub(' ', '_')] = clean_w
+    h[ clean_w.gsub(' ', '_') ] = clean_w
   }
-  File.open('/tmp/unmapped.yml', 'w') {|f|
-    h.each{|k, v|
-      f.write "#{k}:#{v}\n"
-    }
-
+  File.open('./unmapped.yml', 'w') {|f|
+    f.write(h.to_yaml)
   }
+  begin
+    YAML::load_file('./unmapped.yml')
+  rescue => e
+    puts "ERROR: Bad YAML created for object=#{h}"
+  end
 end
-
 
 #file_name = "/Users/aseem/_language_form.html.haml"
 raise ArgumentError.new("Usage: ruby haml_localizer.rb <locale-name> <lang-mapping> [<file-path>..]") if ARGV.count < 3
 locale_name = ARGV[0]
 local_mapping_file_name = ARGV[1]
 local_mappings = nil
+local_mappings ||= {}
 #if locale_name != 'zxx-XX'
 #  local_mappings = YAML.load(File.read(local_mapping_file_name))
 #end
@@ -296,12 +252,19 @@ ARGV[2, ARGV.length].each{|path_name|
     #  from_to = process_values(local_mappings, values, unmapped_words)
     #end
     #puts from_to
+    process_values(local_mappings, from_to.keys, unmapped_words)
 
     replace_with_translations(template, from_to)
     #parse again to ensure no failure
-    x = HTParser.new(template, Haml::Options.new)
-    root = x.parse
-    
+    begin
+      x = HTParser.new(template, Haml::Options.new)
+      root = x.parse
+    rescue => e
+      puts "ERROR: Bad substitution created invalid template for #{path_name}"
+      #puts e.backtrace # toggle to print entire trace
+      next # if we make a bad file, do not try to print, just go to next file
+    end
+      
     if file_name_components[file_name_components.length - 3] == "en-US"
       new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 3].join('') + ".#{locale_name}.html.haml"
     else
