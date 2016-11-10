@@ -2122,7 +2122,80 @@ module.exports = {
                 '    </select>\n');
 
         test.done();
-    }
+    },
     
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags4: function(test) {
+        test.expect(6);
 
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+        	'<span has-sub-options = <%= option.sub_options.length > 0 %> data-tracking-value = "<%= option.tracking_value%>" >\n' +
+            '    foo\n' +
+            '</span>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<span has-sub-options="<%= option.sub_options.length > 0 %>" data-tracking-value="<%= option.tracking_value%>" >\n' +
+                '    asdf\n' +
+                '</span>\n');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags5: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<a class="doctor-name" href=<%= val.expert.url%>>foo</a>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<a class="doctor-name" href="<%= val.expert.url%>">asdf</a>\n');
+
+        test.done();
+    }
 };
