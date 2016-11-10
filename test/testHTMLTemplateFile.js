@@ -2157,7 +2157,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'<span has-sub-options="<%= option.sub_options.length > 0 %>" data-tracking-value="<%= option.tracking_value%>" >\n' +
+        		'<span has-sub-options="<%= option.sub_options.length > 0 %>" data-tracking-value="<%= option.tracking_value%>">\n' +
                 '    asdf\n' +
                 '</span>\n');
 
@@ -2197,5 +2197,125 @@ module.exports = {
         		'<a class="doctor-name" href="<%= val.expert.url%>">asdf</a>\n');
 
         test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags6: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+    		'<% _.each(experts, function( val, index ){ %>\n' +
+    		'  <div class="expert-review">\n' +
+    		'    <div class="doctor-item" >\n' +
+    		'      <div class="doctor-avatar" style="background-image: url(<%= val.expert.avatar_transparent_circular %>);"></div>\n' +
+    		'      <div class="doctor-info">\n' +
+    		'        <div class="caduceus"></div>\n' +
+    		'        <a class="doctor-name" href=<%= val.expert.url%>><%= val.expert.name%></a>\n' +
+    		'        <div class ="specialty"><%= val.expert.intro%></div>\n' +
+    		'      </div>\n' +
+    		'    </div>\n' +
+    		'    <div class="rating-stars">\n' +
+    		'      <% for (var index = 1; index<=5; index++) {%>\n' +
+    		'        <% if (val.rating < index) {%>\n' +
+    		'          <div class="rating-star-empty"></div>\n' +
+    		'        <% } else { %>\n' +
+    		'          <div class="rating-star-filled"></div>\n' +
+    		'        <% } %>\n' +
+    		'      <% } %>\n' +
+    		'    </div>\n' +
+    		'    <div class="notes">\n' +
+    		'      <%= val.note%>\n' +
+    		'      foo\n' +
+    		'    </div>\n' +
+    		'  </div>\n' +
+    		'<% }) %>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    		'<% _.each(experts, function( val, index ){ %>\n' +
+    		'  <div class="expert-review">\n' +
+    		'    <div class="doctor-item">\n' +
+    		'      <div class="doctor-avatar" style="background-image: url(<%= val.expert.avatar_transparent_circular %>);"></div>\n' +
+    		'      <div class="doctor-info">\n' +
+    		'        <div class="caduceus"></div>\n' +
+    		'        <a class="doctor-name" href="<%= val.expert.url%>"><%= val.expert.name%></a>\n' +
+    		'        <div class ="specialty"><%= val.expert.intro%></div>\n' +
+    		'      </div>\n' +
+    		'    </div>\n' +
+    		'    <div class="rating-stars">\n' +
+    		'      <% for (var index = 1; index<=5; index++) {%>\n' +
+    		'        <% if (val.rating < index) {%>\n' +
+    		'          <div class="rating-star-empty"></div>\n' +
+    		'        <% } else { %>\n' +
+    		'          <div class="rating-star-filled"></div>\n' +
+    		'        <% } %>\n' +
+    		'      <% } %>\n' +
+    		'    </div>\n' +
+    		'    <div class="notes">\n' +
+    		'      <%= val.note%>\n' +
+    		'      asdf\n' +
+    		'    </div>\n' +
+    		'  </div>\n' +
+    		'<% }) %>');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags7: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<div class="select-wrap select-country left additional-field <%= version ? "new-version" : ""%>">\nfoo\n</div>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<div class="select-wrap select-country left additional-field <%= version ? "new-version" : ""%>">\nasdf\n</div>');
+
+        test.done();
     }
+    
 };
