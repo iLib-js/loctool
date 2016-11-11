@@ -108,21 +108,23 @@ def accumulate_values(root, values)
     #skip
   elsif (root.value && root.value[:value])
     orig = root.value[:value]
-    if root.value[:parse] && root.value[:name] == 'td'
+    if root.value[:parse]
+      #skip all parsed nodes. i.e, ruby code
       orig = nil
-    elsif root.value[:parse]
-      if orig.include?('[:') || orig.include?('__')
-        # assumed this entire node is piece of code. skip it
-        orig = nil
-      else
-        begin
-          #puts "orig=#{orig}"
-          orig = YAML.load(orig)
-        rescue Psych::SyntaxError => ex
-          #puts "orig=#{orig}"
-          orig = nil
-        end
-      end
+
+    #elsif root.value[:parse]
+    #  if orig.include?('[:') || orig.include?('__')
+    #    # assumed this entire node is piece of code. skip it
+    #    orig = nil
+    #  else
+    #    begin
+    #      #puts "orig=#{orig}"
+    #      orig = YAML.load(orig)
+    #    rescue Psych::SyntaxError => ex
+    #      #puts "orig=#{orig}"
+    #      orig = nil
+    #    end
+    #  end
     end
   elsif root.value && root.value[:attributes] && root.value[:attributes]['title']
     #puts "Found title=#{root.value[:attributes]['title']}"
@@ -185,7 +187,8 @@ def replace_with_translations(template, from_to)
 
     # match starting with word boundary and doesn't have / | : right before k
     # also skip k if suffix is .<something>. ex - topic.kb_attribute. Assumes regular english will have .<spave><char>
-    res = template.gsub!(/\b(?<![-\/:_\.|#%])#{Regexp.escape(k)}(?![\.]\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+    res = template.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.=]\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+
     #res = template.gsub!(/\b#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(k, v)
     if res.nil?
@@ -238,7 +241,7 @@ ARGV[2, ARGV.length].each{|path_name|
     template = File.read(path_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-    # puts "root=#{root}"
+    #puts "root=#{root}"
     values = []
     accumulate_values(root, values)
     #puts "orig_values=#{values}"
