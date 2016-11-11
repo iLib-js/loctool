@@ -113,6 +113,38 @@ module.exports = {
         test.done();
     },
 
+    testIosStringsFileParseWithNonComment: function(test) {
+        test.expect(6);
+
+        var p = new ObjectiveCProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var strings = new IosStringsFile({
+			project: p
+		});
+        test.ok(strings);
+        
+        strings.parse(
+        		'/* No comment provided by engineer. */\n' +
+				'"Terms" = "Terms";\n');
+        
+        var set = strings.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBy({
+        	reskey: "Terms"
+        });
+        test.ok(r);
+        
+        test.equal(r[0].getSource(), "Terms");
+        test.equal(r[0].getKey(), "Terms");
+        test.ok(!r[0].getComment());
+        
+        test.done();
+    },
+
     testIosStringsFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(6);
 
@@ -143,8 +175,7 @@ module.exports = {
         
         test.done();
     },
-
-
+    
     testIosStringsFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
@@ -260,7 +291,55 @@ module.exports = {
 
         test.done();
     },
-    
+
+    testIosStringsFileExtractFileUnicodeFile: function(test) {
+        test.expect(14);
+
+        var p = new ObjectiveCProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var strings = new IosStringsFile({
+        	project: p, 
+        	pathName: "./objc/Localizable.strings"
+        });
+        test.ok(strings);
+        
+        // should read the file
+        strings.extract();
+        
+        var set = strings.getTranslationSet();
+        
+        test.equal(set.size(), 42);
+        
+        var r = set.getBy({
+        	reskey: "%@ %@your gratitude :)"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "%1$@ %2$@your gratitude :)");
+        test.equal(r[0].getKey(), "%@ %@your gratitude :)");
+        test.ok(!r[0].getComment());
+
+        var r = set.getBy({
+        	reskey: "%@ added this checklist"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "%@ added this checklist");
+        test.equal(r[0].getKey(), "%@ added this checklist");
+        test.equal(r[0].getComment(), 'parameter is a person name');
+        
+        var r = set.getBy({
+        	reskey: "%@ commented on %@'s answer"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "%1$@ commented on %2$@'s answer");
+        test.equal(r[0].getKey(), "%@ commented on %@'s answer");
+        test.ok(!r[0].getComment());
+
+        test.done();
+    },
+   
     testIosStringsFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
