@@ -2410,5 +2410,70 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileLocalizeTextEscapeDoubleQuotes: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('  <span class="foo" onclick=\'javascript:var a = "foo", b = "bar";\'>foo</span>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" onclick="javascript:var a = \\"foo\\", b = \\"bar\\";">asdf</span>');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" onclick="javascript:var a = \\"foo\\", b = \\"bar\\";">asdf</span>');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextEscapeDoubleQuotesButNotInTemplateTags: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('  <span class="foo" foo=\'asdf <% if (state === "selected") { %>selected<% } %>\'>foo</span>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" foo="asdf <% if (state === "selected") { %>selected<% } %>">asdf</span>');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" foo="asdf <% if (state === "selected") { %>selected<% } %>">asdf</span>');
+
+        test.done();
+    },
 
 };
