@@ -102,13 +102,14 @@ def get_overlap_strings2(orig_with_markup, stripped)
 end
 
 # populate values with strings to translate. root is dom-tree node
-def accumulate_values(root, values)
+def accumulate_values(root, values, path_name)
   orig = nil
   if root[:type] == :silent_script
     #skip
   elsif (root.value && root.value[:value])
     orig = root.value[:value]
     if root.value[:parse]
+      puts "File has parsed-strings=#{path_name}"
       #skip all parsed nodes. i.e, ruby code
       orig = nil
 
@@ -145,7 +146,7 @@ def accumulate_values(root, values)
       values.concat(toks) if toks
     end
   end
-  root.children.each{|c| accumulate_values(c, values)}
+  root.children.each{|c| accumulate_values(c, values, path_name)}
 end
 
 
@@ -243,7 +244,7 @@ ARGV[2, ARGV.length].each{|path_name|
     root = x.parse
     #puts "root=#{root}"
     values = []
-    accumulate_values(root, values)
+    accumulate_values(root, values, path_name)
     #puts "orig_values=#{values}"
     values = reject_special_words(reject_paran(break_aound_code_values(values)))
 
