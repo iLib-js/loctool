@@ -216,7 +216,7 @@ module.exports = {
         var j = new ObjectiveCFile(p);
         test.ok(j);
         
-        j.parse('NSLocalizedString(@"This is a test", @"translator\'s comment")\n\ta.parse("This is another test.");\n\t\tNSLocalizedString(@"This is a also test", @"translator\'s comment 2")');
+        j.parse('NSLocalizedString(@"This is a test", @"translator\'s comment")\n\ta.parse("This is another test.");\n\t\tNSLocalizedString(@"This is also a test", @"translator\'s comment 2")');
         
         var set = j.getTranslationSet();
         test.ok(set);
