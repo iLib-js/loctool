@@ -237,7 +237,7 @@ module.exports = {
     },
 
     testObjectiveCFileParseWithDups: function(test) {
-        test.expect(6);
+        test.expect(7);
 
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US"
