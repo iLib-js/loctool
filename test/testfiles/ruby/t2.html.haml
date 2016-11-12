@@ -1,0 +1,72 @@
+:ruby
+  form_data = @page_data[:form_response][:responses]
+  calc_defaults = @page_data[:calc_defaults]
+  roi = form_data[:roi].present? ? form_data[:roi] : calc_defaults[:roi]
+  pmpm = form_data[:pmpm_savings].present? ? form_data[:pmpm_savings] : calc_defaults[:pmpm_savings]
+  gross = form_data[:gross_saving].present? ? form_data[:gross_saving] : calc_defaults[:gross_saving]
+  tmpl = {
+    :organization_size=>{:title=>Rb.t('Size of organization')},
+    :doctor_visits_per_year=>{:title=>Rb.t('Doctor visits per member per year')},
+    :avg_cost_doctor_visit=>{:title=>Rb.t('Average cost of doctor visit'),:currency=>1},
+    :urgent_visits_per_year=>{:title=>Rb.t('Urgent care visits per member per year')},
+    :avg_cost_urgent_visit=>{:title=>Rb.t('Average cost of urgent care visit'),:currency=>1},
+    :er_visits_per_year=>{:title=>Rb.t('ER visits per member per year')},
+    :avg_cost_er_visit=>{:title=>Rb.t('Average cost of ER visit'),:currency=>1}
+  }
+.compass-pricing
+  .pricing-intro
+    %h2.header-medium.light 
+      Calculate ROI for
+      = render :partial  =>  'b2b/partial/organization_logo_name' 
+    %p
+      Type your organization's own values to estimate your ROI
+    
+  .desktop-ui.calc-links
+    %a.reset Reset values
+    %span.sep
+    %a.assumptions Assumptions
+  .calculator.clearfix
+    .right-block      
+      .figures
+        .roi
+          %h2.big-text 
+            %span#roi-count-up.count-up{:data=>{:precision=>1}}> #{roi}
+            x
+          %p.descrip Return on investment
+          
+        .pm-savings
+          %h2.big-text 
+            $
+            %span#pmpm-count-up.count-up{:data=>{:precision=>2}}> #{pmpm}
+          %p.descrip PMPM savings
+          
+        .gross-savings
+          %h2.big-text 
+            $
+            %span#gross-count-cup.count-up{:data=>{:precision=>0}}> #{gross}
+          %p.descip Annual gross savings
+          
+    %input#roi_input{:type=>"hidden",:name=>Rb.t("This is a test."),:value=>roi}
+    %input#pm_savings_input{:type=>"hidden",:name=>Rb.t("This is a test with {replacement} parameters", :variables =? {replacement: replace}),:value=>pmpm}
+    %input#gross_savings_input{:type=>"hidden",:name=>"form_response[responses][gross_saving]",:value=>gross}
+  
+    .left-block
+      %table{:cellspacing=>0}
+        %tbody
+          -tmpl.each do |key,val|
+            %tr
+              %td.desktop-td 
+                %p.title #{val[:title]}
+              %td
+                %input{:id=>key.to_s,:class=>val[:currency] ? 'currency' : '', :type=>"text", :name=>"form_response[responses][#{key.to_s}]", :value=>form_data[key].present? ? form_data[key] : calc_defaults[key],:data=>{:calc_input_focus=>'1'}}
+              %td.mobile-td
+                %p.title #{val[:title]}
+  
+  .mobile-ui
+    %a.btn.btn-small.btn-outline-teal.jump-link{:href=>'#compass_pricing',:data=>{:jump_link_page=>1}}
+      View your ROI
+  .mobile-ui.calc-links
+    %a.reset Reset values
+    %span.sep
+    %a.assumptions Assumptions      
+    
