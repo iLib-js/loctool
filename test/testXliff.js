@@ -1300,4 +1300,27 @@ module.exports = {
       
         test.done();
     }
+    
+    /*
+    testXliffDeserializeRealFile: function(test) {
+        test.expect(3);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        var fs = require("fs");
+        
+        var str = fs.readFileSync("/Users/edwinhoogerbeets/src/ht-iosapp/en-US.xliff", "utf-8");
+        
+        x.deserialize(str);
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 3757);
+
+        test.done();
+    }
+    */
 };
