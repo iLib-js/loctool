@@ -290,9 +290,9 @@ try {
 		break;
 		
 	case "merge":
-		settings.infiles = options.slice(4);
+		settings.infiles = options.slice(3);
 		var target = new Xliff({
-			path: settings.infile[0]
+			path: settings.infiles[0]
 		});
 		
 		settings.infiles.forEach(function (file) {
@@ -301,7 +301,7 @@ try {
 				var data = fs.readFileSync(file, "utf-8");
 				var xliff = new Xliff();
 				xliff.deserialize(data);
-				target.addTranslationUnits(xliffs[i].getTranslationUnits());
+				target.addTranslationUnits(xliff.getTranslationUnits());
 			} else {
 				logger.warn("Could not open input file " + file);
 			}
