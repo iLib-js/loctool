@@ -13,6 +13,9 @@ var log4js = require("log4js");
 var Queue = require("js-stl").Queue;
 
 var ProjectFactory = require("./lib/ProjectFactory.js");
+var TranslationSet = require("./lib/TranslationSet.js");
+var Xliff = require("./lib/Xliff.js");
+
 // var Git = require("simple-git");
 
 log4js.configure(path.dirname(module.filename) + '/log4js.json')
@@ -102,6 +105,12 @@ case "split":
 	}
 	settings.splittype = options[3];
 	settings.infiles = options.slice(4);
+	settings.infiles.forEach(function (file) {
+		if (!fs.existsSync(file)) {
+			console.log("Error: could not access file " + file);
+			usage();
+		}
+	});
 	break;
 	
 case "merge":
@@ -115,12 +124,15 @@ case "merge":
 }
 
 logger.info("loctool - extract strings from source code.\n");
+logger.info("Command: " + command);
 
-logger.info("Searching root: " + settings.rootDir + "\n");
+if (command === "localize") {
+	logger.info("Searching root: " + settings.rootDir + "\n");
 
-if (!fs.existsSync(settings.rootDir)) {
-	logger.error("Could not access root dir " + settings.rootDir);
-	usage();
+	if (!fs.existsSync(settings.rootDir)) {
+		logger.error("Could not access root dir " + settings.rootDir);
+		usage();
+	}
 }
 
 var resources;
@@ -219,9 +231,95 @@ function walk(dir, project) {
 }
 
 try {
-	walk(settings.rootDir, undefined);
-	
-	processNextProject();
+	switch (command) {
+	case "localize":
+		walk(settings.rootDir, undefined);
+		processNextProject();
+		break;
+		
+	case "export":
+		break;
+
+	case "import":
+		break;
+		
+	case "split":
+		settings.splittype = options[3];
+		settings.infiles = options.slice(4);
+		var superset = [];
+		
+		settings.infiles.forEach(function (file) {
+			logger.info("Reading " + file + " ...");
+			if (fs.existsSync(file)) {
+				var data = fs.readFileSync(file, "utf-8");
+				var xliff = new Xliff();
+				xliff.deserialize(data);
+				superset = superset.concat(xliff.getTranslationUnits());
+			} else {
+				logger.warn("Could not open input file " + file);
+			}
+		});
+		
+		var cache = {};
+		
+		var res, key, unit;
+		// var file, resources = superset.getAll();
+
+		logger.info("Distributing resources ...");
+		for (var i = 0; i < superset.length; i++) {
+			unit = superset[i];
+			logger.trace("unit to distribute is " + JSON.stringify(unit, undefined, 4));
+			key = (settings.splittype === "language") ? unit.targetLocale : unit.project;
+			logger.trace("key is " + key);
+			file = cache[key];
+			if (!file) {
+				file = cache[key] = new Xliff({
+					path: "./" + key + ".xliff"
+				});
+				logger.trace("new xliff is " + JSON.stringify(file, undefined, 4));
+			}
+			file.addTranslationUnit(unit);
+		}
+		
+		/*
+		// first the targets...
+		for (var i = 0; i < resources.length; i++) {
+			res = resources[i];
+			if (res.origin === "target") {
+				key = (settings.splittype === "language") ? res.locale : res.project;
+				file = cache[key];
+				if (!file) {
+					file = cache[key] = new Xliff({
+						path: "./" + key + ".xliff"
+					});
+				}
+				file.addResource(res);
+			}
+		}
+		*/
+		
+		for (key in cache) {
+			logger.info("Writing " + file.getPath() + " ...");
+			file = cache[key];
+			
+			/*
+			// then add the source resources to every xliff file
+			for (var i = 0; i < resources.length; i++) {
+				res = resources[i];
+				if (res.origin === "source") {
+					file.addResource(res);
+				}
+			}
+			*/
+			
+			fs.writeFileSync(file.getPath(), file.serialize(), "utf-8");
+		}
+		break;
+		
+	case "merge":
+		break;
+	}
+
 } catch (e) {
 	logger.error("caught exception: " + e);
 	logger.error(e.stack);

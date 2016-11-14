@@ -34,7 +34,7 @@
 		"loctool.lib.ResourcePlural": "INFO",
 		"loctool.lib.TranslationSet": "INFO",
 		"loctool.lib.WebProject": "INFO",
-		"loctool.lib.Xliff": "INFO",
-		"loctool.loctool":  "INFO"
+		"loctool.lib.Xliff": "TRACE",
+		"loctool.loctool":  "TRACE"
 	}
 }
