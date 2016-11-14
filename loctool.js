@@ -280,43 +280,34 @@ try {
 			}
 			file.addTranslationUnit(unit);
 		}
-		
-		/*
-		// first the targets...
-		for (var i = 0; i < resources.length; i++) {
-			res = resources[i];
-			if (res.origin === "target") {
-				key = (settings.splittype === "language") ? res.locale : res.project;
-				file = cache[key];
-				if (!file) {
-					file = cache[key] = new Xliff({
-						path: "./" + key + ".xliff"
-					});
-				}
-				file.addResource(res);
-			}
-		}
-		*/
-		
+				
 		for (key in cache) {
 			logger.info("Writing " + file.getPath() + " ...");
 			file = cache[key];
-			
-			/*
-			// then add the source resources to every xliff file
-			for (var i = 0; i < resources.length; i++) {
-				res = resources[i];
-				if (res.origin === "source") {
-					file.addResource(res);
-				}
-			}
-			*/
 			
 			fs.writeFileSync(file.getPath(), file.serialize(), "utf-8");
 		}
 		break;
 		
 	case "merge":
+		settings.infiles = options.slice(4);
+		var target = new Xliff({
+			path: settings.infile[0]
+		});
+		
+		settings.infiles.forEach(function (file) {
+			if (fs.existsSync(file)) {
+				logger.info("Merging " + file + " ...");
+				var data = fs.readFileSync(file, "utf-8");
+				var xliff = new Xliff();
+				xliff.deserialize(data);
+				target.addTranslationUnits(xliffs[i].getTranslationUnits());
+			} else {
+				logger.warn("Could not open input file " + file);
+			}
+		});
+		
+		fs.writeFileSync(target.getPath(), target.serialize(), "utf-8");
 		break;
 	}
 
