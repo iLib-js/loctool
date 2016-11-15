@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="3" resname="asdf" restype="plural" extype="one">
+        <source>Asdf asdf</source>
+        <target>foobarfoo</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

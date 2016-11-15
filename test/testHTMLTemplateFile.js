@@ -9,9 +9,23 @@ var fs = require("fs");
 
 if (!HTMLTemplateFile) {
     var HTMLTemplateFile = require("../lib/HTMLTemplateFile.js");
+
     var WebProject =  require("../lib/WebProject.js");
     var TranslationSet =  require("../lib/TranslationSet.js");
     var ResourceString =  require("../lib/ResourceString.js");
+}
+
+function diff(a, b) {
+	var min = Math.min(a.length, b.length);
+	
+	for (var i = 0; i < min; i++) {
+		if (a[i] !== b[i]) {
+			console.log("Found difference at character " + i);
+			console.log("a: " + a.substring(i));
+			console.log("b: " + b.substring(i));
+			break;
+		}
+	}
 }
 
 module.exports = {
@@ -816,6 +830,33 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileParseTemplateTagsInsideTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <span <% if (condition) { %>class="foo"<% } %>> Dr. <%= family_name %> is not available.</span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('Dr. <%= family_name %> is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
+        test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+                
+        test.done();
+    },
+
     testHTMLTemplateFileParseI18NComments: function(test) {
         test.expect(6);
 
@@ -842,6 +883,47 @@ module.exports = {
         test.equal(r.getKey(), "This is a test of the emergency parsing system.");
         test.equal(r.getComment(), "this describes the text below");
                 
+        test.done();
+    },
+    
+    testHTMLTemplateFileParseIgnoreTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html><body>\n' +
+        	'<script type="javascript">\n' +
+        	'if (window) {\n' +
+        	'  $(".foo").class("asdf");\n' +
+        	'}\n' +
+        	'</script>\n' +
+        	'<style>\n' +
+        	'  .activity_title{\n' +
+        	'    font-size: 18px;\n' +
+        	'    font-weight: 300;\n' +
+        	'    color: #777;\n' +
+        	'    line-height: 40px;\n' +
+        	'  }\n' +
+        	'</style>\n' +
+        	'<span class="foo">foo</span>\n' + 
+        	'</body></html>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var r = set.getBySource("foo");
+        test.ok(r);
+        test.equal(r.getSource(), "foo");
+        test.equal(r.getKey(), "foo");
+
         test.done();
     },
 
@@ -1607,15 +1689,14 @@ module.exports = {
         translations.add(new ResourceString({
         	project: "foo",
         	key: 'Dr. <%= family_name %> is not available.',
-        	source: 'Dr. <%= family_name %> ne sont pas disponibles.',
+        	source: 'Dr. <%= family_name %> n\'est pas disponibles.',
         	locale: "fr-FR"
         }));
-        
-        
+             
         test.equal(htf.localizeText(translations, "fr-FR"),
         		'<html>\n' +
         		'   <body>\n' + 
-        		'       Dr. <%= family_name %> ne sont pas disponibles.\n' +
+        		'       Dr. <%= family_name %> n\'est pas disponibles.\n' +
         		'   </body>\n' +
         		'</html>\n');
                 
@@ -1930,6 +2011,587 @@ module.exports = {
         test.ok(!fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.fr-FR.tmpl.html")));
         test.ok(!fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.de-DE.tmpl.html")));
         
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <span <% if (condition) { %>class="foo"<% } %>> Dr. <%= family_name %> is not available.</span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('Dr. <%= family_name %> is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
+        test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Dr. <%= family_name %> is not available.',
+        	source: 'Dr. <%= family_name %> n\'est pas disponible.',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       <span <% if (condition) { %> class="foo" <% } %>> Dr. <%= family_name %> n\'est pas disponible.</span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextNonTemplateTagsInsideTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <span class="foo" <span class="bar"> Dr. <%= family_name %> is not available.</span></span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('Dr. <%= family_name %> is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
+        test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Dr. <%= family_name %> is not available.',
+        	source: 'Dr. <%= family_name %> n\'est pas disponible.',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html>\n' +
+        		'   <body>\n' + 
+        		'       <span class="foo" span="" class="bar"> Dr. <%= family_name %> n\'est pas disponible.</span></span>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags2: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+        	'<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(expert.entity_type == \'group\'){ %>checked=yes<% } %> >\n' +
+        	'<label for="entity_group" class="radio-label">Group</label>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('Group');
+        test.ok(r);
+        test.equal(r.getSource(), 'Group');
+        test.equal(r.getKey(), 'Group');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'Group',
+        	source: 'Groupe',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(expert.entity_type == \'group\'){ %> checked="yes" <% } %>>\n' +
+            	'<label for="entity_group" class="radio-label">Groupe</label>');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags3: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+        	'    <select class=\'end_hour\' value=<%=end_hour%>>\n' +
+            '      foo\n' +
+            '    </select>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'    <select class="end_hour" value="<%=end_hour%>">\n' +
+                '      asdf\n' +
+                '    </select>\n');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags4: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+        	'<span has-sub-options = <%= option.sub_options.length > 0 %> data-tracking-value = "<%= option.tracking_value%>" >\n' +
+            '    foo\n' +
+            '</span>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<span has-sub-options="<%= option.sub_options.length > 0 %>" data-tracking-value="<%= option.tracking_value%>">\n' +
+                '    asdf\n' +
+                '</span>\n');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags5: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<a class="doctor-name" href=<%= val.expert.url%>>foo</a>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<a class="doctor-name" href="<%= val.expert.url%>">asdf</a>\n');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags6: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+    		'<% _.each(experts, function( val, index ){ %>\n' +
+    		'  <div class="expert-review">\n' +
+    		'    <div class="doctor-item" >\n' +
+    		'      <div class="doctor-avatar" style="background-image: url(<%= val.expert.avatar_transparent_circular %>);"></div>\n' +
+    		'      <div class="doctor-info">\n' +
+    		'        <div class="caduceus"></div>\n' +
+    		'        <a class="doctor-name" href=<%= val.expert.url%>><%= val.expert.name%></a>\n' +
+    		'        <div class ="specialty"><%= val.expert.intro%></div>\n' +
+    		'      </div>\n' +
+    		'    </div>\n' +
+    		'    <div class="rating-stars">\n' +
+    		'      <% for (var index = 1; index<=5; index++) {%>\n' +
+    		'        <% if (val.rating < index) {%>\n' +
+    		'          <div class="rating-star-empty"></div>\n' +
+    		'        <% } else { %>\n' +
+    		'          <div class="rating-star-filled"></div>\n' +
+    		'        <% } %>\n' +
+    		'      <% } %>\n' +
+    		'    </div>\n' +
+    		'    <div class="notes">\n' +
+    		'      <%= val.note%>\n' +
+    		'      foo\n' +
+    		'    </div>\n' +
+    		'  </div>\n' +
+    		'<% }) %>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    		'<% _.each(experts, function( val, index ){ %>\n' +
+    		'  <div class="expert-review">\n' +
+    		'    <div class="doctor-item">\n' +
+    		'      <div class="doctor-avatar" style="background-image: url(<%= val.expert.avatar_transparent_circular %>);"></div>\n' +
+    		'      <div class="doctor-info">\n' +
+    		'        <div class="caduceus"></div>\n' +
+    		'        <a class="doctor-name" href="<%= val.expert.url%>"><%= val.expert.name%></a>\n' +
+    		'        <div class="specialty"><%= val.expert.intro%></div>\n' +
+    		'      </div>\n' +
+    		'    </div>\n' +
+    		'    <div class="rating-stars">\n' +
+    		'      <% for (var index = 1; index<=5; index++) {%>\n' +
+    		'        <% if (val.rating < index) {%>\n' +
+    		'          <div class="rating-star-empty"></div>\n' +
+    		'        <% } else { %>\n' +
+    		'          <div class="rating-star-filled"></div>\n' +
+    		'        <% } %>\n' +
+    		'      <% } %>\n' +
+    		'    </div>\n' +
+    		'    <div class="notes">\n' +
+    		'      <%= val.note%>\n' +
+    		'      asdf\n' +
+    		'    </div>\n' +
+    		'  </div>\n' +
+    		'<% }) %>');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags7: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<div class="select-wrap select-country left additional-field <%= version ? "new-version" : ""%>">\nfoo\n</div>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('foo');
+        test.ok(r);
+        test.equal(r.getSource(), 'foo');
+        test.equal(r.getKey(), 'foo');
+    
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<div class="select-wrap select-country left additional-field <%= version ? "new-version" : ""%>">\nasdf\n</div>');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags8: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>"></div>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>"></div>');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextTemplateTagsInsideTags9: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+        		'  <% if(two_buttons){ %>\n' +
+        		'    <div class="btn grey btn-left"><%= cancel_btn.text %></div>\n' +
+        		'    <div class="btn btn-right blue"><%= confirm_btn.text %></div>\n' +
+        		'  <% } else { %>\n' +
+        		'    <div class="btn grey confirm-btn" style="width: 93%" ><%= confirm_btn.text %></div>\n' +
+        		'  <% } %>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'  <% if(two_buttons){ %>\n' +
+        		'    <div class="btn grey btn-left"><%= cancel_btn.text %></div>\n' +
+        		'    <div class="btn btn-right blue"><%= confirm_btn.text %></div>\n' +
+        		'  <% } else { %>\n' +
+        		'    <div class="btn grey confirm-btn" style="width: 93%"><%= confirm_btn.text %></div>\n' +
+        		'  <% } %>');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'  <% if(two_buttons){ %>\n' +
+        		'    <div class="btn grey btn-left"><%= cancel_btn.text %></div>\n' +
+        		'    <div class="btn btn-right blue"><%= confirm_btn.text %></div>\n' +
+        		'  <% } else { %>\n' +
+        		'    <div class="btn grey confirm-btn" style="width: 93%"><%= confirm_btn.text %></div>\n' +
+        		'  <% } %>');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextEscapeDoubleQuotes: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('  <span class="foo" onclick=\'javascript:var a = "foo", b = "bar";\'>foo</span>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" onclick="javascript:var a = \\"foo\\", b = \\"bar\\";">asdf</span>');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" onclick="javascript:var a = \\"foo\\", b = \\"bar\\";">asdf</span>');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextEscapeDoubleQuotesButNotInTemplateTags: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('  <span class="foo" foo=\'asdf <% if (state === "selected") { %>selected<% } %>\'>foo</span>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" foo="asdf <% if (state === "selected") { %>selected<% } %>">asdf</span>');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" foo="asdf <% if (state === "selected") { %>selected<% } %>">asdf</span>');
+
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextEscapeDoubleQuotesButNotInTemplateTagsWithPercentInThem: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('  <span class="foo" foo=\'asdf <% if (string === "20%") { %>selected<% } %>\'>foo</span>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" foo="asdf <% if (string === "20%") { %>selected<% } %>">asdf</span>');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" foo="asdf <% if (string === "20%") { %>selected<% } %>">asdf</span>');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextIgnoreTags: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html><body><script type="javascript">\n' +
+           	'  foo\n' +
+        	'</script>\n' +
+        	'<span class="foo">foo</span>\n' + 
+        	'</body></html>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'<html><body><script type="javascript">\n' +
+            	'  foo\n' +
+            	'</script>\n' +
+            	'<span class="foo">asdf</span>\n' + 
+            	'</body></html>');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html><body><script type="javascript">\n' +
+            	'  foo\n' +
+            	'</script>\n' +
+            	'<span class="foo">asdf</span>\n' + 
+            	'</body></html>');
+
         test.done();
     }
 };
