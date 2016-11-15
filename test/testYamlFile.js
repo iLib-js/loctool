@@ -71,1211 +71,443 @@ module.exports = {
         test.done();
     },
     
-    testYamlAddResource: function(test) {
-        test.expect(11);
+    testYamlFileParseSimpleGetByKey: function(test) {
+        test.expect(6);
 
-        var y = new YamlFile();
-        test.ok(y);
-
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            autoKey: false,
-            state: "new",
-            context: "asdf",
-            comment: "this is a comment",
-            project: "ht-webapp12"
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+        
+        yml.parse('---\n' +
+        		'Working_at_HealthTap: Working at HealthTap\n' +
+        		'Jobs: Jobs\n' +
+        		'Our_internship_program: Our internship program\n' +
+        		'? Completing_an_internship_at_HealthTap_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
+        		': Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'  directly from experienced, successful entrepreneurs.\n');
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBy({
+        	reskey: "Jobs"
         });
+        test.ok(r);
         
-        y.addResource(res);
+        test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getKey(), "Jobs");
+        test.ok(!r[0].getComment());
         
-        var reslist = y.getResources({
-            reskey: "foobar"
-        });
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 1);
-        test.equal(reslist[0].getSource(), "Asdf asdf");
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getState(), "new");
-        test.equal(reslist[0].getContext(), "asdf");
-        test.equal(reslist[0].getComment(), "this is a comment");
-        test.equal(reslist[0].getProject(), "ht-webapp12");
-       
         test.done();
     },
 
-    testYamlAddMultipleResources: function(test) {
-        test.expect(8);
+    testYamlFileParseWithComment: function(test) {
+        test.expect(6);
 
-        var y = new YamlFile();
-        test.ok(y);
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
         
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            ocale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+        
+        yml.parse('/* this is the terms and conditions button label */\n' +
+				'"2V9-YN-vxb.normalTitle" = "Terms";\n');
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBy({
+        	reskey: "2V9-YN-vxb.normalTitle"
         });
+        test.ok(r);
         
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
-        });
+        test.equal(r[0].getSource(), "Terms");
+        test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
+        test.equal(r[0].getComment(), "this is the terms and conditions button label");
         
-        y.addResource(res);
-
-        var reslist = y.getResources({
-            reskey: "foobar"
-        });
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 1);
-        test.equal(reslist[0].getSource(), "Asdf asdf");
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "ht-webapp12");
-       
         test.done();
     },
 
-    testYamlAddMultipleResourcesRightSize: function(test) {
-        test.expect(3);
+    testYamlFileParseWithNonComment: function(test) {
+        test.expect(6);
 
-        var y = new YamlFile();
-        test.ok(y);
-        test.equal(y.size(), 0);
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
         
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+        
+        yml.parse(
+        		'/* No comment provided by engineer. */\n' +
+				'"Terms" = "Terms";\n');
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBy({
+        	reskey: "Terms"
         });
+        test.ok(r);
         
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
-        });
+        test.equal(r[0].getSource(), "Terms");
+        test.equal(r[0].getKey(), "Terms");
+        test.ok(!r[0].getComment());
         
-        y.addResource(res);
-
-        test.equal(y.size(), 2);
-       
         test.done();
     },
 
-    testYamlAddMultipleResourcesOverwrite: function(test) {
-        test.expect(9);
+    testYamlFileParseSimpleIgnoreWhitespace: function(test) {
+        test.expect(6);
 
-        var y = new YamlFile();
-        test.ok(y);
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
         
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+        
+        yml.parse('/*            this is the terms and conditions button label              */\n\n\n\n' +
+				'          "2V9-YN-vxb.normalTitle"      \t =    \t "Terms"    ;     \n');
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBy({
+        	reskey: "2V9-YN-vxb.normalTitle"
         });
+        test.ok(r);
         
-        y.addResource(res);
-
-        // this one has the same source, locale, key, and file
-        // so it should overwrite the one above
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            comment: "blah blah blah",
-            project: "ht-webapp12"
-        });
+        test.equal(r[0].getSource(), "Terms");
+        test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
+        test.equal(r[0].getComment(), "this is the terms and conditions button label");
         
-        y.addResource(res);
-
-        var reslist = y.getResources({
-            reskey: "foobar"
-        });
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 1);
-        test.equal(reslist[0].getSource(), "baby baby");
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "ht-webapp12");
-        test.equal(reslist[0].getComment(), "blah blah blah");
-       
-        test.done();
-    },
-
-    testYamlAddMultipleResourcesOverwriteRightSize: function(test) {
-        test.expect(4);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        test.equal(y.size(), 0);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.size(), 1);
-        
-        // this one has the same source, locale, key, and file
-        // so it should overwrite the one above
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            comment: "blah blah blah",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.size(), 1);
-       
-        test.done();
-    },
-
-    testYamlAddMultipleResourcesNoOverwrite: function(test) {
-        test.expect(13);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        // this one has a different locale
-        // so it should not overwrite the one above
-        res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "fr-FR",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            comment: "blah blah blah",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        var reslist = y.getResources({
-            reskey: "foobar"
-        });
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 2);
-        
-        test.equal(reslist[0].getSource(), "Asdf asdf");
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.ok(!reslist[0].getComment());
-
-        test.equal(reslist[1].getSource(), "Asdf asdf");
-        test.equal(reslist[1].getLocale(), "fr-FR");
-        test.equal(reslist[1].getKey(), "foobar");
-        test.equal(reslist[1].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[1].getComment(), "blah blah blah");
-
-        test.done();
-    },
-
-    testYamlGetResourcesMultiple: function(test) {
-        test.expect(11);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        var reslist = y.getResources({
-            locale: "en-US"
-        });
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 2);
-        
-        test.equal(reslist[0].getSource(), "Asdf asdf");
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-
-        test.equal(reslist[1].getSource(), "baby baby");
-        test.equal(reslist[1].getLocale(), "en-US");
-        test.equal(reslist[1].getKey(), "huzzah");
-        test.equal(reslist[1].getPath(), "foo/bar/j.java");
-
-        test.done();
-    },
-
-    testYamlSerializeWithSourceOnly: function(test) {
-        test.expect(2);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp"
-        });
-        
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '        <source>baby baby</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
-    testYamlSerializeWithContext: function(test) {
-        test.expect(2);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            context: "foobar"
-        });
-        
-        y.addResource(res);
-
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            context: "asdf"
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string" x-context="foobar">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="string" x-context="asdf">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
-    testYamlSerializeWithExplicitIds: function(test) {
-        test.expect(2);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            id: 4444444
-        });
-        
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="4444444" resname="foobar" restype="string">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="4444445" resname="huzzah" restype="string">\n' +
-                '        <source>baby baby</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
-    testYamlSerializeWithSourceAndTarget: function(test) {
-        test.expect(2);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12",
-            origin: "source"
-        });
-        
-        y.addResource(res);
-
-        var res = new ResourceString({
-            source: "foobarfoo",
-            locale: "de-DE",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12",
-            origin: "target"
-        });
-        
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12",
-            origin: "source"
-        });
-        
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "bebe bebe",
-            locale: "fr-FR",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12",
-            origin: "target"
-        });
-        
-        y.addResource(res);
-
-        diff(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '        <target>foobarfoo</target>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '        <source>baby baby</source>\n' +
-                '        <target>bebe bebe</target>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-        
-        test.equal(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '        <target>foobarfoo</target>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '        <source>baby baby</source>\n' +
-                '        <target>bebe bebe</target>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
-    testYamlSerializeWithSourceAndTargetAndComment: function(test) {
-        test.expect(2);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12",
-            comment: "foobar is where it's at!",
-            origin: "source"
-        });
-        
-        y.addResource(res);
-
-        var res = new ResourceString({
-            source: "foobarfoo",
-            locale: "de-DE",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12",
-            origin: "target"
-        });
-        
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12",
-            comment: "come & enjoy it with us",
-            origin: "source"
-        });
-        
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "bebe bebe",
-            locale: "fr-FR",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12",
-            origin: "target"
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '        <target>foobarfoo</target>\n' +
-                '        <note annotates="source">foobar is where it&apos;s at!</note>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '        <source>baby baby</source>\n' +
-                '        <target>bebe bebe</target>\n' +
-                '        <note annotates="source">come &amp; enjoy it with us</note>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
-    testYamlSerializeWithHeader: function(test) {
-        test.expect(2);
-
-        var y = new YamlFile({
-            "tool-id": "loctool",
-            "tool-name": "Localization Tool",
-            "tool-version": "1.2.34",
-            "tool-company": "My Company, Inc.",
-            copyright: "Copyright 2016, My Company, Inc. All rights reserved.",
-            pathName: "a/b/c.xliff"
-        });
-        test.ok(y);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <header>\n' +
-            	'      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
-                '    </header>\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <header>\n' +
-                '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
-                '    </header>\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '        <source>baby baby</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
-    testYamlSerializeWithPlurals: function(test) {
-        test.expect(2);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourcePlural({
-            strings: {
-            	"one": "There is 1 object.",
-            	"other": "There are {n} objects."
-            },
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            resType: "plural",
-            quantity: "one"
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="plural" extype="one">\n' +
-                '        <source>There is 1 object.</source>\n' +
-                '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="plural" extype="other">\n' +
-                '        <source>There are {n} objects.</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
-    testYamlSerializeWithArrays: function(test) {
-        test.expect(2);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourceArray({
-            array: ["Zero", "One", "Two"],
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp"
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="array" extype="0">\n' +
-                '        <source>Zero</source>\n' +
-                '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="array" extype="1">\n' +
-                '        <source>One</source>\n' +
-                '      </trans-unit>\n' +
-                '      <trans-unit id="3" resname="foobar" restype="array" extype="2">\n' +
-                '        <source>Two</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
-    testYamlSerializeWithXMLEscaping: function(test) {
-        test.expect(2);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourceString({
-            source: "Asdf <b>asdf</b>",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp"
-        });
-        
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "baby &lt;b&gt;baby&lt;/b&gt;",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
-    testYamlSerializeWithComments: function(test) {
-        test.expect(2);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp",
-            comment: "A very nice string"
-        });
-        
-        y.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12",
-            comment: "Totally awesome."
-        });
-        
-        y.addResource(res);
-
-        test.equal(y.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '        <note annotates="source">A very nice string</note>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '        <source>baby baby</source>\n' +
-                '        <note annotates="source">Totally awesome.</note>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
-    testYamlDeserializeWithSourceOnly: function(test) {
-        test.expect(17);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        y.deserialize(
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '        <source>baby baby</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-
-        var reslist = y.getResources();
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 2);
-        
-        test.equal(reslist[0].getSource(), "Asdf asdf");
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "ht-androidapp");
-        test.equal(reslist[0].resType, "string");
-        test.equal(reslist[0].getId(), "1");
-
-        test.equal(reslist[1].getSource(), "baby baby");
-        test.equal(reslist[1].getLocale(), "en-US");
-        test.equal(reslist[1].getKey(), "huzzah");
-        test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "ht-webapp12");
-        test.equal(reslist[1].resType, "string");
-        test.equal(reslist[1].getId(), "2");
-      
-        test.done();
-    },
-
-    testYamlDeserializeWithSourceAndTarget: function(test) {
-        test.expect(31);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        y.deserialize(
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '        <target>foobarfoo</target>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '        <source>baby baby</source>\n' +
-                '        <target>bebe bebe</target>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-
-        // console.log("x is " + JSON.stringify(x, undefined, 4));
-        var reslist = y.getResources();
-        // console.log("x is now " + JSON.stringify(x, undefined, 4));
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 4);
-        
-        test.equal(reslist[0].getSource(), "Asdf asdf");
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "ht-androidapp");
-        test.equal(reslist[0].resType, "string");
-        test.equal(reslist[0].getId(), "1");
-
-        test.equal(reslist[1].getSource(), "foobarfoo");
-        test.equal(reslist[1].getLocale(), "de-DE");
-        test.equal(reslist[1].getKey(), "foobar");
-        test.equal(reslist[1].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[1].getProject(), "ht-androidapp");
-        test.equal(reslist[1].resType, "string");
-        test.equal(reslist[1].getId(), "1");
-
-        test.equal(reslist[2].getSource(), "baby baby");
-        test.equal(reslist[2].getLocale(), "en-US");
-        test.equal(reslist[2].getKey(), "huzzah");
-        test.equal(reslist[2].getPath(), "foo/bar/j.java");
-        test.equal(reslist[2].getProject(), "ht-webapp12");
-        test.equal(reslist[2].resType, "string");
-        test.equal(reslist[2].getId(), "2");
-      
-        test.equal(reslist[3].getSource(), "bebe bebe");
-        test.equal(reslist[3].getLocale(), "fr-FR");
-        test.equal(reslist[3].getKey(), "huzzah");
-        test.equal(reslist[3].getPath(), "foo/bar/j.java");
-        test.equal(reslist[3].getProject(), "ht-webapp12");
-        test.equal(reslist[3].resType, "string");
-        test.equal(reslist[3].getId(), "2");
-
-        test.done();
-    },
-
-    testYamlDeserializeWithXMLUnescaping: function(test) {
-        test.expect(17);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        y.deserialize(
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-                '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-                '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-
-        var reslist = y.getResources();
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 2);
-        
-        test.equal(reslist[0].getSource(), "Asdf <b>asdf</b>");
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "ht-androidapp");
-        test.equal(reslist[0].resType, "string");
-        test.equal(reslist[0].getId(), "1");
-
-        test.equal(reslist[1].getSource(), "baby &lt;b&gt;baby&lt;/b&gt;");
-        test.equal(reslist[1].getLocale(), "en-US");
-        test.equal(reslist[1].getKey(), "huzzah");
-        test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "ht-webapp12");
-        test.equal(reslist[1].resType, "string");
-        test.equal(reslist[1].getId(), "2");
-      
-        test.done();
-    },
-
-    testYamlDeserializeWithPlurals: function(test) {
-        test.expect(10);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        y.deserialize(
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="plural" extype="one">\n' +
-                '        <source>There is 1 object.</source>\n' +
-                '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="plural" extype="other">\n' +
-                '        <source>There are {n} objects.</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-
-        // console.log("x is " + JSON.stringify(x, undefined, 4));
-        
-        var reslist = y.getResources();
-        
-        // console.log("after get resources x is " + JSON.stringify(x, undefined, 4));
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 1);
-        
-        test.deepEqual(reslist[0].getPlurals(), {
-        	one: "There is 1 object.",
-        	other: "There are {n} objects."
-        });
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "ht-androidapp");
-        test.equal(reslist[0].resType, "plural");
-        test.equal(reslist[0].getId(), "1");
-
-        test.done();
-    },
-
-    testYamlDeserializeWithArrays: function(test) {
-        test.expect(9);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        y.deserialize(
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="array" extype="0">\n' +
-                '        <source>Zero</source>\n' +
-                '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="array" extype="1">\n' +
-                '        <source>One</source>\n' +
-                '      </trans-unit>\n' +
-                '      <trans-unit id="3" resname="foobar" restype="array" extype="2">\n' +
-                '        <source>Two</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-
-        var reslist = y.getResources();
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 1);
-
-        test.deepEqual(reslist[0].getArray(), ["Zero", "One", "Two"]);
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "ht-androidapp");
-        test.equal(reslist[0].resType, "array");
-
-        test.done();
-    },
-
-    testYamlDeserializeWithComments: function(test) {
-        test.expect(18);
-
-        var y = new YamlFile();
-        test.ok(y);
-        
-        y.deserialize(
-        	    '<?xml version="1.0" encoding="utf-8"?>\n' +
-        	    '<xliff version="1.2">\n' +
-        	    '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-        	    '    <body>\n' +
-        	    '      <trans-unit id="1" resname="foobar" restype="string">\n' +
-        	    '        <source>Asdf asdf</source>\n' +
-        	    '        <note annotates="source">A very nice string</note>\n' +
-        	    '      </trans-unit>\n' +
-        	    '    </body>\n' +
-        	    '  </file>\n' + 
-        	    '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-        	    '    <body>\n' +
-        	    '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
-        	    '        <source>baby baby</source>\n' +
-        	    '        <note annotates="source">Totally awesome.</note>\n' +
-        	    '      </trans-unit>\n' +
-        	    '    </body>\n' +
-        	    '  </file>\n' +
-        	    '</xliff>');
-
-        var reslist = y.getResources();
-        
-        test.ok(reslist);
-        
-        test.equal(reslist[0].getSource(), "Asdf asdf");
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "ht-androidapp");
-        test.equal(reslist[0].resType, "string");
-        test.equal(reslist[0].getComment(), "A very nice string");
-        test.equal(reslist[0].getId(), "1");
-
-        test.equal(reslist[1].getSource(), "baby baby");
-        test.equal(reslist[1].getLocale(), "en-US");
-        test.equal(reslist[1].getKey(), "huzzah");
-        test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "ht-webapp12");
-        test.equal(reslist[1].resType, "string");
-        test.equal(reslist[1].getComment(), "Totally awesome.");
-        test.equal(reslist[1].getId(), "2");
-
         test.done();
     },
     
-    testYamlDeserializeWithContext: function(test) {
-        test.expect(19);
+    testYamlFileParseSimpleRightSize: function(test) {
+        test.expect(4);
 
-        var y = new YamlFile();
-        test.ok(y);
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
         
-        y.deserialize(
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string" x-context="na na na">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string" x-context="asdf">\n' +
-                '        <source>baby baby</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
 
-        var reslist = y.getResources();
-        
-        test.ok(reslist);
-        
-        test.equal(reslist.length, 2);
-        
-        test.equal(reslist[0].getSource(), "Asdf asdf");
-        test.equal(reslist[0].getLocale(), "en-US");
-        test.equal(reslist[0].getKey(), "foobar");
-        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
-        test.equal(reslist[0].getProject(), "ht-androidapp");
-        test.equal(reslist[0].resType, "string");
-        test.equal(reslist[0].getId(), "1");
-        test.equal(reslist[0].getContext(), "na na na");
+        var set = yml.getTranslationSet();
+        test.equal(set.size(), 0);
 
-        test.equal(reslist[1].getSource(), "baby baby");
-        test.equal(reslist[1].getLocale(), "en-US");
-        test.equal(reslist[1].getKey(), "huzzah");
-        test.equal(reslist[1].getPath(), "foo/bar/j.java");
-        test.equal(reslist[1].getProject(), "ht-webapp12");
-        test.equal(reslist[1].resType, "string");
-        test.equal(reslist[1].getId(), "2");
-        test.equal(reslist[1].getContext(), "asdf");
-      
+        yml.parse('/* i18n: this is the terms and conditions button label */\n' +
+				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
+				'"MFI-qx-pQf.text" = "Are you a doctor?";');
+        
+        test.ok(set);
+        
+        test.equal(set.size(), 2);
+        
         test.done();
-    }
+    },
+
+    testYamlFileParseMultiple: function(test) {
+        test.expect(10);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+        
+        yml.parse('/* this is the terms and conditions button label */\n' +
+				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
+				'"MFI-qx-pQf.text" = "Are you a doctor?";');
+       
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBy({
+        	reskey: "2V9-YN-vxb.normalTitle"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "Terms");
+        test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
+        test.equal(r[0].getComment(), "this is the terms and conditions button label");
+        
+        r = set.getBy({
+        	reskey: "MFI-qx-pQf.text"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "Are you a doctor?");
+        test.equal(r[0].getKey(), "MFI-qx-pQf.text");
+        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf";');
+        
+        test.done();
+    },
+
+    testYamlFileExtractFile: function(test) {
+        test.expect(14);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./objc/en.lproj/FGSignUpViewController.yml"
+        });
+        test.ok(yml);
+        
+        // should read the file
+        yml.extract();
+        
+        var set = yml.getTranslationSet();
+        
+        test.equal(set.size(), 15);
+        
+        var r = set.getBy({
+        	reskey: "QCe-xG-x5k.normalTitle"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "Login ›");
+        test.equal(r[0].getKey(), "QCe-xG-x5k.normalTitle");
+        test.equal(r[0].getComment(), 'Class = "UIButton"; normalTitle = "Login ›"; ObjectID = "QCe-xG-x5k";');
+
+        var r = set.getBy({
+        	reskey: "WpN-ro-7NU.placeholder"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "Your email");
+        test.equal(r[0].getKey(), "WpN-ro-7NU.placeholder");
+        test.equal(r[0].getComment(), 'Class = "UITextField"; placeholder = "Your email"; ObjectID = "WpN-ro-7NU";');
+        
+        var r = set.getBy({
+        	reskey: "DWd-6J-lLt.text"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "free, private");
+        test.equal(r[0].getKey(), "DWd-6J-lLt.text");
+        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "free, private"; ObjectID = "DWd-6J-lLt";');
+
+        test.done();
+    },
+
+    testYamlFileExtractFileUnicodeFile: function(test) {
+        test.expect(14);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./objc/Localizable.yml"
+        });
+        test.ok(yml);
+        
+        // should read the file
+        yml.extract();
+        
+        var set = yml.getTranslationSet();
+        
+        test.equal(set.size(), 42);
+        
+        var r = set.getBy({
+        	reskey: "%@ %@your gratitude :)"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "%1$@ %2$@your gratitude :)");
+        test.equal(r[0].getKey(), "%@ %@your gratitude :)");
+        test.ok(!r[0].getComment());
+
+        var r = set.getBy({
+        	reskey: "%@ added this checklist"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "%@ added this checklist");
+        test.equal(r[0].getKey(), "%@ added this checklist");
+        test.equal(r[0].getComment(), 'parameter is a person name');
+        
+        var r = set.getBy({
+        	reskey: "%@ commented on %@'s answer"
+        });
+        test.ok(r);
+        test.equal(r[0].getSource(), "%1$@ commented on %2$@'s answer");
+        test.equal(r[0].getKey(), "%@ commented on %@'s answer");
+        test.ok(!r[0].getComment());
+
+        test.done();
+    },
+   
+    testYamlFileExtractUndefinedFile: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+        
+        // should attempt to read the file and not fail
+        yml.extract();
+        
+        var set = yml.getTranslationSet();
+        
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileExtractBogusFile: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./objc/en.lproj/asdf.yml"
+        });
+        test.ok(yml);
+        
+        // should attempt to read the file and not fail
+        yml.extract();
+        
+        var set = yml.getTranslationSet();
+        
+        test.equal(set.size(), 0);
+
+        test.done();   
+    },
+    
+    testYamlFileGetContent: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./objc/de.lproj/asdf.yml"
+        });
+        test.ok(yml);
+        
+        [
+        	new ResourceString({
+        		project: "ht-iosapp",
+        		locale: "de-DE",
+        		key: "source text",
+        		source: "Quellen\"text",
+        		comment: "foo"
+        	}),
+        	new ResourceString({
+        		project: "ht-iosapp",
+        		locale: "de-DE",
+        		key: "more source text",
+        		source: "mehr Quellen\"text",
+        		comment: "bar"
+        	})
+        ].forEach(function(res) {
+        	yml.addResource(res);
+        });
+        
+        test.equal(yml.getContent(),
+        	'/* foo */\n' +
+        	'"source text" = "Quellen\\"text";\n\n' +
+        	'/* bar */\n' +
+        	'"more source text" = "mehr Quellen\\"text";\n\n'
+        );
+        
+        test.done();
+    },
+    
+    testYamlFileGetContentEmpty: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./objc/de.lproj/asdf.yml"
+        });
+        test.ok(yml);
+        
+        test.equal(yml.getContent(), '');
+        
+        test.done();
+    },
+    
+    testYamlFileGetContentRoundTrip: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./objc/de.lproj/asdf.yml"
+        });
+        test.ok(yml);
+        
+        yml.parse('/* this is the terms and conditions button label */\n' +
+				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
+				'"MFI-qx-pQf.text" = "Are you a doctor?";\n');
+        
+        var x = yml.getContent();
+        var y = 
+    		'/* this is the terms and conditions button label */\n' +
+			'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+			'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
+			'"MFI-qx-pQf.text" = "Are you a doctor?";\n\n';
+        
+        test.equal(yml.getContent(),
+    		'/* this is the terms and conditions button label */\n' +
+			'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
+			'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
+			'"MFI-qx-pQf.text" = "Are you a doctor?";\n\n'
+        );
+        
+        test.done();
+    },
 };
