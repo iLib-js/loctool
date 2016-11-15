@@ -108,100 +108,6 @@ module.exports = {
         test.done();
     },
 
-    testYamlFileParseWithComment: function(test) {
-        test.expect(6);
-
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var yml = new YamlFile({
-			project: p
-		});
-        test.ok(yml);
-        
-        yml.parse('/* this is the terms and conditions button label */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n');
-        
-        var set = yml.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBy({
-        	reskey: "2V9-YN-vxb.normalTitle"
-        });
-        test.ok(r);
-        
-        test.equal(r[0].getSource(), "Terms");
-        test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
-        test.equal(r[0].getComment(), "this is the terms and conditions button label");
-        
-        test.done();
-    },
-
-    testYamlFileParseWithNonComment: function(test) {
-        test.expect(6);
-
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var yml = new YamlFile({
-			project: p
-		});
-        test.ok(yml);
-        
-        yml.parse(
-        		'/* No comment provided by engineer. */\n' +
-				'"Terms" = "Terms";\n');
-        
-        var set = yml.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBy({
-        	reskey: "Terms"
-        });
-        test.ok(r);
-        
-        test.equal(r[0].getSource(), "Terms");
-        test.equal(r[0].getKey(), "Terms");
-        test.ok(!r[0].getComment());
-        
-        test.done();
-    },
-
-    testYamlFileParseSimpleIgnoreWhitespace: function(test) {
-        test.expect(6);
-
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var yml = new YamlFile({
-			project: p
-		});
-        test.ok(yml);
-        
-        yml.parse('/*            this is the terms and conditions button label              */\n\n\n\n' +
-				'          "2V9-YN-vxb.normalTitle"      \t =    \t "Terms"    ;     \n');
-        
-        var set = yml.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBy({
-        	reskey: "2V9-YN-vxb.normalTitle"
-        });
-        test.ok(r);
-        
-        test.equal(r[0].getSource(), "Terms");
-        test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
-        test.equal(r[0].getComment(), "this is the terms and conditions button label");
-        
-        test.done();
-    },
-    
     testYamlFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
@@ -218,54 +124,18 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.equal(set.size(), 0);
 
-        yml.parse('/* i18n: this is the terms and conditions button label */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a doctor?";');
+        yml.parse('---\n' +
+        		'Working_at_HealthTap: Working at HealthTap\n' +
+        		'Jobs: Jobs\n' +
+        		'Our_internship_program: Our internship program\n' +
+        		'? Completing_an_internship_at_HealthTap_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
+        		': Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'  directly from experienced, successful entrepreneurs.\n');
         
         test.ok(set);
         
-        test.equal(set.size(), 2);
-        
-        test.done();
-    },
-
-    testYamlFileParseMultiple: function(test) {
-        test.expect(10);
-
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var yml = new YamlFile({
-			project: p
-		});
-        test.ok(yml);
-        
-        yml.parse('/* this is the terms and conditions button label */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a doctor?";');
-       
-        var set = yml.getTranslationSet();
-        test.ok(set);
-        
-        var r = set.getBy({
-        	reskey: "2V9-YN-vxb.normalTitle"
-        });
-        test.ok(r);
-        test.equal(r[0].getSource(), "Terms");
-        test.equal(r[0].getKey(), "2V9-YN-vxb.normalTitle");
-        test.equal(r[0].getComment(), "this is the terms and conditions button label");
-        
-        r = set.getBy({
-        	reskey: "MFI-qx-pQf.text"
-        });
-        test.ok(r);
-        test.equal(r[0].getSource(), "Are you a doctor?");
-        test.equal(r[0].getKey(), "MFI-qx-pQf.text");
-        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf";');
+        test.equal(set.size(), 4);
         
         test.done();
     },
@@ -280,7 +150,7 @@ module.exports = {
         
         var yml = new YamlFile({
         	project: p, 
-        	pathName: "./objc/en.lproj/FGSignUpViewController.yml"
+        	pathName: "./test.yml"
         });
         test.ok(yml);
         
@@ -289,78 +159,30 @@ module.exports = {
         
         var set = yml.getTranslationSet();
         
-        test.equal(set.size(), 15);
+        test.equal(set.size(), 789);
         
         var r = set.getBy({
-        	reskey: "QCe-xG-x5k.normalTitle"
+        	reskey: "Marketing"
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "Login ›");
-        test.equal(r[0].getKey(), "QCe-xG-x5k.normalTitle");
-        test.equal(r[0].getComment(), 'Class = "UIButton"; normalTitle = "Login ›"; ObjectID = "QCe-xG-x5k";');
-
-        var r = set.getBy({
-        	reskey: "WpN-ro-7NU.placeholder"
-        });
-        test.ok(r);
-        test.equal(r[0].getSource(), "Your email");
-        test.equal(r[0].getKey(), "WpN-ro-7NU.placeholder");
-        test.equal(r[0].getComment(), 'Class = "UITextField"; placeholder = "Your email"; ObjectID = "WpN-ro-7NU";');
-        
-        var r = set.getBy({
-        	reskey: "DWd-6J-lLt.text"
-        });
-        test.ok(r);
-        test.equal(r[0].getSource(), "free, private");
-        test.equal(r[0].getKey(), "DWd-6J-lLt.text");
-        test.equal(r[0].getComment(), 'Class = "UILabel"; text = "free, private"; ObjectID = "DWd-6J-lLt";');
-
-        test.done();
-    },
-
-    testYamlFileExtractFileUnicodeFile: function(test) {
-        test.expect(14);
-
-        var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
-        }, "./testfiles");
-        
-        var yml = new YamlFile({
-        	project: p, 
-        	pathName: "./objc/Localizable.yml"
-        });
-        test.ok(yml);
-        
-        // should read the file
-        yml.extract();
-        
-        var set = yml.getTranslationSet();
-        
-        test.equal(set.size(), 42);
-        
-        var r = set.getBy({
-        	reskey: "%@ %@your gratitude :)"
-        });
-        test.ok(r);
-        test.equal(r[0].getSource(), "%1$@ %2$@your gratitude :)");
-        test.equal(r[0].getKey(), "%@ %@your gratitude :)");
+        test.equal(r[0].getSource(), "Marketing");
+        test.equal(r[0].getKey(), "Marketing");
         test.ok(!r[0].getComment());
 
         var r = set.getBy({
-        	reskey: "%@ added this checklist"
+        	reskey: "Everyone_at_HealthTap_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name."
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "%@ added this checklist");
-        test.equal(r[0].getKey(), "%@ added this checklist");
-        test.equal(r[0].getComment(), 'parameter is a person name');
+        test.equal(r[0].getSource(), "Everyone at HealthTap has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure, soon be a household name.");
+        test.equal(r[0].getKey(), "Everyone_at_HealthTap_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name.");
+        test.ok(!r[0].getComment());
         
         var r = set.getBy({
-        	reskey: "%@ commented on %@'s answer"
+        	reskey: "is_a_bright,_open_environment,_filled_with_great_energy,_positivity,_and_dedication."
         });
         test.ok(r);
-        test.equal(r[0].getSource(), "%1$@ commented on %2$@'s answer");
-        test.equal(r[0].getKey(), "%@ commented on %@'s answer");
+        test.equal(r[0].getSource(), "is a bright, open environment, filled with great energy, positivity, and dedication.");
+        test.equal(r[0].getKey(), "is_a_bright,_open_environment,_filled_with_great_energy,_positivity,_and_dedication.");
         test.ok(!r[0].getComment());
 
         test.done();
@@ -413,6 +235,7 @@ module.exports = {
         test.done();   
     },
     
+    /*
     testYamlFileGetContent: function(test) {
         test.expect(2);
 
@@ -447,10 +270,7 @@ module.exports = {
         });
         
         test.equal(yml.getContent(),
-        	'/* foo */\n' +
-        	'"source text" = "Quellen\\"text";\n\n' +
-        	'/* bar */\n' +
-        	'"more source text" = "mehr Quellen\\"text";\n\n'
+        	''
         );
         
         test.done();
@@ -489,25 +309,17 @@ module.exports = {
         });
         test.ok(yml);
         
-        yml.parse('/* this is the terms and conditions button label */\n' +
-				'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-				'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-				'"MFI-qx-pQf.text" = "Are you a doctor?";\n');
+        yml.parse('');
         
         var x = yml.getContent();
         var y = 
-    		'/* this is the terms and conditions button label */\n' +
-			'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-			'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-			'"MFI-qx-pQf.text" = "Are you a doctor?";\n\n';
+    		'';
         
         test.equal(yml.getContent(),
-    		'/* this is the terms and conditions button label */\n' +
-			'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
-			'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-			'"MFI-qx-pQf.text" = "Are you a doctor?";\n\n'
+    		''
         );
         
         test.done();
-    },
+    }
+    */
 };
