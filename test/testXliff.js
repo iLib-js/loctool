@@ -11,6 +11,19 @@ if (!Xliff) {
     var ResourcePlural = require("../lib/ResourcePlural.js");
 }
 
+function diff(a, b) {
+	var min = Math.min(a.length, b.length);
+	
+	for (var i = 0; i < min; i++) {
+		if (a[i] !== b[i]) {
+			console.log("Found difference at character " + i);
+			console.log("a: " + a.substring(i));
+			console.log("b: " + b.substring(i));
+			break;
+		}
+	}
+}
+
 module.exports = {
     testXliffConstructor: function(test) {
         test.expect(1);
@@ -578,7 +591,8 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
+            project: "ht-webapp12",
+            origin: "source"
         });
         
         x.addResource(res);
@@ -588,7 +602,8 @@ module.exports = {
             locale: "de-DE",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
+            project: "ht-webapp12",
+            origin: "target"
         });
         
         x.addResource(res);
@@ -598,7 +613,8 @@ module.exports = {
             locale: "en-US",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
+            project: "ht-webapp12",
+            origin: "source"
         });
         
         x.addResource(res);
@@ -608,11 +624,33 @@ module.exports = {
             locale: "fr-FR",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
+            project: "ht-webapp12",
+            origin: "target"
         });
         
         x.addResource(res);
 
+        diff(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '        <target>foobarfoo</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '        <target>bebe bebe</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+        
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
@@ -649,7 +687,8 @@ module.exports = {
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             project: "ht-webapp12",
-            comment: "foobar is where it's at!"
+            comment: "foobar is where it's at!",
+            origin: "source"
         });
         
         x.addResource(res);
@@ -659,7 +698,8 @@ module.exports = {
             locale: "de-DE",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
+            project: "ht-webapp12",
+            origin: "target"
         });
         
         x.addResource(res);
@@ -670,7 +710,8 @@ module.exports = {
             key: "huzzah",
             pathName: "foo/bar/j.java",
             project: "ht-webapp12",
-            comment: "come & enjoy it with us"
+            comment: "come & enjoy it with us",
+            origin: "source"
         });
         
         x.addResource(res);
@@ -680,7 +721,8 @@ module.exports = {
             locale: "fr-FR",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
+            project: "ht-webapp12",
+            origin: "target"
         });
         
         x.addResource(res);
@@ -1025,7 +1067,9 @@ module.exports = {
                 '  </file>\n' +
                 '</xliff>');
 
+        // console.log("x is " + JSON.stringify(x, undefined, 4));
         var reslist = x.getResources();
+        // console.log("x is now " + JSON.stringify(x, undefined, 4));
         
         test.ok(reslist);
         
@@ -1137,7 +1181,11 @@ module.exports = {
                 '  </file>\n' +
                 '</xliff>');
 
+        // console.log("x is " + JSON.stringify(x, undefined, 4));
+        
         var reslist = x.getResources();
+        
+        // console.log("after get resources x is " + JSON.stringify(x, undefined, 4));
         
         test.ok(reslist);
         
