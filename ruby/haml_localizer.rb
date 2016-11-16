@@ -70,6 +70,18 @@ def reject_special_words(values)
   values.reject{|w| w.include?('__') || w.include?('_')} #skip or, and, which are common in method names
 end
 
+#break string around ^[:print:] characters
+def break_around_non_clean_chars(orig_with_markup, stripped)
+  return [] if orig_with_markup.nil? || orig_with_markup.length == 0
+  md = /(.*)(&.*;)(.*)/.match(orig_with_markup)
+  return [orig_with_markup] if md.nil?
+  ret = []
+  if md[3].length == 0
+  elsif stripped.include?(md[3])
+    ret = [md[3]]
+  end
+  ret.concat(break_around_non_clean_chars(md[1], stripped))
+end
 
 # new algo: search for markup identified by <, >
 def get_overlap_strings2(orig_with_markup, stripped)
@@ -108,24 +120,11 @@ def accumulate_values(root, values, path_name)
     #skip
   elsif (root.value && root.value[:value])
     orig = root.value[:value]
+    puts "found orig=#{orig}"
     if root.value[:parse]
       puts "File has parsed-strings=#{path_name}"
       #skip all parsed nodes. i.e, ruby code
       orig = nil
-
-    #elsif root.value[:parse]
-    #  if orig.include?('[:') || orig.include?('__')
-    #    # assumed this entire node is piece of code. skip it
-    #    orig = nil
-    #  else
-    #    begin
-    #      #puts "orig=#{orig}"
-    #      orig = YAML.load(orig)
-    #    rescue Psych::SyntaxError => ex
-    #      #puts "orig=#{orig}"
-    #      orig = nil
-    #    end
-    #  end
     end
   elsif root.value && root.value[:attributes] && root.value[:attributes]['title']
     #puts "Found title=#{root.value[:attributes]['title']}"
@@ -137,8 +136,13 @@ def accumulate_values(root, values, path_name)
     s = Sanitize.clean(orig)
     if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
       values << s.gsub(/[^[:print:]]/ , '')
+    elsif !(/(.*)(<[^>]*>)(.*)/.match(orig))
+      #there is no html only special characters filtered out by Sanitize.clean
+      values.concat(break_around_non_clean_chars(orig, s))
     else
+      puts "trying to get overlap for #{orig}"
       toks = get_overlap_strings2(orig, s)
+      puts "toks=#{toks}"
       if orig.include?("Answers served")
         puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
         #raise ArgumentError.new('debug')
