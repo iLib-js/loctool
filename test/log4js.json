@@ -32,6 +32,8 @@
 		"loctool.lib.ResourceString": "INFO",
 		"loctool.lib.ResourceArray": "INFO",
 		"loctool.lib.ResourcePlural": "INFO",
+		"loctool.lib.RubyFile": "TRACE",
+		"loctool.lib.RubyFileType": "TRACE",
 		"loctool.lib.TranslationSet": "INFO",
 		"loctool.lib.WebProject": "INFO",
 		"loctool.lib.Xliff": "INFO",
