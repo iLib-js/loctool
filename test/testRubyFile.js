@@ -518,6 +518,5 @@ module.exports = {
         test.equal(set.size(), 0);
 
         test.done();
-    },
-
+    }
 };
