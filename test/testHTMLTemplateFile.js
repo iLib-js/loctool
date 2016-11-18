@@ -885,6 +885,47 @@ module.exports = {
                 
         test.done();
     },
+    
+    testHTMLTemplateFileParseIgnoreTags: function(test) {
+        test.expect(6);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html><body>\n' +
+        	'<script type="javascript">\n' +
+        	'if (window) {\n' +
+        	'  $(".foo").class("asdf");\n' +
+        	'}\n' +
+        	'</script>\n' +
+        	'<style>\n' +
+        	'  .activity_title{\n' +
+        	'    font-size: 18px;\n' +
+        	'    font-weight: 300;\n' +
+        	'    color: #777;\n' +
+        	'    line-height: 40px;\n' +
+        	'  }\n' +
+        	'</style>\n' +
+        	'<span class="foo">foo</span>\n' + 
+        	'</body></html>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 1);
+        
+        var r = set.getBySource("foo");
+        test.ok(r);
+        test.equal(r.getSource(), "foo");
+        test.equal(r.getKey(), "foo");
+
+        test.done();
+    },
 
     testHTMLTemplateFileExtractFile: function(test) {
         test.expect(17);
@@ -2476,4 +2517,81 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileLocalizeTextEscapeDoubleQuotesButNotInTemplateTagsWithPercentInThem: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('  <span class="foo" foo=\'asdf <% if (string === "20%") { %>selected<% } %>\'>foo</span>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" foo="asdf <% if (string === "20%") { %>selected<% } %>">asdf</span>');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'  <span class="foo" foo="asdf <% if (string === "20%") { %>selected<% } %>">asdf</span>');
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextIgnoreTags: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html><body><script type="javascript">\n' +
+           	'  foo\n' +
+        	'</script>\n' +
+        	'<span class="foo">foo</span>\n' + 
+        	'</body></html>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "ht-webapp12",
+        	key: 'foo',
+        	source: 'asdf',
+        	locale: "fr-FR"
+        }));
+
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'<html><body><script type="javascript">\n' +
+            	'  foo\n' +
+            	'</script>\n' +
+            	'<span class="foo">asdf</span>\n' + 
+            	'</body></html>');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<html><body><script type="javascript">\n' +
+            	'  foo\n' +
+            	'</script>\n' +
+            	'<span class="foo">asdf</span>\n' + 
+            	'</body></html>');
+
+        test.done();
+    }
 };

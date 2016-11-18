@@ -70,6 +70,18 @@ def reject_special_words(values)
   values.reject{|w| w.include?('__') || w.include?('_')} #skip or, and, which are common in method names
 end
 
+#break string around ^[:print:] characters
+def break_around_non_clean_chars(orig_with_markup, stripped)
+  return [] if orig_with_markup.nil? || orig_with_markup.length == 0
+  md = /(.*)(&.*;)(.*)/.match(orig_with_markup)
+  return [orig_with_markup] if md.nil?
+  ret = []
+  if md[3].length == 0
+  elsif stripped.include?(md[3])
+    ret = [md[3]]
+  end
+  ret.concat(break_around_non_clean_chars(md[1], stripped))
+end
 
 # new algo: search for markup identified by <, >
 def get_overlap_strings2(orig_with_markup, stripped)
@@ -102,27 +114,17 @@ def get_overlap_strings2(orig_with_markup, stripped)
 end
 
 # populate values with strings to translate. root is dom-tree node
-def accumulate_values(root, values)
+def accumulate_values(root, values, path_name)
   orig = nil
   if root[:type] == :silent_script
     #skip
   elsif (root.value && root.value[:value])
     orig = root.value[:value]
-    if root.value[:parse] && root.value[:name] == 'td'
+    puts "found orig=#{orig}"
+    if root.value[:parse]
+      puts "File has parsed-strings=#{path_name}"
+      #skip all parsed nodes. i.e, ruby code
       orig = nil
-    elsif root.value[:parse]
-      if orig.include?('[:') || orig.include?('__')
-        # assumed this entire node is piece of code. skip it
-        orig = nil
-      else
-        begin
-          #puts "orig=#{orig}"
-          orig = YAML.load(orig)
-        rescue Psych::SyntaxError => ex
-          #puts "orig=#{orig}"
-          orig = nil
-        end
-      end
     end
   elsif root.value && root.value[:attributes] && root.value[:attributes]['title']
     #puts "Found title=#{root.value[:attributes]['title']}"
@@ -134,8 +136,13 @@ def accumulate_values(root, values)
     s = Sanitize.clean(orig)
     if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
       values << s.gsub(/[^[:print:]]/ , '')
+    elsif !(/(.*)(<[^>]*>)(.*)/.match(orig))
+      #there is no html only special characters filtered out by Sanitize.clean
+      values.concat(break_around_non_clean_chars(orig, s))
     else
+      puts "trying to get overlap for #{orig}"
       toks = get_overlap_strings2(orig, s)
+      puts "toks=#{toks}"
       if orig.include?("Answers served")
         puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
         #raise ArgumentError.new('debug')
@@ -143,7 +150,7 @@ def accumulate_values(root, values)
       values.concat(toks) if toks
     end
   end
-  root.children.each{|c| accumulate_values(c, values)}
+  root.children.each{|c| accumulate_values(c, values, path_name)}
 end
 
 
@@ -183,9 +190,15 @@ def replace_with_translations(template, from_to)
     #puts "translating=#{k} WITH v=#{v}"
     #raise ArgumentError.new('test')
 
-    # match starting with word boundary and doesn't have / | : right before k
-    # also skip k if suffix is .<something>. ex - topic.kb_attribute. Assumes regular english will have .<spave><char>
-    res = template.gsub!(/\b(?<![-\/:_\.|#%])#{Regexp.escape(k)}(?![\.]\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+    res = template.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
+    res = template.gsub!(/\b(?<=:title =>\")#{Regexp.escape(k)}(?=\")/, v)
+    res = template.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
+    res = template.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+
+    if res
+      puts "replaced #{k} WITH: #{v}"
+    end
+
     #res = template.gsub!(/\b#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
     #res = template.gsub!(k, v)
     if res.nil?
@@ -238,13 +251,13 @@ ARGV[2, ARGV.length].each{|path_name|
     template = File.read(path_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-    # puts "root=#{root}"
+    puts "root=#{root}"
     values = []
-    accumulate_values(root, values)
-    #puts "orig_values=#{values}"
+    accumulate_values(root, values, path_name)
+    puts "orig_values=#{values}"
     values = reject_special_words(reject_paran(break_aound_code_values(values)))
 
-    #puts "values=#{values}"
+    puts "values=#{values}"
 
     #if local_name == 'zxx-XX'
       from_to = process_pseudo_values(values)
