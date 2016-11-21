@@ -36,7 +36,7 @@
 		"loctool.lib.RubyFileType": "TRACE",
 		"loctool.lib.TranslationSet": "INFO",
 		"loctool.lib.WebProject": "INFO",
-		"loctool.lib.Xliff": "TRACE",
-		"loctool.loctool":  "TRACE"
+		"loctool.lib.Xliff": "INFO",
+		"loctool.loctool":  "INFO"
 	}
 }
