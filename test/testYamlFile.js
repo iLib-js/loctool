@@ -235,33 +235,33 @@ module.exports = {
         test.done();   
     },
     
-    /*
     testYamlFileGetContent: function(test) {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
+        	id: "ht-webapp12",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
         var yml = new YamlFile({
         	project: p, 
-        	pathName: "./objc/de.lproj/asdf.yml"
+        	pathName: "./asdf.yml",
+        	locale: "de-DE"
         });
         test.ok(yml);
         
         [
         	new ResourceString({
-        		project: "ht-iosapp",
+        		project: "ht-webapp12",
         		locale: "de-DE",
-        		key: "source text",
+        		key: "source_text",
         		source: "Quellen\"text",
         		comment: "foo"
         	}),
         	new ResourceString({
-        		project: "ht-iosapp",
+        		project: "ht-webapp12",
         		locale: "de-DE",
-        		key: "more source text",
+        		key: "more_source_text",
         		source: "mehr Quellen\"text",
         		comment: "bar"
         	})
@@ -270,7 +270,8 @@ module.exports = {
         });
         
         test.equal(yml.getContent(),
-        	''
+        	'source_text: "Quellen\"text"\n' +
+        	'more_source_text: "mehr Quellen\"text"\n'
         );
         
         test.done();
@@ -280,13 +281,14 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
+        	id: "ht-webapp12",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
         var yml = new YamlFile({
         	project: p, 
-        	pathName: "./objc/de.lproj/asdf.yml"
+        	pathName: "./asdf.yml",
+        	locale: "de-DE"
         });
         test.ok(yml);
         
@@ -295,6 +297,7 @@ module.exports = {
         test.done();
     },
     
+    /*
     testYamlFileGetContentRoundTrip: function(test) {
         test.expect(2);
 
