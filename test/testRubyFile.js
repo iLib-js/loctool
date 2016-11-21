@@ -23,7 +23,8 @@ module.exports = {
         test.expect(1);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
         var rf = new RubyFile(p, "./ruby/external_user_metric.rb");
@@ -37,10 +38,13 @@ module.exports = {
         test.expect(1);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         test.done();
@@ -50,10 +54,13 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         test.equal(rf.makeKey("This is a test"), "This_is_a_test");
@@ -65,10 +72,13 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
 
         test.equals(rf.makeKey("Medications    in $$$  your profile"), "Medications_in_your_profile");
@@ -80,10 +90,13 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
 
         test.equals(rf.makeKey("Terms___and___Conditions"), "Terms_and_Conditions");
@@ -95,10 +108,13 @@ module.exports = {
         test.expect(5);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t("This is a test")');
@@ -106,7 +122,7 @@ module.exports = {
         var set = rf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("This_is_a_test");
+        var r = set.get("This_is_a_test", "string", undefined, undefined, "ht-androidapp");
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -119,10 +135,13 @@ module.exports = {
         test.expect(5);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t("This is a test")');
@@ -142,10 +161,13 @@ module.exports = {
         test.expect(3);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t("")');
@@ -162,10 +184,13 @@ module.exports = {
         test.expect(5);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('   Rb.t  (    \t "This is a test"    );  ');
@@ -186,10 +211,13 @@ module.exports = {
         test.expect(4);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
 
         var set = rf.getTranslationSet();
@@ -208,10 +236,13 @@ module.exports = {
         test.expect(6);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('\tRb.t("This is a test"); # i18n: this is a translator\'s comment\n\tfoo("This is not");');
@@ -232,10 +263,13 @@ module.exports = {
         test.expect(8);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t("This is a test");\n\ta.parse("This is another test.");\n\t\tRb.t("This is also a test");');
@@ -260,10 +294,13 @@ module.exports = {
         test.expect(10);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t("This is a test");   # i18n: foo\n\ta.parse("This is another test.");\n\t\tRb.t("This is also a test");\t# i18n: bar');
@@ -290,10 +327,13 @@ module.exports = {
         test.expect(10);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t("This is a test", "asdf");   # i18n: foo\n\ta.parse("This is another test.");\n\t\tRb.t("This is also a test", "kdkdkd");\t# i18n: bar');
@@ -320,10 +360,13 @@ module.exports = {
         test.expect(6);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t("This is a test");\n\ta.parse("This is another test.");\n\t\tRb.t("This is a test");');
@@ -345,10 +388,13 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t("This is a test" + " and this isnt");');
@@ -364,10 +410,13 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t("This is a test" + foobar);');
@@ -382,10 +431,13 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t(foobar);');
@@ -400,10 +452,13 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('Rb.t();');
@@ -418,10 +473,13 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('EPIRb.t("This is a test");');
@@ -436,10 +494,13 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         rf.parse('App.Rb.t("This is a test");');
@@ -454,10 +515,14 @@ module.exports = {
         test.expect(8);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p, "./ruby/external_user_metric.rb");
+        var rf = new RubyFile({
+        	project: p, 
+        	pathName: "./ruby/external_user_metric.rb"
+        });
         test.ok(rf);
         
         // should read the file
@@ -484,10 +549,13 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p);
+        var rf = new RubyFile({
+			project: p
+		});
         test.ok(rf);
         
         // should attempt to read the file and not fail
@@ -504,10 +572,14 @@ module.exports = {
         test.expect(2);
 
         var p = new AndroidProject({
-        	sourceLocale: "en-US"
+        	id: "ht-androidapp",
+			sourceLocale: "en-US"
         }, "./testfiles");
         
-        var rf = new RubyFile(p, "./ruby/foo.rb");
+        var rf = new RubyFile({
+        	project: p, 
+        	pathName: "./ruby/foo.rb"
+        });
         test.ok(rf);
         
         // should attempt to read the file and not fail
