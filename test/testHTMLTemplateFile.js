@@ -2008,8 +2008,9 @@ module.exports = {
 
         htf.localize(translations, ["fr-FR", "de-DE"]);
         
-        test.ok(!fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.fr-FR.tmpl.html")));
-        test.ok(!fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.de-DE.tmpl.html")));
+        // should produce the files, even if there is nothing to localize in them
+        test.ok(fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.fr-FR.tmpl.html")));
+        test.ok(fs.existsSync(path.join(base, "testfiles/tmpl/nostrings.de-DE.tmpl.html")));
         
         test.done();
     },
@@ -2592,6 +2593,118 @@ module.exports = {
             	'<span class="foo">asdf</span>\n' + 
             	'</body></html>');
 
+        test.done();
+    },
+    
+    testHTMLTemplateFileLocalizeTextAllText: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+			'<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
+			'<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
+			'<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
+			'<% var fileSize = (measurement == \'MB\') ? upload_file_size / 1000000.0 : upload_file_size / 1000.0; %>\n' +
+			'<% fileSize = fileSize.toString(); %>\n' +
+			'<% fileSize = fileSize.substring(0, fileSize.indexOf(\'.\') + 3) %>\n' +
+			'<div class="chat-attachment">\n' +
+			'  <a href="<%= url %>" target="_blank">\n' +
+			'    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
+			'      <img class="uploaded-image" src="<%= url %>" />\n' +
+			'    <% } else { %>\n' +
+			'      <div class="attachment-placeholder">\n' +
+			'        <div class="attachment-icon"></div>\n' +
+			'      </div>\n' +
+			'    <% } %>\n' +
+			'  </a>\n' +
+			'  <% if (caption) { %>\n' +
+			'    <div class="attachment-caption">\n' +
+			'      <%= caption %>\n' +
+			'    </div>\n' +
+			'  <% } %>\n' +
+			'  <div class="attachment-timestamp">\n' +
+			'    Uploaded <%= dateString %>\n' +
+			'  </div>\n' +
+			'  <div class="attachment-size">\n' +
+			'    <%= fileSize + \' \' + measurement %> \n' +
+			'  </div>\n' +
+			'</div>    \n');
+			
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'Uploaded <%= dateString %>',
+        	source: 'Téléchargé sur <%= dateString %>',
+        	locale: "fr-FR"
+        }));
+                
+        diff(htf.localizeText(translations, "fr-FR"),
+    			'<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
+    			'<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
+    			'<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
+    			'<% var fileSize = (measurement == \'MB\') ? upload_file_size / 1000000.0 : upload_file_size / 1000.0; %>\n' +
+    			'<% fileSize = fileSize.toString(); %>\n' +
+    			'<% fileSize = fileSize.substring(0, fileSize.indexOf(\'.\') + 3) %>\n' +
+    			'<div class="chat-attachment">\n' +
+    			'  <a href="<%= url %>" target="_blank">\n' +
+    			'    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
+    			'      <img class="uploaded-image" src="<%= url %>">\n' +
+    			'    <% } else { %>\n' +
+    			'      <div class="attachment-placeholder">\n' +
+    			'        <div class="attachment-icon"></div>\n' +
+    			'      </div>\n' +
+    			'    <% } %>\n' +
+    			'  </a>\n' +
+    			'  <% if (caption) { %>\n' +
+    			'    <div class="attachment-caption">\n' +
+    			'      <%= caption %>\n' +
+    			'    </div>\n' +
+    			'  <% } %>\n' +
+    			'  <div class="attachment-timestamp">\n' +
+    			'    Téléchargé sur <%= dateString %>\n' +
+    			'  </div>\n' +
+    			'  <div class="attachment-size">\n' +
+    			'    <%= fileSize + \' \' + measurement %> \n' +
+    			'  </div>\n' +
+    			'</div>    \n');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+    			'<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
+    			'<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
+    			'<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
+    			'<% var fileSize = (measurement == \'MB\') ? upload_file_size / 1000000.0 : upload_file_size / 1000.0; %>\n' +
+    			'<% fileSize = fileSize.toString(); %>\n' +
+    			'<% fileSize = fileSize.substring(0, fileSize.indexOf(\'.\') + 3) %>\n' +
+    			'<div class="chat-attachment">\n' +
+    			'  <a href="<%= url %>" target="_blank">\n' +
+    			'    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
+    			'      <img class="uploaded-image" src="<%= url %>">\n' +
+    			'    <% } else { %>\n' +
+    			'      <div class="attachment-placeholder">\n' +
+    			'        <div class="attachment-icon"></div>\n' +
+    			'      </div>\n' +
+    			'    <% } %>\n' +
+    			'  </a>\n' +
+    			'  <% if (caption) { %>\n' +
+    			'    <div class="attachment-caption">\n' +
+    			'      <%= caption %>\n' +
+    			'    </div>\n' +
+    			'  <% } %>\n' +
+    			'  <div class="attachment-timestamp">\n' +
+    			'    Téléchargé sur <%= dateString %>\n' +
+    			'  </div>\n' +
+    			'  <div class="attachment-size">\n' +
+    			'    <%= fileSize + \' \' + measurement %> \n' +
+    			'  </div>\n' +
+    			'</div>    \n');
+                
         test.done();
     }
 };
