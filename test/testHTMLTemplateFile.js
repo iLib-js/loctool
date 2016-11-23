@@ -2596,7 +2596,7 @@ module.exports = {
         test.done();
     },
     
-    testHTMLTemplateFileLocalizeTextAllText: function(test) {
+    testHTMLTemplateFileLocalizeTextWithEmbeddedTemplateTag: function(test) {
         test.expect(2);
 
         var p = new WebProject({
