@@ -279,7 +279,6 @@ module.exports = {
         var rs = new ResourceString({
             key: "asdf",
             source: "This <span class=\"foobar\">is a</span> test",
-            
             pathName: "a/b/c.java"
         });
         test.ok(rs);
@@ -303,7 +302,6 @@ module.exports = {
         var rs = new ResourceString({
             key: "asdf",
             source: "This <%= a ? \"foo\" : \"bar\" %> is a test",
-            
             pathName: "a/b/c.java"
         });
         test.ok(rs);
