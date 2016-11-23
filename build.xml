@@ -103,6 +103,10 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testResourceString.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
 
+	<target name="debug.resourcestring" description="Debug only the resource string tests">
+		<debug script="${build.test}/testResourceString.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.resourcearray" description="Run only the resource array tests">
 		<run script="${build.test}/testResourceArray.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
