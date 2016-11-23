@@ -273,6 +273,30 @@ module.exports = {
         test.done();
     },
 
+    testResourceStringGeneratePseudoSkipEmbeddedHTML: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            key: "asdf",
+            source: "This <span class=\"foobar\">is a</span> test",
+            
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        var rb = new ResBundle({
+        	type: "html",
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        var rs2 = rs.generatePseudo("de-DE", rb);
+
+        test.ok(rs2);
+        test.equal(rs2.getSource(), "Ťĥíš <span class=\"foobar\">íš à</span> ţëšţ");
+        
+        test.done();
+    },
+
     testResourceStringGeneratePseudoSkipEmbeddedXML: function(test) {
         test.expect(3);
 
