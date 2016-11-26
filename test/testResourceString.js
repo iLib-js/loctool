@@ -574,5 +574,38 @@ module.exports = {
         test.ok(!ra1.equals(ra2));
 
         test.done();
+    },
+    
+    testResourceStringGetOrigin: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+            key: "foo",
+            source: "source string",
+            pathName: "a/b/c.txt",
+            locale: "de-DE",
+            origin: "target"
+        });
+        
+        test.ok(rs);
+        test.equal(rs.getOrigin(), "target");
+        
+        test.done();
+    },
+
+    testResourceStringGetOriginDefault: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+            key: "foo",
+            source: "source string",
+            pathName: "a/b/c.txt",
+            locale: "de-DE"
+        });
+        
+        test.ok(rs);
+        test.equal(rs.getOrigin(), "source");
+        
+        test.done();
     }
 };
