@@ -1347,7 +1347,7 @@ module.exports = {
         test.equal(reslist[1].getContext(), "asdf");
       
         test.done();
-    }
+    },
     
     /*
     testXliffDeserializeRealFile: function(test) {
@@ -1371,4 +1371,112 @@ module.exports = {
         test.done();
     }
     */
+    
+    testXliffDeserializeEmptySource: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" x-context="na na na">\n' +
+                '        <source></source>\n' +
+                '        <target>Baby Baby</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '        <target>bebe bebe</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "baby baby");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "huzzah");
+        test.equal(reslist[0].getPath(), "foo/bar/j.java");
+        test.equal(reslist[0].getProject(), "ht-webapp12");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "2");
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.equal(reslist[1].getSource(), "bebe bebe");
+        test.equal(reslist[1].getLocale(), "fr-FR");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+        test.equal(reslist[1].getOrigin(), "target");
+      
+        test.done();
+    },
+
+    testXliffDeserializeEmptyTarget: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '        <target></target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "1");
+        test.equal(reslist[0].getOrigin(), "source");
+        
+        test.equal(reslist[1].getSource(), "baby baby");
+        test.equal(reslist[1].getLocale(), "en-US");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+        test.equal(reslist[1].getOrigin(), "source");
+        
+        test.done();
+    },
+
 };
