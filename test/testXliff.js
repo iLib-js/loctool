@@ -1479,7 +1479,7 @@ module.exports = {
         test.done();
     },
 
-    testXliffDeserializeWithMrkTagsInTarget: function(test) {
+    testXliffDeserializeWithMrkTagInTarget: function(test) {
         test.expect(19);
 
         var x = new Xliff();
@@ -1524,7 +1524,7 @@ module.exports = {
         test.done();
     },
 
-    testXliffDeserializeWithEmptyMrkTagsInTarget: function(test) {
+    testXliffDeserializeWithEmptyMrkTagInTarget: function(test) {
         test.expect(11);
 
         var x = new Xliff();
@@ -1556,6 +1556,51 @@ module.exports = {
         test.equal(reslist[0].resType, "string");
         test.equal(reslist[0].getId(), "2");
         test.equal(reslist[0].getOrigin(), "source");
+
+        test.done();
+    },
+    
+    testXliffDeserializeWithMultipleMrkTagsInTarget: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source><seg-source><mrk mtype="seg" mid="4">baby baby</mrk></seg-source><target><mrk mtype="seg" mid="4">This is segment 1.</mrk><mrk mtype="seg" mid="5"> This is segment 2.</mrk><mrk mtype="seg" mid="6"> This is segment 3.</mrk></target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "baby baby");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "huzzah");
+        test.equal(reslist[0].getPath(), "foo/bar/j.java");
+        test.equal(reslist[0].getProject(), "ht-webapp12");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "2");
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.equal(reslist[1].getSource(), "This is segment 1. This is segment 2. This is segment 3.");
+        test.equal(reslist[1].getLocale(), "fr-FR");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+        test.equal(reslist[1].getOrigin(), "target");
 
         test.done();
     }
