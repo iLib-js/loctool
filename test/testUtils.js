@@ -26,7 +26,7 @@ module.exports = {
         test.done();
     },
 
-    testAndroidLayoutFileIsAlreadyResourcifiedNo: function(test) {
+    testUtilsIsAndroidResourceNo: function(test) {
         test.expect(1);
 
         test.ok(!utils.isAndroidResource("foo bar faooasdfas"));
@@ -34,10 +34,32 @@ module.exports = {
         test.done();
     },
 
-    testAndroidLayoutFileIsAlreadyResourcifiedUnknownType: function(test) {
+    testUtilsIsAndroidResourceUnknownType: function(test) {
         test.expect(1);
 
         test.ok(!utils.isAndroidResource("@foo/asdf"));
+        
+        test.done();
+    },
+    
+    testUtilsIsAsianLocaleTrue: function(test) {
+        test.expect(4);
+
+        test.ok(utils.isAsianLocale("zh-Hans-CN"));
+        test.ok(utils.isAsianLocale("zh-Hant-TW"));
+        test.ok(utils.isAsianLocale("ja-JP"));
+        test.ok(utils.isAsianLocale("th-tH"));
+        
+        test.done();
+    },
+    
+    testUtilsIsAsianLocaleFalse: function(test) {
+        test.expect(4);
+
+        test.ok(!utils.isAsianLocale("ko-KR"));
+        test.ok(!utils.isAsianLocale("vi-VN"));
+        test.ok(!utils.isAsianLocale("en-US"));
+        test.ok(!utils.isAsianLocale("es-US"));
         
         test.done();
     }
