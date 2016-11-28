@@ -6,6 +6,7 @@
 
 if (!Xliff) {
 	var Xliff = require("../lib/Xliff.js");
+	var TranslationUnit = Xliff.TranslationUnit;
     var ResourceString = require("../lib/ResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
@@ -1646,6 +1647,362 @@ module.exports = {
         test.equal(reslist[1].resType, "string");
         test.equal(reslist[1].getId(), "2");
         test.equal(reslist[1].getOrigin(), "target");
+
+        test.done();
+    },
+    
+    testXliffTranslationUnitConstructor: function(test) {
+    	test.expect(1);
+    	
+    	var tu = new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js", 
+    		"project": "ht-iosapp"
+    	});
+    	
+    	test.ok(tu);
+    	
+    	test.done();
+    },
+
+    testXliffTranslationUnitConstructorEverythingCopied: function(test) {
+    	test.expect(10);
+    	
+    	var tu = new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+    	});
+    	
+    	test.ok(tu);
+    	
+    	test.equal(tu.source, "a");
+    	test.equal(tu.sourceLocale, "en-US");
+    	test.equal(tu.key, "foobar");
+    	test.equal(tu.file, "/a/b/asdf.js");
+    	test.equal(tu.project, "ht-iosapp");
+    	test.equal(tu.id, 2334);
+    	test.equal(tu.origin, "source");
+    	test.equal(tu.context, "asdfasdf");
+    	test.equal(tu.comment, "this is a comment");
+
+    	test.done();
+    },
+    
+    testXliffTranslationUnitConstructorMissingBasicProperties: function(test) {
+    	test.expect(1);
+    	
+    	test.throws(function() {
+	    	var tu = new TranslationUnit({
+	    		"source": "a", 
+	    		"sourceLocale": "en-US", 
+	    		"file": "/a/b/asdf.js",
+	    		"project": "ht-iosapp",
+	    		"id": 2334,
+	    		"origin": "source",
+	    		"context": "asdfasdf",
+	    		"comment": "this is a comment"
+	    	});
+    	});
+    	
+    	test.done();
+    },
+
+    testXliffAddTranslationUnit: function(test) {
+        test.expect(11);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 1);
+        
+        test.equal(reslist[0].getSource(), "a");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "/a/b/asdf.js");
+        test.equal(reslist[0].getProject(), "ht-iosapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), 2334);
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.done();
+    },
+    
+    testXliffAddTranslationUnitMergeResources: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "a");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "/a/b/asdf.js");
+        test.equal(reslist[0].getProject(), "ht-iosapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), 2334);
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.equal(reslist[1].getSource(), "b");
+        test.equal(reslist[1].getLocale(), "fr-FR");
+        test.equal(reslist[1].getKey(), "foobar");
+        test.equal(reslist[1].getPath(), "/a/b/asdf.js");
+        test.equal(reslist[1].getProject(), "ht-iosapp");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), 2334);
+        test.equal(reslist[1].getOrigin(), "target");
+
+        test.done();
+    },
+    
+    testXliffAddTranslationUnitAddMultipleUnits: function(test) {
+        test.expect(3);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "bababa", 
+    		"sourceLocale": "en-US",
+    		"target": "ababab",
+    		"targetLocale": "fr-FR",
+    		"key": "asdf", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2333,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        var units = x.getTranslationUnits();
+        
+        test.ok(units);
+        
+        test.equal(units.length, 2);
+
+        test.done();
+    },
+    
+    testXliffAddTranslationUnitReplacePreviousUnit: function(test) {
+        test.expect(3);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "ab", 
+    		"sourceLocale": "en-US", 
+    		"target": "ba",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a new comment"
+        }));
+        
+        var units = x.getTranslationUnits();
+        
+        test.ok(units);
+        
+        // should have merged them into 1 unit because the signature was the same
+        test.equal(units.length, 1);
+
+        test.done();
+    },
+    
+    testXliffAddTranslationUnitRightContents: function(test) {
+        test.expect(15);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "ab", 
+    		"sourceLocale": "en-US", 
+    		"target": "ba",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a new comment"
+        }));
+        
+        var units = x.getTranslationUnits();
+        
+        test.ok(units);
+        
+        test.equal(units.length, 1);
+
+        test.equal(units[0].source, "ab");
+        test.equal(units[0].sourceLocale, "en-US");
+        test.equal(units[0].target, "ba");
+        test.equal(units[0].targetLocale, "fr-FR");
+        test.equal(units[0].key, "foobar");
+        test.equal(units[0].file, "/a/b/asdf.js");
+        test.equal(units[0].project, "ht-iosapp");
+        test.equal(units[0].id, 2334);
+        test.equal(units[0].type, "string");
+        test.equal(units[0].origin, "source");
+        test.equal(units[0].context, "asdfasdf");
+        test.equal(units[0].comment, "this is a new comment");
+
+        test.done();
+    },
+
+    testXliffAddTranslationUnitReplaceSourceOnlyUnit: function(test) {
+        test.expect(3);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        var units = x.getTranslationUnits();
+        
+        test.ok(units);
+        
+        // should have merged them into 1 unit because the signature was the same
+        test.equal(units.length, 1);
 
         test.done();
     }
