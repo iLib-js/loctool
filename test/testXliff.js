@@ -2005,5 +2005,168 @@ module.exports = {
         test.equal(units.length, 1);
 
         test.done();
+    },
+    
+    testXliffSerializeWithTranslationUnits: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "bababa", 
+    		"sourceLocale": "en-US",
+    		"target": "ababab",
+    		"targetLocale": "fr-FR",
+    		"key": "asdf", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2333,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+
+        diff(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+                '        <source>bababa</source>\n' +
+                '        <target>ababab</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
+                '        <source>a</source>\n' +
+                '        <target>b</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.equal(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+                '        <source>bababa</source>\n' +
+                '        <target>ababab</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
+                '        <source>a</source>\n' +
+                '        <target>b</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.done();
+    },
+    
+    testXliffSerializeWithTranslationUnitsDifferentLocales: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "bababa", 
+    		"sourceLocale": "en-US",
+    		"target": "ababab",
+    		"targetLocale": "fr-FR",
+    		"key": "asdf", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2333,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "b",
+    		"targetLocale": "de-DE",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+
+        diff(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+                '        <source>bababa</source>\n' +
+                '        <target>ababab</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="de-DE" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
+                '        <source>a</source>\n' +
+                '        <target>b</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.equal(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+                '        <source>bababa</source>\n' +
+                '        <target>ababab</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="de-DE" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
+                '        <source>a</source>\n' +
+                '        <target>b</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.done();
     }
+
 };
