@@ -273,6 +273,52 @@ module.exports = {
         test.done();
     },
 
+    testResourceStringGeneratePseudoSkipEmbeddedHTML: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            key: "asdf",
+            source: "This <span class=\"foobar\">is a</span> test",
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        var rb = new ResBundle({
+        	type: "html",
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        var rs2 = rs.generatePseudo("de-DE", rb);
+
+        test.ok(rs2);
+        test.equal(rs2.getSource(), "Ťĥíš <span class=\"foobar\">íš à</span> ţëšţ");
+        
+        test.done();
+    },
+
+    testResourceStringGeneratePseudoSkipEmbeddedXML: function(test) {
+        test.expect(3);
+
+        var rs = new ResourceString({
+            key: "asdf",
+            source: "This <%= a ? \"foo\" : \"bar\" %> is a test",
+            pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        var rb = new ResBundle({
+        	type: "html",
+            locale: "zxx-XX" // the pseudo-locale!
+        });
+
+        var rs2 = rs.generatePseudo("de-DE", rb);
+
+        test.ok(rs2);
+        test.equal(rs2.getSource(), "Ťĥíš <%= a ? \"foo\" : \"bar\" %> íš à ţëšţ");
+        
+        test.done();
+    },
+
     testResourceStringGeneratePseudoSkipPercentsAndReplacements: function(test) {
         test.expect(3);
 
@@ -527,6 +573,39 @@ module.exports = {
 
         test.ok(!ra1.equals(ra2));
 
+        test.done();
+    },
+    
+    testResourceStringGetOrigin: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+            key: "foo",
+            source: "source string",
+            pathName: "a/b/c.txt",
+            locale: "de-DE",
+            origin: "target"
+        });
+        
+        test.ok(rs);
+        test.equal(rs.getOrigin(), "target");
+        
+        test.done();
+    },
+
+    testResourceStringGetOriginDefault: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+            key: "foo",
+            source: "source string",
+            pathName: "a/b/c.txt",
+            locale: "de-DE"
+        });
+        
+        test.ok(rs);
+        test.equal(rs.getOrigin(), "source");
+        
         test.done();
     }
 };

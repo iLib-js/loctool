@@ -6,6 +6,7 @@
 
 if (!Xliff) {
 	var Xliff = require("../lib/Xliff.js");
+	var TranslationUnit = Xliff.TranslationUnit;
     var ResourceString = require("../lib/ResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
@@ -1347,5 +1348,825 @@ module.exports = {
         test.equal(reslist[1].getContext(), "asdf");
       
         test.done();
+    },
+    
+    /*
+    testXliffDeserializeRealFile: function(test) {
+        test.expect(3);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        var fs = require("fs");
+        
+        var str = fs.readFileSync("/Users/edwinhoogerbeets/src/ht-iosapp/en-US.xliff", "utf-8");
+        
+        x.deserialize(str);
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 3757);
+
+        test.done();
     }
+    */
+    
+    testXliffDeserializeEmptySource: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" x-context="na na na">\n' +
+                '        <source></source>\n' +
+                '        <target>Baby Baby</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '        <target>bebe bebe</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "baby baby");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "huzzah");
+        test.equal(reslist[0].getPath(), "foo/bar/j.java");
+        test.equal(reslist[0].getProject(), "ht-webapp12");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "2");
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.equal(reslist[1].getSource(), "bebe bebe");
+        test.equal(reslist[1].getLocale(), "fr-FR");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+        test.equal(reslist[1].getOrigin(), "target");
+      
+        test.done();
+    },
+
+    testXliffDeserializeEmptyTarget: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source>\n' +
+                '        <target></target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "Asdf asdf");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "1");
+        test.equal(reslist[0].getOrigin(), "source");
+        
+        test.equal(reslist[1].getSource(), "baby baby");
+        test.equal(reslist[1].getLocale(), "en-US");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+        test.equal(reslist[1].getOrigin(), "source");
+        
+        test.done();
+    },
+
+    testXliffDeserializeWithMrkTagInTarget: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source><seg-source><mrk mtype="seg" mid="4">baby baby</mrk></seg-source><target><mrk mtype="seg" mid="4">bebe bebe</mrk></target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "baby baby");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "huzzah");
+        test.equal(reslist[0].getPath(), "foo/bar/j.java");
+        test.equal(reslist[0].getProject(), "ht-webapp12");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "2");
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.equal(reslist[1].getSource(), "bebe bebe");
+        test.equal(reslist[1].getLocale(), "fr-FR");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+        test.equal(reslist[1].getOrigin(), "target");
+
+        test.done();
+    },
+
+    testXliffDeserializeWithEmptyMrkTagInTarget: function(test) {
+        test.expect(11);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source><seg-source><mrk mtype="seg" mid="4">baby baby</mrk></seg-source><target><mrk mtype="seg" mid="4"/></target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 1);
+        
+        test.equal(reslist[0].getSource(), "baby baby");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "huzzah");
+        test.equal(reslist[0].getPath(), "foo/bar/j.java");
+        test.equal(reslist[0].getProject(), "ht-webapp12");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "2");
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.done();
+    },
+    
+    testXliffDeserializeWithMultipleMrkTagsInTargetEuro: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source><seg-source><mrk mtype="seg" mid="4">baby baby</mrk></seg-source><target><mrk mtype="seg" mid="4">This is segment 1.</mrk> <mrk mtype="seg" mid="5">This is segment 2.</mrk> <mrk mtype="seg" mid="6">This is segment 3.</mrk></target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "baby baby");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "huzzah");
+        test.equal(reslist[0].getPath(), "foo/bar/j.java");
+        test.equal(reslist[0].getProject(), "ht-webapp12");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "2");
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.equal(reslist[1].getSource(), "This is segment 1. This is segment 2. This is segment 3.");
+        test.equal(reslist[1].getLocale(), "fr-FR");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+        test.equal(reslist[1].getOrigin(), "target");
+
+        test.done();
+    },
+    
+    testXliffDeserializeWithMultipleMrkTagsInTargetAsian: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '        <source>baby baby</source><seg-source><mrk mtype="seg" mid="4">baby baby</mrk></seg-source><target><mrk mtype="seg" mid="4">This is segment 1.</mrk> <mrk mtype="seg" mid="5">This is segment 2.</mrk> <mrk mtype="seg" mid="6">This is segment 3.</mrk></target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "baby baby");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "huzzah");
+        test.equal(reslist[0].getPath(), "foo/bar/j.java");
+        test.equal(reslist[0].getProject(), "ht-webapp12");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), "2");
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.equal(reslist[1].getSource(), "This is segment 1.This is segment 2.This is segment 3.");
+        test.equal(reslist[1].getLocale(), "zh-Hans-CN");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "foo/bar/j.java");
+        test.equal(reslist[1].getProject(), "ht-webapp12");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), "2");
+        test.equal(reslist[1].getOrigin(), "target");
+
+        test.done();
+    },
+    
+    testXliffTranslationUnitConstructor: function(test) {
+    	test.expect(1);
+    	
+    	var tu = new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js", 
+    		"project": "ht-iosapp"
+    	});
+    	
+    	test.ok(tu);
+    	
+    	test.done();
+    },
+
+    testXliffTranslationUnitConstructorEverythingCopied: function(test) {
+    	test.expect(10);
+    	
+    	var tu = new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+    	});
+    	
+    	test.ok(tu);
+    	
+    	test.equal(tu.source, "a");
+    	test.equal(tu.sourceLocale, "en-US");
+    	test.equal(tu.key, "foobar");
+    	test.equal(tu.file, "/a/b/asdf.js");
+    	test.equal(tu.project, "ht-iosapp");
+    	test.equal(tu.id, 2334);
+    	test.equal(tu.origin, "source");
+    	test.equal(tu.context, "asdfasdf");
+    	test.equal(tu.comment, "this is a comment");
+
+    	test.done();
+    },
+    
+    testXliffTranslationUnitConstructorMissingBasicProperties: function(test) {
+    	test.expect(1);
+    	
+    	test.throws(function() {
+	    	var tu = new TranslationUnit({
+	    		"source": "a", 
+	    		"sourceLocale": "en-US", 
+	    		"file": "/a/b/asdf.js",
+	    		"project": "ht-iosapp",
+	    		"id": 2334,
+	    		"origin": "source",
+	    		"context": "asdfasdf",
+	    		"comment": "this is a comment"
+	    	});
+    	});
+    	
+    	test.done();
+    },
+
+    testXliffAddTranslationUnit: function(test) {
+        test.expect(11);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 1);
+        
+        test.equal(reslist[0].getSource(), "a");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "/a/b/asdf.js");
+        test.equal(reslist[0].getProject(), "ht-iosapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), 2334);
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.done();
+    },
+    
+    testXliffAddTranslationUnitMergeResources: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.equal(reslist[0].getSource(), "a");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "/a/b/asdf.js");
+        test.equal(reslist[0].getProject(), "ht-iosapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), 2334);
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.equal(reslist[1].getSource(), "b");
+        test.equal(reslist[1].getLocale(), "fr-FR");
+        test.equal(reslist[1].getKey(), "foobar");
+        test.equal(reslist[1].getPath(), "/a/b/asdf.js");
+        test.equal(reslist[1].getProject(), "ht-iosapp");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), 2334);
+        test.equal(reslist[1].getOrigin(), "target");
+
+        test.done();
+    },
+    
+    testXliffAddTranslationUnitAddMultipleUnits: function(test) {
+        test.expect(3);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "bababa", 
+    		"sourceLocale": "en-US",
+    		"target": "ababab",
+    		"targetLocale": "fr-FR",
+    		"key": "asdf", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2333,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        var units = x.getTranslationUnits();
+        
+        test.ok(units);
+        
+        test.equal(units.length, 2);
+
+        test.done();
+    },
+    
+    testXliffAddTranslationUnitReplacePreviousUnit: function(test) {
+        test.expect(3);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "ab", 
+    		"sourceLocale": "en-US", 
+    		"target": "ba",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a new comment"
+        }));
+        
+        var units = x.getTranslationUnits();
+        
+        test.ok(units);
+        
+        // should have merged them into 1 unit because the signature was the same
+        test.equal(units.length, 1);
+
+        test.done();
+    },
+    
+    testXliffAddTranslationUnitRightContents: function(test) {
+        test.expect(15);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "ab", 
+    		"sourceLocale": "en-US", 
+    		"target": "ba",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a new comment"
+        }));
+        
+        var units = x.getTranslationUnits();
+        
+        test.ok(units);
+        
+        test.equal(units.length, 1);
+
+        test.equal(units[0].source, "ab");
+        test.equal(units[0].sourceLocale, "en-US");
+        test.equal(units[0].target, "ba");
+        test.equal(units[0].targetLocale, "fr-FR");
+        test.equal(units[0].key, "foobar");
+        test.equal(units[0].file, "/a/b/asdf.js");
+        test.equal(units[0].project, "ht-iosapp");
+        test.equal(units[0].id, 2334);
+        test.equal(units[0].type, "string");
+        test.equal(units[0].origin, "source");
+        test.equal(units[0].context, "asdfasdf");
+        test.equal(units[0].comment, "this is a new comment");
+
+        test.done();
+    },
+
+    testXliffAddTranslationUnitReplaceSourceOnlyUnit: function(test) {
+        test.expect(3);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        var units = x.getTranslationUnits();
+        
+        test.ok(units);
+        
+        // should have merged them into 1 unit because the signature was the same
+        test.equal(units.length, 1);
+
+        test.done();
+    },
+    
+    testXliffSerializeWithTranslationUnits: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "bababa", 
+    		"sourceLocale": "en-US",
+    		"target": "ababab",
+    		"targetLocale": "fr-FR",
+    		"key": "asdf", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2333,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+
+        diff(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+                '        <source>bababa</source>\n' +
+                '        <target>ababab</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
+                '        <source>a</source>\n' +
+                '        <target>b</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.equal(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+                '        <source>bababa</source>\n' +
+                '        <target>ababab</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
+                '        <source>a</source>\n' +
+                '        <target>b</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.done();
+    },
+    
+    testXliffSerializeWithTranslationUnitsDifferentLocales: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "bababa", 
+    		"sourceLocale": "en-US",
+    		"target": "ababab",
+    		"targetLocale": "fr-FR",
+    		"key": "asdf", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2333,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "b",
+    		"targetLocale": "de-DE",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+
+        diff(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+                '        <source>bababa</source>\n' +
+                '        <target>ababab</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="de-DE" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
+                '        <source>a</source>\n' +
+                '        <target>b</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.equal(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="fr-FR" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2333" resname="asdf" restype="string" x-context="asdfasdf">\n' +
+                '        <source>bababa</source>\n' +
+                '        <target>ababab</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '  <file original="/a/b/asdf.js" source-language="en-US" target-language="de-DE" product-name="ht-iosapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2334" resname="foobar" restype="string" x-context="asdfasdf">\n' +
+                '        <source>a</source>\n' +
+                '        <target>b</target>\n' +
+                '        <note annotates="source">this is a comment</note>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+       
+        test.done();
+    }
+
 };
