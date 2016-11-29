@@ -136,6 +136,10 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testTranslationSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
 
+	<target name="debug.translationset" description="Debug only the translation set tests">
+		<debug script="${build.test}/testTranslationSet.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.set" description="Run only the set tests">
 		<run script="${build.test}/testSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
