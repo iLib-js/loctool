@@ -1230,7 +1230,7 @@ module.exports = {
         test.done();
     },
 
-    testTranslationSetGetByDoubleFields: function(test) {
+    testTranslationSetGetByOrOperator: function(test) {
         test.expect(17);
 
         var ts = new TranslationSet();
@@ -1274,7 +1274,8 @@ module.exports = {
 	            key: "qwerty",
 	            source: "This is yet another test",
 	            project: "foo",
-	            locale: "pt-BR"
+	            locale: "de-DE",
+	            context: "ajajajaj"
 	        }),
 	        new ResourceString({
 	            source: "test test blah",
@@ -1304,32 +1305,34 @@ module.exports = {
 	        })
 	    ]);
 
+        // should match one or the other
         var r = ts.getBy({
-        	project: "foo",
-        	locale: "de-DE"
+        	locale: ["en-US", "de-DE"]
         });
         
         test.ok(r);
-        test.equal(r.length, 3);
+        test.equal(r.length, 5);
         
         test.equal(r[0].reskey, "asdf");
         test.equal(r[0].text, "This is a test");
-        test.equal(r[0].getProject(), "foo");
-        test.equal(r[0].getLocale(), "de-DE");
-        test.equal(r[0].getContext(), "bar");
-
+        test.equal(r[0].locale, "de-DE");
+        
         test.equal(r[1].reskey, "qwerty");
         test.equal(r[1].text, "This is another test");
-        test.equal(r[1].getProject(), "foo");
-        test.equal(r[1].getLocale(), "de-DE");
-        test.equal(r[1].getContext(), "bar");
-
+        test.equal(r[1].locale, "de-DE");
+        
         test.equal(r[2].reskey, "qwerty");
         test.equal(r[2].text, "This is another test");
-        test.equal(r[2].getProject(), "foo");
-        test.equal(r[2].getLocale(), "de-DE");
-        test.ok(!r[2].getContext());
-     
+        test.equal(r[2].locale, "de-DE");
+        
+        test.equal(r[3].reskey, "qwerty");
+        test.equal(r[3].text, "This is yet another test");
+        test.equal(r[3].locale, "de-DE");
+        
+        test.equal(r[4].reskey, "llashdfoi");
+        test.equal(r[4].text, "blah blah blah");
+        test.equal(r[4].locale, "en-US");
+        
         test.done();
     },
 
