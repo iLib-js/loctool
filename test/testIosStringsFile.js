@@ -254,7 +254,7 @@ module.exports = {
         
         var strings = new IosStringsFile({
         	project: p, 
-        	pathName: "./objc/en.lproj/FGSignUpViewController.strings"
+        	pathName: "./objc/en-US.lproj/FGSignUpViewController.strings"
         });
         test.ok(strings);
         
@@ -373,7 +373,7 @@ module.exports = {
         
         var strings = new IosStringsFile({
         	project: p, 
-        	pathName: "./objc/en.lproj/asdf.strings"
+        	pathName: "./objc/en-US.lproj/asdf.strings"
         });
         test.ok(strings);
         

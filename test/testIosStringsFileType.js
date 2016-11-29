@@ -94,7 +94,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
         
-        test.ok(htf.handles("a/b/en.lproj/FGSignUpViewController.strings"));
+        test.ok(htf.handles("a/b/en-US.lproj/FGSignUpViewController.strings"));
         
         test.done();
     },
@@ -142,7 +142,7 @@ module.exports = {
         var htf = new IosStringsFileType(p);
         test.ok(htf);
         
-        test.ok(!htf.handles("./en.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("./en-US.lproj/FGSignUpViewController.strings"));
         
         test.done();
     },
