@@ -92,8 +92,7 @@ module.exports = {
         }, "./testfiles");
         
         var alf = new AndroidLayoutFile({
-        	project: p,
-        	pathName: "foo"
+        	project: p
         });
         test.ok(alf);
         
@@ -201,8 +200,7 @@ module.exports = {
         }, "./testfiles");
         
         var alf = new AndroidLayoutFile({
-        	project: p,
-        	pathName: "foo"
+        	project: p
         });
         test.ok(alf);
         

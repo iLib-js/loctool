@@ -682,8 +682,8 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-
-        var r = set.get("id1");
+        
+        var r = set.get("id1", undefined, undefined, undefined, undefined, "./java/t1.java");
         test.ok(r);
         test.equal(r.getSource(), "This is a test with a unique id");
         test.equal(r.getKey(), "id1");
