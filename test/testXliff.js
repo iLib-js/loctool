@@ -189,7 +189,7 @@ module.exports = {
         
         var res = new ResourceString({
             source: "Asdf asdf",
-            ocale: "en-US",
+            locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             project: "ht-webapp12"
@@ -388,6 +388,41 @@ module.exports = {
         test.equal(reslist[1].getPath(), "foo/bar/asdf.java");
         test.equal(reslist[1].getComment(), "blah blah blah");
 
+        test.done();
+    },
+    
+    testXliffAddResourceDontAddSourceLocaleAsTarget: function(test) {
+        test.expect(2);
+
+        var x = new Xliff({
+        	sourceLocale: "en-US"
+        });
+        test.ok(x);
+        
+        var res = new ResourceString({
+            source: "Asdf asdf",
+            locale: "en-US",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-webapp12"
+        });
+        
+        x.addResource(res);
+
+        // should not add this one
+        res = new ResourceString({
+            source: "baby baby",
+            locale: "en-US",
+            key: "huzzah",
+            pathName: "foo/bar/j.java",
+            project: "ht-webapp12",
+            origin: "target"
+        });
+        
+        x.addResource(res);
+
+        test.equal(x.size(), 1);
+               
         test.done();
     },
 

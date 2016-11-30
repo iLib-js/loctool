@@ -791,5 +791,144 @@ module.exports = {
 				});
 			});
 		});
-	}
+	},
+	
+	testLocalRepositoryGetResource: function(test) {
+		test.expect(9);
+
+		var repo = new LocalRepository();
+		var set = new TranslationSet();
+		set.addAll([
+			new ResourceString({
+				project: "a",
+				context: "b",
+				locale: "en-US",
+				key: "barbar",
+				source: "Elephants can fly!"
+			}),
+			new ResourceString({
+				project: "a",
+				context: "b",
+				locale: "de-DE",
+				key: "barbar",
+				source: "Olifanten koennen fliegen!"
+			}),
+			new ResourceString({
+				project: "a",
+				context: "b",
+				locale: "nl-NL",
+				key: "barbar",
+				source: "Oliefanten kunnen fliegen!"
+			})
+		]);
+
+		repo.addAll(set, function(err, info) {
+			test.equal(err, null);
+			test.ok(info);
+			test.equal(info.affectedRows, 3);
+
+			repo.getResource("barbar", "string", "b", "de-DE", "a", undefined, function(err, resource) {
+				test.ok(resource);
+
+				test.equal(resource.getProject(), "a");
+				test.equal(resource.getContext(), "b");
+				test.equal(resource.getLocale(), "de-DE");
+				test.equal(resource.getKey(), "barbar");
+				test.equal(resource.getSource(), "Olifanten koennen fliegen!");
+
+				repo.close(function() {
+					test.done();
+				});
+			});
+		});
+	},
+
+	testLocalRepositoryGetResourceWrongCriteria: function(test) {
+		test.expect(4);
+
+		var repo = new LocalRepository();
+		var set = new TranslationSet();
+		set.addAll([
+			new ResourceString({
+				project: "a",
+				context: "b",
+				locale: "en-US",
+				key: "barbar",
+				source: "Elephants can fly!"
+			}),
+			new ResourceString({
+				project: "a",
+				context: "b",
+				locale: "de-DE",
+				key: "barbar",
+				source: "Olifanten koennen fliegen!"
+			}),
+			new ResourceString({
+				project: "a",
+				context: "b",
+				locale: "nl-NL",
+				key: "barbar",
+				source: "Oliefanten kunnen fliegen!"
+			})
+		]);
+
+		repo.addAll(set, function(err, info) {
+			test.equal(err, null);
+			test.ok(info);
+			test.equal(info.affectedRows, 3);
+
+			repo.getResource("barbar", "string", "c", "de-DE", "a", undefined, function(err, resource) {
+				test.ok(!resource);
+
+				repo.close(function() {
+					test.done();
+				});
+			});
+		});
+	},
+
+	testLocalRepositoryGetResourceNotThere: function(test) {
+		test.expect(4);
+
+		var repo = new LocalRepository();
+		var set = new TranslationSet();
+		set.addAll([
+			new ResourceString({
+				project: "a",
+				context: "b",
+				locale: "en-US",
+				key: "barbar",
+				source: "Elephants can fly!"
+			}),
+			new ResourceString({
+				project: "a",
+				context: "b",
+				locale: "de-DE",
+				key: "barbar",
+				source: "Olifanten koennen fliegen!"
+			}),
+			new ResourceString({
+				project: "a",
+				context: "b",
+				locale: "nl-NL",
+				key: "barbar",
+				source: "Oliefanten kunnen fliegen!"
+			})
+		]);
+
+		repo.addAll(set, function(err, info) {
+			test.equal(err, null);
+			test.ok(info);
+			test.equal(info.affectedRows, 3);
+
+			repo.getResource("barbar", "string", "b", "zh-Hans-CN", "a", undefined, function(err, resource) {
+				test.ok(!resource);
+
+				repo.close(function() {
+					test.done();
+				});
+			});
+		});
+	},
+
 };
