@@ -429,7 +429,50 @@ module.exports = {
         
         test.done();
     },
-    
+
+    testIosStringsFileGetContentWithEscapes: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var strings = new IosStringsFile({
+        	project: p, 
+        	pathName: "./objc/de.lproj/asdf.strings"
+        });
+        test.ok(strings);
+        
+        [
+        	new ResourceString({
+        		project: "ht-iosapp",
+        		locale: "de-DE",
+        		key: "source text",
+        		source: "Quellen\n\ttext",
+        		comment: "foo"
+        	}),
+        	new ResourceString({
+        		project: "ht-iosapp",
+        		locale: "de-DE",
+        		key: "more source text",
+        		source: "mehr Quellen\"text",
+        		comment: "bar"
+        	})
+        ].forEach(function(res) {
+        	strings.addResource(res);
+        });
+        
+        test.equal(strings.getContent(),
+        	'/* foo */\n' +
+        	'"source text" = "Quellen\\n\\ttext";\n\n' +
+        	'/* bar */\n' +
+        	'"more source text" = "mehr Quellen\\"text";\n\n'
+        );
+        
+        test.done();
+    },
+
     testIosStringsFileGetContentEmpty: function(test) {
         test.expect(2);
 
