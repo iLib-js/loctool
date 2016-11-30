@@ -2042,6 +2042,87 @@ module.exports = {
         test.done();
     },
     
+    testXliffAddTranslationUnitDifferentPaths: function(test) {
+        test.expect(35);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "foo",
+    		"targetLocale": "de-DE",
+    		"key": "foobar", 
+    		"file": "a/b/asdf.xib",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "target",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"target": "foo",
+    		"targetLocale": "de-DE",
+    		"key": "foobar", 
+    		"file": "a/b/asdf~ipad.xib",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "target",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment"
+        }));
+        
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 4);
+
+        test.equal(reslist[0].getSource(), "a");
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "a/b/asdf.xib");
+        test.equal(reslist[0].getProject(), "ht-iosapp");
+        test.equal(reslist[0].resType, "string");
+        test.equal(reslist[0].getId(), 2334);
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.equal(reslist[1].getSource(), "foo");
+        test.equal(reslist[1].getLocale(), "de-DE");
+        test.equal(reslist[1].getKey(), "foobar");
+        test.equal(reslist[1].getPath(), "a/b/asdf.xib");
+        test.equal(reslist[1].getProject(), "ht-iosapp");
+        test.equal(reslist[1].resType, "string");
+        test.equal(reslist[1].getId(), 2334);
+        test.equal(reslist[1].getOrigin(), "target");
+
+        test.equal(reslist[2].getSource(), "a");
+        test.equal(reslist[2].getLocale(), "en-US");
+        test.equal(reslist[2].getKey(), "foobar");
+        test.equal(reslist[2].getPath(), "a/b/asdf~ipad.xib");
+        test.equal(reslist[2].getProject(), "ht-iosapp");
+        test.equal(reslist[2].resType, "string");
+        test.equal(reslist[2].getId(), 2334);
+        test.equal(reslist[2].getOrigin(), "source");
+
+        test.equal(reslist[3].getSource(), "foo");
+        test.equal(reslist[3].getLocale(), "de-DE");
+        test.equal(reslist[3].getKey(), "foobar");
+        test.equal(reslist[3].getPath(), "a/b/asdf~ipad.xib");
+        test.equal(reslist[3].getProject(), "ht-iosapp");
+        test.equal(reslist[3].resType, "string");
+        test.equal(reslist[3].getId(), 2334);
+        test.equal(reslist[3].getOrigin(), "target");
+        
+        test.done();
+    },
+
     testXliffSerializeWithTranslationUnits: function(test) {
         test.expect(2);
 
