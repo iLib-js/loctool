@@ -235,6 +235,7 @@ module.exports = {
         test.done();   
     },
     
+    /*
     testYamlFileGetContent: function(test) {
         test.expect(2);
 
