@@ -621,6 +621,22 @@ module.exports = {
         test.done();
     },
 
+    testTranslationSetAddTranslationUndefined: function(test) {
+        test.expect(2);
+
+        var ts = new TranslationSet();
+
+        try {
+            test.equal(ts.size(), 0);
+        	ts.add(undefined);
+            test.equal(ts.size(), 0);
+        } catch (e) {
+        	test.fail();
+        }
+        
+        test.done();
+    },
+
     testTranslationSetAddAllEmpty: function(test) {
         test.expect(2);
 
