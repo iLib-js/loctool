@@ -256,6 +256,22 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testJavaScriptResourceFileType.js" dir="${build.test}"/>
 	</target>
 
+	<target name="test.yamlfile" description="Run only the tests for the Yaml file object">
+		<run script="${build.test}/testYamlFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.yamlfile" description="Debug only the tests for the Yaml file object">
+		<debug script="${build.test}/testYamlFile.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.yamlfiletype" description="Run only the tests for the Yaml file type object">
+		<run script="${build.test}/testYamlFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.yamlfiletype" description="Debug only the tests for the Yaml file type object">
+		<debug script="${build.test}/testYamlFileType.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.rubyfile" description="Run only the tests for the Ruby file object">
 		<run script="${build.test}/testRubyFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
@@ -272,7 +288,7 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testRubyFileType.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype">
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile">
 	</target>
 
 	<macrodef name="runsql">
