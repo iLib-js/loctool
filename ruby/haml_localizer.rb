@@ -120,9 +120,7 @@ def accumulate_values(root, values, path_name)
     #skip
   elsif (root.value && root.value[:value])
     orig = root.value[:value]
-    puts "found orig=#{orig}"
     if root.value[:parse]
-      puts "File has parsed-strings=#{path_name}"
       #skip all parsed nodes. i.e, ruby code
       orig = nil
     end
@@ -140,11 +138,8 @@ def accumulate_values(root, values, path_name)
       #there is no html only special characters filtered out by Sanitize.clean
       values.concat(break_around_non_clean_chars(orig, s))
     else
-      puts "trying to get overlap for #{orig}"
       toks = get_overlap_strings2(orig, s)
-      puts "toks=#{toks}"
       if orig.include?("Answers served")
-        puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
         #raise ArgumentError.new('debug')
       end
       values.concat(toks) if toks
