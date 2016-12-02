@@ -182,33 +182,79 @@ def process_values(locale_mappings, values, unmapped_words)
   ret
 end
 
-def replace_with_translations(template, from_to)
-  from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
-    next if k.include?('@') || k.include?('#{')
-    #next if !k.include?(' ') # there are too many cases where it is substituring method calls and variable names. Skip if its not a sentence
-    v = from_to[k]
-    #puts "translating=#{k} WITH v=#{v}"
-    #raise ArgumentError.new('test')
+#def replace_with_translations(template, from_to)
+#  from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
+#    next if k.include?('@') || k.include?('#{')
+#    v = from_to[k]
+#
+#    res = template.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
+#    res = template.gsub!(/\b(?<=:title =>\")#{Regexp.escape(k)}(?=\")/, v)
+#    res = template.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
+#    res = template.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+#
+#    if res
+#      puts "replaced #{k} WITH: #{v}"
+#    end
+#  }
+#  template
+#end
 
-    res = template.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
-    res = template.gsub!(/\b(?<=:title =>\")#{Regexp.escape(k)}(?=\")/, v)
-    res = template.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
-    res = template.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+def process_line(skip_block_indent, ret, line, from_to)
+  if !skip_block_indent.nil?
+    ret << line
+  else
+    if line.strip[0] == "="
+      ret << line
+    else
+      from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
+        next if k.include?('@') || k.include?('#{')
+        v = from_to[k]
 
-    if res
-      puts "replaced #{k} WITH: #{v}"
+        res = line.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
+        res = line.gsub!(/\b(?<=:title =>\")#{Regexp.escape(k)}(?=\")/, v)
+        res = line.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
+        res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+      }
+      puts "adding:#{line}"
+      ret << line
     end
+  end
+end
 
-    #res = template.gsub!(/\b#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
-    #res = template.gsub!(k, v)
-    if res.nil?
-      #puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
-      #puts "include=#{template.include?(k)}"
-      #puts "template=#{template}"
-      #raise ArgumentError.new("stop")
+# approach to go line-by line and replace. SHould give us better control of the context for search/replace
+def replace_with_translations2(template, from_to)
+  arr = template.split("\n")
+  indent_stack = [0]
+  ret = []
+  skip_block_indent = nil
+  arr.each{|line|
+    curr_indent = /\S/ =~ line
+    if curr_indent.nil?
+      ret << line
+      next
+    end
+    puts "curr_indent=#{curr_indent} stack=#{indent_stack}"
+    if curr_indent > indent_stack.last
+      #new block
+      indent_stack << curr_indent
+      if line.include?(':ruby')
+        skip_block_indent = curr_indent
+      end
+      process_line(skip_block_indent, ret, line, from_to)
+    elsif curr_indent < indent_stack.last
+      #previous block ended, now in old block
+      indent_stack.pop
+      if skip_block_indent && curr_indent <= skip_block_indent
+        skip_block_indent = nil
+      end
+      process_line(skip_block_indent, ret, line, from_to)
+
+    else
+      #same block
+      process_line(skip_block_indent, ret, line, from_to)
     end
   }
-  template
+  ret.join("\n")
 end
 
 def produce_unmapped(unmapped_words)
@@ -267,7 +313,9 @@ ARGV[2, ARGV.length].each{|path_name|
     #puts from_to
     process_values(local_mappings, from_to.keys, unmapped_words)
 
-    replace_with_translations(template, from_to)
+    #replace_with_translations(template, from_to)
+    template = replace_with_translations2(template, from_to)
+    puts "new template=#{template}"
     #parse again to ensure no failure
     begin
       x = HTParser.new(template, Haml::Options.new)
