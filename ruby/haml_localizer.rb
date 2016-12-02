@@ -215,7 +215,6 @@ def process_line(skip_block_indent, ret, line, from_to)
         res = line.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
         res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
       }
-      puts "adding:#{line}"
       ret << line
     end
   end
@@ -233,7 +232,6 @@ def replace_with_translations2(template, from_to)
       ret << line
       next
     end
-    puts "curr_indent=#{curr_indent} stack=#{indent_stack}"
     if curr_indent > indent_stack.last
       #new block
       indent_stack << curr_indent
@@ -297,13 +295,12 @@ ARGV[2, ARGV.length].each{|path_name|
     template = File.read(path_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-    puts "root=#{root}"
     values = []
     accumulate_values(root, values, path_name)
-    puts "orig_values=#{values}"
+    #puts "orig_values=#{values}"
     values = reject_special_words(reject_paran(break_aound_code_values(values)))
 
-    puts "values=#{values}"
+    #puts "values=#{values}"
 
     #if local_name == 'zxx-XX'
       from_to = process_pseudo_values(values)
@@ -315,7 +312,6 @@ ARGV[2, ARGV.length].each{|path_name|
 
     #replace_with_translations(template, from_to)
     template = replace_with_translations2(template, from_to)
-    puts "new template=#{template}"
     #parse again to ensure no failure
     begin
       x = HTParser.new(template, Haml::Options.new)
