@@ -2706,5 +2706,64 @@ module.exports = {
     			'</div>    \n');
                 
         test.done();
-    }
+    },
+    
+    testHTMLTemplateFileParseWithHTMLInTheTemplateTag: function(test) {
+        test.expect(11);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<div class = "modal-title">\n' +
+        		'  Assumptions\n' +
+        		'</div>  \n' +
+        		'<div class="static_text clearfix">\n' +
+        		'	<p>\n' +
+        		'	  <%=\n' +
+        		'	    RB.getString(\'The following values were assumed when calculating the ROI. To receive an even more customized ROI analysis tailored to your organization, please {link_tag_start}schedule a call{link_tag_end} with us.\').format({\n' +
+        		'	      link_tag_start: \'<a href="\'+ calendly_link + \'" target="_blank" >\',\n' +
+        		'	      link_tag_end: \'</a>\'\n' +
+        		'	    })\n' +
+        		'	  %>\n' +
+        		'	\n' +
+        		'	</p>\n' +
+        		'	<br/>\n' +
+        		'	<ul class="fg-list" >\n' +
+        		'	  <li>30% specialist office referrals form virtual consult</li>\n' +
+        		'	  <li>20% doctor office visits diverted to Q&A</li>\n' +
+        		'	  <li>20% virtual consult utilization, post-Q&A</li>\n' +
+        		'	  <li>75% lab cost as percent of doctor office visit</li>\n' +
+        		'	  <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
+        		'	  <li>10% ER visits diverted to virtual consult only</li>\n' +
+        		'	  <li>30% ER visits diverted to urgent care</li> \n' +
+        		'	</ul>         \n' +
+        		'</div>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("Assumptions");
+        test.ok(r);
+        test.equal(r.getSource(), "Assumptions");
+        test.equal(r.getKey(), "Assumptions");
+        
+        r = set.getBySource('30% specialist office referrals form virtual consult');
+        test.ok(r);
+        test.equal(r.getSource(), '30% specialist office referrals form virtual consult');
+        test.equal(r.getKey(), '30% specialist office referrals form virtual consult');
+        
+        r = set.getBySource('30% ER visits diverted to urgent care');
+        test.ok(r);
+        test.equal(r.getSource(), '30% ER visits diverted to urgent care');
+        test.equal(r.getKey(), '30% ER visits diverted to urgent care');
+        
+        test.done();
+    },
+
+    
+
 };
