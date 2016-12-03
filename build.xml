@@ -160,6 +160,18 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testAndroidLayoutFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
 
+	<target name="debug.androidlayoutfile" description="Debug only the android layout file tests">
+		<debug script="${build.test}/testAndroidLayoutFile.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.androidresourcefile" description="Run only the Android resource file tests">
+		<run script="${build.test}/testAndroidResourceFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.androidresourcefile" description="Debug only the android resource file tests">
+		<debug script="${build.test}/testAndroidResourceFile.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.xliff" description="Run only the xliff tests">
 		<run script="${build.test}/testXliff.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>

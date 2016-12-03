@@ -1281,6 +1281,134 @@ module.exports = {
         test.done();
     },
 
+    testXliffDeserializeWithArraysAndTranslations: function(test) {
+        test.expect(25);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="res/values/arrays.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="array" extype="0">\n' +
+                '        <source>This is element 0</source>\n' +
+                '        <target>Este es 0</target>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="3" resname="huzzah" restype="array" extype="1">\n' +
+                '        <source>This is element 1</source>\n' +
+                '        <target>Este es 1</target>\n' + 
+                '      </trans-unit>\n' +
+                '      <trans-unit id="4" resname="huzzah" restype="array" extype="2">\n' +
+                '        <source>This is element 2</source>\n' +
+                '        <target>Este es 2</target>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="5" resname="huzzah" restype="array" extype="3">\n' +
+                '        <source>This is element 3</source>\n' +
+                '        <target>Este es 3</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "huzzah");
+        test.equal(reslist[0].getPath(), "res/values/arrays.xml");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "array");
+        test.equal(reslist[0].getOrigin(), "source");
+        
+        var items = reslist[0].getArray();
+        
+        test.equal(items.length, 4);
+        test.equal(items[0], "This is element 0");
+        test.equal(items[1], "This is element 1");
+        test.equal(items[2], "This is element 2");
+        test.equal(items[3], "This is element 3");
+
+        test.equal(reslist[1].getLocale(), "es-US");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "res/values/arrays.xml");
+        test.equal(reslist[1].getProject(), "ht-androidapp");
+        test.equal(reslist[1].resType, "array");
+        test.equal(reslist[1].getOrigin(), "target");
+
+        var items = reslist[1].getArray();
+        
+        test.equal(items.length, 4);
+        test.equal(items[0], "Este es 0");
+        test.equal(items[1], "Este es 1");
+        test.equal(items[2], "Este es 2");
+        test.equal(items[3], "Este es 3");
+
+        test.done();
+    },
+
+    testXliffDeserializeWithArraysAndTranslationsPartial: function(test) {
+        test.expect(25);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="res/values/arrays.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="5" resname="huzzah" restype="array" extype="3">\n' +
+                '        <source>This is element 3</source>\n' +
+                '        <target>Este es 3</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "huzzah");
+        test.equal(reslist[0].getPath(), "res/values/arrays.xml");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "array");
+        test.equal(reslist[0].getOrigin(), "source");
+        
+        var items = reslist[0].getArray();
+        
+        test.equal(items.length, 4);
+        test.equal(items[0], null);
+        test.equal(items[1], null);
+        test.equal(items[2], null);
+        test.equal(items[3], "This is element 3");
+
+        test.equal(reslist[1].getLocale(), "es-US");
+        test.equal(reslist[1].getKey(), "huzzah");
+        test.equal(reslist[1].getPath(), "res/values/arrays.xml");
+        test.equal(reslist[1].getProject(), "ht-androidapp");
+        test.equal(reslist[1].resType, "array");
+        test.equal(reslist[1].getOrigin(), "target");
+
+        var items = reslist[1].getArray();
+        
+        test.equal(items.length, 4);
+        test.equal(items[0], null);
+        test.equal(items[1], null);
+        test.equal(items[2], null);
+        test.equal(items[3], "Este es 3");
+
+        test.done();
+    },
+
     testXliffDeserializeWithComments: function(test) {
         test.expect(18);
 
@@ -2284,5 +2412,4 @@ module.exports = {
        
         test.done();
     }
-
 };
