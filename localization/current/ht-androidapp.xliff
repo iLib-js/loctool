@@ -21390,7 +21390,7 @@
       </trans-unit>
       <trans-unit id="2389" resname="age" restype="plural" extype="other">
         <source>%d years old</source>
-        <target>%岁</target>
+        <target>%d岁</target>
       </trans-unit>
     </body>
   </file>
