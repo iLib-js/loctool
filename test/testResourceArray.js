@@ -738,5 +738,41 @@ module.exports = {
         test.ok(!ra1.equals(ra2));
 
         test.done();
+    },
+
+    testResourceArrayStaticHashKey: function(test) {
+        test.expect(1);
+
+        test.equal(ResourceArray.hashKey("ht-androidapp", "foo", "de-DE", "This is a test"), "ra_ht-androidapp_foo_de-DE_This is a test");
+        
+        test.done();
+    },
+
+    testResourceArrayStaticHashKeyMissingParts: function(test) {
+        test.expect(1);
+
+        test.equal(ResourceArray.hashKey(undefined, undefined, "de-DE", undefined), "ra___de-DE_");
+        
+        test.done();
+    },
+
+    testResourceArrayHashKey: function(test) {
+        test.expect(2);
+
+        var ra = new ResourceArray({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            array: ["a", "b", "c"],
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(ra);
+        
+        test.equal(ra.hashKey(), "ra_foo_blah_de-DE_asdf");
+        
+        test.done();
     }
 };

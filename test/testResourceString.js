@@ -6,6 +6,8 @@
 
 if (!ResourceString) {
     var ResourceString = require("../lib/ResourceString.js");
+    var AndroidResourceString = require("../lib/AndroidResourceString.js");
+    var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
     var ilib = require("ilib");
     var ResBundle = require("ilib/lib/ResBundle");
 }
@@ -605,6 +607,107 @@ module.exports = {
         
         test.ok(rs);
         test.equal(rs.getOrigin(), "source");
+        
+        test.done();
+    },
+
+    testResourceStringStaticHashKey: function(test) {
+        test.expect(1);
+
+        test.equal(ResourceString.hashKey("ht-iosapp", "de-DE", "This is a test"), "rs_ht-iosapp_de-DE_This is a test");
+        
+        test.done();
+    },
+
+    testResourceStringStaticHashKeyMissingParts: function(test) {
+        test.expect(1);
+
+        test.equal(ResourceString.hashKey(undefined, "de-DE", undefined), "rs__de-DE_");
+        
+        test.done();
+    },
+
+    testResourceStringHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new ResourceString({
+        	project: "ht-iosapp",
+        	key: "This is a test",
+        	source: "This is a test",
+        	locale: "de-DE",
+        	pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.hashKey(), "rs_ht-iosapp_de-DE_This is a test");
+        
+        test.done();
+    },
+    
+    testAndroidResourceStringStaticHashKey: function(test) {
+        test.expect(1);
+
+        test.equal(AndroidResourceString.hashKey("ht-iosapp", "foobar", "de-DE", "This is a test"), "ars_ht-iosapp_foobar_de-DE_This is a test");
+        
+        test.done();
+    },
+
+    testAndroidResourceStringStaticHashKeyMissingParts: function(test) {
+        test.expect(1);
+
+        test.equal(AndroidResourceString.hashKey(undefined, undefined, "de-DE", undefined), "ars___de-DE_");
+        
+        test.done();
+    },
+
+    testAndroidResourceStringHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new AndroidResourceString({
+        	project: "ht-iosapp",
+        	context: "foobar",
+        	key: "This is a test",
+        	source: "This is a test",
+        	locale: "de-DE",
+        	pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.hashKey(), "ars_ht-iosapp_foobar_de-DE_This is a test");
+        
+        test.done();
+    },
+
+    testIosLayoutResourceStringStaticHashKey: function(test) {
+        test.expect(1);
+
+        test.equal(IosLayoutResourceString.hashKey("ht-iosapp", "de-DE", "a/b/es.lproj/foo.xib", "This is a test"), "irs_ht-iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test");
+        
+        test.done();
+    },
+
+    testIosLayoutResourceStringStaticHashKeyMissingParts: function(test) {
+        test.expect(1);
+
+        test.equal(IosLayoutResourceString.hashKey(undefined, undefined, "de-DE", undefined), "irs___de-DE_");
+        
+        test.done();
+    },
+
+    testIosLayoutResourceStringHashKey: function(test) {
+        test.expect(2);
+
+        var rs = new IosLayoutResourceString({
+        	project: "ht-iosapp",
+        	context: "foobar",
+        	key: "This is a test",
+        	source: "This is a test",
+        	locale: "de-DE",
+        	pathName: "a/b/es.lproj/foo.xib"
+        });
+        test.ok(rs);
+        
+        test.equal(rs.hashKey(), "irs_ht-iosapp_de-DE_a/b/es.lproj/foo.xib_This is a test");
         
         test.done();
     }

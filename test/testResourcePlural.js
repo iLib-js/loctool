@@ -831,5 +831,45 @@ module.exports = {
         test.ok(!ra1.equals(ra2));
 
         test.done();
+    },
+
+    testResourcePluralStaticHashKey: function(test) {
+        test.expect(1);
+
+        test.equal(ResourcePlural.hashKey("ht-androidapp", "foo", "de-DE", "This is a test"), "rp_ht-androidapp_foo_de-DE_This is a test");
+        
+        test.done();
+    },
+
+    testResourcePluralStaticHashKeyMissingParts: function(test) {
+        test.expect(1);
+
+        test.equal(ResourcePlural.hashKey(undefined, undefined, "de-DE", undefined), "rp___de-DE_");
+        
+        test.done();
+    },
+
+    testResourcePluralHashKey: function(test) {
+        test.expect(2);
+
+        var rp = new ResourcePlural({
+        	project: "foo",
+        	context: "blah",
+        	locale: "de-DE",
+            key: "asdf",
+            strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is a different case"
+        	},
+            pathName: "a/b/c.java",
+            comment: "foobar foo",
+            state: "accepted"
+        });
+        test.ok(rp);
+        
+        test.equal(rp.hashKey(), "rp_foo_blah_de-DE_asdf");
+        
+        test.done();
     }
 };
