@@ -7,6 +7,7 @@
 if (!RubyFile) {
     var RubyFile = require("../lib/RubyFile.js");
     var AndroidProject =  require("../lib/AndroidProject.js");
+    var ResourceString =  require("../lib/ResourceString.js");
 }
 
 module.exports = {
@@ -122,7 +123,7 @@ module.exports = {
         var set = rf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("This_is_a_test", "string", undefined, undefined, "ht-androidapp");
+        var r = set.get(ResourceString.hashKey("ht-androidapp", undefined, "This_is_a_test"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
