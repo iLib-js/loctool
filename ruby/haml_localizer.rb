@@ -262,7 +262,7 @@ def produce_unmapped(file_to_words)
     h[filename] = child_hash
   end
   File.open('./unmapped.yml', 'w') {|f|
-    f.write(h.to_yaml)
+    f.write(h.to_yaml(line_width: -1))
   }
   begin
     YAML::load_file('./unmapped.yml')
