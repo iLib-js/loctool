@@ -8,6 +8,7 @@ if (!Xliff) {
 	var Xliff = require("../lib/Xliff.js");
 	var TranslationUnit = Xliff.TranslationUnit;
     var ResourceString = require("../lib/ResourceString.js");
+    var AndroidResourceString = require("../lib/AndroidResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
 }
@@ -527,7 +528,7 @@ module.exports = {
         var x = new Xliff();
         test.ok(x);
         
-        var res = new ResourceString({
+        var res = new AndroidResourceString({
             source: "Asdf asdf",
             locale: "en-US",
             key: "foobar",
@@ -538,7 +539,7 @@ module.exports = {
         
         x.addResource(res);
 
-        var res = new ResourceString({
+        var res = new AndroidResourceString({
             source: "Asdf asdf",
             locale: "en-US",
             key: "foobar",
@@ -2122,6 +2123,89 @@ module.exports = {
         test.equal(units[0].origin, "source");
         test.equal(units[0].context, "asdfasdf");
         test.equal(units[0].comment, "this is a new comment");
+
+        test.done();
+    },
+
+    testXliffAddTranslationUnitRightResourceTypesRegularString: function(test) {
+        test.expect(5);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"target": "b",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.js",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"type": "string",
+    		"origin": "source",
+    		"context": "asdfasdf",
+    		"comment": "this is a comment",
+    		"datatype": "javascript"
+        }));
+                
+        var resources = x.getResoruces();
+        
+        test.ok(resources);
+        
+        test.equal(resources.length, 2);
+
+        test.ok(resources[0] instanceof ResourceString);
+        test.ok(resources[1] instanceof ResourceString);
+
+        test.done();
+    },
+
+    testXliffAddTranslationUnitRightResourceTypesContextString: function(test) {
+        test.expect(5);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"target": "ba",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b/asdf.xml",
+    		"project": "androidapp",
+    		"id": 2334,
+    		"type": "string",
+    		"comment": "this is a comment",
+    		"datatype": "x-android-layout"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"target": "baa",
+    		"targetLocale": "fr-FR",
+    		"key": "foobar", 
+    		"file": "/a/b-x/asdf.xml",
+    		"project": "androidapp",
+    		"id": 2334,
+    		"type": "string",
+    		"context": "x",
+    		"comment": "this is a new comment",
+    		"datatype": "x-android-layout"
+        }));
+        
+        var resources = x.getResources();
+        
+        test.ok(resources);
+        
+        test.equal(resources.length, 4);
+
+        test.ok(resources[0] instanceof AndroidResourceString);
+        test.ok(resources[1] instanceof AndroidResourceString);
+        test.ok(resources[2] instanceof AndroidResourceString);
+        test.ok(resources[3] instanceof AndroidResourceString);
 
         test.done();
     },
