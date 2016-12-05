@@ -77,6 +77,33 @@ module.exports = {
         test.done();
     },
     
+    testResourcePluralConstructorDefaults: function(test) {
+        test.expect(6);
+
+        var rp = new ResourcePlural({
+        	key: "asdf",
+        	pathName: "a/b/c.java",
+        	strings: {
+        		"one": "This is singular",
+        		"two": "This is double",
+        		"few": "This is the few case",
+        		"many": "This is the many case"
+        	}
+        });
+        test.ok(rp);
+    
+        // got the right one?
+        test.equal(rp.getKey(), "asdf");
+        
+        // now the defaults
+        test.equal(rp.locale, "en-US");
+        test.equal(rp.origin, "source");
+        test.equal(rp.datatype, "x-android-resource");
+        test.equal(rp.resType, "plural");
+        
+        test.done();
+    },
+    
     testResourcePluralGetKey: function(test) {
         test.expect(2);
 

@@ -9,8 +9,10 @@ if (!Xliff) {
 	var TranslationUnit = Xliff.TranslationUnit;
     var ResourceString = require("../lib/ResourceString.js");
     var AndroidResourceString = require("../lib/AndroidResourceString.js");
+    var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
+    var ResourceFactory = require("../lib/ResourceFactory.js");
 }
 
 function diff(a, b) {
@@ -505,14 +507,14 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
                 '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -555,10 +557,10 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string" x-context="foobar">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext" x-context="foobar">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="string" x-context="asdf">\n' +
+                '      <trans-unit id="2" resname="foobar" restype="string" datatype="plaintext" x-context="asdf">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -595,19 +597,38 @@ module.exports = {
         
         x.addResource(res);
 
-        test.equal(x.serialize(), 
+        diff(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="4444444" resname="foobar" restype="string">\n' +
+                '      <trans-unit id="4444444" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
                 '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="4444445" resname="huzzah" restype="string">\n' +
+                '      <trans-unit id="4444445" resname="huzzah" restype="string" datatype="plaintext">\n' +
+                '        <source>baby baby</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        test.equal(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="4444444" resname="foobar" restype="string" datatype="plaintext">\n' +
+                '        <source>Asdf asdf</source>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="4444445" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -672,7 +693,7 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '        <target>foobarfoo</target>\n' +
                 '      </trans-unit>\n' +
@@ -680,7 +701,7 @@ module.exports = {
                 '  </file>\n' + 
                 '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
                 '        <target>bebe bebe</target>\n' +
                 '      </trans-unit>\n' +
@@ -693,7 +714,7 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '        <target>foobarfoo</target>\n' +
                 '      </trans-unit>\n' +
@@ -701,7 +722,7 @@ module.exports = {
                 '  </file>\n' + 
                 '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
                 '        <target>bebe bebe</target>\n' +
                 '      </trans-unit>\n' +
@@ -769,7 +790,7 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '        <target>foobarfoo</target>\n' +
                 '        <note annotates="source">foobar is where it&apos;s at!</note>\n' +
@@ -778,7 +799,7 @@ module.exports = {
                 '  </file>\n' + 
                 '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
                 '        <target>bebe bebe</target>\n' +
                 '        <note annotates="source">come &amp; enjoy it with us</note>\n' +
@@ -831,7 +852,7 @@ module.exports = {
             	'      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
                 '    </header>\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -841,7 +862,7 @@ module.exports = {
                 '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
                 '    </header>\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -877,10 +898,10 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="plural" extype="one">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
                 '        <source>There is 1 object.</source>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="plural" extype="other">\n' +
+                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
                 '        <source>There are {n} objects.</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -911,13 +932,13 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="array" extype="0">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="array" datatype="x-android-resource" extype="0">\n' +
                 '        <source>Zero</source>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="array" extype="1">\n' +
+                '      <trans-unit id="2" resname="foobar" restype="array" datatype="x-android-resource" extype="1">\n' +
                 '        <source>One</source>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="3" resname="foobar" restype="array" extype="2">\n' +
+                '      <trans-unit id="3" resname="foobar" restype="array" datatype="x-android-resource" extype="2">\n' +
                 '        <source>Two</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -958,14 +979,14 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
                 '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -1008,7 +1029,7 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '        <note annotates="source">A very nice string</note>\n' +
                 '      </trans-unit>\n' +
@@ -1016,7 +1037,7 @@ module.exports = {
                 '  </file>\n' + 
                 '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
                 '        <note annotates="source">Totally awesome.</note>\n' +
                 '      </trans-unit>\n' +
@@ -1038,14 +1059,14 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
                 '  <file original="foo/bar/j.java" source-language="en-US" target-language="fr-FR" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string">\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
                 '        <source>baby baby</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -1208,10 +1229,10 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="plural" extype="one">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
                 '        <source>There is 1 object.</source>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="plural" extype="other">\n' +
+                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
                 '        <source>There are {n} objects.</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -1253,13 +1274,13 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="array" extype="0">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="array" datatype="x-android-resource" extype="0">\n' +
                 '        <source>Zero</source>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="array" extype="1">\n' +
+                '      <trans-unit id="2" resname="foobar" restype="array" datatype="x-android-resource" extype="1">\n' +
                 '        <source>One</source>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="3" resname="foobar" restype="array" extype="2">\n' +
+                '      <trans-unit id="3" resname="foobar" restype="array" datatype="x-android-resource" extype="2">\n' +
                 '        <source>Two</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
@@ -1293,19 +1314,19 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="res/values/arrays.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="array" extype="0">\n' +
+                '      <trans-unit id="2" resname="huzzah" restype="array" datatype="x-android-resource" extype="0">\n' +
                 '        <source>This is element 0</source>\n' +
                 '        <target>Este es 0</target>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="3" resname="huzzah" restype="array" extype="1">\n' +
+                '      <trans-unit id="3" resname="huzzah" restype="array" datatype="x-android-resource" extype="1">\n' +
                 '        <source>This is element 1</source>\n' +
                 '        <target>Este es 1</target>\n' + 
                 '      </trans-unit>\n' +
-                '      <trans-unit id="4" resname="huzzah" restype="array" extype="2">\n' +
+                '      <trans-unit id="4" resname="huzzah" restype="array" datatype="x-android-resource" extype="2">\n' +
                 '        <source>This is element 2</source>\n' +
                 '        <target>Este es 2</target>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="5" resname="huzzah" restype="array" extype="3">\n' +
+                '      <trans-unit id="5" resname="huzzah" restype="array" datatype="x-android-resource" extype="3">\n' +
                 '        <source>This is element 3</source>\n' +
                 '        <target>Este es 3</target>\n' +
                 '      </trans-unit>\n' +
@@ -1363,7 +1384,7 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="res/values/arrays.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="5" resname="huzzah" restype="array" extype="3">\n' +
+                '      <trans-unit id="5" resname="huzzah" restype="array" datatype="x-android-resource" extype="3">\n' +
                 '        <source>This is element 3</source>\n' +
                 '        <target>Este es 3</target>\n' +
                 '      </trans-unit>\n' +
@@ -1893,7 +1914,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -1930,7 +1951,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -1945,7 +1966,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -1993,7 +2014,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2333,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -2008,7 +2029,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -2038,7 +2059,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -2053,7 +2074,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a new comment"
@@ -2084,7 +2105,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -2099,7 +2120,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a new comment"
@@ -2119,7 +2140,7 @@ module.exports = {
         test.equal(units[0].file, "/a/b/asdf.js");
         test.equal(units[0].project, "ht-iosapp");
         test.equal(units[0].id, 2334);
-        test.equal(units[0].type, "string");
+        test.equal(units[0].resType, "string");
         test.equal(units[0].origin, "source");
         test.equal(units[0].context, "asdfasdf");
         test.equal(units[0].comment, "this is a new comment");
@@ -2142,14 +2163,14 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType": "string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment",
     		"datatype": "javascript"
         }));
                 
-        var resources = x.getResoruces();
+        var resources = x.getResources();
         
         test.ok(resources);
         
@@ -2162,8 +2183,10 @@ module.exports = {
     },
 
     testXliffAddTranslationUnitRightResourceTypesContextString: function(test) {
-        test.expect(5);
+        test.expect(7);
 
+        ResourceFactory.registerDataType("x-android-resource", "string", AndroidResourceString);
+        
         var x = new Xliff();
         test.ok(x);
 
@@ -2176,9 +2199,9 @@ module.exports = {
     		"file": "/a/b/asdf.xml",
     		"project": "androidapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"comment": "this is a comment",
-    		"datatype": "x-android-layout"
+    		"datatype": "x-android-resource"
         }));
         
         x.addTranslationUnit(new TranslationUnit({
@@ -2190,10 +2213,10 @@ module.exports = {
     		"file": "/a/b-x/asdf.xml",
     		"project": "androidapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType": "string",
     		"context": "x",
     		"comment": "this is a new comment",
-    		"datatype": "x-android-layout"
+    		"datatype": "x-android-resource"
         }));
         
         var resources = x.getResources();
@@ -2223,7 +2246,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType": "string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -2238,7 +2261,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -2254,12 +2277,14 @@ module.exports = {
         test.done();
     },
     
-    testXliffAddTranslationUnitDifferentPaths: function(test) {
-        test.expect(35);
+    testXliffAddTranslationUnitDifferentPathsRightTypes: function(test) {
+        test.expect(7);
 
         var x = new Xliff();
         test.ok(x);
 
+        ResourceFactory.registerDataType("x-xib", "string", IosLayoutResourceString);
+        
         x.addTranslationUnit(new TranslationUnit({
     		"source": "a", 
     		"sourceLocale": "en-US",
@@ -2269,10 +2294,10 @@ module.exports = {
     		"file": "a/b/asdf.xib",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "target",
-    		"context": "asdfasdf",
-    		"comment": "this is a comment"
+    		"comment": "this is a comment",
+    		"datatype": "x-xib"
         }));
         
         x.addTranslationUnit(new TranslationUnit({
@@ -2284,10 +2309,62 @@ module.exports = {
     		"file": "a/b/asdf~ipad.xib",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "target",
-    		"context": "asdfasdf",
-    		"comment": "this is a comment"
+    		"comment": "this is a comment",
+    		"datatype": "x-xib"
+        }));
+        
+        var resources = x.getResources();
+        
+        test.ok(resources);
+        
+        test.equal(resources.length, 4);
+        
+        test.ok(resources[0] instanceof IosLayoutResourceString);
+        test.ok(resources[1] instanceof IosLayoutResourceString);
+        test.ok(resources[2] instanceof IosLayoutResourceString);
+        test.ok(resources[3] instanceof IosLayoutResourceString);
+        
+        test.done();
+    },
+    
+    testXliffAddTranslationUnitDifferentPaths: function(test) {
+        test.expect(35);
+
+        var x = new Xliff();
+        test.ok(x);
+
+        ResourceFactory.registerDataType("x-xib", "string", IosLayoutResourceString);
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US",
+    		"target": "foo",
+    		"targetLocale": "de-DE",
+    		"key": "foobar", 
+    		"file": "a/b/asdf.xib",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"resType":"string",
+    		"origin": "target",
+    		"comment": "this is a comment",
+    		"datatype": "x-xib"
+        }));
+        
+        x.addTranslationUnit(new TranslationUnit({
+    		"source": "a", 
+    		"sourceLocale": "en-US", 
+    		"target": "foo",
+    		"targetLocale": "de-DE",
+    		"key": "foobar", 
+    		"file": "a/b/asdf~ipad.xib",
+    		"project": "ht-iosapp",
+    		"id": 2334,
+    		"resType":"string",
+    		"origin": "target",
+    		"comment": "this is a comment",
+    		"datatype": "x-xib"
         }));
         
         var reslist = x.getResources();
@@ -2350,7 +2427,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2333,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -2365,7 +2442,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -2427,7 +2504,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2333,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"
@@ -2442,7 +2519,7 @@ module.exports = {
     		"file": "/a/b/asdf.js",
     		"project": "ht-iosapp",
     		"id": 2334,
-    		"type": "string",
+    		"resType":"string",
     		"origin": "source",
     		"context": "asdfasdf",
     		"comment": "this is a comment"

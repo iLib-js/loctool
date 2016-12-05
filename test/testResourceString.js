@@ -79,6 +79,28 @@ module.exports = {
         test.done();
     },
     
+    testResourceStringConstructorDefaults: function(test) {
+        test.expect(6);
+
+        var rs = new ResourceString({
+        	key: "asdf",
+        	source: "This is a test",
+        	pathName: "a/b/c.java"
+        });
+        test.ok(rs);
+    
+        // got the right one?
+        test.equal(rs.getKey(), "asdf");
+        
+        // now the defaults
+        test.equal(rs.locale, "en-US");
+        test.equal(rs.origin, "source");
+        test.equal(rs.datatype, "plaintext");
+        test.equal(rs.resType, "string");
+        
+        test.done();
+    },
+    
     testResourceStringGetKey: function(test) {
         test.expect(2);
 

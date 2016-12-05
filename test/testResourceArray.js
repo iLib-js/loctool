@@ -72,6 +72,28 @@ module.exports = {
         test.done();
     },
 
+    testResourceArrayConstructorDefaults: function(test) {
+        test.expect(6);
+
+        var ra = new ResourceArray({
+        	key: "asdf",
+        	array: ["This is a test", "This is also a test", "This is not"],
+        	pathName: "a/b/c.java"
+        });
+        test.ok(ra);
+    
+        // got the right one?
+        test.equal(ra.getKey(), "asdf");
+        
+        // now the defaults
+        test.equal(ra.locale, "en-US");
+        test.equal(ra.origin, "source");
+        test.equal(ra.datatype, "x-android-resource");
+        test.equal(ra.resType, "array");
+        
+        test.done();
+    },
+    
     testResourceArrayConstructorRightSize: function(test) {
         test.expect(2);
 
