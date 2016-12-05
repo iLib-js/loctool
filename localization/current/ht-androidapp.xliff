@@ -6863,8 +6863,8 @@
         <target>Confirmar la cancelación</target>
       </trans-unit>
       <trans-unit id="1411" resname="cancel_appointment_content" restype="string">
-        <source>Are you sure you want to cancel this appointment with {doctor_name} on {slot_date} at {slot_time} {time_zone}?</source>
-        <target>¿Estás seguro que deseas cancelar esta cita con {doctor_name} el día {slot_date} a las {slot_time} {time_zone}?</target>
+        <source>Are you sure you want to cancel this appointment with {doctor_name} on {slot_date} at {slot_time}?</source>
+        <target>¿Estás seguro que deseas cancelar esta cita con {doctor_name} el día {slot_date} a las {slot_time}?</target>
       </trans-unit>
       <trans-unit id="1412" resname="edit_appointment_title" restype="string">
         <source>Edit consult details</source>
@@ -12522,7 +12522,7 @@
       </trans-unit>
       <trans-unit id="325" resname="r1022238927" restype="string">
         <source>By continuing, you understand the {start1}Guidelines{end1} for Virtual Consults and agree to the {start2}Terms{end2}.</source>
-        <target>继续，您理解了{start1}实际咨询的指南end1} 和同意的条款{start2}{end2}.</target>
+        <target>继续，您理解了{start1}实际咨询的指南{end1} 和同意的{start2}条款{end2}.</target>
         <note annotates="source">make sure &quot;{start1}&quot;, &quot;{end1}&quot; and &quot;{start2}&quot;, &quot;{end2}&quot; are surrounding the translated words &quot;Guidelines&quot; and &quot;Terms&quot; respectively.</note>
       </trans-unit>
       <trans-unit id="326" resname="r996432451" restype="string">
@@ -12823,7 +12823,7 @@
       </trans-unit>
       <trans-unit id="381" resname="r758898992" restype="string">
         <source>Here&apos;s a referral to a {expert_specialty} &amp;lt;b&amp;gt;{expert_name}&amp;lt;/b&amp;gt;, you can consult for advice and treatment:</source>
-        <target>以下是对{expert_specialty}＆它; b＆gt; {expert_name}＆lt; /b＆gt;的推荐，您可以咨询建议和治疗：</target>
+        <target>以下是对{expert_specialty}&amp;lt;b&amp;gt;{expert_name}&amp;lt;/b&amp;gt;的推荐，您可以咨询建议和治疗：</target>
       </trans-unit>
       <trans-unit id="382" resname="r964861592" restype="string">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
@@ -16583,7 +16583,7 @@
       </trans-unit>
       <trans-unit id="1180" resname="read_more" restype="string">
         <source>…Read more ›</source>
-        <target>...阅读更多 &gt;</target>
+        <target>...阅读更多 ›</target>
       </trans-unit>
       <trans-unit id="1181" resname="compose_consult_back_press_dialog_title" restype="string">
         <source>Are you sure?</source>
@@ -17641,8 +17641,8 @@
         <target>确认取消</target>
       </trans-unit>
       <trans-unit id="1411" resname="cancel_appointment_content" restype="string">
-        <source>Are you sure you want to cancel this appointment with {doctor_name} on {slot_date} at {slot_time} {time_zone}?</source>
-        <target>您确定取消与 {doctor_name} 在{slot_date} {slot_time} {time_zone}的这次预约吗？</target>
+        <source>Are you sure you want to cancel this appointment with {doctor_name} on {slot_date} at {slot_time}?</source>
+        <target>您确定取消与 {doctor_name} 在{slot_date} {slot_time}的这次预约吗？</target>
       </trans-unit>
       <trans-unit id="1412" resname="edit_appointment_title" restype="string">
         <source>Edit consult details</source>
@@ -18562,7 +18562,7 @@
       </trans-unit>
       <trans-unit id="1641" resname="nux_payment_how_proceed" restype="string">
         <source>How would you like to proceed? {start}Why?{end}</source>
-        <target>您想如何支付？{start为什么？{end}</target>
+        <target>您想如何支付？{start}为什么？{end}</target>
       </trans-unit>
       <trans-unit id="1642" resname="start_membership" restype="string">
         <source>Start Membership</source>
