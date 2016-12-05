@@ -250,13 +250,17 @@ def replace_with_translations2(template, from_to)
   ret.join("\n")
 end
 
-def produce_unmapped(unmapped_words)
+def produce_unmapped(file_to_words)
   # File.open('/tmp/test.yml', 'w') {|f| f.write h.to_yaml}
   h = {}
-  unmapped_words.each{|w|
-    clean_w = w.gsub("\n", "");
-    h[ clean_w.gsub(' ', '_') ] = clean_w
-  }
+  file_to_words.each do |filename,words|
+    child_hash = {}
+    words.each{|w|
+      clean_w = w.gsub("\n", "");
+      child_hash[ clean_w.gsub(' ', '_') ] = clean_w
+    }
+    h[filename] = child_hash
+  end
   File.open('./unmapped.yml', 'w') {|f|
     f.write(h.to_yaml)
   }
@@ -277,7 +281,7 @@ local_mappings ||= {}
 #  local_mappings = YAML.load(File.read(local_mapping_file_name))
 #end
 
-unmapped_words = []
+unmapped_words = {}
 
 ARGV[2, ARGV.length].each{|path_name|
   puts "file_name=#{path_name} locale_name=#{locale_name}"
@@ -285,6 +289,7 @@ ARGV[2, ARGV.length].each{|path_name|
     dirname = File.dirname(path_name)
     file_name = File.basename(path_name)
     file_name_components = file_name.split('.')
+    unmapped_for_file = []
     raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
 
     template = File.read(path_name)
@@ -303,7 +308,7 @@ ARGV[2, ARGV.length].each{|path_name|
     #  from_to = process_values(local_mappings, values, unmapped_words)
     #end
     #puts from_to
-    process_values(local_mappings, from_to.keys, unmapped_words)
+    process_values(local_mappings, from_to.keys, unmapped_for_file)
 
     #replace_with_translations(template, from_to)
     template = replace_with_translations2(template, from_to)
@@ -325,6 +330,7 @@ ARGV[2, ARGV.length].each{|path_name|
     
     #puts new_file_name
     File.open(new_file_name, 'w') { |file| file.write(template) }
+    unmapped_words[file_name] = unmapped_for_file
   rescue => ex
     puts path_name
     puts "#{ex}"
@@ -333,4 +339,4 @@ ARGV[2, ARGV.length].each{|path_name|
   end
 }
 
-produce_unmapped(unmapped_words.uniq)
+produce_unmapped(unmapped_words)
