@@ -2811,64 +2811,56 @@ module.exports = {
         }));
                 
         diff(htf.localizeText(translations, "fr-FR"),
-    			'<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
-    			'<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
-    			'<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
-    			'<% var fileSize = (measurement == \'MB\') ? upload_file_size / 1000000.0 : upload_file_size / 1000.0; %>\n' +
-    			'<% fileSize = fileSize.toString(); %>\n' +
-    			'<% fileSize = fileSize.substring(0, fileSize.indexOf(\'.\') + 3) %>\n' +
-    			'<div class="chat-attachment">\n' +
-    			'  <a href="<%= url %>" target="_blank">\n' +
-    			'    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
-    			'      <img class="uploaded-image" src="<%= url %>">\n' +
-    			'    <% } else { %>\n' +
-    			'      <div class="attachment-placeholder">\n' +
-    			'        <div class="attachment-icon"></div>\n' +
-    			'      </div>\n' +
-    			'    <% } %>\n' +
-    			'  </a>\n' +
-    			'  <% if (caption) { %>\n' +
-    			'    <div class="attachment-caption">\n' +
-    			'      <%= caption %>\n' +
-    			'    </div>\n' +
-    			'  <% } %>\n' +
-    			'  <div class="attachment-timestamp">\n' +
-    			'    Téléchargé sur <%= dateString %>\n' +
-    			'  </div>\n' +
-    			'  <div class="attachment-size">\n' +
-    			'    <%= fileSize + \' \' + measurement %> \n' +
-    			'  </div>\n' +
-    			'</div>    \n');
+        		'<div class="modal-title">\n' +
+        		'  Téléchargé sur <%= dateString %>\n' +
+        		'</div>  \n' +
+        		'<div class="static_text clearfix">\n' +
+        		'	<p>\n' +
+        		'	  <%=\n' +
+        		'	    RB.getString(\'The following values were assumed when calculating the ROI. To receive an even more customized ROI analysis tailored to your organization, please {link_tag_start}schedule a call{link_tag_end} with us.\').format({\n' +
+        		'	      link_tag_start: \'<a href="\'+ calendly_link + \'" target="_blank" >\',\n' +
+        		'	      link_tag_end: \'</a>\'\n' +
+        		'	    })\n' +
+        		'	  %>\n' +
+        		'	\n' +
+        		'	</p>\n' +
+        		'	<br>\n' +
+        		'	<ul class="fg-list">\n' +
+        		'	  <li>30% specialist office referrals form virtual consult</li>\n' +
+        		'	  <li>20% doctor office visits diverted to Q&A</li>\n' +
+        		'	  <li>20% virtual consult utilization, post-Q&A</li>\n' +
+        		'	  <li>75% lab cost as percent of doctor office visit</li>\n' +
+        		'	  <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
+        		'	  <li>10% ER visits diverted to virtual consult only</li>\n' +
+        		'	  <li>30% ER visits diverted to urgent care</li> \n' +
+        		'	</ul>         \n' +
+        		'</div>\n');
         
         test.equal(htf.localizeText(translations, "fr-FR"),
-    			'<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
-    			'<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
-    			'<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
-    			'<% var fileSize = (measurement == \'MB\') ? upload_file_size / 1000000.0 : upload_file_size / 1000.0; %>\n' +
-    			'<% fileSize = fileSize.toString(); %>\n' +
-    			'<% fileSize = fileSize.substring(0, fileSize.indexOf(\'.\') + 3) %>\n' +
-    			'<div class="chat-attachment">\n' +
-    			'  <a href="<%= url %>" target="_blank">\n' +
-    			'    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
-    			'      <img class="uploaded-image" src="<%= url %>">\n' +
-    			'    <% } else { %>\n' +
-    			'      <div class="attachment-placeholder">\n' +
-    			'        <div class="attachment-icon"></div>\n' +
-    			'      </div>\n' +
-    			'    <% } %>\n' +
-    			'  </a>\n' +
-    			'  <% if (caption) { %>\n' +
-    			'    <div class="attachment-caption">\n' +
-    			'      <%= caption %>\n' +
-    			'    </div>\n' +
-    			'  <% } %>\n' +
-    			'  <div class="attachment-timestamp">\n' +
-    			'    Téléchargé sur <%= dateString %>\n' +
-    			'  </div>\n' +
-    			'  <div class="attachment-size">\n' +
-    			'    <%= fileSize + \' \' + measurement %> \n' +
-    			'  </div>\n' +
-    			'</div>    \n');
+        		'<div class="modal-title">\n' +
+        		'  Téléchargé sur <%= dateString %>\n' +
+        		'</div>  \n' +
+        		'<div class="static_text clearfix">\n' +
+        		'	<p>\n' +
+        		'	  <%=\n' +
+        		'	    RB.getString(\'The following values were assumed when calculating the ROI. To receive an even more customized ROI analysis tailored to your organization, please {link_tag_start}schedule a call{link_tag_end} with us.\').format({\n' +
+        		'	      link_tag_start: \'<a href="\'+ calendly_link + \'" target="_blank" >\',\n' +
+        		'	      link_tag_end: \'</a>\'\n' +
+        		'	    })\n' +
+        		'	  %>\n' +
+        		'	\n' +
+        		'	</p>\n' +
+        		'	<br>\n' +
+        		'	<ul class="fg-list">\n' +
+        		'	  <li>30% specialist office referrals form virtual consult</li>\n' +
+        		'	  <li>20% doctor office visits diverted to Q&A</li>\n' +
+        		'	  <li>20% virtual consult utilization, post-Q&A</li>\n' +
+        		'	  <li>75% lab cost as percent of doctor office visit</li>\n' +
+        		'	  <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
+        		'	  <li>10% ER visits diverted to virtual consult only</li>\n' +
+        		'	  <li>30% ER visits diverted to urgent care</li> \n' +
+        		'	</ul>         \n' +
+        		'</div>\n');
                 
         test.done();
     },
