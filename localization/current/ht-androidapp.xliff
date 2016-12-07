@@ -907,9 +907,9 @@
         <source>Pay &amp; Send</source>
         <target>Pagar y enviar</target>
       </trans-unit>
-      <trans-unit id="174" resname="r968282568" restype="string">
-        <source>&amp;lt;b&amp;gt;Your total&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;For additional options</source>
-        <target>&amp;lt;b&amp;gt;Tu total&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;Para opciones adicionales</target>
+      <trans-unit id="174" resname="r626068628" restype="string">
+        <source>{start}Your total{end}\nFor additional options</source>
+        <target>{start}Tu total{end}\nPara opciones adicionales</target>
       </trans-unit>
       <trans-unit id="175" resname="r4430339" restype="string">
         <source>Error while fething price</source>
@@ -2160,10 +2160,6 @@
       <trans-unit id="403" resname="r762668460" restype="string">
         <source>{reviewer_name} and {influencer_name} found this helpful</source>
         <target>{reviewer_name} y {influencer_name} hallaron esto útil</target>
-      </trans-unit>
-      <trans-unit id="404" resname="r519237633" restype="string">
-        <source>{reviewer_name} found this helpful</source>
-        <target>Los médicos de %@ halló esto útil</target>
       </trans-unit>
     </body>
   </file>
@@ -11687,9 +11683,9 @@
         <source>Pay &amp; Send</source>
         <target>支付并发送</target>
       </trans-unit>
-      <trans-unit id="174" resname="r968282568" restype="string">
-        <source>&amp;lt;b&amp;gt;Your total&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;For additional options</source>
-        <target>&amp;lt;b&amp;gt;您总计&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;附件选项</target>
+      <trans-unit id="174" resname="r626068628" restype="string">
+        <source>{start}Your total{end}\nFor additional options</source>
+        <target>{start}您总计{end}\n附件选项</target>
       </trans-unit>
       <trans-unit id="175" resname="r4430339" restype="string">
         <source>Error while fething price</source>
@@ -17734,7 +17730,7 @@
       </trans-unit>
       <trans-unit id="1434" resname="ask_picker_subtitle_out_of_us" restype="string">
         <source>Not in {country_name}?</source>
-        <target>不在{us_state_name}?</target>
+        <target>不在{country_name}?</target>
       </trans-unit>
       <trans-unit id="1435" resname="existing_session_warning_title" restype="string">
         <source>Existing Consult</source>
