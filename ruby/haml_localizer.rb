@@ -120,9 +120,7 @@ def accumulate_values(root, values, path_name)
     #skip
   elsif (root.value && root.value[:value])
     orig = root.value[:value]
-    puts "found orig=#{orig}"
     if root.value[:parse]
-      puts "File has parsed-strings=#{path_name}"
       #skip all parsed nodes. i.e, ruby code
       orig = nil
     end
@@ -140,11 +138,8 @@ def accumulate_values(root, values, path_name)
       #there is no html only special characters filtered out by Sanitize.clean
       values.concat(break_around_non_clean_chars(orig, s))
     else
-      puts "trying to get overlap for #{orig}"
       toks = get_overlap_strings2(orig, s)
-      puts "toks=#{toks}"
       if orig.include?("Answers served")
-        puts "toks=#{toks} orig=#{orig} s=#{s} orig.last=#{orig[orig.length-1].ord.to_s(16)}"
         #raise ArgumentError.new('debug')
       end
       values.concat(toks) if toks
@@ -182,44 +177,92 @@ def process_values(locale_mappings, values, unmapped_words)
   ret
 end
 
-def replace_with_translations(template, from_to)
-  from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
-    next if k.include?('@') || k.include?('#{')
-    #next if !k.include?(' ') # there are too many cases where it is substituring method calls and variable names. Skip if its not a sentence
-    v = from_to[k]
-    #puts "translating=#{k} WITH v=#{v}"
-    #raise ArgumentError.new('test')
+#def replace_with_translations(template, from_to)
+#  from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
+#    next if k.include?('@') || k.include?('#{')
+#    v = from_to[k]
+#
+#    res = template.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
+#    res = template.gsub!(/\b(?<=:title =>\")#{Regexp.escape(k)}(?=\")/, v)
+#    res = template.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
+#    res = template.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+#
+#    if res
+#      puts "replaced #{k} WITH: #{v}"
+#    end
+#  }
+#  template
+#end
 
-    res = template.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
-    res = template.gsub!(/\b(?<=:title =>\")#{Regexp.escape(k)}(?=\")/, v)
-    res = template.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
-    res = template.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+def process_line(skip_block_indent, ret, line, from_to)
+  if !skip_block_indent.nil?
+    ret << line
+  else
+    if line.strip[0] == "="
+      ret << line
+    else
+      from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
+        next if k.include?('@') || k.include?('#{')
+        v = from_to[k]
 
-    if res
-      puts "replaced #{k} WITH: #{v}"
+        res = line.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
+        res = line.gsub!(/\b(?<=:title =>\")#{Regexp.escape(k)}(?=\")/, v)
+        res = line.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
+        res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+      }
+      ret << line
     end
-
-    #res = template.gsub!(/\b#{Regexp.escape(k)}/, v) # match starting with word boundary and doesn't have / | : right before k
-    #res = template.gsub!(k, v)
-    if res.nil?
-      #puts "DID not replace:#{k} k.length=#{k.length} v:#{v} v.l=#{v.length}"
-      #puts "include=#{template.include?(k)}"
-      #puts "template=#{template}"
-      #raise ArgumentError.new("stop")
-    end
-  }
-  template
+  end
 end
 
-def produce_unmapped(unmapped_words)
+# approach to go line-by line and replace. SHould give us better control of the context for search/replace
+def replace_with_translations2(template, from_to)
+  arr = template.split("\n")
+  indent_stack = [0]
+  ret = []
+  skip_block_indent = nil
+  arr.each{|line|
+    curr_indent = /\S/ =~ line
+    if curr_indent.nil?
+      ret << line
+      next
+    end
+    if curr_indent > indent_stack.last
+      #new block
+      indent_stack << curr_indent
+      if line.include?(':ruby')
+        skip_block_indent = curr_indent
+      end
+      process_line(skip_block_indent, ret, line, from_to)
+    elsif curr_indent < indent_stack.last
+      #previous block ended, now in old block
+      indent_stack.pop
+      if skip_block_indent && curr_indent <= skip_block_indent
+        skip_block_indent = nil
+      end
+      process_line(skip_block_indent, ret, line, from_to)
+
+    else
+      #same block
+      process_line(skip_block_indent, ret, line, from_to)
+    end
+  }
+  ret.join("\n")
+end
+
+def produce_unmapped(file_to_words)
   # File.open('/tmp/test.yml', 'w') {|f| f.write h.to_yaml}
   h = {}
-  unmapped_words.each{|w|
-    clean_w = w.gsub("\n", "");
-    h[ clean_w.gsub(' ', '_') ] = clean_w
-  }
+  file_to_words.each do |filename,words|
+    child_hash = {}
+    words.each{|w|
+      clean_w = w.gsub("\n", "");
+      child_hash[ clean_w.gsub(' ', '_') ] = clean_w
+    }
+    h[filename] = child_hash
+  end
   File.open('./unmapped.yml', 'w') {|f|
-    f.write(h.to_yaml)
+    f.write(h.to_yaml(line_width: -1))
   }
   begin
     YAML::load_file('./unmapped.yml')
@@ -238,7 +281,7 @@ local_mappings ||= {}
 #  local_mappings = YAML.load(File.read(local_mapping_file_name))
 #end
 
-unmapped_words = []
+unmapped_words = {}
 
 ARGV[2, ARGV.length].each{|path_name|
   puts "file_name=#{path_name} locale_name=#{locale_name}"
@@ -246,18 +289,18 @@ ARGV[2, ARGV.length].each{|path_name|
     dirname = File.dirname(path_name)
     file_name = File.basename(path_name)
     file_name_components = file_name.split('.')
+    unmapped_for_file = []
     raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
 
     template = File.read(path_name)
     x = HTParser.new(template, Haml::Options.new)
     root = x.parse
-    puts "root=#{root}"
     values = []
     accumulate_values(root, values, path_name)
-    puts "orig_values=#{values}"
+    #puts "orig_values=#{values}"
     values = reject_special_words(reject_paran(break_aound_code_values(values)))
 
-    puts "values=#{values}"
+    #puts "values=#{values}"
 
     #if local_name == 'zxx-XX'
       from_to = process_pseudo_values(values)
@@ -265,9 +308,10 @@ ARGV[2, ARGV.length].each{|path_name|
     #  from_to = process_values(local_mappings, values, unmapped_words)
     #end
     #puts from_to
-    process_values(local_mappings, from_to.keys, unmapped_words)
+    process_values(local_mappings, from_to.keys, unmapped_for_file)
 
-    replace_with_translations(template, from_to)
+    #replace_with_translations(template, from_to)
+    template = replace_with_translations2(template, from_to)
     #parse again to ensure no failure
     begin
       x = HTParser.new(template, Haml::Options.new)
@@ -286,6 +330,7 @@ ARGV[2, ARGV.length].each{|path_name|
     
     #puts new_file_name
     File.open(new_file_name, 'w') { |file| file.write(template) }
+    unmapped_words[file_name] = unmapped_for_file
   rescue => ex
     puts path_name
     puts "#{ex}"
@@ -294,4 +339,4 @@ ARGV[2, ARGV.length].each{|path_name|
   end
 }
 
-produce_unmapped(unmapped_words.uniq)
+produce_unmapped(unmapped_words)
