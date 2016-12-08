@@ -80,6 +80,21 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileMakeKeyNoReturnChars: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        test.equal(htf.makeKey("This is\n a te\nst"), "This is a test");
+        
+        test.done();
+    },
+
     testHTMLTemplateFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
