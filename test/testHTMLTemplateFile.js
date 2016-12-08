@@ -2477,10 +2477,10 @@ module.exports = {
         }));
 
         diff(htf.localizeText(translations, "fr-FR"),
-        		'  <span class="foo" onclick="javascript:var a = \\"foo\\", b = \\"bar\\";">asdf</span>');
+        		'  <span class="foo" onclick="javascript:var a = &quot;foo&quot;, b = \\"bar\\";">asdf</span>');
         
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'  <span class="foo" onclick="javascript:var a = \\"foo\\", b = \\"bar\\";">asdf</span>');
+        		'  <span class="foo" onclick="javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;">asdf</span>');
 
         test.done();
     },
