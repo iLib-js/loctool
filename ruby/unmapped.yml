@@ -1,14 +1,113 @@
 ---
-Hi_there,: Hi there,
-You're_only_a_few_minutes_away_from_getting_paid_to_help_your_patients_with_virtual_care.: You're
-  only a few minutes away from getting paid to help your patients with virtual care.
-Take_advantage_of_this_amazing_opportunity_by_completing_this_short_tutorial_to_ensure_you're: Take
-  advantage of this amazing opportunity by completing this short tutorial to ensure
-  you're
-familiar_with_how_our_platform_works,: familiar with how our platform works,
-and_to_feel_comfortable_and_confident_when_patients_need_your_expertise_using_HealthTap.: and
-  to feel comfortable and confident when patients need your expertise using HealthTap.
-! 'On_HealthTap_you_can:': ! 'On HealthTap you can:'
-And_much_more!: And much more!
-Wishing_you_health_and_happiness,: Wishing you health and happiness,
-Irina_and_The_HealthTap_Team: Irina and The HealthTap Team
+mission.html.haml:
+  Join_the: Join the
+  ':)': ':)'
+  Feel_Good: Feel Good
+  movement: movement
+  SIGN_UP_TODAY: SIGN UP TODAY
+  lives.: lives.
+  happier: happier
+  Our_mission_is_to_help_people_live_healthier,_longer,_and: Our mission is to help people live healthier, longer, and
+  .: .
+  ? ._Whether_we’re_trying_to_improve_our_already_robust_health,_manage_a_chronic_condition,_or_cope_with_a_serious_illness,_we_want_to_live_better—and_we_always_want_to
+  : . Whether we’re trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better—and we always want to
+  It_may_sound_lofty,_but_we_believe_it_comes_down_to_something_very_basic._We_all—at_heart—simply_want_to: It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to
+  Having_a_good,_hard_laugh.: Having a good, hard laugh.
+  Paying_someone_a_compliment.: Paying someone a compliment.
+  Sharing_a_delicious_meal_with_people_we_care_about.: Sharing a delicious meal with people we care about.
+  Looking_up_and_noticing_the_beauty_of_our_surroundings.: Looking up and noticing the beauty of our surroundings.
+  Gratitude.: Gratitude.
+  All_these_things_make_us: All these things make us
+  ? by_taking_care_of_us_and_giving_us_comfort_when_we_need_it_most._We_can_take_care_of_each_other,_too._By_bringing_the_fun_back_into_taking_care_of_each_other,_we_work_with_doctors_to_make_the_world_a_better_place.
+  : by taking care of us and giving us comfort when we need it most. We can take care of each other, too. By bringing the fun back into taking care of each other, we work with doctors to make the world a better place.
+  Doctors_help_us: Doctors help us
+  every_day,_please_join_us!: every day, please join us!
+  ._As_we_continue_on_our_creative_journey_to_help_people_smile_and: . As we continue on our creative journey to help people smile and
+  well-being: well-being
+  We’re_excited_to_have_reinvented_how_the_world_experiences_health_and: We’re excited to have reinvented how the world experiences health and
+  We’re_impacting_millions_of_people_every_day,_and_are_excited_about_our_potential_to_truly_transform_the_health_universe!: We’re impacting millions of people every day, and are excited about our potential to truly transform the health universe!
+  ! '...to_help_everyone': ! '...to help everyone'
+  and_prolong_the_life_expectancy: and prolong the life expectancy
+  of_human_kind...: of human kind...
+  and_prolong: and prolong
+  the_life_expectancy: the life expectancy
+  Our_Mission,_Vision_and_Credo: Our Mission, Vision and Credo
+  by_providing_immediate_access_to_top_medical_experts_and_their_trusted_health_advice_anytime,_anywhere.: by providing immediate access to top medical experts and their trusted health advice anytime, anywhere.
+  Our_mission_is_to_measurably_prolong_the_life_expectancy_of_humankind_and_help_everyone: Our mission is to measurably prolong the life expectancy of humankind and help everyone
+  We_will_create_the_world's_most_trusted_online_health_companion: We will create the world's most trusted online health companion
+  ? ! ',_especially_when_making_decisions_that_affect_their_health_and_the_health_of_their_loved_ones._We_care_deeply_about_people_and_are_committed_to_providing_information_and_access_to'
+  : ! ', especially when making decisions that affect their health and the health of their loved ones. We care deeply about people and are committed to providing information and access to'
+  HealthTap: HealthTap
+  Our_first_responsibility_is_to_do_good_for_the_individuals_who_use: Our first responsibility is to do good for the individuals who use
+  ! '...MORE': ! '...MORE'
+  every_day.: every day.
+  care_that_meet_the_highest_standards_of_safety_and_validity,_and_help_people_take_actions_to: care that meet the highest standards of safety and validity, and help people take actions to
+  ? ._We_treat_the_personal_information_of_individuals_with_the_utmost_care_and_maintain_the_highest_standards_of_privacy_and_security.
+  : . We treat the personal information of individuals with the utmost care and maintain the highest standards of privacy and security.
+  We_value_and_honor_the_trust_of_those_who_use: We value and honor the trust of those who use
+  We_will_attract_the_world’s_best_partners: We will attract the world’s best partners
+  ? We_believe_in_collaboration_and_recognize_that_partnership_is_integral_to_realizing_our_vision._We_are_committed_to_being_a_great_partner,_and_to_attracting_and_retaining_the_world's_best_organizations_and_institutions_as
+  : We believe in collaboration and recognize that partnership is integral to realizing our vision. We are committed to being a great partner, and to attracting and retaining the world's best organizations and institutions as
+  collaborators.: collaborators.
+  ? We_care_about_our_partners'_needs_and_interests_and_we_are_committed_to_their_success._We_believe_that_active_listening,_transparency,_and_trust_are_central_to_creating_effective,_long-term_partnerships.
+  : We care about our partners' needs and interests and we are committed to their success. We believe that active listening, transparency, and trust are central to creating effective, long-term partnerships.
+  Contact_us: Contact us
+  If_you_have_a_product,_resource,_service,_or_idea_with_the_potential_to_change_the_healthcare_field,_we_want_to_hear_from_you!: If you have a product, resource, service, or idea with the potential to change the healthcare field, we want to hear from you!
+  We_will_build_a_workplace_our_employees_love: We will build a workplace our employees love
+  ? We_are_committed_to_creating_and_maintaining_a_place_where_our_employees_love_to_work._We_are_responsible_for_ensuring_that_our_employees_are_treated_with_care_and_respect,_and_that_they_are_challenged_to_achieve_their_potential.
+  : We are committed to creating and maintaining a place where our employees love to work. We are responsible for ensuring that our employees are treated with care and respect, and that they are challenged to achieve their potential.
+  ? We_believe_that_work_can_be_play,_and_that_working_toward_a_worthy_goal_is_one_of_the_most_fulfilling_ways_to_spend_our_time._We_believe_that_happy,_fulfilled_employees_who_share_a_commitment_to_changing_the_world_will_bring_forth_the_creativity_and_passion_needed_to_fulfill_our_vision.
+  : We believe that work can be play, and that working toward a worthy goal is one of the most fulfilling ways to spend our time. We believe that happy, fulfilled employees who share a commitment to changing the world will bring forth the creativity and passion needed to fulfill our vision.
+  Check_out_our_job_openings: Check out our job openings
+  Work_with_us_for_something_you_can_believe_in!: Work with us for something you can believe in!
+  Our_Values: Our Values
+  ? Our_values_reflect_who_we_are,_both_as_individuals_and_as_a_company._We_discuss_these_values_at_every_team_meeting_and_measure_ourselves_against_them_at_every_opportunity._They_guide_who_we_hire_and_how_we_work_together._They_shape_the_decisions_we_make_and_how_we_grow.
+  : Our values reflect who we are, both as individuals and as a company. We discuss these values at every team meeting and measure ourselves against them at every opportunity. They guide who we hire and how we work together. They shape the decisions we make and how we grow.
+  We_value_caring_and_kindness: We value caring and kindness
+  ? We_believe_that_being_kind_is_central_to_living_a_healthy_life,_and_having_a_healthy_company._However_we_may_differ_in_our_ideas,_approaches_and_perspectives,_caring_for_one_another_unites_us.
+  : We believe that being kind is central to living a healthy life, and having a healthy company. However we may differ in our ideas, approaches and perspectives, caring for one another unites us.
+  We_value_fun_and_play: We value fun and play
+  can_feel_like_play,_and_strive_to_find_and_bring_into_each_day_playfulness,_fun,_and_joy.: can feel like play, and strive to find and bring into each day playfulness, fun, and joy.
+  work: work
+  We_believe_that: We believe that
+  We_value_impact: We value impact
+  ? We_are_driven_by_changing_the_world_and_making_a_meaningful_difference_in_the_lives_of_millions_of_people_everywhere._In_order_to_achieve_our_goals,_we_are_focused_on_driving_short-term_measurable_milestones_that_add_up_to_long-term_real_impact.
+  : We are driven by changing the world and making a meaningful difference in the lives of millions of people everywhere. In order to achieve our goals, we are focused on driving short-term measurable milestones that add up to long-term real impact.
+  We_value_facts,_data,_and_analysis: We value facts, data, and analysis
+  ? We_believe_that_facts_and_data_in_context_lead_to_better,_truly_personalized_decisions_and_improved_outcomes._Whenever_possible,_we_will_use_facts,_data,_and_information_as_the_language_of
+  : We believe that facts and data in context lead to better, truly personalized decisions and improved outcomes. Whenever possible, we will use facts, data, and information as the language of
+  ? our_internal_discussions_and_as_the_basis_for_our_decisions._When_a_strong_opinion_and_fact_are_in_opposition,_burden_of_proof_will_rest_on_the_opinion.
+  : our internal discussions and as the basis for our decisions. When a strong opinion and fact are in opposition, burden of proof will rest on the opinion.
+  We_value_trust,_openness,_and_transparency: We value trust, openness, and transparency
+  ? We_believe_that_being_open_and_transparent_facilitates_collaboration_and_teamwork_and_creates_a_constructive_environment_in_which_the_best_ideas_flourish,_regardless_of_their_origins._We_believe_that_openness_and
+  : We believe that being open and transparent facilitates collaboration and teamwork and creates a constructive environment in which the best ideas flourish, regardless of their origins. We believe that openness and
+  transparency,_together_with_integrity_and_honesty,_form_the_foundation_of_trust_required_for_our_success.: transparency, together with integrity and honesty, form the foundation of trust required for our success.
+  We_value_passion_and_positive_energy: We value passion and positive energy
+  ? We_believe_that_the_world_is_changed_by_passionate_people_who_channel_positive_energy_toward_a_vision_they_believe_in._Positive_energy_fuels_our_progress_and_brings_joy_to_our_journey_by_helping_us
+  : We believe that the world is changed by passionate people who channel positive energy toward a vision they believe in. Positive energy fuels our progress and brings joy to our journey by helping us
+  endure,_see_beyond,_and_overcome_challenges_and_difficulties.: endure, see beyond, and overcome challenges and difficulties.
+  We_value_health_and: We value health and
+  ! ',_and_to_help_others_do_the_same._In_large_and_small_ways,_we_strive_to_help_everyone_with_whom_we': ! ', and to help others do the same. In large and small ways, we strive to help everyone with whom we'
+  ? We_are_on_a_mission_to_create_a_healthier_world,_and_we_recognize_that_this_starts_at_home._We_pledge_to_take_care_of_our_own_health_and
+  : We are on a mission to create a healthier world, and we recognize that this starts at home. We pledge to take care of our own health and
+  interact_improve_their_health_and: interact improve their health and
+  We_value_sense_of_adventure: We value sense of adventure
+  ? We_believe_that_the_feeling_of_being_on_a_mission_will_help_us_achieve_a_greater_purpose_with_our_work._As_with_any_adventure,_we_will_take_risks_and_embrace_failures,_but_always_learn_from_our_mistakes_to
+  : We believe that the feeling of being on a mission will help us achieve a greater purpose with our work. As with any adventure, we will take risks and embrace failures, but always learn from our mistakes to
+  ? make_us_better._The_path_to_success_has_its_ups_and_downs_and_requires_a_fearless_spirit._But_most_importantly,_we_recognize_that_the_journey_is_as_rewarding_as_the_destination.
+  : make us better. The path to success has its ups and downs and requires a fearless spirit. But most importantly, we recognize that the journey is as rewarding as the destination.
+  We_value_teamwork_and_collaboration: We value teamwork and collaboration
+  ? We_believe_that_as_a_team_we_can_achieve_far_more_than_as_a_group_of_individuals,_and_that_the_best_ideas_are_developed_through_a_collaborative_process._We_enjoy_interacting_with_one_another_and
+  : We believe that as a team we can achieve far more than as a group of individuals, and that the best ideas are developed through a collaborative process. We enjoy interacting with one another and
+  believe_that_our_connection_is_central_to_our_strength.: believe that our connection is central to our strength.
+  We_value_challenge_and_excellence: We value challenge and excellence
+  ? We_believe_that_something_worth_doing_is_worth_doing_right._We_hold_ourselves_to_the_highest_standards_and_consistently_aim_to_excel._We_like_to_win,_and_we_love_to_learn._We_enjoy
+  : We believe that something worth doing is worth doing right. We hold ourselves to the highest standards and consistently aim to excel. We like to win, and we love to learn. We enjoy
+  challenging_ourselves_and_strive_for_personal_mastery.: challenging ourselves and strive for personal mastery.
+  We_value_curiosity_and_innovation: We value curiosity and innovation
+  ? We_believe_that_childlike_wonder_fuels_creativity,_and_we_are_driven_by_a_desire_to_create_the_new._We_look_for_new_ways_of_acting,_and_are_not_anchored_to_how_things_have_been_done_in_the
+  : We believe that childlike wonder fuels creativity, and we are driven by a desire to create the new. We look for new ways of acting, and are not anchored to how things have been done in the
+  past._We_question_assumptions_and_the_status_quo,_and_ask_tough_questions_that_are_not_easily_answered.: past. We question assumptions and the status quo, and ask tough questions that are not easily answered.
+  We_value_simplicity: We value simplicity
+  ? We_believe_that_simple_is_better,_and_strive_to_reduce_complexity_to_its_essence._We_believe_that_with_good_work,_any_idea_can_be_described_on_a_napkin,_and_that_the_effort_required_to_simplify_something_to_its_essence_is_worthwhile.
+  : We believe that simple is better, and strive to reduce complexity to its essence. We believe that with good work, any idea can be described on a napkin, and that the effort required to simplify something to its essence is worthwhile.
