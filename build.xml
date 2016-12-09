@@ -62,13 +62,15 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 			<exec osfamily="unix" executable="${node}/bin/node" dir="../ht-iosapp" failifexecutionfails="true" failonerror="true">
 				<env key="PATH" path="${node}/bin:${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
-				<arg line="${nodeinspector}/bin/node-debug.js"/>
+				<arg line="--inspect"/>
+				<arg line="--debug-brk"/>
 				<arg line="../loctool/loctool.js"/>
 			</exec>
 			<exec osfamily="windows" executable="${node}/bin/node.exe" dir="../ht-iosapp" failifexecutionfails="true"  failonerror="true">
 				<env key="PATH" path="${node}/bin;${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
-				<arg line="${nodeinspector}/bin/node-debug.js"/>
+				<arg line="--inspect"/>
+				<arg line="--debug-brk"/>
 				<arg line="../loctool/loctool.js"/>
 			</exec>
 		</sequential>
@@ -102,14 +104,16 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 			<exec osfamily="unix" executable="${node}/bin/node" dir="@{dir}" failifexecutionfails="true" failonerror="true">
 				<env key="PATH" path="${node}/bin:${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
-				<arg line="${nodeinspector}/bin/node-debug.js"/>
+				<arg line="--inspect"/>
+				<arg line="--debug-brk"/>
 				<arg line="${nodeunit}/bin/nodeunit"/>
 				<arg line="@{script}"/>
 			</exec>
 			<exec osfamily="windows" executable="${node}/bin/node.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
 				<env key="PATH" path="${node}/bin;${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
-				<arg line="${nodeinspector}/bin/node-debug.js"/>
+				<arg line="--inspect"/>
+				<arg line="--debug-brk"/>
 				<arg line="${nodeunit}/bin/nodeunit"/>
 				<arg line="@{script}"/>
 			</exec>
@@ -136,6 +140,10 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testTranslationSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
 
+	<target name="debug.translationset" description="Debug only the translation set tests">
+		<debug script="${build.test}/testTranslationSet.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.set" description="Run only the set tests">
 		<run script="${build.test}/testSet.js" executable="${nodeunit}/bin/nodeunit" dir="${build.base}" args="" />
 	</target>
@@ -154,6 +162,18 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 
 	<target name="test.androidlayoutfile" description="Run only the Android layout file tests">
 		<run script="${build.test}/testAndroidLayoutFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.androidlayoutfile" description="Debug only the android layout file tests">
+		<debug script="${build.test}/testAndroidLayoutFile.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.androidresourcefile" description="Run only the Android resource file tests">
+		<run script="${build.test}/testAndroidResourceFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.androidresourcefile" description="Debug only the android resource file tests">
+		<debug script="${build.test}/testAndroidResourceFile.js" dir="${build.test}"/>
 	</target>
 
 	<target name="test.xliff" description="Run only the xliff tests">
@@ -284,7 +304,15 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testRubyFileType.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile">
+	<target name="test.hamlfiletype" description="Run only the tests for the haml file type">
+		<run script="${build.test}/testHamlFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.hamlfiletype" description="Debug only the tests for the haml file type">
+		<debug script="${build.test}/testHamlFileType.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype">
 	</target>
 
 	<macrodef name="runsql">

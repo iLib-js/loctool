@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="android/res/layout/layout_refer_individual.xml" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="1" resname="text__test_Known_for_blah" restype="string" datatype="x-android-resource">
+        <source>&#40;test&#41;Known for blah</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/paticipant/SearchParticipantDialog.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="2" resname="r431194129" restype="string" datatype="java">
+        <source>Enter name, specialty, or topic</source>
+      </trans-unit>
+      <trans-unit id="3" resname="r713954102" restype="string" datatype="java">
+        <source>{doctor_name} invited.</source>
+      </trans-unit>
+      <trans-unit id="4" resname="r758668640" restype="string" datatype="java">
+        <source>Failed to invite {doctor_name}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/paticipant/ParticipantsFragment.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="5" resname="r7383209" restype="string" datatype="java">
+        <source>Invite others to session</source>
+      </trans-unit>
+      <trans-unit id="6" resname="r236672717" restype="string" datatype="java">
+        <source>Join my consult with: </source>
+      </trans-unit>
+      <trans-unit id="7" resname="r335504771" restype="string" datatype="java">
+        <source>How would you like to invite</source>
+      </trans-unit>
+      <trans-unit id="8" resname="r412453752" restype="string" datatype="java">
+        <source>Share via: </source>
+      </trans-unit>
+      <trans-unit id="9" resname="r202246463" restype="string" datatype="java">
+        <source>Failed to remove {person_name}: {message}</source>
+      </trans-unit>
+      <trans-unit id="10" resname="r425723870" restype="string" datatype="java">
+        <source>Failed to remove {person_name}</source>
+      </trans-unit>
+      <trans-unit id="11" resname="r211395157" restype="string" datatype="java">
+        <source>Failed to promote {person_name}: {message}</source>
+      </trans-unit>
+      <trans-unit id="12" resname="r653015505" restype="string" datatype="java">
+        <source>Failed to promote {person_name}</source>
+      </trans-unit>
+      <trans-unit id="13" resname="r728008924" restype="string" datatype="java">
+        <source>Failed to call {person_name}: {message}</source>
+      </trans-unit>
+      <trans-unit id="14" resname="r260271836" restype="string" datatype="java">
+        <source>Failed to call {person_name}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/models/ChatSessionModel.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="15" resname="r842940493" restype="string" datatype="java">
+        <source>{state}, {country}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/fragments/ConsultChatFragment.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="16" resname="r489564967" restype="string" datatype="java">
+        <source>Live video</source>
+      </trans-unit>
+      <trans-unit id="17" resname="r255372023" restype="string" datatype="java">
+        <source>Live audio</source>
+      </trans-unit>
+      <trans-unit id="18" resname="r64865438" restype="string" datatype="java">
+        <source>Live chat</source>
+      </trans-unit>
+      <trans-unit id="19" resname="r546901933" restype="string" datatype="java">
+        <source>Inbox consult</source>
+      </trans-unit>
+      <trans-unit id="20" resname="r475455417" restype="string" datatype="java">
+        <source>Transcript</source>
+        <note annotates="source">This refers to medical consult transcript</note>
+      </trans-unit>
+      <trans-unit id="21" resname="r388976557" restype="string" datatype="java">
+        <source>Speakerphone on</source>
+        <note annotates="source">This is a toggle button text for users to turn on the speakerphone</note>
+      </trans-unit>
+      <trans-unit id="22" resname="r894038144" restype="string" datatype="java">
+        <source>Speakerphone off</source>
+        <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
+      </trans-unit>
+      <trans-unit id="23" resname="r732893650" restype="string" datatype="java">
+        <source>Microphone on</source>
+        <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
+      </trans-unit>
+      <trans-unit id="24" resname="r66962854" restype="string" datatype="java">
+        <source>Microphone off</source>
+        <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
+      </trans-unit>
+      <trans-unit id="25" resname="r898356852" restype="string" datatype="java">
+        <source>{expert_name_prefix} {expert_last_name}</source>
+      </trans-unit>
+      <trans-unit id="26" resname="r52706585" restype="string" datatype="java">
+        <source>No paired device found.</source>
+      </trans-unit>
+      <trans-unit id="27" resname="r138398089" restype="string" datatype="java">
+        <source>Select device</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/dialog/OnHoldDialog.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="28" resname="r1052400974" restype="string" datatype="java">
+        <source>You are currently on hold</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/dialog/ConsultSettingsDialog.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="29" resname="r705098731" restype="string" datatype="java">
+        <source>Settings</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/dialog/AttachmentDescriptionDialog.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="30" resname="r118721288" restype="string" datatype="java">
+        <source>Please upload a file that is less than 10 MB.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="31" resname="r717299647" restype="string" datatype="java">
+        <source>You haven&apos;t selected a stethoscope yet</source>
+      </trans-unit>
+      <trans-unit id="32" resname="r195753892" restype="string" datatype="java">
+        <source>{sound_track_id}, Len: %d</source>
+        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+      </trans-unit>
+      <trans-unit id="33" resname="r606329135" restype="string" datatype="java">
+        <source>Select a track you want to download</source>
+      </trans-unit>
+      <trans-unit id="34" resname="r27218583" restype="string" datatype="java">
+        <source>Connecting</source>
+      </trans-unit>
+      <trans-unit id="35" resname="r537117311" restype="string" datatype="java">
+        <source>Failed to connect stethoscope</source>
+      </trans-unit>
+      <trans-unit id="36" resname="r643006336" restype="string" datatype="java">
+        <source>Reading track</source>
+      </trans-unit>
+      <trans-unit id="37" resname="r16321303" restype="string" datatype="java">
+        <source>Error occurred while reading audio</source>
+      </trans-unit>
+      <trans-unit id="38" resname="r98241011" restype="string" datatype="java">
+        <source>Downloaded to: </source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/chat/messages/SoapMessage.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="39" resname="r636554515" restype="string" datatype="java">
+        <source>Failed to download pdf</source>
+      </trans-unit>
+      <trans-unit id="40" resname="r324623762" restype="string" datatype="java">
+        <source>Diagnosis codes:\n</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/chat/messages/PersonalCheckAdapter.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="41" resname="r402577151" restype="string" datatype="java">
+        <source>{duration}, {frequency}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/chat/messages/ChatMessage.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="42" resname="r250644003" restype="string" datatype="java">
+        <source>HealthTap</source>
+      </trans-unit>
+      <trans-unit id="43" resname="r247297121" restype="string" datatype="java">
+        <source>You</source>
+      </trans-unit>
+      <trans-unit id="44" resname="r48889349" restype="string" datatype="java">
+        <source>Delivered on {time}</source>
+      </trans-unit>
+      <trans-unit id="45" resname="r1062842433" restype="string" datatype="java">
+        <source>Read on {time}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/chat/messages/BaseMessage.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="46" resname="r112762470" restype="string" datatype="java">
+        <source>Not delivered</source>
+      </trans-unit>
+      <trans-unit id="47" resname="r309744846" restype="string" datatype="java">
+        <source>Sending</source>
+      </trans-unit>
+      <trans-unit id="48" resname="r998864187" restype="string" datatype="java">
+        <source>Delivered</source>
+      </trans-unit>
+      <trans-unit id="49" resname="r284091905" restype="string" datatype="java">
+        <source>Read</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/attachment/UploadFileAdapter.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="50" resname="r1032557259" restype="string" datatype="java">
+        <source>Uploaded {date}</source>
+      </trans-unit>
+      <trans-unit id="51" resname="r337822860" restype="string" datatype="java">
+        <source>Last shared with</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/Util.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="52" resname="r372889647" restype="string" datatype="java">
+        <source>{file_size} KB</source>
+      </trans-unit>
+      <trans-unit id="53" resname="r368958217" restype="string" datatype="java">
+        <source>{file_size} MB</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/ChoosePreviousActivity.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="54" resname="r321612885" restype="string" datatype="java">
+        <source>Past uploads</source>
+      </trans-unit>
+      <trans-unit id="55" resname="r409490200" restype="string" datatype="java">
+        <source>Are you sure?</source>
+      </trans-unit>
+      <trans-unit id="56" resname="r942436038" restype="string" datatype="java">
+        <source>Are you sure you want to remove this attachment?</source>
+      </trans-unit>
+      <trans-unit id="57" resname="r43951314" restype="string" datatype="java">
+        <source>Remove</source>
+        <note annotates="source">Negative Button text. Confirm removing an attachment.</note>
+      </trans-unit>
+      <trans-unit id="58" resname="r794612910" restype="string" datatype="java">
+        <source>Never Mind</source>
+        <note annotates="source">Positive Button text. Give up removing an attachment.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/ApiUtil.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="59" resname="r477931224" restype="string" datatype="java">
+        <source>Error sending start session.</source>
+      </trans-unit>
+      <trans-unit id="60" resname="r575397564" restype="string" datatype="java">
+        <source>Error sending start video.</source>
+      </trans-unit>
+      <trans-unit id="61" resname="r368163820" restype="string" datatype="java">
+        <source>Sorry, there was an issue joining the call.</source>
+      </trans-unit>
+      <trans-unit id="62" resname="r94148678" restype="string" datatype="java">
+        <source>Error joining consult</source>
+      </trans-unit>
+      <trans-unit id="63" resname="r829727888" restype="string" datatype="java">
+        <source>Error retrying start session.</source>
+      </trans-unit>
+      <trans-unit id="64" resname="r214012589" restype="string" datatype="java">
+        <source>Something went wrong</source>
+      </trans-unit>
+      <trans-unit id="65" resname="r1034606164" restype="string" datatype="java">
+        <source>There was an error accepting the call.</source>
+      </trans-unit>
+      <trans-unit id="66" resname="r615851205" restype="string" datatype="java">
+        <source>Okay</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="67" resname="chat_message_hint" restype="string" datatype="x-android-resource">
+        <source>Type message</source>
+      </trans-unit>
+      <trans-unit id="68" resname="attach_file_dialog_take_photo" restype="string" datatype="x-android-resource">
+        <source>Take photo</source>
+      </trans-unit>
+      <trans-unit id="69" resname="attach_file_dialog_choose_photo" restype="string" datatype="x-android-resource">
+        <source>Choose photo</source>
+      </trans-unit>
+      <trans-unit id="70" resname="attach_file_dialog_choose_file" restype="string" datatype="x-android-resource">
+        <source>Choose file</source>
+      </trans-unit>
+      <trans-unit id="71" resname="attach_file_dialog_choose_previous" restype="string" datatype="x-android-resource">
+        <source>Choose previous attachment</source>
+      </trans-unit>
+      <trans-unit id="72" resname="attach_file_dialog_choose_device" restype="string" datatype="x-android-resource">
+        <source>Choose device</source>
+      </trans-unit>
+      <trans-unit id="73" resname="attach_file_dialog_cancel" restype="string" datatype="x-android-resource">
+        <source>Cancel</source>
+      </trans-unit>
+      <trans-unit id="74" resname="yes" restype="string" datatype="x-android-resource">
+        <source>Yes</source>
+      </trans-unit>
+      <trans-unit id="75" resname="no" restype="string" datatype="x-android-resource">
+        <source>No</source>
+      </trans-unit>
+      <trans-unit id="76" resname="last_share" restype="string" datatype="x-android-resource">
+        <source>Last shared with:</source>
+      </trans-unit>
+      <trans-unit id="77" resname="system_message_started" restype="string" datatype="x-android-resource">
+        <source>Started at %s</source>
+        <note annotates="source">%s refers to a time and date</note>
+      </trans-unit>
+      <trans-unit id="78" resname="system_message_ended" restype="string" datatype="x-android-resource">
+        <source>Ended at %s</source>
+        <note annotates="source">%s refers to a time and date</note>
+      </trans-unit>
+      <trans-unit id="79" resname="system_message_connection_lost" restype="string" datatype="x-android-resource">
+        <source>Connection lost at %s</source>
+        <note annotates="source">%s refers to a time and date</note>
+      </trans-unit>
+      <trans-unit id="80" resname="system_message_you_ended_consult" restype="string" datatype="x-android-resource">
+        <source>You ended this consult at %s</source>
+        <note annotates="source">%s refers to a time and date</note>
+      </trans-unit>
+      <trans-unit id="81" resname="system_message_disconnected" restype="string" datatype="x-android-resource">
+        <source>Disconnected at %s</source>
+        <note annotates="source">%s refers to a time and date</note>
+      </trans-unit>
+      <trans-unit id="82" resname="video_unavailable_text_for_doctor" restype="string" datatype="x-android-resource">
+        <source>Patient turned off camera…</source>
+      </trans-unit>
+      <trans-unit id="83" resname="video_unavailable_text_for_patient" restype="string" datatype="x-android-resource">
+        <source>Doctor turned off camera…</source>
+      </trans-unit>
+      <trans-unit id="84" resname="live_consult_connecting_text" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect…</source>
+      </trans-unit>
+      <trans-unit id="85" resname="live_consult_waiting_for_patient_text" restype="string" datatype="x-android-resource">
+        <source>Waiting for patient to connect…</source>
+      </trans-unit>
+      <trans-unit id="86" resname="live_consult_waiting_for_patient_live_video" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the patient\&apos;s video camera…</source>
+      </trans-unit>
+      <trans-unit id="87" resname="live_consult_waiting_for_patient_live_audio" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the patient\&apos;s microphone…</source>
+      </trans-unit>
+      <trans-unit id="88" resname="live_consult_waiting_for_patient_live_text" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the patient\&apos;s text chat…</source>
+      </trans-unit>
+      <trans-unit id="89" resname="live_consult_waiting_for_doctor_text" restype="string" datatype="x-android-resource">
+        <source>Waiting for doctor to connect…</source>
+      </trans-unit>
+      <trans-unit id="90" resname="live_consult_waiting_for_doctor_live_video" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the doctor\&apos;s video camera…</source>
+      </trans-unit>
+      <trans-unit id="91" resname="live_consult_waiting_for_doctor_live_audio" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the doctor\&apos;s microphone…</source>
+      </trans-unit>
+      <trans-unit id="92" resname="live_consult_waiting_for_doctor_live_text" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the doctor\&apos;s text chat…</source>
+      </trans-unit>
+      <trans-unit id="93" resname="keyboard_done_label" restype="string" datatype="x-android-resource">
+        <source>Send</source>
+      </trans-unit>
+      <trans-unit id="94" resname="participant_patient" restype="string" datatype="x-android-resource">
+        <source>Patient</source>
+      </trans-unit>
+      <trans-unit id="95" resname="nonaction_owner" restype="string" datatype="x-android-resource">
+        <source>Owner</source>
+      </trans-unit>
+      <trans-unit id="96" resname="nonaction_staff" restype="string" datatype="x-android-resource">
+        <source>Staff</source>
+      </trans-unit>
+      <trans-unit id="97" resname="nonaction_removed" restype="string" datatype="x-android-resource">
+        <source>Removed</source>
+      </trans-unit>
+      <trans-unit id="98" resname="nonaction_left" restype="string" datatype="x-android-resource">
+        <source>Left</source>
+      </trans-unit>
+      <trans-unit id="99" resname="action_remove" restype="string" datatype="x-android-resource">
+        <source>Remove</source>
+      </trans-unit>
+      <trans-unit id="100" resname="action_make_owner" restype="string" datatype="x-android-resource">
+        <source>Make owner</source>
+      </trans-unit>
+      <trans-unit id="101" resname="action_call_now" restype="string" datatype="x-android-resource">
+        <source>Call now</source>
+      </trans-unit>
+      <trans-unit id="102" resname="action_calling" restype="string" datatype="x-android-resource">
+        <source>Calling...</source>
+      </trans-unit>
+      <trans-unit id="103" resname="dialog_title_remove_participant" restype="string" datatype="x-android-resource">
+        <source>Remove participant from consult</source>
+      </trans-unit>
+      <trans-unit id="104" resname="dialog_message_remove_participant" restype="string" datatype="x-android-resource">
+        <source>Please confirm you would like to remove %s from the consult</source>
+        <note annotates="source">%s refers to a person</note>
+      </trans-unit>
+      <trans-unit id="105" resname="dialog_title_transfer_owner" restype="string" datatype="x-android-resource">
+        <source>Make consult owner</source>
+      </trans-unit>
+      <trans-unit id="106" resname="dialog_message_transfer_owner" restype="string" datatype="x-android-resource">
+        <source>Please confirm you would like to make %s owner of this consult and responsible for completing and sending the SOAP note to the patient.</source>
+        <note annotates="source">%s refers to a person</note>
+      </trans-unit>
+      <trans-unit id="107" resname="dialog_title_call_now" restype="string" datatype="x-android-resource">
+        <source>Call now</source>
+      </trans-unit>
+      <trans-unit id="108" resname="dialog_message_call_now" restype="string" datatype="x-android-resource">
+        <source>Do you want to call %s? They will be invited to join the consult immediately.</source>
+        <note annotates="source">%s refers to a person</note>
+      </trans-unit>
+      <trans-unit id="109" resname="button_add_participant" restype="string" datatype="x-android-resource">
+        <source>Add participants</source>
+      </trans-unit>
+      <trans-unit id="110" resname="button_yes" restype="string" datatype="x-android-resource">
+        <source>Yes</source>
+      </trans-unit>
+      <trans-unit id="111" resname="button_no" restype="string" datatype="x-android-resource">
+        <source>No</source>
+      </trans-unit>
+      <trans-unit id="112" resname="button_never_mind" restype="string" datatype="x-android-resource">
+        <source>Never mind</source>
+      </trans-unit>
+      <trans-unit id="113" resname="button_cancel" restype="string" datatype="x-android-resource">
+        <source>Cancel</source>
+      </trans-unit>
+      <trans-unit id="114" resname="button_confirm" restype="string" datatype="x-android-resource">
+        <source>Confirm</source>
+      </trans-unit>
+      <trans-unit id="115" resname="button_yes_call" restype="string" datatype="x-android-resource">
+        <source>Yes, call</source>
+      </trans-unit>
+      <trans-unit id="116" resname="VideoView_error_title" restype="string" datatype="x-android-resource">
+        <source>Cannot play video</source>
+      </trans-unit>
+      <trans-unit id="117" resname="VideoView_error_text_invalid_progressive_playback" restype="string" datatype="x-android-resource">
+        <source>Sorry, this video is not valid for streaming to
+        this device.</source>
+      </trans-unit>
+      <trans-unit id="118" resname="VideoView_error_text_unknown" restype="string" datatype="x-android-resource">
+        <source>Sorry, this video cannot be played.</source>
+      </trans-unit>
+      <trans-unit id="119" resname="VideoView_error_button" restype="string" datatype="x-android-resource">
+        <source>OK</source>
+      </trans-unit>
+      <trans-unit id="120" resname="transcript_call_text" restype="string" datatype="x-android-resource">
+        <source>Call:</source>
+      </trans-unit>
+      <trans-unit id="121" resname="transcript_email_text" restype="string" datatype="x-android-resource">
+        <source>Email:</source>
+      </trans-unit>
+      <trans-unit id="122" resname="transcript_refer_specialist_find_specicialist_text" restype="string" datatype="x-android-resource">
+        <source>Find specialist</source>
+      </trans-unit>
+      <trans-unit id="123" resname="transcript_refer_specialist_text" restype="string" datatype="x-android-resource">
+        <source>I\&apos;d like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</source>
+      </trans-unit>
+      <trans-unit id="124" resname="transcript_refer_specialist_text_hmo" restype="string" datatype="x-android-resource">
+        <source>I\&apos;d like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;. As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</source>
+      </trans-unit>
+      <trans-unit id="125" resname="soap_note_title_text" restype="string" datatype="x-android-resource">
+        <source>Summary Note</source>
+      </trans-unit>
+      <trans-unit id="126" resname="soap_note_history_text" restype="string" datatype="x-android-resource">
+        <source>Subjective &#40;History&#41;:</source>
+      </trans-unit>
+      <trans-unit id="127" resname="soap_note_data_text" restype="string" datatype="x-android-resource">
+        <source>Objective &#40;Data&#41;:</source>
+      </trans-unit>
+      <trans-unit id="128" resname="soap_note_assessment_text" restype="string" datatype="x-android-resource">
+        <source>Assessment:</source>
+      </trans-unit>
+      <trans-unit id="129" resname="soap_note_personal_checklist_title_text" restype="string" datatype="x-android-resource">
+        <source>Plan:</source>
+      </trans-unit>
+      <trans-unit id="130" resname="soap_note_personal_checklist_button_text" restype="string" datatype="x-android-resource">
+        <source>See checklists</source>
+      </trans-unit>
+      <trans-unit id="131" resname="public_checklist_title_recommend_text" restype="string" datatype="x-android-resource">
+        <source>I recommend you try {name}\&apos;s checklist on {topic_name}</source>
+      </trans-unit>
+      <trans-unit id="132" resname="public_checklist_button_text" restype="string" datatype="x-android-resource">
+        <source>Try now</source>
+      </trans-unit>
+      <trans-unit id="133" resname="public_checklist_button_added_text" restype="string" datatype="x-android-resource">
+        <source>Added</source>
+      </trans-unit>
+      <trans-unit id="134" resname="refer_individual_title_text" restype="string" datatype="x-android-resource">
+        <source>I\&apos;d like to refer you to:</source>
+      </trans-unit>
+      <trans-unit id="135" resname="refer_individual_call_text" restype="string" datatype="x-android-resource">
+        <source>Call</source>
+      </trans-unit>
+      <trans-unit id="136" resname="prescription_title_text" restype="string" datatype="x-android-resource">
+        <source>I will be sending this prescription to the following pharmacy:</source>
+      </trans-unit>
+      <trans-unit id="137" resname="prescription_title_text_not_available" restype="string" datatype="x-android-resource">
+        <source>I prescribed the following medication for you:</source>
+      </trans-unit>
+      <trans-unit id="138" resname="prescription_nopharmacy_question_text" restype="string" datatype="x-android-resource">
+        <source>To which pharmacy should I send the prescription?</source>
+      </trans-unit>
+      <trans-unit id="139" resname="prescription_pharmacy_phone_text" restype="string" datatype="x-android-resource">
+        <source>Call:</source>
+      </trans-unit>
+      <trans-unit id="140" resname="button_get_prescription" restype="string" datatype="x-android-resource">
+        <source>Get prescription</source>
+      </trans-unit>
+      <trans-unit id="141" resname="photos" restype="string" datatype="x-android-resource">
+        <source>Photos</source>
+      </trans-unit>
+      <trans-unit id="142" resname="documents" restype="string" datatype="x-android-resource">
+        <source>Files</source>
+      </trans-unit>
+      <trans-unit id="143" resname="no_previous_uploads" restype="string" datatype="x-android-resource">
+        <source>You haven\&apos;t uploaded any files or photos yet.</source>
+      </trans-unit>
+      <trans-unit id="144" resname="connection_wrong" restype="string" datatype="x-android-resource">
+        <source>Sorry, something wrong with the connection, please try again later.</source>
+      </trans-unit>
+      <trans-unit id="145" resname="title_activity_choose_previous" restype="string" datatype="x-android-resource">
+        <source>ChoosePreviousActivity</source>
+      </trans-unit>
+      <trans-unit id="146" resname="hello_world" restype="string" datatype="x-android-resource">
+        <source>Hello world!</source>
+      </trans-unit>
+      <trans-unit id="147" resname="action_settings" restype="string" datatype="x-android-resource">
+        <source>Settings</source>
+      </trans-unit>
+      <trans-unit id="148" resname="end_call_title_text" restype="string" datatype="x-android-resource">
+        <source>Are you sure?</source>
+      </trans-unit>
+      <trans-unit id="149" resname="leave_call_title_text" restype="string" datatype="x-android-resource">
+        <source>Leave consult</source>
+      </trans-unit>
+      <trans-unit id="150" resname="end_call_patient_body_text_format" restype="string" datatype="x-android-resource">
+        <source>Would you like to end this consult with {doctor_name}? The doctor hasn\&apos;t finished the session.</source>
+      </trans-unit>
+      <trans-unit id="151" resname="end_call_patient_body_text" restype="string" datatype="x-android-resource">
+        <source>Would you like to end this consult with the doctor? The doctor hasn\&apos;t finished the session.</source>
+      </trans-unit>
+      <trans-unit id="152" resname="end_call_doctor_body_text" restype="string" datatype="x-android-resource">
+        <source>Are you sure you want to end this call early? The patient will be disconnected.</source>
+      </trans-unit>
+      <trans-unit id="153" resname="leave_call_text" restype="string" datatype="x-android-resource">
+        <source>Would you like to leave the consult?</source>
+      </trans-unit>
+      <trans-unit id="154" resname="is_typing_text" restype="string" datatype="x-android-resource">
+        <source>{person_name} is typing…</source>
+      </trans-unit>
+      <trans-unit id="155" resname="soap_typing_text" restype="string" datatype="x-android-resource">
+        <source>{doctor_name} is typing notes for you…</source>
+      </trans-unit>
+      <trans-unit id="156" resname="attachment_description_dialog_heading_text" restype="string" datatype="x-android-resource">
+        <source>Help the doctors understand what they are looking at</source>
+      </trans-unit>
+      <trans-unit id="157" resname="attachment_description_dialog_heading_text_doctor" restype="string" datatype="x-android-resource">
+        <source>Help the patient understand what they are looking at</source>
+      </trans-unit>
+      <trans-unit id="158" resname="description_dialog_attach_text" restype="string" datatype="x-android-resource">
+        <source>Attach</source>
+      </trans-unit>
+      <trans-unit id="159" resname="description_dialog_character_count" restype="string" datatype="x-android-resource">
+        <source>0/100</source>
+      </trans-unit>
+      <trans-unit id="160" resname="description_dialog_hint" restype="string" datatype="x-android-resource">
+        <source>Enter brief description &#40;ex. My chest xray&#41;</source>
+      </trans-unit>
+      <trans-unit id="161" resname="title_remove_credit_card" restype="string" datatype="x-android-resource">
+        <source>Are you sure?</source>
+      </trans-unit>
+      <trans-unit id="162" resname="description_dialog_body_text" restype="string" datatype="x-android-resource">
+        <source>Are you sure you want to remove this attachment?</source>
+      </trans-unit>
+      <trans-unit id="163" resname="description_dialog_never_mind_text" restype="string" datatype="x-android-resource">
+        <source>Never Mind</source>
+      </trans-unit>
+      <trans-unit id="164" resname="description_dialog_remove_text" restype="string" datatype="x-android-resource">
+        <source>Remove</source>
+      </trans-unit>
+      <trans-unit id="165" resname="description_dialog_cancel_message_text" restype="string" datatype="x-android-resource">
+        <source>Do you want to cancel uploading this file?</source>
+      </trans-unit>
+      <trans-unit id="166" resname="description_dialog_cancel_confirm_text" restype="string" datatype="x-android-resource">
+        <source>Cancel upload</source>
+      </trans-unit>
+      <trans-unit id="167" resname="camera_control_title_text" restype="string" datatype="x-android-resource">
+        <source>What would you like to do?</source>
+      </trans-unit>
+      <trans-unit id="168" resname="camera_control_turn_camera_on_text" restype="string" datatype="x-android-resource">
+        <source>Turn camera on</source>
+      </trans-unit>
+      <trans-unit id="169" resname="camera_control_turn_camera_off_text" restype="string" datatype="x-android-resource">
+        <source>Turn camera off</source>
+      </trans-unit>
+      <trans-unit id="170" resname="camera_control_switch_view_text" restype="string" datatype="x-android-resource">
+        <source>Switch to back view</source>
+      </trans-unit>
+      <trans-unit id="171" resname="camera_control_switch_front_view_text" restype="string" datatype="x-android-resource">
+        <source>Switch to front view</source>
+      </trans-unit>
+      <trans-unit id="172" resname="peer_unavailable_text" restype="string" datatype="x-android-resource">
+        <source>There is a problem with {peer_name}\&apos;s connection. One moment while we try to re-connect with {peer_name}.</source>
+      </trans-unit>
+      <trans-unit id="173" resname="peer_unavailable_text_guest" restype="string" datatype="x-android-resource">
+        <source>There is a problem with the guest\&apos;s connection. One moment while we try to re-connect with the guest.</source>
+      </trans-unit>
+      <trans-unit id="174" resname="peer_unavailable_text_doctor" restype="string" datatype="x-android-resource">
+        <source>There is a problem with the doctor\&apos;s connection. One moment while we try to re-connect with the doctor.</source>
+      </trans-unit>
+      <trans-unit id="175" resname="local_connection_unavailable_text" restype="string" datatype="x-android-resource">
+        <source>There is a problem with your connection. One moment while we try to re-connect with %s.</source>
+        <note annotates="source">%s refers to a person</note>
+      </trans-unit>
+      <trans-unit id="176" resname="disconnect_trigger_text_doctor" restype="string" datatype="x-android-resource">
+        <source>There seems to be a problem with the doctor\&apos;s connection. To continue by phone, please call:</source>
+      </trans-unit>
+      <trans-unit id="177" resname="disconnect_trigger_text_patient" restype="string" datatype="x-android-resource">
+        <source>There seems to be a problem with your connection. To continue by phone, please call:</source>
+      </trans-unit>
+      <trans-unit id="178" resname="disconnect_trigger_text_doc" restype="string" datatype="x-android-resource">
+        <source>We\&apos;re offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source>
+      </trans-unit>
+      <trans-unit id="179" resname="standard_rates_text" restype="string" datatype="x-android-resource">
+        <source>Standard carrier rates may apply</source>
+      </trans-unit>
+      <trans-unit id="180" resname="access_code_text" restype="string" datatype="x-android-resource">
+        <source>+ Access code:</source>
+      </trans-unit>
+      <trans-unit id="181" resname="peer_disconnected_title_text" restype="string" datatype="x-android-resource">
+        <source>Sorry this consult got disconnected.</source>
+      </trans-unit>
+      <trans-unit id="182" resname="peer_disconnected_content_text" restype="string" datatype="x-android-resource">
+        <source>Please contact us for support.</source>
+      </trans-unit>
+      <trans-unit id="183" resname="peer_disconnected_try_again_text" restype="string" datatype="x-android-resource">
+        <source>Try again</source>
+      </trans-unit>
+      <trans-unit id="184" resname="peer_disconnected_im_done_text" restype="string" datatype="x-android-resource">
+        <source>Thanks, I\&apos;m done</source>
+      </trans-unit>
+      <trans-unit id="185" resname="expert_peer_disconnected_text" restype="string" datatype="x-android-resource">
+        <source>The patient has ended the consult. Please complete your SOAP note.</source>
+      </trans-unit>
+      <trans-unit id="186" resname="expert_long_session_end_text" restype="string" datatype="x-android-resource">
+        <source>The consult has ended. Please complete your SOAP note.</source>
+      </trans-unit>
+      <trans-unit id="187" resname="transfer_status_download_completed" restype="string" datatype="x-android-resource">
+        <source>Download complete!</source>
+      </trans-unit>
+      <trans-unit id="188" resname="transfer_status_upload_completed" restype="string" datatype="x-android-resource">
+        <source>Upload complete!</source>
+      </trans-unit>
+      <trans-unit id="189" resname="transfer_status_download_text" restype="string" datatype="x-android-resource">
+        <source>Downloading</source>
+      </trans-unit>
+      <trans-unit id="190" resname="transfer_status_upload_text" restype="string" datatype="x-android-resource">
+        <source>Uploading</source>
+      </trans-unit>
+      <trans-unit id="191" resname="transfer_status_error_upload" restype="string" datatype="x-android-resource">
+        <source>Error uploading file!</source>
+      </trans-unit>
+      <trans-unit id="192" resname="transfer_status_error_download" restype="string" datatype="x-android-resource">
+        <source>Error downloading file!</source>
+      </trans-unit>
+      <trans-unit id="193" resname="attachment_uploaded_text" restype="string" datatype="x-android-resource">
+        <source>Uploaded</source>
+      </trans-unit>
+      <trans-unit id="194" resname="attachment_uploaded_text_format" restype="string" datatype="x-android-resource">
+        <source>Uploaded on {date}</source>
+      </trans-unit>
+      <trans-unit id="195" resname="attach_file_dialog_error_opening_activity" restype="string" datatype="x-android-resource">
+        <source>Couldn\&apos;t find application to handle this!</source>
+      </trans-unit>
+      <trans-unit id="196" resname="vidyo_error_dialog_title" restype="string" datatype="x-android-resource">
+        <source>Video unavailable</source>
+      </trans-unit>
+      <trans-unit id="197" resname="vidyo_error_audio_dialog_title" restype="string" datatype="x-android-resource">
+        <source>Audio unavailable</source>
+      </trans-unit>
+      <trans-unit id="198" resname="vidyo_error_dialog_body" restype="string" datatype="x-android-resource">
+        <source>We\&apos;re having trouble establising a video connection on your device. Please continue by chat or try again.</source>
+      </trans-unit>
+      <trans-unit id="199" resname="camera_error_cant_connect" restype="string" datatype="x-android-resource">
+        <source>Can\&apos;t connect to camera</source>
+      </trans-unit>
+      <trans-unit id="200" resname="audio_error_cant_connect" restype="string" datatype="x-android-resource">
+        <source>Can\&apos;t connect to audio</source>
+      </trans-unit>
+      <trans-unit id="201" resname="vidyo_error_audio_dialog_body" restype="string" datatype="x-android-resource">
+        <source>We\&apos;re having trouble establising an audio connection on your device. Please continue by chat or try again.</source>
+      </trans-unit>
+      <trans-unit id="202" resname="vidyo_error_dialog_chat" restype="string" datatype="x-android-resource">
+        <source>Chat only</source>
+      </trans-unit>
+      <trans-unit id="203" resname="vidyo_error_dialog_dismiss" restype="string" datatype="x-android-resource">
+        <source>Ignore</source>
+      </trans-unit>
+      <trans-unit id="204" resname="vidyo_error_dialog_try" restype="string" datatype="x-android-resource">
+        <source>Try again</source>
+      </trans-unit>
+      <trans-unit id="205" resname="vidyo_error_session_done" restype="string" datatype="x-android-resource">
+        <source>Sorry, the session has already ended</source>
+      </trans-unit>
+      <trans-unit id="206" resname="not_in_the_US" restype="string" datatype="x-android-resource">
+        <source>Not in the United States</source>
+      </trans-unit>
+      <trans-unit id="207" resname="image_view_dialog_error" restype="string" datatype="x-android-resource">
+        <source>There was an error showing the image</source>
+      </trans-unit>
+      <trans-unit id="208" resname="retry_send_message_dialog_message" restype="string" datatype="x-android-resource">
+        <source>Would you like to try to send this message again?</source>
+      </trans-unit>
+      <trans-unit id="209" resname="retry_send_message_dialog_title" restype="string" datatype="x-android-resource">
+        <source>Failed to send</source>
+      </trans-unit>
+      <trans-unit id="210" resname="retry_send_message_dialog_cancel" restype="string" datatype="x-android-resource">
+        <source>Cancel</source>
+      </trans-unit>
+      <trans-unit id="211" resname="retry_send_message_dialog_retry" restype="string" datatype="x-android-resource">
+        <source>Try Again</source>
+      </trans-unit>
+      <trans-unit id="212" resname="rated_consult_text" restype="string" datatype="x-android-resource">
+        <source>&quot;You rated this consult:&quot;</source>
+      </trans-unit>
+      <trans-unit id="213" resname="rated_consult_update_text" restype="string" datatype="x-android-resource">
+        <source>Revise \u203a</source>
+      </trans-unit>
+      <trans-unit id="214" resname="rate_consult_text" restype="string" datatype="x-android-resource">
+        <source>Please rate this consult experience</source>
+      </trans-unit>
+      <trans-unit id="215" resname="transcript_appointment_request_concierge_btn_text" restype="string" datatype="x-android-resource">
+        <source>Schedule a follow-up</source>
+      </trans-unit>
+      <trans-unit id="216" resname="transcript_appointment_request_reason_text" restype="string" datatype="x-android-resource">
+        <source>Reason for follow-up:</source>
+      </trans-unit>
+      <trans-unit id="217" resname="transcript_appointment_request_prime_btn_text" restype="string" datatype="x-android-resource">
+        <source>Consult a doctor again</source>
+      </trans-unit>
+      <trans-unit id="218" resname="soap_diagnosis_code_title" restype="string" datatype="x-android-resource">
+        <source>Diagnosis codes:</source>
+      </trans-unit>
+      <trans-unit id="219" resname="no_sim_title" restype="string" datatype="x-android-resource">
+        <source>SIM card missing</source>
+      </trans-unit>
+      <trans-unit id="220" resname="no_sim_body" restype="string" datatype="x-android-resource">
+        <source>Please insert a valid SIM card to dial phone calls from this device.</source>
+      </trans-unit>
+      <trans-unit id="221" resname="no_sim_button" restype="string" datatype="x-android-resource">
+        <source>Okay</source>
+      </trans-unit>
+      <trans-unit id="222" resname="background_copy_doctor" restype="string" datatype="x-android-resource">
+        <source>You just left in the middle of a live consult. If you didn\&apos;t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
+      </trans-unit>
+      <trans-unit id="223" resname="background_copy_patient" restype="string" datatype="x-android-resource">
+        <source>You just left in the middle of a live consult. If you didn\&apos;t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source>
+      </trans-unit>
+      <trans-unit id="224" resname="camera_permission_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets you use your camera during consults</source>
+      </trans-unit>
+      <trans-unit id="225" resname="mic_permission_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets you use your microphone during consults.</source>
+      </trans-unit>
+      <trans-unit id="226" resname="audio_permission_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets HealthTap adjust volume during consults.</source>
+      </trans-unit>
+      <trans-unit id="227" resname="write_external_storage_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets HealthTap save photos take in the consult to your gallery.</source>
+      </trans-unit>
+      <trans-unit id="228" resname="camera_take_photo_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets HealthTap access your camera and take photos.</source>
+      </trans-unit>
+      <trans-unit id="229" resname="read_external_storage_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets HealthTap access your photo gallery and files</source>
+      </trans-unit>
+      <trans-unit id="230" resname="get_accounts_permission_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets HealthTap sign in with your Google account.</source>
+      </trans-unit>
+      <trans-unit id="231" resname="allow" restype="string" datatype="x-android-resource">
+        <source>allow</source>
+      </trans-unit>
+      <trans-unit id="232" resname="deny" restype="string" datatype="x-android-resource">
+        <source>deny</source>
+      </trans-unit>
+      <trans-unit id="233" resname="consult_permission_alert_title" restype="string" datatype="x-android-resource">
+        <source>Allow HealthTap the following permissions?</source>
+      </trans-unit>
+      <trans-unit id="234" resname="action_add_from_directory" restype="string" datatype="x-android-resource">
+        <source>Choose from directory</source>
+      </trans-unit>
+      <trans-unit id="235" resname="action_share_through_email" restype="string" datatype="x-android-resource">
+        <source>Email</source>
+      </trans-unit>
+      <trans-unit id="236" resname="action_share_through_sms" restype="string" datatype="x-android-resource">
+        <source>SMS</source>
+      </trans-unit>
+      <trans-unit id="237" resname="action_share_through_link" restype="string" datatype="x-android-resource">
+        <source>Share the link</source>
+      </trans-unit>
+      <trans-unit id="238" resname="input_count_format_1" restype="string" datatype="x-android-resource">
+        <source>{characters_num}/{maximum_allowed_characters_num}</source>
+        <note annotates="source">This shows ratio of current input characters number over allowed characters number. {maximum_allowed_characters_num} is the maximum characters allowed. e.g. 20/2000</note>
+      </trans-unit>
+      <trans-unit id="239" resname="title_Search" restype="string" datatype="x-android-resource">
+        <source>Search</source>
+      </trans-unit>
+      <trans-unit id="240" resname="title_Choose_from_directory" restype="string" datatype="x-android-resource">
+        <source>Choose from directory</source>
+      </trans-unit>
+      <trans-unit id="241" resname="title_Email" restype="string" datatype="x-android-resource">
+        <source>Email</source>
+      </trans-unit>
+      <trans-unit id="242" resname="title_SMS" restype="string" datatype="x-android-resource">
+        <source>SMS</source>
+      </trans-unit>
+      <trans-unit id="243" resname="title_Share_the_link" restype="string" datatype="x-android-resource">
+        <source>Share the link</source>
+      </trans-unit>
+      <trans-unit id="244" resname="text__test__Benzamycin" restype="string" datatype="x-android-resource">
+        <source>&#40;test&#41; Benzamycin</source>
+      </trans-unit>
+      <trans-unit id="245" resname="text__test__500_mg__oral_capsules__twice_daily__x200" restype="string" datatype="x-android-resource">
+        <source>&#40;test&#41; 500 mg, oral capsules, twice daily, x200</source>
+      </trans-unit>
+      <trans-unit id="246" resname="text_These_are_doctor_comments_about_this_medication" restype="string" datatype="x-android-resource">
+        <source>These are doctor comments about this medication</source>
+      </trans-unit>
+      <trans-unit id="247" resname="text_Additional_notes" restype="string" datatype="x-android-resource">
+        <source>Additional notes</source>
+      </trans-unit>
+      <trans-unit id="248" resname="text_Dr__Test" restype="string" datatype="x-android-resource">
+        <source>Dr. Test</source>
+      </trans-unit>
+      <trans-unit id="249" resname="text_Specialty" restype="string" datatype="x-android-resource">
+        <source>Specialty</source>
+      </trans-unit>
+      <trans-unit id="250" resname="text_City__State" restype="string" datatype="x-android-resource">
+        <source>City, State</source>
+      </trans-unit>
+      <trans-unit id="251" resname="text_Tap_to_resume" restype="string" datatype="x-android-resource">
+        <source>Tap to resume</source>
+      </trans-unit>
+      <trans-unit id="252" resname="text_You_complained_of_headache__fever_and_stress__test_" restype="string" datatype="x-android-resource">
+        <source>You complained of headache, fever and stress.&#40;test&#41;</source>
+      </trans-unit>
+      <trans-unit id="253" resname="text_You_have_an_elevated_heart_rate_and_red_skin___Test_" restype="string" datatype="x-android-resource">
+        <source>You have an elevated heart rate and red skin. &#40;Test&#41;</source>
+      </trans-unit>
+      <trans-unit id="254" resname="text_You_likely_have_a_cold__test_" restype="string" datatype="x-android-resource">
+        <source>You likely have a cold.&#40;test&#41;</source>
+      </trans-unit>
+      <trans-unit id="255" resname="text_Diagnosis_" restype="string" datatype="x-android-resource">
+        <source>Diagnosis:</source>
+      </trans-unit>
+      <trans-unit id="256" resname="text_Invite_a_supporter" restype="string" datatype="x-android-resource">
+        <source>Invite a supporter</source>
+      </trans-unit>
+      <trans-unit id="257" resname="text__test_Dr__blah_blah" restype="string" datatype="x-android-resource">
+        <source>&#40;test&#41;Dr. blah blah</source>
+      </trans-unit>
+      <trans-unit id="258" resname="text__test_blah__blah" restype="string" datatype="x-android-resource">
+        <source>&#40;test&#41;blah, blah</source>
+      </trans-unit>
+      <trans-unit id="259" resname="text_I_recommend_the_following_medication_" restype="string" datatype="x-android-resource">
+        <source>I recommend the following medication:</source>
+      </trans-unit>
+      <trans-unit id="260" resname="text__test__Walgreens" restype="string" datatype="x-android-resource">
+        <source>&#40;test&#41; Walgreens</source>
+      </trans-unit>
+      <trans-unit id="261" resname="text__test__774_University_Ave_" restype="string" datatype="x-android-resource">
+        <source>&#40;test&#41; 774 University Ave,</source>
+      </trans-unit>
+      <trans-unit id="262" resname="text__test__Palo_Alto__CA_23423" restype="string" datatype="x-android-resource">
+        <source>&#40;test&#41; Palo Alto, CA 23423</source>
+      </trans-unit>
+      <trans-unit id="263" resname="text_1__617__392_838" restype="string" datatype="x-android-resource">
+        <source>1 &#40;617&#41; 392-838</source>
+      </trans-unit>
+      <trans-unit id="264" resname="text_Speakerphone" restype="string" datatype="x-android-resource">
+        <source>Speakerphone</source>
+      </trans-unit>
+      <trans-unit id="265" resname="text_Microphone" restype="string" datatype="x-android-resource">
+        <source>Microphone</source>
+      </trans-unit>
+      <trans-unit id="266" resname="text_Medical_Report_test_" restype="string" datatype="x-android-resource">
+        <source>Medical Report&#40;test&#41;</source>
+      </trans-unit>
+      <trans-unit id="267" resname="text_Uploaded_Jan_4__2013__test_" restype="string" datatype="x-android-resource">
+        <source>Uploaded Jan 4, 2013 &#40;test&#41;</source>
+      </trans-unit>
+      <trans-unit id="268" resname="text_2_3Mb__test_" restype="string" datatype="x-android-resource">
+        <source>2.3Mb &#40;test&#41;</source>
+      </trans-unit>
+      <trans-unit id="269" resname="text_Dr__Example_Doctor" restype="string" datatype="x-android-resource">
+        <source>Dr. Example Doctor</source>
+      </trans-unit>
+      <trans-unit id="270" resname="text_Addiction_Medicine" restype="string" datatype="x-android-resource">
+        <source>Addiction Medicine</source>
+      </trans-unit>
+      <trans-unit id="271" resname="text_Palo_Alto__CA" restype="string" datatype="x-android-resource">
+        <source>Palo Alto, CA</source>
+      </trans-unit>
+      <trans-unit id="272" resname="text_No_doctors_found___n_Please_try_another_search_" restype="string" datatype="x-android-resource">
+        <source>No doctors found. \n Please try another search.</source>
+      </trans-unit>
+      <trans-unit id="273" resname="text_tab_text" restype="string" datatype="x-android-resource">
+        <source>tab text</source>
+      </trans-unit>
+      <trans-unit id="274" resname="text_1" restype="string" datatype="x-android-resource">
+        <source>1</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

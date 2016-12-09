@@ -14,7 +14,10 @@ module.exports = {
         test.expect(1);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
@@ -28,7 +31,10 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
@@ -43,7 +49,10 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
@@ -58,7 +67,10 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
@@ -73,28 +85,90 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
         test.ok(htf);
         
-        test.ok(htf.handles("a/b/Base.lproj/Localizable.strings"));
+        test.ok(htf.handles("a/b/en-US.lproj/foo.strings"));
         
         test.done();
     },
 
     testIosStringsFileTypeHandlesWithEnglishLocaleDir: function(test) {
-        test.expect(2);
+        test.expect(3);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
         test.ok(htf);
         
         test.ok(htf.handles("a/b/en-US.lproj/FGSignUpViewController.strings"));
+        test.ok(htf.handles("feelgood/en-US.lproj/FGGetHelpConciergeView.strings"));
+        
+        test.done();
+    },
+
+    testIosStringsFileTypeHandlesFalseWithNonEnglishLocaleDir: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
+        }, "./testfiles");
+        
+        var htf = new IosStringsFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("a/b/zh-Hans.lproj/FGSignUpViewController.strings"));
+        
+        test.done();
+    },
+
+    testIosStringsFileTypeHandlesWithEnglishLocaleDirLocStrings: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
+        }, "./testfiles");
+        
+        var htf = new IosStringsFileType(p);
+        test.ok(htf);
+        
+        test.ok(htf.handles("feelgood/en-US.lproj/asdf.strings"));
+        
+        test.done();
+    },
+
+    testIosStringsFileTypeHandlesWithEnglishLocaleDirInResourceDir: function(test) {
+        test.expect(3);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
+        }, "./testfiles");
+        
+        var htf = new IosStringsFileType(p);
+        test.ok(htf);
+        
+        test.ok(!htf.handles("feelgood/en-US.lproj/Localizable.strings"));
+        test.ok(!htf.handles("feelgood/Base.lproj/Localizable.strings"));
         
         test.done();
     },
@@ -103,13 +177,16 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
         test.ok(htf);
         
-        test.ok(htf.handles("a/b/Base.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("a/b/Base.lproj/FGSignUpViewController.strings"));
         
         test.done();
     },
@@ -118,7 +195,10 @@ module.exports = {
         test.expect(2);
 
         var p = new ObjectiveCProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"objc": "feelgood"
+        	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
@@ -135,14 +215,14 @@ module.exports = {
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US",
         	"resourceDirs": {
-        		"objc": "."
+        		"objc": "foo"
         	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
         test.ok(htf);
         
-        test.ok(!htf.handles("./en-US.lproj/FGSignUpViewController.strings"));
+        test.ok(htf.handles("foo/en-US.lproj/FGSignUpViewController.strings"));
         
         test.done();
     },
@@ -153,14 +233,14 @@ module.exports = {
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US",
         	"resourceDirs": {
-        		"objc": "."
+        		"objc": "foo"
         	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
         test.ok(htf);
         
-        test.ok(!htf.handles("./Base.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("foo/Base.lproj/FGSignUpViewController.strings"));
         
         test.done();
     },
@@ -171,14 +251,14 @@ module.exports = {
         var p = new ObjectiveCProject({
         	sourceLocale: "en-US",
         	"resourceDirs": {
-        		"objc": "."
+        		"objc": "foo"
         	}
         }, "./testfiles");
         
         var htf = new IosStringsFileType(p);
         test.ok(htf);
         
-        test.ok(!htf.handles("./de.lproj/FGSignUpViewController.strings"));
+        test.ok(!htf.handles("foo/de.lproj/FGSignUpViewController.strings"));
         
         test.done();
     }

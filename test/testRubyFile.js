@@ -6,7 +6,8 @@
 
 if (!RubyFile) {
     var RubyFile = require("../lib/RubyFile.js");
-    var AndroidProject =  require("../lib/AndroidProject.js");
+    var WebProject =  require("../lib/WebProject.js");
+    var ResourceString =  require("../lib/ResourceString.js");
 }
 
 module.exports = {
@@ -22,8 +23,8 @@ module.exports = {
     testRubyFileConstructorParams: function(test) {
         test.expect(1);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -37,8 +38,8 @@ module.exports = {
     testRubyFileConstructorNoFile: function(test) {
         test.expect(1);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -53,8 +54,8 @@ module.exports = {
     testRubyFileMakeKey: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -71,8 +72,8 @@ module.exports = {
     testRubyFileMakeKeyCompressUnderscores: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -89,8 +90,8 @@ module.exports = {
 	testRubyFileMakeKeyCompressUnderscores2: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -107,8 +108,8 @@ module.exports = {
     testRubyFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -122,7 +123,7 @@ module.exports = {
         var set = rf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("This_is_a_test", "string", undefined, undefined, "ht-androidapp");
+        var r = set.get(ResourceString.hashKey("webapp", "en-US", "This_is_a_test"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -134,8 +135,8 @@ module.exports = {
     testRubyFileParseSimpleGetBySource: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -160,8 +161,8 @@ module.exports = {
     testRubyFileParseIgnoreEmpty: function(test) {
         test.expect(3);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -183,8 +184,8 @@ module.exports = {
     testRubyFileParseSimpleIgnoreWhitespace: function(test) {
         test.expect(5);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -210,8 +211,8 @@ module.exports = {
     testRubyFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -235,8 +236,8 @@ module.exports = {
     testRubyFileParseSimpleWithTranslatorComment: function(test) {
         test.expect(6);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -262,8 +263,8 @@ module.exports = {
     testRubyFileParseMultiple: function(test) {
         test.expect(8);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -293,8 +294,8 @@ module.exports = {
     testRubyFileParseMultipleWithComments: function(test) {
         test.expect(10);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -326,8 +327,8 @@ module.exports = {
     testRubyFileParseMultipleWithParametersAndComments: function(test) {
         test.expect(10);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -359,8 +360,8 @@ module.exports = {
     testRubyFileParseWithDups: function(test) {
         test.expect(6);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -387,8 +388,8 @@ module.exports = {
     testRubyFileParseBogusConcatenation: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -409,8 +410,8 @@ module.exports = {
     testRubyFileParseBogusConcatenation2: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -430,8 +431,8 @@ module.exports = {
     testRubyFileParseBogusNonStringParam: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -451,8 +452,8 @@ module.exports = {
     testRubyFileParseEmptyParams: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -472,8 +473,8 @@ module.exports = {
     testRubyFileParseWholeWord: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -493,8 +494,8 @@ module.exports = {
     testRubyFileParseSubobject: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -514,8 +515,8 @@ module.exports = {
     testRubyFileExtractFile: function(test) {
         test.expect(8);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -548,8 +549,8 @@ module.exports = {
     testRubyFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
@@ -571,8 +572,8 @@ module.exports = {
     testRubyFileExtractBogusFile: function(test) {
         test.expect(2);
 
-        var p = new AndroidProject({
-        	id: "ht-androidapp",
+        var p = new WebProject({
+        	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
         

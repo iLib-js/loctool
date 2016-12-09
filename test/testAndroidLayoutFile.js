@@ -7,6 +7,7 @@
 if (!AndroidLayoutFile) {
     var AndroidLayoutFile = require("../lib/AndroidLayoutFile.js");
     var AndroidProject =  require("../lib/AndroidProject.js");
+    var AndroidResourceString =  require("../lib/AndroidResourceString.js");
 }
 
 module.exports = {
@@ -111,7 +112,7 @@ module.exports = {
         var set = alf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("text_This_is_a_test");
+        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "text_This_is_a_test"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -220,7 +221,7 @@ module.exports = {
         var set = alf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("text_This_is_a_test");
+        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "text_This_is_a_test"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -708,4 +709,50 @@ module.exports = {
         test.done();
     },
     
+    testAndroidLayoutFileParseMultipleIdenticalStrings: function(test) {
+        test.expect(7);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var alf = new AndroidLayoutFile({
+        	project: p
+        });
+        test.ok(alf);
+        
+        alf.parse('<?xml version="1.0" encoding="utf-8"?>' +
+        		  '<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" ' +
+        		  'android:layout_width="match_parent">' + 
+        		  '  <RelativeLayout ' + 
+        		  '      android:layout_width="match_parent">' + 
+        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
+        		  '      android:id="@+id/invalidpasswordMsg"  ' + 
+        		  '      android:text="This is a test" ' +
+        		  '      i18n="This is a translator comment" ' +
+        		  '      android:textColor="@color/error_red"/>' + 
+        		  '    <com.healthtap.userhtexpress.customviews.RobotoRegularTextView ' + 
+        		  '      android:id="@+id/invalidUseridMsg"  ' + 
+        		  '      android:text="This is a test" ' +
+        		  '      i18n="This is a translator comment" ' +
+        		  '      android:textColor="@color/error_burgundy"/>' + 
+        		  '  </RelativeLayout>' + 
+        		  '</FrameLayout>');
+        
+        var set = alf.getTranslationSet();
+        test.ok(set);
+        
+        var resources = set.getAll();
+        
+        test.equal(resources.length, 1);
+        
+        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "text_This_is_a_test"));
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "text_This_is_a_test");
+        test.equal(r.getComment(), "This is a translator comment");
+        
+        test.done();
+    }
 };

@@ -80,6 +80,21 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileMakeKeyNoReturnChars: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        test.equal(htf.makeKey("This is\n a te\nst"), "This is a test");
+        
+        test.done();
+    },
+
     testHTMLTemplateFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
@@ -95,7 +110,7 @@ module.exports = {
         var set = htf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get("This is a test");
+        var r = set.get(ResourceString.hashKey(undefined, "en-US", "This is a test"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -2477,10 +2492,10 @@ module.exports = {
         }));
 
         diff(htf.localizeText(translations, "fr-FR"),
-        		'  <span class="foo" onclick="javascript:var a = \\"foo\\", b = \\"bar\\";">asdf</span>');
+        		'  <span class="foo" onclick="javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;">asdf</span>');
         
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'  <span class="foo" onclick="javascript:var a = \\"foo\\", b = \\"bar\\";">asdf</span>');
+        		'  <span class="foo" onclick="javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;">asdf</span>');
 
         test.done();
     },
@@ -2706,5 +2721,164 @@ module.exports = {
     			'</div>    \n');
                 
         test.done();
-    }
+    },
+    
+    testHTMLTemplateFileParseWithHTMLInTheTemplateTag: function(test) {
+        test.expect(11);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+        		'<div class = "modal-title">\n' +
+        		'  Assumptions\n' +
+        		'</div>  \n' +
+        		'<div class="static_text clearfix">\n' +
+        		'	<p>\n' +
+        		'	  <%=\n' +
+        		'	    RB.getString(\'The following values were assumed when calculating the ROI. To receive an even more customized ROI analysis tailored to your organization, please {link_tag_start}schedule a call{link_tag_end} with us.\').format({\n' +
+        		'	      link_tag_start: \'<a href="\'+ calendly_link + \'" target="_blank" >\',\n' +
+        		'	      link_tag_end: \'</a>\'\n' +
+        		'	    })\n' +
+        		'	  %>\n' +
+        		'	\n' +
+        		'	</p>\n' +
+        		'	<br/>\n' +
+        		'	<ul class="fg-list" >\n' +
+        		'	  <li>30% specialist office referrals form virtual consult</li>\n' +
+        		'	  <li>20% doctor office visits diverted to Q&A</li>\n' +
+        		'	  <li>20% virtual consult utilization, post-Q&A</li>\n' +
+        		'	  <li>75% lab cost as percent of doctor office visit</li>\n' +
+        		'	  <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
+        		'	  <li>10% ER visits diverted to virtual consult only</li>\n' +
+        		'	  <li>30% ER visits diverted to urgent care</li> \n' +
+        		'	</ul>         \n' +
+        		'</div>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("Assumptions");
+        test.ok(r);
+        test.equal(r.getSource(), "Assumptions");
+        test.equal(r.getKey(), "Assumptions");
+        
+        r = set.getBySource('30% specialist office referrals form virtual consult');
+        test.ok(r);
+        test.equal(r.getSource(), '30% specialist office referrals form virtual consult');
+        test.equal(r.getKey(), '30% specialist office referrals form virtual consult');
+        
+        r = set.getBySource('30% ER visits diverted to urgent care');
+        test.ok(r);
+        test.equal(r.getSource(), '30% ER visits diverted to urgent care');
+        test.equal(r.getKey(), '30% ER visits diverted to urgent care');
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileLocalizeTextWithEmbeddedTemplateTag: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+    		'<div class = "modal-title">\n' +
+    		'  Assumptions\n' +
+    		'</div>  \n' +
+    		'<div class="static_text clearfix">\n' +
+    		'	<p>\n' +
+    		'	  <%=\n' +
+    		'	    RB.getString(\'The following values were assumed when calculating the ROI. To receive an even more customized ROI analysis tailored to your organization, please {link_tag_start}schedule a call{link_tag_end} with us.\').format({\n' +
+    		'	      link_tag_start: \'<a href="\'+ calendly_link + \'" target="_blank" >\',\n' +
+    		'	      link_tag_end: \'</a>\'\n' +
+    		'	    })\n' +
+    		'	  %>\n' +
+    		'	\n' +
+    		'	</p>\n' +
+    		'	<br/>\n' +
+    		'	<ul class="fg-list" >\n' +
+    		'	  <li>30% specialist office referrals form virtual consult</li>\n' +
+    		'	  <li>20% doctor office visits diverted to Q&A</li>\n' +
+    		'	  <li>20% virtual consult utilization, post-Q&A</li>\n' +
+    		'	  <li>75% lab cost as percent of doctor office visit</li>\n' +
+    		'	  <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
+    		'	  <li>10% ER visits diverted to virtual consult only</li>\n' +
+    		'	  <li>30% ER visits diverted to urgent care</li> \n' +
+    		'	</ul>         \n' +
+    		'</div>\n');
+			
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'Assumptions',
+        	source: 'Téléchargé sur <%= dateString %>',
+        	locale: "fr-FR"
+        }));
+                
+        diff(htf.localizeText(translations, "fr-FR"),
+        		'<div class="modal-title">\n' +
+        		'  Téléchargé sur <%= dateString %>\n' +
+        		'</div>  \n' +
+        		'<div class="static_text clearfix">\n' +
+        		'	<p>\n' +
+        		'	  <%=\n' +
+        		'	    RB.getString(\'The following values were assumed when calculating the ROI. To receive an even more customized ROI analysis tailored to your organization, please {link_tag_start}schedule a call{link_tag_end} with us.\').format({\n' +
+        		'	      link_tag_start: \'<a href="\'+ calendly_link + \'" target="_blank" >\',\n' +
+        		'	      link_tag_end: \'</a>\'\n' +
+        		'	    })\n' +
+        		'	  %>\n' +
+        		'	\n' +
+        		'	</p>\n' +
+        		'	<br>\n' +
+        		'	<ul class="fg-list">\n' +
+        		'	  <li>30% specialist office referrals form virtual consult</li>\n' +
+        		'	  <li>20% doctor office visits diverted to Q&A</li>\n' +
+        		'	  <li>20% virtual consult utilization, post-Q&A</li>\n' +
+        		'	  <li>75% lab cost as percent of doctor office visit</li>\n' +
+        		'	  <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
+        		'	  <li>10% ER visits diverted to virtual consult only</li>\n' +
+        		'	  <li>30% ER visits diverted to urgent care</li> \n' +
+        		'	</ul>         \n' +
+        		'</div>\n');
+        
+        test.equal(htf.localizeText(translations, "fr-FR"),
+        		'<div class="modal-title">\n' +
+        		'  Téléchargé sur <%= dateString %>\n' +
+        		'</div>  \n' +
+        		'<div class="static_text clearfix">\n' +
+        		'	<p>\n' +
+        		'	  <%=\n' +
+        		'	    RB.getString(\'The following values were assumed when calculating the ROI. To receive an even more customized ROI analysis tailored to your organization, please {link_tag_start}schedule a call{link_tag_end} with us.\').format({\n' +
+        		'	      link_tag_start: \'<a href="\'+ calendly_link + \'" target="_blank" >\',\n' +
+        		'	      link_tag_end: \'</a>\'\n' +
+        		'	    })\n' +
+        		'	  %>\n' +
+        		'	\n' +
+        		'	</p>\n' +
+        		'	<br>\n' +
+        		'	<ul class="fg-list">\n' +
+        		'	  <li>30% specialist office referrals form virtual consult</li>\n' +
+        		'	  <li>20% doctor office visits diverted to Q&A</li>\n' +
+        		'	  <li>20% virtual consult utilization, post-Q&A</li>\n' +
+        		'	  <li>75% lab cost as percent of doctor office visit</li>\n' +
+        		'	  <li>10% of urgent care visits diverted to virtual consult only</li>\n' +
+        		'	  <li>10% ER visits diverted to virtual consult only</li>\n' +
+        		'	  <li>30% ER visits diverted to urgent care</li> \n' +
+        		'	</ul>         \n' +
+        		'</div>\n');
+                
+        test.done();
+    },
+
+
 };

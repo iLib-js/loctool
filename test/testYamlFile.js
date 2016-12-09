@@ -278,6 +278,7 @@ module.exports = {
         test.done();
     },
     
+    /*
     testYamlFileGetContentEmpty: function(test) {
         test.expect(2);
 
