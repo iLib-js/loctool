@@ -52,4 +52,22 @@ describe 'HamlLocalizer' do
     ret = replace_with_translations2(orig2, from_to)
     ret.include?('FOO').should be_true
   end
+
+  describe 'load_locale_maps' do 
+    it 'should work with no locales' do
+      ret = load_locale_maps([])
+      expect(ret).to eq({})
+    end
+    it 'should raise error if provided locale file does not exist' do
+      File.should_receive(:exists?).and_return(false)
+      expect {load_locale_maps(['en-XY'])}.to raise_error
+    end
+    it 'should work with locale file' do
+      File.should_receive(:exists?).and_return(true)
+      File.should_receive(:read).with('translations-en-XY.yml').and_return({}.to_yaml)
+      ret = load_locale_maps(['en-XY'])
+      expect(ret.keys).to include('en-XY')
+      expect(ret['en-XY']).to eq({})
+    end
+  end
 end
