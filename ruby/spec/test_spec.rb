@@ -24,10 +24,19 @@ describe 'HamlLocalizer' do
   end
 
   it 'should work' do
+    # from investors.html.haml
     orig = "        <span class='ht-name' >HealthTap</span> is supported by world-class investors, advisors, and experienced company builders who have helped create, "
     from_to ={"is supported by world-class investors, advisors, and experienced company builders who have helped create,"=>"FOO"}
     ret = replace_with_translations2(orig, from_to)
 
+    ret.include?('FOO').should be_true
+  end
+
+  it 'should work' do
+    # from mission.html.haml
+    orig = "It may sound lofty, but we believe it comes down to something very basic. We all-at heart-simply want to <span class=\"no-break\" >Feel Good</span>. Whether we're trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better-and we always want to <span class=\"no-break\" >Feel Good</span>. "
+    from_to = {"It may sound lofty, but we believe it comes down to something very basic. We all-at heart-simply want to"=>"FOO"}
+    ret = replace_with_translations2(orig, from_to)
     ret.include?('FOO').should be_true
   end
 end
