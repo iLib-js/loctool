@@ -330,7 +330,7 @@ ARGV[2, ARGV.length].each{|path_name|
     #  from_to = process_values(local_mappings, values, unmapped_words)
     #end
     from_to = strip_whitespace(from_to)
-    puts from_to
+    #puts from_to
     process_values(local_mappings, from_to.keys, unmapped_for_file)
 
     #replace_with_translations(template, from_to)
