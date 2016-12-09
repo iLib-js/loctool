@@ -39,4 +39,17 @@ describe 'HamlLocalizer' do
     ret = replace_with_translations2(orig, from_to)
     ret.include?('FOO').should be_true
   end
+
+  it 'should work' do
+    #from our_story.html.haml
+    orig = "        <span class=\"ht-name\">HealthTap</span> Will Change Healthcare"
+    from_to = {"Will Change Healthcare"=>"FOO",
+               "is creating the world's most comprehensive, always-evolving,  and evergreen knowledgebase of personal health wisdom and expertise."=>"FOO"}
+    ret = replace_with_translations2(orig, from_to)
+    ret.include?('FOO').should be_true
+
+    orig2 = "          In fact, <span class=\"ht-name\">HealthTap</span> is creating the world's most comprehensive, always-evolving,  and evergreen knowledgebase of personal health wisdom and expertise."
+    ret = replace_with_translations2(orig2, from_to)
+    ret.include?('FOO').should be_true
+  end
 end
