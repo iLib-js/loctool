@@ -218,7 +218,7 @@ def process_line(skip_block_indent, ret, line, from_to)
         #if res
         #  puts "replacing #{k} WITH #{v}"
         #end
-        res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+        res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
         #if res
         #  puts "replacing #{k} WITH #{v}"
         #end
@@ -329,8 +329,8 @@ ARGV[2, ARGV.length].each{|path_name|
     #else
     #  from_to = process_values(local_mappings, values, unmapped_words)
     #end
-    #puts from_to
     from_to = strip_whitespace(from_to)
+    puts from_to
     process_values(local_mappings, from_to.keys, unmapped_for_file)
 
     #replace_with_translations(template, from_to)
