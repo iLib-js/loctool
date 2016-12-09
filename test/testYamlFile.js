@@ -108,6 +108,74 @@ module.exports = {
         test.done();
     },
 
+    testYamlFileParseWithSubkeys: function(test) {
+        test.expect(22);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+        
+        yml.parse(
+        		'---\n' +
+        		"'feelgood/foo/bar/x.en-US.html.haml':\n" +
+        		'  r9834724545: Jobs\n' +
+        		'  r9483762220: Our internship program\n' +
+        		'  r6782977423: |\n' +
+        		'    Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'    directly from experienced, successful entrepreneurs.\n' +
+				"'feelgood/foo/ssss/asdf.en-US.html.haml':\n" +
+				'  r4524523454: Working at HealthTap\n' +
+				'  r3254356823: Jobs\n' +
+				'foo:\n' +
+				'  bar:\n' +
+				'    asdf:\n' +
+				'      test: test of many levels\n');
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getAll();
+        test.ok(r);
+        
+        test.equal(r.length, 6);
+        
+        test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getKey(), "r9834724545");
+        test.equal(r[0].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[1].getSource(), "Our internship program");
+        test.equal(r[1].getKey(), "r9483762220");
+        test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[2].getSource(), 
+        		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'directly from experienced, successful entrepreneurs.\n');
+        test.equal(r[2].getKey(), "r6782977423");
+        test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[3].getSource(), "Working at HealthTap");
+        test.equal(r[3].getKey(), "r4524523454");
+        test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
+
+        test.equal(r[4].getSource(), "Jobs");
+        test.equal(r[4].getKey(), "r3254356823");
+        test.equal(r[4].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
+
+        test.equal(r[5].getSource(), "test of many levels");
+        test.equal(r[5].getKey(), "test");
+        test.equal(r[5].getContext(), "foo/bar/asdf");
+
+        test.done();
+    },
+
     testYamlFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
