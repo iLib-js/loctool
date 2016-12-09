@@ -235,7 +235,6 @@ module.exports = {
         test.done();   
     },
     
-    /*
     testYamlFileGetContent: function(test) {
         test.expect(2);
 
@@ -271,14 +270,100 @@ module.exports = {
         });
         
         test.equal(yml.getContent(),
-        	'source_text: "Quellen\"text"\n' +
-        	'more_source_text: "mehr Quellen\"text"\n'
+        	'de_DE:\n' +
+        	'    source_text: \'Quellen\"text\'\n' +
+        	'    more_source_text: \'mehr Quellen\"text\'\n'
         );
         
         test.done();
     },
     
-    /*
+    testYamlFileGetContentComplicated: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./zh.yml",
+        	locale: "zh-Hans-CN"
+        });
+        test.ok(yml);
+        
+        [
+        	new ResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "• &amp;nbsp; Address a health or healthy living topic",
+        		source: "• &amp;nbsp; 解决健康生活相关的话题",
+        		comment: " "
+        	}),
+        	new ResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
+        		source: "&apos;&#41;, url&#40;imgs/masks/top_bar康生活相",
+        		comment: "bar"
+        	})
+        ].forEach(function(res) {
+        	yml.addResource(res);
+        });
+        
+        test.equal(yml.getContent(),
+        	"zh_Hans_CN:\n" +
+        	"    '• &amp;nbsp; Address a health or healthy living topic': '• &amp;nbsp; 解决健康生活相关的话题'\n" +
+        	"    '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
+        );
+        
+        test.done();
+    },
+
+    testYamlFileGetContentWithNewlines: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./zh.yml",
+        	locale: "zh-Hans-CN"
+        });
+        test.ok(yml);
+        
+        [
+        	new ResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "short key",
+        		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
+        		comment: " "
+        	}),
+        	new ResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
+        		source: "short text",
+        		comment: "bar"
+        	})
+        ].forEach(function(res) {
+        	yml.addResource(res);
+        });
+        
+        test.equal(yml.getContent(),
+        	"zh_Hans_CN:\n" +
+        	"    'short key': \"this is text that is relatively long and can run past the end of the page\\nSo, we put a new line in the middle of it.\"\n" +
+        	"    \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": 'short text'\n"
+        );
+        
+        test.done();
+    },
+
     testYamlFileGetContentEmpty: function(test) {
         test.expect(2);
 
@@ -298,33 +383,33 @@ module.exports = {
         
         test.done();
     },
-    
-    /*
-    testYamlFileGetContentRoundTrip: function(test) {
-        test.expect(2);
+
+    testYamlFileRealContent: function(test) {
+        test.expect(5);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
+        	id: "ht-webapp12",
 			sourceLocale: "en-US"
         }, "./testfiles");
         
         var yml = new YamlFile({
         	project: p, 
-        	pathName: "./objc/de.lproj/asdf.yml"
+        	pathName: "./test.yml",
+        	locale: "en-US"
         });
         test.ok(yml);
         
-        yml.parse('');
+        yml.extract();
         
-        var x = yml.getContent();
-        var y = 
-    		'';
+        var set = yml.getTranslationSet();
+        test.ok(set);
         
-        test.equal(yml.getContent(),
-    		''
-        );
+        var r = set.get(ResourceString.hashKey("ht-webapp12", "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger."));
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Dr. Livingston serves on the Medical Advisory Board for HealthTap and he is the Chief Medical officer for Healthcare Transformation Solutions. He is on Twitter as @macobgyn and is an active doctor blogger.");
+        test.equal(r.getKey(), "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.");
         
         test.done();
     }
-    */
 };
