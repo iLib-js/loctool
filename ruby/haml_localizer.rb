@@ -195,6 +195,7 @@ end
 #end
 
 def process_line(skip_block_indent, ret, line, from_to)
+  #puts "process_line called with line=#{line}"
   if !skip_block_indent.nil?
     ret << line
   else
@@ -204,11 +205,23 @@ def process_line(skip_block_indent, ret, line, from_to)
       from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
         next if k.include?('@') || k.include?('#{')
         v = from_to[k]
-
         res = line.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
+        #if res
+        #  puts "replacing #{k} WITH #{v}"
+        #end
         res = line.gsub!(/\b(?<=:title =>\")#{Regexp.escape(k)}(?=\")/, v)
+        #if res
+        #  puts "replacing #{k} WITH #{v}"
+        #end
+
         res = line.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
+        #if res
+        #  puts "replacing #{k} WITH #{v}"
+        #end
         res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+        #if res
+        #  puts "replacing #{k} WITH #{v}"
+        #end
       }
       ret << line
     end
@@ -271,6 +284,14 @@ def produce_unmapped(file_to_words)
   end
 end
 
+def strip_whitespace(from_to)
+  ret = {}
+  from_to.each{|k, v|
+    ret[k.strip] = v.strip
+  }
+  ret
+end
+
 #file_name = "/Users/aseem/_language_form.html.haml"
 raise ArgumentError.new("Usage: ruby haml_localizer.rb <locale-name> <lang-mapping> [<file-path>..]") if ARGV.count < 3
 locale_name = ARGV[0]
@@ -297,6 +318,7 @@ ARGV[2, ARGV.length].each{|path_name|
     root = x.parse
     values = []
     accumulate_values(root, values, path_name)
+    #puts root
     #puts "orig_values=#{values}"
     values = reject_special_words(reject_paran(break_aound_code_values(values)))
 
@@ -308,6 +330,7 @@ ARGV[2, ARGV.length].each{|path_name|
     #  from_to = process_values(local_mappings, values, unmapped_words)
     #end
     #puts from_to
+    from_to = strip_whitespace(from_to)
     process_values(local_mappings, from_to.keys, unmapped_for_file)
 
     #replace_with_translations(template, from_to)
