@@ -4,6 +4,8 @@ require 'csv'
 require 'sanitize'
 require 'yaml'
 
+PSEUDO_LOCALE = 'zxx-XX'
+
 class HTParser < Haml::Parser
   attr_accessor :parent, :node_to_texts, :text_to_nodes,
                 :raw_text_to_parents, :parents_to_raw_texts
@@ -292,20 +294,27 @@ def strip_whitespace(from_to)
   ret
 end
 
+def load_locale_maps(locales, file_prefix= 'translations')
+  ret = {}
+  locales.each do |locale|
+    filename_for_locale = "#{file_prefix}-#{locale}.yml"
+    if File.exists?(filename_for_locale)
+      ret[locale] = YAML.load(File.read(filename_for_locale))
+    else
+      raise "Could not find #{filename_for_locale} for #{locale}"
+    end
+  end
+  ret
+end
+
 #file_name = "/Users/aseem/_language_form.html.haml"
 raise ArgumentError.new("Usage: ruby haml_localizer.rb <locale-name> <lang-mapping> [<file-path>..]") if ARGV.count < 3
-locale_name = ARGV[0]
-local_mapping_file_name = ARGV[1]
-local_mappings = nil
-local_mappings ||= {}
-#if locale_name != 'zxx-XX'
-#  local_mappings = YAML.load(File.read(local_mapping_file_name))
-#end
-
+locale_names = ARGV[0].split(',')
+locale_mapping_file_name = ARGV[1]
+all_locale_mappings = load_locale_maps(locale_names.reject{|x| x == PSEUDO_LOCALE}, locale_mapping_file_name)
 unmapped_words = {}
 
-ARGV[2, ARGV.length].each{|path_name|
-  puts "file_name=#{path_name} locale_name=#{locale_name}"
+ARGV[2, ARGV.length].each do |path_name|
   begin
     dirname = File.dirname(path_name)
     file_name = File.basename(path_name)
@@ -323,36 +332,35 @@ ARGV[2, ARGV.length].each{|path_name|
     values = reject_special_words(reject_paran(break_aound_code_values(values)))
 
     #puts "values=#{values}"
-
-    #if local_name == 'zxx-XX'
-      from_to = process_pseudo_values(values)
-    #else
-    #  from_to = process_values(local_mappings, values, unmapped_words)
-    #end
-    from_to = strip_whitespace(from_to)
-    #puts from_to
-    process_values(local_mappings, from_to.keys, unmapped_for_file)
-
-    #replace_with_translations(template, from_to)
-    template = replace_with_translations2(template, from_to)
-    #parse again to ensure no failure
-    begin
-      x = HTParser.new(template, Haml::Options.new)
-      root = x.parse
-    rescue => e
-      puts "ERROR: Bad substitution created invalid template for #{path_name}"
-      #puts e.backtrace # toggle to print entire trace
-      next # if we make a bad file, do not try to print, just go to next file
+    locale_names.each do |locale_name|
+      puts "file_name=#{path_name} locale_name=#{locale_name}"
+      locale_mappings = all_locale_mappings[locale_name] || {}
+      if locale_name == PSEUDO_LOCALE
+        from_to = process_pseudo_values(values)
+      else
+        from_to = process_values(locale_mappings, values, unmapped_for_file)
+      end
+      from_to = strip_whitespace(from_to)
+      puts from_to
+      process_values(locale_mappings, from_to.keys, unmapped_for_file)
+      template = replace_with_translations2(template, from_to)
+      begin
+        x = HTParser.new(template, Haml::Options.new)
+        root = x.parse
+      rescue => e
+        puts "ERROR: Bad substitution created invalid template for #{path_name}"
+        #File.open('ERROR.html.haml', 'w') { |file| file.write(template) }
+        next # if we make a bad file, do not try to print, just go to next file
+      end
+      if file_name_components[file_name_components.length - 3] == "en-US"
+        # the original template has a lang_locale, test.en-US.html.haml
+        new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 3].join('') + ".#{locale_name}.html.haml"
+      else
+        # the original template does not have a lang_locale, test.html.haml
+        new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{locale_name}.html.haml"
+      end
+      File.open(new_file_name, 'w') { |file| file.write(template) }
     end
-      
-    if file_name_components[file_name_components.length - 3] == "en-US"
-      new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 3].join('') + ".#{locale_name}.html.haml"
-    else
-      new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{locale_name}.html.haml"
-    end
-    
-    #puts new_file_name
-    File.open(new_file_name, 'w') { |file| file.write(template) }
     unmapped_words[file_name] = unmapped_for_file
   rescue => ex
     puts path_name
@@ -360,6 +368,5 @@ ARGV[2, ARGV.length].each{|path_name|
     puts ex.backtrace
     break
   end
-}
-
+end
 produce_unmapped(unmapped_words)
