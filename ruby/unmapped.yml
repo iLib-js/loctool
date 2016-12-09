@@ -1,0 +1,24 @@
+---
+portal.html.haml:
+  Welcome,: Welcome,
+  --: --
+  ! '!': ! '!'
+  translated: translated
+  in_review: in review
+  approval_rate: approval rate
+  ? Your_accuracy_rate_is_calculated_based_on_how_many_of_your_translations_are_accepted_by_doctors_without_modification._Happy_translating!
+  : Your accuracy rate is calculated based on how many of your translations are accepted by doctors without modification. Happy translating!
+  Translate_from: Translate from
+  Select_a_language: Select a language
+  to: to
+  Level_--: Level --
+  --/--pts: --/--pts
+  ! 'Translation:': ! 'Translation:'
+  Translated_by: Translated by
+  Look_up_in_dictionary: Look up in dictionary
+  Glossary_(: Glossary (
+  items): items)
+  Previous: Previous
+  Or,_skip_this_translation: Or, skip this translation
+  Send_feedback: Send feedback
+  Keyboard_Shortcuts: Keyboard Shortcuts
