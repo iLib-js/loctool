@@ -14,7 +14,10 @@ module.exports = {
         test.expect(1);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceFiles: {
+        		"ruby": "config"
+        	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
@@ -28,7 +31,10 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceFiles: {
+        		"ruby": "config"
+        	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
@@ -43,7 +49,10 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceFiles: {
+        		"ruby": "config"
+        	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
@@ -55,13 +64,116 @@ module.exports = {
 
         test.done();
     },
-    
+
+    testYamlFileTypeHandlesEnglishResourceFiles: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	resourceFiles: {
+        		"ruby": "config"
+        	}
+        }, "./testfiles");
+        
+        var yft = new YamlFileType(p);
+        test.ok(yft);
+        
+        test.ok(yft.handles("config/locales/en-US.yml"));
+        
+        test.done();
+    },
+
+    testYamlFileTypeHandlesBaseResourceFiles: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	resourceFiles: {
+        		"ruby": "config"
+        	}
+        }, "./testfiles");
+        
+        var yft = new YamlFileType(p);
+        test.ok(yft);
+        
+        test.ok(yft.handles("config/locales/en.yml"));
+        
+        test.done();
+    },
+
+    testYamlFileTypeHandlesNonEnglishResourceFiles: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	resourceFiles: {
+        		"ruby": "config"
+        	}
+        }, "./testfiles");
+        
+        var yft = new YamlFileType(p);
+        test.ok(yft);
+        
+        test.ok(!yft.handles("config/locales/zh-Hans-CN.yml"));
+        
+        test.done();
+    },
+
+    testYamlFileTypeHandlesNonResourceFiles: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	resourceFiles: {
+        		"ruby": "config"
+        	}
+        }, "./testfiles");
+        
+        var yft = new YamlFileType(p);
+        test.ok(yft);
+        
+        test.ok(!yft.handles("config/qaconfig.yml"));
+        
+        test.done();
+    },
+
+    testYamlFileTypeHandlesIncludeFiles: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	resourceFiles: {
+        		"ruby": "config"
+        	},
+        	includes: [
+        		"config/notifications.yml",
+        		"config/doctor_notification_setting_groups.yml",
+        		"config/refinement_questions.yml",
+        		"config/sso_errors.yml",
+        		"config/symptom_triage_copy.yml",
+        		"config/topic_meta.yml",
+        		"config/triage_samples.yml",
+        		"config/app_configs/language_display_name_en_us.yml"
+        	]
+        }, "./testfiles");
+        
+        var yft = new YamlFileType(p);
+        test.ok(yft);
+        
+        test.ok(yft.handles("config/nofications.yml"));
+        
+        test.done();
+    },
+
     testYamlFileTypeGetResourceFile: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	id: "ht-webapp12",
-        	sourceLocale: "de-DE"
+        	sourceLocale: "de-DE",
+        	resourceFiles: {
+        		"ruby": "config"
+        	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
@@ -79,7 +191,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-        	sourceLocale: "de-DE"
+        	sourceLocale: "de-DE",
+        	resourceFiles: {
+        		"ruby": "config"
+        	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
