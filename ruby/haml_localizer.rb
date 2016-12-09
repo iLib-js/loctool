@@ -170,7 +170,10 @@ def process_values(locale_mappings, values, unmapped_words)
   ret = {}
   values.each{|v|
     next if v.strip.length == 0
-    if locale_mappings[v]
+    hashed_key = create_hashed_key(v.gsub("\n", ""))
+    if locale_mappings[hashed_key]
+      ret[v] = locale_mappings[hashed_key]
+    elsif locale_mappings[v]
       ret[v] = locale_mappings[v]
     else
       unmapped_words << v
