@@ -4,7 +4,7 @@ require 'csv'
 require 'sanitize'
 require 'yaml'
 
-PSEUDO_LOCALE = 'zxx-XX'
+PSEUDO_LOCALE = 'en-GB'
 
 class HTParser < Haml::Parser
   attr_accessor :parent, :node_to_texts, :text_to_nodes,
