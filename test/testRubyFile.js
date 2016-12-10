@@ -64,7 +64,7 @@ module.exports = {
 		});
         test.ok(rf);
         
-        test.equal(rf.makeKey("This is a test"), "This_is_a_test");
+        test.equal(rf.makeKey("This is a test"), "r654479252");
         
         test.done();
     },
@@ -82,7 +82,7 @@ module.exports = {
 		});
         test.ok(rf);
 
-        test.equals(rf.makeKey("Medications    in $$$  your profile"), "Medications_in_your_profile");
+        test.equals(rf.makeKey("Medications    in $$$  your profile"), "r1005643851");
         
         test.done();
 	},
@@ -100,10 +100,46 @@ module.exports = {
 		});
         test.ok(rf);
 
-        test.equals(rf.makeKey("Terms___and___Conditions"), "Terms_and_Conditions");
+        test.equals(rf.makeKey("Terms___and___Conditions"), "r906781227");
         
         test.done();
 	},
+
+    testRubyFileMakeKeyDigits: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        test.equal(rf.makeKey("0"), "r3145008");
+        
+        test.done();
+    },
+
+    testRubyFileMakeKeyNonChars: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        test.equal(rf.makeKey("foo: done?!@#$%^&*()"), "r621645297");
+        
+        test.done();
+    },
 
     testRubyFileParseSimpleGetByKey: function(test) {
         test.expect(5);
@@ -123,11 +159,11 @@ module.exports = {
         var set = rf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ResourceString.hashKey("webapp", "en-US", "This_is_a_test"));
+        var r = set.get(ResourceString.hashKey("webapp", "en-US", "r654479252"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This_is_a_test");
+        test.equal(r.getKey(), "r654479252");
         
         test.done();
     },
@@ -153,7 +189,7 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This_is_a_test");
+        test.equal(r.getKey(), "r654479252");
         
         test.done();
     },
@@ -202,7 +238,7 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This_is_a_test");
+        test.equal(r.getKey(), "r654479252");
         
         test.done();
     },
@@ -254,7 +290,7 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This_is_a_test");
+        test.equal(r.getKey(), "r654479252");
         test.equal(r.getComment(), "this is a translator's comment");
         
         test.done();
@@ -281,12 +317,12 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This_is_a_test");
+        test.equal(r.getKey(), "r654479252");
         
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
-        test.equal(r.getKey(), "This_is_also_a_test");
+        test.equal(r.getKey(), "r999080996");
         
         test.done();
     },
@@ -312,13 +348,13 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This_is_a_test");
+        test.equal(r.getKey(), "r654479252");
         test.equal(r.getComment(), "foo");
         
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
-        test.equal(r.getKey(), "This_is_also_a_test");
+        test.equal(r.getKey(), "r999080996");
         test.equal(r.getComment(), "bar");
         
         test.done();
@@ -345,13 +381,13 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This_is_a_test");
+        test.equal(r.getKey(), "r654479252");
         test.equal(r.getComment(), "foo");
         
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
-        test.equal(r.getKey(), "This_is_also_a_test");
+        test.equal(r.getKey(), "r999080996");
         test.equal(r.getComment(), "bar");
         
         test.done();
@@ -378,7 +414,7 @@ module.exports = {
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
-        test.equal(r.getKey(), "This_is_a_test");
+        test.equal(r.getKey(), "r654479252");
         
         test.equal(set.size(), 1);
         
@@ -536,12 +572,12 @@ module.exports = {
         var r = set.getBySource("Noted that person %{person_id} has %{source} installed");
         test.ok(r);
         test.equal(r.getSource(), "Noted that person %{person_id} has %{source} installed");
-        test.equal(r.getKey(), "Noted_that_person_person_id_has_source_installed");
+        test.equal(r.getKey(), "r924558074");
         
         r = set.getBySource("data is missing or empty.");
         test.ok(r);
         test.equal(r.getSource(), "data is missing or empty.");
-        test.equal(r.getKey(), "data_is_missing_or_empty");
+        test.equal(r.getKey(), "r62756614");
         
         test.done();
     },
