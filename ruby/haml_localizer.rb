@@ -370,9 +370,9 @@ unless defined?(TEST_ENV)
         #from_to = strip_whitespace(from_to)
         puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
         #process_values(locale_mappings, from_to.keys, unmapped_for_file)
-        template = replace_with_translations2(template, from_to)
+        output_template = replace_with_translations2(template.dup, from_to)
         begin
-          x = HTParser.new(template, Haml::Options.new)
+          x = HTParser.new(output_template, Haml::Options.new)
           root = x.parse
         rescue => e
           puts "ERROR: Bad substitution created invalid template for #{path_name}"
@@ -386,7 +386,7 @@ unless defined?(TEST_ENV)
           # the original template does not have a lang_locale, test.html.haml
           new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{locale_name}.html.haml"
         end
-        File.open(new_file_name, 'w') { |file| file.write(template) }
+        File.open(new_file_name, 'w') { |file| file.write(output_template) }
       end
       unmapped_words[file_name] = unmapped_for_file
     rescue => ex
