@@ -171,8 +171,14 @@ def process_values(locale_mappings, values, unmapped_words)
   values.each{|v|
     next if v.strip.length == 0
     hashed_key = create_hashed_key(v.gsub("\n", ""))
+    formatted_key = v.gsub("\n","").gsub(' ','_').capitalize
+    # puts "checking #{v} #{hashed_key} #{formatted_key}"
+    # puts locale_mappings.keys.first(50).to_s
+    # puts "got #{locale_mappings[v]} #{locale_mappings[hashed_key]} #{locale_mappings[formatted_key]}"
     if locale_mappings[hashed_key]
       ret[v] = locale_mappings[hashed_key]
+    elsif locale_mappings[formatted_key]
+      ret[v] = locale_mappings[formatted_key]
     elsif locale_mappings[v]
       ret[v] = locale_mappings[v]
     else
@@ -355,14 +361,15 @@ unless defined?(TEST_ENV)
       locale_names.each do |locale_name|
         puts "file_name=#{path_name} locale_name=#{locale_name}"
         locale_mappings = all_locale_mappings[locale_name] || {}
+        locale_mappings = locale_mappings[locale_name] unless locale_mappings[locale_name].nil?
         if locale_name == PSEUDO_LOCALE
           from_to = process_pseudo_values(values)
         else
           from_to = process_values(locale_mappings, values, unmapped_for_file)
         end
-        from_to = strip_whitespace(from_to)
-        puts from_to
-        process_values(locale_mappings, from_to.keys, unmapped_for_file)
+        #from_to = strip_whitespace(from_to)
+        puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
+        #process_values(locale_mappings, from_to.keys, unmapped_for_file)
         template = replace_with_translations2(template, from_to)
         begin
           x = HTParser.new(template, Haml::Options.new)
