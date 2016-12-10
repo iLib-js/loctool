@@ -108,6 +108,74 @@ module.exports = {
         test.done();
     },
 
+    testYamlFileParseWithSubkeys: function(test) {
+        test.expect(22);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+        
+        yml.parse(
+        		'---\n' +
+        		"'feelgood/foo/bar/x.en-US.html.haml':\n" +
+        		'  r9834724545: Jobs\n' +
+        		'  r9483762220: Our internship program\n' +
+        		'  r6782977423: |\n' +
+        		'    Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'    directly from experienced, successful entrepreneurs.\n' +
+				"'feelgood/foo/ssss/asdf.en-US.html.haml':\n" +
+				'  r4524523454: Working at HealthTap\n' +
+				'  r3254356823: Jobs\n' +
+				'foo:\n' +
+				'  bar:\n' +
+				'    asdf:\n' +
+				'      test: test of many levels\n');
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getAll();
+        test.ok(r);
+        
+        test.equal(r.length, 6);
+        
+        test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getKey(), "r9834724545");
+        test.equal(r[0].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[1].getSource(), "Our internship program");
+        test.equal(r[1].getKey(), "r9483762220");
+        test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[2].getSource(), 
+        		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'directly from experienced, successful entrepreneurs.\n');
+        test.equal(r[2].getKey(), "r6782977423");
+        test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[3].getSource(), "Working at HealthTap");
+        test.equal(r[3].getKey(), "r4524523454");
+        test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
+
+        test.equal(r[4].getSource(), "Jobs");
+        test.equal(r[4].getKey(), "r3254356823");
+        test.equal(r[4].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
+
+        test.equal(r[5].getSource(), "test of many levels");
+        test.equal(r[5].getKey(), "test");
+        test.equal(r[5].getContext(), "foo/bar/asdf");
+
+        test.done();
+    },
+
     testYamlFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
@@ -268,11 +336,17 @@ module.exports = {
         ].forEach(function(res) {
         	yml.addResource(res);
         });
-        
+
+        diff(yml.getContent(),
+            	'de_DE:\n' +
+            	'  source_text: Quellen\"text\n' +
+            	'  more_source_text: mehr Quellen\"text\n'
+            );
+
         test.equal(yml.getContent(),
         	'de_DE:\n' +
-        	'    source_text: \'Quellen\"text\'\n' +
-        	'    more_source_text: \'mehr Quellen\"text\'\n'
+        	'  source_text: Quellen\"text\n' +
+        	'  more_source_text: mehr Quellen\"text\n'
         );
         
         test.done();
@@ -312,10 +386,16 @@ module.exports = {
         	yml.addResource(res);
         });
         
+        diff(yml.getContent(),
+            	"zh_Hans_CN:\n" +
+            	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
+            	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
+    	    );
+
         test.equal(yml.getContent(),
         	"zh_Hans_CN:\n" +
-        	"    '• &amp;nbsp; Address a health or healthy living topic': '• &amp;nbsp; 解决健康生活相关的话题'\n" +
-        	"    '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
+        	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
+        	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
         );
         
         test.done();
@@ -355,10 +435,20 @@ module.exports = {
         	yml.addResource(res);
         });
         
+        diff(yml.getContent(),
+	    	"zh_Hans_CN:\n" +
+	    	"  short key: |-\n" +
+	    	"    this is text that is relatively long and can run past the end of the page\n" +
+	    	"    So, we put a new line in the middle of it.\n" +
+	    	"  \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
+	    );
+
         test.equal(yml.getContent(),
-        	"zh_Hans_CN:\n" +
-        	"    'short key': \"this is text that is relatively long and can run past the end of the page\\nSo, we put a new line in the middle of it.\"\n" +
-        	"    \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": 'short text'\n"
+	    	"zh_Hans_CN:\n" +
+	    	"  short key: |-\n" +
+	    	"    this is text that is relatively long and can run past the end of the page\n" +
+	    	"    So, we put a new line in the middle of it.\n" +
+	    	"  \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
         );
         
         test.done();
@@ -379,7 +469,7 @@ module.exports = {
         });
         test.ok(yml);
         
-        test.equal(yml.getContent(), '');
+        test.equal(yml.getContent(), '{}\n');
         
         test.done();
     },
