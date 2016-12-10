@@ -70,4 +70,40 @@ describe 'HamlLocalizer' do
       expect(ret['en-XY']).to eq({})
     end
   end
+
+  describe 'create_hashed_key' do
+    it 'works' do
+      expect(create_hashed_key("Medications in your profile")).to eq("r32020327");
+      expect(create_hashed_key("All medications")).to eq("r835310324");
+      expect(create_hashed_key("Conditions")).to eq("r103883086");
+      expect(create_hashed_key("Symptoms")).to eq("r481086103");
+      expect(create_hashed_key("Experts")).to eq("r343852585");
+      expect(create_hashed_key("Procedures")).to eq("r807691021");
+      expect(create_hashed_key("Health Apps")).to eq("r941505899");
+      expect(create_hashed_key("Conditions in your profile")).to eq("r240633868");
+      expect(create_hashed_key("Treatment Reviews")).to eq("r795086964");
+      expect(create_hashed_key("Answers")).to eq("r221604632");
+      expect(create_hashed_key("Private Health Profile")).to eq("r669315500");
+      expect(create_hashed_key("People you care for")).to eq("r710774033");
+      expect(create_hashed_key("Notifications")).to eq("r284964820");
+      expect(create_hashed_key("News")).to eq("r613036745");
+      expect(create_hashed_key("More Tips")).to eq("r216617786");
+      expect(create_hashed_key("Goals")).to eq("r788359072");
+      expect(create_hashed_key("Referral Link")).to eq("r140625167");
+      expect(create_hashed_key("Questions")).to eq("r256277957");
+      expect(create_hashed_key("Private consults")).to eq("r18128760");
+      expect(create_hashed_key("Suggested doctors for you")).to eq("r584966709");
+      expect(create_hashed_key("Can\'t find treatment id")).to eq("r926831062");
+      expect(create_hashed_key("Can\'t find an application for SMS")).to eq("r909283218");
+      expect(create_hashed_key("{topic_name}({topic_generic_name})")).to eq("r382554039");
+      expect(create_hashed_key("{doctor_name}, {sharer_name} {start}found this helpful{end}")).to eq("r436261634");
+      expect(create_hashed_key("{sharer_name} {start}found this helpful{end}")).to eq("r858107784");
+      expect(create_hashed_key("Grow your Care-Team")).to eq("r522565682");
+      expect(create_hashed_key("Failed to send connection request!")).to eq("r1015770123");
+      expect(create_hashed_key("{goal_name} Goals")).to eq("r993422001");
+      expect(create_hashed_key("Referral link copied!")).to eq("r201354363");
+      expect(create_hashed_key("This is a test")).to eq("r654479252");
+      expect(create_hashed_key("This is a test")).to eq("r654479252");
+    end
+  end
 end
