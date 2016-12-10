@@ -336,11 +336,17 @@ module.exports = {
         ].forEach(function(res) {
         	yml.addResource(res);
         });
-        
+
+        diff(yml.getContent(),
+            	'de_DE:\n' +
+            	'  source_text: Quellen\"text\n' +
+            	'  more_source_text: mehr Quellen\"text\n'
+            );
+
         test.equal(yml.getContent(),
         	'de_DE:\n' +
-        	'    source_text: \'Quellen\"text\'\n' +
-        	'    more_source_text: \'mehr Quellen\"text\'\n'
+        	'  source_text: Quellen\"text\n' +
+        	'  more_source_text: mehr Quellen\"text\n'
         );
         
         test.done();
@@ -380,10 +386,16 @@ module.exports = {
         	yml.addResource(res);
         });
         
+        diff(yml.getContent(),
+            	"zh_Hans_CN:\n" +
+            	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
+            	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
+    	    );
+
         test.equal(yml.getContent(),
         	"zh_Hans_CN:\n" +
-        	"    '• &amp;nbsp; Address a health or healthy living topic': '• &amp;nbsp; 解决健康生活相关的话题'\n" +
-        	"    '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
+        	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
+        	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
         );
         
         test.done();
@@ -423,10 +435,20 @@ module.exports = {
         	yml.addResource(res);
         });
         
+        diff(yml.getContent(),
+	    	"zh_Hans_CN:\n" +
+	    	"  short key: |-\n" +
+	    	"    this is text that is relatively long and can run past the end of the page\n" +
+	    	"    So, we put a new line in the middle of it.\n" +
+	    	"  \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
+	    );
+
         test.equal(yml.getContent(),
-        	"zh_Hans_CN:\n" +
-        	"    'short key': \"this is text that is relatively long and can run past the end of the page\\nSo, we put a new line in the middle of it.\"\n" +
-        	"    \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": 'short text'\n"
+	    	"zh_Hans_CN:\n" +
+	    	"  short key: |-\n" +
+	    	"    this is text that is relatively long and can run past the end of the page\n" +
+	    	"    So, we put a new line in the middle of it.\n" +
+	    	"  \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
         );
         
         test.done();
@@ -447,7 +469,7 @@ module.exports = {
         });
         test.ok(yml);
         
-        test.equal(yml.getContent(), '');
+        test.equal(yml.getContent(), '{}\n');
         
         test.done();
     },
