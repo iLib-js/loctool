@@ -151,16 +151,20 @@ def accumulate_values(root, values, path_name)
 end
 
 
-PSUEDO_MAP = {    "a"=> "à",    "c"=> "ç",    "d"=> "ð",    "e"=> "ë",    "g"=> "ğ",    "h"=> "ĥ",    "i"=> "í",    "j"=> "ĵ",    "k"=> "ķ",    "l"=> "ľ",    "n"=> "ñ",    "o"=> "õ",    "p"=> "þ",    "r"=> "ŕ",    "s"=> "š",    "t"=> "ţ",    "u"=> "ü",    "w"=> "ŵ",    "y"=> "ÿ",    "z"=> "ž",    "A"=> "Ã",    "B"=> "ß",    "C"=> "Ç",    "D"=> "Ð",    "E"=> "Ë",    "G"=> "Ĝ",    "H"=> "Ħ",    "I"=> "Ï",    "J"=> "Ĵ",    "K"=> "ĸ",    "L"=> "Ľ",    "N"=> "Ň",    "O"=> "Ø",    "R"=> "Ŗ",    "S"=> "Š",    "T"=> "Ť",    "U"=> "Ú",    "W"=> "Ŵ",    "Y"=> "Ŷ",    "Z"=> "Ż"}
+PSEUDO_MAP = {    "a"=> "à",    "c"=> "ç",    "d"=> "ð",    "e"=> "ë",    "g"=> "ğ",    "h"=> "ĥ",    "i"=> "í",    "j"=> "ĵ",    "k"=> "ķ",    "l"=> "ľ",    "n"=> "ñ",    "o"=> "õ",    "p"=> "þ",    "r"=> "ŕ",    "s"=> "š",    "t"=> "ţ",    "u"=> "ü",    "w"=> "ŵ",    "y"=> "ÿ",    "z"=> "ž",    "A"=> "Ã",    "B"=> "ß",    "C"=> "Ç",    "D"=> "Ð",    "E"=> "Ë",    "G"=> "Ĝ",    "H"=> "Ħ",    "I"=> "Ï",    "J"=> "Ĵ",    "K"=> "ĸ",    "L"=> "Ľ",    "N"=> "Ň",    "O"=> "Ø",    "R"=> "Ŗ",    "S"=> "Š",    "T"=> "Ť",    "U"=> "Ú",    "W"=> "Ŵ",    "Y"=> "Ŷ",    "Z"=> "Ż"}
 #return <original string> => <string to replace with>
 def process_pseudo_values(values)
   ret = {}
   values.each{|v|
-    ret[v] = v.split('').map{|c| PSUEDO_MAP[c] ? PSUEDO_MAP[c] : c}.join('')
-    string_padding = ((ret[v].length * 0.4).to_i).downto(1).to_a.join('')
-    ret[v] = ret[v].concat(string_padding)
+    ret[v] = pseudolocalize(v)
   }
   ret
+end
+
+def pseudolocalize(string)
+  replaced = string.split('').map{|c| PSEUDO_MAP[c] ? PSEUDO_MAP[c] : c}.join('')
+  padding = ((string.length * 0.4).to_i).downto(1).to_a.join('')
+  (replaced).concat(padding)
 end
 
 #param locale_mappings - The existing mappings in out system we can map values to
@@ -182,6 +186,7 @@ def process_values(locale_mappings, values, unmapped_words)
     elsif locale_mappings[v]
       ret[v] = locale_mappings[v]
     else
+      ret[v] = pseudolocalize(v)
       unmapped_words << v
     end
   }
