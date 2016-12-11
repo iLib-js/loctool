@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="android/res/layout/layout_refer_individual.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="1" resname="text__test_Known_for_blah" restype="string" datatype="x-android-resource">
+        <source>(test)Known for blah</source><seg-source><mrk mtype="seg" mid="1">(test)Known for blah</mrk></seg-source><target><mrk mtype="seg" mid="1">(测试)任意输入</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/paticipant/SearchParticipantDialog.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="2" resname="r431194129" restype="string" datatype="java">
+        <source>Enter name, specialty, or topic</source><seg-source><mrk mtype="seg" mid="2">Enter name, specialty, or topic</mrk></seg-source><target><mrk mtype="seg" mid="2">输入姓名，专业或主题</mrk></target>
+      </trans-unit>
+      <trans-unit id="3" resname="r713954102" restype="string" datatype="java">
+        <source>{doctor_name} invited.</source><seg-source><mrk mtype="seg" mid="3">{doctor_name} invited.</mrk></seg-source><target><mrk mtype="seg" mid="3">{doctor_name}已邀请。</mrk></target>
+      </trans-unit>
+      <trans-unit id="4" resname="r758668640" restype="string" datatype="java">
+        <source>Failed to invite {doctor_name}</source><seg-source><mrk mtype="seg" mid="4">Failed to invite {doctor_name}</mrk></seg-source><target><mrk mtype="seg" mid="4">邀请失败 {doctor_name}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/paticipant/ParticipantsFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="5" resname="r7383209" restype="string" datatype="java">
+        <source>Invite others to session</source><seg-source><mrk mtype="seg" mid="5">Invite others to session</mrk></seg-source><target><mrk mtype="seg" mid="5">邀请其他人加入会议</mrk></target>
+      </trans-unit>
+      <trans-unit id="6" resname="r236672717" restype="string" datatype="java">
+        <source>Join my consult with: </source><seg-source><mrk mtype="seg" mid="6">Join my consult with:</mrk> </seg-source><target><mrk mtype="seg" mid="6">加入我的咨询：</mrk> </target>
+      </trans-unit>
+      <trans-unit id="7" resname="r335504771" restype="string" datatype="java">
+        <source>How would you like to invite</source><seg-source><mrk mtype="seg" mid="7">How would you like to invite</mrk></seg-source><target><mrk mtype="seg" mid="7">您想如何邀请</mrk></target>
+      </trans-unit>
+      <trans-unit id="8" resname="r412453752" restype="string" datatype="java">
+        <source>Share via: </source><seg-source><mrk mtype="seg" mid="8">Share via:</mrk> </seg-source><target><mrk mtype="seg" mid="8">分享：</mrk> </target>
+      </trans-unit>
+      <trans-unit id="9" resname="r202246463" restype="string" datatype="java">
+        <source>Failed to remove {person_name}: {message}</source><seg-source><mrk mtype="seg" mid="9">Failed to remove {person_name}:</mrk> <mrk mtype="seg" mid="10">{message}</mrk></seg-source><target><mrk mtype="seg" mid="9">移除失败 {person_name}:</mrk> <mrk mtype="seg" mid="10">{message}</mrk></target>
+      </trans-unit>
+      <trans-unit id="10" resname="r425723870" restype="string" datatype="java">
+        <source>Failed to remove {person_name}</source><seg-source><mrk mtype="seg" mid="11">Failed to remove {person_name}</mrk></seg-source><target><mrk mtype="seg" mid="11">移除失败 {person_name}</mrk></target>
+      </trans-unit>
+      <trans-unit id="11" resname="r211395157" restype="string" datatype="java">
+        <source>Failed to promote {person_name}: {message}</source><seg-source><mrk mtype="seg" mid="12">Failed to promote {person_name}:</mrk> <mrk mtype="seg" mid="13">{message}</mrk></seg-source><target><mrk mtype="seg" mid="12">升级失败 {person_name}:</mrk> <mrk mtype="seg" mid="13">{message}</mrk></target>
+      </trans-unit>
+      <trans-unit id="12" resname="r653015505" restype="string" datatype="java">
+        <source>Failed to promote {person_name}</source><seg-source><mrk mtype="seg" mid="14">Failed to promote {person_name}</mrk></seg-source><target><mrk mtype="seg" mid="14">升级失败 {person_name}</mrk></target>
+      </trans-unit>
+      <trans-unit id="13" resname="r728008924" restype="string" datatype="java">
+        <source>Failed to call {person_name}: {message}</source><seg-source><mrk mtype="seg" mid="15">Failed to call {person_name}:</mrk> <mrk mtype="seg" mid="16">{message}</mrk></seg-source><target><mrk mtype="seg" mid="15">呼叫失败 {person_name}:</mrk> <mrk mtype="seg" mid="16">{message}</mrk></target>
+      </trans-unit>
+      <trans-unit id="14" resname="r260271836" restype="string" datatype="java">
+        <source>Failed to call {person_name}</source><seg-source><mrk mtype="seg" mid="17">Failed to call {person_name}</mrk></seg-source><target><mrk mtype="seg" mid="17">呼叫失败 {person_name}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/models/ChatSessionModel.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="15" resname="r842940493" restype="string" datatype="java">
+        <source>{state}, {country}</source><seg-source><mrk mtype="seg" mid="18">{state}, {country}</mrk></seg-source><target><mrk mtype="seg" mid="18">{state}, {country}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/fragments/ConsultChatFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="16" resname="r489564967" restype="string" datatype="java">
+        <source>Live video</source><seg-source><mrk mtype="seg" mid="19">Live video</mrk></seg-source><target><mrk mtype="seg" mid="19">实时视频</mrk></target>
+      </trans-unit>
+      <trans-unit id="17" resname="r255372023" restype="string" datatype="java">
+        <source>Live audio</source><seg-source><mrk mtype="seg" mid="20">Live audio</mrk></seg-source><target><mrk mtype="seg" mid="20">实时音频</mrk></target>
+      </trans-unit>
+      <trans-unit id="18" resname="r64865438" restype="string" datatype="java">
+        <source>Live chat</source><seg-source><mrk mtype="seg" mid="21">Live chat</mrk></seg-source><target><mrk mtype="seg" mid="21">实时聊天</mrk></target>
+      </trans-unit>
+      <trans-unit id="19" resname="r546901933" restype="string" datatype="java">
+        <source>Inbox consult</source><seg-source><mrk mtype="seg" mid="22">Inbox consult</mrk></seg-source><target><mrk mtype="seg" mid="22">收件箱咨询</mrk></target>
+      </trans-unit>
+      <trans-unit id="20" resname="r475455417" restype="string" datatype="java">
+        <source>Transcript</source><seg-source><mrk mtype="seg" mid="23">Transcript</mrk></seg-source><target><mrk mtype="seg" mid="23">复印件</mrk></target>
+        
+      <note>This refers to medical consult transcript</note></trans-unit>
+      <trans-unit id="21" resname="r388976557" restype="string" datatype="java">
+        <source>Speakerphone on</source><seg-source><mrk mtype="seg" mid="24">Speakerphone on</mrk></seg-source><target><mrk mtype="seg" mid="24">打开扬声器</mrk></target>
+        
+      <note>This is a toggle button text for users to turn on the speakerphone</note></trans-unit>
+      <trans-unit id="22" resname="r894038144" restype="string" datatype="java">
+        <source>Speakerphone off</source><seg-source><mrk mtype="seg" mid="25">Speakerphone off</mrk></seg-source><target><mrk mtype="seg" mid="25">关闭扬声器</mrk></target>
+        
+      <note>This is a toggle button text for users to turn off the speakerphone</note></trans-unit>
+      <trans-unit id="23" resname="r732893650" restype="string" datatype="java">
+        <source>Microphone on</source><seg-source><mrk mtype="seg" mid="26">Microphone on</mrk></seg-source><target><mrk mtype="seg" mid="26">打开麦克风</mrk></target>
+        
+      <note>This is a toggle button text for users to turn on the microphone</note></trans-unit>
+      <trans-unit id="24" resname="r66962854" restype="string" datatype="java">
+        <source>Microphone off</source><seg-source><mrk mtype="seg" mid="27">Microphone off</mrk></seg-source><target><mrk mtype="seg" mid="27">关闭麦克风</mrk></target>
+        
+      <note>This is a toggle button text for users to turn off the microphone</note></trans-unit>
+      <trans-unit id="25" resname="r898356852" restype="string" datatype="java">
+        <source>{expert_name_prefix} {expert_last_name}</source><seg-source><mrk mtype="seg" mid="28">{expert_name_prefix} {expert_last_name}</mrk></seg-source><target><mrk mtype="seg" mid="28">{expert_name_prefix} {expert_last_name}</mrk></target>
+      </trans-unit>
+      <trans-unit id="26" resname="r52706585" restype="string" datatype="java">
+        <source>No paired device found.</source><seg-source><mrk mtype="seg" mid="29">No paired device found.</mrk></seg-source><target><mrk mtype="seg" mid="29">未找到配对的设备。</mrk></target>
+      </trans-unit>
+      <trans-unit id="27" resname="r138398089" restype="string" datatype="java">
+        <source>Select device</source><seg-source><mrk mtype="seg" mid="30">Select device</mrk></seg-source><target><mrk mtype="seg" mid="30">选择设备</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/dialog/OnHoldDialog.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="28" resname="r1052400974" restype="string" datatype="java">
+        <source>You are currently on hold</source><seg-source><mrk mtype="seg" mid="31">You are currently on hold</mrk></seg-source><target><mrk mtype="seg" mid="31">您目前处于暂停状态</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/dialog/ConsultSettingsDialog.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="29" resname="r705098731" restype="string" datatype="java">
+        <source>Settings</source><seg-source><mrk mtype="seg" mid="32">Settings</mrk></seg-source><target><mrk mtype="seg" mid="32">设置</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/dialog/AttachmentDescriptionDialog.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="30" resname="r118721288" restype="string" datatype="java">
+        <source>Please upload a file that is less than 10 MB.</source><seg-source><mrk mtype="seg" mid="33">Please upload a file that is less than 10 MB.</mrk></seg-source><target><mrk mtype="seg" mid="33">请上传小于10MB的文件。</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="31" resname="r717299647" restype="string" datatype="java">
+        <source>You haven't selected a stethoscope yet</source><seg-source><mrk mtype="seg" mid="34">You haven't selected a stethoscope yet</mrk></seg-source><target><mrk mtype="seg" mid="34">您尚未选择听诊器</mrk></target>
+      </trans-unit>
+      <trans-unit id="32" resname="r195753892" restype="string" datatype="java">
+        <source>{sound_track_id}, Len: %d</source><seg-source><mrk mtype="seg" mid="35">{sound_track_id}, Len:</mrk> <mrk mtype="seg" mid="36">%d</mrk></seg-source><target><mrk mtype="seg" mid="35">{sound_track_id}, Len:</mrk> <mrk mtype="seg" mid="36">%d</mrk></target>
+        
+      <note>'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note></trans-unit>
+      <trans-unit id="33" resname="r606329135" restype="string" datatype="java">
+        <source>Select a track you want to download</source><seg-source><mrk mtype="seg" mid="37">Select a track you want to download</mrk></seg-source><target><mrk mtype="seg" mid="37">选择要下载的线路</mrk></target>
+      </trans-unit>
+      <trans-unit id="34" resname="r27218583" restype="string" datatype="java">
+        <source>Connecting</source><seg-source><mrk mtype="seg" mid="38">Connecting</mrk></seg-source><target><mrk mtype="seg" mid="38">连接中</mrk></target>
+      </trans-unit>
+      <trans-unit id="35" resname="r537117311" restype="string" datatype="java">
+        <source>Failed to connect stethoscope</source><seg-source><mrk mtype="seg" mid="39">Failed to connect stethoscope</mrk></seg-source><target><mrk mtype="seg" mid="39">无法连接到听诊器</mrk></target>
+      </trans-unit>
+      <trans-unit id="36" resname="r643006336" restype="string" datatype="java">
+        <source>Reading track</source><seg-source><mrk mtype="seg" mid="40">Reading track</mrk></seg-source><target><mrk mtype="seg" mid="40">读取线路中</mrk></target>
+      </trans-unit>
+      <trans-unit id="37" resname="r16321303" restype="string" datatype="java">
+        <source>Error occurred while reading audio</source><seg-source><mrk mtype="seg" mid="41">Error occurred while reading audio</mrk></seg-source><target><mrk mtype="seg" mid="41">读取音频时出错</mrk></target>
+      </trans-unit>
+      <trans-unit id="38" resname="r98241011" restype="string" datatype="java">
+        <source>Downloaded to: </source><seg-source><mrk mtype="seg" mid="42">Downloaded to:</mrk> </seg-source><target><mrk mtype="seg" mid="42">下载到：</mrk> </target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/chat/messages/SoapMessage.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="39" resname="r636554515" restype="string" datatype="java">
+        <source>Failed to download pdf</source><seg-source><mrk mtype="seg" mid="43">Failed to download pdf</mrk></seg-source><target><mrk mtype="seg" mid="43">无法下载pdf</mrk></target>
+      </trans-unit>
+      <trans-unit id="40" resname="r324623762" restype="string" datatype="java">
+        <source>Diagnosis codes:\n</source><seg-source><mrk mtype="seg" mid="44">Diagnosis codes:\n</mrk></seg-source><target><mrk mtype="seg" mid="44">诊断码：\n</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/chat/messages/PersonalCheckAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="41" resname="r402577151" restype="string" datatype="java">
+        <source>{duration}, {frequency}</source><seg-source><mrk mtype="seg" mid="45">{duration}, {frequency}</mrk></seg-source><target><mrk mtype="seg" mid="45">{duration}, {frequency}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/chat/messages/ChatMessage.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="42" resname="r250644003" restype="string" datatype="java">
+        <source>HealthTap</source><seg-source><mrk mtype="seg" mid="46">HealthTap</mrk></seg-source><target><mrk mtype="seg" mid="46">HealthTap</mrk></target>
+      </trans-unit>
+      <trans-unit id="43" resname="r247297121" restype="string" datatype="java">
+        <source>You</source><seg-source><mrk mtype="seg" mid="47">You</mrk></seg-source><target><mrk mtype="seg" mid="47">您</mrk></target>
+      </trans-unit>
+      <trans-unit id="44" resname="r48889349" restype="string" datatype="java">
+        <source>Delivered on {time}</source><seg-source><mrk mtype="seg" mid="48">Delivered on {time}</mrk></seg-source><target><mrk mtype="seg" mid="48">发送 {time}</mrk></target>
+      </trans-unit>
+      <trans-unit id="45" resname="r1062842433" restype="string" datatype="java">
+        <source>Read on {time}</source><seg-source><mrk mtype="seg" mid="49">Read on {time}</mrk></seg-source><target><mrk mtype="seg" mid="49">读取 {time}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/chat/messages/BaseMessage.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="46" resname="r112762470" restype="string" datatype="java">
+        <source>Not delivered</source><seg-source><mrk mtype="seg" mid="50">Not delivered</mrk></seg-source><target><mrk mtype="seg" mid="50">尚未发送</mrk></target>
+      </trans-unit>
+      <trans-unit id="47" resname="r309744846" restype="string" datatype="java">
+        <source>Sending</source><seg-source><mrk mtype="seg" mid="51">Sending</mrk></seg-source><target><mrk mtype="seg" mid="51">发送中</mrk></target>
+      </trans-unit>
+      <trans-unit id="48" resname="r998864187" restype="string" datatype="java">
+        <source>Delivered</source><seg-source><mrk mtype="seg" mid="52">Delivered</mrk></seg-source><target><mrk mtype="seg" mid="52">已发送</mrk></target>
+      </trans-unit>
+      <trans-unit id="49" resname="r284091905" restype="string" datatype="java">
+        <source>Read</source><seg-source><mrk mtype="seg" mid="53">Read</mrk></seg-source><target><mrk mtype="seg" mid="53">读取</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/attachment/UploadFileAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="50" resname="r1032557259" restype="string" datatype="java">
+        <source>Uploaded {date}</source><seg-source><mrk mtype="seg" mid="54">Uploaded {date}</mrk></seg-source><target><mrk mtype="seg" mid="54">已更新 {date}</mrk></target>
+      </trans-unit>
+      <trans-unit id="51" resname="r337822860" restype="string" datatype="java">
+        <source>Last shared with</source><seg-source><mrk mtype="seg" mid="55">Last shared with</mrk></seg-source><target><mrk mtype="seg" mid="55">上一次分享</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/Util.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="52" resname="r372889647" restype="string" datatype="java">
+        <source>{file_size} KB</source><seg-source><mrk mtype="seg" mid="56">{file_size} KB</mrk></seg-source><target><mrk mtype="seg" mid="56">{file_size} KB</mrk></target>
+      </trans-unit>
+      <trans-unit id="53" resname="r368958217" restype="string" datatype="java">
+        <source>{file_size} MB</source><seg-source><mrk mtype="seg" mid="57">{file_size} MB</mrk></seg-source><target><mrk mtype="seg" mid="57">{file_size} MB</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/ChoosePreviousActivity.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="54" resname="r321612885" restype="string" datatype="java">
+        <source>Past uploads</source><seg-source><mrk mtype="seg" mid="58">Past uploads</mrk></seg-source><target><mrk mtype="seg" mid="58">已上传的内容</mrk></target>
+      </trans-unit>
+      <trans-unit id="55" resname="r409490200" restype="string" datatype="java">
+        <source>Are you sure?</source><seg-source><mrk mtype="seg" mid="59">Are you sure?</mrk></seg-source><target><mrk mtype="seg" mid="59">您确定吗？</mrk></target>
+      </trans-unit>
+      <trans-unit id="56" resname="r942436038" restype="string" datatype="java">
+        <source>Are you sure you want to remove this attachment?</source><seg-source><mrk mtype="seg" mid="60">Are you sure you want to remove this attachment?</mrk></seg-source><target><mrk mtype="seg" mid="60">您确定想要删除附件吗？</mrk></target>
+      </trans-unit>
+      <trans-unit id="57" resname="r43951314" restype="string" datatype="java">
+        <source>Remove</source><seg-source><mrk mtype="seg" mid="61">Remove</mrk></seg-source><target><mrk mtype="seg" mid="61">删除</mrk></target>
+        
+      <note>Negative Button text. Confirm removing an attachment.</note></trans-unit>
+      <trans-unit id="58" resname="r794612910" restype="string" datatype="java">
+        <source>Never Mind</source><seg-source><mrk mtype="seg" mid="62">Never Mind</mrk></seg-source><target><mrk mtype="seg" mid="62">没有关系</mrk></target>
+        
+      <note>Positive Button text. Give up removing an attachment.</note></trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/ApiUtil.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="59" resname="r477931224" restype="string" datatype="java">
+        <source>Error sending start session.</source><seg-source><mrk mtype="seg" mid="63">Error sending start session.</mrk></seg-source><target><mrk mtype="seg" mid="63">发送开始会话时出错。</mrk></target>
+      </trans-unit>
+      <trans-unit id="60" resname="r575397564" restype="string" datatype="java">
+        <source>Error sending start video.</source><seg-source><mrk mtype="seg" mid="64">Error sending start video.</mrk></seg-source><target><mrk mtype="seg" mid="64">发送开始视频时出错。</mrk></target>
+      </trans-unit>
+      <trans-unit id="61" resname="r368163820" restype="string" datatype="java">
+        <source>Sorry, there was an issue joining the call.</source><seg-source><mrk mtype="seg" mid="65">Sorry, there was an issue joining the call.</mrk></seg-source><target><mrk mtype="seg" mid="65">很抱歉，加入通话时发生问题。</mrk></target>
+      </trans-unit>
+      <trans-unit id="62" resname="r94148678" restype="string" datatype="java">
+        <source>Error joining consult</source><seg-source><mrk mtype="seg" mid="66">Error joining consult</mrk></seg-source><target><mrk mtype="seg" mid="66">加入咨询时出错</mrk></target>
+      </trans-unit>
+      <trans-unit id="63" resname="r829727888" restype="string" datatype="java">
+        <source>Error retrying start session.</source><seg-source><mrk mtype="seg" mid="67">Error retrying start session.</mrk></seg-source><target><mrk mtype="seg" mid="67">重试开始会话时出错。</mrk></target>
+      </trans-unit>
+      <trans-unit id="64" resname="r214012589" restype="string" datatype="java">
+        <source>Something went wrong</source><seg-source><mrk mtype="seg" mid="68">Something went wrong</mrk></seg-source><target><mrk mtype="seg" mid="68">出问题了</mrk></target>
+      </trans-unit>
+      <trans-unit id="65" resname="r1034606164" restype="string" datatype="java">
+        <source>There was an error accepting the call.</source><seg-source><mrk mtype="seg" mid="69">There was an error accepting the call.</mrk></seg-source><target><mrk mtype="seg" mid="69">接受呼叫时出错。</mrk></target>
+      </trans-unit>
+      <trans-unit id="66" resname="r615851205" restype="string" datatype="java">
+        <source>Okay</source><seg-source><mrk mtype="seg" mid="70">Okay</mrk></seg-source><target><mrk mtype="seg" mid="70">好</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="67" resname="chat_message_hint" restype="string" datatype="x-android-resource">
+        <source>Type message</source><seg-source><mrk mtype="seg" mid="71">Type message</mrk></seg-source><target><mrk mtype="seg" mid="71">输入信息</mrk></target>
+      </trans-unit>
+      <trans-unit id="68" resname="attach_file_dialog_take_photo" restype="string" datatype="x-android-resource">
+        <source>Take photo</source><seg-source><mrk mtype="seg" mid="72">Take photo</mrk></seg-source><target><mrk mtype="seg" mid="72">拍照</mrk></target>
+      </trans-unit>
+      <trans-unit id="69" resname="attach_file_dialog_choose_photo" restype="string" datatype="x-android-resource">
+        <source>Choose photo</source><seg-source><mrk mtype="seg" mid="73">Choose photo</mrk></seg-source><target><mrk mtype="seg" mid="73">选择照片</mrk></target>
+      </trans-unit>
+      <trans-unit id="70" resname="attach_file_dialog_choose_file" restype="string" datatype="x-android-resource">
+        <source>Choose file</source><seg-source><mrk mtype="seg" mid="74">Choose file</mrk></seg-source><target><mrk mtype="seg" mid="74">选择文件</mrk></target>
+      </trans-unit>
+      <trans-unit id="71" resname="attach_file_dialog_choose_previous" restype="string" datatype="x-android-resource">
+        <source>Choose previous attachment</source><seg-source><mrk mtype="seg" mid="75">Choose previous attachment</mrk></seg-source><target><mrk mtype="seg" mid="75">选择以前的附件</mrk></target>
+      </trans-unit>
+      <trans-unit id="72" resname="attach_file_dialog_choose_device" restype="string" datatype="x-android-resource">
+        <source>Choose device</source><seg-source><mrk mtype="seg" mid="76">Choose device</mrk></seg-source><target><mrk mtype="seg" mid="76">选择设备</mrk></target>
+      </trans-unit>
+      <trans-unit id="73" resname="attach_file_dialog_cancel" restype="string" datatype="x-android-resource">
+        <source>Cancel</source><seg-source><mrk mtype="seg" mid="77">Cancel</mrk></seg-source><target><mrk mtype="seg" mid="77">取消</mrk></target>
+      </trans-unit>
+      <trans-unit id="74" resname="yes" restype="string" datatype="x-android-resource">
+        <source>Yes</source><seg-source><mrk mtype="seg" mid="78">Yes</mrk></seg-source><target><mrk mtype="seg" mid="78">是</mrk></target>
+      </trans-unit>
+      <trans-unit id="75" resname="no" restype="string" datatype="x-android-resource">
+        <source>No</source><seg-source><mrk mtype="seg" mid="79">No</mrk></seg-source><target><mrk mtype="seg" mid="79">不是</mrk></target>
+      </trans-unit>
+      <trans-unit id="76" resname="last_share" restype="string" datatype="x-android-resource">
+        <source>Last shared with:</source><seg-source><mrk mtype="seg" mid="80">Last shared with:</mrk></seg-source><target><mrk mtype="seg" mid="80">上一次分享：</mrk></target>
+      </trans-unit>
+      <trans-unit id="77" resname="system_message_started" restype="string" datatype="x-android-resource">
+        <source>Started at %s</source><seg-source><mrk mtype="seg" mid="81">Started at %s</mrk></seg-source><target><mrk mtype="seg" mid="81">开始于％s</mrk></target>
+        
+      <note>%s refers to a time and date</note></trans-unit>
+      <trans-unit id="78" resname="system_message_ended" restype="string" datatype="x-android-resource">
+        <source>Ended at %s</source><seg-source><mrk mtype="seg" mid="82">Ended at %s</mrk></seg-source><target><mrk mtype="seg" mid="82">结束于％s</mrk></target>
+        
+      <note>%s refers to a time and date</note></trans-unit>
+      <trans-unit id="79" resname="system_message_connection_lost" restype="string" datatype="x-android-resource">
+        <source>Connection lost at %s</source><seg-source><mrk mtype="seg" mid="83">Connection lost at %s</mrk></seg-source><target><mrk mtype="seg" mid="83">在％s失去连接</mrk></target>
+        
+      <note>%s refers to a time and date</note></trans-unit>
+      <trans-unit id="80" resname="system_message_you_ended_consult" restype="string" datatype="x-android-resource">
+        <source>You ended this consult at %s</source><seg-source><mrk mtype="seg" mid="84">You ended this consult at %s</mrk></seg-source><target><mrk mtype="seg" mid="84">您在％s结束了此咨询</mrk></target>
+        
+      <note>%s refers to a time and date</note></trans-unit>
+      <trans-unit id="81" resname="system_message_disconnected" restype="string" datatype="x-android-resource">
+        <source>Disconnected at %s</source><seg-source><mrk mtype="seg" mid="85">Disconnected at %s</mrk></seg-source><target><mrk mtype="seg" mid="85">在％s处断开连接</mrk></target>
+        
+      <note>%s refers to a time and date</note></trans-unit>
+      <trans-unit id="82" resname="video_unavailable_text_for_doctor" restype="string" datatype="x-android-resource">
+        <source>Patient turned off camera…</source><seg-source><mrk mtype="seg" mid="86">Patient turned off camera…</mrk></seg-source><target><mrk mtype="seg" mid="86">患者已关闭相机...</mrk></target>
+      </trans-unit>
+      <trans-unit id="83" resname="video_unavailable_text_for_patient" restype="string" datatype="x-android-resource">
+        <source>Doctor turned off camera…</source><seg-source><mrk mtype="seg" mid="87">Doctor turned off camera…</mrk></seg-source><target><mrk mtype="seg" mid="87">医生已关闭相机...</mrk></target>
+      </trans-unit>
+      <trans-unit id="84" resname="live_consult_connecting_text" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect…</source><seg-source><mrk mtype="seg" mid="88">One moment while we connect…</mrk></seg-source><target><mrk mtype="seg" mid="88">我们连接的时候...</mrk></target>
+      </trans-unit>
+      <trans-unit id="85" resname="live_consult_waiting_for_patient_text" restype="string" datatype="x-android-resource">
+        <source>Waiting for patient to connect…</source><seg-source><mrk mtype="seg" mid="89">Waiting for patient to connect…</mrk></seg-source><target><mrk mtype="seg" mid="89">正在等待患者连接...</mrk></target>
+      </trans-unit>
+      <trans-unit id="86" resname="live_consult_waiting_for_patient_live_video" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the patient\'s video camera…</source><seg-source><mrk mtype="seg" mid="90">One moment while we connect to the patient\'s video camera…</mrk></seg-source><target><mrk mtype="seg" mid="90">我们连接到患者的摄像机时...</mrk></target>
+      </trans-unit>
+      <trans-unit id="87" resname="live_consult_waiting_for_patient_live_audio" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the patient\'s microphone…</source><seg-source><mrk mtype="seg" mid="91">One moment while we connect to the patient\'s microphone…</mrk></seg-source><target><mrk mtype="seg" mid="91">我们连接到患者的麦克风时...</mrk></target>
+      </trans-unit>
+      <trans-unit id="88" resname="live_consult_waiting_for_patient_live_text" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the patient\'s text chat…</source><seg-source><mrk mtype="seg" mid="92">One moment while we connect to the patient\'s text chat…</mrk></seg-source><target><mrk mtype="seg" mid="92">我们连接到患者的文字聊天时...</mrk></target>
+      </trans-unit>
+      <trans-unit id="89" resname="live_consult_waiting_for_doctor_text" restype="string" datatype="x-android-resource">
+        <source>Waiting for doctor to connect…</source><seg-source><mrk mtype="seg" mid="93">Waiting for doctor to connect…</mrk></seg-source><target><mrk mtype="seg" mid="93">正在等待医生连接...</mrk></target>
+      </trans-unit>
+      <trans-unit id="90" resname="live_consult_waiting_for_doctor_live_video" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the doctor\'s video camera…</source><seg-source><mrk mtype="seg" mid="94">One moment while we connect to the doctor\'s video camera…</mrk></seg-source><target><mrk mtype="seg" mid="94">我们连接到医生的摄像机时...</mrk></target>
+      </trans-unit>
+      <trans-unit id="91" resname="live_consult_waiting_for_doctor_live_audio" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the doctor\'s microphone…</source><seg-source><mrk mtype="seg" mid="95">One moment while we connect to the doctor\'s microphone…</mrk></seg-source><target><mrk mtype="seg" mid="95">我们连接到医生的麦克风时...</mrk></target>
+      </trans-unit>
+      <trans-unit id="92" resname="live_consult_waiting_for_doctor_live_text" restype="string" datatype="x-android-resource">
+        <source>One moment while we connect to the doctor\'s text chat…</source><seg-source><mrk mtype="seg" mid="96">One moment while we connect to the doctor\'s text chat…</mrk></seg-source><target><mrk mtype="seg" mid="96">我们连接到医生的文字聊天时...</mrk></target>
+      </trans-unit>
+      <trans-unit id="93" resname="keyboard_done_label" restype="string" datatype="x-android-resource">
+        <source>Send</source><seg-source><mrk mtype="seg" mid="97">Send</mrk></seg-source><target><mrk mtype="seg" mid="97">发送</mrk></target>
+      </trans-unit>
+      <trans-unit id="94" resname="participant_patient" restype="string" datatype="x-android-resource">
+        <source>Patient</source><seg-source><mrk mtype="seg" mid="98">Patient</mrk></seg-source><target><mrk mtype="seg" mid="98">患者</mrk></target>
+      </trans-unit>
+      <trans-unit id="95" resname="nonaction_owner" restype="string" datatype="x-android-resource">
+        <source>Owner</source><seg-source><mrk mtype="seg" mid="99">Owner</mrk></seg-source><target><mrk mtype="seg" mid="99">所有者</mrk></target>
+      </trans-unit>
+      <trans-unit id="96" resname="nonaction_staff" restype="string" datatype="x-android-resource">
+        <source>Staff</source><seg-source><mrk mtype="seg" mid="100">Staff</mrk></seg-source><target><mrk mtype="seg" mid="100">人员</mrk></target>
+      </trans-unit>
+      <trans-unit id="97" resname="nonaction_removed" restype="string" datatype="x-android-resource">
+        <source>Removed</source><seg-source><mrk mtype="seg" mid="101">Removed</mrk></seg-source><target><mrk mtype="seg" mid="101">已删除</mrk></target>
+      </trans-unit>
+      <trans-unit id="98" resname="nonaction_left" restype="string" datatype="x-android-resource">
+        <source>Left</source><seg-source><mrk mtype="seg" mid="102">Left</mrk></seg-source><target><mrk mtype="seg" mid="102">左</mrk></target>
+      </trans-unit>
+      <trans-unit id="99" resname="action_remove" restype="string" datatype="x-android-resource">
+        <source>Remove</source><seg-source><mrk mtype="seg" mid="103">Remove</mrk></seg-source><target><mrk mtype="seg" mid="103">删除</mrk></target>
+      </trans-unit>
+      <trans-unit id="100" resname="action_make_owner" restype="string" datatype="x-android-resource">
+        <source>Make owner</source><seg-source><mrk mtype="seg" mid="104">Make owner</mrk></seg-source><target><mrk mtype="seg" mid="104">使所有者</mrk></target>
+      </trans-unit>
+      <trans-unit id="101" resname="action_call_now" restype="string" datatype="x-android-resource">
+        <source>Call now</source><seg-source><mrk mtype="seg" mid="105">Call now</mrk></seg-source><target><mrk mtype="seg" mid="105">现在呼叫</mrk></target>
+      </trans-unit>
+      <trans-unit id="102" resname="action_calling" restype="string" datatype="x-android-resource">
+        <source>Calling...</source><seg-source><mrk mtype="seg" mid="106">Calling...</mrk></seg-source><target><mrk mtype="seg" mid="106">呼叫中...</mrk></target>
+      </trans-unit>
+      <trans-unit id="103" resname="dialog_title_remove_participant" restype="string" datatype="x-android-resource">
+        <source>Remove participant from consult</source><seg-source><mrk mtype="seg" mid="107">Remove participant from consult</mrk></seg-source><target><mrk mtype="seg" mid="107">从咨询中删除参与者</mrk></target>
+      </trans-unit>
+      <trans-unit id="104" resname="dialog_message_remove_participant" restype="string" datatype="x-android-resource">
+        <source>Please confirm you would like to remove %s from the consult</source><seg-source><mrk mtype="seg" mid="108">Please confirm you would like to remove %s from the consult</mrk></seg-source><target><mrk mtype="seg" mid="108">请确认您要从咨询中移除%s</mrk></target>
+        
+      <note>%s refers to a person</note></trans-unit>
+      <trans-unit id="105" resname="dialog_title_transfer_owner" restype="string" datatype="x-android-resource">
+        <source>Make consult owner</source><seg-source><mrk mtype="seg" mid="109">Make consult owner</mrk></seg-source><target><mrk mtype="seg" mid="109">咨询所有者</mrk></target>
+      </trans-unit>
+      <trans-unit id="106" resname="dialog_message_transfer_owner" restype="string" datatype="x-android-resource">
+        <source>Please confirm you would like to make %s owner of this consult and responsible for completing and sending the SOAP note to the patient.</source><seg-source><mrk mtype="seg" mid="110">Please confirm you would like to make %s owner of this consult and responsible for completing and sending the SOAP note to the patient.</mrk></seg-source><target><mrk mtype="seg" mid="110">请确认您要让%s此咨询的所有者负责完成并将SOAP说明发送给患者。</mrk></target>
+        
+      <note>%s refers to a person</note></trans-unit>
+      <trans-unit id="107" resname="dialog_title_call_now" restype="string" datatype="x-android-resource">
+        <source>Call now</source><seg-source><mrk mtype="seg" mid="111">Call now</mrk></seg-source><target><mrk mtype="seg" mid="111">现在呼叫</mrk></target>
+      </trans-unit>
+      <trans-unit id="108" resname="dialog_message_call_now" restype="string" datatype="x-android-resource">
+        <source>Do you want to call %s? They will be invited to join the consult immediately.</source><seg-source><mrk mtype="seg" mid="112">Do you want to call %s?</mrk> <mrk mtype="seg" mid="113">They will be invited to join the consult immediately.</mrk></seg-source><target><mrk mtype="seg" mid="112">您想要呼叫%s吗？</mrk><mrk mtype="seg" mid="113">他们将被邀请立即加入咨询。</mrk></target>
+        
+      <note>%s refers to a person</note></trans-unit>
+      <trans-unit id="109" resname="button_add_participant" restype="string" datatype="x-android-resource">
+        <source>Add participants</source><seg-source><mrk mtype="seg" mid="114">Add participants</mrk></seg-source><target><mrk mtype="seg" mid="114">添加参与者</mrk></target>
+      </trans-unit>
+      <trans-unit id="110" resname="button_yes" restype="string" datatype="x-android-resource">
+        <source>Yes</source><seg-source><mrk mtype="seg" mid="115">Yes</mrk></seg-source><target><mrk mtype="seg" mid="115">是</mrk></target>
+      </trans-unit>
+      <trans-unit id="111" resname="button_no" restype="string" datatype="x-android-resource">
+        <source>No</source><seg-source><mrk mtype="seg" mid="116">No</mrk></seg-source><target><mrk mtype="seg" mid="116">不是</mrk></target>
+      </trans-unit>
+      <trans-unit id="112" resname="button_never_mind" restype="string" datatype="x-android-resource">
+        <source>Never mind</source><seg-source><mrk mtype="seg" mid="117">Never mind</mrk></seg-source><target><mrk mtype="seg" mid="117">没有关系</mrk></target>
+      </trans-unit>
+      <trans-unit id="113" resname="button_cancel" restype="string" datatype="x-android-resource">
+        <source>Cancel</source><seg-source><mrk mtype="seg" mid="118">Cancel</mrk></seg-source><target><mrk mtype="seg" mid="118">取消</mrk></target>
+      </trans-unit>
+      <trans-unit id="114" resname="button_confirm" restype="string" datatype="x-android-resource">
+        <source>Confirm</source><seg-source><mrk mtype="seg" mid="119">Confirm</mrk></seg-source><target><mrk mtype="seg" mid="119">确认</mrk></target>
+      </trans-unit>
+      <trans-unit id="115" resname="button_yes_call" restype="string" datatype="x-android-resource">
+        <source>Yes, call</source><seg-source><mrk mtype="seg" mid="120">Yes, call</mrk></seg-source><target><mrk mtype="seg" mid="120">是，呼叫</mrk></target>
+      </trans-unit>
+      <trans-unit id="116" resname="VideoView_error_title" restype="string" datatype="x-android-resource">
+        <source>Cannot play video</source><seg-source><mrk mtype="seg" mid="121">Cannot play video</mrk></seg-source><target><mrk mtype="seg" mid="121">无法播放视频</mrk></target>
+      </trans-unit>
+      <trans-unit id="117" resname="VideoView_error_text_invalid_progressive_playback" restype="string" datatype="x-android-resource">
+        <source>Sorry, this video is not valid for streaming to
+        this device.</source><seg-source><mrk mtype="seg" mid="122">Sorry, this video is not valid for streaming to
+        this device.</mrk></seg-source><target><mrk mtype="seg" mid="122">对不起，视频无法在这个设备上播放。</mrk></target>
+      </trans-unit>
+      <trans-unit id="118" resname="VideoView_error_text_unknown" restype="string" datatype="x-android-resource">
+        <source>Sorry, this video cannot be played.</source><seg-source><mrk mtype="seg" mid="123">Sorry, this video cannot be played.</mrk></seg-source><target><mrk mtype="seg" mid="123">对不起，视频无法播放。</mrk></target>
+      </trans-unit>
+      <trans-unit id="119" resname="VideoView_error_button" restype="string" datatype="x-android-resource">
+        <source>OK</source><seg-source><mrk mtype="seg" mid="124">OK</mrk></seg-source><target><mrk mtype="seg" mid="124">好</mrk></target>
+      </trans-unit>
+      <trans-unit id="120" resname="transcript_call_text" restype="string" datatype="x-android-resource">
+        <source>Call:</source><seg-source><mrk mtype="seg" mid="125">Call:</mrk></seg-source><target><mrk mtype="seg" mid="125">电话：</mrk></target>
+      </trans-unit>
+      <trans-unit id="121" resname="transcript_email_text" restype="string" datatype="x-android-resource">
+        <source>Email:</source><seg-source><mrk mtype="seg" mid="126">Email:</mrk></seg-source><target><mrk mtype="seg" mid="126">邮箱：</mrk></target>
+      </trans-unit>
+      <trans-unit id="122" resname="transcript_refer_specialist_find_specicialist_text" restype="string" datatype="x-android-resource">
+        <source>Find specialist</source><seg-source><mrk mtype="seg" mid="127">Find specialist</mrk></seg-source><target><mrk mtype="seg" mid="127">发现专家</mrk></target>
+      </trans-unit>
+      <trans-unit id="123" resname="transcript_refer_specialist_text" restype="string" datatype="x-android-resource">
+        <source>I\'d like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</source><seg-source><mrk mtype="seg" mid="128">I\'d like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</mrk></seg-source><target><mrk mtype="seg" mid="128">我向您推荐一位&lt;b&gt;{specialist}&lt;/b&gt;</mrk></target>
+      </trans-unit>
+      <trans-unit id="124" resname="transcript_refer_specialist_text_hmo" restype="string" datatype="x-android-resource">
+        <source>I\'d like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;. As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</source><seg-source><mrk mtype="seg" mid="129">I\'d like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;.</mrk> <mrk mtype="seg" mid="130">As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</mrk></seg-source><target><mrk mtype="seg" mid="129">我想推荐一位 &lt;b&gt;{specialist}&lt;/b&gt;</mrk><mrk mtype="seg" mid="130">作为{network_name}的会员，请先咨询您的普通门诊医生，然后再寻找其他专家。</mrk></target>
+      </trans-unit>
+      <trans-unit id="125" resname="soap_note_title_text" restype="string" datatype="x-android-resource">
+        <source>Summary Note</source><seg-source><mrk mtype="seg" mid="131">Summary Note</mrk></seg-source><target><mrk mtype="seg" mid="131">简要注意</mrk></target>
+      </trans-unit>
+      <trans-unit id="126" resname="soap_note_history_text" restype="string" datatype="x-android-resource">
+        <source>Subjective (History):</source><seg-source><mrk mtype="seg" mid="132">Subjective (History):</mrk></seg-source><target><mrk mtype="seg" mid="132">主观（历史）：</mrk></target>
+      </trans-unit>
+      <trans-unit id="127" resname="soap_note_data_text" restype="string" datatype="x-android-resource">
+        <source>Objective (Data):</source><seg-source><mrk mtype="seg" mid="133">Objective (Data):</mrk></seg-source><target><mrk mtype="seg" mid="133">目标（数据）：</mrk></target>
+      </trans-unit>
+      <trans-unit id="128" resname="soap_note_assessment_text" restype="string" datatype="x-android-resource">
+        <source>Assessment:</source><seg-source><mrk mtype="seg" mid="134">Assessment:</mrk></seg-source><target><mrk mtype="seg" mid="134">评定：</mrk></target>
+      </trans-unit>
+      <trans-unit id="129" resname="soap_note_personal_checklist_title_text" restype="string" datatype="x-android-resource">
+        <source>Plan:</source><seg-source><mrk mtype="seg" mid="135">Plan:</mrk></seg-source><target><mrk mtype="seg" mid="135">计划：</mrk></target>
+      </trans-unit>
+      <trans-unit id="130" resname="soap_note_personal_checklist_button_text" restype="string" datatype="x-android-resource">
+        <source>See checklists</source><seg-source><mrk mtype="seg" mid="136">See checklists</mrk></seg-source><target><mrk mtype="seg" mid="136">查看清单</mrk></target>
+      </trans-unit>
+      <trans-unit id="131" resname="public_checklist_title_recommend_text" restype="string" datatype="x-android-resource">
+        <source>I recommend you try {name}\'s checklist on {topic_name}</source><seg-source><mrk mtype="seg" mid="137">I recommend you try {name}\'s checklist on {topic_name}</mrk></seg-source><target><mrk mtype="seg" mid="137">我建议您尝试{name}在{topic_name}的检查</mrk></target>
+      </trans-unit>
+      <trans-unit id="132" resname="public_checklist_button_text" restype="string" datatype="x-android-resource">
+        <source>Try now</source><seg-source><mrk mtype="seg" mid="138">Try now</mrk></seg-source><target><mrk mtype="seg" mid="138">现在尝试</mrk></target>
+      </trans-unit>
+      <trans-unit id="133" resname="public_checklist_button_added_text" restype="string" datatype="x-android-resource">
+        <source>Added</source><seg-source><mrk mtype="seg" mid="139">Added</mrk></seg-source><target><mrk mtype="seg" mid="139">已添加</mrk></target>
+      </trans-unit>
+      <trans-unit id="134" resname="refer_individual_title_text" restype="string" datatype="x-android-resource">
+        <source>I\'d like to refer you to:</source><seg-source><mrk mtype="seg" mid="140">I\'d like to refer you to:</mrk></seg-source><target><mrk mtype="seg" mid="140">我向您推荐：</mrk></target>
+      </trans-unit>
+      <trans-unit id="135" resname="refer_individual_call_text" restype="string" datatype="x-android-resource">
+        <source>Call</source><seg-source><mrk mtype="seg" mid="141">Call</mrk></seg-source><target><mrk mtype="seg" mid="141">拨打电话</mrk></target>
+      </trans-unit>
+      <trans-unit id="136" resname="prescription_title_text" restype="string" datatype="x-android-resource">
+        <source>I will be sending this prescription to the following pharmacy:</source><seg-source><mrk mtype="seg" mid="142">I will be sending this prescription to the following pharmacy:</mrk></seg-source><target><mrk mtype="seg" mid="142">我会将把这个处方发送给以下药房：</mrk></target>
+      </trans-unit>
+      <trans-unit id="137" resname="prescription_title_text_not_available" restype="string" datatype="x-android-resource">
+        <source>I prescribed the following medication for you:</source><seg-source><mrk mtype="seg" mid="143">I prescribed the following medication for you:</mrk></seg-source><target><mrk mtype="seg" mid="143">我为您配定了以下药物：</mrk></target>
+      </trans-unit>
+      <trans-unit id="138" resname="prescription_nopharmacy_question_text" restype="string" datatype="x-android-resource">
+        <source>To which pharmacy should I send the prescription?</source><seg-source><mrk mtype="seg" mid="144">To which pharmacy should I send the prescription?</mrk></seg-source><target><mrk mtype="seg" mid="144">我应该向哪个药房发送处方？</mrk></target>
+      </trans-unit>
+      <trans-unit id="139" resname="prescription_pharmacy_phone_text" restype="string" datatype="x-android-resource">
+        <source>Call:</source><seg-source><mrk mtype="seg" mid="145">Call:</mrk></seg-source><target><mrk mtype="seg" mid="145">电话：</mrk></target>
+      </trans-unit>
+      <trans-unit id="140" resname="button_get_prescription" restype="string" datatype="x-android-resource">
+        <source>Get prescription</source><seg-source><mrk mtype="seg" mid="146">Get prescription</mrk></seg-source><target><mrk mtype="seg" mid="146">获得处方</mrk></target>
+      </trans-unit>
+      <trans-unit id="141" resname="photos" restype="string" datatype="x-android-resource">
+        <source>Photos</source><seg-source><mrk mtype="seg" mid="147">Photos</mrk></seg-source><target><mrk mtype="seg" mid="147">照片</mrk></target>
+      </trans-unit>
+      <trans-unit id="142" resname="documents" restype="string" datatype="x-android-resource">
+        <source>Files</source><seg-source><mrk mtype="seg" mid="148">Files</mrk></seg-source><target><mrk mtype="seg" mid="148">文件</mrk></target>
+      </trans-unit>
+      <trans-unit id="143" resname="no_previous_uploads" restype="string" datatype="x-android-resource">
+        <source>You haven\'t uploaded any files or photos yet.</source><seg-source><mrk mtype="seg" mid="149">You haven\'t uploaded any files or photos yet.</mrk></seg-source><target><mrk mtype="seg" mid="149">您尚未上传任何文件或照片。</mrk></target>
+      </trans-unit>
+      <trans-unit id="144" resname="connection_wrong" restype="string" datatype="x-android-resource">
+        <source>Sorry, something wrong with the connection, please try again later.</source><seg-source><mrk mtype="seg" mid="150">Sorry, something wrong with the connection, please try again later.</mrk></seg-source><target><mrk mtype="seg" mid="150">很抱歉，连线发生错误，请稍后再试。</mrk></target>
+      </trans-unit>
+      <trans-unit id="145" resname="title_activity_choose_previous" restype="string" datatype="x-android-resource">
+        <source>ChoosePreviousActivity</source><seg-source><mrk mtype="seg" mid="151">ChoosePreviousActivity</mrk></seg-source><target><mrk mtype="seg" mid="151">选择以前的活动</mrk></target>
+      </trans-unit>
+      <trans-unit id="146" resname="hello_world" restype="string" datatype="x-android-resource">
+        <source>Hello world!</source><seg-source><mrk mtype="seg" mid="152">Hello world!</mrk></seg-source><target><mrk mtype="seg" mid="152">您好世界！</mrk></target>
+      </trans-unit>
+      <trans-unit id="147" resname="action_settings" restype="string" datatype="x-android-resource">
+        <source>Settings</source><seg-source><mrk mtype="seg" mid="153">Settings</mrk></seg-source><target><mrk mtype="seg" mid="153">设置</mrk></target>
+      </trans-unit>
+      <trans-unit id="148" resname="end_call_title_text" restype="string" datatype="x-android-resource">
+        <source>Are you sure?</source><seg-source><mrk mtype="seg" mid="154">Are you sure?</mrk></seg-source><target><mrk mtype="seg" mid="154">您确定吗？</mrk></target>
+      </trans-unit>
+      <trans-unit id="149" resname="leave_call_title_text" restype="string" datatype="x-android-resource">
+        <source>Leave consult</source><seg-source><mrk mtype="seg" mid="155">Leave consult</mrk></seg-source><target><mrk mtype="seg" mid="155">离开咨询</mrk></target>
+      </trans-unit>
+      <trans-unit id="150" resname="end_call_patient_body_text_format" restype="string" datatype="x-android-resource">
+        <source>Would you like to end this consult with {doctor_name}? The doctor hasn\'t finished the session.</source><seg-source><mrk mtype="seg" mid="156">Would you like to end this consult with {doctor_name}?</mrk> <mrk mtype="seg" mid="157">The doctor hasn\'t finished the session.</mrk></seg-source><target><mrk mtype="seg" mid="156">您要结束与{doctor_name}的咨询吗？</mrk><mrk mtype="seg" mid="157">医生没有完成会话。</mrk></target>
+      </trans-unit>
+      <trans-unit id="151" resname="end_call_patient_body_text" restype="string" datatype="x-android-resource">
+        <source>Would you like to end this consult with the doctor? The doctor hasn\'t finished the session.</source><seg-source><mrk mtype="seg" mid="158">Would you like to end this consult with the doctor?</mrk> <mrk mtype="seg" mid="159">The doctor hasn\'t finished the session.</mrk></seg-source><target><mrk mtype="seg" mid="158">您要结束与医生的咨询吗？</mrk><mrk mtype="seg" mid="159">医生没有完成会话。</mrk></target>
+      </trans-unit>
+      <trans-unit id="152" resname="end_call_doctor_body_text" restype="string" datatype="x-android-resource">
+        <source>Are you sure you want to end this call early? The patient will be disconnected.</source><seg-source><mrk mtype="seg" mid="160">Are you sure you want to end this call early?</mrk> <mrk mtype="seg" mid="161">The patient will be disconnected.</mrk></seg-source><target><mrk mtype="seg" mid="160">您确定要提前结束这次通话吗？</mrk><mrk mtype="seg" mid="161">患者将断开连接。</mrk></target>
+      </trans-unit>
+      <trans-unit id="153" resname="leave_call_text" restype="string" datatype="x-android-resource">
+        <source>Would you like to leave the consult?</source><seg-source><mrk mtype="seg" mid="162">Would you like to leave the consult?</mrk></seg-source><target><mrk mtype="seg" mid="162">您想要离开咨询？</mrk></target>
+      </trans-unit>
+      <trans-unit id="154" resname="is_typing_text" restype="string" datatype="x-android-resource">
+        <source>{person_name} is typing…</source><seg-source><mrk mtype="seg" mid="163">{person_name} is typing…</mrk></seg-source><target><mrk mtype="seg" mid="163">{person_name}正在输入...</mrk></target>
+      </trans-unit>
+      <trans-unit id="155" resname="soap_typing_text" restype="string" datatype="x-android-resource">
+        <source>{doctor_name} is typing notes for you…</source><seg-source><mrk mtype="seg" mid="164">{doctor_name} is typing notes for you…</mrk></seg-source><target><mrk mtype="seg" mid="164">{doctor_name}正在为您输入注意事项...</mrk></target>
+      </trans-unit>
+      <trans-unit id="156" resname="attachment_description_dialog_heading_text" restype="string" datatype="x-android-resource">
+        <source>Help the doctors understand what they are looking at</source><seg-source><mrk mtype="seg" mid="165">Help the doctors understand what they are looking at</mrk></seg-source><target><mrk mtype="seg" mid="165">帮助医生了解他们正在看的内容</mrk></target>
+      </trans-unit>
+      <trans-unit id="157" resname="attachment_description_dialog_heading_text_doctor" restype="string" datatype="x-android-resource">
+        <source>Help the patient understand what they are looking at</source><seg-source><mrk mtype="seg" mid="166">Help the patient understand what they are looking at</mrk></seg-source><target><mrk mtype="seg" mid="166">帮助患者了解他们正在看的内容</mrk></target>
+      </trans-unit>
+      <trans-unit id="158" resname="description_dialog_attach_text" restype="string" datatype="x-android-resource">
+        <source>Attach</source><seg-source><mrk mtype="seg" mid="167">Attach</mrk></seg-source><target><mrk mtype="seg" mid="167">附上</mrk></target>
+      </trans-unit>
+      <trans-unit id="159" resname="description_dialog_character_count" restype="string" datatype="x-android-resource">
+        <source>0/100</source><seg-source><mrk mtype="seg" mid="168">0/100</mrk></seg-source><target><mrk mtype="seg" mid="168">0/100</mrk></target>
+      </trans-unit>
+      <trans-unit id="160" resname="description_dialog_hint" restype="string" datatype="x-android-resource">
+        <source>Enter brief description (ex. My chest xray)</source><seg-source><mrk mtype="seg" mid="169">Enter brief description (ex.</mrk> <mrk mtype="seg" mid="170">My chest xray)</mrk></seg-source><target><mrk mtype="seg" mid="169">输入简要说明（例如.</mrk><mrk mtype="seg" mid="170">我的胸部X射线）</mrk></target>
+      </trans-unit>
+      <trans-unit id="161" resname="title_remove_credit_card" restype="string" datatype="x-android-resource">
+        <source>Are you sure?</source><seg-source><mrk mtype="seg" mid="171">Are you sure?</mrk></seg-source><target><mrk mtype="seg" mid="171">您确定吗？</mrk></target>
+      </trans-unit>
+      <trans-unit id="162" resname="description_dialog_body_text" restype="string" datatype="x-android-resource">
+        <source>Are you sure you want to remove this attachment?</source><seg-source><mrk mtype="seg" mid="172">Are you sure you want to remove this attachment?</mrk></seg-source><target><mrk mtype="seg" mid="172">您确定想要删除附件吗？</mrk></target>
+      </trans-unit>
+      <trans-unit id="163" resname="description_dialog_never_mind_text" restype="string" datatype="x-android-resource">
+        <source>Never Mind</source><seg-source><mrk mtype="seg" mid="173">Never Mind</mrk></seg-source><target><mrk mtype="seg" mid="173">没有关系</mrk></target>
+      </trans-unit>
+      <trans-unit id="164" resname="description_dialog_remove_text" restype="string" datatype="x-android-resource">
+        <source>Remove</source><seg-source><mrk mtype="seg" mid="174">Remove</mrk></seg-source><target><mrk mtype="seg" mid="174">删除</mrk></target>
+      </trans-unit>
+      <trans-unit id="165" resname="description_dialog_cancel_message_text" restype="string" datatype="x-android-resource">
+        <source>Do you want to cancel uploading this file?</source><seg-source><mrk mtype="seg" mid="175">Do you want to cancel uploading this file?</mrk></seg-source><target><mrk mtype="seg" mid="175">您想要取消上传文件吗？</mrk></target>
+      </trans-unit>
+      <trans-unit id="166" resname="description_dialog_cancel_confirm_text" restype="string" datatype="x-android-resource">
+        <source>Cancel upload</source><seg-source><mrk mtype="seg" mid="176">Cancel upload</mrk></seg-source><target><mrk mtype="seg" mid="176">取消上传</mrk></target>
+      </trans-unit>
+      <trans-unit id="167" resname="camera_control_title_text" restype="string" datatype="x-android-resource">
+        <source>What would you like to do?</source><seg-source><mrk mtype="seg" mid="177">What would you like to do?</mrk></seg-source><target><mrk mtype="seg" mid="177">您想要做什么？</mrk></target>
+      </trans-unit>
+      <trans-unit id="168" resname="camera_control_turn_camera_on_text" restype="string" datatype="x-android-resource">
+        <source>Turn camera on</source><seg-source><mrk mtype="seg" mid="178">Turn camera on</mrk></seg-source><target><mrk mtype="seg" mid="178">打开相机</mrk></target>
+      </trans-unit>
+      <trans-unit id="169" resname="camera_control_turn_camera_off_text" restype="string" datatype="x-android-resource">
+        <source>Turn camera off</source><seg-source><mrk mtype="seg" mid="179">Turn camera off</mrk></seg-source><target><mrk mtype="seg" mid="179">关闭相机</mrk></target>
+      </trans-unit>
+      <trans-unit id="170" resname="camera_control_switch_view_text" restype="string" datatype="x-android-resource">
+        <source>Switch to back view</source><seg-source><mrk mtype="seg" mid="180">Switch to back view</mrk></seg-source><target><mrk mtype="seg" mid="180">切换到后视图</mrk></target>
+      </trans-unit>
+      <trans-unit id="171" resname="camera_control_switch_front_view_text" restype="string" datatype="x-android-resource">
+        <source>Switch to front view</source><seg-source><mrk mtype="seg" mid="181">Switch to front view</mrk></seg-source><target><mrk mtype="seg" mid="181">切换到前视图</mrk></target>
+      </trans-unit>
+      <trans-unit id="172" resname="peer_unavailable_text" restype="string" datatype="x-android-resource">
+        <source>There is a problem with {peer_name}\'s connection. One moment while we try to re-connect with {peer_name}.</source><seg-source><mrk mtype="seg" mid="182">There is a problem with {peer_name}\'s connection.</mrk> <mrk mtype="seg" mid="183">One moment while we try to re-connect with {peer_name}.</mrk></seg-source><target><mrk mtype="seg" mid="182">{peer_name}的连接有问题。</mrk><mrk mtype="seg" mid="183">我们尝试与{peer_name}重新连接时。</mrk></target>
+      </trans-unit>
+      <trans-unit id="173" resname="peer_unavailable_text_guest" restype="string" datatype="x-android-resource">
+        <source>There is a problem with the guest\'s connection. One moment while we try to re-connect with the guest.</source><seg-source><mrk mtype="seg" mid="184">There is a problem with the guest\'s connection.</mrk> <mrk mtype="seg" mid="185">One moment while we try to re-connect with the guest.</mrk></seg-source><target><mrk mtype="seg" mid="184">顾客的连接有问题。</mrk><mrk mtype="seg" mid="185">我们尝试与顾客重新连接时。</mrk></target>
+      </trans-unit>
+      <trans-unit id="174" resname="peer_unavailable_text_doctor" restype="string" datatype="x-android-resource">
+        <source>There is a problem with the doctor\'s connection. One moment while we try to re-connect with the doctor.</source><seg-source><mrk mtype="seg" mid="186">There is a problem with the doctor\'s connection.</mrk> <mrk mtype="seg" mid="187">One moment while we try to re-connect with the doctor.</mrk></seg-source><target><mrk mtype="seg" mid="186">医生的连接有问题。</mrk><mrk mtype="seg" mid="187">我们尝试与顾客重新连接时。</mrk></target>
+      </trans-unit>
+      <trans-unit id="175" resname="local_connection_unavailable_text" restype="string" datatype="x-android-resource">
+        <source>There is a problem with your connection. One moment while we try to re-connect with %s.</source><seg-source><mrk mtype="seg" mid="188">There is a problem with your connection.</mrk> <mrk mtype="seg" mid="189">One moment while we try to re-connect with %s.</mrk></seg-source><target><mrk mtype="seg" mid="188">您的连接有一个问题。</mrk><mrk mtype="seg" mid="189">我们尝试与%s重新连接时。</mrk></target>
+        
+      <note>%s refers to a person</note></trans-unit>
+      <trans-unit id="176" resname="disconnect_trigger_text_doctor" restype="string" datatype="x-android-resource">
+        <source>There seems to be a problem with the doctor\'s connection. To continue by phone, please call:</source><seg-source><mrk mtype="seg" mid="190">There seems to be a problem with the doctor\'s connection.</mrk> <mrk mtype="seg" mid="191">To continue by phone, please call:</mrk></seg-source><target><mrk mtype="seg" mid="190">医生的连接似乎有一个问题。</mrk><mrk mtype="seg" mid="191">通过手机继续，请拨打：</mrk></target>
+      </trans-unit>
+      <trans-unit id="177" resname="disconnect_trigger_text_patient" restype="string" datatype="x-android-resource">
+        <source>There seems to be a problem with your connection. To continue by phone, please call:</source><seg-source><mrk mtype="seg" mid="192">There seems to be a problem with your connection.</mrk> <mrk mtype="seg" mid="193">To continue by phone, please call:</mrk></seg-source><target><mrk mtype="seg" mid="192">您的连接似乎有一个问题</mrk><mrk mtype="seg" mid="193">通过手机继续，请拨打：</mrk></target>
+      </trans-unit>
+      <trans-unit id="178" resname="disconnect_trigger_text_doc" restype="string" datatype="x-android-resource">
+        <source>We\'re offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source><seg-source><mrk mtype="seg" mid="194">We\'re offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</mrk></seg-source><target><mrk mtype="seg" mid="194">我们为患者提供通过电话恢复此咨询的选项，我们可能会在接下来的2分钟内呼叫您</mrk></target>
+      </trans-unit>
+      <trans-unit id="179" resname="standard_rates_text" restype="string" datatype="x-android-resource">
+        <source>Standard carrier rates may apply</source><seg-source><mrk mtype="seg" mid="195">Standard carrier rates may apply</mrk></seg-source><target><mrk mtype="seg" mid="195">可能需要支付标准费用</mrk></target>
+      </trans-unit>
+      <trans-unit id="180" resname="access_code_text" restype="string" datatype="x-android-resource">
+        <source>+ Access code:</source><seg-source><mrk mtype="seg" mid="196">+ Access code:</mrk></seg-source><target><mrk mtype="seg" mid="196">+ 访问码：</mrk></target>
+      </trans-unit>
+      <trans-unit id="181" resname="peer_disconnected_title_text" restype="string" datatype="x-android-resource">
+        <source>Sorry this consult got disconnected.</source><seg-source><mrk mtype="seg" mid="197">Sorry this consult got disconnected.</mrk></seg-source><target><mrk mtype="seg" mid="197">可能采用标准的运行商费用。</mrk></target>
+      </trans-unit>
+      <trans-unit id="182" resname="peer_disconnected_content_text" restype="string" datatype="x-android-resource">
+        <source>Please contact us for support.</source><seg-source><mrk mtype="seg" mid="198">Please contact us for support.</mrk></seg-source><target><mrk mtype="seg" mid="198">请联系我们请求支持。</mrk></target>
+      </trans-unit>
+      <trans-unit id="183" resname="peer_disconnected_try_again_text" restype="string" datatype="x-android-resource">
+        <source>Try again</source><seg-source><mrk mtype="seg" mid="199">Try again</mrk></seg-source><target><mrk mtype="seg" mid="199">再试一次</mrk></target>
+      </trans-unit>
+      <trans-unit id="184" resname="peer_disconnected_im_done_text" restype="string" datatype="x-android-resource">
+        <source>Thanks, I\'m done</source><seg-source><mrk mtype="seg" mid="200">Thanks, I\'m done</mrk></seg-source><target><mrk mtype="seg" mid="200">谢谢，我完成了</mrk></target>
+      </trans-unit>
+      <trans-unit id="185" resname="expert_peer_disconnected_text" restype="string" datatype="x-android-resource">
+        <source>The patient has ended the consult. Please complete your SOAP note.</source><seg-source><mrk mtype="seg" mid="201">The patient has ended the consult.</mrk> <mrk mtype="seg" mid="202">Please complete your SOAP note.</mrk></seg-source><target><mrk mtype="seg" mid="201">患者已经结束咨询。</mrk><mrk mtype="seg" mid="202">请完成您的SOAP注释。</mrk></target>
+      </trans-unit>
+      <trans-unit id="186" resname="expert_long_session_end_text" restype="string" datatype="x-android-resource">
+        <source>The consult has ended. Please complete your SOAP note.</source><seg-source><mrk mtype="seg" mid="203">The consult has ended.</mrk> <mrk mtype="seg" mid="204">Please complete your SOAP note.</mrk></seg-source><target><mrk mtype="seg" mid="203">这次咨询已经结束。</mrk><mrk mtype="seg" mid="204">请完成您的SOAP注释。</mrk></target>
+      </trans-unit>
+      <trans-unit id="187" resname="transfer_status_download_completed" restype="string" datatype="x-android-resource">
+        <source>Download complete!</source><seg-source><mrk mtype="seg" mid="205">Download complete!</mrk></seg-source><target><mrk mtype="seg" mid="205">下载完成！</mrk></target>
+      </trans-unit>
+      <trans-unit id="188" resname="transfer_status_upload_completed" restype="string" datatype="x-android-resource">
+        <source>Upload complete!</source><seg-source><mrk mtype="seg" mid="206">Upload complete!</mrk></seg-source><target><mrk mtype="seg" mid="206">上传完成！</mrk></target>
+      </trans-unit>
+      <trans-unit id="189" resname="transfer_status_download_text" restype="string" datatype="x-android-resource">
+        <source>Downloading</source><seg-source><mrk mtype="seg" mid="207">Downloading</mrk></seg-source><target><mrk mtype="seg" mid="207">下载中</mrk></target>
+      </trans-unit>
+      <trans-unit id="190" resname="transfer_status_upload_text" restype="string" datatype="x-android-resource">
+        <source>Uploading</source><seg-source><mrk mtype="seg" mid="208">Uploading</mrk></seg-source><target><mrk mtype="seg" mid="208">上传中</mrk></target>
+      </trans-unit>
+      <trans-unit id="191" resname="transfer_status_error_upload" restype="string" datatype="x-android-resource">
+        <source>Error uploading file!</source><seg-source><mrk mtype="seg" mid="209">Error uploading file!</mrk></seg-source><target><mrk mtype="seg" mid="209">上传文件时出错！</mrk></target>
+      </trans-unit>
+      <trans-unit id="192" resname="transfer_status_error_download" restype="string" datatype="x-android-resource">
+        <source>Error downloading file!</source><seg-source><mrk mtype="seg" mid="210">Error downloading file!</mrk></seg-source><target><mrk mtype="seg" mid="210">下载文件时出错！</mrk></target>
+      </trans-unit>
+      <trans-unit id="193" resname="attachment_uploaded_text" restype="string" datatype="x-android-resource">
+        <source>Uploaded</source><seg-source><mrk mtype="seg" mid="211">Uploaded</mrk></seg-source><target><mrk mtype="seg" mid="211">已上传</mrk></target>
+      </trans-unit>
+      <trans-unit id="194" resname="attachment_uploaded_text_format" restype="string" datatype="x-android-resource">
+        <source>Uploaded on {date}</source><seg-source><mrk mtype="seg" mid="212">Uploaded on {date}</mrk></seg-source><target><mrk mtype="seg" mid="212">在{date}已上传</mrk></target>
+      </trans-unit>
+      <trans-unit id="195" resname="attach_file_dialog_error_opening_activity" restype="string" datatype="x-android-resource">
+        <source>Couldn\'t find application to handle this!</source><seg-source><mrk mtype="seg" mid="213">Couldn\'t find application to handle this!</mrk></seg-source><target><mrk mtype="seg" mid="213">无法找到应用程序来处理这个问题！</mrk></target>
+      </trans-unit>
+      <trans-unit id="196" resname="vidyo_error_dialog_title" restype="string" datatype="x-android-resource">
+        <source>Video unavailable</source><seg-source><mrk mtype="seg" mid="214">Video unavailable</mrk></seg-source><target><mrk mtype="seg" mid="214">视频不可用</mrk></target>
+      </trans-unit>
+      <trans-unit id="197" resname="vidyo_error_audio_dialog_title" restype="string" datatype="x-android-resource">
+        <source>Audio unavailable</source><seg-source><mrk mtype="seg" mid="215">Audio unavailable</mrk></seg-source><target><mrk mtype="seg" mid="215">音频不可用</mrk></target>
+      </trans-unit>
+      <trans-unit id="198" resname="vidyo_error_dialog_body" restype="string" datatype="x-android-resource">
+        <source>We\'re having trouble establising a video connection on your device. Please continue by chat or try again.</source><seg-source><mrk mtype="seg" mid="216">We\'re having trouble establising a video connection on your device.</mrk> <mrk mtype="seg" mid="217">Please continue by chat or try again.</mrk></seg-source><target><mrk mtype="seg" mid="216">我们无法在您的设备上建立视频连接。</mrk><mrk mtype="seg" mid="217">请通过聊天继续或再次尝试</mrk></target>
+      </trans-unit>
+      <trans-unit id="199" resname="camera_error_cant_connect" restype="string" datatype="x-android-resource">
+        <source>Can\'t connect to camera</source><seg-source><mrk mtype="seg" mid="218">Can\'t connect to camera</mrk></seg-source><target><mrk mtype="seg" mid="218">无法连接到相机</mrk></target>
+      </trans-unit>
+      <trans-unit id="200" resname="audio_error_cant_connect" restype="string" datatype="x-android-resource">
+        <source>Can\'t connect to audio</source><seg-source><mrk mtype="seg" mid="219">Can\'t connect to audio</mrk></seg-source><target><mrk mtype="seg" mid="219">无法连接到音频</mrk></target>
+      </trans-unit>
+      <trans-unit id="201" resname="vidyo_error_audio_dialog_body" restype="string" datatype="x-android-resource">
+        <source>We\'re having trouble establising an audio connection on your device. Please continue by chat or try again.</source><seg-source><mrk mtype="seg" mid="220">We\'re having trouble establising an audio connection on your device.</mrk> <mrk mtype="seg" mid="221">Please continue by chat or try again.</mrk></seg-source><target><mrk mtype="seg" mid="220">我们无法在您的设备上建立音频连接。</mrk><mrk mtype="seg" mid="221">请通过聊天继续或再次尝试</mrk></target>
+      </trans-unit>
+      <trans-unit id="202" resname="vidyo_error_dialog_chat" restype="string" datatype="x-android-resource">
+        <source>Chat only</source><seg-source><mrk mtype="seg" mid="222">Chat only</mrk></seg-source><target><mrk mtype="seg" mid="222">只聊天</mrk></target>
+      </trans-unit>
+      <trans-unit id="203" resname="vidyo_error_dialog_dismiss" restype="string" datatype="x-android-resource">
+        <source>Ignore</source><seg-source><mrk mtype="seg" mid="223">Ignore</mrk></seg-source><target><mrk mtype="seg" mid="223">忽略</mrk></target>
+      </trans-unit>
+      <trans-unit id="204" resname="vidyo_error_dialog_try" restype="string" datatype="x-android-resource">
+        <source>Try again</source><seg-source><mrk mtype="seg" mid="224">Try again</mrk></seg-source><target><mrk mtype="seg" mid="224">再试一次</mrk></target>
+      </trans-unit>
+      <trans-unit id="205" resname="vidyo_error_session_done" restype="string" datatype="x-android-resource">
+        <source>Sorry, the session has already ended</source><seg-source><mrk mtype="seg" mid="225">Sorry, the session has already ended</mrk></seg-source><target><mrk mtype="seg" mid="225">对不起，这次会话已经结束</mrk></target>
+      </trans-unit>
+      <trans-unit id="206" resname="not_in_the_US" restype="string" datatype="x-android-resource">
+        <source>Not in the United States</source><seg-source><mrk mtype="seg" mid="226">Not in the United States</mrk></seg-source><target><mrk mtype="seg" mid="226">不在美国</mrk></target>
+      </trans-unit>
+      <trans-unit id="207" resname="image_view_dialog_error" restype="string" datatype="x-android-resource">
+        <source>There was an error showing the image</source><seg-source><mrk mtype="seg" mid="227">There was an error showing the image</mrk></seg-source><target><mrk mtype="seg" mid="227">显示图像时出错</mrk></target>
+      </trans-unit>
+      <trans-unit id="208" resname="retry_send_message_dialog_message" restype="string" datatype="x-android-resource">
+        <source>Would you like to try to send this message again?</source><seg-source><mrk mtype="seg" mid="228">Would you like to try to send this message again?</mrk></seg-source><target><mrk mtype="seg" mid="228">您要尝试再次发送此消息吗？</mrk></target>
+      </trans-unit>
+      <trans-unit id="209" resname="retry_send_message_dialog_title" restype="string" datatype="x-android-resource">
+        <source>Failed to send</source><seg-source><mrk mtype="seg" mid="229">Failed to send</mrk></seg-source><target><mrk mtype="seg" mid="229">发送失败</mrk></target>
+      </trans-unit>
+      <trans-unit id="210" resname="retry_send_message_dialog_cancel" restype="string" datatype="x-android-resource">
+        <source>Cancel</source><seg-source><mrk mtype="seg" mid="230">Cancel</mrk></seg-source><target><mrk mtype="seg" mid="230">取消</mrk></target>
+      </trans-unit>
+      <trans-unit id="211" resname="retry_send_message_dialog_retry" restype="string" datatype="x-android-resource">
+        <source>Try Again</source><seg-source><mrk mtype="seg" mid="231">Try Again</mrk></seg-source><target><mrk mtype="seg" mid="231">再试一次</mrk></target>
+      </trans-unit>
+      <trans-unit id="212" resname="rated_consult_text" restype="string" datatype="x-android-resource">
+        <source>"You rated this consult:"</source><seg-source><mrk mtype="seg" mid="232">"You rated this consult:"</mrk></seg-source><target><mrk mtype="seg" mid="232">“您已对这次咨询做出评价：”</mrk></target>
+      </trans-unit>
+      <trans-unit id="213" resname="rated_consult_update_text" restype="string" datatype="x-android-resource">
+        <source>Revise \u203a</source><seg-source><mrk mtype="seg" mid="233">Revise \u203a</mrk></seg-source><target><mrk mtype="seg" mid="233">修改 \u203a</mrk></target>
+      </trans-unit>
+      <trans-unit id="214" resname="rate_consult_text" restype="string" datatype="x-android-resource">
+        <source>Please rate this consult experience</source><seg-source><mrk mtype="seg" mid="234">Please rate this consult experience</mrk></seg-source><target><mrk mtype="seg" mid="234">请评价此次咨询体验</mrk></target>
+      </trans-unit>
+      <trans-unit id="215" resname="transcript_appointment_request_concierge_btn_text" restype="string" datatype="x-android-resource">
+        <source>Schedule a follow-up</source><seg-source><mrk mtype="seg" mid="235">Schedule a follow-up</mrk></seg-source><target><mrk mtype="seg" mid="235">跟进安排</mrk></target>
+      </trans-unit>
+      <trans-unit id="216" resname="transcript_appointment_request_reason_text" restype="string" datatype="x-android-resource">
+        <source>Reason for follow-up:</source><seg-source><mrk mtype="seg" mid="236">Reason for follow-up:</mrk></seg-source><target><mrk mtype="seg" mid="236">跟进原因</mrk></target>
+      </trans-unit>
+      <trans-unit id="217" resname="transcript_appointment_request_prime_btn_text" restype="string" datatype="x-android-resource">
+        <source>Consult a doctor again</source><seg-source><mrk mtype="seg" mid="237">Consult a doctor again</mrk></seg-source><target><mrk mtype="seg" mid="237">再一次咨询医生</mrk></target>
+      </trans-unit>
+      <trans-unit id="218" resname="soap_diagnosis_code_title" restype="string" datatype="x-android-resource">
+        <source>Diagnosis codes:</source><seg-source><mrk mtype="seg" mid="238">Diagnosis codes:</mrk></seg-source><target><mrk mtype="seg" mid="238">诊断码:</mrk></target>
+      </trans-unit>
+      <trans-unit id="219" resname="no_sim_title" restype="string" datatype="x-android-resource">
+        <source>SIM card missing</source><seg-source><mrk mtype="seg" mid="239">SIM card missing</mrk></seg-source><target><mrk mtype="seg" mid="239">SIM卡丢失</mrk></target>
+      </trans-unit>
+      <trans-unit id="220" resname="no_sim_body" restype="string" datatype="x-android-resource">
+        <source>Please insert a valid SIM card to dial phone calls from this device.</source><seg-source><mrk mtype="seg" mid="240">Please insert a valid SIM card to dial phone calls from this device.</mrk></seg-source><target><mrk mtype="seg" mid="240">请插入一个可以拨打电话的有效SIM卡</mrk></target>
+      </trans-unit>
+      <trans-unit id="221" resname="no_sim_button" restype="string" datatype="x-android-resource">
+        <source>Okay</source><seg-source><mrk mtype="seg" mid="241">Okay</mrk></seg-source><target><mrk mtype="seg" mid="241">好</mrk></target>
+      </trans-unit>
+      <trans-unit id="222" resname="background_copy_doctor" restype="string" datatype="x-android-resource">
+        <source>You just left in the middle of a live consult. If you didn\'t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source><seg-source><mrk mtype="seg" mid="242">You just left in the middle of a live consult.</mrk> <mrk mtype="seg" mid="243">If you didn\'t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</mrk></seg-source><target><mrk mtype="seg" mid="242">您刚刚在实时咨询中离开。</mrk><mrk mtype="seg" mid="243">如果您没有通知患者您会很快返回，请立刻这样做，以便患者知道接下来会发生什么。</mrk></target>
+      </trans-unit>
+      <trans-unit id="223" resname="background_copy_patient" restype="string" datatype="x-android-resource">
+        <source>You just left in the middle of a live consult. If you didn\'t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source><seg-source><mrk mtype="seg" mid="244">You just left in the middle of a live consult.</mrk> <mrk mtype="seg" mid="245">If you didn\'t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</mrk></seg-source><target><mrk mtype="seg" mid="244">您刚刚在实时咨询中离开。</mrk><mrk mtype="seg" mid="245">如果您没有通知医生您会很快返回，请立刻这样做，以便医生知道接下来会发生什么。</mrk></target>
+      </trans-unit>
+      <trans-unit id="224" resname="camera_permission_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets you use your camera during consults</source><seg-source><mrk mtype="seg" mid="246">This lets you use your camera during consults</mrk></seg-source><target><mrk mtype="seg" mid="246">这使您可以在咨询期间使用您的相机</mrk></target>
+      </trans-unit>
+      <trans-unit id="225" resname="mic_permission_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets you use your microphone during consults.</source><seg-source><mrk mtype="seg" mid="247">This lets you use your microphone during consults.</mrk></seg-source><target><mrk mtype="seg" mid="247">这使您可以在咨询期间使用您的麦克风。</mrk></target>
+      </trans-unit>
+      <trans-unit id="226" resname="audio_permission_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets HealthTap adjust volume during consults.</source><seg-source><mrk mtype="seg" mid="248">This lets HealthTap adjust volume during consults.</mrk></seg-source><target><mrk mtype="seg" mid="248">这使HealthTap在咨询期间可以调整音量。</mrk></target>
+      </trans-unit>
+      <trans-unit id="227" resname="write_external_storage_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets HealthTap save photos take in the consult to your gallery.</source><seg-source><mrk mtype="seg" mid="249">This lets HealthTap save photos take in the consult to your gallery.</mrk></seg-source><target><mrk mtype="seg" mid="249">这使HealthTap在咨询中可以保存照片到您的相册。</mrk></target>
+      </trans-unit>
+      <trans-unit id="228" resname="camera_take_photo_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets HealthTap access your camera and take photos.</source><seg-source><mrk mtype="seg" mid="250">This lets HealthTap access your camera and take photos.</mrk></seg-source><target><mrk mtype="seg" mid="250">这使HealthTap可以访问您的相机并可以拍照。</mrk></target>
+      </trans-unit>
+      <trans-unit id="229" resname="read_external_storage_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets HealthTap access your photo gallery and files</source><seg-source><mrk mtype="seg" mid="251">This lets HealthTap access your photo gallery and files</mrk></seg-source><target><mrk mtype="seg" mid="251">这使HealthTap可以访问您的相册和文件</mrk></target>
+      </trans-unit>
+      <trans-unit id="230" resname="get_accounts_permission_rationale" restype="string" datatype="x-android-resource">
+        <source>This lets HealthTap sign in with your Google account.</source><seg-source><mrk mtype="seg" mid="252">This lets HealthTap sign in with your Google account.</mrk></seg-source><target><mrk mtype="seg" mid="252">这使HealthTap可以使用您的Google帐户登录。</mrk></target>
+      </trans-unit>
+      <trans-unit id="231" resname="allow" restype="string" datatype="x-android-resource">
+        <source>allow</source><seg-source><mrk mtype="seg" mid="253">allow</mrk></seg-source><target><mrk mtype="seg" mid="253">允许</mrk></target>
+      </trans-unit>
+      <trans-unit id="232" resname="deny" restype="string" datatype="x-android-resource">
+        <source>deny</source><seg-source><mrk mtype="seg" mid="254">deny</mrk></seg-source><target><mrk mtype="seg" mid="254">拒绝</mrk></target>
+      </trans-unit>
+      <trans-unit id="233" resname="consult_permission_alert_title" restype="string" datatype="x-android-resource">
+        <source>Allow HealthTap the following permissions?</source><seg-source><mrk mtype="seg" mid="255">Allow HealthTap the following permissions?</mrk></seg-source><target><mrk mtype="seg" mid="255">允许HealthTap拥有以下权限？</mrk></target>
+      </trans-unit>
+      <trans-unit id="234" resname="action_add_from_directory" restype="string" datatype="x-android-resource">
+        <source>Choose from directory</source><seg-source><mrk mtype="seg" mid="256">Choose from directory</mrk></seg-source><target><mrk mtype="seg" mid="256">从目录中选择</mrk></target>
+      </trans-unit>
+      <trans-unit id="235" resname="action_share_through_email" restype="string" datatype="x-android-resource">
+        <source>Email</source><seg-source><mrk mtype="seg" mid="257">Email</mrk></seg-source><target><mrk mtype="seg" mid="257">邮箱</mrk></target>
+      </trans-unit>
+      <trans-unit id="236" resname="action_share_through_sms" restype="string" datatype="x-android-resource">
+        <source>SMS</source><seg-source><mrk mtype="seg" mid="258">SMS</mrk></seg-source><target><mrk mtype="seg" mid="258">SMS</mrk></target>
+      </trans-unit>
+      <trans-unit id="237" resname="action_share_through_link" restype="string" datatype="x-android-resource">
+        <source>Share the link</source><seg-source><mrk mtype="seg" mid="259">Share the link</mrk></seg-source><target><mrk mtype="seg" mid="259">分享链接</mrk></target>
+      </trans-unit>
+      <trans-unit id="238" resname="input_count_format_1" restype="string" datatype="x-android-resource">
+        <source>{characters_num}/{maximum_allowed_characters_num}</source><seg-source><mrk mtype="seg" mid="260">{characters_num}/{maximum_allowed_characters_num}</mrk></seg-source><target><mrk mtype="seg" mid="260">{characters_num}/{maximum_allowed_characters_num}</mrk></target>
+        
+      <note>This shows ratio of current input characters number over allowed characters number. {maximum_allowed_characters_num} is the maximum characters allowed. e.g. 20/2000</note></trans-unit>
+      <trans-unit id="239" resname="title_Search" restype="string" datatype="x-android-resource">
+        <source>Search</source><seg-source><mrk mtype="seg" mid="261">Search</mrk></seg-source><target><mrk mtype="seg" mid="261">搜索</mrk></target>
+      </trans-unit>
+      <trans-unit id="240" resname="title_Choose_from_directory" restype="string" datatype="x-android-resource">
+        <source>Choose from directory</source><seg-source><mrk mtype="seg" mid="262">Choose from directory</mrk></seg-source><target><mrk mtype="seg" mid="262">从目录中选择</mrk></target>
+      </trans-unit>
+      <trans-unit id="241" resname="title_Email" restype="string" datatype="x-android-resource">
+        <source>Email</source><seg-source><mrk mtype="seg" mid="263">Email</mrk></seg-source><target><mrk mtype="seg" mid="263">邮箱</mrk></target>
+      </trans-unit>
+      <trans-unit id="242" resname="title_SMS" restype="string" datatype="x-android-resource">
+        <source>SMS</source><seg-source><mrk mtype="seg" mid="264">SMS</mrk></seg-source><target><mrk mtype="seg" mid="264">SMS</mrk></target>
+      </trans-unit>
+      <trans-unit id="243" resname="title_Share_the_link" restype="string" datatype="x-android-resource">
+        <source>Share the link</source><seg-source><mrk mtype="seg" mid="265">Share the link</mrk></seg-source><target><mrk mtype="seg" mid="265">分享链接</mrk></target>
+      </trans-unit>
+      <trans-unit id="244" resname="text__test__Benzamycin" restype="string" datatype="x-android-resource">
+        <source>(test) Benzamycin</source><seg-source><mrk mtype="seg" mid="266">(test) Benzamycin</mrk></seg-source><target><mrk mtype="seg" mid="266">(测试)必麦森</mrk></target>
+      </trans-unit>
+      <trans-unit id="245" resname="text__test__500_mg__oral_capsules__twice_daily__x200" restype="string" datatype="x-android-resource">
+        <source>(test) 500 mg, oral capsules, twice daily, x200</source><seg-source><mrk mtype="seg" mid="267">(test) 500 mg, oral capsules, twice daily, x200</mrk></seg-source><target><mrk mtype="seg" mid="267">(测试) 500毫克，口服胶囊，每日两次，x200</mrk></target>
+      </trans-unit>
+      <trans-unit id="246" resname="text_These_are_doctor_comments_about_this_medication" restype="string" datatype="x-android-resource">
+        <source>These are doctor comments about this medication</source><seg-source><mrk mtype="seg" mid="268">These are doctor comments about this medication</mrk></seg-source><target><mrk mtype="seg" mid="268">这些是医生对这种药物的评论</mrk></target>
+      </trans-unit>
+      <trans-unit id="247" resname="text_Additional_notes" restype="string" datatype="x-android-resource">
+        <source>Additional notes</source><seg-source><mrk mtype="seg" mid="269">Additional notes</mrk></seg-source><target><mrk mtype="seg" mid="269">补充注意事项</mrk></target>
+      </trans-unit>
+      <trans-unit id="248" resname="text_Dr__Test" restype="string" datatype="x-android-resource">
+        <source>Dr. Test</source><seg-source><mrk mtype="seg" mid="270">Dr. Test</mrk></seg-source><target><mrk mtype="seg" mid="270">Test医生</mrk></target>
+      </trans-unit>
+      <trans-unit id="249" resname="text_Specialty" restype="string" datatype="x-android-resource">
+        <source>Specialty</source><seg-source><mrk mtype="seg" mid="271">Specialty</mrk></seg-source><target><mrk mtype="seg" mid="271">专业</mrk></target>
+      </trans-unit>
+      <trans-unit id="250" resname="text_City__State" restype="string" datatype="x-android-resource">
+        <source>City, State</source><seg-source><mrk mtype="seg" mid="272">City, State</mrk></seg-source><target><mrk mtype="seg" mid="272">市，州</mrk></target>
+      </trans-unit>
+      <trans-unit id="251" resname="text_Tap_to_resume" restype="string" datatype="x-android-resource">
+        <source>Tap to resume</source><seg-source><mrk mtype="seg" mid="273">Tap to resume</mrk></seg-source><target><mrk mtype="seg" mid="273">点击即可恢复</mrk></target>
+      </trans-unit>
+      <trans-unit id="252" resname="text_You_complained_of_headache__fever_and_stress__test_" restype="string" datatype="x-android-resource">
+        <source>You complained of headache, fever and stress.(test)</source><seg-source><mrk mtype="seg" mid="274">You complained of headache, fever and stress.(test)</mrk></seg-source><target><mrk mtype="seg" mid="274">您抱怨头痛，发热和有压力(测试)</mrk></target>
+      </trans-unit>
+      <trans-unit id="253" resname="text_You_have_an_elevated_heart_rate_and_red_skin___Test_" restype="string" datatype="x-android-resource">
+        <source>You have an elevated heart rate and red skin. (Test)</source><seg-source><mrk mtype="seg" mid="275">You have an elevated heart rate and red skin.</mrk> <mrk mtype="seg" mid="276">(Test)</mrk></seg-source><target><mrk mtype="seg" mid="275">您心率偏高和皮肤发红</mrk><mrk mtype="seg" mid="276">(测试)</mrk></target>
+      </trans-unit>
+      <trans-unit id="254" resname="text_You_likely_have_a_cold__test_" restype="string" datatype="x-android-resource">
+        <source>You likely have a cold.(test)</source><seg-source><mrk mtype="seg" mid="277">You likely have a cold.(test)</mrk></seg-source><target><mrk mtype="seg" mid="277">您可能感冒了。（测试）</mrk></target>
+      </trans-unit>
+      <trans-unit id="255" resname="text_Diagnosis_" restype="string" datatype="x-android-resource">
+        <source>Diagnosis:</source><seg-source><mrk mtype="seg" mid="278">Diagnosis:</mrk></seg-source><target><mrk mtype="seg" mid="278">诊断</mrk></target>
+      </trans-unit>
+      <trans-unit id="256" resname="text_Invite_a_supporter" restype="string" datatype="x-android-resource">
+        <source>Invite a supporter</source><seg-source><mrk mtype="seg" mid="279">Invite a supporter</mrk></seg-source><target><mrk mtype="seg" mid="279">邀请一位支持者</mrk></target>
+      </trans-unit>
+      <trans-unit id="257" resname="text__test_Dr__blah_blah" restype="string" datatype="x-android-resource">
+        <source>(test)Dr. blah blah</source><seg-source><mrk mtype="seg" mid="280">(test)Dr. blah blah</mrk></seg-source><target><mrk mtype="seg" mid="280">(测试)医生 blah blah</mrk></target>
+      </trans-unit>
+      <trans-unit id="258" resname="text__test_blah__blah" restype="string" datatype="x-android-resource">
+        <source>(test)blah, blah</source><seg-source><mrk mtype="seg" mid="281">(test)blah, blah</mrk></seg-source><target><mrk mtype="seg" mid="281">(测试)blah, blah</mrk></target>
+      </trans-unit>
+      <trans-unit id="259" resname="text_I_recommend_the_following_medication_" restype="string" datatype="x-android-resource">
+        <source>I recommend the following medication:</source><seg-source><mrk mtype="seg" mid="282">I recommend the following medication:</mrk></seg-source><target><mrk mtype="seg" mid="282">我推荐您如下药物：</mrk></target>
+      </trans-unit>
+      <trans-unit id="260" resname="text__test__Walgreens" restype="string" datatype="x-android-resource">
+        <source>(test) Walgreens</source><seg-source><mrk mtype="seg" mid="283">(test) Walgreens</mrk></seg-source><target><mrk mtype="seg" mid="283">(测试) Walgreens</mrk></target>
+      </trans-unit>
+      <trans-unit id="261" resname="text__test__774_University_Ave_" restype="string" datatype="x-android-resource">
+        <source>(test) 774 University Ave,</source><seg-source><mrk mtype="seg" mid="284">(test) 774 University Ave,</mrk></seg-source><target><mrk mtype="seg" mid="284">(test) 774 University Ave,</mrk></target>
+      </trans-unit>
+      <trans-unit id="262" resname="text__test__Palo_Alto__CA_23423" restype="string" datatype="x-android-resource">
+        <source>(test) Palo Alto, CA 23423</source><seg-source><mrk mtype="seg" mid="285">(test) Palo Alto, CA 23423</mrk></seg-source><target><mrk mtype="seg" mid="285">(test) Palo Alto, CA 23423</mrk></target>
+      </trans-unit>
+      <trans-unit id="263" resname="text_1__617__392_838" restype="string" datatype="x-android-resource">
+        <source>1 (617) 392-838</source><seg-source><mrk mtype="seg" mid="286">1 (617) 392-838</mrk></seg-source><target><mrk mtype="seg" mid="286">1 (617) 392-838</mrk></target>
+      </trans-unit>
+      <trans-unit id="264" resname="text_Speakerphone" restype="string" datatype="x-android-resource">
+        <source>Speakerphone</source><seg-source><mrk mtype="seg" mid="287">Speakerphone</mrk></seg-source><target><mrk mtype="seg" mid="287">扬声器</mrk></target>
+      </trans-unit>
+      <trans-unit id="265" resname="text_Microphone" restype="string" datatype="x-android-resource">
+        <source>Microphone</source><seg-source><mrk mtype="seg" mid="288">Microphone</mrk></seg-source><target><mrk mtype="seg" mid="288">麦克风</mrk></target>
+      </trans-unit>
+      <trans-unit id="266" resname="text_Medical_Report_test_" restype="string" datatype="x-android-resource">
+        <source>Medical Report(test)</source><seg-source><mrk mtype="seg" mid="289">Medical Report(test)</mrk></seg-source><target><mrk mtype="seg" mid="289">医疗报告(测试)</mrk></target>
+      </trans-unit>
+      <trans-unit id="267" resname="text_Uploaded_Jan_4__2013__test_" restype="string" datatype="x-android-resource">
+        <source>Uploaded Jan 4, 2013 (test)</source><seg-source><mrk mtype="seg" mid="290">Uploaded Jan 4, 2013 (test)</mrk></seg-source><target><mrk mtype="seg" mid="290">于2013年1月4日上传(测试)</mrk></target>
+      </trans-unit>
+      <trans-unit id="268" resname="text_2_3Mb__test_" restype="string" datatype="x-android-resource">
+        <source>2.3Mb (test)</source><seg-source><mrk mtype="seg" mid="291">2.3Mb (test)</mrk></seg-source><target><mrk mtype="seg" mid="291">2.3Mb (测试)</mrk></target>
+      </trans-unit>
+      <trans-unit id="269" resname="text_Dr__Example_Doctor" restype="string" datatype="x-android-resource">
+        <source>Dr. Example Doctor</source><seg-source><mrk mtype="seg" mid="292">Dr. Example Doctor</mrk></seg-source><target><mrk mtype="seg" mid="292">Example Doctor医生</mrk></target>
+      </trans-unit>
+      <trans-unit id="270" resname="text_Addiction_Medicine" restype="string" datatype="x-android-resource">
+        <source>Addiction Medicine</source><seg-source><mrk mtype="seg" mid="293">Addiction Medicine</mrk></seg-source><target><mrk mtype="seg" mid="293">成瘾性药</mrk></target>
+      </trans-unit>
+      <trans-unit id="271" resname="text_Palo_Alto__CA" restype="string" datatype="x-android-resource">
+        <source>Palo Alto, CA</source><seg-source><mrk mtype="seg" mid="294">Palo Alto, CA</mrk></seg-source><target><mrk mtype="seg" mid="294">Palo Alto, CA</mrk></target>
+      </trans-unit>
+      <trans-unit id="272" resname="text_No_doctors_found___n_Please_try_another_search_" restype="string" datatype="x-android-resource">
+        <source>No doctors found. \n Please try another search.</source><seg-source><mrk mtype="seg" mid="295">No doctors found.</mrk> <mrk mtype="seg" mid="296">\n Please try another search.</mrk></seg-source><target><mrk mtype="seg" mid="295">没有找到医生</mrk><mrk mtype="seg" mid="296">\n请尝试其它搜索。</mrk></target>
+      </trans-unit>
+      <trans-unit id="273" resname="text_tab_text" restype="string" datatype="x-android-resource">
+        <source>tab text</source><seg-source><mrk mtype="seg" mid="297">tab text</mrk></seg-source><target><mrk mtype="seg" mid="297">标签文本</mrk></target>
+      </trans-unit>
+      <trans-unit id="274" resname="text_1" restype="string" datatype="x-android-resource">
+        <source>1</source><seg-source><mrk mtype="seg" mid="298">1</mrk></seg-source><target><mrk mtype="seg" mid="298">1</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
