@@ -24057,7 +24057,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4684" resname="I&apos;d like to refer you to&lt;%= HMO_provider ? &#40;&apos; the following specialist. As a member of &apos; + HMO_provider + &apos;, please first check with your primary care physician before seeing this specialist&apos;&#41; : &apos;&apos; %&gt;:" restype="string" datatype="html">
         <source>I&apos;d like to refer you to&lt;%= HMO_provider ? &#40;&apos; the following specialist. As a member of &apos; + HMO_provider + &apos;, please first check with your primary care physician before seeing this specialist&apos;&#41; : &apos;&apos; %&gt;:</source>
-        <target>我向您推荐以下专家&lt;%= HMO_provider ? &#40;&apos; 关注中的专家作为一名’HMO_provider % + ‘的会员，请在问诊这名专家前先与您的普通门诊医师确认。&apos;&apos; %&gt;:</target>
+        <target>我向您推荐以下专家&lt;%= HMO_provider ? &#40;&apos; 关注中的专家作为一名’HMO_provider % + ‘的会员，请在问诊这名专家前先与您的普通门诊医师确认。&apos;&#41; : &apos;&apos; %&gt;:</target>
       </trans-unit>
       <trans-unit id="4685" resname="Call: &lt;%= non_ht_tel %&gt;" restype="string" datatype="html">
         <source>Call: &lt;%= non_ht_tel %&gt;</source>

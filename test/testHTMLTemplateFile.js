@@ -2880,5 +2880,301 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileLocalizeTextBug1: function(test) {
+        test.expect(2);
 
+        var p = new WebProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+			'<%\n' +
+			'  var accepts_insurance, concierge_hidden, provider_group, HMO_provider;\n' +
+			'  var person_obj = person_obj || {};\n' +
+			
+			'  var member_group = (person_obj.network_provider_groups && person_obj.network_provider_groups.length) ? person_obj.network_provider_groups[0] : {};\n' +
+			
+			'  concierge_hidden = !person_obj.concierge_allowed;\n' +
+			
+			'  if (ht_expert.provider_groups) {\n' +
+			'    var provider_ids = _.pluck(JSON.parse(ht_expert.provider_groups), \'id\');\n' +
+			'    accepts_insurance = (provider_ids.indexOf(parseInt(member_group.id)) >= 0);\n' +
+			'  }\n' +
+			
+			'  if (member_group.is_hmo) {\n' +
+			'    HMO_provider = member_group.name;\n' +
+			'  }\n' +
+			
+			'  accepts_insurance = accepts_insurance || false;\n' +
+			'  concierge_hidden = concierge_hidden || false;\n' +
+			'  HMO_provider = HMO_provider || false;\n' +
+			'%>\n' +
+			
+			'<div class="refer-doc-message">\n' +
+			'  I\'d like to refer you to<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:\n' +
+			'  <div class="doctor-result clearfix">\n' +
+			'<% var imageStyle = ht_expert.avatar_transparent_circular ? "background-image: url(\'"+ht_expert.avatar_transparent_circular+ "\')" : "" %>\n' +
+			'<div class="avatar left" style="<%= imageStyle %>"></div>\n' +
+			'<div class="caduceus left"></div>\n' +
+			'<div class="doctor-info">\n' +
+			'  <% if (ht_expert) { %>\n' +
+			'    <a class="doctor-name emphasis" href="<%= feelGood.linkToExpert(ht_expert_id) %>">\n' +
+			'      <%= ht_expert.value %>\n' +
+			'    </a>\n' +
+			'    <div class="specialty" >\n' +
+			'      <%= ht_expert.intro %>\n' +
+			'    </div>\n' +
+			'    <%= window.templates[\'_ratings\']({\n' +
+			'      doc_score: ht_expert.doc_score,\n' +
+			'      hide_5th_star: false\n' +
+			'    }) %>\n' +
+			'    <% if (ht_expert.display_location) { %>\n' +
+			'      <div class="location">\n' +
+			'        <div class="small-location-icon"></div>\n' +
+			'        <%= ht_expert.display_location %>\n' +
+			'      </div>\n' +
+			'    <% } %>\n' +
+			'    <% if (ht_expert.in_network && ht_expert.in_network_display_string) { %>\n' +
+			'      <div class="concierge-buttons">\n' +
+			'        <div class="accepts-insurance">\n' +
+			'          <div class="green_check"></div>\n' +
+			'          <%= ht_expert.in_network_display_string %>\n' +
+			'        </div>\n' +
+			'      </div>\n' +
+			'    <% } %>\n' +
+			'    <% if (ht_expert.in_concierge && ht_expert.in_concierge != "false" && !concierge_hidden) { %>\n' +
+			'      <div class="concierge-buttons">\n' +
+			'      <a class="concierge-btn message-btn tooltip-link" href="/experts/<%=ht_expert.id %>/message" track_event="request_message" track_data=\'{"type": "transcript"}\'>\n' +
+			'        <div class="concierge-btn-icon-msg"></div>\n' +
+			'        <div class="tooltip-info"> Send Message </div>\n' +
+			'      </a>\n' +
+			'      <a class="concierge-btn appointment-btn tooltip-link" href="/experts/<%=ht_expert.id %>/appointment" track_event="request_appointment" track_data=\'{"type": "transcript"}\'>\n' +
+			'        <div class="concierge-btn-icon-appt"></div>\n' +
+			'        <div class="tooltip-info"> Virtual Appointment</div>\n' +
+			'      </a>\n' +
+			'      <a class="concierge-btn talk-btn tooltip-link" href="/experts/<%=ht_expert.id %>/talk" track_event="request_talk" track_data=\'{"type": "transcript"}\'>\n' +
+			'        <div class="concierge-btn-icon-video"></div>\n' +
+			'        <div class="tooltip-info"> Video/Chat</div>\n' +
+			'      </a>\n' +
+			'      </div>\n' +
+			'    <% } %>\n' +
+			'  <% } else { %>\n' +
+			'    <div class="doctor-name emphasis">\n' +
+			'      <%= non_ht_expert_name %>\n' +
+			'    </div>\n' +
+			'    <% if (non_ht_tel && non_ht_tel.length >= 7) { %>\n' +
+			'      <div class="specialty">\n' +
+			'        Call: <%= non_ht_tel %>\n' +
+			'      </div>\n' +
+			'    <% } %>\n' +
+			'    <% if (non_ht_expert_email ) { %>\n' +
+			'      <div class="specialty">\n' +
+			'            Email: <%= non_ht_expert_email %>\n' +
+			'          </div>\n' +
+			'        <% } %>\n' +
+			
+			'      <% } %>\n' +
+			'    </div>\n' +
+			'  </div>\n' +
+			'</div>\n'
+        );
+			
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'I\'d like to refer you to<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:',
+        	source: 'Ich moechte Sie referieren an<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:',
+        	locale: "de-DE"
+        }));
+                
+        diff(htf.localizeText(translations, "de-DE"),
+    			'<%\n' +
+    			'  var accepts_insurance, concierge_hidden, provider_group, HMO_provider;\n' +
+    			'  var person_obj = person_obj || {};\n' +
+    			
+    			'  var member_group = (person_obj.network_provider_groups && person_obj.network_provider_groups.length) ? person_obj.network_provider_groups[0] : {};\n' +
+    			
+    			'  concierge_hidden = !person_obj.concierge_allowed;\n' +
+    			
+    			'  if (ht_expert.provider_groups) {\n' +
+    			'    var provider_ids = _.pluck(JSON.parse(ht_expert.provider_groups), \'id\');\n' +
+    			'    accepts_insurance = (provider_ids.indexOf(parseInt(member_group.id)) >= 0);\n' +
+    			'  }\n' +
+    			
+    			'  if (member_group.is_hmo) {\n' +
+    			'    HMO_provider = member_group.name;\n' +
+    			'  }\n' +
+    			
+    			'  accepts_insurance = accepts_insurance || false;\n' +
+    			'  concierge_hidden = concierge_hidden || false;\n' +
+    			'  HMO_provider = HMO_provider || false;\n' +
+    			'%>\n' +
+    			
+    			'<div class="refer-doc-message">\n' +
+    			'  Ich moechte Sie referieren an<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:\n' +
+    			'  <div class="doctor-result clearfix">\n' +
+    			'<% var imageStyle = ht_expert.avatar_transparent_circular ? "background-image: url(\'"+ht_expert.avatar_transparent_circular+ "\')" : "" %>\n' +
+    			'<div class="avatar left" style="<%= imageStyle %>"></div>\n' +
+    			'<div class="caduceus left"></div>\n' +
+    			'<div class="doctor-info">\n' +
+    			'  <% if (ht_expert) { %>\n' +
+    			'    <a class="doctor-name emphasis" href="<%= feelGood.linkToExpert(ht_expert_id) %>">\n' +
+    			'      <%= ht_expert.value %>\n' +
+    			'    </a>\n' +
+    			'    <div class="specialty">\n' +
+    			'      <%= ht_expert.intro %>\n' +
+    			'    </div>\n' +
+    			'    <%= window.templates[\'_ratings\']({\n' +
+    			'      doc_score: ht_expert.doc_score,\n' +
+    			'      hide_5th_star: false\n' +
+    			'    }) %>\n' +
+    			'    <% if (ht_expert.display_location) { %>\n' +
+    			'      <div class="location">\n' +
+    			'        <div class="small-location-icon"></div>\n' +
+    			'        <%= ht_expert.display_location %>\n' +
+    			'      </div>\n' +
+    			'    <% } %>\n' +
+    			'    <% if (ht_expert.in_network && ht_expert.in_network_display_string) { %>\n' +
+    			'      <div class="concierge-buttons">\n' +
+    			'        <div class="accepts-insurance">\n' +
+    			'          <div class="green_check"></div>\n' +
+    			'          <%= ht_expert.in_network_display_string %>\n' +
+    			'        </div>\n' +
+    			'      </div>\n' +
+    			'    <% } %>\n' +
+    			'    <% if (ht_expert.in_concierge && ht_expert.in_concierge != "false" && !concierge_hidden) { %>\n' +
+    			'      <div class="concierge-buttons">\n' +
+    			'      <a class="concierge-btn message-btn tooltip-link" href="/experts/<%=ht_expert.id %>/message" track_event="request_message" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
+    			'        <div class="concierge-btn-icon-msg"></div>\n' +
+    			'        <div class="tooltip-info"> Send Message </div>\n' +
+    			'      </a>\n' +
+    			'      <a class="concierge-btn appointment-btn tooltip-link" href="/experts/<%=ht_expert.id %>/appointment" track_event="request_appointment" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
+    			'        <div class="concierge-btn-icon-appt"></div>\n' +
+    			'        <div class="tooltip-info"> Virtual Appointment</div>\n' +
+    			'      </a>\n' +
+    			'      <a class="concierge-btn talk-btn tooltip-link" href="/experts/<%=ht_expert.id %>/talk" track_event="request_talk" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
+    			'        <div class="concierge-btn-icon-video"></div>\n' +
+    			'        <div class="tooltip-info"> Video/Chat</div>\n' +
+    			'      </a>\n' +
+    			'      </div>\n' +
+    			'    <% } %>\n' +
+    			'  <% } else { %>\n' +
+    			'    <div class="doctor-name emphasis">\n' +
+    			'      <%= non_ht_expert_name %>\n' +
+    			'    </div>\n' +
+    			'    <% if (non_ht_tel && non_ht_tel.length >= 7) { %>\n' +
+    			'      <div class="specialty">\n' +
+    			'        Call: <%= non_ht_tel %>\n' +
+    			'      </div>\n' +
+    			'    <% } %>\n' +
+    			'    <% if (non_ht_expert_email ) { %>\n' +
+    			'      <div class="specialty">\n' +
+    			'            Email: <%= non_ht_expert_email %>\n' +
+    			'          </div>\n' +
+    			'        <% } %>\n' +
+    			
+    			'      <% } %>\n' +
+    			'    </div>\n' +
+    			'  </div>\n' +
+    			'</div>\n'
+            );
+        
+        test.equal(htf.localizeText(translations, "de-DE"),
+    			'<%\n' +
+    			'  var accepts_insurance, concierge_hidden, provider_group, HMO_provider;\n' +
+    			'  var person_obj = person_obj || {};\n' +
+    			
+    			'  var member_group = (person_obj.network_provider_groups && person_obj.network_provider_groups.length) ? person_obj.network_provider_groups[0] : {};\n' +
+    			
+    			'  concierge_hidden = !person_obj.concierge_allowed;\n' +
+    			
+    			'  if (ht_expert.provider_groups) {\n' +
+    			'    var provider_ids = _.pluck(JSON.parse(ht_expert.provider_groups), \'id\');\n' +
+    			'    accepts_insurance = (provider_ids.indexOf(parseInt(member_group.id)) >= 0);\n' +
+    			'  }\n' +
+    			
+    			'  if (member_group.is_hmo) {\n' +
+    			'    HMO_provider = member_group.name;\n' +
+    			'  }\n' +
+    			
+    			'  accepts_insurance = accepts_insurance || false;\n' +
+    			'  concierge_hidden = concierge_hidden || false;\n' +
+    			'  HMO_provider = HMO_provider || false;\n' +
+    			'%>\n' +
+    			
+    			'<div class="refer-doc-message">\n' +
+    			'  Ich moechte Sie referieren an<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:\n' +
+    			'  <div class="doctor-result clearfix">\n' +
+    			'<% var imageStyle = ht_expert.avatar_transparent_circular ? "background-image: url(\'"+ht_expert.avatar_transparent_circular+ "\')" : "" %>\n' +
+    			'<div class="avatar left" style="<%= imageStyle %>"></div>\n' +
+    			'<div class="caduceus left"></div>\n' +
+    			'<div class="doctor-info">\n' +
+    			'  <% if (ht_expert) { %>\n' +
+    			'    <a class="doctor-name emphasis" href="<%= feelGood.linkToExpert(ht_expert_id) %>">\n' +
+    			'      <%= ht_expert.value %>\n' +
+    			'    </a>\n' +
+    			'    <div class="specialty">\n' +
+    			'      <%= ht_expert.intro %>\n' +
+    			'    </div>\n' +
+    			'    <%= window.templates[\'_ratings\']({\n' +
+    			'      doc_score: ht_expert.doc_score,\n' +
+    			'      hide_5th_star: false\n' +
+    			'    }) %>\n' +
+    			'    <% if (ht_expert.display_location) { %>\n' +
+    			'      <div class="location">\n' +
+    			'        <div class="small-location-icon"></div>\n' +
+    			'        <%= ht_expert.display_location %>\n' +
+    			'      </div>\n' +
+    			'    <% } %>\n' +
+    			'    <% if (ht_expert.in_network && ht_expert.in_network_display_string) { %>\n' +
+    			'      <div class="concierge-buttons">\n' +
+    			'        <div class="accepts-insurance">\n' +
+    			'          <div class="green_check"></div>\n' +
+    			'          <%= ht_expert.in_network_display_string %>\n' +
+    			'        </div>\n' +
+    			'      </div>\n' +
+    			'    <% } %>\n' +
+    			'    <% if (ht_expert.in_concierge && ht_expert.in_concierge != "false" && !concierge_hidden) { %>\n' +
+    			'      <div class="concierge-buttons">\n' +
+    			'      <a class="concierge-btn message-btn tooltip-link" href="/experts/<%=ht_expert.id %>/message" track_event="request_message" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
+    			'        <div class="concierge-btn-icon-msg"></div>\n' +
+    			'        <div class="tooltip-info"> Send Message </div>\n' +
+    			'      </a>\n' +
+    			'      <a class="concierge-btn appointment-btn tooltip-link" href="/experts/<%=ht_expert.id %>/appointment" track_event="request_appointment" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
+    			'        <div class="concierge-btn-icon-appt"></div>\n' +
+    			'        <div class="tooltip-info"> Virtual Appointment</div>\n' +
+    			'      </a>\n' +
+    			'      <a class="concierge-btn talk-btn tooltip-link" href="/experts/<%=ht_expert.id %>/talk" track_event="request_talk" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
+    			'        <div class="concierge-btn-icon-video"></div>\n' +
+    			'        <div class="tooltip-info"> Video/Chat</div>\n' +
+    			'      </a>\n' +
+    			'      </div>\n' +
+    			'    <% } %>\n' +
+    			'  <% } else { %>\n' +
+    			'    <div class="doctor-name emphasis">\n' +
+    			'      <%= non_ht_expert_name %>\n' +
+    			'    </div>\n' +
+    			'    <% if (non_ht_tel && non_ht_tel.length >= 7) { %>\n' +
+    			'      <div class="specialty">\n' +
+    			'        Call: <%= non_ht_tel %>\n' +
+    			'      </div>\n' +
+    			'    <% } %>\n' +
+    			'    <% if (non_ht_expert_email ) { %>\n' +
+    			'      <div class="specialty">\n' +
+    			'            Email: <%= non_ht_expert_email %>\n' +
+    			'          </div>\n' +
+    			'        <% } %>\n' +
+    			
+    			'      <% } %>\n' +
+    			'    </div>\n' +
+    			'  </div>\n' +
+    			'</div>\n'
+            );
+              
+        test.done();
+    }
 };

@@ -24052,7 +24052,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="4684" resname="I&apos;d like to refer you to&lt;%= HMO_provider ? &#40;&apos; the following specialist. As a member of &apos; + HMO_provider + &apos;, please first check with your primary care physician before seeing this specialist&apos;&#41; : &apos;&apos; %&gt;:" restype="string" datatype="html">
         <source>I&apos;d like to refer you to&lt;%= HMO_provider ? &#40;&apos; the following specialist. As a member of &apos; + HMO_provider + &apos;, please first check with your primary care physician before seeing this specialist&apos;&#41; : &apos;&apos; %&gt;:</source>
-        <target>Me gustaría remitirte a &lt;%= HMO_provider ? &#40;&apos; siguiente especialista. Como miembro de &apos; + HMO_provider + &apos;, por favor revisa primero con tu médico de atención primaria antes de ver a este especialista. &apos;&apos; %&gt;:</target>
+        <target>Me gustaría remitirte a &lt;%= HMO_provider ? &#40;&apos; siguiente especialista. Como miembro de &apos; + HMO_provider + &apos;, por favor revisa primero con tu médico de atención primaria antes de ver a este especialista.&apos;&#41; : &apos;&apos; %&gt;:</target>
       </trans-unit>
       <trans-unit id="4685" resname="Call: &lt;%= non_ht_tel %&gt;" restype="string" datatype="html">
         <source>Call: &lt;%= non_ht_tel %&gt;</source>
