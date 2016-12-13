@@ -194,36 +194,46 @@ function walk(dir, project) {
 	}
 	
 	var list = fs.readdirSync(dir);
+	var pathName, relPath, included, stat;
+	
 	list.forEach(function (file) {
-		var pathName = path.join(dir, file);
-		var relPath = path.relative(project.getRoot(), pathName);
-		var stat = fs.statSync(pathName);
-		if (stat && stat.isDirectory()) {
-			if (project) {
-				logger.info(pathName);
-				if (project.options.excludes) {
-					logger.trace("There are excludes. Relpath is " + relPath);
-					if (project.options.excludes.indexOf(relPath) === -1) {
-						logger.trace("Not excluded.");
-						walk(pathName, project);
-					} else {
-						logger.trace("Excluded");
-					}
-				} else {
-					logger.trace("Neither includes or excludes.");
-					walk(pathName, project);
+		pathName = path.join(dir, file);
+		relPath = path.relative(project.getRoot(), pathName);
+		included = true;
+
+		if (project) {
+			if (project.options.excludes) {
+				logger.trace("There are excludes. Relpath is " + relPath);
+				if (project.options.excludes.indexOf(relPath) !== -1) {
+					included = false;
 				}
-			} else {
-			    logger.trace("found a dir");
+			}
+			
+			// override the excludes
+			if (project.options.includes) {
+				logger.trace("There are includes. Relpath is " + relPath);
+				if (project.options.includes.indexOf(relPath) !== -1) {
+					included = true;
+				}
+			}
+		}
+
+		if (included) {
+			logger.trace("Included.");
+			stat = fs.statSync(pathName);
+			if (stat && stat.isDirectory()) {
+				logger.info(pathName);
 				walk(pathName, project);
+			} else {
+				if (project) {
+					logger.info(pathName);
+					project.addPath(pathName);
+				} else {
+					logger.trace("Ignoring non-project file: " + pathName);
+				}
 			}
 		} else {
-			if (project) {
-				logger.info(pathName);
-				project.addPath(pathName);
-			} else {
-				logger.trace("Ignoring non-project file: " + pathName);
-			}
+			logger.trace("Excluded.");
 		}
 	});
 	
