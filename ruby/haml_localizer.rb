@@ -221,23 +221,28 @@ def process_line(skip_block_indent, ret, line, from_to)
       from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
         next if k.include?('@') || k.include?('#{')
         v = from_to[k]
-        res = line.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
-        #if res
-        #  puts "replacing #{k} WITH #{v}"
-        #end
-        res = line.gsub!(/\b(?<=:title =>\")#{Regexp.escape(k)}(?=\")/, v)
-        #if res
-        #  puts "replacing #{k} WITH #{v}"
-        #end
+        begin
+          res = line.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
+          #if res
+          #  puts "replacing #{k} WITH #{v}"
+          #end
+          res = line.gsub!(/\b(?<=:title =>\")#{Regexp.escape(k)}(?=\")/, v)
+          #if res
+          #  puts "replacing #{k} WITH #{v}"
+          #end
 
-        res = line.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
-        #if res
-        #  puts "replacing #{k} WITH #{v}"
-        #end
-        res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
-        #if res
-        #  puts "replacing #{k} WITH #{v}"
-        #end
+          res = line.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
+          #if res
+          #  puts "replacing #{k} WITH #{v}"
+          #end
+          res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+          #if res
+          #  puts "replacing #{k} WITH #{v}"
+          #end
+        rescue
+          puts "ERROR could not substitute #{v} into #{line}"
+          puts e.backtrace
+        end
       }
       ret << line
     end
@@ -369,6 +374,7 @@ unless defined?(TEST_ENV)
         locale_mappings = locale_mappings[locale_name] unless locale_mappings[locale_name].nil?
         if locale_name == PSEUDO_LOCALE
           from_to = process_pseudo_values(values)
+          unmapped_for_file = values
         else
           from_to = process_values(locale_mappings, values, unmapped_for_file)
         end
