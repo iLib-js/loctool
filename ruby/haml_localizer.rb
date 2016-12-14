@@ -295,7 +295,7 @@ def produce_unmapped(file_to_words)
       clean_w = w.gsub("\n", "");
       child_hash[ create_hashed_key(clean_w) ] = clean_w
     }
-    h[filename] = child_hash
+    h[filename] = child_hash unless child_hash.keys.count == 0
   end
   File.open('./unmapped.yml', 'w') {|f|
     f.write(h.to_yaml(line_width: -1))
