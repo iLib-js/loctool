@@ -376,7 +376,7 @@ unless defined?(TEST_ENV)
         locale_mappings = locale_mappings[locale_name] unless locale_mappings[locale_name].nil?
         if locale_name == PSEUDO_LOCALE
           from_to = process_pseudo_values(values)
-          unmapped_for_file = values
+          #unmapped_for_file = values # removing because it makes every string unmapped
         else
           from_to = process_values(locale_mappings, values, unmapped_for_file)
         end
