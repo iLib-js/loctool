@@ -218,7 +218,9 @@ def process_line(skip_block_indent, ret, line, from_to)
         #if res
         #  puts "replacing #{k} WITH #{v}"
         #end
-        res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+        unless line.match(/Rb.t\(\".*#{Regexp.escape(k)}.*\"\)/)
+          res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+        end
         #if res
         #  puts "replacing #{k} WITH #{v}"
         #end

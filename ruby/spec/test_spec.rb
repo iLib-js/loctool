@@ -52,4 +52,11 @@ describe 'HamlLocalizer' do
     ret = replace_with_translations2(orig2, from_to)
     ret.include?('FOO').should be_true
   end
+
+  it 'should leave alone Rb.t params alone' do
+    orig = "            .points_wrap{:title=>Rb.t(\"A doctor's DocScore is a measure of their knowledge, trust, compassion and engagement.\"), :style=>\"width : 80px\"}"
+    from_to = {"DocScore" => 'FOO'}
+    ret = replace_with_translations2(orig, from_to)
+    ret.include?('FOO').should be_false
+  end
 end
