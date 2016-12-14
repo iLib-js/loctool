@@ -132,4 +132,11 @@ describe 'HamlLocalizer' do
       expect(pseudolocalize(NO_MATCH_STRING)).to eq(NO_MATCH_STRING_PSEUDOLOCALIZED)
     end
   end
+
+  it 'should leave alone Rb.t params alone' do
+    orig = "            .points_wrap{:title=>Rb.t(\"A doctor's DocScore is a measure of their knowledge, trust, compassion and engagement.\"), :style=>\"width : 80px\"}"
+    from_to = {"DocScore" => 'FOO'}
+    ret = replace_with_translations2(orig, from_to)
+    ret.include?('FOO').should be_false
+  end
 end

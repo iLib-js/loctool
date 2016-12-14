@@ -220,7 +220,7 @@ def process_line(skip_block_indent, ret, line, from_to)
     else
       from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
         next if k.include?('@') || k.include?('#{')
-        v = from_to[k]
+        v = from_to[k].to_s
         begin
           res = line.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
           #if res
@@ -235,11 +235,13 @@ def process_line(skip_block_indent, ret, line, from_to)
           #if res
           #  puts "replacing #{k} WITH #{v}"
           #end
-          res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+          unless line.match(/Rb.t\(\".*#{Regexp.escape(k)}.*\"\)/)
+            res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+          end
           #if res
           #  puts "replacing #{k} WITH #{v}"
           #end
-        rescue
+        rescue => e
           puts "ERROR could not substitute #{v} into #{line}"
           puts e.backtrace
         end
