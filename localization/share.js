@@ -88,16 +88,21 @@ function shareTrans(unit) {
 				var context = units[locale][project][contextName];
 				if (context && context[unit.source]) {
 					var other = context[unit.source];
-					unit.target = other.target;
-					unit.targetLocale = other.targetLocale;
-					shared.addTranslationUnit(unit);
+					var newunit = unit.clone();
+					newunit.target = other.target;
+					newunit.targetLocale = other.targetLocale;
+					shared.addTranslationUnit(newunit);
 					found = true;
-					console.log("Found a shared translation.\nSource: '" + unit.source + "'\nTranslation: '" + unit.target + "'\n");
+					console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
 					break;
 				}
 			}
 		}
 		if (!found) {
+			if (unit.target) {
+				console.log("oh oh!");
+			}
+			console.log("Found untranslated string.");
 			untranslated.addTranslationUnit(unit);
 		}
 	});
@@ -107,24 +112,24 @@ webunits.forEach(shareTrans);
 
 console.log("Writing ht-webapp12 results");
 
-fs.writeFileSync("./shared/ht-androidapp-untranslated.xliff", untranslated.serialize(), "utf-8");
-fs.writeFileSync("./shared/ht-androidapp.xliff", shared.serialize(), "utf-8");
+fs.writeFileSync("./shared/ht-webapp12-untranslated.xliff", untranslated.serialize(), "utf-8");
+fs.writeFileSync("./shared/ht-webapp12.xliff", shared.serialize(), "utf-8");
 
 // signal to the GC to drop this memory
 webunits = webnew = undefined;
 
-console.log("Reading ht-androidapp new file ...");
+console.log("Reading ht-webapp12 new file ...");
 
-var androidnew = new Xliff({pathName: "./ht-androidapp-new.xliff"});
-androidnew.deserialize(fs.readFileSync("./ht-androidapp-new.xliff", "utf-8"));
+var androidnew = new Xliff({pathName: "./ht-webapp12-new.xliff"});
+androidnew.deserialize(fs.readFileSync("./ht-webapp12-new.xliff", "utf-8"));
 
-var untranslated = new Xliff({pathName: "./shared/ht-androidapp-untranslated.xliff"});
-var shared = new Xliff({pathName: "./shared/ht-androidapp.xliff"});
+var untranslated = new Xliff({pathName: "./shared/ht-webapp12-untranslated.xliff"});
+var shared = new Xliff({pathName: "./shared/ht-webapp12.xliff"});
 
 androidunits = androidnew.getTranslationUnits();
 androidunits.forEach(shareTrans);
 
-console.log("Writing ht-androidapp results");
+console.log("Writing ht-webapp12 results");
 
 fs.writeFileSync("./shared/ht-androidapp-untranslated.xliff", untranslated.serialize(), "utf-8");
 fs.writeFileSync("./shared/ht-androidapp.xliff", shared.serialize(), "utf-8");

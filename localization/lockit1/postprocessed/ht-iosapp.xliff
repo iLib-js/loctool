@@ -8594,7 +8594,7 @@ Obtén el cuidado correcto para tus necesidades - ¡consulta con un especialista
         <target>¿Quieres cancelar la carga de este archivo?</target>
         <note annotates="source">popup body before canceling an operation</note>
       </trans-unit>
-      <trans-unit id="Do you want to remove this action from your &quot;To Do&quot; list?" resname="Do you want to remove this action from your &quot;To Do&quot; list?" restype="string">
+      <trans-unit id="Do you want to remove this action from your &quot;To Do&quot; list?" resname="Do you want to remove this action from your &amp;quot;To Do&amp;quot; list?" restype="string">
         <source>Do you want to remove this action from your &quot;To Do&quot; list?</source>
         <target>¿Quieres quitar esta medida de tu lista de &quot;quehaceres&quot;?</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -10913,7 +10913,7 @@ para tu consulta</target>
         <target>Por favor, proporciona detalles</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Please provide details regarding &quot;%@&quot; &#40;Optional&#41;" resname="Please provide details regarding &quot;%@&quot; &#40;Optional&#41;" restype="string">
+      <trans-unit id="Please provide details regarding &quot;%@&quot; &#40;Optional&#41;" resname="Please provide details regarding &amp;quot;%@&amp;quot; &#40;Optional&#41;" restype="string">
         <source>Please provide details regarding &quot;%@&quot; &#40;Optional&#41;</source>
         <target>Por favor, proporciona detalles respecto a &quot;%@&quot; &#40;Opcional&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -12828,7 +12828,7 @@ médico responda la llamada&#41;</target>
         <target>De ahora en adelante, compartiremos más percepciones médicas relacionadas con este tema.</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" resname="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" restype="string">
+      <trans-unit id="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" resname="We&apos;ll share more tips and checklists to help you with &amp;quot;%@&amp;quot;" restype="string">
         <source>We&apos;ll share more tips and checklists to help you with &quot;%@&quot;</source>
         <target>Compartiremos mas consejos y listas de comprobación para ayudarte con &quot;%@&quot;</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -13035,7 +13035,7 @@ Todo problema médico que atente contra la vida. Por ejemplo, si experimentas cu
         <target>¿Cuándo naciste?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone" resname="When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone" restype="string">
+      <trans-unit id="When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone" resname="When you need to see a doctor,\nsimply tap the &amp;quot;DocNow&amp;quot; button\non your Apple Watch or iPhone" restype="string">
         <source>When you need to see a doctor,
 simply tap the &quot;DocNow&quot; button
 on your Apple Watch or iPhone</source>
@@ -13739,7 +13739,7 @@ con un médico disponible de atención primaria</target>
         <target>los médicos compartieron percepciones</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="e.g. &quot;Managing Stress&quot;" resname="e.g. &quot;Managing Stress&quot;" restype="string">
+      <trans-unit id="e.g. &quot;Managing Stress&quot;" resname="e.g. &amp;quot;Managing Stress&amp;quot;" restype="string">
         <source>e.g. &quot;Managing Stress&quot;</source>
         <target>por ej. &quot;Manejar el Estrés&quot;</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -30388,7 +30388,7 @@ Get the right care for your needs - consult a specialist today!</source>
         <target>您想要取消上传文件吗？</target>
         <note annotates="source">popup body before canceling an operation</note>
       </trans-unit>
-      <trans-unit id="Do you want to remove this action from your &quot;To Do&quot; list?" resname="Do you want to remove this action from your &quot;To Do&quot; list?" restype="string">
+      <trans-unit id="Do you want to remove this action from your &quot;To Do&quot; list?" resname="Do you want to remove this action from your &amp;quot;To Do&amp;quot; list?" restype="string">
         <source>Do you want to remove this action from your &quot;To Do&quot; list?</source>
         <target>您是否想将这项活动移出待做清单？</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -32688,7 +32688,7 @@ for your consult</source>
         <target>请提供详细信息</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Please provide details regarding &quot;%@&quot; &#40;Optional&#41;" resname="Please provide details regarding &quot;%@&quot; &#40;Optional&#41;" restype="string">
+      <trans-unit id="Please provide details regarding &quot;%@&quot; &#40;Optional&#41;" resname="Please provide details regarding &amp;quot;%@&amp;quot; &#40;Optional&#41;" restype="string">
         <source>Please provide details regarding &quot;%@&quot; &#40;Optional&#41;</source>
         <target>请提供有关“％@”的详细信息（可选）</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -34580,7 +34580,7 @@ doctor picks up&#41;</source>
         <target>从现在起我们将分享与这个话题相关的更多的医生建议。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" resname="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" restype="string">
+      <trans-unit id="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" resname="We&apos;ll share more tips and checklists to help you with &amp;quot;%@&amp;quot;" restype="string">
         <source>We&apos;ll share more tips and checklists to help you with &quot;%@&quot;</source>
         <target>我们会分享更多的小贴士和清单来帮助您&quot;%@&quot;</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -34787,7 +34787,7 @@ Any medical problem that is life threatening. For example, if you experience any
         <target>您的出生日期？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone" resname="When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone" restype="string">
+      <trans-unit id="When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone" resname="When you need to see a doctor,\nsimply tap the &amp;quot;DocNow&amp;quot; button\non your Apple Watch or iPhone" restype="string">
         <source>When you need to see a doctor,
 simply tap the &quot;DocNow&quot; button
 on your Apple Watch or iPhone</source>
@@ -35487,7 +35487,7 @@ with an available primary care doctor</source>
         <target>医生分享了见解</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="e.g. &quot;Managing Stress&quot;" resname="e.g. &quot;Managing Stress&quot;" restype="string">
+      <trans-unit id="e.g. &quot;Managing Stress&quot;" resname="e.g. &amp;quot;Managing Stress&amp;quot;" restype="string">
         <source>e.g. &quot;Managing Stress&quot;</source>
         <target>例如 “管理压力”</target>
         <note annotates="source">No comment provided by engineer.</note>
