@@ -22,7 +22,7 @@
 		"loctool.lib.HamlFileType": "INFO",
 		"loctool.lib.IosLayoutResourceString": "INFO",
 		"loctool.lib.IosStringsFile": "INFO",
-		"loctool.lib.IosStringsFileType": "TRACE",
+		"loctool.lib.IosStringsFileType": "INFO",
 		"loctool.lib.JavaFile": "INFO",
 		"loctool.lib.JavaFileType": "INFO",
 		"loctool.lib.JavaScriptFile": "INFO",

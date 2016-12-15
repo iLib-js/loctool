@@ -18,7 +18,7 @@ var Xliff = require("./lib/Xliff.js");
 
 // var Git = require("simple-git");
 
-log4js.configure(path.dirname(module.filename) + '/log4js.json')
+log4js.configure(path.dirname(module.filename) + '/log4js.json');
 
 var logger = log4js.getLogger("loctool.loctool");
 var pull = false;

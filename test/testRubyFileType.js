@@ -127,5 +127,65 @@ module.exports = {
         test.ok(rf.handles("a/b/c/foo.html.haml"));
         
         test.done();
+    },
+
+    testRubyFileTypeHandlesAlreadyLocalizedGB: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFileType(p);
+        test.ok(rf);
+        
+        test.ok(!rf.handles("a/b/c/foo.en-GB.html.haml"));
+        
+        test.done();
+    },
+
+    testRubyFileTypeHandlesAlreadyLocalizedES: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFileType(p);
+        test.ok(rf);
+        
+        test.ok(!rf.handles("a/b/c/foo.es-US.html.haml"));
+        
+        test.done();
+    },
+
+    testRubyFileTypeHandlesAlreadyLocalizedCN: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFileType(p);
+        test.ok(rf);
+        
+        test.ok(!rf.handles("a/b/c/foo.zh-Hans-CN.html.haml"));
+        
+        test.done();
+    },
+    
+    testRubyFileTypeHandlesAlreadyLocalizedCN2: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFileType(p);
+        test.ok(rf);
+        
+        test.ok(!rf.handles("app/views/who_we_are/press.zh-Hans-CN.html.haml"));
+        
+        test.done();
     }
 };
