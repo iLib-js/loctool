@@ -4,26 +4,29 @@
 
 var fs = require("fs");
 
-var Xliff = require("./lib/Xliff.js");
+var Xliff = require("../lib/Xliff.js");
 var TranslationUnit = Xliff.TranslationUnit;
 
-var IosLayoutResourceString = require("./lib/IosLayoutResourceString.js");
-var AndroidResourceString = require("./lib/AndroidResourceString.js");
+var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
+var AndroidResourceString = require("../lib/AndroidResourceString.js");
 
-var ResourceString = require("./lib/ResourceString.js");
-var TranslationSet = require("./lib/TranslationSet.js");
-var ResourceFactory = require("./lib/ResourceFactory.js");
+var ResourceString = require("../lib/ResourceString.js");
+var TranslationSet = require("../lib/TranslationSet.js");
+var ResourceFactory = require("../lib/ResourceFactory.js");
 
-var WebProject = require("./lib/WebProject.js");
-var AndroidProject = require("./lib/AndroidProject.js");
-var ObjectiveCProject = require("./lib/ObjectiveCProject.js");
+var WebProject = require("../lib/WebProject.js");
+var AndroidProject = require("../lib/AndroidProject.js");
+var ObjectiveCProject = require("../lib/ObjectiveCProject.js");
 
-var web = new Xliff({pathName: "./localization/current/ht-webapp12.xliff"});
-web.deserialize(fs.readFileSync("./localization/current/ht-webapp12.xliff", "utf-8"));
-var android = new Xliff({pathName: "./localization/current/ht-androidapp.xliff"});
-android.deserialize(fs.readFileSync("./localization/current/ht-androidapp.xliff", "utf-8"));
-var ios = new Xliff({pathName: "./localization/current/ht-iosapp.xliff"});
-ios.deserialize(fs.readFileSync("./localization/current/ht-iosapp.xliff", "utf-8"));
+console.log("Reading all xliffs...");
+var web = new Xliff({pathName: "./current/ht-webapp12.xliff"});
+web.deserialize(fs.readFileSync("./current/ht-webapp12.xliff", "utf-8"));
+var android = new Xliff({pathName: "./current/ht-androidapp.xliff"});
+android.deserialize(fs.readFileSync("./current/ht-androidapp.xliff", "utf-8"));
+var ios = new Xliff({pathName: "./current/ht-iosapp.xliff"});
+ios.deserialize(fs.readFileSync("./current/ht-iosapp.xliff", "utf-8"));
+
+console.log("Organizing the translation units");
 
 var webunits = web.getTranslationUnits();
 var androidunits = android.getTranslationUnits();
@@ -31,7 +34,7 @@ var iosunits = ios.getTranslationUnits();
 
 var units = {};
 
-function addUnits(unit)) {
+function addUnits(unit) {
 	if (!units[unit.targetLocale]) {
 		units[unit.targetLocale] = {};
 	}
@@ -52,18 +55,117 @@ iosunits.forEach(addUnits);
 // signal to the GC that these can be dropped
 web = android = ios = undefined;
 
-var webnew = new Xliff({pathName: "./localization/ht-webapp12-new.xliff"});
-webnew.deserialize(fs.readFileSync("./localization/ht-webapp12-new.xliff", "utf-8"));
+console.log("Reading the webapp new xliff file ... ");
 
-webunits = web.getTranslationUnits();
+var webnew = new Xliff({pathName: "./ht-webapp12-new.xliff"});
+webnew.deserialize(fs.readFileSync("./ht-webapp12-new.xliff", "utf-8"));
 
-webunits.forEach(function(unit) {
-	
-	for (var context in units[unit.targetLocale][unit.project]) {
-		
-	}
-});
+var untranslated = new Xliff({pathName: "./shared/ht-webapp12-untranslated.xliff"});
+var shared = new Xliff({pathName: "./shared/ht-webapp12.xliff"});
 
+/*
+	"ht-iosapp": new Xliff({pathName: "./shared/ht-iosapp-untranslated.xliff"}),
+	"ht-androidapp": new Xliff({pathName: "./shared/ht-androidapp-untranslated.xliff"})
+};
+	"ht-iosapp": new Xliff({pathName: "./shared/ht-iosapp.xliff"}),
+	"ht-androidapp": new Xliff({pathName: "./shared/ht-androidapp.xliff"})
+};
+*/
+
+webunits = webnew.getTranslationUnits();
+
+console.log("Sharing translations ...");
+
+function shareTrans(unit) {
+	["es-US", "zh-Hans-CN"].forEach(function(locale) {
+		var found = false;
+		for (var project in units[locale]) {
+			for (var contextName in units[locale][project]) {
+				var context = units[locale][project][contextName];
+				if (context && context[unit.source]) {
+					var other = context[unit.source];
+					unit.target = other.target;
+					unit.targetLocale = other.targetLocale;
+					shared.addTranslationUnit(unit);
+					found = true;
+					console.log("Found a shared translation.\nSource: '" + unit.source + "'\nTranslation: '" + unit.target + "'\n");
+					break;
+				}
+			}
+		}
+		if (!found) {
+			untranslated.addTranslationUnit(unit);
+		}
+	});
+}
+
+webunits.forEach(shareTrans);
+
+console.log("Writing ht-webapp12 results");
+
+fs.writeFileSync("./shared/ht-androidapp-untranslated.xliff", untranslated.serialize(), "utf-8");
+fs.writeFileSync("./shared/ht-androidapp.xliff", shared.serialize(), "utf-8");
+
+// signal to the GC to drop this memory
+webunits = webnew = undefined;
+
+console.log("Reading ht-androidapp new file ...");
+
+var androidnew = new Xliff({pathName: "./ht-androidapp-new.xliff"});
+androidnew.deserialize(fs.readFileSync("./ht-androidapp-new.xliff", "utf-8"));
+
+var untranslated = new Xliff({pathName: "./shared/ht-androidapp-untranslated.xliff"});
+var shared = new Xliff({pathName: "./shared/ht-androidapp.xliff"});
+
+androidunits = androidnew.getTranslationUnits();
+androidunits.forEach(shareTrans);
+
+console.log("Writing ht-androidapp results");
+
+fs.writeFileSync("./shared/ht-androidapp-untranslated.xliff", untranslated.serialize(), "utf-8");
+fs.writeFileSync("./shared/ht-androidapp.xliff", shared.serialize(), "utf-8");
+
+//signal to the GC to drop this memory
+androidunits = androidnew = undefined;
+
+console.log("Reading feelgood lib new file ...");
+
+var androidnew = new Xliff({pathName: "./feelgood-video-chats_lib-new.xliff"});
+androidnew.deserialize(fs.readFileSync("./feelgood-video-chats_lib-new.xliff", "utf-8"));
+
+var untranslated = new Xliff({pathName: "./shared/feelgood-video-chats_lib-untranslated.xliff"});
+var shared = new Xliff({pathName: "./shared/feelgood-video-chats_lib.xliff"});
+
+androidunits = androidnew.getTranslationUnits();
+androidunits.forEach(shareTrans);
+
+console.log("Writing feelgood-video-chats_lib results");
+
+fs.writeFileSync("./shared/feelgood-video-chats_lib-untranslated.xliff", untranslated.serialize(), "utf-8");
+fs.writeFileSync("./shared/feelgood-video-chats_lib.xliff", shared.serialize(), "utf-8");
+
+//signal to the GC to drop this memory
+androidunits = androidnew = undefined;
+
+console.log("Reading ht-iosapp new file ...");
+
+var iosnew = new Xliff({pathName: "./ht-iosapp-new.xliff"});
+iosnew.deserialize(fs.readFileSync("./ht-iosapp-new.xliff", "utf-8"));
+
+var untranslated = new Xliff({pathName: "./shared/ht-iosapp-untranslated.xliff"});
+var shared = new Xliff({pathName: "./shared/ht-iosapp.xliff"});
+
+iosunits = iosnew.getTranslationUnits();
+iosunits.forEach(shareTrans);
+
+console.log("Writing ht-iosapp results");
+
+fs.writeFileSync("./shared/ht-iosapp-untranslated.xliff", untranslated.serialize(), "utf-8");
+fs.writeFileSync("./shared/ht-iosapp.xliff", shared.serialize(), "utf-8");
+
+console.log("Done.");
+
+/*
 var unit, units = web.getTranslationUnits();
 
 console.log("Processing translation units ...");
