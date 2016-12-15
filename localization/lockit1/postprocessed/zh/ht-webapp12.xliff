@@ -2356,7 +2356,7 @@
       </trans-unit>
       <trans-unit id="519" resname="Regarding a &lt;%=ageInMonths%&gt; month-old" restype="string" datatype="html">
         <source>Regarding a &lt;%=ageInMonths%&gt; month-old</source>
-        <target>关于&lt;％= ageInMonths％&gt;月龄</target>
+        <target>关于&lt;%= ageInMonths%&gt;月龄</target>
       </trans-unit>
       <trans-unit id="520" resname="A member" restype="string" datatype="html">
         <source>A member</source>
@@ -27322,7 +27322,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6198" resname="Once you upgrade, your full HealthTap Concierge account will be live. We will bill you {price} monthly, or you can {bold_tag_start}pay annually and save 15%—saving more than $50/month!{bold_tag_end} Discounts are available for groups of five or more." restype="string" datatype="html">
         <source>Once you upgrade, your full HealthTap Concierge account will be live. We will bill you {price} monthly, or you can {bold_tag_start}pay annually and save 15%—saving more than $50/month!{bold_tag_end} Discounts are available for groups of five or more.</source>
-        <target>一旦您升级，您的HealthTap贵宾台充分账户将会激活我们按每月{price}收费，或者您可以{bold_tag_start}每年支付一次，15％折扣，每月可节省50美元以上！{bold_tag_end}折扣适用于五人或以上的群组。</target>
+        <target>一旦您升级，您的HealthTap贵宾台充分账户将会激活我们按每月{price}收费，或者您可以{bold_tag_start}每年支付一次，15%折扣，每月可节省50美元以上！{bold_tag_end}折扣适用于五人或以上的群组。</target>
       </trans-unit>
       <trans-unit id="6199" resname="Contact us for assistance at 1&#40;650&#41; 376-6010 or by email at {link_tag_start}concierge@healthtap.com{link_tag_end}" restype="string" datatype="html">
         <source>Contact us for assistance at 1&#40;650&#41; 376-6010 or by email at {link_tag_start}concierge@healthtap.com{link_tag_end}</source>
@@ -34842,7 +34842,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6612" resname="%0A%0AIf you&apos;d like to try it out, use this referral code and get {price} credit towards your first consult:%0A%0A{link}%0A%0AEnjoy!" restype="string" datatype="javascript">
         <source>%0A%0AIf you&apos;d like to try it out, use this referral code and get {price} credit towards your first consult:%0A%0A{link}%0A%0AEnjoy!</source>
-        <target>％0A％0A如果你想尝试一下，使用这个推荐代码，并在您的第一次咨询获得{price}信用：％0A％0A {link}％0A％0A享受！</target>
+        <target>%0A%0A如果你想尝试一下，使用这个推荐代码，并在您的第一次咨询获得{price}信用：%0A%0A {link}%0A%0A享受！</target>
       </trans-unit>
       <trans-unit id="6613" resname="Join me on HealthTap! Use this link and get {price} credit to talk with a top doctor for quick, reliable medical advice:  " restype="string" datatype="javascript">
         <source>Join me on HealthTap! Use this link and get {price} credit to talk with a top doctor for quick, reliable medical advice:</source>
@@ -35038,7 +35038,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6647" resname="Hi,%0A%0AI just found the easiest way to get medical advice, prescriptions, and lab tests from top doctors in over 130 specialties! Best of all, I have an exclusive offer to share with YOU. Check it out: " restype="string" datatype="javascript">
         <source>Hi,%0A%0AI just found the easiest way to get medical advice, prescriptions, and lab tests from top doctors in over 130 specialties! Best of all, I have an exclusive offer to share with YOU. Check it out:</source>
-        <target>嗨，％0A％0AI发现最简单的从超过130个专业点的顶级医生处获得医疗咨询，处方和实验室测试的方法！最重要的是，我有一个独家报价与你分享。一探究竟：</target>
+        <target>嗨，%0A%0AI发现最简单的从超过130个专业点的顶级医生处获得医疗咨询，处方和实验室测试的方法！最重要的是，我有一个独家报价与你分享。一探究竟：</target>
       </trans-unit>
       <trans-unit id="6648" resname="Try HealthTap Prime for peace of mind" restype="string" datatype="javascript">
         <source>Try HealthTap Prime for peace of mind</source>
@@ -35086,11 +35086,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6659" resname="Hi,%0A%0AI just found the easiest way to get medical advice, prescriptions, and lab tests from top doctors—online, 24/7! Best of all, I have an exclusive offer to share with YOU. Check it out: " restype="string" datatype="javascript">
         <source>Hi,%0A%0AI just found the easiest way to get medical advice, prescriptions, and lab tests from top doctors—online, 24/7! Best of all, I have an exclusive offer to share with YOU. Check it out:</source>
-        <target>嗨，％0A％0AI发现最简单的从超过24个专业点的顶级医生处获得医疗咨询，处方和实验室测试的方法—全天24小时在线！最重要的是，我有一个独家报价与你分享。一探究竟：</target>
+        <target>嗨，%0A%0AI发现最简单的从超过24个专业点的顶级医生处获得医疗咨询，处方和实验室测试的方法—全天24小时在线！最重要的是，我有一个独家报价与你分享。一探究竟：</target>
       </trans-unit>
       <trans-unit id="6660" resname="The easiest way to get medical advice, prescriptions, and lab tests from top doctors—online, 24/7! Exclusive offer: " restype="string" datatype="javascript">
         <source>The easiest way to get medical advice, prescriptions, and lab tests from top doctors—online, 24/7! Exclusive offer:</source>
-        <target>嗨，％0A％0AI发现最简单的从超过24个专业点的顶级医生处获得医疗咨询，处方和实验室测试的方法—全天24小时在线！独家优惠：</target>
+        <target>嗨，%0A%0AI发现最简单的从超过24个专业点的顶级医生处获得医疗咨询，处方和实验室测试的方法—全天24小时在线！独家优惠：</target>
       </trans-unit>
       <trans-unit id="6661" resname="Your unique Prime subscription URL:" restype="string" datatype="javascript">
         <source>Your unique Prime subscription URL:</source>

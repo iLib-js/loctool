@@ -6152,23 +6152,23 @@
       </trans-unit>
       <trans-unit id="1233" resname="system_message_started" restype="string" datatype="x-android-resource">
         <source>Started at %s</source>
-        <target>开始于％s</target>
+        <target>开始于%s</target>
       </trans-unit>
       <trans-unit id="1234" resname="system_message_ended" restype="string" datatype="x-android-resource">
         <source>Ended at %s</source>
-        <target>结束于％s</target>
+        <target>结束于%s</target>
       </trans-unit>
       <trans-unit id="1235" resname="system_message_connection_lost" restype="string" datatype="x-android-resource">
         <source>Connection lost at %s</source>
-        <target>在％s失去连接</target>
+        <target>在%s失去连接</target>
       </trans-unit>
       <trans-unit id="1236" resname="system_message_you_ended_consult" restype="string" datatype="x-android-resource">
         <source>You ended this consult at %s</source>
-        <target>您在％s结束了此咨询</target>
+        <target>您在%s结束了此咨询</target>
       </trans-unit>
       <trans-unit id="1237" resname="system_message_disconnected" restype="string" datatype="x-android-resource">
         <source>Disconnected at %s</source>
-        <target>在％s处断开连接</target>
+        <target>在%s处断开连接</target>
       </trans-unit>
       <trans-unit id="1238" resname="recommend_dialog_string" restype="string" datatype="x-android-resource">
         <source>vote on their expertise &amp; bedside manner</source>
@@ -7520,7 +7520,7 @@
       </trans-unit>
       <trans-unit id="1575" resname="whats_new" restype="string" datatype="x-android-resource">
         <source>What\&apos;s new in %s:</source>
-        <target>％s中有新内容：</target>
+        <target>%s中有新内容：</target>
       </trans-unit>
       <trans-unit id="1576" resname="update_remind_nomore" restype="string" datatype="x-android-resource">
         <source>Don\&apos;t remind of this update</source>

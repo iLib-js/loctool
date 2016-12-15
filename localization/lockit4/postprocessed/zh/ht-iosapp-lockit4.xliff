@@ -10,7 +10,7 @@
   <file original="feelgood/iPadNative/Topic/FGBaseTopicViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="2" resname="You're now following %@! " restype="string" datatype="x-objective-c">
-        <source>You're now following %@! </source><target>您正在关注％@！ </target>
+        <source>You're now following %@! </source><target>您正在关注%@！ </target>
       </trans-unit>
     </body>
   </file>
@@ -327,7 +327,7 @@
         <source>specialist</source><target>专家</target>
       </trans-unit>
       <trans-unit id="79" resname="Consult %@ doctor or specialist" restype="string" datatype="x-objective-c">
-        <source>Consult %@ doctor or specialist</source><target>请咨询％@医生或专家</target>
+        <source>Consult %@ doctor or specialist</source><target>请咨询%@医生或专家</target>
       </trans-unit>
       <trans-unit id="80" resname="anonymously" restype="string" datatype="x-objective-c">
         <source>anonymously</source><target>匿名地 </target>
@@ -425,7 +425,7 @@
   <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="109" resname="You've talked to a doctor %@ times%@ this month. Remember, HealthTap Virtual Consults are not meant to replace %@ primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n\nWe'd like you to contact us at support@healthtap.com to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!" restype="string" datatype="x-objective-c">
-        <source>You've talked to a doctor %@ times%@ this month. Remember, HealthTap Virtual Consults are not meant to replace %@ primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n\nWe'd like you to contact us at support@healthtap.com to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!</source><target>您%@ 这个月已经和医生聊了%@ 次。请记住，HealthTap 在线咨询不能取代％@普通门诊医师，或用于替代与现实世界中的医生建立关系。\n\n我们希望您可以联系support@healthtap.com 让我们知道您为什么需要继续跟医生对话。我们很高兴审核您的案例，如果合理，您可以开始其它咨询。我们在这里帮助您！</target>
+        <source>You've talked to a doctor %@ times%@ this month. Remember, HealthTap Virtual Consults are not meant to replace %@ primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n\nWe'd like you to contact us at support@healthtap.com to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!</source><target>您%@ 这个月已经和医生聊了%@ 次。请记住，HealthTap 在线咨询不能取代%@普通门诊医师，或用于替代与现实世界中的医生建立关系。\n\n我们希望您可以联系support@healthtap.com 让我们知道您为什么需要继续跟医生对话。我们很高兴审核您的案例，如果合理，您可以开始其它咨询。我们在这里帮助您！</target>
       </trans-unit>
       <trans-unit id="110" resname="Choose relationship" restype="string" datatype="x-objective-c">
         <source>Choose relationship</source><target>选择关系</target>
@@ -662,7 +662,7 @@
 \u00B7 上呼吸道感染\n\
 \u00B7 泌尿道感染\n\
 \u00B7 阴道瘙痒\n\
-\u00B7 酵母感染\n\n\何时不使用在线功能\ n \ n \如果您有紧急情况，请立即呼叫％@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到％@：\ n \ n \                 \u00B7胸痛或胸闷\n\
+\u00B7 酵母感染\n\n\何时不使用在线功能\ n \ n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\ n \ n \                 \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -733,7 +733,7 @@
     \u00B7 Any prescriptions for medications that are restricted by individual states\n\
     \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
-                           \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</seg-source><target>在线咨询的常见原因：\n\                                                                                   \u00B7  腹痛\n\                                                                                      \u00B7   急性支气管炎\n\                                                                                      \u00B7 急性结膜炎  \n\                                                                                          \u00B7 急性膀胱炎  \n\                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到％@：\ n \ n \                 \u00B7胸痛或胸闷\n\
+                           \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</seg-source><target>在线咨询的常见原因：\n\                                                                                   \u00B7  腹痛\n\                                                                                      \u00B7   急性支气管炎\n\                                                                                      \u00B7 急性结膜炎  \n\                                                                                          \u00B7 急性膀胱炎  \n\                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\ n \ n \                 \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -816,10 +816,10 @@
         <source> / month</source><target> /月</target>
       </trans-unit>
       <trans-unit id="147" resname="Subscribe for you and %i other" restype="string" datatype="x-objective-c">
-        <source>Subscribe for you and %i other</source><target>订阅您和％i其他</target>
+        <source>Subscribe for you and %i other</source><target>订阅您和%i其他</target>
       </trans-unit>
       <trans-unit id="148" resname="Subscribe for you and %i others" restype="string" datatype="x-objective-c">
-        <source>Subscribe for you and %i others</source><target>订阅您和％i其他</target>
+        <source>Subscribe for you and %i others</source><target>订阅您和%i其他</target>
       </trans-unit>
       <trans-unit id="149" resname="Keep your plan" restype="string" datatype="x-objective-c">
         <source>Keep your plan</source><target>保持你的计划</target>
@@ -1226,7 +1226,7 @@
         <source>Hi, Dr. %@!</source><target>您好,- 医生%@!</target>
       </trans-unit>
       <trans-unit id="255" resname="Please reactivate my account (%@)" restype="string" datatype="x-objective-c">
-        <source>Please reactivate my account (%@)</source><target>请重新启用我的帐户（％@）</target>
+        <source>Please reactivate my account (%@)</source><target>请重新启用我的帐户（%@）</target>
       </trans-unit>
       <trans-unit id="256" resname="Please download the 'HealthTap for Doctors' app to login or signup as a doctor with a valid US medical license" restype="string" datatype="x-objective-c">
         <source>Please download the 'HealthTap for Doctors' app to login or signup as a doctor with a valid US medical license</source><target>请下载\“HealthTap for Doctors\” 应用程序登陆或以美国有效的医疗执照注册成为医生</target>
@@ -1242,7 +1242,7 @@
         <source>Help the doctors understand what they are looking at</source><target>帮助您的医生了解他们在看什么</target>
       </trans-unit>
       <trans-unit id="259" resname="Are you sure you want to send %@ as an attachment?" restype="string" datatype="x-objective-c">
-        <source>Are you sure you want to send %@ as an attachment?</source><target>您确定要将％@用作附件吗？</target>
+        <source>Are you sure you want to send %@ as an attachment?</source><target>您确定要将%@用作附件吗？</target>
       </trans-unit>
       <trans-unit id="260" resname="Attach file?" restype="string" datatype="x-objective-c">
         <source>Attach file?</source><target>附加文件?</target>
@@ -1290,7 +1290,7 @@
         <source>Refresh video</source><target>刷新视频</target>
       </trans-unit>
       <trans-unit id="275" resname="Device connection code for\n%@" restype="string" datatype="x-objective-c">
-        <source>Device connection code for\n%@</source><target>\ n％@的设备连接代码</target>
+        <source>Device connection code for\n%@</source><target>\ n%@的设备连接代码</target>
       </trans-unit>
       <trans-unit id="276" resname="Device Verification" restype="string" datatype="x-objective-c">
         <source>Device Verification</source><target>设备验证</target>
@@ -1378,7 +1378,7 @@
         <source>Please help me log in to my HealthTap account</source><target>请帮助我登录我的HealthTap帐户</target>
       </trans-unit>
       <trans-unit id="299" resname="Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)" restype="string" datatype="x-objective-c">
-        <source>Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)</source><target>您好，HealthTap团队！\n\n我在登入我的HealthTap帐户时遇到问题。能帮我重置我的密码吗？\在\设备上％@ \ 设备详细信息：％@ \n \n谢谢:)</target>
+        <source>Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)</source><target>您好，HealthTap团队！\n\n我在登入我的HealthTap帐户时遇到问题。能帮我重置我的密码吗？\在\设备上%@ \ 设备详细信息：%@ \n \n谢谢:)</target>
       </trans-unit>
     </body>
   </file>
@@ -1451,7 +1451,7 @@
         <source>%@ is typing</source><target>%@ 正在输入</target>
       </trans-unit>
       <trans-unit id="314" resname="%@ is typing notes for you" restype="string" datatype="x-objective-c">
-        <source>%@ is typing notes for you</source><target>％@正在为您键入注释</target>
+        <source>%@ is typing notes for you</source><target>%@正在为您键入注释</target>
       </trans-unit>
     </body>
   </file>
@@ -1513,7 +1513,7 @@
         <source>Could not dial</source><target>无法拨号</target>
       </trans-unit>
       <trans-unit id="328" resname="The phone number %@ seems to be invalid or cannot be dialed right now." restype="string" datatype="x-objective-c">
-        <source>The phone number %@ seems to be invalid or cannot be dialed right now.</source><target>电话号码％@似乎无效或无法立即拨号。</target>
+        <source>The phone number %@ seems to be invalid or cannot be dialed right now.</source><target>电话号码%@似乎无效或无法立即拨号。</target>
       </trans-unit>
     </body>
   </file>
@@ -1543,10 +1543,10 @@
   <file original="feelgood/MultiUserConsults/HTTranslationServiceManager.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="334" resname="Unfortunately none of our %@ to English translators will be available at the selected time. Please choose a different time." restype="string" datatype="x-objective-c">
-        <source>Unfortunately none of our %@ to English translators will be available at the selected time. Please choose a different time.</source><target>很遗憾，我们的％@到英语翻译无法在选定的时间提供。请选择不同的时间</target>
+        <source>Unfortunately none of our %@ to English translators will be available at the selected time. Please choose a different time.</source><target>很遗憾，我们的%@到英语翻译无法在选定的时间提供。请选择不同的时间</target>
       </trans-unit>
       <trans-unit id="335" resname="Unfortunately none of our %@ to English translators is available at this time. Please try again later." restype="string" datatype="x-objective-c">
-        <source>Unfortunately none of our %@ to English translators is available at this time. Please try again later.</source><target>很遗憾，我们的％@到英语翻译现在无法提供。请稍后再次尝试。</target>
+        <source>Unfortunately none of our %@ to English translators is available at this time. Please try again later.</source><target>很遗憾，我们的%@到英语翻译现在无法提供。请稍后再次尝试。</target>
       </trans-unit>
       <trans-unit id="336" resname="Sorry" restype="string" datatype="x-objective-c">
         <source>Sorry</source><target>抱歉</target>
@@ -1668,13 +1668,13 @@
         <source>The %@ has ended the session and provided %@ with a summary report and treatment plan.</source><target>这位%@ 已结束会话，并为%@ 提供了总结报告和治疗计划。</target>
       </trans-unit>
       <trans-unit id="361" resname="The %@ will send %@ a summary note soon!" restype="string" datatype="x-objective-c">
-        <source>The %@ will send %@ a summary note soon!</source><target>％@将很快发送总结报告“％@”！</target>
+        <source>The %@ will send %@ a summary note soon!</source><target>%@将很快发送总结报告“%@”！</target>
       </trans-unit>
       <trans-unit id="362" resname="The %@ has found an issue with this consult and ended it." restype="string" datatype="x-objective-c">
         <source>The %@ has found an issue with this consult and ended it.</source><target>%@ 在咨询中发现了一个问题并结束了咨询.</target>
       </trans-unit>
       <trans-unit id="363" resname="consult with Dr. %@ on %@" restype="string" datatype="x-objective-c">
-        <source>consult with Dr. %@ on %@</source><target>请咨询％@在％@</target>
+        <source>consult with Dr. %@ on %@</source><target>请咨询%@在%@</target>
       </trans-unit>
     </body>
   </file>
@@ -1705,19 +1705,19 @@
   <file original="feelgood/HTPricedDoctorTableViewCell.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="368" resname="%@ is not yet available for virtual consults, however, you can send an invite to join HealthTap." restype="string" datatype="x-objective-c">
-        <source>%@ is not yet available for virtual consults, however, you can send an invite to join HealthTap.</source><target>％@尚不可用于在线咨询，但是，您可以发送邀请以加入HealthTap。</target>
+        <source>%@ is not yet available for virtual consults, however, you can send an invite to join HealthTap.</source><target>%@尚不可用于在线咨询，但是，您可以发送邀请以加入HealthTap。</target>
       </trans-unit>
       <trans-unit id="369" resname="%@ is not available for virtual consults." restype="string" datatype="x-objective-c">
-        <source>%@ is not available for virtual consults.</source><target>％@不适用于在线咨询。</target>
+        <source>%@ is not available for virtual consults.</source><target>%@不适用于在线咨询。</target>
       </trans-unit>
       <trans-unit id="370" resname="%@ is not licensed to practice medicine in %@, so is unavailable for consults." restype="string" datatype="x-objective-c">
-        <source>%@ is not licensed to practice medicine in %@, so is unavailable for consults.</source><target>％@未获得在％@中执业医学的许可，因此无法参考。</target>
+        <source>%@ is not licensed to practice medicine in %@, so is unavailable for consults.</source><target>%@未获得在%@中执业医学的许可，因此无法参考。</target>
       </trans-unit>
       <trans-unit id="371" resname="Your doctor" restype="string" datatype="x-objective-c">
         <source>Your doctor</source><target>您的医生</target>
       </trans-unit>
       <trans-unit id="372" resname=" (Licensed in %@)" restype="string" datatype="x-objective-c">
-        <source> (Licensed in %@)</source><target> （在％@中授权）</target>
+        <source> (Licensed in %@)</source><target> （在%@中授权）</target>
       </trans-unit>
       <trans-unit id="373" resname="Invited" restype="string" datatype="x-objective-c">
         <source>Invited</source><target>已邀请</target>
@@ -1952,10 +1952,10 @@
   <file original="feelgood/HTBaseRequiredInfoAskDoctorsFlowViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="429" resname="Is %@ pregnant?" restype="string" datatype="x-objective-c">
-        <source>Is %@ pregnant?</source><target>是％@怀孕吗？</target>
+        <source>Is %@ pregnant?</source><target>是%@怀孕吗？</target>
       </trans-unit>
       <trans-unit id="430" resname="What is %@'s gender?" restype="string" datatype="x-objective-c">
-        <source>What is %@'s gender?</source><target>％@的性别是？</target>
+        <source>What is %@'s gender?</source><target>%@的性别是？</target>
       </trans-unit>
       <trans-unit id="431" resname="You must be 18 years or older\nto do a consult" restype="string" datatype="x-objective-c">
         <source>You must be 18 years or older\nto do a consult</source><target>您必须年满18岁才可以咨询</target>
@@ -2535,7 +2535,7 @@
   <file original="feelgood/ConciergeConsultNowFlow/HTAskNowBottomActionView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="566" resname="How would you like to consult with %@ ?" restype="string" datatype="x-objective-c">
-        <source>How would you like to consult with %@ ?</source><target>您想如何咨询％@？</target>
+        <source>How would you like to consult with %@ ?</source><target>您想如何咨询%@？</target>
       </trans-unit>
     </body>
   </file>
@@ -2565,13 +2565,13 @@
   <file original="feelgood/Classes/UI/Referral/FGReferralComposer.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="572" resname="%@ is gifting you 1 month FREE on Prime to help you live a healthier, happier life!" restype="string" datatype="x-objective-c">
-        <source>%@ is gifting you 1 month FREE on Prime to help you live a healthier, happier life!</source><target>％@正在赠送您1个月免费Prime，以帮助您获得更健康，更快乐的生活！</target>
+        <source>%@ is gifting you 1 month FREE on Prime to help you live a healthier, happier life!</source><target>%@正在赠送您1个月免费Prime，以帮助您获得更健康，更快乐的生活！</target>
       </trans-unit>
       <trans-unit id="573" resname="%@ is gifting you $30 credit on Prime to help you live a healthier, happier life!" restype="string" datatype="x-objective-c">
-        <source>%@ is gifting you $30 credit on Prime to help you live a healthier, happier life!</source><target>％@为您赠送30美元Prime积分，帮助您获得更健康，更幸福的生活！</target>
+        <source>%@ is gifting you $30 credit on Prime to help you live a healthier, happier life!</source><target>%@为您赠送30美元Prime积分，帮助您获得更健康，更幸福的生活！</target>
       </trans-unit>
       <trans-unit id="574" resname="%@ is gifting you $5 off to talk to HealthTap doctors" restype="string" datatype="x-objective-c">
-        <source>%@ is gifting you $5 off to talk to HealthTap doctors</source><target>％@为您赠送5美元，与HealthTap医生交谈</target>
+        <source>%@ is gifting you $5 off to talk to HealthTap doctors</source><target>%@为您赠送5美元，与HealthTap医生交谈</target>
       </trans-unit>
       <trans-unit id="575" resname="Sign Up for HealthTap Prime - 24/7 access to doctors! Use this link and get a 1 month FREE trial." restype="string" datatype="x-objective-c">
         <source>Sign Up for HealthTap Prime - 24/7 access to doctors! Use this link and get a 1 month FREE trial.</source><target>注册HealthTap Prime - 全天24小时访问医生！使用此链接，并获得1个月免费试用。</target>
@@ -2741,7 +2741,7 @@
         <source>Find another doctor</source><target>寻找其他医生</target>
       </trans-unit>
       <trans-unit id="613" resname="is not licensed to consult patients in %@\n\nYou may try again while traveling to a state where Dr. %@ is licensed, or consult one of our other top doctors:\n" restype="string" datatype="x-objective-c">
-        <source>is not licensed to consult patients in %@\n\nYou may try again while traveling to a state where Dr. %@ is licensed, or consult one of our other top doctors:\n</source><target>没有授权在％@中咨询患者\n\n您可以在旅行时获得医生@ @有执照的州时再试一次，或咨询我们的其他知名医生：\n</target>
+        <source>is not licensed to consult patients in %@\n\nYou may try again while traveling to a state where Dr. %@ is licensed, or consult one of our other top doctors:\n</source><target>没有授权在%@中咨询患者\n\n您可以在旅行时获得医生@ @有执照的州时再试一次，或咨询我们的其他知名医生：\n</target>
       </trans-unit>
       <trans-unit id="614" resname="is not available for Virtual Consult\n\nThis may change, but in the mean time, you may consider consulting one of our other top doctors:\n" restype="string" datatype="x-objective-c">
         <source>is not available for Virtual Consult\n\nThis may change, but in the mean time, you may consider consulting one of our other top doctors:\n</source><target>不适用于在线咨询\n\n这可能会更改，但在此期间，您可以考虑咨询我们的其他知名医生：\n</target>
@@ -2756,22 +2756,22 @@
         <source>Confirm Location</source><target>确认位置</target>
       </trans-unit>
       <trans-unit id="618" resname="Dr. %@ is licensed to see patients from %@." restype="string" datatype="x-objective-c">
-        <source>Dr. %@ is licensed to see patients from %@.</source><target>医 @ @有执照诊疗这里的患者％@。</target>
+        <source>Dr. %@ is licensed to see patients from %@.</source><target>医 @ @有执照诊疗这里的患者%@。</target>
       </trans-unit>
       <trans-unit id="619" resname="We're sorry, HealthTap Concierge is not currently available in %@. However, you may still use HealthTap Concierge when traveling out of state!" restype="string" datatype="x-objective-c">
         <source>We're sorry, HealthTap Concierge is not currently available in %@. However, you may still use HealthTap Concierge when traveling out of state!</source><target>很抱歉，目前%@.的HealthTap贵宾台不在。但是，当您在州外旅行时您依旧可以使用HealthTap 贵宾台！</target>
       </trans-unit>
       <trans-unit id="620" resname="We're sorry, but Dr. %@ is currently licensed to see patients only in %@" restype="string" datatype="x-objective-c">
-        <source>We're sorry, but Dr. %@ is currently licensed to see patients only in %@</source><target>很抱歉，Dr. @@@目前只有在％@的使用者可以看到％@</target>
+        <source>We're sorry, but Dr. %@ is currently licensed to see patients only in %@</source><target>很抱歉，Dr. @@@目前只有在%@的使用者可以看到%@</target>
       </trans-unit>
       <trans-unit id="621" resname="Dr. %@ is only licensed to see patients in %@. You may still request to connect, however you will only be able to consult Dr. %@ when you are traveling to one of these locations." restype="string" datatype="x-objective-c">
-        <source>Dr. %@ is only licensed to see patients in %@. You may still request to connect, however you will only be able to consult Dr. %@ when you are traveling to one of these locations.</source><target>医生％@仅授权查看％@中的患者。您可以继续请求连接，但是只有当您旅行到这些地方时，您才可以咨询Dr. %@</target>
+        <source>Dr. %@ is only licensed to see patients in %@. You may still request to connect, however you will only be able to consult Dr. %@ when you are traveling to one of these locations.</source><target>医生%@仅授权查看%@中的患者。您可以继续请求连接，但是只有当您旅行到这些地方时，您才可以咨询Dr. %@</target>
       </trans-unit>
       <trans-unit id="622" resname="Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to consult the doctor unless you're traveling to a state where the doctor is licensed." restype="string" datatype="x-objective-c">
-        <source>Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to consult the doctor unless you're traveling to a state where the doctor is licensed.</source><target>医生％@未获许可查看％@中的患者，也不能合法地为您提供医疗建议或开处方。您确定要继续将此医生加入您的医疗团队吗？您将无法咨询此医生，除非您前往获得医生许可的州。</target>
+        <source>Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to consult the doctor unless you're traveling to a state where the doctor is licensed.</source><target>医生%@未获许可查看%@中的患者，也不能合法地为您提供医疗建议或开处方。您确定要继续将此医生加入您的医疗团队吗？您将无法咨询此医生，除非您前往获得医生许可的州。</target>
       </trans-unit>
       <trans-unit id="623" resname="Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to receive diagnosis or treatment unless you're traveling to a state where the doctor is licensed." restype="string" datatype="x-objective-c">
-        <source>Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to receive diagnosis or treatment unless you're traveling to a state where the doctor is licensed.</source><target>医生％@未获许可查看％@中的患者，也不能合法地为您提供医疗建议或开处方。您确定要继续将此医生加入您的医疗团队吗？您将无法接受诊断或治疗，除非您前往获得医生许可的州。</target>
+        <source>Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to receive diagnosis or treatment unless you're traveling to a state where the doctor is licensed.</source><target>医生%@未获许可查看%@中的患者，也不能合法地为您提供医疗建议或开处方。您确定要继续将此医生加入您的医疗团队吗？您将无法接受诊断或治疗，除非您前往获得医生许可的州。</target>
       </trans-unit>
       <trans-unit id="624" resname="Here are some doctors from %@ you could connect with:" restype="string" datatype="x-objective-c">
         <source>Here are some doctors from %@ you could connect with:</source><target>以下是来自%@的一些医生，您可以联系：</target>
@@ -2972,7 +2972,7 @@
         
       <note>Class = "UILabel"; text = "Video Call"; ObjectID = "8Fc-pj-rKs";</note></trans-unit>
       <trans-unit id="659" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
-        <source>You\'ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe\'d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\'d be happy to review your case and, if appropriate, enable you to start another consult. We\'re here to help!</source><target>您这个月已经和医生聊了X次。请记住，HealthTap 在线咨询不能取代％@普通门诊医师，或用于替代与现实世界中的医生建立关系。\n\n我们希望您可以联系support@healthtap.com，告诉我们您为什么需要继续跟医生对话。我们很高兴审核您的案例，如果合理，您可以开始其它咨询。我们在这里帮助您！</target>
+        <source>You\'ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe\'d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\'d be happy to review your case and, if appropriate, enable you to start another consult. We\'re here to help!</source><target>您这个月已经和医生聊了X次。请记住，HealthTap 在线咨询不能取代%@普通门诊医师，或用于替代与现实世界中的医生建立关系。\n\n我们希望您可以联系support@healthtap.com，告诉我们您为什么需要继续跟医生对话。我们很高兴审核您的案例，如果合理，您可以开始其它咨询。我们在这里帮助您！</target>
         
       <note>Class = "UILabel"; text = "You've talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe'd like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!"; ObjectID = "F8C-bC-b0r";</note></trans-unit>
       <trans-unit id="660" resname="ONE-ub-R6W.text" restype="string" datatype="x-xib">
