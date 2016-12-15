@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="android/src/com/healthtap/live_consult/paticipant/ParticipantsFragment.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="1" resname="r236672717" restype="string" datatype="java">
+        <source>Join my consult with:</source>
+      </trans-unit>
+      <trans-unit id="2" resname="r412453752" restype="string" datatype="java">
+        <source>Share via:</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="3" resname="r98241011" restype="string" datatype="java">
+        <source>Downloaded to:</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

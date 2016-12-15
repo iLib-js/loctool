@@ -3,6 +3,8 @@
  */
 
 var fs = require("fs");
+var log4js = require("log4js");
+var path = require("path");
 
 var Xliff = require("../lib/Xliff.js");
 var TranslationUnit = Xliff.TranslationUnit;
@@ -25,6 +27,8 @@ var android = new Xliff({pathName: "./current/ht-androidapp.xliff"});
 android.deserialize(fs.readFileSync("./current/ht-androidapp.xliff", "utf-8"));
 var ios = new Xliff({pathName: "./current/ht-iosapp.xliff"});
 ios.deserialize(fs.readFileSync("./current/ht-iosapp.xliff", "utf-8"));
+
+log4js.configure(path.dirname(module.filename) + '/../log4js.json');
 
 console.log("Organizing the translation units");
 
