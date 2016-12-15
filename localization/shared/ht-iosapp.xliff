@@ -642,7 +642,7 @@
     <body>
       <trans-unit id="79" resname="Did you know that as a Prime member you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!" restype="string" datatype="x-objective-c">
         <source>Did you know that as a Prime member you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!</source>
-        <target>您知道吗，作为Prime会员，咨询超过100多个专业的特邀医生可以享受折扣\ n \ n根据您的需要获得最合适的护理 ——今天就咨询专家吧！</target>
+        <target>您知道吗，作为Prime会员，咨询超过100多个专业的特邀医生可以享受折扣\n\n根据您的需要获得最合适的护理 ——今天就咨询专家吧！</target>
       </trans-unit>
     </body>
   </file>
@@ -1648,7 +1648,7 @@
     <body>
       <trans-unit id="249" resname="1T1-t2-OU8.text" restype="string" datatype="x-xib">
         <source>We\&apos;ll notify you as soon as our doctors respond. In the meantime:</source>
-        <target>Nosotros\ te notificaremos tan pronto como nuestros doctores respondan. Mientras tanto:</target>
+        <target>Nosotros te notificaremos tan pronto como nuestros doctores respondan. Mientras tanto:</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;ll notify you as soon as our doctors respond. In the meantime:&quot;; ObjectID = &quot;1T1-t2-OU8&quot;;</note>
       </trans-unit>
     </body>
@@ -1666,7 +1666,7 @@
     <body>
       <trans-unit id="250" resname="Hel-CI-Fj1.text" restype="string" datatype="x-xib">
         <source>We\&apos;re committed to making you have a delightful experience with our doctors that leaves you feeling good. If you\&apos;re unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you\&apos;ll be satisfied :&#41;</source>
-        <target>Estamos\ comprometidos a hacer que tengas una experiencia encantadora con nuestros doctores que te deje sintiéndote bien. ¡Si no\ estás feliz con la calidad y utilidad de la Consulta Virtual, puedes contactarnos en cualquier momento y solicitar un reembolso! Te garantizamos que\ estarás satisfecho :&#41;</target>
+        <target>Estamos comprometidos a hacer que tengas una experiencia encantadora con nuestros doctores que te deje sintiéndote bien. ¡Si no estás feliz con la calidad y utilidad de la Consulta Virtual, puedes contactarnos en cualquier momento y solicitar un reembolso! Te garantizamos que estarás satisfecho :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re committed to making you have a delightful experience with our doctors that leaves you feeling good. If you&apos;re unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you&apos;ll be satisfied :&#41;&quot;; ObjectID = &quot;Hel-CI-Fj1&quot;;</note>
       </trans-unit>
     </body>
@@ -1720,7 +1720,7 @@
     <body>
       <trans-unit id="253" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
         <source>You\&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe\&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We\&apos;re here to help!</source>
-        <target>Has\ hablado con un doctor X veces este mes. Recuerda, Consultas Virtuales de HealthTap no pretenden reemplazar a tu médico de atención primaria o utilizarse como sustituto para establecer una relación con un doctor en el mundo real.\n\nNos gustaría que nos contactaras a [support@healthtap.com] para hacernos saber la razón por la que necesitas continuar hablando con un doctor. Estaremos\ felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos\ aquí para ayudar!</target>
+        <target>Has hablado con un doctor X veces este mes. Recuerda, Consultas Virtuales de HealthTap no pretenden reemplazar a tu médico de atención primaria o utilizarse como sustituto para establecer una relación con un doctor en el mundo real.\n\nNos gustaría que nos contactaras a [support@healthtap.com] para hacernos saber la razón por la que necesitas continuar hablando con un doctor. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!&quot;; ObjectID = &quot;F8C-bC-b0r&quot;;</note>
       </trans-unit>
       <trans-unit id="254" resname="ONE-ub-R6W.text" restype="string" datatype="x-xib">
@@ -1771,22 +1771,22 @@
       </trans-unit>
       <trans-unit id="257" resname="UJ6-B8-aCt.text" restype="string" datatype="x-xib">
         <source>The ability to dive deeper into women\&apos;s issue</source>
-        <target>La capacidad de profundizar mucho más en los problemas\ femeninos</target>
+        <target>La capacidad de profundizar mucho más en los problemas femeninos</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;The ability to dive deeper into women&apos;s issue&quot;; ObjectID = &quot;UJ6-B8-aCt&quot;;</note>
       </trans-unit>
       <trans-unit id="258" resname="WeL-BP-aJb.text" restype="string" datatype="x-xib">
         <source>We\&apos;ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.</source>
-        <target>Agilizaremos\ felizmente tu pregunta para una respuesta más rápida a cambio de una donación caritativa a una de nuestras caridades favoritas.</target>
+        <target>Agilizaremos felizmente tu pregunta para una respuesta más rápida a cambio de una donación caritativa a una de nuestras caridades favoritas.</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.&quot;; ObjectID = &quot;WeL-BP-aJb&quot;;</note>
       </trans-unit>
       <trans-unit id="259" resname="oS2-3x-xLb.text" restype="string" datatype="x-xib">
         <source>Help us do good, we\&apos;ll help you get a faster answer</source>
-        <target>Ayúdanos a hacer el bien, te\ ayudaremos a obtener una respuesta más rápida</target>
+        <target>Ayúdanos a hacer el bien, te ayudaremos a obtener una respuesta más rápida</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Help us do good, we&apos;ll help you get a faster answer&quot;; ObjectID = &quot;oS2-3x-xLb&quot;;</note>
       </trans-unit>
       <trans-unit id="260" resname="pje-c9-jWE.text" restype="string" datatype="x-xib">
         <source>\&quot;Been there, done that\&quot; answers based on personal knowledge and experience</source>
-        <target>Respuestas como \&quot;Estuve ahí, ya lo hice&quot;\ basadas en conocimiento y experiencia personal</target>
+        <target>Respuestas como \&quot;Estuve ahí, ya lo hice&quot; basadas en conocimiento y experiencia personal</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;\&quot;Been there, done that\&quot; answers based on personal knowledge and experience&quot;; ObjectID = &quot;pje-c9-jWE&quot;;</note>
       </trans-unit>
     </body>
@@ -1829,22 +1829,22 @@
       </trans-unit>
       <trans-unit id="262" resname="PuE-j3-ZkW.text" restype="string" datatype="x-xib">
         <source>We\&apos;re sorry to see you downgrade!</source>
-        <target>¡Sentimos\ que bajes de categoría!</target>
+        <target>¡Sentimos que bajes de categoría!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re sorry to see you downgrade!&quot;; ObjectID = &quot;PuE-j3-ZkW&quot;;</note>
       </trans-unit>
       <trans-unit id="263" resname="X3S-c8-hzM.normalTitle" restype="string" datatype="x-xib">
         <source>Couldn\&apos;t find the answer I was looking for</source>
-        <target>No pude\ encontrar la respuesta que estaba buscando</target>
+        <target>No pude encontrar la respuesta que estaba buscando</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Couldn&apos;t find the answer I was looking for&quot;; ObjectID = &quot;X3S-c8-hzM&quot;;</note>
       </trans-unit>
       <trans-unit id="265" resname="ZxU-47-847.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find the right doctor</source>
-        <target>No puedo\ encontrar al médico adecuado</target>
+        <target>No puedo encontrar al médico adecuado</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find the right doctor&quot;; ObjectID = &quot;ZxU-47-847&quot;;</note>
       </trans-unit>
       <trans-unit id="266" resname="jG8-eb-QdW.text" restype="string" datatype="x-xib">
         <source>We\&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We\&apos;ll do our best to make you happy as soon as possible! :&#41;</source>
-        <target>Estamos\ dedicados a cuidar de ti. Por favor considera hacernos saber cómo podemos mejorar tu experiencia en vez de desactivar tu cuenta. ¡Haremos\ lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
+        <target>Estamos dedicados a cuidar de ti. Por favor considera hacernos saber cómo podemos mejorar tu experiencia en vez de desactivar tu cuenta. ¡Haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We&apos;ll do our best to make you happy as soon as possible! :&#41;&quot;; ObjectID = &quot;jG8-eb-QdW&quot;;</note>
       </trans-unit>
       <trans-unit id="268" resname="nbQ-bS-Vtz.text" restype="string" datatype="x-xib">
@@ -1902,7 +1902,7 @@
     <body>
       <trans-unit id="270" resname="4z9-Xa-bcj.normalTitle" restype="string" datatype="x-xib">
         <source>Couldn\&apos;t find the answer I was looking for</source>
-        <target>No pude\ encontrar la respuesta que estaba buscando</target>
+        <target>No pude encontrar la respuesta que estaba buscando</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Couldn&apos;t find the answer I was looking for&quot;; ObjectID = &quot;4z9-Xa-bcj&quot;;</note>
       </trans-unit>
       <trans-unit id="271" resname="8hE-Yi-u4O.text" restype="string" datatype="x-xib">
@@ -1912,7 +1912,7 @@
       </trans-unit>
       <trans-unit id="274" resname="HWn-bN-Mn5.text" restype="string" datatype="x-xib">
         <source>We\&apos;re sorry to see you downgrade!</source>
-        <target>¡Sentimos\ que bajes de categoría!</target>
+        <target>¡Sentimos que bajes de categoría!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re sorry to see you downgrade!&quot;; ObjectID = &quot;HWn-bN-Mn5&quot;;</note>
       </trans-unit>
       <trans-unit id="275" resname="X7G-FQ-cYg.text" restype="string" datatype="x-xib">
@@ -1922,22 +1922,22 @@
       </trans-unit>
       <trans-unit id="276" resname="ZUz-Xv-wHK.text" restype="string" datatype="x-xib">
         <source>We\&apos;re sorry to see you downgrade!</source>
-        <target>¡Sentimos\ que bajes de categoría!</target>
+        <target>¡Sentimos que bajes de categoría!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re sorry to see you downgrade!&quot;; ObjectID = &quot;ZUz-Xv-wHK&quot;;</note>
       </trans-unit>
       <trans-unit id="277" resname="bsp-Xt-0j0.text" restype="string" datatype="x-xib">
         <source>We\&apos;re dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We\&apos;ll respond to you and do our best to make you happy as soon as possible! :&#41;</source>
-        <target>Estamos\ dedicados a cuidar de ti. Por favor considera enviarnos comentarios en vez de bajar de categoría. ¡Te\ responderemos y haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
+        <target>Estamos dedicados a cuidar de ti. Por favor considera enviarnos comentarios en vez de bajar de categoría. ¡Te responderemos y haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We&apos;ll respond to you and do our best to make you happy as soon as possible! :&#41;&quot;; ObjectID = &quot;bsp-Xt-0j0&quot;;</note>
       </trans-unit>
       <trans-unit id="278" resname="mWx-qB-R1d.text" restype="string" datatype="x-xib">
         <source>We\&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We\&apos;ll do our best to make you happy as soon as possible! :&#41;</source>
-        <target>Estamos\ dedicados a cuidar de ti. Por favor considera hacernos saber cómo podemos mejorar tu experiencia en vez de desactivar tu cuenta. ¡Haremos\ lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
+        <target>Estamos dedicados a cuidar de ti. Por favor considera hacernos saber cómo podemos mejorar tu experiencia en vez de desactivar tu cuenta. ¡Haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We&apos;ll do our best to make you happy as soon as possible! :&#41;&quot;; ObjectID = &quot;mWx-qB-R1d&quot;;</note>
       </trans-unit>
       <trans-unit id="279" resname="roc-jA-Xop.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find the right doctor</source>
-        <target>No puedo\ encontrar al médico adecuado</target>
+        <target>No puedo encontrar al médico adecuado</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find the right doctor&quot;; ObjectID = &quot;roc-jA-Xop&quot;;</note>
       </trans-unit>
       <trans-unit id="280" resname="smv-Tq-bBf.text" restype="string" datatype="x-xib">
@@ -2105,7 +2105,7 @@
       </trans-unit>
       <trans-unit id="292" resname="n8O-BB-25p.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes\ encontrar a tu médico? Obtén ayuda »</target>
+        <target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;n8O-BB-25p&quot;;</note>
       </trans-unit>
     </body>
@@ -2238,7 +2238,7 @@
     <body>
       <trans-unit id="301" resname="OiG-1c-BWY.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes\ encontrar a tu médico? Obtén ayuda »</target>
+        <target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;OiG-1c-BWY&quot;;</note>
       </trans-unit>
     </body>
@@ -2256,12 +2256,12 @@
     <body>
       <trans-unit id="302" resname="Ege-W5-Zxn.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes\ encontrar a tu médico? Obtén ayuda »</target>
+        <target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;Ege-W5-Zxn&quot;;</note>
       </trans-unit>
       <trans-unit id="303" resname="XuL-zM-XZw.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes\ encontrar a tu médico? Obtén ayuda »</target>
+        <target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;XuL-zM-XZw&quot;;</note>
       </trans-unit>
     </body>
@@ -2284,7 +2284,7 @@
     <body>
       <trans-unit id="304" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
         <source>Please don\&apos;t include a followup question in your note. To do so,</source>
-        <target>Por favor\  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
+        <target>Por favor  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so,&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
       </trans-unit>
     </body>
@@ -2371,7 +2371,7 @@
       </trans-unit>
       <trans-unit id="312" resname="iqT-MJ-Oof.text" restype="string" datatype="x-xib">
         <source>No worries! Let us know your email and we\&apos;ll send you a link to reset it</source>
-        <target>¡No te preocupes! Haznos saber tu correo electrónico y te\ enviaremos un enlace para restablecerla</target>
+        <target>¡No te preocupes! Haznos saber tu correo electrónico y te enviaremos un enlace para restablecerla</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;No worries! Let us know your email and we&apos;ll send you a link to reset it&quot;; ObjectID = &quot;iqT-MJ-Oof&quot;;</note>
       </trans-unit>
     </body>
@@ -2394,7 +2394,7 @@
     <body>
       <trans-unit id="313" resname="4jF-0K-bQp.text" restype="string" datatype="x-xib">
         <source>You\&apos;ll get more useful, beautiful doctor tips tomorrow</source>
-        <target>Obtendrás\ más tips de doctor útiles y hermosos mañana</target>
+        <target>Obtendrás más tips de doctor útiles y hermosos mañana</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ll get more useful, beautiful doctor tips tomorrow&quot;; ObjectID = &quot;4jF-0K-bQp&quot;;</note>
       </trans-unit>
     </body>
@@ -2484,7 +2484,7 @@
     <body>
       <trans-unit id="318" resname="ErF-gu-fPz.normalTitle" restype="string" datatype="x-xib">
         <source>Couldn\&apos;t find the answer I was looking for</source>
-        <target>No pude\ encontrar la respuesta que estaba buscando</target>
+        <target>No pude encontrar la respuesta que estaba buscando</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Couldn&apos;t find the answer I was looking for&quot;; ObjectID = &quot;ErF-gu-fPz&quot;;</note>
       </trans-unit>
       <trans-unit id="319" resname="cOY-aw-Sc0.text" restype="string" datatype="x-xib">
@@ -2512,17 +2512,17 @@
     <body>
       <trans-unit id="320" resname="DFA-eO-y9t.text" restype="string" datatype="x-xib">
         <source>What\&apos;s your email?</source>
-        <target>¿Cuál\ es tu correo electrónico?</target>
+        <target>¿Cuál es tu correo electrónico?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What&apos;s your email?&quot;; ObjectID = &quot;DFA-eO-y9t&quot;;</note>
       </trans-unit>
       <trans-unit id="321" resname="Rem-A5-UnX.normalTitle" restype="string" datatype="x-xib">
         <source>Couldn\&apos;t find the answer I was looking for</source>
-        <target>No pude\ encontrar la respuesta que estaba buscando</target>
+        <target>No pude encontrar la respuesta que estaba buscando</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Couldn&apos;t find the answer I was looking for&quot;; ObjectID = &quot;Rem-A5-UnX&quot;;</note>
       </trans-unit>
       <trans-unit id="322" resname="aro-gW-23T.text" restype="string" datatype="x-xib">
         <source>We\&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We\&apos;ll do our best to make you happy as soon as possible! :&#41;</source>
-        <target>Estamos\ dedicados a cuidar de ti. Por favor considera hacernos saber cómo podemos mejorar tu experiencia en vez de desactivar tu cuenta. ¡Haremos\ lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
+        <target>Estamos dedicados a cuidar de ti. Por favor considera hacernos saber cómo podemos mejorar tu experiencia en vez de desactivar tu cuenta. ¡Haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We&apos;ll do our best to make you happy as soon as possible! :&#41;&quot;; ObjectID = &quot;aro-gW-23T&quot;;</note>
       </trans-unit>
       <trans-unit id="323" resname="sG4-kB-Az0.text" restype="string" datatype="x-xib">
@@ -2788,7 +2788,7 @@
     <body>
       <trans-unit id="343" resname="b6Q-WI-YIU.text" restype="string" datatype="x-xib">
         <source>Pediatrics, Known for Children\&apos;s health</source>
-        <target>Pediatría, Conocido por salud\ Infantil</target>
+        <target>Pediatría, Conocido por salud Infantil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Pediatrics, Known for Children&apos;s health&quot;; ObjectID = &quot;b6Q-WI-YIU&quot;;</note>
       </trans-unit>
     </body>
@@ -2888,7 +2888,7 @@
     <body>
       <trans-unit id="355" resname="5cF-qF-9Ae.text" restype="string" datatype="x-xib">
         <source>Pediatrics, Known for Children\&apos;s health</source>
-        <target>Pediatría, Conocido por salud\ Infantil</target>
+        <target>Pediatría, Conocido por salud Infantil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Pediatrics, Known for Children&apos;s health&quot;; ObjectID = &quot;5cF-qF-9Ae&quot;;</note>
       </trans-unit>
       <trans-unit id="356" resname="NVW-dy-BQY.normalTitle" restype="string" datatype="x-xib">
@@ -2916,7 +2916,7 @@
     <body>
       <trans-unit id="357" resname="PEU-eM-pzv.text" restype="string" datatype="x-xib">
         <source>Pediatrics, Known for Children\&apos;s health</source>
-        <target>Pediatría, Conocido por salud\ Infantil</target>
+        <target>Pediatría, Conocido por salud Infantil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Pediatrics, Known for Children&apos;s health&quot;; ObjectID = &quot;PEU-eM-pzv&quot;;</note>
       </trans-unit>
       <trans-unit id="358" resname="Sy9-wL-XQ4.normalTitle" restype="string" datatype="x-xib">
@@ -2954,7 +2954,7 @@
     <body>
       <trans-unit id="360" resname="ext-If-5LF.text" restype="string" datatype="x-xib">
         <source>Pediatrics, Known for Children\&apos;s health</source>
-        <target>Pediatría, Conocido por salud\ Infantil</target>
+        <target>Pediatría, Conocido por salud Infantil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Pediatrics, Known for Children&apos;s health&quot;; ObjectID = &quot;ext-If-5LF&quot;;</note>
       </trans-unit>
     </body>
