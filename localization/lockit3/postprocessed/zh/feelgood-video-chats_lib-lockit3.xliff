@@ -307,23 +307,23 @@
         <source>Last shared with:</source><target>上一次分享：</target>
       </trans-unit>
       <trans-unit id="77" resname="system_message_started" restype="string" datatype="x-android-resource">
-        <source>Started at %s</source><target>开始于％s</target>
+        <source>Started at %s</source><target>开始于%s</target>
         
       <note>%s refers to a time and date</note></trans-unit>
       <trans-unit id="78" resname="system_message_ended" restype="string" datatype="x-android-resource">
-        <source>Ended at %s</source><target>结束于％s</target>
+        <source>Ended at %s</source><target>结束于%s</target>
         
       <note>%s refers to a time and date</note></trans-unit>
       <trans-unit id="79" resname="system_message_connection_lost" restype="string" datatype="x-android-resource">
-        <source>Connection lost at %s</source><target>在％s失去连接</target>
+        <source>Connection lost at %s</source><target>在%s失去连接</target>
         
       <note>%s refers to a time and date</note></trans-unit>
       <trans-unit id="80" resname="system_message_you_ended_consult" restype="string" datatype="x-android-resource">
-        <source>You ended this consult at %s</source><target>您在％s结束了此咨询</target>
+        <source>You ended this consult at %s</source><target>您在%s结束了此咨询</target>
         
       <note>%s refers to a time and date</note></trans-unit>
       <trans-unit id="81" resname="system_message_disconnected" restype="string" datatype="x-android-resource">
-        <source>Disconnected at %s</source><target>在％s处断开连接</target>
+        <source>Disconnected at %s</source><target>在%s处断开连接</target>
         
       <note>%s refers to a time and date</note></trans-unit>
       <trans-unit id="82" resname="video_unavailable_text_for_doctor" restype="string" datatype="x-android-resource">

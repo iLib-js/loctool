@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="1" resname="You&apos;re now following %@! " restype="string" datatype="x-objective-c">
         <source>You&apos;re now following %@!</source>
-        <target>您正在关注％@！</target>
+        <target>您正在关注%@！</target>
       </trans-unit>
     </body>
   </file>
@@ -682,7 +682,7 @@
     <body>
       <trans-unit id="95" resname=" &#40;Licensed in %@&#41;" restype="string" datatype="x-objective-c">
         <source>&#40;Licensed in %@&#41;</source>
-        <target>（在％@中授权）</target>
+        <target>（在%@中授权）</target>
       </trans-unit>
     </body>
   </file>
@@ -1734,7 +1734,7 @@
     <body>
       <trans-unit id="253" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
         <source>You\&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe\&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We\&apos;re here to help!</source>
-        <target>您这个月已经和医生聊了X次。请记住，HealthTap 在线咨询不能取代％@普通门诊医师，或用于替代与现实世界中的医生建立关系。\n\n我们希望您可以联系support@healthtap.com，告诉我们您为什么需要继续跟医生对话。我们很高兴审核您的案例，如果合理，您可以开始其它咨询。我们在这里帮助您！</target>
+        <target>您这个月已经和医生聊了X次。请记住，HealthTap 在线咨询不能取代%@普通门诊医师，或用于替代与现实世界中的医生建立关系。\n\n我们希望您可以联系support@healthtap.com，告诉我们您为什么需要继续跟医生对话。我们很高兴审核您的案例，如果合理，您可以开始其它咨询。我们在这里帮助您！</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!&quot;; ObjectID = &quot;F8C-bC-b0r&quot;;</note>
       </trans-unit>
       <trans-unit id="254" resname="ONE-ub-R6W.text" restype="string" datatype="x-xib">

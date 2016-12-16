@@ -20714,23 +20714,23 @@
       </trans-unit>
       <trans-unit id="1233" resname="system_message_started" restype="string" datatype="x-android-resource">
         <source>Started at %s</source>
-        <target>开始于％s</target>
+        <target>开始于%s</target>
       </trans-unit>
       <trans-unit id="1234" resname="system_message_ended" restype="string" datatype="x-android-resource">
         <source>Ended at %s</source>
-        <target>结束于％s</target>
+        <target>结束于%s</target>
       </trans-unit>
       <trans-unit id="1235" resname="system_message_connection_lost" restype="string" datatype="x-android-resource">
         <source>Connection lost at %s</source>
-        <target>在％s失去连接</target>
+        <target>在%s失去连接</target>
       </trans-unit>
       <trans-unit id="1236" resname="system_message_you_ended_consult" restype="string" datatype="x-android-resource">
         <source>You ended this consult at %s</source>
-        <target>您在％s结束了此咨询</target>
+        <target>您在%s结束了此咨询</target>
       </trans-unit>
       <trans-unit id="1237" resname="system_message_disconnected" restype="string" datatype="x-android-resource">
         <source>Disconnected at %s</source>
-        <target>在％s处断开连接</target>
+        <target>在%s处断开连接</target>
       </trans-unit>
       <trans-unit id="1238" resname="recommend_dialog_string" restype="string" datatype="x-android-resource">
         <source>vote on their expertise &amp; bedside manner</source>
@@ -21274,7 +21274,7 @@
       </trans-unit>
       <trans-unit id="1373" resname="concierge_success_title_append" restype="string" datatype="x-android-resource">
         <source>\nIn the mean time, would you like to schedule a video chat or message with the doctor?</source>
-        <target>\ n同时，您需要安排与医生视频或短信聊天吗？</target>
+        <target>\n同时，您需要安排与医生视频或短信聊天吗？</target>
       </trans-unit>
       <trans-unit id="1374" resname="concierge_connect_success_footer" restype="string" datatype="x-android-resource">
         <source>More personalized doctor insights »</source>
@@ -22078,11 +22078,11 @@
       </trans-unit>
       <trans-unit id="1574" resname="cant_find_doc_text" restype="string" datatype="x-android-resource">
         <source>Did you know that as a Prime member you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!</source>
-        <target>您知道吗，作为Prime会员，咨询超过100多个专业的特邀医生可以享受折扣\ n \ n根据您的需要获得最合适的护理 ——今天就咨询专家吧！</target>
+        <target>您知道吗，作为Prime会员，咨询超过100多个专业的特邀医生可以享受折扣\n \n根据您的需要获得最合适的护理 ——今天就咨询专家吧！</target>
       </trans-unit>
       <trans-unit id="1575" resname="whats_new" restype="string" datatype="x-android-resource">
         <source>What\&apos;s new in %s:</source>
-        <target>％s中有新内容：</target>
+        <target>%s中有新内容：</target>
       </trans-unit>
       <trans-unit id="1576" resname="update_remind_nomore" restype="string" datatype="x-android-resource">
         <source>Don\&apos;t remind of this update</source>
@@ -24022,7 +24022,7 @@
       </trans-unit>
       <trans-unit id="2057" resname="text_Get_expert_advice__second_opinions__and_personalized_help_to_achieve_u00a0your_u00a0goals" restype="string" datatype="x-android-resource">
         <source>Get expert advice, second opinions, and personalized help to achieve\u00a0your\u00a0goals</source>
-        <target>获得专家建议，第二意见和个性化帮助，来帮助实现\u00a0您的\ u00a0目标</target>
+        <target>获得专家建议，第二意见和个性化帮助，来帮助实现\u00a0您的\u00a0目标</target>
       </trans-unit>
       <trans-unit id="2058" resname="text_Feel_better_with_the_right_treatments__and_have_prescriptions_sent_to_your_u00a0local_u00a0pharmacy" restype="string" datatype="x-android-resource">
         <source>Feel better with the right treatments, and have prescriptions sent to your\u00a0local\u00a0pharmacy</source>
@@ -27102,11 +27102,11 @@
       </trans-unit>
       <trans-unit id="2824" resname="question_prime_text_array" restype="array" datatype="x-android-resource" extype="1">
         <source>The doctor will see you now\u00a0›</source>
-        <target>医生将会看到您\ u00a0&gt;</target>
+        <target>医生将会看到您\u00a0&gt;</target>
       </trans-unit>
       <trans-unit id="2825" resname="question_prime_text_array" restype="array" datatype="x-android-resource" extype="2">
         <source>A doctor will see you now\u00a0›</source>
-        <target>医生将会看到您\ u00a0&gt;</target>
+        <target>医生将会看到您\u00a0&gt;</target>
       </trans-unit>
       <trans-unit id="2826" resname="question_prime_text_array" restype="array" datatype="x-android-resource" extype="3">
         <source>See a doctor now\u00a0›</source>
