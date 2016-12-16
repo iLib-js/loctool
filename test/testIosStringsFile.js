@@ -473,6 +473,40 @@ module.exports = {
         test.done();
     },
 
+    testIosStringsFileGetContentWithMultipleEscapedQuotes: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var strings = new IosStringsFile({
+        	project: p, 
+        	pathName: "./objc/es.lproj/asdf.strings"
+        });
+        test.ok(strings);
+        
+        [
+        	new ResourceString({
+        		project: "ht-iosapp",
+        		locale: "es-US",
+        		key: "“The future of medicine is at your fingertips.”",
+        		source: '"El futuro de la medicina está al alcance de tus dedos."',
+        		comment: "bar"
+        	})
+        ].forEach(function(res) {
+        	strings.addResource(res);
+        });
+        
+        test.equal(strings.getContent(),
+        	'/* bar */\n' +
+        	'"“The future of medicine is at your fingertips.”" = "\\\"El futuro de la medicina está al alcance de tus dedos.\\\"";\n\n'
+        );
+        
+        test.done();
+    },
+
     testIosStringsFileGetContentEmpty: function(test) {
         test.expect(2);
 
