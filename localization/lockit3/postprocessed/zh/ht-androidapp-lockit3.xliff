@@ -2459,7 +2459,7 @@
         <source>The doctor will see you now\u00a0›</source><target>医生将会看到您\u00a0&gt;</target>
       </trans-unit>
       <trans-unit id="690" resname="question_prime_text_array" restype="array" datatype="x-android-resource" extype="2">
-        <source>A doctor will see you now\u00a0›</source><target>医生将会看到您\ u00a0&gt;</target>
+        <source>A doctor will see you now\u00a0›</source><target>医生将会看到您\u00a0&gt;</target>
       </trans-unit>
       <trans-unit id="691" resname="question_prime_text_array" restype="array" datatype="x-android-resource" extype="3">
         <source>See a doctor now\u00a0›</source><target>现在就向医生了解\u00a0›</target>
