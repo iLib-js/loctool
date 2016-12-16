@@ -27588,7 +27588,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5063" resname="Geoffrey Rutledge, MD, PhD, Chief Medical Officer" restype="string" datatype="html">
         <source>Geoffrey Rutledge, MD, PhD, Chief Medical Officer</source>
-        <target>Geoffrey Rutledge医生，MD，PhD \ n首席医务官</target>
+        <target>Geoffrey Rutledge医生，MD，PhD \n首席医务官</target>
       </trans-unit>
       <trans-unit id="6209" resname="We&apos;re delighted to introduce {cobranded_product} — your new digital platform for delivering world class Virtual Care." restype="string" datatype="html">
         <source>We&apos;re delighted to introduce {cobranded_product} — your new digital platform for delivering world class Virtual Care.</source>
@@ -34201,7 +34201,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
                 continue button." restype="string" datatype="javascript">
         <source>Enter Introductory Consult Notes for the patient. When done, press the \
                 continue button.</source>
-        <target>为患者输入介绍性咨询注释。当准备好，\                请点击继续按钮</target>
+        <target>为患者输入介绍性咨询注释。当准备好，                请点击继续按钮</target>
       </trans-unit>
       <trans-unit id="6528" resname="At any time during the intro consult, you may select the checkmark \
                  below the intro consult notes section to &lt;b&gt;accept the patient&lt;/b&gt; \
@@ -34344,7 +34344,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
                    chooses. Once the patient has been tested you will be sent the \
                    results for review.</source>
         <target>另一个新的功能，\
-                    时间具有在线订购实验室测试的能力。\ \
+                    时间具有在线订购实验室测试的能力。 \
                     实验室订单将发送到Quest服务中心的患者\
                     选择。一旦患者已经测试，您将被发送\
                     结果进行审查。</target>
@@ -37084,7 +37084,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
                 For further assistance, please contact our Quality Care Team at support@healthtap.com." restype="string" datatype="javascript">
         <source>We sincerely apologize, but there was an issue completing this transaction. \
                 For further assistance, please contact our Quality Care Team at support@healthtap.com.</source>
-        <target>我们真诚地道歉，在完成此交易时出现问题。\ 如需进一步帮助，请联系我们的质量保证团队support@healthtap.com。</target>
+        <target>我们真诚地道歉，在完成此交易时出现问题。 如需进一步帮助，请联系我们的质量保证团队support@healthtap.com。</target>
       </trans-unit>
     </body>
   </file>

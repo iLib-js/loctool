@@ -680,7 +680,7 @@
     \u00B7 Cualquier otra situación crítica o que atente contra la vida
     Qué no esperar\n\n\
     \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA (Drug Enforcement Administration, Agencia Federal Antidrogas) (Categoría I, II, III, IV)\n\
-    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n\ 
+    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
     \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida (por ejemplo, fármacos para dietas o para disfunción eréctil)\n\
     \u00B7 Consultas en idiomas que no sea el inglés\n\
     \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje (considera consultas de video con médicos disponibles para una atención más rápida)</target>
@@ -758,7 +758,7 @@
     \u00B7 Cualquier otra situación crítica o que atente contra la vida
     Qué no esperar\n\n\
     \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA (Drug Enforcement Administration, Agencia Federal Antidrogas) (Categoría I, II, III, IV)\n\
-    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n\ 
+    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
     \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida (por ejemplo, fármacos para dietas o para disfunción eréctil)\n\
     \u00B7 Consultas en idiomas que no sea el inglés\n\
                            \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje (considera consultas de video con médicos disponibles para una atención más rápida)</target>
@@ -2838,7 +2838,7 @@
   <file original="feelgood/ipad/Plugins/Base.lproj/FGConnectionLostView.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="638" resname="vQi-Zb-3ut.text" restype="string" datatype="x-xib">
-        <source>There\'s a problem with your connection.</source><target>Hay\ un problema con tu conexión.</target>
+        <source>There\'s a problem with your connection.</source><target>Hay\un problema con tu conexión.</target>
         
       <note>Class = "UILabel"; text = "There's a problem with your connection."; ObjectID = "vQi-Zb-3ut";</note></trans-unit>
     </body>
@@ -2874,7 +2874,7 @@
   <file original="feelgood/Base.lproj/WelcomeAlertView.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="643" resname="Mu2-0Z-4kA.text" restype="string" datatype="x-xib">
-        <source>Great! You\'re all set!</source><target>¡Estupendo! ¡Ya\ estás listo!</target>
+        <source>Great! You\'re all set!</source><target>¡Estupendo! ¡Ya estás listo!</target>
         
       <note>Class = "UILabel"; text = "Great! You're all set!"; ObjectID = "Mu2-0Z-4kA";</note></trans-unit>
     </body>
@@ -2882,7 +2882,7 @@
   <file original="feelgood/Base.lproj/FGThankAlertView.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="644" resname="erM-oz-3w7.text" restype="string" datatype="x-xib">
-        <source>Please don\'t include a followup question in your note. To do so,</source><target>Por favor\  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
+        <source>Please don\'t include a followup question in your note. To do so,</source><target>Por favor  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
         
       <note>Class = "UILabel"; text = "Please don't include a followup question in your note. To do so,"; ObjectID = "erM-oz-3w7";</note></trans-unit>
     </body>
@@ -2890,7 +2890,7 @@
   <file original="feelgood/Base.lproj/FGRateAlertView.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="645" resname="VK9-Mt-EjL.text" restype="string" datatype="x-xib">
-        <source>Spread the word and rate\nus in the App Store :)</source><target>Corre la voz y califícanos\ en la App Store :)</target>
+        <source>Spread the word and rate\nus in the App Store :)</source><target>Corre la voz y califícanos en la App Store :)</target>
         
       <note>Class = "UILabel"; text = "Spread the word and rate\nus in the App Store :)"; ObjectID = "VK9-Mt-EjL";</note></trans-unit>
     </body>
@@ -2898,7 +2898,7 @@
   <file original="feelgood/Base.lproj/FGChatQuestTestTableViewCell.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="646" resname="CZv-9x-Rur.text" restype="string" datatype="x-xib">
-        <source>I\'ve ordered a test for you via Quest Diagnostics.</source><target>He\ ordenado una prueba para ti a través de Quest Diagnostics.</target>
+        <source>I\'ve ordered a test for you via Quest Diagnostics.</source><target>He ordenado una prueba para ti a través de Quest Diagnostics.</target>
         
       <note>Class = "UILabel"; text = "I've ordered a test for you via Quest Diagnostics."; ObjectID = "CZv-9x-Rur";</note></trans-unit>
     </body>
@@ -2930,7 +2930,7 @@
         
       <note>Class = "UILabel"; text = "Our doctors have answered  similar questions"; ObjectID = "sWh-hA-9s9";</note></trans-unit>
       <trans-unit id="651" resname="vLt-Hu-9yd.text" restype="string" datatype="x-xib">
-        <source>Didn\'t find what you are looking for?</source><target>¿No\ encontraste lo que estabas buscando?</target>
+        <source>Didn\'t find what you are looking for?</source><target>¿No encontraste lo que estabas buscando?</target>
         
       <note>Class = "UILabel"; text = "Didn't find what you are looking for?"; ObjectID = "vLt-Hu-9yd";</note></trans-unit>
     </body>
@@ -2938,7 +2938,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocsQuestionSentViewControlleriPad.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="652" resname="1T1-t2-OU8.text" restype="string" datatype="x-xib">
-        <source>We\'ll notify you as soon as our doctors respond. In the meantime:</source><target>Nosotros\ te notificaremos tan pronto como nuestros doctores respondan. Mientras tanto:</target>
+        <source>We\'ll notify you as soon as our doctors respond. In the meantime:</source><target>Nosotros te notificaremos tan pronto como nuestros doctores respondan. Mientras tanto:</target>
         
       <note>Class = "UILabel"; text = "We'll notify you as soon as our doctors respond. In the meantime:"; ObjectID = "1T1-t2-OU8";</note></trans-unit>
     </body>
@@ -2946,7 +2946,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocsPaymentViewControlleriPad.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="653" resname="Hel-CI-Fj1.text" restype="string" datatype="x-xib">
-        <source>We\'re committed to making you have a delightful experience with our doctors that leaves you feeling good. If you\'re unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you\'ll be satisfied :)</source><target>Estamos\ comprometidos a hacer que tengas una experiencia encantadora con nuestros doctores que te deje sintiéndote bien. ¡Si no\ estás feliz con la calidad y utilidad de la Consulta Virtual, puedes contactarnos en cualquier momento y solicitar un reembolso! Te garantizamos que\ estarás satisfecho :)</target>
+        <source>We\'re committed to making you have a delightful experience with our doctors that leaves you feeling good. If you\'re unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you\'ll be satisfied :)</source><target>Estamos comprometidos a hacer que tengas una experiencia encantadora con nuestros doctores que te deje sintiéndote bien. ¡Si no estás feliz con la calidad y utilidad de la Consulta Virtual, puedes contactarnos en cualquier momento y solicitar un reembolso! Te garantizamos que estarás satisfecho :)</target>
         
       <note>Class = "UILabel"; text = "We're committed to making you have a delightful experience with our doctors that leaves you feeling good. If you're unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you'll be satisfied :)"; ObjectID = "Hel-CI-Fj1";</note></trans-unit>
     </body>
@@ -2982,7 +2982,7 @@
         
       <note>Class = "UILabel"; text = "Video Call"; ObjectID = "8Fc-pj-rKs";</note></trans-unit>
       <trans-unit id="659" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
-        <source>You\'ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe\'d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\'d be happy to review your case and, if appropriate, enable you to start another consult. We\'re here to help!</source><target>Has\ hablado con un doctor X veces este mes. Recuerda, Consultas Virtuales de HealthTap no pretenden reemplazar a tu médico de atención primaria o utilizarse como sustituto para establecer una relación con un doctor en el mundo real.\n\nNos gustaría que nos contactaras a [support@healthtap.com] para hacernos saber la razón por la que necesitas continuar hablando con un doctor. Estaremos\ felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos\ aquí para ayudar!</target>
+        <source>You\'ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe\'d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\'d be happy to review your case and, if appropriate, enable you to start another consult. We\'re here to help!</source><target>Has hablado con un doctor X veces este mes. Recuerda, Consultas Virtuales de HealthTap no pretenden reemplazar a tu médico de atención primaria o utilizarse como sustituto para establecer una relación con un doctor en el mundo real.\n\nNos gustaría que nos contactaras a [support@healthtap.com] para hacernos saber la razón por la que necesitas continuar hablando con un doctor. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
         
       <note>Class = "UILabel"; text = "You've talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe'd like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!"; ObjectID = "F8C-bC-b0r";</note></trans-unit>
       <trans-unit id="660" resname="ONE-ub-R6W.text" restype="string" datatype="x-xib">
@@ -3014,19 +3014,19 @@
         
       <note>Class = "UITextField"; placeholder = "  Name of condition or symptom"; ObjectID = "KvY-4s-tV7";</note></trans-unit>
       <trans-unit id="665" resname="UJ6-B8-aCt.text" restype="string" datatype="x-xib">
-        <source>The ability to dive deeper into women\'s issue</source><target>La capacidad de profundizar mucho más en los problemas\ femeninos</target>
+        <source>The ability to dive deeper into women\'s issue</source><target>La capacidad de profundizar mucho más en los problemas femeninos</target>
         
       <note>Class = "UILabel"; text = "The ability to dive deeper into women's issue"; ObjectID = "UJ6-B8-aCt";</note></trans-unit>
       <trans-unit id="666" resname="WeL-BP-aJb.text" restype="string" datatype="x-xib">
-        <source>We\'ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.</source><target>Agilizaremos\ felizmente tu pregunta para una respuesta más rápida a cambio de una donación caritativa a una de nuestras caridades favoritas.</target>
+        <source>We\'ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.</source><target>Agilizaremos felizmente tu pregunta para una respuesta más rápida a cambio de una donación caritativa a una de nuestras caridades favoritas.</target>
         
       <note>Class = "UILabel"; text = "We'll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities."; ObjectID = "WeL-BP-aJb";</note></trans-unit>
       <trans-unit id="667" resname="oS2-3x-xLb.text" restype="string" datatype="x-xib">
-        <source>Help us do good, we\'ll help you get a faster answer</source><target>Ayúdanos a hacer el bien, te\ ayudaremos a obtener una respuesta más rápida</target>
+        <source>Help us do good, we\'ll help you get a faster answer</source><target>Ayúdanos a hacer el bien, te ayudaremos a obtener una respuesta más rápida</target>
         
       <note>Class = "UILabel"; text = "Help us do good, we'll help you get a faster answer"; ObjectID = "oS2-3x-xLb";</note></trans-unit>
       <trans-unit id="668" resname="pje-c9-jWE.text" restype="string" datatype="x-xib">
-        <source>\"Been there, done that\" answers based on personal knowledge and experience</source><target>Respuestas como \"Estuve ahí, ya lo hice"\ basadas en conocimiento y experiencia personal</target>
+        <source>\"Been there, done that\" answers based on personal knowledge and experience</source><target>Respuestas como \"Estuve ahí, ya lo hice" basadas en conocimiento y experiencia personal</target>
         
       <note>Class = "UILabel"; text = "\"Been there, done that\" answers based on personal knowledge and experience"; ObjectID = "pje-c9-jWE";</note></trans-unit>
     </body>
@@ -3050,11 +3050,11 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocAddSubAccountsViewControlleriPad.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="672" resname="HWn-bN-Mn5.text" restype="string" datatype="x-xib">
-        <source>We\'re sorry to see you downgrade!</source><target>¡Sentimos\ que bajes de categoría!</target>
+        <source>We\'re sorry to see you downgrade!</source><target>¡Sentimos que bajes de categoría!</target>
         
       <note>Class = "UILabel"; text = "We're sorry to see you downgrade!"; ObjectID = "HWn-bN-Mn5";</note></trans-unit>
       <trans-unit id="673" resname="bsp-Xt-0j0.text" restype="string" datatype="x-xib">
-        <source>We\'re dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We\'ll respond to you and do our best to make you happy as soon as possible! :)</source><target>Estamos\ dedicados a cuidar de ti. Por favor considera enviarnos comentarios en vez de bajar de categoría. ¡Te\ responderemos y haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :)</target>
+        <source>We\'re dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We\'ll respond to you and do our best to make you happy as soon as possible! :)</source><target>Estamos dedicados a cuidar de ti. Por favor considera enviarnos comentarios en vez de bajar de categoría. ¡Te responderemos y haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :)</target>
         
       <note>Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We'll respond to you and do our best to make you happy as soon as possible! :)"; ObjectID = "bsp-Xt-0j0";</note></trans-unit>
     </body>
@@ -3166,11 +3166,11 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGNuxInviteDoctorViewControllerSmallScreen.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="690" resname="Ege-W5-Zxn.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\'t find your doctor? Get help »</source><target>¿No puedes\ encontrar a tu médico? Obtén ayuda »</target>
+        <source>Can\'t find your doctor? Get help »</source><target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
         
       <note>Class = "UIButton"; normalTitle = "Can't find your doctor? Get help »"; ObjectID = "Ege-W5-Zxn";</note></trans-unit>
       <trans-unit id="691" resname="XuL-zM-XZw.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\'t find your doctor? Get help »</source><target>¿No puedes\ encontrar a tu médico? Obtén ayuda »</target>
+        <source>Can\'t find your doctor? Get help »</source><target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
         
       <note>Class = "UIButton"; normalTitle = "Can't find your doctor? Get help »"; ObjectID = "XuL-zM-XZw";</note></trans-unit>
     </body>
@@ -3230,7 +3230,7 @@
         
       <note>Class = "UIButton"; normalTitle = "Share"; ObjectID = "Dcn-5D-eum";</note></trans-unit>
       <trans-unit id="701" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
-        <source>Please don\'t include a followup question in your note. To do so,</source><target>Por favor\  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
+        <source>Please don\'t include a followup question in your note. To do so,</source><target>Por favor  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
         
       <note>Class = "UILabel"; text = "Please don't include a followup question in your note. To do so,"; ObjectID = "G3s-8R-ne9";</note></trans-unit>
       <trans-unit id="702" resname="KaS-Fq-bjx.normalTitle" restype="string" datatype="x-xib">
@@ -3246,7 +3246,7 @@
         
       <note>Class = "UIButton"; normalTitle = "Share"; ObjectID = "D1S-cE-SGi";</note></trans-unit>
       <trans-unit id="704" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
-        <source>Please don\'t include a followup question in your note. To do so,</source><target>Por favor\  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
+        <source>Please don\'t include a followup question in your note. To do so,</source><target>Por favor  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
         
       <note>Class = "UILabel"; text = "Please don't include a followup question in your note. To do so,"; ObjectID = "G3s-8R-ne9";</note></trans-unit>
     </body>
@@ -3326,7 +3326,7 @@
         
       <note>Class = "UILabel"; text = "We just sent you a link to reset your password.\nIf you dont see it after a few minutes, please \ncheck your Spam folder."; ObjectID = "fak-PA-FU7";</note></trans-unit>
       <trans-unit id="717" resname="iqT-MJ-Oof.text" restype="string" datatype="x-xib">
-        <source>No worries! Let us know your email and we\'ll send you a link to reset it</source><target>¡No te preocupes! Haznos saber tu correo electrónico y te\ enviaremos un enlace para restablecerla</target>
+        <source>No worries! Let us know your email and we\'ll send you a link to reset it</source><target>¡No te preocupes! Haznos saber tu correo electrónico y te enviaremos un enlace para restablecerla</target>
         
       <note>Class = "UILabel"; text = "No worries! Let us know your email and we'll send you a link to reset it"; ObjectID = "iqT-MJ-Oof";</note></trans-unit>
     </body>
@@ -3334,7 +3334,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGEndCarouselViewController~ipad.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="718" resname="4jF-0K-bQp.text" restype="string" datatype="x-xib">
-        <source>You\'ll get more useful, beautiful doctor tips tomorrow</source><target>Obtendrás\ más tips de doctor útiles y hermosos mañana</target>
+        <source>You\'ll get more useful, beautiful doctor tips tomorrow</source><target>Obtendrás más tips de doctor útiles y hermosos mañana</target>
         
       <note>Class = "UILabel"; text = "You'll get more useful, beautiful doctor tips tomorrow"; ObjectID = "4jF-0K-bQp";</note></trans-unit>
     </body>
@@ -3394,11 +3394,11 @@
   <file original="feelgood/ViewControllers/Settings/Base.lproj/FGMainSettingsViewController~ipad.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="726" resname="DFA-eO-y9t.text" restype="string" datatype="x-xib">
-        <source>What\'s your email?</source><target>¿Cuál\ es tu correo electrónico?</target>
+        <source>What\'s your email?</source><target>¿Cuál es tu correo electrónico?</target>
         
       <note>Class = "UILabel"; text = "What's your email?"; ObjectID = "DFA-eO-y9t";</note></trans-unit>
       <trans-unit id="727" resname="aro-gW-23T.text" restype="string" datatype="x-xib">
-        <source>We\'re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We\'ll do our best to make you happy as soon as possible! :)</source><target>Estamos\ dedicados a cuidar de ti. Por favor considera hacernos saber cómo podemos mejorar tu experiencia en vez de desactivar tu cuenta. ¡Haremos\ lo mejor que podamos para hacer feliz tan pronto como sea posible! :)</target>
+        <source>We\'re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We\'ll do our best to make you happy as soon as possible! :)</source><target>Estamos dedicados a cuidar de ti. Por favor considera hacernos saber cómo podemos mejorar tu experiencia en vez de desactivar tu cuenta. ¡Haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :)</target>
         
       <note>Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)"; ObjectID = "aro-gW-23T";</note></trans-unit>
     </body>
@@ -3506,7 +3506,7 @@
   <file original="feelgood/Classes/UI/TableViewCells/Base.lproj/FGNUXConciergeInviteCell.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="742" resname="ext-If-5LF.text" restype="string" datatype="x-xib">
-        <source>Pediatrics, Known for Children\'s health</source><target>Pediatría, Conocido por salud\ Infantil</target>
+        <source>Pediatrics, Known for Children\'s health</source><target>Pediatría, Conocido por salud Infantil</target>
         
       <note>Class = "UILabel"; text = "Pediatrics, Known for Children's health"; ObjectID = "ext-If-5LF";</note></trans-unit>
     </body>
@@ -3642,7 +3642,7 @@
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGConciergeSuggestedDoctorTableViewCell.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="763" resname="ext-If-5LF.text" restype="string" datatype="x-xib">
-        <source>Pediatrics, Known for Children\'s health</source><target>Pediatría, Conocido por salud\ Infantil</target>
+        <source>Pediatrics, Known for Children\'s health</source><target>Pediatría, Conocido por salud Infantil</target>
         
       <note>Class = "UILabel"; text = "Pediatrics, Known for Children's health"; ObjectID = "ext-If-5LF";</note></trans-unit>
     </body>
@@ -3886,7 +3886,7 @@
   <file original="feelgood/ViewControllers/Prime Trial/FGPrimeTrialPaymentViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="54" resname="Your card no longer seems valid.\nPlease try a new one." restype="string" datatype="x-objective-c">
-        <source>Your card no longer seems valid.\nPlease try a new one.</source><target>您的卡似乎不再有效。\ n请尝试新的卡。</target>
+        <source>Your card no longer seems valid.\nPlease try a new one.</source><target>您的卡似乎不再有效。\n请尝试新的卡。</target>
       </trans-unit>
       <trans-unit id="55" resname="Sorry, there is already an account for this email. If you forgot your password, " restype="string" datatype="x-objective-c">
         <source>Sorry, there is already an account for this email. If you forgot your password, </source><target>很抱歉，此电子邮件账户已存在。如果您忘记了密码， </target>
@@ -4018,7 +4018,7 @@
         <source>/month</source><target>/月</target>
       </trans-unit>
       <trans-unit id="87" resname="\u00B7 See more" restype="string" datatype="x-objective-c">
-        <source>\u00B7 See more</source><target>\ u00B7查看更多</target>
+        <source>\u00B7 See more</source><target>\u00B7查看更多</target>
       </trans-unit>
       <trans-unit id="88" resname="Connect\nnow" restype="string" datatype="x-objective-c">
         <source>Connect\nnow</source><target>立即连接\</target>
@@ -4033,7 +4033,7 @@
         <source>Consult now</source><target>现在咨询</target>
       </trans-unit>
       <trans-unit id="92" resname="Ask\nnow" restype="string" datatype="x-objective-c">
-        <source>Ask\nnow</source><target>询问\ 现在</target>
+        <source>Ask\nnow</source><target>询问 现在</target>
       </trans-unit>
       <trans-unit id="93" resname="Ask now" restype="string" datatype="x-objective-c">
         <source>Ask now</source><target>现在问</target>
@@ -4329,7 +4329,7 @@
 \u00B7 上呼吸道感染\n\
 \u00B7 泌尿道感染\n\
 \u00B7 阴道瘙痒\n\
-\u00B7 酵母感染\n\n\何时不使用在线功能\ n \ n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\ n \ n \                 \u00B7胸痛或胸闷\n\
+\u00B7 酵母感染\n\n\何时不使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -4400,7 +4400,7 @@
     \u00B7 Any prescriptions for medications that are restricted by individual states\n\
     \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
-                           \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</seg-source><target>在线咨询的常见原因：\n\                                                                                   \u00B7  腹痛\n\                                                                                      \u00B7   急性支气管炎\n\                                                                                      \u00B7 急性结膜炎  \n\                                                                                          \u00B7 急性膀胱炎  \n\                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\ n \ n \                 \u00B7胸痛或胸闷\n\
+                           \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</seg-source><target>在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -4957,7 +4957,7 @@
         <source>Refresh video</source><target>刷新视频</target>
       </trans-unit>
       <trans-unit id="275" resname="Device connection code for\n%@" restype="string" datatype="x-objective-c">
-        <source>Device connection code for\n%@</source><target>\ n%@的设备连接代码</target>
+        <source>Device connection code for\n%@</source><target>\n%@的设备连接代码</target>
       </trans-unit>
       <trans-unit id="276" resname="Device Verification" restype="string" datatype="x-objective-c">
         <source>Device Verification</source><target>设备验证</target>
@@ -5045,7 +5045,7 @@
         <source>Please help me log in to my HealthTap account</source><target>请帮助我登录我的HealthTap帐户</target>
       </trans-unit>
       <trans-unit id="299" resname="Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)" restype="string" datatype="x-objective-c">
-        <source>Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)</source><target>您好，HealthTap团队！\n\n我在登入我的HealthTap帐户时遇到问题。能帮我重置我的密码吗？\在\设备上%@ \ 设备详细信息：%@ \n \n谢谢:)</target>
+        <source>Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)</source><target>您好，HealthTap团队！\n\n我在登入我的HealthTap帐户时遇到问题。能帮我重置我的密码吗？\在\设备上%@  设备详细信息：%@ \n \n谢谢:)</target>
       </trans-unit>
     </body>
   </file>
@@ -5612,7 +5612,7 @@
         <source>Add more health information (optional)</source><target>添加更多的健康信息（可选）</target>
       </trans-unit>
       <trans-unit id="428" resname="Questions about HealthTap?\nCall our Quality Care team at 1-650-376-6110" restype="string" datatype="x-objective-c">
-        <source>Questions about HealthTap?\nCall our Quality Care team at 1-650-376-6110</source><target>有关HealthTap的问题？\ n请致电1-650-376-6110联系我们的质量保证团队</target>
+        <source>Questions about HealthTap?\nCall our Quality Care team at 1-650-376-6110</source><target>有关HealthTap的问题？\n请致电1-650-376-6110联系我们的质量保证团队</target>
       </trans-unit>
     </body>
   </file>

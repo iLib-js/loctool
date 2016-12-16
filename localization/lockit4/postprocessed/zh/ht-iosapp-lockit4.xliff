@@ -219,7 +219,7 @@
   <file original="feelgood/ViewControllers/Prime Trial/FGPrimeTrialPaymentViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="54" resname="Your card no longer seems valid.\nPlease try a new one." restype="string" datatype="x-objective-c">
-        <source>Your card no longer seems valid.\nPlease try a new one.</source><target>您的卡似乎不再有效。\ n请尝试新的卡。</target>
+        <source>Your card no longer seems valid.\nPlease try a new one.</source><target>您的卡似乎不再有效。\n请尝试新的卡。</target>
       </trans-unit>
       <trans-unit id="55" resname="Sorry, there is already an account for this email. If you forgot your password, " restype="string" datatype="x-objective-c">
         <source>Sorry, there is already an account for this email. If you forgot your password, </source><target>很抱歉，此电子邮件账户已存在。如果您忘记了密码， </target>
@@ -351,7 +351,7 @@
         <source>/month</source><target>/月</target>
       </trans-unit>
       <trans-unit id="87" resname="\u00B7 See more" restype="string" datatype="x-objective-c">
-        <source>\u00B7 See more</source><target>\ u00B7查看更多</target>
+        <source>\u00B7 See more</source><target>\u00B7查看更多</target>
       </trans-unit>
       <trans-unit id="88" resname="Connect\nnow" restype="string" datatype="x-objective-c">
         <source>Connect\nnow</source><target>立即连接\</target>
@@ -366,7 +366,7 @@
         <source>Consult now</source><target>现在咨询</target>
       </trans-unit>
       <trans-unit id="92" resname="Ask\nnow" restype="string" datatype="x-objective-c">
-        <source>Ask\nnow</source><target>询问\ 现在</target>
+        <source>Ask\nnow</source><target>询问 现在</target>
       </trans-unit>
       <trans-unit id="93" resname="Ask now" restype="string" datatype="x-objective-c">
         <source>Ask now</source><target>现在问</target>
@@ -662,7 +662,7 @@
 \u00B7 上呼吸道感染\n\
 \u00B7 泌尿道感染\n\
 \u00B7 阴道瘙痒\n\
-\u00B7 酵母感染\n\n\何时不使用在线功能\ n \ n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\ n \ n \                 \u00B7胸痛或胸闷\n\
+\u00B7 酵母感染\n\n\何时不使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -733,7 +733,7 @@
     \u00B7 Any prescriptions for medications that are restricted by individual states\n\
     \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
-                           \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</seg-source><target>在线咨询的常见原因：\n\                                                                                   \u00B7  腹痛\n\                                                                                      \u00B7   急性支气管炎\n\                                                                                      \u00B7 急性结膜炎  \n\                                                                                          \u00B7 急性膀胱炎  \n\                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\ n \ n \                 \u00B7胸痛或胸闷\n\
+                           \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</seg-source><target>在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -1290,7 +1290,7 @@
         <source>Refresh video</source><target>刷新视频</target>
       </trans-unit>
       <trans-unit id="275" resname="Device connection code for\n%@" restype="string" datatype="x-objective-c">
-        <source>Device connection code for\n%@</source><target>\ n%@的设备连接代码</target>
+        <source>Device connection code for\n%@</source><target>\n%@的设备连接代码</target>
       </trans-unit>
       <trans-unit id="276" resname="Device Verification" restype="string" datatype="x-objective-c">
         <source>Device Verification</source><target>设备验证</target>
@@ -1378,7 +1378,7 @@
         <source>Please help me log in to my HealthTap account</source><target>请帮助我登录我的HealthTap帐户</target>
       </trans-unit>
       <trans-unit id="299" resname="Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)" restype="string" datatype="x-objective-c">
-        <source>Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)</source><target>您好，HealthTap团队！\n\n我在登入我的HealthTap帐户时遇到问题。能帮我重置我的密码吗？\在\设备上%@ \ 设备详细信息：%@ \n \n谢谢:)</target>
+        <source>Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)</source><target>您好，HealthTap团队！\n\n我在登入我的HealthTap帐户时遇到问题。能帮我重置我的密码吗？\在\设备上%@  设备详细信息：%@ \n \n谢谢:)</target>
       </trans-unit>
     </body>
   </file>
@@ -1945,7 +1945,7 @@
         <source>Add more health information (optional)</source><target>添加更多的健康信息（可选）</target>
       </trans-unit>
       <trans-unit id="428" resname="Questions about HealthTap?\nCall our Quality Care team at 1-650-376-6110" restype="string" datatype="x-objective-c">
-        <source>Questions about HealthTap?\nCall our Quality Care team at 1-650-376-6110</source><target>有关HealthTap的问题？\ n请致电1-650-376-6110联系我们的质量保证团队</target>
+        <source>Questions about HealthTap?\nCall our Quality Care team at 1-650-376-6110</source><target>有关HealthTap的问题？\n请致电1-650-376-6110联系我们的质量保证团队</target>
       </trans-unit>
     </body>
   </file>
