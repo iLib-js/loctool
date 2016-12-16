@@ -2838,7 +2838,7 @@
   <file original="feelgood/ipad/Plugins/Base.lproj/FGConnectionLostView.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="638" resname="vQi-Zb-3ut.text" restype="string" datatype="x-xib">
-        <source>There\'s a problem with your connection.</source><target>Hay\un problema con tu conexión.</target>
+        <source>There\'s a problem with your connection.</source><target>Hay un problema con tu conexión.</target>
         
       <note>Class = "UILabel"; text = "There's a problem with your connection."; ObjectID = "vQi-Zb-3ut";</note></trans-unit>
     </body>

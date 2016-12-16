@@ -47617,13 +47617,13 @@ Doctors are online ready to help.</source>
         <source>\u00B7 See more</source><target>\u00B7查看更多</target>
       </trans-unit>
       <trans-unit id="88" resname="Connect\nnow" restype="string" datatype="x-objective-c">
-        <source>Connect\nnow</source><target>立即连接\</target>
+        <source>Connect\nnow</source><target>立即连接</target>
       </trans-unit>
       <trans-unit id="89" resname="Connect now" restype="string" datatype="x-objective-c">
         <source>Connect now</source><target>立即连接</target>
       </trans-unit>
       <trans-unit id="90" resname="Consult\nnow" restype="string" datatype="x-objective-c">
-        <source>Consult\nnow</source><target>现在咨询\</target>
+        <source>Consult\nnow</source><target>现在咨询</target>
       </trans-unit>
       <trans-unit id="91" resname="Consult now" restype="string" datatype="x-objective-c">
         <source>Consult now</source><target>现在咨询</target>
