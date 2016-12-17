@@ -672,7 +672,7 @@
         <source>Can\'t find your clinician? Invite\u00a0them\u00a0»</source><target>找不到您的临床医生？邀请\u00a0them\u00a0»</target>
       </trans-unit>
       <trans-unit id="1710" resname="cancel_appointment_content" restype="string" datatype="x-android-resource">
-        <source>Are you sure you want to cancel this appointment with {doctor_name} on {slot_date} at {slot_time}?</source><target>您确定要取消与 {doctor_name} 在{slot_date} {slot_time} {time_zone}的这次预约吗？</target>
+        <source>Are you sure you want to cancel this appointment with {doctor_name} on {slot_date} at {slot_time}?</source><target>您确定要取消与 {doctor_name} 在{slot_date} {slot_time}的这次预约吗？</target>
         
       <note>Do not translate placeholders {doctor_name} {slot_date} {slot_time}</note></trans-unit>
       <trans-unit id="2016" resname="picker_location_format" restype="string" datatype="x-android-resource">
