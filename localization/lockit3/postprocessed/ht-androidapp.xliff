@@ -4233,7 +4233,7 @@
         <source>The way to visit top U.S. doctors 24/7 from anywhere - no waiting room!</source><target>\n在任何地方都可以全天24的咨询美国顶级医生-没有候诊室！</target>
       </trans-unit>
       <trans-unit id="179" resname="rating_please_rate_consult" restype="string" datatype="x-android-resource">
-        <source>Please rate your {start}\nconsult with {doc_name} on {date}\n{end}</source><target>请评价您和{doc_name}在{date}\n{end}的咨询{start}\n</target>
+        <source>Please rate your {start}\nconsult with {doc_name} on {date}\n{end}</source><target>请评价{start}\n您和{doc_name}在{date}的咨询\n{end}</target>
         
       <note>Subtitle message. Rating refers to consult experiences.</note></trans-unit>
       <trans-unit id="180" resname="footer_help_text" restype="string" datatype="x-android-resource">
@@ -4539,7 +4539,7 @@
         <source>1 year old</source><target>1岁</target>
       </trans-unit>
       <trans-unit id="276" resname="age" restype="plural" datatype="x-android-resource" extype="other">
-        <source>%d years old</source><target>%岁</target>
+        <source>%d years old</source><target>%d岁</target>
       </trans-unit>
     </body>
   </file>
