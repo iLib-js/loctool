@@ -15,7 +15,7 @@
 		"loctool.lib.AndroidProject": "INFO",
 		"loctool.lib.AndroidResourceFile": "INFO",
 		"loctool.lib.AndroidResourceFileType": "INFO",
-		"loctool.lib.AndroidResourceString": "INFO",
+		"loctool.lib.ContextResourceString": "INFO",
 		"loctool.lib.DBTranslationSet": "INFO",
 		"loctool.lib.FileType": "INFO",
 		"loctool.lib.HTMLTemplateFile": "INFO",

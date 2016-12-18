@@ -10,7 +10,7 @@ var Xliff = require("../lib/Xliff.js");
 var TranslationUnit = Xliff.TranslationUnit;
 
 var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
-var AndroidResourceString = require("../lib/AndroidResourceString.js");
+var ContextResourceString = require("../lib/ContextResourceString.js");
 
 var ResourceString = require("../lib/ResourceString.js");
 var TranslationSet = require("../lib/TranslationSet.js");
@@ -356,7 +356,7 @@ for (var i = 0; i < resources.length; i++) {
 	
 	if (resource.pathName.substring(resource.pathName.length - 5) === ".java") {
 		console.log("converting resource to java string in path " + resource.pathName);
-		var newres = new AndroidResourceString(resource);
+		var newres = new ContextResourceString(resource);
 		newres.datatype = "java";
 		newres.resType = "string";
 		result.addResource(newres);

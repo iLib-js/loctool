@@ -6,7 +6,7 @@
 
 if (!YamlFile) {
 	var YamlFile = require("../lib/YamlFile.js");
-    var ResourceString = require("../lib/ResourceString.js");
+    var ContextResourceString = require("../lib/ContextResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
     var WebProject =  require("../lib/WebProject.js");
@@ -109,7 +109,7 @@ module.exports = {
     },
 
     testYamlFileParseWithSubkeys: function(test) {
-        test.expect(22);
+        test.expect(28);
 
         var p = new WebProject({
         	id: "ht-iosapp",
@@ -147,10 +147,12 @@ module.exports = {
         test.equal(r.length, 6);
         
         test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getLocale(), "en-US"); // source locale
         test.equal(r[0].getKey(), "r9834724545");
         test.equal(r[0].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[1].getSource(), "Our internship program");
+        test.equal(r[1].getLocale(), "en-US"); // source locale
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
@@ -158,20 +160,99 @@ module.exports = {
         		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
+        test.equal(r[2].getLocale(), "en-US"); // source locale
         test.equal(r[2].getKey(), "r6782977423");
         test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[3].getSource(), "Working at HealthTap");
+        test.equal(r[3].getLocale(), "en-US"); // source locale
         test.equal(r[3].getKey(), "r4524523454");
         test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[4].getSource(), "Jobs");
+        test.equal(r[4].getLocale(), "en-US"); // source locale
         test.equal(r[4].getKey(), "r3254356823");
         test.equal(r[4].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[5].getSource(), "test of many levels");
+        test.equal(r[5].getLocale(), "en-US"); // source locale
         test.equal(r[5].getKey(), "test");
-        test.equal(r[5].getContext(), "foo/bar/asdf");
+        test.equal(r[5].getContext(), "foo@bar@asdf");
+
+        test.done();
+    },
+
+    testYamlFileParseWithLocaleAndSubkeys: function(test) {
+        test.expect(28);
+
+        var p = new WebProject({
+        	id: "ht-iosapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+        
+        yml.parse(
+        		'---\n' +
+        		"zh_Hans_CN:\n" +
+        		"  feelgood/foo/bar/x.en-US.html.haml:\n" +
+        		'    r9834724545: Jobs\n' +
+        		'    r9483762220: Our internship program\n' +
+        		'    r6782977423: |\n' +
+        		'      Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'      and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'      directly from experienced, successful entrepreneurs.\n' +
+				"  feelgood/foo/ssss/asdf.en-US.html.haml:\n" +
+				'    r4524523454: Working at HealthTap\n' +
+				'    r3254356823: Jobs\n' +
+				'  foo:\n' +
+				'    bar:\n' +
+				'      asdf:\n' +
+				'        test: test of many levels\n');
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getAll();
+        test.ok(r);
+        
+        test.equal(r.length, 6);
+        
+        test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getLocale(), "zh-Hans-CN");
+        test.equal(r[0].getKey(), "r9834724545");
+        test.equal(r[0].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[1].getSource(), "Our internship program");
+        test.equal(r[1].getLocale(), "zh-Hans-CN");
+        test.equal(r[1].getKey(), "r9483762220");
+        test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[2].getSource(), 
+        		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'directly from experienced, successful entrepreneurs.\n');
+        test.equal(r[2].getLocale(), "zh-Hans-CN");
+        test.equal(r[2].getKey(), "r6782977423");
+        test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[3].getSource(), "Working at HealthTap");
+        test.equal(r[3].getLocale(), "zh-Hans-CN");
+        test.equal(r[3].getKey(), "r4524523454");
+        test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
+
+        test.equal(r[4].getSource(), "Jobs");
+        test.equal(r[4].getLocale(), "zh-Hans-CN");
+        test.equal(r[4].getKey(), "r3254356823");
+        test.equal(r[4].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
+
+        test.equal(r[5].getSource(), "test of many levels");
+        test.equal(r[5].getLocale(), "zh-Hans-CN");
+        test.equal(r[5].getKey(), "test");
+        test.equal(r[5].getContext(), "foo@bar@asdf");
 
         test.done();
     },
@@ -319,14 +400,14 @@ module.exports = {
         test.ok(yml);
         
         [
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "de-DE",
         		key: "source_text",
         		source: "Quellen\"text",
         		comment: "foo"
         	}),
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "de-DE",
         		key: "more_source_text",
@@ -368,14 +449,14 @@ module.exports = {
         test.ok(yml);
         
         [
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "zh-Hans-CN",
         		key: "• &amp;nbsp; Address a health or healthy living topic",
         		source: "• &amp;nbsp; 解决健康生活相关的话题",
         		comment: " "
         	}),
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "zh-Hans-CN",
         		key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
@@ -417,14 +498,14 @@ module.exports = {
         test.ok(yml);
         
         [
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "zh-Hans-CN",
         		key: "short key",
         		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
         		comment: " "
         	}),
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "zh-Hans-CN",
         		key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
@@ -494,11 +575,101 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ResourceString.hashKey("ht-webapp12", "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger."));
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", undefined, "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger."));
         test.ok(r);
         
         test.equal(r.getSource(), "Dr. Livingston serves on the Medical Advisory Board for HealthTap and he is the Chief Medical officer for Healthcare Transformation Solutions. He is on Twitter as @macobgyn and is an active doctor blogger.");
         test.equal(r.getKey(), "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.");
+        
+        test.done();
+    },
+    
+    testYamlFileRealContent2: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./test2.yml",
+        	locale: "en-US"
+        });
+        test.ok(yml);
+        
+        yml.extract();
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "saved_someone_else_life", "en-US", "subject"));
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Feel good! Someone said a doctor’s answer to your question saved their life:");
+        test.equal(r.getKey(), "subject");
+        test.equal(r.getLocale(), "en-US");
+        test.equal(r.getContext(), "saved_someone_else_life");
+        
+        test.done();
+    },
+    
+    testYamlFileAtInKeyName: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./test2.yml",
+        	locale: "en-US"
+        });
+        test.ok(yml);
+        
+        yml.extract();
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject"));
+        test.ok(r);
+        
+        test.equal(r.getSource(), "%1, %2 has answered a question you asked!");
+        test.equal(r.getKey(), "email_subject");
+        test.equal(r.getLocale(), "en-US");
+        test.equal(r.getContext(), "member_question_asked\\@answered");
+        
+        test.done();
+    },
+    
+    testYamlFileRightResourceType: function(test) {
+        test.expect(4);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./test2.yml",
+        	locale: "en-US"
+        });
+        test.ok(yml);
+        
+        yml.extract();
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject"));
+        test.ok(r);
+        
+        test.ok(r instanceof ContextResourceString);
         
         test.done();
     }

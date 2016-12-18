@@ -1,0 +1,33 @@
+---
+saved_someone_else_life:
+  subject:      "Feel good! Someone said a doctor’s answer to your question saved their life:"
+  body:         "%1"
+  ctoa:         "Ask another question"
+  push_data:    "%1, feel good! A HealthTap member says an answer to your question saved their life."
+  global_link:  member_ask_doctors_picker
+  setting_name: product_announcements
+member_answer_thank_follow_up:
+  subject:      "Thank %1 for answering!"
+  body:         "%1 answered your question. Thank the doctor if the answer helped!"
+  ctoa:         "Thank the %1"
+  push_data:    "Thank %1 for taking the time to answer your question, especially if it helped!"
+  global_link:  member_question_auto_thank
+  setting_name: product_announcements
+member_question_asked:
+  email_subject: "%1, %2 has answered a question you asked!"
+  subject:      "%1 %2!"
+  body:         "“%1”"
+  ctoa:         "Read the %1"
+  push_data:    "Great news, %1 %2: “%3” %4"
+  global_link:  member_question
+  setting_name: your_question_received_answer
+  play_sound_index: 0
+  in_app_modal: 1
+  category: "a"
+  daily_limit_exception_email: true
+'member_question_asked@answered':
+  email_subject: "%1, %2 has answered a question you asked!"
+  subject:      "%1 %2!"
+  body:         "“%1”"
+  ctoa:         "Read the %1"
+  

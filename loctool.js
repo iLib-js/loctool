@@ -190,6 +190,18 @@ function walk(dir, project) {
 			}
 			
 			projectQueue.enqueue(project);
+			
+			if (project.options && project.options.includes) {
+				project.options.includes.forEach(function(p) {
+					var stat = fs.statSync(p);
+					if (stat && stat.isDirectory()) {
+						logger.info(p);
+						walk(p, project);
+					} else {
+						project.addPath(p);
+					}
+				});
+			}
 		}
 	}
 	
