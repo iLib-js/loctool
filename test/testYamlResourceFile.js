@@ -39,7 +39,10 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
 
         var y = new YamlResourceFile({
@@ -57,7 +60,10 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "foo/bar"
+        	}
         }, "./testfiles");
 
         var y = new YamlResourceFile({
@@ -76,7 +82,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -113,7 +122,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -187,7 +199,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -262,7 +277,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -294,7 +312,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -342,7 +363,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -365,7 +389,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -389,7 +416,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -438,7 +468,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -487,7 +520,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -540,7 +576,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -560,7 +599,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -589,7 +631,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -620,7 +665,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
@@ -651,7 +699,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlResourceFile({
