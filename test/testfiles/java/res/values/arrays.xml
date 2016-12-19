@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="days">
+        <item>@string/Sun</item>
+        <item>@string/Mon</item>
+        <item>@string/Tues</item>
+        <item>@string/Wed</item>
+        <item>@string/Thurs</item>
+        <item>@string/Fri</item>
+        <item>@string/Sat</item>
+    </array>
+    <string-array name="subaccount_questions">
+        <item>How many times has {first_name} been pregnant?</item>
+        <item>How many deliveries did {first_name} have?</item>
+        <item>How many times did {first_name} have a pre-term deliveries?</item>
+        <item>How many times did {first_name} have a miscarriage or termination?</item>
+        <item>How many living children does {first_name} have?</item>
+        <item>When was {first_name} last menstrual period?</item>
+    </string-array>
+    <string-array name="self_questions">
+        <item>How many times have you been pregnant?</item>
+        <item>How many deliveries did you have?</item>
+        <item>How many times did you have a pre-term deliveries?</item>
+    </string-array>
+</resources>
