@@ -427,7 +427,7 @@ module.exports = {
         test.done();
     },
 
-    testAndroidResourceFileGetXML: function(test) {
+    testAndroidResourceFileGetXMLStrings: function(test) {
         test.expect(2);
 
         var p = new AndroidProject({
@@ -518,6 +518,120 @@ module.exports = {
 			'  <string name="thanks">Thank you!</string>\n' +
 			'</resources>\n';
         
+        test.equal(xml, expected);
+        
+        test.done();
+    },
+
+    testAndroidResourceFileGetXMLPlurals: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var arf = new AndroidResourceFile({
+			project: p,
+			pathName: "./testfiles/java/res/values/foo.xml",
+			locale: "en-US"
+		});
+        test.ok(arf);
+        
+        arf.addResource(new ResourcePlural({
+        	project: "foo",
+        	key: "asdf",
+        	strings: {
+        		"one": "This is singular",
+        		"few": "This is few",
+        		"other": "This is other"
+        	},
+        	locale: "en-US",
+        	comment: "comment1"
+        }));
+        
+        arf.addResource(new ResourcePlural({
+        	project: "foo",
+        	key: "foobar",
+        	strings: {
+        		"one": "un",
+        		"few": "deux",
+        		"other": "trois"
+        	},
+        	locale: "en-US",
+        	comment: "comment2"
+        }));
+
+        var xml = arf._getXML();
+        
+        var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
+			'<resources \n' +
+			'  xmlns:tools="http://schemas.android.com/tools">\n' +
+			'  <plurals name="asdf" i18n="comment1">\n' +
+			'    <item quantity="one">This is singular</item>\n' +
+			'    <item quantity="few">This is few</item>\n' +
+			'    <item quantity="other">This is other</item>\n' +
+			'  </plurals>\n' +
+			'  <plurals name="foobar" i18n="comment2">\n' +
+			'    <item quantity="one">un</item>\n' +
+			'    <item quantity="few">deux</item>\n' +
+			'    <item quantity="other">trois</item>\n' +
+			'  </plurals>\n' +
+			'</resources>';
+
+        test.equal(xml, expected);
+        
+        test.done();
+    },
+
+    testAndroidResourceFileGetXMLArrays: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US",
+        	id: "foo"
+        }, "./testfiles");
+        
+        var arf = new AndroidResourceFile({
+			project: p,
+			pathName: "./testfiles/java/res/values/foo.xml",
+			locale: "en-US"
+		});
+        test.ok(arf);
+        
+        arf.addResource(new ResourceArray({
+        	project: "foo",
+        	key: "asdf",
+        	array: ["one", "two", "three"],
+        	locale: "en-US",
+        	comment: "comment1"
+        }));
+        
+        arf.addResource(new ResourceArray({
+        	project: "foo",
+        	key: "foobar",
+        	array: ["un", "deux", "trois"],
+        	locale: "en-US",
+        	comment: "comment2"
+        }));
+
+        var xml = arf._getXML();
+        
+        var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
+			'<resources \n' +
+			'  xmlns:tools="http://schemas.android.com/tools">\n' +
+			'  <string-array name="asdf" i18n="comment1">\n' +
+			'    <item>one</item>\n' +
+			'    <item>two</item>\n' +
+			'    <item>three</item>\n' +
+			'  </string-array>\n' +
+			'  <string-array name="foobar" i18n="comment2">\n' +
+			'    <item>un</item>\n' +
+			'    <item>deux</item>\n' +
+			'    <item>trois</item>\n' +
+			'  </string-array>\n' +
+			'</resources>';
+
         test.equal(xml, expected);
         
         test.done();
