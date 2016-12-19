@@ -39,16 +39,19 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
 
         var y = new YamlFile({
             project: p,
-        	pathName: "a/b/en-US.yml"
+        	pathName: "x/y/en-US.yml"
         });
         test.ok(y);
         
-        test.equal(y.getPath(), "a/b/en-US.yml");
+        test.equal(y.getPath(), "x/y/en-US.yml");
 
         test.done();
     },
@@ -57,7 +60,10 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
 
         var y = new YamlFile({
@@ -76,7 +82,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -113,7 +122,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -187,7 +199,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -221,38 +236,39 @@ module.exports = {
         
         test.equal(r.length, 6);
         
+        // locale is not special for this type of yml file, so it should appear in the context
         test.equal(r[0].getSource(), "Jobs");
-        test.equal(r[0].getLocale(), "zh-Hans-CN");
+        test.equal(r[0].getLocale(), "en-US");
         test.equal(r[0].getKey(), "r9834724545");
-        test.equal(r[0].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+        test.equal(r[0].getContext(), "zh_Hans_CN@feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[1].getSource(), "Our internship program");
-        test.equal(r[1].getLocale(), "zh-Hans-CN");
+        test.equal(r[1].getLocale(), "en-US");
         test.equal(r[1].getKey(), "r9483762220");
-        test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+        test.equal(r[1].getContext(), "zh_Hans_CN@feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[2].getSource(), 
         		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
-        test.equal(r[2].getLocale(), "zh-Hans-CN");
+        test.equal(r[2].getLocale(), "en-US");
         test.equal(r[2].getKey(), "r6782977423");
-        test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
+        test.equal(r[2].getContext(), "zh_Hans_CN@feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[3].getSource(), "Working at HealthTap");
-        test.equal(r[3].getLocale(), "zh-Hans-CN");
+        test.equal(r[3].getLocale(), "en-US");
         test.equal(r[3].getKey(), "r4524523454");
-        test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
+        test.equal(r[3].getContext(), "zh_Hans_CN@feelgood/foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[4].getSource(), "Jobs");
-        test.equal(r[4].getLocale(), "zh-Hans-CN");
+        test.equal(r[4].getLocale(), "en-US");
         test.equal(r[4].getKey(), "r3254356823");
-        test.equal(r[4].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
+        test.equal(r[4].getContext(), "zh_Hans_CN@feelgood/foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[5].getSource(), "test of many levels");
-        test.equal(r[5].getLocale(), "zh-Hans-CN");
+        test.equal(r[5].getLocale(), "en-US");
         test.equal(r[5].getKey(), "test");
-        test.equal(r[5].getContext(), "foo@bar@asdf");
+        test.equal(r[5].getContext(), "zh_Hans_CN@foo@bar@asdf");
 
         test.done();
     },
@@ -262,7 +278,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -273,7 +292,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.equal(set.size(), 0);
 
-        yml.parse('---\n' +
+        yml.parse(
         		'Working_at_HealthTap: Working at HealthTap\n' +
         		'Jobs: Jobs\n' +
         		'Our_internship_program: Our internship program\n' +
@@ -294,7 +313,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -342,7 +364,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -365,7 +390,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-iosapp",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -389,7 +417,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -419,15 +450,13 @@ module.exports = {
         });
 
         diff(yml.getContent(),
-            	'de_DE:\n' +
-            	'  source_text: Quellen\"text\n' +
-            	'  more_source_text: mehr Quellen\"text\n'
-            );
+    		'source_text: Quellen\"text\n' +
+        	'more_source_text: mehr Quellen\"text\n'
+        );
 
         test.equal(yml.getContent(),
-        	'de_DE:\n' +
-        	'  source_text: Quellen\"text\n' +
-        	'  more_source_text: mehr Quellen\"text\n'
+        	'source_text: Quellen\"text\n' +
+        	'more_source_text: mehr Quellen\"text\n'
         );
         
         test.done();
@@ -438,7 +467,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -468,15 +500,13 @@ module.exports = {
         });
         
         diff(yml.getContent(),
-            	"zh_Hans_CN:\n" +
-            	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
-            	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
+            	"• &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
+            	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
     	    );
 
         test.equal(yml.getContent(),
-        	"zh_Hans_CN:\n" +
-        	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
-        	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
+        	"• &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
+        	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
         );
         
         test.done();
@@ -487,7 +517,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -517,19 +550,75 @@ module.exports = {
         });
         
         diff(yml.getContent(),
-	    	"zh_Hans_CN:\n" +
-	    	"  short key: |-\n" +
-	    	"    this is text that is relatively long and can run past the end of the page\n" +
-	    	"    So, we put a new line in the middle of it.\n" +
-	    	"  \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
+	    	"short key: |-\n" +
+	    	"  this is text that is relatively long and can run past the end of the page\n" +
+	    	"  So, we put a new line in the middle of it.\n" +
+	    	"\"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
 	    );
 
         test.equal(yml.getContent(),
-	    	"zh_Hans_CN:\n" +
-	    	"  short key: |-\n" +
-	    	"    this is text that is relatively long and can run past the end of the page\n" +
-	    	"    So, we put a new line in the middle of it.\n" +
-	    	"  \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
+	    	"short key: |-\n" +
+	    	"  this is text that is relatively long and can run past the end of the page\n" +
+	    	"  So, we put a new line in the middle of it.\n" +
+	    	"\"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
+        );
+        
+        test.done();
+    },
+
+    testYamlFileGetContentWithSubkeys: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./zh.yml",
+        	locale: "zh-Hans-CN"
+        });
+        test.ok(yml);
+        
+        [
+        	new ContextResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "key1",
+        		source: "medium length text that doesn't go beyond one line",
+        		context: "foo@bar",
+        		comment: " "
+        	}),
+        	new ContextResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "key2",
+        		source: "short text",
+        		context: "foo@bar@asdf",
+        		comment: "bar"
+        	})
+        ].forEach(function(res) {
+        	yml.addResource(res);
+        });
+        
+        diff(yml.getContent(),
+	    	"foo:\n" +
+	    	"  bar:\n" +
+	    	"    key1: medium length text that doesn't go beyond one line\n" +
+	    	"    asdf:\n" +
+	    	"      key2: short text\n"
+	    );
+
+        test.equal(yml.getContent(),
+	    	"foo:\n" +
+	    	"  bar:\n" +
+	    	"    key1: medium length text that doesn't go beyond one line\n" +
+	    	"    asdf:\n" +
+	    	"      key2: short text\n"
         );
         
         test.done();
@@ -540,7 +629,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -560,7 +652,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -589,7 +684,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -620,7 +718,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -651,7 +752,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({

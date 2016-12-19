@@ -292,13 +292,14 @@ module.exports = {
         test.equal(set.size(), 0);
 
         yml.parse('---\n' +
-        		'Working_at_HealthTap: Working at HealthTap\n' +
-        		'Jobs: Jobs\n' +
-        		'Our_internship_program: Our internship program\n' +
-        		'? Completing_an_internship_at_HealthTap_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
-        		': Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
-        		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
-        		'  directly from experienced, successful entrepreneurs.\n');
+        		'es-US:\n' +
+        		'  Working_at_HealthTap: Working at HealthTap\n' +
+        		'  Jobs: Jobs\n' +
+        		'  Our_internship_program: Our internship program\n' +
+        		'  ? Completing_an_internship_at_HealthTap_gives_you_the_opportunity_to_experience_innovation_and_personal_growth_at_one_of_the_best_companies_in_Silicon_Valley,_all_while_learning_directly_from_experienced,_successful_entrepreneurs.\n' +
+        		'  : Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'    and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'    directly from experienced, successful entrepreneurs.\n');
         
         test.ok(set);
         
