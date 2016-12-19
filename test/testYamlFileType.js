@@ -15,8 +15,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -32,8 +32,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -50,8 +50,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -65,74 +65,56 @@ module.exports = {
         test.done();
     },
 
-    testYamlFileTypeHandlesEnglishResourceFiles: function(test) {
+    testYamlFileTypeHandlesNoResourceFiles: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
         test.ok(yft);
         
-        test.ok(yft.handles("config/locales/en-US.yml"));
+        test.ok(!yft.handles("config/locales/en-US.yml"));
         
         test.done();
     },
 
-    testYamlFileTypeHandlesBaseResourceFiles: function(test) {
+    testYamlFileTypeHandlesNoBaseResourceFiles: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
         test.ok(yft);
         
-        test.ok(yft.handles("config/locales/en.yml"));
+        test.ok(!yft.handles("config/locales/en.yml"));
         
         test.done();
     },
 
-    testYamlFileTypeHandlesNonEnglishResourceFiles: function(test) {
+    testYamlFileTypeHandlesNoResourceFilesWithPath: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
         test.ok(yft);
         
-        test.ok(!yft.handles("config/locales/zh-Hans-CN.yml"));
-        
-        test.done();
-    },
-
-    testYamlFileTypeHandlesNonResourceFiles: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
-        	}
-        }, "./testfiles");
-        
-        var yft = new YamlFileType(p);
-        test.ok(yft);
-        
-        test.ok(!yft.handles("config/qaconfig.yml"));
+        test.ok(!yft.handles("config/locales/en.yml"));
         
         test.done();
     },
@@ -142,8 +124,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	},
         	includes: [
         		"config/notifications.yml",
@@ -171,8 +153,8 @@ module.exports = {
         var p = new WebProject({
         	id: "ht-webapp12",
         	sourceLocale: "de-DE",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -192,8 +174,8 @@ module.exports = {
         var p = new WebProject({
         	id: "ht-webapp12",
         	sourceLocale: "de-DE",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
