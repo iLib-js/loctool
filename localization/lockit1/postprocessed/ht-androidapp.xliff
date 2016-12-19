@@ -19706,7 +19706,7 @@
       </trans-unit>
       <trans-unit id="1016" resname="signup_email_taken" restype="string" datatype="x-android-resource">
         <source>This email is already in use. Please {start1}[log in]{end1} or {start2}[change password]{end2}.</source>
-        <target>这个邮箱已经被使用。请{start1}[log in]{end1}或{start2}[change password]{end2}.</target>
+        <target>这个邮箱已经被使用。请{start1}[登录]{end1}或{start2}[更改密码]{end2}.</target>
       </trans-unit>
       <trans-unit id="1017" resname="signup_email_invalid" restype="string" datatype="x-android-resource">
         <source>Please provide a valid email.</source>
