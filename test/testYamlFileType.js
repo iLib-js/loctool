@@ -40,7 +40,7 @@ module.exports = {
         var yft = new YamlFileType(p);
         test.ok(yft);
         
-        test.ok(!yft.handles("foo.yml"));
+        test.ok(yft.handles("foo.yml"));
         
         test.done();
     },
@@ -78,7 +78,7 @@ module.exports = {
         var yft = new YamlFileType(p);
         test.ok(yft);
         
-        test.ok(!yft.handles("config/locales/en-US.yml"));
+        test.ok(yft.handles("config/locales/en-US.yml"));
         
         test.done();
     },
@@ -96,25 +96,7 @@ module.exports = {
         var yft = new YamlFileType(p);
         test.ok(yft);
         
-        test.ok(!yft.handles("config/locales/en.yml"));
-        
-        test.done();
-    },
-
-    testYamlFileTypeHandlesNoResourceFilesWithPath: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
-        }, "./testfiles");
-        
-        var yft = new YamlFileType(p);
-        test.ok(yft);
-        
-        test.ok(!yft.handles("config/locales/en.yml"));
+        test.ok(yft.handles("config/locales/en.yml"));
         
         test.done();
     },
@@ -126,17 +108,7 @@ module.exports = {
         	sourceLocale: "en-US",
         	resourceDirs: {
         		"yml": "config"
-        	},
-        	includes: [
-        		"config/notifications.yml",
-        		"config/doctor_notification_setting_groups.yml",
-        		"config/refinement_questions.yml",
-        		"config/sso_errors.yml",
-        		"config/symptom_triage_copy.yml",
-        		"config/topic_meta.yml",
-        		"config/triage_samples.yml",
-        		"config/app_configs/language_display_name_en_us.yml"
-        	]
+        	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);

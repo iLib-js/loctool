@@ -15,8 +15,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -32,8 +32,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -50,8 +50,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -70,8 +70,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -88,8 +88,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -106,8 +106,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -124,8 +124,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -142,25 +142,15 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	},
-        	includes: [
-        		"config/notifications.yml",
-        		"config/doctor_notification_setting_groups.yml",
-        		"config/refinement_questions.yml",
-        		"config/sso_errors.yml",
-        		"config/symptom_triage_copy.yml",
-        		"config/topic_meta.yml",
-        		"config/triage_samples.yml",
-        		"config/app_configs/language_display_name_en_us.yml"
-        	]
         }, "./testfiles");
         
         var yrft = new YamlResourceFileType(p);
         test.ok(yrft);
         
-        test.ok(yrft.handles("config/nofications.yml"));
+        test.ok(!yrft.handles("config/nofications.yml"));
         
         test.done();
     },
@@ -171,8 +161,8 @@ module.exports = {
         var p = new WebProject({
         	id: "ht-webapp12",
         	sourceLocale: "de-DE",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
@@ -192,8 +182,8 @@ module.exports = {
         var p = new WebProject({
         	id: "ht-webapp12",
         	sourceLocale: "de-DE",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config"
         	}
         }, "./testfiles");
         
