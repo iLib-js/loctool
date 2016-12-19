@@ -16,7 +16,7 @@ module.exports = {
         var p = new WebProject({
         	sourceLocale: "en-US",
         	resourceDirs: {
-        		"yml": "config"
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
@@ -33,7 +33,7 @@ module.exports = {
         var p = new WebProject({
         	sourceLocale: "en-US",
         	resourceDirs: {
-        		"yml": "config"
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
@@ -51,7 +51,7 @@ module.exports = {
         var p = new WebProject({
         	sourceLocale: "en-US",
         	resourceDirs: {
-        		"yml": "config"
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
@@ -71,7 +71,7 @@ module.exports = {
         var p = new WebProject({
         	sourceLocale: "en-US",
         	resourceDirs: {
-        		"yml": "config"
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
@@ -89,7 +89,7 @@ module.exports = {
         var p = new WebProject({
         	sourceLocale: "en-US",
         	resourceDirs: {
-        		"yml": "config"
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
@@ -106,8 +106,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceDirs: {
-        		"yml": "config"
+        	resourceDirs: {	
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
@@ -125,7 +125,7 @@ module.exports = {
         var p = new WebProject({
         	sourceLocale: "en-US",
         	resourceDirs: {
-        		"yml": "config"
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
@@ -143,7 +143,7 @@ module.exports = {
         var p = new WebProject({
         	sourceLocale: "en-US",
         	resourceDirs: {
-        		"yml": "config"
+        		"yml": "config/locales"
         	},
         }, "./testfiles");
         
@@ -162,7 +162,7 @@ module.exports = {
         	id: "ht-webapp12",
         	sourceLocale: "de-DE",
         	resourceDirs: {
-        		"yml": "config"
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
@@ -183,7 +183,7 @@ module.exports = {
         	id: "ht-webapp12",
         	sourceLocale: "de-DE",
         	resourceDirs: {
-        		"yml": "config"
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
