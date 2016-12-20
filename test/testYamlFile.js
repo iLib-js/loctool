@@ -776,5 +776,235 @@ module.exports = {
         test.ok(r instanceof ContextResourceString);
         
         test.done();
+    },
+    
+    testYamlFileParseIgnoreNonStringValues: function(test) {
+    	test.expect(20);
+
+    	var p = new WebProject({
+    		id: "ht-iosapp",
+    		sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+    	}, "./testfiles");
+
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+
+    	yml.parse(
+			'---\n' +
+			'expert_license_expired:\n' +
+			'  subject: "ALERT: Your %1 license has expired"\n' +
+			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
+			'  ctoa: \'Update license info\'\n' +
+			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
+			'  global_link: doctor_settings_prime\n' +
+			'  sms_data: ""\n' +
+			'  setting_name: expert_license_updates\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  night_blackout: true\n'
+    	);
+
+    	var set = yml.getTranslationSet();
+    	test.ok(set);
+
+    	var r = set.getAll();
+    	test.ok(r);
+
+    	test.equal(r.length, 4);
+
+    	test.equal(r[0].getSource(), "ALERT: Your %1 license has expired");
+    	test.equal(r[0].getLocale(), "en-US");
+    	test.equal(r[0].getKey(), "subject");
+    	test.equal(r[0].getContext(), "expert_license_expired");
+
+    	test.equal(r[1].getSource(), "Add your updated license information to resume helping patients without further disruption.");
+    	test.equal(r[1].getLocale(), "en-US");
+    	test.equal(r[1].getKey(), "body");
+    	test.equal(r[1].getContext(), "expert_license_expired");
+
+    	test.equal(r[2].getSource(), 'Update license info');
+    	test.equal(r[2].getLocale(), "en-US");
+    	test.equal(r[2].getKey(), "ctoa");
+    	test.equal(r[2].getContext(), "expert_license_expired");
+
+    	test.equal(r[3].getSource(), "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption");
+    	test.equal(r[3].getLocale(), "en-US");
+    	test.equal(r[3].getKey(), "push_data");
+    	test.equal(r[3].getContext(), "expert_license_expired");
+
+    	test.done();
+    },
+
+    testYamlFileParseIgnoreStringLikeIdValues: function(test) {
+    	test.expect(4);
+
+    	var p = new WebProject({
+    		id: "ht-iosapp",
+    		sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+    	}, "./testfiles");
+
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+
+    	yml.parse(
+			'---\n' +
+			'expert_license_expired:\n' +
+			'  subject: "ALERT: Your %1 license has expired"\n' +
+			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
+			'  ctoa: \'Update license info\'\n' +
+			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
+			'  global_link: doctor_settings_prime\n' +
+			'  sms_data: ""\n' +
+			'  setting_name: expert_license_updates\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  night_blackout: true\n'
+    	);
+
+    	var set = yml.getTranslationSet();
+    	test.ok(set);
+
+    	var r = set.getBy({
+    		reskey: "global_link"
+    	});
+    	test.ok(r);
+    	test.equal(r.length, 0);
+
+    	test.done();
+    },
+
+    testYamlFileParseIgnoreBooleanValues: function(test) {
+    	test.expect(4);
+
+    	var p = new WebProject({
+    		id: "ht-iosapp",
+    		sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+    	}, "./testfiles");
+
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+
+    	yml.parse(
+			'---\n' +
+			'expert_license_expired:\n' +
+			'  subject: "ALERT: Your %1 license has expired"\n' +
+			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
+			'  ctoa: \'Update license info\'\n' +
+			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
+			'  global_link: doctor_settings_prime\n' +
+			'  sms_data: ""\n' +
+			'  setting_name: expert_license_updates\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  night_blackout: true\n'
+    	);
+
+    	var set = yml.getTranslationSet();
+    	test.ok(set);
+
+    	var r = set.getBy({
+    		reskey: "night_blackout"
+    	});
+    	test.ok(r);
+    	test.equal(r.length, 0);
+
+    	test.done();
+    },
+
+    testYamlFileParseIgnoreEmptyValues: function(test) {
+    	test.expect(4);
+
+    	var p = new WebProject({
+    		id: "ht-iosapp",
+    		sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+    	}, "./testfiles");
+
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+
+    	yml.parse(
+			'---\n' +
+			'expert_license_expired:\n' +
+			'  subject: "ALERT: Your %1 license has expired"\n' +
+			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
+			'  ctoa: \'Update license info\'\n' +
+			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
+			'  global_link: doctor_settings_prime\n' +
+			'  sms_data: ""\n' +
+			'  setting_name: expert_license_updates\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  night_blackout: true\n'
+    	);
+
+    	var set = yml.getTranslationSet();
+    	test.ok(set);
+
+    	var r = set.getBy({
+    		reskey: "sms_data"
+    	});
+    	test.ok(r);
+    	test.equal(r.length, 0);
+
+    	test.done();
+    },
+
+    testYamlFileParseIgnoreEmptyValues: function(test) {
+    	test.expect(4);
+
+    	var p = new WebProject({
+    		id: "ht-iosapp",
+    		sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+    	}, "./testfiles");
+
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+
+    	yml.parse(
+			'---\n' +
+			'expert_license_expired:\n' +
+			'  subject: "ALERT: Your %1 license has expired"\n' +
+			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
+			'  ctoa: \'Update license info\'\n' +
+			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
+			'  global_link: doctor_settings_prime\n' +
+			'  sms_data: ""\n' +
+			'  expert_campaign: 2\n' +
+			'  setting_name: expert_license_updates\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  night_blackout: true\n'
+    	);
+
+    	var set = yml.getTranslationSet();
+    	test.ok(set);
+
+    	var r = set.getBy({
+    		reskey: "expert_campaign"
+    	});
+    	test.ok(r);
+    	test.equal(r.length, 0);
+
+    	test.done();
     }
 };

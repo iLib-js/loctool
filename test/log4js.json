@@ -49,6 +49,8 @@
 		"loctool.lib.XliffFileType": "INFO",
 		"loctool.lib.YamlFile": "INFO",
 		"loctool.lib.YamlFileType": "INFO",
+		"loctool.lib.YamlResourceFile": "INFO",
+		"loctool.lib.YamlResourceFileType": "INFO",
 		"loctool.loctool":  "INFO"
 	}
 }
