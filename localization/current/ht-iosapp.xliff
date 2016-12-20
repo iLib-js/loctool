@@ -6397,7 +6397,7 @@ ilimitadas y otros beneficios</target>
       </trans-unit>
       <trans-unit id="%@ &#40;%ld yrs&#41;" resname="%@ &#40;%ld yrs&#41;" restype="string">
         <source>%1$@ &#40;%2$ld yrs&#41;</source>
-        <target>%1$@ &#40;%2$años de edad&#41;</target>
+        <target>%1$@ &#40;%2$ld años de edad&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ &#40;App&#41;" resname="%@ &#40;App&#41;" restype="string">
@@ -53968,7 +53968,7 @@ Doctors are online ready to help.</source>
   <file original="feelgood/ViewControllers/FGSideMenuViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="44" resname="%@ (%ld yrs)" restype="string" datatype="x-objective-c">
-        <source>%@ (%ld yrs)</source><target>%@ (% años de edad)</target>
+        <source>%@ (%ld yrs)</source><target>%@ (%ld años de edad)</target>
       </trans-unit>
     </body>
   </file>

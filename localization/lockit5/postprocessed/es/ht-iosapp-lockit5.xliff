@@ -80,7 +80,7 @@
   <file original="feelgood/ViewControllers/FGSideMenuViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="44" resname="%@ (%ld yrs)" restype="string" datatype="x-objective-c">
-        <source>%@ (%ld yrs)</source><target>%@ (% años de edad)</target>
+        <source>%@ (%ld yrs)</source><target>%@ (%ld años de edad)</target>
       </trans-unit>
     </body>
   </file>
