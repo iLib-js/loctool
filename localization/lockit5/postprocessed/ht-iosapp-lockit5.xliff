@@ -80,7 +80,7 @@
   <file original="feelgood/ViewControllers/FGSideMenuViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="44" resname="%@ (%ld yrs)" restype="string" datatype="x-objective-c">
-        <source>%@ (%ld yrs)</source><target>%@ (% años de edad)</target>
+        <source>%@ (%ld yrs)</source><target>%@ (%ld años de edad)</target>
       </trans-unit>
     </body>
   </file>
@@ -809,7 +809,7 @@
   <file original="feelgood/iPadNative/Checklist/FGIpadChecklistViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="8" resname="Find doctor-created checklists \n Try them out \n Feel Good :)" restype="string" datatype="x-objective-c">
-        <source>Find doctor-created checklists \n Try them out \n Feel Good :)</source><target>查找医生创建的清单\n尝试它们\ n Feel Good:)</target>
+        <source>Find doctor-created checklists \n Try them out \n Feel Good :)</source><target>查找医生创建的清单\n尝试它们\n Feel Good:)</target>
       </trans-unit>
     </body>
   </file>
@@ -840,7 +840,7 @@
   <file original="feelgood/ViewControllers/FGTalk2DocPickerViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="21" resname="When not to use Virtual Consults\n" restype="string" datatype="x-objective-c">
-        <source>When not to use Virtual Consults\n</source><target>什么时候不使用在线咨询\n</target>
+        <source>When not to use Virtual Consults\n</source><target>何时不应使用在线咨询\n</target>
       </trans-unit>
     </body>
   </file>
@@ -863,13 +863,14 @@
       <note>Title for live chat with a specific expert</note></trans-unit>
       <trans-unit id="27" resname="For medical emergencies, call %@ (or your local emergency services) or go to the nearest %@." restype="string" datatype="x-objective-c">
         <source>For medical emergencies, call %@ (or your local emergency services) or go to the nearest %@.</source><target>对于医疗紧急情况，请致电％@（或您当地的紧急服务）或前往最近的％@。
+
 </target>
       </trans-unit>
       <trans-unit id="28" resname="Not in %@? %@" restype="string" datatype="x-objective-c">
         <source>Not in %@? %@</source><target>不在“％@”中？%@</target>
       </trans-unit>
       <trans-unit id="29" resname="When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:" restype="string" datatype="x-objective-c">
-        <source>When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:</source><target>当不使用在线咨询 \n任何危机生命的医疗问题。例如，如果您遇到以下任何医疗问题，立即到 %@:</target>
+        <source>When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:</source><target>何时不应使用在线咨询\n任何危及生命的医疗问题。例如，如果您遇到以下任何医疗问题，立即前往%@：</target>
       </trans-unit>
       <trans-unit id="30" resname="Would you like to invite a translator to join this consult?\n(Additional %@)" restype="string" datatype="x-objective-c">
         <source>Would you like to invite a translator to join this consult?\n(Additional %@)</source><target>您希望邀请翻译加入这次咨询吗？\n(其他 %@)</target>
@@ -897,7 +898,7 @@
         <source>%@ and %@</source><target>%@ 和 %@</target>
       </trans-unit>
       <trans-unit id="58" resname="%@ %@your gratitude :)" restype="string" datatype="x-objective-c">
-        <source>%@ %@your gratitude :)</source><target>%@ %@您的感激:)</target>
+        <source>%@ %@your gratitude :)</source><target>%@ %@您的谢意:)</target>
       </trans-unit>
     </body>
   </file>
@@ -924,7 +925,7 @@
         <source>Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?</source><target>感谢％@，我们可以免费为您联系另一位医生。\n\n您希望进行其他咨询吗？</target>
       </trans-unit>
       <trans-unit id="74" resname="As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed." restype="string" datatype="x-objective-c">
-        <source>As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed.</source><target>作为高级订购者，我们可以免费将您连接到另一次咨询。\n\n是否要进行其他咨询？\n\n100％保证您满意。</target>
+        <source>As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed.</source><target>作为Premium订阅者，我们可以为您联系另一次免费咨询。\n\n是否要进行其他咨询？\n\n100％保证您满意。</target>
       </trans-unit>
     </body>
   </file>
@@ -944,7 +945,7 @@
   <file original="feelgood/HTSpecialistNeededUpsellView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="78" resname="Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!" restype="string" datatype="x-objective-c">
-        <source>Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!</source><target>您知道吗？感谢％@，您可以打折咨询超过100多个专业的贵宾台医生？\n\n为您的需求获得正确的医护 - 立刻咨询一位专家！</target>
+        <source>Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!</source><target>您是否知道因为%@您将可以在向贵宾台超过100多个专科的顶级医生进行咨询时获得折扣优惠？\n\n为您的需求获得正确的医护 - 立刻咨询一位专家！</target>
       </trans-unit>
     </body>
   </file>
@@ -965,7 +966,7 @@
   <file original="feelgood/HTSendQuestionCollectionReusableView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="84" resname="There are no immediate doctor insights for your question. Would you like to re-ask your question differently?\nChange question ›\n\nAlternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor." restype="string" datatype="x-objective-c">
-        <source>There are no immediate doctor insights for your question. Would you like to re-ask your question differently?\nChange question ›\n\nAlternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor.</source><target>您的问题没有立即医生的见解。您希望重新提问您的问题吗？\n更改问题&gt; \n\n或者，您可以给我们的％@顶级医生发送您的问题以获得一个或多个答案，或咨询一位医生。</target>
+        <source>There are no immediate doctor insights for your question. Would you like to re-ask your question differently?\nChange question ›\n\nAlternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor.</source><target>不存在和您的问题直接相关的医生见解。您是否希望以不同的方式重新提问？\n更改问题 ›\n\n或者，您可以发送问题以获得来自我们%@名顶级医生的一个或多个回答或咨询一名医生。 </target>
       </trans-unit>
     </body>
   </file>
@@ -993,10 +994,10 @@
   <file original="feelgood/HTQuestionAnsweredContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="88" resname="%@ agreed with %@'s answer." restype="string" datatype="x-objective-c">
-        <source>%@ agreed with %@'s answer.</source><target>%@ 已同意%@的答案。</target>
+        <source>%@ agreed with %@'s answer.</source><target>%@ 已同意%@的回答。</target>
       </trans-unit>
       <trans-unit id="89" resname="%@ commented on %@'s answer" restype="string" datatype="x-objective-c">
-        <source>%@ commented on %@'s answer</source><target>%@ 已评论%@的答案</target>
+        <source>%@ commented on %@'s answer</source><target>%@ 已评论%@的回答</target>
       </trans-unit>
     </body>
   </file>
@@ -1009,7 +1010,7 @@
         <source>Enter your question for the doctor,\nadd details about you and your\nhealth, and pay for a monthly\nsubscription</source><target>给医生输入您的问题，\n添加有关您和您的\n健康的详细信息，并支付一个月\n的订购</target>
       </trans-unit>
       <trans-unit id="92" resname="Talk live via video, voice,\nand/or text chat from your mobile\ndevice or desktop computer" restype="string" datatype="x-objective-c">
-        <source>Talk live via video, voice,\nand/or text chat from your mobile\ndevice or desktop computer</source><target>用您的移动设备或电脑通过视频，语音，\n和/或文字交流</target>
+        <source>Talk live via video, voice,\nand/or text chat from your mobile\ndevice or desktop computer</source><target>用您的移动设备或电脑通过视频，语音，\n和/或文本交流</target>
       </trans-unit>
       <trans-unit id="93" resname="Get advice and treatment\nimmediately with helpful reminders\nafter your consult to\ntake action and feel good" restype="string" datatype="x-objective-c">
         <source>Get advice and treatment\nimmediately with helpful reminders\nafter your consult to\ntake action and feel good</source><target>咨询结束后立即获得建议，治疗\n和有帮助的提醒\n，并采取行动和feel good</target>
@@ -1019,7 +1020,7 @@
   <file original="feelgood/HTPrimeAdSearchResultContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="94" resname="Get a personalized doctor answer\nnow via video or text chat" restype="string" datatype="x-objective-c">
-        <source>Get a personalized doctor answer\nnow via video or text chat</source><target>通过视频或文字聊天\n获得一次个性化的医生答案</target>
+        <source>Get a personalized doctor answer\nnow via video or text chat</source><target>通过视频或文本聊天\n获得一次个性化的医生回答</target>
       </trans-unit>
     </body>
   </file>
@@ -1109,7 +1110,7 @@
   <file original="feelgood/HTConsultToolTipPopUpView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="112" resname="Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:" restype="string" datatype="x-objective-c">
-        <source>Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:</source><target>发送您的问题，在一天内从我们涵盖137个专业的％@医生网络获得一个或多个有教育意义的文字答案。\n\n如果您想要可以与医生进行一次私人咨询：</target>
+        <source>Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:</source><target>发送您的问题，在一天之内收到来自我们由涵盖137个专科%@名医生组成的网络的一个或多个教育性文本回答。\n\n如果您想要可以与医生进行一次私人咨询：</target>
       </trans-unit>
     </body>
   </file>
@@ -1122,7 +1123,7 @@
         <source>Choose a doctor to ask your\nquestion, pay for your consult,\nthen send your message or\nschedule a video chat</source><target>选择医生提出您的\n问题，支付您的咨询，\n然后发送您的消息或\n安排一次视频聊天</target>
       </trans-unit>
       <trans-unit id="116" resname="Talk live via video,\nvoice, and/or text chat from your\nmobile device or desktop computer" restype="string" datatype="x-objective-c">
-        <source>Talk live via video,\nvoice, and/or text chat from your\nmobile device or desktop computer</source><target>用您的\n移动设备或电脑通过视频，\n语音和/或文字实时交流</target>
+        <source>Talk live via video,\nvoice, and/or text chat from your\nmobile device or desktop computer</source><target>用您的\n移动设备或电脑通过视频，\n语音和/或文本实时交流</target>
       </trans-unit>
       <trans-unit id="117" resname="Get advice and treatment\nimmediately with helpful reminders\nafter your consult to take\naction and feel good" restype="string" datatype="x-objective-c">
         <source>Get advice and treatment\nimmediately with helpful reminders\nafter your consult to take\naction and feel good</source><target>咨询结束后立即获得建议，治疗\n和有帮助的提醒\n，并采取行动和feel good</target>
@@ -1159,21 +1160,21 @@
   <file original="feelgood/HTChooseWhenConciergeDisabledAskDoctorsFlowViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="123" resname="by video, voice, or text chat\nwith a primary care doctor" restype="string" datatype="x-objective-c">
-        <source>by video, voice, or text chat\nwith a primary care doctor</source><target>通过视频，语音或文字\n与普通门诊医生进行交流</target>
+        <source>by video, voice, or text chat\nwith a primary care doctor</source><target>通过视频、语音或文本\n与普通门诊医生进行交流</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhenAskDoctorsFlowViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="124" resname="24/7 virtual consults are not yet\navailable in %@" restype="string" datatype="x-objective-c">
-        <source>24/7 virtual consults are not yet\navailable in %@</source><target>全天24小时的在线咨询%s现在还不可用%@</target>
+        <source>24/7 virtual consults are not yet\navailable in %@</source><target>24/7全天候在线咨询\n在%@中尚不可用</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhenAskDoctorsFlowView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="125" resname="by video, voice, or text chat\nwith an available primary care doctor" restype="string" datatype="x-objective-c">
-        <source>by video, voice, or text chat\nwith an available primary care doctor</source><target>通过视频，语音或文字与普通门诊医生进行交流\n</target>
+        <source>by video, voice, or text chat\nwith an available primary care doctor</source><target>通过视频、语音或文本\n与普通门诊医生进行交流</target>
       </trans-unit>
     </body>
   </file>
@@ -1183,7 +1184,7 @@
         <source>Share personal health information\nand get advice and treatment</source><target>分享个人健康信息并获得建议和治疗</target>
       </trans-unit>
       <trans-unit id="127" resname="Ask anonymously and get\ninformational answers" restype="string" datatype="x-objective-c">
-        <source>Ask anonymously and get\ninformational answers</source><target>匿名询问并获得\n有信息的答案</target>
+        <source>Ask anonymously and get\ninformational answers</source><target>匿名询问并获得\n内容丰富的回答</target>
       </trans-unit>
     </body>
   </file>
@@ -1193,13 +1194,13 @@
         <source>Ask doctors brief,\nanonymous health questions\nanytime for free</source><target>随时随地免费的向医生询问简短的，\n匿名的健康问题</target>
       </trans-unit>
       <trans-unit id="129" resname="Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer" restype="string" datatype="x-objective-c">
-        <source>Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer</source><target>为自己或他人询问一个简短的，匿名的问题，\n并为一个更个性化的答案\n添加一些健康细节</target>
+        <source>Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer</source><target>为自己或他人询问一个简短的，匿名的问题，\n并为一个更个性化的回答\n添加一些健康细节</target>
       </trans-unit>
       <trans-unit id="130" resname="If your question wasn't already\nanswered, we'll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" restype="string" datatype="x-objective-c">
-        <source>If your question wasn't already\nanswered, we'll send it to our\nnetwork of top U.S. doctors across\n130+ specialties</source><target>如果您的问题尚未\n得到解答，我们会将其发送到我们的\n130多个专业的顶级医生网络</target>
+        <source>If your question wasn't already\nanswered, we'll send it to our\nnetwork of top U.S. doctors across\n130+ specialties</source><target>如果您的问题未\n获得解答，我们将会把问题发送至\n我们由涵盖超过\n130个专科的优秀美国医生组成的网络</target>
       </trans-unit>
       <trans-unit id="131" resname="One or more doctors\nwill respond with short,\neducational answers" restype="string" datatype="x-objective-c">
-        <source>One or more doctors\nwill respond with short,\neducational answers</source><target>一个或多个医生\n将会回复简单的，\n有教育意义的答案</target>
+        <source>One or more doctors\nwill respond with short,\neducational answers</source><target>一名或多名医生\n将回复简短的\n教育性回答</target>
       </trans-unit>
     </body>
   </file>
@@ -1232,7 +1233,7 @@
   <file original="feelgood/HTBaseSelectDoctorViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="137" resname="Search by name, specialty, or topic" restype="string" datatype="x-objective-c">
-        <source>Search by name, specialty, or topic</source><target>按名称，专业，主题查找</target>
+        <source>Search by name, specialty, or topic</source><target>按姓名、专科或话题查找</target>
       </trans-unit>
     </body>
   </file>
@@ -1310,17 +1311,17 @@
   <file original="feelgood/Data/FGFeedAnswerCommented.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="184" resname="%@ commented on  \r\n%@'s answer" restype="string" datatype="x-objective-c">
-        <source>%@ commented on  \r\n%@'s answer</source><target>%@ 已评论  \r\n%@的答案</target>
+        <source>%@ commented on  \r\n%@'s answer</source><target>%@ 已评论  \r\n%@的回答</target>
       </trans-unit>
       <trans-unit id="185" resname="%@ commented on \r\n%@'s answer:" restype="string" datatype="x-objective-c">
-        <source>%@ commented on \r\n%@'s answer:</source><target>%@ 已评论  \r\n%@的答案：</target>
+        <source>%@ commented on \r\n%@'s answer:</source><target>%@ 已评论  \r\n%@的回答：</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGFeedAnswerAgreed.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="186" resname="%@ agrees with %@'s answer:" restype="string" datatype="x-objective-c">
-        <source>%@ agrees with %@'s answer:</source><target>%@ 同意%@的答案：</target>
+        <source>%@ agrees with %@'s answer:</source><target>%@ 同意%@的回答：</target>
       </trans-unit>
     </body>
   </file>
@@ -1375,7 +1376,7 @@
         <source>This keycode is not accurate\nPlease try again</source><target>这个验证码不正确\n请重新尝试</target>
       </trans-unit>
       <trans-unit id="230" resname="to verify you as a patient, please enter %@%@'s Concierge Keycode" restype="string" datatype="x-objective-c">
-        <source>to verify you as a patient, please enter %@%@'s Concierge Keycode</source><target>为了验证您是患者，请输入%@%@的贵宾台验证码</target>
+        <source>to verify you as a patient, please enter %@%@'s Concierge Keycode</source><target>要验证您是患者，请输入%@%@的贵宾台密钥</target>
         
       <note>Para1: title, Para2: last name</note></trans-unit>
       <trans-unit id="231" resname="Enter %@%@'s Keycode" restype="string" datatype="x-objective-c">
@@ -1401,7 +1402,7 @@
   <file original="feelgood/Classes/FGSignUpViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="235" resname="Create a {start} free, private {end} account or login" restype="string" datatype="x-objective-c">
-        <source>Create a {start} free, private {end} account or login</source><target>创建一个{start}免费的，私人的{end}账号或登录</target>
+        <source>Create a {start} free, private {end} account or login</source><target>创建{start}免费的私人{end}账号或登录</target>
       </trans-unit>
       <trans-unit id="236" resname="{start}" restype="string" datatype="x-objective-c">
         <source>{start}</source><target>{start}</target>
@@ -1494,7 +1495,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGSearchDoctorsViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="291" resname="cRI-Pk-V17.text" restype="string" datatype="x-xib">
-        <source>Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic.</source><target>对不起，我们没有找到医生。\n检查拼写或输入一个其他名字，专业或话题。</target>
+        <source>Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic.</source><target>对不起，我们没有找到医生。\n确认拼写是否正确，或者输入另一个姓名、专科或话题</target>
         
       <note>Class = "UILabel"; text = "Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic."; ObjectID = "cRI-Pk-V17";</note></trans-unit>
     </body>
@@ -1570,7 +1571,7 @@
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGInviteExternalDoctorViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="352" resname="c8b-7E-xsB.placeholder" restype="string" datatype="x-xib">
-        <source>Your doctor\'s name</source><target>您医生的名字</target>
+        <source>Your doctor\'s name</source><target>您医生的姓名</target>
         
       <note>Class = "UITextField"; placeholder = "Your doctor's name"; ObjectID = "c8b-7E-xsB";</note></trans-unit>
     </body>
@@ -1578,11 +1579,11 @@
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGChooseMessageConsultPreferenceViewController~iphone.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="361" resname="fYC-ZL-Tx6.text" restype="string" datatype="x-xib">
-        <source>Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more</source><target>发送\n您需要的尽可能多的信息，或得到的意见，\n处方，实验室测试\n以及更多</target>
+        <source>Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more</source><target>发送所需数量的\信息或获取建议、\n处方、实验室检验\n及更多内容</target>
         
       <note>Class = "UILabel"; text = "Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more"; ObjectID = "fYC-ZL-Tx6";</note></trans-unit>
       <trans-unit id="362" resname="wlf-6g-3lf.text" restype="string" datatype="x-xib">
-        <source>One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more</source><target>为意见，处方，实验室测试以及更多，与医生进行\n一次咨询</target>
+        <source>One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more</source><target>进行一次医生咨询\n即可获得建议、\n处方、实验室检验\n及更多服务</target>
         
       <note>Class = "UILabel"; text = "One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more"; ObjectID = "wlf-6g-3lf";</note></trans-unit>
     </body>
@@ -1590,11 +1591,11 @@
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGChooseMessageConsultPreferenceViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="363" resname="AAc-ZT-Xxm.text" restype="string" datatype="x-xib">
-        <source>Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more</source><target>发送您\n需要的尽可能多的信息，或得到的意见，处方，\n实验室测试以及更多</target>
+        <source>Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more</source><target>发送所需数量的\信息或获取建议、\n处方、实验室检验\n及更多内容</target>
         
       <note>Class = "UILabel"; text = "Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more"; ObjectID = "AAc-ZT-Xxm";</note></trans-unit>
       <trans-unit id="364" resname="zEL-22-bH6.text" restype="string" datatype="x-xib">
-        <source>One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more</source><target>为意见，处方，实验室测试以及更多，与医生进行\n一次咨询</target>
+        <source>One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more</source><target>进行一次医生咨询\n即可获得建议、处方、实验室\n检验及更多服务</target>
         
       <note>Class = "UILabel"; text = "One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more"; ObjectID = "zEL-22-bH6";</note></trans-unit>
     </body>
