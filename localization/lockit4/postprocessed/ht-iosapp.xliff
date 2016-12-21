@@ -20,7 +20,7 @@
     <body>
       <trans-unit id="3" resname="Search feed                           " restype="string" datatype="x-objective-c">
         <source>Search feed</source>
-        <target>Buscar fuentes</target>
+        <target>Buscar en feed</target>
       </trans-unit>
     </body>
   </file>
@@ -84,7 +84,7 @@
       </trans-unit>
       <trans-unit id="14" resname="Recommend and vote on " restype="string" datatype="x-objective-c">
         <source>Recommend and vote on</source>
-        <target>Recomienda y vota en</target>
+        <target>Recomienda y vota por</target>
       </trans-unit>
       <trans-unit id="15" resname=" expertise" restype="string" datatype="x-objective-c">
         <source>expertise</source>
@@ -104,11 +104,11 @@
     <body>
       <trans-unit id="17" resname="Subscription start date: July 22, 2015" restype="string" datatype="x-objective-c">
         <source>Subscription start date: July 22, 2015</source>
-        <target>Fecha de inicio de suscripción: Julio 22, 2015</target>
+        <target>Fecha de inicio de suscripción: 22 de julio de 2015</target>
       </trans-unit>
       <trans-unit id="18" resname="Your message subscription allows you to send as many messages as you need and get doctor advice, prescriptions, lab tests, and more" restype="string" datatype="x-objective-c">
         <source>Your message subscription allows you to send as many messages as you need and get doctor advice, prescriptions, lab tests, and more</source>
-        <target>Tu suscripción de mensaje te permite enviar tantos mensajes como necesites, y obtener asesoría, recetas, exámenes de laboratorio, y más</target>
+        <target>Tu suscripción de mensajes te permite enviar tantos mensajes como necesites, y obtener asesoría, recetas, exámenes de laboratorio, y más</target>
       </trans-unit>
       <trans-unit id="19" resname="Are you sure you want to end your subscription?" restype="string" datatype="x-objective-c">
         <source>Are you sure you want to end your subscription?</source>
@@ -196,11 +196,11 @@
       </trans-unit>
       <trans-unit id="36" resname="HealthTap&apos;s doctors are all U.S. board certified, pass a stringent qualification pocess, and undergo training on how to give helpful advice using our technology platform." restype="string" datatype="x-objective-c">
         <source>HealthTap&apos;s doctors are all U.S. board certified, pass a stringent qualification pocess, and undergo training on how to give helpful advice using our technology platform.</source>
-        <target>Los doctores de HealthTap están todos acreditados por consejo en los EE.UU, pasan un estricto proceso de calificacitación, y reciben entrenamiento sobre como dar consejo útil usando nuestra plataforma tecnológica.</target>
+        <target>Los doctores de HealthTap están todos acreditados por consejo en los EE.UU., pasan un estricto proceso de cualificación, y reciben entrenamiento sobre cómo dar consejo útil usando nuestra plataforma tecnológica.</target>
       </trans-unit>
       <trans-unit id="37" resname="HealthTap has received critically acclaimed coverage from leading media channels - both in the U.S. and internationally." restype="string" datatype="x-objective-c">
         <source>HealthTap has received critically acclaimed coverage from leading media channels - both in the U.S. and internationally.</source>
-        <target>HealthTap ha sido aclamado por la crítica de canales mediáticos - tanto en los EE.UU. como en el extrajero.</target>
+        <target>HealthTap ha sido aclamado por la crítica de canales mediáticos - tanto en los EE.UU. como en el extranjero.</target>
       </trans-unit>
       <trans-unit id="38" resname="With over 2 billion answers served from more than 100 specialties, our experts are able to provide the best medical advice for your question." restype="string" datatype="x-objective-c">
         <source>With over 2 billion answers served from more than 100 specialties, our experts are able to provide the best medical advice for your question.</source>
@@ -212,7 +212,7 @@
       </trans-unit>
       <trans-unit id="40" resname="HealthTap&apos;s doctors are all U.S. board certified, pass a stringent" restype="string" datatype="x-objective-c">
         <source>HealthTap&apos;s doctors are all U.S. board certified, pass a stringent</source>
-        <target>Los doctores de HealthTap están todos acreditados por consejo en los EE.UU, pasan un estricto</target>
+        <target>Los doctores de HealthTap están todos acreditados por consejo en los EE.UU., pasan un estricto</target>
       </trans-unit>
       <trans-unit id="41" resname="HealthTap has received critically acclaimed coverage from" restype="string" datatype="x-objective-c">
         <source>HealthTap has received critically acclaimed coverage from</source>
@@ -338,7 +338,7 @@
       </trans-unit>
       <trans-unit id="65" resname="Typically messages are responded to within 24 hours." restype="string" datatype="x-objective-c">
         <source>Typically messages are responded to within 24 hours.</source>
-        <target>Típicamente mensajes son contestados dentro de 24 horas.</target>
+        <target>Típicamente los mensajes son contestados dentro de 24 horas.</target>
       </trans-unit>
     </body>
   </file>
@@ -350,7 +350,7 @@
       </trans-unit>
       <trans-unit id="67" resname="Approx. %@" restype="string" datatype="x-objective-c">
         <source>Approx. %@</source>
-        <target>Approx. %@</target>
+        <target>Aprox. %@</target>
       </trans-unit>
       <trans-unit id="68" resname="Add others for only $10 USD / month" restype="string" datatype="x-objective-c">
         <source>Add others for only $10 USD / month</source>
@@ -430,7 +430,7 @@
       </trans-unit>
       <trans-unit id="85" resname="/consult" restype="string" datatype="x-objective-c">
         <source>/consult</source>
-        <target>/consult</target>
+        <target>/consulta</target>
       </trans-unit>
       <trans-unit id="86" resname="/month" restype="string" datatype="x-objective-c">
         <source>/month</source>
@@ -510,7 +510,7 @@
       </trans-unit>
       <trans-unit id="104" resname="Pay as you go plan" restype="string" datatype="x-objective-c">
         <source>Pay as you go plan</source>
-        <target>Plan pagar a medida que avanzas</target>
+        <target>Plan de paga a medida que avanzas</target>
       </trans-unit>
       <trans-unit id="105" resname="$%d USD / month" restype="string" datatype="x-objective-c">
         <source>$%d USD / month</source>
@@ -677,7 +677,7 @@
         <target>Razones comunes para usar Consultar Virtuales\n\
     \u00B7 Dolor Abdominal\n\
     \u00B7 Bronquitis Aguda\n\
-    \u00B7 Conjunctivitis Aguda\n\
+    \u00B7 Conjuntivitis Aguda\n\
     \u00B7 Cistitis Aguda\n\
     \u00B7 Faringitis Aguda\n\
     \u00B7 Sinusitis Aguda\n\
@@ -691,7 +691,7 @@
     \u00B7 Resfriado\n\
     \u00B7 Tos\n\
     \u00B7 Depresión\n\
-    \u00B7 Diarrhea\n\
+    \u00B7 Diarrea\n\
     \u00B7 Cuero Cabelludo Seco\n\
     \u00B7 Piel Seca &#40;Eczema&#41;\n\
     \u00B7 Irritación Ocular\n\
@@ -703,11 +703,11 @@
     \u00B7 Influenza\n\
     \u00B7 Interpretación de Pruebas de Laboratorio\n\
     \u00B7 Piojos\n\
-    \u00B7 Congestion Nasal\n\
+    \u00B7 Congestión Nasal\n\
     \u00B7 Nausea\n\
     \u00B7 Hemorragia Nasal\n\
     \u00B7 Micción Dolorosa\n\
-    \u00B7 Conjunctivitis\n\
+    \u00B7 Conjuntivitis\n\
     \u00B7 Roble Venenoso / Hiedra Venenosa\n\
     \u00B7 Sarpullido\n\
     \u00B7 Infección Respiratoria\n\
@@ -774,7 +774,7 @@
         <target>Razones comunes para usar Consultar Virtuales\n\
     \u00B7 Dolor Abdominal\n\
     \u00B7 Bronquitis Aguda\n\
-    \u00B7 Conjunctivitis Aguda\n\
+    \u00B7 Conjuntivitis Aguda\n\
     \u00B7 Cistitis Aguda\n\
     Cuándo no usar Consultas Virtuales\n\n\
     Siempre llama al %@ o a tu servicio de emergencia local inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, dirígete inmediatamente a un %@:\n\n\
@@ -804,7 +804,7 @@
       </trans-unit>
       <trans-unit id="130" resname=" for %@" restype="string" datatype="x-objective-c">
         <source>for %@</source>
-        <target>de %@</target>
+        <target>para %@</target>
       </trans-unit>
       <trans-unit id="131" resname=" %@&apos;s " restype="string" datatype="x-objective-c">
         <source>%@&apos;s</source>
@@ -864,11 +864,11 @@
       </trans-unit>
       <trans-unit id="143" resname="Personalized, timely" restype="string" datatype="x-objective-c">
         <source>Personalized, timely</source>
-        <target>Consejo y recordatorios</target>
+        <target>Personalizados y oportunos</target>
       </trans-unit>
       <trans-unit id="144" resname=" advice &amp; reminders" restype="string" datatype="x-objective-c">
         <source>advice &amp; reminders</source>
-        <target>personalizados y oportunos</target>
+        <target>recordatorios y consejo</target>
       </trans-unit>
       <trans-unit id="145" resname="Only US $ " restype="string" datatype="x-objective-c">
         <source>Only US $</source>
@@ -960,7 +960,7 @@
       </trans-unit>
       <trans-unit id="166" resname="Would you like to attach a photo, video, or document?" restype="string" datatype="x-objective-c">
         <source>Would you like to attach a photo, video, or document?</source>
-        <target>¿Te gustaría adjuntar una foto,  video o documento?</target>
+        <target>¿Te gustaría adjuntar una foto, video o documento?</target>
       </trans-unit>
     </body>
   </file>
@@ -1016,7 +1016,7 @@
       </trans-unit>
       <trans-unit id="179" resname="Pre-mature Births" restype="string" datatype="x-objective-c">
         <source>Pre-mature Births</source>
-        <target>Parto Prematuros</target>
+        <target>Partos Prematuros</target>
       </trans-unit>
       <trans-unit id="180" resname="Induced Abortions" restype="string" datatype="x-objective-c">
         <source>Induced Abortions</source>
@@ -1076,7 +1076,7 @@
       </trans-unit>
       <trans-unit id="194" resname="Ethnicity" restype="string" datatype="x-objective-c">
         <source>Ethnicity</source>
-        <target>Étnias</target>
+        <target>Etnias</target>
       </trans-unit>
       <trans-unit id="195" resname="%dlbs &#40;%.01fkg&#41;" restype="string" datatype="x-objective-c">
         <source>%dlbs &#40;%.01fkg&#41;</source>
@@ -1269,7 +1269,7 @@
     <body>
       <trans-unit id="229" resname=" Follow three or more topics of interest" restype="string" datatype="x-objective-c">
         <source>Follow three or more topics of interest</source>
-        <target>Sigue tres temas o más de interés</target>
+        <target>Sigue tres o más temas de interés</target>
       </trans-unit>
       <trans-unit id="230" resname="Find a topic &#40;e.g. Lose weight&#41;" restype="string" datatype="x-objective-c">
         <source>Find a topic &#40;e.g. Lose weight&#41;</source>
@@ -1281,7 +1281,7 @@
     <body>
       <trans-unit id="231" resname="DD / MM / YEAR" restype="string" datatype="x-objective-c">
         <source>DD / MM / YEAR</source>
-        <target>DD / MM / YEAR</target>
+        <target>DD / MM / AAAA</target>
       </trans-unit>
       <trans-unit id="232" resname="MM / DD / YEAR" restype="string" datatype="x-objective-c">
         <source>MM / DD / YEAR</source>
@@ -1301,7 +1301,7 @@
       </trans-unit>
       <trans-unit id="235" resname=" found it helpful" restype="string" datatype="x-objective-c">
         <source>found it helpful</source>
-        <target>hallaron esto útil</target>
+        <target>encontraron esto útil</target>
       </trans-unit>
       <trans-unit id="236" resname="%@, %@ and " restype="string" datatype="x-objective-c">
         <source>%@, %@ and</source>
@@ -1321,7 +1321,7 @@
     <body>
       <trans-unit id="239" resname="Get tailored doctor answers, tips, and news for you!" restype="string" datatype="x-objective-c">
         <source>Get tailored doctor answers, tips, and news for you!</source>
-        <target>!Obtén respuestas tips y noticias de doctor ajustadas a tí!</target>
+        <target>¡Obtén respuestas, tips y noticias de doctor ajustadas a ti!</target>
       </trans-unit>
       <trans-unit id="240" resname="Maybe Later" restype="string" datatype="x-objective-c">
         <source>Maybe Later</source>
@@ -1333,7 +1333,7 @@
     <body>
       <trans-unit id="241" resname="  Thanked" restype="string" datatype="x-objective-c">
         <source>Thanked</source>
-        <target>Agradecido</target>
+        <target>Agradeció</target>
       </trans-unit>
     </body>
   </file>
@@ -1366,7 +1366,7 @@
       </trans-unit>
       <trans-unit id="247" resname="Your account is deactivated. To re-activate, send a request to " restype="string" datatype="x-objective-c">
         <source>Your account is deactivated. To re-activate, send a request to</source>
-        <target>Tu cuenta está desactivada Para reactivar, senvía solicitud a</target>
+        <target>Tu cuenta está desactivada Para reactivar, envía una solicitud a</target>
       </trans-unit>
       <trans-unit id="248" resname="Good " restype="string" datatype="x-objective-c">
         <source>Good</source>
@@ -1402,7 +1402,7 @@
       </trans-unit>
       <trans-unit id="256" resname="Please download the &apos;HealthTap for Doctors&apos; app to login or signup as a doctor with a valid US medical license" restype="string" datatype="x-objective-c">
         <source>Please download the &apos;HealthTap for Doctors&apos; app to login or signup as a doctor with a valid US medical license</source>
-        <target>Por favor descarga la aplicación &quot;HealthTap para Doctores&quot; para ingresar o registarte como un doctor con una licencia de médico de los EE.UU.  Por si las dudas</target>
+        <target>Por favor descarga la aplicación &quot;HealthTap para Doctores&quot; para ingresar o registrarte como un doctor con una licencia de médico de los EE.UU.  Por si las dudas</target>
       </trans-unit>
     </body>
   </file>
@@ -1430,11 +1430,11 @@
       </trans-unit>
       <trans-unit id="262" resname="There seems to be a problem with the patient&apos;s connection. Please try chatting while we try to re-connect..." restype="string" datatype="x-objective-c">
         <source>There seems to be a problem with the patient&apos;s connection. Please try chatting while we try to re-connect...</source>
-        <target>Parace que hay un problema con la conexión del paciente. Por favor intenta usar el chat mientras tratamos de reconectar...</target>
+        <target>Parece que hay un problema con la conexión del paciente. Por favor intenta usar el chat mientras tratamos de reconectar...</target>
       </trans-unit>
       <trans-unit id="263" resname="There seems to be a problem with the doctor&apos;s connection. Please try chatting while we try to re-connect..." restype="string" datatype="x-objective-c">
         <source>There seems to be a problem with the doctor&apos;s connection. Please try chatting while we try to re-connect...</source>
-        <target>Parace que hay un problema con la conexión del doctor. Por favor intenta usar el chat mientras tratamos de reconectar...</target>
+        <target>Parece que hay un problema con la conexión del doctor. Por favor intenta usar el chat mientras tratamos de reconectar...</target>
       </trans-unit>
       <trans-unit id="264" resname="Video unavailable..." restype="string" datatype="x-objective-c">
         <source>Video unavailable...</source>
@@ -1638,7 +1638,7 @@
     <body>
       <trans-unit id="305" resname="Find a topic &#40;e.g.: Lose weight&#41;   " restype="string" datatype="x-objective-c">
         <source>Find a topic &#40;e.g.: Lose weight&#41;</source>
-        <target>Encuenta un tema &#40;e.g.: Perder peso&#41;</target>
+        <target>Encuentra un tema &#40;e.g.: Perder peso&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -1674,7 +1674,7 @@
       </trans-unit>
       <trans-unit id="312" resname="There seems to be a problem with the doctor&apos;s connection. One moment while we try to reconnect you" restype="string" datatype="x-objective-c">
         <source>There seems to be a problem with the doctor&apos;s connection. One moment while we try to reconnect you</source>
-        <target>Parace que hay un problema con la conexión del doctor. Un momento mientras tratamos de volver a conectarte</target>
+        <target>Parece que hay un problema con la conexión del doctor. Un momento mientras tratamos de volver a conectarte</target>
       </trans-unit>
       <trans-unit id="313" resname="%@ is typing" restype="string" datatype="x-objective-c">
         <source>%@ is typing</source>
@@ -1894,7 +1894,7 @@
       </trans-unit>
       <trans-unit id="350" resname="Please provide your mobile phone number" restype="string" datatype="x-objective-c">
         <source>Please provide your mobile phone number</source>
-        <target>Por favor porporciona tu número de teléfono móvil</target>
+        <target>Por favor proporciona tu número de teléfono móvil</target>
       </trans-unit>
       <trans-unit id="351" resname="Please provide your date of birth" restype="string" datatype="x-objective-c">
         <source>Please provide your date of birth</source>
@@ -1982,7 +1982,7 @@
     <body>
       <trans-unit id="367" resname="Share a detailed description of your symptoms, concerns, and how you&apos;d like the doctor to help you. Attach images as necessary." restype="string" datatype="x-objective-c">
         <source>Share a detailed description of your symptoms, concerns, and how you&apos;d like the doctor to help you. Attach images as necessary.</source>
-        <target>Comparte una descripción detallada acerca de tus síntomas, preocupaciones, y cómo te gustaría que el doctor te ayudara. Adjunta imagenes según sea necesario.</target>
+        <target>Comparte una descripción detallada acerca de tus síntomas, preocupaciones, y cómo te gustaría que el doctor te ayudara. Adjunta imágenes según sea necesario.</target>
       </trans-unit>
     </body>
   </file>
@@ -2010,7 +2010,7 @@
       </trans-unit>
       <trans-unit id="373" resname="Invited" restype="string" datatype="x-objective-c">
         <source>Invited</source>
-        <target>Invitato</target>
+        <target>Invitado</target>
       </trans-unit>
     </body>
   </file>
@@ -2038,7 +2038,7 @@
       </trans-unit>
       <trans-unit id="379" resname="1-2 days" restype="string" datatype="x-objective-c">
         <source>1-2 days</source>
-        <target>1-2 dáis</target>
+        <target>1-2 días</target>
       </trans-unit>
       <trans-unit id="380" resname="24/7" restype="string" datatype="x-objective-c">
         <source>24/7</source>
@@ -2062,7 +2062,7 @@
       </trans-unit>
       <trans-unit id="385" resname="Any of our top 70,000+ doctors" restype="string" datatype="x-objective-c">
         <source>Any of our top 70,000+ doctors</source>
-        <target>Cualesqueira de nuestros mejores 70,000+ doctors</target>
+        <target>Cualesquiera de nuestros mejores 70,000+ doctores</target>
       </trans-unit>
       <trans-unit id="386" resname="Privately share full health profile" restype="string" datatype="x-objective-c">
         <source>Privately share full health profile</source>
@@ -2082,7 +2082,7 @@
       </trans-unit>
       <trans-unit id="390" resname="Advice, diagnosis, treatment, referrals" restype="string" datatype="x-objective-c">
         <source>Advice, diagnosis, treatment, referrals</source>
-        <target>Consejo, diagnóstico, tratatamiento, referencias</target>
+        <target>Consejo, diagnóstico, tratamiento, referencias</target>
       </trans-unit>
       <trans-unit id="391" resname="Order lab tests and receive results" restype="string" datatype="x-objective-c">
         <source>Order lab tests and receive results</source>
@@ -2250,7 +2250,7 @@
       </trans-unit>
       <trans-unit id="421" resname="Which U.S. state are you in?" restype="string" datatype="x-objective-c">
         <source>Which U.S. state are you in?</source>
-        <target>¿En que estado de los EE.UU. estás?</target>
+        <target>¿En qué estado de los EE.UU. estás?</target>
       </trans-unit>
     </body>
   </file>
@@ -2318,7 +2318,7 @@
       </trans-unit>
       <trans-unit id="433" resname="How would you like to ask doctors?" restype="string" datatype="x-objective-c">
         <source>How would you like to ask doctors?</source>
-        <target>¿Cómo te gustaría preguntarle a doctores?</target>
+        <target>¿Cómo te gustaría preguntarles a los doctores?</target>
       </trans-unit>
       <trans-unit id="434" resname="Get help now and 24/7" restype="string" datatype="x-objective-c">
         <source>Get help now and 24/7</source>
@@ -2346,7 +2346,7 @@
       </trans-unit>
       <trans-unit id="440" resname="Set location" restype="string" datatype="x-objective-c">
         <source>Set location</source>
-        <target>Configuar ubicación</target>
+        <target>Configurar ubicación</target>
       </trans-unit>
     </body>
   </file>
@@ -2563,7 +2563,7 @@
     <body>
       <trans-unit id="480" resname="Answers, Tips, News and more" restype="string" datatype="x-objective-c">
         <source>Answers, Tips, News and more</source>
-        <target>Respuestas, Consejos, Noticias y más</target>
+        <target>Respuestas, Tips, Noticias y más</target>
       </trans-unit>
     </body>
   </file>
@@ -2620,7 +2620,7 @@
       </trans-unit>
       <trans-unit id="491" resname="Ask Dr. ${last_name} now ›" restype="string" datatype="x-objective-c">
         <source>Ask Dr. ${last_name} now ›</source>
-        <target>Pregúntale a Dr. ${last_name} ahora ›</target>
+        <target>Pregúntale al Dr. ${last_name} ahora ›</target>
       </trans-unit>
       <trans-unit id="492" resname="36" restype="string" datatype="x-objective-c">
         <source>36</source>
@@ -2628,7 +2628,7 @@
       </trans-unit>
       <trans-unit id="493" resname="Speak with Dr. ${last_name} now ›" restype="string" datatype="x-objective-c">
         <source>Speak with Dr. ${last_name} now ›</source>
-        <target>Habla con Dr. ${last_name} ahora ›</target>
+        <target>Habla con el Dr. ${last_name} ahora ›</target>
       </trans-unit>
       <trans-unit id="494" resname="47" restype="string" datatype="x-objective-c">
         <source>47</source>
@@ -2648,7 +2648,7 @@
     <body>
       <trans-unit id="497" resname="Where would you prefer to collect " restype="string" datatype="x-objective-c">
         <source>Where would you prefer to collect</source>
-        <target>Dónde prefieres recoger</target>
+        <target>¿Dónde preferirías recoger</target>
       </trans-unit>
       <trans-unit id="498" resname="\nCall: " restype="string" datatype="x-objective-c">
         <source>\nCall:</source>
@@ -2776,7 +2776,7 @@
     <body>
       <trans-unit id="524" resname="Checklist: " restype="string" datatype="x-objective-c">
         <source>Checklist:</source>
-        <target>Listados:</target>
+        <target>Listado:</target>
       </trans-unit>
     </body>
   </file>
@@ -2816,7 +2816,7 @@
     <body>
       <trans-unit id="532" resname="Recommend this doctor" restype="string" datatype="x-objective-c">
         <source>Recommend this doctor</source>
-        <target>Recomendó a este doctor</target>
+        <target>Recomienda a este doctor</target>
       </trans-unit>
     </body>
   </file>
@@ -2824,7 +2824,7 @@
     <body>
       <trans-unit id="533" resname="checklist on " restype="string" datatype="x-objective-c">
         <source>checklist on</source>
-        <target>listado en</target>
+        <target>listado acerca de</target>
         <note annotates="source">Checklist title e.g: Dr. XYZ&apos;s checklist on Fixing pain</note>
       </trans-unit>
       <trans-unit id="534" resname="checklist from your " restype="string" datatype="x-objective-c">
@@ -2834,7 +2834,7 @@
       </trans-unit>
       <trans-unit id="535" resname="Private Consult " restype="string" datatype="x-objective-c">
         <source>Private Consult</source>
-        <target>Consulta privada</target>
+        <target>Consulta Privada</target>
         <note annotates="source">Checklist title e.g: Dr. XYZ&apos;s checklist from your private consult on Oct 4. 2014</note>
       </trans-unit>
       <trans-unit id="536" resname="\nYou completed this! " restype="string" datatype="x-objective-c">
@@ -2873,7 +2873,7 @@
       </trans-unit>
       <trans-unit id="541" resname=" added this checklist" restype="string" datatype="x-objective-c">
         <source>added this checklist</source>
-        <target>añadido a este listado</target>
+        <target>añadió este listado</target>
       </trans-unit>
       <trans-unit id="542" resname=" created" restype="string" datatype="x-objective-c">
         <source>created</source>
@@ -2885,11 +2885,11 @@
       </trans-unit>
       <trans-unit id="544" resname=" agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
-        <target>de acuerdo</target>
+        <target>están de acuerdo</target>
       </trans-unit>
       <trans-unit id="545" resname=" agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
-        <target>de acuerdos</target>
+        <target>está de acuerdo</target>
       </trans-unit>
     </body>
   </file>
@@ -2897,7 +2897,7 @@
     <body>
       <trans-unit id="546" resname="You completed this! " restype="string" datatype="x-objective-c">
         <source>You completed this!</source>
-        <target>¡Tú Completaste esto!</target>
+        <target>¡Tú completaste esto!</target>
         <note annotates="source">Footer for completed checklist section</note>
       </trans-unit>
     </body>
@@ -2910,7 +2910,7 @@
       </trans-unit>
       <trans-unit id="548" resname="Objective &#40;Data&#41;:" restype="string" datatype="x-objective-c">
         <source>Objective &#40;Data&#41;:</source>
-        <target>Objectivo &#40;Datos&#41;:</target>
+        <target>Objetivo &#40;Datos&#41;:</target>
       </trans-unit>
       <trans-unit id="549" resname="Invite a supporter" restype="string" datatype="x-objective-c">
         <source>Invite a supporter</source>
@@ -2934,7 +2934,7 @@
     <body>
       <trans-unit id="552" resname="%@ uploaded %@" restype="string" datatype="x-objective-c">
         <source>%@ uploaded %@</source>
-        <target>%@ Subió %@</target>
+        <target>%@ subió %@</target>
       </trans-unit>
     </body>
   </file>
@@ -2946,7 +2946,7 @@
       </trans-unit>
       <trans-unit id="554" resname=" + %d doctors weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %d doctors weighed in:</source>
-        <target>+ %d doctores opinaron acerda de:</target>
+        <target>+ %d doctores opinaron acerca de:</target>
       </trans-unit>
       <trans-unit id="555" resname=" answered:" restype="string" datatype="x-objective-c">
         <source>answered:</source>
@@ -2967,7 +2967,7 @@
       </trans-unit>
       <trans-unit id="557" resname="You asked for %@ " restype="string" datatype="x-objective-c">
         <source>You asked for %@</source>
-        <target>Pediste por %@</target>
+        <target>Pediste %@</target>
         <note annotates="source">lablel below a question that user asked for a subaccount</note>
       </trans-unit>
     </body>
@@ -3006,7 +3006,7 @@
     <body>
       <trans-unit id="564" resname=" doctors recommend" restype="string" datatype="x-objective-c">
         <source>doctors recommend</source>
-        <target>recomendado por doctores</target>
+        <target>doctores recomiendan</target>
       </trans-unit>
       <trans-unit id="565" resname=" doctor recommends" restype="string" datatype="x-objective-c">
         <source>doctor recommends</source>
@@ -3046,7 +3046,7 @@
       </trans-unit>
       <trans-unit id="571" resname="Please provide your preferred pharmacy" restype="string" datatype="x-objective-c">
         <source>Please provide your preferred pharmacy</source>
-        <target>Por favor proporcioan tu farmacia de preferencia</target>
+        <target>Por favor proporciona tu farmacia de preferencia</target>
       </trans-unit>
     </body>
   </file>
@@ -3054,7 +3054,7 @@
     <body>
       <trans-unit id="572" resname="%@ is gifting you 1 month FREE on Prime to help you live a healthier, happier life!" restype="string" datatype="x-objective-c">
         <source>%@ is gifting you 1 month FREE on Prime to help you live a healthier, happier life!</source>
-        <target>¡%@ te está regalando 1 més GRATIS de Prime para ayudarte a vivir una vida más saludable y feliz!</target>
+        <target>¡%@ te está regalando 1 mes GRATIS de Prime para ayudarte a vivir una vida más saludable y feliz!</target>
       </trans-unit>
       <trans-unit id="573" resname="%@ is gifting you $30 credit on Prime to help you live a healthier, happier life!" restype="string" datatype="x-objective-c">
         <source>%@ is gifting you $30 credit on Prime to help you live a healthier, happier life!</source>
@@ -3070,11 +3070,11 @@
       </trans-unit>
       <trans-unit id="576" resname="Sign Up for HealthTap Prime - 24/7 access to doctors! Use this link and get $30 off." restype="string" datatype="x-objective-c">
         <source>Sign Up for HealthTap Prime - 24/7 access to doctors! Use this link and get $30 off.</source>
-        <target>Regístrate a HealthTap Prime - ¡acceso 24/7 a doctores! Usa esta enlace y obtén un descuento de $30.</target>
+        <target>Regístrate a HealthTap Prime - ¡acceso 24/7 a doctores! Usa este enlace y obtén un descuento de $30.</target>
       </trans-unit>
       <trans-unit id="577" resname="Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions!" restype="string" datatype="x-objective-c">
         <source>Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions!</source>
-        <target>Obtén un descuento de $5 para consultas de chat de texo o video con tu doctor o especialista en HealthTap -¡consejo &amp; recetas!</target>
+        <target>Obtén un descuento de $5 para consultas de chat de texto o video con tu doctor o especialista en HealthTap - ¡consejo &amp; recetas!</target>
       </trans-unit>
     </body>
   </file>
@@ -3103,7 +3103,7 @@
     <body>
       <trans-unit id="581" resname="Please provide a valid card" restype="string" datatype="x-objective-c">
         <source>Please provide a valid card</source>
-        <target>Por favor proporcióna una tarjeta válida</target>
+        <target>Por favor proporciona una tarjeta válida</target>
       </trans-unit>
     </body>
   </file>
@@ -3127,7 +3127,7 @@
       </trans-unit>
       <trans-unit id="586" resname=" Currently taking" restype="string" datatype="x-objective-c">
         <source>Currently taking</source>
-        <target>Actualmente tomando</target>
+        <target>Actualmente tomo</target>
       </trans-unit>
       <trans-unit id="587" resname=" Used to take" restype="string" datatype="x-objective-c">
         <source>Used to take</source>
@@ -3199,7 +3199,7 @@
       </trans-unit>
       <trans-unit id="599" resname="Request sent to" restype="string" datatype="x-objective-c">
         <source>Request sent to</source>
-        <target>Solicitud envaida a</target>
+        <target>Solicitud enviada a</target>
       </trans-unit>
       <trans-unit id="600" resname="Your invitation is sent. We&apos;ll notify you when the doctor accepts you as a patient." restype="string" datatype="x-objective-c">
         <source>Your invitation is sent. We&apos;ll notify you when the doctor accepts you as a patient.</source>
@@ -3239,7 +3239,7 @@
     <body>
       <trans-unit id="607" resname=" Video or text chat securely with \n top doctors right away \n" restype="string" datatype="x-objective-c">
         <source>Video or text chat securely with \n top doctors right away \n</source>
-        <target>Habla por chat de video o  texto con\n los mejores médicos inmediatamente \n</target>
+        <target>Habla por chat de video o texto de forma segura con\n los mejores doctores inmediatamente \n</target>
       </trans-unit>
     </body>
   </file>
@@ -3255,7 +3255,7 @@
     <body>
       <trans-unit id="609" resname="We&apos;re sorry but" restype="string" datatype="x-objective-c">
         <source>We&apos;re sorry but</source>
-        <target>Lo sentimos pero</target>
+        <target>Lo sentimos, pero</target>
       </trans-unit>
       <trans-unit id="610" resname="Please note," restype="string" datatype="x-objective-c">
         <source>Please note,</source>
@@ -3299,11 +3299,11 @@
       </trans-unit>
       <trans-unit id="620" resname="We&apos;re sorry, but Dr. %@ is currently licensed to see patients only in %@" restype="string" datatype="x-objective-c">
         <source>We&apos;re sorry, but Dr. %@ is currently licensed to see patients only in %@</source>
-        <target>Lo sentimos, pero Dr. %@ actualmente solo esta acreditado para ver pacientes en %@</target>
+        <target>Lo sentimos, pero Dr. %@ actualmente solo está acreditado para ver pacientes en %@</target>
       </trans-unit>
       <trans-unit id="621" resname="Dr. %@ is only licensed to see patients in %@. You may still request to connect, however you will only be able to consult Dr. %@ when you are traveling to one of these locations." restype="string" datatype="x-objective-c">
         <source>Dr. %@ is only licensed to see patients in %@. You may still request to connect, however you will only be able to consult Dr. %@ when you are traveling to one of these locations.</source>
-        <target>Dr. %@ solo está certificado para ver pacientes en %@. Aún puedes solicitar conectarte, sin embargo solo podrás consultar con Dr. %@ cuando estés viajando a una de estas localidades.</target>
+        <target>Dr. %@ solo está certificado para ver pacientes en %@. Aún puedes solicitar conectarte, sin embargo, solo podrás consultar con Dr. %@ cuando estés viajando a una de estas localidades.</target>
       </trans-unit>
       <trans-unit id="622" resname="Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to consult the doctor unless you&apos;re traveling to a state where the doctor is licensed." restype="string" datatype="x-objective-c">
         <source>Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to consult the doctor unless you&apos;re traveling to a state where the doctor is licensed.</source>
@@ -3383,7 +3383,7 @@
     <body>
       <trans-unit id="638" resname="vQi-Zb-3ut.text" restype="string" datatype="x-xib">
         <source>There\&apos;s a problem with your connection.</source>
-        <target>Hay\un problema con tu conexión.</target>
+        <target>Hay un problema con tu conexión.</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;There&apos;s a problem with your connection.&quot;; ObjectID = &quot;vQi-Zb-3ut&quot;;</note>
       </trans-unit>
     </body>
@@ -3433,7 +3433,7 @@
     <body>
       <trans-unit id="644" resname="erM-oz-3w7.text" restype="string" datatype="x-xib">
         <source>Please don\&apos;t include a followup question in your note. To do so,</source>
-        <target>Por favor  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
+        <target>Por favor no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so,&quot;; ObjectID = &quot;erM-oz-3w7&quot;;</note>
       </trans-unit>
     </body>
@@ -3610,7 +3610,7 @@
     <body>
       <trans-unit id="669" resname="4JM-yv-O1p.text" restype="string" datatype="x-xib">
         <source>Get a more personalized answer</source>
-        <target>Obtén una respuestas más personalizada</target>
+        <target>Obtén una respuesta más personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get a more personalized answer&quot;; ObjectID = &quot;4JM-yv-O1p&quot;;</note>
       </trans-unit>
       <trans-unit id="670" resname="KvY-4s-tV7.placeholder" restype="string" datatype="x-xib">
@@ -3838,7 +3838,7 @@
       </trans-unit>
       <trans-unit id="701" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
         <source>Please don\&apos;t include a followup question in your note. To do so,</source>
-        <target>Por favor  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
+        <target>Por favor no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so,&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
       </trans-unit>
       <trans-unit id="702" resname="KaS-Fq-bjx.normalTitle" restype="string" datatype="x-xib">
@@ -3857,7 +3857,7 @@
       </trans-unit>
       <trans-unit id="704" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
         <source>Please don\&apos;t include a followup question in your note. To do so,</source>
-        <target>Por favor  no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
+        <target>Por favor no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so,&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
       </trans-unit>
     </body>
@@ -3945,7 +3945,7 @@
     <body>
       <trans-unit id="716" resname="fak-PA-FU7.text" restype="string" datatype="x-xib">
         <source>We just sent you a link to reset your password.\nIf you dont see it after a few minutes, please \ncheck your Spam folder.</source>
-        <target>Te acabamos de enviar un enlace para restablecer tu contraseña.\nSi no lo ves después de unos pocos minutos, por favor \nrevisa tu carpeta de Correo no deseado &#40;Spam&#41;.</target>
+        <target>Te acabamos de enviar un enlace para restablecer tu contraseña.\nSi no lo ves después de unos pocos minutos, por favor \nrevisa tu carpeta Spam.</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We just sent you a link to reset your password.\nIf you dont see it after a few minutes, please \ncheck your Spam folder.&quot;; ObjectID = &quot;fak-PA-FU7&quot;;</note>
       </trans-unit>
       <trans-unit id="717" resname="iqT-MJ-Oof.text" restype="string" datatype="x-xib">
@@ -4018,7 +4018,7 @@
     <body>
       <trans-unit id="725" resname="GUB-lX-WIJ.text" restype="string" datatype="x-xib">
         <source>Dr. Agrees</source>
-        <target>El Dr. está De Acuerdo</target>
+        <target>De Acuerdos de Dr.</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Dr. Agrees &quot;; ObjectID = &quot;GUB-lX-WIJ&quot;;</note>
       </trans-unit>
     </body>
@@ -4101,7 +4101,7 @@
     <body>
       <trans-unit id="736" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
         <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento por pares que este doctor ha recibido en HealthTap, a´si como información pública relevante acerca de este experto, incluyendo:  •     De Acuerdos, votos y recomendaciones         de otros expertos \n•     Años de experiencia\n\n•     Calidad de expertos que los refieren\n\n•     Donde el experto estudió y entrenó\n\n•     Certificación&#40;es&#41; de Consejo\n\n•     Otros logros profesionales        &#40;como publicaciones con revisión por pares         y galardones&#41;  •     Gracias, votos y recomendaciones         de miembros</target>
+        <target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento por pares que este doctor ha recibido en HealthTap, así como información pública relevante acerca de este experto, incluyendo:  •     De Acuerdos, votos y recomendaciones         de otros expertos \n•     Años de experiencia\n\n•     Calidad de expertos que los refieren\n\n•     Donde el experto estudió y entrenó\n\n•     Certificación&#40;es&#41; de Consejo\n\n•     Otros logros profesionales        &#40;como publicaciones con revisión por pares         y galardones&#41;  •     Gracias, votos y recomendaciones         de miembros</target>
         <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
       </trans-unit>
     </body>
@@ -4225,7 +4225,7 @@
     <body>
       <trans-unit id="756" resname="Yjx-vI-AME.text" restype="string" datatype="x-xib">
         <source>Private Consult on</source>
-        <target>Consulta privada en</target>
+        <target>Consulta Privada en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private Consult on &quot;; ObjectID = &quot;Yjx-vI-AME&quot;;</note>
       </trans-unit>
     </body>
