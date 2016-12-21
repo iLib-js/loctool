@@ -379,7 +379,7 @@
       </trans-unit>
       <trans-unit id="grP-vY-oOu.normalTitle" resname="grP-vY-oOu.normalTitle" restype="string" datatype="x-xib">
         <source>Try our doctor app ›</source>
-        <target>Prueba nuestra aplicación para doctores ›</target>
+        <target>Presiona aquí</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Try our doctor app ›&quot;; ObjectID = &quot;grP-vY-oOu&quot;;</note>
       </trans-unit>
       <trans-unit id="guG-tT-3La.text" resname="guG-tT-3La.text" restype="string" datatype="x-xib">
@@ -664,7 +664,7 @@
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What is DocScore?&quot;; ObjectID = &quot;P4u-ea-HSj&quot;;</note>
       </trans-unit>
       <trans-unit id="dSG-zo-7RR.text" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors 
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors 
 •     Years of experience
 
 •     Quality of experts who refer to them
@@ -673,8 +673,8 @@
 
 •     Board certification&#40;s&#41;
 
-•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
-        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones        de otros médicos 
+•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
+        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones         de otros médicos 
 •     Años de experiencia
 
 •     Calidad de los expertos que los refieran
@@ -683,8 +683,8 @@
 
 •     Certificado&#40;s&#41; del Consejo
 
-•     Otros logros profesionales       &#40;tales como publicaciones y premios        revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones        de los miembros</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
+•     Otros logros profesionales        &#40;tales como publicaciones y premios         revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones         de los miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
       </trans-unit>
     </body>
   </file>
@@ -701,7 +701,7 @@
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What is DocScore?&quot;; ObjectID = &quot;P4u-ea-HSj&quot;;</note>
       </trans-unit>
       <trans-unit id="dSG-zo-7RR.text" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts 
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts 
 •     Years of experience
 
 •     Quality of experts who refer to them
@@ -710,8 +710,8 @@
 
 •     Board certification&#40;s&#41;
 
-•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
-        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones        de otros expertos 
+•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
+        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones         de otros expertos 
 •     Años de experiencia
 
 •     Calidad de los expertos que los refieran
@@ -720,8 +720,8 @@
 
 •     Certificado&#40;s&#41; del Consejo
 
-•     Otros logros profesionales       &#40;tales como publicaciones y premios        revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones        de los miembros</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
+•     Otros logros profesionales        &#40;tales como publicaciones y premios         revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones         de los miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
       </trans-unit>
     </body>
   </file>
@@ -2654,7 +2654,7 @@
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What is DocScore?&quot;; ObjectID = &quot;Qhg-H9-U85&quot;;</note>
       </trans-unit>
       <trans-unit id="djz-HC-hRp.text" resname="djz-HC-hRp.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors 
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors 
 •     Years of experience
 
 •     Quality of experts who refer to them
@@ -2663,8 +2663,8 @@
 
 •     Board certification&#40;s&#41;
 
-•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
-        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones        de otros médicos 
+•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
+        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones         de otros médicos 
 •     Años de experiencia
 
 •     Calidad de los expertos que los refieran
@@ -2673,8 +2673,8 @@
 
 •     Certificado&#40;s&#41; del Consejo
 
-•     Otros logros profesionales       &#40;tales como publicaciones y premios        revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones        de los miembros</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
+•     Otros logros profesionales        &#40;tales como publicaciones y premios         revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones         de los miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
       </trans-unit>
       <trans-unit id="lVq-kp-oGA.normalTitle" resname="lVq-kp-oGA.normalTitle" restype="string" datatype="x-xib">
         <source>Okay</source>
@@ -3055,8 +3055,7 @@
       </trans-unit>
       <trans-unit id="gmm-d9-fgH.normalTitle" resname="gmm-d9-fgH.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>OK
-        </target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;gmm-d9-fgH&quot;;</note>
       </trans-unit>
     </body>
@@ -6196,9 +6195,9 @@
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" Video or text chat securely with \n top doctors right away \n" resname=" Video or text chat securely with \n top doctors right away \n" restype="string">
-        <source>Video or text chat securely with
+        <source>Video or text chat securely with 
  top doctors right away</source>
-        <target>Habla por video o por texto con
+        <target>Habla por video o por texto con 
  los mejores médicos inmediatamente</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -6374,7 +6373,7 @@
       </trans-unit>
       <trans-unit id="%@ &#40;%ld yrs&#41;" resname="%@ &#40;%ld yrs&#41;" restype="string">
         <source>%1$@ &#40;%2$ld yrs&#41;</source>
-        <target>%1$@ &#40;%2$años de edad&#41;</target>
+        <target>%1$@ &#40;%2$ld años de edad&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ &#40;App&#41;" resname="%@ &#40;App&#41;" restype="string">
@@ -6403,9 +6402,9 @@
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ \naccepted" resname="%@ \naccepted" restype="string">
-        <source>%@
+        <source>%@ 
 accepted</source>
-        <target>%@
+        <target>%@ 
 aceptado</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -6475,8 +6474,10 @@ aceptado</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ commented on  \r\n%@&apos;s answer" resname="%@ commented on  \r\n%@&apos;s answer" restype="string">
-        <source>%1$@ commented on %2$@&apos;s answer</source>
-        <target>%1$@ comentó la respuesta de %2$@:</target>
+        <source>%1$@ commented on  
+%2$@&apos;s answer</source>
+        <target>%1$@ commentó en la  
+respuesta de %2$@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ commented on %@&apos;s answer" resname="%@ commented on %@&apos;s answer" restype="string">
@@ -6485,8 +6486,10 @@ aceptado</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ commented on \r\n%@&apos;s answer:" resname="%@ commented on \r\n%@&apos;s answer:" restype="string">
-        <source>%1$@ commented on %2$@&apos;s answer:</source>
-        <target>%1$@ comentó la respuesta de %2$@:</target>
+        <source>%1$@ commented on 
+%2$@&apos;s answer:</source>
+        <target>%1$@ commentó en la  
+respuesta de %2$@ :</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ created" resname="%@ created" restype="string">
@@ -8543,11 +8546,11 @@ aceptado</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Find doctor-created checklists \n Try them out \n Feel Good :&#41;" resname="Find doctor-created checklists \n Try them out \n Feel Good :&#41;" restype="string">
-        <source>Find doctor-created checklists
- Try them out
+        <source>Find doctor-created checklists 
+ Try them out 
  Feel Good :&#41;</source>
-        <target>Encuentra listas de comprobación creadas por médicos
- Pruébalas ahora
+        <target>Encuentra listas de comprobación creadas por médicos 
+ Pruébalas ahora 
  Siéntete bien :&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -8957,7 +8960,7 @@ aceptado</target>
       </trans-unit>
       <trans-unit id="Help the doctors help you. Complete your private health profile" resname="Help the doctors help you. Complete your private health profile" restype="string">
         <source>Help the doctors help you. Complete your private health profile</source>
-        <target>Ayuda a los médicos para que te ayuden. Completa tu perfil </target>
+        <target>Ayuda a los médicos para que te ayuden. Completa tu perfil</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Help the doctors understand\nwhat they are looking at" resname="Help the doctors understand\nwhat they are looking at" restype="string">
@@ -10408,9 +10411,9 @@ aceptado</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Please share a little about yourself so the \ndoctor can confirm you as a patient" resname="Please share a little about yourself so the \ndoctor can confirm you as a patient" restype="string">
-        <source>Please share a little about yourself so the
+        <source>Please share a little about yourself so the 
 doctor can confirm you as a patient</source>
-        <target>Por favor, comparte un poco acerca de ti para que
+        <target>Por favor, comparte un poco acerca de ti para que 
 el médico pueda confirmarte como paciente</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -11036,9 +11039,9 @@ el médico pueda confirmarte como paciente</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Send a thank you note to \n%@" resname="Send a thank you note to \n%@" restype="string">
-        <source>Send a thank you note to
+        <source>Send a thank you note to 
 %@</source>
-        <target>Enviar una nota de agradecimiento a
+        <target>Enviar una nota de agradecimiento a 
 %@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -11687,7 +11690,7 @@ el médico pueda confirmarte como paciente</target>
 Change question ›
 
 Alternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor.</source>
-        <target>No hay percepciones médicas inmediatas para tu pregunta. ¿Te gustaría reformular tu pregunta de forma diferente?
+        <target>No hay percepciones médicas inmediatas para tu pregunta. ¿Te gustaría reformular tu pregunta de forma diferente?  
 Cambiar pregunta ›
 
 De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nuestros mejores médicos en %@ o consulta con un médico.</target>
@@ -12622,7 +12625,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="You agree to HealthTap&apos;s Terms and Privacy Policy." resname="You agree to HealthTap&apos;s Terms and Privacy Policy." restype="string">
         <source>You agree to HealthTap&apos;s Terms and Privacy Policy.</source>
-        <target>Estás de acuerdo con los Términos y la Política de Privacidad <p.</target>
+        <target>Estás de acuerdo con los Términos y la Política de Privacidad de HealthTap</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information." resname="You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information." restype="string">
@@ -12995,7 +12998,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="answered" resname="answered" restype="string">
         <source>answered</source>
-        <target>respondi</target>
+        <target>respondió</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="answers" resname="answers" restype="string">
@@ -13995,7 +13998,7 @@ Nuestros médicos pueden ayudar</target>
       </trans-unit>
       <trans-unit id="fak-PA-FU7.text" resname="fak-PA-FU7.text" restype="string" datatype="x-xib">
         <source>We just sent you a link to reset your password.
-If you dont see it after a few minutes, please
+If you dont see it after a few minutes, please 
 check your Spam folder.</source>
         <target>Te acabamos de enviar un enlace para resetear tu contraseña.
 Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Correo no deseado &#40;Spam&#41;.</target>
@@ -14052,7 +14055,7 @@ Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Corr
       </trans-unit>
       <trans-unit id="fak-PA-FU7.text" resname="fak-PA-FU7.text" restype="string" datatype="x-xib">
         <source>We just sent you a link to reset your password.
-If you dont see it after a few minutes, please
+If you dont see it after a few minutes, please 
 check your Spam folder.</source>
         <target>Te acabamos de enviar un enlace para resetear tu contraseña.
 Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Correo no deseado &#40;Spam&#41;.</target>
@@ -14099,10 +14102,10 @@ Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Corr
       </trans-unit>
       <trans-unit id="VLz-E1-cea.text" resname="VLz-E1-cea.text" restype="string" datatype="x-xib">
         <source>If you find HealthTap helpful,
- please take a moment to rate the app
+ please take a moment to rate the app 
 and let the world know :&#41;</source>
         <target>Si piensas que HealthTap es útil,
- por favor tómate un momento para calificar la
+ por favor tómate un momento para calificar la 
 aplicación y deja que el mundo lo sepa :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :&#41;&quot;; ObjectID = &quot;VLz-E1-cea&quot;;</note>
       </trans-unit>
@@ -18544,10 +18547,10 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="F8C-bC-b0r.text" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
         <source>You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.
-
+ 
 We&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!</source>
         <target>Has hablado con un médico X veces este mes. Recuerda, Las Consultas virtuales de HealthTap no pretenden reemplazar a su médico de atención primaria o utilizarse como sustituto para establecer una relación con un médico en el mundo real.
-
+ 
 Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para permitirnos saber la razón por la que necesita continuar hablando con un médico. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!&quot;; ObjectID = &quot;F8C-bC-b0r&quot;;</note>
       </trans-unit>
@@ -18731,8 +18734,12 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Guidelines&quot;; ObjectID = &quot;E4t-4M-F8F&quot;;</note>
       </trans-unit>
       <trans-unit id="F8C-bC-b0r.text" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
-        <source>You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world. We&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!</source>
-        <target>Has hablado con un doctor X veces este mes. Recuerda, Las Consultas Virtuales de HealthTap no pretenden reemplazar a tu médico de atención primaria o utilizarse como sustituto para establecer una relación con un doctor en el mundo real. Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para hacernos saber la razón por la que necesita continuar hablando con un doctor. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
+        <source>You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.
+ 
+We&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!</source>
+        <target>Has hablado con un médico X veces este mes. Recuerda, Las Consultas virtuales de HealthTap no pretenden reemplazar a su médico de atención primaria o utilizarse como sustituto para establecer una relación con un médico en el mundo real.
+ 
+Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para permitirnos saber la razón por la que necesita continuar hablando con un médico. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!&quot;; ObjectID = &quot;F8C-bC-b0r&quot;;</note>
       </trans-unit>
       <trans-unit id="Fyz-ya-BDt.text" resname="Fyz-ya-BDt.text" restype="string" datatype="x-xib">
@@ -21193,7 +21200,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
     <body>
       <trans-unit id="YxO-MQ-lcU.normalTitle" resname="YxO-MQ-lcU.normalTitle" restype="string" datatype="x-xib">
         <source>Ask Docs</source>
-        <target>Pregúntale a Docs</target>
+        <target>¡Pregunta!</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Ask Docs&quot;; ObjectID = &quot;YxO-MQ-lcU&quot;;</note>
       </trans-unit>
       <trans-unit id="p3N-aX-Kac.text" resname="p3N-aX-Kac.text" restype="string" datatype="x-xib">
