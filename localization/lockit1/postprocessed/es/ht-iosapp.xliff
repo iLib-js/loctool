@@ -9011,10 +9011,10 @@ mensual</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Find doctor-created checklists \n Try them out \n Feel Good :&#41;" resname="Find doctor-created checklists \n Try them out \n Feel Good :&#41;" restype="string">
-       <source>Find doctor-created checklists 
+        <source>Find doctor-created checklists 
  Try them out 
  Feel Good :&#41;</source>
-       <target>Encuentra listas de comprobación creadas por médicos 
+        <target>Encuentra listas de comprobación creadas por médicos 
  Pruébalas ahora 
  Siéntete bien :&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
