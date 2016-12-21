@@ -381,7 +381,7 @@ en App Store :&#41;</target>
       </trans-unit>
       <trans-unit id="grP-vY-oOu.normalTitle" resname="grP-vY-oOu.normalTitle" restype="string" datatype="x-xib">
         <source>Try our doctor app ›</source>
-        <target>Pru</target>
+        <target>Presiona aquí</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Try our doctor app ›&quot;; ObjectID = &quot;grP-vY-oOu&quot;;</note>
       </trans-unit>
       <trans-unit id="guG-tT-3La.text" resname="guG-tT-3La.text" restype="string" datatype="x-xib">
@@ -666,7 +666,7 @@ en App Store :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What is DocScore?&quot;; ObjectID = &quot;P4u-ea-HSj&quot;;</note>
       </trans-unit>
       <trans-unit id="dSG-zo-7RR.text" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors 
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors 
 •     Years of experience
 
 •     Quality of experts who refer to them
@@ -675,7 +675,7 @@ en App Store :&#41;</target>
 
 •     Board certification&#40;s&#41;
 
-•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
+•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
         <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones        de otros médicos 
 •     Años de experiencia
 
@@ -21843,7 +21843,7 @@ Los médicos están en línea para ayudar.</target>
     <body>
       <trans-unit id="YxO-MQ-lcU.normalTitle" resname="YxO-MQ-lcU.normalTitle" restype="string" datatype="x-xib">
         <source>Ask Docs</source>
-        <target>Pregunta a los doctores</target>
+        <target>¡Pregunta!</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Ask Docs&quot;; ObjectID = &quot;YxO-MQ-lcU&quot;;</note>
       </trans-unit>
       <trans-unit id="p3N-aX-Kac.text" resname="p3N-aX-Kac.text" restype="string" datatype="x-xib">
