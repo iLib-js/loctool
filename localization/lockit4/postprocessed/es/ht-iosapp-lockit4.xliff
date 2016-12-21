@@ -2926,11 +2926,11 @@
 
       <note>Class = "UILabel"; text = "We may already have your answer"; ObjectID = "2hw-Z4-cVZ";</note></trans-unit>
       <trans-unit id="650" resname="sWh-hA-9s9.text" restype="string" datatype="x-xib">
-        <source>Our doctors have answered similar questions</source><target>Nuestros doctores han contestado preguntas similares</target>
+        <source>Our doctors have answered similar questions</source><target>Preguntas similares</target>
 
       <note>Class = "UILabel"; text = "Our doctors have answered similar questions"; ObjectID = "sWh-hA-9s9";</note></trans-unit>
       <trans-unit id="651" resname="vLt-Hu-9yd.text" restype="string" datatype="x-xib">
-        <source>Didn\'t find what you are looking for?</source><target>¿No encontraste lo que estabas buscando?</target>
+        <source>Didn\'t find what you are looking for?</source><target>No encontre lo que buscaba</target>
 
       <note>Class = "UILabel"; text = "Didn't find what you are looking for?"; ObjectID = "vLt-Hu-9yd";</note></trans-unit>
     </body>
@@ -3034,7 +3034,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocAskDoctorsViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="669" resname="4JM-yv-O1p.text" restype="string" datatype="x-xib">
-        <source>Get a more personalized answer</source><target>Obtén una respuestas más personalizada</target>
+        <source>Get a more personalized answer</source><target>Obtén respuestas más personalizadas</target>
 
       <note>Class = "UILabel"; text = "Get a more personalized answer"; ObjectID = "4JM-yv-O1p";</note></trans-unit>
       <trans-unit id="670" resname="KvY-4s-tV7.placeholder" restype="string" datatype="x-xib">
