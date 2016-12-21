@@ -666,7 +666,7 @@ en App Store :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What is DocScore?&quot;; ObjectID = &quot;P4u-ea-HSj&quot;;</note>
       </trans-unit>
       <trans-unit id="dSG-zo-7RR.text" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors 
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations          from other doctors 
 •     Years of experience
 
 •     Quality of experts who refer to them
