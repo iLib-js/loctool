@@ -2695,8 +2695,8 @@ y más</target>
 
 •     Certificado&#40;s&#41; del Consejo
 
-•     Otros logros profesionales       &#40;tales como publicaciones y premios        revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones        de los miembros</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
+•     Otros logros profesionales        &#40;tales como publicaciones y premios         revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones         de los miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
       </trans-unit>
       <trans-unit id="lVq-kp-oGA.normalTitle" resname="lVq-kp-oGA.normalTitle" restype="string" datatype="x-xib">
         <source>Okay</source>
@@ -6217,9 +6217,9 @@ y más</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" Video or text chat securely with \n top doctors right away \n" resname=" Video or text chat securely with \n top doctors right away \n" restype="string">
-        <source>Video or text chat securely with
+        <source>Video or text chat securely with 
  top doctors right away</source>
-        <target>Habla por video o por texto con
+        <target>Habla por video o por texto con 
  los mejores médicos inmediatamente</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -6397,7 +6397,7 @@ ilimitadas y otros beneficios</target>
       </trans-unit>
       <trans-unit id="%@ &#40;%ld yrs&#41;" resname="%@ &#40;%ld yrs&#41;" restype="string">
         <source>%1$@ &#40;%2$ld yrs&#41;</source>
-        <target>%1$@ &#40;%2$años de edad&#41;</target>
+        <target>%1$@ &#40;%2$ld años de edad&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ &#40;App&#41;" resname="%@ &#40;App&#41;" restype="string">
@@ -6426,9 +6426,9 @@ ilimitadas y otros beneficios</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ \naccepted" resname="%@ \naccepted" restype="string">
-        <source>%@
+        <source>%@ 
 accepted</source>
-        <target>%@
+        <target>%@ 
 aceptado</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -6498,9 +6498,9 @@ aceptado</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ commented on  \r\n%@&apos;s answer" resname="%@ commented on  \r\n%@&apos;s answer" restype="string">
-        <source>%1$@ commented on
+        <source>%1$@ commented on  
 %2$@&apos;s answer</source>
-        <target>%1$@ commentó en la
+        <target>%1$@ commentó en la  
 respuesta de %2$@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -6510,9 +6510,9 @@ respuesta de %2$@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ commented on \r\n%@&apos;s answer:" resname="%@ commented on \r\n%@&apos;s answer:" restype="string">
-        <source>%1$@ commented on
+        <source>%1$@ commented on 
 %2$@&apos;s answer:</source>
-        <target>%1$@ commentó en la
+        <target>%1$@ commentó en la  
 respuesta de %2$@ :</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
