@@ -739,7 +739,7 @@
     \u00B7 Cualquier otra situación crítica o que atente contra la vida
     Qué no esperar\n\n\
     \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration, Agencia Federal Antidrogas&#41; &#40;Categoría I, II, III, IV&#41;\n\
-    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
+    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n
     \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida &#40;por ejemplo, fármacos para dietas o para disfunción eréctil&#41;\n\
     \u00B7 Consultas en idiomas que no sea el inglés\n\
     \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje &#40;considera consultas de video con médicos disponibles para una atención más rápida&#41;</target>
@@ -793,7 +793,7 @@
     \u00B7 Cualquier otra situación crítica o que atente contra la vida
     Qué no esperar\n\n\
     \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration, Agencia Federal Antidrogas&#41; &#40;Categoría I, II, III, IV&#41;\n\
-    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
+    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n
     \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida &#40;por ejemplo, fármacos para dietas o para disfunción eréctil&#41;\n\
     \u00B7 Consultas en idiomas que no sea el inglés\n\
                            \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje &#40;considera consultas de video con médicos disponibles para una atención más rápida&#41;</target>
@@ -1846,7 +1846,7 @@
     <body>
       <trans-unit id="342" resname="Ask Docs" restype="string" datatype="x-objective-c">
         <source>Ask Docs</source>
-        <target>Pregúntale a Docs</target>
+        <target>¡Pregunta!</target>
       </trans-unit>
     </body>
   </file>
@@ -3482,13 +3482,13 @@
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We may already have your answer&quot;; ObjectID = &quot;2hw-Z4-cVZ&quot;;</note>
       </trans-unit>
       <trans-unit id="650" resname="sWh-hA-9s9.text" restype="string" datatype="x-xib">
-        <source>Our doctors have answered  similar questions</source>
-        <target>Nuestros doctores han contestado  preguntas similares</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors have answered  similar questions&quot;; ObjectID = &quot;sWh-hA-9s9&quot;;</note>
+        <source>Our doctors have answered similar questions</source>
+        <target>Preguntas similares</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors have answered similar questions&quot;; ObjectID = &quot;sWh-hA-9s9&quot;;</note>
       </trans-unit>
       <trans-unit id="651" resname="vLt-Hu-9yd.text" restype="string" datatype="x-xib">
         <source>Didn\&apos;t find what you are looking for?</source>
-        <target>¿No encontraste lo que estabas buscando?</target>
+        <target>No encontre lo que buscaba</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Didn&apos;t find what you are looking for?&quot;; ObjectID = &quot;vLt-Hu-9yd&quot;;</note>
       </trans-unit>
     </body>
@@ -3610,7 +3610,7 @@
     <body>
       <trans-unit id="669" resname="4JM-yv-O1p.text" restype="string" datatype="x-xib">
         <source>Get a more personalized answer</source>
-        <target>Obtén una respuestas más personalizada</target>
+        <target>Obtén respuestas más personalizadas</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get a more personalized answer&quot;; ObjectID = &quot;4JM-yv-O1p&quot;;</note>
       </trans-unit>
       <trans-unit id="670" resname="KvY-4s-tV7.placeholder" restype="string" datatype="x-xib">
@@ -3916,9 +3916,9 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGHTFileListViewController~ipad.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="712" resname="lyX-Gv-P5t.text" restype="string" datatype="x-xib">
-        <source>Private storage and easy, secure sharing  with doctors</source>
-        <target>Almacenamiento privado y comparte de forma fácil y segura  con doctores</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private storage and easy, secure sharing  with doctors&quot;; ObjectID = &quot;lyX-Gv-P5t&quot;;</note>
+        <source>Private storage and easy, secure sharing with doctors</source>
+        <target>Almacenamiento privado y comparte de forma fácil y segura con doctores</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private storage and easy, secure sharing with doctors&quot;; ObjectID = &quot;lyX-Gv-P5t&quot;;</note>
       </trans-unit>
       <trans-unit id="713" resname="vj8-2g-5Ix.text" restype="string" datatype="x-xib">
         <source>Upload photos or documents</source>
@@ -3935,9 +3935,9 @@
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Upload photos or documents&quot;; ObjectID = &quot;Eyz-IA-iAt&quot;;</note>
       </trans-unit>
       <trans-unit id="715" resname="Fla-9e-gY4.text" restype="string" datatype="x-xib">
-        <source>Private storage and easy, secure sharing  with doctors</source>
-        <target>Almacenamiento privado y comparte de forma fácil y segura  con doctores</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private storage and easy, secure sharing  with doctors&quot;; ObjectID = &quot;Fla-9e-gY4&quot;;</note>
+        <source>Private storage and easy, secure sharing with doctors</source>
+        <target>Almacenamiento privado y comparte de forma fácil y segura con doctores</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private storage and easy, secure sharing with doctors&quot;; ObjectID = &quot;Fla-9e-gY4&quot;;</note>
       </trans-unit>
     </body>
   </file>
@@ -4100,9 +4100,9 @@
   <file original="feelgood/Classes/UI/Base.lproj/FGDocScoreLayerView~ipad.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="736" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento por pares que este doctor ha recibido en HealthTap, a´si como información pública relevante acerca de este experto, incluyendo:  •     De Acuerdos, votos y recomendaciones         de otros expertos \n•     Años de experiencia\n\n•     Calidad de expertos que los refieren\n\n•     Donde el experto estudió y entrenó\n\n•     Certificación&#40;es&#41; de Consejo\n\n•     Otros logros profesionales        &#40;como publicaciones con revisión por pares         y galardones&#41;  •     Gracias, votos y recomendaciones         de miembros</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
+        <target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento por pares que este doctor ha recibido en HealthTap, a´si como información pública relevante acerca de este experto, incluyendo:  •     De Acuerdos, votos y recomendaciones        de otros expertos \n•     Años de experiencia\n\n•     Calidad de expertos que los refieren\n\n•     Donde el experto estudió y entrenó\n\n•     Certificación&#40;es&#41; de Consejo\n\n•     Otros logros profesionales       &#40;como publicaciones con revisión por pares        y galardones&#41;  •     Gracias, votos y recomendaciones        de miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
       </trans-unit>
     </body>
   </file>

@@ -302,7 +302,7 @@ en App Store :&#41;</target>
       </trans-unit>
       <trans-unit id="TBH-c4-qDy.normalTitle" resname="TBH-c4-qDy.normalTitle" restype="string" datatype="x-xib">
         <source>Ask doctors</source>
-        <target>Pregunta a los médicos</target>
+        <target>¡Pregunta!</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Ask doctors&quot;; ObjectID = &quot;TBH-c4-qDy&quot;;</note>
       </trans-unit>
       <trans-unit id="crA-NT-aHH.text" resname="crA-NT-aHH.text" restype="string" datatype="x-xib">
@@ -381,7 +381,7 @@ en App Store :&#41;</target>
       </trans-unit>
       <trans-unit id="grP-vY-oOu.normalTitle" resname="grP-vY-oOu.normalTitle" restype="string" datatype="x-xib">
         <source>Try our doctor app ›</source>
-        <target>Prueba nuestra aplicación para médicos ›</target>
+        <target>Pru</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Try our doctor app ›&quot;; ObjectID = &quot;grP-vY-oOu&quot;;</note>
       </trans-unit>
       <trans-unit id="guG-tT-3La.text" resname="guG-tT-3La.text" restype="string" datatype="x-xib">
@@ -450,7 +450,7 @@ en App Store :&#41;</target>
       </trans-unit>
       <trans-unit id="grP-vY-oOu.normalTitle" resname="grP-vY-oOu.normalTitle" restype="string" datatype="x-xib">
         <source>Try our doctor app ›</source>
-        <target>Prueba nuestra aplicación para médicos ›</target>
+        <target>Presiona aquí</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Try our doctor app ›&quot;; ObjectID = &quot;grP-vY-oOu&quot;;</note>
       </trans-unit>
       <trans-unit id="guG-tT-3La.text" resname="guG-tT-3La.text" restype="string" datatype="x-xib">
@@ -666,7 +666,7 @@ en App Store :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What is DocScore?&quot;; ObjectID = &quot;P4u-ea-HSj&quot;;</note>
       </trans-unit>
       <trans-unit id="dSG-zo-7RR.text" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors 
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors 
 •     Years of experience
 
 •     Quality of experts who refer to them
@@ -675,8 +675,8 @@ en App Store :&#41;</target>
 
 •     Board certification&#40;s&#41;
 
-•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones         de otros médicos 
+•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
+        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones        de otros médicos 
 •     Años de experiencia
 
 •     Calidad de los expertos que los refieran
@@ -685,8 +685,8 @@ en App Store :&#41;</target>
 
 •     Certificado&#40;s&#41; del Consejo
 
-•     Otros logros profesionales        &#40;tales como publicaciones y premios         revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones         de los miembros</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
+•     Otros logros profesionales       &#40;tales como publicaciones y premios        revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones        de los miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
       </trans-unit>
     </body>
   </file>
@@ -703,7 +703,7 @@ en App Store :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What is DocScore?&quot;; ObjectID = &quot;P4u-ea-HSj&quot;;</note>
       </trans-unit>
       <trans-unit id="dSG-zo-7RR.text" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts 
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts 
 •     Years of experience
 
 •     Quality of experts who refer to them
@@ -712,8 +712,8 @@ en App Store :&#41;</target>
 
 •     Board certification&#40;s&#41;
 
-•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones         de otros expertos 
+•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
+        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones        de otros expertos 
 •     Años de experiencia
 
 •     Calidad de los expertos que los refieran
@@ -722,8 +722,8 @@ en App Store :&#41;</target>
 
 •     Certificado&#40;s&#41; del Consejo
 
-•     Otros logros profesionales        &#40;tales como publicaciones y premios         revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones         de los miembros</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
+•     Otros logros profesionales       &#40;tales como publicaciones y premios        revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones        de los miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
       </trans-unit>
     </body>
   </file>
@@ -837,7 +837,7 @@ en App Store :&#41;</target>
     <body>
       <trans-unit id="9jI-UY-rTN.normalTitle" resname="9jI-UY-rTN.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;9jI-UY-rTN&quot;;</note>
       </trans-unit>
       <trans-unit id="JPf-Ro-Mv0.normalTitle" resname="JPf-Ro-Mv0.normalTitle" restype="string" datatype="x-xib">
@@ -886,7 +886,7 @@ en App Store :&#41;</target>
       </trans-unit>
       <trans-unit id="m0h-us-wzW.normalTitle" resname="m0h-us-wzW.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;m0h-us-wzW&quot;;</note>
       </trans-unit>
     </body>
@@ -1014,7 +1014,7 @@ en App Store :&#41;</target>
       </trans-unit>
       <trans-unit id="Okb-zl-8bu.normalTitle" resname="Okb-zl-8bu.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;Okb-zl-8bu&quot;;</note>
       </trans-unit>
       <trans-unit id="QFk-qT-wsm.normalTitle" resname="QFk-qT-wsm.normalTitle" restype="string" datatype="x-xib">
@@ -1086,7 +1086,7 @@ en App Store :&#41;</target>
       </trans-unit>
       <trans-unit id="KFw-Jz-r9g.normalTitle" resname="KFw-Jz-r9g.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;KFw-Jz-r9g&quot;;</note>
       </trans-unit>
       <trans-unit id="M04-02-MWY.text" resname="M04-02-MWY.text" restype="string" datatype="x-xib">
@@ -1198,7 +1198,7 @@ en App Store :&#41;</target>
       </trans-unit>
       <trans-unit id="Skd-gu-vBw.normalTitle" resname="Skd-gu-vBw.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;Skd-gu-vBw&quot;;</note>
       </trans-unit>
       <trans-unit id="aW2-iF-Nhj.normalTitle" resname="aW2-iF-Nhj.normalTitle" restype="string" datatype="x-xib">
@@ -2056,7 +2056,7 @@ y más</target>
       </trans-unit>
       <trans-unit id="Qvr-Af-vfq.text" resname="Qvr-Af-vfq.text" restype="string" datatype="x-xib">
         <source>Enter code to receive a discount</source>
-        <target>Introduce el código para recibir un descuento</target>
+        <target>Introducelo para recibir un descuento</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Enter code to receive a discount&quot;; ObjectID = &quot;Qvr-Af-vfq&quot;;</note>
       </trans-unit>
       <trans-unit id="RMC-7l-yS7.text" resname="RMC-7l-yS7.text" restype="string" datatype="x-xib">
@@ -2240,7 +2240,7 @@ y más</target>
       </trans-unit>
       <trans-unit id="Qvr-Af-vfq.text" resname="Qvr-Af-vfq.text" restype="string" datatype="x-xib">
         <source>Enter code to receive a discount</source>
-        <target>Introduce el código para recibir un descuento</target>
+        <target>Introducelo para recibir un descuento</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Enter code to receive a discount&quot;; ObjectID = &quot;Qvr-Af-vfq&quot;;</note>
       </trans-unit>
       <trans-unit id="RMC-7l-yS7.text" resname="RMC-7l-yS7.text" restype="string" datatype="x-xib">
@@ -2339,7 +2339,7 @@ y más</target>
     <body>
       <trans-unit id="OjR-nR-yb2.text" resname="OjR-nR-yb2.text" restype="string" datatype="x-xib">
         <source>Add to Care-Team</source>
-        <target>Agregar a Care-Team &#40;Equipo de atención&#41;</target>
+        <target>Agregar a Care-Team</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Add to Care-Team&quot;; ObjectID = &quot;OjR-nR-yb2&quot;;</note>
       </trans-unit>
       <trans-unit id="P6D-qG-Byh.normalTitle" resname="P6D-qG-Byh.normalTitle" restype="string" datatype="x-xib">
@@ -2676,7 +2676,7 @@ y más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What is DocScore?&quot;; ObjectID = &quot;Qhg-H9-U85&quot;;</note>
       </trans-unit>
       <trans-unit id="djz-HC-hRp.text" resname="djz-HC-hRp.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors 
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors 
 •     Years of experience
 
 •     Quality of experts who refer to them
@@ -2685,8 +2685,8 @@ y más</target>
 
 •     Board certification&#40;s&#41;
 
-•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones         de otros médicos 
+•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
+        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones        de otros médicos 
 •     Años de experiencia
 
 •     Calidad de los expertos que los refieran
@@ -2695,8 +2695,8 @@ y más</target>
 
 •     Certificado&#40;s&#41; del Consejo
 
-•     Otros logros profesionales        &#40;tales como publicaciones y premios         revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones         de los miembros</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
+•     Otros logros profesionales       &#40;tales como publicaciones y premios        revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones        de los miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
       </trans-unit>
       <trans-unit id="lVq-kp-oGA.normalTitle" resname="lVq-kp-oGA.normalTitle" restype="string" datatype="x-xib">
         <source>Okay</source>
@@ -2794,7 +2794,7 @@ y más</target>
       </trans-unit>
       <trans-unit id="7YN-5X-7hv.text" resname="7YN-5X-7hv.text" restype="string" datatype="x-xib">
         <source>Congratulations on inviting friends &amp; family!</source>
-        <target>¡Felicitaciones por invitar a los amigos y a su familia!</target>
+        <target>¡Felicitaciones por invitar a amigos y a familia!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Congratulations on inviting friends &amp; family!&quot;; ObjectID = &quot;7YN-5X-7hv&quot;;</note>
       </trans-unit>
       <trans-unit id="UKs-HL-IP5.normalTitle" resname="UKs-HL-IP5.normalTitle" restype="string" datatype="x-xib">
@@ -3077,7 +3077,8 @@ y más</target>
       </trans-unit>
       <trans-unit id="gmm-d9-fgH.normalTitle" resname="gmm-d9-fgH.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK
+        </target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;gmm-d9-fgH&quot;;</note>
       </trans-unit>
     </body>
@@ -4242,7 +4243,7 @@ y más</target>
       </trans-unit>
       <trans-unit id="cIk-Cz-iUY.text" resname="cIk-Cz-iUY.text" restype="string" datatype="x-xib">
         <source>By importing your Apple Health app data into HealthTap, our doctors will know more about you and can serve your needs better</source>
-        <target>Al importar los datos de la aplicación Apple Health a HealthTap, nuestros médicos saben más sobre ti y pueden atender mejor tus necesidades</target>
+        <target>Al importar los datos de Apple Health a HealthTap, nuestros médicos saben más sobre ti y pueden atender mejor tus necesidades</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;By importing your Apple Health app data into HealthTap, our doctors will know more about you and can serve your needs better&quot;; ObjectID = &quot;cIk-Cz-iUY&quot;;</note>
       </trans-unit>
       <trans-unit id="qiN-Ry-U1Q.normalTitle" resname="qiN-Ry-U1Q.normalTitle" restype="string" datatype="x-xib">
@@ -4280,7 +4281,7 @@ y más</target>
       </trans-unit>
       <trans-unit id="BE4-D8-fXn.text" resname="BE4-D8-fXn.text" restype="string" datatype="x-xib">
         <source>Add to Care-Team</source>
-        <target>Agregar a Care-Team &#40;Equipo de atención&#41;</target>
+        <target>Agregar a Care-Team</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Add to Care-Team&quot;; ObjectID = &quot;BE4-D8-fXn&quot;;</note>
       </trans-unit>
       <trans-unit id="LZQ-Qs-wde.normalTitle" resname="LZQ-Qs-wde.normalTitle" restype="string" datatype="x-xib">
@@ -5531,7 +5532,7 @@ y más</target>
     <body>
       <trans-unit id="XpZ-my-QNV.text" resname="XpZ-my-QNV.text" restype="string" datatype="x-xib">
         <source>What is your gender?</source>
-        <target>¿Cuál es tu género?</target>
+        <target>¿Cuál es tu sexo?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What is your gender?&quot;; ObjectID = &quot;XpZ-my-QNV&quot;;</note>
       </trans-unit>
     </body>
@@ -5549,7 +5550,7 @@ y más</target>
     <body>
       <trans-unit id="aET-jA-6Sy.text" resname="aET-jA-6Sy.text" restype="string" datatype="x-xib">
         <source>Help the doctors help you. Complete your private health profile</source>
-        <target>Ayuda a los médicos para que te ayuden. Completa tu perfil privado de salud</target>
+        <target>Ayuda a los médicos para que te ayuden. Completa tu perfil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Help the doctors help you. Complete your private health profile&quot;; ObjectID = &quot;aET-jA-6Sy&quot;;</note>
       </trans-unit>
     </body>
@@ -5563,7 +5564,7 @@ y más</target>
       </trans-unit>
       <trans-unit id="aET-jA-6Sy.text" resname="aET-jA-6Sy.text" restype="string" datatype="x-xib">
         <source>Help the doctors help you. Complete your private health profile</source>
-        <target>Ayuda a los médicos para que te ayuden. Completa tu perfil privado de salud</target>
+        <target>Ayuda a los médicos para que te ayuden. Completa tu perfil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Help the doctors help you. Complete your private health profile&quot;; ObjectID = &quot;aET-jA-6Sy&quot;;</note>
       </trans-unit>
     </body>
@@ -5694,12 +5695,12 @@ y más</target>
       </trans-unit>
       <trans-unit id="WkP-jt-eSD.text" resname="WkP-jt-eSD.text" restype="string" datatype="x-xib">
         <source>Female</source>
-        <target>Femenino</target>
+        <target>Mujer</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Female&quot;; ObjectID = &quot;WkP-jt-eSD&quot;;</note>
       </trans-unit>
       <trans-unit id="eUc-5F-bJo.text" resname="eUc-5F-bJo.text" restype="string" datatype="x-xib">
         <source>Gender:</source>
-        <target>Género:</target>
+        <target>Sexo:</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Gender:&quot;; ObjectID = &quot;eUc-5F-bJo&quot;;</note>
       </trans-unit>
       <trans-unit id="jEU-Pz-VLq.text" resname="jEU-Pz-VLq.text" restype="string" datatype="x-xib">
@@ -5728,7 +5729,7 @@ y más</target>
       </trans-unit>
       <trans-unit id="15H-xA-B3z.text" resname="15H-xA-B3z.text" restype="string" datatype="x-xib">
         <source>Gender:</source>
-        <target>Género:</target>
+        <target>Sexo:</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Gender:&quot;; ObjectID = &quot;15H-xA-B3z&quot;;</note>
       </trans-unit>
       <trans-unit id="AAr-FR-Mlc.placeholder" resname="AAr-FR-Mlc.placeholder" restype="string" datatype="x-xib">
@@ -5738,7 +5739,7 @@ y más</target>
       </trans-unit>
       <trans-unit id="H7l-dL-n8R.text" resname="H7l-dL-n8R.text" restype="string" datatype="x-xib">
         <source>Female</source>
-        <target>Femenino</target>
+        <target>Mujer</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Female&quot;; ObjectID = &quot;H7l-dL-n8R&quot;;</note>
       </trans-unit>
       <trans-unit id="LjJ-7R-Xlq.placeholder" resname="LjJ-7R-Xlq.placeholder" restype="string" datatype="x-xib">
@@ -5772,12 +5773,12 @@ y más</target>
       </trans-unit>
       <trans-unit id="WkP-jt-eSD.text" resname="WkP-jt-eSD.text" restype="string" datatype="x-xib">
         <source>Female</source>
-        <target>Femenino</target>
+        <target>Mujer</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Female&quot;; ObjectID = &quot;WkP-jt-eSD&quot;;</note>
       </trans-unit>
       <trans-unit id="eUc-5F-bJo.text" resname="eUc-5F-bJo.text" restype="string" datatype="x-xib">
         <source>Gender:</source>
-        <target>Género:</target>
+        <target>Sexo:</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Gender:&quot;; ObjectID = &quot;eUc-5F-bJo&quot;;</note>
       </trans-unit>
       <trans-unit id="jEU-Pz-VLq.text" resname="jEU-Pz-VLq.text" restype="string" datatype="x-xib">
@@ -6208,7 +6209,7 @@ y más</target>
       </trans-unit>
       <trans-unit id=" Follow three or more topics of interest" resname=" Follow three or more topics of interest" restype="string">
         <source>Follow three or more topics of interest</source>
-        <target>Sigue tres temas o más de interés</target>
+        <target>Sigue 3 temas o más de interés</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat." resname=" It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat." restype="string">
@@ -6217,9 +6218,9 @@ y más</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" Video or text chat securely with \n top doctors right away \n" resname=" Video or text chat securely with \n top doctors right away \n" restype="string">
-        <source>Video or text chat securely with 
+        <source>Video or text chat securely with
  top doctors right away</source>
-        <target>Habla por video o por texto con 
+        <target>Habla por video o por texto con
  los mejores médicos inmediatamente</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -6397,7 +6398,7 @@ ilimitadas y otros beneficios</target>
       </trans-unit>
       <trans-unit id="%@ &#40;%ld yrs&#41;" resname="%@ &#40;%ld yrs&#41;" restype="string">
         <source>%1$@ &#40;%2$ld yrs&#41;</source>
-        <target>%1$@ &#40;%2$ld años de edad&#41;</target>
+        <target>%1$@ &#40;%2$años de edad&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ &#40;App&#41;" resname="%@ &#40;App&#41;" restype="string">
@@ -6426,9 +6427,9 @@ ilimitadas y otros beneficios</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ \naccepted" resname="%@ \naccepted" restype="string">
-        <source>%@ 
+        <source>%@
 accepted</source>
-        <target>%@ 
+        <target>%@
 aceptado</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -6494,13 +6495,13 @@ aceptado</target>
       </trans-unit>
       <trans-unit id="%@ checklists" resname="%@ checklists" restype="string">
         <source>%@ checklists</source>
-        <target>listas de comprobación de %@</target>
+        <target>%@ listas</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ commented on  \r\n%@&apos;s answer" resname="%@ commented on  \r\n%@&apos;s answer" restype="string">
-        <source>%1$@ commented on  
+        <source>%1$@ commented on
 %2$@&apos;s answer</source>
-        <target>%1$@ commentó en la  
+        <target>%1$@ commentó en la
 respuesta de %2$@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -6510,9 +6511,9 @@ respuesta de %2$@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ commented on \r\n%@&apos;s answer:" resname="%@ commented on \r\n%@&apos;s answer:" restype="string">
-        <source>%1$@ commented on 
+        <source>%1$@ commented on
 %2$@&apos;s answer:</source>
-        <target>%1$@ commentó en la  
+        <target>%1$@ commentó en la
 respuesta de %2$@ :</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -6705,7 +6706,7 @@ How can our doctors help you?</source>
       </trans-unit>
       <trans-unit id="%d checklists" resname="%d checklists" restype="string">
         <source>%d checklists</source>
-        <target>Listas de comprobación de %d</target>
+        <target>%d listas</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%d comments" resname="%d comments" restype="string">
@@ -6785,7 +6786,7 @@ How can our doctors help you?</source>
       </trans-unit>
       <trans-unit id="%i checklists" resname="%i checklists" restype="string">
         <source>%i checklists</source>
-        <target>listas de comprobación de %i</target>
+        <target>%i listas</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%ld checklist" resname="%ld checklist" restype="string">
@@ -6795,7 +6796,7 @@ How can our doctors help you?</source>
       </trans-unit>
       <trans-unit id="%ld checklists" resname="%ld checklists" restype="string">
         <source>%ld checklists</source>
-        <target>Listas de comprobación de %Id</target>
+        <target>%Id listas</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%ld doctor" resname="%ld doctor" restype="string">
@@ -7131,7 +7132,7 @@ available in %@</source>
       </trans-unit>
       <trans-unit id="Add to Care-Team" resname="Add to Care-Team" restype="string">
         <source>Add to Care-Team</source>
-        <target>Agregar a Care-Team &#40;Equipo de atención&#41;</target>
+        <target>Agregar a Care-Team</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Add treatment or procedure" resname="Add treatment or procedure" restype="string">
@@ -7148,7 +7149,7 @@ available in %@</source>
       </trans-unit>
       <trans-unit id="Adding a photo and name helps doctors connect with you." resname="Adding a photo and name helps doctors connect with you." restype="string">
         <source>Adding a photo and name helps doctors connect with you.</source>
-        <target>El Agregar una foto y nombre ayuda a los médicos a conectarse contigo.</target>
+        <target>El agregar una foto y nombre ayuda a los médicos a conectarse contigo.</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Additional doctors for you" resname="Additional doctors for you" restype="string">
@@ -7183,7 +7184,7 @@ available in %@</source>
       </trans-unit>
       <trans-unit id="Address book" resname="Address book" restype="string">
         <source>Address book</source>
-        <target>Libreta de direcciones</target>
+        <target>Contactos</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Advanced Search" resname="Advanced Search" restype="string">
@@ -7412,7 +7413,7 @@ Tu satisfacción está 100% garantizada.</target>
       </trans-unit>
       <trans-unit id="Ask Doctors" resname="Ask Doctors" restype="string">
         <source>Ask Doctors</source>
-        <target>Pregunta a los médicos</target>
+        <target>Pregunta a médicos</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer" resname="Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer" restype="string">
@@ -7435,7 +7436,7 @@ respuestas informativas</target>
       </trans-unit>
       <trans-unit id="Ask doctors" resname="Ask doctors" restype="string">
         <source>Ask doctors</source>
-        <target>Pregunta a los médicos</target>
+        <target>¡Pregunta!</target>
         <note annotates="source">Tab bar label</note>
       </trans-unit>
       <trans-unit id="Ask doctors brief,\nanonymous health questions\nanytime for free" resname="Ask doctors brief,\nanonymous health questions\nanytime for free" restype="string">
@@ -8616,7 +8617,7 @@ Obtén el cuidado correcto para tus necesidades - ¡consulta con un especialista
       </trans-unit>
       <trans-unit id="Doctor Care-Team" resname="Doctor Care-Team" restype="string">
         <source>Doctor Care-Team</source>
-        <target>Care-Team &#40;Equipo de atención&#41; del Médico</target>
+        <target>Care-Team &#40;Equipo de atención&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Doctor Votes" resname="Doctor Votes" restype="string">
@@ -8731,7 +8732,7 @@ Obtén el cuidado correcto para tus necesidades - ¡consulta con un especialista
       </trans-unit>
       <trans-unit id="Done" resname="Done" restype="string">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Dr. %@" resname="Dr. %@" restype="string">
@@ -8932,7 +8933,7 @@ mensual</target>
       </trans-unit>
       <trans-unit id="Feed" resname="Feed" restype="string">
         <source>Feed</source>
-        <target>Alimentación</target>
+        <target>Fuente</target>
         <note annotates="source">Tab bar label</note>
       </trans-unit>
       <trans-unit id="Feel Good :&#41;" resname="Feel Good :&#41;" restype="string">
@@ -8957,7 +8958,7 @@ mensual</target>
       </trans-unit>
       <trans-unit id="Female" resname="Female" restype="string">
         <source>Female</source>
-        <target>Femenino</target>
+        <target>Mujer</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Files" resname="Files" restype="string">
@@ -8992,7 +8993,7 @@ mensual</target>
       </trans-unit>
       <trans-unit id="Find a topic &#40;e.g.: Lose weight&#41;   " resname="Find a topic &#40;e.g.: Lose weight&#41;   " restype="string">
         <source>Find a topic &#40;e.g.: Lose weight&#41;</source>
-        <target>Encuentra un tema &#40;por ej.: Pérdida de peso&#41;</target>
+        <target>Encuentra un tema &#40;e.j. Meditación&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Find app by name or topic                     " resname="Find app by name or topic                     " restype="string">
@@ -9011,11 +9012,11 @@ mensual</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Find doctor-created checklists \n Try them out \n Feel Good :&#41;" resname="Find doctor-created checklists \n Try them out \n Feel Good :&#41;" restype="string">
-        <source>Find doctor-created checklists 
- Try them out 
+        <source>Find doctor-created checklists
+ Try them out
  Feel Good :&#41;</source>
-        <target>Encuentra listas de comprobación creadas por médicos 
- Pruébalas ahora 
+        <target>Encuentra listas de comprobación creadas por médicos
+ Pruébalas ahora
  Siéntete bien :&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -9072,7 +9073,7 @@ Me gustaría completar mi meta de...</target>
       </trans-unit>
       <trans-unit id="For a more personalized experience" resname="For a more personalized experience" restype="string">
         <source>For a more personalized experience</source>
-        <target>Para una experiencia más personalizada</target>
+        <target>Para una experiencia personalizada</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="For medical emergencies, call %@ &#40;or your local emergency services&#41; or go to the nearest %@." resname="For medical emergencies, call %@ &#40;or your local emergency services&#41; or go to the nearest %@." restype="string">
@@ -9188,7 +9189,7 @@ tomar medidas y sentirte bien</target>
       </trans-unit>
       <trans-unit id="Get covered: Connect with other top doctors to build your 24/7 Care-Team" resname="Get covered: Connect with other top doctors to build your 24/7 Care-Team" restype="string">
         <source>Get covered: Connect with other top doctors to build your 24/7 Care-Team</source>
-        <target>Obtén cobertura: Conéctate con otros médicos principales para construir su Care-Team todos los días las 24 horas</target>
+        <target>Obtén cobertura: Conéctate con otros médicos principales para construir tu Care-Team todos los días las 24 horas</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Get doctor notifications" resname="Get doctor notifications" restype="string">
@@ -9445,7 +9446,7 @@ atención primaria para que te consultes con él</target>
       </trans-unit>
       <trans-unit id="Help the doctors help you. Complete your private health profile" resname="Help the doctors help you. Complete your private health profile" restype="string">
         <source>Help the doctors help you. Complete your private health profile</source>
-        <target>Ayuda a los médicos para que te ayuden. Completa tu perfil privado de salud</target>
+        <target>Ayuda a los médicos para que te ayuden. Completa tu perfil </target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Help the doctors understand\nwhat they are looking at" resname="Help the doctors understand\nwhat they are looking at" restype="string">
@@ -9487,7 +9488,7 @@ lo que se busca</target>
       </trans-unit>
       <trans-unit id="Hi %@!" resname="Hi %@!" restype="string">
         <source>Hi %@!</source>
-        <target>¡Hola, %@!</target>
+        <target>¡Hola %@!</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Hi %@,\n\nI would appreciate your help to accomplish my goal of %@.\n\nHealthTap makes it very easy to support those you care for as they achieve their health goals.\n\nAccept my request: %@\n\nThanks for your help!\n%@" resname="Hi %@,\n\nI would appreciate your help to accomplish my goal of %@.\n\nHealthTap makes it very easy to support those you care for as they achieve their health goals.\n\nAccept my request: %@\n\nThanks for your help!\n%@" restype="string">
@@ -9924,7 +9925,7 @@ a sólo una pulsación</target>
       </trans-unit>
       <trans-unit id="Invite friends &amp; family and they&apos;ll get $5 off their next doctor consult!" resname="Invite friends &amp; family and they&apos;ll get $5 off their next doctor consult!" restype="string">
         <source>Invite friends &amp; family and they&apos;ll get $5 off their next doctor consult!</source>
-        <target>¡Invita a amigos y a tu familia y ellos obtendrán $5 de descuento en su próxima consulta médica!</target>
+        <target>¡Invita amigos y familia y ellos obtendrán $5 de descuento en su próxima consulta médica!</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Invite friends and family" resname="Invite friends and family" restype="string">
@@ -9954,7 +9955,7 @@ a sólo una pulsación</target>
       </trans-unit>
       <trans-unit id="Is this for you or someone else?" resname="Is this for you or someone else?" restype="string">
         <source>Is this for you or someone else?</source>
-        <target>¿Es esto para ti o para alguien más?</target>
+        <target>¿Es para ti o para alguien más?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients." resname="It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients." restype="string">
@@ -10674,7 +10675,7 @@ cortas y educativas</target>
       </trans-unit>
       <trans-unit id="Outlook" resname="Outlook" restype="string">
         <source>Outlook</source>
-        <target>Perspectiva</target>
+        <target>Outlook</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Overview" resname="Overview" restype="string">
@@ -10944,9 +10945,9 @@ para tu consulta</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Please share a little about yourself so the \ndoctor can confirm you as a patient" resname="Please share a little about yourself so the \ndoctor can confirm you as a patient" restype="string">
-        <source>Please share a little about yourself so the 
+        <source>Please share a little about yourself so the
 doctor can confirm you as a patient</source>
-        <target>Por favor, comparte un poco acerca de ti para que 
+        <target>Por favor, comparte un poco acerca de ti para que
 el médico pueda confirmarte como paciente</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -11037,7 +11038,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Primary plan holder&apos;s gender:" resname="Primary plan holder&apos;s gender:" restype="string">
         <source>Primary plan holder&apos;s gender:</source>
-        <target>Género del titular del Plan Principal:</target>
+        <target>Sexo del titular del Plan Principal:</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Prime &#40;until %@&#41;" resname="Prime &#40;until %@&#41;" restype="string">
@@ -11407,17 +11408,17 @@ desde la aplicación HealthTap</target>
       </trans-unit>
       <trans-unit id="Search answers, topics, experts" resname="Search answers, topics, experts" restype="string">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas, expertos</target>
+        <target>Busca respuestas, temas, etc...</target>
         <note annotates="source">place holder in search box</note>
       </trans-unit>
       <trans-unit id="Search answers, topics, experts  " resname="Search answers, topics, experts  " restype="string">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas, expertos</target>
+        <target>Busca respuestas, temas, etc...</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
       <trans-unit id="Search answers, topics, experts     " resname="Search answers, topics, experts     " restype="string">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas, expertos</target>
+        <target>Busca respuestas, temas, etc..</target>
         <note annotates="source">search box placeholder</note>
       </trans-unit>
       <trans-unit id="Search by specialty" resname="Search by specialty" restype="string">
@@ -11588,9 +11589,9 @@ gustaría obtener ayuda</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Send a thank you note to \n%@" resname="Send a thank you note to \n%@" restype="string">
-        <source>Send a thank you note to 
+        <source>Send a thank you note to
 %@</source>
-        <target>Enviar una nota de agradecimiento a 
+        <target>Enviar una nota de agradecimiento a
 %@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -12067,12 +12068,12 @@ dispositivo móvil o computadora de escritorio</target>
       </trans-unit>
       <trans-unit id="Tell the doctor more about %@" resname="Tell the doctor more about %@" restype="string">
         <source>Tell the doctor more about %@</source>
-        <target>Cuéntale al médico más acerca de %@</target>
+        <target>Cuéntale al médico más de %@</target>
         <note annotates="source">Title for section to ask for basic info about a specific sub-account</note>
       </trans-unit>
       <trans-unit id="Tell the doctor more about you" resname="Tell the doctor more about you" restype="string">
         <source>Tell the doctor more about you</source>
-        <target>Cuéntale al médico más acerca de ti</target>
+        <target>Cuéntale al médico más de ti</target>
         <note annotates="source">Title for section to ask for basic info about user</note>
       </trans-unit>
       <trans-unit id="Tell your friends &amp; family" resname="Tell your friends &amp; family" restype="string">
@@ -12265,7 +12266,7 @@ en todo momento, en todo lugar</target>
 Change question ›
 
 Alternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor.</source>
-        <target>No hay percepciones médicas inmediatas para tu pregunta. ¿Te gustaría reformular tu pregunta de forma diferente?  
+        <target>No hay percepciones médicas inmediatas para tu pregunta. ¿Te gustaría reformular tu pregunta de forma diferente?
 Cambiar pregunta ›
 
 De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nuestros mejores médicos en %@ o consulta con un médico.</target>
@@ -12342,7 +12343,7 @@ Por favor intenta de nuevo</target>
       </trans-unit>
       <trans-unit id="Three quick things" resname="Three quick things" restype="string">
         <source>Three quick things</source>
-        <target>Tres asuntos breves</target>
+        <target>Tres breves asuntos</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Tip on %@" resname="Tip on %@" restype="string">
@@ -12379,7 +12380,7 @@ por favor suministra tu ubicación actual</target>
       </trans-unit>
       <trans-unit id="To connect you with the right doctors please tell us where you are" resname="To connect you with the right doctors please tell us where you are" restype="string">
         <source>To connect you with the right doctors please tell us where you are</source>
-        <target>Para conectarte con los médicos correctos, por favor dinos dónde estás</target>
+        <target>Para conectarte con médicos correctos, por favor dinos dónde estás</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="To receive personalized insights from doctors, please tell us more about yourself." resname="To receive personalized insights from doctors, please tell us more about yourself." restype="string">
@@ -12515,7 +12516,7 @@ por favor suministra tu ubicación actual</target>
       </trans-unit>
       <trans-unit id="Two quick things" resname="Two quick things" restype="string">
         <source>Two quick things</source>
-        <target>Dos asuntos breves</target>
+        <target>Dos breves asuntos</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Type your question here" resname="Type your question here" restype="string">
@@ -12885,12 +12886,12 @@ médico responda la llamada&#41;</target>
       </trans-unit>
       <trans-unit id="What gender are you?" resname="What gender are you?" restype="string">
         <source>What gender are you?</source>
-        <target>¿Qué género eres?</target>
+        <target>¿Cuál es su sexo?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="What gender is %@?" resname="What gender is %@?" restype="string">
         <source>What gender is %@?</source>
-        <target>¿Qué género es %@?</target>
+        <target>¿Cuál es el sexo de %@?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="What is %@&apos;s ethnicity?" resname="What is %@&apos;s ethnicity?" restype="string">
@@ -13188,7 +13189,7 @@ en tu Apple Watch o iPhone</target>
       </trans-unit>
       <trans-unit id="Yahoo!" resname="Yahoo!" restype="string">
         <source>Yahoo!</source>
-        <target>¡Qué bien!</target>
+        <target>Yahoo!</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Years in practice" resname="Years in practice" restype="string">
@@ -13223,12 +13224,12 @@ en tu Apple Watch o iPhone</target>
       </trans-unit>
       <trans-unit id="You" resname="You" restype="string">
         <source>You</source>
-        <target>Tú</target>
+        <target>Perfíl</target>
         <note annotates="source">Tab bar label</note>
       </trans-unit>
       <trans-unit id="You agree to HealthTap&apos;s Terms and Privacy Policy." resname="You agree to HealthTap&apos;s Terms and Privacy Policy." restype="string">
         <source>You agree to HealthTap&apos;s Terms and Privacy Policy.</source>
-        <target>Estás de acuerdo con los Términos y la Política de Privacidad de HealthTap.</target>
+        <target>Estás de acuerdo con los Términos y la Política de Privacidad <p.</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information." resname="You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information." restype="string">
@@ -13465,7 +13466,7 @@ en tu Apple Watch o iPhone</target>
       </trans-unit>
       <trans-unit id="Your gender:" resname="Your gender:" restype="string">
         <source>Your gender:</source>
-        <target>Tu género:</target>
+        <target>Tu sexo:</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Your internet connection seems spotty. For the best experience, please try again later." resname="Your internet connection seems spotty. For the best experience, please try again later." restype="string">
@@ -13605,7 +13606,7 @@ en tu Apple Watch o iPhone</target>
       </trans-unit>
       <trans-unit id="answered" resname="answered" restype="string">
         <source>answered</source>
-        <target>respondido</target>
+        <target>respondi</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="answers" resname="answers" restype="string">
@@ -14299,7 +14300,7 @@ con un médico disponible de atención primaria</target>
     <body>
       <trans-unit id="OEw-PB-fxA.title" resname="OEw-PB-fxA.title" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIBarButtonItem&quot;; title = &quot;Done&quot;; ObjectID = &quot;OEw-PB-fxA&quot;;</note>
       </trans-unit>
       <trans-unit id="R4r-zX-gQz.text" resname="R4r-zX-gQz.text" restype="string" datatype="x-xib">
@@ -14328,7 +14329,7 @@ con un médico disponible de atención primaria</target>
     <body>
       <trans-unit id="Hat-h5-5XY.normalTitle" resname="Hat-h5-5XY.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;Hat-h5-5XY&quot;;</note>
       </trans-unit>
       <trans-unit id="Wdk-yd-mkO.placeholder" resname="Wdk-yd-mkO.placeholder" restype="string" datatype="x-xib">
@@ -14348,7 +14349,7 @@ con un médico disponible de atención primaria</target>
       <trans-unit id="gJN-lB-iYu.text" resname="gJN-lB-iYu.text" restype="string" datatype="x-xib">
         <source>Want a personalized checklist?
 Our doctors can help</source>
-        <target>¿Deseas una lista de comprobación personalizada?
+        <target>¿Deseas una lista de comprobación?
 Nuestros médicos pueden ayudar</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Want a personalized checklist?\nOur doctors can help&quot;; ObjectID = &quot;gJN-lB-iYu&quot;;</note>
       </trans-unit>
@@ -14399,7 +14400,7 @@ Nuestros médicos pueden ayudar</target>
       <trans-unit id="gJN-lB-iYu.text" resname="gJN-lB-iYu.text" restype="string" datatype="x-xib">
         <source>Want a personalized checklist?
 Our doctors can help</source>
-        <target>¿Deseas una lista de comprobación personalizada?
+        <target>¿Deseas una lista de comprobación?
 Nuestros médicos pueden ayudar</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Want a personalized checklist?\nOur doctors can help&quot;; ObjectID = &quot;gJN-lB-iYu&quot;;</note>
       </trans-unit>
@@ -14487,7 +14488,7 @@ Nuestros médicos pueden ayudar</target>
       </trans-unit>
       <trans-unit id="ZqD-gc-w88.text" resname="ZqD-gc-w88.text" restype="string" datatype="x-xib">
         <source>You</source>
-        <target>Tú</target>
+        <target>Perfíl</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&quot;; ObjectID = &quot;ZqD-gc-w88&quot;;</note>
       </trans-unit>
       <trans-unit id="nHS-K2-3C6.text" resname="nHS-K2-3C6.text" restype="string" datatype="x-xib">
@@ -14609,7 +14610,7 @@ Nuestros médicos pueden ayudar</target>
       </trans-unit>
       <trans-unit id="fak-PA-FU7.text" resname="fak-PA-FU7.text" restype="string" datatype="x-xib">
         <source>We just sent you a link to reset your password.
-If you dont see it after a few minutes, please 
+If you dont see it after a few minutes, please
 check your Spam folder.</source>
         <target>Te acabamos de enviar un enlace para resetear tu contraseña.
 Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Correo no deseado &#40;Spam&#41;.</target>
@@ -14666,7 +14667,7 @@ Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Corr
       </trans-unit>
       <trans-unit id="fak-PA-FU7.text" resname="fak-PA-FU7.text" restype="string" datatype="x-xib">
         <source>We just sent you a link to reset your password.
-If you dont see it after a few minutes, please 
+If you dont see it after a few minutes, please
 check your Spam folder.</source>
         <target>Te acabamos de enviar un enlace para resetear tu contraseña.
 Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Correo no deseado &#40;Spam&#41;.</target>
@@ -14713,10 +14714,10 @@ Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Corr
       </trans-unit>
       <trans-unit id="VLz-E1-cea.text" resname="VLz-E1-cea.text" restype="string" datatype="x-xib">
         <source>If you find HealthTap helpful,
- please take a moment to rate the app 
+ please take a moment to rate the app
 and let the world know :&#41;</source>
         <target>Si piensas que HealthTap es útil,
- por favor tómate un momento para calificar la 
+ por favor tómate un momento para calificar la
 aplicación y deja que el mundo lo sepa :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :&#41;&quot;; ObjectID = &quot;VLz-E1-cea&quot;;</note>
       </trans-unit>
@@ -15167,7 +15168,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="gQ4-TZ-ilb.text" resname="gQ4-TZ-ilb.text" restype="string" datatype="x-xib">
         <source>A doctor is reviewing your chart and will be with you shortly...</source>
-        <target>Un médico está revisando tu gráfico y se pondrá en contacto con usted en breve...</target>
+        <target>Un médico está revisando tus datos y se pondrá en contacto con usted en breve...</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;A doctor is reviewing your chart and will be with you shortly...&quot;; ObjectID = &quot;gQ4-TZ-ilb&quot;;</note>
       </trans-unit>
     </body>
@@ -15284,7 +15285,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="kxo-5P-Ohu.text" resname="kxo-5P-Ohu.text" restype="string" datatype="x-xib">
         <source>Want a personalized checklist?</source>
-        <target>¿Deseas una lista de comprobación personalizada?</target>
+        <target>¿Deseas una lista de comprobación?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Want a personalized checklist?&quot;; ObjectID = &quot;kxo-5P-Ohu&quot;;</note>
       </trans-unit>
       <trans-unit id="rFF-A0-UpR.normalTitle" resname="rFF-A0-UpR.normalTitle" restype="string" datatype="x-xib">
@@ -15377,7 +15378,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="onZ-VX-Qsw.text" resname="onZ-VX-Qsw.text" restype="string" datatype="x-xib">
         <source>You</source>
-        <target>Tú</target>
+        <target>Perfíl</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&quot;; ObjectID = &quot;onZ-VX-Qsw&quot;;</note>
       </trans-unit>
       <trans-unit id="r0s-MV-b9f.normalTitle" resname="r0s-MV-b9f.normalTitle" restype="string" datatype="x-xib">
@@ -15406,7 +15407,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Tma-uJ-MPb.normalTitle" resname="Tma-uJ-MPb.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;Tma-uJ-MPb&quot;;</note>
       </trans-unit>
       <trans-unit id="VXz-HX-691.normalTitle" resname="VXz-HX-691.normalTitle" restype="string" datatype="x-xib">
@@ -15450,7 +15451,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
     <body>
       <trans-unit id="YxO-MQ-lcU.normalTitle" resname="YxO-MQ-lcU.normalTitle" restype="string" datatype="x-xib">
         <source>Ask Docs</source>
-        <target>Pregunta a los doctores</target>
+        <target>¡Pregunta!</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Ask Docs&quot;; ObjectID = &quot;YxO-MQ-lcU&quot;;</note>
       </trans-unit>
       <trans-unit id="p3N-aX-Kac.text" resname="p3N-aX-Kac.text" restype="string" datatype="x-xib">
@@ -15781,7 +15782,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="4da-D0-n6l.normalTitle" resname="4da-D0-n6l.normalTitle" restype="string" datatype="x-xib">
         <source>Enter Manually</source>
-        <target>Ingresar manualmente</target>
+        <target>Especificar</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Enter Manually&quot;; ObjectID = &quot;4da-D0-n6l&quot;;</note>
       </trans-unit>
       <trans-unit id="9zV-vV-fa2.normalTitle" resname="9zV-vV-fa2.normalTitle" restype="string" datatype="x-xib">
@@ -15791,7 +15792,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="99X-R7-6d6.text" resname="99X-R7-6d6.text" restype="string" datatype="x-xib">
         <source>Tell doctors a little more so they can personalize their answers</source>
-        <target>Cuéntale a los médicos un poco más para que así puedan personalizar sus respuestas</target>
+        <target>Cuéntale a los médicos más de ti para que personalizen sus respuestas</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tell doctors a little more so they can personalize their answers&quot;; ObjectID = &quot;99X-R7-6d6&quot;;</note>
       </trans-unit>
       <trans-unit id="Fh5-c6-xTq.normalTitle" resname="Fh5-c6-xTq.normalTitle" restype="string" datatype="x-xib">
@@ -15801,7 +15802,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="GML-oE-S9J.text" resname="GML-oE-S9J.text" restype="string" datatype="x-xib">
         <source>Female</source>
-        <target>Femenino</target>
+        <target>Mujer</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Female&quot;; ObjectID = &quot;GML-oE-S9J&quot;;</note>
       </trans-unit>
       <trans-unit id="H2C-Ta-I8U.normalTitle" resname="H2C-Ta-I8U.normalTitle" restype="string" datatype="x-xib">
@@ -15821,12 +15822,12 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="acw-xH-1Nk.text" resname="acw-xH-1Nk.text" restype="string" datatype="x-xib">
         <source>Gender</source>
-        <target>Género</target>
+        <target>Sexo</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Gender&quot;; ObjectID = &quot;acw-xH-1Nk&quot;;</note>
       </trans-unit>
       <trans-unit id="chX-WY-ard.text" resname="chX-WY-ard.text" restype="string" datatype="x-xib">
         <source>Three quick things</source>
-        <target>Tres asuntos breves</target>
+        <target>Tres breves asuntos</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Three quick things&quot;; ObjectID = &quot;chX-WY-ard&quot;;</note>
       </trans-unit>
       <trans-unit id="dEc-qA-TGI.text" resname="dEc-qA-TGI.text" restype="string" datatype="x-xib">
@@ -15836,7 +15837,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="ekR-eO-2fe.normalTitle" resname="ekR-eO-2fe.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;ekR-eO-2fe&quot;;</note>
       </trans-unit>
       <trans-unit id="i9p-Bm-TbF.normalTitle" resname="i9p-Bm-TbF.normalTitle" restype="string" datatype="x-xib">
@@ -15865,7 +15866,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="4da-D0-n6l.normalTitle" resname="4da-D0-n6l.normalTitle" restype="string" datatype="x-xib">
         <source>Enter Manually</source>
-        <target>Ingresar manualmente</target>
+        <target>Especificar</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Enter Manually&quot;; ObjectID = &quot;4da-D0-n6l&quot;;</note>
       </trans-unit>
       <trans-unit id="9zV-vV-fa2.normalTitle" resname="9zV-vV-fa2.normalTitle" restype="string" datatype="x-xib">
@@ -15875,7 +15876,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="99X-R7-6d6.text" resname="99X-R7-6d6.text" restype="string" datatype="x-xib">
         <source>Tell doctors a little more so they can personalize their answers</source>
-        <target>Cuéntale a los médicos un poco más para que así puedan personalizar sus respuestas</target>
+        <target>Cuéntale a los médicos más de ti para que personalizen sus respuestas</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tell doctors a little more so they can personalize their answers&quot;; ObjectID = &quot;99X-R7-6d6&quot;;</note>
       </trans-unit>
       <trans-unit id="Fh5-c6-xTq.normalTitle" resname="Fh5-c6-xTq.normalTitle" restype="string" datatype="x-xib">
@@ -15885,7 +15886,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="GML-oE-S9J.text" resname="GML-oE-S9J.text" restype="string" datatype="x-xib">
         <source>Female</source>
-        <target>Femenino</target>
+        <target>Mujer</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Female&quot;; ObjectID = &quot;GML-oE-S9J&quot;;</note>
       </trans-unit>
       <trans-unit id="H2C-Ta-I8U.normalTitle" resname="H2C-Ta-I8U.normalTitle" restype="string" datatype="x-xib">
@@ -15905,12 +15906,12 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="acw-xH-1Nk.text" resname="acw-xH-1Nk.text" restype="string" datatype="x-xib">
         <source>Gender</source>
-        <target>Género</target>
+        <target>Sexo</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Gender&quot;; ObjectID = &quot;acw-xH-1Nk&quot;;</note>
       </trans-unit>
       <trans-unit id="chX-WY-ard.text" resname="chX-WY-ard.text" restype="string" datatype="x-xib">
         <source>Three quick things</source>
-        <target>Tres asuntos breves</target>
+        <target>Tres breves asuntos</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Three quick things&quot;; ObjectID = &quot;chX-WY-ard&quot;;</note>
       </trans-unit>
       <trans-unit id="dEc-qA-TGI.text" resname="dEc-qA-TGI.text" restype="string" datatype="x-xib">
@@ -15920,7 +15921,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="ekR-eO-2fe.normalTitle" resname="ekR-eO-2fe.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;ekR-eO-2fe&quot;;</note>
       </trans-unit>
       <trans-unit id="i9p-Bm-TbF.normalTitle" resname="i9p-Bm-TbF.normalTitle" restype="string" datatype="x-xib">
@@ -15954,7 +15955,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="6Vm-1g-Rpv.text" resname="6Vm-1g-Rpv.text" restype="string" datatype="x-xib">
         <source>Female</source>
-        <target>Femenino</target>
+        <target>Mujer</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Female&quot;; ObjectID = &quot;6Vm-1g-Rpv&quot;;</note>
       </trans-unit>
       <trans-unit id="HfV-Ne-xrO.normalTitle" resname="HfV-Ne-xrO.normalTitle" restype="string" datatype="x-xib">
@@ -15964,7 +15965,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="IVf-lr-6RR.text" resname="IVf-lr-6RR.text" restype="string" datatype="x-xib">
         <source>Gender</source>
-        <target>Género</target>
+        <target>Sexo</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Gender&quot;; ObjectID = &quot;IVf-lr-6RR&quot;;</note>
       </trans-unit>
       <trans-unit id="MuS-CS-5QS.normalTitle" resname="MuS-CS-5QS.normalTitle" restype="string" datatype="x-xib">
@@ -15974,7 +15975,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="T8s-sG-avv.normalTitle" resname="T8s-sG-avv.normalTitle" restype="string" datatype="x-xib">
         <source>Enter Manually</source>
-        <target>Ingresar manualmente</target>
+        <target>Especificar</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Enter Manually&quot;; ObjectID = &quot;T8s-sG-avv&quot;;</note>
       </trans-unit>
       <trans-unit id="TlW-RW-s53.text" resname="TlW-RW-s53.text" restype="string" datatype="x-xib">
@@ -15984,12 +15985,12 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="dMV-YS-S9U.text" resname="dMV-YS-S9U.text" restype="string" datatype="x-xib">
         <source>Three quick things</source>
-        <target>Tres asuntos breves</target>
+        <target>Tres breves asuntos</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Three quick things&quot;; ObjectID = &quot;dMV-YS-S9U&quot;;</note>
       </trans-unit>
       <trans-unit id="h32-dc-T7h.normalTitle" resname="h32-dc-T7h.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;h32-dc-T7h&quot;;</note>
       </trans-unit>
       <trans-unit id="hza-ub-hFb.text" resname="hza-ub-hFb.text" restype="string" datatype="x-xib">
@@ -16009,7 +16010,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="vbY-QS-bZT.text" resname="vbY-QS-bZT.text" restype="string" datatype="x-xib">
         <source>Tell doctors a bit more so they can personalize their answers</source>
-        <target>Cuéntale a los médicos un poco más para que así puedan personalizar sus respuestas</target>
+        <target>Cuéntale a los médicos más de ti para que personalizen sus respuestas</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tell doctors a bit more so they can personalize their answers&quot;; ObjectID = &quot;vbY-QS-bZT&quot;;</note>
       </trans-unit>
       <trans-unit id="xmm-R3-6lm.text" resname="xmm-R3-6lm.text" restype="string" datatype="x-xib">
@@ -16238,7 +16239,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="pco-Hg-REj.text" resname="pco-Hg-REj.text" restype="string" datatype="x-xib">
         <source>Invite doctors to your Care-Team</source>
-        <target>Invitar a los médicos a tu Care-Team</target>
+        <target>Invitar a médicos a tu Care-Team</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Invite doctors to your Care-Team&quot;; ObjectID = &quot;pco-Hg-REj&quot;;</note>
       </trans-unit>
       <trans-unit id="sIf-nH-ABw.text" resname="sIf-nH-ABw.text" restype="string" datatype="x-xib">
@@ -16272,7 +16273,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="hgA-lZ-0HN.text" resname="hgA-lZ-0HN.text" restype="string" datatype="x-xib">
         <source>Invite doctors to your Care-Team</source>
-        <target>Invitar a los médicos a tu Care-Team</target>
+        <target>Invita médicos a tu Care-Team</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Invite doctors to your Care-Team&quot;; ObjectID = &quot;hgA-lZ-0HN&quot;;</note>
       </trans-unit>
       <trans-unit id="oBF-BI-yyU.text" resname="oBF-BI-yyU.text" restype="string" datatype="x-xib">
@@ -16311,7 +16312,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="VOX-aa-0XO.text" resname="VOX-aa-0XO.text" restype="string" datatype="x-xib">
         <source>Invite doctors to your Care-Team</source>
-        <target>Invitar a los médicos a tu Care-Team</target>
+        <target>Invita médicos a tu Care-Team</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Invite doctors to your Care-Team&quot;; ObjectID = &quot;VOX-aa-0XO&quot;;</note>
       </trans-unit>
       <trans-unit id="dnm-eL-iBD.text" resname="dnm-eL-iBD.text" restype="string" datatype="x-xib">
@@ -16345,7 +16346,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
     <body>
       <trans-unit id="f1F-0I-3W0.normalTitle" resname="f1F-0I-3W0.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;f1F-0I-3W0&quot;;</note>
       </trans-unit>
       <trans-unit id="hXK-h9-m3r.placeholder" resname="hXK-h9-m3r.placeholder" restype="string" datatype="x-xib">
@@ -16364,7 +16365,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="phL-FD-hmB.normalTitle" resname="phL-FD-hmB.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;phL-FD-hmB&quot;;</note>
       </trans-unit>
       <trans-unit id="xbk-gC-McA.normalTitle" resname="xbk-gC-McA.normalTitle" restype="string" datatype="x-xib">
@@ -16681,7 +16682,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="2Cm-7b-7Gk.text" resname="2Cm-7b-7Gk.text" restype="string" datatype="x-xib">
         <source>Want a personalized checklist?</source>
-        <target>¿Deseas una lista de comprobación personalizada?</target>
+        <target>¿Deseas una lista de comprobación?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Want a personalized checklist?&quot;; ObjectID = &quot;2Cm-7b-7Gk&quot;;</note>
       </trans-unit>
       <trans-unit id="4fT-J6-CGX.normalTitle" resname="4fT-J6-CGX.normalTitle" restype="string" datatype="x-xib">
@@ -16731,7 +16732,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Lsf-It-sJx.normalTitle" resname="Lsf-It-sJx.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;Lsf-It-sJx&quot;;</note>
       </trans-unit>
       <trans-unit id="NMz-ge-Ooq.normalTitle" resname="NMz-ge-Ooq.normalTitle" restype="string" datatype="x-xib">
@@ -17431,7 +17432,7 @@ Podemos proveerle con:</target>
       </trans-unit>
       <trans-unit id="j7C-Ke-d48.normalTitle" resname="j7C-Ke-d48.normalTitle" restype="string" datatype="x-xib">
         <source>Female</source>
-        <target>Femenino</target>
+        <target>Mujer</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Female&quot;; ObjectID = &quot;j7C-Ke-d48&quot;;</note>
       </trans-unit>
       <trans-unit id="l4p-o3-4fo.normalTitle" resname="l4p-o3-4fo.normalTitle" restype="string" datatype="x-xib">
@@ -17441,7 +17442,7 @@ Podemos proveerle con:</target>
       </trans-unit>
       <trans-unit id="l7b-bk-dXP.normalTitle" resname="l7b-bk-dXP.normalTitle" restype="string" datatype="x-xib">
         <source>Enter Manually</source>
-        <target>Ingresar manualmente</target>
+        <target>Especificar</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Enter Manually&quot;; ObjectID = &quot;l7b-bk-dXP&quot;;</note>
       </trans-unit>
       <trans-unit id="lQR-Qu-Nns.text" resname="lQR-Qu-Nns.text" restype="string" datatype="x-xib">
@@ -17456,7 +17457,7 @@ Podemos proveerle con:</target>
       </trans-unit>
       <trans-unit id="myK-Nh-DZZ.normalTitle" resname="myK-Nh-DZZ.normalTitle" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Done&quot;; ObjectID = &quot;myK-Nh-DZZ&quot;;</note>
       </trans-unit>
       <trans-unit id="oRo-w3-rbp.text" resname="oRo-w3-rbp.text" restype="string" datatype="x-xib">
@@ -17490,7 +17491,7 @@ Podemos proveerle con:</target>
     <body>
       <trans-unit id="6QY-vf-rjq.title" resname="6QY-vf-rjq.title" restype="string" datatype="x-xib">
         <source>Done</source>
-        <target>Hecho</target>
+        <target>OK</target>
         <note annotates="source">Class = &quot;UIBarButtonItem&quot;; title = &quot;Done&quot;; ObjectID = &quot;6QY-vf-rjq&quot;;</note>
       </trans-unit>
       <trans-unit id="cSu-8m-iJQ.normalTitle" resname="cSu-8m-iJQ.normalTitle" restype="string" datatype="x-xib">
@@ -18697,7 +18698,7 @@ paga por consulta</target>
       </trans-unit>
       <trans-unit id="S8W-Fp-yEf.text" resname="S8W-Fp-yEf.text" restype="string" datatype="x-xib">
         <source>Is this for you or someone else?</source>
-        <target>¿Es esto para ti o para alguien más?</target>
+        <target>¿Es para ti o alguien más?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Is this for you or someone else?&quot;; ObjectID = &quot;S8W-Fp-yEf&quot;;</note>
       </trans-unit>
       <trans-unit id="Se3-hP-4zf.text" resname="Se3-hP-4zf.text" restype="string" datatype="x-xib">
@@ -18886,7 +18887,7 @@ paga por consulta</target>
       </trans-unit>
       <trans-unit id="5ex-Gs-iwJ.text" resname="5ex-Gs-iwJ.text" restype="string" datatype="x-xib">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call 911 or your local emergency service immediately.</source>
-        <target>Las respuestas en HealthTap no están destinadas para diagnóstico, tratamiento o prescripción médica personal. Si crees que tienes una emergencia médica, llama inmediatamente al 911 o a su servicio de emergencia local.</target>
+        <target>Las respuestas en HealthTap no están destinadas para diagnóstico, tratamiento o prescripción médica personal. Si crees tener una emergencia médica, llame a su servicio de emergencia local.</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call 911 or your local emergency service immediately.&quot;; ObjectID = &quot;5ex-Gs-iwJ&quot;;</note>
       </trans-unit>
       <trans-unit id="6T5-jA-3oS.normalTitle" resname="6T5-jA-3oS.normalTitle" restype="string" datatype="x-xib">
@@ -18971,7 +18972,7 @@ paga por consulta</target>
       </trans-unit>
       <trans-unit id="S8W-Fp-yEf.text" resname="S8W-Fp-yEf.text" restype="string" datatype="x-xib">
         <source>Is this for you or someone else?</source>
-        <target>¿Es esto para ti o para alguien más?</target>
+        <target>¿Es para ti o para alguien más?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Is this for you or someone else?&quot;; ObjectID = &quot;S8W-Fp-yEf&quot;;</note>
       </trans-unit>
       <trans-unit id="Se3-hP-4zf.text" resname="Se3-hP-4zf.text" restype="string" datatype="x-xib">
@@ -19180,10 +19181,10 @@ paga por consulta</target>
       </trans-unit>
       <trans-unit id="F8C-bC-b0r.text" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
         <source>You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.
- 
+
 We&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!</source>
         <target>Has hablado con un médico X veces este mes. Recuerda, Las Consultas virtuales de HealthTap no pretenden reemplazar a su médico de atención primaria o utilizarse como sustituto para establecer una relación con un médico en el mundo real.
- 
+
 Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para permitirnos saber la razón por la que necesita continuar hablando con un médico. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!&quot;; ObjectID = &quot;F8C-bC-b0r&quot;;</note>
       </trans-unit>
@@ -19269,7 +19270,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="gr5-jt-7Lv.text" resname="gr5-jt-7Lv.text" restype="string" datatype="x-xib">
         <source>Is this for you or someone else?</source>
-        <target>¿Es esto para ti o para alguien más?</target>
+        <target>¿Es para ti o para alguien más?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Is this for you or someone else?&quot;; ObjectID = &quot;gr5-jt-7Lv&quot;;</note>
       </trans-unit>
       <trans-unit id="h3h-Xm-Ijj.normalTitle" resname="h3h-Xm-Ijj.normalTitle" restype="string" datatype="x-xib">
@@ -19368,10 +19369,10 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="F8C-bC-b0r.text" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
         <source>You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.
- 
+
 We&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!</source>
         <target>Has hablado con un médico X veces este mes. Recuerda, Las Consultas virtuales de HealthTap no pretenden reemplazar a su médico de atención primaria o utilizarse como sustituto para establecer una relación con un médico en el mundo real.
- 
+
 Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para permitirnos saber la razón por la que necesita continuar hablando con un médico. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!&quot;; ObjectID = &quot;F8C-bC-b0r&quot;;</note>
       </trans-unit>
@@ -19472,7 +19473,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="gr5-jt-7Lv.text" resname="gr5-jt-7Lv.text" restype="string" datatype="x-xib">
         <source>Is this for you or someone else?</source>
-        <target>¿Es esto para ti o para alguien más?</target>
+        <target>¿Es para ti o para alguien más?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Is this for you or someone else?&quot;; ObjectID = &quot;gr5-jt-7Lv&quot;;</note>
       </trans-unit>
       <trans-unit id="h3h-Xm-Ijj.normalTitle" resname="h3h-Xm-Ijj.normalTitle" restype="string" datatype="x-xib">
@@ -19581,7 +19582,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="Rch-rI-jse.text" resname="Rch-rI-jse.text" restype="string" datatype="x-xib">
         <source>Enter code to receive a discount</source>
-        <target>Introduce el código para recibir un descuento</target>
+        <target>Introducelo para recibir un descuento</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Enter code to receive a discount&quot;; ObjectID = &quot;Rch-rI-jse&quot;;</note>
       </trans-unit>
       <trans-unit id="WNe-Od-rhU.text" resname="WNe-Od-rhU.text" restype="string" datatype="x-xib">
@@ -19591,7 +19592,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="XyY-sV-t5a.text" resname="XyY-sV-t5a.text" restype="string" datatype="x-xib">
         <source>Have a promo code?</source>
-        <target>¿Tienes un código de promoción?</target>
+        <target>¿Código de promoción?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a promo code?&quot;; ObjectID = &quot;XyY-sV-t5a&quot;;</note>
       </trans-unit>
       <trans-unit id="niH-eq-Rdo.text" resname="niH-eq-Rdo.text" restype="string" datatype="x-xib">
@@ -19615,7 +19616,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="Rch-rI-jse.text" resname="Rch-rI-jse.text" restype="string" datatype="x-xib">
         <source>Enter code to receive a discount</source>
-        <target>Introduce el código para recibir un descuento</target>
+        <target>Introducelo para recibir un descuento</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Enter code to receive a discount&quot;; ObjectID = &quot;Rch-rI-jse&quot;;</note>
       </trans-unit>
       <trans-unit id="XyY-sV-t5a.text" resname="XyY-sV-t5a.text" restype="string" datatype="x-xib">
@@ -19772,7 +19773,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="igV-TU-avP.text" resname="igV-TU-avP.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que finaliza en</target>
+        <target>Tarjeta que finaliza en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;igV-TU-avP&quot;;</note>
       </trans-unit>
       <trans-unit id="jDq-pV-c8h.normalTitle" resname="jDq-pV-c8h.normalTitle" restype="string" datatype="x-xib">
@@ -21235,7 +21236,7 @@ Pregúntale al Dr. Smith, dietista, por sólo $44</target>
       </trans-unit>
       <trans-unit id="kxo-5P-Ohu.text" resname="kxo-5P-Ohu.text" restype="string" datatype="x-xib">
         <source>Want a personalized checklist?</source>
-        <target>¿Deseas una lista de comprobación personalizada?</target>
+        <target>¿Deseas una lista de comprobación?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Want a personalized checklist?&quot;; ObjectID = &quot;kxo-5P-Ohu&quot;;</note>
       </trans-unit>
       <trans-unit id="rFF-A0-UpR.normalTitle" resname="rFF-A0-UpR.normalTitle" restype="string" datatype="x-xib">
@@ -21723,7 +21724,7 @@ Los médicos están en línea para ayudar.</target>
       </trans-unit>
       <trans-unit id="zL3-MY-r3j.normalTitle" resname="zL3-MY-r3j.normalTitle" restype="string" datatype="x-xib">
         <source>Ask doctors</source>
-        <target>Pregunta a los médicos</target>
+        <target>¡Pregunta!</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Ask doctors&quot;; ObjectID = &quot;zL3-MY-r3j&quot;;</note>
       </trans-unit>
     </body>
