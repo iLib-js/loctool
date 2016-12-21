@@ -1,1603 +1,1871 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2">
   <file original="feelgood/iPadNative/Question/FGiPadSearchQuestionViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="3" resname="%d doctor %@" restype="string" datatype="x-objective-c">
-        <source>%d doctor %@</source><target>%d doctor %@</target>
+        <source>%d doctor %@</source>
+        <target>%d doctor %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/iPadNative/Checklist/FGIpadChecklistViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="8" resname="Find doctor-created checklists \n Try them out \n Feel Good :)" restype="string" datatype="x-objective-c">
-        <source>Find doctor-created checklists \n Try them out \n Feel Good :)</source><target>Encuentra listados creados por doctores \n Pruébalos \n Siéntete Bien :)</target>
+      <trans-unit id="8" resname="Find doctor-created checklists \n Try them out \n Feel Good :&#41;" restype="string" datatype="x-objective-c">
+        <source>Find doctor-created checklists \n Try them out \n Feel Good :&#41;</source>
+        <target>Encuentra listados creados por doctores \n Pruébalos \n Siéntete Bien :&#41;</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Settings/FGTransactionHistoryViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="10" resname="Your next charge will be %@ on %@" restype="string" datatype="x-objective-c">
-        <source>Your next charge will be %@ on %@</source><target>Tu siguiente cargo será %@ el %@</target>
+        <source>Your next charge will be %@ on %@</source>
+        <target>Tu siguiente cargo será %@ el %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTipViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="17" resname="\nwith %@ years of experience:" restype="string" datatype="x-objective-c">
-        <source>\nwith %@ years of experience:</source><target>\ncon %@ años de experiencia:</target>
+        <source>\nwith %@ years of experience:</source>
+        <target>\ncon %@ años de experiencia:</target>
       </trans-unit>
       <trans-unit id="18" resname="Consult %@%@%@" restype="string" datatype="x-objective-c">
-        <source>Consult %@%@%@</source><target>Consulta %@%@%@</target>
+        <source>Consult %@%@%@</source>
+        <target>Consulta %@%@%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocsBuyOneViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="19" resname="Your card no longer seems valid.\n Please try a new one." restype="string" datatype="x-objective-c">
-        <source>Your card no longer seems valid.\n Please try a new one.</source><target>Tu tarjeta ya no parece ser válida.\n Por favor intenta con otra.</target>
+        <source>Your card no longer seems valid.\n Please try a new one.</source>
+        <target>Tu tarjeta ya no parece ser válida.\n Por favor intenta con otra.</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocPickerViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="21" resname="When not to use Virtual Consults\n" restype="string" datatype="x-objective-c">
-        <source>When not to use Virtual Consults\n</source><target>Cuándo no usar Consultas Virtuales\n</target>
+        <source>When not to use Virtual Consults\n</source>
+        <target>Cuándo no usar Consultas Virtuales\n</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocPayViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="24" resname="This is not a valid code\n Please try again." restype="string" datatype="x-objective-c">
-        <source>This is not a valid code\n Please try again.</source><target>Este no es un código válido\n Por favor intenta otra vez.</target>
+        <source>This is not a valid code\n Please try again.</source>
+        <target>Este no es un código válido\n Por favor intenta otra vez.</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="25" resname="Message %@%@" restype="string" datatype="x-objective-c">
-        <source>Message %@%@</source><target>Mensaje %@%@</target>
-        
-      <note>Title for inbox consult to a specific expert</note></trans-unit>
+        <source>Message %@%@</source>
+        <target>Mensaje %@%@</target>
+        <note annotates="source">Title for inbox consult to a specific expert</note>
+      </trans-unit>
       <trans-unit id="26" resname="Chat with %@%@" restype="string" datatype="x-objective-c">
-        <source>Chat with %@%@</source><target>Chat con %@%@</target>
-        
-      <note>Title for live chat with a specific expert</note></trans-unit>
-      <trans-unit id="27" resname="For medical emergencies, call %@ (or your local emergency services) or go to the nearest %@." restype="string" datatype="x-objective-c">
-        <source>For medical emergencies, call %@ (or your local emergency services) or go to the nearest %@.</source><target>Para emergencias médicas, llama al %@ (o tus servicios de emergencia locales) o ve al %@ más cercano.</target>
+        <source>Chat with %@%@</source>
+        <target>Chat con %@%@</target>
+        <note annotates="source">Title for live chat with a specific expert</note>
+      </trans-unit>
+      <trans-unit id="27" resname="For medical emergencies, call %@ &#40;or your local emergency services&#41; or go to the nearest %@." restype="string" datatype="x-objective-c">
+        <source>For medical emergencies, call %@ &#40;or your local emergency services&#41; or go to the nearest %@.</source>
+        <target>Para emergencias médicas, llama al %@ &#40;o tus servicios de emergencia locales&#41; o ve al %@ más cercano.</target>
       </trans-unit>
       <trans-unit id="28" resname="Not in %@? %@" restype="string" datatype="x-objective-c">
-        <source>Not in %@? %@</source><target>¿No en %@? %@</target>
+        <source>Not in %@? %@</source>
+        <target>¿No en %@? %@</target>
       </trans-unit>
       <trans-unit id="29" resname="When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:" restype="string" datatype="x-objective-c">
-        <source>When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:</source><target>Cuándo no usar Consultas Virtuales\nCualquier problema médico que amenace la vida. Por ejemplo, si experimentas cualesquiera de los siguientes problemas médicos ve inmediatamente a un %@:</target>
+        <source>When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:</source>
+        <target>Cuándo no usar Consultas Virtuales\nCualquier problema médico que amenace la vida. Por ejemplo, si experimentas cualesquiera de los siguientes problemas médicos ve inmediatamente a un %@:</target>
       </trans-unit>
-      <trans-unit id="30" resname="Would you like to invite a translator to join this consult?\n(Additional %@)" restype="string" datatype="x-objective-c">
-        <source>Would you like to invite a translator to join this consult?\n(Additional %@)</source><target>¿Te gustaría invitar a un traductor para que se una a esta consulta?\n(%@ adicional)</target>
-        
-      <note>question to offser translation service with extra cost at end</note></trans-unit>
+      <trans-unit id="30" resname="Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;" restype="string" datatype="x-objective-c">
+        <source>Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;</source>
+        <target>¿Te gustaría invitar a un traductor para que se una a esta consulta?\n&#40;%@ adicional&#41;</target>
+        <note annotates="source">question to offser translation service with extra cost at end</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGSideMenuViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="44" resname="%@ (%ld yrs)" restype="string" datatype="x-objective-c">
-        <source>%@ (%ld yrs)</source><target>%@ (%ld años de edad)</target>
+      <trans-unit id="44" resname="%@ &#40;%ld yrs&#41;" restype="string" datatype="x-objective-c">
+        <source>%@ &#40;%ld yrs&#41;</source>
+        <target>%@ &#40;%ld años de edad&#41;</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGNuxInviteDoctorViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="49" resname="Please share a little about yourself so the \ndoctor can confirm you as a patient" restype="string" datatype="x-objective-c">
-        <source>Please share a little about yourself so the \ndoctor can confirm you as a patient</source><target>Por favor comparte un poco acerca de ti para que el \ndoctor te pueda confirmar como paciente.</target>
+        <source>Please share a little about yourself so the \ndoctor can confirm you as a patient</source>
+        <target>Por favor comparte un poco acerca de ti para que el \ndoctor te pueda confirmar como paciente.</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGNewsBrowserViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="52" resname="%@ and %@" restype="string" datatype="x-objective-c">
-        <source>%@ and %@</source><target>%@ y %@</target>
+        <source>%@ and %@</source>
+        <target>%@ y %@</target>
       </trans-unit>
-      <trans-unit id="58" resname="%@ %@your gratitude :)" restype="string" datatype="x-objective-c">
-        <source>%@ %@your gratitude :)</source><target>%@ %@tu gratitud :D</target>
+      <trans-unit id="58" resname="%@ %@your gratitude :&#41;" restype="string" datatype="x-objective-c">
+        <source>%@ %@your gratitude :&#41;</source>
+        <target>%@ %@tu gratitud :D</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGMomentDetailViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="59" resname="%@, Known for %@" restype="string" datatype="x-objective-c">
-        <source>%@, Known for %@</source><target>%@, Conocido por %@</target>
+        <source>%@, Known for %@</source>
+        <target>%@, Conocido por %@</target>
       </trans-unit>
       <trans-unit id="61" resname="Send a thank you note to \n%@" restype="string" datatype="x-objective-c">
-        <source>Send a thank you note to \n%@</source><target>Envía una nota de agradecimienot a \n%@</target>
+        <source>Send a thank you note to \n%@</source>
+        <target>Envía una nota de agradecimienot a \n%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTTopicSearchResultContentView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="72" resname="%@ (%@)" restype="string" datatype="x-objective-c">
-        <source>%@ (%@)</source><target>%@ (%@)</target>
+      <trans-unit id="72" resname="%@ &#40;%@&#41;" restype="string" datatype="x-objective-c">
+        <source>%@ &#40;%@&#41;</source>
+        <target>%@ &#40;%@&#41;</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTTechnicalProblemUpsellView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="73" resname="Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?" restype="string" datatype="x-objective-c">
-        <source>Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?</source><target>Gracias a %@, podemos conectarte con otro doctor de forma gratuita. \n\n¿Te gustaría realizar otra consulta?</target>
+        <source>Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?</source>
+        <target>Gracias a %@, podemos conectarte con otro doctor de forma gratuita. \n\n¿Te gustaría realizar otra consulta?</target>
       </trans-unit>
       <trans-unit id="74" resname="As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed." restype="string" datatype="x-objective-c">
-        <source>As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed.</source><target>Como un suscriptor Premium, podemos conectarte con otro doctor de forma GRATUITA. \n\n¿Te gustaría realizar otra consulta?\n\nTu satisfacción está 100% garantizada.</target>
+        <source>As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed.</source>
+        <target>Como un suscriptor Premium, podemos conectarte con otro doctor de forma GRATUITA. \n\n¿Te gustaría realizar otra consulta?\n\nTu satisfacción está 100% garantizada.</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSupportInfoLabel.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="75" resname="Questions about the service?\n Please visit our" restype="string" datatype="x-objective-c">
-        <source>Questions about the service?\n Please visit our</source><target>¿Preguntas acerca del servicio?\n Por favor visita nuestra</target>
+        <source>Questions about the service?\n Please visit our</source>
+        <target>¿Preguntas acerca del servicio?\n Por favor visita nuestra</target>
       </trans-unit>
       <trans-unit id="76" resname="Questions about the service?\nPlease call us at %@\nor email us at %@" restype="string" datatype="x-objective-c">
-        <source>Questions about the service?\nPlease call us at %@\nor email us at %@</source><target>¿Preguntas acerca del servicio?\nPor favor llámanos al %@\no envíanos un correo electrónico a %@</target>
+        <source>Questions about the service?\nPlease call us at %@\nor email us at %@</source>
+        <target>¿Preguntas acerca del servicio?\nPor favor llámanos al %@\no envíanos un correo electrónico a %@</target>
       </trans-unit>
       <trans-unit id="77" resname="Questions about the service? Please call us at %@\nor email us at %@" restype="string" datatype="x-objective-c">
-        <source>Questions about the service? Please call us at %@\nor email us at %@</source><target>¿Preguntas acerca del servicio? Por favor llámanos al %@\no envíanos un correo electrónico a &amp;@</target>
+        <source>Questions about the service? Please call us at %@\nor email us at %@</source>
+        <target>¿Preguntas acerca del servicio? Por favor llámanos al %@\no envíanos un correo electrónico a &amp;@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSpecialistNeededUpsellView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="78" resname="Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!" restype="string" datatype="x-objective-c">
-        <source>Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!</source><target>¿Sabías que gracias a %@ puedes tener consultas con descuento con los mejores doctores Concierge en más de 100+ especialidades?\n\nObtén la atención adecuada para tus necesidades - ¡consulta con un especialista hoy!</target>
+        <source>Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!</source>
+        <target>¿Sabías que gracias a %@ puedes tener consultas con descuento con los mejores doctores Concierge en más de 100+ especialidades?\n\nObtén la atención adecuada para tus necesidades - ¡consulta con un especialista hoy!</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSoSHeaderCollectionReusableView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="80" resname="Hi %@,\nmembers in your area are experiencing %@. How can our doctors help you?" restype="string" datatype="x-objective-c">
-        <source>Hi %@,\nmembers in your area are experiencing %@. How can our doctors help you?</source><target>Hola %@,\nmiembros en tu área están experimentando %@- ¿Cómo pueden ayudarte nuestros doctores?</target>
+        <source>Hi %@,\nmembers in your area are experiencing %@. How can our doctors help you?</source>
+        <target>Hola %@,\nmiembros en tu área están experimentando %@- ¿Cómo pueden ayudarte nuestros doctores?</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSimilarQuestionsHeaderCollectionReusableView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="81" resname="Select how you would\nlike to get help" restype="string" datatype="x-objective-c">
-        <source>Select how you would\nlike to get help</source><target>Selecciona como te\ngustaría obtener ayuda</target>
+        <source>Select how you would\nlike to get help</source>
+        <target>Selecciona como te\ngustaría obtener ayuda</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSendQuestionCollectionReusableView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="84" resname="There are no immediate doctor insights for your question. Would you like to re-ask your question differently?\nChange question ›\n\nAlternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor." restype="string" datatype="x-objective-c">
-        <source>There are no immediate doctor insights for your question. Would you like to re-ask your question differently?\nChange question ›\n\nAlternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor.</source><target>No hay perspicacias de doctor para tu pregunta. ¿Te gustaría volver a hacer tu pregunta de una forma diferente?\nCambia tu pregunta ›\n\nAlternativamente, puedes enviar tu pregunta para una o más respuestas de nuestros %@ mejores doctores o consultar con un doctor.</target>
+        <source>There are no immediate doctor insights for your question. Would you like to re-ask your question differently?\nChange question ›\n\nAlternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor.</source>
+        <target>No hay perspicacias de doctor para tu pregunta. ¿Te gustaría volver a hacer tu pregunta de una forma diferente?\nCambia tu pregunta ›\n\nAlternativamente, puedes enviar tu pregunta para una o más respuestas de nuestros %@ mejores doctores o consultar con un doctor.</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSendKudosView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="85" resname="You helped %@ with %@. %@ performed the following action:\n%@" restype="string" datatype="x-objective-c">
-        <source>You helped %@ with %@. %@ performed the following action:\n%@</source><target>Ayudaste a %@ con %@- %@ realizó la siguiente acción:\n%@</target>
+        <source>You helped %@ with %@. %@ performed the following action:\n%@</source>
+        <target>Ayudaste a %@ con %@- %@ realizó la siguiente acción:\n%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSendKudosSuccessConfirmationAlsoSubscribedView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="86" resname="%@ is incredibly grateful for your support! Getting healthy is awesome. How are you doing on your checklist for %@?" restype="string" datatype="x-objective-c">
-        <source>%@ is incredibly grateful for your support! Getting healthy is awesome. How are you doing on your checklist for %@?</source><target>¡%@ está increíblemente agradecido por tu apoyo! Volverse sano es grandioso. ¿Cómo vas con tu listado para %@?</target>
+        <source>%@ is incredibly grateful for your support! Getting healthy is awesome. How are you doing on your checklist for %@?</source>
+        <target>¡%@ está increíblemente agradecido por tu apoyo! Volverse sano es grandioso. ¿Cómo vas con tu listado para %@?</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSearchHeaderCollectionReusableView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="87" resname="%@,\nHow can our doctors help you?" restype="string" datatype="x-objective-c">
-        <source>%@,\nHow can our doctors help you?</source><target>%@,\n¿Cómo pueden ayudarte nuestros doctores?</target>
+        <source>%@,\nHow can our doctors help you?</source>
+        <target>%@,\n¿Cómo pueden ayudarte nuestros doctores?</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTQuestionAnsweredContentView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="88" resname="%@ agreed with %@'s answer." restype="string" datatype="x-objective-c">
-        <source>%@ agreed with %@'s answer.</source><target>%@ estuvo de acuerdo con la respuesta de %@.</target>
+      <trans-unit id="88" resname="%@ agreed with %@&apos;s answer." restype="string" datatype="x-objective-c">
+        <source>%@ agreed with %@&apos;s answer.</source>
+        <target>%@ estuvo de acuerdo con la respuesta de %@.</target>
       </trans-unit>
-      <trans-unit id="89" resname="%@ commented on %@'s answer" restype="string" datatype="x-objective-c">
-        <source>%@ commented on %@'s answer</source><target>%@ comentó en la respuesta de %@</target>
+      <trans-unit id="89" resname="%@ commented on %@&apos;s answer" restype="string" datatype="x-objective-c">
+        <source>%@ commented on %@&apos;s answer</source>
+        <target>%@ comentó en la respuesta de %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTPrimeTutorialView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="90" resname="The easiest way to\nimmediately speak with\na primary care doctor,\nanytime, anywhere" restype="string" datatype="x-objective-c">
-        <source>The easiest way to\nimmediately speak with\na primary care doctor,\nanytime, anywhere</source><target>La manera mas sencilla de\nhablar inmediatamente con\nun doctor de atención primaria,\na cualquier hora y en cualquier lugar</target>
+        <source>The easiest way to\nimmediately speak with\na primary care doctor,\nanytime, anywhere</source>
+        <target>La manera mas sencilla de\nhablar inmediatamente con\nun doctor de atención primaria,\na cualquier hora y en cualquier lugar</target>
       </trans-unit>
       <trans-unit id="91" resname="Enter your question for the doctor,\nadd details about you and your\nhealth, and pay for a monthly\nsubscription" restype="string" datatype="x-objective-c">
-        <source>Enter your question for the doctor,\nadd details about you and your\nhealth, and pay for a monthly\nsubscription</source><target>Ingresa tu pregunta para el doctor,\ny añade detalles acerca de ti y tu\nsalud, y paga por una suscripción\nmensual</target>
+        <source>Enter your question for the doctor,\nadd details about you and your\nhealth, and pay for a monthly\nsubscription</source>
+        <target>Ingresa tu pregunta para el doctor,\ny añade detalles acerca de ti y tu\nsalud, y paga por una suscripción\nmensual</target>
       </trans-unit>
       <trans-unit id="92" resname="Talk live via video, voice,\nand/or text chat from your mobile\ndevice or desktop computer" restype="string" datatype="x-objective-c">
-        <source>Talk live via video, voice,\nand/or text chat from your mobile\ndevice or desktop computer</source><target>Habla en vivo a través de chat de texto, voz o video desde tu dispositivo\nmóvil o computadora de escritorio.</target>
+        <source>Talk live via video, voice,\nand/or text chat from your mobile\ndevice or desktop computer</source>
+        <target>Habla en vivo a través de chat de texto, voz o video desde tu dispositivo\nmóvil o computadora de escritorio.</target>
       </trans-unit>
       <trans-unit id="93" resname="Get advice and treatment\nimmediately with helpful reminders\nafter your consult to\ntake action and feel good" restype="string" datatype="x-objective-c">
-        <source>Get advice and treatment\nimmediately with helpful reminders\nafter your consult to\ntake action and feel good</source><target>Obtén consejo y tratamiento\ninmediatamente con recordatorios útiles\ndespués de tu consulta para\ntomar acción y sentirte bien</target>
+        <source>Get advice and treatment\nimmediately with helpful reminders\nafter your consult to\ntake action and feel good</source>
+        <target>Obtén consejo y tratamiento\ninmediatamente con recordatorios útiles\ndespués de tu consulta para\ntomar acción y sentirte bien</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTPrimeAdSearchResultContentView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="94" resname="Get a personalized doctor answer\nnow via video or text chat" restype="string" datatype="x-objective-c">
-        <source>Get a personalized doctor answer\nnow via video or text chat</source><target>Obtén una respuesta de doctor personalizada\nahora a tra´ves de chat de texto o video</target>
+        <source>Get a personalized doctor answer\nnow via video or text chat</source>
+        <target>Obtén una respuesta de doctor personalizada\nahora a tra´ves de chat de texto o video</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTNoSearchResultsFoundView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="96" resname="Sorry, no results were found.\nCheck the spelling or try another search." restype="string" datatype="x-objective-c">
-        <source>Sorry, no results were found.\nCheck the spelling or try another search.</source><target>Perdón, no se encontraron resultados.\nVerifica la ortografía o intenta otra búsqueda.</target>
+        <source>Sorry, no results were found.\nCheck the spelling or try another search.</source>
+        <target>Perdón, no se encontraron resultados.\nVerifica la ortografía o intenta otra búsqueda.</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTLoginPopupView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="100" resname="I agree to the %@ and %@" restype="string" datatype="x-objective-c">
-        <source>I agree to the %@ and %@</source><target>Yo acepto los %@ y %@</target>
+        <source>I agree to the %@ and %@</source>
+        <target>Yo acepto los %@ y %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTLocationPickerViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="101" resname="To connect you with the right doctor,\nplease provide your current location" restype="string" datatype="x-objective-c">
-        <source>To connect you with the right doctor,\nplease provide your current location</source><target>Para conectarte con el doctor adecuado,\npor favor proporciona tu ubicación actual</target>
+        <source>To connect you with the right doctor,\nplease provide your current location</source>
+        <target>Para conectarte con el doctor adecuado,\npor favor proporciona tu ubicación actual</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTLocationEnforcer.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="102" resname="It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients." restype="string" datatype="x-objective-c">
-        <source>It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients.</source><target>Parece que estás cerca de %@ Por favor confirma que en realidad estás en %@ Los doctores no pueden brindarte, legalmente, consejo médico o recetarte tratamientos si no estás ubicado en un estado donde tengan licencia para ver pacientes.</target>
+        <source>It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients.</source>
+        <target>Parece que estás cerca de %@ Por favor confirma que en realidad estás en %@ Los doctores no pueden brindarte, legalmente, consejo médico o recetarte tratamientos si no estás ubicado en un estado donde tengan licencia para ver pacientes.</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTLocationDetectionView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="103" resname="One moment while we find\nthe right doctors for your location..." restype="string" datatype="x-objective-c">
-        <source>One moment while we find\nthe right doctors for your location...</source><target>Un momento mientras encontramos\na los doctores adecuados para tu ubicación...</target>
+        <source>One moment while we find\nthe right doctors for your location...</source>
+        <target>Un momento mientras encontramos\na los doctores adecuados para tu ubicación...</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTKudosSendReminderView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="104" resname="%@ needs your help %@" restype="string" datatype="x-objective-c">
-        <source>%@ needs your help %@</source><target>%@ necesita de tu ayuda %@</target>
+        <source>%@ needs your help %@</source>
+        <target>%@ necesita de tu ayuda %@</target>
       </trans-unit>
       <trans-unit id="105" resname="Remind %@ to:\n%@" restype="string" datatype="x-objective-c">
-        <source>Remind %@ to:\n%@</source><target>Recordar a %@ de:\n%@</target>
+        <source>Remind %@ to:\n%@</source>
+        <target>Recordar a %@ de:\n%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTKudosSendReminderSuccessAlsoSubscribedView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="106" resname="%@ appreciates your support. How are you doing on your checklist for %@?" restype="string" datatype="x-objective-c">
-        <source>%@ appreciates your support. How are you doing on your checklist for %@?</source><target>%@ aprecia tu apoyo. ¿Cómo vas con tu listado para %@?</target>
+        <source>%@ appreciates your support. How are you doing on your checklist for %@?</source>
+        <target>%@ aprecia tu apoyo. ¿Cómo vas con tu listado para %@?</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTKudosInviteFlowManager.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="107" resname="I'd love your help to accomplish my goal of %@. Follow this link to see how: %@" restype="string" datatype="x-objective-c">
-        <source>I'd love your help to accomplish my goal of %@. Follow this link to see how: %@</source><target>Me encantaría tu ayuda para alcanzar mi meta de %@ Sigue este enlace para ver cómo: %@</target>
+      <trans-unit id="107" resname="I&apos;d love your help to accomplish my goal of %@. Follow this link to see how: %@" restype="string" datatype="x-objective-c">
+        <source>I&apos;d love your help to accomplish my goal of %@. Follow this link to see how: %@</source>
+        <target>Me encantaría tu ayuda para alcanzar mi meta de %@ Sigue este enlace para ver cómo: %@</target>
       </trans-unit>
       <trans-unit id="108" resname="Hi %@,\n\nI would appreciate your help to accomplish my goal of %@.\n\nHealthTap makes it very easy to support those you care for as they achieve their health goals.\n\nAccept my request: %@\n\nThanks for your help!\n%@" restype="string" datatype="x-objective-c">
-        <source>Hi %@,\n\nI would appreciate your help to accomplish my goal of %@.\n\nHealthTap makes it very easy to support those you care for as they achieve their health goals.\n\nAccept my request: %@\n\nThanks for your help!\n%@</source><target>Hola %@,\n\nApreciaría tu ayuda para alcanzar mi meta de %@.\n\nHealthTap hace muy fácil apoyar aquellos que te importan mientras alcanzan sus metas de salud.\n\nAcepta mi solicitud: %@\n\n¡Gracias por tu ayuda!\n%@</target>
+        <source>Hi %@,\n\nI would appreciate your help to accomplish my goal of %@.\n\nHealthTap makes it very easy to support those you care for as they achieve their health goals.\n\nAccept my request: %@\n\nThanks for your help!\n%@</source>
+        <target>Hola %@,\n\nApreciaría tu ayuda para alcanzar mi meta de %@.\n\nHealthTap hace muy fácil apoyar aquellos que te importan mientras alcanzan sus metas de salud.\n\nAcepta mi solicitud: %@\n\n¡Gracias por tu ayuda!\n%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTKudosGoalNameInputView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="109" resname="Finish this sentence:\nI'd like to accomplish my goal of..." restype="string" datatype="x-objective-c">
-        <source>Finish this sentence:\nI'd like to accomplish my goal of...</source><target>Termina este enunciado:\nMe gustaría alcanzar mi meta de...</target>
+      <trans-unit id="109" resname="Finish this sentence:\nI&apos;d like to accomplish my goal of..." restype="string" datatype="x-objective-c">
+        <source>Finish this sentence:\nI&apos;d like to accomplish my goal of...</source>
+        <target>Termina este enunciado:\nMe gustaría alcanzar mi meta de...</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTInsuranceApplyDetailsView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="110" resname="%@ \naccepted" restype="string" datatype="x-objective-c">
-        <source>%@ \naccepted</source><target>%@ \naceptado</target>
+        <source>%@ \naccepted</source>
+        <target>%@ \naceptado</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTDoctorSearchResultContentView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="111" resname="%@: %@" restype="string" datatype="x-objective-c">
-        <source>%@: %@</source><target>%@: %@</target>
+        <source>%@: %@</source>
+        <target>%@: %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTConsultToolTipPopUpView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="112" resname="Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:" restype="string" datatype="x-objective-c">
-        <source>Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:</source><target>Envía tu pregunta para recibir una o más respuestas educativas en texto dentro de un día de nuestra red de %@ doctores de 137 especialidades.\n\nHabla con un doctor en una consulta privada si quieres:</target>
+        <source>Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:</source>
+        <target>Envía tu pregunta para recibir una o más respuestas educativas en texto dentro de un día de nuestra red de %@ doctores de 137 especialidades.\n\nHabla con un doctor en una consulta privada si quieres:</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTConciergeTutorialView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="114" resname="Consult your doctors or\nspecialists at your\nconvenience" restype="string" datatype="x-objective-c">
-        <source>Consult your doctors or\nspecialists at your\nconvenience</source><target>Consulta a tus doctores o\nespecialistas según tu\nconveniencia</target>
+        <source>Consult your doctors or\nspecialists at your\nconvenience</source>
+        <target>Consulta a tus doctores o\nespecialistas según tu\nconveniencia</target>
       </trans-unit>
       <trans-unit id="115" resname="Choose a doctor to ask your\nquestion, pay for your consult,\nthen send your message or\nschedule a video chat" restype="string" datatype="x-objective-c">
-        <source>Choose a doctor to ask your\nquestion, pay for your consult,\nthen send your message or\nschedule a video chat</source><target>Elige un doctor para hacer tu\npregunta, pagar por tu consulta,\nluego envía tu mensaje o\nagenda un chat de video</target>
+        <source>Choose a doctor to ask your\nquestion, pay for your consult,\nthen send your message or\nschedule a video chat</source>
+        <target>Elige un doctor para hacer tu\npregunta, pagar por tu consulta,\nluego envía tu mensaje o\nagenda un chat de video</target>
       </trans-unit>
       <trans-unit id="116" resname="Talk live via video,\nvoice, and/or text chat from your\nmobile device or desktop computer" restype="string" datatype="x-objective-c">
-        <source>Talk live via video,\nvoice, and/or text chat from your\nmobile device or desktop computer</source><target>Habla en vivo a través de chat de texto,\nvoz y/o video desde tu\ndispositivo nmóvil o computadora de escritorio.</target>
+        <source>Talk live via video,\nvoice, and/or text chat from your\nmobile device or desktop computer</source>
+        <target>Habla en vivo a través de chat de texto,\nvoz y/o video desde tu\ndispositivo nmóvil o computadora de escritorio.</target>
       </trans-unit>
       <trans-unit id="117" resname="Get advice and treatment\nimmediately with helpful reminders\nafter your consult to take\naction and feel good" restype="string" datatype="x-objective-c">
-        <source>Get advice and treatment\nimmediately with helpful reminders\nafter your consult to take\naction and feel good</source><target>Obtén consejo y tratamiento\ninmediatamente con recordatorios útiles\ndespués de tu consulta para tomar\nacción y sentirte bien</target>
+        <source>Get advice and treatment\nimmediately with helpful reminders\nafter your consult to take\naction and feel good</source>
+        <target>Obtén consejo y tratamiento\ninmediatamente con recordatorios útiles\ndespués de tu consulta para tomar\nacción y sentirte bien</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTConciergeAdSearchResultRowView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="118" resname="%@, %@ years in practice" restype="string" datatype="x-objective-c">
-        <source>%@, %@ years in practice</source><target>%@, %@ años ejerciendo</target>
+        <source>%@, %@ years in practice</source>
+        <target>%@, %@ años ejerciendo</target>
       </trans-unit>
       <trans-unit id="119" resname="%@, %@ year in practice" restype="string" datatype="x-objective-c">
-        <source>%@, %@ year in practice</source><target>%@, %@ año ejerciendo</target>
+        <source>%@, %@ year in practice</source>
+        <target>%@, %@ año ejerciendo</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTConciergeAdSearchResultHeaderView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="120" resname="Consult a top doctor in%@ %@" restype="string" datatype="x-objective-c">
-        <source>Consult a top doctor in%@ %@</source><target>Consulta con uno d elos mejores doctores en%@ %@</target>
+        <source>Consult a top doctor in%@ %@</source>
+        <target>Consulta con uno d elos mejores doctores en%@ %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhoAskDoctorsFlowView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="121" resname="HealthTap will find the best primary\ncare doctor for you to consult" restype="string" datatype="x-objective-c">
-        <source>HealthTap will find the best primary\ncare doctor for you to consult</source><target>HealthTap encontrará al mejor doctor de atención\nprimaria para que consultes</target>
+        <source>HealthTap will find the best primary\ncare doctor for you to consult</source>
+        <target>HealthTap encontrará al mejor doctor de atención\nprimaria para que consultes</target>
       </trans-unit>
       <trans-unit id="122" resname="From which doctor would\nyou like help?" restype="string" datatype="x-objective-c">
-        <source>From which doctor would\nyou like help?</source><target>¿De cuál doctor te gustaría\n ayuda?</target>
+        <source>From which doctor would\nyou like help?</source>
+        <target>¿De cuál doctor te gustaría\n ayuda?</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhenConciergeDisabledAskDoctorsFlowViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="123" resname="by video, voice, or text chat\nwith a primary care doctor" restype="string" datatype="x-objective-c">
-        <source>by video, voice, or text chat\nwith a primary care doctor</source><target>a través de chat de texto, voz o video\ncon un doctor de atención primaria</target>
+        <source>by video, voice, or text chat\nwith a primary care doctor</source>
+        <target>a través de chat de texto, voz o video\ncon un doctor de atención primaria</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhenAskDoctorsFlowViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="124" resname="24/7 virtual consults are not yet\navailable in %@" restype="string" datatype="x-objective-c">
-        <source>24/7 virtual consults are not yet\navailable in %@</source><target>Consultas virtuales 24/7 aún no están\ndisponibles en %@</target>
+        <source>24/7 virtual consults are not yet\navailable in %@</source>
+        <target>Consultas virtuales 24/7 aún no están\ndisponibles en %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhenAskDoctorsFlowView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="125" resname="by video, voice, or text chat\nwith an available primary care doctor" restype="string" datatype="x-objective-c">
-        <source>by video, voice, or text chat\nwith an available primary care doctor</source><target>a través de chat de texto, voz o video\ncon un doctor de atención primaria disponible</target>
+        <source>by video, voice, or text chat\nwith an available primary care doctor</source>
+        <target>a través de chat de texto, voz o video\ncon un doctor de atención primaria disponible</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhatAskDoctorsFlowView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="126" resname="Share personal health information\nand get advice and treatment" restype="string" datatype="x-objective-c">
-        <source>Share personal health information\nand get advice and treatment</source><target>Comparte información de salud personal\ny obtén consejo y tratamiento</target>
+        <source>Share personal health information\nand get advice and treatment</source>
+        <target>Comparte información de salud personal\ny obtén consejo y tratamiento</target>
       </trans-unit>
       <trans-unit id="127" resname="Ask anonymously and get\ninformational answers" restype="string" datatype="x-objective-c">
-        <source>Ask anonymously and get\ninformational answers</source><target>Pregunta anónimamente y obtén\nrespuestas informativas</target>
+        <source>Ask anonymously and get\ninformational answers</source>
+        <target>Pregunta anónimamente y obtén\nrespuestas informativas</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBasicTutorialView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="128" resname="Ask doctors brief,\nanonymous health questions\nanytime for free" restype="string" datatype="x-objective-c">
-        <source>Ask doctors brief,\nanonymous health questions\nanytime for free</source><target>Haz breves preguntas\nde salud anónimas a doctores\na cualquier hora de forma gratuita. </target>
+        <source>Ask doctors brief,\nanonymous health questions\nanytime for free</source>
+        <target>Haz breves preguntas\nde salud anónimas a doctores\na cualquier hora de forma gratuita.</target>
       </trans-unit>
       <trans-unit id="129" resname="Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer" restype="string" datatype="x-objective-c">
-        <source>Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer</source><target>Haz una breve pregunta anónima\npor ti o por alguien más,\ny añade algunos detalles de salud\npara una respuesta más personalizada</target>
+        <source>Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer</source>
+        <target>Haz una breve pregunta anónima\npor ti o por alguien más,\ny añade algunos detalles de salud\npara una respuesta más personalizada</target>
       </trans-unit>
-      <trans-unit id="130" resname="If your question wasn't already\nanswered, we'll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" restype="string" datatype="x-objective-c">
-        <source>If your question wasn't already\nanswered, we'll send it to our\nnetwork of top U.S. doctors across\n130+ specialties</source><target>Si tu pregunta no fue ya\ncontestada, la enviaremos a nuestra\nred de los mejores doctores de los EE.UU: en\n130+ especialidades</target>
+      <trans-unit id="130" resname="If your question wasn&apos;t already\nanswered, we&apos;ll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" restype="string" datatype="x-objective-c">
+        <source>If your question wasn&apos;t already\nanswered, we&apos;ll send it to our\nnetwork of top U.S. doctors across\n130+ specialties</source>
+        <target>Si tu pregunta no fue ya\ncontestada, la enviaremos a nuestra\nred de los mejores doctores de los EE.UU: en\n130+ especialidades</target>
       </trans-unit>
       <trans-unit id="131" resname="One or more doctors\nwill respond with short,\neducational answers" restype="string" datatype="x-objective-c">
-        <source>One or more doctors\nwill respond with short,\neducational answers</source><target>Uno o más doctores\ncontestarán con cortas\nrespuestas educativas</target>
+        <source>One or more doctors\nwill respond with short,\neducational answers</source>
+        <target>Uno o más doctores\ncontestarán con cortas\nrespuestas educativas</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseWhatToAskAskDoctorsFlowView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="132" resname="If you think you have a medical emergency, call %@ or go to the %@ immediately." restype="string" datatype="x-objective-c">
-        <source>If you think you have a medical emergency, call %@ or go to the %@ immediately.</source><target>Si piensas que tienes una emergencia médica, llama al %@ o ve al %@ inmediatamente.</target>
+        <source>If you think you have a medical emergency, call %@ or go to the %@ immediately.</source>
+        <target>Si piensas que tienes una emergencia médica, llama al %@ o ve al %@ inmediatamente.</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseTutorialView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="133" resname="Instant, affordable\ndoctor care,\nonly a tap away" restype="string" datatype="x-objective-c">
-        <source>Instant, affordable\ndoctor care,\nonly a tap away</source><target>Atención médica instantánea\ny accesible\na sólo un toque</target>
+        <source>Instant, affordable\ndoctor care,\nonly a tap away</source>
+        <target>Atención médica instantánea\ny accesible\na sólo un toque</target>
       </trans-unit>
-      <trans-unit id="134" resname="We'll immediately start calling one\nof our doctors to help you\n(you won't be charged until the\ndoctor picks up)" restype="string" datatype="x-objective-c">
-        <source>We'll immediately start calling one\nof our doctors to help you\n(you won't be charged until the\ndoctor picks up)</source><target>Empezaremos a llamar inmediatamente a uno\nde nuestros doctores para ayudarte\n(no se te cobrará hasta que el\ndoctor conteste)</target>
-        
-      <note>Tutorial step 2</note></trans-unit>
+      <trans-unit id="134" resname="We&apos;ll immediately start calling one\nof our doctors to help you\n&#40;you won&apos;t be charged until the\ndoctor picks up&#41;" restype="string" datatype="x-objective-c">
+        <source>We&apos;ll immediately start calling one\nof our doctors to help you\n&#40;you won&apos;t be charged until the\ndoctor picks up&#41;</source>
+        <target>Empezaremos a llamar inmediatamente a uno\nde nuestros doctores para ayudarte\n&#40;no se te cobrará hasta que el\ndoctor conteste&#41;</target>
+        <note annotates="source">Tutorial step 2</note>
+      </trans-unit>
       <trans-unit id="135" resname="Video chat with the doctor to get\nadvice, treatment, personalized\nchecklists, and reminders to help\nyou stay healthy" restype="string" datatype="x-objective-c">
-        <source>Video chat with the doctor to get\nadvice, treatment, personalized\nchecklists, and reminders to help\nyou stay healthy</source><target>Haz chat de video con el doctor para obtener\nconsejo, tratamiento, listados\npersonalizados, y recordatorios para ayudarte\n a mantenerte sano.</target>
-        
-      <note>Tutorial step 3</note></trans-unit>
+        <source>Video chat with the doctor to get\nadvice, treatment, personalized\nchecklists, and reminders to help\nyou stay healthy</source>
+        <target>Haz chat de video con el doctor para obtener\nconsejo, tratamiento, listados\npersonalizados, y recordatorios para ayudarte\n a mantenerte sano.</target>
+        <note annotates="source">Tutorial step 3</note>
+      </trans-unit>
       <trans-unit id="136" resname="Rate your experience, and get your\ndoctor notes and prescriptions\nfrom the HealthTap app" restype="string" datatype="x-objective-c">
-        <source>Rate your experience, and get your\ndoctor notes and prescriptions\nfrom the HealthTap app</source><target>Califica tu experiencia, y obtén tus\nnotas médicas y recetas\nde la aplicación de HealthTap</target>
-        
-      <note>Tutorial step 4</note></trans-unit>
+        <source>Rate your experience, and get your\ndoctor notes and prescriptions\nfrom the HealthTap app</source>
+        <target>Califica tu experiencia, y obtén tus\nnotas médicas y recetas\nde la aplicación de HealthTap</target>
+        <note annotates="source">Tutorial step 4</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseSelectDoctorViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="137" resname="Search by name, specialty, or topic" restype="string" datatype="x-objective-c">
-        <source>Search by name, specialty, or topic</source><target>Busca por nombre, especialidad o tema</target>
+        <source>Search by name, specialty, or topic</source>
+        <target>Busca por nombre, especialidad o tema</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseChoosePrimePaymentAskDoctorsFlowViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="138" resname="$%d per month for unlimited\nconsults and other benefits" restype="string" datatype="x-objective-c">
-        <source>$%d per month for unlimited\nconsults and other benefits</source><target>$%d al mes por consultas\nilimitadas y otros beneficios</target>
+        <source>$%d per month for unlimited\nconsults and other benefits</source>
+        <target>$%d al mes por consultas\nilimitadas y otros beneficios</target>
       </trans-unit>
       <trans-unit id="139" resname="$%d per month + $%d per consult" restype="string" datatype="x-objective-c">
-        <source>$%d per month + $%d per consult</source><target>$%d al mes por + $%d por consulta</target>
+        <source>$%d per month + $%d per consult</source>
+        <target>$%d al mes por + $%d por consulta</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseAskDoctorsWhatToAskViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="140" resname="Please enter a valid reason\nfor your consult" restype="string" datatype="x-objective-c">
-        <source>Please enter a valid reason\nfor your consult</source><target>Por favor ingresa una razón válida\npara tu consulta</target>
+        <source>Please enter a valid reason\nfor your consult</source>
+        <target>Por favor ingresa una razón válida\npara tu consulta</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTAttachmentUploadPopupView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="141" resname="Help the doctors understand\nwhat they are looking at" restype="string" datatype="x-objective-c">
-        <source>Help the doctors understand\nwhat they are looking at</source><target>Ayuda a los doctores a comprender\nqué es lo que estan viendo</target>
+        <source>Help the doctors understand\nwhat they are looking at</source>
+        <target>Ayuda a los doctores a comprender\nqué es lo que estan viendo</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/FGGetHelpConciergeView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="145" resname="I am available to help if you still need it.\nWould you like to connect?" restype="string" datatype="x-objective-c">
-        <source>I am available to help if you still need it.\nWould you like to connect?</source><target>Estoy disponible para ayudarte si aún lo necesitas.\n¿Te gustaría conectarte?</target>
+        <source>I am available to help if you still need it.\nWould you like to connect?</source>
+        <target>Estoy disponible para ayudarte si aún lo necesitas.\n¿Te gustaría conectarte?</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGSuccessScreenNewsData.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="151" resname="%@ and %@ found this helpful" restype="string" datatype="x-objective-c">
-        <source>%@ and %@ found this helpful</source><target>%@ y %@ encontraron útil esto</target>
+        <source>%@ and %@ found this helpful</source>
+        <target>%@ y %@ encontraron útil esto</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGSearchResultQuestionUserAnswer.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="154" resname="...Do you have a follow-up question? Ask %@, a %@ with %@ years in practice:" restype="string" datatype="x-objective-c">
-        <source>...Do you have a follow-up question? Ask %@, a %@ with %@ years in practice:</source><target>...¿Tienes una pregunta de seguimiento? Pregúntale a %@, un %@ con %@ años ejerciendo:</target>
-        
-      <note>Para1: doctor name, Para2: specialty, Para3: practice duration</note></trans-unit>
+        <source>...Do you have a follow-up question? Ask %@, a %@ with %@ years in practice:</source>
+        <target>...¿Tienes una pregunta de seguimiento? Pregúntale a %@, un %@ con %@ años ejerciendo:</target>
+        <note annotates="source">Para1: doctor name, Para2: specialty, Para3: practice duration</note>
+      </trans-unit>
       <trans-unit id="155" resname="%@%@ years in practice" restype="string" datatype="x-objective-c">
-        <source>%@%@ years in practice</source><target>%@%@ años ejerciendo</target>
-        
-      <note>Para1: speciality and experience, Para2: years in practice</note></trans-unit>
+        <source>%@%@ years in practice</source>
+        <target>%@%@ años ejerciendo</target>
+        <note annotates="source">Para1: speciality and experience, Para2: years in practice</note>
+      </trans-unit>
       <trans-unit id="156" resname="%@%@ year in practice" restype="string" datatype="x-objective-c">
-        <source>%@%@ year in practice</source><target>%@%@ año ejerciendo</target>
-        
-      <note>Para1: speciality and experience, Para2: less than 1 year in practice</note></trans-unit>
+        <source>%@%@ year in practice</source>
+        <target>%@%@ año ejerciendo</target>
+        <note annotates="source">Para1: speciality and experience, Para2: less than 1 year in practice</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGProfileFamilyHistoryData.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="163" resname="(%@, %@ yrs)" restype="string" datatype="x-objective-c">
-        <source>(%@, %@ yrs)</source><target>(%@, %@ años)</target>
+      <trans-unit id="163" resname="&#40;%@, %@ yrs&#41;" restype="string" datatype="x-objective-c">
+        <source>&#40;%@, %@ yrs&#41;</source>
+        <target>&#40;%@, %@ años&#41;</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGMainSearchResults.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="164" resname="%ld doctors recommend this %@ app" restype="string" datatype="x-objective-c">
-        <source>%ld doctors recommend this %@ app</source><target>%ld doctores recomendaron esta aplicación de %@</target>
+        <source>%ld doctors recommend this %@ app</source>
+        <target>%ld doctores recomendaron esta aplicación de %@</target>
       </trans-unit>
       <trans-unit id="165" resname="%ld doctor recommend this %@ app" restype="string" datatype="x-objective-c">
-        <source>%ld doctor recommend this %@ app</source><target>%ld doctor recomendó esta aplicación de %@</target>
+        <source>%ld doctor recommend this %@ app</source>
+        <target>%ld doctor recomendó esta aplicación de %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGFeedAnswerCommented.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="184" resname="%@ commented on  \r\n%@'s answer" restype="string" datatype="x-objective-c">
-        <source>%@ commented on \r\n%@'s answer</source><target>%@ comentó en la respuesta de \r\n%@</target>
+      <trans-unit id="184" resname="%@ commented on  \r\n%@&apos;s answer" restype="string" datatype="x-objective-c">
+        <source>%@ commented on \r\n%@&apos;s answer</source>
+        <target>%@ comentó en la respuesta de \r\n%@</target>
       </trans-unit>
-      <trans-unit id="185" resname="%@ commented on \r\n%@'s answer:" restype="string" datatype="x-objective-c">
-        <source>%@ commented on \r\n%@'s answer:</source><target>%@ comentó en la respuesta de \r\n%@:</target>
+      <trans-unit id="185" resname="%@ commented on \r\n%@&apos;s answer:" restype="string" datatype="x-objective-c">
+        <source>%@ commented on \r\n%@&apos;s answer:</source>
+        <target>%@ comentó en la respuesta de \r\n%@:</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGFeedAnswerAgreed.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="186" resname="%@ agrees with %@'s answer:" restype="string" datatype="x-objective-c">
-        <source>%@ agrees with %@'s answer:</source><target>%@ está de acuerdo con la respuesta de %@:</target>
+      <trans-unit id="186" resname="%@ agrees with %@&apos;s answer:" restype="string" datatype="x-objective-c">
+        <source>%@ agrees with %@&apos;s answer:</source>
+        <target>%@ está de acuerdo con la respuesta de %@:</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGDocPracticeDuration.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="187" resname="%ld year%@" restype="string" datatype="x-objective-c">
-        <source>%ld year%@</source><target>%ld año%@</target>
+        <source>%ld year%@</source>
+        <target>%ld año%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/Util/FGPermissionManager.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="213" resname="Please allow camera access from:\nSettings -&gt; HealthTap -&gt; Camera" restype="string" datatype="x-objective-c">
-        <source>Please allow camera access from:\nSettings -&gt; HealthTap -&gt; Camera</source><target>Por favor permite acceso a la cámara desde\nConfiguración -&gt; HealthTap -&gt; Cámara</target>
+        <source>Please allow camera access from:\nSettings -&gt; HealthTap -&gt; Camera</source>
+        <target>Por favor permite acceso a la cámara desde\nConfiguración -&gt; HealthTap -&gt; Cámara</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/HTSpecialistDataSource.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="215" resname="No %@ is available right now.\nYou may still consult one by secure message or appointment." restype="string" datatype="x-objective-c">
-        <source>No %@ is available right now.\nYou may still consult one by secure message or appointment.</source><target>Ningún %@ está disponbile en este momento.\nAún puedes consultar con uno a través de mensaje seguro o cita.</target>
+        <source>No %@ is available right now.\nYou may still consult one by secure message or appointment.</source>
+        <target>Ningún %@ está disponbile en este momento.\nAún puedes consultar con uno a través de mensaje seguro o cita.</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConsultListViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="224" resname="Appointment canceled with %@ on %@ at %@" restype="string" datatype="x-objective-c">
-        <source>Appointment canceled with %@ on %@ at %@</source><target>Cita cancelada con %@ en %@ el %@</target>
+        <source>Appointment canceled with %@ on %@ at %@</source>
+        <target>Cita cancelada con %@ en %@ el %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergePaymentViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="226" resname="$%@ regularly - $%@ in credits" restype="string" datatype="x-objective-c">
-        <source>$%@ regularly - $%@ in credits</source><target>$%@ regularmente - $%@ en créditos</target>
+        <source>$%@ regularly - $%@ in credits</source>
+        <target>$%@ regularmente - $%@ en créditos</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergeInviteDoctorViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="227" resname="Invite %@%@" restype="string" datatype="x-objective-c">
-        <source>Invite %@%@</source><target>Invita a %@%@</target>
+        <source>Invite %@%@</source>
+        <target>Invita a %@%@</target>
       </trans-unit>
       <trans-unit id="228" resname="Connect with %@%@" restype="string" datatype="x-objective-c">
-        <source>Connect with %@%@</source><target>Conéctate con %@%@</target>
+        <source>Connect with %@%@</source>
+        <target>Conéctate con %@%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergeConfirmConnectionViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="229" resname="This keycode is not accurate\nPlease try again" restype="string" datatype="x-objective-c">
-        <source>This keycode is not accurate\nPlease try again</source><target>Este código clave no es correcto\nPor favor intente otra vez</target>
+        <source>This keycode is not accurate\nPlease try again</source>
+        <target>Este código clave no es correcto\nPor favor intente otra vez</target>
       </trans-unit>
-      <trans-unit id="230" resname="to verify you as a patient, please enter %@%@'s Concierge Keycode" restype="string" datatype="x-objective-c">
-        <source>to verify you as a patient, please enter %@%@'s Concierge Keycode</source><target>para vericarte como paciente, por favor ingresa el Código Clave Concierge de %@%@</target>
-        
-      <note>Para1: title, Para2: last name</note></trans-unit>
-      <trans-unit id="231" resname="Enter %@%@'s Keycode" restype="string" datatype="x-objective-c">
-        <source>Enter %@%@'s Keycode</source><target>Ingresa el Código Clave de %@%@</target>
-        
-      <note>Para1: title, Para2: last name</note></trans-unit>
+      <trans-unit id="230" resname="to verify you as a patient, please enter %@%@&apos;s Concierge Keycode" restype="string" datatype="x-objective-c">
+        <source>to verify you as a patient, please enter %@%@&apos;s Concierge Keycode</source>
+        <target>para vericarte como paciente, por favor ingresa el Código Clave Concierge de %@%@</target>
+        <note annotates="source">Para1: title, Para2: last name</note>
+      </trans-unit>
+      <trans-unit id="231" resname="Enter %@%@&apos;s Keycode" restype="string" datatype="x-objective-c">
+        <source>Enter %@%@&apos;s Keycode</source>
+        <target>Ingresa el Código Clave de %@%@</target>
+        <note annotates="source">Para1: title, Para2: last name</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergeChooseDurationViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="232" resname="Consult with %@%@" restype="string" datatype="x-objective-c">
-        <source>Consult with %@%@</source><target>Consulta con %@%@</target>
+        <source>Consult with %@%@</source>
+        <target>Consulta con %@%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergeAppointmentViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="233" resname="Appointment on %@ %ld" restype="string" datatype="x-objective-c">
-        <source>Appointment on %@ %ld</source><target>Cita en %@ %ld</target>
+        <source>Appointment on %@ %ld</source>
+        <target>Cita en %@ %ld</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/FGSignUpViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="235" resname="Create a {start} free, private {end} account or login" restype="string" datatype="x-objective-c">
-        <source>Create a {start} free, private {end} account or login</source><target>Crea una {start} gratis y privada {end} cuenta o ingresa</target>
+        <source>Create a {start} free, private {end} account or login</source>
+        <target>Crea una {start} gratis y privada {end} cuenta o ingresa</target>
       </trans-unit>
       <trans-unit id="236" resname="{start}" restype="string" datatype="x-objective-c">
-        <source>{start}</source><target>{start}</target>
+        <source>{start}</source>
+        <target>{start}</target>
       </trans-unit>
       <trans-unit id="237" resname="{end}" restype="string" datatype="x-objective-c">
-        <source>{end}</source><target>{end}</target>
+        <source>{end}</source>
+        <target>{end}</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/iPadNative/Question/Base.lproj/FGiPadSearchQuestionViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="239" resname="map-gF-nCh.text" restype="string" datatype="x-xib">
-        <source>Thanks! Need more help? I\'m available for you.</source><target>¡Gracias! ¿Necesitas más ayuda? Estoy\ disponible para ti.</target>
-        
-      <note>Class = "UILabel"; text = "Thanks! Need more help? I'm available for you."; ObjectID = "map-gF-nCh";</note></trans-unit>
+        <source>Thanks! Need more help? I\&apos;m available for you.</source>
+        <target>¡Gracias! ¿Necesitas más ayuda? Estoy\ disponible para ti.</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help? I&apos;m available for you.&quot;; ObjectID = &quot;map-gF-nCh&quot;;</note>
+      </trans-unit>
       <trans-unit id="240" resname="u8p-tU-bxo.text" restype="string" datatype="x-xib">
-        <source>Thanks! Need more help?\nDoctors are online ready to help.</source><target>¡Gracias! ¿Necesitas más ayuda?\nHay docotres en línea listos para ayudar.</target>
-        
-      <note>Class = "UILabel"; text = "Thanks! Need more help?\nDoctors are online ready to help."; ObjectID = "u8p-tU-bxo";</note></trans-unit>
+        <source>Thanks! Need more help?\nDoctors are online ready to help.</source>
+        <target>¡Gracias! ¿Necesitas más ayuda?\nHay docotres en línea listos para ayudar.</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help?\nDoctors are online ready to help.&quot;; ObjectID = &quot;u8p-tU-bxo&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/iPadNative/Expert/Base.lproj/FGDoctoriPadViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="243" resname="6QR-tf-UGg.text" restype="string" datatype="x-xib">
-        <source>Dr. hasn\'t created any checklists yet</source><target>Dr. no\nha creado ningún listado aún</target>
-        
-      <note>Class = "UILabel"; text = "Dr. hasn't created any checklists yet"; ObjectID = "6QR-tf-UGg";</note></trans-unit>
+        <source>Dr. hasn\&apos;t created any checklists yet</source>
+        <target>Dr. no\nha creado ningún listado aún</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Dr. hasn&apos;t created any checklists yet&quot;; ObjectID = &quot;6QR-tf-UGg&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGVideoUnavailableRetryView.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="247" resname="i78-6R-yDg.text" restype="string" datatype="x-xib">
-        <source>We\'re having trouble establishing a video or audio connection on your device. Please continue by chat or try again.</source><target>Estamos\ teniendo problemas estableciendo una conexión de video o audio a tu dispositivo. Por favor continua a través de chat o intenta otra vez.</target>
-        
-      <note>Class = "UILabel"; text = "We're having trouble establishing a video or audio connection on your device. Please continue by chat or try again."; ObjectID = "i78-6R-yDg";</note></trans-unit>
+        <source>We\&apos;re having trouble establishing a video or audio connection on your device. Please continue by chat or try again.</source>
+        <target>Estamos\ teniendo problemas estableciendo una conexión de video o audio a tu dispositivo. Por favor continua a través de chat o intenta otra vez.</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re having trouble establishing a video or audio connection on your device. Please continue by chat or try again.&quot;; ObjectID = &quot;i78-6R-yDg&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGTipCollectionViewCell.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="248" resname="AAD-xk-5xB.text" restype="string" datatype="x-xib">
-        <source>Have a question about losing weight?\nAsk Dr. Smith, a dietician, for only $44</source><target>¿Tienes una preugnta acerca de perder peso?\nPregúntale al Dr. Smith, un nutriólogo, por solo $44</target>
-        
-      <note>Class = "UILabel"; text = "Have a question about losing weight?\nAsk Dr. Smith, a dietician, for only $44"; ObjectID = "AAD-xk-5xB";</note></trans-unit>
+        <source>Have a question about losing weight?\nAsk Dr. Smith, a dietician, for only $44</source>
+        <target>¿Tienes una preugnta acerca de perder peso?\nPregúntale al Dr. Smith, un nutriólogo, por solo $44</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a question about losing weight?\nAsk Dr. Smith, a dietician, for only $44&quot;; ObjectID = &quot;AAD-xk-5xB&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocAddSubAccountsViewControlleriPad.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="264" resname="YfW-LA-phA.text" restype="string" datatype="x-xib">
-        <source>Get the right care for your needs -\nconsult a specialist today!</source><target>Obtén la atención adecuada para tus necesidades -\n¡consulta con un especialista hoy!</target>
-        
-      <note>Class = "UILabel"; text = "Get the right care for your needs -\nconsult a specialist today!"; ObjectID = "YfW-LA-phA";</note></trans-unit>
+        <source>Get the right care for your needs -\nconsult a specialist today!</source>
+        <target>Obtén la atención adecuada para tus necesidades -\n¡consulta con un especialista hoy!</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get the right care for your needs -\nconsult a specialist today!&quot;; ObjectID = &quot;YfW-LA-phA&quot;;</note>
+      </trans-unit>
       <trans-unit id="267" resname="jan-BE-S41.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\'t get the right prescription</source><target>No puedo\ obtener la receta adecuada</target>
-        
-      <note>Class = "UIButton"; normalTitle = "Can't get the right prescription"; ObjectID = "jan-BE-S41";</note></trans-unit>
+        <source>Can\&apos;t get the right prescription</source>
+        <target>No puedo\ obtener la receta adecuada</target>
+        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t get the right prescription&quot;; ObjectID = &quot;jan-BE-S41&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocAddSubAccountsViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="272" resname="FD4-kh-UTk.text" restype="string" datatype="x-xib">
-        <source>Get the right care for your needs -\nconsult a specialist today!</source><target>Obtén la atención adecuada para tus necesidades -\n¡consulta con un especialista hoy!</target>
-        
-      <note>Class = "UILabel"; text = "Get the right care for your needs -\nconsult a specialist today!"; ObjectID = "FD4-kh-UTk";</note></trans-unit>
+        <source>Get the right care for your needs -\nconsult a specialist today!</source>
+        <target>Obtén la atención adecuada para tus necesidades -\n¡consulta con un especialista hoy!</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get the right care for your needs -\nconsult a specialist today!&quot;; ObjectID = &quot;FD4-kh-UTk&quot;;</note>
+      </trans-unit>
       <trans-unit id="273" resname="Gql-Yp-fzd.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\'t get the right prescription</source><target>No puedo\ obtener la receta adecuada</target>
-        
-      <note>Class = "UIButton"; normalTitle = "Can't get the right prescription"; ObjectID = "Gql-Yp-fzd";</note></trans-unit>
+        <source>Can\&apos;t get the right prescription</source>
+        <target>No puedo\ obtener la receta adecuada</target>
+        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t get the right prescription&quot;; ObjectID = &quot;Gql-Yp-fzd&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGSideMenuViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="282" resname="h4p-4j-JTj.text" restype="string" datatype="x-xib">
-        <source>0\' (0.0m)</source><target>0\' (0.0m)</target>
-        
-      <note>Class = "UILabel"; text = "0' (0.0m)"; ObjectID = "h4p-4j-JTj";</note></trans-unit>
+        <source>0\&apos; &#40;0.0m&#41;</source>
+        <target>0\&apos; &#40;0.0m&#41;</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;0&apos; &#40;0.0m&#41;&quot;; ObjectID = &quot;h4p-4j-JTj&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGSearchQuestionViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="283" resname="8J9-lv-qdo.text" restype="string" datatype="x-xib">
-        <source>Thanks! Need more help?\nDoctors are online ready to help.</source><target>¡Gracias! ¿Necesitas más ayuda?\nHay docotres en línea listos para ayudar.</target>
-        
-      <note>Class = "UILabel"; text = "Thanks! Need more help?\nDoctors are online ready to help."; ObjectID = "8J9-lv-qdo";</note></trans-unit>
+        <source>Thanks! Need more help?\nDoctors are online ready to help.</source>
+        <target>¡Gracias! ¿Necesitas más ayuda?\nHay docotres en línea listos para ayudar.</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help?\nDoctors are online ready to help.&quot;; ObjectID = &quot;8J9-lv-qdo&quot;;</note>
+      </trans-unit>
       <trans-unit id="285" resname="ghm-jn-UVw.text" restype="string" datatype="x-xib">
-        <source>Thanks! Need more help? I\'m available for you.</source><target>¡Gracias! ¿Necesitas más ayuda? Estoy\ disponible para ti.</target>
-        
-      <note>Class = "UILabel"; text = "Thanks! Need more help? I'm available for you."; ObjectID = "ghm-jn-UVw";</note></trans-unit>
+        <source>Thanks! Need more help? I\&apos;m available for you.</source>
+        <target>¡Gracias! ¿Necesitas más ayuda? Estoy\ disponible para ti.</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help? I&apos;m available for you.&quot;; ObjectID = &quot;ghm-jn-UVw&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGSearchDoctorsViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="291" resname="cRI-Pk-V17.text" restype="string" datatype="x-xib">
-        <source>Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic.</source><target>Perdón, no encontramos doctores.\n\nVerifica la ortografía o ingresa otro nombre, especialidad o tema.</target>
-        
-      <note>Class = "UILabel"; text = "Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic."; ObjectID = "cRI-Pk-V17";</note></trans-unit>
+        <source>Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic.</source>
+        <target>Perdón, no encontramos doctores.\n\nVerifica la ortografía o ingresa otro nombre, especialidad o tema.</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic.&quot;; ObjectID = &quot;cRI-Pk-V17&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGSearchDoctorsProfileViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="293" resname="Lgu-j4-Xkx.text" restype="string" datatype="x-xib">
-        <source>Dr. hasn\'t created any checklists yet</source><target>Dr. no\nha creado ningún listado aún</target>
-        
-      <note>Class = "UILabel"; text = "Dr. hasn't created any checklists yet"; ObjectID = "Lgu-j4-Xkx";</note></trans-unit>
+        <source>Dr. hasn\&apos;t created any checklists yet</source>
+        <target>Dr. no\nha creado ningún listado aún</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Dr. hasn&apos;t created any checklists yet&quot;; ObjectID = &quot;Lgu-j4-Xkx&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGGenericAppRatingViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="309" resname="5em-us-DCA.text" restype="string" datatype="x-xib">
-        <source>Please let us know how we\'re doing...</source><target>Por favor haznos saber cómo\ vamos...</target>
-        
-      <note>Class = "UITextView"; text = "Please let us know how we're doing..."; ObjectID = "5em-us-DCA";</note></trans-unit>
+        <source>Please let us know how we\&apos;re doing...</source>
+        <target>Por favor haznos saber cómo\ vamos...</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Please let us know how we&apos;re doing...&quot;; ObjectID = &quot;5em-us-DCA&quot;;</note>
+      </trans-unit>
       <trans-unit id="310" resname="VLz-E1-cea.text" restype="string" datatype="x-xib">
-        <source>If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :)</source><target>Si encuentra útil a HealthTap,\n por favor tómate un minuto para calificar la aplicación \ny hazle al mundo saber :)</target>
-        
-      <note>Class = "UILabel"; text = "If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :)"; ObjectID = "VLz-E1-cea";</note></trans-unit>
+        <source>If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :&#41;</source>
+        <target>Si encuentra útil a HealthTap,\n por favor tómate un minuto para calificar la aplicación \ny hazle al mundo saber :&#41;</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :&#41;&quot;; ObjectID = &quot;VLz-E1-cea&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Prime Trial/Base.lproj/FGPrimeTrialPaymentViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="325" resname="VcR-do-QUz.text" restype="string" datatype="x-xib">
-        <source>I agree to the HealthTap\'s</source><target>Aceto los de HealthTap\n</target>
-        
-      <note>Class = "UILabel"; text = "I agree to the HealthTap's"; ObjectID = "VcR-do-QUz";</note></trans-unit>
+        <source>I agree to the HealthTap\&apos;s</source>
+        <target>Aceto los de HealthTap\n</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;I agree to the HealthTap&apos;s&quot;; ObjectID = &quot;VcR-do-QUz&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Base.lproj/FGDocScoreLayerView.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="333" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including: • Agrees, votes, and recommendations from other doctors \n• Years of experience\n\n• Quality of experts who refer to them\n\n• Where the expert studied and trained\n\n• Board certification(s)\n\n• Other professional accomplishments (such as peer reviewed publications and awards) • Thanks, votes, and recommendations from members</source><target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento de sus pares que este doctor ha recibido en HealthTap así como información pública relevante acerca de este experto, incluyendo: • De Acuerdos, votos, recomendaciones de otros doctores \n• Años de experiencia\n\n• Calidad de los expertos que los refieren\n\n• Dónde estudió y entrenó el experto\n\n• Certificación(es) por Consejo\n\n• Otros logros profesionales (como publicaciones con revisión por pares y galardones) • Agradecimientos, votos y recomendaciones de otros miembros</target>
-        
-      <note>Class = "UITextView"; text = "Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification(s)\n\n•     Other professional accomplishments        (such as peer reviewed publications         and awards)  •     Thanks, votes, and recommendations         from members"; ObjectID = "dSG-zo-7RR";</note></trans-unit>
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including: • Agrees, votes, and recommendations from other doctors \n• Years of experience\n\n• Quality of experts who refer to them\n\n• Where the expert studied and trained\n\n• Board certification&#40;s&#41;\n\n• Other professional accomplishments &#40;such as peer reviewed publications and awards&#41; • Thanks, votes, and recommendations from members</source>
+        <target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento de sus pares que este doctor ha recibido en HealthTap así como información pública relevante acerca de este experto, incluyendo: • De Acuerdos, votos, recomendaciones de otros doctores \n• Años de experiencia\n\n• Calidad de los expertos que los refieren\n\n• Dónde estudió y entrenó el experto\n\n• Certificación&#40;es&#41; por Consejo\n\n• Otros logros profesionales &#40;como publicaciones con revisión por pares y galardones&#41; • Agradecimientos, votos y recomendaciones de otros miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Base.lproj/FGConnectionLostView.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="334" resname="vQi-Zb-3ut.text" restype="string" datatype="x-xib">
-        <source>We\'re sorry but there seems to be a problem with your connection.</source><target>Lo\ sentimos, pero parece que hay un problema con tu conexión.</target>
-        
-      <note>Class = "UILabel"; text = "We're sorry but there seems to be a problem with your connection."; ObjectID = "vQi-Zb-3ut";</note></trans-unit>
+        <source>We\&apos;re sorry but there seems to be a problem with your connection.</source>
+        <target>Lo\ sentimos, pero parece que hay un problema con tu conexión.</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re sorry but there seems to be a problem with your connection.&quot;; ObjectID = &quot;vQi-Zb-3ut&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/TableViewCells/Base.lproj/FGChatReferNonHTDoctorCellTableViewCell.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="340" resname="JB0-J5-1sj.text" restype="string" datatype="x-xib">
-        <source>I\'d like to refer you to:</source><target>Me\ gustaría referirte con:</target>
-        
-      <note>Class = "UILabel"; text = "I'd like to refer you to:"; ObjectID = "JB0-J5-1sj";</note></trans-unit>
+        <source>I\&apos;d like to refer you to:</source>
+        <target>Me\ gustaría referirte con:</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;I&apos;d like to refer you to:&quot;; ObjectID = &quot;JB0-J5-1sj&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/TableViewCells/Base.lproj/FGChatPodiatristCell.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="341" resname="6Kt-vE-Jwg.text" restype="string" datatype="x-xib">
-        <source>I\'d like to refer you to a Podiatrist.</source><target>Me\ gustaría referirte con un Podólogo.</target>
-        
-      <note>Class = "UILabel"; text = "I'd like to refer you to a Podiatrist."; ObjectID = "6Kt-vE-Jwg";</note></trans-unit>
+        <source>I\&apos;d like to refer you to a Podiatrist.</source>
+        <target>Me\ gustaría referirte con un Podólogo.</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;I&apos;d like to refer you to a Podiatrist.&quot;; ObjectID = &quot;6Kt-vE-Jwg&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/CustomizedPopups/Base.lproj/FGDoctorScoreView.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="351" resname="djz-HC-hRp.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including: • Agrees, votes, and recommendations from other doctors \n• Years of experience\n\n• Quality of experts who refer to them\n\n• Where the expert studied and trained\n\n• Board certification(s)\n\n• Other professional accomplishments (such as peer reviewed publications and awards) • Thanks, votes, and recommendations from members</source><target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento de sus pares que este doctor ha recibido en HealthTap, así como información pública relevante acerca de este experto, incluyendo: • De Acuerdos, votos, recomendaciones de otros doctores \n• Años de experiencia\n\n• Calidad de los expertos que los refieren\n\n• Dónde estudió y entrenó el experto\n\n• Certificación(es) por Consejo\n\n• Otros logros profesionales (como publicaciones con revisión por pares y galardones) • Agradecimientos, votos y recomendaciones de otros miembros</target>
-        
-      <note>Class = "UITextView"; text = "Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification(s)\n\n•     Other professional accomplishments        (such as peer reviewed publications         and awards)  •     Thanks, votes, and recommendations         from members"; ObjectID = "djz-HC-hRp";</note></trans-unit>
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including: • Agrees, votes, and recommendations from other doctors \n• Years of experience\n\n• Quality of experts who refer to them\n\n• Where the expert studied and trained\n\n• Board certification&#40;s&#41;\n\n• Other professional accomplishments &#40;such as peer reviewed publications and awards&#41; • Thanks, votes, and recommendations from members</source>
+        <target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento de sus pares que este doctor ha recibido en HealthTap, así como información pública relevante acerca de este experto, incluyendo: • De Acuerdos, votos, recomendaciones de otros doctores \n• Años de experiencia\n\n• Calidad de los expertos que los refieren\n\n• Dónde estudió y entrenó el experto\n\n• Certificación&#40;es&#41; por Consejo\n\n• Otros logros profesionales &#40;como publicaciones con revisión por pares y galardones&#41; • Agradecimientos, votos y recomendaciones de otros miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGInviteExternalDoctorViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="352" resname="c8b-7E-xsB.placeholder" restype="string" datatype="x-xib">
-        <source>Your doctor\'s name</source><target>El nombre de tu\ doctor </target>
-        
-      <note>Class = "UITextField"; placeholder = "Your doctor's name"; ObjectID = "c8b-7E-xsB";</note></trans-unit>
+        <source>Your doctor\&apos;s name</source>
+        <target>El nombre de tu\ doctor</target>
+        <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Your doctor&apos;s name&quot;; ObjectID = &quot;c8b-7E-xsB&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGChooseMessageConsultPreferenceViewController~iphone.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="361" resname="fYC-ZL-Tx6.text" restype="string" datatype="x-xib">
-        <source>Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more</source><target>Envía tantos mensajes\ncomo tú necesites, u obtén consejo,\nrecetas, pruebas de laboratorio,\ny más</target>
-        
-      <note>Class = "UILabel"; text = "Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more"; ObjectID = "fYC-ZL-Tx6";</note></trans-unit>
+        <source>Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more</source>
+        <target>Envía tantos mensajes\ncomo tú necesites, u obtén consejo,\nrecetas, pruebas de laboratorio,\ny más</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more&quot;; ObjectID = &quot;fYC-ZL-Tx6&quot;;</note>
+      </trans-unit>
       <trans-unit id="362" resname="wlf-6g-3lf.text" restype="string" datatype="x-xib">
-        <source>One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more</source><target>Una consulta con\nel doctor para consejo,\nrecetas, pruebas de laboratorio\ny más</target>
-        
-      <note>Class = "UILabel"; text = "One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more"; ObjectID = "wlf-6g-3lf";</note></trans-unit>
+        <source>One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more</source>
+        <target>Una consulta con\nel doctor para consejo,\nrecetas, pruebas de laboratorio\ny más</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more&quot;; ObjectID = &quot;wlf-6g-3lf&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGChooseMessageConsultPreferenceViewController~ipad.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="363" resname="AAc-ZT-Xxm.text" restype="string" datatype="x-xib">
-        <source>Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more</source><target>Envía tantos mensajes como tú\nnecesites, u obtén consejo, recetas,\npruebas de laboratorio, y más</target>
-        
-      <note>Class = "UILabel"; text = "Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more"; ObjectID = "AAc-ZT-Xxm";</note></trans-unit>
+        <source>Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more</source>
+        <target>Envía tantos mensajes como tú\nnecesites, u obtén consejo, recetas,\npruebas de laboratorio, y más</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more&quot;; ObjectID = &quot;AAc-ZT-Xxm&quot;;</note>
+      </trans-unit>
       <trans-unit id="364" resname="zEL-22-bH6.text" restype="string" datatype="x-xib">
-        <source>One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more</source><target>Una consulta con el doctor\npara consejo, recetas, pruebas\nde laboratorio, y más</target>
-        
-      <note>Class = "UILabel"; text = "One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more"; ObjectID = "zEL-22-bH6";</note></trans-unit>
+        <source>One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more</source>
+        <target>Una consulta con el doctor\npara consejo, recetas, pruebas\nde laboratorio, y más</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more&quot;; ObjectID = &quot;zEL-22-bH6&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/iPadNative/Question/FGiPadSearchQuestionViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="3" resname="%d doctor %@" restype="string" datatype="x-objective-c">
-        <source>%d doctor %@</source><target>%d 医生 %@</target>
+        <source>%d doctor %@</source>
+        <target>%d 医生 %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/iPadNative/Checklist/FGIpadChecklistViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="8" resname="Find doctor-created checklists \n Try them out \n Feel Good :)" restype="string" datatype="x-objective-c">
-        <source>Find doctor-created checklists \n Try them out \n Feel Good :)</source><target>查找医生创建的清单\n尝试它们\n Feel Good:)</target>
+      <trans-unit id="8" resname="Find doctor-created checklists \n Try them out \n Feel Good :&#41;" restype="string" datatype="x-objective-c">
+        <source>Find doctor-created checklists \n Try them out \n Feel Good :&#41;</source>
+        <target>查找医生创建的清单\n尝试它们\n Feel Good:&#41;</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Settings/FGTransactionHistoryViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="10" resname="Your next charge will be %@ on %@" restype="string" datatype="x-objective-c">
-        <source>Your next charge will be %@ on %@</source><target>您的下一次收费将％@ 在％@</target>
+        <source>Your next charge will be %@ on %@</source>
+        <target>您的下一次收费将％@ 在％@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTipViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="17" resname="\nwith %@ years of experience:" restype="string" datatype="x-objective-c">
-        <source>\nwith %@ years of experience:</source><target>\n用%@ 年实践经验：</target>
+        <source>\nwith %@ years of experience:</source>
+        <target>\n用%@ 年实践经验：</target>
       </trans-unit>
       <trans-unit id="18" resname="Consult %@%@%@" restype="string" datatype="x-objective-c">
-        <source>Consult %@%@%@</source><target>咨询%@%@%@</target>
+        <source>Consult %@%@%@</source>
+        <target>咨询%@%@%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocsBuyOneViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="19" resname="Your card no longer seems valid.\n Please try a new one." restype="string" datatype="x-objective-c">
-        <source>Your card no longer seems valid.\n Please try a new one.</source><target>您的银行卡似乎无效。\n请尝试一张新的银行卡。</target>
+        <source>Your card no longer seems valid.\n Please try a new one.</source>
+        <target>您的银行卡似乎无效。\n请尝试一张新的银行卡。</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocPickerViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="21" resname="When not to use Virtual Consults\n" restype="string" datatype="x-objective-c">
-        <source>When not to use Virtual Consults\n</source><target>何时不应使用在线咨询\n</target>
+        <source>When not to use Virtual Consults\n</source>
+        <target>何时不应使用在线咨询\n</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocPayViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="24" resname="This is not a valid code\n Please try again." restype="string" datatype="x-objective-c">
-        <source>This is not a valid code\n Please try again.</source><target>这不是有效的代码\n请重新尝试。</target>
+        <source>This is not a valid code\n Please try again.</source>
+        <target>这不是有效的代码\n请重新尝试。</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="25" resname="Message %@%@" restype="string" datatype="x-objective-c">
-        <source>Message %@%@</source><target>信息%@%@</target>
-        
-      <note>Title for inbox consult to a specific expert</note></trans-unit>
+        <source>Message %@%@</source>
+        <target>信息%@%@</target>
+        <note annotates="source">Title for inbox consult to a specific expert</note>
+      </trans-unit>
       <trans-unit id="26" resname="Chat with %@%@" restype="string" datatype="x-objective-c">
-        <source>Chat with %@%@</source><target>聊天%@%@</target>
-        
-      <note>Title for live chat with a specific expert</note></trans-unit>
-      <trans-unit id="27" resname="For medical emergencies, call %@ (or your local emergency services) or go to the nearest %@." restype="string" datatype="x-objective-c">
-        <source>For medical emergencies, call %@ (or your local emergency services) or go to the nearest %@.</source><target>对于医疗紧急情况，请致电％@（或您当地的紧急服务）或前往最近的％@。
-
-</target>
+        <source>Chat with %@%@</source>
+        <target>聊天%@%@</target>
+        <note annotates="source">Title for live chat with a specific expert</note>
+      </trans-unit>
+      <trans-unit id="27" resname="For medical emergencies, call %@ &#40;or your local emergency services&#41; or go to the nearest %@." restype="string" datatype="x-objective-c">
+        <source>For medical emergencies, call %@ &#40;or your local emergency services&#41; or go to the nearest %@.</source>
+        <target>对于医疗紧急情况，请致电％@（或您当地的紧急服务）或前往最近的％@。</target>
       </trans-unit>
       <trans-unit id="28" resname="Not in %@? %@" restype="string" datatype="x-objective-c">
-        <source>Not in %@? %@</source><target>不在“％@”中？%@</target>
+        <source>Not in %@? %@</source>
+        <target>不在“％@”中？%@</target>
       </trans-unit>
       <trans-unit id="29" resname="When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:" restype="string" datatype="x-objective-c">
-        <source>When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:</source><target>何时不应使用在线咨询\n任何危及生命的医疗问题。例如，如果您遇到以下任何医疗问题，立即前往%@：</target>
+        <source>When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:</source>
+        <target>何时不应使用在线咨询\n任何危及生命的医疗问题。例如，如果您遇到以下任何医疗问题，立即前往%@：</target>
       </trans-unit>
-      <trans-unit id="30" resname="Would you like to invite a translator to join this consult?\n(Additional %@)" restype="string" datatype="x-objective-c">
-        <source>Would you like to invite a translator to join this consult?\n(Additional %@)</source><target>您希望邀请翻译加入这次咨询吗？\n(其他 %@)</target>
-        
-      <note>question to offser translation service with extra cost at end</note></trans-unit>
+      <trans-unit id="30" resname="Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;" restype="string" datatype="x-objective-c">
+        <source>Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;</source>
+        <target>您希望邀请翻译加入这次咨询吗？\n&#40;其他 %@&#41;</target>
+        <note annotates="source">question to offser translation service with extra cost at end</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGSideMenuViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="44" resname="%@ (%ld yrs)" restype="string" datatype="x-objective-c">
-        <source>%@ (%ld yrs)</source><target>%@ (%ld年)</target>
+      <trans-unit id="44" resname="%@ &#40;%ld yrs&#41;" restype="string" datatype="x-objective-c">
+        <source>%@ &#40;%ld yrs&#41;</source>
+        <target>%@ &#40;%ld年&#41;</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGNuxInviteDoctorViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="49" resname="Please share a little about yourself so the \ndoctor can confirm you as a patient" restype="string" datatype="x-objective-c">
-        <source>Please share a little about yourself so the \ndoctor can confirm you as a patient</source><target>请分享一点关于您自己的信息\n以便医生可以确认您是一位患者</target>
+        <source>Please share a little about yourself so the \ndoctor can confirm you as a patient</source>
+        <target>请分享一点关于您自己的信息\n以便医生可以确认您是一位患者</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGNewsBrowserViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="52" resname="%@ and %@" restype="string" datatype="x-objective-c">
-        <source>%@ and %@</source><target>%@ 和 %@</target>
+        <source>%@ and %@</source>
+        <target>%@ 和 %@</target>
       </trans-unit>
-      <trans-unit id="58" resname="%@ %@your gratitude :)" restype="string" datatype="x-objective-c">
-        <source>%@ %@your gratitude :)</source><target>%@ %@您的谢意:)</target>
+      <trans-unit id="58" resname="%@ %@your gratitude :&#41;" restype="string" datatype="x-objective-c">
+        <source>%@ %@your gratitude :&#41;</source>
+        <target>%@ %@您的谢意:&#41;</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGMomentDetailViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="59" resname="%@, Known for %@" restype="string" datatype="x-objective-c">
-        <source>%@, Known for %@</source><target>%@, 专攻 %@</target>
+        <source>%@, Known for %@</source>
+        <target>%@, 专攻 %@</target>
       </trans-unit>
       <trans-unit id="61" resname="Send a thank you note to \n%@" restype="string" datatype="x-objective-c">
-        <source>Send a thank you note to \n%@</source><target>发送一封感谢信到 \n%@</target>
+        <source>Send a thank you note to \n%@</source>
+        <target>发送一封感谢信到 \n%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTTopicSearchResultContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="72" resname="%@ (%@)" restype="string" datatype="x-objective-c">
-        <source>%@ (%@)</source><target>%@ (%@)</target>
+      <trans-unit id="72" resname="%@ &#40;%@&#41;" restype="string" datatype="x-objective-c">
+        <source>%@ &#40;%@&#41;</source>
+        <target>%@ &#40;%@&#41;</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTTechnicalProblemUpsellView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="73" resname="Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?" restype="string" datatype="x-objective-c">
-        <source>Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?</source><target>感谢％@，我们可以免费为您联系另一位医生。\n\n您希望进行其他咨询吗？</target>
+        <source>Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?</source>
+        <target>感谢％@，我们可以免费为您联系另一位医生。\n\n您希望进行其他咨询吗？</target>
       </trans-unit>
       <trans-unit id="74" resname="As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed." restype="string" datatype="x-objective-c">
-        <source>As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed.</source><target>作为Premium订阅者，我们可以为您联系另一次免费咨询。\n\n是否要进行其他咨询？\n\n100％保证您满意。</target>
+        <source>As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed.</source>
+        <target>作为Premium订阅者，我们可以为您联系另一次免费咨询。\n\n是否要进行其他咨询？\n\n100％保证您满意。</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSupportInfoLabel.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="75" resname="Questions about the service?\n Please visit our" restype="string" datatype="x-objective-c">
-        <source>Questions about the service?\n Please visit our</source><target>有关服务的问题？\n请访问我们的</target>
+        <source>Questions about the service?\n Please visit our</source>
+        <target>有关服务的问题？\n请访问我们的</target>
       </trans-unit>
       <trans-unit id="76" resname="Questions about the service?\nPlease call us at %@\nor email us at %@" restype="string" datatype="x-objective-c">
-        <source>Questions about the service?\nPlease call us at %@\nor email us at %@</source><target>有关服务的问题？\n请致电我们%@\n或发送邮件给我们到%@</target>
+        <source>Questions about the service?\nPlease call us at %@\nor email us at %@</source>
+        <target>有关服务的问题？\n请致电我们%@\n或发送邮件给我们到%@</target>
       </trans-unit>
       <trans-unit id="77" resname="Questions about the service? Please call us at %@\nor email us at %@" restype="string" datatype="x-objective-c">
-        <source>Questions about the service? Please call us at %@\nor email us at %@</source><target>有关服务的问题？请致电我们%@\n或发送邮件给我们到%@</target>
+        <source>Questions about the service? Please call us at %@\nor email us at %@</source>
+        <target>有关服务的问题？请致电我们%@\n或发送邮件给我们到%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSpecialistNeededUpsellView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="78" resname="Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!" restype="string" datatype="x-objective-c">
-        <source>Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!</source><target>您是否知道因为%@您将可以在向贵宾台超过100多个专科的顶级医生进行咨询时获得折扣优惠？\n\n为您的需求获得正确的医护 - 立刻咨询一位专家！</target>
+        <source>Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!</source>
+        <target>您是否知道因为%@您将可以在向贵宾台超过100多个专科的顶级医生进行咨询时获得折扣优惠？\n\n为您的需求获得正确的医护 - 立刻咨询一位专家！</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSoSHeaderCollectionReusableView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="80" resname="Hi %@,\nmembers in your area are experiencing %@. How can our doctors help you?" restype="string" datatype="x-objective-c">
-        <source>Hi %@,\nmembers in your area are experiencing %@. How can our doctors help you?</source><target>您好%@,\n您所在区域的会员正在体验 %@.如何得到我们医生的帮助？</target>
+        <source>Hi %@,\nmembers in your area are experiencing %@. How can our doctors help you?</source>
+        <target>您好%@,\n您所在区域的会员正在体验 %@.如何得到我们医生的帮助？</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSimilarQuestionsHeaderCollectionReusableView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="81" resname="Select how you would\nlike to get help" restype="string" datatype="x-objective-c">
-        <source>Select how you would\nlike to get help</source><target>选择您希望\n获得帮助的方式</target>
+        <source>Select how you would\nlike to get help</source>
+        <target>选择您希望\n获得帮助的方式</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSendQuestionCollectionReusableView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="84" resname="There are no immediate doctor insights for your question. Would you like to re-ask your question differently?\nChange question ›\n\nAlternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor." restype="string" datatype="x-objective-c">
-        <source>There are no immediate doctor insights for your question. Would you like to re-ask your question differently?\nChange question ›\n\nAlternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor.</source><target>不存在和您的问题直接相关的医生见解。您是否希望以不同的方式重新提问？\n更改问题 ›\n\n或者，您可以发送问题以获得来自我们%@名顶级医生的一个或多个回答或咨询一名医生。 </target>
+        <source>There are no immediate doctor insights for your question. Would you like to re-ask your question differently?\nChange question ›\n\nAlternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor.</source>
+        <target>不存在和您的问题直接相关的医生见解。您是否希望以不同的方式重新提问？\n更改问题 ›\n\n或者，您可以发送问题以获得来自我们%@名顶级医生的一个或多个回答或咨询一名医生。</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSendKudosView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="85" resname="You helped %@ with %@. %@ performed the following action:\n%@" restype="string" datatype="x-objective-c">
-        <source>You helped %@ with %@. %@ performed the following action:\n%@</source><target>您帮助了%@ 和%@。%@ 进行以下操作：\n%@</target>
+        <source>You helped %@ with %@. %@ performed the following action:\n%@</source>
+        <target>您帮助了%@ 和%@。%@ 进行以下操作：\n%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSendKudosSuccessConfirmationAlsoSubscribedView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="86" resname="%@ is incredibly grateful for your support! Getting healthy is awesome. How are you doing on your checklist for %@?" restype="string" datatype="x-objective-c">
-        <source>%@ is incredibly grateful for your support! Getting healthy is awesome. How are you doing on your checklist for %@?</source><target>%@ 非常感谢您的支持！获得健康太棒了。您是如何为%@按照您的清单进行的？</target>
+        <source>%@ is incredibly grateful for your support! Getting healthy is awesome. How are you doing on your checklist for %@?</source>
+        <target>%@ 非常感谢您的支持！获得健康太棒了。您是如何为%@按照您的清单进行的？</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSearchHeaderCollectionReusableView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="87" resname="%@,\nHow can our doctors help you?" restype="string" datatype="x-objective-c">
-        <source>%@,\nHow can our doctors help you?</source><target>%@,\n如何得到我们医生的帮助？</target>
+        <source>%@,\nHow can our doctors help you?</source>
+        <target>%@,\n如何得到我们医生的帮助？</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTQuestionAnsweredContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="88" resname="%@ agreed with %@'s answer." restype="string" datatype="x-objective-c">
-        <source>%@ agreed with %@'s answer.</source><target>%@ 已同意%@的回答。</target>
+      <trans-unit id="88" resname="%@ agreed with %@&apos;s answer." restype="string" datatype="x-objective-c">
+        <source>%@ agreed with %@&apos;s answer.</source>
+        <target>%@ 已同意%@的回答。</target>
       </trans-unit>
-      <trans-unit id="89" resname="%@ commented on %@'s answer" restype="string" datatype="x-objective-c">
-        <source>%@ commented on %@'s answer</source><target>%@ 已评论%@的回答</target>
+      <trans-unit id="89" resname="%@ commented on %@&apos;s answer" restype="string" datatype="x-objective-c">
+        <source>%@ commented on %@&apos;s answer</source>
+        <target>%@ 已评论%@的回答</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTPrimeTutorialView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="90" resname="The easiest way to\nimmediately speak with\na primary care doctor,\nanytime, anywhere" restype="string" datatype="x-objective-c">
-        <source>The easiest way to\nimmediately speak with\na primary care doctor,\nanytime, anywhere</source><target>随时随地\n与普通门诊医生交谈\n的最简单的方法\n</target>
+        <source>The easiest way to\nimmediately speak with\na primary care doctor,\nanytime, anywhere</source>
+        <target>随时随地\n与普通门诊医生交谈\n的最简单的方法\n</target>
       </trans-unit>
       <trans-unit id="91" resname="Enter your question for the doctor,\nadd details about you and your\nhealth, and pay for a monthly\nsubscription" restype="string" datatype="x-objective-c">
-        <source>Enter your question for the doctor,\nadd details about you and your\nhealth, and pay for a monthly\nsubscription</source><target>给医生输入您的问题，\n添加有关您和您的\n健康的详细信息，并支付一个月\n的订购</target>
+        <source>Enter your question for the doctor,\nadd details about you and your\nhealth, and pay for a monthly\nsubscription</source>
+        <target>给医生输入您的问题，\n添加有关您和您的\n健康的详细信息，并支付一个月\n的订购</target>
       </trans-unit>
       <trans-unit id="92" resname="Talk live via video, voice,\nand/or text chat from your mobile\ndevice or desktop computer" restype="string" datatype="x-objective-c">
-        <source>Talk live via video, voice,\nand/or text chat from your mobile\ndevice or desktop computer</source><target>用您的移动设备或电脑通过视频，语音，\n和/或文本交流</target>
+        <source>Talk live via video, voice,\nand/or text chat from your mobile\ndevice or desktop computer</source>
+        <target>用您的移动设备或电脑通过视频，语音，\n和/或文本交流</target>
       </trans-unit>
       <trans-unit id="93" resname="Get advice and treatment\nimmediately with helpful reminders\nafter your consult to\ntake action and feel good" restype="string" datatype="x-objective-c">
-        <source>Get advice and treatment\nimmediately with helpful reminders\nafter your consult to\ntake action and feel good</source><target>咨询结束后立即获得建议，治疗\n和有帮助的提醒\n，并采取行动和feel good</target>
+        <source>Get advice and treatment\nimmediately with helpful reminders\nafter your consult to\ntake action and feel good</source>
+        <target>咨询结束后立即获得建议，治疗\n和有帮助的提醒\n，并采取行动和feel good</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTPrimeAdSearchResultContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="94" resname="Get a personalized doctor answer\nnow via video or text chat" restype="string" datatype="x-objective-c">
-        <source>Get a personalized doctor answer\nnow via video or text chat</source><target>通过视频或文本聊天\n获得一次个性化的医生回答</target>
+        <source>Get a personalized doctor answer\nnow via video or text chat</source>
+        <target>通过视频或文本聊天\n获得一次个性化的医生回答</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTNoSearchResultsFoundView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="96" resname="Sorry, no results were found.\nCheck the spelling or try another search." restype="string" datatype="x-objective-c">
-        <source>Sorry, no results were found.\nCheck the spelling or try another search.</source><target>很抱歉，未找到结果。\n请检查拼写或尝试其他搜索。</target>
+        <source>Sorry, no results were found.\nCheck the spelling or try another search.</source>
+        <target>很抱歉，未找到结果。\n请检查拼写或尝试其他搜索。</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTLoginPopupView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="100" resname="I agree to the %@ and %@" restype="string" datatype="x-objective-c">
-        <source>I agree to the %@ and %@</source><target>我同意%@ 和 %@</target>
+        <source>I agree to the %@ and %@</source>
+        <target>我同意%@ 和 %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTLocationPickerViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="101" resname="To connect you with the right doctor,\nplease provide your current location" restype="string" datatype="x-objective-c">
-        <source>To connect you with the right doctor,\nplease provide your current location</source><target>为了帮助您联系到合适的医生，\n请提供您的当前位置</target>
+        <source>To connect you with the right doctor,\nplease provide your current location</source>
+        <target>为了帮助您联系到合适的医生，\n请提供您的当前位置</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTLocationEnforcer.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="102" resname="It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients." restype="string" datatype="x-objective-c">
-        <source>It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients.</source><target>您似乎在％@附近。请确认您确实在％@。如果您不在其拥有执业执照所在的州，医生不能合法地为您提供医疗建议或开处方。</target>
+        <source>It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients.</source>
+        <target>您似乎在％@附近。请确认您确实在％@。如果您不在其拥有执业执照所在的州，医生不能合法地为您提供医疗建议或开处方。</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTLocationDetectionView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="103" resname="One moment while we find\nthe right doctors for your location..." restype="string" datatype="x-objective-c">
-        <source>One moment while we find\nthe right doctors for your location...</source><target>当我们找到\n您所在位置的合适的医生...</target>
+        <source>One moment while we find\nthe right doctors for your location...</source>
+        <target>当我们找到\n您所在位置的合适的医生...</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTKudosSendReminderView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="104" resname="%@ needs your help %@" restype="string" datatype="x-objective-c">
-        <source>%@ needs your help %@</source><target>%@ 需要您的帮助 %@</target>
+        <source>%@ needs your help %@</source>
+        <target>%@ 需要您的帮助 %@</target>
       </trans-unit>
       <trans-unit id="105" resname="Remind %@ to:\n%@" restype="string" datatype="x-objective-c">
-        <source>Remind %@ to:\n%@</source><target>提醒{user_name}到：\n%@</target>
+        <source>Remind %@ to:\n%@</source>
+        <target>提醒{user_name}到：\n%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTKudosSendReminderSuccessAlsoSubscribedView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="106" resname="%@ appreciates your support. How are you doing on your checklist for %@?" restype="string" datatype="x-objective-c">
-        <source>%@ appreciates your support. How are you doing on your checklist for %@?</source><target>%@ 感谢您的支持。您是如何为%@按照您的清单进行的？</target>
+        <source>%@ appreciates your support. How are you doing on your checklist for %@?</source>
+        <target>%@ 感谢您的支持。您是如何为%@按照您的清单进行的？</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTKudosInviteFlowManager.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="107" resname="I'd love your help to accomplish my goal of %@. Follow this link to see how: %@" restype="string" datatype="x-objective-c">
-        <source>I'd love your help to accomplish my goal of %@. Follow this link to see how: %@</source><target>我希望您帮助我完成{goal_name}我的目标。点击此链接查看如何：%@</target>
+      <trans-unit id="107" resname="I&apos;d love your help to accomplish my goal of %@. Follow this link to see how: %@" restype="string" datatype="x-objective-c">
+        <source>I&apos;d love your help to accomplish my goal of %@. Follow this link to see how: %@</source>
+        <target>我希望您帮助我完成{goal_name}我的目标。点击此链接查看如何：%@</target>
       </trans-unit>
       <trans-unit id="108" resname="Hi %@,\n\nI would appreciate your help to accomplish my goal of %@.\n\nHealthTap makes it very easy to support those you care for as they achieve their health goals.\n\nAccept my request: %@\n\nThanks for your help!\n%@" restype="string" datatype="x-objective-c">
-        <source>Hi %@,\n\nI would appreciate your help to accomplish my goal of %@.\n\nHealthTap makes it very easy to support those you care for as they achieve their health goals.\n\nAccept my request: %@\n\nThanks for your help!\n%@</source><target>您好 %@,\n\n 我们非常感谢您帮助完成我的%@目标。\n\n当他们达到了他们的健康目标时，HalthTap让您能够轻松支持那些您关心的人。\n\n接受我的请求：%@\n\n谢谢您的帮助！\n%@</target>
+        <source>Hi %@,\n\nI would appreciate your help to accomplish my goal of %@.\n\nHealthTap makes it very easy to support those you care for as they achieve their health goals.\n\nAccept my request: %@\n\nThanks for your help!\n%@</source>
+        <target>您好 %@,\n\n 我们非常感谢您帮助完成我的%@目标。\n\n当他们达到了他们的健康目标时，HalthTap让您能够轻松支持那些您关心的人。\n\n接受我的请求：%@\n\n谢谢您的帮助！\n%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTKudosGoalNameInputView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="109" resname="Finish this sentence:\nI'd like to accomplish my goal of..." restype="string" datatype="x-objective-c">
-        <source>Finish this sentence:\nI'd like to accomplish my goal of...</source><target>完成这句话：\n我希望完成我的目标...</target>
+      <trans-unit id="109" resname="Finish this sentence:\nI&apos;d like to accomplish my goal of..." restype="string" datatype="x-objective-c">
+        <source>Finish this sentence:\nI&apos;d like to accomplish my goal of...</source>
+        <target>完成这句话：\n我希望完成我的目标...</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTInsuranceApplyDetailsView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="110" resname="%@ \naccepted" restype="string" datatype="x-objective-c">
-        <source>%@ \naccepted</source><target>%@ \n已接受</target>
+        <source>%@ \naccepted</source>
+        <target>%@ \n已接受</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTDoctorSearchResultContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="111" resname="%@: %@" restype="string" datatype="x-objective-c">
-        <source>%@: %@</source><target>%@: %@</target>
+        <source>%@: %@</source>
+        <target>%@: %@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTConsultToolTipPopUpView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="112" resname="Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:" restype="string" datatype="x-objective-c">
-        <source>Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:</source><target>发送您的问题，在一天之内收到来自我们由涵盖137个专科%@名医生组成的网络的一个或多个教育性文本回答。\n\n如果您想要可以与医生进行一次私人咨询：</target>
+        <source>Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:</source>
+        <target>发送您的问题，在一天之内收到来自我们由涵盖137个专科%@名医生组成的网络的一个或多个教育性文本回答。\n\n如果您想要可以与医生进行一次私人咨询：</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTConciergeTutorialView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="114" resname="Consult your doctors or\nspecialists at your\nconvenience" restype="string" datatype="x-objective-c">
-        <source>Consult your doctors or\nspecialists at your\nconvenience</source><target>在您\n方便的时候咨询您的医生或\n专家</target>
+        <source>Consult your doctors or\nspecialists at your\nconvenience</source>
+        <target>在您\n方便的时候咨询您的医生或\n专家</target>
       </trans-unit>
       <trans-unit id="115" resname="Choose a doctor to ask your\nquestion, pay for your consult,\nthen send your message or\nschedule a video chat" restype="string" datatype="x-objective-c">
-        <source>Choose a doctor to ask your\nquestion, pay for your consult,\nthen send your message or\nschedule a video chat</source><target>选择医生提出您的\n问题，支付您的咨询，\n然后发送您的消息或\n安排一次视频聊天</target>
+        <source>Choose a doctor to ask your\nquestion, pay for your consult,\nthen send your message or\nschedule a video chat</source>
+        <target>选择医生提出您的\n问题，支付您的咨询，\n然后发送您的消息或\n安排一次视频聊天</target>
       </trans-unit>
       <trans-unit id="116" resname="Talk live via video,\nvoice, and/or text chat from your\nmobile device or desktop computer" restype="string" datatype="x-objective-c">
-        <source>Talk live via video,\nvoice, and/or text chat from your\nmobile device or desktop computer</source><target>用您的\n移动设备或电脑通过视频，\n语音和/或文本实时交流</target>
+        <source>Talk live via video,\nvoice, and/or text chat from your\nmobile device or desktop computer</source>
+        <target>用您的\n移动设备或电脑通过视频，\n语音和/或文本实时交流</target>
       </trans-unit>
       <trans-unit id="117" resname="Get advice and treatment\nimmediately with helpful reminders\nafter your consult to take\naction and feel good" restype="string" datatype="x-objective-c">
-        <source>Get advice and treatment\nimmediately with helpful reminders\nafter your consult to take\naction and feel good</source><target>咨询结束后立即获得建议，治疗\n和有帮助的提醒\n，并采取行动和feel good</target>
+        <source>Get advice and treatment\nimmediately with helpful reminders\nafter your consult to take\naction and feel good</source>
+        <target>咨询结束后立即获得建议，治疗\n和有帮助的提醒\n，并采取行动和feel good</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTConciergeAdSearchResultRowView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="118" resname="%@, %@ years in practice" restype="string" datatype="x-objective-c">
-        <source>%@, %@ years in practice</source><target>%@, %@ 年诊疗</target>
+        <source>%@, %@ years in practice</source>
+        <target>%@, %@ 年诊疗</target>
       </trans-unit>
       <trans-unit id="119" resname="%@, %@ year in practice" restype="string" datatype="x-objective-c">
-        <source>%@, %@ year in practice</source><target>%@, %@ 年诊疗</target>
+        <source>%@, %@ year in practice</source>
+        <target>%@, %@ 年诊疗</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTConciergeAdSearchResultHeaderView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="120" resname="Consult a top doctor in%@ %@" restype="string" datatype="x-objective-c">
-        <source>Consult a top doctor in%@ %@</source><target>在%@ %@中咨询一位顶级医生</target>
+        <source>Consult a top doctor in%@ %@</source>
+        <target>在%@ %@中咨询一位顶级医生</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhoAskDoctorsFlowView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="121" resname="HealthTap will find the best primary\ncare doctor for you to consult" restype="string" datatype="x-objective-c">
-        <source>HealthTap will find the best primary\ncare doctor for you to consult</source><target>HealthTap会为您找到最好的普通\n门诊医生进行咨询</target>
+        <source>HealthTap will find the best primary\ncare doctor for you to consult</source>
+        <target>HealthTap会为您找到最好的普通\n门诊医生进行咨询</target>
       </trans-unit>
       <trans-unit id="122" resname="From which doctor would\nyou like help?" restype="string" datatype="x-objective-c">
-        <source>From which doctor would\nyou like help?</source><target>您希望\n选择哪个医生的帮助？</target>
+        <source>From which doctor would\nyou like help?</source>
+        <target>您希望\n选择哪个医生的帮助？</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhenConciergeDisabledAskDoctorsFlowViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="123" resname="by video, voice, or text chat\nwith a primary care doctor" restype="string" datatype="x-objective-c">
-        <source>by video, voice, or text chat\nwith a primary care doctor</source><target>通过视频、语音或文本\n与普通门诊医生进行交流</target>
+        <source>by video, voice, or text chat\nwith a primary care doctor</source>
+        <target>通过视频、语音或文本\n与普通门诊医生进行交流</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhenAskDoctorsFlowViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="124" resname="24/7 virtual consults are not yet\navailable in %@" restype="string" datatype="x-objective-c">
-        <source>24/7 virtual consults are not yet\navailable in %@</source><target>24/7全天候在线咨询\n在%@中尚不可用</target>
+        <source>24/7 virtual consults are not yet\navailable in %@</source>
+        <target>24/7全天候在线咨询\n在%@中尚不可用</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhenAskDoctorsFlowView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="125" resname="by video, voice, or text chat\nwith an available primary care doctor" restype="string" datatype="x-objective-c">
-        <source>by video, voice, or text chat\nwith an available primary care doctor</source><target>通过视频、语音或文本\n与普通门诊医生进行交流</target>
+        <source>by video, voice, or text chat\nwith an available primary care doctor</source>
+        <target>通过视频、语音或文本\n与普通门诊医生进行交流</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTChooseWhatAskDoctorsFlowView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="126" resname="Share personal health information\nand get advice and treatment" restype="string" datatype="x-objective-c">
-        <source>Share personal health information\nand get advice and treatment</source><target>分享个人健康信息并获得建议和治疗</target>
+        <source>Share personal health information\nand get advice and treatment</source>
+        <target>分享个人健康信息并获得建议和治疗</target>
       </trans-unit>
       <trans-unit id="127" resname="Ask anonymously and get\ninformational answers" restype="string" datatype="x-objective-c">
-        <source>Ask anonymously and get\ninformational answers</source><target>匿名询问并获得\n内容丰富的回答</target>
+        <source>Ask anonymously and get\ninformational answers</source>
+        <target>匿名询问并获得\n内容丰富的回答</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBasicTutorialView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="128" resname="Ask doctors brief,\nanonymous health questions\nanytime for free" restype="string" datatype="x-objective-c">
-        <source>Ask doctors brief,\nanonymous health questions\nanytime for free</source><target>随时随地免费的向医生询问简短的，\n匿名的健康问题</target>
+        <source>Ask doctors brief,\nanonymous health questions\nanytime for free</source>
+        <target>随时随地免费的向医生询问简短的，\n匿名的健康问题</target>
       </trans-unit>
       <trans-unit id="129" resname="Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer" restype="string" datatype="x-objective-c">
-        <source>Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer</source><target>为自己或他人询问一个简短的，匿名的问题，\n并为一个更个性化的回答\n添加一些健康细节</target>
+        <source>Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer</source>
+        <target>为自己或他人询问一个简短的，匿名的问题，\n并为一个更个性化的回答\n添加一些健康细节</target>
       </trans-unit>
-      <trans-unit id="130" resname="If your question wasn't already\nanswered, we'll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" restype="string" datatype="x-objective-c">
-        <source>If your question wasn't already\nanswered, we'll send it to our\nnetwork of top U.S. doctors across\n130+ specialties</source><target>如果您的问题未\n获得解答，我们将会把问题发送至\n我们由涵盖超过\n130个专科的优秀美国医生组成的网络</target>
+      <trans-unit id="130" resname="If your question wasn&apos;t already\nanswered, we&apos;ll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" restype="string" datatype="x-objective-c">
+        <source>If your question wasn&apos;t already\nanswered, we&apos;ll send it to our\nnetwork of top U.S. doctors across\n130+ specialties</source>
+        <target>如果您的问题未\n获得解答，我们将会把问题发送至\n我们由涵盖超过\n130个专科的优秀美国医生组成的网络</target>
       </trans-unit>
       <trans-unit id="131" resname="One or more doctors\nwill respond with short,\neducational answers" restype="string" datatype="x-objective-c">
-        <source>One or more doctors\nwill respond with short,\neducational answers</source><target>一名或多名医生\n将回复简短的\n教育性回答</target>
+        <source>One or more doctors\nwill respond with short,\neducational answers</source>
+        <target>一名或多名医生\n将回复简短的\n教育性回答</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseWhatToAskAskDoctorsFlowView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="132" resname="If you think you have a medical emergency, call %@ or go to the %@ immediately." restype="string" datatype="x-objective-c">
-        <source>If you think you have a medical emergency, call %@ or go to the %@ immediately.</source><target>如果您认为您需要医疗紧急服务，致电%@ 或立即前往%@。</target>
+        <source>If you think you have a medical emergency, call %@ or go to the %@ immediately.</source>
+        <target>如果您认为您需要医疗紧急服务，致电%@ 或立即前往%@。</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseTutorialView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="133" resname="Instant, affordable\ndoctor care,\nonly a tap away" restype="string" datatype="x-objective-c">
-        <source>Instant, affordable\ndoctor care,\nonly a tap away</source><target>即时的，负担得起的\n医生医护，\n只需点击一次</target>
+        <source>Instant, affordable\ndoctor care,\nonly a tap away</source>
+        <target>即时的，负担得起的\n医生医护，\n只需点击一次</target>
       </trans-unit>
-      <trans-unit id="134" resname="We'll immediately start calling one\nof our doctors to help you\n(you won't be charged until the\ndoctor picks up)" restype="string" datatype="x-objective-c">
-        <source>We'll immediately start calling one\nof our doctors to help you\n(you won't be charged until the\ndoctor picks up)</source><target>我们会立即开始呼叫\n我们的医生一位医生为您提供帮助\n（在医生开始之前\n您不会被收费）</target>
-        
-      <note>Tutorial step 2</note></trans-unit>
+      <trans-unit id="134" resname="We&apos;ll immediately start calling one\nof our doctors to help you\n&#40;you won&apos;t be charged until the\ndoctor picks up&#41;" restype="string" datatype="x-objective-c">
+        <source>We&apos;ll immediately start calling one\nof our doctors to help you\n&#40;you won&apos;t be charged until the\ndoctor picks up&#41;</source>
+        <target>我们会立即开始呼叫\n我们的医生一位医生为您提供帮助\n（在医生开始之前\n您不会被收费）</target>
+        <note annotates="source">Tutorial step 2</note>
+      </trans-unit>
       <trans-unit id="135" resname="Video chat with the doctor to get\nadvice, treatment, personalized\nchecklists, and reminders to help\nyou stay healthy" restype="string" datatype="x-objective-c">
-        <source>Video chat with the doctor to get\nadvice, treatment, personalized\nchecklists, and reminders to help\nyou stay healthy</source><target>与医生进行视频聊天，获得帮助您保持健康的\n建议，治疗，个性化的\n清单和提醒</target>
-        
-      <note>Tutorial step 3</note></trans-unit>
+        <source>Video chat with the doctor to get\nadvice, treatment, personalized\nchecklists, and reminders to help\nyou stay healthy</source>
+        <target>与医生进行视频聊天，获得帮助您保持健康的\n建议，治疗，个性化的\n清单和提醒</target>
+        <note annotates="source">Tutorial step 3</note>
+      </trans-unit>
       <trans-unit id="136" resname="Rate your experience, and get your\ndoctor notes and prescriptions\nfrom the HealthTap app" restype="string" datatype="x-objective-c">
-        <source>Rate your experience, and get your\ndoctor notes and prescriptions\nfrom the HealthTap app</source><target>评价您的体验，并从HealthTap应用程序获取您\医生的注意事项和处方</target>
-        
-      <note>Tutorial step 4</note></trans-unit>
+        <source>Rate your experience, and get your\ndoctor notes and prescriptions\nfrom the HealthTap app</source>
+        <target>评价您的体验，并从HealthTap应用程序获取您\医生的注意事项和处方</target>
+        <note annotates="source">Tutorial step 4</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseSelectDoctorViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="137" resname="Search by name, specialty, or topic" restype="string" datatype="x-objective-c">
-        <source>Search by name, specialty, or topic</source><target>按姓名、专科或话题查找</target>
+        <source>Search by name, specialty, or topic</source>
+        <target>按姓名、专科或话题查找</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseChoosePrimePaymentAskDoctorsFlowViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="138" resname="$%d per month for unlimited\nconsults and other benefits" restype="string" datatype="x-objective-c">
-        <source>$%d per month for unlimited\nconsults and other benefits</source><target>$%d 每月无限制的\n咨询和其他福利</target>
+        <source>$%d per month for unlimited\nconsults and other benefits</source>
+        <target>$%d 每月无限制的\n咨询和其他福利</target>
       </trans-unit>
       <trans-unit id="139" resname="$%d per month + $%d per consult" restype="string" datatype="x-objective-c">
-        <source>$%d per month + $%d per consult</source><target>$%d 每月 + $%d 每次咨询</target>
+        <source>$%d per month + $%d per consult</source>
+        <target>$%d 每月 + $%d 每次咨询</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseAskDoctorsWhatToAskViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="140" resname="Please enter a valid reason\nfor your consult" restype="string" datatype="x-objective-c">
-        <source>Please enter a valid reason\nfor your consult</source><target>请为您的咨询输入一个合理的理由\n</target>
+        <source>Please enter a valid reason\nfor your consult</source>
+        <target>请为您的咨询输入一个合理的理由\n</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTAttachmentUploadPopupView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="141" resname="Help the doctors understand\nwhat they are looking at" restype="string" datatype="x-objective-c">
-        <source>Help the doctors understand\nwhat they are looking at</source><target>帮助医生了解\n他们正在看的内容</target>
+        <source>Help the doctors understand\nwhat they are looking at</source>
+        <target>帮助医生了解\n他们正在看的内容</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/FGGetHelpConciergeView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="145" resname="I am available to help if you still need it.\nWould you like to connect?" restype="string" datatype="x-objective-c">
-        <source>I am available to help if you still need it.\nWould you like to connect?</source><target>如果您仍然需要帮助，我现在空闲。\n您希望连接吗？</target>
+        <source>I am available to help if you still need it.\nWould you like to connect?</source>
+        <target>如果您仍然需要帮助，我现在空闲。\n您希望连接吗？</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGSuccessScreenNewsData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="151" resname="%@ and %@ found this helpful" restype="string" datatype="x-objective-c">
-        <source>%@ and %@ found this helpful</source><target>%@ 和 %@ 发现这个有帮助</target>
+        <source>%@ and %@ found this helpful</source>
+        <target>%@ 和 %@ 发现这个有帮助</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGSearchResultQuestionUserAnswer.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="154" resname="...Do you have a follow-up question? Ask %@, a %@ with %@ years in practice:" restype="string" datatype="x-objective-c">
-        <source>...Do you have a follow-up question? Ask %@, a %@ with %@ years in practice:</source><target>...您有后续问题吗？询问%@，一个 %@ 有 %@ 年诊疗：</target>
-        
-      <note>Para1: doctor name, Para2: specialty, Para3: practice duration</note></trans-unit>
+        <source>...Do you have a follow-up question? Ask %@, a %@ with %@ years in practice:</source>
+        <target>...您有后续问题吗？询问%@，一个 %@ 有 %@ 年诊疗：</target>
+        <note annotates="source">Para1: doctor name, Para2: specialty, Para3: practice duration</note>
+      </trans-unit>
       <trans-unit id="155" resname="%@%@ years in practice" restype="string" datatype="x-objective-c">
-        <source>%@%@ years in practice</source><target>%@%@ 年诊疗</target>
-        
-      <note>Para1: speciality and experience, Para2: years in practice</note></trans-unit>
+        <source>%@%@ years in practice</source>
+        <target>%@%@ 年诊疗</target>
+        <note annotates="source">Para1: speciality and experience, Para2: years in practice</note>
+      </trans-unit>
       <trans-unit id="156" resname="%@%@ year in practice" restype="string" datatype="x-objective-c">
-        <source>%@%@ year in practice</source><target>%@%@ 年诊疗</target>
-        
-      <note>Para1: speciality and experience, Para2: less than 1 year in practice</note></trans-unit>
+        <source>%@%@ year in practice</source>
+        <target>%@%@ 年诊疗</target>
+        <note annotates="source">Para1: speciality and experience, Para2: less than 1 year in practice</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGProfileFamilyHistoryData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="163" resname="(%@, %@ yrs)" restype="string" datatype="x-objective-c">
-        <source>(%@, %@ yrs)</source><target>(%@, %@ 年)</target>
+      <trans-unit id="163" resname="&#40;%@, %@ yrs&#41;" restype="string" datatype="x-objective-c">
+        <source>&#40;%@, %@ yrs&#41;</source>
+        <target>&#40;%@, %@ 年&#41;</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGMainSearchResults.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="164" resname="%ld doctors recommend this %@ app" restype="string" datatype="x-objective-c">
-        <source>%ld doctors recommend this %@ app</source><target>%ld 医生推荐这款 %@ 应用程序</target>
+        <source>%ld doctors recommend this %@ app</source>
+        <target>%ld 医生推荐这款 %@ 应用程序</target>
       </trans-unit>
       <trans-unit id="165" resname="%ld doctor recommend this %@ app" restype="string" datatype="x-objective-c">
-        <source>%ld doctor recommend this %@ app</source><target>%ld 医生推荐这款 %@ 应用程序</target>
+        <source>%ld doctor recommend this %@ app</source>
+        <target>%ld 医生推荐这款 %@ 应用程序</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGFeedAnswerCommented.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="184" resname="%@ commented on  \r\n%@'s answer" restype="string" datatype="x-objective-c">
-        <source>%@ commented on  \r\n%@'s answer</source><target>%@ 已评论  \r\n%@的回答</target>
+      <trans-unit id="184" resname="%@ commented on  \r\n%@&apos;s answer" restype="string" datatype="x-objective-c">
+        <source>%@ commented on  \r\n%@&apos;s answer</source>
+        <target>%@ 已评论  \r\n%@的回答</target>
       </trans-unit>
-      <trans-unit id="185" resname="%@ commented on \r\n%@'s answer:" restype="string" datatype="x-objective-c">
-        <source>%@ commented on \r\n%@'s answer:</source><target>%@ 已评论  \r\n%@的回答：</target>
+      <trans-unit id="185" resname="%@ commented on \r\n%@&apos;s answer:" restype="string" datatype="x-objective-c">
+        <source>%@ commented on \r\n%@&apos;s answer:</source>
+        <target>%@ 已评论  \r\n%@的回答：</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGFeedAnswerAgreed.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="186" resname="%@ agrees with %@'s answer:" restype="string" datatype="x-objective-c">
-        <source>%@ agrees with %@'s answer:</source><target>%@ 同意%@的回答：</target>
+      <trans-unit id="186" resname="%@ agrees with %@&apos;s answer:" restype="string" datatype="x-objective-c">
+        <source>%@ agrees with %@&apos;s answer:</source>
+        <target>%@ 同意%@的回答：</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGDocPracticeDuration.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="187" resname="%ld year%@" restype="string" datatype="x-objective-c">
-        <source>%ld year%@</source><target>%ld 年%@</target>
+        <source>%ld year%@</source>
+        <target>%ld 年%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/Util/FGPermissionManager.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="213" resname="Please allow camera access from:\nSettings -&gt; HealthTap -&gt; Camera" restype="string" datatype="x-objective-c">
-        <source>Please allow camera access from:\nSettings -&gt; HealthTap -&gt; Camera</source><target>请允许相机访问：\n设置 - &gt; HealthTap - &gt; 相机</target>
+        <source>Please allow camera access from:\nSettings -&gt; HealthTap -&gt; Camera</source>
+        <target>请允许相机访问：\n设置 - &gt; HealthTap - &gt; 相机</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/HTSpecialistDataSource.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="215" resname="No %@ is available right now.\nYou may still consult one by secure message or appointment." restype="string" datatype="x-objective-c">
-        <source>No %@ is available right now.\nYou may still consult one by secure message or appointment.</source><target>没有 %@现在空闲。\n您仍然可以通过安全信息或预约进行一次咨询。</target>
+        <source>No %@ is available right now.\nYou may still consult one by secure message or appointment.</source>
+        <target>没有 %@现在空闲。\n您仍然可以通过安全信息或预约进行一次咨询。</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConsultListViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="224" resname="Appointment canceled with %@ on %@ at %@" restype="string" datatype="x-objective-c">
-        <source>Appointment canceled with %@ on %@ at %@</source><target>取消与%@ 在 %@  %@的预约</target>
+        <source>Appointment canceled with %@ on %@ at %@</source>
+        <target>取消与%@ 在 %@  %@的预约</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergePaymentViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="226" resname="$%@ regularly - $%@ in credits" restype="string" datatype="x-objective-c">
-        <source>$%@ regularly - $%@ in credits</source><target>$%@ 定期地 - $%@ 余额</target>
+        <source>$%@ regularly - $%@ in credits</source>
+        <target>$%@ 定期地 - $%@ 余额</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergeInviteDoctorViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="227" resname="Invite %@%@" restype="string" datatype="x-objective-c">
-        <source>Invite %@%@</source><target>邀请 %@%@</target>
+        <source>Invite %@%@</source>
+        <target>邀请 %@%@</target>
       </trans-unit>
       <trans-unit id="228" resname="Connect with %@%@" restype="string" datatype="x-objective-c">
-        <source>Connect with %@%@</source><target>与%@%@连接</target>
+        <source>Connect with %@%@</source>
+        <target>与%@%@连接</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergeConfirmConnectionViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="229" resname="This keycode is not accurate\nPlease try again" restype="string" datatype="x-objective-c">
-        <source>This keycode is not accurate\nPlease try again</source><target>这个验证码不正确\n请重新尝试</target>
+        <source>This keycode is not accurate\nPlease try again</source>
+        <target>这个验证码不正确\n请重新尝试</target>
       </trans-unit>
-      <trans-unit id="230" resname="to verify you as a patient, please enter %@%@'s Concierge Keycode" restype="string" datatype="x-objective-c">
-        <source>to verify you as a patient, please enter %@%@'s Concierge Keycode</source><target>要验证您是患者，请输入%@%@的贵宾台密钥</target>
-        
-      <note>Para1: title, Para2: last name</note></trans-unit>
-      <trans-unit id="231" resname="Enter %@%@'s Keycode" restype="string" datatype="x-objective-c">
-        <source>Enter %@%@'s Keycode</source><target>输入%@%@的验证码</target>
-        
-      <note>Para1: title, Para2: last name</note></trans-unit>
+      <trans-unit id="230" resname="to verify you as a patient, please enter %@%@&apos;s Concierge Keycode" restype="string" datatype="x-objective-c">
+        <source>to verify you as a patient, please enter %@%@&apos;s Concierge Keycode</source>
+        <target>要验证您是患者，请输入%@%@的贵宾台密钥</target>
+        <note annotates="source">Para1: title, Para2: last name</note>
+      </trans-unit>
+      <trans-unit id="231" resname="Enter %@%@&apos;s Keycode" restype="string" datatype="x-objective-c">
+        <source>Enter %@%@&apos;s Keycode</source>
+        <target>输入%@%@的验证码</target>
+        <note annotates="source">Para1: title, Para2: last name</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergeChooseDurationViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="232" resname="Consult with %@%@" restype="string" datatype="x-objective-c">
-        <source>Consult with %@%@</source><target>与%@%@咨询</target>
+        <source>Consult with %@%@</source>
+        <target>与%@%@咨询</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergeAppointmentViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="233" resname="Appointment on %@ %ld" restype="string" datatype="x-objective-c">
-        <source>Appointment on %@ %ld</source><target>预约在%@ %ld</target>
+        <source>Appointment on %@ %ld</source>
+        <target>预约在%@ %ld</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/FGSignUpViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="235" resname="Create a {start} free, private {end} account or login" restype="string" datatype="x-objective-c">
-        <source>Create a {start} free, private {end} account or login</source><target>创建{start}免费的私人{end}账号或登录</target>
+        <source>Create a {start} free, private {end} account or login</source>
+        <target>创建{start}免费的私人{end}账号或登录</target>
       </trans-unit>
       <trans-unit id="236" resname="{start}" restype="string" datatype="x-objective-c">
-        <source>{start}</source><target>{start}</target>
+        <source>{start}</source>
+        <target>{start}</target>
       </trans-unit>
       <trans-unit id="237" resname="{end}" restype="string" datatype="x-objective-c">
-        <source>{end}</source><target>{end}</target>
+        <source>{end}</source>
+        <target>{end}</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/iPadNative/Question/Base.lproj/FGiPadSearchQuestionViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="239" resname="map-gF-nCh.text" restype="string" datatype="x-xib">
-        <source>Thanks! Need more help? I\'m available for you.</source><target>谢谢！需要更多帮助吗？我现在空闲可以为您服务。</target>
-        
-      <note>Class = "UILabel"; text = "Thanks! Need more help? I'm available for you."; ObjectID = "map-gF-nCh";</note></trans-unit>
+        <source>Thanks! Need more help? I\&apos;m available for you.</source>
+        <target>谢谢！需要更多帮助吗？我现在空闲可以为您服务。</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help? I&apos;m available for you.&quot;; ObjectID = &quot;map-gF-nCh&quot;;</note>
+      </trans-unit>
       <trans-unit id="240" resname="u8p-tU-bxo.text" restype="string" datatype="x-xib">
-        <source>Thanks! Need more help?\nDoctors are online ready to help.</source><target>谢谢！需要更多帮助吗？\n医生正在线准备帮助您。</target>
-        
-      <note>Class = "UILabel"; text = "Thanks! Need more help?\nDoctors are online ready to help."; ObjectID = "u8p-tU-bxo";</note></trans-unit>
+        <source>Thanks! Need more help?\nDoctors are online ready to help.</source>
+        <target>谢谢！需要更多帮助吗？\n医生正在线准备帮助您。</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help?\nDoctors are online ready to help.&quot;; ObjectID = &quot;u8p-tU-bxo&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/iPadNative/Expert/Base.lproj/FGDoctoriPadViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="243" resname="6QR-tf-UGg.text" restype="string" datatype="x-xib">
-        <source>Dr. hasn\'t created any checklists yet</source><target>医生还没有创建任何清单</target>
-        
-      <note>Class = "UILabel"; text = "Dr. hasn't created any checklists yet"; ObjectID = "6QR-tf-UGg";</note></trans-unit>
+        <source>Dr. hasn\&apos;t created any checklists yet</source>
+        <target>医生还没有创建任何清单</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Dr. hasn&apos;t created any checklists yet&quot;; ObjectID = &quot;6QR-tf-UGg&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGVideoUnavailableRetryView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="247" resname="i78-6R-yDg.text" restype="string" datatype="x-xib">
-        <source>We\'re having trouble establishing a video or audio connection on your device. Please continue by chat or try again.</source><target>我们无法在您的设备上建立视频或音频连接。请继续聊天或再次尝试</target>
-        
-      <note>Class = "UILabel"; text = "We're having trouble establishing a video or audio connection on your device. Please continue by chat or try again."; ObjectID = "i78-6R-yDg";</note></trans-unit>
+        <source>We\&apos;re having trouble establishing a video or audio connection on your device. Please continue by chat or try again.</source>
+        <target>我们无法在您的设备上建立视频或音频连接。请继续聊天或再次尝试</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re having trouble establishing a video or audio connection on your device. Please continue by chat or try again.&quot;; ObjectID = &quot;i78-6R-yDg&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGTipCollectionViewCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="248" resname="AAD-xk-5xB.text" restype="string" datatype="x-xib">
-        <source>Have a question about losing weight?\nAsk Dr. Smith, a dietician, for only $44</source><target>有一个关于减肥的问题？\n询问Smith医生，一位营养师，只需$44</target>
-        
-      <note>Class = "UILabel"; text = "Have a question about losing weight?\nAsk Dr. Smith, a dietician, for only $44"; ObjectID = "AAD-xk-5xB";</note></trans-unit>
+        <source>Have a question about losing weight?\nAsk Dr. Smith, a dietician, for only $44</source>
+        <target>有一个关于减肥的问题？\n询问Smith医生，一位营养师，只需$44</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a question about losing weight?\nAsk Dr. Smith, a dietician, for only $44&quot;; ObjectID = &quot;AAD-xk-5xB&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocAddSubAccountsViewControlleriPad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="264" resname="YfW-LA-phA.text" restype="string" datatype="x-xib">
-        <source>Get the right care for your needs -\nconsult a specialist today!</source><target>根据您的需要获取合适的医护－\n立刻咨询一位专家！</target>
-        
-      <note>Class = "UILabel"; text = "Get the right care for your needs -\nconsult a specialist today!"; ObjectID = "YfW-LA-phA";</note></trans-unit>
+        <source>Get the right care for your needs -\nconsult a specialist today!</source>
+        <target>根据您的需要获取合适的医护－\n立刻咨询一位专家！</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get the right care for your needs -\nconsult a specialist today!&quot;; ObjectID = &quot;YfW-LA-phA&quot;;</note>
+      </trans-unit>
       <trans-unit id="267" resname="jan-BE-S41.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\'t get the right prescription</source><target>没有得到合适的处方</target>
-        
-      <note>Class = "UIButton"; normalTitle = "Can't get the right prescription"; ObjectID = "jan-BE-S41";</note></trans-unit>
+        <source>Can\&apos;t get the right prescription</source>
+        <target>没有得到合适的处方</target>
+        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t get the right prescription&quot;; ObjectID = &quot;jan-BE-S41&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocAddSubAccountsViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="272" resname="FD4-kh-UTk.text" restype="string" datatype="x-xib">
-        <source>Get the right care for your needs -\nconsult a specialist today!</source><target>根据您的需要获取合适的医护－\n立刻咨询一位专家！</target>
-        
-      <note>Class = "UILabel"; text = "Get the right care for your needs -\nconsult a specialist today!"; ObjectID = "FD4-kh-UTk";</note></trans-unit>
+        <source>Get the right care for your needs -\nconsult a specialist today!</source>
+        <target>根据您的需要获取合适的医护－\n立刻咨询一位专家！</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get the right care for your needs -\nconsult a specialist today!&quot;; ObjectID = &quot;FD4-kh-UTk&quot;;</note>
+      </trans-unit>
       <trans-unit id="273" resname="Gql-Yp-fzd.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\'t get the right prescription</source><target>没有得到合适的处方</target>
-        
-      <note>Class = "UIButton"; normalTitle = "Can't get the right prescription"; ObjectID = "Gql-Yp-fzd";</note></trans-unit>
+        <source>Can\&apos;t get the right prescription</source>
+        <target>没有得到合适的处方</target>
+        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t get the right prescription&quot;; ObjectID = &quot;Gql-Yp-fzd&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGSideMenuViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="282" resname="h4p-4j-JTj.text" restype="string" datatype="x-xib">
-        <source>0\' (0.0m)</source><target>0\' (0.0m)</target>
-        
-      <note>Class = "UILabel"; text = "0' (0.0m)"; ObjectID = "h4p-4j-JTj";</note></trans-unit>
+        <source>0\&apos; &#40;0.0m&#41;</source>
+        <target>0\&apos; &#40;0.0m&#41;</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;0&apos; &#40;0.0m&#41;&quot;; ObjectID = &quot;h4p-4j-JTj&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGSearchQuestionViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="283" resname="8J9-lv-qdo.text" restype="string" datatype="x-xib">
-        <source>Thanks! Need more help?\nDoctors are online ready to help.</source><target>谢谢！需要更多帮助吗？\n医生正在线准备帮助您。</target>
-        
-      <note>Class = "UILabel"; text = "Thanks! Need more help?\nDoctors are online ready to help."; ObjectID = "8J9-lv-qdo";</note></trans-unit>
+        <source>Thanks! Need more help?\nDoctors are online ready to help.</source>
+        <target>谢谢！需要更多帮助吗？\n医生正在线准备帮助您。</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help?\nDoctors are online ready to help.&quot;; ObjectID = &quot;8J9-lv-qdo&quot;;</note>
+      </trans-unit>
       <trans-unit id="285" resname="ghm-jn-UVw.text" restype="string" datatype="x-xib">
-        <source>Thanks! Need more help? I\'m available for you.</source><target>谢谢！需要更多帮助吗？我现在空闲可以为您服务。</target>
-        
-      <note>Class = "UILabel"; text = "Thanks! Need more help? I'm available for you."; ObjectID = "ghm-jn-UVw";</note></trans-unit>
+        <source>Thanks! Need more help? I\&apos;m available for you.</source>
+        <target>谢谢！需要更多帮助吗？我现在空闲可以为您服务。</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help? I&apos;m available for you.&quot;; ObjectID = &quot;ghm-jn-UVw&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGSearchDoctorsViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="291" resname="cRI-Pk-V17.text" restype="string" datatype="x-xib">
-        <source>Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic.</source><target>对不起，我们没有找到医生。\n确认拼写是否正确，或者输入另一个姓名、专科或话题</target>
-        
-      <note>Class = "UILabel"; text = "Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic."; ObjectID = "cRI-Pk-V17";</note></trans-unit>
+        <source>Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic.</source>
+        <target>对不起，我们没有找到医生。\n确认拼写是否正确，或者输入另一个姓名、专科或话题</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Sorry, we found no doctors.\n\nCheck the spelling or enter another name, specialty, or topic.&quot;; ObjectID = &quot;cRI-Pk-V17&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGSearchDoctorsProfileViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="293" resname="Lgu-j4-Xkx.text" restype="string" datatype="x-xib">
-        <source>Dr. hasn\'t created any checklists yet</source><target>医生还没有创建任何清单</target>
-        
-      <note>Class = "UILabel"; text = "Dr. hasn't created any checklists yet"; ObjectID = "Lgu-j4-Xkx";</note></trans-unit>
+        <source>Dr. hasn\&apos;t created any checklists yet</source>
+        <target>医生还没有创建任何清单</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Dr. hasn&apos;t created any checklists yet&quot;; ObjectID = &quot;Lgu-j4-Xkx&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGGenericAppRatingViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="309" resname="5em-us-DCA.text" restype="string" datatype="x-xib">
-        <source>Please let us know how we\'re doing...</source><target>请告诉我们，我们如何...</target>
-        
-      <note>Class = "UITextView"; text = "Please let us know how we're doing..."; ObjectID = "5em-us-DCA";</note></trans-unit>
+        <source>Please let us know how we\&apos;re doing...</source>
+        <target>请告诉我们，我们如何...</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Please let us know how we&apos;re doing...&quot;; ObjectID = &quot;5em-us-DCA&quot;;</note>
+      </trans-unit>
       <trans-unit id="310" resname="VLz-E1-cea.text" restype="string" datatype="x-xib">
-        <source>If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :)</source><target>如果您发现HealthTap有帮助，\n请花点时间对应用程序进行评分\n并让世界知道:)</target>
-        
-      <note>Class = "UILabel"; text = "If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :)"; ObjectID = "VLz-E1-cea";</note></trans-unit>
+        <source>If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :&#41;</source>
+        <target>如果您发现HealthTap有帮助，\n请花点时间对应用程序进行评分\n并让世界知道:&#41;</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :&#41;&quot;; ObjectID = &quot;VLz-E1-cea&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Prime Trial/Base.lproj/FGPrimeTrialPaymentViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="325" resname="VcR-do-QUz.text" restype="string" datatype="x-xib">
-        <source>I agree to the HealthTap\'s</source><target>我同意HealthTap的</target>
-        
-      <note>Class = "UILabel"; text = "I agree to the HealthTap's"; ObjectID = "VcR-do-QUz";</note></trans-unit>
+        <source>I agree to the HealthTap\&apos;s</source>
+        <target>我同意HealthTap的</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;I agree to the HealthTap&apos;s&quot;; ObjectID = &quot;VcR-do-QUz&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Base.lproj/FGDocScoreLayerView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="333" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification(s)\n\n•     Other professional accomplishments        (such as peer reviewed publications         and awards)  •     Thanks, votes, and recommendations         from members</source><target>每一个在HealthTap上的医学专家都有一个医者评分信誉评分从0到5星，反应了该医生在HealthTap上获得的同行认可，以及关于他的相关公开信息，包括：  •     来自其他医生的赞同，投票和评论 \n•     多年的经验\n\n•     参考他们的专家质量\n\n•     专家曾经学习和培训的地方\n\n•     认证\n\n•     其他专业成就（如同行评审的出版物和奖项）        •     来自会员的感谢，投票和建议</target>
-        
-      <note>Class = "UITextView"; text = "Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification(s)\n\n•     Other professional accomplishments        (such as peer reviewed publications         and awards)  •     Thanks, votes, and recommendations         from members"; ObjectID = "dSG-zo-7RR";</note></trans-unit>
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
+        <target>每一个在HealthTap上的医学专家都有一个医者评分信誉评分从0到5星，反应了该医生在HealthTap上获得的同行认可，以及关于他的相关公开信息，包括：  •     来自其他医生的赞同，投票和评论 \n•     多年的经验\n\n•     参考他们的专家质量\n\n•     专家曾经学习和培训的地方\n\n•     认证\n\n•     其他专业成就（如同行评审的出版物和奖项）        •     来自会员的感谢，投票和建议</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Base.lproj/FGConnectionLostView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="334" resname="vQi-Zb-3ut.text" restype="string" datatype="x-xib">
-        <source>We\'re sorry but there seems to be a problem with your connection.</source><target>我们很抱歉但是您的连接似乎有问题。</target>
-        
-      <note>Class = "UILabel"; text = "We're sorry but there seems to be a problem with your connection."; ObjectID = "vQi-Zb-3ut";</note></trans-unit>
+        <source>We\&apos;re sorry but there seems to be a problem with your connection.</source>
+        <target>我们很抱歉但是您的连接似乎有问题。</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re sorry but there seems to be a problem with your connection.&quot;; ObjectID = &quot;vQi-Zb-3ut&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/TableViewCells/Base.lproj/FGChatReferNonHTDoctorCellTableViewCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="340" resname="JB0-J5-1sj.text" restype="string" datatype="x-xib">
-        <source>I\'d like to refer you to:</source><target>我希望推荐您到：</target>
-        
-      <note>Class = "UILabel"; text = "I'd like to refer you to:"; ObjectID = "JB0-J5-1sj";</note></trans-unit>
+        <source>I\&apos;d like to refer you to:</source>
+        <target>我希望推荐您到：</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;I&apos;d like to refer you to:&quot;; ObjectID = &quot;JB0-J5-1sj&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/TableViewCells/Base.lproj/FGChatPodiatristCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="341" resname="6Kt-vE-Jwg.text" restype="string" datatype="x-xib">
-        <source>I\'d like to refer you to a Podiatrist.</source><target>我希望把您推荐到一位足科医生。</target>
-        
-      <note>Class = "UILabel"; text = "I'd like to refer you to a Podiatrist."; ObjectID = "6Kt-vE-Jwg";</note></trans-unit>
+        <source>I\&apos;d like to refer you to a Podiatrist.</source>
+        <target>我希望把您推荐到一位足科医生。</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;I&apos;d like to refer you to a Podiatrist.&quot;; ObjectID = &quot;6Kt-vE-Jwg&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/CustomizedPopups/Base.lproj/FGDoctorScoreView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="351" resname="djz-HC-hRp.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification(s)\n\n•     Other professional accomplishments        (such as peer reviewed publications         and awards)  •     Thanks, votes, and recommendations         from members</source><target>每一个在HealthTap上的医学专家都有一个医者评分信誉评分从0到5星，反应了该医生在HealthTap上获得的同行认可，以及关于他的相关公开信息，包括：  •     来自其他医生的赞同，投票和评论 \n•     多年的经验\n\n•     参考他们的专家质量\n\n•     专家曾经学习和培训的地方\n\n•     认证\n\n•     其他专业成就（如同行评审的出版物和奖项）        •     来自会员的感谢，投票和建议</target>
-        
-      <note>Class = "UITextView"; text = "Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification(s)\n\n•     Other professional accomplishments        (such as peer reviewed publications         and awards)  •     Thanks, votes, and recommendations         from members"; ObjectID = "djz-HC-hRp";</note></trans-unit>
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
+        <target>每一个在HealthTap上的医学专家都有一个医者评分信誉评分从0到5星，反应了该医生在HealthTap上获得的同行认可，以及关于他的相关公开信息，包括：  •     来自其他医生的赞同，投票和评论 \n•     多年的经验\n\n•     参考他们的专家质量\n\n•     专家曾经学习和培训的地方\n\n•     认证\n\n•     其他专业成就（如同行评审的出版物和奖项）        •     来自会员的感谢，投票和建议</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGInviteExternalDoctorViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="352" resname="c8b-7E-xsB.placeholder" restype="string" datatype="x-xib">
-        <source>Your doctor\'s name</source><target>您医生的姓名</target>
-        
-      <note>Class = "UITextField"; placeholder = "Your doctor's name"; ObjectID = "c8b-7E-xsB";</note></trans-unit>
+        <source>Your doctor\&apos;s name</source>
+        <target>您医生的姓名</target>
+        <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Your doctor&apos;s name&quot;; ObjectID = &quot;c8b-7E-xsB&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGChooseMessageConsultPreferenceViewController~iphone.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="361" resname="fYC-ZL-Tx6.text" restype="string" datatype="x-xib">
-        <source>Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more</source><target>发送所需数量的\信息或获取建议、\n处方、实验室检验\n及更多内容</target>
-        
-      <note>Class = "UILabel"; text = "Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more"; ObjectID = "fYC-ZL-Tx6";</note></trans-unit>
+        <source>Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more</source>
+        <target>发送所需数量的\信息或获取建议、\n处方、实验室检验\n及更多内容</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more&quot;; ObjectID = &quot;fYC-ZL-Tx6&quot;;</note>
+      </trans-unit>
       <trans-unit id="362" resname="wlf-6g-3lf.text" restype="string" datatype="x-xib">
-        <source>One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more</source><target>进行一次医生咨询\n即可获得建议、\n处方、实验室检验\n及更多服务</target>
-        
-      <note>Class = "UILabel"; text = "One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more"; ObjectID = "wlf-6g-3lf";</note></trans-unit>
+        <source>One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more</source>
+        <target>进行一次医生咨询\n即可获得建议、\n处方、实验室检验\n及更多服务</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more&quot;; ObjectID = &quot;wlf-6g-3lf&quot;;</note>
+      </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGChooseMessageConsultPreferenceViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="363" resname="AAc-ZT-Xxm.text" restype="string" datatype="x-xib">
-        <source>Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more</source><target>发送所需数量的\信息或获取建议、\n处方、实验室检验\n及更多内容</target>
-        
-      <note>Class = "UILabel"; text = "Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more"; ObjectID = "AAc-ZT-Xxm";</note></trans-unit>
+        <source>Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more</source>
+        <target>发送所需数量的\信息或获取建议、\n处方、实验室检验\n及更多内容</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more&quot;; ObjectID = &quot;AAc-ZT-Xxm&quot;;</note>
+      </trans-unit>
       <trans-unit id="364" resname="zEL-22-bH6.text" restype="string" datatype="x-xib">
-        <source>One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more</source><target>进行一次医生咨询\n即可获得建议、处方、实验室\n检验及更多服务</target>
-        
-      <note>Class = "UILabel"; text = "One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more"; ObjectID = "zEL-22-bH6";</note></trans-unit>
+        <source>One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more</source>
+        <target>进行一次医生咨询\n即可获得建议、处方、实验室\n检验及更多服务</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more&quot;; ObjectID = &quot;zEL-22-bH6&quot;;</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
