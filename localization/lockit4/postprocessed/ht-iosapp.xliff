@@ -1846,7 +1846,7 @@
     <body>
       <trans-unit id="342" resname="Ask Docs" restype="string" datatype="x-objective-c">
         <source>Ask Docs</source>
-        <target>Pregúntale a Docs</target>
+        <target>¡Pregunta!</target>
       </trans-unit>
     </body>
   </file>
@@ -3483,12 +3483,12 @@
       </trans-unit>
       <trans-unit id="650" resname="sWh-hA-9s9.text" restype="string" datatype="x-xib">
         <source>Our doctors have answered  similar questions</source>
-        <target>Nuestros doctores han contestado  preguntas similares</target>
+        <target>Preguntas similares</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors have answered  similar questions&quot;; ObjectID = &quot;sWh-hA-9s9&quot;;</note>
       </trans-unit>
       <trans-unit id="651" resname="vLt-Hu-9yd.text" restype="string" datatype="x-xib">
         <source>Didn\&apos;t find what you are looking for?</source>
-        <target>¿No encontraste lo que estabas buscando?</target>
+        <target>No encontre lo que buscaba</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Didn&apos;t find what you are looking for?&quot;; ObjectID = &quot;vLt-Hu-9yd&quot;;</note>
       </trans-unit>
     </body>
@@ -4101,7 +4101,7 @@
     <body>
       <trans-unit id="736" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
         <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento por pares que este doctor ha recibido en HealthTap, así como información pública relevante acerca de este experto, incluyendo:  •     De Acuerdos, votos y recomendaciones         de otros expertos \n•     Años de experiencia\n\n•     Calidad de expertos que los refieren\n\n•     Donde el experto estudió y entrenó\n\n•     Certificación&#40;es&#41; de Consejo\n\n•     Otros logros profesionales        &#40;como publicaciones con revisión por pares         y galardones&#41;  •     Gracias, votos y recomendaciones         de miembros</target>
+        <target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento por pares que este doctor ha recibido en HealthTap, a´si como información pública relevante acerca de este experto, incluyendo:  •     De Acuerdos, votos y recomendaciones         de otros expertos \n•     Años de experiencia\n\n•     Calidad de expertos que los refieren\n\n•     Donde el experto estudió y entrenó\n\n•     Certificación&#40;es&#41; de Consejo\n\n•     Otros logros profesionales        &#40;como publicaciones con revisión por pares         y galardones&#41;  •     Gracias, votos y recomendaciones         de miembros</target>
         <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
       </trans-unit>
     </body>
