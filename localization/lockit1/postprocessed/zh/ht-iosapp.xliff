@@ -8901,7 +8901,7 @@ subscription</source>
       </trans-unit>
       <trans-unit id="Filter" resname="Filter" restype="string">
         <source>Filter</source>
-        <target>滤波器</target>
+        <target>筛选</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Filter experts" resname="Filter experts" restype="string">
