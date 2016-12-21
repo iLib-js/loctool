@@ -739,7 +739,7 @@
     \u00B7 Cualquier otra situación crítica o que atente contra la vida
     Qué no esperar\n\n\
     \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration, Agencia Federal Antidrogas&#41; &#40;Categoría I, II, III, IV&#41;\n\
-    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
+    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n
     \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida &#40;por ejemplo, fármacos para dietas o para disfunción eréctil&#41;\n\
     \u00B7 Consultas en idiomas que no sea el inglés\n\
     \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje &#40;considera consultas de video con médicos disponibles para una atención más rápida&#41;</target>
@@ -793,7 +793,7 @@
     \u00B7 Cualquier otra situación crítica o que atente contra la vida
     Qué no esperar\n\n\
     \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration, Agencia Federal Antidrogas&#41; &#40;Categoría I, II, III, IV&#41;\n\
-    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
+    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n
     \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida &#40;por ejemplo, fármacos para dietas o para disfunción eréctil&#41;\n\
     \u00B7 Consultas en idiomas que no sea el inglés\n\
                            \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje &#40;considera consultas de video con médicos disponibles para una atención más rápida&#41;</target>
@@ -1846,7 +1846,7 @@
     <body>
       <trans-unit id="342" resname="Ask Docs" restype="string" datatype="x-objective-c">
         <source>Ask Docs</source>
-        <target>Pregúntale a Docs</target>
+        <target>¡Pregunta!</target>
       </trans-unit>
     </body>
   </file>
@@ -3483,12 +3483,12 @@
       </trans-unit>
       <trans-unit id="650" resname="sWh-hA-9s9.text" restype="string" datatype="x-xib">
         <source>Our doctors have answered  similar questions</source>
-        <target>Nuestros doctores han contestado  preguntas similares</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors have answered  similar questions&quot;; ObjectID = &quot;sWh-hA-9s9&quot;;</note>
+        <target>Preguntas similares</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors have answered similar questions&quot;; ObjectID = &quot;sWh-hA-9s9&quot;;</note>
       </trans-unit>
       <trans-unit id="651" resname="vLt-Hu-9yd.text" restype="string" datatype="x-xib">
         <source>Didn\&apos;t find what you are looking for?</source>
-        <target>¿No encontraste lo que estabas buscando?</target>
+        <target>No encontre lo que buscaba</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Didn&apos;t find what you are looking for?&quot;; ObjectID = &quot;vLt-Hu-9yd&quot;;</note>
       </trans-unit>
     </body>
@@ -3917,8 +3917,8 @@
     <body>
       <trans-unit id="712" resname="lyX-Gv-P5t.text" restype="string" datatype="x-xib">
         <source>Private storage and easy, secure sharing  with doctors</source>
-        <target>Almacenamiento privado y comparte de forma fácil y segura  con doctores</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private storage and easy, secure sharing  with doctors&quot;; ObjectID = &quot;lyX-Gv-P5t&quot;;</note>
+        <target>Almacenamiento privado y comparte de forma fácil y segura con doctores</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private storage and easy, secure sharing with doctors&quot;; ObjectID = &quot;lyX-Gv-P5t&quot;;</note>
       </trans-unit>
       <trans-unit id="713" resname="vj8-2g-5Ix.text" restype="string" datatype="x-xib">
         <source>Upload photos or documents</source>
@@ -3936,8 +3936,8 @@
       </trans-unit>
       <trans-unit id="715" resname="Fla-9e-gY4.text" restype="string" datatype="x-xib">
         <source>Private storage and easy, secure sharing  with doctors</source>
-        <target>Almacenamiento privado y comparte de forma fácil y segura  con doctores</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private storage and easy, secure sharing  with doctors&quot;; ObjectID = &quot;Fla-9e-gY4&quot;;</note>
+        <target>Almacenamiento privado y comparte de forma fácil y segura con doctores</target>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private storage and easy, secure sharing with doctors&quot;; ObjectID = &quot;Fla-9e-gY4&quot;;</note>
       </trans-unit>
     </body>
   </file>
