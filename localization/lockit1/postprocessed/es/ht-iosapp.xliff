@@ -676,7 +676,7 @@ en App Store :&#41;</target>
 •     Board certification&#40;s&#41;
 
 •     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones        de otros médicos 
+        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones         de otros médicos 
 •     Años de experiencia
 
 •     Calidad de los expertos que los refieran
@@ -713,7 +713,7 @@ en App Store :&#41;</target>
 •     Board certification&#40;s&#41;
 
 •     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones        de otros expertos 
+        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones         de otros expertos 
 •     Años de experiencia
 
 •     Calidad de los expertos que los refieran
@@ -722,8 +722,8 @@ en App Store :&#41;</target>
 
 •     Certificado&#40;s&#41; del Consejo
 
-•     Otros logros profesionales       &#40;tales como publicaciones y premios        revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones        de los miembros</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
+•     Otros logros profesionales        &#40;tales como publicaciones y premios         revisados por sus colegas&#41;  •     Agradecimientos, votos, y recomendaciones         de los miembros</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
       </trans-unit>
     </body>
   </file>
@@ -2676,7 +2676,7 @@ y más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What is DocScore?&quot;; ObjectID = &quot;Qhg-H9-U85&quot;;</note>
       </trans-unit>
       <trans-unit id="djz-HC-hRp.text" resname="djz-HC-hRp.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors 
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors 
 •     Years of experience
 
 •     Quality of experts who refer to them
@@ -2685,8 +2685,8 @@ y más</target>
 
 •     Board certification&#40;s&#41;
 
-•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
-        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones        de otros médicos 
+•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
+        <target>Cada médico experto en HealthTap tiene un DocScore. Este es un puntaje de reputación desde 0 a 5 estrellas que refleja el reconocimiento de los colegas que este ha recibido en HealthTap, así como también información pública relevante acerca de este experto, incluyendo:  •     Acuerdos, votos y recomendaciones         de otros médicos 
 •     Años de experiencia
 
 •     Calidad de los expertos que los refieran
