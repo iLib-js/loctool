@@ -174,7 +174,7 @@
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/QuestionDetailAnswerItem.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="798" resname="r992818456" restype="string" datatype="java">
-        <source>{approver_name} approved this translation of {answerer_name}</source><target>{Approver_name} 批准这个翻译{answerer_name}</target>
+        <source>{approver_name} approved this translation of {answerer_name}</source><target>{approver_name} 批准这个翻译{answerer_name}</target>
       </trans-unit>
     </body>
   </file>
