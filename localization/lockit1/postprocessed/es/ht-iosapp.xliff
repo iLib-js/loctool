@@ -9011,11 +9011,11 @@ mensual</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Find doctor-created checklists \n Try them out \n Feel Good :&#41;" resname="Find doctor-created checklists \n Try them out \n Feel Good :&#41;" restype="string">
-        <source>Find doctor-created checklists
- Try them out
+       <source>Find doctor-created checklists 
+ Try them out 
  Feel Good :&#41;</source>
-        <target>Encuentra listas de comprobación creadas por médicos
- Pruébalas ahora
+       <target>Encuentra listas de comprobación creadas por médicos 
+ Pruébalas ahora 
  Siéntete bien :&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -9445,7 +9445,7 @@ atención primaria para que te consultes con él</target>
       </trans-unit>
       <trans-unit id="Help the doctors help you. Complete your private health profile" resname="Help the doctors help you. Complete your private health profile" restype="string">
         <source>Help the doctors help you. Complete your private health profile</source>
-        <target>Ayuda a los médicos para que te ayuden. Completa tu perfil </target>
+        <target>Ayuda a los médicos para que te ayuden. Completa tu perfil</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Help the doctors understand\nwhat they are looking at" resname="Help the doctors understand\nwhat they are looking at" restype="string">
@@ -10944,9 +10944,9 @@ para tu consulta</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Please share a little about yourself so the \ndoctor can confirm you as a patient" resname="Please share a little about yourself so the \ndoctor can confirm you as a patient" restype="string">
-        <source>Please share a little about yourself so the
+        <source>Please share a little about yourself so the 
 doctor can confirm you as a patient</source>
-        <target>Por favor, comparte un poco acerca de ti para que
+        <target>Por favor, comparte un poco acerca de ti para que 
 el médico pueda confirmarte como paciente</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -11588,9 +11588,9 @@ gustaría obtener ayuda</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Send a thank you note to \n%@" resname="Send a thank you note to \n%@" restype="string">
-        <source>Send a thank you note to
+        <source>Send a thank you note to 
 %@</source>
-        <target>Enviar una nota de agradecimiento a
+        <target>Enviar una nota de agradecimiento a 
 %@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -12265,7 +12265,7 @@ en todo momento, en todo lugar</target>
 Change question ›
 
 Alternatively, you may send your question for one or more answers from our %@ top doctors or consult a doctor.</source>
-        <target>No hay percepciones médicas inmediatas para tu pregunta. ¿Te gustaría reformular tu pregunta de forma diferente?
+        <target>No hay percepciones médicas inmediatas para tu pregunta. ¿Te gustaría reformular tu pregunta de forma diferente?  
 Cambiar pregunta ›
 
 De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nuestros mejores médicos en %@ o consulta con un médico.</target>
@@ -13228,7 +13228,7 @@ en tu Apple Watch o iPhone</target>
       </trans-unit>
       <trans-unit id="You agree to HealthTap&apos;s Terms and Privacy Policy." resname="You agree to HealthTap&apos;s Terms and Privacy Policy." restype="string">
         <source>You agree to HealthTap&apos;s Terms and Privacy Policy.</source>
-        <target>Estás de acuerdo con los Términos y la Política de Privacidad <p.</target>
+        <target>Estás de acuerdo con los Términos y la Política de Privacidad de HealthTap</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information." resname="You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information." restype="string">
@@ -13605,7 +13605,7 @@ en tu Apple Watch o iPhone</target>
       </trans-unit>
       <trans-unit id="answered" resname="answered" restype="string">
         <source>answered</source>
-        <target>respondi</target>
+        <target>respondió</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="answers" resname="answers" restype="string">
@@ -14609,7 +14609,7 @@ Nuestros médicos pueden ayudar</target>
       </trans-unit>
       <trans-unit id="fak-PA-FU7.text" resname="fak-PA-FU7.text" restype="string" datatype="x-xib">
         <source>We just sent you a link to reset your password.
-If you dont see it after a few minutes, please
+If you dont see it after a few minutes, please 
 check your Spam folder.</source>
         <target>Te acabamos de enviar un enlace para resetear tu contraseña.
 Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Correo no deseado &#40;Spam&#41;.</target>
@@ -14666,7 +14666,7 @@ Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Corr
       </trans-unit>
       <trans-unit id="fak-PA-FU7.text" resname="fak-PA-FU7.text" restype="string" datatype="x-xib">
         <source>We just sent you a link to reset your password.
-If you dont see it after a few minutes, please
+If you dont see it after a few minutes, please 
 check your Spam folder.</source>
         <target>Te acabamos de enviar un enlace para resetear tu contraseña.
 Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Correo no deseado &#40;Spam&#41;.</target>
@@ -14713,10 +14713,10 @@ Si no lo ves después de unos pocos minutos, por favor revisa tu carpeta de Corr
       </trans-unit>
       <trans-unit id="VLz-E1-cea.text" resname="VLz-E1-cea.text" restype="string" datatype="x-xib">
         <source>If you find HealthTap helpful,
- please take a moment to rate the app
+ please take a moment to rate the app 
 and let the world know :&#41;</source>
         <target>Si piensas que HealthTap es útil,
- por favor tómate un momento para calificar la
+ por favor tómate un momento para calificar la 
 aplicación y deja que el mundo lo sepa :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;If you find HealthTap helpful,\n please take a moment to rate the app \nand let the world know :&#41;&quot;; ObjectID = &quot;VLz-E1-cea&quot;;</note>
       </trans-unit>
@@ -19180,10 +19180,10 @@ paga por consulta</target>
       </trans-unit>
       <trans-unit id="F8C-bC-b0r.text" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
         <source>You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.
-
+ 
 We&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!</source>
         <target>Has hablado con un médico X veces este mes. Recuerda, Las Consultas virtuales de HealthTap no pretenden reemplazar a su médico de atención primaria o utilizarse como sustituto para establecer una relación con un médico en el mundo real.
-
+ 
 Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para permitirnos saber la razón por la que necesita continuar hablando con un médico. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!&quot;; ObjectID = &quot;F8C-bC-b0r&quot;;</note>
       </trans-unit>
@@ -19368,10 +19368,10 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="F8C-bC-b0r.text" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
         <source>You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.
-
+ 
 We&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!</source>
         <target>Has hablado con un médico X veces este mes. Recuerda, Las Consultas virtuales de HealthTap no pretenden reemplazar a su médico de atención primaria o utilizarse como sustituto para establecer una relación con un médico en el mundo real.
-
+ 
 Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para permitirnos saber la razón por la que necesita continuar hablando con un médico. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!&quot;; ObjectID = &quot;F8C-bC-b0r&quot;;</note>
       </trans-unit>
