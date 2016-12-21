@@ -89,6 +89,13 @@ describe 'HamlLocalizer' do
       expect(ret.keys).to include('en-XY')
       expect(ret['en-XY']).to eq({})
     end
+    it 'should work with locale file with top-level object' do
+      File.should_receive(:exists?).and_return(true)
+      File.should_receive(:read).with('translations-en-XY.yml').and_return({en_XY: {'a' => 'b', 'c' => 'd'}}.to_yaml)
+      ret = load_locale_maps(['en-XY'])
+      expect(ret.keys).to include('en-XY')
+      expect(ret['en-XY'].keys.empty?).not_to be_true
+    end
   end
 
   describe 'create_hashed_key' do
