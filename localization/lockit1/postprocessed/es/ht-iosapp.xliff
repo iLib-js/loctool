@@ -12068,12 +12068,12 @@ dispositivo móvil o computadora de escritorio</target>
       </trans-unit>
       <trans-unit id="Tell the doctor more about %@" resname="Tell the doctor more about %@" restype="string">
         <source>Tell the doctor more about %@</source>
-        <target>Cuéntale al médico más acerca de %@</target>
+        <target>Cuéntale al médico más de %@</target>
         <note annotates="source">Title for section to ask for basic info about a specific sub-account</note>
       </trans-unit>
       <trans-unit id="Tell the doctor more about you" resname="Tell the doctor more about you" restype="string">
         <source>Tell the doctor more about you</source>
-        <target>Cuéntale al médico más acerca de ti</target>
+        <target>Cuéntale al médico más de ti</target>
         <note annotates="source">Title for section to ask for basic info about user</note>
       </trans-unit>
       <trans-unit id="Tell your friends &amp; family" resname="Tell your friends &amp; family" restype="string">
@@ -15876,7 +15876,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="99X-R7-6d6.text" resname="99X-R7-6d6.text" restype="string" datatype="x-xib">
         <source>Tell doctors a little more so they can personalize their answers</source>
-        <target>Cuéntale a los médicos un poco más para que así puedan personalizar sus respuestas</target>
+        <target>Cuéntale a los médicos más de ti para que personalizen sus respuestas</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tell doctors a little more so they can personalize their answers&quot;; ObjectID = &quot;99X-R7-6d6&quot;;</note>
       </trans-unit>
       <trans-unit id="Fh5-c6-xTq.normalTitle" resname="Fh5-c6-xTq.normalTitle" restype="string" datatype="x-xib">
@@ -16010,7 +16010,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="vbY-QS-bZT.text" resname="vbY-QS-bZT.text" restype="string" datatype="x-xib">
         <source>Tell doctors a bit more so they can personalize their answers</source>
-        <target>Cuéntale a los médicos un poco más para que así puedan personalizar sus respuestas</target>
+        <target>Cuéntale a los médicos más de ti para que personalizen sus respuestas</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tell doctors a bit more so they can personalize their answers&quot;; ObjectID = &quot;vbY-QS-bZT&quot;;</note>
       </trans-unit>
       <trans-unit id="xmm-R3-6lm.text" resname="xmm-R3-6lm.text" restype="string" datatype="x-xib">
@@ -18698,7 +18698,7 @@ paga por consulta</target>
       </trans-unit>
       <trans-unit id="S8W-Fp-yEf.text" resname="S8W-Fp-yEf.text" restype="string" datatype="x-xib">
         <source>Is this for you or someone else?</source>
-        <target>¿Es para ti o para alguien más?</target>
+        <target>¿Es para ti o alguien más?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Is this for you or someone else?&quot;; ObjectID = &quot;S8W-Fp-yEf&quot;;</note>
       </trans-unit>
       <trans-unit id="Se3-hP-4zf.text" resname="Se3-hP-4zf.text" restype="string" datatype="x-xib">
@@ -18887,7 +18887,7 @@ paga por consulta</target>
       </trans-unit>
       <trans-unit id="5ex-Gs-iwJ.text" resname="5ex-Gs-iwJ.text" restype="string" datatype="x-xib">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call 911 or your local emergency service immediately.</source>
-        <target>Las respuestas en HealthTap no están destinadas para diagnóstico, tratamiento o prescripción médica personal. Si crees que tienes una emergencia médica, llama inmediatamente al 911 o a su servicio de emergencia local.</target>
+        <target>Las respuestas en HealthTap no están destinadas para diagnóstico, tratamiento o prescripción médica personal. Si crees tener una emergencia médica, llame a su servicio de emergencia local.</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call 911 or your local emergency service immediately.&quot;; ObjectID = &quot;5ex-Gs-iwJ&quot;;</note>
       </trans-unit>
       <trans-unit id="6T5-jA-3oS.normalTitle" resname="6T5-jA-3oS.normalTitle" restype="string" datatype="x-xib">
