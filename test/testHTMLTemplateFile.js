@@ -2191,7 +2191,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'    <select class=\'end_hour\' value="<%=end_hour%>">\n' +
+        		'    <select class=\'end_hour\' value=<%=end_hour%>>\n' +
                 '      asdf\n' +
                 '    </select>\n');
 
@@ -2231,7 +2231,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'<span has-sub-options="<%= option.sub_options.length > 0 %>" data-tracking-value="<%= option.tracking_value%>">\n' +
+        		'<span has-sub-options=<%= option.sub_options.length > 0 %> data-tracking-value="<%= option.tracking_value%>">\n' +
                 '    asdf\n' +
                 '</span>\n');
 
