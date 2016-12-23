@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="res/layout/row_symptom_condition.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="89" resname="text_HIGH" restype="string" datatype="x-android-resource">
+        <source>HIGH</source><seg-source><mrk mtype="seg" mid="1">HIGH</mrk></seg-source><target><mrk mtype="seg" mid="1">ALTA</mrk></target>
+      </trans-unit>
+      <trans-unit id="90" resname="text_Wrist_Fracture" restype="string" datatype="x-android-resource">
+        <source>Wrist Fracture</source><seg-source><mrk mtype="seg" mid="2">Wrist Fracture</mrk></seg-source><target><mrk mtype="seg" mid="2">Fractura de Muñeca</mrk></target>
+      </trans-unit>
+      <trans-unit id="91" resname="text_Emergency_care" restype="string" datatype="x-android-resource">
+        <source>Emergency care</source><seg-source><mrk mtype="seg" mid="3">Emergency care</mrk></seg-source><target><mrk mtype="seg" mid="3">Atención de emergencia</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/layout/row_service_selection.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="93" resname="text_Starting_at__55" restype="string" datatype="x-android-resource">
+        <source>Starting at $55</source><seg-source><mrk mtype="seg" mid="4">Starting at $55</mrk></seg-source><target><mrk mtype="seg" mid="4">Empezando desde $55</mrk></target>
+      </trans-unit>
+      <trans-unit id="94" resname="text_Available_on_Mon__Oct_17" restype="string" datatype="x-android-resource">
+        <source>Available on Mon, Oct 17</source><seg-source><mrk mtype="seg" mid="5">Available on Mon, Oct 17</mrk></seg-source><target><mrk mtype="seg" mid="5">Disponible el Lun, 17 Oct</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/layout/layout_symptom_triage_yesno_row.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="162" resname="text_lsakjflasjdfk" restype="string" datatype="x-android-resource">
+        <source>lsakjflasjdfk</source><seg-source><mrk mtype="seg" mid="6">lsakjflasjdfk</mrk></seg-source><target><mrk mtype="seg" mid="6">lsakjflasjdfk</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/layout/layout_custom_checkbox_view.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="241" resname="text_tesjaksdflkasjdflkajsdfl_kajsdflaksjdf_laskjfas_kfj_alskfj_laskdjfaskjdfhaksdfkashfkasjflkasjfat" restype="string" datatype="x-android-resource">
+        <source>tesjaksdflkasjdflkajsdfl;kajsdflaksjdf;laskjfas;kfj;alskfj;laskdjfaskjdfhaksdfkashfkasjflkasjfat</source><seg-source><mrk mtype="seg" mid="7">tesjaksdflkasjdflkajsdfl;kajsdflaksjdf;laskjfas;kfj;alskfj;laskdjfaskjdfhaksdfkashfkasjflkasjfat</mrk></seg-source><target><mrk mtype="seg" mid="7">tesjaksdflkasjdflkajsdfl;kajsdflaksjdf;laskjfas;kfj;alskfj;laskdjfaskjdfhaksdfkashfkasjflkasjfat</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/layout/layout_account_picker_item_view.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="257" resname="text_testtestlongname" restype="string" datatype="x-android-resource">
+        <source>testtestlongname</source><seg-source><mrk mtype="seg" mid="8">testtestlongname</mrk></seg-source><target><mrk mtype="seg" mid="8">pruebapruebanombrelargo</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/layout/item_picker_prime.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="258" resname="text_Primary_care_doctor" restype="string" datatype="x-android-resource">
+        <source>Primary care doctor</source><seg-source><mrk mtype="seg" mid="9">Primary care doctor</mrk></seg-source><target><mrk mtype="seg" mid="9">Doctor de atención primaria</mrk></target>
+      </trans-unit>
+      <trans-unit id="259" resname="text_Primary_care_doctors_available_now" restype="string" datatype="x-android-resource">
+        <source>Primary care doctors available now</source><seg-source><mrk mtype="seg" mid="10">Primary care doctors available now</mrk></seg-source><target><mrk mtype="seg" mid="10">Doctores de atención primaria disponibles ahora</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/layout/item_picker_free_question.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="261" resname="text_Educational_text_answers" restype="string" datatype="x-android-resource">
+        <source>Educational text answers</source><seg-source><mrk mtype="seg" mid="11">Educational text answers</mrk></seg-source><target><mrk mtype="seg" mid="11">Respuestas de texto educativas</mrk></target>
+      </trans-unit>
+      <trans-unit id="262" resname="text_From_top_doctors_in_140__specialties" restype="string" datatype="x-android-resource">
+        <source>From top doctors in 140+ specialties</source><seg-source><mrk mtype="seg" mid="12">From top doctors in 140+ specialties</mrk></seg-source><target><mrk mtype="seg" mid="12">De los mejores doctores en 140+ especialidades</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/layout/item_picker_concierge.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="263" resname="text_5_0" restype="string" datatype="x-android-resource">
+        <source>5.0</source><seg-source><mrk mtype="seg" mid="13">5.0</mrk></seg-source><target><mrk mtype="seg" mid="13">5.0</mrk></target>
+      </trans-unit>
+      <trans-unit id="264" resname="text_Dr__Lisa_Smith" restype="string" datatype="x-android-resource">
+        <source>Dr. Lisa Smith</source><seg-source><mrk mtype="seg" mid="14">Dr. Lisa Smith</mrk></seg-source><target><mrk mtype="seg" mid="14">Dra. Lisa Smith</mrk></target>
+      </trans-unit>
+      <trans-unit id="265" resname="text_ENT_and_Head_and_Neck" restype="string" datatype="x-android-resource">
+        <source>ENT and Head and Neck</source><seg-source><mrk mtype="seg" mid="15">ENT and Head and Neck</mrk></seg-source><target><mrk mtype="seg" mid="15">ORL y Cabeza y Cuello</mrk></target>
+      </trans-unit>
+      <trans-unit id="267" resname="text_Speaks_Chinese" restype="string" datatype="x-android-resource">
+        <source>Speaks Chinese</source><seg-source><mrk mtype="seg" mid="16">Speaks Chinese</mrk></seg-source><target><mrk mtype="seg" mid="16">Habla Chino</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/layout/fragment_picker_select_service.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="306" resname="text_Dr__Tom_Misch" restype="string" datatype="x-android-resource">
+        <source>Dr. Tom Misch</source><seg-source><mrk mtype="seg" mid="17">Dr. Tom Misch</mrk></seg-source><target><mrk mtype="seg" mid="17">Dr. Tom Misch</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/layout/fragment_picker_filters.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="311" resname="text_Not_specified" restype="string" datatype="x-android-resource">
+        <source>Not specified</source><seg-source><mrk mtype="seg" mid="18">Not specified</mrk></seg-source><target><mrk mtype="seg" mid="18">No especificado</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/util/DateUtil.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="461" resname="r469827512" restype="string" datatype="java">
+        <source>Today, {time_format}</source><seg-source><mrk mtype="seg" mid="19">Today, {time_format}</mrk></seg-source><target><mrk mtype="seg" mid="19">Hoy, {time_format}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/model/SearchBodyPartCoordinatesModel.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="479" resname="r651826877" restype="string" datatype="java">
+        <source>Neck</source><seg-source><mrk mtype="seg" mid="20">Neck</mrk></seg-source><target><mrk mtype="seg" mid="20">Cuello</mrk></target>
+      </trans-unit>
+      <trans-unit id="481" resname="r873762299" restype="string" datatype="java">
+        <source>Chest</source><seg-source><mrk mtype="seg" mid="21">Chest</mrk></seg-source><target><mrk mtype="seg" mid="21">Pecho</mrk></target>
+      </trans-unit>
+      <trans-unit id="486" resname="r517545369" restype="string" datatype="java">
+        <source>Pelvis</source><seg-source><mrk mtype="seg" mid="22">Pelvis</mrk></seg-source><target><mrk mtype="seg" mid="22">Pelvis</mrk></target>
+      </trans-unit>
+      <trans-unit id="489" resname="r1042414217" restype="string" datatype="java">
+        <source>Hands</source><seg-source><mrk mtype="seg" mid="23">Hands</mrk></seg-source><target><mrk mtype="seg" mid="23">Manos</mrk></target>
+      </trans-unit>
+      <trans-unit id="494" resname="r290484770" restype="string" datatype="java">
+        <source>Baby/fetus</source><seg-source><mrk mtype="seg" mid="24">Baby/fetus</mrk></seg-source><target><mrk mtype="seg" mid="24">Bebe/feto</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/payment/OnetimePayFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="589" resname="r626068628" restype="string" datatype="java">
+        <source>{start}Your total{end}\nFor additional options</source><seg-source><mrk mtype="seg" mid="25">{start}Your total{end}\nFor additional options</mrk></seg-source><target><mrk mtype="seg" mid="25">{start}Tu total{end}\nPara opciones adicionales</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/TipsDetailFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="624" resname="r322108465" restype="string" datatype="java">
+        <source>agreed with {author_name}\'s tip on \n{topic_name}</source><seg-source><mrk mtype="seg" mid="26">agreed with {author_name}\'s tip on \n{topic_name}</mrk></seg-source><target><mrk mtype="seg" mid="26">estuvo de acuerdo con el tip de {author_name}\ acerca de \n{topic_name}</mrk></target>
+        
+      <note>Subject of this phrase is a doctor's name displayed on seperate user interface, which should always be the first word of the complete sentence.</note></trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerServiceFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="686" resname="r240705192" restype="string" datatype="java">
+        <source>Starting at $%s</source><seg-source><mrk mtype="seg" mid="27">Starting at $%s</mrk></seg-source><target><mrk mtype="seg" mid="27">Empezando desde $%s</mrk></target>
+      </trans-unit>
+      <trans-unit id="687" resname="r896424977" restype="string" datatype="java">
+        <source>Busy now</source><seg-source><mrk mtype="seg" mid="28">Busy now</mrk></seg-source><target><mrk mtype="seg" mid="28">Ocupado ahora</mrk></target>
+      </trans-unit>
+      <trans-unit id="688" resname="r483121286" restype="string" datatype="java">
+        <source>Available next on %s</source><seg-source><mrk mtype="seg" mid="29">Available next on %s</mrk></seg-source><target><mrk mtype="seg" mid="29">Disponible a continuación en %s</mrk></target>
+      </trans-unit>
+      <trans-unit id="689" resname="r381986807" restype="string" datatype="java">
+        <source>Out of office until %s</source><seg-source><mrk mtype="seg" mid="30">Out of office until %s</mrk></seg-source><target><mrk mtype="seg" mid="30">Fuera de la oficina hasta %s</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerSearchFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="690" resname="r469329242" restype="string" datatype="java">
+        <source>Can't find a clinician?</source><seg-source><mrk mtype="seg" mid="31">Can't find a clinician?</mrk></seg-source><target><mrk mtype="seg" mid="31">¿No puedes encontrar un clínico?</mrk></target>
+      </trans-unit>
+      <trans-unit id="691" resname="r554083360" restype="string" datatype="java">
+        <source>Invite them to HealthTap</source><seg-source><mrk mtype="seg" mid="32">Invite them to HealthTap</mrk></seg-source><target><mrk mtype="seg" mid="32">Invítalos a HealthTap</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerFiltersFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="692" resname="r81370429" restype="string" datatype="java">
+        <source>Filters</source><seg-source><mrk mtype="seg" mid="33">Filters</mrk></seg-source><target><mrk mtype="seg" mid="33">Filtros</mrk></target>
+      </trans-unit>
+      <trans-unit id="693" resname="r235565863" restype="string" datatype="java">
+        <source>Not specified</source><seg-source><mrk mtype="seg" mid="34">Not specified</mrk></seg-source><target><mrk mtype="seg" mid="34">No especificado</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/QuestionDetailAnswerItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="798" resname="r992818456" restype="string" datatype="java">
+        <source>{approver_name} approved this translation of {answerer_name}</source><seg-source><mrk mtype="seg" mid="35">{approver_name} approved this translation of {answerer_name}</mrk></seg-source><target><mrk mtype="seg" mid="35">{approver_name} aprobó esta traducción de {answerer_name}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/GoalTakeActionListItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="812" resname="r363844654" restype="string" datatype="java">
+        <source>{approver_name} agreed with {author_name}\'s checklist</source><seg-source><mrk mtype="seg" mid="36">{approver_name} agreed with {author_name}\'s checklist</mrk></seg-source><target><mrk mtype="seg" mid="36">{approver_name} estuvo de acuerdo con el listado de\ {author_name}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/UserLocationDialog.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="890" resname="r971321819" restype="string" datatype="java">
+        <source>Or, {start}enter manually{end}</source><seg-source><mrk mtype="seg" mid="37">Or, {start}enter manually{end}</mrk></seg-source><target><mrk mtype="seg" mid="37">O, {start}ingresa manualmente{end}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/adapters/AccountPickerItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1094" resname="r129361961" restype="string" datatype="java">
+        <source>Create new</source><seg-source><mrk mtype="seg" mid="38">Create new</mrk></seg-source><target><mrk mtype="seg" mid="38">Crear nuevo</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1651" resname="cant_find_doctor" restype="string" datatype="x-android-resource">
+        <source>Can\'t find your doctor? Invite\u00a0them\u00a0»</source><seg-source><mrk mtype="seg" mid="39">Can\'t find your doctor?</mrk> <mrk mtype="seg" mid="40">Invite\u00a0them\u00a0»</mrk></seg-source><target><mrk mtype="seg" mid="39">¿No puedes\ encontrar a tu doctor?</mrk> <mrk mtype="seg" mid="40">\u00a0\u00a0»</mrk></target>
+      </trans-unit>
+      <trans-unit id="1652" resname="cant_find_clinician" restype="string" datatype="x-android-resource">
+        <source>Can\'t find your clinician? Invite\u00a0them\u00a0»</source><seg-source><mrk mtype="seg" mid="41">Can\'t find your clinician?</mrk> <mrk mtype="seg" mid="42">Invite\u00a0them\u00a0»</mrk></seg-source><target><mrk mtype="seg" mid="41">¿No puedes\ encontrar a tu clínico?</mrk> <mrk mtype="seg" mid="42">\u00a0\u00a0»</mrk></target>
+      </trans-unit>
+      <trans-unit id="1710" resname="cancel_appointment_content" restype="string" datatype="x-android-resource">
+        <source>Are you sure you want to cancel this appointment with {doctor_name} on {slot_date} at {slot_time}?</source><seg-source><mrk mtype="seg" mid="43">Are you sure you want to cancel this appointment with {doctor_name} on {slot_date} at {slot_time}?</mrk></seg-source><target><mrk mtype="seg" mid="43">¿Estás seguro que quieres cancelar esta cita con {doctor_name} el {slot_date} a las {slot_time}?</mrk></target>
+        
+      <note>Do not translate placeholders {doctor_name} {slot_date} {slot_time}</note></trans-unit>
+      <trans-unit id="2016" resname="picker_location_format" restype="string" datatype="x-android-resource">
+        <source>{location} {CTA}</source><seg-source><mrk mtype="seg" mid="44">{location} {CTA}</mrk></seg-source><target><mrk mtype="seg" mid="44">{location} {CTA}</mrk></target>
+      </trans-unit>
+      <trans-unit id="2021" resname="location_confirmation_content_text" restype="string" datatype="x-android-resource">
+        <source>Please confirm so we can connect you with the right doctor who is licensed to help you in your state or country.</source><seg-source><mrk mtype="seg" mid="45">Please confirm so we can connect you with the right doctor who is licensed to help you in your state or country.</mrk></seg-source><target><mrk mtype="seg" mid="45">Por favor confirma para que podamos conectarte con el doctor adecuado que este acreditado para ayudarte en tu estado o país.</mrk></target>
+      </trans-unit>
+      <trans-unit id="2191" resname="translation_attribution" restype="string" datatype="x-android-resource">
+        <source>Translation approved by HealthTap doctors</source><seg-source><mrk mtype="seg" mid="46">Translation approved by HealthTap doctors</mrk></seg-source><target><mrk mtype="seg" mid="46">Traducción aprobada por doctores de HealthTap</mrk></target>
+      </trans-unit>
+      <trans-unit id="2192" resname="picker_symptom_triage" restype="string" datatype="x-android-resource">
+        <source>Or, check your symptoms</source><seg-source><mrk mtype="seg" mid="47">Or, check your symptoms</mrk></seg-source><target><mrk mtype="seg" mid="47">O, revisa tus síntomas</mrk></target>
+      </trans-unit>
+      <trans-unit id="2194" resname="picker_entry_title" restype="string" datatype="x-android-resource">
+        <source>What would you like to ask our doctors?</source><seg-source><mrk mtype="seg" mid="48">What would you like to ask our doctors?</mrk></seg-source><target><mrk mtype="seg" mid="48">¿Qué te gustaría  a nuestros doctores?</mrk></target>
+      </trans-unit>
+      <trans-unit id="2197" resname="picker_free_question_description" restype="string" datatype="x-android-resource">
+        <source>Send doctors a brief, anonymous question and get informational text answers</source><seg-source><mrk mtype="seg" mid="49">Send doctors a brief, anonymous question and get informational text answers</mrk></seg-source><target><mrk mtype="seg" mid="49">Envía a doctores una breve pregunta anónima y  respuestas de texto informativas</mrk></target>
+      </trans-unit>
+      <trans-unit id="2198" resname="picker_free_question_button" restype="string" datatype="x-android-resource">
+        <source>Ask a free question</source><seg-source><mrk mtype="seg" mid="50">Ask a free question</mrk></seg-source><target><mrk mtype="seg" mid="50">Haz una pregunta gratis</mrk></target>
+      </trans-unit>
+      <trans-unit id="2199" resname="picker_consult" restype="string" datatype="x-android-resource">
+        <source>Confidential medical consult</source><seg-source><mrk mtype="seg" mid="51">Confidential medical consult</mrk></seg-source><target><mrk mtype="seg" mid="51">Consulta médica confidencial</mrk></target>
+      </trans-unit>
+      <trans-unit id="2200" resname="picker_consult_description" restype="string" datatype="x-android-resource">
+        <source>For advice, prescriptions, and referrals</source><seg-source><mrk mtype="seg" mid="52">For advice, prescriptions, and referrals</mrk></seg-source><target><mrk mtype="seg" mid="52">Para consejo, recetas y referencias</mrk></target>
+      </trans-unit>
+      <trans-unit id="2202" resname="picker_go_symptoms" restype="string" datatype="x-android-resource">
+        <source>Or, enter your symptoms</source><seg-source><mrk mtype="seg" mid="53">Or, enter your symptoms</mrk></seg-source><target><mrk mtype="seg" mid="53">O, ingresa tus síntomas</mrk></target>
+      </trans-unit>
+      <trans-unit id="2203" resname="picker_search_hint" restype="string" datatype="x-android-resource">
+        <source>Search by name or specialty</source><seg-source><mrk mtype="seg" mid="54">Search by name or specialty</mrk></seg-source><target><mrk mtype="seg" mid="54">Busca por nombre o especialidad</mrk></target>
+      </trans-unit>
+      <trans-unit id="2204" resname="picker_filter_hint" restype="string" datatype="x-android-resource">
+        <source>Search for...</source><seg-source><mrk mtype="seg" mid="55">Search for...</mrk></seg-source><target><mrk mtype="seg" mid="55">Busca por...</mrk></target>
+      </trans-unit>
+      <trans-unit id="2205" resname="picker_care_team" restype="string" datatype="x-android-resource">
+        <source>CARE TEAM</source><seg-source><mrk mtype="seg" mid="56">CARE TEAM</mrk></seg-source><target><mrk mtype="seg" mid="56">EQUIPO DE ATENCIÓN</mrk></target>
+      </trans-unit>
+      <trans-unit id="2206" resname="picker_filert_availability" restype="string" datatype="x-android-resource">
+        <source>AVAILABILITY</source><seg-source><mrk mtype="seg" mid="57">AVAILABILITY</mrk></seg-source><target><mrk mtype="seg" mid="57">DISPONIBILIDAD</mrk></target>
+      </trans-unit>
+      <trans-unit id="2207" resname="picker_filter_specialty" restype="string" datatype="x-android-resource">
+        <source>SPECIALTY</source><seg-source><mrk mtype="seg" mid="58">SPECIALTY</mrk></seg-source><target><mrk mtype="seg" mid="58">ESPECIALIDAD</mrk></target>
+      </trans-unit>
+      <trans-unit id="2208" resname="picker_filter_more" restype="string" datatype="x-android-resource">
+        <source>MORE</source><seg-source><mrk mtype="seg" mid="59">MORE</mrk></seg-source><target><mrk mtype="seg" mid="59">MÁS</mrk></target>
+      </trans-unit>
+      <trans-unit id="2215" resname="picker_filter_docscore" restype="string" datatype="x-android-resource">
+        <source>Docscore</source><seg-source><mrk mtype="seg" mid="60">Docscore</mrk></seg-source><target><mrk mtype="seg" mid="60">Docscore</mrk></target>
+      </trans-unit>
+      <trans-unit id="2216" resname="picker_accepts_insurance" restype="string" datatype="x-android-resource">
+        <source>Accepts insurance as payment</source><seg-source><mrk mtype="seg" mid="61">Accepts insurance as payment</mrk></seg-source><target><mrk mtype="seg" mid="61">Acepta seguro médico como pago</mrk></target>
+      </trans-unit>
+      <trans-unit id="2217" resname="picker_service_live_chat" restype="string" datatype="x-android-resource">
+        <source>Live chat</source><seg-source><mrk mtype="seg" mid="62">Live chat</mrk></seg-source><target><mrk mtype="seg" mid="62">Chat en vivo</mrk></target>
+      </trans-unit>
+      <trans-unit id="2219" resname="picker_service_inbox" restype="string" datatype="x-android-resource">
+        <source>Text message</source><seg-source><mrk mtype="seg" mid="63">Text message</mrk></seg-source><target><mrk mtype="seg" mid="63">Mensaje de texto</mrk></target>
+      </trans-unit>
+      <trans-unit id="2220" resname="picker_service_description_live" restype="string" datatype="x-android-resource">
+        <source>Video, voice, or text chat now</source><seg-source><mrk mtype="seg" mid="64">Video, voice, or text chat now</mrk></seg-source><target><mrk mtype="seg" mid="64">Chat de texto, voz o video ahora</mrk></target>
+      </trans-unit>
+      <trans-unit id="2221" resname="picker_service_description_appointment" restype="string" datatype="x-android-resource">
+        <source>Schedule a video, voice, or text consult</source><seg-source><mrk mtype="seg" mid="65">Schedule a video, voice, or text consult</mrk></seg-source><target><mrk mtype="seg" mid="65">Agenda una consulta de texto, voz o video</mrk></target>
+      </trans-unit>
+      <trans-unit id="2222" resname="picker_service_description_inbox" restype="string" datatype="x-android-resource">
+        <source>Text messages with photos and files</source><seg-source><mrk mtype="seg" mid="66">Text messages with photos and files</mrk></seg-source><target><mrk mtype="seg" mid="66">Mensajes de texto con fotos y archivos</mrk></target>
+      </trans-unit>
+      <trans-unit id="2223" resname="picker_service_vip_select" restype="string" datatype="x-android-resource">
+        <source>Choose a consult method</source><seg-source><mrk mtype="seg" mid="67">Choose a consult method</mrk></seg-source><target><mrk mtype="seg" mid="67">Elige un método de consulta</mrk></target>
+      </trans-unit>
+      <trans-unit id="2225" resname="picker_triage_need_more_help" restype="string" datatype="x-android-resource">
+        <source>Still need help?</source><seg-source><mrk mtype="seg" mid="68">Still need help?</mrk></seg-source><target><mrk mtype="seg" mid="68">¿Aún necesitas ayuda?</mrk></target>
+      </trans-unit>
+      <trans-unit id="2226" resname="picker_indicator_prime" restype="string" datatype="x-android-resource">
+        <source>Discounted for Prime members</source><seg-source><mrk mtype="seg" mid="69">Discounted for Prime members</mrk></seg-source><target><mrk mtype="seg" mid="69">Precio con descuento para miembros Prime</mrk></target>
+      </trans-unit>
+      <trans-unit id="2227" resname="picker_indicator_enterprise" restype="string" datatype="x-android-resource">
+        <source>Special for %1$s members</source><seg-source><mrk mtype="seg" mid="70">Special for %1$s members</mrk></seg-source><target><mrk mtype="seg" mid="70">Especial para miembros %1$s</mrk></target>
+        
+      <note>'%1$s' is a string formatter, and refers to an enterprise group name, e.g. Flex members. Do not translate '%1$s'.</note></trans-unit>
+      <trans-unit id="2228" resname="picker_lang_speaks" restype="string" datatype="x-android-resource">
+        <source>Speaks %s</source><seg-source><mrk mtype="seg" mid="71">Speaks %s</mrk></seg-source><target><mrk mtype="seg" mid="71">Habla %s</mrk></target>
+        
+      <note>'%s' refers to a language.</note></trans-unit>
+      <trans-unit id="2230" resname="invite_doctor_location" restype="string" datatype="x-android-resource">
+        <source>Your Doctor\'s Location</source><seg-source><mrk mtype="seg" mid="72">Your Doctor\'s Location</mrk></seg-source><target><mrk mtype="seg" mid="72">La Ubicación\ de Tu Doctor</mrk></target>
+      </trans-unit>
+      <trans-unit id="2234" resname="starting_at" restype="string" datatype="x-android-resource">
+        <source>Starting at</source><seg-source><mrk mtype="seg" mid="73">Starting at</mrk></seg-source><target><mrk mtype="seg" mid="73">Empezando desde</mrk></target>
+      </trans-unit>
+      <trans-unit id="2235" resname="starting_at_old_price" restype="string" datatype="x-android-resource">
+        <source>Starting at %1$s</source><seg-source><mrk mtype="seg" mid="74">Starting at %1$s</mrk></seg-source><target><mrk mtype="seg" mid="74">Empezando desde %1$s</mrk></target>
+        
+      <note>'%1$s' is a formatter and refers to a price. Do not translate '%1$s'.</note></trans-unit>
+      <trans-unit id="2237" resname="symptom_triage_search_hint" restype="string" datatype="x-android-resource">
+        <source>Find symptoms</source><seg-source><mrk mtype="seg" mid="75">Find symptoms</mrk></seg-source><target><mrk mtype="seg" mid="75">Encuentra síntomas</mrk></target>
+      </trans-unit>
+      <trans-unit id="2241" resname="symptom_triage_phr_dob_title" restype="string" datatype="x-android-resource">
+        <source>What is your date of birth?</source><seg-source><mrk mtype="seg" mid="76">What is your date of birth?</mrk></seg-source><target><mrk mtype="seg" mid="76">¿Cuál es tu fecha de nacimiento?</mrk></target>
+      </trans-unit>
+      <trans-unit id="2247" resname="symptom_triage_phr_title" restype="string" datatype="x-android-resource">
+        <source>Update profile</source><seg-source><mrk mtype="seg" mid="77">Update profile</mrk></seg-source><target><mrk mtype="seg" mid="77">Actualizar perfil</mrk></target>
+      </trans-unit>
+      <trans-unit id="2248" resname="symptom_triage_tutorial_title_text" restype="string" datatype="x-android-resource">
+        <source>Receive fast and effective care with the HealthTap Symptom Triage</source><seg-source><mrk mtype="seg" mid="78">Receive fast and effective care with the HealthTap Symptom Triage</mrk></seg-source><target><mrk mtype="seg" mid="78">Recibe atención rápida y efectiva con el Triage de Síntomas de HealthTap</mrk></target>
+      </trans-unit>
+      <trans-unit id="2250" resname="symptom_triage_tutorial_step1" restype="string" datatype="x-android-resource">
+        <source>&lt;b&gt;Step 1:&lt;/b&gt;\nTap Symptoms</source><seg-source><mrk mtype="seg" mid="79">&lt;b&gt;Step 1:&lt;/b&gt;\nTap Symptoms</mrk></seg-source><target><mrk mtype="seg" mid="79">&lt;b&gt;Paso 1:&lt;/b&gt;\nElige Síntomas</mrk></target>
+      </trans-unit>
+      <trans-unit id="2251" resname="symptom_triage_tutorial_step2" restype="string" datatype="x-android-resource">
+        <source>&lt;b&gt;Step 2:&lt;/b&gt;\nView condition report</source><seg-source><mrk mtype="seg" mid="80">&lt;b&gt;Step 2:&lt;/b&gt;\nView condition report</mrk></seg-source><target><mrk mtype="seg" mid="80">&lt;b&gt;Paso 2:&lt;/b&gt;\nVe reporte de condición</mrk></target>
+      </trans-unit>
+      <trans-unit id="2252" resname="symptom_triage_tutorial_step3" restype="string" datatype="x-android-resource">
+        <source>&lt;b&gt;Step 3:&lt;/b&gt;\nChoose care option</source><seg-source><mrk mtype="seg" mid="81">&lt;b&gt;Step 3:&lt;/b&gt;\nChoose care option</mrk></seg-source><target><mrk mtype="seg" mid="81">&lt;b&gt;Paso 3:&lt;/b&gt;\nElige una opción de atención</mrk></target>
+      </trans-unit>
+      <trans-unit id="2253" resname="symptom_triage_refinement_questions" restype="string" datatype="x-android-resource">
+        <source>Refine symptoms</source><seg-source><mrk mtype="seg" mid="82">Refine symptoms</mrk></seg-source><target><mrk mtype="seg" mid="82">Refina síntomas</mrk></target>
+      </trans-unit>
+      <trans-unit id="2254" resname="symptom_triage_refinement_splash_title" restype="string" datatype="x-android-resource">
+        <source>Help us better understand the {attribute_name}</source><seg-source><mrk mtype="seg" mid="83">Help us better understand the {attribute_name}</mrk></seg-source><target><mrk mtype="seg" mid="83">Ayúdanos a comprender mejor el {attribute_name}</mrk></target>
+      </trans-unit>
+      <trans-unit id="2255" resname="symptom_triage_ask_account_title" restype="string" datatype="x-android-resource">
+        <source>Who needs help?</source><seg-source><mrk mtype="seg" mid="84">Who needs help?</mrk></seg-source><target><mrk mtype="seg" mid="84">¿Quién necesita ayuda?</mrk></target>
+      </trans-unit>
+      <trans-unit id="2256" resname="symptom_triage_search_title" restype="string" datatype="x-android-resource">
+        <source>Tap symptoms or ask doctors</source><seg-source><mrk mtype="seg" mid="85">Tap symptoms or ask doctors</mrk></seg-source><target><mrk mtype="seg" mid="85">Elige síntomas o pregúntale a doctores</mrk></target>
+      </trans-unit>
+      <trans-unit id="2257" resname="symptom_triage_search_result_title" restype="string" datatype="x-android-resource">
+        <source>Choose symptom</source><seg-source><mrk mtype="seg" mid="86">Choose symptom</mrk></seg-source><target><mrk mtype="seg" mid="86">Elíge síntoma</mrk></target>
+      </trans-unit>
+      <trans-unit id="2258" resname="symptom_triage_search2_title" restype="string" datatype="x-android-resource">
+        <source>Tap additional symptoms</source><seg-source><mrk mtype="seg" mid="87">Tap additional symptoms</mrk></seg-source><target><mrk mtype="seg" mid="87">Elige síntomas adicionales</mrk></target>
+      </trans-unit>
+      <trans-unit id="2260" resname="symptom_triage_risk_factors_title" restype="string" datatype="x-android-resource">
+        <source>Edit risk factors</source><seg-source><mrk mtype="seg" mid="88">Edit risk factors</mrk></seg-source><target><mrk mtype="seg" mid="88">Edita factores de riesgo</mrk></target>
+      </trans-unit>
+      <trans-unit id="2261" resname="symptom_triage_main_search_tap_text" restype="string" datatype="x-android-resource">
+        <source>Tap anywhere to start</source><seg-source><mrk mtype="seg" mid="89">Tap anywhere to start</mrk></seg-source><target><mrk mtype="seg" mid="89">Toca en cualquier parte para empezar</mrk></target>
+      </trans-unit>
+      <trans-unit id="2262" resname="meter_high" restype="string" datatype="x-android-resource">
+        <source>HIGHER</source><seg-source><mrk mtype="seg" mid="90">HIGHER</mrk></seg-source><target><mrk mtype="seg" mid="90">MÁS ALTO</mrk></target>
+      </trans-unit>
+      <trans-unit id="2264" resname="meter_low" restype="string" datatype="x-android-resource">
+        <source>LOWER</source><seg-source><mrk mtype="seg" mid="91">LOWER</mrk></seg-source><target><mrk mtype="seg" mid="91">MÁS BAJO</mrk></target>
+      </trans-unit>
+      <trans-unit id="2265" resname="symptom_triage_instructional_main_content" restype="string" datatype="x-android-resource">
+        <source>Tap or search for your symptoms. Or, you can always skip to ask doctors your question.</source><seg-source><mrk mtype="seg" mid="92">Tap or search for your symptoms.</mrk> <mrk mtype="seg" mid="93">Or, you can always skip to ask doctors your question.</mrk></seg-source><target><mrk mtype="seg" mid="92">Toca o busca tus síntomas.</mrk> <mrk mtype="seg" mid="93">O, siempre puedes saltarte a hacerle tu pregunta a doctores.</mrk></target>
+      </trans-unit>
+      <trans-unit id="2266" resname="symptom_triage_instructional_main_title" restype="string" datatype="x-android-resource">
+        <source>Let\'s get started!</source><seg-source><mrk mtype="seg" mid="94">Let\'s get started!</mrk></seg-source><target><mrk mtype="seg" mid="94">¡Vamos\ a empezar!</mrk></target>
+      </trans-unit>
+      <trans-unit id="2267" resname="symptom_triage_instructional_account_picker_title" restype="string" datatype="x-android-resource">
+        <source>Before we begin</source><seg-source><mrk mtype="seg" mid="95">Before we begin</mrk></seg-source><target><mrk mtype="seg" mid="95">Antes de comenzar</mrk></target>
+      </trans-unit>
+      <trans-unit id="2268" resname="symptom_triage_instructional_account_picker_content" restype="string" datatype="x-android-resource">
+        <source>We can provide better care if you tell us who we are helping today</source><seg-source><mrk mtype="seg" mid="96">We can provide better care if you tell us who we are helping today</mrk></seg-source><target><mrk mtype="seg" mid="96">Podemos brindarte mejor atención si nos dices a quién estamos ayudando hoy</mrk></target>
+      </trans-unit>
+      <trans-unit id="2270" resname="symptom_triage_instructional_tutorial_content" restype="string" datatype="x-android-resource">
+        <source>Ready to tap in to the knowledge and care of top doctors?</source><seg-source><mrk mtype="seg" mid="97">Ready to tap in to the knowledge and care of top doctors?</mrk></seg-source><target><mrk mtype="seg" mid="97">¿Listo para aprovecharte del conocimiento y la atención de los mejores doctores?</mrk></target>
+      </trans-unit>
+      <trans-unit id="2271" resname="symptom_triage_instructional_refinement_title" restype="string" datatype="x-android-resource">
+        <source>%s \u2014 okay.</source><seg-source><mrk mtype="seg" mid="98">%s \u2014 okay.</mrk></seg-source><target><mrk mtype="seg" mid="98">%s \u2014 okay.</mrk></target>
+        
+      <note>'%s' refers to a symptom attribute name.</note></trans-unit>
+      <trans-unit id="2272" resname="symptom_triage_instructional_refinement_content" restype="string" datatype="x-android-resource">
+        <source>Let\'s learn a little more about that.</source><seg-source><mrk mtype="seg" mid="99">Let\'s learn a little more about that.</mrk></seg-source><target><mrk mtype="seg" mid="99">Vamos\ a aprender un poco más acerca de eso.</mrk></target>
+      </trans-unit>
+      <trans-unit id="2273" resname="symptom_triage_instructional_risk_factors_title" restype="string" datatype="x-android-resource">
+        <source>One more step!</source><seg-source><mrk mtype="seg" mid="100">One more step!</mrk></seg-source><target><mrk mtype="seg" mid="100">¡Un paso más!</mrk></target>
+      </trans-unit>
+      <trans-unit id="2274" resname="symptom_triage_instructional_risk_factors_content" restype="string" datatype="x-android-resource">
+        <source>Do you have any of the following risk factors?</source><seg-source><mrk mtype="seg" mid="101">Do you have any of the following risk factors?</mrk></seg-source><target><mrk mtype="seg" mid="101">¿Tienes alguno de los siguientes factores de riesgo?</mrk></target>
+      </trans-unit>
+      <trans-unit id="2275" resname="symptom_triage_instructional_search_results_title" restype="string" datatype="x-android-resource">
+        <source>%s \u2014 got it.</source><seg-source><mrk mtype="seg" mid="102">%s \u2014 got it.</mrk></seg-source><target><mrk mtype="seg" mid="102">%s \u2014 lo tengo.</mrk></target>
+        
+      <note>'%s' refers to a symptom attribute name.</note></trans-unit>
+      <trans-unit id="2276" resname="symptom_triage_instructional_search_results_no_body_title" restype="string" datatype="x-android-resource">
+        <source>Common symptoms</source><seg-source><mrk mtype="seg" mid="103">Common symptoms</mrk></seg-source><target><mrk mtype="seg" mid="103">Síntomas comunes</mrk></target>
+      </trans-unit>
+      <trans-unit id="2277" resname="symptom_triage_instructional_search_results_content" restype="string" datatype="x-android-resource">
+        <source>What symptom would you like to report today?</source><seg-source><mrk mtype="seg" mid="104">What symptom would you like to report today?</mrk></seg-source><target><mrk mtype="seg" mid="104">¿Qué síntoma te gustaría reportar hoy?</mrk></target>
+      </trans-unit>
+      <trans-unit id="2280" resname="symptom_triage_added_symptom_text" restype="string" datatype="x-android-resource">
+        <source>symptom added</source><seg-source><mrk mtype="seg" mid="105">symptom added</mrk></seg-source><target><mrk mtype="seg" mid="105">síntoma añadido</mrk></target>
+      </trans-unit>
+      <trans-unit id="2281" resname="symptom_triage_drawer_add_text" restype="string" datatype="x-android-resource">
+        <source>Add new symptom</source><seg-source><mrk mtype="seg" mid="106">Add new symptom</mrk></seg-source><target><mrk mtype="seg" mid="106">Añade nuevo síntoma</mrk></target>
+      </trans-unit>
+      <trans-unit id="2282" resname="symptom_triage_drawer_title" restype="string" datatype="x-android-resource">
+        <source>Edit symptoms</source><seg-source><mrk mtype="seg" mid="107">Edit symptoms</mrk></seg-source><target><mrk mtype="seg" mid="107">Edita síntomas</mrk></target>
+      </trans-unit>
+      <trans-unit id="2283" resname="symptom_triage_care_options" restype="string" datatype="x-android-resource">
+        <source>Care options</source><seg-source><mrk mtype="seg" mid="108">Care options</mrk></seg-source><target><mrk mtype="seg" mid="108">Opciones de atención</mrk></target>
+      </trans-unit>
+      <trans-unit id="2284" resname="symptom_triage_care_options_title" restype="string" datatype="x-android-resource">
+        <source>For {condition_name}...</source><seg-source><mrk mtype="seg" mid="109">For {condition_name}...</mrk></seg-source><target><mrk mtype="seg" mid="109">Para {condition_name}...</mrk></target>
+      </trans-unit>
+      <trans-unit id="2285" resname="symptom_triage_care_options_description" restype="string" datatype="x-android-resource">
+        <source>our doctors ordered these suggested actions on your road to feeling better. What would you like to do?</source><seg-source><mrk mtype="seg" mid="110">our doctors ordered these suggested actions on your road to feeling better.</mrk> <mrk mtype="seg" mid="111">What would you like to do?</mrk></seg-source><target><mrk mtype="seg" mid="110">nuestros doctores ordenaron estas acciones sugeridas en tu camino a sentirte mejor.</mrk> <mrk mtype="seg" mid="111">¿Qué te gustaría hacer?</mrk></target>
+      </trans-unit>
+      <trans-unit id="2286" resname="symptom_triage_condition_report" restype="string" datatype="x-android-resource">
+        <source>Creating report</source><seg-source><mrk mtype="seg" mid="112">Creating report</mrk></seg-source><target><mrk mtype="seg" mid="112">Creando reporte</mrk></target>
+      </trans-unit>
+      <trans-unit id="2287" resname="symptom_triage_condition_error" restype="string" datatype="x-android-resource">
+        <source>Creating report</source><seg-source><mrk mtype="seg" mid="113">Creating report</mrk></seg-source><target><mrk mtype="seg" mid="113">Creando reporte</mrk></target>
+      </trans-unit>
+      <trans-unit id="2288" resname="symptom_triage_condition_success" restype="string" datatype="x-android-resource">
+        <source>Matches found</source><seg-source><mrk mtype="seg" mid="114">Matches found</mrk></seg-source><target><mrk mtype="seg" mid="114">Resultados encontrados</mrk></target>
+      </trans-unit>
+      <trans-unit id="2289" resname="symptom_triage_condition_title" restype="string" datatype="x-android-resource">
+        <source>Thanks — we\’re on it!</source><seg-source><mrk mtype="seg" mid="115">Thanks — we\’re on it!</mrk></seg-source><target><mrk mtype="seg" mid="115">Gracias — ¡estamos\ en eso!</mrk></target>
+      </trans-unit>
+      <trans-unit id="2290" resname="symptom_triage_condition_title_error" restype="string" datatype="x-android-resource">
+        <source>Hmm...</source><seg-source><mrk mtype="seg" mid="116">Hmm...</mrk></seg-source><target><mrk mtype="seg" mid="116">Hmm...</mrk></target>
+      </trans-unit>
+      <trans-unit id="2291" resname="symptom_triage_condition_title_success" restype="string" datatype="x-android-resource">
+        <source>2533 doctors helped us</source><seg-source><mrk mtype="seg" mid="117">2533 doctors helped us</mrk></seg-source><target><mrk mtype="seg" mid="117">2533 nos han ayudado</mrk></target>
+      </trans-unit>
+      <trans-unit id="2292" resname="symptom_triage_genertic_disclaimer_text" restype="string" datatype="x-android-resource">
+        <source>The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source><seg-source><mrk mtype="seg" mid="118">The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations.</mrk> <mrk mtype="seg" mid="119">Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency.</mrk> <mrk mtype="seg" mid="120">See Additional Information.</mrk></seg-source><target><mrk mtype="seg" mid="118">La información en HealthTap (incluyendo esta herramienta) es sólo para propósitos educativos e informativos y no constituye consejo, diagnóstico o recomendaciones de tratamiento médico.</mrk> <mrk mtype="seg" mid="119">Llama o visita inmediatamente a tu doctor o proveedor local de servicios de emergencia si crees que puedes estar teniendo una emergencia médica.</mrk> <mrk mtype="seg" mid="120">Ve Información Adicional.</mrk></target>
+      </trans-unit>
+      <trans-unit id="2294" resname="symptom_triage_experiencing" restype="string" datatype="x-android-resource">
+        <source>Experiencing</source><seg-source><mrk mtype="seg" mid="121">Experiencing</mrk></seg-source><target><mrk mtype="seg" mid="121">Experimentando</mrk></target>
+      </trans-unit>
+      <trans-unit id="2295" resname="symptom_triage_exploring" restype="string" datatype="x-android-resource">
+        <source>Exploring</source><seg-source><mrk mtype="seg" mid="122">Exploring</mrk></seg-source><target><mrk mtype="seg" mid="122">Explorando</mrk></target>
+      </trans-unit>
+      <trans-unit id="2296" resname="symptom_triage_main_search_continue_button_text" restype="string" datatype="x-android-resource">
+        <source>Create report</source><seg-source><mrk mtype="seg" mid="123">Create report</mrk></seg-source><target><mrk mtype="seg" mid="123">Crear reporte</mrk></target>
+      </trans-unit>
+      <trans-unit id="2297" resname="symptom_triage_warning_message" restype="string" datatype="x-android-resource">
+        <source>Heads up! If you go back from here, you\'ll lose the symptoms you shared.</source><seg-source><mrk mtype="seg" mid="124">Heads up!</mrk> <mrk mtype="seg" mid="125">If you go back from here, you\'ll lose the symptoms you shared.</mrk></seg-source><target><mrk mtype="seg" mid="124">¡Atención!</mrk> <mrk mtype="seg" mid="125">Si regresas desde aquí, perderás\ los síntomas que has compartido.</mrk></target>
+      </trans-unit>
+      <trans-unit id="2300" resname="symptom_triage_emergency_header" restype="string" datatype="x-android-resource">
+        <source>About this care option</source><seg-source><mrk mtype="seg" mid="126">About this care option</mrk></seg-source><target><mrk mtype="seg" mid="126">Acerca de esta opción de atención</mrk></target>
+      </trans-unit>
+      <trans-unit id="2301" resname="symptom_triage_emergency_title" restype="string" datatype="x-android-resource">
+        <source>Seek emergency medical attention</source><seg-source><mrk mtype="seg" mid="127">Seek emergency medical attention</mrk></seg-source><target><mrk mtype="seg" mid="127">Busca atención médica de emergencia</mrk></target>
+      </trans-unit>
+      <trans-unit id="2302" resname="symptom_triage_emergency_description" restype="string" datatype="x-android-resource">
+        <source>"Most doctors recommend seeking immediate emergency medical attention based on the symptoms you reported"</source><seg-source><mrk mtype="seg" mid="128">"Most doctors recommend seeking immediate emergency medical attention based on the symptoms you reported"</mrk></seg-source><target><mrk mtype="seg" mid="128">"La mayoría de los doctores recomiendan buscar atención médica de emergencia inmediatamente basándose en los síntomas que reportaste"</mrk></target>
+      </trans-unit>
+      <trans-unit id="2303" resname="symptom_triage_search_no_result" restype="string" datatype="x-android-resource">
+        <source>Sorry, we couldn\'t find a symptom by that name. Maybe there are other ways to describe it?</source><seg-source><mrk mtype="seg" mid="129">Sorry, we couldn\'t find a symptom by that name.</mrk> <mrk mtype="seg" mid="130">Maybe there are other ways to describe it?</mrk></seg-source><target><mrk mtype="seg" mid="129">Perdón, no pudimos\ encontrar un síntoma con ese nombre.</mrk> <mrk mtype="seg" mid="130">¿Tal vez haya otras formas de describirlo?</mrk></target>
+      </trans-unit>
+      <trans-unit id="2306" resname="symptom_triage_drawer_remove_text" restype="string" datatype="x-android-resource">
+        <source>Are you sure you want to remove {symptom_name}?</source><seg-source><mrk mtype="seg" mid="131">Are you sure you want to remove {symptom_name}?</mrk></seg-source><target><mrk mtype="seg" mid="131">¿Estás seguro que quieres eliminar {symptom_name}?</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

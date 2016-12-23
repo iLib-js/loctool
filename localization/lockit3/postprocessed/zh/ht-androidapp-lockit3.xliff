@@ -896,7 +896,7 @@
         <source>The way to visit top U.S. doctors 24/7 from anywhere - no waiting room!</source><target>24/7全天候不受地区限制地向美国顶级医生\n进行咨询——不设候诊室！</target>
       </trans-unit>
       <trans-unit id="179" resname="rating_please_rate_consult" restype="string" datatype="x-android-resource">
-        <source>Please rate your {start}\nconsult with {doc_name} on {date}\n{end}</source><target>请评价您和{doc_name}在{date}\n{end}的咨询{start}\n</target>
+        <source>Please rate your {start}\nconsult with {doc_name} on {date}\n{end}</source><target>请评价{start}\n您和{doc_name}在{date}的咨询\n{end}</target>
         
       <note>Subtitle message. Rating refers to consult experiences.</note></trans-unit>
       <trans-unit id="180" resname="footer_help_text" restype="string" datatype="x-android-resource">
@@ -921,11 +921,11 @@
         
       <note>Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note></trans-unit>
       <trans-unit id="185" resname="app_recommend2" restype="plural" datatype="x-android-resource" extype="one">
-        <source>{start}1 doctor{end} recommends this app</source><target>{Start}1位医生{end}推荐这款应用程序</target>
+        <source>{start}1 doctor{end} recommends this app</source><target>{start}1位医生{end}推荐这款应用程序</target>
         
       <note>Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note></trans-unit>
       <trans-unit id="186" resname="app_recommend2" restype="plural" datatype="x-android-resource" extype="other">
-        <source>{start}%d doctors{end} recommend this app</source><target>{Start}%d医生{end}推荐这款应用程序</target>
+        <source>{start}%d doctors{end} recommend this app</source><target>{start}%d医生{end}推荐这款应用程序</target>
         
       <note>Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note></trans-unit>
       <trans-unit id="187" resname="doctor_comment" restype="plural" datatype="x-android-resource" extype="one">
@@ -1202,7 +1202,7 @@
         <source>1 year old</source><target>1岁</target>
       </trans-unit>
       <trans-unit id="276" resname="age" restype="plural" datatype="x-android-resource" extype="other">
-        <source>%d years old</source><target>%岁</target>
+        <source>%d years old</source><target>%d岁</target>
       </trans-unit>
     </body>
   </file>

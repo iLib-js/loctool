@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources 
+  xmlns:tools="http://schemas.android.com/tools">
+  <string name="app_id" i18n="Do not translate">151779581544891</string>
+  <string name="disclaimer">Disclaimer</string>
+  <string name="description_imgVw">imageView</string>
+  <string name="thanks_doc_pre">Send a thank you note to\n{name}</string>
+  <string name="thanks_news">{name} and Review Team appreciates your gratitude :)</string>
+  <string name="thanks">Thank you!</string>
+  <string name="talk_to_doctor">Get help now</string>
+  <string name="ask_question">Ask doctors</string>
+  <string name="thank">Thank</string>
+  <string name="thanked">Thanked</string>
+  <string name="thanked_note">Leave a note?</string>
+  <string name="r707551335">{appointment_time} with {doctor_name}</string>
+</resources>
+  

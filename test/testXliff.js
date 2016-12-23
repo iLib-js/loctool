@@ -8,7 +8,7 @@ if (!Xliff) {
 	var Xliff = require("../lib/Xliff.js");
 	var TranslationUnit = Xliff.TranslationUnit;
     var ResourceString = require("../lib/ResourceString.js");
-    var AndroidResourceString = require("../lib/AndroidResourceString.js");
+    var ContextResourceString = require("../lib/ContextResourceString.js");
     var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
@@ -530,7 +530,7 @@ module.exports = {
         var x = new Xliff();
         test.ok(x);
         
-        var res = new AndroidResourceString({
+        var res = new ContextResourceString({
             source: "Asdf asdf",
             locale: "en-US",
             key: "foobar",
@@ -541,7 +541,7 @@ module.exports = {
         
         x.addResource(res);
 
-        var res = new AndroidResourceString({
+        var res = new ContextResourceString({
             source: "Asdf asdf",
             locale: "en-US",
             key: "foobar",
@@ -1263,6 +1263,66 @@ module.exports = {
         test.done();
     },
 
+    testXliffDeserializeWithPluralsTranslated: function(test) {
+        test.expect(19);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
+                '        <source>There is 1 object.</source>\n' +
+                '        <target>Hay 1 objeto.</target>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
+                '        <source>There are {n} objects.</source>\n' +
+                '        <target>Hay {n} objetos.</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        // console.log("x is " + JSON.stringify(x, undefined, 4));
+        
+        var reslist = x.getResources();
+        
+        // console.log("after get resources x is " + JSON.stringify(x, undefined, 4));
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+        
+        test.deepEqual(reslist[0].getPlurals(), {
+        	one: "There is 1 object.",
+        	other: "There are {n} objects."
+        });
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "plural");
+        test.equal(reslist[0].getId(), "1");
+        test.equal(reslist[0].getOrigin(), "source");
+        
+        test.deepEqual(reslist[1].getPlurals(), {
+        	one: "Hay 1 objeto.",
+        	other: "Hay {n} objetos."
+        });
+        test.equal(reslist[1].getLocale(), "es-US");
+        test.equal(reslist[1].getKey(), "foobar");
+        test.equal(reslist[1].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[1].getProject(), "ht-androidapp");
+        test.equal(reslist[1].resType, "plural");
+        test.equal(reslist[1].getId(), "1");
+        test.equal(reslist[1].getOrigin(), "target");
+        
+        test.done();
+    },
+
     testXliffDeserializeWithArrays: function(test) {
         test.expect(9);
 
@@ -1299,6 +1359,58 @@ module.exports = {
         test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
         test.equal(reslist[0].getProject(), "ht-androidapp");
         test.equal(reslist[0].resType, "array");
+
+        test.done();
+    },
+
+    testXliffDeserializeWithArraysTranslated: function(test) {
+        test.expect(17);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        x.deserialize(
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar" restype="array" datatype="x-android-resource" extype="0">\n' +
+                '        <source>Zero</source>\n' +
+                '        <target>Zero</target>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="2" resname="foobar" restype="array" datatype="x-android-resource" extype="1">\n' +
+                '        <source>One</source>\n' +
+                '        <target>Eins</target>\n' +
+                '      </trans-unit>\n' +
+                '      <trans-unit id="3" resname="foobar" restype="array" datatype="x-android-resource" extype="2">\n' +
+                '        <source>Two</source>\n' +
+                '        <target>Zwei</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>');
+
+        var reslist = x.getResources();
+        
+        test.ok(reslist);
+        
+        test.equal(reslist.length, 2);
+
+        test.deepEqual(reslist[0].getArray(), ["Zero", "One", "Two"]);
+        test.equal(reslist[0].getLocale(), "en-US");
+        test.equal(reslist[0].getKey(), "foobar");
+        test.equal(reslist[0].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[0].getProject(), "ht-androidapp");
+        test.equal(reslist[0].resType, "array");
+        test.equal(reslist[0].getOrigin(), "source");
+
+        test.deepEqual(reslist[1].getArray(), ["Zero", "Eins", "Zwei"]);
+        test.equal(reslist[1].getLocale(), "de-DE");
+        test.equal(reslist[1].getKey(), "foobar");
+        test.equal(reslist[1].getPath(), "foo/bar/asdf.java");
+        test.equal(reslist[1].getProject(), "ht-androidapp");
+        test.equal(reslist[1].resType, "array");
+        test.equal(reslist[1].getOrigin(), "target");
 
         test.done();
     },
@@ -2185,7 +2297,7 @@ module.exports = {
     testXliffAddTranslationUnitRightResourceTypesContextString: function(test) {
         test.expect(7);
 
-        ResourceFactory.registerDataType("x-android-resource", "string", AndroidResourceString);
+        ResourceFactory.registerDataType("x-android-resource", "string", ContextResourceString);
         
         var x = new Xliff();
         test.ok(x);
@@ -2225,10 +2337,10 @@ module.exports = {
         
         test.equal(resources.length, 4);
 
-        test.ok(resources[0] instanceof AndroidResourceString);
-        test.ok(resources[1] instanceof AndroidResourceString);
-        test.ok(resources[2] instanceof AndroidResourceString);
-        test.ok(resources[3] instanceof AndroidResourceString);
+        test.ok(resources[0] instanceof ContextResourceString);
+        test.ok(resources[1] instanceof ContextResourceString);
+        test.ok(resources[2] instanceof ContextResourceString);
+        test.ok(resources[3] instanceof ContextResourceString);
 
         test.done();
     },
