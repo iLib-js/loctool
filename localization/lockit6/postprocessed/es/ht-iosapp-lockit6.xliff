@@ -1283,7 +1283,7 @@
       </trans-unit>
       <trans-unit id="213" resname="CARE TEAM" restype="string" datatype="x-objective-c">
         <source>CARE TEAM</source>
-        <target>EQUIPO DE ATENCIÓN</target>
+        <target state="accepted">Care-Team</target>
       </trans-unit>
     </body>
   </file>

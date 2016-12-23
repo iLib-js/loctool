@@ -4258,11 +4258,11 @@
         
       <note>Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note></trans-unit>
       <trans-unit id="185" resname="app_recommend2" restype="plural" datatype="x-android-resource" extype="one">
-        <source>{start}1 doctor{end} recommends this app</source><target>{Start}1位医生{end}推荐这款应用程序</target>
+        <source>{start}1 doctor{end} recommends this app</source><target>{start}1位医生{end}推荐这款应用程序</target>
         
       <note>Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note></trans-unit>
       <trans-unit id="186" resname="app_recommend2" restype="plural" datatype="x-android-resource" extype="other">
-        <source>{start}%d doctors{end} recommend this app</source><target>{Start}%d医生{end}推荐这款应用程序</target>
+        <source>{start}%d doctors{end} recommend this app</source><target>{start}%d医生{end}推荐这款应用程序</target>
         
       <note>Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note></trans-unit>
       <trans-unit id="187" resname="doctor_comment" restype="plural" datatype="x-android-resource" extype="one">
