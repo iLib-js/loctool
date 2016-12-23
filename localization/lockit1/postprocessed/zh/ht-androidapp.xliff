@@ -8896,11 +8896,11 @@
       </trans-unit>
       <trans-unit id="1916" resname="price_per_month" restype="string" datatype="x-android-resource">
         <source>$%s/month</source>
-        <target>每月$%s</target>
+        <target>$%s/每月</target>
       </trans-unit>
       <trans-unit id="1917" resname="price_per_consult" restype="string" datatype="x-android-resource">
         <source>$%s/consult</source>
-        <target>每次咨询$%s</target>
+        <target>$%s/每次咨询</target>
       </trans-unit>
       <trans-unit id="1918" resname="input_count_format" restype="string" datatype="x-android-resource">
         <source>{characters_num}/2000</source>
