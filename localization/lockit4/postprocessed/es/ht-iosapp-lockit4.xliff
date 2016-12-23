@@ -3533,17 +3533,17 @@
     <body>
       <trans-unit id="656" resname="4Qh-jU-tl7.text" restype="string" datatype="x-xib">
         <source>Voice Call</source>
-        <target>Llamada de Voz</target>
+        <target state="accepted">Voz</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Voice Call&quot;; ObjectID = &quot;4Qh-jU-tl7&quot;;</note>
       </trans-unit>
       <trans-unit id="657" resname="73Q-nf-NFY.text" restype="string" datatype="x-xib">
         <source>Text chat</source>
-        <target>Chat de texto</target>
+        <target state="accepted">Texto</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Text chat&quot;; ObjectID = &quot;73Q-nf-NFY&quot;;</note>
       </trans-unit>
       <trans-unit id="658" resname="8Fc-pj-rKs.text" restype="string" datatype="x-xib">
         <source>Video Call</source>
-        <target>Video Llamada</target>
+        <target state="accepted">Video</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Video Call&quot;; ObjectID = &quot;8Fc-pj-rKs&quot;;</note>
       </trans-unit>
       <trans-unit id="659" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
@@ -3562,17 +3562,17 @@
     <body>
       <trans-unit id="661" resname="8Ox-wK-Mh7.text" restype="string" datatype="x-xib">
         <source>Video Call</source>
-        <target>Video Llamada</target>
+        <target state="accepted">Video</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Video Call&quot;; ObjectID = &quot;8Ox-wK-Mh7&quot;;</note>
       </trans-unit>
       <trans-unit id="662" resname="dfZ-av-L1L.text" restype="string" datatype="x-xib">
         <source>Voice Call</source>
-        <target>Llamada de Voz</target>
+        <target state="accepted">Voz</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Voice Call&quot;; ObjectID = &quot;dfZ-av-L1L&quot;;</note>
       </trans-unit>
       <trans-unit id="663" resname="hQM-vQ-cAb.text" restype="string" datatype="x-xib">
         <source>Text Chat</source>
-        <target>Chat de Texto</target>
+        <target state="accepted">Texto</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Text Chat&quot;; ObjectID = &quot;hQM-vQ-cAb&quot;;</note>
       </trans-unit>
     </body>
