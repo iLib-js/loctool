@@ -1324,7 +1324,7 @@
       </trans-unit>
       <trans-unit id="Ddf-fU-xht.text" resname="Ddf-fU-xht.text" restype="string" datatype="x-xib">
         <source>Message subscription</source>
-        <target>Suscripción para mensajes</target>
+        <target state="accepted">Suscripción a mensajes</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Message subscription&quot;; ObjectID = &quot;Ddf-fU-xht&quot;;</note>
       </trans-unit>
       <trans-unit id="EdT-a2-IZU.text" resname="EdT-a2-IZU.text" restype="string" datatype="x-xib">
@@ -1369,12 +1369,12 @@
       </trans-unit>
       <trans-unit id="xHe-47-iBS.text" resname="xHe-47-iBS.text" restype="string" datatype="x-xib">
         <source>Inbox consult</source>
-        <target>Consulta de Buzón de entrada</target>
+        <target state="accepted">Consulta de Inbox</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Inbox consult&quot;; ObjectID = &quot;xHe-47-iBS&quot;;</note>
       </trans-unit>
       <trans-unit id="zEL-22-bH6.text" resname="zEL-22-bH6.text" restype="string" datatype="x-xib">
         <source>One consult with the doctor for advice, prescriptions, lab tests, and more</source>
-        <target>Una consulta con el doctor para consejo, recetas, pruebas de laboratorio, y más</target>
+        <target target="accepted">Una consulta con el doctor para consejo, prueba de laboratorio, receta y más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more&quot;; ObjectID = &quot;zEL-22-bH6&quot;;</note>
       </trans-unit>
     </body>
@@ -1418,7 +1418,7 @@
       </trans-unit>
       <trans-unit id="fYC-ZL-Tx6.text" resname="fYC-ZL-Tx6.text" restype="string" datatype="x-xib">
         <source>Send as many messages as you need, or get advice, prescriptions, lab tests, and more</source>
-        <target>Envía tantos mensajes como necesites, u obtén consejo, recetas, pruebas de laboratorio, y más</target>
+        <target state="accepted">Envía tantos mensajes como necesites, u obtén consejo, prueba de laboratorio, receta y más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more&quot;; ObjectID = &quot;fYC-ZL-Tx6&quot;;</note>
       </trans-unit>
       <trans-unit id="lfx-Yz-JPe.normalTitle" resname="lfx-Yz-JPe.normalTitle" restype="string" datatype="x-xib">
@@ -1443,7 +1443,7 @@
       </trans-unit>
       <trans-unit id="vtg-1b-D3u.text" resname="vtg-1b-D3u.text" restype="string" datatype="x-xib">
         <source>Inbox consult</source>
-        <target>Consulta de Buzón de entrada</target>
+        <target state="accepted">Consulta de Inbox</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Inbox consult&quot;; ObjectID = &quot;vtg-1b-D3u&quot;;</note>
       </trans-unit>
       <trans-unit id="wlf-6g-3lf.text" resname="wlf-6g-3lf.text" restype="string" datatype="x-xib">
@@ -9736,7 +9736,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Message subscriptions" resname="Message subscriptions" restype="string">
         <source>Message subscriptions</source>
-        <target>Suscripciones para mensajes</target>
+        <target state="accepted">Suscripciones a mensajes</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Mobile number" resname="Mobile number" restype="string">
