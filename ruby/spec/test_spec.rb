@@ -55,6 +55,16 @@ describe 'HamlLocalizer' do
       ret = replace_with_translations2(orig2, from_to)
       ret.include?('FOO').should be_true
     end
+
+    it 'it should localize string' do
+      # sourceL _hopes_diagram.html.haml
+      line = "      Power your organization with HOPES<sup>TM</sup> — the fully integrated, engaging and smart Health Operating System, providing query-to-cure virtual care to your patients, anytime, anywhere."
+      from_to = {" — the fully integrated, engaging and smart Health Operating System, providing query-to-cure virtual care to your patients, anytime, anywhere." => 'FOO'}
+      ret = replace_with_translations2(line, from_to)
+      ret.include?('FOO').should be_true
+
+    end
+
   end
 
   describe 'process pseudo values' do

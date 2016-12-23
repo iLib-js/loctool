@@ -236,7 +236,11 @@ def process_line(skip_block_indent, ret, line, from_to)
           #  puts "replacing #{k} WITH #{v}"
           #end
           unless line.match(/Rb.t\(\".*#{Regexp.escape(k)}.*\"\)/)
-            res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+            if line.match(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/)
+              res = line.gsub!(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, ">#{v}") #for some reason it replaces the > char as well. replcae it
+            else
+              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+            end
           end
           #if res
           #  puts "replacing #{k} WITH #{v}"
