@@ -155,9 +155,9 @@ function processNextProject() {
 	if (project) {
 		project.init(function() {
 			project.extract(function() {
-				project.save(function() {
-					project.generatePseudo();
-					project.write(function() {
+				project.generatePseudo();
+				project.write(function() {
+					project.save(function() {
 						project.close(function() {
 							processNextProject();
 						});
