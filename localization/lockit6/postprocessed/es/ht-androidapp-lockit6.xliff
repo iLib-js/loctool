@@ -1470,7 +1470,7 @@
     <body>
       <trans-unit id="266" resname="r316110521" restype="string" datatype="java">
         <source>Feed</source>
-        <target>Fuente</target>
+        <target state="accepted">Fuente</target>
       </trans-unit>
     </body>
   </file>
