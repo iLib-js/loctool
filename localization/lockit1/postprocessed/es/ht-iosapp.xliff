@@ -8527,7 +8527,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Find a topic &#40;e.g.: Lose weight&#41;   " resname="Find a topic &#40;e.g.: Lose weight&#41;   " restype="string">
         <source>Find a topic &#40;e.g.: Lose weight&#41;</source>
-        <target>Encuentra un tema &#40;e.j. Meditación&#41;</target>
+        <target state="accepted">Encuentra un tema &#40;p. ej. meditación&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Find app by name or topic                     " resname="Find app by name or topic                     " restype="string">
