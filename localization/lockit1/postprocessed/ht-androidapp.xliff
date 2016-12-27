@@ -1394,7 +1394,7 @@
     <body>
       <trans-unit id="259" resname="r506108837" restype="string" datatype="java">
         <source>To-Do</source>
-        <target>Por hacer</target>
+        <target>Qué hacer</target>
       </trans-unit>
     </body>
   </file>
@@ -1987,7 +1987,7 @@
       </trans-unit>
       <trans-unit id="372" resname="r987877798" restype="string" datatype="java">
         <source>Checklists</source>
-        <target>Listas de comprobación</target>
+        <target state="accepted">Listados</target>
       </trans-unit>
     </body>
   </file>
@@ -5220,11 +5220,11 @@
       </trans-unit>
       <trans-unit id="1035" resname="checklists" restype="string" datatype="x-android-resource">
         <source>Checklists</source>
-        <target>Listas de comprobación</target>
+        <target state="accepted">Listados</target>
       </trans-unit>
       <trans-unit id="1036" resname="toDo" restype="string" datatype="x-android-resource">
         <source>To-Do</source>
-        <target>Por hacer</target>
+        <target>Qué hacer</target>
       </trans-unit>
       <trans-unit id="1037" resname="consults_answers" restype="string" datatype="x-android-resource">
         <source>Consults and Answers</source>
