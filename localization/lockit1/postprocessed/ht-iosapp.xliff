@@ -1324,7 +1324,7 @@
       </trans-unit>
       <trans-unit id="Ddf-fU-xht.text" resname="Ddf-fU-xht.text" restype="string" datatype="x-xib">
         <source>Message subscription</source>
-        <target>Suscripción para mensajes</target>
+        <target state="accepted">Suscripción a mensajes</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Message subscription&quot;; ObjectID = &quot;Ddf-fU-xht&quot;;</note>
       </trans-unit>
       <trans-unit id="EdT-a2-IZU.text" resname="EdT-a2-IZU.text" restype="string" datatype="x-xib">
@@ -1369,12 +1369,12 @@
       </trans-unit>
       <trans-unit id="xHe-47-iBS.text" resname="xHe-47-iBS.text" restype="string" datatype="x-xib">
         <source>Inbox consult</source>
-        <target>Consulta de Buzón de entrada</target>
+        <target state="accepted">Consulta de Inbox</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Inbox consult&quot;; ObjectID = &quot;xHe-47-iBS&quot;;</note>
       </trans-unit>
       <trans-unit id="zEL-22-bH6.text" resname="zEL-22-bH6.text" restype="string" datatype="x-xib">
         <source>One consult with the doctor for advice, prescriptions, lab tests, and more</source>
-        <target>Una consulta con el doctor para consejo, recetas, pruebas de laboratorio, y más</target>
+        <target target="accepted">Una consulta con el doctor para consejo, prueba de laboratorio, receta y más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more&quot;; ObjectID = &quot;zEL-22-bH6&quot;;</note>
       </trans-unit>
     </body>
@@ -1418,7 +1418,7 @@
       </trans-unit>
       <trans-unit id="fYC-ZL-Tx6.text" resname="fYC-ZL-Tx6.text" restype="string" datatype="x-xib">
         <source>Send as many messages as you need, or get advice, prescriptions, lab tests, and more</source>
-        <target>Envía tantos mensajes como necesites, u obtén consejo, recetas, pruebas de laboratorio, y más</target>
+        <target state="accepted">Envía tantos mensajes como necesites, u obtén consejo, prueba de laboratorio, receta y más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more&quot;; ObjectID = &quot;fYC-ZL-Tx6&quot;;</note>
       </trans-unit>
       <trans-unit id="lfx-Yz-JPe.normalTitle" resname="lfx-Yz-JPe.normalTitle" restype="string" datatype="x-xib">
@@ -1443,7 +1443,7 @@
       </trans-unit>
       <trans-unit id="vtg-1b-D3u.text" resname="vtg-1b-D3u.text" restype="string" datatype="x-xib">
         <source>Inbox consult</source>
-        <target>Consulta de Buzón de entrada</target>
+        <target state="accepted">Consulta de Inbox</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Inbox consult&quot;; ObjectID = &quot;vtg-1b-D3u&quot;;</note>
       </trans-unit>
       <trans-unit id="wlf-6g-3lf.text" resname="wlf-6g-3lf.text" restype="string" datatype="x-xib">
@@ -9736,7 +9736,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Message subscriptions" resname="Message subscriptions" restype="string">
         <source>Message subscriptions</source>
-        <target>Suscripciones para mensajes</target>
+        <target state="accepted">Suscripciones a mensajes</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Mobile number" resname="Mobile number" restype="string">
@@ -11547,7 +11547,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Thank" resname="Thank" restype="string">
         <source>Thank</source>
-        <target>Agradecer a</target>
+        <target state="accepted">Agradecer</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Thank %@" resname="Thank %@" restype="string">
@@ -19583,7 +19583,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="yFt-y0-EnF.normalTitle" resname="yFt-y0-EnF.normalTitle" restype="string" datatype="x-xib">
         <source>Thank</source>
-        <target>Agradecer a</target>
+        <target state="accepted">Agradecer</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Thank&quot;; ObjectID = &quot;yFt-y0-EnF&quot;;</note>
       </trans-unit>
     </body>
@@ -19612,7 +19612,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="TU7-vq-QnX.normalTitle" resname="TU7-vq-QnX.normalTitle" restype="string" datatype="x-xib">
         <source>Thank</source>
-        <target>Agradecer a</target>
+        <target state="accepted">Agradecer</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Thank&quot;; ObjectID = &quot;TU7-vq-QnX&quot;;</note>
       </trans-unit>
       <trans-unit id="cqF-KZ-0eG.text" resname="cqF-KZ-0eG.text" restype="string" datatype="x-xib">
@@ -28443,7 +28443,7 @@ available in %@</source>
       </trans-unit>
       <trans-unit id="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately." resname="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately." restype="string">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately.</source>
-        <target>HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立刻打电话给%@或当地应急服务人员。如果您认为您需要紧急治疗，请立刻打电话给%@或当地应急服务人员。</target>
+        <target state="accepted">HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立刻打电话给%@或当地应急服务人员。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Any primary care doctor" resname="Any primary care doctor" restype="string">
@@ -30116,7 +30116,7 @@ subscription</source>
       </trans-unit>
       <trans-unit id="Filter" resname="Filter" restype="string">
         <source>Filter</source>
-        <target>滤波器</target>
+        <target state="accepted">筛选</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Filter experts" resname="Filter experts" restype="string">
@@ -39710,7 +39710,7 @@ pay per consult</source>
       </trans-unit>
       <trans-unit id="5ex-Gs-iwJ.text" resname="5ex-Gs-iwJ.text" restype="string" datatype="x-xib">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call 911 or your local emergency service immediately.</source>
-        <target>HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立刻打电话给%@或当地应急服务人员。如果您认为您需要紧急治疗，请立刻拨打911或打给当地应急服务人员。</target>
+        <target state="accepted">HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立刻打电话给%@或当地应急服务人员。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call 911 or your local emergency service immediately.&quot;; ObjectID = &quot;5ex-Gs-iwJ&quot;;</note>
       </trans-unit>
       <trans-unit id="6T5-jA-3oS.normalTitle" resname="6T5-jA-3oS.normalTitle" restype="string" datatype="x-xib">
