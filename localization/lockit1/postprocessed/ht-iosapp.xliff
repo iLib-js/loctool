@@ -11547,7 +11547,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Thank" resname="Thank" restype="string">
         <source>Thank</source>
-        <target>Agradecer a</target>
+        <target state="accepted">Agradecer</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Thank %@" resname="Thank %@" restype="string">
@@ -19583,7 +19583,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="yFt-y0-EnF.normalTitle" resname="yFt-y0-EnF.normalTitle" restype="string" datatype="x-xib">
         <source>Thank</source>
-        <target>Agradecer a</target>
+        <target state="accepted">Agradecer</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Thank&quot;; ObjectID = &quot;yFt-y0-EnF&quot;;</note>
       </trans-unit>
     </body>
@@ -19612,7 +19612,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="TU7-vq-QnX.normalTitle" resname="TU7-vq-QnX.normalTitle" restype="string" datatype="x-xib">
         <source>Thank</source>
-        <target>Agradecer a</target>
+        <target state="accepted">Agradecer</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Thank&quot;; ObjectID = &quot;TU7-vq-QnX&quot;;</note>
       </trans-unit>
       <trans-unit id="cqF-KZ-0eG.text" resname="cqF-KZ-0eG.text" restype="string" datatype="x-xib">

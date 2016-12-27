@@ -3370,7 +3370,7 @@
         <source>Notification settings</source><target>通知设置</target>
       </trans-unit>
       <trans-unit id="11" resname="title_De_activate_account" restype="string" datatype="x-android-resource">
-        <source>De-activate account</source><target>冻结账户</target>
+        <source>De-activate account</source><target state="accepted">关闭账户</target>
       </trans-unit>
       <trans-unit id="12" resname="title_About_HealthTap" restype="string" datatype="x-android-resource">
         <source>About HealthTap</source><target>关于HealthTap</target>

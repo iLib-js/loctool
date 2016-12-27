@@ -12171,7 +12171,7 @@
       </trans-unit>
       <trans-unit id="2544" resname="Feed" restype="string" datatype="html">
         <source>Feed</source>
-        <target>Alimentación</target>
+        <target state="accepted">Fuentes</target>
       </trans-unit>
       <trans-unit id="2545" resname="Tips" restype="string" datatype="html">
         <source>Tips</source>
