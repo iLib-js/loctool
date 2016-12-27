@@ -11552,7 +11552,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Thank %@" resname="Thank %@" restype="string">
         <source>Thank %@</source>
-        <target>Agradecer a %@</target>
+        <target state="accepted">Agradecer</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Thank you for using HealthTap" resname="Thank you for using HealthTap" restype="string">
