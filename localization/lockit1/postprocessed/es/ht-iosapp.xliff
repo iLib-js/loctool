@@ -359,7 +359,7 @@
       </trans-unit>
       <trans-unit id="WpN-ro-7NU.placeholder" resname="WpN-ro-7NU.placeholder" restype="string" datatype="x-xib">
         <source>Your email</source>
-        <target>Tu correo electrónico</target>
+        <target state="accepted">Tu email</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Your email&quot;; ObjectID = &quot;WpN-ro-7NU&quot;;</note>
       </trans-unit>
       <trans-unit id="aOn-rY-Luu.text" resname="aOn-rY-Luu.text" restype="string" datatype="x-xib">
@@ -433,7 +433,7 @@
       </trans-unit>
       <trans-unit id="WpN-ro-7NU.placeholder" resname="WpN-ro-7NU.placeholder" restype="string" datatype="x-xib">
         <source>Your email</source>
-        <target>Tu correo electrónico</target>
+        <target state="accepted">Tu email</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Your email&quot;; ObjectID = &quot;WpN-ro-7NU&quot;;</note>
       </trans-unit>
       <trans-unit id="aOn-rY-Luu.text" resname="aOn-rY-Luu.text" restype="string" datatype="x-xib">
@@ -12848,7 +12848,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="Your email" resname="Your email" restype="string">
         <source>Your email</source>
-        <target>Tu correo electrónico</target>
+        <target state="accepted">Tu email</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Your email was updated. Going forward, please use %@ to log in." resname="Your email was updated. Going forward, please use %@ to log in." restype="string">
@@ -19849,7 +19849,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="IA3-pb-mer.placeholder" resname="IA3-pb-mer.placeholder" restype="string" datatype="x-xib">
         <source>Your email</source>
-        <target>Tu correo electrónico</target>
+        <target state="accepted">Tu email</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Your email&quot;; ObjectID = &quot;IA3-pb-mer&quot;;</note>
       </trans-unit>
       <trans-unit id="J1y-e9-olS.normalTitle" resname="J1y-e9-olS.normalTitle" restype="string" datatype="x-xib">
