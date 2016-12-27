@@ -11472,7 +11472,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Tap-in to find doctors and their insights" resname="Tap-in to find doctors and their insights" restype="string">
         <source>Tap-in to find doctors and their insights</source>
-        <target>Pulsa para encontrar doctores y sus perspicacias</target>
+        <target state="accepted">Encuentra doctores y sus perspicacias</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Tap-in your brief, descriptive question" resname="Tap-in your brief, descriptive question" restype="string">
