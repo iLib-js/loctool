@@ -174,8 +174,9 @@ def process_values(locale_mappings, values, unmapped_words)
   ret = {}
   values.each{|v|
     next if v.strip.length == 0
-    hashed_key = create_hashed_key(v.gsub("\n", ""))
-    formatted_key = v.gsub("\n","").gsub(' ','_').capitalize
+    clean_w = v.gsub("\n", "")
+    hashed_key = create_hashed_key(clean_w)
+    formatted_key = clean_w.gsub(' ','_').capitalize
     # puts "checking #{v} #{hashed_key} #{formatted_key}"
     # puts locale_mappings.keys.first(50).to_s
     # puts "got #{locale_mappings[v]} #{locale_mappings[hashed_key]} #{locale_mappings[formatted_key]}"
@@ -341,6 +342,10 @@ def load_locale_maps(locales, file_prefix= 'translations')
     filename_for_locale = "#{file_prefix}-#{locale}.yml"
     if File.exists?(filename_for_locale)
       ret[locale] = YAML.load(File.read(filename_for_locale))
+      if ret[locale].keys.count == 1
+        first_key = ret[locale].keys.first
+        ret[locale] = ret[locale][first_key]
+      end
     else
       raise "Could not find #{filename_for_locale} for #{locale}"
     end

@@ -6430,7 +6430,7 @@
       </trans-unit>
       <trans-unit id="1303" resname="payment_phone_number_hint_optional" restype="string" datatype="x-android-resource">
         <source>Phone Number &#40;optional&#41;</source>
-        <target>Número de teléfono &#40;opcional&#41;</target>
+        <target state="accepted">Núm. de teléfono &#40;opcional&#41;</target>
       </trans-unit>
       <trans-unit id="1304" resname="payment_expire_normal" restype="string" datatype="x-android-resource">
         <source>We had trouble charging your credit card or payment or payment. Please update your payment information to maintain access to unlimited secure messages to your doctors.</source>
@@ -6654,11 +6654,11 @@
       </trans-unit>
       <trans-unit id="1359" resname="concierge_connect" restype="string" datatype="x-android-resource">
         <source>Add to Care-Team</source>
-        <target>Agregar a Care-Team &#40;Equipo de atención&#41;</target>
+        <target state="accepted">Agregar a Care-Team</target>
       </trans-unit>
       <trans-unit id="1360" resname="concierge_connect_two_line" restype="string" datatype="x-android-resource">
         <source>Add to\nCare-Team</source>
-        <target>Agregar a\nCare-Team &#40;Equipo de atención&#41;</target>
+        <target state="accepted">Agregar a\nCare-Team</target>
       </trans-unit>
       <trans-unit id="1361" resname="concierge_invite_notify_text" restype="string" datatype="x-android-resource">
         <source>We\&apos;ll notify when</source>

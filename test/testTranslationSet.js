@@ -7,7 +7,7 @@
 if (!TranslationSet) {
     var TranslationSet = require("../lib/TranslationSet.js");
     var ResourceString = require("../lib/ResourceString.js");
-    var AndroidResourceString = require("../lib/AndroidResourceString.js");
+    var ContextResourceString = require("../lib/ContextResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
 }
 
@@ -217,7 +217,7 @@ module.exports = {
         test.expect(6);
 
         var ts = new TranslationSet();
-        var res = new AndroidResourceString({
+        var res = new ContextResourceString({
             key: "asdf",
             source: "This is a test"
             // no context
@@ -225,7 +225,7 @@ module.exports = {
         
         ts.add(res);
         
-        res = new AndroidResourceString({
+        res = new ContextResourceString({
             key: "asdf",
             source: "This is a test",
             context: "different"
@@ -233,13 +233,13 @@ module.exports = {
         
         ts.add(res);
         
-        var r = ts.get(AndroidResourceString.hashKey(undefined, undefined, res.locale, "asdf"));
+        var r = ts.get(ContextResourceString.hashKey(undefined, undefined, res.locale, "asdf"));
         
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getContext());
         
-        r = ts.get(AndroidResourceString.hashKey(undefined, "different", res.locale, "asdf"));
+        r = ts.get(ContextResourceString.hashKey(undefined, "different", res.locale, "asdf"));
 
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
@@ -405,7 +405,7 @@ module.exports = {
         test.expect(6);
 
         var ts = new TranslationSet();
-        var res = new AndroidResourceString({
+        var res = new ContextResourceString({
             key: "asdf",
             autoKey: true,
             source: "This is a test"
@@ -414,7 +414,7 @@ module.exports = {
         
         ts.add(res);
         
-        res = new AndroidResourceString({
+        res = new ContextResourceString({
             key: "asdf",
             autoKey: true,
             source: "This is a test",
@@ -601,11 +601,11 @@ module.exports = {
         var ts = new TranslationSet();
         
         ts.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            context: "foo"
@@ -716,7 +716,7 @@ module.exports = {
         test.expect(1);
 
         var ts = new TranslationSet();
-        var res = new AndroidResourceString({
+        var res = new ContextResourceString({
             key: "asdf",
             source: "This is a test"
             // no context
@@ -724,7 +724,7 @@ module.exports = {
         
         ts.add(res);
         
-        res = new AndroidResourceString({
+        res = new ContextResourceString({
             key: "asdf",
             source: "This is a test",
             context: "different"
@@ -1181,67 +1181,67 @@ module.exports = {
         var ts = new TranslationSet();
         
         ts.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
 	            context: "bar",
 	            locale: "fr-FR"
 	        }),	        
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is yet another test",
 	            project: "foo",
 	            locale: "pt-BR"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            context: "bar",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test d blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah",
 	            key: "llashdfoi",
 	            project: "yowza",
 	            context: "bar",
 	            locale: "en-US"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah en espanol",
 	            key: "ajajsdjdsj",
 	            project: "yowza",
@@ -1284,68 +1284,68 @@ module.exports = {
         var ts = new TranslationSet();
         
         ts.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
 	            context: "bar",
 	            locale: "fr-FR"
 	        }),	        
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is yet another test",
 	            project: "foo",
 	            locale: "de-DE",
 	            context: "ajajajaj"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            context: "bar",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test d blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah",
 	            key: "llashdfoi",
 	            project: "yowza",
 	            context: "bar",
 	            locale: "en-US"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah en espanol",
 	            key: "ajajsdjdsj",
 	            project: "yowza",
@@ -1766,67 +1766,67 @@ module.exports = {
         var ts = new TranslationSet();
         
         ts.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
 	            context: "bar",
 	            locale: "fr-FR"
 	        }),	        
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is yet another test",
 	            project: "foo",
 	            locale: "pt-BR"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            context: "bar",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test d blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah",
 	            key: "llashdfoi",
 	            project: "yowza",
 	            context: "bar",
 	            locale: "en-US"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah en espanol",
 	            key: "ajajsdjdsj",
 	            project: "yowza",
@@ -1938,66 +1938,66 @@ module.exports = {
         var ts = new TranslationSet();
         
         ts.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
 	            context: "bar",
 	            locale: "fr-FR"
 	        }),	        
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is yet another test",
 	            project: "foo",
 	            locale: "pt-BR"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            context: "bar",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test d blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah",
 	            key: "llashdfoi",
 	            project: "yowza",
 	            locale: "en-US"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah en espanol",
 	            key: "ajajsdjdsj",
 	            project: "yowza",
@@ -2025,66 +2025,66 @@ module.exports = {
         var ts = new TranslationSet();
         
         ts.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
 	            context: "bar",
 	            locale: "fr-FR"
 	        }),	        
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is yet another test",
 	            project: "foo",
 	            locale: "pt-BR"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            context: "bar",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test d blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah",
 	            key: "llashdfoi",
 	            project: "yowza",
 	            locale: "en-US"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah en espanol",
 	            key: "ajajsdjdsj",
 	            project: "yowza",
@@ -2108,7 +2108,7 @@ module.exports = {
         test.equal(res[0].getKey(), "foobarfoo");
         test.equal(res[0].getSource(), "test test blah");
         
-        test.ok(ts.remove(new AndroidResourceString({
+        test.ok(ts.remove(new ContextResourceString({
         	project: "asdf",
         	context: "bar",
         	locale: "ja-JP",
@@ -2135,66 +2135,66 @@ module.exports = {
         var ts = new TranslationSet();
         
         ts.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
 	            context: "bar",
 	            locale: "fr-FR"
 	        }),	        
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is yet another test",
 	            project: "foo",
 	            locale: "pt-BR"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            context: "bar",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test d blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah",
 	            key: "llashdfoi",
 	            project: "yowza",
 	            locale: "en-US"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah en espanol",
 	            key: "ajajsdjdsj",
 	            project: "yowza",
@@ -2205,7 +2205,7 @@ module.exports = {
         test.equal(ts.size(), 10);
         
         // have to specify everything needed to identify a single resource
-        test.ok(!ts.remove(AndroidResourceString.hashKey(undefined, "bar", "ja-JP", "foobarfoo")));
+        test.ok(!ts.remove(ContextResourceString.hashKey(undefined, "bar", "ja-JP", "foobarfoo")));
         
         test.equal(ts.size(), 10);
         
@@ -2218,66 +2218,66 @@ module.exports = {
         var ts = new TranslationSet();
         
         ts.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
 	            context: "bar",
 	            locale: "fr-FR"
 	        }),	        
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is yet another test",
 	            project: "foo",
 	            locale: "pt-BR"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            context: "bar",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test d blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah",
 	            key: "llashdfoi",
 	            project: "yowza",
 	            locale: "en-US"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah en espanol",
 	            key: "ajajsdjdsj",
 	            project: "yowza",
@@ -2301,60 +2301,60 @@ module.exports = {
         var ts = new TranslationSet();
         
         ts.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
 	            context: "bar",
 	            locale: "fr-FR"
 	        }),	        
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is yet another test",
 	            project: "foo",
 	            locale: "pt-BR"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            context: "bar",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "test test d blah",
 	            key: "foobarfoo",
 	            project: "asdf",
 	            locale: "ja-JP"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            source: "blah blah blah",
 	            key: "llashdfoi",
 	            project: "yowza",
@@ -2371,7 +2371,7 @@ module.exports = {
         test.equal(ts.size(), 10);
         
         // does not match anything
-        test.ok(!ts.remove(AndroidResourceString.hashKey("ai jai jai", "blech", "en-NZ", "juicy")));
+        test.ok(!ts.remove(ContextResourceString.hashKey("ai jai jai", "blech", "en-NZ", "juicy")));
         
         test.equal(ts.size(), 10);
 
@@ -2385,21 +2385,21 @@ module.exports = {
         var ts2 = new TranslationSet();
         
         ts1.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
@@ -2409,35 +2409,35 @@ module.exports = {
 	    ]);
         
         ts2.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
 	            context: "bar",
 	            locale: "fr-FR"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
@@ -2460,21 +2460,21 @@ module.exports = {
         var ts2 = new TranslationSet();
         
         ts1.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
@@ -2484,35 +2484,35 @@ module.exports = {
 	    ]);
         
         ts2.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
 	            context: "bar",
 	            locale: "fr-FR"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
@@ -2549,21 +2549,21 @@ module.exports = {
         var ts2 = new TranslationSet();
         
         ts1.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
@@ -2573,14 +2573,14 @@ module.exports = {
 	    ]);
         
         ts2.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "gossie",
 	            project: "foo",
 	            context: "bar",
 	            locale: "nl-NL"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
@@ -2617,21 +2617,21 @@ module.exports = {
         var ts2 = new TranslationSet();
         
         ts1.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
@@ -2641,21 +2641,21 @@ module.exports = {
 	    ]);
         
         ts2.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
@@ -2680,21 +2680,21 @@ module.exports = {
         var ts2 = new TranslationSet();
         
         ts1.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",
@@ -2704,21 +2704,21 @@ module.exports = {
 	    ]);
         
         ts2.addAll([
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "asdf",
 	            source: "This is a test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "This is yet another test",
 	            project: "foo",
 	            context: "bar",
 	            locale: "de-DE"
 	        }),
-	        new AndroidResourceString({
+	        new ContextResourceString({
 	            key: "qwerty",
 	            source: "ooo la la",
 	            project: "foo",

@@ -6,7 +6,7 @@
 
 if (!ResourceString) {
     var ResourceString = require("../lib/ResourceString.js");
-    var AndroidResourceString = require("../lib/AndroidResourceString.js");
+    var ContextResourceString = require("../lib/ContextResourceString.js");
     var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
     var ilib = require("ilib");
     var ResBundle = require("ilib/lib/ResBundle");
@@ -666,26 +666,26 @@ module.exports = {
         test.done();
     },
     
-    testAndroidResourceStringStaticHashKey: function(test) {
+    testContextResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(AndroidResourceString.hashKey("ht-iosapp", "foobar", "de-DE", "This is a test"), "ars_ht-iosapp_foobar_de-DE_This is a test");
+        test.equal(ContextResourceString.hashKey("ht-iosapp", "foobar", "de-DE", "This is a test"), "ars_ht-iosapp_foobar_de-DE_This is a test");
         
         test.done();
     },
 
-    testAndroidResourceStringStaticHashKeyMissingParts: function(test) {
+    testContextResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(AndroidResourceString.hashKey(undefined, undefined, "de-DE", undefined), "ars___de-DE_");
+        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined), "ars___de-DE_");
         
         test.done();
     },
 
-    testAndroidResourceStringHashKey: function(test) {
+    testContextResourceStringHashKey: function(test) {
         test.expect(2);
 
-        var rs = new AndroidResourceString({
+        var rs = new ContextResourceString({
         	project: "ht-iosapp",
         	context: "foobar",
         	key: "This is a test",

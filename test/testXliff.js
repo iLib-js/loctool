@@ -8,7 +8,7 @@ if (!Xliff) {
 	var Xliff = require("../lib/Xliff.js");
 	var TranslationUnit = Xliff.TranslationUnit;
     var ResourceString = require("../lib/ResourceString.js");
-    var AndroidResourceString = require("../lib/AndroidResourceString.js");
+    var ContextResourceString = require("../lib/ContextResourceString.js");
     var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
@@ -530,7 +530,7 @@ module.exports = {
         var x = new Xliff();
         test.ok(x);
         
-        var res = new AndroidResourceString({
+        var res = new ContextResourceString({
             source: "Asdf asdf",
             locale: "en-US",
             key: "foobar",
@@ -541,7 +541,7 @@ module.exports = {
         
         x.addResource(res);
 
-        var res = new AndroidResourceString({
+        var res = new ContextResourceString({
             source: "Asdf asdf",
             locale: "en-US",
             key: "foobar",
@@ -2297,7 +2297,7 @@ module.exports = {
     testXliffAddTranslationUnitRightResourceTypesContextString: function(test) {
         test.expect(7);
 
-        ResourceFactory.registerDataType("x-android-resource", "string", AndroidResourceString);
+        ResourceFactory.registerDataType("x-android-resource", "string", ContextResourceString);
         
         var x = new Xliff();
         test.ok(x);
@@ -2337,10 +2337,10 @@ module.exports = {
         
         test.equal(resources.length, 4);
 
-        test.ok(resources[0] instanceof AndroidResourceString);
-        test.ok(resources[1] instanceof AndroidResourceString);
-        test.ok(resources[2] instanceof AndroidResourceString);
-        test.ok(resources[3] instanceof AndroidResourceString);
+        test.ok(resources[0] instanceof ContextResourceString);
+        test.ok(resources[1] instanceof ContextResourceString);
+        test.ok(resources[2] instanceof ContextResourceString);
+        test.ok(resources[3] instanceof ContextResourceString);
 
         test.done();
     },

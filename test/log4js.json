@@ -15,7 +15,7 @@
 		"loctool.lib.AndroidProject": "INFO",
 		"loctool.lib.AndroidResourceFile": "INFO",
 		"loctool.lib.AndroidResourceFileType": "INFO",
-		"loctool.lib.AndroidResourceString": "INFO",
+		"loctool.lib.ContextResourceString": "INFO",
 		"loctool.lib.DBTranslationSet": "INFO",
 		"loctool.lib.FileType": "INFO",
 		"loctool.lib.HTMLTemplateFile": "INFO",
@@ -49,6 +49,8 @@
 		"loctool.lib.XliffFileType": "INFO",
 		"loctool.lib.YamlFile": "INFO",
 		"loctool.lib.YamlFileType": "INFO",
+		"loctool.lib.YamlResourceFile": "INFO",
+		"loctool.lib.YamlResourceFileType": "INFO",
 		"loctool.loctool":  "INFO"
 	}
 }
