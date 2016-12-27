@@ -425,7 +425,7 @@
     <body>
       <trans-unit id="71" resname="agreed with %@&apos;s tip on %@" restype="string" datatype="x-objective-c">
         <source>agreed with %@&apos;s tip on %@</source>
-        <target>estuvo de acuerdo con el tip de %@ sobre %@</target>
+        <target state="accepted">estuvo de acuerdo con el tip de %@ sobre %@</target>
       </trans-unit>
     </body>
   </file>
