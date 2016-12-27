@@ -1307,7 +1307,7 @@
     <body>
       <trans-unit id="217" resname="Enter your question here" restype="string" datatype="x-objective-c">
         <source>Enter your question here</source>
-        <target>Ingresa tu pregunta aquí</target>
+        <target state="accepted">Ingresa tu pregunta al médico aquí</target>
       </trans-unit>
     </body>
   </file>
