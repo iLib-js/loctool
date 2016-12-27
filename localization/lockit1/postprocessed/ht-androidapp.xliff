@@ -1346,7 +1346,7 @@
     <body>
       <trans-unit id="251" resname="r316110521" restype="string" datatype="java">
         <source>Feed</source>
-        <target>Alimentación</target>
+        <target state="accepted">Fuente</target>
       </trans-unit>
     </body>
   </file>
@@ -5208,7 +5208,7 @@
       </trans-unit>
       <trans-unit id="1032" resname="menu_feed" restype="string" datatype="x-android-resource">
         <source>Feed</source>
-        <target>Alimentación</target>
+        <target state="accepted">Fuente</target>
       </trans-unit>
       <trans-unit id="1033" resname="menu_profile" restype="string" datatype="x-android-resource">
         <source>Health Profile</source>
