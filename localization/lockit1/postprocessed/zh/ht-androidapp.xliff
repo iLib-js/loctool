@@ -10,7 +10,7 @@
   </file>
   <file original="res/layout-sw720dp/profile_conditions.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
- 分享     <trans-unit id="2" resname="text_Add_condition_or_symptom" restype="string" datatype="x-android-resource" x-context="sw720dp">
+      <trans-unit id="2" resname="text_Add_condition_or_symptom" restype="string" datatype="x-android-resource" x-context="sw720dp">
         <source>Add condition or symptom</source>
         <target>添加健康情况或症状</target>
       </trans-unit>
