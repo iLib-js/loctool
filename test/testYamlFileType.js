@@ -117,51 +117,5 @@ module.exports = {
         test.ok(yft.handles("config/nofications.yml"));
         
         test.done();
-    },
-
-    testYamlFileTypeGetResourceFile: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "ht-webapp12",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
-        }, "./testfiles");
-        
-        var yft = new YamlFileType(p);
-        test.ok(yft);
-
-        var yf = yft.getResourceFile("fr-FR");
-        
-        test.equal(yf.getLocale(), "fr-FR");
-
-        test.done();
-    },
-    
-    testYamlFileTypeGetResourceFileSameOneEachTime: function(test) {
-        test.expect(4);
-
-        var p = new WebProject({
-        	id: "ht-webapp12",
-        	sourceLocale: "de-DE",
-        	resourceDirs: {
-        		"yml": "config/locales"
-        	}
-        }, "./testfiles");
-        
-        var yft = new YamlFileType(p);
-        test.ok(yft);
-
-        var yf1 = yft.getResourceFile("fr-FR");
-        test.equal(yf1.getLocale(), "fr-FR");
-
-        var yf2 = yft.getResourceFile("fr-FR");
-        test.equal(yf2.getLocale(), "fr-FR");
-
-        test.deepEqual(yf1, yf2);
-
-        test.done();
     }
 };
