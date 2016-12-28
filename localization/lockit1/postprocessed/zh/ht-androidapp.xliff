@@ -1306,7 +1306,7 @@
       </trans-unit>
       <trans-unit id="244" resname="r909283218" restype="string" datatype="java">
         <source>Can&apos;t find an application for SMS</source>
-        <target>没有找到为SMS的应用</target>
+        <target state="accepted">没有找到可以发送短信的应用</target>
       </trans-unit>
     </body>
   </file>
@@ -6512,7 +6512,7 @@
       </trans-unit>
       <trans-unit id="1323" resname="share_dialog_sms" restype="string" datatype="x-android-resource">
         <source>Your device does not have a SMS account set up yet.</source>
-        <target>您的设备尚未设置SMS帐户。</target>
+        <target state="accepted">您的设备尚未设置短信帐户。</target>
       </trans-unit>
       <trans-unit id="1324" resname="share_dialog_email" restype="string" datatype="x-android-resource">
         <source>Your device does not have an email account set up yet.</source>
@@ -10332,7 +10332,7 @@
       </trans-unit>
       <trans-unit id="2275" resname="text_Sms" restype="string" datatype="x-android-resource">
         <source>Sms</source>
-        <target>Sms</target>
+        <target state="accepted">短信</target>
       </trans-unit>
       <trans-unit id="2276" resname="hint_Share_you_thoughts_with_doctors_and_followers" restype="string" datatype="x-android-resource">
         <source>Share you thoughts with doctors and followers</source>

@@ -1430,7 +1430,7 @@
       </trans-unit>
       <trans-unit id="259" resname="r909283218" restype="string" datatype="java">
         <source>Can&apos;t find an application for SMS</source>
-        <target>没有找到为短信的应用程序</target>
+        <target>没有找到可以发送短信的应用程序</target>
       </trans-unit>
     </body>
   </file>
