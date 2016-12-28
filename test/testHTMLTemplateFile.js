@@ -1014,10 +1014,10 @@ module.exports = {
         test.equal(r.getSource(), "Description");
         test.equal(r.getKey(), "Description");
        
-        r = set.getBySource('Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
+        r = set.getBySource('Authored by');
         test.ok(r);
-        test.equal(r.getSource(), 'Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
-        test.equal(r.getKey(), 'Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
+        test.equal(r.getSource(), 'Authored by');
+        test.equal(r.getKey(), 'Authored by');
 
         r = set.getBySource('and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
         test.ok(r);
@@ -1236,7 +1236,7 @@ module.exports = {
         test.done();
     },
 
-    testHTMLTemplateFileSkipScript: function(test) {
+    testHTMLTemplateFileLocalizeTextSkipScript: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -3097,7 +3097,7 @@ module.exports = {
     },
     
     testHTMLTemplateFileExtractFileFullyExtracted: function(test) {
-        test.expect(21);
+        test.expect(17);
 
         var base = path.dirname(module.id);
         
@@ -3141,6 +3141,52 @@ module.exports = {
         test.equal(r.getKey(), "Get help now");
 
         test.done();
-    }
+    },
+    
+    testHTMLTemplateFileExtractFileFullyExtracted: function(test) {
+        test.expect(17);
 
+        var base = path.dirname(module.id);
+        
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, path.join(base, "testfiles"));
+        
+        var htf = new HTMLTemplateFile(p, "./tmpl/mode.tmpl.html");
+        test.ok(htf);
+        
+        // should read the file
+        htf.extract();
+        
+        var set = htf.getTranslationSet();
+        
+        test.equal(set.size(), 5);
+        
+        var r = set.getBySource("Upcoming Appointments");
+        test.ok(r);
+        test.equal(r.getSource(), "Upcoming Appointments");
+        test.equal(r.getKey(), "Upcoming Appointments");
+       
+        r = set.getBySource("Private Consults");
+        test.ok(r);
+        test.equal(r.getSource(), "Private Consults");
+        test.equal(r.getKey(), "Private Consults");
+
+        r = set.getBySource("Get help");
+        test.ok(r);
+        test.equal(r.getSource(), "Get help");
+        test.equal(r.getKey(), "Get help");
+
+        r = set.getBySource("Doctors are standing by to help");
+        test.ok(r);
+        test.equal(r.getSource(), "Doctors are standing by to help");
+        test.equal(r.getKey(), "Doctors are standing by to help");
+
+        r = set.getBySource("Get help now");
+        test.ok(r);
+        test.equal(r.getSource(), "Get help now");
+        test.equal(r.getKey(), "Get help now");
+
+        test.done();
+    }
 };
