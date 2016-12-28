@@ -627,5 +627,80 @@ module.exports = {
         test.equal(set.size(), 0);
 
         test.done();
+    },
+    
+    testRubyFileParseHamlFile: function(test) {
+        test.expect(18);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        rf.parse(
+    		'.contain-width\n' +
+    		'  .hopes-for-everyone\n' +
+    		'    %p.big-text.montserrat-regular\n' +
+    		'      WE HAVE HOPES FOR EVERYONE\n' +
+    		'    .items\n' +
+    		'      :ruby\n' +
+    		'        data=[\n' +
+    		'          {:links=>[{:href=>"/what_we_make/members",:caption=>Rb.t("Learn more about members")}],:img=>"members-mobile@3x.png",:title=>Rb.t("Members"),:caption=>Rb.t("Immediate access to top doctors and their expertise, anytime, anywhere")},\n' +
+    		'          {:links=>[{:href=>"/enterprise/providers",:caption=>Rb.t("Learn about providers & health systems")},{:href=>"/enterprise/practices",:caption=>Rb.t("Learn about medical practices and clinics")}],:img=>"providers-and-health-systems-mobile@3x.png",:title=>Rb.t("Providers & Health Systems"),:caption=>Rb.t("Healthier patients, happier doctors, higher income")},\n' +
+    		'          {:links=>[{:href=>"/enterprise/compass",:caption=>Rb.t("Learn more about employers & insurers")}],:img=>"employers-and-insurers-mobile@3x.png",:title=>Rb.t("Employers & Insurers"),:caption=>Rb.t("Lower costs and improve productivity & satisfaction by providing the right care at the right cost at the right time ")},\n' +
+    		'          {:links=>[{:href=>"/what_we_make/doctors",:caption=>Rb.t("Learn more about doctors")}],:img=>"doctors-mobile@3x.png",:title=>Rb.t("Doctors"),:caption=>Rb.t("Enhance your reputation, grow your practice ")},\n' +
+    		'          {:links=>[{:href=>"/enterprise/sos",:caption=>Rb.t("Learn more about government & population managers")}],:img=>"govt-pop-mangagers@3x.png",:title=>Rb.t("Government & Population Managers"),:caption=>Rb.t("Immediate, trusted, simple disaster relief ")},\n' +
+    		'          {:links=>[{:href=>"/what_we_make/developers",:caption=>Rb.t("Learn more about developers")}],:img=>"developers-mobile@3x.png",:title=>Rb.t("Developers"),:caption=>Rb.t("HealthTap Cloud enables developers to build interoperable, engaging, and smart health experiences, powered by HOPES<sup>TM</sup>")}\n' +
+    		'        ]\n' +
+    		'      -data.each do |item|\n' +
+    		'        .item\n' +
+    		'          .item-inner\n' +
+    		'            %img{:src=>"/imgs/feelgood/static_pages/home/new/" + item[:img]}\n' +
+    		'            %p.title.montserrat-regular #{item[:title].html_safe}\n' +
+    		'            %p.small-text #{item[:caption].html_safe}\n' +
+    		'            - item[:links] ||= []\n' +
+    		'            - item[:links].each do |link|\n' +
+    		'              %a.small-text.link{:href=>link[:href]} \n' +
+    		'                #{link[:caption]}\n' +
+    		'                %span.arrow &rsaquo;\n'
+    
+        );
+        
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("Learn more about members");
+        test.ok(r);
+        test.equal(r.getSource(), "Learn more about members");
+        test.equal(r.getKey(), "r899361143");
+        
+        r = set.getBySource("Members");
+        test.ok(r);
+        test.equal(r.getSource(), "Members");
+        test.equal(r.getKey(), "r412671705");
+        
+        r = set.getBySource("Immediate access to top doctors and their expertise, anytime, anywhere");
+        test.ok(r);
+        test.equal(r.getSource(), "Immediate access to top doctors and their expertise, anytime, anywhere");
+        test.equal(r.getKey(), "r975034919");
+
+        r = set.getBySource("Learn about providers & health systems");
+        test.ok(r);
+        test.equal(r.getSource(), "Learn about providers & health systems");
+        test.equal(r.getKey(), "r851737678");
+
+        r = set.getBySource("Healthier patients, happier doctors, higher income");
+        test.ok(r);
+        test.equal(r.getSource(), "Healthier patients, happier doctors, higher income");
+        test.equal(r.getKey(), "r120591747");
+        
+        test.equal(set.size(), 19);
+        
+        test.done();
     }
 };
