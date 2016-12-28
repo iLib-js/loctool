@@ -1,0 +1,46 @@
+<div class="askHeader">
+  <h3>Choose a consult method</h3>
+</div>
+<div id="chooseMode">
+  <div class="askContent">
+    <div class="expertInfo">
+      <div class="portraitContainer">
+        <div class="portrait">
+          <img src="<%= photo %>" height="86px" width="86px" />
+        </div>
+        <div class="dot<%= (availability == 'available') ? ' on' : '' %>"></div>
+      </div>
+      <div class="rating">
+        <% $.each(stars, function(i, star) { %>
+        <div class="star <%= star %>"></div>
+        <% }); %>
+      </div>
+      <div class="name"><%= name %></div>
+      <div class="specialty"><%= specialty %></div>
+      <% if (in_care_team) { %>
+      <div class="care">Care team</div>
+      <% } %>
+      <% $.each(supplementary_descriptions, function(index, desc) { %>
+      <div class="addInfo"><%= desc %></div>
+      <% }); %>
+    </div>
+    <div class="modeSelection">
+      <% $.each(modes, function(index, mode) { %>
+      <%= (index > 0) ? '-->' : '' %><div class="mode <%= mode.type %><%= mode.active ? '' : ' inactive' %>" data-type="<%= mode.type %>">
+        <div class="modeContents">
+          <h4><%= mode.title %></h4>
+          <p class="description"><%= mode.description %></p>
+          <% if (mode.price) { %>
+          <p> <%= RB.getString("Starting at {currency_symbol}{price}").format({currency_symbol: currency_symbol, price: mode.price}) %></p>
+          <% } %>
+          <% if (mode.message) { %>
+          <p class="warn"><%= mode.message %></p>
+          <% } %>
+        </div>
+      </div><!--
+      --><div class="divider"></div><%= (index < modes.length - 1) ? '<!--' : '' %>
+      <% }); %>
+    </div>
+  </div>
+  <div class="pageFooter"></div>
+</div>

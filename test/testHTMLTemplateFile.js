@@ -9,7 +9,8 @@ var fs = require("fs");
 
 if (!HTMLTemplateFile) {
     var HTMLTemplateFile = require("../lib/HTMLTemplateFile.js");
-
+    var HTMLTemplateFileType = require("../lib/HTMLTemplateFileType.js");
+    
     var WebProject =  require("../lib/WebProject.js");
     var TranslationSet =  require("../lib/TranslationSet.js");
     var ResourceString =  require("../lib/ResourceString.js");
@@ -1014,10 +1015,10 @@ module.exports = {
         test.equal(r.getSource(), "Description");
         test.equal(r.getKey(), "Description");
        
-        r = set.getBySource('Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
+        r = set.getBySource('Authored by');
         test.ok(r);
-        test.equal(r.getSource(), 'Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
-        test.equal(r.getKey(), 'Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
+        test.equal(r.getSource(), 'Authored by');
+        test.equal(r.getKey(), 'Authored by');
 
         r = set.getBySource('and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
         test.ok(r);
@@ -1236,7 +1237,7 @@ module.exports = {
         test.done();
     },
 
-    testHTMLTemplateFileSkipScript: function(test) {
+    testHTMLTemplateFileLocalizeTextSkipScript: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -3097,7 +3098,7 @@ module.exports = {
     },
     
     testHTMLTemplateFileExtractFileFullyExtracted: function(test) {
-        test.expect(21);
+        test.expect(17);
 
         var base = path.dirname(module.id);
         
@@ -3140,6 +3141,136 @@ module.exports = {
         test.equal(r.getSource(), "Get help now");
         test.equal(r.getKey(), "Get help now");
 
+        test.done();
+    },
+    
+    testHTMLTemplateFileExtractFileFullyExtracted2: function(test) {
+        test.expect(8);
+
+        var base = path.dirname(module.id);
+        
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, path.join(base, "testfiles"));
+        
+        var htf = new HTMLTemplateFile(p, "./tmpl/mode.tmpl.html");
+        test.ok(htf);
+        
+        // should read the file
+        htf.extract();
+        
+        var set = htf.getTranslationSet();
+        
+        test.equal(set.size(), 2);
+        
+        var r = set.getBySource("Choose a consult method");
+        test.ok(r);
+        test.equal(r.getSource(), "Choose a consult method");
+        test.equal(r.getKey(), "Choose a consult method");
+       
+        r = set.getBySource("Care team");
+        test.ok(r);
+        test.equal(r.getSource(), "Care team");
+        test.equal(r.getKey(), "Care team");
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileExtractFileNewResources: function(test) {
+        test.expect(11);
+
+        var base = path.dirname(module.id);
+        
+        var p = new WebProject({
+        	id: "foo",
+        	sourceLocale: "en-US"
+        }, path.join(base, "testfiles"));
+        
+        var t = new HTMLTemplateFileType(p);
+        
+        var htf = new HTMLTemplateFile(p, "./tmpl/mode.tmpl.html", t);
+        test.ok(htf);
+        
+        htf.extract();
+  
+        var translations = new TranslationSet();
+        
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "Choose a consult method",
+        	source: "Choicissez une methode de consultation",
+        	locale: "fr-FR"
+        }));
+        
+        var actual = htf.localizeText(translations, "fr-FR");
+        var expected =
+    		'<div class="askHeader">\n' +
+    		'  <h3>Choicissez une methode de consultation</h3>\n' +
+    		'</div>\n' +
+    		'<div id="chooseMode">\n' +
+    		'  <div class="askContent">\n' +
+    		'    <div class="expertInfo">\n' +
+    		'      <div class="portraitContainer">\n' +
+    		'        <div class="portrait">\n' +
+    		'          <img src="<%= photo %>" height="86px" width="86px">\n' +
+    		'        </div>\n' +
+    		'        <div class="dot<%= (availability == \'available\') ? \' on\' : \'\' %>"></div>\n' +
+    		'      </div>\n' +
+    		'      <div class="rating">\n' +
+    		'        <% $.each(stars, function(i, star) { %>\n' +
+    		'        <div class="star <%= star %>"></div>\n' +
+    		'        <% }); %>\n' +
+    		'      </div>\n' +
+    		'      <div class="name"><%= name %></div>\n' +
+    		'      <div class="specialty"><%= specialty %></div>\n' +
+    		'      <% if (in_care_team) { %>\n' +
+    		'      <div class="care">Çàŕë ţëàm43210</div>\n' +
+    		'      <% } %>\n' +
+    		'      <% $.each(supplementary_descriptions, function(index, desc) { %>\n' +
+    		'      <div class="addInfo"><%= desc %></div>\n' +
+    		'      <% }); %>\n' +
+    		'    </div>\n' +
+    		'    <div class="modeSelection">\n' +
+    		'      <% $.each(modes, function(index, mode) { %>\n' +
+    		'      <%= (index > 0) ? \'-->\' : \'\' %><div class="mode <%= mode.type %><%= mode.active ? \'\' : \' inactive\' %>" data-type="<%= mode.type %>">\n' +
+    		'        <div class="modeContents">\n' +
+    		'          <h4><%= mode.title %></h4>\n' +
+    		'          <p class="description"><%= mode.description %></p>\n' +
+    		'          <% if (mode.price) { %>\n' +
+    		'          <p> <%= RB.getString("Starting at {currency_symbol}{price}").format({currency_symbol: currency_symbol, price: mode.price}) %></p>\n' +
+    		'          <% } %>\n' +
+    		'          <% if (mode.message) { %>\n' +
+    		'          <p class="warn"><%= mode.message %></p>\n' +
+    		'          <% } %>\n' +
+    		'        </div>\n' +
+    		'      </div><div class="divider"></div><%= (index < modes.length - 1) ? \'<!--\' : \'\' %>\n' +
+    		'      <% }); %>\n' +
+    		'    </div>\n' +
+    		'  </div>\n' +
+    		'  <div class="pageFooter"></div>\n' +
+    		'</div>\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        
+        var set = t.newres;
+        var resources = set.getAll();
+        
+        test.equal(resources.length, 2);
+        
+        var r = set.getBySource("Choose a consult method");
+        test.ok(!r);
+        
+        r = set.getBySource("Care team");
+        test.ok(r);
+        test.equal(resources[0].getSource(), "Care team");
+        test.equal(resources[0].getKey(), "Care team");
+        test.equal(resources[0].getLocale(), "en-US");
+
+        test.equal(resources[1].getSource(), "Care team");
+        test.equal(resources[1].getKey(), "Care team");
+        test.equal(resources[1].getLocale(), "fr-FR");
+        
         test.done();
     }
 
