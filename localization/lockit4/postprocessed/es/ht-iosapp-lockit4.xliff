@@ -1273,7 +1273,7 @@
       </trans-unit>
       <trans-unit id="230" resname="Find a topic &#40;e.g. Lose weight&#41;" restype="string" datatype="x-objective-c">
         <source>Find a topic &#40;e.g. Lose weight&#41;</source>
-        <target>Encuentra un tema &#40;por ej.: Pérdida de peso&#41;</target>
+        <target state="accepted" >Encuentra un tema &#40;p. ej. meditación&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -1638,7 +1638,7 @@
     <body>
       <trans-unit id="305" resname="Find a topic &#40;e.g.: Lose weight&#41;   " restype="string" datatype="x-objective-c">
         <source>Find a topic &#40;e.g.: Lose weight&#41;</source>
-        <target>Encuentra un tema &#40;e.g.: Perder peso&#41;</target>
+        <target state="accepted">Encuentra un tema &#40;p. ej. meditación&#41;</target>
       </trans-unit>
     </body>
   </file>

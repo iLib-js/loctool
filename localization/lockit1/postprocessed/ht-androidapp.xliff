@@ -1346,7 +1346,7 @@
     <body>
       <trans-unit id="251" resname="r316110521" restype="string" datatype="java">
         <source>Feed</source>
-        <target>Alimentación</target>
+        <target state="accepted">Fuente</target>
       </trans-unit>
     </body>
   </file>
@@ -1394,7 +1394,7 @@
     <body>
       <trans-unit id="259" resname="r506108837" restype="string" datatype="java">
         <source>To-Do</source>
-        <target>Por hacer</target>
+        <target>Qué hacer</target>
       </trans-unit>
     </body>
   </file>
@@ -1987,7 +1987,7 @@
       </trans-unit>
       <trans-unit id="372" resname="r987877798" restype="string" datatype="java">
         <source>Checklists</source>
-        <target>Listas de comprobación</target>
+        <target state="accepted">Listados</target>
       </trans-unit>
     </body>
   </file>
@@ -2390,12 +2390,12 @@
       </trans-unit>
       <trans-unit id="445" resname="r781371042" restype="string" datatype="java">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">This means the gender of a patient</note>
       </trans-unit>
       <trans-unit id="446" resname="r809623071" restype="string" datatype="java">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
         <note annotates="source">This means the gender of a patient</note>
       </trans-unit>
     </body>
@@ -5208,7 +5208,7 @@
       </trans-unit>
       <trans-unit id="1032" resname="menu_feed" restype="string" datatype="x-android-resource">
         <source>Feed</source>
-        <target>Alimentación</target>
+        <target state="accepted">Fuente</target>
       </trans-unit>
       <trans-unit id="1033" resname="menu_profile" restype="string" datatype="x-android-resource">
         <source>Health Profile</source>
@@ -5220,11 +5220,11 @@
       </trans-unit>
       <trans-unit id="1035" resname="checklists" restype="string" datatype="x-android-resource">
         <source>Checklists</source>
-        <target>Listas de comprobación</target>
+        <target state="accepted">Listados</target>
       </trans-unit>
       <trans-unit id="1036" resname="toDo" restype="string" datatype="x-android-resource">
         <source>To-Do</source>
-        <target>Por hacer</target>
+        <target>Qué hacer</target>
       </trans-unit>
       <trans-unit id="1037" resname="consults_answers" restype="string" datatype="x-android-resource">
         <source>Consults and Answers</source>
@@ -7198,11 +7198,11 @@
       </trans-unit>
       <trans-unit id="1495" resname="male" restype="string" datatype="x-android-resource">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
       </trans-unit>
       <trans-unit id="1496" resname="female" restype="string" datatype="x-android-resource">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
       </trans-unit>
       <trans-unit id="1497" resname="collect_contact_header" restype="string" datatype="x-android-resource">
         <source>Contact Information</source>
@@ -8626,11 +8626,11 @@
       </trans-unit>
       <trans-unit id="1849" resname="insurance_form_male" restype="string" datatype="x-android-resource">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
       </trans-unit>
       <trans-unit id="1850" resname="insurance_form_female" restype="string" datatype="x-android-resource">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
       </trans-unit>
       <trans-unit id="1851" resname="insurance_form_gender_title" restype="string" datatype="x-android-resource">
         <source>Primary plan holder gender:</source>
@@ -9594,11 +9594,11 @@
       </trans-unit>
       <trans-unit id="2091" resname="text_Female" restype="string" datatype="x-android-resource">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
       </trans-unit>
       <trans-unit id="2092" resname="text_Male" restype="string" datatype="x-android-resource">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
       </trans-unit>
       <trans-unit id="2093" resname="text_Take_photo" restype="string" datatype="x-android-resource">
         <source>Take photo</source>

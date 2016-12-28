@@ -327,7 +327,7 @@
     <body>
       <trans-unit id="56" resname="Find a topic &#40;e.g.: Lose weight&#41;   " restype="string" datatype="x-objective-c">
         <source>Find a topic &#40;e.g.: Lose weight&#41;</source>
-        <target>Encuentra un tema &#40;e.g.: Perder peso&#41;</target>
+        <target state="accepted">Encuentra un tema &#40;p. ej. meditación&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -425,7 +425,7 @@
     <body>
       <trans-unit id="71" resname="agreed with %@&apos;s tip on %@" restype="string" datatype="x-objective-c">
         <source>agreed with %@&apos;s tip on %@</source>
-        <target>estuvo de acuercon con el tip de %@ sobre %@</target>
+        <target state="accepted">estuvo de acuerdo con el tip de %@ sobre %@</target>
       </trans-unit>
     </body>
   </file>
@@ -1307,7 +1307,7 @@
     <body>
       <trans-unit id="217" resname="Enter your question here" restype="string" datatype="x-objective-c">
         <source>Enter your question here</source>
-        <target>Ingresa tu pregunta aquí</target>
+        <target state="accepted">Ingresa tu pregunta al médico aquí</target>
       </trans-unit>
     </body>
   </file>
