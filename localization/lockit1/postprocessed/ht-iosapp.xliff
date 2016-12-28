@@ -359,7 +359,7 @@
       </trans-unit>
       <trans-unit id="WpN-ro-7NU.placeholder" resname="WpN-ro-7NU.placeholder" restype="string" datatype="x-xib">
         <source>Your email</source>
-        <target>Tu correo electrónico</target>
+        <target state="accepted">Tu email</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Your email&quot;; ObjectID = &quot;WpN-ro-7NU&quot;;</note>
       </trans-unit>
       <trans-unit id="aOn-rY-Luu.text" resname="aOn-rY-Luu.text" restype="string" datatype="x-xib">
@@ -433,7 +433,7 @@
       </trans-unit>
       <trans-unit id="WpN-ro-7NU.placeholder" resname="WpN-ro-7NU.placeholder" restype="string" datatype="x-xib">
         <source>Your email</source>
-        <target>Tu correo electrónico</target>
+        <target state="accepted">Tu email</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Your email&quot;; ObjectID = &quot;WpN-ro-7NU&quot;;</note>
       </trans-unit>
       <trans-unit id="aOn-rY-Luu.text" resname="aOn-rY-Luu.text" restype="string" datatype="x-xib">
@@ -8527,7 +8527,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Find a topic &#40;e.g.: Lose weight&#41;   " resname="Find a topic &#40;e.g.: Lose weight&#41;   " restype="string">
         <source>Find a topic &#40;e.g.: Lose weight&#41;</source>
-        <target>Encuentra un tema &#40;e.j. Meditación&#41;</target>
+        <target state="accepted">Encuentra un tema &#40;p. ej. meditación&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Find app by name or topic                     " resname="Find app by name or topic                     " restype="string">
@@ -11472,7 +11472,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Tap-in to find doctors and their insights" resname="Tap-in to find doctors and their insights" restype="string">
         <source>Tap-in to find doctors and their insights</source>
-        <target>Pulsa para encontrar doctores y sus perspicacias</target>
+        <target state="accepted">Encuentra doctores y sus perspicacias</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Tap-in your brief, descriptive question" resname="Tap-in your brief, descriptive question" restype="string">
@@ -11552,7 +11552,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Thank %@" resname="Thank %@" restype="string">
         <source>Thank %@</source>
-        <target>Agradecer a %@</target>
+        <target state="accepted">Agradecer</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Thank you for using HealthTap" resname="Thank you for using HealthTap" restype="string">
@@ -12545,7 +12545,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="Would you like to receive helpful, personalized health tips and reminders from %@ doctors?" resname="Would you like to receive helpful, personalized health tips and reminders from %@ doctors?" restype="string">
         <source>Would you like to receive helpful, personalized health tips and reminders from %@ doctors?</source>
-        <target>¿Te gustaría recibir tips y recordatorios de salud útiles y personalizados por parte de doctores de %@?</target>
+        <target state="accepted">¿Te gustaría recibir tips y recordatorios de salud útiles y personalizados por parte de %@ doctores?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Would you like to receive immediate alerts when a doctor responds to your message?" resname="Would you like to receive immediate alerts when a doctor responds to your message?" restype="string">
@@ -12848,7 +12848,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="Your email" resname="Your email" restype="string">
         <source>Your email</source>
-        <target>Tu correo electrónico</target>
+        <target state="accepted">Tu email</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Your email was updated. Going forward, please use %@ to log in." resname="Your email was updated. Going forward, please use %@ to log in." restype="string">
@@ -19849,7 +19849,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="IA3-pb-mer.placeholder" resname="IA3-pb-mer.placeholder" restype="string" datatype="x-xib">
         <source>Your email</source>
-        <target>Tu correo electrónico</target>
+        <target state="accepted">Tu email</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Your email&quot;; ObjectID = &quot;IA3-pb-mer&quot;;</note>
       </trans-unit>
       <trans-unit id="J1y-e9-olS.normalTitle" resname="J1y-e9-olS.normalTitle" restype="string" datatype="x-xib">

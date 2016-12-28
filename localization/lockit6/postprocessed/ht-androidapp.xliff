@@ -1470,7 +1470,7 @@
     <body>
       <trans-unit id="266" resname="r316110521" restype="string" datatype="java">
         <source>Feed</source>
-        <target>Feed</target>
+        <target state="accepted">Fuente</target>
       </trans-unit>
     </body>
   </file>
@@ -3327,12 +3327,12 @@
     <body>
       <trans-unit id="596" resname="r781371042" restype="string" datatype="java">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">This refers to the patient&apos;s gender</note>
       </trans-unit>
       <trans-unit id="597" resname="r809623071" restype="string" datatype="java">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
         <note annotates="source">This refers to the patient&apos;s gender</note>
       </trans-unit>
       <trans-unit id="598" resname="r796642698" restype="string" datatype="java">
@@ -4052,11 +4052,11 @@
       </trans-unit>
       <trans-unit id="750" resname="symptom_triage_phr_female" restype="string" datatype="x-android-resource">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
       </trans-unit>
       <trans-unit id="751" resname="symptom_triage_phr_male" restype="string" datatype="x-android-resource">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
       </trans-unit>
       <trans-unit id="752" resname="symptom_triage_tutorial_title" restype="string" datatype="x-android-resource">
         <source>Get started</source>
@@ -5570,7 +5570,7 @@
       </trans-unit>
       <trans-unit id="259" resname="r909283218" restype="string" datatype="java">
         <source>Can&apos;t find an application for SMS</source>
-        <target>没有找到为短信的应用程序</target>
+        <target>没有找到可以发送短信的应用程序</target>
       </trans-unit>
     </body>
   </file>
