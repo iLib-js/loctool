@@ -10,6 +10,7 @@ if (!YamlFile) {
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
     var WebProject =  require("../lib/WebProject.js");
+    var TranslationSet =  require("../lib/TranslationSet.js");
 }
 
 function diff(a, b) {
@@ -81,7 +82,7 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
+        	id: "ht-webapp12",
 			sourceLocale: "en-US",
         	resourceDirs: {
         		yml: "a/b"
@@ -121,7 +122,7 @@ module.exports = {
         test.expect(28);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
+        	id: "ht-webapp12",
 			sourceLocale: "en-US",
         	resourceDirs: {
         		yml: "a/b"
@@ -198,7 +199,7 @@ module.exports = {
         test.expect(28);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
+        	id: "ht-webapp12",
 			sourceLocale: "en-US",
         	resourceDirs: {
         		yml: "a/b"
@@ -277,7 +278,7 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
+        	id: "ht-webapp12",
 			sourceLocale: "en-US",
         	resourceDirs: {
         		yml: "a/b"
@@ -312,7 +313,7 @@ module.exports = {
         test.expect(14);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
+        	id: "ht-webapp12",
 			sourceLocale: "en-US",
         	resourceDirs: {
         		yml: "a/b"
@@ -363,7 +364,7 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
+        	id: "ht-webapp12",
 			sourceLocale: "en-US",
         	resourceDirs: {
         		yml: "a/b"
@@ -389,7 +390,7 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
+        	id: "ht-webapp12",
 			sourceLocale: "en-US",
         	resourceDirs: {
         		yml: "a/b"
@@ -782,7 +783,7 @@ module.exports = {
     	test.expect(20);
 
     	var p = new WebProject({
-    		id: "ht-iosapp",
+    		id: "ht-webapp12",
     		sourceLocale: "en-US",
     		resourceDirs: {
     			yml: "a/b"
@@ -843,7 +844,7 @@ module.exports = {
     	test.expect(4);
 
     	var p = new WebProject({
-    		id: "ht-iosapp",
+    		id: "ht-webapp12",
     		sourceLocale: "en-US",
     		resourceDirs: {
     			yml: "a/b"
@@ -885,7 +886,7 @@ module.exports = {
     	test.expect(4);
 
     	var p = new WebProject({
-    		id: "ht-iosapp",
+    		id: "ht-webapp12",
     		sourceLocale: "en-US",
     		resourceDirs: {
     			yml: "a/b"
@@ -927,7 +928,7 @@ module.exports = {
     	test.expect(4);
 
     	var p = new WebProject({
-    		id: "ht-iosapp",
+    		id: "ht-webapp12",
     		sourceLocale: "en-US",
     		resourceDirs: {
     			yml: "a/b"
@@ -969,7 +970,7 @@ module.exports = {
     	test.expect(4);
 
     	var p = new WebProject({
-    		id: "ht-iosapp",
+    		id: "ht-webapp12",
     		sourceLocale: "en-US",
     		resourceDirs: {
     			yml: "a/b"
@@ -1006,5 +1007,163 @@ module.exports = {
     	test.equal(r.length, 0);
 
     	test.done();
+    },
+    
+    testYamlFileLocalizeText: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+        }, "./testfiles");
+        
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+        
+        yml.parse(
+			'doctor_thanked_note_life_saved:\n' +
+			'  email_subject: \'%1, you’re saving lives!\'\n' +
+			'  subject: You’ve been thanked for saving a life!\n' +
+			'  body: “%1”\n' +
+			'  ctoa: View %1\n' +
+			'  push_data: You’ve saved a life! View %1\n' +
+			'  global_link: generic_link\n' +
+			'  setting_name: doctor_thanked_note_life_saved\n' +
+			'  daily_limit_exception_email: true\n'
+		);
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('%1, you’re saving lives!', "doctor_thanked_note_life_saved");
+        test.ok(r);
+        test.equal(r.getSource(), '%1, you’re saving lives!');
+        test.equal(r.getKey(), 'email_subject');
+        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+        
+        var translations = new TranslationSet();
+        translations.add(new ContextResourceString({
+        	project: "ht-webapp12",
+        	context: "doctor_thanked_note_life_saved",
+        	key: 'email_subject',
+        	source: '%1, vous sauvez des vides!',
+        	locale: "fr-FR"
+        }));
+
+        var actual = yml.localizeText(translations, "fr-FR");
+        
+        var expected =
+			'doctor_thanked_note_life_saved:\n' +
+			'  email_subject: \'%1, vous sauvez des vides!\'\n' +
+			'  subject: You’ve been thanked for saving a life!\n' +
+			'  body: “%1”\n' +
+			'  ctoa: View %1\n' +
+			'  push_data: You’ve saved a life! View %1\n' +
+			'  global_link: generic_link\n' +
+			'  setting_name: doctor_thanked_note_life_saved\n' +
+			'  daily_limit_exception_email: true\n';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        
+        test.done();
+    },
+    
+    testYamlFileLocalizeTextMultiple: function(test) {
+        test.expect(15);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+        }, "./testfiles");
+        
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+        
+        yml.parse(
+			'doctor_thanked_note_life_saved:\n' +
+			'  email_subject: \'%1, you’re saving lives!\'\n' +
+			'  subject: You’ve been thanked for saving a life!\n' +
+			'  body: “%1”\n' +
+			'  ctoa: View %1\n' +
+			'  push_data: You’ve saved a life! View %1\n' +
+			'  global_link: generic_link\n' +
+			'  setting_name: doctor_thanked_note_life_saved\n' +
+			'  daily_limit_exception_email: true\n'
+		);
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('%1, you’re saving lives!', "doctor_thanked_note_life_saved");
+        test.ok(r);
+        test.equal(r.getSource(), '%1, you’re saving lives!');
+        test.equal(r.getKey(), 'email_subject');
+        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+        
+        r = set.getBySource('You’ve been thanked for saving a life!', "doctor_thanked_note_life_saved");
+        test.ok(r);
+        test.equal(r.getSource(), 'You’ve been thanked for saving a life!');
+        test.equal(r.getKey(), 'subject');
+        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+
+        r = set.getBySource('You’ve saved a life! View %1', "doctor_thanked_note_life_saved");
+        test.ok(r);
+        test.equal(r.getSource(), 'You’ve saved a life! View %1');
+        test.equal(r.getKey(), 'push_data');
+        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+        
+        var translations = new TranslationSet();
+        translations.addAll([
+        	new ContextResourceString({
+	        	project: "ht-webapp12",
+	        	context: "doctor_thanked_note_life_saved",
+	        	key: 'email_subject',
+	        	source: '%1, vous sauvez des vies!',
+	        	locale: "fr-FR"
+	        }),
+        	new ContextResourceString({
+	        	project: "ht-webapp12",
+	        	context: "doctor_thanked_note_life_saved",
+	        	key: 'subject',
+	        	source: 'Vous avez été remercié pour sauver une vie!',
+	        	locale: "fr-FR"
+	        }),
+        	new ContextResourceString({
+	        	project: "ht-webapp12",
+	        	context: "doctor_thanked_note_life_saved",
+	        	key: 'push_data',
+	        	source: 'Vous avez sauvé une vie! Voir %1',
+	        	locale: "fr-FR"
+	        }),
+	    ]);
+
+        var actual = yml.localizeText(translations, "fr-FR");
+        
+        var expected =
+			'doctor_thanked_note_life_saved:\n' +
+			'  email_subject: \'%1, vous sauvez des vies!\'\n' +
+			'  subject: Vous avez été remercié pour sauver une vie!\n' +
+			'  body: “%1”\n' +
+			'  ctoa: View %1\n' +
+			'  push_data: Vous avez sauvé une vie! Voir %1\n' +
+			'  global_link: generic_link\n' +
+			'  setting_name: doctor_thanked_note_life_saved\n' +
+			'  daily_limit_exception_email: true\n';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        
+        test.done();
     }
 };
