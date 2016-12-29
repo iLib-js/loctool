@@ -26,6 +26,22 @@ describe 'HamlLocalizer' do
       expect(ret.include?('FOO')).to be_truthy
     end
 
+    it 'should include html tags' do
+      # from _terms.html.haml
+      orig = " %p <strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement between you and HealthTap Inc. (\"HealthTap\"). There are rules you agree to follow when using our mobile applications and websites (the \"Apps\"), including when you ask questions and when you view or input content on or into the Apps, and they are contained in these TOU. The <a href=\"/terms/privacy_statement\">HealthTap Privacy Statement</a> is officially part of these TOU even though it's a separate document."
+      from_to = {'<strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement' => 'FOO'}
+      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
+    it 'should not break strings on self-closed html tags' do
+      # from _footer_static_v2.html.haml
+      orig = "            HealthTap does not provide medical advice, diagnosis, or treatment. <br />For these services, please use\n      HealthTap Prime or HealthTap Concierge."
+      from_to = {'HealthTap does not provide medical advice, diagnosis, or treatment. <br />For these services' => 'FOO'}
+      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
     it 'should work' do
       # from investors.html.haml
       orig = "        <span class='ht-name' >HealthTap</span> is supported by world-class investors, advisors, and experienced company builders who have helped create, "
