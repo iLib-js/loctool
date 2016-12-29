@@ -35,14 +35,8 @@ function addUnits(unit) {
 	if (!units[unit.targetLocale]) {
 		units[unit.targetLocale] = {};
 	}
-	if (!units[unit.targetLocale][unit.project]) {
-		units[unit.targetLocale][unit.project] = {};
-	}
-	if (!units[unit.targetLocale][unit.project][unit.context || "default"]) {
-		units[unit.targetLocale][unit.project][unit.context || "default"] = {};
-	}
 	
-	units[unit.targetLocale][unit.project][unit.context || "default"][unit.source] = unit;
+	units[unit.targetLocale][unit.source] = unit.target;
 }
 
 webunits.forEach(addUnits);
@@ -71,27 +65,14 @@ web = android = ios = feelgood = undefined;
 			console.log("Sharing translations ...");
 					
 			newunits.forEach(function(unit) {
-				var found = false;
-				for (var projName in units[locale]) {
-					for (var contextName in units[locale][projName]) {
-						var context = units[locale][projName][contextName];
-						if (context && context[unit.source] && context[unit.source].target) {
-							var other = context[unit.source];
-							var newunit = unit.clone();
-							newunit.target = other.target;
-							newunit.targetLocale = other.targetLocale;
-							newunit.state = "translated";
-							shared.addTranslationUnit(newunit);
-							found = true;
-							console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
-							break;
-						}
-					}
-				}
-				if (!found) {
-					if (unit.target) {
-						console.log("oh oh!");
-					}
+				if (units[locale][unit.source]) {
+					var newunit = unit.clone();
+					newunit.target = units[locale][unit.source];
+					newunit.targetLocale = locale;
+					newunit.state = "translated";
+					shared.addTranslationUnit(newunit);
+					console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
+				} else {
 					console.log("Found untranslated string.");
 					untranslated.addTranslationUnit(unit);
 				}
