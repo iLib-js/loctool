@@ -24840,7 +24840,7 @@ forma, incluyendo pero no limitando a publicar Contenido a HealthTap como Expert
       </trans-unit>
       <trans-unit id="11040" resname="r641688898" restype="string" datatype="x-haml">
         <source>tab</source>
-        <target state="accepted">“Pregunta al Doctor”</target>
+        <target state="accepted">Pregunta al Doctor</target>
       </trans-unit>
       <trans-unit id="11041" resname="r395233501" restype="string" datatype="x-haml">
         <source>and get unlimited, immediate doctor consults 24/7</source>
