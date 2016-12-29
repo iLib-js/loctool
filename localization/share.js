@@ -9,18 +9,8 @@ var path = require("path");
 var Xliff = require("../lib/Xliff.js");
 var TranslationUnit = Xliff.TranslationUnit;
 
-var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
-var ContextResourceString = require("../lib/ContextResourceString.js");
-
-var ResourceString = require("../lib/ResourceString.js");
-var TranslationSet = require("../lib/TranslationSet.js");
-var ResourceFactory = require("../lib/ResourceFactory.js");
-
-var WebProject = require("../lib/WebProject.js");
-var AndroidProject = require("../lib/AndroidProject.js");
-var ObjectiveCProject = require("../lib/ObjectiveCProject.js");
-
 console.log("Reading all xliffs...");
+
 var web = new Xliff({pathName: "./current/ht-webapp12.xliff"});
 web.deserialize(fs.readFileSync("./current/ht-webapp12.xliff", "utf-8"));
 var android = new Xliff({pathName: "./current/ht-androidapp.xliff"});
@@ -30,7 +20,7 @@ ios.deserialize(fs.readFileSync("./current/ht-iosapp.xliff", "utf-8"));
 var feelgood = new Xliff({pathName: "./current/feelgood-video-chats_lib.xliff"});
 feelgood.deserialize(fs.readFileSync("./current/feelgood-video-chats_lib.xliff", "utf-8"));
 
-log4js.configure(path.dirname(module.filename) + '/../log4js.json');
+log4js.configure(path.join(path.dirname(module.filename), '..', 'log4js.json'));
 
 console.log("Organizing the translation units");
 
@@ -90,6 +80,7 @@ web = android = ios = feelgood = undefined;
 							var newunit = unit.clone();
 							newunit.target = other.target;
 							newunit.targetLocale = other.targetLocale;
+							newunit.state = "translated";
 							shared.addTranslationUnit(newunit);
 							found = true;
 							console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
