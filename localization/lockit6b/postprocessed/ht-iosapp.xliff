@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="4" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivitis\n\\n    \u00B7 Acute Cystitis\n\\n    \u00B7 Acute Pharyngitis\n\\n    \u00B7 Acute Sinusitis\n\\n    \u00B7 Allergies\n\\n    \u00B7 Asthma &#40;stable / non-emergency&#41;\n\\n    \u00B7 Athlete’s Foot\n\\n    \u00B7 Back Pain\n\\n    \u00B7 Bee Sting\n\\n    \u00B7 Bladder infections\n\\n    \u00B7 Cellulitis &#40;skin infection&#41;\n\\n    \u00B7 Cold\n\\n    \u00B7 Cough\n\\n    \u00B7 Depression\n\\n    \u00B7 Diarrhea\n\\n    \u00B7 Dry Scalp\n\\n    \u00B7 Dry Skin &#40;Eczema&#41;\n\\n    \u00B7 Eye Irritation\n\\n    \u00B7 Fever\n\\n    \u00B7 Genital Lesions\n\\n    \u00B7 Hay Fever\n\\n    \u00B7 Headache\n\\n    \u00B7 Heartburn &#40;Gastroesophageal Reflux Disease, or GERD&#41;\n\\n    \u00B7 Influenza\n\\n    \u00B7 Lab Interpretation\n\\n    \u00B7 Lice\n\\n    \u00B7 Nasal Congestion\n\\n    \u00B7 Nausea\n\\n    \u00B7 Nosebleed\n\\n    \u00B7 Painful Urination\n\\n    \u00B7 Pink Eye\n\\n    \u00B7 Poison Oak / Poison Ivy\n\\n    \u00B7 Rash\n\\n    \u00B7 Respiratory Infection\n\\n    \u00B7 Rolled Ankle\n\\n    \u00B7 Scabies\n\\n    \u00B7 Seborrheic Dermatitis &#40;Dry Scalp&#41;\n\\n    \u00B7 Skin Infection\n\\n    \u00B7 Sports Injuries\n\\n    \u00B7 Strep Throat\n\\n    \u00B7 Travel Medicine\n\\n    \u00B7 Upper Respiratory Infection\n\\n    \u00B7 Urinary Tract Infection\n\\n    \u00B7 Vaginal Itching\n\\n    \u00B7 Yeast Infection\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication &#40;narcotics&#41;\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\\n    \u00B7 Consults in languages other than English\n\\n    \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
+        <source>Common reasons to use Virtual Consults\n\
+    \u00B7 Abdominal Pain\n\
+    \u00B7 Acute Bronchitis\n\
+    \u00B7 Acute Conjunctivitis\n\
+    \u00B7 Acute Cystitis\n\
+    \u00B7 Acute Pharyngitis\n\
+    \u00B7 Acute Sinusitis\n\
+    \u00B7 Allergies\n\
+    \u00B7 Asthma &#40;stable / non-emergency&#41;\n\
+    \u00B7 Athlete’s Foot\n\
+    \u00B7 Back Pain\n\
+    \u00B7 Bee Sting\n\
+    \u00B7 Bladder infections\n\
+    \u00B7 Cellulitis &#40;skin infection&#41;\n\
+    \u00B7 Cold\n\
+    \u00B7 Cough\n\
+    \u00B7 Depression\n\
+    \u00B7 Diarrhea\n\
+    \u00B7 Dry Scalp\n\
+    \u00B7 Dry Skin &#40;Eczema&#41;\n\
+    \u00B7 Eye Irritation\n\
+    \u00B7 Fever\n\
+    \u00B7 Genital Lesions\n\
+    \u00B7 Hay Fever\n\
+    \u00B7 Headache\n\
+    \u00B7 Heartburn &#40;Gastroesophageal Reflux Disease, or GERD&#41;\n\
+    \u00B7 Influenza\n\
+    \u00B7 Lab Interpretation\n\
+    \u00B7 Lice\n\
+    \u00B7 Nasal Congestion\n\
+    \u00B7 Nausea\n\
+    \u00B7 Nosebleed\n\
+    \u00B7 Painful Urination\n\
+    \u00B7 Pink Eye\n\
+    \u00B7 Poison Oak / Poison Ivy\n\
+    \u00B7 Rash\n\
+    \u00B7 Respiratory Infection\n\
+    \u00B7 Rolled Ankle\n\
+    \u00B7 Scabies\n\
+    \u00B7 Seborrheic Dermatitis &#40;Dry Scalp&#41;\n\
+    \u00B7 Skin Infection\n\
+    \u00B7 Sports Injuries\n\
+    \u00B7 Strep Throat\n\
+    \u00B7 Travel Medicine\n\
+    \u00B7 Upper Respiratory Infection\n\
+    \u00B7 Urinary Tract Infection\n\
+    \u00B7 Vaginal Itching\n\
+    \u00B7 Yeast Infection\n\n\
+    When not to use Virtual Consults\n\n\
+    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\
+    \u00B7 Chest pain or pressure\n\
+    \u00B7 Convulsions or seizures\n\
+    \u00B7 Difficulty breathing\n\
+    \u00B7 Mental health /  behavioral health / addiction issues\n\
+    \u00B7 Moderate to severe burns\n\
+    \u00B7 Pain medication &#40;narcotics&#41;\n\
+    \u00B7 Poisoning\n\
+    \u00B7 Serious head, neck, or back injury\n\
+    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\
+    \u00B7 Significant, uncontrolled bleeding\n\
+    \u00B7 Suicide ideation\n\
+    \u00B7 Unconsciousness\n\
+    \u00B7 Any other critical or life-threatening situation\n\n\
+    What not to expect\n\n\
+    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\
+    \u00B7 Any prescriptions for medications that are restricted by individual states\n\
+    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
+    \u00B7 Consults in languages other than English\n\
+    \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
+        <target state="translated">Razones comunes para usar Consultar Virtuales\n\
+    \u00B7 Dolor Abdominal\n\
+    \u00B7 Bronquitis Aguda\n\
+    \u00B7 Conjuntivitis Aguda\n\
+    \u00B7 Cistitis Aguda\n\
+    \u00B7 Faringitis Aguda\n\
+    \u00B7 Sinusitis Aguda\n\
+    \u00B7 Alergias\n\
+    \u00B7 Asma &#40;estable / no de emergencia&#41;\n\
+    \u00B7 Pie de Atleta\n\
+    \u00B7 Dolor de Espalda\n\
+    \u00B7 Picadura de Abeja\n\
+    \u00B7 Cistitis\n\
+    \u00B7 Celulitis &#40;infección de piel&#41;\n\
+    \u00B7 Resfriado\n\
+    \u00B7 Tos\n\
+    \u00B7 Depresión\n\
+    \u00B7 Diarrea\n\
+    \u00B7 Cuero Cabelludo Seco\n\
+    \u00B7 Piel Seca &#40;Eczema&#41;\n\
+    \u00B7 Irritación Ocular\n\
+    \u00B7 Fiebre\n\
+    \u00B7 Lesiones Genitales\n\
+    \u00B7 Fiebre de Heno\n\
+    \u00B7 Dolor de Cabeza\n\
+    \u00B7 Acidez &#40;Enfermedad de Reflujo Gastroesofágico o ERGE&#41;\n\
+    \u00B7 Influenza\n\
+    \u00B7 Interpretación de Pruebas de Laboratorio\n\
+    \u00B7 Piojos\n\
+    \u00B7 Congestión Nasal\n\
+    \u00B7 Nausea\n\
+    \u00B7 Hemorragia Nasal\n\
+    \u00B7 Micción Dolorosa\n\
+    \u00B7 Conjuntivitis\n\
+    \u00B7 Roble Venenoso / Hiedra Venenosa\n\
+    \u00B7 Sarpullido\n\
+    \u00B7 Infección Respiratoria\n\
+    \u00B7 Tobillo Torcido\n\
+    \u00B7 Sarna\n\
+    \u00B7 Dermatitis Seborreica &#40;Cuero Cabelludo Seco&#41;\n\
+    \u00B7 Infección de Piel\n\
+    \u00B7 Lesiones Deportivas\n\
+    \u00B7 Faringitis Estreptocócica\n\
+    \u00B7 Medicina de Viaje\n\
+    \u00B7 Infección de Vías Respiratorias Altas\n\
+    \u00B7 Infección de Vías Urinarias\n\
+    \u00B7 Comezón Vaginal\n\
+    \u00B7 Infección por Hongos\n\n\
+    Cuándo no usar Consultas Virtuales\n\n\
+    Siempre llama al %@ o a tu servicio de emergencia local inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, dirígete inmediatamente a un %@:\n\n\
+    \u00B7 Dolor o presión en pecho\n\
+    \u00B7 Convulsiones\n\
+    \u00B7 Dificultad para respirar\n\
+    \u00B7 Problemas de salud mental / salud conductual / adicción\n\
+    \u00B7 Quemaduras moderadas a severas\n\
+    \u00B7 Medicamento para el dolor &#40;narcóticos&#41;\n\
+    \u00B7 Envenenamiento\n\
+    \u00B7 Lesión grave en la cabeza, cuello o espalda\n\
+    \u00B7 Deficiencia grave de extremidades o hueso&#40;s&#41; roto&#40;s&#41;\n\
+    \u00B7 Hemorragia significativa y descontrolada\n\
+    \u00B7 Ideación suicida\n\
+    \u00B7 Pérdida del conocimiento\n\
+    \u00B7 Cualquier otra situación crítica o que atente contra la vida
+    Qué no esperar\n\n\
+    \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration, Agencia Federal Antidrogas&#41; &#40;Categoría I, II, III, IV&#41;\n\
+    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
+    \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida &#40;por ejemplo, fármacos para dietas o para disfunción eréctil&#41;\n\
+    \u00B7 Consultas en idiomas que no sea el inglés\n\
+    \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje &#40;considera consultas de video con médicos disponibles para una atención más rápida&#41;</target>
+      </trans-unit>
+      <trans-unit id="5" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivistis\n\\n    \u00B7 Acute Cystitis\n\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication &#40;narcotics&#41;\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\\n    \u00B7 Consults in languages other than English\n\\n                           \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
+        <source>Common reasons to use Virtual Consults\n\
+    \u00B7 Abdominal Pain\n\
+    \u00B7 Acute Bronchitis\n\
+    \u00B7 Acute Conjunctivistis\n\
+    \u00B7 Acute Cystitis\n\n\n\
+    When not to use Virtual Consults\n\n\
+    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\
+    \u00B7 Chest pain or pressure\n\
+    \u00B7 Convulsions or seizures\n\
+    \u00B7 Difficulty breathing\n\
+    \u00B7 Mental health /  behavioral health / addiction issues\n\
+    \u00B7 Moderate to severe burns\n\
+    \u00B7 Pain medication &#40;narcotics&#41;\n\
+    \u00B7 Poisoning\n\
+    \u00B7 Serious head, neck, or back injury\n\
+    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\
+    \u00B7 Significant, uncontrolled bleeding\n\
+    \u00B7 Suicide ideation\n\
+    \u00B7 Unconsciousness\n\
+    \u00B7 Any other critical or life-threatening situation\n\n\
+    What not to expect\n\n\
+    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\
+    \u00B7 Any prescriptions for medications that are restricted by individual states\n\
+    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
+    \u00B7 Consults in languages other than English\n\
+                           \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
+        <target state="translated">Razones comunes para usar Consultar Virtuales\n\
+    \u00B7 Dolor Abdominal\n\
+    \u00B7 Bronquitis Aguda\n\
+    \u00B7 Conjuntivitis Aguda\n\
+    \u00B7 Cistitis Aguda\n\
+    Cuándo no usar Consultas Virtuales\n\n\
+    Siempre llama al %@ o a tu servicio de emergencia local inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, dirígete inmediatamente a un %@:\n\n\
+    \u00B7 Dolor o presión en pecho\n\
+    \u00B7 Convulsiones\n\
+    \u00B7 Dificultad para respirar\n\
+    \u00B7 Problemas de salud mental / salud conductual / adicción\n\
+    \u00B7 Quemaduras moderadas a severas\n\
+    \u00B7 Medicamento para el dolor &#40;narcóticos&#41;\n\
+    \u00B7 Envenenamiento\n\
+    \u00B7 Lesión grave en la cabeza, cuello o espalda\n\
+    \u00B7 Deficiencia grave de extremidades o hueso&#40;s&#41; roto&#40;s&#41;\n\
+    \u00B7 Hemorragia significativa y descontrolada\n\
+    \u00B7 Ideación suicida\n\
+    \u00B7 Pérdida del conocimiento\n\
+    \u00B7 Cualquier otra situación crítica o que atente contra la vida
+    Qué no esperar\n\n\
+    \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration, Agencia Federal Antidrogas&#41; &#40;Categoría I, II, III, IV&#41;\n\
+    \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
+    \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida &#40;por ejemplo, fármacos para dietas o para disfunción eréctil&#41;\n\
+    \u00B7 Consultas en idiomas que no sea el inglés\n\
+                           \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje &#40;considera consultas de video con médicos disponibles para una atención más rápida&#41;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="4" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivitis\n\\n    \u00B7 Acute Cystitis\n\\n    \u00B7 Acute Pharyngitis\n\\n    \u00B7 Acute Sinusitis\n\\n    \u00B7 Allergies\n\\n    \u00B7 Asthma &#40;stable / non-emergency&#41;\n\\n    \u00B7 Athlete’s Foot\n\\n    \u00B7 Back Pain\n\\n    \u00B7 Bee Sting\n\\n    \u00B7 Bladder infections\n\\n    \u00B7 Cellulitis &#40;skin infection&#41;\n\\n    \u00B7 Cold\n\\n    \u00B7 Cough\n\\n    \u00B7 Depression\n\\n    \u00B7 Diarrhea\n\\n    \u00B7 Dry Scalp\n\\n    \u00B7 Dry Skin &#40;Eczema&#41;\n\\n    \u00B7 Eye Irritation\n\\n    \u00B7 Fever\n\\n    \u00B7 Genital Lesions\n\\n    \u00B7 Hay Fever\n\\n    \u00B7 Headache\n\\n    \u00B7 Heartburn &#40;Gastroesophageal Reflux Disease, or GERD&#41;\n\\n    \u00B7 Influenza\n\\n    \u00B7 Lab Interpretation\n\\n    \u00B7 Lice\n\\n    \u00B7 Nasal Congestion\n\\n    \u00B7 Nausea\n\\n    \u00B7 Nosebleed\n\\n    \u00B7 Painful Urination\n\\n    \u00B7 Pink Eye\n\\n    \u00B7 Poison Oak / Poison Ivy\n\\n    \u00B7 Rash\n\\n    \u00B7 Respiratory Infection\n\\n    \u00B7 Rolled Ankle\n\\n    \u00B7 Scabies\n\\n    \u00B7 Seborrheic Dermatitis &#40;Dry Scalp&#41;\n\\n    \u00B7 Skin Infection\n\\n    \u00B7 Sports Injuries\n\\n    \u00B7 Strep Throat\n\\n    \u00B7 Travel Medicine\n\\n    \u00B7 Upper Respiratory Infection\n\\n    \u00B7 Urinary Tract Infection\n\\n    \u00B7 Vaginal Itching\n\\n    \u00B7 Yeast Infection\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication &#40;narcotics&#41;\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\\n    \u00B7 Consults in languages other than English\n\\n    \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
+        <source>Common reasons to use Virtual Consults\n\
+    \u00B7 Abdominal Pain\n\
+    \u00B7 Acute Bronchitis\n\
+    \u00B7 Acute Conjunctivitis\n\
+    \u00B7 Acute Cystitis\n\
+    \u00B7 Acute Pharyngitis\n\
+    \u00B7 Acute Sinusitis\n\
+    \u00B7 Allergies\n\
+    \u00B7 Asthma &#40;stable / non-emergency&#41;\n\
+    \u00B7 Athlete’s Foot\n\
+    \u00B7 Back Pain\n\
+    \u00B7 Bee Sting\n\
+    \u00B7 Bladder infections\n\
+    \u00B7 Cellulitis &#40;skin infection&#41;\n\
+    \u00B7 Cold\n\
+    \u00B7 Cough\n\
+    \u00B7 Depression\n\
+    \u00B7 Diarrhea\n\
+    \u00B7 Dry Scalp\n\
+    \u00B7 Dry Skin &#40;Eczema&#41;\n\
+    \u00B7 Eye Irritation\n\
+    \u00B7 Fever\n\
+    \u00B7 Genital Lesions\n\
+    \u00B7 Hay Fever\n\
+    \u00B7 Headache\n\
+    \u00B7 Heartburn &#40;Gastroesophageal Reflux Disease, or GERD&#41;\n\
+    \u00B7 Influenza\n\
+    \u00B7 Lab Interpretation\n\
+    \u00B7 Lice\n\
+    \u00B7 Nasal Congestion\n\
+    \u00B7 Nausea\n\
+    \u00B7 Nosebleed\n\
+    \u00B7 Painful Urination\n\
+    \u00B7 Pink Eye\n\
+    \u00B7 Poison Oak / Poison Ivy\n\
+    \u00B7 Rash\n\
+    \u00B7 Respiratory Infection\n\
+    \u00B7 Rolled Ankle\n\
+    \u00B7 Scabies\n\
+    \u00B7 Seborrheic Dermatitis &#40;Dry Scalp&#41;\n\
+    \u00B7 Skin Infection\n\
+    \u00B7 Sports Injuries\n\
+    \u00B7 Strep Throat\n\
+    \u00B7 Travel Medicine\n\
+    \u00B7 Upper Respiratory Infection\n\
+    \u00B7 Urinary Tract Infection\n\
+    \u00B7 Vaginal Itching\n\
+    \u00B7 Yeast Infection\n\n\
+    When not to use Virtual Consults\n\n\
+    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\
+    \u00B7 Chest pain or pressure\n\
+    \u00B7 Convulsions or seizures\n\
+    \u00B7 Difficulty breathing\n\
+    \u00B7 Mental health /  behavioral health / addiction issues\n\
+    \u00B7 Moderate to severe burns\n\
+    \u00B7 Pain medication &#40;narcotics&#41;\n\
+    \u00B7 Poisoning\n\
+    \u00B7 Serious head, neck, or back injury\n\
+    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\
+    \u00B7 Significant, uncontrolled bleeding\n\
+    \u00B7 Suicide ideation\n\
+    \u00B7 Unconsciousness\n\
+    \u00B7 Any other critical or life-threatening situation\n\n\
+    What not to expect\n\n\
+    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\
+    \u00B7 Any prescriptions for medications that are restricted by individual states\n\
+    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
+    \u00B7 Consults in languages other than English\n\
+    \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
+        <target state="translated">在线咨询的常见问题：
+\u00B7 腹部疼痛\n\
+\u00B7 急性支气管炎\n\
+\u00B7 急性结膜炎\n\
+\u00B7 急性膀胱炎\n\
+\u00B7 急性咽炎\n\
+\u00B7 急性鼻窦炎\n\
+\u00B7 过敏\n\
+\u00B7 哮喘（稳定/非紧急）\n\
+\u00B7 脚气\n\
+\u00B7 背疼\n\
+\u00B7 蜜蜂蜇伤\n\
+\u00B7 膀胱感染\n\
+\u00B7 蜂窝织炎（皮肤感染）\n\
+\u00B7 感冒\n\
+\u00B7 咳嗽\n\
+\u00B7 抑郁症\n\
+\u00B7 腹泻\n\
+\u00B7 干头皮\n\
+\u00B7 干性皮肤（湿疹）\n\
+\u00B7 眼睛发炎\n\
+\u00B7 发烧\n\
+\u00B7 生殖器病变\n\
+\u00B7 花粉过敏\n\
+\u00B7 头痛\n\
+\u00B7 胃灼热（胃食管反流病或GERD）\n\
+\u00B7 流感\n\
+\u00B7 医疗检查单解释\n\
+\u00B7 虱子\n\
+\u00B7 鼻塞\n\
+\u00B7 恶心\n\
+\u00B7 鼻出血\n\
+\u00B7 尿疼痛\n\
+\u00B7 红眼病\n\
+\u00B7 毒橡树/毒藤\n\
+\u00B7 皮疹\n\
+\u00B7 呼吸道感染\n\
+\u00B7 脚踝扭伤\n\
+\u00B7 疥疮\n\
+\u00B7 脂溢性皮炎（干性皮炎）\n\
+\u00B7 皮肤感染\n\
+\u00B7 运动受伤\n\
+\u00B7 链球菌性喉炎\n\
+\u00B7 旅行医疗\n\
+\u00B7 上呼吸道感染\n\
+\u00B7 泌尿道感染\n\
+\u00B7 阴道瘙痒\n\
+\u00B7 酵母感染\n\n\何时不使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+     \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
+     \u00B7呼吸困难\n\
+     \u00B7心理健康/行为健康/上瘾问题\n\
+     \u00B7中度到重度烧伤\n\
+     \u00B7止痛药（毒品）\n\
+     \u00B7中毒\n\
+     \u00B7严重头部、颈部或背部损伤\n\
+     \u00B7严重肢体损伤或骨折\n\
+     \u00B7严重不能抑止的流血\n\
+     \u00B7自杀倾向\n\
+     \u00B7失去意识\n\
+     \u00B7任何其他危及生命的情况\n\
+     \u00B7请不要期待得到\n\
+     \u00B7任何毒品或美国特殊药品监督管理局控制的药物（一、二、三、四类药物）处方\n\
+     \u00B7任何各州禁止药物处方\n\
+     \u00B7任何精神病治疗药物或改变生活方式的药物处方（如：针对节食或勃起功能障碍的药物）\n\
+    \u00B7除英文外的其他语言咨询\n\
+    \u00B7电子邮件或信息咨询的立即回复（考虑到视频咨询会有相应医生更快回复）</target>
+      </trans-unit>
+      <trans-unit id="5" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivistis\n\\n    \u00B7 Acute Cystitis\n\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication &#40;narcotics&#41;\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\\n    \u00B7 Consults in languages other than English\n\\n                           \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
+        <source>Common reasons to use Virtual Consults\n\
+    \u00B7 Abdominal Pain\n\
+    \u00B7 Acute Bronchitis\n\
+    \u00B7 Acute Conjunctivistis\n\
+    \u00B7 Acute Cystitis\n\n\n\
+    When not to use Virtual Consults\n\n\
+    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\
+    \u00B7 Chest pain or pressure\n\
+    \u00B7 Convulsions or seizures\n\
+    \u00B7 Difficulty breathing\n\
+    \u00B7 Mental health /  behavioral health / addiction issues\n\
+    \u00B7 Moderate to severe burns\n\
+    \u00B7 Pain medication &#40;narcotics&#41;\n\
+    \u00B7 Poisoning\n\
+    \u00B7 Serious head, neck, or back injury\n\
+    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\
+    \u00B7 Significant, uncontrolled bleeding\n\
+    \u00B7 Suicide ideation\n\
+    \u00B7 Unconsciousness\n\
+    \u00B7 Any other critical or life-threatening situation\n\n\
+    What not to expect\n\n\
+    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\
+    \u00B7 Any prescriptions for medications that are restricted by individual states\n\
+    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
+    \u00B7 Consults in languages other than English\n\
+                           \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
+        <target state="translated">在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+     \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
+     \u00B7呼吸困难\n\
+     \u00B7心理健康/行为健康/上瘾问题\n\
+     \u00B7中度到重度烧伤\n\
+     \u00B7止痛药（毒品）\n\
+     \u00B7中毒\n\
+     \u00B7严重头部、颈部或背部损伤\n\
+     \u00B7严重肢体损伤或骨折\n\
+     \u00B7严重不能抑止的流血\n\
+     \u00B7自杀倾向\n\
+     \u00B7失去意识\n\
+     \u00B7任何其他危及生命的情况\n\
+     \u00B7请不要期待得到\n\
+     \u00B7任何毒品或美国特殊药品监督管理局控制的药物（一、二、三、四类药物）处方\n\
+     \u00B7任何各州禁止药物处方\n\
+     \u00B7任何精神病治疗药物或改变生活方式的药物处方（如：针对节食或勃起功能障碍的药物）\n\
+    \u00B7除英文外的其他语言咨询\n\
+    \u00B7电子邮件或信息咨询的立即回复（考虑到视频咨询会有相应医生更快回复）</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

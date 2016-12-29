@@ -9,18 +9,8 @@ var path = require("path");
 var Xliff = require("../lib/Xliff.js");
 var TranslationUnit = Xliff.TranslationUnit;
 
-var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
-var ContextResourceString = require("../lib/ContextResourceString.js");
-
-var ResourceString = require("../lib/ResourceString.js");
-var TranslationSet = require("../lib/TranslationSet.js");
-var ResourceFactory = require("../lib/ResourceFactory.js");
-
-var WebProject = require("../lib/WebProject.js");
-var AndroidProject = require("../lib/AndroidProject.js");
-var ObjectiveCProject = require("../lib/ObjectiveCProject.js");
-
 console.log("Reading all xliffs...");
+
 var web = new Xliff({pathName: "./current/ht-webapp12.xliff"});
 web.deserialize(fs.readFileSync("./current/ht-webapp12.xliff", "utf-8"));
 var android = new Xliff({pathName: "./current/ht-androidapp.xliff"});
@@ -30,7 +20,7 @@ ios.deserialize(fs.readFileSync("./current/ht-iosapp.xliff", "utf-8"));
 var feelgood = new Xliff({pathName: "./current/feelgood-video-chats_lib.xliff"});
 feelgood.deserialize(fs.readFileSync("./current/feelgood-video-chats_lib.xliff", "utf-8"));
 
-log4js.configure(path.dirname(module.filename) + '/../log4js.json');
+log4js.configure(path.join(path.dirname(module.filename), '..', 'log4js.json'));
 
 console.log("Organizing the translation units");
 
@@ -63,32 +53,6 @@ feelgoodunits.forEach(addUnits);
 // signal to the GC that these can be dropped
 web = android = ios = feelgood = undefined;
 
-function shareTrans(unit, locale) {
-	var found = false;
-	for (var project in units[locale]) {
-		for (var contextName in units[locale][project]) {
-			var context = units[locale][project][contextName];
-			if (context && context[unit.source]) {
-				var other = context[unit.source];
-				var newunit = unit.clone();
-				newunit.target = other.target;
-				newunit.targetLocale = other.targetLocale;
-				shared.addTranslationUnit(newunit);
-				found = true;
-				console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
-				break;
-			}
-		}
-	}
-	if (!found) {
-		if (unit.target) {
-			console.log("oh oh!");
-		}
-		console.log("Found untranslated string.");
-		untranslated.addTranslationUnit(unit);
-	}
-}
-
 ["ht-androidapp", "feelgood-video-chats_lib", "ht-iosapp", "ht-webapp12"].forEach(function(project) {
 	console.log("Reading the new strings for project " + project);
 	["es-US", "zh-Hans-CN"].forEach(function(locale) {
@@ -111,11 +75,12 @@ function shareTrans(unit, locale) {
 				for (var projName in units[locale]) {
 					for (var contextName in units[locale][projName]) {
 						var context = units[locale][projName][contextName];
-						if (context && context[unit.source]) {
+						if (context && context[unit.source] && context[unit.source].target) {
 							var other = context[unit.source];
 							var newunit = unit.clone();
 							newunit.target = other.target;
 							newunit.targetLocale = other.targetLocale;
+							newunit.state = "translated";
 							shared.addTranslationUnit(newunit);
 							found = true;
 							console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
@@ -146,6 +111,33 @@ function shareTrans(unit, locale) {
 }.bind(this));
 
 /*
+
+function shareTrans(unit, locale) {
+	var found = false;
+	for (var project in units[locale]) {
+		for (var contextName in units[locale][project]) {
+			var context = units[locale][project][contextName];
+			if (context && context[unit.source]) {
+				var other = context[unit.source];
+				var newunit = unit.clone();
+				newunit.target = other.target;
+				newunit.targetLocale = other.targetLocale;
+				shared.addTranslationUnit(newunit);
+				found = true;
+				console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
+				break;
+			}
+		}
+	}
+	if (!found) {
+		if (unit.target) {
+			console.log("oh oh!");
+		}
+		console.log("Found untranslated string.");
+		untranslated.addTranslationUnit(unit);
+	}
+}
+
 console.log("Reading ht-webapp12 new file ...");
 
 var androidnew = new Xliff({pathName: "./ht-webapp12-new.xliff"});
