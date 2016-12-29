@@ -174,9 +174,8 @@ def process_values(locale_mappings, values, unmapped_words)
   ret = {}
   values.each{|v|
     next if v.strip.length == 0
-    clean_w = v.gsub("\n", "")
-    hashed_key = create_hashed_key(clean_w)
-    formatted_key = clean_w.gsub(' ','_').capitalize
+    hashed_key = create_hashed_key(clean_string(v))
+    formatted_key = v.gsub('\n', '').gsub(' ','_').capitalize
     # puts "checking #{v} #{hashed_key} #{formatted_key}"
     # puts locale_mappings.keys.first(50).to_s
     # puts "got #{locale_mappings[v]} #{locale_mappings[hashed_key]} #{locale_mappings[formatted_key]}"
@@ -297,8 +296,7 @@ def produce_unmapped(file_to_words)
   file_to_words.each do |filename,words|
     child_hash = {}
     words.each{|w|
-      clean_w = w.gsub("\n", "");
-      child_hash[ create_hashed_key(clean_w) ] = clean_w
+      child_hash[ create_hashed_key(clean_string(w)) ] = w
     }
     h[filename] = child_hash unless child_hash.keys.count == 0
   end
@@ -318,6 +316,13 @@ def strip_whitespace(from_to)
     ret[k.strip] = v.strip
   }
   ret
+end
+
+# clean the source string so that whitespace and html changes do not matter
+# and two strings that have whitespace or html differences but the same
+# text get hashed to the same thing
+def clean_string(string)
+  string.gsub(/<(['"][^'"]*['"]|[^>])*>/, "").gsub(/\s+/, " ").strip
 end
 
 # from loctool/lib/JavaFile.js
