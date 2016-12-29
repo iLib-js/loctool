@@ -296,7 +296,7 @@ def produce_unmapped(file_to_words)
   file_to_words.each do |filename,words|
     child_hash = {}
     words.each{|w|
-      child_hash[ create_hashed_key(clean_string(w)) ] = w
+      child_hash[ create_hashed_key(clean_string(w)) ] = w.gsub("\n", "")
     }
     h[filename] = child_hash unless child_hash.keys.count == 0
   end
