@@ -5604,7 +5604,7 @@
     <body>
       <trans-unit id="1230" resname="r313742184" restype="string" datatype="ruby">
         <source>Ask Docs</source>
-        <target>¡Pregúnta!</target>
+        <target state="accepted">¡Pregúnta!</target>
       </trans-unit>
     </body>
   </file>
