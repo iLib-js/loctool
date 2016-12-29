@@ -20,7 +20,7 @@ ios.deserialize(fs.readFileSync("./current/ht-iosapp.xliff", "utf-8"));
 var feelgood = new Xliff({pathName: "./current/feelgood-video-chats_lib.xliff"});
 feelgood.deserialize(fs.readFileSync("./current/feelgood-video-chats_lib.xliff", "utf-8"));
 
-log4js.configure(path.join(path.dirname(module.filename), '..', 'log4js.json'));
+log4js.configure("../log4js.json");
 
 console.log("Organizing the translation units");
 
