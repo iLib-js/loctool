@@ -9911,7 +9911,6 @@
   </file>
   <file original="_version_12.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-<<<<<<< HEAD
       <trans-unit id="4893" resname="r714752003" restype="string" datatype="x-haml">
         <source>Unlimited Peace of Mind</source>
         <target>Paz Mental Ilimitada</target>
@@ -9935,15 +9934,9 @@
       <trans-unit id="6766" resname="r245890945" restype="string" datatype="x-haml">
         <source>Unlimited Peace</source>
         <target>Paz Mental</target>
-||||||| merged common ancestors
-      <trans-unit id="1230" resname="r313742184" restype="string" datatype="ruby">
-        <source>Ask Docs</source>
-        <target>Pregúntale a Docs</target>
-=======
       <trans-unit id="1230" resname="r313742184" restype="string" datatype="ruby">
         <source>Ask Docs</source>
         <target state="accepted">¡Pregúnta!</target>
->>>>>>> 603ac2ff710fd2ffb0f3d0eef22bd287e6ad0b54
       </trans-unit>
     </body>
   </file>
