@@ -42,6 +42,22 @@ describe 'HamlLocalizer' do
       expect(ret.include?('FOO')).to be_truthy
     end
 
+    it 'should not break strings on html entities' do
+      # from app/views/what_we_make/medical_expert_network.html.haml
+      orig = "      by doing what you do best &mdash; answering patient questions &mdash; through your Virtual Practice."
+      from_to = {'by doing what you do best &mdash; answering patient questions &mdash; through' => 'FOO'}
+      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
+    it 'should not break strings on html tags with ruby substitutions in them' do
+      # from app/views/what_we_make/medical_expert_network.html.haml
+      orig = "       Having broad online visibility is critical to creating a thriving practice, but it can be costly and confusing to set up and manage. With HealthTap, you get all of the benefits of an optimized website and a robust audience of patients for free. And your interactions on HealthTap are completely secure and safe in accordance with HIPAA standards. <a href=\"\#{new_expert_registration_path}\">Learn more &rsaquo;</a>"
+      from_to = {'Having broad online visibility is critical to creating a thriving practice, but it can be costly and confusing to set up and manage. With HealthTap, you get all of the benefits of an optimized website and a robust audience of patients for free. And your interactions on HealthTap are completely secure and safe in accordance with HIPAA standards. <a href=\"\#{new_expert_registration_path}\">Learn more &rsaquo;</a>' => 'FOO'}
+      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      expect(ret.include?('FOO')).to be_truthy
+    end
+    
     it 'should work' do
       # from investors.html.haml
       orig = "        <span class='ht-name' >HealthTap</span> is supported by world-class investors, advisors, and experienced company builders who have helped create, "
