@@ -724,5 +724,58 @@ module.exports = {
         test.ok(r instanceof ContextResourceString);
         
         test.done();
+    },
+    
+    testYamlResourceFileGetContentDontUseSourceHash: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+        
+        var yml = new YamlResourceFile({
+        	project: p, 
+        	pathName: "./zh.yml",
+        	locale: "zh-Hans-CN"
+        });
+        test.ok(yml);
+        
+        [
+        	new ContextResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "r24524524524",
+        		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
+        		comment: " ",
+        		sourceHash: "r4352345234"
+        	}),
+        	new ContextResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "r003425245",
+        		source: "short text",
+        		comment: "bar",
+        		sourceHash: "r8437477345"
+        	})
+        ].forEach(function(res) {
+        	yml.addResource(res);
+        });
+        
+        var actual = yml.getContent();
+        var expected =
+	    	"zh_Hans_CN:\n" +
+	    	"  r24524524524: |-\n" +
+	    	"    this is text that is relatively long and can run past the end of the page\n" +
+	    	"    So, we put a new line in the middle of it.\n" +
+	    	"  r003425245: short text\n";
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        
+        test.done();
     }
 };
