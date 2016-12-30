@@ -2295,7 +2295,7 @@
       </trans-unit>
       <trans-unit id="2293" resname="r543125333" restype="string" datatype="ruby">
         <source>Lives saved</source>
-        <target>挽救了生命/生活</target>
+        <target state="accepted">条生命被挽救</target>
       </trans-unit>
     </body>
   </file>
