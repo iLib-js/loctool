@@ -25734,7 +25734,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4727" resname="is licensed to see patients from &lt;%= feelGood.joinSentenceList&#40;licensed_states&#41; %&gt;." restype="string" datatype="html">
         <source>is licensed to see patients from &lt;%= feelGood.joinSentenceList&#40;licensed_states&#41; %&gt;.</source>
-        <target>授权从 &lt;%= feelGood.joinSentenceList&#40;licensed_states&#41; %&gt;.查看患者</target>
+        <target state="accepted">有看 &lt;%= feelGood.joinSentenceList&#40;licensed_states&#41; %&gt;.州患者的执照</target>
       </trans-unit>
       <trans-unit id="6167" resname="Please confirm your current location" restype="string" datatype="html">
         <source>Please confirm your current location</source>
