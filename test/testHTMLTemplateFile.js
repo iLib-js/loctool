@@ -111,7 +111,7 @@ module.exports = {
         var set = htf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ResourceString.hashKey(undefined, "en-US", "This is a test"));
+        var r = set.get(ResourceString.hashKey(undefined, "en-US", "This is a test", "html"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
