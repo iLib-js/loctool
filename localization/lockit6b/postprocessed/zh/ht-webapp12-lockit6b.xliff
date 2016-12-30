@@ -80,7 +80,7 @@
     <body>
       <trans-unit id="1024" resname="Remaining Prime Credit Balance:" restype="string" datatype="html">
         <source>Remaining Prime Credit Balance:</source>
-        <target state="translated">剩余贷款余额：</target>
+        <target state="accepted">Prime会员余额：</target>
       </trans-unit>
     </body>
   </file>
@@ -91,7 +91,7 @@
     	bold_tag_start: &apos;&lt;b&gt;&apos;,
     	bold_tag_end: &apos;&lt;/b&gt;&apos;
     }&#41;</source>
-        <target state="translated">RB.getStringJS&#40;除了现场虚拟咨询，您也会收到 {bold_tag_start}信箱咨询{bold_tag_end}.&apos;&lt;b&gt;&apos;,
+        <target state="accepted">RB.getStringJS&#40;除了实时在线咨询，您也会收到 {bold_tag_start}信箱咨询{bold_tag_end}.&apos;&lt;b&gt;&apos;,
     	bold_tag_end:&apos;&lt;/b&gt;&apos;
     }&#41;</target>
       </trans-unit>
