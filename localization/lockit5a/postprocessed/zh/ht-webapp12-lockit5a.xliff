@@ -4004,7 +4004,7 @@
     <body>
       <trans-unit id="5507" resname="r421139474" restype="string" datatype="x-haml">
         <source>Your Virtual Practice page is how users see you on HealthTap. It is the place where all of the expert content you create, Agree with, and curate appear. Your professional contact information and bio also appear here. This is the place to send existing and prospective patients to demonstrate your expertise.</source>
-        <target>您的虚拟实践页面是用户如何在HealthTap上看到您。这是您创建，同意和策展的所有专家内容出现的地方。您的专业联系信息和个人资料也出现在这里。这里是传送现有的和可能的患者以展示您的专业知识的地方</target>
+        <target>您的在线咨询页面是用户如何在HealthTap上看到您。这是您创建，同意和策展的所有专家内容出现的地方。您的专业联系信息和个人资料也出现在这里。这里是传送现有的和可能的患者以展示您的专业知识的地方</target>
       </trans-unit>
       <trans-unit id="5509" resname="r911785260" restype="string" datatype="x-haml">
         <source>Your statistics are a reflection of your engagement on HealthTap. Raising your stats raises your rank among your peers and enhances your Trust Score, which helps get you featured to new and existing patients.</source>
@@ -4052,7 +4052,7 @@
     <body>
       <trans-unit id="5520" resname="r388696234" restype="string" datatype="x-haml">
         <source>HealthTap’s new Publications feature expands the reach of your expertise.  Studies in peer-reviewed publications are now highlighted on HealthTap, directly from your Virtual Practice.  Your research will be highlighted to Members looking for related health information on HealthTap, and you can even add to the description of your work. Have comments on an existing study?  We’ve got you covered – add comments to the publications and even answer public questions or engage in private conversations with members about any study listed on HealthTap.</source>
-        <target>HealthTap的新出版物功能拓展了您的专业知识的范围。发表在同行评审出版物的研究现在突出显示在HealthTap上，直接在您的虚拟实践上可以看到。您的研究将突出显示给在HealthTap上寻找相关健康信息的会员，甚至您可以添加到您的工作描述中。对现有研究有评论吗？我们已经覆盖所有操作 - 向出版物添加评论，甚至回答公众问题，或与会员进行关于HealthTap上列出的任何研究的私人谈话。</target>
+        <target>HealthTap的新出版物功能拓展了您的专业知识的范围。发表在同行评审出版物的研究现在突出显示在HealthTap上，直接在您的在线咨询上可以看到。您的研究将突出显示给在HealthTap上寻找相关健康信息的会员，甚至您可以添加到您的工作描述中。对现有研究有评论吗？我们已经覆盖所有操作 - 向出版物添加评论，甚至回答公众问题，或与会员进行关于HealthTap上列出的任何研究的私人谈话。</target>
       </trans-unit>
     </body>
   </file>
@@ -7577,7 +7577,7 @@
       </trans-unit>
       <trans-unit id="10467" resname="r246075141" restype="string" datatype="x-haml">
         <source>As a HealthTap Medical Expert, you are required to register with and use your real name and &#40;if you choose to upload a picture&#41; a real image of you in your Virtual Practice.</source>
-        <target>作为HealthTap医疗专家，您需要在您的虚拟实践中注册并使用您的真实姓名和（如果您选择上传图片）真实的形象。</target>
+        <target>作为HealthTap医疗专家，您需要在您的在线咨询中注册并使用您的真实姓名和（如果您选择上传图片）真实的形象。</target>
       </trans-unit>
       <trans-unit id="10468" resname="r439626123" restype="string" datatype="x-haml">
         <source>Licensed doctors may apply to be and participate as Medical Experts on HealthTap. Physicians whose licenses are or become suspended or revoked, for any reason, are not permitted and agree not to participate in any way, including but not limited to submitting Content to HealthTap, as a Medical Expert on HealthTap.  HealthTap may expand the network to include other licensed medical experts.</source>
@@ -7585,7 +7585,7 @@
       </trans-unit>
       <trans-unit id="10469" resname="r997404020" restype="string" datatype="x-haml">
         <source>You retain the right to edit and delete your own Expert Submissions that appear in your Virtual Practice at any time. You also retain the right to use and create derivative works from your own Expert Submissions elsewhere &#40;such as on your own practice website, blog, or in your own social media posts&#41;.</source>
-        <target>您保留随时编辑和删除您的虚拟实践中显示的专家提交的权利。您同样也拥有从您自己的专家意见书的其他地方（如在您自己的实践网站，博客，或在您自己的社交媒体网站）使用和创建衍生作品的权利。</target>
+        <target>您保留随时编辑和删除您的在线咨询中显示的专家提交的权利。您同样也拥有从您自己的专家意见书的其他地方（如在您自己的实践网站，博客，或在您自己的社交媒体网站）使用和创建衍生作品的权利。</target>
       </trans-unit>
       <trans-unit id="10470" resname="r990555033" restype="string" datatype="x-haml">
         <source>When a HealthTap Medical Expert submissions related to any HealthTap feature or function and made for publication on HealthTap &#40;such as an answer to a question&#41; &#40;an &quot;Expert Submission&quot;&#41;, you grant HealthTap an unrestricted right without limitation to use, reproduce, extract data from or add data to, publish and post any such Expert Submissions, including in connection with or on HealthTap, including in connection with your name. This means that when you make such a submission to us, you are giving us rights to this content, including the right to post it on HealthTap and use it in connection with HealthTap. You also give us the right to give or transfer all rights granted herein to others. While Expert Submissions generally are posted to HealthTap, we do not have an obligation to post any particular Expert Submission on HealthTap and reserve the right, at our sole discretion and for any reason whatsoever &#40;including but not limited to an Expert Submission being reported to us&#41;, to not post and/or to remove any Expert Submissions at any time.</source>
@@ -7617,7 +7617,7 @@
       </trans-unit>
       <trans-unit id="10478" resname="r872981473" restype="string" datatype="x-haml">
         <source>Patients on HealthTap can find your professional contact information through your Virtual Practice, and can contact you for an appointment. However, please avoid violating medical board rules regarding advertising and patient solicitation.</source>
-        <target>在HealthTap的患者可以通过虚拟实践找到您的专业联系信息，并且可以通过预约联系您。然而，请避免违反医学委员会关于广告和病人征集的规定。</target>
+        <target>在HealthTap的患者可以通过在线咨询找到您的专业联系信息，并且可以通过预约联系您。然而，请避免违反医学委员会关于广告和病人征集的规定。</target>
       </trans-unit>
       <trans-unit id="10480" resname="r563959988" restype="string" datatype="x-haml">
         <source>Avoid other actions that violate board or other rules that apply to you.</source>
@@ -7625,7 +7625,7 @@
       </trans-unit>
       <trans-unit id="10481" resname="r487199707" restype="string" datatype="x-haml">
         <source>All other information, including suggestions, feedback, ideas, concepts and any other materials you disclose or offer to us on or in connection with HealthTap or any Content, are governed by the general member submission terms of this Agreement. This means that these submissions are made without any restrictions and without any expectation of confidentiality or compensation. You agree not to assert any property right or moral right of any kind with respect to any such submissions. You agree to our standard terms governing media submissions, except for the prohibition against uploading a facial portrait image of yourself for your Virtual Practice picture.</source>
-        <target>包括建议、反馈、想法、概念和其他您披露或提供给我们的材料或与HealthTap相关的或由普通会员提交的本协议条款的任何内容，在内的所有其他信息。这意味着这些提交是没有任何限制,也没有任何保密或补偿期望的。您同意对这样的提交不维护任何产权或任何形式的道德权利。您同意我们的标准条款执政媒体投稿，除了禁止我们对你自己上传的脸部肖像图像的虚拟实践的图片的使用。</target>
+        <target>包括建议、反馈、想法、概念和其他您披露或提供给我们的材料或与HealthTap相关的或由普通会员提交的本协议条款的任何内容，在内的所有其他信息。这意味着这些提交是没有任何限制,也没有任何保密或补偿期望的。您同意对这样的提交不维护任何产权或任何形式的道德权利。您同意我们的标准条款执政媒体投稿，除了禁止我们对你自己上传的脸部肖像图像的在线咨询的图片的使用。</target>
       </trans-unit>
       <trans-unit id="10482" resname="r1071215986" restype="string" datatype="x-haml">
         <source>HealthTap permits Medical Experts to receive questions directly from specific members in Private Conversations.  You will receive compensation for participating in Private Conversations according to the additional terms of the [HealthTap License Agreement and Business Associate Agreement], which are incorporated herein by reference.</source>
@@ -7645,7 +7645,7 @@
       </trans-unit>
       <trans-unit id="10487" resname="r290249736" restype="string" datatype="x-haml">
         <source>You may upload appropriate content to HealthTap and rights in submissions to HealthTap are governed by the HealthTap Terms of Use.  Information in your Virtual Practice and any submissions to a Public Area of HealthTap are not confidential.  Outside of these, we ask that you keep confidential all information exchanged between us and all information exchanged between you and HealthTap members in Private Conversations. You agree to comply with all applicable laws and regulations when you use HealthTap, including necessary privacy and HIPAA requirements.</source>
-        <target>您可以将相应的内容上传到HealthTap，提交到HealthTap的权利受HealthTap使用条款的约束。您的虚拟实践中的信息和HealthTap公共区域的任何提交信息将不会保密。除此之外，我们要求您保密我们之间交换的所有信息和您与HealthTap成员之间在私人对话中交换的所有信息。您同意在使用HealthTap时遵守所有适用的法律和法规，包括必要的隐私和HIPAA要求。</target>
+        <target>您可以将相应的内容上传到HealthTap，提交到HealthTap的权利受HealthTap使用条款的约束。您的在线咨询中的信息和HealthTap公共区域的任何提交信息将不会保密。除此之外，我们要求您保密我们之间交换的所有信息和您与HealthTap成员之间在私人对话中交换的所有信息。您同意在使用HealthTap时遵守所有适用的法律和法规，包括必要的隐私和HIPAA要求。</target>
       </trans-unit>
       <trans-unit id="10489" resname="r670072389" restype="string" datatype="x-haml">
         <source>, a Delaware corporation, having its principal place of business at 270 University Ave., 2nd Floor, Palo Alto, CA 94301 or as otherwise indicated on the Contact section of the</source>
@@ -8037,7 +8037,7 @@
     <body>
       <trans-unit id="12085" resname="r839019171" restype="string" datatype="x-haml">
         <source>An Introductory Consult is a &quot;meet and greet&quot; for customers who are not yet your patients. Please provide only advice in these sessions. At your discretion, and as appropriate under applicable medical standards &#40;including following an in-person visit where required&#41;, you may accept them as a patients.  With patients, you may provide treatment, write prescriptions, or suggest checklists. Patients will also be able to make additional appointments with you through your Virtual Practice.</source>
-        <target>对于尚未成为您患者的客户的一个介绍性咨询是“相遇打招呼”。你可以在谨慎和合理医疗条件是情况下（包括私人拜访）接受他们成为您的患者。您会为患者提供治疗、写处方和建议清单。患者也会通过您的虚拟实践和您做额外的预约。</target>
+        <target>对于尚未成为您患者的客户的一个介绍性咨询是“相遇打招呼”。你可以在谨慎和合理医疗条件是情况下（包括私人拜访）接受他们成为您的患者。您会为患者提供治疗、写处方和建议清单。患者也会通过您的在线咨询和您做额外的预约。</target>
       </trans-unit>
     </body>
   </file>
@@ -9610,7 +9610,7 @@
         <source>This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt;
       will be given credit for assisting you. Edit as you deem necessary.
       &lt;a class=&quot;child-browser-link&quot; href=&quot;&#35;how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt; &lt;/a&gt;</source>
-        <target>这个解答会出现在您的虚拟实践中和 &lt;%= user_answer.contributor.name %&gt;
+        <target>这个解答会出现在您的在线咨询中和 &lt;%= user_answer.contributor.name %&gt;
       会被给予信用协助您。&lt;a class=&quot;child-browser-link&quot; href=&quot;&#35;how_it_works/healthtap_university&quot;&gt;更多关于HealthTap大学 &amp;gt; &lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -10465,7 +10465,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="13910" resname="At any time during the intro consult, you may select the checkmark below the intro consult notes section to &lt;b&gt;accept the patient&lt;/b&gt; into your virtual practice. This is a great way to extend your reach and grow your practice!" restype="string" datatype="javascript">
         <source>At any time during the intro consult, you may select the checkmark below the intro consult notes section to &lt;b&gt;accept the patient&lt;/b&gt; into your virtual practice. This is a great way to extend your reach and grow your practice!</source>
-        <target>在介绍咨询期间的任何时间，您可以选择复选标记以下介绍咨询注意事项部分&lt;b&gt;接受患者&lt;/ b&gt;                           进入您的虚拟实践。这是一个很好的方式来扩展您的范围和增长您的实践经验！</target>
+        <target>在介绍咨询期间的任何时间，您可以选择复选标记以下介绍咨询注意事项部分&lt;b&gt;接受患者&lt;/ b&gt;                           进入您的在线咨询。这是一个很好的方式来扩展您的范围和增长您的实践经验！</target>
       </trans-unit>
       <trans-unit id="13911" resname="When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note displays. To complete your consult, you&apos;ll need to complete and submit your summary or SOAP Note. To help you fully understand this form, let&apos;s take a tour through each of the sections." restype="string" datatype="javascript">
         <source>When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note displays. To complete your consult, you&apos;ll need to complete and submit your summary or SOAP Note. To help you fully understand this form, let&apos;s take a tour through each of the sections.</source>

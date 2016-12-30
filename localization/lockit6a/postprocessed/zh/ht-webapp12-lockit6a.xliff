@@ -11229,7 +11229,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
         <source>This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt;
       will be given credit for assisting you. Edit as you deem necessary.
       &lt;a class=&quot;child-browser-link&quot; href=&quot;&#35;how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt; &lt;/a&gt;</source>
-        <target state="translated">这个解答会出现在您的虚拟实践中和 &lt;%= user_answer.contributor.name %&gt;
+        <target state="translated">这个解答会出现在您的在线咨询中和 &lt;%= user_answer.contributor.name %&gt;
       会被给予信用协助您。&lt;a class=&quot;child-browser-link&quot; href=&quot;&#35;how_it_works/healthtap_university&quot;&gt;更多关于HealthTap大学 &amp;gt; &lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="7633" resname="CO-SIGN THIS ANSWER" restype="string" datatype="html">
@@ -38352,7 +38352,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="8803" resname="Invite your patients to your Virtual Practice" restype="string" datatype="html">
         <source>Invite your patients to your Virtual Practice</source>
-        <target>邀请您的患者到您的虚拟实践</target>
+        <target>邀请您的患者到您的在线咨询</target>
       </trans-unit>
       <trans-unit id="8804" resname="Here are 3 easy ways to grow your practice:" restype="string" datatype="html">
         <source>Here are 3 easy ways to grow your practice:</source>
@@ -38416,7 +38416,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="8819" resname="Your Virtual Practice web address:" restype="string" datatype="html">
         <source>Your Virtual Practice web address:</source>
-        <target>您的虚拟实践网址：</target>
+        <target>您的在线咨询网址：</target>
       </trans-unit>
       <trans-unit id="8820" resname="www.healthtap.com/&lt;%=App.defaults.user_json.vanity_url%&gt;" restype="string" datatype="html">
         <source>www.healthtap.com/&lt;%=App.defaults.user_json.vanity_url%&gt;</source>
