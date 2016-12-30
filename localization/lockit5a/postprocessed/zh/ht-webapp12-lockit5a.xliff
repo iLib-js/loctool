@@ -286,7 +286,7 @@
       </trans-unit>
       <trans-unit id="10904" resname="r253231862" restype="string" datatype="x-haml">
         <source>De-activate account</source>
-        <target>去激活帐户</target>
+        <target state="accepted">关闭帐户</target>
       </trans-unit>
     </body>
   </file>
