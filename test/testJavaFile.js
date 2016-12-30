@@ -441,6 +441,34 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileParseMultipleOnSameLine: function(test) {
+        test.expect(8);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("This is a test");  a.parse("This is another test."); RB.getString("This is another test");\n');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.ok(r.getAutoKey());
+        
+        r = set.getBySource("This is another test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is another test");
+        test.ok(r.getAutoKey());
+        
+        test.done();
+    },
+
     testJavaFileParseMultipleWithComments: function(test) {
         test.expect(10);
 
