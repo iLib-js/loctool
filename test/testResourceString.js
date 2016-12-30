@@ -636,7 +636,7 @@ module.exports = {
     testResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ResourceString.hashKey("ht-iosapp", "de-DE", "This is a test", "html"), "rs_ht-iosapp_de-DE_This is a test_html");
+        test.equal(ResourceString.hashKey("ht-iosapp", "de-DE", "This is a test"), "rs_ht-iosapp_de-DE_This is a test");
         
         test.done();
     },
@@ -644,7 +644,7 @@ module.exports = {
     testResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(ResourceString.hashKey(undefined, "de-DE", undefined, undefined), "rs__de-DE__");
+        test.equal(ResourceString.hashKey(undefined, "de-DE", undefined), "rs__de-DE_");
         
         test.done();
     },
@@ -657,12 +657,11 @@ module.exports = {
         	key: "This is a test",
         	source: "This is a test",
         	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	datatype: "html"
+        	pathName: "a/b/c.java"
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "rs_ht-iosapp_de-DE_This is a test_html");
+        test.equal(rs.hashKey(), "rs_ht-iosapp_de-DE_This is a test");
         
         test.done();
     },
@@ -670,7 +669,7 @@ module.exports = {
     testContextResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ContextResourceString.hashKey("ht-iosapp", "foobar", "de-DE", "This is a test", "html"), "crs_ht-iosapp_foobar_de-DE_This is a test_html");
+        test.equal(ContextResourceString.hashKey("ht-iosapp", "foobar", "de-DE", "This is a test"), "ars_ht-iosapp_foobar_de-DE_This is a test");
         
         test.done();
     },
@@ -678,7 +677,7 @@ module.exports = {
     testContextResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined, undefined), "crs___de-DE__");
+        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined), "ars___de-DE_");
         
         test.done();
     },
@@ -692,12 +691,11 @@ module.exports = {
         	key: "This is a test",
         	source: "This is a test",
         	locale: "de-DE",
-        	pathName: "a/b/c.java",
-        	datatype: "html"
+        	pathName: "a/b/c.java"
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "crs_ht-iosapp_foobar_de-DE_This is a test_html");
+        test.equal(rs.hashKey(), "ars_ht-iosapp_foobar_de-DE_This is a test");
         
         test.done();
     },

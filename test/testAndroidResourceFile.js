@@ -81,7 +81,7 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "thanks_doc_pre", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "thanks_doc_pre"));
         test.ok(r);
         
         test.equal(r.getSource(), "Send a thank you note to\n{name}");
@@ -201,7 +201,7 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "app_id", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "app_id"));
         test.ok(r);
         
         test.equal(r.getSource(), "151779581544891");
@@ -239,7 +239,7 @@ module.exports = {
         var set = arf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "thanks_doc_pre", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "thanks_doc_pre"));
         test.ok(r);
         
         test.equal(r.getSource(), "Send a thank you note to\n{name}");
@@ -307,7 +307,7 @@ module.exports = {
         
         test.equal(set.size(), 12);
         
-        var r = set.get(ContextResourceString.hashKey("foo", undefined, "en-US", "ask_question", "x-android-resource"));
+        var r = set.get(ContextResourceString.hashKey("foo", undefined, "en-US", "ask_question"));
         test.ok(r);
         test.equal(r.getSource(), "Ask doctors");
         test.equal(r.getKey(), "ask_question");

@@ -47,13 +47,12 @@ module.exports = {
         var res = new ResourceString({
             key: "asdf",
             project: "foo",
-            source: "This is a test",
-            datatype: "html"
+            source: "This is a test"
         });
         
         ts.add(res);
         
-        var r = ts.get(ResourceString.hashKey("foo", res.locale, "asdf", "html"));
+        var r = ts.get(ResourceString.hashKey("foo", res.locale, "asdf"));
         
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
@@ -205,7 +204,7 @@ module.exports = {
         
         ts.add(res);
         
-        var r = ts.get(ResourceString.hashKey(undefined, res.locale, "asdf", "plaintext"));
+        var r = ts.get(ResourceString.hashKey(undefined, res.locale, "asdf"));
 
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
@@ -234,13 +233,13 @@ module.exports = {
         
         ts.add(res);
         
-        var r = ts.get(ContextResourceString.hashKey(undefined, undefined, res.locale, "asdf", "plaintext"));
+        var r = ts.get(ContextResourceString.hashKey(undefined, undefined, res.locale, "asdf"));
         
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getContext());
         
-        r = ts.get(ContextResourceString.hashKey(undefined, "different", res.locale, "asdf", "plaintext"));
+        r = ts.get(ContextResourceString.hashKey(undefined, "different", res.locale, "asdf"));
 
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
@@ -268,7 +267,7 @@ module.exports = {
         ts.add(res);
         
         // default type is string
-        var r = ts.get(ResourceString.hashKey(undefined, res.locale, "asdf", "plaintext"));
+        var r = ts.get(ResourceString.hashKey(undefined, res.locale, "asdf"));
         
         test.equal(r.getKey(), "asdf");
         test.equal(r.resType, "string");
@@ -311,12 +310,12 @@ module.exports = {
         
         ts.add(res);
         
-        var r = ts.get(ResourceString.hashKey(undefined, res.locale, "asdf", "plaintext"));
+        var r = ts.get(ResourceString.hashKey(undefined, res.locale, "asdf"));
         
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
         
-        r = ts.get(ResourceString.hashKey(undefined, res.locale, "qwerty", "plaintext"));
+        r = ts.get(ResourceString.hashKey(undefined, res.locale, "qwerty"));
         
         test.equal(r.getKey(), "qwerty");
         test.equal(r.getSource(), "This is another test");
@@ -463,12 +462,12 @@ module.exports = {
         test.equal(r.getKey(), "r3423423");
         test.equal(r.getSource(), "This is a test");
         
-        r = ts.get(ResourceString.hashKey(undefined, res.locale, "explicit_id", "plaintext"));
+        r = ts.get(ResourceString.hashKey(undefined, res.locale, "explicit_id"));
         
         test.equal(r.getKey(), "explicit_id");
         test.equal(r.getSource(), "This is a test");
         
-        r = ts.get(ResourceString.hashKey(undefined, res.locale, "r3423423", "plaintext"));
+        r = ts.get(ResourceString.hashKey(undefined, res.locale, "r3423423"));
         
         test.equal(r.getKey(), "r3423423");
         test.equal(r.getSource(), "This is a test");
@@ -589,7 +588,7 @@ module.exports = {
 	        })
 	    ]);
         
-        var r = ts.get(ResourceString.hashKey(undefined, "en-US", "asdf", "plaintext"));
+        var r = ts.get(ResourceString.hashKey(undefined, "en-US", "asdf"));
         
         test.equal(r.getKey(), "asdf");
         test.equal(r.getSource(), "This is a test");
