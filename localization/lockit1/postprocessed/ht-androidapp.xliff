@@ -7141,8 +7141,8 @@
         <target>Invitar a amigos y familia</target>
       </trans-unit>
       <trans-unit id="1481" resname="gift_title_concierge" restype="string" datatype="x-android-resource">
-        <source>Give $5, get $5</source>
-        <target>Da $5, obtén $5</target>
+        <source>Give ${price}, get ${price}</source>
+        <target>Da ${price}, obtén ${price}</target>
       </trans-unit>
       <trans-unit id="1482" resname="gift_description_concierge" restype="string" datatype="x-android-resource">
         <source>Get &lt;font color=\‘&#35;FAA500\’&gt;${price}&lt;/font&gt; for each consult purchased through your referral link:</source>
@@ -7153,12 +7153,12 @@
         <target>Comparte en los medios sociales:</target>
       </trans-unit>
       <trans-unit id="1484" resname="gift_refer_text_sms_concierge" restype="string" datatype="x-android-resource">
-        <source>Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions! :&#41; {referral_url}</source>
-        <target>Obtén $5 de descuento en consultas por chat de video o texto con tu médico o especialista en HealthTap—¡asesoría y prescripciones médicas! :&#41; {referral_url}</target>
+        <source>Get ${price} off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions! :&#41; {referral_url}</source>
+        <target>Obtén ${price} de descuento en consultas por chat de video o texto con tu médico o especialista en HealthTap—¡asesoría y prescripciones médicas! :&#41; {referral_url}</target>
       </trans-unit>
       <trans-unit id="1485" resname="gift_refer_linkedin_concierge" restype="string" datatype="x-android-resource">
-        <source>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+$5+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</source>
-        <target>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+$5+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</target>
+        <source>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+${price}+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</source>
+        <target>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+${price}+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</target>
       </trans-unit>
       <trans-unit id="1486" resname="gift_success_title" restype="string" datatype="x-android-resource">
         <source>Invitations sent!</source>
@@ -21701,8 +21701,8 @@
         <target>邀请朋友和家人</target>
       </trans-unit>
       <trans-unit id="1481" resname="gift_title_concierge" restype="string" datatype="x-android-resource">
-        <source>Give $5, get $5</source>
-        <target>给予$5，得到$5</target>
+        <source>Give ${price}, get ${price}</source>
+        <target>给予${price}，得到${price}</target>
       </trans-unit>
       <trans-unit id="1482" resname="gift_description_concierge" restype="string" datatype="x-android-resource">
         <source>Get &lt;font color=\‘&#35;FAA500\’&gt;${price}&lt;/font&gt; for each consult purchased through your referral link:</source>
@@ -21713,12 +21713,12 @@
         <target>分享到社交媒体</target>
       </trans-unit>
       <trans-unit id="1484" resname="gift_refer_text_sms_concierge" restype="string" datatype="x-android-resource">
-        <source>Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions! :&#41; {referral_url}</source>
-        <target>在HealthTap上通过视频或文本咨询您的医生或专家，可以减免$5——建议和处方！:&#41;{referral_url}</target>
+        <source>Get ${price} off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions! :&#41; {referral_url}</source>
+        <target>在HealthTap上通过视频或文本咨询您的医生或专家，可以减免${price}——建议和处方！:&#41;{referral_url}</target>
       </trans-unit>
       <trans-unit id="1485" resname="gift_refer_linkedin_concierge" restype="string" datatype="x-android-resource">
-        <source>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+$5+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</source>
-        <target>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+$5+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</target>
+        <source>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+${price}+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</source>
+        <target>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+${price}+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</target>
       </trans-unit>
       <trans-unit id="1486" resname="gift_success_title" restype="string" datatype="x-android-resource">
         <source>Invitations sent!</source>
