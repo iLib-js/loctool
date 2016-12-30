@@ -36842,7 +36842,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7026" resname="We&apos;re sorry, but {doctor_prefix}{last_name} is only licensed to see patients in {licensed_states}." restype="string" datatype="javascript">
         <source>We&apos;re sorry, but {doctor_prefix}{last_name} is only licensed to see patients in {licensed_states}.</source>
-        <target>我们很抱歉，但是 {doctor_prefix}{last_name} 只有许可才能看到患者{licensed_states}.</target>
+        <target state="accepted">我们很抱歉，但是 {doctor_prefix}{last_name} 的执照只能看{licensed_states}州的病人.</target>
       </trans-unit>
       <trans-unit id="7027" resname=" You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to one of these locations." restype="string" datatype="javascript">
         <source>You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to one of these locations.</source>
