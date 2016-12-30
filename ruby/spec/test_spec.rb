@@ -15,7 +15,7 @@ describe 'HamlLocalizer' do
       # from portal.html.haml
       orig = ' .translator-section'
       ret = replace_with_translations2(orig, {'to' => 'FOO'})
-      ret.should == orig
+      expect(ret).to eq(orig)
     end
 
     it 'should translate all sections' do
@@ -23,16 +23,48 @@ describe 'HamlLocalizer' do
       orig = " %p <strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement between you and HealthTap Inc. (\"HealthTap\"). There are rules you agree to follow when using our mobile applications and websites (the \"Apps\"), including when you ask questions and when you view or input content on or into the Apps, and they are contained in these TOU. The <a href=\"/terms/privacy_statement\">HealthTap Privacy Statement</a> is officially part of these TOU even though it's a separate document."
       from_to = {'There are rules you agree to follow when using our mobile applications and' => 'FOO'}
       ret = replace_with_translations2(orig, {'to' => 'FOO'})
-      ret.include?('FOO').should be_true
+      expect(ret.include?('FOO')).to be_truthy
     end
 
+    it 'should include html tags' do
+      # from _terms.html.haml
+      orig = " %p <strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement between you and HealthTap Inc. (\"HealthTap\"). There are rules you agree to follow when using our mobile applications and websites (the \"Apps\"), including when you ask questions and when you view or input content on or into the Apps, and they are contained in these TOU. The <a href=\"/terms/privacy_statement\">HealthTap Privacy Statement</a> is officially part of these TOU even though it's a separate document."
+      from_to = {'<strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement' => 'FOO'}
+      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
+    it 'should not break strings on self-closed html tags' do
+      # from _footer_static_v2.html.haml
+      orig = "            HealthTap does not provide medical advice, diagnosis, or treatment. <br />For these services, please use\n      HealthTap Prime or HealthTap Concierge."
+      from_to = {'HealthTap does not provide medical advice, diagnosis, or treatment. <br />For these services' => 'FOO'}
+      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
+    it 'should not break strings on html entities' do
+      # from app/views/what_we_make/medical_expert_network.html.haml
+      orig = "      by doing what you do best &mdash; answering patient questions &mdash; through your Virtual Practice."
+      from_to = {'by doing what you do best &mdash; answering patient questions &mdash; through' => 'FOO'}
+      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
+    it 'should not break strings on html tags with ruby substitutions in them' do
+      # from app/views/what_we_make/medical_expert_network.html.haml
+      orig = "       Having broad online visibility is critical to creating a thriving practice, but it can be costly and confusing to set up and manage. With HealthTap, you get all of the benefits of an optimized website and a robust audience of patients for free. And your interactions on HealthTap are completely secure and safe in accordance with HIPAA standards. <a href=\"\#{new_expert_registration_path}\">Learn more &rsaquo;</a>"
+      from_to = {'Having broad online visibility is critical to creating a thriving practice, but it can be costly and confusing to set up and manage. With HealthTap, you get all of the benefits of an optimized website and a robust audience of patients for free. And your interactions on HealthTap are completely secure and safe in accordance with HIPAA standards. <a href=\"\#{new_expert_registration_path}\">Learn more &rsaquo;</a>' => 'FOO'}
+      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      expect(ret.include?('FOO')).to be_truthy
+    end
+    
     it 'should work' do
       # from investors.html.haml
       orig = "        <span class='ht-name' >HealthTap</span> is supported by world-class investors, advisors, and experienced company builders who have helped create, "
       from_to ={"is supported by world-class investors, advisors, and experienced company builders who have helped create,"=>"FOO"}
       ret = replace_with_translations2(orig, from_to)
 
-      ret.include?('FOO').should be_true
+      expect(ret.include?('FOO')).to be_truthy
     end
 
     it 'should work' do
@@ -40,7 +72,7 @@ describe 'HamlLocalizer' do
       orig = "It may sound lofty, but we believe it comes down to something very basic. We all-at heart-simply want to <span class=\"no-break\" >Feel Good</span>. Whether we're trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better-and we always want to <span class=\"no-break\" >Feel Good</span>. "
       from_to = {"It may sound lofty, but we believe it comes down to something very basic. We all-at heart-simply want to"=>"FOO"}
       ret = replace_with_translations2(orig, from_to)
-      ret.include?('FOO').should be_true
+      expect(ret.include?('FOO')).to be_truthy
     end
 
     it 'should work' do
@@ -49,11 +81,11 @@ describe 'HamlLocalizer' do
       from_to = {"Will Change Healthcare"=>"FOO",
                  "is creating the world's most comprehensive, always-evolving,  and evergreen knowledgebase of personal health wisdom and expertise."=>"FOO"}
       ret = replace_with_translations2(orig, from_to)
-      ret.include?('FOO').should be_true
+      expect(ret.include?('FOO')).to be_truthy
 
       orig2 = "          In fact, <span class=\"ht-name\">HealthTap</span> is creating the world's most comprehensive, always-evolving,  and evergreen knowledgebase of personal health wisdom and expertise."
       ret = replace_with_translations2(orig2, from_to)
-      ret.include?('FOO').should be_true
+      expect(ret.include?('FOO')).to be_truthy
     end
 
     it 'it should localize string' do
@@ -61,7 +93,7 @@ describe 'HamlLocalizer' do
       line = "      Power your organization with HOPES<sup>TM</sup> — the fully integrated, engaging and smart Health Operating System, providing query-to-cure virtual care to your patients, anytime, anywhere."
       from_to = {" — the fully integrated, engaging and smart Health Operating System, providing query-to-cure virtual care to your patients, anytime, anywhere." => 'FOO'}
       ret = replace_with_translations2(line, from_to)
-      ret.include?('FOO').should be_true
+      expect(ret.include?('FOO')).to be_truthy
 
     end
 
@@ -89,22 +121,22 @@ describe 'HamlLocalizer' do
       expect(ret).to eq({})
     end
     it 'should raise error if provided locale file does not exist' do
-      File.should_receive(:exists?).and_return(false)
+      expect(File).to receive(:exists?).and_return(false)
       expect {load_locale_maps(['en-XY'])}.to raise_error
     end
     it 'should work with locale file' do
-      File.should_receive(:exists?).and_return(true)
-      File.should_receive(:read).with('translations-en-XY.yml').and_return({}.to_yaml)
+      expect(File).to receive(:exists?).and_return(true)
+      expect(File).to receive(:read).with('translations-en-XY.yml').and_return({}.to_yaml)
       ret = load_locale_maps(['en-XY'])
       expect(ret.keys).to include('en-XY')
       expect(ret['en-XY']).to eq({})
     end
     it 'should work with locale file with top-level object' do
-      File.should_receive(:exists?).and_return(true)
-      File.should_receive(:read).with('translations-en-XY.yml').and_return({en_XY: {'a' => 'b', 'c' => 'd'}}.to_yaml)
+      expect(File).to receive(:exists?).and_return(true)
+      expect(File).to receive(:read).with('translations-en-XY.yml').and_return({en_XY: {'a' => 'b', 'c' => 'd'}}.to_yaml)
       ret = load_locale_maps(['en-XY'])
       expect(ret.keys).to include('en-XY')
-      expect(ret['en-XY'].keys.empty?).not_to be_true
+      expect(ret['en-XY'].keys.empty?).not_to be_truthy
     end
   end
 
@@ -142,6 +174,20 @@ describe 'HamlLocalizer' do
       expect(create_hashed_key("This is a test")).to eq("r654479252");
       expect(create_hashed_key("This is a test")).to eq("r654479252");
     end
+  
+    it 'works with cleaned sources' do
+      expect(create_hashed_key(clean_string("Medications in your profile"))).to eq("r32020327");
+      expect(create_hashed_key(clean_string("All medications "))).to eq("r835310324");
+      expect(create_hashed_key(clean_string(" Conditions"))).to eq("r103883086");
+      expect(create_hashed_key(clean_string("Symptoms  \t"))).to eq("r481086103");
+      expect(create_hashed_key(clean_string("\t\t    Experts"))).to eq("r343852585");
+      expect(create_hashed_key(clean_string("Procedures   \t\t"))).to eq("r807691021");
+      expect(create_hashed_key(clean_string("Health    Apps"))).to eq("r941505899");
+      expect(create_hashed_key(clean_string("Conditions \nin  \n your profile"))).to eq("r240633868");
+      expect(create_hashed_key(clean_string("Treatment\tReviews"))).to eq("r795086964");
+      expect(create_hashed_key(clean_string("Private Health <span class=\"foo\">Profile</span>"))).to eq("r669315500");
+      expect(create_hashed_key(clean_string("People <span class=\"foo < bar\">you</span> care for"))).to eq("r710774033");
+    end
   end
 
   describe 'pseudolocalize' do
@@ -154,6 +200,6 @@ describe 'HamlLocalizer' do
     orig = "            .points_wrap{:title=>Rb.t(\"A doctor's DocScore is a measure of their knowledge, trust, compassion and engagement.\"), :style=>\"width : 80px\"}"
     from_to = {"DocScore" => 'FOO'}
     ret = replace_with_translations2(orig, from_to)
-    ret.include?('FOO').should be_false
+    expect(ret.include?('FOO')).to be_falsey
   end
 end
