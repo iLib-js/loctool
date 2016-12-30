@@ -28347,7 +28347,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6257" resname="Private Consult on {date}" restype="string" datatype="html">
         <source>Private Consult on {date}</source>
-        <target>私人咨询在{date}</target>
+        <target state="accepted">在{date}的私人咨询</target>
       </trans-unit>
     </body>
   </file>
