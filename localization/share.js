@@ -31,6 +31,10 @@ var feelgoodunits = feelgood.getTranslationUnits();
 
 var units = {};
 
+function clean(string) {
+	return string.replace(/\s+/g, "").trim();
+}
+
 function addUnits(unit) {
 	if (!units[unit.targetLocale]) {
 		units[unit.targetLocale] = {};
