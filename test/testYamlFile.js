@@ -671,7 +671,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", undefined, "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger."));
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", undefined, "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.", "x-yaml"));
         test.ok(r);
         
         test.equal(r.getSource(), "Dr. Livingston serves on the Medical Advisory Board for HealthTap and he is the Chief Medical officer for Healthcare Transformation Solutions. He is on Twitter as @macobgyn and is an active doctor blogger.");
@@ -703,7 +703,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "saved_someone_else_life", "en-US", "subject"));
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "saved_someone_else_life", "en-US", "subject", "x-yaml"));
         test.ok(r);
         
         test.equal(r.getSource(), "Feel good! Someone said a doctor’s answer to your question saved their life:");
@@ -737,7 +737,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject"));
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         test.ok(r);
         
         test.equal(r.getSource(), "%1, %2 has answered a question you asked!");
@@ -771,7 +771,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject"));
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         test.ok(r);
         
         test.ok(r instanceof ContextResourceString);
@@ -1052,7 +1052,8 @@ module.exports = {
         	context: "doctor_thanked_note_life_saved",
         	key: 'email_subject',
         	source: '%1, vous sauvez des vides!',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "x-yaml"
         }));
 
         var actual = yml.localizeText(translations, "fr-FR");
@@ -1130,21 +1131,24 @@ module.exports = {
 	        	context: "doctor_thanked_note_life_saved",
 	        	key: 'email_subject',
 	        	source: '%1, vous sauvez des vies!',
-	        	locale: "fr-FR"
+	        	locale: "fr-FR",
+	        	datatype: "x-yaml"
 	        }),
         	new ContextResourceString({
 	        	project: "ht-webapp12",
 	        	context: "doctor_thanked_note_life_saved",
 	        	key: 'subject',
 	        	source: 'Vous avez été remercié pour sauver une vie!',
-	        	locale: "fr-FR"
+	        	locale: "fr-FR",
+	        	datatype: "x-yaml"
 	        }),
         	new ContextResourceString({
 	        	project: "ht-webapp12",
 	        	context: "doctor_thanked_note_life_saved",
 	        	key: 'push_data',
 	        	source: 'Vous avez sauvé une vie! Voir %1',
-	        	locale: "fr-FR"
+	        	locale: "fr-FR",
+	        	datatype: "x-yaml"
 	        }),
 	    ]);
 
