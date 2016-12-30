@@ -3711,9 +3711,9 @@
         <target>Preguntaste por {0} el {1}. Aún no hay respuestas.</target>
         <note annotates="source">This is a notification message. {0} is a doctor name. {1} is a date.</note>
       </trans-unit>
-      <trans-unit id="679" resname="r432843155" restype="string" datatype="java">
-        <source>You asked for {0} on {1}.</source>
-        <target>Preguntaste por {0} el {1}.</target>
+      <trans-unit id="679" resname="r987402210" restype="string" datatype="java">
+        <source>You asked for {start}{0}{end} on {1}.</source>
+        <target>Preguntaste por {start}{0}{end} el {1}.</target>
         <note annotates="source">This is a notification message.{0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="680" resname="r649803739" restype="string" datatype="java">

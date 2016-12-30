@@ -3733,9 +3733,9 @@
         <target>Pediste {start}{0}{end} el {1}. Ninguna respuesta aún.</target>
         <note annotates="source">This is a notification message. {0} is a doctor name. {1} is a date.</note>
       </trans-unit>
-      <trans-unit id="691" resname="r432843155" restype="string" datatype="java">
-        <source>You asked for {0} on {1}.</source>
-        <target>Pediste {0} el {1}.</target>
+      <trans-unit id="691" resname="r987402210" restype="string" datatype="java">
+        <source>You asked for {start}{0}{end} on {1}.</source>
+        <target>Pediste {start}{0}{end} el {1}.</target>
         <note annotates="source">This is a notification message.{0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="692" resname="r649803739" restype="string" datatype="java">
@@ -7873,9 +7873,9 @@
         <target>您在{1}上询问过{start}{0}{end}。至今还没有回应</target>
         <note annotates="source">This is a notification message. {0} is a doctor name. {1} is a date.</note>
       </trans-unit>
-      <trans-unit id="691" resname="r432843155" restype="string" datatype="java">
-        <source>You asked for {0} on {1}.</source>
-        <target>您在{0}上为{0}询问过。</target>
+      <trans-unit id="691" resname="r987402210" restype="string" datatype="java">
+        <source>You asked for {start}{0}{end} on {1}.</source>
+        <target>您在{1}上为{start}{0}{end}询问过。</target>
         <note annotates="source">This is a notification message.{0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="692" resname="r649803739" restype="string" datatype="java">
