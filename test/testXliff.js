@@ -957,7 +957,7 @@ module.exports = {
         var res = new ResourceString({
             source: "Asdf <b>asdf</b>",
             locale: "en-US",
-            key: "foobar",
+            key: 'foobar "asdf"',
             pathName: "foo/bar/asdf.java",
             project: "ht-androidapp"
         });
@@ -967,7 +967,7 @@ module.exports = {
         res = new ResourceString({
             source: "baby &lt;b&gt;baby&lt;/b&gt;",
             locale: "en-US",
-            key: "huzzah",
+            key: "huzzah &quot;asdf&quot;",
             pathName: "foo/bar/j.java",
             project: "ht-webapp12"
         });
@@ -979,14 +979,14 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
+                '      <trans-unit id="1" resname="foobar &quot;asdf&quot;" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
                 '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
+                '      <trans-unit id="2" resname="huzzah &amp;quot;asdf&amp;quot;" restype="string" datatype="plaintext">\n' +
                 '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
                 '      </trans-unit>\n' +
                 '    </body>\n' +
