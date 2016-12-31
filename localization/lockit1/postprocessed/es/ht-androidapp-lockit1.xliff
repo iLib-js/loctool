@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="2" resname="text_Add_condition_or_symptom" restype="string" datatype="x-android-resource" x-context="sw720dp">
         <source>Add condition or symptom</source>
-        <target>Agregar condición o síntoma</target>
+        <target state="accepted">Agregarla</target>
       </trans-unit>
     </body>
   </file>
