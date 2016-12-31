@@ -7165,8 +7165,8 @@
         <target>¡Invitaciones enviadas!</target>
       </trans-unit>
       <trans-unit id="1487" resname="gift_success_text_concierge" restype="string" datatype="x-android-resource">
-        <source>Your invite has been sent. We will notify you when you receive $5 off :&#41;</source>
-        <target>Tu invitación ha sido enviada. Te notificaremos cuando recibas $5 de descuento :&#41;</target>
+        <source>Your invite has been sent. We will notify you when you receive ${price} off :&#41;</source>
+        <target>Tu invitación ha sido enviada. Te notificaremos cuando recibas ${price} de descuento :&#41;</target>
       </trans-unit>
       <trans-unit id="1488" resname="gift_email_title" restype="string" datatype="x-android-resource">
         <source>Invite your contacts</source>
