@@ -5682,7 +5682,7 @@
       </trans-unit>
       <trans-unit id="jEU-Pz-VLq.text" resname="jEU-Pz-VLq.text" restype="string" datatype="x-xib">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Male&quot;; ObjectID = &quot;jEU-Pz-VLq&quot;;</note>
       </trans-unit>
       <trans-unit id="jcV-0r-wwZ.placeholder" resname="jcV-0r-wwZ.placeholder" restype="string" datatype="x-xib">
@@ -5726,7 +5726,7 @@
       </trans-unit>
       <trans-unit id="YwZ-mo-fZI.text" resname="YwZ-mo-fZI.text" restype="string" datatype="x-xib">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Male&quot;; ObjectID = &quot;YwZ-mo-fZI&quot;;</note>
       </trans-unit>
       <trans-unit id="mDu-gU-ZTE.placeholder" resname="mDu-gU-ZTE.placeholder" restype="string" datatype="x-xib">
@@ -5760,7 +5760,7 @@
       </trans-unit>
       <trans-unit id="jEU-Pz-VLq.text" resname="jEU-Pz-VLq.text" restype="string" datatype="x-xib">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Male&quot;; ObjectID = &quot;jEU-Pz-VLq&quot;;</note>
       </trans-unit>
       <trans-unit id="lG9-pG-5LO.placeholder" resname="lG9-pG-5LO.placeholder" restype="string" datatype="x-xib">
@@ -9660,7 +9660,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Male" resname="Male" restype="string">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Mar" resname="Mar" restype="string">
@@ -15200,7 +15200,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Rx7-mt-KCb.text" resname="Rx7-mt-KCb.text" restype="string" datatype="x-xib">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Male&quot;; ObjectID = &quot;Rx7-mt-KCb&quot;;</note>
       </trans-unit>
       <trans-unit id="YiY-Dk-NzG.text" resname="YiY-Dk-NzG.text" restype="string" datatype="x-xib">
@@ -15284,7 +15284,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Rx7-mt-KCb.text" resname="Rx7-mt-KCb.text" restype="string" datatype="x-xib">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Male&quot;; ObjectID = &quot;Rx7-mt-KCb&quot;;</note>
       </trans-unit>
       <trans-unit id="YiY-Dk-NzG.text" resname="YiY-Dk-NzG.text" restype="string" datatype="x-xib">
@@ -15403,7 +15403,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="xmm-R3-6lm.text" resname="xmm-R3-6lm.text" restype="string" datatype="x-xib">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Male&quot;; ObjectID = &quot;xmm-R3-6lm&quot;;</note>
       </trans-unit>
       <trans-unit id="yBc-bZ-dRu.normalTitle" resname="yBc-bZ-dRu.normalTitle" restype="string" datatype="x-xib">
@@ -16750,7 +16750,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="UTW-0u-i30.normalTitle" resname="UTW-0u-i30.normalTitle" restype="string" datatype="x-xib">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Male&quot;; ObjectID = &quot;UTW-0u-i30&quot;;</note>
       </trans-unit>
       <trans-unit id="Y99-r2-V9G.text" resname="Y99-r2-V9G.text" restype="string" datatype="x-xib">
