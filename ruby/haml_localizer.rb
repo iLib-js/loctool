@@ -403,7 +403,7 @@ unless defined?(TEST_ENV)
           root = x.parse
         rescue => e
           puts "ERROR: Bad substitution created invalid template for #{path_name}"
-          #File.open('ERROR.html.haml', 'w') { |file| file.write(template) }
+          # File.open('ERROR.html.haml', 'w') { |file| file.write(output_template) }
           next # if we make a bad file, do not try to print, just go to next file
         end
         if file_name_components[file_name_components.length - 3] == "en-US"
