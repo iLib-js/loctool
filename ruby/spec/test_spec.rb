@@ -22,7 +22,7 @@ describe 'HamlLocalizer' do
       # from _terms.html.haml
       orig = " %p <strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement between you and HealthTap Inc. (\"HealthTap\"). There are rules you agree to follow when using our mobile applications and websites (the \"Apps\"), including when you ask questions and when you view or input content on or into the Apps, and they are contained in these TOU. The <a href=\"/terms/privacy_statement\">HealthTap Privacy Statement</a> is officially part of these TOU even though it's a separate document."
       from_to = {'There are rules you agree to follow when using our mobile applications and' => 'FOO'}
-      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      ret = replace_with_translations2(orig, from_to)
       expect(ret.include?('FOO')).to be_truthy
     end
 
@@ -30,7 +30,7 @@ describe 'HamlLocalizer' do
       # from _terms.html.haml
       orig = " %p <strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement between you and HealthTap Inc. (\"HealthTap\"). There are rules you agree to follow when using our mobile applications and websites (the \"Apps\"), including when you ask questions and when you view or input content on or into the Apps, and they are contained in these TOU. The <a href=\"/terms/privacy_statement\">HealthTap Privacy Statement</a> is officially part of these TOU even though it's a separate document."
       from_to = {'<strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement' => 'FOO'}
-      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      ret = replace_with_translations2(orig, from_to)
       expect(ret.include?('FOO')).to be_truthy
     end
 
@@ -38,7 +38,7 @@ describe 'HamlLocalizer' do
       # from _footer_static_v2.html.haml
       orig = "            HealthTap does not provide medical advice, diagnosis, or treatment. <br />For these services, please use\n      HealthTap Prime or HealthTap Concierge."
       from_to = {'HealthTap does not provide medical advice, diagnosis, or treatment. <br />For these services' => 'FOO'}
-      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      ret = replace_with_translations2(orig, from_to)
       expect(ret.include?('FOO')).to be_truthy
     end
 
@@ -46,18 +46,66 @@ describe 'HamlLocalizer' do
       # from app/views/what_we_make/medical_expert_network.html.haml
       orig = "      by doing what you do best &mdash; answering patient questions &mdash; through your Virtual Practice."
       from_to = {'by doing what you do best &mdash; answering patient questions &mdash; through' => 'FOO'}
-      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      ret = replace_with_translations2(orig, from_to)
       expect(ret.include?('FOO')).to be_truthy
     end
 
     it 'should not break strings on html tags with ruby substitutions in them' do
       # from app/views/what_we_make/medical_expert_network.html.haml
-      orig = "       Having broad online visibility is critical to creating a thriving practice, but it can be costly and confusing to set up and manage. With HealthTap, you get all of the benefits of an optimized website and a robust audience of patients for free. And your interactions on HealthTap are completely secure and safe in accordance with HIPAA standards. <a href=\"\#{new_expert_registration_path}\">Learn more &rsaquo;</a>"
+      orig = '       Having broad online visibility is critical to creating a thriving practice, but it can be costly and confusing to set up and manage. With HealthTap, you get all of the benefits of an optimized website and a robust audience of patients for free. And your interactions on HealthTap are completely secure and safe in accordance with HIPAA standards. <a href=\"\#{new_expert_registration_path}\">Learn more &rsaquo;</a>'
       from_to = {'Having broad online visibility is critical to creating a thriving practice, but it can be costly and confusing to set up and manage. With HealthTap, you get all of the benefits of an optimized website and a robust audience of patients for free. And your interactions on HealthTap are completely secure and safe in accordance with HIPAA standards. <a href=\"\#{new_expert_registration_path}\">Learn more &rsaquo;</a>' => 'FOO'}
-      ret = replace_with_translations2(orig, {'to' => 'FOO'})
+      ret = replace_with_translations2(orig, from_to)
       expect(ret.include?('FOO')).to be_truthy
     end
-    
+
+    it 'should not break strings on html tags with ruby substitutions in them (2)' do
+      # from app/views/layouts/_enterprise_employee_search_header.html.haml
+      orig = '        .hello <span class=\'sos-warning-icon\'></span> Hi #{shownName}, members in your area are experiencing #{@current_person.primary_active_disaster.description}. <br/>How can our doctors help you?'
+      from_to = {'Hi #{shownName}, members in your area are experiencing #{@current_person.primary_active_disaster.description}. <br/>How' => 'FOO'}
+      ret = replace_with_translations2(orig, from_to)
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
+    it 'should not break strings on html tags with ruby substitutions in them after the text' do
+      # from app/views/layouts/_enterprise_employee_search_header.html.haml
+      orig = '    Thank Dr. #{checklist[:person][:last_name]}'
+      from_to = {'Thank Dr. #{checklist[:person][:last_name]}' => 'FOO'}
+      ret = replace_with_translations2(orig, from_to)
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
+    it 'should not break strings on html tags with ruby substitutions in them before the text' do
+      # from app/views/layouts/_enterprise_employee_search_header.html.haml
+      orig = '                      #{convert_frequency(c_item[:frequency])} in a row'
+      from_to = {'#{convert_frequency(c_item[:frequency])} in a row' => 'FOO'}
+      ret = replace_with_translations2(orig, from_to)
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
+    it 'should not break strings on slash lines' do
+      # from app/views/layouts/_enterprise_employee_search_header.html.haml
+      orig = '  /   Send your question'
+      from_to = {'Send your question' => 'FOO'}
+      ret = replace_with_translations2(orig, from_to)
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
+    it 'should not break strings on non-ASCII characters' do
+      # from app/views/layouts/_expert_external_content_header.html.haml
+      orig = '    %a.left.back-to-site{:href => "/expert/review_news"} ‹ Back to site'
+      from_to = {'‹ Back to site' => 'FOO'}
+      ret = replace_with_translations2(orig, from_to)
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
+    it 'should not substitute partial words' do
+      # from app/views/layouts/_expert_external_content_header.html.haml
+      orig = '    Following'
+      from_to = {'Follow' => 'FOO'}
+      ret = replace_with_translations2(orig, from_to)
+      expect(ret.include?('FOO')).to be_falsy
+    end
+
     it 'should work' do
       # from investors.html.haml
       orig = "        <span class='ht-name' >HealthTap</span> is supported by world-class investors, advisors, and experienced company builders who have helped create, "
