@@ -1183,7 +1183,7 @@
       </trans-unit>
       <trans-unit id="215" resname="Add a treatment or procedure" restype="string" datatype="x-objective-c">
         <source>Add a treatment or procedure</source>
-        <target>增加治疗方法或疗程</target>
+        <target>添加治疗方法或疗程</target>
       </trans-unit>
     </body>
   </file>
@@ -1356,7 +1356,7 @@
       </trans-unit>
       <trans-unit id="247" resname="Your account is deactivated. To re-activate, send a request to " restype="string" datatype="x-objective-c">
         <source>Your account is deactivated. To re-activate, send a request to</source>
-        <target>您的帐户已停用。重新激活，发送请求邮件到</target>
+        <target>您的帐户已冻结。重新激活，发送请求邮件到</target>
       </trans-unit>
       <trans-unit id="248" resname="Good " restype="string" datatype="x-objective-c">
         <source>Good</source>
@@ -1772,7 +1772,7 @@
       </trans-unit>
       <trans-unit id="332" resname="FREE FOR YOU AS A PRIME SUBSCRIBER!" restype="string" datatype="x-objective-c">
         <source>FREE FOR YOU AS A PRIME SUBSCRIBER!</source>
-        <target>Prime免费订购</target>
+        <target>Prime订阅者免费享有！</target>
       </trans-unit>
       <trans-unit id="333" resname="&#40;optional&#41;" restype="string" datatype="x-objective-c">
         <source>&#40;optional&#41;</source>
@@ -2638,7 +2638,7 @@
     <body>
       <trans-unit id="497" resname="Where would you prefer to collect " restype="string" datatype="x-objective-c">
         <source>Where would you prefer to collect</source>
-        <target>您喜欢在哪里取药</target>
+        <target>您希望在哪里取药</target>
       </trans-unit>
       <trans-unit id="498" resname="\nCall: " restype="string" datatype="x-objective-c">
         <source>\nCall:</source>
@@ -2662,7 +2662,7 @@
     <body>
       <trans-unit id="501" resname="Add a new person" restype="string" datatype="x-objective-c">
         <source>Add a new person</source>
-        <target>增加一个人</target>
+        <target>添加一个人</target>
       </trans-unit>
     </body>
   </file>
@@ -3153,7 +3153,7 @@
     <body>
       <trans-unit id="593" resname="Add this Person" restype="string" datatype="x-objective-c">
         <source>Add this Person</source>
-        <target>增加这个人</target>
+        <target>添加这个人</target>
       </trans-unit>
     </body>
   </file>
@@ -4022,7 +4022,7 @@
       </trans-unit>
       <trans-unit id="727" resname="aro-gW-23T.text" restype="string" datatype="x-xib">
         <source>We\&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We\&apos;ll do our best to make you happy as soon as possible! :&#41;</source>
-        <target>我们致力于照顾您的健康请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:&#41;</target>
+        <target>我们致力于照顾您的健康请不要冻结账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We&apos;ll do our best to make you happy as soon as possible! :&#41;&quot;; ObjectID = &quot;aro-gW-23T&quot;;</note>
       </trans-unit>
     </body>
