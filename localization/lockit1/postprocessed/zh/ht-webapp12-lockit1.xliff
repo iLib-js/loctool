@@ -36462,7 +36462,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6952" resname="Do you" restype="string" datatype="javascript">
         <source>Do you</source>
-        <target>是您</target>
+        <target state="accepted">是您本人</target>
       </trans-unit>
       <trans-unit id="6953" resname=" take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>take any over-the-counter or prescription medications?</source>
