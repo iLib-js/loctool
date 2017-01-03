@@ -10640,7 +10640,7 @@
       </trans-unit>
       <trans-unit id="2351" resname="see_more_answer" restype="plural" datatype="x-android-resource" extype="other">
         <source>See %d more answers</source>
-        <target>查看%@个回答</target>
+        <target>查看%d个回答</target>
       </trans-unit>
       <trans-unit id="2352" resname="doctors" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor</source>
