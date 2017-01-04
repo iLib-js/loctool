@@ -7834,7 +7834,7 @@
       </trans-unit>
       <trans-unit id="1654" resname="rating_high_star_text" restype="string" datatype="x-android-resource">
         <source>Great</source>
-        <target>Estupendo</target>
+        <target state="accepted">Genial</target>
       </trans-unit>
       <trans-unit id="1655" resname="rating_title_generic" restype="string" datatype="x-android-resource">
         <source>Your consult has ended</source>
