@@ -17952,7 +17952,7 @@
       </trans-unit>
       <trans-unit id="623" resname="r119624487" restype="string" datatype="java">
         <source>24/7 virtual consults are not yet available in %s</source>
-        <target>24/7全天候在线咨询在%@中尚不可用</target>
+        <target>24/7全天候在线咨询在%s中尚不可用</target>
       </trans-unit>
     </body>
   </file>
