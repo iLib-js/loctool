@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+source "https://rubygems.org"
+
+ruby '2.1.10'
+gem 'rspec-core', '2.12.2'
+gem 'rspec-mocks', '2.12.2'
+gem 'rspec-expectations', '2.12'
+gem 'haml', '4.0.3'
+gem 'sanitize'
