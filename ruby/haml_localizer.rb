@@ -263,6 +263,7 @@ def replace_with_translations2(template, from_to)
   skip_block_indent = nil
   arr.each{|line|
     curr_indent = /\S/ =~ line
+    puts "curr_indent=#{curr_indent} skip_block_indent=#{skip_block_indent}"
     if curr_indent.nil?
       ret << line
       next
@@ -272,6 +273,10 @@ def replace_with_translations2(template, from_to)
       indent_stack << curr_indent
       if line.include?(':ruby')
         skip_block_indent = curr_indent
+      elsif line.strip.start_with?('<script')
+        skip_block_indent = curr_indent
+      elsif line.strip.start_with?('</script>') && skip_block_indent
+        skip_block_indent = nil
       end
       process_line(skip_block_indent, ret, line, from_to)
     elsif curr_indent < indent_stack.last
