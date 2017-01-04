@@ -3715,9 +3715,9 @@
         <target>您在{1}上要求{0}。至今还没有回应</target>
         <note annotates="source">This is a notification message. {0} is a doctor name. {1} is a date.</note>
       </trans-unit>
-      <trans-unit id="679" resname="r432843155" restype="string" datatype="java">
-        <source>You asked for {0} on {1}.</source>
-        <target>您在{1}上要求{0}。</target>
+      <trans-unit id="679" resname="r987402210" restype="string" datatype="java">
+        <source>You asked for {start}{0}{end} on {1}.</source>
+        <target>您在{1}上要求{start}{0}{end}。</target>
         <note annotates="source">This is a notification message.{0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="680" resname="r649803739" restype="string" datatype="java">
@@ -7143,8 +7143,8 @@
         <target>邀请朋友和家人</target>
       </trans-unit>
       <trans-unit id="1481" resname="gift_title_concierge" restype="string" datatype="x-android-resource">
-        <source>Give $5, get $5</source>
-        <target>给予$5，得到$5</target>
+        <source>Give ${price}, get ${price}</source>
+        <target>给予${price}，得到${price}</target>
       </trans-unit>
       <trans-unit id="1482" resname="gift_description_concierge" restype="string" datatype="x-android-resource">
         <source>Get &lt;font color=\‘&#35;FAA500\’&gt;${price}&lt;/font&gt; for each consult purchased through your referral link:</source>
@@ -7155,20 +7155,20 @@
         <target>分享到社交媒体</target>
       </trans-unit>
       <trans-unit id="1484" resname="gift_refer_text_sms_concierge" restype="string" datatype="x-android-resource">
-        <source>Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions! :&#41; {referral_url}</source>
-        <target>在HealthTap上通过视频或文本咨询您的医生或专家，可以减免$5——建议和处方！:&#41;{referral_url}</target>
+        <source>Get ${price} off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions! :&#41; {referral_url}</source>
+        <target>在HealthTap上通过视频或文本咨询您的医生或专家，可以减免${price}——建议和处方！:&#41;{referral_url}</target>
       </trans-unit>
       <trans-unit id="1485" resname="gift_refer_linkedin_concierge" restype="string" datatype="x-android-resource">
-        <source>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+$5+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</source>
-        <target>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+$5+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</target>
+        <source>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+${price}+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</source>
+        <target>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+${price}+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</target>
       </trans-unit>
       <trans-unit id="1486" resname="gift_success_title" restype="string" datatype="x-android-resource">
         <source>Invitations sent!</source>
         <target>发送邀请</target>
       </trans-unit>
       <trans-unit id="1487" resname="gift_success_text_concierge" restype="string" datatype="x-android-resource">
-        <source>Your invite has been sent. We will notify you when you receive $5 off :&#41;</source>
-        <target>您的邀请已经发送！当您减免5$时我们会通知您:&#41;</target>
+        <source>Your invite has been sent. We will notify you when you receive ${price} off :&#41;</source>
+        <target>您的邀请已经发送！当您减免${price}时我们会通知您:&#41;</target>
       </trans-unit>
       <trans-unit id="1488" resname="gift_email_title" restype="string" datatype="x-android-resource">
         <source>Invite your contacts</source>
@@ -8012,7 +8012,7 @@
       </trans-unit>
       <trans-unit id="1698" resname="concierge_incentive_text" restype="string" datatype="x-android-resource">
         <source>{doc_prefix} {doc_last_name} appreciates your gratitude and would like to offer you a discount on your\u00a0first\u00a0consult.</source>
-        <target>{doc_prefix} {doc_last_name} 谢谢您的谢意并且愿意为您提供折扣\u00a0first\u00a0咨询。</target>
+        <target state="accepted"> 您的致谢对{doc_prefix} {doc_last_name} 是很大的鼓舞，他／她愿意为您第一次咨询提供折扣。</target>
       </trans-unit>
       <trans-unit id="1699" resname="concierge_incentive_banner" restype="string" datatype="x-android-resource">
         <source>One time offer - $5 off!</source>
@@ -10640,7 +10640,7 @@
       </trans-unit>
       <trans-unit id="2351" resname="see_more_answer" restype="plural" datatype="x-android-resource" extype="other">
         <source>See %d more answers</source>
-        <target>查看%@个回答</target>
+        <target>查看%d个回答</target>
       </trans-unit>
       <trans-unit id="2352" resname="doctors" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor</source>

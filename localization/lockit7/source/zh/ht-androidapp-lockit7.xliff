@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="symptom_condition_back_title" restype="string" datatype="x-android-resource">
+        <source>Start over?</source>
+      </trans-unit>
+      <trans-unit id="2" resname="symptom_condition_back_description" restype="string" datatype="x-android-resource">
+        <source>Would you like to start over with new symptoms or edit your current symptoms?</source>
+      </trans-unit>
+      <trans-unit id="3" resname="symptom_condition_back_start_over" restype="string" datatype="x-android-resource">
+        <source>Start Over</source>
+      </trans-unit>
+      <trans-unit id="4" resname="symptom_condition_back_edit_symptoms" restype="string" datatype="x-android-resource">
+        <source>Edit Symptoms</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/plurals.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource">
+        <source>Thanks! %d symptoms added.\nAny additional symptoms?</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

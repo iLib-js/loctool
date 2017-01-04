@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="2" resname="text_Add_condition_or_symptom" restype="string" datatype="x-android-resource" x-context="sw720dp">
         <source>Add condition or symptom</source>
-        <target>Agregar condición o síntoma</target>
+        <target state="accepted">Agregarla</target>
       </trans-unit>
     </body>
   </file>
@@ -3711,9 +3711,9 @@
         <target>Preguntaste por {0} el {1}. Aún no hay respuestas.</target>
         <note annotates="source">This is a notification message. {0} is a doctor name. {1} is a date.</note>
       </trans-unit>
-      <trans-unit id="679" resname="r432843155" restype="string" datatype="java">
-        <source>You asked for {0} on {1}.</source>
-        <target>Preguntaste por {0} el {1}.</target>
+      <trans-unit id="679" resname="r987402210" restype="string" datatype="java">
+        <source>You asked for {start}{0}{end} on {1}.</source>
+        <target>Preguntaste por {start}{0}{end} el {1}.</target>
         <note annotates="source">This is a notification message.{0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="680" resname="r649803739" restype="string" datatype="java">
@@ -7141,8 +7141,8 @@
         <target>Invitar a amigos y familia</target>
       </trans-unit>
       <trans-unit id="1481" resname="gift_title_concierge" restype="string" datatype="x-android-resource">
-        <source>Give $5, get $5</source>
-        <target>Da $5, obtén $5</target>
+        <source>Give ${price}, get ${price}</source>
+        <target>Da ${price}, obtén ${price}</target>
       </trans-unit>
       <trans-unit id="1482" resname="gift_description_concierge" restype="string" datatype="x-android-resource">
         <source>Get &lt;font color=\‘&#35;FAA500\’&gt;${price}&lt;/font&gt; for each consult purchased through your referral link:</source>
@@ -7153,20 +7153,20 @@
         <target>Comparte en los medios sociales:</target>
       </trans-unit>
       <trans-unit id="1484" resname="gift_refer_text_sms_concierge" restype="string" datatype="x-android-resource">
-        <source>Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions! :&#41; {referral_url}</source>
-        <target>Obtén $5 de descuento en consultas por chat de video o texto con tu médico o especialista en HealthTap—¡asesoría y prescripciones médicas! :&#41; {referral_url}</target>
+        <source>Get ${price} off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions! :&#41; {referral_url}</source>
+        <target>Obtén ${price} de descuento en consultas por chat de video o texto con tu médico o especialista en HealthTap—¡asesoría y prescripciones médicas! :&#41; {referral_url}</target>
       </trans-unit>
       <trans-unit id="1485" resname="gift_refer_linkedin_concierge" restype="string" datatype="x-android-resource">
-        <source>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+$5+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</source>
-        <target>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+$5+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</target>
+        <source>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+${price}+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</source>
+        <target>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+${price}+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</target>
       </trans-unit>
       <trans-unit id="1486" resname="gift_success_title" restype="string" datatype="x-android-resource">
         <source>Invitations sent!</source>
         <target>¡Invitaciones enviadas!</target>
       </trans-unit>
       <trans-unit id="1487" resname="gift_success_text_concierge" restype="string" datatype="x-android-resource">
-        <source>Your invite has been sent. We will notify you when you receive $5 off :&#41;</source>
-        <target>Tu invitación ha sido enviada. Te notificaremos cuando recibas $5 de descuento :&#41;</target>
+        <source>Your invite has been sent. We will notify you when you receive ${price} off :&#41;</source>
+        <target>Tu invitación ha sido enviada. Te notificaremos cuando recibas ${price} de descuento :&#41;</target>
       </trans-unit>
       <trans-unit id="1488" resname="gift_email_title" restype="string" datatype="x-android-resource">
         <source>Invite your contacts</source>
@@ -18273,9 +18273,9 @@
         <target>您在{1}上要求{0}。至今还没有回应</target>
         <note annotates="source">This is a notification message. {0} is a doctor name. {1} is a date.</note>
       </trans-unit>
-      <trans-unit id="679" resname="r432843155" restype="string" datatype="java">
-        <source>You asked for {0} on {1}.</source>
-        <target>您在{1}上要求{0}。</target>
+      <trans-unit id="679" resname="r987402210" restype="string" datatype="java">
+        <source>You asked for {start}{0}{end} on {1}.</source>
+        <target>您在{1}上要求{start}{0}{end}。</target>
         <note annotates="source">This is a notification message.{0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="680" resname="r649803739" restype="string" datatype="java">
@@ -21701,8 +21701,8 @@
         <target>邀请朋友和家人</target>
       </trans-unit>
       <trans-unit id="1481" resname="gift_title_concierge" restype="string" datatype="x-android-resource">
-        <source>Give $5, get $5</source>
-        <target>给予$5，得到$5</target>
+        <source>Give ${price}, get ${price}</source>
+        <target>给予${price}，得到${price}</target>
       </trans-unit>
       <trans-unit id="1482" resname="gift_description_concierge" restype="string" datatype="x-android-resource">
         <source>Get &lt;font color=\‘&#35;FAA500\’&gt;${price}&lt;/font&gt; for each consult purchased through your referral link:</source>
@@ -21713,20 +21713,20 @@
         <target>分享到社交媒体</target>
       </trans-unit>
       <trans-unit id="1484" resname="gift_refer_text_sms_concierge" restype="string" datatype="x-android-resource">
-        <source>Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions! :&#41; {referral_url}</source>
-        <target>在HealthTap上通过视频或文本咨询您的医生或专家，可以减免$5——建议和处方！:&#41;{referral_url}</target>
+        <source>Get ${price} off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions! :&#41; {referral_url}</source>
+        <target>在HealthTap上通过视频或文本咨询您的医生或专家，可以减免${price}——建议和处方！:&#41;{referral_url}</target>
       </trans-unit>
       <trans-unit id="1485" resname="gift_refer_linkedin_concierge" restype="string" datatype="x-android-resource">
-        <source>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+$5+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</source>
-        <target>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+$5+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</target>
+        <source>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+${price}+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</source>
+        <target>https://www.linkedin.com/shareArticle?mini=true&amp;url={referral_url}&amp;title={user_name}+is+gifting+you+${price}+off+to+talk+to+HealthTap+doctors&amp;summary=Get%20%245%20off%20video%20or%20text%20chat%20consults%20with%20your%20doctor%20or%20specialist%20on%20healthtap%e2%80%94advice%20%26%20prescriptions!%20%3a&#41;&amp;source=HealthTap</target>
       </trans-unit>
       <trans-unit id="1486" resname="gift_success_title" restype="string" datatype="x-android-resource">
         <source>Invitations sent!</source>
         <target>发送邀请</target>
       </trans-unit>
       <trans-unit id="1487" resname="gift_success_text_concierge" restype="string" datatype="x-android-resource">
-        <source>Your invite has been sent. We will notify you when you receive $5 off :&#41;</source>
-        <target>您的邀请已经发送！当您减免5$时我们会通知您:&#41;</target>
+        <source>Your invite has been sent. We will notify you when you receive ${price} off :&#41;</source>
+        <target>您的邀请已经发送！当您减免${price}时我们会通知您:&#41;</target>
       </trans-unit>
       <trans-unit id="1488" resname="gift_email_title" restype="string" datatype="x-android-resource">
         <source>Invite your contacts</source>
@@ -22570,7 +22570,7 @@
       </trans-unit>
       <trans-unit id="1698" resname="concierge_incentive_text" restype="string" datatype="x-android-resource">
         <source>{doc_prefix} {doc_last_name} appreciates your gratitude and would like to offer you a discount on your\u00a0first\u00a0consult.</source>
-        <target>{doc_prefix} {doc_last_name} 谢谢您的谢意并且愿意为您提供折扣\u00a0first\u00a0咨询。</target>
+        <target state="accepted"> 您的致谢对{doc_prefix} {doc_last_name} 是很大的鼓舞，他／她愿意为您第一次咨询提供折扣。</target>
       </trans-unit>
       <trans-unit id="1699" resname="concierge_incentive_banner" restype="string" datatype="x-android-resource">
         <source>One time offer - $5 off!</source>
@@ -25198,7 +25198,7 @@
       </trans-unit>
       <trans-unit id="2351" resname="see_more_answer" restype="plural" datatype="x-android-resource" extype="other">
         <source>See %d more answers</source>
-        <target>查看%@个回答</target>
+        <target>查看%d个回答</target>
       </trans-unit>
       <trans-unit id="2352" resname="doctors" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor</source>
@@ -33537,7 +33537,7 @@
         <source>See one more answer</source><target>请查看另一个回答</target>
       </trans-unit>
       <trans-unit id="236" resname="see_more_answer" restype="plural" datatype="x-android-resource" extype="other">
-        <source>See %d more answers</source><target>查看%@个回答</target>
+        <source>See %d more answers</source><target>查看%d个回答</target>
       </trans-unit>
       <trans-unit id="237" resname="doctors" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor</source><target>1位医生</target>
@@ -36188,9 +36188,6 @@
       <trans-unit id="2277" resname="symptom_triage_instructional_search_results_content" restype="string" datatype="x-android-resource">
         <source>What symptom would you like to report today?</source><target>¿Qué síntoma te gustaría reportar hoy?</target>
       </trans-unit>
-      <trans-unit id="2280" resname="symptom_triage_added_symptom_text" restype="string" datatype="x-android-resource">
-        <source>symptom added</source><target>síntoma añadido</target>
-      </trans-unit>
       <trans-unit id="2281" resname="symptom_triage_drawer_add_text" restype="string" datatype="x-android-resource">
         <source>Add new symptom</source><target>Añade nuevo síntoma</target>
       </trans-unit>
@@ -36651,9 +36648,6 @@
       </trans-unit>
       <trans-unit id="2277" resname="symptom_triage_instructional_search_results_content" restype="string" datatype="x-android-resource">
         <source>What symptom would you like to report today?</source><target>您今天希望报告什么症状？</target>
-      </trans-unit>
-      <trans-unit id="2280" resname="symptom_triage_added_symptom_text" restype="string" datatype="x-android-resource">
-        <source>symptom added</source><target>已症状的添加</target>
       </trans-unit>
       <trans-unit id="2281" resname="symptom_triage_drawer_add_text" restype="string" datatype="x-android-resource">
         <source>Add new symptom</source><target>添加新的资料</target>
@@ -39915,7 +39909,7 @@
     <body>
       <trans-unit id="566" resname="r366455092" restype="string" datatype="java">
         <source>Add treatment or procedure</source>
-        <target>Añadir tratamiento o procedimiento</target>
+        <target state="accepted">Añadirlo</target>
       </trans-unit>
       <trans-unit id="567" resname="r448807785" restype="string" datatype="java">
         <source>None at this time</source>
@@ -40458,9 +40452,9 @@
         <target>Pediste {start}{0}{end} el {1}. Ninguna respuesta aún.</target>
         <note annotates="source">This is a notification message. {0} is a doctor name. {1} is a date.</note>
       </trans-unit>
-      <trans-unit id="691" resname="r432843155" restype="string" datatype="java">
-        <source>You asked for {0} on {1}.</source>
-        <target>Pediste {0} el {1}.</target>
+      <trans-unit id="691" resname="r987402210" restype="string" datatype="java">
+        <source>You asked for {start}{0}{end} on {1}.</source>
+        <target>Pediste {start}{0}{end} el {1}.</target>
         <note annotates="source">This is a notification message.{0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="692" resname="r649803739" restype="string" datatype="java">
@@ -44598,9 +44592,9 @@
         <target>您在{1}上询问过{start}{0}{end}。至今还没有回应</target>
         <note annotates="source">This is a notification message. {0} is a doctor name. {1} is a date.</note>
       </trans-unit>
-      <trans-unit id="691" resname="r432843155" restype="string" datatype="java">
-        <source>You asked for {0} on {1}.</source>
-        <target>您在{0}上为{0}询问过。</target>
+      <trans-unit id="691" resname="r987402210" restype="string" datatype="java">
+        <source>You asked for {start}{0}{end} on {1}.</source>
+        <target>您在{1}上为{start}{0}{end}询问过。</target>
         <note annotates="source">This is a notification message.{0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="692" resname="r649803739" restype="string" datatype="java">
@@ -45004,6 +44998,62 @@
       <trans-unit id="771" resname="feed_symptom_find_out_why" restype="string" datatype="x-android-resource">
         <source>Find out why</source>
         <target>找出为什么</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="symptom_condition_back_title" restype="string" datatype="x-android-resource">
+        <source>Start over?</source>
+        <target>¿Volver a empezar?</target>
+      </trans-unit>
+      <trans-unit id="2" resname="symptom_condition_back_description" restype="string" datatype="x-android-resource">
+        <source>Would you like to start over with new symptoms or edit your current symptoms?</source>
+        <target>¿Te gustaría volver a empezar con nuevos síntomas, o editar tus síntomas actuales?</target>
+      </trans-unit>
+      <trans-unit id="3" resname="symptom_condition_back_start_over" restype="string" datatype="x-android-resource">
+        <source>Start Over</source>
+        <target>Volver a Empezar</target>
+      </trans-unit>
+      <trans-unit id="4" resname="symptom_condition_back_edit_symptoms" restype="string" datatype="x-android-resource">
+        <source>Edit Symptoms</source>
+        <target>Editar Síntomas</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/plurals.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource">
+        <source>Thanks! %d symptoms added.\nAny additional symptoms?</source>
+        <target>¡Gracias! %d síntomas añadidos.\n¿Algún síntoma adicional?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="symptom_condition_back_title" restype="string" datatype="x-android-resource">
+        <source>Start over?</source>
+        <target>重新开始？</target>
+      </trans-unit>
+      <trans-unit id="2" resname="symptom_condition_back_description" restype="string" datatype="x-android-resource">
+        <source>Would you like to start over with new symptoms or edit your current symptoms?</source>
+        <target>您希望重新开始新的症状还是编辑您当前的症状？</target>
+      </trans-unit>
+      <trans-unit id="3" resname="symptom_condition_back_start_over" restype="string" datatype="x-android-resource">
+        <source>Start Over</source>
+        <target>重新开始</target>
+      </trans-unit>
+      <trans-unit id="4" resname="symptom_condition_back_edit_symptoms" restype="string" datatype="x-android-resource">
+        <source>Edit Symptoms</source>
+        <target>编辑症状</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/plurals.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource">
+        <source>Thanks! %d symptoms added.\nAny additional symptoms?</source>
+        <target>谢谢！已添加%d个症状。\n还有其他症状吗？</target>
       </trans-unit>
     </body>
   </file>
