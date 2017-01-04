@@ -121,7 +121,7 @@ describe 'HamlLocalizer' do
       orig = '          (It may take about 1-2 minutes for the video to load)'
       from_to = {'(It may take about 1-2 minutes for the video to load)' => 'FOO'}
       ret = replace_with_translations2(orig, from_to)
-      expect(ret.include?('FOO')).to be_truthy
+      ret.include?('FOO').should be_true
     end
 
     it 'should work' do
