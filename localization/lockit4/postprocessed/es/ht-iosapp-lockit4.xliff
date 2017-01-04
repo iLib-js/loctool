@@ -1036,7 +1036,7 @@
       </trans-unit>
       <trans-unit id="184" resname="Gender" restype="string" datatype="x-objective-c">
         <source>Gender</source>
-        <target>Género</target>
+        <target state="accepted">Sexo</target>
       </trans-unit>
       <trans-unit id="185" resname="Height" restype="string" datatype="x-objective-c">
         <source>Height</source>
