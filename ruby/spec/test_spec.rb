@@ -84,6 +84,14 @@ describe 'HamlLocalizer' do
       ret.include?('FOO').should be_true
     end
 
+    it 'should not crunch spaces before and after html tags' do
+      # from app/views/pages/feelGood/sign_up_v2.html.haml
+      orig = '          I agree to HealthTap\'s <a href=\'/terms\' target=\'_blank\'>Terms</a> and <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Privacy Policy</a>'
+      from_to = {'I agree to HealthTap\'s <a href=\'/terms\' target=\'_blank\'>Terms</a> and <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Privacy Policy</a>' => 'Acepto los <a href=\'/terms\' target=\'_blank\'>Términos</a> y <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Política de Privacidad</a> de HealthTap'}
+      ret = replace_with_translations2(orig, from_to)
+      expect(ret.include?('Acepto los <a href=\'/terms\' target=\'_blank\'>Términos</a> y <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Política de Privacidad</a> de HealthTap')).to be_truthy
+    end
+
     it 'should not break strings on slash lines' do
       # from app/views/layouts/_enterprise_employee_search_header.html.haml
       orig = '  /   Send your question'
@@ -106,6 +114,14 @@ describe 'HamlLocalizer' do
       from_to = {'Follow' => 'FOO'}
       ret = replace_with_translations2(orig, from_to)
       ret.include?('FOO').should be_true
+    end
+
+    it 'should localize this text' do
+      # from app/views/layouts/_expert_external_content_header.html.haml
+      orig = '          (It may take about 1-2 minutes for the video to load)'
+      from_to = {'(It may take about 1-2 minutes for the video to load)' => 'FOO'}
+      ret = replace_with_translations2(orig, from_to)
+      expect(ret.include?('FOO')).to be_truthy
     end
 
     it 'should work' do
