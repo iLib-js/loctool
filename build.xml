@@ -59,14 +59,14 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 
 	<target name="debug.loctool" description="Debug the whole loc tool">
 		<sequential>
-			<exec osfamily="unix" executable="${node}/bin/node" dir="../ht-androidapp" failifexecutionfails="true" failonerror="true">
+			<exec osfamily="unix" executable="${node}/bin/node" dir="../ht-webapp12" failifexecutionfails="true" failonerror="true">
 				<env key="PATH" path="${node}/bin:${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
 				<arg line="--inspect"/>
 				<arg line="--debug-brk"/>
 				<arg line="../loctool/loctool.js"/>
 			</exec>
-			<exec osfamily="windows" executable="${node}/bin/node.exe" dir="../ht-androidapp" failifexecutionfails="true"  failonerror="true">
+			<exec osfamily="windows" executable="${node}/bin/node.exe" dir="../ht-webapp12" failifexecutionfails="true"  failonerror="true">
 				<env key="PATH" path="${node}/bin;${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
 				<arg line="--inspect"/>
@@ -288,6 +288,22 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testYamlFileType.js" dir="${build.test}"/>
 	</target>
 
+	<target name="test.yamlresourcefile" description="Run only the tests for the Yaml resource file object">
+		<run script="${build.test}/testYamlResourceFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.yamlresourcefile" description="Debug only the tests for the Yaml resource file object">
+		<debug script="${build.test}/testYamlResourceFile.js" dir="${build.test}"/>
+	</target>
+
+	<target name="test.yamlresourcefiletype" description="Run only the tests for the Yaml resource file type object">
+		<run script="${build.test}/testYamlResourceFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.yamlresourcefiletype" description="Debug only the tests for the Yaml resource file type object">
+		<debug script="${build.test}/testYamlResourceFileType.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.rubyfile" description="Run only the tests for the Ruby file object">
 		<run script="${build.test}/testRubyFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
@@ -312,7 +328,7 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testHamlFileType.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype">
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.dbtranslationset,test.androidlayoutfile,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype">
 	</target>
 
 	<macrodef name="runsql">

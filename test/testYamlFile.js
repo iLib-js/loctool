@@ -6,10 +6,11 @@
 
 if (!YamlFile) {
 	var YamlFile = require("../lib/YamlFile.js");
-    var ResourceString = require("../lib/ResourceString.js");
+    var ContextResourceString = require("../lib/ContextResourceString.js");
     var ResourceArray = require("../lib/ResourceArray.js");
     var ResourcePlural = require("../lib/ResourcePlural.js");
     var WebProject =  require("../lib/WebProject.js");
+    var TranslationSet =  require("../lib/TranslationSet.js");
 }
 
 function diff(a, b) {
@@ -39,16 +40,19 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
 
         var y = new YamlFile({
             project: p,
-        	pathName: "a/b/en-US.yml"
+        	pathName: "x/y/en-US.yml"
         });
         test.ok(y);
         
-        test.equal(y.getPath(), "a/b/en-US.yml");
+        test.equal(y.getPath(), "x/y/en-US.yml");
 
         test.done();
     },
@@ -57,7 +61,10 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	sourceLocale: "en-US"
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
 
         var y = new YamlFile({
@@ -75,8 +82,11 @@ module.exports = {
         test.expect(6);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -109,11 +119,14 @@ module.exports = {
     },
 
     testYamlFileParseWithSubkeys: function(test) {
-        test.expect(22);
+        test.expect(28);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -147,10 +160,12 @@ module.exports = {
         test.equal(r.length, 6);
         
         test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getLocale(), "en-US"); // source locale
         test.equal(r[0].getKey(), "r9834724545");
         test.equal(r[0].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[1].getSource(), "Our internship program");
+        test.equal(r[1].getLocale(), "en-US"); // source locale
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
@@ -158,20 +173,103 @@ module.exports = {
         		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
+        test.equal(r[2].getLocale(), "en-US"); // source locale
         test.equal(r[2].getKey(), "r6782977423");
         test.equal(r[2].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
         test.equal(r[3].getSource(), "Working at HealthTap");
+        test.equal(r[3].getLocale(), "en-US"); // source locale
         test.equal(r[3].getKey(), "r4524523454");
         test.equal(r[3].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[4].getSource(), "Jobs");
+        test.equal(r[4].getLocale(), "en-US"); // source locale
         test.equal(r[4].getKey(), "r3254356823");
         test.equal(r[4].getContext(), "feelgood/foo/ssss/asdf.en-US.html.haml");
 
         test.equal(r[5].getSource(), "test of many levels");
+        test.equal(r[5].getLocale(), "en-US"); // source locale
         test.equal(r[5].getKey(), "test");
-        test.equal(r[5].getContext(), "foo/bar/asdf");
+        test.equal(r[5].getContext(), "foo@bar@asdf");
+
+        test.done();
+    },
+
+    testYamlFileParseWithLocaleAndSubkeys: function(test) {
+        test.expect(28);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+        
+        yml.parse(
+        		'---\n' +
+        		"zh_Hans_CN:\n" +
+        		"  feelgood/foo/bar/x.en-US.html.haml:\n" +
+        		'    r9834724545: Jobs\n' +
+        		'    r9483762220: Our internship program\n' +
+        		'    r6782977423: |\n' +
+        		'      Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'      and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'      directly from experienced, successful entrepreneurs.\n' +
+				"  feelgood/foo/ssss/asdf.en-US.html.haml:\n" +
+				'    r4524523454: Working at HealthTap\n' +
+				'    r3254356823: Jobs\n' +
+				'  foo:\n' +
+				'    bar:\n' +
+				'      asdf:\n' +
+				'        test: test of many levels\n');
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getAll();
+        test.ok(r);
+        
+        test.equal(r.length, 6);
+        
+        // locale is not special for this type of yml file, so it should appear in the context
+        test.equal(r[0].getSource(), "Jobs");
+        test.equal(r[0].getLocale(), "en-US");
+        test.equal(r[0].getKey(), "r9834724545");
+        test.equal(r[0].getContext(), "zh_Hans_CN@feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[1].getSource(), "Our internship program");
+        test.equal(r[1].getLocale(), "en-US");
+        test.equal(r[1].getKey(), "r9483762220");
+        test.equal(r[1].getContext(), "zh_Hans_CN@feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[2].getSource(), 
+        		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
+        		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
+        		'directly from experienced, successful entrepreneurs.\n');
+        test.equal(r[2].getLocale(), "en-US");
+        test.equal(r[2].getKey(), "r6782977423");
+        test.equal(r[2].getContext(), "zh_Hans_CN@feelgood/foo/bar/x.en-US.html.haml");
+
+        test.equal(r[3].getSource(), "Working at HealthTap");
+        test.equal(r[3].getLocale(), "en-US");
+        test.equal(r[3].getKey(), "r4524523454");
+        test.equal(r[3].getContext(), "zh_Hans_CN@feelgood/foo/ssss/asdf.en-US.html.haml");
+
+        test.equal(r[4].getSource(), "Jobs");
+        test.equal(r[4].getLocale(), "en-US");
+        test.equal(r[4].getKey(), "r3254356823");
+        test.equal(r[4].getContext(), "zh_Hans_CN@feelgood/foo/ssss/asdf.en-US.html.haml");
+
+        test.equal(r[5].getSource(), "test of many levels");
+        test.equal(r[5].getLocale(), "en-US");
+        test.equal(r[5].getKey(), "test");
+        test.equal(r[5].getContext(), "zh_Hans_CN@foo@bar@asdf");
 
         test.done();
     },
@@ -180,8 +278,11 @@ module.exports = {
         test.expect(4);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -192,7 +293,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.equal(set.size(), 0);
 
-        yml.parse('---\n' +
+        yml.parse(
         		'Working_at_HealthTap: Working at HealthTap\n' +
         		'Jobs: Jobs\n' +
         		'Our_internship_program: Our internship program\n' +
@@ -212,8 +313,11 @@ module.exports = {
         test.expect(14);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -260,8 +364,11 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -283,8 +390,11 @@ module.exports = {
         test.expect(2);
 
         var p = new WebProject({
-        	id: "ht-iosapp",
-			sourceLocale: "en-US"
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -308,7 +418,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -319,14 +432,14 @@ module.exports = {
         test.ok(yml);
         
         [
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "de-DE",
         		key: "source_text",
         		source: "Quellen\"text",
         		comment: "foo"
         	}),
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "de-DE",
         		key: "more_source_text",
@@ -338,15 +451,13 @@ module.exports = {
         });
 
         diff(yml.getContent(),
-            	'de_DE:\n' +
-            	'  source_text: Quellen\"text\n' +
-            	'  more_source_text: mehr Quellen\"text\n'
-            );
+    		'source_text: Quellen\"text\n' +
+        	'more_source_text: mehr Quellen\"text\n'
+        );
 
         test.equal(yml.getContent(),
-        	'de_DE:\n' +
-        	'  source_text: Quellen\"text\n' +
-        	'  more_source_text: mehr Quellen\"text\n'
+        	'source_text: Quellen\"text\n' +
+        	'more_source_text: mehr Quellen\"text\n'
         );
         
         test.done();
@@ -357,7 +468,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -368,14 +482,14 @@ module.exports = {
         test.ok(yml);
         
         [
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "zh-Hans-CN",
         		key: "• &amp;nbsp; Address a health or healthy living topic",
         		source: "• &amp;nbsp; 解决健康生活相关的话题",
         		comment: " "
         	}),
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "zh-Hans-CN",
         		key: "&apos;&#41;, url&#40;imgs/masks/top_bar",
@@ -387,15 +501,13 @@ module.exports = {
         });
         
         diff(yml.getContent(),
-            	"zh_Hans_CN:\n" +
-            	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
-            	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
+            	"• &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
+            	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
     	    );
 
         test.equal(yml.getContent(),
-        	"zh_Hans_CN:\n" +
-        	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
-        	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
+        	"• &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
+        	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
         );
         
         test.done();
@@ -406,7 +518,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -417,14 +532,14 @@ module.exports = {
         test.ok(yml);
         
         [
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "zh-Hans-CN",
         		key: "short key",
         		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
         		comment: " "
         	}),
-        	new ResourceString({
+        	new ContextResourceString({
         		project: "ht-webapp12",
         		locale: "zh-Hans-CN",
         		key: "A very long key that happens to have \n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.",
@@ -436,19 +551,75 @@ module.exports = {
         });
         
         diff(yml.getContent(),
-	    	"zh_Hans_CN:\n" +
-	    	"  short key: |-\n" +
-	    	"    this is text that is relatively long and can run past the end of the page\n" +
-	    	"    So, we put a new line in the middle of it.\n" +
-	    	"  \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
+	    	"short key: |-\n" +
+	    	"  this is text that is relatively long and can run past the end of the page\n" +
+	    	"  So, we put a new line in the middle of it.\n" +
+	    	"\"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
 	    );
 
         test.equal(yml.getContent(),
-	    	"zh_Hans_CN:\n" +
-	    	"  short key: |-\n" +
-	    	"    this is text that is relatively long and can run past the end of the page\n" +
-	    	"    So, we put a new line in the middle of it.\n" +
-	    	"  \"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
+	    	"short key: |-\n" +
+	    	"  this is text that is relatively long and can run past the end of the page\n" +
+	    	"  So, we put a new line in the middle of it.\n" +
+	    	"\"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
+        );
+        
+        test.done();
+    },
+
+    testYamlFileGetContentWithSubkeys: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./zh.yml",
+        	locale: "zh-Hans-CN"
+        });
+        test.ok(yml);
+        
+        [
+        	new ContextResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "key1",
+        		source: "medium length text that doesn't go beyond one line",
+        		context: "foo@bar",
+        		comment: " "
+        	}),
+        	new ContextResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "key2",
+        		source: "short text",
+        		context: "foo@bar@asdf",
+        		comment: "bar"
+        	})
+        ].forEach(function(res) {
+        	yml.addResource(res);
+        });
+        
+        diff(yml.getContent(),
+	    	"foo:\n" +
+	    	"  bar:\n" +
+	    	"    key1: medium length text that doesn't go beyond one line\n" +
+	    	"    asdf:\n" +
+	    	"      key2: short text\n"
+	    );
+
+        test.equal(yml.getContent(),
+	    	"foo:\n" +
+	    	"  bar:\n" +
+	    	"    key1: medium length text that doesn't go beyond one line\n" +
+	    	"    asdf:\n" +
+	    	"      key2: short text\n"
         );
         
         test.done();
@@ -459,7 +630,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -479,7 +653,10 @@ module.exports = {
 
         var p = new WebProject({
         	id: "ht-webapp12",
-			sourceLocale: "en-US"
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
         }, "./testfiles");
         
         var yml = new YamlFile({
@@ -494,11 +671,502 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ResourceString.hashKey("ht-webapp12", "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger."));
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", undefined, "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.", "x-yaml"));
         test.ok(r);
         
         test.equal(r.getSource(), "Dr. Livingston serves on the Medical Advisory Board for HealthTap and he is the Chief Medical officer for Healthcare Transformation Solutions. He is on Twitter as @macobgyn and is an active doctor blogger.");
         test.equal(r.getKey(), "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.");
+        
+        test.done();
+    },
+    
+    testYamlFileRealContent2: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./test2.yml",
+        	locale: "en-US"
+        });
+        test.ok(yml);
+        
+        yml.extract();
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "saved_someone_else_life", "en-US", "subject", "x-yaml"));
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Feel good! Someone said a doctor’s answer to your question saved their life:");
+        test.equal(r.getKey(), "subject");
+        test.equal(r.getLocale(), "en-US");
+        test.equal(r.getContext(), "saved_someone_else_life");
+        
+        test.done();
+    },
+    
+    testYamlFileAtInKeyName: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./test2.yml",
+        	locale: "en-US"
+        });
+        test.ok(yml);
+        
+        yml.extract();
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
+        test.ok(r);
+        
+        test.equal(r.getSource(), "%1, %2 has answered a question you asked!");
+        test.equal(r.getKey(), "email_subject");
+        test.equal(r.getLocale(), "en-US");
+        test.equal(r.getContext(), "member_question_asked\\@answered");
+        
+        test.done();
+    },
+    
+    testYamlFileRightResourceType: function(test) {
+        test.expect(4);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+        
+        var yml = new YamlFile({
+        	project: p, 
+        	pathName: "./test2.yml",
+        	locale: "en-US"
+        });
+        test.ok(yml);
+        
+        yml.extract();
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
+        test.ok(r);
+        
+        test.ok(r instanceof ContextResourceString);
+        
+        test.done();
+    },
+    
+    testYamlFileParseIgnoreNonStringValues: function(test) {
+    	test.expect(20);
+
+    	var p = new WebProject({
+    		id: "ht-webapp12",
+    		sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+    	}, "./testfiles");
+
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+
+    	yml.parse(
+			'---\n' +
+			'expert_license_expired:\n' +
+			'  subject: "ALERT: Your %1 license has expired"\n' +
+			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
+			'  ctoa: \'Update license info\'\n' +
+			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
+			'  global_link: doctor_settings_prime\n' +
+			'  sms_data: ""\n' +
+			'  setting_name: expert_license_updates\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  night_blackout: true\n'
+    	);
+
+    	var set = yml.getTranslationSet();
+    	test.ok(set);
+
+    	var r = set.getAll();
+    	test.ok(r);
+
+    	test.equal(r.length, 4);
+
+    	test.equal(r[0].getSource(), "ALERT: Your %1 license has expired");
+    	test.equal(r[0].getLocale(), "en-US");
+    	test.equal(r[0].getKey(), "subject");
+    	test.equal(r[0].getContext(), "expert_license_expired");
+
+    	test.equal(r[1].getSource(), "Add your updated license information to resume helping patients without further disruption.");
+    	test.equal(r[1].getLocale(), "en-US");
+    	test.equal(r[1].getKey(), "body");
+    	test.equal(r[1].getContext(), "expert_license_expired");
+
+    	test.equal(r[2].getSource(), 'Update license info');
+    	test.equal(r[2].getLocale(), "en-US");
+    	test.equal(r[2].getKey(), "ctoa");
+    	test.equal(r[2].getContext(), "expert_license_expired");
+
+    	test.equal(r[3].getSource(), "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption");
+    	test.equal(r[3].getLocale(), "en-US");
+    	test.equal(r[3].getKey(), "push_data");
+    	test.equal(r[3].getContext(), "expert_license_expired");
+
+    	test.done();
+    },
+
+    testYamlFileParseIgnoreStringLikeIdValues: function(test) {
+    	test.expect(4);
+
+    	var p = new WebProject({
+    		id: "ht-webapp12",
+    		sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+    	}, "./testfiles");
+
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+
+    	yml.parse(
+			'---\n' +
+			'expert_license_expired:\n' +
+			'  subject: "ALERT: Your %1 license has expired"\n' +
+			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
+			'  ctoa: \'Update license info\'\n' +
+			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
+			'  global_link: doctor_settings_prime\n' +
+			'  sms_data: ""\n' +
+			'  setting_name: expert_license_updates\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  night_blackout: true\n'
+    	);
+
+    	var set = yml.getTranslationSet();
+    	test.ok(set);
+
+    	var r = set.getBy({
+    		reskey: "global_link"
+    	});
+    	test.ok(r);
+    	test.equal(r.length, 0);
+
+    	test.done();
+    },
+
+    testYamlFileParseIgnoreBooleanValues: function(test) {
+    	test.expect(4);
+
+    	var p = new WebProject({
+    		id: "ht-webapp12",
+    		sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+    	}, "./testfiles");
+
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+
+    	yml.parse(
+			'---\n' +
+			'expert_license_expired:\n' +
+			'  subject: "ALERT: Your %1 license has expired"\n' +
+			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
+			'  ctoa: \'Update license info\'\n' +
+			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
+			'  global_link: doctor_settings_prime\n' +
+			'  sms_data: ""\n' +
+			'  setting_name: expert_license_updates\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  night_blackout: true\n'
+    	);
+
+    	var set = yml.getTranslationSet();
+    	test.ok(set);
+
+    	var r = set.getBy({
+    		reskey: "night_blackout"
+    	});
+    	test.ok(r);
+    	test.equal(r.length, 0);
+
+    	test.done();
+    },
+
+    testYamlFileParseIgnoreEmptyValues: function(test) {
+    	test.expect(4);
+
+    	var p = new WebProject({
+    		id: "ht-webapp12",
+    		sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+    	}, "./testfiles");
+
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+
+    	yml.parse(
+			'---\n' +
+			'expert_license_expired:\n' +
+			'  subject: "ALERT: Your %1 license has expired"\n' +
+			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
+			'  ctoa: \'Update license info\'\n' +
+			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
+			'  global_link: doctor_settings_prime\n' +
+			'  sms_data: ""\n' +
+			'  setting_name: expert_license_updates\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  night_blackout: true\n'
+    	);
+
+    	var set = yml.getTranslationSet();
+    	test.ok(set);
+
+    	var r = set.getBy({
+    		reskey: "sms_data"
+    	});
+    	test.ok(r);
+    	test.equal(r.length, 0);
+
+    	test.done();
+    },
+
+    testYamlFileParseIgnoreEmptyValues: function(test) {
+    	test.expect(4);
+
+    	var p = new WebProject({
+    		id: "ht-webapp12",
+    		sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+    	}, "./testfiles");
+
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+
+    	yml.parse(
+			'---\n' +
+			'expert_license_expired:\n' +
+			'  subject: "ALERT: Your %1 license has expired"\n' +
+			'  body: \'Add your updated license information to resume helping patients without further disruption.\'\n' +
+			'  ctoa: \'Update license info\'\n' +
+			'  push_data: "ALERT: Your %1 license has expired. Add your updated license information to resume helping patients without further disruption"\n' +
+			'  global_link: doctor_settings_prime\n' +
+			'  sms_data: ""\n' +
+			'  expert_campaign: 2\n' +
+			'  setting_name: expert_license_updates\n' +
+			'  daily_limit_exception_email: true\n' +
+			'  night_blackout: true\n'
+    	);
+
+    	var set = yml.getTranslationSet();
+    	test.ok(set);
+
+    	var r = set.getBy({
+    		reskey: "expert_campaign"
+    	});
+    	test.ok(r);
+    	test.equal(r.length, 0);
+
+    	test.done();
+    },
+    
+    testYamlFileLocalizeText: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+        }, "./testfiles");
+        
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+        
+        yml.parse(
+			'doctor_thanked_note_life_saved:\n' +
+			'  email_subject: \'%1, you’re saving lives!\'\n' +
+			'  subject: You’ve been thanked for saving a life!\n' +
+			'  body: “%1”\n' +
+			'  ctoa: View %1\n' +
+			'  push_data: You’ve saved a life! View %1\n' +
+			'  global_link: generic_link\n' +
+			'  setting_name: doctor_thanked_note_life_saved\n' +
+			'  daily_limit_exception_email: true\n'
+		);
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('%1, you’re saving lives!', "doctor_thanked_note_life_saved");
+        test.ok(r);
+        test.equal(r.getSource(), '%1, you’re saving lives!');
+        test.equal(r.getKey(), 'email_subject');
+        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+        
+        var translations = new TranslationSet();
+        translations.add(new ContextResourceString({
+        	project: "ht-webapp12",
+        	context: "doctor_thanked_note_life_saved",
+        	key: 'email_subject',
+        	source: '%1, vous sauvez des vides!',
+        	locale: "fr-FR",
+        	datatype: "x-yaml"
+        }));
+
+        var actual = yml.localizeText(translations, "fr-FR");
+        
+        var expected =
+			'doctor_thanked_note_life_saved:\n' +
+			'  email_subject: \'%1, vous sauvez des vides!\'\n' +
+			'  subject: You’ve been thanked for saving a life!\n' +
+			'  body: “%1”\n' +
+			'  ctoa: View %1\n' +
+			'  push_data: You’ve saved a life! View %1\n' +
+			'  global_link: generic_link\n' +
+			'  setting_name: doctor_thanked_note_life_saved\n' +
+			'  daily_limit_exception_email: true\n';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+        
+        test.done();
+    },
+    
+    testYamlFileLocalizeTextMultiple: function(test) {
+        test.expect(15);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US",
+    		resourceDirs: {
+    			yml: "a/b"
+    		}
+        }, "./testfiles");
+        
+    	var yml = new YamlFile({
+    		project: p
+    	});
+    	test.ok(yml);
+        
+        yml.parse(
+			'doctor_thanked_note_life_saved:\n' +
+			'  email_subject: \'%1, you’re saving lives!\'\n' +
+			'  subject: You’ve been thanked for saving a life!\n' +
+			'  body: “%1”\n' +
+			'  ctoa: View %1\n' +
+			'  push_data: You’ve saved a life! View %1\n' +
+			'  global_link: generic_link\n' +
+			'  setting_name: doctor_thanked_note_life_saved\n' +
+			'  daily_limit_exception_email: true\n'
+		);
+        
+        var set = yml.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('%1, you’re saving lives!', "doctor_thanked_note_life_saved");
+        test.ok(r);
+        test.equal(r.getSource(), '%1, you’re saving lives!');
+        test.equal(r.getKey(), 'email_subject');
+        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+        
+        r = set.getBySource('You’ve been thanked for saving a life!', "doctor_thanked_note_life_saved");
+        test.ok(r);
+        test.equal(r.getSource(), 'You’ve been thanked for saving a life!');
+        test.equal(r.getKey(), 'subject');
+        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+
+        r = set.getBySource('You’ve saved a life! View %1', "doctor_thanked_note_life_saved");
+        test.ok(r);
+        test.equal(r.getSource(), 'You’ve saved a life! View %1');
+        test.equal(r.getKey(), 'push_data');
+        test.equal(r.getContext(), "doctor_thanked_note_life_saved");
+        
+        var translations = new TranslationSet();
+        translations.addAll([
+        	new ContextResourceString({
+	        	project: "ht-webapp12",
+	        	context: "doctor_thanked_note_life_saved",
+	        	key: 'email_subject',
+	        	source: '%1, vous sauvez des vies!',
+	        	locale: "fr-FR",
+	        	datatype: "x-yaml"
+	        }),
+        	new ContextResourceString({
+	        	project: "ht-webapp12",
+	        	context: "doctor_thanked_note_life_saved",
+	        	key: 'subject',
+	        	source: 'Vous avez été remercié pour sauver une vie!',
+	        	locale: "fr-FR",
+	        	datatype: "x-yaml"
+	        }),
+        	new ContextResourceString({
+	        	project: "ht-webapp12",
+	        	context: "doctor_thanked_note_life_saved",
+	        	key: 'push_data',
+	        	source: 'Vous avez sauvé une vie! Voir %1',
+	        	locale: "fr-FR",
+	        	datatype: "x-yaml"
+	        }),
+	    ]);
+
+        var actual = yml.localizeText(translations, "fr-FR");
+        
+        var expected =
+			'doctor_thanked_note_life_saved:\n' +
+			'  email_subject: \'%1, vous sauvez des vies!\'\n' +
+			'  subject: Vous avez été remercié pour sauver une vie!\n' +
+			'  body: “%1”\n' +
+			'  ctoa: View %1\n' +
+			'  push_data: Vous avez sauvé une vie! Voir %1\n' +
+			'  global_link: generic_link\n' +
+			'  setting_name: doctor_thanked_note_life_saved\n' +
+			'  daily_limit_exception_email: true\n';
+
+        diff(actual, expected);
+        test.equal(actual, expected);
         
         test.done();
     }

@@ -7,7 +7,7 @@
 if (!AndroidLayoutFile) {
     var AndroidLayoutFile = require("../lib/AndroidLayoutFile.js");
     var AndroidProject =  require("../lib/AndroidProject.js");
-    var AndroidResourceString =  require("../lib/AndroidResourceString.js");
+    var ContextResourceString =  require("../lib/ContextResourceString.js");
 }
 
 module.exports = {
@@ -112,7 +112,7 @@ module.exports = {
         var set = alf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "text_This_is_a_test"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "text_This_is_a_test", "x-android-resource"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -221,7 +221,7 @@ module.exports = {
         var set = alf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "text_This_is_a_test"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "text_This_is_a_test", "x-android-resource"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -746,7 +746,7 @@ module.exports = {
         
         test.equal(resources.length, 1);
         
-        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "text_This_is_a_test"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "text_This_is_a_test", "x-android-resource"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");

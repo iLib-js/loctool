@@ -6,7 +6,7 @@
 
 if (!ResourceString) {
     var ResourceString = require("../lib/ResourceString.js");
-    var AndroidResourceString = require("../lib/AndroidResourceString.js");
+    var ContextResourceString = require("../lib/ContextResourceString.js");
     var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
     var ilib = require("ilib");
     var ResBundle = require("ilib/lib/ResBundle");
@@ -636,7 +636,7 @@ module.exports = {
     testResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(ResourceString.hashKey("ht-iosapp", "de-DE", "This is a test"), "rs_ht-iosapp_de-DE_This is a test");
+        test.equal(ResourceString.hashKey("ht-iosapp", "de-DE", "This is a test", "html"), "rs_ht-iosapp_de-DE_This is a test_html");
         
         test.done();
     },
@@ -644,7 +644,7 @@ module.exports = {
     testResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(ResourceString.hashKey(undefined, "de-DE", undefined), "rs__de-DE_");
+        test.equal(ResourceString.hashKey(undefined, "de-DE", undefined, undefined), "rs__de-DE__");
         
         test.done();
     },
@@ -657,45 +657,47 @@ module.exports = {
         	key: "This is a test",
         	source: "This is a test",
         	locale: "de-DE",
-        	pathName: "a/b/c.java"
+        	pathName: "a/b/c.java",
+        	datatype: "html"
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "rs_ht-iosapp_de-DE_This is a test");
+        test.equal(rs.hashKey(), "rs_ht-iosapp_de-DE_This is a test_html");
         
         test.done();
     },
     
-    testAndroidResourceStringStaticHashKey: function(test) {
+    testContextResourceStringStaticHashKey: function(test) {
         test.expect(1);
 
-        test.equal(AndroidResourceString.hashKey("ht-iosapp", "foobar", "de-DE", "This is a test"), "ars_ht-iosapp_foobar_de-DE_This is a test");
+        test.equal(ContextResourceString.hashKey("ht-iosapp", "foobar", "de-DE", "This is a test", "html"), "crs_ht-iosapp_foobar_de-DE_This is a test_html");
         
         test.done();
     },
 
-    testAndroidResourceStringStaticHashKeyMissingParts: function(test) {
+    testContextResourceStringStaticHashKeyMissingParts: function(test) {
         test.expect(1);
 
-        test.equal(AndroidResourceString.hashKey(undefined, undefined, "de-DE", undefined), "ars___de-DE_");
+        test.equal(ContextResourceString.hashKey(undefined, undefined, "de-DE", undefined, undefined), "crs___de-DE__");
         
         test.done();
     },
 
-    testAndroidResourceStringHashKey: function(test) {
+    testContextResourceStringHashKey: function(test) {
         test.expect(2);
 
-        var rs = new AndroidResourceString({
+        var rs = new ContextResourceString({
         	project: "ht-iosapp",
         	context: "foobar",
         	key: "This is a test",
         	source: "This is a test",
         	locale: "de-DE",
-        	pathName: "a/b/c.java"
+        	pathName: "a/b/c.java",
+        	datatype: "html"
         });
         test.ok(rs);
         
-        test.equal(rs.hashKey(), "ars_ht-iosapp_foobar_de-DE_This is a test");
+        test.equal(rs.hashKey(), "crs_ht-iosapp_foobar_de-DE_This is a test_html");
         
         test.done();
     },

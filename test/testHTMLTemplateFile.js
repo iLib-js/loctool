@@ -9,7 +9,8 @@ var fs = require("fs");
 
 if (!HTMLTemplateFile) {
     var HTMLTemplateFile = require("../lib/HTMLTemplateFile.js");
-
+    var HTMLTemplateFileType = require("../lib/HTMLTemplateFileType.js");
+    
     var WebProject =  require("../lib/WebProject.js");
     var TranslationSet =  require("../lib/TranslationSet.js");
     var ResourceString =  require("../lib/ResourceString.js");
@@ -110,7 +111,7 @@ module.exports = {
         var set = htf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ResourceString.hashKey(undefined, "en-US", "This is a test"));
+        var r = set.get(ResourceString.hashKey(undefined, "en-US", "This is a test", "html"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -1014,10 +1015,10 @@ module.exports = {
         test.equal(r.getSource(), "Description");
         test.equal(r.getKey(), "Description");
        
-        r = set.getBySource('Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
+        r = set.getBySource('Authored by');
         test.ok(r);
-        test.equal(r.getSource(), 'Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
-        test.equal(r.getKey(), 'Authored by <a class="actor_link bold" href="#expert_vip/<%=val.author.id%>/"><%=val.author.full_name%></a>');
+        test.equal(r.getSource(), 'Authored by');
+        test.equal(r.getKey(), 'Authored by');
 
         r = set.getBySource('and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
         test.ok(r);
@@ -1236,7 +1237,7 @@ module.exports = {
         test.done();
     },
 
-    testHTMLTemplateFileSkipScript: function(test) {
+    testHTMLTemplateFileLocalizeTextSkipScript: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -1935,7 +1936,7 @@ module.exports = {
     		'         <% if(doctor){ %>\n' +
     		'          <a class="doctor-avatar" href="/experts/<%= doctor.id %>" style="background-image: url(<%= doctor.avatar_transparent_circular %>);"></a>\n' +
     		'        <% } %>\n' +
-    		'        <input class="askInputArea-cookie desktop" maxlength="150" placeholder="<%= placeholder %>">\n' +
+    		'        <input class="askInputArea-cookie desktop" maxlength="150" placeholder=\'<%= placeholder %>\'>\n' +
     		'        <span class="askSendArea-cookie">\n' +
     		'          <a class="askSendBtn-cookie" href="<%= doctor ? \'/experts/\' + doctor.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
     		'            <div class="desktop-btn">Envoyer la question</div>\n' +
@@ -1946,6 +1947,7 @@ module.exports = {
     		'    </div>\n' +
     		'</div>';
         
+        diff(content, expected);
     	test.equal(content, expected);
         
         content = fs.readFileSync(path.join(base, "testfiles/tmpl/CookieFlowConciergeTemplate.de-DE.tmpl.html"), "utf-8");
@@ -1976,7 +1978,7 @@ module.exports = {
     		'         <% if(doctor){ %>\n' +
     		'          <a class="doctor-avatar" href="/experts/<%= doctor.id %>" style="background-image: url(<%= doctor.avatar_transparent_circular %>);"></a>\n' +
     		'        <% } %>\n' +
-    		'        <input class="askInputArea-cookie desktop" maxlength="150" placeholder="<%= placeholder %>">\n' +
+    		'        <input class="askInputArea-cookie desktop" maxlength="150" placeholder=\'<%= placeholder %>\'>\n' +
     		'        <span class="askSendArea-cookie">\n' +
     		'          <a class="askSendBtn-cookie" href="<%= doctor ? \'/experts/\' + doctor.id + \'/message?from_seo=1\' : \'/send_question\' %>">\n' +
     		'            <div class="desktop-btn">Frage abschicken</div>\n' +
@@ -2106,13 +2108,16 @@ module.exports = {
         	locale: "fr-FR"
         }));
 
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        var actual = htf.localizeText(translations, "fr-FR");
+        var expected =
         		'<html>\n' +
         		'   <body>\n' + 
         		'       <span class="foo" span="" class="bar"> Dr. <%= family_name %> n\'est pas disponible.</span></span>\n' +
         		'   </body>\n' +
-        		'</html>\n');
+        		'</html>\n';
 
+        diff(actual, expected);
+		test.equal(actual, expected);
         test.done();
     },
 
@@ -2148,7 +2153,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(expert.entity_type == \'group\'){ %> checked="yes" <% } %>>\n' +
+        		'<input class="fg-radio" id="entity_group" type="radio" name="entity" value="group" <% if(expert.entity_type == \'group\'){ %> checked=yes <% } %>>\n' +
             	'<label for="entity_group" class="radio-label">Groupe</label>');
 
         test.done();
@@ -2187,7 +2192,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'    <select class="end_hour" value="<%=end_hour%>">\n' +
+        		'    <select class=\'end_hour\' value=<%=end_hour%>>\n' +
                 '      asdf\n' +
                 '    </select>\n');
 
@@ -2227,7 +2232,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'<span has-sub-options="<%= option.sub_options.length > 0 %>" data-tracking-value="<%= option.tracking_value%>">\n' +
+        		'<span has-sub-options=<%= option.sub_options.length > 0 %> data-tracking-value="<%= option.tracking_value%>">\n' +
                 '    asdf\n' +
                 '</span>\n');
 
@@ -2264,7 +2269,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'<a class="doctor-name" href="<%= val.expert.url%>">asdf</a>\n');
+        		'<a class="doctor-name" href=<%= val.expert.url%>>asdf</a>\n');
 
         test.done();
     },
@@ -2323,14 +2328,15 @@ module.exports = {
         	locale: "fr-FR"
         }));
         
-        test.equal(htf.localizeText(translations, "fr-FR"),
+        var actual = htf.localizeText(translations, "fr-FR");
+        var expected =
     		'<% _.each(experts, function( val, index ){ %>\n' +
     		'  <div class="expert-review">\n' +
     		'    <div class="doctor-item">\n' +
     		'      <div class="doctor-avatar" style="background-image: url(<%= val.expert.avatar_transparent_circular %>);"></div>\n' +
     		'      <div class="doctor-info">\n' +
     		'        <div class="caduceus"></div>\n' +
-    		'        <a class="doctor-name" href="<%= val.expert.url%>"><%= val.expert.name%></a>\n' +
+    		'        <a class="doctor-name" href=<%= val.expert.url%>><%= val.expert.name%></a>\n' +
     		'        <div class="specialty"><%= val.expert.intro%></div>\n' +
     		'      </div>\n' +
     		'    </div>\n' +
@@ -2348,8 +2354,10 @@ module.exports = {
     		'      asdf\n' +
     		'    </div>\n' +
     		'  </div>\n' +
-    		'<% }) %>');
-
+    		'<% }) %>';
+        diff(actual, expected);
+    	test.equal(actual, expected);
+    		
         test.done();
     },
     
@@ -2492,10 +2500,10 @@ module.exports = {
         }));
 
         diff(htf.localizeText(translations, "fr-FR"),
-        		'  <span class="foo" onclick="javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;">asdf</span>');
+        		'  <span class="foo" onclick=\'javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;\'>asdf</span>');
         
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'  <span class="foo" onclick="javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;">asdf</span>');
+        		'  <span class="foo" onclick=\'javascript:var a = &quot;foo&quot;, b = &quot;bar&quot;;\'>asdf</span>');
 
         test.done();
     },
@@ -2525,10 +2533,10 @@ module.exports = {
         }));
 
         diff(htf.localizeText(translations, "fr-FR"),
-        		'  <span class="foo" foo="asdf <% if (state === "selected") { %>selected<% } %>">asdf</span>');
+        		'  <span class="foo" foo=\'asdf <% if (state === "selected") { %>selected<% } %>\'>asdf</span>');
         
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'  <span class="foo" foo="asdf <% if (state === "selected") { %>selected<% } %>">asdf</span>');
+        		'  <span class="foo" foo=\'asdf <% if (state === "selected") { %>selected<% } %>\'>asdf</span>');
 
         test.done();
     },
@@ -2558,10 +2566,10 @@ module.exports = {
         }));
 
         diff(htf.localizeText(translations, "fr-FR"),
-        		'  <span class="foo" foo="asdf <% if (string === "20%") { %>selected<% } %>">asdf</span>');
+        		'  <span class="foo" foo=\'asdf <% if (string === "20%") { %>selected<% } %>\'>asdf</span>');
         
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'  <span class="foo" foo="asdf <% if (string === "20%") { %>selected<% } %>">asdf</span>');
+        		'  <span class="foo" foo=\'asdf <% if (string === "20%") { %>selected<% } %>\'>asdf</span>');
 
         test.done();
     },
@@ -2990,100 +2998,9 @@ module.exports = {
         	source: 'Ich moechte Sie referieren an<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:',
         	locale: "de-DE"
         }));
-                
-        diff(htf.localizeText(translations, "de-DE"),
-    			'<%\n' +
-    			'  var accepts_insurance, concierge_hidden, provider_group, HMO_provider;\n' +
-    			'  var person_obj = person_obj || {};\n' +
-    			
-    			'  var member_group = (person_obj.network_provider_groups && person_obj.network_provider_groups.length) ? person_obj.network_provider_groups[0] : {};\n' +
-    			
-    			'  concierge_hidden = !person_obj.concierge_allowed;\n' +
-    			
-    			'  if (ht_expert.provider_groups) {\n' +
-    			'    var provider_ids = _.pluck(JSON.parse(ht_expert.provider_groups), \'id\');\n' +
-    			'    accepts_insurance = (provider_ids.indexOf(parseInt(member_group.id)) >= 0);\n' +
-    			'  }\n' +
-    			
-    			'  if (member_group.is_hmo) {\n' +
-    			'    HMO_provider = member_group.name;\n' +
-    			'  }\n' +
-    			
-    			'  accepts_insurance = accepts_insurance || false;\n' +
-    			'  concierge_hidden = concierge_hidden || false;\n' +
-    			'  HMO_provider = HMO_provider || false;\n' +
-    			'%>\n' +
-    			
-    			'<div class="refer-doc-message">\n' +
-    			'  Ich moechte Sie referieren an<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:\n' +
-    			'  <div class="doctor-result clearfix">\n' +
-    			'<% var imageStyle = ht_expert.avatar_transparent_circular ? "background-image: url(\'"+ht_expert.avatar_transparent_circular+ "\')" : "" %>\n' +
-    			'<div class="avatar left" style="<%= imageStyle %>"></div>\n' +
-    			'<div class="caduceus left"></div>\n' +
-    			'<div class="doctor-info">\n' +
-    			'  <% if (ht_expert) { %>\n' +
-    			'    <a class="doctor-name emphasis" href="<%= feelGood.linkToExpert(ht_expert_id) %>">\n' +
-    			'      <%= ht_expert.value %>\n' +
-    			'    </a>\n' +
-    			'    <div class="specialty">\n' +
-    			'      <%= ht_expert.intro %>\n' +
-    			'    </div>\n' +
-    			'    <%= window.templates[\'_ratings\']({\n' +
-    			'      doc_score: ht_expert.doc_score,\n' +
-    			'      hide_5th_star: false\n' +
-    			'    }) %>\n' +
-    			'    <% if (ht_expert.display_location) { %>\n' +
-    			'      <div class="location">\n' +
-    			'        <div class="small-location-icon"></div>\n' +
-    			'        <%= ht_expert.display_location %>\n' +
-    			'      </div>\n' +
-    			'    <% } %>\n' +
-    			'    <% if (ht_expert.in_network && ht_expert.in_network_display_string) { %>\n' +
-    			'      <div class="concierge-buttons">\n' +
-    			'        <div class="accepts-insurance">\n' +
-    			'          <div class="green_check"></div>\n' +
-    			'          <%= ht_expert.in_network_display_string %>\n' +
-    			'        </div>\n' +
-    			'      </div>\n' +
-    			'    <% } %>\n' +
-    			'    <% if (ht_expert.in_concierge && ht_expert.in_concierge != "false" && !concierge_hidden) { %>\n' +
-    			'      <div class="concierge-buttons">\n' +
-    			'      <a class="concierge-btn message-btn tooltip-link" href="/experts/<%=ht_expert.id %>/message" track_event="request_message" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
-    			'        <div class="concierge-btn-icon-msg"></div>\n' +
-    			'        <div class="tooltip-info"> Send Message </div>\n' +
-    			'      </a>\n' +
-    			'      <a class="concierge-btn appointment-btn tooltip-link" href="/experts/<%=ht_expert.id %>/appointment" track_event="request_appointment" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
-    			'        <div class="concierge-btn-icon-appt"></div>\n' +
-    			'        <div class="tooltip-info"> Virtual Appointment</div>\n' +
-    			'      </a>\n' +
-    			'      <a class="concierge-btn talk-btn tooltip-link" href="/experts/<%=ht_expert.id %>/talk" track_event="request_talk" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
-    			'        <div class="concierge-btn-icon-video"></div>\n' +
-    			'        <div class="tooltip-info"> Video/Chat</div>\n' +
-    			'      </a>\n' +
-    			'      </div>\n' +
-    			'    <% } %>\n' +
-    			'  <% } else { %>\n' +
-    			'    <div class="doctor-name emphasis">\n' +
-    			'      <%= non_ht_expert_name %>\n' +
-    			'    </div>\n' +
-    			'    <% if (non_ht_tel && non_ht_tel.length >= 7) { %>\n' +
-    			'      <div class="specialty">\n' +
-    			'        Call: <%= non_ht_tel %>\n' +
-    			'      </div>\n' +
-    			'    <% } %>\n' +
-    			'    <% if (non_ht_expert_email ) { %>\n' +
-    			'      <div class="specialty">\n' +
-    			'            Email: <%= non_ht_expert_email %>\n' +
-    			'          </div>\n' +
-    			'        <% } %>\n' +
-    			
-    			'      <% } %>\n' +
-    			'    </div>\n' +
-    			'  </div>\n' +
-    			'</div>\n'
-            );
         
-        test.equal(htf.localizeText(translations, "de-DE"),
+        var actual = htf.localizeText(translations, "de-DE");
+        var expected =
     			'<%\n' +
     			'  var accepts_insurance, concierge_hidden, provider_group, HMO_provider;\n' +
     			'  var person_obj = person_obj || {};\n' +
@@ -3140,15 +3057,15 @@ module.exports = {
     			'    <% } %>\n' +
     			'    <% if (ht_expert.in_concierge && ht_expert.in_concierge != "false" && !concierge_hidden) { %>\n' +
     			'      <div class="concierge-buttons">\n' +
-    			'      <a class="concierge-btn message-btn tooltip-link" href="/experts/<%=ht_expert.id %>/message" track_event="request_message" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
+    			'      <a class="concierge-btn message-btn tooltip-link" href="/experts/<%=ht_expert.id %>/message" track_event="request_message" track_data=\'{&quot;type&quot;: &quot;transcript&quot;}\'>\n' +
     			'        <div class="concierge-btn-icon-msg"></div>\n' +
     			'        <div class="tooltip-info"> Send Message </div>\n' +
     			'      </a>\n' +
-    			'      <a class="concierge-btn appointment-btn tooltip-link" href="/experts/<%=ht_expert.id %>/appointment" track_event="request_appointment" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
+    			'      <a class="concierge-btn appointment-btn tooltip-link" href="/experts/<%=ht_expert.id %>/appointment" track_event="request_appointment" track_data=\'{&quot;type&quot;: &quot;transcript&quot;}\'>\n' +
     			'        <div class="concierge-btn-icon-appt"></div>\n' +
     			'        <div class="tooltip-info"> Virtual Appointment</div>\n' +
     			'      </a>\n' +
-    			'      <a class="concierge-btn talk-btn tooltip-link" href="/experts/<%=ht_expert.id %>/talk" track_event="request_talk" track_data="{&quot;type&quot;: &quot;transcript&quot;}">\n' +
+    			'      <a class="concierge-btn talk-btn tooltip-link" href="/experts/<%=ht_expert.id %>/talk" track_event="request_talk" track_data=\'{&quot;type&quot;: &quot;transcript&quot;}\'>\n' +
     			'        <div class="concierge-btn-icon-video"></div>\n' +
     			'        <div class="tooltip-info"> Video/Chat</div>\n' +
     			'      </a>\n' +
@@ -3172,9 +3089,189 @@ module.exports = {
     			'      <% } %>\n' +
     			'    </div>\n' +
     			'  </div>\n' +
-    			'</div>\n'
-            );
+    			'</div>\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
               
         test.done();
+    },
+    
+    testHTMLTemplateFileExtractFileFullyExtracted: function(test) {
+        test.expect(17);
+
+        var base = path.dirname(module.id);
+        
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, path.join(base, "testfiles"));
+        
+        var htf = new HTMLTemplateFile(p, "./tmpl/consult_panel.tmpl.html");
+        test.ok(htf);
+        
+        // should read the file
+        htf.extract();
+        
+        var set = htf.getTranslationSet();
+        
+        test.equal(set.size(), 5);
+        
+        var r = set.getBySource("Upcoming Appointments");
+        test.ok(r);
+        test.equal(r.getSource(), "Upcoming Appointments");
+        test.equal(r.getKey(), "Upcoming Appointments");
+       
+        r = set.getBySource("Private Consults");
+        test.ok(r);
+        test.equal(r.getSource(), "Private Consults");
+        test.equal(r.getKey(), "Private Consults");
+
+        r = set.getBySource("Get help");
+        test.ok(r);
+        test.equal(r.getSource(), "Get help");
+        test.equal(r.getKey(), "Get help");
+
+        r = set.getBySource("Doctors are standing by to help");
+        test.ok(r);
+        test.equal(r.getSource(), "Doctors are standing by to help");
+        test.equal(r.getKey(), "Doctors are standing by to help");
+
+        r = set.getBySource("Get help now");
+        test.ok(r);
+        test.equal(r.getSource(), "Get help now");
+        test.equal(r.getKey(), "Get help now");
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileExtractFileFullyExtracted2: function(test) {
+        test.expect(8);
+
+        var base = path.dirname(module.id);
+        
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, path.join(base, "testfiles"));
+        
+        var htf = new HTMLTemplateFile(p, "./tmpl/mode.tmpl.html");
+        test.ok(htf);
+        
+        // should read the file
+        htf.extract();
+        
+        var set = htf.getTranslationSet();
+        
+        test.equal(set.size(), 2);
+        
+        var r = set.getBySource("Choose a consult method");
+        test.ok(r);
+        test.equal(r.getSource(), "Choose a consult method");
+        test.equal(r.getKey(), "Choose a consult method");
+       
+        r = set.getBySource("Care team");
+        test.ok(r);
+        test.equal(r.getSource(), "Care team");
+        test.equal(r.getKey(), "Care team");
+
+        test.done();
+    },
+    
+    testHTMLTemplateFileExtractFileNewResources: function(test) {
+        test.expect(11);
+
+        var base = path.dirname(module.id);
+        
+        var p = new WebProject({
+        	id: "foo",
+        	sourceLocale: "en-US"
+        }, path.join(base, "testfiles"));
+        
+        var t = new HTMLTemplateFileType(p);
+        
+        var htf = new HTMLTemplateFile(p, "./tmpl/mode.tmpl.html", t);
+        test.ok(htf);
+        
+        htf.extract();
+  
+        var translations = new TranslationSet();
+        
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: "Choose a consult method",
+        	source: "Choicissez une methode de consultation",
+        	locale: "fr-FR"
+        }));
+        
+        var actual = htf.localizeText(translations, "fr-FR");
+        var expected =
+    		'<div class="askHeader">\n' +
+    		'  <h3>Choicissez une methode de consultation</h3>\n' +
+    		'</div>\n' +
+    		'<div id="chooseMode">\n' +
+    		'  <div class="askContent">\n' +
+    		'    <div class="expertInfo">\n' +
+    		'      <div class="portraitContainer">\n' +
+    		'        <div class="portrait">\n' +
+    		'          <img src="<%= photo %>" height="86px" width="86px">\n' +
+    		'        </div>\n' +
+    		'        <div class="dot<%= (availability == \'available\') ? \' on\' : \'\' %>"></div>\n' +
+    		'      </div>\n' +
+    		'      <div class="rating">\n' +
+    		'        <% $.each(stars, function(i, star) { %>\n' +
+    		'        <div class="star <%= star %>"></div>\n' +
+    		'        <% }); %>\n' +
+    		'      </div>\n' +
+    		'      <div class="name"><%= name %></div>\n' +
+    		'      <div class="specialty"><%= specialty %></div>\n' +
+    		'      <% if (in_care_team) { %>\n' +
+    		'      <div class="care">Çàŕë ţëàm43210</div>\n' +
+    		'      <% } %>\n' +
+    		'      <% $.each(supplementary_descriptions, function(index, desc) { %>\n' +
+    		'      <div class="addInfo"><%= desc %></div>\n' +
+    		'      <% }); %>\n' +
+    		'    </div>\n' +
+    		'    <div class="modeSelection">\n' +
+    		'      <% $.each(modes, function(index, mode) { %>\n' +
+    		'      <%= (index > 0) ? \'-->\' : \'\' %><div class="mode <%= mode.type %><%= mode.active ? \'\' : \' inactive\' %>" data-type="<%= mode.type %>">\n' +
+    		'        <div class="modeContents">\n' +
+    		'          <h4><%= mode.title %></h4>\n' +
+    		'          <p class="description"><%= mode.description %></p>\n' +
+    		'          <% if (mode.price) { %>\n' +
+    		'          <p> <%= RB.getString("Starting at {currency_symbol}{price}").format({currency_symbol: currency_symbol, price: mode.price}) %></p>\n' +
+    		'          <% } %>\n' +
+    		'          <% if (mode.message) { %>\n' +
+    		'          <p class="warn"><%= mode.message %></p>\n' +
+    		'          <% } %>\n' +
+    		'        </div>\n' +
+    		'      </div><div class="divider"></div><%= (index < modes.length - 1) ? \'<!--\' : \'\' %>\n' +
+    		'      <% }); %>\n' +
+    		'    </div>\n' +
+    		'  </div>\n' +
+    		'  <div class="pageFooter"></div>\n' +
+    		'</div>\n';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        
+        var set = t.newres;
+        var resources = set.getAll();
+        
+        test.equal(resources.length, 2);
+        
+        var r = set.getBySource("Choose a consult method");
+        test.ok(!r);
+        
+        r = set.getBySource("Care team");
+        test.ok(r);
+        test.equal(resources[0].getSource(), "Care team");
+        test.equal(resources[0].getKey(), "Care team");
+        test.equal(resources[0].getLocale(), "en-US");
+
+        test.equal(resources[1].getSource(), "Care team");
+        test.equal(resources[1].getKey(), "Care team");
+        test.equal(resources[1].getLocale(), "fr-FR");
+        
+        test.done();
     }
+
 };

@@ -8,7 +8,7 @@ if (!JavaFile) {
     var JavaFile = require("../lib/JavaFile.js");
     var AndroidProject =  require("../lib/AndroidProject.js");
     var ResourceString =  require("../lib/ResourceString.js");
-    var AndroidResourceString =  require("../lib/AndroidResourceString.js");
+    var ContextResourceString =  require("../lib/ContextResourceString.js");
 }
 
 module.exports = {
@@ -193,7 +193,7 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "r654479252"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "r654479252", "java"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");
@@ -330,7 +330,7 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "foobar"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "foobar", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "foobar");
@@ -354,7 +354,7 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "unique_id"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
@@ -426,17 +426,45 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "x"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "x", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getAutoKey());
         test.equal(r.getKey(), "x");
         
-        r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "y"));
+        r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "y", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.ok(!r.getAutoKey());
         test.equal(r.getKey(), "y");
+        
+        test.done();
+    },
+
+    testJavaFileParseMultipleOnSameLine: function(test) {
+        test.expect(8);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("This is a test");  a.parse("This is another test."); RB.getString("This is another test");\n');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.ok(r.getAutoKey());
+        
+        r = set.getBySource("This is another test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is another test");
+        test.ok(r.getAutoKey());
         
         test.done();
     },
@@ -486,13 +514,13 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "asdf"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "asdf", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "asdf");
         test.equal(r.getComment(), "foo");
         
-        r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "kdkdkd"));
+        r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "kdkdkd", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "kdkdkd");
@@ -546,7 +574,7 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
         
-        r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "unique_id"));
+        r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "unique_id", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "unique_id");
@@ -685,7 +713,7 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
         
-        var r = set.get(AndroidResourceString.hashKey(undefined, undefined, "en-US", "id1"));
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "id1", "java"));
         test.ok(r);
         test.equal(r.getSource(), "This is a test with a unique id");
         test.equal(r.getKey(), "id1");

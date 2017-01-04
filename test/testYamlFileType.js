@@ -15,8 +15,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
@@ -32,15 +32,15 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
         test.ok(yft);
         
-        test.ok(!yft.handles("foo.yml"));
+        test.ok(yft.handles("foo.yml"));
         
         test.done();
     },
@@ -50,8 +50,8 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
@@ -65,74 +65,38 @@ module.exports = {
         test.done();
     },
 
-    testYamlFileTypeHandlesEnglishResourceFiles: function(test) {
+    testYamlFileTypeHandlesNoResourceFiles: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
         test.ok(yft);
         
-        test.ok(yft.handles("config/locales/en-US.yml"));
+        test.ok(!yft.handles("config/locales/en-US.yml"));
         
         test.done();
     },
 
-    testYamlFileTypeHandlesBaseResourceFiles: function(test) {
+    testYamlFileTypeHandlesNoBaseResourceFiles: function(test) {
         test.expect(2);
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
+        	resourceDirs: {
+        		"yml": "config/locales"
         	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
         test.ok(yft);
         
-        test.ok(yft.handles("config/locales/en.yml"));
-        
-        test.done();
-    },
-
-    testYamlFileTypeHandlesNonEnglishResourceFiles: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
-        	}
-        }, "./testfiles");
-        
-        var yft = new YamlFileType(p);
-        test.ok(yft);
-        
-        test.ok(!yft.handles("config/locales/zh-Hans-CN.yml"));
-        
-        test.done();
-    },
-
-    testYamlFileTypeHandlesNonResourceFiles: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
-        	}
-        }, "./testfiles");
-        
-        var yft = new YamlFileType(p);
-        test.ok(yft);
-        
-        test.ok(!yft.handles("config/qaconfig.yml"));
+        test.ok(!yft.handles("config/locales/en.yml"));
         
         test.done();
     },
@@ -142,19 +106,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US",
-        	resourceFiles: {
-        		"ruby": "config"
-        	},
-        	includes: [
-        		"config/notifications.yml",
-        		"config/doctor_notification_setting_groups.yml",
-        		"config/refinement_questions.yml",
-        		"config/sso_errors.yml",
-        		"config/symptom_triage_copy.yml",
-        		"config/topic_meta.yml",
-        		"config/triage_samples.yml",
-        		"config/app_configs/language_display_name_en_us.yml"
-        	]
+        	resourceDirs: {
+        		"yml": "config/locales"
+        	}
         }, "./testfiles");
         
         var yft = new YamlFileType(p);
@@ -162,52 +116,6 @@ module.exports = {
         
         test.ok(yft.handles("config/nofications.yml"));
         
-        test.done();
-    },
-
-    testYamlFileTypeGetResourceFile: function(test) {
-        test.expect(2);
-
-        var p = new WebProject({
-        	id: "ht-webapp12",
-        	sourceLocale: "de-DE",
-        	resourceFiles: {
-        		"ruby": "config"
-        	}
-        }, "./testfiles");
-        
-        var yft = new YamlFileType(p);
-        test.ok(yft);
-
-        var yf = yft.getResourceFile("fr-FR");
-        
-        test.equal(yf.getLocale(), "fr-FR");
-
-        test.done();
-    },
-    
-    testYamlFileTypeGetResourceFileSameOneEachTime: function(test) {
-        test.expect(4);
-
-        var p = new WebProject({
-        	id: "ht-webapp12",
-        	sourceLocale: "de-DE",
-        	resourceFiles: {
-        		"ruby": "config"
-        	}
-        }, "./testfiles");
-        
-        var yft = new YamlFileType(p);
-        test.ok(yft);
-
-        var yf1 = yft.getResourceFile("fr-FR");
-        test.equal(yf1.getLocale(), "fr-FR");
-
-        var yf2 = yft.getResourceFile("fr-FR");
-        test.equal(yf2.getLocale(), "fr-FR");
-
-        test.deepEqual(yf1, yf2);
-
         test.done();
     }
 };
