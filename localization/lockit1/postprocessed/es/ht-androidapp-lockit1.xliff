@@ -4444,7 +4444,7 @@
       </trans-unit>
       <trans-unit id="842" resname="tablabel_talktodocs" restype="string" datatype="x-android-resource">
         <source>Talk to Docs</source>
-        <target>Hablar con los Médicos</target>
+        <target state="accepted">Conversar</target>
       </trans-unit>
       <trans-unit id="843" resname="tablabel_checklist_discover" restype="string" datatype="x-android-resource">
         <source>Discover</source>

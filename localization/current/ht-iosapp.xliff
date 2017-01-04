@@ -2341,7 +2341,7 @@
     <body>
       <trans-unit id="Glp-ia-AOc.text" resname="Glp-ia-AOc.text" restype="string" datatype="x-xib">
         <source>Top Doctors Suggested for You</source>
-        <target state="accepted">Los Mejores Doctores Sugeridos para Ti</target>
+        <target>Los Mejores Doctores Sugerido para Ti</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Top Doctors Suggested for You&quot;; ObjectID = &quot;Glp-ia-AOc&quot;;</note>
       </trans-unit>
       <trans-unit id="TyL-u8-N9l.text" resname="TyL-u8-N9l.text" restype="string" datatype="x-xib">

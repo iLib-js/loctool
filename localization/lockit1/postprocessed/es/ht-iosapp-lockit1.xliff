@@ -2341,7 +2341,7 @@
     <body>
       <trans-unit id="Glp-ia-AOc.text" resname="Glp-ia-AOc.text" restype="string" datatype="x-xib">
         <source>Top Doctors Suggested for You</source>
-        <target>Los Mejores Doctores Sugerido para Ti</target>
+        <target state="accepted">Los Mejores Doctores Sugeridos para Ti</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Top Doctors Suggested for You&quot;; ObjectID = &quot;Glp-ia-AOc&quot;;</note>
       </trans-unit>
       <trans-unit id="TyL-u8-N9l.text" resname="TyL-u8-N9l.text" restype="string" datatype="x-xib">
@@ -11437,7 +11437,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Talk to Docs" resname="Talk to Docs" restype="string">
         <source>Talk to Docs</source>
-        <target>Habla con Docs</target>
+        <target state="accepted">Conversar</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Talk to a doctor now" resname="Talk to a doctor now" restype="string">
@@ -13814,7 +13814,7 @@ Nuestros médicos pueden ayudar</target>
       </trans-unit>
       <trans-unit id="wkf-ek-Zet.normalTitle" resname="wkf-ek-Zet.normalTitle" restype="string" datatype="x-xib">
         <source>Talk to Docs</source>
-        <target>Habla con Docs</target>
+        <target state="accepted">Conversar</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Talk to Docs&quot;; ObjectID = &quot;wkf-ek-Zet&quot;;</note>
       </trans-unit>
       <trans-unit id="xcA-3W-U0J.normalTitle" resname="xcA-3W-U0J.normalTitle" restype="string" datatype="x-xib">
