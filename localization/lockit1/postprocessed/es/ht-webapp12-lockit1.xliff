@@ -32535,7 +32535,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6480" resname="How would you classify your consumption of alcohol?" restype="string" datatype="javascript">
         <source>How would you classify your consumption of alcohol?</source>
-        <target>¿Cómo clasificarías tu consumo de alcohol de %@?</target>
+        <target>¿Cómo clasificarías tu consumo de alcohol?</target>
       </trans-unit>
       <trans-unit id="6481" resname="Does {first_name} smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Does {first_name} smoke or chew tobacco or recently quit?</source>
