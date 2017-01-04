@@ -396,9 +396,6 @@
       <trans-unit id="2277" resname="symptom_triage_instructional_search_results_content" restype="string" datatype="x-android-resource">
         <source>What symptom would you like to report today?</source><target>您今天希望报告什么症状？</target>
       </trans-unit>
-      <trans-unit id="2280" resname="symptom_triage_added_symptom_text" restype="string" datatype="x-android-resource">
-        <source>symptom added</source><target>已症状的添加</target>
-      </trans-unit>
       <trans-unit id="2281" resname="symptom_triage_drawer_add_text" restype="string" datatype="x-android-resource">
         <source>Add new symptom</source><target>添加新的资料</target>
       </trans-unit>
