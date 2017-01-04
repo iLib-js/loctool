@@ -3190,7 +3190,7 @@
     <body>
       <trans-unit id="566" resname="r366455092" restype="string" datatype="java">
         <source>Add treatment or procedure</source>
-        <target>Añadir tratamiento o procedimiento</target>
+        <target state="accepted">Añadirlo</target>
       </trans-unit>
       <trans-unit id="567" resname="r448807785" restype="string" datatype="java">
         <source>None at this time</source>
