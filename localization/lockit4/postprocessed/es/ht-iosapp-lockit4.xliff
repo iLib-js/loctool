@@ -3620,7 +3620,7 @@
       </trans-unit>
       <trans-unit id="671" resname="q32-Yx-z8d.text" restype="string" datatype="x-xib">
         <source>Tell the doctor a little about you</source>
-        <target>Cuéntale al médico un poco más acerca de ti</target>
+        <target state="accepted">Cuéntale al médico más acerca de ti</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tell the doctor a little about you&quot;; ObjectID = &quot;q32-Yx-z8d&quot;;</note>
       </trans-unit>
     </body>
