@@ -114,6 +114,14 @@ describe 'HamlLocalizer' do
       expect(ret.include?('FOO')).to be_falsy
     end
 
+    it 'should localize this text' do
+      # from app/views/layouts/_expert_external_content_header.html.haml
+      orig = '          (It may take about 1-2 minutes for the video to load)'
+      from_to = {'(It may take about 1-2 minutes for the video to load)' => 'FOO'}
+      ret = replace_with_translations2(orig, from_to)
+      expect(ret.include?('FOO')).to be_truthy
+    end
+
     it 'should work' do
       # from investors.html.haml
       orig = "        <span class='ht-name' >HealthTap</span> is supported by world-class investors, advisors, and experienced company builders who have helped create, "
