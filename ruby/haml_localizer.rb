@@ -211,7 +211,7 @@ end
 #end
 
 def process_line(skip_block_indent, ret, line, from_to)
-  #puts "process_line called with line=#{line}"
+  #puts "process_line called with skip_block_indent=#{!skip_block_indent.nil?} from_to=#{from_to.size} line=#{line}"
   if !skip_block_indent.nil?
     ret << line
   else
@@ -236,10 +236,13 @@ def process_line(skip_block_indent, ret, line, from_to)
           #  puts "replacing #{k} WITH #{v}"
           #end
           unless line.match(/Rb.t\(\".*#{Regexp.escape(k)}.*\"\)/)
+            #puts "1"
             if line.match(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/)
+              #puts '2'
               res = line.gsub!(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, ">#{v}") #for some reason it replaces the > char as well. replcae it
             else
-              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+              #puts '3'
+              res = line.gsub!(/\s(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
             end
           end
           #if res
@@ -263,7 +266,7 @@ def replace_with_translations2(template, from_to)
   skip_block_indent = nil
   arr.each{|line|
     curr_indent = /\S/ =~ line
-    puts "curr_indent=#{curr_indent} skip_block_indent=#{skip_block_indent}"
+    #puts "curr_indent=#{curr_indent} skip_block_indent=#{skip_block_indent}"
     if curr_indent.nil?
       ret << line
       next
@@ -348,7 +351,9 @@ end
 
 def load_locale_maps(locales, file_prefix= 'translations')
   ret = {}
+  puts "###1"
   locales.each do |locale|
+    puts "local=#{locale}"
     filename_for_locale = "#{file_prefix}-#{locale}.yml"
     if File.exists?(filename_for_locale)
       ret[locale] = YAML.load(File.read(filename_for_locale))
@@ -407,8 +412,9 @@ unless defined?(TEST_ENV)
           x = HTParser.new(output_template, Haml::Options.new)
           root = x.parse
         rescue => e
+          puts e
           puts "ERROR: Bad substitution created invalid template for #{path_name}"
-          # File.open('ERROR.html.haml', 'w') { |file| file.write(output_template) }
+          File.open('ERROR.html.haml', 'w') { |file| file.write(output_template) }
           next # if we make a bad file, do not try to print, just go to next file
         end
         if file_name_components[file_name_components.length - 3] == "en-US"
