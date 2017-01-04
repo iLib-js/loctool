@@ -8718,12 +8718,12 @@ Get the right care for your needs - consult a specialist today!</source>
       </trans-unit>
       <trans-unit id="Enter %@%@&apos;s Keycode" resname="Enter %@%@&apos;s Keycode" restype="string">
         <source>Enter %1$@%2$@&apos;s Keycode</source>
-        <target>输入%1 $ @%2 $ @的键码</target>
+        <target>输入%1$@%2$@的键码</target>
         <note annotates="source">Para1: title, Para2: last name</note>
       </trans-unit>
       <trans-unit id="Enter a personalized message for %@" resname="Enter a personalized message for %@" restype="string">
         <source>Enter a personalized message for %@</source>
-        <target>输入“%”的个性化信息</target>
+        <target>输入“%@”的个性化信息</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Enter brief description" resname="Enter brief description" restype="string">
