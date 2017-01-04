@@ -241,7 +241,7 @@
       </trans-unit>
       <trans-unit id="25" resname="goV-9z-1Od.text" restype="string" datatype="x-xib">
         <source>To-Do</source>
-        <target>Qué hacer</target>
+        <target state="accepted">Por hacer</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;To-Do&quot;; ObjectID = &quot;goV-9z-1Od&quot;;</note>
       </trans-unit>
       <trans-unit id="26" resname="iOz-4W-mIJ.normalTitle" restype="string" datatype="x-xib">

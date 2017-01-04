@@ -8137,7 +8137,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Do you want to remove this action from your &quot;To Do&quot; list?" resname="Do you want to remove this action from your &amp;quot;To Do&amp;quot; list?" restype="string">
         <source>Do you want to remove this action from your &quot;To Do&quot; list?</source>
-        <target>¿Quieres quitar esta acción de tu lista de &quot;Qué hacer&quot;?</target>
+        <target state="accepted">¿Quieres quitar esta acción de tu lista de &quot;Por hacer&quot;?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Do you want to replace your current profile photo?" resname="Do you want to replace your current profile photo?" restype="string">
@@ -11808,7 +11808,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="To-Do" resname="To-Do" restype="string">
         <source>To-Do</source>
-        <target>Qué hacer</target>
+        <target state="accepted">Por hacer</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Today" resname="Today" restype="string">
