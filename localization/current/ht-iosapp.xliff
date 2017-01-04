@@ -57651,7 +57651,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="205" resname="You agree to our {start1} Terms {end1} and {start2} Privacy Policy {end2}" restype="string" datatype="x-objective-c">
         <source>You agree to our {start1} Terms {end1} and {start2} Privacy Policy {end2}</source>
-        <target>Aceptas nuestros {start1} Términos{end1} y {start2} Política de Privacidad {end2}</target>
+        <target state="accepted">Aceptas los {start1}Términos{end1} y {start2}Política de Privacidad{end2}</target>
       </trans-unit>
       <trans-unit id="206" resname="{start1}" restype="string" datatype="x-objective-c">
         <source>{start1}</source>
