@@ -124,6 +124,7 @@ def accumulate_values(root, values, path_name)
     orig = root.value[:value]
     if root.value[:parse]
       #skip all parsed nodes. i.e, ruby code
+      puts "skipping line with ruby code:#{root.value[:value]}" if !root.value[:value].strip.start_with?('-') && !root.value[:value].strip.start_with?('=') && !root.value[:value].strip.start_with?('/')
       orig = nil
     end
   elsif root.value && root.value[:attributes] && root.value[:attributes]['title']
