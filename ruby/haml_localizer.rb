@@ -351,9 +351,7 @@ end
 
 def load_locale_maps(locales, file_prefix= 'translations')
   ret = {}
-  puts "###1"
   locales.each do |locale|
-    puts "local=#{locale}"
     filename_for_locale = "#{file_prefix}-#{locale}.yml"
     if File.exists?(filename_for_locale)
       ret[locale] = YAML.load(File.read(filename_for_locale))
@@ -395,7 +393,7 @@ unless defined?(TEST_ENV)
 
       #puts "values=#{values}"
       locale_names.each do |locale_name|
-        puts "file_name=#{path_name} locale_name=#{locale_name}"
+        #puts "file_name=#{path_name} locale_name=#{locale_name}"
         locale_mappings = all_locale_mappings[locale_name] || {}
         locale_mappings = locale_mappings[locale_name] unless locale_mappings[locale_name].nil?
         if locale_name == PSEUDO_LOCALE
@@ -405,6 +403,7 @@ unless defined?(TEST_ENV)
           from_to = process_values(locale_mappings, values, unmapped_for_file)
         end
         #from_to = strip_whitespace(from_to)
+        #puts "from_to=#{from_to}"
         puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
         #process_values(locale_mappings, from_to.keys, unmapped_for_file)
         output_template = replace_with_translations2(template.dup, from_to)
@@ -415,6 +414,7 @@ unless defined?(TEST_ENV)
           puts e
           puts "ERROR: Bad substitution created invalid template for #{path_name}"
           File.open('ERROR.html.haml', 'w') { |file| file.write(output_template) }
+          raise e if defined?(TEST_ENV)
           next # if we make a bad file, do not try to print, just go to next file
         end
         if file_name_components[file_name_components.length - 3] == "en-US"
