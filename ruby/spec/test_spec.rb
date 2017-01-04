@@ -31,7 +31,6 @@ describe 'HamlLocalizer' do
       orig = " %p <strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement between you and HealthTap Inc. (\"HealthTap\"). There are rules you agree to follow when using our mobile applications and websites (the \"Apps\"), including when you ask questions and when you view or input content on or into the Apps, and they are contained in these TOU. The <a href=\"/terms/privacy_statement\">HealthTap Privacy Statement</a> is officially part of these TOU even though it's a separate document."
       from_to = {'<strong>What is this Document?</strong> The Terms of Use (or "TOU") is an agreement' => 'FOO'}
       ret = replace_with_translations2(orig, from_to)
-      puts "ret=#{ret}"
       ret.include?('FOO').should be_true
     end
 
@@ -161,6 +160,20 @@ describe 'HamlLocalizer' do
       ret = replace_with_translations2(line, from_to)
       ret.include?('FOO').should be_true
 
+    end
+
+    it 'should skip lines within <script>..</script> tags' do
+      #source doctorView.html.haml
+      line = '  :erb
+    <script type="text/javascript">
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName("script")[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0027/0645.js?"+Math.floor(new Date().getTime()/3600000);
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>'
+      from_to = {'location' => 'FOO'}
+      ret = replace_with_translations2(line, from_to)
+      ret.include?('FOO').should be_false
     end
 
   end
