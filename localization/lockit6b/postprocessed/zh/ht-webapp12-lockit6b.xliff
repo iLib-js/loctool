@@ -80,7 +80,7 @@
     <body>
       <trans-unit id="1024" resname="Remaining Prime Credit Balance:" restype="string" datatype="html">
         <source>Remaining Prime Credit Balance:</source>
-        <target state="translated">剩余贷款余额：</target>
+        <target state="accepted">Prime会员余额：</target>
       </trans-unit>
     </body>
   </file>
@@ -91,7 +91,7 @@
     	bold_tag_start: &apos;&lt;b&gt;&apos;,
     	bold_tag_end: &apos;&lt;/b&gt;&apos;
     }&#41;</source>
-        <target state="translated">RB.getStringJS&#40;除了现场虚拟咨询，您也会收到 {bold_tag_start}信箱咨询{bold_tag_end}.&apos;&lt;b&gt;&apos;,
+        <target state="accepted">RB.getStringJS&#40;除了实时在线咨询，您也会收到 {bold_tag_start}信箱咨询{bold_tag_end}.&apos;&lt;b&gt;&apos;,
     	bold_tag_end:&apos;&lt;/b&gt;&apos;
     }&#41;</target>
       </trans-unit>
@@ -952,7 +952,7 @@
     <body>
       <trans-unit id="2083" resname="r125114679" restype="string" datatype="x-haml">
         <source>After you Thank an Expert, you&apos;ll have an opportunity to add a Thank You Note.  Thank You Notes show added appreciation, and experts can post these notes to their Virtual Practices.  &#40;Please do not include any questions or information in these notes, and only send what you agree  can be publicly shared&#41;.</source>
-        <target state="translated">在您感谢专家后，您将获得添加一封感谢信的机会。感谢信表达了感激并且专家们可以通过虚拟手法将这些信展示出来。（请不要再这封信中出现任何个人问题或信息，请只写您同意能够被公开发表分享的）</target>
+        <target state="translated">在您感谢专家后，您将获得添加一封感谢信的机会。感谢信表达了感激并且专家们可以通过在线手法将这些信展示出来。（请不要再这封信中出现任何个人问题或信息，请只写您同意能够被公开发表分享的）</target>
       </trans-unit>
     </body>
   </file>
@@ -1056,7 +1056,7 @@
     <body>
       <trans-unit id="2102" resname="r388696234" restype="string" datatype="x-haml">
         <source>HealthTap’s new Publications feature expands the reach of your expertise.  Studies in peer-reviewed publications are now highlighted on HealthTap, directly from your Virtual Practice.  Your research will be highlighted to Members looking for related health information on HealthTap, and you can even add to the description of your work. Have comments on an existing study?  We’ve got you covered – add comments to the publications and even answer public questions or engage in private conversations with members about any study listed on HealthTap.</source>
-        <target state="translated">HealthTap的新出版物功能拓展了您的专业知识的范围。发表在同行评审出版物的研究现在突出显示在HealthTap上，直接在您的虚拟实践上可以看到。您的研究将突出显示给在HealthTap上寻找相关健康信息的会员，甚至您可以添加到您的工作描述中。对现有研究有评论吗？我们已经覆盖所有操作 - 向出版物添加评论，甚至回答公众问题，或与会员进行关于HealthTap上列出的任何研究的私人谈话。</target>
+        <target state="translated">HealthTap的新出版物功能拓展了您的专业知识的范围。发表在同行评审出版物的研究现在突出显示在HealthTap上，直接在您的在线咨询上可以看到。您的研究将突出显示给在HealthTap上寻找相关健康信息的会员，甚至您可以添加到您的工作描述中。对现有研究有评论吗？我们已经覆盖所有操作 - 向出版物添加评论，甚至回答公众问题，或与会员进行关于HealthTap上列出的任何研究的私人谈话。</target>
       </trans-unit>
     </body>
   </file>
@@ -1504,7 +1504,7 @@
     <body>
       <trans-unit id="2161" resname="r342342299" restype="string" datatype="x-haml">
         <source>Get a virtual consult with a top</source>
-        <target state="translated">向知名医生虚拟咨询</target>
+        <target state="translated">向知名医生在线咨询</target>
       </trans-unit>
     </body>
   </file>
@@ -1828,11 +1828,11 @@
       </trans-unit>
       <trans-unit id="2226" resname="r380668570" restype="string" datatype="x-haml">
         <source>Standard virtual consults: In these consults, doctors who have accepted you as a patient &#40;whether for “on call” care, unless you already have an ongoing care relationship with the doctor&#41; can provide care.  You may receive an examination &#40;within the limits of virtual care&#41;, provide a medical history, obtain an assessment from a physician, and receive a treatment plan as determined to be medically appropriate by the consulting doctor.</source>
-        <target state="translated">标准虚拟咨询：在这些咨询中，接受您作为患者的医生（无论是否为“在职”护理，除非您已经与医生有持续的护理关系）可以提供护理。您可以接受检查（在虚拟护理的限制内），提供病史，获得医生的评估，并接受咨询医生觉得在医学上合适的治疗计划。</target>
+        <target state="translated">标准在线咨询：在这些咨询中，接受您作为患者的医生（无论是否为“在职”护理，除非您已经与医生有持续的护理关系）可以提供护理。您可以接受检查（在在线护理的限制内），提供病史，获得医生的评估，并接受咨询医生觉得在医学上合适的治疗计划。</target>
       </trans-unit>
       <trans-unit id="2227" resname="r45826553" restype="string" datatype="x-haml">
         <source>Introductory Consult: this is the first interaction with a new doctor or a doctor who has not yet accepted you as a patient on HealthTap. An introductory consult is not intended for the doctor to give you  care.  Introductory consults are for providing you with information or get to know the doctor and to determine if she or he can help you with your health concern &#40;in person and/or through virtual consults&#41;. A doctor may need to invite you to her or his office for an in person appointment in order to accept you as a patient on HealthTap.</source>
-        <target state="translated">介绍性咨询：这是第一次在HealthTap上与一个新医生或尚未接受您作为患者的医生互动。介绍性咨询的目的不是为了医生给您提供照顾。介绍性咨询是为您提供信息或了解医生，并确定她或他是否可以帮助您解决您的健康问题（亲自和/或通过虚拟咨询）。医生可能会邀请您到她或他的办公室进行个人预约，以接受您作为HealthTap上的患者。</target>
+        <target state="translated">介绍性咨询：这是第一次在HealthTap上与一个新医生或尚未接受您作为患者的医生互动。介绍性咨询的目的不是为了医生给您提供照顾。介绍性咨询是为您提供信息或了解医生，并确定她或他是否可以帮助您解决您的健康问题（亲自和/或通过在线咨询）。医生可能会邀请您到她或他的办公室进行个人预约，以接受您作为HealthTap上的患者。</target>
       </trans-unit>
       <trans-unit id="2228" resname="r209490680" restype="string" datatype="x-haml">
         <source>HealthTap is intended to give you easy access to health information &#40;and even care&#41; on your computer or mobile device. As a HealthTap patient &#40;with a HealthTap Prime membership or other access to consulting doctors on HealthTap&#41;, you are entitled to receive medically necessary and appropriate care, and you agree not to abuse or overuse the access to doctors provided to you. Overuse includes requests for multiple opinions on single medical condition  HealthTap consults should not be used : to obtain numerous opinions on a single medical condition. In general, doctors may discourage this practice and may be hesitant to provide an assessment to those patients who attempt to seek multiple consults. In cases where there is an absolute medical necessity, it may be appropriate to do more than one consult in a day about a specific health issue, but you may also need to consider seeking in-person care or emergency services if the level of severity truly is at the point where multiple consults are warranted &#40;especially if in-person care is recommended by a consulting doctor on HealthTap&#41;.</source>
@@ -1936,31 +1936,31 @@
       </trans-unit>
       <trans-unit id="2253" resname="r401822106" restype="string" datatype="x-haml">
         <source>I have the right to withhold or withdraw my consent to Virtual Consults at any time without affecting my right to future care or treatment.</source>
-        <target state="translated">我有权利随时保留或收回我对虚拟咨询的观点，并且不会影响我未来被看护和治疗的权利。</target>
+        <target state="translated">我有权利随时保留或收回我对在线咨询的观点，并且不会影响我未来被看护和治疗的权利。</target>
       </trans-unit>
       <trans-unit id="2254" resname="r872894683" restype="string" datatype="x-haml">
         <source>I have the right to inspect all medical information transmitted during a Virtual Consult, including, without limitation, the name of the licensed physician associated with HealthTap Medical Group, P.C. treating me, and may receive copies of this information for a reasonable fee.</source>
-        <target state="translated">我有权利在虚拟咨询期间无限制地检查所有传达的医疗信息，包括治疗我的，与HealthTap医疗团队有联系的许可医师的名字，并且得到一些关于合理费用的信息。</target>
+        <target state="translated">我有权利在在线咨询期间无限制地检查所有传达的医疗信息，包括治疗我的，与HealthTap医疗团队有联系的许可医师的名字，并且得到一些关于合理费用的信息。</target>
       </trans-unit>
       <trans-unit id="2255" resname="r650556941" restype="string" datatype="x-haml">
         <source>I understand that the laws that protect the confidentiality of medical information apply to Virtual Consults, and that no information or images from such interaction which identify me will be disclosed to other entities without my consent.</source>
-        <target state="translated">我了解法律保护提供给虚拟咨询的医疗信息机密，而且没有我的同意把我的内心活动的信息泄露给其他组织，这是没有保障的。</target>
+        <target state="translated">我了解法律保护提供给在线咨询的医疗信息机密，而且没有我的同意把我的内心活动的信息泄露给其他组织，这是没有保障的。</target>
       </trans-unit>
       <trans-unit id="2256" resname="r451978237" restype="string" datatype="x-haml">
         <source>I understand that there are risks from Virtual Consults, including the</source>
-        <target state="translated">我知道虚拟咨询有风险，包括</target>
+        <target state="translated">我知道在线咨询有风险，包括</target>
       </trans-unit>
       <trans-unit id="2257" resname="r1021486548" restype="string" datatype="x-haml">
         <source>I understand that I can expect the following benefits from Virtual Consults, but that no results can be guaranteed or assured: &#40;i&#41; reduced visit time, &#40;ii&#41; rapid innovation of treatments, and &#40;iii&#41; focused information.</source>
-        <target state="translated">我了解我没有可以被保证的结果，但是可以得到如下显示的来源于虚拟咨询的优势：（1）减少拜访的时间，（2）快速的治疗新方法，和（3）集中的信息。</target>
+        <target state="translated">我了解我没有可以被保证的结果，但是可以得到如下显示的来源于在线咨询的优势：（1）减少拜访的时间，（2）快速的治疗新方法，和（3）集中的信息。</target>
       </trans-unit>
       <trans-unit id="2258" resname="r978521659" restype="string" datatype="x-haml">
         <source>In the event that the diagnosis and treatment by the physician associated with HealthTap Medical Group, P.C. does not resolve the medical issue for which you sought a Virtual Consult, you agree to consult with your primary care physician in person for follow-up treatment; and/or seek treatment, if necessary at a local hospital emergency department.</source>
-        <target state="translated">在与HealthTap医疗团队相关的医师的诊断和治疗方法中没有确认您在虚拟咨询中找到的医疗主题，您同意咨询你的初级护理医师关于接下来的治疗方法，或者寻找治疗方法，如果可以的话，会在当地的一家医院紧急部门。</target>
+        <target state="translated">在与HealthTap医疗团队相关的医师的诊断和治疗方法中没有确认您在在线咨询中找到的医疗主题，您同意咨询你的初级护理医师关于接下来的治疗方法，或者寻找治疗方法，如果可以的话，会在当地的一家医院紧急部门。</target>
       </trans-unit>
       <trans-unit id="2259" resname="r941234098" restype="string" datatype="x-haml">
         <source>I understand that, by having my consent to live virtual consults performed by video or telephone or asynchronous inbox consults, my physician associated with HealthTap Medical Group, P.C. may communicate medical information concerning me to physicians and other health care practitioners located in other parts of the state/jurisdiction or outside the state/jurisdiction.</source>
-        <target state="translated">我了解通过视频，电话或不同步的邮件咨询可以得到我的关于虚拟咨询的观点，我的与HealthTap医疗团队有关的医师可能会与我所在的或别的省健康护理者交流医疗信息。</target>
+        <target state="translated">我了解通过视频，电话或不同步的邮件咨询可以得到我的关于在线咨询的观点，我的与HealthTap医疗团队有关的医师可能会与我所在的或别的省健康护理者交流医疗信息。</target>
       </trans-unit>
       <trans-unit id="2260" resname="r12143493" restype="string" datatype="x-haml">
         <source>I understand that records related to these consults may be reviewed under a HealthTap quality assurance program. Records of HealthTap Quality Assurance Committee records subject to confidentiality.</source>
@@ -2004,7 +2004,7 @@
       </trans-unit>
       <trans-unit id="2270" resname="r736810159" restype="string" datatype="x-haml">
         <source>If you wish to apply your health insurance coverage to virtual consults with eligible doctors &#40;where available&#41;, simply select Insurance under Payment Information to confirm coverage and your copay.  A claim will be submitted following the consult.  By requesting to submit this claim under insurance you agree to pay any associated insurance fees &#40;such as copayment and deductible fees&#41; under your insurance plan and to be personally responsible for any costs associated with the care received that are not covered or are denied by your insurance carrier.</source>
-        <target state="translated">如果您希望申请您的虚拟咨询的健康保险（合适的），挑选在支付信息下的保险索赔将在咨询后提交。通过请求提交这一说法在保险同意支付任何相关保险费用&#40;如共同付费和扣除费用&#41;在您的保险计划和个人负责任何相关费用的照顾不是否认您保险公司。</target>
+        <target state="translated">如果您希望申请您的在线咨询的健康保险（合适的），挑选在支付信息下的保险索赔将在咨询后提交。通过请求提交这一说法在保险同意支付任何相关保险费用&#40;如共同付费和扣除费用&#41;在您的保险计划和个人负责任何相关费用的照顾不是否认您保险公司。</target>
       </trans-unit>
       <trans-unit id="2271" resname="r721790158" restype="string" datatype="x-haml">
         <source>according to the</source>
@@ -2804,7 +2804,7 @@
       </trans-unit>
       <trans-unit id="2417" resname="r236452357" restype="string" datatype="x-haml">
         <source>Virtual Care</source>
-        <target state="translated">虚拟护理</target>
+        <target state="translated">在线护理</target>
       </trans-unit>
       <trans-unit id="2418" resname="r961177680" restype="string" datatype="x-haml">
         <source>Apply for Concierge</source>
@@ -3320,11 +3320,11 @@
     <body>
       <trans-unit id="2519" resname="r311229523" restype="string" datatype="x-haml">
         <source>Claim your Virtual Practice page &#40;ViP&#41; today and establish your</source>
-        <target state="translated">立即声明您的虚拟练习页面（ViP），并在几分钟内建立您的</target>
+        <target state="translated">立即声明您的在线练习页面（ViP），并在几分钟内建立您的</target>
       </trans-unit>
       <trans-unit id="2520" resname="r270090687" restype="string" datatype="x-haml">
         <source>paid virtual office hours in minutes.</source>
-        <target state="translated">付费虚拟办公时间。</target>
+        <target state="translated">付费在线办公时间。</target>
       </trans-unit>
       <trans-unit id="2521" resname="r779390225" restype="string" datatype="x-haml">
         <source>your unique Concierge Key code today</source>
@@ -4400,7 +4400,7 @@
     <body>
       <trans-unit id="2760" resname="r986432510" restype="string" datatype="x-haml">
         <source>HealthTap Prime provides primary care virtual consults with doctors licensed in your state for limited diagnosis, care and prescriptions &#40;as appropriate&#41;. HealthTap Concierge lets you connect with your doctor for viritual consults using the HelathTap platform, or with other doctors for second opinions or one-time consults for minor conditions that can be addressed and resolved, in the sole opinion of the doctor, via a virtual consult.  HealthTap Premium Services can be a great resource between doctor visits, but are not a substitute for in person doctor visits, your primary care doctor or your primary care doctor’s independent judgment about any symptom, condition, or the appropriateness or risks of a procedure or treatment for a given person. HealthTap Prime is not health insurance and is not a substitute for health insurance.</source>
-        <target state="translated">HealthTap Prime黄金帐号提供初级保健虚拟医生咨询,许可在你的国家进行有限的诊断，治疗和处方（如被适用）。HealthTap管家帐号可以让你与你的医生使用helathtap平台进行虚拟咨询，或提供其他医生的第二意见 或 通过虚拟咨询以医生的独家观点,在处理和解决次要条件后,进行一次性咨询。HealthTap黄金账户的优质服务是一个巨大的医生咨询资源，但不能代替私人的医生的建议，不能代替你的初级保健医生或你的初级保健医生对于任何症状，情况的独立判断，还有对于适用性,一个手术风险或特定患者治疗的独立判断。HealthTap Prime不是健康保险而且不能替代健康保险。</target>
+        <target state="translated">HealthTap Prime黄金帐号提供初级保健在线医生咨询,许可在你的国家进行有限的诊断，治疗和处方（如被适用）。HealthTap管家帐号可以让你与你的医生使用helathtap平台进行在线咨询，或提供其他医生的第二意见 或 通过在线咨询以医生的独家观点,在处理和解决次要条件后,进行一次性咨询。HealthTap黄金账户的优质服务是一个巨大的医生咨询资源，但不能代替私人的医生的建议，不能代替你的初级保健医生或你的初级保健医生对于任何症状，情况的独立判断，还有对于适用性,一个手术风险或特定患者治疗的独立判断。HealthTap Prime不是健康保险而且不能替代健康保险。</target>
       </trans-unit>
       <trans-unit id="2761" resname="r279642634" restype="string" datatype="x-haml">
         <source>The Apps contain health-related or medical-related materials that may be sexually explicit. If you find these materials offensive, you may wish to use the Apps in ways that minimize exposure to such Content. HealthTap Medical Experts  are intended third party beneficiaries with certain rights under the App Terms of Use. The Apps and the Content are provided on an &quot;as is&quot; basis. For additional information, see our</source>
@@ -4960,7 +4960,7 @@
       </trans-unit>
       <trans-unit id="2864" resname="r73881687" restype="string" datatype="x-haml">
         <source>Welcome to virtual care</source>
-        <target state="translated">欢迎来到虚拟医疗</target>
+        <target state="translated">欢迎来到在线医疗</target>
       </trans-unit>
       <trans-unit id="2865" resname="r455331440" restype="string" datatype="x-haml">
         <source>your own doctors</source>
@@ -4968,7 +4968,7 @@
       </trans-unit>
       <trans-unit id="2866" resname="r463763293" restype="string" datatype="x-haml">
         <source>make virtual appointments with</source>
-        <target state="translated">进行虚拟预约</target>
+        <target state="translated">进行在线预约</target>
       </trans-unit>
       <trans-unit id="2867" resname="r1068074906" restype="string" datatype="x-haml">
         <source>via video or text chat</source>
@@ -5148,7 +5148,7 @@
       </trans-unit>
       <trans-unit id="2901" resname="r984329181" restype="string" datatype="x-haml">
         <source>Through my Virtual Practice on</source>
-        <target state="translated">通过我的虚拟实践在</target>
+        <target state="translated">通过我的在线咨询在</target>
       </trans-unit>
       <trans-unit id="2902" resname="r511579766" restype="string" datatype="x-haml">
         <source>City</source>
@@ -5328,7 +5328,7 @@
       </trans-unit>
       <trans-unit id="2971" resname="r793828584" restype="string" datatype="x-haml">
         <source>Just as you do in the real world, bring your wonderful bedside manner to your Virtual Consults!</source>
-        <target state="translated">就像您在现实世界中一样，把您对待临床的方式带到您的虚拟领域！</target>
+        <target state="translated">就像您在现实世界中一样，把您对待临床的方式带到您的在线领域！</target>
       </trans-unit>
       <trans-unit id="2972" resname="r707474391" restype="string" datatype="x-haml">
         <source>A warm smile and greeting.</source>
@@ -5396,7 +5396,7 @@
       </trans-unit>
       <trans-unit id="2988" resname="r4311920" restype="string" datatype="x-haml">
         <source>To prepare for Virtual Consults on your</source>
-        <target state="translated">为您准备虚拟咨询</target>
+        <target state="translated">为您准备在线咨询</target>
       </trans-unit>
       <trans-unit id="2989" resname="r3800218" restype="string" datatype="x-haml">
         <source>:</source>
@@ -5412,7 +5412,7 @@
       </trans-unit>
       <trans-unit id="2992" resname="r166279935" restype="string" datatype="x-haml">
         <source>Just like in your real practice, the presentation of your office can create a strong sense of  professionalism and trustworthiness for your patients. Try to do the same with any environment that you choose for your Virtual Consults.</source>
-        <target state="translated">就像在您的实际做法中一样，您办公室的展示可以为您的患者创造一种强烈的专业精神和可信赖的感觉。尝试在任何环境下对您为虚拟咨询功能执行相同操作。</target>
+        <target state="translated">就像在您的实际做法中一样，您办公室的展示可以为您的患者创造一种强烈的专业精神和可信赖的感觉。尝试在任何环境下对您为在线咨询功能执行相同操作。</target>
       </trans-unit>
       <trans-unit id="2993" resname="r829564541" restype="string" datatype="x-haml">
         <source>Here’s what  you’ll earn by conducting Virtual Consults:</source>
@@ -5432,7 +5432,7 @@
       </trans-unit>
       <trans-unit id="2997" resname="r803547633" restype="string" datatype="x-haml">
         <source>Patients love the human connection and want your personality to shine through. Studies show that a smile will not only help put your patients at ease, but will make them more receptive to your advice and be more satisfied overall! And as always, treat patients as you would wish to be treated--with kindness, patience, and care. We want to create a delightful doctor-patient experience during each and every Virtual Consult.*</source>
-        <target state="translated">研究表明，微笑不仅会帮助您的病人放松，更会使他们容易接受您的建议，并增加整体的满意度！和往常一样，要像您希望被治疗一样去治疗患者-用与善良，耐心和关怀。我们希望在每个虚拟咨询期间能够创造令人愉快的医生与患者的体验。*</target>
+        <target state="translated">研究表明，微笑不仅会帮助您的病人放松，更会使他们容易接受您的建议，并增加整体的满意度！和往常一样，要像您希望被治疗一样去治疗患者-用与善良，耐心和关怀。我们希望在每个在线咨询期间能够创造令人愉快的医生与患者的体验。*</target>
       </trans-unit>
       <trans-unit id="2998" resname="r314705044" restype="string" datatype="x-haml">
         <source>from the camera and type notes, and that this is normal and expected. “Jane, during our consult, I may look away from the screen to type notes during our conversation. I hope that’s okay.”*</source>
@@ -5500,7 +5500,7 @@
       </trans-unit>
       <trans-unit id="3014" resname="r890646514" restype="string" datatype="x-haml">
         <source>of the Virtual Consult service</source>
-        <target state="translated">虚拟咨询服务</target>
+        <target state="translated">在线咨询服务</target>
       </trans-unit>
       <trans-unit id="3015" resname="r470535278" restype="string" datatype="x-haml">
         <source>Even if you determine that a patient needs an x-ray, that information is incredibly useful to the patient.</source>
@@ -5584,7 +5584,7 @@
       </trans-unit>
       <trans-unit id="3033" resname="r1025478475" restype="string" datatype="x-haml">
         <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult.</source>
-        <target state="translated">新的治疗处方和补充药（不包括受管制的药物），可以发送到您当地的药店，根据您的虚拟咨询，医生给出适当的指示和治疗方式。</target>
+        <target state="translated">新的治疗处方和补充药（不包括受管制的药物），可以发送到您当地的药店，根据您的在线咨询，医生给出适当的指示和治疗方式。</target>
       </trans-unit>
       <trans-unit id="3034" resname="r430788678" restype="string" datatype="x-haml">
         <source>For a limited time, get a</source>
@@ -6172,7 +6172,7 @@
       </trans-unit>
       <trans-unit id="3167" resname="r246075141" restype="string" datatype="x-haml">
         <source>As a HealthTap Medical Expert, you are required to register with and use your real name and &#40;if you choose to upload a picture&#41; a real image of you in your Virtual Practice.</source>
-        <target state="translated">作为HealthTap医疗专家，您需要在您的虚拟实践中注册并使用您的真实姓名和（如果您选择上传图片）真实的形象。</target>
+        <target state="translated">作为HealthTap医疗专家，您需要在您的在线咨询中注册并使用您的真实姓名和（如果您选择上传图片）真实的形象。</target>
       </trans-unit>
       <trans-unit id="3168" resname="r439626123" restype="string" datatype="x-haml">
         <source>Licensed doctors may apply to be and participate as Medical Experts on HealthTap. Physicians whose licenses are or become suspended or revoked, for any reason, are not permitted and agree not to participate in any way, including but not limited to submitting Content to HealthTap, as a Medical Expert on HealthTap.  HealthTap may expand the network to include other licensed medical experts.</source>
@@ -6180,7 +6180,7 @@
       </trans-unit>
       <trans-unit id="3169" resname="r997404020" restype="string" datatype="x-haml">
         <source>You retain the right to edit and delete your own Expert Submissions that appear in your Virtual Practice at any time. You also retain the right to use and create derivative works from your own Expert Submissions elsewhere &#40;such as on your own practice website, blog, or in your own social media posts&#41;.</source>
-        <target state="translated">您保留随时编辑和删除您的虚拟实践中显示的专家提交的权利。您同样也拥有从您自己的专家意见书的其他地方（如在您自己的实践网站，博客，或在您自己的社交媒体网站）使用和创建衍生作品的权利。</target>
+        <target state="translated">您保留随时编辑和删除您的在线咨询中显示的专家提交的权利。您同样也拥有从您自己的专家意见书的其他地方（如在您自己的实践网站，博客，或在您自己的社交媒体网站）使用和创建衍生作品的权利。</target>
       </trans-unit>
       <trans-unit id="3170" resname="r990555033" restype="string" datatype="x-haml">
         <source>When a HealthTap Medical Expert submissions related to any HealthTap feature or function and made for publication on HealthTap &#40;such as an answer to a question&#41; &#40;an &quot;Expert Submission&quot;&#41;, you grant HealthTap an unrestricted right without limitation to use, reproduce, extract data from or add data to, publish and post any such Expert Submissions, including in connection with or on HealthTap, including in connection with your name. This means that when you make such a submission to us, you are giving us rights to this content, including the right to post it on HealthTap and use it in connection with HealthTap. You also give us the right to give or transfer all rights granted herein to others. While Expert Submissions generally are posted to HealthTap, we do not have an obligation to post any particular Expert Submission on HealthTap and reserve the right, at our sole discretion and for any reason whatsoever &#40;including but not limited to an Expert Submission being reported to us&#41;, to not post and/or to remove any Expert Submissions at any time.</source>
@@ -6216,7 +6216,7 @@
       </trans-unit>
       <trans-unit id="3178" resname="r872981473" restype="string" datatype="x-haml">
         <source>Patients on HealthTap can find your professional contact information through your Virtual Practice, and can contact you for an appointment. However, please avoid violating medical board rules regarding advertising and patient solicitation.</source>
-        <target state="translated">在HealthTap的患者可以通过虚拟实践找到您的专业联系信息，并且可以通过预约联系您。然而，请避免违反医学委员会关于广告和病人征集的规定。</target>
+        <target state="translated">在HealthTap的患者可以通过在线咨询找到您的专业联系信息，并且可以通过预约联系您。然而，请避免违反医学委员会关于广告和病人征集的规定。</target>
       </trans-unit>
       <trans-unit id="3179" resname="r951159676" restype="string" datatype="x-haml">
         <source>Be careful not to discuss privileged or confidential details of past or current patients, or accidentally revealing confidential information in an indirect way – such as by discussing hypothetical illustrations that could be traced back to specific patients.</source>
@@ -6228,7 +6228,7 @@
       </trans-unit>
       <trans-unit id="3181" resname="r487199707" restype="string" datatype="x-haml">
         <source>All other information, including suggestions, feedback, ideas, concepts and any other materials you disclose or offer to us on or in connection with HealthTap or any Content, are governed by the general member submission terms of this Agreement. This means that these submissions are made without any restrictions and without any expectation of confidentiality or compensation. You agree not to assert any property right or moral right of any kind with respect to any such submissions. You agree to our standard terms governing media submissions, except for the prohibition against uploading a facial portrait image of yourself for your Virtual Practice picture.</source>
-        <target state="translated">包括建议、反馈、想法、概念和其他您披露或提供给我们的材料或与HealthTap相关的或由普通会员提交的本协议条款的任何内容，在内的所有其他信息。这意味着这些提交是没有任何限制,也没有任何保密或补偿期望的。您同意对这样的提交不维护任何产权或任何形式的道德权利。您同意我们的标准条款执政媒体投稿，除了禁止我们对你自己上传的脸部肖像图像的虚拟实践的图片的使用。</target>
+        <target state="translated">包括建议、反馈、想法、概念和其他您披露或提供给我们的材料或与HealthTap相关的或由普通会员提交的本协议条款的任何内容，在内的所有其他信息。这意味着这些提交是没有任何限制,也没有任何保密或补偿期望的。您同意对这样的提交不维护任何产权或任何形式的道德权利。您同意我们的标准条款执政媒体投稿，除了禁止我们对你自己上传的脸部肖像图像的在线咨询的图片的使用。</target>
       </trans-unit>
       <trans-unit id="3182" resname="r1071215986" restype="string" datatype="x-haml">
         <source>HealthTap permits Medical Experts to receive questions directly from specific members in Private Conversations.  You will receive compensation for participating in Private Conversations according to the additional terms of the [HealthTap License Agreement and Business Associate Agreement], which are incorporated herein by reference.</source>
@@ -6248,7 +6248,7 @@
       </trans-unit>
       <trans-unit id="3186" resname="r290249736" restype="string" datatype="x-haml">
         <source>You may upload appropriate content to HealthTap and rights in submissions to HealthTap are governed by the HealthTap Terms of Use.  Information in your Virtual Practice and any submissions to a Public Area of HealthTap are not confidential.  Outside of these, we ask that you keep confidential all information exchanged between us and all information exchanged between you and HealthTap members in Private Conversations. You agree to comply with all applicable laws and regulations when you use HealthTap, including necessary privacy and HIPAA requirements.</source>
-        <target state="translated">您可以将相应的内容上传到HealthTap，提交到HealthTap的权利受HealthTap使用条款的约束。您的虚拟实践中的信息和HealthTap公共区域的任何提交信息将不会保密。除此之外，我们要求您保密我们之间交换的所有信息和您与HealthTap成员之间在私人对话中交换的所有信息。您同意在使用HealthTap时遵守所有适用的法律和法规，包括必要的隐私和HIPAA要求。</target>
+        <target state="translated">您可以将相应的内容上传到HealthTap，提交到HealthTap的权利受HealthTap使用条款的约束。您的在线咨询中的信息和HealthTap公共区域的任何提交信息将不会保密。除此之外，我们要求您保密我们之间交换的所有信息和您与HealthTap成员之间在私人对话中交换的所有信息。您同意在使用HealthTap时遵守所有适用的法律和法规，包括必要的隐私和HIPAA要求。</target>
       </trans-unit>
       <trans-unit id="3187" resname="r360073088" restype="string" datatype="x-haml">
         <source>website &#40;&quot;</source>
@@ -7428,7 +7428,7 @@
     <body>
       <trans-unit id="3423" resname="r839019171" restype="string" datatype="x-haml">
         <source>An Introductory Consult is a &quot;meet and greet&quot; for customers who are not yet your patients. Please provide only advice in these sessions. At your discretion, and as appropriate under applicable medical standards &#40;including following an in-person visit where required&#41;, you may accept them as a patients.  With patients, you may provide treatment, write prescriptions, or suggest checklists. Patients will also be able to make additional appointments with you through your Virtual Practice.</source>
-        <target state="translated">对于尚未成为您患者的客户的一个介绍性咨询是“相遇打招呼”。你可以在谨慎和合理医疗条件是情况下（包括私人拜访）接受他们成为您的患者。您会为患者提供治疗、写处方和建议清单。患者也会通过您的虚拟实践和您做额外的预约。</target>
+        <target state="translated">对于尚未成为您患者的客户的一个介绍性咨询是“相遇打招呼”。你可以在谨慎和合理医疗条件是情况下（包括私人拜访）接受他们成为您的患者。您会为患者提供治疗、写处方和建议清单。患者也会通过您的在线咨询和您做额外的预约。</target>
       </trans-unit>
     </body>
   </file>
@@ -7456,7 +7456,7 @@
       </trans-unit>
       <trans-unit id="3428" resname="r627317693" restype="string" datatype="x-haml">
         <source>Grow your Virtual Practice and invite your own patients or connect with new ones on HealthTap</source>
-        <target state="translated">增加您的虚拟实践，邀请您自己的患者或联络HealthTap上的新患者</target>
+        <target state="translated">增加您的在线咨询，邀请您自己的患者或联络HealthTap上的新患者</target>
       </trans-unit>
     </body>
   </file>
@@ -7584,7 +7584,7 @@
     <body>
       <trans-unit id="3457" resname="r157365601" restype="string" datatype="x-haml">
         <source>app to respond to Virtual Consults by video or text chat from your mobile device.</source>
-        <target state="translated">在该应用程序上,您可以通过您的移动设备进行文字聊天或者视频交流,给虚拟咨询回复.</target>
+        <target state="translated">在该应用程序上,您可以通过您的移动设备进行文字聊天或者视频交流,给在线咨询回复.</target>
       </trans-unit>
       <trans-unit id="3458" resname="r483844762" restype="string" datatype="x-haml">
         <source>You must use our free</source>
@@ -8056,7 +8056,7 @@
     <body>
       <trans-unit id="3540" resname="r736481295" restype="string" datatype="x-haml">
         <source>Set your Virtual Office hours</source>
-        <target state="translated">设置您的虚拟办公时间</target>
+        <target state="translated">设置您的在线办公时间</target>
       </trans-unit>
       <trans-unit id="3541" resname="r605536589" restype="string" datatype="x-haml">
         <source>and request unscheduled</source>
@@ -8260,7 +8260,7 @@
     <body>
       <trans-unit id="3589" resname="r181576631" restype="string" datatype="x-haml">
         <source>— the fully integrated, engaging and smart Health Operating System, providing query-to-cure virtual care to your patients, anytime, anywhere.</source>
-        <target state="translated">—完全整合的，全程参与的和智能灵敏的健康操作系统，随时随地提供从询问到治愈的虚拟化关爱您家人的方式</target>
+        <target state="translated">—完全整合的，全程参与的和智能灵敏的健康操作系统，随时随地提供从询问到治愈的在线化关爱您家人的方式</target>
       </trans-unit>
     </body>
   </file>

@@ -25734,7 +25734,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4727" resname="is licensed to see patients from &lt;%= feelGood.joinSentenceList&#40;licensed_states&#41; %&gt;." restype="string" datatype="html">
         <source>is licensed to see patients from &lt;%= feelGood.joinSentenceList&#40;licensed_states&#41; %&gt;.</source>
-        <target>授权从 &lt;%= feelGood.joinSentenceList&#40;licensed_states&#41; %&gt;.查看患者</target>
+        <target state="accepted">有看 &lt;%= feelGood.joinSentenceList&#40;licensed_states&#41; %&gt;.州患者的执照</target>
       </trans-unit>
       <trans-unit id="6167" resname="Please confirm your current location" restype="string" datatype="html">
         <source>Please confirm your current location</source>
@@ -28347,7 +28347,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6257" resname="Private Consult on {date}" restype="string" datatype="html">
         <source>Private Consult on {date}</source>
-        <target>私人咨询在{date}</target>
+        <target state="accepted">在{date}的私人咨询</target>
       </trans-unit>
     </body>
   </file>
@@ -36462,7 +36462,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6952" resname="Do you" restype="string" datatype="javascript">
         <source>Do you</source>
-        <target>是您</target>
+        <target state="accepted">是您本人</target>
       </trans-unit>
       <trans-unit id="6953" resname=" take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>take any over-the-counter or prescription medications?</source>
@@ -36842,7 +36842,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7026" resname="We&apos;re sorry, but {doctor_prefix}{last_name} is only licensed to see patients in {licensed_states}." restype="string" datatype="javascript">
         <source>We&apos;re sorry, but {doctor_prefix}{last_name} is only licensed to see patients in {licensed_states}.</source>
-        <target>我们很抱歉，但是 {doctor_prefix}{last_name} 只有许可才能看到患者{licensed_states}.</target>
+        <target state="accepted">我们很抱歉，但是 {doctor_prefix}{last_name} 的执照只能看{licensed_states}州的病人.</target>
       </trans-unit>
       <trans-unit id="7027" resname=" You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to one of these locations." restype="string" datatype="javascript">
         <source>You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to one of these locations.</source>
