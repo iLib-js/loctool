@@ -33537,7 +33537,7 @@
         <source>See one more answer</source><target>请查看另一个回答</target>
       </trans-unit>
       <trans-unit id="236" resname="see_more_answer" restype="plural" datatype="x-android-resource" extype="other">
-        <source>See %d more answers</source><target>查看%@个回答</target>
+        <source>See %d more answers</source><target>查看%d个回答</target>
       </trans-unit>
       <trans-unit id="237" resname="doctors" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor</source><target>1位医生</target>
@@ -36188,9 +36188,6 @@
       <trans-unit id="2277" resname="symptom_triage_instructional_search_results_content" restype="string" datatype="x-android-resource">
         <source>What symptom would you like to report today?</source><target>¿Qué síntoma te gustaría reportar hoy?</target>
       </trans-unit>
-      <trans-unit id="2280" resname="symptom_triage_added_symptom_text" restype="string" datatype="x-android-resource">
-        <source>symptom added</source><target>síntoma añadido</target>
-      </trans-unit>
       <trans-unit id="2281" resname="symptom_triage_drawer_add_text" restype="string" datatype="x-android-resource">
         <source>Add new symptom</source><target>Añade nuevo síntoma</target>
       </trans-unit>
@@ -36651,9 +36648,6 @@
       </trans-unit>
       <trans-unit id="2277" resname="symptom_triage_instructional_search_results_content" restype="string" datatype="x-android-resource">
         <source>What symptom would you like to report today?</source><target>您今天希望报告什么症状？</target>
-      </trans-unit>
-      <trans-unit id="2280" resname="symptom_triage_added_symptom_text" restype="string" datatype="x-android-resource">
-        <source>symptom added</source><target>已症状的添加</target>
       </trans-unit>
       <trans-unit id="2281" resname="symptom_triage_drawer_add_text" restype="string" datatype="x-android-resource">
         <source>Add new symptom</source><target>添加新的资料</target>

@@ -1082,7 +1082,7 @@
         <source>See one more answer</source><target>请查看另一个回答</target>
       </trans-unit>
       <trans-unit id="236" resname="see_more_answer" restype="plural" datatype="x-android-resource" extype="other">
-        <source>See %d more answers</source><target>查看%@个回答</target>
+        <source>See %d more answers</source><target>查看%d个回答</target>
       </trans-unit>
       <trans-unit id="237" resname="doctors" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor</source><target>1位医生</target>
