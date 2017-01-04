@@ -6744,7 +6744,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="%d more actions..." resname="%d more actions..." restype="string">
         <source>%d more actions...</source>
-        <target>%d más acciones...</target>
+        <target state="accepted">%d acciones más...</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%d participants" resname="%d participants" restype="string">
@@ -6819,7 +6819,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="%ld more actions…" resname="%ld more actions…" restype="string">
         <source>%ld more actions…</source>
-        <target>%ld más acciones...</target>
+        <target state="accepted">%ld acciones más...</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%ld year%@" resname="%ld year%@" restype="string">
@@ -10935,7 +10935,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="See %d more actions..." resname="See %d more actions..." restype="string">
         <source>See %d more actions...</source>
-        <target>Ver %d más acciones...</target>
+        <target state="accepted">Ver %d acciones más ...</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="See %d more answers" resname="See %d more answers" restype="string">
@@ -10950,7 +10950,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="See %ld more actions" resname="See %ld more actions" restype="string">
         <source>See %ld more actions</source>
-        <target>Ver %ld más acciones</target>
+        <target state="accepted">Ver %ld acciones más</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="See 1 more answer" resname="See 1 more answer" restype="string">
