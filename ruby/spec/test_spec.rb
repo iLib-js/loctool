@@ -348,9 +348,24 @@ describe 'HamlLocalizer' do
 /   .btn.send-question
 /     Send your question
 "
-      #def process_pseudo_values(values) {'Send your question' => 'FOO'} end
       local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
       local_name_to_output['en-GB'].include?('Send your question').should be_true
+    end
+
+    it 'should localize this text' do
+      # file test_call.html.haml
+      template = '
+.test-call-container
+  .steps-container
+    .step-container.check-video.hidden
+      .video-container.main-container
+        .step-title
+          Do you see a video of yourself? <br>
+          (It may take about 1-2 minutes for the video to load)
+'
+
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
+      local_name_to_output['en-GB'].include?('It may take about 1-2 minutes for the video to load').should be_false
     end
 
   end
