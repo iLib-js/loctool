@@ -229,7 +229,7 @@ describe 'HamlLocalizer' do
       File.should_receive(:read).with('translations-en-XY.yml').and_return({en_XY: {'a' => 'b', 'c' => 'd'}}.to_yaml)
       ret = load_locale_maps(['en-XY'])
       expect(ret.keys).to include('en-XY')
-      ret['en-XY'].keys.empty?.should be_true
+      ret['en-XY'].keys.empty?.should be_false
     end
   end
 
