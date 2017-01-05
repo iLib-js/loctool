@@ -192,6 +192,14 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testAndroidResourceFile.js" dir="${build.test}"/>
 	</target>
 
+	<target name="test.androidresourcefiletype" description="Run only the Android resource file type tests">
+		<run script="${build.test}/testAndroidResourceFileType.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
+	</target>
+
+	<target name="debug.androidresourcefiletype" description="Debug only the android resource file type tests">
+		<debug script="${build.test}/testAndroidResourceFileType.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.xliff" description="Run only the xliff tests">
 		<run script="${build.test}/testXliff.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
@@ -344,7 +352,7 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testHamlFileType.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype">
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype">
 	</target>
 
 	<macrodef name="runsql">
