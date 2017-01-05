@@ -140,7 +140,7 @@ describe 'HamlLocalizer' do
     it 'should work' do
       # from investors.html.haml
       orig = "        <span class='ht-name' >HealthTap</span> is supported by world-class investors, advisors, and experienced company builders who have helped create, "
-      from_to ={"is supported by world-class investors, advisors, and experienced company builders who have helped create,"=>"FOO"}
+      from_to ={" is supported by world-class investors, advisors, and experienced company builders who have helped create,"=>"FOO"}
       ret = replace_with_translations2(orig, from_to)
 
       ret.include?('FOO').should be_true
