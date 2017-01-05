@@ -136,7 +136,7 @@ def accumulate_values(root, values, path_name)
   if orig && orig.is_a?(String)
     s = Sanitize.clean(orig)
     if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
-      values << s.gsub(/[^[:print:]]/ , '').gsub(/[^a-zA-Z0-9_\s,\.-]/, '').strip
+      values << s.gsub(/[^[:print:]]/ , '')#.gsub(/[^a-zA-Z0-9_\s,\.'’_—\(\)!\?-]/, '').strip
     elsif !(/(.*)(<[^>]*>)(.*)/.match(orig))
       #there is no html only special characters filtered out by Sanitize.clean
       values.concat(break_around_non_clean_chars(orig, s))
@@ -243,8 +243,7 @@ def process_line(skip_block_indent, ret, line, from_to)
               res = line.gsub!(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, ">#{v}") #for some reason it replaces the > char as well. replcae it
             else
               #puts '3'
-              # replace if k is at the beginning or end. Else, look for negative look behind and negative look-ahead with white-space boundary.
-              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v) # match starting with word boundary and doesn't have / | : right before k
+              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
             end
           end
           #if res
@@ -320,12 +319,12 @@ def produce_unmapped(file_to_words)
   end
 end
 
-def strip_whitespace(from_to)
-  ret = {}
-  from_to.each{|k, v|
-    ret[k.strip] = v.strip
-  }
-  ret
+#def strip_whitespace_punct_word(v)
+#  if v.match(/^[[:punct:]]/) || v.match(/[[:punct:]]$/)
+#end
+
+def strip_whitespace_punct(values)
+  values.map{|v| v.strip.gsub(/^[[:punct:]]/,'').gsub(/[[:punct:]]$/, '').strip }
 end
 
 # clean the source string so that whitespace and html changes do not matter
@@ -392,8 +391,10 @@ unless defined?(TEST_ENV)
       #puts root
       #puts "orig_values=#{values}"
       values = reject_special_words(reject_paran(break_aound_code_values(values)))
+      puts "values before=#{values}"
+      values = strip_whitespace_punct(values)
 
-      #puts "values=#{values}"
+      puts "values=#{values}"
       locale_names.each do |locale_name|
         #puts "file_name=#{path_name} locale_name=#{locale_name}"
         locale_mappings = all_locale_mappings[locale_name] || {}
@@ -404,7 +405,6 @@ unless defined?(TEST_ENV)
         else
           from_to = process_values(locale_mappings, values, unmapped_for_file)
         end
-        #from_to = strip_whitespace(from_to)
         puts "from_to=#{from_to}"
         puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
         #process_values(locale_mappings, from_to.keys, unmapped_for_file)

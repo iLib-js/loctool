@@ -112,15 +112,15 @@ describe 'HamlLocalizer' do
       ret.include?('FOO').should be_true
     end
 
-    it 'Ensure we dont have special characters in accumulated values' do
-      # from app/views/layouts/_expert_external_content_header.html.haml
-      root = TestRoot.new
-      root.value = {:value => ' ‹ Back to site'}
-      values = []
-      accumulate_values(root, values, nil)
-      values.count.should == 1
-      values[0].should == "Back to site"
-    end
+    #it 'Ensure we dont have special characters in accumulated values' do
+    #  # from app/views/layouts/_expert_external_content_header.html.haml
+    #  root = TestRoot.new
+    #  root.value = {:value => ' ‹ Back to site'}
+    #  values = []
+    #  accumulate_values(root, values, nil)
+    #  values.count.should == 1
+    #  values[0].should == "Back to site"
+    #end
 
     it 'should not substitute partial words' do
       # from app/views/layouts/_expert_external_content_header.html.haml
@@ -149,7 +149,7 @@ describe 'HamlLocalizer' do
     it 'should work' do
       # from mission.html.haml
       orig = '        It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to <span class="no-break" >Feel Good</span>. Whether we’re trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better—and we always want to <span class="no-break" >Feel Good</span>. '
-      from_to = {"It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to "=>"FOO"}
+      from_to = {"It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to"=>"FOO"}
       ret = replace_with_translations2(orig, from_to)
       ret.include?('FOO').should be_true
     end
@@ -158,11 +158,11 @@ describe 'HamlLocalizer' do
       #from our_story.html.haml
       orig = "        <span class=\"ht-name\">HealthTap</span> Will Change Healthcare"
       from_to = {"Will Change Healthcare"=>"FOO",
-                 "is creating the world's most comprehensive, always-evolving,  and evergreen knowledgebase of personal health wisdom and expertise."=>"FOO"}
+                 "is creating the world’s most comprehensive, always-evolving,  and evergreen knowledgebase of personal health wisdom and expertise"=>"FOO"}
       ret = replace_with_translations2(orig, from_to)
       ret.include?('FOO').should be_true
 
-      orig2 = "          In fact, <span class=\"ht-name\">HealthTap</span> is creating the world's most comprehensive, always-evolving,  and evergreen knowledgebase of personal health wisdom and expertise."
+      orig2 = '          In fact, <span class="ht-name">HealthTap</span> is creating the world’s most comprehensive, always-evolving,  and evergreen knowledgebase of personal health wisdom and expertise.'
       ret = replace_with_translations2(orig2, from_to)
       ret.include?('FOO').should be_true
     end
@@ -229,7 +229,7 @@ describe 'HamlLocalizer' do
       File.should_receive(:read).with('translations-en-XY.yml').and_return({en_XY: {'a' => 'b', 'c' => 'd'}}.to_yaml)
       ret = load_locale_maps(['en-XY'])
       expect(ret.keys).to include('en-XY')
-      ret['en-XY'].keys.empty?.should be_false
+      ret['en-XY'].keys.empty?.should be_true
     end
   end
 
@@ -294,5 +294,20 @@ describe 'HamlLocalizer' do
     from_to = {"DocScore" => 'FOO'}
     ret = replace_with_translations2(orig, from_to)
     ret.include?('FOO').should be_false
+  end
+
+  describe 'strip_whitespace_punct tests' do
+    it 'tests that we strip punctuation at the end' do
+      strip_whitespace_punct(['In fact,']).should == ['In fact']
+    end
+    it 'tests that we strip punctuation at the end' do
+      strip_whitespace_punct(['In fact ,']).should == ['In fact']
+    end
+    it 'tests that we strip punctuation at the end' do
+      strip_whitespace_punct(['In fact, ']).should == ['In fact']
+    end
+    it 'tests punctuation at beginning' do
+      strip_whitespace_punct([' ‹ Back to site']).should == ['Back to site']
+    end
   end
 end
