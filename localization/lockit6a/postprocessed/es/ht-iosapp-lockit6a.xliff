@@ -231,7 +231,7 @@
     <body>
       <trans-unit id="23" resname="FnY-tJ-Ru5.text" restype="string" datatype="x-xib">
         <source>Ask Docs</source>
-        <target>¡Pregunta!</target>
+        <target state="accepted">Pregunta al médico</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Ask Docs&quot;; ObjectID = &quot;FnY-tJ-Ru5&quot;;</note>
       </trans-unit>
       <trans-unit id="24" resname="Jgd-39-xxH.text" restype="string" datatype="x-xib">
@@ -241,7 +241,7 @@
       </trans-unit>
       <trans-unit id="25" resname="goV-9z-1Od.text" restype="string" datatype="x-xib">
         <source>To-Do</source>
-        <target>Qué hacer</target>
+        <target state="accepted">Por hacer</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;To-Do&quot;; ObjectID = &quot;goV-9z-1Od&quot;;</note>
       </trans-unit>
       <trans-unit id="26" resname="iOz-4W-mIJ.normalTitle" restype="string" datatype="x-xib">
@@ -320,7 +320,7 @@
     <body>
       <trans-unit id="36" resname="hsK-cr-X4C.placeholder" restype="string" datatype="x-xib">
         <source>Find a topic &#40;e.g. Lose weight&#41;</source>
-        <target>Encuentra un tema &#40;por ej.: Pérdida de peso&#41;</target>
+        <target state="accepted">Encuentra un tema &#40;p. ej. meditación&#41;</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find a topic &#40;e.g. Lose weight&#41;&quot;; ObjectID = &quot;hsK-cr-X4C&quot;;</note>
       </trans-unit>
     </body>

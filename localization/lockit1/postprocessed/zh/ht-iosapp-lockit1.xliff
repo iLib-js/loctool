@@ -277,7 +277,7 @@ us in the App Store :&#41;</source>
       </trans-unit>
       <trans-unit id="hon-2k-uh7.normalTitle" resname="hon-2k-uh7.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Send note&quot;; ObjectID = &quot;hon-2k-uh7&quot;;</note>
       </trans-unit>
       <trans-unit id="zEZ-Fm-5PZ.text" resname="zEZ-Fm-5PZ.text" restype="string" datatype="x-xib">
@@ -8846,7 +8846,7 @@ subscription</source>
       </trans-unit>
       <trans-unit id="Facebook" resname="Facebook" restype="string" datatype="x-objective-c">
         <source>Facebook</source>
-        <target>免费</target>
+        <target state="accepted">脸书</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Failed to access remote files" resname="Failed to access remote files" restype="string" datatype="x-objective-c">
@@ -15408,7 +15408,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Send note&quot;; ObjectID = &quot;u1p-9T-OIc&quot;;</note>
       </trans-unit>
     </body>
@@ -15477,7 +15477,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Send note&quot;; ObjectID = &quot;u1p-9T-OIc&quot;;</note>
       </trans-unit>
     </body>
@@ -15536,7 +15536,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Send note&quot;; ObjectID = &quot;u1p-9T-OIc&quot;;</note>
       </trans-unit>
     </body>
@@ -20194,7 +20194,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
       </trans-unit>
       <trans-unit id="sQO-Yv-5Ru.normalTitle" resname="sQO-Yv-5Ru.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Send note&quot;; ObjectID = &quot;sQO-Yv-5Ru&quot;;</note>
       </trans-unit>
       <trans-unit id="t19-M2-NXs.text" resname="t19-M2-NXs.text" restype="string" datatype="x-xib">
