@@ -9278,7 +9278,7 @@
       </trans-unit>
       <trans-unit id="2012" resname="text_Answer_assisted_by_Medical_Student" restype="string" datatype="x-android-resource">
         <source>Answer assisted by Medical Student</source>
-        <target>Respuesta asistida por %@, Estudiante de Medicina</target>
+        <target>Respuesta asistida por un estudiante de medicina</target>
       </trans-unit>
       <trans-unit id="2013" resname="text_Preferred_Pharmacy" restype="string" datatype="x-android-resource">
         <source>Preferred Pharmacy</source>
@@ -17952,7 +17952,7 @@
       </trans-unit>
       <trans-unit id="623" resname="r119624487" restype="string" datatype="java">
         <source>24/7 virtual consults are not yet available in %s</source>
-        <target>24/7全天候在线咨询在%@中尚不可用</target>
+        <target>24/7全天候在线咨询在%s中尚不可用</target>
       </trans-unit>
     </body>
   </file>

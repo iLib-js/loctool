@@ -56,7 +56,7 @@
       </trans-unit>
       <trans-unit id="4906" resname="category" restype="string" datatype="x-yaml" x-context="member_question_asked_answered">
         <source>a</source>
-        <target>una</target>
+        <target>a</target>
       </trans-unit>
       <trans-unit id="4907" resname="subject" restype="string" datatype="x-yaml" x-context="member_question_doctor_reviewing">
         <source>Great News</source>
@@ -384,7 +384,7 @@
       </trans-unit>
       <trans-unit id="4988" resname="body" restype="string" datatype="x-yaml" x-context="member_subscription_charge_error">
         <source>To continue to have access to Virtual Consults, please update your credit card on file.</source>
-        <target>Para continuar teniendo acceso a Consultas Virtuales, por favor actualiza tu tarjeta de crédito archivada.</target>
+        <target>Para continuar teniendo acceso a Consultas Virtuales, por favor, actualiza tu tarjeta de crédito archivada.</target>
       </trans-unit>
       <trans-unit id="4989" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_subscription_charge_error">
         <source>Update card</source>
@@ -652,11 +652,11 @@
       </trans-unit>
       <trans-unit id="5055" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_prime_reminder_shift_started">
         <source>Please log into HealthTap, as the shift you committed to began two minutes ago.</source>
-        <target>Por favor, ingresa a HealthTap, pues el turno al que te comprometiste inició hace 2 minutos.</target>
+        <target>Por favor, inicia sesión en HealthTap, pues el turno al que te comprometiste inició hace 2 minutos.</target>
       </trans-unit>
       <trans-unit id="5056" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_prime_reminder_shift_started">
         <source>HealthTap - Please log into HealthTap, as the shift you committed to began two minutes ago.</source>
-        <target>HealthTap - Por favor, ingresa a HealthTap, pues el turno al que te comprometiste inició hace 2 minutos.</target>
+        <target>HealthTap - Por favor, inicia sesión en HealthTap, pues el turno al que te comprometiste inició hace 2 minutos.</target>
       </trans-unit>
       <trans-unit id="5057" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_prime_missed_call">
         <source>You just missed a call from a patient. Please sign-in to make sure you don’t miss another call.</source>
@@ -708,23 +708,23 @@
       </trans-unit>
       <trans-unit id="5069" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_concierge_reminder_shift_coming">
         <source>Friendly reminder: You&apos;ve committed to a Concierge shift that begins in one hour. Please make sure to log in and set yourself as available by then.</source>
-        <target>Recordatorio amigable: Te has comprometido a un turno Concierge que comienza en una hora. Por favor, asegúrate de ingresar y ponerte como disponible para entonces.</target>
+        <target>Recordatorio amigable: Te has comprometido a un turno Concierge que comienza en una hora. Por favor, asegúrate de iniciar sesión en y ponerte como disponible para entonces.</target>
       </trans-unit>
       <trans-unit id="5070" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_concierge_reminder_shift_coming">
         <source>Friendly reminder: Your Virtual Office hours start in an hour. Please make sure to log in and set yourself as available by then.</source>
-        <target>Recordatorio amigable: Tus horas de Oficina Virtual empiezan en una hora. Por favor, asegúrate de ingresar y ponerte como disponible para entonces.</target>
+        <target>Recordatorio amigable: Tus horas de Oficina Virtual empiezan en una hora. Por favor, asegúrate de iniciar sesión y ponerte como disponible para entonces.</target>
       </trans-unit>
       <trans-unit id="5071" resname="email_subject" restype="string" datatype="x-yaml" x-context="doctor_concierge_reminder_shift_started">
         <source>Please log in—your HealthTap Concierge shift began two minutes ago.</source>
-        <target>Por favor, ingresa—tu turno en HealthTap Concierge inició hace dos minutos.</target>
+        <target>Por favor, inicia sesión—tu turno en HealthTap Concierge inició hace dos minutos.</target>
       </trans-unit>
       <trans-unit id="5072" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_concierge_reminder_shift_started">
         <source>Please log into HealthTap and set your status as available as the shift you committed to began two minutes ago.</source>
-        <target>Por favor, ingresa a HealthTap, pon tu estado como disponible, pues el turno al que te comprometiste inició hace 2 minutos.</target>
+        <target>Por favor, inicia sesión en HealthTap, pon tu estado como disponible, pues el turno al que te comprometiste inició hace 2 minutos.</target>
       </trans-unit>
       <trans-unit id="5073" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_concierge_reminder_shift_started">
         <source>Please log into HealthTap and set your status as available as the shift you committed to began two minutes ago.</source>
-        <target>Por favor, ingresa a HealthTap, pon tu estado como disponible, pues el turno al que te comprometiste inició hace 2 minutos.</target>
+        <target>Por favor, inicia sesión en HealthTap, pon tu estado como disponible, pues el turno al que te comprometiste inició hace 2 minutos.</target>
       </trans-unit>
       <trans-unit id="5074" resname="email_subject" restype="string" datatype="x-yaml" x-context="doctor_prime_rating_doctor_comments">
         <source>%1 reviewed your SOAP note and shared feedback</source>
@@ -812,7 +812,7 @@
       </trans-unit>
       <trans-unit id="5095" resname="push_data" restype="string" datatype="x-yaml" x-context="member_consult_prescription_needinfo">
         <source>Before we can send your prescription for %1, please share %2 first and last name, date of birth, gender, phone number, and preferred pharmacy%3. Please let us know by updating %4 profile!</source>
-        <target>Antes de enviarte tu receta por %1, por favor comparte %2 nombre y apellido, fecha de nacimiento, género, número de teléfono y farmacia de preferencia%3. ¡Por favor, haznos saber actualizando %4 perfil!</target>
+        <target>Antes de enviarte tu receta por %1, por favor, comparte %2 nombre y apellido, fecha de nacimiento, género, número de teléfono y farmacia de preferencia%3. ¡Por favor, haznos saber actualizando %4 perfil!</target>
       </trans-unit>
       <trans-unit id="5096" resname="subject" restype="string" datatype="x-yaml" x-context="member_consult_prescription_sent">
         <source>Prescription sent!</source>
@@ -1668,7 +1668,7 @@
       </trans-unit>
       <trans-unit id="5309" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_prime_standby_blast">
         <source>Calling all Standby doctors: Patients are requesting Virtual Consults and you are currently on Standby for this shift. Are you available to see patients now? If so, please mark yourself as “Available”.</source>
-        <target>Llamando a todos los doctores En Espera: Los pacientes están solicitando Consultas Virtuales y tu estás actualmente En Espera para este turno. ¿Estás disponible para ver pacientes ahora? Si es así, por favor márcate como &quot;Disponible&quot;.</target>
+        <target>Llamando a todos los doctores En Espera: Los pacientes están solicitando Consultas Virtuales y tu estás actualmente En Espera para este turno. ¿Estás disponible para ver pacientes ahora? Si es así, por favor, márcate como &quot;Disponible&quot;.</target>
       </trans-unit>
       <trans-unit id="5310" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_prime_committed_offline_alert">
         <source>You appear to be offline during your Committed shift. Please return to HealthTap and toggle yourself as Available again.</source>
@@ -1696,7 +1696,7 @@
       </trans-unit>
       <trans-unit id="5316" resname="sms_data" restype="string" datatype="x-yaml" x-context="member_appointment_reminder">
         <source>HealthTap - REMINDER: Virtual appointment with %1 starts in 2 minutes. Please log in to HealthTap via the mobile app or desktop site and your appointment will start automatically.</source>
-        <target>HealthTap - RECORDATORIO: Cita virtual con %1 inicia en 2 minutos. Por favor, ingresa a HealthTap a través de la aplicación móvil o sitio de escritorio y tu cita iniciará automáticamente.</target>
+        <target>HealthTap - RECORDATORIO: Cita virtual con %1 inicia en 2 minutos. Por favor, inicia sesión en HealthTap a través de la aplicación móvil o sitio de escritorio y tu cita iniciará automáticamente.</target>
       </trans-unit>
       <trans-unit id="5317" resname="subject" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_cancelled_bydoctor">
         <source>Virtual Appointment Canceled</source>
@@ -1724,15 +1724,15 @@
       </trans-unit>
       <trans-unit id="5323" resname="push_data_1_hour" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_reminder">
         <source>Reminder: Virtual Appointment with %1 on %2 at %3 Pacific Standard Time. Log in to HealthTap and your appointment will start automatically</source>
-        <target>Recordatorio: Cita Virtual con %1 el %2 a las %3 Hora Pacífico Estándar. Ingresa a HealthTap y tu cita iniciará automáticamente.</target>
+        <target>Recordatorio: Cita Virtual con %1 el %2 a las %3 Hora Pacífico Estándar. Inicia sesión en HealthTap y tu cita iniciará automáticamente.</target>
       </trans-unit>
       <trans-unit id="5324" resname="push_data_48_hour" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_reminder">
         <source>Reminder: Virtual Appointment with %1 on %2 at %3 Pacific Standard Time. Please be available to log in to HealthTap at that time.</source>
-        <target>Recordatorio: Cita Virtual con %1 el %2 a las %3 Hora Pacífico Estándar. Por favor, debes estar disponible para ingresar a HealthTap a esa hora.</target>
+        <target>Recordatorio: Cita Virtual con %1 el %2 a las %3 Hora Pacífico Estándar. Por favor, debes estar disponible para iniciar sesión en HealthTap a esa hora.</target>
       </trans-unit>
       <trans-unit id="5325" resname="body" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_reminder">
         <source>Reminder: %4&apos;s virtual appointment with %1 on %2 at %3. Please log onto HealthTap five minutes before your appointment.</source>
-        <target>Recordatorio: La cita virtual de %4 con %1 el %2 a las %3. Por favor, ingresa a HealthTap cinco minutos antes de tu cita.</target>
+        <target>Recordatorio: La cita virtual de %4 con %1 el %2 a las %3. Por favor, inicia sesión en HealthTap cinco minutos antes de tu cita.</target>
       </trans-unit>
       <trans-unit id="5326" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_reminder">
         <source>Cancel or reschedule your appointment</source>
@@ -1744,7 +1744,7 @@
       </trans-unit>
       <trans-unit id="5328" resname="sms_data" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_reminder">
         <source>HealthTap - REMINDER: Virtual appointment with %1 starts at %2. Please log in to HealthTap via the mobile app or desktop site and your appointment will start automatically.</source>
-        <target>HealthTap - RECORDATORIO: Cita virtual con %1 inicia en %2. Por favor, ingresa a HealthTap a través de la aplicación móvil o sitio de escritorio y tu cita iniciará automáticamente.</target>
+        <target>HealthTap - RECORDATORIO: Cita virtual con %1 inicia en %2. Por favor, inicia sesión en HealthTap a través de la aplicación móvil o sitio de escritorio y tu cita iniciará automáticamente.</target>
       </trans-unit>
       <trans-unit id="5329" resname="subject" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_missed_bymember">
         <source>Have you missed the Virtual Appointment on HealthTap?</source>
@@ -2056,7 +2056,7 @@
       </trans-unit>
       <trans-unit id="5406" resname="body" restype="string" datatype="x-yaml" x-context="member_inbox_incoming">
         <source>Please review the response and reply to the %1.</source>
-        <target>Por favor revisa la respuesta y responde al %1.</target>
+        <target>Por favor, revisa la respuesta y responde al %1.</target>
       </trans-unit>
       <trans-unit id="5407" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_inbox_incoming">
         <source>See the response</source>
@@ -2432,11 +2432,11 @@
       </trans-unit>
       <trans-unit id="5500" resname="push_data" restype="string" datatype="x-yaml" x-context="member_consult_app_backgrounded">
         <source>You just left in the middle of a live %1 chat consult. If you didn&apos;t already inform the %2 that you would return shortly, please do so now so the %2 knows what to expect.</source>
-        <target>Te acabas de ir a la mitad de un chat de consulta en vivo %1. Si no le has informado ya al %2 que regresarás en breve, por favor hazlo ahora para que el %2 sepa que esperar.</target>
+        <target>Te acabas de ir a la mitad de un chat de consulta en vivo %1. Si no le has informado ya al %2 que regresarás en breve, por favor, hazlo ahora para que el %2 sepa que esperar.</target>
       </trans-unit>
       <trans-unit id="5501" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_consult_app_backgrounded">
         <source>You just left in the middle of a live %1 chat consult. If you didn&apos;t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
-        <target>Te acabas de ir a la mitad de un chat de consulta en vivo %1. Si no le has informado ya al paciente que regresarás en breve, por favor hazlo ahora para que el paciente sepa que esperar.</target>
+        <target>Te acabas de ir a la mitad de un chat de consulta en vivo %1. Si no le has informado ya al paciente que regresarás en breve, por favor, hazlo ahora para que el paciente sepa que esperar.</target>
       </trans-unit>
       <trans-unit id="5502" resname="push_data" restype="string" datatype="x-yaml" x-context="member_consult_app_backgrounded_newmessage">
         <source>New message from %1. Respond now</source>
@@ -2464,11 +2464,11 @@
       </trans-unit>
       <trans-unit id="5508" resname="push_data" restype="string" datatype="x-yaml" x-context="expert_license_reminder_1week">
         <source>Reminder: Your %1 license is expiring in one week. Please update your license information</source>
-        <target>Recordatorio: Tu licencia de %1 expirará en una semana. Por favor actualiza la información de tu licencia</target>
+        <target>Recordatorio: Tu licencia de %1 expirará en una semana. Por favor, actualiza la información de tu licencia</target>
       </trans-unit>
       <trans-unit id="5509" resname="sms_data" restype="string" datatype="x-yaml" x-context="expert_license_reminder_1week">
         <source>Reminder: Your %1 license is expiring in one week. Please update your license information</source>
-        <target>Recordatorio: Tu licencia de %1 expirará en una semana. Por favor actualiza la información de tu licencia</target>
+        <target>Recordatorio: Tu licencia de %1 expirará en una semana. Por favor, actualiza la información de tu licencia</target>
       </trans-unit>
       <trans-unit id="5510" resname="subject" restype="string" datatype="x-yaml" x-context="expert_license_expired">
         <source>ALERT: Your %1 license has expired</source>
