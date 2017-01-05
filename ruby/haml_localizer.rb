@@ -371,6 +371,7 @@ end
 # return hash{locale_name => output_template}, unmapped_files
 # param template - the entire file-content in English
 # path_name of the file whose content this is.
+# all_locale_mappings hash {locale => <Mapping for key=>string>}
 def process_file_content(template, path_name, locale_names, all_locale_mappings)
   unmapped_for_file = []
   ret = {}

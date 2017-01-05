@@ -310,4 +310,20 @@ describe 'HamlLocalizer' do
       strip_whitespace_punct([' ‹ Back to site']).should == ['Back to site']
     end
   end
+
+
+  describe 'complete template processing tests' do
+    it 'should skip over .translator-section' do
+      template = '
+.portal-content{:data=>{:is_reviewer=> @current_person.is_reviewer? ? \'true\' : false }}
+  .translator-section
+    .left-column.hidden
+'
+      def process_pseudo_values(values) {'to' => 'FOO'} end
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
+      local_name_to_output['en-GB'].nil?.should be_false
+      local_name_to_output['en-GB'].include?('FOO').should be_false
+
+    end
+  end
 end
