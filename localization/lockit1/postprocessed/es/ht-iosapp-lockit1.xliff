@@ -13273,7 +13273,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="there" resname="there" restype="string" datatype="x-objective-c">
         <source>there</source>
-        <target>allí</target>
+        <target state="accepted">¿qué tal?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="times" resname="times" restype="string" datatype="x-objective-c">
