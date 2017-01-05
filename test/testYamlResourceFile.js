@@ -212,7 +212,7 @@ module.exports = {
         
         yml.parse(
         		'---\n' +
-        		"zh_Hans_CN:\n" +
+        		"zh-Hans-CN:\n" +
         		"  feelgood/foo/bar/x.en-US.html.haml:\n" +
         		'    r9834724545: Jobs\n' +
         		'    r9483762220: Our internship program\n' +
@@ -450,13 +450,13 @@ module.exports = {
         });
 
         diff(yml.getContent(),
-            	'de_DE:\n' +
+            	'de-DE:\n' +
             	'  source_text: Quellen\"text\n' +
             	'  more_source_text: mehr Quellen\"text\n'
             );
 
         test.equal(yml.getContent(),
-        	'de_DE:\n' +
+        	'de-DE:\n' +
         	'  source_text: Quellen\"text\n' +
         	'  more_source_text: mehr Quellen\"text\n'
         );
@@ -502,13 +502,13 @@ module.exports = {
         });
         
         diff(yml.getContent(),
-            	"zh_Hans_CN:\n" +
+            	"zh-Hans-CN:\n" +
             	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
             	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
     	    );
 
         test.equal(yml.getContent(),
-        	"zh_Hans_CN:\n" +
+        	"zh-Hans-CN:\n" +
         	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
         	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
         );
@@ -554,7 +554,7 @@ module.exports = {
         });
         
         diff(yml.getContent(),
-	    	"zh_Hans_CN:\n" +
+	    	"zh-Hans-CN:\n" +
 	    	"  short key: |-\n" +
 	    	"    this is text that is relatively long and can run past the end of the page\n" +
 	    	"    So, we put a new line in the middle of it.\n" +
@@ -562,7 +562,7 @@ module.exports = {
 	    );
 
         test.equal(yml.getContent(),
-	    	"zh_Hans_CN:\n" +
+	    	"zh-Hans-CN:\n" +
 	    	"  short key: |-\n" +
 	    	"    this is text that is relatively long and can run past the end of the page\n" +
 	    	"    So, we put a new line in the middle of it.\n" +
@@ -767,7 +767,7 @@ module.exports = {
         
         var actual = yml.getContent();
         var expected =
-	    	"zh_Hans_CN:\n" +
+	    	"zh-Hans-CN:\n" +
 	    	"  r24524524524: |-\n" +
 	    	"    this is text that is relatively long and can run past the end of the page\n" +
 	    	"    So, we put a new line in the middle of it.\n" +

@@ -124,6 +124,7 @@ def accumulate_values(root, values, path_name)
     orig = root.value[:value]
     if root.value[:parse]
       #skip all parsed nodes. i.e, ruby code
+      puts "skipping line with ruby code:#{root.value[:value]}" if !root.value[:value].strip.start_with?('-') && !root.value[:value].strip.start_with?('=') && !root.value[:value].strip.start_with?('/')
       orig = nil
     end
   elsif root.value && root.value[:attributes] && root.value[:attributes]['title']
@@ -135,7 +136,7 @@ def accumulate_values(root, values, path_name)
   if orig && orig.is_a?(String)
     s = Sanitize.clean(orig)
     if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
-      values << s.gsub(/[^[:print:]]/ , '')
+      values << s.gsub(/[^[:print:]]/ , '')#.gsub(/[^a-zA-Z0-9_\s,\.'’_—\(\)!\?-]/, '').strip
     elsif !(/(.*)(<[^>]*>)(.*)/.match(orig))
       #there is no html only special characters filtered out by Sanitize.clean
       values.concat(break_around_non_clean_chars(orig, s))
@@ -211,7 +212,7 @@ end
 #end
 
 def process_line(skip_block_indent, ret, line, from_to)
-  #puts "process_line called with line=#{line}"
+  #puts "process_line called with skip_block_indent=#{!skip_block_indent.nil?} from_to=#{from_to.size} line=#{line}"
   if !skip_block_indent.nil?
     ret << line
   else
@@ -236,10 +237,13 @@ def process_line(skip_block_indent, ret, line, from_to)
           #  puts "replacing #{k} WITH #{v}"
           #end
           unless line.match(/Rb.t\(\".*#{Regexp.escape(k)}.*\"\)/)
+            #puts "1"
             if line.match(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/)
+              #puts '2'
               res = line.gsub!(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, ">#{v}") #for some reason it replaces the > char as well. replcae it
             else
-              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+              #puts '3'
+              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
             end
           end
           #if res
@@ -263,7 +267,7 @@ def replace_with_translations2(template, from_to)
   skip_block_indent = nil
   arr.each{|line|
     curr_indent = /\S/ =~ line
-    puts "curr_indent=#{curr_indent} skip_block_indent=#{skip_block_indent}"
+    #puts "curr_indent=#{curr_indent} skip_block_indent=#{skip_block_indent}"
     if curr_indent.nil?
       ret << line
       next
@@ -315,12 +319,12 @@ def produce_unmapped(file_to_words)
   end
 end
 
-def strip_whitespace(from_to)
-  ret = {}
-  from_to.each{|k, v|
-    ret[k.strip] = v.strip
-  }
-  ret
+#def strip_whitespace_punct_word(v)
+#  if v.match(/^[[:punct:]]/) || v.match(/[[:punct:]]$/)
+#end
+
+def strip_whitespace_punct(values)
+  values.map{|v| v.strip.gsub(/^[[:punct:]]/,'').gsub(/[[:punct:]]$/, '').strip }
 end
 
 # clean the source string so that whitespace and html changes do not matter
@@ -387,10 +391,12 @@ unless defined?(TEST_ENV)
       #puts root
       #puts "orig_values=#{values}"
       values = reject_special_words(reject_paran(break_aound_code_values(values)))
+      #puts "values before=#{values}"
+      values = strip_whitespace_punct(values)
 
       #puts "values=#{values}"
       locale_names.each do |locale_name|
-        puts "file_name=#{path_name} locale_name=#{locale_name}"
+        #puts "file_name=#{path_name} locale_name=#{locale_name}"
         locale_mappings = all_locale_mappings[locale_name] || {}
         locale_mappings = locale_mappings[locale_name] unless locale_mappings[locale_name].nil?
         if locale_name == PSEUDO_LOCALE
@@ -399,7 +405,7 @@ unless defined?(TEST_ENV)
         else
           from_to = process_values(locale_mappings, values, unmapped_for_file)
         end
-        #from_to = strip_whitespace(from_to)
+        #puts "from_to=#{from_to}"
         puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
         #process_values(locale_mappings, from_to.keys, unmapped_for_file)
         output_template = replace_with_translations2(template.dup, from_to)
@@ -407,8 +413,10 @@ unless defined?(TEST_ENV)
           x = HTParser.new(output_template, Haml::Options.new)
           root = x.parse
         rescue => e
+          puts e.backtrace
           puts "ERROR: Bad substitution created invalid template for #{path_name}"
-          # File.open('ERROR.html.haml', 'w') { |file| file.write(output_template) }
+          File.open('ERROR.html.haml', 'w') { |file| file.write(output_template) }
+          raise e if defined?(TEST_ENV)
           next # if we make a bad file, do not try to print, just go to next file
         end
         if file_name_components[file_name_components.length - 3] == "en-US"

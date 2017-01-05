@@ -2118,7 +2118,7 @@
       </trans-unit>
       <trans-unit id="515" resname="r71095273" restype="string" datatype="ruby">
         <source>%{first_open_tag}%{actor}%{close_tag} approved this translation of %{line_break}%{second_open_tag}%{second_actor}&apos;s%{close_tag} answer:</source>
-        <target>%{First_open_tag}%{actor}%{close_tag}批准了翻译%{line_break}%{second_open_tag}%{second_actor}的%{close_tag}回答：</target>
+        <target>%{first_open_tag}%{actor}%{close_tag}批准了翻译%{line_break}%{second_open_tag}%{second_actor}的%{close_tag}回答：</target>
         <note annotates="source">TODO possessive</note>
       </trans-unit>
     </body>
