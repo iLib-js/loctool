@@ -391,10 +391,10 @@ unless defined?(TEST_ENV)
       #puts root
       #puts "orig_values=#{values}"
       values = reject_special_words(reject_paran(break_aound_code_values(values)))
-      puts "values before=#{values}"
+      #puts "values before=#{values}"
       values = strip_whitespace_punct(values)
 
-      puts "values=#{values}"
+      #puts "values=#{values}"
       locale_names.each do |locale_name|
         #puts "file_name=#{path_name} locale_name=#{locale_name}"
         locale_mappings = all_locale_mappings[locale_name] || {}
@@ -405,7 +405,7 @@ unless defined?(TEST_ENV)
         else
           from_to = process_values(locale_mappings, values, unmapped_for_file)
         end
-        puts "from_to=#{from_to}"
+        #puts "from_to=#{from_to}"
         puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
         #process_values(locale_mappings, from_to.keys, unmapped_for_file)
         output_template = replace_with_translations2(template.dup, from_to)
