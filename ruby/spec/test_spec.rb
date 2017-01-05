@@ -10,6 +10,19 @@ describe 'HamlLocalizer' do
     end
     require_relative '../haml_localizer.rb'
   end
+
+  class TestRoot < Hash
+    def value=(v)
+      @value = v
+    end
+    def value
+      @value
+    end
+
+    def children
+      []
+    end
+  end
   describe 'replace with translations' do
     it 'should skip over .translator-section' do
       # from portal.html.haml
@@ -26,13 +39,13 @@ describe 'HamlLocalizer' do
       ret.include?('FOO').should be_true
     end
 
-    it 'should include html tags' do
-      # from _terms.html.haml
-      orig = " %p <strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement between you and HealthTap Inc. (\"HealthTap\"). There are rules you agree to follow when using our mobile applications and websites (the \"Apps\"), including when you ask questions and when you view or input content on or into the Apps, and they are contained in these TOU. The <a href=\"/terms/privacy_statement\">HealthTap Privacy Statement</a> is officially part of these TOU even though it's a separate document."
-      from_to = {'<strong>What is this Document?</strong> The Terms of Use (or "TOU") is an agreement' => 'FOO'}
-      ret = replace_with_translations2(orig, from_to)
-      ret.include?('FOO').should be_true
-    end
+    #it 'should include html tags' do
+    #  # from _terms.html.haml
+    #  orig = " %p <strong>What is this Document?</strong> The Terms of Use (or \"TOU\") is an agreement between you and HealthTap Inc. (\"HealthTap\"). There are rules you agree to follow when using our mobile applications and websites (the \"Apps\"), including when you ask questions and when you view or input content on or into the Apps, and they are contained in these TOU. The <a href=\"/terms/privacy_statement\">HealthTap Privacy Statement</a> is officially part of these TOU even though it's a separate document."
+    #  from_to = {'<strong>What is this Document?</strong> The Terms of Use (or "TOU") is an agreement' => 'FOO'}
+    #  ret = replace_with_translations2(orig, from_to)
+    #  ret.include?('FOO').should be_true
+    #end
 
 
     it 'should not break strings on self-closed html tags' do
@@ -83,13 +96,13 @@ describe 'HamlLocalizer' do
     #  ret.include?('FOO').should be_true
     #end
 
-    it 'should not crunch spaces before and after html tags' do
-      # from app/views/pages/feelGood/sign_up_v2.html.haml
-      orig = '          I agree to HealthTap\'s <a href=\'/terms\' target=\'_blank\'>Terms</a> and <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Privacy Policy</a>'
-      from_to = {'I agree to HealthTap\'s <a href=\'/terms\' target=\'_blank\'>Terms</a> and <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Privacy Policy</a>' => 'Acepto los <a href=\'/terms\' target=\'_blank\'>Términos</a> y <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Política de Privacidad</a> de HealthTap'}
-      ret = replace_with_translations2(orig, from_to)
-      ret.include?('Acepto los <a href=\'/terms\' target=\'_blank\'>Términos</a> y <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Política de Privacidad</a> de HealthTap').should be_true
-    end
+    #it 'should not crunch spaces before and after html tags' do
+    #  # from app/views/pages/feelGood/sign_up_v2.html.haml
+    #  orig = '          I agree to HealthTap\'s <a href=\'/terms\' target=\'_blank\'>Terms</a> and <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Privacy Policy</a>'
+    #  from_to = {'I agree to HealthTap\'s <a href=\'/terms\' target=\'_blank\'>Terms</a> and <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Privacy Policy</a>' => 'Acepto los <a href=\'/terms\' target=\'_blank\'>Términos</a> y <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Política de Privacidad</a> de HealthTap'}
+    #  ret = replace_with_translations2(orig, from_to)
+    #  ret.include?('Acepto los <a href=\'/terms\' target=\'_blank\'>Términos</a> y <a href=\'/terms/privacy_sharing\' target=\'_blank\'>Política de Privacidad</a> de HealthTap').should be_true
+    #end
 
     it 'should not break strings on slash lines' do
       # from app/views/layouts/_enterprise_employee_search_header.html.haml
@@ -99,12 +112,14 @@ describe 'HamlLocalizer' do
       ret.include?('FOO').should be_true
     end
 
-    it 'should not break strings on non-ASCII characters' do
+    it 'Ensure we dont have special characters in accumulated values' do
       # from app/views/layouts/_expert_external_content_header.html.haml
-      orig = '    %a.left.back-to-site{:href => "/expert/review_news"} ‹ Back to site'
-      from_to = {'‹ Back to site' => 'FOO'}
-      ret = replace_with_translations2(orig, from_to)
-      ret.include?('FOO').should be_true
+      root = TestRoot.new
+      root.value = {:value => ' ‹ Back to site'}
+      values = []
+      accumulate_values(root, values, nil)
+      values.count.should == 1
+      values[0].should == "Back to site"
     end
 
     it 'should not substitute partial words' do
@@ -112,13 +127,12 @@ describe 'HamlLocalizer' do
       orig = '    Following'
       from_to = {'Follow' => 'FOO'}
       ret = replace_with_translations2(orig, from_to)
-      ret.include?('FOO').should be_true
+      ret.include?('FOO').should be_false
     end
 
     it 'should localize this text' do
-      # from app/views/layouts/_expert_external_content_header.html.haml
       orig = '          (It may take about 1-2 minutes for the video to load)'
-      from_to = {'(It may take about 1-2 minutes for the video to load)' => 'FOO'}
+      from_to = {"It may take about 1-2 minutes for the video to load" => 'FOO'}
       ret = replace_with_translations2(orig, from_to)
       ret.include?('FOO').should be_true
     end
@@ -126,7 +140,7 @@ describe 'HamlLocalizer' do
     it 'should work' do
       # from investors.html.haml
       orig = "        <span class='ht-name' >HealthTap</span> is supported by world-class investors, advisors, and experienced company builders who have helped create, "
-      from_to ={"is supported by world-class investors, advisors, and experienced company builders who have helped create,"=>"FOO"}
+      from_to ={" is supported by world-class investors, advisors, and experienced company builders who have helped create,"=>"FOO"}
       ret = replace_with_translations2(orig, from_to)
 
       ret.include?('FOO').should be_true
@@ -279,6 +293,6 @@ describe 'HamlLocalizer' do
     orig = "            .points_wrap{:title=>Rb.t(\"A doctor's DocScore is a measure of their knowledge, trust, compassion and engagement.\"), :style=>\"width : 80px\"}"
     from_to = {"DocScore" => 'FOO'}
     ret = replace_with_translations2(orig, from_to)
-    expect(ret.include?('FOO')).to be_false
+    ret.include?('FOO').should be_false
   end
 end

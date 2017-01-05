@@ -136,7 +136,7 @@ def accumulate_values(root, values, path_name)
   if orig && orig.is_a?(String)
     s = Sanitize.clean(orig)
     if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
-      values << s.gsub(/[^[:print:]]/ , '')
+      values << s.gsub(/[^[:print:]]/ , '').gsub(/[^a-zA-Z0-9_\s,\.-]/, '').strip
     elsif !(/(.*)(<[^>]*>)(.*)/.match(orig))
       #there is no html only special characters filtered out by Sanitize.clean
       values.concat(break_around_non_clean_chars(orig, s))
@@ -243,7 +243,8 @@ def process_line(skip_block_indent, ret, line, from_to)
               res = line.gsub!(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, ">#{v}") #for some reason it replaces the > char as well. replcae it
             else
               #puts '3'
-              res = line.gsub!(/\s(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v) # match starting with word boundary and doesn't have / | : right before k
+              # replace if k is at the beginning or end. Else, look for negative look behind and negative look-ahead with white-space boundary.
+              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v) # match starting with word boundary and doesn't have / | : right before k
             end
           end
           #if res
@@ -404,7 +405,7 @@ unless defined?(TEST_ENV)
           from_to = process_values(locale_mappings, values, unmapped_for_file)
         end
         #from_to = strip_whitespace(from_to)
-        #puts "from_to=#{from_to}"
+        puts "from_to=#{from_to}"
         puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
         #process_values(locale_mappings, from_to.keys, unmapped_for_file)
         output_template = replace_with_translations2(template.dup, from_to)
@@ -412,7 +413,7 @@ unless defined?(TEST_ENV)
           x = HTParser.new(output_template, Haml::Options.new)
           root = x.parse
         rescue => e
-          puts e
+          puts e.backtrace
           puts "ERROR: Bad substitution created invalid template for #{path_name}"
           File.open('ERROR.html.haml', 'w') { |file| file.write(output_template) }
           raise e if defined?(TEST_ENV)
