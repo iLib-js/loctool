@@ -314,6 +314,7 @@ describe 'HamlLocalizer' do
 
   describe 'complete template processing tests' do
     it 'should skip over .translator-section' do
+      # from portal.html.haml
       template = '
 .portal-content{:data=>{:is_reviewer=> @current_person.is_reviewer? ? \'true\' : false }}
   .translator-section
@@ -323,7 +324,20 @@ describe 'HamlLocalizer' do
       local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
       local_name_to_output['en-GB'].nil?.should be_false
       local_name_to_output['en-GB'].include?('FOO').should be_false
+    end
+
+    it 'should translate all sections' do
+      # from _terms.html.haml
+      template = '
+%div.scrollable{:class => terms_class}
+  .box
+    %p <strong>What is this Document?</strong> The Terms of Use (or "TOU") is an agreement between you and HealthTap Inc. ("HealthTap"). There are rules you agree to follow when using our mobile applications and websites (the "Apps"), including when you ask questions and when you view or input content on or into the Apps, and they are contained in these TOU. The <a href="/terms/privacy_statement">HealthTap Privacy Statement</a> is officially part of these TOU even though it’s a separate document.
+'
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
+      local_name_to_output['en-GB'].nil?.should be_false
+      local_name_to_output['en-GB'].include?('What is this Document?').should be_false
 
     end
+
   end
 end

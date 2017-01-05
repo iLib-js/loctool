@@ -432,8 +432,8 @@ unless defined?(TEST_ENV)
 
       template = File.read(path_name)
 
-      local_name_to_output, unmapped_for_file = process_file_content(template, path_name, locale_names, all_locale_mappings)
-      local_name_to_output.each{|locale_name, output_template|
+      locale_name_to_output, unmapped_for_file = process_file_content(template, path_name, locale_names, all_locale_mappings)
+      locale_name_to_output.each{|locale_name, output_template|
         if file_name_components[file_name_components.length - 3] == "en-US"
           # the original template has a lang_locale, test.en-US.html.haml
           new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 3].join('') + ".#{locale_name}.html.haml"
