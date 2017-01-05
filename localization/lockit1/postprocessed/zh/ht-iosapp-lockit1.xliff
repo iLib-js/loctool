@@ -8846,7 +8846,7 @@ subscription</source>
       </trans-unit>
       <trans-unit id="Facebook" resname="Facebook" restype="string">
         <source>Facebook</source>
-        <target>免费</target>
+        <target state="accepted">脸书</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Failed to access remote files" resname="Failed to access remote files" restype="string">
