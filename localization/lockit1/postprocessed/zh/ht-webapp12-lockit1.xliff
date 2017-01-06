@@ -28,7 +28,7 @@
       </trans-unit>
       <trans-unit id="7" resname="Its widely known that cholesterol-lowering statins can benefit patients with heart disease, but a new study suggests they may actually harm some people with heart failure" restype="string" datatype="html">
         <source>Its widely known that cholesterol-lowering statins can benefit patients with heart disease, but a new study suggests they may actually harm some people with heart failure</source>
-        <target>总所周知，降低胆固醇的他汀类药物有益于心脏疾病患者，但是最新的一项研究表明实际上他们可能导致一些人的心脏衰竭。</target>
+        <target>总所周知，降低胆固醇的他汀类药物有益于心脏疾患者者，但是最新的一项研究表明实际上他们可能导致一些人的心脏衰竭。</target>
       </trans-unit>
       <trans-unit id="8" resname="www.health.com/health/conditi..." restype="string" datatype="html">
         <source>www.health.com/health/conditi...</source>
@@ -324,7 +324,7 @@
     <body>
       <trans-unit id="69" resname="This is a test page for tips subscription item template" restype="string" datatype="html">
         <source>This is a test page for tips subscription item template</source>
-        <target>这是一个提示订购项目模板的测试页面</target>
+        <target>这是一个提示订购项目模板的检验页面</target>
       </trans-unit>
     </body>
   </file>
@@ -336,7 +336,7 @@
       </trans-unit>
       <trans-unit id="71" resname="This is a test content" restype="string" datatype="html">
         <source>This is a test content</source>
-        <target>这是一个测试内容</target>
+        <target>这是一个检验内容</target>
       </trans-unit>
     </body>
   </file>
@@ -388,7 +388,7 @@
     <body>
       <trans-unit id="82" resname="SHARE" restype="string" datatype="html">
         <source>SHARE</source>
-        <target>共享</target>
+        <target>分享</target>
       </trans-unit>
       <trans-unit id="83" resname="Share this using Facebook Twitter or Email." restype="string" datatype="html">
         <source>Share this using Facebook Twitter or Email.</source>
@@ -544,7 +544,7 @@
       </trans-unit>
       <trans-unit id="113" resname="shared:" restype="string" datatype="html">
         <source>shared:</source>
-        <target>已共享：</target>
+        <target>已分享：</target>
       </trans-unit>
       <trans-unit id="114" resname="Agreed" restype="string" datatype="html">
         <source>Agreed</source>
@@ -568,7 +568,7 @@
       </trans-unit>
       <trans-unit id="119" resname="Share" restype="string" datatype="html">
         <source>Share</source>
-        <target>共享</target>
+        <target>分享</target>
       </trans-unit>
       <trans-unit id="120" resname="Flag" restype="string" datatype="html">
         <source>Flag</source>
@@ -1488,7 +1488,7 @@
       </trans-unit>
       <trans-unit id="325" resname="Connect with doctors who’ve raised children of their own for deeper, experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="html">
         <source>Connect with doctors who’ve raised children of their own for deeper, experience-based answers to all your pregnancy and parenting questions.</source>
-        <target>联系已经养育过孩子的医生，获取更深刻、更富含经验的关于怀孕和养育技巧的回答。</target>
+        <target>联系已养育过自己孩子的医生以为您所有关于怀孕和育儿的问题获取更深入的、以经验为基础的回答。</target>
       </trans-unit>
       <trans-unit id="326" resname="Learn More &gt;" restype="string" datatype="html">
         <source>Learn More &gt;</source>
@@ -1500,7 +1500,7 @@
       </trans-unit>
       <trans-unit id="328" resname="Empathic, sensitive and caring answers" restype="string" datatype="html">
         <source>Empathic, sensitive and caring answers</source>
-        <target>移情的，敏感的，体贴的回答。</target>
+        <target>切身处地、敏锐而充满关爱的回答</target>
       </trans-unit>
       <trans-unit id="329" resname="“Been there/done that” informed answers based on personal knowledge and experience" restype="string" datatype="html">
         <source>“Been there/done that” informed answers based on personal knowledge and experience</source>
@@ -1532,7 +1532,7 @@
       </trans-unit>
       <trans-unit id="336" resname="Type procedure, test, or surgery" restype="string" datatype="html">
         <source>Type procedure, test, or surgery</source>
-        <target>输入临床操作，测试或手术</target>
+        <target>输入临床操作，检验或手术</target>
       </trans-unit>
       <trans-unit id="337" resname="Currently in &lt;%=prompt_type == &quot;prompt&quot; ? &apos;your&apos; : otherName %&gt; Health Profile:" restype="string" datatype="html">
         <source>Currently in &lt;%=prompt_type == &quot;prompt&quot; ? &apos;your&apos; : otherName %&gt; Health Profile:</source>
@@ -3844,7 +3844,7 @@
       </trans-unit>
       <trans-unit id="842" resname="Test LaunchPad" restype="string" datatype="html">
         <source>Test LaunchPad</source>
-        <target>测试LaunchPad</target>
+        <target>检验LaunchPad</target>
       </trans-unit>
       <trans-unit id="843" resname="Peer Review" restype="string" datatype="html">
         <source>Peer Review</source>
@@ -3856,7 +3856,7 @@
       </trans-unit>
       <trans-unit id="845" resname="beta" restype="string" datatype="html">
         <source>beta</source>
-        <target>测试版</target>
+        <target>检验版</target>
       </trans-unit>
       <trans-unit id="846" resname="Messages" restype="string" datatype="html">
         <source>Messages</source>
@@ -5496,7 +5496,7 @@
       </trans-unit>
       <trans-unit id="1191" resname="Please indicate if your board certification &lt;br&gt; is from a member board of ABMS&#40;American &lt;br&gt; Board Of Medical Specialities&#41; or AOA &lt;br&gt; &#40;American Osteopathic Association&#41;" restype="string" datatype="html">
         <source>Please indicate if your board certification &lt;br&gt; is from a member board of ABMS&#40;American &lt;br&gt; Board Of Medical Specialities&#41; or AOA &lt;br&gt; &#40;American Osteopathic Association&#41;</source>
-        <target>请指出如果您认证的 &lt;br&gt; 来自ABMS的成员&#40;美国&lt;br&gt;医学专科学会&#41;或AOA &lt;br&gt; &#40;美国骨科协会&#41;</target>
+        <target>请指出如果您认证的 &lt;br&gt; 来自ABMS的会员&#40;美国&lt;br&gt;医学专科学会&#41;或AOA &lt;br&gt; &#40;美国骨科协会&#41;</target>
       </trans-unit>
       <trans-unit id="1192" resname="ABMS" restype="string" datatype="html">
         <source>ABMS</source>
@@ -6000,7 +6000,7 @@
       </trans-unit>
       <trans-unit id="1308" resname="Test test" restype="string" datatype="html">
         <source>Test test</source>
-        <target>测试测试</target>
+        <target>检验检验</target>
       </trans-unit>
     </body>
   </file>
@@ -6064,7 +6064,7 @@
       </trans-unit>
       <trans-unit id="1323" resname="Please indicate if your board certification is from a member board of ABMS&#40;American Board Of Medical Specialities&#41; or AOA &#40;American Osteopathic Association&#41;" restype="string" datatype="html">
         <source>Please indicate if your board certification is from a member board of ABMS&#40;American Board Of Medical Specialities&#41; or AOA &#40;American Osteopathic Association&#41;</source>
-        <target>请指出如果您认证的 &lt;br&gt; 来自ABMS的成员&#40;American &lt;br&gt; Board Of Medical Specialities&#41; or AOA &lt;br&gt; &#40;American Osteopathic Association&#41;</target>
+        <target>请指出如果您认证的 &lt;br&gt; 来自ABMS的会员&#40;American &lt;br&gt; Board Of Medical Specialities&#41; or AOA &lt;br&gt; &#40;American Osteopathic Association&#41;</target>
       </trans-unit>
       <trans-unit id="1324" resname="Enter specialty" restype="string" datatype="html">
         <source>Enter specialty</source>
@@ -7040,7 +7040,7 @@
       </trans-unit>
       <trans-unit id="1532" resname="12 shared connections" restype="string" datatype="html">
         <source>12 shared connections</source>
-        <target>12条共享连接</target>
+        <target>12条分享连接</target>
       </trans-unit>
     </body>
   </file>
@@ -7480,7 +7480,7 @@
     <body>
       <trans-unit id="1634" resname="Test Name" restype="string" datatype="html">
         <source>Test Name</source>
-        <target>测试名称</target>
+        <target>检验名称</target>
       </trans-unit>
       <trans-unit id="1635" resname="When viewing a patient&apos;s health profile, please adhere to these &lt;a class=&quot;show_guidelines_h&quot;&gt;answer guidelines&lt;/a&gt;" restype="string" datatype="html">
         <source>When viewing a patient&apos;s health profile, please adhere to these &lt;a class=&quot;show_guidelines_h&quot;&gt;answer guidelines&lt;/a&gt;</source>
@@ -7672,7 +7672,7 @@
       </trans-unit>
       <trans-unit id="1674" resname="Restate in your answer any pertinent facts from the member&apos;s profile, so other readers will understand the basis for your personalized answer. &lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; Reiterating relevant profile information helps ensure that your answer is not out of context and is useful for other readers who do not have access to this profile information&#40;e.g., &quot;Women over 40 who takes medicine X should...&quot;&#41; &lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Learn more &amp;&#35;155;&lt;/a&gt;" restype="string" datatype="html">
         <source>Restate in your answer any pertinent facts from the member&apos;s profile, so other readers will understand the basis for your personalized answer. &lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; Reiterating relevant profile information helps ensure that your answer is not out of context and is useful for other readers who do not have access to this profile information&#40;e.g., &quot;Women over 40 who takes medicine X should...&quot;&#41; &lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Learn more &amp;&#35;155;&lt;/a&gt;</source>
-        <target>重申您的回答中与成员档案相关的事实，这样其他读者可以理解您的个性化回答的基础。&lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; 重申相关档案信息以帮助您确保回答没有脱离上下文，而且这对于我们获得档案信息的读者来说很实用。（例如“40以上的服用X药物的女性应该。。。”）&lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Learn more &amp;&#35;155;&lt;/a&gt;</target>
+        <target>重申您的回答中与会员档案相关的事实，这样其他读者可以理解您的个性化回答的基础。&lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; 重申相关档案信息以帮助您确保回答没有脱离上下文，而且这对于我们获得档案信息的读者来说很实用。（例如“40以上的服用X药物的女性应该。。。”）&lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Learn more &amp;&#35;155;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="1675" resname="Refrain from any personal diagnosis, prescription, or advice." restype="string" datatype="html">
         <source>Refrain from any personal diagnosis, prescription, or advice.</source>
@@ -7836,7 +7836,7 @@
       </trans-unit>
       <trans-unit id="1711" resname="Your question has been sent to your expert colleagues. While waiting for your collegues to answer your question, please help by answering more member questions." restype="string" datatype="html">
         <source>Your question has been sent to your expert colleagues. While waiting for your collegues to answer your question, please help by answering more member questions.</source>
-        <target>您的问题已经发送给您的专家同事。当等待您的同事回答您的问题时，请您帮助回答更多其他成员的问题。</target>
+        <target>您的问题已经发送给您的专家同事。当等待您的同事回答您的问题时，请您帮助回答更多其他会员的问题。</target>
       </trans-unit>
     </body>
   </file>
@@ -8516,7 +8516,7 @@
       </trans-unit>
       <trans-unit id="1855" resname="Tests &#40;&lt;span class=&quot;number&quot;&gt;&lt;/span&gt;&#41;" restype="string" datatype="html">
         <source>Tests &#40;&lt;span class=&quot;number&quot;&gt;&lt;/span&gt;&#41;</source>
-        <target>测试&#40;&lt;span class=&quot;number&quot;&gt;&lt;/span&gt;&#41;</target>
+        <target>检验&#40;&lt;span class=&quot;number&quot;&gt;&lt;/span&gt;&#41;</target>
       </trans-unit>
       <trans-unit id="1856" resname="Risk Factors &#40;&lt;span class=&quot;number&quot;&gt;&lt;/span&gt;&#41;" restype="string" datatype="html">
         <source>Risk Factors &#40;&lt;span class=&quot;number&quot;&gt;&lt;/span&gt;&#41;</source>
@@ -8612,7 +8612,7 @@
       </trans-unit>
       <trans-unit id="1870" resname="shared &lt;%= conn %&gt;" restype="string" datatype="html">
         <source>shared &lt;%= conn %&gt;</source>
-        <target>共享的&lt;%= conn %&gt;</target>
+        <target>分享的&lt;%= conn %&gt;</target>
       </trans-unit>
       <trans-unit id="1871" resname="Known for:" restype="string" datatype="html">
         <source>Known for:</source>
@@ -8773,7 +8773,7 @@
       </trans-unit>
       <trans-unit id="1898" resname="shared an update:" restype="string" datatype="html">
         <source>shared an update:</source>
-        <target>共享更新：</target>
+        <target>分享更新：</target>
       </trans-unit>
       <trans-unit id="5852" resname="InNetwork" restype="string" datatype="html">
         <source>InNetwork</source>
@@ -9662,7 +9662,7 @@
     <body>
       <trans-unit id="2066" resname="Connect with doctors who’ve raised children of their own for deeper, experience-based answers to all your pregnancy and parenting questions. &lt;a class=&quot;learn_more_mommas&quot;&gt;Learn more &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Connect with doctors who’ve raised children of their own for deeper, experience-based answers to all your pregnancy and parenting questions. &lt;a class=&quot;learn_more_mommas&quot;&gt;Learn more &amp;rsaquo;&lt;/a&gt;</source>
-        <target>联系已经养育过孩子的医生，获取更深刻、更富含经验的关于怀孕和养育技巧的回答。&lt;a class=&quot;learn_more_mommas&quot;&gt;Learn more &amp;rsaquo;&lt;/a&gt;</target>
+        <target>联系已养育过自己孩子的医生以为您所有关于怀孕和育儿的问题获取更深入的、以经验为基础的回答。&lt;a class=&quot;learn_more_mommas&quot;&gt;了解更多 &amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="2067" resname="Doctor Moms can provide a special perspective:" restype="string" datatype="html">
         <source>Doctor Moms can provide a special perspective:</source>
@@ -9670,7 +9670,7 @@
       </trans-unit>
       <trans-unit id="2068" resname="Empathic, compassionate, and caring answers" restype="string" datatype="html">
         <source>Empathic, compassionate, and caring answers</source>
-        <target>移情的，敏感的，体贴的回答。</target>
+        <target>切身处地、充满爱心和关怀的回答</target>
       </trans-unit>
       <trans-unit id="2069" resname="&quot;Been there/done that&quot; informed answers based on personal knowledge and experience" restype="string" datatype="html">
         <source>&quot;Been there/done that&quot; informed answers based on personal knowledge and experience</source>
@@ -9710,7 +9710,7 @@
       </trans-unit>
       <trans-unit id="2076" resname="Type a procedure or test" restype="string" datatype="html">
         <source>Type a procedure or test</source>
-        <target>输入一个临床操作或测试</target>
+        <target>输入一个临床操作或检验</target>
       </trans-unit>
       <trans-unit id="2077" resname="Currently in &lt;span class=&quot;name&quot;&gt;your&lt;/span&gt; health Profile:" restype="string" datatype="html">
         <source>Currently in &lt;span class=&quot;name&quot;&gt;your&lt;/span&gt; health Profile:</source>
@@ -11070,7 +11070,7 @@
       </trans-unit>
       <trans-unit id="2351" resname="Sharing" restype="string" datatype="html">
         <source>Sharing</source>
-        <target>共享中</target>
+        <target>分享中</target>
       </trans-unit>
       <trans-unit id="2352" resname="Account" restype="string" datatype="html">
         <source>Account</source>
@@ -12747,7 +12747,7 @@ display:none;
       </trans-unit>
       <trans-unit id="2611" resname="test" restype="string" datatype="html">
         <source>test</source>
-        <target>测试</target>
+        <target>检验</target>
       </trans-unit>
       <trans-unit id="2612" resname="Would you like to be available for Inbox consults only?" restype="string" datatype="html">
         <source>Would you like to be available for Inbox consults only?</source>
@@ -13825,11 +13825,11 @@ display:none;
       </trans-unit>
       <trans-unit id="2810" resname="Recruit Team Members" restype="string" datatype="html">
         <source>Recruit Team Members</source>
-        <target>招募团队成员</target>
+        <target>招募团队会员</target>
       </trans-unit>
       <trans-unit id="2811" resname="Recruit new team members from your alma mater. Help more patients and boost your school&apos;s reputation." restype="string" datatype="html">
         <source>Recruit new team members from your alma mater. Help more patients and boost your school&apos;s reputation.</source>
-        <target>从您的母校招聘新的团队成员。帮助更多的患者并提高您学校的声誉</target>
+        <target>从您的母校招聘新的团队会员。帮助更多的患者并提高您学校的声誉</target>
       </trans-unit>
       <trans-unit id="2812" resname="Request recommendations" restype="string" datatype="html">
         <source>Request recommendations</source>
@@ -15878,7 +15878,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3173" resname="We sent you a text message.&lt;br&gt;Check your phone!" restype="string" datatype="html">
         <source>We sent you a text message.&lt;br&gt;Check your phone!</source>
-        <target>我们会给您发送一个测试信息。&lt;br&gt;请查看您的手机！</target>
+        <target>我们会给您发送一个检验信息。&lt;br&gt;请查看您的手机！</target>
       </trans-unit>
     </body>
   </file>
@@ -16360,7 +16360,7 @@ display:none;
         &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_activity.actor.id %&gt;-&lt;%= &#40;&#40;  user_activity.actor.name || user_activity.actor.full_name || &apos;&apos;&#41;.toLowerCase&#40;&#41;.toDashedUrl&#40;&#41;&#41; %&gt;&quot;&gt;
             &lt;%= user_activity.actor.name%&gt;
         &lt;/a&gt;
-      共享的</target>
+      分享的</target>
       </trans-unit>
       <trans-unit id="3259" resname="&quot;&gt;
   Medical Student &lt;a class=&quot;actor_link&quot; href=&quot;&lt;%= user_answer.contributor.url.replace&#40;&apos;people&apos;, &apos;experts&apos;&#41;.toHashFragment&#40;&#41; %&gt;&quot;&gt;
@@ -18391,7 +18391,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3432" resname="Share Status Updates" restype="string" datatype="html">
         <source>Share Status Updates</source>
-        <target>共享状态更新</target>
+        <target>分享状态更新</target>
       </trans-unit>
     </body>
   </file>
@@ -20107,7 +20107,7 @@ display:none;
     <body>
       <trans-unit id="3763" resname="Let HealthTap know where to reach you  &#40;+&lt;%= ht.completionPercentages.mailing %&gt;&amp;&#35;37;&#41; &lt;span class=&quot;sub-text&quot;&gt;This information will not be shared with any third parties&lt;/span&gt;" restype="string" datatype="html">
         <source>Let HealthTap know where to reach you  &#40;+&lt;%= ht.completionPercentages.mailing %&gt;&amp;&#35;37;&#41; &lt;span class=&quot;sub-text&quot;&gt;This information will not be shared with any third parties&lt;/span&gt;</source>
-        <target>告诉HealthTap您达到的  &#40;+&lt;%= ht.completionPercentages.mailing %&gt;&amp;&#35;37;&#41; &lt;span class=&quot;sub-text&quot;&gt;这个信息不会共享给任何第三方机构&lt;/span&gt;</target>
+        <target>告诉HealthTap您达到的  &#40;+&lt;%= ht.completionPercentages.mailing %&gt;&amp;&#35;37;&#41; &lt;span class=&quot;sub-text&quot;&gt;这个信息不会分享给任何第三方机构&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="3764" resname="Complete this section to get &lt;span class=&quot;percentage-text&quot;&gt; &lt;%= ht.completionPercentages.mailing %&gt;&amp;&#35;37;&lt;/span&gt;!" restype="string" datatype="html">
         <source>Complete this section to get &lt;span class=&quot;percentage-text&quot;&gt; &lt;%= ht.completionPercentages.mailing %&gt;&amp;&#35;37;&lt;/span&gt;!</source>
@@ -21357,7 +21357,7 @@ display:none;
     <body>
       <trans-unit id="4010" resname="Test" restype="string" datatype="html">
         <source>Test</source>
-        <target>测试</target>
+        <target>检验</target>
       </trans-unit>
     </body>
   </file>
@@ -22022,7 +22022,7 @@ display:none;
       </trans-unit>
       <trans-unit id="4138" resname="requires documented completion of the delivery of one hundred &#40;100&#41; hours of virtual care to patients as well as passing a supplemental advanced test demonstrating established expertise in the delivery of Virtual Care." restype="string" datatype="html">
         <source>requires documented completion of the delivery of one hundred &#40;100&#41; hours of virtual care to patients as well as passing a supplemental advanced test demonstrating established expertise in the delivery of Virtual Care.</source>
-        <target>需要对患者进行有记录的一百小时的在线医护，并通过一个补充的高级测试，显示出在在线医护方面建立的专业性。</target>
+        <target>需要对患者进行有记录的一百小时的在线医护，并通过一个补充的高级检验，显示出在在线医护方面建立的专业性。</target>
       </trans-unit>
       <trans-unit id="4139" resname="While doctors are not legally required to be certified in virtual care in order to provide such care, they must be legally licensed to practice medicine" restype="string" datatype="html">
         <source>While doctors are not legally required to be certified in virtual care in order to provide such care, they must be legally licensed to practice medicine</source>
@@ -22447,7 +22447,7 @@ display:none;
       </trans-unit>
       <trans-unit id="6046" resname="Insurance member ID" restype="string" datatype="html">
         <source>Insurance member ID</source>
-        <target>保险成员ID</target>
+        <target>保险会员ID</target>
       </trans-unit>
       <trans-unit id="6047" resname="Insurance group ID" restype="string" datatype="html">
         <source>Insurance group ID</source>
@@ -23809,7 +23809,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4387" resname="Shared" restype="string" datatype="html">
         <source>Shared</source>
-        <target>共享的</target>
+        <target>分享的</target>
       </trans-unit>
       <trans-unit id="6141" resname="{span_tag_start}{n} doctors{span_tag_end} found this helpful" restype="string" datatype="html">
         <source>{span_tag_start}{n} doctors{span_tag_end} found this helpful</source>
@@ -24166,7 +24166,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     Please note that the following prescriptions are not currently available via HealthTap Prime: narcotics or DEA controlled substances &#40;Schedule I, II, III, IV&#41;, psychiatric or lifestyle medications &#40;such as diet or erectile dysfunction drugs&#41;, or medications restricted by individual states.</source>
         <target>这些条款（“免费试用条款”）管理由HealthTap提供的对新合格的用户的服务（“提供Prime免费试用”），新合格的用户可以通过注册并提交购买新的HealthTap Prime账户（“免费试用期”）支付信息，来访问HealthTap Prime服务。通过提交您的付款细节，您接受Prime免费试用服务和：&#40;i&#41;们按照我们的付款细节条款使用您的付款信息，和&#40;ii&#41;意HealthTap &lt; a href =“/” terms =“_blank”&gt; Terms of Use &lt;/a&gt;和这些免费试用条款。如果您决定在免费试用期时期结束时不想成为一个HealthTap Prime付费用户，依据HealthTap Prime的条款，您必须免费试用期结束前取消订购HealthTap Prime（在您的HealthTap账户的计费设置板块中&lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription?b_id=2340&quot; target=&quot;_blank&quot;&gt;Settings&lt;/a&gt;）订购费不按比例分摊；免费试用期结束后取消订购仍可使用，直到试用期结束，在此期间账户已被注销。您只能使用一次免费试用优惠。HealthTap保留一切在确定提供免费试用服务的个人资格以及在任何时间撤销或修改此Prime免费使用和/或免费试用的条款的绝对酌情决定权。恕不提前通知并不负相关责任。&lt;br&gt;&lt;br&gt;HealthTap的付款细节条款: 当您注册试用或使用任何我们的高级服务，或通过应用程序进行其他购买时，您的信用卡信息和其他需要用来处理您的付款的财务数据将会被收集并通过第三方支付处理机构的存储，我们也会收集一些有限的信息，例如您的邮政编码和交易历史细节。任何这样的第三方支付处理机构使用您的数据都会受他们的隐私政策限制。这第三方一般为我们提供一些有限的信息（如一个独特的记录，使您能够通过他们所存储的信息进行额外的购买，和您的卡的类型，到期日期，最后四位数字）
     &lt;br&gt;&lt;br&gt;
-    了解HealthTap &lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;使用条款&lt;/a&gt; 对于定义的“HealthTap”，“HealthTap Prime”，“应用程序”和“高级服务”“新用户”是指新HealthTap Prime顾客没有事先在HealthTap Prime注册基础账户、子账户或试用帐户的用户。
+    了解HealthTap &lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;使用条款&lt;/a&gt; 对于定义的“HealthTap”，“HealthTap Prime”，“应用程序”和“高级服务”“新用户”是指新HealthTap Prime客户没有事先在HealthTap Prime注册基础账户、子账户或试用帐户的用户。
     &lt;br&gt;&lt;br&gt;
 请注意，以下处方药目前不能通过HealthTap Prime获得：毒品或美国特殊药品监督管理局控制的药物（一、二、三、四类药物），精神病治疗药物或改变生活方式的药物（如：针对节食或勃起功能障碍的药物），或各州禁止的药物。</target>
       </trans-unit>
@@ -25307,7 +25307,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4653" resname="shared news:" restype="string" datatype="html">
         <source>shared news:</source>
-        <target>共享的新闻：</target>
+        <target>分享的新闻：</target>
       </trans-unit>
     </body>
   </file>
@@ -25517,11 +25517,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4693" resname=", your test results are in and we&apos;ve notified Dr. &lt;%= doctor.name %&gt;. You may review the results below." restype="string" datatype="html">
         <source>, your test results are in and we&apos;ve notified Dr. &lt;%= doctor.name %&gt;. You may review the results below.</source>
-        <target>{patient_first_name}，您的测试结果已发送，我们已通知{doctor_name}.您可以在下面查看结果。</target>
+        <target>{patient_first_name}，您的检验结果已发送，我们已通知{doctor_name}.您可以在下面查看结果。</target>
       </trans-unit>
       <trans-unit id="4694" resname="Dr. &lt;%= doctor.name %&gt;, here are the results of the tests you ordered for this patient." restype="string" datatype="html">
         <source>Dr. &lt;%= doctor.name %&gt;, here are the results of the tests you ordered for this patient.</source>
-        <target>医生 &lt;%= doctor.name %&gt;, 这里是您为此患者安排的测试的结果。</target>
+        <target>医生 &lt;%= doctor.name %&gt;, 这里是您为此患者安排的检验的结果。</target>
       </trans-unit>
       <trans-unit id="4695" resname="They have returned with a critical value that require your attention." restype="string" datatype="html">
         <source>They have returned with a critical value that require your attention.</source>
@@ -25572,7 +25572,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4705" resname="Test name: &lt;%= test.lab_order.order_code_description %&gt;" restype="string" datatype="html">
         <source>Test name: &lt;%= test.lab_order.order_code_description %&gt;</source>
-        <target>测试名称：&lt;%= test.lab_order.order_code_description %&gt;</target>
+        <target>检验名称：&lt;%= test.lab_order.order_code_description %&gt;</target>
       </trans-unit>
       <trans-unit id="4706" resname="Status:" restype="string" datatype="html">
         <source>Status:</source>
@@ -25785,7 +25785,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4733" resname="Finally, you can have &lt;span class=&quot;orange&quot;&gt;lab tests&lt;/span&gt; ordered and delivered to your phone from top doctors!" restype="string" datatype="html">
         <source>Finally, you can have &lt;span class=&quot;orange&quot;&gt;lab tests&lt;/span&gt; ordered and delivered to your phone from top doctors!</source>
-        <target>最后，您可以从知名医生预约&lt;span class =“orange”&gt;实验室测试&lt;/ span&gt;并将其发送到您的手机！</target>
+        <target>最后，您可以从知名医生预约&lt;span class =“orange”&gt;实验室检验&lt;/ span&gt;并将其发送到您的手机！</target>
       </trans-unit>
       <trans-unit id="4734" resname="Enter your question" restype="string" datatype="html">
         <source>Enter your question</source>
@@ -26194,7 +26194,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4802" resname="Share desktop" restype="string" datatype="html">
         <source>Share desktop</source>
-        <target>共享桌面</target>
+        <target>分享桌面</target>
       </trans-unit>
       <trans-unit id="4803" resname="Refresh video" restype="string" datatype="html">
         <source>Refresh video</source>
@@ -26242,7 +26242,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
   &lt;br&gt;" restype="string" datatype="html">
         <source>We&apos;re committed to delivering a delightful experience with our doctors that leaves you feeling good. If you&apos;re unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you&apos;ll be satisfied &lt;span style=&quot;font-weight: 600; color: &#35;c00;&quot;&gt;:&#41;&lt;/span&gt;
   &lt;br&gt;</source>
-        <target>我们致力于使您的医生咨询成为一段愉快的经历并使您保持感觉良好。若您对在线咨询的质量和效用不满意，您可以随时联系我们要求退款！我们保证您会满意&lt;span style=&quot;font-weight: 600; color: &#35;c00;&quot;&gt;:&#41;&lt;/span&gt;
+        <target>我们致力于使您的医生咨询成为一段愉快的经历并使您保持feel good。若您对在线咨询的质量和效用不满意，您可以随时联系我们要求退款！我们保证您会满意&lt;span style=&quot;font-weight: 600; color: &#35;c00;&quot;&gt;:&#41;&lt;/span&gt;
   &lt;br&gt;</target>
       </trans-unit>
       <trans-unit id="4810" resname="This guarantee is subject to your submission to HealthTap a documented explanation supporting your request for a refund.  All determinations of your eligibility for a refund are made solely by HealthTap and are final once HealthTap reaches its decision." restype="string" datatype="html">
@@ -26922,7 +26922,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4942" resname="This information will not be shared with any third parties" restype="string" datatype="html">
         <source>This information will not be shared with any third parties</source>
-        <target>这些信息不会共享给任何第三方组织</target>
+        <target>这些信息不会分享给任何第三方组织</target>
       </trans-unit>
       <trans-unit id="4943" resname="Contact name" restype="string" datatype="html">
         <source>Contact name</source>
@@ -28955,7 +28955,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5247" resname="Faculty: The faculty do not have any financial relationships or relationships to products or devices with any commercial interest related to the content of this activity of any amount during the past 12 months" restype="string" datatype="html">
         <source>Faculty: The faculty do not have any financial relationships or relationships to products or devices with any commercial interest related to the content of this activity of any amount during the past 12 months</source>
-        <target>学院：在过去的12个月中，成员的财务、产品、设备与关联到活动内容的任何商业利益无任何关系。</target>
+        <target>学院：在过去的12个月中，会员的财务、产品、设备与关联到活动内容的任何商业利益无任何关系。</target>
       </trans-unit>
       <trans-unit id="5248" resname="Planners and Managers: Jan Schultz, MSN, RN, CHCP does not have any financial relationships or relationships to products or devices with any commercial interest related to the content of this activity of any amount during the past 12 months." restype="string" datatype="html">
         <source>Planners and Managers: Jan Schultz, MSN, RN, CHCP does not have any financial relationships or relationships to products or devices with any commercial interest related to the content of this activity of any amount during the past 12 months.</source>
@@ -29141,7 +29141,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
         <source>Your interactions with doctors on HealthTap are safe, private, and secure.
           HealthTap does not share or sell your personal information with third parties.</source>
         <target>您与医生在HealthTap上的的交流是安全、私人、保密的。
-          HealthTap不共享或出售您的个人信息给第三方。</target>
+          HealthTap不分享或出售您的个人信息给第三方。</target>
       </trans-unit>
       <trans-unit id="5282" resname="As featured in" restype="string" datatype="html">
         <source>As featured in</source>
@@ -30315,7 +30315,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5462" resname="Here are the three services you can promote! Each of them provides access to top doctors who can give medical advice, prescribe medications, and order and review lab tests:" restype="string" datatype="html">
         <source>Here are the three services you can promote! Each of them provides access to top doctors who can give medical advice, prescribe medications, and order and review lab tests:</source>
-        <target>这里是您可以推广的三个服务！每个都提供了访问顶级医生的机会，这些医生会给您医学建议，处方药物，并预订和审查实验室测试：</target>
+        <target>这里是您可以推广的三个服务！每个都提供了访问顶级医生的机会，这些医生会给您医学建议，处方药物，并预订和审查实验室检验：</target>
       </trans-unit>
       <trans-unit id="5463" resname="HealthTap Concierge" restype="string" datatype="html">
         <source>HealthTap Concierge</source>
@@ -30667,7 +30667,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       To ensure unbiased doctor evaluations, doctors do not see their colleagues’ existing contributions until after they have entered their own rating. Recommendations cannot be changed once submitted, but after ratings are submitted, doctors can view the ratings of other doctors and comment on these. Both patients and doctors can learn from the RateRx ratings system.   Patients benefit from the collective wisdom shared by these doctors, enabling them to see how different treatments for the same conditions are rated and reviewed. Doctors benefit from their colleagues’ ratings and comments, and are able to interpret them by referring to the contributing doctors’ practice profiles &#40;which show their education and experience, their specialty training, years in practice, DocScore, and their “Known for” topics&#41;.&lt;br&gt; &lt;br&gt;
       Comments, which are optional, are often used by doctors to qualify or explain ratings, or to share details of how medications are used for each indication. Comments are available to read and review, do not change the numeric value of the rating. Ratings are based on generic drug names, but brand names are presented to permit doctors to rate specific drugs. Brand names are shown for every generic medication name presented. This study does not differentiate ratings between different brand names for the same medication. The most common medication treatments for each condition are listed for ratings, but doctors are encouraged to add treatments for any indication, ensuring the inclusion of new or novel treatments for each condition. Doctors were instructed to add medications not previously  on the list of standard treatment only if they had experience using the medication to treat the condition at issue and found these medication effective in the treatment of that condition. &lt;br&gt;&lt;br&gt;
     &lt;a class=&quot;btn okay&quot;&gt;Okay&lt;/a&gt;</source>
-        <target>RateRx对医生和患者来说都是一个新的独立资源，展示药物有效性的评级，该评级成千上万的美国执业医师在覆盖137多个专科的临床诊疗后报告。RateRx代表各专科经验丰富的临床医生在实际具体情况下医护患者后的一手综合评价。与可能会报告在可控状态下的治疗的临床有效性的其他研究不同的是，RateRx呼吁深入、长期、真实的顶尖医生的经验，来展示医生了解到的哪些治疗计划对患者有效。&lt;br&gt;&lt;br&gt;
+        <target>RateRx对医生和患者来说都是一个新的独立资源，展示药物有效性的评级，该评级成千上万的美国执业医师在覆盖137多个专科的临床诊疗后报告。RateRx代表各专科经验丰富的临床医生在实际具体情况下医护患者后的一手综合评价。与可能会报告在可控状态下的治疗的临床有效性的其他研究不同的是，RateRx呼吁深入、长期、真实的顶级医生的经验，来展示医生了解到的哪些治疗计划对患者有效。&lt;br&gt;&lt;br&gt;
 医生被要求对一种治疗一种症状药物的临床疗效进行1到5颗星的评价。
 有贡献的医生给他们的使用的药物评分，评分特别被要求基于他们的知识，并被指示只基于临床经验提供意见。我们总结了每一个治疗的综合评分，得出一个总评分来反映医生的共同经验。所有提供评分的医生文件对用户可见，用户可以审查医生的培训和经验细节，包括他们的专科和协会认证证书。&lt;br&gt;&lt;br&gt;
 
@@ -30730,7 +30730,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
   &lt;br&gt;
   &lt;b&gt;关于我们的医生&lt;/b&gt;
   &lt;br&gt;
-  要成为HealthTap的医学专家网络成员，医生必须由美国委员会认证，通过严格的资格审查程序，并接受过如何使用我们的科技平台给建议的培训。我们密切关注用户的反馈，以确保我们的医生提供尽可能好的医护。</target>
+  要成为HealthTap的医学专家网络会员，医生必须由美国委员会认证，通过严格的资格审查程序，并接受过如何使用我们的科技平台给建议的培训。我们密切关注用户的反馈，以确保我们的医生提供尽可能好的医护。</target>
       </trans-unit>
       <trans-unit id="6418" resname="HealthTap provides easy, immediate access to over {num_experts} doctors anytime, anywhere, 24/7. Connect through live HD video, voice, or text chat with a doctor from the largest doctor network in the country." restype="string" datatype="html">
         <source>HealthTap provides easy, immediate access to over {num_experts} doctors anytime, anywhere, 24/7. Connect through live HD video, voice, or text chat with a doctor from the largest doctor network in the country.</source>
@@ -31384,7 +31384,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5606" resname="Recruit team members" restype="string" datatype="javascript">
         <source>Recruit team members</source>
-        <target>招募团队成员</target>
+        <target>招募团队会员</target>
       </trans-unit>
       <trans-unit id="5607" resname="Invite Your Friends" restype="string" datatype="javascript">
         <source>Invite Your Friends</source>
@@ -33047,7 +33047,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5977" resname="Do you want to share it?" restype="string" datatype="javascript">
         <source>Do you want to share it?</source>
-        <target>您想要共享它吗？</target>
+        <target>您想要分享它吗？</target>
       </trans-unit>
       <trans-unit id="5978" resname="Thanks for sharing with your friends on Facebook! They appreciate it!" restype="string" datatype="javascript">
         <source>Thanks for sharing with your friends on Facebook! They appreciate it!</source>
@@ -33836,7 +33836,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6458" resname="To get prescriptions,&lt;br&gt; you must share the following accurately" restype="string" datatype="javascript">
         <source>To get prescriptions,&lt;br&gt; you must share the following accurately</source>
-        <target>为了得到处方，&lt;br&gt;您必须准确的共享以下内容</target>
+        <target>为了得到处方，&lt;br&gt;您必须准确的分享以下内容</target>
       </trans-unit>
       <trans-unit id="6459" resname="Incorrect password or email already in use" restype="string" datatype="javascript">
         <source>Incorrect password or email already in use</source>
@@ -34317,7 +34317,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6540" resname="To prescribe a medication, press &quot;Add&quot; to the right of the section." restype="string" datatype="javascript">
         <source>To prescribe a medication, press &quot;Add&quot; to the right of the section.</source>
-        <target>要订购实验室测试，请按部分右侧的“添加”。</target>
+        <target>要订购实验室检验，请按部分右侧的“添加”。</target>
       </trans-unit>
       <trans-unit id="6541" resname="One of the things patients really appreciate is that you can &lt;b&gt;prescribe \
                    medications&lt;/b&gt; that are sent directly to a patient&apos;s indicated pharmacy. \
@@ -34331,7 +34331,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6542" resname="To order lab tests, press &quot;Add&quot; to the right of the section." restype="string" datatype="javascript">
         <source>To order lab tests, press &quot;Add&quot; to the right of the section.</source>
-        <target>要安排实验室测试，请按部分右侧的“添加”。</target>
+        <target>要安排实验室检验，请按部分右侧的“添加”。</target>
       </trans-unit>
       <trans-unit id="6543" resname="Another new functionality, that delights and saves patients \
                    time is the ability for you to order lab tests virtually. The \
@@ -34344,9 +34344,9 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
                    chooses. Once the patient has been tested you will be sent the \
                    results for review.</source>
         <target>另一个新的功能，\
-                    时间具有在线订购实验室测试的能力。 \
+                    时间具有在线订购实验室检验的能力。 \
                     实验室订单将发送到Quest服务中心的患者\
-                    选择。一旦患者已经测试，您将被发送\
+                    选择。一旦患者已经检验，您将被发送\
                     结果进行审查。</target>
       </trans-unit>
       <trans-unit id="6544" resname="Simply start typing to see the options of more than 2,000 lab \
@@ -34354,11 +34354,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
         <source>Simply start typing to see the options of more than 2,000 lab \
                   tests you can order.</source>
         <target>只需开始输入，查看超过2000个实验室\
-                   您可以预约的测试。</target>
+                   您可以预约的检验。</target>
       </trans-unit>
       <trans-unit id="6545" resname="To request a follow-up appointment, press &quot;Add&quot; to the right of the section." restype="string" datatype="javascript">
         <source>To request a follow-up appointment, press &quot;Add&quot; to the right of the section.</source>
-        <target>要预约实验室测试，请按部分右侧的“添加”。</target>
+        <target>要预约实验室检验，请按部分右侧的“添加”。</target>
       </trans-unit>
       <trans-unit id="6546" resname="To suggest a follow-up appointment, include when the patient \
                   should schedule the appointment and, optionally, what the purpose of the follow-up is. \
@@ -34406,7 +34406,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6552" resname="To recommend a checklist, press &quot;Add&quot; to the right of the section." restype="string" datatype="javascript">
         <source>To recommend a checklist, press &quot;Add&quot; to the right of the section.</source>
-        <target>要订购实验室测试，请按部分右侧的“添加”。</target>
+        <target>要订购实验室检验，请按部分右侧的“添加”。</target>
       </trans-unit>
       <trans-unit id="6553" resname="&lt;b&gt;Checklists&lt;/b&gt; are recommended actions that help your patient achieve \
                  a health goal or feel better. Patients receive timely reminders for each \
@@ -34746,7 +34746,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6595" resname="Your internet connection passed the test." restype="string" datatype="javascript">
         <source>Your internet connection passed the test.</source>
-        <target>您的网络连接已通过测试。</target>
+        <target>您的网络连接已通过检验。</target>
       </trans-unit>
       <trans-unit id="6596" resname="Your internet connection seems spotty. For a better experience, please voice or text chat or try again later." restype="string" datatype="javascript">
         <source>Your internet connection seems spotty. For a better experience, please voice or text chat or try again later.</source>
@@ -34766,7 +34766,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6599" resname="This is the content text of the button modal header. Blah blah text text here." restype="string" datatype="javascript">
         <source>This is the content text of the button modal header. Blah blah text text here.</source>
-        <target>这是按钮模态的内容文本。Blah blah这里测试。</target>
+        <target>这是按钮模态的内容文本。Blah blah这里检验。</target>
       </trans-unit>
     </body>
   </file>
@@ -35038,7 +35038,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6647" resname="Hi,%0A%0AI just found the easiest way to get medical advice, prescriptions, and lab tests from top doctors in over 130 specialties! Best of all, I have an exclusive offer to share with YOU. Check it out: " restype="string" datatype="javascript">
         <source>Hi,%0A%0AI just found the easiest way to get medical advice, prescriptions, and lab tests from top doctors in over 130 specialties! Best of all, I have an exclusive offer to share with YOU. Check it out:</source>
-        <target>嗨，%0A%0AI发现最简单的从超过130个专科的顶级医生处获得医疗咨询，处方和实验室测试的方法！最重要的是，我有一个独家报价与您分享。一探究竟：</target>
+        <target>嗨，%0A%0AI发现最简单的从超过130个专科的顶级医生处获得医疗咨询，处方和实验室检验的方法！最重要的是，我有一个独家报价与您分享。一探究竟：</target>
       </trans-unit>
       <trans-unit id="6648" resname="Try HealthTap Prime for peace of mind" restype="string" datatype="javascript">
         <source>Try HealthTap Prime for peace of mind</source>
@@ -35054,7 +35054,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6651" resname="The easiest way to get medical advice, prescriptions, and lab tests from top doctors in over 130 specialties! Exclusive offer: " restype="string" datatype="javascript">
         <source>The easiest way to get medical advice, prescriptions, and lab tests from top doctors in over 130 specialties! Exclusive offer:</source>
-        <target>HealthTap是从超过130个专业的知名医生获得建议，处方和实验室测试的最简单的方法！：独家优惠：</target>
+        <target>HealthTap是从超过130个专业的知名医生获得建议，处方和实验室检验的最简单的方法！：独家优惠：</target>
       </trans-unit>
       <trans-unit id="6652" resname="You’re all set to start sharing and earning money—$5 for each Concierge consult &#40;retail price: $39&#41; you refer! Here’s how to get started:" restype="string" datatype="javascript">
         <source>You’re all set to start sharing and earning money—$5 for each Concierge consult &#40;retail price: $39&#41; you refer! Here’s how to get started:</source>
@@ -35086,11 +35086,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6659" resname="Hi,%0A%0AI just found the easiest way to get medical advice, prescriptions, and lab tests from top doctors—online, 24/7! Best of all, I have an exclusive offer to share with YOU. Check it out: " restype="string" datatype="javascript">
         <source>Hi,%0A%0AI just found the easiest way to get medical advice, prescriptions, and lab tests from top doctors—online, 24/7! Best of all, I have an exclusive offer to share with YOU. Check it out:</source>
-        <target>嗨，%0A%0AI发现最简单的从超过24个专科的顶级医生处获得医疗咨询，处方和实验室测试的方法—全天24小时在线！最重要的是，我有一个独家报价与您分享。一探究竟：</target>
+        <target>嗨，%0A%0AI发现最简单的从超过24个专科的顶级医生处获得医疗咨询，处方和实验室检验的方法—全天24小时在线！最重要的是，我有一个独家报价与您分享。一探究竟：</target>
       </trans-unit>
       <trans-unit id="6660" resname="The easiest way to get medical advice, prescriptions, and lab tests from top doctors—online, 24/7! Exclusive offer: " restype="string" datatype="javascript">
         <source>The easiest way to get medical advice, prescriptions, and lab tests from top doctors—online, 24/7! Exclusive offer:</source>
-        <target>嗨，%0A%0AI发现最简单的从超过24个专科的顶级医生处获得医疗咨询，处方和实验室测试的方法—全天24小时在线！独家优惠：</target>
+        <target>嗨，%0A%0AI发现最简单的从超过24个专科的顶级医生处获得医疗咨询，处方和实验室检验的方法—全天24小时在线！独家优惠：</target>
       </trans-unit>
       <trans-unit id="6661" resname="Your unique Prime subscription URL:" restype="string" datatype="javascript">
         <source>Your unique Prime subscription URL:</source>
@@ -35418,11 +35418,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6724" resname="Would you like to video or text chat with {name}, a top Specialist, with {years} years of experience?" restype="string" datatype="javascript">
         <source>Would you like to video or text chat with {name}, a top Specialist, with {years} years of experience?</source>
-        <target>您要与拥有{years} 多年经验的顶尖专家{name}视频或文本聊天吗？</target>
+        <target>您要与拥有{years} 多年经验的顶级专家{name}视频或文本聊天吗？</target>
       </trans-unit>
       <trans-unit id="6725" resname="Would you like to video or text chat with {name}, a top Specialist?" restype="string" datatype="javascript">
         <source>Would you like to video or text chat with {name}, a top Specialist?</source>
-        <target>您要与拥有{years} 多年经验的顶尖专家{name}视频或文本聊天吗？</target>
+        <target>您要与拥有{years} 多年经验的顶级专家{name}视频或文本聊天吗？</target>
       </trans-unit>
       <trans-unit id="6726" resname="Do you want to video or text chat with a top doctor?" restype="string" datatype="javascript">
         <source>Do you want to video or text chat with a top doctor?</source>
@@ -36202,7 +36202,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6898" resname="In order to fulfill your prescription, you must share the following information" restype="string" datatype="javascript">
         <source>In order to fulfill your prescription, you must share the following information</source>
-        <target>为了完成您的处方，您必须共享以下信息</target>
+        <target>为了完成您的处方，您必须分享以下信息</target>
       </trans-unit>
       <trans-unit id="6899" resname="Share your contact information" restype="string" datatype="javascript">
         <source>Share your contact information</source>
@@ -36514,7 +36514,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6961" resname="This Groupon voucher code has already been redeemed or is no longer valid. Please contact Groupon customer support if you have any question." restype="string" datatype="javascript">
         <source>This Groupon voucher code has already been redeemed or is no longer valid. Please contact Groupon customer support if you have any question.</source>
-        <target>这个Groupon代金券代码已兑换或已失效。请联系Groupon顾客支持团队如果您有任何问题。</target>
+        <target>这个Groupon代金券代码已兑换或已失效。请联系Groupon客户支持团队如果您有任何问题。</target>
       </trans-unit>
     </body>
   </file>
@@ -36634,7 +36634,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6982" resname="You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information." restype="string" datatype="javascript">
         <source>You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information.</source>
-        <target>您正在与一位医生进行咨询并且还没有完成。您可以添加信息到这次咨询中并共享更多的信息。</target>
+        <target>您正在与一位医生进行咨询并且还没有完成。您可以添加信息到这次咨询中并分享更多的信息。</target>
       </trans-unit>
       <trans-unit id="6983" resname="To privately video chat with {doctor_name} and receive your consult notes, please share your email:" restype="string" datatype="javascript">
         <source>To privately video chat with {doctor_name} and receive your consult notes, please share your email:</source>
@@ -36654,7 +36654,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6987" resname="{doctor_name} is not yet accepting Virtual Consults on HealthTap. To invite the doctor, please share your email:" restype="string" datatype="javascript">
         <source>{doctor_name} is not yet accepting Virtual Consults on HealthTap. To invite the doctor, please share your email:</source>
-        <target>{doctor_name}还没有在HealthTap上接受您的在线咨询请求。要邀请医生，请共享您的邮箱：</target>
+        <target>{doctor_name}还没有在HealthTap上接受您的在线咨询请求。要邀请医生，请分享您的邮箱：</target>
       </trans-unit>
       <trans-unit id="6988" resname="To connect with {doctor_name}, please let us know where to send your response:" restype="string" datatype="javascript">
         <source>To connect with {doctor_name}, please let us know where to send your response:</source>
@@ -37851,7 +37851,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="7239" resname="I&apos;m a HealthTap Medical Expert, and believe that you&apos;d benefit from and be a great addition to this new and innovative online interactive health network. Check it out! http://healthtap.com" restype="string" datatype="javascript">
         <source>I&apos;m a HealthTap Medical Expert, and believe that you&apos;d benefit from and be a great addition to this new and innovative online interactive health network. Check it out! http://healthtap.com</source>
-        <target>我是HealthTap医疗专家，相信您会从中受益，并成为这个新的、创新的在线互动健康网络的一个新成员。点击这里查看详情！ http://healthtap.com</target>
+        <target>我是HealthTap医疗专家，相信您会从中受益，并成为这个新的、创新的在线互动健康网络的一个新会员。点击这里查看详情！ http://healthtap.com</target>
       </trans-unit>
       <trans-unit id="7240" resname="Hi, I&apos;m using HealthTap for free to get personalized health information and answers to my questions from real doctors. You should check it out! http://healthtap.com" restype="string" datatype="javascript">
         <source>Hi, I&apos;m using HealthTap for free to get personalized health information and answers to my questions from real doctors. You should check it out! http://healthtap.com</source>
