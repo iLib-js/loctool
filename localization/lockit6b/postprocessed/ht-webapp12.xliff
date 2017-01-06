@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="64" resname="r190707551" restype="string" datatype="ruby">
         <source>Treatment</source>
-        <target state="translated">tratamiento</target>
+        <target state="translated">Tratamiento</target>
       </trans-unit>
     </body>
   </file>
@@ -392,7 +392,7 @@
       <trans-unit id="1278" resname="Connect with women doctors who are also mothers for deeper, \\n    experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
         <source>Connect with women doctors who are also mothers for deeper, \
     experience-based answers to all your pregnancy and parenting questions.</source>
-        <target state="translated">Conéctate con médicas que también son mamás para unas respuestas más profundas \
+        <target state="translated">Conéctate con doctoras que también son mamás para unas respuestas más profundas \
     y experimentadas a todas tus preguntas de embarazo y crianza.</target>
       </trans-unit>
     </body>
