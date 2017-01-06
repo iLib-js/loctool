@@ -368,5 +368,35 @@ describe 'HamlLocalizer' do
       local_name_to_output['en-GB'].include?('It may take about 1-2 minutes for the video to load').should be_false
     end
 
+    it 'tests that we retain the punctuations' do
+      # file test_call.html.haml
+      template = '
+.test-call-container
+  .steps-container
+    .step-container.check-video.hidden
+      .video-container.main-container
+        .step-title
+          Do you see a video of yourself? <br>
+          (It may take about 1-2 minutes for the video to load)
+'
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
+      local_name_to_output['en-GB'].include?('4321?').should be_false #padding should be after ? not before
+      local_name_to_output['en-GB'].include?('Do you see a video of yourself').should be_false #translate it
+    end
+
+    it 'handles punctuation case' do
+      # file _hopes_diagram.html.haml
+      template = '
+.hopes-diagram
+  .text-content
+    %p
+      Power your organization with HOPES<sup>TM</sup> — the fully integrated, engaging and smart Health Operating System, providing query-to-cure virtual care to your patients, anytime, anywhere.
+'
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
+      local_name_to_output['en-GB'].include?('</sup> — ').should be_true #retain the punctuation
+      local_name_to_output['en-GB'].include?('the fully integrated').should be_false # should have translated
+      local_name_to_output['en-GB'].include?('TM').should be_false #should have translated content with the <sup..</sup> tags
+    end
+
   end
 end
