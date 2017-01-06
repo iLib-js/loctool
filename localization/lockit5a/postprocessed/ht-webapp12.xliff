@@ -15633,7 +15633,7 @@
       </trans-unit>
       <trans-unit id="8067" resname="r699054685" restype="string" datatype="x-haml">
         <source>I agree to HealthTap&apos;s</source>
-        <target>Acepto los</target>
+        <target state="accepted">Acepto los</target>
       </trans-unit>
       <trans-unit id="8068" resname="r939509584" restype="string" datatype="x-haml">
         <source>Advertised services provided by HealthTap</source>
