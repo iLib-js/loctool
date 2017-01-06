@@ -478,7 +478,7 @@
       </trans-unit>
       <trans-unit id="97" resname="%@, %ld years in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld years in practice</source>
-        <target>%@, %ld años de ejercicio</target>
+        <target state="accepted">%@, %ld años de experencias</target>
       </trans-unit>
       <trans-unit id="98" resname="%@, %ld year in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld year in practice</source>
@@ -1036,7 +1036,7 @@
       </trans-unit>
       <trans-unit id="184" resname="Gender" restype="string" datatype="x-objective-c">
         <source>Gender</source>
-        <target>Género</target>
+        <target state="accepted">Sexo</target>
       </trans-unit>
       <trans-unit id="185" resname="Height" restype="string" datatype="x-objective-c">
         <source>Height</source>
@@ -3620,7 +3620,7 @@
       </trans-unit>
       <trans-unit id="671" resname="q32-Yx-z8d.text" restype="string" datatype="x-xib">
         <source>Tell the doctor a little about you</source>
-        <target>Cuéntale al médico un poco más acerca de ti</target>
+        <target state="accepted">Cuéntale al médico más acerca de ti</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tell the doctor a little about you&quot;; ObjectID = &quot;q32-Yx-z8d&quot;;</note>
       </trans-unit>
     </body>
@@ -4790,7 +4790,7 @@
       </trans-unit>
       <trans-unit id="97" resname="%@, %ld years in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld years in practice</source>
-        <target>%@, %ld 年诊疗</target>
+        <target state="accepted">%@, %ld 年诊疗经验的专家</target>
       </trans-unit>
       <trans-unit id="98" resname="%@, %ld year in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld year in practice</source>

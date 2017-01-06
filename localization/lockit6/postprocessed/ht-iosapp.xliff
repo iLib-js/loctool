@@ -1806,7 +1806,7 @@
     <body>
       <trans-unit id="1" resname="You&apos;re now following %@! " restype="string" datatype="x-objective-c">
         <source>You&apos;re now following %@!</source>
-        <target>您正在关注％@！</target>
+        <target>您正在关注%@！</target>
       </trans-unit>
     </body>
   </file>
@@ -1858,7 +1858,7 @@
       </trans-unit>
       <trans-unit id="9" resname="Your display language was successfully updated to %@." restype="string" datatype="x-objective-c">
         <source>Your display language was successfully updated to %@.</source>
-        <target>您的显示语言已成功更新为％@。</target>
+        <target>您的显示语言已成功更新为%@。</target>
       </trans-unit>
       <trans-unit id="10" resname="Your display language was updated." restype="string" datatype="x-objective-c">
         <source>Your display language was updated.</source>
@@ -2264,7 +2264,7 @@
       </trans-unit>
       <trans-unit id="77" resname="I’m Dr. A.I., and I work with %@ doctors to help understand your symptoms and show you the best path to feeling good. Let’s get started!" restype="string" datatype="x-objective-c">
         <source>I’m Dr. A.I., and I work with %@ doctors to help understand your symptoms and show you the best path to feeling good. Let’s get started!</source>
-        <target>我是A.I.医生，我与％@医生合作帮助了解您的症状并告诉您感觉良好的最佳途径。让我们开始吧！</target>
+        <target>我是A.I.医生，我与%@医生合作帮助了解您的症状并告诉您感觉良好的最佳途径。让我们开始吧！</target>
         <note annotates="source">triage tutorial subheader</note>
       </trans-unit>
     </body>

@@ -4444,7 +4444,7 @@
       </trans-unit>
       <trans-unit id="842" resname="tablabel_talktodocs" restype="string" datatype="x-android-resource">
         <source>Talk to Docs</source>
-        <target>Hablar con los Médicos</target>
+        <target state="accepted">Conversar</target>
       </trans-unit>
       <trans-unit id="843" resname="tablabel_checklist_discover" restype="string" datatype="x-android-resource">
         <source>Discover</source>
@@ -5284,7 +5284,7 @@
       </trans-unit>
       <trans-unit id="1051" resname="checklist_literal" restype="string" datatype="x-android-resource">
         <source>checklist</source>
-        <target>lista de comprobación</target>
+        <target source="accepted">Por Hacer</target>
       </trans-unit>
       <trans-unit id="1052" resname="checklist_added" restype="string" datatype="x-android-resource">
         <source>added this checklist</source>
@@ -7834,7 +7834,7 @@
       </trans-unit>
       <trans-unit id="1654" resname="rating_high_star_text" restype="string" datatype="x-android-resource">
         <source>Great</source>
-        <target>Estupendo</target>
+        <target state="accepted">Genial</target>
       </trans-unit>
       <trans-unit id="1655" resname="rating_title_generic" restype="string" datatype="x-android-resource">
         <source>Your consult has ended</source>
