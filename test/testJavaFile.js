@@ -761,4 +761,38 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileExtractFile2: function(test) {
+        test.expect(11);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p, "./java/AskPickerSearchFragment.java");
+        test.ok(j);
+        
+        // should read the file
+        j.extract();
+        
+        var set = j.getTranslationSet();
+        
+        test.equal(set.size(), 3);
+        
+        var r = set.getBySource("Can't find a clinician? ");
+        test.ok(r);
+        test.equal(r.getSource(), "Can't find a clinician? ");
+        test.equal(r.getKey(), "r469329242");
+        
+        r = set.getBySource("Can't find a doctor? ");
+        test.ok(r);
+        test.equal(r.getSource(), "Can't find a doctor? ");
+        test.equal(r.getKey(), "r1012743332");
+        
+        r = set.getBySource("Invite them to HealthTap");
+        test.ok(r);
+        test.equal(r.getSource(), "Invite them to HealthTap");
+        test.equal(r.getKey(), "r554083360");
+
+        test.done();
+    },
 };
