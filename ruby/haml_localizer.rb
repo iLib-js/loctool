@@ -241,6 +241,13 @@ def process_line(skip_block_indent, ret, line, from_to)
             if line.match(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/)
               #puts '2'
               res = line.gsub!(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, ">#{v}") #for some reason it replaces the > char as well. replcae it
+            elsif k.strip.match(/^[[:punct:]]/) && k.strip.match(/[[:punct:]]$/)
+              #punctuation in beginning
+              res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
+            elsif k.strip.match(/^[[:punct:]]/)
+              res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
+            elsif k.strip.match(/[[:punct:]]$/)
+              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
             else
               #puts '3'
               res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
@@ -383,7 +390,7 @@ def process_file_content(template, path_name, locale_names, all_locale_mappings)
   #puts "orig_values=#{values}"
   values = reject_special_words(reject_paran(break_aound_code_values(values)))
   #puts "values before=#{values}"
-  values = strip_whitespace_punct(values)
+  #values = strip_whitespace_punct(values)
 
   #puts "values=#{values}"
   locale_names.each do |locale_name|
