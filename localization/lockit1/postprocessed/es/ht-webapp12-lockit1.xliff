@@ -25428,7 +25428,7 @@
     <body>
       <trans-unit id="5162" resname="Your Doctor Care-Team" restype="string" datatype="html">
         <source>Your Doctor Care-Team</source>
-        <target>Tu Care-Team &#40;Equipo de atención&#41; de Médicos</target>
+        <target state="accepted">Tu Care-Team &#40;Equipo de atención&#41;</target>
       </trans-unit>
     </body>
   </file>

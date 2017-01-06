@@ -739,7 +739,7 @@
       </trans-unit>
       <trans-unit id="Wm1-C2-SMT.normalTitle" resname="Wm1-C2-SMT.normalTitle" restype="string" datatype="x-xib">
         <source>Video / Chat</source>
-        <target>Video / Chat</target>
+        <target state="accepted">Video / Charla</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Video / Chat&quot;; ObjectID = &quot;Wm1-C2-SMT&quot;;</note>
       </trans-unit>
       <trans-unit id="lAm-Fi-WNx.text" resname="lAm-Fi-WNx.text" restype="string" datatype="x-xib">
@@ -788,7 +788,7 @@
       </trans-unit>
       <trans-unit id="Vsk-55-aYQ.normalTitle" resname="Vsk-55-aYQ.normalTitle" restype="string" datatype="x-xib">
         <source>Video / Chat</source>
-        <target>Video / Chat</target>
+        <target state="accepted">Video / Charla</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Video / Chat&quot;; ObjectID = &quot;Vsk-55-aYQ&quot;;</note>
       </trans-unit>
       <trans-unit id="YPu-VP-xep.normalTitle" resname="YPu-VP-xep.normalTitle" restype="string" datatype="x-xib">
@@ -2365,7 +2365,7 @@
       </trans-unit>
       <trans-unit id="BeZ-YQ-Uhy.normalTitle" resname="BeZ-YQ-Uhy.normalTitle" restype="string" datatype="x-xib">
         <source>Video / Chat</source>
-        <target>Video / Chat</target>
+        <target state="accepted">Video / Charla</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Video / Chat&quot;; ObjectID = &quot;BeZ-YQ-Uhy&quot;;</note>
       </trans-unit>
       <trans-unit id="J3b-KK-CVR.normalTitle" resname="J3b-KK-CVR.normalTitle" restype="string" datatype="x-xib">
@@ -2414,7 +2414,7 @@
       </trans-unit>
       <trans-unit id="hhB-K6-o5i.normalTitle" resname="hhB-K6-o5i.normalTitle" restype="string" datatype="x-xib">
         <source>Video / Chat</source>
-        <target>Video / Chat</target>
+        <target state="accepted">Video / Charla</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Video / Chat&quot;; ObjectID = &quot;hhB-K6-o5i&quot;;</note>
       </trans-unit>
       <trans-unit id="xkQ-gZ-wdP.normalTitle" resname="xkQ-gZ-wdP.normalTitle" restype="string" datatype="x-xib">
@@ -13273,7 +13273,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="there" resname="there" restype="string" datatype="x-objective-c">
         <source>there</source>
-        <target>allí</target>
+        <target state="accepted">¿qué tal?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="times" resname="times" restype="string" datatype="x-objective-c">
