@@ -159,7 +159,7 @@ module.exports = {
         var set = rf.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ResourceString.hashKey("webapp", "en-US", "r654479252"));
+        var r = set.get(ResourceString.hashKey("webapp", "en-US", "r654479252", "ruby"));
         test.ok(r);
         
         test.equal(r.getSource(), "This is a test");

@@ -212,7 +212,7 @@ module.exports = {
         
         yml.parse(
         		'---\n' +
-        		"zh_Hans_CN:\n" +
+        		"zh-Hans-CN:\n" +
         		"  feelgood/foo/bar/x.en-US.html.haml:\n" +
         		'    r9834724545: Jobs\n' +
         		'    r9483762220: Our internship program\n' +
@@ -450,13 +450,13 @@ module.exports = {
         });
 
         diff(yml.getContent(),
-            	'de_DE:\n' +
+            	'de-DE:\n' +
             	'  source_text: Quellen\"text\n' +
             	'  more_source_text: mehr Quellen\"text\n'
             );
 
         test.equal(yml.getContent(),
-        	'de_DE:\n' +
+        	'de-DE:\n' +
         	'  source_text: Quellen\"text\n' +
         	'  more_source_text: mehr Quellen\"text\n'
         );
@@ -502,13 +502,13 @@ module.exports = {
         });
         
         diff(yml.getContent(),
-            	"zh_Hans_CN:\n" +
+            	"zh-Hans-CN:\n" +
             	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
             	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
     	    );
 
         test.equal(yml.getContent(),
-        	"zh_Hans_CN:\n" +
+        	"zh-Hans-CN:\n" +
         	"  • &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
         	"  '&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
         );
@@ -554,7 +554,7 @@ module.exports = {
         });
         
         diff(yml.getContent(),
-	    	"zh_Hans_CN:\n" +
+	    	"zh-Hans-CN:\n" +
 	    	"  short key: |-\n" +
 	    	"    this is text that is relatively long and can run past the end of the page\n" +
 	    	"    So, we put a new line in the middle of it.\n" +
@@ -562,7 +562,7 @@ module.exports = {
 	    );
 
         test.equal(yml.getContent(),
-	    	"zh_Hans_CN:\n" +
+	    	"zh-Hans-CN:\n" +
 	    	"  short key: |-\n" +
 	    	"    this is text that is relatively long and can run past the end of the page\n" +
 	    	"    So, we put a new line in the middle of it.\n" +
@@ -618,7 +618,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", undefined, "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger."));
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", undefined, "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.", "x-yaml"));
         test.ok(r);
         
         test.equal(r.getSource(), "Dr. Livingston serves on the Medical Advisory Board for HealthTap and he is the Chief Medical officer for Healthcare Transformation Solutions. He is on Twitter as @macobgyn and is an active doctor blogger.");
@@ -650,7 +650,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "saved_someone_else_life", "en-US", "subject"));
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "saved_someone_else_life", "en-US", "subject", "x-yaml"));
         test.ok(r);
         
         test.equal(r.getSource(), "Feel good! Someone said a doctor’s answer to your question saved their life:");
@@ -684,7 +684,7 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject"));
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         test.ok(r);
         
         test.equal(r.getSource(), "%1, %2 has answered a question you asked!");
@@ -718,10 +718,63 @@ module.exports = {
         var set = yml.getTranslationSet();
         test.ok(set);
         
-        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject"));
+        var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         test.ok(r);
         
         test.ok(r instanceof ContextResourceString);
+        
+        test.done();
+    },
+    
+    testYamlResourceFileGetContentDontUseSourceHash: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+        
+        var yml = new YamlResourceFile({
+        	project: p, 
+        	pathName: "./zh.yml",
+        	locale: "zh-Hans-CN"
+        });
+        test.ok(yml);
+        
+        [
+        	new ContextResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "r24524524524",
+        		source: "this is text that is relatively long and can run past the end of the page\nSo, we put a new line in the middle of it.",
+        		comment: " ",
+        		sourceHash: "r4352345234"
+        	}),
+        	new ContextResourceString({
+        		project: "ht-webapp12",
+        		locale: "zh-Hans-CN",
+        		key: "r003425245",
+        		source: "short text",
+        		comment: "bar",
+        		sourceHash: "r8437477345"
+        	})
+        ].forEach(function(res) {
+        	yml.addResource(res);
+        });
+        
+        var actual = yml.getContent();
+        var expected =
+	    	"zh-Hans-CN:\n" +
+	    	"  r24524524524: |-\n" +
+	    	"    this is text that is relatively long and can run past the end of the page\n" +
+	    	"    So, we put a new line in the middle of it.\n" +
+	    	"  r003425245: short text\n";
+
+        diff(actual, expected);
+        test.equal(actual, expected);
         
         test.done();
     }

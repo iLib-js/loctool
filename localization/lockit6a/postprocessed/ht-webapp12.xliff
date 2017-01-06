@@ -9769,7 +9769,7 @@
       <trans-unit id="235" resname="Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.           &lt;a href=&amp;quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&amp;quot; target=&amp;quot;_blank&amp;quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation. 
           &lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target state="translated">新的治疗处方和补充药（不包括受管制的药物），可以发送到您当地的药店，根据您的虚拟咨询，医生给出适当的指示和治疗方式。&lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;了解&amp;nbsp;更多&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target state="translated">新的治疗处方和补充药（不包括受管制的药物），可以发送到您当地的药店，根据您的在线咨询，医生给出适当的指示和治疗方式。&lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;了解&amp;nbsp;更多&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6249" resname="Get doctor help, anytime, anywhere" restype="string" datatype="html">
         <source>Get doctor help, anytime, anywhere</source>
@@ -10078,7 +10078,7 @@
     	bold_tag_start: &apos;&lt;b&gt;&apos;,
     	bold_tag_end: &apos;&lt;/b&gt;&apos;
     }&#41;</source>
-        <target state="translated">RB.getStringJS&#40;除了现场虚拟咨询，您也会收到 {bold_tag_start}信箱咨询{bold_tag_end}.&apos;&lt;b&gt;&apos;,
+        <target state="translated">RB.getStringJS&#40;除了现场在线咨询，您也会收到 {bold_tag_start}信箱咨询{bold_tag_end}.&apos;&lt;b&gt;&apos;,
     	bold_tag_end:&apos;&lt;/b&gt;&apos;
     }&#41;</target>
       </trans-unit>
@@ -11229,7 +11229,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
         <source>This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt;
       will be given credit for assisting you. Edit as you deem necessary.
       &lt;a class=&quot;child-browser-link&quot; href=&quot;&#35;how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt; &lt;/a&gt;</source>
-        <target state="translated">这个解答会出现在您的虚拟实践中和 &lt;%= user_answer.contributor.name %&gt;
+        <target state="translated">这个解答会出现在您的在线咨询中和 &lt;%= user_answer.contributor.name %&gt;
       会被给予信用协助您。&lt;a class=&quot;child-browser-link&quot; href=&quot;&#35;how_it_works/healthtap_university&quot;&gt;更多关于HealthTap大学 &amp;gt; &lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="7633" resname="CO-SIGN THIS ANSWER" restype="string" datatype="html">
@@ -16823,7 +16823,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="1642" resname="r71095273" restype="string" datatype="ruby">
         <source>%{first_open_tag}%{actor}%{close_tag} approved this translation of %{line_break}%{second_open_tag}%{second_actor}&apos;s%{close_tag} answer:</source>
-        <target>%{First_open_tag}%{actor}%{close_tag}批准了翻译%{line_break}%{second_open_tag}%{second_actor}的%{close_tag}回答：</target>
+        <target>%{first_open_tag}%{actor}%{close_tag}批准了翻译%{line_break}%{second_open_tag}%{second_actor}的%{close_tag}回答：</target>
         <note annotates="source">TODO possessive</note>
       </trans-unit>
     </body>
@@ -27707,7 +27707,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6022" resname="Message or schedule a virtual appointment with doctors in over 137 specialties" restype="string" datatype="html">
         <source>Message or schedule a virtual appointment with doctors in over 137 specialties</source>
-        <target>与超过137种专业的医生通讯或安排虚拟预约</target>
+        <target>与超过137种专业的医生通讯或安排在线预约</target>
       </trans-unit>
       <trans-unit id="6023" resname="Learn more" restype="string" datatype="html">
         <source>Learn more</source>
@@ -27727,7 +27727,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6027" resname="Unlimited virtual consults with primary care doctors—anytime, anywhere" restype="string" datatype="html">
         <source>Unlimited virtual consults with primary care doctors—anytime, anywhere</source>
-        <target>您可以随时随地，无限地与普通门诊医生进行虚拟咨询。</target>
+        <target>您可以随时随地，无限地与普通门诊医生进行在线咨询。</target>
       </trans-unit>
       <trans-unit id="6028" resname="Message or schedule a virtual appointment with doctors in over 135 specialties" restype="string" datatype="html">
         <source>Message or schedule a virtual appointment with doctors in over 135 specialties</source>
@@ -29244,7 +29244,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6384" resname="Virtual Appt" restype="string" datatype="html">
         <source>Virtual Appt</source>
-        <target>虚拟预约</target>
+        <target>在线预约</target>
       </trans-unit>
       <trans-unit id="6385" resname="Message" restype="string" datatype="html">
         <source>Message</source>
@@ -33296,7 +33296,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="7320" resname="Interested in helping? Invite this patient to perform a Virtual Consult" restype="string" datatype="html">
         <source>Interested in helping? Invite this patient to perform a Virtual Consult</source>
-        <target>有兴趣帮助？邀请此患者进行虚拟咨询</target>
+        <target>有兴趣帮助？邀请此患者进行在线咨询</target>
       </trans-unit>
     </body>
   </file>
@@ -38352,7 +38352,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="8803" resname="Invite your patients to your Virtual Practice" restype="string" datatype="html">
         <source>Invite your patients to your Virtual Practice</source>
-        <target>邀请您的患者到您的虚拟实践</target>
+        <target>邀请您的患者到您的在线咨询</target>
       </trans-unit>
       <trans-unit id="8804" resname="Here are 3 easy ways to grow your practice:" restype="string" datatype="html">
         <source>Here are 3 easy ways to grow your practice:</source>
@@ -38416,7 +38416,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="8819" resname="Your Virtual Practice web address:" restype="string" datatype="html">
         <source>Your Virtual Practice web address:</source>
-        <target>您的虚拟实践网址：</target>
+        <target>您的在线咨询网址：</target>
       </trans-unit>
       <trans-unit id="8820" resname="www.healthtap.com/&lt;%=App.defaults.user_json.vanity_url%&gt;" restype="string" datatype="html">
         <source>www.healthtap.com/&lt;%=App.defaults.user_json.vanity_url%&gt;</source>

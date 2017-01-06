@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/iPadNative/App/FGiPadAppViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="%@ doctors recommend this app" restype="string" datatype="x-objective-c">
+        <source>%@ doctors recommend this app</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocsPaymentViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="Add others for only {start}$10{end} USD / month" restype="string" datatype="x-objective-c">
+        <source>Add others for only {start}$10{end} USD / month</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="3" resname="I understand the {start1}Guidelines{end1} for Virtual Consults and agree to {start2}Terms{end2}" restype="string" datatype="x-objective-c">
+        <source>I understand the {start1}Guidelines{end1} for Virtual Consults and agree to {start2}Terms{end2}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGSpecialitySearchViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="6" resname="Enter Specialty" restype="string" datatype="x-objective-c">
+        <source>Enter Specialty</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGMomentDetailViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="7" resname="Please don&apos;t include a followup question in your note. To do so, {start}ask a question{end}" restype="string" datatype="x-objective-c">
+        <source>Please don&apos;t include a followup question in your note. To do so, {start}ask a question{end}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGAgreesAndCommentsViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="8" resname="Dr. Agrees %d" restype="string" datatype="x-objective-c">
+        <source>Dr. Agrees %d</source>
+      </trans-unit>
+      <trans-unit id="9" resname="Dr. Agrees %lu" restype="string" datatype="x-objective-c">
+        <source>Dr. Agrees %lu</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageStringsManager.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="10" resname="Please choose, and then tap or type symptoms, or skip to ask our doctors directly." restype="string" datatype="x-objective-c">
+        <source>Please choose, and then tap or type symptoms, or skip to ask our doctors directly.</source>
+        <note annotates="source">symptom triage select subaccount conversational subheader</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageConditionReportViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="11" resname="LESS\nLIKELY" restype="string" datatype="x-objective-c">
+        <source>LESS\nLIKELY</source>
+        <note annotates="source">match percentage low</note>
+      </trans-unit>
+      <trans-unit id="12" resname="SOMEWHAT\nLIKELY" restype="string" datatype="x-objective-c">
+        <source>SOMEWHAT\nLIKELY</source>
+        <note annotates="source">match percentage med</note>
+      </trans-unit>
+      <trans-unit id="13" resname="MORE\nLIKELY" restype="string" datatype="x-objective-c">
+        <source>MORE\nLIKELY</source>
+        <note annotates="source">match percentage hi</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSpecialistNeededUpsellView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="14" resname="Located in %@" restype="string" datatype="x-objective-c">
+        <source>Located in %@</source>
+      </trans-unit>
+      <trans-unit id="15" resname="Located in %@ ›" restype="string" datatype="x-objective-c">
+        <source>Located in %@ ›</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTLocationEnforcer.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="16" resname="No cancel" restype="string" datatype="x-objective-c">
+        <source>No cancel</source>
+      </trans-unit>
+      <trans-unit id="17" resname="Yes confirm" restype="string" datatype="x-objective-c">
+        <source>Yes confirm</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTBlankPushNotificationPrePermissionViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="18" resname="our %@" restype="string" datatype="x-objective-c">
+        <source>our %@</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGCheckListCompletedCellData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="19" resname="Actions taken %d" restype="string" datatype="x-objective-c">
+        <source>Actions taken %d</source>
+        <note annotates="source">Footer for incomplete checklist section</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGAppDetail.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="20" resname="by %@" restype="string" datatype="x-objective-c">
+        <source>by %@</source>
+      </trans-unit>
+      <trans-unit id="21" resname="%@ doctor recommends this app" restype="string" datatype="x-objective-c">
+        <source>%@ doctor recommends this app</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGConciergeDoctorHeaderView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="22" resname="\nWe will connect you with" restype="string" datatype="x-objective-c">
+        <source>\nWe will connect you with</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/AskDocsV4/HTConsultOptionSpecificExpertObject.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="23" resname="Speaks spanish" restype="string" datatype="x-objective-c">
+        <source>Speaks spanish</source>
+      </trans-unit>
+      <trans-unit id="24" resname="Speaks chinese" restype="string" datatype="x-objective-c">
+        <source>Speaks chinese</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/AskDocsV4/HTADV4OptionsTableViewDataSource.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="25" resname="Add a %@ interpreter for %@" restype="string" datatype="x-objective-c">
+        <source>Add a %@ interpreter for %@</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/AskDocsV4/HTADV4ConsultModeContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="26" resname="Starting at %@%d" restype="string" datatype="x-objective-c">
+        <source>Starting at %@%d</source>
+      </trans-unit>
+      <trans-unit id="27" resname="Starting at %@%.2f" restype="string" datatype="x-objective-c">
+        <source>Starting at %@%.2f</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Settings/Base.lproj/FGMainSettingsViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="28" resname="wLz-4h-21J.text" restype="string" datatype="x-xib">
+        <source>Show in which language?</source>
+        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Show in which language?&quot;; ObjectID = &quot;wLz-4h-21J&quot;;</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
