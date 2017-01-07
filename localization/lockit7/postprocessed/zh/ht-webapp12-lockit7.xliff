@@ -672,11 +672,11 @@
     <body>
       <trans-unit id="155" resname="r64800603" restype="string" datatype="ruby">
         <source>But don’t take our word for it.</source>
-        <target>但不要采取我们的话。</target>
+        <target>但不要只是听取我们的一面之词。</target>
       </trans-unit>
       <trans-unit id="156" resname="r508154106" restype="string" datatype="ruby">
         <source>Ask the more than %{num_docs} &lt;br&gt;doctors who joined us, the millions we served from all&lt;br&gt;over the world, and the more than 14,000 users who told us&lt;br&gt;we saved their lives!</source>
-        <target>询问已加入我们超过％{num_docs}&lt;br&gt;位医生，我们从世界各地服务的&lt;br&gt;数百万人，以及超过14,000名告诉我们&lt;br&gt;挽救了他们的生命的用户！</target>
+        <target>请询问已加入我们的超过%{num_docs}名医生、我们曾经服务的来自全世界的数百万人士以及向我们反馈我们挽救了其生命的超过14000名用户！</target>
       </trans-unit>
       <trans-unit id="157" resname="r92375852" restype="string" datatype="ruby">
         <source>How? We’ve handpicked more than %{num_docs} of the world’s best doctors to quickly answer your health questions—for free.</source>
@@ -6679,7 +6679,7 @@
     <body>
       <trans-unit id="2733" resname="r536151692" restype="string" datatype="x-haml">
         <source>All you need is a smartphone, tablet, computer, or smartwatch to access HealthTap Compass</source>
-        <target>所有您需要的只是一个智能手机，平板电脑，电脑或智能手表即可访问HealthTap Compass</target>
+        <target>您只需拥有一部智能手机、平板电脑、电脑或智能手表即可使用HealthTap Compass</target>
       </trans-unit>
     </body>
   </file>
