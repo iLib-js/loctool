@@ -136,7 +136,7 @@ def accumulate_values(root, values, path_name)
   if orig && orig.is_a?(String)
     s = Sanitize.clean(orig)
     if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
-      values << s.gsub(/[^[:print:]]/ , '').gsub(/[^a-zA-Z0-9_\s,\.-]/, '').strip
+      values << s.gsub(/[^[:print:]]/ , '')#.gsub(/[^a-zA-Z0-9_\s,\.'’_—\(\)!\?-]/, '').strip
     elsif !(/(.*)(<[^>]*>)(.*)/.match(orig))
       #there is no html only special characters filtered out by Sanitize.clean
       values.concat(break_around_non_clean_chars(orig, s))
@@ -241,10 +241,16 @@ def process_line(skip_block_indent, ret, line, from_to)
             if line.match(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/)
               #puts '2'
               res = line.gsub!(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, ">#{v}") #for some reason it replaces the > char as well. replcae it
+            elsif k.strip.match(/^[[:punct:]]/) && k.strip.match(/[[:punct:]]$/)
+              #punctuation in beginning
+              res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
+            elsif k.strip.match(/^[[:punct:]]/)
+              res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
+            elsif k.strip.match(/[[:punct:]]$/)
+              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
             else
               #puts '3'
-              # replace if k is at the beginning or end. Else, look for negative look behind and negative look-ahead with white-space boundary.
-              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v) # match starting with word boundary and doesn't have / | : right before k
+              res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
             end
           end
           #if res
@@ -320,12 +326,16 @@ def produce_unmapped(file_to_words)
   end
 end
 
-def strip_whitespace(from_to)
-  ret = {}
-  from_to.each{|k, v|
-    ret[k.strip] = v.strip
-  }
-  ret
+#def strip_whitespace_punct_word(v)
+#  if v.match(/^[[:punct:]]/) || v.match(/[[:punct:]]$/)
+#end
+
+def strip_whitespace_punct(values)
+  values.map{|v| v.strip.gsub(/^[[:punct:]]/,'').gsub(/[[:punct:]]$/, '').strip }
+end
+
+def strip_whitespace(values)
+  values.map{|v| v.strip.gsub(/^[[:blank:]]/, '').gsub(/[[:blank:]]$/, '')}
 end
 
 # clean the source string so that whitespace and html changes do not matter
@@ -368,6 +378,55 @@ def load_locale_maps(locales, file_prefix= 'translations')
   ret
 end
 
+
+# return hash{locale_name => output_template}, unmapped_files
+# param template - the entire file-content in English
+# path_name of the file whose content this is.
+# all_locale_mappings hash {locale => <Mapping for key=>string>}
+def process_file_content(template, path_name, locale_names, all_locale_mappings)
+  unmapped_for_file = []
+  ret = {}
+  x = HTParser.new(template, Haml::Options.new)
+  root = x.parse
+  values = []
+  accumulate_values(root, values, path_name)
+  #puts root
+  #puts "orig_values=#{values}"
+  values = reject_special_words(reject_paran(break_aound_code_values(values)))
+  #puts "values before=#{values}"
+  #values = strip_whitespace_punct(values)
+  values = strip_whitespace(values)
+
+  #puts "values=#{values}"
+  locale_names.each do |locale_name|
+    #puts "file_name=#{path_name} locale_name=#{locale_name}"
+    locale_mappings = all_locale_mappings[locale_name] || {}
+    locale_mappings = locale_mappings[locale_name] unless locale_mappings[locale_name].nil?
+    if locale_name == PSEUDO_LOCALE
+      from_to = process_pseudo_values(values)
+      #unmapped_for_file = values # removing because it makes every string unmapped
+    else
+      from_to = process_values(locale_mappings, values, unmapped_for_file)
+    end
+    #puts "from_to=#{from_to}"
+    puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
+    #process_values(locale_mappings, from_to.keys, unmapped_for_file)
+    output_template = replace_with_translations2(template.dup, from_to)
+    begin
+      x = HTParser.new(output_template, Haml::Options.new)
+      root = x.parse
+    rescue => e
+      puts e.backtrace
+      puts "ERROR: Bad substitution created invalid template for #{path_name}"
+      File.open('ERROR.html.haml', 'w') { |file| file.write(output_template) }
+      raise e if defined?(TEST_ENV)
+      next # if we make a bad file, do not try to print, just go to next file
+    end
+    ret[locale_name] = output_template
+  end
+  return ret, unmapped_for_file
+end
+
 #file_name = "/Users/aseem/_language_form.html.haml"
 unless defined?(TEST_ENV)
   raise ArgumentError.new("Usage: ruby haml_localizer.rb <locale-name> <lang-mapping> [<file-path>..]") if ARGV.count < 3
@@ -381,44 +440,12 @@ unless defined?(TEST_ENV)
       dirname = File.dirname(path_name)
       file_name = File.basename(path_name)
       file_name_components = file_name.split('.')
-      unmapped_for_file = []
       raise ArgumentError.new('file must end with .html.haml') unless file_name.end_with?('.html.haml')
 
       template = File.read(path_name)
-      x = HTParser.new(template, Haml::Options.new)
-      root = x.parse
-      values = []
-      accumulate_values(root, values, path_name)
-      #puts root
-      #puts "orig_values=#{values}"
-      values = reject_special_words(reject_paran(break_aound_code_values(values)))
 
-      #puts "values=#{values}"
-      locale_names.each do |locale_name|
-        #puts "file_name=#{path_name} locale_name=#{locale_name}"
-        locale_mappings = all_locale_mappings[locale_name] || {}
-        locale_mappings = locale_mappings[locale_name] unless locale_mappings[locale_name].nil?
-        if locale_name == PSEUDO_LOCALE
-          from_to = process_pseudo_values(values)
-          #unmapped_for_file = values # removing because it makes every string unmapped
-        else
-          from_to = process_values(locale_mappings, values, unmapped_for_file)
-        end
-        #from_to = strip_whitespace(from_to)
-        puts "from_to=#{from_to}"
-        puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
-        #process_values(locale_mappings, from_to.keys, unmapped_for_file)
-        output_template = replace_with_translations2(template.dup, from_to)
-        begin
-          x = HTParser.new(output_template, Haml::Options.new)
-          root = x.parse
-        rescue => e
-          puts e.backtrace
-          puts "ERROR: Bad substitution created invalid template for #{path_name}"
-          File.open('ERROR.html.haml', 'w') { |file| file.write(output_template) }
-          raise e if defined?(TEST_ENV)
-          next # if we make a bad file, do not try to print, just go to next file
-        end
+      locale_name_to_output, unmapped_for_file = process_file_content(template, path_name, locale_names, all_locale_mappings)
+      locale_name_to_output.each{|locale_name, output_template|
         if file_name_components[file_name_components.length - 3] == "en-US"
           # the original template has a lang_locale, test.en-US.html.haml
           new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 3].join('') + ".#{locale_name}.html.haml"
@@ -427,7 +454,7 @@ unless defined?(TEST_ENV)
           new_file_name = dirname + '/' + file_name_components[0, file_name_components.length - 2].join('') + ".#{locale_name}.html.haml"
         end
         File.open(new_file_name, 'w') { |file| file.write(output_template) }
-      end
+      }
       unmapped_words[file_name] = unmapped_for_file
     rescue => ex
       puts path_name

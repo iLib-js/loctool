@@ -6473,7 +6473,7 @@
       </trans-unit>
       <trans-unit id="1471" resname="r630866426" restype="string" datatype="ruby">
         <source>Doctor Insights for You</source>
-        <target>Perspicacias de Doctor para TI</target>
+        <target >Perspicacias de Doctor para ti</target>
       </trans-unit>
     </body>
   </file>
@@ -12352,7 +12352,7 @@
       </trans-unit>
       <trans-unit id="2613" resname="r238259539" restype="string" datatype="ruby">
         <source>Doctor Insights For You</source>
-        <target>Perspicacias de Doctor para TI</target>
+        <target state="accepted">Perspicacias de Doctor para ti</target>
       </trans-unit>
       <trans-unit id="2621" resname="r650094699" restype="string" datatype="ruby">
         <source>A weekly email digest of doctor insights for you</source>

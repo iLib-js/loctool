@@ -739,7 +739,7 @@
       </trans-unit>
       <trans-unit id="Wm1-C2-SMT.normalTitle" resname="Wm1-C2-SMT.normalTitle" restype="string" datatype="x-xib">
         <source>Video / Chat</source>
-        <target>Video / Chat</target>
+        <target state="accepted">Video / Charla</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Video / Chat&quot;; ObjectID = &quot;Wm1-C2-SMT&quot;;</note>
       </trans-unit>
       <trans-unit id="lAm-Fi-WNx.text" resname="lAm-Fi-WNx.text" restype="string" datatype="x-xib">
@@ -788,7 +788,7 @@
       </trans-unit>
       <trans-unit id="Vsk-55-aYQ.normalTitle" resname="Vsk-55-aYQ.normalTitle" restype="string" datatype="x-xib">
         <source>Video / Chat</source>
-        <target>Video / Chat</target>
+        <target state="accepted">Video / Charla</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Video / Chat&quot;; ObjectID = &quot;Vsk-55-aYQ&quot;;</note>
       </trans-unit>
       <trans-unit id="YPu-VP-xep.normalTitle" resname="YPu-VP-xep.normalTitle" restype="string" datatype="x-xib">
@@ -2341,7 +2341,7 @@
     <body>
       <trans-unit id="Glp-ia-AOc.text" resname="Glp-ia-AOc.text" restype="string" datatype="x-xib">
         <source>Top Doctors Suggested for You</source>
-        <target>Los Mejores Doctores Sugerido para Ti</target>
+        <target state="accepted">Los Mejores Doctores Sugeridos para Ti</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Top Doctors Suggested for You&quot;; ObjectID = &quot;Glp-ia-AOc&quot;;</note>
       </trans-unit>
       <trans-unit id="TyL-u8-N9l.text" resname="TyL-u8-N9l.text" restype="string" datatype="x-xib">
@@ -2365,7 +2365,7 @@
       </trans-unit>
       <trans-unit id="BeZ-YQ-Uhy.normalTitle" resname="BeZ-YQ-Uhy.normalTitle" restype="string" datatype="x-xib">
         <source>Video / Chat</source>
-        <target>Video / Chat</target>
+        <target state="accepted">Video / Charla</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Video / Chat&quot;; ObjectID = &quot;BeZ-YQ-Uhy&quot;;</note>
       </trans-unit>
       <trans-unit id="J3b-KK-CVR.normalTitle" resname="J3b-KK-CVR.normalTitle" restype="string" datatype="x-xib">
@@ -2414,7 +2414,7 @@
       </trans-unit>
       <trans-unit id="hhB-K6-o5i.normalTitle" resname="hhB-K6-o5i.normalTitle" restype="string" datatype="x-xib">
         <source>Video / Chat</source>
-        <target>Video / Chat</target>
+        <target state="accepted">Video / Charla</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Video / Chat&quot;; ObjectID = &quot;hhB-K6-o5i&quot;;</note>
       </trans-unit>
       <trans-unit id="xkQ-gZ-wdP.normalTitle" resname="xkQ-gZ-wdP.normalTitle" restype="string" datatype="x-xib">
@@ -6744,7 +6744,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="%d more actions..." resname="%d more actions..." restype="string" datatype="x-objective-c">
         <source>%d more actions...</source>
-        <target>%d más acciones...</target>
+        <target state="accepted">%d acciones más...</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%d participants" resname="%d participants" restype="string" datatype="x-objective-c">
@@ -6819,7 +6819,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="%ld more actions…" resname="%ld more actions…" restype="string" datatype="x-objective-c">
         <source>%ld more actions…</source>
-        <target>%ld más acciones...</target>
+        <target state="accepted">%ld acciones más...</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%ld year%@" resname="%ld year%@" restype="string" datatype="x-objective-c">
@@ -8137,7 +8137,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Do you want to remove this action from your &quot;To Do&quot; list?" resname="Do you want to remove this action from your &amp;quot;To Do&amp;quot; list?" restype="string" datatype="x-objective-c">
         <source>Do you want to remove this action from your &quot;To Do&quot; list?</source>
-        <target>¿Quieres quitar esta acción de tu lista de &quot;Qué hacer&quot;?</target>
+        <target state="accepted">¿Quieres quitar esta acción de tu lista de &quot;Por hacer&quot;?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Do you want to replace your current profile photo?" resname="Do you want to replace your current profile photo?" restype="string" datatype="x-objective-c">
@@ -10935,7 +10935,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="See %d more actions..." resname="See %d more actions..." restype="string" datatype="x-objective-c">
         <source>See %d more actions...</source>
-        <target>Ver %d más acciones...</target>
+        <target state="accepted">Ver %d acciones más ...</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="See %d more answers" resname="See %d more answers" restype="string" datatype="x-objective-c">
@@ -10950,7 +10950,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="See %ld more actions" resname="See %ld more actions" restype="string" datatype="x-objective-c">
         <source>See %ld more actions</source>
-        <target>Ver %ld más acciones</target>
+        <target state="accepted">Ver %ld acciones más</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="See 1 more answer" resname="See 1 more answer" restype="string" datatype="x-objective-c">
@@ -11437,7 +11437,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Talk to Docs" resname="Talk to Docs" restype="string" datatype="x-objective-c">
         <source>Talk to Docs</source>
-        <target>Habla con Docs</target>
+        <target state="accepted">Conversar</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Talk to a doctor now" resname="Talk to a doctor now" restype="string" datatype="x-objective-c">
@@ -11808,7 +11808,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="To-Do" resname="To-Do" restype="string" datatype="x-objective-c">
         <source>To-Do</source>
-        <target>Qué hacer</target>
+        <target state="accepted">Por hacer</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Today" resname="Today" restype="string" datatype="x-objective-c">
@@ -13273,7 +13273,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="there" resname="there" restype="string" datatype="x-objective-c">
         <source>there</source>
-        <target>allí</target>
+        <target state="accepted">¿qué tal?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="times" resname="times" restype="string" datatype="x-objective-c">
@@ -13814,7 +13814,7 @@ Nuestros médicos pueden ayudar</target>
       </trans-unit>
       <trans-unit id="wkf-ek-Zet.normalTitle" resname="wkf-ek-Zet.normalTitle" restype="string" datatype="x-xib">
         <source>Talk to Docs</source>
-        <target>Habla con Docs</target>
+        <target state="accepted">Conversar</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Talk to Docs&quot;; ObjectID = &quot;wkf-ek-Zet&quot;;</note>
       </trans-unit>
       <trans-unit id="xcA-3W-U0J.normalTitle" resname="xcA-3W-U0J.normalTitle" restype="string" datatype="x-xib">
@@ -21492,7 +21492,7 @@ us in the App Store :&#41;</source>
       </trans-unit>
       <trans-unit id="hon-2k-uh7.normalTitle" resname="hon-2k-uh7.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Send note&quot;; ObjectID = &quot;hon-2k-uh7&quot;;</note>
       </trans-unit>
       <trans-unit id="zEZ-Fm-5PZ.text" resname="zEZ-Fm-5PZ.text" restype="string" datatype="x-xib">
@@ -30061,7 +30061,7 @@ subscription</source>
       </trans-unit>
       <trans-unit id="Facebook" resname="Facebook" restype="string" datatype="x-objective-c">
         <source>Facebook</source>
-        <target>免费</target>
+        <target state="accepted">脸书</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Failed to access remote files" resname="Failed to access remote files" restype="string" datatype="x-objective-c">
@@ -36623,7 +36623,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Send note&quot;; ObjectID = &quot;u1p-9T-OIc&quot;;</note>
       </trans-unit>
     </body>
@@ -36692,7 +36692,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Send note&quot;; ObjectID = &quot;u1p-9T-OIc&quot;;</note>
       </trans-unit>
     </body>
@@ -36751,7 +36751,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Send note&quot;; ObjectID = &quot;u1p-9T-OIc&quot;;</note>
       </trans-unit>
     </body>
@@ -41409,7 +41409,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
       </trans-unit>
       <trans-unit id="sQO-Yv-5Ru.normalTitle" resname="sQO-Yv-5Ru.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Send note&quot;; ObjectID = &quot;sQO-Yv-5Ru&quot;;</note>
       </trans-unit>
       <trans-unit id="t19-M2-NXs.text" resname="t19-M2-NXs.text" restype="string" datatype="x-xib">
