@@ -14585,7 +14585,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="jCF-9K-b5g.text" resname="jCF-9K-b5g.text" restype="string" datatype="x-xib">
         <source>Create an account</source>
-        <target>Crear una cuenta</target>
+        <target state="accepted">Crea tu cuenta</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Create an account&quot;; ObjectID = &quot;jCF-9K-b5g&quot;;</note>
       </trans-unit>
       <trans-unit id="juj-vp-Dz2.text" resname="juj-vp-Dz2.text" restype="string" datatype="x-xib">
@@ -14634,7 +14634,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="jCF-9K-b5g.text" resname="jCF-9K-b5g.text" restype="string" datatype="x-xib">
         <source>Create an account</source>
-        <target>Crear una cuenta</target>
+        <target state="accepted">Crea tu cuenta</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Create an account&quot;; ObjectID = &quot;jCF-9K-b5g&quot;;</note>
       </trans-unit>
       <trans-unit id="juj-vp-Dz2.text" resname="juj-vp-Dz2.text" restype="string" datatype="x-xib">
@@ -15777,7 +15777,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="SiQ-iv-tHm.normalTitle" resname="SiQ-iv-tHm.normalTitle" restype="string" datatype="x-xib">
         <source>Create account</source>
-        <target>Crear una cuenta</target>
+        <target state="accepted">Crea tu cuenta</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Create account&quot;; ObjectID = &quot;SiQ-iv-tHm&quot;;</note>
       </trans-unit>
       <trans-unit id="V9h-Rt-Wqg.normalTitle" resname="V9h-Rt-Wqg.normalTitle" restype="string" datatype="x-xib">
@@ -15866,7 +15866,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="ygN-a1-qOr.normalTitle" resname="ygN-a1-qOr.normalTitle" restype="string" datatype="x-xib">
         <source>Create account</source>
-        <target>Crear una cuenta</target>
+        <target state="accepted">Crea tu cuenta</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Create account&quot;; ObjectID = &quot;ygN-a1-qOr&quot;;</note>
       </trans-unit>
     </body>
@@ -15920,7 +15920,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="ygN-a1-qOr.normalTitle" resname="ygN-a1-qOr.normalTitle" restype="string" datatype="x-xib">
         <source>Create account</source>
-        <target>Crear una cuenta</target>
+        <target state="accepted">Crea tu cuenta</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Create account&quot;; ObjectID = &quot;ygN-a1-qOr&quot;;</note>
       </trans-unit>
     </body>
