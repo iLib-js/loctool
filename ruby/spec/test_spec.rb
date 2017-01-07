@@ -398,5 +398,25 @@ describe 'HamlLocalizer' do
       local_name_to_output['en-GB'].include?('TM').should be_false #should have translated content with the <sup..</sup> tags
     end
 
+    it 'handles funny characters at the edges' do
+      #file _expert_vip.html.haml
+      template = '
+- content_for :guest_content do
+  #expertsShowPage.logout
+    .columns
+      .right_column
+        .expert_tabs_region{:class=>"#{params[:tab]}"}
+          .expert_tabs_wrap
+            - if !params[:tab].present? || params[:tab] == \'accolades\'
+              .accolades-column-item.hidden
+                .expert_tabs_inner_region{:itemscope=>"", :itemtype=>"http://schema.org/CreativeWork"}
+                #doc_recommend_button.accolades_wrap{:style=>"padding: 10px"}
+                  %h2.accoladeHeader
+                    Doctor Recommendations 
+'
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
+      local_name_to_output['en-GB'].include?('Doctor Recommendations').should be_false
+    end
+
   end
 end
