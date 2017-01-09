@@ -57,16 +57,18 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		</java>
 	</target>
 
-	<target name="debug.loctool" description="Debug the whole loc tool">
+	<macrodef name="debug.loctool.base" description="Debug the whole loc tool">
+		<attribute name="dir"/>
 		<sequential>
-			<exec osfamily="unix" executable="${node}/bin/node" dir="../ht-iosapp" failifexecutionfails="true" failonerror="true">
+			<echo>Dir is @{dir}</echo>
+			<exec osfamily="unix" executable="${node}/bin/node" dir="@{dir}" failifexecutionfails="true" failonerror="true">
 				<env key="PATH" path="${node}/bin:${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
 				<arg line="--inspect"/>
 				<arg line="--debug-brk"/>
 				<arg line="../loctool/loctool.js"/>
 			</exec>
-			<exec osfamily="windows" executable="${node}/bin/node.exe" dir="../ht-iosapp" failifexecutionfails="true"  failonerror="true">
+			<exec osfamily="windows" executable="${node}/bin/node.exe" dir="@{dir}" failifexecutionfails="true"  failonerror="true">
 				<env key="PATH" path="${node}/bin;${env.PATH}"/>
 				<env key="LOG4JS_CONFIG" value="${build.test}/log4js.json"/>
 				<arg line="--inspect"/>
@@ -74,6 +76,10 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 				<arg line="../loctool/loctool.js"/>
 			</exec>
 		</sequential>
+	</macrodef>
+	
+	<target name="debug.loctool">
+		<debug.loctool.base dir="${user.dir}" />
 	</target>
 
 	<macrodef name="run">

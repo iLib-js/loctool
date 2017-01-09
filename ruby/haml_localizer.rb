@@ -334,6 +334,10 @@ def strip_whitespace_punct(values)
   values.map{|v| v.strip.gsub(/^[[:punct:]]/,'').gsub(/[[:punct:]]$/, '').strip }
 end
 
+def strip_whitespace(values)
+  values.map{|v| v.strip.gsub(/^[[:blank:]]/, '').gsub(/[[:blank:]]$/, '')}
+end
+
 # clean the source string so that whitespace and html changes do not matter
 # and two strings that have whitespace or html differences but the same
 # text get hashed to the same thing
@@ -391,6 +395,7 @@ def process_file_content(template, path_name, locale_names, all_locale_mappings)
   values = reject_special_words(reject_paran(break_aound_code_values(values)))
   #puts "values before=#{values}"
   #values = strip_whitespace_punct(values)
+  values = strip_whitespace(values)
 
   #puts "values=#{values}"
   locale_names.each do |locale_name|

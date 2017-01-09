@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="src/com/healthtap/userhtexpress/util/HTConstants.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="r984391622" restype="string" datatype="java">
+        <source>Mark as completed</source>
+        <target state="translated">Marcar como completado</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r111630367" restype="string" datatype="java">
+        <source>Turn on reminders</source>
+        <target state="translated">Activar recordatorios</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/SendKudosFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="7" resname="r948339101" restype="string" datatype="java">
+        <source>You&apos;re awesome</source>
+        <target state="translated">Eres asombroso</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/GeneralListFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="8" resname="r110253465" restype="string" datatype="java">
+        <source>Upcoming Appointments</source>
+        <target state="translated">Citas Próximas</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/ThankLayerDialogBox.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="16" resname="r635494459" restype="string" datatype="java">
+        <source>{name} appreciates your gratitude :&#41;</source>
+        <target state="translated">{name} aprecia tu gratitud :&#41;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/SearchFilterDialog.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="17" resname="r541597638" restype="string" datatype="java">
+        <source>Apps</source>
+        <target state="translated">Aplicaciones</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/ReportContentDialogBox.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="18" resname="r382213733" restype="string" datatype="java">
+        <source>We appreciate you bringing this to our attention.</source>
+        <target state="translated">Apreciamos que nos traigas esto para nuestra consideración.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="24" resname="symptom_triage_condition_alert" restype="string" datatype="x-android-resource">
+        <source>Would you like to start over with new symptoms or edit your current symptoms?</source>
+        <target state="translated">¿Te gustaría volver a empezar con nuevos síntomas, o editar tus síntomas actuales?</target>
+      </trans-unit>
+      <trans-unit id="25" resname="symptom_triage_condition_alert_positive" restype="string" datatype="x-android-resource">
+        <source>Leave</source>
+        <target state="translated">Salir</target>
+      </trans-unit>
+      <trans-unit id="26" resname="symptom_triage_condition_alert_negative" restype="string" datatype="x-android-resource">
+        <source>Edit Symptoms</source>
+        <target state="translated">Editar Síntomas</target>
+      </trans-unit>
+      <trans-unit id="27" resname="symptom_triage_condition_alert_title" restype="string" datatype="x-android-resource">
+        <source>Start over?</source>
+        <target state="translated">¿Volver a empezar?</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
