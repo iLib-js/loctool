@@ -1362,7 +1362,7 @@
       </trans-unit>
       <trans-unit id="246" resname="Create an account" restype="string" datatype="x-objective-c">
         <source>Create an account</source>
-        <target>Crear una cuenta</target>
+        <target state="accepted">Crea tu cuenta</target>
       </trans-unit>
       <trans-unit id="247" resname="Your account is deactivated. To re-activate, send a request to " restype="string" datatype="x-objective-c">
         <source>Your account is deactivated. To re-activate, send a request to</source>

@@ -7228,7 +7228,7 @@ available in %@</source>
       </trans-unit>
       <trans-unit id="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately." resname="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately." restype="string" datatype="x-objective-c">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately.</source>
-        <target>HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立刻打电话给%@或当地应急服务人员。如果您认为您需要紧急治疗，请立刻打电话给%@或当地应急服务人员。</target>
+        <target state="accepted">HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立刻打电话给%@或当地应急服务人员。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Any primary care doctor" resname="Any primary care doctor" restype="string" datatype="x-objective-c">
