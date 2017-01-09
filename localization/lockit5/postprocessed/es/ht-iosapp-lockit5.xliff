@@ -95,7 +95,7 @@
     <body>
       <trans-unit id="44" resname="%@ &#40;%ld yrs&#41;" restype="string" datatype="x-objective-c">
         <source>%@ &#40;%ld yrs&#41;</source>
-        <target>%@ &#40;% años de edad&#41;</target>
+        <target>%@ &#40;%ld años de edad&#41;</target>
       </trans-unit>
     </body>
   </file>
