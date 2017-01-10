@@ -3858,9 +3858,9 @@
   </file>
   <file original="app/views/static_pages/home/_top_cta.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="917" resname="r807072446" restype="string" datatype="ruby">
-        <source>Ask &#35;{static_doctors_count} doctors now</source>
-        <target>Pregúntale a &#35;{static_doctors_count} doctores ahora</target>
+      <trans-unit id="917" resname="r406606092" restype="string" datatype="ruby">
+        <source>Ask %{count} doctors now</source>
+        <target>Pregúntale a %{count} doctores ahora</target>
       </trans-unit>
     </body>
   </file>
