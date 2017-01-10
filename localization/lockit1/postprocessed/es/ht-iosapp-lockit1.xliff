@@ -11402,7 +11402,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Take Action" resname="Take Action" restype="string" datatype="x-objective-c">
         <source>Take Action</source>
-        <target>Tomar acción</target>
+        <target>Toma acción</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Take a photo" resname="Take a photo" restype="string" datatype="x-objective-c">
@@ -13819,7 +13819,7 @@ Nuestros médicos pueden ayudar</target>
       </trans-unit>
       <trans-unit id="xcA-3W-U0J.normalTitle" resname="xcA-3W-U0J.normalTitle" restype="string" datatype="x-xib">
         <source>Take Action</source>
-        <target>Tomar acción</target>
+        <target>Toma acción</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Take Action&quot;; ObjectID = &quot;xcA-3W-U0J&quot;;</note>
       </trans-unit>
       <trans-unit id="y6w-UV-fqB.text" resname="y6w-UV-fqB.text" restype="string" datatype="x-xib">
@@ -15787,7 +15787,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="WiG-d1-HHE.text" resname="WiG-d1-HHE.text" restype="string" datatype="x-xib">
         <source>Take Action</source>
-        <target>Tomar acción</target>
+        <target>Toma acción</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Take Action&quot;; ObjectID = &quot;WiG-d1-HHE&quot;;</note>
       </trans-unit>
       <trans-unit id="eqG-1Z-Cwg.text" resname="eqG-1Z-Cwg.text" restype="string" datatype="x-xib">
@@ -15841,7 +15841,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Rt1-XZ-7DX.text" resname="Rt1-XZ-7DX.text" restype="string" datatype="x-xib">
         <source>Take Action</source>
-        <target>Tomar acción</target>
+        <target>Toma acción</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Take Action&quot;; ObjectID = &quot;Rt1-XZ-7DX&quot;;</note>
       </trans-unit>
       <trans-unit id="W2U-6J-a3Q.normalTitle" resname="W2U-6J-a3Q.normalTitle" restype="string" datatype="x-xib">
@@ -15895,7 +15895,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Rt1-XZ-7DX.text" resname="Rt1-XZ-7DX.text" restype="string" datatype="x-xib">
         <source>Take Action</source>
-        <target>Tomar acción</target>
+        <target>Toma acción</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Take Action&quot;; ObjectID = &quot;Rt1-XZ-7DX&quot;;</note>
       </trans-unit>
       <trans-unit id="W2U-6J-a3Q.normalTitle" resname="W2U-6J-a3Q.normalTitle" restype="string" datatype="x-xib">
