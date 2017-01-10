@@ -612,7 +612,7 @@
     <body>
       <trans-unit id="FJF-ED-bct.text" resname="FJF-ED-bct.text" restype="string" datatype="x-xib">
         <source>Our doctors can help you create a personalized checklist</source>
-        <target>Nuestros docotres pueden ayudarte a crear un listado personalizado</target>
+        <target state="accepted">Nuestros doctores te ayudan a crear una lista personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors can help you create a personalized checklist&quot;; ObjectID = &quot;FJF-ED-bct&quot;;</note>
       </trans-unit>
       <trans-unit id="g0A-Q4-q1N.normalTitle" resname="g0A-Q4-q1N.normalTitle" restype="string" datatype="x-xib">
@@ -16155,7 +16155,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="XSi-c2-GUw.text" resname="XSi-c2-GUw.text" restype="string" datatype="x-xib">
         <source>Our doctors can help you create a personalized checklist</source>
-        <target>Nuestros docotres pueden ayudarte a crear un listado personalizado</target>
+        <target state="accepted">Nuestros doctores te ayudan a crear una lista personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors can help you create a personalized checklist&quot;; ObjectID = &quot;XSi-c2-GUw&quot;;</note>
       </trans-unit>
       <trans-unit id="ZEl-XQ-8Oc.placeholder" resname="ZEl-XQ-8Oc.placeholder" restype="string" datatype="x-xib">
@@ -16455,7 +16455,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="nBH-ps-JOk.text" resname="nBH-ps-JOk.text" restype="string" datatype="x-xib">
         <source>Our doctors can help you create a personalized checklist</source>
-        <target>Nuestros docotres pueden ayudarte a crear un listado personalizado</target>
+        <target state="accepted">Nuestros doctores te ayudan a crear una lista personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors can help you create a personalized checklist&quot;; ObjectID = &quot;nBH-ps-JOk&quot;;</note>
       </trans-unit>
       <trans-unit id="o5D-Xc-750.text" resname="o5D-Xc-750.text" restype="string" datatype="x-xib">
@@ -16632,7 +16632,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="ri8-nh-XRf.text" resname="ri8-nh-XRf.text" restype="string" datatype="x-xib">
         <source>Our doctors can help you create a personalized checklist</source>
-        <target>Nuestros docotres pueden ayudarte a crear un listado personalizado</target>
+        <target state="accepted">Nuestros doctores te ayudan a crear una lista personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors can help you create a personalized checklist&quot;; ObjectID = &quot;ri8-nh-XRf&quot;;</note>
       </trans-unit>
       <trans-unit id="vzo-gV-dHy.text" resname="vzo-gV-dHy.text" restype="string" datatype="x-xib">
@@ -20957,7 +20957,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="cCy-Oq-TMf.text" resname="cCy-Oq-TMf.text" restype="string" datatype="x-xib">
         <source>Our doctors can help you create a personalized checklist</source>
-        <target>Nuestros docotres pueden ayudarte a crear un listado personalizado</target>
+        <target state="accepted">Nuestros doctores te ayudan a crear una lista personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors can help you create a personalized checklist&quot;; ObjectID = &quot;cCy-Oq-TMf&quot;;</note>
       </trans-unit>
       <trans-unit id="dyi-6Y-cfW.text" resname="dyi-6Y-cfW.text" restype="string" datatype="x-xib">
