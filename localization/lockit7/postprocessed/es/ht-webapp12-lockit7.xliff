@@ -6503,7 +6503,7 @@
     <body>
       <trans-unit id="1351" resname="Do your living grandparents, parents or siblings have any major medical conditions {span_tag_start}&#40;life-threatening or otherwise?&#41;{span_tag_end}" restype="string" datatype="javascript">
         <source>Do your living grandparents, parents or siblings have any major medical conditions {span_tag_start}&#40;life-threatening or otherwise?&#41;{span_tag_end}</source>
-        <target>¿Tus abuelos, padres o hermanos vivos tienen alguna condición médica mayor? {span_tag_start}&#40;life-threatening or otherwise?&#41;{span_tag_end}</target>
+        <target state="accepted">¿Tienen tus abuelos, padres o hermanos vivos alguna condición médica grave? {span_tag_start}&#40;sea de riesgo vital o no&#41;{span_tag_end}</target>
       </trans-unit>
       <trans-unit id="1352" resname="{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult</source>
