@@ -7772,7 +7772,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Complete your profile" resname="Complete your profile" restype="string" datatype="x-objective-c">
         <source>Complete your profile</source>
-        <target>Completar tu perfil</target>
+        <target state="accepted">Completa tu perfil</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Complications" resname="Complications" restype="string" datatype="x-objective-c">
@@ -15065,7 +15065,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="rsq-g2-Fxs.text" resname="rsq-g2-Fxs.text" restype="string" datatype="x-xib">
         <source>Complete your profile</source>
-        <target>Completar tu perfil</target>
+        <target state="accepted">Completa tu perfil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Complete your profile&quot;; ObjectID = &quot;rsq-g2-Fxs&quot;;</note>
       </trans-unit>
       <trans-unit id="vos-tf-069.normalTitle" resname="vos-tf-069.normalTitle" restype="string" datatype="x-xib">
@@ -15104,7 +15104,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="zuT-73-HPf.text" resname="zuT-73-HPf.text" restype="string" datatype="x-xib">
         <source>Complete your profile</source>
-        <target>Completar tu perfil</target>
+        <target state="accepted">Completa tu perfil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Complete your profile&quot;; ObjectID = &quot;zuT-73-HPf&quot;;</note>
       </trans-unit>
     </body>
@@ -15138,7 +15138,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="zuT-73-HPf.text" resname="zuT-73-HPf.text" restype="string" datatype="x-xib">
         <source>Complete your profile</source>
-        <target>Completar tu perfil</target>
+        <target state="accepted">Completa tu perfil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Complete your profile&quot;; ObjectID = &quot;zuT-73-HPf&quot;;</note>
       </trans-unit>
     </body>
