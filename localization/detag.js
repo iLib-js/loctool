@@ -22,7 +22,7 @@ var unit, units = xliff.getTranslationUnits();
 
 console.log("Processing translation units ...");
 
-var endingTag = /<%.*%>$/;
+var endingTag = /<%.*?%>\s*$/;
 
 // go through all the new strings and re-use old translations from different files
 for (var i = 0; i < units.length; i++) {
