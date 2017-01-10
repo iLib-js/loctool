@@ -32,7 +32,7 @@ for (var i = 0; i < units.length; i++) {
 		if (endingTag.test(unit.source) && endingTag.test(unit.target)) {
 			unit.source = unit.source.replace(endingTag, "");
 			unit.target = unit.target.replace(endingTag, "");
-			unit.reskey = unit.reskey.replace(endingTag, "");
+			unit.key = unit.key.replace(endingTag, "");
 		}
 	}
 }
