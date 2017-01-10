@@ -34,6 +34,15 @@ for (var i = 0; i < units.length; i++) {
 			unit.target = unit.target.replace(endingTag, "");
 			unit.key = unit.source;
 		}
+		
+ 		if (unit.source) unit.source = unit.source.trim();
+ 		if (unit.target) unit.target = unit.target.trim();
+ 	}
+ 	
+ 	if (!unit.source || !unit.target) {
+ 		console.log("Skipping unit with no source or target... " + unit.key);
+ 		units.splice(i, 1);
+ 		i--; // go back and check the i'th unit again now that it is a different one
 	}
 }
 
