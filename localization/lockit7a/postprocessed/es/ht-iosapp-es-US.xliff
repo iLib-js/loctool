@@ -226,7 +226,7 @@
     <body>
       <trans-unit id="9" resname="Create a {start}free, private{end} account or login" restype="string" datatype="x-objective-c">
         <source>Create a {start}free, private{end} account or login</source>
-        <target state="translated">Crear una cuenta {start}privada y gratuita{end} o iniciar sesión</target>
+        <target state="accepted">Crea una cuenta {start}privada y gratuita{end} o inicia sesión</target>
       </trans-unit>
       <trans-unit id="10" resname="You agree to our {start1}Terms{end1} and {start2}Privacy Policy{end2}" restype="string" datatype="x-objective-c">
         <source>You agree to our {start1}Terms{end1} and {start2}Privacy Policy{end2}</source>
