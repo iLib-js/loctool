@@ -7662,7 +7662,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Check out these related specialists" resname="Check out these related specialists" restype="string" datatype="x-objective-c">
         <source>Check out these related specialists</source>
-        <target>Da un vistazo a estos especialistas relacionados</target>
+        <target state="accepted">Ve a estos especialistas relacionados</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Check the spelling or enter another name, specialty, or topic." resname="Check the spelling or enter another name, specialty, or topic." restype="string" datatype="x-objective-c">
@@ -21095,7 +21095,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="N4w-Mu-jPe.text" resname="N4w-Mu-jPe.text" restype="string" datatype="x-xib">
         <source>Check out these related specialists</source>
-        <target>Da un vistazo a estos especialistas relacionados</target>
+        <target state="accepted">Ve a estos especialistas relacionados</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Check out these related specialists&quot;; ObjectID = &quot;N4w-Mu-jPe&quot;;</note>
       </trans-unit>
       <trans-unit id="Ueq-Rg-ZWX.text" resname="Ueq-Rg-ZWX.text" restype="string" datatype="x-xib">
