@@ -10357,7 +10357,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Please provide a contact number?" resname="Please provide a contact number?" restype="string" datatype="x-objective-c">
         <source>Please provide a contact number?</source>
-        <target>Por favor, proporciona un número de contacto</target>
+        <target state="accepted">Proporcione un número de contacto</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Please provide a password with 6+ characters." resname="Please provide a password with 6+ characters." restype="string" datatype="x-objective-c">
