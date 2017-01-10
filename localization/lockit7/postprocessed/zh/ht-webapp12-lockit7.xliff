@@ -1797,7 +1797,7 @@
     <body>
       <trans-unit id="364" resname="r527860771" restype="string" datatype="ruby">
         <source>Patients get instant 24/7 access to world’s largest knowledge-base of doctor insights from your doctors and our network of %{doctors_count} top doctors</source>
-        <target>患者可以即时24/7全天候访问来自您的医生和我们的{％{doctors_count}名顶级医生网络构成的世界上最大的医生见解知识库</target>
+        <target>患者可以即时24/7全天候访问来自您的医生和我们的％{doctors_count}名顶级医生网络构成的世界上最大的医生见解知识库</target>
         <note annotates="source">TODO pluralize</note>
       </trans-unit>
     </body>
