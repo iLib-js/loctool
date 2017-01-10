@@ -622,7 +622,7 @@
       </trans-unit>
       <trans-unit id="y3y-JJ-2Wp.text" resname="y3y-JJ-2Wp.text" restype="string" datatype="x-xib">
         <source>Have a unique goal in mind?</source>
-        <target>¿Tienes una meta única en mente?</target>
+        <target state="accepted">¿Meta única en mente?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a unique goal in mind?&quot;; ObjectID = &quot;y3y-JJ-2Wp&quot;;</note>
       </trans-unit>
     </body>
@@ -16220,7 +16220,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="pq3-hc-t6G.text" resname="pq3-hc-t6G.text" restype="string" datatype="x-xib">
         <source>Have a unique goal in mind?</source>
-        <target>¿Tienes una meta única en mente?</target>
+        <target state="accepted">¿Meta única en mente?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a unique goal in mind?&quot;; ObjectID = &quot;pq3-hc-t6G&quot;;</note>
       </trans-unit>
       <trans-unit id="q8X-Cu-Q5y.normalTitle" resname="q8X-Cu-Q5y.normalTitle" restype="string" datatype="x-xib">
@@ -16365,7 +16365,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="C1O-7W-TUM.text" resname="C1O-7W-TUM.text" restype="string" datatype="x-xib">
         <source>Have a unique goal in mind?</source>
-        <target>¿Tienes una meta única en mente?</target>
+        <target state="accepted">¿Meta única en mente?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a unique goal in mind?&quot;; ObjectID = &quot;C1O-7W-TUM&quot;;</note>
       </trans-unit>
       <trans-unit id="DVU-TO-s5Z.normalTitle" resname="DVU-TO-s5Z.normalTitle" restype="string" datatype="x-xib">
@@ -16617,7 +16617,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="jJB-E0-rXC.text" resname="jJB-E0-rXC.text" restype="string" datatype="x-xib">
         <source>Have a unique goal in mind?</source>
-        <target>¿Tienes una meta única en mente?</target>
+        <target state="accepted">¿Meta única en mente?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a unique goal in mind?&quot;; ObjectID = &quot;jJB-E0-rXC&quot;;</note>
       </trans-unit>
       <trans-unit id="ljU-zZ-ORc.text" resname="ljU-zZ-ORc.text" restype="string" datatype="x-xib">
@@ -20947,7 +20947,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="Vq0-vy-7y3.text" resname="Vq0-vy-7y3.text" restype="string" datatype="x-xib">
         <source>Have a unique goal in mind?</source>
-        <target>¿Tienes una meta única en mente?</target>
+        <target state="accepted">¿Meta única en mente?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a unique goal in mind?&quot;; ObjectID = &quot;Vq0-vy-7y3&quot;;</note>
       </trans-unit>
       <trans-unit id="bPX-Iu-fF4.normalTitle" resname="bPX-Iu-fF4.normalTitle" restype="string" datatype="x-xib">
