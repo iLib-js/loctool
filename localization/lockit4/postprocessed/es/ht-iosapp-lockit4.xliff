@@ -3950,7 +3950,7 @@
       </trans-unit>
       <trans-unit id="717" resname="iqT-MJ-Oof.text" restype="string" datatype="x-xib">
         <source>No worries! Let us know your email and we\&apos;ll send you a link to reset it</source>
-        <target>¡No te preocupes! Haznos saber tu correo electrónico y te enviaremos un enlace para restablecerla</target>
+        <target state="accepted">¡No pasa nada! Dinos tu correo y te enviaremos un enlace para restablecerla</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;No worries! Let us know your email and we&apos;ll send you a link to reset it&quot;; ObjectID = &quot;iqT-MJ-Oof&quot;;</note>
       </trans-unit>
     </body>
