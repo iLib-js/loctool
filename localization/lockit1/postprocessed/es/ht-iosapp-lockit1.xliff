@@ -13431,7 +13431,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
     <body>
       <trans-unit id="Zph-lb-dAC.text" resname="Zph-lb-dAC.text" restype="string" datatype="x-xib">
         <source>Doctors are online ready to help</source>
-        <target>Los doctores están en línea y listos para ayudar</target>
+        <target state="accepted">Doctores en línea y listos para ayudar</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Doctors are online ready to help&quot;; ObjectID = &quot;Zph-lb-dAC&quot;;</note>
       </trans-unit>
       <trans-unit id="b8g-lf-86y.text" resname="b8g-lf-86y.text" restype="string" datatype="x-xib">
@@ -20580,7 +20580,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="fwc-U4-iHd.text" resname="fwc-U4-iHd.text" restype="string" datatype="x-xib">
         <source>Doctors are online ready to help</source>
-        <target>Los doctores están en línea y listos para ayudar</target>
+        <target state="accepted">Doctores en línea y listos para ayudar</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Doctors are online ready to help&quot;; ObjectID = &quot;fwc-U4-iHd&quot;;</note>
       </trans-unit>
     </body>
