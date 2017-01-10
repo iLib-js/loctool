@@ -4451,7 +4451,7 @@
     <body>
       <trans-unit id="leF-GQ-mLd.text" resname="leF-GQ-mLd.text" restype="string" datatype="x-xib">
         <source>Conditions that caused a close relative to pass away before the age of 60:</source>
-        <target>Condiciones que causaron que un familiar cercano falleciera antes de los 60 años:</target>
+        <target state="accepted">Condiciones que causaron muerte de un familiar cercano antes de los 60:</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Conditions that caused a close relative to pass away before the age of 60:&quot;; ObjectID = &quot;leF-GQ-mLd&quot;;</note>
       </trans-unit>
     </body>
@@ -7807,7 +7807,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Conditions that caused a close relative to pass away before the age of 60:" resname="Conditions that caused a close relative to pass away before the age of 60:" restype="string" datatype="x-objective-c">
         <source>Conditions that caused a close relative to pass away before the age of 60:</source>
-        <target>Condiciones que causaron que un familiar cercano falleciera antes de los 60 años:</target>
+        <target state="accepted">Condiciones que causaron muerte de un familiar cercano antes de los 60:</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Conditions treated by " resname="Conditions treated by " restype="string" datatype="x-objective-c">
