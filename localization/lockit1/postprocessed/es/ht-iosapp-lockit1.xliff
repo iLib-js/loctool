@@ -9550,7 +9550,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Learn more" resname="Learn more" restype="string" datatype="x-objective-c">
         <source>Learn more</source>
-        <target>Aprender más</target>
+        <target>Aprende más</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Leave" resname="Leave" restype="string" datatype="x-objective-c">
@@ -15792,7 +15792,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="eqG-1Z-Cwg.text" resname="eqG-1Z-Cwg.text" restype="string" datatype="x-xib">
         <source>Learn More</source>
-        <target>Aprender Más</target>
+        <target>Aprende Más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Learn More&quot;; ObjectID = &quot;eqG-1Z-Cwg&quot;;</note>
       </trans-unit>
       <trans-unit id="hgQ-MO-UmP.text" resname="hgQ-MO-UmP.text" restype="string" datatype="x-xib">
@@ -15821,7 +15821,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
     <body>
       <trans-unit id="5QB-FQ-5W3.text" resname="5QB-FQ-5W3.text" restype="string" datatype="x-xib">
         <source>Learn More</source>
-        <target>Aprender Más</target>
+        <target>Aprende Más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Learn More&quot;; ObjectID = &quot;5QB-FQ-5W3&quot;;</note>
       </trans-unit>
       <trans-unit id="6dm-aD-7F0.text" resname="6dm-aD-7F0.text" restype="string" datatype="x-xib">
@@ -15875,7 +15875,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
     <body>
       <trans-unit id="5QB-FQ-5W3.text" resname="5QB-FQ-5W3.text" restype="string" datatype="x-xib">
         <source>Learn More</source>
-        <target>Aprender Más</target>
+        <target>Aprende Más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Learn More&quot;; ObjectID = &quot;5QB-FQ-5W3&quot;;</note>
       </trans-unit>
       <trans-unit id="6dm-aD-7F0.text" resname="6dm-aD-7F0.text" restype="string" datatype="x-xib">
