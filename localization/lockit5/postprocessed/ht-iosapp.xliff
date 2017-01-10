@@ -95,7 +95,7 @@
     <body>
       <trans-unit id="44" resname="%@ &#40;%ld yrs&#41;" restype="string" datatype="x-objective-c">
         <source>%@ &#40;%ld yrs&#41;</source>
-        <target>%@ &#40;% años de edad&#41;</target>
+        <target>%@ &#40;%ld años de edad&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -954,7 +954,7 @@
     <body>
       <trans-unit id="10" resname="Your next charge will be %@ on %@" restype="string" datatype="x-objective-c">
         <source>Your next charge will be %@ on %@</source>
-        <target>您的下一次收费将％@ 在％@</target>
+        <target>您的下一次收费将%@ 在%@</target>
       </trans-unit>
     </body>
   </file>
@@ -1008,11 +1008,11 @@
       </trans-unit>
       <trans-unit id="27" resname="For medical emergencies, call %@ &#40;or your local emergency services&#41; or go to the nearest %@." restype="string" datatype="x-objective-c">
         <source>For medical emergencies, call %@ &#40;or your local emergency services&#41; or go to the nearest %@.</source>
-        <target>对于医疗紧急情况，请致电％@（或您当地的紧急服务）或前往最近的％@。</target>
+        <target>对于医疗紧急情况，请致电%@（或您当地的紧急服务）或前往最近的%@。</target>
       </trans-unit>
       <trans-unit id="28" resname="Not in %@? %@" restype="string" datatype="x-objective-c">
         <source>Not in %@? %@</source>
-        <target>不在“％@”中？%@</target>
+        <target>不在“%@”中？%@</target>
       </trans-unit>
       <trans-unit id="29" resname="When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:" restype="string" datatype="x-objective-c">
         <source>When not to use Virtual Consults\nAny medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:</source>
@@ -1077,7 +1077,7 @@
     <body>
       <trans-unit id="73" resname="Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?" restype="string" datatype="x-objective-c">
         <source>Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?</source>
-        <target>感谢％@，我们可以免费为您联系另一位医生。\n\n您希望进行其他咨询吗？</target>
+        <target>感谢%@，我们可以免费为您联系另一位医生。\n\n您希望进行其他咨询吗？</target>
       </trans-unit>
       <trans-unit id="74" resname="As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed." restype="string" datatype="x-objective-c">
         <source>As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed.</source>
@@ -1225,7 +1225,7 @@
     <body>
       <trans-unit id="102" resname="It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients." restype="string" datatype="x-objective-c">
         <source>It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients.</source>
-        <target>您似乎在％@附近。请确认您确实在％@。如果您不在其拥有执业执照所在的州，医生不能合法地为您提供医疗建议或开处方。</target>
+        <target>您似乎在%@附近。请确认您确实在%@。如果您不在其拥有执业执照所在的州，医生不能合法地为您提供医疗建议或开处方。</target>
       </trans-unit>
     </body>
   </file>

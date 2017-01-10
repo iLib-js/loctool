@@ -478,7 +478,7 @@
       </trans-unit>
       <trans-unit id="97" resname="%@, %ld years in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld years in practice</source>
-        <target>%@, %ld años de ejercicio</target>
+        <target state="accepted">%@, %ld años de experencias</target>
       </trans-unit>
       <trans-unit id="98" resname="%@, %ld year in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld year in practice</source>
@@ -1036,7 +1036,7 @@
       </trans-unit>
       <trans-unit id="184" resname="Gender" restype="string" datatype="x-objective-c">
         <source>Gender</source>
-        <target>Género</target>
+        <target state="accepted">Sexo</target>
       </trans-unit>
       <trans-unit id="185" resname="Height" restype="string" datatype="x-objective-c">
         <source>Height</source>
@@ -1341,7 +1341,7 @@
     <body>
       <trans-unit id="242" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
     </body>
@@ -1362,7 +1362,7 @@
       </trans-unit>
       <trans-unit id="246" resname="Create an account" restype="string" datatype="x-objective-c">
         <source>Create an account</source>
-        <target>Crear una cuenta</target>
+        <target state="accepted">Crea tu cuenta</target>
       </trans-unit>
       <trans-unit id="247" resname="Your account is deactivated. To re-activate, send a request to " restype="string" datatype="x-objective-c">
         <source>Your account is deactivated. To re-activate, send a request to</source>
@@ -1766,11 +1766,11 @@
     <body>
       <trans-unit id="329" resname="Find app by name or topic                     " restype="string" datatype="x-objective-c">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
       </trans-unit>
       <trans-unit id="330" resname="Find app by name or topic                                                                                  " restype="string" datatype="x-objective-c">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
       </trans-unit>
     </body>
   </file>
@@ -2406,7 +2406,7 @@
     <body>
       <trans-unit id="450" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">search box placeholder</note>
       </trans-unit>
     </body>
@@ -3620,7 +3620,7 @@
       </trans-unit>
       <trans-unit id="671" resname="q32-Yx-z8d.text" restype="string" datatype="x-xib">
         <source>Tell the doctor a little about you</source>
-        <target>Cuéntale al médico un poco más acerca de ti</target>
+        <target state="accepted">Cuéntale al médico más acerca de ti</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tell the doctor a little about you&quot;; ObjectID = &quot;q32-Yx-z8d&quot;;</note>
       </trans-unit>
     </body>

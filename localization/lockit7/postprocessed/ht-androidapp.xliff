@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="symptom_condition_back_title" restype="string" datatype="x-android-resource">
+        <source>Start over?</source>
+        <target>¿Volver a empezar?</target>
+      </trans-unit>
+      <trans-unit id="2" resname="symptom_condition_back_description" restype="string" datatype="x-android-resource">
+        <source>Would you like to start over with new symptoms or edit your current symptoms?</source>
+        <target>¿Te gustaría volver a empezar con nuevos síntomas, o editar tus síntomas actuales?</target>
+      </trans-unit>
+      <trans-unit id="3" resname="symptom_condition_back_start_over" restype="string" datatype="x-android-resource">
+        <source>Start Over</source>
+        <target>Volver a Empezar</target>
+      </trans-unit>
+      <trans-unit id="4" resname="symptom_condition_back_edit_symptoms" restype="string" datatype="x-android-resource">
+        <source>Edit Symptoms</source>
+        <target>Editar Síntomas</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/plurals.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource">
+        <source>Thanks! %d symptoms added.\nAny additional symptoms?</source>
+        <target>¡Gracias! %d síntomas añadidos.\n¿Algún síntoma adicional?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="symptom_condition_back_title" restype="string" datatype="x-android-resource">
+        <source>Start over?</source>
+        <target>重新开始？</target>
+      </trans-unit>
+      <trans-unit id="2" resname="symptom_condition_back_description" restype="string" datatype="x-android-resource">
+        <source>Would you like to start over with new symptoms or edit your current symptoms?</source>
+        <target>您希望重新开始新的症状还是编辑您当前的症状？</target>
+      </trans-unit>
+      <trans-unit id="3" resname="symptom_condition_back_start_over" restype="string" datatype="x-android-resource">
+        <source>Start Over</source>
+        <target>重新开始</target>
+      </trans-unit>
+      <trans-unit id="4" resname="symptom_condition_back_edit_symptoms" restype="string" datatype="x-android-resource">
+        <source>Edit Symptoms</source>
+        <target>编辑症状</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/plurals.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource">
+        <source>Thanks! %d symptoms added.\nAny additional symptoms?</source>
+        <target>谢谢！已添加%d个症状。\n还有其他症状吗？</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

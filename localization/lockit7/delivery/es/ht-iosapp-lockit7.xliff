@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/iPadNative/App/FGiPadAppViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="%@ doctors recommend this app" restype="string" datatype="x-objective-c">
+        <source>%@ doctors recommend this app</source><seg-source><mrk mtype="seg" mid="1">%@ doctors recommend this app</mrk></seg-source><target><mrk mtype="seg" mid="1">%@ doctores recomiendan esta aplicación</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocsPaymentViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="Add others for only {start}$10{end} USD / month" restype="string" datatype="x-objective-c">
+        <source>Add others for only {start}$10{end} USD / month</source><seg-source><mrk mtype="seg" mid="2">Add others for only {start}$10{end} USD / month</mrk></seg-source><target><mrk mtype="seg" mid="2">Añade a otros por solo {start}$10{end} USD / mes</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="3" resname="I understand the {start1}Guidelines{end1} for Virtual Consults and agree to {start2}Terms{end2}" restype="string" datatype="x-objective-c">
+        <source>I understand the {start1}Guidelines{end1} for Virtual Consults and agree to {start2}Terms{end2}</source><seg-source><mrk mtype="seg" mid="3">I understand the {start1}Guidelines{end1} for Virtual Consults and agree to {start2}Terms{end2}</mrk></seg-source><target><mrk mtype="seg" mid="3">Yo comprendo las {start1}Directrices{end1} para Consultas Virtuales y acepto los {start2}Términos{end2}.</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGSpecialitySearchViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="6" resname="Enter Specialty" restype="string" datatype="x-objective-c">
+        <source>Enter Specialty</source><seg-source><mrk mtype="seg" mid="4">Enter Specialty</mrk></seg-source><target><mrk mtype="seg" mid="4">Ingresar Especialidad</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGMomentDetailViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="7" resname="Please don't include a followup question in your note. To do so, {start}ask a question{end}" restype="string" datatype="x-objective-c">
+        <source>Please don't include a followup question in your note. To do so, {start}ask a question{end}</source><seg-source><mrk mtype="seg" mid="5">Please don't include a followup question in your note.</mrk> <mrk mtype="seg" mid="6">To do so, {start}ask a question{end}</mrk></seg-source><target><mrk mtype="seg" mid="5">Por favor, no incluyas una pregunta de seguimiento en tu nota.</mrk> <mrk mtype="seg" mid="6">Para hacerlo, {start}haz una pregunta.{end}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGAgreesAndCommentsViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="8" resname="Dr. Agrees %d" restype="string" datatype="x-objective-c">
+        <source>Dr. Agrees %d</source><seg-source><mrk mtype="seg" mid="7">Dr. Agrees %d</mrk></seg-source><target><mrk mtype="seg" mid="7">De Acuerdo de Dr. %d</mrk></target>
+      </trans-unit>
+      <trans-unit id="9" resname="Dr. Agrees %lu" restype="string" datatype="x-objective-c">
+        <source>Dr. Agrees %lu</source><seg-source><mrk mtype="seg" mid="8">Dr. Agrees %lu</mrk></seg-source><target><mrk mtype="seg" mid="8">De Acuerdo de Dr. %lu</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageStringsManager.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="10" resname="Please choose, and then tap or type symptoms, or skip to ask our doctors directly." restype="string" datatype="x-objective-c">
+        <source>Please choose, and then tap or type symptoms, or skip to ask our doctors directly.</source><seg-source><mrk mtype="seg" mid="9">Please choose, and then tap or type symptoms, or skip to ask our doctors directly.</mrk></seg-source><target><mrk mtype="seg" mid="9">Por favor, elige y luego toca o escribe síntomas, o salta a preguntarle directamente a nuestros doctores.</mrk></target>
+        
+      <note>symptom triage select subaccount conversational subheader</note></trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageConditionReportViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="11" resname="LESS\nLIKELY" restype="string" datatype="x-objective-c">
+        <source>LESS\nLIKELY</source><seg-source><mrk mtype="seg" mid="10">LESS\nLIKELY</mrk></seg-source><target><mrk mtype="seg" mid="10">MENOS\nPROBABLE</mrk></target>
+        
+      <note>match percentage low</note></trans-unit>
+      <trans-unit id="12" resname="SOMEWHAT\nLIKELY" restype="string" datatype="x-objective-c">
+        <source>SOMEWHAT\nLIKELY</source><seg-source><mrk mtype="seg" mid="11">SOMEWHAT\nLIKELY</mrk></seg-source><target><mrk mtype="seg" mid="11">UN POCO\nPROBABLE</mrk></target>
+        
+      <note>match percentage med</note></trans-unit>
+      <trans-unit id="13" resname="MORE\nLIKELY" restype="string" datatype="x-objective-c">
+        <source>MORE\nLIKELY</source><seg-source><mrk mtype="seg" mid="12">MORE\nLIKELY</mrk></seg-source><target><mrk mtype="seg" mid="12">MÁS\nPROBABLE</mrk></target>
+        
+      <note>match percentage hi</note></trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSpecialistNeededUpsellView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="14" resname="Located in %@" restype="string" datatype="x-objective-c">
+        <source>Located in %@</source><seg-source><mrk mtype="seg" mid="13">Located in %@</mrk></seg-source><target><mrk mtype="seg" mid="13">Ubicado en %@</mrk></target>
+      </trans-unit>
+      <trans-unit id="15" resname="Located in %@ ›" restype="string" datatype="x-objective-c">
+        <source>Located in %@ ›</source><seg-source><mrk mtype="seg" mid="14">Located in %@ ›</mrk></seg-source><target><mrk mtype="seg" mid="14">Ubicado en %@ ›</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTLocationEnforcer.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="16" resname="No cancel" restype="string" datatype="x-objective-c">
+        <source>No cancel</source><seg-source><mrk mtype="seg" mid="15">No cancel</mrk></seg-source><target><mrk mtype="seg" mid="15">No, cancelar</mrk></target>
+      </trans-unit>
+      <trans-unit id="17" resname="Yes confirm" restype="string" datatype="x-objective-c">
+        <source>Yes confirm</source><seg-source><mrk mtype="seg" mid="16">Yes confirm</mrk></seg-source><target><mrk mtype="seg" mid="16">Sí, confirmar</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTBlankPushNotificationPrePermissionViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="18" resname="our %@" restype="string" datatype="x-objective-c">
+        <source>our %@</source><seg-source><mrk mtype="seg" mid="17">our %@</mrk></seg-source><target><mrk mtype="seg" mid="17">nuestro %@</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGCheckListCompletedCellData.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="19" resname="Actions taken %d" restype="string" datatype="x-objective-c">
+        <source>Actions taken %d</source><seg-source><mrk mtype="seg" mid="18">Actions taken %d</mrk></seg-source><target><mrk mtype="seg" mid="18">Acciones tomadas %d</mrk></target>
+        
+      <note>Footer for incomplete checklist section</note></trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGAppDetail.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="20" resname="by %@" restype="string" datatype="x-objective-c">
+        <source>by %@</source><seg-source><mrk mtype="seg" mid="19">by %@</mrk></seg-source><target><mrk mtype="seg" mid="19">por %@</mrk></target>
+      </trans-unit>
+      <trans-unit id="21" resname="%@ doctor recommends this app" restype="string" datatype="x-objective-c">
+        <source>%@ doctor recommends this app</source><seg-source><mrk mtype="seg" mid="20">%@ doctor recommends this app</mrk></seg-source><target><mrk mtype="seg" mid="20">%@ doctor recomienda esta aplicación</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGConciergeDoctorHeaderView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="22" resname="\nWe will connect you with" restype="string" datatype="x-objective-c">
+        <source>\nWe will connect you with</source><seg-source><mrk mtype="seg" mid="21">\nWe will connect you with</mrk></seg-source><target><mrk mtype="seg" mid="21">\nTe conectaremos con</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/AskDocsV4/HTConsultOptionSpecificExpertObject.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="23" resname="Speaks spanish" restype="string" datatype="x-objective-c">
+        <source>Speaks spanish</source><seg-source><mrk mtype="seg" mid="22">Speaks spanish</mrk></seg-source><target><mrk mtype="seg" mid="22">Habla español</mrk></target>
+      </trans-unit>
+      <trans-unit id="24" resname="Speaks chinese" restype="string" datatype="x-objective-c">
+        <source>Speaks chinese</source><seg-source><mrk mtype="seg" mid="23">Speaks chinese</mrk></seg-source><target><mrk mtype="seg" mid="23">Habla chino</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/AskDocsV4/HTADV4OptionsTableViewDataSource.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="25" resname="Add a %@ interpreter for %@" restype="string" datatype="x-objective-c">
+        <source>Add a %@ interpreter for %@</source><seg-source><mrk mtype="seg" mid="24">Add a %@ interpreter for %@</mrk></seg-source><target><mrk mtype="seg" mid="24">Añadir a %@ intérprete para %@</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/AskDocsV4/HTADV4ConsultModeContentView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="26" resname="Starting at %@%d" restype="string" datatype="x-objective-c">
+        <source>Starting at %@%d</source><seg-source><mrk mtype="seg" mid="25">Starting at %@%d</mrk></seg-source><target><mrk mtype="seg" mid="25">Empezando desde %@%d</mrk></target>
+      </trans-unit>
+      <trans-unit id="27" resname="Starting at %@%.2f" restype="string" datatype="x-objective-c">
+        <source>Starting at %@%.2f</source><seg-source><mrk mtype="seg" mid="26">Starting at %@%.2f</mrk></seg-source><target><mrk mtype="seg" mid="26">Empezando desde %@%.2f</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Settings/Base.lproj/FGMainSettingsViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="28" resname="wLz-4h-21J.text" restype="string" datatype="x-xib">
+        <source>Show in which language?</source><seg-source><mrk mtype="seg" mid="27">Show in which language?</mrk></seg-source><target><mrk mtype="seg" mid="27">¿Mostar en qué idioma?</mrk></target>
+        
+      <note>Class = "UILabel"; text = "Show in which language?"; ObjectID = "wLz-4h-21J";</note></trans-unit>
+    </body>
+  </file>
+</xliff>

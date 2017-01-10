@@ -294,7 +294,7 @@
     <body>
       <trans-unit id="51" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
     </body>
@@ -343,11 +343,11 @@
     <body>
       <trans-unit id="58" resname="Find app by name or topic                     " restype="string" datatype="x-objective-c">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
       </trans-unit>
       <trans-unit id="59" resname="Find app by name or topic                                                                                  " restype="string" datatype="x-objective-c">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
       </trans-unit>
     </body>
   </file>
@@ -825,7 +825,7 @@
     <body>
       <trans-unit id="133" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">search box placeholder</note>
       </trans-unit>
     </body>
@@ -1247,7 +1247,7 @@
     <body>
       <trans-unit id="205" resname="You agree to our {start1} Terms {end1} and {start2} Privacy Policy {end2}" restype="string" datatype="x-objective-c">
         <source>You agree to our {start1} Terms {end1} and {start2} Privacy Policy {end2}</source>
-        <target>Aceptas nuestros {start1} Términos{end1} y {start2} Política de Privacidad {end2}</target>
+        <target state="accepted">Aceptas los {start1}Términos{end1} y {start2}Política de Privacidad{end2}</target>
       </trans-unit>
       <trans-unit id="206" resname="{start1}" restype="string" datatype="x-objective-c">
         <source>{start1}</source>
