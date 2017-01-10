@@ -3516,7 +3516,7 @@
     <body>
       <trans-unit id="834" resname="r116346273" restype="string" datatype="ruby">
         <source>WHAT MAKES PEOPLE &lt;span class=&quot;no-break&quot; &gt;FEEL GOOD&lt;/span&gt;?</source>
-        <target>¿QUE HACE A LA GNTE &lt;span class=&quot;no-break&quot; &gt;SENTIRSE BIEN&lt;/span&gt;?</target>
+        <target>¿QUE HACE A LA GENTE &lt;span class=&quot;no-break&quot; &gt;SENTIRSE BIEN&lt;/span&gt;?</target>
       </trans-unit>
       <trans-unit id="835" resname="r273075188" restype="string" datatype="ruby">
         <source>Vision &amp;amp; Credo</source>
