@@ -846,6 +846,60 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileParseDontIncludeStartingTemplateEchoTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <%= greeting %> The doctor is not available.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('The doctor is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'The doctor is not available.');
+        test.equal(r.getKey(), 'The doctor is not available.');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileParseDontIncludeEndingTemplateEchoTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       The doctor is not available. <%= until_when %>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('The doctor is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'The doctor is not available.');
+        test.equal(r.getKey(), 'The doctor is not available.');
+                
+        test.done();
+    },
+
     testHTMLTemplateFileParseTemplateTagsInsideTags: function(test) {
         test.expect(5);
 
@@ -2407,7 +2461,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p);
         test.ok(htf);
         
-        htf.parse('<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>"></div>');
+        htf.parse('<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>">foo</div>');
         
         var set = htf.getTranslationSet();
         test.ok(set);
@@ -2421,7 +2475,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>"></div>');
+        		'<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>">asdf</div>');
 
         test.done();
     },
