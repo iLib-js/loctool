@@ -3763,12 +3763,12 @@
     <body>
       <trans-unit id="690" resname="Ege-W5-Zxn.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;Ege-W5-Zxn&quot;;</note>
       </trans-unit>
       <trans-unit id="691" resname="XuL-zM-XZw.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;XuL-zM-XZw&quot;;</note>
       </trans-unit>
     </body>
