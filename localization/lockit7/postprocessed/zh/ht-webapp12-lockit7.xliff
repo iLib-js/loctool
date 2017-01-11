@@ -1797,7 +1797,7 @@
     <body>
       <trans-unit id="364" resname="r527860771" restype="string" datatype="ruby">
         <source>Patients get instant 24/7 access to world’s largest knowledge-base of doctor insights from your doctors and our network of %{doctors_count} top doctors</source>
-        <target>患者可以即时24/7全天候访问来自您的医生和我们的{％{doctors_count}名顶级医生网络构成的世界上最大的医生见解知识库</target>
+        <target>患者可以即时24/7全天候访问来自您的医生和我们的％{doctors_count}名顶级医生网络构成的世界上最大的医生见解知识库</target>
         <note annotates="source">TODO pluralize</note>
       </trans-unit>
     </body>
@@ -6503,7 +6503,7 @@
     <body>
       <trans-unit id="1338" resname="Do your living grandparents, parents or siblings have any major medical conditions {span_tag_start}&#40;life-threatening or otherwise?&#41;{span_tag_end}" restype="string" datatype="javascript">
         <source>Do your living grandparents, parents or siblings have any major medical conditions {span_tag_start}&#40;life-threatening or otherwise?&#41;{span_tag_end}</source>
-        <target>您健在的祖父母、父母或兄弟姐妹有什么主要的病史吗{span_tag_start}&#40;life-threatening or otherwise?&#41;{span_tag_end}</target>
+        <target>您健在的祖父母、父母或兄弟姐妹有什么主要的病史吗{span_tag_start}&#40;危及生命的大病或其他&#41;{span_tag_end}</target>
       </trans-unit>
       <trans-unit id="1339" resname="{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult</source>

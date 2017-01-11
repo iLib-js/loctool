@@ -1341,7 +1341,7 @@
     <body>
       <trans-unit id="242" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
     </body>
@@ -1766,11 +1766,11 @@
     <body>
       <trans-unit id="329" resname="Find app by name or topic                     " restype="string" datatype="x-objective-c">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
       </trans-unit>
       <trans-unit id="330" resname="Find app by name or topic                                                                                  " restype="string" datatype="x-objective-c">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
       </trans-unit>
     </body>
   </file>
@@ -2406,7 +2406,7 @@
     <body>
       <trans-unit id="450" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">search box placeholder</note>
       </trans-unit>
     </body>

@@ -4936,7 +4936,7 @@
       </trans-unit>
       <trans-unit id="963" resname="appointment_short" restype="string" datatype="x-android-resource">
         <source>Virtual Appt</source>
-        <target>虚拟预约</target>
+        <target state="accepted">在线预约</target>
       </trans-unit>
       <trans-unit id="964" resname="make_appointment" restype="string" datatype="x-android-resource">
         <source>Make Appointment</source>

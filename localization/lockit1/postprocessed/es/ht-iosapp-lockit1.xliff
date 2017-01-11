@@ -8532,12 +8532,12 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Find app by name or topic                     " resname="Find app by name or topic                     " restype="string" datatype="x-objective-c">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Find app by name or topic                                                                                  " resname="Find app by name or topic                                                                                  " restype="string" datatype="x-objective-c">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Find by name, specialty, or topic" resname="Find by name, specialty, or topic" restype="string" datatype="x-objective-c">
@@ -10860,17 +10860,17 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Search answers, topics, experts" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">place holder in search box</note>
       </trans-unit>
       <trans-unit id="Search answers, topics, experts  " resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
       <trans-unit id="Search answers, topics, experts     " resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">search box placeholder</note>
       </trans-unit>
       <trans-unit id="Search by specialty" resname="Search by specialty" restype="string" datatype="x-objective-c">
@@ -13450,7 +13450,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
     <body>
       <trans-unit id="QqC-UM-6x4.placeholder" resname="QqC-UM-6x4.placeholder" restype="string" datatype="x-xib">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find app by name or topic&quot;; ObjectID = &quot;QqC-UM-6x4&quot;;</note>
       </trans-unit>
     </body>
@@ -14707,7 +14707,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Ldu-yP-JZA.placeholder" resname="Ldu-yP-JZA.placeholder" restype="string" datatype="x-xib">
         <source>Search answers, topics, doctors</source>
-        <target>Buscar respuestas, temas y doctores</target>
+        <target state="accepted">Respuestas, temas y doctores</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search answers, topics, doctors&quot;; ObjectID = &quot;Ldu-yP-JZA&quot;;</note>
       </trans-unit>
       <trans-unit id="Ldu-yP-JZA.scopeButtonTitles[0]" resname="Ldu-yP-JZA.scopeButtonTitles[0]" restype="string" datatype="x-xib">
@@ -16056,7 +16056,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="KDq-nL-URm.placeholder" resname="KDq-nL-URm.placeholder" restype="string" datatype="x-xib">
         <source>Search answers, topics, doctors</source>
-        <target>Buscar respuestas, temas y doctores</target>
+        <target state="accepted">Respuestas, temas y doctores</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search answers, topics, doctors&quot;; ObjectID = &quot;KDq-nL-URm&quot;;</note>
       </trans-unit>
     </body>
@@ -16518,7 +16518,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="SCL-aA-qCq.placeholder" resname="SCL-aA-qCq.placeholder" restype="string" datatype="x-xib">
         <source>Search answers, topics, doctors</source>
-        <target>Buscar respuestas, temas y doctores</target>
+        <target state="accepted">Respuestas, temas y doctores</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search answers, topics, doctors&quot;; ObjectID = &quot;SCL-aA-qCq&quot;;</note>
       </trans-unit>
       <trans-unit id="bwu-4c-xsU.text" resname="bwu-4c-xsU.text" restype="string" datatype="x-xib">
