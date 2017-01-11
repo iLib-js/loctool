@@ -3899,7 +3899,7 @@
       </trans-unit>
       <trans-unit id="710" resname="t3e-iJ-qIK.text" restype="string" datatype="x-xib">
         <source>Food Packaging Health Risk \&apos;Unknown\&apos;</source>
-        <target>Riesgo del Empaquetado de Alimentos \&apos;Desconocido&apos;\</target>
+        <target>Riesgo del Empaquetado de Alimentos &apos;Desconocido&apos;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Food Packaging Health Risk &apos;Unknown&apos;&quot;; ObjectID = &quot;t3e-iJ-qIK&quot;;</note>
       </trans-unit>
     </body>
