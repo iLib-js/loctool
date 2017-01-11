@@ -1658,7 +1658,7 @@
       </trans-unit>
       <trans-unit id="Y9g-2x-DHu.text" resname="Y9g-2x-DHu.text" restype="string" datatype="x-xib">
         <source>Choose a preferred length for your consult</source>
-        <target>Elige una duración de preferencia para tu consulta</target>
+        <target state="accepted">Elige una duración para tu consulta</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Choose a preferred length for your consult&quot;; ObjectID = &quot;Y9g-2x-DHu&quot;;</note>
       </trans-unit>
       <trans-unit id="dm5-Tr-ONg.text" resname="dm5-Tr-ONg.text" restype="string" datatype="x-xib">
@@ -1722,7 +1722,7 @@
       </trans-unit>
       <trans-unit id="VXr-ro-dkm.text" resname="VXr-ro-dkm.text" restype="string" datatype="x-xib">
         <source>Choose a preferred length for your consult</source>
-        <target>Elige una duración de preferencia para tu consulta</target>
+        <target state="accepted">Elige una duración para tu consulta</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Choose a preferred length for your consult&quot;; ObjectID = &quot;VXr-ro-dkm&quot;;</note>
       </trans-unit>
       <trans-unit id="WMw-lD-gB9.normalTitle" resname="WMw-lD-gB9.normalTitle" restype="string" datatype="x-xib">
