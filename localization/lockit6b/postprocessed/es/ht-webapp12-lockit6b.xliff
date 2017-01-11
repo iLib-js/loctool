@@ -200,21 +200,9 @@
         <target state="translated">Haz cualquier pregunta a los médicos
 		&lt;span class=&quot;sub_title&quot;&gt;en cualquier momento. En cualquier lugar.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;Gratis.&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1133" resname="improve your question to get a more personalized answer.    &lt;%=    RB.getString&#40;&amp;quot;First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.&amp;quot;&#41;.format&#40;{     link_tag_start: &apos;&lt;a id=&amp;quot;guidelines&amp;quot;&gt;&apos;,     link_tag_end: &apos;&lt;/a&gt;&apos;    }&#41;   %&gt;" restype="string" datatype="html">
-        <source>improve your question to get a more personalized answer. 
-			&lt;%=
-				RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.&quot;&#41;.format&#40;{
-					link_tag_start: &apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;,
-					link_tag_end: &apos;&lt;/a&gt;&apos;
-				}&#41;
-			%&gt;</source>
-        <target state="translated">Mejora tu pregunta para obtener una respuesta más personalizada. 
-			&lt;%=
-				RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}revisa nuestros consejos para hacer preguntas aquí{link_tag_end}.&quot;&#41;.format&#40;{
-					link_tag_start: &apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;,
-					link_tag_end: &apos;&lt;/a&gt;&apos;
-				}&#41;
-			%&gt;</target>
+      <trans-unit id="1133" resname="improve your question to get a more personalized answer." restype="string" datatype="html">
+        <source>improve your question to get a more personalized answer.</source>
+        <target state="translated">Mejora tu pregunta para obtener una respuesta más personalizada.</target>
       </trans-unit>
     </body>
   </file>
@@ -280,11 +268,9 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeFollowUp.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1178" resname="TO:    &lt;%= episode.participant_docs[0].full_name %&gt;" restype="string" datatype="html">
-        <source>TO:
-				&lt;%= episode.participant_docs[0].full_name %&gt;</source>
-        <target state="translated">PARA:
-				&lt;%= episode.participant_docs[0].full_name %&gt;</target>
+      <trans-unit id="1178" resname="TO:" restype="string" datatype="html">
+        <source>TO:</source>
+        <target state="translated">PARA:</target>
       </trans-unit>
     </body>
   </file>
@@ -321,13 +307,9 @@
   </file>
   <file original="public/javascripts/templates/profile/profile_top_template.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1220" resname="Born on            &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;            &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;" restype="string" datatype="html">
-        <source>Born on
-  		        &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;
-  		        &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;</source>
-        <target state="translated">Nacido en
-  		        &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;
-  		        &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;</target>
+      <trans-unit id="1220" resname="Born on" restype="string" datatype="html">
+        <source>Born on</source>
+        <target state="translated">Nacido en</target>
       </trans-unit>
     </body>
   </file>
@@ -1747,11 +1729,11 @@
     <body>
       <trans-unit id="2301" resname="r760932789" restype="string" datatype="x-haml">
         <source>Foreign Languages</source>
-	<target state="accepted">Idiomas Extranjeros</target>
+        <target state="accepted">Idiomas Extranjeros</target>
       </trans-unit>
       <trans-unit id="2302" resname="r71763976" restype="string" datatype="x-haml">
         <source>Where HealthTap content or services &#40;including these Terms of Use&#41; are translated into languages other than English, all such translations are for the convenience of our users only, and HealthTap is not responsible or liable in the event of any inaccuracy in such translation. In the event of a conflict between the English-language version of these Terms of Service, or any other content on HealthTap, and a version that has been translated into another language, the English-language version shall control and apply. You understand that content, including but not limited to questions and answers, may not have the same meaning in translation, and that treatments &#40;including but not limited to medication names&#41; and other information may differ from country to country and in different languages and may not be available in all places. Additionally, you understand and agree that virtual consultations with doctors may not be available in languages other than English, and you agree not to conduct a consultation with a doctor in a language in which you are not proficient without the use of a professional translator. If you are connected to a doctor who speaks your language, you understand that the doctor may not be a native speaker and that the doctor&apos;s ability to communicate may be limited. If you choose to use a translator in connection with a virtual consult, you understand that HealthTap is not liable for any errors or omissions in translation.</source>
-        <target state="accepted">Donde el contenido y servicios de HealthTap (incluyendo estos Términos de Uso) son traducidos a otros idiomas aparte del inglés, dichas traducciones son solo para la conveniencia de nuestros usuarios, y HealthTap no es responsable o culpable en el evento de cualquier falta de exactitud de dichas traducciones. En el evento de un conflicto entre la versión en inglés de estos Términos de Servicio, o cualquier otro contenido en HealthTap, y una versión que ha sido traducida a otro idioma, la versión en inglés será la que aplique y esté en control. Tu comprendes que el contenido, incluyendo, pero no limitado a preguntas y respuestas, puede no tener el mismo significado al traducirse, y que los tratamientos (incluyendo, pero no limitado a nombres de medicamentos) y otra información que puede diferir de país a país y en diferentes idiomas y puede no estar disponible en todos lados. Además, tu comprendes y aceptas que las consultas virtuales con doctores pueden no estar disponibles en idiomas aparte del inglés, y aceptas no realizar una consulta con un doctor en un idioma en el cual no eres competente sin el uso de un traductor profesional. Si estás conectado con un doctor que hable tu idioma, comprendes que puede que no sea su idioma nativo y que la habilidad del doctor para comunicarse puede ser limitada. Si eliges usar un traductor en conexión con una consulta virtual, tu comprendes que HealthTap no es responsable de cualesquiera errores u omisiones en la traducción.</target>
+        <target state="accepted">Donde el contenido y servicios de HealthTap &#40;incluyendo estos Términos de Uso&#41; son traducidos a otros idiomas aparte del inglés, dichas traducciones son solo para la conveniencia de nuestros usuarios, y HealthTap no es responsable o culpable en el evento de cualquier falta de exactitud de dichas traducciones. En el evento de un conflicto entre la versión en inglés de estos Términos de Servicio, o cualquier otro contenido en HealthTap, y una versión que ha sido traducida a otro idioma, la versión en inglés será la que aplique y esté en control. Tu comprendes que el contenido, incluyendo, pero no limitado a preguntas y respuestas, puede no tener el mismo significado al traducirse, y que los tratamientos &#40;incluyendo, pero no limitado a nombres de medicamentos&#41; y otra información que puede diferir de país a país y en diferentes idiomas y puede no estar disponible en todos lados. Además, tu comprendes y aceptas que las consultas virtuales con doctores pueden no estar disponibles en idiomas aparte del inglés, y aceptas no realizar una consulta con un doctor en un idioma en el cual no eres competente sin el uso de un traductor profesional. Si estás conectado con un doctor que hable tu idioma, comprendes que puede que no sea su idioma nativo y que la habilidad del doctor para comunicarse puede ser limitada. Si eliges usar un traductor en conexión con una consulta virtual, tu comprendes que HealthTap no es responsable de cualesquiera errores u omisiones en la traducción.</target>
       </trans-unit>
       <trans-unit id="2226" resname="r514637436" restype="string" datatype="x-haml">
         <source>for a note</source>

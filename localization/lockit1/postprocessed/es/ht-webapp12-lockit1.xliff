@@ -242,9 +242,9 @@
         <source>Dr.</source>
         <target>Dr.</target>
       </trans-unit>
-      <trans-unit id="53" resname="Re: MedPub&#35;&lt;%=user_question.publication_id%&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%=user_question.publication_id%&gt;</source>
-        <target>Re: MedPub&#35;&lt;%=user_question.publication_id%&gt;</target>
+      <trans-unit id="53" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
       <trans-unit id="54" resname="answered:" restype="string" datatype="html">
         <source>answered:</source>
@@ -294,9 +294,9 @@
   </file>
   <file original="public/mobile/app/js/templates/tips/tips_subscription_list.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="63" resname="Choose in:&lt;%=tips_category%&gt;" restype="string" datatype="html">
-        <source>Choose in:&lt;%=tips_category%&gt;</source>
-        <target>Elige en:&lt;%=tips_category%&gt;</target>
+      <trans-unit id="63" resname="Choose in:" restype="string" datatype="html">
+        <source>Choose in:</source>
+        <target>Elige en:</target>
       </trans-unit>
       <trans-unit id="64" resname="tip_id=&quot;&lt;%=tip.tip_topic_id%&gt;&quot;&gt;&lt;span style=&quot;pointer-events:none&quot;&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>tip_id=&quot;&lt;%=tip.tip_topic_id%&gt;&quot;&gt;&lt;span style=&quot;pointer-events:none&quot;&gt;&lt;/span&gt;</source>
@@ -578,9 +578,9 @@
   </file>
   <file original="public/mobile/app/js/templates/search/searchResultQuestionsItem.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="121" resname="Dr. &lt;%=&#40;typeof answer_person_last_name != &quot;undefined&quot; &amp;&amp; answer_person_last_name&#41; ? answer_person_last_name : &apos;&apos;%&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%=&#40;typeof answer_person_last_name != &quot;undefined&quot; &amp;&amp; answer_person_last_name&#41; ? answer_person_last_name : &apos;&apos;%&gt;</source>
-        <target>Dr. &lt;%=&#40;typeof answer_person_last_name != &quot;undefined&quot; &amp;&amp; answer_person_last_name&#41; ? answer_person_last_name : &apos;&apos;%&gt;</target>
+      <trans-unit id="121" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
       <trans-unit id="122" resname="answered: &lt;span&gt;&lt;%= &#40;typeof value !=&quot;undefined&quot; &amp;&amp; value&#41; ? value : &apos;&apos;%&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>answered: &lt;span&gt;&lt;%= &#40;typeof value !=&quot;undefined&quot; &amp;&amp; value&#41; ? value : &apos;&apos;%&gt;&lt;/span&gt;</source>
@@ -594,9 +594,9 @@
   </file>
   <file original="public/mobile/app/js/templates/search/searchResultPostsItem.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="124" resname="Dr. &lt;%=answer_person_last_name ? answer_person_last_name : &apos;&apos;%&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%=answer_person_last_name ? answer_person_last_name : &apos;&apos;%&gt;</source>
-        <target>Dr. &lt;%=answer_person_last_name ? answer_person_last_name : &apos;&apos;%&gt;</target>
+      <trans-unit id="124" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
       <trans-unit id="125" resname="posted: &lt;span class=&quot;long_text_h&quot;&gt;&lt;%=typeof&#40;value&#41; != &quot;undefined&quot; &amp;&amp; value%&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>posted: &lt;span class=&quot;long_text_h&quot;&gt;&lt;%=typeof&#40;value&#41; != &quot;undefined&quot; &amp;&amp; value%&gt;&lt;/span&gt;</source>
@@ -622,9 +622,9 @@
         <source>&quot;&#41; no-repeat 50%;background-size: cover;&apos;&gt;</source>
         <target>&quot;&#41; no-repeat 50%;background-size: cover;&apos;&gt;</target>
       </trans-unit>
-      <trans-unit id="129" resname="Dr. &lt;%=answer_person_last_name%&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%=answer_person_last_name%&gt;</source>
-        <target>Dr. &lt;%=answer_person_last_name%&gt;</target>
+      <trans-unit id="129" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
     </body>
   </file>
@@ -954,17 +954,17 @@
         <source>Your total donation for more characters:</source>
         <target>Tu donación total para más caracteres:</target>
       </trans-unit>
-      <trans-unit id="206" resname="$ &lt;%=price%&gt;" restype="string" datatype="html">
-        <source>$ &lt;%=price%&gt;</source>
-        <target>$ &lt;%=price%&gt;</target>
+      <trans-unit id="206" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target>$</target>
       </trans-unit>
       <trans-unit id="207" resname="Confirm your credit card information:" restype="string" datatype="html">
         <source>Confirm your credit card information:</source>
         <target>Confirmar la información de tu tarjeta de crédito:</target>
       </trans-unit>
-      <trans-unit id="208" resname="Card number ending in &lt;%=typeof App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber != &quot;undefined&quot; ? App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber : &apos;&apos;%&gt;" restype="string" datatype="html">
-        <source>Card number ending in &lt;%=typeof App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber != &quot;undefined&quot; ? App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber : &apos;&apos;%&gt;</source>
-        <target>Número de la tarjeta que termina en &lt;%=typeof App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber != &quot;undefined&quot; ? App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber : &apos;&apos;%&gt;</target>
+      <trans-unit id="208" resname="Card number ending in" restype="string" datatype="html">
+        <source>Card number ending in</source>
+        <target>Número de la tarjeta que termina en</target>
       </trans-unit>
       <trans-unit id="209" resname="&#40;change&#41;" restype="string" datatype="html">
         <source>&#40;change&#41;</source>
@@ -1074,17 +1074,17 @@
         <source>Month</source>
         <target>Mes</target>
       </trans-unit>
-      <trans-unit id="235" resname="&gt;&lt;%= month %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= month %&gt;</source>
-        <target>&gt;&lt;%= month %&gt;</target>
+      <trans-unit id="235" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="236" resname="Year" restype="string" datatype="html">
         <source>Year</source>
         <target>Año</target>
       </trans-unit>
-      <trans-unit id="237" resname="&gt;&lt;%= i %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= i %&gt;</source>
-        <target>&gt;&lt;%= i %&gt;</target>
+      <trans-unit id="237" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -1322,9 +1322,9 @@
         <source>;&amp;nbsp;</source>
         <target>;&amp;nbsp;</target>
       </trans-unit>
-      <trans-unit id="292" resname="PMID:&lt;%=publication.pmid%&gt;" restype="string" datatype="html">
-        <source>PMID:&lt;%=publication.pmid%&gt;</source>
-        <target>PMID:&lt;%=publication.pmid%&gt;</target>
+      <trans-unit id="292" resname="PMID:" restype="string" datatype="html">
+        <source>PMID:</source>
+        <target>PMID:</target>
       </trans-unit>
     </body>
   </file>
@@ -1470,13 +1470,13 @@
         <source>male</source>
         <target>masculino</target>
       </trans-unit>
-      <trans-unit id="322" resname="&quot;&gt;&lt;%= month %&gt;" restype="string" datatype="html">
-        <source>&quot;&gt;&lt;%= month %&gt;</source>
-        <target>&quot;&gt;&lt;%= month %&gt;</target>
+      <trans-unit id="322" resname="&quot;&gt;" restype="string" datatype="html">
+        <source>&quot;&gt;</source>
+        <target>&quot;&gt;</target>
       </trans-unit>
-      <trans-unit id="323" resname="&quot;&gt;&lt;%= i %&gt;" restype="string" datatype="html">
-        <source>&quot;&gt;&lt;%= i %&gt;</source>
-        <target>&quot;&gt;&lt;%= i %&gt;</target>
+      <trans-unit id="323" resname="&quot;&gt;" restype="string" datatype="html">
+        <source>&quot;&gt;</source>
+        <target>&quot;&gt;</target>
       </trans-unit>
       <trans-unit id="324" resname="Would you like to ask Doctor Moms?" restype="string" datatype="html">
         <source>Would you like to ask Doctor Moms?</source>
@@ -1878,9 +1878,9 @@
         <source>Moving up in the world. Impressive. Helping people and having fun. That is what HealthTap is all about.</source>
         <target>Escalando el mundo. Impresionante. Ayudar a las personas y divertirse. De eso se trata HealthTap.</target>
       </trans-unit>
-      <trans-unit id="414" resname="Unlock the next trophy &lt;%=childObject.trigger%&gt;" restype="string" datatype="html">
-        <source>Unlock the next trophy &lt;%=childObject.trigger%&gt;</source>
-        <target>Desbloquea el próximo trofeo &lt;%=childObject.trigger%&gt;</target>
+      <trans-unit id="414" resname="Unlock the next trophy" restype="string" datatype="html">
+        <source>Unlock the next trophy</source>
+        <target>Desbloquea el próximo trofeo</target>
       </trans-unit>
       <trans-unit id="415" resname="Unlock the next trophy" restype="string" datatype="html">
         <source>Unlock the next trophy</source>
@@ -2234,9 +2234,9 @@
   </file>
   <file original="public/mobile/app/js/templates/member/member_request_appointment/member_request_appointment_expert_profile.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="494" resname="Available &lt;%=expert_profiles.office_hours%&gt;" restype="string" datatype="html">
-        <source>Available &lt;%=expert_profiles.office_hours%&gt;</source>
-        <target>Disponible en &lt;%=expert_profiles.office_hours%&gt;</target>
+      <trans-unit id="494" resname="Available" restype="string" datatype="html">
+        <source>Available</source>
+        <target>Disponible en</target>
       </trans-unit>
     </body>
   </file>
@@ -2290,9 +2290,9 @@
         <source>Follower</source>
         <target>Seguidor</target>
       </trans-unit>
-      <trans-unit id="506" resname=", &lt;%=user_question.meta_info.accept_insurance%&gt;" restype="string" datatype="html">
-        <source>, &lt;%=user_question.meta_info.accept_insurance%&gt;</source>
-        <target>, &lt;%=user_question.meta_info.accept_insurance%&gt;</target>
+      <trans-unit id="506" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="507" resname="users" restype="string" datatype="html">
         <source>users</source>
@@ -2434,13 +2434,13 @@
         <source>Author assisted by Medical Student &lt;a class=&quot;student_contributor_link&quot; href=&quot;&#35;experts/&lt;%= user_answer.contributor.id %&gt;&quot;&gt;&lt;%= user_answer.contributor.name %&gt;&lt;/a&gt;</source>
         <target>Autor asistido por Estudiante de Medicina &lt;a class=&quot;student_contributor_link&quot; href=&quot;&#35;experts/&lt;%= user_answer.contributor.id %&gt;&quot;&gt;&lt;%= user_answer.contributor.name %&gt;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="538" resname="Make &lt;%=$&#40;document&#41;.width&#40;&#41;&gt; 350 ? &apos;appointment&apos; : &apos;appt.&apos;%&gt;" restype="string" datatype="html">
-        <source>Make &lt;%=$&#40;document&#41;.width&#40;&#41;&gt; 350 ? &apos;appointment&apos; : &apos;appt.&apos;%&gt;</source>
-        <target>Hacer &lt;%=$&#40;document&#41;.width&#40;&#41;&gt; 350 ? &apos;cita&apos; : &apos;cita&apos;%&gt;</target>
+      <trans-unit id="538" resname="Make" restype="string" datatype="html">
+        <source>Make</source>
+        <target>Hacer</target>
       </trans-unit>
-      <trans-unit id="539" resname="Follow &lt;%=$&#40;document&#41;.width&#40;&#41;&gt; 350 ? &apos;Question&apos; : &apos;Q&apos;%&gt;" restype="string" datatype="html">
-        <source>Follow &lt;%=$&#40;document&#41;.width&#40;&#41;&gt; 350 ? &apos;Question&apos; : &apos;Q&apos;%&gt;</source>
-        <target>Seguir &lt;%=$&#40;document&#41;.width&#40;&#41;&gt; 350 ? &apos;Pregunta&apos; : &apos;P&apos;%&gt;</target>
+      <trans-unit id="539" resname="Follow" restype="string" datatype="html">
+        <source>Follow</source>
+        <target>Seguir</target>
       </trans-unit>
       <trans-unit id="540" resname="View all &lt;%= user_answer.comment_count %&gt; comments &amp;raquo;" restype="string" datatype="html">
         <source>View all &lt;%= user_answer.comment_count %&gt; comments &amp;raquo;</source>
@@ -2834,9 +2834,9 @@
         <source>State</source>
         <target>Estado</target>
       </trans-unit>
-      <trans-unit id="624" resname="&gt;&lt;%= code %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= code %&gt;</source>
-        <target>&gt;&lt;%= code %&gt;</target>
+      <trans-unit id="624" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3030,9 +3030,9 @@
         <source>-Choose one-</source>
         <target>-Elige uno-</target>
       </trans-unit>
-      <trans-unit id="666" resname="&gt;&lt;%= opt[i] %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= opt[i] %&gt;</source>
-        <target>&gt;&lt;%= opt[i] %&gt;</target>
+      <trans-unit id="666" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3054,9 +3054,9 @@
         <source>DATE OF BIRTH</source>
         <target>FECHA DE NACIMIENTO</target>
       </trans-unit>
-      <trans-unit id="671" resname="/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/&lt;%= member[&quot;birthday&#40;1i&#41;&quot;] %&gt;" restype="string" datatype="html">
-        <source>/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/&lt;%= member[&quot;birthday&#40;1i&#41;&quot;] %&gt;</source>
-        <target>/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/&lt;%= member[&quot;birthday&#40;1i&#41;&quot;] %&gt;</target>
+      <trans-unit id="671" resname="/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/" restype="string" datatype="html">
+        <source>/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/</source>
+        <target>/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/</target>
       </trans-unit>
       <trans-unit id="672" resname="&#40;&lt;%=member.country.truncate&#40;{length:15}&#41;%&gt;&#41;" restype="string" datatype="html">
         <source>&#40;&lt;%=member.country.truncate&#40;{length:15}&#41;%&gt;&#41;</source>
@@ -3066,9 +3066,9 @@
         <source>HEIGHT</source>
         <target>ALTURA</target>
       </trans-unit>
-      <trans-unit id="674" resname="&apos; &lt;%=member.height_in%&gt;" restype="string" datatype="html">
-        <source>&apos; &lt;%=member.height_in%&gt;</source>
-        <target>&apos; &lt;%=member.height_in%&gt;</target>
+      <trans-unit id="674" resname="&apos;" restype="string" datatype="html">
+        <source>&apos;</source>
+        <target>&apos;</target>
       </trans-unit>
       <trans-unit id="675" resname="WEIGHT" restype="string" datatype="html">
         <source>WEIGHT</source>
@@ -3234,17 +3234,17 @@
         <source>PHARMACY</source>
         <target>FARMACIA</target>
       </trans-unit>
-      <trans-unit id="711" resname="FAX &lt;%=person.pharm_fax%&gt;" restype="string" datatype="html">
-        <source>FAX &lt;%=person.pharm_fax%&gt;</source>
-        <target>FAX &lt;%=person.pharm_fax%&gt;</target>
+      <trans-unit id="711" resname="FAX" restype="string" datatype="html">
+        <source>FAX</source>
+        <target>FAX</target>
       </trans-unit>
       <trans-unit id="712" resname="PHONE" restype="string" datatype="html">
         <source>PHONE</source>
         <target>TELÉFONO</target>
       </trans-unit>
-      <trans-unit id="713" resname="FAX &lt;%=person.pharm_mail_fax%&gt;" restype="string" datatype="html">
-        <source>FAX &lt;%=person.pharm_mail_fax%&gt;</source>
-        <target>FAX &lt;%=person.pharm_mail_fax%&gt;</target>
+      <trans-unit id="713" resname="FAX" restype="string" datatype="html">
+        <source>FAX</source>
+        <target>FAX</target>
       </trans-unit>
       <trans-unit id="714" resname="INSURANCE" restype="string" datatype="html">
         <source>INSURANCE</source>
@@ -3322,9 +3322,9 @@
         <source>YOU ARE HERE</source>
         <target>ESTÁS AQUÍ</target>
       </trans-unit>
-      <trans-unit id="731" resname="-&lt;%= level.score_range_high %&gt;" restype="string" datatype="html">
-        <source>-&lt;%= level.score_range_high %&gt;</source>
-        <target>-&lt;%= level.score_range_high %&gt;</target>
+      <trans-unit id="731" resname="-" restype="string" datatype="html">
+        <source>-</source>
+        <target>-</target>
       </trans-unit>
       <trans-unit id="732" resname="Full price" restype="string" datatype="html">
         <source>Full price</source>
@@ -3450,17 +3450,17 @@
         <source>UPLOADED BY</source>
         <target>SUBIDO POR</target>
       </trans-unit>
-      <trans-unit id="759" resname="Uploaded &lt;%=upload.upload_date%&gt;" restype="string" datatype="html">
-        <source>Uploaded &lt;%=upload.upload_date%&gt;</source>
-        <target>Subido el &lt;%=upload.upload_date%&gt;</target>
+      <trans-unit id="759" resname="Uploaded" restype="string" datatype="html">
+        <source>Uploaded</source>
+        <target>Subido el</target>
       </trans-unit>
       <trans-unit id="760" resname="SENT TO" restype="string" datatype="html">
         <source>SENT TO</source>
         <target>ENVIADO A</target>
       </trans-unit>
-      <trans-unit id="761" resname="Shared on &lt;%=val.upload_share.created_at%&gt;" restype="string" datatype="html">
-        <source>Shared on &lt;%=val.upload_share.created_at%&gt;</source>
-        <target>Compartido en &lt;%=val.upload_share.created_at%&gt;</target>
+      <trans-unit id="761" resname="Shared on" restype="string" datatype="html">
+        <source>Shared on</source>
+        <target>Compartido en</target>
       </trans-unit>
       <trans-unit id="762" resname="CONVERSATIONS" restype="string" datatype="html">
         <source>CONVERSATIONS</source>
@@ -3646,9 +3646,9 @@
         <source>If the doctor doesn’t respond within 72 hours, we’ll issue a full refund.</source>
         <target>Si el doctor no responde dentro de 72 horas, emitiremos un reembolso completo.</target>
       </trans-unit>
-      <trans-unit id="800" resname="&amp;&#35;36;&lt;%=requiredCredits %&gt;" restype="string" datatype="html">
-        <source>&amp;&#35;36;&lt;%=requiredCredits %&gt;</source>
-        <target>&amp;&#35;36;&lt;%=requiredCredits %&gt;</target>
+      <trans-unit id="800" resname="&amp;&#35;36;" restype="string" datatype="html">
+        <source>&amp;&#35;36;</source>
+        <target>&amp;&#35;36;</target>
       </trans-unit>
       <trans-unit id="801" resname="Get discounts by increasing your HealthScore. &lt;a class=&quot;info_hover_buy_h info_hover_buy1_h&quot; id=&quot;buy1&quot; style=&quot;font-weight:600&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Get discounts by increasing your HealthScore. &lt;a class=&quot;info_hover_buy_h info_hover_buy1_h&quot; id=&quot;buy1&quot; style=&quot;font-weight:600&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
@@ -3726,9 +3726,9 @@
         <source>I know the right doctor who may be able to help you:</source>
         <target>Conozco al doctor adecuado que puede ser capaz de ayudarte:</target>
       </trans-unit>
-      <trans-unit id="818" resname="Level &lt;%=item.attached_object.expert.level_id %&gt;" restype="string" datatype="html">
-        <source>Level &lt;%=item.attached_object.expert.level_id %&gt;</source>
-        <target>Nivel &lt;%=item.attached_object.expert.level_id %&gt;</target>
+      <trans-unit id="818" resname="Level" restype="string" datatype="html">
+        <source>Level</source>
+        <target>Nivel</target>
       </trans-unit>
       <trans-unit id="819" resname="Would you like to forward your message to &lt;%=item.attached_object.expert.full_name%&gt;?" restype="string" datatype="html">
         <source>Would you like to forward your message to &lt;%=item.attached_object.expert.full_name%&gt;?</source>
@@ -3978,9 +3978,9 @@
         <source>Hi,</source>
         <target>Hola,</target>
       </trans-unit>
-      <trans-unit id="875" resname="&quot;&gt;&lt;%=expertname%&gt;" restype="string" datatype="html">
-        <source>&quot;&gt;&lt;%=expertname%&gt;</source>
-        <target>&quot;&gt;&lt;%=expertname%&gt;</target>
+      <trans-unit id="875" resname="&quot;&gt;" restype="string" datatype="html">
+        <source>&quot;&gt;</source>
+        <target>&quot;&gt;</target>
       </trans-unit>
       <trans-unit id="876" resname="Available" restype="string" datatype="html">
         <source>Available</source>
@@ -4174,13 +4174,13 @@
         <source>LOG IN</source>
         <target>INICIAR SESIÓN</target>
       </trans-unit>
-      <trans-unit id="917" resname="11 ? &apos;9px&apos; : &apos;11px&apos;%&gt;&quot;&gt;&lt;%= &#40;&#40;App.user &amp;&amp; App.user.get&#40;&quot;auth_token&quot;&#41; != &apos;expert_app_user&apos;&#41; ? App.user.get&#40;&quot;person.level_name&quot;&#41; : &quot;PENDING&quot;&#41;.truncate&#40;{length: 13, tail: &apos;..&apos;, greater_than_only:true}&#41; %&gt;" restype="string" datatype="html">
-        <source>11 ? &apos;9px&apos; : &apos;11px&apos;%&gt;&quot;&gt;&lt;%= &#40;&#40;App.user &amp;&amp; App.user.get&#40;&quot;auth_token&quot;&#41; != &apos;expert_app_user&apos;&#41; ? App.user.get&#40;&quot;person.level_name&quot;&#41; : &quot;PENDING&quot;&#41;.truncate&#40;{length: 13, tail: &apos;..&apos;, greater_than_only:true}&#41; %&gt;</source>
-        <target>11 ? &apos;9px&apos; : &apos;11px&apos;%&gt;&quot;&gt;&lt;%= &#40;&#40;App.user &amp;&amp; App.user.get&#40;&quot;auth_token&quot;&#41; != &apos;expert_app_user&apos;&#41; ? App.user.get&#40;&quot;person.level_name&quot;&#41; : &quot;PENDING&quot;&#41;.truncate&#40;{length: 13, tail: &apos;..&apos;, greater_than_only:true}&#41; %&gt;</target>
+      <trans-unit id="917" resname="11 ? &apos;9px&apos; : &apos;11px&apos;%&gt;&quot;&gt;" restype="string" datatype="html">
+        <source>11 ? &apos;9px&apos; : &apos;11px&apos;%&gt;&quot;&gt;</source>
+        <target>11 ? &apos;9px&apos; : &apos;11px&apos;%&gt;&quot;&gt;</target>
       </trans-unit>
-      <trans-unit id="918" resname="Level &lt;%=App.user.get&#40;&quot;person.level_id&quot;&#41; %&gt;" restype="string" datatype="html">
-        <source>Level &lt;%=App.user.get&#40;&quot;person.level_id&quot;&#41; %&gt;</source>
-        <target>Nivel &lt;%=App.user.get&#40;&quot;person.level_id&quot;&#41; %&gt;</target>
+      <trans-unit id="918" resname="Level" restype="string" datatype="html">
+        <source>Level</source>
+        <target>Nivel</target>
       </trans-unit>
       <trans-unit id="919" resname="points" restype="string" datatype="html">
         <source>points</source>
@@ -4198,9 +4198,9 @@
         <source>You&apos;re not following any doctors yet. &lt;a href=&quot;&#35;find_doctors/&quot;&gt;Search&lt;/a&gt; to follow some now.</source>
         <target>Aún no estás siguiendo a ningún doctor. &lt;a href=&quot;&#35;find_doctors/&quot;&gt;Busca&lt;/a&gt; para seguir a alguunos ahora.</target>
       </trans-unit>
-      <trans-unit id="922" resname="Level &lt;%=expert.level_id %&gt;" restype="string" datatype="html">
-        <source>Level &lt;%=expert.level_id %&gt;</source>
-        <target>Nivel &lt;%=expert.level_id %&gt;</target>
+      <trans-unit id="922" resname="Level" restype="string" datatype="html">
+        <source>Level</source>
+        <target>Nivel</target>
       </trans-unit>
     </body>
   </file>
@@ -4214,9 +4214,9 @@
   </file>
   <file original="public/mobile/app/js/templates/find_doctors/map_popup.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="924" resname="/&lt;%= experts_count %&gt;" restype="string" datatype="html">
-        <source>/&lt;%= experts_count %&gt;</source>
-        <target>/&lt;%= experts_count %&gt;</target>
+      <trans-unit id="924" resname="/" restype="string" datatype="html">
+        <source>/</source>
+        <target>/</target>
       </trans-unit>
     </body>
   </file>
@@ -4262,9 +4262,9 @@
         <source>Thanks for agreeing with this tip.</source>
         <target>Gracias por estar de acuerdo con este tip.</target>
       </trans-unit>
-      <trans-unit id="934" resname="DOCTOR&lt;%=user_answer.agrees.length&gt; 1 ? &apos;S&apos; : &apos;&apos;%&gt;&lt;%=user_answer.agrees.length == 1 ? &apos;AGREES&apos; : &apos;AGREE&apos;%&gt;" restype="string" datatype="html">
-        <source>DOCTOR&lt;%=user_answer.agrees.length&gt; 1 ? &apos;S&apos; : &apos;&apos;%&gt;&lt;%=user_answer.agrees.length == 1 ? &apos;AGREES&apos; : &apos;AGREE&apos;%&gt;</source>
-        <target>DOCTOR&lt;%=user_answer.agrees.length&gt; 1 ? &apos;S&apos; : &apos;&apos;%&gt;&lt;%=user_answer.agrees.length == 1 ? &apos;ESTÁ DE ACUERDO&apos; : &apos;ESTÁN DE ACUERDO&apos;%&gt;</target>
+      <trans-unit id="934" resname="DOCTOR" restype="string" datatype="html">
+        <source>DOCTOR</source>
+        <target>DOCTOR</target>
       </trans-unit>
     </body>
   </file>
@@ -4302,9 +4302,9 @@
   </file>
   <file original="public/mobile/app/js/templates/feeds/most_popular_tips.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="940" resname="All categories &lt;%=App.sessionVars.tipsFeedVars.isAllCategories ? &quot; &amp;&#35;155;&quot; : &quot;&quot;%&gt;" restype="string" datatype="html">
-        <source>All categories &lt;%=App.sessionVars.tipsFeedVars.isAllCategories ? &quot; &amp;&#35;155;&quot; : &quot;&quot;%&gt;</source>
-        <target>Todas las categorías &lt;%=App.sessionVars.tipsFeedVars.isAllCategories ? &quot; &amp;&#35;155;&quot; : &quot;&quot;%&gt;</target>
+      <trans-unit id="940" resname="All categories" restype="string" datatype="html">
+        <source>All categories</source>
+        <target>Todas las categorías</target>
       </trans-unit>
     </body>
   </file>
@@ -4314,9 +4314,9 @@
         <source>This feed will be back soon! Search for topics and doctors to follow in the mean time.</source>
         <target>¡Este feed estará de vuelta pronto! Mientras tanto, busca temas y doctores para seguirlos.</target>
       </trans-unit>
-      <trans-unit id="942" resname="Re: MedPub&#35;&lt;%=user_answer.question_publication_id%&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%=user_answer.question_publication_id%&gt;</source>
-        <target>Re: MedPub&#35;&lt;%=user_answer.question_publication_id%&gt;</target>
+      <trans-unit id="942" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
       <trans-unit id="943" resname="agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot;&gt;&lt;span class=&quot;actor_text bold cus_font_size_actor_text&quot;&gt;&lt;%=user_answer.actor.last_name ? &apos;Dr. &apos; + user_answer.actor.last_name : user_answer.actor.name %&gt;&apos;s&lt;/span&gt;&lt;/a&gt; answer to:" restype="string" datatype="html">
         <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot;&gt;&lt;span class=&quot;actor_text bold cus_font_size_actor_text&quot;&gt;&lt;%=user_answer.actor.last_name ? &apos;Dr. &apos; + user_answer.actor.last_name : user_answer.actor.name %&gt;&apos;s&lt;/span&gt;&lt;/a&gt; answer to:</source>
@@ -4422,17 +4422,17 @@
         <source>&amp;rarr;</source>
         <target>&amp;rarr;</target>
       </trans-unit>
-      <trans-unit id="964" resname="Referred &lt;span style=&quot;font-weight: 600&quot;&gt;by&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;" restype="string" datatype="html">
-        <source>Referred &lt;span style=&quot;font-weight: 600&quot;&gt;by&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;</source>
-        <target>Referido &lt;span style=&quot;font-weight: 600&quot;&gt;por&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;</target>
+      <trans-unit id="964" resname="Referred &lt;span style=&quot;font-weight: 600&quot;&gt;by&lt;/span&gt;" restype="string" datatype="html">
+        <source>Referred &lt;span style=&quot;font-weight: 600&quot;&gt;by&lt;/span&gt;</source>
+        <target>Referido &lt;span style=&quot;font-weight: 600&quot;&gt;por&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="965" resname="&amp;larr;" restype="string" datatype="html">
         <source>&amp;larr;</source>
         <target>&amp;larr;</target>
       </trans-unit>
-      <trans-unit id="966" resname="Refers &lt;span style=&quot;font-weight: 600&quot;&gt;to&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;" restype="string" datatype="html">
-        <source>Refers &lt;span style=&quot;font-weight: 600&quot;&gt;to&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;</source>
-        <target>Refiere &lt;span style=&quot;font-weight: 600&quot;&gt;a&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;</target>
+      <trans-unit id="966" resname="Refers &lt;span style=&quot;font-weight: 600&quot;&gt;to&lt;/span&gt;" restype="string" datatype="html">
+        <source>Refers &lt;span style=&quot;font-weight: 600&quot;&gt;to&lt;/span&gt;</source>
+        <target>Refiere &lt;span style=&quot;font-weight: 600&quot;&gt;a&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="967" resname="&amp;harr;" restype="string" datatype="html">
         <source>&amp;harr;</source>
@@ -4478,9 +4478,9 @@
         <source>This doctor doesn&apos;t have any activity to display at the moment.</source>
         <target>Este doctor no tiene ninguna actividad que mostrar en este momento.</target>
       </trans-unit>
-      <trans-unit id="975" resname="Re: MedPub&#35;&lt;%=user_answer.publication_id%&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%=user_answer.publication_id%&gt;</source>
-        <target>Re: MedPub&#35;&lt;%=user_answer.publication_id%&gt;</target>
+      <trans-unit id="975" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
       <trans-unit id="976" resname="agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post &apos; : &apos; answer to &apos;%&gt;&lt;a href=&quot;&#35;member_question/&lt;%=user_answer.question_id%&gt;/&quot; class=&quot;a_handler&quot;&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post &apos; : &apos; answer to &apos;%&gt;&lt;a href=&quot;&#35;member_question/&lt;%=user_answer.question_id%&gt;/&quot; class=&quot;a_handler&quot;&gt;</source>
@@ -4802,17 +4802,17 @@
         <source>RESIDENCIES</source>
         <target>RESIDENCIAS</target>
       </trans-unit>
-      <trans-unit id="1047" resname=", &lt;%= residencies_v2.specialty %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= residencies_v2.specialty %&gt;</source>
-        <target>, &lt;%= residencies_v2.specialty %&gt;</target>
+      <trans-unit id="1047" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="1048" resname="MEDICAL/GRADUATE SCHOOL" restype="string" datatype="html">
         <source>MEDICAL/GRADUATE SCHOOL</source>
         <target>ESCUELA DE MEDICINA/POSGRADO</target>
       </trans-unit>
-      <trans-unit id="1049" resname=", Class Of &lt;%=medical_school_v2.year%&gt;" restype="string" datatype="html">
-        <source>, Class Of &lt;%=medical_school_v2.year%&gt;</source>
-        <target>, Clase del &lt;%=medical_school_v2.year%&gt;</target>
+      <trans-unit id="1049" resname=", Class Of" restype="string" datatype="html">
+        <source>, Class Of</source>
+        <target>, Clase del</target>
       </trans-unit>
       <trans-unit id="1050" resname="AWARDS &amp; AFFILIATIONS" restype="string" datatype="html">
         <source>AWARDS &amp; AFFILIATIONS</source>
@@ -4942,9 +4942,9 @@
         <source>SAT</source>
         <target>SAB</target>
       </trans-unit>
-      <trans-unit id="1078" resname="to&lt;br&gt;&lt;%=to%&gt;" restype="string" datatype="html">
-        <source>to&lt;br&gt;&lt;%=to%&gt;</source>
-        <target>para&lt;br&gt;&lt;%=to%&gt;</target>
+      <trans-unit id="1078" resname="to&lt;br&gt;" restype="string" datatype="html">
+        <source>to&lt;br&gt;</source>
+        <target>para&lt;br&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -4962,25 +4962,25 @@
         <source>Revenue:</source>
         <target>Ingresos:</target>
       </trans-unit>
-      <trans-unit id="1082" resname="$&lt;%=&#40;typeof&#40;data.year_to_date_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_revenue_cents ? data.year_to_date_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;" restype="string" datatype="html">
-        <source>$&lt;%=&#40;typeof&#40;data.year_to_date_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_revenue_cents ? data.year_to_date_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</source>
-        <target>$&lt;%=&#40;typeof&#40;data.year_to_date_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_revenue_cents ? data.year_to_date_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</target>
+      <trans-unit id="1082" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target>$</target>
       </trans-unit>
-      <trans-unit id="1083" resname="$&lt;%=&#40;typeof&#40;data.lifetime_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_revenue_cents ? data.lifetime_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;" restype="string" datatype="html">
-        <source>$&lt;%=&#40;typeof&#40;data.lifetime_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_revenue_cents ? data.lifetime_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</source>
-        <target>$&lt;%=&#40;typeof&#40;data.lifetime_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_revenue_cents ? data.lifetime_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</target>
+      <trans-unit id="1083" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target>$</target>
       </trans-unit>
       <trans-unit id="1084" resname="Donations:" restype="string" datatype="html">
         <source>Donations:</source>
         <target>Donaciones:</target>
       </trans-unit>
-      <trans-unit id="1085" resname="$&lt;%=&#40;typeof&#40;data.year_to_date_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_donated_cents ? data.year_to_date_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;" restype="string" datatype="html">
-        <source>$&lt;%=&#40;typeof&#40;data.year_to_date_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_donated_cents ? data.year_to_date_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</source>
-        <target>$&lt;%=&#40;typeof&#40;data.year_to_date_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_donated_cents ? data.year_to_date_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</target>
+      <trans-unit id="1085" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target>$</target>
       </trans-unit>
-      <trans-unit id="1086" resname="$&lt;%=&#40;typeof&#40;data.lifetime_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_donated_cents ? data.lifetime_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;" restype="string" datatype="html">
-        <source>$&lt;%=&#40;typeof&#40;data.lifetime_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_donated_cents ? data.lifetime_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</source>
-        <target>$&lt;%=&#40;typeof&#40;data.lifetime_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_donated_cents ? data.lifetime_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</target>
+      <trans-unit id="1086" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target>$</target>
       </trans-unit>
       <trans-unit id="1087" resname="Consults:" restype="string" datatype="html">
         <source>Consults:</source>
@@ -5062,9 +5062,9 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_recommend/expert_recommend.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1102" resname="Dr. &lt;%=App.session.expert_recommend.expert_name%&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%=App.session.expert_recommend.expert_name%&gt;</source>
-        <target>Dr. &lt;%=App.session.expert_recommend.expert_name%&gt;</target>
+      <trans-unit id="1102" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
       <trans-unit id="1103" resname="Remember, what you say might end up on this doctor&apos;s Virtual Practice page." restype="string" datatype="html">
         <source>Remember, what you say might end up on this doctor&apos;s Virtual Practice page.</source>
@@ -5354,9 +5354,9 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_peer_review.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1165" resname=", &lt;%=user_answers[0].user_answer.user_question.meta_info.accept_insurance%&gt;" restype="string" datatype="html">
-        <source>, &lt;%=user_answers[0].user_answer.user_question.meta_info.accept_insurance%&gt;</source>
-        <target>, &lt;%=user_answers[0].user_answer.user_question.meta_info.accept_insurance%&gt;</target>
+      <trans-unit id="1165" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="1166" resname="A Dr. posted:" restype="string" datatype="html">
         <source>A Dr. posted:</source>
@@ -5366,17 +5366,17 @@
         <source>are seeking a tip on &lt;%=user_answers[0].user_answer.user_question.tip_topic_name.trim&#40;&#41;%&gt;:</source>
         <target>están buscando un tipo sobre &lt;%=user_answers[0].user_answer.user_question.tip_topic_name.trim&#40;&#41;%&gt;:</target>
       </trans-unit>
-      <trans-unit id="1168" resname="Re: MedPub&#35;&lt;%=user_answers[0].user_answer.user_question.publication_id%&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%=user_answers[0].user_answer.user_question.publication_id%&gt;</source>
-        <target>Re: MedPub&#35;&lt;%=user_answers[0].user_answer.user_question.publication_id%&gt;</target>
+      <trans-unit id="1168" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
-      <trans-unit id="1169" resname="Edit your &lt;%=user_answers[0].user_answer.user_question.tip_question ? &apos;tip&apos; : &apos;answer&apos;%&gt;" restype="string" datatype="html">
-        <source>Edit your &lt;%=user_answers[0].user_answer.user_question.tip_question ? &apos;tip&apos; : &apos;answer&apos;%&gt;</source>
-        <target>Editar tu &lt;%=user_answers[0].user_answer.user_question.tip_question ? &apos;tip&apos; : &apos;respuesta&apos;%&gt;</target>
+      <trans-unit id="1169" resname="Edit your" restype="string" datatype="html">
+        <source>Edit your</source>
+        <target>Editar tu</target>
       </trans-unit>
-      <trans-unit id="1170" resname="Please provide Your &lt;%=user_answers[0].user_answer.user_question.tip_question ? &apos;own Tip&apos; : &apos;answer&apos;%&gt;" restype="string" datatype="html">
-        <source>Please provide Your &lt;%=user_answers[0].user_answer.user_question.tip_question ? &apos;own Tip&apos; : &apos;answer&apos;%&gt;</source>
-        <target>Por favor, proporciona Tu &lt;%=user_answers[0].user_answer.user_question.tip_question ? &apos;propio tip&apos; : &apos;respuesta&apos;%&gt;</target>
+      <trans-unit id="1170" resname="Please provide Your" restype="string" datatype="html">
+        <source>Please provide Your</source>
+        <target>Por favor, proporciona Tu</target>
       </trans-unit>
       <trans-unit id="1171" resname="DOCTORS AGREES" restype="string" datatype="html">
         <source>DOCTORS AGREES</source>
@@ -5442,9 +5442,9 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_patients/invite_patients.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1183" resname=", &lt;%=person.user_question.state%&gt;" restype="string" datatype="html">
-        <source>, &lt;%=person.user_question.state%&gt;</source>
-        <target>, &lt;%=person.user_question.state%&gt;</target>
+      <trans-unit id="1183" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="1184" resname="aksed:" restype="string" datatype="html">
         <source>aksed:</source>
@@ -5690,9 +5690,9 @@
         <source>Type in appointment and add</source>
         <target>Escribe cita y añade</target>
       </trans-unit>
-      <trans-unit id="1239" resname=", &lt;%=fellowship.hospital ? fellowship.hospital : &quot;&quot;%&gt;" restype="string" datatype="html">
-        <source>, &lt;%=fellowship.hospital ? fellowship.hospital : &quot;&quot;%&gt;</source>
-        <target>, &lt;%=fellowship.hospital ? fellowship.hospital : &quot;&quot;%&gt;</target>
+      <trans-unit id="1239" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="1240" resname="Type in fellowship" restype="string" datatype="html">
         <source>Type in fellowship</source>
@@ -5702,9 +5702,9 @@
         <source>Type in hospital or program</source>
         <target>Escribe hospital o programa</target>
       </trans-unit>
-      <trans-unit id="1242" resname=", &lt;%=residency.primary_hospital ? residency.primary_hospital : &apos;&apos;%&gt;" restype="string" datatype="html">
-        <source>, &lt;%=residency.primary_hospital ? residency.primary_hospital : &apos;&apos;%&gt;</source>
-        <target>, &lt;%=residency.primary_hospital ? residency.primary_hospital : &apos;&apos;%&gt;</target>
+      <trans-unit id="1242" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="1243" resname="Type in specialty" restype="string" datatype="html">
         <source>Type in specialty</source>
@@ -5714,9 +5714,9 @@
         <source>MEDICAL/GRADUATE SCHOOLS</source>
         <target>ESCUELAS DE MEDICINA/POSGRADO</target>
       </trans-unit>
-      <trans-unit id="1245" resname=", &lt;%=school.year%&gt;, &lt;%=school.degree%&gt;" restype="string" datatype="html">
-        <source>, &lt;%=school.year%&gt;, &lt;%=school.degree%&gt;</source>
-        <target>, &lt;%=school.year%&gt;, &lt;%=school.degree%&gt;</target>
+      <trans-unit id="1245" resname=", &lt;%=school.year%&gt;," restype="string" datatype="html">
+        <source>, &lt;%=school.year%&gt;,</source>
+        <target>, &lt;%=school.year%&gt;,</target>
       </trans-unit>
       <trans-unit id="1246" resname="Type in school and select" restype="string" datatype="html">
         <source>Type in school and select</source>
@@ -5898,9 +5898,9 @@
         <source>WEBSITE TITLE</source>
         <target>TÍTULO DE SITIO WEB</target>
       </trans-unit>
-      <trans-unit id="1287" resname="value=&quot;&lt;%= code %&gt;&quot;&gt;&lt;%= code %&gt;" restype="string" datatype="html">
-        <source>value=&quot;&lt;%= code %&gt;&quot;&gt;&lt;%= code %&gt;</source>
-        <target>value=&quot;&lt;%= code %&gt;&quot;&gt;&lt;%= code %&gt;</target>
+      <trans-unit id="1287" resname="value=&quot;&lt;%= code %&gt;&quot;&gt;" restype="string" datatype="html">
+        <source>value=&quot;&lt;%= code %&gt;&quot;&gt;</source>
+        <target>value=&quot;&lt;%= code %&gt;&quot;&gt;</target>
       </trans-unit>
       <trans-unit id="1288" resname="office hours" restype="string" datatype="html">
         <source>office hours</source>
@@ -5922,17 +5922,17 @@
         <source>/&gt;&lt;span class=&quot;autocomplete_schools&quot;&gt;&lt;/span&gt;</source>
         <target>/&gt;&lt;span class=&quot;autocomplete_schools&quot;&gt;&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1293" resname="value=&quot;&lt;%= i %&gt;&quot;&gt;&lt;%= i %&gt;" restype="string" datatype="html">
-        <source>value=&quot;&lt;%= i %&gt;&quot;&gt;&lt;%= i %&gt;</source>
-        <target>value=&quot;&lt;%= i %&gt;&quot;&gt;&lt;%= i %&gt;</target>
+      <trans-unit id="1293" resname="value=&quot;&lt;%= i %&gt;&quot;&gt;" restype="string" datatype="html">
+        <source>value=&quot;&lt;%= i %&gt;&quot;&gt;</source>
+        <target>value=&quot;&lt;%= i %&gt;&quot;&gt;</target>
       </trans-unit>
       <trans-unit id="1294" resname="Qualifying Degree" restype="string" datatype="html">
         <source>Qualifying Degree</source>
         <target>Grado de Calificación</target>
       </trans-unit>
-      <trans-unit id="1295" resname="value=&quot;&lt;%= v %&gt;&quot;&gt;&lt;%= k %&gt;" restype="string" datatype="html">
-        <source>value=&quot;&lt;%= v %&gt;&quot;&gt;&lt;%= k %&gt;</source>
-        <target>value=&quot;&lt;%= v %&gt;&quot;&gt;&lt;%= k %&gt;</target>
+      <trans-unit id="1295" resname="value=&quot;&lt;%= v %&gt;&quot;&gt;" restype="string" datatype="html">
+        <source>value=&quot;&lt;%= v %&gt;&quot;&gt;</source>
+        <target>value=&quot;&lt;%= v %&gt;&quot;&gt;</target>
       </trans-unit>
       <trans-unit id="1296" resname="RESIDENCIES:" restype="string" datatype="html">
         <source>RESIDENCIES:</source>
@@ -6190,9 +6190,9 @@
         <source>COMPOSE MESSAGE</source>
         <target>REDACTAR MENSAJE</target>
       </trans-unit>
-      <trans-unit id="1352" resname="To: &lt;%=expertName.truncate&#40;{length:20}&#41;%&gt;" restype="string" datatype="html">
-        <source>To: &lt;%=expertName.truncate&#40;{length:20}&#41;%&gt;</source>
-        <target>Para: &lt;%=expertName.truncate&#40;{length:20}&#41;%&gt;</target>
+      <trans-unit id="1352" resname="To:" restype="string" datatype="html">
+        <source>To:</source>
+        <target>Para:</target>
       </trans-unit>
       <trans-unit id="1353" resname="TO:" restype="string" datatype="html">
         <source>TO:</source>
@@ -6230,9 +6230,9 @@
         <source>Polis</source>
         <target>Polis</target>
       </trans-unit>
-      <trans-unit id="1361" resname=",&lt;%=person.state%&gt;" restype="string" datatype="html">
-        <source>,&lt;%=person.state%&gt;</source>
-        <target>,&lt;%=person.state%&gt;</target>
+      <trans-unit id="1361" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
     </body>
   </file>
@@ -6262,9 +6262,9 @@
         <source>&apos;&#41;, url&#40;imgs/masks/avatar_no_border.png&#41;&quot;&gt;</source>
         <target>&apos;&#41;, url&#40;imgs/masks/avatar_no_border.png&#41;&quot;&gt;</target>
       </trans-unit>
-      <trans-unit id="1367" resname="Level &lt;%=referral.expert.level_id %&gt;" restype="string" datatype="html">
-        <source>Level &lt;%=referral.expert.level_id %&gt;</source>
-        <target>Nivel &lt;%=referral.expert.level_id %&gt;</target>
+      <trans-unit id="1367" resname="Level" restype="string" datatype="html">
+        <source>Level</source>
+        <target>Nivel</target>
       </trans-unit>
       <trans-unit id="1368" resname="Known for" restype="string" datatype="html">
         <source>Known for</source>
@@ -6286,13 +6286,13 @@
         <source>RESPONSIVENESS</source>
         <target>CAPACIDAD DE RESPUESTA</target>
       </trans-unit>
-      <trans-unit id="1373" resname="Level &lt;%=val.attached_object.expert.level_id %&gt;" restype="string" datatype="html">
-        <source>Level &lt;%=val.attached_object.expert.level_id %&gt;</source>
-        <target>Nivel &lt;%=val.attached_object.expert.level_id %&gt;</target>
+      <trans-unit id="1373" resname="Level" restype="string" datatype="html">
+        <source>Level</source>
+        <target>Nivel</target>
       </trans-unit>
-      <trans-unit id="1374" resname="&quot;&gt;&lt;%=val.item.message.content%&gt;" restype="string" datatype="html">
-        <source>&quot;&gt;&lt;%=val.item.message.content%&gt;</source>
-        <target>&quot;&gt;&lt;%=val.item.message.content%&gt;</target>
+      <trans-unit id="1374" resname="&quot;&gt;" restype="string" datatype="html">
+        <source>&quot;&gt;</source>
+        <target>&quot;&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -6414,9 +6414,9 @@
         <source>We know we&apos;re priviledged to have you here on HealthTap, and you&apos;ve earned well-deserved points and credits.</source>
         <target>Sabemos que somos privilegiados de tenerte aquí en HealthTap, y te has ganado unos puntos y créditos bien merecidos.</target>
       </trans-unit>
-      <trans-unit id="1404" resname="Re: MedPub&#35;&lt;%=episode.item.message.attached_object_id%&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%=episode.item.message.attached_object_id%&gt;</source>
-        <target>Re: MedPub&#35;&lt;%=episode.item.message.attached_object_id%&gt;</target>
+      <trans-unit id="1404" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
     </body>
   </file>
@@ -6466,9 +6466,9 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_messages/expert_conversation.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1415" resname=",&lt;%=conversation.sender.person.state%&gt;" restype="string" datatype="html">
-        <source>,&lt;%=conversation.sender.person.state%&gt;</source>
-        <target>,&lt;%=conversation.sender.person.state%&gt;</target>
+      <trans-unit id="1415" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
     </body>
   </file>
@@ -6570,21 +6570,21 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_files/expert_file_share.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1434" resname="To: &lt;%=App.session.tempExpertInfo.expertName%&gt;" restype="string" datatype="html">
-        <source>To: &lt;%=App.session.tempExpertInfo.expertName%&gt;</source>
-        <target>Para: &lt;%=App.session.tempExpertInfo.expertName%&gt;</target>
+      <trans-unit id="1434" resname="To:" restype="string" datatype="html">
+        <source>To:</source>
+        <target>Para:</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_files/expert_file_info_0.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1435" resname="Uploaded &lt;%=shared_by.shared_on%&gt;" restype="string" datatype="html">
-        <source>Uploaded &lt;%=shared_by.shared_on%&gt;</source>
-        <target>Subido &lt;%=shared_by.shared_on%&gt;</target>
+      <trans-unit id="1435" resname="Uploaded" restype="string" datatype="html">
+        <source>Uploaded</source>
+        <target>Subido</target>
       </trans-unit>
-      <trans-unit id="1436" resname="Shared on &lt;%=val.share_on%&gt;" restype="string" datatype="html">
-        <source>Shared on &lt;%=val.share_on%&gt;</source>
-        <target>Compartido en &lt;%=val.share_on%&gt;</target>
+      <trans-unit id="1436" resname="Shared on" restype="string" datatype="html">
+        <source>Shared on</source>
+        <target>Compartido en</target>
       </trans-unit>
     </body>
   </file>
@@ -6614,13 +6614,13 @@
         <source>People Helped</source>
         <target>Personas Ayudadas</target>
       </trans-unit>
-      <trans-unit id="1442" resname="LEVEL &lt;%=expert.level_id%&gt;" restype="string" datatype="html">
-        <source>LEVEL &lt;%=expert.level_id%&gt;</source>
-        <target>NIVEL &lt;%=expert.level_id%&gt;</target>
+      <trans-unit id="1442" resname="LEVEL" restype="string" datatype="html">
+        <source>LEVEL</source>
+        <target>NIVEL</target>
       </trans-unit>
-      <trans-unit id="1443" resname="LEVEL &lt;%=expert.level_id + 1%&gt;" restype="string" datatype="html">
-        <source>LEVEL &lt;%=expert.level_id + 1%&gt;</source>
-        <target>NIVEL &lt;%=expert.level_id + 1%&gt;</target>
+      <trans-unit id="1443" resname="LEVEL" restype="string" datatype="html">
+        <source>LEVEL</source>
+        <target>NIVEL</target>
       </trans-unit>
       <trans-unit id="1444" resname="/ &lt;%=expert.next_level_point_range_start ? expert.next_level_point_range_start.toString&#40;&#41;.digits&#40;&#41;: &apos;&apos;%&gt;&lt;span style=&quot;font-style: italic; text-transform:none;&quot;&gt;Points &amp;raquo;&lt;/span&gt;" restype="string" datatype="html">
         <source>/ &lt;%=expert.next_level_point_range_start ? expert.next_level_point_range_start.toString&#40;&#41;.digits&#40;&#41;: &apos;&apos;%&gt;&lt;span style=&quot;font-style: italic; text-transform:none;&quot;&gt;Points &amp;raquo;&lt;/span&gt;</source>
@@ -7510,9 +7510,9 @@
         <source>more answers to go until you reach</source>
         <target>más respuestas para que llegues al</target>
       </trans-unit>
-      <trans-unit id="1644" resname="LEVEL &lt;%=level_id%&gt;" restype="string" datatype="html">
-        <source>LEVEL &lt;%=level_id%&gt;</source>
-        <target>NIVEL &lt;%=level_id%&gt;</target>
+      <trans-unit id="1644" resname="LEVEL" restype="string" datatype="html">
+        <source>LEVEL</source>
+        <target>NIVEL</target>
       </trans-unit>
       <trans-unit id="1645" resname="You’ve earned" restype="string" datatype="html">
         <source>You’ve earned</source>
@@ -7546,9 +7546,9 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_answer/expert_answer_related_questions.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1652" resname=", &lt;%=user_question.actor.state%&gt;" restype="string" datatype="html">
-        <source>, &lt;%=user_question.actor.state%&gt;</source>
-        <target>, &lt;%=user_question.actor.state%&gt;</target>
+      <trans-unit id="1652" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
     </body>
   </file>
@@ -7578,13 +7578,13 @@
         <source>A &lt;%=user_question.actor.age_years%&gt; year old</source>
         <target>Un individuo de &lt;%=user_question.actor.age_years%&gt; años de edad</target>
       </trans-unit>
-      <trans-unit id="1659" resname="A &lt;%=user_question.actor.gender%&gt;" restype="string" datatype="html">
-        <source>A &lt;%=user_question.actor.gender%&gt;</source>
-        <target>Un individuo &lt;%=user_question.actor.gender%&gt;</target>
+      <trans-unit id="1659" resname="A" restype="string" datatype="html">
+        <source>A</source>
+        <target>Un individuo</target>
       </trans-unit>
-      <trans-unit id="1660" resname="Dr. &lt;%=user_question.actor.first_name%&gt;&lt;%=user_question.actor.last_name%&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%=user_question.actor.first_name%&gt;&lt;%=user_question.actor.last_name%&gt;</source>
-        <target>Dr. &lt;%=user_question.actor.first_name%&gt;&lt;%=user_question.actor.last_name%&gt;</target>
+      <trans-unit id="1660" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
       <trans-unit id="1661" resname="Please review before sending." restype="string" datatype="html">
         <source>Please review before sending.</source>
@@ -7594,9 +7594,9 @@
         <source>Un-Recycle</source>
         <target>No Reciclar</target>
       </trans-unit>
-      <trans-unit id="1663" resname="Dr. &lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt;&lt;%=App.user.get&#40;&quot;person.last_name&quot;&#41;%&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt;&lt;%=App.user.get&#40;&quot;person.last_name&quot;&#41;%&gt;</source>
-        <target>Dr. &lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt;&lt;%=App.user.get&#40;&quot;person.last_name&quot;&#41;%&gt;</target>
+      <trans-unit id="1663" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
       <trans-unit id="1664" resname="suggests &lt;span class=&quot;bold&quot;&gt;&lt;%=&#40;App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor&#41; ? &#40;App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;&#41; : &apos;&apos;%&gt;&lt;/span&gt;&apos;s answer:" restype="string" datatype="html">
         <source>suggests &lt;span class=&quot;bold&quot;&gt;&lt;%=&#40;App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor&#41; ? &#40;App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;&#41; : &apos;&apos;%&gt;&lt;/span&gt;&apos;s answer:</source>
@@ -7698,9 +7698,9 @@
         <source>/100</source>
         <target>/100</target>
       </trans-unit>
-      <trans-unit id="1685" resname="&quot;&gt;&lt;%=App.session.expertAnswerForm.longAnswer ? App.session.expertAnswerForm.longAnswer : &quot;&quot;%&gt;" restype="string" datatype="html">
-        <source>&quot;&gt;&lt;%=App.session.expertAnswerForm.longAnswer ? App.session.expertAnswerForm.longAnswer : &quot;&quot;%&gt;</source>
-        <target>&quot;&gt;&lt;%=App.session.expertAnswerForm.longAnswer ? App.session.expertAnswerForm.longAnswer : &quot;&quot;%&gt;</target>
+      <trans-unit id="1685" resname="&quot;&gt;" restype="string" datatype="html">
+        <source>&quot;&gt;</source>
+        <target>&quot;&gt;</target>
       </trans-unit>
       <trans-unit id="1686" resname="Answer Summary" restype="string" datatype="html">
         <source>Answer Summary</source>
@@ -7742,9 +7742,9 @@
         <source>400 characters</source>
         <target>400 caracteres</target>
       </trans-unit>
-      <trans-unit id="1696" resname="&quot;&gt;&lt;%=App.session.expertAnswerForm.longAnswer%&gt;" restype="string" datatype="html">
-        <source>&quot;&gt;&lt;%=App.session.expertAnswerForm.longAnswer%&gt;</source>
-        <target>&quot;&gt;&lt;%=App.session.expertAnswerForm.longAnswer%&gt;</target>
+      <trans-unit id="1696" resname="&quot;&gt;" restype="string" datatype="html">
+        <source>&quot;&gt;</source>
+        <target>&quot;&gt;</target>
       </trans-unit>
       <trans-unit id="1697" resname="ADD topic tags" restype="string" datatype="html">
         <source>ADD topic tags</source>
@@ -7938,9 +7938,9 @@
         <source>Cardiology</source>
         <target>Cardiología</target>
       </trans-unit>
-      <trans-unit id="1736" resname="Dr. &lt;%=val.answer_person_last_name%&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%=val.answer_person_last_name%&gt;</source>
-        <target>Dr. &lt;%=val.answer_person_last_name%&gt;</target>
+      <trans-unit id="1736" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
     </body>
   </file>
@@ -8154,9 +8154,9 @@
         <source>Recommends</source>
         <target>Recomienda</target>
       </trans-unit>
-      <trans-unit id="1784" resname="Dr. &lt;%=expert.name%&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%=expert.name%&gt;</source>
-        <target>Dr. &lt;%=expert.name%&gt;</target>
+      <trans-unit id="1784" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
       <trans-unit id="1785" resname="&#40;&lt;a class=&quot;tap_button edit_h selected italic&quot;&gt; Edit &lt;/a&gt;&#41;&amp;nbsp; &#40;&lt;a class=&quot;tap_button delete_h italic&quot;&gt;Delete&lt;/a&gt;&#41;" restype="string" datatype="html">
         <source>&#40;&lt;a class=&quot;tap_button edit_h selected italic&quot;&gt; Edit &lt;/a&gt;&#41;&amp;nbsp; &#40;&lt;a class=&quot;tap_button delete_h italic&quot;&gt;Delete&lt;/a&gt;&#41;</source>
@@ -8170,9 +8170,9 @@
         <source>The application details could not be fetched. Please try again.</source>
         <target>Los detalles de la aplicación no pudieron recuperarse. Por favor, intenta otra vez.</target>
       </trans-unit>
-      <trans-unit id="1787" resname="by &lt;%=reviewable_app.developer_name%&gt;" restype="string" datatype="html">
-        <source>by &lt;%=reviewable_app.developer_name%&gt;</source>
-        <target>por &lt;%=reviewable_app.developer_name%&gt;</target>
+      <trans-unit id="1787" resname="by" restype="string" datatype="html">
+        <source>by</source>
+        <target>por</target>
       </trans-unit>
       <trans-unit id="1788" resname="Download" restype="string" datatype="html">
         <source>Download</source>
@@ -8198,9 +8198,9 @@
         <source>Category:</source>
         <target>Categoría:</target>
       </trans-unit>
-      <trans-unit id="1794" resname="&gt;&lt;%= &#40;key===0&#41;?val.name:&apos;, &apos;+ val.name %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= &#40;key===0&#41;?val.name:&apos;, &apos;+ val.name %&gt;</source>
-        <target>&gt;&lt;%= &#40;key===0&#41;?val.name:&apos;, &apos;+ val.name %&gt;</target>
+      <trans-unit id="1794" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="1795" resname="COMMENT" restype="string" datatype="html">
         <source>COMMENT</source>
@@ -8226,25 +8226,25 @@
         <source>Updated: &lt;%=reviewable_app.updated_at.dateConvert&#40;&apos;YYYY-MM-DDThh:mm:ssZ&apos;, &apos;%B DD, YYYY&apos;&#41;%&gt;</source>
         <target>Actualizado: &lt;%=reviewable_app.updated_at.dateConvert&#40;&apos;YYYY-MM-DDThh:mm:ssZ&apos;, &apos;%B DD, YYYY&apos;&#41;%&gt;</target>
       </trans-unit>
-      <trans-unit id="1801" resname="Current Version: &lt;%=reviewable_app.version%&gt;" restype="string" datatype="html">
-        <source>Current Version: &lt;%=reviewable_app.version%&gt;</source>
-        <target>Versión actual: &lt;%=reviewable_app.version%&gt;</target>
+      <trans-unit id="1801" resname="Current Version:" restype="string" datatype="html">
+        <source>Current Version:</source>
+        <target>Versión actual:</target>
       </trans-unit>
-      <trans-unit id="1802" resname="Requires Android: &lt;%=reviewable_app.andoid_version%&gt;" restype="string" datatype="html">
-        <source>Requires Android: &lt;%=reviewable_app.andoid_version%&gt;</source>
-        <target>Requiere Android: &lt;%=reviewable_app.andoid_version%&gt;</target>
+      <trans-unit id="1802" resname="Requires Android:" restype="string" datatype="html">
+        <source>Requires Android:</source>
+        <target>Requiere Android:</target>
       </trans-unit>
-      <trans-unit id="1803" resname="Category: &lt;%=reviewable_app.category%&gt;" restype="string" datatype="html">
-        <source>Category: &lt;%=reviewable_app.category%&gt;</source>
-        <target>Categoría: &lt;%=reviewable_app.category%&gt;</target>
+      <trans-unit id="1803" resname="Category:" restype="string" datatype="html">
+        <source>Category:</source>
+        <target>Categoría:</target>
       </trans-unit>
-      <trans-unit id="1804" resname="Size: &lt;%=reviewable_app.size%&gt;" restype="string" datatype="html">
-        <source>Size: &lt;%=reviewable_app.size%&gt;</source>
-        <target>Tamaño: &lt;%=reviewable_app.size%&gt;</target>
+      <trans-unit id="1804" resname="Size:" restype="string" datatype="html">
+        <source>Size:</source>
+        <target>Tamaño:</target>
       </trans-unit>
-      <trans-unit id="1805" resname="Price: &lt;%=&#40;reviewable_app.price === &quot;Free&quot; || parseInt&#40;reviewable_app.price&#41; === 0&#41; ? &apos;Free&apos; : reviewable_app.price%&gt;" restype="string" datatype="html">
-        <source>Price: &lt;%=&#40;reviewable_app.price === &quot;Free&quot; || parseInt&#40;reviewable_app.price&#41; === 0&#41; ? &apos;Free&apos; : reviewable_app.price%&gt;</source>
-        <target>Precio: &lt;%=&#40;reviewable_app.price === &quot;Gratis&quot; || parseInt&#40;reviewable_app.price&#41; === 0&#41; ? &apos;Gratis&apos; : reviewable_app.price%&gt;</target>
+      <trans-unit id="1805" resname="Price:" restype="string" datatype="html">
+        <source>Price:</source>
+        <target>Precio:</target>
       </trans-unit>
     </body>
   </file>
@@ -8354,13 +8354,13 @@
         <source>Medical Case</source>
         <target>Caso Médico</target>
       </trans-unit>
-      <trans-unit id="1825" resname="Dr. &lt;%= user_question.person.profile_name %&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%= user_question.person.profile_name %&gt;</source>
-        <target>Dr. &lt;%= user_question.person.profile_name %&gt;</target>
+      <trans-unit id="1825" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
-      <trans-unit id="1826" resname="A &lt;%= &#40;user_question.person.specialist || &apos;doctor&apos;&#41;.toLowerCase&#40;&#41; %&gt;" restype="string" datatype="html">
-        <source>A &lt;%= &#40;user_question.person.specialist || &apos;doctor&apos;&#41;.toLowerCase&#40;&#41; %&gt;</source>
-        <target>Un&#40;a&#41; &lt;%= &#40;user_question.person.specialist || &apos;doctor&apos;&#41;.toLowerCase&#40;&#41; %&gt;</target>
+      <trans-unit id="1826" resname="A" restype="string" datatype="html">
+        <source>A</source>
+        <target>Un&#40;a&#41;</target>
       </trans-unit>
       <trans-unit id="1827" resname="asked" restype="string" datatype="html">
         <source>asked</source>
@@ -8390,9 +8390,9 @@
         <source>Please provide a definition or description for this topic:</source>
         <target>Por favor, proporciona una definición o descripción para este tema:</target>
       </trans-unit>
-      <trans-unit id="1834" resname="Re: MedPub&#35;&lt;%= user_question.publication_id %&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%= user_question.publication_id %&gt;</source>
-        <target>Re: MedPub&#35;&lt;%= user_question.publication_id %&gt;</target>
+      <trans-unit id="1834" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
       <trans-unit id="1835" resname="Following Question" restype="string" datatype="html">
         <source>Following Question</source>
@@ -8594,9 +8594,9 @@
         <source>°</source>
         <target>°</target>
       </trans-unit>
-      <trans-unit id="1870" resname="shared &lt;%= conn %&gt;" restype="string" datatype="html">
-        <source>shared &lt;%= conn %&gt;</source>
-        <target>compartió &lt;%= conn %&gt;</target>
+      <trans-unit id="1870" resname="shared" restype="string" datatype="html">
+        <source>shared</source>
+        <target>compartió</target>
       </trans-unit>
       <trans-unit id="1871" resname="Known for:" restype="string" datatype="html">
         <source>Known for:</source>
@@ -8810,9 +8810,9 @@
         <source>;</source>
         <target>;</target>
       </trans-unit>
-      <trans-unit id="1910" resname="PMID: &lt;%= publication.pmid %&gt;" restype="string" datatype="html">
-        <source>PMID: &lt;%= publication.pmid %&gt;</source>
-        <target>PMID: &lt;%= publication.pmid %&gt;</target>
+      <trans-unit id="1910" resname="PMID:" restype="string" datatype="html">
+        <source>PMID:</source>
+        <target>PMID:</target>
       </trans-unit>
       <trans-unit id="1911" resname="Abstract" restype="string" datatype="html">
         <source>Abstract</source>
@@ -8846,9 +8846,9 @@
   </file>
   <file original="public/javascripts/templates/publications/related_publication.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1918" resname=", \n      &lt;%= publication.journal_year.substr&#40;0, 4&#41; %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= publication.journal_year.substr&#40;0, 4&#41; %&gt;</source>
-        <target>, &lt;%= publication.journal_year.substr&#40;0, 4&#41; %&gt;</target>
+      <trans-unit id="1918" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
     </body>
   </file>
@@ -8902,9 +8902,9 @@
         <source>Health profile</source>
         <target>Perfil de Salud</target>
       </trans-unit>
-      <trans-unit id="1927" resname="Born on\n            &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;\n            &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;" restype="string" datatype="html">
-        <source>Born on &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt; &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;</source>
-        <target>Nacido el &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt; &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;</target>
+      <trans-unit id="1927" resname="Born on" restype="string" datatype="html">
+        <source>Born on</source>
+        <target>Nacido el</target>
       </trans-unit>
       <trans-unit id="1928" resname="Years old" restype="string" datatype="html">
         <source>Years old</source>
@@ -9038,9 +9038,9 @@
         <source>Number</source>
         <target>Número</target>
       </trans-unit>
-      <trans-unit id="1952" resname="&gt;&lt;%= code.display %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= code.display %&gt;</source>
-        <target>&gt;&lt;%= code.display %&gt;</target>
+      <trans-unit id="1952" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="1953" resname="Emergency Contact" restype="string" datatype="html">
         <source>Emergency Contact</source>
@@ -9182,17 +9182,17 @@
   </file>
   <file original="public/javascripts/templates/potentialPatientsItemTemplate.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1983" resname=", &lt;%= person.state %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= person.state %&gt;</source>
-        <target>, &lt;%= person.state %&gt;</target>
+      <trans-unit id="1983" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="1984" resname="Asked: &lt;a href=&quot;&#35;user_questions/&lt;%= person.user_question.id %&gt;-&lt;%= person.user_question.question.toDashedUrl&#40;&#41; %&gt;&quot;&gt;" restype="string" datatype="html">
         <source>Asked: &lt;a href=&quot;&#35;user_questions/&lt;%= person.user_question.id %&gt;-&lt;%= person.user_question.question.toDashedUrl&#40;&#41; %&gt;&quot;&gt;</source>
         <target>Preguntó: &lt;a href=&quot;&#35;user_questions/&lt;%= person.user_question.id %&gt;-&lt;%= person.user_question.question.toDashedUrl&#40;&#41; %&gt;&quot;&gt;</target>
       </trans-unit>
-      <trans-unit id="1985" resname="Re: MedPub&#35;&lt;%= person.user_question.publication_id %&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%= person.user_question.publication_id %&gt;</source>
-        <target>Re: MedPub&#35;&lt;%= person.user_question.publication_id %&gt;</target>
+      <trans-unit id="1985" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
     </body>
   </file>
@@ -9258,9 +9258,9 @@
         <source>Most Popular</source>
         <target>Más Popular</target>
       </trans-unit>
-      <trans-unit id="1998" resname=": &lt;%= App.session.params.tip_topic_name %&gt;" restype="string" datatype="html">
-        <source>: &lt;%= App.session.params.tip_topic_name %&gt;</source>
-        <target>: &lt;%= App.session.params.tip_topic_name %&gt;</target>
+      <trans-unit id="1998" resname=":" restype="string" datatype="html">
+        <source>:</source>
+        <target>:</target>
       </trans-unit>
       <trans-unit id="1999" resname=": All categories" restype="string" datatype="html">
         <source>: All categories</source>
@@ -9678,9 +9678,9 @@
   </file>
   <file original="public/javascripts/templates/people/patientSurvey.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2084" resname="Dr. &lt;%= name %&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%= name %&gt;</source>
-        <target>Dr. &lt;%= name %&gt;</target>
+      <trans-unit id="2084" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
       <trans-unit id="2085" resname="Hi &lt;span class=&quot;username&quot;&gt;&lt;%= name %&gt;&lt;/span&gt;," restype="string" datatype="html">
         <source>Hi &lt;span class=&quot;username&quot;&gt;&lt;%= name %&gt;&lt;/span&gt;,</source>
@@ -10154,9 +10154,9 @@
         <source>Need help? Email us at &lt;a class=&quot;support-email&quot;&gt;support@healthtap.com&lt;/a&gt;</source>
         <target>¿Necesitas ayuda? Envíanos un correo electrónico a &lt;a class=&quot;support-email&quot;&gt;support@healthtap.com&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="2188" resname="Release &lt;%= App.settings.release %&gt;" restype="string" datatype="html">
-        <source>Release &lt;%= App.settings.release %&gt;</source>
-        <target>Versión &lt;%= App.settings.release %&gt;</target>
+      <trans-unit id="2188" resname="Release" restype="string" datatype="html">
+        <source>Release</source>
+        <target>Versión</target>
       </trans-unit>
     </body>
   </file>
@@ -10306,9 +10306,9 @@
         <source>class=&quot;entry_question no_answers&quot;</source>
         <target>class=&quot;entry_question no_answers&quot;</target>
       </trans-unit>
-      <trans-unit id="2221" resname="&gt;\n        &lt;%= user_question.question %&gt;" restype="string" datatype="html">
-        <source>&gt; &lt;%= user_question.question %&gt;</source>
-        <target>&gt; &lt;%= user_question.question %&gt;</target>
+      <trans-unit id="2221" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="2222" resname="&apos;s" restype="string" datatype="html">
         <source>&apos;s</source>
@@ -10838,9 +10838,9 @@
         <source>Professional school</source>
         <target>Escuela profesional</target>
       </trans-unit>
-      <trans-unit id="2339" resname="&gt;&lt;%= s %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= s %&gt;</source>
-        <target>&gt;&lt;%= s %&gt;</target>
+      <trans-unit id="2339" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="2340" resname="Residency Program" restype="string" datatype="html">
         <source>Residency Program</source>
@@ -11222,9 +11222,9 @@
         <source>RELATED QUESTIONS</source>
         <target>PREGUNTAS RELACIONADAS</target>
       </trans-unit>
-      <trans-unit id="2425" resname="Re: MedPub&#35;&lt;%= question.publication_id %&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%= question.publication_id %&gt;</source>
-        <target>Re: MedPub&#35;&lt;%= question.publication_id %&gt;</target>
+      <trans-unit id="2425" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
       <trans-unit id="2426" resname="RELATED TOPICS" restype="string" datatype="html">
         <source>RELATED TOPICS</source>
@@ -11326,9 +11326,9 @@
         <source>We could not find a doctor based on your criteria.&lt;br&gt;Please, try again.</source>
         <target>No pudimos encontrar a un doctor basándonos en tus criterios.&lt;br&gt;Por favor, intenta otra vez.</target>
       </trans-unit>
-      <trans-unit id="2446" resname="Level &lt;%= expert.level_id %&gt;" restype="string" datatype="html">
-        <source>Level &lt;%= expert.level_id %&gt;</source>
-        <target>Nivel &lt;%= expert.level_id %&gt;</target>
+      <trans-unit id="2446" resname="Level" restype="string" datatype="html">
+        <source>Level</source>
+        <target>Nivel</target>
       </trans-unit>
       <trans-unit id="2447" resname="Known For:" restype="string" datatype="html">
         <source>Known For:</source>
@@ -11794,9 +11794,9 @@
   </file>
   <file original="public/javascripts/templates/pages/app_header.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2534" resname="by&amp;nbsp;&lt;%= developer_name %&gt;" restype="string" datatype="html">
-        <source>by&amp;nbsp;&lt;%= developer_name %&gt;</source>
-        <target>por&amp;nbsp;&lt;%= developer_name %&gt;</target>
+      <trans-unit id="2534" resname="by&amp;nbsp;" restype="string" datatype="html">
+        <source>by&amp;nbsp;</source>
+        <target>por&amp;nbsp;</target>
       </trans-unit>
       <trans-unit id="2535" resname="Applaud" restype="string" datatype="html">
         <source>Applaud</source>
@@ -11838,9 +11838,9 @@
   </file>
   <file original="public/javascripts/templates/mainMenuTemplate.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2543" resname="&apos;\n              &lt;%= App.image_tag&#40;App.user.get&#40;&apos;doc_app.doc_app_photo&apos;&#41;, {&apos;class&apos; : &apos;person_avatar person_avatar_menu&apos;}&#41; %&gt;\n              &lt;%= App.user.get&#40;&apos;doc_app.doc_app_name&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>&apos; &lt;%= App.image_tag&#40;App.user.get&#40;&apos;doc_app.doc_app_photo&apos;&#41;, {&apos;class&apos; : &apos;person_avatar person_avatar_menu&apos;}&#41; %&gt; &lt;%= App.user.get&#40;&apos;doc_app.doc_app_name&apos;&#41; %&gt;</source>
-        <target>‘ &lt;%= App.image_tag&#40;App.user.get&#40;&apos;doc_app.doc_app_photo&apos;&#41;, {&apos;class&apos; : ‘person_avatar person_avatar_menu&apos;}&#41; %&gt; &lt;%= App.user.get&#40;&apos;doc_app.doc_app_name&apos;&#41; %&gt;</target>
+      <trans-unit id="2543" resname="&apos;" restype="string" datatype="html">
+        <source>&apos;</source>
+        <target>‘</target>
       </trans-unit>
       <trans-unit id="2544" resname="Feed" restype="string" datatype="html">
         <source>Feed</source>
@@ -11966,13 +11966,13 @@
   </file>
   <file original="public/javascripts/templates/layers/uploadFileInfo.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2571" resname="Uploaded&amp;nbsp;on&amp;nbsp;&lt;%= upload.upload_date %&gt;" restype="string" datatype="html">
-        <source>Uploaded&amp;nbsp;on&amp;nbsp;&lt;%= upload.upload_date %&gt;</source>
-        <target>Subido&amp;nbsp;on&amp;nbsp;&lt;%= upload.upload_date %&gt;</target>
+      <trans-unit id="2571" resname="Uploaded&amp;nbsp;on&amp;nbsp;" restype="string" datatype="html">
+        <source>Uploaded&amp;nbsp;on&amp;nbsp;</source>
+        <target>Subido&amp;nbsp;on&amp;nbsp;</target>
       </trans-unit>
-      <trans-unit id="2572" resname="Shared on&amp;nbsp;&lt;%= share.upload_share.created_at %&gt;" restype="string" datatype="html">
-        <source>Shared on&amp;nbsp;&lt;%= share.upload_share.created_at %&gt;</source>
-        <target>Compartido en&amp;nbsp;&lt;%= share.upload_share.created_at %&gt;</target>
+      <trans-unit id="2572" resname="Shared on&amp;nbsp;" restype="string" datatype="html">
+        <source>Shared on&amp;nbsp;</source>
+        <target>Compartido en&amp;nbsp;</target>
       </trans-unit>
     </body>
   </file>
@@ -11998,17 +11998,17 @@
         <source>style=&quot;display:block;&quot;</source>
         <target>style=&quot;display:block;&quot;</target>
       </trans-unit>
-      <trans-unit id="2577" resname="&gt;\n                            &lt;%= App.image_tag&#40;&quot;/imgs/trophy-bubble-arrow.png&quot;, {&apos;class&apos; : &quot;arrow&quot;}&#41; %&gt;" restype="string" datatype="html">
-        <source>&gt; &lt;%= App.image_tag&#40;&quot;/imgs/trophy-bubble-arrow.png&quot;, {&apos;class&apos; : &quot;arrow&quot;}&#41; %&gt;</source>
-        <target>&gt; &lt;%= App.image_tag&#40;&quot;/imgs/trophy-bubble-arrow.png&quot;, {&apos;class&apos; : &quot;arrow&quot;}&#41; %&gt;</target>
+      <trans-unit id="2577" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="2578" resname="Trophy Locked" restype="string" datatype="html">
         <source>Trophy Locked</source>
         <target>Trofeo Bloqueado</target>
       </trans-unit>
-      <trans-unit id="2579" resname="&gt;\n                    &lt;%= App.image_tag&#40;&quot;/imgs/trophy-bubble-arrow.png&quot;, {&apos;class&apos; : &quot;arrow&quot;}&#41; %&gt;" restype="string" datatype="html">
-        <source>&gt; &lt;%= App.image_tag&#40;&quot;/imgs/trophy-bubble-arrow.png&quot;, {&apos;class&apos; : &quot;arrow&quot;}&#41; %&gt;</source>
-        <target>&gt; &lt;%= App.image_tag&#40;&quot;/imgs/trophy-bubble-arrow.png&quot;, {&apos;class&apos; : &quot;arrow&quot;}&#41; %&gt;</target>
+      <trans-unit id="2579" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -12294,9 +12294,9 @@
         <source>Your DocScore</source>
         <target>Tu DocScore</target>
       </trans-unit>
-      <trans-unit id="2635" resname="Level &lt;%= level_id %&gt;" restype="string" datatype="html">
-        <source>Level &lt;%= level_id %&gt;</source>
-        <target>Nivel &lt;%=level_id%&gt;</target>
+      <trans-unit id="2635" resname="Level" restype="string" datatype="html">
+        <source>Level</source>
+        <target>Nivel</target>
       </trans-unit>
       <trans-unit id="2636" resname="/ &lt;%= &#40;&apos;&apos; + next_level_point_range_start&#41;.comma&#40;&#41; %&gt; points »" restype="string" datatype="html">
         <source>/ &lt;%= &#40;&apos;&apos; + next_level_point_range_start&#41;.comma&#40;&#41; %&gt; points »</source>
@@ -12442,9 +12442,9 @@
   </file>
   <file original="public/javascripts/templates/layers/permanently_change_shift.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2654" resname="Your shift:&lt;br&gt;\n    &lt;%= shiftText %&gt;" restype="string" datatype="html">
-        <source>Your shift:&lt;br&gt; &lt;%= shiftText %&gt;</source>
-        <target>Tu turno: &lt;br&gt; &lt;%= shiftText %&gt;</target>
+      <trans-unit id="2654" resname="Your shift:&lt;br&gt;" restype="string" datatype="html">
+        <source>Your shift:&lt;br&gt;</source>
+        <target>Tu turno: &lt;br&gt;</target>
       </trans-unit>
       <trans-unit id="2655" resname="Shift changes take effect in &lt;%= waittime %&gt; days" restype="string" datatype="html">
         <source>Shift changes take effect in &lt;%= waittime %&gt; days</source>
@@ -12722,17 +12722,17 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeFollowUp.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2716" resname="$&lt;%= App.session.HTcreditCostFollowUp %&gt;" restype="string" datatype="html">
-        <source>$&lt;%= App.session.HTcreditCostFollowUp %&gt;</source>
-        <target>$&lt;%= App.session.HTcreditCostFollowUp %&gt;</target>
+      <trans-unit id="2716" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target>$</target>
       </trans-unit>
       <trans-unit id="2717" resname="Ask a follow up" restype="string" datatype="html">
         <source>Ask a follow up</source>
         <target>Pide un seguimiento</target>
       </trans-unit>
-      <trans-unit id="2718" resname="TO:\n    &lt;%= episode.participant_docs[0].full_name %&gt;" restype="string" datatype="html">
-        <source>TO: &lt;%= episode.participant_docs[0].full_name %&gt;</source>
-        <target>PARA: &lt;%= episode.participant_docs[0].full_name %&gt;</target>
+      <trans-unit id="2718" resname="TO:" restype="string" datatype="html">
+        <source>TO:</source>
+        <target>PARA:</target>
       </trans-unit>
     </body>
   </file>
@@ -12750,9 +12750,9 @@
         <source>We&apos;ve got your order. Thanks! Just review below and hit send to start your conversation.</source>
         <target>Hemos obtenido tu pedido. ¡Gracias! Sólo revisa a continuación y oprime enviar para comenzar tu conversación.</target>
       </trans-unit>
-      <trans-unit id="2722" resname="$&lt;%= &#40;App.session.showFollowUpCredits&#41; ? App.session.HTcreditCostFollowUp : App.session.HTcreditCost %&gt;" restype="string" datatype="html">
-        <source>$&lt;%= &#40;App.session.showFollowUpCredits&#41; ? App.session.HTcreditCostFollowUp : App.session.HTcreditCost %&gt;</source>
-        <target>$&lt;%= &#40;App.session.showFollowUpCredits&#41; ? App.session.HTcreditCostFollowUp : App.session.HTcreditCost %&gt;</target>
+      <trans-unit id="2722" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target>$</target>
       </trans-unit>
       <trans-unit id="2723" resname="Get discounts by increasing your HealthScore.&lt;span id=&quot;healthQuestion&quot;&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Get discounts by increasing your HealthScore.&lt;span id=&quot;healthQuestion&quot;&gt;&lt;/span&gt;</source>
@@ -12778,9 +12778,9 @@
         <source>Start a Private Conversation &lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target>Iniciar una Conversación Privada &lt;span class=”sub_title”&gt; Haz una pregunta más detallada a un doctor de tu elección aquí, en privado, en un ambiente seguro, uno a uno, en conformidad con HIPAA por una pequeña cuota/ Añade imágenes, escaneos, y documentación de apoyo por una respuesta aún más personalizada. &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2728" resname="$&lt;%= App.session.HTcreditCost %&gt;" restype="string" datatype="html">
-        <source>$&lt;%= App.session.HTcreditCost %&gt;</source>
-        <target>$&lt;%= App.session.HTcreditCost %&gt;</target>
+      <trans-unit id="2728" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target>$</target>
       </trans-unit>
       <trans-unit id="2729" resname="&amp;nbsp;&lt;span class=&quot;to_full_name&quot;&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>&amp;nbsp;&lt;span class=&quot;to_full_name&quot;&gt;&lt;/span&gt;</source>
@@ -13370,9 +13370,9 @@
         <source>Your Virtual Practice web address:</source>
         <target>Dirección de tu Consultorio Virtual:</target>
       </trans-unit>
-      <trans-unit id="2857" resname="www.healthtap.com/&lt;%=App.defaults.user_json.vanity_url%&gt;" restype="string" datatype="html">
-        <source>www.healthtap.com/&lt;%=App.defaults.user_json.vanity_url%&gt;</source>
-        <target>www.healthtap.com/&lt;%=App.defaults.user_json.vanity_url%&gt;</target>
+      <trans-unit id="2857" resname="www.healthtap.com/" restype="string" datatype="html">
+        <source>www.healthtap.com/</source>
+        <target>www.healthtap.com/</target>
       </trans-unit>
       <trans-unit id="2858" resname="Your Concierge Keycode so patients can connect with you for consults:" restype="string" datatype="html">
         <source>Your Concierge Keycode so patients can connect with you for consults:</source>
@@ -13526,9 +13526,9 @@
         <source>Earn 200,000 points to win an all-expense paid trip to Hawaii or the Caribbean, plus many more rewards! &amp;nbsp; &amp;nbsp; &lt;a href=&quot;mailto:expertsupport@healthtap.com?subject=Redeem%20Concierge%20Partner%20Rewards%20Points&quot;&gt;Learn more ›&lt;/a&gt;</source>
         <target>¡Gana 200,000 puntos para ganar un viaje con todos los gastos pagados a Hawái o el Caribe, además de muchas recompensas más! &amp;nbsp; &amp;nbsp; &lt;a href=&quot;mailto:expertsupport@healthtap.com?subject=Redimir%20Puntos de%20Recompensas%20de Socio%20Concierge&quot;&gt;Aprender más ›&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="2889" resname="Your points balance: &lt;%= concierge_points_balance %&gt;" restype="string" datatype="html">
-        <source>Your points balance: &lt;%= concierge_points_balance %&gt;</source>
-        <target>Tu saldo de puntos: &lt;%= concierge_points_balance %&gt;</target>
+      <trans-unit id="2889" resname="Your points balance:" restype="string" datatype="html">
+        <source>Your points balance:</source>
+        <target>Tu saldo de puntos:</target>
       </trans-unit>
       <trans-unit id="2890" resname="Consults" restype="string" datatype="html">
         <source>Consults</source>
@@ -13838,9 +13838,9 @@
         <source>EDIT YOUR QUESTION &lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer! &lt;a id=&quot;guidelines&quot;&gt;&lt;/a&gt;&lt;/span&gt;</source>
         <target>EDITA TU PREGUNTA &lt;span class=”sub_title”&gt;¿Quieres cambiar tu pregunta? Puedes hacer eso aquí. ¡Recuerda, buena gramática y ortografía correcta incrementan tus posibilidades de obtener una grandiosa respuesta! &lt;a id=”guidelines&quot;&gt;&lt;/a&gt;&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2944" resname="/&lt;%= maxLength %&gt;" restype="string" datatype="html">
-        <source>/&lt;%= maxLength %&gt;</source>
-        <target>/&lt;%= maxLength %&gt;</target>
+      <trans-unit id="2944" resname="/" restype="string" datatype="html">
+        <source>/</source>
+        <target>/</target>
       </trans-unit>
       <trans-unit id="2945" resname="Delete this question" restype="string" datatype="html">
         <source>Delete this question</source>
@@ -14086,9 +14086,9 @@
         <source>What shift would you like to cancel:</source>
         <target>Qué turno te gustaría cancelar:</target>
       </trans-unit>
-      <trans-unit id="2992" resname=", &lt;%= feelGood.strftime &#40;new Date&#40;time*1000&#41;, dateFormat&#41; %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= feelGood.strftime &#40;new Date&#40;time*1000&#41;, dateFormat&#41; %&gt;</source>
-        <target>, &lt;%= feelGood.strftime &#40;new Date&#40;time*1000&#41;, dateFormat&#41; %&gt;</target>
+      <trans-unit id="2992" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="2993" resname="*Short notice — for emergencies only please" restype="string" datatype="html">
         <source>*Short notice — for emergencies only please</source>
@@ -14106,9 +14106,9 @@
         <source>Cancel Virtual Practice Hours</source>
         <target>Cancelar Horas de Práctica Virtual</target>
       </trans-unit>
-      <trans-unit id="2995" resname="Cancel Virtual Practice Hours on &lt;%=toTitleCase&#40;day&#41; %&gt; &lt;%=time%&gt;" restype="string" datatype="html">
-        <source>Cancel Virtual Practice Hours on &lt;%=toTitleCase&#40;day&#41; %&gt; &lt;%=time%&gt;</source>
-        <target>Cancelar Horas de Práctica Virtual el &lt;%=toTitleCase&#40;day&#41; %&gt; &lt;%=time%&gt;</target>
+      <trans-unit id="2995" resname="Cancel Virtual Practice Hours on" restype="string" datatype="html">
+        <source>Cancel Virtual Practice Hours on</source>
+        <target>Cancelar Horas de Práctica Virtual el</target>
       </trans-unit>
       <trans-unit id="2996" resname="Never mind" restype="string" datatype="html">
         <source>Never mind</source>
@@ -14226,9 +14226,9 @@
         <source>Tip:</source>
         <target>Tip:</target>
       </trans-unit>
-      <trans-unit id="3017" resname="improve your question to get a more personalized answer. \n   &lt;%=\n    RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.&quot;&#41;.format&#40;{\n     link_tag_start: &apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;,\n     link_tag_end: &apos;&lt;/a&gt;&apos;\n    }&#41;\n   %&gt;" restype="string" datatype="html">
-        <source>improve your question to get a more personalized answer. &lt;%= RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.&quot;&#41;.format&#40;{ link_tag_start: &apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;, link_tag_end: &apos;&lt;/a&gt;&apos; }&#41; %&gt;</source>
-        <target>mejora tu pregunta para obtener una respuesta más personalizada. &lt;%= RB.getString&#40;”Primero revisa tu ortografía, luego&amp;nbsp;{link_tag_start}revisa nuestros tips de preguntas aquí{link_tag_end}.&quot;&#41;.format&#40;{ link_tag_start: ‘&lt;a id=”guidelines&quot;&gt;&apos;, link_tag_end: ‘&lt;/a&gt;&apos; }&#41; %&gt;</target>
+      <trans-unit id="3017" resname="improve your question to get a more personalized answer." restype="string" datatype="html">
+        <source>improve your question to get a more personalized answer.</source>
+        <target>mejora tu pregunta para obtener una respuesta más personalizada.</target>
       </trans-unit>
       <trans-unit id="3018" resname="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription; if you think you may have a medical emergency, call 911 or your doctor immediately." restype="string" datatype="html">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription; if you think you may have a medical emergency, call 911 or your doctor immediately.</source>
@@ -14466,9 +14466,9 @@
         <source>your daily points!</source>
         <target>¡tus puntos diarios!</target>
       </trans-unit>
-      <trans-unit id="3067" resname="/&lt;%= bonus_bar.answers_target %&gt;" restype="string" datatype="html">
-        <source>/&lt;%= bonus_bar.answers_target %&gt;</source>
-        <target>/&lt;%= bonus_bar.answers_target %&gt;</target>
+      <trans-unit id="3067" resname="/" restype="string" datatype="html">
+        <source>/</source>
+        <target>/</target>
       </trans-unit>
       <trans-unit id="3068" resname="Here are more tips users are seeking..." restype="string" datatype="html">
         <source>Here are more tips users are seeking...</source>
@@ -14542,9 +14542,9 @@
   </file>
   <file original="public/javascripts/templates/layers/add_shift.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3080" resname="Add shift:&lt;br&gt;\n    &lt;%= shift %&gt;" restype="string" datatype="html">
-        <source>Add shift:&lt;br&gt; &lt;%= shift %&gt;</source>
-        <target>Añadir turno:&lt;br&gt; &lt;%= shift %&gt;</target>
+      <trans-unit id="3080" resname="Add shift:&lt;br&gt;" restype="string" datatype="html">
+        <source>Add shift:&lt;br&gt;</source>
+        <target>Añadir turno:&lt;br&gt;</target>
       </trans-unit>
       <trans-unit id="3081" resname="Shift sign ups take effect immediately" restype="string" datatype="html">
         <source>Shift sign ups take effect immediately</source>
@@ -14570,9 +14570,9 @@
         <source>End</source>
         <target>Final</target>
       </trans-unit>
-      <trans-unit id="3086" resname="&gt;\n            &lt;%=endTimeSelect%&gt;" restype="string" datatype="html">
-        <source>&gt; &lt;%=endTimeSelect%&gt;</source>
-        <target>&gt; &lt;%=endTimeSelect%&gt;</target>
+      <trans-unit id="3086" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -14690,9 +14690,9 @@
   </file>
   <file original="public/javascripts/templates/headerExp.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3111" resname="Level &lt;%= App.user.get&#40;&apos;person.level_id&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>Level &lt;%= App.user.get&#40;&apos;person.level_id&apos;&#41; %&gt;</source>
-        <target>Nivel &lt;%= App.user.get&#40;&apos;person.level_id&apos;&#41; %&gt;</target>
+      <trans-unit id="3111" resname="Level" restype="string" datatype="html">
+        <source>Level</source>
+        <target>Nivel</target>
       </trans-unit>
       <trans-unit id="3112" resname="Menu" restype="string" datatype="html">
         <source>Menu</source>
@@ -14786,9 +14786,9 @@
         <source>THIS GROUP DOESN&apos;T HAVE ANY RECOMMENDATIONS OR THANK YOU NOTES YET.</source>
         <target>ESTE GRUPO AÚN NO TIENE NINGUNA RECOMENDACIÓN O NOTAS DE AGRADECIMIENTO.</target>
       </trans-unit>
-      <trans-unit id="3130" resname="&amp;nbsp;&lt;%= note %&gt;" restype="string" datatype="html">
-        <source>&amp;nbsp;&lt;%= note %&gt;</source>
-        <target>&amp;nbsp;&lt;%= note %&gt;</target>
+      <trans-unit id="3130" resname="&amp;nbsp;" restype="string" datatype="html">
+        <source>&amp;nbsp;</source>
+        <target>&amp;nbsp;</target>
       </trans-unit>
     </body>
   </file>
@@ -15238,9 +15238,9 @@
         <source>Please enter a different topic to try again.</source>
         <target>Por favor, ingresa un tema diferente o intenta otra vez.</target>
       </trans-unit>
-      <trans-unit id="3223" resname="feed_item_&lt;%= item_type %&gt;" restype="string" datatype="html">
-        <source>feed_item_&lt;%= item_type %&gt;</source>
-        <target>feed_item_&lt;%= item_type %&gt;</target>
+      <trans-unit id="3223" resname="feed_item_" restype="string" datatype="html">
+        <source>feed_item_</source>
+        <target>feed_item_</target>
       </trans-unit>
       <trans-unit id="3224" resname="old_question" restype="string" datatype="html">
         <source>old_question</source>
@@ -15262,21 +15262,21 @@
         <source>Get personalized answers from doctors!</source>
         <target>¡Obtén respuestas personalizadas de doctores!</target>
       </trans-unit>
-      <trans-unit id="3229" resname="TipTap: &lt;%= user_answer.tip_type || &#40;user_answer.user_question &amp;&amp; user_answer.user_question.tip_type&#41; %&gt;" restype="string" datatype="html">
-        <source>TipTap: &lt;%= user_answer.tip_type || &#40;user_answer.user_question &amp;&amp; user_answer.user_question.tip_type&#41; %&gt;</source>
-        <target>TipTap: &lt;%= user_answer.tip_type || &#40;user_answer.user_question &amp;&amp; user_answer.user_question.tip_type&#41; %&gt;</target>
+      <trans-unit id="3229" resname="TipTap:" restype="string" datatype="html">
+        <source>TipTap:</source>
+        <target>TipTap:</target>
       </trans-unit>
       <trans-unit id="3230" resname="Waiting a while" restype="string" datatype="html">
         <source>Waiting a while</source>
         <target>Esperando un poco</target>
       </trans-unit>
-      <trans-unit id="3231" resname=", &lt;%= user_question.meta_info.accept_insurance %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= user_question.meta_info.accept_insurance %&gt;</source>
-        <target>, &lt;%= user_question.meta_info.accept_insurance %&gt;</target>
+      <trans-unit id="3231" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
-      <trans-unit id="3232" resname="TipTap: &lt;%= user_question.tip_type %&gt;" restype="string" datatype="html">
-        <source>TipTap: &lt;%= user_question.tip_type %&gt;</source>
-        <target>TipTap: &lt;%= user_question.tip_type %&gt;</target>
+      <trans-unit id="3232" resname="TipTap:" restype="string" datatype="html">
+        <source>TipTap:</source>
+        <target>TipTap:</target>
       </trans-unit>
       <trans-unit id="3233" resname="Dr. Geoffrey W. Rutledge" restype="string" datatype="html">
         <source>Dr. Geoffrey W. Rutledge</source>
@@ -15326,9 +15326,9 @@
         <source>responded:</source>
         <target>respondió:</target>
       </trans-unit>
-      <trans-unit id="3245" resname="Re: MedPub&#35;&lt;%= publication_id %&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%= publication_id %&gt;</source>
-        <target>Re: MedPub&#35;&lt;%= publication_id %&gt;</target>
+      <trans-unit id="3245" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
       <trans-unit id="3246" resname="hidden no_comments" restype="string" datatype="html">
         <source>hidden no_comments</source>
@@ -15374,9 +15374,9 @@
         <source>user_answer_answer</source>
         <target>user_answer_answer</target>
       </trans-unit>
-      <trans-unit id="3257" resname="&quot; &gt;\n    &lt;%= &#40;user_question.question.cutAnswer&#40;&#41;&#41; %&gt;" restype="string" datatype="html">
-        <source>&quot; &gt; &lt;%= &#40;user_question.question.cutAnswer&#40;&#41;&#41; %&gt;</source>
-        <target>&quot; &gt; &lt;%= &#40;user_question.question.cutAnswer&#40;&#41;&#41; %&gt;</target>
+      <trans-unit id="3257" resname="&quot; &gt;" restype="string" datatype="html">
+        <source>&quot; &gt;</source>
+        <target>&quot; &gt;</target>
       </trans-unit>
       <trans-unit id="3258" resname="&quot;&gt;\n        &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_activity.actor.id %&gt;-&lt;%= &#40;&#40;  user_activity.actor.name || user_activity.actor.full_name || &apos;&apos;&#41;.toLowerCase&#40;&#41;.toDashedUrl&#40;&#41;&#41; %&gt;&quot;&gt;\n            &lt;%= user_activity.actor.name%&gt;\n        &lt;/a&gt;\n      shared:" restype="string" datatype="html">
         <source>&quot;&gt; &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_activity.actor.id %&gt;-&lt;%= &#40;&#40; user_activity.actor.name || user_activity.actor.full_name || &apos;&apos;&#41;.toLowerCase&#40;&#41;.toDashedUrl&#40;&#41;&#41; %&gt;&quot;&gt; &lt;%= user_activity.actor.name%&gt; &lt;/a&gt; shared:</source>
@@ -15542,9 +15542,9 @@
   </file>
   <file original="public/javascripts/templates/feed/comment.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3288" resname="commented:\n    &lt;br&gt;\n    &lt;%= comment.comment || comment %&gt;" restype="string" datatype="html">
-        <source>commented: &lt;br&gt; &lt;%= comment.comment || comment %&gt;</source>
-        <target>comentó: &lt;br&gt; &lt;%= comment.comment || comment %&gt;</target>
+      <trans-unit id="3288" resname="commented: &lt;br&gt;" restype="string" datatype="html">
+        <source>commented: &lt;br&gt;</source>
+        <target>comentó: &lt;br&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -15834,9 +15834,9 @@
         <source>&#40;&lt;a class=&quot;request_appt_link&quot;&gt;Make Appointment&lt;/a&gt;&#41;</source>
         <target>&#40;&lt;a class=&quot;request_appt_link&quot;&gt;Hacer cita&lt;/a&gt;&#41;</target>
       </trans-unit>
-      <trans-unit id="3352" resname="-&lt;%= val.hours.endH %&gt;&lt;%= val.hours.endPeriod %&gt;" restype="string" datatype="html">
-        <source>-&lt;%= val.hours.endH %&gt;&lt;%= val.hours.endPeriod %&gt;</source>
-        <target>-&lt;%= val.hours.endH %&gt;&lt;%= val.hours.endPeriod %&gt;</target>
+      <trans-unit id="3352" resname="-" restype="string" datatype="html">
+        <source>-</source>
+        <target>-</target>
       </trans-unit>
       <trans-unit id="3353" resname="INSURANCE COMPANIES" restype="string" datatype="html">
         <source>INSURANCE COMPANIES</source>
@@ -15874,9 +15874,9 @@
         <source>Academic Appointments</source>
         <target>Nombramientos Académicos</target>
       </trans-unit>
-      <trans-unit id="3362" resname=", &lt;br&gt;&lt;%= val.specialty %&gt;" restype="string" datatype="html">
-        <source>, &lt;br&gt;&lt;%= val.specialty %&gt;</source>
-        <target>, &lt;br&gt;&lt;%= val.specialty %&gt;</target>
+      <trans-unit id="3362" resname=", &lt;br&gt;" restype="string" datatype="html">
+        <source>, &lt;br&gt;</source>
+        <target>, &lt;br&gt;</target>
       </trans-unit>
       <trans-unit id="3363" resname="Awards&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;affiliations" restype="string" datatype="html">
         <source>Awards&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;affiliations</source>
@@ -15890,9 +15890,9 @@
         <source>PUBLICATIONS</source>
         <target>PUBLICACIONES</target>
       </trans-unit>
-      <trans-unit id="3366" resname=". &lt;%= publication.journal_year %&gt;" restype="string" datatype="html">
-        <source>. &lt;%= publication.journal_year %&gt;</source>
-        <target>. &lt;%= publication.journal_year %&gt;</target>
+      <trans-unit id="3366" resname="." restype="string" datatype="html">
+        <source>.</source>
+        <target>.</target>
       </trans-unit>
       <trans-unit id="3367" resname="blog&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;additional links" restype="string" datatype="html">
         <source>blog&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;additional links</source>
@@ -16070,9 +16070,9 @@
         <source>Take a Photo</source>
         <target>Tomar una Foto</target>
       </trans-unit>
-      <trans-unit id="3405" resname="style=&quot;color: &lt;%= expert_profiles.app_color %&gt;" restype="string" datatype="html">
-        <source>style=&quot;color: &lt;%= expert_profiles.app_color %&gt;</source>
-        <target>style=&quot;color: &lt;%= expert_profiles.app_color %&gt;</target>
+      <trans-unit id="3405" resname="style=&quot;color:" restype="string" datatype="html">
+        <source>style=&quot;color:</source>
+        <target>style=&quot;color:</target>
       </trans-unit>
       <trans-unit id="3406" resname="&quot;&gt;&lt;span class=&quot;docName&quot; id=&quot;mainName&quot;&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>&quot;&gt;&lt;span class=&quot;docName&quot; id=&quot;mainName&quot;&gt;&lt;/span&gt;</source>
@@ -16286,9 +16286,9 @@
         <source>and &lt;a href=&quot;&#35;expert/messages&quot;&gt;&lt;%= &#40;appointments.toString&#40;&#41;.comma&#40;&#41;&#41; %&gt; appointment &lt;%= appointments &gt; 1 ? &quot;requests&quot; : &quot;request&quot; %&gt;&lt;/a&gt;</source>
         <target>y &lt;a href=&quot;&#35;expert/messages&quot;&gt;&lt;%= &#40;appointments.toString&#40;&#41;.comma&#40;&#41;&#41; %&gt; &lt;%= appointments &gt; 1 ? &quot;solicitudes&quot; : &quot;solicitud&quot; %&gt;&lt;/a&gt; de cita&#40;s&#41;</target>
       </trans-unit>
-      <trans-unit id="3451" resname="appointment &lt;%= appointments &gt; 1 ? &quot;requests&quot; : &quot;request&quot; %&gt;" restype="string" datatype="html">
-        <source>appointment &lt;%= appointments &gt; 1 ? &quot;requests&quot; : &quot;request&quot; %&gt;</source>
-        <target>appointment &lt;%= appointments &gt; 1 ? &quot;solicitudes&quot; : &quot;solicitud&quot; %&gt;</target>
+      <trans-unit id="3451" resname="appointment" restype="string" datatype="html">
+        <source>appointment</source>
+        <target>appointment</target>
       </trans-unit>
     </body>
   </file>
@@ -16318,9 +16318,9 @@
   </file>
   <file original="public/javascripts/templates/experts/recyclable_answer.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3456" resname="Re: MedPub&#35;&lt;%= user_answer.publication_id %&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%= user_answer.publication_id %&gt;</source>
-        <target>Re: MedPub&#35;&lt;%= user_answer.publication_id %&gt;</target>
+      <trans-unit id="3456" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
       <trans-unit id="3457" resname="There were no similar questions found. Try another search." restype="string" datatype="html">
         <source>There were no similar questions found. Try another search.</source>
@@ -16434,9 +16434,9 @@
         <source>Days and hours open</source>
         <target>Días y horarios de atención</target>
       </trans-unit>
-      <trans-unit id="3479" resname="-\n                &lt;%= day.endH %&gt;&lt;%= day.endPeriod %&gt;" restype="string" datatype="html">
-        <source>- &lt;%= day.endH %&gt;&lt;%= day.endPeriod %&gt;</source>
-        <target>- &lt;%= day.endH %&gt;&lt;%= day.endPeriod %&gt;</target>
+      <trans-unit id="3479" resname="-" restype="string" datatype="html">
+        <source>-</source>
+        <target>-</target>
       </trans-unit>
       <trans-unit id="3480" resname="Time open" restype="string" datatype="html">
         <source>Time open</source>
@@ -16486,21 +16486,21 @@
         <source>Education &amp;amp; Experience</source>
         <target>Educación &amp;amp; Experiencia</target>
       </trans-unit>
-      <trans-unit id="3491" resname=", &lt;%= val.hospital %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= val.hospital %&gt;</source>
-        <target>, &lt;%= val.hospital %&gt;</target>
+      <trans-unit id="3491" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
-      <trans-unit id="3492" resname=", &lt;%= val.primary_hospital %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= val.primary_hospital %&gt;</source>
-        <target>, &lt;%= val.primary_hospital %&gt;</target>
+      <trans-unit id="3492" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="3493" resname="Medical/Graduate Schools" restype="string" datatype="html">
         <source>Medical/Graduate Schools</source>
         <target>Escuelas de Medicina / Posgrado</target>
       </trans-unit>
-      <trans-unit id="3494" resname=", &lt;%= val.year %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= val.year %&gt;</source>
-        <target>, &lt;%= val.year %&gt;</target>
+      <trans-unit id="3494" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="3495" resname="Type in school" restype="string" datatype="html">
         <source>Type in school</source>
@@ -16786,17 +16786,17 @@
         <source>Edit header &amp;raquo;</source>
         <target>Editar encabezado &amp;raquo;</target>
       </trans-unit>
-      <trans-unit id="3558" resname="via &lt;%= App.user.get&#40;&apos;person.full_name&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>via &lt;%= App.user.get&#40;&apos;person.full_name&apos;&#41; %&gt;</source>
-        <target>vía &lt;%= App.user.get&#40;&apos;person.full_name&apos;&#41; %&gt;</target>
+      <trans-unit id="3558" resname="via" restype="string" datatype="html">
+        <source>via</source>
+        <target>vía</target>
       </trans-unit>
-      <trans-unit id="3559" resname="www.healthtap.com/&lt;%= App.user.get&#40;&apos;person.profile_name&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>www.healthtap.com/&lt;%= App.user.get&#40;&apos;person.profile_name&apos;&#41; %&gt;</source>
-        <target>www.healthtap.com/&lt;%= App.user.get&#40;&apos;person.profile_name&apos;&#41; %&gt;</target>
+      <trans-unit id="3559" resname="www.healthtap.com/" restype="string" datatype="html">
+        <source>www.healthtap.com/</source>
+        <target>www.healthtap.com/</target>
       </trans-unit>
-      <trans-unit id="3560" resname="www.healthtap.com/&lt;%= App.user.get&#40;&apos;person&apos;&#41;.full_name.replace&#40;/ /g, &apos;&apos;&#41;.replace&#40;/\./g, &apos;&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>www.healthtap.com/&lt;%= App.user.get&#40;&apos;person&apos;&#41;.full_name.replace&#40;/ /g, &apos;&apos;&#41;.replace&#40;/\./g, &apos;&apos;&#41; %&gt;</source>
-        <target>www.healthtap.com/&lt;%= App.user.get&#40;&apos;person&apos;&#41;.full_name.replace&#40;/ /g, &apos;&apos;&#41;.replace&#40;/\./g, &apos;&apos;&#41; %&gt;</target>
+      <trans-unit id="3560" resname="www.healthtap.com/" restype="string" datatype="html">
+        <source>www.healthtap.com/</source>
+        <target>www.healthtap.com/</target>
       </trans-unit>
       <trans-unit id="3561" resname="Edit Intro Paragraph &amp;raquo;" restype="string" datatype="html">
         <source>Edit Intro Paragraph &amp;raquo;</source>
@@ -16994,9 +16994,9 @@
   </file>
   <file original="public/javascripts/templates/experts/patientDirectory_item.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3608" resname="Last Virtual Consult on &lt;%=month%&gt; &lt;%=day%&gt;, &lt;%=year%&gt;" restype="string" datatype="html">
-        <source>Last Virtual Consult on &lt;%=month%&gt; &lt;%=day%&gt;, &lt;%=year%&gt;</source>
-        <target>Última Consulta Virtual el &lt;%=day%&gt; de &lt;%=month%&gt; del &lt;%=year%&gt;</target>
+      <trans-unit id="3608" resname="Last Virtual Consult on &lt;%=month%&gt; &lt;%=day%&gt;," restype="string" datatype="html">
+        <source>Last Virtual Consult on &lt;%=month%&gt; &lt;%=day%&gt;,</source>
+        <target>Última Consulta Virtual el &lt;%=day%&gt; de &lt;%=month%&gt; del</target>
       </trans-unit>
     </body>
   </file>
@@ -17454,13 +17454,13 @@
         <source>You haven&apos;t added any doctors yet. &lt;a href=&quot;&#35;member/doctors/find_a_doctor&quot;&gt;Find a doctor &amp;raquo;&lt;/a&gt;</source>
         <target>No has añadido a ningún doctor aún. &lt;a href=”&#35;member/doctors/find_a_doctor”&gt;Encuentra un doctor &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="3707" resname="Refers &lt;b&gt;to&lt;/b&gt; Dr. &lt;%= pageExpert.get&#40;&apos;last_name&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>Refers &lt;b&gt;to&lt;/b&gt; Dr. &lt;%= pageExpert.get&#40;&apos;last_name&apos;&#41; %&gt;</source>
-        <target>Refiere &lt;b&gt;al&lt;/b&gt; Dr. &lt;%= pageExpert.get&#40;&apos;last_name&apos;&#41; %&gt;</target>
+      <trans-unit id="3707" resname="Refers &lt;b&gt;to&lt;/b&gt; Dr." restype="string" datatype="html">
+        <source>Refers &lt;b&gt;to&lt;/b&gt; Dr.</source>
+        <target>Refiere &lt;b&gt;al&lt;/b&gt; Dr.</target>
       </trans-unit>
-      <trans-unit id="3708" resname="Referred &lt;b&gt;by&lt;/b&gt; Dr. &lt;%= pageExpert.get&#40;&apos;last_name&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>Referred &lt;b&gt;by&lt;/b&gt; Dr. &lt;%= pageExpert.get&#40;&apos;last_name&apos;&#41; %&gt;</source>
-        <target>Referido &lt;b&gt;por el&lt;/b&gt; Dr. &lt;%= pageExpert.get&#40;&apos;last_name&apos;&#41; %&gt;</target>
+      <trans-unit id="3708" resname="Referred &lt;b&gt;by&lt;/b&gt; Dr." restype="string" datatype="html">
+        <source>Referred &lt;b&gt;by&lt;/b&gt; Dr.</source>
+        <target>Referido &lt;b&gt;por el&lt;/b&gt; Dr.</target>
       </trans-unit>
       <trans-unit id="3709" resname="Refer to &lt;b&gt;each other&lt;/b&gt;" restype="string" datatype="html">
         <source>Refer to &lt;b&gt;each other&lt;/b&gt;</source>
@@ -17622,9 +17622,9 @@
         <source>Continue this conversation with</source>
         <target>Continúa esta conversación con</target>
       </trans-unit>
-      <trans-unit id="3742" resname="Re: MedPub&#35;&lt;%= message.attached_object_id %&gt;" restype="string" datatype="html">
-        <source>Re: MedPub&#35;&lt;%= message.attached_object_id %&gt;</source>
-        <target>Re: MedPub&#35;&lt;%= message.attached_object_id %&gt;</target>
+      <trans-unit id="3742" resname="Re: MedPub&#35;" restype="string" datatype="html">
+        <source>Re: MedPub&#35;</source>
+        <target>Re: MedPub&#35;</target>
       </trans-unit>
       <trans-unit id="3743" resname="Was this helpful?" restype="string" datatype="html">
         <source>Was this helpful?</source>
@@ -18318,13 +18318,13 @@
         <source>, &lt;%= App.user.get&#40;&apos;person.name&apos;&#41;.substr&#40;0, 1&#41; %&gt; &lt;a class=&quot;remove_author&quot;&gt; &lt;%= App.image_tag&#40;&quot;/imgs/icons/close_gray.png&quot;&#41; %&gt; &lt;/a&gt;</source>
         <target>, &lt;%= App.user.get&#40;&apos;person.name&apos;&#41;.substr&#40;0, 1&#41; %&gt; &lt;a class=&quot;remove_author&quot;&gt; &lt;%= App.image_tag&#40;&quot;/imgs/icons/close_gray.png&quot;&#41; %&gt; &lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="3892" resname=", &lt;%= author.person.name.substr&#40;0, 1&#41; %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= author.person.name.substr&#40;0, 1&#41; %&gt;</source>
-        <target>, &lt;%= author.person.name.substr&#40;0, 1&#41; %&gt;</target>
+      <trans-unit id="3892" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
-      <trans-unit id="3893" resname=", &lt;%= author.name.substr&#40;0, 1&#41; %&gt;&lt;%= author.middle_name.substr&#40;0, 1&#41; %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= author.name.substr&#40;0, 1&#41; %&gt;&lt;%= author.middle_name.substr&#40;0, 1&#41; %&gt;</source>
-        <target>, &lt;%= author.name.substr&#40;0, 1&#41; %&gt;&lt;%= author.middle_name.substr&#40;0, 1&#41; %&gt;</target>
+      <trans-unit id="3893" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="3894" resname="Volume &amp; Page Number" restype="string" datatype="html">
         <source>Volume &amp; Page Number</source>
@@ -18674,13 +18674,13 @@
         <source>Top Doctor</source>
         <target>El Mejor Doctor</target>
       </trans-unit>
-      <trans-unit id="3971" resname="&gt;&lt;%= region %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= region %&gt;</source>
-        <target>&gt;&lt;%= region %&gt;</target>
+      <trans-unit id="3971" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
-      <trans-unit id="3972" resname="&gt;in &lt;%= state %&gt;" restype="string" datatype="html">
-        <source>&gt;in &lt;%= state %&gt;</source>
-        <target>&gt;en &lt;%= state %&gt;</target>
+      <trans-unit id="3972" resname="&gt;in" restype="string" datatype="html">
+        <source>&gt;in</source>
+        <target>&gt;en</target>
       </trans-unit>
       <trans-unit id="3973" resname="&gt;Nationally" restype="string" datatype="html">
         <source>&gt;Nationally</source>
@@ -18838,9 +18838,9 @@
         <source>You have not unlocked any yet. &lt;a href=&quot;&#35;docscore/achievements&quot;&gt;Unlock some today &amp;raquo;&lt;/a&gt;</source>
         <target>Aún no has desbloqueado ninguna. &lt;a href=&quot;&#35;docscore/achievements&quot;&gt;Desbloquea algunas hoy &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="4006" resname="Unlocked&amp;nbsp;&lt;%= date %&gt;" restype="string" datatype="html">
-        <source>Unlocked&amp;nbsp;&lt;%= date %&gt;</source>
-        <target>Desbloqueada&amp;nbsp;&lt;%= date %&gt;</target>
+      <trans-unit id="4006" resname="Unlocked&amp;nbsp;" restype="string" datatype="html">
+        <source>Unlocked&amp;nbsp;</source>
+        <target>Desbloqueada&amp;nbsp;</target>
       </trans-unit>
     </body>
   </file>
@@ -19010,9 +19010,9 @@
         <source>See all your questions &amp;raquo;</source>
         <target>Ver todas tus preguntas &amp;raquo;</target>
       </trans-unit>
-      <trans-unit id="4043" resname="Re: MedPud&#35;&lt;%= val.question.publication_id %&gt;" restype="string" datatype="html">
-        <source>Re: MedPud&#35;&lt;%= val.question.publication_id %&gt;</source>
-        <target>Re: MedPud&#35;&lt;%= val.question.publication_id %&gt;</target>
+      <trans-unit id="4043" resname="Re: MedPud&#35;" restype="string" datatype="html">
+        <source>Re: MedPud&#35;</source>
+        <target>Re: MedPud&#35;</target>
       </trans-unit>
     </body>
   </file>
@@ -19042,9 +19042,9 @@
   </file>
   <file original="public/javascripts/templates/experts/answer_question_feedback.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4049" resname="Re: MedPud&#35;&lt;%= val.user_question.publication_id %&gt;" restype="string" datatype="html">
-        <source>Re: MedPud&#35;&lt;%= val.user_question.publication_id %&gt;</source>
-        <target>Re: MedPud&#35;&lt;%= val.user_question.publication_id %&gt;</target>
+      <trans-unit id="4049" resname="Re: MedPud&#35;" restype="string" datatype="html">
+        <source>Re: MedPud&#35;</source>
+        <target>Re: MedPud&#35;</target>
       </trans-unit>
     </body>
   </file>
@@ -19054,9 +19054,9 @@
         <source>Medical Student &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt; &lt;%= user_question.actor.name %&gt; &lt;/a&gt; asked:</source>
         <target>Estudiante de Medicina &lt;a class=”actor_link” href=”&#35;experts/&lt;%= user_question.actor.id %&gt;”&gt; &lt;%= user_question.actor.name %&gt; &lt;/a&gt; preguntó:</target>
       </trans-unit>
-      <trans-unit id="4051" resname="Dr. &lt;%= user_question.actor.first_name %&gt; &lt;%= user_question.actor.last_name %&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%= user_question.actor.first_name %&gt; &lt;%= user_question.actor.last_name %&gt;</source>
-        <target>Dr. &lt;%= user_question.actor.first_name %&gt; &lt;%= user_question.actor.last_name %&gt;</target>
+      <trans-unit id="4051" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target>Dr.</target>
       </trans-unit>
       <trans-unit id="4052" resname="Connected" restype="string" datatype="html">
         <source>Connected</source>
@@ -19282,9 +19282,9 @@
   </file>
   <file original="public/javascripts/templates/autocomplete/search_results_m2.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4101" resname="posted: &lt;%= related_post.value.highlight&#40;query&#41; %&gt;" restype="string" datatype="html">
-        <source>posted: &lt;%= related_post.value.highlight&#40;query&#41; %&gt;</source>
-        <target>publicado: &lt;%= related_post.value.highlight&#40;query&#41; %&gt;</target>
+      <trans-unit id="4101" resname="posted:" restype="string" datatype="html">
+        <source>posted:</source>
+        <target>publicado:</target>
       </trans-unit>
       <trans-unit id="4102" resname="See all results &amp;raquo" restype="string" datatype="html">
         <source>See all results &amp;raquo</source>
@@ -19826,9 +19826,9 @@
         <source>Find a pharmacy:</source>
         <target>Encuentra una farmacia:</target>
       </trans-unit>
-      <trans-unit id="4190" resname="&gt;\n              &lt;%= state[1] %&gt;" restype="string" datatype="html">
-        <source>&gt; &lt;%= state[1] %&gt;</source>
-        <target>&gt; &lt;%= state[1] %&gt;</target>
+      <trans-unit id="4190" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="6043" resname="Find a pharmacy in {state}:" restype="string" datatype="html">
         <source>Find a pharmacy in {state}:</source>
@@ -19846,9 +19846,9 @@
   </file>
   <file original="public/feelGood/templates/ui_modules/pharmacy_item.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4192" resname=", &lt;%= item.state %&gt; &lt;%= item.zip %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= item.state %&gt; &lt;%= item.zip %&gt;</source>
-        <target>, &lt;%= item.state %&gt; &lt;%= item.zip %&gt;</target>
+      <trans-unit id="4192" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="4193" resname="Call pharmacy first to verify they can ship to your area" restype="string" datatype="html">
         <source>Call pharmacy first to verify they can ship to your area</source>
@@ -19982,13 +19982,13 @@
   </file>
   <file original="public/feelGood/templates/ui_modules/edit_mailing_address.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4206" resname="&gt; &lt;%= item %&gt;" restype="string" datatype="html">
-        <source>&gt; &lt;%= item %&gt;</source>
-        <target>&gt; &lt;%= item %&gt;</target>
+      <trans-unit id="4206" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
-      <trans-unit id="4207" resname="&gt;\n              &lt;%= state[0] %&gt;" restype="string" datatype="html">
-        <source>&gt; &lt;%= state[0] %&gt;</source>
-        <target>&gt; &lt;%= state[0] %&gt;</target>
+      <trans-unit id="4207" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="6078" resname="Zip or Postal Code" restype="string" datatype="html">
         <source>Zip or Postal Code</source>
@@ -20070,9 +20070,9 @@
         <source>Choose a language</source>
         <target>Elige un idioma</target>
       </trans-unit>
-      <trans-unit id="4218" resname="&gt;&lt;%=value%&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%=value%&gt;</source>
-        <target>&gt;&lt;%=value%&gt;</target>
+      <trans-unit id="4218" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -20194,17 +20194,17 @@
   </file>
   <file original="public/feelGood/templates/treatments_for_indication.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4237" resname="&gt;&lt;%= treatment.medication.name %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= treatment.medication.name %&gt;</source>
-        <target>&gt;&lt;%= treatment.medication.name %&gt;</target>
+      <trans-unit id="4237" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="4238" resname="Brands:" restype="string" datatype="html">
         <source>Brands:</source>
         <target>Marcas:</target>
       </trans-unit>
-      <trans-unit id="4239" resname="&gt;&lt;%= brand_name %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= brand_name %&gt;</source>
-        <target>&gt;&lt;%= brand_name %&gt;</target>
+      <trans-unit id="4239" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="4240" resname="doctor reviews" restype="string" datatype="html">
         <source>doctor reviews</source>
@@ -20294,9 +20294,9 @@
         <source>Charge</source>
         <target>Cobrar</target>
       </trans-unit>
-      <trans-unit id="4255" resname="/&lt;%= transaction.dateObj.day %&gt;/&lt;%= transaction.dateObj.year.slice&#40;-2&#41; %&gt;" restype="string" datatype="html">
-        <source>/&lt;%= transaction.dateObj.day %&gt;/&lt;%= transaction.dateObj.year.slice&#40;-2&#41; %&gt;</source>
-        <target>/&lt;%= transaction.dateObj.day %&gt;/&lt;%= transaction.dateObj.year.slice&#40;-2&#41; %&gt;</target>
+      <trans-unit id="4255" resname="/&lt;%= transaction.dateObj.day %&gt;/" restype="string" datatype="html">
+        <source>/&lt;%= transaction.dateObj.day %&gt;/</source>
+        <target>/&lt;%= transaction.dateObj.day %&gt;/</target>
       </trans-unit>
       <trans-unit id="6101" resname="Contact ust at {link_tag_start}{email}{link_tag_end}" restype="string" datatype="html">
         <source>Contact ust at {link_tag_start}{email}{link_tag_end}</source>
@@ -20602,9 +20602,9 @@
         <source>Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just &lt;%= discount_price %&gt; &#40;you&apos;ll receive $10&#41;, after which normal rates and compensation apply.</source>
         <target>Alienta a tus pacientes a probar consultas virtuales ofreciéndoles una tasa con descuento para su primera consulta contigo. Pacientes pagan solo &lt;%= discount_price %&gt; &#40;tu recibirás $10&#41;, después de la cual tasas y compensación normal aplican.</target>
       </trans-unit>
-      <trans-unit id="4299" resname="Offer\n            &lt;span class=&quot;suffix-wrap&quot;&gt;\n            1\n            &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;\n            &lt;/span&gt;\n            time consult discount - &lt;%= discount_price %&gt;" restype="string" datatype="html">
-        <source>Offer &lt;span class=&quot;suffix-wrap&quot;&gt; 1 &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt; &lt;/span&gt; time consult discount - &lt;%= discount_price %&gt;</source>
-        <target>Ofrece un descuento por &lt;span class=&quot;suffix-wrap&quot;&gt; 1 &lt;span class=&quot;suffix&quot;&gt;era&lt;/span&gt; &lt;/span&gt; vez - &lt;%= discount_price %&gt;</target>
+      <trans-unit id="4299" resname="Offer &lt;span class=&quot;suffix-wrap&quot;&gt; 1 &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt; &lt;/span&gt; time consult discount -" restype="string" datatype="html">
+        <source>Offer &lt;span class=&quot;suffix-wrap&quot;&gt; 1 &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt; &lt;/span&gt; time consult discount -</source>
+        <target>Ofrece un descuento por &lt;span class=&quot;suffix-wrap&quot;&gt; 1 &lt;span class=&quot;suffix&quot;&gt;era&lt;/span&gt; &lt;/span&gt; vez -</target>
       </trans-unit>
       <trans-unit id="4300" resname="Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just\n                &lt;%= discount_price %&gt; &#40;you&apos;ll receive $10&#41;, after which normal rates and compensation apply." restype="string" datatype="html">
         <source>Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just &lt;%= discount_price %&gt; &#40;you&apos;ll receive $10&#41;, after which normal rates and compensation apply.</source>
@@ -20642,9 +20642,9 @@
         <source>, &lt;%= patient.age_years %&gt; Years Old</source>
         <target>, &lt;%= patient.age_years %&gt; Años de edad</target>
       </trans-unit>
-      <trans-unit id="4307" resname=", &lt;%= patient.polis_without_zip %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= patient.polis_without_zip %&gt;</source>
-        <target>, &lt;%= patient.polis_without_zip %&gt;</target>
+      <trans-unit id="4307" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="4308" resname="Dismiss" restype="string" datatype="html">
         <source>Dismiss</source>
@@ -20706,9 +20706,9 @@
   </file>
   <file original="public/feelGood/templates/subscribed_doctor_item_options.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4318" resname="Subscription start date: &lt;%= date_str %&gt;" restype="string" datatype="html">
-        <source>Subscription start date: &lt;%= date_str %&gt;</source>
-        <target>Fecha de inicio de la suscripción: &lt;%= date_str %&gt;</target>
+      <trans-unit id="4318" resname="Subscription start date:" restype="string" datatype="html">
+        <source>Subscription start date:</source>
+        <target>Fecha de inicio de la suscripción:</target>
       </trans-unit>
       <trans-unit id="4319" resname="Your message subscription allows you to send as many messages as you need and get doctor advice, prescriptions, lab tests, and more." restype="string" datatype="html">
         <source>Your message subscription allows you to send as many messages as you need and get doctor advice, prescriptions, lab tests, and more.</source>
@@ -20902,9 +20902,9 @@
         <source>Discover</source>
         <target>Descubrir</target>
       </trans-unit>
-      <trans-unit id="4350" resname=", &lt;%= App.defaults.user_json.person.name %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= App.defaults.user_json.person.name %&gt;</source>
-        <target>, &lt;%= App.defaults.user_json.person.name %&gt;</target>
+      <trans-unit id="4350" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="6133" resname="for {until_when}" restype="string" datatype="html">
         <source>for {until_when}</source>
@@ -21182,9 +21182,9 @@
   </file>
   <file original="public/feelGood/templates/review_indication_comment.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4396" resname="RATING: &lt;%= rating_text %&gt;" restype="string" datatype="html">
-        <source>RATING: &lt;%= rating_text %&gt;</source>
-        <target>CALIFICACIÓN: &lt;%= rating_text %&gt;</target>
+      <trans-unit id="4396" resname="RATING:" restype="string" datatype="html">
+        <source>RATING:</source>
+        <target>CALIFICACIÓN:</target>
       </trans-unit>
     </body>
   </file>
@@ -21646,9 +21646,9 @@
         <source>Medical Student &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt; &lt;%= user_question.actor.first_name ? user_question.actor.first_name+&apos; &apos;+user_question.actor.last_name : user_question.actor.name %&gt; &lt;/a&gt;</source>
         <target>Estudiante de Medicina &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt; &lt;%= user_question.actor.first_name ? user_question.actor.first_name+&apos; &apos;+user_question.actor.last_name : user_question.actor.name %&gt; &lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="4479" resname="&quot; &gt;\n        &lt;%= &#40;user_question.question&#41; %&gt;" restype="string" datatype="html">
-        <source>&quot; &gt; &lt;%= &#40;user_question.question&#41; %&gt;</source>
-        <target>&quot; &gt; &lt;%= &#40;user_question.question&#41; %&gt;</target>
+      <trans-unit id="4479" resname="&quot; &gt;" restype="string" datatype="html">
+        <source>&quot; &gt;</source>
+        <target>&quot; &gt;</target>
       </trans-unit>
       <trans-unit id="4480" resname="Answer question" restype="string" datatype="html">
         <source>Answer question</source>
@@ -21834,9 +21834,9 @@
         <source>Share photos and chat with docs anytime</source>
         <target>Comparte fotos y chatea con doctores en cualquier momento</target>
       </trans-unit>
-      <trans-unit id="4517" resname="USD per &lt;%= subscription_plan.display_price_frequency %&gt;" restype="string" datatype="html">
-        <source>USD per &lt;%= subscription_plan.display_price_frequency %&gt;</source>
-        <target>USD por &lt;%= subscription_plan.display_price_frequency %&gt;</target>
+      <trans-unit id="4517" resname="USD per" restype="string" datatype="html">
+        <source>USD per</source>
+        <target>USD por</target>
       </trans-unit>
       <trans-unit id="4518" resname="100% Guarantee" restype="string" datatype="html">
         <source>100% Guarantee</source>
@@ -21946,13 +21946,13 @@
         <source>Last payment</source>
         <target>Último pago</target>
       </trans-unit>
-      <trans-unit id="4543" resname="$&lt;%=client_info.price/100%&gt; / &lt;%=client_info.pay_frequency%&gt;" restype="string" datatype="html">
-        <source>$&lt;%=client_info.price/100%&gt; / &lt;%=client_info.pay_frequency%&gt;</source>
-        <target>$&lt;%=client_info.price/100%&gt; / &lt;%=client_info.pay_frequency%&gt;</target>
+      <trans-unit id="4543" resname="$&lt;%=client_info.price/100%&gt; /" restype="string" datatype="html">
+        <source>$&lt;%=client_info.price/100%&gt; /</source>
+        <target>$&lt;%=client_info.price/100%&gt; /</target>
       </trans-unit>
-      <trans-unit id="4544" resname="$&lt;%=client_info.commission/100%&gt;" restype="string" datatype="html">
-        <source>$&lt;%=client_info.commission/100%&gt;</source>
-        <target>$&lt;%=client_info.commission/100%&gt;</target>
+      <trans-unit id="4544" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target>$</target>
       </trans-unit>
       <trans-unit id="4545" resname="No clients yet.\n    &lt;a class=&quot;invite-clients&quot; data-show-container=&quot;invite&quot;&gt;Invite your clients now! ›&lt;/a&gt;" restype="string" datatype="html">
         <source>No clients yet. &lt;a class=&quot;invite-clients&quot; data-show-container=&quot;invite&quot;&gt;Invite your clients now! ›&lt;/a&gt;</source>
@@ -22018,9 +22018,9 @@
         <source>Get a more personalized answer</source>
         <target>Obtén una respuesta más personalizada</target>
       </trans-unit>
-      <trans-unit id="4557" resname="Tell the doctor about &lt;%= asker_name || &apos;yourself&apos; %&gt;" restype="string" datatype="html">
-        <source>Tell the doctor about &lt;%= asker_name || &apos;yourself&apos; %&gt;</source>
-        <target>Cuéntale al doctor acerca de &lt;%= asker_name || &apos;ti&apos; %&gt;</target>
+      <trans-unit id="4557" resname="Tell the doctor about" restype="string" datatype="html">
+        <source>Tell the doctor about</source>
+        <target>Cuéntale al doctor acerca de</target>
       </trans-unit>
       <trans-unit id="6157" resname="Add condition" restype="string" datatype="html">
         <source>Add condition</source>
@@ -22162,25 +22162,25 @@
         <source>style=&quot;display:none;&quot;</source>
         <target>style=&quot;display:none;&quot;</target>
       </trans-unit>
-      <trans-unit id="4587" resname="Your total this &lt;%= subscription_plan.display_price_frequency %&gt;" restype="string" datatype="html">
-        <source>Your total this &lt;%= subscription_plan.display_price_frequency %&gt;</source>
-        <target>Tu total este &lt;%= subscription_plan.display_price_frequency %&gt;</target>
+      <trans-unit id="4587" resname="Your total this" restype="string" datatype="html">
+        <source>Your total this</source>
+        <target>Tu total este</target>
       </trans-unit>
       <trans-unit id="4588" resname="Billed &lt;%= subscription_plan.frequency.toLowerCase&#40;&#41; %&gt;, cancel anytime" restype="string" datatype="html">
         <source>Billed &lt;%= subscription_plan.frequency.toLowerCase&#40;&#41; %&gt;, cancel anytime</source>
         <target>Facturado &lt;%= subscription_plan.frequency.toLowerCase&#40;&#41; %&gt;, cancela en cualquier momento</target>
       </trans-unit>
-      <trans-unit id="4589" resname="USD / &lt;%= subscription_plan.display_price_frequency %&gt;" restype="string" datatype="html">
-        <source>USD / &lt;%= subscription_plan.display_price_frequency %&gt;</source>
-        <target>USD / &lt;%= subscription_plan.display_price_frequency %&gt;</target>
+      <trans-unit id="4589" resname="USD /" restype="string" datatype="html">
+        <source>USD /</source>
+        <target>USD /</target>
       </trans-unit>
-      <trans-unit id="4590" resname="$&lt;%= subscription_dollars %&gt; USD / &lt;%= subscription_plan.display_price_frequency %&gt;" restype="string" datatype="html">
-        <source>$&lt;%= subscription_dollars %&gt; USD / &lt;%= subscription_plan.display_price_frequency %&gt;</source>
-        <target>$&lt;%= subscription_dollars %&gt; USD / &lt;%= subscription_plan.display_price_frequency %&gt;</target>
+      <trans-unit id="4590" resname="$&lt;%= subscription_dollars %&gt; USD /" restype="string" datatype="html">
+        <source>$&lt;%= subscription_dollars %&gt; USD /</source>
+        <target>$&lt;%= subscription_dollars %&gt; USD /</target>
       </trans-unit>
-      <trans-unit id="4591" resname="$&lt;%= add_person_dollars %&gt; USD / &lt;%= subscription_plan.display_price_frequency %&gt;" restype="string" datatype="html">
-        <source>$&lt;%= add_person_dollars %&gt; USD / &lt;%= subscription_plan.display_price_frequency %&gt;</source>
-        <target>$&lt;%= add_person_dollars %&gt; USD / &lt;%= subscription_plan.display_price_frequency %&gt;</target>
+      <trans-unit id="4591" resname="$&lt;%= add_person_dollars %&gt; USD /" restype="string" datatype="html">
+        <source>$&lt;%= add_person_dollars %&gt; USD /</source>
+        <target>$&lt;%= add_person_dollars %&gt; USD /</target>
       </trans-unit>
       <trans-unit id="4592" resname="Why?" restype="string" datatype="html">
         <source>Why?</source>
@@ -22298,9 +22298,9 @@
         <source>New patient lead</source>
         <target>Nuestro iniciativa de paciente</target>
       </trans-unit>
-      <trans-unit id="4614" resname="&gt;&lt;%= question%&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= question%&gt;</source>
-        <target>&gt;&lt;%= question%&gt;</target>
+      <trans-unit id="4614" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="4615" resname="Answer now" restype="string" datatype="html">
         <source>Answer now</source>
@@ -22322,9 +22322,9 @@
         <source>Patient Responses &#40;&lt;%= total_feedback %&gt;&#41;</source>
         <target>Respuestas del Paciente &#40;&lt;%= total_feedback %&gt;&#41;</target>
       </trans-unit>
-      <trans-unit id="4619" resname="&gt;&lt;%= el.member_info.full_name %&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= el.member_info.full_name %&gt;</source>
-        <target>&gt;&lt;%= el.member_info.full_name %&gt;</target>
+      <trans-unit id="4619" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="4620" resname="No comments provided." restype="string" datatype="html">
         <source>No comments provided.</source>
@@ -22434,9 +22434,9 @@
         <source>Another doctor already started answering &lt;b&gt;&lt;%= patient %&gt;&lt;/b&gt;. Would you like to talk to the next patient, &lt;b&gt;&lt;%= next_patient %&gt;&lt;/b&gt;, awaiting your help?</source>
         <target>Otro doctor ya comenzó a contestarle al &lt;b&gt;&lt;%= paciente %&gt;&lt;/b&gt;. ¿Te gustaría hablar con el próximo paciente, &lt;b&gt;&lt;%= next_patient %&gt;&lt;/b&gt;, que espera por tu ayuda?</target>
       </trans-unit>
-      <trans-unit id="4640" resname="Respond to &lt;%= next_patient_name %&gt;" restype="string" datatype="html">
-        <source>Respond to &lt;%= next_patient_name %&gt;</source>
-        <target>Responder a &lt;%= next_patient_name %&gt;</target>
+      <trans-unit id="4640" resname="Respond to" restype="string" datatype="html">
+        <source>Respond to</source>
+        <target>Responder a</target>
       </trans-unit>
     </body>
   </file>
@@ -22466,9 +22466,9 @@
   </file>
   <file original="public/feelGood/templates/nokey_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4644" resname="Request to connect with &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;" restype="string" datatype="html">
-        <source>Request to connect with &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;</source>
-        <target>Solicitar conectarse con &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;</target>
+      <trans-unit id="4644" resname="Request to connect with" restype="string" datatype="html">
+        <source>Request to connect with</source>
+        <target>Solicitar conectarse con</target>
       </trans-unit>
       <trans-unit id="4645" resname="If you don’t have &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;’s Keycode, you may still have an Introductory Consult before the &lt;%= doctor_detail.expert_type %&gt; confirms you as a patient" restype="string" datatype="html">
         <source>If you don’t have &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;’s Keycode, you may still have an Introductory Consult before the &lt;%= doctor_detail.expert_type %&gt; confirms you as a patient</source>
@@ -22562,9 +22562,9 @@
         <source>Your location can not be accessed</source>
         <target>Tu ubicación no puede ser accedida</target>
       </trans-unit>
-      <trans-unit id="4660" resname=", &lt;%=state%&gt;" restype="string" datatype="html">
-        <source>, &lt;%=state%&gt;</source>
-        <target>, &lt;%=state%&gt;</target>
+      <trans-unit id="4660" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
       <trans-unit id="4661" resname="Use Current Location" restype="string" datatype="html">
         <source>Use Current Location</source>
@@ -22582,9 +22582,9 @@
         <source>&gt;Outside of U.S.</source>
         <target>&gt;Fuera de los EE.UU.</target>
       </trans-unit>
-      <trans-unit id="4665" resname="&gt; &lt;%= item[1] %&gt;" restype="string" datatype="html">
-        <source>&gt; &lt;%= item[1] %&gt;</source>
-        <target>&gt; &lt;%= item[1] %&gt;</target>
+      <trans-unit id="4665" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -22686,13 +22686,13 @@
         <source>I&apos;d like to refer you to&lt;%= HMO_provider ? &#40;&apos; the following specialist. As a member of &apos; + HMO_provider + &apos;, please first check with your primary care physician before seeing this specialist&apos;&#41; : &apos;&apos; %&gt;:</source>
         <target>Me gustaría referirte al &lt;%= HMO_provider ? &#40;&apos; siguiente especialista. Como miembro de &apos; + HMO_provider + &apos;, por favor, revisa primero con tu doctor de atención primaria antes de ver a este especialista.&apos;&#41; : &apos;&apos; %&gt;:</target>
       </trans-unit>
-      <trans-unit id="4685" resname="Call: &lt;%= non_ht_tel %&gt;" restype="string" datatype="html">
-        <source>Call: &lt;%= non_ht_tel %&gt;</source>
-        <target>Llama al: &lt;%= non_ht_tel %&gt;</target>
+      <trans-unit id="4685" resname="Call:" restype="string" datatype="html">
+        <source>Call:</source>
+        <target>Llama al:</target>
       </trans-unit>
-      <trans-unit id="4686" resname="Email: &lt;%= non_ht_expert_email %&gt;" restype="string" datatype="html">
-        <source>Email: &lt;%= non_ht_expert_email %&gt;</source>
-        <target>Correo electrónico: &lt;%= non_ht_expert_email %&gt;</target>
+      <trans-unit id="4686" resname="Email:" restype="string" datatype="html">
+        <source>Email:</source>
+        <target>Correo electrónico:</target>
       </trans-unit>
     </body>
   </file>
@@ -22722,9 +22722,9 @@
         <source>I recommend the following medication:</source>
         <target>Recomiendo el siguiente medicamento:</target>
       </trans-unit>
-      <trans-unit id="4692" resname="Call: &lt;%= phone %&gt;" restype="string" datatype="html">
-        <source>Call: &lt;%= phone %&gt;</source>
-        <target>Llama al: &lt;%= phone %&gt;</target>
+      <trans-unit id="4692" resname="Call:" restype="string" datatype="html">
+        <source>Call:</source>
+        <target>Llama al:</target>
       </trans-unit>
     </body>
   </file>
@@ -22782,9 +22782,9 @@
         <source>I&apos;ve ordered a test for you via &lt;b&gt;&lt;%= test_provider %&gt;&lt;/b&gt;. Please schedule an appointment with a local test center that is convenient for you.</source>
         <target>He ordenado una prueba para ti a través de &lt;b&gt;&lt;%= test_provider %&gt;&lt;/b&gt;. Por favor, agenda una cita con un centro de pruebas local que sea conveniente para ti.</target>
       </trans-unit>
-      <trans-unit id="4705" resname="Test name: &lt;%= test.lab_order.order_code_description %&gt;" restype="string" datatype="html">
-        <source>Test name: &lt;%= test.lab_order.order_code_description %&gt;</source>
-        <target>Nombre de la prueba: &lt;%= test.lab_order.order_code_description %&gt;</target>
+      <trans-unit id="4705" resname="Test name:" restype="string" datatype="html">
+        <source>Test name:</source>
+        <target>Nombre de la prueba:</target>
       </trans-unit>
       <trans-unit id="4706" resname="Status:" restype="string" datatype="html">
         <source>Status:</source>
@@ -22842,9 +22842,9 @@
   </file>
   <file original="public/feelGood/templates/messages/attach_file.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4713" resname="Uploaded &lt;%= dateString %&gt;" restype="string" datatype="html">
-        <source>Uploaded &lt;%= dateString %&gt;</source>
-        <target>Subido &lt;%= dateString %&gt;</target>
+      <trans-unit id="4713" resname="Uploaded" restype="string" datatype="html">
+        <source>Uploaded</source>
+        <target>Subido</target>
       </trans-unit>
     </body>
   </file>
@@ -22982,9 +22982,9 @@
   </file>
   <file original="public/feelGood/templates/item_selector.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4735" resname="Choose &lt;%= context_text %&gt; &lt;%= index+1 %&gt;" restype="string" datatype="html">
-        <source>Choose &lt;%= context_text %&gt; &lt;%= index+1 %&gt;</source>
-        <target>Elige &lt;%= context_text %&gt; &lt;%= index+1 %&gt;</target>
+      <trans-unit id="4735" resname="Choose" restype="string" datatype="html">
+        <source>Choose</source>
+        <target>Elige</target>
       </trans-unit>
       <trans-unit id="4736" resname="Next »" restype="string" datatype="html">
         <source>Next »</source>
@@ -24914,13 +24914,13 @@
         <source>Impact from answers and insights:</source>
         <target>Impacto de respuestas y perspicacias:</target>
       </trans-unit>
-      <trans-unit id="5087" resname="Received\n            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt;\n            &lt;%= doctor.number_of_agrees_received == 1 ? &apos;agree&apos; : &apos;agrees&apos; %&gt;" restype="string" datatype="html">
-        <source>Received &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt; &lt;%= doctor.number_of_agrees_received == 1 ? &apos;agree&apos; : &apos;agrees&apos; %&gt;</source>
-        <target>Recibiste &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt; &lt;%= doctor.number_of_agrees_received == 1 ? ‘agree&apos; : ‘agrees&apos; %&gt;</target>
+      <trans-unit id="5087" resname="Received &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt;" restype="string" datatype="html">
+        <source>Received &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt;</source>
+        <target>Recibiste &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="5088" resname="Received\n            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt;\n            &lt;%= doctor.number_of_thanks_received == 1 ? &apos;thank&apos; : &apos;thanks&apos; %&gt;" restype="string" datatype="html">
-        <source>Received &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt; &lt;%= doctor.number_of_thanks_received == 1 ? &apos;thank&apos; : &apos;thanks&apos; %&gt;</source>
-        <target>Recibiste &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt; &lt;%= doctor.number_of_thanks_received == 1 ? ‘thank&apos; : ‘thanks&apos; %&gt;</target>
+      <trans-unit id="5088" resname="Received &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt;" restype="string" datatype="html">
+        <source>Received &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt;</source>
+        <target>Recibiste &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="6222" resname="1&#35;{n} year|&#35;{n} years" restype="string" datatype="html">
         <source>1&#35;{n} year|&#35;{n} years</source>
@@ -25210,13 +25210,13 @@
         <source>Name on card</source>
         <target>Nombre en la tarjeta</target>
       </trans-unit>
-      <trans-unit id="5135" resname="&gt; &lt;%= month %&gt;" restype="string" datatype="html">
-        <source>&gt; &lt;%= month %&gt;</source>
-        <target>&gt; &lt;%= month %&gt;</target>
+      <trans-unit id="5135" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
-      <trans-unit id="5136" resname="&gt; &lt;%= year %&gt;" restype="string" datatype="html">
-        <source>&gt; &lt;%= year %&gt;</source>
-        <target>&gt; &lt;%= year %&gt;</target>
+      <trans-unit id="5136" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
       <trans-unit id="5137" resname="Phone Number &#40;optional&#41;" restype="string" datatype="html">
         <source>Phone Number &#40;optional&#41;</source>
@@ -25258,13 +25258,13 @@
   </file>
   <file original="public/feelGood/templates/credit_balance.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5144" resname="Concierge Credits: &lt;%= concierge_dollars_str %&gt;" restype="string" datatype="html">
-        <source>Concierge Credits: &lt;%= concierge_dollars_str %&gt;</source>
-        <target>Créditos Concierge &lt;%= concierge_dollars_str %&gt;</target>
+      <trans-unit id="5144" resname="Concierge Credits:" restype="string" datatype="html">
+        <source>Concierge Credits:</source>
+        <target>Créditos Concierge</target>
       </trans-unit>
-      <trans-unit id="5145" resname="Prime Credits: $&lt;%= prime_dollars_str %&gt;" restype="string" datatype="html">
-        <source>Prime Credits: $&lt;%= prime_dollars_str %&gt;</source>
-        <target>Créditos Prime: $&lt;%= prime_dollars_str %&gt;</target>
+      <trans-unit id="5145" resname="Prime Credits: $" restype="string" datatype="html">
+        <source>Prime Credits: $</source>
+        <target>Créditos Prime: $</target>
       </trans-unit>
     </body>
   </file>
@@ -25286,9 +25286,9 @@
         <source>Great, glad to hear it!</source>
         <target>¡Estupendo, nos alegra escuchar eso!</target>
       </trans-unit>
-      <trans-unit id="5150" resname="Write a recommendation for &lt;%= short_name %&gt;" restype="string" datatype="html">
-        <source>Write a recommendation for &lt;%= short_name %&gt;</source>
-        <target>Escribe una recomendación para &lt;%= short_name %&gt;</target>
+      <trans-unit id="5150" resname="Write a recommendation for" restype="string" datatype="html">
+        <source>Write a recommendation for</source>
+        <target>Escribe una recomendación para</target>
       </trans-unit>
       <trans-unit id="5151" resname="We&apos;re honestly sorry..." restype="string" datatype="html">
         <source>We&apos;re honestly sorry...</source>
@@ -25478,14 +25478,6 @@
   </file>
   <file original="public/feelGood/templates/connect_doctor_module.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5170" resname=" &lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;</source>
-        <target>&lt;%= RB.getStringJS&#40;&apos;Buscar nombre, especialidad o tema&apos;&#41; %&gt;</target>
-      </trans-unit>
-      <trans-unit id="5171" resname="&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;</source>
-        <target>&lt;%= RB.getStringJS&#40;&apos;Buscar nombre, especialidad o tema&apos;&#41; %&gt;</target>
-      </trans-unit>
       <trans-unit id="5172" resname="Can&apos;t find your doctor? Invite them »" restype="string" datatype="html">
         <source>Can&apos;t find your doctor? Invite them »</source>
         <target>¿No puedes encontrar a tu doctor? Invítalo »</target>
@@ -25518,9 +25510,9 @@
   </file>
   <file original="public/feelGood/templates/connect_collegues.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5173" resname=", &lt;%= doctor.known_for_topics[0] %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= doctor.known_for_topics[0] %&gt;</source>
-        <target>, &lt;%= doctor.known_for_topics[0] %&gt;</target>
+      <trans-unit id="5173" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
     </body>
   </file>
@@ -26990,9 +26982,9 @@
   </file>
   <file original="public/feelGood/templates/ask_docs/disclaimer.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5412" resname="Questions about the service? &lt;%= support_info %&gt;" restype="string" datatype="html">
-        <source>Questions about the service? &lt;%= support_info %&gt;</source>
-        <target>¿Preguntas acerca del servicio? &lt;%= support_info %&gt;</target>
+      <trans-unit id="5412" resname="Questions about the service?" restype="string" datatype="html">
+        <source>Questions about the service?</source>
+        <target>¿Preguntas acerca del servicio?</target>
       </trans-unit>
       <trans-unit id="6347" resname="Please visit our {link_tag_start}Support Center{link_tag_end}" restype="string" datatype="html">
         <source>Please visit our {link_tag_start}Support Center{link_tag_end}</source>
@@ -27674,9 +27666,9 @@
   </file>
   <file original="public/feelGood/templates/_treatment_reviews.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5491" resname="&gt;&lt;%= val.expert.name%&gt;" restype="string" datatype="html">
-        <source>&gt;&lt;%= val.expert.name%&gt;</source>
-        <target>&gt;&lt;%= val.expert.name%&gt;</target>
+      <trans-unit id="5491" resname="&gt;" restype="string" datatype="html">
+        <source>&gt;</source>
+        <target>&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -27734,9 +27726,9 @@
   </file>
   <file original="public/feelGood/templates/_search_results_v2_Tip.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5502" resname="Tip: &lt;%=item.tip_topic_name%&gt;" restype="string" datatype="html">
-        <source>Tip: &lt;%=item.tip_topic_name%&gt;</source>
-        <target>Tip: &lt;%=item.tip_topic_name%&gt;</target>
+      <trans-unit id="5502" resname="Tip:" restype="string" datatype="html">
+        <source>Tip:</source>
+        <target>Tip:</target>
       </trans-unit>
       <trans-unit id="6420" resname="1&#35;{bold_tag_start}{n}{bold_tag_end} doctor agreed|&#35;{bold_tag_start}{n}{bold_tag_end} doctors agreed" restype="string" datatype="html">
         <source>1&#35;{bold_tag_start}{n}{bold_tag_end} doctor agreed|&#35;{bold_tag_start}{n}{bold_tag_end} doctors agreed</source>
@@ -27978,9 +27970,9 @@
   </file>
   <file original="app/views/layouts/feelGood/topic_help_doctor.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5544" resname="Dr. &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $&lt;%= price %&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $&lt;%= price %&gt;</source>
-        <target>Dr. &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, un especialista en &lt;%= doctor.specialty %&gt;, está disponible para ayudarte por sólo $&lt;%= price %&gt;</target>
+      <trans-unit id="5544" resname="Dr. &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $" restype="string" datatype="html">
+        <source>Dr. &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $</source>
+        <target>Dr. &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, un especialista en &lt;%= doctor.specialty %&gt;, está disponible para ayudarte por sólo $</target>
       </trans-unit>
     </body>
   </file>
