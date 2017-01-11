@@ -6218,7 +6218,7 @@
       </trans-unit>
       <trans-unit id=" agrees" resname=" agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
-        <target>está de acuerdo</target>
+        <target state="accepted">aprueba</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" answered:" resname=" answered:" restype="string" datatype="x-objective-c">
@@ -6420,7 +6420,7 @@ aceptado</target>
       </trans-unit>
       <trans-unit id="%@ agrees with %@&apos;s answer:" resname="%@ agrees with %@&apos;s answer:" restype="string" datatype="x-objective-c">
         <source>%1$@ agrees with %2$@&apos;s answer:</source>
-        <target>%1$@ está de acuerdo con la respuesta de %2$@:</target>
+        <target state="accepted">%1$@ aprueba la respuesta de %2$@:</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ and " resname="%@ and " restype="string" datatype="x-objective-c">
@@ -6699,7 +6699,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="%d doctor agrees" resname="%d doctor agrees" restype="string" datatype="x-objective-c">
         <source>%d doctor agrees</source>
-        <target>%d doctor está de acuerdo</target>
+        <target>%d doctor aprueba</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%d doctor found it helpful" resname="%d doctor found it helpful" restype="string" datatype="x-objective-c">
@@ -12973,7 +12973,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="agrees" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
-        <target>está de acuerdo</target>
+        <target state="accepted">aprueba</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="and %d doctors answered" resname="and %d doctors answered" restype="string" datatype="x-objective-c">
