@@ -9390,7 +9390,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Invite Friends &amp; Family" resname="Invite Friends &amp; Family" restype="string" datatype="x-objective-c">
         <source>Invite Friends &amp; Family</source>
-        <target>Invitar a Amigos &amp; Familiares</target>
+        <target state="accepted">Invita Amigos &amp; Familia</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Invite a friend or family member to help you achieve your goal:" resname="Invite a friend or family member to help you achieve your goal:" restype="string" datatype="x-objective-c">
