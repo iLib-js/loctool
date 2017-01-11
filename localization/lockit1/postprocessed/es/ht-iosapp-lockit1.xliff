@@ -9545,7 +9545,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Learn about HealthTap" resname="Learn about HealthTap" restype="string" datatype="x-objective-c">
         <source>Learn about HealthTap</source>
-        <target>Aprende acerca de HealthTap</target>
+        <target state="accepted">Acerca de HealthTap</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Learn more" resname="Learn more" restype="string" datatype="x-objective-c">
