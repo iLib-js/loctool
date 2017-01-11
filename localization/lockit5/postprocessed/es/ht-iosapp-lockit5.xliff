@@ -613,7 +613,7 @@
     <body>
       <trans-unit id="186" resname="%@ agrees with %@&apos;s answer:" restype="string" datatype="x-objective-c">
         <source>%@ agrees with %@&apos;s answer:</source>
-        <target>%@ está de acuerdo con la respuesta de %@:</target>
+        <target state="accepted">%@ aprueba la respuesta de %@:</target>
       </trans-unit>
     </body>
   </file>
