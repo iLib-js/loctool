@@ -1273,7 +1273,7 @@
       </trans-unit>
       <trans-unit id="230" resname="Find a topic &#40;e.g. Lose weight&#41;" restype="string" datatype="x-objective-c">
         <source>Find a topic &#40;e.g. Lose weight&#41;</source>
-        <target state="accepted" >Encuentra un tema &#40;p. ej. meditación&#41;</target>
+        <target state="accepted">Encuentra un tema &#40;p. ej. meditación&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -1362,7 +1362,7 @@
       </trans-unit>
       <trans-unit id="246" resname="Create an account" restype="string" datatype="x-objective-c">
         <source>Create an account</source>
-        <target>Crear una cuenta</target>
+        <target state="accepted">Crea tu cuenta</target>
       </trans-unit>
       <trans-unit id="247" resname="Your account is deactivated. To re-activate, send a request to " restype="string" datatype="x-objective-c">
         <source>Your account is deactivated. To re-activate, send a request to</source>

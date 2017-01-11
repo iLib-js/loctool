@@ -6473,7 +6473,7 @@
       </trans-unit>
       <trans-unit id="1471" resname="r630866426" restype="string" datatype="ruby">
         <source>Doctor Insights for You</source>
-        <target >Perspicacias de Doctor para ti</target>
+        <target>Perspicacias de Doctor para ti</target>
       </trans-unit>
     </body>
   </file>
@@ -28372,9 +28372,9 @@
         <source>Prime &lt;%= consult_type_name %&gt; Consult</source>
         <target>Consulta &lt;%= consult_type_name %&gt; Prime</target>
       </trans-unit>
-      <trans-unit id="13640" resname="From patient &lt;%=actor.name%&gt;" restype="string" datatype="html">
-        <source>From patient &lt;%=actor.name%&gt;</source>
-        <target>De paciente &lt;%=actor.name%&gt;</target>
+      <trans-unit id="13640" resname="From patient" restype="string" datatype="html">
+        <source>From patient</source>
+        <target>De paciente</target>
       </trans-unit>
       <trans-unit id="13641" resname="Decline" restype="string" datatype="html">
         <source>Decline</source>
@@ -28443,9 +28443,9 @@
   </file>
   <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13768" resname="Invite your &lt;%= expertType %&gt;" restype="string" datatype="html">
-        <source>Invite your &lt;%= expertType %&gt;</source>
-        <target>Invita a tu &lt;%= expertType %&gt;</target>
+      <trans-unit id="13768" resname="Invite your" restype="string" datatype="html">
+        <source>Invite your</source>
+        <target>Invita a tu</target>
       </trans-unit>
       <trans-unit id="13769" resname="Your &lt;%= upperExpertType %&gt;&apos;s Name" restype="string" datatype="html">
         <source>Your &lt;%= upperExpertType %&gt;&apos;s Name</source>
@@ -28534,9 +28534,9 @@
   </file>
   <file original="public/feelGood/page_templates/ask_docs_v4/suggest_answer.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13811" resname="and &lt;%= weighedInText %&gt;" restype="string" datatype="html">
-        <source>and &lt;%= weighedInText %&gt;</source>
-        <target>y &lt;%= weighedInText %&gt;</target>
+      <trans-unit id="13811" resname="and" restype="string" datatype="html">
+        <source>and</source>
+        <target>y</target>
       </trans-unit>
     </body>
   </file>
@@ -28570,9 +28570,9 @@
         <source>Care team</source>
         <target>Equipo de Atención</target>
       </trans-unit>
-      <trans-unit id="13818" resname="Starting at &lt;%= currency_symbol + mode.price %&gt;" restype="string" datatype="html">
-        <source>Starting at &lt;%= currency_symbol + mode.price %&gt;</source>
-        <target>Empezando desde &lt;%= currency_symbol + mode.price %&gt;</target>
+      <trans-unit id="13818" resname="Starting at" restype="string" datatype="html">
+        <source>Starting at</source>
+        <target>Empezando desde</target>
       </trans-unit>
     </body>
   </file>
@@ -28598,9 +28598,9 @@
   </file>
   <file original="public/feelGood/page_templates/ask_docs_v4/doctor.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13823" resname="Choose a &lt;%= expertType %&gt;" restype="string" datatype="html">
-        <source>Choose a &lt;%= expertType %&gt;</source>
-        <target>Elige a un &lt;%= expertType %&gt;</target>
+      <trans-unit id="13823" resname="Choose a" restype="string" datatype="html">
+        <source>Choose a</source>
+        <target>Elige a un</target>
       </trans-unit>
       <trans-unit id="13824" resname="Loading results" restype="string" datatype="html">
         <source>Loading results</source>

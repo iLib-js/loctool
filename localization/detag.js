@@ -22,14 +22,14 @@ var unit, units = xliff.getTranslationUnits();
 
 console.log("Processing translation units ...");
 
-var endingTag = /<%.*?%>\s*$/;
+var endingTag = /\s*<%=([^%]|%>)*?%>\s*$/;
 
 // go through all the new strings and re-use old translations from different files
 for (var i = 0; i < units.length; i++) {
 	unit = units[i];
 	
 	if (unit.datatype === "html") {
-		if (endingTag.test(unit.source) && endingTag.test(unit.target)) {
+		while (endingTag.test(unit.source) && endingTag.test(unit.target)) {
 			unit.source = unit.source.replace(endingTag, "");
 			unit.target = unit.target.replace(endingTag, "");
 			unit.key = unit.source;

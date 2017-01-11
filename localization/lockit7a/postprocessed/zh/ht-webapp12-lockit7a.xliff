@@ -2854,19 +2854,19 @@
             &lt;/span&gt;
             次咨询折扣</target>
       </trans-unit>
-      <trans-unit id="1176" resname="Offer            &lt;span class=&quot;suffix-wrap&quot;&gt;            1            &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;            &lt;/span&gt;            time consult discount - &lt;%= discount_price %&gt;" restype="string" datatype="html">
+      <trans-unit id="1176" resname="Offer\n            &lt;span class=&quot;suffix-wrap&quot;&gt;\n            1\n            &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;\n            &lt;/span&gt;\n            time consult discount -" restype="string" datatype="html">
         <source>Offer
             &lt;span class=&quot;suffix-wrap&quot;&gt;
             1
             &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;
             &lt;/span&gt;
-            time consult discount - &lt;%= discount_price %&gt;</source>
+            time consult discount -</source>
         <target state="translated">提供
             &lt;span class=&quot;suffix-wrap&quot;&gt;
             1
             &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;
             &lt;/span&gt;
-            次咨询折扣 - &lt;%= discount_price %&gt;</target>
+            次咨询折扣 -</target>
       </trans-unit>
     </body>
   </file>
@@ -3566,21 +3566,6 @@
         <target state="translated">询问医生任何问题
 		&lt;span class=&quot;sub_title&quot;&gt;任何时间。任何地点。 &amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;免费。 &lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1242" resname="improve your question to get a more personalized answer.    &lt;%=    RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.&quot;&#41;.format&#40;{     link_tag_start: &apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;,     link_tag_end: &apos;&lt;/a&gt;&apos;    }&#41;   %&gt;" restype="string" datatype="html">
-        <source>improve your question to get a more personalized answer. 
-			&lt;%=
-				RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.&quot;&#41;.format&#40;{
-					link_tag_start: &apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;,
-					link_tag_end: &apos;&lt;/a&gt;&apos;
-				}&#41;
-			%&gt;</source>
-        <target state="translated">&lt;%=
-				RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}请在这里查看我们的问题小贴士{link_tag_end}.&quot;&#41;.format&#40;{
-					link_tag_start:&apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;,
-					link_tag_end:&apos;&lt;/a&gt;&apos;
-				}&#41;
-			%&gt;</target>
-      </trans-unit>
       <trans-unit id="1535" resname="First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}." restype="string" datatype="javascript">
         <source>First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.</source>
         <target state="translated">首先检查您的拼写，然后&amp;nbsp;{link_tag_start}在这里查看我们的提问小贴士{link_tag_end}.</target>
@@ -3880,10 +3865,9 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeFollowUp.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1267" resname="TO:    &lt;%= episode.participant_docs[0].full_name %&gt;" restype="string" datatype="html">
-        <source>TO:
-				&lt;%= episode.participant_docs[0].full_name %&gt;</source>
-        <target state="translated">到:&lt;%= episode.participant_docs[0].full_name %&gt;</target>
+      <trans-unit id="1267" resname="TO:" restype="string" datatype="html">
+        <source>TO:</source>
+        <target state="translated">到:</target>
       </trans-unit>
     </body>
   </file>
@@ -4398,13 +4382,9 @@
   </file>
   <file original="public/javascripts/templates/profile/profile_top_template.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1297" resname="Born on            &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;            &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;" restype="string" datatype="html">
-        <source>Born on
-  		        &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;
-  		        &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;</source>
-        <target state="translated">出生
-  		        &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;
-  		        &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;</target>
+      <trans-unit id="1297" resname="Born on" restype="string" datatype="html">
+        <source>Born on</source>
+        <target state="translated">出生</target>
       </trans-unit>
     </body>
   </file>
@@ -4434,17 +4414,17 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_vip/expert_vip_answers.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1300" resname="agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post to &apos; : &apos; answer to &apos;%&gt;" restype="string" datatype="html">
-        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post to &apos; : &apos; answer to &apos;%&gt;</source>
-        <target state="translated">同意&lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ?&apos; post to &apos; :‘ answer to &apos;%&gt;</target>
+      <trans-unit id="1300" resname="agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
+        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</source>
+        <target state="translated">同意&lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_vip/expert_vip_feeds.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1301" resname="agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post &apos; : &apos; answer to &apos;%&gt;" restype="string" datatype="html">
-        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post &apos; : &apos; answer to &apos;%&gt;</source>
-        <target state="translated">同意&lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ?&apos; post &apos; :‘ answer to &apos;%&gt;</target>
+      <trans-unit id="1301" resname="agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
+        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</source>
+        <target state="translated">同意&lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -8788,9 +8768,9 @@
   </file>
   <file original="app/views/layouts/feelGood/topic_help_doctor.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2223" resname="Dr. &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $&lt;%= price %&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $&lt;%= price %&gt;</source>
-        <target state="translated">医生 &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, 一位专家 &lt;%= doctor.specialty %&gt;, 可以帮助您只需$&lt;%= price %&gt;</target>
+      <trans-unit id="2223" resname="Dr. &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $" restype="string" datatype="html">
+        <source>Dr. &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $</source>
+        <target state="translated">医生 &lt;%= doctor.value.split&#40;&quot; &quot;&#41;[2] %&gt;, 一位专家 &lt;%= doctor.specialty %&gt;, 可以帮助您只需$</target>
       </trans-unit>
     </body>
   </file>
@@ -9256,17 +9236,17 @@
   </file>
   <file original="public/javascripts/templates/experts/reminder_banner.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2312" resname="paid private &lt;%= messages &gt; 1 ? &quot;conversations&quot; : &quot;conversation&quot; %&gt;" restype="string" datatype="html">
-        <source>paid private &lt;%= messages &gt; 1 ? &quot;conversations&quot; : &quot;conversation&quot; %&gt;</source>
-        <target state="translated">私人付费 &lt;%= messages &gt; 1 ? &quot;会话&quot; : &quot;会话&quot; %&gt;</target>
+      <trans-unit id="2312" resname="paid private" restype="string" datatype="html">
+        <source>paid private</source>
+        <target state="translated">私人付费</target>
       </trans-unit>
       <trans-unit id="2313" resname="and &lt;a href=&quot;&#35;expert/messages&quot;&gt;&lt;%= &#40;appointments.toString&#40;&#41;.comma&#40;&#41;&#41; %&gt; appointment &lt;%= appointments &gt; 1 ? &quot;requests&quot; : &quot;request&quot; %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>and &lt;a href=&quot;&#35;expert/messages&quot;&gt;&lt;%= &#40;appointments.toString&#40;&#41;.comma&#40;&#41;&#41; %&gt; appointment &lt;%= appointments &gt; 1 ? &quot;requests&quot; : &quot;request&quot; %&gt;&lt;/a&gt;</source>
         <target state="translated">和 &lt;a href=&quot;&#35;expert/messages&quot;&gt;&lt;%= &#40;appointments.toString&#40;&#41;.comma&#40;&#41;&#41; %&gt; 预约 &lt;%= appointments &gt; 1 ? &quot;请求&quot; : &quot;请求&quot; %&gt;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="2314" resname="appointment &lt;%= appointments &gt; 1 ? &quot;requests&quot; : &quot;request&quot; %&gt;" restype="string" datatype="html">
-        <source>appointment &lt;%= appointments &gt; 1 ? &quot;requests&quot; : &quot;request&quot; %&gt;</source>
-        <target state="translated">预约 &lt;%= appointments &gt; 1 ? &quot;请求&quot; : &quot;请求&quot; %&gt;</target>
+      <trans-unit id="2314" resname="appointment" restype="string" datatype="html">
+        <source>appointment</source>
+        <target state="translated">预约</target>
       </trans-unit>
     </body>
   </file>
@@ -9588,9 +9568,9 @@
   </file>
   <file original="public/mobile/app/js/templates/app_profile/appProfileOverview.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2406" resname="Price: &lt;%=&#40;reviewable_app.price === &quot;Free&quot; || parseInt&#40;reviewable_app.price&#41; === 0&#41; ? &apos;Free&apos; : reviewable_app.price%&gt;" restype="string" datatype="html">
-        <source>Price: &lt;%=&#40;reviewable_app.price === &quot;Free&quot; || parseInt&#40;reviewable_app.price&#41; === 0&#41; ? &apos;Free&apos; : reviewable_app.price%&gt;</source>
-        <target state="translated">价格：&lt;%=&#40;reviewable_app.price === &quot;Free&quot; || parseInt&#40;reviewable_app.price&#41; === 0&#41; ? &apos;Free&apos; : reviewable_app.price%&gt;</target>
+      <trans-unit id="2406" resname="Price:" restype="string" datatype="html">
+        <source>Price:</source>
+        <target state="translated">价格：</target>
       </trans-unit>
     </body>
   </file>
@@ -9620,9 +9600,9 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_answer/expert_answer_preview.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2410" resname="Dr. &lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt;&lt;%=App.user.get&#40;&quot;person.last_name&quot;&#41;%&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt;&lt;%=App.user.get&#40;&quot;person.last_name&quot;&#41;%&gt;</source>
-        <target state="translated">医生 &lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt;&lt;%=App.user.get&#40;&quot;person.last_name&quot;&#41;%&gt;</target>
+      <trans-unit id="2410" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target state="translated">医生</target>
       </trans-unit>
       <trans-unit id="2411" resname="suggests &lt;span class=&quot;bold&quot;&gt;&lt;%=&#40;App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor&#41; ? &#40;App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;&#41; : &apos;&apos;%&gt;&lt;/span&gt;&apos;s answer:" restype="string" datatype="html">
         <source>suggests &lt;span class=&quot;bold&quot;&gt;&lt;%=&#40;App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor&#41; ? &#40;App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;&#41; : &apos;&apos;%&gt;&lt;/span&gt;&apos;s answer:</source>
@@ -9744,9 +9724,9 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_own_profile/expert_own_profile_education_exp_edit.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2429" resname=", &lt;%=fellowship.hospital ? fellowship.hospital : &quot;&quot;%&gt;" restype="string" datatype="html">
-        <source>, &lt;%=fellowship.hospital ? fellowship.hospital : &quot;&quot;%&gt;</source>
-        <target state="translated">, &lt;%=fellowship.hospital ? fellowship.hospital : &quot;&quot;%&gt;</target>
+      <trans-unit id="2429" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target state="translated">,</target>
       </trans-unit>
     </body>
   </file>
@@ -9836,21 +9816,21 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_settings/primeSettingsPayouts.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2443" resname="$&lt;%=&#40;typeof&#40;data.year_to_date_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_revenue_cents ? data.year_to_date_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;" restype="string" datatype="html">
-        <source>$&lt;%=&#40;typeof&#40;data.year_to_date_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_revenue_cents ? data.year_to_date_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</source>
-        <target state="translated">$&lt;%=&#40;typeof&#40;data.year_to_date_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_revenue_cents ? data.year_to_date_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</target>
+      <trans-unit id="2443" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target state="translated">$</target>
       </trans-unit>
-      <trans-unit id="2444" resname="$&lt;%=&#40;typeof&#40;data.lifetime_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_revenue_cents ? data.lifetime_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;" restype="string" datatype="html">
-        <source>$&lt;%=&#40;typeof&#40;data.lifetime_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_revenue_cents ? data.lifetime_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</source>
-        <target state="translated">$&lt;%=&#40;typeof&#40;data.lifetime_revenue_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_revenue_cents ? data.lifetime_revenue_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</target>
+      <trans-unit id="2444" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target state="translated">$</target>
       </trans-unit>
-      <trans-unit id="2445" resname="$&lt;%=&#40;typeof&#40;data.year_to_date_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_donated_cents ? data.year_to_date_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;" restype="string" datatype="html">
-        <source>$&lt;%=&#40;typeof&#40;data.year_to_date_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_donated_cents ? data.year_to_date_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</source>
-        <target state="translated">$&lt;%=&#40;typeof&#40;data.year_to_date_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.year_to_date_donated_cents ? data.year_to_date_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</target>
+      <trans-unit id="2445" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target state="translated">$</target>
       </trans-unit>
-      <trans-unit id="2446" resname="$&lt;%=&#40;typeof&#40;data.lifetime_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_donated_cents ? data.lifetime_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;" restype="string" datatype="html">
-        <source>$&lt;%=&#40;typeof&#40;data.lifetime_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_donated_cents ? data.lifetime_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</source>
-        <target state="translated">$&lt;%=&#40;typeof&#40;data.lifetime_donated_cents&#41; != &quot;undefined&quot; &amp;&amp; data.lifetime_donated_cents ? data.lifetime_donated_cents : 0&#41;.toString&#40;&#41;.digits&#40;&#41;%&gt;</target>
+      <trans-unit id="2446" resname="$" restype="string" datatype="html">
+        <source>$</source>
+        <target state="translated">$</target>
       </trans-unit>
     </body>
   </file>
@@ -9900,13 +9880,13 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_vip/expert_vip_network_experts.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2453" resname="Referred &lt;span style=&quot;font-weight: 600&quot;&gt;by&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;" restype="string" datatype="html">
-        <source>Referred &lt;span style=&quot;font-weight: 600&quot;&gt;by&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;</source>
-        <target state="translated">参考的&lt;span style=&quot;font-weight: 600”&gt;通过&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;</target>
+      <trans-unit id="2453" resname="Referred &lt;span style=&quot;font-weight: 600&quot;&gt;by&lt;/span&gt;" restype="string" datatype="html">
+        <source>Referred &lt;span style=&quot;font-weight: 600&quot;&gt;by&lt;/span&gt;</source>
+        <target state="translated">参考的&lt;span style=&quot;font-weight: 600”&gt;通过&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2454" resname="Refers &lt;span style=&quot;font-weight: 600&quot;&gt;to&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;" restype="string" datatype="html">
-        <source>Refers &lt;span style=&quot;font-weight: 600&quot;&gt;to&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;</source>
-        <target state="translated">参考 &lt;span style=&quot;font-weight: 600&quot;&gt;to&lt;/span&gt;&lt;%=typeof&#40;expert.referral_direction_last_name&#41; != &quot;undefined&quot; ? expert.referral_direction_last_name : &apos;&apos;%&gt;</target>
+      <trans-unit id="2454" resname="Refers &lt;span style=&quot;font-weight: 600&quot;&gt;to&lt;/span&gt;" restype="string" datatype="html">
+        <source>Refers &lt;span style=&quot;font-weight: 600&quot;&gt;to&lt;/span&gt;</source>
+        <target state="translated">参考 &lt;span style=&quot;font-weight: 600&quot;&gt;to&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -9932,9 +9912,9 @@
   </file>
   <file original="public/mobile/app/js/templates/feeds/most_popular_tips.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2458" resname="All categories &lt;%=App.sessionVars.tipsFeedVars.isAllCategories ? &quot; &amp;&#35;155;&quot; : &quot;&quot;%&gt;" restype="string" datatype="html">
-        <source>All categories &lt;%=App.sessionVars.tipsFeedVars.isAllCategories ? &quot; &amp;&#35;155;&quot; : &quot;&quot;%&gt;</source>
-        <target state="translated">所有目录&lt;%=App.sessionVars.tipsFeedVars.isAllCategories ? &quot; &amp;&#35;155;&quot; : &quot;&quot;%&gt;</target>
+      <trans-unit id="2458" resname="All categories" restype="string" datatype="html">
+        <source>All categories</source>
+        <target state="translated">所有目录</target>
       </trans-unit>
     </body>
   </file>
@@ -9948,9 +9928,9 @@
   </file>
   <file original="public/mobile/app/js/templates/headerExp.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2460" resname="Level &lt;%=App.user.get&#40;&quot;person.level_id&quot;&#41; %&gt;" restype="string" datatype="html">
-        <source>Level &lt;%=App.user.get&#40;&quot;person.level_id&quot;&#41; %&gt;</source>
-        <target state="translated">等级 &lt;%=App.user.get&#40;&quot;person.level_id&quot;&#41; %&gt;</target>
+      <trans-unit id="2460" resname="Level" restype="string" datatype="html">
+        <source>Level</source>
+        <target state="translated">等级</target>
       </trans-unit>
     </body>
   </file>
@@ -10024,9 +10004,9 @@
   </file>
   <file original="public/mobile/app/js/templates/member/member_health_profile/member_health_profile_basic.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2470" resname="/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/&lt;%= member[&quot;birthday&#40;1i&#41;&quot;] %&gt;" restype="string" datatype="html">
-        <source>/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/&lt;%= member[&quot;birthday&#40;1i&#41;&quot;] %&gt;</source>
-        <target state="translated">/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/&lt;%= member[&quot;birthday&#40;1i&#41;&quot;] %&gt;</target>
+      <trans-unit id="2470" resname="/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/" restype="string" datatype="html">
+        <source>/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/</source>
+        <target state="translated">/&lt;%= member[&quot;birthday&#40;3i&#41;&quot;] %&gt;/</target>
       </trans-unit>
     </body>
   </file>
@@ -10128,9 +10108,9 @@
   </file>
   <file original="public/mobile/app/js/templates/search/askQuestionPaymentConfirm.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2485" resname="Card number ending in &lt;%=typeof App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber != &quot;undefined&quot; ? App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber : &apos;&apos;%&gt;" restype="string" datatype="html">
-        <source>Card number ending in &lt;%=typeof App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber != &quot;undefined&quot; ? App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber : &apos;&apos;%&gt;</source>
-        <target state="translated">银行卡尾号&lt;%=typeof App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber != &quot;undefined&quot; ? App.sessionVars.AskAQuestionTempValues.paymentInfo.cardNumber : &apos;&apos;%&gt;</target>
+      <trans-unit id="2485" resname="Card number ending in" restype="string" datatype="html">
+        <source>Card number ending in</source>
+        <target state="translated">银行卡尾号</target>
       </trans-unit>
     </body>
   </file>
@@ -10160,9 +10140,9 @@
   </file>
   <file original="public/mobile/app/js/templates/search/searchResultQuestionsItem.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2490" resname="Dr. &lt;%=&#40;typeof answer_person_last_name != &quot;undefined&quot; &amp;&amp; answer_person_last_name&#41; ? answer_person_last_name : &apos;&apos;%&gt;" restype="string" datatype="html">
-        <source>Dr. &lt;%=&#40;typeof answer_person_last_name != &quot;undefined&quot; &amp;&amp; answer_person_last_name&#41; ? answer_person_last_name : &apos;&apos;%&gt;</source>
-        <target state="translated">医生 &lt;%=&#40;typeof answer_person_last_name != &quot;undefined&quot; &amp;&amp; answer_person_last_name&#41; ? answer_person_last_name : &apos;&apos;%&gt;</target>
+      <trans-unit id="2490" resname="Dr." restype="string" datatype="html">
+        <source>Dr.</source>
+        <target state="translated">医生</target>
       </trans-unit>
     </body>
   </file>
