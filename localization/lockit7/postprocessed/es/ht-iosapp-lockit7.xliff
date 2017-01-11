@@ -157,7 +157,7 @@
     <body>
       <trans-unit id="25" resname="Add a %@ interpreter for %@" restype="string" datatype="x-objective-c">
         <source>Add a %@ interpreter for %@</source>
-        <target>Añadir a %@ intérprete para %@</target>
+        <target state="accepted">Agrega un intérprete %@ por %@</target>
       </trans-unit>
     </body>
   </file>
