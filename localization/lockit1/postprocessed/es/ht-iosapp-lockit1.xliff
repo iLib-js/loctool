@@ -612,7 +612,7 @@
     <body>
       <trans-unit id="FJF-ED-bct.text" resname="FJF-ED-bct.text" restype="string" datatype="x-xib">
         <source>Our doctors can help you create a personalized checklist</source>
-        <target>Nuestros docotres pueden ayudarte a crear un listado personalizado</target>
+        <target state="accepted">Nuestros doctores te ayudan a crear una lista personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors can help you create a personalized checklist&quot;; ObjectID = &quot;FJF-ED-bct&quot;;</note>
       </trans-unit>
       <trans-unit id="g0A-Q4-q1N.normalTitle" resname="g0A-Q4-q1N.normalTitle" restype="string" datatype="x-xib">
@@ -622,7 +622,7 @@
       </trans-unit>
       <trans-unit id="y3y-JJ-2Wp.text" resname="y3y-JJ-2Wp.text" restype="string" datatype="x-xib">
         <source>Have a unique goal in mind?</source>
-        <target>¿Tienes una meta única en mente?</target>
+        <target state="accepted">¿Meta única en mente?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a unique goal in mind?&quot;; ObjectID = &quot;y3y-JJ-2Wp&quot;;</note>
       </trans-unit>
     </body>
@@ -2341,12 +2341,12 @@
     <body>
       <trans-unit id="Glp-ia-AOc.text" resname="Glp-ia-AOc.text" restype="string" datatype="x-xib">
         <source>Top Doctors Suggested for You</source>
-        <target state="accepted">Los Mejores Doctores Sugeridos para Ti</target>
+        <target state="accepted">Los mejores doctores para usted</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Top Doctors Suggested for You&quot;; ObjectID = &quot;Glp-ia-AOc&quot;;</note>
       </trans-unit>
       <trans-unit id="TyL-u8-N9l.text" resname="TyL-u8-N9l.text" restype="string" datatype="x-xib">
         <source>Connect with top doctors and build your Care-Team — get covered anytime, anywhere</source>
-        <target>Conéctate con los mejores doctores y construye tu Equipo de Atención, obtén cobertura a cualquier hora y en cualquier lugar</target>
+        <target state="accepted">Construye tu Equipo de Atención - cobertura a cualquier hora, en cualquier lugar</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Connect with top doctors and build your Care-Team — get covered anytime, anywhere&quot;; ObjectID = &quot;TyL-u8-N9l&quot;;</note>
       </trans-unit>
     </body>
@@ -2963,7 +2963,7 @@
       </trans-unit>
       <trans-unit id="c6N-Q7-rhd.normalTitle" resname="c6N-Q7-rhd.normalTitle" restype="string" datatype="x-xib">
         <source>Learn more</source>
-        <target>Aprende más</target>
+        <target state="accepted">Aprende más</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Learn more&quot;; ObjectID = &quot;c6N-Q7-rhd&quot;;</note>
       </trans-unit>
       <trans-unit id="e7g-c1-z8v.text" resname="e7g-c1-z8v.text" restype="string" datatype="x-xib">
@@ -4451,7 +4451,7 @@
     <body>
       <trans-unit id="leF-GQ-mLd.text" resname="leF-GQ-mLd.text" restype="string" datatype="x-xib">
         <source>Conditions that caused a close relative to pass away before the age of 60:</source>
-        <target>Condiciones que causaron que un familiar cercano falleciera antes de los 60 años:</target>
+        <target state="accepted">Condiciones que causaron muerte de un familiar cercano antes de los 60:</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Conditions that caused a close relative to pass away before the age of 60:&quot;; ObjectID = &quot;leF-GQ-mLd&quot;;</note>
       </trans-unit>
     </body>
@@ -7662,7 +7662,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Check out these related specialists" resname="Check out these related specialists" restype="string" datatype="x-objective-c">
         <source>Check out these related specialists</source>
-        <target>Da un vistazo a estos especialistas relacionados</target>
+        <target state="accepted">Ve a estos especialistas relacionados</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Check the spelling or enter another name, specialty, or topic." resname="Check the spelling or enter another name, specialty, or topic." restype="string" datatype="x-objective-c">
@@ -7772,7 +7772,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Complete your profile" resname="Complete your profile" restype="string" datatype="x-objective-c">
         <source>Complete your profile</source>
-        <target>Completar tu perfil</target>
+        <target state="accepted">Completa tu perfil</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Complications" resname="Complications" restype="string" datatype="x-objective-c">
@@ -7807,7 +7807,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Conditions that caused a close relative to pass away before the age of 60:" resname="Conditions that caused a close relative to pass away before the age of 60:" restype="string" datatype="x-objective-c">
         <source>Conditions that caused a close relative to pass away before the age of 60:</source>
-        <target>Condiciones que causaron que un familiar cercano falleciera antes de los 60 años:</target>
+        <target state="accepted">Condiciones que causaron muerte de un familiar cercano antes de los 60:</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Conditions treated by " resname="Conditions treated by " restype="string" datatype="x-objective-c">
@@ -8700,7 +8700,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Get answers to your health questions %@" resname="Get answers to your health questions %@" restype="string" datatype="x-objective-c">
         <source>Get answers to your health questions %@</source>
-        <target>Obtén respuestas a tus preguntas de salud %@</target>
+        <target state="accepted">Obtén respuestas a tus preguntas %@</target>
         <note annotates="source">part of the Ad that ends in... from over X top doctors</note>
       </trans-unit>
       <trans-unit id="Get covered: Connect with other top doctors to build your 24/7 Care-Team" resname="Get covered: Connect with other top doctors to build your 24/7 Care-Team" restype="string" datatype="x-objective-c">
@@ -9550,7 +9550,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Learn more" resname="Learn more" restype="string" datatype="x-objective-c">
         <source>Learn more</source>
-        <target>Aprender más</target>
+        <target state="accepted">Aprende más</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Leave" resname="Leave" restype="string" datatype="x-objective-c">
@@ -10357,7 +10357,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Please provide a contact number?" resname="Please provide a contact number?" restype="string" datatype="x-objective-c">
         <source>Please provide a contact number?</source>
-        <target>Por favor, proporciona un número de contacto</target>
+        <target state="accepted">Proporcione un número de contacto</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Please provide a password with 6+ characters." resname="Please provide a password with 6+ characters." restype="string" datatype="x-objective-c">
@@ -11402,7 +11402,7 @@ el médico pueda confirmarte como paciente</target>
       </trans-unit>
       <trans-unit id="Take Action" resname="Take Action" restype="string" datatype="x-objective-c">
         <source>Take Action</source>
-        <target>Tomar acción</target>
+        <target state="accepted">Toma acción</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Take a photo" resname="Take a photo" restype="string" datatype="x-objective-c">
@@ -13431,7 +13431,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
     <body>
       <trans-unit id="Zph-lb-dAC.text" resname="Zph-lb-dAC.text" restype="string" datatype="x-xib">
         <source>Doctors are online ready to help</source>
-        <target>Los doctores están en línea y listos para ayudar</target>
+        <target state="accepted">Doctores en línea y listos para ayudar</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Doctors are online ready to help&quot;; ObjectID = &quot;Zph-lb-dAC&quot;;</note>
       </trans-unit>
       <trans-unit id="b8g-lf-86y.text" resname="b8g-lf-86y.text" restype="string" datatype="x-xib">
@@ -13819,7 +13819,7 @@ Nuestros médicos pueden ayudar</target>
       </trans-unit>
       <trans-unit id="xcA-3W-U0J.normalTitle" resname="xcA-3W-U0J.normalTitle" restype="string" datatype="x-xib">
         <source>Take Action</source>
-        <target>Tomar acción</target>
+        <target state="accepted">Toma acción</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Take Action&quot;; ObjectID = &quot;xcA-3W-U0J&quot;;</note>
       </trans-unit>
       <trans-unit id="y6w-UV-fqB.text" resname="y6w-UV-fqB.text" restype="string" datatype="x-xib">
@@ -15065,7 +15065,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="rsq-g2-Fxs.text" resname="rsq-g2-Fxs.text" restype="string" datatype="x-xib">
         <source>Complete your profile</source>
-        <target>Completar tu perfil</target>
+        <target state="accepted">Completa tu perfil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Complete your profile&quot;; ObjectID = &quot;rsq-g2-Fxs&quot;;</note>
       </trans-unit>
       <trans-unit id="vos-tf-069.normalTitle" resname="vos-tf-069.normalTitle" restype="string" datatype="x-xib">
@@ -15104,7 +15104,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="zuT-73-HPf.text" resname="zuT-73-HPf.text" restype="string" datatype="x-xib">
         <source>Complete your profile</source>
-        <target>Completar tu perfil</target>
+        <target state="accepted">Completa tu perfil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Complete your profile&quot;; ObjectID = &quot;zuT-73-HPf&quot;;</note>
       </trans-unit>
     </body>
@@ -15138,7 +15138,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="zuT-73-HPf.text" resname="zuT-73-HPf.text" restype="string" datatype="x-xib">
         <source>Complete your profile</source>
-        <target>Completar tu perfil</target>
+        <target state="accepted">Completa tu perfil</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Complete your profile&quot;; ObjectID = &quot;zuT-73-HPf&quot;;</note>
       </trans-unit>
     </body>
@@ -15592,7 +15592,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Ege-W5-Zxn.normalTitle" resname="Ege-W5-Zxn.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;Ege-W5-Zxn&quot;;</note>
       </trans-unit>
       <trans-unit id="IbA-RT-mme.placeholder" resname="IbA-RT-mme.placeholder" restype="string" datatype="x-xib">
@@ -15612,7 +15612,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="XuL-zM-XZw.normalTitle" resname="XuL-zM-XZw.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;XuL-zM-XZw&quot;;</note>
       </trans-unit>
       <trans-unit id="kDq-De-PY6.normalTitle" resname="kDq-De-PY6.normalTitle" restype="string" datatype="x-xib">
@@ -15651,12 +15651,12 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Ege-W5-Zxn.normalTitle" resname="Ege-W5-Zxn.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;Ege-W5-Zxn&quot;;</note>
       </trans-unit>
       <trans-unit id="XuL-zM-XZw.normalTitle" resname="XuL-zM-XZw.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;XuL-zM-XZw&quot;;</note>
       </trans-unit>
       <trans-unit id="hgA-lZ-0HN.text" resname="hgA-lZ-0HN.text" restype="string" datatype="x-xib">
@@ -15690,7 +15690,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="OiG-1c-BWY.normalTitle" resname="OiG-1c-BWY.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;OiG-1c-BWY&quot;;</note>
       </trans-unit>
       <trans-unit id="T0W-m1-CdR.placeholder" resname="T0W-m1-CdR.placeholder" restype="string" datatype="x-xib">
@@ -15787,12 +15787,12 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="WiG-d1-HHE.text" resname="WiG-d1-HHE.text" restype="string" datatype="x-xib">
         <source>Take Action</source>
-        <target>Tomar acción</target>
+        <target state="accepted">Toma acción</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Take Action&quot;; ObjectID = &quot;WiG-d1-HHE&quot;;</note>
       </trans-unit>
       <trans-unit id="eqG-1Z-Cwg.text" resname="eqG-1Z-Cwg.text" restype="string" datatype="x-xib">
         <source>Learn More</source>
-        <target>Aprender Más</target>
+        <target state="accepted">Aprende Más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Learn More&quot;; ObjectID = &quot;eqG-1Z-Cwg&quot;;</note>
       </trans-unit>
       <trans-unit id="hgQ-MO-UmP.text" resname="hgQ-MO-UmP.text" restype="string" datatype="x-xib">
@@ -15821,7 +15821,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
     <body>
       <trans-unit id="5QB-FQ-5W3.text" resname="5QB-FQ-5W3.text" restype="string" datatype="x-xib">
         <source>Learn More</source>
-        <target>Aprender Más</target>
+        <target state="accepted">Aprende Más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Learn More&quot;; ObjectID = &quot;5QB-FQ-5W3&quot;;</note>
       </trans-unit>
       <trans-unit id="6dm-aD-7F0.text" resname="6dm-aD-7F0.text" restype="string" datatype="x-xib">
@@ -15841,7 +15841,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Rt1-XZ-7DX.text" resname="Rt1-XZ-7DX.text" restype="string" datatype="x-xib">
         <source>Take Action</source>
-        <target>Tomar acción</target>
+        <target state="accepted">Toma acción</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Take Action&quot;; ObjectID = &quot;Rt1-XZ-7DX&quot;;</note>
       </trans-unit>
       <trans-unit id="W2U-6J-a3Q.normalTitle" resname="W2U-6J-a3Q.normalTitle" restype="string" datatype="x-xib">
@@ -15875,7 +15875,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
     <body>
       <trans-unit id="5QB-FQ-5W3.text" resname="5QB-FQ-5W3.text" restype="string" datatype="x-xib">
         <source>Learn More</source>
-        <target>Aprender Más</target>
+        <target state="accepted">Aprende Más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Learn More&quot;; ObjectID = &quot;5QB-FQ-5W3&quot;;</note>
       </trans-unit>
       <trans-unit id="6dm-aD-7F0.text" resname="6dm-aD-7F0.text" restype="string" datatype="x-xib">
@@ -15895,7 +15895,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Rt1-XZ-7DX.text" resname="Rt1-XZ-7DX.text" restype="string" datatype="x-xib">
         <source>Take Action</source>
-        <target>Tomar acción</target>
+        <target state="accepted">Toma acción</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Take Action&quot;; ObjectID = &quot;Rt1-XZ-7DX&quot;;</note>
       </trans-unit>
       <trans-unit id="W2U-6J-a3Q.normalTitle" resname="W2U-6J-a3Q.normalTitle" restype="string" datatype="x-xib">
@@ -16155,7 +16155,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="XSi-c2-GUw.text" resname="XSi-c2-GUw.text" restype="string" datatype="x-xib">
         <source>Our doctors can help you create a personalized checklist</source>
-        <target>Nuestros docotres pueden ayudarte a crear un listado personalizado</target>
+        <target state="accepted">Nuestros doctores te ayudan a crear una lista personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors can help you create a personalized checklist&quot;; ObjectID = &quot;XSi-c2-GUw&quot;;</note>
       </trans-unit>
       <trans-unit id="ZEl-XQ-8Oc.placeholder" resname="ZEl-XQ-8Oc.placeholder" restype="string" datatype="x-xib">
@@ -16220,7 +16220,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="pq3-hc-t6G.text" resname="pq3-hc-t6G.text" restype="string" datatype="x-xib">
         <source>Have a unique goal in mind?</source>
-        <target>¿Tienes una meta única en mente?</target>
+        <target state="accepted">¿Meta única en mente?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a unique goal in mind?&quot;; ObjectID = &quot;pq3-hc-t6G&quot;;</note>
       </trans-unit>
       <trans-unit id="q8X-Cu-Q5y.normalTitle" resname="q8X-Cu-Q5y.normalTitle" restype="string" datatype="x-xib">
@@ -16269,7 +16269,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="n8O-BB-25p.normalTitle" resname="n8O-BB-25p.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;n8O-BB-25p&quot;;</note>
       </trans-unit>
       <trans-unit id="q4A-Tj-C55.text" resname="q4A-Tj-C55.text" restype="string" datatype="x-xib">
@@ -16365,7 +16365,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="C1O-7W-TUM.text" resname="C1O-7W-TUM.text" restype="string" datatype="x-xib">
         <source>Have a unique goal in mind?</source>
-        <target>¿Tienes una meta única en mente?</target>
+        <target state="accepted">¿Meta única en mente?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a unique goal in mind?&quot;; ObjectID = &quot;C1O-7W-TUM&quot;;</note>
       </trans-unit>
       <trans-unit id="DVU-TO-s5Z.normalTitle" resname="DVU-TO-s5Z.normalTitle" restype="string" datatype="x-xib">
@@ -16455,7 +16455,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="nBH-ps-JOk.text" resname="nBH-ps-JOk.text" restype="string" datatype="x-xib">
         <source>Our doctors can help you create a personalized checklist</source>
-        <target>Nuestros docotres pueden ayudarte a crear un listado personalizado</target>
+        <target state="accepted">Nuestros doctores te ayudan a crear una lista personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors can help you create a personalized checklist&quot;; ObjectID = &quot;nBH-ps-JOk&quot;;</note>
       </trans-unit>
       <trans-unit id="o5D-Xc-750.text" resname="o5D-Xc-750.text" restype="string" datatype="x-xib">
@@ -16617,7 +16617,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="jJB-E0-rXC.text" resname="jJB-E0-rXC.text" restype="string" datatype="x-xib">
         <source>Have a unique goal in mind?</source>
-        <target>¿Tienes una meta única en mente?</target>
+        <target state="accepted">¿Meta única en mente?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a unique goal in mind?&quot;; ObjectID = &quot;jJB-E0-rXC&quot;;</note>
       </trans-unit>
       <trans-unit id="ljU-zZ-ORc.text" resname="ljU-zZ-ORc.text" restype="string" datatype="x-xib">
@@ -16632,7 +16632,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="ri8-nh-XRf.text" resname="ri8-nh-XRf.text" restype="string" datatype="x-xib">
         <source>Our doctors can help you create a personalized checklist</source>
-        <target>Nuestros docotres pueden ayudarte a crear un listado personalizado</target>
+        <target state="accepted">Nuestros doctores te ayudan a crear una lista personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors can help you create a personalized checklist&quot;; ObjectID = &quot;ri8-nh-XRf&quot;;</note>
       </trans-unit>
       <trans-unit id="vzo-gV-dHy.text" resname="vzo-gV-dHy.text" restype="string" datatype="x-xib">
@@ -20580,7 +20580,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="fwc-U4-iHd.text" resname="fwc-U4-iHd.text" restype="string" datatype="x-xib">
         <source>Doctors are online ready to help</source>
-        <target>Los doctores están en línea y listos para ayudar</target>
+        <target state="accepted">Doctores en línea y listos para ayudar</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Doctors are online ready to help&quot;; ObjectID = &quot;fwc-U4-iHd&quot;;</note>
       </trans-unit>
     </body>
@@ -20947,7 +20947,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="Vq0-vy-7y3.text" resname="Vq0-vy-7y3.text" restype="string" datatype="x-xib">
         <source>Have a unique goal in mind?</source>
-        <target>¿Tienes una meta única en mente?</target>
+        <target state="accepted">¿Meta única en mente?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have a unique goal in mind?&quot;; ObjectID = &quot;Vq0-vy-7y3&quot;;</note>
       </trans-unit>
       <trans-unit id="bPX-Iu-fF4.normalTitle" resname="bPX-Iu-fF4.normalTitle" restype="string" datatype="x-xib">
@@ -20957,7 +20957,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="cCy-Oq-TMf.text" resname="cCy-Oq-TMf.text" restype="string" datatype="x-xib">
         <source>Our doctors can help you create a personalized checklist</source>
-        <target>Nuestros docotres pueden ayudarte a crear un listado personalizado</target>
+        <target state="accepted">Nuestros doctores te ayudan a crear una lista personalizada</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors can help you create a personalized checklist&quot;; ObjectID = &quot;cCy-Oq-TMf&quot;;</note>
       </trans-unit>
       <trans-unit id="dyi-6Y-cfW.text" resname="dyi-6Y-cfW.text" restype="string" datatype="x-xib">
@@ -21095,7 +21095,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="N4w-Mu-jPe.text" resname="N4w-Mu-jPe.text" restype="string" datatype="x-xib">
         <source>Check out these related specialists</source>
-        <target>Da un vistazo a estos especialistas relacionados</target>
+        <target state="accepted">Ve a estos especialistas relacionados</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Check out these related specialists&quot;; ObjectID = &quot;N4w-Mu-jPe&quot;;</note>
       </trans-unit>
       <trans-unit id="Ueq-Rg-ZWX.text" resname="Ueq-Rg-ZWX.text" restype="string" datatype="x-xib">
