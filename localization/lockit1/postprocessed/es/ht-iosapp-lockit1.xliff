@@ -15592,7 +15592,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Ege-W5-Zxn.normalTitle" resname="Ege-W5-Zxn.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;Ege-W5-Zxn&quot;;</note>
       </trans-unit>
       <trans-unit id="IbA-RT-mme.placeholder" resname="IbA-RT-mme.placeholder" restype="string" datatype="x-xib">
@@ -15612,7 +15612,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="XuL-zM-XZw.normalTitle" resname="XuL-zM-XZw.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;XuL-zM-XZw&quot;;</note>
       </trans-unit>
       <trans-unit id="kDq-De-PY6.normalTitle" resname="kDq-De-PY6.normalTitle" restype="string" datatype="x-xib">
@@ -15651,12 +15651,12 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="Ege-W5-Zxn.normalTitle" resname="Ege-W5-Zxn.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;Ege-W5-Zxn&quot;;</note>
       </trans-unit>
       <trans-unit id="XuL-zM-XZw.normalTitle" resname="XuL-zM-XZw.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;XuL-zM-XZw&quot;;</note>
       </trans-unit>
       <trans-unit id="hgA-lZ-0HN.text" resname="hgA-lZ-0HN.text" restype="string" datatype="x-xib">
@@ -15690,7 +15690,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="OiG-1c-BWY.normalTitle" resname="OiG-1c-BWY.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;OiG-1c-BWY&quot;;</note>
       </trans-unit>
       <trans-unit id="T0W-m1-CdR.placeholder" resname="T0W-m1-CdR.placeholder" restype="string" datatype="x-xib">
@@ -16269,7 +16269,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="n8O-BB-25p.normalTitle" resname="n8O-BB-25p.normalTitle" restype="string" datatype="x-xib">
         <source>Can&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu doctor? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;n8O-BB-25p&quot;;</note>
       </trans-unit>
       <trans-unit id="q4A-Tj-C55.text" resname="q4A-Tj-C55.text" restype="string" datatype="x-xib">
