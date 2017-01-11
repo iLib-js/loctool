@@ -8700,7 +8700,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Get answers to your health questions %@" resname="Get answers to your health questions %@" restype="string" datatype="x-objective-c">
         <source>Get answers to your health questions %@</source>
-        <target>Obtén respuestas a tus preguntas de salud %@</target>
+        <target state="accepted">Obtén respuestas a tus preguntas %@</target>
         <note annotates="source">part of the Ad that ends in... from over X top doctors</note>
       </trans-unit>
       <trans-unit id="Get covered: Connect with other top doctors to build your 24/7 Care-Team" resname="Get covered: Connect with other top doctors to build your 24/7 Care-Team" restype="string" datatype="x-objective-c">
