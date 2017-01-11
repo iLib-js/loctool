@@ -9947,7 +9947,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Notification Settings" resname="Notification Settings" restype="string" datatype="x-objective-c">
         <source>Notification Settings</source>
-        <target>Configuración de Notificaciones</target>
+        <target state="accepted">Notificaciones</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Notifications" resname="Notifications" restype="string" datatype="x-objective-c">
