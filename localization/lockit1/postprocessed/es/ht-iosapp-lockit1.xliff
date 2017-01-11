@@ -9736,7 +9736,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Message subscriptions" resname="Message subscriptions" restype="string" datatype="x-objective-c">
         <source>Message subscriptions</source>
-        <target state="accepted">Suscripciones a mensajes</target>
+        <target state="accepted">Suscripciones</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Mobile number" resname="Mobile number" restype="string" datatype="x-objective-c">
