@@ -1057,7 +1057,7 @@
       </trans-unit>
       <trans-unit id="292" resname="n8O-BB-25p.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;n8O-BB-25p&quot;;</note>
       </trans-unit>
     </body>
@@ -1121,7 +1121,7 @@
     <body>
       <trans-unit id="301" resname="OiG-1c-BWY.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;OiG-1c-BWY&quot;;</note>
       </trans-unit>
     </body>
@@ -1130,12 +1130,12 @@
     <body>
       <trans-unit id="302" resname="Ege-W5-Zxn.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;Ege-W5-Zxn&quot;;</note>
       </trans-unit>
       <trans-unit id="303" resname="XuL-zM-XZw.normalTitle" restype="string" datatype="x-xib">
         <source>Can\&apos;t find your doctor? Get help »</source>
-        <target>¿No puedes encontrar a tu médico? Obtén ayuda »</target>
+        <target state="accepted">¿Y mi doctor? Obtén ayuda »</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;XuL-zM-XZw&quot;;</note>
       </trans-unit>
     </body>
@@ -1432,7 +1432,7 @@
     <body>
       <trans-unit id="353" resname="k4X-gY-yoy.text" restype="string" datatype="x-xib">
         <source>Have the doctor\&apos;s business card or letterhead?</source>
-        <target>¿Tienes tarjeta comercial o papel con membrete del médico?</target>
+        <target state="accepted">¿Tienes la tarjeta o el membrete del médico?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have the doctor&apos;s business card or letterhead?&quot;; ObjectID = &quot;k4X-gY-yoy&quot;;</note>
       </trans-unit>
       <trans-unit id="354" resname="mRg-tY-Dbn.placeholder" restype="string" datatype="x-xib">

@@ -1658,7 +1658,7 @@
       </trans-unit>
       <trans-unit id="Y9g-2x-DHu.text" resname="Y9g-2x-DHu.text" restype="string" datatype="x-xib">
         <source>Choose a preferred length for your consult</source>
-        <target>Elige una duración de preferencia para tu consulta</target>
+        <target state="accepted">Elige una duración para tu consulta</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Choose a preferred length for your consult&quot;; ObjectID = &quot;Y9g-2x-DHu&quot;;</note>
       </trans-unit>
       <trans-unit id="dm5-Tr-ONg.text" resname="dm5-Tr-ONg.text" restype="string" datatype="x-xib">
@@ -1722,7 +1722,7 @@
       </trans-unit>
       <trans-unit id="VXr-ro-dkm.text" resname="VXr-ro-dkm.text" restype="string" datatype="x-xib">
         <source>Choose a preferred length for your consult</source>
-        <target>Elige una duración de preferencia para tu consulta</target>
+        <target state="accepted">Elige una duración para tu consulta</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Choose a preferred length for your consult&quot;; ObjectID = &quot;VXr-ro-dkm&quot;;</note>
       </trans-unit>
       <trans-unit id="WMw-lD-gB9.normalTitle" resname="WMw-lD-gB9.normalTitle" restype="string" datatype="x-xib">
@@ -1969,7 +1969,7 @@
       </trans-unit>
       <trans-unit id="5nc-TM-kBu.text" resname="5nc-TM-kBu.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que termina en</target>
+        <target state="accepted">Cobro a tarjeta que acaba en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;5nc-TM-kBu&quot;;</note>
       </trans-unit>
       <trans-unit id="6x1-5e-sQo.text" resname="6x1-5e-sQo.text" restype="string" datatype="x-xib">
@@ -2163,7 +2163,7 @@
       </trans-unit>
       <trans-unit id="5nc-TM-kBu.text" resname="5nc-TM-kBu.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que termina en</target>
+        <target state="accepted">Cobro a tarjeta que acaba en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;5nc-TM-kBu&quot;;</note>
       </trans-unit>
       <trans-unit id="FGI-Zq-sUF.text" resname="FGI-Zq-sUF.text" restype="string" datatype="x-xib">
@@ -2512,7 +2512,7 @@
       </trans-unit>
       <trans-unit id="6z6-Jn-Pmq.placeholder" resname="6z6-Jn-Pmq.placeholder" restype="string" datatype="x-xib">
         <source>Office phone number &#40;optional&#41;</source>
-        <target>Número telefónico de la oficina &#40;opcional&#41;</target>
+        <target state="accepted">Teléfono de la oficina &#40;opcional&#41;</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Office phone number &#40;optional&#41;&quot;; ObjectID = &quot;6z6-Jn-Pmq&quot;;</note>
       </trans-unit>
       <trans-unit id="8Yf-a6-93Q.placeholder" resname="8Yf-a6-93Q.placeholder" restype="string" datatype="x-xib">
@@ -3831,7 +3831,7 @@
       </trans-unit>
       <trans-unit id="s0C-tp-XO6.text" resname="s0C-tp-XO6.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que termina en</target>
+        <target state="accepted">Cobro a tarjeta que acaba en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;s0C-tp-XO6&quot;;</note>
       </trans-unit>
     </body>
@@ -4215,12 +4215,12 @@
     <body>
       <trans-unit id="F8K-jq-28f.text" resname="F8K-jq-28f.text" restype="string" datatype="x-xib">
         <source>HIPAA SECURE</source>
-        <target>PROTEGIDO SEGÚN HIPAA</target>
+        <target state="accepted">HIPAA</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;HIPAA SECURE&quot;; ObjectID = &quot;F8K-jq-28f&quot;;</note>
       </trans-unit>
       <trans-unit id="cIk-Cz-iUY.text" resname="cIk-Cz-iUY.text" restype="string" datatype="x-xib">
         <source>By importing your Apple Health app data into HealthTap, our doctors will know more about you and can serve your needs better</source>
-        <target>Al importar los datos de Apple Health a HealthTap, nuestros médicos saben más sobre ti y pueden atender mejor tus necesidades</target>
+        <target state="accepted">Al importar los datos de Apple Health, nuestros médicos saben más de ti y pueden atender mejor tus necesidades</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;By importing your Apple Health app data into HealthTap, our doctors will know more about you and can serve your needs better&quot;; ObjectID = &quot;cIk-Cz-iUY&quot;;</note>
       </trans-unit>
       <trans-unit id="qiN-Ry-U1Q.normalTitle" resname="qiN-Ry-U1Q.normalTitle" restype="string" datatype="x-xib">
@@ -4391,7 +4391,7 @@
     <body>
       <trans-unit id="WKy-CO-D63.text" resname="WKy-CO-D63.text" restype="string" datatype="x-xib">
         <source>Phone Number</source>
-        <target>Número de teléfono</target>
+        <target state="accepted">Teléfono</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Phone Number&quot;; ObjectID = &quot;WKy-CO-D63&quot;;</note>
       </trans-unit>
       <trans-unit id="nyE-G2-sIg.placeholder" resname="nyE-G2-sIg.placeholder" restype="string" datatype="x-xib">
@@ -5774,7 +5774,7 @@
     <body>
       <trans-unit id="ODR-DY-bDJ.placeholder" resname="ODR-DY-bDJ.placeholder" restype="string" datatype="x-xib">
         <source>Mobile number</source>
-        <target>Número de teléfono móvil</target>
+        <target state="accepted">Teléfono móvil</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Mobile number&quot;; ObjectID = &quot;ODR-DY-bDJ&quot;;</note>
       </trans-unit>
       <trans-unit id="SKX-ix-Qkz.text" resname="SKX-ix-Qkz.text" restype="string" datatype="x-xib">
@@ -5798,7 +5798,7 @@
       </trans-unit>
       <trans-unit id="u3H-6a-sRa.placeholder" resname="u3H-6a-sRa.placeholder" restype="string" datatype="x-xib">
         <source>Mobile number</source>
-        <target>Número de teléfono móvil</target>
+        <target state="accepted">Teléfono móvil</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Mobile number&quot;; ObjectID = &quot;u3H-6a-sRa&quot;;</note>
       </trans-unit>
       <trans-unit id="zBV-pa-OH5.text" resname="zBV-pa-OH5.text" restype="string" datatype="x-xib">
@@ -6218,7 +6218,7 @@
       </trans-unit>
       <trans-unit id=" agrees" resname=" agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
-        <target>está de acuerdo</target>
+        <target state="accepted">aprueba</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" answered:" resname=" answered:" restype="string" datatype="x-objective-c">
@@ -6420,7 +6420,7 @@ aceptado</target>
       </trans-unit>
       <trans-unit id="%@ agrees with %@&apos;s answer:" resname="%@ agrees with %@&apos;s answer:" restype="string" datatype="x-objective-c">
         <source>%1$@ agrees with %2$@&apos;s answer:</source>
-        <target>%1$@ está de acuerdo con la respuesta de %2$@:</target>
+        <target state="accepted">%1$@ aprueba la respuesta de %2$@:</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ and " resname="%@ and " restype="string" datatype="x-objective-c">
@@ -6699,7 +6699,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="%d doctor agrees" resname="%d doctor agrees" restype="string" datatype="x-objective-c">
         <source>%d doctor agrees</source>
-        <target>%d doctor está de acuerdo</target>
+        <target>%d doctor aprueba</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%d doctor found it helpful" resname="%d doctor found it helpful" restype="string" datatype="x-objective-c">
@@ -7497,12 +7497,12 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Billed monthly, cancel anytime" resname="Billed monthly, cancel anytime" restype="string" datatype="x-objective-c">
         <source>Billed monthly, cancel anytime</source>
-        <target>Con Facturación mensual, cancela en cualquier momento</target>
+        <target state="accepted">Facturación mensual, cancela en cualquier momento</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Billing Settings" resname="Billing Settings" restype="string" datatype="x-objective-c">
         <source>Billing Settings</source>
-        <target>Configuración de facturación</target>
+        <target state="accepted">Facturación</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Blood" resname="Blood" restype="string" datatype="x-objective-c">
@@ -9390,7 +9390,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Invite Friends &amp; Family" resname="Invite Friends &amp; Family" restype="string" datatype="x-objective-c">
         <source>Invite Friends &amp; Family</source>
-        <target>Invitar a Amigos &amp; Familiares</target>
+        <target state="accepted">Invita Amigos &amp; Familia</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Invite a friend or family member to help you achieve your goal:" resname="Invite a friend or family member to help you achieve your goal:" restype="string" datatype="x-objective-c">
@@ -9545,7 +9545,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Learn about HealthTap" resname="Learn about HealthTap" restype="string" datatype="x-objective-c">
         <source>Learn about HealthTap</source>
-        <target>Aprende acerca de HealthTap</target>
+        <target state="accepted">Acerca de HealthTap</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Learn more" resname="Learn more" restype="string" datatype="x-objective-c">
@@ -9736,17 +9736,17 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Message subscriptions" resname="Message subscriptions" restype="string" datatype="x-objective-c">
         <source>Message subscriptions</source>
-        <target state="accepted">Suscripciones a mensajes</target>
+        <target state="accepted">Suscripciones</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Mobile number" resname="Mobile number" restype="string" datatype="x-objective-c">
         <source>Mobile number</source>
-        <target>Número de teléfono móvil</target>
+        <target state="accepted">Teléfono móvil</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Mobile number:" resname="Mobile number:" restype="string" datatype="x-objective-c">
         <source>Mobile number:</source>
-        <target>Número de teléfono móvil:</target>
+        <target state="accepted">Teléfono móvil:</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="More Tips" resname="More Tips" restype="string" datatype="x-objective-c">
@@ -9947,7 +9947,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Notification Settings" resname="Notification Settings" restype="string" datatype="x-objective-c">
         <source>Notification Settings</source>
-        <target>Configuración de Notificaciones</target>
+        <target state="accepted">Notificaciones</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Notifications" resname="Notifications" restype="string" datatype="x-objective-c">
@@ -10272,7 +10272,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Phone number" resname="Phone number" restype="string" datatype="x-objective-c">
         <source>Phone number</source>
-        <target>Número de teléfono</target>
+        <target state="accepted">Teléfono</target>
         <note annotates="source">Phone number</note>
       </trans-unit>
       <trans-unit id="Photos" resname="Photos" restype="string" datatype="x-objective-c">
@@ -11844,7 +11844,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="Transaction history" resname="Transaction history" restype="string" datatype="x-objective-c">
         <source>Transaction history</source>
-        <target>Historial de transacciones</target>
+        <target state="accepted">Transacciones</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Transfer ownership?" resname="Transfer ownership?" restype="string" datatype="x-objective-c">
@@ -12973,7 +12973,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="agrees" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
-        <target>está de acuerdo</target>
+        <target state="accepted">aprueba</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="and %d doctors answered" resname="and %d doctors answered" restype="string" datatype="x-objective-c">
@@ -16700,7 +16700,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="JV5-CQ-ypN.placeholder" resname="JV5-CQ-ypN.placeholder" restype="string" datatype="x-xib">
         <source>Mobile number</source>
-        <target>Número de teléfono móvil</target>
+        <target state="accepted">Teléfono móvil</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Mobile number&quot;; ObjectID = &quot;JV5-CQ-ypN&quot;;</note>
       </trans-unit>
       <trans-unit id="Lpv-xd-6nC.text" resname="Lpv-xd-6nC.text" restype="string" datatype="x-xib">
@@ -18933,7 +18933,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="Em1-oA-4vh.text" resname="Em1-oA-4vh.text" restype="string" datatype="x-xib">
         <source>Billed monthly, cancel anytime</source>
-        <target>Con Facturación mensual, cancela en cualquier momento</target>
+        <target state="accepted">Facturación mensual, cancela en cualquier momento</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Billed monthly, cancel anytime&quot;; ObjectID = &quot;Em1-oA-4vh&quot;;</note>
       </trans-unit>
       <trans-unit id="NhN-lh-cBZ.normalTitle" resname="NhN-lh-cBZ.normalTitle" restype="string" datatype="x-xib">
@@ -18997,7 +18997,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="YZD-Zw-19a.text" resname="YZD-Zw-19a.text" restype="string" datatype="x-xib">
         <source>Billed monthly, cancel anytime</source>
-        <target>Con Facturación mensual, cancela en cualquier momento</target>
+        <target state="accepted">Facturación mensual, cancela en cualquier momento</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Billed monthly, cancel anytime&quot;; ObjectID = &quot;YZD-Zw-19a&quot;;</note>
       </trans-unit>
       <trans-unit id="emd-H7-Ftt.text" resname="emd-H7-Ftt.text" restype="string" datatype="x-xib">
@@ -19203,7 +19203,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="elN-VY-lTl.text" resname="elN-VY-lTl.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que termina en</target>
+        <target state="accepted">Cobro a tarjeta que acaba en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;elN-VY-lTl&quot;;</note>
       </trans-unit>
       <trans-unit id="fbE-ID-IfB.normalTitle" resname="fbE-ID-IfB.normalTitle" restype="string" datatype="x-xib">
@@ -19914,7 +19914,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="mH0-aw-Nw2.text" resname="mH0-aw-Nw2.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que termina en</target>
+        <target state="accepted">Cobro a tarjeta que acaba en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;mH0-aw-Nw2&quot;;</note>
       </trans-unit>
       <trans-unit id="s9c-WH-8cu.placeholder" resname="s9c-WH-8cu.placeholder" restype="string" datatype="x-xib">
