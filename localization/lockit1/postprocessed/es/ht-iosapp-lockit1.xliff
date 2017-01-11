@@ -2512,7 +2512,7 @@
       </trans-unit>
       <trans-unit id="6z6-Jn-Pmq.placeholder" resname="6z6-Jn-Pmq.placeholder" restype="string" datatype="x-xib">
         <source>Office phone number &#40;optional&#41;</source>
-        <target>Número telefónico de la oficina &#40;opcional&#41;</target>
+        <target state="accepted">Teléfono de la oficina &#40;opcional&#41;</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Office phone number &#40;optional&#41;&quot;; ObjectID = &quot;6z6-Jn-Pmq&quot;;</note>
       </trans-unit>
       <trans-unit id="8Yf-a6-93Q.placeholder" resname="8Yf-a6-93Q.placeholder" restype="string" datatype="x-xib">
