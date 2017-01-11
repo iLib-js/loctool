@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/Data/FGPeopleYouCareList.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="7" resname="%@ year old" restype="string" datatype="x-objective-c">
+        <source>%@ year old</source>
+        <target state="new">%@ year old</target>
+        <note annotates="source">first argument is the number 1</note>
+      </trans-unit>
+      <trans-unit id="8" resname="%@ years old" restype="string" datatype="x-objective-c">
+        <source>%@ years old</source>
+        <target state="new">%@ years old</target>
+        <note annotates="source">first argument is a number that is not 1</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
