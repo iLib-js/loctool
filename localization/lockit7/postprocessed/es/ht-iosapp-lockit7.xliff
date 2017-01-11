@@ -108,7 +108,7 @@
     <body>
       <trans-unit id="18" resname="our %@" restype="string" datatype="x-objective-c">
         <source>our %@</source>
-        <target>nuestro %@</target>
+        <target state="accepted">nuestros %@</target>
       </trans-unit>
     </body>
   </file>
