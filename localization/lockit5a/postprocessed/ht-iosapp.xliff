@@ -250,7 +250,7 @@
     <body>
       <trans-unit id="62" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
     </body>
@@ -283,11 +283,11 @@
     <body>
       <trans-unit id="67" resname="Find app by name or topic                     " restype="string" datatype="x-objective-c">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
       </trans-unit>
       <trans-unit id="68" resname="Find app by name or topic                                                                                  " restype="string" datatype="x-objective-c">
         <source>Find app by name or topic</source>
-        <target>Encontrar aplicación por nombre o tema</target>
+        <target state="accepted">Buscar aplicación por nombre o tema</target>
       </trans-unit>
     </body>
   </file>
@@ -379,7 +379,7 @@
     <body>
       <trans-unit id="143" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>Buscar respuestas, temas y expertos</target>
+        <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">search box placeholder</note>
       </trans-unit>
     </body>
@@ -1190,7 +1190,7 @@
       </trans-unit>
       <trans-unit id="312" resname="iqT-MJ-Oof.text" restype="string" datatype="x-xib">
         <source>No worries! Let us know your email and we\&apos;ll send you a link to reset it</source>
-        <target>¡No te preocupes! Haznos saber tu correo electrónico y te enviaremos un enlace para restablecerla</target>
+        <target state="accepted">¡No pasa nada! Dinos tu correo y te enviaremos un enlace para restablecerla</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;No worries! Let us know your email and we&apos;ll send you a link to reset it&quot;; ObjectID = &quot;iqT-MJ-Oof&quot;;</note>
       </trans-unit>
     </body>
