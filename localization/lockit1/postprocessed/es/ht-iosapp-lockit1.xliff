@@ -7497,7 +7497,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Billed monthly, cancel anytime" resname="Billed monthly, cancel anytime" restype="string" datatype="x-objective-c">
         <source>Billed monthly, cancel anytime</source>
-        <target>Con Facturación mensual, cancela en cualquier momento</target>
+        <target state="accepted">Facturación mensual, cancela en cualquier momento</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Billing Settings" resname="Billing Settings" restype="string" datatype="x-objective-c">
@@ -18933,7 +18933,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="Em1-oA-4vh.text" resname="Em1-oA-4vh.text" restype="string" datatype="x-xib">
         <source>Billed monthly, cancel anytime</source>
-        <target>Con Facturación mensual, cancela en cualquier momento</target>
+        <target state="accepted">Facturación mensual, cancela en cualquier momento</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Billed monthly, cancel anytime&quot;; ObjectID = &quot;Em1-oA-4vh&quot;;</note>
       </trans-unit>
       <trans-unit id="NhN-lh-cBZ.normalTitle" resname="NhN-lh-cBZ.normalTitle" restype="string" datatype="x-xib">
@@ -18997,7 +18997,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="YZD-Zw-19a.text" resname="YZD-Zw-19a.text" restype="string" datatype="x-xib">
         <source>Billed monthly, cancel anytime</source>
-        <target>Con Facturación mensual, cancela en cualquier momento</target>
+        <target state="accepted">Facturación mensual, cancela en cualquier momento</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Billed monthly, cancel anytime&quot;; ObjectID = &quot;YZD-Zw-19a&quot;;</note>
       </trans-unit>
       <trans-unit id="emd-H7-Ftt.text" resname="emd-H7-Ftt.text" restype="string" datatype="x-xib">
