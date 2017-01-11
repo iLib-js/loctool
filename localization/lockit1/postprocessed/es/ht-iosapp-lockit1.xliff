@@ -4215,7 +4215,7 @@
     <body>
       <trans-unit id="F8K-jq-28f.text" resname="F8K-jq-28f.text" restype="string" datatype="x-xib">
         <source>HIPAA SECURE</source>
-        <target>PROTEGIDO SEGÚN HIPAA</target>
+        <target state="accepted">HIPAA</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;HIPAA SECURE&quot;; ObjectID = &quot;F8K-jq-28f&quot;;</note>
       </trans-unit>
       <trans-unit id="cIk-Cz-iUY.text" resname="cIk-Cz-iUY.text" restype="string" datatype="x-xib">
