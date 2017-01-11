@@ -4220,7 +4220,7 @@
       </trans-unit>
       <trans-unit id="cIk-Cz-iUY.text" resname="cIk-Cz-iUY.text" restype="string" datatype="x-xib">
         <source>By importing your Apple Health app data into HealthTap, our doctors will know more about you and can serve your needs better</source>
-        <target>Al importar los datos de Apple Health a HealthTap, nuestros médicos saben más sobre ti y pueden atender mejor tus necesidades</target>
+        <target state="accepted">Al importar los datos de Apple Health, nuestros médicos saben más de ti y pueden atender mejor tus necesidades</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;By importing your Apple Health app data into HealthTap, our doctors will know more about you and can serve your needs better&quot;; ObjectID = &quot;cIk-Cz-iUY&quot;;</note>
       </trans-unit>
       <trans-unit id="qiN-Ry-U1Q.normalTitle" resname="qiN-Ry-U1Q.normalTitle" restype="string" datatype="x-xib">
