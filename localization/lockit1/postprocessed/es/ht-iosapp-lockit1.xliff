@@ -2346,7 +2346,7 @@
       </trans-unit>
       <trans-unit id="TyL-u8-N9l.text" resname="TyL-u8-N9l.text" restype="string" datatype="x-xib">
         <source>Connect with top doctors and build your Care-Team — get covered anytime, anywhere</source>
-        <target>Conéctate con los mejores doctores y construye tu Equipo de Atención, obtén cobertura a cualquier hora y en cualquier lugar</target>
+        <target state="accepted">Construye tu Equipo de Atención - cobertura a cualquier hora, en cualquier lugar</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Connect with top doctors and build your Care-Team — get covered anytime, anywhere&quot;; ObjectID = &quot;TyL-u8-N9l&quot;;</note>
       </trans-unit>
     </body>
