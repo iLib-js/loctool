@@ -1432,7 +1432,7 @@
     <body>
       <trans-unit id="353" resname="k4X-gY-yoy.text" restype="string" datatype="x-xib">
         <source>Have the doctor\&apos;s business card or letterhead?</source>
-        <target>¿Tienes tarjeta comercial o papel con membrete del médico?</target>
+        <target state="accepted">¿Tienes la tarjeta o el membrete del médico?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Have the doctor&apos;s business card or letterhead?&quot;; ObjectID = &quot;k4X-gY-yoy&quot;;</note>
       </trans-unit>
       <trans-unit id="354" resname="mRg-tY-Dbn.placeholder" restype="string" datatype="x-xib">
