@@ -4976,9 +4976,9 @@
   </file>
   <file original="public/javascripts/templates/experts/add_topic_popup.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1074" resname="Add &lt;%= topic.health_profile_type %&gt;" restype="string" datatype="html">
-        <source>Add &lt;%= topic.health_profile_type %&gt;</source>
-        <target>Añadir &lt;%= topic.health_profile_type %&gt;</target>
+      <trans-unit id="1074" resname="Add" restype="string" datatype="html">
+        <source>Add</source>
+        <target>Añadir</target>
       </trans-unit>
     </body>
   </file>
@@ -5026,9 +5026,9 @@
   </file>
   <file original="public/javascripts/templates/experts/edit_publications.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1083" resname=", &lt;%= App.user.get&#40;&apos;person.name&apos;&#41;.substr&#40;0, 1&#41; %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= App.user.get&#40;&apos;person.name&apos;&#41;.substr&#40;0, 1&#41; %&gt;</source>
-        <target>, &lt;%= App.user.get&#40;&apos;person.name&apos;&#41;.substr&#40;0, 1&#41; %&gt;</target>
+      <trans-unit id="1083" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
     </body>
   </file>
@@ -5599,17 +5599,17 @@
   </file>
   <file original="public/javascripts/templates/layers/invite_friends.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1169" resname="www.healthtap.com/?pmc=member_&lt;%= App.user.get&#40;&apos;person.id&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>www.healthtap.com/?pmc=member_&lt;%= App.user.get&#40;&apos;person.id&apos;&#41; %&gt;</source>
-        <target>www.healthtap.com/?pmc=member_&lt;%= App.user.get&#40;&apos;person.id&apos;&#41; %&gt;</target>
+      <trans-unit id="1169" resname="www.healthtap.com/?pmc=member_" restype="string" datatype="html">
+        <source>www.healthtap.com/?pmc=member_</source>
+        <target>www.healthtap.com/?pmc=member_</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/invite_friends_m2.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1170" resname="www.healthtap.com/?pmc=member_&lt;%= App.settings.user_json.person.id %&gt;" restype="string" datatype="html">
-        <source>www.healthtap.com/?pmc=member_&lt;%= App.settings.user_json.person.id %&gt;</source>
-        <target>www.healthtap.com/?pmc=member_&lt;%= App.settings.user_json.person.id %&gt;</target>
+      <trans-unit id="1170" resname="www.healthtap.com/?pmc=member_" restype="string" datatype="html">
+        <source>www.healthtap.com/?pmc=member_</source>
+        <target>www.healthtap.com/?pmc=member_</target>
       </trans-unit>
     </body>
   </file>
@@ -6017,17 +6017,17 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_vip/expert_vip_answers.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1242" resname="agreed with &lt;a href=&amp;quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&amp;quot; class=&amp;quot;a_handler&amp;quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post to &apos; : &apos; answer to &apos;%&gt;" restype="string" datatype="html">
-        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post to &apos; : &apos; answer to &apos;%&gt;</source>
-        <target>estuvo de acuerdo con &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; publicar a &apos; : &apos; contestar a &apos;%&gt;</target>
+      <trans-unit id="1242" resname="agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
+        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</source>
+        <target>estuvo de acuerdo con &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_vip/expert_vip_feeds.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1243" resname="agreed with &lt;a href=&amp;quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&amp;quot; class=&amp;quot;a_handler&amp;quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post &apos; : &apos; answer to &apos;%&gt;" restype="string" datatype="html">
-        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post &apos; : &apos; answer to &apos;%&gt;</source>
-        <target>estuvo de acuerdo con &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; publicar &apos; : &apos; contestar a &apos;%&gt;</target>
+      <trans-unit id="1243" resname="agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
+        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</source>
+        <target>estuvo de acuerdo con &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -12727,9 +12727,9 @@
   </file>
   <file original="public/javascripts/templates/experts/add_topic_popup.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1069" resname="Add &lt;%= topic.health_profile_type %&gt;" restype="string" datatype="html">
-        <source>Add &lt;%= topic.health_profile_type %&gt;</source>
-        <target>添加&lt;%= topic.health_profile_type %&gt;</target>
+      <trans-unit id="1069" resname="Add" restype="string" datatype="html">
+        <source>Add</source>
+        <target>添加</target>
       </trans-unit>
     </body>
   </file>
@@ -12777,9 +12777,9 @@
   </file>
   <file original="public/javascripts/templates/experts/edit_publications.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1078" resname=", &lt;%= App.user.get&#40;&apos;person.name&apos;&#41;.substr&#40;0, 1&#41; %&gt;" restype="string" datatype="html">
-        <source>, &lt;%= App.user.get&#40;&apos;person.name&apos;&#41;.substr&#40;0, 1&#41; %&gt;</source>
-        <target>, &lt;%= App.user.get&#40;&apos;person.name&apos;&#41;.substr&#40;0, 1&#41; %&gt;</target>
+      <trans-unit id="1078" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
     </body>
   </file>
@@ -13350,17 +13350,17 @@
   </file>
   <file original="public/javascripts/templates/layers/invite_friends.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1164" resname="www.healthtap.com/?pmc=member_&lt;%= App.user.get&#40;&apos;person.id&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>www.healthtap.com/?pmc=member_&lt;%= App.user.get&#40;&apos;person.id&apos;&#41; %&gt;</source>
-        <target>www.healthtap.com/?pmc=member_&lt;%= App.user.get&#40;&apos;person.id&apos;&#41; %&gt;</target>
+      <trans-unit id="1164" resname="www.healthtap.com/?pmc=member_" restype="string" datatype="html">
+        <source>www.healthtap.com/?pmc=member_</source>
+        <target>www.healthtap.com/?pmc=member_</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/invite_friends_m2.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1165" resname="www.healthtap.com/?pmc=member_&lt;%= App.settings.user_json.person.id %&gt;" restype="string" datatype="html">
-        <source>www.healthtap.com/?pmc=member_&lt;%= App.settings.user_json.person.id %&gt;</source>
-        <target>www.healthtap.com/?pmc=member_&lt;%= App.settings.user_json.person.id %&gt;</target>
+      <trans-unit id="1165" resname="www.healthtap.com/?pmc=member_" restype="string" datatype="html">
+        <source>www.healthtap.com/?pmc=member_</source>
+        <target>www.healthtap.com/?pmc=member_</target>
       </trans-unit>
     </body>
   </file>
@@ -13768,17 +13768,17 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_vip/expert_vip_answers.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1237" resname="agreed with &lt;a href=&amp;quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&amp;quot; class=&amp;quot;a_handler&amp;quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post to &apos; : &apos; answer to &apos;%&gt;" restype="string" datatype="html">
-        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post to &apos; : &apos; answer to &apos;%&gt;</source>
-        <target>同意&lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ?&apos; post to &apos; :‘ answer to &apos;%&gt;</target>
+      <trans-unit id="1237" resname="agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
+        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</source>
+        <target>同意&lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_vip/expert_vip_feeds.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1238" resname="agreed with &lt;a href=&amp;quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&amp;quot; class=&amp;quot;a_handler&amp;quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post &apos; : &apos; answer to &apos;%&gt;" restype="string" datatype="html">
-        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ? &apos; post &apos; : &apos; answer to &apos;%&gt;</source>
-        <target>同意&lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;&lt;%=user_answer.is_post ?&apos; post &apos; :‘ answer to &apos;%&gt;</target>
+      <trans-unit id="1238" resname="agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
+        <source>agreed with &lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</source>
+        <target>同意&lt;a href=&quot;&#35;expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>

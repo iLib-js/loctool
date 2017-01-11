@@ -5284,7 +5284,7 @@
       </trans-unit>
       <trans-unit id="1051" resname="checklist_literal" restype="string" datatype="x-android-resource">
         <source>checklist</source>
-        <target source="accepted">Por Hacer</target>
+        <target state="accepted">Por Hacer</target>
       </trans-unit>
       <trans-unit id="1052" resname="checklist_added" restype="string" datatype="x-android-resource">
         <source>added this checklist</source>

@@ -1374,7 +1374,7 @@
       </trans-unit>
       <trans-unit id="zEL-22-bH6.text" resname="zEL-22-bH6.text" restype="string" datatype="x-xib">
         <source>One consult with the doctor for advice, prescriptions, lab tests, and more</source>
-        <target target="accepted">Una consulta con el doctor para consejo, prueba de laboratorio, receta y más</target>
+        <target state="accepted">Una consulta con el doctor para consejo, prueba de laboratorio, receta y más</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more&quot;; ObjectID = &quot;zEL-22-bH6&quot;;</note>
       </trans-unit>
     </body>

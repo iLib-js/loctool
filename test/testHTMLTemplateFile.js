@@ -406,6 +406,59 @@ module.exports = {
         test.done();
     },
 
+    testHTMLTemplateFileParseSkipTemplateEchoTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+			'<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
+			'<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
+			'<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
+			'<% var fileSize = (measurement == \'MB\') ? upload_file_size / 1000000.0 : upload_file_size / 1000.0; %>\n' +
+			'<% fileSize = fileSize.toString(); %>\n' +
+			'<% fileSize = fileSize.substring(0, fileSize.indexOf(\'.\') + 3) %>\n' +
+			'\n' +
+			'<div class="chat-attachment">\n' +
+			'  <a href="<%= url %>" target="_blank">\n' +
+			'    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
+			'      <img class="uploaded-image" src="<%= url %>" />\n' +
+			'    <% } else { %>\n' +
+			'      <div class="attachment-placeholder">\n' +
+			'        <div class="attachment-icon"></div>\n' +
+			'      </div>\n' +
+			'    <% } %>\n' +
+			'  </a>\n' +
+			'  <% if (caption) { %>\n' +
+			'    <div class="attachment-caption">\n' +
+			'      <%= caption %>\n' +
+			'    </div>\n' +
+			'  <% } %>\n' +
+			'  <div class="attachment-timestamp">\n' +
+			'    Uploaded <%= dateString %>\n' +
+			'  </div>\n' +
+			'  <div class="attachment-size">\n' +
+			'    <%= fileSize + \' \' + measurement %> \n' +
+			'  </div>\n' +
+			'</div>');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ResourceString.hashKey(undefined, "en-US", "Uploaded", "html"));
+        test.ok(r);
+        
+        test.equal(r.getSource(), "Uploaded");
+        test.equal(r.getKey(), "Uploaded");
+        
+        test.done();
+    },
+
     testHTMLTemplateFileSkipScript: function(test) {
         test.expect(8);
 
@@ -842,6 +895,60 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), 'Dr. <%= family_name %> is not available.');
         test.equal(r.getKey(), 'Dr. <%= family_name %> is not available.');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileParseDontIncludeStartingTemplateEchoTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       <%= greeting %> The doctor is not available.\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('The doctor is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'The doctor is not available.');
+        test.equal(r.getKey(), 'The doctor is not available.');
+                
+        test.done();
+    },
+
+    testHTMLTemplateFileParseDontIncludeEndingTemplateEchoTags: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse('<html>\n' +
+        		'   <body>\n' + 
+        		'       The doctor is not available. <%= until_when %>\n' +
+        		'   </body>\n' +
+        		'</html>\n');
+        
+        var set = htf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('The doctor is not available.');
+        test.ok(r);
+        test.equal(r.getSource(), 'The doctor is not available.');
+        test.equal(r.getKey(), 'The doctor is not available.');
                 
         test.done();
     },
@@ -2407,7 +2514,7 @@ module.exports = {
         var htf = new HTMLTemplateFile(p);
         test.ok(htf);
         
-        htf.parse('<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>"></div>');
+        htf.parse('<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>">foo</div>');
         
         var set = htf.getTranslationSet();
         test.ok(set);
@@ -2421,7 +2528,7 @@ module.exports = {
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
-        		'<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>"></div>');
+        		'<div class="star <%= (doc_score > 30) ? "filled-star" : (doc_score > 20) ? "half-star" : "empty-star"%>">asdf</div>');
 
         test.done();
     },
@@ -3097,6 +3204,94 @@ module.exports = {
         test.done();
     },
     
+    testHTMLTemplateFileLocalizeTextBug2: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "foo",
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        htf.parse(
+			'<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
+			'<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
+			'<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
+			'<% var fileSize = (measurement == \'MB\') ? upload_file_size / 1000000.0 : upload_file_size / 1000.0; %>\n' +
+			'<% fileSize = fileSize.toString(); %>\n' +
+			'<% fileSize = fileSize.substring(0, fileSize.indexOf(\'.\') + 3) %>\n' +
+			'\n' +
+			'<div class="chat-attachment">\n' +
+			'  <a href="<%= url %>" target="_blank">\n' +
+			'    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
+			'      <img class="uploaded-image" src="<%= url %>" />\n' +
+			'    <% } else { %>\n' +
+			'      <div class="attachment-placeholder">\n' +
+			'        <div class="attachment-icon"></div>\n' +
+			'      </div>\n' +
+			'    <% } %>\n' +
+			'  </a>\n' +
+			'  <% if (caption) { %>\n' +
+			'    <div class="attachment-caption">\n' +
+			'      <%= caption %>\n' +
+			'    </div>\n' +
+			'  <% } %>\n' +
+			'  <div class="attachment-timestamp">\n' +
+			'    Uploaded <%= dateString %>\n' +
+			'  </div>\n' +
+			'  <div class="attachment-size">\n' +
+			'    <%= fileSize + \' \' + measurement %> \n' +
+			'  </div>\n' +
+			'</div>');
+        
+        var translations = new TranslationSet();
+        translations.add(new ResourceString({
+        	project: "foo",
+        	key: 'Uploaded',
+        	source: 'Cargada',
+        	locale: "es-US"
+        }));
+
+        var actual = htf.localizeText(translations, "es-US");
+        var expected =
+        	'<% var date = new Date(updated_at).toDateString().split(\' \'); %>\n' +
+			'<% var dateString = date[1] + \' \' + date[2] + \', \' + date[3]; %>\n' +
+			'<% var measurement = (upload_file_size > 999999) ? \'MB\' : \'KB\'; %>\n' +
+			'<% var fileSize = (measurement == \'MB\') ? upload_file_size / 1000000.0 : upload_file_size / 1000.0; %>\n' +
+			'<% fileSize = fileSize.toString(); %>\n' +
+			'<% fileSize = fileSize.substring(0, fileSize.indexOf(\'.\') + 3) %>\n' +
+			'\n' +
+			'<div class="chat-attachment">\n' +
+			'  <a href="<%= url %>" target="_blank">\n' +
+			'    <%if (upload_content_type.indexOf(\'image\') > -1) { %>\n' +
+			'      <img class="uploaded-image" src="<%= url %>">\n' +
+			'    <% } else { %>\n' +
+			'      <div class="attachment-placeholder">\n' +
+			'        <div class="attachment-icon"></div>\n' +
+			'      </div>\n' +
+			'    <% } %>\n' +
+			'  </a>\n' +
+			'  <% if (caption) { %>\n' +
+			'    <div class="attachment-caption">\n' +
+			'      <%= caption %>\n' +
+			'    </div>\n' +
+			'  <% } %>\n' +
+			'  <div class="attachment-timestamp">\n' +
+			'    Cargada <%= dateString %>\n' +
+			'  </div>\n' +
+			'  <div class="attachment-size">\n' +
+			'    <%= fileSize + \' \' + measurement %> \n' +
+			'  </div>\n' +
+			'</div>';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+              
+        test.done();
+    },
+
     testHTMLTemplateFileExtractFileFullyExtracted: function(test) {
         test.expect(17);
 

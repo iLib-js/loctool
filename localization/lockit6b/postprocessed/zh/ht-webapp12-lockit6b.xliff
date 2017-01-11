@@ -165,21 +165,6 @@
         <target state="translated">询问医生任何问题
 		&lt;span class=&quot;sub_title&quot;&gt;任何时间。任何地点。 &amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;免费。 &lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1128" resname="improve your question to get a more personalized answer.    &lt;%=    RB.getString&#40;&amp;quot;First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.&amp;quot;&#41;.format&#40;{     link_tag_start: &apos;&lt;a id=&amp;quot;guidelines&amp;quot;&gt;&apos;,     link_tag_end: &apos;&lt;/a&gt;&apos;    }&#41;   %&gt;" restype="string" datatype="html">
-        <source>improve your question to get a more personalized answer. 
-			&lt;%=
-				RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.&quot;&#41;.format&#40;{
-					link_tag_start: &apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;,
-					link_tag_end: &apos;&lt;/a&gt;&apos;
-				}&#41;
-			%&gt;</source>
-        <target state="translated">&lt;%=
-				RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}请在这里查看我们的问题小贴士{link_tag_end}.&quot;&#41;.format&#40;{
-					link_tag_start:&apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;,
-					link_tag_end:&apos;&lt;/a&gt;&apos;
-				}&#41;
-			%&gt;</target>
-      </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/askDocSpelling.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
@@ -244,10 +229,9 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeFollowUp.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1173" resname="TO:    &lt;%= episode.participant_docs[0].full_name %&gt;" restype="string" datatype="html">
-        <source>TO:
-				&lt;%= episode.participant_docs[0].full_name %&gt;</source>
-        <target state="translated">到:&lt;%= episode.participant_docs[0].full_name %&gt;</target>
+      <trans-unit id="1173" resname="TO:" restype="string" datatype="html">
+        <source>TO:</source>
+        <target state="translated">到:</target>
       </trans-unit>
     </body>
   </file>
@@ -284,13 +268,9 @@
   </file>
   <file original="public/javascripts/templates/profile/profile_top_template.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1215" resname="Born on            &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;            &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;" restype="string" datatype="html">
-        <source>Born on
-  		        &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;
-  		        &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;</source>
-        <target state="translated">出生
-  		        &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;
-  		        &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;</target>
+      <trans-unit id="1215" resname="Born on" restype="string" datatype="html">
+        <source>Born on</source>
+        <target state="translated">出生</target>
       </trans-unit>
     </body>
   </file>
@@ -1740,7 +1720,7 @@
     <body>
       <trans-unit id="2301" resname="r760932789" restype="string" datatype="x-haml">
         <source>Foreign Languages</source>
-	<target state="accepted">非英语翻译</target>
+        <target state="accepted">非英语翻译</target>
       </trans-unit>
       <trans-unit id="2302" resname="r71763976" restype="string" datatype="x-haml">
         <source>Where HealthTap content or services &#40;including these Terms of Use&#41; are translated into languages other than English, all such translations are for the convenience of our users only, and HealthTap is not responsible or liable in the event of any inaccuracy in such translation. In the event of a conflict between the English-language version of these Terms of Service, or any other content on HealthTap, and a version that has been translated into another language, the English-language version shall control and apply. You understand that content, including but not limited to questions and answers, may not have the same meaning in translation, and that treatments &#40;including but not limited to medication names&#41; and other information may differ from country to country and in different languages and may not be available in all places. Additionally, you understand and agree that virtual consultations with doctors may not be available in languages other than English, and you agree not to conduct a consultation with a doctor in a language in which you are not proficient without the use of a professional translator. If you are connected to a doctor who speaks your language, you understand that the doctor may not be a native speaker and that the doctor&apos;s ability to communicate may be limited. If you choose to use a translator in connection with a virtual consult, you understand that HealthTap is not liable for any errors or omissions in translation.</source>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="src/com/healthtap/userhtexpress/util/HTConstants.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="r984391622" restype="string" datatype="java">
+        <source>Mark as completed</source>
+        <target state="translated">标记为已完成</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r111630367" restype="string" datatype="java">
+        <source>Turn on reminders</source>
+        <target state="translated">打开提醒</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/SendKudosFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="7" resname="r948339101" restype="string" datatype="java">
+        <source>You&apos;re awesome</source>
+        <target state="translated">您真厉害</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/ThankLayerDialogBox.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="16" resname="r635494459" restype="string" datatype="java">
+        <source>{name} appreciates your gratitude :&#41;</source>
+        <target state="translated">{name} 感谢您的谢意:&#41;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/SearchFilterDialog.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="17" resname="r541597638" restype="string" datatype="java">
+        <source>Apps</source>
+        <target state="translated">应用程序</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/ReportContentDialogBox.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="18" resname="r382213733" restype="string" datatype="java">
+        <source>We appreciate you bringing this to our attention.</source>
+        <target state="translated">我们感谢您提醒我们注意。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="24" resname="symptom_triage_condition_alert" restype="string" datatype="x-android-resource">
+        <source>Would you like to start over with new symptoms or edit your current symptoms?</source>
+        <target state="translated">您希望重新开始新的症状还是编辑您当前的症状？</target>
+      </trans-unit>
+      <trans-unit id="25" resname="symptom_triage_condition_alert_positive" restype="string" datatype="x-android-resource">
+        <source>Leave</source>
+        <target state="translated">离开</target>
+      </trans-unit>
+      <trans-unit id="26" resname="symptom_triage_condition_alert_negative" restype="string" datatype="x-android-resource">
+        <source>Edit Symptoms</source>
+        <target state="translated">编辑症状</target>
+      </trans-unit>
+      <trans-unit id="27" resname="symptom_triage_condition_alert_title" restype="string" datatype="x-android-resource">
+        <source>Start over?</source>
+        <target state="translated">重新开始？</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

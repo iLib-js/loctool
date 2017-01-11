@@ -8255,23 +8255,17 @@
   </file>
   <file original="public/javascripts/templates/publications/related_publication.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13571" resname=",       &lt;%= publication.journal_year.substr&#40;0, 4&#41; %&gt;" restype="string" datatype="html">
-        <source>, 
-      &lt;%= publication.journal_year.substr&#40;0, 4&#41; %&gt;</source>
-        <target>, 
-      &lt;%= publication.journal_year.substr&#40;0, 4&#41; %&gt;</target>
+      <trans-unit id="13571" resname="," restype="string" datatype="html">
+        <source>,</source>
+        <target>,</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/profile/profile_top_template.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13572" resname="Born on            &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;            &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;" restype="string" datatype="html">
-        <source>Born on
-  		        &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;
-  		        &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;</source>
-        <target>出生
-  		        &lt;%= months[member[&apos;birthday&#40;2i&#41;&apos;] - 1] %&gt;
-  		        &lt;%= member[&apos;birthday&#40;3i&#41;&apos;] %&gt;</target>
+      <trans-unit id="13572" resname="Born on" restype="string" datatype="html">
+        <source>Born on</source>
+        <target>出生</target>
       </trans-unit>
     </body>
   </file>
@@ -8639,13 +8633,9 @@
   </file>
   <file original="public/javascripts/templates/mainMenuTemplate.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13605" resname="&apos;              &lt;%= App.image_tag&#40;App.user.get&#40;&apos;doc_app.doc_app_photo&apos;&#41;, {&apos;class&apos; : &apos;person_avatar person_avatar_menu&apos;}&#41; %&gt;              &lt;%= App.user.get&#40;&apos;doc_app.doc_app_name&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>&apos;
-              &lt;%= App.image_tag&#40;App.user.get&#40;&apos;doc_app.doc_app_photo&apos;&#41;, {&apos;class&apos; : &apos;person_avatar person_avatar_menu&apos;}&#41; %&gt;
-              &lt;%= App.user.get&#40;&apos;doc_app.doc_app_name&apos;&#41; %&gt;</source>
-        <target>&apos;
-              &lt;%= App.image_tag&#40;App.user.get&#40;&apos;doc_app.doc_app_photo&apos;&#41;, {&apos;class&apos; :&apos;person_avatar person_avatar_menu&apos;}&#41; %&gt;
-              &lt;%= App.user.get&#40;&apos;doc_app.doc_app_name&apos;&#41; %&gt;</target>
+      <trans-unit id="13605" resname="&apos;" restype="string" datatype="html">
+        <source>&apos;</source>
+        <target>&apos;</target>
       </trans-unit>
     </body>
   </file>
@@ -8712,11 +8702,9 @@
   </file>
   <file original="public/javascripts/templates/layers/permanently_change_shift.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13611" resname="Your shift:&lt;br&gt;    &lt;%= shiftText %&gt;" restype="string" datatype="html">
-        <source>Your shift:&lt;br&gt;
-    &lt;%= shiftText %&gt;</source>
-        <target>您的轮班：&lt;br&gt;
-    &lt;%= shiftText %&gt;</target>
+      <trans-unit id="13611" resname="Your shift:&lt;br&gt;" restype="string" datatype="html">
+        <source>Your shift:&lt;br&gt;</source>
+        <target>您的轮班：&lt;br&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -8754,10 +8742,9 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeFollowUp.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13615" resname="TO:    &lt;%= episode.participant_docs[0].full_name %&gt;" restype="string" datatype="html">
-        <source>TO:
-				&lt;%= episode.participant_docs[0].full_name %&gt;</source>
-        <target>到:&lt;%= episode.participant_docs[0].full_name %&gt;</target>
+      <trans-unit id="13615" resname="TO:" restype="string" datatype="html">
+        <source>TO:</source>
+        <target>到:</target>
       </trans-unit>
     </body>
   </file>
@@ -8990,21 +8977,6 @@
         <target>询问医生任何问题
 		&lt;span class=&quot;sub_title&quot;&gt;任何时间。任何地点。 &amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;免费。 &lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="13650" resname="improve your question to get a more personalized answer.    &lt;%=    RB.getString&#40;&amp;quot;First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.&amp;quot;&#41;.format&#40;{     link_tag_start: &apos;&lt;a id=&amp;quot;guidelines&amp;quot;&gt;&apos;,     link_tag_end: &apos;&lt;/a&gt;&apos;    }&#41;   %&gt;" restype="string" datatype="html">
-        <source>improve your question to get a more personalized answer. 
-			&lt;%=
-				RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}check out our question tips here{link_tag_end}.&quot;&#41;.format&#40;{
-					link_tag_start: &apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;,
-					link_tag_end: &apos;&lt;/a&gt;&apos;
-				}&#41;
-			%&gt;</source>
-        <target>&lt;%=
-				RB.getString&#40;&quot;First check your spelling, then&amp;nbsp;{link_tag_start}请在这里查看我们的问题小贴士{link_tag_end}.&quot;&#41;.format&#40;{
-					link_tag_start:&apos;&lt;a id=&quot;guidelines&quot;&gt;&apos;,
-					link_tag_end:&apos;&lt;/a&gt;&apos;
-				}&#41;
-			%&gt;</target>
-      </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/answerPanel_m2.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
@@ -9029,11 +9001,9 @@
   </file>
   <file original="public/javascripts/templates/layers/add_shift.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13653" resname="Add shift:&lt;br&gt;    &lt;%= shift %&gt;" restype="string" datatype="html">
-        <source>Add shift:&lt;br&gt;
-    &lt;%= shift %&gt;</source>
-        <target>添加轮班： &lt;br&gt;
-    &lt;%= shift %&gt;</target>
+      <trans-unit id="13653" resname="Add shift:&lt;br&gt;" restype="string" datatype="html">
+        <source>Add shift:&lt;br&gt;</source>
+        <target>添加轮班： &lt;br&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -9123,12 +9093,10 @@
   </file>
   <file original="public/javascripts/templates/feed/comment.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13662" resname="commented:    &lt;br&gt;    &lt;%= comment.comment || comment %&gt;" restype="string" datatype="html">
+      <trans-unit id="13662" resname="commented:\n    &lt;br&gt;" restype="string" datatype="html">
         <source>commented:
-    &lt;br&gt;
-    &lt;%= comment.comment || comment %&gt;</source>
-        <target>评论：&lt;br&gt;
-    &lt;%= comment.comment || comment %&gt;</target>
+    &lt;br&gt;</source>
+        <target>评论：&lt;br&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -9194,11 +9162,9 @@
   </file>
   <file original="public/javascripts/templates/experts/profile/information_template.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13670" resname="-                &lt;%= day.endH %&gt;&lt;%= day.endPeriod %&gt;" restype="string" datatype="html">
-        <source>-
-                &lt;%= day.endH %&gt;&lt;%= day.endPeriod %&gt;</source>
-        <target>-
-                &lt;%= day.endH %&gt;&lt;%= day.endPeriod %&gt;</target>
+      <trans-unit id="13670" resname="-" restype="string" datatype="html">
+        <source>-</source>
+        <target>-</target>
       </trans-unit>
     </body>
   </file>
@@ -9773,19 +9739,19 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
         <target>患者只需支付
                         &lt;%= discount_price %&gt; （您将收到$ 10），之后采用正常的费率和补偿。</target>
       </trans-unit>
-      <trans-unit id="13739" resname="Offer            &lt;span class=&amp;quot;suffix-wrap&amp;quot;&gt;            1            &lt;span class=&amp;quot;suffix&amp;quot;&gt;st&lt;/span&gt;            &lt;/span&gt;            time consult discount - &lt;%= discount_price %&gt;" restype="string" datatype="html">
+      <trans-unit id="13739" resname="Offer\n            &lt;span class=&quot;suffix-wrap&quot;&gt;\n            1\n            &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;\n            &lt;/span&gt;\n            time consult discount -" restype="string" datatype="html">
         <source>Offer
             &lt;span class=&quot;suffix-wrap&quot;&gt;
             1
             &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;
             &lt;/span&gt;
-            time consult discount - &lt;%= discount_price %&gt;</source>
+            time consult discount -</source>
         <target>提供
             &lt;span class=&quot;suffix-wrap&quot;&gt;
             1
             &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;
             &lt;/span&gt;
-            次咨询折扣 - &lt;%= discount_price %&gt;</target>
+            次咨询折扣 -</target>
       </trans-unit>
       <trans-unit id="13740" resname="Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just                &lt;%= discount_price %&gt; &#40;you&apos;ll receive $10&#41;, after which normal rates and compensation apply." restype="string" datatype="html">
         <source>Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just
@@ -10082,21 +10048,17 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
   </file>
   <file original="public/feelGood/templates/doctor_result_detail.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13779" resname="Received            &lt;span class=&amp;quot;insight-num&amp;quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt;            &lt;%= doctor.number_of_agrees_received == 1 ? &apos;agree&apos; : &apos;agrees&apos; %&gt;" restype="string" datatype="html">
+      <trans-unit id="13779" resname="Received\n            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Received
-            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt;
-            &lt;%= doctor.number_of_agrees_received == 1 ? &apos;agree&apos; : &apos;agrees&apos; %&gt;</source>
+            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt;</source>
         <target>收到
-            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt;
-            &lt;%= doctor.number_of_agrees_received == 1 ?&apos;同意&apos; :&apos;同意&apos; %&gt;</target>
+            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_agrees_received&#41; %&gt;&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="13780" resname="Received            &lt;span class=&amp;quot;insight-num&amp;quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt;            &lt;%= doctor.number_of_thanks_received == 1 ? &apos;thank&apos; : &apos;thanks&apos; %&gt;" restype="string" datatype="html">
+      <trans-unit id="13780" resname="Received\n            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Received
-            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt;
-            &lt;%= doctor.number_of_thanks_received == 1 ? &apos;thank&apos; : &apos;thanks&apos; %&gt;</source>
+            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt;</source>
         <target>收到
-            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt;
-            &lt;%= doctor.number_of_thanks_received == 1 ?&apos;谢谢&apos; :&apos;谢谢&apos; %&gt;</target>
+            &lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy&#40;doctor.number_of_thanks_received&#41; %&gt;&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -10135,14 +10097,6 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       &lt;span class=&quot;number&quot;&gt; &lt;%= upcoming_appointments.length %&gt; &lt;/span&gt;</source>
         <target>即将到来的预约
       &lt;span class=&quot;number&quot;&gt; &lt;%= upcoming_appointments.length %&gt; &lt;/span&gt;</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="public/feelGood/templates/connect_doctor_module.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="13785" resname=" &lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;</source>
-        <target>&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;</target>
       </trans-unit>
     </body>
   </file>
