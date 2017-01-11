@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="src/com/healthtap/userhtexpress/fragments/settings/SettingsFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="3" resname="r96628453" restype="string" datatype="java">
+        <source>Update payment method</source><seg-source><mrk mtype="seg" mid="1">Update payment method</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="1">更新付款方式</mrk></target>
+      </trans-unit>
+      <trans-unit id="4" resname="r704109550" restype="string" datatype="java">
+        <source>Remove payment method</source><seg-source><mrk mtype="seg" mid="2">Remove payment method</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="2">删除付款方式</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscribePaymentFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="5" resname="r308399689" restype="string" datatype="java">
+        <source>Prime subscription</source><seg-source><mrk mtype="seg" mid="3">Prime subscription</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="3">Prime订购</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXProfileFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="6" resname="r803699475" restype="string" datatype="java">
+        <source>\nPlease restart the app/device and try again.</source><seg-source><mrk mtype="seg" mid="4">\nPlease restart the app/device and try again.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="4">\n请重新启动应用程序或设备，然后重新尝试。</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/GeneralListFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="8" resname="r110253465" restype="string" datatype="java">
+        <source>Upcoming Appointments</source><seg-source><mrk mtype="seg" mid="5">Upcoming Appointments</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="5">即将来临的预约</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerSearchFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="9" resname="r1012743332" restype="string" datatype="java">
+        <source>Can't find a doctor?</source><seg-source><mrk mtype="seg" mid="6">Can't find a doctor?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="6">找不到一位医生？</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/consult/ComposeConsultFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="10" resname="r308900797" restype="string" datatype="java">
+        <source>Make Appointment with {doctor_name}</source><seg-source><mrk mtype="seg" mid="7">Make Appointment with {doctor_name}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="7">与{doctor_name}预约</mrk></target>
+      </trans-unit>
+      <trans-unit id="11" resname="r907394117" restype="string" datatype="java">
+        <source>Message with {doctor_name}</source><seg-source><mrk mtype="seg" mid="8">Message with {doctor_name}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="8">与{doctor_name}发送信息</mrk></target>
+      </trans-unit>
+      <trans-unit id="12" resname="r291695355" restype="string" datatype="java">
+        <source>Chat with {doctor_name}</source><seg-source><mrk mtype="seg" mid="9">Chat with {doctor_name}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="9">与{doctor_name}聊天</mrk></target>
+      </trans-unit>
+      <trans-unit id="13" resname="r560063711" restype="string" datatype="java">
+        <source>Consult with {doctor_name}</source><seg-source><mrk mtype="seg" mid="10">Consult with {doctor_name}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="10">咨询{doctor_name}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/concierge/ConciergeConnectFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="14" resname="r715650326" restype="string" datatype="java">
+        <source>Connect with {doctor_name}</source><seg-source><mrk mtype="seg" mid="11">Connect with {doctor_name}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="11">连接{doctor_name}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/AppListsFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="15" resname="r922936149" restype="string" datatype="java">
+        <source>Search results</source><seg-source><mrk mtype="seg" mid="12">Search results</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="12">搜索结果</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="19" resname="r228095187" restype="string" datatype="java">
+        <source>Failed to ignore the request</source><seg-source><mrk mtype="seg" mid="13">Failed to ignore the request</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="13">无法忽略请求</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="20" resname="gift_refer_linkedin_title" restype="string" datatype="x-android-resource">
+        <source>{user_name} is gifting you ${price} off to talk to HealthTap doctors</source><seg-source><mrk mtype="seg" mid="14">{user_name} is gifting you ${price} off to talk to HealthTap doctors</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="14">{user_name}为您与HealthTap医生交谈减免${price}</mrk></target>
+      </trans-unit>
+      <trans-unit id="21" resname="gift_refer_linkedin_summary" restype="string" datatype="x-android-resource">
+        <source>Get ${price} off video or text chat consults with your doctor or specialist on healthtap—advice &amp; prescriptions! :)</source><seg-source><mrk mtype="seg" mid="15">Get ${price} off video or text chat consults with your doctor or specialist on healthtap—advice &amp; prescriptions! :)</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="15">在HealthTap上通过视频或文字咨询您的医生或专科医生，可以减免${price}—建议和处方！:)</mrk></target>
+      </trans-unit>
+      <trans-unit id="22" resname="symptom_triage_instructional_phr_title" restype="string" datatype="x-android-resource">
+        <source>Hi, %s</source><seg-source><mrk mtype="seg" mid="16">Hi, %s</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="16">您好，%s</mrk></target>
+      </trans-unit>
+      <trans-unit id="23" resname="symptom_triage_instructional_phr_content" restype="string" datatype="x-android-resource">
+        <source>I\'d love to get to know %s better.</source><seg-source><mrk mtype="seg" mid="17">I\'d love to get to know %s better.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="17">我希望知道％s现在更好。</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
