@@ -11844,7 +11844,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="Transaction history" resname="Transaction history" restype="string" datatype="x-objective-c">
         <source>Transaction history</source>
-        <target>Historial de transacciones</target>
+        <target state="accepted">Transacciones</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Transfer ownership?" resname="Transfer ownership?" restype="string" datatype="x-objective-c">
