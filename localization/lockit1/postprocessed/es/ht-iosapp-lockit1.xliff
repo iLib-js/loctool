@@ -7502,7 +7502,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Billing Settings" resname="Billing Settings" restype="string" datatype="x-objective-c">
         <source>Billing Settings</source>
-        <target>Configuración de facturación</target>
+        <target state="accepted">Facturación</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Blood" resname="Blood" restype="string" datatype="x-objective-c">
