@@ -1969,7 +1969,7 @@
       </trans-unit>
       <trans-unit id="5nc-TM-kBu.text" resname="5nc-TM-kBu.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que termina en</target>
+        <target state="accepted">Cobro a tarjeta que acaba en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;5nc-TM-kBu&quot;;</note>
       </trans-unit>
       <trans-unit id="6x1-5e-sQo.text" resname="6x1-5e-sQo.text" restype="string" datatype="x-xib">
@@ -2163,7 +2163,7 @@
       </trans-unit>
       <trans-unit id="5nc-TM-kBu.text" resname="5nc-TM-kBu.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que termina en</target>
+        <target state="accepted">Cobro a tarjeta que acaba en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;5nc-TM-kBu&quot;;</note>
       </trans-unit>
       <trans-unit id="FGI-Zq-sUF.text" resname="FGI-Zq-sUF.text" restype="string" datatype="x-xib">
@@ -3831,7 +3831,7 @@
       </trans-unit>
       <trans-unit id="s0C-tp-XO6.text" resname="s0C-tp-XO6.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que termina en</target>
+        <target state="accepted">Cobro a tarjeta que acaba en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;s0C-tp-XO6&quot;;</note>
       </trans-unit>
     </body>
@@ -19203,7 +19203,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="elN-VY-lTl.text" resname="elN-VY-lTl.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que termina en</target>
+        <target state="accepted">Cobro a tarjeta que acaba en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;elN-VY-lTl&quot;;</note>
       </trans-unit>
       <trans-unit id="fbE-ID-IfB.normalTitle" resname="fbE-ID-IfB.normalTitle" restype="string" datatype="x-xib">
@@ -19914,7 +19914,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
       </trans-unit>
       <trans-unit id="mH0-aw-Nw2.text" resname="mH0-aw-Nw2.text" restype="string" datatype="x-xib">
         <source>Charge the card ending in</source>
-        <target>Cobro a la tarjeta que termina en</target>
+        <target state="accepted">Cobro a tarjeta que acaba en</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Charge the card ending in&quot;; ObjectID = &quot;mH0-aw-Nw2&quot;;</note>
       </trans-unit>
       <trans-unit id="s9c-WH-8cu.placeholder" resname="s9c-WH-8cu.placeholder" restype="string" datatype="x-xib">
