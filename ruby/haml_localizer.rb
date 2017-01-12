@@ -236,7 +236,7 @@ def process_line(skip_block_indent, ret, line, from_to)
           #if res
           #  puts "replacing #{k} WITH #{v}"
           #end
-          unless line.match(/Rb.t\(\".*#{Regexp.escape(k)}.*\"\)/)
+          unless line.match(/Rb.t\([\"\'].*#{Regexp.escape(k)}.*[\"\']\)/)
             #puts "1"
             if line.match(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/)
               #puts '2'
