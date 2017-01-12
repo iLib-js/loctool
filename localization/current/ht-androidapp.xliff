@@ -47387,6 +47387,106 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/settings/SettingsFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="3" resname="r96628453" restype="string" datatype="java">
+        <source>Update payment method</source>
+        <target>Actualizar método de pago</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r704109550" restype="string" datatype="java">
+        <source>Remove payment method</source>
+        <target>Eliminar método de pago</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscribePaymentFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="5" resname="r308399689" restype="string" datatype="java">
+        <source>Prime subscription</source>
+        <target>Suscripción a Prime</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXProfileFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="6" resname="r803699475" restype="string" datatype="java">
+        <source>\nPlease restart the app/device and try again.</source>
+        <target>\nPor favor, reinicia la aplicación/dispositivo e intenta otra vez.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerSearchFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="9" resname="r1012743332" restype="string" datatype="java">
+        <source>Can&apos;t find a doctor?</source>
+        <target>¿No puedes encontrar un doctor?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/consult/ComposeConsultFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="10" resname="r308900797" restype="string" datatype="java">
+        <source>Make Appointment with {doctor_name}</source>
+        <target>Haz Cita con {doctor_name}</target>
+      </trans-unit>
+      <trans-unit id="11" resname="r907394117" restype="string" datatype="java">
+        <source>Message with {doctor_name}</source>
+        <target>Mensajea con {doctor_name}</target>
+      </trans-unit>
+      <trans-unit id="12" resname="r291695355" restype="string" datatype="java">
+        <source>Chat with {doctor_name}</source>
+        <target>Chatea con {doctor_name}</target>
+      </trans-unit>
+      <trans-unit id="13" resname="r560063711" restype="string" datatype="java">
+        <source>Consult with {doctor_name}</source>
+        <target>Consulta con {doctor_name}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/concierge/ConciergeConnectFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="14" resname="r715650326" restype="string" datatype="java">
+        <source>Connect with {doctor_name}</source>
+        <target>Conéctate con {doctor_name}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/AppListsFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="15" resname="r922936149" restype="string" datatype="java">
+        <source>Search results</source>
+        <target>Resultados de búsqueda</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="19" resname="r228095187" restype="string" datatype="java">
+        <source>Failed to ignore the request</source>
+        <target>Fallo al ignorar la solicitud</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="20" resname="gift_refer_linkedin_title" restype="string" datatype="x-android-resource">
+        <source>{user_name} is gifting you ${price} off to talk to HealthTap doctors</source>
+        <target>{user_name} te está regalando ${price} de descuento para hablar con doctores de HealthTap</target>
+      </trans-unit>
+      <trans-unit id="21" resname="gift_refer_linkedin_summary" restype="string" datatype="x-android-resource">
+        <source>Get ${price} off video or text chat consults with your doctor or specialist on healthtap—advice &amp; prescriptions! :&#41;</source>
+        <target>Obtén ${price} de descuento para consultas de chat o video con tu doctor o especialista en HealthTap — ¡consejo &amp; recetas! :&#41;</target>
+      </trans-unit>
+      <trans-unit id="22" resname="symptom_triage_instructional_phr_title" restype="string" datatype="x-android-resource">
+        <source>Hi, %s</source>
+        <target>Hola, %s</target>
+      </trans-unit>
+      <trans-unit id="23" resname="symptom_triage_instructional_phr_content" restype="string" datatype="x-android-resource">
+        <source>I\&apos;d love to get to know %s better.</source>
+        <target>Me encantaría conocer mejor a %s.</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/com/healthtap/userhtexpress/fragments/settings/SettingsFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="3" resname="r96628453" restype="string" datatype="java">
