@@ -289,9 +289,16 @@ describe 'HamlLocalizer' do
     end
   end
 
-  it 'should leave alone Rb.t params alone' do
+  it 'should leave Rb.t params alone (double quotes)' do
     orig = "            .points_wrap{:title=>Rb.t(\"A doctor's DocScore is a measure of their knowledge, trust, compassion and engagement.\"), :style=>\"width : 80px\"}"
     from_to = {"DocScore" => 'FOO'}
+    ret = replace_with_translations2(orig, from_to)
+    ret.include?('FOO').should be_false
+  end
+
+  it 'should leave Rb.t params alone (single quotes)' do
+    orig = "      %textarea.form_comment.question-input{:placeholder => Rb.t('Share a detailed description of your symptoms, concerns, and how you\'d like the doctor to help you. Attach images and files as necessary.')}"
+    from_to = {"Attach" => 'FOO'}
     ret = replace_with_translations2(orig, from_to)
     ret.include?('FOO').should be_false
   end
