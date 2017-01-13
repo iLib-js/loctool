@@ -146,7 +146,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/OnetimePayFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="589" resname="r626068628" restype="string" datatype="java">
+      <trans-unit id="589" resname="r813647634" restype="string" datatype="java">
         <source>{start}Your total{end}\nFor additional options</source>
         <target>{start}您的总计{end}\n为其他选项</target>
       </trans-unit>
@@ -154,8 +154,8 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/TipsDetailFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="624" resname="r322108465" restype="string" datatype="java">
-        <source>agreed with {author_name}\&apos;s tip on \n{topic_name}</source>
+      <trans-unit id="624" resname="r312270832" restype="string" datatype="java">
+        <source>agreed with {author_name}&apos;s tip on \n{topic_name}</source>
         <target>同意{author_name}的小贴士在\n{topic_name}</target>
         <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
@@ -183,7 +183,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerSearchFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="690" resname="r469329242" restype="string" datatype="java">
+      <trans-unit id="690" resname="r831947664" restype="string" datatype="java">
         <source>Can&apos;t find a clinician?</source>
         <target>找不到临床医生？</target>
       </trans-unit>
@@ -215,8 +215,8 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/GoalTakeActionListItem.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="812" resname="r363844654" restype="string" datatype="java">
-        <source>{approver_name} agreed with {author_name}\&apos;s checklist</source>
+      <trans-unit id="812" resname="r390005620" restype="string" datatype="java">
+        <source>{approver_name} agreed with {author_name}&apos;s checklist</source>
         <target>{Approver_name} 同意 {author_name}的清单</target>
       </trans-unit>
     </body>

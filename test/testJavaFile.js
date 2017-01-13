@@ -82,6 +82,24 @@ module.exports = {
         test.done();
 	},
 
+    testJavaFileMakeKeyUnescaped: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+
+        test.equals(j.makeKey("foo \\n \\t bar"), "r886734243");
+        test.equals(j.makeKey("\\n \\t bar"), "r207897327");
+		test.equals(j.makeKey("The \\'Dude\\' played by Jeff Bridges"), "r600298088");
+		test.equals(j.makeKey("\\'Dude\\'"), "r6259609");
+		
+        test.done();
+	},
+
 	testJavaFileMakeKeySimpleTexts2: function(test) {
         test.expect(6);
 
