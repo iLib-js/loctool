@@ -424,7 +424,7 @@ module.exports = {
         	'/* foo */\n' +
         	'"source text" = "Quellen\\"text";\n\n' +
         	'/* bar */\n' +
-        	'"more source text" = "mehr Quellen\\"text";\n\n'
+        	'"more source text" = "mehr Quellen\\"text";\n'
         );
         
         test.done();
@@ -467,7 +467,7 @@ module.exports = {
         	'/* foo */\n' +
         	'"source text" = "Quellen\\n\\ttext";\n\n' +
         	'/* bar */\n' +
-        	'"more source text" = "mehr Quellen\\"text";\n\n'
+        	'"more source text" = "mehr Quellen\\"text";\n'
         );
         
         test.done();
@@ -501,7 +501,7 @@ module.exports = {
         
         test.equal(strings.getContent(),
         	'/* bar */\n' +
-        	'"“The future of medicine is at your fingertips.”" = "\\\"El futuro de la medicina está al alcance de tus dedos.\\\"";\n\n'
+        	'"“The future of medicine is at your fingertips.”" = "\\\"El futuro de la medicina está al alcance de tus dedos.\\\"";\n'
         );
         
         test.done();
@@ -550,13 +550,13 @@ module.exports = {
     		'/* this is the terms and conditions button label */\n' +
 			'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
 			'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-			'"MFI-qx-pQf.text" = "Are you a doctor?";\n\n';
+			'"MFI-qx-pQf.text" = "Are you a doctor?";\n';
         
         test.equal(strings.getContent(),
     		'/* this is the terms and conditions button label */\n' +
 			'"2V9-YN-vxb.normalTitle" = "Terms";\n\n' +
 			'/* Class = "UILabel"; text = "Are you a doctor?"; ObjectID = "MFI-qx-pQf"; */\n' +
-			'"MFI-qx-pQf.text" = "Are you a doctor?";\n\n'
+			'"MFI-qx-pQf.text" = "Are you a doctor?";\n'
         );
         
         test.done();
