@@ -196,6 +196,40 @@ module.exports = {
         test.done();
 	},
 
+	testRubyFileMakeKeyCheckRubyCompatibility: function(test) {
+        test.expect(17);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        test.equals(rf.makeKey("This has \\\"double quotes\\\" in it."), "r487572481");
+        test.equals(rf.makeKeyUnescaped('This has \\\"double quotes\\\" in it.'), "r538041526");
+        test.equals(rf.makeKey("This has \\\'single quotes\\\' in it."), "r900797640");
+        test.equals(rf.makeKeyUnescaped('This has \\\'single quotes\\\' in it.'), "r900797640");
+        test.equals(rf.makeKey("This is a double quoted string"), "r494590307");
+        test.equals(rf.makeKeyUnescaped('This is a single quoted string'), "r683276274");
+        test.equals(rf.makeKey("This is a double quoted string with \\\"quotes\\\" in it."), "r246354917");
+        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\\'quotes\\\' in it.'), "r248819747");
+        test.equals(rf.makeKey("This is a double quoted string with \\n return chars in it"), "r1050725297");
+        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\n return chars in it'), "r729667629");
+        test.equals(rf.makeKey("This is a double quoted string with \\t tab chars in it"), "r785725858");
+        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\t tab chars in it'), "r637301221");
+        test.equals(rf.makeKey("This is a double quoted string with \\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z other escape chars in it"), "r529567158");
+        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z other escape chars in it'), "r955027934");
+        test.equals(rf.makeKey("This is a double quoted string with \\u00A0 \\x23 hex escape chars in it"), "r347049046");
+        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\u00A0 \\x23 hex escape chars in it'), "r1000517606");
+        
+        test.done();
+	},
+
+
 	testRubyFileMakeKeyUnescapedNewLines: function(test) {
         test.expect(2);
 
@@ -246,7 +280,7 @@ module.exports = {
 		});
         test.ok(rf);
 
-        test.equals(rf.makeKeyUnescaped("A \\'B\\' C"), "r387927277");
+        test.equals(rf.makeKeyUnescaped("A \\'B\\' C"), "r935639115");
         
         test.done();
 	},
@@ -407,7 +441,7 @@ module.exports = {
         test.ok(r);
         
         test.equal(r.getSource(), "This is \\'a\\' test");
-        test.equal(r.getKey(), "r310854695");
+        test.equal(r.getKey(), "r240708166");
         
         test.done();
     },

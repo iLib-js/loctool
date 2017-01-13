@@ -284,7 +284,9 @@ describe 'HamlLocalizer' do
 
     it 'works with escaped characters' do
       expect(create_hashed_key("This has \"double quotes\" in it.")).to eq("r487572481");
+      expect(create_hashed_key('This has \"double quotes\" in it.')).to eq("r538041526");
       expect(create_hashed_key("This has \'single quotes\' in it.")).to eq("r900797640");
+      expect(create_hashed_key('This has \'single quotes\' in it.')).to eq("r900797640");
       expect(create_hashed_key("This is a double quoted string")).to eq("r494590307");
       expect(create_hashed_key('This is a single quoted string')).to eq("r683276274");
       expect(create_hashed_key("This is a double quoted string with \"quotes\" in it.")).to eq("r246354917");
