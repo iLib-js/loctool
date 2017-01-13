@@ -954,12 +954,12 @@
   <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscribePaymentFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="172" resname="r976932793" restype="string" datatype="java">
-        <source>&amp;lt;b&amp;gt;Your total&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;No commitment, cancel anytime</source>
-        <target>&amp;lt;b&amp;gt;Tu total&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;Sin compromiso, cancela en cualquier momento</target>
+        <source>{start}Your total{end}No commitment, cancel anytime</source>
+        <target>{start}Tu total{end}Sin compromiso, cancela en cualquier momento</target>
       </trans-unit>
       <trans-unit id="173" resname="r844357829" restype="string" datatype="java">
-        <source>&amp;lt;b&amp;gt;Your total for 1 consult&amp;lt;/b&amp;gt;</source>
-        <target>&amp;lt;b&amp;gt;Tu total por 1 consulta&amp;lt;/b&amp;gt;</target>
+        <source>Your total for 1 consult</source>
+        <target>Tu total por 1 consulta</target>
       </trans-unit>
       <trans-unit id="174" resname="r343887672" restype="string" datatype="java">
         <source>Prime consult</source>
