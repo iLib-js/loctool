@@ -105,6 +105,170 @@ module.exports = {
         test.done();
 	},
 
+	testRubyFileMakeKeyNewLines: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        // makeKey is used for double-quoted strings, which ruby interprets before it is used
+        test.equals(rf.makeKey("A \n B"), "r718438265");
+        
+        test.done();
+	},
+
+	testRubyFileMakeKeyTabs: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        test.equals(rf.makeKey("A \t B"), "r943923784");
+        
+        test.done();
+	},
+
+	testRubyFileMakeKeyQuotes: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        test.equals(rf.makeKey("A \\'B\\' C"), "r935639115");
+        
+        test.done();
+	},
+
+	testRubyFileMakeKeyInterpretEscapedNonSpecialChars: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        test.equals(rf.makeKey("\\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z"), "r1027573048");
+        
+        test.done();
+	},
+
+	testRubyFileMakeKeyInterpretEscapedSpecialChars: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        test.equals(rf.makeKey("\\u00A0 \\x23"), "r967544232");
+        
+        test.done();
+	},
+
+	testRubyFileMakeKeyUnescapedNewLines: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        // unescaped is used for single quoted strings
+        test.equals(rf.makeKeyUnescaped("A \\n B"), "r400574317");
+        
+        test.done();
+	},
+
+	testRubyFileMakeKeyUnescapedTabs: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        test.equals(rf.makeKeyUnescaped("A \\t B"), "r720987307");
+        
+        test.done();
+	},
+
+	testRubyFileMakeKeyUnescapedQuotes: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        test.equals(rf.makeKeyUnescaped("A \\'B\\' C"), "r387927277");
+        
+        test.done();
+	},
+
+	testRubyFileMakeKeyInterpretUnescapedSpecialChars: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        test.equals(rf.makeKeyUnescaped("\\u00A0 \\x23"), "r262108213");
+        
+        test.done();
+	},
+
     testRubyFileMakeKeyDigits: function(test) {
         test.expect(2);
 
@@ -168,6 +332,33 @@ module.exports = {
         test.done();
     },
 
+    testRubyFileParseSingleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        rf.parse("Rb.t('This is a test')");
+        
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ResourceString.hashKey("webapp", "en-US", "r654479252", "ruby"));
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
     testRubyFileParseSimpleGetBySource: function(test) {
         test.expect(5);
 
@@ -190,6 +381,60 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testRubyFileParseSingleQuotesUnescaped: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        rf.parse("Rb.t('This is \\'a\\' test')");
+        
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is \\'a\\' test");
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is \\'a\\' test");
+        test.equal(r.getKey(), "r310854695");
+        
+        test.done();
+    },
+
+    testRubyFileParseDoubleQuotesEscaped: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        rf.parse("Rb.t(\"This is \\'a\\' test\")");
+        
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is \\'a\\' test");
+        test.ok(r);
+        
+        test.equal(r.getSource(), "This is \\'a\\' test");
+        test.equal(r.getKey(), "r240708166");
         
         test.done();
     },
