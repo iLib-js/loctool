@@ -46,7 +46,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/ReportContentDialogBox.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="18" resname="r382213733" restype="string" datatype="java">
+      <trans-unit id="18" resname="r863086007" restype="string" datatype="java">
         <source>We appreciate you bringing this to our attention.</source>
         <target state="translated">Apreciamos que nos traigas esto para nuestra consideración.</target>
       </trans-unit>
@@ -110,7 +110,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/ReportContentDialogBox.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="18" resname="r382213733" restype="string" datatype="java">
+      <trans-unit id="18" resname="r863086007" restype="string" datatype="java">
         <source>We appreciate you bringing this to our attention.</source>
         <target state="translated">我们感谢您提醒我们注意。</target>
       </trans-unit>
