@@ -685,7 +685,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/transcript/messages/ReferIndividualMessage.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="114" resname="r1055944314" restype="string" datatype="java">
+      <trans-unit id="114" resname="r398172866" restype="string" datatype="java">
         <source>Error:</source>
         <target>Error:</target>
       </trans-unit>
@@ -693,7 +693,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/transcript/messages/ConsultLabTestMessage.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="115" resname="r495471755" restype="string" datatype="java">
+      <trans-unit id="115" resname="r465894884" restype="string" datatype="java">
         <source>Test Name:</source>
         <target>Nombre de Prueba:</target>
       </trans-unit>
@@ -701,11 +701,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/model/ReviewableAppModel.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="116" resname="r840539820" restype="string" datatype="java">
+      <trans-unit id="116" resname="r704587734" restype="string" datatype="java">
         <source>Current Version:</source>
         <target>Versión Actual:</target>
       </trans-unit>
-      <trans-unit id="117" resname="r398757758" restype="string" datatype="java">
+      <trans-unit id="117" resname="r419221095" restype="string" datatype="java">
         <source>Size:</source>
         <target>Tamaño:</target>
       </trans-unit>
@@ -713,7 +713,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/talktodoctor/SimilarQuestionsFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="118" resname="r300878474" restype="string" datatype="java">
+      <trans-unit id="118" resname="r1043822317" restype="string" datatype="java">
         <source>In brief:</source>
         <target>En resumen:</target>
       </trans-unit>
@@ -721,7 +721,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscriptionUpdatePayment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="119" resname="r723089520" restype="string" datatype="java">
+      <trans-unit id="119" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
         <target>Cambiar PayPal:</target>
       </trans-unit>
@@ -729,7 +729,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXProfileFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="120" resname="r271666120" restype="string" datatype="java">
+      <trans-unit id="120" resname="r947674940" restype="string" datatype="java">
         <source>Failed while take picture:</source>
         <target>Falló mientras se tomaba foto:</target>
       </trans-unit>
@@ -737,15 +737,15 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/TipsDetailFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="121" resname="r205431071" restype="string" datatype="java">
+      <trans-unit id="121" resname="r601449928" restype="string" datatype="java">
         <source>What to Ask Your Doc:</source>
         <target>Qué Preguntarle a Tu Doc:</target>
       </trans-unit>
-      <trans-unit id="122" resname="r175388555" restype="string" datatype="java">
+      <trans-unit id="122" resname="r412842851" restype="string" datatype="java">
         <source>Haiku:</source>
         <target>Haiku:</target>
       </trans-unit>
-      <trans-unit id="123" resname="r624129269" restype="string" datatype="java">
+      <trans-unit id="123" resname="r548900803" restype="string" datatype="java">
         <source>Myth:</source>
         <target>Mito:</target>
       </trans-unit>
@@ -753,7 +753,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/SendKudosFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="124" resname="r304629477" restype="string" datatype="java">
+      <trans-unit id="124" resname="r8034615" restype="string" datatype="java">
         <source>Failed to send kudos!</source>
         <target>¡No se ha podido enviar kudos!</target>
       </trans-unit>
@@ -761,7 +761,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/SearchResultsFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="125" resname="r144782424" restype="string" datatype="java">
+      <trans-unit id="125" resname="r279921341" restype="string" datatype="java">
         <source>Not finding what you need?</source>
         <target>¿No encuentras lo que necesitas?</target>
       </trans-unit>
@@ -769,7 +769,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskQuestionToDocFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="126" resname="r156634543" restype="string" datatype="java">
+      <trans-unit id="126" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
         <target>Pregunta no publicada</target>
       </trans-unit>
@@ -777,7 +777,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/concierge/ConciergeInviteFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="127" resname="r762730546" restype="string" datatype="java">
+      <trans-unit id="127" resname="r189044309" restype="string" datatype="java">
         <source>Dr.</source>
         <target>Dr.</target>
       </trans-unit>
@@ -785,11 +785,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/concierge/ConciergeConnectFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="128" resname="r49042582" restype="string" datatype="java">
+      <trans-unit id="128" resname="r50442212" restype="string" datatype="java">
         <source>Failed updating profile!</source>
         <target>¡No se ha podido actualizar perfil!</target>
       </trans-unit>
-      <trans-unit id="129" resname="r303034997" restype="string" datatype="java">
+      <trans-unit id="129" resname="r37614480" restype="string" datatype="java">
         <source>Failed sending request!</source>
         <target>¡No se ha podido enviar solicitud!</target>
       </trans-unit>
@@ -797,11 +797,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/TopicDetailHeaderItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="130" resname="r375052400" restype="string" datatype="java">
+      <trans-unit id="130" resname="r675366299" restype="string" datatype="java">
         <source>and</source>
         <target>y</target>
       </trans-unit>
-      <trans-unit id="131" resname="r989347001" restype="string" datatype="java">
+      <trans-unit id="131" resname="r2882924" restype="string" datatype="java">
         <source>,</source>
         <target>,</target>
       </trans-unit>
@@ -809,7 +809,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/QuestionDetailAnswerItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="132" resname="r964861592" restype="string" datatype="java">
+      <trans-unit id="132" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
         <target>¿Tienes alguna pregunta de seguimiento? Pregúntale a un doctor en línea ahora:</target>
       </trans-unit>
@@ -817,7 +817,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/GoalTakeActionListItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="133" resname="r626562476" restype="string" datatype="java">
+      <trans-unit id="133" resname="r984143101" restype="string" datatype="java">
         <source>Checklist:</source>
         <target>Listado:</target>
       </trans-unit>
@@ -841,7 +841,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/ThankLayerDialogBox.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="137" resname="r60757773" restype="string" datatype="java">
+      <trans-unit id="137" resname="r287900893" restype="string" datatype="java">
         <source>Thank you!</source>
         <target>¡Gracias!</target>
       </trans-unit>
@@ -853,7 +853,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/SettingsDeactivateAccountDialog.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="139" resname="r180611118" restype="string" datatype="java">
+      <trans-unit id="139" resname="r287900893" restype="string" datatype="java">
         <source>Thank you!</source>
         <target>¡Gracias!</target>
       </trans-unit>
@@ -861,7 +861,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/SettingConfirmDeactivateDialog.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="140" resname="r1053853380" restype="string" datatype="java">
+      <trans-unit id="140" resname="r987771035" restype="string" datatype="java">
         <source>Sorry, there was a problem</source>
         <target>Perdón, hubo un problema</target>
       </trans-unit>
@@ -869,7 +869,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/EditQuestionDialogBox.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="141" resname="r528066642" restype="string" datatype="java">
+      <trans-unit id="141" resname="r252543260" restype="string" datatype="java">
         <source>Question:</source>
         <target>Pregunta:</target>
         <note annotates="source">Refers to a question previously posted by the user, followed by an error message.</note>
@@ -878,7 +878,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/ProfileInsuranceCustomView.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="142" resname="r729325316" restype="string" datatype="java">
+      <trans-unit id="142" resname="r409490200" restype="string" datatype="java">
         <source>Are you sure?</source>
         <target>¿Estás seguro?</target>
       </trans-unit>
@@ -886,7 +886,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/CreditCardEditView.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="143" resname="r419405630" restype="string" datatype="java">
+      <trans-unit id="143" resname="r1018816419" restype="string" datatype="java">
         <source>Failed performing payment request. Error code:</source>
         <target>No se ha podido realizar solicitud de pago. Código de error:</target>
       </trans-unit>
@@ -906,7 +906,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/click_listeners/FollowItemListener.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="146" resname="r50538946" restype="string" datatype="java">
+      <trans-unit id="146" resname="r147358463" restype="string" datatype="java">
         <source>We&apos;ll highlight this influencer&apos;s insights for you on your feed.</source>
         <target>Resaltaremos las perspicacias de este influenciador para ti en tu feed.</target>
       </trans-unit>
@@ -928,7 +928,7 @@
         <target>Cita cancelada con {doctor_name} el {date} a las {time_slot}</target>
         <note annotates="source">This is a notification message for appointment cancellation.</note>
       </trans-unit>
-      <trans-unit id="149" resname="r88451716" restype="string" datatype="java">
+      <trans-unit id="149" resname="r904183721" restype="string" datatype="java">
         <source>As this appointment is less than 24 hours away, it cannot be refunded if cancelled now.</source>
         <target>Como esta cita está a menos de 24 horas, no puede ser reembolsada si es cancelada ahora.</target>
       </trans-unit>
@@ -936,7 +936,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/activity/MainActivity.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="150" resname="r777231780" restype="string" datatype="java">
+      <trans-unit id="150" resname="r892816468" restype="string" datatype="java">
         <source>Failed to share on Facebook:</source>
         <target>No se ha podido compartir en Facebook:</target>
       </trans-unit>
@@ -4998,7 +4998,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/transcript/messages/ReferIndividualMessage.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="114" resname="r1055944314" restype="string" datatype="java">
+      <trans-unit id="114" resname="r398172866" restype="string" datatype="java">
         <source>Error:</source>
         <target>错误：</target>
       </trans-unit>
@@ -5006,7 +5006,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/transcript/messages/ConsultLabTestMessage.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="115" resname="r495471755" restype="string" datatype="java">
+      <trans-unit id="115" resname="r465894884" restype="string" datatype="java">
         <source>Test Name:</source>
         <target>测试姓名：</target>
       </trans-unit>
@@ -5014,11 +5014,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/model/ReviewableAppModel.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="116" resname="r840539820" restype="string" datatype="java">
+      <trans-unit id="116" resname="r704587734" restype="string" datatype="java">
         <source>Current Version:</source>
         <target>当前版本：</target>
       </trans-unit>
-      <trans-unit id="117" resname="r398757758" restype="string" datatype="java">
+      <trans-unit id="117" resname="r419221095" restype="string" datatype="java">
         <source>Size:</source>
         <target>大小：</target>
       </trans-unit>
@@ -5026,7 +5026,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/talktodoctor/SimilarQuestionsFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="118" resname="r300878474" restype="string" datatype="java">
+      <trans-unit id="118" resname="r1043822317" restype="string" datatype="java">
         <source>In brief:</source>
         <target>概要：</target>
       </trans-unit>
@@ -5034,7 +5034,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscriptionUpdatePayment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="119" resname="r723089520" restype="string" datatype="java">
+      <trans-unit id="119" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
         <target>更换PayPal：</target>
       </trans-unit>
@@ -5042,7 +5042,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXProfileFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="120" resname="r271666120" restype="string" datatype="java">
+      <trans-unit id="120" resname="r947674940" restype="string" datatype="java">
         <source>Failed while take picture:</source>
         <target>拍照时错误：</target>
       </trans-unit>
@@ -5050,15 +5050,15 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/TipsDetailFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="121" resname="r205431071" restype="string" datatype="java">
+      <trans-unit id="121" resname="r601449928" restype="string" datatype="java">
         <source>What to Ask Your Doc:</source>
         <target>向您的医生咨询什么：</target>
       </trans-unit>
-      <trans-unit id="122" resname="r175388555" restype="string" datatype="java">
+      <trans-unit id="122" resname="r412842851" restype="string" datatype="java">
         <source>Haiku:</source>
         <target>俳句：</target>
       </trans-unit>
-      <trans-unit id="123" resname="r624129269" restype="string" datatype="java">
+      <trans-unit id="123" resname="r548900803" restype="string" datatype="java">
         <source>Myth:</source>
         <target>误区：</target>
       </trans-unit>
@@ -5066,7 +5066,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/SendKudosFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="124" resname="r304629477" restype="string" datatype="java">
+      <trans-unit id="124" resname="r8034615" restype="string" datatype="java">
         <source>Failed to send kudos!</source>
         <target>发送荣誉失败！</target>
       </trans-unit>
@@ -5074,7 +5074,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/SearchResultsFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="125" resname="r144782424" restype="string" datatype="java">
+      <trans-unit id="125" resname="r279921341" restype="string" datatype="java">
         <source>Not finding what you need?</source>
         <target>没有找到您需要的？</target>
       </trans-unit>
@@ -5082,7 +5082,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskQuestionToDocFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="126" resname="r156634543" restype="string" datatype="java">
+      <trans-unit id="126" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
         <target>问题未发布</target>
       </trans-unit>
@@ -5090,7 +5090,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/concierge/ConciergeInviteFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="127" resname="r762730546" restype="string" datatype="java">
+      <trans-unit id="127" resname="r189044309" restype="string" datatype="java">
         <source>Dr.</source>
         <target>医生</target>
       </trans-unit>
@@ -5098,11 +5098,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/concierge/ConciergeConnectFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="128" resname="r49042582" restype="string" datatype="java">
+      <trans-unit id="128" resname="r50442212" restype="string" datatype="java">
         <source>Failed updating profile!</source>
         <target>无法更新个人资料！</target>
       </trans-unit>
-      <trans-unit id="129" resname="r303034997" restype="string" datatype="java">
+      <trans-unit id="129" resname="r37614480" restype="string" datatype="java">
         <source>Failed sending request!</source>
         <target>发送请求失败！</target>
       </trans-unit>
@@ -5110,11 +5110,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/TopicDetailHeaderItem.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="130" resname="r375052400" restype="string" datatype="java">
+      <trans-unit id="130" resname="r675366299" restype="string" datatype="java">
         <source>and</source>
         <target>和</target>
       </trans-unit>
-      <trans-unit id="131" resname="r989347001" restype="string" datatype="java">
+      <trans-unit id="131" resname="r2882924" restype="string" datatype="java">
         <source>,</source>
         <target>,</target>
       </trans-unit>
@@ -5122,7 +5122,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/QuestionDetailAnswerItem.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="132" resname="r964861592" restype="string" datatype="java">
+      <trans-unit id="132" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
         <target>您有后续问题吗？在线咨询医生：</target>
       </trans-unit>
@@ -5130,7 +5130,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/GoalTakeActionListItem.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="133" resname="r626562476" restype="string" datatype="java">
+      <trans-unit id="133" resname="r984143101" restype="string" datatype="java">
         <source>Checklist:</source>
         <target>清单：</target>
       </trans-unit>
@@ -5154,7 +5154,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/ThankLayerDialogBox.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="137" resname="r60757773" restype="string" datatype="java">
+      <trans-unit id="137" resname="r287900893" restype="string" datatype="java">
         <source>Thank you!</source>
         <target>谢谢您！</target>
       </trans-unit>
@@ -5166,7 +5166,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/SettingsDeactivateAccountDialog.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="139" resname="r180611118" restype="string" datatype="java">
+      <trans-unit id="139" resname="r287900893" restype="string" datatype="java">
         <source>Thank you!</source>
         <target>谢谢您！</target>
       </trans-unit>
@@ -5174,7 +5174,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/SettingConfirmDeactivateDialog.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="140" resname="r1053853380" restype="string" datatype="java">
+      <trans-unit id="140" resname="r987771035" restype="string" datatype="java">
         <source>Sorry, there was a problem</source>
         <target>对不起，这里有一个问题</target>
       </trans-unit>
@@ -5182,7 +5182,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/EditQuestionDialogBox.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="141" resname="r528066642" restype="string" datatype="java">
+      <trans-unit id="141" resname="r252543260" restype="string" datatype="java">
         <source>Question:</source>
         <target>问题：</target>
         <note annotates="source">Refers to a question previously posted by the user, followed by an error message.</note>
@@ -5191,7 +5191,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/ProfileInsuranceCustomView.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="142" resname="r729325316" restype="string" datatype="java">
+      <trans-unit id="142" resname="r409490200" restype="string" datatype="java">
         <source>Are you sure?</source>
         <target>您确定吗？</target>
       </trans-unit>
@@ -5199,7 +5199,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/CreditCardEditView.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="143" resname="r419405630" restype="string" datatype="java">
+      <trans-unit id="143" resname="r1018816419" restype="string" datatype="java">
         <source>Failed performing payment request. Error code:</source>
         <target>执行付款要求失败。错误编码：</target>
       </trans-unit>
@@ -5219,7 +5219,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/click_listeners/FollowItemListener.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="146" resname="r50538946" restype="string" datatype="java">
+      <trans-unit id="146" resname="r147358463" restype="string" datatype="java">
         <source>We&apos;ll highlight this influencer&apos;s insights for you on your feed.</source>
         <target>我们将在您的主页突出该影响者的见解。</target>
       </trans-unit>
@@ -5241,7 +5241,7 @@
         <target>取消预约&lt;/b&gt; 和 {doctor_name} 在 {date} {time_slot}。</target>
         <note annotates="source">This is a notification message for appointment cancellation.</note>
       </trans-unit>
-      <trans-unit id="149" resname="r88451716" restype="string" datatype="java">
+      <trans-unit id="149" resname="r904183721" restype="string" datatype="java">
         <source>As this appointment is less than 24 hours away, it cannot be refunded if cancelled now.</source>
         <target>由于此预约不到24小时，如果现在取消预订，将不予退还。</target>
       </trans-unit>
@@ -5249,7 +5249,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/activity/MainActivity.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="150" resname="r777231780" restype="string" datatype="java">
+      <trans-unit id="150" resname="r892816468" restype="string" datatype="java">
         <source>Failed to share on Facebook:</source>
         <target>无法在Facebook上分享：</target>
       </trans-unit>
