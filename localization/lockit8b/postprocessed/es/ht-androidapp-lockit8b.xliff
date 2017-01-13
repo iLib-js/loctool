@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="src/com/healthtap/userhtexpress/fragments/main/GeneralListFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="20" resname="r110253465" restype="string" datatype="java">
+        <source>Upcoming Appointments</source>
+        <target state="translated">Citas Próximas</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
