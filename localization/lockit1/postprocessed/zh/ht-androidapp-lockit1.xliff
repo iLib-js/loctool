@@ -812,12 +812,12 @@
   <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscribePaymentFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="153" resname="r976932793" restype="string" datatype="java">
-        <source>&amp;lt;b&amp;gt;Your total&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;No commitment, cancel anytime</source>
-        <target>&amp;lt;b&amp;gt;您的总计&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;没有任何承诺可以随时取消</target>
+        <source>{start}Your total{end}No commitment, cancel anytime</source>
+        <target>{start}您的总计{end}没有任何承诺可以随时取消</target>
       </trans-unit>
       <trans-unit id="154" resname="r844357829" restype="string" datatype="java">
-        <source>&amp;lt;b&amp;gt;Your total for 1 consult&amp;lt;/b&amp;gt;</source>
-        <target>&amp;lt;b&amp;gt;您总计为1个咨询&amp;lt;/b&amp;gt;</target>
+        <source>Your total for 1 consult</source>
+        <target>您总计为1个咨询</target>
       </trans-unit>
       <trans-unit id="155" resname="r343887672" restype="string" datatype="java">
         <source>Prime consult</source>
@@ -1401,8 +1401,8 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/CareTeamTabFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="260" resname="r142513993" restype="string" datatype="java">
-        <source>Practicing: &amp;lt;b&amp;gt;</source>
-        <target>工作中/实践中：&amp;lt;b&amp;gt;</target>
+        <source>Practicing: </source>
+        <target>工作中/实践中：</target>
       </trans-unit>
       <trans-unit id="261" resname="r36845865" restype="string" datatype="java">
         <source>HealthTap Honor</source>
@@ -2042,8 +2042,8 @@
         <target>专攻{known_for_topic_name}</target>
       </trans-unit>
       <trans-unit id="381" resname="r758898992" restype="string" datatype="java">
-        <source>Here&apos;s a referral to a {expert_specialty} &amp;lt;b&amp;gt;{expert_name}&amp;lt;/b&amp;gt;, you can consult for advice and treatment:</source>
-        <target>以下是对{expert_specialty}&amp;lt;b&amp;gt;{expert_name}&amp;lt;/b&amp;gt;的推荐，您可以咨询建议和治疗：</target>
+        <source>Here&apos;s a referral to a {expert_specialty} {start}{expert_name}{end}, you can consult for advice and treatment:</source>
+        <target>以下是对{expert_specialty}{start}{expert_name}{end}的推荐，您可以咨询建议和治疗：</target>
       </trans-unit>
       <trans-unit id="382" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>

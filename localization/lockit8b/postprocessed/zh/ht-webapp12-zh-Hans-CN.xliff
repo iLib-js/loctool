@@ -158,7 +158,7 @@
         <source>&lt;p&gt;&lt;a href=&gt;Join Group&lt;/a&gt; to become a member of %{group_name} on HealthTap.&lt;/p&gt;
                   &lt;br/&gt;Thanks!
                   &lt;br/&gt;%{inviter}</source>
-        <target state="translated">&lt;p&gt;&lt;a href=&gt;加入群组&lt;/a&gt; 成为HealthTap上的％{group_name}会员。&lt;/p&gt;
+        <target state="translated">&lt;p&gt;&lt;a href=&gt;加入群组&lt;/a&gt; 成为HealthTap上的%{group_name}会员。&lt;/p&gt;
                   &lt;br/&gt;谢谢！&lt;br/&gt;%{inviter}</target>
       </trans-unit>
     </body>
