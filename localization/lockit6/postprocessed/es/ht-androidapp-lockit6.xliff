@@ -1525,8 +1525,8 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/CareTeamTabFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="275" resname="r142513993" restype="string" datatype="java">
-        <source>Practicing: &amp;lt;b&amp;gt;</source>
-        <target>Ejerciendo: &amp;lt;b&amp;gt;</target>
+        <source>Practicing: </source>
+        <target>Ejerciendo: </target>
       </trans-unit>
       <trans-unit id="276" resname="r36845865" restype="string" datatype="java">
         <source>HealthTap Honor</source>
@@ -2207,8 +2207,8 @@
         <target>Conocido por {known_for_topic_name}</target>
       </trans-unit>
       <trans-unit id="394" resname="r758898992" restype="string" datatype="java">
-        <source>Here&apos;s a referral to a {expert_specialty} &amp;lt;b&amp;gt;{expert_name}&amp;lt;/b&amp;gt;, you can consult for advice and treatment:</source>
-        <target>Aquí está una referencia para un {expert_specialty} &amp;lt;b&amp;gt;{expert_name}&amp;lt;/b&amp;gt;, que puedes consultar para consejo y tratamiento:</target>
+        <source>Here&apos;s a referral to a {expert_specialty} {start}{expert_name}{end}, you can consult for advice and treatment:</source>
+        <target>Aquí está una referencia para un {expert_specialty} {start}{expert_name}{end}, que puedes consultar para consejo y tratamiento:</target>
       </trans-unit>
       <trans-unit id="395" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
