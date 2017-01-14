@@ -16029,7 +16029,7 @@
       </trans-unit>
       <trans-unit id="3552" resname="r228289190" restype="string" datatype="ruby">
         <source>%{person}, Help Others by Rating HealthTap Today! ★★★★★</source>
-        <target>%{Person}, 立刻通过HealthTap评分帮助其他人！★★★★★</target>
+        <target>%{person}, 立刻通过HealthTap评分帮助其他人！★★★★★</target>
       </trans-unit>
       <trans-unit id="3553" resname="r991180850" restype="string" datatype="ruby">
         <source>%{notification_name}, like HealthTap? You’ll love HealthTap Prime!</source>
