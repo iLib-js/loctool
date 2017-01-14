@@ -252,7 +252,7 @@
     <body>
       <trans-unit id="59" resname="r278382818" restype="string" datatype="ruby">
         <source>Translate and share the knowledge of %{n} top doctors with your people</source>
-        <target>与您的人们翻译和分享％{n}位顶级医生的知识</target>
+        <target>与您的人们翻译和分享%{n}位顶级医生的知识</target>
       </trans-unit>
     </body>
   </file>
@@ -680,11 +680,11 @@
       </trans-unit>
       <trans-unit id="157" resname="r92375852" restype="string" datatype="ruby">
         <source>How? We’ve handpicked more than %{num_docs} of the world’s best doctors to quickly answer your health questions—for free.</source>
-        <target>如何？我们已经挑选了超过％{num_docs}位世界上最好的医生，以免费快速回答您的健康问题。</target>
+        <target>如何？我们已经挑选了超过%{num_docs}位世界上最好的医生，以免费快速回答您的健康问题。</target>
       </trans-unit>
       <trans-unit id="158" resname="r576588458" restype="string" datatype="ruby">
         <source>We help more than %{num_docs} top doctors in our network enhance their reputations,&lt;br&gt;build professional networks, better serve existing patients, grow their practices,&lt;br&gt;and increase their income.</source>
-        <target>我们帮助我们网络中超过％{num_docs}名顶级医生提高他们的声誉，&lt;br&gt;建立专业网络，更好地服务现有患者，成长他们的诊疗&lt;br&gt;以及增加他们的收入。</target>
+        <target>我们帮助我们网络中超过%{num_docs}名顶级医生提高他们的声誉，&lt;br&gt;建立专业网络，更好地服务现有患者，成长他们的诊疗&lt;br&gt;以及增加他们的收入。</target>
       </trans-unit>
     </body>
   </file>
@@ -1129,7 +1129,7 @@
     <body>
       <trans-unit id="249" resname="r477575185" restype="string" datatype="ruby">
         <source>Voted Up your tip &quot;%{content}&quot; on HealthTap</source>
-        <target>在HealthTap上投票给您的小贴士“％{content}”</target>
+        <target>在HealthTap上投票给您的小贴士“%{content}”</target>
       </trans-unit>
     </body>
   </file>
@@ -1205,7 +1205,7 @@
     <body>
       <trans-unit id="261" resname="r929350822" restype="string" datatype="ruby">
         <source>As a new exciting addition to your health benefits, %{org} is now sponsoring %{product}, a revolutionary new way to get the right care, at the right time from any mobile device or personal computer 24/7.</source>
-        <target>作为您的健康福利的新的激动人心的补充，%{org}赞助％{product}是一种革命性的新方式，可以全天24小时在任何移动设备或个人计算机上在正确的时间获得合适的医护。</target>
+        <target>作为您的健康福利的新的激动人心的补充，%{org}赞助%{product}是一种革命性的新方式，可以全天24小时在任何移动设备或个人计算机上在正确的时间获得合适的医护。</target>
       </trans-unit>
     </body>
   </file>
@@ -1221,7 +1221,7 @@
     <body>
       <trans-unit id="263" resname="r601105308" restype="string" datatype="ruby">
         <source>%{org} is now your healthcare navigator, and we&apos;re eager to show you how you can benefit from it today.</source>
-        <target>％{org}现在是您的健康医护导航员，今天我们希望告诉您如何从中受益。</target>
+        <target>%{org}现在是您的健康医护导航员，今天我们希望告诉您如何从中受益。</target>
       </trans-unit>
     </body>
   </file>
@@ -1329,7 +1329,7 @@
     <body>
       <trans-unit id="281" resname="r148560240" restype="string" datatype="ruby">
         <source>We’ve issued you a refund for your Virtual Consult with %{expert} on %{display_date} in the form of a credit. The next time you talk to a doctor, you will not be charged. We stand behind our guarantee to fully satisfy every HealthTap member with our services.</source>
-        <target>我们已透过信用额表格的方式，透过％{expert}在％{display_date}向您提供在线咨询服务的退款。下次与医生交谈时，不会向您收费。我们支持我们的保证，使我们的服务完全满足每个HealthTap会员。</target>
+        <target>我们已透过信用额表格的方式，透过%{expert}在%{display_date}向您提供在线咨询服务的退款。下次与医生交谈时，不会向您收费。我们支持我们的保证，使我们的服务完全满足每个HealthTap会员。</target>
       </trans-unit>
     </body>
   </file>
@@ -1345,7 +1345,7 @@
     <body>
       <trans-unit id="283" resname="r567849542" restype="string" datatype="ruby">
         <source>Remember when you thanked %{expert} for providing this answer?</source>
-        <target>记住您何时感谢％{expert}提供此回答？</target>
+        <target>记住您何时感谢%{expert}提供此回答？</target>
       </trans-unit>
     </body>
   </file>
@@ -1381,7 +1381,7 @@
       </trans-unit>
       <trans-unit id="291" resname="r848718286" restype="string" datatype="ruby">
         <source>Get faster responses with priority status whenever you send a text question to our network of %{num_docs} top doctors</source>
-        <target>每当您向我们的％{num_docs}名顶级医生网络发送文字问题时，都可以通过优先级状态获得更快的回复</target>
+        <target>每当您向我们的%{num_docs}名顶级医生网络发送文字问题时，都可以通过优先级状态获得更快的回复</target>
       </trans-unit>
       <trans-unit id="292" resname="r945044374" restype="string" datatype="ruby">
         <source>Enjoy special promotional codes to gift your friends and family: 15 FREE days of HealthTap Prime for them and $30 off for you with each referral</source>
@@ -1493,7 +1493,7 @@
     <body>
       <trans-unit id="311" resname="r549377491" restype="string" datatype="ruby">
         <source>We&apos;re delighted that %{expert} had the chance to review your consult and has responded. Please reply to the doctor.</source>
-        <target>我们很高兴％{expert}有机会审查您的咨询，并已作出回复。请回复医生。</target>
+        <target>我们很高兴%{expert}有机会审查您的咨询，并已作出回复。请回复医生。</target>
       </trans-unit>
     </body>
   </file>
@@ -1529,11 +1529,11 @@
       </trans-unit>
       <trans-unit id="319" resname="r1068535342" restype="string" datatype="ruby">
         <source>Get faster responses with priority status whenever you send any text question to our network of %{num_docs} top doctors</source>
-        <target>每当您向我们的％{num_docs}名顶级医生网络发送任何文字问题时，都可以通过优先级状态获得更快的回复</target>
+        <target>每当您向我们的%{num_docs}名顶级医生网络发送任何文字问题时，都可以通过优先级状态获得更快的回复</target>
       </trans-unit>
       <trans-unit id="320" resname="r457880092" restype="string" datatype="ruby">
         <source>Get special promotional codes to gift your friends and family - 15 days free of HealthTap Prime &#40;%{prime_price} value&#41; and earn $30 off for each referral you make</source>
-        <target>为您的朋友和家人获得特别优惠码礼物 - 15天免费HealthTap Prime（价格％{prime_price}），并且每次转诊可以获得30美元</target>
+        <target>为您的朋友和家人获得特别优惠码礼物 - 15天免费HealthTap Prime（价格%{prime_price}），并且每次转诊可以获得30美元</target>
       </trans-unit>
     </body>
   </file>
@@ -1541,7 +1541,7 @@
     <body>
       <trans-unit id="321" resname="r297031137" restype="string" datatype="ruby">
         <source>Please know that you may re-activate your account at any time up to one year. After one year, your account information will likely be permanently deleted. Just write back to %{open_link}&#35;{loc_support_email}%{close_link} requesting re-activation. If you do come back, we’ll do our best to make sure you have the most delightful experience! :&#41;</source>
-        <target>请注意，您可以在一年内的任何时间重新激活帐户。一年后，您的帐户信息可能会被永久删除。只需发送信息到％{open_link}&#35;{loc_support_email}{close_link}，请求重新激活。如果您想要回来，我们会尽全力为您提供有最愉快的体验！:&#41;</target>
+        <target>请注意，您可以在一年内的任何时间重新激活帐户。一年后，您的帐户信息可能会被永久删除。只需发送信息到%{open_link}&#35;{loc_support_email}{close_link}，请求重新激活。如果您想要回来，我们会尽全力为您提供有最愉快的体验！:&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -1565,7 +1565,7 @@
     <body>
       <trans-unit id="325" resname="r221993396" restype="string" datatype="ruby">
         <source>We’re sorry, but the message you submitted to our doctors cannot be answered at this time. It appears the %{expert_pronoun} ended this consult %{removal_reason}.</source>
-        <target>很抱歉，您提交给我们医生的信息目前无法得到解答。看来％{expert_pronoun}结束了此咨询％{removal_reason}。</target>
+        <target>很抱歉，您提交给我们医生的信息目前无法得到解答。看来%{expert_pronoun}结束了此咨询%{removal_reason}。</target>
       </trans-unit>
       <trans-unit id="326" resname="r525888253" restype="string" datatype="ruby">
         <source>Please consider visiting our doctor search page to find doctors who are available for consults.</source>
@@ -1601,11 +1601,11 @@
     <body>
       <trans-unit id="331" resname="r938691964" restype="string" datatype="ruby">
         <source>You can get advice and counseling via video or text chat, from the convenience of your smartphone or computer. Connect with %{expert} today so you can benefit from this new way of receiving care.</source>
-        <target>您可以通过视频或文字聊天，方便的从您的智能手机或计算机获得建议和咨询。立即与％{expert}联系，以便您能受益于这种接受医护的新方式。</target>
+        <target>您可以通过视频或文字聊天，方便的从您的智能手机或计算机获得建议和咨询。立即与%{expert}联系，以便您能受益于这种接受医护的新方式。</target>
       </trans-unit>
       <trans-unit id="332" resname="r496408672" restype="string" datatype="ruby">
         <source>You can get advice and even prescriptions via video or text chat, from the convenience of your smartphone or computer. Connect with %{expert} today so you can benefit from this new way of receiving care.</source>
-        <target>您可以通过视频或文字聊天，方便的从您的智能手机或计算机获得建议和甚至是处方。立即与％{expert}联系，以便您能受益于这种接受医护的新方式。</target>
+        <target>您可以通过视频或文字聊天，方便的从您的智能手机或计算机获得建议和甚至是处方。立即与%{expert}联系，以便您能受益于这种接受医护的新方式。</target>
       </trans-unit>
     </body>
   </file>
@@ -1613,7 +1613,7 @@
     <body>
       <trans-unit id="333" resname="r840501240" restype="string" datatype="ruby">
         <source>Replies to this message via email will not reach your doctor. To ask %{expert} about a health concern, please accept this invitation and send a message or schedule a virtual appointment. If you have an emergency, please call %{emergency_number} or go immediately to the closest emergency department.</source>
-        <target>通过电子邮件回复此消息，将不会传达给您的医生。如果要询问%{expert}有关健康问题，请接受此邀请，并发送消息或安排一次在线预约。如果您有紧急情况，请致电％{emergency_number}或立即前往最近的急诊科。</target>
+        <target>通过电子邮件回复此消息，将不会传达给您的医生。如果要询问%{expert}有关健康问题，请接受此邀请，并发送消息或安排一次在线预约。如果您有紧急情况，请致电%{emergency_number}或立即前往最近的急诊科。</target>
       </trans-unit>
     </body>
   </file>
@@ -1621,7 +1621,7 @@
     <body>
       <trans-unit id="334" resname="r544856331" restype="string" datatype="ruby">
         <source>Replies to this message via email will not reach your doctor. To ask %{expert} about a health concern, please accept this invitation and send a message or schedule a virtual appointment. If you have an emergency, please call %{emergency_number} or go immediately to the closest emergency department.</source>
-        <target>通过电子邮件回复此消息，将不会传达给您的医生。如果要询问%{expert}有关健康问题，请接受此邀请，并发送消息或安排一次在线预约。如果您有紧急情况，请致电％{emergency_number}或立即前往最近的急诊科。</target>
+        <target>通过电子邮件回复此消息，将不会传达给您的医生。如果要询问%{expert}有关健康问题，请接受此邀请，并发送消息或安排一次在线预约。如果您有紧急情况，请致电%{emergency_number}或立即前往最近的急诊科。</target>
       </trans-unit>
     </body>
   </file>
@@ -1797,7 +1797,7 @@
     <body>
       <trans-unit id="364" resname="r527860771" restype="string" datatype="ruby">
         <source>Patients get instant 24/7 access to world’s largest knowledge-base of doctor insights from your doctors and our network of %{doctors_count} top doctors</source>
-        <target>患者可以即时24/7全天候访问来自您的医生和我们的％{doctors_count}名顶级医生网络构成的世界上最大的医生见解知识库</target>
+        <target>患者可以即时24/7全天候访问来自您的医生和我们的%{doctors_count}名顶级医生网络构成的世界上最大的医生见解知识库</target>
         <note annotates="source">TODO pluralize</note>
       </trans-unit>
     </body>
@@ -2579,7 +2579,7 @@
       </trans-unit>
       <trans-unit id="541" resname="r7976305" restype="string" datatype="ruby">
         <source>New group %{group} has been created</source>
-        <target>已创建的新的群组％{group}</target>
+        <target>已创建的新的群组%{group}</target>
       </trans-unit>
       <trans-unit id="542" resname="r989766554" restype="string" datatype="ruby">
         <source>patient list uploaded by doctor!</source>
@@ -2591,7 +2591,7 @@
       </trans-unit>
       <trans-unit id="544" resname="r914920435" restype="string" datatype="ruby">
         <source>Your newsletter from %{expert} has arrived!</source>
-        <target>您的来自％{expert}的通讯简报已送达！</target>
+        <target>您的来自%{expert}的通讯简报已送达！</target>
       </trans-unit>
       <trans-unit id="545" resname="r380031734" restype="string" datatype="ruby">
         <source>ACT NOW: Tap in to %{org}&apos;s new health benefit today!</source>
@@ -2635,7 +2635,7 @@
       </trans-unit>
       <trans-unit id="555" resname="r264964148" restype="string" datatype="ruby">
         <source>Here’s your receipt for your consult with %{expert}</source>
-        <target>这是您与％{expert}咨询的收据</target>
+        <target>这是您与%{expert}咨询的收据</target>
       </trans-unit>
       <trans-unit id="556" resname="r253235659" restype="string" datatype="ruby">
         <source>%{expert} still hasn’t responded</source>
@@ -2715,7 +2715,7 @@
       </trans-unit>
       <trans-unit id="575" resname="r312125678" restype="string" datatype="ruby">
         <source>You thanked %{expert} – now connect virtually!</source>
-        <target>您感谢％{expert} - 立刻在线连接！</target>
+        <target>您感谢%{expert} - 立刻在线连接！</target>
       </trans-unit>
       <trans-unit id="576" resname="r727345463" restype="string" datatype="ruby">
         <source>You have more to be thankful for – connect virtually with a doctor today!</source>
