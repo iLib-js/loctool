@@ -1065,7 +1065,7 @@
       </trans-unit>
       <trans-unit id="176" resname=" agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
-        <target>están de acuerdo</target>
+        <target state="accepted">aprueban</target>
       </trans-unit>
       <trans-unit id="177" resname=" agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
