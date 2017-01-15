@@ -238,12 +238,20 @@ end
 def check_for_british(word)
   if british_spellings[word.downcase]
     translated_word = british_spellings[word.downcase]
-    #match case
-    translated_word
+    match_case_for_words(translated_word, word)
   else
     #add as is to string
     word
   end
+end
+
+# makes param target match the capitalization of param source
+def match_case_for_words(target, source)
+  return target if target == source
+  return target.downcase if /^[a-z]+$/.match(source)
+  return target.capitalize if /^[A-Z]{1}[a-z]+$/.match(source)
+  return target.upcase if /^[A-Z]+$/.match(source)
+  raise 'found weird capitalization'
 end
 
 #def replace_with_translations(template, from_to)

@@ -462,6 +462,12 @@ describe 'HamlLocalizer' do
         expect(res.keys).to include(test_sentence)
         expect(res[test_sentence]).to eq('I love acclimatisation')
       end
+      it 'matches capitalized translation' do
+        test_sentence = 'Acclimatization is the best'
+        res = process_british_values([test_sentence])
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('Acclimatisation is the best')
+      end
     end
   end
 end
