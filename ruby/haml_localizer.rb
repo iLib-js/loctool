@@ -207,11 +207,13 @@ def process_british_values(values)
     processed = ''
     curr_word = ''
     as_chars = v.split('')
-    as_chars.each do |c|
+    as_chars.each_with_index do |c, i|
+      is_letter = /[[:alpha:]]/.match(c)
       #TODO skip characters
-      if /[:alpha:]/.match?(c)
+      if is_letter
         curr_word << c
-      else
+      end
+      if (!is_letter || i == as_chars.count - 1)
         if british_spellings[curr_word.downcase]
           translated_word = british_spellings[curr_word.downcase]
           #match case
@@ -220,6 +222,7 @@ def process_british_values(values)
           #add curr_word to string
           processed << curr_word
         end
+        processed << c unless i == as_chars.count - 1
         curr_word = ''
       end
     end

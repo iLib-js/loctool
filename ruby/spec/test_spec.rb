@@ -455,5 +455,13 @@ describe 'HamlLocalizer' do
         expect(load_british_spellings).to eq({})
       end
     end
+    describe 'process_british_values' do
+      it 'works' do
+        test_sentence = 'I love acclimatization'
+        res = process_british_values([test_sentence])
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('I love acclimatisation')
+      end
+    end
   end
 end
