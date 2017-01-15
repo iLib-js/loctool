@@ -456,6 +456,11 @@ describe 'HamlLocalizer' do
       end
     end
     describe 'process_british_values' do
+      before :each do
+        stub(:load_british_spellings) do
+          {'acclimatization' => 'acclimatisation'}
+        end
+      end
       it 'works' do
         test_sentence = 'I love acclimatization'
         res = process_british_values([test_sentence])
