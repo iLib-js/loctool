@@ -209,20 +209,14 @@ def process_british_values(values)
     as_chars = v.split('')
     as_chars.each_with_index do |c, i|
       is_letter = /[[:alpha:]]/.match(c)
+      last_character = i == as_chars.count - 1
       #TODO skip characters
       if is_letter
         curr_word << c
       end
-      if (!is_letter || i == as_chars.count - 1)
-        if british_spellings[curr_word.downcase]
-          translated_word = british_spellings[curr_word.downcase]
-          #match case
-          processed << translated_word
-        else
-          #add curr_word to string
-          processed << curr_word
-        end
-        processed << c unless i == as_chars.count - 1
+      if (!is_letter || last_character)
+        processed << check_for_british(curr_word)
+        processed << c unless last_character
         curr_word = ''
       end
     end
@@ -239,6 +233,17 @@ def load_british_spellings
   raise "British dictionary not found at #{BRITISH_DICTIONARY_PATH}" unless File.exists?(BRITISH_DICTIONARY_PATH)
   f = File.read(BRITISH_DICTIONARY_PATH)
   JSON.parse(f)
+end
+
+def check_for_british(word)
+  if british_spellings[word.downcase]
+    translated_word = british_spellings[word.downcase]
+    #match case
+    translated_word
+  else
+    #add as is to string
+    word
+  end
 end
 
 #def replace_with_translations(template, from_to)
