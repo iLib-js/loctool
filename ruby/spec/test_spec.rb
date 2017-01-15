@@ -469,5 +469,16 @@ describe 'HamlLocalizer' do
         expect(res[test_sentence]).to eq('Acclimatisation is the best')
       end
     end
+    describe 'match_case_for_words' do
+      it 'works for lowercase' do
+        expect(match_case_for_words('TEST','word')).to eq('test')
+      end
+      it 'works for uppercase' do
+        expect(match_case_for_words('test','WORD')).to eq('TEST')
+      end
+      it 'works for capitalization' do
+        expect(match_case_for_words('test','Word')).to eq('Test')
+      end
+    end
   end
 end

@@ -251,7 +251,8 @@ def match_case_for_words(target, source)
   return target.downcase if /^[a-z]+$/.match(source)
   return target.capitalize if /^[A-Z]{1}[a-z]+$/.match(source)
   return target.upcase if /^[A-Z]+$/.match(source)
-  raise 'found weird capitalization'
+  puts "RUBY EN-GB ERROR: found weird capitalization #{target} #{source}"
+  target
 end
 
 #def replace_with_translations(template, from_to)
