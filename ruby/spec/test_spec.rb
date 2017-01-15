@@ -348,9 +348,9 @@ describe 'HamlLocalizer' do
     .left-column.hidden
 '
       def process_pseudo_values(values) {'to' => 'FOO'} end
-      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
-      local_name_to_output['en-GB'].nil?.should be_false
-      local_name_to_output['en-GB'].include?('FOO').should be_false
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      local_name_to_output['de-DE'].nil?.should be_false
+      local_name_to_output['de-DE'].include?('FOO').should be_false
     end
 
     it 'should translate all sections' do
@@ -360,9 +360,9 @@ describe 'HamlLocalizer' do
   .box
     %p <strong>What is this Document?</strong> The Terms of Use (or "TOU") is an agreement between you and HealthTap Inc. ("HealthTap"). There are rules you agree to follow when using our mobile applications and websites (the "Apps"), including when you ask questions and when you view or input content on or into the Apps, and they are contained in these TOU. The <a href="/terms/privacy_statement">HealthTap Privacy Statement</a> is officially part of these TOU even though it’s a separate document.
 '
-      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
-      local_name_to_output['en-GB'].nil?.should be_false
-      local_name_to_output['en-GB'].include?('What is this Document?').should be_false
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      local_name_to_output['de-DE'].nil?.should be_false
+      local_name_to_output['de-DE'].include?('What is this Document?').should be_false
 
     end
 
@@ -375,8 +375,8 @@ describe 'HamlLocalizer' do
 /   .btn.send-question
 /     Send your question
 "
-      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
-      local_name_to_output['en-GB'].include?('Send your question').should be_true
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      local_name_to_output['de-DE'].include?('Send your question').should be_true
     end
 
     it 'should localize this text' do
@@ -391,8 +391,8 @@ describe 'HamlLocalizer' do
           (It may take about 1-2 minutes for the video to load)
 '
 
-      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
-      local_name_to_output['en-GB'].include?('It may take about 1-2 minutes for the video to load').should be_false
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      local_name_to_output['de-DE'].include?('It may take about 1-2 minutes for the video to load').should be_false
     end
 
     it 'tests that we retain the punctuations' do
@@ -406,9 +406,9 @@ describe 'HamlLocalizer' do
           Do you see a video of yourself? <br>
           (It may take about 1-2 minutes for the video to load)
 '
-      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
-      local_name_to_output['en-GB'].include?('4321?').should be_false #padding should be after ? not before
-      local_name_to_output['en-GB'].include?('Do you see a video of yourself').should be_false #translate it
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      local_name_to_output['de-DE'].include?('4321?').should be_false #padding should be after ? not before
+      local_name_to_output['de-DE'].include?('Do you see a video of yourself').should be_false #translate it
     end
 
     it 'handles punctuation case' do
@@ -419,10 +419,10 @@ describe 'HamlLocalizer' do
     %p
       Power your organization with HOPES<sup>TM</sup> — the fully integrated, engaging and smart Health Operating System, providing query-to-cure virtual care to your patients, anytime, anywhere.
 '
-      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
-      local_name_to_output['en-GB'].include?('</sup> — ').should be_true #retain the punctuation
-      local_name_to_output['en-GB'].include?('the fully integrated').should be_false # should have translated
-      local_name_to_output['en-GB'].include?('TM').should be_false #should have translated content with the <sup..</sup> tags
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      local_name_to_output['de-DE'].include?('</sup> — ').should be_true #retain the punctuation
+      local_name_to_output['de-DE'].include?('the fully integrated').should be_false # should have translated
+      local_name_to_output['de-DE'].include?('TM').should be_false #should have translated content with the <sup..</sup> tags
     end
 
     it 'handles funny characters at the edges' do
@@ -441,9 +441,19 @@ describe 'HamlLocalizer' do
                   %h2.accoladeHeader
                     Doctor Recommendations 
 '
-      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['en-GB'], {})
-      local_name_to_output['en-GB'].include?('Doctor Recommendations').should be_false
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      local_name_to_output['de-DE'].include?('Doctor Recommendations').should be_false
     end
 
+  end
+
+  describe 'british translation' do
+    describe 'load_british_spellings' do
+      it 'works' do
+        File.should_receive(:exists?).and_return(true)
+        File.should_receive(:read).and_return('{}')
+        expect(load_british_spellings).to eq({})
+      end
+    end
   end
 end

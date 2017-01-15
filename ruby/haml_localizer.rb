@@ -3,8 +3,12 @@ require 'haml'
 require 'csv'
 require 'sanitize'
 require 'yaml'
+require 'json'
 
 PSEUDO_LOCALE = 'de-DE'
+BRITISH_LOCALE = 'en-GB'
+BRITISH_DICTIONARY_PATH = '../db/britishSpellings.json'
+SKIP_LOADING_LOCALES = [PSEUDO_LOCALE, BRITISH_LOCALE]
 
 class HTParser < Haml::Parser
   attr_accessor :parent, :node_to_texts, :text_to_nodes,
@@ -169,7 +173,7 @@ def pseudolocalize(string)
 end
 
 #param locale_mappings - The existing mappings in out system we can map values to
-# return <original string> => <string to repalce with>
+# return <original string> => <string to replace with>
 # out-param unmapped_words contains words we could not map
 def process_values(locale_mappings, values, unmapped_words)
   ret = {}
@@ -192,6 +196,46 @@ def process_values(locale_mappings, values, unmapped_words)
     end
   }
   ret
+end
+
+#param values - the extracted strings that we want to process
+# return <original string> => <string to replace with>
+def process_british_values(values)
+  ret = {}
+  values.each do |v|
+    next if v.strip.length == 0
+    processed = ''
+    curr_word = ''
+    as_chars = v.split('')
+    as_chars.each do |c|
+      #TODO skip characters
+      if /[:alpha:]/.match?(c)
+        curr_word << c
+      else
+        if british_spellings[curr_word.downcase]
+          translated_word = british_spellings[curr_word.downcase]
+          #match case
+          processed << translated_word
+        else
+          #add curr_word to string
+          processed << curr_word
+        end
+        curr_word = ''
+      end
+    end
+    ret[v] = processed
+  end
+  ret
+end
+
+def british_spellings
+  @british_spellings ||= load_british_spellings
+end
+
+def load_british_spellings
+  raise "British dictionary not found at #{BRITISH_DICTIONARY_PATH}" unless File.exists?(BRITISH_DICTIONARY_PATH)
+  f = File.read(BRITISH_DICTIONARY_PATH)
+  JSON.parse(f)
 end
 
 #def replace_with_translations(template, from_to)
@@ -405,6 +449,8 @@ def process_file_content(template, path_name, locale_names, all_locale_mappings)
     if locale_name == PSEUDO_LOCALE
       from_to = process_pseudo_values(values)
       #unmapped_for_file = values # removing because it makes every string unmapped
+    elsif locale_name == BRITISH_LOCALE
+      from_to = process_british_values(values)
     else
       from_to = process_values(locale_mappings, values, unmapped_for_file)
     end
@@ -432,7 +478,7 @@ unless defined?(TEST_ENV)
   raise ArgumentError.new("Usage: ruby haml_localizer.rb <locale-name> <lang-mapping> [<file-path>..]") if ARGV.count < 3
   locale_names = ARGV[0].split(',')
   locale_mapping_file_name = ARGV[1]
-  all_locale_mappings = load_locale_maps(locale_names.reject{|x| x == PSEUDO_LOCALE}, locale_mapping_file_name)
+  all_locale_mappings = load_locale_maps(locale_names.reject{|x| SKIP_LOADING_LOCALES.include?(x)}, locale_mapping_file_name)
   unmapped_words = {}
 
   ARGV[2, ARGV.length].each do |path_name|
