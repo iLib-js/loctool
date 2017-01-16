@@ -3490,7 +3490,7 @@
       </trans-unit>
       <trans-unit id="4015" resname="r314256427" restype="string" datatype="ruby">
         <source>%{notification_name}, thanks for asking a question—our doctors are on it!</source>
-        <target>%{Notification_name}，感谢您询问的问题 — 我们的医生正在回答它！</target>
+        <target state="accepted">%{notification_name}，感谢您询问的问题 — 我们的医生正在回答它！</target>
       </trans-unit>
       <trans-unit id="4016" resname="r825004238" restype="string" datatype="ruby">
         <source>Thanks for asking a question—our doctors are on it!</source>
