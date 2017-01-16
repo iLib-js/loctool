@@ -188,7 +188,7 @@
   <file original="app/views/people/feelGood/_consult_question.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="177" resname="r358657435" restype="string" datatype="ruby">
-        <source>Share a detailed description of your symptoms, concerns, and how you\&apos;d like the doctor to help you. Attach images and files as necessary.</source>
+        <source>Share a detailed description of your symptoms, concerns, and how you&apos;d like the doctor to help you. Attach images and files as necessary.</source>
         <target state="translated">分享您的症状，担心以及您希望医生如何帮助您的详细说明。必须附加照片或文件</target>
       </trans-unit>
       <trans-unit id="2237" resname="r143437710" restype="string" datatype="ruby">
