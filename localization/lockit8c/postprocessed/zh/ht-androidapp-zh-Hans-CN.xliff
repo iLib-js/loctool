@@ -2848,4 +2848,40 @@
       </trans-unit>
     </body>
   </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="38" resname="helpful" restype="string" datatype="x-android-resource">
+        <source>Helpful</source>
+        <target>有帮助的</target>
+      </trans-unit>
+      <trans-unit id="39" resname="add_photo" restype="string" datatype="x-android-resource">
+        <source>Add photo</source>
+        <target>添加照片</target>
+      </trans-unit>
+      <trans-unit id="40" resname="add_condition" restype="string" datatype="x-android-resource">
+        <source>Add condition</source>
+        <target>添加病症</target>
+      </trans-unit>
+      <trans-unit id="41" resname="add_medication" restype="string" datatype="x-android-resource">
+        <source>Add medication</source>
+        <target>添加药物</target>
+      </trans-unit>
+      <trans-unit id="42" resname="add_allergy" restype="string" datatype="x-android-resource">
+        <source>Add allergy</source>
+        <target>添加过敏源</target>
+      </trans-unit>
+      <trans-unit id="43" resname="guide_me" restype="string" datatype="x-android-resource">
+        <source>Guide me</source>
+        <target>指导我</target>
+      </trans-unit>
+      <trans-unit id="44" resname="share_feelgood_moment" restype="string" datatype="x-android-resource">
+        <source>Share FeelGood Moment</source>
+        <target>分享FeelGood时刻</target>
+      </trans-unit>
+      <trans-unit id="45" resname="review" restype="string" datatype="x-android-resource">
+        <source>Review</source>
+        <target>评论</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
