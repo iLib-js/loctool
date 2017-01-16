@@ -160,7 +160,7 @@ module.exports = {
         test.expect(1);
 
         var pb = new PseudoBritish({
-        	type: "template"
+        	type: "text"
         });
         test.equal(pb.getStringJS("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {oestrogen} supplements.");
         

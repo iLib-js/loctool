@@ -218,6 +218,10 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testLocalRepository.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
 
+	<target name="debug.localrepository" description="Debug only the tests for the local repository">
+		<debug script="${build.test}/testLocalRepository.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.utils" description="Run only the tests for the utils">
 		<run script="${build.test}/testUtils.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
