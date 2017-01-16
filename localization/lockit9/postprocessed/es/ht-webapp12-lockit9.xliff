@@ -838,9 +838,9 @@
   </file>
   <file original="app/views/general_mailer/welcome_member.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="181" resname="r57707577" restype="string" datatype="ruby">
-        <source>We’re so excited to have you join us on a journey to a healthier, happier life! You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists from &#35;{static_doctors_count} top doctors. Ask a FREE health question 24/7 or connect with a doctor for a real-time virtual consult from the comfort of your smartphone, tablet or computer!</source>
-        <target state="new">We’re so excited to have you join us on a journey to a healthier, happier life! You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists from &#35;{static_doctors_count} top doctors. Ask a FREE health question 24/7 or connect with a doctor for a real-time virtual consult from the comfort of your smartphone, tablet or computer!</target>
+      <trans-unit id="181" resname="r443455897" restype="string" datatype="ruby">
+        <source>We’re so excited to have you join us on a journey to a healthier, happier life! You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists from %{num_docs} top doctors. Ask a FREE health question 24/7 or connect with a doctor for a real-time virtual consult from the comfort of your smartphone, tablet or computer!</source>
+        <target state="new">We’re so excited to have you join us on a journey to a healthier, happier life! You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists from %{num_docs} top doctors. Ask a FREE health question 24/7 or connect with a doctor for a real-time virtual consult from the comfort of your smartphone, tablet or computer!</target>
       </trans-unit>
     </body>
   </file>
