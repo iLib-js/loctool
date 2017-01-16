@@ -8486,7 +8486,7 @@
       </trans-unit>
       <trans-unit id="1814" resname="compose_consult_translator_description" restype="string" datatype="x-android-resource">
         <source>Would you like to invite a translator to join this consult? An additional ${price}</source>
-        <target>¿Te gustaría invitar a un traductor para que se una a esta consulta? Un adicional de ${price}</target>
+        <target state="accepted">Si quieres comunicarte en español, por favor confirma que tu médico habla español en su perfíl. Si no, te recomendamos que agregues un intérprete por ${price}</target>
       </trans-unit>
       <trans-unit id="1815" resname="compose_consult_add_translator" restype="string" datatype="x-android-resource">
         <source>Add translator</source>
