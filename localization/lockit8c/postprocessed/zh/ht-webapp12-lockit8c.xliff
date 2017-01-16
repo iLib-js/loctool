@@ -41286,7 +41286,7 @@
       </trans-unit>
       <trans-unit id="9580" resname=" An additional ${price}" restype="string" datatype="javascript">
         <source>An additional ${price}</source>
-        <target state="accepted">需额外支付${price}</target>
+        <target state="accepted">(需额外支付 ${price})</target>
       </trans-unit>
       <trans-unit id="9581" resname="{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult</source>
