@@ -917,7 +917,7 @@
         <source>Payment</source>
         <target>Pago</target>
       </trans-unit>
-      <trans-unit id="165" resname="r370240484" restype="string" datatype="java">
+      <trans-unit id="165" resname="r901641921" restype="string" datatype="java">
         <source>per minute\n5-minute minimum</source>
         <target>por minuto\n5 minutos mínimo</target>
       </trans-unit>
@@ -953,11 +953,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscribePaymentFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="172" resname="r976932793" restype="string" datatype="java">
+      <trans-unit id="172" resname="r194999707" restype="string" datatype="java">
         <source>{start}Your total{end}No commitment, cancel anytime</source>
         <target>{start}Tu total{end}Sin compromiso, cancela en cualquier momento</target>
       </trans-unit>
-      <trans-unit id="173" resname="r844357829" restype="string" datatype="java">
+      <trans-unit id="173" resname="r923373309" restype="string" datatype="java">
         <source>Your total for 1 consult</source>
         <target>Tu total por 1 consulta</target>
       </trans-unit>
@@ -1009,7 +1009,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/PayOncePaymentFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="184" resname="r527034961" restype="string" datatype="java">
+      <trans-unit id="184" resname="r580375147" restype="string" datatype="java">
         <source>Your card ending in *{four_digit_number} has expired. \n Please add a new one</source>
         <target>Tu tarjeta terminando en *{four_digit_number} ha vencido. \n Por favor añade una nueva</target>
       </trans-unit>
@@ -1049,7 +1049,7 @@
         <source>Pay &amp; Send</source>
         <target>Pagar &amp; Enviar</target>
       </trans-unit>
-      <trans-unit id="193" resname="r813647634" restype="string" datatype="java">
+      <trans-unit id="193" resname="r715343662" restype="string" datatype="java">
         <source>{start}Your total{end}\nFor additional options</source>
         <target>{start}Tu total{end}\nPara opciones adicionales</target>
       </trans-unit>
@@ -1233,7 +1233,7 @@
         <source>Myth:</source>
         <target>Mito:</target>
       </trans-unit>
-      <trans-unit id="228" resname="r312270832" restype="string" datatype="java">
+      <trans-unit id="228" resname="r142482154" restype="string" datatype="java">
         <source>agreed with {author_name}&apos;s tip on \n{topic_name}</source>
         <target>estuvo de acuerdo con el tip de {author_name}\ acerca de \n{topic_name}</target>
         <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
@@ -1524,9 +1524,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/CareTeamTabFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="275" resname="r142513993" restype="string" datatype="java">
-        <source>Practicing: </source>
-        <target>Ejerciendo: </target>
+      <trans-unit id="275" resname="r383257904" restype="string" datatype="java">
+        <source>Practicing:</source>
+        <target>Ejerciendo:</target>
       </trans-unit>
       <trans-unit id="276" resname="r36845865" restype="string" datatype="java">
         <source>HealthTap Honor</source>
@@ -1552,7 +1552,7 @@
         <source>Would you like to share more details and get an immediate doctor answer?</source>
         <target>¿Te gustaría compartir más detalles y obtener una respuesta inmediata del doctor?</target>
       </trans-unit>
-      <trans-unit id="281" resname="r743681507" restype="string" datatype="java">
+      <trans-unit id="281" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
         <target>\\nPrueba una Consulta Virtual ›</target>
       </trans-unit>
@@ -1684,11 +1684,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/login/LoginFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="307" resname="r1034170198" restype="string" datatype="java">
+      <trans-unit id="307" resname="r338685022" restype="string" datatype="java">
         <source>Hi, Dr {doctor_name}!\n</source>
         <target>¡Hola, Dr. {doctor_name}!\n</target>
       </trans-unit>
-      <trans-unit id="308" resname="r867239650" restype="string" datatype="java">
+      <trans-unit id="308" resname="r9796713" restype="string" datatype="java">
         <source>To log in as a doctor, please download\n</source>
         <target>Para ingresar como un doctor, por favor descarga\n</target>
       </trans-unit>
@@ -1970,7 +1970,7 @@
         <source>We&apos;re sorry, HealthTap Concierge is not currently available in Idaho. However, you may still user HealthTap Concierge when traveling out of state!</source>
         <target>, HealthTap Concierge no está disponible actualmente en Idaho. ¡Sin embargo, aún puedes usar HealthTap Concierge cuando viajas fuera del estado!</target>
       </trans-unit>
-      <trans-unit id="351" resname="r285846926" restype="string" datatype="java">
+      <trans-unit id="351" resname="r261042682" restype="string" datatype="java">
         <source>{docname} will only be able to provide you with a second opinion on an existing diagnosis or treatment plan from your own doctor. {docname} cannot treat or diagnose you during this consult.\nIf you&apos;d like a new diagnosis or treatment, try consulting one of our top doctors licensed in your state.</source>
         <target>{docname} solo podrá brindarte una segunda opinión acerca de un diagnóstico existente o plan de tratamiento de tu propio doctor. {docname} no puede tratarte o diagnosticarte durante esta consulta.\nSi quieres un nuevo diagnóstico o tratamiento, intenta consultar a uno de nuestros mejores doctores acreditado en tu estado.</target>
       </trans-unit>
@@ -2146,7 +2146,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/tablayouts/GoalTakeActionTabLayout.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="385" resname="r558830488" restype="string" datatype="java">
+      <trans-unit id="385" resname="r843399816" restype="string" datatype="java">
         <source>There are no checklists for this goal yet.\nWant a personalized checklist?</source>
         <target>Aún no hay listados para esta meta.\n¿Quieres un listado personalizado?</target>
       </trans-unit>
@@ -2206,7 +2206,7 @@
         <source>Known for {known_for_topic_name}</source>
         <target>Conocido por {known_for_topic_name}</target>
       </trans-unit>
-      <trans-unit id="394" resname="r758898992" restype="string" datatype="java">
+      <trans-unit id="394" resname="r812841735" restype="string" datatype="java">
         <source>Here&apos;s a referral to a {expert_specialty} {start}{expert_name}{end}, you can consult for advice and treatment:</source>
         <target>Aquí está una referencia para un {expert_specialty} {start}{expert_name}{end}, que puedes consultar para consejo y tratamiento:</target>
       </trans-unit>
@@ -3790,7 +3790,7 @@
         <target>Servicio/Costo</target>
         <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
       </trans-unit>
-      <trans-unit id="680" resname="r793199154" restype="string" datatype="java">
+      <trans-unit id="680" resname="r884996706" restype="string" datatype="java">
         <source>One consult\t\t\t${0}</source>
         <target>Una consulta\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>
@@ -5057,7 +5057,7 @@
         <source>Payment</source>
         <target>付款方式</target>
       </trans-unit>
-      <trans-unit id="165" resname="r370240484" restype="string" datatype="java">
+      <trans-unit id="165" resname="r901641921" restype="string" datatype="java">
         <source>per minute\n5-minute minimum</source>
         <target>每5分钟\n至少5分钟</target>
       </trans-unit>
@@ -5093,11 +5093,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscribePaymentFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="172" resname="r976932793" restype="string" datatype="java">
+      <trans-unit id="172" resname="r194999707" restype="string" datatype="java">
         <source>{start}Your total{end}No commitment, cancel anytime</source>
         <target>{start}您总计{end}没有任何承诺可以随时取消</target>
       </trans-unit>
-      <trans-unit id="173" resname="r844357829" restype="string" datatype="java">
+      <trans-unit id="173" resname="r923373309" restype="string" datatype="java">
         <source>Your total for 1 consult</source>
         <target>您总计为1个咨询</target>
       </trans-unit>
@@ -5149,7 +5149,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/PayOncePaymentFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="184" resname="r527034961" restype="string" datatype="java">
+      <trans-unit id="184" resname="r580375147" restype="string" datatype="java">
         <source>Your card ending in *{four_digit_number} has expired. \n Please add a new one</source>
         <target>您的银行卡尾号*{four_digit_number} 已过期\n 请添加新的</target>
       </trans-unit>
@@ -5189,7 +5189,7 @@
         <source>Pay &amp; Send</source>
         <target>支付并发送</target>
       </trans-unit>
-      <trans-unit id="193" resname="r813647634" restype="string" datatype="java">
+      <trans-unit id="193" resname="r715343662" restype="string" datatype="java">
         <source>{start}Your total{end}\nFor additional options</source>
         <target>{start}您总计{end}\n为其他选项</target>
       </trans-unit>
@@ -5233,7 +5233,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXPaymentFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="200" resname="r211729301" restype="string" datatype="java">
+      <trans-unit id="200" resname="r855674847" restype="string" datatype="java">
         <source>Charge the card ending in  %s</source>
         <target>收费的银行卡尾号 %s</target>
       </trans-unit>
@@ -5373,7 +5373,7 @@
         <source>Myth:</source>
         <target>误区：</target>
       </trans-unit>
-      <trans-unit id="228" resname="r312270832" restype="string" datatype="java">
+      <trans-unit id="228" resname="r142482154" restype="string" datatype="java">
         <source>agreed with {author_name}&apos;s tip on \n{topic_name}</source>
         <target>同意{author_name}在\n{topic_name}的小贴士</target>
         <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
@@ -5664,8 +5664,8 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/CareTeamTabFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="275" resname="r142513993" restype="string" datatype="java">
-        <source>Practicing: </source>
+      <trans-unit id="275" resname="r383257904" restype="string" datatype="java">
+        <source>Practicing:</source>
         <target>诊疗中：</target>
       </trans-unit>
       <trans-unit id="276" resname="r36845865" restype="string" datatype="java">
@@ -5692,7 +5692,7 @@
         <source>Would you like to share more details and get an immediate doctor answer?</source>
         <target>您希望分享更多的详细信息并马上获得即时的医生回答吗？</target>
       </trans-unit>
-      <trans-unit id="281" resname="r743681507" restype="string" datatype="java">
+      <trans-unit id="281" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
         <target>\\n尝试一次在线咨询 ›</target>
       </trans-unit>
@@ -5824,11 +5824,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/login/LoginFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="307" resname="r1034170198" restype="string" datatype="java">
+      <trans-unit id="307" resname="r338685022" restype="string" datatype="java">
         <source>Hi, Dr {doctor_name}!\n</source>
         <target>您好，医生{doctor_name}!\n</target>
       </trans-unit>
-      <trans-unit id="308" resname="r867239650" restype="string" datatype="java">
+      <trans-unit id="308" resname="r9796713" restype="string" datatype="java">
         <source>To log in as a doctor, please download\n</source>
         <target>要以医生身份登录，请下载\n</target>
       </trans-unit>
@@ -6110,7 +6110,7 @@
         <source>We&apos;re sorry, HealthTap Concierge is not currently available in Idaho. However, you may still user HealthTap Concierge when traveling out of state!</source>
         <target>很抱歉，目前爱达荷州的HealthTap贵宾台不可用。但是，当您出国旅行时您仍然可以使用HealthTap贵宾台！</target>
       </trans-unit>
-      <trans-unit id="351" resname="r285846926" restype="string" datatype="java">
+      <trans-unit id="351" resname="r261042682" restype="string" datatype="java">
         <source>{docname} will only be able to provide you with a second opinion on an existing diagnosis or treatment plan from your own doctor. {docname} cannot treat or diagnose you during this consult.\nIf you&apos;d like a new diagnosis or treatment, try consulting one of our top doctors licensed in your state.</source>
         <target>{docname}只能向您提供您自己的医生对现有诊断或治疗计划的第二意见。{docname}在此咨询期间无法治疗或诊断您。\n如果您希望新的诊断或治疗，请咨询在您所在州拥有执业执照的我们的顶级医生。</target>
       </trans-unit>
@@ -6286,7 +6286,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/tablayouts/GoalTakeActionTabLayout.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="385" resname="r558830488" restype="string" datatype="java">
+      <trans-unit id="385" resname="r843399816" restype="string" datatype="java">
         <source>There are no checklists for this goal yet.\nWant a personalized checklist?</source>
         <target>没有这个目标的清单。\n想要个性化的清单吗？</target>
       </trans-unit>
@@ -6346,7 +6346,7 @@
         <source>Known for {known_for_topic_name}</source>
         <target>专攻{known_for_topic_name}</target>
       </trans-unit>
-      <trans-unit id="394" resname="r758898992" restype="string" datatype="java">
+      <trans-unit id="394" resname="r812841735" restype="string" datatype="java">
         <source>Here&apos;s a referral to a {expert_specialty} {start}{expert_name}{end}, you can consult for advice and treatment:</source>
         <target>以下是对{expert_specialty} {start}{expert_name}{end}的转诊，您可以为建议和治疗进行咨询：</target>
       </trans-unit>
@@ -7930,7 +7930,7 @@
         <target>服务/费用</target>
         <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
       </trans-unit>
-      <trans-unit id="680" resname="r793199154" restype="string" datatype="java">
+      <trans-unit id="680" resname="r884996706" restype="string" datatype="java">
         <source>One consult\t\t\t${0}</source>
         <target>一次咨询\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>

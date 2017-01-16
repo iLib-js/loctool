@@ -146,7 +146,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/OnetimePayFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="589" resname="r813647634" restype="string" datatype="java">
+      <trans-unit id="589" resname="r715343662" restype="string" datatype="java">
         <source>{start}Your total{end}\nFor additional options</source>
         <target>{start}Tu total{end}\nPara opciones adicionales</target>
       </trans-unit>
@@ -154,7 +154,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/TipsDetailFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="624" resname="r312270832" restype="string" datatype="java">
+      <trans-unit id="624" resname="r142482154" restype="string" datatype="java">
         <source>agreed with {author_name}&apos;s tip on \n{topic_name}</source>
         <target>estuvo de acuerdo con el tip de {author_name}\ acerca de \n{topic_name}</target>
         <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
@@ -729,7 +729,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/OnetimePayFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="589" resname="r813647634" restype="string" datatype="java">
+      <trans-unit id="589" resname="r715343662" restype="string" datatype="java">
         <source>{start}Your total{end}\nFor additional options</source>
         <target>{start}您的总计{end}\n为其他选项</target>
       </trans-unit>
@@ -737,7 +737,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/TipsDetailFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="624" resname="r312270832" restype="string" datatype="java">
+      <trans-unit id="624" resname="r142482154" restype="string" datatype="java">
         <source>agreed with {author_name}&apos;s tip on \n{topic_name}</source>
         <target>同意{author_name}的小贴士在\n{topic_name}</target>
         <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
