@@ -9,6 +9,10 @@ PSEUDO_LOCALE = 'de-DE'
 BRITISH_LOCALE = 'en-GB'
 BRITISH_DICTIONARY_PATH = '../db/britishSpellings.json'
 SKIP_LOADING_LOCALES = [PSEUDO_LOCALE, BRITISH_LOCALE]
+START_SKIP_END_SKIP_HASH = {
+    '<' => ['>'],
+    '&' => [';',' ']
+  }
 
 class HTParser < Haml::Parser
   attr_accessor :parent, :node_to_texts, :text_to_nodes,
@@ -207,10 +211,19 @@ def process_british_values(values)
     processed = ''
     curr_word = ''
     as_chars = v.split('')
+    skipping = false
+    stop_skip_chars = []
     as_chars.each_with_index do |c, i|
+      if skipping 
+        if stop_skip_chars.include?(c)
+          skipping = false
+          stop_skip_chars = []
+        end
+        processed << c
+        next
+      end
       is_letter = /[[:alpha:]]/.match(c)
       last_character = i == as_chars.count - 1
-      #TODO skip characters
       if is_letter
         curr_word << c
       end
@@ -218,6 +231,10 @@ def process_british_values(values)
         processed << check_for_british(curr_word)
         processed << c unless last_character
         curr_word = ''
+        if START_SKIP_END_SKIP_HASH.keys.include?(c) and !skipping
+          skipping = true
+          stop_skip_chars = START_SKIP_END_SKIP_HASH[c]
+        end
       end
     end
     ret[v] = processed
