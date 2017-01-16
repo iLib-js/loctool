@@ -9,7 +9,9 @@ PSEUDO_LOCALE = 'de-DE'
 BRITISH_LOCALE = 'en-GB'
 BRITISH_DICTIONARY_PATH = '../db/britishSpellings.json'
 SKIP_LOADING_LOCALES = [PSEUDO_LOCALE, BRITISH_LOCALE]
-START_SKIP_END_SKIP_HASH = {
+# Hash that stores start/end mapping of HTML escape sequences
+# Check spec for details
+HTML_ESCAPE_CHARS = {
     '<' => ['>'],
     '&' => [';',' ']
   }
@@ -212,13 +214,16 @@ def process_british_values(values)
     curr_word = ''
     as_chars = v.split('')
     skipping = false
-    stop_skip_chars = []
+    matching_chars_to_stop_skipping = []
     as_chars.each_with_index do |c, i|
-      if skipping 
-        if stop_skip_chars.include?(c)
+      if skipping
+        # we previously hit an escape character
+        if matching_chars_to_stop_skipping.include?(c)
+          # we hit a stop char, so stop skipping and reset the stop chars
           skipping = false
-          stop_skip_chars = []
+          matching_chars_to_stop_skipping = []
         end
+        # keep moving forward
         processed << c
         next
       end
@@ -231,9 +236,9 @@ def process_british_values(values)
         processed << check_for_british(curr_word)
         processed << c unless last_character
         curr_word = ''
-        if START_SKIP_END_SKIP_HASH.keys.include?(c) and !skipping
+        if HTML_ESCAPE_CHARS.keys.include?(c) and !skipping
           skipping = true
-          stop_skip_chars = START_SKIP_END_SKIP_HASH[c]
+          matching_chars_to_stop_skipping = HTML_ESCAPE_CHARS[c]
         end
       end
     end
