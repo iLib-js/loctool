@@ -44,11 +44,11 @@
     <body>
       <trans-unit id="8" resname="Dr. Agrees %d" restype="string" datatype="x-objective-c">
         <source>Dr. Agrees %d</source>
-        <target>De Acuerdo de Dr. %d</target>
+        <target>De Acuerdos de Dr. %d</target>
       </trans-unit>
       <trans-unit id="9" resname="Dr. Agrees %lu" restype="string" datatype="x-objective-c">
         <source>Dr. Agrees %lu</source>
-        <target>De Acuerdo de Dr. %lu</target>
+        <target>De Acuerdos de Dr. %lu</target>
       </trans-unit>
     </body>
   </file>
@@ -56,7 +56,7 @@
     <body>
       <trans-unit id="10" resname="Please choose, and then tap or type symptoms, or skip to ask our doctors directly." restype="string" datatype="x-objective-c">
         <source>Please choose, and then tap or type symptoms, or skip to ask our doctors directly.</source>
-        <target>Por favor, elige y luego toca o escribe síntomas, o salta a preguntarle directamente a nuestros doctores.</target>
+        <target>Por favor, elige y luego toca o escribe síntomas, o salta a preguntarles directamente a nuestros doctores.</target>
         <note annotates="source">symptom triage select subaccount conversational subheader</note>
       </trans-unit>
     </body>

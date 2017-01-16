@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="2" resname="Search feed                           " restype="string" datatype="x-objective-c">
         <source>Search feed</source>
-        <target>Buscar en feed</target>
+        <target>Buscar en fuente</target>
       </trans-unit>
     </body>
   </file>
@@ -56,7 +56,7 @@
       </trans-unit>
       <trans-unit id="9" resname="Your display language was successfully updated to %@." restype="string" datatype="x-objective-c">
         <source>Your display language was successfully updated to %@.</source>
-        <target>Tu idioma de visualización fue actualizado exitósamente a %@.</target>
+        <target>Tu idioma de visualización fue actualizado exitosamente a %@.</target>
       </trans-unit>
       <trans-unit id="10" resname="Your display language was updated." restype="string" datatype="x-objective-c">
         <source>Your display language was updated.</source>
@@ -68,7 +68,7 @@
     <body>
       <trans-unit id="11" resname="Sorry, there is already an account for this email. If you forgot your password, " restype="string" datatype="x-objective-c">
         <source>Sorry, there is already an account for this email. If you forgot your password,</source>
-        <target>Lo sentimos, ya existe una cuenta para este correo electrónico. Si olvidaste tu contraseña,</target>
+        <target>Perdón, ya existe una cuenta para este correo electrónico. Si olvidaste tu contraseña,</target>
       </trans-unit>
     </body>
   </file>
@@ -88,7 +88,7 @@
       </trans-unit>
       <trans-unit id="14" resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
-        <target>compartió un tip acerca de %@</target>
+        <target>compartió un tip sobre %@</target>
         <note annotates="source">Param: some topic</note>
       </trans-unit>
       <trans-unit id="15" resname=" about %@" restype="string" datatype="x-objective-c">
@@ -121,7 +121,7 @@
       </trans-unit>
       <trans-unit id="19" resname="The doctor is now always one tap away — to give you ultimate peace of mind. Request consult. " restype="string" datatype="x-objective-c">
         <source>The doctor is now always one tap away — to give you ultimate peace of mind. Request consult.</source>
-        <target>El médico está ahora a un sólo toque — para brindarte la máxima tranquilidad mental. Solicitar consulta.</target>
+        <target>El doctor está ahora a un solo toque — para brindarte la máxima paz mental. Solicitar consulta.</target>
       </trans-unit>
     </body>
   </file>
@@ -169,7 +169,7 @@
       </trans-unit>
       <trans-unit id="29" resname="Add more details and get an immediate doctor answer &#40;text or video&#41; " restype="string" datatype="x-objective-c">
         <source>Add more details and get an immediate doctor answer &#40;text or video&#41;</source>
-        <target>Agrega más detalles y obtén una respuesta inmediata de doctor &#40;texto o video&#41;</target>
+        <target>Añade más detalles y obtén una respuesta inmediata de doctor &#40;texto o video&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -193,7 +193,7 @@
       </trans-unit>
       <trans-unit id="34" resname=" advice &amp; reminders" restype="string" datatype="x-objective-c">
         <source>advice &amp; reminders</source>
-        <target>recordatorios y consejo</target>
+        <target>recordatorios &amp; consejo</target>
       </trans-unit>
       <trans-unit id="35" resname="Only US $ " restype="string" datatype="x-objective-c">
         <source>Only US $</source>
@@ -229,7 +229,7 @@
       </trans-unit>
       <trans-unit id="41" resname="Language read/write" restype="string" datatype="x-objective-c">
         <source>Language read/write</source>
-        <target>Idioma leido/escrito</target>
+        <target>Idioma leído/escrito</target>
       </trans-unit>
     </body>
   </file>
@@ -286,7 +286,7 @@
     <body>
       <trans-unit id="50" resname="  Thanked" restype="string" datatype="x-objective-c">
         <source>Thanked</source>
-        <target>Agradeció.</target>
+        <target>Agradeció</target>
       </trans-unit>
     </body>
   </file>
@@ -307,7 +307,7 @@
       </trans-unit>
       <trans-unit id="53" resname="Your account is deactivated. To re-activate, send a request to " restype="string" datatype="x-objective-c">
         <source>Your account is deactivated. To re-activate, send a request to</source>
-        <target>Tu cuenta está desactivada Para reactivar, envía una solicitud a</target>
+        <target>Tu cuenta está desactivada. Para reactivar, envía una solicitud a</target>
       </trans-unit>
     </body>
   </file>
@@ -387,7 +387,7 @@
       </trans-unit>
       <trans-unit id="65" resname="Okay :|" restype="string" datatype="x-objective-c">
         <source>Okay :|</source>
-        <target>Okay :|</target>
+        <target>Ok :|</target>
       </trans-unit>
       <trans-unit id="66" resname="Not good :&#40;" restype="string" datatype="x-objective-c">
         <source>Not good :&#40;</source>
@@ -452,7 +452,7 @@
       </trans-unit>
       <trans-unit id="75" resname="After you choose, please tap or type symptoms, or skip to ask our doctors directly." restype="string" datatype="x-objective-c">
         <source>After you choose, please tap or type symptoms, or skip to ask our doctors directly.</source>
-        <target>Después de que elijas, por favor toca o escriba síntomas, o salta a preguntarle a nuestros doctores directamente.</target>
+        <target>Después de que elijas, por favor, toca o escribe síntomas, o salta a preguntarles a nuestros doctores directamente.</target>
         <note annotates="source">symptom triage select subaccount conversational subheader</note>
       </trans-unit>
       <trans-unit id="76" resname="Hi, %@ :&#41;" restype="string" datatype="x-objective-c">
@@ -620,12 +620,12 @@
     <body>
       <trans-unit id="100" resname="The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
         <source>The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source>
-        <target>La información en HealthTap &#40;incluyendo esta herramienta&#41; es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor de servicios de emergencia local si crees que puedes estar teniendo una emergencia médica. Ve {start}Información Adicional{end}.</target>
+        <target>La información en HealthTap &#40;incluyendo esta herramienta&#41; es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor de servicios de emergencia local si crees que puedes estar teniendo una emergencia médica. Ver {start}Información Adicional{end}.</target>
         <note annotates="source">Generic disclaimer message</note>
       </trans-unit>
       <trans-unit id="101" resname="When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis it does not mean that you have &#40;or don&apos;t have&#41; any particular potential conditions. The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
         <source>When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis it does not mean that you have &#40;or don&apos;t have&#41; any particular potential conditions. The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source>
-        <target>Cuando eliges usar esta herramienta, podemos calcular y presentar condiciones u opciones de tratamiento médicamente relacionados a los síntomas y datos que ingreses. Esta información no es un diagnóstico y no significa que tienes &#40;o no tienes&#41; alguna condición particular en potencia. La información en HealthTap &#40;incluyendo esta herramienta&#41; es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor de servicios de emergencia local si crees que puedes estar teniendo una emergencia médica. Ve {start}Información Adicional{end}.</target>
+        <target>Cuando eliges usar esta herramienta, podemos calcular y presentar condiciones u opciones de tratamiento médicamente relacionados a los síntomas y datos que ingreses. Esta información no es un diagnóstico y no significa que tienes &#40;o no tienes&#41; alguna condición particular en potencia. La información en HealthTap &#40;incluyendo esta herramienta&#41; es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor de servicios de emergencia local si crees que puedes estar teniendo una emergencia médica. Ver {start}Información Adicional{end}.</target>
         <note annotates="source">Nondiagnosis disclaimer message</note>
       </trans-unit>
     </body>
@@ -729,15 +729,15 @@
     <body>
       <trans-unit id="119" resname="Your credit card ending in %@ has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! " restype="string" datatype="x-objective-c">
         <source>Your credit card ending in %@ has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!</source>
-        <target>Tu tarjeta de crédito terminando en %@ ha expirado o ya no es válida. ¡Por favor actualiza tu información de facturación para continuar con tus beneficios HealthTap Prime!</target>
+        <target>Tu tarjeta de crédito terminando en %@ ha expirado o ya no es válida. ¡Por favor, actualiza tu información de facturación para continuar con tus beneficios de HealthTap Prime!</target>
       </trans-unit>
       <trans-unit id="120" resname=" Update Now &gt;" restype="string" datatype="x-objective-c">
         <source>Update Now &gt;</source>
-        <target>Actualiza Ahora &gt;</target>
+        <target>Actualizar Ahora &gt;</target>
       </trans-unit>
       <trans-unit id="121" resname="Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! " restype="string" datatype="x-objective-c">
         <source>Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!</source>
-        <target>Tu cuenta de PayPal ha cambiad o ya no es válida. ¡Por favor actualiza tu información de facturación para continuar con tus beneficios HealthTap Prime!</target>
+        <target>Tu cuenta de PayPal ha cambiado o ya no es válida. ¡Por favor, actualiza tu información de facturación para continuar con tus beneficios de HealthTap Prime!</target>
       </trans-unit>
     </body>
   </file>
@@ -745,7 +745,7 @@
     <body>
       <trans-unit id="122" resname="Not a member? {start}Sign up{end}" restype="string" datatype="x-objective-c">
         <source>Not a member? {start}Sign up{end}</source>
-        <target>¿No eres un miembro? {start}Registrate{end}</target>
+        <target>¿No eres un miembro? {start}Regístrate{end}</target>
       </trans-unit>
     </body>
   </file>
@@ -870,11 +870,11 @@
     <body>
       <trans-unit id="140" resname=" doctor responded" restype="string" datatype="x-objective-c">
         <source>doctor responded</source>
-        <target>doctor contestó</target>
+        <target>doctor respondió</target>
       </trans-unit>
       <trans-unit id="141" resname=" doctors responded" restype="string" datatype="x-objective-c">
         <source>doctors responded</source>
-        <target>doctores contestaron</target>
+        <target>doctores respondieron</target>
       </trans-unit>
     </body>
   </file>
@@ -1008,7 +1008,7 @@
     <body>
       <trans-unit id="167" resname="checklist on " restype="string" datatype="x-objective-c">
         <source>checklist on</source>
-        <target>listado acerca de</target>
+        <target>listado sobre</target>
         <note annotates="source">Checklist title e.g: Dr. XYZ&apos;s checklist on Fixing pain</note>
       </trans-unit>
       <trans-unit id="168" resname="checklist from your " restype="string" datatype="x-objective-c">
@@ -1065,7 +1065,7 @@
       </trans-unit>
       <trans-unit id="176" resname=" agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
-        <target>están de acuerdo</target>
+        <target>aprueba</target>
       </trans-unit>
       <trans-unit id="177" resname=" agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
@@ -1086,11 +1086,11 @@
     <body>
       <trans-unit id="179" resname=" + %d doctor weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %d doctor weighed in:</source>
-        <target>+ %d doctor opinó acerca de:</target>
+        <target>+ %d doctor opinó:</target>
       </trans-unit>
       <trans-unit id="180" resname=" + %d doctors weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %d doctors weighed in:</source>
-        <target>+ %d doctores opinaron acerca de:</target>
+        <target>+ %d doctores opinaron:</target>
       </trans-unit>
       <trans-unit id="181" resname=" answered:" restype="string" datatype="x-objective-c">
         <source>answered:</source>
@@ -1106,12 +1106,12 @@
     <body>
       <trans-unit id="182" resname="You asked " restype="string" datatype="x-objective-c">
         <source>You asked</source>
-        <target>Pediste</target>
+        <target>Preguntaste</target>
         <note annotates="source">Part of label &apos;You asked on Oct24, 2016&apos;</note>
       </trans-unit>
       <trans-unit id="183" resname="You asked for %@ " restype="string" datatype="x-objective-c">
         <source>You asked for %@</source>
-        <target>Pediste %@</target>
+        <target>Preguntaste para %@</target>
         <note annotates="source">lablel below a question that user asked for a subaccount</note>
       </trans-unit>
     </body>
@@ -1125,11 +1125,11 @@
       </trans-unit>
       <trans-unit id="186" resname=" + %li doctor weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %li doctor weighed in:</source>
-        <target>+ %li doctor opinó acerca de:</target>
+        <target>+ %li doctor opinó:</target>
       </trans-unit>
       <trans-unit id="187" resname=" + %li doctors weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %li doctors weighed in:</source>
-        <target>+ %li doctores opinaron acerca de:</target>
+        <target>+ %li doctores opinaron:</target>
       </trans-unit>
     </body>
   </file>
@@ -1137,7 +1137,7 @@
     <body>
       <trans-unit id="188" resname=" + 1 doctor weighed in:" restype="string" datatype="x-objective-c">
         <source>+ 1 doctor weighed in:</source>
-        <target>+ 1 doctor opinó acerca de:</target>
+        <target>+ 1 doctor opinó:</target>
         <note annotates="source">to indicate one more doctor weighed in</note>
       </trans-unit>
     </body>
@@ -1187,7 +1187,7 @@
     <body>
       <trans-unit id="196" resname="      Add Another" restype="string" datatype="x-objective-c">
         <source>Add Another</source>
-        <target>Añadir otra</target>
+        <target>Añadir Otro</target>
       </trans-unit>
     </body>
   </file>
@@ -1211,7 +1211,7 @@
       </trans-unit>
       <trans-unit id="200" resname=" at " restype="string" datatype="x-objective-c">
         <source>at</source>
-        <target>en</target>
+        <target>a las</target>
       </trans-unit>
     </body>
   </file>
@@ -1239,7 +1239,7 @@
     <body>
       <trans-unit id="204" resname=" It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat." restype="string" datatype="x-objective-c">
         <source>It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat.</source>
-        <target>Parece que tu conexión de internet es demasiado pobre para iniciar una consulta de video. Por favor mejora tu conexión e intenta otra vez, o continúa con tu cita por chat de texto.</target>
+        <target>Parece que tu conexión de internet es demasiado pobre para iniciar una consulta por video. Por favor, mejora tu conexión e intenta otra vez, o continúa con tu cita por chat de texto.</target>
       </trans-unit>
     </body>
   </file>
@@ -1339,11 +1339,11 @@
     <body>
       <trans-unit id="222" resname="%@ and 1 other weighed in" restype="string" datatype="x-objective-c">
         <source>%@ and 1 other weighed in</source>
-        <target>%@ y 1 otro opinaron acerca de</target>
+        <target>%@ y 1 otro opinaron</target>
       </trans-unit>
       <trans-unit id="223" resname="%@ and %ld others weighed in" restype="string" datatype="x-objective-c">
         <source>%@ and %ld others weighed in</source>
-        <target>%@ y %ld otros opinaron acerca de</target>
+        <target>%@ y %ld otros opinaron</target>
       </trans-unit>
     </body>
   </file>
@@ -1359,7 +1359,7 @@
       </trans-unit>
       <trans-unit id="226" resname="Choose how you&apos;d like to get help" restype="string" datatype="x-objective-c">
         <source>Choose how you&apos;d like to get help</source>
-        <target>Selecciona como te ngustaría obtener ayuda</target>
+        <target>Selecciona cómo te gustaría obtener ayuda</target>
       </trans-unit>
     </body>
   </file>
@@ -1387,7 +1387,7 @@
       </trans-unit>
       <trans-unit id="232" resname="Video, voice or text chat now" restype="string" datatype="x-objective-c">
         <source>Video, voice or text chat now</source>
-        <target>Chatea por text, voz o video ahora</target>
+        <target>Chatea por texto, voz o video ahora</target>
       </trans-unit>
       <trans-unit id="233" resname="Out of office until %@" restype="string" datatype="x-objective-c">
         <source>Out of office until %@</source>
@@ -1395,7 +1395,7 @@
       </trans-unit>
       <trans-unit id="234" resname="Available next on %@" restype="string" datatype="x-objective-c">
         <source>Available next on %@</source>
-        <target>Disponible en %@</target>
+        <target>Disponible el %@</target>
       </trans-unit>
       <trans-unit id="235" resname="Busy now" restype="string" datatype="x-objective-c">
         <source>Busy now</source>
@@ -1411,7 +1411,7 @@
     <body>
       <trans-unit id="237" resname="IE2-yq-Pxp.text" restype="string" datatype="x-xib">
         <source>We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with:</source>
-        <target>Podemos conectarnos a través de mensajería protegida, chat de video o texto, o programar una cita virtual.\n\nPuedo brindarte:</target>
+        <target>Podemos conectarnos a través de mensajería segura, chat de video o texto, o agendar una cita virtual.\n\nPuedo brindarte:</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with: &quot;; ObjectID = &quot;IE2-yq-Pxp&quot;;</note>
       </trans-unit>
     </body>
@@ -1492,7 +1492,7 @@
     <body>
       <trans-unit id="246" resname="btX-Gh-PJY.text" restype="string" datatype="x-xib">
         <source>We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with:</source>
-        <target>Podemos conectarnos a través de mensajería protegida, chat de video o texto, o programar una cita virtual.\n\nPuedo brindarte:</target>
+        <target>Podemos conectarnos a través de mensajería segura, chat de video o texto, o agendar una cita virtual.\n\nPuedo brindarte:</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with: &quot;; ObjectID = &quot;btX-Gh-PJY&quot;;</note>
       </trans-unit>
     </body>
@@ -1702,7 +1702,7 @@
     <body>
       <trans-unit id="272" resname="lha-dw-e4h.normalTitle" restype="string" datatype="x-xib">
         <source>Revise ›</source>
-        <target>Revisar ›</target>
+        <target>Ajustar ›</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Revise › &quot;; ObjectID = &quot;lha-dw-e4h&quot;;</note>
       </trans-unit>
     </body>
