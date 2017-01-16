@@ -474,10 +474,10 @@ describe 'HamlLocalizer' do
         expect(res[test_sentence]).to eq('Acclimatisation is the best')
       end
       it 'skips escape character content' do
-        test_sentence = 'acclimatization <span class="acclimatization"> acclimatization </span>'
+        test_sentence = 'acclimatization <span class="acclimatization"> acclimatization </span> &acclimatization;'
         res = process_british_values([test_sentence])
         expect(res.keys).to include(test_sentence)
-        expect(res[test_sentence]).to eq('acclimatisation <span class="acclimatization"> acclimatisation </span>')
+        expect(res[test_sentence]).to eq('acclimatisation <span class="acclimatization"> acclimatisation </span> &acclimatization;')
       end
     end
     describe 'match_case_for_words' do
