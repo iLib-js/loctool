@@ -41282,11 +41282,11 @@
       </trans-unit>
       <trans-unit id="9579" resname="Would you like a translator to join you?" restype="string" datatype="javascript">
         <source>Would you like a translator to join you?</source>
-        <target state="translated">您需要邀请翻译加入这次咨询吗？</target>
+        <target state="accepted">如果您想用中文沟通，请确认您的医生档案里显示TA会说中文，不然的话我们建议您邀请同声翻译加入这次咨询</target>
       </trans-unit>
       <trans-unit id="9580" resname=" An additional ${price}" restype="string" datatype="javascript">
         <source>An additional ${price}</source>
-        <target state="translated">额外的 ${price}</target>
+        <target state="accepted">需额外支付${price}</target>
       </trans-unit>
       <trans-unit id="9581" resname="{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult</source>
