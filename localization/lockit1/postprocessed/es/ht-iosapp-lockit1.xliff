@@ -12540,7 +12540,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;" resname="Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;" restype="string" datatype="x-objective-c">
         <source>Would you like to invite a translator to join this consult? &#40;Additional %@&#41;</source>
-        <target>¿Te gustaría invitar a un traductor para que se una a esta consulta? &#40;%@ adicional&#41;</target>
+        <target state="accepted">Si quieres comunicarte en español, por favor confirma que tu médico habla español en su perfíl. Si no, te recomendamos que agregues un intérprete por %@</target>
         <note annotates="source">question to offser translation service with extra cost at end</note>
       </trans-unit>
       <trans-unit id="Would you like to receive helpful, personalized health tips and reminders from %@ doctors?" resname="Would you like to receive helpful, personalized health tips and reminders from %@ doctors?" restype="string" datatype="x-objective-c">
