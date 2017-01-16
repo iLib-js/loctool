@@ -11747,7 +11747,7 @@
       </trans-unit>
       <trans-unit id="2261" resname="r455480936" restype="string" datatype="ruby">
         <source>Find goal or topic &#40;ex. Lose weight&#41;</source>
-        <target state="translated">查找目标或话题&#40;ex减肥）</target>
+        <target state="accepted">查找目标或话题&#40;例如减肥&#41;</target>
       </trans-unit>
     </body>
   </file>
