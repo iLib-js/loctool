@@ -698,7 +698,7 @@
       </trans-unit>
       <trans-unit id="138" resname="r156592917" restype="string" datatype="java">
         <source>Prime &#40;Pay-as-you-go&#41;</source>
-        <target>PRIME （随付随用）</target>
+        <target>Prime （预付费计划）</target>
       </trans-unit>
       <trans-unit id="139" resname="r975846192" restype="string" datatype="java">
         <source>Prime</source>
@@ -2918,7 +2918,7 @@
       </trans-unit>
       <trans-unit id="521" resname="r829279545" restype="string" datatype="java">
         <source>Failed to downgrade to pay-as-you-go plan!!!</source>
-        <target>随收随付计划降级失败！！！</target>
+        <target>预付费计划降级失败！！！</target>
       </trans-unit>
       <trans-unit id="522" resname="r105168299" restype="string" datatype="java">
         <source>Subscription Canceled</source>
