@@ -70,7 +70,7 @@
   </file>
   <file original="feelgood/HTAuthorizationViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="15" resname="Helping you to live a healthier, happier, longer life!" restype="string" datatype="x-objective-c">
+      <trans-unit id="17" resname="Helping you to live a healthier, happier, longer life!" restype="string" datatype="x-objective-c">
         <source>Helping you to live a healthier, happier, longer life!</source>
         <target state="new">Helping you to live a healthier, happier, longer life!</target>
       </trans-unit>
@@ -78,7 +78,7 @@
   </file>
   <file original="feelgood/HTAuthorizationPasswordRecoveryViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="16" resname="Password recovery" restype="string" datatype="x-objective-c">
+      <trans-unit id="18" resname="Password recovery" restype="string" datatype="x-objective-c">
         <source>Password recovery</source>
         <target state="new">Password recovery</target>
       </trans-unit>
@@ -86,7 +86,7 @@
   </file>
   <file original="feelgood/Data/FGSearchResultQuestionUserAnswer.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="17" resname="\n\n%@ approved this translation of %@" restype="string" datatype="x-objective-c">
+      <trans-unit id="19" resname="\n\n%@ approved this translation of %@" restype="string" datatype="x-objective-c">
         <source>\n\n%@ approved this translation of %@</source>
         <target state="new">\n\n%@ approved this translation of %@</target>
       </trans-unit>
@@ -94,7 +94,7 @@
   </file>
   <file original="feelgood/Data/FGAvailableTalk2Docs.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="18" resname="In Dr. %@&apos;s referral network" restype="string" datatype="x-objective-c">
+      <trans-unit id="20" resname="In Dr. %@&apos;s referral network" restype="string" datatype="x-objective-c">
         <source>In Dr. %@&apos;s referral network</source>
         <target state="new">In Dr. %@&apos;s referral network</target>
       </trans-unit>
@@ -102,178 +102,9 @@
   </file>
   <file original="feelgood/AskDocsV4/HTAskDocsV4SpecificExpertModesViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="19" resname="We&apos;re sorry but we are unable to contact the server. Please try again in a bit." restype="string" datatype="x-objective-c">
+      <trans-unit id="21" resname="We&apos;re sorry but we are unable to contact the server. Please try again in a bit." restype="string" datatype="x-objective-c">
         <source>We&apos;re sorry but we are unable to contact the server. Please try again in a bit.</source>
         <target state="new">We&apos;re sorry but we are unable to contact the server. Please try again in a bit.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/iPadNative/Topic/FGBaseTopicViewController.m" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="42" resname="Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or %@ if you think you may have a medical emergency." restype="string" datatype="x-objective-c">
-        <source>Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or %@ if you think you may have a medical emergency.</source>
-        <note annotates="source">Para: phone number</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/FGSideMenuViewController.m" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="541" resname="Have %@  had any treatments or procedures?" restype="string" datatype="x-objective-c">
-        <source>Have %@  had any treatments or procedures?</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/FGAnswersListViewController.m" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="821" resname="Question updated!  Your question has been updated for our doctors to answer :&#41;" restype="string" datatype="x-objective-c">
-        <source>Question updated!  Your question has been updated for our doctors to answer :&#41;</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/Data/FGFeedAnswerCommented.m" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="1683" resname="%@ commented on  \r\n%@&apos;s answer" restype="string" datatype="x-objective-c">
-        <source>%@ commented on  \r\n%@&apos;s answer</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/iPadNative/Search/Base.lproj/FGiPadSearchViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="2088" resname="tRw-Sv-FBv.text" restype="string" datatype="x-xib">
-        <source>Sorry, no results found.                     Please try again or...</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Sorry, no results found.                     Please try again or...&quot;; ObjectID = &quot;tRw-Sv-FBv&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/iPadNative/Question/Base.lproj/FGiPadSearchQuestionViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="2093" resname="AdE-0v-5RT.text" restype="string" datatype="x-xib">
-        <source>Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.&quot;; ObjectID = &quot;AdE-0v-5RT&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/iPadNative/Expert/Base.lproj/FGDoctoriPadViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="2154" resname="85g-F7-rNc.text" restype="string" datatype="x-xib">
-        <source>Sorry, no results found.                     Please try again or</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Sorry, no results found.                     Please try again or&quot;; ObjectID = &quot;85g-F7-rNc&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/Base.lproj/FGSideMenuViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="2778" resname="5pI-Zr-Hck.text" restype="string" datatype="x-xib">
-        <source>Mama Made with a smile in sunny California :&#41;</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Mama Made with a smile in sunny California :&#41;&quot;; ObjectID = &quot;5pI-Zr-Hck&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/Base.lproj/FGSearchTopicViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="2828" resname="Kp7-G2-BcW.text" restype="string" datatype="x-xib">
-        <source>Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.&quot;; ObjectID = &quot;Kp7-G2-BcW&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/Base.lproj/FGSearchQuestionViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="2875" resname="onT-Ex-eP5.text" restype="string" datatype="x-xib">
-        <source>Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.&quot;; ObjectID = &quot;onT-Ex-eP5&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/Base.lproj/FGSearchDoctorsProfileViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="2920" resname="hwD-Sn-JcN.text" restype="string" datatype="x-xib">
-        <source>Sorry, no results found.                     Please try again or</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Sorry, no results found.                     Please try again or&quot;; ObjectID = &quot;hwD-Sn-JcN&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/Base.lproj/FGMomentDetailsmallViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="3123" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
-        <source>Please don\&apos;t include a followup question in your note. To do so:</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so:&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/Base.lproj/FGMomentDetailViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="3150" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
-        <source>Please don\&apos;t include a followup question in your note. To do so:</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so:&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/Base.lproj/FGMainSearchViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="3186" resname="si4-aX-7Oj.text" restype="string" datatype="x-xib">
-        <source>Sorry, no results found.                     Please try again or...</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Sorry, no results found.                     Please try again or...&quot;; ObjectID = &quot;si4-aX-7Oj&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/Settings/Base.lproj/FGUpdatePricePlanViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="3411" resname="AaJ-5m-Yoz.text" restype="string" datatype="x-xib">
-        <source>This is not a valid promo code Please try again</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;This is not a valid promo code Please try again&quot;; ObjectID = &quot;AaJ-5m-Yoz&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/ViewControllers/Settings/Base.lproj/FGCreditCardView.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="3516" resname="jdD-yC-Ajd.text" restype="string" datatype="x-xib">
-        <source>1234    5678    9012    3456</source>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;1234    5678    9012    3456&quot;; ObjectID = &quot;jdD-yC-Ajd&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/Classes/UI/Base.lproj/FGDocScoreLayerView.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="3666" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/Classes/UI/Base.lproj/AppRaterPopUp.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="3689" resname="JNa-8D-Dyu.text" restype="string" datatype="x-xib">
-        <source>Loving HealthTap? We love you too! Spread the love by rating us 5 stars in the iTunes Store. Our doctors appreciate your support :&#41;</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Loving HealthTap? We love you too! Spread the love by rating us 5 stars in the iTunes Store. Our doctors appreciate your support :&#41;&quot;; ObjectID = &quot;JNa-8D-Dyu&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/Classes/UI/CustomizedPopups/Base.lproj/FGDoctorScoreView.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="4230" resname="djz-HC-hRp.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGConciergeAppointmentSuccessViewController.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="4427" resname="7Sk-Oz-MpW.text" restype="string" datatype="x-xib">
-        <source>To receive  personalized insights from doctors, please tell us a little more about yourself</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;To receive  personalized insights from doctors, please tell us a little more about yourself&quot;; ObjectID = &quot;7Sk-Oz-MpW&quot;;</note>
-      </trans-unit>
-      <trans-unit id="4432" resname="hhF-Qf-Fir.text" restype="string" datatype="x-xib">
-        <source>Tuesday  Jan 12, 2014</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tuesday  Jan 12, 2014&quot;; ObjectID = &quot;hhF-Qf-Fir&quot;;</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGConciergeAppointmentReminderView.xib" source-language="en-US" product-name="ht-iosapp">
-    <body>
-      <trans-unit id="4436" resname="dX8-s6-E37.text" restype="string" datatype="x-xib">
-        <source>Tuesday  Jan 12, 2014</source>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tuesday  Jan 12, 2014&quot;; ObjectID = &quot;dX8-s6-E37&quot;;</note>
       </trans-unit>
     </body>
   </file>
