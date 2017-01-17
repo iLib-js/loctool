@@ -543,4 +543,32 @@ public class IResourceBundleTest extends TestCase
 		assertEquals("r993422001", resBundle.makeKey("{goal_name} Goals"));
 		assertEquals("r201354363", resBundle.makeKey("Referral link copied!"));
 	}
+	
+	public void testMakeKeyCompressWhiteSpace()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		
+		assertEquals("r926831062", resBundle.makeKey("Can\'t find treatment id"));
+		assertEquals("r926831062", resBundle.makeKey("Can\'t    find    treatment           id"));
+		
+		assertEquals("r909283218", resBundle.makeKey("Can\'t find an application for SMS"));
+		assertEquals("r909283218", resBundle.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"));
+	}
+	
+	public void testMakeKeyTrimWhiteSpace()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		
+		assertEquals("r926831062", resBundle.makeKey("Can\'t find treatment id"));
+		assertEquals("r926831062", resBundle.makeKey("      Can\'t find treatment id "));
+		
+		assertEquals("r909283218", resBundle.makeKey("Can\'t find an application for SMS"));
+		assertEquals("r909283218", resBundle.makeKey(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"));
+	}
 }

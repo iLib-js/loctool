@@ -1,4 +1,4 @@
-/*
+	/*
  * testJavaScriptFile.js - test the JavaScript file handler object.
  *
  * Copyright © 2016, Healthtap, Inc. All Rights Reserved.
@@ -305,6 +305,64 @@ module.exports = {
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "This is a test");
         test.equal(r.getComment(), "this is a translator's comment");
+        
+        test.done();
+    },
+
+    testJavaScriptFileParseSingleQuotesWithEmbeddedSingleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaScriptFile(p);
+        test.ok(j);
+        
+        j.parse(
+    		'    RB.getString(\'We\\\'ll notify you when {prefix}{last_name} accepts you as a patient!\').format({\n' +
+    		'        prefix: doctor_detail.expert_name_prefix,\n' +
+    		'        last_name: doctor_detail.last_name\n' +
+    		'    });'
+        );
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("We\\'ll notify you when {prefix}{last_name} accepts you as a patient!");
+        test.ok(r);
+        test.equal(r.getSource(), "We\\'ll notify you when {prefix}{last_name} accepts you as a patient!");
+        test.equal(r.getKey(), "We\\'ll notify you when {prefix}{last_name} accepts you as a patient!");
+        
+        test.done();
+    },
+
+    testJavaScriptFileParseSingleQuotesWithEmbeddedDoubleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaScriptFile(p);
+        test.ok(j);
+        
+        j.parse(
+    		'    RB.getString("We\\"ll notify you when {prefix}{last_name} accepts you as a patient!").format({\n' +
+    		'        prefix: doctor_detail.expert_name_prefix,\n' +
+    		'        last_name: doctor_detail.last_name\n' +
+    		'    });'
+        );
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource('We\\"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        test.ok(r);
+        test.equal(r.getSource(), 'We\\"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        test.equal(r.getKey(), 'We\\"ll notify you when {prefix}{last_name} accepts you as a patient!');
         
         test.done();
     },

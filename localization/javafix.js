@@ -10,7 +10,7 @@ var utils = require("../lib/utils.js");
 log4js.configure(path.join(path.dirname(module.filename), '..', 'log4js.json'));
 
 if (process.argv.length < 2) {
-	console.log("Usage: hamlfix.js filename");
+	console.log("Usage: javafix.js filename");
 	System.exit(2);
 }
 
@@ -40,7 +40,7 @@ for (var i = 0; i < units.length; i++) {
 			replace(/([^\\])\\n/g, "$1\n").replace(/([^\\])\\t/g, "$1\t").
 			replace(/^\\'/g, "'").replace(/^\\"/g, '"').
 			replace(/([^\\])\\'/g, "$1'").replace(/([^\\])\\"/g, '$1"').
-			replace(/([^\\])\\\\/g, "$1\\");
+			replace(/([^\\])\\\\/g, "$1\\").replace(/\s+/g, " ").trim();
 		
 		unit.source = unit.source.replace(/\\([^nut\\])/g, "$1").replace(/\\\\/g, "\\");
 		

@@ -1020,7 +1020,7 @@
       </trans-unit>
       <trans-unit id="30" resname="Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;" restype="string" datatype="x-objective-c">
         <source>Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;</source>
-        <target>您希望邀请翻译加入这次咨询吗？\n&#40;其他 %@&#41;</target>
+        <target state="accepted">如果您想用中文沟通，请确认您的医生档案里显示TA会说中文，不然的话我们建议您邀请同声翻译加入这次咨询\n&#40;需额外支付 %@&#41;</target>
         <note annotates="source">question to offser translation service with extra cost at end</note>
       </trans-unit>
     </body>

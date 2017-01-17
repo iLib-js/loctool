@@ -20,7 +20,7 @@
     <body>
       <trans-unit id="3" resname="Search feed                           " restype="string" datatype="x-objective-c">
         <source>Search feed</source>
-        <target>Buscar en feed</target>
+        <target>Buscar en fuente</target>
       </trans-unit>
     </body>
   </file>
@@ -148,11 +148,11 @@
       </trans-unit>
       <trans-unit id="26" resname="Please connect this device to your Facebook account from Settings" restype="string" datatype="x-objective-c">
         <source>Please connect this device to your Facebook account from Settings</source>
-        <target>Por favor conecta este dispositivo a tu cuenta de Facebook desde Configuración</target>
+        <target>Por favor, conecta este dispositivo a tu cuenta de Facebook desde Configuración</target>
       </trans-unit>
       <trans-unit id="27" resname="Please connect this device to your Twitter account from Settings" restype="string" datatype="x-objective-c">
         <source>Please connect this device to your Twitter account from Settings</source>
-        <target>Por favor conecta este dispositivo a tu cuenta de Twitter desde Configuración</target>
+        <target>Por favor, conecta este dispositivo a tu cuenta de Twitter desde Configuración</target>
       </trans-unit>
     </body>
   </file>
@@ -176,7 +176,7 @@
       </trans-unit>
       <trans-unit id="31" resname="Easiest way to speak with a primary care doctor, anywhere,anytime 24/7" restype="string" datatype="x-objective-c">
         <source>Easiest way to speak with a primary care doctor, anywhere,anytime 24/7</source>
-        <target>La forma más fácil de hablar inmediatamente con un doctor de atención primaria, a cualquier hora, en cualquier lugar, 24/7</target>
+        <target>La forma más fácil de hablar inmediatamente con un doctor de atención primaria, a cualquier hora y en cualquier lugar, 24/7</target>
       </trans-unit>
       <trans-unit id="32" resname="Sign up in minutes!" restype="string" datatype="x-objective-c">
         <source>Sign up in minutes!</source>
@@ -196,7 +196,7 @@
       </trans-unit>
       <trans-unit id="36" resname="HealthTap&apos;s doctors are all U.S. board certified, pass a stringent qualification pocess, and undergo training on how to give helpful advice using our technology platform." restype="string" datatype="x-objective-c">
         <source>HealthTap&apos;s doctors are all U.S. board certified, pass a stringent qualification pocess, and undergo training on how to give helpful advice using our technology platform.</source>
-        <target>Los doctores de HealthTap están todos acreditados por consejo en los EE.UU., pasan un estricto proceso de cualificación, y reciben entrenamiento sobre cómo dar consejo útil usando nuestra plataforma tecnológica.</target>
+        <target>Todos los doctores de HealthTap están acreditados en los EE.UU., pasan un estricto proceso de calificación y pasar por entrenamiento para dar consejo y tratamiento útil usando nuestra plataforma tecnológica.</target>
       </trans-unit>
       <trans-unit id="37" resname="HealthTap has received critically acclaimed coverage from leading media channels - both in the U.S. and internationally." restype="string" datatype="x-objective-c">
         <source>HealthTap has received critically acclaimed coverage from leading media channels - both in the U.S. and internationally.</source>
@@ -277,11 +277,11 @@
       </trans-unit>
       <trans-unit id="55" resname="Sorry, there is already an account for this email. If you forgot your password, " restype="string" datatype="x-objective-c">
         <source>Sorry, there is already an account for this email. If you forgot your password,</source>
-        <target>Lo sentimos, ya existe una cuenta para este correo electrónico. Si olvidaste tu contraseña,</target>
+        <target>Perdón, ya existe una cuenta para este correo electrónico. Si olvidaste tu contraseña,</target>
       </trans-unit>
       <trans-unit id="56" resname="We could not process the payment request. Please try a different card." restype="string" datatype="x-objective-c">
         <source>We could not process the payment request. Please try a different card.</source>
-        <target>No pudimos procesar esta solicitud de pago. Por favor prueba una tarjeta diferente.</target>
+        <target>No pudimos procesar esta solicitud de pago. Por favor, prueba una tarjeta diferente.</target>
       </trans-unit>
     </body>
   </file>
@@ -305,7 +305,7 @@
     <body>
       <trans-unit id="59" resname="Invalid email and password combination. Please try again." restype="string" datatype="x-objective-c">
         <source>Invalid email and password combination. Please try again.</source>
-        <target>Combinación de correo electrónico y contraseña inválida. Por favor intenta otra vez.</target>
+        <target>Combinación de correo electrónico y contraseña inválida. Por favor, intenta otra vez.</target>
       </trans-unit>
     </body>
   </file>
@@ -317,11 +317,11 @@
       </trans-unit>
       <trans-unit id="61" resname=" tip &#40;%ld of %lu&#41;" restype="string" datatype="x-objective-c">
         <source>tip &#40;%ld of %lu&#41;</source>
-        <target>tip &#40;%ld of %lu&#41;</target>
+        <target>tip &#40;%ld de %lu&#41;</target>
       </trans-unit>
       <trans-unit id="62" resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
-        <target>compartió un tip el %@</target>
+        <target>compartió un tip sobre %@</target>
         <note annotates="source">Param: some topic</note>
       </trans-unit>
       <trans-unit id="63" resname=" about %@" restype="string" datatype="x-objective-c">
@@ -354,7 +354,7 @@
       </trans-unit>
       <trans-unit id="68" resname="Add others for only $10 USD / month" restype="string" datatype="x-objective-c">
         <source>Add others for only $10 USD / month</source>
-        <target>Agregar a otros por sólo $ 10 USD / mes</target>
+        <target>Añade a otros por sólo $ 10 USD / mes</target>
       </trans-unit>
     </body>
   </file>
@@ -374,7 +374,7 @@
       </trans-unit>
       <trans-unit id="72" resname="The doctor is now one tap away —  Request a consult. " restype="string" datatype="x-objective-c">
         <source>The doctor is now one tap away —  Request a consult.</source>
-        <target>El doctor está a solo un toque - Solicita una consulta.</target>
+        <target>El doctor está a un solo toque - Solicita una consulta.</target>
       </trans-unit>
       <trans-unit id="73" resname="Processing payment..." restype="string" datatype="x-objective-c">
         <source>Processing payment...</source>
@@ -382,7 +382,7 @@
       </trans-unit>
       <trans-unit id="74" resname="Try Again" restype="string" datatype="x-objective-c">
         <source>Try Again</source>
-        <target>Intenta otra vez</target>
+        <target>Intenta Otra Vez</target>
       </trans-unit>
     </body>
   </file>
@@ -406,7 +406,7 @@
       </trans-unit>
       <trans-unit id="79" resname="Consult %@ doctor or specialist" restype="string" datatype="x-objective-c">
         <source>Consult %@ doctor or specialist</source>
-        <target>Consulta %@ doctor o especialista</target>
+        <target>Consulta a %@ doctor o especialista</target>
       </trans-unit>
       <trans-unit id="80" resname="anonymously" restype="string" datatype="x-objective-c">
         <source>anonymously</source>
@@ -470,7 +470,7 @@
       </trans-unit>
       <trans-unit id="95" resname="A Prime doctor is currently unavailable in %@. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders." restype="string" datatype="x-objective-c">
         <source>A Prime doctor is currently unavailable in %@. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders.</source>
-        <target>Un doctor Prime está actualmente no disponible en %@. Sin embargo, todavía puedes consultar con tu doctor o especialista a través de chat de texto seguro, y obtener consejo, recetas y recordatorios.</target>
+        <target>Un doctor Prime no está disponible actualmente en %@. Sin embargo, todavía puedes consultar con tu doctor o especialista a través de chat de texto seguro, y obtener consejo, recetas y recordatorios.</target>
       </trans-unit>
       <trans-unit id="96" resname="Selected available state: %@" restype="string" datatype="x-objective-c">
         <source>Selected available state: %@</source>
@@ -478,11 +478,11 @@
       </trans-unit>
       <trans-unit id="97" resname="%@, %ld years in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld years in practice</source>
-        <target state="accepted">%@, %ld años de experencias</target>
+        <target state="accepted">%@, %ld años de experiencia</target>
       </trans-unit>
       <trans-unit id="98" resname="%@, %ld year in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld year in practice</source>
-        <target>%@, %ld año de ejercicio</target>
+        <target>%@, %ld año ejerciendo</target>
       </trans-unit>
     </body>
   </file>
@@ -526,7 +526,7 @@
       </trans-unit>
       <trans-unit id="108" resname="The doctor is now always one tap away — to give you ultimate peace of mind. Request consult. " restype="string" datatype="x-objective-c">
         <source>The doctor is now always one tap away — to give you ultimate peace of mind. Request consult.</source>
-        <target>El médico está ahora a un sólo toque — para brindarte la máxima tranquilidad mental. Solicitar consulta.</target>
+        <target>El doctor está ahora a un solo toque — para brindarte la máxima paz mental. Solicitar consulta.</target>
       </trans-unit>
     </body>
   </file>
@@ -534,7 +534,7 @@
     <body>
       <trans-unit id="109" resname="You&apos;ve talked to a doctor %@ times%@ this month. Remember, HealthTap Virtual Consults are not meant to replace %@ primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n\nWe&apos;d like you to contact us at support@healthtap.com to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!" restype="string" datatype="x-objective-c">
         <source>You&apos;ve talked to a doctor %@ times%@ this month. Remember, HealthTap Virtual Consults are not meant to replace %@ primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n\nWe&apos;d like you to contact us at support@healthtap.com to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!</source>
-        <target>Has hablado con un doctor %@ veces%@ este mes. Recuerda, Consultas Virtuales de HealthTap no pretenden reemplazar a %@ médico de atención primaria o utilizarse como sustituto para establecer una relación con un doctor en el mundo real.\n\nNos gustaría que nos contactaras a support@healthtap.com para hacernos saber la razón por la que necesitas continuar hablando con un doctor. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
+        <target>Has hablado con un doctor %@ veces%@ este mes. Recuerda, las Consultas Virtuales de HealthTap no pretenden reemplazar a %@ médico de atención primaria o utilizarse como sustituto para establecer una relación con un doctor en el mundo real.\n\nNos gustaría que nos contactaras a support@healthtap.com para hacernos saber la razón por la que necesitas continuar hablando con un doctor. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
       </trans-unit>
       <trans-unit id="110" resname="Choose relationship" restype="string" datatype="x-objective-c">
         <source>Choose relationship</source>
@@ -707,7 +707,7 @@
     \u00B7 Nausea\n\
     \u00B7 Hemorragia Nasal\n\
     \u00B7 Micción Dolorosa\n\
-    \u00B7 Conjuntivitis\n\
+    \u00B7 Ojo Rojo\n\
     \u00B7 Roble Venenoso / Hiedra Venenosa\n\
     \u00B7 Sarpullido\n\
     \u00B7 Infección Respiratoria\n\
@@ -723,7 +723,7 @@
     \u00B7 Comezón Vaginal\n\
     \u00B7 Infección por Hongos\n\n\
     Cuándo no usar Consultas Virtuales\n\n\
-    Siempre llama al %@ o a tu servicio de emergencia local inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, dirígete inmediatamente a un %@:\n\n\
+    Siempre llama al %@ o a tu servicio local de emergencia inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, ve inmediatamente a un %@:\n\n\
     \u00B7 Dolor o presión en pecho\n\
     \u00B7 Convulsiones\n\
     \u00B7 Dificultad para respirar\n\
@@ -732,17 +732,17 @@
     \u00B7 Medicamento para el dolor &#40;narcóticos&#41;\n\
     \u00B7 Envenenamiento\n\
     \u00B7 Lesión grave en la cabeza, cuello o espalda\n\
-    \u00B7 Deficiencia grave de extremidades o hueso&#40;s&#41; roto&#40;s&#41;\n\
+    \u00B7 Disfunción grave de extremidades o hueso&#40;s&#41; roto&#40;s&#41;\n\
     \u00B7 Hemorragia significativa y descontrolada\n\
     \u00B7 Ideación suicida\n\
     \u00B7 Pérdida del conocimiento\n\
     \u00B7 Cualquier otra situación crítica o que atente contra la vida
     Qué no esperar\n\n\
-    \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration, Agencia Federal Antidrogas&#41; &#40;Categoría I, II, III, IV&#41;\n\
+    \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration&#41; &#40;Categoría I, II, III, IV&#41;\n\
     \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
     \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida &#40;por ejemplo, fármacos para dietas o para disfunción eréctil&#41;\n\
     \u00B7 Consultas en idiomas que no sea el inglés\n\
-    \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje &#40;considera consultas de video con médicos disponibles para una atención más rápida&#41;</target>
+    \u00B7 Respuestas inmediatas a consultas de buzón de entrada / mensaje &#40;considera consultas por video con doctores disponibles para una atención más rápida&#41;</target>
       </trans-unit>
       <trans-unit id="128" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivistis\n\\n    \u00B7 Acute Cystitis\n\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication &#40;narcotics&#41;\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\\n    \u00B7 Consults in languages other than English\n\\n                           \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
         <source>Common reasons to use Virtual Consults\n\
@@ -777,7 +777,7 @@
     \u00B7 Conjuntivitis Aguda\n\
     \u00B7 Cistitis Aguda\n\
     Cuándo no usar Consultas Virtuales\n\n\
-    Siempre llama al %@ o a tu servicio de emergencia local inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, dirígete inmediatamente a un %@:\n\n\
+    Siempre llama al %@ o a tu servicio local de emergencia inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, ve inmediatamente a un %@:\n\n\
     \u00B7 Dolor o presión en pecho\n\
     \u00B7 Convulsiones\n\
     \u00B7 Dificultad para respirar\n\
@@ -786,17 +786,17 @@
     \u00B7 Medicamento para el dolor &#40;narcóticos&#41;\n\
     \u00B7 Envenenamiento\n\
     \u00B7 Lesión grave en la cabeza, cuello o espalda\n\
-    \u00B7 Deficiencia grave de extremidades o hueso&#40;s&#41; roto&#40;s&#41;\n\
+    \u00B7 Disfunción grave de extremidades o hueso&#40;s&#41; roto&#40;s&#41;\n\
     \u00B7 Hemorragia significativa y descontrolada\n\
     \u00B7 Ideación suicida\n\
     \u00B7 Pérdida del conocimiento\n\
     \u00B7 Cualquier otra situación crítica o que atente contra la vida
     Qué no esperar\n\n\
-    \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration, Agencia Federal Antidrogas&#41; &#40;Categoría I, II, III, IV&#41;\n\
+    \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration&#41; &#40;Categoría I, II, III, IV&#41;\n\
     \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
     \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida &#40;por ejemplo, fármacos para dietas o para disfunción eréctil&#41;\n\
     \u00B7 Consultas en idiomas que no sea el inglés\n\
-                           \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje &#40;considera consultas de video con médicos disponibles para una atención más rápida&#41;</target>
+                           \u00B7 Respuestas inmediatas a consultas de buzón de entrada / mensaje &#40;considera consultas por video con doctores disponibles para una atención más rápida&#41;</target>
       </trans-unit>
       <trans-unit id="129" resname="Terms of Service " restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
@@ -824,7 +824,7 @@
       </trans-unit>
       <trans-unit id="134" resname="Add more details and get an immediate doctor answer &#40;text or video&#41; " restype="string" datatype="x-objective-c">
         <source>Add more details and get an immediate doctor answer &#40;text or video&#41;</source>
-        <target>Agrega más detalles y obtén una respuesta inmediata de doctor &#40;texto o video&#41;</target>
+        <target>Añade más detalles y obtén una respuesta inmediata de doctor &#40;texto o video&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -1024,7 +1024,7 @@
       </trans-unit>
       <trans-unit id="181" resname="Miscarriage" restype="string" datatype="x-objective-c">
         <source>Miscarriage</source>
-        <target>Abortos</target>
+        <target>Abortos Espontáneos</target>
       </trans-unit>
       <trans-unit id="182" resname="Living Children" restype="string" datatype="x-objective-c">
         <source>Living Children</source>
@@ -1100,7 +1100,7 @@
       </trans-unit>
       <trans-unit id="200" resname="Basic Info" restype="string" datatype="x-objective-c">
         <source>Basic Info</source>
-        <target>Información básica</target>
+        <target>Información Básica</target>
       </trans-unit>
       <trans-unit id="201" resname="Conditions &amp; Symptoms" restype="string" datatype="x-objective-c">
         <source>Conditions &amp; Symptoms</source>
@@ -1350,11 +1350,11 @@
     <body>
       <trans-unit id="243" resname="Your password should be 6+ characters.\nPlease try again." restype="string" datatype="x-objective-c">
         <source>Your password should be 6+ characters.\nPlease try again.</source>
-        <target>Tu contraseña debe de ser de más de 6 caracteres.\n Por favor intenta otra vez.</target>
+        <target>Tu contraseña debe de ser de más de 6 caracteres.\n Por favor, intenta otra vez.</target>
       </trans-unit>
       <trans-unit id="244" resname="Invalid email and password combination.\nPlease try again." restype="string" datatype="x-objective-c">
         <source>Invalid email and password combination.\nPlease try again.</source>
-        <target>Dirección correo electrónico y contraseña inválida.\n Por favor intenta otra vez.</target>
+        <target>Dirección correo electrónico y contraseña inválida.\n Por favor, intenta otra vez.</target>
       </trans-unit>
       <trans-unit id="245" resname="There is no account with this email. " restype="string" datatype="x-objective-c">
         <source>There is no account with this email.</source>
@@ -1366,23 +1366,23 @@
       </trans-unit>
       <trans-unit id="247" resname="Your account is deactivated. To re-activate, send a request to " restype="string" datatype="x-objective-c">
         <source>Your account is deactivated. To re-activate, send a request to</source>
-        <target>Tu cuenta está desactivada Para reactivar, envía una solicitud a</target>
+        <target>Tu cuenta está desactivada. Para reactivar, envía una solicitud a</target>
       </trans-unit>
       <trans-unit id="248" resname="Good " restype="string" datatype="x-objective-c">
         <source>Good</source>
-        <target>Buenos</target>
+        <target>Buena</target>
       </trans-unit>
       <trans-unit id="249" resname="morning" restype="string" datatype="x-objective-c">
         <source>morning</source>
-        <target>días</target>
+        <target>mañana</target>
       </trans-unit>
       <trans-unit id="250" resname="afternoon" restype="string" datatype="x-objective-c">
         <source>afternoon</source>
-        <target>tardes</target>
+        <target>tarde</target>
       </trans-unit>
       <trans-unit id="251" resname="evening" restype="string" datatype="x-objective-c">
         <source>evening</source>
-        <target>noches</target>
+        <target>noche</target>
       </trans-unit>
       <trans-unit id="252" resname="HT Chat" restype="string" datatype="x-objective-c">
         <source>HT Chat</source>
@@ -1398,11 +1398,11 @@
       </trans-unit>
       <trans-unit id="255" resname="Please reactivate my account &#40;%@&#41;" restype="string" datatype="x-objective-c">
         <source>Please reactivate my account &#40;%@&#41;</source>
-        <target>Por favor reactiva mi cuenta &#40;%@&#41;</target>
+        <target>Por favor, reactiva mi cuenta &#40;%@&#41;</target>
       </trans-unit>
       <trans-unit id="256" resname="Please download the &apos;HealthTap for Doctors&apos; app to login or signup as a doctor with a valid US medical license" restype="string" datatype="x-objective-c">
         <source>Please download the &apos;HealthTap for Doctors&apos; app to login or signup as a doctor with a valid US medical license</source>
-        <target>Por favor descarga la aplicación &quot;HealthTap para Doctores&quot; para ingresar o registrarte como un doctor con una licencia de médico de los EE.UU.  Por si las dudas</target>
+        <target>Por favor, descarga la aplicación &quot;HealthTap for Doctors&quot; para iniciar sesión o registrarte como un doctor con una licencia médica válida de los EE.UU.</target>
       </trans-unit>
     </body>
   </file>
@@ -1410,11 +1410,11 @@
     <body>
       <trans-unit id="257" resname="Help the patient understand what they are looking at" restype="string" datatype="x-objective-c">
         <source>Help the patient understand what they are looking at</source>
-        <target>Ayuda al paciente a comprender lo que está viendo</target>
+        <target>Ayuda al paciente a comprender qué está viendo</target>
       </trans-unit>
       <trans-unit id="258" resname="Help the doctors understand what they are looking at" restype="string" datatype="x-objective-c">
         <source>Help the doctors understand what they are looking at</source>
-        <target>Ayuda a los médicos a comprender lo que se busca</target>
+        <target>Ayuda a los doctores a comprender qué están viendo</target>
       </trans-unit>
       <trans-unit id="259" resname="Are you sure you want to send %@ as an attachment?" restype="string" datatype="x-objective-c">
         <source>Are you sure you want to send %@ as an attachment?</source>
@@ -1430,11 +1430,11 @@
       </trans-unit>
       <trans-unit id="262" resname="There seems to be a problem with the patient&apos;s connection. Please try chatting while we try to re-connect..." restype="string" datatype="x-objective-c">
         <source>There seems to be a problem with the patient&apos;s connection. Please try chatting while we try to re-connect...</source>
-        <target>Parece que hay un problema con la conexión del paciente. Por favor intenta usar el chat mientras tratamos de reconectar...</target>
+        <target>Parece que hay un problema con la conexión del paciente. Por favor, intenta usar el chat mientras tratamos de reconectar...</target>
       </trans-unit>
       <trans-unit id="263" resname="There seems to be a problem with the doctor&apos;s connection. Please try chatting while we try to re-connect..." restype="string" datatype="x-objective-c">
         <source>There seems to be a problem with the doctor&apos;s connection. Please try chatting while we try to re-connect...</source>
-        <target>Parece que hay un problema con la conexión del doctor. Por favor intenta usar el chat mientras tratamos de reconectar...</target>
+        <target>Parece que hay un problema con la conexión del doctor. Por favor, intenta usar el chat mientras tratamos de reconectar...</target>
       </trans-unit>
       <trans-unit id="264" resname="Video unavailable..." restype="string" datatype="x-objective-c">
         <source>Video unavailable...</source>
@@ -1442,7 +1442,7 @@
       </trans-unit>
       <trans-unit id="265" resname="Please wait one moment while we connect you with the patient..." restype="string" datatype="x-objective-c">
         <source>Please wait one moment while we connect you with the patient...</source>
-        <target>Por favor espera un momento mientras te conectamos con el paciente...</target>
+        <target>Por favor, espera un momento mientras te conectamos con el paciente...</target>
       </trans-unit>
       <trans-unit id="266" resname="A doctor is reviewing your chart and will be with you shortly..." restype="string" datatype="x-objective-c">
         <source>A doctor is reviewing your chart and will be with you shortly...</source>
@@ -1466,7 +1466,7 @@
       </trans-unit>
       <trans-unit id="271" resname="Please complete your SOAP note." restype="string" datatype="x-objective-c">
         <source>Please complete your SOAP note.</source>
-        <target>Por favor completa tu nota SOAP.</target>
+        <target>Por favor, completa tu nota SOAP.</target>
       </trans-unit>
       <trans-unit id="272" resname="Show Participants" restype="string" datatype="x-objective-c">
         <source>Show Participants</source>
@@ -1522,7 +1522,7 @@
       </trans-unit>
       <trans-unit id="285" resname="Poor network connection. Please check your network connection and try again..." restype="string" datatype="x-objective-c">
         <source>Poor network connection. Please check your network connection and try again...</source>
-        <target>Conexión de red pobre. Por favor verifica tu conexión de red e intenta otra vez...</target>
+        <target>Conexión de red pobre. Por favor, verifica tu conexión de red e intenta otra vez...</target>
       </trans-unit>
       <trans-unit id="286" resname="Unavailable at this time" restype="string" datatype="x-objective-c">
         <source>Unavailable at this time</source>
@@ -1542,11 +1542,11 @@
       </trans-unit>
       <trans-unit id="289" resname="To publish your FeelGood moment, please add a photo" restype="string" datatype="x-objective-c">
         <source>To publish your FeelGood moment, please add a photo</source>
-        <target>Para publicar tu momento para Sentirse Bien, por favor añade una foto</target>
+        <target>Para publicar tu momento FeelGood, por favor, añade una foto</target>
       </trans-unit>
       <trans-unit id="290" resname="To publish your FeelGood moment, please add a caption" restype="string" datatype="x-objective-c">
         <source>To publish your FeelGood moment, please add a caption</source>
-        <target>Para publicar tu momento para Sentirse Bien, por favor añade una leyenda</target>
+        <target>Para publicar tu momento FeelGood, por favor, añade una leyenda</target>
       </trans-unit>
       <trans-unit id="291" resname="Change photo" restype="string" datatype="x-objective-c">
         <source>Change photo</source>
@@ -1566,7 +1566,7 @@
     <body>
       <trans-unit id="294" resname="No Commitment, cancel anytime" restype="string" datatype="x-objective-c">
         <source>No Commitment, cancel anytime</source>
-        <target>Sin Compromiso, cancela en cualquier omento</target>
+        <target>Sin Compromiso, cancela en cualquier momento</target>
       </trans-unit>
       <trans-unit id="295" resname="per month" restype="string" datatype="x-objective-c">
         <source>per month</source>
@@ -1586,15 +1586,15 @@
     <body>
       <trans-unit id="297" resname="Please provide a valid email of a HealthTap account." restype="string" datatype="x-objective-c">
         <source>Please provide a valid email of a HealthTap account.</source>
-        <target>Por favor proporciona un correo electrónico válido de una cuenta de HealthTap</target>
+        <target>Por favor, proporciona un correo electrónico válido de una cuenta de HealthTap.</target>
       </trans-unit>
       <trans-unit id="298" resname="Please help me log in to my HealthTap account" restype="string" datatype="x-objective-c">
         <source>Please help me log in to my HealthTap account</source>
-        <target>Por favor ayúdame a ingresar a mi cuenta de HealthTap</target>
+        <target>Por favor, ayúdame a iniciar sesión a mi cuenta de HealthTap</target>
       </trans-unit>
       <trans-unit id="299" resname="Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :&#41;" restype="string" datatype="x-objective-c">
         <source>Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :&#41;</source>
-        <target>¡Hola Equipo HealthTap!\n\nEstoy experimentado dificultades para ingresar a mi cuenta de HealthTap. ¿Por favor pueden ayudarme a restablecer mi contraseña?\n\nDISPOSITIVO: %@\NDETALLES DE DISPOSITIVO: %@\n\nGracias :&#41;</target>
+        <target>¡Hola Equipo HealthTap!\n\nEstoy experimentado dificultades para iniciar sesión en mi cuenta de HealthTap. ¿Por favor, pueden ayudarme a restablecer mi contraseña?\n\nDISPOSITIVO: %@\NDETALLES DE DISPOSITIVO: %@\n\nGracias :&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -1666,11 +1666,11 @@
     <body>
       <trans-unit id="310" resname="Poor network connection.\nPlease check your network connection and try again" restype="string" datatype="x-objective-c">
         <source>Poor network connection.\nPlease check your network connection and try again</source>
-        <target>Conexión de red pobre.\nPor favor verifica tu conexión de red e intenta otra vez</target>
+        <target>Conexión de red pobre.\nPor favor, verifica tu conexión de red e intenta otra vez</target>
       </trans-unit>
       <trans-unit id="311" resname="There seems to be a problem with the patient&apos;s connection.  One moment while we try to reconnect you" restype="string" datatype="x-objective-c">
         <source>There seems to be a problem with the patient&apos;s connection.  One moment while we try to reconnect you</source>
-        <target>Parace que hay un problema con la conexión del paciente.  Un momento mientras tratamos de volver a conectarte</target>
+        <target>Parece que hay un problema con la conexión del paciente.  Un momento mientras tratamos de volver a conectarte</target>
       </trans-unit>
       <trans-unit id="312" resname="There seems to be a problem with the doctor&apos;s connection. One moment while we try to reconnect you" restype="string" datatype="x-objective-c">
         <source>There seems to be a problem with the doctor&apos;s connection. One moment while we try to reconnect you</source>
@@ -1798,7 +1798,7 @@
       </trans-unit>
       <trans-unit id="335" resname="Unfortunately none of our %@ to English translators is available at this time. Please try again later." restype="string" datatype="x-objective-c">
         <source>Unfortunately none of our %@ to English translators is available at this time. Please try again later.</source>
-        <target>Desafortunadamente ninguno de nuestros traductores de %@ a inglés están disponibles en este momento. Por favor intenta otra vez más tarde.</target>
+        <target>Desafortunadamente ninguno de nuestros traductores de %@ a inglés están disponibles en este momento. Por favor, intenta otra vez más tarde.</target>
       </trans-unit>
       <trans-unit id="336" resname="Sorry" restype="string" datatype="x-objective-c">
         <source>Sorry</source>
@@ -1886,7 +1886,7 @@
       </trans-unit>
       <trans-unit id="348" resname="Please provide your full name" restype="string" datatype="x-objective-c">
         <source>Please provide your full name</source>
-        <target>Por favor proporciona tu nombre completo</target>
+        <target>Por favor, proporciona tu nombre completo</target>
       </trans-unit>
       <trans-unit id="349" resname="Mobile phone number" restype="string" datatype="x-objective-c">
         <source>Mobile phone number</source>
@@ -1894,11 +1894,11 @@
       </trans-unit>
       <trans-unit id="350" resname="Please provide your mobile phone number" restype="string" datatype="x-objective-c">
         <source>Please provide your mobile phone number</source>
-        <target>Por favor proporciona tu número de teléfono móvil</target>
+        <target>Por favor, proporciona tu número de teléfono móvil</target>
       </trans-unit>
       <trans-unit id="351" resname="Please provide your date of birth" restype="string" datatype="x-objective-c">
         <source>Please provide your date of birth</source>
-        <target>Por favor proporciona tu fecha de nacimiento</target>
+        <target>Por favor, proporciona tu fecha de nacimiento</target>
       </trans-unit>
       <trans-unit id="352" resname="Your date of birth" restype="string" datatype="x-objective-c">
         <source>Your date of birth</source>
@@ -1906,7 +1906,7 @@
       </trans-unit>
       <trans-unit id="353" resname="Please provide your zip code" restype="string" datatype="x-objective-c">
         <source>Please provide your zip code</source>
-        <target>Por favor proporciona tu código postal</target>
+        <target>Por favor, proporciona tu código postal</target>
       </trans-unit>
       <trans-unit id="354" resname="Zip or postal code" restype="string" datatype="x-objective-c">
         <source>Zip or postal code</source>
@@ -1914,7 +1914,7 @@
       </trans-unit>
       <trans-unit id="355" resname="Please provide the following\nfor your consult" restype="string" datatype="x-objective-c">
         <source>Please provide the following\nfor your consult</source>
-        <target>Por favor proporciona lo siguiente\npara tu consulta</target>
+        <target>Por favor, proporciona lo siguiente\npara tu consulta</target>
       </trans-unit>
     </body>
   </file>
@@ -1922,11 +1922,11 @@
     <body>
       <trans-unit id="356" resname="review" restype="string" datatype="x-objective-c">
         <source>review</source>
-        <target>Crítica</target>
+        <target>valoración</target>
       </trans-unit>
       <trans-unit id="357" resname="reviews" restype="string" datatype="x-objective-c">
         <source>reviews</source>
-        <target>Críticas</target>
+        <target>valoraciones</target>
       </trans-unit>
     </body>
   </file>
@@ -2090,11 +2090,11 @@
       </trans-unit>
       <trans-unit id="392" resname="Prescriptions sent to your local pharmacy or mailed to you" restype="string" datatype="x-objective-c">
         <source>Prescriptions sent to your local pharmacy or mailed to you</source>
-        <target>Recetas son enviadas a tu farmacia local o enviadas por correo a ti</target>
+        <target>Las recetas son enviadas a tu farmacia local o enviadas por correo a ti</target>
       </trans-unit>
       <trans-unit id="393" resname="Attach photos, documents, test results, and full health record" restype="string" datatype="x-objective-c">
         <source>Attach photos, documents, test results, and full health record</source>
-        <target>Adjunta fotos, documentos, resultados de laboratorio, y expediente clínico completo</target>
+        <target>Adjunta fotos, documentos, resultados de pruebas y expediente clínico completo</target>
       </trans-unit>
       <trans-unit id="394" resname="100% Satisfaction Guarantee" restype="string" datatype="x-objective-c">
         <source>100% Satisfaction Guarantee</source>
@@ -2154,15 +2154,15 @@
     <body>
       <trans-unit id="404" resname="Your credit card ending in %@ has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! " restype="string" datatype="x-objective-c">
         <source>Your credit card ending in %@ has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!</source>
-        <target>Tu tarjeta de crédito terminando en %@ ha expirado o ya no es válida. ¡Por favor actualiza tu información de facturación para continuar con tus beneficios HealthTap Prime!</target>
+        <target>Tu tarjeta de crédito terminando en %@ ha expirado o ya no es válida. ¡Por favor, actualiza tu información de facturación para continuar con tus beneficios de HealthTap Prime!</target>
       </trans-unit>
       <trans-unit id="405" resname=" Update Now &gt;" restype="string" datatype="x-objective-c">
         <source>Update Now &gt;</source>
-        <target>Actualiza Ahora &gt;</target>
+        <target>Actualizar Ahora &gt;</target>
       </trans-unit>
       <trans-unit id="406" resname="Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! " restype="string" datatype="x-objective-c">
         <source>Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!</source>
-        <target>Tu cuenta de PayPal ha cambiad o ya no es válida. ¡Por favor actualiza tu información de facturación para continuar con tus beneficios HealthTap Prime!</target>
+        <target>Tu cuenta de PayPal ha cambiad o ya no es válida. ¡Por favor, actualiza tu información de facturación para continuar con tus beneficios de HealthTap Prime!</target>
       </trans-unit>
     </body>
   </file>
@@ -2170,7 +2170,7 @@
     <body>
       <trans-unit id="407" resname="Network status:" restype="string" datatype="x-objective-c">
         <source>Network status:</source>
-        <target>Estado de red:</target>
+        <target>Estado de Red:</target>
       </trans-unit>
       <trans-unit id="408" resname="In-Network" restype="string" datatype="x-objective-c">
         <source>In-Network</source>
@@ -2314,7 +2314,7 @@
     <body>
       <trans-unit id="432" resname="Questions about HealthTap?\nCall our Quality Care team at 1-650-376-6610\n\n* Prices may vary for certain specialties or doctors" restype="string" datatype="x-objective-c">
         <source>Questions about HealthTap?\nCall our Quality Care team at 1-650-376-6610\n\n* Prices may vary for certain specialties or doctors</source>
-        <target>¿Preguntas sobre HealthTap?\nLlama a nuestro equipo de Atención de Calidad al 1-650-376-6110\n\n* Precios pueden variar para ciertas especialidades o doctores</target>
+        <target>¿Preguntas sobre HealthTap?\nLlama a nuestro equipo de Atención de Calidad al 1-650-376-6110\n\n* Los precios pueden variar para ciertas especialidades o doctores</target>
       </trans-unit>
       <trans-unit id="433" resname="How would you like to ask doctors?" restype="string" datatype="x-objective-c">
         <source>How would you like to ask doctors?</source>
@@ -2435,7 +2435,7 @@
       </trans-unit>
       <trans-unit id="455" resname="Resolutions" restype="string" datatype="x-objective-c">
         <source>Resolutions</source>
-        <target>Resoluciones</target>
+        <target>Propósitos</target>
       </trans-unit>
       <trans-unit id="456" resname="Personal" restype="string" datatype="x-objective-c">
         <source>Personal</source>
@@ -2768,7 +2768,7 @@
       </trans-unit>
       <trans-unit id="523" resname="Top Doctor Insights on " restype="string" datatype="x-objective-c">
         <source>Top Doctor Insights on</source>
-        <target>Mejores Perspicacias Médicas en</target>
+        <target>Mejores Perspicacias de Doctores sobre</target>
       </trans-unit>
     </body>
   </file>
@@ -2877,7 +2877,7 @@
       </trans-unit>
       <trans-unit id="542" resname=" created" restype="string" datatype="x-objective-c">
         <source>created</source>
-        <target>creado</target>
+        <target>creó</target>
       </trans-unit>
       <trans-unit id="543" resname="checklist for " restype="string" datatype="x-objective-c">
         <source>checklist for</source>
@@ -2962,12 +2962,12 @@
     <body>
       <trans-unit id="556" resname="You asked " restype="string" datatype="x-objective-c">
         <source>You asked</source>
-        <target>Pediste</target>
+        <target>Preguntaste</target>
         <note annotates="source">Part of label &apos;You asked on Oct24, 2016&apos;</note>
       </trans-unit>
       <trans-unit id="557" resname="You asked for %@ " restype="string" datatype="x-objective-c">
         <source>You asked for %@</source>
-        <target>Pediste %@</target>
+        <target>Preguntaste para %@</target>
         <note annotates="source">lablel below a question that user asked for a subaccount</note>
       </trans-unit>
     </body>
@@ -2976,7 +2976,7 @@
     <body>
       <trans-unit id="559" resname="for %@ " restype="string" datatype="x-objective-c">
         <source>for %@</source>
-        <target>por %@</target>
+        <target>para %@</target>
         <note annotates="source">Para: name</note>
       </trans-unit>
       <trans-unit id="560" resname="%li doctor" restype="string" datatype="x-objective-c">
@@ -2985,11 +2985,11 @@
       </trans-unit>
       <trans-unit id="561" resname=" + %li doctor weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %li doctor weighed in:</source>
-        <target>+ %li doctor opinó acerca de:</target>
+        <target>+ %li doctor opinó:</target>
       </trans-unit>
       <trans-unit id="562" resname=" + %li doctors weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %li doctors weighed in:</source>
-        <target>+ %li doctores opinaron acerca de:</target>
+        <target>+ %li doctores opinaron:</target>
       </trans-unit>
     </body>
   </file>
@@ -2997,7 +2997,7 @@
     <body>
       <trans-unit id="563" resname=" + 1 doctor weighed in:" restype="string" datatype="x-objective-c">
         <source>+ 1 doctor weighed in:</source>
-        <target>+ 1 doctor opinó acerca de:</target>
+        <target>+ 1 doctor opinó:</target>
         <note annotates="source">to indicate one more doctor weighed in</note>
       </trans-unit>
     </body>
@@ -3046,7 +3046,7 @@
       </trans-unit>
       <trans-unit id="571" resname="Please provide your preferred pharmacy" restype="string" datatype="x-objective-c">
         <source>Please provide your preferred pharmacy</source>
-        <target>Por favor proporciona tu farmacia de preferencia</target>
+        <target>Por favor, proporciona tu farmacia de preferencia</target>
       </trans-unit>
     </body>
   </file>
@@ -3082,11 +3082,11 @@
     <body>
       <trans-unit id="578" resname="We had trouble charging your credit card or payment. Please update your payment information to continue." restype="string" datatype="x-objective-c">
         <source>We had trouble charging your credit card or payment. Please update your payment information to continue.</source>
-        <target>Tuvimos problemas haciendo cargos a tu tarjeta de crédito o forma de pago. Por favor actualiza tu información de pago para continuar.</target>
+        <target>Tuvimos problemas haciendo cargos a tu tarjeta de crédito o forma de pago. Por favor, actualiza tu información de pago para continuar.</target>
       </trans-unit>
       <trans-unit id="579" resname="We had trouble charging your credit card or payment. Please update your payment information so you can continue receiving care from our doctors." restype="string" datatype="x-objective-c">
         <source>We had trouble charging your credit card or payment. Please update your payment information so you can continue receiving care from our doctors.</source>
-        <target>Tuvimos problemas haciendo cargos a tu tarjeta de crédito o forma de pago. Por favor actualiza tu información de pago para que puedas continuar recibiendo atención de nuestros doctores.</target>
+        <target>Tuvimos problemas haciendo cargos a tu tarjeta de crédito o forma de pago. Por favor, actualiza tu información de pago para que puedas continuar recibiendo atención de nuestros doctores.</target>
       </trans-unit>
     </body>
   </file>
@@ -3103,7 +3103,7 @@
     <body>
       <trans-unit id="581" resname="Please provide a valid card" restype="string" datatype="x-objective-c">
         <source>Please provide a valid card</source>
-        <target>Por favor proporciona una tarjeta válida</target>
+        <target>Por favor, proporciona una tarjeta válida</target>
       </trans-unit>
     </body>
   </file>
@@ -3195,7 +3195,7 @@
     <body>
       <trans-unit id="598" resname="Please provide some more information about your doctor." restype="string" datatype="x-objective-c">
         <source>Please provide some more information about your doctor.</source>
-        <target>Por favor proporciona más información acerca de tu doctor.</target>
+        <target>Por favor, proporciona más información acerca de tu doctor.</target>
       </trans-unit>
       <trans-unit id="599" resname="Request sent to" restype="string" datatype="x-objective-c">
         <source>Request sent to</source>
@@ -3255,15 +3255,15 @@
     <body>
       <trans-unit id="609" resname="We&apos;re sorry but" restype="string" datatype="x-objective-c">
         <source>We&apos;re sorry but</source>
-        <target>Lo sentimos, pero</target>
+        <target>Perdón, pero</target>
       </trans-unit>
       <trans-unit id="610" resname="Please note," restype="string" datatype="x-objective-c">
         <source>Please note,</source>
-        <target>Por favor nota,</target>
+        <target>Por favor, nota,</target>
       </trans-unit>
       <trans-unit id="611" resname="Okay, continue" restype="string" datatype="x-objective-c">
         <source>Okay, continue</source>
-        <target>Okay, continúa</target>
+        <target>Ok, continúa</target>
       </trans-unit>
       <trans-unit id="612" resname="Find another doctor" restype="string" datatype="x-objective-c">
         <source>Find another doctor</source>
@@ -3271,7 +3271,7 @@
       </trans-unit>
       <trans-unit id="613" resname="is not licensed to consult patients in %@\n\nYou may try again while traveling to a state where Dr. %@ is licensed, or consult one of our other top doctors:\n" restype="string" datatype="x-objective-c">
         <source>is not licensed to consult patients in %@\n\nYou may try again while traveling to a state where Dr. %@ is licensed, or consult one of our other top doctors:\n</source>
-        <target>no está acreditado para consultar pacientes en %@\n\nPuedes intentar otra vez meintras viajas a un estado donde Dr. %@ esté acreditado, o consulta con otros de nuestros mejores doctores:\n</target>
+        <target>no está acreditado para consultar pacientes en %@\n\nPuedes intentar otra vez mientras viajas a un estado donde Dr. %@ esté acreditado, o consulta con otros de nuestros mejores doctores:\n</target>
       </trans-unit>
       <trans-unit id="614" resname="is not available for Virtual Consult\n\nThis may change, but in the mean time, you may consider consulting one of our other top doctors:\n" restype="string" datatype="x-objective-c">
         <source>is not available for Virtual Consult\n\nThis may change, but in the mean time, you may consider consulting one of our other top doctors:\n</source>
@@ -3295,11 +3295,11 @@
       </trans-unit>
       <trans-unit id="619" resname="We&apos;re sorry, HealthTap Concierge is not currently available in %@. However, you may still use HealthTap Concierge when traveling out of state!" restype="string" datatype="x-objective-c">
         <source>We&apos;re sorry, HealthTap Concierge is not currently available in %@. However, you may still use HealthTap Concierge when traveling out of state!</source>
-        <target>Lo sentimos, HealthTap Concierge no está disponible actualmente en %@ ¡Sin embargo, aún puedes usar HealthTap Concierge cuando viajas fuera del estado!</target>
+        <target>Perdón, HealthTap Concierge no está disponible actualmente en %@ ¡Sin embargo, aún puedes usar HealthTap Concierge cuando viajas fuera del estado!</target>
       </trans-unit>
       <trans-unit id="620" resname="We&apos;re sorry, but Dr. %@ is currently licensed to see patients only in %@" restype="string" datatype="x-objective-c">
         <source>We&apos;re sorry, but Dr. %@ is currently licensed to see patients only in %@</source>
-        <target>Lo sentimos, pero Dr. %@ actualmente solo está acreditado para ver pacientes en %@</target>
+        <target>Perdón, pero Dr. %@ actualmente solo está acreditado para ver pacientes en %@</target>
       </trans-unit>
       <trans-unit id="621" resname="Dr. %@ is only licensed to see patients in %@. You may still request to connect, however you will only be able to consult Dr. %@ when you are traveling to one of these locations." restype="string" datatype="x-objective-c">
         <source>Dr. %@ is only licensed to see patients in %@. You may still request to connect, however you will only be able to consult Dr. %@ when you are traveling to one of these locations.</source>
@@ -3327,7 +3327,7 @@
       </trans-unit>
       <trans-unit id="626" resname=" It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat." restype="string" datatype="x-objective-c">
         <source>It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat.</source>
-        <target>Parece que tu conexión de internet es demasiado pobre para iniciar una consulta de video. Por favor mejora tu conexión e intenta otra vez, o continúa con tu cita por chat de texto.</target>
+        <target>Parece que tu conexión de internet es demasiado pobre para iniciar una consulta de video. Por favor, mejora tu conexión e intenta otra vez, o continúa con tu cita por chat de texto.</target>
       </trans-unit>
     </body>
   </file>
@@ -3433,7 +3433,7 @@
     <body>
       <trans-unit id="644" resname="erM-oz-3w7.text" restype="string" datatype="x-xib">
         <source>Please don\&apos;t include a followup question in your note. To do so,</source>
-        <target>Por favor no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
+        <target>Por favor, no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so,&quot;; ObjectID = &quot;erM-oz-3w7&quot;;</note>
       </trans-unit>
     </body>
@@ -3483,12 +3483,12 @@
       </trans-unit>
       <trans-unit id="650" resname="sWh-hA-9s9.text" restype="string" datatype="x-xib">
         <source>Our doctors have answered  similar questions</source>
-        <target>Preguntas similares</target>
+        <target>Nuestros doctores han contestado  preguntas similares</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors have answered  similar questions&quot;; ObjectID = &quot;sWh-hA-9s9&quot;;</note>
       </trans-unit>
       <trans-unit id="651" resname="vLt-Hu-9yd.text" restype="string" datatype="x-xib">
         <source>Didn\&apos;t find what you are looking for?</source>
-        <target>No encontre lo que buscaba</target>
+        <target>¿No encontraste lo que estabas buscando?</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Didn&apos;t find what you are looking for?&quot;; ObjectID = &quot;vLt-Hu-9yd&quot;;</note>
       </trans-unit>
     </body>
@@ -3548,7 +3548,7 @@
       </trans-unit>
       <trans-unit id="659" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
         <source>You\&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe\&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We\&apos;re here to help!</source>
-        <target>Has hablado con un doctor X veces este mes. Recuerda, Consultas Virtuales de HealthTap no pretenden reemplazar a tu médico de atención primaria o utilizarse como sustituto para establecer una relación con un doctor en el mundo real.\n\nNos gustaría que nos contactaras a [support@healthtap.com] para hacernos saber la razón por la que necesitas continuar hablando con un doctor. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
+        <target>Has hablado con un doctor X veces este mes. Recuerda, las Consultas Virtuales de HealthTap no pretenden reemplazar a tu médico de atención primaria o utilizarse como sustituto para establecer una relación con un doctor en el mundo real.\n\nNos gustaría que nos contactaras a [support@healthtap.com] para hacernos saber la razón por la que necesitas continuar hablando con un doctor. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!&quot;; ObjectID = &quot;F8C-bC-b0r&quot;;</note>
       </trans-unit>
       <trans-unit id="660" resname="ONE-ub-R6W.text" restype="string" datatype="x-xib">
@@ -3601,7 +3601,7 @@
       </trans-unit>
       <trans-unit id="668" resname="pje-c9-jWE.text" restype="string" datatype="x-xib">
         <source>\&quot;Been there, done that\&quot; answers based on personal knowledge and experience</source>
-        <target>Respuestas como \&quot;Estuve ahí, ya lo hice&quot; basadas en conocimiento y experiencia personal</target>
+        <target>Respuestas como \&quot;Ya me tocó\&quot; basadas en conocimiento y experiencia personal</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;\&quot;Been there, done that\&quot; answers based on personal knowledge and experience&quot;; ObjectID = &quot;pje-c9-jWE&quot;;</note>
       </trans-unit>
     </body>
@@ -3634,7 +3634,7 @@
       </trans-unit>
       <trans-unit id="673" resname="bsp-Xt-0j0.text" restype="string" datatype="x-xib">
         <source>We\&apos;re dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We\&apos;ll respond to you and do our best to make you happy as soon as possible! :&#41;</source>
-        <target>Estamos dedicados a cuidar de ti. Por favor considera enviarnos comentarios en vez de bajar de categoría. ¡Te responderemos y haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
+        <target>Estamos dedicados a cuidar de ti. Por favor, considera enviarnos comentarios en vez de bajar de categoría. ¡Te responderemos y haremos lo mejor que podamos para hacerte feliz tan pronto como sea posible! :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We&apos;ll respond to you and do our best to make you happy as soon as possible! :&#41;&quot;; ObjectID = &quot;bsp-Xt-0j0&quot;;</note>
       </trans-unit>
     </body>
@@ -3643,7 +3643,7 @@
     <body>
       <trans-unit id="674" resname="btX-Gh-PJY.text" restype="string" datatype="x-xib">
         <source>We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with:</source>
-        <target>Podemos conectarnos a través de mensajería protegida, chat de video o texto, o programar una cita virtual.\n\nPuedo brindarte:</target>
+        <target>Podemos conectarnos a través de mensajería segura, chat de video o texto, o agendar una cita virtual.\n\nPuedo brindarte:</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with: &quot;; ObjectID = &quot;btX-Gh-PJY&quot;;</note>
       </trans-unit>
       <trans-unit id="675" resname="eyf-AW-JAK.normalTitle" restype="string" datatype="x-xib">
@@ -3838,7 +3838,7 @@
       </trans-unit>
       <trans-unit id="701" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
         <source>Please don\&apos;t include a followup question in your note. To do so,</source>
-        <target>Por favor no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
+        <target>Por favor, no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so,&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
       </trans-unit>
       <trans-unit id="702" resname="KaS-Fq-bjx.normalTitle" restype="string" datatype="x-xib">
@@ -3857,7 +3857,7 @@
       </trans-unit>
       <trans-unit id="704" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
         <source>Please don\&apos;t include a followup question in your note. To do so,</source>
-        <target>Por favor no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
+        <target>Por favor, no incluyas una pregunta de seguimiento en tu nota. Para hacerlo,</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so,&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
       </trans-unit>
     </body>
@@ -3899,7 +3899,7 @@
       </trans-unit>
       <trans-unit id="710" resname="t3e-iJ-qIK.text" restype="string" datatype="x-xib">
         <source>Food Packaging Health Risk \&apos;Unknown\&apos;</source>
-        <target>Riesgo del Empaquetado de Alimentos &apos;Desconocido&apos;</target>
+        <target>Riesgo del Empaquetado de Alimentos \&apos;Desconocido\&apos;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Food Packaging Health Risk &apos;Unknown&apos;&quot;; ObjectID = &quot;t3e-iJ-qIK&quot;;</note>
       </trans-unit>
     </body>
@@ -3945,7 +3945,7 @@
     <body>
       <trans-unit id="716" resname="fak-PA-FU7.text" restype="string" datatype="x-xib">
         <source>We just sent you a link to reset your password.\nIf you dont see it after a few minutes, please \ncheck your Spam folder.</source>
-        <target>Te acabamos de enviar un enlace para restablecer tu contraseña.\nSi no lo ves después de unos pocos minutos, por favor \nrevisa tu carpeta Spam.</target>
+        <target>Te acabamos de enviar un enlace para restablecer tu contraseña.\nSi no lo ves después de unos pocos minutos, por favor, \nrevisa tu carpeta de Spam.</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We just sent you a link to reset your password.\nIf you dont see it after a few minutes, please \ncheck your Spam folder.&quot;; ObjectID = &quot;fak-PA-FU7&quot;;</note>
       </trans-unit>
       <trans-unit id="717" resname="iqT-MJ-Oof.text" restype="string" datatype="x-xib">
@@ -4032,7 +4032,7 @@
       </trans-unit>
       <trans-unit id="727" resname="aro-gW-23T.text" restype="string" datatype="x-xib">
         <source>We\&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We\&apos;ll do our best to make you happy as soon as possible! :&#41;</source>
-        <target>Estamos dedicados a cuidar de ti. Por favor considera hacernos saber cómo podemos mejorar tu experiencia en vez de desactivar tu cuenta. ¡Haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
+        <target>Estamos dedicados a cuidar de ti. Por favor, considera hacernos saber cómo podemos mejorar tu experiencia en vez de desactivar tu cuenta. ¡Haremos lo mejor que podamos para hacer feliz tan pronto como sea posible! :&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We&apos;ll do our best to make you happy as soon as possible! :&#41;&quot;; ObjectID = &quot;aro-gW-23T&quot;;</note>
       </trans-unit>
     </body>
@@ -4101,7 +4101,7 @@
     <body>
       <trans-unit id="736" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
         <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento por pares que este doctor ha recibido en HealthTap, a´si como información pública relevante acerca de este experto, incluyendo:  •     De Acuerdos, votos y recomendaciones         de otros expertos \n•     Años de experiencia\n\n•     Calidad de expertos que los refieren\n\n•     Donde el experto estudió y entrenó\n\n•     Certificación&#40;es&#41; de Consejo\n\n•     Otros logros profesionales        &#40;como publicaciones con revisión por pares         y galardones&#41;  •     Gracias, votos y recomendaciones         de miembros</target>
+        <target>Cada experto médico en HealthTap tiene una DocScore. Esta es una calificación de reputación de 0 a 5 estrellas que refleja el reconocimiento por pares que este doctor ha recibido en HealthTap, así como información pública relevante acerca de este experto, incluyendo:  •     De Acuerdos, votos y recomendaciones         de otros expertos \n•     Años de experiencia\n\n•     Calidad de expertos que los refieren\n\n•     Donde el experto estudió y entrenó\n\n•     Certificación&#40;es&#41; de Consejo\n\n•     Otros logros profesionales        &#40;como publicaciones con revisión por pares         y galardones&#41;  •     Gracias, votos y recomendaciones         de miembros</target>
         <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
       </trans-unit>
     </body>

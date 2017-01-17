@@ -33348,11 +33348,11 @@
     <body>
       <trans-unit id="7015" resname="Would you like a translator to join you?" restype="string" datatype="javascript">
         <source>Would you like a translator to join you?</source>
-        <target>¿Te gustaría que un traductor se te una?</target>
+        <target state="accepted">Si quieres comunicarte en español, por favor confirma que tu médico habla español en su perfíl.</target>
       </trans-unit>
       <trans-unit id="7016" resname=" An additional ${price}" restype="string" datatype="javascript">
         <source>An additional ${price}</source>
-        <target>Un ${price} adicional</target>
+        <target state="accepted">Si no, te recomendamos que agregues un intérprete por ${price}</target>
       </trans-unit>
     </body>
   </file>
