@@ -516,7 +516,7 @@
       </trans-unit>
       <trans-unit id="134" resname="r156592917" restype="string" datatype="x-android-resource">
         <source>Prime &#40;Pay-as-you-go&#41;</source>
-        <target state="translated">Prime &#40;Paga a medida que avanzas&#41;</target>
+        <target state="translated">Prime &#40;El Plan de Pago por Uso&#41;</target>
       </trans-unit>
       <trans-unit id="135" resname="r975846192" restype="string" datatype="x-android-resource">
         <source>Prime</source>
@@ -2059,7 +2059,7 @@
       </trans-unit>
       <trans-unit id="535" resname="r829279545" restype="string" datatype="x-android-resource">
         <source>Failed to downgrade to pay-as-you-go plan!!!</source>
-        <target state="translated">¡¡¡Baja de categoría a paga a medida que avanzas!!!</target>
+        <target state="translated">¡¡¡Baja de categoría a el plan de pago por uso!!!</target>
       </trans-unit>
       <trans-unit id="536" resname="r105168299" restype="string" datatype="x-android-resource">
         <source>Subscription Canceled</source>

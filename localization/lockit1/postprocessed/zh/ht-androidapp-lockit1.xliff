@@ -629,7 +629,7 @@
       </trans-unit>
       <trans-unit id="119" resname="r156592917" restype="string" datatype="java">
         <source>Prime &#40;Pay-as-you-go&#41;</source>
-        <target>PRIME （随付随用）</target>
+        <target>Prime （预付费计划）</target>
       </trans-unit>
       <trans-unit id="120" resname="r975846192" restype="string" datatype="java">
         <source>Prime</source>
@@ -2748,7 +2748,7 @@
       </trans-unit>
       <trans-unit id="508" resname="r829279545" restype="string" datatype="java">
         <source>Failed to downgrade to pay-as-you-go plan!!!</source>
-        <target>随收随付计划降级失败！！！</target>
+        <target>预付费计划降级失败！！！</target>
       </trans-unit>
       <trans-unit id="509" resname="r105168299" restype="string" datatype="java">
         <source>Subscription Canceled</source>
@@ -4376,7 +4376,7 @@
       </trans-unit>
       <trans-unit id="824" resname="free_subscription_plan_name" restype="string" datatype="x-android-resource">
         <source>Basic &#40;Free&#41;</source>
-        <target>基本的（免费）</target>
+        <target>基础版（免费）</target>
       </trans-unit>
       <trans-unit id="825" resname="yes" restype="string" datatype="x-android-resource">
         <source>Yes</source>
@@ -5609,7 +5609,7 @@
       </trans-unit>
       <trans-unit id="1131" resname="prime_credit_balance" restype="string" datatype="x-android-resource">
         <source>Prime Credit Balance</source>
-        <target>PRIME信用卡余额</target>
+        <target>Prime信用卡余额</target>
       </trans-unit>
       <trans-unit id="1132" resname="wait_send_as_message" restype="string" datatype="x-android-resource">
         <source>Send as message</source>
@@ -5953,7 +5953,7 @@
       </trans-unit>
       <trans-unit id="1217" resname="question_disclaimer" restype="string" datatype="x-android-resource">
         <source>With our Basic service, answers are not intended for individual diagnosis, treatment, or prescription. If you think you have a medical emergency, call {emergency_extension} or go to the {emergency_abbreviation} immediately.</source>
-        <target>这是我们的基本服务，答案不用于个人诊断，治疗或处方。如果您认为有紧急医疗情况，请立即致电{emergency_extension} 或立即前往{emergency_abbreviation}。</target>
+        <target>这是我们的基础版服务，答案不用于个人诊断，治疗或处方。如果您认为有紧急医疗情况，请立即致电{emergency_extension} 或立即前往{emergency_abbreviation}。</target>
       </trans-unit>
       <trans-unit id="1218" resname="notToExpectlistString" restype="string" datatype="x-android-resource">
         <source>\u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\n\
@@ -6416,7 +6416,7 @@
       </trans-unit>
       <trans-unit id="1299" resname="payment_basic_plan_text" restype="string" datatype="x-android-resource">
         <source>Basic Plan</source>
-        <target>基本计划</target>
+        <target>基础版计划</target>
       </trans-unit>
       <trans-unit id="1300" resname="payment_pay_and_continue" restype="string" datatype="x-android-resource">
         <source>Pay and continue</source>
@@ -7440,7 +7440,7 @@
       </trans-unit>
       <trans-unit id="1555" resname="alternate_plan_text" restype="string" datatype="x-android-resource">
         <source>We have a special plan that makes it more affordable for you to stay happy and healthy. Try our new Pay-as-you-go plan!</source>
-        <target>我们有一个特殊的实惠/廉价计划帮助您保持快乐和健康。可以尝试我们新推出的随收随付计划！</target>
+        <target>我们有一个特殊的实惠/廉价计划帮助您保持快乐和健康。可以尝试我们新推出的预付费计划！</target>
       </trans-unit>
       <trans-unit id="1556" resname="alternate_plan_button_confirm_subscription" restype="string" datatype="x-android-resource">
         <source>Change plan</source>
@@ -7456,7 +7456,7 @@
       </trans-unit>
       <trans-unit id="1559" resname="change_plan_prime_title" restype="string" datatype="x-android-resource">
         <source>Prime</source>
-        <target>首要的/黄金/主要</target>
+        <target>Prime</target>
       </trans-unit>
       <trans-unit id="1560" resname="change_plan_prime_subtitle" restype="string" datatype="x-android-resource">
         <source>Unlimited doctor consults</source>
@@ -7464,7 +7464,7 @@
       </trans-unit>
       <trans-unit id="1561" resname="change_plan_payasyougo_title" restype="string" datatype="x-android-resource">
         <source>Pay-as-you-go</source>
-        <target>随收随付</target>
+        <target>预付费计划</target>
       </trans-unit>
       <trans-unit id="1562" resname="change_plan_payasyougo_subtitle" restype="string" datatype="x-android-resource">
         <source>Lower monthly fee,\npay per consult</source>
@@ -7472,7 +7472,7 @@
       </trans-unit>
       <trans-unit id="1563" resname="change_plan_basic_title" restype="string" datatype="x-android-resource">
         <source>Basic</source>
-        <target>基本的</target>
+        <target>基础版</target>
       </trans-unit>
       <trans-unit id="1564" resname="change_plan_basic_subtitle" restype="string" datatype="x-android-resource">
         <source>Brief anonymous text\nquestions</source>
@@ -7500,7 +7500,7 @@
       </trans-unit>
       <trans-unit id="1570" resname="prime_plan_updated_body_payasyougo" restype="string" datatype="x-android-resource">
         <source>Your Prime plan is now Pay-as-you-go, with a low monthly fee of ${month_price} per month and ${consult_price} per consult</source>
-        <target>您的Prime计划现在采取随收随付方式，月费便宜 {month_price}，每次咨询费用{consult_price}</target>
+        <target>您的Prime计划现在更新为预付费计划，月费便宜 {month_price}，每次咨询费用{consult_price}</target>
       </trans-unit>
       <trans-unit id="1571" resname="prime_plan_subscribed_title" restype="string" datatype="x-android-resource">
         <source>Welcome to HealthTap Prime!</source>
@@ -9124,7 +9124,7 @@
       </trans-unit>
       <trans-unit id="1973" resname="text_Prime" restype="string" datatype="x-android-resource">
         <source>Prime</source>
-        <target>首要的/黄金/主要</target>
+        <target>Prime</target>
       </trans-unit>
       <trans-unit id="1974" resname="text_Mon" restype="string" datatype="x-android-resource">
         <source>Mon</source>

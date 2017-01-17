@@ -629,7 +629,7 @@
       </trans-unit>
       <trans-unit id="119" resname="r156592917" restype="string" datatype="java">
         <source>Prime &#40;Pay-as-you-go&#41;</source>
-        <target>Prime &#40;Pagar a medida que avanzas&#41;</target>
+        <target>Prime &#40;El Plan de Pago por Uso&#41;</target>
       </trans-unit>
       <trans-unit id="120" resname="r975846192" restype="string" datatype="java">
         <source>Prime</source>
@@ -2744,7 +2744,7 @@
       </trans-unit>
       <trans-unit id="508" resname="r829279545" restype="string" datatype="java">
         <source>Failed to downgrade to pay-as-you-go plan!!!</source>
-        <target>¡¡¡Intento fallido al bajar la categoría al plan paga a medida que avanzas!!!</target>
+        <target>¡¡¡Intento fallido al bajar la categoría el plan de pago por uso!!!</target>
       </trans-unit>
       <trans-unit id="509" resname="r105168299" restype="string" datatype="java">
         <source>Subscription Canceled</source>
@@ -5950,7 +5950,7 @@
       </trans-unit>
       <trans-unit id="1217" resname="question_disclaimer" restype="string" datatype="x-android-resource">
         <source>With our Basic service, answers are not intended for individual diagnosis, treatment, or prescription. If you think you have a medical emergency, call {emergency_extension} or go to the {emergency_abbreviation} immediately.</source>
-        <target>Con nuestro servicio básico, las respuestas no están destinadas para diagnóstico, tratamiento o prescripción médica personal. Si crees que tienes una emergencia médica, llama inmediatamente a {emergency_extension} o dirígete al {emergency_abbreviation}.</target>
+        <target>Con nuestro servicio Básico, las respuestas no están destinadas para diagnóstico, tratamiento o prescripción médica personal. Si crees que tienes una emergencia médica, llama inmediatamente a {emergency_extension} o dirígete al {emergency_abbreviation}.</target>
       </trans-unit>
       <trans-unit id="1218" resname="notToExpectlistString" restype="string" datatype="x-android-resource">
         <source>\u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\n\
@@ -6414,7 +6414,7 @@
       </trans-unit>
       <trans-unit id="1299" resname="payment_basic_plan_text" restype="string" datatype="x-android-resource">
         <source>Basic Plan</source>
-        <target>Plan básico</target>
+        <target>Plan Básico</target>
       </trans-unit>
       <trans-unit id="1300" resname="payment_pay_and_continue" restype="string" datatype="x-android-resource">
         <source>Pay and continue</source>
@@ -7438,7 +7438,7 @@
       </trans-unit>
       <trans-unit id="1555" resname="alternate_plan_text" restype="string" datatype="x-android-resource">
         <source>We have a special plan that makes it more affordable for you to stay happy and healthy. Try our new Pay-as-you-go plan!</source>
-        <target>Tenemos un plan especial que lo hace más asequible para ti para que sigas feliz y saludable. ¡Prueba nuestro nuevo plan a medida que avanzas!</target>
+        <target>Tenemos un plan especial que lo hace más asequible para ti para que sigas feliz y saludable. ¡Prueba nuestro nuevo El Plan de Pago por Uso!</target>
       </trans-unit>
       <trans-unit id="1556" resname="alternate_plan_button_confirm_subscription" restype="string" datatype="x-android-resource">
         <source>Change plan</source>
@@ -7462,7 +7462,7 @@
       </trans-unit>
       <trans-unit id="1561" resname="change_plan_payasyougo_title" restype="string" datatype="x-android-resource">
         <source>Pay-as-you-go</source>
-        <target>Pagar a medida que avanzas</target>
+        <target>El Plan de Pago por Uso</target>
       </trans-unit>
       <trans-unit id="1562" resname="change_plan_payasyougo_subtitle" restype="string" datatype="x-android-resource">
         <source>Lower monthly fee,\npay per consult</source>
@@ -7498,7 +7498,7 @@
       </trans-unit>
       <trans-unit id="1570" resname="prime_plan_updated_body_payasyougo" restype="string" datatype="x-android-resource">
         <source>Your Prime plan is now Pay-as-you-go, with a low monthly fee of ${month_price} per month and ${consult_price} per consult</source>
-        <target>Tu plan Prime ahora es Paga a medida que avanzas, con una baja comisión mensual de ${month_price} al mes y ${consult_price} por consulta</target>
+        <target>Tu plan Prime ahora es El Plan de Pago por Uso, con una baja comisión mensual de ${month_price} al mes y ${consult_price} por consulta</target>
       </trans-unit>
       <trans-unit id="1571" resname="prime_plan_subscribed_title" restype="string" datatype="x-android-resource">
         <source>Welcome to HealthTap Prime!</source>
