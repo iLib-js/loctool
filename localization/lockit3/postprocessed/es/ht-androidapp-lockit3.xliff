@@ -4215,10 +4215,6 @@
         <source>United Kingdom</source>
         <target>Reino Unido</target>
       </trans-unit>
-      <trans-unit id="953" resname="countries" restype="array" datatype="x-android-resource" extype="199">
-        <source>@string/us</source>
-        <target>@string/us</target>
-      </trans-unit>
       <trans-unit id="954" resname="countries" restype="array" datatype="x-android-resource" extype="200">
         <source>Uruguay</source>
         <target>Uruguay</target>

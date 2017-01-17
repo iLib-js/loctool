@@ -10888,78 +10888,6 @@
         <source>Severely Obese</source>
         <target>Severamente Obeso</target>
       </trans-unit>
-      <trans-unit id="2412" resname="relationship" restype="array" datatype="x-android-resource" extype="0">
-        <source>@string/mother</source>
-        <target>@string/madre</target>
-      </trans-unit>
-      <trans-unit id="2413" resname="relationship" restype="array" datatype="x-android-resource" extype="1">
-        <source>@string/father</source>
-        <target>@string/padre</target>
-      </trans-unit>
-      <trans-unit id="2414" resname="relationship" restype="array" datatype="x-android-resource" extype="2">
-        <source>@string/brother</source>
-        <target>@string/hermano</target>
-      </trans-unit>
-      <trans-unit id="2415" resname="relationship" restype="array" datatype="x-android-resource" extype="3">
-        <source>@string/sister</source>
-        <target>@string/hermana</target>
-      </trans-unit>
-      <trans-unit id="2416" resname="relationship" restype="array" datatype="x-android-resource" extype="4">
-        <source>@string/son</source>
-        <target>@string/hijo</target>
-      </trans-unit>
-      <trans-unit id="2417" resname="relationship" restype="array" datatype="x-android-resource" extype="5">
-        <source>@string/daughter</source>
-        <target>@string/hija</target>
-      </trans-unit>
-      <trans-unit id="2418" resname="relationship" restype="array" datatype="x-android-resource" extype="6">
-        <source>@string/grandfather</source>
-        <target>@string/abuelo</target>
-      </trans-unit>
-      <trans-unit id="2419" resname="relationship" restype="array" datatype="x-android-resource" extype="7">
-        <source>@string/grandmother</source>
-        <target>@string/abuela</target>
-      </trans-unit>
-      <trans-unit id="2420" resname="relationship" restype="array" datatype="x-android-resource" extype="8">
-        <source>@string/friend</source>
-        <target>@string/amigo&#40;a&#41;</target>
-      </trans-unit>
-      <trans-unit id="2421" resname="relationship" restype="array" datatype="x-android-resource" extype="9">
-        <source>@string/wife</source>
-        <target>@string/esposa</target>
-      </trans-unit>
-      <trans-unit id="2422" resname="relationship" restype="array" datatype="x-android-resource" extype="10">
-        <source>@string/husband</source>
-        <target>@string/esposo</target>
-      </trans-unit>
-      <trans-unit id="2423" resname="relationship" restype="array" datatype="x-android-resource" extype="11">
-        <source>@string/boyfriend</source>
-        <target>@string/novio</target>
-      </trans-unit>
-      <trans-unit id="2424" resname="relationship" restype="array" datatype="x-android-resource" extype="12">
-        <source>@string/girlfriend</source>
-        <target>@string/novia</target>
-      </trans-unit>
-      <trans-unit id="2425" resname="relationship" restype="array" datatype="x-android-resource" extype="13">
-        <source>@string/cousin</source>
-        <target>@string/primo&#40;a&#41;</target>
-      </trans-unit>
-      <trans-unit id="2426" resname="relationship" restype="array" datatype="x-android-resource" extype="14">
-        <source>@string/aunt</source>
-        <target>@string/tía</target>
-      </trans-unit>
-      <trans-unit id="2427" resname="relationship" restype="array" datatype="x-android-resource" extype="15">
-        <source>@string/uncle</source>
-        <target>@string/tío</target>
-      </trans-unit>
-      <trans-unit id="2428" resname="relationship" restype="array" datatype="x-android-resource" extype="16">
-        <source>@string/patient</source>
-        <target>@string/paciente</target>
-      </trans-unit>
-      <trans-unit id="2429" resname="relationship" restype="array" datatype="x-android-resource" extype="17">
-        <source>@string/other</source>
-        <target>@string/otro</target>
-      </trans-unit>
       <trans-unit id="2430" resname="living_relationship_age" restype="array" datatype="x-android-resource" extype="0">
         <source>How old is your mother?</source>
         <target>¿Cuántos años tiene tu madre?</target>
@@ -13592,10 +13520,6 @@
         <source>United Kingdom</source>
         <target>Reino Unido</target>
       </trans-unit>
-      <trans-unit id="3088" resname="countries" restype="array" datatype="x-android-resource" extype="199">
-        <source>@string/us</source>
-        <target>@string/EUA</target>
-      </trans-unit>
       <trans-unit id="3089" resname="countries" restype="array" datatype="x-android-resource" extype="200">
         <source>Uruguay</source>
         <target>Uruguay</target>
@@ -14511,50 +14435,6 @@
       <trans-unit id="3317" resname="country_codes" restype="array" datatype="x-android-resource" extype="205">
         <source>263,ZW</source>
         <target>263,ZW</target>
-      </trans-unit>
-      <trans-unit id="3318" resname="days" restype="array" datatype="x-android-resource" extype="0">
-        <source>@string/Sun</source>
-        <target>@string/Dom</target>
-      </trans-unit>
-      <trans-unit id="3319" resname="days" restype="array" datatype="x-android-resource" extype="1">
-        <source>@string/Mon</source>
-        <target>@string/Lun</target>
-      </trans-unit>
-      <trans-unit id="3320" resname="days" restype="array" datatype="x-android-resource" extype="2">
-        <source>@string/Tues</source>
-        <target>@string/Mar</target>
-      </trans-unit>
-      <trans-unit id="3321" resname="days" restype="array" datatype="x-android-resource" extype="3">
-        <source>@string/Wed</source>
-        <target>@string/Mie</target>
-      </trans-unit>
-      <trans-unit id="3322" resname="days" restype="array" datatype="x-android-resource" extype="4">
-        <source>@string/Thurs</source>
-        <target>@string/Jue</target>
-      </trans-unit>
-      <trans-unit id="3323" resname="days" restype="array" datatype="x-android-resource" extype="5">
-        <source>@string/Fri</source>
-        <target>@string/Vie</target>
-      </trans-unit>
-      <trans-unit id="3324" resname="days" restype="array" datatype="x-android-resource" extype="6">
-        <source>@string/Sat</source>
-        <target>@string/Sab</target>
-      </trans-unit>
-      <trans-unit id="3325" resname="periods" restype="array" datatype="x-android-resource" extype="0">
-        <source>@string/mr</source>
-        <target>@string/sr</target>
-      </trans-unit>
-      <trans-unit id="3326" resname="periods" restype="array" datatype="x-android-resource" extype="1">
-        <source>@string/ms</source>
-        <target>@string/srta</target>
-      </trans-unit>
-      <trans-unit id="3327" resname="periods" restype="array" datatype="x-android-resource" extype="2">
-        <source>@string/mrs</source>
-        <target>@string/sra</target>
-      </trans-unit>
-      <trans-unit id="3328" resname="periods" restype="array" datatype="x-android-resource" extype="3">
-        <source>@string/dr</source>
-        <target>@string/dr</target>
       </trans-unit>
     </body>
   </file>
