@@ -11,10 +11,12 @@ var path = require('path');
 var util = require('util');
 var log4js = require("log4js");
 var Queue = require("js-stl").Queue;
+var mm = require("micromatch");
 
 var ProjectFactory = require("./lib/ProjectFactory.js");
 var TranslationSet = require("./lib/TranslationSet.js");
 var Xliff = require("./lib/Xliff.js");
+
 
 // var Git = require("simple-git");
 
@@ -216,7 +218,7 @@ function walk(dir, project) {
 		if (project) {
 			if (project.options.excludes) {
 				logger.trace("There are excludes. Relpath is " + relPath);
-				if (project.options.excludes.indexOf(relPath) !== -1) {
+				if (mm.any(relPath, project.options.excludes)) {
 					included = false;
 				}
 			}
@@ -224,7 +226,7 @@ function walk(dir, project) {
 			// override the excludes
 			if (project.options.includes) {
 				logger.trace("There are includes. Relpath is " + relPath);
-				if (project.options.includes.indexOf(relPath) !== -1) {
+				if (mm.any(relPath, project.options.includes)) {
 					included = true;
 				}
 			}

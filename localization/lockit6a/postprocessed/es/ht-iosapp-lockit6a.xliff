@@ -231,7 +231,7 @@
     <body>
       <trans-unit id="23" resname="FnY-tJ-Ru5.text" restype="string" datatype="x-xib">
         <source>Ask Docs</source>
-        <target state="accepted">Pregunta al médico</target>
+        <target state="accepted">¡Pregunta!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Ask Docs&quot;; ObjectID = &quot;FnY-tJ-Ru5&quot;;</note>
       </trans-unit>
       <trans-unit id="24" resname="Jgd-39-xxH.text" restype="string" datatype="x-xib">

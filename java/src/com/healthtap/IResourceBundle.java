@@ -630,13 +630,17 @@ public class IResourceBundle {
 		// create a hash so that the id is unique and conforms to the syntax of a Java
 		// identifier.
 		
+		// multiple whitespace chars are compressed into one, and leading and trailing 
+		// whitespace do not matter
+		String str = source.replaceAll("\\s+", " ").trim(); 
+		
 		long hash = 0;
 		// these two numbers together = 46 bits so it won't blow out the precision of an integer in javascript
 		long modulus = 1073741789L;  // largest prime number that fits in 30 bits
 		long multiple = 65521;       // largest prime that fits in 16 bits, co-prime with the modulus
 		
-		for (int i = 0; i < source.length(); i++) {
-			hash += source.charAt(i);
+		for (int i = 0; i < str.length(); i++) {
+			hash += str.charAt(i);
 			hash *= multiple;
 			hash %= modulus;
 		}

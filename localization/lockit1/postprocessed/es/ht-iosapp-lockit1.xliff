@@ -4191,7 +4191,7 @@
     <body>
       <trans-unit id="Fou-pX-c2o.text" resname="Fou-pX-c2o.text" restype="string" datatype="x-xib">
         <source>6 doctors agree</source>
-        <target>6 doctores están de acuerdo</target>
+        <target state="accepted">6 doctores aprueban</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;6 doctors agree&quot;; ObjectID = &quot;Fou-pX-c2o&quot;;</note>
       </trans-unit>
       <trans-unit id="MTI-Km-BpJ.normalTitle" resname="MTI-Km-BpJ.normalTitle" restype="string" datatype="x-xib">
@@ -4957,7 +4957,7 @@
       </trans-unit>
       <trans-unit id="X3r-vL-9Ip.normalTitle" resname="X3r-vL-9Ip.normalTitle" restype="string" datatype="x-xib">
         <source>doctors agree</source>
-        <target>doctores están de acuerdo</target>
+        <target state="accepted">doctores aprueban</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;doctors agree&quot;; ObjectID = &quot;X3r-vL-9Ip&quot;;</note>
       </trans-unit>
       <trans-unit id="Xm9-8e-tcS.normalTitle" resname="Xm9-8e-tcS.normalTitle" restype="string" datatype="x-xib">
@@ -5147,7 +5147,7 @@
       </trans-unit>
       <trans-unit id="X3r-vL-9Ip.normalTitle" resname="X3r-vL-9Ip.normalTitle" restype="string" datatype="x-xib">
         <source>doctors agree</source>
-        <target>doctores están de acuerdo</target>
+        <target state="accepted">doctores aprueban</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;doctors agree&quot;; ObjectID = &quot;X3r-vL-9Ip&quot;;</note>
       </trans-unit>
       <trans-unit id="YB0-O5-4Am.normalTitle" resname="YB0-O5-4Am.normalTitle" restype="string" datatype="x-xib">
@@ -5620,7 +5620,7 @@
       </trans-unit>
       <trans-unit id="TBH-pD-SFo.text" resname="TBH-pD-SFo.text" restype="string" datatype="x-xib">
         <source>6 doctors agree</source>
-        <target>6 doctores están de acuerdo</target>
+        <target state="accepted">6 doctores aprueban</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;6 doctors agree&quot;; ObjectID = &quot;TBH-pD-SFo&quot;;</note>
       </trans-unit>
       <trans-unit id="V7R-qj-VwE.text" resname="V7R-qj-VwE.text" restype="string" datatype="x-xib">
@@ -6213,7 +6213,7 @@
       </trans-unit>
       <trans-unit id=" agree" resname=" agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
-        <target>están de acuerdo</target>
+        <target state="accepted">aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" agrees" resname=" agrees" restype="string" datatype="x-objective-c">
@@ -6719,7 +6719,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="%d doctors agree" resname="%d doctors agree" restype="string" datatype="x-objective-c">
         <source>%d doctors agree</source>
-        <target>%d doctores están de acuerdo</target>
+        <target state="accepted">%d doctores aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%d doctors found it helpful" resname="%d doctors found it helpful" restype="string" datatype="x-objective-c">
@@ -6799,7 +6799,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="%ld doctors agree" resname="%ld doctors agree" restype="string" datatype="x-objective-c">
         <source>%ld doctors agree</source>
-        <target>%ld doctores están de acuerdo</target>
+        <target state="accepted">%ld doctores aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%ld doctors found this helpful" resname="%ld doctors found this helpful" restype="string" datatype="x-objective-c">
@@ -6929,7 +6929,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="99+ doctors agree" resname="99+ doctors agree" restype="string" datatype="x-objective-c">
         <source>99+ doctors agree</source>
-        <target>99+ doctores están de acuerdo</target>
+        <target state="accepted">99+ doctores aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="100% Satisfaction Guaranteed" resname="100% Satisfaction Guaranteed" restype="string" datatype="x-objective-c">
@@ -12550,7 +12550,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;" resname="Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;" restype="string" datatype="x-objective-c">
         <source>Would you like to invite a translator to join this consult? &#40;Additional %@&#41;</source>
-        <target>¿Te gustaría invitar a un traductor para que se una a esta consulta? &#40;%@ adicional&#41;</target>
+        <target state="accepted">Si quieres comunicarte en español, por favor confirma que tu médico habla español en su perfíl. Si no, te recomendamos que agregues un intérprete por %@</target>
         <note annotates="source">question to offser translation service with extra cost at end</note>
       </trans-unit>
       <trans-unit id="Would you like to receive helpful, personalized health tips and reminders from %@ doctors?" resname="Would you like to receive helpful, personalized health tips and reminders from %@ doctors?" restype="string" datatype="x-objective-c">
@@ -12973,7 +12973,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="agree" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
-        <target>están de acuerdo</target>
+        <target state="accepted">aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="agreed" resname="agreed" restype="string" datatype="x-objective-c">
@@ -13110,7 +13110,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="doctors agree" resname="doctors agree" restype="string" datatype="x-objective-c">
         <source>doctors agree</source>
-        <target>doctores están de acuerdo</target>
+        <target state="accepted">doctores aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="doctors agreed" resname="doctors agreed" restype="string" datatype="x-objective-c">
@@ -19553,7 +19553,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para ha
     <body>
       <trans-unit id="4rw-Wn-M5Q.normalTitle" resname="4rw-Wn-M5Q.normalTitle" restype="string" datatype="x-xib">
         <source>Doctors agree</source>
-        <target>Doctores están de acuerdo</target>
+        <target state="accepted">Doctores aprueban</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Doctors agree&quot;; ObjectID = &quot;4rw-Wn-M5Q&quot;;</note>
       </trans-unit>
       <trans-unit id="7p7-FU-VPH.normalTitle" resname="7p7-FU-VPH.normalTitle" restype="string" datatype="x-xib">
@@ -19602,7 +19602,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para ha
     <body>
       <trans-unit id="4rw-Wn-M5Q.normalTitle" resname="4rw-Wn-M5Q.normalTitle" restype="string" datatype="x-xib">
         <source>Doctors agree</source>
-        <target>Doctores están de acuerdo</target>
+        <target state="accepted">Doctores aprueban</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Doctors agree&quot;; ObjectID = &quot;4rw-Wn-M5Q&quot;;</note>
       </trans-unit>
       <trans-unit id="A3j-Hz-zNb.text" resname="A3j-Hz-zNb.text" restype="string" datatype="x-xib">

@@ -281,6 +281,26 @@ describe 'HamlLocalizer' do
       expect(create_hashed_key(clean_string("Private Health <span class=\"foo\">Profile</span>"))).to eq("r669315500");
       expect(create_hashed_key(clean_string("People <span class=\"foo < bar\">you</span> care for"))).to eq("r710774033");
     end
+
+    it 'works with escaped characters' do
+      expect(create_hashed_key("This has \"double quotes\" in it.")).to eq("r487572481");
+      expect(create_hashed_key('This has \"double quotes\" in it.')).to eq("r538041526");
+      expect(create_hashed_key("This has \'single quotes\' in it.")).to eq("r900797640");
+      expect(create_hashed_key('This has \'single quotes\' in it.')).to eq("r900797640");
+      expect(create_hashed_key("This is a double quoted string")).to eq("r494590307");
+      expect(create_hashed_key('This is a single quoted string')).to eq("r683276274");
+      expect(create_hashed_key("This is a double quoted string with \"quotes\" in it.")).to eq("r246354917");
+      expect(create_hashed_key('This is a single quoted string with \'quotes\' in it.')).to eq("r248819747");
+      expect(create_hashed_key("This is a double quoted string with \n return chars in it")).to eq("r1050725297");
+      expect(create_hashed_key('This is a single quoted string with \n return chars in it')).to eq("r729667629");
+      expect(create_hashed_key("This is a double quoted string with \t tab chars in it")).to eq("r785725858");
+      expect(create_hashed_key('This is a single quoted string with \t tab chars in it')).to eq("r637301221");
+      expect(create_hashed_key("This is a double quoted string with \d \g \h \i \j \k \l \m \o \p \q \w \y \z other escape chars in it")).to eq("r529567158");
+      expect(create_hashed_key('This is a single quoted string with \d \g \h \i \j \k \l \m \o \p \q \w \y \z other escape chars in it')).to eq("r955027934");
+      expect(create_hashed_key("This is a double quoted string with \u00A0 \x23 hex escape chars in it")).to eq("r347049046");
+      expect(create_hashed_key('This is a single quoted string with \u00A0 \x23 hex escape chars in it')).to eq("r1000517606");
+    end
+    
   end
 
   describe 'pseudolocalize' do
@@ -289,9 +309,16 @@ describe 'HamlLocalizer' do
     end
   end
 
-  it 'should leave alone Rb.t params alone' do
+  it 'should leave Rb.t params alone (double quotes)' do
     orig = "            .points_wrap{:title=>Rb.t(\"A doctor's DocScore is a measure of their knowledge, trust, compassion and engagement.\"), :style=>\"width : 80px\"}"
     from_to = {"DocScore" => 'FOO'}
+    ret = replace_with_translations2(orig, from_to)
+    ret.include?('FOO').should be_false
+  end
+
+  it 'should leave Rb.t params alone (single quotes)' do
+    orig = "      %textarea.form_comment.question-input{:placeholder => Rb.t('Share a detailed description of your symptoms, concerns, and how you\'d like the doctor to help you. Attach images and files as necessary.')}"
+    from_to = {"Attach" => 'FOO'}
     ret = replace_with_translations2(orig, from_to)
     ret.include?('FOO').should be_false
   end

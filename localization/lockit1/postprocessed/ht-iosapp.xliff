@@ -4191,7 +4191,7 @@
     <body>
       <trans-unit id="Fou-pX-c2o.text" resname="Fou-pX-c2o.text" restype="string" datatype="x-xib">
         <source>6 doctors agree</source>
-        <target>6 doctores están de acuerdo</target>
+        <target state="accepted">6 doctores aprueban</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;6 doctors agree&quot;; ObjectID = &quot;Fou-pX-c2o&quot;;</note>
       </trans-unit>
       <trans-unit id="MTI-Km-BpJ.normalTitle" resname="MTI-Km-BpJ.normalTitle" restype="string" datatype="x-xib">
@@ -4957,7 +4957,7 @@
       </trans-unit>
       <trans-unit id="X3r-vL-9Ip.normalTitle" resname="X3r-vL-9Ip.normalTitle" restype="string" datatype="x-xib">
         <source>doctors agree</source>
-        <target>doctores están de acuerdo</target>
+        <target state="accepted">doctores aprueban</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;doctors agree&quot;; ObjectID = &quot;X3r-vL-9Ip&quot;;</note>
       </trans-unit>
       <trans-unit id="Xm9-8e-tcS.normalTitle" resname="Xm9-8e-tcS.normalTitle" restype="string" datatype="x-xib">
@@ -5147,7 +5147,7 @@
       </trans-unit>
       <trans-unit id="X3r-vL-9Ip.normalTitle" resname="X3r-vL-9Ip.normalTitle" restype="string" datatype="x-xib">
         <source>doctors agree</source>
-        <target>doctores están de acuerdo</target>
+        <target state="accepted">doctores aprueban</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;doctors agree&quot;; ObjectID = &quot;X3r-vL-9Ip&quot;;</note>
       </trans-unit>
       <trans-unit id="YB0-O5-4Am.normalTitle" resname="YB0-O5-4Am.normalTitle" restype="string" datatype="x-xib">
@@ -5620,7 +5620,7 @@
       </trans-unit>
       <trans-unit id="TBH-pD-SFo.text" resname="TBH-pD-SFo.text" restype="string" datatype="x-xib">
         <source>6 doctors agree</source>
-        <target>6 doctores están de acuerdo</target>
+        <target state="accepted">6 doctores aprueban</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;6 doctors agree&quot;; ObjectID = &quot;TBH-pD-SFo&quot;;</note>
       </trans-unit>
       <trans-unit id="V7R-qj-VwE.text" resname="V7R-qj-VwE.text" restype="string" datatype="x-xib">
@@ -6213,7 +6213,7 @@
       </trans-unit>
       <trans-unit id=" agree" resname=" agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
-        <target>están de acuerdo</target>
+        <target state="accepted">aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" agrees" resname=" agrees" restype="string" datatype="x-objective-c">
@@ -6719,7 +6719,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="%d doctors agree" resname="%d doctors agree" restype="string" datatype="x-objective-c">
         <source>%d doctors agree</source>
-        <target>%d doctores están de acuerdo</target>
+        <target state="accepted">%d doctores aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%d doctors found it helpful" resname="%d doctors found it helpful" restype="string" datatype="x-objective-c">
@@ -6799,7 +6799,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="%ld doctors agree" resname="%ld doctors agree" restype="string" datatype="x-objective-c">
         <source>%ld doctors agree</source>
-        <target>%ld doctores están de acuerdo</target>
+        <target state="accepted">%ld doctores aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%ld doctors found this helpful" resname="%ld doctors found this helpful" restype="string" datatype="x-objective-c">
@@ -6929,7 +6929,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="99+ doctors agree" resname="99+ doctors agree" restype="string" datatype="x-objective-c">
         <source>99+ doctors agree</source>
-        <target>99+ doctores están de acuerdo</target>
+        <target state="accepted">99+ doctores aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="100% Satisfaction Guaranteed" resname="100% Satisfaction Guaranteed" restype="string" datatype="x-objective-c">
@@ -12963,7 +12963,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="agree" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
-        <target>están de acuerdo</target>
+        <target state="accepted">aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="agreed" resname="agreed" restype="string" datatype="x-objective-c">
@@ -13100,7 +13100,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
       </trans-unit>
       <trans-unit id="doctors agree" resname="doctors agree" restype="string" datatype="x-objective-c">
         <source>doctors agree</source>
-        <target>doctores están de acuerdo</target>
+        <target state="accepted">doctores aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="doctors agreed" resname="doctors agreed" restype="string" datatype="x-objective-c">
@@ -19543,7 +19543,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
     <body>
       <trans-unit id="4rw-Wn-M5Q.normalTitle" resname="4rw-Wn-M5Q.normalTitle" restype="string" datatype="x-xib">
         <source>Doctors agree</source>
-        <target>Doctores están de acuerdo</target>
+        <target state="accepted">Doctores aprueban</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Doctors agree&quot;; ObjectID = &quot;4rw-Wn-M5Q&quot;;</note>
       </trans-unit>
       <trans-unit id="7p7-FU-VPH.normalTitle" resname="7p7-FU-VPH.normalTitle" restype="string" datatype="x-xib">
@@ -19592,7 +19592,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para pe
     <body>
       <trans-unit id="4rw-Wn-M5Q.normalTitle" resname="4rw-Wn-M5Q.normalTitle" restype="string" datatype="x-xib">
         <source>Doctors agree</source>
-        <target>Doctores están de acuerdo</target>
+        <target state="accepted">Doctores aprueban</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Doctors agree&quot;; ObjectID = &quot;4rw-Wn-M5Q&quot;;</note>
       </trans-unit>
       <trans-unit id="A3j-Hz-zNb.text" resname="A3j-Hz-zNb.text" restype="string" datatype="x-xib">
@@ -24019,7 +24019,7 @@ and more</source>
       </trans-unit>
       <trans-unit id="zX1-Qr-ylZ.text" resname="zX1-Qr-ylZ.text" restype="string" datatype="x-xib">
         <source>Your invite has been sent. Start your membership now so we can credit your account when they join.</source>
-        <target>立刻开启会员，他们加入时我们会将他们加入您的账户。</target>
+        <target>立即开启会员，他们加入时我们会将他们加入您的账户。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Your invite has been sent. Start your membership now so we can credit your account when they join.&quot;; ObjectID = &quot;zX1-Qr-ylZ&quot;;</note>
       </trans-unit>
     </body>
@@ -25912,7 +25912,7 @@ and more</source>
     <body>
       <trans-unit id="0Es-QU-ucF.text" resname="0Es-QU-ucF.text" restype="string" datatype="x-xib">
         <source>Following</source>
-        <target>以下</target>
+        <target>关注</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Following&quot;; ObjectID = &quot;0Es-QU-ucF&quot;;</note>
       </trans-unit>
       <trans-unit id="Nxc-Vd-WRw.text" resname="Nxc-Vd-WRw.text" restype="string" datatype="x-xib">
@@ -26699,7 +26699,7 @@ and more</source>
       </trans-unit>
       <trans-unit id="X4Q-Mx-Ww6.text" resname="X4Q-Mx-Ww6.text" restype="string" datatype="x-xib">
         <source>When was your last menstrual period?</source>
-        <target>您上一次经期是什么时候？</target>
+        <target>您的末次月经是什么时候？</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;When was your last menstrual period?&quot;; ObjectID = &quot;X4Q-Mx-Ww6&quot;;</note>
       </trans-unit>
     </body>
@@ -27011,7 +27011,7 @@ and more</source>
     <body>
       <trans-unit id="Kjz-eC-iNL.text" resname="Kjz-eC-iNL.text" restype="string" datatype="x-xib">
         <source>Where would you prefer to collect your prescriptions?</source>
-        <target>您更想在哪里取您的处方药？</target>
+        <target>您希望在哪里取处方药？</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Where would you prefer to collect your prescriptions?&quot;; ObjectID = &quot;Kjz-eC-iNL&quot;;</note>
       </trans-unit>
     </body>
@@ -27025,7 +27025,7 @@ and more</source>
       </trans-unit>
       <trans-unit id="tO2-Lr-JpK.text" resname="tO2-Lr-JpK.text" restype="string" datatype="x-xib">
         <source>Where would you prefer to collect your prescriptions?</source>
-        <target>您更想在哪里取您的处方药？</target>
+        <target>您希望在哪里取处方药？</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Where would you prefer to collect your prescriptions?&quot;; ObjectID = &quot;tO2-Lr-JpK&quot;;</note>
       </trans-unit>
     </body>
@@ -27390,7 +27390,7 @@ and more</source>
       </trans-unit>
       <trans-unit id=" It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat." resname=" It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat." restype="string" datatype="x-objective-c">
         <source>It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat.</source>
-        <target>您的网络连接不良，无法启动视频咨询。请改善您的连接，然后重试，或通过文本聊天继续您的预约。</target>
+        <target>您的网络连接不佳，无法启动视频咨询。请改善您的连接，然后重试，或通过文本聊天继续您的预约。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" Video or text chat securely with \n top doctors right away \n" resname=" Video or text chat securely with \n top doctors right away \n" restype="string" datatype="x-objective-c">
@@ -27446,7 +27446,7 @@ and more</source>
       </trans-unit>
       <trans-unit id=" doctor responded" resname=" doctor responded" restype="string" datatype="x-objective-c">
         <source>doctor responded</source>
-        <target>医生回答</target>
+        <target>医生已回复</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" doctors recommend" resname=" doctors recommend" restype="string" datatype="x-objective-c">
@@ -27461,7 +27461,7 @@ and more</source>
       </trans-unit>
       <trans-unit id=" expertise" resname=" expertise" restype="string" datatype="x-objective-c">
         <source>expertise</source>
-        <target>专家意见</target>
+        <target>专业知识</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" for %@" resname=" for %@" restype="string" datatype="x-objective-c">
@@ -27990,7 +27990,7 @@ How can our doctors help you?</source>
       </trans-unit>
       <trans-unit id="%ld doctor responded" resname="%ld doctor responded" restype="string" datatype="x-objective-c">
         <source>%ld doctor responded</source>
-        <target>%ld医生回答</target>
+        <target>%ld医生已回复</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%ld doctors" resname="%ld doctors" restype="string" datatype="x-objective-c">
@@ -28443,7 +28443,7 @@ available in %@</source>
       </trans-unit>
       <trans-unit id="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately." resname="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately." restype="string" datatype="x-objective-c">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately.</source>
-        <target state="accepted">HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立刻打电话给%@或当地应急服务人员。</target>
+        <target state="accepted">HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立即打电话给%@或当地应急服务人员。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Any primary care doctor" resname="Any primary care doctor" restype="string" datatype="x-objective-c">
@@ -29035,7 +29035,7 @@ schedule a video chat</source>
     · Consults in languages other than English
 
                            · Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
-        <target>使用在线咨询的常见原因：                                                                                       腹痛                                                                                                                急性支气管炎                                                                                                   急性结膜炎                                                                                                       急性膀胱炎                                                                                                      何时不应使用在线咨询 如果您认为您需要紧急治疗，一定要立刻打电话给%1$@或当地应急服务人员。比如，若您有任何一下症状，请立刻去一家%2$@
+        <target>使用在线咨询的常见原因：                                                                                       腹痛                                                                                                                急性支气管炎                                                                                                   急性结膜炎                                                                                                       急性膀胱炎                                                                                                      何时不应使用在线咨询 如果您认为您需要紧急治疗，一定要立即打电话给%1$@或当地应急服务人员。比如，若您有任何一下症状，请立即去一家%2$@
 
 
     胸痛或胸闷
@@ -29320,9 +29320,9 @@ schedule a video chat</source>
 
    何时不应使用在线咨询
 
-如果您认为您需要紧急治疗，一定要立刻打电话给%1$@或当地应急服务人员。
+如果您认为您需要紧急治疗，一定要立即打电话给%1$@或当地应急服务人员。
 
-比如，若您有任何一下症状，请立刻去一家%2$@
+比如，若您有任何一下症状，请立即去一家%2$@
 
 
     胸痛或胸闷
@@ -29525,7 +29525,7 @@ convenience</source>
       </trans-unit>
       <trans-unit id="Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or %@ if you think you may have a medical emergency." resname="Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or %@ if you think you may have a medical emergency." restype="string" datatype="x-objective-c">
         <source>Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or %@ if you think you may have a medical emergency.</source>
-        <target>HealthTap上的内容（包括回答、新闻和建议）都不应被用作医疗建议、诊断和治疗方法。不要因为HealthTap上的任何事情而忽视或延迟寻求专业的医疗建议。如果您认为您需要紧急治疗，请立刻打电话给您的医生或%@。</target>
+        <target>HealthTap上的内容（包括回答、新闻和建议）都不应被用作医疗建议、诊断和治疗方法。不要因为HealthTap上的任何事情而忽视或延迟寻求专业的医疗建议。如果您认为您需要紧急治疗，请立即打电话给您的医生或%@。</target>
         <note annotates="source">Para: phone number</note>
       </trans-unit>
       <trans-unit id="Continue" resname="Continue" restype="string" datatype="x-objective-c">
@@ -30141,7 +30141,7 @@ subscription</source>
       </trans-unit>
       <trans-unit id="Find a topic &#40;e.g.: Lose weight&#41;   " resname="Find a topic &#40;e.g.: Lose weight&#41;   " restype="string" datatype="x-objective-c">
         <source>Find a topic &#40;e.g.: Lose weight&#41;</source>
-        <target>找一个话题（例如：减肥）</target>
+        <target>查找话题（例如：减肥）</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Find app by name or topic                     " resname="Find app by name or topic                     " restype="string" datatype="x-objective-c">
@@ -30194,7 +30194,7 @@ I&apos;d like to accomplish my goal of...</source>
       </trans-unit>
       <trans-unit id="Following" resname="Following" restype="string" datatype="x-objective-c">
         <source>Following</source>
-        <target>以下</target>
+        <target>关注</target>
         <note annotates="source">following button label
    Label to indicate that user is already following a topic
    label to indticate user is already following a given topic</note>
@@ -30226,7 +30226,7 @@ I&apos;d like to accomplish my goal of...</source>
       </trans-unit>
       <trans-unit id="For medical emergencies, call %@ &#40;or your local emergency services&#41; or go to the nearest %@." resname="For medical emergencies, call %@ &#40;or your local emergency services&#41; or go to the nearest %@." restype="string" datatype="x-objective-c">
         <source>For medical emergencies, call %1$@ &#40;or your local emergency services&#41; or go to the nearest %2$@.</source>
-        <target>如遇到医疗紧急情况，请立刻打给1$@（或当地应急服务人员）或前往最近的%2$@。</target>
+        <target>如遇到医疗紧急情况，请立即打给1$@（或当地应急服务人员）或前往最近的%2$@。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Forgot password?" resname="Forgot password?" restype="string" datatype="x-objective-c">
@@ -30319,7 +30319,7 @@ take action and feel good</source>
       </trans-unit>
       <trans-unit id="Get answers from your doctor or specialist" resname="Get answers from your doctor or specialist" restype="string" datatype="x-objective-c">
         <source>Get answers from your doctor or specialist</source>
-        <target>获取您的医生或专家的解答</target>
+        <target>获取您的医生或专家的回答</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Get answers to your health questions %@" resname="Get answers to your health questions %@" restype="string" datatype="x-objective-c">
@@ -30918,7 +30918,7 @@ Would you like to connect?</source>
       </trans-unit>
       <trans-unit id="If you think you have a medical emergency, call %@ or go to the %@ immediately." resname="If you think you have a medical emergency, call %@ or go to the %@ immediately." restype="string" datatype="x-objective-c">
         <source>If you think you have a medical emergency, call %1$@ or go to the %2$@ immediately.</source>
-        <target>如果您认为您需要紧急治疗，请立刻打电话给%1$@或前往%2$@</target>
+        <target>如果您认为您需要紧急治疗，请立即打电话给%1$@或前往%2$@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="If your question wasn&apos;t already\nanswered, we&apos;ll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" resname="If your question wasn&apos;t already\nanswered, we&apos;ll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" restype="string" datatype="x-objective-c">
@@ -30926,7 +30926,7 @@ Would you like to connect?</source>
 answered, we&apos;ll send it to our
 network of top U.S. doctors across
 130+ specialties</source>
-        <target>如果您的问题未获得解答，我们将会把问题发送至我们由涵盖超过130个专科的优秀美国医生组成的网络</target>
+        <target>如果您的问题未获得回答，我们将会把问题发送至我们由涵盖超过130个专科的优秀美国医生组成的网络</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Ignore" resname="Ignore" restype="string" datatype="x-objective-c">
@@ -31198,7 +31198,7 @@ only a tap away</source>
       </trans-unit>
       <trans-unit id="Learn about HealthTap" resname="Learn about HealthTap" restype="string" datatype="x-objective-c">
         <source>Learn about HealthTap</source>
-        <target>了解更多的医疗问答</target>
+        <target>了解HealthTap</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Learn more" resname="Learn more" restype="string" datatype="x-objective-c">
@@ -31343,7 +31343,7 @@ only a tap away</source>
       </trans-unit>
       <trans-unit id="Medical devices used in " resname="Medical devices used in " restype="string" datatype="x-objective-c">
         <source>Medical devices used in</source>
-        <target>在用医疗设备</target>
+        <target>医疗设备用于</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Medical devices used to treat " resname="Medical devices used to treat " restype="string" datatype="x-objective-c">
@@ -32537,17 +32537,17 @@ from the HealthTap app</source>
       </trans-unit>
       <trans-unit id="Search answers, topics, experts" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>搜索回答，话题，专家</target>
+        <target>搜索回答、话题、专家</target>
         <note annotates="source">place holder in search box</note>
       </trans-unit>
       <trans-unit id="Search answers, topics, experts  " resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>搜索回答，话题，专家</target>
+        <target>搜索回答、话题、专家</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
       <trans-unit id="Search answers, topics, experts     " resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>搜索回答，话题，专家</target>
+        <target>搜索回答、话题、专家</target>
         <note annotates="source">search box placeholder</note>
       </trans-unit>
       <trans-unit id="Search by specialty" resname="Search by specialty" restype="string" datatype="x-objective-c">
@@ -32899,7 +32899,7 @@ and get advice and treatment</source>
       </trans-unit>
       <trans-unit id="Some thing good here ... " resname="Some thing good here ... " restype="string" datatype="x-objective-c">
         <source>Some thing good here ...</source>
-        <target>这里有一些美好的东西…</target>
+        <target>这里有一些好东西……</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Someone else" resname="Someone else" restype="string" datatype="x-objective-c">
@@ -33391,7 +33391,7 @@ Alternatively, you may send your question for one or more answers from our %@ to
       </trans-unit>
       <trans-unit id="There is no account with this email." resname="There is no account with this email." restype="string" datatype="x-objective-c">
         <source>There is no account with this email.</source>
-        <target>没有这个电子邮件帐户。</target>
+        <target>不存在和此邮箱关联的账户。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="There was a problem retrieving your information" resname="There was a problem retrieving your information" restype="string" datatype="x-objective-c">
@@ -33536,7 +33536,7 @@ please provide your current location</source>
       </trans-unit>
       <trans-unit id="Topics" resname="Topics" restype="string" datatype="x-objective-c">
         <source>Topics</source>
-        <target>专题</target>
+        <target>话题</target>
         <note annotates="source">Menu row title
    Title for page</note>
       </trans-unit>
@@ -33872,7 +33872,7 @@ you stay healthy</source>
       </trans-unit>
       <trans-unit id="Want to see a doctor on HealthTap immediately?" resname="Want to see a doctor on HealthTap immediately?" restype="string" datatype="x-objective-c">
         <source>Want to see a doctor on HealthTap immediately?</source>
-        <target>想要立刻在HealthTap上会见医生</target>
+        <target>想要立即在HealthTap上会见医生</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="We appreciate you bringing this to our attention." resname="We appreciate you bringing this to our attention." restype="string" datatype="x-objective-c">
@@ -33920,7 +33920,7 @@ you stay healthy</source>
 of our doctors to help you
 &#40;you won&apos;t be charged until the
 doctor picks up&#41;</source>
-        <target>我们会立刻开始联系我们中的一位医生来帮助您（医生接起电话前您不需要付费）</target>
+        <target>我们会立即开始联系我们中的一位医生来帮助您（医生接起电话前您不需要付费）</target>
         <note annotates="source">Tutorial step 2</note>
       </trans-unit>
       <trans-unit id="We&apos;ll let you know when doctors add more answers or comments." resname="We&apos;ll let you know when doctors add more answers or comments." restype="string" datatype="x-objective-c">
@@ -34112,7 +34112,7 @@ doctor picks up&#41;</source>
         <source>When not to use Virtual Consults
 Any medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:</source>
         <target>何时不应使用在线咨询
-任何医疗问题是危及生命的。比如，若您有任何一下症状，请立刻去一家%2$@</target>
+任何医疗问题是危及生命的。比如，若您有任何一下症状，请立即去一家%2$@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="When was %@ born?" resname="When was %@ born?" restype="string" datatype="x-objective-c">
@@ -34122,7 +34122,7 @@ Any medical problem that is life threatening. For example, if you experience any
       </trans-unit>
       <trans-unit id="When was %@&apos;s last menstrual period? " resname="When was %@&apos;s last menstrual period? " restype="string" datatype="x-objective-c">
         <source>When was %@&apos;s last menstrual period?</source>
-        <target>%@上一次经期是什么时候？</target>
+        <target>%@的末次月经是什么时候？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="When was the last time? &#40;year&#41;" resname="When was the last time? &#40;year&#41;" restype="string" datatype="x-objective-c">
@@ -34132,7 +34132,7 @@ Any medical problem that is life threatening. For example, if you experience any
       </trans-unit>
       <trans-unit id="When was your last menstrual period?" resname="When was your last menstrual period?" restype="string" datatype="x-objective-c">
         <source>When was your last menstrual period?</source>
-        <target>您上一次经期是什么时候？</target>
+        <target>您的末次月经是什么时候？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="When were they born?" resname="When were they born?" restype="string" datatype="x-objective-c">
@@ -34184,7 +34184,7 @@ on your Apple Watch or iPhone</source>
       </trans-unit>
       <trans-unit id="Where would you prefer to collect your prescriptions?" resname="Where would you prefer to collect your prescriptions?" restype="string" datatype="x-objective-c">
         <source>Where would you prefer to collect your prescriptions?</source>
-        <target>您更想在哪里取您的处方药？</target>
+        <target>您希望在哪里取处方药？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Which vaccinations have %@ had?" resname="Which vaccinations have %@ had?" restype="string" datatype="x-objective-c">
@@ -34391,7 +34391,7 @@ on your Apple Watch or iPhone</source>
       </trans-unit>
       <trans-unit id="You just left in the middle of a live consult. If you didn’t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect." resname="You just left in the middle of a live consult. If you didn’t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect." restype="string" datatype="x-objective-c">
         <source>You just left in the middle of a live consult. If you didn’t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source>
-        <target>您刚刚在一个咨询中离开。若您没有告知医生您会马上回来，请立刻告知，这样医生会知道是否应该等待。</target>
+        <target>您刚刚在一个咨询中离开。若您没有告知医生您会马上回来，请立即告知，这样医生会知道是否应该等待。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="You may also want to follow up with these specialists:" resname="You may also want to follow up with these specialists:" restype="string" datatype="x-objective-c">
@@ -35415,7 +35415,7 @@ with an available primary care doctor</source>
       </trans-unit>
       <trans-unit id="eWc-q5-mrH.placeholder" resname="eWc-q5-mrH.placeholder" restype="string" datatype="x-xib">
         <source>Find a goal &#40;e.g: Lose weight&#41;</source>
-        <target>查找一个目标（例如：减肥）</target>
+        <target>查找目标（例如：减肥）</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find a goal &#40;e.g: Lose weight&#41;&quot;; ObjectID = &quot;eWc-q5-mrH&quot;;</note>
       </trans-unit>
       <trans-unit id="mDa-KG-H6O.text" resname="mDa-KG-H6O.text" restype="string" datatype="x-xib">
@@ -35439,7 +35439,7 @@ with an available primary care doctor</source>
       </trans-unit>
       <trans-unit id="Wdk-yd-mkO.placeholder" resname="Wdk-yd-mkO.placeholder" restype="string" datatype="x-xib">
         <source>Find a goal &#40;e.g: Lose weight&#41;</source>
-        <target>查找一个目标（例如：减肥）</target>
+        <target>查找目标（例如：减肥）</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find a goal &#40;e.g: Lose weight&#41;                                              &quot;; ObjectID = &quot;Wdk-yd-mkO&quot;;</note>
       </trans-unit>
     </body>
@@ -36383,7 +36383,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="C6i-NA-zPf.placeholder" resname="C6i-NA-zPf.placeholder" restype="string" datatype="x-xib">
         <source>Find a goal &#40;e.g: Lose weight&#41;</source>
-        <target>查找一个目标（例如：减肥）</target>
+        <target>查找目标（例如：减肥）</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Find a goal &#40;e.g: Lose weight&#41;&quot;; ObjectID = &quot;C6i-NA-zPf&quot;;</note>
       </trans-unit>
       <trans-unit id="kxo-5P-Ohu.text" resname="kxo-5P-Ohu.text" restype="string" datatype="x-xib">
@@ -37454,7 +37454,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="hXK-h9-m3r.placeholder" resname="hXK-h9-m3r.placeholder" restype="string" datatype="x-xib">
         <source>Find a goal &#40;e.g: Lose weight&#41;</source>
-        <target>查找一个目标（例如：减肥）</target>
+        <target>查找目标（例如：减肥）</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find a goal &#40;e.g: Lose weight&#41;&quot;; ObjectID = &quot;hXK-h9-m3r&quot;;</note>
       </trans-unit>
     </body>
@@ -37463,7 +37463,7 @@ and let the world know :&#41;</source>
     <body>
       <trans-unit id="S2c-WI-KEa.placeholder" resname="S2c-WI-KEa.placeholder" restype="string" datatype="x-xib">
         <source>Find a goal &#40;e.g: Lose weight&#41;</source>
-        <target>查找一个目标&#40;e.g: 减肥）</target>
+        <target>查找目标&#40;e.g: 减肥）</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find a goal &#40;e.g: Lose weight&#41;                                              &quot;; ObjectID = &quot;S2c-WI-KEa&quot;;</note>
       </trans-unit>
       <trans-unit id="phL-FD-hmB.normalTitle" resname="phL-FD-hmB.normalTitle" restype="string" datatype="x-xib">
@@ -37845,7 +37845,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="OR5-Qj-oUw.text" resname="OR5-Qj-oUw.text" restype="string" datatype="x-xib">
         <source>But don&apos;t worry, we have lots of other doctor checklists for you</source>
-        <target>但是不用担心，我们为您提供许多其他的医生的检查清单</target>
+        <target>别担心，我们还有很多其他医生的清单可供您参考</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;But don&apos;t worry, we have lots of other doctor checklists for you&quot;; ObjectID = &quot;OR5-Qj-oUw&quot;;</note>
       </trans-unit>
       <trans-unit id="OUx-gH-PiI.normalTitle" resname="OUx-gH-PiI.normalTitle" restype="string" datatype="x-xib">
@@ -37930,7 +37930,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="oQj-RC-pXP.text" resname="oQj-RC-pXP.text" restype="string" datatype="x-xib">
         <source>Following</source>
-        <target>以下</target>
+        <target>关注</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Following&quot;; ObjectID = &quot;oQj-RC-pXP&quot;;</note>
       </trans-unit>
       <trans-unit id="pq3-hc-t6G.text" resname="pq3-hc-t6G.text" restype="string" datatype="x-xib">
@@ -38190,7 +38190,7 @@ I can provide you with:</source>
       </trans-unit>
       <trans-unit id="onT-Ex-eP5.text" resname="onT-Ex-eP5.text" restype="string" datatype="x-xib">
         <source>Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.</source>
-        <target>HealthTap上的内容（包括回答、新闻和建议）都不应被用作医疗建议、诊断和治疗方法。不要因为HealthTap上的任何事情而忽视或延迟寻求专业的医疗建议。如果您认为您需要紧急治疗，请立刻打电话给您的医生或拨打911（美国地区）</target>
+        <target>HealthTap上的内容（包括回答、新闻和建议）都不应被用作医疗建议、诊断和治疗方法。不要因为HealthTap上的任何事情而忽视或延迟寻求专业的医疗建议。如果您认为您需要紧急治疗，请立即打电话给您的医生或拨打911（美国地区）</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.&quot;; ObjectID = &quot;onT-Ex-eP5&quot;;</note>
       </trans-unit>
       <trans-unit id="pgS-Np-EWD.text" resname="pgS-Np-EWD.text" restype="string" datatype="x-xib">
@@ -38307,7 +38307,7 @@ I can provide you with:</source>
       </trans-unit>
       <trans-unit id="Kp7-G2-BcW.text" resname="Kp7-G2-BcW.text" restype="string" datatype="x-xib">
         <source>Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.</source>
-        <target>HealthTap上的内容（包括回答、新闻和建议）都不应被用作医疗建议、诊断和治疗方法。不要因为HealthTap上的任何事情而忽视或延迟寻求专业的医疗建议。如果您认为您需要紧急治疗，请立刻打电话给您的医生或拨打911（美国地区）</target>
+        <target>HealthTap上的内容（包括回答、新闻和建议）都不应被用作医疗建议、诊断和治疗方法。不要因为HealthTap上的任何事情而忽视或延迟寻求专业的医疗建议。如果您认为您需要紧急治疗，请立即打电话给您的医生或拨打911（美国地区）</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.&quot;; ObjectID = &quot;Kp7-G2-BcW&quot;;</note>
       </trans-unit>
       <trans-unit id="LRO-do-Ejs.normalTitle" resname="LRO-do-Ejs.normalTitle" restype="string" datatype="x-xib">
@@ -39710,7 +39710,7 @@ pay per consult</source>
       </trans-unit>
       <trans-unit id="5ex-Gs-iwJ.text" resname="5ex-Gs-iwJ.text" restype="string" datatype="x-xib">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call 911 or your local emergency service immediately.</source>
-        <target>HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立刻打电话给%@或当地应急服务人员。如果您认为您需要紧急治疗，请立刻拨打911或打给当地应急服务人员。</target>
+        <target>HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立即打电话给%@或当地应急服务人员。如果您认为您需要紧急治疗，请立即拨打911或打给当地应急服务人员。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call 911 or your local emergency service immediately.&quot;; ObjectID = &quot;5ex-Gs-iwJ&quot;;</note>
       </trans-unit>
       <trans-unit id="6T5-jA-3oS.normalTitle" resname="6T5-jA-3oS.normalTitle" restype="string" datatype="x-xib">
@@ -39835,7 +39835,7 @@ pay per consult</source>
       </trans-unit>
       <trans-unit id="WeL-BP-aJb.text" resname="WeL-BP-aJb.text" restype="string" datatype="x-xib">
         <source>We&apos;ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.</source>
-        <target>若您向我们喜爱的慈善机构提供慈善捐款，我们将很乐意加速让您的问题获得回答。</target>
+        <target>若您能向我们最关注的慈善机构捐出善款，我们将很乐意更快递回答您的问题。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.&quot;; ObjectID = &quot;WeL-BP-aJb&quot;;</note>
       </trans-unit>
       <trans-unit id="WvF-OW-wpB.text" resname="WvF-OW-wpB.text" restype="string" datatype="x-xib">
@@ -39984,7 +39984,7 @@ pay per consult</source>
       </trans-unit>
       <trans-unit id="5ex-Gs-iwJ.text" resname="5ex-Gs-iwJ.text" restype="string" datatype="x-xib">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call 911 or your local emergency service immediately.</source>
-        <target>HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立刻拨打911或打给当地应急服务人员。</target>
+        <target>HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立即拨打911或打给当地应急服务人员。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call 911 or your local emergency service immediately.&quot;; ObjectID = &quot;5ex-Gs-iwJ&quot;;</note>
       </trans-unit>
       <trans-unit id="6T5-jA-3oS.normalTitle" resname="6T5-jA-3oS.normalTitle" restype="string" datatype="x-xib">
@@ -40109,7 +40109,7 @@ pay per consult</source>
       </trans-unit>
       <trans-unit id="WeL-BP-aJb.text" resname="WeL-BP-aJb.text" restype="string" datatype="x-xib">
         <source>We&apos;ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.</source>
-        <target>若您向我们喜爱的慈善机构提供慈善捐款，我们将很乐意加速让您的问题获得回答。</target>
+        <target>若您能向我们最关注的慈善机构捐出善款，我们将很乐意更快递回答您的问题。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.&quot;; ObjectID = &quot;WeL-BP-aJb&quot;;</note>
       </trans-unit>
       <trans-unit id="WvF-OW-wpB.text" resname="WvF-OW-wpB.text" restype="string" datatype="x-xib">
@@ -40387,7 +40387,7 @@ We&apos;d like you to contact us at [support@healthtap.com] to let us know why y
       </trans-unit>
       <trans-unit id="jqZ-Od-mDg.text" resname="jqZ-Od-mDg.text" restype="string" datatype="x-xib">
         <source>For medical emergencies, call 911 &#40;or your local emergency services&#41; or go to the nearest ER.</source>
-        <target>如遇到医疗紧急情况，请立刻打给911（或当地应急服务人员）或前往最近的急诊室。</target>
+        <target>如遇到医疗紧急情况，请立即打给911（或当地应急服务人员）或前往最近的急诊室。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;For medical emergencies, call 911 &#40;or your local emergency services&#41; or go to the nearest ER.&quot;; ObjectID = &quot;jqZ-Od-mDg&quot;;</note>
       </trans-unit>
       <trans-unit id="moG-Ih-zuk.normalTitle" resname="moG-Ih-zuk.normalTitle" restype="string" datatype="x-xib">
@@ -40412,7 +40412,7 @@ We&apos;d like you to contact us at [support@healthtap.com] to let us know why y
       </trans-unit>
       <trans-unit id="t6Z-G7-MPb.text" resname="t6Z-G7-MPb.text" restype="string" datatype="x-xib">
         <source>For medical emergencies, call 911 &#40;or your local emergency services&#41; or go to the nearest ER.</source>
-        <target>如遇到医疗紧急情况，请立刻打给911（或当地应急服务人员）或前往最近的急诊室。</target>
+        <target>如遇到医疗紧急情况，请立即打给911（或当地应急服务人员）或前往最近的急诊室。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;For medical emergencies, call 911 &#40;or your local emergency services&#41; or go to the nearest ER.&quot;; ObjectID = &quot;t6Z-G7-MPb&quot;;</note>
       </trans-unit>
       <trans-unit id="y2b-CY-zAy.normalTitle" resname="y2b-CY-zAy.normalTitle" restype="string" datatype="x-xib">
@@ -40515,7 +40515,7 @@ We&apos;d like you to contact us at [support@healthtap.com] to let us know why y
       </trans-unit>
       <trans-unit id="ONw-Sh-U9S.text" resname="ONw-Sh-U9S.text" restype="string" datatype="x-xib">
         <source>For medical emergencies, call 911 &#40;or your local emergency services&#41; or go to the nearest ER.</source>
-        <target>如遇到医疗紧急情况，请立刻打给911（或当地应急服务人员）或前往最近的急诊室。</target>
+        <target>如遇到医疗紧急情况，请立即打给911（或当地应急服务人员）或前往最近的急诊室。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;For medical emergencies, call 911 &#40;or your local emergency services&#41; or go to the nearest ER.&quot;; ObjectID = &quot;ONw-Sh-U9S&quot;;</note>
       </trans-unit>
       <trans-unit id="Tsx-i2-Q1i.text" resname="Tsx-i2-Q1i.text" restype="string" datatype="x-xib">
@@ -40535,7 +40535,7 @@ We&apos;d like you to contact us at [support@healthtap.com] to let us know why y
       </trans-unit>
       <trans-unit id="Z56-bv-Qbp.text" resname="Z56-bv-Qbp.text" restype="string" datatype="x-xib">
         <source>For medical emergencies, call 911 &#40;or your local emergency services&#41; or go to the nearest ER.</source>
-        <target>如遇到医疗紧急情况，请立刻打给911（或当地应急服务人员）或前往最近的急诊室。</target>
+        <target>如遇到医疗紧急情况，请立即打给911（或当地应急服务人员）或前往最近的急诊室。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;For medical emergencies, call 911 &#40;or your local emergency services&#41; or go to the nearest ER.&quot;; ObjectID = &quot;Z56-bv-Qbp&quot;;</note>
       </trans-unit>
       <trans-unit id="ZfN-Gu-iRh.text" resname="ZfN-Gu-iRh.text" restype="string" datatype="x-xib">
@@ -40620,7 +40620,7 @@ We&apos;d like you to contact us at [support@healthtap.com] to let us know why y
       </trans-unit>
       <trans-unit id="nkD-Im-WGe.text" resname="nkD-Im-WGe.text" restype="string" datatype="x-xib">
         <source>For medical emergencies, call 911 &#40;or your local emergency services&#41; or go to the nearest ER.</source>
-        <target>如遇到医疗紧急情况，请立刻打给911（或当地应急服务人员）或前往最近的急诊室。</target>
+        <target>如遇到医疗紧急情况，请立即打给911（或当地应急服务人员）或前往最近的急诊室。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;For medical emergencies, call 911 &#40;or your local emergency services&#41; or go to the nearest ER.&quot;; ObjectID = &quot;nkD-Im-WGe&quot;;</note>
       </trans-unit>
       <trans-unit id="oAR-G3-Gis.text" resname="oAR-G3-Gis.text" restype="string" datatype="x-xib">
@@ -42327,7 +42327,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
       </trans-unit>
       <trans-unit id="C6i-NA-zPf.placeholder" resname="C6i-NA-zPf.placeholder" restype="string" datatype="x-xib">
         <source>Find a goal &#40;e.g: Lose weight&#41;</source>
-        <target>查找一个目标（例如：减肥）</target>
+        <target>查找目标（例如：减肥）</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Find a goal &#40;e.g: Lose weight&#41;&quot;; ObjectID = &quot;C6i-NA-zPf&quot;;</note>
       </trans-unit>
       <trans-unit id="kxo-5P-Ohu.text" resname="kxo-5P-Ohu.text" restype="string" datatype="x-xib">
@@ -42374,7 +42374,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
     <body>
       <trans-unit id="3Ub-eF-h7o.text" resname="3Ub-eF-h7o.text" restype="string" datatype="x-xib">
         <source>But don&apos;t worry, we have lots of other doctor checklists for you</source>
-        <target>但是不用担心，我们为您提供许多其他的医生的检查清单</target>
+        <target>别担心，我们还有很多其他医生的清单可供您参考</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;But don&apos;t worry, we have lots of other doctor checklists for you&quot;; ObjectID = &quot;3Ub-eF-h7o&quot;;</note>
       </trans-unit>
       <trans-unit id="6Dw-Qv-A9d.text" resname="6Dw-Qv-A9d.text" restype="string" datatype="x-xib">
@@ -42620,7 +42620,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
       </trans-unit>
       <trans-unit id="AdE-0v-5RT.text" resname="AdE-0v-5RT.text" restype="string" datatype="x-xib">
         <source>Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.</source>
-        <target>HealthTap上的内容（包括回答、新闻和建议）都不应被用作医疗建议、诊断和治疗方法。不要因为HealthTap上的任何事情而忽视或延迟寻求专业的医疗建议。如果您认为您需要紧急治疗，请立刻打电话给您的医生或拨打911（美国地区）</target>
+        <target>HealthTap上的内容（包括回答、新闻和建议）都不应被用作医疗建议、诊断和治疗方法。不要因为HealthTap上的任何事情而忽视或延迟寻求专业的医疗建议。如果您认为您需要紧急治疗，请立即打电话给您的医生或拨打911（美国地区）</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Content on HealthTap &#40;including answers, news, and tips&#41; should not be used for medical advice, diagnosis, or treatment. Never disregard or delay seeking professional medical  advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you think you may have a medical emergency.&quot;; ObjectID = &quot;AdE-0v-5RT&quot;;</note>
       </trans-unit>
       <trans-unit id="CTP-Ui-V4J.text" resname="CTP-Ui-V4J.text" restype="string" datatype="x-xib">

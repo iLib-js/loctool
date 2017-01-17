@@ -82,6 +82,24 @@ module.exports = {
         test.done();
 	},
 
+    testJavaFileMakeKeyUnescaped: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+
+        test.equals(j.makeKey("foo \\n \\t bar"), "r1056543475");
+        test.equals(j.makeKey("\\n \\t bar"), "r755240053");
+		test.equals(j.makeKey("The \\'Dude\\' played by Jeff Bridges"), "r600298088");
+		test.equals(j.makeKey("\\'Dude\\'"), "r6259609");
+		
+        test.done();
+	},
+
 	testJavaFileMakeKeySimpleTexts2: function(test) {
         test.expect(6);
 
@@ -177,6 +195,44 @@ module.exports = {
         
         test.done();
     },
+    
+    testJavaFileMakeKeyCompressWhiteSpace: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        test.equal(j.makeKey("Can\'t find treatment id"), "r926831062");
+		test.equal(j.makeKey("Can\'t    find    treatment           id"), "r926831062");
+		
+		test.equal(j.makeKey("Can\'t find an application for SMS"), "r909283218");
+		test.equal(j.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"), "r909283218");
+        
+        test.done();
+	},
+	
+    testJavaFileMakeKeyTrimWhiteSpace: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+
+        test.equal(j.makeKey("Can\'t find treatment id"), "r926831062");
+        test.equal(j.makeKey("      Can\'t find treatment id "), "r926831062");
+		
+        test.equal(j.makeKey("Can\'t find an application for SMS"), "r909283218");
+        test.equal(j.makeKey(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"), "r909283218");
+
+		test.done();
+	},
 
     testJavaFileParseSimpleGetByKey: function(test) {
         test.expect(5);

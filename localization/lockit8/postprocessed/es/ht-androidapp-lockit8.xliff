@@ -22,7 +22,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXProfileFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="6" resname="r803699475" restype="string" datatype="java">
+      <trans-unit id="6" resname="r119248257" restype="string" datatype="java">
         <source>\nPlease restart the app/device and try again.</source>
         <target>\nPor favor, reinicia la aplicación/dispositivo e intenta otra vez.</target>
       </trans-unit>
@@ -30,7 +30,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerSearchFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="9" resname="r1012743332" restype="string" datatype="java">
+      <trans-unit id="9" resname="r74563301" restype="string" datatype="java">
         <source>Can&apos;t find a doctor?</source>
         <target>¿No puedes encontrar un doctor?</target>
       </trans-unit>
