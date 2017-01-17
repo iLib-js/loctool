@@ -34387,7 +34387,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6766" resname="When was the last time? &#40;year&#41;" restype="string" datatype="javascript">
         <source>When was the last time? &#40;year&#41;</source>
-        <target>最后一次是什么时候？&#40;year&#41;</target>
+        <target>最后一次是什么时候？&#40;哪一年&#41;</target>
       </trans-unit>
       <trans-unit id="6767" resname="Which vaccinations have you had?" restype="string" datatype="javascript">
         <source>Which vaccinations have you had?</source>
