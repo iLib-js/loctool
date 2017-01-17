@@ -4215,10 +4215,6 @@
         <source>United Kingdom</source>
         <target>Reino Unido</target>
       </trans-unit>
-      <trans-unit id="953" resname="countries" restype="array" datatype="x-android-resource" extype="199">
-        <source>@string/us</source>
-        <target>@string/us</target>
-      </trans-unit>
       <trans-unit id="954" resname="countries" restype="array" datatype="x-android-resource" extype="200">
         <source>Uruguay</source>
         <target>Uruguay</target>
@@ -5148,7 +5144,7 @@
       </trans-unit>
       <trans-unit id="136" resname="r989778094" restype="string" datatype="java">
         <source>Which languages does {first_name} speak?</source>
-        <target>{First_name}可以说哪种语言？</target>
+        <target>{first_name}可以说哪种语言？</target>
       </trans-unit>
     </body>
   </file>
@@ -8527,10 +8523,6 @@
       <trans-unit id="952" resname="countries" restype="array" datatype="x-android-resource" extype="198">
         <source>United Kingdom</source>
         <target>英国</target>
-      </trans-unit>
-      <trans-unit id="953" resname="countries" restype="array" datatype="x-android-resource" extype="199">
-        <source>@string/us</source>
-        <target>@string/us</target>
       </trans-unit>
       <trans-unit id="954" resname="countries" restype="array" datatype="x-android-resource" extype="200">
         <source>Uruguay</source>
