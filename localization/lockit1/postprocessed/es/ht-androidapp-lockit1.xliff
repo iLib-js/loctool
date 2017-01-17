@@ -1402,7 +1402,7 @@
     <body>
       <trans-unit id="260" resname="r383257904" restype="string" datatype="java">
         <source>Practicing:</source>
-        <target>Practicando:</target>
+        <target>Ejerciendo:</target>
       </trans-unit>
       <trans-unit id="261" resname="r36845865" restype="string" datatype="java">
         <source>HealthTap Honor</source>
@@ -2041,9 +2041,9 @@
         <source>Known for {known_for_topic_name}</source>
         <target>Conocido por {known_for_topic_name}</target>
       </trans-unit>
-      <trans-unit id="381" resname="r812841735" restype="string" datatype="java">
+      <trans-unit id="381" resname="r758898992" restype="string" datatype="java">
         <source>Here&apos;s a referral to a {expert_specialty} {start}{expert_name}{end}, you can consult for advice and treatment:</source>
-        <target>Acá está una referencia a {expert_specialty} {start}{expert_name}{end}, puedes consultar por asesoría y tratamiento:</target>
+        <target>Aquí está una referencia para un {expert_specialty} {start}{expert_name}{end}, que puedes consultar para consejo y tratamiento:</target>
       </trans-unit>
       <trans-unit id="382" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
@@ -2179,7 +2179,7 @@
       </trans-unit>
       <trans-unit id="408" resname="r153759784" restype="string" datatype="java">
         <source>{commenter_name} commented on {answerer_name}&apos;s answer</source>
-        <target>{commenter_name} comentó en la respuesta de {answerer_name}</target>
+        <target>{commenter_name} comentó la respuesta de {answerer_name}</target>
       </trans-unit>
     </body>
   </file>
@@ -2248,7 +2248,7 @@
       </trans-unit>
       <trans-unit id="419" resname="r920181258" restype="string" datatype="java">
         <source>Does {first_name}&apos;s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
-        <target>¿Los abuelos, padres o hermanos vivos de {first_name} tienen alguna condición médica mayor? &#40;¿que atente contra la vida o que sea diferente?&#41;</target>
+        <target>¿Los abuelos, padres o hermanos vivos de {first_name} tienen alguna condición médica mayor? &#40;¿que atente o no contra la vida?&#41;</target>
       </trans-unit>
       <trans-unit id="420" resname="r685531918" restype="string" datatype="java">
         <source>Did any close relative &#40;sibling, parent, grandparent&#41; of {first_name&#41; pass away before the age of 60 from a condition?</source>
@@ -2297,7 +2297,7 @@
       </trans-unit>
       <trans-unit id="428" resname="r595763610" restype="string" datatype="java">
         <source>What is {first_name}&apos;s relationship to you</source>
-        <target>Cuál es el parentesco de {first_name} contigo</target>
+        <target>¿Cuál es la relación de {first_name} contigo?</target>
       </trans-unit>
     </body>
   </file>
@@ -2408,7 +2408,7 @@
       </trans-unit>
       <trans-unit id="448" resname="r178597753" restype="string" datatype="java">
         <source>What is {first_name}&apos;s ethnicity?</source>
-        <target>¿Cuál es el grupo étnico de {first_name}?</target>
+        <target>¿Cuál es la etnia de {first_name}?</target>
       </trans-unit>
     </body>
   </file>
