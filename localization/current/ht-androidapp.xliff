@@ -51748,6 +51748,98 @@
       </trans-unit>
     </body>
   </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="19" resname="body_head" restype="string" datatype="x-android-resource">
+        <source>Head</source>
+        <target state="translated">Cabeza</target>
+      </trans-unit>
+      <trans-unit id="20" resname="body_eye" restype="string" datatype="x-android-resource">
+        <source>Eye</source>
+        <target state="translated">Ojo</target>
+      </trans-unit>
+      <trans-unit id="21" resname="body_nose" restype="string" datatype="x-android-resource">
+        <source>Nose</source>
+        <target state="translated">Nariz</target>
+      </trans-unit>
+      <trans-unit id="22" resname="body_mouth" restype="string" datatype="x-android-resource">
+        <source>Mouth</source>
+        <target state="translated">Boca</target>
+      </trans-unit>
+      <trans-unit id="23" resname="body_neck_front" restype="string" datatype="x-android-resource">
+        <source>Neck</source>
+        <target state="translated">Cuello</target>
+      </trans-unit>
+      <trans-unit id="24" resname="body_neck_back" restype="string" datatype="x-android-resource">
+        <source>Neck</source>
+        <target state="translated">Cuello</target>
+      </trans-unit>
+      <trans-unit id="25" resname="body_ear" restype="string" datatype="x-android-resource">
+        <source>Ear</source>
+        <target state="translated">Oreja</target>
+      </trans-unit>
+      <trans-unit id="26" resname="body_chest" restype="string" datatype="x-android-resource">
+        <source>Chest</source>
+        <target state="translated">Pecho</target>
+      </trans-unit>
+      <trans-unit id="27" resname="body_shoulder" restype="string" datatype="x-android-resource">
+        <source>Shoulder</source>
+        <target state="translated">Hombro</target>
+      </trans-unit>
+      <trans-unit id="28" resname="body_arm" restype="string" datatype="x-android-resource">
+        <source>Arm</source>
+        <target state="translated">Brazo</target>
+      </trans-unit>
+      <trans-unit id="29" resname="body_upper_abdomen" restype="string" datatype="x-android-resource">
+        <source>Upper Abdomen</source>
+        <target state="translated">Abdomen Superior</target>
+      </trans-unit>
+      <trans-unit id="30" resname="body_lower_abdomen" restype="string" datatype="x-android-resource">
+        <source>Lower Abdomen</source>
+        <target state="translated">Abdomen Inferior</target>
+      </trans-unit>
+      <trans-unit id="31" resname="body_pelvis" restype="string" datatype="x-android-resource">
+        <source>Pelvis</source>
+        <target state="translated">Pelvis</target>
+      </trans-unit>
+      <trans-unit id="32" resname="body_hip" restype="string" datatype="x-android-resource">
+        <source>Hip</source>
+        <target state="translated">Cadera</target>
+      </trans-unit>
+      <trans-unit id="33" resname="body_leg" restype="string" datatype="x-android-resource">
+        <source>Leg</source>
+        <target state="translated">Pierna</target>
+      </trans-unit>
+      <trans-unit id="34" resname="body_hand" restype="string" datatype="x-android-resource">
+        <source>Hand</source>
+        <target state="translated">Mano</target>
+      </trans-unit>
+      <trans-unit id="35" resname="body_foot" restype="string" datatype="x-android-resource">
+        <source>Foot</source>
+        <target state="translated">Pie</target>
+      </trans-unit>
+      <trans-unit id="36" resname="body_upper_back" restype="string" datatype="x-android-resource">
+        <source>Upper Back</source>
+        <target state="translated">Espalda Superior</target>
+      </trans-unit>
+      <trans-unit id="37" resname="body_lower_back" restype="string" datatype="x-android-resource">
+        <source>Lower Back</source>
+        <target state="translated">Espalda baja</target>
+      </trans-unit>
+      <trans-unit id="38" resname="body_buttock" restype="string" datatype="x-android-resource">
+        <source>Buttock</source>
+        <target state="translated">Nalga</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/fragments/main/GeneralListFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="40" resname="r110253465" restype="string" datatype="java">
+        <source>Upcoming Appointments</source>
+        <target state="translated">Citas Próximas</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="20" resname="body_head" restype="string" datatype="x-android-resource">
@@ -57995,6 +58087,48 @@
       <trans-unit id="91" resname="r892816468" restype="string" datatype="x-android-resource">
         <source>Failed to share on Facebook:</source>
         <target state="translated">在Facebook上分享失败：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="34" resname="r563885918" restype="string" datatype="java">
+        <source>Ask {doctor_name} a question...</source>
+        <target state="translated">询问{doctor_name}一个问题...</target>
+        <note annotates="source">{0} is a name prefix, such as Dr. Jr. Sr. etc. {1} is the last name of a doctor.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="37" resname="body_fetus" restype="string" datatype="x-android-resource">
+        <source>Fetus</source>
+        <target state="translated">胎儿</target>
+      </trans-unit>
+      <trans-unit id="2457" resname="symptom_triage_generic_disclaimer_text" restype="string" datatype="x-android-resource">
+        <source>The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. “Dr. A.I.” is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
+        <target>HealthTap（包括此工具）的信息仅用于教育和内容丰富的目的，不构成医疗建议，诊断或治疗建议。“A.I.医生“并不是一位医生，它是从医生创建的医学知识库提供信息的工具，包括症状和可能的相关病症。如果您认为您可能有紧急医疗情况，请立即致电或拜访您的医生或当地紧急服务提供人员。查看附加信息。</target>
+      </trans-unit>
+      <trans-unit id="2458" resname="symptom_triage_non_diagnosis_disclaimer" restype="string" datatype="x-android-resource">
+        <source>“Dr. A.I.” is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have &#40;or don\&apos;t have&#41; any particular potential conditions. The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
+        <target>“A.I.医生“并不是一位医生，它是从医生创建的医学知识库提供信息的工具，包括症状和可能的相关病症。当您选择使用此工具时，我们可能会计算并显示与您输入的症状和数据相关的症状或治疗选项。此信息并不是诊断，并不意味着您有（或没有）任何特定的潜在病症。HealthTap（包括此工具）的信息仅用于教育和内容丰富的目的，不构成医疗建议，诊断或治疗建议。如果您认为您可能有紧急医疗情况，请立即致电或拜访您的医生或当地紧急服务提供人员。查看附加信息。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/adapters/GoalsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1199" resname="r565514845" restype="string" datatype="java">
+        <source>We\&apos;ll share more tips and checklists to help you with {0}</source>
+        <target>我们会分享更多的小贴士和清单来帮助您{0}</target>
+        <note annotates="source">{0} is a topic name.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/plurals.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2597" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="other">
+        <source>Thanks! {start}%d{end} symptoms added.\nAny additional symptoms?</source>
+        <target>谢谢！{start}%d{end}个症状已添加。\n有其他症状吗？</target>
       </trans-unit>
     </body>
   </file>
