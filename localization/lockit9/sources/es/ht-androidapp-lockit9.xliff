@@ -2,7 +2,7 @@
 <xliff version="1.2">
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="8" resname="r563885918" restype="string" datatype="java">
+      <trans-unit id="2" resname="r563885918" restype="string" datatype="java">
         <source>Ask {doctor_name} a question...</source>
         <target state="new">Ask {doctor_name} a question...</target>
         <note annotates="source">{0} is a name prefix, such as Dr. Jr. Sr. etc. {1} is the last name of a doctor.</note>
@@ -11,38 +11,189 @@
   </file>
   <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="9" resname="body_fetus" restype="string" datatype="x-android-resource">
+      <trans-unit id="3" resname="body_fetus" restype="string" datatype="x-android-resource">
         <source>Fetus</source>
         <target>Fetus</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/com/healthtap/userhtexpress/adapters/GoalsListAdapter.java" source-language="en-US" product-name="ht-androidapp">
-    <body>
-      <trans-unit id="1197" resname="r565514845" restype="string" datatype="java">
+      <trans-unit id="4" resname="r958853323" restype="string" datatype="x-android-resource">
+        <source>Twitter app isn\&apos;t found</source>
+        <target>Twitter app isn\&apos;t found</target>
+      </trans-unit>
+      <trans-unit id="7" resname="r225777666" restype="string" datatype="x-android-resource">
+        <source>We\&apos;ll now help you with {topic_name} with timely, friendly reminders on behalf of {doctor_name}</source>
+        <target>We\&apos;ll now help you with {topic_name} with timely, friendly reminders on behalf of {doctor_name}</target>
+      </trans-unit>
+      <trans-unit id="11" resname="r494559278" restype="string" datatype="x-android-resource">
+        <source>You agree to HealthTap\&apos;s {start1}Terms{end1} and {start2}Privacy Policy{end2}.</source>
+        <target>You agree to HealthTap\&apos;s {start1}Terms{end1} and {start2}Privacy Policy{end2}.</target>
+      </trans-unit>
+      <trans-unit id="12" resname="r208644008" restype="string" datatype="x-android-resource">
+        <source>We couldn\&apos;t remove your card. Please try again or contact support if the problem persists.</source>
+        <target>We couldn\&apos;t remove your card. Please try again or contact support if the problem persists.</target>
+      </trans-unit>
+      <trans-unit id="20" resname="r270523450" restype="string" datatype="x-android-resource">
+        <source>Can\&apos;t find any contacts in your address book</source>
+        <target>Can\&apos;t find any contacts in your address book</target>
+      </trans-unit>
+      <trans-unit id="21" resname="r460034798" restype="string" datatype="x-android-resource">
+        <source>Can\&apos;t import any contacts from your account, please try another way!</source>
+        <target>Can\&apos;t import any contacts from your account, please try another way!</target>
+      </trans-unit>
+      <trans-unit id="26" resname="r473371410" restype="string" datatype="x-android-resource">
+        <source>You\&apos;re a true hero!</source>
+        <target>You\&apos;re a true hero!</target>
+      </trans-unit>
+      <trans-unit id="27" resname="r948339101" restype="string" datatype="x-android-resource">
+        <source>You\&apos;re awesome</source>
+        <target>You\&apos;re awesome</target>
+      </trans-unit>
+      <trans-unit id="30" resname="r926831062" restype="string" datatype="x-android-resource">
+        <source>Can\&apos;t find treatment id</source>
+        <target>Can\&apos;t find treatment id</target>
+      </trans-unit>
+      <trans-unit id="31" resname="r909283218" restype="string" datatype="x-android-resource">
+        <source>Can\&apos;t find an application for SMS</source>
+        <target>Can\&apos;t find an application for SMS</target>
+      </trans-unit>
+      <trans-unit id="34" resname="r831947664" restype="string" datatype="x-android-resource">
+        <source>Can\&apos;t find a clinician?</source>
+        <target>Can\&apos;t find a clinician?</target>
+      </trans-unit>
+      <trans-unit id="35" resname="r74563301" restype="string" datatype="x-android-resource">
+        <source>Can\&apos;t find a doctor?</source>
+        <target>Can\&apos;t find a doctor?</target>
+      </trans-unit>
+      <trans-unit id="39" resname="r1049283273" restype="string" datatype="x-android-resource">
+        <source>Please choose how you\&apos;d like to pay</source>
+        <target>Please choose how you\&apos;d like to pay</target>
+      </trans-unit>
+      <trans-unit id="40" resname="r924154384" restype="string" datatype="x-android-resource">
+        <source>We\&apos;re sorry, HealthTap Concierge is not currently available in Idaho. However, you may still user HealthTap Concierge when traveling out of state!</source>
+        <target>We\&apos;re sorry, HealthTap Concierge is not currently available in Idaho. However, you may still user HealthTap Concierge when traveling out of state!</target>
+      </trans-unit>
+      <trans-unit id="41" resname="r261042682" restype="string" datatype="x-android-resource">
+        <source>{docname} will only be able to provide you with a second opinion on an existing diagnosis or treatment plan from your own doctor. {docname} cannot treat or diagnose you during this consult.\nIf you\&apos;d like a new diagnosis or treatment, try consulting one of our top doctors licensed in your state.</source>
+        <target>{docname} will only be able to provide you with a second opinion on an existing diagnosis or treatment plan from your own doctor. {docname} cannot treat or diagnose you during this consult.\nIf you\&apos;d like a new diagnosis or treatment, try consulting one of our top doctors licensed in your state.</target>
+      </trans-unit>
+      <trans-unit id="42" resname="r180912422" restype="string" datatype="x-android-resource">
+        <source>We\&apos;re sorry, but</source>
+        <target>We\&apos;re sorry, but</target>
+      </trans-unit>
+      <trans-unit id="43" resname="r961790614" restype="string" datatype="x-android-resource">
+        <source>Your invitation is sent. We\&apos;ll notify you when the doctor accepts you as a patient.</source>
+        <target>Your invitation is sent. We\&apos;ll notify you when the doctor accepts you as a patient.</target>
+      </trans-unit>
+      <trans-unit id="44" resname="r1037351548" restype="string" datatype="x-android-resource">
+        <source>This email doesn\&apos;t seem to be valid</source>
+        <target>This email doesn\&apos;t seem to be valid</target>
+      </trans-unit>
+      <trans-unit id="45" resname="r952181229" restype="string" datatype="x-android-resource">
+        <source>We\&apos;re sorry, this doctor is not eligible for Concierge.</source>
+        <target>We\&apos;re sorry, this doctor is not eligible for Concierge.</target>
+      </trans-unit>
+      <trans-unit id="46" resname="r639283974" restype="string" datatype="x-android-resource">
+        <source>We\&apos;re sorry, this doctor is not available in your network.</source>
+        <target>We\&apos;re sorry, this doctor is not available in your network.</target>
+      </trans-unit>
+      <trans-unit id="47" resname="r653023258" restype="string" datatype="x-android-resource">
+        <source>We\&apos;re sorry, your location currently does not allow for virtual consults.</source>
+        <target>We\&apos;re sorry, your location currently does not allow for virtual consults.</target>
+      </trans-unit>
+      <trans-unit id="48" resname="r1002502884" restype="string" datatype="x-android-resource">
+        <source>We\&apos;re sorry, an unknown error occured.</source>
+        <target>We\&apos;re sorry, an unknown error occured.</target>
+      </trans-unit>
+      <trans-unit id="52" resname="r812841735" restype="string" datatype="x-android-resource">
+        <source>Here\&apos;s a referral to a {expert_specialty} {start}{expert_name}{end}, you can consult for advice and treatment:</source>
+        <target>Here\&apos;s a referral to a {expert_specialty} {start}{expert_name}{end}, you can consult for advice and treatment:</target>
+      </trans-unit>
+      <trans-unit id="57" resname="r23933610" restype="string" datatype="x-android-resource">
+        <source>We\&apos;ll now help you with {topic_name} with timely, friendly reminders on behalf of {doc_name}</source>
+        <target>We\&apos;ll now help you with {topic_name} with timely, friendly reminders on behalf of {doc_name}</target>
+      </trans-unit>
+      <trans-unit id="64" resname="r78892262" restype="string" datatype="x-android-resource">
+        <source>What is this person\&apos;s name?</source>
+        <target>What is this person\&apos;s name?</target>
+      </trans-unit>
+      <trans-unit id="67" resname="r883924847" restype="string" datatype="x-android-resource">
+        <source>We\&apos;ll share more doctor insights related to this topic from now.</source>
+        <target>We\&apos;ll share more doctor insights related to this topic from now.</target>
+      </trans-unit>
+      <trans-unit id="69" resname="r808907878" restype="string" datatype="x-android-resource">
+        <source>Please don\&apos;t include a followup question in your note. {start}To do so, ask a question.{end}</source>
+        <target>Please don\&apos;t include a followup question in your note. {start}To do so, ask a question.{end}</target>
+      </trans-unit>
+      <trans-unit id="70" resname="r312184836" restype="string" datatype="x-android-resource">
+        <source>We\&apos;re committed to your satisfaction and providing a delightful experience. Please let us know why you\&apos;d like to downgrade.</source>
+        <target>We\&apos;re committed to your satisfaction and providing a delightful experience. Please let us know why you\&apos;d like to downgrade.</target>
+      </trans-unit>
+      <trans-unit id="71" resname="r679345392" restype="string" datatype="x-android-resource">
+        <source>We\&apos;ll miss you!</source>
+        <target>We\&apos;ll miss you!</target>
+      </trans-unit>
+      <trans-unit id="72" resname="r860822785" restype="string" datatype="x-android-resource">
+        <source>You\&apos;re account has been deactivated and you\&apos;ve been logged out. We hope you come back soon :&#41;</source>
+        <target>You\&apos;re account has been deactivated and you\&apos;ve been logged out. We hope you come back soon :&#41;</target>
+      </trans-unit>
+      <trans-unit id="73" resname="r895141403" restype="string" datatype="x-android-resource">
+        <source>We couldn\&apos;t downgrade your plan. Please try again or contact support if the problem persists.</source>
+        <target>We couldn\&apos;t downgrade your plan. Please try again or contact support if the problem persists.</target>
+      </trans-unit>
+      <trans-unit id="75" resname="r232807942" restype="string" datatype="x-android-resource">
+        <source>Can\&apos;t get invite link from server, please try again later.</source>
+        <target>Can\&apos;t get invite link from server, please try again later.</target>
+      </trans-unit>
+      <trans-unit id="76" resname="r299140248" restype="string" datatype="x-android-resource">
+        <source>Doctors will review your post before it\&apos;s published. Review more helpful to extend your impact</source>
+        <target>Doctors will review your post before it\&apos;s published. Review more helpful to extend your impact</target>
+      </trans-unit>
+      <trans-unit id="78" resname="r245794732" restype="string" datatype="x-android-resource">
+        <source>{name} hasn\&apos;t created any checklists yet.</source>
+        <target>{name} hasn\&apos;t created any checklists yet.</target>
+      </trans-unit>
+      <trans-unit id="80" resname="r597392307" restype="string" datatype="x-android-resource">
+        <source>You\&apos;ve talked to a doctor {frequency_number} times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.</source>
+        <target>You\&apos;ve talked to a doctor {frequency_number} times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.</target>
+        <note annotates="source">{frequency_number} is an integer number.</note>
+      </trans-unit>
+      <trans-unit id="81" resname="r706941085" restype="string" datatype="x-android-resource">
+        <source>We\&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We\&apos;re here to help!</source>
+        <target>We\&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We\&apos;re here to help!</target>
+      </trans-unit>
+      <trans-unit id="82" resname="r870767804" restype="string" datatype="x-android-resource">
+        <source>You\&apos;re following this question!</source>
+        <target>You\&apos;re following this question!</target>
+      </trans-unit>
+      <trans-unit id="83" resname="r762155906" restype="string" datatype="x-android-resource">
+        <source>We\&apos;ll let you know when doctors add more answers or comments.</source>
+        <target>We\&apos;ll let you know when doctors add more answers or comments.</target>
+      </trans-unit>
+      <trans-unit id="84" resname="r380153215" restype="string" datatype="x-android-resource">
+        <source>We\&apos;ll share more insights related to this topic from now on.</source>
+        <target>We\&apos;ll share more insights related to this topic from now on.</target>
+      </trans-unit>
+      <trans-unit id="85" resname="r301158221" restype="string" datatype="x-android-resource">
+        <source>You\&apos;re following {0}!</source>
+        <target>You\&apos;re following {0}!</target>
+        <note annotates="source">{0} is an influencer&apos;s name.</note>
+      </trans-unit>
+      <trans-unit id="86" resname="r147358463" restype="string" datatype="x-android-resource">
+        <source>We\&apos;ll highlight this influencer\&apos;s insights for you on your feed.</source>
+        <target>We\&apos;ll highlight this influencer\&apos;s insights for you on your feed.</target>
+      </trans-unit>
+      <trans-unit id="87" resname="r565514845" restype="string" datatype="x-android-resource">
         <source>We\&apos;ll share more tips and checklists to help you with {0}</source>
+        <target>We\&apos;ll share more tips and checklists to help you with {0}</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
-    </body>
-  </file>
-  <file original="res/values/strings.xml" source-language="en-US" product-name="ht-androidapp">
-    <body>
-      <trans-unit id="2457" resname="symptom_triage_generic_disclaimer_text" restype="string" datatype="x-android-resource">
-        <source>The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. “Dr. A.I.” is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
+      <trans-unit id="88" resname="r563885918" restype="string" datatype="x-android-resource">
+        <source>Ask {doctor_name} a question...</source>
+        <target>Ask {doctor_name} a question...</target>
+        <note annotates="source">{0} is a name prefix, such as Dr. Jr. Sr. etc. {1} is the last name of a doctor.</note>
       </trans-unit>
-      <trans-unit id="2458" resname="symptom_triage_non_diagnosis_disclaimer" restype="string" datatype="x-android-resource">
-        <source>“Dr. A.I.” is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have &#40;or don\&apos;t have&#41; any particular potential conditions. The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
-      </trans-unit>
-      <trans-unit id="2468" resname="symptom_triage_emergency_description" restype="string" datatype="x-android-resource">
-        <source>&quot;Most doctors recommend seeking immediate emergency medical attention based on the symptoms
-        you reported&quot;</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="res/values/plurals.xml" source-language="en-US" product-name="ht-androidapp">
-    <body>
-      <trans-unit id="2597" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="other">
-        <source>Thanks! {start}%d{end} symptoms added.\nAny additional symptoms?</source>
+      <trans-unit id="92" resname="r973308393" restype="string" datatype="x-android-resource">
+        <source>Can\&apos;t read picture file</source>
+        <target>Can\&apos;t read picture file</target>
       </trans-unit>
     </body>
   </file>
