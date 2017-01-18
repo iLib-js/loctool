@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="text_You_asked_for_" restype="string" datatype="x-android-resource">
         <source>You asked for</source>
-        <target>Pediste</target>
+        <target>Preguntaste para</target>
       </trans-unit>
     </body>
   </file>
@@ -20,7 +20,7 @@
     <body>
       <trans-unit id="3" resname="text__doctor_reviews" restype="string" datatype="x-android-resource">
         <source>doctor reviews</source>
-        <target>valoraciones de doctor</target>
+        <target>valoraciones de doctores</target>
       </trans-unit>
     </body>
   </file>
@@ -60,7 +60,7 @@
       </trans-unit>
       <trans-unit id="9" resname="text_This_month" restype="string" datatype="x-android-resource">
         <source>This month</source>
-        <target>Este Mes</target>
+        <target>Este mes</target>
       </trans-unit>
     </body>
   </file>
@@ -116,7 +116,7 @@
       </trans-unit>
       <trans-unit id="19" resname="r115015466" restype="string" datatype="java">
         <source>Twitter login failed, please try another email/password</source>
-        <target>Ingreso fallido a Twitter, por favor intenta con otro correo electrónico/contraseña</target>
+        <target>Inicio de sesión a Twitter fallido, por favor, intenta con otro correo electrónico/contraseña</target>
       </trans-unit>
     </body>
   </file>
@@ -164,11 +164,11 @@
       </trans-unit>
       <trans-unit id="28" resname="r415910577" restype="string" datatype="java">
         <source>Relationship to you</source>
-        <target>Parentesco contigo</target>
+        <target>Relación contigo</target>
       </trans-unit>
       <trans-unit id="29" resname="r415124616" restype="string" datatype="java">
         <source>Living</source>
-        <target>Vivienda</target>
+        <target>Viviendo</target>
       </trans-unit>
       <trans-unit id="30" resname="r199869805" restype="string" datatype="java">
         <source>Date of Birth</source>
@@ -184,7 +184,7 @@
       </trans-unit>
       <trans-unit id="33" resname="r300488279" restype="string" datatype="java">
         <source>Ethnicity</source>
-        <target>Etnias</target>
+        <target>Grupo étnico</target>
       </trans-unit>
       <trans-unit id="36" resname="r156740501" restype="string" datatype="java">
         <source>BMI</source>
@@ -192,7 +192,7 @@
       </trans-unit>
       <trans-unit id="37" resname="r856653907" restype="string" datatype="java">
         <source>Languages spoken</source>
-        <target>Idiomas hablado</target>
+        <target>Idiomas hablados</target>
       </trans-unit>
       <trans-unit id="38" resname="r752624070" restype="string" datatype="java">
         <source>Languages read or write</source>
@@ -232,11 +232,11 @@
       </trans-unit>
       <trans-unit id="47" resname="r168601375" restype="string" datatype="java">
         <source>Miscarriage</source>
-        <target>Abortos</target>
+        <target>Aborto Espontáneo</target>
       </trans-unit>
       <trans-unit id="48" resname="r195136348" restype="string" datatype="java">
         <source>Living Children</source>
-        <target>Hijos Vivos</target>
+        <target>Niños vivos</target>
       </trans-unit>
       <trans-unit id="49" resname="r363512150" restype="string" datatype="java">
         <source>Dietary Restrictions</source>
@@ -256,7 +256,7 @@
       </trans-unit>
       <trans-unit id="53" resname="r453710191" restype="string" datatype="java">
         <source>Recreational Drugs</source>
-        <target>Drogas Recreativas</target>
+        <target>Fármacos Recreativos</target>
       </trans-unit>
       <trans-unit id="54" resname="r113282183" restype="string" datatype="java">
         <source>Talk to a doctor now</source>
@@ -328,7 +328,7 @@
       </trans-unit>
       <trans-unit id="61" resname="r506086129" restype="string" datatype="java">
         <source>GPS is not enabled. Do you want to go to settings menu?</source>
-        <target>GPS no está habilitado. ¿Quiéres ir al menú de configuración?</target>
+        <target>GPS no está habilitado. ¿Quieres ir al menú de configuración?</target>
       </trans-unit>
       <trans-unit id="62" resname="r705098731" restype="string" datatype="java">
         <source>Settings</source>
@@ -569,7 +569,7 @@
       </trans-unit>
       <trans-unit id="107" resname="r615851205" restype="string" datatype="java">
         <source>Okay</source>
-        <target>Okay</target>
+        <target>Ok</target>
       </trans-unit>
     </body>
   </file>
@@ -597,7 +597,7 @@
       </trans-unit>
       <trans-unit id="113" resname="r978351646" restype="string" datatype="java">
         <source>Login failed</source>
-        <target>Ingreso fallido</target>
+        <target>Inicio de Sesión fallido</target>
       </trans-unit>
     </body>
   </file>
@@ -646,7 +646,7 @@
       </trans-unit>
       <trans-unit id="122" resname="r330421111" restype="string" datatype="java">
         <source>Your email was updated. Going forward, please use {email_address} to log in.</source>
-        <target>Tu correo electrónico ha sido actualizado. En adelante, por favor usa {email_address} para ingresar.</target>
+        <target>Tu correo electrónico fue actualizado. En adelante, por favor, usa {email_address} para iniciar sesión.</target>
       </trans-unit>
       <trans-unit id="123" resname="r446236069" restype="string" datatype="java">
         <source>Success!</source>
@@ -654,11 +654,11 @@
       </trans-unit>
       <trans-unit id="124" resname="r293215607" restype="string" datatype="java">
         <source>Your password was updated. Going forward, please use this to log in.</source>
-        <target>Tu contraseña ha sido actualizada. En adelante, por favor usa esto para ingresar.</target>
+        <target>Tu contraseña fue actualizada. En adelante, por favor, usa {email_address} para iniciar sesión.</target>
       </trans-unit>
       <trans-unit id="125" resname="r202123273" restype="string" datatype="java">
         <source>Learn about HealthTap</source>
-        <target>Aprende acerca de HealthTap</target>
+        <target>Aprender acerca de HealthTap</target>
       </trans-unit>
       <trans-unit id="127" resname="r557318342" restype="string" datatype="java">
         <source>Privacy</source>
@@ -670,7 +670,7 @@
       </trans-unit>
       <trans-unit id="131" resname="r208644008" restype="string" datatype="java">
         <source>We couldn&apos;t remove your card. Please try again or contact support if the problem persists.</source>
-        <target>No pudimos eliminar tu tarjeta. Por favor, intenta otra vez o contacta a suporte si el problema persiste.</target>
+        <target>No pudimos eliminar tu tarjeta. Por favor, intenta otra vez o contacta a soporte si el problema persiste.</target>
       </trans-unit>
       <trans-unit id="132" resname="r218644464" restype="string" datatype="java">
         <source>Contact Support</source>
@@ -698,7 +698,7 @@
       </trans-unit>
       <trans-unit id="138" resname="r156592917" restype="string" datatype="java">
         <source>Prime &#40;Pay-as-you-go&#41;</source>
-        <target>Prime &#40;Paga a medida que avanzas&#41;</target>
+        <target>Prime &#40;El Plan de Pago por Uso&#41;</target>
       </trans-unit>
       <trans-unit id="139" resname="r975846192" restype="string" datatype="java">
         <source>Prime</source>
@@ -738,7 +738,7 @@
       </trans-unit>
       <trans-unit id="709" resname="r971226793" restype="string" datatype="java">
         <source>You have already missed the appointment! Please reschedule another one.</source>
-        <target>¡Ya perdiste la cita! Por favor agenda otra.</target>
+        <target>¡Ya has perdido la cita! Por favor, agenda otra.</target>
       </trans-unit>
       <trans-unit id="710" resname="r861565268" restype="string" datatype="java">
         <source>Checking location...</source>
@@ -750,7 +750,7 @@
       </trans-unit>
       <trans-unit id="712" resname="r1045468153" restype="string" datatype="java">
         <source>It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat</source>
-        <target>Parece que tu conexión de internet es demasiado pobre para iniciar una consulta de video. Por favor mejora tu conexión e intenta otra vez, o continúa con tu cita por chat de texto</target>
+        <target>Parece que tu conexión de internet es muy pobre para comenzar una consulta por video. Por favor, mejora tu conexión e intenta otra vez, o continúa tu cita por chat de texto.</target>
       </trans-unit>
       <trans-unit id="713" resname="r753416698" restype="string" datatype="java">
         <source>Try again</source>
@@ -917,7 +917,7 @@
         <source>Payment</source>
         <target>Pago</target>
       </trans-unit>
-      <trans-unit id="165" resname="r370240484" restype="string" datatype="java">
+      <trans-unit id="165" resname="r901641921" restype="string" datatype="java">
         <source>per minute\n5-minute minimum</source>
         <target>por minuto\n5 minutos mínimo</target>
       </trans-unit>
@@ -935,7 +935,7 @@
       </trans-unit>
       <trans-unit id="168" resname="r169802058" restype="string" datatype="java">
         <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel\u00a0anytime</source>
-        <target>Obtén consejo, recetas y recordatorios. Satisfacción 100% garantizada, cancela\u00a0en cualquier momento</target>
+        <target>Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar\u00a0en cualquier momento</target>
       </trans-unit>
       <trans-unit id="169" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
@@ -953,11 +953,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscribePaymentFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="172" resname="r976932793" restype="string" datatype="java">
+      <trans-unit id="172" resname="r194999707" restype="string" datatype="java">
         <source>{start}Your total{end}No commitment, cancel anytime</source>
         <target>{start}Tu total{end}Sin compromiso, cancela en cualquier momento</target>
       </trans-unit>
-      <trans-unit id="173" resname="r844357829" restype="string" datatype="java">
+      <trans-unit id="173" resname="r923373309" restype="string" datatype="java">
         <source>Your total for 1 consult</source>
         <target>Tu total por 1 consulta</target>
       </trans-unit>
@@ -999,19 +999,19 @@
       </trans-unit>
       <trans-unit id="182" resname="r250043534" restype="string" datatype="java">
         <source>Credit card number is not valid. Please input correct number.</source>
-        <target>Número de tarjeta de crédito es inválido. Por favor ingresa el número correcto.</target>
+        <target>El número de la tarjeta de crédito no es válido. Por favor, ingresa el número correcto.</target>
       </trans-unit>
       <trans-unit id="183" resname="r564653974" restype="string" datatype="java">
         <source>Failed to update your payment method, please try again later</source>
-        <target>Actualización de tu método de pago fallida, por favor intenta otra vez más tarde</target>
+        <target>Actualización de tu método de pago fallida, por favor, intenta otra vez más tarde</target>
       </trans-unit>
     </body>
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/PayOncePaymentFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="184" resname="r527034961" restype="string" datatype="java">
+      <trans-unit id="184" resname="r580375147" restype="string" datatype="java">
         <source>Your card ending in *{four_digit_number} has expired. \n Please add a new one</source>
-        <target>Tu tarjeta terminando en *{four_digit_number} ha vencido. \n Por favor añade una nueva</target>
+        <target>Tu tarjeta que termina en *{four_digit_number} ha vencido. \n Por favor, añade una nueva</target>
       </trans-unit>
       <trans-unit id="185" resname="r253259183" restype="string" datatype="java">
         <source>Discount: &#40;%s&#41;</source>
@@ -1027,7 +1027,7 @@
       </trans-unit>
       <trans-unit id="188" resname="r405904112" restype="string" datatype="java">
         <source>Please provide valid credit card information</source>
-        <target>Por favor ingresa información de tarjeta de crédito válida</target>
+        <target>Por favor, ingresa información de tarjeta de crédito válida</target>
       </trans-unit>
       <trans-unit id="189" resname="r541483380" restype="string" datatype="java">
         <source>Unknown error while paying!</source>
@@ -1039,7 +1039,7 @@
       </trans-unit>
       <trans-unit id="191" resname="r95353935" restype="string" datatype="java">
         <source>&#40;$%s regularly&#41;</source>
-        <target>&#40;$%s &#41;</target>
+        <target>&#40;$%s regularmente&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -1049,7 +1049,7 @@
         <source>Pay &amp; Send</source>
         <target>Pagar &amp; Enviar</target>
       </trans-unit>
-      <trans-unit id="193" resname="r813647634" restype="string" datatype="java">
+      <trans-unit id="193" resname="r715343662" restype="string" datatype="java">
         <source>{start}Your total{end}\nFor additional options</source>
         <target>{start}Tu total{end}\nPara opciones adicionales</target>
       </trans-unit>
@@ -1095,7 +1095,7 @@
     <body>
       <trans-unit id="200" resname="r855674847" restype="string" datatype="java">
         <source>Charge the card ending in %s</source>
-        <target>Carga a la tarjeta con terminación en %s</target>
+        <target>Carga a la tarjeta terminando en %s</target>
       </trans-unit>
       <trans-unit id="201" resname="r552622470" restype="string" datatype="java">
         <source>Discount: {promo_code} &#40;{discription}&#41;</source>
@@ -1115,15 +1115,15 @@
     <body>
       <trans-unit id="204" resname="r235232588" restype="string" datatype="java">
         <source>Failed to get authorization</source>
-        <target>Adquisión de autorización fallida</target>
+        <target>Adquisicón de autorización fallida</target>
       </trans-unit>
       <trans-unit id="205" resname="r486879463" restype="string" datatype="java">
         <source>Failed to read contacts from your Live account</source>
-        <target>Lectura de contactos de tu cuenta Live falldia</target>
+        <target>Lectura de contactos de tu cuenta Live fallida</target>
       </trans-unit>
       <trans-unit id="206" resname="r711255563" restype="string" datatype="java">
         <source>Please enter valid email addresses or phone number</source>
-        <target>Por favor ingresa direcciones de correo electrónico o números de teléfono válidos</target>
+        <target>Por favor, ingresa direcciones de correo electrónico o números de teléfono válidos</target>
       </trans-unit>
       <trans-unit id="207" resname="r270523450" restype="string" datatype="java">
         <source>Can&apos;t find any contacts in your address book</source>
@@ -1131,7 +1131,7 @@
       </trans-unit>
       <trans-unit id="208" resname="r460034798" restype="string" datatype="java">
         <source>Can&apos;t import any contacts from your account, please try another way!</source>
-        <target>No se pueden importar contactos desde tu cuenta, ¡por favor intenta de otra forma!</target>
+        <target>No se pueden importar contactos desde tu cuenta, ¡por favor, intenta de otra forma!</target>
       </trans-unit>
     </body>
   </file>
@@ -1233,7 +1233,7 @@
         <source>Myth:</source>
         <target>Mito:</target>
       </trans-unit>
-      <trans-unit id="228" resname="r312270832" restype="string" datatype="java">
+      <trans-unit id="228" resname="r142482154" restype="string" datatype="java">
         <source>agreed with {author_name}&apos;s tip on \n{topic_name}</source>
         <target>estuvo de acuerdo con el tip de {author_name}\ acerca de \n{topic_name}</target>
         <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
@@ -1270,7 +1270,7 @@
       </trans-unit>
       <trans-unit id="234" resname="r622822777" restype="string" datatype="java">
         <source>Failed to send reminder!</source>
-        <target>¡Envío de recordatorio fallido</target>
+        <target>¡Envío de recordatorio fallido!</target>
       </trans-unit>
     </body>
   </file>
@@ -1524,9 +1524,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/CareTeamTabFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="275" resname="r142513993" restype="string" datatype="java">
-        <source>Practicing: </source>
-        <target>Ejerciendo: </target>
+      <trans-unit id="275" resname="r383257904" restype="string" datatype="java">
+        <source>Practicing:</source>
+        <target>Ejerciendo:</target>
       </trans-unit>
       <trans-unit id="276" resname="r36845865" restype="string" datatype="java">
         <source>HealthTap Honor</source>
@@ -1552,7 +1552,7 @@
         <source>Would you like to share more details and get an immediate doctor answer?</source>
         <target>¿Te gustaría compartir más detalles y obtener una respuesta inmediata del doctor?</target>
       </trans-unit>
-      <trans-unit id="281" resname="r743681507" restype="string" datatype="java">
+      <trans-unit id="281" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
         <target>\\nPrueba una Consulta Virtual ›</target>
       </trans-unit>
@@ -1662,7 +1662,7 @@
       </trans-unit>
       <trans-unit id="301" resname="r845402666" restype="string" datatype="java">
         <source>Agrees and comments</source>
-        <target>De acuerdos y comentarios</target>
+        <target>De Acuerdos y comentarios</target>
       </trans-unit>
     </body>
   </file>
@@ -1684,13 +1684,13 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/login/LoginFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="307" resname="r1034170198" restype="string" datatype="java">
+      <trans-unit id="307" resname="r338685022" restype="string" datatype="java">
         <source>Hi, Dr {doctor_name}!\n</source>
         <target>¡Hola, Dr. {doctor_name}!\n</target>
       </trans-unit>
-      <trans-unit id="308" resname="r867239650" restype="string" datatype="java">
+      <trans-unit id="308" resname="r9796713" restype="string" datatype="java">
         <source>To log in as a doctor, please download\n</source>
-        <target>Para ingresar como un doctor, por favor descarga\n</target>
+        <target>Para iniciar sesión como un doctor, por favor, descarga\n</target>
       </trans-unit>
       <trans-unit id="309" resname="r832518227" restype="string" datatype="java">
         <source>HealthTap for Doctors</source>
@@ -1706,7 +1706,7 @@
       </trans-unit>
       <trans-unit id="311" resname="r759288032" restype="string" datatype="java">
         <source>Failed to login</source>
-        <target>Ingreso fallido</target>
+        <target>Inicio de Sesión fallido</target>
       </trans-unit>
       <trans-unit id="312" resname="r474515180" restype="string" datatype="java">
         <source>Network error!</source>
@@ -1718,7 +1718,7 @@
     <body>
       <trans-unit id="313" resname="r326468751" restype="string" datatype="java">
         <source>Share FeelGood Moment</source>
-        <target>Comparte un Momento</target>
+        <target>Comparte un Momento FeelGood</target>
       </trans-unit>
       <trans-unit id="314" resname="r949193654" restype="string" datatype="java">
         <source>Choose a beautiful, inspiring photo for {name}</source>
@@ -1726,11 +1726,11 @@
       </trans-unit>
       <trans-unit id="315" resname="r30621443" restype="string" datatype="java">
         <source>Please share a caption</source>
-        <target>Por favor comparte una leyenda</target>
+        <target>Por favor, comparte una leyenda</target>
       </trans-unit>
       <trans-unit id="316" resname="r743481433" restype="string" datatype="java">
         <source>Please share a photo</source>
-        <target>Por favor comparte una foto</target>
+        <target>Por favor, comparte una foto</target>
       </trans-unit>
     </body>
   </file>
@@ -1782,7 +1782,7 @@
     <body>
       <trans-unit id="323" resname="r305199554" restype="string" datatype="java">
         <source>The doctor has already responded. Would you like to see the response?</source>
-        <target>El doctor ya respondió. ¿Te gustaría ver la respuesta?</target>
+        <target>El doctor ya ha respondido. ¿Te gustaría ver la respuesta?</target>
       </trans-unit>
     </body>
   </file>
@@ -1815,7 +1815,7 @@
     <body>
       <trans-unit id="328" resname="r1049283273" restype="string" datatype="java">
         <source>Please choose how you&apos;d like to pay</source>
-        <target>Por favor elige cómo te gustaría pagar</target>
+        <target>Por favor, elige cómo te gustaría pagar</target>
       </trans-unit>
     </body>
   </file>
@@ -1873,7 +1873,7 @@
       </trans-unit>
       <trans-unit id="332" resname="r538236432" restype="string" datatype="java">
         <source>Consult</source>
-        <target>Consulta</target>
+        <target>Consultar</target>
         <note annotates="source">Video consult tab label</note>
       </trans-unit>
       <trans-unit id="704" resname="r886498934" restype="string" datatype="java">
@@ -1902,7 +1902,7 @@
       </trans-unit>
       <trans-unit id="642" resname="r1009059144" restype="string" datatype="java">
         <source>Please upload a file with size less than 10 MB.</source>
-        <target>Por favor sube un archivo que sea de menos de 10 MB.</target>
+        <target>Por favor, sube un archivo que sea de menos de 10 MB.</target>
       </trans-unit>
       <trans-unit id="643" resname="r329404987" restype="string" datatype="java">
         <source>Do you want to cancel uploading this file?</source>
@@ -1924,7 +1924,7 @@
     <body>
       <trans-unit id="342" resname="r643707328" restype="string" datatype="java">
         <source>Please note,</source>
-        <target>Por favor nota,</target>
+        <target>Por favor, nota,</target>
       </trans-unit>
       <trans-unit id="343" resname="r516013355" restype="string" datatype="java">
         <source>{doctor_name} is out of office until {date}.</source>
@@ -1968,11 +1968,11 @@
       </trans-unit>
       <trans-unit id="350" resname="r924154384" restype="string" datatype="java">
         <source>We&apos;re sorry, HealthTap Concierge is not currently available in Idaho. However, you may still user HealthTap Concierge when traveling out of state!</source>
-        <target>, HealthTap Concierge no está disponible actualmente en Idaho. ¡Sin embargo, aún puedes usar HealthTap Concierge cuando viajas fuera del estado!</target>
+        <target>Perdón, HealthTap Concierge actualmente no está disponible en Idaho. Sin embargo, ¡todavía puedes utilizar HealthTap Concierge cuando viajes fuera del estado!</target>
       </trans-unit>
-      <trans-unit id="351" resname="r285846926" restype="string" datatype="java">
+      <trans-unit id="351" resname="r261042682" restype="string" datatype="java">
         <source>{docname} will only be able to provide you with a second opinion on an existing diagnosis or treatment plan from your own doctor. {docname} cannot treat or diagnose you during this consult.\nIf you&apos;d like a new diagnosis or treatment, try consulting one of our top doctors licensed in your state.</source>
-        <target>{docname} solo podrá brindarte una segunda opinión acerca de un diagnóstico existente o plan de tratamiento de tu propio doctor. {docname} no puede tratarte o diagnosticarte durante esta consulta.\nSi quieres un nuevo diagnóstico o tratamiento, intenta consultar a uno de nuestros mejores doctores acreditado en tu estado.</target>
+        <target>{docname} sólo será capaz de proporcionarte una segunda opinión sobre un diagnóstico o plan de tratamiento existente de tu propio doctor. {docname} no puede tratarte o diagnosticarte durante esta consulta.\nSi quisieras un nuevo diagnóstico o tratamiento, intenta consultar con uno de nuestros mejores doctores acreditados en tu estado.</target>
       </trans-unit>
       <trans-unit id="352" resname="r201775100" restype="string" datatype="java">
         <source>Here are some doctors from {state} you could connect with:</source>
@@ -1992,7 +1992,7 @@
       </trans-unit>
       <trans-unit id="356" resname="r635460755" restype="string" datatype="java">
         <source>{doctor_name} is only licensed to see patients in {states}. You may still request to connect, however you will only be able to consult {doctor_name} when you are traveling to one of these locations.</source>
-        <target>{doctor_name} solo está certificado para ver pacientes en {states}. Aún puedes solicitar conectarte, sin embargo, solo podrás consultar con {doctor_name} cuando estés viajando a una de estas localidades.</target>
+        <target>{doctor_name} sólo está acreditado para ver pacientes en {states}. Aún puedes solicitar conectarte, sin embargo, solo podrás consultar con {doctor_name} cuando estés viajando a una de estas localidades.</target>
       </trans-unit>
     </body>
   </file>
@@ -2020,7 +2020,7 @@
       </trans-unit>
       <trans-unit id="361" resname="r226163743" restype="string" datatype="java">
         <source>User not logged in</source>
-        <target>Usuario no ha ingresado</target>
+        <target>Usuario no ha iniciado sesión</target>
       </trans-unit>
       <trans-unit id="362" resname="r961790614" restype="string" datatype="java">
         <source>Your invitation is sent. We&apos;ll notify you when the doctor accepts you as a patient.</source>
@@ -2036,7 +2036,7 @@
       </trans-unit>
       <trans-unit id="365" resname="r1011963791" restype="string" datatype="java">
         <source>Cannot take a picture correctly, please try other methods.</source>
-        <target>No se puede tomar una foto correctamente, por favor intenta otros métodos.</target>
+        <target>No se puede tomar una foto correctamente, por favor, intenta otros métodos.</target>
       </trans-unit>
     </body>
   </file>
@@ -2076,7 +2076,7 @@
       </trans-unit>
       <trans-unit id="373" resname="r1031690163" restype="string" datatype="java">
         <source>Please enter your last name</source>
-        <target>Por favor escribe tu apellido</target>
+        <target>Por favor, escribe tu apellido</target>
       </trans-unit>
       <trans-unit id="374" resname="r407726140" restype="string" datatype="java">
         <source>Phone format invalid</source>
@@ -2108,7 +2108,7 @@
     <body>
       <trans-unit id="379" resname="r124902807" restype="string" datatype="java">
         <source>Get HealthTap Prime</source>
-        <target>HealthTap Prime</target>
+        <target>Obtén HealthTap Prime</target>
       </trans-unit>
       <trans-unit id="380" resname="r1061725992" restype="string" datatype="java">
         <source>Promo code copied to clipboard.</source>
@@ -2146,7 +2146,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/tablayouts/GoalTakeActionTabLayout.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="385" resname="r558830488" restype="string" datatype="java">
+      <trans-unit id="385" resname="r843399816" restype="string" datatype="java">
         <source>There are no checklists for this goal yet.\nWant a personalized checklist?</source>
         <target>Aún no hay listados para esta meta.\n¿Quieres un listado personalizado?</target>
       </trans-unit>
@@ -2206,7 +2206,7 @@
         <source>Known for {known_for_topic_name}</source>
         <target>Conocido por {known_for_topic_name}</target>
       </trans-unit>
-      <trans-unit id="394" resname="r758898992" restype="string" datatype="java">
+      <trans-unit id="394" resname="r812841735" restype="string" datatype="java">
         <source>Here&apos;s a referral to a {expert_specialty} {start}{expert_name}{end}, you can consult for advice and treatment:</source>
         <target>Aquí está una referencia para un {expert_specialty} {start}{expert_name}{end}, que puedes consultar para consejo y tratamiento:</target>
       </trans-unit>
@@ -2297,9 +2297,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/GoalTakeActionListItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="411" resname="r390005620" restype="string" datatype="java">
-        <source>{approver_name} agreed with {author_name}&apos;s checklist</source>
-        <target>{approver_name} estuvo de acuerdo con el listado de\ {author_name}</target>
+      <trans-unit id="411" resname="r363844654" restype="string" datatype="java">
+        <source>{approver_name} agreed with {author_name}\&apos;s checklist</source>
+        <target>{approver_name} estuvo de acuerdo con el listado de {author_name}</target>
       </trans-unit>
       <trans-unit id="412" resname="r776974405" restype="string" datatype="java">
         <source>{name} created</source>
@@ -2371,7 +2371,7 @@
     <body>
       <trans-unit id="425" resname="r113489780" restype="string" datatype="java">
         <source>When was the last time? &#40;year&#41;</source>
-        <target>¿Cuándo fue la última vez? &#40;año&#41;</target>
+        <target>¿Cuándo fue la última vez? &#40;Año&#41;</target>
         <note annotates="source">When&#40;which year&#41; was the last time that the patient got a specific vaccination?</note>
       </trans-unit>
     </body>
@@ -2380,11 +2380,11 @@
     <body>
       <trans-unit id="426" resname="r791973709" restype="string" datatype="java">
         <source>Have you ever had sex? If so, with men, women, or both?</source>
-        <target>¿Alguna vez has tenido sexo? ¿Si es así, con hombres, mujeres o ambos?</target>
+        <target>¿Alguna vez has tenido sexo? Si es así, ¿con hombres, mujeres, o ambos?</target>
       </trans-unit>
       <trans-unit id="427" resname="r85836604" restype="string" datatype="java">
         <source>Has {first_name} ever had sex? If so, with men, women, or both?</source>
-        <target>¿Alguna vez ha tenido sexo {first_name}? ¿Si es así, con hombres, mujeres o ambos?</target>
+        <target>¿Alguna vez ha tenido sexo {first_name}? Si es así, ¿con hombres, mujeres, o ambos?</target>
       </trans-unit>
     </body>
   </file>
@@ -2392,7 +2392,7 @@
     <body>
       <trans-unit id="428" resname="r22905822" restype="string" datatype="java">
         <source>Please fill out all the information</source>
-        <target>Por favor llena toda la información</target>
+        <target>Por favor, llena toda la información</target>
       </trans-unit>
     </body>
   </file>
@@ -2412,14 +2412,14 @@
     <body>
       <trans-unit id="431" resname="r62184480" restype="string" datatype="java">
         <source>Do your grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
-        <target>¿Tus abuelos, padres o hermanos tienen alguna condición médica mayor? &#40;¿que atente contra la vida o no?&#41;</target>
+        <target>¿Tus abuelos, padres o hermanos tienen alguna condición médica mayor? &#40;¿que atente o no contra la vida?&#41;</target>
       </trans-unit>
       <trans-unit id="432" resname="r296786865" restype="string" datatype="java">
         <source>Is {first_name} alive?</source>
         <target>¿Está vivo {first_name}?</target>
       </trans-unit>
-      <trans-unit id="433" resname="r920181258" restype="string" datatype="java">
-        <source>Does {first_name}&apos;s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
+      <trans-unit id="433" resname="r914415647" restype="string" datatype="java">
+        <source>Does {first_name}\&apos;s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
         <target>¿Los abuelos, padres o hermanos vivos de {first_name} tienen alguna condición médica mayor? &#40;¿que atente contra la vida o no?&#41;</target>
       </trans-unit>
       <trans-unit id="434" resname="r685531918" restype="string" datatype="java">
@@ -2428,7 +2428,7 @@
       </trans-unit>
       <trans-unit id="435" resname="r977679182" restype="string" datatype="java">
         <source>Do your living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
-        <target>¿Tus abuelos, padres o hermanos vivos tienen alguna condición médica mayor? &#40;¿que atente contra la vida o no?&#41;</target>
+        <target>¿Tus abuelos, padres o hermanos vivos tienen alguna condición médica mayor? &#40;¿que atente o no contra la vida?&#41;</target>
       </trans-unit>
       <trans-unit id="436" resname="r498384066" restype="string" datatype="java">
         <source>Did any close relative &#40;sibling, parent, grandparent&#41; pass away before the age of 60 from a condition?</source>
@@ -2670,7 +2670,7 @@
       </trans-unit>
       <trans-unit id="483" resname="r629431647" restype="string" datatype="java">
         <source>Take this</source>
-        <target>Toma esto</target>
+        <target>Tomo esto</target>
         <note annotates="source">This means that the patient is currently taking this medication.</note>
       </trans-unit>
       <trans-unit id="484" resname="r318925728" restype="string" datatype="java">
@@ -2685,7 +2685,7 @@
       </trans-unit>
       <trans-unit id="487" resname="r578633561" restype="string" datatype="java">
         <source>Update condition or symptom</source>
-        <target>Actualizar una condición o síntoma</target>
+        <target>Actualizar condición o síntoma</target>
         <note annotates="source">This means to update patient&apos;s conditions or symptoms profile</note>
       </trans-unit>
       <trans-unit id="488" resname="r655463906" restype="string" datatype="java">
@@ -2794,7 +2794,7 @@
       </trans-unit>
       <trans-unit id="498" resname="r808907878" restype="string" datatype="java">
         <source>Please don&apos;t include a followup question in your note. {start}To do so, ask a question.{end}</source>
-        <target>Por favor no incluyas una pregunta de seguimiento en tu nota. {start}Para hacerlo, haz una pregunta.{end}</target>
+        <target>Por favor, no incluyas una pregunta de seguimiento en tu nota. {start}Para hacerlo, haz una pregunta.{end}</target>
       </trans-unit>
     </body>
   </file>
@@ -2834,11 +2834,11 @@
       </trans-unit>
       <trans-unit id="505" resname="r146165250" restype="string" datatype="java">
         <source>Your new password must be at least 6 characters. Please try again.</source>
-        <target>Tu nuev contraseña debe de ser de al menos 6 caracteres. Por favor intenta otra vez.</target>
+        <target>Tu nueva contraseña debe de ser de al menos 6 caracteres. Por favor, intenta otra vez.</target>
       </trans-unit>
       <trans-unit id="506" resname="r849501100" restype="string" datatype="java">
         <source>Your new passwords do not match. Please try again.</source>
-        <target>Tus nuevas contraseñas no coinciden. Por favor intenta otra vez.</target>
+        <target>Tus nuevas contraseñas no coinciden. Por favor, intenta otra vez.</target>
       </trans-unit>
     </body>
   </file>
@@ -2866,7 +2866,7 @@
       </trans-unit>
       <trans-unit id="511" resname="r616392764" restype="string" datatype="java">
         <source>Please enter your feedback</source>
-        <target>Por favor ingresa tus comentarios</target>
+        <target>Por favor, ingresa tus comentarios</target>
       </trans-unit>
       <trans-unit id="512" resname="r287900893" restype="string" datatype="java">
         <source>Thank you!</source>
@@ -2910,7 +2910,7 @@
       </trans-unit>
       <trans-unit id="519" resname="r312184836" restype="string" datatype="java">
         <source>We&apos;re committed to your satisfaction and providing a delightful experience. Please let us know why you&apos;d like to downgrade.</source>
-        <target>Estamos comprometidos con tu satisfacción y con brindarte una experiencia encantadora. Por favor, haznos saber la razón por la que quieres bajar de categoría.</target>
+        <target>Estamos comprometidos con tu satisfacción y brindarte una experiencia encantadora. Por favor, haznos saber la razón por la que te gustaría bajar de categoría.</target>
       </trans-unit>
       <trans-unit id="520" resname="r127795338" restype="string" datatype="java">
         <source>Please enter a reason.</source>
@@ -2918,7 +2918,7 @@
       </trans-unit>
       <trans-unit id="521" resname="r829279545" restype="string" datatype="java">
         <source>Failed to downgrade to pay-as-you-go plan!!!</source>
-        <target>¡¡¡Baja de categoría a paga a medida que avanzas!!!</target>
+        <target>¡¡¡Baja de categoría a el plan de pago por uso!!!</target>
       </trans-unit>
       <trans-unit id="522" resname="r105168299" restype="string" datatype="java">
         <source>Subscription Canceled</source>
@@ -2938,11 +2938,11 @@
       </trans-unit>
       <trans-unit id="526" resname="r987771035" restype="string" datatype="java">
         <source>Sorry, there was a problem</source>
-        <target>Lo sentimos, hubo un problema</target>
+        <target>Perdón, hubo un problema</target>
       </trans-unit>
       <trans-unit id="527" resname="r895141403" restype="string" datatype="java">
         <source>We couldn&apos;t downgrade your plan. Please try again or contact support if the problem persists.</source>
-        <target>No pudimos bajar tu plan de categoría. Por favor, intenta otra vez o contacta a suporte si el problema persiste.</target>
+        <target>No pudimos bajar tu plan de categoría. Por favor, intenta otra vez o contacta a soporte si el problema persiste.</target>
       </trans-unit>
     </body>
   </file>
@@ -2990,7 +2990,7 @@
     <body>
       <trans-unit id="535" resname="r501208844" restype="string" datatype="java">
         <source>Please choose a reason for report.</source>
-        <target>Por favor elige una razón para el reporte.</target>
+        <target>Por favor, elige una razón para el reporte.</target>
       </trans-unit>
     </body>
   </file>
@@ -2998,7 +2998,7 @@
     <body>
       <trans-unit id="536" resname="r332773442" restype="string" datatype="java">
         <source>Please at least select one known for topic to recommend.</source>
-        <target>Por favor selecciona al menos tema conocido por para recomendar.</target>
+        <target>Por favor, selecciona al menos tema conocido por para recomendar.</target>
       </trans-unit>
       <trans-unit id="537" resname="r1067817368" restype="string" datatype="java">
         <source>{name} appreciates your recommendation :&#41;</source>
@@ -3035,12 +3035,12 @@
       </trans-unit>
       <trans-unit id="543" resname="r994191776" restype="string" datatype="java">
         <source>We will notify you when {name} accepts.</source>
-        <target>Te notificaremos cuando {nombre} acepte.</target>
+        <target>Te notificaremos cuando {name} acepte.</target>
         <note annotates="source">This is shown after user successfully invites others to support him with his goal.</note>
       </trans-unit>
       <trans-unit id="544" resname="r232807942" restype="string" datatype="java">
         <source>Can&apos;t get invite link from server, please try again later.</source>
-        <target>No se puede obtener enlace de invitación del servidor, por favor intenta otra vez más tarde.</target>
+        <target>No se puede obtener enlace de invitación del servidor, por favor, intenta otra vez más tarde.</target>
       </trans-unit>
     </body>
   </file>
@@ -3048,7 +3048,7 @@
     <body>
       <trans-unit id="545" resname="r299140248" restype="string" datatype="java">
         <source>Doctors will review your post before it&apos;s published. Review more helpful to extend your impact</source>
-        <target>Doctores valorarán tu publicación antes de que sea publicada. Valora más útil para extender tu impacto</target>
+        <target>Los doctores revisarán tu publicación antes que sea publicada. Revisa los más útiles para extender tu impacto</target>
       </trans-unit>
     </body>
   </file>
@@ -3064,7 +3064,7 @@
     <body>
       <trans-unit id="547" resname="r990221630" restype="string" datatype="java">
         <source>Please enter valid email addresses</source>
-        <target>Por favor ingresa direcciones de correo electrónico válidas</target>
+        <target>Por favor, ingresa direcciones de correo electrónico válidas</target>
       </trans-unit>
     </body>
   </file>
@@ -3202,7 +3202,7 @@
     <body>
       <trans-unit id="568" resname="r715169275" restype="string" datatype="java">
         <source>No new Google Fit data requires synchronization.</source>
-        <target>Ningún dato de Google Fit requeire sincronización.</target>
+        <target>Ningún dato de Google Fit requiere sincronización.</target>
       </trans-unit>
       <trans-unit id="569" resname="r18496188" restype="string" datatype="java">
         <source>Updated</source>
@@ -3303,7 +3303,7 @@
       </trans-unit>
       <trans-unit id="589" resname="r99283511" restype="string" datatype="java">
         <source>Failure in updating mailing address. Please try again later.</source>
-        <target>Actualización de dirección de correo fallida. Por favor intenta otra vez más tarde.</target>
+        <target>Falla al actualizar la dirección de correo postal. Por favor, intenta de nuevo más tarde.</target>
       </trans-unit>
     </body>
   </file>
@@ -3357,7 +3357,7 @@
       </trans-unit>
       <trans-unit id="602" resname="r356004357" restype="string" datatype="java">
         <source>Hi, {name}!</source>
-        <target>¡Hola, &#40;{name}&#41;!</target>
+        <target>¡Hola, {name}!</target>
       </trans-unit>
       <trans-unit id="603" resname="r787211475" restype="string" datatype="java">
         <source>99+</source>
@@ -3366,11 +3366,11 @@
       </trans-unit>
       <trans-unit id="604" resname="r496979713" restype="string" datatype="java">
         <source>Dr. Rutledge: Welcome! Have a health question? We’re here to help.</source>
-        <target>Dr. Rutledge: ¡Bienvenido! ¿Tienes una pregunta de salud? Estamos aquí para ayudar.</target>
+        <target>Dr. Rutledge: ¡Bienvenido! ¿Tienes alguna pregunta de salud? Estamos aquí para ayudar.</target>
       </trans-unit>
       <trans-unit id="605" resname="r536808143" restype="string" datatype="java">
         <source>Dr. Rutledge: Welcome, {name}! Have a health question? We’re here to help.</source>
-        <target>Dr. Rutledge: ¡Bienvenido, {name}! ¿Tienes una pregunta de salud? Estamos aquí para ayudar.</target>
+        <target>Dr. Rutledge: ¡Bienvenido, {name}! ¿Tienes alguna pregunta de salud? Estamos aquí para ayudar.</target>
       </trans-unit>
     </body>
   </file>
@@ -3406,7 +3406,7 @@
       </trans-unit>
       <trans-unit id="611" resname="r1070181179" restype="string" datatype="java">
         <source>Thanked {name}</source>
-        <target>a {name}</target>
+        <target>Agradeció a {name}</target>
       </trans-unit>
       <trans-unit id="612" resname="r901997440" restype="string" datatype="java">
         <source>Actions taken</source>
@@ -3450,7 +3450,7 @@
       </trans-unit>
       <trans-unit id="619" resname="r583002661" restype="string" datatype="java">
         <source>Visit practice website</source>
-        <target>Visita sitio web de consultorio</target>
+        <target>Visitar sitio web de consultorio</target>
       </trans-unit>
       <trans-unit id="620" resname="r726757202" restype="string" datatype="java">
         <source>{journal_name} &#40;{journal_year}&#41;</source>
@@ -3458,7 +3458,7 @@
       </trans-unit>
       <trans-unit id="621" resname="r556911602" restype="string" datatype="java">
         <source>Insurances accepted</source>
-        <target>Seguros médicos aceptados</target>
+        <target>Seguros aceptados</target>
       </trans-unit>
       <trans-unit id="622" resname="r867855095" restype="string" datatype="java">
         <source>Please confirm currently accepted insurance plans directly with the doctor.</source>
@@ -3555,16 +3555,16 @@
     <body>
       <trans-unit id="639" resname="r856987417" restype="string" datatype="java">
         <source>Please contact us</source>
-        <target>Por favor contáctanos</target>
+        <target>Por favor, contáctanos</target>
       </trans-unit>
       <trans-unit id="640" resname="r597392307" restype="string" datatype="java">
         <source>You&apos;ve talked to a doctor {frequency_number} times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.</source>
-        <target>Has hablado con un doctor {frequency_number} veces este mes. Recuerda, las Consultas Virtuales de HealthTap no están dirigidas a reemplazar a tu médico de atención primaria o ser usadas para establecer una relación con un doctor en el mundo real.</target>
+        <target>Has hablado con un doctor {frequency_number} veces este mes. Recuerda, las Consultas Virtuales de HealthTap no pretenden reemplazar a tu médico de atención primaria o utilizarse como sustituto para establecer una relación con un doctor en el mundo real.</target>
         <note annotates="source">{frequency_number} is an integer number.</note>
       </trans-unit>
       <trans-unit id="641" resname="r706941085" restype="string" datatype="java">
         <source>We&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!</source>
-        <target>Nos gustaría que nos contactaras a [support@healthtap.com] para hacernos saber por qué necesitar continuar hablando con un doctor. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
+        <target>Nos gustaría que te comunicaras con nosotros a [support@healthtap.com] para hacernos saber la razón por la que necesita continuar hablando con un doctor. Estaremos felices de revisar tu caso y, si es apropiado, permitirte comenzar otra consulta. ¡Estamos aquí para ayudar!</target>
       </trans-unit>
     </body>
   </file>
@@ -3620,7 +3620,7 @@
       </trans-unit>
       <trans-unit id="655" resname="r762155906" restype="string" datatype="java">
         <source>We&apos;ll let you know when doctors add more answers or comments.</source>
-        <target>Te harmos saber  los doctores agreguen más respuestas o comentarios.</target>
+        <target>Te haremos saber cuándo los doctores agreguen más respuestas o comentarios.</target>
       </trans-unit>
       <trans-unit id="656" resname="r380153215" restype="string" datatype="java">
         <source>We&apos;ll share more insights related to this topic from now on.</source>
@@ -3633,7 +3633,7 @@
       </trans-unit>
       <trans-unit id="658" resname="r147358463" restype="string" datatype="java">
         <source>We&apos;ll highlight this influencer&apos;s insights for you on your feed.</source>
-        <target>Resaltaremos las perspicacias de este influenciador para ti en tu feed.</target>
+        <target>Resaltaremos las perspicacias de este influenciador para ti en tu fuente.</target>
       </trans-unit>
     </body>
   </file>
@@ -3720,7 +3720,7 @@
       </trans-unit>
       <trans-unit id="688" resname="r198602846" restype="string" datatype="java">
         <source>You asked on {0}. No responses yet.</source>
-        <target>Preguntaste el {0}. Ninguna respuesta aún.</target>
+        <target>Preguntaste el {0}. Aún no hay respuestas.</target>
         <note annotates="source">This is a notification message. {0} is a date.</note>
       </trans-unit>
       <trans-unit id="689" resname="r769580246" restype="string" datatype="java">
@@ -3730,7 +3730,7 @@
       </trans-unit>
       <trans-unit id="690" resname="r478701910" restype="string" datatype="java">
         <source>You asked for {start}{0}{end} on {1}. No responses yet.</source>
-        <target>Pediste {start}{0}{end} el {1}. Ninguna respuesta aún.</target>
+        <target>Preguntaste por {start}{0}{end} el {1}. Aún no hay respuestas.</target>
         <note annotates="source">This is a notification message. {0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="691" resname="r987402210" restype="string" datatype="java">
@@ -3790,7 +3790,7 @@
         <target>Servicio/Costo</target>
         <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
       </trans-unit>
-      <trans-unit id="680" resname="r793199154" restype="string" datatype="java">
+      <trans-unit id="680" resname="r884996706" restype="string" datatype="java">
         <source>One consult\t\t\t${0}</source>
         <target>Una consulta\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>
@@ -3940,11 +3940,11 @@
       </trans-unit>
       <trans-unit id="722" resname="cant_find_doctor" restype="string" datatype="x-android-resource">
         <source>Can\&apos;t find your doctor? Invite them »</source>
-        <target>¿No puedes\ encontrar a tu doctor? Invítalos »</target>
+        <target>¿No puedes encontrar a tu doctor? Invítalo »</target>
       </trans-unit>
       <trans-unit id="723" resname="cant_find_clinician" restype="string" datatype="x-android-resource">
         <source>Can\&apos;t find your clinician? Invite them »</source>
-        <target>¿No puedes\ encontrar a tu clínico? Invítalos »</target>
+        <target>¿No puedes encontrar a tu clínico? Invítalo »</target>
       </trans-unit>
       <trans-unit id="724" resname="picker_location_cta" restype="string" datatype="x-android-resource">
         <source>&#40;Change&#41;</source>
@@ -4092,11 +4092,11 @@
       </trans-unit>
       <trans-unit id="760" resname="symptom_triage_generic_disclaimer_text" restype="string" datatype="x-android-resource">
         <source>The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
-        <target>La información en HealthTap &#40;incluyendo esta herramienta&#41; es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor de servicios de emergencia local si crees que puedes estar teniendo una emergencia médica. Ver Información Adicional.</target>
+        <target>La información en HealthTap &#40;incluyendo esta herramienta&#41; es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor local de servicios de emergencia si crees que puedes estar teniendo una emergencia médica. Ver Información Adicional.</target>
       </trans-unit>
       <trans-unit id="761" resname="symptom_triage_non_diagnosis_disclaimer" restype="string" datatype="x-android-resource">
         <source>When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis it does not mean that you have &#40;or don\&apos;t have&#41; any particular potential conditions. The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
-        <target>Cuando eliges usar esta herramienta, podemos calcular y presentar condiciones u opciones de tratamiento médicamente relacionados a los síntomas y datos que ingreses. Esta información no es un diagnóstico y no significa que tienes &#40;o no\ tienes&#41; alguna condición particular en potencia. La información en HealthTap &#40;incluyendo esta herramienta&#41; es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor de servicios de emergencia local si crees que puedes estar teniendo una emergencia médica. Ver Información Adicional.</target>
+        <target>Cuando eliges usar esta herramienta, podemos calcular y presentar condiciones u opciones de tratamiento médicamente relacionados a los síntomas y datos que ingreses. Esta información no es un diagnóstico y no significa que tienes &#40;o no tienes&#41; alguna condición particular en potencia. La información en HealthTap &#40;incluyendo esta herramienta&#41; es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor local de servicios de emergencia si crees que puedes estar teniendo una emergencia médica. Ver Información Adicional.</target>
       </trans-unit>
       <trans-unit id="762" resname="symptom_triage_disclaimer_additional_info" restype="string" datatype="x-android-resource">
         <source>Additional Information</source>

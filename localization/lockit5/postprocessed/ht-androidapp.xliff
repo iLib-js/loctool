@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="89" resname="text_HIGH" restype="string" datatype="x-android-resource">
         <source>HIGH</source>
-        <target>ALTA</target>
+        <target>ALTO</target>
       </trans-unit>
       <trans-unit id="90" resname="text_Wrist_Fracture" restype="string" datatype="x-android-resource">
         <source>Wrist Fracture</source>
@@ -24,7 +24,7 @@
       </trans-unit>
       <trans-unit id="94" resname="text_Available_on_Mon__Oct_17" restype="string" datatype="x-android-resource">
         <source>Available on Mon, Oct 17</source>
-        <target>Disponible el Lun, 17 Oct</target>
+        <target>Disponible el Lun, 17 de Oct</target>
       </trans-unit>
     </body>
   </file>
@@ -146,7 +146,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/OnetimePayFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="589" resname="r813647634" restype="string" datatype="java">
+      <trans-unit id="589" resname="r715343662" restype="string" datatype="java">
         <source>{start}Your total{end}\nFor additional options</source>
         <target>{start}Tu total{end}\nPara opciones adicionales</target>
       </trans-unit>
@@ -154,9 +154,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/TipsDetailFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="624" resname="r312270832" restype="string" datatype="java">
+      <trans-unit id="624" resname="r142482154" restype="string" datatype="java">
         <source>agreed with {author_name}&apos;s tip on \n{topic_name}</source>
-        <target>estuvo de acuerdo con el tip de {author_name}\ acerca de \n{topic_name}</target>
+        <target>estuvo de acuerdo con el tip de {author_name} acerca de \n{topic_name}</target>
         <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
     </body>
@@ -217,7 +217,7 @@
     <body>
       <trans-unit id="812" resname="r390005620" restype="string" datatype="java">
         <source>{approver_name} agreed with {author_name}&apos;s checklist</source>
-        <target>{approver_name} estuvo de acuerdo con el listado de\ {author_name}</target>
+        <target>{approver_name} estuvo de acuerdo con el listado de {author_name}</target>
       </trans-unit>
     </body>
   </file>
@@ -241,11 +241,11 @@
     <body>
       <trans-unit id="1651" resname="cant_find_doctor" restype="string" datatype="x-android-resource">
         <source>Can\&apos;t find your doctor? Invite\u00a0them\u00a0»</source>
-        <target>¿No puedes\ encontrar a tu doctor? \u00a0\u00a0»</target>
+        <target>¿No puedes encontrar a tu doctor? \u00a0\u00a0»</target>
       </trans-unit>
       <trans-unit id="1652" resname="cant_find_clinician" restype="string" datatype="x-android-resource">
         <source>Can\&apos;t find your clinician? Invite\u00a0them\u00a0»</source>
-        <target>¿No puedes\ encontrar a tu clínico? \u00a0\u00a0»</target>
+        <target>¿No puedes encontrar a tu clínico? \u00a0\u00a0»</target>
       </trans-unit>
       <trans-unit id="1710" resname="cancel_appointment_content" restype="string" datatype="x-android-resource">
         <source>Are you sure you want to cancel this appointment with {doctor_name} on {slot_date} at {slot_time}?</source>
@@ -258,7 +258,7 @@
       </trans-unit>
       <trans-unit id="2021" resname="location_confirmation_content_text" restype="string" datatype="x-android-resource">
         <source>Please confirm so we can connect you with the right doctor who is licensed to help you in your state or country.</source>
-        <target>Por favor confirma para que podamos conectarte con el doctor adecuado que este acreditado para ayudarte en tu estado o país.</target>
+        <target>Por favor, confirma para que podamos conectarte con el doctor adecuado que este acreditado para ayudarte en tu estado o país.</target>
       </trans-unit>
       <trans-unit id="2191" resname="translation_attribution" restype="string" datatype="x-android-resource">
         <source>Translation approved by HealthTap doctors</source>
@@ -270,7 +270,7 @@
       </trans-unit>
       <trans-unit id="2194" resname="picker_entry_title" restype="string" datatype="x-android-resource">
         <source>What would you like to ask our doctors?</source>
-        <target>¿Qué te gustaría  a nuestros doctores?</target>
+        <target>¿Qué te gustaría preguntarles a nuestros doctores?</target>
       </trans-unit>
       <trans-unit id="2197" resname="picker_free_question_description" restype="string" datatype="x-android-resource">
         <source>Send doctors a brief, anonymous question and get informational text answers</source>
@@ -294,11 +294,11 @@
       </trans-unit>
       <trans-unit id="2203" resname="picker_search_hint" restype="string" datatype="x-android-resource">
         <source>Search by name or specialty</source>
-        <target>Busca por nombre o especialidad</target>
+        <target>Buscar por nombre o especialidad</target>
       </trans-unit>
       <trans-unit id="2204" resname="picker_filter_hint" restype="string" datatype="x-android-resource">
         <source>Search for...</source>
-        <target>Busca por...</target>
+        <target>Buscar por...</target>
       </trans-unit>
       <trans-unit id="2205" resname="picker_care_team" restype="string" datatype="x-android-resource">
         <source>CARE TEAM</source>
@@ -318,7 +318,7 @@
       </trans-unit>
       <trans-unit id="2215" resname="picker_filter_docscore" restype="string" datatype="x-android-resource">
         <source>Docscore</source>
-        <target>Docscore</target>
+        <target>DocScore</target>
       </trans-unit>
       <trans-unit id="2216" resname="picker_accepts_insurance" restype="string" datatype="x-android-resource">
         <source>Accepts insurance as payment</source>
@@ -368,7 +368,7 @@
       </trans-unit>
       <trans-unit id="2230" resname="invite_doctor_location" restype="string" datatype="x-android-resource">
         <source>Your Doctor\&apos;s Location</source>
-        <target>La Ubicación\ de Tu Doctor</target>
+        <target>La Ubicación de Tu Doctor</target>
       </trans-unit>
       <trans-unit id="2234" resname="starting_at" restype="string" datatype="x-android-resource">
         <source>Starting at</source>
@@ -409,7 +409,7 @@
       </trans-unit>
       <trans-unit id="2253" resname="symptom_triage_refinement_questions" restype="string" datatype="x-android-resource">
         <source>Refine symptoms</source>
-        <target>Refina síntomas</target>
+        <target>Refinar síntomas</target>
       </trans-unit>
       <trans-unit id="2254" resname="symptom_triage_refinement_splash_title" restype="string" datatype="x-android-resource">
         <source>Help us better understand the {attribute_name}</source>
@@ -425,7 +425,7 @@
       </trans-unit>
       <trans-unit id="2257" resname="symptom_triage_search_result_title" restype="string" datatype="x-android-resource">
         <source>Choose symptom</source>
-        <target>Elíge síntoma</target>
+        <target>Elige síntoma</target>
       </trans-unit>
       <trans-unit id="2258" resname="symptom_triage_search2_title" restype="string" datatype="x-android-resource">
         <source>Tap additional symptoms</source>
@@ -449,11 +449,11 @@
       </trans-unit>
       <trans-unit id="2265" resname="symptom_triage_instructional_main_content" restype="string" datatype="x-android-resource">
         <source>Tap or search for your symptoms. Or, you can always skip to ask doctors your question.</source>
-        <target>Toca o busca tus síntomas. O, siempre puedes saltarte a hacerle tu pregunta a doctores.</target>
+        <target>Toca o busca tus síntomas. O, siempre puedes saltar a hacerle tu pregunta a doctores.</target>
       </trans-unit>
       <trans-unit id="2266" resname="symptom_triage_instructional_main_title" restype="string" datatype="x-android-resource">
         <source>Let\&apos;s get started!</source>
-        <target>¡Vamos\ a empezar!</target>
+        <target>¡Vamos a empezar!</target>
       </trans-unit>
       <trans-unit id="2267" resname="symptom_triage_instructional_account_picker_title" restype="string" datatype="x-android-resource">
         <source>Before we begin</source>
@@ -469,12 +469,12 @@
       </trans-unit>
       <trans-unit id="2271" resname="symptom_triage_instructional_refinement_title" restype="string" datatype="x-android-resource">
         <source>%s \u2014 okay.</source>
-        <target>%s \u2014 okay.</target>
+        <target>%s \u2014 ok.</target>
         <note annotates="source">&apos;%s&apos; refers to a symptom attribute name.</note>
       </trans-unit>
       <trans-unit id="2272" resname="symptom_triage_instructional_refinement_content" restype="string" datatype="x-android-resource">
         <source>Let\&apos;s learn a little more about that.</source>
-        <target>Vamos\ a aprender un poco más acerca de eso.</target>
+        <target>Vamos a aprender un poco más acerca de eso.</target>
       </trans-unit>
       <trans-unit id="2273" resname="symptom_triage_instructional_risk_factors_title" restype="string" datatype="x-android-resource">
         <source>One more step!</source>
@@ -527,11 +527,11 @@
       </trans-unit>
       <trans-unit id="2288" resname="symptom_triage_condition_success" restype="string" datatype="x-android-resource">
         <source>Matches found</source>
-        <target>Resultados encontrados</target>
+        <target>Coincidencias encontrados</target>
       </trans-unit>
       <trans-unit id="2289" resname="symptom_triage_condition_title" restype="string" datatype="x-android-resource">
         <source>Thanks — we\’re on it!</source>
-        <target>Gracias — ¡estamos\ en eso!</target>
+        <target>Gracias — ¡estamos en eso!</target>
       </trans-unit>
       <trans-unit id="2290" resname="symptom_triage_condition_title_error" restype="string" datatype="x-android-resource">
         <source>Hmm...</source>
@@ -543,7 +543,7 @@
       </trans-unit>
       <trans-unit id="2292" resname="symptom_triage_genertic_disclaimer_text" restype="string" datatype="x-android-resource">
         <source>The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
-        <target>La información en HealthTap &#40;incluyendo esta herramienta&#41; es sólo para propósitos educativos e informativos y no constituye consejo, diagnóstico o recomendaciones de tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor local de servicios de emergencia si crees que puedes estar teniendo una emergencia médica. Ve Información Adicional.</target>
+        <target>La información en HealthTap &#40;incluyendo esta herramienta&#41; es sólo para propósitos educativos e informativos y no constituye consejo, diagnóstico o recomendaciones de tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor local de servicios de emergencia si crees que puedes estar teniendo una emergencia médica. Ver Información Adicional.</target>
       </trans-unit>
       <trans-unit id="2294" resname="symptom_triage_experiencing" restype="string" datatype="x-android-resource">
         <source>Experiencing</source>
@@ -559,7 +559,7 @@
       </trans-unit>
       <trans-unit id="2297" resname="symptom_triage_warning_message" restype="string" datatype="x-android-resource">
         <source>Heads up! If you go back from here, you\&apos;ll lose the symptoms you shared.</source>
-        <target>¡Atención! Si regresas desde aquí, perderás\ los síntomas que has compartido.</target>
+        <target>¡Atención! Si regresas desde aquí, perderás los síntomas que has compartido.</target>
       </trans-unit>
       <trans-unit id="2300" resname="symptom_triage_emergency_header" restype="string" datatype="x-android-resource">
         <source>About this care option</source>
@@ -575,7 +575,7 @@
       </trans-unit>
       <trans-unit id="2303" resname="symptom_triage_search_no_result" restype="string" datatype="x-android-resource">
         <source>Sorry, we couldn\&apos;t find a symptom by that name. Maybe there are other ways to describe it?</source>
-        <target>Perdón, no pudimos\ encontrar un síntoma con ese nombre. ¿Tal vez haya otras formas de describirlo?</target>
+        <target>Perdón, no pudimos encontrar un síntoma con ese nombre. ¿Tal vez haya otras formas de describirlo?</target>
       </trans-unit>
       <trans-unit id="2306" resname="symptom_triage_drawer_remove_text" restype="string" datatype="x-android-resource">
         <source>Are you sure you want to remove {symptom_name}?</source>
@@ -729,7 +729,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/OnetimePayFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="589" resname="r813647634" restype="string" datatype="java">
+      <trans-unit id="589" resname="r715343662" restype="string" datatype="java">
         <source>{start}Your total{end}\nFor additional options</source>
         <target>{start}您的总计{end}\n为其他选项</target>
       </trans-unit>
@@ -737,7 +737,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/TipsDetailFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="624" resname="r312270832" restype="string" datatype="java">
+      <trans-unit id="624" resname="r142482154" restype="string" datatype="java">
         <source>agreed with {author_name}&apos;s tip on \n{topic_name}</source>
         <target>同意{author_name}的小贴士在\n{topic_name}</target>
         <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>

@@ -516,7 +516,7 @@
       </trans-unit>
       <trans-unit id="134" resname="r156592917" restype="string" datatype="x-android-resource">
         <source>Prime &#40;Pay-as-you-go&#41;</source>
-        <target state="translated">PRIME （随付随用）</target>
+        <target state="translated">Prime （预付费计划）</target>
       </trans-unit>
       <trans-unit id="135" resname="r975846192" restype="string" datatype="x-android-resource">
         <source>Prime</source>
@@ -2059,7 +2059,7 @@
       </trans-unit>
       <trans-unit id="535" resname="r829279545" restype="string" datatype="x-android-resource">
         <source>Failed to downgrade to pay-as-you-go plan!!!</source>
-        <target state="translated">随收随付计划降级失败！！！</target>
+        <target state="translated">预付费计划降级失败！！！</target>
       </trans-unit>
       <trans-unit id="536" resname="r105168299" restype="string" datatype="x-android-resource">
         <source>Subscription Canceled</source>
@@ -2845,6 +2845,42 @@
       <trans-unit id="735" resname="r707551335" restype="string" datatype="x-android-resource">
         <source>{appointment_time} with {doctor_name}</source>
         <target state="translated">{appointment_time}与{doctor_name}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="38" resname="helpful" restype="string" datatype="x-android-resource">
+        <source>Helpful</source>
+        <target>有帮助的</target>
+      </trans-unit>
+      <trans-unit id="39" resname="add_photo" restype="string" datatype="x-android-resource">
+        <source>Add photo</source>
+        <target>添加照片</target>
+      </trans-unit>
+      <trans-unit id="40" resname="add_condition" restype="string" datatype="x-android-resource">
+        <source>Add condition</source>
+        <target>添加病症</target>
+      </trans-unit>
+      <trans-unit id="41" resname="add_medication" restype="string" datatype="x-android-resource">
+        <source>Add medication</source>
+        <target>添加药物</target>
+      </trans-unit>
+      <trans-unit id="42" resname="add_allergy" restype="string" datatype="x-android-resource">
+        <source>Add allergy</source>
+        <target>添加过敏源</target>
+      </trans-unit>
+      <trans-unit id="43" resname="guide_me" restype="string" datatype="x-android-resource">
+        <source>Guide me</source>
+        <target>指导我</target>
+      </trans-unit>
+      <trans-unit id="44" resname="share_feelgood_moment" restype="string" datatype="x-android-resource">
+        <source>Share FeelGood Moment</source>
+        <target>分享FeelGood时刻</target>
+      </trans-unit>
+      <trans-unit id="45" resname="review" restype="string" datatype="x-android-resource">
+        <source>Review</source>
+        <target>评论</target>
       </trans-unit>
     </body>
   </file>

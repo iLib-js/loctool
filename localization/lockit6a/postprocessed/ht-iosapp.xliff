@@ -72,7 +72,7 @@
     \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
     \u00B7 Consults in languages other than English\n\
     \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
-        <target state="new">Razones comunes para usar Consultar Virtuales\n\
+        <target>Razones comunes para usar Consultar Virtuales\n\
     \u00B7 Dolor Abdominal\n\
     \u00B7 Bronquitis Aguda\n\
     \u00B7 Conjuntivitis Aguda\n\
@@ -105,7 +105,7 @@
     \u00B7 Nausea\n\
     \u00B7 Hemorragia Nasal\n\
     \u00B7 Micción Dolorosa\n\
-    \u00B7 Conjuntivitis\n\
+    \u00B7 Ojo Rojo\n\
     \u00B7 Roble Venenoso / Hiedra Venenosa\n\
     \u00B7 Sarpullido\n\
     \u00B7 Infección Respiratoria\n\
@@ -121,7 +121,7 @@
     \u00B7 Comezón Vaginal\n\
     \u00B7 Infección por Hongos\n\n\
     Cuándo no usar Consultas Virtuales\n\n\
-    Siempre llama al %@ o a tu servicio de emergencia local inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, dirígete inmediatamente a un %@:\n\n\
+    Siempre llama al %@ o a tu servicio local de emergencia inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, ve inmediatamente a un %@:\n\n\
     \u00B7 Dolor o presión en pecho\n\
     \u00B7 Convulsiones\n\
     \u00B7 Dificultad para respirar\n\
@@ -130,17 +130,17 @@
     \u00B7 Medicamento para el dolor &#40;narcóticos&#41;\n\
     \u00B7 Envenenamiento\n\
     \u00B7 Lesión grave en la cabeza, cuello o espalda\n\
-    \u00B7 Deficiencia grave de extremidades o hueso&#40;s&#41; roto&#40;s&#41;\n\
+    \u00B7 Disfunción grave de extremidades o hueso&#40;s&#41; roto&#40;s&#41;\n\
     \u00B7 Hemorragia significativa y descontrolada\n\
     \u00B7 Ideación suicida\n\
     \u00B7 Pérdida del conocimiento\n\
     \u00B7 Cualquier otra situación crítica o que atente contra la vida
     Qué no esperar\n\n\
-    \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration, Agencia Federal Antidrogas&#41; &#40;Categoría I, II, III, IV&#41;\n\
+    \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration&#41; &#40;Categoría I, II, III, IV&#41;\n\
     \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
     \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida &#40;por ejemplo, fármacos para dietas o para disfunción eréctil&#41;\n\
     \u00B7 Consultas en idiomas que no sea el inglés\n\
-    \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje &#40;considera consultas de video con médicos disponibles para una atención más rápida&#41;</target>
+    \u00B7 Respuestas inmediatas a consultas de buzón de entrada / mensaje &#40;considera consultas por video con doctores disponibles para una atención más rápida&#41;</target>
       </trans-unit>
       <trans-unit id="3" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivistis\n\\n    \u00B7 Acute Cystitis\n\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication &#40;narcotics&#41;\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\\n    \u00B7 Consults in languages other than English\n\\n                           \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
         <source>Common reasons to use Virtual Consults\n\
@@ -169,13 +169,13 @@
     \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
     \u00B7 Consults in languages other than English\n\
                            \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
-        <target state="new">Razones comunes para usar Consultar Virtuales\n\
+        <target>Razones comunes para usar Consultar Virtuales\n\
     \u00B7 Dolor Abdominal\n\
     \u00B7 Bronquitis Aguda\n\
     \u00B7 Conjuntivitis Aguda\n\
     \u00B7 Cistitis Aguda\n\
     Cuándo no usar Consultas Virtuales\n\n\
-    Siempre llama al %@ o a tu servicio de emergencia local inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, dirígete inmediatamente a un %@:\n\n\
+    Siempre llama al %@ o a tu servicio local de emergencia inmediatamente si crees que tienes una emergencia. Por ejemplo, si experimentas cualquiera de los siguientes problemas médicos, ve inmediatamente a un %@:\n\n\
     \u00B7 Dolor o presión en pecho\n\
     \u00B7 Convulsiones\n\
     \u00B7 Dificultad para respirar\n\
@@ -184,21 +184,21 @@
     \u00B7 Medicamento para el dolor &#40;narcóticos&#41;\n\
     \u00B7 Envenenamiento\n\
     \u00B7 Lesión grave en la cabeza, cuello o espalda\n\
-    \u00B7 Deficiencia grave de extremidades o hueso&#40;s&#41; roto&#40;s&#41;\n\
+    \u00B7 Disfunción grave de extremidades o hueso&#40;s&#41; roto&#40;s&#41;\n\
     \u00B7 Hemorragia significativa y descontrolada\n\
     \u00B7 Ideación suicida\n\
     \u00B7 Pérdida del conocimiento\n\
     \u00B7 Cualquier otra situación crítica o que atente contra la vida
     Qué no esperar\n\n\
-    \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration, Agencia Federal Antidrogas&#41; &#40;Categoría I, II, III, IV&#41;\n\
+    \u00B7 Cualquier receta para narcóticos o para sustancias controladas por la DEA &#40;Drug Enforcement Administration&#41; &#40;Categoría I, II, III, IV&#41;\n\
     \u00B7 Cualquier receta para medicamentos que estén restringidos por estados individuales\n 
     \u00B7 Cualquier receta para medicamentos psiquiátricos o de estilo de vida &#40;por ejemplo, fármacos para dietas o para disfunción eréctil&#41;\n\
     \u00B7 Consultas en idiomas que no sea el inglés\n\
-                           \u00B7 Respuestas inmediatas a consultas de bandeja de entrada / mensaje &#40;considera consultas de video con médicos disponibles para una atención más rápida&#41;</target>
+                           \u00B7 Respuestas inmediatas a consultas de buzón de entrada / mensaje &#40;considera consultas por video con doctores disponibles para una atención más rápida&#41;</target>
       </trans-unit>
       <trans-unit id="4" resname="At which pharmacy do you prefer to pick up prescriptions?" restype="string" datatype="x-objective-c">
         <source>At which pharmacy do you prefer to pick up prescriptions?</source>
-        <target state="new">¿En que farmacia prefieres recoger las recetas?</target>
+        <target>¿En qué farmacia prefieres recoger las recetas?</target>
         <note annotates="source">question for getting pharmacy selection</note>
       </trans-unit>
     </body>
@@ -207,7 +207,7 @@
     <body>
       <trans-unit id="5" resname="Languages spoken" restype="string" datatype="x-objective-c">
         <source>Languages spoken</source>
-        <target state="new">Idiomas hablado</target>
+        <target>Idiomas hablados</target>
       </trans-unit>
     </body>
   </file>
@@ -215,7 +215,7 @@
     <body>
       <trans-unit id="15" resname="other" restype="string" datatype="x-objective-c">
         <source>other</source>
-        <target state="new">otra</target>
+        <target>otra</target>
       </trans-unit>
     </body>
   </file>
@@ -223,7 +223,7 @@
     <body>
       <trans-unit id="16" resname="Type your location" restype="string" datatype="x-objective-c">
         <source>Type your location</source>
-        <target state="new">Escribe tu ubicación</target>
+        <target>Escribe tu ubicación</target>
       </trans-unit>
     </body>
   </file>
@@ -231,7 +231,7 @@
     <body>
       <trans-unit id="23" resname="FnY-tJ-Ru5.text" restype="string" datatype="x-xib">
         <source>Ask Docs</source>
-        <target state="accepted">Pregunta al médico</target>
+        <target state="accepted">¡Pregunta!</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Ask Docs&quot;; ObjectID = &quot;FnY-tJ-Ru5&quot;;</note>
       </trans-unit>
       <trans-unit id="24" resname="Jgd-39-xxH.text" restype="string" datatype="x-xib">

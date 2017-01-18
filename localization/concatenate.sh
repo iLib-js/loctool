@@ -4,7 +4,7 @@ do
 	echo Processing project $project ...
 
 	# for i in lockit[1-7] lockit5a lockit6a lockit6b
-	for i in lockit*
+	for i in lockit[1-8]*
 	do
 		echo "  $i"
 		cd $i/postprocessed
@@ -19,6 +19,6 @@ do
 	done
 
 	echo "  Concatenating lockits"
-	cat lockit*/postprocessed/${project}.xliff | awk -f concatenate.awk > current/${project}.xliff
+	cat lockit[1-8]*/postprocessed/${project}.xliff | awk -f concatenate.awk > current/${project}.xliff
 done
 

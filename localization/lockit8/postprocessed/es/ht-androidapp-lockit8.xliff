@@ -22,7 +22,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXProfileFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="6" resname="r558347587" restype="string" datatype="java">
+      <trans-unit id="6" resname="r119248257" restype="string" datatype="java">
         <source>\nPlease restart the app/device and try again.</source>
         <target>\nPor favor, reinicia la aplicación/dispositivo e intenta otra vez.</target>
       </trans-unit>

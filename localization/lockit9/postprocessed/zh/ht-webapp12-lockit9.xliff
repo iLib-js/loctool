@@ -845,9 +845,9 @@
   </file>
   <file original="app/views/general_mailer/welcome_member.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="181" resname="r57707577" restype="string" datatype="ruby">
-        <source>We’re so excited to have you join us on a journey to a healthier, happier life! You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists from &#35;{static_doctors_count} top doctors. Ask a FREE health question 24/7 or connect with a doctor for a real-time virtual consult from the comfort of your smartphone, tablet or computer!</source>
-        <target state="translated">我们很高兴能您可以加入我们一个更健康，更快乐生活的旅程！ 您现在可以即时访问数以百万名医生的回答，小贴士，新闻，应用程序推荐和来自&#35;{static_doctors_count}名顶级医生的清单。从轻松的从您智能手机，平板电脑或计算机24/7全天候询问一个免费的健康问题或与医生联系进行实时在线咨询！</target>
+      <trans-unit id="181" resname="r443455897" restype="string" datatype="ruby">
+        <source>We’re so excited to have you join us on a journey to a healthier, happier life! You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists from %{num_docs} top doctors. Ask a FREE health question 24/7 or connect with a doctor for a real-time virtual consult from the comfort of your smartphone, tablet or computer!</source>
+        <target state="translated">我们很高兴能您可以加入我们一个更健康，更快乐生活的旅程！ 您现在可以即时访问数以百万名医生的回答，小贴士，新闻，应用程序推荐和来自%{num_docs}名顶级医生的清单。从轻松的从您智能手机，平板电脑或计算机24/7全天候询问一个免费的健康问题或与医生联系进行实时在线咨询！</target>
       </trans-unit>
     </body>
   </file>

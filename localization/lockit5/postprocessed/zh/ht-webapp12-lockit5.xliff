@@ -4885,7 +4885,7 @@
     <body>
       <trans-unit id="1130" resname="r455480936" restype="string" datatype="ruby">
         <source>Find goal or topic &#40;ex. Lose weight&#41;</source>
-        <target>查找目标或话题&#40;ex减肥）</target>
+        <target state="accepted">查找目标或话题&#40;例如减肥&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -15036,7 +15036,7 @@
       </trans-unit>
       <trans-unit id="3304" resname="r314256427" restype="string" datatype="ruby">
         <source>%{notification_name}, thanks for asking a question—our doctors are on it!</source>
-        <target>%{Notification_name}，感谢您询问的问题 — 我们的医生正在回答它！</target>
+        <target state="accepted">%{notification_name}，感谢您询问的问题 — 我们的医生正在回答它！</target>
       </trans-unit>
       <trans-unit id="3305" resname="r825004238" restype="string" datatype="ruby">
         <source>Thanks for asking a question—our doctors are on it!</source>

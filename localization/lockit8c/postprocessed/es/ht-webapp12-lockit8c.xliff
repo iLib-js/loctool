@@ -188,7 +188,7 @@
   <file original="app/views/people/feelGood/_consult_question.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="177" resname="r358657435" restype="string" datatype="ruby">
-        <source>Share a detailed description of your symptoms, concerns, and how you\&apos;d like the doctor to help you. Attach images and files as necessary.</source>
+        <source>Share a detailed description of your symptoms, concerns, and how you&apos;d like the doctor to help you. Attach images and files as necessary.</source>
         <target state="translated">Comparte una descripción detallada de tus síntomas, preocupaciones, y cómo te gustaría que el médico te ayudara. Adjunta imágenes y archivos como creas necesario.</target>
       </trans-unit>
       <trans-unit id="2237" resname="r143437710" restype="string" datatype="ruby">
@@ -41264,11 +41264,11 @@
       </trans-unit>
       <trans-unit id="9579" resname="Would you like a translator to join you?" restype="string" datatype="javascript">
         <source>Would you like a translator to join you?</source>
-        <target state="translated">¿Te gustaría que un traductor se te una?</target>
+        <target state="accepted">Si quieres comunicarte en español, por favor confirma que tu médico habla español en su perfíl.</target>
       </trans-unit>
       <trans-unit id="9580" resname=" An additional ${price}" restype="string" datatype="javascript">
         <source>An additional ${price}</source>
-        <target state="translated">Un ${price} adicional</target>
+        <target state="accepted"> Si no, te recomendamos que agregues un intérprete por ${price}</target>
       </trans-unit>
       <trans-unit id="9581" resname="{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult</source>
