@@ -3127,8 +3127,8 @@
         <target>... trae un nuevo nivel de personalización en atención a la salud a la web.</target>
       </trans-unit>
       <trans-unit id="729" resname="r881666298" restype="string" datatype="ruby">
-        <source>HealthTap&apos;s offer to patients: pay %{Credits::PricePlan.test_drive_price} and text with a medical expert in real time</source>
-        <target>La oferta de HealthTap a los pacientes: paga %{Credits::PricePlan.test_drive_price} y envíale mensajes a un experto médico en tiempo real</target>
+        <source>HealthTap&apos;s offer to patients: pay %{price} and text with a medical expert in real time</source>
+        <target>La oferta de HealthTap a los pacientes: paga %{price} y envíale mensajes a un experto médico en tiempo real</target>
       </trans-unit>
       <trans-unit id="730" resname="r956705548" restype="string" datatype="ruby">
         <source>The platform highlights the inherent power of data divorced from identity.</source>
@@ -11719,8 +11719,8 @@
         <target>HealthTap es la mejor forma para encontrar rápidamente respuestas médicas confiables y de buena reputación a preguntas de salud a cualquier hora y en cualquier lugar.</target>
       </trans-unit>
       <trans-unit id="2454" resname="r116957056" restype="string" datatype="ruby">
-        <source>Free health answers, tips, posts, and updates from %{p} and tens of thousands of other U.S.-licensed doctors on HealthTap.</source>
-        <target>Respuestas de salud gratuitas, y actualizaciones de %{p} y decenas de miles de otros doctores acreditados en los EE.UU. en HealthTap.</target>
+        <source>Free health answers, tips, posts, and updates from %{person} and tens of thousands of other U.S.-licensed doctors on HealthTap.</source>
+        <target>Respuestas de salud gratuitas, y actualizaciones de %{person} y decenas de miles de otros doctores acreditados en los EE.UU. en HealthTap.</target>
       </trans-unit>
     </body>
   </file>

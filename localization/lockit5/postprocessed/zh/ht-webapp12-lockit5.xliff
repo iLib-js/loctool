@@ -11719,8 +11719,8 @@
         <target>HealthTap是在任何时间，任何地点快速找到值得信赖的，有声誉的医生回答健康问题的最佳方式。</target>
       </trans-unit>
       <trans-unit id="2454" resname="r116957056" restype="string" datatype="ruby">
-        <source>Free health answers, tips, posts, and updates from %{p} and tens of thousands of other U.S.-licensed doctors on HealthTap.</source>
-        <target>来自%{p}和HealthTap上数万名拥有美国执业执照医生的免费的健康回答，小贴士，信息和更新。</target>
+        <source>Free health answers, tips, posts, and updates from %{person} and tens of thousands of other U.S.-licensed doctors on HealthTap.</source>
+        <target>来自%{person}和HealthTap上数万名拥有美国执业执照医生的免费的健康回答，小贴士，信息和更新。</target>
       </trans-unit>
     </body>
   </file>
