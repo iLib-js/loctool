@@ -8190,7 +8190,7 @@
       </trans-unit>
       <trans-unit id="1743" resname="feed_enterprise_item_text" restype="string" datatype="x-android-resource">
         <source>Hi\u00a0%s, how can our doctors help you?</source>
-        <target>Hola %{name}, ¿cómo pueden ayudarte nuestros doctores?</target>
+        <target>Hola %s, ¿cómo pueden ayudarte nuestros doctores?</target>
       </trans-unit>
       <trans-unit id="1744" resname="feed_enterprise_search_hint" restype="string" datatype="x-android-resource">
         <source>Tap-in to find doctors and their insights…</source>
