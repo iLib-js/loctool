@@ -914,8 +914,8 @@
   <file original="app/views/general_mailer/member_welcome_password.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="189" resname="r272034207" restype="string" datatype="ruby">
-        <source>from &#35;{static_doctors_count} top doctors whenever you have a health question or want to accomplish a health goal.</source>
-        <target state="translated">每当您有健康问题或希望达到健康目标时，从&#35;{static_doctors_count}名顶级医生。</target>
+        <source>from %{static_doctors_count} top doctors whenever you have a health question or want to accomplish a health goal.</source>
+        <target state="translated">每当您有健康问题或希望达到健康目标时，从%{static_doctors_count}名顶级医生。</target>
       </trans-unit>
       <trans-unit id="190" resname="r627864687" restype="string" datatype="ruby">
         <source>Ask health question 24/7 and get personalized, trustworthy answers from the comfort of your smartphone, tablet or computer!</source>
