@@ -190,6 +190,13 @@ describe 'HamlLocalizer' do
       ret.include?('FOO').should be_false
     end
 
+    it 'should use the biggest matching translation' do
+      line = 'words words words pigeon words words'
+      from_to = {'pigeon' => 'bird', 'words words words pigeon words words' => 'FOO'}
+      ret = replace_with_translations2(line, from_to)
+      expect(ret).to eq('FOO')
+    end
+
   end
 
   describe 'process pseudo values' do
