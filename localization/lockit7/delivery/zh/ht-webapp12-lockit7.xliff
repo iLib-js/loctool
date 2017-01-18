@@ -282,7 +282,7 @@
         <source>Specific, actionable doctor insights&lt;br/&gt;Answers, tips, and checklists</source><seg-source><mrk mtype="seg" mid="142">Specific, actionable doctor insights&lt;br/&gt;Answers, tips, and checklists</mrk></seg-source><target><mrk mtype="seg" mid="142">具体，可操作的医生见解&lt;br/&gt;回答，小贴士和清单</mrk></target>
       </trans-unit>
       <trans-unit id="84" resname="r1037881934" restype="string" datatype="ruby">
-        <source>Immediate response and access&lt;br/&gt;#{static_doctors_count} doctors across 141 specialties</source><seg-source><mrk mtype="seg" mid="143">Immediate response and access&lt;br/&gt;#{static_doctors_count} doctors across 141 specialties</mrk></seg-source><target><mrk mtype="seg" mid="143">立即回复和访问&lt;br/&gt;#{static_doctors_count}超过141个专科的医生</mrk></target>
+        <source>Immediate response and access&lt;br/&gt;%{num} doctors across 141 specialties</source><seg-source><mrk mtype="seg" mid="143">Immediate response and access&lt;br/&gt;%{num} doctors across 141 specialties</mrk></seg-source><target><mrk mtype="seg" mid="143">立即回复和访问&lt;br/&gt;%{num}超过141个专科的医生</mrk></target>
       </trans-unit>
       <trans-unit id="85" resname="r989762636" restype="string" datatype="ruby">
         <source>Expert do’s and don’ts&lt;br/&gt;Timely alerts and doctor reminders</source><seg-source><mrk mtype="seg" mid="144">Expert do’s and don’ts&lt;br/&gt;Timely alerts and doctor reminders</mrk></seg-source><target><mrk mtype="seg" mid="144">专家做和不做&lt;br/&gt;及时的警报和医生的提醒</mrk></target>
@@ -377,7 +377,7 @@
         <source>Whether it's the middle of the night or you're traveling out of the country, HealthTap doctors are here for you.</source><seg-source><mrk mtype="seg" mid="175">Whether it's the middle of the night or you're traveling out of the country, HealthTap doctors are here for you.</mrk></seg-source><target><mrk mtype="seg" mid="175">无论是在半夜或出国旅行，HealthTap的医生都会为您服务。</mrk></target>
       </trans-unit>
       <trans-unit id="113" resname="r67011063" restype="string" datatype="ruby">
-        <source>HealthTap Prime puts #{static_doctors_count} top doctors in your pocket&amp;mdash;in under two minutes!</source><seg-source><mrk mtype="seg" mid="176">HealthTap Prime puts #{static_doctors_count} top doctors in your pocket&amp;mdash;in under two minutes!</mrk></seg-source><target><mrk mtype="seg" mid="176">HealthTap Prime把#{static_doctors_count}位顶级医生放入您的口袋&amp;mdash；在两分钟内！</mrk></target>
+        <source>HealthTap Prime puts %{num} top doctors in your pocket&amp;mdash;in under two minutes!</source><seg-source><mrk mtype="seg" mid="176">HealthTap Prime puts %{num} top doctors in your pocket&amp;mdash;in under two minutes!</mrk></seg-source><target><mrk mtype="seg" mid="176">HealthTap Prime把%{num}位顶级医生放入您的口袋&amp;mdash；在两分钟内！</mrk></target>
       </trans-unit>
       <trans-unit id="114" resname="r562012895" restype="string" datatype="ruby">
         <source>Doctors can order treatments and lab tests&amp;mdash;sent to your local pharmacy or test center.</source><seg-source><mrk mtype="seg" mid="177">Doctors can order treatments and lab tests&amp;mdash;sent to your local pharmacy or test center.</mrk></seg-source><target><mrk mtype="seg" mid="177">医生可以订购治疗和实验室测试&amp;mdash;发送到您当地的药店或测试中心。</mrk></target>
@@ -549,7 +549,7 @@
     <body>
       <trans-unit id="162" resname="r738934975" restype="string" datatype="ruby">
         <source>%{num_doctors} top doctors</source><seg-source><mrk mtype="seg" mid="229">%{num_doctors} top doctors</mrk></seg-source><target><mrk mtype="seg" mid="229">%{num_doctors}顶级医生</mrk></target>
-        
+
       <note>TODO pluralization</note></trans-unit>
     </body>
   </file>
@@ -1438,7 +1438,7 @@
     <body>
       <trans-unit id="364" resname="r527860771" restype="string" datatype="ruby">
         <source>Patients get instant 24/7 access to world’s largest knowledge-base of doctor insights from your doctors and our network of %{doctors_count} top doctors</source><seg-source><mrk mtype="seg" mid="485">Patients get instant 24/7 access to world’s largest knowledge-base of doctor insights from your doctors and our network of %{doctors_count} top doctors</mrk></seg-source><target><mrk mtype="seg" mid="485">患者可以即时24/7全天候访问来自您的医生和我们的{％{doctors_count}名顶级医生网络构成的世界上最大的医生见解知识库</mrk></target>
-        
+
       <note>TODO pluralize</note></trans-unit>
     </body>
   </file>
@@ -1500,7 +1500,7 @@
     <body>
       <trans-unit id="379" resname="r1044126261" restype="string" datatype="ruby">
         <source>%{doctors_count} top U.S. doctors across 141 specialties</source><seg-source><mrk mtype="seg" mid="503">%{doctors_count} top U.S. doctors across 141 specialties</mrk></seg-source><target><mrk mtype="seg" mid="503">超过141个专科的%{doctors_count}顶级美国医生</mrk></target>
-        
+
       <note>TODO pluralization</note></trans-unit>
     </body>
   </file>

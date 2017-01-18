@@ -3701,12 +3701,12 @@
         <target>可以发送安全信息</target>
       </trans-unit>
       <trans-unit id="1002" resname="r750915788" restype="string" datatype="ruby">
-        <source>Available next &#35;{msg}</source>
-        <target>下次空闲时间&#35;{msg}</target>
+        <source>Available next %{msg}</source>
+        <target>下次空闲时间%{msg}</target>
       </trans-unit>
       <trans-unit id="1003" resname="r17068825" restype="string" datatype="ruby">
-        <source>Available next on &#35;{msg}</source>
-        <target>下次空闲时间在&#35;{msg}</target>
+        <source>Available next on %{msg}</source>
+        <target>下次空闲时间在%{msg}</target>
       </trans-unit>
       <trans-unit id="1004" resname="r551805119" restype="string" datatype="ruby">
         <source>Not available at the moment</source>
