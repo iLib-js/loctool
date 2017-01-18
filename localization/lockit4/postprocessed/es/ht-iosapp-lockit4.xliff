@@ -2672,7 +2672,7 @@
     <body>
       <trans-unit id="501" resname="Add a new person" restype="string" datatype="x-objective-c">
         <source>Add a new person</source>
-        <target>Agregar una persona nueva</target>
+        <target state="accepted">Agrega una persona</target>
       </trans-unit>
     </body>
   </file>
