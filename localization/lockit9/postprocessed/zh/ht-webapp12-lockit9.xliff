@@ -988,7 +988,7 @@
       </trans-unit>
       <trans-unit id="201" resname="r487837888" restype="string" datatype="ruby">
         <source>I&apos;d like to personally invite you to %{open_link}be featured for free on HealthTap,%{close_link} where you can gain recognition for your expertise and help %{actor} and all your medical school colleagues win the competition.</source>
-        <target state="translated">我想亲自邀请您在HealthTap上参加免费专题%{open_link}，%{close_link}您可以获得您的专业知识的认可并获得帮助%{@actor}您所有的医学院同事赢得竞赛。</target>
+        <target state="accepted">我想诚邀您%{open_link}免费成为HealthTap受关注的医生%{close_link}您可以获得您的专业知识的认可并帮助%{@actor}以及您所有的医学院同事赢得竞赛。</target>
       </trans-unit>
     </body>
   </file>
