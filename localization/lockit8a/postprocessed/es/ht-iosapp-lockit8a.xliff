@@ -30,7 +30,7 @@
       </trans-unit>
       <trans-unit id="20" resname="k39-JV-hYA.normalTitle" restype="string" datatype="x-xib">
         <source>Ask Docs</source>
-        <target>Pregúntale a Docs</target>
+        <target state="accepted">¡Pregunta!</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Ask Docs&quot;; ObjectID = &quot;k39-JV-hYA&quot;;</note>
       </trans-unit>
       <trans-unit id="21" resname="l44-cL-1gg.normalTitle" restype="string" datatype="x-xib">
