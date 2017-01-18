@@ -29,7 +29,7 @@
       </trans-unit>
       <trans-unit id="6" resname="What not to expect\n" restype="string" datatype="x-objective-c">
         <source>What not to expect\n</source>
-        <target state="needs-translation">不应发生\n</target>
+        <target state="translated">不应发生\n</target>
       </trans-unit>
       <trans-unit id="7" resname="•\tAny prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n•\tAny prescriptions for medications that are restricted by individual states\n•\tAny prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n•\tConsults in languages other than English\n•\tInstant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
         <source>•\tAny prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n•\tAny prescriptions for medications that are restricted by individual states\n•\tAny prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n•\tConsults in languages other than English\n•\tInstant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
@@ -89,7 +89,7 @@
     <body>
       <trans-unit id="17" resname="\n\n%@ approved this translation of %@" restype="string" datatype="x-objective-c">
         <source>\n\n%@ approved this translation of %@</source>
-        <target state="needs-translation">\n\n%@已批准此翻译%@</target>
+        <target state="translated">\n\n%@已批准此翻译%@</target>
       </trans-unit>
     </body>
   </file>
