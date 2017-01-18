@@ -452,6 +452,10 @@
         <source>HealthTap is helping define the new field of \&quot;interactive health\&quot;</source>
         <target>HealthTap正在帮助定义“互动健康”这一新领域</target>
       </trans-unit>
+      <trans-unit id="996" resname="r168123346" restype="string" datatype="ruby">
+        <source>HealthTap is helping define the new field of \&quot;interactive health\&quot;</source>
+        <target>HealthTap正在帮助定义“互动健康”这一新领域</target>
+      </trans-unit>
     </body>
   </file>
   <file original="app/views/static_pages/partial/_chat_simulation.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
@@ -784,6 +788,10 @@
       <trans-unit id="169" resname="r663478211" restype="string" datatype="ruby">
         <source>Ask your question and we\&apos;ll match you with a specialist:</source>
         <target state="translated">询问您的问题，我们会将您匹配到一位专科医生：</target>
+      </trans-unit>
+      <trans-unit id="1535" resname="r852001733" restype="string" datatype="ruby">
+        <source>Based on your question, we\&apos;ve matched you with several doctors</source>
+        <target>根据您的问题，我们已将您与一些医生相匹配</target>
       </trans-unit>
       <trans-unit id="1535" resname="r852001733" restype="string" datatype="ruby">
         <source>Based on your question, we\&apos;ve matched you with several doctors</source>
