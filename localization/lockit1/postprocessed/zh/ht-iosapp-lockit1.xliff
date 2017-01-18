@@ -10627,7 +10627,7 @@ educational answers</source>
       </trans-unit>
       <trans-unit id="Pay &amp; Book" resname="Pay &amp; Book" restype="string" datatype="x-objective-c">
         <source>Pay &amp; Book</source>
-        <target>Pay &amp; Book</target>
+        <target state="accepted">支付并预定</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Pay &amp; Continue" resname="Pay &amp; Continue" restype="string" datatype="x-objective-c">
