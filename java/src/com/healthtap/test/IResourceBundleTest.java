@@ -226,7 +226,30 @@ public class IResourceBundleTest extends TestCase
 		assertEquals("Email Sent", result.toString());
 		// assertEquals("emailsent", result.toString());
 	}
-	
+
+	public void testGetLocStringEchoWhitespace()
+	{
+		Locale l = Locale.forLanguageTag("es-ES");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
+		assertNotNull(resBundle);
+		
+		String result = resBundle.getString("Done");
+		assertEquals("Aceptar", result.toString());
+		
+		result = resBundle.getString("   Done");
+		assertEquals("   Aceptar", result.toString());
+
+		result = resBundle.getString("Done   ");
+		assertEquals("Aceptar   ", result.toString());
+
+		result = resBundle.getString("  Done   ");
+		assertEquals("  Aceptar   ", result.toString());
+		
+		result = resBundle.getString(" \t\n Done  \t\t\n ");
+		assertEquals(" \t\n Aceptar  \t\t\n ", result.toString());
+	}
+
 	public void testGetLocaleWithResourcesGermany()
 	{
 		final Locale locale = Locale.forLanguageTag("de-DE");
@@ -402,6 +425,17 @@ public class IResourceBundleTest extends TestCase
 		assertEquals("àçţüàľ šţàţë fõŕ Ŵífí: {foobar}9876543210", resBundle.getStringPseudo("actual state for Wifi: {foobar}").toString());
 	}
 	
+	public void testGetPseudoStringEchoWhitespace()
+	{
+		final Locale locale = Locale.forLanguageTag("en-GB");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setMissingType(MissingType.PSEUDO);
+		assertNotNull(resBundle);
+
+		assertEquals("    Ëñğàğëmëñţ þõíñţ!76543210\n\n", resBundle.getString("    Engagement point!\n\n").toString());
+	}
+
 	/*
 	 Do we even need this?
 	public void testGetStringPseudoTypeJavaSkipHTMLTags()

@@ -82,7 +82,7 @@ module.exports = {
 		});
         test.ok(rf);
 
-        test.equals(rf.makeKey("Medications    in $$$  your profile"), "r1005643851");
+        test.equals(rf.makeKey("Medications    in $$$  your profile"), "r589776427");
         
         test.done();
 	},
@@ -119,7 +119,7 @@ module.exports = {
         test.ok(rf);
 
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
-        test.equals(rf.makeKey("A \n B"), "r718438265");
+        test.equals(rf.makeKey("A \n B"), "r191336864");
         
         test.done();
 	},
@@ -137,7 +137,7 @@ module.exports = {
 		});
         test.ok(rf);
 
-        test.equals(rf.makeKey("A \t B"), "r943923784");
+        test.equals(rf.makeKey("A \t B"), "r191336864");
         
         test.done();
 	},
@@ -210,17 +210,17 @@ module.exports = {
         test.ok(rf);
 
         test.equals(rf.makeKey("This has \\\"double quotes\\\" in it."), "r487572481");
-        test.equals(rf.makeKeyUnescaped('This has \\\"double quotes\\\" in it.'), "r538041526");
+        test.equals(rf.makeKeyUnescaped('This has \\\"double quotes\\\" in it.'), "r487572481");
         test.equals(rf.makeKey("This has \\\'single quotes\\\' in it."), "r900797640");
         test.equals(rf.makeKeyUnescaped('This has \\\'single quotes\\\' in it.'), "r900797640");
         test.equals(rf.makeKey("This is a double quoted string"), "r494590307");
         test.equals(rf.makeKeyUnescaped('This is a single quoted string'), "r683276274");
         test.equals(rf.makeKey("This is a double quoted string with \\\"quotes\\\" in it."), "r246354917");
         test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\\'quotes\\\' in it.'), "r248819747");
-        test.equals(rf.makeKey("This is a double quoted string with \\n return chars in it"), "r1050725297");
-        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\n return chars in it'), "r729667629");
-        test.equals(rf.makeKey("This is a double quoted string with \\t tab chars in it"), "r785725858");
-        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\t tab chars in it'), "r637301221");
+        test.equals(rf.makeKey("This is a double quoted string with \\n return chars in it"), "r1001831480");
+        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\n return chars in it'), "r147719125");
+        test.equals(rf.makeKey("This is a double quoted string with \\t tab chars in it"), "r276797171");
+        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\t tab chars in it'), "r303137748");
         test.equals(rf.makeKey("This is a double quoted string with \\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z other escape chars in it"), "r529567158");
         test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z other escape chars in it'), "r955027934");
         test.equals(rf.makeKey("This is a double quoted string with \\u00A0 \\x23 hex escape chars in it"), "r347049046");

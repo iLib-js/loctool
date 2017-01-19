@@ -185,7 +185,7 @@ def process_values(locale_mappings, values, unmapped_words)
   ret = {}
   values.each{|v|
     next if v.strip.length == 0
-    hashed_key = create_hashed_key(clean_string(v))
+    hashed_key = create_hashed_key(v)
     formatted_key = v.gsub('\n', '').gsub(' ','_').capitalize
     # puts "checking #{v} #{hashed_key} #{formatted_key}"
     # puts locale_mappings.keys.first(50).to_s
@@ -395,7 +395,7 @@ def produce_unmapped(file_to_words)
   file_to_words.each do |filename,words|
     child_hash = {}
     words.each{|w|
-      child_hash[ create_hashed_key(clean_string(w)) ] = w.gsub("\n", "")
+      child_hash[ create_hashed_key(w) ] = w.gsub("\n", "")
     }
     h[filename] = child_hash unless child_hash.keys.count == 0
   end
@@ -425,12 +425,20 @@ end
 # and two strings that have whitespace or html differences but the same
 # text get hashed to the same thing
 def clean_string(string)
-  string.gsub(/<(['"][^'"]*['"]|[^>])*>/, "").gsub(/\s+/, " ").strip
+  string.
+    gsub(/<(['"][^'"]*['"]|[^>])*>/, "").
+    gsub(/\\\\/, "").
+    gsub(/\\t/, "\t").
+    gsub(/\\n/, "\n").
+    gsub(/\s+/, " ").
+    gsub(/\\'/, '\'').
+    gsub(/\\"/, '"').strip
 end
 
 # from loctool/lib/JavaFile.js
 def create_hashed_key(string)
   string = string.to_s unless string.is_a?(String) and !string.nil? and string != ''
+  string = clean_string(string)
   hashed_key = 0
   # these two numbers together = 46 bits so it won't blow out the precision of an integer in javascript
   modulus = 1073741789  # largest prime number that fits in 30 bits

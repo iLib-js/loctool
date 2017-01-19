@@ -43,6 +43,8 @@ public class IResourceBundle {
     private Map<String, String> pseudoCharacters = null;
 	protected boolean lengthen = true;
 	protected MissingType missing = MissingType.SOURCE;
+	protected Pattern pStart = Pattern.compile("^\\s*");
+	protected Pattern pEnd = Pattern.compile("\\s*$");
 	
 	private String[][] pseudoCyrl = {
 		{"a", "а"},
@@ -630,21 +632,7 @@ public class IResourceBundle {
 		// create a hash so that the id is unique and conforms to the syntax of a Java
 		// identifier.
 		
-		// multiple whitespace chars are compressed into one, and leading and trailing 
-		// whitespace do not matter
-		String str = source.replaceAll("\\s+", " ").trim(); 
-		
-		long hash = 0;
-		// these two numbers together = 46 bits so it won't blow out the precision of an integer in javascript
-		long modulus = 1073741789L;  // largest prime number that fits in 30 bits
-		long multiple = 65521;       // largest prime that fits in 16 bits, co-prime with the modulus
-		
-		for (int i = 0; i < str.length(); i++) {
-			hash += str.charAt(i);
-			hash *= multiple;
-			hash %= modulus;
-		}
-		String value = "r" + hash;
+		String value = HashKey.hash(source);
 		
 		System.out.println("String '" + source + "' hashes to " + value);
 		
@@ -684,8 +672,14 @@ public class IResourceBundle {
 			String str = (source != null) ? source : getAndroidString(key);
 			return pseudo(str);
 		}
-
-		return getTranslation(source, key);
+		
+		Matcher mStart = pStart.matcher(source);
+		Matcher mEnd = pEnd.matcher(source);
+		
+		String whiteStart = mStart.find() ? mStart.group(0) : "";
+		String whiteEnd = mEnd.find() ? mEnd.group(0) : "";
+		
+		return whiteStart + getTranslation(source, key) + whiteEnd;
 	}
 
     /**
@@ -720,7 +714,7 @@ public class IResourceBundle {
 					trans = source;
 					break;
 				case PSEUDO:
-					trans = (source != null) ? pseudo(source) : null;
+					trans = (source != null) ? pseudo(source.trim()) : null;
 					break;
 				case EMPTY:
 					trans = "";

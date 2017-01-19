@@ -269,32 +269,33 @@ describe 'HamlLocalizer' do
     end
   
     it 'works with cleaned sources' do
-      expect(create_hashed_key(clean_string("Medications in your profile"))).to eq("r32020327");
-      expect(create_hashed_key(clean_string("All medications "))).to eq("r835310324");
-      expect(create_hashed_key(clean_string(" Conditions"))).to eq("r103883086");
-      expect(create_hashed_key(clean_string("Symptoms  \t"))).to eq("r481086103");
-      expect(create_hashed_key(clean_string("\t\t    Experts"))).to eq("r343852585");
-      expect(create_hashed_key(clean_string("Procedures   \t\t"))).to eq("r807691021");
-      expect(create_hashed_key(clean_string("Health    Apps"))).to eq("r941505899");
-      expect(create_hashed_key(clean_string("Conditions \nin  \n your profile"))).to eq("r240633868");
-      expect(create_hashed_key(clean_string("Treatment\tReviews"))).to eq("r795086964");
-      expect(create_hashed_key(clean_string("Private Health <span class=\"foo\">Profile</span>"))).to eq("r669315500");
-      expect(create_hashed_key(clean_string("People <span class=\"foo < bar\">you</span> care for"))).to eq("r710774033");
-    end
+      expect(create_hashed_key("Medications in your profile")).to eq("r32020327");
+      expect(create_hashed_key("All medications ")).to eq("r835310324");
+      expect(create_hashed_key(" Conditions")).to eq("r103883086");
+      expect(create_hashed_key("Symptoms  \t")).to eq("r481086103");
+      expect(create_hashed_key("\t\t    Experts")).to eq("r343852585");
+      expect(create_hashed_key("Procedures   \t\t")).to eq("r807691021");
+      expect(create_hashed_key("Health    Apps")).to eq("r941505899");
+      expect(create_hashed_key("Conditions \nin  \n your profile")).to eq("r240633868");
+      expect(create_hashed_key("Treatment\tReviews")).to eq("r795086964");
+      expect(create_hashed_key("Private Health <span class=\"foo\">Profile</span>")).to eq("r669315500");
+      expect(create_hashed_key("People <span class=\"foo < bar\">you</span> care for")).to eq("r710774033");
+      expect(create_hashed_key("   A \"B\"\\\\ \\\\C \t \n \u00A0 ")).to eq("r157781525")
+     end
 
     it 'works with escaped characters' do
       expect(create_hashed_key("This has \"double quotes\" in it.")).to eq("r487572481");
-      expect(create_hashed_key('This has \"double quotes\" in it.')).to eq("r538041526");
+      expect(create_hashed_key('This has \"double quotes\" in it.')).to eq("r487572481");
       expect(create_hashed_key("This has \'single quotes\' in it.")).to eq("r900797640");
       expect(create_hashed_key('This has \'single quotes\' in it.')).to eq("r900797640");
       expect(create_hashed_key("This is a double quoted string")).to eq("r494590307");
       expect(create_hashed_key('This is a single quoted string')).to eq("r683276274");
       expect(create_hashed_key("This is a double quoted string with \"quotes\" in it.")).to eq("r246354917");
       expect(create_hashed_key('This is a single quoted string with \'quotes\' in it.')).to eq("r248819747");
-      expect(create_hashed_key("This is a double quoted string with \n return chars in it")).to eq("r1050725297");
-      expect(create_hashed_key('This is a single quoted string with \n return chars in it')).to eq("r729667629");
-      expect(create_hashed_key("This is a double quoted string with \t tab chars in it")).to eq("r785725858");
-      expect(create_hashed_key('This is a single quoted string with \t tab chars in it')).to eq("r637301221");
+      expect(create_hashed_key("This is a double quoted string with \n return chars in it")).to eq("r1001831480");
+      expect(create_hashed_key('This is a single quoted string with \n return chars in it')).to eq("r147719125");
+      expect(create_hashed_key("This is a double quoted string with \t tab chars in it")).to eq("r276797171");
+      expect(create_hashed_key('This is a single quoted string with \t tab chars in it')).to eq("r303137748");
       expect(create_hashed_key("This is a double quoted string with \d \g \h \i \j \k \l \m \o \p \q \w \y \z other escape chars in it")).to eq("r529567158");
       expect(create_hashed_key('This is a single quoted string with \d \g \h \i \j \k \l \m \o \p \q \w \y \z other escape chars in it')).to eq("r955027934");
       expect(create_hashed_key("This is a double quoted string with \u00A0 \x23 hex escape chars in it")).to eq("r347049046");
