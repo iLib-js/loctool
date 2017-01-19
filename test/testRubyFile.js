@@ -999,7 +999,7 @@ module.exports = {
         rf.parse('Rb.p(:one => "This is 1 test", :other => "There are %{count} tests", :variables => {count: 1})');
         var set = rf.getTranslationSet();
         test.ok(set);
-        test.equal(set.size(), 2);
+        test.equal(set.size(), 1);
         var r = set.getBySource("This is 1 test");
         test.ok(r);
         test.equal(r.getSource(), "This is 1 test");
