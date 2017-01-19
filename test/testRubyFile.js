@@ -996,7 +996,7 @@ module.exports = {
         });
         test.ok(rf);
         
-        rf.parse('Rb.p(:one => "This is 1 test", :other => "There are %{count} tests", :variables => {count: 1})');
+        rf.parse('Rb.p(:one => "This is 1 test", :other => "There are %{count} tests", {count: 1})');
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1021,7 +1021,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(:one => 'This is 1 test', :other => 'There are %{count} tests', :variables => {count: 1})");
+        rf.parse("Rb.p(:one => 'This is 1 test', :other => 'There are %{count} tests', {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1046,7 +1046,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse('Rb.p(one: "This is 1 test", other: "There are %{count} tests", :variables => {count: 1})');
+        rf.parse('Rb.p(one: "This is 1 test", other: "There are %{count} tests", {count: 1})');
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1071,7 +1071,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: 'This is 1 test', other: 'There are %{count} tests', :variables => {count: 1})");
+        rf.parse("Rb.p(one: 'This is 1 test', other: 'There are %{count} tests', {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1096,7 +1096,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: \"This is 1 test\", :other => 'There are %{count} tests', :variables => {count: 1})");
+        rf.parse("Rb.p(one: \"This is 1 test\", :other => 'There are %{count} tests', {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1121,7 +1121,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: 'This is 1 test', :other => \"There are %{count} tests\", :variables => {count: 1})");
+        rf.parse("Rb.p(one: 'This is 1 test', :other => \"There are %{count} tests\", {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1146,7 +1146,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(:other => \"There are %{count} tests\", :variables => {count: 1})");
+        rf.parse("Rb.p(:other => \"There are %{count} tests\", {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 0);
@@ -1166,7 +1166,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: 'This is 1 test', :three => \"There are %{count} tests\", :variables => {count: 1})");
+        rf.parse("Rb.p(one: 'This is 1 test', :three => \"There are %{count} tests\", {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1191,7 +1191,7 @@ module.exports = {
         });
         test.ok(rf);
 
-        rf.parse("Rb.p(one: 'This is 1 test', two: 'There are a couple tests', zero: 'There are no tests', few: 'There are a few tests', many: 'There are many tests', :other => \"There are %{count} tests\", :variables => {count: 1})");
+        rf.parse("Rb.p(one: 'This is 1 test', two: 'There are a couple tests', zero: 'There are no tests', few: 'There are a few tests', many: 'There are many tests', :other => \"There are %{count} tests\", {count: 1})");
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
@@ -1204,6 +1204,31 @@ module.exports = {
         test.equals(r.get('many'),'There are many tests');
         test.equals(r.get('other'),"There are %{count} tests");
         test.equals(r.getKey(), 'r186608186');
+        test.done();
+    },
+
+    testRubyFileParsePluralNoVariables: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+
+        rf.parse("Rb.p(one: 'This is 1 %{thing}', {count: 1, thing: 'test'})");
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 1);
+        var r = set.getAll()[0];
+        test.ok(r);
+        test.equals(r.get('one'),'This is 1 %{thing}');
+        test.equals(r.get('thing'),undefined);
+        test.equals(r.getKey(), 'r1006137616');
         test.done();
     }
 
