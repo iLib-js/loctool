@@ -981,5 +981,31 @@ module.exports = {
         test.equal(set.size(), 19);
         
         test.done();
+    },
+
+    testRubyFileParseDoublePluralArrow: function(test) {
+        test.expect(7);
+
+        var p = new WebProject({
+            id: "webapp",
+            sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+            project: p
+        });
+        test.ok(rf);
+        
+        rf.parse('Rb.p(:one => "This is 1 test", :other => "There are %{count} tests", :variables => {count: 1})');
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        test.equal(set.size(), 2);
+        var r = set.getBySource("This is 1 test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is 1 test");
+        var r = set.getBySource("There are %{count} tests");
+        test.ok(r);
+        test.equal(r.getSource(), "There are %{count} tests");
+        test.done();
     }
 };
