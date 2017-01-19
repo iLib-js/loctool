@@ -229,7 +229,6 @@ module.exports = {
         test.done();
 	},
 
-
 	testRubyFileMakeKeyUnescapedNewLines: function(test) {
         test.expect(2);
 

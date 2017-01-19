@@ -605,4 +605,23 @@ public class IResourceBundleTest extends TestCase
 		assertEquals("r909283218", resBundle.makeKey("Can\'t find an application for SMS"));
 		assertEquals("r909283218", resBundle.makeKey(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"));
 	}
+
+	public void testMakeKeyRubyCompatibility()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		
+        assertEquals("r487572481", resBundle.makeKey("This has \\\"double quotes\\\" in it."));
+        assertEquals("r900797640", resBundle.makeKey("This has \\\'single quotes\\\' in it."));
+        assertEquals("r494590307", resBundle.makeKey("This is a double quoted string"));
+        assertEquals("r683276274", resBundle.makeKey("This is a single quoted string"));
+        assertEquals("r246354917", resBundle.makeKey("This is a double quoted string with \\\"quotes\\\" in it."));
+        assertEquals("r248819747", resBundle.makeKey("This is a single quoted string with \\\'quotes\\\' in it."));
+        assertEquals("r1001831480", resBundle.makeKey("This is a double quoted string with \\n return chars in it"));
+        assertEquals("r147719125", resBundle.makeKey("This is a single quoted string with \\n return chars in it"));
+        assertEquals("r276797171", resBundle.makeKey("This is a double quoted string with \\t tab chars in it"));
+        assertEquals("r303137748", resBundle.makeKey("This is a single quoted string with \\t tab chars in it"));
+	}
 }
