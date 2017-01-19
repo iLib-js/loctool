@@ -303,7 +303,7 @@ def process_line(skip_block_indent, ret, line, from_to)
       ret << line
     else
       from_to.keys.sort_by{|a| a.length}.reverse.each{|k|
-        next if k.include?('@') || k.include?('#{')
+        next if k.include?('#{')
         v = from_to[k].to_s
         begin
           res = line.gsub!(/\b(?<=:title=>\")#{Regexp.escape(k)}(?=\")/, v)
@@ -316,6 +316,7 @@ def process_line(skip_block_indent, ret, line, from_to)
           #end
 
           res = line.gsub!(/\b(?<=:title => \")#{Regexp.escape(k)}(?=\")/, v)
+          #puts "k=#{k}"
           #if res
           #  puts "replacing #{k} WITH #{v}"
           #end
@@ -325,14 +326,17 @@ def process_line(skip_block_indent, ret, line, from_to)
               #puts '2'
               res = line.gsub!(/>(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, ">#{v}") #for some reason it replaces the > char as well. replcae it
             elsif k.strip.match(/^[[:punct:]]/) && k.strip.match(/[[:punct:]]$/)
+              #puts '3'
               #punctuation in beginning
               res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
             elsif k.strip.match(/^[[:punct:]]/)
+              #puts '4'
               res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
             elsif k.strip.match(/[[:punct:]]$/)
+              #puts '5'
               res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
             else
-              #puts '3'
+              #puts '6'
               res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
             end
           end
