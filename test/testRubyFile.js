@@ -984,7 +984,7 @@ module.exports = {
     },
 
     testRubyFileParseDoublePluralArrow: function(test) {
-        test.expect(9);
+        test.expect(7);
 
         var p = new WebProject({
             id: "webapp",
@@ -1000,14 +1000,11 @@ module.exports = {
         var set = rf.getTranslationSet();
         test.ok(set);
         test.equal(set.size(), 1);
-        var r = set.getBySource("This is 1 test");
+        var r = set.getAll()[0];
         test.ok(r);
-        test.equal(r.getSource(), "This is 1 test");
-        test.equal(r.getKey(), "r186608186")
-        var r = set.getBySource("There are %{count} tests");
-        test.ok(r);
-        test.equal(r.getSource(), "There are %{count} tests");
-        test.equal(r.getKey(), "r733362149")
+        test.equals(r.get('one'),'This is 1 test');
+        test.equals(r.get('other'),'There are %{count} tests');
+        test.equals(r.getKey(), 'r186608186');
         test.done();
     }
 };
