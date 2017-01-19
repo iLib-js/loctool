@@ -474,7 +474,7 @@
         <source>Patients have access to individualized content &#40;answers, tips, and more&#41; based on their personal health record and HealthTap’s proprietary, data-driven Health Graph.</source>
         <target>患者可以基于他们的个人健康记录和HealthTap的专有的，数据驱动健康图像去个性化内容（答案，小贴士，以及更多）。</target>
       </trans-unit>
-      <trans-unit id="111" resname="r723212955" restype="string" datatype="ruby">
+      <trans-unit id="111" resname="r721465543" restype="string" datatype="ruby">
         <source>World-class, empathetic doctors are readily available,  creating long-lasting relationships between the patient, doctor, and provider.</source>
         <target>世界级的，富有同情心的医生随时可以提供服务，在患者，医生和提供者之间建立长期持久的关系。</target>
       </trans-unit>
@@ -698,7 +698,7 @@
         <source>Grow your book of business and make your renewals worry-free.</source>
         <target>不断发展您的商业书，使您后续无忧。</target>
       </trans-unit>
-      <trans-unit id="161" resname="r58352218" restype="string" datatype="ruby">
+      <trans-unit id="161" resname="r500843284" restype="string" datatype="ruby">
         <source>Earn more while providing your clients with a truly engaging, superior healthcare experience that saves time and money for both you and your clients!</source>
         <target>赚的更多，同时为您的客户提供一个真正的参与，卓越的健康医护体检，为您和您的客户节省时间和金钱！</target>
       </trans-unit>
@@ -735,11 +735,11 @@
         <source>Employers &amp; Insurers</source>
         <target>雇主和保险公司</target>
       </trans-unit>
-      <trans-unit id="169" resname="r39970286" restype="string" datatype="ruby">
+      <trans-unit id="169" resname="r111781423" restype="string" datatype="ruby">
         <source>Lower costs and improve productivity &amp; satisfaction by providing the right care at the right cost at the right time</source>
         <target>在合适的时间，以合理的成本提供合适的医护将降低花费，提高生产力和满意度</target>
       </trans-unit>
-      <trans-unit id="170" resname="r632518692" restype="string" datatype="ruby">
+      <trans-unit id="170" resname="r799436858" restype="string" datatype="ruby">
         <source>Enhance your reputation, grow your practice</source>
         <target>提高您的声誉，成长您的诊疗</target>
       </trans-unit>
@@ -1419,15 +1419,15 @@
         <source>Reminders related to any recommended actions or any checklist provided to you by your doctor will automatically be sent to you by email and &#40;if you have HealthTap on your mobile device&#41; mobile notification.</source>
         <target>您的医生给您提供的任何建议或任何相关的清单会自动通过电子邮件（如果在您的移动设备中安装有HealthTap）和移动通知发送给您。</target>
       </trans-unit>
-      <trans-unit id="299" resname="r484547552" restype="string" datatype="ruby">
+      <trans-unit id="299" resname="r313533299" restype="string" datatype="ruby">
         <source>These reminders are tailored to you and your consult.  They may contain information related to treatments and medications &#40;including prescriptions&#41; and other personal health-related information specific to your virtual consult.  You can opt out of receiving these notifications by email or your mobile device at any time</source>
         <target>这些提醒是专为您和您的咨询的定制的。它们可能包含与您在线咨询的相关治疗和药物（包括处方）和其他个人健康相关信息的信息。您可以在任何时候通过电子邮件或移动设备选择接收这些通知</target>
       </trans-unit>
-      <trans-unit id="300" resname="r618188232" restype="string" datatype="ruby">
+      <trans-unit id="300" resname="r548465282" restype="string" datatype="ruby">
         <source>Never use HealthTap Prime in an emergency situation.  Always call %{emergency_number} or your local emergency service immediately if you think you may have an emergency.</source>
         <target>切勿在紧急情况下使用HealthTap Prime。如果您认为有紧急情况，请随时拨打%{emergency_number}或呼叫当地紧急救援服务。</target>
       </trans-unit>
-      <trans-unit id="301" resname="r30049847" restype="string" datatype="ruby">
+      <trans-unit id="301" resname="r1020385363" restype="string" datatype="ruby">
         <source>Don’t use HealthTap Prime if you have a serious injury or condition &#40;such as chest pain, seizures, difficulty breathing, burns, or any critical or life-threatening situation.  Also, don’t use HealthTap prime for mental, behavioral, or addiction issues.</source>
         <target>如果您有严重的损伤或病症（如胸痛，癫痫，呼吸困难，烧伤），或任何严重或危及生命的情况请不要使用HealthTap Prime。此外，不要对心理，行为和成瘾问题使用HealthTap。</target>
       </trans-unit>
@@ -1555,7 +1555,7 @@
         <source>locally preferred pharmacy</source>
         <target>本地首选药房</target>
       </trans-unit>
-      <trans-unit id="324" resname="r954312620" restype="string" datatype="ruby">
+      <trans-unit id="324" resname="r820790272" restype="string" datatype="ruby">
         <source>in %{consult_region}. &#40;Note: Your preferred pharmacy must be in the same state you were in when you had your Virtual Consult&#41;</source>
         <target>在%{consult_region}。（注意：您的首选药店必须与您的在线咨询在相同的州）</target>
       </trans-unit>
@@ -1591,7 +1591,7 @@
         <source>To receive your prescription, please make sure the following required information is up to date for you:</source>
         <target>要接收您的处方，请确保以下必填信息是最新的：</target>
       </trans-unit>
-      <trans-unit id="330" resname="r221559585" restype="string" datatype="ruby">
+      <trans-unit id="330" resname="r844938656" restype="string" datatype="ruby">
         <source>in %{state}. &#40;Note: Your preferred pharmacy must be in the same state you were in when you performed your consult&#41;</source>
         <target>在%{state}。（注意：您的首选药店必须与您进行在线咨询所在州相同）</target>
       </trans-unit>
@@ -1611,7 +1611,7 @@
   </file>
   <file original="app/views/general_mailer/member_concierge_doctor_invitation_7days.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="333" resname="r840501240" restype="string" datatype="ruby">
+      <trans-unit id="333" resname="r544856331" restype="string" datatype="ruby">
         <source>Replies to this message via email will not reach your doctor. To ask %{expert} about a health concern, please accept this invitation and send a message or schedule a virtual appointment. If you have an emergency, please call %{emergency_number} or go immediately to the closest emergency department.</source>
         <target>通过电子邮件回复此消息，将不会传达给您的医生。如果要询问%{expert}有关健康问题，请接受此邀请，并发送消息或安排一次在线预约。如果您有紧急情况，请致电%{emergency_number}或立即前往最近的急诊科。</target>
       </trans-unit>
@@ -1627,7 +1627,7 @@
   </file>
   <file original="app/views/general_mailer/member_concierge_doctor_invitation_14days.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="335" resname="r820809532" restype="string" datatype="ruby">
+      <trans-unit id="335" resname="r1052188005" restype="string" datatype="ruby">
         <source>Replies to this message via email will not reach your doctor. To ask %{expert} about a health concern, please accept this invitation and send a message or schedule a virtual appointment. If you have an emergency, please call 911 or go immediately to the closest emergency department.</source>
         <target>通过电子邮件回复此消息，将不会传达给您的医生。如果要询问%{expert}有关健康问题，请接受此邀请，并发送消息或安排一次在线预约。如果您有紧急情况，请拨打911或立即前往最近的急诊科。</target>
       </trans-unit>
@@ -1804,7 +1804,7 @@
   </file>
   <file original="app/views/b2b/partial/_compass_triage.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="365" resname="r181579584" restype="string" datatype="ruby">
+      <trans-unit id="365" resname="r198638661" restype="string" datatype="ruby">
         <source>%{product} lets you provide your patients the right care, at the right time, at the right price.</source>
         <target>%{product}使您在正确的时间，以合理的价格提供给您患者合适的医护。</target>
       </trans-unit>
@@ -1889,7 +1889,7 @@
         <source>Real-time population health insights. Based on location and demographic.</source>
         <target>实时人口健康分析。基于位置和人口统计。</target>
       </trans-unit>
-      <trans-unit id="382" resname="r874680346" restype="string" datatype="ruby">
+      <trans-unit id="382" resname="r867896794" restype="string" datatype="ruby">
         <source>Always available technical support. Warm transfer capabilities and protocols.</source>
         <target>始终可以服务的技术支持。热转移功能和协议。</target>
       </trans-unit>
@@ -1925,7 +1925,7 @@
         <source>Increase adherence while improving health outcomes with automated reminders from you to your patients with no additional effort.</source>
         <target>提高依从性，同时从您和患者的自动提醒改善健康结果而不需要额外的努力。</target>
       </trans-unit>
-      <trans-unit id="390" resname="r297617505" restype="string" datatype="ruby">
+      <trans-unit id="390" resname="r650157968" restype="string" datatype="ruby">
         <source>Quickly triage all patients to proper care and provide the right care, at the right time and at the right price.  Offer after hours care and information 24/7, without additional expenses.</source>
         <target>迅速将所有患者分流至适当的医护，并在合适的时间和地点，以合适的价格提供合适的医护。提供下班后24/7全天候的医护和信息，无需额外花费。</target>
       </trans-unit>
@@ -2717,7 +2717,7 @@
         <source>You thanked %{expert} – now connect virtually!</source>
         <target>您感谢%{expert} - 立刻在线连接！</target>
       </trans-unit>
-      <trans-unit id="576" resname="r727345463" restype="string" datatype="ruby">
+      <trans-unit id="576" resname="r356149659" restype="string" datatype="ruby">
         <source>You have more to be thankful for – connect virtually with a doctor today!</source>
         <target>您有更多的感谢 – 立刻与一位医生在线连接！</target>
       </trans-unit>
@@ -2829,7 +2829,7 @@
         <source>We‘re committed to helping you feel good!</source>
         <target>我们致力于帮助您感觉良好！</target>
       </trans-unit>
-      <trans-unit id="603" resname="r443018918" restype="string" datatype="ruby">
+      <trans-unit id="603" resname="r519016334" restype="string" datatype="ruby">
         <source>of health information created  by doctors, personalized for you.</source>
         <target>医生为您创建的个性化健康信息。</target>
       </trans-unit>
@@ -3041,7 +3041,7 @@
   </file>
   <file original="app/helpers/application_helper.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="653" resname="r611110503" restype="string" datatype="ruby">
+      <trans-unit id="653" resname="r1064098699" restype="string" datatype="ruby">
         <source>Addiction Specialist</source>
         <target>戒瘾专科医生</target>
       </trans-unit>
@@ -3049,7 +3049,7 @@
         <source>Adolescent Medicine Specialist</source>
         <target>青少年医学专科医生</target>
       </trans-unit>
-      <trans-unit id="655" resname="r563668684" restype="string" datatype="ruby">
+      <trans-unit id="655" resname="r1004495727" restype="string" datatype="ruby">
         <source>Aerospace Physician</source>
         <target>航空医师</target>
       </trans-unit>
@@ -3057,7 +3057,7 @@
         <source>Aesthetic Medicine Specialist</source>
         <target>美容医学专科医生</target>
       </trans-unit>
-      <trans-unit id="657" resname="r544015853" restype="string" datatype="ruby">
+      <trans-unit id="657" resname="r446000896" restype="string" datatype="ruby">
         <source>Allergist and Immunologist</source>
         <target>过敏症和免疫学家</target>
       </trans-unit>
@@ -3069,7 +3069,7 @@
         <source>Anti-Aging Specialist</source>
         <target>抗衰老专科医生</target>
       </trans-unit>
-      <trans-unit id="660" resname="r830473041" restype="string" datatype="ruby">
+      <trans-unit id="660" resname="r244370388" restype="string" datatype="ruby">
         <source>Bariatrician</source>
         <target>肥胖治疗专科医生</target>
       </trans-unit>
@@ -3077,7 +3077,7 @@
         <source>Breast Surgeon</source>
         <target>乳腺外科医生</target>
       </trans-unit>
-      <trans-unit id="662" resname="r303859003" restype="string" datatype="ruby">
+      <trans-unit id="662" resname="r1031711815" restype="string" datatype="ruby">
         <source>Cardiologist</source>
         <target>心脏病专科医生</target>
       </trans-unit>
@@ -3085,7 +3085,7 @@
         <source>Child Neurologist</source>
         <target>儿童神经学家</target>
       </trans-unit>
-      <trans-unit id="664" resname="r919068306" restype="string" datatype="ruby">
+      <trans-unit id="664" resname="r261251123" restype="string" datatype="ruby">
         <source>Child Psychiatrist</source>
         <target>儿童精神科医生</target>
       </trans-unit>
@@ -3093,11 +3093,11 @@
         <source>Clinical Geneticist</source>
         <target>临床遗传学家</target>
       </trans-unit>
-      <trans-unit id="666" resname="r667485658" restype="string" datatype="ruby">
+      <trans-unit id="666" resname="r348430115" restype="string" datatype="ruby">
         <source>Clinical Geneticist</source>
         <target>临床遗传学家</target>
       </trans-unit>
-      <trans-unit id="667" resname="r218769756" restype="string" datatype="ruby">
+      <trans-unit id="667" resname="r989069590" restype="string" datatype="ruby">
         <source>Colorectal Surgeon</source>
         <target>结肠外科医生</target>
       </trans-unit>
@@ -3109,7 +3109,7 @@
         <source>Cosmetic Surgeon</source>
         <target>美容整形外科医师</target>
       </trans-unit>
-      <trans-unit id="670" resname="r585959113" restype="string" datatype="ruby">
+      <trans-unit id="670" resname="r122622059" restype="string" datatype="ruby">
         <source>Critical Care Specialist</source>
         <target>急救护理专科医生</target>
       </trans-unit>
@@ -3117,11 +3117,11 @@
         <source>Dentist</source>
         <target>牙医</target>
       </trans-unit>
-      <trans-unit id="672" resname="r964094600" restype="string" datatype="ruby">
+      <trans-unit id="672" resname="r478323951" restype="string" datatype="ruby">
         <source>Dermatologist</source>
         <target>皮肤科医生</target>
       </trans-unit>
-      <trans-unit id="673" resname="r464785795" restype="string" datatype="ruby">
+      <trans-unit id="673" resname="r445065585" restype="string" datatype="ruby">
         <source>Diabetes Specialist</source>
         <target>糖尿病专科医生</target>
       </trans-unit>
@@ -3129,7 +3129,7 @@
         <source>Diagnostic Radiologist</source>
         <target>放射诊断科医生</target>
       </trans-unit>
-      <trans-unit id="675" resname="r20702078" restype="string" datatype="ruby">
+      <trans-unit id="675" resname="r797805133" restype="string" datatype="ruby">
         <source>Emergency Medicine Specialist</source>
         <target>急诊医学专科医生</target>
       </trans-unit>
@@ -3145,7 +3145,7 @@
         <source>Family Physician</source>
         <target>家庭医师</target>
       </trans-unit>
-      <trans-unit id="679" resname="r952594753" restype="string" datatype="ruby">
+      <trans-unit id="679" resname="r87426767" restype="string" datatype="ruby">
         <source>Gastroenterologist</source>
         <target>消化科医师</target>
       </trans-unit>
@@ -3161,11 +3161,11 @@
         <source>Geriatric Psychiatrist</source>
         <target>老年人精神病专科医生</target>
       </trans-unit>
-      <trans-unit id="683" resname="r833974597" restype="string" datatype="ruby">
+      <trans-unit id="683" resname="r373637016" restype="string" datatype="ruby">
         <source>Geriatrician</source>
         <target>老年病学专家</target>
       </trans-unit>
-      <trans-unit id="684" resname="r618904376" restype="string" datatype="ruby">
+      <trans-unit id="684" resname="r384367710" restype="string" datatype="ruby">
         <source>Gynecologic Oncologist</source>
         <target>妇科肿瘤医师</target>
       </trans-unit>
@@ -3177,15 +3177,15 @@
         <source>Hair Restoration Specialist</source>
         <target>头发修复专科医生</target>
       </trans-unit>
-      <trans-unit id="687" resname="r466880970" restype="string" datatype="ruby">
+      <trans-unit id="687" resname="r787291007" restype="string" datatype="ruby">
         <source>Hand Surgeon</source>
         <target>手外科医生</target>
       </trans-unit>
-      <trans-unit id="688" resname="r12959164" restype="string" datatype="ruby">
+      <trans-unit id="688" resname="r819256580" restype="string" datatype="ruby">
         <source>Hematologist</source>
         <target>血液学家</target>
       </trans-unit>
-      <trans-unit id="689" resname="r573326073" restype="string" datatype="ruby">
+      <trans-unit id="689" resname="r201397782" restype="string" datatype="ruby">
         <source>Hepatologist</source>
         <target>肝脏病学家</target>
       </trans-unit>
@@ -3197,7 +3197,7 @@
         <source>Hospitalist</source>
         <target>住院医生</target>
       </trans-unit>
-      <trans-unit id="692" resname="r27234416" restype="string" datatype="ruby">
+      <trans-unit id="692" resname="r964632531" restype="string" datatype="ruby">
         <source>Immunologist</source>
         <target>免疫学家</target>
       </trans-unit>
@@ -3225,7 +3225,7 @@
         <source>Neuroradiologist</source>
         <target>神经系放射学家</target>
       </trans-unit>
-      <trans-unit id="699" resname="r780030712" restype="string" datatype="ruby">
+      <trans-unit id="699" resname="r540725695" restype="string" datatype="ruby">
         <source>Neurosurgeon</source>
         <target>神经外科医生</target>
       </trans-unit>
@@ -3241,15 +3241,15 @@
         <source>Occupational Medicine Specialist</source>
         <target>职业医学专科医生</target>
       </trans-unit>
-      <trans-unit id="703" resname="r628128537" restype="string" datatype="ruby">
+      <trans-unit id="703" resname="r774363533" restype="string" datatype="ruby">
         <source>Oncologist</source>
         <target>肿瘤学家</target>
       </trans-unit>
-      <trans-unit id="704" resname="r241737134" restype="string" datatype="ruby">
+      <trans-unit id="704" resname="r166224609" restype="string" datatype="ruby">
         <source>Oncologist and Hematologist</source>
         <target>肿瘤学家和血液学家</target>
       </trans-unit>
-      <trans-unit id="705" resname="r1005978277" restype="string" datatype="ruby">
+      <trans-unit id="705" resname="r807243127" restype="string" datatype="ruby">
         <source>Ophthalmologist</source>
         <target>眼科医生</target>
       </trans-unit>
@@ -3261,11 +3261,11 @@
         <source>Orthopedic Foot and Ankle Surgeon</source>
         <target>骨科足部和踝关节外科医生</target>
       </trans-unit>
-      <trans-unit id="708" resname="r829138600" restype="string" datatype="ruby">
+      <trans-unit id="708" resname="r907140154" restype="string" datatype="ruby">
         <source>Orthopedic Reconstructive Surgeon</source>
         <target>整形重建外科医生</target>
       </trans-unit>
-      <trans-unit id="709" resname="r113486889" restype="string" datatype="ruby">
+      <trans-unit id="709" resname="r413382702" restype="string" datatype="ruby">
         <source>Orthopedic Spine Surgeon</source>
         <target>骨科脊柱外科医生</target>
       </trans-unit>
@@ -3273,7 +3273,7 @@
         <source>Otolaryngologist</source>
         <target>耳鼻喉科专科医生</target>
       </trans-unit>
-      <trans-unit id="711" resname="r255635599" restype="string" datatype="ruby">
+      <trans-unit id="711" resname="r690600056" restype="string" datatype="ruby">
         <source>Pain Management Specialist</source>
         <target>疼痛治疗专科医生</target>
       </trans-unit>
@@ -3349,7 +3349,7 @@
         <source>Pediatric Sports Medicine Specialist</source>
         <target>儿科运动医学专科医生</target>
       </trans-unit>
-      <trans-unit id="730" resname="r68665788" restype="string" datatype="ruby">
+      <trans-unit id="730" resname="r947589903" restype="string" datatype="ruby">
         <source>Pediatric Surgeon</source>
         <target>小儿外科医生</target>
       </trans-unit>
@@ -3381,7 +3381,7 @@
         <source>Physical Medicine and Rehab Specialist</source>
         <target>物理医学和康复专科医生</target>
       </trans-unit>
-      <trans-unit id="738" resname="r628615367" restype="string" datatype="ruby">
+      <trans-unit id="738" resname="r272603401" restype="string" datatype="ruby">
         <source>Plastic Surgeon</source>
         <target>整形外科医生</target>
       </trans-unit>
@@ -3393,7 +3393,7 @@
         <source>Prosthodontist</source>
         <target>镶牙专家</target>
       </trans-unit>
-      <trans-unit id="741" resname="r964644954" restype="string" datatype="ruby">
+      <trans-unit id="741" resname="r129690959" restype="string" datatype="ruby">
         <source>Psychiatrist</source>
         <target>精神科医师</target>
       </trans-unit>
@@ -3409,7 +3409,7 @@
         <source>Pulmonary Critical Care Intensivist</source>
         <target>肺急救护理特护医生</target>
       </trans-unit>
-      <trans-unit id="745" resname="r266780905" restype="string" datatype="ruby">
+      <trans-unit id="745" resname="r609611964" restype="string" datatype="ruby">
         <source>Radiation Oncologist</source>
         <target>放射肿瘤医师</target>
       </trans-unit>
@@ -3425,11 +3425,11 @@
         <source>Retinal Surgeon</source>
         <target>视网膜外科医生</target>
       </trans-unit>
-      <trans-unit id="749" resname="r891012018" restype="string" datatype="ruby">
+      <trans-unit id="749" resname="r1029442879" restype="string" datatype="ruby">
         <source>Rheumatologist</source>
         <target>风湿病专家</target>
       </trans-unit>
-      <trans-unit id="750" resname="r673933638" restype="string" datatype="ruby">
+      <trans-unit id="750" resname="r870855306" restype="string" datatype="ruby">
         <source>Sport Medicine Specialist</source>
         <target>运动医学专科医生</target>
       </trans-unit>
@@ -3437,7 +3437,7 @@
         <source>Surgical Oncologist</source>
         <target>外科肿瘤医师</target>
       </trans-unit>
-      <trans-unit id="752" resname="r864575236" restype="string" datatype="ruby">
+      <trans-unit id="752" resname="r851864813" restype="string" datatype="ruby">
         <source>Thoracic Surgeon</source>
         <target>胸外科医生</target>
       </trans-unit>
@@ -3449,7 +3449,7 @@
         <source>Transfusion Specialist</source>
         <target>输液专科医生</target>
       </trans-unit>
-      <trans-unit id="755" resname="r412441844" restype="string" datatype="ruby">
+      <trans-unit id="755" resname="r527839313" restype="string" datatype="ruby">
         <source>Trauma Surgeon</source>
         <target>创伤外科医生</target>
       </trans-unit>
@@ -3461,7 +3461,7 @@
         <source>Undersea and Hyperbaric Medicine Specialist</source>
         <target>海水和高压医学专科医生</target>
       </trans-unit>
-      <trans-unit id="758" resname="r221182054" restype="string" datatype="ruby">
+      <trans-unit id="758" resname="r669869026" restype="string" datatype="ruby">
         <source>Urgent Care Specialist</source>
         <target>紧急护理专科医生</target>
       </trans-unit>
@@ -3469,11 +3469,11 @@
         <source>Urologic Oncologist</source>
         <target>泌尿道肿瘤学家</target>
       </trans-unit>
-      <trans-unit id="760" resname="r225804886" restype="string" datatype="ruby">
+      <trans-unit id="760" resname="r553401355" restype="string" datatype="ruby">
         <source>Urologist</source>
         <target>泌尿科医生</target>
       </trans-unit>
-      <trans-unit id="761" resname="r270414843" restype="string" datatype="ruby">
+      <trans-unit id="761" resname="r43071103" restype="string" datatype="ruby">
         <source>Vascular Surgeon</source>
         <target>心血管外科医生</target>
       </trans-unit>
@@ -4161,11 +4161,11 @@
         <source>Don&apos;t take time from your vacation or business trip to find a doctor overseas. Just HealthTap it!</source>
         <target>您在国外度假或商务旅行时不需要花时间寻找医生。只需在HealthTap上搜索！</target>
       </trans-unit>
-      <trans-unit id="937" resname="r500120986" restype="string" datatype="ruby">
+      <trans-unit id="937" resname="r468532276" restype="string" datatype="ruby">
         <source>We&apos;re so glad we signed up for HealthTap before our trip! Richard got a bad stomach flu in Paris, and we were so happy to be able to talk to a real doctor from our phone at the hotel.  He really put our mind at ease</source>
         <target>我们很高兴在旅行之前注册了HealthTap！Richard在巴黎患了肠胃感冒，我们很高兴能够在酒店中用电话与一位真正的医生交谈。他真的让我们很放心</target>
       </trans-unit>
-      <trans-unit id="938" resname="r876362984" restype="string" datatype="ruby">
+      <trans-unit id="938" resname="r35916095" restype="string" datatype="ruby">
         <source>Private, confidential consultations with doctors via video, phone or chat, from any device.</source>
         <target>通过任何设备与医生进行私人、保密的视频，电话或聊天。</target>
       </trans-unit>
@@ -4177,7 +4177,7 @@
         <source>No need to make an appointment, fill out forms or deal with student health services. Get help now.</source>
         <target>无需预约，填写表格或处理学生健康服务。立刻获得帮助。</target>
       </trans-unit>
-      <trans-unit id="941" resname="r416445679" restype="string" datatype="ruby">
+      <trans-unit id="941" resname="r872272031" restype="string" datatype="ruby">
         <source>I have occasional female troubles.  I&apos;m so happy to have an understanding, female doctor that I can speak with via HD Video Chat - midnight, in my dorm, it doesn&apos;t matter, she is always there for me!</source>
         <target>我有偶尔的女性烦恼。我很高兴有一位理解我的女医生，在我的宿舍午夜时通过高清视频和她聊天都没关系，她总是在我身边！</target>
       </trans-unit>
@@ -4201,7 +4201,7 @@
         <source>Stay in the know about your loved-ones&apos; health with round-the-clock access to doctors&apos; notes, checklists, and prescriptions.</source>
         <target>通过全天候访问医生笔记，清单和处方，了解您亲人的健康状况。</target>
       </trans-unit>
-      <trans-unit id="947" resname="r47570375" restype="string" datatype="ruby">
+      <trans-unit id="947" resname="r503401223" restype="string" datatype="ruby">
         <source>When my dad got sick, we were in California and he was in Illinois.  Thanks to HealthTap, we were able to get him the help he needed, stay in the loop, and get peace of mind</source>
         <target>我爸爸生病时，我们在加州，他在伊利诺伊州。感谢HealthTap，我们能够放心地不断地提供他所需要的帮助。</target>
       </trans-unit>
@@ -4217,7 +4217,7 @@
         <source>Having a doctor at your fingertips means you can spend less time worrying about your child&apos;s health.</source>
         <target>医生就在您的指尖意味着您不需要花更多的间担心孩子的健康。</target>
       </trans-unit>
-      <trans-unit id="951" resname="r10817546" restype="string" datatype="ruby">
+      <trans-unit id="951" resname="r500772420" restype="string" datatype="ruby">
         <source>Juggling two small kids is always hard.  I am so happy I can call a Doctor on my phone for a HD Video chat, all without leaving home.  It has saved my sanity and made my kids better so many times, I can&apos;t count.</source>
         <target>和两个小孩子玩耍总是很难。我很高兴我可以通过手机和医生进行高清视频聊天，而这所有的一切都不需要离开家。它保存了我的精力，我都数不清让我的孩子好了多少次了。</target>
       </trans-unit>
@@ -4245,7 +4245,7 @@
         <source>Follow easy-to-use doctor prescribed checklists, personalized just for you.</source>
         <target>按照医生为您开的易于使用的个性化清单。</target>
       </trans-unit>
-      <trans-unit id="958" resname="r774794746" restype="string" datatype="ruby">
+      <trans-unit id="958" resname="r927918992" restype="string" datatype="ruby">
         <source>Get private, personalized care. No need to deal with insurance, billing, reimbursements.</source>
         <target>获得私人的，个性化的医护无需处理保险，结算，报销。</target>
       </trans-unit>
@@ -4257,15 +4257,15 @@
   </file>
   <file original="app/controllers/topics_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="960" resname="r436836847" restype="string" datatype="ruby">
+      <trans-unit id="960" resname="r581935120" restype="string" datatype="ruby">
         <source>- Doctor answers on HealthTap</source>
         <target>- HealthTap上医生的回答</target>
       </trans-unit>
-      <trans-unit id="961" resname="r112219784" restype="string" datatype="ruby">
+      <trans-unit id="961" resname="r586888815" restype="string" datatype="ruby">
         <source>- Doctor expertise on HealthTap</source>
         <target>- HealthTap上医生的专业知识</target>
       </trans-unit>
-      <trans-unit id="962" resname="r186518085" restype="string" datatype="ruby">
+      <trans-unit id="962" resname="r109170118" restype="string" datatype="ruby">
         <source>- Doctor wisdom on HealthTap</source>
         <target>- HealthTap上医生的智慧</target>
       </trans-unit>
@@ -6625,7 +6625,7 @@
   </file>
   <file original="for_members.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2558" resname="r1053996243" restype="string" datatype="x-haml">
+      <trans-unit id="2558" resname="r104998707" restype="string" datatype="x-haml">
         <source>using our Virtual Consult experience via high-definition video, voice, or text. Get help anywhere, 24/7, via the web or your mobile device, securely and privately. Share photos or test results, and get immediate answers, treatment, and referrals to help you feel good!</source>
         <target>通过高清视频，语音，或文字使用我们的在线咨询。通过网站和移动设备，您可以安全地、隐私地在任何地方得到帮助。分享照片和测验结果，即时获取帮助您感觉良好的回答、治疗和转诊。</target>
       </trans-unit>
@@ -6633,7 +6633,7 @@
         <source>personal physician</source>
         <target>个人医师</target>
       </trans-unit>
-      <trans-unit id="2560" resname="r335330353" restype="string" datatype="x-haml">
+      <trans-unit id="2560" resname="r636341431" restype="string" datatype="x-haml">
         <source>Talk with a top doctor or your</source>
         <target>与顶级医生交谈或您的</target>
       </trans-unit>
@@ -6641,7 +6641,7 @@
   </file>
   <file original="translator_landing.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2199" resname="r839563249" restype="string" datatype="x-haml">
+      <trans-unit id="2199" resname="r53310843" restype="string" datatype="x-haml">
         <source>doctors can prescribe medication and refill prescriptions, which you can conveniently pick up at your local pharmacy. By collaborating with Quest Diagnostics, our doctors can also order and review lab tests through virtual consults. Simply visit one of the thousands of local test centers nationwide to save multiple trips to the doctor.</source>
         <target>医生可以开处方药并且再配方处方，您可以很方便的在您当地的药店取药。通过与Quest Diagnostics合作，我们的医生还可以通过在线咨询去订购和审查实验室测试。只需访问全国数千个地方测试中心之一，以节省多次去看医生的次数。</target>
       </trans-unit>
@@ -6685,7 +6685,7 @@
   </file>
   <file original="body_symptoms_search.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2817" resname="r535604526" restype="string" datatype="x-haml">
+      <trans-unit id="2817" resname="r837465003" restype="string" datatype="x-haml">
         <source>symptom added.</source>
         <target>已症状的添加。</target>
       </trans-unit>
@@ -6761,19 +6761,19 @@
   </file>
   <file original="club_md_weekly_digest.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3410" resname="r429646148" restype="string" datatype="x-haml">
+      <trans-unit id="3410" resname="r370519004" restype="string" datatype="x-haml">
         <source>log in and contribute by</source>
         <target>登录和贡献</target>
       </trans-unit>
-      <trans-unit id="3411" resname="r482831929" restype="string" datatype="x-haml">
+      <trans-unit id="3411" resname="r433714228" restype="string" datatype="x-haml">
         <source>Regular participation on HealthTap is required to maintain your membership in ClubMD.  Don&apos;t lose your status</source>
         <target>保持您在ClubMD的会员资格需要定期参加HealthTap。不要失去您的身份</target>
       </trans-unit>
-      <trans-unit id="3412" resname="r428929549" restype="string" datatype="x-haml">
+      <trans-unit id="3412" resname="r697616658" restype="string" datatype="x-haml">
         <source>answering patients</source>
         <target>回答患者</target>
       </trans-unit>
-      <trans-unit id="3413" resname="r871876646" restype="string" datatype="x-haml">
+      <trans-unit id="3413" resname="r147683293" restype="string" datatype="x-haml">
         <source>agreeing and connecting with colleagues today</source>
         <target>同意并立刻联系同事</target>
       </trans-unit>

@@ -334,7 +334,7 @@
   </file>
   <file original="app/views/static_pages/home/_hopes_for_everyone.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="72" resname="r894830522" restype="string" datatype="ruby">
+      <trans-unit id="72" resname="r55289507" restype="string" datatype="ruby">
         <source>Immediate, trusted, simple disaster relief</source>
         <target state="translated">快速、可靠、简单的灾难救援</target>
       </trans-unit>
@@ -1135,7 +1135,7 @@
   </file>
   <file original="app/views/general_mailer/member_concierge_doctor_invitation_google_approval.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="311" resname="r88055253" restype="string" datatype="ruby">
+      <trans-unit id="311" resname="r458596117" restype="string" datatype="ruby">
         <source>Replies to this email will not reach me. To ask me about a health concern, please accept this invitation and send me a message or schedule a virtual appointment with me on HealthTap. If you believe you may have an emergency, call 911 or immediately go to the ER.</source>
         <target state="translated">我收不到此电子邮件的回复。如果要问我有关健康问题，请接受此邀请，并向我发送消息或在HealthTap上安排一个和我的在线预约。如果您认为您可能有紧急情况，请打911或立即去ER。</target>
       </trans-unit>
@@ -1247,7 +1247,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_test_results_day1.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="380" resname="r783247129" restype="string" datatype="ruby">
+      <trans-unit id="380" resname="r1066739754" restype="string" datatype="ruby">
         <source>The</source>
         <target state="translated">这个</target>
       </trans-unit>
@@ -1279,11 +1279,11 @@
   </file>
   <file original="app/views/general_mailer/doctor_raterx_reviewtreatment.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="397" resname="r911213248" restype="string" datatype="ruby">
+      <trans-unit id="397" resname="r167070602" restype="string" datatype="ruby">
         <source>How effective is</source>
         <target state="translated">效果如何</target>
       </trans-unit>
-      <trans-unit id="398" resname="r1071685775" restype="string" datatype="ruby">
+      <trans-unit id="398" resname="r941328703" restype="string" datatype="ruby">
         <source>for</source>
         <target state="translated">为</target>
       </trans-unit>
@@ -1363,7 +1363,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_prime_app_part2_approved.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="493" resname="r546801273" restype="string" datatype="ruby">
+      <trans-unit id="493" resname="r3013966" restype="string" datatype="ruby">
         <source>.</source>
         <target state="translated">.</target>
       </trans-unit>
@@ -1375,7 +1375,7 @@
         <source>HealthTap Prime doctor</source>
         <target state="translated">HealthTap Prime医生</target>
       </trans-unit>
-      <trans-unit id="505" resname="r479272471" restype="string" datatype="ruby">
+      <trans-unit id="505" resname="r629509936" restype="string" datatype="ruby">
         <source>If you have any questions in the meantime, please contact us at</source>
         <target state="translated">如果您在此期间有任何问题，请与我们联系</target>
       </trans-unit>
@@ -1455,7 +1455,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_set_pricing_change_and_upcoming_charge.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="657" resname="r306494039" restype="string" datatype="ruby">
+      <trans-unit id="657" resname="r635948611" restype="string" datatype="ruby">
         <source>Team</source>
         <target state="translated">团队</target>
       </trans-unit>
@@ -1487,7 +1487,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_app_training_demo.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="713" resname="r461230370" restype="string" datatype="ruby">
+      <trans-unit id="713" resname="r281548558" restype="string" datatype="ruby">
         <source>Please send any questions, comments or suggestions to</source>
         <target state="translated">请发送任何问题，意见或建议到</target>
       </trans-unit>
@@ -1735,7 +1735,7 @@
         <source>Staff name</source>
         <target state="translated">员工姓名</target>
       </trans-unit>
-      <trans-unit id="819" resname="r480997426" restype="string" datatype="ruby">
+      <trans-unit id="819" resname="r499309286" restype="string" datatype="ruby">
         <source>Wrong code. Please try again:</source>
         <target state="translated">错误代码。请再次尝试。</target>
       </trans-unit>
@@ -2103,7 +2103,7 @@
         <source>Facial Plastic Surgery</source>
         <target state="translated">形外科</target>
       </trans-unit>
-      <trans-unit id="1057" resname="r284944373" restype="string" datatype="ruby">
+      <trans-unit id="1057" resname="r143937928" restype="string" datatype="ruby">
         <source>Neurologist</source>
         <target state="translated">神经病医师</target>
       </trans-unit>
@@ -8508,7 +8508,7 @@
   </file>
   <file original="_vp_director_of_marketing.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2173" resname="r482075706" restype="string" datatype="x-haml">
+      <trans-unit id="2173" resname="r918907465" restype="string" datatype="x-haml">
         <source>%p.requirements With our marketing team you will:</source>
         <target state="translated">%p.requirements与我们的营销团队，您将：</target>
       </trans-unit>
@@ -8516,7 +8516,7 @@
   </file>
   <file original="_vp_director_of_business_development.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2174" resname="r980192517" restype="string" datatype="x-haml">
+      <trans-unit id="2174" resname="r858377893" restype="string" datatype="x-haml">
         <source>%p.requirements As HealthTap&apos;s Director of Business Development, you will:</source>
         <target state="translated">%p.requirements作为HealthTap的业务发展总监，您将：</target>
       </trans-unit>
@@ -8524,7 +8524,7 @@
   </file>
   <file original="_ux_designer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2175" resname="r996685740" restype="string" datatype="x-haml">
+      <trans-unit id="2175" resname="r970540065" restype="string" datatype="x-haml">
         <source>%p.requirements As a leading UX Designer at HealthTap, you will:</source>
         <target state="translated">%p.requirements作为HealthTap领先的UX设计人员，您将：</target>
       </trans-unit>
@@ -8532,7 +8532,7 @@
   </file>
   <file original="_special_assistant_to_the_ceo.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2176" resname="r23224757" restype="string" datatype="x-haml">
+      <trans-unit id="2176" resname="r575918091" restype="string" datatype="x-haml">
         <source>%p.requirements As Special Assistant to the CEO at HealthTap, you will:</source>
         <target state="translated">%p.requirements作为HealthTap首席执行官的特别助理，您将：</target>
       </trans-unit>
@@ -8540,7 +8540,7 @@
   </file>
   <file original="_software_engineer_frontend.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2177" resname="r39290074" restype="string" datatype="x-haml">
+      <trans-unit id="2177" resname="r622529709" restype="string" datatype="x-haml">
         <source>%p.requirements As a front End engineer at HealthTap, you will:</source>
         <target state="translated">%p.requirements作为HealthTap的前端工程师，您将：</target>
       </trans-unit>
@@ -8548,7 +8548,7 @@
   </file>
   <file original="_software_engineer_backend.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2178" resname="r819459591" restype="string" datatype="x-haml">
+      <trans-unit id="2178" resname="r514379817" restype="string" datatype="x-haml">
         <source>%p.requirements As an engineer at HealthTap, you will:</source>
         <target state="translated">%p.requirements作为HealthTap的工程师，您将：</target>
       </trans-unit>
@@ -8556,7 +8556,7 @@
   </file>
   <file original="_quality_assurance_lead.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2179" resname="r514951256" restype="string" datatype="x-haml">
+      <trans-unit id="2179" resname="r850022825" restype="string" datatype="x-haml">
         <source>%p.requirements As the Quality Assurance Lead at HealthTap, you will:</source>
         <target state="translated">%p.requirements作为HealthTap的质量保证主管，您将：</target>
       </trans-unit>
@@ -8564,7 +8564,7 @@
   </file>
   <file original="_office_manager.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2180" resname="r639409525" restype="string" datatype="x-haml">
+      <trans-unit id="2180" resname="r245967759" restype="string" datatype="x-haml">
         <source>%p.requirements As HealthTap Office Manager you will:</source>
         <target state="translated">%p.requirements作为HealthTap业务经理，您将：</target>
       </trans-unit>
@@ -8572,7 +8572,7 @@
   </file>
   <file original="_mobile_app_developer_android_and_ios.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2181" resname="r325334734" restype="string" datatype="x-haml">
+      <trans-unit id="2181" resname="r620136874" restype="string" datatype="x-haml">
         <source>%p.requirements As a mobile apps developer at HealthTap, you will:</source>
         <target state="translated">%p.requirements作为HealthTap的移动应用程序开发人员，您将：</target>
       </trans-unit>
@@ -8580,7 +8580,7 @@
   </file>
   <file original="_lead_product_manager.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2182" resname="r810238246" restype="string" datatype="x-haml">
+      <trans-unit id="2182" resname="r289189791" restype="string" datatype="x-haml">
         <source>%p.requirements As a member of the product team at HealthTap, you will:</source>
         <target state="translated">%p.requirements作为HealthTap产品团队的成员，您将：</target>
       </trans-unit>
@@ -8588,7 +8588,7 @@
   </file>
   <file original="_it_and_operations_engineer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2183" resname="r658317127" restype="string" datatype="x-haml">
+      <trans-unit id="2183" resname="r1039468538" restype="string" datatype="x-haml">
         <source>%p.requirements As an IT Operations Engineer at HealthTap, you will:</source>
         <target state="translated">%p.requirements作为HealthTap的IT运营工程师，您将：</target>
       </trans-unit>
@@ -8596,7 +8596,7 @@
   </file>
   <file original="_director_of_medical_expert_network_physicians.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2184" resname="r578021258" restype="string" datatype="x-haml">
+      <trans-unit id="2184" resname="r570575113" restype="string" datatype="x-haml">
         <source>%p.requirements With fellow team members you will:</source>
         <target state="translated">%p.requirements与团队成员，您将：</target>
       </trans-unit>
@@ -8604,7 +8604,7 @@
   </file>
   <file original="_director_of_engineering.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2185" resname="r12598767" restype="string" datatype="x-haml">
+      <trans-unit id="2185" resname="r613722336" restype="string" datatype="x-haml">
         <source>%p.requirements As HealthTap&apos;s Director of Engineering, you will:</source>
         <target state="translated">%p.requirements作为HealthTap的工程总监，您将：</target>
       </trans-unit>
@@ -8612,7 +8612,7 @@
   </file>
   <file original="_director_of_community_development_users.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2186" resname="r973275320" restype="string" datatype="x-haml">
+      <trans-unit id="2186" resname="r1046388541" restype="string" datatype="x-haml">
         <source>%p.requirements With our community development team you will:</source>
         <target state="translated">%p.requirements与我们的社区开发团队，您将：</target>
       </trans-unit>
@@ -8636,7 +8636,7 @@
   </file>
   <file original="platinum.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2195" resname="r377178580" restype="string" datatype="x-haml">
+      <trans-unit id="2195" resname="r550470130" restype="string" datatype="x-haml">
         <source>of care to their personal health record to help patients live healthier, happier lives.</source>
         <target state="translated">将整个连续的医护连接到他们的个人健康记录，帮助患者生活的更健康，更幸福。</target>
       </trans-unit>
@@ -8644,7 +8644,7 @@
   </file>
   <file original="for_members.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2196" resname="r311067197" restype="string" datatype="x-haml">
+      <trans-unit id="2196" resname="r895796357" restype="string" datatype="x-haml">
         <source>informed on current events in medicine</source>
         <target state="translated">了解当前的医学事件</target>
       </trans-unit>
@@ -8676,7 +8676,7 @@
   </file>
   <file original="_broker_distribution_agreement.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2203" resname="r596760573" restype="string" datatype="x-haml">
+      <trans-unit id="2203" resname="r194620643" restype="string" datatype="x-haml">
         <source>This HealthTap Software Distribution Agreement for Independent Brokers &#40;this “Agreement”&#41; is entered into by and between HealthTap, Inc., a Delaware corporation, having its principal place of business at 270 University Avenue, Floor 2, Palo Alto, California 94301 &#40;“HealthTap”&#41;, and the broker entity or individual broker signatory to this Agreement &#40;the “Licensee”&#41;, effective as of the date of execution of this Agreement by both parties &#40;“Effective Date”&#41;. If this Agreement is entered into by or on behalf of an entity, it shall govern all brokers or agents of such entity and any broker not covered by this Agreement shall have no right or license to distribute the HealthTap Software.</source>
         <target state="translated">此HealthTap Software独立经纪人分配协议将会由HealthTap有限公司或一个德拉威州的公司独立或共同处理。HealthTap有自己的主要办事机构，地址是270 University Avenue, Floor 2, Palo Alto, California 94301 &#40;“HealthTap”&#41;和本协议（“被许可人”）的经纪实体或个别经纪人（“被许可人”），自双方签署本协议之日起生效（“生效日期”）若此协议经由一个团体处理或是代表一个团体，那么此协议应当对此团体所有的经纪人或机构起效，任何不在协议中的经纪人应无权或许可出售HealthTap的软件。</target>
       </trans-unit>
@@ -8692,7 +8692,7 @@
   </file>
   <file original="partnership_payment.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2207" resname="r1054476938" restype="string" datatype="x-haml">
+      <trans-unit id="2207" resname="r531847595" restype="string" datatype="x-haml">
         <source>A marketing kit to help you promote HealthTap Prime</source>
         <target state="translated">一个营销工具包，以帮助您推广HealthTap Prime</target>
       </trans-unit>
@@ -8700,7 +8700,7 @@
   </file>
   <file original="credits_payment.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2208" resname="r867004084" restype="string" datatype="x-haml">
+      <trans-unit id="2208" resname="r456739674" restype="string" datatype="x-haml">
         <source>Schedule a video appointment or send secure message to top specialists of your choice</source>
         <target state="translated">安排视频预约或向您选择的顶级专家发送安全信息</target>
       </trans-unit>
@@ -8708,15 +8708,15 @@
   </file>
   <file original="_golden_lead_body.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2212" resname="r49302008" restype="string" datatype="x-haml">
+      <trans-unit id="2212" resname="r595678929" restype="string" datatype="x-haml">
         <source>in 128 specialties from expected private practices and top institutions, like Cleveland Clinic and Harvard to discover how simple and rewarding it is to get featured in front of millions.</source>
         <target state="translated">在128个从期待的私人实践和顶级机构的专家，如克利夫兰诊所和哈佛，在百万人面前去发掘如何简单和有价值得到新功能。</target>
       </trans-unit>
-      <trans-unit id="2213" resname="r638443741" restype="string" datatype="x-haml">
+      <trans-unit id="2213" resname="r537708060" restype="string" datatype="x-haml">
         <source>Enhance your reputation as a nationally recognized Top Doctor</source>
         <target state="translated">提高您作为国家公认的顶尖医生的声誉</target>
       </trans-unit>
-      <trans-unit id="2214" resname="r644210874" restype="string" datatype="x-haml">
+      <trans-unit id="2214" resname="r347233326" restype="string" datatype="x-haml">
         <source>In good health,</source>
         <target state="translated">身体健康，</target>
       </trans-unit>
@@ -8752,15 +8752,15 @@
   </file>
   <file original="_expert_vip.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2220" resname="r227539668" restype="string" datatype="x-haml">
+      <trans-unit id="2220" resname="r74551189" restype="string" datatype="x-haml">
         <source>Doctor Recommendations</source>
         <target state="translated">医生的建议</target>
       </trans-unit>
-      <trans-unit id="2221" resname="r286377713" restype="string" datatype="x-haml">
+      <trans-unit id="2221" resname="r933401306" restype="string" datatype="x-haml">
         <source>Patient Recommendations</source>
         <target state="translated">患者的建议</target>
       </trans-unit>
-      <trans-unit id="2222" resname="r226637513" restype="string" datatype="x-haml">
+      <trans-unit id="2222" resname="r643959948" restype="string" datatype="x-haml">
         <source>Thank You Notes</source>
         <target state="translated">感谢信</target>
       </trans-unit>

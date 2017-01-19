@@ -787,11 +787,11 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>订阅HealthTap Prime黄金会员</target>
       </trans-unit>
-      <trans-unit id="148" resname="r221792856" restype="string" datatype="java">
+      <trans-unit id="148" resname="r804242190" restype="string" datatype="java">
         <source>Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat</source>
         <target>全天24小时都可以通过视频或者u00a0文本\u00a0与医生交流</target>
       </trans-unit>
-      <trans-unit id="149" resname="r169802058" restype="string" datatype="java">
+      <trans-unit id="149" resname="r942083452" restype="string" datatype="java">
         <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel\u00a0anytime</source>
         <target>得到建议，处方，提醒100%保证满意，取消\u00a0随时</target>
       </trans-unit>
@@ -3637,7 +3637,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="664" resname="r792168104" restype="string" datatype="java">
+      <trans-unit id="664" resname="r112497852" restype="string" datatype="java">
         <source>Near\u00a0you</source>
         <target>靠近\u00a0您</target>
       </trans-unit>
@@ -3655,7 +3655,7 @@
         <target>服务/成本</target>
         <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
       </trans-unit>
-      <trans-unit id="668" resname="r884996706" restype="string" datatype="java">
+      <trans-unit id="668" resname="r611604239" restype="string" datatype="java">
         <source>One consult\t\t\t${0}</source>
         <target>一次咨询\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>

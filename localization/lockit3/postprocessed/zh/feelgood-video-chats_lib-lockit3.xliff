@@ -30,7 +30,7 @@
         <source>Invite others to session</source>
         <target>邀请其他人加入会议</target>
       </trans-unit>
-      <trans-unit id="6" resname="r236672717" restype="string" datatype="java">
+      <trans-unit id="6" resname="r812721282" restype="string" datatype="java">
         <source>Join my consult with:</source>
         <target>加入我的咨询：</target>
       </trans-unit>
@@ -38,7 +38,7 @@
         <source>How would you like to invite</source>
         <target>您想如何邀请</target>
       </trans-unit>
-      <trans-unit id="8" resname="r412453752" restype="string" datatype="java">
+      <trans-unit id="8" resname="r796565643" restype="string" datatype="java">
         <source>Share via:</source>
         <target>分享：</target>
       </trans-unit>
@@ -188,7 +188,7 @@
         <source>Error occurred while reading audio</source>
         <target>读取音频时出错</target>
       </trans-unit>
-      <trans-unit id="38" resname="r98241011" restype="string" datatype="java">
+      <trans-unit id="38" resname="r902851796" restype="string" datatype="java">
         <source>Downloaded to:</source>
         <target>下载到：</target>
       </trans-unit>
@@ -200,7 +200,7 @@
         <source>Failed to download pdf</source>
         <target>无法下载pdf</target>
       </trans-unit>
-      <trans-unit id="40" resname="r324623762" restype="string" datatype="java">
+      <trans-unit id="40" resname="r795802560" restype="string" datatype="java">
         <source>Diagnosis codes:\n</source>
         <target>诊断码：\n</target>
       </trans-unit>

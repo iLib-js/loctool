@@ -198,7 +198,7 @@
   </file>
   <file original="app/views/static_pages/virtual_care_course.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="41" resname="r189454884" restype="string" datatype="ruby">
+      <trans-unit id="41" resname="r694073249" restype="string" datatype="ruby">
         <source>What you\&apos;ll learn</source>
         <target state="translated">您会学到什么</target>
       </trans-unit>
@@ -568,7 +568,7 @@
         <source>I\&apos;m %{doc_name}. What health questions can we answer for you?</source>
         <target state="translated">我是%{doc_name}。我们可以为您解答什么健康问题？</target>
       </trans-unit>
-      <trans-unit id="124" resname="r831034100" restype="string" datatype="ruby">
+      <trans-unit id="124" resname="r206516038" restype="string" datatype="ruby">
         <source>Nice to meet you! I\&apos;m %{doc_name},  and I\&apos;m a Board Certified U.S. doctor. Can we answer a health question for you?</source>
         <target state="translated">很高兴见到您！我是%{doc_name}，是美国医学委员会认证医生。今天我们能为您回答健康问题吗？</target>
       </trans-unit>
@@ -644,7 +644,7 @@
         <source>Welcome to HealthTap. I\&apos;m %{doc_name}, and I\&apos;m a Board Certified U.S. doctor. What seems to be the problem?</source>
         <target state="translated">欢迎来到HealthTap。我是%{doc_name}，是美国医学委员会认证医生。似乎是什么问题？</target>
       </trans-unit>
-      <trans-unit id="143" resname="r1033702467" restype="string" datatype="ruby">
+      <trans-unit id="143" resname="r459380774" restype="string" datatype="ruby">
         <source>You can actually talk with me or another HealthTap doctor now by video or text chat. Would you like to see a doctor now? We\&apos;re standing by!</source>
         <target state="translated">您现在可以通过视频或文字聊天与我或另一个HealthTap医生交谈。您希望现在查看医生吗？ 我们随时恭候！</target>
       </trans-unit>
@@ -704,16 +704,16 @@
   </file>
   <file original="app/views/static_pages/investors.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="156" resname="r77578255" restype="string" datatype="ruby">
+      <trans-unit id="156" resname="r750047161" restype="string" datatype="ruby">
         <source>Bill Ericson has been working with startups his entire career as a founder, key advisor, counselor and investor. He believes that entrepreneurship drives the American economy, and that the best venture capitalists see their role as supporting and challenging entrepreneurs to their best performance. Bill’s current investment focus is the big data revolution that is driving the commercial, consumer media, and healthcare worlds. Bill serves on the Board of Northwestern University School of Law and received his B.S.F.S. from Georgetown University of Foreign Service and J.D. from Northwestern University School of Law. &lt;br&gt;&lt;br&gt;&lt;a href=\&quot;http://www.mdv.com/\&quot;  rel=&apos;nofollow&apos;  target=\&quot;_blank\&quot;&gt;MDV&lt;/a&gt; has over $1.4 billion under management and partners with entrepreneurs to architect and build successful companies. MDV invests in businesses that address significant challenges and opportunities, including personalizing medicine. MDV-funded companies that have gone public or been acquired include: Agile; Broadbase &#40;KANA&#41;; Brocade; Epigram &#40;BRCM&#41;; FormFactor &#40;FORM&#41;; Freshwater Software &#40;MERQ&#41;; Ipsilon Networks &#40;NOK&#41;; Kalpana &#40;CSCO&#41;; Numerical Technologies &#40;SNPS&#41;; ONI Systems &#40;CIEN&#41;; Pivotal Technologies &#40;BRCM&#41;; Rambus; Vantive; Vitesse; and Zip2 &#40;AltaVista&#41;.</source>
         <target state="translated">Bill Ericson整个职业生涯都是作为创始人，关键顾问，顾问和投资者一直在初创公司工作。他认为创业驱使美国经济，最好的风险资本家看到他们的作用，支持和挑战企业家的最佳表现。 Bill目前的投资焦点是推动商业，消费媒体和健康医护领域的大数据革命。 Bill在西北大学法学院董事会任职，并获得了乔治城外交大学的金融学士学位和西北大学法学院的法学博士。&lt;br&gt;&lt;br&gt;&lt;a href=\”http://www.mdv.com/\”  rel=’nofollow’  target=\”_blank\”&gt;MDV&lt;/a&gt; 拥有超过14亿美元的管理和合作伙伴与企业家成功建立与成立的公司。MDV投资于解决重大挑战和机遇的企业，包括个性化医疗。已上市或已被收购的MDV资助公司包括：敏捷; Broadbase（KANA）;锦缎; Epigram（BRCM）; FormFactor（FORM）;淡水软件（MERQ）; Ipsilon网络（NOK）;卡尔帕纳数值技术（SNPS）; ONI系统（CIEN）; Pivotal技术（BRCM）;兰布斯；Vitesse;和Zip2（AltaVista）。</target>
       </trans-unit>
-      <trans-unit id="157" resname="r935698961" restype="string" datatype="ruby">
+      <trans-unit id="157" resname="r760960114" restype="string" datatype="ruby">
         <source>Tim Chang is the Managing Director of the &lt;a href=\&quot;http://www.mayfield.com/\&quot; target=\&quot;_blank\&quot; rel=&apos;nofollow&apos; &gt;Mayfield Fund&lt;/a&gt;.  Tim is a proven venture investor and experienced global executive.  He was named on the 2011 Forbes Midas List of Top 100 Dealmakers and was featured by The Deal as one of five emerging VCs to watch.  Tim invests in the mobile, gaming, digital media, and enterprise applications sectors.  Prior to joining Mayfield Fund, Tim spent five years as a Partner at Norwest Venture Partners, and prior to Norwest, Tim worked for Gabriel Venture Partners, and as part of the founding team of CTR Ventures. Currently, Tim serves on the advisory boards of the Verizon 4G Venture Forum, Gamestop Corporation, Yoshimoto Kogyo, the Silicon Valley Telecom Council, MIT/Stanford VLAB, CasualConnect, and GamesBeat/MobileBeat.  Tim holds an MBA from the Stanford Graduate School of Business, and an M.S. and B.S. from the University of Michigan.
                 &lt;br&gt;&lt;br&gt;&lt;a href=&apos;mayfield.com&apos; target=&apos;_blank&apos; rel=nofollow &gt;Mayfield&lt;/a&gt; is a global venture capital firm with over $2.6 billion under management and a 45-year history of championing entrepreneurs. Mayfield invests primarily in early-stage consumer and enterprise-facing IT companies. Since its founding in 1969, the firm has invested in more than 500 companies, resulting in over 110 IPOs and more than 150 mergers or acquisitions. For more information, visit &lt;a href=&apos;mayfield.com&apos; target=&apos;_blank&apos; rel=nofollow &gt;www.mayfield.com&lt;/a&gt;</source>
         <target state="translated">Tim Chang是a href=\”http://www.mayfield.com/\” target=\”_blank\” rel=’nofollow’ &gt;Mayfield基金&lt;/a&gt;的董事总经理。Tim是一位已证明过自己的风险投资者和经验丰富的全球高管。他被命名为2011年“福布斯”Midas百强交易商名单，并被“交易”评为五个新兴风险投资公司之一。 Tim投资移动，游戏，数字媒体和企业应用部门。在加入Mayfield基金之前，Tim在诺维斯特风险投资担任合伙人五年，在诺维斯特之前，Tim曾在Gabriel风险投资工作，也是CTR风险创始团队的一员。目前，Tim任职于Verizon 4G创业论坛，Gamestop公司，Yoshimoto工业公司，硅谷电信委员会，MIT/Stanford VLAB，CasualConnect和GamesBeat/MobileBeat的顾问委员会。 Tim拥有斯坦福大学商学院的工商管理硕士学位。和密歇根大学学士学位。                                                                                                                                                         &lt;br&gt;&lt;br&gt;&lt;a href=’mayfield.com’ target=’_blank’ rel=nofollow &gt;Mayfield&lt;/a&gt;是一家全球性的风险投资公司，管理着超过26亿美元，拥有45年的创业企业家历史。 Mayfield主要投资于早期消费和面向企业的IT公司。自1969年成立以来，该公司已经投资了超过500家公司，超过110个IPO和超过150个并购。有关详情，请访问&lt;a href=&apos;mayfield.com&apos; target=&apos;_blank&apos; rel=nofollow &gt;www.mayfield.com&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="158" resname="r814157639" restype="string" datatype="ruby">
+      <trans-unit id="158" resname="r353451200" restype="string" datatype="ruby">
         <source>Eric Schmidt is Executive Chairman of Google and the founder of &lt;a  rel=&apos;nofollow&apos; href=\&quot;http://innovationendeavors.com/\&quot; target=\&quot;_blank\&quot;&gt;Innovation Endeavors&lt;/a&gt;. Since joining Google in 2001, he has helped grow it from a Silicon Valley startup to a global leader in technology. From 2001 to 2011, Eric served as Google&apos;s Chief Executive Officer, overseeing its technical and business strategy. Eric joined Google from Novell, where he served as Chief Executive Officer from April 1997 to July 2001 and as Chairman. Prior to Novel, he held various positions at Sun Microsystems, including serving as Chief Technology Officer and as Corporate Executive Officer. Before joining Sun in 1983, Eric served as a Member of the Research staff at the Computer Science Lab of Xerox Palo Alto Research Center &#40;PARC&#41;, and held positions at Bell Laboratories and ZiLOG. Eric has also served as the Chairman of the New America Foundation, Google, Novel, and InSight Venture Partners, and as a Director of Google, Apple, and Seibel Systems.  Eric is also a member of the President&apos;s Council of Advisors on Science and Technology and the Prime Minister&apos;s Advisory Council in the U.K.  Eric has Bachelor of Science and M.S. degrees in Electrical Engineering from Princeton University, and a Ph.D. in Computer Science from the University of California-Berkeley.</source>
         <target state="translated">Eric Sc​​hmidt是Google的执行主席，也是&lt;a  rel=’nofollow’ href=\”http://innovationendeavors.com/\” target=\”_blank\”&gt;Innovation Endeavors&lt;/a&gt;的创始人。自2001年加入谷歌以来，他一直致力于将硅谷创业公司发展成为全球技术领导者。从2001年到2011年，Eric担任谷歌首席执行官，监督其技术和业务战略。 Eric离开Novel加入谷歌，1997年4月至2001年7月担任首席执行官，并担任主席。在Novel之前，他在阳微系统公司担任过多个职位，包括担任首席技术官和公司执行官。在1983年加入Sun之前，Eric曾在帕罗奥多研究中心（PARC）的计算机科学实验室担任研究员，并在贝尔实验室和ZiLOG任职。 Eric还担任新美国基金会，谷歌，Novel和InSight风险投资的主席，以及谷歌，苹果和塞贝尔系统的董事。Eric还是科学技术顾问委员会主席和英国首相顾问委员会的成员。Eric拥有科学学士学位和普林斯顿大学电气工程学士学位和并在加州大学伯克利分校获得计算机科学博士学位。</target>
       </trans-unit>
@@ -813,19 +813,19 @@
   </file>
   <file original="app/views/people/feelGood/submit_case.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="172" resname="r946581826" restype="string" datatype="ruby">
+      <trans-unit id="172" resname="r833790376" restype="string" datatype="ruby">
         <source>Diagnostic dilemma: \&quot;What&apos;s the diagnosis?\&quot;</source>
         <target state="translated">诊断困境：“诊断是什么？”</target>
       </trans-unit>
-      <trans-unit id="173" resname="r254246744" restype="string" datatype="ruby">
+      <trans-unit id="173" resname="r372120495" restype="string" datatype="ruby">
         <source>Diagnostic dilemma: \&quot;What are the next steps for evaluation?\&quot;</source>
         <target state="translated">诊断困境：“评估的下一步是什么？”</target>
       </trans-unit>
-      <trans-unit id="174" resname="r502063225" restype="string" datatype="ruby">
+      <trans-unit id="174" resname="r688178430" restype="string" datatype="ruby">
         <source>Treatment decision: \&quot;What&apos;s the best treatment?\&quot;</source>
         <target state="translated">治疗决定：“什么是最佳治疗？”</target>
       </trans-unit>
-      <trans-unit id="175" resname="r534451249" restype="string" datatype="ruby">
+      <trans-unit id="175" resname="r230124915" restype="string" datatype="ruby">
         <source>Fascinating or rare case: \&quot;Isn&apos;t this interesting?\&quot;</source>
         <target state="translated">吸引人的或罕见的情况：“这不是很有趣吗？</target>
       </trans-unit>
@@ -913,7 +913,7 @@
   </file>
   <file original="app/views/general_mailer/member_welcome_password.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="189" resname="r272034207" restype="string" datatype="ruby">
+      <trans-unit id="189" resname="r70094528" restype="string" datatype="ruby">
         <source>from &#35;{static_doctors_count} top doctors whenever you have a health question or want to accomplish a health goal.</source>
         <target state="translated">每当您有健康问题或希望达到健康目标时，从&#35;{static_doctors_count}名顶级医生。</target>
       </trans-unit>
@@ -1002,7 +1002,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_test_results_critical_day1.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="203" resname="r74266013" restype="string" datatype="ruby">
+      <trans-unit id="203" resname="r923729424" restype="string" datatype="ruby">
         <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an \&quot;addendum note\&quot; to this consult using the chat input.</source>
         <target state="translated">请审查结果，提供您对这些结果的解释，并建议患者下一步该做什么。要这样做，只需使用聊天输入为这次咨询留下“附录注释“。</target>
       </trans-unit>
@@ -1010,7 +1010,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_inbox_incoming_group.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="204" resname="r529093451" restype="string" datatype="ruby">
+      <trans-unit id="204" resname="r570522913" restype="string" datatype="ruby">
         <source>page, and select the \&quot;Answer Patient\&quot; button.</source>
         <target state="translated">页面，然后选择“回答患者”按钮。</target>
       </trans-unit>
@@ -2094,7 +2094,7 @@
         <source>You&apos;re leading the way! Your answer to \&quot;%{question}\&quot; is now the Top Answer! http://healthtap.com</source>
         <target state="translated">您的先进方法！ 您对&quot;%{question}&quot;的回答现在是热门回答！http://healthtap.com</target>
       </trans-unit>
-      <trans-unit id="453" resname="r860404138" restype="string" datatype="ruby">
+      <trans-unit id="453" resname="r979977" restype="string" datatype="ruby">
         <source>%{referrer} has referred you to %{referred_to}. Get in touch with %{referred_to}.</source>
         <target state="translated">%{referrer}已将您转诊到%{referred_to}。 与%{referred_to}联系。</target>
       </trans-unit>
@@ -2174,7 +2174,7 @@
         <source>See helpful doctor insights for this \&quot;Medical Case: %{case_content}\&quot; %{short_url} via @HealthTap</source>
         <target state="translated">通过@HealthTap查看为此“医疗案例：%{case_content} \”%{short_url}有帮助的医生见解：</target>
       </trans-unit>
-      <trans-unit id="471" resname="r442488972" restype="string" datatype="ruby">
+      <trans-unit id="471" resname="r889985342" restype="string" datatype="ruby">
         <source>I found %{doctor_name}&apos;s answer really helpful, and thought you might too:: \n \&quot;%{question}\&quot;</source>
         <target state="translated">我发现%{doctor_name}的回答真的有帮助，认为也可以帮助到您:: \n \&quot;%{question}\&quot;</target>
       </trans-unit>
@@ -2194,7 +2194,7 @@
         <source>%{case_title} — %{question}</source>
         <target state="translated">%{case_title} — %{question}</target>
       </trans-unit>
-      <trans-unit id="476" resname="r357334118" restype="string" datatype="ruby">
+      <trans-unit id="476" resname="r219320126" restype="string" datatype="ruby">
         <source>I found this doctor answer really helpful, and thought you might too: \n \&quot;%{question_name}\&quot;</source>
         <target state="translated">我发现这位医生的回答真的有帮助，认为也可以帮助到您: \n \&quot;%{question_name}\&quot;</target>
       </trans-unit>
@@ -2270,7 +2270,7 @@
         <source>I thought you&apos;d be interested in doctor insights about %{goal}!</source>
         <target state="translated">我想您有兴趣了解医生关于%{goal}的见解</target>
       </trans-unit>
-      <trans-unit id="495" resname="r254797745" restype="string" datatype="ruby">
+      <trans-unit id="495" resname="r325377029" restype="string" datatype="ruby">
         <source>I thought you like to check out %{goal} on HealthTap. HealthTap has  thousands of answers, articles, tips, and checklists designed to help you with this goal, so you can smile and feel good all the time!</source>
         <target state="translated">我想您喜欢在HealthTap上查看%{goal}。 HealthTap有数以千计的回答，文章，小贴士和清单，旨在帮助您实现这一目标，所以您可以始终微笑和感觉良好！</target>
       </trans-unit>
@@ -2363,7 +2363,7 @@
         <source>Connect with me on HealthTap with my special keycode: %{key_code}! Schedule appointments to video chat, text, or message me during on my Virtual Practice!</source>
         <target state="translated">使用我的特殊号码：%{key_code}在HealthTap上与我联系！ 在我的在线诊疗期间通过视频聊天，文字或给我发送消息安排预约！</target>
       </trans-unit>
-      <trans-unit id="518" resname="r568222422" restype="string" datatype="ruby">
+      <trans-unit id="518" resname="r569166535" restype="string" datatype="ruby">
         <source>Hi,\n\nI just helped bring healthcare to those in need through HealthTap&apos;s Get health + Give health initiative! Because of my purchase, HealthTap donated %{bundle_value} doctor %{consult} to %{charity}.\n\nVirtual doctor consults bring high-quality medical expertise and top doctor knowledge.\n\n*Doctors are immediately available 24/7\n*Get advice and prescriptions sent to your local pharmacy\n*Use a tailored action plan with timely, helpful reminders\n\nHelp yourself while helping others: www.healthtap.com/get_and_give_health</source>
         <target state="translated">您好，\n\n我只是为通过HealthTap的“获得健康 + 给予健康”的倡议带来他们需要的健康医护。由于我的购买，HealthTap为%{charity}捐赠了%{bundle_value}名医生。\n\n在线医生咨询带来高质量的医疗专业知识和顶级的医生知识。\n\n*医生可以24/7全天候提供服务\n*获得发送到您当地药房的建议和处方\n*通过及时的和有帮助的提醒使用定制的行动计划\n\n帮助自己，同时也是帮助他人：www.healthtap.com/get_and_give_health</target>
       </trans-unit>
@@ -2403,7 +2403,7 @@
         <source>%{num_docs} top U.S. doctors reviewed treatments for %{treatment} on HealthTap. The results are amazing. Check them out!</source>
         <target state="translated">%{num_docs}名美国顶尖医生为%{treatment}审查了治疗方法。 结果是惊人的。 去看一下！</target>
       </trans-unit>
-      <trans-unit id="529" resname="r183097721" restype="string" datatype="ruby">
+      <trans-unit id="529" resname="r134548916" restype="string" datatype="ruby">
         <source>&lt;p&gt;Or call +1&#40;415&#41;429-1250 and type in pin %{room_pin} when prompted.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;</source>
         <target state="translated">&lt;p&gt;或致电+1&#40;415&#41;429-1250并在出现提示时输入pin%{room_pin}。&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;</target>
       </trans-unit>
@@ -2483,7 +2483,7 @@
         <source>Join me on HealthTap! Get 1 month FREE :&#41;</source>
         <target state="translated">在HealthTap加我！ 获得1个月的免费 :&#41;</target>
       </trans-unit>
-      <trans-unit id="549" resname="r270924447" restype="string" datatype="ruby">
+      <trans-unit id="549" resname="r925928384" restype="string" datatype="ruby">
         <source>Gift for you! Get 1 month free access to top doctors via video or text chat, 24/7, with HealthTap Prime.</source>
         <target state="translated">给您的礼物！ 1个月免费的使用HealthTap Prime通过视频或文字聊天，24/7全天候访问顶级医生。</target>
       </trans-unit>
@@ -2659,7 +2659,7 @@
         <source>Have you ever been addicted to any substance&#40;s&#41;; or enrolled in, been required to enter into, or participated in any program for drug or alcohol recovery or any program for impaired practitioners for the treatment of drugs or alcohol?</source>
         <target state="translated">您是否曾经对任何物质上瘾，或卷入，被要求进入，或者自愿参加任何药物或酒精恢复项目或治疗药物或酒精的项目？</target>
       </trans-unit>
-      <trans-unit id="588" resname="r916868419" restype="string" datatype="ruby">
+      <trans-unit id="588" resname="r277688003" restype="string" datatype="ruby">
         <source>Please select one of the following:</source>
         <target state="translated">请选择以下选项之一：</target>
       </trans-unit>
@@ -2703,7 +2703,7 @@
         <source>Has the doctor ever been addicted to any substance, or enrolled in, required to enter into, or participated in any drug or alcohol recovery program, or impaired practitioner program for treatment of drugs or alcohol abuse?</source>
         <target state="translated">医生是否曾经对任何物质上瘾，或卷入，被要求进入，或者自愿参加任何药物或酒精恢复项目，或治疗药物或酒精滥用的项目？</target>
       </trans-unit>
-      <trans-unit id="599" resname="r156045476" restype="string" datatype="ruby">
+      <trans-unit id="599" resname="r854720274" restype="string" datatype="ruby">
         <source>Do you know of any reasons why the doctor\&apos;s licensing applications in any state might be rejected or revoked?</source>
         <target state="translated">您知道医生在任何州的执业执照申请被拒绝或撤销的可能原因吗？</target>
       </trans-unit>
@@ -2828,7 +2828,7 @@
         <source>Jan 2017</source>
         <target state="translated">2017年1月</target>
       </trans-unit>
-      <trans-unit id="628" resname="r789397774" restype="string" datatype="ruby">
+      <trans-unit id="628" resname="r302595438" restype="string" datatype="ruby">
         <source>Doctor %{ai_serif} is an %{ai_serif}-powered personal \&quot;physician\&quot;, trained by HealthTap’s network of more than 105,000 doctors, incorporates both context and clinical expertise of doctors who have helped triage hundreds of millions of patients worldwide to right levels of doctor-recommended care. Just like a sympathetic human physician, Dr. %{ai_serif} converses with the user to understand their current complaints or concerns and uses the user’s health profile to compute the probable causes of their symptoms.</source>
         <target state="translated">医生%{ai_serif}是由HealthTap中超过105,000名医生组成的网络培训的%{ai_serif}个人的“医师”，结合了医生的环境和临床专业知识帮助按照医生推荐的医护水平进行分类世界各地数以亿计的患者。就像一个有同情心的人类医生，{ai_serif}医生与用户交流以了解他们目前的抱怨与担忧，并使用用户的健康资料来计算症状的可能原因。</target>
       </trans-unit>

@@ -2846,10 +2846,6 @@
         <source>{appointment_time} with {doctor_name}</source>
         <target state="translated">{appointment_time}与{doctor_name}</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
-    <body>
       <trans-unit id="38" resname="helpful" restype="string" datatype="x-android-resource">
         <source>Helpful</source>
         <target>有帮助的</target>

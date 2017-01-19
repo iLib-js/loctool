@@ -1110,11 +1110,11 @@
         <source>Apps</source>
         <target state="translated">应用程序</target>
       </trans-unit>
-      <trans-unit id="2556" resname="r23754887" restype="string" datatype="x-haml">
+      <trans-unit id="2556" resname="r516963162" restype="string" datatype="x-haml">
         <source>Doctor recommended health and</source>
         <target state="translated">医生推荐健康和</target>
       </trans-unit>
-      <trans-unit id="2557" resname="r649826773" restype="string" datatype="x-haml">
+      <trans-unit id="2557" resname="r811333675" restype="string" datatype="x-haml">
         <source>wellness iOS and Android apps</source>
         <target state="translated">健康iOS和Android应用程序</target>
       </trans-unit>
@@ -2470,7 +2470,7 @@
   </file>
   <file original="prime_guidelines.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2351" resname="r541447038" restype="string" datatype="x-haml">
+      <trans-unit id="2351" resname="r142965865" restype="string" datatype="x-haml">
         <source>You guarantee your availability to take consults for the  duration of the shift, and in exchange, are eligible for guaranteed minimum compensation payments for shifts as a function of patient demand. These doctors are preferentially routed patients before On Standby or Try Me doctors.</source>
         <target state="translated">您保证您可以在轮班期间接受咨询，作为交换，您有资格根据患者的需求确保轮班的最低补偿金。这些医生在待命或Try Me doctors之前优先规定患者。</target>
       </trans-unit>
@@ -2854,7 +2854,7 @@
   </file>
   <file original="our_story.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2430" resname="r64006775" restype="string" datatype="x-haml">
+      <trans-unit id="2430" resname="r350388964" restype="string" datatype="x-haml">
         <source>People want a completely trustworthy source of health and wellness advice</source>
         <target state="translated">人们想要一个完全可信的健康与保健的咨询来源</target>
       </trans-unit>
@@ -3282,11 +3282,11 @@
         <source>We’ve blended design thinking and cutting-edge technology  to reinvent the way healthcare is delivered.</source>
         <target state="translated">我们将设计的思路与前沿科技想融合来重新改变之前的健康服务的传送方式。</target>
       </trans-unit>
-      <trans-unit id="2516" resname="r88193775" restype="string" datatype="x-haml">
+      <trans-unit id="2516" resname="r498352011" restype="string" datatype="x-haml">
         <source>Your home. Your office. Your vacation home.  Any place with an internet connection will do. Yes, even from your mobile device.</source>
         <target state="translated">不论在任何地方，只要有网络就可以。是的，您甚至可以使用您的移动设备。</target>
       </trans-unit>
-      <trans-unit id="2517" resname="r893424603" restype="string" datatype="x-haml">
+      <trans-unit id="2517" resname="r1068327882" restype="string" datatype="x-haml">
         <source>Practice medicine from your iPhone,  iPad, Android, or other mobile device — or see patients from any desktop or laptop computer using any web browser.</source>
         <target state="translated">在苹果，平板，安卓或者其他任何移动设备上——或者使用台式或手提电脑上的浏览器都可以实现行医。</target>
       </trans-unit>
@@ -7058,7 +7058,7 @@
         <source>Enhance your reputation as a nationally recognized Top Doctor</source>
         <target state="translated">提高您作为国家公认的顶尖医生的声誉</target>
       </trans-unit>
-      <trans-unit id="3362" resname="r9991239" restype="string" datatype="x-haml">
+      <trans-unit id="3362" resname="r456554357" restype="string" datatype="x-haml">
         <source>to help you and your practice thrive on our popular platform that NBC, CBS, the New York Times, and the Wall Street Journal have featured as the leading digital healthcare solution for doctors.</source>
         <target state="translated">去帮助您和您的诊疗在我们流行的平台上蓬勃发展，NBC，CBS，纽约时报和华尔街日报已经为医生领先的数字健康医护解决方案起着重要方案。</target>
       </trans-unit>

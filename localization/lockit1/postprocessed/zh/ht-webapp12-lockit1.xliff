@@ -35579,7 +35579,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7016" resname=" An additional ${price}" restype="string" datatype="javascript">
         <source>An additional ${price}</source>
-        <target state="accepted">(需额外支付${price})</target>
+        <target state="accepted">&#40;需额外支付${price}&#41;</target>
       </trans-unit>
     </body>
   </file>

@@ -929,11 +929,11 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>Suscríbete a HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="167" resname="r221792856" restype="string" datatype="java">
+      <trans-unit id="167" resname="r804242190" restype="string" datatype="java">
         <source>Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat</source>
         <target>Habla con un doctor en vivo, 24/7, vía chat de\u00a0video\u00a0o texto</target>
       </trans-unit>
-      <trans-unit id="168" resname="r169802058" restype="string" datatype="java">
+      <trans-unit id="168" resname="r942083452" restype="string" datatype="java">
         <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel\u00a0anytime</source>
         <target>Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar\u00a0en cualquier momento</target>
       </trans-unit>
@@ -2297,7 +2297,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/GoalTakeActionListItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="411" resname="r363844654" restype="string" datatype="java">
+      <trans-unit id="411" resname="r390005620" restype="string" datatype="java">
         <source>{approver_name} agreed with {author_name}\&apos;s checklist</source>
         <target>{approver_name} estuvo de acuerdo con el listado de {author_name}</target>
       </trans-unit>
@@ -2418,7 +2418,7 @@
         <source>Is {first_name} alive?</source>
         <target>¿Está vivo {first_name}?</target>
       </trans-unit>
-      <trans-unit id="433" resname="r914415647" restype="string" datatype="java">
+      <trans-unit id="433" resname="r920181258" restype="string" datatype="java">
         <source>Does {first_name}\&apos;s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
         <target>¿Los abuelos, padres o hermanos vivos de {first_name} tienen alguna condición médica mayor? &#40;¿que atente contra la vida o no?&#41;</target>
       </trans-unit>
@@ -3772,7 +3772,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="676" resname="r792168104" restype="string" datatype="java">
+      <trans-unit id="676" resname="r112497852" restype="string" datatype="java">
         <source>Near\u00a0you</source>
         <target>Cerca de\u00a0ti</target>
       </trans-unit>
@@ -3790,7 +3790,7 @@
         <target>Servicio/Costo</target>
         <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
       </trans-unit>
-      <trans-unit id="680" resname="r884996706" restype="string" datatype="java">
+      <trans-unit id="680" resname="r611604239" restype="string" datatype="java">
         <source>One consult\t\t\t${0}</source>
         <target>Una consulta\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>

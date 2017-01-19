@@ -33,7 +33,7 @@ for (var i = 0; i < units.length; i++) {
 	unit = units[i];
 	
 	if (unit.datatype === "x-haml" || unit.datatype === "ruby") {
-		var hash = rf.makeHash(unit.source);
+		var hash = rf.makeKey(unit.source);
 		unit.source = unit.source.trim();
 		unit.target = unit.target.trim();
 		
@@ -43,7 +43,7 @@ for (var i = 0; i < units.length; i++) {
 		}
 		unit.key = hash;
 	} else if (unit.datatype === "java") {
-		var hash = jf.makeHash(unit.source);
+		var hash = jf.makeKey(unit.source);
 		unit.source = unit.source.trim();
 		unit.target = unit.target.trim();
 		
