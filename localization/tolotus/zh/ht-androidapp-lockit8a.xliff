@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="20" resname="body_head" restype="string" datatype="x-android-resource">
+        <source>Head</source>
+        <target state="translated">头</target>
+      </trans-unit>
+      <trans-unit id="21" resname="body_eye" restype="string" datatype="x-android-resource">
+        <source>Eye</source>
+        <target state="translated">眼睛</target>
+      </trans-unit>
+      <trans-unit id="22" resname="body_nose" restype="string" datatype="x-android-resource">
+        <source>Nose</source>
+        <target state="translated">鼻子</target>
+      </trans-unit>
+      <trans-unit id="23" resname="body_mouth" restype="string" datatype="x-android-resource">
+        <source>Mouth</source>
+        <target state="translated">口腔</target>
+      </trans-unit>
+      <trans-unit id="24" resname="body_neck_front" restype="string" datatype="x-android-resource">
+        <source>Neck</source>
+        <target state="translated">颈部</target>
+      </trans-unit>
+      <trans-unit id="25" resname="body_neck_back" restype="string" datatype="x-android-resource">
+        <source>Neck</source>
+        <target state="translated">颈部</target>
+      </trans-unit>
+      <trans-unit id="26" resname="body_ear" restype="string" datatype="x-android-resource">
+        <source>Ear</source>
+        <target state="translated">听觉</target>
+      </trans-unit>
+      <trans-unit id="27" resname="body_chest" restype="string" datatype="x-android-resource">
+        <source>Chest</source>
+        <target state="translated">胸部</target>
+      </trans-unit>
+      <trans-unit id="28" resname="body_shoulder" restype="string" datatype="x-android-resource">
+        <source>Shoulder</source>
+        <target state="translated">肩</target>
+      </trans-unit>
+      <trans-unit id="29" resname="body_arm" restype="string" datatype="x-android-resource">
+        <source>Arm</source>
+        <target state="translated">胳膊</target>
+      </trans-unit>
+      <trans-unit id="30" resname="body_upper_abdomen" restype="string" datatype="x-android-resource">
+        <source>Upper Abdomen</source>
+        <target state="translated">上腹</target>
+      </trans-unit>
+      <trans-unit id="31" resname="body_lower_abdomen" restype="string" datatype="x-android-resource">
+        <source>Lower Abdomen</source>
+        <target state="translated">小腹</target>
+      </trans-unit>
+      <trans-unit id="32" resname="body_pelvis" restype="string" datatype="x-android-resource">
+        <source>Pelvis</source>
+        <target state="translated">骨盆</target>
+      </trans-unit>
+      <trans-unit id="33" resname="body_hip" restype="string" datatype="x-android-resource">
+        <source>Hip</source>
+        <target state="translated">臀部</target>
+      </trans-unit>
+      <trans-unit id="34" resname="body_leg" restype="string" datatype="x-android-resource">
+        <source>Leg</source>
+        <target state="translated">腿</target>
+      </trans-unit>
+      <trans-unit id="35" resname="body_hand" restype="string" datatype="x-android-resource">
+        <source>Hand</source>
+        <target state="translated">手</target>
+      </trans-unit>
+      <trans-unit id="36" resname="body_foot" restype="string" datatype="x-android-resource">
+        <source>Foot</source>
+        <target state="translated">脚</target>
+      </trans-unit>
+      <trans-unit id="37" resname="body_upper_back" restype="string" datatype="x-android-resource">
+        <source>Upper Back</source>
+        <target state="translated">上背</target>
+      </trans-unit>
+      <trans-unit id="38" resname="body_lower_back" restype="string" datatype="x-android-resource">
+        <source>Lower Back</source>
+        <target state="translated">后腰</target>
+      </trans-unit>
+      <trans-unit id="39" resname="body_buttock" restype="string" datatype="x-android-resource">
+        <source>Buttock</source>
+        <target state="translated">臀部</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

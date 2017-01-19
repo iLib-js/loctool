@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/ViewControllers/FGTipCollectionViewCell.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Enter your question" restype="string" datatype="x-objective-c">
+        <source>Enter your question</source>
+        <target state="translated">输入您的问题</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocsQuestionSentViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="   Learn more" restype="string" datatype="x-objective-c">
+        <source>Learn more</source>
+        <target state="translated">了解更多</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
