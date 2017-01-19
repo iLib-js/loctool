@@ -984,7 +984,7 @@ module.exports = {
     },
 
     testRubyFileParseDoublePluralArrow: function(test) {
-        test.expect(7);
+        test.expect(9);
 
         var p = new WebProject({
             id: "webapp",
@@ -1003,9 +1003,11 @@ module.exports = {
         var r = set.getBySource("This is 1 test");
         test.ok(r);
         test.equal(r.getSource(), "This is 1 test");
+        test.equal(r.getKey(), "r186608186")
         var r = set.getBySource("There are %{count} tests");
         test.ok(r);
         test.equal(r.getSource(), "There are %{count} tests");
+        test.equal(r.getKey(), "r733362149")
         test.done();
     }
 };
