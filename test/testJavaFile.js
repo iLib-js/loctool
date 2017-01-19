@@ -499,6 +499,52 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileParseIgnoreLeadingAndTrailingWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("  \t \n  This is a test\n\n\t   ");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testJavaFileParseIgnoreEscapedLeadingAndTrailingWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("  \\t \\n  This is a test\\n\\n\\t   ");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
 
     testJavaFileParseSimpleRightSize: function(test) {
         test.expect(4);
@@ -581,6 +627,29 @@ module.exports = {
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "unique_id")');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "unique_id", "java"));
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "unique_id");
+        
+        test.done();
+    },
+
+    testJavaFileParseWithKeyIgnoreWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("   \t\n This is a test       ", "unique_id")');
         
         var set = j.getTranslationSet();
         test.ok(set);

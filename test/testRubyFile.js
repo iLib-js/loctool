@@ -191,7 +191,7 @@ module.exports = {
 		});
         test.ok(rf);
 
-        test.equals(rf.makeKey("\\u00A0 \\x23"), "r967544232");
+        test.equals(rf.makeKey("\\u00A0 \\x23"), "r2293235");
         
         test.done();
 	},
@@ -418,6 +418,58 @@ module.exports = {
         test.done();
     },
 
+    testRubyFileParseIgnoreLeadingAndTrailingWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        rf.parse('Rb.t("  \t \n This is a test \t \t \n")');
+        
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testRubyFileParseIgnoreEscapedLeadingAndTrailingWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        rf.parse('Rb.t("  \\t \\n This is a test \\t \\t \\n\\n")');
+        
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
     testRubyFileParseSingleQuotesUnescaped: function(test) {
         test.expect(5);
 
@@ -436,10 +488,10 @@ module.exports = {
         var set = rf.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource("This is \\'a\\' test");
+        var r = set.getBySource("This is 'a' test");
         test.ok(r);
         
-        test.equal(r.getSource(), "This is \\'a\\' test");
+        test.equal(r.getSource(), "This is 'a' test");
         test.equal(r.getKey(), "r240708166");
         
         test.done();
@@ -463,10 +515,10 @@ module.exports = {
         var set = rf.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource("This is \\'a\\' test");
+        var r = set.getBySource("This is 'a' test");
         test.ok(r);
         
-        test.equal(r.getSource(), "This is \\'a\\' test");
+        test.equal(r.getSource(), "This is 'a' test");
         test.equal(r.getKey(), "r240708166");
         
         test.done();
@@ -602,6 +654,37 @@ module.exports = {
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "r999080996");
         
+        test.done();
+    },
+
+    testRubyFileParseMultipleSameLine: function(test) {
+        test.expect(8);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        rf.parse('This is Rb.t("This is a test"), a.parse("This is another test."), Rb.t("This is also a test"));');
+        
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        r = set.getBySource("This is also a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is also a test");
+        test.equal(r.getKey(), "r999080996");
+
         test.done();
     },
 
