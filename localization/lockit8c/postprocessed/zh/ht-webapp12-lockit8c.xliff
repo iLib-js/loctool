@@ -3753,8 +3753,8 @@
         <target state="translated">%{doctor_count}健康医护好的改变。在HealthTap加入运动！</target>
       </trans-unit>
       <trans-unit id="7576" resname="r298237688" restype="string" datatype="ruby">
-        <source>My patients find it easy, quick, and very valuable to schedule virtual appointments via my Virtual Practice. I&apos;m able to help patients and do good faster in ways I never before imagined possible, and it didn&apos;t cost me a dime. You can easily &lt;a class=&apos;website-link&apos; href=&apos;&#35;{growLink}&apos; target=&apos;_blank&apos; &gt;set up your Virtual Practice&lt;/a&gt; today too.</source>
-        <target state="translated">我的患者发现通过我的在线诊疗安排在线预约会很容易，快速和非常有价值。我能够帮助患者和我从来没有想象过的可能做得更好的方式，并且它不会花我一毛钱。您今天也可以轻松地&lt;a class=’website-link’ href=’&#35;{growLink}’ target=’_blank’ &gt;建立您的在线诊疗&lt;/a&gt;。</target>
+        <source>My patients find it easy, quick, and very valuable to schedule virtual appointments via my Virtual Practice. I&apos;m able to help patients and do good faster in ways I never before imagined possible, and it didn&apos;t cost me a dime. You can easily &lt;a class=&apos;website-link&apos; href=&apos;%{link}&apos; target=&apos;_blank&apos; &gt;set up your Virtual Practice&lt;/a&gt; today too.</source>
+        <target state="translated">我的患者发现通过我的在线诊疗安排在线预约会很容易，快速和非常有价值。我能够帮助患者和我从来没有想象过的可能做得更好的方式，并且它不会花我一毛钱。您今天也可以轻松地&lt;a class=’website-link’ href=’%{link}’ target=’_blank’ &gt;建立您的在线诊疗&lt;/a&gt;。</target>
       </trans-unit>
       <trans-unit id="7577" resname="r950359199" restype="string" datatype="ruby">
         <source>Share Feedback for %{doc_name}— HealthTap</source>
@@ -8692,8 +8692,8 @@
         <target state="translated">没有更多候诊室</target>
       </trans-unit>
       <trans-unit id="1540" resname="r67011063" restype="string" datatype="ruby">
-        <source>HealthTap Prime puts &#35;{static_doctors_count} top doctors in your pocket&amp;mdash;in under two minutes!</source>
-        <target state="translated">HealthTap Prime把&#35;{static_doctors_count}位顶级医生放入您的口袋&amp;mdash；在两分钟内！</target>
+        <source>HealthTap Prime puts %{num} top doctors in your pocket&amp;mdash;in under two minutes!</source>
+        <target state="translated">HealthTap Prime把%{num}位顶级医生放入您的口袋&amp;mdash；在两分钟内！</target>
       </trans-unit>
       <trans-unit id="1541" resname="r635643370" restype="string" datatype="ruby">
         <source>The ultimate convenience</source>
@@ -13860,8 +13860,8 @@
   <file original="app/views/general_mailer/partials/broker_tip/_broker_tip5_day14.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2650" resname="r632119697" restype="string" datatype="ruby">
-        <source>Access over &#35;{static_doctors_count} top doctors&amp;mdash;24/7 on any mobile device or computer</source>
-        <target state="translated">在任何移动设备或计算机上全天24小时访问＃{static_doctors_count}位顶级医生&amp;mdash</target>
+        <source>Access over %{static_doctors_count} top doctors&amp;mdash;24/7 on any mobile device or computer</source>
+        <target state="translated">在任何移动设备或计算机上全天24小时访问%{static_doctors_count}位顶级医生&amp;mdash</target>
       </trans-unit>
       <trans-unit id="2651" resname="r171224341" restype="string" datatype="ruby">
         <source>Reduce absenteeism and increase engagement</source>

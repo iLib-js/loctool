@@ -3753,8 +3753,8 @@
         <target state="translated">%{doctor_count} cambian a la atención a la salud para bien. ¡Únete al movimiento en HealthTap!</target>
       </trans-unit>
       <trans-unit id="7576" resname="r298237688" restype="string" datatype="ruby">
-        <source>My patients find it easy, quick, and very valuable to schedule virtual appointments via my Virtual Practice. I&apos;m able to help patients and do good faster in ways I never before imagined possible, and it didn&apos;t cost me a dime. You can easily &lt;a class=&apos;website-link&apos; href=&apos;&#35;{growLink}&apos; target=&apos;_blank&apos; &gt;set up your Virtual Practice&lt;/a&gt; today too.</source>
-        <target state="translated">Mis pacientes encuentran muy fácil, rápido y valioso agendar citas virtuales a través de mi Consultorio Virtual. Puedo ayudar a pacientes y hacer el bien de maneras que no había imaginado posible, y no me costó un centavo. Puedes fácilmente &lt;a class=&apos;website-link&apos; href=&apos;&#35;{growLink}&apos; target=&apos;_blank&apos; &gt;configurar tu Consultorio Virtual&lt;/a&gt; hoy también.</target>
+        <source>My patients find it easy, quick, and very valuable to schedule virtual appointments via my Virtual Practice. I&apos;m able to help patients and do good faster in ways I never before imagined possible, and it didn&apos;t cost me a dime. You can easily &lt;a class=&apos;website-link&apos; href=&apos;%{link}&apos; target=&apos;_blank&apos; &gt;set up your Virtual Practice&lt;/a&gt; today too.</source>
+        <target state="translated">Mis pacientes encuentran muy fácil, rápido y valioso agendar citas virtuales a través de mi Consultorio Virtual. Puedo ayudar a pacientes y hacer el bien de maneras que no había imaginado posible, y no me costó un centavo. Puedes fácilmente &lt;a class=&apos;website-link&apos; href=&apos;%{link}&apos; target=&apos;_blank&apos; &gt;configurar tu Consultorio Virtual&lt;/a&gt; hoy también.</target>
       </trans-unit>
       <trans-unit id="7577" resname="r950359199" restype="string" datatype="ruby">
         <source>Share Feedback for %{doc_name}— HealthTap</source>
@@ -8691,8 +8691,8 @@
         <target state="translated">No más salas de espera</target>
       </trans-unit>
       <trans-unit id="1540" resname="r67011063" restype="string" datatype="ruby">
-        <source>HealthTap Prime puts &#35;{static_doctors_count} top doctors in your pocket&amp;mdash;in under two minutes!</source>
-        <target state="translated">¡HealthTap Prime pone a &#35;{static_doctors_count} de los mejores doctores en tu bolsillo&amp;mdash;en menos de dos minutos!</target>
+        <source>HealthTap Prime puts %{num} top doctors in your pocket&amp;mdash;in under two minutes!</source>
+        <target state="translated">¡HealthTap Prime pone a %{num} de los mejores doctores en tu bolsillo&amp;mdash;en menos de dos minutos!</target>
       </trans-unit>
       <trans-unit id="1541" resname="r635643370" restype="string" datatype="ruby">
         <source>The ultimate convenience</source>
@@ -13859,8 +13859,8 @@
   <file original="app/views/general_mailer/partials/broker_tip/_broker_tip5_day14.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="2650" resname="r632119697" restype="string" datatype="ruby">
-        <source>Access over &#35;{static_doctors_count} top doctors&amp;mdash;24/7 on any mobile device or computer</source>
-        <target state="translated">Accede a más de &#35;{static_doctors_count} de los mejores doctores&amp;mdash;24/7, en cualquier dispositivo móvil o computadora</target>
+        <source>Access over %{static_doctors_count} top doctors&amp;mdash;24/7 on any mobile device or computer</source>
+        <target state="translated">Accede a más de %{static_doctors_count} de los mejores doctores&amp;mdash;24/7, en cualquier dispositivo móvil o computadora</target>
       </trans-unit>
       <trans-unit id="2651" resname="r171224341" restype="string" datatype="ruby">
         <source>Reduce absenteeism and increase engagement</source>

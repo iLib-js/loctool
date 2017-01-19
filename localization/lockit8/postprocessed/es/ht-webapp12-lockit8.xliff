@@ -3701,12 +3701,12 @@
         <target>Disponible para mensajes seguros</target>
       </trans-unit>
       <trans-unit id="979" resname="r750915788" restype="string" datatype="ruby">
-        <source>Available next &#35;{msg}</source>
-        <target>Disponible próximamente &#35;{msg}</target>
+        <source>Available next %{msg}</source>
+        <target>Disponible próximamente %{msg}</target>
       </trans-unit>
       <trans-unit id="980" resname="r17068825" restype="string" datatype="ruby">
-        <source>Available next on &#35;{msg}</source>
-        <target>Disponible próximamente el &#35;{msg}</target>
+        <source>Available next on %{msg}</source>
+        <target>Disponible próximamente el %{msg}</target>
       </trans-unit>
       <trans-unit id="981" resname="r551805119" restype="string" datatype="ruby">
         <source>Not available at the moment</source>
@@ -4089,9 +4089,9 @@
   <file original="public/feelGood/templates/benefits_column.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="1124" resname="Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.           &lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
-        <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation. 
+        <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.
           &lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target>Doctores pueden brindar atención y recomendar y recetar tratamientos apropiados. Nuevas recetas para tratamiento y órdenes para rellenarlas &#40;excluyendo de ambas drogas controladas&#41; están disponibles donde sean médicamente indicadas y consideradas como apropiadas por el doctor tratante basadas en tu Consulta Virtual. &lt;br&gt;&lt;br&gt;Disfruta la conveniencia de tener recetas para tratamiento enviadas a tu farmacia local, ya sea que estés en casa o de vacaciones. 
+        <target>Doctores pueden brindar atención y recomendar y recetar tratamientos apropiados. Nuevas recetas para tratamiento y órdenes para rellenarlas &#40;excluyendo de ambas drogas controladas&#41; están disponibles donde sean médicamente indicadas y consideradas como apropiadas por el doctor tratante basadas en tu Consulta Virtual. &lt;br&gt;&lt;br&gt;Disfruta la conveniencia de tener recetas para tratamiento enviadas a tu farmacia local, ya sea que estés en casa o de vacaciones.
           &lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;Aprender&amp;nbsp;más&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="2490" resname="Your interactions with doctors on HealthTap are safe, private, and secure.          HealthTap does not share or sell your personal information with third parties." restype="string" datatype="html">
@@ -4170,13 +4170,13 @@
   <file original="public/feelGood/templates/legal_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="1141" resname="When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;.   You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for   virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay   seeking or receiving care in person as needed. &lt;br&gt;See &lt;a href=&quot;/terms/additional_info&quot; target=&quot;_blank&quot;&gt;Additional Information&lt;/a&gt;" restype="string" datatype="html">
-        <source>When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;. 
-  You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for 
-  virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay 
+        <source>When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;.
+  You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for
+  virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay
   seeking or receiving care in person as needed. &lt;br&gt;See &lt;a href=&quot;/terms/additional_info&quot; target=&quot;_blank&quot;&gt;Additional Information&lt;/a&gt;</source>
-        <target>Cuando solicitas conectarte con un doctor, le notificaremos al doctor a través de correo electrónico &#40;según esté disponible&#41;. 
-  Serás notificado si eres confirmado como paciente de este doctor o aceptado por el doctor para 
-  consultas virtuales. Por favor, nota: los doctores no siempre reciben o responden a estas solicitudes, así que nunca retrases 
+        <target>Cuando solicitas conectarte con un doctor, le notificaremos al doctor a través de correo electrónico &#40;según esté disponible&#41;.
+  Serás notificado si eres confirmado como paciente de este doctor o aceptado por el doctor para
+  consultas virtuales. Por favor, nota: los doctores no siempre reciben o responden a estas solicitudes, así que nunca retrases
   la búsqueda o recepción de atención en persona según sea necesaria. &lt;br&gt;Ver &lt;a href=”/terms/additional_info” target=”_blank”&gt;Información Adicional&lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -4347,10 +4347,10 @@
       </trans-unit>
       <trans-unit id="1171" resname="Doctor                                &lt;span class=&quot;instruction&quot;&gt;&#40;requires valid U.S. medical professional license&#41;&lt;/span&gt;" restype="string" datatype="html">
         <source>Doctor
-                
+
                 &lt;span class=&quot;instruction&quot;&gt;&#40;requires valid U.S. medical professional license&#41;&lt;/span&gt;</source>
         <target>Doctor
-                
+
                 &lt;span class=”instruction”&gt;&#40;requiere licencia médica profesional válida de los EE.UU.&#41;&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="1173" resname="By signing up, you agree to our        &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Terms of Use&lt;/a&gt;        and        &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;" restype="string" datatype="html">
@@ -4370,7 +4370,7 @@
       <trans-unit id="1177" resname="Medical Student &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;          &lt;%= user_question.actor.name %&gt;        &lt;/a&gt;         asked:" restype="string" datatype="html">
         <source>Medical Student &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;
           &lt;%= user_question.actor.name %&gt;
-        &lt;/a&gt; 
+        &lt;/a&gt;
         asked:</source>
         <target>Estudiante de Medicina &lt;a class=”actor_link” href=”&#35;experts/&lt;%= user_question.actor.id %&gt;”&gt;
           &lt;%= user_question.actor.name %&gt;
@@ -4834,13 +4834,13 @@
   <file original="public/javascripts/templates/layers/IEDisclaimerPopup.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="1304" resname="Or download our mobile apps for       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPhone&lt;/a&gt;,      &lt;a href=&quot;http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&quot;&gt;Android&lt;/a&gt;, and      &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPad&lt;/a&gt;" restype="string" datatype="html">
-        <source>Or download our mobile apps for 
+        <source>Or download our mobile apps for
       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPhone&lt;/a&gt;,
       &lt;a href=&quot;http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&quot;&gt;Android&lt;/a&gt;, and
       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPad&lt;/a&gt;</source>
-        <target>O descarga nuestras aplicaciones móviles para 
-      &lt;a href=”http://itunes.apple.com/us/app/id466079030”&gt;iPhone&lt;/a&gt;, 
-      &lt;a href=”http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress”&gt;Android&lt;/a&gt; e 
+        <target>O descarga nuestras aplicaciones móviles para
+      &lt;a href=”http://itunes.apple.com/us/app/id466079030”&gt;iPhone&lt;/a&gt;,
+      &lt;a href=”http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress”&gt;Android&lt;/a&gt; e
       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPad&lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -5721,12 +5721,12 @@
   <file original="public/feelGood/templates/about_popup.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="2486" resname="HealthTap has reinvented the way people all over the world take care of their health and well-being, connecting millions everywhere with the most trusted health information and doctors.   &lt;br&gt;  &lt;br&gt;  &lt;b&gt;Why choose us&lt;/b&gt;  &lt;br&gt;  With over 2.6 billion answers served from more than 100 specialties, our experts are able to provide the best medical advice for your question. We have the largest doctor network to provide answers, personalized advice, and care for any question.   &lt;br&gt;  &lt;br&gt;  &lt;b&gt;About our doctors&lt;/b&gt;  &lt;br&gt;  To become a member of HealthTap’s Medical Expert Network, doctors have to be U.S. board certified, pass a stringent qualification process, and undergo training on how to give helpful advice using our technology platform. We closely monitor user feedback to ensure that our doctors are providing the highest possible care." restype="string" datatype="html">
-        <source>HealthTap has reinvented the way people all over the world take care of their health and well-being, connecting millions everywhere with the most trusted health information and doctors. 
+        <source>HealthTap has reinvented the way people all over the world take care of their health and well-being, connecting millions everywhere with the most trusted health information and doctors.
   &lt;br&gt;
   &lt;br&gt;
   &lt;b&gt;Why choose us&lt;/b&gt;
   &lt;br&gt;
-  With over 2.6 billion answers served from more than 100 specialties, our experts are able to provide the best medical advice for your question. We have the largest doctor network to provide answers, personalized advice, and care for any question. 
+  With over 2.6 billion answers served from more than 100 specialties, our experts are able to provide the best medical advice for your question. We have the largest doctor network to provide answers, personalized advice, and care for any question.
 
   &lt;br&gt;
   &lt;br&gt;
@@ -5748,7 +5748,7 @@
   <file original="public/feelGood/templates/apprx_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="2487" resname="Each year HealthTap&apos;s doctors recommend the best Health &amp; Medical apps across 30 categories.     Vote for your favorite apps and boost their visibility to doctors to get more recommendations from them,    which help customers find the best app for their health!" restype="string" datatype="html">
-        <source>Each year HealthTap&apos;s doctors recommend the best Health &amp; Medical apps across 30 categories. 
+        <source>Each year HealthTap&apos;s doctors recommend the best Health &amp; Medical apps across 30 categories.
     Vote for your favorite apps and boost their visibility to doctors to get more recommendations from them,
     which help customers find the best app for their health!</source>
         <target>Cada año, los doctores de HealthTap recomiendan las mejores aplicaciones Médicas &amp; de Salud de 30 categorías. ¡Vota por tus aplicaciones favoritas e impulsa su visibilidad a doctores para obtener más recomendaciones de ellos,

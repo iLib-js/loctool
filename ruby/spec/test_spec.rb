@@ -190,6 +190,13 @@ describe 'HamlLocalizer' do
       ret.include?('FOO').should be_false
     end
 
+    it 'should use the biggest matching translation' do
+      line = 'words words words pigeon words words'
+      from_to = {'pigeon' => 'bird', 'words words words pigeon words words' => 'FOO'}
+      ret = replace_with_translations2(line, from_to)
+      expect(ret).to eq('FOO')
+    end
+
   end
 
   describe 'process pseudo values' do
@@ -446,6 +453,25 @@ describe 'HamlLocalizer' do
       local_name_to_output['de-DE'].include?('Doctor Recommendations').should be_false
     end
 
+    it 'does translate this case' do
+      template = '
+.content-inner.clearfix.nux-content
+  #content-wrap_inner
+    .legal_content.mt20
+      .top_area
+        %h1 Terms of Use
+        %h2
+          %h3 Agreement
+          .indent
+            %div First things first: let\'s try to sort it out. We want to address your concerns without a formal arbitration or case. Before filing a claim against HealthTap, you agree to make a good faith effort to try to resolve the dispute informally by contacting dispute-notice@healthtap.com and responding promptly to any related communications. We\'ll try to resolve the dispute by contacting you via email. If a dispute is not resolved within 30 days of submission, you or HealthTap may bring a formal proceeding.
+
+'
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      puts local_name_to_output['de-DE']
+      local_name_to_output['de-DE'].include?('First things first').should be_false
+      local_name_to_output['de-DE'].include?('.legal_content.mt20').should be_true
+    end
+
   end
 
   describe 'british translation' do
@@ -491,6 +517,7 @@ describe 'HamlLocalizer' do
       it 'works for capitalization' do
         expect(match_case_for_words('test','Word')).to eq('Test')
       end
+
     end
   end
 end

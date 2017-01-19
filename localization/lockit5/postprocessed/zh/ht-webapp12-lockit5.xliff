@@ -3127,8 +3127,8 @@
         <target>...给网络带来一个新的个性化的健康医护水平。</target>
       </trans-unit>
       <trans-unit id="729" resname="r881666298" restype="string" datatype="ruby">
-        <source>HealthTap&apos;s offer to patients: pay &#35;{Credits::PricePlan.test_drive_price} and text with a medical expert in real time</source>
-        <target>HealthTap提供给患者：与医学专家实时支付&#35;{Credits::PricePlan.test_drive_price} 和文本。</target>
+        <source>HealthTap&apos;s offer to patients: pay %{price} and text with a medical expert in real time</source>
+        <target>HealthTap提供给患者：与医学专家实时支付%{price} 和文本。</target>
       </trans-unit>
       <trans-unit id="730" resname="r956705548" restype="string" datatype="ruby">
         <source>The platform highlights the inherent power of data divorced from identity.</source>
@@ -3391,8 +3391,8 @@
   <file original="app/views/static_pages/partial/_translator_now.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="798" resname="r636340760" restype="string" datatype="ruby">
-        <source>&#35;{question_placeholder}</source>
-        <target>&#35;{question_placeholder}</target>
+        <source>%{question_placeholder}</source>
+        <target>%{question_placeholder}</target>
       </trans-unit>
     </body>
   </file>
@@ -6267,7 +6267,7 @@
         <target>抵消在高免赔额医疗保险的花费</target>
       </trans-unit>
       <trans-unit id="1423" resname="r632119697" restype="string" datatype="ruby">
-        <source>Access over &#35;{static_doctors_count} top doctors&amp;mdash;24/7 on any mobile device or computer</source>
+        <source>Access over %{static_doctors_count} top doctors&amp;mdash;24/7 on any mobile device or computer</source>
         <target>在任何移动设备或计算机上全天24小时访问＃{static_doctors_count}位顶级医生&amp;mdash</target>
       </trans-unit>
       <trans-unit id="1424" resname="r387635606" restype="string" datatype="ruby">
@@ -9831,8 +9831,8 @@
   <file original="app/views/general_mailer/golden_lead_expert_recruit.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2029" resname="r51745185" restype="string" datatype="ruby">
-        <source>I&apos;d like to personally invite you to %{open_link}be featured for free on HealthTap,%{close_link} where you can gain recognition for your expertise and help &#35;{@actor.to_s} and all your medical school colleagues win the competition.</source>
-        <target>我想亲自邀请您在HealthTap上参加免费专题%{open_link}，%{close_link}您可以获得您的专业知识的认可并获得帮助＃{@actor.to_s}您所有的医学院发同事赢得比赛。</target>
+        <source>I&apos;d like to personally invite you to %{open_link}be featured for free on HealthTap,%{close_link} where you can gain recognition for your expertise and help %{actor} and all your medical school colleagues win the competition.</source>
+        <target>我想亲自邀请您在HealthTap上参加免费专题%{open_link}，%{close_link}您可以获得您的专业知识的认可并获得帮助%{actor}您所有的医学院发同事赢得比赛。</target>
       </trans-unit>
     </body>
   </file>
@@ -10496,8 +10496,8 @@
         <target>输入您的密码</target>
       </trans-unit>
       <trans-unit id="2177" resname="r609349914" restype="string" datatype="ruby">
-        <source>&#35;{date_format}</source>
-        <target>&#35;{date_format}</target>
+        <source>%{date_format}</source>
+        <target>%{date_format}</target>
       </trans-unit>
     </body>
   </file>
@@ -10680,8 +10680,8 @@
         <target>私人和安全</target>
       </trans-unit>
       <trans-unit id="2214" resname="r520401677" restype="string" datatype="ruby">
-        <source>Single sign-on to &#35;{@page_data[:form_response][:responses][:organization]} resources</source>
-        <target>单一的登录到 @page_data[:form_response][:responses][:organization]} 资源</target>
+        <source>Single sign-on to %{org} resources</source>
+        <target>单一的登录到 %{org} 资源</target>
       </trans-unit>
       <trans-unit id="2215" resname="r172163704" restype="string" datatype="ruby">
         <source>Leverage existing investments</source>
@@ -11719,8 +11719,8 @@
         <target>HealthTap是在任何时间，任何地点快速找到值得信赖的，有声誉的医生回答健康问题的最佳方式。</target>
       </trans-unit>
       <trans-unit id="2454" resname="r116957056" restype="string" datatype="ruby">
-        <source>Free health answers, tips, posts, and updates from &#35;{person.to_s} and tens of thousands of other U.S.-licensed doctors on HealthTap.</source>
-        <target>来自＃{person.to_s}和HealthTap上数万名拥有美国执业执照医生的免费的健康回答，小贴士，信息和更新。</target>
+        <source>Free health answers, tips, posts, and updates from %{person} and tens of thousands of other U.S.-licensed doctors on HealthTap.</source>
+        <target>来自%{person}和HealthTap上数万名拥有美国执业执照医生的免费的健康回答，小贴士，信息和更新。</target>
       </trans-unit>
     </body>
   </file>
@@ -11955,8 +11955,8 @@
         <target>我们很抱歉；%{person}目前无法使用。我们已向您发出全额退款，因此您可以询问另一名医生。</target>
       </trans-unit>
       <trans-unit id="2508" resname="r1026479184" restype="string" datatype="ruby">
-        <source>%{referrer} has referred you to %{referred_to}. Get in touch with &#35;{referred_to}.</source>
-        <target>%{referrer}已推荐您到%{referred_to}。与&#35;{referred_to}联系。</target>
+        <source>%{referrer} has referred you to %{referred_to}. Get in touch with %{referred_to}.</source>
+        <target>%{referrer}已推荐您到%{referred_to}。与%{referred_to}联系。</target>
       </trans-unit>
       <trans-unit id="2509" resname="r649248334" restype="string" datatype="ruby">
         <source>Happy birthday from all of us at HealthTap!</source>
@@ -12563,8 +12563,8 @@
         <target>&lt;b&gt;%{person}&lt;/b&gt;在HealthTap上将您添加到了他们的网络</target>
       </trans-unit>
       <trans-unit id="2671" resname="r242215632" restype="string" datatype="ruby">
-        <source>New colleague connection! %{prefix} &lt;span style=&apos;color:&#35;039;&apos;&gt;Add &lt;b&gt;&#35;{actor.expert_self.expert_name_abbreviated}&lt;/b&gt; back.&lt;/span&gt;</source>
-        <target>新的同事连接！%{prefix} &lt;span style=’color:&#35;039;’&gt;添加&lt;b&gt;&#35;{actor.expert_self.expert_name_abbreviated}&lt;/b&gt;返回。&lt;/span&gt;</target>
+        <source>New colleague connection! %{prefix} &lt;span style=&apos;color:&#35;039;&apos;&gt;Add &lt;b&gt;%{person}&lt;/b&gt; back.&lt;/span&gt;</source>
+        <target>新的同事连接！%{prefix} &lt;span style=’color:&#35;039;’&gt;添加&lt;b&gt;%{person}&lt;/b&gt;返回。&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2672" resname="r497557297" restype="string" datatype="ruby">
         <source>Welcome to HealthTap! Congrats on taking a leap forward on your health journey! To get started, search for a health question, doctor, or interest.</source>
@@ -13018,8 +13018,8 @@
         <target>数据[%{val}]丢失或为空。</target>
       </trans-unit>
       <trans-unit id="2779" resname="r390364240" restype="string" datatype="ruby">
-        <source>Invalid source. It must **contain** one of the strings in &#35;{ACCEPTED_SOURCES}</source>
-        <target>来源无效。它必须**包含**&#35;{ACCEPTED_SOURCES}中的一个字符</target>
+        <source>Invalid source. It must **contain** one of the strings in %{valid_sources}</source>
+        <target>来源无效。它必须**包含**%{valid_sources}中的一个字符</target>
       </trans-unit>
       <trans-unit id="2780" resname="r88248219" restype="string" datatype="ruby">
         <source>Person %{person_id} does not exist.</source>
@@ -13534,8 +13534,8 @@
         <target>请等待</target>
       </trans-unit>
       <trans-unit id="2903" resname="r99162645" restype="string" datatype="ruby">
-        <source>We will connect you to &#35;{self.expert.to_s} and &#35;{self.person.full_name} at your scheduled time</source>
-        <target>我们将在您预定的时间与您联系&#35;{self.expert.to_s} 和 &#35;{self.person.full_name}在您安排的时间</target>
+        <source>We will connect you to %{person} and %{other_person} at your scheduled time</source>
+        <target>我们将在您预定的时间与您联系%{person} 和 %{other_person}在您安排的时间</target>
       </trans-unit>
       <trans-unit id="2904" resname="r669068257" restype="string" datatype="ruby">
         <source>The appointment seems to be running late</source>
@@ -13631,8 +13631,8 @@
         <target>在%{email}查看%{expert}</target>
       </trans-unit>
       <trans-unit id="2932" resname="r488197917" restype="string" datatype="ruby">
-        <source>See &#35;{expert.to_s}</source>
-        <target>查看&#35;{expert.to_s}</target>
+        <source>See %{person}</source>
+        <target>查看%{person}</target>
       </trans-unit>
       <trans-unit id="2933" resname="r518333552" restype="string" datatype="ruby">
         <source>See %{name} at %{phone}, %{email}</source>
@@ -16705,8 +16705,8 @@
         <target>感谢您积极主动地关注您的健康！给您的一个免费的礼物</target>
       </trans-unit>
       <trans-unit id="3721" resname="r660430519" restype="string" datatype="ruby">
-        <source>%{person}, would you like to send &#35;{@expert.expert_name_abbreviated} a secure message?</source>
-        <target>%{person}, 您希望发送&#35;{@expert.expert_name_abbreviated}安全信息吗？</target>
+        <source>%{person}, would you like to send %{expert} a secure message?</source>
+        <target>%{person}, 您希望发送%{expert}安全信息吗？</target>
       </trans-unit>
       <trans-unit id="3722" resname="r129146715" restype="string" datatype="ruby">
         <source>%{person}, your information is not sufficient.</source>
@@ -20438,8 +20438,8 @@
         <target>查看我的网页&amp;nbsp;&amp;rsaquo;</target>
       </trans-unit>
       <trans-unit id="4698" resname="r913995783" restype="string" datatype="ruby">
-        <source>Totally, and I love that I’m able to leverage my time efficiently to guide even more patients in a shorter period of time toward better health. And they pay for it! It&apos;s easy to &lt;a class=&apos;website-link&apos; href=&apos;&#35;{growLink}&apos; target=&apos;_blank&apos; &gt;get started with a free Virtual Practice&lt;/a&gt; today.</source>
-        <target>完全地，我喜欢我能够有效地利用我的时间在更短的时间为更好的健康来指导更多的患者。他们为此付出！立刻很容易的&lt;a class=’website-link’ href=’&#35;{growLink}’ target=’_blank’ &gt;开始免费的在线诊疗&lt;/a&gt;。</target>
+        <source>Totally, and I love that I’m able to leverage my time efficiently to guide even more patients in a shorter period of time toward better health. And they pay for it! It&apos;s easy to &lt;a class=&apos;website-link&apos; href=&apos;%{link}&apos; target=&apos;_blank&apos; &gt;get started with a free Virtual Practice&lt;/a&gt; today.</source>
+        <target>完全地，我喜欢我能够有效地利用我的时间在更短的时间为更好的健康来指导更多的患者。他们为此付出！立刻很容易的&lt;a class=’website-link’ href=’%{link}’ target=’_blank’ &gt;开始免费的在线诊疗&lt;/a&gt;。</target>
       </trans-unit>
       <trans-unit id="4699" resname="r782798753" restype="string" datatype="ruby">
         <source>Here&apos;s how I tell patients about the future of medicine &amp;mdash; virtual appointments through my always-on Virtual Practice &#40;even when I&apos;m sleeping!&#41;</source>
@@ -21715,8 +21715,8 @@
         <target>2014年App医生评测奖 - 热门的医生推荐的健康和医疗应用程序 - HealthTap</target>
       </trans-unit>
       <trans-unit id="5016" resname="r507271923" restype="string" datatype="ruby">
-        <source>Easily support %{person_name} in &#35;{checklist_name} with helpful reminders and words of encouragement</source>
-        <target>在&#35;{checklist_name}中轻松支持%{person_name}，并提供有帮助的提醒和鼓励性语言</target>
+        <source>Easily support %{person_name} in %{checklist_name} with helpful reminders and words of encouragement</source>
+        <target>在%{checklist_name}中轻松支持%{person_name}，并提供有帮助的提醒和鼓励性语言</target>
       </trans-unit>
       <trans-unit id="5017" resname="r536548496" restype="string" datatype="ruby">
         <source>Together We Can - HealthTap</source>
@@ -21860,8 +21860,8 @@
         <target>加入预约 - HealthTap</target>
       </trans-unit>
       <trans-unit id="5053" resname="r298237688" restype="string" datatype="ruby">
-        <source>My patients find it easy, quick, and very valuable to schedule virtual appointments via my Virtual Practice. I&apos;m able to help patients and do good faster in ways I never before imagined possible, and it didn&apos;t cost me a dime. You can easily &lt;a class=&apos;website-link&apos; href=&apos;&#35;{growLink}&apos; target=&apos;_blank&apos; &gt;set up your Virtual Practice&lt;/a&gt; today too.</source>
-        <target>我的患者发现通过我的在线诊疗安排在线预约会很容易，快速和非常有价值。我能够帮助患者和我从来没有想象过的可能做得更好的方式，并且它不会花我一毛钱。您今天也可以轻松地&lt;a class=’website-link’ href=’&#35;{growLink}’ target=’_blank’ &gt;建立您的在线诊疗&lt;/a&gt;。</target>
+        <source>My patients find it easy, quick, and very valuable to schedule virtual appointments via my Virtual Practice. I&apos;m able to help patients and do good faster in ways I never before imagined possible, and it didn&apos;t cost me a dime. You can easily &lt;a class=&apos;website-link&apos; href=&apos;%{link}&apos; target=&apos;_blank&apos; &gt;set up your Virtual Practice&lt;/a&gt; today too.</source>
+        <target>我的患者发现通过我的在线诊疗安排在线预约会很容易，快速和非常有价值。我能够帮助患者和我从来没有想象过的可能做得更好的方式，并且它不会花我一毛钱。您今天也可以轻松地&lt;a class=’website-link’ href=’%{link}’ target=’_blank’ &gt;建立您的在线诊疗&lt;/a&gt;。</target>
       </trans-unit>
       <trans-unit id="5054" resname="r822892453" restype="string" datatype="ruby">
         <source>The self-scheduling on my website makes it really easy for me and for my patients</source>
@@ -22701,8 +22701,8 @@
   <file original="app/controllers/api/v2/external_user_metric_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="5269" resname="r206176839" restype="string" datatype="ruby">
-        <source>An error of type %{ex_class} occured. Message is &apos;&#35;{ex_message}.&apos; You sent &#35;{parameters}.</source>
-        <target>发生类型%{ex_class}的错误。信息是’&#35;{ex_message}.’您发送了&#35;{parameters}.</target>
+        <source>An error of type %{ex_class} occured. Message is &apos;%{ex_message}.&apos; You sent %{parameters}.</source>
+        <target>发生类型%{ex_class}的错误。信息是’%{ex_message}.’您发送了%{parameters}.</target>
       </trans-unit>
     </body>
   </file>
@@ -22773,8 +22773,8 @@
   <file original="app/controllers/api/v2/checklists_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="5291" resname="r776765384" restype="string" datatype="ruby">
-        <source>Private Checklist by &#35;{expert_name}</source>
-        <target>&#35;{expert_name}提供的私人清单</target>
+        <source>Private Checklist by %{expert_name}</source>
+        <target>%{expert_name}提供的私人清单</target>
       </trans-unit>
       <trans-unit id="5292" resname="r411103075" restype="string" datatype="ruby">
         <source>updated</source>
@@ -22846,8 +22846,8 @@
         <note annotates="source">suggested doctor not available</note>
       </trans-unit>
       <trans-unit id="5309" resname="r531024500" restype="string" datatype="ruby">
-        <source>Cannot find session with consult_id &#35;{msg[&apos;session_id&apos;]}.</source>
-        <target>找不到与consult_id &#35;{msg[’session_id’]}的会话。</target>
+        <source>Cannot find session with consult_id %{session_id}.</source>
+        <target>找不到与consult_id %{session_id}的会话。</target>
       </trans-unit>
       <trans-unit id="5310" resname="r174458765" restype="string" datatype="ruby">
         <source>Please provide return url</source>
