@@ -222,7 +222,7 @@ module.exports = {
         test.equals(rf.makeKey("This is a double quoted string with \\t tab chars in it"), "r276797171");
         test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\t tab chars in it'), "r303137748");
         test.equals(rf.makeKey("This is a double quoted string with \\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z other escape chars in it"), "r529567158");
-        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z other escape chars in it'), "r955027934");
+        test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z other escape chars in it'), "r102481693");
         test.equals(rf.makeKey("This is a double quoted string with \\u00A0 \\x23 hex escape chars in it"), "r347049046");
         test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\u00A0 \\x23 hex escape chars in it'), "r1000517606");
         
@@ -244,7 +244,7 @@ module.exports = {
         test.ok(rf);
 
         // unescaped is used for single quoted strings
-        test.equals(rf.makeKeyUnescaped("A \\n B"), "r400574317");
+        test.equals(rf.makeKeyUnescaped("A \\\\n B"), "r968833504");
         
         test.done();
 	},
@@ -262,7 +262,7 @@ module.exports = {
 		});
         test.ok(rf);
 
-        test.equals(rf.makeKeyUnescaped("A \\t B"), "r720987307");
+        test.equals(rf.makeKeyUnescaped("A \\\\t B"), "r215504705");
         
         test.done();
 	},

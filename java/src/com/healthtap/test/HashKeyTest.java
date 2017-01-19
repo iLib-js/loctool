@@ -12,7 +12,7 @@ import com.healthtap.HashKey;
  */
 public class HashKeyTest extends TestCase
 {
-	public void testMakeKeySimpleTexts1()
+	public void testHashKeySimpleTexts1()
 	{
 		assertEquals("r32020327", HashKey.hash("Medications in your profile"));
 		assertEquals("r835310324", HashKey.hash("All medications"));
@@ -21,7 +21,7 @@ public class HashKeyTest extends TestCase
 		assertEquals("r343852585", HashKey.hash("Experts"));
 	}
 
-	public void testMakeKeySimpleTexts2()
+	public void testHashKeySimpleTexts2()
 	{
 		assertEquals("r807691021", HashKey.hash("Procedures"));
 		assertEquals("r941505899", HashKey.hash("Health Apps"));
@@ -30,7 +30,7 @@ public class HashKeyTest extends TestCase
 		assertEquals("r221604632", HashKey.hash("Answers"));
 	}
 
-	public void testMakeKeySimpleTexts3()
+	public void testHashKeySimpleTexts3()
 	{
 		assertEquals("r669315500", HashKey.hash("Private Health Profile"));
 		assertEquals("r710774033", HashKey.hash("People you care for"));
@@ -44,13 +44,13 @@ public class HashKeyTest extends TestCase
 		assertEquals("r584966709", HashKey.hash("Suggested doctors for you"));
 	}
 
-	public void testMakeKeyEscapes()
+	public void testHashKeyEscapes()
 	{
 		assertEquals("r926831062", HashKey.hash("Can\'t find treatment id"));
 		assertEquals("r909283218", HashKey.hash("Can\'t find an application for SMS"));
 	}
 	
-	public void testMakeKeyPunctuation()
+	public void testHashKeyPunctuation()
 	{
 		assertEquals("r382554039", HashKey.hash("{topic_name}({topic_generic_name})"));
 		
@@ -62,7 +62,7 @@ public class HashKeyTest extends TestCase
 		assertEquals("r201354363", HashKey.hash("Referral link copied!"));
 	}
 	
-	public void testMakeKeyCompressWhiteSpace()
+	public void testHashKeyCompressWhiteSpace()
 	{
 		assertEquals("r926831062", HashKey.hash("Can\'t find treatment id"));
 		assertEquals("r926831062", HashKey.hash("Can\'t    find    treatment           id"));
@@ -71,7 +71,7 @@ public class HashKeyTest extends TestCase
 		assertEquals("r909283218", HashKey.hash("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"));
 	}
 	
-	public void testMakeKeyTrimWhiteSpace()
+	public void testHashKeyTrimWhiteSpace()
 	{
 		assertEquals("r926831062", HashKey.hash("Can\'t find treatment id"));
 		assertEquals("r926831062", HashKey.hash("      Can\'t find treatment id "));
@@ -80,7 +80,7 @@ public class HashKeyTest extends TestCase
 		assertEquals("r909283218", HashKey.hash(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"));
 	}
 
-	public void testMakeKeyDoubleBackslash()
+	public void testHashKeyDoubleBackslash()
 	{
 		assertEquals("r968833504", HashKey.hash("A \\\\n B"));
 	}

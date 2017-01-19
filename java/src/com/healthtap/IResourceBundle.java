@@ -634,7 +634,7 @@ public class IResourceBundle {
 		
 		String value = HashKey.hash(source);
 		
-		System.out.println("String '" + source + "' hashes to " + value);
+		// System.out.println("String '" + source + "' hashes to " + value);
 		
 		return isHTML_XML_Type() ? unescape(value) : value;
     }

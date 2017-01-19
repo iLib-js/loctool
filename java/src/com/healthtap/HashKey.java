@@ -34,7 +34,7 @@ public class HashKey {
 			replaceAll("\\s+", " ").
 			trim();
 		
-		System.out.println("After mucking: '" + str + "'");
+		// System.out.println("After mucking: '" + str + "'");
 		long hash = 0;
 		// these two numbers together = 46 bits so it won't blow out the precision of an integer in javascript
 		long modulus = 1073741789L;  // largest prime number that fits in 30 bits
