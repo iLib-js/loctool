@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/Classes/UI/FGDocScoreLayerView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="24" resname="Agrees, votes, and recommendations from other experts" restype="string" datatype="x-objective-c">
+        <source>Agrees, votes, and recommendations from other experts</source>
+        <target state="accepted">Aprobaciones, votos y recomendaciones de otros expertos</target>
+      </trans-unit>
+      <trans-unit id="25" resname="Years of experience" restype="string" datatype="x-objective-c">
+        <source>Years of experience</source>
+        <target state="accepted">Años de experiencia</target>
+      </trans-unit>
+      <trans-unit id="26" resname="Quality of experts who refer to them" restype="string" datatype="x-objective-c">
+        <source>Quality of experts who refer to them</source>
+        <target state="accepted">Calidad de expertos que se refieren a ellos</target>
+      </trans-unit>
+      <trans-unit id="27" resname="Where the expert studied and trained" restype="string" datatype="x-objective-c">
+        <source>Where the expert studied and trained</source>
+        <target state="accepted">Donde estudió y practicó el experto</target>
+      </trans-unit>
+      <trans-unit id="28" resname="Board certification&#40;s&#41;" restype="string" datatype="x-objective-c">
+        <source>Board certification&#40;s&#41;</source>
+        <target state="accepted">Certificaciones</target>
+      </trans-unit>
+      <trans-unit id="29" resname="Other professional accomplishments &#40;such as peer reviewed publications and awards&#41;" restype="string" datatype="x-objective-c">
+        <source>Other professional accomplishments &#40;such as peer reviewed publications and awards&#41;</source>
+        <target state="accepted">Otros logros profesionales como publicaciones revisadas por colegas y premios</target>
+      </trans-unit>
+      <trans-unit id="30" resname="Thanks, votes, and recommendations from members" restype="string" datatype="x-objective-c">
+        <source>Thanks, votes, and recommendations from members</source>
+        <target state="accepted">Agradecimientos, votos y recomendaciones de miembros</target>
+      </trans-unit>
+      <trans-unit id="31" resname="Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:\n\n" restype="string" datatype="x-objective-c">
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:\n\n</source>
+        <target state="accepted">Todos los expertos medicos de HealthTap tienen un DocScore. Esta es una puntuación de 0 a 5 estrellas basada en reputación. DocScore refleja el reconocimiento de colegas y la información pública relevande del médico, incluyendo:\n\n</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
