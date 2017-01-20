@@ -777,5 +777,104 @@ module.exports = {
         test.equal(actual, expected);
         
         test.done();
+    },
+
+    testYamlResourceFileGetContentResourcePlural: function(test) {
+        test.expect(2);
+        var p = new WebProject({
+            id: "ht-webapp12",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
+        }, "./testfiles");
+        var yml = new YamlResourceFile({
+            project: p,
+            pathName: "./zh.yml",
+            locale: "zh-Hans-CN"
+        });
+        test.ok(yml);
+
+        [
+            new ResourcePlural({
+                project: "ht-webapp12",
+                locale: "zh-Hans-CN",
+                comment: "",
+                source: 'This is 1 test',
+                key: 'r186608186',
+                strings: {
+                    'one' : 'This is 1 test',
+                    'other' : 'There are %{count} tests'
+                }
+            })
+        ].forEach(function(res) {
+            yml.addResource(res);
+        });
+
+        var actual = yml.getContent();
+        var expected =
+            "zh-Hans-CN:\n" +
+            "  r186608186:\n" +
+            "    one: This is 1 test\n" +
+            "    other: 'There are %{count} tests'\n";
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
+    },
+
+    testYamlResourceFileGetContentResourcePluralAndString: function(test) {
+        test.expect(2);
+        var p = new WebProject({
+            id: "ht-webapp12",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
+        }, "./testfiles");
+        var yml = new YamlResourceFile({
+            project: p,
+            pathName: "./zh.yml",
+            locale: "zh-Hans-CN"
+        });
+        test.ok(yml);
+
+        [
+            new ResourcePlural({
+                project: "ht-webapp12",
+                locale: "zh-Hans-CN",
+                comment: "",
+                source: 'This is 1 test',
+                key: 'r186608186',
+                strings: {
+                    'one' : 'This is 1 test',
+                    'other' : 'There are %{count} tests'
+                }
+            }),
+            new ContextResourceString({
+                project: "ht-webapp12",
+                locale: "zh-Hans-CN",
+                key: "r003425245",
+                source: "short text",
+                comment: "bar",
+                sourceHash: "r8437477345"
+            })
+        ].forEach(function(res) {
+            yml.addResource(res);
+        });
+
+        var actual = yml.getContent();
+        var expected =
+            "zh-Hans-CN:\n" +
+            "  r186608186:\n" +
+            "    one: This is 1 test\n" +
+            "    other: 'There are %{count} tests'\n" +
+            "  r003425245: short text\n";
+
+        diff(actual, expected);
+        test.equal(actual, expected);
+
+        test.done();
     }
 };
