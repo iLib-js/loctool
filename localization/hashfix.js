@@ -34,20 +34,18 @@ for (var i = 0; i < units.length; i++) {
 	
 	if (unit.datatype === "x-haml" || unit.datatype === "ruby") {
 		var hash = rf.makeKey(unit.source);
-		unit.source = unit.source.trim();
-		unit.target = unit.target.trim();
+		unit.source = RubyFile.unescapeString(unit.source.trim());
+		unit.target = RubyFile.unescapeString(unit.target.trim().replace(/％\{/g, "%{"));
 		
-		console.log("original: " + unit.source);
 		if ( unit.key !== hash ) {
 			console.log("File: " + unit.file + " key: " + unit.key + " -> " + hash);
 		}
 		unit.key = hash;
 	} else if (unit.datatype === "java") {
 		var hash = jf.makeKey(unit.source);
-		unit.source = unit.source.trim();
-		unit.target = unit.target.trim();
+		unit.source = JavaFile.unescapeString(unit.source.trim());
+		unit.target = JavaFile.unescapeString(unit.target.trim());
 		
-		console.log("original: " + unit.source);
 		if ( unit.key !== hash ) {
 			console.log("File: " + unit.file + " key: " + unit.key + " -> " + hash);
 		}
