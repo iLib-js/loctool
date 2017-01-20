@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/Classes/UI/FGDocScoreLayerView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="8" resname="Agrees, votes, and recommendations from other experts" restype="string" datatype="x-objective-c">
+        <source>Agrees, votes, and recommendations from other experts</source>
+        <target state="accepted">来自其他医生的赞同，投票和评论 </target>
+      </trans-unit>
+      <trans-unit id="9" resname="Years of experience" restype="string" datatype="x-objective-c">
+        <source>Years of experience</source>
+        <target state="accepted">多年的经验</target>
+      </trans-unit>
+      <trans-unit id="10" resname="Quality of experts who refer to them" restype="string" datatype="x-objective-c">
+        <source>Quality of experts who refer to them</source>
+        <target state="accepted">参考他们的专家质量</target>
+      </trans-unit>
+      <trans-unit id="11" resname="Where the expert studied and trained" restype="string" datatype="x-objective-c">
+        <source>Where the expert studied and trained</source>
+        <target state="accepted">专家曾经学习和培训的地方</target>
+      </trans-unit>
+      <trans-unit id="12" resname="Board certification&#40;s&#41;" restype="string" datatype="x-objective-c">
+        <source>Board certification&#40;s&#41;</source>
+        <target state="accepted">认证</target>
+      </trans-unit>
+      <trans-unit id="13" resname="Other professional accomplishments &#40;such as peer reviewed publications and awards&#41;" restype="string" datatype="x-objective-c">
+        <source>Other professional accomplishments &#40;such as peer reviewed publications and awards&#41;</source>
+        <target state="accepted">其他专业成就 &#40;如同行评审的出版物和奖项&#41;</target>
+      </trans-unit>
+      <trans-unit id="14" resname="Thanks, votes, and recommendations from members" restype="string" datatype="x-objective-c">
+        <source>Thanks, votes, and recommendations from members</source>
+        <target state="accepted">来自会员的感谢，投票和建议</target>
+      </trans-unit>
+      <trans-unit id="15" resname="Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:\n\n" restype="string" datatype="x-objective-c">
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:\n\n</source>
+        <target state="accepted">每一个在HealthTap上的医学专家都有一个医者评分信誉评分从0到5星，反应了该医生在HealthTap上获得的同行认可，以及关于他的相关公开信息，包括:\n\n</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
