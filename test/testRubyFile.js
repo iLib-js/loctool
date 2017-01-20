@@ -196,8 +196,26 @@ module.exports = {
         test.done();
 	},
 
+	testRubyFileMakeKeySkipHTML: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        test.equals(rf.makeKey("A <br> B"), "r191336864");
+        
+        test.done();
+	},
+
 	testRubyFileMakeKeyCheckRubyCompatibility: function(test) {
-        test.expect(17);
+        test.expect(18);
 
         var p = new WebProject({
         	id: "webapp",
@@ -226,6 +244,8 @@ module.exports = {
         test.equals(rf.makeKey("This is a double quoted string with \\u00A0 \\x23 hex escape chars in it"), "r347049046");
         test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\u00A0 \\x23 hex escape chars in it'), "r1000517606");
         
+        test.equals(rf.makeKey("We help more than %{num_docs} top doctors in our network enhance their reputations,<br>build professional networks, better serve existing patients, grow their practices,<br>and increase their income."), "r638463622");
+
         test.done();
 	},
 
@@ -753,6 +773,44 @@ module.exports = {
         
         test.done();
     },
+
+    testRubyFileParseMultipleOnSameLineWithComments: function(test) {
+        test.expect(10);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        rf.parse(
+        		'            .about-item\n' +
+        		'              .item-title\n' +
+        		'                = @directory_doctor ? Rb.t(\'Specialty\') : Rb.t(\'I specialize in\') # i18n this is a section title. Ie. Title: Specialty, Content: Internal Medicine\n'
+        );
+        
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("Specialty");
+        test.ok(r);
+        test.equal(r.getSource(), "Specialty");
+        test.equal(r.getKey(), "r912467643");
+        test.equal(r.getComment(), "this is a section title. Ie. Title: Specialty, Content: Internal Medicine");
+        
+        r = set.getBySource("I specialize in");
+        test.ok(r);
+        test.equal(r.getSource(), "I specialize in");
+        test.equal(r.getKey(), "r271968593");
+        test.equal(r.getComment(), "this is a section title. Ie. Title: Specialty, Content: Internal Medicine");
+        
+        test.done();
+    },
+
 
     testRubyFileParseWithDups: function(test) {
         test.expect(6);

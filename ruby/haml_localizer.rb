@@ -443,12 +443,14 @@ end
 def create_hashed_key(string)
   string = string.to_s unless string.is_a?(String) and !string.nil? and string != ''
   string = clean_string(string)
+  # puts "cleaned string is '#{string}'"
   hashed_key = 0
   # these two numbers together = 46 bits so it won't blow out the precision of an integer in javascript
   modulus = 1073741789  # largest prime number that fits in 30 bits
   multiple = 65521      #largest prime that fits in 16 bits, co-prime with the modulus
 
   string.split('').each do |char|
+    # puts "hash #{hashed_key} char #{char.ord}=#{char}"
     hashed_key += char.ord
     hashed_key *= multiple
     hashed_key %= modulus
