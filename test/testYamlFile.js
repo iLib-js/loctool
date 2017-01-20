@@ -15,7 +15,7 @@ if (!YamlFile) {
 
 function diff(a, b) {
 	var min = Math.min(a.length, b.length);
-	
+
 	for (var i = 0; i < min; i++) {
 		if (a[i] !== b[i]) {
 			console.log("Found difference at character " + i);
@@ -32,10 +32,10 @@ module.exports = {
 
         var y = new YamlFile();
         test.ok(y);
-        
+
         test.done();
     },
-    
+
     testYamlConstructorFull: function(test) {
         test.expect(2);
 
@@ -51,12 +51,12 @@ module.exports = {
         	pathName: "x/y/en-US.yml"
         });
         test.ok(y);
-        
+
         test.equal(y.getPath(), "x/y/en-US.yml");
 
         test.done();
     },
-    
+
     testYamlGetPath: function(test) {
         test.expect(2);
 
@@ -72,12 +72,12 @@ module.exports = {
             pathName: "foo/bar/x.yml"
         });
         test.ok(y);
-        
+
         test.equal(y.getPath(), "foo/bar/x.yml");
-        
+
         test.done();
     },
-    
+
     testYamlFileParseSimpleGetByKey: function(test) {
         test.expect(6);
 
@@ -88,12 +88,12 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
 			project: p
 		});
         test.ok(yml);
-        
+
         yml.parse('---\n' +
         		'Working_at_HealthTap: Working at HealthTap\n' +
         		'Jobs: Jobs\n' +
@@ -102,19 +102,19 @@ module.exports = {
         		': Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
         		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'  directly from experienced, successful entrepreneurs.\n');
-        
+
         var set = yml.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBy({
         	reskey: "Jobs"
         });
         test.ok(r);
-        
+
         test.equal(r[0].getSource(), "Jobs");
         test.equal(r[0].getKey(), "Jobs");
         test.ok(!r[0].getComment());
-        
+
         test.done();
     },
 
@@ -128,12 +128,12 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
 			project: p
 		});
         test.ok(yml);
-        
+
         yml.parse(
         		'---\n' +
         		"'feelgood/foo/bar/x.en-US.html.haml':\n" +
@@ -150,15 +150,15 @@ module.exports = {
 				'  bar:\n' +
 				'    asdf:\n' +
 				'      test: test of many levels\n');
-        
+
         var set = yml.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getAll();
         test.ok(r);
-        
+
         test.equal(r.length, 6);
-        
+
         test.equal(r[0].getSource(), "Jobs");
         test.equal(r[0].getLocale(), "en-US"); // source locale
         test.equal(r[0].getKey(), "r9834724545");
@@ -169,7 +169,7 @@ module.exports = {
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[2].getSource(), 
+        test.equal(r[2].getSource(),
         		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
@@ -205,12 +205,12 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
 			project: p
 		});
         test.ok(yml);
-        
+
         yml.parse(
         		'---\n' +
         		"zh_Hans_CN:\n" +
@@ -228,15 +228,15 @@ module.exports = {
 				'    bar:\n' +
 				'      asdf:\n' +
 				'        test: test of many levels\n');
-        
+
         var set = yml.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getAll();
         test.ok(r);
-        
+
         test.equal(r.length, 6);
-        
+
         // locale is not special for this type of yml file, so it should appear in the context
         test.equal(r[0].getSource(), "Jobs");
         test.equal(r[0].getLocale(), "en-US");
@@ -248,7 +248,7 @@ module.exports = {
         test.equal(r[1].getKey(), "r9483762220");
         test.equal(r[1].getContext(), "zh_Hans_CN@feelgood/foo/bar/x.en-US.html.haml");
 
-        test.equal(r[2].getSource(), 
+        test.equal(r[2].getSource(),
         		'Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
         		'and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'directly from experienced, successful entrepreneurs.\n');
@@ -284,7 +284,7 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
 			project: p
 		});
@@ -301,11 +301,11 @@ module.exports = {
         		': Completing an internship at HealthTap gives you the opportunity to experience innovation\n' +
         		'  and personal growth at one of the best companies in Silicon Valley, all while learning\n' +
         		'  directly from experienced, successful entrepreneurs.\n');
-        
+
         test.ok(set);
-        
+
         test.equal(set.size(), 4);
-        
+
         test.done();
     },
 
@@ -319,20 +319,20 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./test.yml"
         });
         test.ok(yml);
-        
+
         // should read the file
         yml.extract();
-        
+
         var set = yml.getTranslationSet();
-        
+
         test.equal(set.size(), 789);
-        
+
         var r = set.getBy({
         	reskey: "Marketing"
         });
@@ -348,7 +348,7 @@ module.exports = {
         test.equal(r[0].getSource(), "Everyone at HealthTap has not only welcomed us interns, but given us a chance to ask questions and really learn about what they do. That's why I'm thrilled to be a part of this team and part of a company that will, I'm sure, soon be a household name.");
         test.equal(r[0].getKey(), "Everyone_at_HealthTap_has_not_only_welcomed_us_interns,_but_given_us_a_chance_to_ask_questions_and_really_learn_about_what_they_do._That's_why_I'm_thrilled_to_be_a_part_of_this_team_and_part_of_a_company_that_will,_I'm_sure,_soon_be_a_household_name.");
         test.ok(!r[0].getComment());
-        
+
         var r = set.getBy({
         	reskey: "is_a_bright,_open_environment,_filled_with_great_energy,_positivity,_and_dedication."
         });
@@ -359,7 +359,7 @@ module.exports = {
 
         test.done();
     },
-   
+
     testYamlFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
@@ -370,17 +370,17 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
 			project: p
 		});
         test.ok(yml);
-        
+
         // should attempt to read the file and not fail
         yml.extract();
-        
+
         var set = yml.getTranslationSet();
-        
+
         test.equal(set.size(), 0);
 
         test.done();
@@ -396,23 +396,23 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./objc/en.lproj/asdf.yml"
         });
         test.ok(yml);
-        
+
         // should attempt to read the file and not fail
         yml.extract();
-        
+
         var set = yml.getTranslationSet();
-        
+
         test.equal(set.size(), 0);
 
-        test.done();   
+        test.done();
     },
-    
+
     testYamlFileGetContent: function(test) {
         test.expect(2);
 
@@ -423,14 +423,14 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./asdf.yml",
         	locale: "de-DE"
         });
         test.ok(yml);
-        
+
         [
         	new ContextResourceString({
         		project: "ht-webapp12",
@@ -459,10 +459,10 @@ module.exports = {
         	'source_text: Quellen\"text\n' +
         	'more_source_text: mehr Quellen\"text\n'
         );
-        
+
         test.done();
     },
-    
+
     testYamlFileGetContentComplicated: function(test) {
         test.expect(2);
 
@@ -473,14 +473,14 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./zh.yml",
         	locale: "zh-Hans-CN"
         });
         test.ok(yml);
-        
+
         [
         	new ContextResourceString({
         		project: "ht-webapp12",
@@ -499,7 +499,7 @@ module.exports = {
         ].forEach(function(res) {
         	yml.addResource(res);
         });
-        
+
         diff(yml.getContent(),
             	"• &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
             	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
@@ -509,7 +509,7 @@ module.exports = {
         	"• &amp;nbsp; Address a health or healthy living topic: • &amp;nbsp; 解决健康生活相关的话题\n" +
         	"'&apos;&#41;, url&#40;imgs/masks/top_bar': '&apos;&#41;, url&#40;imgs/masks/top_bar康生活相'\n"
         );
-        
+
         test.done();
     },
 
@@ -523,14 +523,14 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./zh.yml",
         	locale: "zh-Hans-CN"
         });
         test.ok(yml);
-        
+
         [
         	new ContextResourceString({
         		project: "ht-webapp12",
@@ -549,7 +549,7 @@ module.exports = {
         ].forEach(function(res) {
         	yml.addResource(res);
         });
-        
+
         diff(yml.getContent(),
 	    	"short key: |-\n" +
 	    	"  this is text that is relatively long and can run past the end of the page\n" +
@@ -563,7 +563,7 @@ module.exports = {
 	    	"  So, we put a new line in the middle of it.\n" +
 	    	"\"A very long key that happens to have \\n new line characters in the middle of it. Very very long. How long is it? It's so long that it won't even fit in 64 bits.\": short text\n"
         );
-        
+
         test.done();
     },
 
@@ -577,14 +577,14 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./zh.yml",
         	locale: "zh-Hans-CN"
         });
         test.ok(yml);
-        
+
         [
         	new ContextResourceString({
         		project: "ht-webapp12",
@@ -605,7 +605,7 @@ module.exports = {
         ].forEach(function(res) {
         	yml.addResource(res);
         });
-        
+
         diff(yml.getContent(),
 	    	"foo:\n" +
 	    	"  bar:\n" +
@@ -621,7 +621,7 @@ module.exports = {
 	    	"    asdf:\n" +
 	    	"      key2: short text\n"
         );
-        
+
         test.done();
     },
 
@@ -635,16 +635,16 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./asdf.yml",
         	locale: "de-DE"
         });
         test.ok(yml);
-        
+
         test.equal(yml.getContent(), '{}\n');
-        
+
         test.done();
     },
 
@@ -658,28 +658,28 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./test.yml",
         	locale: "en-US"
         });
         test.ok(yml);
-        
+
         yml.extract();
-        
+
         var set = yml.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ContextResourceString.hashKey("ht-webapp12", undefined, "en-US", "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.", "x-yaml"));
         test.ok(r);
-        
+
         test.equal(r.getSource(), "Dr. Livingston serves on the Medical Advisory Board for HealthTap and he is the Chief Medical officer for Healthcare Transformation Solutions. He is on Twitter as @macobgyn and is an active doctor blogger.");
         test.equal(r.getKey(), "Dr._Livingston_serves_on_the_Medical_Advisory_Board_for_HealthTap_and_he_is_the_Chief_Medical_officer_for_Healthcare_Transformation_Solutions._He_is_on_Twitter_as_@macobgyn_and_is_an_active_doctor_blogger.");
-        
+
         test.done();
     },
-    
+
     testYamlFileRealContent2: function(test) {
         test.expect(7);
 
@@ -690,30 +690,30 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./test2.yml",
         	locale: "en-US"
         });
         test.ok(yml);
-        
+
         yml.extract();
-        
+
         var set = yml.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ContextResourceString.hashKey("ht-webapp12", "saved_someone_else_life", "en-US", "subject", "x-yaml"));
         test.ok(r);
-        
+
         test.equal(r.getSource(), "Feel good! Someone said a doctor’s answer to your question saved their life:");
         test.equal(r.getKey(), "subject");
         test.equal(r.getLocale(), "en-US");
         test.equal(r.getContext(), "saved_someone_else_life");
-        
+
         test.done();
     },
-    
+
     testYamlFileAtInKeyName: function(test) {
         test.expect(7);
 
@@ -724,30 +724,30 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./test2.yml",
         	locale: "en-US"
         });
         test.ok(yml);
-        
+
         yml.extract();
-        
+
         var set = yml.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         test.ok(r);
-        
+
         test.equal(r.getSource(), "%1, %2 has answered a question you asked!");
         test.equal(r.getKey(), "email_subject");
         test.equal(r.getLocale(), "en-US");
         test.equal(r.getContext(), "member_question_asked\\@answered");
-        
+
         test.done();
     },
-    
+
     testYamlFileRightResourceType: function(test) {
         test.expect(4);
 
@@ -758,27 +758,27 @@ module.exports = {
         		yml: "a/b"
         	}
         }, "./testfiles");
-        
+
         var yml = new YamlFile({
-        	project: p, 
+        	project: p,
         	pathName: "./test2.yml",
         	locale: "en-US"
         });
         test.ok(yml);
-        
+
         yml.extract();
-        
+
         var set = yml.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ContextResourceString.hashKey("ht-webapp12", "member_question_asked\\@answered", "en-US", "email_subject", "x-yaml"));
         test.ok(r);
-        
+
         test.ok(r instanceof ContextResourceString);
-        
+
         test.done();
     },
-    
+
     testYamlFileParseIgnoreNonStringValues: function(test) {
     	test.expect(20);
 
@@ -1008,7 +1008,7 @@ module.exports = {
 
     	test.done();
     },
-    
+
     testYamlFileLocalizeText: function(test) {
         test.expect(7);
 
@@ -1019,12 +1019,12 @@ module.exports = {
     			yml: "a/b"
     		}
         }, "./testfiles");
-        
+
     	var yml = new YamlFile({
     		project: p
     	});
     	test.ok(yml);
-        
+
         yml.parse(
 			'doctor_thanked_note_life_saved:\n' +
 			'  email_subject: \'%1, you’re saving lives!\'\n' +
@@ -1036,16 +1036,16 @@ module.exports = {
 			'  setting_name: doctor_thanked_note_life_saved\n' +
 			'  daily_limit_exception_email: true\n'
 		);
-        
+
         var set = yml.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource('%1, you’re saving lives!', "doctor_thanked_note_life_saved");
         test.ok(r);
         test.equal(r.getSource(), '%1, you’re saving lives!');
         test.equal(r.getKey(), 'email_subject');
         test.equal(r.getContext(), "doctor_thanked_note_life_saved");
-        
+
         var translations = new TranslationSet();
         translations.add(new ContextResourceString({
         	project: "ht-webapp12",
@@ -1057,7 +1057,7 @@ module.exports = {
         }));
 
         var actual = yml.localizeText(translations, "fr-FR");
-        
+
         var expected =
 			'doctor_thanked_note_life_saved:\n' +
 			'  email_subject: \'%1, vous sauvez des vides!\'\n' +
@@ -1071,10 +1071,10 @@ module.exports = {
 
         diff(actual, expected);
         test.equal(actual, expected);
-        
+
         test.done();
     },
-    
+
     testYamlFileLocalizeTextMultiple: function(test) {
         test.expect(15);
 
@@ -1085,12 +1085,12 @@ module.exports = {
     			yml: "a/b"
     		}
         }, "./testfiles");
-        
+
     	var yml = new YamlFile({
     		project: p
     	});
     	test.ok(yml);
-        
+
         yml.parse(
 			'doctor_thanked_note_life_saved:\n' +
 			'  email_subject: \'%1, you’re saving lives!\'\n' +
@@ -1102,16 +1102,16 @@ module.exports = {
 			'  setting_name: doctor_thanked_note_life_saved\n' +
 			'  daily_limit_exception_email: true\n'
 		);
-        
+
         var set = yml.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource('%1, you’re saving lives!', "doctor_thanked_note_life_saved");
         test.ok(r);
         test.equal(r.getSource(), '%1, you’re saving lives!');
         test.equal(r.getKey(), 'email_subject');
         test.equal(r.getContext(), "doctor_thanked_note_life_saved");
-        
+
         r = set.getBySource('You’ve been thanked for saving a life!', "doctor_thanked_note_life_saved");
         test.ok(r);
         test.equal(r.getSource(), 'You’ve been thanked for saving a life!');
@@ -1123,7 +1123,7 @@ module.exports = {
         test.equal(r.getSource(), 'You’ve saved a life! View %1');
         test.equal(r.getKey(), 'push_data');
         test.equal(r.getContext(), "doctor_thanked_note_life_saved");
-        
+
         var translations = new TranslationSet();
         translations.addAll([
         	new ContextResourceString({
@@ -1153,7 +1153,7 @@ module.exports = {
 	    ]);
 
         var actual = yml.localizeText(translations, "fr-FR");
-        
+
         var expected =
 			'doctor_thanked_note_life_saved:\n' +
 			'  email_subject: \'%1, vous sauvez des vies!\'\n' +
@@ -1167,7 +1167,48 @@ module.exports = {
 
         diff(actual, expected);
         test.equal(actual, expected);
-        
+
+        test.done();
+    },
+
+    testYamlGetSchemaPath: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "foo/bar/x.yml"
+        });
+        test.ok(y);
+
+        test.equal(y.getSchemaPath(), "foo/bar/x-schema.json");
+
+        test.done();
+    },
+
+    testYamlGetSchemaPathNoFile: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p
+        });
+        test.ok(y);
+
+        test.equal(y.getSchemaPath(), undefined);
+
         test.done();
     }
 };
