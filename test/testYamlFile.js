@@ -1210,5 +1210,25 @@ module.exports = {
         test.equal(y.getSchemaPath(), undefined);
 
         test.done();
+    },
+
+    testYamlExtractSchemaFile: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "./test3.yml"
+        });
+        test.ok(y);
+        y.extract();
+        test.notEqual(y.getSchema(), undefined);
+        test.done();
     }
 };
