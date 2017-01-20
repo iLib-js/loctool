@@ -1230,5 +1230,47 @@ module.exports = {
         y.extract();
         test.notEqual(y.getSchema(), undefined);
         test.done();
+    },
+
+    testYamlGetExcludedKeysFromSchema: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "./test3.yml"
+        });
+        test.ok(y);
+        y.extract();
+        test.equal(y.getExcludedKeysFromSchema().length, 1);
+        test.equal(y.getExcludedKeysFromSchema()[0], 'do_not_read_me');
+        test.done();
+    },
+
+    testYamlGetExcludedKeysFromSchemaWithoutSchema: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "./test.yml"
+        });
+        test.ok(y);
+        y.extract();
+        test.equal(y.getSchema(), undefined);
+        test.equal(y.getExcludedKeysFromSchema().length, 0);
+        test.done();
     }
 };
