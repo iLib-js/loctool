@@ -114,39 +114,39 @@
   </file>
   <file original="app/views/static_pages/benefit_focus.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="86" resname="r269501934" restype="string" datatype="ruby">
+      <trans-unit id="86" resname="r945917850" restype="string" datatype="ruby">
         <source>Our %{n} top doctors are here for you,&lt;br&gt; anytime, anywhere</source>
         <target>Nuestros %{n} mejores doctores están aquí para ti,&lt;br&gt; a cualquier hora y en cualquier lugar.</target>
       </trans-unit>
-      <trans-unit id="87" resname="r363561295" restype="string" datatype="ruby">
+      <trans-unit id="87" resname="r260412711" restype="string" datatype="ruby">
         <source>You get doctor advice, actionable plans,&lt;br&gt; prescriptions, referrals, and even lab tests</source>
         <target>Obtienes consejo de doctores, planes accionables,&lt;br&gt; recetas, referencias y hasta pruebas de laboratorio</target>
       </trans-unit>
-      <trans-unit id="88" resname="r352626996" restype="string" datatype="ruby">
+      <trans-unit id="88" resname="r542330338" restype="string" datatype="ruby">
         <source>You get doctor advice,&lt;br&gt;actionable plans,&lt;br&gt;prescriptions, referrals,&lt;br&gt;and even lab tests</source>
         <target>Obtienes consejo de doctores,&lt;br&gt;planes accionables,&lt;br&gt;recetas, referencias&lt;br&gt;y hasta pruebas de laboratorio</target>
       </trans-unit>
-      <trans-unit id="89" resname="r917056356" restype="string" datatype="ruby">
+      <trans-unit id="89" resname="r192293734" restype="string" datatype="ruby">
         <source>Safe, secure, and private:&lt;br&gt; We provide the right care when you need it most</source>
         <target>Segura y privada:&lt;br&gt; Brindamos la atención adecuada cuando más la necesitas</target>
       </trans-unit>
-      <trans-unit id="90" resname="r699856334" restype="string" datatype="ruby">
+      <trans-unit id="90" resname="r83587156" restype="string" datatype="ruby">
         <source>HealthTap Compass brings you&lt;br&gt;immediate answers&lt;br&gt;to your most pressing concerns&lt;br&gt;with convenience and compassion</source>
         <target>HealthTap Compass te brinda&lt;br&gt;respuestas inmediatas&lt;br&gt;a tus más urgentes preocupaciones&lt;br&gt;con conveniencia y compasión</target>
       </trans-unit>
-      <trans-unit id="91" resname="r988622612" restype="string" datatype="ruby">
+      <trans-unit id="91" resname="r102174680" restype="string" datatype="ruby">
         <source>HealthTap Compass brings&lt;br&gt;you immediate answers&lt;br&gt;to your most pressing&lt;br&gt;concerns with convenience&lt;br&gt;and compassion</source>
         <target>HealthTap Compass te brinda&lt;br&gt;respuestas inmediatas&lt;br&gt;a tus más urgentes&lt;br&gt;preocupaciones con conveniencia&lt;br&gt;y compasión</target>
       </trans-unit>
-      <trans-unit id="92" resname="r768297829" restype="string" datatype="ruby">
+      <trans-unit id="92" resname="r470820396" restype="string" datatype="ruby">
         <source>No waiting rooms,&lt;br&gt;only immediate knowledge and immediate care</source>
         <target>Sin salas de espera,&lt;br&gt;solo conocimiento inmediato y atención inmediata</target>
       </trans-unit>
-      <trans-unit id="93" resname="r548219023" restype="string" datatype="ruby">
+      <trans-unit id="93" resname="r445983580" restype="string" datatype="ruby">
         <source>You&apos;re never alone&lt;br&gt; Just &lt;i&gt; Tap-in &lt;/i&gt;</source>
         <target>Nunca estás solo&lt;br&gt; Solo &lt;i&gt; Entra &lt;/i&gt;</target>
       </trans-unit>
-      <trans-unit id="94" resname="r931665539" restype="string" datatype="ruby">
+      <trans-unit id="94" resname="r422123155" restype="string" datatype="ruby">
         <source>and a healthier, happier world&lt;br&gt;starts with you</source>
         <target>y un mundo más saludable y feliz&lt;br&gt;comienza contigo</target>
       </trans-unit>
@@ -332,15 +332,15 @@
         <source>In the meantime, please use latest versions of %{chrome_link_start}Chrome%{link_end}, %{firefox_link_start}Firefox%{link_end}, or %{ie_link_start}Internet Explorer%{link_end}.</source>
         <target>Mientras tanto, por favor, usa las últimas versiones de %{chrome_link_start}Chrome%{link_end}, %{firefox_link_start}Firefox%{link_end} o %{ie_link_start}Internet Explorer%{link_end}.</target>
       </trans-unit>
-      <trans-unit id="143" resname="r761507253" restype="string" datatype="ruby">
+      <trans-unit id="143" resname="r857301806" restype="string" datatype="ruby">
         <source>In order to talk to doctors from your computer,&lt;br&gt;you&apos;ll need to &lt;b&gt;install a browser video plug-in%{asterisk}&lt;/b&gt;&lt;br&gt; It&apos;s quick and easy, and we&apos;ll help you : &#41;</source>
         <target>Para pdoer hablar con doctores desde tu computadora,&lt;br&gt;necesitaras &lt;b&gt;instalar un complemento  de video a tu navegador%{asterisk}&lt;/b&gt;&lt;br&gt; Es rápido y fácil, y nosotros te ayudaremos : &#41;</target>
       </trans-unit>
-      <trans-unit id="144" resname="r401914141" restype="string" datatype="ruby">
+      <trans-unit id="144" resname="r152667637" restype="string" datatype="ruby">
         <source>*Note: If you&apos;ve installed our plug-in before,&lt;br&gt;you may need to %{link_tag_start}uninstall the old version%{link_tag_end} first.</source>
         <target>*Nota: Si ya has instalado nuestro complemento anteriormente,&lt;br&gt;puede que necesites %{link_tag_start}desinstalar la vieja versión%{link_tag_end} primero.</target>
       </trans-unit>
-      <trans-unit id="145" resname="r926022994" restype="string" datatype="ruby">
+      <trans-unit id="145" resname="r330695315" restype="string" datatype="ruby">
         <source>Download the safe, &lt;br&gt;secure plug-in</source>
         <target>Descarga el seguro &lt;br&gt;complemento</target>
       </trans-unit>
@@ -2308,11 +2308,11 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_set_pricing_change_and_upcoming_charge.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="631" resname="r77653476" restype="string" datatype="ruby">
+      <trans-unit id="631" resname="r744520428" restype="string" datatype="ruby">
         <source>&lt;b&gt;Optimize Your Custom Prices:&lt;/b&gt;</source>
         <target>&lt;b&gt;Optimiza Tus Precios Personalizados:&lt;/b&gt;</target>
       </trans-unit>
-      <trans-unit id="632" resname="r974973693" restype="string" datatype="ruby">
+      <trans-unit id="632" resname="r542703797" restype="string" datatype="ruby">
         <source>&lt;b&gt;Top Tips for Your Success on HealthTap Concierge:&lt;/b&gt;</source>
         <target>&lt;b&gt;Los Mejores Tips para Tu Éxito en HealthTap Concierge:&lt;/b&gt;</target>
       </trans-unit>
@@ -2540,7 +2540,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_invite_concierge_0days.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="683" resname="r416570097" restype="string" datatype="ruby">
+      <trans-unit id="683" resname="r662306794" restype="string" datatype="ruby">
         <source>&lt;span style=&quot;font-style:italic;&quot; &gt;The HealthTap&lt;sup&gt;+&lt;/sup&gt; Team :&#41;&lt;/span&gt;</source>
         <target>&lt;span style=&quot;font-style:italic;&quot; &gt;El Equipo&lt;sup&gt;+&lt;/sup&gt; HealthTap :&#41;&lt;/span&gt;</target>
       </trans-unit>
@@ -3700,11 +3700,11 @@
         <source>Available for secure messages</source>
         <target>Disponible para mensajes seguros</target>
       </trans-unit>
-      <trans-unit id="979" resname="r750915788" restype="string" datatype="ruby">
+      <trans-unit id="979" resname="r1038845863" restype="string" datatype="ruby">
         <source>Available next %{msg}</source>
         <target>Disponible próximamente %{msg}</target>
       </trans-unit>
-      <trans-unit id="980" resname="r17068825" restype="string" datatype="ruby">
+      <trans-unit id="980" resname="r304998900" restype="string" datatype="ruby">
         <source>Available next on %{msg}</source>
         <target>Disponible próximamente el %{msg}</target>
       </trans-unit>

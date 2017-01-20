@@ -344,6 +344,24 @@ module.exports = {
         test.done();
 	},
 
+	testJavaFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        test.equals(jf.makeKey("Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat"), "r221792856");
+        
+        test.done();
+	},
+
 	testJavaFileMakeKeyInterpretEscapedOctalChars: function(test) {
         test.expect(2);
 

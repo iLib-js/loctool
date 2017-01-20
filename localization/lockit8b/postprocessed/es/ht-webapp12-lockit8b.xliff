@@ -154,7 +154,7 @@
   </file>
   <file original="app/models/group.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="180" resname="r74609673" restype="string" datatype="ruby">
+      <trans-unit id="180" resname="r142955284" restype="string" datatype="ruby">
         <source>&lt;p&gt;&lt;a href=&gt;Join Group&lt;/a&gt; to become a member of %{group_name} on HealthTap.&lt;/p&gt;
                   &lt;br/&gt;Thanks!
                   &lt;br/&gt;%{inviter}</source>

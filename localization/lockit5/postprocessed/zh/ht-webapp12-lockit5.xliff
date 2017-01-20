@@ -934,7 +934,7 @@
         <source>TODAY Show &#40;March 2013&#41;</source>
         <target>今日秀&#40;2013年3月&#41;</target>
       </trans-unit>
-      <trans-unit id="234" resname="r104217239" restype="string" datatype="ruby">
+      <trans-unit id="234" resname="r52875494" restype="string" datatype="ruby">
         <source>In March 2013, HealthTap was featured on the TODAY Show as one of the 4 best health apps among the 40,000 health applications available for consumers. Watch the video &lt;a href=&apos;http://www.today.com/video/today/51273692/&#35;51273692&apos; target=&apos;_blank&apos;&gt;here&lt;/a&gt;!</source>
         <target>2013年3月，HealthTap在今日秀上作为消费者提供的4万个健康应用程序中的4个最好的健康应用程序之一。观看视频&lt;a href=’http://www.today.com/video/today/51273692/&#35;51273692’ target=’_blank’&gt;这里&lt;/a&gt;!</target>
       </trans-unit>
@@ -1034,7 +1034,7 @@
         <source>Continued National Press &#40;Nov 2013&#41;</source>
         <target>持续的全国新闻（2013年11月）</target>
       </trans-unit>
-      <trans-unit id="259" resname="r291505764" restype="string" datatype="ruby">
+      <trans-unit id="259" resname="r867011056" restype="string" datatype="ruby">
         <source>HealthTap continued to be featured in national press, with articles in Inc. Magazine &#40;November 2013&#41; &#40;&lt;a href=&apos;http://www.wired.com/business/2013/09/health-startups-target-the-massive-money-behind-real-pain/&apos; target=&apos;_blank&apos;&gt;here&lt;/a&gt;&#41; and Forbes &#40;November 2013&#41; &#40;&lt;a href=&apos;http://www.forbes.com/sites/brucerogers/2013/11/20/ron-gutmans-healthtap-seeks-to-be-the-first-global-mobile-health-brand/&apos; target=&apos;_blank&apos;&gt;here&lt;/a&gt;&#41;, among many others.</source>
         <target>HealthTap继续在国家新闻界发表，其中包括华纳出版社（2013年11月） &#40;&lt;a href=’http://www.wired.com/business/2013/09/health-startups-target-the-massive-money-behind-real-pain/’ target=’_blank’&gt;here&lt;/a&gt;&#41; 和福布斯（2013年11月） &#40;&lt;a href=’http://www.forbes.com/sites/brucerogers/2013/11/20/ron-gutmans-healthtap-seeks-to-be-the-first-global-mobile-health-brand/’ target=’_blank’&gt;here&lt;/a&gt;&#41;, 许多其他。</target>
       </trans-unit>
@@ -1054,7 +1054,7 @@
         <source>Bill Ericson</source>
         <target>Bill Ericson</target>
       </trans-unit>
-      <trans-unit id="263" resname="r952385466" restype="string" datatype="ruby">
+      <trans-unit id="263" resname="r482285497" restype="string" datatype="ruby">
         <source>Bill Ericson has been working with startups his entire career as a founder, key advisor, counselor and investor. He believes that entrepreneurship drives the American economy, and that the best venture capitalists see their role as supporting and challenging entrepreneurs to their best performance. Bill’s current investment focus is the big data revolution that is driving the commercial, consumer media and health care worlds. Bill serves on the Board of Northwestern University School of Law and received his B.S.F.S. from Georgetown University of Foreign Service and J.D. from Northwestern University School of Law.
                 &lt;br&gt;&lt;br&gt;%{open_tag}MDV%{close_tag} has over $1.4 billion under management and partners with entrepreneurs to architect and build successful companies. MDV invests in businesses that address significant challenges and opportunities, including personalizing medicine. MDV-funded companies that have gone public or been acquired include: Agile; Broadbase &#40;KANA&#41;; Brocade; Epigram &#40;BRCM&#41;; FormFactor &#40;FORM&#41;; Freshwater Software &#40;MERQ&#41;; Ipsilon Networks &#40;NOK&#41;; Kalpana &#40;CSCO&#41;; Numerical Technologies &#40;SNPS&#41;; ONI Systems &#40;CIEN&#41;; Pivotal Technologies &#40;BRCM&#41;; Rambus; Vantive; Vitesse; and Zip2 &#40;AltaVista&#41;.</source>
         <target>Bill Ericson终生在初创公司中担任创始人、关键顾问、咨询师和投资人。他坚信企业家精神驱动了美国经济，最好的风险资本家将自身角色定位在支持和鼓励企业家做到最好。Bill当前的投资焦点在驱动商业、消费者媒介和医疗世界的大数据革命。Bill在西北大学法学系董事会任职，他从乔治城大学外事部获得了学士学位并于西北大学法学系获得了博士学位。&lt;br&gt;&lt;br&gt;%{open_tag}MDV%{close_tag} 管理超过14亿美元，与企业家合作，共同建筑和建立成功的公司。MDV投资那些带来包括个性化药物在内的重大挑战和机遇的商业。MDV投资的已经公开或获得成果的企业包括：Agile; Broadbase &#40;KANA&#41;; Brocade; Epigram &#40;BRCM&#41;; FormFactor &#40;FORM&#41;; Freshwater Software &#40;MERQ&#41;; Ipsilon Networks &#40;NOK&#41;; Kalpana &#40;CSCO&#41;; Numerical Technologies &#40;SNPS&#41;; ONI Systems &#40;CIEN&#41;; Pivotal Technologies &#40;BRCM&#41;; Rambus; Vantive; Vitesse; and Zip2 &#40;AltaVista&#41;.</target>
@@ -1063,7 +1063,7 @@
         <source>Tim Chang</source>
         <target>Tim Chang</target>
       </trans-unit>
-      <trans-unit id="265" resname="r208158890" restype="string" datatype="ruby">
+      <trans-unit id="265" resname="r589435114" restype="string" datatype="ruby">
         <source>Tim Chang is the Managing Director of the %{open_tag}Mayfield Fund%{close_tag}.  Tim is a proven venture investor and experienced global executive.  He was named on the 2011 Forbes Midas List of Top 100 Dealmakers and was featured by The Deal as one of five emerging VCs to watch.  Tim invests in the mobile, gaming, digital media and enterprise applications sectors.  Prior to joining Mayfield Fund, Tim spent five years as a Partner at Norwest Venture Partners, and prior to Norwest, Tim worked for Gabriel Venture Partners, and as part of the founding team of CTR Ventures. Currently, Tim serves on the advisory boards of the Verizon 4G Venture Forum, Gamestop Corporation, Yoshimoto Kogyo, the Silicon Valley Telecom Council, MIT/Stanford VLAB, CasualConnect, and GamesBeat/MobileBeat.  Tim holds an MBA from the Stanford Graduate School of Business, and an M.S. and B.S. from the University of Michigan.
                     &lt;br&gt;&lt;br&gt;The %{open_tag}Mayfield Fund%{close_tag} has over $2.7 billion under management, and has a 41-year history of investing in relationships with entrepreneurs, institutions and our community to transform bold ideas into industry-leading companies. Mayfield&apos;s mission is to create global impact and investor value, by partnering with visionary entrepreneurs who are addressing disruptive markets.  Mayfield has invested in more than 500 companies, resulting in over 100 IPOs and more than 100 mergers and acquisitions.  Select notable investments include 3Com, Citrix, Compaq, and Genentech.</source>
         <target>Tim Chang是%{open_tag}梅菲尔德基金%{close_tag}的董事总经理。Tim是一名经过证明的风险投资家和资深的全球总经理。他被2011年福布斯迈达斯列表提名为最好的100位交易人之一并被认为是新出现的五位值得关注的风险投资家之一。Tim在移动、游戏、电子媒介和企业申请领域进行投资。在加入梅菲尔德基金之前，Tim在西北风险投资公司担任了五年合伙人，在进入西北风险投资公司之前，他为Gabriel Venture Partners工作并担任CTR Ventures创始团队的会员。目前，Tim担任Verizon的4G投资论坛, GameStop公司, 吉本兴业株式会社, 硅谷电信委员会, 麻省理工学院/斯坦福VLAB, CasualConnect, and GamesBeat/MobileBeat的顾问团的一员。Tim从斯坦福大学商学院拿到了管理硕士学位并从密歇根大学拿到学士和硕士学位。&lt;br&gt;&lt;br&gt;The %{open_tag}梅菲尔德基金%{close_tag}管理超过27亿美元，并有41年的投资与企业家，机构和社区的关系的历史，将大胆的想法转变为业内领先的公司。梅菲尔德的使命是通过和致力于改善受扰乱的市场的有远见的企业家的协作来创造全球影响力和投资价值。梅菲尔德投资了超过500家企业，其中有超过100家进行首次公开募股，另有超过100起并购。选择包括3Com, 思杰公司, 康柏和基因泰克在内的值得注意的投资。</target>
@@ -1392,7 +1392,7 @@
         <source>Can I really submit a question to thousands of doctors for a free answer?</source>
         <target>我能向很多医生免费提交一个问题来获得回答吗？</target>
       </trans-unit>
-      <trans-unit id="349" resname="r772305069" restype="string" datatype="ruby">
+      <trans-unit id="349" resname="r1070662255" restype="string" datatype="ruby">
         <source>Yes - it’s true!  Health questions submitted to HealthTap are submitted to our network of thousands of doctor across the U.S.  These doctors try to answer every question that’s submitted.  Questions are most likely to be answered when they have not already been asked and answered, and they are good health questions &#40;easy to understand and useful to the entire HealthTap community&#41;.  &lt;a href=&quot;/how_it_works/member_guides&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
         <target>是的 - 当然可以！HealthTap的问题将会上传到我们数以千计的医生网络中。这些医生会尝试回答每个被提交的问题。HealthTap的问题将会上传到我们数以千计的医生网络中。这些医生试着回答每个被提出的问题。&lt;a href=”/how_it_works/member_guides”&gt;了解更多 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -1428,7 +1428,7 @@
         <source>How much do Private Conversations cost?  How long will it take to get an answer to a private question, and what if it’s is not answered?</source>
         <target>私人咨询的价格是多少？私人咨询多久才能收到回答，如果没有被回答呢？</target>
       </trans-unit>
-      <trans-unit id="358" resname="r141345879" restype="string" datatype="ruby">
+      <trans-unit id="358" resname="r597744609" restype="string" datatype="ruby">
         <source>There is a small fee &#40;less than the cost of a typical co-pay for someone with comprehensive health insurance&#41; to ask a private question directly to the doctor of your choice on HealthTap. When you submit a private question to a doctor on HealthTap, that doctor has up to 72 hours to answer the question. You will receive a full refund if the question is not answered within that time. &lt;a href=&quot;/how_it_works/member_guides&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
         <target>在HealthTap上您可以通过付出一笔很小的费用（低于有全面健康保险人的典型共同支付的费用）来直接向医生询问一个私人问题。当您在HealthTap上向医生提交一个私人问题的时，医生最多有72个小时来回答这个问题。如果在规定期限内您没有收到回答，您将会收到全额退款。&lt;a href=”/how_it_works/member_guides”&gt;了解更多 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -1473,8 +1473,8 @@
         <target>我的健康活动是什么，它被用来做什么，我怎么编辑它？</target>
       </trans-unit>
       <trans-unit id="372" resname="r715676593" restype="string" datatype="ruby">
-        <source>Your Health Activity is a record of the health and related information you enter into and share with HealthTap. It is completely secure and private. Your Health Activity is used to provide you with better information on HealthTap.\n            \n                        Your Health Activity is never visible to other members on HealthTap, but if you choose to start a private health conversation with a doctor on HealthTap using our new House Call feature, your real name and your Health Activity will be visible to that doctor. \n            \n                        You can edit your Health Profile and add to your Health Activity at any time.</source>
-        <target>您的健康活动是您在HealthTap上输入并分享的您的健康及相关信息的记录。它完全是安全的和私密的。您的健康活动用于为您提供有关HealthTap的更好信息。\n            \n                        HealthTap上的其他会员永远不会显示您的健康活动，但如果您选择使用我们的新的出诊功能与HealthTap上的医生开始私人健康咨询，您的真实姓名和您的健康活动将向该医生显示。\n            \n                        您可以随时编辑您的健康档案并添加到您的健康活动。</target>
+        <source>Your Health Activity is a record of the health and related information you enter into and share with HealthTap. It is completely secure and private. Your Health Activity is used to provide you with better information on HealthTap.                                      Your Health Activity is never visible to other members on HealthTap, but if you choose to start a private health conversation with a doctor on HealthTap using our new House Call feature, your real name and your Health Activity will be visible to that doctor.                                       You can edit your Health Profile and add to your Health Activity at any time.</source>
+        <target>您的健康活动是您在HealthTap上输入并分享的您的健康及相关信息的记录。它完全是安全的和私密的。您的健康活动用于为您提供有关HealthTap的更好信息。                                      HealthTap上的其他会员永远不会显示您的健康活动，但如果您选择使用我们的新的出诊功能与HealthTap上的医生开始私人健康咨询，您的真实姓名和您的健康活动将向该医生显示。                                      您可以随时编辑您的健康档案并添加到您的健康活动。</target>
       </trans-unit>
       <trans-unit id="373" resname="r247675146" restype="string" datatype="ruby">
         <source>Logging In</source>
@@ -1484,7 +1484,7 @@
         <source>Why can’t I log in?</source>
         <target>我为什么不能登录？</target>
       </trans-unit>
-      <trans-unit id="375" resname="r97611072" restype="string" datatype="ruby">
+      <trans-unit id="375" resname="r580751419" restype="string" datatype="ruby">
         <source>To log in to HealthTap you must first register and create an account. When you do this, you’ll pick an email address and password to use. You can change your log in information in your settings at any time. If you’ve already registered and are having trouble logging in, please &lt;a href=&quot;mailto:info@healthtap.com&quot;&gt;contact us.&lt;/a&gt;</source>
         <target>要登录HealthTap您必须先注册并创建一个账户。当您在做这些的时候，您需要选择一个邮箱地址和密码。您可以随时在设置中修改您的登录信息。如果您已经注册，但是无法登录，请&lt;a href=”mailto:info@healthtap.com”&gt;联系我们。&lt;/a&gt;</target>
       </trans-unit>
@@ -1544,15 +1544,15 @@
   </file>
   <file original="app/views/what_we_make/medical_expert_faqs.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="388" resname="r931591608" restype="string" datatype="ruby">
+      <trans-unit id="388" resname="r290077816" restype="string" datatype="ruby">
         <source>To add other group affiliations to your HealthTap profile, edit your Virtual Practice page. &lt;a href=&quot;/how_it_works/for_groups&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
         <target>如果要在您的HealthTap档案中加入其它群组联系，请在您的在线诊疗页面编辑它。&lt;a href=”/how_it_works/for_groups”&gt;了解更多 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="389" resname="r1070161257" restype="string" datatype="ruby">
+      <trans-unit id="389" resname="r783010191" restype="string" datatype="ruby">
         <source>Providing helpful answers: &lt;a href=&quot;/&#35;expert/answer_questions&quot;&gt;answer more&lt;/a&gt;</source>
         <target>提供有帮助的回答：&lt;a href=”/&#35;expert/answer_questions”&gt;回答更多&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="390" resname="r1009993530" restype="string" datatype="ruby">
+      <trans-unit id="390" resname="r887373116" restype="string" datatype="ruby">
         <source>Accepting new &lt;a href=&quot;/&#35;expert/messages&quot;&gt;private messages from patients&lt;/a&gt;</source>
         <target>接受来自患者的新&lt;a href=&quot;/&#35;expert/messages&quot;&gt;私人消息&lt;/a&gt;</target>
       </trans-unit>
@@ -1568,7 +1568,7 @@
         <source>What are the benefits of joining the Medical Expert Network and how do I join?</source>
         <target>加入医学专家网络的优势是什么？如何加入？</target>
       </trans-unit>
-      <trans-unit id="395" resname="r1009999163" restype="string" datatype="ruby">
+      <trans-unit id="395" resname="r135053626" restype="string" datatype="ruby">
         <source>The benefits of HealthTap for doctors are spelled out on our &lt;a href=&quot;/how_it_works/for_doctors&quot;&gt;doctors page&lt;/a&gt;. If you are a U.S.-licensed doctor you can sign up online or by downloading the number one featured &lt;a href=&quot;/how_it_works/for_doctors/?goto=smartphone&quot;&gt;HealthTap MD app for iPhone, iPad and Android&lt;/a&gt;. Signing up is quick and easy — and getting started takes less than a minute. During the sign up process we will ask for information that is required to verify that every Medical Expert on HealthTap is a U.S. licensed physician in good standing. If you need assistance during the sign up process, please reach out to our support team &lt;a href=&quot;mailto:expertsupport@healthtap.com&quot;&gt;here&lt;/a&gt;.</source>
         <target>HealthTap对医生的优势在我们的&lt;a href=”/how_it_works/for_doctors”&gt;医生页面&lt;/a&gt;。如果您是拥有美国执业执照的医生，您可以在线注册或下载一个&lt;a href=”/how_it_works/for_doctors/?goto=smartphone”&gt;适用于iPhone，iPad和安卓的HealthTap MD应用程序&lt;/a&gt;.注册便捷且容易——只需不到一分钟即可开始。在注册过程中，我们会询问并证实所有的HealthTap的医学专家都是具有良好信誉的美国拥有执业执照的医生。如果您在注册过程中需要帮助，请在&lt;a href=”mailto:expertsupport@healthtap.com”&gt;这里&lt;/a&gt;寻求我们的支持团队的帮助。</target>
       </trans-unit>
@@ -1576,7 +1576,7 @@
         <source>How do I join the Medical Expert Network?</source>
         <target>我如何加入医学专家网络？</target>
       </trans-unit>
-      <trans-unit id="398" resname="r269716433" restype="string" datatype="ruby">
+      <trans-unit id="398" resname="r863997893" restype="string" datatype="ruby">
         <source>If you are a U.S. licensed doctor you can &lt;a href=&quot;/&#35;sign_up&quot;&gt;sign up&lt;/a&gt; online or by downloading the number one featured &lt;a href=&quot;/how_it_works/mobile_apps&quot;&gt;HealthTap MD app&lt;/a&gt; for iPhone, iPad and Android. Signing up is quick and easy — and getting started takes less than a minute. During the sign up process we will ask for information that is required to verify that every Medical Expert on HealthTap is a U.S. licensed doctor in good standing. If you need assistance during the sign up process, please reach out to our support team here</source>
         <target>如果您是拥有美国执业执照的医生&lt;a href=”/&#35;sign_up”&gt;注册&lt;/a&gt;一个在线或下载 &lt;a href=”/how_it_works/mobile_apps”&gt;HealthTap Md应用程序&lt;/a&gt;为 iPhone, iPad和安卓。注册便捷且容易——只需不到一分钟即可开始。在注册过程中，我们会询问并证实所有的HealthTap的医学专家都是具有良好信誉的美国拥有执业执照的医生。如果您在注册过程中需要帮助，请在这里寻求我们的支持团队的帮助。</target>
       </trans-unit>
@@ -1668,7 +1668,7 @@
         <source>What is the Top Doctors Competition”?</source>
         <target>什么是顶级医生竞赛？</target>
       </trans-unit>
-      <trans-unit id="425" resname="r674107202" restype="string" datatype="ruby">
+      <trans-unit id="425" resname="r801361737" restype="string" datatype="ruby">
         <source>Once you have declared your “Known For” topics you have the ability to showcase your expertise in this area and earn the &#35;1 spot on your block, in your neighborhood, city, state, and beyond! You can be the best in your known for areas simply by doing what you do best — helping people who are looking for your expertise. &lt;a href=&quot;/how_it_works/for_doctors/?goto=build_reputation&quot;&gt; Learn more &amp;raquo;&lt;/a&gt;</source>
         <target>一旦您宣布您的“专攻”话题，您将可以展现您在该领域的专业知识并且在您所在的街区，城市，州，甚至是州以外获得第一。您只需要做您最擅长的事——帮助那些需要您专业知识的患者，您就能在您的专供领域上成为最优秀的人&lt;a href=”/how_it_works/for_doctors/?goto=build_reputation”&gt;了解更多 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -1680,7 +1680,7 @@
         <source>How do I get my own customized HealthTap App or Widget?</source>
         <target>我如何获取我的自定义HealthTap应用程序或小工具?</target>
       </trans-unit>
-      <trans-unit id="428" resname="r1022686597" restype="string" datatype="ruby">
+      <trans-unit id="428" resname="r425388093" restype="string" datatype="ruby">
         <source>&lt;a href=&quot;/how_it_works/widgets_and_apis&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
         <target>&lt;a href=”/how_it_works/widgets_and_apis”&gt;了解更多 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -1692,7 +1692,7 @@
         <source>What is ClubMD?</source>
         <target>ClubMD是什么</target>
       </trans-unit>
-      <trans-unit id="431" resname="r589947305" restype="string" datatype="ruby">
+      <trans-unit id="431" resname="r425388093" restype="string" datatype="ruby">
         <source>&lt;a href=&quot;/how_it_works/club_md&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
         <target>&lt;a href=”/how_it_works/club_md”&gt;了解更多 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -1700,7 +1700,7 @@
         <source>What is a Founding Expert?</source>
         <target>发起的专家是什么?</target>
       </trans-unit>
-      <trans-unit id="433" resname="r893956031" restype="string" datatype="ruby">
+      <trans-unit id="433" resname="r425388093" restype="string" datatype="ruby">
         <source>&lt;a class=&quot;relocate&quot; href=&quot;/how_it_works/club_md&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
         <target>&lt;a class=”relocate” href=”/how_it_works/club_md”&gt;了解更多 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -1760,7 +1760,7 @@
         <source>How can I submit a video for healthy living resolutions?</source>
         <target>我该如何上传健康生活方式的视频？</target>
       </trans-unit>
-      <trans-unit id="450" resname="r1058278885" restype="string" datatype="ruby">
+      <trans-unit id="450" resname="r554919936" restype="string" datatype="ruby">
         <source>Adding a video to a Wellness page is a great way to inspire others to improve their health and well-being.  &lt;a href=&quot;http://bit.ly/UqqqZt&quot; target=&quot;_blank&quot;&gt;Learn more here&lt;/a&gt; about our Wellness pages and how to submit your videos directly on HealthTap or via email.</source>
         <target>在Wellness页上添加视频是一种激励他人增强健康的好方式。&lt;a href=”http://bit.ly/UqqqZt” target=”_blank”&gt;在这里了解更多&lt;/a&gt; 关于我们的健康网页以及如何直接在HealthTap或通过电子邮件提交您的视频。</target>
       </trans-unit>
@@ -1964,7 +1964,7 @@
   </file>
   <file original="app/views/what_we_make/for_doctors/_vip.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="484" resname="r211812106" restype="string" datatype="ruby">
+      <trans-unit id="484" resname="r776879100" restype="string" datatype="ruby">
         <source>Get your free personalized app today! &lt;span&gt;Download our mobile app. Or we}ll make you your own&lt;/span&gt;</source>
         <target>立刻获得您免费的和个性化的应用程序！&lt;span&gt;下载我们的移动应用程序。或者我们会让您成为您自己的&lt;/span&gt;</target>
       </trans-unit>
@@ -3126,7 +3126,7 @@
         <source>... bring[s] a new level of personalization in health care to the web.</source>
         <target>...给网络带来一个新的个性化的健康医护水平。</target>
       </trans-unit>
-      <trans-unit id="729" resname="r881666298" restype="string" datatype="ruby">
+      <trans-unit id="729" resname="r748135841" restype="string" datatype="ruby">
         <source>HealthTap&apos;s offer to patients: pay %{price} and text with a medical expert in real time</source>
         <target>HealthTap提供给患者：与医学专家实时支付%{price} 和文本。</target>
       </trans-unit>
@@ -3390,7 +3390,7 @@
   </file>
   <file original="app/views/static_pages/partial/_translator_now.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="798" resname="r636340760" restype="string" datatype="ruby">
+      <trans-unit id="798" resname="r920242705" restype="string" datatype="ruby">
         <source>%{question_placeholder}</source>
         <target>%{question_placeholder}</target>
       </trans-unit>
@@ -3514,7 +3514,7 @@
   </file>
   <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="834" resname="r116346273" restype="string" datatype="ruby">
+      <trans-unit id="834" resname="r228338120" restype="string" datatype="ruby">
         <source>WHAT MAKES PEOPLE &lt;span class=&quot;no-break&quot; &gt;FEEL GOOD&lt;/span&gt;?</source>
         <target>什么可以使人们 &lt;span class=&quot;no-break&quot; &gt;FEEL GOOD&lt;/span&gt;?</target>
       </trans-unit>
@@ -3554,7 +3554,7 @@
         <source>Skip is a Partner with Asset Management Company, where he invests in mobility, datacenter, and health science technology sectors. He has founded two startups, and has extensive experience in operational experience in software, visual systems, and government sales. He also serves on the board of the Johnson Foundation.</source>
         <target>Skip是资产管理公司的合伙人，他向移动性，数据中心和健康科学科技部门投资。他创建了两个初创公司并在软件、视觉系统和政府销售中拥有广泛的运营经验。他也在约翰逊基金会的董事会任职。</target>
       </trans-unit>
-      <trans-unit id="846" resname="r257906882" restype="string" datatype="ruby">
+      <trans-unit id="846" resname="r1001138890" restype="string" datatype="ruby">
         <source>Luc builds and grows teams, leads innovative Web products and optimizes SEO, SEM, and viral to scale online businesses to reach millions of customers. When he was 21, Luc founded www.travelpod.com, the world’s first travel blogging platform, which was later acquired by TripAdvisor/Expedia. As general manager at Expedia and then at TripAdvisor, Luc led the creation of two award-winning products: TripWow &#40;&amp;ldquo;WebAward for Outstanding Achievement&amp;rdquo;—Web Marketing Association&#41; and the Traveler IQ Challenge &#40;Excellence in Social Media – CNMA&#41;. Today, he manages a top-notch team of analysts and engineers as VP of Search Engine Optimization &#40;SEO&#41; at TripAdvisor. He&apos;s the general manager for several TripAdvisor products like TripWow, the Traveler IQ Challenge, and TravelPod, which was named by PC Magazine as a “Top 100 site you can’t live without”. In addition to advising for &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;, Luc also acts as an advisor for several other incubators and high-growth startups, including FounderFuel and BusBud.</source>
         <target>Luc构建和增强团队，领导创新的网络产品，并优化搜索引擎优化，标准电子组件和病毒来扩展在线业务，以覆盖数百万客户。当他21岁时，Luc创立了www.travelpod.com，这是世界上第一个旅行博客平台，后来被猫途鹰/智游天下收购。作为智游天下的总经理，后来在猫途鹰，Luc领导了两个获奖产品的创建：TripWow &#40;&amp;ldquo;WebAward卓越成就&amp;rdquo - 网络营销协会&#41;和地理 IQ大挑战（社交媒体卓越—通信网络与制造应用标准）。今天，他作为猫途鹰的副总裁在搜索引擎优化（SEO）方面管理着一个顶级的分析师和工程师团队。他是几个猫途鹰产品的总经理，如TripWow，地理IQ大挑战和TravelPod，它被PC杂志命名为“100强您无法离开的网站”。除了担任&lt;span class =’ht-name’&gt; HealthTap的顾问&lt;/span&gt;，Luc还是其他几个孵化器和高增长初创公司的顾问，包括FounderFuel和BusBud。</target>
       </trans-unit>
@@ -3562,15 +3562,15 @@
         <source>Alex is the VP of Growth at Facebook and manages user acquisition and retention, helping drive mobile adoption, self-service advertiser/page admin acquisition, and helping drive other product adoption as required. The channels he uses tend to be: SEO/SEM, email/sms/push notification marketing and onsite merchandising. Alex also manages the internationalization team at Facebook. Prior to Facebook in 2007, Alex spent three years at eBay in email marketing. Alex holds an MSc degree in Physics from the University of Cambridge.</source>
         <target>Alex是Growth at Facebook的副总裁，管理用户的获取和保留，帮助推动移动应用，自助服务广告客户/网页管理员获取，以及帮助推动其他产品的采用。他使用的渠道往往是：搜索引擎优化/ 标准电子组件，电子邮件/短信/推送通知营销和现场商品销售。Alex还在脸谱网管理国际化团队。在2007年的脸谱网之前，Alex花了三年时间在eBay在电子邮件营销方面。Alex拥有剑桥大学物理学硕士学位。</target>
       </trans-unit>
-      <trans-unit id="848" resname="r492272373" restype="string" datatype="ruby">
+      <trans-unit id="848" resname="r964068761" restype="string" datatype="ruby">
         <source>In its current state, our healthcare system is expensive, difficult to access, and error prone. On the brink of a massive reform in healthcare, dedicated, bright entrepreneurs and technologists can bring a great deal to the table by developing creative, forward thinking solutions that leverage health care professionals. &lt;em&gt;&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; is at the forefront of this development, improving patient care by creating quick, easy, and affordable access to doctors everywhere. The future of healthcare is at the confluence of big data, smart algorithms, and simple-to-use interfaces that will provide amplification of our MD&apos;s resources: &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; is breaking ground in all three,&lt;/em&gt; and we&apos;re excited to help them make their compelling vision a transformative reality.</source>
         <target>在目前的状态下，我们的健康医护系统是昂贵的，难以访问，并且容易出错。在医疗保健大规模改革的边缘，专注，聪明的企业家和技术专家可以通过开发利用健康医护专业人士的创新，前瞻性的解决方案，带来很大的好处。&lt;em&gt;&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt; 处于这一发展的前沿，通过创建快速，轻松，价格实惠的医疗服务，改善患者医护。健康医护的未来是大数据，智能算法和简单易用的接口的融合，将提供我们MD的资源的放大：&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; 在所有三个方面都取得突破，我们很高兴能帮助他们使他们令人信服的愿景成为一个变革性的现实。</target>
       </trans-unit>
-      <trans-unit id="849" resname="r170578528" restype="string" datatype="ruby">
+      <trans-unit id="849" resname="r86146743" restype="string" datatype="ruby">
         <source>Everyone will soon become the CEO of their own health. &lt;em&gt;&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;, with its phenomenal growth in combination with its unique technology, has the potential to become the triaging platform for everyone&apos;s health.&lt;/em&gt; I am excited to work with the &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; team as the company scales to provide people with unparalleled immediate access to the most trusted medical knowledge, doctors, and health services.</source>
         <target>每个人都很快就会成为自己健康的CEO。&lt;em&gt;&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;, 凭借其独特的技术与其惊人的增长，有可能成为每个人的健康的分类就诊平台。&lt;/em&gt;我很高兴与&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt; 团队一起工作，随着公司规模扩大，为人们提供无与伦比的即时可访问最可信的医学知识，医生和健康服务。</target>
       </trans-unit>
-      <trans-unit id="850" resname="r1005945461" restype="string" datatype="ruby">
+      <trans-unit id="850" resname="r258151242" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; has the opportunity to  touch everyone on the planet and to become a great enterprise—maximizing both social and economic value.  It delivers value for patients, who will gain unprecedented access to doctors; value for doctors, who can treat more people more easily and cost-effectively; and value for society, which has been searching for a long time for a way to solve the healthcare dilemma of rising costs and an aging population. And given its unique and imaginative business model &lt;em&gt;&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; is poised to become one of the most profitable businesses in the world. It’s a real game changer.&lt;/em&gt;</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;有机会接触地球上的每个人，并成为一个伟大的企业 - 最大限度地提高社会和经济价值。它为患者提供价值，他们将获得前所未有的医生访问; 医生的价值，可以更容易地和更具成本效益地治疗更多的人; 还有社会的价值，它一直在寻找一个方法来解决成本上升和人口老龄化的长期的健康医护困境。鉴于其独特的和富有想象力的商业模式&lt;em&gt;&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;有望成为世界上最赚钱的企业之一。这是一个真正的改变游戏规则。&lt;/em&gt;</target>
       </trans-unit>
@@ -3578,15 +3578,15 @@
         <source>Mark Leslie at Leslie Ventures</source>
         <target>Mark Leslie的莱斯利风险投资</target>
       </trans-unit>
-      <trans-unit id="852" resname="r999007113" restype="string" datatype="ruby">
+      <trans-unit id="852" resname="r225813366" restype="string" datatype="ruby">
         <source>&lt;em&gt;&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; embodies the powerful consumer Internet trend of moving high-value mainstream offline experiences, such as doctor-patient interactions, to the online world.&lt;/em&gt; The company leverages the three key innovation drivers that I&apos;m most excited about: mobile apps that enable new kinds of rich, personalized interactions via smartphone and tablet; gamification that enhances user engagement and retention; and social mechanics, such as expert-based Q&amp;A and reputation graphs, that facilitate deep interest and trust. It&apos;s this kind of fresh thinking that will accelerate the &amp;ldquo;consumerization&amp;rdquo; of healthcare, and re-invigorate an extremely important and valuable industry that has been behind the IT curve and mired in inefficiency for decades.</source>
         <target>&lt;em&gt;&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;体现了强大的消费者互联网趋势，将高价值的主流离线体验（如医生与患者之间的互动）转移到在线世界。&lt;/em&gt;公司利用我最激动的三个关键创新驱动因素：通过智能手机和平板电脑实现新型丰富的个性化互动的移动应用程序; 增强用户参与和保留的游戏化; 和如基于专家的问与答和声誉图的社会机制，促进深厚的兴趣和信任。这种新的思维将加速消费化&amp;rdquo; 的健康医护，并重新激励这个已经由于背后的IT曲线和陷入无效率几十年的一个极其重要和有价值的行业。</target>
       </trans-unit>
-      <trans-unit id="853" resname="r449353917" restype="string" datatype="ruby">
+      <trans-unit id="853" resname="r271335372" restype="string" datatype="ruby">
         <source>&lt;em&gt;&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; is helping define the new field of &amp;ldquo;Interactive Health&amp;rdquo;—the sector that is moving consumer health information to new platforms&lt;/em&gt;, like smartphones and tablets, to provide portability and immediate access to actionable information. Consumers and physicians are increasingly joining the online conversation, and interactive health deserves the close attention of the investment community. &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; demonstrates the potential of this emerging space.</source>
         <target>&lt;em&gt;&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;正在界定交&amp;ldquo;交互健康&amp;rdquo的新领域——这个领域正在将消费者的健康信息移向新的平台&lt;/em&gt;，比如智能手机和平板电脑，来提供可携带性和即时的信息获取。消费者和医生越来越多地加入在线咨询，互动式健康值得投资界的密切关注。&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;展示了这一新兴空间的潜力。</target>
       </trans-unit>
-      <trans-unit id="854" resname="r855068512" restype="string" datatype="ruby">
+      <trans-unit id="854" resname="r822464772" restype="string" datatype="ruby">
         <source>&lt;em&gt;HealthTap&apos;s approach is brilliant.&lt;/em&gt; It delivers what people miss about medicine most: a highly engaging personalized experience, with trusted doctors sharing helpful information.</source>
         <target>&lt;em&gt; HealthTap的方法非常出色。&lt;/em&gt;它提供了人们最想知道的药物信息：高度个性化的体验，与值得信赖的医生分享有帮助的信息。</target>
       </trans-unit>
@@ -3594,7 +3594,7 @@
         <source>Mari Baker, Investor, Board of Trustees of Stanford University</source>
         <target>斯坦福大学董事会投资者Mari Baker</target>
       </trans-unit>
-      <trans-unit id="856" resname="r218182974" restype="string" datatype="ruby">
+      <trans-unit id="856" resname="r275394734" restype="string" datatype="ruby">
         <source>I tend to [invest in] things that are e-commerce, like healthcare. Things that are actually more complex to do and solving a real problem in a big market where there&apos;s nobody else doing what HealthTap is doing. &lt;em&gt;What HealthTap is doing is revolutionary.&lt;/em&gt;</source>
         <target>我倾向于[投资于]电子商务的东西，如健康医护。事实上，在一个没有其他人做HealthTap正在做的事情的大市场上，做更复杂的事情并解决一个真正的问题。&lt;em&gt;HealthTap正在做的是革命性的。&lt;/em&gt;</target>
       </trans-unit>
@@ -3606,7 +3606,7 @@
         <source>Ellen Sebastian</source>
         <target>Ellen Sebastian</target>
       </trans-unit>
-      <trans-unit id="858" resname="r67236118" restype="string" datatype="ruby">
+      <trans-unit id="858" resname="r577938034" restype="string" datatype="ruby">
         <source>I love working at HealthTap! I’ve already worked on several exciting projects on the engineering team. This is the first internship I’ve had where &lt;em&gt;I’m really making a difference.&lt;/em&gt; It’s been awesome to work in such a positive environment with other passionate people, while helping to save lives and make people feel good,  not to mention the awesome perks like Isaac&apos;s/Gagan&apos;s chocolate shop. :&#41;</source>
         <target>我喜欢在HealthTap工作！我已经在工程团队里从事几个令人兴奋的项目。这是我第一次实习，&lt;em&gt;我真的有所作为&lt;/em&gt;。在与其他热情的人一起工作在这样一个积极的环境，同时帮助拯救生命，给人的感觉真的很好，更不用说津津乐道像Isaac’s/Gagan的巧克力店。:&#41;</target>
       </trans-unit>
@@ -3626,7 +3626,7 @@
         <source>Arda Ayvaz</source>
         <target>Arda Ayvaz</target>
       </trans-unit>
-      <trans-unit id="863" resname="r6949867" restype="string" datatype="ruby">
+      <trans-unit id="863" resname="r55243073" restype="string" datatype="ruby">
         <source>Speaking from past experience, a good internship is one where &lt;em&gt;you&apos;re empowered to take initiative&lt;/em&gt; and be able to make a difference even as an intern in such a short time. In that sense, the internship experience at HealthTap delivered in spades. Very happy to be part of such a great team at such an important time for the company.</source>
         <target>从过去的经验来看，这是&lt;em&gt;一个您有权利采取主动&lt;/em&gt;的好的实习，是一个能够在这么短的时间内作为实习生有所作为的实习。在这个意义上，坦率的交付HealthTap的实习经验很高兴在这样一个重要的时刻成为如此伟大的一个团队的一部分。</target>
       </trans-unit>
@@ -3642,7 +3642,7 @@
         <source>Nat Roth</source>
         <target>Nat Roth</target>
       </trans-unit>
-      <trans-unit id="867" resname="r237682648" restype="string" datatype="ruby">
+      <trans-unit id="867" resname="r984102814" restype="string" datatype="ruby">
         <source>HealthTap is great. The people are friendly and really dedicated to trying to help make the world a healthier place; &lt;em&gt;the problems the team are working on are both technically interesting, and extremely important.&lt;/em&gt; I am honored to have had a chance to get to be a part of that environment.</source>
         <target>HealthTap是伟大的。人们是友好的，真正致力于帮助使世界成为一个更健康的地方; &lt;em&gt;团队正在开发的问题在技术上都很有趣，而且非常重要。&lt;/em&gt;我很荣幸能有机会成为这个环境的一部分。</target>
       </trans-unit>
@@ -3654,7 +3654,7 @@
         <source>Lachlan Busby</source>
         <target>Lachlan Busby</target>
       </trans-unit>
-      <trans-unit id="871" resname="r82392274" restype="string" datatype="ruby">
+      <trans-unit id="871" resname="r403666717" restype="string" datatype="ruby">
         <source>I have learned so much by interning at HealthTap, not only about engineering but also about &lt;em&gt;having passion for a mission.&lt;/em&gt; I have gotten to work on projects that have a direct impact on the product while also being surrounded by people who are always looking towards the bigger picture. It’s been such an amazing experience and I would totally do it all over again.</source>
         <target>我通过在HealthTap实习不仅学习了很多，不仅是关于工程，&lt;em&gt;还有对任务的热情。&lt;/em&gt;我已经开始工作，对产品有直接影响，同时被总是在寻找更大的前景的人们包围着。这是一个如此惊人的经验，我希望再完全的做一遍。</target>
       </trans-unit>
@@ -3670,7 +3670,7 @@
         <source>Cameron Vanderwall</source>
         <target>Cameron Vanderwall</target>
       </trans-unit>
-      <trans-unit id="875" resname="r232113745" restype="string" datatype="ruby">
+      <trans-unit id="875" resname="r783423866" restype="string" datatype="ruby">
         <source>HealthTap has been amazing so far. I took this internship looking for the &amp;quot;startup experience&amp;quot; and can honestly say I&apos;ve got it plus much more. &lt;em&gt;There is always something interesting to work on, which makes each day unique and exciting.&lt;/em&gt; It has truly been a pleasure working for HealthTap this summer.</source>
         <target>HealthTap到目前为止是惊人的。我在这个实习期间寻找&amp;quot;初创公司体验&amp;quot; 并可以诚实地说，我学到了很多。&lt;em&gt;总有一些有趣的工作，这使得每一天都不同和令人兴奋。&lt;/em&gt;在今年夏天，这真的是很高兴为HealthTap工作。</target>
       </trans-unit>
@@ -3682,7 +3682,7 @@
         <source>Arthur Brant</source>
         <target>Arthur Brant</target>
       </trans-unit>
-      <trans-unit id="878" resname="r634113168" restype="string" datatype="ruby">
+      <trans-unit id="878" resname="r1052353431" restype="string" datatype="ruby">
         <source>HealthTap has been an invaluable experience. The work that the interns are given has been technically challenging and extremely important for the product, for the mission. &lt;em&gt;Everyone is friendly, smart, and extremely hard working.&lt;/em&gt;</source>
         <target>HealthTap是一个非常宝贵的经验。实习生的工作在技术上是具有挑战性的，对于产品，对于任务来说都非常重要。&lt;em&gt;每个人都是友好的，聪明的，而且非常努力地工作。&lt;/em&gt;</target>
       </trans-unit>
@@ -3694,7 +3694,7 @@
         <source>Eric Kristensen</source>
         <target>Eric Kristensen</target>
       </trans-unit>
-      <trans-unit id="881" resname="r36246525" restype="string" datatype="ruby">
+      <trans-unit id="881" resname="r398467923" restype="string" datatype="ruby">
         <source>There aren’t many places that you can get an experience like you would at HealthTap. From day one you are empowered to take on projects that make a significant difference and you are expected to achieve those goals but &lt;em&gt;given the support to learn and hone new skills to get there.&lt;/em&gt; That would be a fulfilling internship in it of itself but what separates HealthTap is the opportunity to solve challenging and important problems with an incredibly talented and passionate group of people.</source>
         <target>没有很多地方，您可以得到一个像您在HealthTap的经验。从第一天起，您有权力承担起有重大意义的项目，并且希望实现这些目标，但是&lt;em&gt;因为支持学习和磨练新的技能来实现这一目标。&lt;/em&gt;这将是一个充实的实习，HealthTap是一个机会，解决具有挑战性和重要的问题，成为一个拥有令人难以置信的才华和激情的人。</target>
       </trans-unit>
@@ -3706,7 +3706,7 @@
         <source>Tom Picot</source>
         <target>Tom Picot</target>
       </trans-unit>
-      <trans-unit id="884" resname="r284801074" restype="string" datatype="ruby">
+      <trans-unit id="884" resname="r1015910414" restype="string" datatype="ruby">
         <source>It&apos;s been a pretty amazing learning opportunity to spend a summer at a company filled with talented people, who are driven by a mission to change health care. The internship experience is exactly what I was hoping for - I&apos;ve really &lt;em&gt;valued the time people have been willing to give me, and the opportunity to have an impact&lt;/em&gt; from day one. I unreservedly recommend the internship program!</source>
         <target>这是一个非常惊人的学习机会，花一个夏天在一个充满了人才的公司，那些人都是把驱动健康医护的改变作为自己的使命。实习经验正是我所期望的 - 我真的非常&lt;em&gt;珍惜人们愿意给我的时间，并从第一天起就有机会产生影响&lt;/em&gt;。我毫无保留地推荐实习计划！</target>
       </trans-unit>
@@ -3714,7 +3714,7 @@
         <source>Tyler Davis</source>
         <target>Tyler Davis</target>
       </trans-unit>
-      <trans-unit id="886" resname="r628659071" restype="string" datatype="ruby">
+      <trans-unit id="886" resname="r980205040" restype="string" datatype="ruby">
         <source>Working at HealthTap this summer has been a great experience. I immediately jumped into a number of cool projects, which was a little overwhelming at first, but really rewarding and empowering as well. I am learning so much, and the best part has been that &lt;em&gt;I&apos;ve contributed to real products and projects that will help form the infrastructure of this growing company.&lt;/em&gt; The people here are so friendly! And, there&apos;s free chocolate.</source>
         <target>今年夏天在HealthTap工作是一个伟大的经验。我立即加入一些很酷的项目，虽然一开始有一些压力，但也有真正的奖励和授权。我学习了很多，最好的部分是，&lt;em&gt;我已经贡献真正的产品和项目，这将有助于形成这个成长中的公司的基础设施。&lt;/em&gt;这里的人是如此友好！并且，还有免费的巧克力。</target>
       </trans-unit>
@@ -3726,7 +3726,7 @@
         <source>Arianna Wassmann</source>
         <target>Arianna Wassmann</target>
       </trans-unit>
-      <trans-unit id="889" resname="r556283116" restype="string" datatype="ruby">
+      <trans-unit id="889" resname="r240814294" restype="string" datatype="ruby">
         <source>My time at HealthTap cannot be described as anything less than revolutionary. I have had the privilege of working with brilliant, passionate and innovative people from every field as we all strive to re-design the doctor-patient experience. &lt;em&gt;From challenging projects and meaningful mentorships to balcony lunches and physics-defying chairs, HealthTap has it all. :&#41;&lt;/em&gt;</source>
         <target>我在HealthTap的时间不能说是革命性的。我有幸与来自各个领域的杰出，热情和创新的人一起工作，我们都努力重新设计医生-患者体验。&lt;em&gt;从挑战性的项目和有意义的导师，阳台午餐和物理辩论椅子，HealthTap有这一切。:&#41;&lt;/em&gt;</target>
       </trans-unit>
@@ -3738,7 +3738,7 @@
         <source>Sidharth Menon</source>
         <target>Sidharth Menon</target>
       </trans-unit>
-      <trans-unit id="893" resname="r693764615" restype="string" datatype="ruby">
+      <trans-unit id="893" resname="r410948419" restype="string" datatype="ruby">
         <source>My internship at HealthTap has not only exposed me to the fabled &amp;quot;startup experience&amp;quot;, but also given me the &lt;em&gt;opportunity to be part of a team that aims to change the world.&lt;/em&gt; The energy around the office is nothing short of infectious, and I&apos;ve learned so much in the little time that I&apos;ve spent here. I can honestly say that I love coming into work every single day.</source>
         <target>我在HealthTap的实习不仅让我看到了传说中的&amp;quot;初创公司体验&amp;quot，而且给予我机会成为一个旨在改变世界的团队的一部分。&lt;/em&gt;办公室周围的能量没有传染性，我在这里度过的小时间里学到了很多。我可以诚实地说，我喜欢每天的工作。</target>
       </trans-unit>
@@ -3754,7 +3754,7 @@
         <source>Heather Aholt</source>
         <target>Heather Aholt</target>
       </trans-unit>
-      <trans-unit id="897" resname="r222933024" restype="string" datatype="ruby">
+      <trans-unit id="897" resname="r445276289" restype="string" datatype="ruby">
         <source>There are so many reasons why I&apos;m excited to walk into the HealthTap office every morning. In many internship programs, mentors play a supportive role and teach students a lot. What makes the HealthTap internship program unique, though, is that I have been given some real, important responsibilties and I am therefore able to play a role in the growth of a movement. The people here are energetic and inspiring. &lt;em&gt;Every day, I&apos;m challenged to take charge of a project and see it through to completion.&lt;/em&gt; It&apos;s so exciting to work at HealthTap!</source>
         <target>有很多的原因解释为什么我每天早上进入HealthTap办公室很兴奋。在许多实习计划中，导师扮演支持角色，并教会学生很多。但是，HealthTap实习计划的独特之处在于，我获得了一些真正重要的责任，因此我能够在运动的成长中发挥作用。这里的人是充满活力和受到激励的。&lt;em&gt;每天，我都有责任承担一个项目，并完成任务。&lt;/em&gt;在HealthTap工作非常令人兴奋！</target>
       </trans-unit>
@@ -3766,7 +3766,7 @@
         <source>Jasmine Wei</source>
         <target>Jasmine Wei</target>
       </trans-unit>
-      <trans-unit id="900" resname="r210124690" restype="string" datatype="ruby">
+      <trans-unit id="900" resname="r385981652" restype="string" datatype="ruby">
         <source>HealthTap has a supportive community, either your boss, colleagues, or people from other groups are happy to provide help at anytime. &lt;em&gt;I&apos;ve learned a lot every week&lt;/em&gt; during my work here, I&apos;m appreciative for the opportunity.</source>
         <target>HealthTap有一个支持社区，您的老板，同事或其他团体的人都乐意随时提供帮助。&lt;em&gt;我在这里的工作的每一周&lt;/em&gt;都学到了很多，我很感激这个机会。</target>
       </trans-unit>
@@ -3842,15 +3842,15 @@
   </file>
   <file original="app/views/static_pages/ht_advisor_contract.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="914" resname="r1013103825" restype="string" datatype="ruby">
+      <trans-unit id="914" resname="r113535561" restype="string" datatype="ruby">
         <source>You&apos;ll receive a &lt;br/&gt;&amp;ldquo;Welcome&amp;rdquo; email that &lt;br/&gt;includes your:</source>
         <target>您将收到一封&lt;br/&gt;&amp;ldquo;欢迎&amp;rdquo; 电子邮件 &lt;br/&gt;i包括您的：</target>
       </trans-unit>
-      <trans-unit id="915" resname="r94273579" restype="string" datatype="ruby">
+      <trans-unit id="915" resname="r570937199" restype="string" datatype="ruby">
         <source>We&apos;ll send your clients &lt;br/&gt;your offer after you enter &lt;br/&gt;the following:</source>
         <target>&lt;br/&gt;输入以下内容后&lt;br/&gt;我们会向您的客户发送您的优惠：</target>
       </trans-unit>
-      <trans-unit id="916" resname="r151704033" restype="string" datatype="ruby">
+      <trans-unit id="916" resname="r319658700" restype="string" datatype="ruby">
         <source>We&apos;ll follow up &lt;br/&gt;with an email to your &lt;br/&gt;clients to:</source>
         <target>我们会跟进&lt;br/&gt;一封电子邮件给您的&lt;br/&gt;客户：</target>
       </trans-unit>
@@ -4955,11 +4955,11 @@
         <source>Top U.S. Licensed Doctor</source>
         <target>顶部拥有美国执业执照的医生</target>
       </trans-unit>
-      <trans-unit id="1152" resname="r888794239" restype="string" datatype="ruby">
+      <trans-unit id="1152" resname="r261196515" restype="string" datatype="ruby">
         <source>Primary care&lt;br&gt;on call</source>
         <target>普通门诊&lt;br&gt;随传随到</target>
       </trans-unit>
-      <trans-unit id="1153" resname="r760669751" restype="string" datatype="ruby">
+      <trans-unit id="1153" resname="r729470944" restype="string" datatype="ruby">
         <source>Specialist of&lt;br&gt;your choice</source>
         <target>您选择的&lt;br&gt;专家</target>
       </trans-unit>
@@ -5055,7 +5055,7 @@
         <source>Update PayPal information</source>
         <target>更新PayPal信息</target>
       </trans-unit>
-      <trans-unit id="1180" resname="r250431722" restype="string" datatype="ruby">
+      <trans-unit id="1180" resname="r398376953" restype="string" datatype="ruby">
         <source>If you have any questions or feedback, please %{open_link}contact our Quality Care team%{close_link}&lt;strong&gt;or call us at 650-376-6110.&lt;/strong&gt; We’re here to listen and help :&#41;</source>
         <target>如果您有任何问题或反馈，请%{open_link}与我们的质量保证团队联系{%{close_link} &lt;strong&gt;或致电650-376-6110。&lt;/strong&gt;我们在这里倾听和帮助:&#41;</target>
       </trans-unit>
@@ -5462,7 +5462,7 @@
   </file>
   <file original="app/views/general_mailer/share_app_by_expert.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1264" resname="r452589294" restype="string" datatype="ruby">
+      <trans-unit id="1264" resname="r778988540" restype="string" datatype="ruby">
         <source>I just recommended &lt;b&gt;%{app}&lt;/b&gt; on HealthTap and think that you should try it out.</source>
         <target>我刚刚在HealthTap上推荐了&lt;b&gt;%{app}&lt;/b&gt;，并认为您应该尝试一下。</target>
       </trans-unit>
@@ -5574,7 +5574,7 @@
         <source>%{expert} just commented on %{app}, an %{source} app that you reviewed.</source>
         <target>%{expert}刚刚对您评论过的%{app}%{app}应用程序发表了评论。</target>
       </trans-unit>
-      <trans-unit id="1289" resname="r465846240" restype="string" datatype="ruby">
+      <trans-unit id="1289" resname="r615373674" restype="string" datatype="ruby">
         <source>See what &lt;he/she&gt; has to say</source>
         <target>查看&lt;he/she&gt;说了什么</target>
       </trans-unit>
@@ -6014,7 +6014,7 @@
         <source>ACCEPT</source>
         <target>接受</target>
       </trans-unit>
-      <trans-unit id="1375" resname="r622664757" restype="string" datatype="ruby">
+      <trans-unit id="1375" resname="r547255482" restype="string" datatype="ruby">
         <source>&lt;span style=&apos;white-space:nowrap;word-break: keep-all;&apos; &gt;SUGGEST&lt;/span&gt; &lt;span style=&apos;white-space:nowrap;word-break: keep-all;&apos; &gt;INTRO&lt;/span&gt;</source>
         <target>&lt;span style=’white-space:nowrap;word-break: keep-all;’ &gt;建议&lt;/span&gt; &lt;span style=’white-space:nowrap;word-break: keep-all;’ &gt;介绍&lt;/span&gt;</target>
       </trans-unit>
@@ -6030,11 +6030,11 @@
   </file>
   <file original="app/views/general_mailer/partials/feelgood/_signatures.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1378" resname="r679092888" restype="string" datatype="ruby">
+      <trans-unit id="1378" resname="r307480594" restype="string" datatype="ruby">
         <source>&lt;p&gt;Ron Gutman&lt;br/&gt;Founder and CEO&lt;/p&gt;</source>
         <target>&lt;p&gt;Ron Gutman&lt;br/&gt;创始人兼CEO &lt;/p&gt;</target>
       </trans-unit>
-      <trans-unit id="1379" resname="r884047761" restype="string" datatype="ruby">
+      <trans-unit id="1379" resname="r867789757" restype="string" datatype="ruby">
         <source>&lt;p&gt;Dr. Geoffrey Rutledge, MD, PhD&lt;br/&gt;Chief Medical Officer&lt;p&gt;</source>
         <target>&lt;p&gt;Geoffrey Rutledge医生, 医学博士&lt;br/&gt;首席医务官&lt;p&gt;</target>
       </trans-unit>
@@ -6082,7 +6082,7 @@
   </file>
   <file original="app/views/general_mailer/partials/enterprise/_signup_60.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1389" resname="r67809495" restype="string" datatype="ruby">
+      <trans-unit id="1389" resname="r1020828159" restype="string" datatype="ruby">
         <source>You can now &lt;strong&gt;begin your journey toward health and happiness&lt;/strong&gt;</source>
         <target>您现在可以&lt;strong&gt;开始健康和快乐的旅程&lt;/strong&gt;</target>
       </trans-unit>
@@ -6266,7 +6266,7 @@
         <source>Offset the cost in high-deductible plans</source>
         <target>抵消在高免赔额医疗保险的花费</target>
       </trans-unit>
-      <trans-unit id="1423" resname="r632119697" restype="string" datatype="ruby">
+      <trans-unit id="1423" resname="r493902595" restype="string" datatype="ruby">
         <source>Access over %{static_doctors_count} top doctors&amp;mdash;24/7 on any mobile device or computer</source>
         <target>在任何移动设备或计算机上全天24小时访问＃{static_doctors_count}位顶级医生&amp;mdash</target>
       </trans-unit>
@@ -6584,7 +6584,7 @@
   </file>
   <file original="app/views/general_mailer/partials/_contact_support.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1489" resname="r563025615" restype="string" datatype="ruby">
+      <trans-unit id="1489" resname="r285486746" restype="string" datatype="ruby">
         <source>If for any reason you weren’t completely delighted with the experience, please %{open_link}contact our Quality Care team%{close_link} &lt;strong&gt;or call us at %{phone}&lt;/strong&gt;.</source>
         <target>如果出于任何原因您对此体验不满意，请%{open_link}与我们的质量保证团队联系{%{close_link} &lt;strong&gt;或致电%{phone} &lt;/strong&gt;与我们联系。</target>
       </trans-unit>
@@ -6776,7 +6776,7 @@
         <source>If you are not interested in receiving the newsletter, %{open_link}click here to unsubscribe%{close_link}</source>
         <target>如果您不想收到通讯，%{open_link}点击这里取消订购%{close_link}</target>
       </trans-unit>
-      <trans-unit id="1528" resname="r310517288" restype="string" datatype="ruby">
+      <trans-unit id="1528" resname="r70729253" restype="string" datatype="ruby">
         <source>Here are a few ways you can make the&lt;br&gt;most out of HealthTap for free!</source>
         <target>这里有几种方法可以让&lt;br&gt;最有效地免费使用HealthTap！</target>
       </trans-unit>
@@ -6832,23 +6832,23 @@
   </file>
   <file original="app/views/general_mailer/member_welcome_password.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1536" resname="r219021624" restype="string" datatype="ruby">
+      <trans-unit id="1536" resname="r472988984" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Access the world&apos;s leading online knowledgebase&lt;/strong&gt; of doctor-created health information. We&apos;re committed to helping you feel good!</source>
         <target>&lt;strong&gt;访问医生创建的世界级领先的在线知识库&lt;/strong&gt;的健康信息。我们致力于帮助您feel good！</target>
       </trans-unit>
-      <trans-unit id="1537" resname="r998415530" restype="string" datatype="ruby">
+      <trans-unit id="1537" resname="r848869956" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Get beautiful, bite-sized tips of health information&lt;/strong&gt; created by doctors, personalized for you.</source>
         <target>&lt;strong&gt;获得美丽的，很小的医生为您创建的个性化的健康信息&lt;/strong&gt;小贴士。</target>
       </trans-unit>
-      <trans-unit id="1538" resname="r997081439" restype="string" datatype="ruby">
+      <trans-unit id="1538" resname="r273624032" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Take action to achieve your health goals&lt;/strong&gt; with our proprietary, customizable doctor-created checklists!</source>
         <target>&lt;strong&gt;采取行动，用我们专有的，可定制的医生创建的清单来实现您的健康目标&lt;/strong&gt;！</target>
       </trans-unit>
-      <trans-unit id="1539" resname="r750417161" restype="string" datatype="ruby">
+      <trans-unit id="1539" resname="r11511262" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Keep your health records accessible, private, and secure&lt;/strong&gt; so that you can easily share them with doctors to get better care whenever necessary.</source>
         <target>&lt;strong&gt;保持您的健康记录是可访问的，私人的和安全的&lt;/strong&gt;，以便您可以轻松地与医生分享它们，如果有必要以获得更好的医护。</target>
       </trans-unit>
-      <trans-unit id="1540" resname="r267396235" restype="string" datatype="ruby">
+      <trans-unit id="1540" resname="r479798726" restype="string" datatype="ruby">
         <source>Need to talk to a doctor &lt;strong&gt;now&lt;/strong&gt;? Connect with a Primary Care Physician instantly through this special one-time offer!</source>
         <target>需要与医生&lt;strong&gt;立刻&lt;/strong&gt;交谈吗？通过这个特殊的一次性优惠，立即连接普通门诊医师！</target>
       </trans-unit>
@@ -6960,11 +6960,11 @@
         <source>Congratulations on taking the first step in managing your health and feeling good every day by becoming a HealthTap Prime member!</source>
         <target>恭喜您通过成为HealthTap Prime会员，采取每天管理您的健康和feel good的第一步！</target>
       </trans-unit>
-      <trans-unit id="1561" resname="r264794976" restype="string" datatype="ruby">
+      <trans-unit id="1561" resname="r785405056" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Your trial extends through %{next_date}&lt;/strong&gt;. To continue your membership after this trial period, you don&apos;t need to do anything – your $%{price} payment at sign up will be applied to your first month&apos;s subscription. If, for any reason, you don&apos;t wish to continue, simply cancel online before %{next_date} and your first month&apos;s payment of $%{price} will be refunded to you.</source>
         <target>&lt;strong&gt;您的试用期延伸到%{next_date} &lt;/strong&gt;。要在此试用期后继续您的会员资格，您不需要执行任何操作 - 您在注册时的$%{price}付款将用于您的第一个月的订购。如果由于任何原因，您不想继续，只需在%{next_date}之前在线取消，您的第一个月的付款$%{price}将退还给您。</target>
       </trans-unit>
-      <trans-unit id="1562" resname="r313391428" restype="string" datatype="ruby">
+      <trans-unit id="1562" resname="r386182323" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Your free trial expires on %{next_date}&lt;/strong&gt;. After the free trial period, you&apos;ll be automatically charged $%{price} per month for the service. If, for any reason, you don&apos;t wish to continue please %{open_link}cancel the service%{close_link} before %{next_date}.</source>
         <target>&lt;strong&gt;您的试用期到%{next_date} &lt;/strong&gt;。免费试用期后，系统会自动向您收取该服务每月$%{price}的费用。如果由于任何原因，您不希望继续，请在%{next_date}之前%{open_link}取消服务%{close_link}。</target>
       </trans-unit>
@@ -7044,7 +7044,7 @@
         <source>Before you go, we have have a special offer you may be interested in:</source>
         <target>在您离开之前，我们有一个您可能感兴趣的特别优惠：</target>
       </trans-unit>
-      <trans-unit id="1583" resname="r164450893" restype="string" datatype="ruby">
+      <trans-unit id="1583" resname="r31957154" restype="string" datatype="ruby">
         <source>For a limited-time only, we&apos;re offering &lt;strong&gt;doctor consults without a subscription at a special discount&lt;/strong&gt; with our new %{open_link}Prime Bundles%{close_link}! Now, you can buy individual consults for you and your loved ones, without committing to a monthly subscription. It&apos;s a great deal, and won&apos;t be available for long!</source>
         <target>我们将限时提供我们新推出的%{open_link}Prime绑定%{close_link}，提供&lt;strong&gt;没有特别折扣订购的医生咨询&lt;/strong&gt;！现在，您可以为您和您的亲人购买个人咨询，而不必承诺每月订购。这是非常划算的，但是不会提供很长的时间！</target>
       </trans-unit>
@@ -7128,11 +7128,11 @@
   </file>
   <file original="app/views/general_mailer/member_question_removed.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1597" resname="r641901963" restype="string" datatype="ruby">
+      <trans-unit id="1597" resname="r384457466" restype="string" datatype="ruby">
         <source>&lt;strong style=&quot;font-weight:400;&quot; &gt;Be easy to understand:&lt;/strong&gt; Questions must be in English, easy to understand, and about health or wellness topics.</source>
         <target>&lt;strong style=”font-weight:400;” &gt;易于理解：&lt;/strong&gt;问题必须用英语，易于理解，以及关于健康或健康话题。</target>
       </trans-unit>
-      <trans-unit id="1598" resname="r673890942" restype="string" datatype="ruby">
+      <trans-unit id="1598" resname="r724618421" restype="string" datatype="ruby">
         <source>&lt;strong style=&quot;font-weight:400;&quot; &gt;Check spelling of words and medicines:&lt;/strong&gt; Medications in different countries use different names, so be sure to include the generic name of the medication. Our experts are U.S.-licensed doctors and rarely answer questions about uniquely foreign medications they are not familiar with, or about hospitals or procedures in other countries that they have not visited.</source>
         <target>&lt;strong style=”font-weight:400;” &gt;检查单词和药物的拼写：&lt;/strong&gt;不同国家/地区的药物使用不同的名称，因此请务必包含药物的通用名称。我们的专家是拥有美国执业执照的医生，很少回答关于他们不熟悉的国外独特的药物，或他们没有访问的其他国家的医院或临床操作的问题。</target>
       </trans-unit>
@@ -7140,27 +7140,27 @@
         <source>Start your FREE trial</source>
         <target>开始您的免费试用</target>
       </trans-unit>
-      <trans-unit id="1600" resname="r776454932" restype="string" datatype="ruby">
+      <trans-unit id="1600" resname="r728929077" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Unlimited consults&lt;/strong&gt; with doctors 24/7 using a PC or any mobile device!</source>
         <target>使用电脑或任何移动设备24/7全天候与医生&lt;strong&gt;无限咨询&lt;/strong&gt;！</target>
       </trans-unit>
-      <trans-unit id="1601" resname="r107846971" restype="string" datatype="ruby">
+      <trans-unit id="1601" resname="r648642929" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Total peace of mind&lt;/strong&gt; with a doctor always &quot;on call&quot; for you and your loved ones</source>
         <target>&lt;strong&gt;完全放心的&lt;/strong&gt;为您和您的亲人经常与“随传随到”的医生</target>
       </trans-unit>
-      <trans-unit id="1602" resname="r864362339" restype="string" datatype="ruby">
+      <trans-unit id="1602" resname="r237744669" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Health checklists personalized by doctors&lt;/strong&gt; just for you or your family</source>
         <target>&lt;strong&gt;医生&lt;/strong&gt;只为您或您的家人提供的个性化的健康清单</target>
       </trans-unit>
-      <trans-unit id="1603" resname="r646742337" restype="string" datatype="ruby">
+      <trans-unit id="1603" resname="r467990956" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Prescriptions, referrals, and more&lt;/strong&gt;</source>
         <target>&lt;strong&gt;处方，转诊等&lt;/strong&gt;</target>
       </trans-unit>
-      <trans-unit id="1604" resname="r627748260" restype="string" datatype="ruby">
+      <trans-unit id="1604" resname="r74212451" restype="string" datatype="ruby">
         <source>&lt;strong style=&quot;font-weight:400;&quot; &gt;Ask meaningful questions:&lt;/strong&gt; Questions must include enough detail to be meaningful and answerable. Naming a topic &#40;for example, “headache?”&#41; without asking something specific, doesn,t give the doctor enough information to accurately answer. You can consider mentioning gender, duration, age range, or body area affected.</source>
         <target>&lt;strong style=”font-weight:400;” &gt;询问有意义的问题：&lt;/strong&gt;问题必须包含足够有意义的和有责任的详细信息。命名一个话题（例如，“头痛？”）而不询问具体的东西，不给医生准确地回答的足够信息。您可以考虑提到有影响的性别，持续时间，年龄范围或身体区域。</target>
       </trans-unit>
-      <trans-unit id="1605" resname="r272142849" restype="string" datatype="ruby">
+      <trans-unit id="1605" resname="r951118332" restype="string" datatype="ruby">
         <source>&lt;strong style=&quot;font-weight:400;&quot; &gt;Stay private:&lt;/strong&gt; Do not include your name, names of other people, or doctors, names.</source>
         <target>&lt;strong style=”font-weight:400;” &gt;保持私密：&lt;/strong&gt;不要包括您的姓名，其他人的姓名或医生，姓名。</target>
       </trans-unit>
@@ -7216,7 +7216,7 @@
         <source>Good news! %{agree_expert} , a %{specialist_name}  in our Medical Expert Network, agrees with %{expert}’s  answer you&apos;re following.</source>
         <target>好消息！我们的医学专家网络中的%{agree_expert}，%{specialist_name}同意您所关注的%{expert}的回答。</target>
       </trans-unit>
-      <trans-unit id="1616" resname="r543016509" restype="string" datatype="ruby">
+      <trans-unit id="1616" resname="r479798726" restype="string" datatype="ruby">
         <source>Need to talk to a doctor &lt;strong&gt;now&lt;strong&gt;? Connect with a Primary Care Physician instantly through this special one-time offer!</source>
         <target>需要与医生&lt;strong&gt;立刻&lt;/strong&gt;交谈吗？通过这个特殊的一次性优惠，立即连接普通门诊医师！</target>
       </trans-unit>
@@ -7649,7 +7649,7 @@
   </file>
   <file original="app/views/general_mailer/member_marketing_welcome_prime.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1703" resname="r640416995" restype="string" datatype="ruby">
+      <trans-unit id="1703" resname="r35243066" restype="string" datatype="ruby">
         <source>&lt;strong&gt;As many consults&lt;/strong&gt; with doctors as needed, 24/7 on any PC or mobile device!</source>
         <target>在任何个人电脑或移动设备上24/7全天候，&lt;strong&gt;根据医生需要的许多咨询&lt;/strong&gt;！</target>
       </trans-unit>
@@ -7918,11 +7918,11 @@
   </file>
   <file original="app/views/general_mailer/member_invited_nux.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1760" resname="r617903912" restype="string" datatype="ruby">
+      <trans-unit id="1760" resname="r910197885" restype="string" datatype="ruby">
         <source>Your friend invited you to join HealthTap and has &lt;strong&gt;gifted you $5&lt;/strong&gt; to use towards a live video or text consult with a top U.S. licensed doctor!</source>
         <target>您的朋友邀请您加入HealthTap，并已&lt;strong&gt;赠送您$5美元&lt;/strong&gt;，用于与美国顶级拥有执业执照医生的进行实时视频或文本咨询！</target>
       </trans-unit>
-      <trans-unit id="1761" resname="r355394207" restype="string" datatype="ruby">
+      <trans-unit id="1761" resname="r435311963" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Ready to redeem your free $5 gift?&lt;/strong&gt; All you have to do is use this promo code at checkout: %{code} or click the button below.</source>
         <target>&lt;strong&gt;准备好免费兑换$5的礼品&lt;/strong&gt;：您只需在结帐时使用此优惠码即可：%{code} 或点击下面的按钮。</target>
       </trans-unit>
@@ -8226,7 +8226,7 @@
         <source>Fill Out Required Information</source>
         <target>填写所需信息</target>
       </trans-unit>
-      <trans-unit id="1822" resname="r516232657" restype="string" datatype="ruby">
+      <trans-unit id="1822" resname="r777144558" restype="string" datatype="ruby">
         <source>If you have any questions or feedback, please %{open_link}contact our Quality Care team%{close_link} &lt;strong&gt;or call us at %{number}&lt;/strong&gt;. We’re here to listen and help :&#41;</source>
         <target>如果您有任何意见或反馈，请%{open_link}联系我们质量保证团队%{close_link} &lt;strong&gt;或致电我们%{number}&lt;/strong&gt;.我们在这里倾听和帮助:&#41;</target>
       </trans-unit>
@@ -8246,11 +8246,11 @@
   </file>
   <file original="app/views/general_mailer/member_consult_followup_prime.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1825" resname="r177501776" restype="string" datatype="ruby">
+      <trans-unit id="1825" resname="r793117833" restype="string" datatype="ruby">
         <source>We’re delighted that your virtual consult with %{expert} was a success! Having a primary care doctor on call, 24/7 provides a level of care unlike any other service. You can now follow up with a &lt;strong&gt;specialist&lt;/strong&gt; on HealthTap Concierge–where you can get second opinions, schedule online appointments, get prescriptions/refills, and more. You can even invite your personal doctor to use HealthTap Concierge for virtual consults with you.</source>
         <target>我们很高兴您与%{expert}的在线咨询取得了成功！有一名普通门诊医生随传随到，不像任何其他服务，全天24小时提供了一级医护。您现在可以在HealthTap贵宾台上可以&lt;strong&gt;跟进&lt;/strong&gt;专家，您可以在其中获取第二意见，安排在线预约，获取处方/再配方等。您甚至可以邀请您的私人医生使用HealthTap贵宾台与您进行在线咨询。</target>
       </trans-unit>
-      <trans-unit id="1826" resname="r471816485" restype="string" datatype="ruby">
+      <trans-unit id="1826" resname="r232969215" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Remember:&lt;/strong&gt; as a Prime member you get a &lt;strong&gt;&lt;i&gt;special discount&lt;/strong&gt;&lt;/i&gt; on consultations with Concierge doctors. We’ve even matched you with a suggested specialist; simply schedule an appointment to get started.</source>
         <target>&lt;strong&gt;记住：&lt;/strong&gt;作为Prime会员，在与贵宾台医生咨询时可获得&lt;strong&gt;&lt;i&gt;特别折扣&lt;/strong&gt;&lt;/i&gt;。我们甚至建议与您相匹配的专家；只需安排一次预约即可开始。</target>
       </trans-unit>
@@ -8282,7 +8282,7 @@
   </file>
   <file original="app/views/general_mailer/member_condition_added.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1834" resname="r192995691" restype="string" datatype="ruby">
+      <trans-unit id="1834" resname="r17468662" restype="string" datatype="ruby">
         <source>Want to talk to a doctor about your condition &lt;strong&gt;now&lt;/strong&gt;? Connect with a Primary Care Physician instantly through this special one-time offer!</source>
         <target>&lt;strong&gt;现在&lt;/strong&gt;想与医生交流您的情况吗?通过这个特殊的一次性优惠，立即连接普通门诊医师！</target>
       </trans-unit>
@@ -8294,7 +8294,7 @@
         <source>Create your personal Doctor Care-Team and have top specialists on-call just for you.</source>
         <target>创建您的个人医生医护团队，并有随传随到的顶级专家为您服务。</target>
       </trans-unit>
-      <trans-unit id="1836" resname="r618328842" restype="string" datatype="ruby">
+      <trans-unit id="1836" resname="r1056323398" restype="string" datatype="ruby">
         <source>Whether you need health advice at this moment or not, you’ll take comfort in knowing that &lt;i&gt;when&lt;/i&gt; you need to talk to a doctor, you’ve already assembled an expert Care-Team to provide you the support and guidance you need – right from your phone or computer.</source>
         <target>无论您目前是否需要健康建议，您都会安心地知道&lt;i&gt;何时&lt;/i&gt;需要与医生交谈，您已经组建了一个专业的医护团队为您提供支持和您需要的指导 – 直接从您的手机或计算机。</target>
       </trans-unit>
@@ -8562,7 +8562,7 @@
         <source>Your secure private message to %{expert} has been sent. We will notify you as soon as %{expert} responds.</source>
         <target>您的安全私人信息已发送到%{expert}。我们会在%{expert}回复后通知您。</target>
       </trans-unit>
-      <trans-unit id="1895" resname="r574381326" restype="string" datatype="ruby">
+      <trans-unit id="1895" resname="r989101558" restype="string" datatype="ruby">
         <source>Typically most messages are reviewed within &lt;strong&gt;24 hours&lt;/strong&gt;, although in some cases it may take longer.</source>
         <target>通常，大多数邮件会在&lt;strong&gt; 24小时&lt;/strong&gt;内审核，但在某些情况下可能需要更长时间。</target>
       </trans-unit>
@@ -8818,11 +8818,11 @@
   </file>
   <file original="app/views/general_mailer/member_concierge_bounce_payment_test_drive.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1947" resname="r47131033" restype="string" datatype="ruby">
+      <trans-unit id="1947" resname="r604391924" restype="string" datatype="ruby">
         <source>We saw you were interested in talking with a doctor but stopped just short of starting your consult. To help you get started we’re offering you a &lt;strong&gt;New Member Discount&lt;/strong&gt; on your first consult—&lt;strong&gt;only %{test_drive_price}&lt;/strong&gt; to instantly connect with a Primary Care doctor for a live voice, video or text consult &#40;a $99/month value!&#41;.</source>
         <target>我们看到您有兴趣与医生交谈，但是却停止了您刚开始的咨询。为了帮助您开始使用，我们会在您第一次咨询&lt;strong&gt;只有%{test_drive_price} &lt;/strong&gt;上为您提供&lt;strong&gt;新会员折扣&lt;/strong&gt;，即时与普通门诊医生进行实时视频或文本咨询&#40;每月只需$99!&#41;。</target>
       </trans-unit>
-      <trans-unit id="1948" resname="r278228925" restype="string" datatype="ruby">
+      <trans-unit id="1948" resname="r696458057" restype="string" datatype="ruby">
         <source>Discover the convenience and value of “going to the doctor” right from your phone or computer. Try today for &lt;strong&gt;only %{test_drive_price}&lt;/strong&gt; and see how easy talking to a doctor can be.</source>
         <target>从您的手机或计算机发现“去找医生”的方便和价值。立刻尝试&lt;strong&gt;只有%{test_drive_price} &lt;/strong&gt;并看看与医生交谈是多么简单。</target>
       </trans-unit>
@@ -8950,7 +8950,7 @@
   </file>
   <file original="app/views/general_mailer/member_concierge_appointment_cancelled_bydoctor.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1974" resname="r353330494" restype="string" datatype="ruby">
+      <trans-unit id="1974" resname="r629687237" restype="string" datatype="ruby">
         <source>We&apos;re very sorry, but %{expert} had to cancel the Virtual Appointment on &lt;strong&gt;%{date}&lt;/strong&gt; at &lt;strong&gt;%{time} %{timezone}&lt;/strong&gt;. We’re sorry for the inconvenience and we want to be sure you receive the care you need. Please reschedule your appointment for another time that’s convenient for you.</source>
         <target>很抱歉，%{expert}必须取消在&lt;strong&gt;%{date}&lt;/strong&gt;在&lt;strong&gt;%{time}%{timezone}&lt;/strong&gt;在线预约。对于由此带来的不便我们深表歉意，并希望您能获得所需要的医护。在您方便的另一个时间，请重新安排您的预约。</target>
       </trans-unit>
@@ -9822,7 +9822,7 @@
   </file>
   <file original="app/views/general_mailer/group_vip.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2028" resname="r629392222" restype="string" datatype="ruby">
+      <trans-unit id="2028" resname="r149075859" restype="string" datatype="ruby">
         <source>%{person} said: &lt;br&gt;%{thing}</source>
         <target>%{person} 说过：&lt;br&gt;%{thing}</target>
       </trans-unit>
@@ -9830,7 +9830,7 @@
   </file>
   <file original="app/views/general_mailer/golden_lead_expert_recruit.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2029" resname="r51745185" restype="string" datatype="ruby">
+      <trans-unit id="2029" resname="r487837888" restype="string" datatype="ruby">
         <source>I&apos;d like to personally invite you to %{open_link}be featured for free on HealthTap,%{close_link} where you can gain recognition for your expertise and help %{actor} and all your medical school colleagues win the competition.</source>
         <target>我想亲自邀请您在HealthTap上参加免费专题%{open_link}，%{close_link}您可以获得您的专业知识的认可并获得帮助%{actor}您所有的医学院发同事赢得比赛。</target>
       </trans-unit>
@@ -10495,7 +10495,7 @@
         <source>Enter your password</source>
         <target>输入您的密码</target>
       </trans-unit>
-      <trans-unit id="2177" resname="r609349914" restype="string" datatype="ruby">
+      <trans-unit id="2177" resname="r897775056" restype="string" datatype="ruby">
         <source>%{date_format}</source>
         <target>%{date_format}</target>
       </trans-unit>
@@ -10679,7 +10679,7 @@
         <source>Private and secure</source>
         <target>私人和安全</target>
       </trans-unit>
-      <trans-unit id="2214" resname="r520401677" restype="string" datatype="ruby">
+      <trans-unit id="2214" resname="r987868893" restype="string" datatype="ruby">
         <source>Single sign-on to %{org} resources</source>
         <target>单一的登录到 %{org} 资源</target>
       </trans-unit>
@@ -11718,7 +11718,7 @@
         <source>HealthTap is the best way to quickly find trusted, reputable doctor answers to health questions anytime, anywhere.</source>
         <target>HealthTap是在任何时间，任何地点快速找到值得信赖的，有声誉的医生回答健康问题的最佳方式。</target>
       </trans-unit>
-      <trans-unit id="2454" resname="r116957056" restype="string" datatype="ruby">
+      <trans-unit id="2454" resname="r569677691" restype="string" datatype="ruby">
         <source>Free health answers, tips, posts, and updates from %{person} and tens of thousands of other U.S.-licensed doctors on HealthTap.</source>
         <target>来自%{person}和HealthTap上数万名拥有美国执业执照医生的免费的健康回答，小贴士，信息和更新。</target>
       </trans-unit>
@@ -11938,11 +11938,11 @@
         <source>%{name}, %{credentials} sent you a secure health file. See the file.</source>
         <target>%{name}，%{credentials}向您发送了安全健康文件。查看文件。</target>
       </trans-unit>
-      <trans-unit id="2504" resname="r259430873" restype="string" datatype="ruby">
+      <trans-unit id="2504" resname="r827830087" restype="string" datatype="ruby">
         <source>&lt;b&gt;You have been added to %{person}&lt;/b&gt;&apos;s network.</source>
         <target>&lt;b&gt;您已添加到%{person} &lt;/b&gt;的网络。</target>
       </trans-unit>
-      <trans-unit id="2505" resname="r321170827" restype="string" datatype="ruby">
+      <trans-unit id="2505" resname="r697653635" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{expert}&lt;/b&gt; added you to their network on HealthTap.</source>
         <target>&lt;b&gt;%{expert}&lt;/b&gt;在HealthTap上将您添加到了他们的网络</target>
       </trans-unit>
@@ -11954,7 +11954,7 @@
         <source>We&apos;re sorry; %{person} isn&apos;t available at the moment. We&apos;ve issued you a full refund so you can ask another doctor.</source>
         <target>我们很抱歉；%{person}目前无法使用。我们已向您发出全额退款，因此您可以询问另一名医生。</target>
       </trans-unit>
-      <trans-unit id="2508" resname="r1026479184" restype="string" datatype="ruby">
+      <trans-unit id="2508" resname="r979977" restype="string" datatype="ruby">
         <source>%{referrer} has referred you to %{referred_to}. Get in touch with %{referred_to}.</source>
         <target>%{referrer}已推荐您到%{referred_to}。与%{referred_to}联系。</target>
       </trans-unit>
@@ -12422,19 +12422,19 @@
   </file>
   <file original="app/models/person_notification.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2636" resname="r975795" restype="string" datatype="ruby">
+      <trans-unit id="2636" resname="r551630369" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; suggested one of your answers to another patient in need. &lt;span style=&apos;color:&#35;039;&apos;&gt;Check it out.&lt;/span&gt;</source>
         <target>&lt;b&gt;%{person}&lt;/b&gt;向另一位有需要的患者推荐了您的回答。&lt;span style=’color:&#35;039;’&gt;一探究竟。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2637" resname="r59984491" restype="string" datatype="ruby">
+      <trans-unit id="2637" resname="r714963739" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; sent you an appointment request. &lt;span style=&apos;color:&#35;039;&apos;&gt;Schedule an appointment.&lt;/span&gt;</source>
         <target>&lt;b&gt;%{person}&lt;/b&gt;向您发送了预约请求。&lt;span style=’color:&#35;039;’&gt;安排预约。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2638" resname="r854152216" restype="string" datatype="ruby">
+      <trans-unit id="2638" resname="r945439377" restype="string" datatype="ruby">
         <source>Congratulations! %{person} recommended you. &lt;span style=&apos;color:&#35;039;&apos;&gt;See the recommendation.&lt;/span&gt;</source>
         <target>恭喜！%{person}推荐了您。&lt;span style=’color:&#35;039;’&gt;查看推荐。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2639" resname="r59858098" restype="string" datatype="ruby">
+      <trans-unit id="2639" resname="r171087448" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; commented on your post</source>
         <target>&lt;b&gt;%{person}&lt;/b&gt;评论了您的帖子</target>
       </trans-unit>
@@ -12442,11 +12442,11 @@
         <source>%{person} commented on a post you&apos;re interested in</source>
         <target>%{person}评论了您感兴趣的帖子</target>
       </trans-unit>
-      <trans-unit id="2641" resname="r342367966" restype="string" datatype="ruby">
+      <trans-unit id="2641" resname="r1057950627" restype="string" datatype="ruby">
         <source>&lt;div style=&apos;padding-bottom:5px&apos;&gt;&lt;b&gt;Congrats! You&apos;ve been awarded a trophy!&lt;/b&gt;&lt;/div&gt; &lt;div style=&apos;padding-bottom:5px&apos;&gt;&lt;b&gt;%{trophy}:&lt;/b&gt; &lt;i style=&apos;font-style: italic;&apos;&gt;%{trigger}&lt;/i&gt;&lt;/div&gt;%{msg}&lt;br&gt;&lt;a href=&apos;%{link}&apos;&gt;Unlock the next trophy %{trigger}! &amp;raquo;&lt;/a&gt;</source>
         <target>&lt;div style=&apos;padding-bottom:5px&apos;&gt;&lt;b&gt;恭喜！您已获得一个奖杯！&lt;/b&gt;&lt;/div&gt; &lt;div style=&apos;padding-bottom:5px&apos;&gt;&lt;b&gt;%{trophy}:&lt;/b&gt; &lt;i style=&apos;font-style: italic;&apos;&gt;%{trigger}&lt;/i&gt;&lt;/div&gt;%{msg}&lt;br&gt;&lt;a href=&apos;%{link}&apos;&gt;解锁下一个奖杯 %{trigger}!&amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="2642" resname="r363376047" restype="string" datatype="ruby">
+      <trans-unit id="2642" resname="r133146306" restype="string" datatype="ruby">
         <source>&lt;div style=&apos;padding-bottom:5px&apos;&gt;&lt;b&gt;Congrats! You&apos;ve been awarded a trophy!&lt;/b&gt;&lt;/div&gt; &lt;div style=&apos;padding-bottom:5px&apos;&gt;&lt;b&gt;%{trophy}:&lt;/b&gt; &lt;i style=&apos;font-style: italic;&apos;&gt;%{trigger}&lt;/i&gt;&lt;/div&gt;%{msg}&lt;br&gt;</source>
         <target>&lt;div style=&apos;padding-bottom:5px&apos;&gt;&lt;b&gt;恭喜！您已获得一个奖杯！&lt;/b&gt;&lt;/div&gt; &lt;div style=’padding-bottom:5px’&gt;&lt;b&gt;%{trophy}:&lt;/b&gt; &lt;i style=’font-style: italic;’&gt;%{trigger}&lt;/i&gt;&lt;/div&gt;%{msg}&lt;br&gt;</target>
       </trans-unit>
@@ -12454,7 +12454,7 @@
         <source>%{person} agreed with your post on HealthTap!</source>
         <target>%{person}赞同了您在HealthTap上的帖子！</target>
       </trans-unit>
-      <trans-unit id="2644" resname="r662203743" restype="string" datatype="ruby">
+      <trans-unit id="2644" resname="r1060294355" restype="string" datatype="ruby">
         <source>A HealthTap Scholar, &lt;b&gt;%{fn} %{ln},&lt;/b&gt; agrees with your tip! &lt;span style=&apos;color: 036&apos;&gt;Add more tips.&lt;/span&gt;</source>
         <target>一位HealthTap学者，&lt;b&gt;%{fn} %{ln},&lt;/b&gt;赞同您的小贴士！&lt;span style=&apos;color:036’&gt;更多小贴士。&lt;/span&gt;</target>
       </trans-unit>
@@ -12462,19 +12462,19 @@
         <source>%{person}, %{specialty}, agrees with your tip on %{tip_name}</source>
         <target>%{person}, %{specialty}, 同意您在%{tip_name}的小贴士</target>
       </trans-unit>
-      <trans-unit id="2646" resname="r497923549" restype="string" datatype="ruby">
+      <trans-unit id="2646" resname="r325995700" restype="string" datatype="ruby">
         <source>A HealthTap Scholar, &lt;b&gt;%{fn} %{ln},&lt;/b&gt; agrees with your answer! &lt;span style=&apos;color: 036&apos;&gt;Answer more questions.&lt;/span&gt;</source>
         <target>一位HealthTap学者，&lt;b&gt;%{fn} %{ln},&lt;/b&gt;赞同您的回答！&lt;span style=&apos;color:036’&gt;回答更多问题。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2647" resname="r570540398" restype="string" datatype="ruby">
+      <trans-unit id="2647" resname="r503332673" restype="string" datatype="ruby">
         <source>A HealthTap Scholar, &lt;b&gt;%{fn} %{ln},&lt;/b&gt; found your tip to be of exceptional quality! &lt;span style=&apos;color:036&apos;&gt;Add more tips.&lt;/span&gt;</source>
         <target>一位HealthTap学者，&lt;b&gt;%{fn} %{ln},&lt;/b&gt;发现您的小贴士有非常优秀的质量！&lt;span style=’color:036’&gt;添加更多小贴士。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2648" resname="r250858710" restype="string" datatype="ruby">
+      <trans-unit id="2648" resname="r142478958" restype="string" datatype="ruby">
         <source>A HealthTap Scholar, &lt;b&gt;%{fn} %{ln},&lt;/b&gt; found your post to be of exceptional quality! &lt;span style=&apos;color:036&apos;&gt;Publish more posts.&lt;/span&gt;</source>
         <target>一位HealthTap学者，&lt;b&gt;%{fn} %{ln},&lt;/b&gt;发现您的帖子有非常优秀的质量！&lt;span style=’color:036’&gt;发布更多帖子。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2649" resname="r831873787" restype="string" datatype="ruby">
+      <trans-unit id="2649" resname="r133643728" restype="string" datatype="ruby">
         <source>A HealthTap Scholar, &lt;b&gt;%{fn} %{ln},&lt;/b&gt; found your answer to be of exceptional quality! &lt;span style=&apos;color:036&apos;&gt;Answer more questions.&lt;/span&gt;</source>
         <target>一位HealthTap学者，&lt;b&gt;%{fn} %{ln},&lt;/b&gt;发现您的回答有非常优秀的质量！&lt;span style=’color:036’&gt;回答更多问题。&lt;/span&gt;</target>
       </trans-unit>
@@ -12486,7 +12486,7 @@
         <source>Someone thanked you for your tip on %{tip_name} on HealthTap.</source>
         <target>有人感谢您在HealthTap上对%{topic_name}的小贴士</target>
       </trans-unit>
-      <trans-unit id="2652" resname="r431497555" restype="string" datatype="ruby">
+      <trans-unit id="2652" resname="r486404308" restype="string" datatype="ruby">
         <source>Well done! &lt;b&gt;%{person}&lt;/b&gt; thanked you for answering a question. &lt;span style=&apos;color:&#35;039;&apos;&gt;See the question.&lt;/span&gt;</source>
         <target>很好！&lt;b&gt;%{person}&lt;/b&gt;感谢了您回答的问题。&lt;span style=’color:&#35;039;’&gt;查看问题。&lt;/span&gt;</target>
       </trans-unit>
@@ -12494,51 +12494,51 @@
         <source>Someone thanked you for your tip on %{subject} on HealthTap.</source>
         <target>有人感谢您在HealthTap上对%{subject}的小贴士</target>
       </trans-unit>
-      <trans-unit id="2654" resname="r476220902" restype="string" datatype="ruby">
+      <trans-unit id="2654" resname="r960578799" restype="string" datatype="ruby">
         <source>Well done! &lt;b&gt;%{person}&lt;/b&gt; sent you a personalized thank you note for answering a question. &lt;span style=&apos;color:&#35;039;&apos;&gt;See the thank you note.&lt;span style=&apos;color:&#35;039;&apos;&gt;</source>
         <target>很好！&lt;b&gt;%{person}&lt;/b&gt;为回答的问题向您发送了个性化的感谢信&lt;span style=’color:&#35;039;’&gt;查看感谢信。&lt;span style=&apos;color:&#35;039;&apos;&gt;</target>
       </trans-unit>
-      <trans-unit id="2655" resname="r981291859" restype="string" datatype="ruby">
+      <trans-unit id="2655" resname="r100986469" restype="string" datatype="ruby">
         <source>Well done! &lt;b&gt;%{person}&lt;/b&gt; sent you a personalized thank you note for answering a question. &lt;span style=&apos;color:&#35;039;&apos;&gt;Read the note.&lt;span style=&apos;color:&#35;039;&apos;&gt;</source>
         <target>很好！&lt;b&gt;%{person}&lt;/b&gt;为回答的问题向您发送了个性化的感谢信&lt;span style=’color:&#35;039;’&gt;阅读注意事项。&lt;span style=&apos;color:&#35;039;&apos;&gt;</target>
       </trans-unit>
-      <trans-unit id="2656" resname="r837868852" restype="string" datatype="ruby">
+      <trans-unit id="2656" resname="r140601189" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; just voted for you as a top doctor for &lt;b&gt;%{text}&lt;/b&gt;.  &lt;span style=&apos;color:&#35;039;&apos;&gt;See the competition.&lt;/span&gt;</source>
         <target>&lt;b&gt;%{person} &lt;/b&gt;刚刚投票给您作为&lt;b&gt;%{text} &lt;/b&gt;的顶级医生。&lt;span style=’color:&#35;039;’&gt;查看竞赛。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2657" resname="r537775884" restype="string" datatype="ruby">
+      <trans-unit id="2657" resname="r334408122" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; would like to ask you a question. Reply now to earn %{num_points} points and a boost to your DocScore. &lt;span style=&apos;color:&#35;039;&apos;&gt;Check it out.&lt;/span&gt;</source>
         <target>&lt;b&gt;%{person}&lt;/b&gt;希望询问您一个问题。现在回复以获得%{num_points}积分，并提高您的医者评分。&lt;span style=’color:&#35;039;’&gt;一探究竟。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2658" resname="r751401093" restype="string" datatype="ruby">
+      <trans-unit id="2658" resname="r461341939" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; would like to ask you a question. Reply now to earn %{num_credits} credits, %{num_points} points and a boost to your DocScore. &lt;span style=&apos;color:&#35;039;&apos;&gt;Check it out.&lt;/span&gt;</source>
         <target>&lt;b&gt;%{person}&lt;/b&gt;希望询问您一个问题。立刻回复以获得%{num_credits}信用，%{num_points}积分，并提高您的医者评分。&lt;span style=’color:&#35;039;’&gt;一探究竟。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2659" resname="r1023503513" restype="string" datatype="ruby">
+      <trans-unit id="2659" resname="r165309655" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; asked you for a clarification on your answer. Reply now to earn %{num_points} points and a boost to your DocScore. &lt;span style=&apos;color:&#35;039;&apos;&gt;Check it out.&lt;/span&gt;</source>
         <target>&lt;b&gt;%{person}&lt;/b&gt;要求您解释您的回答。现在回复以获得%{num_points}积分，并提高您的医者评分。&lt;span style=’color:&#35;039;’&gt;一探究竟。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2660" resname="r318304589" restype="string" datatype="ruby">
+      <trans-unit id="2660" resname="r93217577" restype="string" datatype="ruby">
         <source>Great news! &lt;b&gt;%{person}&lt;/b&gt; would like to ask you a question. Reply now to earn %{num_points} points and a boost to your DocScore. &lt;span style=&apos;color:&#35;039;&apos;&gt;Check it out.&lt;/span&gt;</source>
         <target>好消息！&lt;b&gt;%{person}&lt;/b&gt;希望询问您一个问题。现在回复以获得%{num_points}积分，并提高您的医者评分。&lt;span style=’color:&#35;039;’&gt;一探究竟。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2661" resname="r804460447" restype="string" datatype="ruby">
+      <trans-unit id="2661" resname="r444809737" restype="string" datatype="ruby">
         <source>Great news! &lt;b&gt;%{person}&lt;/b&gt; would like to ask you a question. Reply now to earn %{num_credits} credits, %{num_points} points and a boost to your DocScore. &lt;span style=&apos;color:&#35;039;&apos;&gt;Check it out.&lt;/span&gt;</source>
         <target>好消息！&lt;b&gt;%{person}&lt;/b&gt;希望询问您一个问题。立刻回复以获得%{num_credits}信用，%{num_points}积分，并提高您的医者评分。&lt;span style=’color:&#35;039;’&gt;一探究竟。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2662" resname="r331482360" restype="string" datatype="ruby">
+      <trans-unit id="2662" resname="r213575142" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{doctor}&lt;/b&gt; sent you a message. &lt;span style=&apos;color:&#35;039;&apos;&gt;Reply now.&lt;/span&gt;</source>
         <target>&lt;b&gt;%{person}&lt;/b&gt;向您发送了一条信息。&lt;span style=’color:&#35;039;’&gt;立刻回复。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2663" resname="r41171248" restype="string" datatype="ruby">
+      <trans-unit id="2663" resname="r391401610" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{doctor}&lt;/b&gt; &#40;%{credentials}%{place}&#41; sent you a secure health file. &lt;span style=&apos;color:&#35;039;&apos;&gt;Check it out.&lt;/span&gt;</source>
         <target>&lt;b&gt;%{doctor}&lt;/b&gt; &#40;%{credentials}%{place}&#41;向您发送了安全健康文件。&lt;span style=’color:&#35;039;’&gt;一探究竟。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2664" resname="r948037972" restype="string" datatype="ruby">
+      <trans-unit id="2664" resname="r673775337" restype="string" datatype="ruby">
         <source>We&apos;re sorry; &lt;b&gt;%{doctor}&lt;/b&gt; &#40;%{credentials} from %{place}&#41; isn&apos;t available at the moment. We&apos;ve issued you a full refund so you can ask another doctor.</source>
         <target>我们很抱歉；&lt;b&gt;%{doctor}&lt;/b&gt; &#40;%{credentials}从%{place}&#41;目前无法使用。我们已向您发出全额退款，因此您可以询问另一名医生。</target>
       </trans-unit>
-      <trans-unit id="2665" resname="r466949852" restype="string" datatype="ruby">
+      <trans-unit id="2665" resname="r395742777" restype="string" datatype="ruby">
         <source>We&apos;re sorry; &lt;b&gt;%{doctor}&lt;/b&gt; &#40;%{credentials}&#41; isn&apos;t available at the moment. We&apos;ve issued you a full refund so you can ask another doctor.</source>
         <target>我们很抱歉；&lt;b&gt;%{doctor}&lt;/b&gt; &#40;%{credentials}&#41;目前无法使用。我们已向您发出全额退款，因此您可以询问另一名医生。</target>
       </trans-unit>
@@ -12558,11 +12558,11 @@
         <source>%{referred_by} &#40;%{referred_by_creds}&#41; has referred you to %{referred_to} &#40;%{referred_to_creds}&#41;.</source>
         <target>%{referred_by}&#40;%{referred_by_creds}&#41;已将您引荐给%{referred_to}&#40;%{referred_to_creds}&#41;。</target>
       </trans-unit>
-      <trans-unit id="2670" resname="r864742540" restype="string" datatype="ruby">
+      <trans-unit id="2670" resname="r739025893" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; added you to their network on HealthTap.</source>
         <target>&lt;b&gt;%{person}&lt;/b&gt;在HealthTap上将您添加到了他们的网络</target>
       </trans-unit>
-      <trans-unit id="2671" resname="r242215632" restype="string" datatype="ruby">
+      <trans-unit id="2671" resname="r282427793" restype="string" datatype="ruby">
         <source>New colleague connection! %{prefix} &lt;span style=&apos;color:&#35;039;&apos;&gt;Add &lt;b&gt;%{person}&lt;/b&gt; back.&lt;/span&gt;</source>
         <target>新的同事连接！%{prefix} &lt;span style=’color:&#35;039;’&gt;添加&lt;b&gt;%{person}&lt;/b&gt;返回。&lt;/span&gt;</target>
       </trans-unit>
@@ -12570,15 +12570,15 @@
         <source>Welcome to HealthTap! Congrats on taking a leap forward on your health journey! To get started, search for a health question, doctor, or interest.</source>
         <target>欢迎来到HealthTap！恭喜您迈向健康之旅！开始，请搜索健康问题，医生或兴趣。</target>
       </trans-unit>
-      <trans-unit id="2673" resname="r1014141309" restype="string" datatype="ruby">
+      <trans-unit id="2673" resname="r426247403" restype="string" datatype="ruby">
         <source>Did you know that you can send images, test results and documents using our HIPAA-secure conversations? &lt;span style=&apos;color:&#35;039;&apos;&gt;Try it now.&lt;/span&gt;</source>
         <target>您知道吗，您可以使用我们的HIPAA安全对话发送图像，检验结果和文件？&lt;span style=’color:&#35;039;’&gt;立刻尝试。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2674" resname="r464619762" restype="string" datatype="ruby">
+      <trans-unit id="2674" resname="r436912426" restype="string" datatype="ruby">
         <source>Connect with doctors! &lt;span style=&apos;color:&#35;039;&apos;&gt;Search using any keywords&lt;/span&gt; in our 1-Million-Doctor Directory and request an appointment from the doctor&apos;s Virtual Practice. &lt;span style=&apos;color:&#35;039;&apos;&gt;Connect today.&lt;/span&gt;</source>
         <target>与医生联系！在我们的1百万医生目录中使用&lt;span style=’color:&#35;039;’&gt;使用任何关键字搜索&lt;/span&gt;，并请求医生的在线诊疗。&lt;span style=’color:&#35;039;’&gt;立刻连接。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2675" resname="r932392224" restype="string" datatype="ruby">
+      <trans-unit id="2675" resname="r161246101" restype="string" datatype="ruby">
         <source>Your Health Activity and Profile are powerful tools for engaging with your health. &lt;span style=&apos;color:&#35;039;&apos;&gt;Update your profile.&lt;/span&gt;</source>
         <target>您的健康活动和个人资料是参与您健康的强大的工具。&lt;span style=’color:&#35;039;’&gt;更新您的个人资料。&lt;/span&gt;</target>
       </trans-unit>
@@ -12586,7 +12586,7 @@
         <source>Happy birthday from all of us at HealthTap! Here&apos;s wishing you the best of health this year.</source>
         <target>来自在HealthTap上的所有人祝您生日快乐！这这里祝您今年身体健康。</target>
       </trans-unit>
-      <trans-unit id="2677" resname="r93283197" restype="string" datatype="ruby">
+      <trans-unit id="2677" resname="r719475433" restype="string" datatype="ruby">
         <source>A free second opinion! A question you&apos;ve answered was just answered again. &lt;span style=&apos;color:&#35;039;&apos;&gt;Read the answer.&lt;/span&gt;</source>
         <target>免费第二意见！您回答的问题刚刚被回答。&lt;span style=’color:&#35;039;’&gt;阅读回答。&lt;/span&gt;</target>
       </trans-unit>
@@ -12594,11 +12594,11 @@
         <source>%{content} Tip: %{tip_text}. See more tips!</source>
         <target>%{content}小贴士：%{tip_text}.查看更多小贴士！</target>
       </trans-unit>
-      <trans-unit id="2679" resname="r855361756" restype="string" datatype="ruby">
+      <trans-unit id="2679" resname="r78909192" restype="string" datatype="ruby">
         <source>HealthTap App of the Week: %{app} on Google Play. See what doctors are saying! &lt;span style=&apos;color:&#35;039&apos;&gt;See the reviews.&lt;/span&gt;</source>
         <target>本周HealthTap应用程序：在谷歌商店的%{app}。看看医生在说什么！&lt;span style=’color:&#35;039’&gt;查看评审。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2680" resname="r522699843" restype="string" datatype="ruby">
+      <trans-unit id="2680" resname="r122551502" restype="string" datatype="ruby">
         <source>HealthTap App of the Week: %{app} on iTunes. See what doctors are saying! &lt;span style=&apos;color:&#35;039&apos;&gt;See the reviews.&lt;/span&gt;</source>
         <target>本周HealthTap应用程序：在iTunes中的%{app}。看看医生在说什么！&lt;span style=’color:&#35;039’&gt;查看评审。&lt;/span&gt;</target>
       </trans-unit>
@@ -12974,7 +12974,7 @@
         <source>Get answers from %{group_name} and connect with its top doctors on HealthTap!</source>
         <target>从%{group_name}获得回答，并在HealthTap与顶级医生联系！</target>
       </trans-unit>
-      <trans-unit id="2771" resname="r74609673" restype="string" datatype="ruby">
+      <trans-unit id="2771" resname="r142955284" restype="string" datatype="ruby">
         <source>&lt;p&gt;&lt;a href=&gt;Join Group&lt;/a&gt; to become a member of %{group_name} on HealthTap.&lt;/p&gt;
                   &lt;br/&gt;Thanks!
                   &lt;br/&gt;%{inviter}</source>
@@ -13017,7 +13017,7 @@
         <source>data[%{val}] is missing or empty.</source>
         <target>数据[%{val}]丢失或为空。</target>
       </trans-unit>
-      <trans-unit id="2779" resname="r390364240" restype="string" datatype="ruby">
+      <trans-unit id="2779" resname="r891191344" restype="string" datatype="ruby">
         <source>Invalid source. It must **contain** one of the strings in %{valid_sources}</source>
         <target>来源无效。它必须**包含**%{valid_sources}中的一个字符</target>
       </trans-unit>
@@ -13066,8 +13066,8 @@
   <file original="app/models/expert_top_datum.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2790" resname="r321622329" restype="string" datatype="ruby">
-        <source>Failed To generate the cohort hash for the expert weekly digest. Exception  %{message}\r\n%{trace}</source>
-        <target>失败的为专家每周总结生成队列哈希异常 %{message}\r\n%{trace}</target>
+        <source>Failed To generate the cohort hash for the expert weekly digest. Exception  %{message}\r %{trace}</source>
+        <target>失败的为专家每周总结生成队列哈希异常 %{message}\r %{trace}</target>
       </trans-unit>
     </body>
   </file>
@@ -13533,7 +13533,7 @@
         <source>Please wait</source>
         <target>请等待</target>
       </trans-unit>
-      <trans-unit id="2903" resname="r99162645" restype="string" datatype="ruby">
+      <trans-unit id="2903" resname="r970344827" restype="string" datatype="ruby">
         <source>We will connect you to %{person} and %{other_person} at your scheduled time</source>
         <target>我们将在您预定的时间与您联系%{person} 和 %{other_person}在您安排的时间</target>
       </trans-unit>
@@ -13630,7 +13630,7 @@
         <source>See %{expert} at %{email}</source>
         <target>在%{email}查看%{expert}</target>
       </trans-unit>
-      <trans-unit id="2932" resname="r488197917" restype="string" datatype="ruby">
+      <trans-unit id="2932" resname="r189798125" restype="string" datatype="ruby">
         <source>See %{person}</source>
         <target>查看%{person}</target>
       </trans-unit>
@@ -13639,16 +13639,16 @@
         <target>在%{phone}, %{email}查看%{name}</target>
       </trans-unit>
       <trans-unit id="2934" resname="r639574300" restype="string" datatype="ruby">
-        <source>\non behalf of %{subaccount} &#40;%{relationship}&#41;</source>
-        <target>\n代表%{subaccount} &#40;%{relationship}&#41;</target>
+        <source> on behalf of %{subaccount} &#40;%{relationship}&#41;</source>
+        <target> 代表%{subaccount} &#40;%{relationship}&#41;</target>
       </trans-unit>
       <trans-unit id="2935" resname="r264351801" restype="string" datatype="ruby">
-        <source>\nfor a scheduled appointment</source>
-        <target>\n安排一次预约</target>
+        <source> for a scheduled appointment</source>
+        <target> 安排一次预约</target>
       </trans-unit>
       <trans-unit id="2936" resname="r566881863" restype="string" datatype="ruby">
-        <source>From %{patient} %{gender}%{subaccount} \nto %{expert}%{descriptor}</source>
-        <target>从%{patient} %{gender}%{subaccount} \n到%{expert}%{descriptor}</target>
+        <source>From %{patient} %{gender}%{subaccount}  to %{expert}%{descriptor}</source>
+        <target>从%{patient} %{gender}%{subaccount}  到%{expert}%{descriptor}</target>
       </trans-unit>
       <trans-unit id="2937" resname="r437005058" restype="string" datatype="ruby">
         <source>From %{patient} %{gender}%{subaccount}%{descriptor}</source>
@@ -14010,7 +14010,7 @@
   </file>
   <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3043" resname="r1016679319" restype="string" datatype="ruby">
+      <trans-unit id="3043" resname="r191487616" restype="string" datatype="ruby">
         <source>&quot;HealthTap&quot; &lt;notifications@healthtap.com&gt;</source>
         <target>“HealthTap&quot; &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
@@ -14046,7 +14046,7 @@
         <source>%{fn} %{ln} shared an update from %{actor}</source>
         <target>%{fn} %{ln}从%{actor}分享了一个更新</target>
       </trans-unit>
-      <trans-unit id="3052" resname="r925516596" restype="string" datatype="ruby">
+      <trans-unit id="3052" resname="r953430203" restype="string" datatype="ruby">
         <source>Kathelin from HealthTap &lt;support@healthtap.com&gt;</source>
         <target>Kathelin来自HealthTap &lt;support@healthtap.com&gt;</target>
       </trans-unit>
@@ -14054,11 +14054,11 @@
         <source>3 minutes to better health!</source>
         <target>3分钟获得更好的健康！</target>
       </trans-unit>
-      <trans-unit id="3054" resname="r549018355" restype="string" datatype="ruby">
+      <trans-unit id="3054" resname="r406418399" restype="string" datatype="ruby">
         <source>HealthTap Team &lt;support@healthtap.com&gt;</source>
         <target>HealthTap团队&lt;support@healthtap.com&gt;</target>
       </trans-unit>
-      <trans-unit id="3055" resname="r424836935" restype="string" datatype="ruby">
+      <trans-unit id="3055" resname="r250644003" restype="string" datatype="ruby">
         <source>HealthTap &lt;support@healthtap.com&gt;</source>
         <target>HealthTap &lt;support@healthtap.com&gt;</target>
       </trans-unit>
@@ -14082,7 +14082,7 @@
         <source>your friend</source>
         <target>您的朋友</target>
       </trans-unit>
-      <trans-unit id="3061" resname="r140270473" restype="string" datatype="ruby">
+      <trans-unit id="3061" resname="r990081174" restype="string" datatype="ruby">
         <source>%{invited_byemail} via HealthTap &lt;notifications@healthtap.com&gt;</source>
         <target>%{Invited_byemail}通过HealthTap &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
@@ -14166,11 +14166,11 @@
         <source>%{person} just sent you a message on HealthTap</source>
         <target>%{person}刚刚在HealthTap上向您发送了一条消息</target>
       </trans-unit>
-      <trans-unit id="3082" resname="r517211692" restype="string" datatype="ruby">
+      <trans-unit id="3082" resname="r250644003" restype="string" datatype="ruby">
         <source>HealthTap &lt;notifications@healthtap.com&gt;</source>
         <target>HealthTap &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
-      <trans-unit id="3083" resname="r166138701" restype="string" datatype="ruby">
+      <trans-unit id="3083" resname="r578539969" restype="string" datatype="ruby">
         <source>%{from} via HealthTap &lt;notifications@healthtap.com&gt;</source>
         <target>%{from} 通过HealthTap &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
@@ -14466,7 +14466,7 @@
         <source>Massive influx of patients awaiting your answers today!</source>
         <target>今天大量涌入的患者等待您的回答！</target>
       </trans-unit>
-      <trans-unit id="3161" resname="r144778231" restype="string" datatype="ruby">
+      <trans-unit id="3161" resname="r616700516" restype="string" datatype="ruby">
         <source>&quot;Dr. Geoff Rutledge&quot; &lt;DrRutledge@healthtap.com&gt;</source>
         <target>“Geoff Rutledge医生&quot; &lt;DrRutledge@healthtap.com&gt;</target>
       </trans-unit>
@@ -14563,8 +14563,8 @@
         <target>%{rails}:%{action} 报告</target>
       </trans-unit>
       <trans-unit id="3186" resname="r292140743" restype="string" datatype="ruby">
-        <source>Please see attached file\n Trail Data: %{trail_data}</source>
-        <target>请参阅附件\n 试验数据：%{trail_data}</target>
+        <source>Please see attached file  Trail Data: %{trail_data}</source>
+        <target>请参阅附件  试验数据：%{trail_data}</target>
       </trans-unit>
       <trans-unit id="3187" resname="r379901062" restype="string" datatype="ruby">
         <source>%{rails} : Deactivation Report for Today</source>
@@ -14806,11 +14806,11 @@
         <source>it&apos;s been %{delay_string} since your consult with %{expert}. Want to follow up?</source>
         <target>因为您咨询了%{expert}，所以已经是%{delay_string}。想要跟进吗？</target>
       </trans-unit>
-      <trans-unit id="3247" resname="r852981727" restype="string" datatype="ruby">
+      <trans-unit id="3247" resname="r157636433" restype="string" datatype="ruby">
         <source>&quot;Michelle at HealthTap&quot; &lt;notifications@healthtap.com&gt;</source>
         <target>“Michelle在HealthTap&quot; &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
-      <trans-unit id="3248" resname="r363698953" restype="string" datatype="ruby">
+      <trans-unit id="3248" resname="r847509131" restype="string" datatype="ruby">
         <source>HealthTap Quality Care &lt;support@healthtap.com&gt;</source>
         <target>HealthTap质量保证 &lt;support@healthtap.com&gt;</target>
       </trans-unit>
@@ -14826,7 +14826,7 @@
         <source>How can we help?</source>
         <target>我们如何帮助？</target>
       </trans-unit>
-      <trans-unit id="3252" resname="r82567100" restype="string" datatype="ruby">
+      <trans-unit id="3252" resname="r983415778" restype="string" datatype="ruby">
         <source>&quot;Ashley at HealthTap&quot; &lt;support@healthtap.com&gt;</source>
         <target>“Ashley在HealthTap&quot; &lt;support@healthtap.com&gt;</target>
       </trans-unit>
@@ -15054,7 +15054,7 @@
         <source>Welcome to %{branding}!</source>
         <target>欢迎来到%{branding}！</target>
       </trans-unit>
-      <trans-unit id="3309" resname="r611123222" restype="string" datatype="ruby">
+      <trans-unit id="3309" resname="r665650071" restype="string" datatype="ruby">
         <source>&apos;HealthTap Team&apos; &lt;support@healthtap.com&gt;</source>
         <target>‘HealthTap团队&apos; &lt;support@healthtap.com&gt;</target>
       </trans-unit>
@@ -15303,7 +15303,7 @@
         <source>Earn more and better serve your patients—starting today</source>
         <target>赚的更多和更好的服务您的患者—立刻开始</target>
       </trans-unit>
-      <trans-unit id="3371" resname="r509952634" restype="string" datatype="ruby">
+      <trans-unit id="3371" resname="r250644003" restype="string" datatype="ruby">
         <source>HealthTap &lt;expertsupport@healthtap.com&gt;</source>
         <target>HealthTap &lt;expertsupport@healthtap.com&gt;</target>
       </trans-unit>
@@ -15327,11 +15327,11 @@
         <source>Confirmation: you are opting out of the HealthTap Concierge service &#40;effective %{get_current_plan_cycle_end_date}&#41;</source>
         <target>确认：您选择退出HealthTap贵宾台服务&#40;有效日期 %{get_current_plan_cycle_end_date}&#41;</target>
       </trans-unit>
-      <trans-unit id="3377" resname="r134052028" restype="string" datatype="ruby">
+      <trans-unit id="3377" resname="r467682574" restype="string" datatype="ruby">
         <source>&quot;Isaac from HealthTap&quot; &lt;support@healthtap.com&gt;</source>
         <target>“Isaac来自HealthTap&quot; &lt;support@healthtap.com&gt;</target>
       </trans-unit>
-      <trans-unit id="3378" resname="r842995454" restype="string" datatype="ruby">
+      <trans-unit id="3378" resname="r75609662" restype="string" datatype="ruby">
         <source>&quot;HealthTap Team&quot; &lt;support@healthtap.com&gt;</source>
         <target>“HealthTap团队&quot; &lt;support@healthtap.com&gt;</target>
       </trans-unit>
@@ -15731,7 +15731,7 @@
         <source>%{subject_name}, You’re approved! Welcome to the HealthTap Medical Expert Network</source>
         <target>%{subject_name}，您已获批准！欢迎来到HealthTap医学专家网络</target>
       </trans-unit>
-      <trans-unit id="3478" resname="r152841718" restype="string" datatype="ruby">
+      <trans-unit id="3478" resname="r723864283" restype="string" datatype="ruby">
         <source>Influencers Program &lt;influencers@healthtap.com&gt;</source>
         <target>影响者计划&lt; &lt;influencers@healthtap.com&gt;</target>
       </trans-unit>
@@ -15827,7 +15827,7 @@
         <source>Happy ½ Birthday!</source>
         <target>生日 ½  快乐！</target>
       </trans-unit>
-      <trans-unit id="3502" resname="r1006716028" restype="string" datatype="ruby">
+      <trans-unit id="3502" resname="r665650071" restype="string" datatype="ruby">
         <source>&apos;HealthTap Team&apos; &lt;feedback@healthtap.com&gt;</source>
         <target>‘HealthTap团队&apos; &lt;feedback@healthtap.com&gt;</target>
       </trans-unit>
@@ -16075,7 +16075,7 @@
         <source>What happened with your Virtual Consult?</source>
         <target>您的在线咨询发生了什么？</target>
       </trans-unit>
-      <trans-unit id="3564" resname="r565821064" restype="string" datatype="ruby">
+      <trans-unit id="3564" resname="r250644003" restype="string" datatype="ruby">
         <source>HealthTap &lt;feedback@healthtap.com&gt;</source>
         <target>HealthTap &lt;feedback@healthtap.com&gt;</target>
       </trans-unit>
@@ -16231,7 +16231,7 @@
         <source>An update about your Prime subscription</source>
         <target>有关您的Prime订购的更新</target>
       </trans-unit>
-      <trans-unit id="3603" resname="r986250982" restype="string" datatype="ruby">
+      <trans-unit id="3603" resname="r575066070" restype="string" datatype="ruby">
         <source>&quot;Isaac at HealthTap&quot; &lt;notifications@healthtap.com&gt;</source>
         <target>“Isaac在HealthTap&quot; &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
@@ -16247,7 +16247,7 @@
         <source>We&apos;re sorry to see you go</source>
         <target>我们很抱歉看到您离开</target>
       </trans-unit>
-      <trans-unit id="3607" resname="r432376341" restype="string" datatype="ruby">
+      <trans-unit id="3607" resname="r191487616" restype="string" datatype="ruby">
         <source>&quot;HealthTap&quot; &lt;feedback@healthtap.com&gt;</source>
         <target>“HealthTap&quot; &lt;feedback@healthtap.com&gt;</target>
       </trans-unit>
@@ -16612,7 +16612,7 @@
         <target>%{expert}, 只有%{num}条评论实现知识编辑状态</target>
         <note annotates="source">TODO pluralize</note>
       </trans-unit>
-      <trans-unit id="3698" resname="r768129266" restype="string" datatype="ruby">
+      <trans-unit id="3698" resname="r189157579" restype="string" datatype="ruby">
         <source>%{expert} via HealthTap &lt;notifications@healthtap.com&gt;</source>
         <target>%{expert} 通过HealthTap &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
@@ -16684,11 +16684,11 @@
         <source>%{expert}, would you like help inviting your patients?</source>
         <target>%{Expert}, 您希望帮助邀请您的患者吗？</target>
       </trans-unit>
-      <trans-unit id="3716" resname="r955108188" restype="string" datatype="ruby">
+      <trans-unit id="3716" resname="r575444361" restype="string" datatype="ruby">
         <source>Dr. Geoffrey Rutledge &lt;expertsupport@healthtap.com&gt;</source>
         <target>Geoffrey Rutledge医生 &lt;expertsupport@healthtap.com&gt;</target>
       </trans-unit>
-      <trans-unit id="3717" resname="r967161664" restype="string" datatype="ruby">
+      <trans-unit id="3717" resname="r53646579" restype="string" datatype="ruby">
         <source>&apos;Invite Patients Support&apos; &lt;invite_patients_support@healthtap.com&gt;</source>
         <target>‘邀请患者支持&apos; &lt;invite_patients_support@healthtap.com&gt;</target>
       </trans-unit>
@@ -16704,7 +16704,7 @@
         <source>Thanks for being proactive about your health! A FREE gift for you</source>
         <target>感谢您积极主动地关注您的健康！给您的一个免费的礼物</target>
       </trans-unit>
-      <trans-unit id="3721" resname="r660430519" restype="string" datatype="ruby">
+      <trans-unit id="3721" resname="r619749726" restype="string" datatype="ruby">
         <source>%{person}, would you like to send %{expert} a secure message?</source>
         <target>%{person}, 您希望发送%{expert}安全信息吗？</target>
       </trans-unit>
@@ -16716,11 +16716,11 @@
         <source>A patient would like to add you to their Care-Team</source>
         <target>患者希望将您加入他们的医护团队</target>
       </trans-unit>
-      <trans-unit id="3724" resname="r411647168" restype="string" datatype="ruby">
+      <trans-unit id="3724" resname="r778517357" restype="string" datatype="ruby">
         <source>%{inviter} via HealthTap &lt;notifications@healthtap.com&gt;</source>
         <target>%{Inviter} 通过HealthTap &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
-      <trans-unit id="3725" resname="r203152261" restype="string" datatype="ruby">
+      <trans-unit id="3725" resname="r632006861" restype="string" datatype="ruby">
         <source>&apos;%{inviter}&apos; &lt;%{inviter}&gt;</source>
         <target>‘%{inviter}&apos; &lt;%{inviter}&gt;</target>
       </trans-unit>
@@ -16764,7 +16764,7 @@
         <source>Request a HealthTap Doctor to be on Your Care Team!</source>
         <target>请求HealthTap医生加入您的医护团队！</target>
       </trans-unit>
-      <trans-unit id="3736" resname="r1061094371" restype="string" datatype="ruby">
+      <trans-unit id="3736" resname="r250644003" restype="string" datatype="ruby">
         <source>HealthTap&lt;support@healthtap.com&gt;</source>
         <target>HealthTap&lt;support@healthtap.com&gt;</target>
       </trans-unit>
@@ -16860,7 +16860,7 @@
         <source>Hi %{person}, How is it going so far?</source>
         <target>您好%{person}, 目前为止如何了？</target>
       </trans-unit>
-      <trans-unit id="3760" resname="r27565474" restype="string" datatype="ruby">
+      <trans-unit id="3760" resname="r961340911" restype="string" datatype="ruby">
         <source>&apos;Isaac at HealthTap&apos; &lt;support@healthtap.com&gt;</source>
         <target>‘Isaac在HealthTap&apos; &lt;support@healthtap.com&gt;</target>
       </trans-unit>
@@ -16952,7 +16952,7 @@
         <source>Ready to take the next step in managing your health?</source>
         <target>准备好采取下一步管理您的健康了吗？</target>
       </trans-unit>
-      <trans-unit id="3783" resname="r745850343" restype="string" datatype="ruby">
+      <trans-unit id="3783" resname="r400379540" restype="string" datatype="ruby">
         <source>&quot;Dr. Geoff Rutledge &#40;Chief Medical Officer&#41; at HealthTap&quot; &lt;support@healthtap.com&gt;</source>
         <target>“Geoff Rutledge医生&#40;首席医务官&#41;在HealthTap&quot; &lt;support@healthtap.com&gt;</target>
       </trans-unit>
@@ -17025,7 +17025,7 @@
         <target>亲爱的%{name}</target>
         <note annotates="source">TODO capitalization</note>
       </trans-unit>
-      <trans-unit id="3801" resname="r560417376" restype="string" datatype="ruby">
+      <trans-unit id="3801" resname="r616700516" restype="string" datatype="ruby">
         <source>&quot;Dr. Geoff Rutledge&quot;&lt;partner.benefits@healthtap.com&gt;</source>
         <target>“Geoff Rutledge医生&quot;&lt;partner.benefits@healthtap.com&gt;</target>
       </trans-unit>
@@ -18253,7 +18253,7 @@
         <source>Jul 2010</source>
         <target>2010年7月</target>
       </trans-unit>
-      <trans-unit id="4147" resname="r433489744" restype="string" datatype="ruby">
+      <trans-unit id="4147" resname="r344658148" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; gets a home: 575 High St.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;找到一个家：575大街</target>
       </trans-unit>
@@ -18269,7 +18269,7 @@
         <source>The first ever Hacking 4 Health</source>
         <target>第一次Hacking 4 Health</target>
       </trans-unit>
-      <trans-unit id="4151" resname="r454332938" restype="string" datatype="ruby">
+      <trans-unit id="4151" resname="r694300453" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; hosts the first ever health data-specific Hackathon with support from the Department of Health and Human Services &#40;HHS&#41;, the HHS CTO, and &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; fan Todd Park. Hundreds participated and 35 teams created 18 apps in less than 24 hours.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;在卫生和人力服务部&#40;HHS&#41;，HHS CTO和&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;粉丝Todd Park的支持下，承载了第一个关于健康数据的Hackathon。数百名参加者和35个小组在2不到24小时创造了18个应用程序。</target>
       </trans-unit>
@@ -18297,7 +18297,7 @@
         <source>Planning the future</source>
         <target>计划未来</target>
       </trans-unit>
-      <trans-unit id="4158" resname="r390094766" restype="string" datatype="ruby">
+      <trans-unit id="4158" resname="r380262372" restype="string" datatype="ruby">
         <source>Following months of intense work to release &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; to our Beta community, we gathered for our first annual planning retreat to set our goals for 2011. The retreat helped spark many new ideas and established a roadmap and metrics for success.</source>
         <target>经过数月的紧张工作发布&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;到我们的检验社区，我们聚集了我们的第一次年度规划休假，以制定我们2011年的目标。休假引发了许多新的想法，并建立了成功的路线图和指标。</target>
       </trans-unit>
@@ -18305,7 +18305,7 @@
         <source>Hello, Dr. Tappy!</source>
         <target>您好，Tappy医生！</target>
       </trans-unit>
-      <trans-unit id="4160" resname="r706832146" restype="string" datatype="ruby">
+      <trans-unit id="4160" resname="r375085874" restype="string" datatype="ruby">
         <source>We care about care and positivity. Dr. Tappy, the smiling image of the helpful physician, was created and immediately became an integral part of the &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; experience. Always helpful and happy, Dr. Tappy symbolizes HealthTap&apos;s dedication to providing the best, most reliable, health information to everyone at all times.</source>
         <target>我们关心医护和积极性。Tappy医生，作为有帮助的医生的微笑形象代表，被创建并立即成为&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;体验的一个组成部分。Tappy医生象征着HealthTap致力于提供最好，最可靠的健康信息，随时为所有人提供帮助和快乐。</target>
       </trans-unit>
@@ -18317,7 +18317,7 @@
         <source>:&#41; we&apos;re on TED!</source>
         <target>:&#41; 我们在TED!</target>
       </trans-unit>
-      <trans-unit id="4163" resname="r937266270" restype="string" datatype="ruby">
+      <trans-unit id="4163" resname="r109820494" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; CEO and Founder Ron Gutman&apos;s TED talk on the &amp;quot;Hidden Powers of Smiling&amp;quot; created buzz at the 2011 conference, but the ultimate success of the talk came when it was released online. Today, the talk has been viewed by millions, translated into more than 50 languages by enthusiastic viewers across the world and published as a TED book.</source>
         <target>&lt;span class =’ht-name’&gt; HealthTap &lt;/span&gt;首席执行官兼创始人Ron Gutman在TED&amp;quot;微笑的隐藏力量&amp;quot的演讲在2011年会议上创造了一个热点，但是在网上发布后获得最终成功。今天，这场演讲已被数百万人观看，被世界各地热心的观众翻译成50多种语言，并作为TED图书出版。</target>
       </trans-unit>
@@ -18325,7 +18325,7 @@
         <source>Walking healthy</source>
         <target>健康行走</target>
       </trans-unit>
-      <trans-unit id="4165" resname="r120782056" restype="string" datatype="ruby">
+      <trans-unit id="4165" resname="r47508065" restype="string" datatype="ruby">
         <source>Cool consumer health projects come with even cooler swag! Introducing the &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; shoe – if you see them on someone&apos;s feet, say hi!</source>
         <target>冷酷消费者健康项目带有更冷酷的行囊！介绍&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;鞋子 - 如果您看到他们在某人的脚上，说您好！</target>
       </trans-unit>
@@ -18337,7 +18337,7 @@
         <source>Angel funding announced</source>
         <target>宣布天使投资</target>
       </trans-unit>
-      <trans-unit id="4168" resname="r13875026" restype="string" datatype="ruby">
+      <trans-unit id="4168" resname="r853039459" restype="string" datatype="ruby">
         <source>HealthTap&apos;s angels include some of the best and brightest company builders in Silicon Valley and beyond. Their backing of our shared vision enables us to create the &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; you see today. &lt;a href=&apos;http://techcrunch.epuls.net/2011/03/23/healthtap-raises-2-35-million-to-help-people-manage-their-health/&apos; target=&apos;_blank&apos; rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>HealthTap的天使投资者包括一些在硅谷和其他地区最好和最聪明的公司建设者。他们支持我们的共同愿景，使我们能够创建您今天看到的&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;。&lt;a href=’http://techcrunch.epuls.net/2011/03/23/healthtap-raises-2-35-million-to-help-people-manage-their-health/’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -18345,7 +18345,7 @@
         <source>The first Interactive Health Symposium</source>
         <target>第一届互动健康研讨会</target>
       </trans-unit>
-      <trans-unit id="4170" resname="r22904830" restype="string" datatype="ruby">
+      <trans-unit id="4170" resname="r264603149" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; hosted the first Interactive Health Symposium right in our office, attracting physician participants from across the state. The symposium created the foundation for a robust, ongoing dialogue between &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; and the physician community about the innovations most needed in healthcare today.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;在我们的办公室举办了第一次互动健康研讨会，吸引了来自全州的医生参与其中。该研讨会为&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;和医生社区之间关于当今健康医护最需要的创新的健康，持续对话奠定了基础。</target>
       </trans-unit>
@@ -18353,7 +18353,7 @@
         <source>Rocking Interactive Health at SXSW</source>
         <target>在SXSW摇摆互动健康</target>
       </trans-unit>
-      <trans-unit id="4172" resname="r662551439" restype="string" datatype="ruby">
+      <trans-unit id="4172" resname="r457429250" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; led in health innovation at the South by Southwest Interactive conference. Paving the way for a strong health presence at this important gathering, we hosted an interactive health meet-up to connect innovators, as well as a major gathering for the entire SXSW health community.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;领导了南方的卫生创新西南交互会议。为在这个重要的聚会上强有力的卫生存在铺平了道路，我们主办了一个互动的卫生会议，以连接创新者，并为整个SXSW卫生界举办一个重要的聚会。</target>
       </trans-unit>
@@ -18361,7 +18361,7 @@
         <source>Our First Expert Answer</source>
         <target>Our First Expert Answer</target>
       </trans-unit>
-      <trans-unit id="4174" resname="r853899560" restype="string" datatype="ruby">
+      <trans-unit id="4174" resname="r323071906" restype="string" datatype="ruby">
         <source>The first response to an inquiry on &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; came from a New Jersey pediatrician, Dr. Anatoloy Belilovsky, who answered the question: &amp;quot;Should I be concerned about my baby&apos;s previous vaccinations?&amp;quot;</source>
         <target>在&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;调查的第一个回复来自新泽西州的儿科医生Anatoloy Belilovsky医生，他回答了这个问题：&amp;quot;我应该关心我宝宝以前的疫苗接种吗？&amp;quot;</target>
       </trans-unit>
@@ -18393,7 +18393,7 @@
         <source>One thousand doctors!</source>
         <target>一千位医生！</target>
       </trans-unit>
-      <trans-unit id="4182" resname="r636833297" restype="string" datatype="ruby">
+      <trans-unit id="4182" resname="r333089675" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; proudly sponsors TEDx Silicon Valley, the most widely viewed TEDx event in the world, with live streaming audiences in 50 countries and more than 330,000 global views. The event, themed &amp;quot;Living by Numbers,&amp;quot; focused on how numbers can impact and improve our daily lives and featured speakers like Chris Anderson, Mitch Kapor, and Tim O&apos;Reilly.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;自豪地赞助TEDx硅谷，这是世界上观看次数最多的TEDx活动，在50个国家有实时观众流，超过33万个全球观点。该活动，话题为&amp;quot;数字生活&amp;quot;关注数字如何影响和改善我们的日常生活和特色的演讲者，如Chris Anderson, Mitch Kapor, 和Tim O&apos;Reilly。</target>
       </trans-unit>
@@ -18437,7 +18437,7 @@
         <source>Mobile launch</source>
         <target>移动端发布</target>
       </trans-unit>
-      <trans-unit id="4193" resname="r1014247806" restype="string" datatype="ruby">
+      <trans-unit id="4193" resname="r744862870" restype="string" datatype="ruby">
         <source>&amp;quot;5,000 doctors, at your fingertips – at home or on the go&amp;quot; became the motto at launch for the new &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; Express App. Together with the physician-facing application &#40;&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; Express MD&#41;, HealthTap&apos;s core Q&amp;A functionality was captured in a novel and engaging mobile app.</source>
         <target>&amp;quot;5000名医生，就在您的指尖 – 在家里或在旅行中&amp;quot;成为新的&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;Express应用程序发布的座右铭。加上面向医生的应用程序&#40;&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; Express MD&#41;，HealthTap的核心问答功能被捕捉在一个新颖的和有吸引力的移动应用程序。</target>
       </trans-unit>
@@ -18449,7 +18449,7 @@
         <source>50,000 answers!</source>
         <target>50,000回答！</target>
       </trans-unit>
-      <trans-unit id="4196" resname="r238090812" restype="string" datatype="ruby">
+      <trans-unit id="4196" resname="r985619283" restype="string" datatype="ruby">
         <source>We reach 50,000 useful, relevant, and current physician-created answers on &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;, all available for free. The Medical Experts on &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; stay busy improving the quality of online health information one answer, tip, and health guide at a time.</source>
         <target>我们在&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;上提供了50,000个有用的，相关的和当前医生创建的回答，所有这些都是免费的。&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;的医学专家一直忙于提高在线健康信息的质量一个回答、小贴士和健康指南。</target>
       </trans-unit>
@@ -18461,7 +18461,7 @@
         <source>HealthTap Groups</source>
         <target>HealthTap群组</target>
       </trans-unit>
-      <trans-unit id="4199" resname="r254090643" restype="string" datatype="ruby">
+      <trans-unit id="4199" resname="r459302336" restype="string" datatype="ruby">
         <source>It&apos;s not just for individual physicians anymore! Group practices, hospitals, and other health organizations join HealthTap. Now, these groups can maintain a presence on HealthTap and connect with individual physicians. Five hundred physicians now participate in groups.  &lt;a href=&apos;http://techcrunch.com/2011/12/06/eric-schmidt-mayfield-fund-put-11-5m-in-online-medical-community-healthtap/&apos; target=&apos;_blank&apos; rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>这不再只是为个别医师！群组诊疗、医院和其他卫生组织加入HealthTap。现在，这些群组可以在HealthTap上保持存在并与个别医生联系。500名医师现在参加群组。&lt;a href=’http://techcrunch.com/2011/12/06/eric-schmidt-mayfield-fund-put-11-5m-in-online-medical-community-healthtap/’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -18473,7 +18473,7 @@
         <source>Series A</source>
         <target>A系列</target>
       </trans-unit>
-      <trans-unit id="4202" resname="r981997697" restype="string" datatype="ruby">
+      <trans-unit id="4202" resname="r172246310" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; is awarded $11.5M in Series A funding, from investors like the Mayfield Fund, Mohr Davidow Ventures, and Eric Schmidt&apos;s Innovation Endeavors. Their backing of our shared vision enables us to continue to build the &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; that you see today.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;获得A轮融资1150万美元，来自梅菲尔德基金，Mohr Davidow Ventures和Eric Schmidt的创新奋进等投资者。他们支持我们的共同愿景，使我们能够继续建立您今天看到的&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;。</target>
       </trans-unit>
@@ -18481,7 +18481,7 @@
         <source>Re-treat</source>
         <target>再治疗</target>
       </trans-unit>
-      <trans-unit id="4204" resname="r113143750" restype="string" datatype="ruby">
+      <trans-unit id="4204" resname="r391829600" restype="string" datatype="ruby">
         <source>The team hits Carmel for the weekend on the second annual company retreat. There, we brainstormed about where &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; should  go from here and generally how to change the world to help people smile and feel good!</source>
         <target>该团队在第二次年度公司休假期间突然想到Carmel周末在那里，我们集体讨论了&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;应该从这里开始，以及一般如何改变世界，帮助人们微笑和feel good！</target>
       </trans-unit>
@@ -18517,7 +18517,7 @@
         <source>Our second SXSW 2012 Interactive Conference</source>
         <target>我们的第二届SXSW 2012互动会议</target>
       </trans-unit>
-      <trans-unit id="4213" resname="r918977937" restype="string" datatype="ruby">
+      <trans-unit id="4213" resname="r859997245" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; hosts the hottest Interactive Health gathering at SXSW, with more than 2,000 people on the wait list. Participants enjoyed party perks like big wheel racing and a photo booth, while simultaneously driving the mobile health movement forward.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;在SXSW举办最热门的互动健康聚会，有超过2,000人在等待名单上。参加者喜欢派对福利，如大轮赛车和照片摊，同时推动移动健康运动向前进。</target>
       </trans-unit>
@@ -18537,7 +18537,7 @@
         <source>Fourth internship class</source>
         <target>第四届实习班</target>
       </trans-unit>
-      <trans-unit id="4218" resname="r26569328" restype="string" datatype="ruby">
+      <trans-unit id="4218" resname="r133771701" restype="string" datatype="ruby">
         <source>HealthTap&apos;s fourth internship class brought together a diverse array of students from Stanford, Berkeley, USC, and UCLA--students who added to the excitement and energy around what &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; is doing for the health world.</source>
         <target>HealthTap的第四个实习班汇集了来自斯坦福大学，伯克利大学，南加州大学和加州大学洛杉矶分校的学生，他们为HealthTap为健康世界而做的事情带来了兴奋和精力。</target>
       </trans-unit>
@@ -18545,7 +18545,7 @@
         <source>12,000 doctors!</source>
         <target>12,000位医生!</target>
       </trans-unit>
-      <trans-unit id="4220" resname="r309901150" restype="string" datatype="ruby">
+      <trans-unit id="4220" resname="r473233375" restype="string" datatype="ruby">
         <source>Our Medical Expert Network continued its remarkable growth, reaching 12,000 U.S.-licensed doctors in Jun 2012. These doctors are actively engaging with &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; members and contributing to the world’s leading knowledgebase of online health content.</source>
         <target>我们的医学专家网络继续显着增长，2012年6月达到12,000名拥有美国执业执照的医生。这些医生正在积极地与&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;会员合作，为世界领先的在线健康内容知识库做出贡献。</target>
       </trans-unit>
@@ -18569,19 +18569,19 @@
         <source>DocScore highlights top doctors</source>
         <target>医者评分突出顶级医生</target>
       </trans-unit>
-      <trans-unit id="4226" resname="r232083844" restype="string" datatype="ruby">
+      <trans-unit id="4226" resname="r885274524" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;’s innovative DocScore is an objective numeric rating &#40;like a FICO score&#41; for doctors, taking into account public information &#40;such as years in practice, medical education, awards, and peer-reviewed publications&#41; as well as interactions on &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; &#40;including peer-endorsements and agrees&#41;.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;的医者评分的创新是医生的客观数字评级（如FICO评分），考虑到公共信息（如实践中的年份，医学教育，奖项和同行评审的出版物）以及&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;的互动（包括同行评议） 支持和同意。</target>
       </trans-unit>
-      <trans-unit id="4228" resname="r894192507" restype="string" datatype="ruby">
+      <trans-unit id="4228" resname="r562249615" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;’s DOConnect is an interactive map showing the referral network of doctors and doctors who treat the same patients at the same time. More than 30 million connections are visible via &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;, and each doctor’s connections are visible directly from a doctor’s &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; profile page.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;的DOConnect是一个交互式地图，显示医生和医生的转诊网络，同时对同一患者进行治疗。这会显示出医生的诊断网和在同一时间诊断同一个患者的医生。通过&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;可以看到超过3000万个连接，每个医生的连接都可以从医生的&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;个人资料页面直接看到。</target>
       </trans-unit>
-      <trans-unit id="4229" resname="r275250587" restype="string" datatype="ruby">
+      <trans-unit id="4229" resname="r192600023" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; acquires Avvo Health and grows Directory to 1.2 million doctors</source>
         <target>&lt;span class =’ht-name’&gt; HealthTap &lt;/span&gt;收购Avvo Health并将目录扩展到120万名医生</target>
       </trans-unit>
-      <trans-unit id="4230" resname="r3477517" restype="string" datatype="ruby">
+      <trans-unit id="4230" resname="r1032921299" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;’s first acquisition, health Q&amp;A and directory service Avvo Health, expanded &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;’s Medical Expert Network to more than 40,000 doctors in 128 specialties, and broadened local coverage across all 50 states. At the same time, &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; announced the expansion of its directory coverage to include 1.2 million U.S.-licensed doctors.  &lt;a href=&apos;http://techcrunch.com/2012/11/29/healthtap-buys-avvos-health-business-looks-to-become-the-go-to-resource-for-medical-advice-info/&apos; rel=nofollow target=&apos;_blank&apos; &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;首次收购，健康问答和目录服务Avvo Health将&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;的医学专家网络扩展到了超过40,000名医生，共有128个专科，并扩展了所有50个州的本地覆盖面。与此同时，&lt;span class =’ht-name’&gt; HealthTap &lt;/span&gt;宣布扩大其目录覆盖范围，包括120万拥有美国执业执照的医生。&lt;a href=’http://techcrunch.com/2012/11/29/healthtap-buys-avvos-health-business-looks-to-become-the-go-to-resource-for-medical-advice-info/’ rel=nofollow target=’_blank’ &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -18589,7 +18589,7 @@
         <source>Disrupting healthcare for the better</source>
         <target>打破为更好的健康医护</target>
       </trans-unit>
-      <trans-unit id="4232" resname="r1054046435" restype="string" datatype="ruby">
+      <trans-unit id="4232" resname="r290985648" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; CEO Ron Gutman was invited to present on CNBC’s “The Disrupters,” a national news series highlighting innovative companies and individuals changing the status quo.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;首席执行官Ron Gutman被邀请参加CNBC的“破坏者”，一个全国新闻系列，突出了创新公司和个人改变现状。</target>
       </trans-unit>
@@ -18609,19 +18609,19 @@
         <source>Jan 2013</source>
         <target>2013年1月</target>
       </trans-unit>
-      <trans-unit id="4237" resname="r528047409" restype="string" datatype="ruby">
+      <trans-unit id="4237" resname="r595669662" restype="string" datatype="ruby">
         <source>CNN : &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; helps you keep resolutions</source>
         <target>美国有线电视新闻网络：&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;帮助您保持决定</target>
       </trans-unit>
-      <trans-unit id="4238" resname="r507957909" restype="string" datatype="ruby">
+      <trans-unit id="4238" resname="r402152938" restype="string" datatype="ruby">
         <source>CNN highlighted &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; as one of the very best apps to help you keep your New Year&apos;s health resolutions. The video feature aired on CNN during prime time, and was simulcast on 150 stations across the country.  &lt;a href=&apos;//www.youtube.com/embed/Ho6DbWCVLYo&apos; videoID=&apos;Ho6DbWCVLYo&apos; class=&apos;play-video&apos; target=&apos;_blank&apos; rel=nofollow &gt;Watch video&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>CNN强调&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;作为最好的应用程序之一，以帮助您保持您的新年的健康决议。在黄金时段，CNN播出的视频功能，并在全国150个电台同时播出。&lt;a href=’//www.youtube.com/embed/Ho6DbWCVLYo’ videoID=’Ho6DbWCVLYo’ class=’play-video’ target=’_blank’ rel=nofollow &gt;观看视频&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="4239" resname="r449414623" restype="string" datatype="ruby">
+      <trans-unit id="4239" resname="r95961443" restype="string" datatype="ruby">
         <source>Winter retreat  envisions &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;’s next generation</source>
         <target>冬季休假设想&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;的下一代</target>
       </trans-unit>
-      <trans-unit id="4240" resname="r244779783" restype="string" datatype="ruby">
+      <trans-unit id="4240" resname="r712809753" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; team members gathered in Northern California for our semi-annual retreat, where we hosted a select group of doctors from diverse practices across the country. They participated in activities that helped us envision the next generation of &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;团队会员为我们半年度休假齐聚北加州，在那里我们主办了一个从全国各地多样化的诊疗选择医学的群组。他们参加了帮助我们设想下一代&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;的活动。</target>
       </trans-unit>
@@ -18629,7 +18629,7 @@
         <source>Feb 2013</source>
         <target>2013年2月</target>
       </trans-unit>
-      <trans-unit id="4243" resname="r527140497" restype="string" datatype="ruby">
+      <trans-unit id="4243" resname="r827767806" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; brings doctor-created tips straight to your mobile device or computer. To keep healthy living top of mind, users can subscribe to health topics of interest, and receive daily doctor-created tips, suggestions, or bits of advice delivered via email or by SMS push notifications to mobile devices. Users can also discover and browse TipTaps on &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;将医生创建的小贴士直接推送到您的移动设备或计算机。为了保持放心健康的生活，用户可以订购感兴趣的健康话题，并且接收通过电子邮件或短信在移动设备上接收每天医生创建的小贴士、建议或一点忠告的推送通知。用户还可以在&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;上发现和浏览推心小贴士。</target>
       </trans-unit>
@@ -18637,7 +18637,7 @@
         <source>Global mobile featuring!</source>
         <target>全球移动特色！</target>
       </trans-unit>
-      <trans-unit id="4245" resname="r308175769" restype="string" datatype="ruby">
+      <trans-unit id="4245" resname="r1040904360" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;, featured globally on Google Play’s Android app market, quickly becomes one of the top 10 most popular health apps worldwide.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;，在Google Play安卓应用程序市场推出，迅速成为全球前十大最受欢迎的健康应用程序之一。</target>
       </trans-unit>
@@ -18645,11 +18645,11 @@
         <source>Mar 2013</source>
         <target>2013年3月</target>
       </trans-unit>
-      <trans-unit id="4247" resname="r126908739" restype="string" datatype="ruby">
+      <trans-unit id="4247" resname="r687405752" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; personalized!</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;个性化！</target>
       </trans-unit>
-      <trans-unit id="4248" resname="r982101052" restype="string" datatype="ruby">
+      <trans-unit id="4248" resname="r296233876" restype="string" datatype="ruby">
         <source>Mar 2013 also marked the availability of increased personalization to millions on the &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; platform. Now when members  ask questions, they are prompted with the option to add additional personal information related to the question they are asking. This provides doctors with relevant context and improves the specificity of the answers members receive.</source>
         <target>2013年3月，还在&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;平台上标记了数百万用户的个性化增长。现在，当会员提出问题时，系统会小贴士他们添加与他们要求的问题相关的其他个人信息的选项。这向医生提供相关来龙去脉并且改进会员接收的回答的专一性。</target>
       </trans-unit>
@@ -18657,7 +18657,7 @@
         <source>One of the Top Four Out of 40,000 Apps!</source>
         <target>40,000个应用程序中的前四！</target>
       </trans-unit>
-      <trans-unit id="4250" resname="r668849546" restype="string" datatype="ruby">
+      <trans-unit id="4250" resname="r676640459" restype="string" datatype="ruby">
         <source>In Mar 2013, &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; was featured on the TODAY Show as one of the four best health apps from among the 40,000 health applications available for consumers.  &lt;a href=&apos;http://www.today.com/video/today/51273692/&#35;51273692&apos; target=&apos;_blank&apos; &gt;Watch video&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>2013年3月，&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;在今日秀上作为消费者提供的4万个健康应用程序中的4个最好的健康应用程序之一。&lt;a href=’http://www.today.com/video/today/51273692/&#35;51273692’ target=’_blank’ &gt;观看视频&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -18669,7 +18669,7 @@
         <source>Experts Helping Experts</source>
         <target>专家帮助专家</target>
       </trans-unit>
-      <trans-unit id="4253" resname="r636370602" restype="string" datatype="ruby">
+      <trans-unit id="4253" resname="r546715863" restype="string" datatype="ruby">
         <source>This month &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; unveiled its new initiative called “Curbside Consults.” The program allows a &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; physician to use the platform’s network to broadcast a question to other physicians.</source>
         <target>本月，&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;公布了名为“路边内容”的新计划。该程序允许&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;医生使用平台的网络向其他医生广播问题。</target>
       </trans-unit>
@@ -18681,7 +18681,7 @@
         <source>The Full Spectrum release!</source>
         <target>全局发布！</target>
       </trans-unit>
-      <trans-unit id="4256" resname="r558247700" restype="string" datatype="ruby">
+      <trans-unit id="4256" resname="r689984340" restype="string" datatype="ruby">
         <source>The full spectrum of doctor knowledge is made available via &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;. Doctor-to-doctor Q&amp;A, concise doctor updates, and full-length doctor posts are released.</source>
         <target>医生知识的所有范围通过&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;提供。医生与医生的问答，简明的医生更新和全职医生的帖子。</target>
       </trans-unit>
@@ -18689,7 +18689,7 @@
         <source>Growth!</source>
         <target>发展！</target>
       </trans-unit>
-      <trans-unit id="4258" resname="r621403360" restype="string" datatype="ruby">
+      <trans-unit id="4258" resname="r667510114" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; reaches 7.5 million monthly unique visitors, two million app downloads, and more than half a billion doctor answers served.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;每月独立访问者达750万，应用下载量为200万，医生回答超过5亿。</target>
       </trans-unit>
@@ -18701,7 +18701,7 @@
         <source>AppRX</source>
         <target>App医生评测</target>
       </trans-unit>
-      <trans-unit id="4261" resname="r796496547" restype="string" datatype="ruby">
+      <trans-unit id="4261" resname="r79580886" restype="string" datatype="ruby">
         <source>In May 2013, &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; launched AppRX so our users can get app recommendations from real doctors. With AppRX, we make it fast and easy to find health and wellness apps by creating intuitive, user-friendly categories, and posting doctor recommendations and written reviews.  &lt;a href=&apos;http://venturebeat.com/2013/05/30/healthtap-apprx/&apos; target=&apos;_blank&apos; rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>在2013年5月，&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;推出了“App医生评测”，因此我们的用户可以从真正的医生获得应用程序的建议。使用App医生评测，我们通过创建直观，用户友好的类别，并为应用程序发布医生建议和书面评论，使其快速，轻松地找到健康与保健应用程序。&lt;a href=’http://venturebeat.com/2013/05/30/healthtap-apprx/’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -18713,7 +18713,7 @@
         <source>Health2020 Event</source>
         <target>健康2020活动</target>
       </trans-unit>
-      <trans-unit id="4264" resname="r1029446011" restype="string" datatype="ruby">
+      <trans-unit id="4264" resname="r681496651" restype="string" datatype="ruby">
         <source>In the summer of 2013, &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;  had the pleasure of hosting a group of leading engineers, designers, product managers, data experts, and innovators in diverse industries to envision and design the “future of health” in the year 2020. It was a successful day of thought-provoking debate and ideas of how to disrupt the health space.</source>
         <target>在2013年夏天，&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;很荣幸地主办了一个领先的工程师，设计师，产品经理，数据专家和不同行业的创新者，以构想和设计2020年的“健康未来”。这是成功的一天，发人深省的辩论和如何破坏健康空间的想法。</target>
       </trans-unit>
@@ -18721,7 +18721,7 @@
         <source>First doctor conference with Top Doctors</source>
         <target>与顶级医生的第一次医生会议</target>
       </trans-unit>
-      <trans-unit id="4266" resname="r1036786894" restype="string" datatype="ruby">
+      <trans-unit id="4266" resname="r93450508" restype="string" datatype="ruby">
         <source>July 2013 marked the first ever &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;  Doctors’ Conference. Doctors from around the country from multiple specialities, practice sizes, and various stages in their careers offered insights and feedback on the past, present, and future of &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;.</source>
         <target>2013年7月是史上第一次&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;医生会议。来自多个专科，诊疗大小和职业生涯的各个阶段的全国各地的医生提供了对&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;的过去，现在和未来的见解和反馈。</target>
       </trans-unit>
@@ -18733,7 +18733,7 @@
         <source>10,000 lives saved</source>
         <target>挽救了10,000条生命</target>
       </trans-unit>
-      <trans-unit id="4269" resname="r647168468" restype="string" datatype="ruby">
+      <trans-unit id="4269" resname="r688821135" restype="string" datatype="ruby">
         <source>In Oct 2013, &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; received the 10,000th user note telling us that information on &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; saved a life. By making digital health personal, we&apos;re working hard to help many more thousands all over the world live longer, healthier lives.  &lt;a href=&apos;http://bits.blogs.nytimes.com/2013/10/05/how-to-save-10000-lives-with-an-app-flatter-doctors/?_php=true&amp;_type=blogs&amp;_r=0&apos; target=&apos;_blank&apos; rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>在2013年十月，&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;收到了第10,000条用户通知告诉我们在&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;上挽救一条生命。通过使电子健康私人化，我们致力于帮助全世界更多人活得更长久更健康。&lt;a href=’http://bits.blogs.nytimes.com/2013/10/05/how-to-save-10000-lives-with-an-app-flatter-doctors/?_php=true&amp;_type=blogs&amp;_r=0’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -18749,7 +18749,7 @@
         <source>50,000 doctors</source>
         <target>50,000位医生</target>
       </trans-unit>
-      <trans-unit id="4273" resname="r938253770" restype="string" datatype="ruby">
+      <trans-unit id="4273" resname="r655836032" restype="string" datatype="ruby">
         <source>We were thrilled when the 50,000th doctor signed up to join our Medical Expert Network!  The thank you notes keep pouring in from members who have been helped by our devoted and inspirational doctors. And the doctors are happy too! Word of mouth is spreading in the medical community about &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; and how it is helping millions of people around the world feel good!</source>
         <target>当5万名医生报名加入我们的医学专家网络时，我们感到非常高兴！我们奉献的和鼓舞人心的医生帮助过的会员的感谢信持续的涌入。医生也很高兴！口碑传播在医疗社区关于&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;和它如何帮助世界各地的数百万人feel good！</target>
       </trans-unit>
@@ -18757,7 +18757,7 @@
         <source>Nov 2013</source>
         <target>2013年11月</target>
       </trans-unit>
-      <trans-unit id="4276" resname="r187948061" restype="string" datatype="ruby">
+      <trans-unit id="4276" resname="r215297655" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; Labs launches its first app - Talk To Docs. Just speak a question, and the app reads back answers from top doctors. Uses advanced natural language processing, artificial intelligence, and advanced voice recognition technology, Talk To Docs recognizes the health topics you’re interested in, and delivers the most appropriate answers.  &lt;a href=&apos;http://www.fastcoexist.com/3020791/why-go-to-the-doctor-when-you-can-talk-to-a-doctor-in-your-phone&apos; target=&apos;_blank&apos; rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;实验室发布他的第一款应用程序 - Talk To Docs.仅仅说出一个问题，这款应用程序就会从顶级医生那里获取回答。Talk To Docs使用先进的自然语言处理、人工智能和先进的声音识别技术来识别您感兴趣的话题并向您推送最适合的回答。&lt;a href=’http://www.fastcoexist.com/3020791/why-go-to-the-doctor-when-you-can-talk-to-a-doctor-in-your-phone’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -18765,7 +18765,7 @@
         <source>&amp;ldquo;Disrupting Healthcare&amp;rdquo;</source>
         <target>&amp;ldquo;打破健康医护&amp;rdquo;</target>
       </trans-unit>
-      <trans-unit id="4278" resname="r775485321" restype="string" datatype="ruby">
+      <trans-unit id="4278" resname="r455359823" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; continued to be featured in national press, with articles in Inc. Magazine &#40;&lt;a href=&apos;http://www.inc.com/magazine/201311/darren-dahl/how-healthtap-disrupted-the-health-care-industry.html&apos; target=&apos;_blank&apos; rel=nofollow &gt;November 2013&lt;/a&gt;&#41; and Forbes &#40;&lt;a href=&apos;http://www.forbes.com/sites/brucerogers/2013/11/20/ron-gutmans-healthtap-seeks-to-be-the-first-global-mobile-health-brand/&apos; target=&apos;_blank&apos; rel=nofollow &gt;November 2013&lt;/a&gt;&#41;, among many others celebrating the changes that &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; is making in the health field.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;继续在国家新闻界发表，其中包括华纳出版社 &#40;&lt;a href=’http://www.inc.com/magazine/201311/darren-dahl/how-healthtap-disrupted-the-health-care-industry.html’ target=’_blank’ rel=nofollow &gt;November 2013&lt;/a&gt;&#41;和福布斯&#40;&lt;a href=’http://www.forbes.com/sites/brucerogers/2013/11/20/ron-gutmans-healthtap-seeks-to-be-the-first-global-mobile-health-brand/’ target=’_blank’ rel=nofollow &gt;November 2013&lt;/a&gt;&#41;, 在许多其他人中庆祝&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;在健康领域正在发生的变化。</target>
       </trans-unit>
@@ -18773,11 +18773,11 @@
         <source>Feb 2014</source>
         <target>2014年2月</target>
       </trans-unit>
-      <trans-unit id="4280" resname="r516130628" restype="string" datatype="ruby">
+      <trans-unit id="4280" resname="r1010460204" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; Documentary</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;纪录片</target>
       </trans-unit>
-      <trans-unit id="4281" resname="r416821242" restype="string" datatype="ruby">
+      <trans-unit id="4281" resname="r108061609" restype="string" datatype="ruby">
         <source>A mini-documentary on &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; was released underscoring the importance of the company’s mission to revolutionize the doctor-patient relationship. The film featured patients and doctors who spoke about the deep impact HealthTap is having on their lives. &lt;a href=&apos;//www.youtube.com/embed/euXY8YJSL84&apos; videoID=&apos;euXY8YJSL84&apos; class=&apos;play-video&apos; target=&apos;_blank&apos; rel=nofollow &gt;Watch video&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>发布了一部关于&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;的小纪录片，强调了公司使命改变医生与患者关系的重要性。这部电影精选了患者和医生，他们谈到了HealthTap对他们生活的深远影响。&lt;a href=’//www.youtube.com/embed/euXY8YJSL84’ videoID=’euXY8YJSL84’ class=’play-video’ target=’_blank’ rel=nofollow &gt;观看视频&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -18785,11 +18785,11 @@
         <source>June 2014</source>
         <target>2014年6月</target>
       </trans-unit>
-      <trans-unit id="4283" resname="r815587763" restype="string" datatype="ruby">
+      <trans-unit id="4283" resname="r726756167" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; launches a smartwatch app</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;发布智能手表应用程序</target>
       </trans-unit>
-      <trans-unit id="4284" resname="r368059083" restype="string" datatype="ruby">
+      <trans-unit id="4284" resname="r737095835" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; redefines healthcare once again and becomes first health app on Google’s Android wear. Now millions around the world get the power of personalized doctor reminders and tips on the go!</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;再次重新定义健康医护，成为Google Android Wear上的第一个健康应用程序。现在世界各地的数百万人忙于获得个性化的医生提醒和小贴士！</target>
       </trans-unit>
@@ -18797,7 +18797,7 @@
         <source>Jul 2014</source>
         <target>2014年7月</target>
       </trans-unit>
-      <trans-unit id="4286" resname="r645022999" restype="string" datatype="ruby">
+      <trans-unit id="4286" resname="r49238390" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; moves into 270 University Ave</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;搬迁到270大学大道</target>
       </trans-unit>
@@ -18805,7 +18805,7 @@
         <source>We move to a new, bigger, better, sunnier office in the heart of downtown Palo Alto!</source>
         <target>我们搬到在帕洛阿尔托市中心的一个新的，更大，更好，更阳光的办公室！</target>
       </trans-unit>
-      <trans-unit id="4288" resname="r919745336" restype="string" datatype="ruby">
+      <trans-unit id="4288" resname="r276655882" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; launches HealthTap Prime</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;发布HealthTap Prime</target>
       </trans-unit>
@@ -18829,7 +18829,7 @@
         <source>Two billion!</source>
         <target>20亿！</target>
       </trans-unit>
-      <trans-unit id="4294" resname="r386998756" restype="string" datatype="ruby">
+      <trans-unit id="4294" resname="r372750350" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; hits two billion answers served in response to users&apos; health questions.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;回复用户的健康问题已达到了20亿份回答。</target>
       </trans-unit>
@@ -18837,11 +18837,11 @@
         <source>Sep 2014</source>
         <target>2014年9月</target>
       </trans-unit>
-      <trans-unit id="4296" resname="r120666647" restype="string" datatype="ruby">
+      <trans-unit id="4296" resname="r673781242" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; launches on Apple’s Health App</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;在苹果的健康应用程序上推出</target>
       </trans-unit>
-      <trans-unit id="4297" resname="r978584247" restype="string" datatype="ruby">
+      <trans-unit id="4297" resname="r221525838" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; launched on Apple’s Health App, providing a seamless way to get your data from device to doctor. Doctors can use the Apple Health App data to provide better recommendations, as well as actionable doctor-created checklists and personalized tips.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;在苹果的健康应用程序上推出，提供了一种将您的数据从设备到医生的无缝方式。医生可以使用苹果健康应用程序的数据提供更好的建议，以及可行的医生创建的清单和个性化小贴士。</target>
       </trans-unit>
@@ -18849,7 +18849,7 @@
         <source>Oct 2014</source>
         <target>2014年10月</target>
       </trans-unit>
-      <trans-unit id="4299" resname="r426920335" restype="string" datatype="ruby">
+      <trans-unit id="4299" resname="r693851307" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; launches HealthTap Concierge</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;发布HealthTap贵宾台</target>
       </trans-unit>
@@ -18865,7 +18865,7 @@
         <source>First AppRx Annual Report</source>
         <target>第一个App医生评测年度报告</target>
       </trans-unit>
-      <trans-unit id="4303" resname="r538515973" restype="string" datatype="ruby">
+      <trans-unit id="4303" resname="r1007000858" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; releases its first annual report on the top health and medical apps available today. Thousands of doctors on HealthTap independently reviewed tens of thousands of health apps and provided recommendations for some of the ones they deemed the best among the 100,000 health and wellness apps available in the iOS and Android app stores.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;很荣幸地发布关于可用的顶级健康和医疗应用程序的第一份年度报告。HealthTap的医生已经独立审核了数以万计的健康应用程序，并为iOS和Android应用商店中的10万个健康与保健应用程序中的一些提供了建议。</target>
       </trans-unit>
@@ -18877,7 +18877,7 @@
         <source>RateRx Launched</source>
         <target>Rate医生评测发布</target>
       </trans-unit>
-      <trans-unit id="4306" resname="r559517643" restype="string" datatype="ruby">
+      <trans-unit id="4306" resname="r980843895" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; launches RateRx, the first large-scale resource created by doctors to help consumers understand the effectiveness of drugs and treatments based on doctor’s real-world experience with medications. RateRx empowers more informed discussions between patients and doctors about treatment options.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;发布了Rate医生评测，这是医生创建的第一个大规模资源，帮助消费者基于医生现实世界的药物经验来了解药物和治疗的有效性。Rate医生评测使患者和医生之间就治疗选择进行更多的知情讨论。</target>
       </trans-unit>
@@ -18889,7 +18889,7 @@
         <source>20,000th “life saved” thank-you note!</source>
         <target>第20,000封“挽救了生命”的感谢信！</target>
       </trans-unit>
-      <trans-unit id="4309" resname="r733643312" restype="string" datatype="ruby">
+      <trans-unit id="4309" resname="r714972663" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; received the 20,000th note from a customer telling us that information on &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; saved a life.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;收到了第20,000封消费者的信告诉我们在&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;上挽救一条生命。</target>
       </trans-unit>
@@ -18897,7 +18897,7 @@
         <source>Three new apps for Apple Watch</source>
         <target>为苹果手表的3款新的应用程序</target>
       </trans-unit>
-      <trans-unit id="4311" resname="r43341707" restype="string" datatype="ruby">
+      <trans-unit id="4311" resname="r185114301" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; remains on the forefront of digital health by being offering the first consumer healthcare apps for Apple Watch. DocNow, the first “Affordable Care App,” delivers instant access to doctors on call 24/7 for only $2.99. &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; for Apple Watch helps you stay on top of your health with a tap on your wrist. &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; for Doctors lets doctors to manage their Virtual Practices right from their Apple Watches.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;通过为苹果手表提供第一款消费者健康医护应用程序，依然走在数字健康的前列。DocNow，第一个“价格实惠的医护应用程序”，只需2.99美元，即可提供24/7全天候即时的访问医生电话。Apple Watch的&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;可以帮助您在手腕上轻轻滑动，保持身体健康。&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt; for Doctors让医生从他们的苹果手表管理他们的在线诊疗。</target>
       </trans-unit>
@@ -18905,7 +18905,7 @@
         <source>Three billion answers served</source>
         <target>提供30亿份回答</target>
       </trans-unit>
-      <trans-unit id="4313" resname="r236717151" restype="string" datatype="ruby">
+      <trans-unit id="4313" resname="r266948195" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; crosses three billion answers served in response to users&apos; health questions.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;回复用户的健康问题已达到了30亿份回答。</target>
       </trans-unit>
@@ -18913,11 +18913,11 @@
         <source>May 2015</source>
         <target>2015年5月</target>
       </trans-unit>
-      <trans-unit id="4315" resname="r890873912" restype="string" datatype="ruby">
+      <trans-unit id="4315" resname="r975670166" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; wins Webby Award</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;赢得威比奖</target>
       </trans-unit>
-      <trans-unit id="4316" resname="r687272040" restype="string" datatype="ruby">
+      <trans-unit id="4316" resname="r250973062" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; wins the 2015 Webby Award—called “The Internet’s highest honor” by the New York Times—in the Mobile Sites &amp; Apps: Health &amp; Fitness Category.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;赢得了2015年Webby奖 - 被纽约时报称为“互联网的最高荣誉” - 在移动网站和应用程序：健康与健身类别。</target>
       </trans-unit>
@@ -18929,7 +18929,7 @@
         <source>E-prescriptions now available!</source>
         <target>E-prescriptions现在可用！</target>
       </trans-unit>
-      <trans-unit id="4319" resname="r246088051" restype="string" datatype="ruby">
+      <trans-unit id="4319" resname="r874176167" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; announces its collaboration with Quest Diagnostics to enable doctors to order diagnostic testing services for patients.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;宣布与Quest Diagonstics公司合作，使医生能够为患者订购诊断检验服务。</target>
       </trans-unit>
@@ -18941,7 +18941,7 @@
         <source>World Economic Forum Technology Pioneer</source>
         <target>世界经济论坛技术先锋</target>
       </trans-unit>
-      <trans-unit id="4322" resname="r171962206" restype="string" datatype="ruby">
+      <trans-unit id="4322" resname="r349102390" restype="string" datatype="ruby">
         <source>The World Economic Forum selects &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; as 2015 Technology Pioneer for its significant global potential to make virtual healthcare accessible to everyone.</source>
         <target>世界经济论坛选择&lt;span class =’ht-name’&gt; HealthTap &lt;/span&gt;作为2015技术先锋，因为其巨大的全球潜力，使每个人都可以使用在线健康医护。</target>
       </trans-unit>
@@ -18953,7 +18953,7 @@
         <source>HealthTap Compass gives employees of Flex access to efficient, world-class healthcare</source>
         <target>HealthTap Compass为Flex的员工提供高效，世界一流的健康医护</target>
       </trans-unit>
-      <trans-unit id="4325" resname="r327357502" restype="string" datatype="ruby">
+      <trans-unit id="4325" resname="r842843461" restype="string" datatype="ruby">
         <source>&lt;span class=&quot;ht-name&quot; &gt;HealthTap&lt;/span&gt; launches Compass, a revolutionary new personal healthcare application that will give employees of Flex the ability to “tap in” to intelligent and cost-effective healthcare 24/7. HealthTap Compass serves as a hub for managing all employees’ healthcare needs, from information to prescriptions and even lab test referrals and interpretations, and will replace the traditional “benefits card.”</source>
         <target>&lt;span class=&quot;ht-name&quot; &gt;HealthTap&lt;/span&gt;发布了Compass，这是一个革命性的新型个人健康医护应用程序，将让Flex的员工能够24/7全天候“轻轻滑动”智能化和具有成本效益的健康医护。HealthTap Compass作为一个中心，用于管理所有员工的健康医护需求，从信息到处方甚至转诊和解释实验室检验，并将取代传统的“福利卡”。</target>
       </trans-unit>
@@ -18961,11 +18961,11 @@
         <source>Oct 2015</source>
         <target>2015年10月</target>
       </trans-unit>
-      <trans-unit id="4327" resname="r541874681" restype="string" datatype="ruby">
+      <trans-unit id="4327" resname="r1036204257" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; goes global</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;走向全球化</target>
       </trans-unit>
-      <trans-unit id="4328" resname="r350886551" restype="string" datatype="ruby">
+      <trans-unit id="4328" resname="r380308093" restype="string" datatype="ruby">
         <source>&lt;span class=&quot;ht-name&quot; &gt;HealthTap&lt;/span&gt; expands globally, unveiling its new “Health Operating System&amp;trade; &#40;HOPES&#41;&amp;trade;&quot; for hospitals, clinics, and community-based programs worldwide, starting with the Waikato District Health Board in New Zealand.</source>
         <target>&lt;span class=”ht-name” &gt;HealthTap&lt;/span&gt;正在全球扩张，揭示其新的“健康操作系统和贸易; &#40;HOPES&#41;和贸易;“用于世界各地的医院，诊所和社区计划，从新西兰的怀卡托区卫生局开始。</target>
       </trans-unit>
@@ -18973,7 +18973,7 @@
         <source>250 million people helped!</source>
         <target>帮助过2.5亿人！</target>
       </trans-unit>
-      <trans-unit id="4330" resname="r1008264027" restype="string" datatype="ruby">
+      <trans-unit id="4330" resname="r277617155" restype="string" datatype="ruby">
         <source>More than 250 million users have accessed &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; doctors’ expertise in the form of answers and curated articles from the world’s largest doctor-created knowledgebase.</source>
         <target>超过2.5亿用户以世界上最大的医生创建的知识库的回答和策划的文章的形式访问了&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;医生的专业知识。</target>
       </trans-unit>
@@ -18997,7 +18997,7 @@
         <source>HealthTap SOS offers solution for disaster relief</source>
         <target>HealthTap SOS为赈灾提供解决方案</target>
       </trans-unit>
-      <trans-unit id="4336" resname="r201436705" restype="string" datatype="ruby">
+      <trans-unit id="4336" resname="r1001607838" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; now helps victims of natural disasters and terrorist attacks with HealthTap SOS, which it plans to license to municipalities and insurance firms around the world. In case of an emergency such as a hurricane or tsunami, residents of an affected area will be able to text, call, or video chat in real time with one of HealthTap&apos;s network of more than 100,000 doctors. The company will aggregate data based on these interactions pushing it back to relief forces, as well as to the government and to global media outlets.</source>
         <target>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;通过HealthTap SOS来帮助那些遭受自然灾害和恐怖袭击的受害者，它希望通过这样给直辖市和全国各地的保险公司颁发执业执照。在像飓风和海啸这样的紧急情况下，受影响地区的居民将能够立即和HealthTap的100000多名医生进行实时文本，电话，或者视频聊天。公司将搜集这些建立在相互交流的数据给救援部队，政府以及全球媒体。</target>
       </trans-unit>
@@ -19009,7 +19009,7 @@
         <source>100,000 Doctors!</source>
         <target>100,000位医生!</target>
       </trans-unit>
-      <trans-unit id="4339" resname="r128497331" restype="string" datatype="ruby">
+      <trans-unit id="4339" resname="r1055532516" restype="string" datatype="ruby">
         <source>More than 100,000 U.S. licensed doctors have joined &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; in its virtual care revolution, enabling people everywhere to access quality care from any mobile device or personal computer, and for doctors to deliver care at anytime from anywhere.</source>
         <target>超过100,000位拥有美国执业执照的医生加入了&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;的在线医护革命，使各地的人能够通过任何移动设备或电脑来获得优质医护，使医生能够随时随地为他人提供帮助</target>
       </trans-unit>
@@ -19017,7 +19017,7 @@
         <source>4.5 billion answers served!</source>
         <target>已经提供了45亿份回答</target>
       </trans-unit>
-      <trans-unit id="4341" resname="r509415963" restype="string" datatype="ruby">
+      <trans-unit id="4341" resname="r34209234" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; hits four and a half billion answers served in response to users&apos; health questions.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;回复用户的健康问题已达到了45亿份回答。</target>
       </trans-unit>
@@ -19033,11 +19033,11 @@
         <source>Doctors can now get official continuing medical education &#40;CME&#41; credits for updating their expertise to include delivering virtual care.</source>
         <target>医生现在可以获得官方继续医学教育（CME）学分，更新他们的专业知识，包括提供在线医护。</target>
       </trans-unit>
-      <trans-unit id="4345" resname="r361548327" restype="string" datatype="ruby">
+      <trans-unit id="4345" resname="r654968115" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; chat bot for Facebook&apos;s Messenger app</source>
         <target>为Facebook的Messenger应用程序的&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt; 聊天机器人</target>
       </trans-unit>
-      <trans-unit id="4346" resname="r627108789" restype="string" datatype="ruby">
+      <trans-unit id="4346" resname="r905465413" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; was the only health-focused company to be invited by Facebook to create a chat bot for the new Facebook Messenger app. HealthTap’s bot allows users to type a question into Messenger any time and receive free responses from doctors.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;是唯一一家以健康为重点的公司，由Facebook邀请为新的Facebook Messenger应用程序创建聊天机器人。HealthTap的机器人允许用户随时输入一个问题到Messenger，并收到医生的免费回复。</target>
       </trans-unit>
@@ -19049,7 +19049,7 @@
         <source>Partnership with New Zealand’s Waikato District Health Board offers virtual care to rural residents</source>
         <target>与新西兰的怀卡托区卫生局合作为农村居民提供在线医护</target>
       </trans-unit>
-      <trans-unit id="4349" resname="r497250695" restype="string" datatype="ruby">
+      <trans-unit id="4349" resname="r150499778" restype="string" datatype="ruby">
         <source>Based on &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; HOPES&amp;trade;, New Zealand’s first “virtual hospital” gives more than one million patients the ability to talk to their doctors via video, audio, or text chat rather than travel to an distant outpatient clinic, improving both access and health outcomes for the Waikato population.</source>
         <target>基于&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt; HOPES和贸易;, 新西兰第一家“在线医院”为100多万患者提供了通过视频，音频或文本聊天与医生交谈的能力，而不是前往一个遥远的门诊诊所，从而改善了怀卡托人群的获取和健康状况。</target>
       </trans-unit>
@@ -19061,7 +19061,7 @@
         <source>HealthTap acquires Docphin, brings comprehensive medical education to doctors for free</source>
         <target>HealthTap收购Docphin，为医生免费提供全面的医学教育</target>
       </trans-unit>
-      <trans-unit id="4352" resname="r849120183" restype="string" datatype="ruby">
+      <trans-unit id="4352" resname="r313691951" restype="string" datatype="ruby">
         <source>By acquiring Docphin, a prime educational service for doctors and an emerging go-to resource for new publications in the medical literature, &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; can guide doctors to the latest developments and provide them with personalized alerts and updates on topics relevant to their specialties and expertise.</source>
         <target>通过收购Docphin，医生的主要教育服务和为在医学文献中新出版物的新兴定向资源，&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;可以指导医生最新的发展，并为他们提供与他们的专科和专业相关的话题的个性化消息和更新。</target>
       </trans-unit>
@@ -19073,7 +19073,7 @@
         <source>Group virtual consults with live translators</source>
         <target>有实时翻译的群组在线咨询</target>
       </trans-unit>
-      <trans-unit id="4355" resname="r540342422" restype="string" datatype="ruby">
+      <trans-unit id="4355" resname="r477400212" restype="string" datatype="ruby">
         <source>&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; begins offering virtual consults that include multiple participants such as family members, caregivers, specialists, and live translators. This breakthrough service removes language barriers and dramatically expands access to high-quality, immediate care to &lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt; users in 174 countries around the world.</source>
         <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;开始提供在线咨询，包括多个参与者例如家庭会员，照顾者，专家和实时翻译员。这一突破性服务消除了语言障碍，并大大提高了全球174个国家的&lt;span class=&apos;ht-name&apos; &gt;HealthTap&lt;/span&gt;用户的高质量，即时的医护的获取。</target>
       </trans-unit>
@@ -20437,7 +20437,7 @@
         <source>See my webpage&amp;nbsp;&amp;rsaquo;</source>
         <target>查看我的网页&amp;nbsp;&amp;rsaquo;</target>
       </trans-unit>
-      <trans-unit id="4698" resname="r913995783" restype="string" datatype="ruby">
+      <trans-unit id="4698" resname="r340293211" restype="string" datatype="ruby">
         <source>Totally, and I love that I’m able to leverage my time efficiently to guide even more patients in a shorter period of time toward better health. And they pay for it! It&apos;s easy to &lt;a class=&apos;website-link&apos; href=&apos;%{link}&apos; target=&apos;_blank&apos; &gt;get started with a free Virtual Practice&lt;/a&gt; today.</source>
         <target>完全地，我喜欢我能够有效地利用我的时间在更短的时间为更好的健康来指导更多的患者。他们为此付出！立刻很容易的&lt;a class=’website-link’ href=’%{link}’ target=’_blank’ &gt;开始免费的在线诊疗&lt;/a&gt;。</target>
       </trans-unit>
@@ -21021,7 +21021,7 @@
         <source>Save Time</source>
         <target>节约时间</target>
       </trans-unit>
-      <trans-unit id="4853" resname="r932898299" restype="string" datatype="ruby">
+      <trans-unit id="4853" resname="r1068447080" restype="string" datatype="ruby">
         <source>Concierge Medicine for Everyone&lt;sup&gt;TM&lt;/sup&gt;</source>
         <target>为每一个人的&lt;sup&gt;TM&lt;/sup&gt;的贵宾台医学</target>
       </trans-unit>
@@ -21045,7 +21045,7 @@
         <source>Start Your Membership</source>
         <target>开始您的会员之旅</target>
       </trans-unit>
-      <trans-unit id="4860" resname="r472132183" restype="string" datatype="ruby">
+      <trans-unit id="4860" resname="r18391854" restype="string" datatype="ruby">
         <source>&lt;em&gt;100% Guarantee.&lt;/em&gt;&lt;br/&gt; Only $99 per month for unlimited visits. Cancel anytime.</source>
         <target>&lt;b&gt;100%保证。&lt;/em&gt;&lt;br/&gt;每月只要99$即可无限制访问随时取消</target>
       </trans-unit>
@@ -21057,7 +21057,7 @@
         <source>Ask a Doctor About Nausea</source>
         <target>询问医生关于恶心的问题</target>
       </trans-unit>
-      <trans-unit id="4866" resname="r472132183" restype="string" datatype="ruby">
+      <trans-unit id="4866" resname="r18391854" restype="string" datatype="ruby">
         <source>&lt;em&gt;100% Guarantee.&lt;/em&gt;&lt;br/&gt; Only $99 per month for unlimited visits. Cancel anytime.</source>
         <target>&lt;b&gt;100%保证。&lt;/em&gt;&lt;br/&gt;每月只要99$即可无限制访问随时取消</target>
       </trans-unit>
@@ -21454,7 +21454,7 @@
         <target>话题 - HealthTap</target>
       </trans-unit>
       <trans-unit id="4948" resname="r640116199" restype="string" datatype="ruby">
-        <source>%{name}\&apos;s Topics - HealthTap</source>
+        <source>%{name}&apos;s Topics - HealthTap</source>
         <target>%{name}的话题 - HealthTap</target>
       </trans-unit>
       <trans-unit id="4949" resname="r1018994954" restype="string" datatype="ruby">
@@ -21714,7 +21714,7 @@
         <source>2014 AppRx Awards - Top Doctor-Recommended Health &amp; Medical Apps - HealthTap</source>
         <target>2014年App医生评测奖 - 热门的医生推荐的健康和医疗应用程序 - HealthTap</target>
       </trans-unit>
-      <trans-unit id="5016" resname="r507271923" restype="string" datatype="ruby">
+      <trans-unit id="5016" resname="r367960524" restype="string" datatype="ruby">
         <source>Easily support %{person_name} in %{checklist_name} with helpful reminders and words of encouragement</source>
         <target>在%{checklist_name}中轻松支持%{person_name}，并提供有帮助的提醒和鼓励性语言</target>
       </trans-unit>
@@ -21859,7 +21859,7 @@
         <source>Join an appointment – HealthTap</source>
         <target>加入预约 - HealthTap</target>
       </trans-unit>
-      <trans-unit id="5053" resname="r298237688" restype="string" datatype="ruby">
+      <trans-unit id="5053" resname="r652923140" restype="string" datatype="ruby">
         <source>My patients find it easy, quick, and very valuable to schedule virtual appointments via my Virtual Practice. I&apos;m able to help patients and do good faster in ways I never before imagined possible, and it didn&apos;t cost me a dime. You can easily &lt;a class=&apos;website-link&apos; href=&apos;%{link}&apos; target=&apos;_blank&apos; &gt;set up your Virtual Practice&lt;/a&gt; today too.</source>
         <target>我的患者发现通过我的在线诊疗安排在线预约会很容易，快速和非常有价值。我能够帮助患者和我从来没有想象过的可能做得更好的方式，并且它不会花我一毛钱。您今天也可以轻松地&lt;a class=’website-link’ href=’%{link}’ target=’_blank’ &gt;建立您的在线诊疗&lt;/a&gt;。</target>
       </trans-unit>
@@ -22700,7 +22700,7 @@
   </file>
   <file original="app/controllers/api/v2/external_user_metric_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5269" resname="r206176839" restype="string" datatype="ruby">
+      <trans-unit id="5269" resname="r610096457" restype="string" datatype="ruby">
         <source>An error of type %{ex_class} occured. Message is &apos;%{ex_message}.&apos; You sent %{parameters}.</source>
         <target>发生类型%{ex_class}的错误。信息是’%{ex_message}.’您发送了%{parameters}.</target>
       </trans-unit>
@@ -22772,7 +22772,7 @@
   </file>
   <file original="app/controllers/api/v2/checklists_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5291" resname="r776765384" restype="string" datatype="ruby">
+      <trans-unit id="5291" resname="r1065190526" restype="string" datatype="ruby">
         <source>Private Checklist by %{expert_name}</source>
         <target>%{expert_name}提供的私人清单</target>
       </trans-unit>
@@ -22845,7 +22845,7 @@
         <target>不可用</target>
         <note annotates="source">suggested doctor not available</note>
       </trans-unit>
-      <trans-unit id="5309" resname="r531024500" restype="string" datatype="ruby">
+      <trans-unit id="5309" resname="r596498076" restype="string" datatype="ruby">
         <source>Cannot find session with consult_id %{session_id}.</source>
         <target>找不到与consult_id %{session_id}的会话。</target>
       </trans-unit>

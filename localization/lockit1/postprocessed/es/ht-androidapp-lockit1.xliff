@@ -787,13 +787,13 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>Suscríbete a HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="148" resname="r804242190" restype="string" datatype="java">
-        <source>Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat</source>
-        <target>Habla con un doctor en vivo, 24/7, vía chat de\u00a0video\u00a0o texto</target>
+      <trans-unit id="148" resname="r795486165" restype="string" datatype="java">
+        <source>Talk to a doctor live 24/7 via video or text chat</source>
+        <target>Habla con un doctor en vivo, 24/7, vía chat de video o texto</target>
       </trans-unit>
-      <trans-unit id="149" resname="r942083452" restype="string" datatype="java">
-        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel\u00a0anytime</source>
-        <target>Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar\u00a0en cualquier momento</target>
+      <trans-unit id="149" resname="r610432580" restype="string" datatype="java">
+        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
+        <target>Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar en cualquier momento</target>
       </trans-unit>
       <trans-unit id="150" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
@@ -1430,7 +1430,7 @@
       </trans-unit>
       <trans-unit id="266" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>\\nPrueba una Consulta Virtual ›</target>
+        <target>nPrueba una Consulta Virtual ›</target>
       </trans-unit>
       <trans-unit id="267" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -3634,8 +3634,8 @@
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="664" resname="r112497852" restype="string" datatype="java">
-        <source>Near\u00a0you</source>
-        <target>Cerca de\u00a0ti</target>
+        <source>Near you</source>
+        <target>Cerca de ti</target>
       </trans-unit>
       <trans-unit id="665" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>

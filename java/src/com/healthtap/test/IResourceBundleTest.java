@@ -591,7 +591,17 @@ public class IResourceBundleTest extends TestCase
 		assertEquals("r909283218", resBundle.makeKey("Can\'t find an application for SMS"));
 		assertEquals("r909283218", resBundle.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"));
 	}
-	
+
+	public void testMakeKeyUnicodeEscapes()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		
+		assertEquals("r221792856", resBundle.makeKey("Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat"));
+	}
+
 	public void testMakeKeyTrimWhiteSpace()
 	{
 		final Locale locale = Locale.forLanguageTag("de-DE");

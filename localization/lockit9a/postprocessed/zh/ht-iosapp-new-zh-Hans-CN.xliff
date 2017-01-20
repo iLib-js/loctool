@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="8" resname="Agrees, votes, and recommendations from other experts" restype="string" datatype="x-objective-c">
         <source>Agrees, votes, and recommendations from other experts</source>
-        <target state="accepted">来自其他医生的赞同，投票和评论 </target>
+        <target state="accepted">来自其他医生的赞同，投票和评论</target>
       </trans-unit>
       <trans-unit id="9" resname="Years of experience" restype="string" datatype="x-objective-c">
         <source>Years of experience</source>

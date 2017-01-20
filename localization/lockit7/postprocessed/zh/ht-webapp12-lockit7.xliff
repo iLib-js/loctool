@@ -134,7 +134,7 @@
         <source>Receiving “Agrees” from colleagues</source>
         <target>接受同事的“同意”</target>
       </trans-unit>
-      <trans-unit id="33" resname="r990638085" restype="string" datatype="ruby">
+      <trans-unit id="33" resname="r568917292" restype="string" datatype="ruby">
         <source>Growing your network of &lt;a href=&quot;/&#35;expert/patientdirectory&quot;&gt;patient&lt;/a&gt; and &lt;a href=&quot;/&#35;expert/doctordirectory&quot;&gt;peers&lt;/a&gt;</source>
         <target>成长您的&lt;a href=”/&#35;expert/patientdirectory”&gt;患者&lt;/a&gt;和&lt;a href=&quot;/&#35;expert/doctordirectory&quot;&gt;同行&lt;/a&gt;网络</target>
       </trans-unit>
@@ -158,7 +158,7 @@
         <source>Comment on an answers</source>
         <target>评论一个回答</target>
       </trans-unit>
-      <trans-unit id="39" resname="r168229239" restype="string" datatype="ruby">
+      <trans-unit id="39" resname="r686554926" restype="string" datatype="ruby">
         <source>Share on &lt;a href=&apos;http://www.twitter.com&apos;&gt;Twitter&lt;/a&gt; or &lt;a href=&apos;http://www.facebook.com&apos;&gt;Facebook&lt;/a&gt;</source>
         <target>分享到&lt;a href=’http://www.twitter.com’&gt;Twitter&lt;/a&gt;或&lt;a href=&apos;http://www.facebook.com&apos;&gt;Facebook&lt;/a&gt;</target>
       </trans-unit>
@@ -346,27 +346,27 @@
   </file>
   <file original="app/views/static_pages/sos.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="80" resname="r64330280" restype="string" datatype="ruby">
+      <trans-unit id="80" resname="r661959094" restype="string" datatype="ruby">
         <source>Turnkey solution, easy to use and deploy&lt;br/&gt;No training required</source>
         <target>整体解决方案，易于使用和部署&lt;br/&gt;不需要培训</target>
       </trans-unit>
-      <trans-unit id="81" resname="r644800481" restype="string" datatype="ruby">
+      <trans-unit id="81" resname="r209899411" restype="string" datatype="ruby">
         <source>Real-time population health insights&lt;br/&gt;Based on location and demographic</source>
         <target>实时人口健康分析&lt;br/&gt;基于地区和人口统计</target>
       </trans-unit>
-      <trans-unit id="82" resname="r31776158" restype="string" datatype="ruby">
+      <trans-unit id="82" resname="r697340447" restype="string" datatype="ruby">
         <source>Always available technical support&lt;br/&gt;Warm transfer capabilities and protocols</source>
         <target>始终可用的技术支持&lt;br/&gt;热转移功能和协议</target>
       </trans-unit>
-      <trans-unit id="83" resname="r651656946" restype="string" datatype="ruby">
+      <trans-unit id="83" resname="r17090681" restype="string" datatype="ruby">
         <source>Specific, actionable doctor insights&lt;br/&gt;Answers, tips, and checklists</source>
         <target>具体，可操作的医生见解&lt;br/&gt;回答，小贴士和清单</target>
       </trans-unit>
-      <trans-unit id="84" resname="r1037881934" restype="string" datatype="ruby">
+      <trans-unit id="84" resname="r434426435" restype="string" datatype="ruby">
         <source>Immediate response and access&lt;br/&gt;%{num} doctors across 141 specialties</source>
         <target>立即回复和访问&lt;br/&gt;%{num}超过141个专科的医生</target>
       </trans-unit>
-      <trans-unit id="85" resname="r989762636" restype="string" datatype="ruby">
+      <trans-unit id="85" resname="r93056889" restype="string" datatype="ruby">
         <source>Expert do’s and don’ts&lt;br/&gt;Timely alerts and doctor reminders</source>
         <target>专家做和不做&lt;br/&gt;及时的警报和医生的提醒</target>
       </trans-unit>
@@ -486,7 +486,7 @@
         <source>Whether it&apos;s the middle of the night or you&apos;re traveling out of the country, HealthTap doctors are here for you.</source>
         <target>无论是在半夜或出国旅行，HealthTap的医生都会为您服务。</target>
       </trans-unit>
-      <trans-unit id="113" resname="r67011063" restype="string" datatype="ruby">
+      <trans-unit id="113" resname="r278823132" restype="string" datatype="ruby">
         <source>HealthTap Prime puts %{num} top doctors in your pocket&amp;mdash;in under two minutes!</source>
         <target>HealthTap Prime把%{num}位顶级医生放入您的口袋&amp;mdash；在两分钟内！</target>
       </trans-unit>
@@ -674,7 +674,7 @@
         <source>But don’t take our word for it.</source>
         <target>但不要只是听取我们的一面之词。</target>
       </trans-unit>
-      <trans-unit id="156" resname="r508154106" restype="string" datatype="ruby">
+      <trans-unit id="156" resname="r377938799" restype="string" datatype="ruby">
         <source>Ask the more than %{num_docs} &lt;br&gt;doctors who joined us, the millions we served from all&lt;br&gt;over the world, and the more than 14,000 users who told us&lt;br&gt;we saved their lives!</source>
         <target>请询问已加入我们的超过%{num_docs}名医生、我们曾经服务的来自全世界的数百万人士以及向我们反馈我们挽救了其生命的超过14000名用户！</target>
       </trans-unit>
@@ -682,7 +682,7 @@
         <source>How? We’ve handpicked more than %{num_docs} of the world’s best doctors to quickly answer your health questions—for free.</source>
         <target>如何？我们已经挑选了超过%{num_docs}位世界上最好的医生，以免费快速回答您的健康问题。</target>
       </trans-unit>
-      <trans-unit id="158" resname="r576588458" restype="string" datatype="ruby">
+      <trans-unit id="158" resname="r638463622" restype="string" datatype="ruby">
         <source>We help more than %{num_docs} top doctors in our network enhance their reputations,&lt;br&gt;build professional networks, better serve existing patients, grow their practices,&lt;br&gt;and increase their income.</source>
         <target>我们帮助我们网络中超过%{num_docs}名顶级医生提高他们的声誉，&lt;br&gt;建立专业网络，更好地服务现有患者，成长他们的诊疗&lt;br&gt;以及增加他们的收入。</target>
       </trans-unit>
@@ -747,7 +747,7 @@
         <source>Government &amp; Population Managers</source>
         <target>政府和人口管理</target>
       </trans-unit>
-      <trans-unit id="172" resname="r746961734" restype="string" datatype="ruby">
+      <trans-unit id="172" resname="r830292979" restype="string" datatype="ruby">
         <source>HealthTap Cloud enables developers to build interoperable, engaging, and smart health experiences, powered by HOPES&lt;sup&gt;TM&lt;/sup&gt;</source>
         <target>HealthTap云使开发人员能够建立可共同操作、有吸引力的、智能的健康体验，由HOPES&lt;sup&gt;TM&lt;/sup&gt;提供技术支持</target>
       </trans-unit>
@@ -755,7 +755,7 @@
   </file>
   <file original="app/views/static_pages/get_give_health.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="173" resname="r195943088" restype="string" datatype="ruby">
+      <trans-unit id="173" resname="r369622797" restype="string" datatype="ruby">
         <source>Canary&lt;br/&gt;Foundation</source>
         <target>金丝雀&lt;br/&gt;基金会</target>
       </trans-unit>
@@ -763,7 +763,7 @@
         <source>HealthTap consults will be used to raise funds for early detection cancer research</source>
         <target>HealthTap咨询将用于为早期检测癌症研究筹集资金</target>
       </trans-unit>
-      <trans-unit id="175" resname="r684901890" restype="string" datatype="ruby">
+      <trans-unit id="175" resname="r313623963" restype="string" datatype="ruby">
         <source>Muscular Dystrophy&lt;br/&gt;Association</source>
         <target>肌营养不良症&lt;br/&gt;协会</target>
       </trans-unit>
@@ -771,7 +771,7 @@
         <source>Help kids and adults with neuromuscular diseases connect with a doctor from the comfort of their home</source>
         <target>帮助患有神经肌肉疾病的儿童和成人在他们舒适的家中与医生取得联系</target>
       </trans-unit>
-      <trans-unit id="177" resname="r971975343" restype="string" datatype="ruby">
+      <trans-unit id="177" resname="r766863237" restype="string" datatype="ruby">
         <source>SF Hep B&lt;br/&gt;Free</source>
         <target>SF乙肝&lt;br/&gt;Free</target>
       </trans-unit>
@@ -779,7 +779,7 @@
         <source>Provide individuals at high risk for Hepatitis B with access top doctors when they need it most</source>
         <target>为乙型肝炎高风险的人群在他们最需要时可接触顶级医生</target>
       </trans-unit>
-      <trans-unit id="179" resname="r170304312" restype="string" datatype="ruby">
+      <trans-unit id="179" resname="r369044487" restype="string" datatype="ruby">
         <source>Action Against&lt;br/&gt;Hunger</source>
         <target>反对&lt;br/&gt;饥饿行动</target>
       </trans-unit>
@@ -787,7 +787,7 @@
         <source>Give ACF staff access to doctors as they save the lives of severely malnourished children in vulnerable communities</source>
         <target>使ACF工作人员能够访问医生，因为他们挽救了脆弱社区中严重营养不良儿童的生命</target>
       </trans-unit>
-      <trans-unit id="181" resname="r167426065" restype="string" datatype="ruby">
+      <trans-unit id="181" resname="r1011692691" restype="string" datatype="ruby">
         <source>Gifting&lt;br/&gt;Care</source>
         <target>Gifting&lt;br/&gt;Care</target>
       </trans-unit>
@@ -795,7 +795,7 @@
         <source>Provide homebound patients recovering from surgeries with easy, convenient doctor access</source>
         <target>为从手术中恢复的居家患者提供简单方便的医生访问</target>
       </trans-unit>
-      <trans-unit id="183" resname="r739969059" restype="string" datatype="ruby">
+      <trans-unit id="183" resname="r460296045" restype="string" datatype="ruby">
         <source>Blind Judo&lt;br/&gt;Foundation</source>
         <target>盲人柔道&lt;br/&gt;基金会</target>
       </trans-unit>
@@ -803,7 +803,7 @@
         <source>Give blind and visually impaired individuals access to doctors from any mobile device or PC</source>
         <target>使盲人和视障者能够从任何移动设备或个人电脑访问医生</target>
       </trans-unit>
-      <trans-unit id="185" resname="r301059848" restype="string" datatype="ruby">
+      <trans-unit id="185" resname="r59260148" restype="string" datatype="ruby">
         <source>Project&lt;br/&gt;WeHOPE</source>
         <target>Project&lt;br/&gt;WeHOPE</target>
       </trans-unit>
@@ -811,7 +811,7 @@
         <source>Provide homeless adults in San Mateo and Santa Clara Counties access to medical care</source>
         <target>为圣马特奥和圣克拉拉县无家可归的成年人提供医疗服务</target>
       </trans-unit>
-      <trans-unit id="187" resname="r419293101" restype="string" datatype="ruby">
+      <trans-unit id="187" resname="r741939369" restype="string" datatype="ruby">
         <source>Atlas&lt;br/&gt;DIY</source>
         <target>Atlas&lt;br/&gt;DIY</target>
       </trans-unit>
@@ -875,7 +875,7 @@
         <source>Set up your Virtual Practice with help from our Chief Medical Officer</source>
         <target>在我们的首席医务官的帮助下设置您的在线诊疗</target>
       </trans-unit>
-      <trans-unit id="202" resname="r498913645" restype="string" datatype="ruby">
+      <trans-unit id="202" resname="r443190157" restype="string" datatype="ruby">
         <source>Substantial reduction in &lt;br&gt; per-transaction costs</source>
         <target>大幅减少&lt;br&gt;每笔交易费用</target>
       </trans-unit>
@@ -947,7 +947,7 @@
   </file>
   <file original="app/views/static_pages/benefit_focus.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="217" resname="r1052212576" restype="string" datatype="ruby">
+      <trans-unit id="217" resname="r70143997" restype="string" datatype="ruby">
         <source>Doctors write checklists;&lt;br/&gt;we send reminders</source>
         <target>医生写清单; &lt;br/&gt;我们发送提醒</target>
       </trans-unit>
@@ -1043,7 +1043,7 @@
   </file>
   <file original="app/views/pages/feelGood/sign_up_v2.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="236" resname="r286644437" restype="string" datatype="ruby">
+      <trans-unit id="236" resname="r114728304" restype="string" datatype="ruby">
         <source>Join today for &lt;b&gt;free&lt;/b&gt; to feel good and improve your health!</source>
         <target>立刻&lt;b&gt;免费&lt;/b&gt;加入，感觉良好并提高您的健康！</target>
       </trans-unit>
@@ -1183,7 +1183,7 @@
   </file>
   <file original="app/views/general_mailer/partials/enterprise/_signup_60.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="258" resname="r888076570" restype="string" datatype="ruby">
+      <trans-unit id="258" resname="r450019034" restype="string" datatype="ruby">
         <source>Thanks to %{org} you can now &lt;strong&gt;begin your journey toward health and happiness&lt;/strong&gt;</source>
         <target>感谢%{org}您现在可以&lt;strong&gt;开始健康和快乐的旅程&lt;/strong&gt;</target>
       </trans-unit>
@@ -1459,7 +1459,7 @@
   </file>
   <file original="app/views/general_mailer/member_marketing_rate_app.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="307" resname="r787522663" restype="string" datatype="ruby">
+      <trans-unit id="307" resname="r166245054" restype="string" datatype="ruby">
         <source>Have feedback? If you you have some direct feedback on where we can improve even more, please feel free to email us at %{email}. We always welcome your suggestions!</source>
         <target>有反馈吗？如果您对我们可以进一步改进的地方有一些直接反馈，请随时给我们发送电子邮件%{email}。我们随时欢迎您的建议！</target>
       </trans-unit>
@@ -1483,7 +1483,7 @@
   </file>
   <file original="app/views/general_mailer/member_invited_nux.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="310" resname="r412045954" restype="string" datatype="ruby">
+      <trans-unit id="310" resname="r111784362" restype="string" datatype="ruby">
         <source>Your friend%{name} invited you to join HealthTap and has &lt;strong&gt;gifted you $5&lt;/strong&gt; to use towards a live video or text consult with a top U.S. licensed doctor!</source>
         <target>您的朋友%{name}邀请您加入HealthTap，并已&lt;strong&gt;赠送您$5美元&lt;/strong&gt;，用于与美国顶级拥有执业执照医生的进行实时视频或文字咨询！</target>
       </trans-unit>
@@ -1539,7 +1539,7 @@
   </file>
   <file original="app/views/general_mailer/member_deactivated.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="321" resname="r297031137" restype="string" datatype="ruby">
+      <trans-unit id="321" resname="r64073948" restype="string" datatype="ruby">
         <source>Please know that you may re-activate your account at any time up to one year. After one year, your account information will likely be permanently deleted. Just write back to %{open_link}%{email}%{close_link} requesting re-activation. If you do come back, we’ll do our best to make sure you have the most delightful experience! :&#41;</source>
         <target>请注意，您可以在一年内的任何时间重新激活帐户。一年后，您的帐户信息可能会被永久删除。只需发送信息到%{open_link}%{email}{close_link}，请求重新激活。如果您想要回来，我们会尽全力为您提供有最愉快的体验！:&#41;</target>
       </trans-unit>
@@ -1824,7 +1824,7 @@
   </file>
   <file original="app/views/b2b/partial/_compass_features.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="368" resname="r561036126" restype="string" datatype="ruby">
+      <trans-unit id="368" resname="r474955460" restype="string" datatype="ruby">
         <source>The world’s largest library of doctor-created and peer-reviewed insights, with %{answer_count} billion answers served by %{doctor_count} top doctors across 140+ specialties.</source>
         <target>世界上最大的医生创作和同行评议的图书馆，%{doctor_count}超过140多个专业的顶尖医生提供%{answer_count}数百万个回答。</target>
       </trans-unit>
@@ -1941,7 +1941,7 @@
         <source>Save precious time by preventing repetitive answers by publishing them to our knowledgebase. Eliminate manual follow ups with your patients by you or your staff by automating reminders.</source>
         <target>通过发布到我们的知识库，避免重复的回答以节省宝贵的时间。通过自动提醒，消除您或您的员工对您的患者的手动跟踪。</target>
       </trans-unit>
-      <trans-unit id="394" resname="r441840578" restype="string" datatype="ruby">
+      <trans-unit id="394" resname="r788198062" restype="string" datatype="ruby">
         <source>Earn unlimited free AMA PRA Category 1&lt;sup&gt;TM&lt;/sup&gt; CME credits while sharing knowledge with colleagues and patients.</source>
         <target>当与同事和患者分享知识时获得无限免费的AMA PRA 1类交易&lt;sup&gt;TM&lt;/sup&gt;CME信用。</target>
       </trans-unit>
@@ -2605,11 +2605,11 @@
         <source>%{expert}, your Concierge Virtual Practice is active again. You&apos;re good to go!</source>
         <target>%{expert}, 您的贵宾台在线诊疗已再次激活。好好干吧！</target>
       </trans-unit>
-      <trans-unit id="548" resname="r559817010" restype="string" datatype="ruby">
+      <trans-unit id="548" resname="r591778277" restype="string" datatype="ruby">
         <source>&quot;Ron Gutman and the HealthTap Team&quot; &lt;notifications@healthtap.com&gt;</source>
         <target>“Ron Gutman和HealthTap团队&quot; &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
-      <trans-unit id="549" resname="r894928843" restype="string" datatype="ruby">
+      <trans-unit id="549" resname="r935072635" restype="string" datatype="ruby">
         <source>&quot;Ron Gutman &#40;HealthTap&#41;&quot; &lt;notifications@healthtap.com&gt;</source>
         <target>“Ron Gutman &#40;HealthTap&#41;&quot; &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
@@ -2685,7 +2685,7 @@
         <source>Hi there, let’s chat to see if I can help you</source>
         <target>您好，我们聊天看看我是否可以帮助您</target>
       </trans-unit>
-      <trans-unit id="568" resname="r150651149" restype="string" datatype="ruby">
+      <trans-unit id="568" resname="r316683989" restype="string" datatype="ruby">
         <source>Hi there, would you like to send %{person} a secure message?</source>
         <target>您好, 您希望发送%{person}安全信息吗？</target>
       </trans-unit>
@@ -2741,7 +2741,7 @@
         <source>REMINDER: Lab test results are back for your patient, with a critical value</source>
         <target>提醒：为您的患者得到的实验室测试结果，具有重要价值</target>
       </trans-unit>
-      <trans-unit id="582" resname="r335548656" restype="string" datatype="ruby">
+      <trans-unit id="582" resname="r194518077" restype="string" datatype="ruby">
         <source>&apos;HealthTap Quality Care&apos; &lt;support@healthtap.com&gt;</source>
         <target>HealthTap质量保证&apos; &lt;support@healthtap.com&gt;</target>
       </trans-unit>
@@ -2753,23 +2753,23 @@
         <source>%{person}%{person}</source>
         <target>%{person}%{person}</target>
       </trans-unit>
-      <trans-unit id="585" resname="r428309437" restype="string" datatype="ruby">
+      <trans-unit id="585" resname="r203092010" restype="string" datatype="ruby">
         <source>%{fn}, start using the %{org}, powered by HealthTap, today!</source>
         <target>%{fn}，开始使用%{org}，由HealthTap提供支持，立刻！</target>
       </trans-unit>
-      <trans-unit id="586" resname="r1066313605" restype="string" datatype="ruby">
+      <trans-unit id="586" resname="r1046565453" restype="string" datatype="ruby">
         <source>%{fn}, congratulations! Let’s start using HealthTap Compass for %{org} today</source>
         <target>%{fn}，恭喜！让我们立刻开始使用为%{org}提供的HealthTap Compass</target>
       </trans-unit>
-      <trans-unit id="587" resname="r885261874" restype="string" datatype="ruby">
+      <trans-unit id="587" resname="r44051618" restype="string" datatype="ruby">
         <source>Congratulations! Let’s start using HealthTap Compass for %{org} today</source>
         <target>恭喜！让我们立刻开始使用为%{org}提供的HealthTap Compass</target>
       </trans-unit>
-      <trans-unit id="588" resname="r39135700" restype="string" datatype="ruby">
+      <trans-unit id="588" resname="r808116645" restype="string" datatype="ruby">
         <source>%{fn}, ready to take control of your health and wellbeing? The %{org}, powered by HealthTap, can help.</source>
         <target>%{fn}，准备好管理您的健康与保健了吗？%{org}，（由HealthTap提供支持）可以帮助您。</target>
       </trans-unit>
-      <trans-unit id="589" resname="r60916497" restype="string" datatype="ruby">
+      <trans-unit id="589" resname="r238798111" restype="string" datatype="ruby">
         <source>%{fn}, ready to take control of your health? We can help</source>
         <target>%{fn}，准备好管理您的健康了吗？我们可以帮助</target>
       </trans-unit>
@@ -2777,11 +2777,11 @@
         <source>Ready to take control of your health? We can help</source>
         <target>准备来管理您的健康？我们可以帮助</target>
       </trans-unit>
-      <trans-unit id="591" resname="r1072716649" restype="string" datatype="ruby">
+      <trans-unit id="591" resname="r526564008" restype="string" datatype="ruby">
         <source>%{fn}, gain access to free health information at your fingertips!</source>
         <target>%{fn}，从您的指尖获得免费的健康信息！</target>
       </trans-unit>
-      <trans-unit id="592" resname="r251519263" restype="string" datatype="ruby">
+      <trans-unit id="592" resname="r675824490" restype="string" datatype="ruby">
         <source>%{fn}, tell us about yourself! Help doctors help you.</source>
         <target>%{fn}，告诉我们关于您自己的一些事情！帮助医生帮助您。</target>
       </trans-unit>
@@ -2789,7 +2789,7 @@
         <source>Tell us about yourself! Help doctors help you.</source>
         <target>告诉我们关于您自己!帮助医生帮助您。</target>
       </trans-unit>
-      <trans-unit id="594" resname="r710474054" restype="string" datatype="ruby">
+      <trans-unit id="594" resname="r607774348" restype="string" datatype="ruby">
         <source>%{fn}, accomplish your health resolutions today –we can help!</source>
         <target>%{fn}，完成您今天的健康决定 –我们可以提供帮助！</target>
       </trans-unit>
@@ -2977,7 +2977,7 @@
         <source>Post-launch success</source>
         <target>发布后成功</target>
       </trans-unit>
-      <trans-unit id="638" resname="r995429480" restype="string" datatype="ruby">
+      <trans-unit id="638" resname="r703893325" restype="string" datatype="ruby">
         <source>HealthTap’s platform architecture, extensible APIs, and world-class engineering and implementation teams &lt;b&gt;make deployment fast and easy.&lt;/b&gt; A typical &lt;b&gt;implementation can be accomplished in a few days or weeks,&lt;/b&gt; depending on your requirements.</source>
         <target>HealthTap的平台架构，可扩展API以及世界级的工程和实施团队&lt;b&gt;使部署更加快速和简单。 &lt;/b&gt;根据您的要求，&lt;/b&gt;典型的&lt;b&gt;实现可以在几天或几周内完成。</target>
       </trans-unit>
@@ -3001,7 +3001,7 @@
         <source>Train doctors and onboard patients</source>
         <target>培训医生和就诊患者</target>
       </trans-unit>
-      <trans-unit id="644" resname="r983659132" restype="string" datatype="ruby">
+      <trans-unit id="644" resname="r405111950" restype="string" datatype="ruby">
         <source>HealthTap’s platform and world-class engineering &amp; support teams make getting started fast and easy. You can have a Virtual Practice going &lt;b&gt;in minutes,&lt;/b&gt; with no software to download or hardware to install.</source>
         <target>HealthTap的平台和世界一流的工程和支持团队使开展变得快速且容易。您在&lt;b&gt;几分钟内&lt;/b&gt;即可进行在线诊疗，无需下载软件或安装硬件。</target>
       </trans-unit>
@@ -3009,7 +3009,7 @@
         <source>Query-to-cure virtual care for your doctors and patients, anytime, anywhere</source>
         <target>随时随地为您的医生和患者提供从查询到治疗的在线医护</target>
       </trans-unit>
-      <trans-unit id="646" resname="r114471792" restype="string" datatype="ruby">
+      <trans-unit id="646" resname="r882848698" restype="string" datatype="ruby">
         <source>HealthTap’s platform architecture, extensible APIs, and world-class engineering and implementation teams &lt;b&gt;make deployment fast and easy.&lt;/b&gt; A typical &lt;b&gt;implementation can be accomplished in a few days or weeks,&lt;/b&gt; depending on your requirements, with no software to download or hardware to install.</source>
         <target>HealthTap的平台架构，可扩展API以及世界级的工程和实施团队&lt;b&gt;使部署更加快速和简单。 &lt;/b&gt;根据您的要求，无需下载软件或安装硬件，&lt;/b&gt;典型的&lt;b&gt;实现可以在几天或几周内完成。</target>
       </trans-unit>

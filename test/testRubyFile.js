@@ -196,6 +196,24 @@ module.exports = {
         test.done();
 	},
 
+	testRubyFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+
+        test.equals(rf.makeKey("Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat"), "r675065080");
+        
+        test.done();
+	},
+	
 	testRubyFileMakeKeySkipHTML: function(test) {
         test.expect(2);
 

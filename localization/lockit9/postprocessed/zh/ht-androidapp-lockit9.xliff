@@ -28,7 +28,7 @@
   <file original="src/com/healthtap/userhtexpress/adapters/GoalsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="1199" resname="r565514845" restype="string" datatype="java">
-        <source>We\&apos;ll share more tips and checklists to help you with {0}</source>
+        <source>We&apos;ll share more tips and checklists to help you with {0}</source>
         <target>我们会分享更多的小贴士和清单来帮助您{0}</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
