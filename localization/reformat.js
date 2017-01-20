@@ -2,9 +2,9 @@ var fs = require("fs");
 var log4js = require("log4js");
 var path = require("path");
 
-var Xliff = require("./lib/Xliff.js");
+var Xliff = require("../lib/Xliff.js");
 var TranslationUnit = Xliff.TranslationUnit;
-var TranslationSet = require("./lib/TranslationSet.js");
+var TranslationSet = require("../lib/TranslationSet.js");
 
 log4js.configure(path.dirname(module.filename) + '/log4js.json');
 
