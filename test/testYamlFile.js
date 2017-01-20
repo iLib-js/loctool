@@ -1272,5 +1272,28 @@ module.exports = {
         test.equal(y.getSchema(), undefined);
         test.equal(y.getExcludedKeysFromSchema().length, 0);
         test.done();
+    },
+
+    testYamlParseExcludedKeys: function(test) {
+        test.expect(4);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "./test3.yml"
+        });
+        test.ok(y);
+        y.extract();
+        var set = y.getTranslationSet();
+        test.ok(set);
+        test.equal(set.getBySource('b','title@read_me').getLocalize(), true);
+        test.equal(set.getBySource('d','title@do_not_read_me').getLocalize(), false);
+        test.done();
     }
 };
