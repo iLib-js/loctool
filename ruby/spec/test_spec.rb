@@ -472,6 +472,19 @@ describe 'HamlLocalizer' do
       local_name_to_output['de-DE'].include?('.legal_content.mt20').should be_true
     end
 
+    it 'translate text in line with markup' do
+      template = '
+.hopes-intro
+  .vertical-align
+    %p
+      We’ve built the world’s first Health Operating System (HOPES<sup>TM</sup>),  powering the delivery of world-class healthcare, from Query-to-Cure
+'
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      puts local_name_to_output['de-DE']
+      local_name_to_output['de-DE'].include?('powering the delivery').should be_false
+
+    end
+
   end
 
   describe 'british translation' do

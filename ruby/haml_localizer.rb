@@ -116,7 +116,7 @@ def get_overlap_strings2(orig_with_markup, stripped)
   #puts "md[1]=#{md[1]}"
   if md[3].length == 0
     ret = []
-  elsif stripped.include?(md[3])
+  elsif stripped.include?(Sanitize.clean(md[3]))
     #(0..md.length-1).each{|i| puts "md [#{i}]=#{puts md[i]}\n"}
     #puts "res=#{md[3]}"
     #puts "last-char=#{orig_with_markup[orig_with_markup.length - 1]} ord=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
