@@ -2,9 +2,9 @@
 <xliff version="1.2">
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskQuestionToDocFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="1" resname="r743681507" restype="string" datatype="java">
-        <source>\\nTry a Virtual Consult ›</source>
-        <target state="translated">\\n尝试一次在线咨询 ›</target>
+      <trans-unit id="1" resname="r547162446" restype="string" datatype="java">
+        <source>\nTry a Virtual Consult ›</source>
+        <target state="translated">\n尝试一次在线咨询 ›</target>
       </trans-unit>
     </body>
   </file>

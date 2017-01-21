@@ -114,39 +114,39 @@
   </file>
   <file original="app/views/static_pages/benefit_focus.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="86" resname="r269501934" restype="string" datatype="ruby">
+      <trans-unit id="86" resname="r945917850" restype="string" datatype="ruby">
         <source>Our %{n} top doctors are here for you,&lt;br&gt; anytime, anywhere</source>
         <target>Nuestros %{n} mejores doctores están aquí para ti,&lt;br&gt; a cualquier hora y en cualquier lugar.</target>
       </trans-unit>
-      <trans-unit id="87" resname="r363561295" restype="string" datatype="ruby">
+      <trans-unit id="87" resname="r260412711" restype="string" datatype="ruby">
         <source>You get doctor advice, actionable plans,&lt;br&gt; prescriptions, referrals, and even lab tests</source>
         <target>Obtienes consejo de doctores, planes accionables,&lt;br&gt; recetas, referencias y hasta pruebas de laboratorio</target>
       </trans-unit>
-      <trans-unit id="88" resname="r352626996" restype="string" datatype="ruby">
+      <trans-unit id="88" resname="r542330338" restype="string" datatype="ruby">
         <source>You get doctor advice,&lt;br&gt;actionable plans,&lt;br&gt;prescriptions, referrals,&lt;br&gt;and even lab tests</source>
         <target>Obtienes consejo de doctores,&lt;br&gt;planes accionables,&lt;br&gt;recetas, referencias&lt;br&gt;y hasta pruebas de laboratorio</target>
       </trans-unit>
-      <trans-unit id="89" resname="r917056356" restype="string" datatype="ruby">
+      <trans-unit id="89" resname="r192293734" restype="string" datatype="ruby">
         <source>Safe, secure, and private:&lt;br&gt; We provide the right care when you need it most</source>
         <target>Segura y privada:&lt;br&gt; Brindamos la atención adecuada cuando más la necesitas</target>
       </trans-unit>
-      <trans-unit id="90" resname="r699856334" restype="string" datatype="ruby">
+      <trans-unit id="90" resname="r83587156" restype="string" datatype="ruby">
         <source>HealthTap Compass brings you&lt;br&gt;immediate answers&lt;br&gt;to your most pressing concerns&lt;br&gt;with convenience and compassion</source>
         <target>HealthTap Compass te brinda&lt;br&gt;respuestas inmediatas&lt;br&gt;a tus más urgentes preocupaciones&lt;br&gt;con conveniencia y compasión</target>
       </trans-unit>
-      <trans-unit id="91" resname="r988622612" restype="string" datatype="ruby">
+      <trans-unit id="91" resname="r102174680" restype="string" datatype="ruby">
         <source>HealthTap Compass brings&lt;br&gt;you immediate answers&lt;br&gt;to your most pressing&lt;br&gt;concerns with convenience&lt;br&gt;and compassion</source>
         <target>HealthTap Compass te brinda&lt;br&gt;respuestas inmediatas&lt;br&gt;a tus más urgentes&lt;br&gt;preocupaciones con conveniencia&lt;br&gt;y compasión</target>
       </trans-unit>
-      <trans-unit id="92" resname="r768297829" restype="string" datatype="ruby">
+      <trans-unit id="92" resname="r470820396" restype="string" datatype="ruby">
         <source>No waiting rooms,&lt;br&gt;only immediate knowledge and immediate care</source>
         <target>Sin salas de espera,&lt;br&gt;solo conocimiento inmediato y atención inmediata</target>
       </trans-unit>
-      <trans-unit id="93" resname="r548219023" restype="string" datatype="ruby">
+      <trans-unit id="93" resname="r445983580" restype="string" datatype="ruby">
         <source>You&apos;re never alone&lt;br&gt; Just &lt;i&gt; Tap-in &lt;/i&gt;</source>
         <target>Nunca estás solo&lt;br&gt; Solo &lt;i&gt; Entra &lt;/i&gt;</target>
       </trans-unit>
-      <trans-unit id="94" resname="r931665539" restype="string" datatype="ruby">
+      <trans-unit id="94" resname="r422123155" restype="string" datatype="ruby">
         <source>and a healthier, happier world&lt;br&gt;starts with you</source>
         <target>y un mundo más saludable y feliz&lt;br&gt;comienza contigo</target>
       </trans-unit>
@@ -210,7 +210,7 @@
   </file>
   <file original="app/views/people/feelGood/influencer/profile.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="117" resname="r203662292" restype="string" datatype="ruby">
+      <trans-unit id="117" resname="r942298720" restype="string" datatype="ruby">
         <source>Get more helpful, healthy guidance from</source>
         <target>Obtén orientación útil y saludable de</target>
       </trans-unit>
@@ -332,15 +332,15 @@
         <source>In the meantime, please use latest versions of %{chrome_link_start}Chrome%{link_end}, %{firefox_link_start}Firefox%{link_end}, or %{ie_link_start}Internet Explorer%{link_end}.</source>
         <target>Mientras tanto, por favor, usa las últimas versiones de %{chrome_link_start}Chrome%{link_end}, %{firefox_link_start}Firefox%{link_end} o %{ie_link_start}Internet Explorer%{link_end}.</target>
       </trans-unit>
-      <trans-unit id="143" resname="r761507253" restype="string" datatype="ruby">
+      <trans-unit id="143" resname="r857301806" restype="string" datatype="ruby">
         <source>In order to talk to doctors from your computer,&lt;br&gt;you&apos;ll need to &lt;b&gt;install a browser video plug-in%{asterisk}&lt;/b&gt;&lt;br&gt; It&apos;s quick and easy, and we&apos;ll help you : &#41;</source>
         <target>Para pdoer hablar con doctores desde tu computadora,&lt;br&gt;necesitaras &lt;b&gt;instalar un complemento  de video a tu navegador%{asterisk}&lt;/b&gt;&lt;br&gt; Es rápido y fácil, y nosotros te ayudaremos : &#41;</target>
       </trans-unit>
-      <trans-unit id="144" resname="r401914141" restype="string" datatype="ruby">
+      <trans-unit id="144" resname="r152667637" restype="string" datatype="ruby">
         <source>*Note: If you&apos;ve installed our plug-in before,&lt;br&gt;you may need to %{link_tag_start}uninstall the old version%{link_tag_end} first.</source>
         <target>*Nota: Si ya has instalado nuestro complemento anteriormente,&lt;br&gt;puede que necesites %{link_tag_start}desinstalar la vieja versión%{link_tag_end} primero.</target>
       </trans-unit>
-      <trans-unit id="145" resname="r926022994" restype="string" datatype="ruby">
+      <trans-unit id="145" resname="r330695315" restype="string" datatype="ruby">
         <source>Download the safe, &lt;br&gt;secure plug-in</source>
         <target>Descarga el seguro &lt;br&gt;complemento</target>
       </trans-unit>
@@ -416,11 +416,11 @@
   </file>
   <file original="app/views/insurance_agent_wave_3_non_openers_b.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="183" resname="r479459472" restype="string" datatype="ruby">
+      <trans-unit id="183" resname="r592263660" restype="string" datatype="ruby">
         <source>This is Dr. Geoff Rutledge, the Chief Medical Officer at HealthTap. I’d like to personally offer you a benefits solution that can significantly reduce healthcare costs for your clients, deliver peace of mind for their employees, and strengthen your customer relationships. Our award-winning approach is already delighting hundreds of millions of people across the world and rapidly displacing traditional telemedicine offerings within dozens of Fortune 500 companies.  Today, we are offering this proven solution to you at an unprecedented value that will help you make more money and retain your book of business.</source>
         <target>Este es el Dr. Geoff Rutledge, el Oficial Médico en Jefe en HealthTap. Me gustaría ofrecerte personalmente una solución de beneficios que puede reducir costos de atención a la salud significativamente para tus clientes, entregar paz mental para su empleados y relaciones. Nuestro galardonado enfoque ya está encantando a cientos de millones de personas en todo el mundo, y está desplazando rápidamente a ofertas tradicionales de telemedicina dentro de docenas de compañías Fortune 500. Hoy, te estamos ofreciendo esta probada solución, a un valor sin precedente, que te ayudará a ganar más dinero y retener tu libreta de negocios.</target>
       </trans-unit>
-      <trans-unit id="184" resname="r615527004" restype="string" datatype="ruby">
+      <trans-unit id="184" resname="r551365177" restype="string" datatype="ruby">
         <source>HealthTap is a tremendous complement to traditional health insurance plans, particularly well suited for clients with high deductible plans.  Our HealthTap Prime service is an affordable subscription to all of the virtual care needed by an individual &#40;or even a family&#41;, offering unlimited access to doctor-created health information and answers to health questions, as well as immediate consultations with primary care doctors &#40;via text, audio or video&#41;, 24 hours a day, 7 days a week, directly from any web connection, or mobile device.</source>
         <target>HealthTap es un tremendo complemento a planes de seguro médico tradicionales, particularmente apropiados para clientes con planes con altos deducibles. Nuestro servicio de HealthTap Prime es una suscripción accesible para toda la atención virtual que un individuo &#40;o hasta una familia&#41; necesita, ofreciendo acceso ilimitados a información de salud y respuestas a preguntas de salud creadas por doctores, así como consultas inmediatas con doctores de atención primaria &#40;a través de texto, audio o video&#41;, 24 horas al día, 7 días a la semana, y desde cualquier conexión web o dispositivo móvil.</target>
       </trans-unit>
@@ -573,11 +573,11 @@
   </file>
   <file original="app/views/general_mailer/travel_3_unsent_saachi_geoff_gary_yellowpages.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="225" resname="r633306447" restype="string" datatype="ruby">
+      <trans-unit id="225" resname="r726166789" restype="string" datatype="ruby">
         <source>Building on our success serving Fortune 500 customers and legions of elite travelers,  we are reaching out to a very select group of top-tier travel agencies . Since we already serve over 100 million consumers across the United States and around the world, we know that our premium-quality and affordable service will bring tremendous value to your business and your customers.</source>
         <target>Partiendo de nuestro éxito atendiendo a clientes Fortune 500 y a legiones de viajeros de élite, le estamos tendiendo la mando a un selecto grupo de agencias de viaje del más alto nivel. Como ya atendemos a más de 100 millones de clientes en los Estados Unidos y alrededor del mundo, sabemos que nuestra calidad premium y servicio accesible le traerán tremendo valor a tu negocio y a tus clientes.</target>
       </trans-unit>
-      <trans-unit id="226" resname="r520596721" restype="string" datatype="ruby">
+      <trans-unit id="226" resname="r122632908" restype="string" datatype="ruby">
         <source>By becoming a HealthTap Partner, your clients will get immediate access to trustworthy advice, recommended prescriptions, and specialist referrals from high-quality, U.S. licensed physicians during their travels.  To sign up for this unique opportunity, enter your contact information on this short form, or reply to partner.travel@healthtap.com with your name and number.</source>
         <target>Al convertirte en un Socio HealthTap, tus clientes obtendrán inmediatamente acceso a consejo de confianza, recetas recomendadas, y referencias a especialistas de médicos de excelente calidad acreditados en los EE.UU. durante sus viajes. Para registarte para esta oportunidad única, ingresa tu información de contacto en este corto formulario, o envía una respuesta a partner.travel@healthtap.com con tu nombre y número.</target>
       </trans-unit>
@@ -761,7 +761,7 @@
   </file>
   <file original="app/views/general_mailer/member_consult_prescription_needinfo.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="299" resname="r208458490" restype="string" datatype="ruby">
+      <trans-unit id="299" resname="r47888156" restype="string" datatype="ruby">
         <source>Once you do, we’ll send your</source>
         <target>Una vez que lo hagas, enviaremos tu</target>
         <note annotates="source">TODO pluralize</note>
@@ -806,7 +806,7 @@
         <source>My name is Kelly, from HealthTap, a Silicon Valley startup revolutionizing the healthcare industry by providing instant online and mobile access to our network of over 71,000 top physicians. By connecting people around the world to highly qualified doctors for virtual consults via any mobile device or computer, HealthTap bypasess the inefficiencies of traditional care to immediately give patients the medical attention they need.</source>
         <target>Mi nombre es Kelly, de HealthTap, un start-up de Silicon Valley que está revolucionando la industria de atención a la salud al brindar acceso instantáneo, en línea y móvil, a nuestra red de más de 71,000 de los mejores médicos. Al conectar a personas alrededor del mundo con doctores altamente calificados para consultas virtuales a través de cualquier dispositivo móvil o computadora, HealthTap evade las ineficiencias de la atención tradicional para inmediatamente darle atención médica a los pacientes cuando la necesitan.</target>
       </trans-unit>
-      <trans-unit id="312" resname="r41730588" restype="string" datatype="ruby">
+      <trans-unit id="312" resname="r176282230" restype="string" datatype="ruby">
         <source>As the underlying costs of healthcare drive up insurance premiums, more individuals are choosing to skip check-ups or pay out of pocket for smaller healthcare issues, rather than use their insurance.  HealthTap is a tremendous complement to traditional health insurance, particularly for clients with high deductible plans seeking effective alternatives to expensive in person care. As a HealthTap Partner, you can connect your clients to personalized on-demand care while regaining some of the lost profit.</source>
         <target>A medida que los costos subyacentes de la atención a la salud elevan las primas de seguros, más individuos están eligiendo saltarse revisión o pagar en efectivo por problemas de salud más pequeños, en vez de usar su seguro. HealthTap es un tremendo complemento para el seguro médico tradicional, particularmente para clientes que planes con altos deducibles que buscan alternativas efectivas a atención en persona costosa. Como un Socio HealthTap, puedes conectar a tus clientes con atención personalizada y on demand, mientras recuperas un poco de los ingresos perdidos.</target>
       </trans-unit>
@@ -862,7 +862,7 @@
         <source>I’d like to invite you to become a HealthTap Benefits Partner. Boost your income, delight your clients, and grow your business by leveraging our award-winning virtual healthcare service to enhance your health-insurance offerings.</source>
         <target>Me gustaría invitarte a convertirte en un Socio de Beneficios HealthTap. Incrementa tus ingresos, encanta a tus clientes, y haz crecer tu negocio aprovechándote de nuestro galardonado servicio de atención a la salud virtual para mejorar tus ofertas de seguro médico.</target>
       </trans-unit>
-      <trans-unit id="323" resname="r837755116" restype="string" datatype="ruby">
+      <trans-unit id="323" resname="r1017085926" restype="string" datatype="ruby">
         <source>Our innovative solution provides your clients with affordable access to immediate consults with top Board Certified U.S. doctors by HD video, voice, or text chat from anywhere, on any smartphone, tablet, or PC — 24/7!  You can deliver meaningful ROI to your clients and peace of mind to their employees with trusted, immediate, and affordable access to doctor advice, prescriptions, diagnostics, and post-consult checklists and reminders. This service is a tremendous complement to traditional health insurance plans and particularly beneficial for clients who have high deductible plans and Health Savings Accounts.</source>
         <target>Nuestra innovadora solución les brinda a tus clientes acceso accesible a consultas inmediatas con los mejores doctores Certificados por Consejo en los EE.UU. por chat de texto, video o video HD, desde cualquier parte, en cualquier teléfono inteligente, tableta o PC — ¡24/7! Puedes entregarles ROI significativos a tus clientes y paz mental para sus empleados con acceso confiable, inmediato y accesible a consejo médico, recetas, diagnóstico y listados y recordatorios post consultas. Este servicio es un tremendo complemento a planes de seguro médico tradicionales, y particularmente beneficioso para clientes que tienen planes con altos deducibles y Cuentas de Ahorro de Salud.</target>
       </trans-unit>
@@ -902,7 +902,7 @@
         <source>I’m excited to share with you that 2014 has been our best year ever, and we’re looking forward to a fabulous 2015, in which we will bring even more health, good life, and smiles to you and many millions everywhere.</source>
         <target>Estoy emocionado por compartir contigo que el 2014 ha sido nuestro mejor año hasta la fecha, y estamos entusiasmados por un fabuloso 2015, en el cual traeremos aún más salud, buena vida, y sonrisas a ti y a muchos millones en todas partes.</target>
       </trans-unit>
-      <trans-unit id="331" resname="r572724826" restype="string" datatype="ruby">
+      <trans-unit id="331" resname="r831154482" restype="string" datatype="ruby">
         <source>We started the year with the deepest research and development effort we’ve ever taken on ourselves – to create the first end-to-end Virtual Care experience that will help people everywhere manage their health and well being.  We aspired to support health journeys, yours and your loved ones’, from a wellness aspiration, or physical/emotional discomfort or pain, all the way to reaching a desirable health goal and to feeling good!</source>
         <target>Empezamos el año con el esfuerzo más intenso de investigación y desarrollo que hemos tomado - para crear la primera experiencia de Atención Virtual de principio a fin que ayudará a personas en todas partes a administrar su salud y bienestar. ¡Aspiramos a apoyar viajes de salud, los tuyos y los de tus seres queridos, desde una aspiración de bienestar, o dolor o malestar físico/emocional, hasta alcanzar una deseable meta de salud y sentirse bien!</target>
       </trans-unit>
@@ -918,7 +918,7 @@
         <source>Our doctor network and user base experienced robust growth and strong engagement throughout the year, even without a marketing budget or team. We could have become profitable at the beginning of the year by turning on display/text ads on our online/mobile pages, but we decided not to do so. Leaving “on the table” millions of dollars every month, we remained true to our mission to focus on making users healthier and happier and giving people the best experience while building the first trusted global consumer brand in digital health.</source>
         <target>Nuestra red de doctores y base de usuarios experimento robusto crecimiento y fuerte participación en el año, aún sin un equipo o presupuesto de mercadotecnia. Pudimos habernos hecho rentables desde el principio del año al habilitar anuncios desplegables/de texto en nuestros sitios web/móvil, pero decidimos no hacerlo. Dejando &quot;en la mesa&quot; millones de dólares cada mes, nos hemos mantenido fieles a nuestra misión de enfocarnos en hacer a nuestros usuarios más saludables y felices, y dándole a la gente la mejor experiencia mientras construimos la primera marca comercial global confiable de salud digital.</target>
       </trans-unit>
-      <trans-unit id="335" resname="r188895318" restype="string" datatype="ruby">
+      <trans-unit id="335" resname="r485104820" restype="string" datatype="ruby">
         <source>Committed to our mission, and to quality, in early fall we launched our first end-to-end service helping people everywhere manage their health and feel good every day.  Our new basic service remains available for free, but we also introduced our first paid premium service, HealthTap Prime. This first-of-a-kind service, that was created based on the research we conducted, is premised on the three main modules of our new platform:</source>
         <target>Comprometidos a nuestra misión y a la calidad, a inicios del otoño lanzamos nuestro primer servicio de principio a fin ayudando a personas en todas partes a administrar su salud y a sentirse bien todos los días. Nuestro nuevo servicio básico sigue siendo gratis, pero también introducimos nuestro primer servicio premium pagado, HealthTap Prime. Este servicio, primero en su género, que fue creado en base de investigación que realizamos, está descrito en los tres módulos principales de nuestra nueva plataforma:</target>
       </trans-unit>
@@ -942,7 +942,7 @@
         <source>For 2015, we’re getting very excited about the rapid adoption of wearable computing. We believe that there’s a huge opportunity to bring together the valuable health data that’s collected with these wearables, and help doctors make better recommendations for their patients for better courses of action via virtual consults powered by this data. Moreover, we believe that these wearables can also function as great communication devices to help our doctors not only learn about their patients, but also send patients the right signals at the right moments to close valuable feedback loops and encourage the right behaviors at the right times. We’ve already integrated Apple’s HealthKit, and Google Fit into the HealthTap experience, and we see a huge opportunity in collaborating with large and small players in the industry to make the promise of wearables and big data a valuable reality for doctors and users in 2015.</source>
         <target>Para el 2015, nos estamos emocionando mucho por la rápida adopción de la computación vestible. Creemos que hay una enorme oportunidad de juntar los valiosos datos de salud que están almacenados en estas vestimentas, y ayudar a doctores a hacer mejores recomendaciones para sus pacientes, para tomar mejores cursos de acción a través de consultas virtuales impulsadas por estos datos. Además, creemos que estas vestimentas también pueden funcionar como grandiosos dispositivos de comunicación para ayudar a nuestros doctores a no solo aprender acerca de sus pacientes, sino a enviar a sus pacientes las señales correctas en los momentos correctos, para cerrar valiosos ciclos de retroalimentación y a alentar los comportamientos correctos en los momentos correctos. Ya hemos integrado el HealthKit de Apple y a Google Fit a la experiencia HealthTap, y vemos una enorme oportunidad en colaborar con los jugadores grandes y pequeños en la industria para poder hacer la promesa de vestimentas y big data una valiosa realidad para doctores y usuarios en el 2015.</target>
       </trans-unit>
-      <trans-unit id="341" resname="r186420427" restype="string" datatype="ruby">
+      <trans-unit id="341" resname="r114542609" restype="string" datatype="ruby">
         <source>There are so many exciting opportunities for us 2015, but most importantly, we’re here to serve you and your loved ones, and make everyone everywhere healthier and happier!  Thanks for helping us make HealthTap an ever-better service, and for putting your trust in us – we’re always here to do more, to do better, to make sure we deserve your support and trust, and of course, to smile :&#41;   Please continue to send us your feedback and the best people you know  - we’re continuing to expand and grow, and need the best ideas, and best people to make this world a healthier happier place in 2015!</source>
         <target>Hay tantas emocionantes oportunidades para nosotros en el 2015, ¡Estamos aquí para servirte a ti y a tus seres queridos, y a hacer a todos en todas partes más saludables y felices! Gracias por ayudarnos a hacer a HealthTap un aún mejor servicio, y por poner tu confianza en nosotros - siempre estamos aquí para hacer más, para hacerlo mejor, y para asegurarnos que merecemos tu apoyo y confianza, y por supuesto, para sonreír :&#41; Por favor, continúa enviándonos tus comentarios y a las mejores personas que conozcas - ¡nos seguimos expandiendo y creciendo, y necesitamos las mejores ideas y a las mejores personas para hacer de este mundo un lugar más saludable y feliz en el 2015!</target>
       </trans-unit>
@@ -950,7 +950,7 @@
         <source>Happy New Year to you and your loved ones and looking forward to a great 2015!</source>
         <target>¡Feliz Año Nuevo a ti y a todos tus seres queridos! ¡Esperamos un grandioso 2015!</target>
       </trans-unit>
-      <trans-unit id="343" resname="r495249321" restype="string" datatype="ruby">
+      <trans-unit id="343" resname="r751123675" restype="string" datatype="ruby">
         <source>Ron Gutman,</source>
         <target>Ron Gutman,</target>
       </trans-unit>
@@ -1016,7 +1016,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_unlock_medal.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="358" resname="r541770653" restype="string" datatype="ruby">
+      <trans-unit id="358" resname="r164883497" restype="string" datatype="ruby">
         <source>Keep having fun, and see how many other medals you can win while  helping millions of people everywhere feel good</source>
         <target>¡Sigue divirtiéndote, y ve cuántas otras medaas puedes ganar mientras ayudas a millones de personas en todas partes a sentirse bien!</target>
       </trans-unit>
@@ -1040,7 +1040,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_thanked_note_life_saved.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="362" resname="r717338727" restype="string" datatype="ruby">
+      <trans-unit id="362" resname="r187073275" restype="string" datatype="ruby">
         <source>.  You should feel proud to be making such a profound impact on people’s lives, all while helping to create the future of healthcare. We hope notes like this motivate you as much as they inspire  us!</source>
         <target>.  Te deberías sentir orgulloso de hacer tal impacto en la vida de las personas, todo mientras ayudas a crear el futuro de la atención a la salud. ¡Esperamos que notas como estas te motiven tanto como nos inspiran!</target>
       </trans-unit>
@@ -1052,7 +1052,7 @@
         <source>You should feel great for helping a</source>
         <target>¡Te deberías de sentir grandioso por ayudar a un</target>
       </trans-unit>
-      <trans-unit id="364" resname="r170117406" restype="string" datatype="ruby">
+      <trans-unit id="364" resname="r369710864" restype="string" datatype="ruby">
         <source>member feel good!</source>
         <target>miembro a sentirse bien!</target>
       </trans-unit>
@@ -1088,7 +1088,7 @@
         <source>Thanks as always,</source>
         <target>Gracias como siempre,</target>
       </trans-unit>
-      <trans-unit id="372" resname="r244324309" restype="string" datatype="ruby">
+      <trans-unit id="372" resname="r954262044" restype="string" datatype="ruby">
         <source>Team :&#41;</source>
         <target>Equipo :&#41;</target>
       </trans-unit>
@@ -1140,7 +1140,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_recommended_member.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="381" resname="r38456960" restype="string" datatype="ruby">
+      <trans-unit id="381" resname="r752396392" restype="string" datatype="ruby">
         <source>. Congratulations! Your DocScore and reputation are  both growing!</source>
         <target>. ¡Felicidades! ¡Tanto tu DocScore como tu reputación están creciendo!</target>
       </trans-unit>
@@ -1200,7 +1200,7 @@
         <source>So many people are finding you on</source>
         <target>Tantas personas te están encontrando en</target>
       </trans-unit>
-      <trans-unit id="398" resname="r543644985" restype="string" datatype="ruby">
+      <trans-unit id="398" resname="r144357971" restype="string" datatype="ruby">
         <source>This means the content you’ve created—the answers, tips, checklists, app reviews, and news—is being widely shared. This raises the chance that it will be viewed and rated by both doctors and patients, increasing your reach and visibility even further. You’re in  a virtuous cycle—keep going!</source>
         <target>Esto significa que el contenido que has creado — las respuestas, tips, listados, valoraciones de aplicaciones, y noticias — está siendo compartido ampliamente. Esto eleva las probabilidades de que sea visto y calificado por tanto doctores como pacientes, incrementando tu alcance y visibilidad aún más. Estas en un círculo virtuoso — ¡sigue!</target>
       </trans-unit>
@@ -1296,7 +1296,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_prime_monthly_balance.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="419" resname="r129406808" restype="string" datatype="ruby">
+      <trans-unit id="419" resname="r438338900" restype="string" datatype="ruby">
         <source>As you requested, we’ve automatically donated this amount to charity. Your gift will help those in financial need get  free or subsidized access to top quality care from HealthTap Prime.</source>
         <target>Como pediste, hemos donado está cantidad a la caridad automáticamente. Tu regalo ayudará a aquellos en necesidad financiera a obtener acceso gratis o subsidiado a atención de la mejor calidad de HealthTap Prime.</target>
       </trans-unit>
@@ -1316,7 +1316,7 @@
         <source>You should see this amount, which includes a $1 transaction fee, in your account in 1-2 business days. If there are any issues with the transaction on our end, we will let you know. As always, if you have any questions, we&apos;re here to support you. Please reply to this email or call us at 650-376-6010 anytime.</source>
         <target>Deberías ver esta cantidad, la cual incluye una cuota de transacción de $1, en tu cuenta en 1-2 días hábiles. Si hay cualquier problema de nuestro lado, te lo haremos saber. Como siempre, si tienes cualquier pregunta, estamos aquí para apoyarte. Por favor, responde a este correo electrónico o llámanos al 650-376-6010 a cualquier hora.</target>
       </trans-unit>
-      <trans-unit id="424" resname="r526161711" restype="string" datatype="ruby">
+      <trans-unit id="424" resname="r347242817" restype="string" datatype="ruby">
         <source>To automatically start receiving monthly payments directly to your bank account or to donating your funds  to charity, please set up your account for Auto-Pay:</source>
         <target>Para empezar a automáticamente recibir pagos mensuales directamente a tu cuenta bancaria, o a donar tus fondos a la caridad, por favor, configura tu cuenta para Auto-Pago:</target>
       </trans-unit>
@@ -1328,11 +1328,11 @@
   </file>
   <file original="app/views/general_mailer/doctor_prime_missed_call_hardware.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="426" resname="r151070959" restype="string" datatype="ruby">
+      <trans-unit id="426" resname="r104211978" restype="string" datatype="ruby">
         <source>If you’re having trouble setting up your computer, please let us know by writing to</source>
         <target>Si estás teniendo problemas configurando tu computadora, por favor, haznos saber por escrito al</target>
       </trans-unit>
-      <trans-unit id="427" resname="r167572003" restype="string" datatype="ruby">
+      <trans-unit id="427" resname="r241717430" restype="string" datatype="ruby">
         <source>and we’ll do our best to help.</source>
         <target>y haremos lo mejor que podamos para ayudar.</target>
       </trans-unit>
@@ -1420,7 +1420,7 @@
         <source>If you have any questions, we are happy to answer them. Just reply to this email</source>
         <target>Si tienes cualquier pregunta, estamos felices de contestarlas. Solo responde a este correo electrónico</target>
       </trans-unit>
-      <trans-unit id="444" resname="r562678619" restype="string" datatype="ruby">
+      <trans-unit id="444" resname="r946925545" restype="string" datatype="ruby">
         <source>or contact me personally at</source>
         <target>o contáctame personalmente al</target>
       </trans-unit>
@@ -1440,7 +1440,7 @@
         <source>If we have made this determination in error, or if there is additional information you can provide to us, please let us know at expertsupport@healthtap.com. We will be happy to review your application again after we receive additional information.</source>
         <target>Si hemos hecho esta determinación por error, o si hay información adicional que puedas brindarnos, por favor, haznos saber a expertsupport@healthtap.com. Estaremos felices de revisar tu solicitud nuevamente después de que recibamos información adicional.</target>
       </trans-unit>
-      <trans-unit id="449" resname="r430803991" restype="string" datatype="ruby">
+      <trans-unit id="449" resname="r553191443" restype="string" datatype="ruby">
         <source>Thank you for your interest in HealthTap Prime. If you have any questions, please feel free to contact us at</source>
         <target>Gracias por tu interés en HealthTap Prime. Si tienes cualquier pregunta, por favor, siéntete libre de contactarnos a</target>
       </trans-unit>
@@ -1472,7 +1472,7 @@
         <source>Prime vision.</source>
         <target>visión de HealthTap Prime.</target>
       </trans-unit>
-      <trans-unit id="455" resname="r576819647" restype="string" datatype="ruby">
+      <trans-unit id="455" resname="r1070918809" restype="string" datatype="ruby">
         <source>today to ensure you can practice at the times most convenient for your schedule.</source>
         <target>hoy, para asegurar que puedas ejercer a las horas que sean más convenientes para tu agenda.</target>
       </trans-unit>
@@ -1524,7 +1524,7 @@
         <source>Review the guidelines</source>
         <target>Revisar las directrices</target>
       </trans-unit>
-      <trans-unit id="467" resname="r124105188" restype="string" datatype="ruby">
+      <trans-unit id="467" resname="r9478780" restype="string" datatype="ruby">
         <source>As a doctor in HealthTap Prime for our first launch, you are a Founding Prime member for this revolutionary new service.  You were hand picked to be a member of this exclusive group of caring and compassionate physicians. Once again, congratulations on being part of the transformation of healthcare!</source>
         <target>Como un doctor en HealthTap Prime para nuestro primer lanzamiento, eres un miembro Fundador Prime para este nuevo y revolucionario servicio. Fuiste elegido cuidadosamente para ser un miembro de este exclusivo grupo de bondadosos y compasivos médicos. ¡Una vez más, felicidades por ser una parte de la transformación de la atención a la salud!</target>
       </trans-unit>
@@ -1540,11 +1540,11 @@
         <source>Your Shift Requests:</source>
         <target>Tus Solicitudes de Turno:</target>
       </trans-unit>
-      <trans-unit id="470" resname="r892361401" restype="string" datatype="ruby">
+      <trans-unit id="470" resname="r266724224" restype="string" datatype="ruby">
         <source>To schedule your brief, interactive training session,</source>
         <target>Para agendar tu breve e interactiva sesión de entrenamiento,</target>
       </trans-unit>
-      <trans-unit id="471" resname="r56187114" restype="string" datatype="ruby">
+      <trans-unit id="471" resname="r578881718" restype="string" datatype="ruby">
         <source>please visit</source>
         <target>por favor, visita</target>
       </trans-unit>
@@ -1552,11 +1552,11 @@
         <source>calendly.com/healthtaptraining</source>
         <target>calendly.com/healthtaptraining</target>
       </trans-unit>
-      <trans-unit id="473" resname="r936586413" restype="string" datatype="ruby">
+      <trans-unit id="473" resname="r960497845" restype="string" datatype="ruby">
         <source>and choose a time that works best for you.</source>
         <target>y elige una hora que funcione para ti.</target>
       </trans-unit>
-      <trans-unit id="474" resname="r868193570" restype="string" datatype="ruby">
+      <trans-unit id="474" resname="r474209162" restype="string" datatype="ruby">
         <source>In advance of your training session, please review the online</source>
         <target>Previo a tu sesión de entrenamiento, por favor, revisa la</target>
       </trans-unit>
@@ -1564,7 +1564,7 @@
         <source>Training Guide to HealthTap Prime</source>
         <target>Guía de Entrenamiento para HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="476" resname="r729979921" restype="string" datatype="ruby">
+      <trans-unit id="476" resname="r770186429" restype="string" datatype="ruby">
         <source>&#40;username: primedoctor / password: feelgood!&#41;. You may also watch our short</source>
         <target>&#40;username: primedoctor / password: feelgood!&#41;. También puedes ver nuestro corto</target>
       </trans-unit>
@@ -1572,15 +1572,15 @@
         <source>HealthTap Prime Training Video</source>
         <target>Video de Entrenamiento para HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="478" resname="r965411625" restype="string" datatype="ruby">
+      <trans-unit id="478" resname="r85450329" restype="string" datatype="ruby">
         <source>&#40;password: feelgood!&#41;. In this video, we show you how to set up for Virtual Consults, guide you through the steps of giving a live video consult, and demonstrate the flexible note entry and electronic prescribing system.</source>
         <target>&#40;password: feelgood!&#41;. En este video, te mostramos cómo configurar tus Consultas Virtuales, te guiamos a través de los pasos de dar una video consulta en vivo, y te demostramos el flexible sistema de entrada de notas y de recetas electrónicas.</target>
       </trans-unit>
-      <trans-unit id="479" resname="r646304376" restype="string" datatype="ruby">
+      <trans-unit id="479" resname="r286516871" restype="string" datatype="ruby">
         <source>Once you complete training, your first shift will start right away.</source>
         <target>Una vez que completes el entrenamiento, tu primer turno empezará enseguida.</target>
       </trans-unit>
-      <trans-unit id="480" resname="r140776525" restype="string" datatype="ruby">
+      <trans-unit id="480" resname="r830139997" restype="string" datatype="ruby">
         <source>Feel free to</source>
         <target>Siéntete libre de</target>
       </trans-unit>
@@ -1588,7 +1588,7 @@
         <source>sign up</source>
         <target>registrarte</target>
       </trans-unit>
-      <trans-unit id="482" resname="r236786818" restype="string" datatype="ruby">
+      <trans-unit id="482" resname="r621996958" restype="string" datatype="ruby">
         <source>for any available shifts to perform Virtual Consults on HealthTap Prime. Lastly, we suggest reviewing our guidelines on setting up and preparing for your first Virtual Consult.</source>
         <target>para cualquier turno disponible para realizar Consultas Virtuales en HealthTap Prime. Finalmente, sugerimos revisar nuestras directrices sobre configuración y preparación para tu primera Consulta Virtual.</target>
       </trans-unit>
@@ -1620,7 +1620,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_prime_app_part1_approved_launch_state.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="488" resname="r18967041" restype="string" datatype="ruby">
+      <trans-unit id="488" resname="r203110035" restype="string" datatype="ruby">
         <source>Thank you for your interest in helping people with HealthTap Prime. Congratulations, your application was approved, and now all you have to do is complete your sign up to become a</source>
         <target>Gracias por tu interés por ayudar a la gente con HealthTap Prime. Felicidades, tu solicitud fue aprobada, y ahora todo lo que tienes que hacer es completar tu registro para convertirte en un</target>
       </trans-unit>
@@ -1652,11 +1652,11 @@
         <source>final sign up</source>
         <target>registro final</target>
       </trans-unit>
-      <trans-unit id="497" resname="r312499276" restype="string" datatype="ruby">
+      <trans-unit id="497" resname="r485696695" restype="string" datatype="ruby">
         <source>and be certified as a HealthTap Prime doctor to  perform Virtual Consults on a “Try Me” or “Ad Hoc” basis for international patients.</source>
         <target>y ser certificado como un doctor de HealthTap Prime para realizar Consultas Virtuales en las categorías de &quot;Pruébame&quot; o &quot;Ad Hoc&quot; para pacientes internacionales.</target>
       </trans-unit>
-      <trans-unit id="498" resname="r806797222" restype="string" datatype="ruby">
+      <trans-unit id="498" resname="r324524881" restype="string" datatype="ruby">
         <source>In  the</source>
         <target>En el</target>
       </trans-unit>
@@ -1664,23 +1664,23 @@
         <source>you will learn more about how to do Virtual Consults on HealthTap, review your contract with us &#40;including details on professional liability insurance and compensation&#41;, and tell us which shifts you’d like to work each week when we do have shifts available.</source>
         <target>aprenderás más acerca de cómo realizar Consultas Virtuales en HealthTap, revisar tu contrato con nosotros &#40;incluyendo detalles sobre el seguro de responsabilidad profesional y compensación&#41;, y decirnos cuáles turnos te gustaría trabajar cada semana.</target>
       </trans-unit>
-      <trans-unit id="500" resname="r848344245" restype="string" datatype="ruby">
+      <trans-unit id="500" resname="r433583626" restype="string" datatype="ruby">
         <source>If you are licensed in additional states, please</source>
         <target>Si estás acreditado en estados adicionales, por favor,</target>
       </trans-unit>
-      <trans-unit id="502" resname="r175721661" restype="string" datatype="ruby">
+      <trans-unit id="502" resname="r648613420" restype="string" datatype="ruby">
         <source>If you have any questions, please feel free to contact us at</source>
         <target>Si tienes alguna pregunta, por favor, siéntete libre de contactarnos a</target>
       </trans-unit>
-      <trans-unit id="503" resname="r195622132" restype="string" datatype="ruby">
+      <trans-unit id="503" resname="r889808633" restype="string" datatype="ruby">
         <source>To get started, complete the</source>
         <target>Para empezar, completa la</target>
       </trans-unit>
-      <trans-unit id="504" resname="r89684000" restype="string" datatype="ruby">
+      <trans-unit id="504" resname="r133791546" restype="string" datatype="ruby">
         <source>HealthTap Prime  Application</source>
         <target>Solicitud para HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="505" resname="r308842134" restype="string" datatype="ruby">
+      <trans-unit id="505" resname="r81566515" restype="string" datatype="ruby">
         <source>. If you would like any assistance or have questions, please let us know at</source>
         <target>. Si te gustaría recibir cualquier asistencia o tienes preguntas, por favor, haznos saber a</target>
       </trans-unit>
@@ -1724,7 +1724,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_news_topicofinterest.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="513" resname="r390065444" restype="string" datatype="ruby">
+      <trans-unit id="513" resname="r1011582599" restype="string" datatype="ruby">
         <source>As you know, sharing  articles is one of the key ways we can help people everywhere  learn about health and well-being. Doctors like you are sharing  articles every day for virtual patients and other doctors to read. We’re excited to have you as an inspiration and a high-quality contributor to our community. You are helping us change the world!</source>
         <target>Como sabes, compartir artículos es una de las formas clave en las que ayudamos a la gente de todas partes a aprender acerca de salud y bienestar. Doctores como tú están compartiendo artículos todos los días para que los lean pacientes virtuales y otros doctores. Estamos emocionados de tenerte como una inspiración y un contribuidor de alta calidad para nuestra comunidad. ¡Nos estás ayudando a cambiar el mundo!</target>
       </trans-unit>
@@ -1732,7 +1732,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_news_thanked.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="514" resname="r316688313" restype="string" datatype="ruby">
+      <trans-unit id="514" resname="r454491994" restype="string" datatype="ruby">
         <source>members, since they need to know which news articles are reputable and worth reading.</source>
         <target>miembros, porque necesitan saber cuáles artículos de noticias son respetables y valen la pena leer.</target>
       </trans-unit>
@@ -1760,7 +1760,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_news_commented.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="521" resname="r599063283" restype="string" datatype="ruby">
+      <trans-unit id="521" resname="r774368823" restype="string" datatype="ruby">
         <source>As you know, sharing  articles is one of the key ways we can help people everywhere  learn about health and well-being. Doctors like you are sharing  articles every day for virtual patients and other top doctors to read. We’re excited to have you as an inspiration and a high-quality contributor to our community. You’re  helping us change the world!</source>
         <target>Como sabes, compartir artículos es una de las formas clave en las que ayudamos a la gente de todas partes a aprender acerca de salud y bienestar. Doctores como tú están compartiendo artículos todos los días para que los lean pacientes virtuales y otros doctores. Estamos emocionados de tenerte como una inspiración y un contribuidor de alta calidad para nuestra comunidad. ¡Nos estás ayudando a cambiar el mundo!</target>
       </trans-unit>
@@ -1800,7 +1800,7 @@
         <source>The status of the professional licence which you provided in your application is either inactive, or it appears that you are not licensed to practice in a participating region.</source>
         <target>El estado de la licencia profesional que proporcionaste en tu solicitud está inactiva, o parece que no estás acreditado para ejercer en una región participante.</target>
       </trans-unit>
-      <trans-unit id="528" resname="r327829082" restype="string" datatype="ruby">
+      <trans-unit id="528" resname="r54576180" restype="string" datatype="ruby">
         <source>We apologize for being unable to confirm your application to join the Medical Expert Network right away. Please send any additional information to help us verify that you are a medical professional with an active and unrestricted professional license via email to</source>
         <target>Nos disculpamos por no poder confirmar tu solicitud para unirte a la Red de Expertos Médicos en seguida. Por favor, envía cualquier información adicional para ayudarnos a verificar que eres un profesional médico con una licencia profesional activa y sin restricciones vía correo electrónico a</target>
       </trans-unit>
@@ -1828,7 +1828,7 @@
         <source>Currently, Medical Expert accounts are available only to licensed doctors in the US or UK. We are excited about the possibility of expanding our network to more regions in the future, and we will keep your information on file.</source>
         <target>Actualmente, las cuentas de Expertos Médicos solo están disponibles para doctores acreditados en los EE.UU. o en el Reino Unido. Estamos emocionados acerca de la posibilidad de expandir nuestra red a más regiones en el futuro, y conservaremos tu información en archivo.</target>
       </trans-unit>
-      <trans-unit id="533" resname="r171555288" restype="string" datatype="ruby">
+      <trans-unit id="533" resname="r994149072" restype="string" datatype="ruby">
         <source>If you have any questions, please contact us at</source>
         <target>Si tienes alguna pregunta, por favor, contáctanos a</target>
       </trans-unit>
@@ -1852,7 +1852,7 @@
         <source>While reviewing your application we were unable to verify one or more of the following:</source>
         <target>Mientras revisábamos tu solicitud no pudimos verificar una o más de las siguientes:</target>
       </trans-unit>
-      <trans-unit id="537" resname="r470368321" restype="string" datatype="ruby">
+      <trans-unit id="537" resname="r724987603" restype="string" datatype="ruby">
         <source>to verify the information listed above.</source>
         <target>para verificar la información listada arriba.</target>
       </trans-unit>
@@ -1880,7 +1880,7 @@
         <source>Other allegations of criminal or professional misconduct</source>
         <target>Otras acusaciones de mala conducta profesional o criminal</target>
       </trans-unit>
-      <trans-unit id="543" resname="r704544958" restype="string" datatype="ruby">
+      <trans-unit id="543" resname="r64988151" restype="string" datatype="ruby">
         <source>We apologize for being unable to confirm your application to the Medical Expert Network right away. Please send any additional information to help us verify that you are a medical professional in good standing via email to</source>
         <target>Nos disculpamos por no poder confirmar tu solicitud para a la Red de Expertos Médicos en seguida. Por favor, envía cualquier información adicional para ayudarnos a verificar que eres un profesional médico con buena reputación vía correo electrónico a</target>
       </trans-unit>
@@ -1904,7 +1904,7 @@
         <source>In the meantime visit our HealthTap for doctors page to learn more about the benefits of using HealthTap as a doctor today!</source>
         <target>¡Mientras tanto, visita nuestra página de HealthTap para doctores para aprender más acerca de los beneficios de usar HealthTap como un doctor hoy!</target>
       </trans-unit>
-      <trans-unit id="548" resname="r105861295" restype="string" datatype="ruby">
+      <trans-unit id="548" resname="r1039132444" restype="string" datatype="ruby">
         <source>If you have any questions, the</source>
         <target>Si tienes alguna pregunta, la</target>
       </trans-unit>
@@ -1944,11 +1944,11 @@
         <source>Please take a moment to complete your sign up.</source>
         <target>Por favor, tómate un momento para completar tu registro.</target>
       </trans-unit>
-      <trans-unit id="556" resname="r70690931" restype="string" datatype="ruby">
+      <trans-unit id="556" resname="r93557533" restype="string" datatype="ruby">
         <source>As you become familiar with</source>
         <target>Conforme te familiarices con</target>
       </trans-unit>
-      <trans-unit id="557" resname="r6394911" restype="string" datatype="ruby">
+      <trans-unit id="557" resname="r361235246" restype="string" datatype="ruby">
         <source>We are now completing final review of your application for a free Virtual Practice in HealthTap Concierge. If we need clarification from you, we will give you a call. As soon as you&apos;re approved for HealthTap Concierge, we’ll send you an email to let you know so you can start helping your patients with HD video, voice, or text chat virtual consults. As you become familiar with</source>
         <target>Ahora estamos completando la revisión final de tu solicitud para un Consultorio Virtual gratuito en HealthTap Concierge. Si necesitamos aclaraciones de tu parte, te haremos una llamada. Tan pronto como seas aprobado para HealthTap Concierge, te enviaremos un correo electrónico para hacerte saber para que puedas empezar a ayudarnos con pacientes con consultas virtuales por chat de texto, voz o video HD. Conforme te familiarices con</target>
       </trans-unit>
@@ -1956,7 +1956,7 @@
         <source>, you&apos;ll find many opportunities to connect with your colleagues and help your patients and millions everywhere.</source>
         <target>, encontrarás muchas oportunidades para conectarte con tus colegas, y ayudar a tus pacientes y a millones en todas partes.</target>
       </trans-unit>
-      <trans-unit id="559" resname="r584956026" restype="string" datatype="ruby">
+      <trans-unit id="559" resname="r289842648" restype="string" datatype="ruby">
         <source>This is the first step towards being certified as a HealthTap Prime doctor.</source>
         <target>Este es el primer paso para ser certificado como un doctor de HealthTap Prime.</target>
       </trans-unit>
@@ -1964,7 +1964,7 @@
         <source>Please take a moment to complete your application.</source>
         <target>Por favor, tómate un momento para completar tu solicitud.</target>
       </trans-unit>
-      <trans-unit id="561" resname="r1067084753" restype="string" datatype="ruby">
+      <trans-unit id="561" resname="r93557533" restype="string" datatype="ruby">
         <source>As you become familiar with</source>
         <target>Conforme te familiarices con</target>
       </trans-unit>
@@ -1972,11 +1972,11 @@
         <source>, you&apos;ll find many opportunities to connect with your colleagues and help millions everywhere.</source>
         <target>, encontrarás muchas oportunidades para conectarte con tus colegas y ayudar a millones en todas partes.</target>
       </trans-unit>
-      <trans-unit id="563" resname="r153277388" restype="string" datatype="ruby">
+      <trans-unit id="563" resname="r246949317" restype="string" datatype="ruby">
         <source>This is the first step towards being certified as a HealthTap Prime doctor. Approval for HealthTap Prime requires some additional verification, and we&apos;re expediting that for you now. If we have any questions for you, we will give you a call. As soon as we’ve verified your HealthTap Prime application, we’ll send you an email to let you know you are able to sign up for available shifts and give primary care Virtual Consults. As you become familiar with</source>
         <target>Este es el primer paso hacia ser certificado como un doctor de HealthTap Prime. La aprobación para HealthTap Prime requiere un poco de verificación adicional, y ahora estamos agilizando eso para ti. Si tenemos alguna pregunta para ti, te haremos una llamada. Tan pronto como hayamos verificado tu solicitud a HealthTap Prime, te enviaremos un correo electrónico para hacerte saber que puedes registrarte para turnos disponibles y dar Consultas Virtuales de atención primaria. Conforme te familiarices con</target>
       </trans-unit>
-      <trans-unit id="564" resname="r708359386" restype="string" datatype="ruby">
+      <trans-unit id="564" resname="r306674751" restype="string" datatype="ruby">
         <source>We&apos;re so happy that you&apos;ve joined</source>
         <target>Estamos tan felices de que te hayas unido</target>
       </trans-unit>
@@ -2012,7 +2012,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_invitepatient_sent.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="571" resname="r1018658345" restype="string" datatype="ruby">
+      <trans-unit id="571" resname="r149012941" restype="string" datatype="ruby">
         <source>For now, your patients will receive one invitation email followed by a limited number of reminders if they don’t connect.</source>
         <target>Por ahora, tus pacientes recibirán un correo electrónico de invitación seguido de un número limitado de recordatorios si no se conectan.</target>
       </trans-unit>
@@ -2020,7 +2020,7 @@
         <source>We encourage you to continue inviting new patients to join you on your Virtual Practice.</source>
         <target>Te alentamos a continuar invitando a nuevos pacientes para que se te unan en tu Consultorio Virtual.</target>
       </trans-unit>
-      <trans-unit id="574" resname="r342468455" restype="string" datatype="ruby">
+      <trans-unit id="574" resname="r601288142" restype="string" datatype="ruby">
         <source>You are also welcome to respond to this email with any questions.</source>
         <target>Eres bienvenido a responder a este correo electrónico con cualquier pregunta.</target>
       </trans-unit>
@@ -2080,11 +2080,11 @@
         <source>This consult is first come, first serve.</source>
         <target>La consulta es para quien llegue primero.</target>
       </trans-unit>
-      <trans-unit id="586" resname="r850012840" restype="string" datatype="ruby">
+      <trans-unit id="586" resname="r790286672" restype="string" datatype="ruby">
         <source>That means if one of your physician colleagues responds first, it will no longer be available for your response.</source>
         <target>Eso significa que si uno de tus colegas médicos responde primero, ya no estará disponible para tu respuesta.</target>
       </trans-unit>
-      <trans-unit id="587" resname="r792498658" restype="string" datatype="ruby">
+      <trans-unit id="587" resname="r829281393" restype="string" datatype="ruby">
         <source>Log in to your HealthTap account, look for the</source>
         <target>Inicia sesión en tu cuenta HealthTap, busca la</target>
       </trans-unit>
@@ -2104,11 +2104,11 @@
   </file>
   <file original="app/views/general_mailer/doctor_inbox_incoming_expired.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="591" resname="r760137370" restype="string" datatype="ruby">
+      <trans-unit id="591" resname="r180342374" restype="string" datatype="ruby">
         <source>Our records show you didn’t respond to a HealthTap</source>
         <target>Nuestros registros muestran que no respondiste a una de HealthTap</target>
       </trans-unit>
-      <trans-unit id="592" resname="r868264269" restype="string" datatype="ruby">
+      <trans-unit id="592" resname="r495480463" restype="string" datatype="ruby">
         <source>If you did not receive email and SMS/text reminders about this consult, please let us know immediately so we can help you resolve this issue and ensure you receive incoming requests.</source>
         <target>Si no recibiste recordatorios de correo electrónico y SMS/mensaje de texto acerca de esta consulta, por favor, haznos saber inmediatamente para que podamos ayudarte a resolver este problema y asegurar que recibas solicitudes entrantes.</target>
       </trans-unit>
@@ -2124,7 +2124,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_inbox_incoming.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="595" resname="r780635584" restype="string" datatype="ruby">
+      <trans-unit id="595" resname="r491119984" restype="string" datatype="ruby">
         <source>This is a second opinion consult, where you will not be asked to provide treatment, diagnoses, or prescriptions. The patient is simply looking for your advice and/or counsel on a previously diagnosed issue.</source>
         <target>Esta es una consulta de seguda opinión, donde no se te pedirá brindar tratamiento, diagnósticos o recetas. El paciente simplemente está buscando tu consejo y/o asesoría sobre un problema previamente diagnosticado.</target>
       </trans-unit>
@@ -2152,7 +2152,7 @@
         <source>have</source>
         <target>tienen</target>
       </trans-unit>
-      <trans-unit id="602" resname="r405063752" restype="string" datatype="ruby">
+      <trans-unit id="602" resname="r874292630" restype="string" datatype="ruby">
         <source>status. In celebration of the launch of the new</source>
         <target>estado. En celebración del lanzamiento del nuevo</target>
       </trans-unit>
@@ -2168,7 +2168,7 @@
         <source>is time sensitive.</source>
         <target>es por tiempo limitado.</target>
       </trans-unit>
-      <trans-unit id="606" resname="r1014347472" restype="string" datatype="ruby">
+      <trans-unit id="606" resname="r605985293" restype="string" datatype="ruby">
         <source>status on</source>
         <target>estado en</target>
       </trans-unit>
@@ -2176,7 +2176,7 @@
         <source>If you have already started achieving your goal of 50 answers, then use this time extension to make sure you reach it. If you have already completed your 50 questions, then we will update your status after the eligibility period is complete. Updating your profile on the site with</source>
         <target>Si ya empezaste a alcanzar tu meta de 50 respuestas, entonces usa esta extensión de tiempo para asegurar de que la alcances. Si ya has completado tus 50 preguntas, entonces actualizaremos tu estado después de que el periodo de elegibilidad esté completo. Actualizar tu perfil en el sitio con</target>
       </trans-unit>
-      <trans-unit id="608" resname="r777563438" restype="string" datatype="ruby">
+      <trans-unit id="608" resname="r922661711" restype="string" datatype="ruby">
         <source>status can take up to a week.</source>
         <target>estado puede tardar hasta una semana.</target>
       </trans-unit>
@@ -2264,7 +2264,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_suggested_patients.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="622" resname="r362337458" restype="string" datatype="ruby">
+      <trans-unit id="622" resname="r876909950" restype="string" datatype="ruby">
         <source>To help expand your virtual practice and showcase the value of virtual care we&apos;d like to  provide you with this limited-time opportunity to invite select HealthTap members to an introductory consult with you at a special discounted rate.</source>
         <target>Para ayudarte a expandir tu consultorio virtual y exhibir el valor de la atención virtual, nos gustaría brindarte esta oportunidad de tiempo limitado para invitar a miembros selectos de HealthTap a una consulta introductoria contigo a una tarifa con descuento especial.</target>
       </trans-unit>
@@ -2308,11 +2308,11 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_set_pricing_change_and_upcoming_charge.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="631" resname="r77653476" restype="string" datatype="ruby">
+      <trans-unit id="631" resname="r744520428" restype="string" datatype="ruby">
         <source>&lt;b&gt;Optimize Your Custom Prices:&lt;/b&gt;</source>
         <target>&lt;b&gt;Optimiza Tus Precios Personalizados:&lt;/b&gt;</target>
       </trans-unit>
-      <trans-unit id="632" resname="r974973693" restype="string" datatype="ruby">
+      <trans-unit id="632" resname="r542703797" restype="string" datatype="ruby">
         <source>&lt;b&gt;Top Tips for Your Success on HealthTap Concierge:&lt;/b&gt;</source>
         <target>&lt;b&gt;Los Mejores Tips para Tu Éxito en HealthTap Concierge:&lt;/b&gt;</target>
       </trans-unit>
@@ -2324,7 +2324,7 @@
         <source>3&#41; Spread the word about your Virtual Practice:</source>
         <target>3&#41; Corre la voz acerca de tu Consultorio Virtual:</target>
       </trans-unit>
-      <trans-unit id="635" resname="r778340294" restype="string" datatype="ruby">
+      <trans-unit id="635" resname="r240059614" restype="string" datatype="ruby">
         <source>Display your</source>
         <target>Muestra tu</target>
       </trans-unit>
@@ -2332,15 +2332,15 @@
         <source>HealthTap Concierge flyer and handout</source>
         <target>volante y folleto de HealthTap Concierge</target>
       </trans-unit>
-      <trans-unit id="637" resname="r1016449046" restype="string" datatype="ruby">
+      <trans-unit id="637" resname="r386387366" restype="string" datatype="ruby">
         <source>in all of your exam rooms, in the waiting room, and at the front desk.</source>
         <target>en todas tus salas de exploración, en la sala de espera, y en la recepción.</target>
       </trans-unit>
-      <trans-unit id="638" resname="r844102420" restype="string" datatype="ruby">
+      <trans-unit id="638" resname="r702764186" restype="string" datatype="ruby">
         <source>to HealthTap Concierge by email.</source>
         <target>a HealthTap Concierge por correo electrónico.</target>
       </trans-unit>
-      <trans-unit id="639" resname="r850030906" restype="string" datatype="ruby">
+      <trans-unit id="639" resname="r951895419" restype="string" datatype="ruby">
         <source>Post your</source>
         <target>Publica tu</target>
       </trans-unit>
@@ -2348,7 +2348,7 @@
         <source>HealthTap Concierge widget</source>
         <target>widget de HealthTap Concierge</target>
       </trans-unit>
-      <trans-unit id="641" resname="r166915779" restype="string" datatype="ruby">
+      <trans-unit id="641" resname="r157688467" restype="string" datatype="ruby">
         <source>on your practice website.</source>
         <target>en el sitio web de tu consultorio.</target>
       </trans-unit>
@@ -2368,7 +2368,7 @@
         <source>We&apos;re hearing many great stories and tips from doctors too, so please tell us what&apos;s working well for you on HealthTap Concierge — we&apos;ll share your learnings with your colleagues.</source>
         <target>Estamos escuchando muchas grandiosas historias y tips de doctores también, por favor, cuéntanos que está funcionando bien para ti en HealthTap Concierge — compartiremos tu aprendizaje con tus colegas.</target>
       </trans-unit>
-      <trans-unit id="646" resname="r475652394" restype="string" datatype="ruby">
+      <trans-unit id="646" resname="r856922692" restype="string" datatype="ruby">
         <source>Naveen and the</source>
         <target>Naveen y el</target>
       </trans-unit>
@@ -2384,7 +2384,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_reminder_shift_coming.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="649" resname="r1035560341" restype="string" datatype="ruby">
+      <trans-unit id="649" resname="r302468093" restype="string" datatype="ruby">
         <source>Thank you for committing to Virtual Practice hours on HealthTap</source>
         <target>Gracias por comprometerte a horas de Consultorio Virtual en HealthTap</target>
       </trans-unit>
@@ -2448,7 +2448,7 @@
         <source>Schedule a one-on-one training session</source>
         <target>Agenda una sesión de entrenamiento uno a uno</target>
       </trans-unit>
-      <trans-unit id="663" resname="r261471012" restype="string" datatype="ruby">
+      <trans-unit id="663" resname="r306554957" restype="string" datatype="ruby">
         <source>if you would like a training refresher for yourself or your staff</source>
         <target>si te gustaría tener un entrenamiento de repaso para ti o para tu personal</target>
       </trans-unit>
@@ -2456,7 +2456,7 @@
         <source>Suggest your patients schedule virtual appointments</source>
         <target>Sugiérele a tus pacientes que agenden citas virtuales</target>
       </trans-unit>
-      <trans-unit id="665" resname="r56799541" restype="string" datatype="ruby">
+      <trans-unit id="665" resname="r508525781" restype="string" datatype="ruby">
         <source>for follow-ups and consults that don’t require in-person visits. Instruct your staff to also do this when patients call to cancel, reschedule, or want to talk to you about a health question.</source>
         <target>para seguimientos y consultas que no requieren visitas en persona. Instruye a tu personal a hacer esto también cuando los pacientes llamen para cancelar, reagendar o si quieren hablar contigo por una pregunta de salud.</target>
       </trans-unit>
@@ -2464,7 +2464,7 @@
         <source>Print your flyer and handouts</source>
         <target>Imprime tu volate y folletos</target>
       </trans-unit>
-      <trans-unit id="667" resname="r742370001" restype="string" datatype="ruby">
+      <trans-unit id="667" resname="r926170230" restype="string" datatype="ruby">
         <source>to display and distribute in your office</source>
         <target>para mostrar y distribuir en tu oficina</target>
       </trans-unit>
@@ -2472,11 +2472,11 @@
         <source>Send an email invitation</source>
         <target>Envía un correo electrónico de invitación</target>
       </trans-unit>
-      <trans-unit id="669" resname="r761027877" restype="string" datatype="ruby">
+      <trans-unit id="669" resname="r841564987" restype="string" datatype="ruby">
         <source>to your patients to join your Virtual Practice</source>
         <target>a tus pacientes para unirse a tu Consultorio Virtual</target>
       </trans-unit>
-      <trans-unit id="670" resname="r780441126" restype="string" datatype="ruby">
+      <trans-unit id="670" resname="r868464320" restype="string" datatype="ruby">
         <source>Share your custom URL:</source>
         <target>Comparte tu URL personalizada:</target>
       </trans-unit>
@@ -2484,7 +2484,7 @@
         <source>We&apos;re here to support the integration of virtual care into your practice! We suggest making small, daily commitments to welcome your patients to your Virtual Practice so you&apos;ll see ongoing and growing success on HealthTap Concierge.</source>
         <target>¡Estamos aquí para apoyar la integración de atención virtual a tu consultorio! Sugerimos hacer compromisos diarios y pequeños para dar la bienvenida a tus pacientes a tu Consultorio Virtual, para que veas éxito creciente y continuo en HealthTap Concierge.</target>
       </trans-unit>
-      <trans-unit id="672" resname="r236522905" restype="string" datatype="ruby">
+      <trans-unit id="672" resname="r90715041" restype="string" datatype="ruby">
         <source>Our team of practice experts and support engineers is ready to provide you with personalized assistance setting up your Virtual Practice—customized to reflect your needs. If you need any support, please reach out to concierge@healthtap.com  or book a call with one of our practice experts.</source>
         <target>Nuestro equipo de expertos en consultorios e ingenieros de soporte está listo para brindarte asistencia personalizada para configurar tu Consultorio Virtual — personalizado para que refleje a tus necesidades. Si necesitas cualquier soporte, por favor, contacta a concierge@healthtap.com, o reserva una llamada con uno de nuestros expertos en consultorios.</target>
       </trans-unit>
@@ -2540,7 +2540,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_invite_concierge_0days.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="683" resname="r416570097" restype="string" datatype="ruby">
+      <trans-unit id="683" resname="r662306794" restype="string" datatype="ruby">
         <source>&lt;span style=&quot;font-style:italic;&quot; &gt;The HealthTap&lt;sup&gt;+&lt;/sup&gt; Team :&#41;&lt;/span&gt;</source>
         <target>&lt;span style=&quot;font-style:italic;&quot; &gt;El Equipo&lt;sup&gt;+&lt;/sup&gt; HealthTap :&#41;&lt;/span&gt;</target>
       </trans-unit>
@@ -2604,11 +2604,11 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_frozen_followup.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="692" resname="r101390689" restype="string" datatype="ruby">
+      <trans-unit id="692" resname="r457121423" restype="string" datatype="ruby">
         <source>Please note - your Virtual Practice has been inactivated to prevent future appointments, Inbox Consults, and Live Consults until we can confirm that you&apos;re receiving our notifications and are able to complete virtual consults according to our current policies. We want to confirm your current HealthTap</source>
         <target>Por favor, nota - tu Consultorio Virtual ha sido desactivado para prevenir citas futuras, Consultas de Buzón de Entrada y Consultas en Vivo hasta que podamos confirmar que estás recibiendo nuestras notificaciones y eres capaz de completar consultas virtuales en conformidad con nuestras políticas actuales. Queremos confirmar tu actual HealthTap</target>
       </trans-unit>
-      <trans-unit id="693" resname="r540176739" restype="string" datatype="ruby">
+      <trans-unit id="693" resname="r46500260" restype="string" datatype="ruby">
         <source>If you are ready to complete virtual consults again, please let us know you would like the hold on your account to be lifted. You may respond to this email or reach us at</source>
         <target>Si estás listo para completar consultas virtuales otra vez, por favor, haznos saber si te gustaría que la suspensión de tu cuenta fuera revocada. Puedes responder a este correo electrónico o contactarnos al</target>
       </trans-unit>
@@ -2700,7 +2700,7 @@
         <source>I look forward to welcoming you as a HealthTap Concierge doctor!</source>
         <target>¡Estoy ansioso de darte la bienvenida como un doctor de HealthTap Concierge!</target>
       </trans-unit>
-      <trans-unit id="711" resname="r962631376" restype="string" datatype="ruby">
+      <trans-unit id="711" resname="r385383756" restype="string" datatype="ruby">
         <source>with your questions.</source>
         <target>con tus preguntas.</target>
       </trans-unit>
@@ -2748,11 +2748,11 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_account_unfrozen.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="718" resname="r191659199" restype="string" datatype="ruby">
+      <trans-unit id="718" resname="r952131187" restype="string" datatype="ruby">
         <source>Thank you for letting us know you&apos;re ready for HealthTap</source>
         <target>Gracias por hacernos saber que estás listo para HealthTap</target>
       </trans-unit>
-      <trans-unit id="719" resname="r619872659" restype="string" datatype="ruby">
+      <trans-unit id="719" resname="r231355300" restype="string" datatype="ruby">
         <source>I hope you&apos;re enjoying HealthTap</source>
         <target>Espero que estés disfrutando de HealthTap</target>
       </trans-unit>
@@ -2772,7 +2772,7 @@
         <source>answer more questions</source>
         <target>contestar más preguntas</target>
       </trans-unit>
-      <trans-unit id="723" resname="r948249907" restype="string" datatype="ruby">
+      <trans-unit id="723" resname="r980344883" restype="string" datatype="ruby">
         <source>Checklists are the way HealthTap doctors help members take action on their goals. With easy-to-follow steps and encouragement, you’re part of a movement that is  helping millions everywhere improve their health and well-being daily.</source>
         <target>Los listados son la forma en que los doctores de HealthTap ayudan a los miembros a tomar acción por sus metas. Con pasos fáciles de seguir y apoyo, eres parte de un movimiento que está ayudando a millones en todas partes a mejorar su salud y bienestar diariamente.</target>
       </trans-unit>
@@ -2784,7 +2784,7 @@
         <source>add another checklist</source>
         <target>añadir otro listado</target>
       </trans-unit>
-      <trans-unit id="727" resname="r4233926" restype="string" datatype="ruby">
+      <trans-unit id="727" resname="r188966012" restype="string" datatype="ruby">
         <source>Checklists are the way HealthTap doctors help members take action on their goals. By providing easy-to-follow steps and encouragement, you’re part of a movement that is  helping millions everywhere improve their health and well-being daily.</source>
         <target>Los listados son la forma en que los doctores de HealthTap ayudan a los miembros a tomar acción por sus metas. Al brindar pasos fáciles de seguir y apoyo, eres parte de un movimiento que está ayudando a millones en todas partes a mejorar su salud y bienestar diariamente.</target>
       </trans-unit>
@@ -2792,7 +2792,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_checklist_action_completed.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="728" resname="r331209346" restype="string" datatype="ruby">
+      <trans-unit id="728" resname="r794624413" restype="string" datatype="ruby">
         <source>With each patient that you help with your checklist, you are building your reputation, as well as boosting people’s engagement  with their health and well-being.</source>
         <target>Con cada paciente que ayudes con tu listado, estás construyendo tu reputación, así como impulsando la participación de la gente con su salud y bienestar.</target>
       </trans-unit>
@@ -2888,7 +2888,7 @@
         <source>Here’s a chance to view what one of your peers thinks about this question. Feel free to agree or comment on it to start a discussion. As you know, one of the benefits of participating on</source>
         <target>Aquí está una oportunidad de ver lo que tus pares piensan acerca de esta pregunta. Siéntete libre de estar de acuerdo o comentarla para iniciar una discusión. Como sabes, uno de los beneficios de participar en</target>
       </trans-unit>
-      <trans-unit id="749" resname="r1040656137" restype="string" datatype="ruby">
+      <trans-unit id="749" resname="r132265577" restype="string" datatype="ruby">
         <source>is the ability to exchange information with your valued colleagues.</source>
         <target>es la habilidad de intercambiar información con tus valiosos colegas.</target>
       </trans-unit>
@@ -3700,11 +3700,11 @@
         <source>Available for secure messages</source>
         <target>Disponible para mensajes seguros</target>
       </trans-unit>
-      <trans-unit id="979" resname="r750915788" restype="string" datatype="ruby">
+      <trans-unit id="979" resname="r1038845863" restype="string" datatype="ruby">
         <source>Available next %{msg}</source>
         <target>Disponible próximamente %{msg}</target>
       </trans-unit>
-      <trans-unit id="980" resname="r17068825" restype="string" datatype="ruby">
+      <trans-unit id="980" resname="r304998900" restype="string" datatype="ruby">
         <source>Available next on %{msg}</source>
         <target>Disponible próximamente el %{msg}</target>
       </trans-unit>
@@ -3768,7 +3768,7 @@
         <source>HealthTap celebrates 5B doctor-answers served by launching a new Smart Health Search</source>
         <target>HealthTap celebra 5 billones de respuestas de doctores servidas lanzando una nueva Búsqueda Inteligente de Salud</target>
       </trans-unit>
-      <trans-unit id="1001" resname="r341890683" restype="string" datatype="ruby">
+      <trans-unit id="1001" resname="r377349525" restype="string" datatype="ruby">
         <source>HealthTap launches new proprietary algorithms to enable anyone to find health information tailored to them from the world’s largest library of doctor knowledge.</source>
         <target>HealthTap lanza tus nuevos y propios algoritmos para permitirle a cualquier el encontrar información ajustada para ellos de la biblioteca de conocimiento de doctores más grande del mundo.</target>
       </trans-unit>
@@ -3780,7 +3780,7 @@
         <source>New &quot;HealthTap Cloud&quot; helps developers build interoperable, more engaging, and smarter health apps faster</source>
         <target>La nueva &quot;HealthTap Cloud&quot; ayudara a desarrolladores a construir más rápido aplicaciones de salud interoperables, más atractivas y más inteligentes</target>
       </trans-unit>
-      <trans-unit id="1004" resname="r683077768" restype="string" datatype="ruby">
+      <trans-unit id="1004" resname="r261460562" restype="string" datatype="ruby">
         <source>HealthTap is democratizing access to infrastructure, content, data, and digital services worth hundreds of millions of dollars for large and small developers everywhere to speed up development, save costs, and create better apps.</source>
         <target>HealthTap está democratizando el acceso a infraestructura, contenido, datos y servicios digitales con valor de cientos de millones de dólares para desarrolladores grandes y pequeños en todas partes para acelerar el desarrollo, ahorrar costos, y crear mejores aplicaciones.</target>
       </trans-unit>
@@ -3792,7 +3792,7 @@
         <source>New &quot;Doctor %{ai_serif}&quot; instantaneously translates symptoms into a path to feeling good</source>
         <target>Nuestro nuevo &quot;Doctor %{ai_serif}&quot; traduce instantáneamente síntomas en un camino para sentirte bien</target>
       </trans-unit>
-      <trans-unit id="1007" resname="r974830705" restype="string" datatype="ruby">
+      <trans-unit id="1007" resname="r599216549" restype="string" datatype="ruby">
         <source>Doctor %{ai_serif} is a personal %{ai_serif}-powered physician trained by HealthTap’s network of more than 105,000 top doctors that uses machine learning algorithms to apply doctor-sourced clinical expertise. Dr. %{ai_serif} converses with the patient to understand their health profile to determine the possible causes of their symptoms and route users to the right care immediately.</source>
         <target>El doctor %{ai_serif} es un médico personal impulsado por %{ai_serif} entrenado por la rede de HealthTap de más de 105,000 de los mejores doctores que usa algoritmos de aprendizaje automático para aplicar destreza clínica sacada de doctores. El Dr. %{ai_serif} conversa con el paciente para entender su perfil de salud y determinar las causas probables de sus síntomas y enviar a usuarios a la atención adecuada inmediatamente.</target>
       </trans-unit>

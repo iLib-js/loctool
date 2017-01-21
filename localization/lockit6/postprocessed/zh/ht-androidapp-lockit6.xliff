@@ -929,13 +929,13 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>订购HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="167" resname="r221792856" restype="string" datatype="java">
-        <source>Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat</source>
-        <target>24/7全天候都可以通过视频或者u00a0文字\u00a0与医生交流</target>
+      <trans-unit id="167" resname="r675065080" restype="string" datatype="java">
+        <source>Talk to a doctor live 24/7 via video or text chat</source>
+        <target>24/7全天候都可以通过视频或者u00a0文字 与医生交流</target>
       </trans-unit>
-      <trans-unit id="168" resname="r169802058" restype="string" datatype="java">
-        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel\u00a0anytime</source>
-        <target>得到建议，处方，提醒100%保证满意，随时取消\u00a0</target>
+      <trans-unit id="168" resname="r991907007" restype="string" datatype="java">
+        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
+        <target>得到建议，处方，提醒100%保证满意，随时取消</target>
       </trans-unit>
       <trans-unit id="169" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
@@ -1554,7 +1554,7 @@
       </trans-unit>
       <trans-unit id="281" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>\\n尝试一次在线咨询 ›</target>
+        <target>\n尝试一次在线咨询 ›</target>
       </trans-unit>
       <trans-unit id="282" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -3772,9 +3772,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="676" resname="r792168104" restype="string" datatype="java">
-        <source>Near\u00a0you</source>
-        <target>靠近\u00a0您</target>
+      <trans-unit id="676" resname="r45009371" restype="string" datatype="java">
+        <source>Near you</source>
+        <target>靠近 您</target>
       </trans-unit>
       <trans-unit id="677" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>
@@ -3790,7 +3790,7 @@
         <target>服务/费用</target>
         <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
       </trans-unit>
-      <trans-unit id="680" resname="r884996706" restype="string" datatype="java">
+      <trans-unit id="680" resname="r611604239" restype="string" datatype="java">
         <source>One consult\t\t\t${0}</source>
         <target>一次咨询\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2" resname="grandson" restype="string" datatype="x-android-resource">
+        <source>Grandson</source>
+        <target state="translated">Nieto</target>
+      </trans-unit>
+      <trans-unit id="3" resname="granddaughter" restype="string" datatype="x-android-resource">
+        <source>Granddaughter</source>
+        <target state="translated">Nieta</target>
+      </trans-unit>
+      <trans-unit id="4" resname="stepson" restype="string" datatype="x-android-resource">
+        <source>Stepson</source>
+        <target state="translated">Hijastro</target>
+      </trans-unit>
+      <trans-unit id="5" resname="stepdaughter" restype="string" datatype="x-android-resource">
+        <source>Stepdaughter</source>
+        <target state="translated">Hijastra</target>
+      </trans-unit>
+      <trans-unit id="6" resname="nephew" restype="string" datatype="x-android-resource">
+        <source>Nephew</source>
+        <target state="translated">Sobrino</target>
+      </trans-unit>
+      <trans-unit id="7" resname="niece" restype="string" datatype="x-android-resource">
+        <source>Niece</source>
+        <target state="translated">Sobrina</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
