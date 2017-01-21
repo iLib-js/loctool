@@ -787,13 +787,13 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>Suscríbete a HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="148" resname="r221792856" restype="string" datatype="java">
-        <source>Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat</source>
-        <target>Habla con un doctor en vivo, 24/7, vía chat de\u00a0video\u00a0o texto</target>
+      <trans-unit id="148" resname="r675065080" restype="string" datatype="java">
+        <source>Talk to a doctor live 24/7 via video or text chat</source>
+        <target>Habla con un doctor en vivo, 24/7, vía chat de video o texto</target>
       </trans-unit>
-      <trans-unit id="149" resname="r169802058" restype="string" datatype="java">
-        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel\u00a0anytime</source>
-        <target>Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar\u00a0en cualquier momento</target>
+      <trans-unit id="149" resname="r991907007" restype="string" datatype="java">
+        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
+        <target>Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar en cualquier momento</target>
       </trans-unit>
       <trans-unit id="150" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
@@ -1430,7 +1430,7 @@
       </trans-unit>
       <trans-unit id="266" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>\\nPrueba una Consulta Virtual ›</target>
+        <target>nPrueba una Consulta Virtual ›</target>
       </trans-unit>
       <trans-unit id="267" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -2041,7 +2041,7 @@
         <source>Known for {known_for_topic_name}</source>
         <target>Conocido por {known_for_topic_name}</target>
       </trans-unit>
-      <trans-unit id="381" resname="r758898992" restype="string" datatype="java">
+      <trans-unit id="381" resname="r812841735" restype="string" datatype="java">
         <source>Here&apos;s a referral to a {expert_specialty} {start}{expert_name}{end}, you can consult for advice and treatment:</source>
         <target>Aquí está una referencia para un {expert_specialty} {start}{expert_name}{end}, que puedes consultar para consejo y tratamiento:</target>
       </trans-unit>
@@ -3633,9 +3633,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="664" resname="r792168104" restype="string" datatype="java">
-        <source>Near\u00a0you</source>
-        <target>Cerca de\u00a0ti</target>
+      <trans-unit id="664" resname="r45009371" restype="string" datatype="java">
+        <source>Near you</source>
+        <target>Cerca de ti</target>
       </trans-unit>
       <trans-unit id="665" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>
@@ -3651,7 +3651,7 @@
         <target>Servicio/Costo</target>
         <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
       </trans-unit>
-      <trans-unit id="668" resname="r884996706" restype="string" datatype="java">
+      <trans-unit id="668" resname="r611604239" restype="string" datatype="java">
         <source>One consult\t\t\t${0}</source>
         <target>Una consulta\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>
@@ -15225,13 +15225,13 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>订阅HealthTap Prime黄金会员</target>
       </trans-unit>
-      <trans-unit id="148" resname="r221792856" restype="string" datatype="java">
-        <source>Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat</source>
-        <target>全天24小时都可以通过视频或者u00a0文本\u00a0与医生交流</target>
+      <trans-unit id="148" resname="r675065080" restype="string" datatype="java">
+        <source>Talk to a doctor live 24/7 via video or text chat</source>
+        <target>全天24小时都可以通过视频或者u00a0文本 与医生交流</target>
       </trans-unit>
-      <trans-unit id="149" resname="r169802058" restype="string" datatype="java">
-        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel\u00a0anytime</source>
-        <target>得到建议，处方，提醒100%保证满意，取消\u00a0随时</target>
+      <trans-unit id="149" resname="r991907007" restype="string" datatype="java">
+        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
+        <target>得到建议，处方，提醒100%保证满意，取消 随时</target>
       </trans-unit>
       <trans-unit id="150" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
@@ -15868,7 +15868,7 @@
       </trans-unit>
       <trans-unit id="266" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>\\n尝试一次在线咨询 ›</target>
+        <target>n尝试一次在线咨询 ›</target>
       </trans-unit>
       <trans-unit id="267" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -16531,7 +16531,7 @@
     <body>
       <trans-unit id="390" resname="r475478276" restype="string" datatype="java">
         <source>{name}&apos;s</source>
-        <target>{name}\&apos;s</target>
+        <target>{name}&apos;s</target>
       </trans-unit>
       <trans-unit id="391" resname="r221517291" restype="string" datatype="java">
         <source>checklist on</source>
@@ -16768,7 +16768,7 @@
       </trans-unit>
       <trans-unit id="433" resname="r116490053" restype="string" datatype="java">
         <source>Please share {first_name}&apos;s obstetrics/pregnancy history</source>
-        <target>请分享{first_name}\&apos;s的产科/怀孕史</target>
+        <target>请分享{first_name}&apos;s的产科/怀孕史</target>
       </trans-unit>
       <trans-unit id="434" resname="r230064504" restype="string" datatype="java">
         <source>Is {first_name} currently pregnant?</source>
@@ -18075,9 +18075,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="664" resname="r792168104" restype="string" datatype="java">
-        <source>Near\u00a0you</source>
-        <target>靠近\u00a0您</target>
+      <trans-unit id="664" resname="r45009371" restype="string" datatype="java">
+        <source>Near you</source>
+        <target>靠近 您</target>
       </trans-unit>
       <trans-unit id="665" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>
@@ -18093,7 +18093,7 @@
         <target>服务/成本</target>
         <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
       </trans-unit>
-      <trans-unit id="668" resname="r884996706" restype="string" datatype="java">
+      <trans-unit id="668" resname="r611604239" restype="string" datatype="java">
         <source>One consult\t\t\t${0}</source>
         <target>一次咨询\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>
@@ -39594,13 +39594,13 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>Suscríbete a HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="167" resname="r221792856" restype="string" datatype="java">
-        <source>Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat</source>
-        <target>Habla con un doctor en vivo, 24/7, vía chat de\u00a0video\u00a0o texto</target>
+      <trans-unit id="167" resname="r675065080" restype="string" datatype="java">
+        <source>Talk to a doctor live 24/7 via video or text chat</source>
+        <target>Habla con un doctor en vivo, 24/7, vía chat de video o texto</target>
       </trans-unit>
-      <trans-unit id="168" resname="r169802058" restype="string" datatype="java">
-        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel\u00a0anytime</source>
-        <target>Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar\u00a0en cualquier momento</target>
+      <trans-unit id="168" resname="r991907007" restype="string" datatype="java">
+        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
+        <target>Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar en cualquier momento</target>
       </trans-unit>
       <trans-unit id="169" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
@@ -40219,7 +40219,7 @@
       </trans-unit>
       <trans-unit id="281" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>\\nPrueba una Consulta Virtual ›</target>
+        <target>nPrueba una Consulta Virtual ›</target>
       </trans-unit>
       <trans-unit id="282" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -40962,8 +40962,8 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/GoalTakeActionListItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="411" resname="r363844654" restype="string" datatype="java">
-        <source>{approver_name} agreed with {author_name}\&apos;s checklist</source>
+      <trans-unit id="411" resname="r390005620" restype="string" datatype="java">
+        <source>{approver_name} agreed with {author_name}&apos;s checklist</source>
         <target>{approver_name} estuvo de acuerdo con el listado de {author_name}</target>
       </trans-unit>
       <trans-unit id="412" resname="r776974405" restype="string" datatype="java">
@@ -41083,8 +41083,8 @@
         <source>Is {first_name} alive?</source>
         <target>¿Está vivo {first_name}?</target>
       </trans-unit>
-      <trans-unit id="433" resname="r914415647" restype="string" datatype="java">
-        <source>Does {first_name}\&apos;s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
+      <trans-unit id="433" resname="r920181258" restype="string" datatype="java">
+        <source>Does {first_name}&apos;s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
         <target>¿Los abuelos, padres o hermanos vivos de {first_name} tienen alguna condición médica mayor? &#40;¿que atente contra la vida o no?&#41;</target>
       </trans-unit>
       <trans-unit id="434" resname="r685531918" restype="string" datatype="java">
@@ -42437,9 +42437,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="676" resname="r792168104" restype="string" datatype="java">
-        <source>Near\u00a0you</source>
-        <target>Cerca de\u00a0ti</target>
+      <trans-unit id="676" resname="r45009371" restype="string" datatype="java">
+        <source>Near you</source>
+        <target>Cerca de ti</target>
       </trans-unit>
       <trans-unit id="677" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>
@@ -42455,7 +42455,7 @@
         <target>Servicio/Costo</target>
         <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
       </trans-unit>
-      <trans-unit id="680" resname="r884996706" restype="string" datatype="java">
+      <trans-unit id="680" resname="r611604239" restype="string" datatype="java">
         <source>One consult\t\t\t${0}</source>
         <target>Una consulta\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>
@@ -43734,13 +43734,13 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>订购HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="167" resname="r221792856" restype="string" datatype="java">
-        <source>Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat</source>
-        <target>24/7全天候都可以通过视频或者u00a0文字\u00a0与医生交流</target>
+      <trans-unit id="167" resname="r675065080" restype="string" datatype="java">
+        <source>Talk to a doctor live 24/7 via video or text chat</source>
+        <target>24/7全天候都可以通过视频或者u00a0文字 与医生交流</target>
       </trans-unit>
-      <trans-unit id="168" resname="r169802058" restype="string" datatype="java">
-        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel\u00a0anytime</source>
-        <target>得到建议，处方，提醒100%保证满意，随时取消\u00a0</target>
+      <trans-unit id="168" resname="r991907007" restype="string" datatype="java">
+        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
+        <target>得到建议，处方，提醒100%保证满意，随时取消</target>
       </trans-unit>
       <trans-unit id="169" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
@@ -44359,7 +44359,7 @@
       </trans-unit>
       <trans-unit id="281" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>\\n尝试一次在线咨询 ›</target>
+        <target>n尝试一次在线咨询 ›</target>
       </trans-unit>
       <trans-unit id="282" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -46577,9 +46577,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="676" resname="r792168104" restype="string" datatype="java">
-        <source>Near\u00a0you</source>
-        <target>靠近\u00a0您</target>
+      <trans-unit id="676" resname="r45009371" restype="string" datatype="java">
+        <source>Near you</source>
+        <target>靠近 您</target>
       </trans-unit>
       <trans-unit id="677" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>
@@ -46595,7 +46595,7 @@
         <target>服务/费用</target>
         <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
       </trans-unit>
-      <trans-unit id="680" resname="r884996706" restype="string" datatype="java">
+      <trans-unit id="680" resname="r611604239" restype="string" datatype="java">
         <source>One consult\t\t\t${0}</source>
         <target>一次咨询\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>
@@ -50377,10 +50377,6 @@
         <source>{appointment_time} with {doctor_name}</source>
         <target state="translated">{appointment_time} con {doctor_name}</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
-    <body>
       <trans-unit id="10" resname="helpful" restype="string" datatype="x-android-resource">
         <source>Helpful</source>
         <target>Útil</target>
@@ -53261,10 +53257,6 @@
         <source>{appointment_time} with {doctor_name}</source>
         <target state="translated">{appointment_time}与{doctor_name}</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
-    <body>
       <trans-unit id="38" resname="helpful" restype="string" datatype="x-android-resource">
         <source>Helpful</source>
         <target>有帮助的</target>
@@ -53301,9 +53293,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskQuestionToDocFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="1" resname="r743681507" restype="string" datatype="java">
-        <source>\\nTry a Virtual Consult ›</source>
-        <target state="translated">\\nPrueba una Consulta Virtual ›</target>
+      <trans-unit id="1" resname="r547162446" restype="string" datatype="java">
+        <source>nTry a Virtual Consult ›</source>
+        <target state="translated">nPrueba una Consulta Virtual ›</target>
       </trans-unit>
     </body>
   </file>
@@ -53496,9 +53488,9 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskQuestionToDocFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="1" resname="r743681507" restype="string" datatype="java">
-        <source>\\nTry a Virtual Consult ›</source>
-        <target state="translated">\\n尝试一次在线咨询 ›</target>
+      <trans-unit id="1" resname="r547162446" restype="string" datatype="java">
+        <source>nTry a Virtual Consult ›</source>
+        <target state="translated">n尝试一次在线咨询 ›</target>
       </trans-unit>
     </body>
   </file>
@@ -53717,7 +53709,7 @@
   <file original="src/com/healthtap/userhtexpress/adapters/GoalsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="1199" resname="r565514845" restype="string" datatype="java">
-        <source>We\&apos;ll share more tips and checklists to help you with {0}</source>
+        <source>We&apos;ll share more tips and checklists to help you with {0}</source>
         <target>我们会分享更多的小贴士和清单来帮助您{0}</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
@@ -53728,6 +53720,75 @@
       <trans-unit id="2597" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="other">
         <source>Thanks! {start}%d{end} symptoms added.\nAny additional symptoms?</source>
         <target>谢谢！{start}%d{end}个症状已添加。\n有其他症状吗？</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2" resname="grandson" restype="string" datatype="x-android-resource">
+        <source>Grandson</source>
+        <target state="translated">Nieto</target>
+      </trans-unit>
+      <trans-unit id="3" resname="granddaughter" restype="string" datatype="x-android-resource">
+        <source>Granddaughter</source>
+        <target state="translated">Nieta</target>
+      </trans-unit>
+      <trans-unit id="4" resname="stepson" restype="string" datatype="x-android-resource">
+        <source>Stepson</source>
+        <target state="translated">Hijastro</target>
+      </trans-unit>
+      <trans-unit id="5" resname="stepdaughter" restype="string" datatype="x-android-resource">
+        <source>Stepdaughter</source>
+        <target state="translated">Hijastra</target>
+      </trans-unit>
+      <trans-unit id="6" resname="nephew" restype="string" datatype="x-android-resource">
+        <source>Nephew</source>
+        <target state="translated">Sobrino</target>
+      </trans-unit>
+      <trans-unit id="7" resname="niece" restype="string" datatype="x-android-resource">
+        <source>Niece</source>
+        <target state="translated">Sobrina</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="grandson" restype="string" datatype="x-android-resource">
+        <source>Grandson</source>
+        <target state="translated">外孙</target>
+      </trans-unit>
+      <trans-unit id="2" resname="granddaughter" restype="string" datatype="x-android-resource">
+        <source>Granddaughter</source>
+        <target state="translated">外孙女</target>
+      </trans-unit>
+      <trans-unit id="3" resname="stepson" restype="string" datatype="x-android-resource">
+        <source>Stepson</source>
+        <target state="translated">继子</target>
+      </trans-unit>
+      <trans-unit id="4" resname="stepdaughter" restype="string" datatype="x-android-resource">
+        <source>Stepdaughter</source>
+        <target state="translated">继女</target>
+      </trans-unit>
+      <trans-unit id="5" resname="nephew" restype="string" datatype="x-android-resource">
+        <source>Nephew</source>
+        <target state="translated">侄子</target>
+      </trans-unit>
+      <trans-unit id="6" resname="niece" restype="string" datatype="x-android-resource">
+        <source>Niece</source>
+        <target state="translated">侄女</target>
+      </trans-unit>
+      <trans-unit id="8" resname="body_fetus" restype="string" datatype="x-android-resource">
+        <source>Fetus</source>
+        <target state="translated">胎儿</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="7" resname="r563885918" restype="string" datatype="java">
+        <source>Ask {doctor_name} a question...</source>
+        <target state="translated">询问{doctor_name}一个问题...</target>
+        <note annotates="source">{0} is a name prefix, such as Dr. Jr. Sr. etc. {1} is the last name of a doctor.</note>
       </trans-unit>
     </body>
   </file>

@@ -787,11 +787,11 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>订阅HealthTap Prime黄金会员</target>
       </trans-unit>
-      <trans-unit id="148" resname="r795486165" restype="string" datatype="java">
+      <trans-unit id="148" resname="r675065080" restype="string" datatype="java">
         <source>Talk to a doctor live 24/7 via video or text chat</source>
         <target>全天24小时都可以通过视频或者u00a0文本 与医生交流</target>
       </trans-unit>
-      <trans-unit id="149" resname="r610432580" restype="string" datatype="java">
+      <trans-unit id="149" resname="r991907007" restype="string" datatype="java">
         <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
         <target>得到建议，处方，提醒100%保证满意，取消 随时</target>
       </trans-unit>
@@ -3637,7 +3637,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="664" resname="r112497852" restype="string" datatype="java">
+      <trans-unit id="664" resname="r45009371" restype="string" datatype="java">
         <source>Near you</source>
         <target>靠近 您</target>
       </trans-unit>

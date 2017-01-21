@@ -293,12 +293,12 @@
         <target state="translated">在%{phone}, %{email}查看%{name}</target>
       </trans-unit>
       <trans-unit id="5124" resname="r639574300" restype="string" datatype="ruby">
-        <source> on behalf of %{subaccount} &#40;%{relationship}&#41;</source>
-        <target state="translated"> 代表%{subaccount} &#40;%{relationship}&#41;</target>
+        <source>on behalf of %{subaccount} &#40;%{relationship}&#41;</source>
+        <target state="translated">代表%{subaccount} &#40;%{relationship}&#41;</target>
       </trans-unit>
       <trans-unit id="5125" resname="r264351801" restype="string" datatype="ruby">
-        <source> for a scheduled appointment</source>
-        <target state="translated"> 安排一次预约</target>
+        <source>for a scheduled appointment</source>
+        <target state="translated">安排一次预约</target>
       </trans-unit>
       <trans-unit id="5126" resname="r437005058" restype="string" datatype="ruby">
         <source>From %{patient} %{gender}%{subaccount}%{descriptor}</source>

@@ -929,13 +929,13 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>订购HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="167" resname="r795486165" restype="string" datatype="java">
+      <trans-unit id="167" resname="r675065080" restype="string" datatype="java">
         <source>Talk to a doctor live 24/7 via video or text chat</source>
         <target>24/7全天候都可以通过视频或者u00a0文字 与医生交流</target>
       </trans-unit>
-      <trans-unit id="168" resname="r610432580" restype="string" datatype="java">
+      <trans-unit id="168" resname="r991907007" restype="string" datatype="java">
         <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
-        <target>得到建议，处方，提醒100%保证满意，随时取消 </target>
+        <target>得到建议，处方，提醒100%保证满意，随时取消</target>
       </trans-unit>
       <trans-unit id="169" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
@@ -3772,7 +3772,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="676" resname="r112497852" restype="string" datatype="java">
+      <trans-unit id="676" resname="r45009371" restype="string" datatype="java">
         <source>Near you</source>
         <target>靠近 您</target>
       </trans-unit>
