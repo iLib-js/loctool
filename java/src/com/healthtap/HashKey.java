@@ -31,7 +31,7 @@ public class HashKey {
 			replaceAll("([^\\\\])\\\\'", "$1'").
 			replaceAll("\\\\\"", "\"").
 			replaceAll("([^\\\\])\\\\\"", "$1\"").
-			replaceAll("\\s+", " ").
+			replaceAll("[ \n\t\r\f]+", " ").
 			trim();
 		
 		// System.out.println("After mucking: '" + str + "'");
