@@ -1430,7 +1430,7 @@
       </trans-unit>
       <trans-unit id="266" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>nPrueba una Consulta Virtual ›</target>
+        <target>\nPrueba una Consulta Virtual ›</target>
       </trans-unit>
       <trans-unit id="267" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
