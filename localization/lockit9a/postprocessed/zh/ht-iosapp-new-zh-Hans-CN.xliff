@@ -64,7 +64,7 @@
     <body>
       <trans-unit id="7" resname="A device connection code allows another app or medical device to securely send health data to this patient&apos;s chart. If you have an app requesting a &quot;device connection code&quot; or &quot;verification code&quot;, please use the code displayed here." restype="string" datatype="x-objective-c">
         <source>A device connection code allows another app or medical device to securely send health data to this patient&apos;s chart. If you have an app requesting a &quot;device connection code&quot; or &quot;verification code&quot;, please use the code displayed here.</source>
-        <target state="new">A device connection code allows another app or medical device to securely send health data to this patient&apos;s chart. If you have an app requesting a &quot;device connection code&quot; or &quot;verification code&quot;, please use the code displayed here.</target>
+        <target state="accepted">设备连接代码允许其他应用程序或医疗设备将健康数据安全地发送到该患者的图表. 如果您的应用请求了&quot;设备连接代码”或“验证码&quot;，请使用此处显示的代码.</target>
       </trans-unit>
     </body>
   </file>
