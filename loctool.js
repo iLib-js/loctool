@@ -26,7 +26,7 @@ var logger = log4js.getLogger("loctool.loctool");
 var pull = false;
 
 function usage() {
-	console.log("Usage: loctool [-h] [-p] [-l locales] [command [command-specific-arguments]]\n" +
+	console.log("Usage: loctool [-h] [-p] [-l locales] [-f filetype] [command [command-specific-arguments]]\n" +
 		"Extract localizable strings from the source code.\n\n" +
 		"-h or --help\n" +
 		"  this help\n" +
@@ -36,6 +36,9 @@ function usage() {
 		"  Restrict operation to only the given locales. Locales should be given as\n" + 
 		"  a comma-separated list of BCP-47 locale specs. By default, this tool\n" +
 		"  will operate with all locales that are available in the translations.\n" +
+		"-f or --filetype\n" +
+		"  Restrict operation to only the given list of file types. This allows you to\n" +
+		"  run only the parts of the loctool that are needed at the moment.\n" +
 		"command\n" +
 		"  a command to execute. This is one of:\n" +
 		"    localize [root-dir-name] - extract strings and generate localized resource\n" +
@@ -70,6 +73,10 @@ var options = process.argv.filter(function (val, index, array) {
 	} else if (val === "-l" || val === "--locales") {
 		if (i < array.length && array[index+1]) {
 			settings.locales = array[index+1].split(",");
+		}
+	} else if (val === "-f" || val === "--filetype") {
+		if (i < array.length && array[index+1]) {
+			settings.filetypes = array[index+1].split(",");
 		}
 	} else {
 		return true;
