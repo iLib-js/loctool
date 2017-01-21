@@ -65,25 +65,30 @@ var settings = {
 	pull: false
 };
 
-var options = process.argv.filter(function (val, index, array) {
+var options = [];
+var argv = process.argv;
+for (var i = 0; i < argv.length; i++) {
+	var val = argv[i];
 	if (val === "-h" || val === "--help") {
 		usage();
 	} else if (val === "-p" || val === "--pull") {
 		settings.pull = true;
 	} else if (val === "-l" || val === "--locales") {
-		if (i < array.length && array[index+1]) {
-			settings.locales = array[index+1].split(",");
+		if (i < argv.length && argv[i+1]) {
+			settings.locales = argv[++i].split(",");
 		}
 	} else if (val === "-f" || val === "--filetype") {
-		if (i < array.length && array[index+1]) {
-			settings.filetypes = array[index+1].split(",");
+		if (i < argv.length && argv[i+1]) {
+			var types = argv[++i].split(",");
+			settings.fileTypes = {};
+			types.forEach(function(type) {
+				settings.fileTypes.type = true;
+			});
 		}
 	} else {
-		return true;
+		options.push(val);
 	}
-	
-	return false;
-});
+}
 
 var command = options.length > 2 ? options[2] : "localize";
 
