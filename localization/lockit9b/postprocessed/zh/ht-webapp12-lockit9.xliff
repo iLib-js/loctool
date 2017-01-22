@@ -3531,14 +3531,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/templates/connect_doctor_module.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="1133" resname="&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;" restype="string" datatype="html">
-        <source>&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;</source>
-        <target state="translated">&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/feelGood/templates/consult_rating_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1134" resname="Write a recommendation for &lt;%= short_name %&gt;" restype="string" datatype="html">
