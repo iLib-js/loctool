@@ -2358,7 +2358,7 @@
     <body>
       <trans-unit id="438" resname="r1049343603" restype="string" datatype="java">
         <source>At which phone can pharmacists or HealthTap reach {first_name} if needed?</source>
-        <target>如果需要，药剂师或者HealthTap可以通过哪个电话联系您？</target>
+        <target>如果需要，药剂师或者HealthTap可以通过哪个电话联系 {first_name} ？</target>
       </trans-unit>
       <trans-unit id="439" resname="r67767556" restype="string" datatype="java">
         <source>Please provide valid phone number</source>
