@@ -82,7 +82,7 @@ for (var i = 0; i < argv.length; i++) {
 			var types = argv[++i].split(",");
 			settings.fileTypes = {};
 			types.forEach(function(type) {
-				settings.fileTypes.type = true;
+				settings.fileTypes[type] = true;
 			});
 		}
 	} else {
