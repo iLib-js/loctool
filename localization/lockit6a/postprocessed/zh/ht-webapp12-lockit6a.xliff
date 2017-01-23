@@ -10380,10 +10380,6 @@
         <source>answered:</source>
         <target>已回答：</target>
       </trans-unit>
-      <trans-unit id="7006" resname="." restype="string" datatype="html">
-        <source>.</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="7007" resname="Read More ..." restype="string" datatype="html">
         <source>Read More ...</source>
         <target>阅读更多...</target>
@@ -36623,10 +36619,6 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       <trans-unit id="8372" resname="PUBLICATIONS" restype="string" datatype="html">
         <source>PUBLICATIONS</source>
         <target>出版物</target>
-      </trans-unit>
-      <trans-unit id="8373" resname="." restype="string" datatype="html">
-        <source>.</source>
-        <target>.</target>
       </trans-unit>
       <trans-unit id="8374" resname="blog&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;additional links" restype="string" datatype="html">
         <source>blog&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;additional links</source>

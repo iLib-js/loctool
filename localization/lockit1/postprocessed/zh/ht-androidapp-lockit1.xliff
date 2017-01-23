@@ -5483,10 +5483,6 @@
         <source>Learn more</source>
         <target>学习更多</target>
       </trans-unit>
-      <trans-unit id="1100" resname="period" restype="string" datatype="x-android-resource">
-        <source>.</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="1101" resname="mr" restype="string" datatype="x-android-resource">
         <source>mr.</source>
         <target>先生</target>

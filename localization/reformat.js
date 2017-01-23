@@ -32,16 +32,18 @@ console.log("Processing translation units ...");
 // go through all the new strings and re-use old translations from different files
 for (var i = 0; i < units.length; i++) {
 	unit = units[i];
+        /*
 	if ((/-lockit[1456][abc]?.xliff$/.test(process.argv[2]) || /-lockit[78].xliff$/.test(process.argv[2])) && unit.state === "translated") {
 		unit.state = undefined;
 	}
+        */
 	if (unit.state === "new") {
 		unit.state = "translated";
 	}
 	
-	if (!unit.target || !unit.targetLocale || (unit.datatype === "x-android-resource" && unit.source.substring(0,8) === "@string/")) {
+	if (!unit.target || !unit.targetLocale || unit.target === "." || (unit.datatype === "x-android-resource" && unit.source.substring(0,8) === "@string/")) {
 	//if (!unit.target || !unit.targetLocale) {
-		console.log("Skipping unit with no target... " + unit.key);
+		console.log("Skipping unit with empty target, dot target, or no target... " + unit.key);
 		units.splice(i, 1);
 		i--; // go back and check the i'th unit again now that it is a different one
 	} else if (unit.datatype) {
