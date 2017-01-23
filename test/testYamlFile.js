@@ -1295,5 +1295,38 @@ module.exports = {
         test.equal(set.getBySource('b','title@read_me').getLocalize(), true);
         test.equal(set.getBySource('d','title@do_not_read_me').getLocalize(), false);
         test.done();
+    },
+
+    testYamlParseOutputFile: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            },
+            id: 1 // Do not remove this from the test, TranslationSet.remove requires it
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "./test3.yml"
+        });
+        test.ok(y);
+        y.extract();
+        var outputFileContents =
+            'title:\n' +
+            '  read_me:\n' +
+            '    a: f\n' +
+            '  do_not_read_me:\n' +
+            '    c: e\n';
+        y.parseOutputFile(outputFileContents);
+        var set = y.getTranslationSet();
+        test.ok(set);
+        test.equal(set.getBySource('d', 'title@do_not_read_me'), undefined);
+        var r = set.getBySource('e', 'title@do_not_read_me');
+        test.ok(r);
+        test.equal(r.getSource(), 'e');
+        test.done();
     }
 };
