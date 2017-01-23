@@ -23884,7 +23884,7 @@
       </trans-unit>
       <trans-unit id="4663" resname="r68392769" restype="string" datatype="ruby">
         <source>Your Doctor Care-Team</source>
-        <target state="translated">Care-Team &#40;Equipo de atención&#41; del Médico</target>
+        <target state="translated">Care-Team &#40;Equipo de atención&#41;</target>
       </trans-unit>
       <trans-unit id="4664" resname="r710153801" restype="string" datatype="ruby">
         <source>Updates when you invite a doctor to join your Care-Team</source>
