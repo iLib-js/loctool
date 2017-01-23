@@ -1430,7 +1430,7 @@
       </trans-unit>
       <trans-unit id="266" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>nPrueba una Consulta Virtual ›</target>
+        <target>\nPrueba una Consulta Virtual ›</target>
       </trans-unit>
       <trans-unit id="267" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -15868,7 +15868,7 @@
       </trans-unit>
       <trans-unit id="266" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>n尝试一次在线咨询 ›</target>
+        <target>\n尝试一次在线咨询 ›</target>
       </trans-unit>
       <trans-unit id="267" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -16796,7 +16796,7 @@
     <body>
       <trans-unit id="438" resname="r1049343603" restype="string" datatype="java">
         <source>At which phone can pharmacists or HealthTap reach {first_name} if needed?</source>
-        <target>如果需要，药剂师或者HealthTap可以通过哪个电话联系您？</target>
+        <target>如果需要，药剂师或者HealthTap可以通过哪个电话联系 {first_name} ？</target>
       </trans-unit>
       <trans-unit id="439" resname="r67767556" restype="string" datatype="java">
         <source>Please provide valid phone number</source>
@@ -40219,7 +40219,7 @@
       </trans-unit>
       <trans-unit id="281" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>nPrueba una Consulta Virtual ›</target>
+        <target>\nPrueba una Consulta Virtual ›</target>
       </trans-unit>
       <trans-unit id="282" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -44359,7 +44359,7 @@
       </trans-unit>
       <trans-unit id="281" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>n尝试一次在线咨询 ›</target>
+        <target>\n尝试一次在线咨询 ›</target>
       </trans-unit>
       <trans-unit id="282" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -53294,8 +53294,8 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskQuestionToDocFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="1" resname="r547162446" restype="string" datatype="java">
-        <source>nTry a Virtual Consult ›</source>
-        <target state="translated">nPrueba una Consulta Virtual ›</target>
+        <source>\nTry a Virtual Consult ›</source>
+        <target state="translated">\nPrueba una Consulta Virtual ›</target>
       </trans-unit>
     </body>
   </file>
@@ -53489,8 +53489,8 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskQuestionToDocFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="1" resname="r547162446" restype="string" datatype="java">
-        <source>nTry a Virtual Consult ›</source>
-        <target state="translated">n尝试一次在线咨询 ›</target>
+        <source>\nTry a Virtual Consult ›</source>
+        <target state="translated">\n尝试一次在线咨询 ›</target>
       </trans-unit>
     </body>
   </file>
@@ -53789,6 +53789,23 @@
         <source>Ask {doctor_name} a question...</source>
         <target state="translated">询问{doctor_name}一个问题...</target>
         <note annotates="source">{0} is a name prefix, such as Dr. Jr. Sr. etc. {1} is the last name of a doctor.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="r563885918" restype="string" datatype="java">
+        <source>Ask {doctor_name} a question...</source>
+        <target state="translated">询问{doctor_name}一个问题...</target>
+        <note annotates="source">{0} is a name prefix, such as Dr. Jr. Sr. etc. {1} is the last name of a doctor.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2" resname="body_fetus" restype="string" datatype="x-android-resource">
+        <source>Fetus</source>
+        <target state="translated">胎儿</target>
       </trans-unit>
     </body>
   </file>
