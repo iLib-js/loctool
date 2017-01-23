@@ -326,7 +326,7 @@
   </file>
   <file original="app/views/static_pages/home/_hopes_for_everyone.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="71" resname="r894830522" restype="string" datatype="ruby">
+      <trans-unit id="71" resname="r55289507" restype="string" datatype="ruby">
         <source>Immediate, trusted, simple disaster relief</source>
         <target state="translated">Apoyo en catástrofes simple, inmediato y confiable</target>
       </trans-unit>
@@ -1087,7 +1087,7 @@
   </file>
   <file original="app/views/general_mailer/member_concierge_doctor_invitation_google_approval.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="305" resname="r88055253" restype="string" datatype="ruby">
+      <trans-unit id="305" resname="r458596117" restype="string" datatype="ruby">
         <source>Replies to this email will not reach me. To ask me about a health concern, please accept this invitation and send me a message or schedule a virtual appointment with me on HealthTap. If you believe you may have an emergency, call 911 or immediately go to the ER.</source>
         <target state="translated">No llegarán a mí respuestas a este correo. Para preguntarme acerca de una inquietud sobre salud, por favor, acepta esta invitación y envíame un mensaje o agenda una cita virtual conmigo en HealthTap. Si crees tener una emergencia, llama al 911 o ve inmediatamente a la Sala de Urgencias.</target>
       </trans-unit>
@@ -1175,7 +1175,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_test_results_day1.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="371" resname="r783247129" restype="string" datatype="ruby">
+      <trans-unit id="371" resname="r1066739754" restype="string" datatype="ruby">
         <source>The</source>
         <target state="translated">La</target>
       </trans-unit>
@@ -1199,11 +1199,11 @@
   </file>
   <file original="app/views/general_mailer/doctor_raterx_reviewtreatment.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="387" resname="r911213248" restype="string" datatype="ruby">
+      <trans-unit id="387" resname="r167070602" restype="string" datatype="ruby">
         <source>How effective is</source>
         <target state="translated">Qué tan efectivo es</target>
       </trans-unit>
-      <trans-unit id="388" resname="r1071685775" restype="string" datatype="ruby">
+      <trans-unit id="388" resname="r941328703" restype="string" datatype="ruby">
         <source>for</source>
         <target state="translated">para</target>
       </trans-unit>
@@ -1283,7 +1283,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_prime_app_part2_approved.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="483" resname="r546801273" restype="string" datatype="ruby">
+      <trans-unit id="483" resname="r3013966" restype="string" datatype="ruby">
         <source>.</source>
         <target state="translated">.</target>
       </trans-unit>
@@ -1295,7 +1295,7 @@
         <source>HealthTap Prime doctor</source>
         <target state="translated">Doctor de HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="495" resname="r479272471" restype="string" datatype="ruby">
+      <trans-unit id="495" resname="r629509936" restype="string" datatype="ruby">
         <source>If you have any questions in the meantime, please contact us at</source>
         <target state="translated">Si tienes alguna pregunta mientras tanto, por favor, contáctanos en:</target>
       </trans-unit>
@@ -1375,7 +1375,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_set_pricing_change_and_upcoming_charge.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="647" resname="r306494039" restype="string" datatype="ruby">
+      <trans-unit id="647" resname="r635948611" restype="string" datatype="ruby">
         <source>Team</source>
         <target state="translated">Equipo</target>
       </trans-unit>
@@ -1407,7 +1407,7 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_app_training_demo.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="703" resname="r461230370" restype="string" datatype="ruby">
+      <trans-unit id="703" resname="r281548558" restype="string" datatype="ruby">
         <source>Please send any questions, comments or suggestions to</source>
         <target state="translated">Por favor, envía cualquier pregunta, comentario o sugerencia a</target>
       </trans-unit>
@@ -1603,7 +1603,7 @@
         <source>Staff name</source>
         <target state="translated">Nombre de personal</target>
       </trans-unit>
-      <trans-unit id="802" resname="r480997426" restype="string" datatype="ruby">
+      <trans-unit id="802" resname="r499309286" restype="string" datatype="ruby">
         <source>Wrong code. Please try again:</source>
         <target state="translated">Código equivocado. Por favor intenta de nuevo:</target>
       </trans-unit>
@@ -1967,7 +1967,7 @@
         <source>Facial Plastic Surgery</source>
         <target state="translated">Cirugía Plástica Facial</target>
       </trans-unit>
-      <trans-unit id="1030" resname="r284944373" restype="string" datatype="ruby">
+      <trans-unit id="1030" resname="r143937928" restype="string" datatype="ruby">
         <source>Neurologist</source>
         <target state="translated">Neurólogo</target>
       </trans-unit>
@@ -8827,7 +8827,7 @@
   </file>
   <file original="_vp_director_of_marketing.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2434" resname="r482075706" restype="string" datatype="x-haml">
+      <trans-unit id="2434" resname="r918907465" restype="string" datatype="x-haml">
         <source>%p.requirements With our marketing team you will:</source>
         <target state="translated">%p.requirements Con nuestro equipo de mercadotecnia tú:</target>
       </trans-unit>
@@ -8835,7 +8835,7 @@
   </file>
   <file original="_vp_director_of_business_development.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2435" resname="r980192517" restype="string" datatype="x-haml">
+      <trans-unit id="2435" resname="r858377893" restype="string" datatype="x-haml">
         <source>%p.requirements As HealthTap&apos;s Director of Business Development, you will:</source>
         <target state="translated">%p.requirements  Como Director de Desarrollo de Negocios de HealthTap, tú:</target>
       </trans-unit>
@@ -8843,7 +8843,7 @@
   </file>
   <file original="_ux_designer.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2436" resname="r996685740" restype="string" datatype="x-haml">
+      <trans-unit id="2436" resname="r970540065" restype="string" datatype="x-haml">
         <source>%p.requirements As a leading UX Designer at HealthTap, you will:</source>
         <target state="translated">%p.requirements  Como Diseñador de UX líder en HealthTap, tú:</target>
       </trans-unit>
@@ -8851,7 +8851,7 @@
   </file>
   <file original="_special_assistant_to_the_ceo.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2437" resname="r23224757" restype="string" datatype="x-haml">
+      <trans-unit id="2437" resname="r575918091" restype="string" datatype="x-haml">
         <source>%p.requirements As Special Assistant to the CEO at HealthTap, you will:</source>
         <target state="translated">%p.requirements  Como Asistente Especial al CEO en HealthTap, tú:</target>
       </trans-unit>
@@ -8859,7 +8859,7 @@
   </file>
   <file original="_software_engineer_frontend.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2438" resname="r39290074" restype="string" datatype="x-haml">
+      <trans-unit id="2438" resname="r622529709" restype="string" datatype="x-haml">
         <source>%p.requirements As a front End engineer at HealthTap, you will:</source>
         <target state="translated">%p.requirements  Como Ingeniero de Front End en HealthTap, tú:</target>
       </trans-unit>
@@ -8867,7 +8867,7 @@
   </file>
   <file original="_software_engineer_backend.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2439" resname="r819459591" restype="string" datatype="x-haml">
+      <trans-unit id="2439" resname="r514379817" restype="string" datatype="x-haml">
         <source>%p.requirements As an engineer at HealthTap, you will:</source>
         <target state="translated">%p.requirements  Como Ingeniero en HealthTap, tú:</target>
       </trans-unit>
@@ -8875,7 +8875,7 @@
   </file>
   <file original="_quality_assurance_lead.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2440" resname="r514951256" restype="string" datatype="x-haml">
+      <trans-unit id="2440" resname="r850022825" restype="string" datatype="x-haml">
         <source>%p.requirements As the Quality Assurance Lead at HealthTap, you will:</source>
         <target state="translated">%p.requirements  Como Líder de Garantía de Calidad en HealthTap, tú:</target>
       </trans-unit>
@@ -8883,7 +8883,7 @@
   </file>
   <file original="_office_manager.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2441" resname="r639409525" restype="string" datatype="x-haml">
+      <trans-unit id="2441" resname="r245967759" restype="string" datatype="x-haml">
         <source>%p.requirements As HealthTap Office Manager you will:</source>
         <target state="translated">%p.requirements  Como Administrador de Oficina de HealthTap, tú:</target>
       </trans-unit>
@@ -8891,7 +8891,7 @@
   </file>
   <file original="_mobile_app_developer_android_and_ios.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2442" resname="r325334734" restype="string" datatype="x-haml">
+      <trans-unit id="2442" resname="r620136874" restype="string" datatype="x-haml">
         <source>%p.requirements As a mobile apps developer at HealthTap, you will:</source>
         <target state="translated">%p.requirements  Como desarrollador de aplicaciones móviles en HealthTap, tú:</target>
       </trans-unit>
@@ -8899,7 +8899,7 @@
   </file>
   <file original="_lead_product_manager.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2443" resname="r810238246" restype="string" datatype="x-haml">
+      <trans-unit id="2443" resname="r289189791" restype="string" datatype="x-haml">
         <source>%p.requirements As a member of the product team at HealthTap, you will:</source>
         <target state="translated">%p.requirements Como miembro del equipo de producto en HealthTap, tú:</target>
       </trans-unit>
@@ -8907,7 +8907,7 @@
   </file>
   <file original="_it_and_operations_engineer.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2444" resname="r658317127" restype="string" datatype="x-haml">
+      <trans-unit id="2444" resname="r1039468538" restype="string" datatype="x-haml">
         <source>%p.requirements As an IT Operations Engineer at HealthTap, you will:</source>
         <target state="translated">%p.requirements  Como Ingeniero de Operaciones de IT en HealthTap, tú:</target>
       </trans-unit>
@@ -8915,7 +8915,7 @@
   </file>
   <file original="_director_of_medical_expert_network_physicians.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2445" resname="r578021258" restype="string" datatype="x-haml">
+      <trans-unit id="2445" resname="r570575113" restype="string" datatype="x-haml">
         <source>%p.requirements With fellow team members you will:</source>
         <target state="translated">%p.requirements Con tus compañeros de equipo, tú:</target>
       </trans-unit>
@@ -8923,7 +8923,7 @@
   </file>
   <file original="_director_of_engineering.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2446" resname="r12598767" restype="string" datatype="x-haml">
+      <trans-unit id="2446" resname="r613722336" restype="string" datatype="x-haml">
         <source>%p.requirements As HealthTap&apos;s Director of Engineering, you will:</source>
         <target state="translated">%p.requirements  Como Director de Ingeniería de HealthTap, tú:</target>
       </trans-unit>
@@ -8931,7 +8931,7 @@
   </file>
   <file original="_director_of_community_development_users.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2447" resname="r973275320" restype="string" datatype="x-haml">
+      <trans-unit id="2447" resname="r1046388541" restype="string" datatype="x-haml">
         <source>%p.requirements With our community development team you will:</source>
         <target state="translated">%p.requirements Con nuestro equipo de desarrollo comunitario, tú:</target>
       </trans-unit>
@@ -8955,7 +8955,7 @@
   </file>
   <file original="platinum.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2456" resname="r377178580" restype="string" datatype="x-haml">
+      <trans-unit id="2456" resname="r550470130" restype="string" datatype="x-haml">
         <source>of care to their personal health record to help patients live healthier, happier lives.</source>
         <target state="translated">de la atención a su salud personal para ayudar a pacientes a vivir vidas más saludables y felices.</target>
       </trans-unit>
@@ -8963,7 +8963,7 @@
   </file>
   <file original="for_members.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2457" resname="r311067197" restype="string" datatype="x-haml">
+      <trans-unit id="2457" resname="r895796357" restype="string" datatype="x-haml">
         <source>informed on current events in medicine</source>
         <target state="translated">informado acerca de eventos actuales en medicina</target>
       </trans-unit>
@@ -8995,7 +8995,7 @@
   </file>
   <file original="_broker_distribution_agreement.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2464" resname="r596760573" restype="string" datatype="x-haml">
+      <trans-unit id="2464" resname="r194620643" restype="string" datatype="x-haml">
         <source>This HealthTap Software Distribution Agreement for Independent Brokers &#40;this “Agreement”&#41; is entered into by and between HealthTap, Inc., a Delaware corporation, having its principal place of business at 270 University Avenue, Floor 2, Palo Alto, California 94301 &#40;“HealthTap”&#41;, and the broker entity or individual broker signatory to this Agreement &#40;the “Licensee”&#41;, effective as of the date of execution of this Agreement by both parties &#40;“Effective Date”&#41;. If this Agreement is entered into by or on behalf of an entity, it shall govern all brokers or agents of such entity and any broker not covered by this Agreement shall have no right or license to distribute the HealthTap Software.</source>
         <target state="translated">Este Acuerdo de Distribución de Software de HealthTap para Agentes Independientes &#40;este “Acuerdo”&#41; es concertado por y entre HealthTap, Inc., una corporación de Delaware, que tiene su lugar de negocios princial en 270 University Avenue, Floor 2, Palo Alto, California 94301 &#40;”HealthTap”&#41;, y la entidad intermediaria o el intermediario individual signatario de este Acuerdo &#40;el “Licenciatario”&#41;, efectivo desde la fecha de ejecución de este Acuerdo por las dos partes &#40;”Fecha Efectiva”&#41;. Si este Acuerdo se concerta por o en nombre de una entidad, gobernara a todos los intermediarios o agentes de dicha entidad y cualquier otro intermediario no cubierto por este Acuerdo no tendrá derecho o licencia para distribuir Software de HealthTap.</target>
       </trans-unit>
@@ -9011,7 +9011,7 @@
   </file>
   <file original="partnership_payment.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2468" resname="r1054476938" restype="string" datatype="x-haml">
+      <trans-unit id="2468" resname="r531847595" restype="string" datatype="x-haml">
         <source>A marketing kit to help you promote HealthTap Prime</source>
         <target state="translated">Un kit de mercadotecnia para ayudarte a promocionar HealthTap Prime</target>
       </trans-unit>
@@ -9019,7 +9019,7 @@
   </file>
   <file original="credits_payment.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2469" resname="r867004084" restype="string" datatype="x-haml">
+      <trans-unit id="2469" resname="r456739674" restype="string" datatype="x-haml">
         <source>Schedule a video appointment or send secure message to top specialists of your choice</source>
         <target state="translated">Agenda una cita de video o envia un mensaje seguro a los mejores especialistas de tu elección</target>
       </trans-unit>
@@ -9027,15 +9027,15 @@
   </file>
   <file original="_golden_lead_body.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2473" resname="r49302008" restype="string" datatype="x-haml">
+      <trans-unit id="2473" resname="r595678929" restype="string" datatype="x-haml">
         <source>in 128 specialties from expected private practices and top institutions, like Cleveland Clinic and Harvard to discover how simple and rewarding it is to get featured in front of millions.</source>
         <target state="translated">en 128 especialidades de respetados consultorios privados y las mejores instituciones, como la Cleveland Clinic y Harvard para descubrir que tan simple y recompensante es ser destacado en frente de millones.</target>
       </trans-unit>
-      <trans-unit id="2474" resname="r638443741" restype="string" datatype="x-haml">
+      <trans-unit id="2474" resname="r537708060" restype="string" datatype="x-haml">
         <source>Enhance your reputation as a nationally recognized Top Doctor</source>
         <target state="translated">Mejora tu reputación como uno de los Mejores Doctores nacionalmente reconocidos</target>
       </trans-unit>
-      <trans-unit id="2475" resname="r644210874" restype="string" datatype="x-haml">
+      <trans-unit id="2475" resname="r347233326" restype="string" datatype="x-haml">
         <source>In good health,</source>
         <target state="translated">En buena salud,</target>
       </trans-unit>
@@ -9071,15 +9071,15 @@
   </file>
   <file original="_expert_vip.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2481" resname="r227539668" restype="string" datatype="x-haml">
+      <trans-unit id="2481" resname="r74551189" restype="string" datatype="x-haml">
         <source>Doctor Recommendations</source>
         <target state="translated">Recomendaciones de doctor</target>
       </trans-unit>
-      <trans-unit id="2482" resname="r286377713" restype="string" datatype="x-haml">
+      <trans-unit id="2482" resname="r933401306" restype="string" datatype="x-haml">
         <source>Patient Recommendations</source>
         <target state="translated">Recomendaciones de paciente</target>
       </trans-unit>
-      <trans-unit id="2483" resname="r226637513" restype="string" datatype="x-haml">
+      <trans-unit id="2483" resname="r643959948" restype="string" datatype="x-haml">
         <source>Thank You Notes</source>
         <target state="translated">Notas de Agradecimiento</target>
       </trans-unit>

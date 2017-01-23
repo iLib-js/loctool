@@ -27407,10 +27407,6 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
         <source>Enter your location</source>
         <target>输入您的位置</target>
       </trans-unit>
-      <trans-unit id="6265" resname="Search name, specialty, topic" restype="string" datatype="html">
-        <source>搜索姓名、专科或话题</source>
-        <target>&lt;%= RB.getStringJS&#40;&apos;搜索姓名、专科或话题&apos;&#41; %&gt;</target>
-      </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/connect_collegues.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
@@ -35579,7 +35575,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7016" resname=" An additional ${price}" restype="string" datatype="javascript">
         <source>An additional ${price}</source>
-        <target state="accepted">(需额外支付${price})</target>
+        <target state="accepted">&#40;需额外支付${price}&#41;</target>
       </trans-unit>
     </body>
   </file>

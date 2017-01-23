@@ -1650,7 +1650,7 @@
   </file>
   <file original="app/views/general_mailer/partials/_note_item.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1457" resname="r442406918" restype="string" datatype="ruby">
+      <trans-unit id="1457" resname="r801433262" restype="string" datatype="ruby">
         <source>Note:</source>
         <target>注意：</target>
       </trans-unit>
@@ -2705,7 +2705,7 @@
         <source>support@healthtap.com</source>
         <target>support@healthtap.com</target>
       </trans-unit>
-      <trans-unit id="3119" resname="r762730546" restype="string" datatype="ruby">
+      <trans-unit id="3119" resname="r189044309" restype="string" datatype="ruby">
         <source>Dr.</source>
         <target>医生</target>
         <note annotates="source">TODO adding &quot;doctor&quot; title to people as prefix</note>
@@ -2958,7 +2958,7 @@
         <source>2. Get expert advice</source>
         <target>2.</target>
       </trans-unit>
-      <trans-unit id="4227" resname="r155665367" restype="string" datatype="ruby">
+      <trans-unit id="4227" resname="r439161277" restype="string" datatype="ruby">
         <source>DOConnect</source>
         <target>DOConnect</target>
       </trans-unit>
@@ -4170,11 +4170,11 @@
         <source>informed on current events in medicine</source>
         <target>了解当前的医学事件</target>
       </trans-unit>
-      <trans-unit id="7765" resname="r23754887" restype="string" datatype="x-haml">
+      <trans-unit id="7765" resname="r516963162" restype="string" datatype="x-haml">
         <source>Doctor recommended health and</source>
         <target>医生推荐健康和</target>
       </trans-unit>
-      <trans-unit id="7766" resname="r649826773" restype="string" datatype="x-haml">
+      <trans-unit id="7766" resname="r811333675" restype="string" datatype="x-haml">
         <source>wellness iOS and Android apps</source>
         <target>健康iOS和Android应用程序</target>
       </trans-unit>
@@ -6214,11 +6214,11 @@
         <source>We’ve blended design thinking and cutting-edge technology  to reinvent the way healthcare is delivered.</source>
         <target>我们将设计的思路与前沿科技想融合来重新更改之前的健康服务的传送方式。</target>
       </trans-unit>
-      <trans-unit id="7522" resname="r88193775" restype="string" datatype="x-haml">
+      <trans-unit id="7522" resname="r498352011" restype="string" datatype="x-haml">
         <source>Your home. Your office. Your vacation home.  Any place with an internet connection will do. Yes, even from your mobile device.</source>
         <target>不论在任何地方，只要有网络就可以。是的，您甚至可以使用您的移动设备。</target>
       </trans-unit>
-      <trans-unit id="7523" resname="r893424603" restype="string" datatype="x-haml">
+      <trans-unit id="7523" resname="r1068327882" restype="string" datatype="x-haml">
         <source>Practice medicine from your iPhone,  iPad, Android, or other mobile device — or see patients from any desktop or laptop computer using any web browser.</source>
         <target>在苹果，平板，安卓或者其他任何移动设备上——或者使用台式或手提电脑上的浏览器都可以实现行医。</target>
       </trans-unit>

@@ -2846,10 +2846,6 @@
         <source>{appointment_time} with {doctor_name}</source>
         <target state="translated">{appointment_time} con {doctor_name}</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
-    <body>
       <trans-unit id="10" resname="helpful" restype="string" datatype="x-android-resource">
         <source>Helpful</source>
         <target>Útil</target>

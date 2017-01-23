@@ -6211,7 +6211,7 @@
   </file>
   <file original="app/views/general_mailer/partials/_note_item.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1457" resname="r442406918" restype="string" datatype="ruby">
+      <trans-unit id="1457" resname="r801433262" restype="string" datatype="ruby">
         <source>Note:</source>
         <target>Nota:</target>
       </trans-unit>
@@ -8714,7 +8714,7 @@
         <source>Welcome to HealthTap!</source>
         <target>¡Bienvenido a HealthTap!</target>
       </trans-unit>
-      <trans-unit id="3119" resname="r762730546" restype="string" datatype="ruby">
+      <trans-unit id="3119" resname="r189044309" restype="string" datatype="ruby">
         <source>Dr.</source>
         <target>Dr.</target>
         <note annotates="source">TODO adding &quot;doctor&quot; title to people as prefix</note>
@@ -9267,7 +9267,7 @@
         <source>2. Get expert advice</source>
         <target>2. Obtén consejo de experto</target>
       </trans-unit>
-      <trans-unit id="4227" resname="r155665367" restype="string" datatype="ruby">
+      <trans-unit id="4227" resname="r439161277" restype="string" datatype="ruby">
         <source>DOConnect</source>
         <target>DOConnect</target>
       </trans-unit>
