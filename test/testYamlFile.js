@@ -1328,5 +1328,112 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), 'e');
         test.done();
+    },
+
+    testYamlGetLocalizedPathDefault: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            },
+            id: 1 // Do not remove this from the test, TranslationSet.remove requires it
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "./test2.yml"
+        });
+        test.ok(y);
+        y.extract();
+        test.equals(y.getLocalizedPath('de-DE'), 'testfiles/de-DE/test2.yml');
+        test.done();
+    },
+
+    testYamlUseLocalizedDirectoriesFromSchema: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "./test3.yml"
+        });
+        test.ok(y);
+        y.schema = {}
+        y.schema['useLocalizedDirectories'] = false;
+        test.equal(y.getUseLocalizedDirectoriesFromSchema(), false);
+        test.done();
+    },
+
+    testYamlUseLocalizedDirectoriesFromSchemaWithoutSchema: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            }
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "./test.yml"
+        });
+        test.ok(y);
+        y.extract();
+        test.equal(y.getSchema(), undefined);
+        test.equal(y.getUseLocalizedDirectoriesFromSchema(), true);
+        test.done();
+    },
+
+    testYamlGetLocalizedPathWithLocalizedDirectories: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            },
+            id: 1 // Do not remove this from the test, TranslationSet.remove requires it
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "./test3.yml"
+        });
+        test.ok(y);
+        y.extract();
+        y.schema['useLocalizedDirectories'] = true;
+        test.equals(y.getLocalizedPath('de-DE'), 'testfiles/de-DE/test3.yml');
+        test.done();
+    },
+
+    testYamlGetLocalizedPathWithoutLocalizedDirectories: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            },
+            id: 1 // Do not remove this from the test, TranslationSet.remove requires it
+        }, "./testfiles");
+
+        var y = new YamlFile({
+            project: p,
+            pathName: "./test3.yml"
+        });
+        test.ok(y);
+        y.extract();
+        y.schema['useLocalizedDirectories'] = false;
+        test.equals(y.getLocalizedPath('de-DE'), 'testfiles/test3.yml');
+        test.done();
     }
 };
