@@ -18675,10 +18675,6 @@
         <source>for any available shifts to perform Virtual Consults on HealthTap Prime. Lastly, we suggest reviewing our guidelines on setting up and preparing for your first Virtual Consult.</source>
         <target state="translated">para cualquier turno disponible para realizar Consultas Virtuales en HealthTap Prime. Finalmente, sugerimos revisar nuestras directrices sobre configuración y preparación para tu primera Consulta Virtual.</target>
       </trans-unit>
-      <trans-unit id="3576" resname="r3013966" restype="string" datatype="ruby">
-        <source>.</source>
-        <target state="translated">.</target>
-      </trans-unit>
     </body>
   </file>
   <file original="app/views/general_mailer/doctor_prime_app_part1_completed.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
