@@ -4697,7 +4697,7 @@ and more</source>
     <body>
       <trans-unit id="0Es-QU-ucF.text" resname="0Es-QU-ucF.text" restype="string" datatype="x-xib">
         <source>Following</source>
-        <target>已关注</target>
+        <target state="accepted">已关注</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Following&quot;; ObjectID = &quot;0Es-QU-ucF&quot;;</note>
       </trans-unit>
       <trans-unit id="Nxc-Vd-WRw.text" resname="Nxc-Vd-WRw.text" restype="string" datatype="x-xib">
@@ -8979,7 +8979,7 @@ I&apos;d like to accomplish my goal of...</source>
       </trans-unit>
       <trans-unit id="Following" resname="Following" restype="string" datatype="x-objective-c">
         <source>Following</source>
-        <target>已关注</target>
+        <target state="accepted">已关注</target>
         <note annotates="source">following button label
    Label to indicate that user is already following a topic
    label to indticate user is already following a given topic</note>
@@ -16715,7 +16715,7 @@ and let the world know :&#41;</source>
       </trans-unit>
       <trans-unit id="oQj-RC-pXP.text" resname="oQj-RC-pXP.text" restype="string" datatype="x-xib">
         <source>Following</source>
-        <target>已关注</target>
+        <target state="accepted">已关注</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Following&quot;; ObjectID = &quot;oQj-RC-pXP&quot;;</note>
       </trans-unit>
       <trans-unit id="pq3-hc-t6G.text" resname="pq3-hc-t6G.text" restype="string" datatype="x-xib">
