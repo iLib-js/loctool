@@ -10837,7 +10837,7 @@
         <target>¿Cuántos hijos vivos tiene {first_name}?</target>
       </trans-unit>
       <trans-unit id="2399" resname="subaccount_questions" restype="array" datatype="x-android-resource" extype="5">
-        <source>When was {first_name}\&apos;s last menstrual period?</source>
+        <source>When was {first_name}&apos;s last menstrual period?</source>
         <target>¿Cuándo fue el último periodo menstrual de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2400" resname="self_questions" restype="array" datatype="x-android-resource" extype="0">
