@@ -396,7 +396,7 @@
     <body>
       <trans-unit id="1993" resname="r653185640" restype="string" datatype="ruby">
         <source>Chinese</source>
-        <target state="translated">汉语</target>
+        <target state="translated">中国/海外华人</target>
       </trans-unit>
     </body>
   </file>
@@ -569,10 +569,6 @@
       <trans-unit id="2018" resname="r824299496" restype="string" datatype="x-haml">
         <source>, we want to provide you the tools to give the people you serve access to the most trustworthy health information available online</source>
         <target state="translated">，我们想为您提供的工具，让您服务的人们可以在线获得最值得信任的健康信息</target>
-      </trans-unit>
-      <trans-unit id="2019" resname="r3013966" restype="string" datatype="x-haml">
-        <source>.</source>
-        <target state="translated">.</target>
       </trans-unit>
       <trans-unit id="3324" resname="r1017094113" restype="string" datatype="x-haml">
         <source>Title</source>
@@ -2478,10 +2474,6 @@
         <source>You will be treating patients with non-emergency clinical care issues. The most common issues include coughs, colds, respiratory problems, abdominal pain, allergies, muscular pains, minor infections, fever, influenza, nausea, rashes, sports injuries, and  strep throat. The patients you will be seeing will be physically located in the states in which you hold active medical licenses. Or they may be patients contacting HealthTap from overseas locations.</source>
         <target state="translated">您将治疗非紧急临床医护问题的患者。最常见的问题包括咳嗽，感冒，呼吸问题，腹痛，过敏，肌肉疼痛，轻微感染，发热，流行性感冒，反胃，皮疹，运动损伤和链球菌性咽喉炎。您将看到的患者将实际位于您持有有效医疗执业执照的州。或者他们可能是从海外地点接触HealthTap的患者。</target>
       </trans-unit>
-      <trans-unit id="2353" resname="r1047149766" restype="string" datatype="x-haml">
-        <source>. Doctors are  chosen based on taking an active role in the HealthTap community, demonstrating clinical excellence, and getting high ratings from your colleagues and patients for your answers to questions, curated news and research, and Virtual Consults.</source>
-        <target state="translated">.</target>
-      </trans-unit>
       <trans-unit id="2354" resname="r281571419" restype="string" datatype="x-haml">
         <source>Yes, we nurture an active and vibrant doctor culture at HealthTap. We have a number of special programs to which you can apply or be invited to join, among them</source>
         <target state="translated">是的，我们在HealthTap培养活跃的和充满活力的医生文化。我们有一些特殊的程序，您可以申请或被邀请加入其中</target>
@@ -3005,10 +2997,6 @@
       <trans-unit id="2462" resname="r628043353" restype="string" datatype="x-haml">
         <source>every day, please join us!</source>
         <target state="translated">每一天，请加入我们！</target>
-      </trans-unit>
-      <trans-unit id="2463" resname="r753011875" restype="string" datatype="x-haml">
-        <source>. As we continue on our creative journey to help people smile and</source>
-        <target state="translated">.</target>
       </trans-unit>
       <trans-unit id="2464" resname="r833243616" restype="string" datatype="x-haml">
         <source>We’re excited to have reinvented how the world experiences health and</source>
@@ -6538,10 +6526,6 @@
         <source>When you sign up for HealthTap you verify that you’ve read and agree to our Privacy Statement. Since you are agreeing to what’s contained in this document when using the Site, we encourage you to read it &#40;if you haven&apos;t already&#41;.</source>
         <target state="translated">当您注册或使用HealthTap，代表您已经核实：您已阅读并同意我们的隐私权声明。由于您在使用本网站时已同意本文档中包含的内容，我们建议您阅读本文档（如果您尚未阅读）。</target>
       </trans-unit>
-      <trans-unit id="3263" resname="r165019381" restype="string" datatype="x-haml">
-        <source>.  If you are not satisfied with our response you can contact</source>
-        <target state="translated">.</target>
-      </trans-unit>
       <trans-unit id="3264" resname="r980800336" restype="string" datatype="x-haml">
         <source>including transparency, accountability and choice regarding the collection and use of your personal information. TRUSTe&apos;s mission, as an independent third party, is to accelerate online trust among consumers and organizations globally through its leading privacy trustmark and innovative trust solutions. If you have questions or complaints regarding our privacy policy or practices, please contact us at</source>
         <target state="translated">包括在收集和使用您的个人信息方面的透明度，问责制和选择。作为独立第三方，TRUSTe的任务是通过其领先的隐私信任标志和创新的信任解决方案，加速全球消费者和组织之间的在线信任。如果您对我们的隐私政策或做法有任何疑问或投诉，请与我们联系</target>
@@ -6617,10 +6601,6 @@
       <trans-unit id="3282" resname="r680706578" restype="string" datatype="x-haml">
         <source>HealthTap offers information to support the health decisions that you decide to make, in connection with the medical advice and guidance you receive from your doctor. The choices you make are yours. HealthTap does not provide medical advice, is not a doctor, and the information on HealthTap should not be used to delay or replace professional medical treatment. HealthTap does not make recommendations or endorsements. Please see our</source>
         <target state="translated">HealthTap提供与您的医生做出的医疗建议和指导相联系的信息以支持您做出的健康决定。HealthTap不提供建议或推荐。</target>
-      </trans-unit>
-      <trans-unit id="3283" resname="r532285127" restype="string" datatype="x-haml">
-        <source>. More information about our security measures is located on our</source>
-        <target state="translated">.</target>
       </trans-unit>
       <trans-unit id="3284" resname="r721387300" restype="string" datatype="x-haml">
         <source>page; if this information does not answer your specific question, you can contact us at</source>

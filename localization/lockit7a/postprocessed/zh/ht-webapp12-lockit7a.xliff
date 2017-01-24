@@ -1069,14 +1069,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/general_mailer/member_lowrating_2_star_consult.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="287" resname="r3013966" restype="string" datatype="ruby">
-        <source>.</source>
-        <target state="translated">.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="app/views/general_mailer/member_influencer_news_item_thanked.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="289" resname="r437780225" restype="string" datatype="ruby">
@@ -1358,14 +1350,6 @@
       <trans-unit id="455" resname="r258267076" restype="string" datatype="ruby">
         <source>DrRutledge@healthtap.com</source>
         <target state="translated">DrRutledge@healthtap.com.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="app/views/general_mailer/doctor_prime_app_part2_approved.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="493" resname="r3013966" restype="string" datatype="ruby">
-        <source>.</source>
-        <target state="translated">.</target>
       </trans-unit>
     </body>
   </file>
@@ -2285,7 +2269,7 @@
   &lt;br&gt;
   &lt;b&gt;为什么选择我们&lt;/b&gt;
   &lt;br&gt;
-  我们的专家团队能为您提供最优质的医疗咨询服务，超过2.6亿的回答来自100多个专科我们有最大的医生网络提供回答，专属于您的建议和关于护理的任何问题。
+  我们的专家团队能为您提供最优质的医疗咨询服务，超过2.6亿的回答来自100多个专科我们有最大的医生网络提供回答，个性化的建议和关于护理的任何问题。
 
   &lt;br&gt;
   &lt;br&gt;
@@ -2890,7 +2874,7 @@
       </trans-unit>
       <trans-unit id="1592" resname="{weight_lbs} lbs" restype="string" datatype="javascript">
         <source>{weight_lbs} lbs</source>
-        <target state="translated">{Weight_lbs} 磅</target>
+        <target state="translated">{weight_lbs} 磅</target>
       </trans-unit>
       <trans-unit id="1593" resname="{weight_kg} kg" restype="string" datatype="javascript">
         <source>{weight_kg} kg</source>

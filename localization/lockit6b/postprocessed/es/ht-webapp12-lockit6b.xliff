@@ -679,10 +679,6 @@
         <source>, we want to provide you the tools to give the people you serve access to the most trustworthy health information available online</source>
         <target state="translated">, queremos brindarte las herramientas que darle a la gente que atiendes acceso a la información de salud disponible en línea más confiable</target>
       </trans-unit>
-      <trans-unit id="2039" resname="r3013966" restype="string" datatype="x-haml">
-        <source>.</source>
-        <target state="translated">.</target>
-      </trans-unit>
       <trans-unit id="3344" resname="r1017094113" restype="string" datatype="x-haml">
         <source>Title</source>
         <target state="translated">Título</target>

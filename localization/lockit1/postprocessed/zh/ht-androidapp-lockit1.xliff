@@ -5483,10 +5483,6 @@
         <source>Learn more</source>
         <target>了解更多</target>
       </trans-unit>
-      <trans-unit id="1100" resname="period" restype="string" datatype="x-android-resource">
-        <source>.</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="1101" resname="mr" restype="string" datatype="x-android-resource">
         <source>mr.</source>
         <target>先生</target>
@@ -10839,8 +10835,8 @@
         <target>{first_name}有几个孩子</target>
       </trans-unit>
       <trans-unit id="2399" resname="subaccount_questions" restype="array" datatype="x-android-resource" extype="5">
-        <source>When was {first_name} last menstrual period?</source>
-        <target>{first_name}末次月经是什么时候？</target>
+        <source>When was {first_name}'s last menstrual period?</source>
+        <target>{first_name}上一次生理周期是什么时候？</target>
       </trans-unit>
       <trans-unit id="2400" resname="self_questions" restype="array" datatype="x-android-resource" extype="0">
         <source>How many times have you been pregnant?</source>
@@ -10863,8 +10859,8 @@
         <target>您有几个孩子</target>
       </trans-unit>
       <trans-unit id="2405" resname="self_questions" restype="array" datatype="x-android-resource" extype="5">
-        <source>When was {first_name}\&apos;s last menstrual period?</source>
-        <target>您末次月经是什么时候？</target>
+        <source>When was your last menstrual period?</source>
+        <target>您上一次生理周期是什么时候？</target>
       </trans-unit>
       <trans-unit id="2406" resname="bmi" restype="array" datatype="x-android-resource" extype="0">
         <source>Severely Underweight</source>

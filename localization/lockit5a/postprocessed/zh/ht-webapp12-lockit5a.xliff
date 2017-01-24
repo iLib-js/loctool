@@ -350,14 +350,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_footer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="11241" resname="r155656147" restype="string" datatype="x-haml">
-        <source>. You will still receive notifications regarding account activity.</source>
-        <target>.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="app/views/static_pages/team.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="570" resname="r373340760" restype="string" datatype="ruby">
@@ -436,10 +428,6 @@
         <source>Global Health Practice</source>
         <target>全球卫生诊疗</target>
       </trans-unit>
-      <trans-unit id="6224" resname="r819804839" restype="string" datatype="x-haml">
-        <source>. We’re excited to deliver immediate, world-class healthcare 24/7 from Query-to-Cure</source>
-        <target>.</target>
-      </trans-unit>
     </body>
   </file>
   <file original="body_symptoms_search.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
@@ -464,10 +452,6 @@
   </file>
   <file original="prime_guidelines.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="6242" resname="r1047149766" restype="string" datatype="x-haml">
-        <source>. Doctors are  chosen based on taking an active role in the HealthTap community, demonstrating clinical excellence, and getting high ratings from your colleagues and patients for your answers to questions, curated news and research, and Virtual Consults.</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="6244" resname="r383321681" restype="string" datatype="x-haml">
         <source>Yes. Because we are a 24/7/365 service, we expect our doctors to fulfill their shifts on federal holidays. If, for any reason, you will not be available for your shift, please notify us of this with at least one-week notice.</source>
         <target>是。如果由于任何原因，您无法进行换班，请至少提前一周通知我们。</target>
@@ -1065,14 +1049,6 @@
       <trans-unit id="9881" resname="r1025478475" restype="string" datatype="x-haml">
         <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult.</source>
         <target>新的治疗处方和补充药（不包括受管制的药物），可以发送到您当地的药店，根据您的在线咨询，医生给出适当的指示和治疗方式。</target>
-      </trans-unit>
-      <trans-unit id="9883" resname="r387303937" restype="string" datatype="x-haml">
-        <source>. Please enter it below:</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="9887" resname="r984158073" restype="string" datatype="x-haml">
-        <source>. We do this to qualify users for the free trial and to discourage abuse.</source>
-        <target>.</target>
       </trans-unit>
       <trans-unit id="9888" resname="r281033702" restype="string" datatype="x-haml">
         <source>, which will be refunded in full if you cancel your subscription before your trial ends on</source>
@@ -6070,10 +6046,6 @@
         <source>by taking care of us and giving us comfort when we need it most. We can take care of each other, too. By bringing the fun back into taking care of each other, we work with doctors to make the world a better place.</source>
         <target>为了让照顾彼此的过程更加丰富，我们与医生一起合作，共同营造一个更美好的世界。</target>
       </trans-unit>
-      <trans-unit id="7205" resname="r753011875" restype="string" datatype="x-haml">
-        <source>. As we continue on our creative journey to help people smile and</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="7209" resname="r965098295" restype="string" datatype="x-haml">
         <source>by providing immediate access to top medical experts and their trusted health advice anytime, anywhere.</source>
         <target>通过提供随时随地最为便捷的通道来获取顶级的医学专家们值得信赖的健康咨询内容。</target>
@@ -6418,89 +6390,9 @@
         <source>b. Either Party shall have the right to terminate this Agreement at any time and for any cause. The Company may terminate this Agreement without notice.  The Affiliate must give written notice to Company at least 30 days prior to the intended date of termination.</source>
         <target>任何一方在任何时候,都有权以任何原因终止该协议。附属公司必须至少在预定的终止日期30天前书面通知公司。</target>
       </trans-unit>
-      <trans-unit id="13052" resname="r94261928" restype="string" datatype="x-haml">
-        <source>. HealthTap reserves the right to modify the Licensed Services and their respective features and functionality at any time, without notice or warning and without liability.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13053" resname="r972892832" restype="string" datatype="x-haml">
-        <source>. HealthTap reserves the right to display the HealthTap brand, and any image, name, brand or label which HealthTap has rights to, on any and all of the Licensed Services. HealthTap reserves all rights not expressly granted to the Practice in this Agreement.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13054" resname="r248091416" restype="string" datatype="x-haml">
-        <source>. HealthTap may, in its sole discretion, suspend the Practice’s access to the Licensed Services for any of the following reasons &#40;i&#41; to prevent damages to, or degradation of, the Licensed Services; &#40;ii&#41; to comply with any law, regulation, court order, or other governmental request; &#40;iii&#41; if the Practice breaches any provision set forth in this Agreement, including, without limitation, this Section 1 or Section 2 hereof; &#40;iv&#41; to otherwise protect HealthTap from potential legal liability; and/or &#40;v&#41; in the event the License Fee &#40;as such term is defined in Section 3&#40;a&#41; hereof&#41; has not been collected in advance and remains unpaid for more than forty-five &#40;45&#41; or more days from the date such fee is due to HealthTap from the Practice.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13055" resname="r41524748" restype="string" datatype="x-haml">
-        <source>. The Practice warrants that it will cause any and all of its Licensed Users to comply with the terms of this Agreement and shall be responsible for all use of the Licensed Services by its Licensed Users.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13056" resname="r134815722" restype="string" datatype="x-haml">
-        <source>. During the Term the Practice shall be liable to HealthTap for License Fees. These fees may include an annual base fee &#40;if any&#41; and/or transactional license fees &#40;i.e. a per- consult fee&#41;. The License Fees are set forth or referenced in Schedule B &#40;“License Fees”&#41; for the Licensed Services. The annual base &#40;if any&#41; License Fee shall be paid in advance by the Practice and when due. In payment of the transactional License Fee, the Practice hereby authorizes HealthTap to: &#40;i&#41; collect and deposit, on behalf of the Practice, in a bank account in the name of HealthTap, the consultation fee for the Remote Medical Consultation conducted by the Practice; and &#40;ii&#41; deduct and retain the License Fee from the consultation fee collected by HealthTap prior to payment in full of the annual base &#40;if any&#41; license fee and then remitting to the Practice the remaining portion of the consultation fee for the Remote Medical Consultation. Remittances to the Practice shall be made on a regular basis, on or about the first of every month or otherwise as set forth in Schedule B. License Fees are subject to change at any time.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13057" resname="r95406330" restype="string" datatype="x-haml">
-        <source>. In the event the Licensee Fee is not collected by HealthTap or otherwise is insufficient or remains unpaid in full forty-five &#40;45&#41; or more days from the date such fee is due and owing from the Practice to HealthTap, HealthTap may, in its discretion, terminate this Agreement.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13058" resname="r961499283" restype="string" datatype="x-haml">
-        <source>. The Practice shall be responsible for and shall pay or reimburse HealthTap for any sales, use, import, excise, value added or other taxes or levies associated with this Agreement and the Licensed Services, excluding any taxes based on the net income of HealthTap, unless customer is tax exempt and provides documentation of such.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13059" resname="r630079427" restype="string" datatype="x-haml">
-        <source>. HealthTap may, from time to time, in its sole discretion provide Updates to the Practice, such updates may be provided across the platform in the cloud. For purposes of this Agreement, “Updates” means corrections, changes and improvements to the Licensed Services that &#40;i&#41; relate to the operating performance of the Licensed Services, but do not change the basic function of the Licensed Services; &#40;ii&#41; are intended for general commercial use in connection with the Licensed Services; and &#40;iii&#41; are provided generally to HealthTap’s other customers without additional charge. Updates do not necessarily include new releases or versions of the Licensed Services for which HealthTap, in its sole and exclusive discretion, imposes an additional charge. HealthTap may, however, in its sole and exclusive discretion, provide Updates to the Practice that include new functionality. Any and all Updates are deemed part of the Licensed Services and shall be protected and governed by the terms and conditions of this Agreement and subject to the license granted in Section 1.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13060" resname="r69645299" restype="string" datatype="x-haml">
-        <source>. The Practice acknowledges and agrees that the Licensed Services constitute valuable and confidential proprietary information and intellectual property of HealthTap, that are protected under civil and criminal law and under the laws of patent, copyright and trade secret, and, except as expressly provided herein, shall not be disclosed in any form by the Practice to any unauthorized third party. Each Party agrees that all information supplied by one Party and its affiliates and agents &#40;collectively, the “Disclosing Party”&#41; to the other &#40;“Receiving Party”&#41; including, without limitation, &#40;i&#41; source code, trade secrets, databases, designs and techniques, engine protocols, models, displays and manuals, and the selection, coordination, and arrangement of the contents of such materials; and &#40;ii&#41; any unpublished information concerning research activities and plans, customers, marketing or sales plans, sales forecasts or results of marketing efforts, pricing or pricing strategies, costs, operational techniques, strategic plans, and unpublished financial information, including information concerning revenues, profits and profit margins will be deemed confidential and proprietary to the Disclosing Party, regardless of whether such information was disclosed intentionally or unintentionally or marked as “confidential” or “proprietary” &#40;“Confidential Information”&#41;. The Licensed Services shall be deemed Confidential Information of HealthTap.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13061" resname="r459650655" restype="string" datatype="x-haml">
-        <source>. Confidential Information will not include any information or material, or any element thereof, whether or not such information or material is Confidential Information for the purposes of this Agreement, to the extent any such information or material, or any element thereof: &#40;a&#41; has previously become or is generally known, unless it has become generally known through a breach of this Agreement or a similar confidentiality or non- disclosure agreement, obligation or duty; &#40;b&#41; was already rightfully known to the Receiving Party prior to being disclosed by or obtained from the Disclosing Party as evidenced by written records kept in the ordinary course of business or by proof of actual use by the Receiving Party; &#40;c&#41; has been or is hereafter rightfully received by the Receiving Party from a third person &#40;other than the Disclosing Party&#41; without restriction or disclosure and without breach of a duty of confidentiality to the Disclosing Party; or &#40;d&#41; has been independently developed by the Receiving Party without access to Confidential Information of the Disclosing Party. It will be presumed that any Confidential Information in a Receiving Party’s possession is not within exceptions &#40;b&#41;, &#40;c&#41; or &#40;d&#41; above, and the burden will be upon the Receiving Party to prove otherwise by records and documentation.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13062" resname="r204889621" restype="string" datatype="x-haml">
-        <source>. Each Party recognizes the importance of the other’s Confidential Information. In particular, each Party recognizes and agrees that the Confidential Information of the other is critical to their respective businesses and that neither Party would enter into this Agreement without assurance that such information and the value thereof will be protected as provided in this Section 6 and elsewhere in this Agreement. Accordingly, each Party agrees as follows: &#40;a&#41; the Receiving Party will hold any and all Confidential Information it obtains in strictest confidence and will use and permit use of Confidential Information solely for the purposes of this Agreement; &#40;b&#41; the Receiving Party may disclose or provide access to its responsible employees who have a need to know and may make copies of Confidential Information only to the extent reasonably necessary to carry out its obligations hereunder; and &#40;c&#41; the Receiving Party currently has, and for so long as it possesses Confidential Information of the Disclosing Party, it will maintain in effect and enforce, rules and policies to protect against access to or use or disclosure of Confidential Information other than in accordance with this Agreement, including without limitation written instruction to and agreements with employees and agents who are bound by an obligation of confidentiality no less restrictive than set forth in this Agreement to ensure that such employees and agents protect the confidentiality of Confidential Information. The Receiving Party will instruct and require its employees and agents not to disclose Confidential Information to third parties, including without limitation customers, subcontractors or consultants, without the Disclosing Party’s prior written consent; and will notify the Disclosing Party immediately of any unauthorized disclosure or use, and will cooperate with the Disclosing Party to protect all proprietary rights in and ownership of its Confidential Information.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13063" resname="r566995014" restype="string" datatype="x-haml">
-        <source>. Each Party acknowledges and agrees that due to the unique nature of Confidential Information there can be no adequate remedy at law for any breach of its obligations hereunder, that any such breach or threatened breach may allow a Party or third parties to unfairly compete with the other Party resulting in irreparable harm to such party, and therefore, that upon any such breach or any threat thereof, each Party will be entitled to appropriate equitable remedies and may seek and obtain injunctive relief from a court of competent jurisdiction without the necessity of proving actual loss or posting of a bond or other security, in addition to whatever remedies either of them might have at law or equity. Any</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="13064" resname="r202186379" restype="string" datatype="x-haml">
         <source>Term.</source>
         <target>条款。</target>
-      </trans-unit>
-      <trans-unit id="13069" resname="r774456336" restype="string" datatype="x-haml">
-        <source>. Except as otherwise specifically provided herein, no remedy referred to in this Agreement is intended to be exclusive. No delay by either Party in exercising any of their respective rights or remedies hereunder shall be deemed to be a waiver of such rights or remedies. No waiver by either Party of any rights under this Agreement or breach by the other Party hereunder shall in any way be a waiver of any such rights in the future or any future breach. Any waiver, amendment or modification of this Agreement must be in writing and signed by the party against whom enforcement is sought.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13070" resname="r810113175" restype="string" datatype="x-haml">
-        <source>. Neither Party shall assign this Agreement without the prior written consent of the other Party, which consent shall not be unreasonably withheld. Furthermore, the Practice acknowledges and agrees that the Licensed Services may not be sublicensed or otherwise transferred voluntarily or by operation of law to any third party. Any attempted assignment, license, sublicense or transfer by the Practice, whether voluntary or involuntary, shall be void and shall be grounds for immediate termination of this Agreement. Subject to the foregoing, this Agreement shall be binding upon and shall inure to the benefit of the successors and permitted assigns of the parties hereto.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13071" resname="r176949037" restype="string" datatype="x-haml">
-        <source>. This Agreement and the rights of the parties hereto shall be governed by the laws of the State of California without regard to principles of conflict of laws. In the event of any litigation arising out of, or relating to, this Agreement or the breach thereof, the venue for any such action shall be in the State or Federal courts located in Santa Clara County, California.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13072" resname="r76412404" restype="string" datatype="x-haml">
-        <source>. If any provision of this Agreement is held to be invalid or unenforceable for any reason, such provision shall be conformed to prevailing law rather than voided, if possible, in order to achieve the intent of the parties and, in any event, the remaining provisions of this Agreement shall remain in full force and effect and shall be binding upon the parties hereto. The captions of this Agreement are solely for reference and have no legal effect whatsoever and shall not in any way affect the interpretation or construction of this Agreement.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13073" resname="r598803549" restype="string" datatype="x-haml">
-        <source>. Neither Party shall be liable for damage due to any cause beyond its control, including, without limitation, acts of God, acts of civil or military authority, labor disputes, failure or delay of suppliers or systems, including communications and power systems, fire, sabotage, war, embargo or acts or omissions of the other Party caused by any of such events.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13074" resname="r139306536" restype="string" datatype="x-haml">
-        <source>. The Practice shall comply with all applicable laws and regulations, including, but not limited to, those laws and regulations governing its use of the Licensed Services. HealthTap shall comply with applicable laws and regulations in its performance of this Agreement and the provision of the Licensed Services.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13075" resname="r84840513" restype="string" datatype="x-haml">
-        <source>. No notice or other communication shall be deemed given unless sent in any of the manners, and to the persons, as specified in this paragraph. All notices and other communications hereunder shall be in writing and shall be deemed given: &#40;a&#41; upon receipt if delivered personally to a Company officer; &#40;b&#41; upon receipt if mailed by registered or certified mail receipt requested, postage prepaid; &#40;c&#41; at 5:00 p.m. on the business day after dispatch if sent by a nationally recognized overnight courier; or &#40;d&#41; via e-mail notification:</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13076" resname="r1054536195" restype="string" datatype="x-haml">
-        <source>. This Agreement constitutes the entire agreement between HealthTap and the Practice pertaining to the subject matter hereof and supersedes all proposals or prior and contemporaneous agreements or understandings of the parties regarding such matter.</source>
-        <target>.</target>
       </trans-unit>
     </body>
   </file>
@@ -7202,10 +7094,6 @@
   </file>
   <file original="payment.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="10071" resname="r990854226" restype="string" datatype="x-haml">
-        <source>. However, you may still ask our doctors questions anonymously and for free.</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="10074" resname="r665253356" restype="string" datatype="x-haml">
         <source>Great! You&apos;re all set!</source>
         <target>太棒了！设置就绪</target>
@@ -7766,14 +7654,6 @@
   </file>
   <file original="_privacy_statement.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="10652" resname="r725096320" restype="string" datatype="x-haml">
-        <source>. The TRUSTe program covers only information that is collected through this Web site.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="10653" resname="r165019381" restype="string" datatype="x-haml">
-        <source>.  If you are not satisfied with our response you can contact</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="10657" resname="r45512938" restype="string" datatype="x-haml">
         <source>Yes. Your use of HealthTap is anonymous. Your real name, date of birth, e-mail address, and other Personally Identifiable Information are not visible on the site to other users. You select a name under which you appear when using the Site &#40;a Public Profile Name&#41;. You can stay anonymous by selecting a confidential Public Profile Name and by keeping that private. HealthTap uses bank-level security and encryption. More about our security measures can be found</source>
         <target>是。您的真实姓名、出生日期、电子邮件地址和其他个人身份信息不会显示给其他会员。您可以选择隐秘的公开资料名称并将其私有化，以保护您的隐私。</target>
@@ -7822,10 +7702,6 @@
         <source>Questions and answers on HealthTap are for general education and information. Only general, informational questions are permitted. For specific, personal health questions, always ask your own doctor or healthcare provider. &#40;HealthTap Medical Experts are not your personal doctor or healthcare provider, and their answers to questions are not personal or for personal use.&#41;</source>
         <target>对于具体的、私人的健康问题，请您咨询您的私人医生或是医疗保健提供者。（HealthTap的医疗专家不是您的私人医生或是医疗保健提供者，他们对于问题的回答也不是针对个人的或是可用作私人的。）</target>
       </trans-unit>
-      <trans-unit id="10679" resname="r613363625" restype="string" datatype="x-haml">
-        <source>. If we are unable to remove this information for any reason, we will let you know that we are unable to do so and why. You can control what is visible in your Public Profile through your Account Settings.</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="10681" resname="r690414968" restype="string" datatype="x-haml">
         <source>Aggregated information is information from multiple users that is not associated with any individual user account, statistics are summaries of information, not associated with any individual user account, and de-identified data does not include Personally Identifiable Information, such as first and last names or e-mail addresses. Aggregated information and de-identified data and statistics are used to run our service.  We may use aggregated information or de-identified data gathered from HealthTap and related statistics to improve the services provided through HealthTap, and for research and analysis. We may also provide this information to our partners for such purposes.</source>
         <target>聚集的信息和去可识别性的数据和统计被用来经营我们的服务。我们会使用从HealthTap收集的聚合信息或去可识别性数据以及相关统计来改善服务，增进研究和分析。</target>
@@ -7842,10 +7718,6 @@
         <source>Yes. While every user will be able to see basic information about you, such as your Public Profile Name and your Public Profile Picture, you can control what other information is shown about you through your Privacy &amp;amp; Sharing tab in your Settings.</source>
         <target>是。</target>
       </trans-unit>
-      <trans-unit id="10686" resname="r532285127" restype="string" datatype="x-haml">
-        <source>. More information about our security measures is located on our</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="10688" resname="r990413479" restype="string" datatype="x-haml">
         <source>The security of your personal information is a top priority for us. We are committed to protecting the security of your personal information. Experts design our security measures, and we use a variety of technologies and procedures to help protect the security of your personal information from unauthorized access, use, and disclosure. For example, information transferred between you and the site is encrypted. We restrict access to personal information to HealthTap employees, contractors, and agents who need to know that information in order to operate, develop, or improve our services. These individuals are bound by confidentiality obligations and may be subject to discipline, including termination and criminal prosecution, if they fail to meet these obligations. No method of transmission over the Internet, or method of electronic storage, is 100% secure, however. Therefore, we cannot guarantee its absolute security. If you have any specific questions about security on our Site, please see our</source>
         <target>我们严格限制需要了解个人信息以运营、开发或改进我们的服务的HealthTap的员工、承包商和代理商获取这些信息。这些个人受保密义务的约束，如果他们没有尽到这些义务将会受到包括终止业务和犯罪起诉在内的法律的制约。然而没有一种网络传输或电子储存的方法是100%安全的。</target>
@@ -7853,10 +7725,6 @@
       <trans-unit id="10689" resname="r832818263" restype="string" datatype="x-haml">
         <source>Currently, we only let you provide us with information about you &#40;except in the case of a Caregiver providing information about a Care Recipient&#41;. This Privacy Statement applies to this information.  In the future, we may allow users to provide us with information by or through other separately operated products or services.</source>
         <target>目前我们仅让您提供关于您的信息（除非护理者提供护理接受者信息的情况）。</target>
-      </trans-unit>
-      <trans-unit id="10690" resname="r352157577" restype="string" datatype="x-haml">
-        <source>. We cannot provide legal advice.</source>
-        <target>.</target>
       </trans-unit>
       <trans-unit id="10691" resname="r800680707" restype="string" datatype="x-haml">
         <source>This Privacy Statement does not apply to other service providers or links to other sites that are not owned or controlled by HealthTap, and you should read the individual privacy polices and terms of service of these providers before using their services. We encourage you to contact us if you believe a provider is not protecting the privacy or security of your health and wellness information. You may contact us in writing at:</source>
@@ -7973,14 +7841,6 @@
       <trans-unit id="11671" resname="r1037931364" restype="string" datatype="x-haml">
         <source>HealthTap’s new Doctor Mom gives you the opportunity to direct questions to some of our best doctors who in their “free time” are full-time mothers too. Doctor Moms have raised children of their own and can provide a special perspective:</source>
         <target>医生妈妈亲自养育自己的孩子，她们可以提供一个特别的视角：</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="millions_helped_survey.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="11679" resname="r182047412" restype="string" datatype="x-haml">
-        <source>. No story is too big or too short — they all bring smiles to our hearts and motivate our team, other users, and the amazing doctors who work day and night to help you and millions everywhere live healthier, happier lives.</source>
-        <target>.</target>
       </trans-unit>
     </body>
   </file>
