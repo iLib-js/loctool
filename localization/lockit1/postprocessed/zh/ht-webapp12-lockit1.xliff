@@ -36,11 +36,11 @@
       </trans-unit>
       <trans-unit id="9" resname="Helpful" restype="string" datatype="html">
         <source>Helpful</source>
-        <target>有帮助的</target>
+        <target>有帮助</target>
       </trans-unit>
       <trans-unit id="10" resname="Not Really" restype="string" datatype="html">
         <source>Not Really</source>
-        <target>不真实的</target>
+        <target>没有</target>
       </trans-unit>
       <trans-unit id="11" resname="F.D.A. Approves Pill to Treat Hepatitis C" restype="string" datatype="html">
         <source>F.D.A. Approves Pill to Treat Hepatitis C</source>
@@ -540,7 +540,7 @@
       </trans-unit>
       <trans-unit id="112" resname="A Doctor" restype="string" datatype="html">
         <source>A Doctor</source>
-        <target>一位医生</target>
+        <target>一名医生</target>
       </trans-unit>
       <trans-unit id="113" resname="shared:" restype="string" datatype="html">
         <source>shared:</source>
@@ -712,7 +712,7 @@
       </trans-unit>
       <trans-unit id="147" resname="To ask a great HealthTap question, use these helpful guidelines" restype="string" datatype="html">
         <source>To ask a great HealthTap question, use these helpful guidelines</source>
-        <target>要向HealthTap提出一个很棒的问题，可以参考这些有用的指南。</target>
+        <target>要向HealthTap提出一个很棒的问题，可以参考这些有帮助的指南。</target>
       </trans-unit>
       <trans-unit id="148" resname="1. Sweat the details... at least a little." restype="string" datatype="html">
         <source>1. Sweat the details... at least a little.</source>
@@ -1628,7 +1628,7 @@
       </trans-unit>
       <trans-unit id="357" resname="Please tell us a little more about yourself so that we can connect you to more personalized answers and doctors." restype="string" datatype="html">
         <source>Please tell us a little more about yourself so that we can connect you to more personalized answers and doctors.</source>
-        <target>请告诉我们更多关于您的信息，以使我们为您提供更个性化的回答和医生。</target>
+        <target>请告诉我们更多关于您的信息，以使我们为您提供更专属于您的回答和医生。</target>
       </trans-unit>
       <trans-unit id="358" resname="what&apos;s your name?" restype="string" datatype="html">
         <source>what&apos;s your name?</source>
@@ -1692,7 +1692,7 @@
       </trans-unit>
       <trans-unit id="373" resname="PERSONALIZING HEALTHTAP..." restype="string" datatype="html">
         <source>PERSONALIZING HEALTHTAP...</source>
-        <target>个性化的HEALTHTAP...</target>
+        <target>专属于您的HEALTHTAP...</target>
       </trans-unit>
     </body>
   </file>
@@ -2600,7 +2600,7 @@
     <body>
       <trans-unit id="570" resname="Looks like nothing&apos;s here yet. Follow topics or add entries to your Health Profile and we&apos;ll display personalized suggestions here." restype="string" datatype="html">
         <source>Looks like nothing&apos;s here yet. Follow topics or add entries to your Health Profile and we&apos;ll display personalized suggestions here.</source>
-        <target>看来这里还没有任何答复。遵循主题或给您的健康档案增加条目，我们会在此处呈现个性化的建议。</target>
+        <target>看来这里还没有任何答复。遵循主题或给您的健康档案增加条目，我们会在此处呈现专属于您的建议。</target>
       </trans-unit>
       <trans-unit id="571" resname="Symptom" restype="string" datatype="html">
         <source>Symptom</source>
@@ -2652,7 +2652,7 @@
       </trans-unit>
       <trans-unit id="582" resname="immunizations" restype="string" datatype="html">
         <source>immunizations</source>
-        <target>免疫/预防接种</target>
+        <target>预防接种</target>
       </trans-unit>
       <trans-unit id="583" resname="Pharmacy Information" restype="string" datatype="html">
         <source>Pharmacy Information</source>
@@ -2684,7 +2684,7 @@
     <body>
       <trans-unit id="588" resname="I’ve never had a procedure." restype="string" datatype="html">
         <source>I’ve never had a procedure.</source>
-        <target>我从来没有做过手术。</target>
+        <target>我从来没有接受过临床操作。</target>
       </trans-unit>
     </body>
   </file>
@@ -3488,7 +3488,7 @@
       </trans-unit>
       <trans-unit id="764" resname="We are sorry that you are not satisfied with this doctor&apos;s answer. Please let us know why so that we can improve the quality of this doctor&apos;s future answers." restype="string" datatype="html">
         <source>We are sorry that you are not satisfied with this doctor&apos;s answer. Please let us know why so that we can improve the quality of this doctor&apos;s future answers.</source>
-        <target>我们非常抱歉，您对于医生的回答不满意请告诉我们原因，以便提高这位医生未来回答问题的质量。</target>
+        <target>我们非常抱歉，您对于医生的回答不满意请告诉我们原因，以便提高这名医生未来回答问题的质量。</target>
       </trans-unit>
       <trans-unit id="765" resname="To: HEALTHTAP" restype="string" datatype="html">
         <source>To: HEALTHTAP</source>
@@ -3608,7 +3608,7 @@
       </trans-unit>
       <trans-unit id="789" resname="Ask a detailed question to a doctor of your choice in a private, HIPAA-secure setting for a small fee. Add images or supporting documents for an even more personalized answer." restype="string" datatype="html">
         <source>Ask a detailed question to a doctor of your choice in a private, HIPAA-secure setting for a small fee. Add images or supporting documents for an even more personalized answer.</source>
-        <target>向您选择的医生提出细节方面的问题，HIPAA-安全需要收取小的费用。获取更个性化的回答，请附上照片或者支持文件</target>
+        <target>向您选择的医生提出细节方面的问题，HIPAA-安全需要收取小的费用。获取更专属于您的回答，请附上照片或者支持文件</target>
       </trans-unit>
       <trans-unit id="790" resname="LAUNCH SPECIAL" restype="string" datatype="html">
         <source>LAUNCH SPECIAL</source>
@@ -3800,7 +3800,7 @@
       </trans-unit>
       <trans-unit id="833" resname="Not really" restype="string" datatype="html">
         <source>Not really</source>
-        <target>不真实</target>
+        <target>没有</target>
       </trans-unit>
       <trans-unit id="834" resname="Need Clarification &lt;br&gt;&lt;span&gt;FREE&lt;/span&gt;" restype="string" datatype="html">
         <source>Need Clarification &lt;br&gt;&lt;span&gt;FREE&lt;/span&gt;</source>
@@ -4268,7 +4268,7 @@
       </trans-unit>
       <trans-unit id="932" resname="Your thanks has been sent &lt;br&gt; to this doctor. Thanks!" restype="string" datatype="html">
         <source>Your thanks has been sent &lt;br&gt; to this doctor. Thanks!</source>
-        <target>您的感谢已发送给&lt;br&gt;这位医生。谢谢！</target>
+        <target>您的感谢已发送给&lt;br&gt;这名医生。谢谢！</target>
       </trans-unit>
       <trans-unit id="933" resname="Thanks for agreeing with this tip." restype="string" datatype="html">
         <source>Thanks for agreeing with this tip.</source>
@@ -4292,7 +4292,7 @@
     <body>
       <trans-unit id="936" resname="No Current Feeds" restype="string" datatype="html">
         <source>No Current Feeds</source>
-        <target>当前无新闻来源</target>
+        <target>当前无主页</target>
       </trans-unit>
       <trans-unit id="937" resname="&quot;&#41; no-repeat center center; background-size:cover&apos;&gt;" restype="string" datatype="html">
         <source>&quot;&#41; no-repeat center center; background-size:cover&apos;&gt;</source>
@@ -4324,7 +4324,7 @@
     <body>
       <trans-unit id="941" resname="This feed will be back soon! Search for topics and doctors to follow in the mean time." restype="string" datatype="html">
         <source>This feed will be back soon! Search for topics and doctors to follow in the mean time.</source>
-        <target>这条新闻订阅很快会有回复！与此同时，搜索主题和医生来跟进。</target>
+        <target>此主页很快将回来！与此同时，搜索主题和医生来跟进。</target>
       </trans-unit>
       <trans-unit id="942" resname="Re: MedPub&#35;" restype="string" datatype="html">
         <source>Re: MedPub&#35;</source>
@@ -4708,7 +4708,7 @@
       </trans-unit>
       <trans-unit id="1020" resname="Share this doctor:" restype="string" datatype="html">
         <source>Share this doctor:</source>
-        <target>分享这位医生：</target>
+        <target>分享这名医生：</target>
       </trans-unit>
       <trans-unit id="1021" resname="BIO" restype="string" datatype="html">
         <source>BIO</source>
@@ -4780,7 +4780,7 @@
       </trans-unit>
       <trans-unit id="1038" resname="BOARD CERTIFIED" restype="string" datatype="html">
         <source>BOARD CERTIFIED</source>
-        <target>认证</target>
+        <target>医学委员会认证</target>
       </trans-unit>
       <trans-unit id="1039" resname="This doctor is a --- certified by the ---, a member board of the American Osteopathic Association &#40;AOA&#41;." restype="string" datatype="html">
         <source>This doctor is a --- certified by the ---, a member board of the American Osteopathic Association &#40;AOA&#41;.</source>
@@ -5372,7 +5372,7 @@
       </trans-unit>
       <trans-unit id="1166" resname="A Dr. posted:" restype="string" datatype="html">
         <source>A Dr. posted:</source>
-        <target>一位医生发帖：</target>
+        <target>一名医生发帖：</target>
       </trans-unit>
       <trans-unit id="1167" resname="are seeking a tip on &lt;%=user_answers[0].user_answer.user_question.tip_topic_name.trim&#40;&#41;%&gt;:" restype="string" datatype="html">
         <source>are seeking a tip on &lt;%=user_answers[0].user_answer.user_question.tip_topic_name.trim&#40;&#41;%&gt;:</source>
@@ -6128,11 +6128,11 @@
     <body>
       <trans-unit id="1336" resname="helpful" restype="string" datatype="html">
         <source>helpful</source>
-        <target>有帮助的</target>
+        <target>有帮助</target>
       </trans-unit>
       <trans-unit id="1337" resname="not really" restype="string" datatype="html">
         <source>not really</source>
-        <target>不真实的</target>
+        <target>没有</target>
       </trans-unit>
       <trans-unit id="1338" resname="What do you think of this article?" restype="string" datatype="html">
         <source>What do you think of this article?</source>
@@ -6216,7 +6216,7 @@
       </trans-unit>
       <trans-unit id="1354" resname="Type a doctor&apos;s or patient&apos;s name here" restype="string" datatype="html">
         <source>Type a doctor&apos;s or patient&apos;s name here</source>
-        <target>请在此输入一位医生或患者的名字</target>
+        <target>请在此输入一名医生或患者的名字</target>
       </trans-unit>
       <trans-unit id="1355" resname="PLEASE REMEMBER" restype="string" datatype="html">
         <source>PLEASE REMEMBER</source>
@@ -6272,7 +6272,7 @@
       </trans-unit>
       <trans-unit id="1365" resname="isn’t available at the moment. We’ve issued a full refund so you can ask another doctor for help." restype="string" datatype="html">
         <source>isn’t available at the moment. We’ve issued a full refund so you can ask another doctor for help.</source>
-        <target>此时在忙我们已全额向您退款，您可以向另一位医生寻求帮助。</target>
+        <target>此时在忙我们已全额向您退款，您可以向另一名医生寻求帮助。</target>
       </trans-unit>
       <trans-unit id="1366" resname="&apos;&#41;, url&#40;imgs/masks/avatar_no_border.png&#41;&quot;&gt;" restype="string" datatype="html">
         <source>&apos;&#41;, url&#40;imgs/masks/avatar_no_border.png&#41;&quot;&gt;</source>
@@ -6384,7 +6384,7 @@
       </trans-unit>
       <trans-unit id="1392" resname="Dr. &lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt; isn’t available at the moment. We’ve issued a full refund so you can ask another doctor for help." restype="string" datatype="html">
         <source>Dr. &lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt; isn’t available at the moment. We’ve issued a full refund so you can ask another doctor for help.</source>
-        <target>医生&lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt; 正在忙。我们已全额向您退款，您可以向另一位医生寻求帮助。</target>
+        <target>医生&lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt; 正在忙。我们已全额向您退款，您可以向另一名医生寻求帮助。</target>
       </trans-unit>
       <trans-unit id="1393" resname="Thank you for your response" restype="string" datatype="html">
         <source>Thank you for your response</source>
@@ -6468,7 +6468,7 @@
       </trans-unit>
       <trans-unit id="1412" resname="Dr. &lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt; isn&apos;t available at the moments.We&apos;he refunded you[number] HealthTap Credits so you can ask another doctor for help." restype="string" datatype="html">
         <source>Dr. &lt;%=App.user.get&#40;&quot;person.name&quot;&#41;%&gt; isn&apos;t available at the moments.We&apos;he refunded you[number] HealthTap Credits so you can ask another doctor for help.</source>
-        <target>医生&lt;%=App.user.get&#40;”person.name”&#41;%&gt; 现在正在忙。我们将退还您的[number] HealthTap余额，您可以请求另一位医生的帮助。</target>
+        <target>医生&lt;%=App.user.get&#40;”person.name”&#41;%&gt; 现在正在忙。我们将退还您的[number] HealthTap余额，您可以请求另一名医生的帮助。</target>
       </trans-unit>
       <trans-unit id="1413" resname="Thanku for your response" restype="string" datatype="html">
         <source>Thanku for your response</source>
@@ -8108,7 +8108,7 @@
       </trans-unit>
       <trans-unit id="1773" resname="Please elaborate with helpful details." restype="string" datatype="html">
         <source>Please elaborate with helpful details.</source>
-        <target>请详细说明有用的细节。</target>
+        <target>请详细说明有帮助的细节。</target>
       </trans-unit>
       <trans-unit id="1774" resname="Add a review!" restype="string" datatype="html">
         <source>Add a review!</source>
@@ -8716,7 +8716,7 @@
       </trans-unit>
       <trans-unit id="1887" resname="One doctor" restype="string" datatype="html">
         <source>One doctor</source>
-        <target>一位医生</target>
+        <target>一名医生</target>
       </trans-unit>
       <trans-unit id="1888" resname="&apos;&#41;&quot;&gt;&amp;nbsp" restype="string" datatype="html">
         <source>&apos;&#41;&quot;&gt;&amp;nbsp</source>
@@ -8780,7 +8780,7 @@
       </trans-unit>
       <trans-unit id="1901" resname="and another doctor" restype="string" datatype="html">
         <source>and another doctor</source>
-        <target>和另一位医生</target>
+        <target>和另一名医生</target>
       </trans-unit>
     </body>
   </file>
@@ -9136,11 +9136,11 @@
       </trans-unit>
       <trans-unit id="1969" resname="HealthScore measures your health engagement. When your HealthTap activity is&lt;br&gt;healthy, your HealthScore goes up.&lt;br&gt;Oh, did we mention that there are also rewards for maintaining a high HealthScore? Because there are. Check them out here:" restype="string" datatype="html">
         <source>HealthScore measures your health engagement. When your HealthTap activity is&lt;br&gt;healthy, your HealthScore goes up.&lt;br&gt;Oh, did we mention that there are also rewards for maintaining a high HealthScore? Because there are. Check them out here:</source>
-        <target>健康分数衡量您对健康的参与度。当您的HealthTap活动使是&lt;br&gt;健康的，您的健康分数会上升。&lt;br&gt;哦对了，我们提到过保持高健康分数的奖励吗？因为有在这里查看：</target>
+        <target>健康分数参与讨论您对健康的参与度。当您的HealthTap活动使是&lt;br&gt;健康的，您的健康分数会上升。&lt;br&gt;哦对了，我们提到过保持高健康分数的奖励吗？因为有在这里查看：</target>
       </trans-unit>
       <trans-unit id="1970" resname="HealthScore measures your health engagement. When your HealthTap activity is healthy, your HealthScore goes up.&lt;br&gt;Oh, did we mention that there are also rewards for maintaining a high HealthScore? Because there are. Check them out here:" restype="string" datatype="html">
         <source>HealthScore measures your health engagement. When your HealthTap activity is healthy, your HealthScore goes up.&lt;br&gt;Oh, did we mention that there are also rewards for maintaining a high HealthScore? Because there are. Check them out here:</source>
-        <target>HealthScore衡量您对健康的参与度。当您的HealthTap活动使是&lt;br&gt;健康的，您的健康分数会上升。&lt;br&gt;哦对了，我们提到过保持高健康分数的奖励吗？因为有在这里查看：</target>
+        <target>HealthScore参与讨论您对健康的参与度。当您的HealthTap活动使是&lt;br&gt;健康的，您的健康分数会上升。&lt;br&gt;哦对了，我们提到过保持高健康分数的奖励吗？因为有在这里查看：</target>
       </trans-unit>
       <trans-unit id="1971" resname="How do I improve my HealthScore?" restype="string" datatype="html">
         <source>How do I improve my HealthScore?</source>
@@ -9228,7 +9228,7 @@
     <body>
       <trans-unit id="1988" resname="Tell others about this Doctor:" restype="string" datatype="html">
         <source>Tell others about this Doctor:</source>
-        <target>告诉其他人关于这个医生的：</target>
+        <target>告诉其他人关于这名医生的：</target>
       </trans-unit>
     </body>
   </file>
@@ -9252,7 +9252,7 @@
       </trans-unit>
       <trans-unit id="1992" resname="Helpful, beautiful daily tips" restype="string" datatype="html">
         <source>Helpful, beautiful daily tips</source>
-        <target>有帮助的，美丽的每日小贴士</target>
+        <target>有帮助的、精彩的每日小贴士</target>
       </trans-unit>
       <trans-unit id="1993" resname="Subscribed to this topic" restype="string" datatype="html">
         <source>Subscribed to this topic</source>
@@ -9329,7 +9329,7 @@
       </trans-unit>
       <trans-unit id="2009" resname="A doctor’s DocScore is a measure of their knowledge, trust, compassion and engagement." restype="string" datatype="html">
         <source>A doctor’s DocScore is a measure of their knowledge, trust, compassion and engagement.</source>
-        <target>一位医生的医者评分是衡量他们的学识、可信度、爱心和参与度的指标。</target>
+        <target>一名医生的医者评分是参与讨论他们的学识、可信度、爱心和参与度的指标。</target>
       </trans-unit>
       <trans-unit id="2010" resname="See Network" restype="string" datatype="html">
         <source>See Network</source>
@@ -9377,7 +9377,7 @@
       </trans-unit>
       <trans-unit id="2018" resname="It&apos;s helpful, private, and FREE!" restype="string" datatype="html">
         <source>It&apos;s helpful, private, and FREE!</source>
-        <target>它是快速的，私人的，免费的！</target>
+        <target>它是有帮助的、私人的、免费的！</target>
       </trans-unit>
       <trans-unit id="2019" resname="This answer is very helpful!" restype="string" datatype="html">
         <source>This answer is very helpful!</source>
@@ -9963,11 +9963,11 @@
       </trans-unit>
       <trans-unit id="2136" resname="We need to know a little more about the person you care for to provide them with the most personalized experience." restype="string" datatype="html">
         <source>We need to know a little more about the person you care for to provide them with the most personalized experience.</source>
-        <target>我们需要知道更多您关心的人的信息来给他们提供最个性化的体验。</target>
+        <target>我们需要知道更多您关心的人的信息来给他们提供专属于他们的体验。</target>
       </trans-unit>
       <trans-unit id="2137" resname="We need to know a little more about you to provide you with the most personalized experience." restype="string" datatype="html">
         <source>We need to know a little more about you to provide you with the most personalized experience.</source>
-        <target>我们需要知道更多您的信息来给您提供最个性化的体验。</target>
+        <target>我们需要知道更多您的信息来给您提供最专属于您的体验。</target>
       </trans-unit>
       <trans-unit id="2138" resname="The information you give on HealthTap is private and secure." restype="string" datatype="html">
         <source>The information you give on HealthTap is private and secure.</source>
@@ -10121,7 +10121,7 @@
       </trans-unit>
       <trans-unit id="2168" resname="Personalized, one-on-one attention from the right&lt;br&gt;doctors for you in a safe, secure environment." restype="string" datatype="html">
         <source>Personalized, one-on-one attention from the right&lt;br&gt;doctors for you in a safe, secure environment.</source>
-        <target>为您提供安全可靠环境下个性化的、一对一的医生的关注。</target>
+        <target>为您提供安全可靠环境下专属于您的、一对一的医生的关注。</target>
       </trans-unit>
       <trans-unit id="2169" resname="It&apos;s like a visit from a private doctor wherever&lt;br&gt;you are, whenever you need it most." restype="string" datatype="html">
         <source>It&apos;s like a visit from a private doctor wherever&lt;br&gt;you are, whenever you need it most.</source>
@@ -10161,7 +10161,7 @@
       </trans-unit>
       <trans-unit id="2176" resname="Enter the information of the person you give care to below, to provide the best personalized HealthTap for them." restype="string" datatype="html">
         <source>Enter the information of the person you give care to below, to provide the best personalized HealthTap for them.</source>
-        <target>在下方输入您关心的人的信息，给他提供最个性化的HealthTap 服务。</target>
+        <target>在下方输入您关心的人的信息，给他提供专属于他的HealthTap 服务。</target>
       </trans-unit>
       <trans-unit id="2177" resname="First and Last Name &lt;span class=&quot;reqField&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;caregiver_label hidden&quot;&gt;&#40;of the person you care for&#41;&lt;/span&gt;" restype="string" datatype="html">
         <source>First and Last Name &lt;span class=&quot;reqField&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;caregiver_label hidden&quot;&gt;&#40;of the person you care for&#41;&lt;/span&gt;</source>
@@ -10485,7 +10485,7 @@
     <body>
       <trans-unit id="2243" resname="Don&apos;t have a doctor yet?" restype="string" datatype="html">
         <source>Don&apos;t have a doctor yet?</source>
-        <target>现在还没有一位医生</target>
+        <target>现在还没有一名医生</target>
       </trans-unit>
       <trans-unit id="2244" resname="Add one now!" restype="string" datatype="html">
         <source>Add one now!</source>
@@ -10701,9 +10701,9 @@
     <body>
       <trans-unit id="2290" resname="Files   &lt;span class=&quot;sub_title&quot;&gt;" restype="string" datatype="html">
         <source>Files
-		&lt;span class=&quot;sub_title&quot;&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;</source>
         <target>文件
-		&lt;span class=&quot;sub_title&quot;&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;</target>
       </trans-unit>
       <trans-unit id="2291" resname="Securely store any health document or image&lt;br&gt;that would be useful to share with a doctor or patient" restype="string" datatype="html">
         <source>Securely store any health document or image&lt;br&gt;that would be useful to share with a doctor or patient</source>
@@ -11035,7 +11035,7 @@
     <body>
       <trans-unit id="2359" resname="Activity Feed" restype="string" datatype="html">
         <source>Activity Feed</source>
-        <target>活动新闻订阅</target>
+        <target>活动主页</target>
       </trans-unit>
       <trans-unit id="2360" resname="Conversations" restype="string" datatype="html">
         <source>Conversations</source>
@@ -11373,7 +11373,7 @@
       </trans-unit>
       <trans-unit id="2416" resname="Helpful, life-saving, private, and free" restype="string" datatype="html">
         <source>Helpful, life-saving, private, and free</source>
-        <target>有帮助的，救命的，隐私人，和免费的</target>
+        <target>有帮助的、救命的、私人的和免费的</target>
       </trans-unit>
       <trans-unit id="2417" resname="I&apos;d like to explore first" restype="string" datatype="html">
         <source>I&apos;d like to explore first</source>
@@ -11505,7 +11505,7 @@
       </trans-unit>
       <trans-unit id="2440" resname="Get personalized answers &amp;amp; tips" restype="string" datatype="html">
         <source>Get personalized answers &amp;amp; tips</source>
-        <target>获得个性化的回答 &amp;amp; tips</target>
+        <target>获得专属于您的回答 &amp;amp; tips</target>
       </trans-unit>
       <trans-unit id="2441" resname="Find top doctors for you" restype="string" datatype="html">
         <source>Find top doctors for you</source>
@@ -11513,7 +11513,7 @@
       </trans-unit>
       <trans-unit id="2442" resname="It&apos;s helpful, private, &amp;amp; free" restype="string" datatype="html">
         <source>It&apos;s helpful, private, &amp;amp; free</source>
-        <target>&#40;它是&#41;快速的，私人的 &amp;amp，免费的！</target>
+        <target>&#40;它是&#41;有帮助的、私人的和免费的！</target>
       </trans-unit>
       <trans-unit id="2443" resname="Not Now" restype="string" datatype="html">
         <source>Not Now</source>
@@ -11649,7 +11649,7 @@
     <body>
       <trans-unit id="2469" resname="You may elaborate with helpful details." restype="string" datatype="html">
         <source>You may elaborate with helpful details.</source>
-        <target>您可以详细说明有用的细节。</target>
+        <target>您可以详细说明有帮助的细节。</target>
       </trans-unit>
       <trans-unit id="2470" resname="Write a comment &#40;optional&#41;" restype="string" datatype="html">
         <source>Write a comment &#40;optional&#41;</source>
@@ -11955,7 +11955,7 @@
     <body>
       <trans-unit id="2526" resname="Thanks for recommending these apps to others!&lt;br&gt;We would appreciate any additional comments you think patients would find helpful." restype="string" datatype="html">
         <source>Thanks for recommending these apps to others!&lt;br&gt;We would appreciate any additional comments you think patients would find helpful.</source>
-        <target>感谢您推荐这些应用程序给其他人！我们非常感谢您其他的可以让患者觉得有用的评论。</target>
+        <target>感谢您推荐这些应用程序给其他人！我们非常感谢您其他的可以让患者觉得有帮助的评论。</target>
       </trans-unit>
       <trans-unit id="2527" resname="Publish Comments" restype="string" datatype="html">
         <source>Publish Comments</source>
@@ -12195,7 +12195,7 @@ display:none;
       </trans-unit>
       <trans-unit id="2544" resname="Feed" restype="string" datatype="html">
         <source>Feed</source>
-        <target>消息来源</target>
+        <target>主页</target>
       </trans-unit>
       <trans-unit id="2545" resname="Tips" restype="string" datatype="html">
         <source>Tips</source>
@@ -12467,7 +12467,7 @@ display:none;
       </trans-unit>
       <trans-unit id="2599" resname="It&apos;s helpful, private and free!" restype="string" datatype="html">
         <source>It&apos;s helpful, private and free!</source>
-        <target>它是有帮助的，私人的，免费的！</target>
+        <target>它是有帮助的、私人的、免费的！</target>
       </trans-unit>
       <trans-unit id="2600" resname="&amp;mdash; or &amp;mdash;             &lt;a class=&quot;btn blue&quot; href=&quot;/login&quot;&gt;                 Log in             &lt;/a&gt;" restype="string" datatype="html">
         <source>&amp;mdash; or &amp;mdash;
@@ -12629,9 +12629,9 @@ display:none;
       </trans-unit>
       <trans-unit id="2628" resname="This question has been sent to doctors in the      &lt;%= App.session.referSpecialty %&gt;      field" restype="string" datatype="html">
         <source>This question has been sent to doctors in the
-					&lt;%= App.session.referSpecialty %&gt;
-					field</source>
-        <target>这个问题已经发送到这个领域的医生					&lt;%= App.session.referSpecialty %&gt;</target>
+          &lt;%= App.session.referSpecialty %&gt;
+          field</source>
+        <target>这个问题已经发送到这个领域的医生          &lt;%= App.session.referSpecialty %&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -12639,9 +12639,9 @@ display:none;
     <body>
       <trans-unit id="2629" resname="REFER TO A COLLEAGUE   &lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
         <source>REFER TO A COLLEAGUE
-		&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
         <target>给一位同事参考
-		&lt;span class=&quot;sub_title&quot;&gt;知道谁可以回答这个问题？那真棒！请告诉我们，我们会把它发给他们。&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;知道谁可以回答这个问题？那真棒！请告诉我们，我们会把它发给他们。&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2630" resname="SEND TO:&amp;nbsp;&amp;nbsp;&lt;span class=&quot;to_full_name&quot;&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>SEND TO:&amp;nbsp;&amp;nbsp;&lt;span class=&quot;to_full_name&quot;&gt;&lt;/span&gt;</source>
@@ -13021,7 +13021,7 @@ display:none;
       </trans-unit>
       <trans-unit id="2698" resname="You used your one-time promotional code for this doctor and your credit card will not be charged for this message. We’ve sent your private question to" restype="string" datatype="html">
         <source>You used your one-time promotional code for this doctor and your credit card will not be charged for this message. We’ve sent your private question to</source>
-        <target>您为这位医生使用了一次性优惠码，信用卡将不会被收费。我们向您发送了私人问题</target>
+        <target>您为这名医生使用了一次性优惠码，信用卡将不会被收费。我们向您发送了私人问题</target>
       </trans-unit>
       <trans-unit id="2699" resname="We’ve sent your private question to" restype="string" datatype="html">
         <source>We’ve sent your private question to</source>
@@ -13041,7 +13041,7 @@ display:none;
       </trans-unit>
       <trans-unit id="2703" resname="Get more personalized responses by updating your Health Profile." restype="string" datatype="html">
         <source>Get more personalized responses by updating your Health Profile.</source>
-        <target>通过更新您的HealthTap资料获得更个性化的回应</target>
+        <target>通过更新您的HealthTap资料获得更专属于您的回应</target>
       </trans-unit>
     </body>
   </file>
@@ -13049,9 +13049,9 @@ display:none;
     <body>
       <trans-unit id="2704" resname="ASK A DOCTOR A QUESTION   &lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
         <source>ASK A DOCTOR A QUESTION
-		&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
-        <target>询问一位医生一个问题
-		&lt;span class=”sub_title”&gt;直接从您选择的HealthTap医生获取帮助，使用HealthTap余额支付医生的时间。&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
+        <target>询问一名医生一个问题
+    &lt;span class=”sub_title”&gt;直接从您选择的HealthTap医生获取帮助，使用HealthTap余额支付医生的时间。&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2705" resname="Confirm and send" restype="string" datatype="html">
         <source>Confirm and send</source>
@@ -13099,7 +13099,7 @@ display:none;
     <body>
       <trans-unit id="2715" resname="By sending this message, you understand that you are giving this doctor access to your Health Activity and Health Profile to give you the best, most personalized response." restype="string" datatype="html">
         <source>By sending this message, you understand that you are giving this doctor access to your Health Activity and Health Profile to give you the best, most personalized response.</source>
-        <target>您要明白，发送送信后，您就给了医生浏览您的健康活动和健康档案的权限，让他们给您最好的，最个性化的回复。</target>
+        <target>您要明白，发送送信后，您就给了医生浏览您的健康活动和健康档案的权限，让他们给您最好的，最专属于您的回复。</target>
       </trans-unit>
     </body>
   </file>
@@ -13123,13 +13123,13 @@ display:none;
     <body>
       <trans-unit id="2719" resname="Start a Private Conversation   &lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
         <source>Start a Private Conversation
-		&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience</source>
         <target>开始一次私人回话
-		&lt;span class=&quot;sub_title&quot;&gt;提高您的HealthTap体验</target>
+    &lt;span class=&quot;sub_title&quot;&gt;提高您的HealthTap体验</target>
       </trans-unit>
       <trans-unit id="2720" resname="Ask a more detailed question to a doctor of your choice in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer." restype="string" datatype="html">
         <source>Ask a more detailed question to a doctor of your choice in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.</source>
-        <target>向您选择的医生私下提一个更细节性的问题，更具健康保险流通与责任法案，需要收取一定的小费用。获取更个性化的回答，请附上照片，扫描或者支持文件</target>
+        <target>向您选择的医生私下提一个更细节性的问题，更具健康保险流通与责任法案，需要收取一定的小费用。获取更专属于您的回答，请附上照片，扫描或者支持文件</target>
       </trans-unit>
       <trans-unit id="2721" resname="We&apos;ve got your order. Thanks! Just review below and hit send to start your conversation." restype="string" datatype="html">
         <source>We&apos;ve got your order. Thanks! Just review below and hit send to start your conversation.</source>
@@ -13161,9 +13161,9 @@ display:none;
     <body>
       <trans-unit id="2727" resname="Start a Private Conversation   &lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
         <source>Start a Private Conversation
-		&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target>开始一次私人会话
-		&lt;span class=&quot;sub_title&quot;&gt;向您选择的医生私下提一个更细节性的问题，更具健康保险流通与责任法案，需要收取一定的小费用。获取更个性化的回答，请附上照片，扫描或者支持文件。&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;向您选择的医生私下提一个更细节性的问题，更具健康保险流通与责任法案，需要收取一定的小费用。获取更专属于您的回答，请附上照片，扫描或者支持文件。&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2728" resname="$" restype="string" datatype="html">
         <source>$</source>
@@ -13195,9 +13195,9 @@ display:none;
     <body>
       <trans-unit id="2733" resname="MESSAGE   &lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
         <source>MESSAGE
-		&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;</source>
         <target>消息
-		&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2734" resname="TO:&amp;nbsp;&amp;nbsp;&lt;span class=&quot;to_full_name&quot;&gt;&lt;/span&gt;&amp;nbsp;&lt;a id=&quot;changeTo&quot;&gt;&#40;Change&#41;&lt;/a&gt;" restype="string" datatype="html">
         <source>TO:&amp;nbsp;&amp;nbsp;&lt;span class=&quot;to_full_name&quot;&gt;&lt;/span&gt;&amp;nbsp;&lt;a id=&quot;changeTo&quot;&gt;&#40;Change&#41;&lt;/a&gt;</source>
@@ -13844,165 +13844,165 @@ display:none;
     <body>
       <trans-unit id="2867" resname="GUIDELINES   &lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
         <source>GUIDELINES
-		&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
         <target>指南
-		&lt;span class=&quot;sub_title&quot;&gt;向HealthTap咨询一个优秀的问题，使用这些有帮助的指南&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;向HealthTap咨询一个优秀的问题，使用这些有帮助的指南&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2868" resname="Sweat the details... at least a little.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex1&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h1&quot;&gt;Hide examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex1&quot; class=&quot;guidelineEx&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Sweat the details... at least a little.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex1&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h1&quot;&gt;Hide examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex1&quot; class=&quot;guidelineEx&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex1&quot; class=&quot;guidelineEx&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?
+        &lt;/span&gt;</source>
         <target>更多的细节...至少有一点&lt;a onclick=&quot;$&#40;&apos;&#35;ex1&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h1&quot;&gt;Hide examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex1&quot; class=&quot;guidelineEx&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 在过去3个星期里，为什么我的手肘内部一直瘙痒，从而导致干性皮疹？这可能由什么导致？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt; 为什么我有一个皮疹？
-				使问题尽可能的对其他人是有帮助的。</target>
+        &lt;span id=&quot;ex1&quot; class=&quot;guidelineEx&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 在过去3个星期里，为什么我的手肘内部一直瘙痒，从而导致干性皮疹？这可能由什么导致？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt; 为什么我有一个皮疹？
+        使问题尽可能的对其他人是有帮助的。</target>
       </trans-unit>
       <trans-unit id="2869" resname="Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex2&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h2&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex2&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex2&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h2&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex2&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex2&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?
+        &lt;/span&gt;</source>
         <target>使（您的问题描述）尽可能长这样可以帮助到其他人。因为世界各地有成千上万的人可能会读您的问题和其相应的回答。&lt;a onclick=&quot;$&#40;&apos;&#35;ex2&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h2&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex2&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;是什么导致在家里做家务后会后背疼 - 我的背部从来没有受过伤？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt; 为什么背疼？
-				使问题尽可能的对其他人是有帮助的。</target>
+        &lt;span id=&quot;ex2&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;是什么导致在家里做家务后会后背疼 - 我的背部从来没有受过伤？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt; 为什么背疼？
+        使问题尽可能的对其他人是有帮助的。</target>
       </trans-unit>
       <trans-unit id="2870" resname="Include sex/gender, when relevant.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex3&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h3&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex3&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Include sex/gender, when relevant.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex3&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h3&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex3&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex3&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?
+        &lt;/span&gt;</source>
         <target>当相关时，包括性别。&lt;a onclick=&quot;$&#40;&apos;&#35;ex3&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h3&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex3&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt;什么可能导致男人胸部下面一个四分之一大小的肿块？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; 在我的手背皮肤上。这个类似橡胶凸起，果冻豆的大小的东西是什么？
-				&lt;span&gt;</target>
+        &lt;span id=&quot;ex3&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt;什么可能导致男人胸部下面一个四分之一大小的肿块？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; 在我的手背皮肤上。这个类似橡胶凸起，果冻豆的大小的东西是什么？
+        &lt;span&gt;</target>
       </trans-unit>
       <trans-unit id="2871" resname="Include an approximate age.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex4&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h4&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex4&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;      &lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Include an approximate age.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex4&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h4&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex4&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;
-					&lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex4&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;
+          &lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?
+        &lt;/span&gt;</source>
         <target>包括一个适当的年龄&lt;a onclick=&quot;$&#40;&apos;&#35;ex4&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h4&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex4&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;不同的年龄段有不同的回答：&lt;/span&gt; 前两天，我15岁的儿子发烧了，而且走路一瘸一拐的，好像腿受了伤一样。哪些东西可能导致这种情况？&lt;br&gt;
-					&lt;span class=&quot;good&quot;&gt;&lt;/span&gt; 为什么前两天我3岁的孩子发着烧，走路还一瘸一拐，好像腿受了一样呢？
-				使问题尽可能的对其他人是有帮助的。</target>
+        &lt;span id=&quot;ex4&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;不同的年龄段有不同的回答：&lt;/span&gt; 前两天，我15岁的儿子发烧了，而且走路一瘸一拐的，好像腿受了伤一样。哪些东西可能导致这种情况？&lt;br&gt;
+          &lt;span class=&quot;good&quot;&gt;&lt;/span&gt; 为什么前两天我3岁的孩子发着烧，走路还一瘸一拐，好像腿受了一样呢？
+        使问题尽可能的对其他人是有帮助的。</target>
       </trans-unit>
       <trans-unit id="2872" resname="Include weight, height and dosage units, where relevant.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex5&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h5&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex5&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Include weight, height and dosage units, where relevant.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex5&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h5&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex5&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex5&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?
+        &lt;/span&gt;</source>
         <target>只要是相关的，包括体重、身高以及计量单位。&lt;a onclick=&quot;$&#40;&apos;&#35;ex5&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h5&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex5&quot; class=&quot;guidelineEx hide&quot;&gt;。
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 我3岁大的儿子，重27磅，高34英尺在他这个年龄这个身高体重正常吗？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  我3岁大的儿子，重27磅，高34英尺。在他这个年龄正常吗？
-				&lt;/span&gt;</target>
+        &lt;span id=&quot;ex5&quot; class=&quot;guidelineEx hide&quot;&gt;。
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 我3岁大的儿子，重27磅，高34英尺在他这个年龄这个身高体重正常吗？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  我3岁大的儿子，重27磅，高34英尺。在他这个年龄正常吗？
+        &lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2873" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex6&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h6&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex6&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol &#40;acetaminophen120mg/5ml&#41;, but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex6&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h6&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex6&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol &#40;acetaminophen120mg/5ml&#41;, but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex6&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol &#40;acetaminophen120mg/5ml&#41;, but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?
+        &lt;/span&gt;</source>
         <target>请使用药物的品牌和通用名称，尤其是当您不在美国，或者询问罕见的药物。&lt;a onclick=&quot;$&#40;&apos;&#35;ex6&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h6&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex6&quot; class=&quot;guidelineEx hide&quot;&gt;。
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 我5岁大的儿子，重27磅，高34英尺他服用5ml的泰诺（对乙酰氨基酚120mg / 5ml），但还在发烧。体重和年龄这么大的孩子可以服用更大剂量的泰诺吗？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  我的儿子5岁，体重55，有一点发烧。已服用过泰诺但还在发烧。泰诺的更多信息
-				&lt;/span&gt;</target>
+        &lt;span id=&quot;ex6&quot; class=&quot;guidelineEx hide&quot;&gt;。
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 我5岁大的儿子，重27磅，高34英尺他服用5ml的泰诺（对乙酰氨基酚120mg / 5ml），但还在发烧。体重和年龄这么大的孩子可以服用更大剂量的泰诺吗？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  我的儿子5岁，体重55，有一点发烧。已服用过泰诺但还在发烧。泰诺的更多信息
+        &lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2874" resname="Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex7&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h7&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex7&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex7&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h7&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex7&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex7&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?
+        &lt;/span&gt;</source>
         <target>尽量避免提问一些医生回答“是”或者“不是”的问题。&lt;a onclick=&quot;$&#40;&apos;&#35;ex7&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h7&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex7&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;抗生素如何在年轻的学龄儿童中起作用？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt; 抗生素对儿童起作用吗？
-				&lt;/span&gt;</target>
+        &lt;span id=&quot;ex7&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;抗生素如何在年轻的学龄儿童中起作用？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt; 抗生素对儿童起作用吗？
+        &lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2875" resname="Try to leave opinions out.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex8&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h8&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex8&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Try to leave opinions out.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex8&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h8&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex8&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex8&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?
+        &lt;/span&gt;</source>
         <target>尝试留下意见&lt;a onclick=&quot;$&#40;&apos;&#35;ex8&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h8&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex8&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 为什么有些人会抵抗疫苗，明明疫苗可以用来预防疾病？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt;  那些反疫苗的人是彻底地不懂还是只是拒绝接受？
-				&lt;/span&gt;</target>
+        &lt;span id=&quot;ex8&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 为什么有些人会抵抗疫苗，明明疫苗可以用来预防疾病？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt;  那些反疫苗的人是彻底地不懂还是只是拒绝接受？
+        &lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2876" resname="The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex9&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h9&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex9&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?     &lt;/span&gt;" restype="string" datatype="html">
         <source>The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex9&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h9&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex9&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex9&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?
+        &lt;/span&gt;</source>
         <target>越清楚越好运用好语法，不要说脏话和俚语。&lt;a onclick=&quot;$&#40;&apos;&#35;ex9&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h9&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex9&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;好：&lt;/span&gt; 我当时正在锻炼手臂，然后感到二头肌处有火烧一样的疼痛。我是肌肉撕裂了吗？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt;  Doing curls, felt something and arm hurts? 
-				&lt;/span&gt;</target>
+        &lt;span id=&quot;ex9&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;好：&lt;/span&gt; 我当时正在锻炼手臂，然后感到二头肌处有火烧一样的疼痛。我是肌肉撕裂了吗？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt;  Doing curls, felt something and arm hurts? 
+        &lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2877" resname="Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex10&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h10&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex10&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex10&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h10&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex10&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex10&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
+        &lt;/span&gt;</source>
         <target>不要假设个人的历史经历（知识）。HealthTap的医生经常不会看到您以前的问题。&lt;a onclick=&quot;$&#40;&apos;&#35;ex10&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h10&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex10&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;好：&lt;/span&gt; 我两岁的儿子两个月前得了耳管炎，现在还发烧了，右耳会流脓。这正常吗？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt;  这种症状已经持续两天，也一直有浓流出来吗？
-				&lt;/span&gt;</target>
+        &lt;span id=&quot;ex10&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;好：&lt;/span&gt; 我两岁的儿子两个月前得了耳管炎，现在还发烧了，右耳会流脓。这正常吗？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt;  这种症状已经持续两天，也一直有浓流出来吗？
+        &lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2878" resname="To maintain privacy, leave your name and the names of others out &#40;unless that “other” is a celebrity who has publicly talked about an issue&#41;.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex11&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h11&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex11&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.     &lt;/span&gt;" restype="string" datatype="html">
         <source>To maintain privacy, leave your name and the names of others out &#40;unless that “other” is a celebrity who has publicly talked about an issue&#41;.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex11&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h11&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex11&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex11&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.
+        &lt;/span&gt;</source>
         <target>为了保护隐私，请留下您的姓名和他人的姓名（“其他”除已公开谈论某个问题的名人的名字）。&lt;a onclick=&quot;$&#40;&apos;&#35;ex11&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h11&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex11&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;好：&lt;/span&gt;我叫John Doe，我比较好奇是否有针对帕金森综合征的有效治疗方法。在过去三年里有新的，好的治疗方法面世吗？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt;  您好，医生。我叫John Doe，我比较好奇是否有针对帕金森综合征的有效治疗方法。
-				&lt;/span&gt;</target>
+        &lt;span id=&quot;ex11&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;好：&lt;/span&gt;我叫John Doe，我比较好奇是否有针对帕金森综合征的有效治疗方法。在过去三年里有新的，好的治疗方法面世吗？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt;  您好，医生。我叫John Doe，我比较好奇是否有针对帕金森综合征的有效治疗方法。
+        &lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2879" resname="Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex12&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h12&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex12&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex12&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h12&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex12&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex12&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?
+        &lt;/span&gt;</source>
         <target>避免使用太多的缩写，因为可能导致混淆&lt;a onclick=&quot;$&#40;&apos;&#35;ex12&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h12&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex12&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 如果您没有来生理周期，您是如何知道您怀孕了？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt;  如果您没有正常的生理周期，您是如何知道您怀孕了？
-				&lt;/span&gt;</target>
+        &lt;span id=&quot;ex12&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 如果您没有来生理周期，您是如何知道您怀孕了？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;不太好：&lt;/span&gt;  如果您没有正常的生理周期，您是如何知道您怀孕了？
+        &lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2880" resname="Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex13&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h13&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;     &lt;span id=&quot;ex13&quot; class=&quot;guidelineEx hide&quot;&gt;      &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;      &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?     &lt;/span&gt;" restype="string" datatype="html">
         <source>Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex13&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h13&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex13&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex13&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?
+        &lt;/span&gt;</source>
         <target>用英语询问。这是HealthTap医生的常用语言。&lt;a onclick=&quot;$&#40;&apos;&#35;ex13&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h13&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex13&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;好：&lt;/span&gt; 我上周末修剪了一些树木，我的手臂已经疼了2天。这可能由什么引起？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  因为我的胳膊很疼吗？
-				&lt;/span&gt;</target>
+        &lt;span id=&quot;ex13&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;好：&lt;/span&gt; 我上周末修剪了一些树木，我的手臂已经疼了2天。这可能由什么引起？&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  因为我的胳膊很疼吗？
+        &lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -14352,9 +14352,9 @@ display:none;
     <body>
       <trans-unit id="2943" resname="EDIT YOUR QUESTION   &lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer! &lt;a id=&quot;guidelines&quot;&gt;&lt;/a&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>EDIT YOUR QUESTION
-		&lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer! &lt;a id=&quot;guidelines&quot;&gt;&lt;/a&gt;&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer! &lt;a id=&quot;guidelines&quot;&gt;&lt;/a&gt;&lt;/span&gt;</source>
         <target>编辑您的问题
-		&lt;span class=&quot;sub_title&quot;&gt;想要修改问题吗？您可以那样做。请记住，合适的语法和正确的拼写会提高您获得优秀回答的机会！&lt;a id=&quot;guidelines&quot;&gt;&lt;/a&gt;&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;想要修改问题吗？您可以那样做。请记住，合适的语法和正确的拼写会提高您获得优秀回答的机会！&lt;a id=&quot;guidelines&quot;&gt;&lt;/a&gt;&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2944" resname="/" restype="string" datatype="html">
         <source>/</source>
@@ -14374,7 +14374,7 @@ display:none;
       </trans-unit>
       <trans-unit id="2947" resname="Your level is a cumulative representation of your engagement on HealthTap. It&apos;s measured by the activity points you receive for performing various actions such as answering questions, peer reviewing your colleagues&apos; answers, inviting colleagues to join the network and referring patients to colleagues." restype="string" datatype="html">
         <source>Your level is a cumulative representation of your engagement on HealthTap. It&apos;s measured by the activity points you receive for performing various actions such as answering questions, peer reviewing your colleagues&apos; answers, inviting colleagues to join the network and referring patients to colleagues.</source>
-        <target>您的等级是您在HealthTap上参与度的累积表现。它是通过您参与不容的活动而获得的活动得分来衡量的。活动类型有参与不容的活动，例如回答问题，检阅同事的回答，邀请同事加入人脉网，介绍患者给同事等。</target>
+        <target>您的等级是您在HealthTap上参与度的累积表现。它是通过您参与不容的活动而获得的活动得分来参与讨论的。活动类型有参与不容的活动，例如回答问题，检阅同事的回答，邀请同事加入人脉网，介绍患者给同事等。</target>
       </trans-unit>
       <trans-unit id="2948" resname="You will receive an “Agree” each time one of your answers is recognized by a colleague as representing accurate and trustworthy information. This form of peer review is vital to building trust with patients who are turning to you for the highest quality information. Providing up-to-date and succinct answers, as well as building your own network of followers who will see each of your answers are great ways to get more “Agrees.&quot;" restype="string" datatype="html">
         <source>You will receive an “Agree” each time one of your answers is recognized by a colleague as representing accurate and trustworthy information. This form of peer review is vital to building trust with patients who are turning to you for the highest quality information. Providing up-to-date and succinct answers, as well as building your own network of followers who will see each of your answers are great ways to get more “Agrees.&quot;</source>
@@ -14382,7 +14382,7 @@ display:none;
       </trans-unit>
       <trans-unit id="2949" resname="This, along with personalized thank you notes, is how patients show their gratitude and appreciation for your compassion and expertise." restype="string" datatype="html">
         <source>This, along with personalized thank you notes, is how patients show their gratitude and appreciation for your compassion and expertise.</source>
-        <target>和个性化的感谢信一起，这是患者们对您的爱心与专业知识表达谢意与感激的方式。</target>
+        <target>和专属于您的感谢信一起，这是患者们对您的爱心与专业知识表达谢意与感激的方式。</target>
       </trans-unit>
       <trans-unit id="2950" resname="This is a reflection of your availability. Send timely responses to paid private messages from patients on HealthTap to improve your Responsiveness score." restype="string" datatype="html">
         <source>This is a reflection of your availability. Send timely responses to paid private messages from patients on HealthTap to improve your Responsiveness score.</source>
@@ -14394,7 +14394,7 @@ display:none;
     <body>
       <trans-unit id="2951" resname="A doctor&apos;s level is a measure of engagement. Doctors achieve new levels by reaching milestones on HealthTap." restype="string" datatype="html">
         <source>A doctor&apos;s level is a measure of engagement. Doctors achieve new levels by reaching milestones on HealthTap.</source>
-        <target>一位医生的水平是参与情况的一种衡量。在HealthTap医生通过达到新的里程碑获得新的等级。</target>
+        <target>一名医生的水平是参与情况的一种参与讨论。在HealthTap医生通过达到新的里程碑获得新的等级。</target>
       </trans-unit>
       <trans-unit id="2952" resname="Agrees are one way that doctors can participate in peer review on HealthTap. The number of agrees a doctor receives will always be listed here." restype="string" datatype="html">
         <source>Agrees are one way that doctors can participate in peer review on HealthTap. The number of agrees a doctor receives will always be listed here.</source>
@@ -14402,15 +14402,15 @@ display:none;
       </trans-unit>
       <trans-unit id="2953" resname="This, along with personalized thank you notes, is how patients show their gratitude and appreciation for care and expertise from doctors." restype="string" datatype="html">
         <source>This, along with personalized thank you notes, is how patients show their gratitude and appreciation for care and expertise from doctors.</source>
-        <target>和个性化的感谢信一起，这是患者们对您的爱心与专业知识表达谢意与感激的方式。</target>
+        <target>和专属于您的感谢信一起，这是患者们对您的爱心与专业知识表达谢意与感激的方式。</target>
       </trans-unit>
       <trans-unit id="2954" resname="A doctor&apos;s responsiveness score is tied to the timeliness of their responses to private messages." restype="string" datatype="html">
         <source>A doctor&apos;s responsiveness score is tied to the timeliness of their responses to private messages.</source>
-        <target>一位医生的反应灵敏分数与他们对私人信息的反应及时性紧密相关。</target>
+        <target>一名医生的反应灵敏分数与他们对私人信息的反应及时性紧密相关。</target>
       </trans-unit>
       <trans-unit id="2955" resname="A doctor&apos;s helpfulness score is tied to how they respond to private messages from patients." restype="string" datatype="html">
         <source>A doctor&apos;s helpfulness score is tied to how they respond to private messages from patients.</source>
-        <target>一位医生的乐于助人分数与他们如何回复患者的私人信息紧密相关。</target>
+        <target>一名医生的乐于助人分数与他们如何回复患者的私人信息紧密相关。</target>
       </trans-unit>
       <trans-unit id="5899" resname="The DocScore is a measure on a scale of {span_tag_start}0 to 100{span_tag_end} which reflects the degree to which other doctors agree with a doctor&apos;s answers, in addition to the extent of training, board certification and other professional accomplishments a doctor has received." restype="string" datatype="html">
         <source>The DocScore is a measure on a scale of {span_tag_start}0 to 100{span_tag_end} which reflects the degree to which other doctors agree with a doctor&apos;s answers, in addition to the extent of training, board certification and other professional accomplishments a doctor has received.</source>
@@ -14422,7 +14422,7 @@ display:none;
     <body>
       <trans-unit id="2956" resname="This doctor is not yet active in our 47,000 doctor network. We can send your question anyway or you can choose another doctor." restype="string" datatype="html">
         <source>This doctor is not yet active in our 47,000 doctor network. We can send your question anyway or you can choose another doctor.</source>
-        <target>这位医生不在我们活跃的47,000名医生网络中。我们可以通过任何方式发送您的问题或者您可以选择其他医生。</target>
+        <target>这名医生不在我们活跃的47,000名医生网络中。我们可以通过任何方式发送您的问题或者您可以选择其他医生。</target>
       </trans-unit>
       <trans-unit id="2957" resname="Send message anyway?" restype="string" datatype="html">
         <source>Send message anyway?</source>
@@ -14442,13 +14442,13 @@ display:none;
     <body>
       <trans-unit id="2959" resname="Curbside Consult &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;    &lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
         <source>Curbside Consult &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;
-			&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
+      &lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
         <target>路边咨询 &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;
-			&lt;span class=&quot;sub_title&quot;&gt;来自您专家同事的优秀回答&lt;/span&gt;</target>
+      &lt;span class=&quot;sub_title&quot;&gt;来自您专家同事的优秀回答&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2960" resname="HealthTap is a give and take community. To ask your curbside consult, please support your trusted colleagues by answering patient questions to enable this service." restype="string" datatype="html">
         <source>HealthTap is a give and take community. To ask your curbside consult, please support your trusted colleagues by answering patient questions to enable this service.</source>
-        <target>HealthTap是一个平等交换的社区。请通过回答患者的问题来支持您信任的同事，以获得路边咨询服务。</target>
+        <target>HealthTap是一个收获与贡献并存的社区。请通过回答患者的问题来支持您信任的同事，以获得路边咨询服务。</target>
       </trans-unit>
       <trans-unit id="2961" resname="Select the specialty for your consultation" restype="string" datatype="html">
         <source>Select the specialty for your consultation</source>
@@ -14710,7 +14710,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3009" resname="Update your HealthTap profile to get better, more personalized health information:" restype="string" datatype="html">
         <source>Update your HealthTap profile to get better, more personalized health information:</source>
-        <target>更新您的HealthTap资料获得更好，更个性化的健康信息：</target>
+        <target>更新您的HealthTap资料获得更好，更专属于您的健康信息：</target>
       </trans-unit>
     </body>
   </file>
@@ -14718,7 +14718,7 @@ display:none;
     <body>
       <trans-unit id="3010" resname="Ask doctors any question   &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask doctors any question
-		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target>询问医生任何问题
         &lt;span class=&quot;sub_title&quot;&gt;任何时间。任何地点。&lt;span style=&quot;font-weight: bold&quot;&gt;免费。 &lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
@@ -14736,9 +14736,9 @@ display:none;
       </trans-unit>
       <trans-unit id="3014" resname=".    &lt;br&gt;" restype="string" datatype="html">
         <source>.
-			&lt;br&gt;</source>
+      &lt;br&gt;</source>
         <target>.
-			&apos;&lt;br /&gt;&apos; :</target>
+      &apos;&lt;br /&gt;&apos; :</target>
       </trans-unit>
     </body>
   </file>
@@ -14746,7 +14746,7 @@ display:none;
     <body>
       <trans-unit id="3015" resname="Ask Doctors Any Question   &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask Doctors Any Question
-		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target>询问医生任何问题
         &lt;span class=&quot;sub_title&quot;&gt;任何时间。任何地点。&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;免费&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
@@ -14756,7 +14756,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3017" resname="improve your question to get a more personalized answer." restype="string" datatype="html">
         <source>improve your question to get a more personalized answer.</source>
-        <target>提高您的问题（质量）获得更加个性化的回答。</target>
+        <target>提高您的问题（质量）获得更加专属于您的回答。</target>
       </trans-unit>
       <trans-unit id="3018" resname="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription; if you think you may have a medical emergency, call 911 or your doctor immediately." restype="string" datatype="html">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription; if you think you may have a medical emergency, call 911 or your doctor immediately.</source>
@@ -15042,7 +15042,7 @@ display:none;
     <body>
       <trans-unit id="3074" resname="Create a Tip   &lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
         <source>Create a Tip
-		&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target>创建一则小贴士
     &lt;span class=&quot;sub_title&quot;&gt;用100个字符帮助数百人。通知，启发，激励。&lt;/span&gt;</target>
       </trans-unit>
@@ -15346,7 +15346,7 @@ display:none;
     <body>
       <trans-unit id="3131" resname="FEED" restype="string" datatype="html">
         <source>FEED</source>
-        <target>消息来源</target>
+        <target>主页</target>
       </trans-unit>
       <trans-unit id="3132" resname="ABOUT" restype="string" datatype="html">
         <source>ABOUT</source>
@@ -15672,7 +15672,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3191" resname="Feed Filter:" restype="string" datatype="html">
         <source>Feed Filter:</source>
-        <target>新闻来源筛选：</target>
+        <target>主页筛选：</target>
       </trans-unit>
       <trans-unit id="3192" resname="Your speciality" restype="string" datatype="html">
         <source>Your speciality</source>
@@ -15684,7 +15684,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3194" resname="Edit Feed Subscriptions »" restype="string" datatype="html">
         <source>Edit Feed Subscriptions »</source>
-        <target>编辑新闻来源订阅»</target>
+        <target>编辑主页订购 »</target>
       </trans-unit>
     </body>
   </file>
@@ -15692,11 +15692,11 @@ display:none;
     <body>
       <trans-unit id="3195" resname="New Feature - Feed Filters" restype="string" datatype="html">
         <source>New Feature - Feed Filters</source>
-        <target>新特性 - 新闻来源筛选</target>
+        <target>新特性 - 主页筛选</target>
       </trans-unit>
       <trans-unit id="3196" resname="Expand your feed to see new unanswered questions in all specialties!" restype="string" datatype="html">
         <source>Expand your feed to see new unanswered questions in all specialties!</source>
-        <target>展开您的新闻来源，查看所有专科中新的未回答问题！</target>
+        <target>展开您的主页，查看所有专科中新的未回答问题！</target>
       </trans-unit>
       <trans-unit id="3197" resname="Want to broaden your view? Take a look at some of the most recently asked questions across all fields of medicine with one click. Enable this option and we&apos;ll instantly add these questions to your queue. Use the filter options here to turn this feature on or off at any time. Enjoy!" restype="string" datatype="html">
         <source>Want to broaden your view? Take a look at some of the most recently asked questions across all fields of medicine with one click. Enable this option and we&apos;ll instantly add these questions to your queue. Use the filter options here to turn this feature on or off at any time. Enjoy!</source>
@@ -15716,7 +15716,7 @@ display:none;
     <body>
       <trans-unit id="3200" resname="Feed filter:" restype="string" datatype="html">
         <source>Feed filter:</source>
-        <target>新闻来源筛选：</target>
+        <target>主页筛选：</target>
       </trans-unit>
       <trans-unit id="3201" resname="/&gt;   Also show other specialties" restype="string" datatype="html">
         <source>/&gt;
@@ -15822,7 +15822,7 @@ display:none;
         <source>Your feed is empty because we don&apos;t know what you&apos;re interested in. &lt;br&gt;
         &lt;a class=&quot;feed_settings_alt_link&quot;&gt;Let us know&lt;/a&gt;
         what you&apos;d like to see here.</source>
-        <target>您的新闻来源是空的，因为我们不知道您感兴趣的内容。 &lt;br&gt;
+        <target>您的主页是空的，因为我们不知道您感兴趣的内容。 &lt;br&gt;
         &lt;a class=&quot;feed_settings_alt_link&quot;&gt;告诉我们&lt;/a&gt;
         您想在这里了解什么。</target>
       </trans-unit>
@@ -15856,7 +15856,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3228" resname="Get personalized answers from doctors!" restype="string" datatype="html">
         <source>Get personalized answers from doctors!</source>
-        <target>获得医生个性化的回答！</target>
+        <target>获得专属于您的医生回答！</target>
       </trans-unit>
       <trans-unit id="3229" resname="TipTap:" restype="string" datatype="html">
         <source>TipTap:</source>
@@ -16135,7 +16135,7 @@ display:none;
     <body>
       <trans-unit id="3284" resname="Edit Feed Preferences" restype="string" datatype="html">
         <source>Edit Feed Preferences</source>
-        <target>编辑偏好新闻来源</target>
+        <target>编辑主页偏好</target>
       </trans-unit>
     </body>
   </file>
@@ -16189,7 +16189,7 @@ display:none;
     <body>
       <trans-unit id="3292" resname="Thanks, your Agree helps everyone know this is a good answer! Would you like to send a note to this doctor?" restype="string" datatype="html">
         <source>Thanks, your Agree helps everyone know this is a good answer! Would you like to send a note to this doctor?</source>
-        <target>感谢您，您的同意帮助每一个人都知道这是一个好的回答！您想与您的这个医生发送一个通知吗？</target>
+        <target>感谢您，您的同意帮助每一个人都知道这是一个好的回答！您想与您的这名医生发送一个通知吗？</target>
       </trans-unit>
       <trans-unit id="3293" resname="Add a comment" restype="string" datatype="html">
         <source>Add a comment</source>
@@ -16197,7 +16197,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3294" resname="Thank you for agreeing with this answer. Support this doctor by voting for them in one of the following areas." restype="string" datatype="html">
         <source>Thank you for agreeing with this answer. Support this doctor by voting for them in one of the following areas.</source>
-        <target>感谢您同意这个回答通过在以下领域之一投票支持这位医生。</target>
+        <target>感谢您同意这个回答通过在以下领域之一投票支持这名医生。</target>
       </trans-unit>
       <trans-unit id="3295" resname="Cast your Vote" restype="string" datatype="html">
         <source>Cast your Vote</source>
@@ -17114,7 +17114,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3318" resname="This doctor has no thank you notes yet." restype="string" datatype="html">
         <source>This doctor has no thank you notes yet.</source>
-        <target>这位医生还没有感谢信。</target>
+        <target>这名医生还没有感谢信。</target>
       </trans-unit>
       <trans-unit id="3319" resname="thanked" restype="string" datatype="html">
         <source>thanked</source>
@@ -18204,7 +18204,7 @@ display:none;
           I encourage you sign up for free and connect with me on HealthTap today.</source>
         <target>我找到了一个在访问期间保持我们联系的很好方法。
           &lt;br&gt;
-          &lt;br&gt;                                                                                HealthTap是免费网站和移动服务，让您提出健康问题，接收日常健康建议，并浏览有用信息。
+          &lt;br&gt;                                                                                HealthTap是免费网站和移动服务，让您提出健康问题，接收日常健康建议，并浏览有帮助的信息。
           &lt;br&gt;&lt;br&gt;
     我鼓励您免费注册并就在今天通过HealthTap与我取得联系。</target>
       </trans-unit>
@@ -18424,7 +18424,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3589" resname="Send an email:" restype="string" datatype="html">
         <source>Send an email:</source>
-        <target>发送一份邮件：</target>
+        <target>发送邮件：</target>
       </trans-unit>
       <trans-unit id="3590" resname="Email a survey" restype="string" datatype="html">
         <source>Email a survey</source>
@@ -18628,7 +18628,7 @@ display:none;
     <body>
       <trans-unit id="3632" resname="Are you this doctor?" restype="string" datatype="html">
         <source>Are you this doctor?</source>
-        <target>您是这位医生吗？</target>
+        <target>您是这名医生吗？</target>
       </trans-unit>
       <trans-unit id="3633" resname="Claim this page today FREE! &amp;raquo;" restype="string" datatype="html">
         <source>Claim this page today FREE! &amp;raquo;</source>
@@ -19025,7 +19025,7 @@ display:none;
       <trans-unit id="3716" resname="Added This Doctor           &#40;&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;&#41;" restype="string" datatype="html">
         <source>Added This Doctor
           &#40;&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;&#41;</source>
-        <target>添加这位医生
+        <target>添加这名医生
           &#40;&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;&#41;</target>
       </trans-unit>
       <trans-unit id="3717" resname="Your Network           &#40;&lt;span class=&quot;count first-tab&quot;&gt;0&lt;/span&gt;&#41;" restype="string" datatype="html">
@@ -20022,21 +20022,21 @@ display:none;
       </trans-unit>
       <trans-unit id="3920" resname="You earned     &lt;span class=&quot;points_earned_highlight&quot;&gt;      &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points     &lt;/span&gt;" restype="string" datatype="html">
         <source>You earned
-				&lt;span class=&quot;points_earned_highlight&quot;&gt;
-					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
-				&lt;/span&gt;</source>
+        &lt;span class=&quot;points_earned_highlight&quot;&gt;
+          &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
+        &lt;/span&gt;</source>
         <target>您获得
-				&lt;span class=&quot;points_earned_highlight&quot;&gt;
-					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
-				&lt;/span&gt;</target>
+        &lt;span class=&quot;points_earned_highlight&quot;&gt;
+          &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
+        &lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="3921" resname="Today, you&apos;ve earned &lt;span class=&quot;todays_points_highlight&quot;&gt; 180 points&lt;/span&gt; for helping millions.    &lt;br&gt;    Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points." restype="string" datatype="html">
         <source>Today, you&apos;ve earned &lt;span class=&quot;todays_points_highlight&quot;&gt; 180 points&lt;/span&gt; for helping millions.
-			&lt;br&gt;
-			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
+      &lt;br&gt;
+      Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
         <target>今天，您已经获得 &lt;span class=&quot;todays_points_highlight&quot;&gt; 180积分&lt;/span&gt; 帮助数百万人。
-			&lt;br&gt;
-			回答 &lt;b&gt;X&lt;/b&gt;接下来的更多问题 &lt;b&gt;X&lt;/b&gt; 小时加倍您的每日积分。</target>
+      &lt;br&gt;
+      回答 &lt;b&gt;X&lt;/b&gt;接下来的更多问题 &lt;b&gt;X&lt;/b&gt; 小时加倍您的每日积分。</target>
       </trans-unit>
       <trans-unit id="3922" resname="12h" restype="string" datatype="html">
         <source>12h</source>
@@ -20068,9 +20068,9 @@ display:none;
       </trans-unit>
       <trans-unit id="3929" resname="Here are a few patient questions to keep you going.   &lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Here are a few patient questions to keep you going.
-		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
+    &lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
         <target>这里有一些患者问题需要您回答。
-		&lt;a&gt;查看您的所有问题 &amp;raquo;&lt;/a&gt;</target>
+    &lt;a&gt;查看您的所有问题 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -20415,7 +20415,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3999" resname="What procedures, conditions, &lt;a class=&quot;personality_traits&quot;&gt;personality traits&lt;/a&gt;, or other topics would you like to be known for?" restype="string" datatype="html">
         <source>What procedures, conditions, &lt;a class=&quot;personality_traits&quot;&gt;personality traits&lt;/a&gt;, or other topics would you like to be known for?</source>
-        <target>您希望了解什么临床操作，病症，&lt;a class=”personality_traits”&gt;个性特征&lt;/a&gt;或其他您希望专攻的主题？</target>
+        <target>您希望了解什么临床操作、病症、&lt;a class=”personality_traits”&gt;个性特征&lt;/a&gt;或其他您希望专攻的话题？</target>
       </trans-unit>
       <trans-unit id="4000" resname="Type a procedure, condition, or other topic and add" restype="string" datatype="html">
         <source>Type a procedure, condition, or other topic and add</source>
@@ -20463,7 +20463,7 @@ display:none;
     <body>
       <trans-unit id="4007" resname="This doctor is not yet active in our 47,000 doctor network. We can send your appointment request anyway or you can choose another doctor." restype="string" datatype="html">
         <source>This doctor is not yet active in our 47,000 doctor network. We can send your appointment request anyway or you can choose another doctor.</source>
-        <target>位医生不在我们活跃的47,000名医生网络中。我们可以通过任何方式发送您的预约请求或者您可以选择其他医生。</target>
+        <target>名医生不在我们活跃的47,000名医生网络中。我们可以通过任何方式发送您的预约请求或者您可以选择其他医生。</target>
       </trans-unit>
       <trans-unit id="4008" resname="Request appointment anyway?" restype="string" datatype="html">
         <source>Request appointment anyway?</source>
@@ -20583,7 +20583,7 @@ display:none;
       </trans-unit>
       <trans-unit id="4031" resname="Thanks for your helpful" restype="string" datatype="html">
         <source>Thanks for your helpful</source>
-        <target>感谢您的有帮助！</target>
+        <target>感谢您有帮助的</target>
       </trans-unit>
       <trans-unit id="4032" resname="post!" restype="string" datatype="html">
         <source>post!</source>
@@ -20851,7 +20851,7 @@ display:none;
       </trans-unit>
       <trans-unit id="4084" resname="Ex. http://drjanejuarez.blog.com/feed" restype="string" datatype="html">
         <source>Ex. http://drjanejuarez.blog.com/feed</source>
-        <target>例如. http://drjanejuarez.blog.com/feed</target>
+        <target>例如 http://drjanejuarez.blog.com/feed</target>
       </trans-unit>
     </body>
   </file>
@@ -22020,7 +22020,7 @@ display:none;
       </trans-unit>
       <trans-unit id="6105" resname="{number} doctors available for you" restype="string" datatype="html">
         <source>{number} doctors available for you</source>
-        <target>{number}名医生现在可以为您服务</target>
+        <target>{number}名医生在线为您服务</target>
       </trans-unit>
     </body>
   </file>
@@ -22080,7 +22080,7 @@ display:none;
       </trans-unit>
       <trans-unit id="4272" resname="value=&quot;This was very helpful. Thanks!&quot;&gt;" restype="string" datatype="html">
         <source>value=&quot;This was very helpful. Thanks!&quot;&gt;</source>
-        <target>value=&quot;This was very helpful.谢谢！&quot;&gt;</target>
+        <target>value=&quot;这很有帮助。谢谢！&quot;&gt;</target>
       </trans-unit>
       <trans-unit id="4273" resname="This was very helpful. Thanks!" restype="string" datatype="html">
         <source>This was very helpful. Thanks!</source>
@@ -22164,7 +22164,7 @@ display:none;
     <body>
       <trans-unit id="4283" resname="Make this doctor&apos;s day! Send a thank you note to:" restype="string" datatype="html">
         <source>Make this doctor&apos;s day! Send a thank you note to:</source>
-        <target>使这位医生的一天！发送一封感谢信到！</target>
+        <target>使这名医生的一天！发送一封感谢信到！</target>
       </trans-unit>
       <trans-unit id="6117" resname="Please don&apos;t include a followup question in your note. To do so, {link_tag_start}ask a question{link_tag_end}." restype="string" datatype="html">
         <source>Please don&apos;t include a followup question in your note. To do so, {link_tag_start}ask a question{link_tag_end}.</source>
@@ -22366,7 +22366,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6122" resname="{years} yrs" restype="string" datatype="html">
         <source>{years} yrs</source>
-        <target>{years}年</target>
+        <target>{years}岁</target>
       </trans-unit>
     </body>
   </file>
@@ -22418,7 +22418,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4319" resname="Your message subscription allows you to send as many messages as you need and get doctor advice, prescriptions, lab tests, and more." restype="string" datatype="html">
         <source>Your message subscription allows you to send as many messages as you need and get doctor advice, prescriptions, lab tests, and more.</source>
-        <target>您的消息订阅允许您发送所需数量的信息并获取医生建议、处方、实验室检验及更多内容。</target>
+        <target>您的消息订购允许您发送所需数量的信息并获取医生建议、处方、实验室检验及更多内容。</target>
       </trans-unit>
       <trans-unit id="4320" resname="Are you sure you want to end your subscription?" restype="string" datatype="html">
         <source>Are you sure you want to end your subscription?</source>
@@ -22984,15 +22984,15 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4405" resname="data-name=&quot;&lt;%= item.name %&gt;&quot; data-state=&quot;followed&quot; data-type=&quot;Symptom&quot;&gt;   &lt;span class=&quot;follow-text&quot;&gt;Following&lt;/span&gt;" restype="string" datatype="html">
         <source>data-name=&quot;&lt;%= item.name %&gt;&quot; data-state=&quot;followed&quot; data-type=&quot;Symptom&quot;&gt;
-		&lt;span class=&quot;follow-text&quot;&gt;Following&lt;/span&gt;</source>
+    &lt;span class=&quot;follow-text&quot;&gt;Following&lt;/span&gt;</source>
         <target>data-name=&quot;&lt;%= item.name %&gt;&quot; data-state=&quot;followed&quot; data-type=&quot;Symptom&quot;&gt;
-		&lt;span class=&quot;follow-text&quot;&gt;关注中&lt;/span&gt;</target>
+    &lt;span class=&quot;follow-text&quot;&gt;关注中&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="4406" resname="data-name=&quot;&lt;%= item.name %&gt;&quot; data-state=&quot;not_followed&quot; data-type=&quot;Symptom&quot;&gt;   &lt;span class=&quot;follow-text&quot;&gt;Follow&lt;/span&gt;" restype="string" datatype="html">
         <source>data-name=&quot;&lt;%= item.name %&gt;&quot; data-state=&quot;not_followed&quot; data-type=&quot;Symptom&quot;&gt;
-		&lt;span class=&quot;follow-text&quot;&gt;Follow&lt;/span&gt;</source>
+    &lt;span class=&quot;follow-text&quot;&gt;Follow&lt;/span&gt;</source>
         <target>data-name=&quot;&lt;%= item.name %&gt;&quot; data-state=&quot;followed&quot; data-type=&quot;Symptom&quot;&gt;
-		&lt;span class=&quot;follow-text&quot;&gt;关注&lt;/span&gt;</target>
+    &lt;span class=&quot;follow-text&quot;&gt;关注&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -23455,7 +23455,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4487" resname="Respond to inbox consults within 24 hours" restype="string" datatype="html">
         <source>Respond to inbox consults within 24 hours</source>
-        <target>在24小时内回复收件箱咨询</target>
+        <target>在24小时内查阅收件箱进行回复</target>
       </trans-unit>
       <trans-unit id="4488" resname="Be online during your designated shift &#40;even if on a mobile device!&#41;" restype="string" datatype="html">
         <source>Be online during your designated shift &#40;even if on a mobile device!&#41;</source>
@@ -23627,7 +23627,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4523" resname="Maybe later" restype="string" datatype="html">
         <source>Maybe later</source>
-        <target>可能以后</target>
+        <target>以后再说</target>
       </trans-unit>
     </body>
   </file>
@@ -23742,7 +23742,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4548" resname="A Prime doctor is currently not available in &lt;%= stateItem.state %&gt;. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders." restype="string" datatype="html">
         <source>A Prime doctor is currently not available in &lt;%= stateItem.state %&gt;. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders.</source>
-        <target>一位Prime医生现在正在忙 &lt;%= stateItem.state %&gt;.然而，您仍然可以通过保密的文本聊天咨询您的医生或专家，得到的建议，处方和提醒。</target>
+        <target>一名Prime医生现在正在忙 &lt;%= stateItem.state %&gt;.然而，您仍然可以通过保密的文本聊天咨询您的医生或专家，得到的建议，处方和提醒。</target>
       </trans-unit>
       <trans-unit id="4549" resname="Or, find a doctor &amp;raquo;" restype="string" datatype="html">
         <source>Or, find a doctor &amp;raquo;</source>
@@ -23786,7 +23786,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4556" resname="Get a more personalized answer" restype="string" datatype="html">
         <source>Get a more personalized answer</source>
-        <target>获得一个更个性化的回答</target>
+        <target>获得一个更专属于您的回答</target>
       </trans-unit>
       <trans-unit id="4557" resname="Tell the doctor about" restype="string" datatype="html">
         <source>Tell the doctor about</source>
@@ -24248,7 +24248,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4643" resname="A Prime doctor is currently not available in &lt;%= state %&gt;. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders." restype="string" datatype="html">
         <source>A Prime doctor is currently not available in &lt;%= state %&gt;. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders.</source>
-        <target>一位Prime医生现在正在忙 &lt;%= state %&gt;.然而，您仍然可以通过保密的文本聊天咨询您的医生或专家，得到的建议，处方和提醒。</target>
+        <target>一名Prime医生现在正在忙 &lt;%= state %&gt;.然而，您仍然可以通过保密的文本聊天咨询您的医生或专家，得到的建议，处方和提醒。</target>
       </trans-unit>
       <trans-unit id="6161" resname="{n} years in practice" restype="string" datatype="html">
         <source>{n} years in practice</source>
@@ -24878,11 +24878,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4746" resname="Talk to a doctor now" restype="string" datatype="html">
         <source>Talk to a doctor now</source>
-        <target>现在与一位医生交流</target>
+        <target>现在与一名医生交流</target>
       </trans-unit>
       <trans-unit id="4747" resname="See personalized doctor insights »" restype="string" datatype="html">
         <source>See personalized doctor insights »</source>
-        <target>更多个性化的医生见解 »</target>
+        <target>更多专属于您的医生见解 »</target>
       </trans-unit>
       <trans-unit id="4748" resname="Ok thanks" restype="string" datatype="html">
         <source>Ok thanks</source>
@@ -25024,11 +25024,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4770" resname="RB.getStringJS&#40;In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.&#41;.format&#40;{      bold_tag_start: &apos;&lt;b&gt;&apos;,      bold_tag_end: &apos;&lt;/b&gt;&apos;     }&#41;" restype="string" datatype="html">
         <source>RB.getStringJS&#40;In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.&#41;.format&#40;{
-    	bold_tag_start: &apos;&lt;b&gt;&apos;,
-    	bold_tag_end: &apos;&lt;/b&gt;&apos;
+      bold_tag_start: &apos;&lt;b&gt;&apos;,
+      bold_tag_end: &apos;&lt;/b&gt;&apos;
     }&#41;</source>
         <target>RB.getStringJS&#40;除了现场在线咨询，您还会收到{bold_tag_start}咨询邮件{bold_tag_end}.这些付费的，详细的信息都是来自出现在您的网页顶部的患者，您必须在24小时内回答他们。&apos;&lt;b&gt;&apos;,
-    	bold_tag_end: &apos;&lt;/b&gt;&apos;
+      bold_tag_end: &apos;&lt;/b&gt;&apos;
     }&#41;</target>
       </trans-unit>
       <trans-unit id="4771" resname="You will earn $&lt;%= inbox_compensation %&gt; when you complete patient consults and submit your SOAP Note." restype="string" datatype="html">
@@ -25089,7 +25089,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4783" resname="6 doctors" restype="string" datatype="html">
         <source>6 doctors</source>
-        <target>6位医生</target>
+        <target>6名医生</target>
       </trans-unit>
       <trans-unit id="4784" resname="agree" restype="string" datatype="html">
         <source>agree</source>
@@ -25117,7 +25117,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4788" resname="Does this doctor deserve praise and recognition?" restype="string" datatype="html">
         <source>Does this doctor deserve praise and recognition?</source>
-        <target>这个医生应该得到赞扬和认可吗？</target>
+        <target>这名医生应该得到赞扬和认可吗？</target>
       </trans-unit>
       <trans-unit id="4789" resname="Show them love and nominate them for a &quot;Top Doctor 2016 award&quot;!" restype="string" datatype="html">
         <source>Show them love and nominate them for a &quot;Top Doctor 2016 award&quot;!</source>
@@ -25309,7 +25309,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4820" resname="Total Prime Credits Earned &lt;span id=&quot;total_referral_earned&quot;&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Total Prime Credits Earned &lt;span id=&quot;total_referral_earned&quot;&gt;&lt;/span&gt;</source>
-        <target>总Prime信用收入 &lt;span id=”total_referral_earned”&gt;&lt;/span&gt;</target>
+        <target>所得的总Prime获得积分 &lt;span id=”total_referral_earned”&gt;&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="4821" resname="Remaining Prime Credit Balance: &lt;span id=&quot;current_referral_balance&quot;&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Remaining Prime Credit Balance: &lt;span id=&quot;current_referral_balance&quot;&gt;&lt;/span&gt;</source>
@@ -25653,7 +25653,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4895" resname="As a subscriber, we can connect you to another doctor for a second consult FOR FREE.&lt;br&gt;&lt;br&gt;Would you like to perform another consult?&lt;br&gt;&lt;br&gt;Your satisfaction is 100% guaranteed&lt;br&gt;&lt;br&gt;" restype="string" datatype="html">
         <source>As a subscriber, we can connect you to another doctor for a second consult FOR FREE.&lt;br&gt;&lt;br&gt;Would you like to perform another consult?&lt;br&gt;&lt;br&gt;Your satisfaction is 100% guaranteed&lt;br&gt;&lt;br&gt;</source>
-        <target>作为用户，我们可以将您连接到另一个医生进行第二次免费咨询。&lt;br&gt;&lt;br&gt;您想再做一次咨询吗？您的满意会得到100%保证。&lt;br&gt;&lt;br&gt;</target>
+        <target>作为用户，我们可以将您连接到另一名医生进行第二次免费咨询。&lt;br&gt;&lt;br&gt;您想再做一次咨询吗？您的满意会得到100%保证。&lt;br&gt;&lt;br&gt;</target>
       </trans-unit>
       <trans-unit id="4896" resname="Start another consult" restype="string" datatype="html">
         <source>Start another consult</source>
@@ -25689,7 +25689,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6190" resname="Personalized answers, tips, news, and more for {span_tag_start}you{span_tag_end}" restype="string" datatype="html">
         <source>Personalized answers, tips, news, and more for {span_tag_start}you{span_tag_end}</source>
-        <target>个性化的回答，小贴士，新的和更多的{span_tag_start}您{span_tag_end}</target>
+        <target>专属于您的回答，小贴士，新的和更多的{span_tag_start}您{span_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -25721,7 +25721,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4903" resname="Appreciate this doctor?" restype="string" datatype="html">
         <source>Appreciate this doctor?</source>
-        <target>感谢这位医生吗？</target>
+        <target>感谢这名医生吗？</target>
       </trans-unit>
       <trans-unit id="4904" resname="Let the world know for National Doctors&apos; Day on March 30th. Send this doctor a flower and thank you note, and we&apos;ll forward a big virtual bouquet to the doctor!" restype="string" datatype="html">
         <source>Let the world know for National Doctors&apos; Day on March 30th. Send this doctor a flower and thank you note, and we&apos;ll forward a big virtual bouquet to the doctor!</source>
@@ -25777,7 +25777,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4912" resname="Did you know that as a Prime member you can have discounted consults with top Concierge doctors in over 100+ specialities?" restype="string" datatype="html">
         <source>Did you know that as a Prime member you can have discounted consults with top Concierge doctors in over 100+ specialities?</source>
-        <target>您是否知道作为一名Prime黄金会员将可以在向贵宾台超过100多个专科的顶级医生进行咨询时获得折扣优惠？</target>
+        <target>您是否知道作为一名Prime会员将可以在向贵宾台超过100多个专科的顶级医生进行咨询时获得折扣优惠？</target>
       </trans-unit>
       <trans-unit id="4913" resname="Get the right care for your needs - consult a specialist today!" restype="string" datatype="html">
         <source>Get the right care for your needs - consult a specialist today!</source>
@@ -26685,7 +26685,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6217" resname="Personalized, timely {em_tag_start}advice &amp; reminders{em_tag_end}" restype="string" datatype="html">
         <source>Personalized, timely {em_tag_start}advice &amp; reminders{em_tag_end}</source>
-        <target>个性化的，及时的{em_tag_start}建议和提醒{em_tag_end}</target>
+        <target>专属于您的，及时的{em_tag_start}建议和提醒{em_tag_end}</target>
       </trans-unit>
       <trans-unit id="6218" resname="Try a consult" restype="string" datatype="html">
         <source>Try a consult</source>
@@ -26781,7 +26781,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6222" resname="1&#35;{n} year|&#35;{n} years" restype="string" datatype="html">
         <source>1&#35;{n} year|&#35;{n} years</source>
-        <target>1&#35;{n} 年|&#35;{n} 年</target>
+        <target>1&#35;{n} 年|&#35;{n} 岁</target>
       </trans-unit>
       <trans-unit id="6223" resname="1&#35;Saved {span_tag_start}{n}{span_tag_end} life|&#35;Saved {span_tag_start}{n}{span_tag_end} lives" restype="string" datatype="html">
         <source>1&#35;Saved {span_tag_start}{n}{span_tag_end} life|&#35;Saved {span_tag_start}{n}{span_tag_end} lives</source>
@@ -27033,19 +27033,19 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5126" resname="Sorry, this consult got disconnected.&lt;br&gt;    &lt;%=     RB.getString&#40;&apos;Please try again or {link_tag_start}contact us{link_tag_end} for support.&apos;&#41;.format&#40;{      link_tag_start: &apos;&lt;a href=&quot;mailto:​feedback@healthtap.com?subject=My%20live%20consult%20was%20disconnected%20&#40;ID:%20&apos; + user_id + &apos;&#41;&quot;&gt;&apos;,      link_tag_end: &apos;&lt;/a&gt;&apos;     }&#41;    %&gt;" restype="string" datatype="html">
         <source>Sorry, this consult got disconnected.&lt;br&gt;
-  	&lt;%=
-  		RB.getString&#40;&apos;Please try again or {link_tag_start}contact us{link_tag_end} for support.&apos;&#41;.format&#40;{
-  			link_tag_start: &apos;&lt;a href=&quot;mailto:​feedback@healthtap.com?subject=My%20live%20consult%20was%20disconnected%20&#40;ID:%20&apos; + user_id + &apos;&#41;&quot;&gt;&apos;,
-  			link_tag_end: &apos;&lt;/a&gt;&apos;
-  		}&#41;
-  	%&gt;</source>
+    &lt;%=
+      RB.getString&#40;&apos;Please try again or {link_tag_start}contact us{link_tag_end} for support.&apos;&#41;.format&#40;{
+        link_tag_start: &apos;&lt;a href=&quot;mailto:​feedback@healthtap.com?subject=My%20live%20consult%20was%20disconnected%20&#40;ID:%20&apos; + user_id + &apos;&#41;&quot;&gt;&apos;,
+        link_tag_end: &apos;&lt;/a&gt;&apos;
+      }&#41;
+    %&gt;</source>
         <target>抱歉,这次咨询中断了&lt;br&gt;
-  	&lt;%=
-  		RB.getString&#40;&apos;Please try again or {link_tag_start}contact us{link_tag_end} for support.&apos;&#41;.format&#40;{
-  			link_tag_start: &apos;&lt;a href=&quot;mailto:​feedback@healthtap.com?subject=My%20live%20consult%20was%20disconnected%20&#40;ID:%20&apos; + user_id + &apos;&#41;&quot;&gt;&apos;,
-  			link_tag_end: &apos;&lt;/a&gt;&apos;
-  		}&#41;
-  	%&gt;</target>
+    &lt;%=
+      RB.getString&#40;&apos;Please try again or {link_tag_start}contact us{link_tag_end} for support.&apos;&#41;.format&#40;{
+        link_tag_start: &apos;&lt;a href=&quot;mailto:​feedback@healthtap.com?subject=My%20live%20consult%20was%20disconnected%20&#40;ID:%20&apos; + user_id + &apos;&#41;&quot;&gt;&apos;,
+        link_tag_end: &apos;&lt;/a&gt;&apos;
+      }&#41;
+    %&gt;</target>
       </trans-unit>
       <trans-unit id="5127" resname="Try again" restype="string" datatype="html">
         <source>Try again</source>
@@ -27154,7 +27154,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5145" resname="Prime Credits: $" restype="string" datatype="html">
         <source>Prime Credits: $</source>
-        <target>主要银行卡：$</target>
+        <target>Prime获得积分：$</target>
       </trans-unit>
     </body>
   </file>
@@ -27285,7 +27285,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6256" resname="{n} doctors available for you" restype="string" datatype="html">
         <source>{n} doctors available for you</source>
-        <target>{n}名医生现在可以为您服务</target>
+        <target>{n}名医生在线为您服务</target>
       </trans-unit>
     </body>
   </file>
@@ -27337,7 +27337,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6258" resname="{span_tag_start}{age}{span_tag_end} yrs" restype="string" datatype="html">
         <source>{span_tag_start}{age}{span_tag_end} yrs</source>
-        <target>{span_tag_start}{age}{span_tag_end} 年</target>
+        <target>{span_tag_start}{age}{span_tag_end} 岁</target>
       </trans-unit>
     </body>
   </file>
@@ -27637,7 +27637,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5205" resname="Maybe later »" restype="string" datatype="html">
         <source>Maybe later »</source>
-        <target>可能以后 &gt;&gt;</target>
+        <target>以后再说 &gt;&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -27657,7 +27657,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5209" resname="Maybe later. Just connect for now »" restype="string" datatype="html">
         <source>Maybe later. Just connect for now »</source>
-        <target>可能以后马上联系 &gt;&gt;</target>
+        <target>以后再说马上联系 &gt;&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -27669,7 +27669,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5211" resname="Maybe later. Just connect for now ››" restype="string" datatype="html">
         <source>Maybe later. Just connect for now ››</source>
-        <target>可能以后马上联系 &gt;&gt;</target>
+        <target>以后再说马上联系 &gt;&gt;</target>
       </trans-unit>
       <trans-unit id="6279" resname="Dr. {name}" restype="string" datatype="html">
         <source>Dr. {name}</source>
@@ -28514,7 +28514,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
             A doctor will be with you as soon as possible. &lt;br&gt;
             In the meanwhile, would you like to wait or try one of the following?</source>
         <target>您的关注对我们很重要。&lt;br&gt;
-            一位医生会尽快与您联系。&lt;br&gt;
+            一名医生会尽快与您联系。&lt;br&gt;
            同时，您想要等待或尝试以下一种方法？</target>
       </trans-unit>
       <trans-unit id="5360" resname="Send as message" restype="string" datatype="html">
@@ -28547,7 +28547,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5364" resname="Your message was sent to our doctors!" restype="string" datatype="html">
         <source>Your message was sent to our doctors!</source>
-        <target>您的信心已经发送给我们医生。</target>
+        <target>您的信息已经发送给我们医生！</target>
       </trans-unit>
       <trans-unit id="5365" resname="Your question was sent to our doctors!" restype="string" datatype="html">
         <source>Your question was sent to our doctors!</source>
@@ -28603,7 +28603,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6322" resname="Send your question for one or more answers from our network of more than {num_experts} doctors or consult a doctor." restype="string" datatype="html">
         <source>Send your question for one or more answers from our network of more than {num_experts} doctors or consult a doctor.</source>
-        <target>发送您的问题，获得来自我们由超过{num_experts}名医生组成的网络的一个或多个教育性文本回答，或者咨询一名医生。</target>
+        <target>发送您的问题，获得来自我们由超过{num_experts}名医生组成的网络的一个或多个具有教育意义的文本回答，或者咨询一名医生。</target>
       </trans-unit>
     </body>
   </file>
@@ -28704,7 +28704,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5387" resname="A doctor is reviewing your chart and will be with you shortly..." restype="string" datatype="html">
         <source>A doctor is reviewing your chart and will be with you shortly...</source>
-        <target>一个医生正在检查您的图表，并会很快和您联系……</target>
+        <target>一名医生正在检查您的图表，并会很快和您联系……</target>
       </trans-unit>
       <trans-unit id="5388" resname="Could not load video/audio" restype="string" datatype="html">
         <source>Could not load video/audio</source>
@@ -28752,7 +28752,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5395" resname="Choose a doctor" restype="string" datatype="html">
         <source>Choose a doctor</source>
-        <target>选择一位医生</target>
+        <target>选择一名医生</target>
       </trans-unit>
       <trans-unit id="5396" resname="Name, specialty, or topic" restype="string" datatype="html">
         <source>Name, specialty, or topic</source>
@@ -28888,7 +28888,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5407" resname="From which doctor would you like help?" restype="string" datatype="html">
         <source>From which doctor would you like help?</source>
-        <target>您想选择哪个医生的帮助？</target>
+        <target>您想选择哪名医生的帮助？</target>
       </trans-unit>
       <trans-unit id="5408" resname="Any primary care doctor" restype="string" datatype="html">
         <source>Any primary care doctor</source>
@@ -28900,7 +28900,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5410" resname="You choose a doctor" restype="string" datatype="html">
         <source>You choose a doctor</source>
-        <target>选择一个医生</target>
+        <target>选择一名医生</target>
       </trans-unit>
       <trans-unit id="5411" resname="Consult your doctor or a specialist of your choice" restype="string" datatype="html">
         <source>Consult your doctor or a specialist of your choice</source>
@@ -29632,13 +29632,13 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
   &lt;br&gt;
   &lt;b&gt;为什么选择我们&lt;/b&gt;
   &lt;br&gt;
- 有100多个专家，超过26亿个的回答，我们的专家能够为您的问题提供最好的医疗建议。我们有最大的医生网络来提供回答，个性化的意见，并关心任何问题。 
+ 有100多个专家，超过26亿个的回答，我们的专家能够为您的问题提供最好的医疗建议。我们有最大的医生网络来提供回答，专属于您的意见，并关心任何问题。 
 
   &lt;br&gt;
   &lt;br&gt;
   &lt;b&gt;关于我们的医生&lt;/b&gt;
   &lt;br&gt;
-  要成为HealthTap的医学专家网络会员，医生必须由美国委员会认证，通过严格的资格审查程序，并接受过如何使用我们的科技平台给建议的培训。我们密切关注用户的反馈，以确保我们的医生提供尽可能好的医护。</target>
+  要成为HealthTap的医学专家网络会员，医生必须由美国委员会认证，通过严格的资格审查程序，并接受过如何使用我们的科技平台给有帮助的建议的培训。我们密切关注用户的反馈，以确保我们的医生提供尽可能好的医护。</target>
       </trans-unit>
       <trans-unit id="6418" resname="HealthTap provides easy, immediate access to over {num_experts} doctors anytime, anywhere, 24/7. Connect through live HD video, voice, or text chat with a doctor from the largest doctor network in the country." restype="string" datatype="html">
         <source>HealthTap provides easy, immediate access to over {num_experts} doctors anytime, anywhere, 24/7. Connect through live HD video, voice, or text chat with a doctor from the largest doctor network in the country.</source>
@@ -29774,7 +29774,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5508" resname="Ask a Doctor" restype="string" datatype="html">
         <source>Ask a Doctor</source>
-        <target>询问一位医生</target>
+        <target>询问一名医生</target>
       </trans-unit>
     </body>
   </file>
@@ -30168,7 +30168,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5582" resname="Please choose a doctor and try again." restype="string" datatype="javascript">
         <source>Please choose a doctor and try again.</source>
-        <target>请选择一位医生并再次尝试</target>
+        <target>请选择一名医生并再次尝试</target>
       </trans-unit>
     </body>
   </file>
@@ -30200,7 +30200,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5587" resname="CHOOSE DOCTOR TO REFER" restype="string" datatype="javascript">
         <source>CHOOSE DOCTOR TO REFER</source>
-        <target>免费选择一位医生</target>
+        <target>免费选择一名医生</target>
       </trans-unit>
       <trans-unit id="5588" resname="ADD A MESSAGE" restype="string" datatype="javascript">
         <source>ADD A MESSAGE</source>
@@ -30985,7 +30985,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5737" resname="I have never had any procedures" restype="string" datatype="javascript">
         <source>I have never had any procedures</source>
-        <target>我从来没有任何疗程</target>
+        <target>我从来没有接受过任何临床操作</target>
       </trans-unit>
     </body>
   </file>
@@ -31581,9 +31581,9 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5837" resname="The compensation report from {start_date} to {end_date} is being generated. \    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
         <source>The compensation report from {start_date} to {end_date} is being generated. \
-			It is gonna take a while. You will get an email once it is ready!</source>
+      It is gonna take a while. You will get an email once it is ready!</source>
         <target>正在生成{start_date}到{end_date}的补偿报告\
-			它还需要一会。当它完成后您会收到一封邮件</target>
+      它还需要一会。当它完成后您会收到一封邮件</target>
       </trans-unit>
       <trans-unit id="5838" resname="The compensation report from {start_date} to {end_date} has been generated ! Please check your email!" restype="string" datatype="javascript">
         <source>The compensation report from {start_date} to {end_date} has been generated ! Please check your email!</source>
@@ -31603,7 +31603,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="5879" resname="{num_span_tag_start}{age}{span_tag_end}{caption_span_tag_start}YEARS OLD{span_tag_end}" restype="string" datatype="html">
         <source>{num_span_tag_start}{age}{span_tag_end}{caption_span_tag_start}YEARS OLD{span_tag_end}</source>
-        <target>{num_span_tag_start}{age}{span_tag_end}{caption_span_tag_start}年{span_tag_end}</target>
+        <target>{num_span_tag_start}{age}{span_tag_end}{caption_span_tag_start}岁{span_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -31723,7 +31723,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5932" resname="An inspiring story about someone who has been helped by the thousands of doctors on HealthTap:" restype="string" datatype="javascript">
         <source>An inspiring story about someone who has been helped by the thousands of doctors on HealthTap:</source>
-        <target>一个关于HealthTap上某个人被千百万个医生帮助的鼓舞人心的故事</target>
+        <target>一个关于HealthTap上某个人被千百万名医生帮助的鼓舞人心的故事</target>
       </trans-unit>
       <trans-unit id="5933" resname="continue reading" restype="string" datatype="javascript">
         <source>continue reading</source>
@@ -31751,7 +31751,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5938" resname="We measure “people helped” by several numbers, including: patients who read your answers, thanks and thank-you notes from patients, agrees you receive, number of new followers, expert recommendations and votes for your “known for” topics." restype="string" datatype="javascript">
         <source>We measure “people helped” by several numbers, including: patients who read your answers, thanks and thank-you notes from patients, agrees you receive, number of new followers, expert recommendations and votes for your “known for” topics.</source>
-        <target>我们通过一些数字衡量“帮助过的人”，包括读过您的回答的患者人数，感谢过您的人数，您收到的“认同”数，新的关注者数量，专家建议数以及您“专攻”的话题的投票数。</target>
+        <target>我们通过一些数字参与讨论“帮助过的人”，包括读过您的回答的患者人数，感谢过您的人数，您收到的“认同”数，新的关注者数量，专家建议数以及您“专攻”的话题的投票数。</target>
       </trans-unit>
       <trans-unit id="5939" resname="Top Specialty Award" restype="string" datatype="javascript">
         <source>Top Specialty Award</source>
@@ -31807,7 +31807,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="5950" resname=" Get personalized answers &amp;amp; tips " restype="string" datatype="javascript">
         <source>Get personalized answers &amp;amp; tips</source>
-        <target>获得个性化的回答 &amp;amp; tips</target>
+        <target>获得专属于您的回答 &amp;amp; tips</target>
       </trans-unit>
       <trans-unit id="5951" resname=" Find top doctors for you " restype="string" datatype="javascript">
         <source>Find top doctors for you</source>
@@ -32174,7 +32174,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6019" resname="From {name}, {age} years old." restype="string" datatype="javascript">
         <source>From {name}, {age} years old.</source>
-        <target>来自 {name}, {age} 年龄</target>
+        <target> {name}, {age} 岁</target>
       </trans-unit>
       <trans-unit id="6020" resname="Are you sure you want to quit HealthTap?" restype="string" datatype="javascript">
         <source>Are you sure you want to quit HealthTap?</source>
@@ -32330,7 +32330,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6089" resname="{birthday} {span_tag_start}{age} yrs{span_tag_end}" restype="string" datatype="html">
         <source>{birthday} {span_tag_start}{age} yrs{span_tag_end}</source>
-        <target>{birthday} {span_tag_start}{age} 年{span_tag_end}</target>
+        <target>{birthday} {span_tag_start}{age} 岁{span_tag_end}</target>
       </trans-unit>
       <trans-unit id="6090" resname="Ethnicity" restype="string" datatype="html">
         <source>Ethnicity</source>
@@ -32410,7 +32410,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6126" resname="{rel_span_tag_start}{relationship},{span_tag_end}{age_span_tag_start}{age} years old{span_tag_end}" restype="string" datatype="html">
         <source>{rel_span_tag_start}{relationship},{span_tag_end}{age_span_tag_start}{age} years old{span_tag_end}</source>
-        <target>{rel_span_tag_start}{relationship},{span_tag_end}{age_span_tag_start}{age} 年{span_tag_end}</target>
+        <target>{rel_span_tag_start}{relationship},{span_tag_end}{age_span_tag_start}{age} 岁{span_tag_end}</target>
       </trans-unit>
       <trans-unit id="6127" resname="{rel_span_tag_start}{relationship}{span_tag_end}" restype="string" datatype="html">
         <source>{rel_span_tag_start}{relationship}{span_tag_end}</source>
@@ -32466,7 +32466,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6221" resname="{age_years} year old" restype="string" datatype="html">
         <source>{age_years} year old</source>
-        <target>{age_years} 年</target>
+        <target>{age_years} 岁</target>
       </trans-unit>
     </body>
   </file>
@@ -33149,7 +33149,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
         <target>这是您真正可以帮助您的患者的地方！您会注意到\
                   您可以添加任意数量的&lt;b&gt;建议这个可操作步骤&lt;/ b&gt;或跟进\
                   保养说明。&lt;b&gt;请确保您至少有一个。&lt;/ b&gt;您可以\
-                  也将任何建议变成有用的常规提醒只有\
+                  也将任何建议变成有帮助的常规提醒只有\
                   几次点击。</target>
       </trans-unit>
       <trans-unit id="6539" resname="Go ahead and give it a try. For example, recommend a 30-minute walk, \                 once a day, for a month." restype="string" datatype="javascript">
@@ -33444,7 +33444,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
                      appear at the top of your homepage feed and must be answered within \
                      24 hours. You can send clarification questions and have a conversation \
                      with the patients. To end the consult, simply submit the SOAP note.</source>
-        <target>这些是您的患者的付费详细信息，显示在您的首页新闻来源的顶部，必须在24小时内回答。您可以向患者发送解释问题和谈话\
+        <target>这些是您的患者的付费详细信息，显示在您的主页顶部，必须在24小时内回答。您可以向患者发送解释问题和谈话\
                     查看这些相关专家：</target>
       </trans-unit>
       <trans-unit id="6583" resname="Tip: Please respond to any Inbox Consults within 24 hours. \                Submit your answer as a SOAP consult note, or ask your \                patient follow-up questions by entering your question and \                clicking the “Wait for response” button." restype="string" datatype="javascript">
@@ -33731,7 +33731,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6633" resname="An inspiring story about someone who has been helped by the thousands of doctors on HealthTap: " restype="string" datatype="javascript">
         <source>An inspiring story about someone who has been helped by the thousands of doctors on HealthTap:</source>
-        <target>一个关于HealthTap上某个人被千百万个医生帮助的鼓舞人心的故事</target>
+        <target>一个关于HealthTap上某个人被千百万名医生帮助的鼓舞人心的故事</target>
       </trans-unit>
     </body>
   </file>
@@ -33967,7 +33967,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6682" resname="Get help from a doctor. Start your free trial" restype="string" datatype="javascript">
         <source>Get help from a doctor. Start your free trial</source>
-        <target>从一位医生那里获得帮助开始一个月的免费试用</target>
+        <target>从一名医生那里获得帮助开始一个月的免费试用</target>
       </trans-unit>
       <trans-unit id="6683" resname="USD per month" restype="string" datatype="javascript">
         <source>USD per month</source>
@@ -34055,7 +34055,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6701" resname="Prime &#40;Pay-as-you-go&#41;" restype="string" datatype="javascript">
         <source>Prime &#40;Pay-as-you-go&#41;</source>
-        <target>PRIME （随付随用）</target>
+        <target>Prime （随付随用）</target>
       </trans-unit>
       <trans-unit id="6702" resname="Prime for {num_accounts}" restype="string" datatype="javascript">
         <source>Prime for {num_accounts}</source>
@@ -34331,11 +34331,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6756" resname="Name of treatment or procedure" restype="string" datatype="javascript">
         <source>Name of treatment or procedure</source>
-        <target>治疗或手术的名称</target>
+        <target>治疗或临床操作的名称</target>
       </trans-unit>
       <trans-unit id="6757" resname="Optional Notes &#40;e.g., side effects, after-procedure instructions&#41;" restype="string" datatype="javascript">
         <source>Optional Notes &#40;e.g., side effects, after-procedure instructions&#41;</source>
-        <target>可选的注意事项（例如副作用，后期操作说明）</target>
+        <target>可选的注意事项（例如：副作用，临床操作后说明）</target>
       </trans-unit>
       <trans-unit id="6758" resname="Did any close relative &#40;sibling, parent, grandparent&#41; die before the age of 60 from illness?" restype="string" datatype="javascript">
         <source>Did any close relative &#40;sibling, parent, grandparent&#41; die before the age of 60 from illness?</source>
@@ -34371,7 +34371,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6766" resname="When was the last time? &#40;year&#41;" restype="string" datatype="javascript">
         <source>When was the last time? &#40;year&#41;</source>
-        <target>最后一次是什么时候？&#40;哪一年&#41;</target>
+        <target>最后一次是什么时候？&#40;year&#41;</target>
       </trans-unit>
       <trans-unit id="6767" resname="Which vaccinations have you had?" restype="string" datatype="javascript">
         <source>Which vaccinations have you had?</source>
@@ -34791,7 +34791,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6859" resname="Sharing this information lets doctors give you more helpful, personalized answers." restype="string" datatype="javascript">
         <source>Sharing this information lets doctors give you more helpful, personalized answers.</source>
-        <target>分享这个信息，让医生更您提供更有帮助的，个性化的回答。</target>
+        <target>分享这个信息，让医生更您提供更有帮助的，专属于您的回答。</target>
       </trans-unit>
       <trans-unit id="6860" resname="Only images are allowed" restype="string" datatype="javascript">
         <source>Only images are allowed</source>
@@ -34803,7 +34803,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6862" resname="Sharing this basic information lets doctors give you more helpful, personalized answers." restype="string" datatype="javascript">
         <source>Sharing this basic information lets doctors give you more helpful, personalized answers.</source>
-        <target>分享这些基本信息可让医生为您提供更有用的个性化回答。</target>
+        <target>分享这些基本信息可让医生为您提供更有帮助的个性化回答。</target>
       </trans-unit>
       <trans-unit id="6863" resname="Locating" restype="string" datatype="javascript">
         <source>Locating</source>
@@ -34835,15 +34835,15 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6870" resname="Start a conversation with a doctor. During your consult, you&apos;ll get access to advice, prescriptions and reminders." restype="string" datatype="javascript">
         <source>Start a conversation with a doctor. During your consult, you&apos;ll get access to advice, prescriptions and reminders.</source>
-        <target>与一位医生开始会话。在咨询期间，您将获得咨询，处方和提醒。</target>
+        <target>与一名医生开始会话。在咨询期间，您将获得咨询，处方和提醒。</target>
       </trans-unit>
       <trans-unit id="6871" resname="Dr. {last_name} is available for you. Would you like to video chat or send a secure message for advice, prescriptions, or reminders?" restype="string" datatype="javascript">
         <source>Dr. {last_name} is available for you. Would you like to video chat or send a secure message for advice, prescriptions, or reminders?</source>
-        <target>医生{last_name} 现在可以为您服务。您想通过视频聊天还是发送安全信息获得建议，处方或提醒。</target>
+        <target>医生{last_name} 在线为您服务。您想通过视频聊天还是发送安全信息获得建议，处方或提醒。</target>
       </trans-unit>
       <trans-unit id="6872" resname="Your doctors are available for you." restype="string" datatype="javascript">
         <source>Your doctors are available for you.</source>
-        <target>您的医生现在可以为您服务。</target>
+        <target>您的医生在线为您服务。</target>
       </trans-unit>
     </body>
   </file>
@@ -34891,11 +34891,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="6881" resname="{n} doctor available for you now" restype="string" datatype="javascript">
         <source>{n} doctor available for you now</source>
-        <target>{n}名医生现在可以为您服务</target>
+        <target>{n}名医生在线为您服务</target>
       </trans-unit>
       <trans-unit id="6882" resname="{n} doctors available for you now" restype="string" datatype="javascript">
         <source>{n} doctors available for you now</source>
-        <target>{n}名医生现在可以为您服务</target>
+        <target>{n}名医生在线为您服务</target>
       </trans-unit>
     </body>
   </file>
@@ -35067,7 +35067,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6915" resname="We&apos;re sorry. Another doctor has already claimed this consult." restype="string" datatype="javascript">
         <source>We&apos;re sorry. Another doctor has already claimed this consult.</source>
-        <target>我们非常抱歉另一个医生准备认领这个咨询</target>
+        <target>我们非常抱歉另一名医生准备认领这个咨询</target>
       </trans-unit>
       <trans-unit id="6916" resname="Five minutes left to respond" restype="string" datatype="javascript">
         <source>Five minutes left to respond</source>
@@ -35075,7 +35075,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6917" resname="Please respond to the patient in the next five minutes. After that time, we will route this consult to another doctor." restype="string" datatype="javascript">
         <source>Please respond to the patient in the next five minutes. After that time, we will route this consult to another doctor.</source>
-        <target>请在未来的五分钟内回复这个患者之后，我们将这个咨询转交给另一个医生。</target>
+        <target>请在未来的五分钟内回复这个患者之后，我们将这个咨询转交给另一名医生。</target>
       </trans-unit>
       <trans-unit id="6918" resname="Answer time expired" restype="string" datatype="javascript">
         <source>Answer time expired</source>
@@ -35403,7 +35403,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6980" resname="We&apos;ll highlight this doctor&apos;s insights for you on your feed." restype="string" datatype="javascript">
         <source>We&apos;ll highlight this doctor&apos;s insights for you on your feed.</source>
-        <target>我们将在您的消息来源处突出这个医生的见解。</target>
+        <target>我们将在您的主页突出这名医生的见解。</target>
       </trans-unit>
       <trans-unit id="6981" resname="Existing Consult" restype="string" datatype="javascript">
         <source>Existing Consult</source>
@@ -35411,7 +35411,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6982" resname="You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information." restype="string" datatype="javascript">
         <source>You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information.</source>
-        <target>您正在与一位医生进行咨询并且还没有完成。您可以添加信息到这次咨询中并分享更多的信息。</target>
+        <target>您正在与一名医生进行咨询并且还没有完成。您可以添加信息到这次咨询中并分享更多的信息。</target>
       </trans-unit>
       <trans-unit id="6983" resname="To privately video chat with {doctor_name} and receive your consult notes, please share your email:" restype="string" datatype="javascript">
         <source>To privately video chat with {doctor_name} and receive your consult notes, please share your email:</source>
@@ -35487,7 +35487,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6999" resname="The doctor has ended the session and provided you with a summary report and treatment plan." restype="string" datatype="javascript">
         <source>The doctor has ended the session and provided you with a summary report and treatment plan.</source>
-        <target>这位医生已结束会话，并为您提供了总结报告和治疗计划。</target>
+        <target>这名医生已结束会话，并为您提供了总结报告和治疗计划。</target>
       </trans-unit>
       <trans-unit id="7000" resname="The doctor&apos;s summary note will be sent to you shortly!" restype="string" datatype="javascript">
         <source>The doctor&apos;s summary note will be sent to you shortly!</source>
@@ -35603,11 +35603,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="7023" resname="What treatments or procedures have you had?" restype="string" datatype="javascript">
         <source>What treatments or procedures have you had?</source>
-        <target>您有过什么治疗与手术吗？</target>
+        <target>您有过什么治疗与临床操作吗？</target>
       </trans-unit>
       <trans-unit id="7024" resname="Update treatment or procedure" restype="string" datatype="javascript">
         <source>Update treatment or procedure</source>
-        <target>更新治疗或手术</target>
+        <target>更新治疗或临床操作</target>
       </trans-unit>
     </body>
   </file>
@@ -35763,7 +35763,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7062" resname=" More personalized doctor insights » " restype="string" datatype="javascript">
         <source>More personalized doctor insights »</source>
-        <target>更多个性化的医生见解 »</target>
+        <target>更多专属于您的医生见解 »</target>
       </trans-unit>
       <trans-unit id="7063" resname="We&apos;ve sent your request to connect to" restype="string" datatype="javascript">
         <source>We&apos;ve sent your request to connect to</source>
@@ -35976,7 +35976,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7107" resname="Enjoy the benefits for Prime!" restype="string" datatype="javascript">
         <source>Enjoy the benefits for Prime!</source>
-        <target>享受Prime的福利</target>
+        <target>享受Prime的福利！</target>
       </trans-unit>
       <trans-unit id="7108" resname="We guarantee you&apos;ll be satisfied with access to our caring doctors whenever you need them. We value you as a Prime member and are committed to your health and happiness :&#41;" restype="string" datatype="javascript">
         <source>We guarantee you&apos;ll be satisfied with access to our caring doctors whenever you need them. We value you as a Prime member and are committed to your health and happiness :&#41;</source>
@@ -36032,15 +36032,15 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="7117" resname=" + Get help from a doctor now ›" restype="string" datatype="javascript">
         <source>+ Get help from a doctor now ›</source>
-        <target>+ 现在得到一位医生帮助 &gt;</target>
+        <target>+ 现在得到一名医生帮助 &gt;</target>
       </trans-unit>
       <trans-unit id="7118" resname=" - Get help from a doctor now ›" restype="string" datatype="javascript">
         <source>- Get help from a doctor now ›</source>
-        <target>- 现在得到一位医生帮助 &gt;</target>
+        <target>- 现在得到一名医生帮助 &gt;</target>
       </trans-unit>
       <trans-unit id="7119" resname="Get help from a doctor now ›" restype="string" datatype="javascript">
         <source>Get help from a doctor now ›</source>
-        <target>现在得到一位医生帮助 &gt;</target>
+        <target>现在得到一名医生帮助 &gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -36056,7 +36056,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7122" resname="Your question will be sent as a Prime private consult to a primary care doctor, who will be able to view your heath profile to provide better, more personalized advice." restype="string" datatype="javascript">
         <source>Your question will be sent as a Prime private consult to a primary care doctor, who will be able to view your heath profile to provide better, more personalized advice.</source>
-        <target>您的问题将作为Prime私人咨询发送给一位普通门诊医生，他们将查看您的健康资料，以提供更好，更个性化的建议。</target>
+        <target>您的问题将作为Prime私人咨询发送给一位普通门诊医生，他们将查看您的健康资料，以提供更好，更专属于您的建议。</target>
       </trans-unit>
       <trans-unit id="7123" resname="Please enter 3 or more words" restype="string" datatype="javascript">
         <source>Please enter 3 or more words</source>
@@ -36246,7 +36246,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       <trans-unit id="7165" resname="Send your question to receive one or more information text answers \           within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
         <source>Send your question to receive one or more information text answers \
           within a day from our network of {n} doctors across 137 specialties.</source>
-        <target>发送您的问题，在一天之内收到来自我们由涵盖137个专科{n}名医生组成的网络的一个或多个教育性文本回答</target>
+        <target>发送您的问题，在一天之内收到来自我们由涵盖137个专科{n}名医生组成的网络的一个或多个具有教育意义的文本回答</target>
       </trans-unit>
       <trans-unit id="7166" resname="Send a question or talk to a doctor?" restype="string" datatype="javascript">
         <source>Send a question or talk to a doctor?</source>
@@ -36254,7 +36254,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7167" resname="Send your question to receive one or more information text answers within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
         <source>Send your question to receive one or more information text answers within a day from our network of {n} doctors across 137 specialties.</source>
-        <target>发送您的问题，在一天之内收到来自我们由涵盖137个专科{n}名医生组成的网络的一个或多个教育性文本回答</target>
+        <target>发送您的问题，在一天之内收到来自我们由涵盖137个专科{n}名医生组成的网络的一个或多个具有教育意义的文本回答</target>
       </trans-unit>
       <trans-unit id="7168" resname="Talk to a doctor in a private consult if you want to:" restype="string" datatype="javascript">
         <source>Talk to a doctor in a private consult if you want to:</source>
@@ -36484,11 +36484,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7213" resname="New Prime Inbox Consult..." restype="string" datatype="javascript">
         <source>New Prime Inbox Consult...</source>
-        <target>新的Prime收件箱咨询...</target>
+        <target>新的Prime查阅收件箱...</target>
       </trans-unit>
       <trans-unit id="7214" resname="New Second Opinion Inbox Consult..." restype="string" datatype="javascript">
         <source>New Second Opinion Inbox Consult...</source>
-        <target>新的第二意见收件箱咨询…</target>
+        <target>新的第二意见查阅收件箱…</target>
       </trans-unit>
       <trans-unit id="7215" resname="New Introductory Inbox Consult..." restype="string" datatype="javascript">
         <source>New Introductory Inbox Consult...</source>
@@ -36626,7 +36626,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7240" resname="Hi, I&apos;m using HealthTap for free to get personalized health information and answers to my questions from real doctors. You should check it out! http://healthtap.com" restype="string" datatype="javascript">
         <source>Hi, I&apos;m using HealthTap for free to get personalized health information and answers to my questions from real doctors. You should check it out! http://healthtap.com</source>
-        <target>您好，我使用HealthTap 可以从真正的医生那里免费获得个性化的健康信息和对我的问题的回答。您应该点击这里查看详情！ http://healthtap.com</target>
+        <target>您好，我使用HealthTap 可以从真正的医生那里免费获得专属于您的健康信息和对我的问题的回答。您应该点击这里查看详情！ http://healthtap.com</target>
       </trans-unit>
     </body>
   </file>
