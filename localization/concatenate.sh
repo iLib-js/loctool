@@ -7,5 +7,6 @@ ls lockit*/postprocessed/*/${project}*
 
 	echo 
 	cat $(ls lockit*/postprocessed/*/${project}*) | awk -f concatenate.awk > current/${project}.xliff
+	xmllint --pretty 0 -noout current/${project}.xliff
 done
 

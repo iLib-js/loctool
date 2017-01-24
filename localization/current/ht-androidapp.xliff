@@ -4706,7 +4706,7 @@
         <source>Simple step-by-step instructions guide you through everyday first aid scenarios.
         Fully integrated with 9-1-1 so you can call EMS from the app at any time.
         Videos and animations make learning first aid fun and easy.</source>
-        <target>Las instrucciones simples paso a paso te guían a través de casos cotidianos de primeros auxilios. 
+        <target>Las instrucciones simples paso a paso te guían a través de casos cotidianos de primeros auxilios.
         Completamente integrado con 9-1-1 para que puedas llamar a SEM desde la aplicación en cualquier momento.
         Los videos y las animaciones hacen que el aprendizaje de primeros auxilios sea divertido y fácil.</target>
       </trans-unit>
@@ -27951,7 +27951,6 @@
       <trans-unit id="3087" resname="countries" restype="array" datatype="x-android-resource" extype="198">
         <source>United Kingdom</source>
         <target>英国</target>
-      </trans-unit>
       </trans-unit>
       <trans-unit id="3089" resname="countries" restype="array" datatype="x-android-resource" extype="200">
         <source>Uruguay</source>

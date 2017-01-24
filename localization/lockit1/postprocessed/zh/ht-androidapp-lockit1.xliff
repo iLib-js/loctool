@@ -13518,7 +13518,6 @@
         <source>United Kingdom</source>
         <target>英国</target>
       </trans-unit>
-      </trans-unit>
       <trans-unit id="3089" resname="countries" restype="array" datatype="x-android-resource" extype="200">
         <source>Uruguay</source>
         <target>乌拉圭</target>
