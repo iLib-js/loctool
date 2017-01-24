@@ -4258,7 +4258,7 @@
       </trans-unit>
       <trans-unit id="2096" resname="{name} is typing notes for you" restype="string" datatype="javascript">
         <source>{name} is typing notes for you</source>
-        <target>{doctor_name}正在为您输入注意事项</target>
+        <target>{name}正在为您输入注意事项</target>
       </trans-unit>
       <trans-unit id="2097" resname="&lt;b&gt;Read&lt;/b&gt; " restype="string" datatype="javascript">
         <source>&lt;b&gt;Read&lt;/b&gt;</source>
