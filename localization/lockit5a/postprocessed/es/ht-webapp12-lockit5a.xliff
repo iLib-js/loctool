@@ -25609,11 +25609,11 @@
     <body>
       <trans-unit id="11225" resname="r207049759" restype="string" datatype="x-haml">
         <source>MALE</source>
-        <target>MASCULINO</target>
+        <target state="accepted">HOMBRE</target>
       </trans-unit>
       <trans-unit id="11226" resname="r313193033" restype="string" datatype="x-haml">
         <source>FEMALE</source>
-        <target>FEMENINO</target>
+        <target state="accepted">MUJER</target>
       </trans-unit>
       <trans-unit id="11227" resname="r961816810" restype="string" datatype="x-haml">
         <source>YEARS</source>
