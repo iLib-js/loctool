@@ -1529,7 +1529,7 @@
         <target>您有几个孩子</target>
       </trans-unit>
       <trans-unit id="288" resname="self_questions" restype="array" datatype="x-android-resource" extype="5">
-        <source>When were your last menstrual period?</source>
+        <source>When was your last menstrual period?</source>
         <target>您上一次生理周期是什么时候？</target>
       </trans-unit>
       <trans-unit id="289" resname="bmi" restype="array" datatype="x-android-resource" extype="0">
