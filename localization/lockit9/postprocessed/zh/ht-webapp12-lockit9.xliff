@@ -988,7 +988,7 @@
       </trans-unit>
       <trans-unit id="201" resname="r487837888" restype="string" datatype="ruby">
         <source>I&apos;d like to personally invite you to %{open_link}be featured for free on HealthTap,%{close_link} where you can gain recognition for your expertise and help %{actor} and all your medical school colleagues win the competition.</source>
-        <target state="accepted">我想亲自邀请您在HealthTap上参加%{open_link}免费专题%{close_link}您可以获得对您专业知识的认可并帮助%{@actor}所有的医学院同事赢得竞赛。</target>
+        <target state="accepted">我想亲自邀请您在HealthTap上参加%{open_link}免费专题%{close_link}您可以获得对您专业知识的认可并帮助%{actor}所有的医学院同事赢得竞赛。</target>
       </trans-unit>
     </body>
   </file>
@@ -2112,7 +2112,7 @@
       </trans-unit>
       <trans-unit id="456" resname="r1028567604" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; &#40;%{specialty}&#41; had something to add to &lt;b&gt;%{other_person}&apos;s&lt;/b&gt; answer to your question &lt;b&gt;&quot;%{q_text} &quot;&lt;/b&gt; &lt;span style=&apos;color:&#35;039;&apos;&gt;See the comment.&lt;/span&gt;</source>
-        <target state="translated">&lt;b&gt;%{other_person}&lt;/b&gt;, &#40;%{specialty}&#41;添加评论到&lt;b&gt;%{other_person}&apos;s&lt;/b&gt;对您问题&lt;b&gt;&quot;%{q_text}&quot;的回答。&lt;span style=&apos;color:&#35;039;&apos;&gt;查看评论&lt;/span&gt;</target>
+        <target state="translated">&lt;b&gt;%{person}&lt;/b&gt;, &#40;%{specialty}&#41;添加评论到&lt;b&gt;%{other_person}&apos;s&lt;/b&gt;对您问题&lt;b&gt;&quot;%{q_text}&quot;的回答。&lt;span style=&apos;color:&#35;039;&apos;&gt;查看评论&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="457" resname="r216002396" restype="string" datatype="ruby">
         <source>&lt;div style=&quot;color:&#35;d8ac45;padding-bottom:5px&quot;&gt;&lt;b&gt;Congrats! You have earned a medal!&lt;/b&gt;&lt;/div&gt; &lt;div style=&apos;padding-bottom:5px&apos;&gt;&lt;b&gt;%{name}:&lt;/b&gt; &lt;i style=&apos;font-style: italic;&apos;&gt;%{trigger}&lt;/i&gt;&lt;/d][Earn more medals to gain recognition for your expertise and compassion.&lt;br&gt;&lt;b&gt;Unlock the %{next_name} medal next. &lt;a href=&apos;/&#35;expert/home&apos;&gt;Learn How &amp;raquo;&lt;/a&gt;&lt;/b&gt;&lt;/div&gt;</source>
@@ -2332,11 +2332,11 @@
       </trans-unit>
       <trans-unit id="510" resname="r728146337" restype="string" datatype="ruby">
         <source>At HealthTap, top doctors review and rank health apps as part of AppRx so you can find the right ones for you. See what doctors are saying about &quot;%{app_name}&quot;, an %{app_type} app on HealthTap!</source>
-        <target state="translated">在HealthTap，顶级医生审查和排名健康应用程序作为AppRX医生评测的一部分，所以您可以找到适合您的。 查看医生如何评价&quot;%{app_name}&quot;,在HealthTap上的“%{app_name}”应用程序！</target>
+        <target state="translated">在HealthTap，顶级医生审查和排名健康应用程序作为AppRX医生评测的一部分，所以您可以找到适合您的。 查看医生如何评价&quot;%{app_name}&quot;,在HealthTap上的“%{app_type}”应用程序！</target>
       </trans-unit>
       <trans-unit id="511" resname="r931929129" restype="string" datatype="ruby">
         <source>See what doctors are saying about &quot;%{app_name}&quot;, an %{app_type} app on @HealthTap &#35;AppRx!</source>
-        <target state="translated"> 查看医生如何评价&quot;%{app_name}&quot;,在HealthTap &#35;AppRx上的“%{app_name}”应用程序！</target>
+        <target state="translated"> 查看医生如何评价&quot;%{app_name}&quot;,在HealthTap &#35;AppRx上的“%{app_type}”应用程序！</target>
       </trans-unit>
       <trans-unit id="512" resname="r414539705" restype="string" datatype="ruby">
         <source>Join me on HealthTap - free answers from %{static_doctors_count} top doctors, and more!</source>
