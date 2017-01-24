@@ -42230,7 +42230,7 @@
       </trans-unit>
       <trans-unit id="9786" resname="{name} is typing notes for you" restype="string" datatype="javascript">
         <source>{name} is typing notes for you</source>
-        <target state="translated">{doctor_name}正在为您输入注意事项</target>
+        <target state="translated">{name}正在为您输入注意事项</target>
       </trans-unit>
       <trans-unit id="9787" resname="&lt;b&gt;Read&lt;/b&gt; " restype="string" datatype="javascript">
         <source>&lt;b&gt;Read&lt;/b&gt;</source>
