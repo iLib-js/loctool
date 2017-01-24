@@ -1298,7 +1298,7 @@ module.exports = {
     },
 
     testYamlParseOutputFile: function(test) {
-        test.expect(5);
+        test.expect(4);
 
         var p = new WebProject({
             sourceLocale: "en-US",
@@ -1323,8 +1323,8 @@ module.exports = {
         y.parseOutputFile(outputFileContents);
         var set = y.getTranslationSet();
         test.ok(set);
-        test.equal(set.getBySource('d', 'title@do_not_read_me'), undefined);
-        var r = set.getBySource('e', 'title@do_not_read_me');
+        //test.equal(set.getBySource('d', 'title@do_not_read_me'), undefined);
+        var r = set.getBySource('d', 'title@do_not_read_me');
         test.ok(r);
         test.equal(r.getSource(), 'e');
         test.done();
