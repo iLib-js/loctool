@@ -1108,11 +1108,11 @@
       </trans-unit>
       <trans-unit id="242" resname="Male" restype="string" datatype="html">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
       </trans-unit>
       <trans-unit id="243" resname="Female" restype="string" datatype="html">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
       </trans-unit>
       <trans-unit id="244" resname="BIRTH DATE" restype="string" datatype="html">
         <source>BIRTH DATE</source>
@@ -1464,11 +1464,11 @@
     <body>
       <trans-unit id="320" resname="female" restype="string" datatype="html">
         <source>female</source>
-        <target>femenino</target>
+        <target state="accepted">mujer</target>
       </trans-unit>
       <trans-unit id="321" resname="male" restype="string" datatype="html">
         <source>male</source>
-        <target>masculino</target>
+        <target state="accepted">hombre</target>
       </trans-unit>
       <trans-unit id="322" resname="&quot;&gt;" restype="string" datatype="html">
         <source>&quot;&gt;</source>
