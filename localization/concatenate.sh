@@ -1,4 +1,4 @@
-
+#!/bin/bash
 for project in ht-androidapp ht-iosapp ht-webapp12 feelgood-video-chats_lib
 do
 	echo Processing project $project ...
