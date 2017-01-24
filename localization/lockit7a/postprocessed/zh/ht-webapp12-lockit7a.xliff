@@ -2268,24 +2268,24 @@
   <file original="public/feelGood/templates/about_popup.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1137" resname="HealthTap has reinvented the way people all over the world take care of their health and well-being, connecting millions everywhere with the most trusted health information and doctors.   &lt;br&gt;  &lt;br&gt;  &lt;b&gt;Why choose us&lt;/b&gt;  &lt;br&gt;  With over 2.6 billion answers served from more than 100 specialties, our experts are able to provide the best medical advice for your question. We have the largest doctor network to provide answers, personalized advice, and care for any question.   &lt;br&gt;  &lt;br&gt;  &lt;b&gt;About our doctors&lt;/b&gt;  &lt;br&gt;  To become a member of HealthTap’s Medical Expert Network, doctors have to be U.S. board certified, pass a stringent qualification process, and undergo training on how to give helpful advice using our technology platform. We closely monitor user feedback to ensure that our doctors are providing the highest possible care." restype="string" datatype="html">
-        <source>HealthTap has reinvented the way people all over the world take care of their health and well-being, connecting millions everywhere with the most trusted health information and doctors. 
+        <source>HealthTap has reinvented the way people all over the world take care of their health and well-being, connecting millions everywhere with the most trusted health information and doctors.
   &lt;br&gt;
   &lt;br&gt;
   &lt;b&gt;Why choose us&lt;/b&gt;
   &lt;br&gt;
-  With over 2.6 billion answers served from more than 100 specialties, our experts are able to provide the best medical advice for your question. We have the largest doctor network to provide answers, personalized advice, and care for any question. 
+  With over 2.6 billion answers served from more than 100 specialties, our experts are able to provide the best medical advice for your question. We have the largest doctor network to provide answers, personalized advice, and care for any question.
 
   &lt;br&gt;
   &lt;br&gt;
   &lt;b&gt;About our doctors&lt;/b&gt;
   &lt;br&gt;
   To become a member of HealthTap’s Medical Expert Network, doctors have to be U.S. board certified, pass a stringent qualification process, and undergo training on how to give helpful advice using our technology platform. We closely monitor user feedback to ensure that our doctors are providing the highest possible care.</source>
-        <target state="translated">HealthTap重塑了世界各地的人们照顾他们的健康和生活的方式，将它们和数百万无处不在的最可信的健康信息和医生相连接起来。 
+        <target state="translated">HealthTap重塑了世界各地的人们照顾他们的健康和生活的方式，将它们和数百万无处不在的最可信的健康信息和医生相连接起来。
   &lt;br&gt;
   &lt;br&gt;
   &lt;b&gt;为什么选择我们&lt;/b&gt;
   &lt;br&gt;
-  我们的专家团队能为您提供最优质的医疗咨询服务，超过2.6亿的回答来自100多个专科我们有最大的医生网络提供回答，个性化的建议和关于护理的任何问题。 
+  我们的专家团队能为您提供最优质的医疗咨询服务，超过2.6亿的回答来自100多个专科我们有最大的医生网络提供回答，个性化的建议和关于护理的任何问题。
 
   &lt;br&gt;
   &lt;br&gt;
@@ -2317,10 +2317,10 @@
   <file original="public/feelGood/templates/apprx_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1140" resname="Each year HealthTap&apos;s doctors recommend the best Health &amp; Medical apps across 30 categories.     Vote for your favorite apps and boost their visibility to doctors to get more recommendations from them,    which help customers find the best app for their health!" restype="string" datatype="html">
-        <source>Each year HealthTap&apos;s doctors recommend the best Health &amp; Medical apps across 30 categories. 
+        <source>Each year HealthTap&apos;s doctors recommend the best Health &amp; Medical apps across 30 categories.
     Vote for your favorite apps and boost their visibility to doctors to get more recommendations from them,
     which help customers find the best app for their health!</source>
-        <target state="translated">每年HealthTap的医生从30个类别中推荐最好的健康医疗应用程序。 
+        <target state="translated">每年HealthTap的医生从30个类别中推荐最好的健康医疗应用程序。
     为您最喜欢的应用程序投票，并提高他们的可见性，医生获得更多的推荐，从而帮助客户找到关于健康的最好的应用程序！</target>
       </trans-unit>
     </body>
@@ -2394,7 +2394,7 @@
   <file original="public/feelGood/templates/benefits_column.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1147" resname="Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.           &lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
-        <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation. 
+        <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.
           &lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target state="translated">新的治疗处方和补充药（不包括受管制的药物），可以发送到您当地的药店，根据您的在线咨询，医生给出适当的指示和治疗方式。&lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;了解&amp;nbsp;更多&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -2646,9 +2646,9 @@
   <file original="public/feelGood/templates/legal_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1162" resname="When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;.   You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for   virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay   seeking or receiving care in person as needed. &lt;br&gt;See &lt;a href=&quot;/terms/additional_info&quot; target=&quot;_blank&quot;&gt;Additional Information&lt;/a&gt;" restype="string" datatype="html">
-        <source>When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;. 
-  You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for 
-  virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay 
+        <source>When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;.
+  You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for
+  virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay
   seeking or receiving care in person as needed. &lt;br&gt;See &lt;a href=&quot;/terms/additional_info&quot; target=&quot;_blank&quot;&gt;Additional Information&lt;/a&gt;</source>
         <target state="translated">&lt;br&gt;查看 &lt;a href=&quot;/terms/additional_info&quot; target=&quot;_blank&quot;&gt;附加信息&lt;/a&gt;</target>
       </trans-unit>
@@ -2890,7 +2890,7 @@
       </trans-unit>
       <trans-unit id="1592" resname="{weight_lbs} lbs" restype="string" datatype="javascript">
         <source>{weight_lbs} lbs</source>
-        <target state="translated">{Weight_lbs} 磅</target>
+        <target state="translated">{weight_lbs} 磅</target>
       </trans-unit>
       <trans-unit id="1593" resname="{weight_kg} kg" restype="string" datatype="javascript">
         <source>{weight_kg} kg</source>
@@ -2907,10 +2907,10 @@
       </trans-unit>
       <trans-unit id="1179" resname="Doctor                                &lt;span class=&quot;instruction&quot;&gt;&#40;requires valid U.S. medical professional license&#41;&lt;/span&gt;" restype="string" datatype="html">
         <source>Doctor
-                
+
                 &lt;span class=&quot;instruction&quot;&gt;&#40;requires valid U.S. medical professional license&#41;&lt;/span&gt;</source>
         <target state="translated">医生
-                
+
                 &lt;span class=&quot;instruction&quot;&gt;&#40;需要有效的美国医疗专业执照&#41;&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="1180" resname="By signing up, you agree to our        &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Terms of Use&lt;/a&gt;        and        &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;" restype="string" datatype="html">
@@ -2934,11 +2934,11 @@
       <trans-unit id="1181" resname="Medical Student &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;          &lt;%= user_question.actor.name %&gt;        &lt;/a&gt;         asked:" restype="string" datatype="html">
         <source>Medical Student &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;
           &lt;%= user_question.actor.name %&gt;
-        &lt;/a&gt; 
+        &lt;/a&gt;
         asked:</source>
         <target state="translated">医学学生 &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;
           &lt;%= user_question.actor.name %&gt;
-        &lt;/a&gt; 
+        &lt;/a&gt;
         询问：</target>
       </trans-unit>
       <trans-unit id="2257" resname="Repeat any information from the member&apos;s profile that informs your answer. &lt;a class=&quot;learn_more_guidelines&quot;&gt;Learn more&lt;/a&gt;" restype="string" datatype="html">
@@ -3511,7 +3511,7 @@
   <file original="public/javascripts/templates/layers/IEDisclaimerPopup.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1236" resname="Or download our mobile apps for       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPhone&lt;/a&gt;,      &lt;a href=&quot;http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&quot;&gt;Android&lt;/a&gt;, and      &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPad&lt;/a&gt;" restype="string" datatype="html">
-        <source>Or download our mobile apps for 
+        <source>Or download our mobile apps for
       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPhone&lt;/a&gt;,
       &lt;a href=&quot;http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&quot;&gt;Android&lt;/a&gt;, and
       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPad&lt;/a&gt;</source>

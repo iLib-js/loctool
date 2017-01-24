@@ -42588,7 +42588,7 @@
     <body>
       <trans-unit id="9862" resname="Are you sure you want to cancel this appointment with {name} on {date} at {time}?" restype="string" datatype="javascript">
         <source>Are you sure you want to cancel this appointment with {name} on {date} at {time}?</source>
-        <target state="translated">¿Estás seguro que deseas cancelar esta cita con {doctor_name} el{date} a las {time}?</target>
+        <target state="translated">¿Estás seguro que deseas cancelar esta cita con {name} el{date} a las {time}?</target>
       </trans-unit>
       <trans-unit id="9863" resname=" As this appointment is less than 24 hours away, it cannot be refunded if cancelled now." restype="string" datatype="javascript">
         <source>As this appointment is less than 24 hours away, it cannot be refunded if cancelled now.</source>

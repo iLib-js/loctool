@@ -36646,7 +36646,7 @@
     <body>
       <trans-unit id="8634" resname="{weight_lbs} lbs" restype="string" datatype="javascript">
         <source>{weight_lbs} lbs</source>
-        <target state="translated">{Weight_lbs} 磅</target>
+        <target state="translated">{weight_lbs} 磅</target>
       </trans-unit>
       <trans-unit id="8635" resname="{weight_kg} kg" restype="string" datatype="javascript">
         <source>{weight_kg} kg</source>
@@ -41270,7 +41270,7 @@
       </trans-unit>
       <trans-unit id="9576" resname="When was the last time? &#40;year&#41;" restype="string" datatype="javascript">
         <source>When was the last time? &#40;year&#41;</source>
-        <target state="translated">最后一次是什么时候？&#40;year&#41;</target>
+        <target state="translated">最后一次是什么时候？&#40;哪一年&#41;</target>
       </trans-unit>
       <trans-unit id="9577" resname="Which vaccinations have you had?" restype="string" datatype="javascript">
         <source>Which vaccinations have you had?</source>
