@@ -396,7 +396,7 @@
     <body>
       <trans-unit id="1993" resname="r653185640" restype="string" datatype="ruby">
         <source>Chinese</source>
-        <target state="translated">汉语</target>
+        <target state="translated">中国/海外华人</target>
       </trans-unit>
     </body>
   </file>

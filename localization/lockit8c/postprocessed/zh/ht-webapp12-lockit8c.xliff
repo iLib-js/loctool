@@ -24601,7 +24601,7 @@
       </trans-unit>
       <trans-unit id="4841" resname="r653185640" restype="string" datatype="ruby">
         <source>Chinese</source>
-        <target state="translated">汉语</target>
+        <target state="translated">中国/海外华人</target>
       </trans-unit>
       <trans-unit id="4842" resname="r338273669" restype="string" datatype="ruby">
         <source>South East Asian</source>
