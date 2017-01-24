@@ -1108,11 +1108,11 @@
       </trans-unit>
       <trans-unit id="242" resname="Male" restype="string" datatype="html">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
       </trans-unit>
       <trans-unit id="243" resname="Female" restype="string" datatype="html">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
       </trans-unit>
       <trans-unit id="244" resname="BIRTH DATE" restype="string" datatype="html">
         <source>BIRTH DATE</source>
@@ -1464,11 +1464,11 @@
     <body>
       <trans-unit id="320" resname="female" restype="string" datatype="html">
         <source>female</source>
-        <target>femenino</target>
+        <target state="accepted">mujer</target>
       </trans-unit>
       <trans-unit id="321" resname="male" restype="string" datatype="html">
         <source>male</source>
-        <target>masculino</target>
+        <target state="accepted">hombre</target>
       </trans-unit>
       <trans-unit id="322" resname="&quot;&gt;" restype="string" datatype="html">
         <source>&quot;&gt;</source>
@@ -7857,14 +7857,6 @@
       <trans-unit id="1718" resname="ADD YOUR COMMENT" restype="string" datatype="html">
         <source>ADD YOUR COMMENT</source>
         <target>AGREGA TU COMENTARIO</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="public/mobile/app/js/templates/comments/comment.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="1719" resname="." restype="string" datatype="html">
-        <source>.</source>
-        <target>.</target>
       </trans-unit>
     </body>
   </file>
@@ -15889,10 +15881,6 @@
       <trans-unit id="3365" resname="PUBLICATIONS" restype="string" datatype="html">
         <source>PUBLICATIONS</source>
         <target>PUBLICACIONES</target>
-      </trans-unit>
-      <trans-unit id="3366" resname="." restype="string" datatype="html">
-        <source>.</source>
-        <target>.</target>
       </trans-unit>
       <trans-unit id="3367" resname="blog&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;additional links" restype="string" datatype="html">
         <source>blog&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;additional links</source>

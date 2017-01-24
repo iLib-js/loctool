@@ -2390,12 +2390,12 @@
       </trans-unit>
       <trans-unit id="445" resname="r781371042" restype="string" datatype="java">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
         <note annotates="source">This means the gender of a patient</note>
       </trans-unit>
       <trans-unit id="446" resname="r809623071" restype="string" datatype="java">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
         <note annotates="source">This means the gender of a patient</note>
       </trans-unit>
     </body>
@@ -4706,7 +4706,7 @@
         <source>Simple step-by-step instructions guide you through everyday first aid scenarios.
         Fully integrated with 9-1-1 so you can call EMS from the app at any time.
         Videos and animations make learning first aid fun and easy.</source>
-        <target>Las instrucciones simples paso a paso te guían a través de casos cotidianos de primeros auxilios. 
+        <target>Las instrucciones simples paso a paso te guían a través de casos cotidianos de primeros auxilios.
         Completamente integrado con 9-1-1 para que puedas llamar a SEM desde la aplicación en cualquier momento.
         Los videos y las animaciones hacen que el aprendizaje de primeros auxilios sea divertido y fácil.</target>
       </trans-unit>
@@ -5479,10 +5479,6 @@
       <trans-unit id="1099" resname="talk_to_doc_success_learnmore" restype="string" datatype="x-android-resource">
         <source>Learn more</source>
         <target>Aprender más</target>
-      </trans-unit>
-      <trans-unit id="1100" resname="period" restype="string" datatype="x-android-resource">
-        <source>.</source>
-        <target>.</target>
       </trans-unit>
       <trans-unit id="1101" resname="mr" restype="string" datatype="x-android-resource">
         <source>mr.</source>
@@ -7198,11 +7194,11 @@
       </trans-unit>
       <trans-unit id="1495" resname="male" restype="string" datatype="x-android-resource">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
       </trans-unit>
       <trans-unit id="1496" resname="female" restype="string" datatype="x-android-resource">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
       </trans-unit>
       <trans-unit id="1497" resname="collect_contact_header" restype="string" datatype="x-android-resource">
         <source>Contact Information</source>
@@ -8626,11 +8622,11 @@
       </trans-unit>
       <trans-unit id="1849" resname="insurance_form_male" restype="string" datatype="x-android-resource">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
       </trans-unit>
       <trans-unit id="1850" resname="insurance_form_female" restype="string" datatype="x-android-resource">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
       </trans-unit>
       <trans-unit id="1851" resname="insurance_form_gender_title" restype="string" datatype="x-android-resource">
         <source>Primary plan holder gender:</source>
@@ -9594,11 +9590,11 @@
       </trans-unit>
       <trans-unit id="2091" resname="text_Female" restype="string" datatype="x-android-resource">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
       </trans-unit>
       <trans-unit id="2092" resname="text_Male" restype="string" datatype="x-android-resource">
         <source>Male</source>
-        <target>Masculino</target>
+        <target state="accepted">Hombre</target>
       </trans-unit>
       <trans-unit id="2093" resname="text_Take_photo" restype="string" datatype="x-android-resource">
         <source>Take photo</source>
@@ -10837,7 +10833,7 @@
         <target>¿Cuántos hijos vivos tiene {first_name}?</target>
       </trans-unit>
       <trans-unit id="2399" resname="subaccount_questions" restype="array" datatype="x-android-resource" extype="5">
-        <source>When was {first_name} last menstrual period?</source>
+        <source>When was {first_name}&apos;s last menstrual period?</source>
         <target>¿Cuándo fue el último periodo menstrual de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2400" resname="self_questions" restype="array" datatype="x-android-resource" extype="0">
@@ -10861,8 +10857,8 @@
         <target>¿Cuántos hijos vivos tienes?</target>
       </trans-unit>
       <trans-unit id="2405" resname="self_questions" restype="array" datatype="x-android-resource" extype="5">
-        <source>When was {first_name}\&apos;s last menstrual period?</source>
-        <target>¿Cuándo fue el último periodo menstrual de {first_name}?</target>
+        <source>When was your last menstrual period?</source>
+        <target>¿Cuándo fue el último periodo menstrual de usted?</target>
       </trans-unit>
       <trans-unit id="2406" resname="bmi" restype="array" datatype="x-android-resource" extype="0">
         <source>Severely Underweight</source>

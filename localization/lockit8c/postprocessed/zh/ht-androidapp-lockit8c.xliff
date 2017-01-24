@@ -1667,7 +1667,7 @@
       </trans-unit>
       <trans-unit id="438" resname="r113489780" restype="string" datatype="x-android-resource">
         <source>When was the last time? &#40;year&#41;</source>
-        <target state="translated">最后一次是什么时候？&#40;year&#41;</target>
+        <target state="translated">最后一次是什么时候？&#40;哪一年&#41;</target>
         <note annotates="source">When&#40;which year&#41; was the last time that the patient got a specific vaccination?</note>
       </trans-unit>
       <trans-unit id="439" resname="r791973709" restype="string" datatype="x-android-resource">

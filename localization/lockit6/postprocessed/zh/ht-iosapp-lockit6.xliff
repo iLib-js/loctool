@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="You&apos;re now following %@! " restype="string" datatype="x-objective-c">
         <source>You&apos;re now following %@!</source>
-        <target>您正在关注%@！</target>
+        <target>您已关注%@！</target>
       </trans-unit>
     </body>
   </file>
@@ -28,7 +28,7 @@
     <body>
       <trans-unit id="4" resname="Some thing good here ... " restype="string" datatype="x-objective-c">
         <source>Some thing good here ...</source>
-        <target>这里有一些美好的东西…</target>
+        <target>这里有一些好东西……</target>
       </trans-unit>
       <trans-unit id="5" resname="Recommend and vote on " restype="string" datatype="x-objective-c">
         <source>Recommend and vote on</source>
@@ -36,7 +36,7 @@
       </trans-unit>
       <trans-unit id="6" resname=" expertise" restype="string" datatype="x-objective-c">
         <source>expertise</source>
-        <target>专家意见</target>
+        <target>专业知识</target>
       </trans-unit>
     </body>
   </file>
@@ -44,7 +44,7 @@
     <body>
       <trans-unit id="7" resname="Get answers " restype="string" datatype="x-objective-c">
         <source>Get answers</source>
-        <target>获得解答</target>
+        <target>获得回答</target>
       </trans-unit>
     </body>
   </file>
@@ -52,7 +52,7 @@
     <body>
       <trans-unit id="8" resname=" Are you sure you&apos;d like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor." restype="string" datatype="x-objective-c">
         <source>Are you sure you&apos;d like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor.</source>
-        <target>您确定您希望从您的账户删除此信用卡吗？下次与医生交谈时您需要提供一份。</target>
+        <target>您确定您要将这张信用卡与账户取消关联吗？下次与医生交谈时您需要提供一份。</target>
       </trans-unit>
       <trans-unit id="9" resname="Your display language was successfully updated to %@." restype="string" datatype="x-objective-c">
         <source>Your display language was successfully updated to %@.</source>
@@ -76,7 +76,7 @@
     <body>
       <trans-unit id="12" resname="Search name, specialty or topic  " restype="string" datatype="x-objective-c">
         <source>Search name, specialty or topic</source>
-        <target>搜索名称，专科或话题</target>
+        <target>搜索姓名、专科或话题</target>
       </trans-unit>
     </body>
   </file>
@@ -121,7 +121,7 @@
       </trans-unit>
       <trans-unit id="19" resname="The doctor is now always one tap away — to give you ultimate peace of mind. Request consult. " restype="string" datatype="x-objective-c">
         <source>The doctor is now always one tap away — to give you ultimate peace of mind. Request consult.</source>
-        <target>只需轻轻点击就可以与医生联系——给您最终的安心。请求参考。</target>
+        <target>只需轻轻点击就可以与医生联系——给您最终的安心。请求咨询。</target>
       </trans-unit>
     </body>
   </file>
@@ -169,7 +169,7 @@
       </trans-unit>
       <trans-unit id="29" resname="Add more details and get an immediate doctor answer &#40;text or video&#41; " restype="string" datatype="x-objective-c">
         <source>Add more details and get an immediate doctor answer &#40;text or video&#41;</source>
-        <target>添加更多详细信息并立即获得医生回答（文字或视频）</target>
+        <target>添加更多详细信息并立即获得医生回答（文本或视频）</target>
       </trans-unit>
     </body>
   </file>
@@ -177,7 +177,7 @@
     <body>
       <trans-unit id="30" resname=" consults with top doctors" restype="string" datatype="x-objective-c">
         <source>consults with top doctors</source>
-        <target>与顶级医生咨询</target>
+        <target>向顶级医生咨询</target>
       </trans-unit>
       <trans-unit id="31" resname=" anywhere, anytime" restype="string" datatype="x-objective-c">
         <source>anywhere, anytime</source>
@@ -225,7 +225,7 @@
       </trans-unit>
       <trans-unit id="40" resname="Language speak" restype="string" datatype="x-objective-c">
         <source>Language speak</source>
-        <target>说的语言</target>
+        <target>所说语言</target>
       </trans-unit>
       <trans-unit id="41" resname="Language read/write" restype="string" datatype="x-objective-c">
         <source>Language read/write</source>
@@ -237,7 +237,7 @@
     <body>
       <trans-unit id="42" resname="Search name, topic, or specialty  " restype="string" datatype="x-objective-c">
         <source>Search name, topic, or specialty</source>
-        <target>搜索名称，话题或专科</target>
+        <target>搜索姓名、话题或专科</target>
         <note annotates="source">Placeholder for expert search</note>
       </trans-unit>
     </body>
@@ -246,7 +246,7 @@
     <body>
       <trans-unit id="43" resname="Search name, specialty, or topic " restype="string" datatype="x-objective-c">
         <source>Search name, specialty, or topic</source>
-        <target>搜索名称，专科或话题</target>
+        <target>搜索姓名、专科或话题</target>
       </trans-unit>
     </body>
   </file>
@@ -294,7 +294,7 @@
     <body>
       <trans-unit id="51" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>搜索回答，话题，专家</target>
+        <target>搜索回答、话题、专家</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
     </body>
@@ -303,7 +303,7 @@
     <body>
       <trans-unit id="52" resname="There is no account with this email. " restype="string" datatype="x-objective-c">
         <source>There is no account with this email.</source>
-        <target>此邮箱没有帐户！</target>
+        <target>不存在和此邮箱关联的账户。</target>
       </trans-unit>
       <trans-unit id="53" resname="Your account is deactivated. To re-activate, send a request to " restype="string" datatype="x-objective-c">
         <source>Your account is deactivated. To re-activate, send a request to</source>
@@ -319,7 +319,7 @@
       </trans-unit>
       <trans-unit id="55" resname="The doctor waited for you, but had to move on to helping other patients. Would you like to retry connecting?" restype="string" datatype="x-objective-c">
         <source>The doctor waited for you, but had to move on to helping other patients. Would you like to retry connecting?</source>
-        <target>很抱歉医生不得不去帮主其他患者，但仍然等着您您希望重新连接吗？</target>
+        <target>医生刚才仍然在等候您，但现在已前去帮助其他患者。您希望重新尝试连接吗？</target>
       </trans-unit>
     </body>
   </file>
@@ -327,7 +327,7 @@
     <body>
       <trans-unit id="56" resname="Find a topic &#40;e.g.: Lose weight&#41;   " restype="string" datatype="x-objective-c">
         <source>Find a topic &#40;e.g.: Lose weight&#41;</source>
-        <target>找一个话题（例如：减肥）</target>
+        <target>查找话题（例如：减肥）</target>
       </trans-unit>
     </body>
   </file>
@@ -363,7 +363,7 @@
     <body>
       <trans-unit id="61" resname="Would you like to invite " restype="string" datatype="x-objective-c">
         <source>Would you like to invite</source>
-        <target>您希望邀请吗？</target>
+        <target>您希望邀请</target>
       </trans-unit>
     </body>
   </file>
@@ -387,7 +387,7 @@
       </trans-unit>
       <trans-unit id="65" resname="Okay :|" restype="string" datatype="x-objective-c">
         <source>Okay :|</source>
-        <target>好的 :|</target>
+        <target>可以 :|</target>
       </trans-unit>
       <trans-unit id="66" resname="Not good :&#40;" restype="string" datatype="x-objective-c">
         <source>Not good :&#40;</source>
@@ -425,7 +425,7 @@
     <body>
       <trans-unit id="71" resname="agreed with %@&apos;s tip on %@" restype="string" datatype="x-objective-c">
         <source>agreed with %@&apos;s tip on %@</source>
-        <target>同意%@的在%@的小贴士</target>
+        <target>同意%@关于%@的小贴士</target>
       </trans-unit>
     </body>
   </file>
@@ -462,7 +462,7 @@
       </trans-unit>
       <trans-unit id="77" resname="I’m Dr. A.I., and I work with %@ doctors to help understand your symptoms and show you the best path to feeling good. Let’s get started!" restype="string" datatype="x-objective-c">
         <source>I’m Dr. A.I., and I work with %@ doctors to help understand your symptoms and show you the best path to feeling good. Let’s get started!</source>
-        <target>我是A.I.医生，我与%@医生合作帮助了解您的症状并告诉您感觉良好的最佳途径。让我们开始吧！</target>
+        <target>我是A.I.医生，我与%@医生合作帮助了解您的症状并告诉您feel good的最佳途径。让我们开始吧！</target>
         <note annotates="source">triage tutorial subheader</note>
       </trans-unit>
     </body>
@@ -504,7 +504,7 @@
       </trans-unit>
       <trans-unit id="84" resname="If you go back you&apos;ll lose the symptoms you reported." restype="string" datatype="x-objective-c">
         <source>If you go back you&apos;ll lose the symptoms you reported.</source>
-        <target>如果您返回，您会失去您分享的症状。</target>
+        <target>如果您返回，您会失去您报告的症状。</target>
         <note annotates="source">symptom triage lose symptoms alert body</note>
       </trans-unit>
     </body>
@@ -542,7 +542,7 @@
     <body>
       <trans-unit id="90" resname="More about you" restype="string" datatype="x-objective-c">
         <source>More about you</source>
-        <target>更多关于您</target>
+        <target>关于您的更多信息</target>
         <note annotates="source">symptom triage risk factors navigation title</note>
       </trans-unit>
     </body>
@@ -634,17 +634,17 @@
     <body>
       <trans-unit id="102" resname="LOWER" restype="string" datatype="x-objective-c">
         <source>LOWER</source>
-        <target>更低</target>
+        <target>较低</target>
         <note annotates="source">match percentage low</note>
       </trans-unit>
       <trans-unit id="103" resname="MEDIUM" restype="string" datatype="x-objective-c">
         <source>MEDIUM</source>
-        <target>中等的</target>
+        <target>中等</target>
         <note annotates="source">match percentage med</note>
       </trans-unit>
       <trans-unit id="104" resname="HIGHER" restype="string" datatype="x-objective-c">
         <source>HIGHER</source>
-        <target>更高</target>
+        <target>较高</target>
         <note annotates="source">match percentage hi</note>
       </trans-unit>
       <trans-unit id="105" resname="Possible explanations" restype="string" datatype="x-objective-c">
@@ -677,11 +677,11 @@
     <body>
       <trans-unit id="109" resname="Send your question for one or more answers from our %@ doctors, or consult a doctor. " restype="string" datatype="x-objective-c">
         <source>Send your question for one or more answers from our %@ doctors, or consult a doctor.</source>
-        <target>发送您的问题，从我们的%@医生出获得一个或多个回答，或咨询一位医生。</target>
+        <target>发送您的问题，从我们%@名医生出获得一个或多个回答，或咨询一名医生。</target>
       </trans-unit>
       <trans-unit id="110" resname="Can&apos;t find an answer? " restype="string" datatype="x-objective-c">
         <source>Can&apos;t find an answer?</source>
-        <target>找不到答案？</target>
+        <target>找不到回答？</target>
       </trans-unit>
     </body>
   </file>
@@ -689,11 +689,11 @@
     <body>
       <trans-unit id="111" resname="Not really" restype="string" datatype="x-objective-c">
         <source>Not really</source>
-        <target>不真实</target>
+        <target>没有</target>
       </trans-unit>
       <trans-unit id="112" resname="Yes!" restype="string" datatype="x-objective-c">
         <source>Yes!</source>
-        <target>可以！</target>
+        <target>是！</target>
       </trans-unit>
       <trans-unit id="113" resname="Do you like HealthTap?" restype="string" datatype="x-objective-c">
         <source>Do you like HealthTap?</source>
@@ -705,11 +705,11 @@
       </trans-unit>
       <trans-unit id="115" resname="Ok, sure" restype="string" datatype="x-objective-c">
         <source>Ok, sure</source>
-        <target>好的，可以</target>
+        <target>确定，当然</target>
       </trans-unit>
       <trans-unit id="116" resname="Would you mind giving us feedback?" restype="string" datatype="x-objective-c">
         <source>Would you mind giving us feedback?</source>
-        <target>您介意给我们反馈吗？</target>
+        <target>您愿意给我们反馈吗？</target>
       </trans-unit>
       <trans-unit id="117" resname="How about rating on the app store?" restype="string" datatype="x-objective-c">
         <source>How about rating on the app store?</source>
@@ -721,7 +721,7 @@
     <body>
       <trans-unit id="118" resname=" &#40;Licensed in %@&#41;" restype="string" datatype="x-objective-c">
         <source>&#40;Licensed in %@&#41;</source>
-        <target>&#40;在%@拥有执业执照&#41;</target>
+        <target>&#40;在%@拥有执业资格&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -733,7 +733,7 @@
       </trans-unit>
       <trans-unit id="120" resname=" Update Now &gt;" restype="string" datatype="x-objective-c">
         <source>Update Now &gt;</source>
-        <target>立刻更新 &gt;</target>
+        <target>立即更新 &gt;</target>
       </trans-unit>
       <trans-unit id="121" resname="Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! " restype="string" datatype="x-objective-c">
         <source>Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!</source>
@@ -794,7 +794,7 @@
     <body>
       <trans-unit id="129" resname="Rotate" restype="string" datatype="x-objective-c">
         <source>Rotate</source>
-        <target>循环</target>
+        <target>旋转</target>
         <note annotates="source">symptom triage rotate body selector button label</note>
       </trans-unit>
       <trans-unit id="130" resname="Generate report" restype="string" datatype="x-objective-c">
@@ -808,7 +808,7 @@
     <body>
       <trans-unit id="131" resname="What&apos;s the relationship to you?" restype="string" datatype="x-objective-c">
         <source>What&apos;s the relationship to you?</source>
-        <target>与您的关系是什么？</target>
+        <target>和您是什么关系？</target>
         <note annotates="source">subaccount creation relationship input prompt</note>
       </trans-unit>
     </body>
@@ -825,7 +825,7 @@
     <body>
       <trans-unit id="133" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
-        <target>搜索回答，话题，专家</target>
+        <target>搜索回答、话题、专家</target>
         <note annotates="source">search box placeholder</note>
       </trans-unit>
     </body>
@@ -834,7 +834,7 @@
     <body>
       <trans-unit id="134" resname="%@ appreciates your gratitude! " restype="string" datatype="x-objective-c">
         <source>%@ appreciates your gratitude!</source>
-        <target>%@ 感激您！</target>
+        <target>%@ 感谢您的谢意！</target>
       </trans-unit>
       <trans-unit id="135" resname=" &#41;" restype="string" datatype="x-objective-c">
         <source>&#41;</source>
@@ -846,11 +846,11 @@
     <body>
       <trans-unit id="136" resname="Learn about " restype="string" datatype="x-objective-c">
         <source>Learn about</source>
-        <target>学习关于</target>
+        <target>了解</target>
       </trans-unit>
       <trans-unit id="137" resname=" in the context of:" restype="string" datatype="x-objective-c">
         <source>in the context of:</source>
-        <target>在上下文中</target>
+        <target>所在背景：</target>
       </trans-unit>
       <trans-unit id="138" resname=" &#40;tap to select&#41;" restype="string" datatype="x-objective-c">
         <source>&#40;tap to select&#41;</source>
@@ -862,7 +862,7 @@
     <body>
       <trans-unit id="139" resname="Change " restype="string" datatype="x-objective-c">
         <source>Change</source>
-        <target>改变</target>
+        <target>更改</target>
       </trans-unit>
     </body>
   </file>
@@ -882,12 +882,12 @@
     <body>
       <trans-unit id="142" resname="...Do you have a follow-up question? Ask %@, a %@ with %@ years in practice." restype="string" datatype="x-objective-c">
         <source>...Do you have a follow-up question? Ask %@, a %@ with %@ years in practice.</source>
-        <target>...您有后续问题吗？询问%@，一个%@有%@年诊疗：</target>
+        <target>...您有后续问题吗？询问%@，一名拥有%@年诊疗经验的%@。</target>
         <note annotates="source">Para1: doctor name, Para2: specialty, Para3: practice duration</note>
       </trans-unit>
       <trans-unit id="143" resname="In brief: " restype="string" datatype="x-objective-c">
         <source>In brief:</source>
-        <target>简述：</target>
+        <target>概要：</target>
         <note annotates="source">prefix for summary of an answer</note>
       </trans-unit>
       <trans-unit id="144" resname="Thanked. " restype="string" datatype="x-objective-c">
@@ -900,7 +900,7 @@
     <body>
       <trans-unit id="145" resname="Where would you prefer to collect " restype="string" datatype="x-objective-c">
         <source>Where would you prefer to collect</source>
-        <target>您喜欢在哪里取药</target>
+        <target>您希望在哪里取药</target>
       </trans-unit>
       <trans-unit id="146" resname="\nCall: " restype="string" datatype="x-objective-c">
         <source>\nCall:</source>
@@ -916,7 +916,7 @@
     <body>
       <trans-unit id="148" resname="When was %@&apos;s last menstrual period? " restype="string" datatype="x-objective-c">
         <source>When was %@&apos;s last menstrual period?</source>
-        <target>%@上一次末次月经是什么时候？</target>
+        <target>%@末次月经是什么时候？</target>
       </trans-unit>
     </body>
   </file>
@@ -960,7 +960,7 @@
       </trans-unit>
       <trans-unit id="158" resname="Medical devices used in " restype="string" datatype="x-objective-c">
         <source>Medical devices used in</source>
-        <target>在用医疗设备</target>
+        <target>医疗设备用于</target>
       </trans-unit>
       <trans-unit id="159" resname="Conditions screened by " restype="string" datatype="x-objective-c">
         <source>Conditions screened by</source>
@@ -1023,7 +1023,7 @@
       </trans-unit>
       <trans-unit id="170" resname="\nYou completed this! " restype="string" datatype="x-objective-c">
         <source>\nYou completed this!</source>
-        <target>\n您已完整了！</target>
+        <target>\n您完成了！</target>
         <note annotates="source">Footer for completed checklist section</note>
       </trans-unit>
     </body>
@@ -1037,7 +1037,7 @@
       </trans-unit>
       <trans-unit id="210" resname="Starting at " restype="string" datatype="x-objective-c">
         <source>Starting at</source>
-        <target>起价</target>
+        <target>起步价</target>
       </trans-unit>
     </body>
   </file>
@@ -1086,19 +1086,19 @@
     <body>
       <trans-unit id="179" resname=" + %d doctor weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %d doctor weighed in:</source>
-        <target>+ %d 医生权衡：</target>
+        <target>+ %d 医生参与讨论：</target>
       </trans-unit>
       <trans-unit id="180" resname=" + %d doctors weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %d doctors weighed in:</source>
-        <target>+ %d 医生权衡：</target>
+        <target>+ %d 医生参与讨论：</target>
       </trans-unit>
       <trans-unit id="181" resname=" answered:" restype="string" datatype="x-objective-c">
         <source>answered:</source>
-        <target>已解答：</target>
+        <target>已回答：</target>
       </trans-unit>
       <trans-unit id="184" resname="Get immediate answers! " restype="string" datatype="x-objective-c">
         <source>Get immediate answers!</source>
-        <target>立即获得答案！</target>
+        <target>立即获得回答！</target>
       </trans-unit>
     </body>
   </file>
@@ -1106,12 +1106,12 @@
     <body>
       <trans-unit id="182" resname="You asked " restype="string" datatype="x-objective-c">
         <source>You asked</source>
-        <target>您问的</target>
+        <target>您询问了</target>
         <note annotates="source">Part of label &apos;You asked on Oct24, 2016&apos;</note>
       </trans-unit>
       <trans-unit id="183" resname="You asked for %@ " restype="string" datatype="x-objective-c">
         <source>You asked for %@</source>
-        <target>您为%@问</target>
+        <target>您为%@询问了</target>
         <note annotates="source">lablel below a question that user asked for a subaccount</note>
       </trans-unit>
     </body>
@@ -1120,16 +1120,16 @@
     <body>
       <trans-unit id="185" resname="for %@ " restype="string" datatype="x-objective-c">
         <source>for %@</source>
-        <target>for %@</target>
+        <target>为%@</target>
         <note annotates="source">Para: name</note>
       </trans-unit>
       <trans-unit id="186" resname=" + %li doctor weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %li doctor weighed in:</source>
-        <target>+ %li 医生权衡:</target>
+        <target>+ %li 医生参与讨论:</target>
       </trans-unit>
       <trans-unit id="187" resname=" + %li doctors weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %li doctors weighed in:</source>
-        <target>+ %li 医生权衡:</target>
+        <target>+ %li 医生参与讨论:</target>
       </trans-unit>
     </body>
   </file>
@@ -1137,7 +1137,7 @@
     <body>
       <trans-unit id="188" resname=" + 1 doctor weighed in:" restype="string" datatype="x-objective-c">
         <source>+ 1 doctor weighed in:</source>
-        <target>1名医生权衡</target>
+        <target>超过1名医生参与讨论</target>
         <note annotates="source">to indicate one more doctor weighed in</note>
       </trans-unit>
     </body>
@@ -1158,7 +1158,7 @@
     <body>
       <trans-unit id="191" resname="Licensed in " restype="string" datatype="x-objective-c">
         <source>Licensed in</source>
-        <target>拥有执业执照</target>
+        <target>拥有执业资格</target>
         <note annotates="source">e.g. Licenced in CA</note>
       </trans-unit>
     </body>
@@ -1219,7 +1219,7 @@
     <body>
       <trans-unit id="201" resname=" Video or text chat securely with \n top doctors right away \n" restype="string" datatype="x-objective-c">
         <source>Video or text chat securely with \n top doctors right away \n</source>
-        <target>\n立即与顶级医生\n进行安全的视频和文字聊天</target>
+        <target>\n立即与顶级医生\n进行安全的视频和文本聊天</target>
       </trans-unit>
     </body>
   </file>
@@ -1239,7 +1239,7 @@
     <body>
       <trans-unit id="204" resname=" It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat." restype="string" datatype="x-objective-c">
         <source>It seems your internet connection is too poor to start a video consult. Please improve your connection and try again, or continue your appointment by text chat.</source>
-        <target>您的网络连接不良，无法启动视频咨询。请改善您的连接，然后重试，或通过文字聊天继续您的预约。</target>
+        <target>您的网络连接不佳，无法启动视频咨询。请改善您的连接，然后重试，或通过文本聊天继续您的预约。</target>
       </trans-unit>
     </body>
   </file>
@@ -1279,7 +1279,7 @@
     <body>
       <trans-unit id="212" resname="We may already have your answer" restype="string" datatype="x-objective-c">
         <source>We may already have your answer</source>
-        <target>我们可能已经有了您的答案</target>
+        <target>我们可能已经有了您的回答</target>
       </trans-unit>
       <trans-unit id="213" resname="CARE TEAM" restype="string" datatype="x-objective-c">
         <source>CARE TEAM</source>
@@ -1295,7 +1295,7 @@
       </trans-unit>
       <trans-unit id="215" resname="&#40;Change&#41;" restype="string" datatype="x-objective-c">
         <source>&#40;Change&#41;</source>
-        <target>&#40;改变&#41;</target>
+        <target>&#40;更改&#41;</target>
       </trans-unit>
       <trans-unit id="216" resname="%@ %@" restype="string" datatype="x-objective-c">
         <source>%@ %@</source>
@@ -1315,7 +1315,7 @@
     <body>
       <trans-unit id="218" resname="Similar questions" restype="string" datatype="x-objective-c">
         <source>Similar questions</source>
-        <target>相似的问题</target>
+        <target>相似问题</target>
       </trans-unit>
       <trans-unit id="219" resname="Still need help?" restype="string" datatype="x-objective-c">
         <source>Still need help?</source>
@@ -1331,7 +1331,7 @@
       </trans-unit>
       <trans-unit id="221" resname="Search by name or specialty" restype="string" datatype="x-objective-c">
         <source>Search by name or specialty</source>
-        <target>按名字或专科搜索</target>
+        <target>按姓名或专科搜索</target>
       </trans-unit>
     </body>
   </file>
@@ -1339,11 +1339,11 @@
     <body>
       <trans-unit id="222" resname="%@ and 1 other weighed in" restype="string" datatype="x-objective-c">
         <source>%@ and 1 other weighed in</source>
-        <target>%@和另外1人权衡</target>
+        <target>%@和另外1人参与讨论</target>
       </trans-unit>
       <trans-unit id="223" resname="%@ and %ld others weighed in" restype="string" datatype="x-objective-c">
         <source>%@ and %ld others weighed in</source>
-        <target>%@和另外%ld人权衡</target>
+        <target>%@和另外%ld人参与讨论</target>
       </trans-unit>
     </body>
   </file>
@@ -1351,11 +1351,11 @@
     <body>
       <trans-unit id="224" resname="Special for %@ members" restype="string" datatype="x-objective-c">
         <source>Special for %@ members</source>
-        <target>特别为%@会员</target>
+        <target>%@会员优惠</target>
       </trans-unit>
       <trans-unit id="225" resname="Discounted for Prime members" restype="string" datatype="x-objective-c">
         <source>Discounted for Prime members</source>
-        <target>Prime会员有折扣</target>
+        <target>Prime会员折扣</target>
       </trans-unit>
       <trans-unit id="226" resname="Choose how you&apos;d like to get help" restype="string" datatype="x-objective-c">
         <source>Choose how you&apos;d like to get help</source>
@@ -1367,11 +1367,11 @@
     <body>
       <trans-unit id="227" resname="Text message" restype="string" datatype="x-objective-c">
         <source>Text message</source>
-        <target>文字信息</target>
+        <target>文本信息</target>
       </trans-unit>
       <trans-unit id="228" resname="Exchange text messages, photos, files" restype="string" datatype="x-objective-c">
         <source>Exchange text messages, photos, files</source>
-        <target>交换文字消息，照片，文件</target>
+        <target>发送文本信息、照片、文件</target>
       </trans-unit>
       <trans-unit id="229" resname="Virtual appointment" restype="string" datatype="x-objective-c">
         <source>Virtual appointment</source>
@@ -1379,7 +1379,7 @@
       </trans-unit>
       <trans-unit id="230" resname="Schedule a video, voice or text consult" restype="string" datatype="x-objective-c">
         <source>Schedule a video, voice or text consult</source>
-        <target>安排一次视频，语音或文字咨询</target>
+        <target>安排一次视频，语音或文本咨询</target>
       </trans-unit>
       <trans-unit id="231" resname="Live chat" restype="string" datatype="x-objective-c">
         <source>Live chat</source>
@@ -1387,23 +1387,23 @@
       </trans-unit>
       <trans-unit id="232" resname="Video, voice or text chat now" restype="string" datatype="x-objective-c">
         <source>Video, voice or text chat now</source>
-        <target>立刻进行视频、语音、或文字聊天</target>
+        <target>立即进行视频、语音或文本聊天</target>
       </trans-unit>
       <trans-unit id="233" resname="Out of office until %@" restype="string" datatype="x-objective-c">
         <source>Out of office until %@</source>
-        <target>不在办公室直到%@</target>
+        <target>在%@之前都不在办公室</target>
       </trans-unit>
       <trans-unit id="234" resname="Available next on %@" restype="string" datatype="x-objective-c">
         <source>Available next on %@</source>
-        <target>下次空闲时间在%@</target>
+        <target>下次在线时间为%@</target>
       </trans-unit>
       <trans-unit id="235" resname="Busy now" restype="string" datatype="x-objective-c">
         <source>Busy now</source>
-        <target>立刻购买</target>
+        <target>立即购买</target>
       </trans-unit>
       <trans-unit id="236" resname="Starting at %@%@" restype="string" datatype="x-objective-c">
         <source>Starting at %@%@</source>
-        <target>起价%@%@</target>
+        <target>起步价%@%@</target>
       </trans-unit>
     </body>
   </file>
@@ -1411,7 +1411,7 @@
     <body>
       <trans-unit id="237" resname="IE2-yq-Pxp.text" restype="string" datatype="x-xib">
         <source>We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with:</source>
-        <target>我们可以通过安全信息，视频/文字聊天联系或安排一次在线预约。\n\n我可以提供给您：</target>
+        <target>我们可以通过安全信息、视频/文本聊天联系或安排一次在线预约。\n\n我可以为您提供：</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with: &quot;; ObjectID = &quot;IE2-yq-Pxp&quot;;</note>
       </trans-unit>
     </body>
@@ -1420,7 +1420,7 @@
     <body>
       <trans-unit id="238" resname="Tao-vh-SIO.placeholder" restype="string" datatype="x-xib">
         <source>Search name, speciality, or topic</source>
-        <target>搜索名称，专科或话题</target>
+        <target>搜索姓名、专科或话题</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search name, speciality, or topic        &quot;; ObjectID = &quot;Tao-vh-SIO&quot;;</note>
       </trans-unit>
     </body>
@@ -1438,7 +1438,7 @@
     <body>
       <trans-unit id="240" resname="oKS-Pc-4XA.text" restype="string" datatype="x-xib">
         <source>Prescriptions, checklists, referrals, tips &amp; news</source>
-        <target>处方，清单，转诊，小贴士和新闻</target>
+        <target>处方、清单、转介、小贴士和新闻</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Prescriptions, checklists, referrals, tips &amp; news &quot;; ObjectID = &quot;oKS-Pc-4XA&quot;;</note>
       </trans-unit>
     </body>
@@ -1447,7 +1447,7 @@
     <body>
       <trans-unit id="241" resname="Pe4-Qb-iAQ.placeholder" restype="string" datatype="x-xib">
         <source>Seach name, speciality, or topic</source>
-        <target>搜索名称，专科或话题</target>
+        <target>搜索姓名、专科或话题</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Seach name, speciality, or topic       &quot;; ObjectID = &quot;Pe4-Qb-iAQ&quot;;</note>
       </trans-unit>
     </body>
@@ -1492,7 +1492,7 @@
     <body>
       <trans-unit id="246" resname="btX-Gh-PJY.text" restype="string" datatype="x-xib">
         <source>We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with:</source>
-        <target>我们可以通过安全信息，视频/文字聊天联系或安排一次在线预约。\n\n我可以提供给您：</target>
+        <target>我们可以通过安全信息、视频/文本聊天联系或安排一次在线预约。\n\n我可以给您提供：</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with: &quot;; ObjectID = &quot;btX-Gh-PJY&quot;;</note>
       </trans-unit>
     </body>
@@ -1542,12 +1542,12 @@
     <body>
       <trans-unit id="252" resname="6dm-aD-7F0.text" restype="string" datatype="x-xib">
         <source>Helpful and personalized answers, tips, news, and app recommendations from top doctors!</source>
-        <target>从顶级医生那里得到有帮助的和个性化的答案，小贴士，新闻和应用程序推荐！</target>
+        <target>从顶级医生那里得到有帮助的和专属于您的回答、小贴士、新闻和应用程序推荐！</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Helpful and personalized answers, tips, news, and app recommendations from top doctors! &quot;; ObjectID = &quot;6dm-aD-7F0&quot;;</note>
       </trans-unit>
       <trans-unit id="253" resname="pWe-o3-Qtc.text" restype="string" datatype="x-xib">
         <source>Are you a doctor?</source>
-        <target>您是一位医生吗？</target>
+        <target>您是一名医生吗？</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Are you a doctor? &quot;; ObjectID = &quot;pWe-o3-Qtc&quot;;</note>
       </trans-unit>
     </body>
@@ -1556,12 +1556,12 @@
     <body>
       <trans-unit id="254" resname="6dm-aD-7F0.text" restype="string" datatype="x-xib">
         <source>Helpful and personalized answers, tips, news, and app recommendations from top doctors!</source>
-        <target>从顶级医生那里得到有帮助的和个性化的答案，小贴士，新闻和应用程序推荐！</target>
+        <target>从顶级医生那里得到有帮助的和专属于您的回答、小贴士、新闻和应用程序推荐！</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Helpful and personalized answers, tips, news, and app recommendations from top doctors! &quot;; ObjectID = &quot;6dm-aD-7F0&quot;;</note>
       </trans-unit>
       <trans-unit id="255" resname="pWe-o3-Qtc.text" restype="string" datatype="x-xib">
         <source>Are you a doctor?</source>
-        <target>您是一位医生吗？</target>
+        <target>您是一名医生吗？</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Are you a doctor? &quot;; ObjectID = &quot;pWe-o3-Qtc&quot;;</note>
       </trans-unit>
     </body>
@@ -1570,7 +1570,7 @@
     <body>
       <trans-unit id="256" resname="P2Q-rj-nfc.text" restype="string" datatype="x-xib">
         <source>Are you a doctor?</source>
-        <target>您是一位医生吗？</target>
+        <target>您是一名医生吗？</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Are you a doctor? &quot;; ObjectID = &quot;P2Q-rj-nfc&quot;;</note>
       </trans-unit>
     </body>
@@ -1579,7 +1579,7 @@
     <body>
       <trans-unit id="257" resname="S2c-WI-KEa.placeholder" restype="string" datatype="x-xib">
         <source>Find a goal &#40;e.g: Lose weight&#41;</source>
-        <target>查找一个目标&#40;例如：减肥）</target>
+        <target>查找目标（例如：减肥）</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find a goal &#40;e.g: Lose weight&#41;                                              &quot;; ObjectID = &quot;S2c-WI-KEa&quot;;</note>
       </trans-unit>
     </body>
@@ -1615,7 +1615,7 @@
     <body>
       <trans-unit id="261" resname="Wdk-yd-mkO.placeholder" restype="string" datatype="x-xib">
         <source>Find a goal &#40;e.g: Lose weight&#41;</source>
-        <target>查找一个目标&#40;例如：减肥）</target>
+        <target>查找目标（例如：减肥）</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find a goal &#40;e.g: Lose weight&#41;                                              &quot;; ObjectID = &quot;Wdk-yd-mkO&quot;;</note>
       </trans-unit>
     </body>
@@ -1624,7 +1624,7 @@
     <body>
       <trans-unit id="262" resname="ccY-LM-9nb.placeholder" restype="string" datatype="x-xib">
         <source>Search name, speciality, or topic</source>
-        <target>搜索名称，专业或主题</target>
+        <target>搜索姓名、专科或话题</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search name, speciality, or topic        &quot;; ObjectID = &quot;ccY-LM-9nb&quot;;</note>
       </trans-unit>
     </body>
@@ -1774,7 +1774,7 @@
     <body>
       <trans-unit id="284" resname="mRg-tY-Dbn.placeholder" restype="string" datatype="x-xib">
         <source>Speciality</source>
-        <target>专业</target>
+        <target>专科</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Speciality &quot;; ObjectID = &quot;mRg-tY-Dbn&quot;;</note>
       </trans-unit>
     </body>

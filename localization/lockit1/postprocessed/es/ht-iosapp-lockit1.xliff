@@ -16820,7 +16820,7 @@ aplicación y deja que el mundo lo sepa :&#41;</target>
       </trans-unit>
       <trans-unit id="j7C-Ke-d48.normalTitle" resname="j7C-Ke-d48.normalTitle" restype="string" datatype="x-xib">
         <source>Female</source>
-        <target>Femenino</target>
+        <target state="accepted">Mujer</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Female&quot;; ObjectID = &quot;j7C-Ke-d48&quot;;</note>
       </trans-unit>
       <trans-unit id="l4p-o3-4fo.normalTitle" resname="l4p-o3-4fo.normalTitle" restype="string" datatype="x-xib">

@@ -620,11 +620,11 @@
       </trans-unit>
       <trans-unit id="5047" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_liveconsult_incoming_offline_backups">
         <source>A premium member %1, from %2  is requesting a Live Consult while all the on-call doctors are busy. Please mark yourself &quot;Available&quot; and we&apos;ll route the patient to the first doctor to respond. Thank you</source>
-        <target>当随传随到的医生忙碌时，来自%2的一位高级会员%1请求一次实时咨询。请标记自己“空闲”，我们会将患者送到第一位医生回复。谢谢</target>
+        <target>当随传随到的医生忙碌时，来自%2的一位高级会员%1请求一次实时咨询。请标记自己“空闲”，我们会将患者送到第一名医生回复。谢谢</target>
       </trans-unit>
       <trans-unit id="5048" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_liveconsult_incoming_offline_backups">
         <source>HealthTap - A premium member %1, from %2 is requesting a Live Consult while all the on-call doctors are busy. Please mark yourself &quot;Available&quot; and we&apos;ll route the patient to the first doctor to respond. Thank you</source>
-        <target>HealthTap - 当随传随到的医生忙碌时，来自%2的一位高级会员%1请求一次实时咨询。请标记自己“空闲”，我们会将患者送到第一位医生回复。谢谢</target>
+        <target>HealthTap - 当随传随到的医生忙碌时，来自%2的一位高级会员%1请求一次实时咨询。请标记自己“空闲”，我们会将患者送到第一名医生回复。谢谢</target>
       </trans-unit>
       <trans-unit id="5049" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_compose_consult">
         <source>Heads up: A patient told us they may be calling you in the next 5-10 minutes. Please be available on HealthTap in case they call</source>
@@ -868,7 +868,7 @@
       </trans-unit>
       <trans-unit id="5109" resname="email_subject" restype="string" datatype="x-yaml" x-context="member_influencer_doc_helpful">
         <source>%1, another doctor agreed your news post was helpful!</source>
-        <target>%1，另一位医生同意您的新闻帖子是有帮助的！</target>
+        <target>%1，另一名医生同意您的新闻帖子是有帮助的！</target>
       </trans-unit>
       <trans-unit id="5110" resname="subject" restype="string" datatype="x-yaml" x-context="member_influencer_doc_helpful">
         <source>%1, yet %2 found news you shared helpful:</source>
@@ -1328,7 +1328,7 @@
       </trans-unit>
       <trans-unit id="5224" resname="subject" restype="string" datatype="x-yaml" x-context="doctor_question_agreed">
         <source>Another doctor agrees!</source>
-        <target>另一位医生同意！</target>
+        <target>另一名医生同意！</target>
       </trans-unit>
       <trans-unit id="5225" resname="body" restype="string" datatype="x-yaml" x-context="doctor_question_agreed">
         <source>%1</source>
@@ -1580,7 +1580,7 @@
       </trans-unit>
       <trans-unit id="5287" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_marketing_subscribe">
         <source>Subscribe now</source>
-        <target>现在订阅</target>
+        <target>现在订购</target>
       </trans-unit>
       <trans-unit id="5288" resname="push_data" restype="string" datatype="x-yaml" x-context="member_marketing_subscribe">
         <source>Consult a leading doctor 24/7 from anywhere! Subscribe for access to HealthTap Virtual Consults today!</source>
@@ -1788,7 +1788,7 @@
       </trans-unit>
       <trans-unit id="5339" resname="body" restype="string" datatype="x-yaml" x-context="member_concierge_connection_accepted">
         <source>You can now have a video chat, exchange messages, or schedule an appointment.</source>
-        <target>您现在可以进行视频聊天，交换消息或安排预约。</target>
+        <target>您现在可以进行视频聊天，发送消息或安排预约。</target>
       </trans-unit>
       <trans-unit id="5340" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_connection_accepted">
         <source>Connect now</source>
@@ -2132,11 +2132,11 @@
       </trans-unit>
       <trans-unit id="5425" resname="push_data" restype="string" datatype="x-yaml" x-context="member_nux_complete">
         <source>Get better, personalized care and insights from our doctors! Take a minute to complete your profile.</source>
-        <target>从我们的医生得到更好的，个性化的医护花点时间完成您的个人资料。</target>
+        <target>从我们的医生得到更好的，专属于您的医护花点时间完成您的个人资料。</target>
       </trans-unit>
       <trans-unit id="5426" resname="push_data" restype="string" datatype="x-yaml" x-context="member_nux_complete_day3">
         <source>Tip: By answering a few quick questions, we’ll be able match you with doctors and their insights that will help you accomplish your health goals! Complete your profile</source>
-        <target>小贴士：通过回答几个简单的问题，我们将能够与您匹配相应的医生以及他们的见解，帮助您实现您的健康目标！填写您的个人资料</target>
+        <target>小贴士：通过回答几个简单的问题，我们将能够与您匹配相应的医生和见解，帮助您实现您的健康目标！填写您的个人资料</target>
       </trans-unit>
       <trans-unit id="5427" resname="push_data" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_activation_campaign">
         <source>Get help today from %1, your doctor on HealthTap! Consult via video or text chat</source>
@@ -2148,7 +2148,7 @@
       </trans-unit>
       <trans-unit id="5429" resname="body" restype="string" datatype="x-yaml" x-context="doctor_concierge_app_not_complete">
         <source>Just one step left to boost your income—take a moment to complete your HealthTap Concierge signup now and get your Virtual Practice.</source>
-        <target>只需最后一步即可提高您的收入—现在花一点时间完成您的HealthTap贵宾台注册，并获得您的在线实践。</target>
+        <target>只需最后一步即可提高您的收入—现在花一点时间完成您的HealthTap贵宾台注册，并获得您的在线诊疗。</target>
       </trans-unit>
       <trans-unit id="5430" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_concierge_app_not_complete">
         <source>Continue</source>
@@ -2236,7 +2236,7 @@
       </trans-unit>
       <trans-unit id="5451" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_expired_refund">
         <source>Message another doctor</source>
-        <target>给另一位医生发送消息</target>
+        <target>给另一名医生发送消息</target>
       </trans-unit>
       <trans-unit id="5452" resname="push_data" restype="string" datatype="x-yaml" x-context="member_concierge_expired_refund">
         <source>We’re sorry %1 was unable to respond to your message consult.%2</source>
