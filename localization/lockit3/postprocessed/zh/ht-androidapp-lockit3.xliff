@@ -1505,7 +1505,7 @@
         <target>{first_name}有几个孩子？</target>
       </trans-unit>
       <trans-unit id="282" resname="subaccount_questions" restype="array" datatype="x-android-resource" extype="5">
-        <source>When was {first_name}&apos;s last menstrual period?</source>
+        <source>When was {first_name}'s last menstrual period?</source>
         <target>{first_name}上一次生理周期是什么时候？</target>
       </trans-unit>
       <trans-unit id="283" resname="self_questions" restype="array" datatype="x-android-resource" extype="0">
