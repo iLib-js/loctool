@@ -21354,7 +21354,7 @@ display:none;
       </trans-unit>
       <trans-unit id="6029" resname="{weight_lbs} lbs" restype="string" datatype="html">
         <source>{weight_lbs} lbs</source>
-        <target>{Weight_lbs} 磅</target>
+        <target>{weight_lbs} 磅</target>
       </trans-unit>
       <trans-unit id="6030" resname="{weight_kg} kg" restype="string" datatype="html">
         <source>{weight_kg} kg</source>

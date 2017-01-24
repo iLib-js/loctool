@@ -1472,7 +1472,7 @@
         <source>Received {start}%d{end} thanks</source>
         <target>已收到{start}%d{end}次感谢</target>
       </trans-unit>
-      <trans-挽救了{start} %d{end}条生命unit id="275" resname="age" restype="plural" datatype="x-android-resource" extype="one">
+      <trans-unit id="275" resname="age" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 year old</source>
         <target>1岁</target>
       </trans-unit>
@@ -4214,10 +4214,6 @@
       <trans-unit id="952" resname="countries" restype="array" datatype="x-android-resource" extype="198">
         <source>United Kingdom</source>
         <target>英国</target>
-      </trans-unit>
-      <trans-unit id="953" resname="countries" restype="array" datatype="x-android-resource" extype="199">
-        <source>@string/us</source>
-        <target>@string/us</target>
       </trans-unit>
       <trans-unit id="954" resname="countries" restype="array" datatype="x-android-resource" extype="200">
         <source>Uruguay</source>

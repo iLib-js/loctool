@@ -155,7 +155,7 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/TipsDetailFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="624" resname="r322108465" restype="string" datatype="java">
-        <source>agreed with {author_name}\&apos;s tip on \n{topic_name}</source>
+        <source>agreed with {author_name}'s tip on \n{topic_name}</source>
         <target>同意{author_name}关于\n{topic_name}的小贴士</target>
         <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
@@ -216,7 +216,7 @@
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/GoalTakeActionListItem.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="812" resname="r363844654" restype="string" datatype="java">
-        <source>{approver_name} agreed with {author_name}\&apos;s checklist</source>
+        <source>{approver_name} agreed with {author_name}'s checklist</source>
         <target>{Approver_name} 同意 {author_name}的清单</target>
       </trans-unit>
     </body>
