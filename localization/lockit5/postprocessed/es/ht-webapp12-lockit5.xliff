@@ -13638,12 +13638,12 @@
         <target>Ver %{name} al %{phone}, %{email}</target>
       </trans-unit>
       <trans-unit id="2934" resname="r639574300" restype="string" datatype="ruby">
-        <source> on behalf of %{subaccount} &#40;%{relationship}&#41;</source>
-        <target> en representación de %{subaccount} &#40;%{relationship}&#41;</target>
+        <source>on behalf of %{subaccount} &#40;%{relationship}&#41;</source>
+        <target>en representación de %{subaccount} &#40;%{relationship}&#41;</target>
       </trans-unit>
       <trans-unit id="2935" resname="r264351801" restype="string" datatype="ruby">
-        <source> for a scheduled appointment</source>
-        <target> para una cita agendada</target>
+        <source>for a scheduled appointment</source>
+        <target>para una cita agendada</target>
       </trans-unit>
       <trans-unit id="2936" resname="r566881863" restype="string" datatype="ruby">
         <source>From %{patient} %{gender}%{subaccount}  to %{expert}%{descriptor}</source>

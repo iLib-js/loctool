@@ -7860,14 +7860,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/mobile/app/js/templates/comments/comment.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="1719" resname="." restype="string" datatype="html">
-        <source>.</source>
-        <target>.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/mobile/app/js/templates/body_view/body_search.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="1720" resname="female view" restype="string" datatype="html">
@@ -15889,10 +15881,6 @@
       <trans-unit id="3365" resname="PUBLICATIONS" restype="string" datatype="html">
         <source>PUBLICATIONS</source>
         <target>PUBLICACIONES</target>
-      </trans-unit>
-      <trans-unit id="3366" resname="." restype="string" datatype="html">
-        <source>.</source>
-        <target>.</target>
       </trans-unit>
       <trans-unit id="3367" resname="blog&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;additional links" restype="string" datatype="html">
         <source>blog&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;additional links</source>

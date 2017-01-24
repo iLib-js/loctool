@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="%@ doctors recommend this app" restype="string" datatype="x-objective-c">
         <source>%@ doctors recommend this app</source>
-        <target>%@医生推荐这款应用程序</target>
+        <target>%@名医生推荐这款应用程序</target>
       </trans-unit>
     </body>
   </file>
@@ -96,11 +96,11 @@
     <body>
       <trans-unit id="16" resname="No cancel" restype="string" datatype="x-objective-c">
         <source>No cancel</source>
-        <target>不 取消</target>
+        <target>否 取消</target>
       </trans-unit>
       <trans-unit id="17" resname="Yes confirm" restype="string" datatype="x-objective-c">
         <source>Yes confirm</source>
-        <target>是的 确定</target>
+        <target>是 确定</target>
       </trans-unit>
     </body>
   </file>
@@ -129,7 +129,7 @@
       </trans-unit>
       <trans-unit id="21" resname="%@ doctor recommends this app" restype="string" datatype="x-objective-c">
         <source>%@ doctor recommends this app</source>
-        <target>%@医生推荐这款应用程序</target>
+        <target>%@名医生推荐这款应用程序</target>
       </trans-unit>
     </body>
   </file>
@@ -137,7 +137,7 @@
     <body>
       <trans-unit id="22" resname="\nWe will connect you with" restype="string" datatype="x-objective-c">
         <source>\nWe will connect you with</source>
-        <target>\n我们将与您联系</target>
+        <target>\n我们将为您联系</target>
       </trans-unit>
     </body>
   </file>
@@ -165,11 +165,11 @@
     <body>
       <trans-unit id="26" resname="Starting at %@%d" restype="string" datatype="x-objective-c">
         <source>Starting at %@%d</source>
-        <target>起价%@%d</target>
+        <target>起步价%@%d</target>
       </trans-unit>
       <trans-unit id="27" resname="Starting at %@%.2f" restype="string" datatype="x-objective-c">
         <source>Starting at %@%.2f</source>
-        <target>起价%@%.2f</target>
+        <target>起步价%@%.2f</target>
       </trans-unit>
     </body>
   </file>

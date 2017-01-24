@@ -31,7 +31,7 @@ public class HashKey {
 			replaceAll("([^\\\\])\\\\'", "$1'").
 			replaceAll("\\\\\"", "\"").
 			replaceAll("([^\\\\])\\\\\"", "$1\"").
-			replaceAll("\\s+", " ").
+			replaceAll("[ \n\t\r\f]+", " ").
 			trim();
 		
 		// System.out.println("After mucking: '" + str + "'");
@@ -41,7 +41,7 @@ public class HashKey {
 		long multiple = 65521;       // largest prime that fits in 16 bits, co-prime with the modulus
 		
 		for (int i = 0; i < str.length(); i++) {
-			System.out.println("hash " + hash + " char " + str.codePointAt(i) + "=" + str.charAt(i));
+			// System.out.println("hash " + hash + " char " + str.codePointAt(i) + "=" + str.charAt(i));
 			hash += str.charAt(i);
 			hash *= multiple;
 			hash %= modulus;

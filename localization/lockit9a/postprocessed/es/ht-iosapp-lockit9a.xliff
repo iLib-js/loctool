@@ -36,4 +36,61 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/iPadNative/Goals/FGGoalsBaseViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" restype="string" datatype="x-objective-c">
+        <source>We&apos;ll share more tips and checklists to help you with &quot;%@&quot;</source>
+        <target state="accepted">Compartiremos más consejos y listados para ayudarte con &quot;%@&quot;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/iPadNative/Checklist/FGIpadChecklistViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="Do you want to remove this action from your &quot;To Do&quot; list?" restype="string" datatype="x-objective-c">
+        <source>Do you want to remove this action from your &quot;To Do&quot; list?</source>
+        <target state="accepted">Quieres remover esta acción de tu lista de &quot;Por Hacer&quot;?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGNuxSignupViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="15" resname="Please download the &quot;HealthTap for Doctors&quot; app to login or signup as a doctor with a valid US medical license" restype="string" datatype="x-objective-c">
+        <source>Please download the &quot;HealthTap for Doctors&quot; app to login or signup as a doctor with a valid US medical license</source>
+        <target state="accepted">Porfavor descarge la aplicación &quot;HealthTap for Doctors&quot; para iniciar sesión o registrarse con una licencia válida de los EE.UU.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGLiveChatViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="16" resname="A device connection code allows another app or medical device to securely send health data to this patient&apos;s chart. If you have an app requesting a &quot;device connection code&quot; or &quot;verification code&quot;, please use the code displayed here." restype="string" datatype="x-objective-c">
+        <source>A device connection code allows another app or medical device to securely send health data to this patient&apos;s chart. If you have an app requesting a &quot;device connection code&quot; or &quot;verification code&quot;, please use the code displayed here.</source>
+        <target state="new">Un código de conexión permite que otra aplicación o aparato médico pueda mandar infomación de salud de manera segura a este expediente médico. Si tiene una aplicación buscando un &quot;device connection code&quot; o &quot;verification code&quot;, use el código que aparece aqui.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTRateConsultCommentsViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="29" resname="Please provide details regarding &quot;%@&quot; &#40;Optional&#41;" restype="string" datatype="x-objective-c">
+        <source>Please provide details regarding &quot;%@&quot; &#40;Optional&#41;</source>
+        <target state="accepted">Porfavor brinda detalles sobre &quot;%@&quot; &#40;Opcional&#41;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTBaseTutorialView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="30" resname="When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone" restype="string" datatype="x-objective-c">
+        <source>When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone</source>
+        <target state="accepted">Cuando necesite ver un doctor,\nsimplemente presione el botón &quot;DocNow&quot;\nen su Apple Watch o iPhone</target>
+        <note annotates="source">Tutorial step 1</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTImportContactsMainViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="25" resname="Please allow HealthTap to access your address book by going to\nSettings -&gt; Privacy -&gt; Contacts" restype="string" datatype="x-objective-c">
+        <source>Please allow HealthTap to access your address book by going to\nSettings -&gt; Privacy -&gt; Contacts</source>
+        <target state="accepted">Porfavor permita que HealthTap accese sus contactos llendo a\nConfiguración -&gt; Privacidad -&gt; Contactos</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

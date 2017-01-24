@@ -293,12 +293,12 @@
         <target state="translated">在%{phone}, %{email}查看%{name}</target>
       </trans-unit>
       <trans-unit id="5124" resname="r639574300" restype="string" datatype="ruby">
-        <source> on behalf of %{subaccount} &#40;%{relationship}&#41;</source>
-        <target state="translated"> 代表%{subaccount} &#40;%{relationship}&#41;</target>
+        <source>on behalf of %{subaccount} &#40;%{relationship}&#41;</source>
+        <target state="translated">代表%{subaccount} &#40;%{relationship}&#41;</target>
       </trans-unit>
       <trans-unit id="5125" resname="r264351801" restype="string" datatype="ruby">
-        <source> for a scheduled appointment</source>
-        <target state="translated"> 安排一次预约</target>
+        <source>for a scheduled appointment</source>
+        <target state="translated">安排一次预约</target>
       </trans-unit>
       <trans-unit id="5126" resname="r437005058" restype="string" datatype="ruby">
         <source>From %{patient} %{gender}%{subaccount}%{descriptor}</source>
@@ -1250,7 +1250,7 @@
       </trans-unit>
       <trans-unit id="5448" resname="r314256427" restype="string" datatype="ruby">
         <source>%{notification_name}, thanks for asking a question—our doctors are on it!</source>
-        <target state="translated">%{Notification_name}，感谢您询问的问题 — 我们的医生正在回答它！</target>
+        <target state="translated">%{notification_name}，感谢您询问的问题 — 我们的医生正在回答它！</target>
       </trans-unit>
       <trans-unit id="5449" resname="r825004238" restype="string" datatype="ruby">
         <source>Thanks for asking a question—our doctors are on it!</source>
@@ -18676,10 +18676,6 @@
         <source>for any available shifts to perform Virtual Consults on HealthTap Prime. Lastly, we suggest reviewing our guidelines on setting up and preparing for your first Virtual Consult.</source>
         <target state="translated">为任何在HealthTap Prime上执行在线咨询服务可用的班次。 最后，我们建议您查看关于设置和准备第一次在线咨询的指南。</target>
       </trans-unit>
-      <trans-unit id="3576" resname="r3013966" restype="string" datatype="ruby">
-        <source>.</source>
-        <target state="translated">.</target>
-      </trans-unit>
     </body>
   </file>
   <file original="app/views/general_mailer/doctor_prime_app_part1_completed.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
@@ -24605,7 +24601,7 @@
       </trans-unit>
       <trans-unit id="4841" resname="r653185640" restype="string" datatype="ruby">
         <source>Chinese</source>
-        <target state="translated">汉语</target>
+        <target state="translated">中国/海外华人</target>
       </trans-unit>
       <trans-unit id="4842" resname="r338273669" restype="string" datatype="ruby">
         <source>South East Asian</source>
@@ -36646,7 +36642,7 @@
     <body>
       <trans-unit id="8634" resname="{weight_lbs} lbs" restype="string" datatype="javascript">
         <source>{weight_lbs} lbs</source>
-        <target state="translated">{Weight_lbs} 磅</target>
+        <target state="translated">{weight_lbs} 磅</target>
       </trans-unit>
       <trans-unit id="8635" resname="{weight_kg} kg" restype="string" datatype="javascript">
         <source>{weight_kg} kg</source>
@@ -41270,7 +41266,7 @@
       </trans-unit>
       <trans-unit id="9576" resname="When was the last time? &#40;year&#41;" restype="string" datatype="javascript">
         <source>When was the last time? &#40;year&#41;</source>
-        <target state="translated">最后一次是什么时候？&#40;year&#41;</target>
+        <target state="translated">最后一次是什么时候？&#40;哪一年&#41;</target>
       </trans-unit>
       <trans-unit id="9577" resname="Which vaccinations have you had?" restype="string" datatype="javascript">
         <source>Which vaccinations have you had?</source>

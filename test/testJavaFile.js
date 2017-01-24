@@ -357,7 +357,7 @@ module.exports = {
 		});
         test.ok(jf);
 
-        test.equals(jf.makeKey("Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat"), "r221792856");
+        test.equals(jf.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"), "r705871347");
         
         test.done();
 	},

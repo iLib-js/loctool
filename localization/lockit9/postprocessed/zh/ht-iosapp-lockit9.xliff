@@ -142,7 +142,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGMomentDetailsmallViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="3123" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
-        <source>Please don\&apos;t include a followup question in your note. To do so:</source>
+        <source>Please don&apos;t include a followup question in your note. To do so:</source>
         <target>请不要在您的备注中包含后续问题。为此：</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so:&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
       </trans-unit>
@@ -151,7 +151,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGMomentDetailViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="3150" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
-        <source>Please don\&apos;t include a followup question in your note. To do so:</source>
+        <source>Please don&apos;t include a followup question in your note. To do so:</source>
         <target>请不要在您的备注中包含后续问题。为此：</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so:&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
       </trans-unit>
