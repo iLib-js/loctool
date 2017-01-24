@@ -12912,7 +12912,7 @@ Any medical problem that is life threatening. For example, if you experience any
       </trans-unit>
       <trans-unit id="When was the last time? &#40;year&#41;" resname="When was the last time? &#40;year&#41;" restype="string" datatype="x-objective-c">
         <source>When was the last time? &#40;year&#41;</source>
-        <target>最后一次是什么时候？&#40;year&#41;</target>
+        <target>最后一次是什么时候？&#40;哪一年&#41;</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="When was your last menstrual period?" resname="When was your last menstrual period?" restype="string" datatype="x-objective-c">

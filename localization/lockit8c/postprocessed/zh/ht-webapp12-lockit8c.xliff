@@ -36642,7 +36642,7 @@
     <body>
       <trans-unit id="8634" resname="{weight_lbs} lbs" restype="string" datatype="javascript">
         <source>{weight_lbs} lbs</source>
-        <target state="translated">{Weight_lbs} 磅</target>
+        <target state="translated">{weight_lbs} 磅</target>
       </trans-unit>
       <trans-unit id="8635" resname="{weight_kg} kg" restype="string" datatype="javascript">
         <source>{weight_kg} kg</source>
