@@ -3186,7 +3186,7 @@
     <body>
       <trans-unit id="695" resname="&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;" restype="string" datatype="html">
         <source>&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;</source>
-        <target state="translated">&lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;</target>
+        <target state="translated">&lt;%= RB.getStringJS&#40;&apos;搜索姓名、专科或话题&apos;&#41; %&gt;</target>
       </trans-unit>
     </body>
   </file>
