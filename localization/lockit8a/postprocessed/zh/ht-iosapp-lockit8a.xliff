@@ -30,12 +30,12 @@
       </trans-unit>
       <trans-unit id="20" resname="k39-JV-hYA.normalTitle" restype="string" datatype="x-xib">
         <source>Ask Docs</source>
-        <target state="translated">问医生</target>
+        <target state="translated">询问医生</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Ask Docs&quot;; ObjectID = &quot;k39-JV-hYA&quot;;</note>
       </trans-unit>
       <trans-unit id="21" resname="l44-cL-1gg.normalTitle" restype="string" datatype="x-xib">
         <source>Feed</source>
-        <target state="translated">感觉</target>
+        <target state="translated">主页</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Feed&quot;; ObjectID = &quot;l44-cL-1gg&quot;;</note>
       </trans-unit>
     </body>
@@ -44,7 +44,7 @@
     <body>
       <trans-unit id="22" resname="sQO-Yv-5Ru.disabledTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target state="translated">寄信/给留言/发送便笺</target>
+        <target state="translated">发送注意事项</target>
         <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Send note&quot;; ObjectID = &quot;sQO-Yv-5Ru&quot;;</note>
       </trans-unit>
     </body>
@@ -77,7 +77,7 @@
       </trans-unit>
       <trans-unit id="27" resname="pq8-qG-WEY.text" restype="string" datatype="x-xib">
         <source>Get a more personalized answer</source>
-        <target state="translated">获得一个更个性化的回答</target>
+        <target state="translated">获得一个更专属于您的回答</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get a more personalized answer&quot;; ObjectID = &quot;pq8-qG-WEY&quot;;</note>
       </trans-unit>
     </body>
@@ -86,7 +86,7 @@
     <body>
       <trans-unit id="28" resname="u1p-9T-OIc.disabledTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target state="translated">寄信/给留言/发送便笺</target>
+        <target state="translated">发送注意事项</target>
         <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Send note&quot;; ObjectID = &quot;u1p-9T-OIc&quot;;</note>
       </trans-unit>
     </body>

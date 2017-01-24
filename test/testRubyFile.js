@@ -695,7 +695,7 @@ module.exports = {
         test.done();
     },
 
-    testRubyFileParseMultipleSameLine: function(test) {
+       testRubyFileParseMultipleSameLine: function(test) {
         test.expect(8);
 
         var p = new WebProject({
@@ -722,6 +722,37 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "r999080996");
+
+        test.done();
+    },
+
+    testRubyFileParseMultipleSameLineWithQuotes: function(test) {
+        test.expect(8);
+
+        var p = new WebProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var rf = new RubyFile({
+			project: p
+		});
+        test.ok(rf);
+        
+        rf.parse("[Rb.t('Access the world’s leading online knowledgebase of doctor-created health information. '), Rb.t('We‘re committed to helping you feel good!')],");
+
+        var set = rf.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("Access the world’s leading online knowledgebase of doctor-created health information.");
+        test.ok(r);
+        test.equal(r.getSource(), "Access the world’s leading online knowledgebase of doctor-created health information.");
+        test.equal(r.getKey(), "r911624588");
+        
+        r = set.getBySource("We‘re committed to helping you feel good!");
+        test.ok(r);
+        test.equal(r.getSource(), "We‘re committed to helping you feel good!");
+        test.equal(r.getKey(), "r663766473");
 
         test.done();
     },

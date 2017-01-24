@@ -350,14 +350,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_footer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="11241" resname="r155656147" restype="string" datatype="x-haml">
-        <source>. You will still receive notifications regarding account activity.</source>
-        <target>.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="app/views/static_pages/team.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="570" resname="r373340760" restype="string" datatype="ruby">
@@ -434,11 +426,7 @@
     <body>
       <trans-unit id="6220" resname="r459952160" restype="string" datatype="x-haml">
         <source>Global Health Practice</source>
-        <target>全球卫生实践</target>
-      </trans-unit>
-      <trans-unit id="6224" resname="r819804839" restype="string" datatype="x-haml">
-        <source>. We’re excited to deliver immediate, world-class healthcare 24/7 from Query-to-Cure</source>
-        <target>.</target>
+        <target>全球卫生诊疗</target>
       </trans-unit>
     </body>
   </file>
@@ -464,10 +452,6 @@
   </file>
   <file original="prime_guidelines.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="6242" resname="r1047149766" restype="string" datatype="x-haml">
-        <source>. Doctors are  chosen based on taking an active role in the HealthTap community, demonstrating clinical excellence, and getting high ratings from your colleagues and patients for your answers to questions, curated news and research, and Virtual Consults.</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="6244" resname="r383321681" restype="string" datatype="x-haml">
         <source>Yes. Because we are a 24/7/365 service, we expect our doctors to fulfill their shifts on federal holidays. If, for any reason, you will not be available for your shift, please notify us of this with at least one-week notice.</source>
         <target>是。如果由于任何原因，您无法进行换班，请至少提前一周通知我们。</target>
@@ -490,7 +474,7 @@
       </trans-unit>
       <trans-unit id="9759" resname="r374187118" restype="string" datatype="x-haml">
         <source>Through your years of practice experience, you’ll know the relevant questions to ask the patient. Expect frequently the patient will have prepared for the consult using HealthTap, and will ask very informed questions.</source>
-        <target>通过您多年的实践经验，您会知道要问患者哪些相关的问题。期望患者将经常使用HealthTap来为咨询做准备，并会提出非常不正式的问题。</target>
+        <target>通过您多年的诊疗经验，您会知道要问患者哪些相关的问题。期望患者将经常使用HealthTap来为咨询做准备，并会提出非常不正式的问题。</target>
       </trans-unit>
       <trans-unit id="9763" resname="r523285541" restype="string" datatype="x-haml">
         <source>Most patients will expect to collaborate with you in the creation of their care plan. Encourage this, as it will increase their buy-in.</source>
@@ -510,7 +494,7 @@
       </trans-unit>
       <trans-unit id="9775" resname="r940931608" restype="string" datatype="x-haml">
         <source>These changes are made less than one week in advance. Changes on short notice are excusable only for real personal and professional emergencies. Requests to change shifts without an acceptable excuse may result in your loss of privileges as a HealthTap Prime doctor.</source>
-        <target>短期通知的变更仅适用于真正的个人和专业紧急情况。没有可接受的理由而要求换班可能导致您失去作为HealthTap首席医生的特权。</target>
+        <target>短期通知的变更仅适用于真正的个人和专业紧急情况。没有可接受的理由而要求换班可能导致您失去作为HealthTap Prime医生的特权。</target>
       </trans-unit>
       <trans-unit id="9776" resname="r803547633" restype="string" datatype="x-haml">
         <source>Patients love the human connection and want your personality to shine through. Studies show that a smile will not only help put your patients at ease, but will make them more receptive to your advice and be more satisfied overall! And as always, treat patients as you would wish to be treated--with kindness, patience, and care. We want to create a delightful doctor-patient experience during each and every Virtual Consult.*</source>
@@ -1066,17 +1050,9 @@
         <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult.</source>
         <target>新的治疗处方和补充药（不包括受管制的药物），可以发送到您当地的药店，根据您的在线咨询，医生给出适当的指示和治疗方式。</target>
       </trans-unit>
-      <trans-unit id="9883" resname="r387303937" restype="string" datatype="x-haml">
-        <source>. Please enter it below:</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="9887" resname="r984158073" restype="string" datatype="x-haml">
-        <source>. We do this to qualify users for the free trial and to discourage abuse.</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="9888" resname="r281033702" restype="string" datatype="x-haml">
         <source>, which will be refunded in full if you cancel your subscription before your trial ends on</source>
-        <target>,如果您在试用期结束前取消订阅，我们将全额退款</target>
+        <target>,如果您在试用期结束前取消订购，我们将全额退款</target>
       </trans-unit>
       <trans-unit id="9890" resname="r589054439" restype="string" datatype="x-haml">
         <source>HealthTap Prime gives you immediate access to real doctors and their valuable time. Please register only if you have the intention of using and evaluating HealthTap Prime.</source>
@@ -1191,7 +1167,7 @@
     <body>
       <trans-unit id="1109" resname="r988070812" restype="string" datatype="x-haml">
         <source>A doctor is available for you now!</source>
-        <target>1名医生现在可以为您服务</target>
+        <target>1名医生在线为您服务</target>
       </trans-unit>
     </body>
   </file>
@@ -1576,7 +1552,7 @@
       </trans-unit>
       <trans-unit id="9992" resname="r199287556" restype="string" datatype="x-haml">
         <source>Tell doctors a little more so they can personalize their answers</source>
-        <target>告诉医生多一点您的情况，使他们能够为您的问题提供个性化的回答</target>
+        <target>告诉医生多一点您的情况，使他们能够为您的问题提供专属于您的回答</target>
       </trans-unit>
       <trans-unit id="9993" resname="r409235359" restype="string" datatype="x-haml">
         <source>You must be at least 16 years old to use HealthTap.</source>
@@ -1584,7 +1560,7 @@
       </trans-unit>
       <trans-unit id="9994" resname="r1037232184" restype="string" datatype="x-haml">
         <source>For a more personalized experience</source>
-        <target>为了获得更加个性化的体验</target>
+        <target>为了获得更加专属于您的体验</target>
       </trans-unit>
       <trans-unit id="9997" resname="r297124604" restype="string" datatype="x-haml">
         <source>What would you like to do first?</source>
@@ -1596,7 +1572,7 @@
       </trans-unit>
       <trans-unit id="9999" resname="r1019382599" restype="string" datatype="x-haml">
         <source>Browse feed</source>
-        <target>浏览Feed</target>
+        <target>浏览主页</target>
       </trans-unit>
     </body>
   </file>
@@ -1781,7 +1757,7 @@
     <body>
       <trans-unit id="1649" resname="r862242028" restype="string" datatype="x-haml">
         <source>Subscribe today</source>
-        <target>现在订阅</target>
+        <target>现在订购</target>
       </trans-unit>
       <trans-unit id="7487" resname="r733308187" restype="string" datatype="x-haml">
         <source>family. There are so many times I get scared, this website allows me to ask</source>
@@ -1929,7 +1905,7 @@
     <body>
       <trans-unit id="1945" resname="r697712730" restype="string" datatype="ruby">
         <source>Find a Doctor</source>
-        <target>寻找一位医生</target>
+        <target>寻找一名医生</target>
       </trans-unit>
     </body>
   </file>
@@ -2407,7 +2383,7 @@
       </trans-unit>
       <trans-unit id="9087" resname="r476115586" restype="string" datatype="x-haml">
         <source>Helpful Articles</source>
-        <target>有用的文章</target>
+        <target>有帮助的文章</target>
       </trans-unit>
       <trans-unit id="9089" resname="r932790325" restype="string" datatype="x-haml">
         <source>Post FeelGood Moment</source>
@@ -2427,7 +2403,7 @@
     <body>
       <trans-unit id="2687" resname="r423447037" restype="string" datatype="ruby">
         <source>HealthTap is a give and take community. To ask your curbside consult, please support your trusted colleagues by answering patient questions to enable this service.</source>
-        <target>HealthTap是一个平等交换的社区。请通过回答患者的问题来支持您信任的同事，以获得路边咨询服务。</target>
+        <target>HealthTap是一个收获与贡献并存的社区。请通过回答患者的问题来支持您信任的同事，以获得路边咨询服务。</target>
       </trans-unit>
     </body>
   </file>
@@ -3164,7 +3140,7 @@
       </trans-unit>
       <trans-unit id="4864" resname="r963965918" restype="string" datatype="ruby">
         <source>Receive timely, helpful doctor reminders to help you take action and feel good faster.</source>
-        <target>及时接受有用的医生提醒帮助您更快的采取行动</target>
+        <target>及时接受有帮助的医生提醒帮助您更快的采取行动</target>
       </trans-unit>
     </body>
   </file>
@@ -3260,7 +3236,7 @@
     <body>
       <trans-unit id="5131" resname="r617453013" restype="string" datatype="ruby">
         <source>Message subscription</source>
-        <target>消息订阅</target>
+        <target>消息订购</target>
       </trans-unit>
     </body>
   </file>
@@ -3448,7 +3424,7 @@
       </trans-unit>
       <trans-unit id="5358" resname="r1023464516" restype="string" datatype="x-haml">
         <source>, we connect you directly with the best health information and the best doctors, from your mobile device or on the web. Here at HealthTap, there’s no waiting room.</source>
-        <target>我们从您的移动设备或在网络上直接与您的最佳健康信息和最好的医生联系。在HealthTap，不设候诊室。</target>
+        <target>我们从您的移动设备或在网络上直接与您的最佳健康信息和最好的医生联系。在HealthTap，不用候诊。</target>
       </trans-unit>
       <trans-unit id="5359" resname="r903076345" restype="string" datatype="x-haml">
         <source>Learn more</source>
@@ -3616,7 +3592,7 @@
       </trans-unit>
       <trans-unit id="5400" resname="r347073913" restype="string" datatype="x-haml">
         <source>Not a doctor? Help here ›</source>
-        <target>不是一位医生吗?这里需要帮助 ›</target>
+        <target>不是一名医生吗?这里需要帮助 ›</target>
       </trans-unit>
       <trans-unit id="5401" resname="r659475024" restype="string" datatype="x-haml">
         <source>Great! Now tell your colleagues who invited them</source>
@@ -3640,7 +3616,7 @@
       </trans-unit>
       <trans-unit id="5409" resname="r1018805268" restype="string" datatype="x-haml">
         <source>Are you a doctor? Help here ›</source>
-        <target>您是一位医生吗？这里需要帮助 ›</target>
+        <target>您是一名医生吗？这里需要帮助 ›</target>
       </trans-unit>
     </body>
   </file>
@@ -3788,11 +3764,11 @@
       </trans-unit>
       <trans-unit id="5453" resname="r458906778" restype="string" datatype="x-haml">
         <source>Dr. Jeff Livingston is HealthTap&apos;s Medical Director. He is a national thought leader and speaker on doctor adoption of social media. He has been a doctor at MacArthur OB/GYN since 2003 in Irving, Texas. He previously served as Chairman of the Obstetrics and Gynecology Department at Baylor Medical Center of Irving. Several national publications, including USA Today, Wired magazine, Computerworld.com and Physicians Practice have featured his combined use of Facebook, Twitter and a secure patient portal to effectively communicate with patients and to better meet their everyday healthcare needs.</source>
-        <target>Dr. Jeff Livingston是HealthTap的医疗主管。他是一个国家思想领袖和关于医生采用社交媒体倡议者。他2003年曾在德克萨斯州欧文市担任MacArthur OB / GYN的医生。他先前是欧文贝勒医学中心妇产科的主席。一些国家刊物，包括《今日美国》、《连线》杂志、《计算机世界》和《医生实践》精选整合了Facebook, Twitter和患者安全的门户来有效的与患者沟通交流和应和他们每天的健康需求。</target>
+        <target>Jeff Livingston医生是HealthTap的医疗主管。他是一个国家思想领袖和关于医生采用社交媒体倡议者。他2003年曾在德克萨斯州欧文市担任MacArthur OB / GYN的医生。他先前是欧文贝勒医学中心妇产科的主席。一些国家刊物，包括《今日美国》、《连线》杂志、《计算机世界》和《医生诊疗》精选整合了Facebook, Twitter和患者安全的门户来有效的与患者沟通交流和应和他们每天的健康需求。</target>
       </trans-unit>
       <trans-unit id="5454" resname="r192036349" restype="string" datatype="x-haml">
         <source>Dr. Livingston serves on the Medical Advisory Board for HealthTap and he is the Chief Medical officer for Healthcare Transformation Solutions. He is on Twitter as @macobgyn and is an active doctor blogger.</source>
-        <target>Dr. Livingston在HealthTap的顾问委员会就职并且是医疗转换解决方案的首席医务官。他Twitter为@macobgyn，是一位活跃的医生博主。</target>
+        <target>Livingston医生在HealthTap的顾问委员会就职并且是医疗转换解决方案的首席医务官。他Twitter为@macobgyn，是一位活跃的医生博主。</target>
       </trans-unit>
       <trans-unit id="5455" resname="r1037724125" restype="string" datatype="x-haml">
         <source>We&apos;re hiring! Visit our</source>
@@ -3820,7 +3796,7 @@
     <body>
       <trans-unit id="5462" resname="r549709137" restype="string" datatype="x-haml">
         <source>with your colleagues from medical school and residency. Learn how top colleagues in your area of practice are answering medical questions.</source>
-        <target>从医学院与您的同事。了解您实践领域的知名同事如何回答医疗问题。</target>
+        <target>从医学院与您的同事。了解您诊疗领域的知名同事如何回答医疗问题。</target>
       </trans-unit>
       <trans-unit id="5463" resname="r394711374" restype="string" datatype="x-haml">
         <source>and help guide the next generation of doctors through</source>
@@ -3864,7 +3840,7 @@
     <body>
       <trans-unit id="5475" resname="r165640686" restype="string" datatype="x-haml">
         <source>Follow a doctor to receive their HealthTap answers, interactions and updates on your feed. You can also start a private conversation by sending the doctor a message or requesting an in-person appointment.</source>
-        <target>关注一个医生来获得他们的HealthTap回答，相互交流并且更新您的新闻订阅。您也可以通过给您的医生发一个信息来开始一个私人的对话或者请求一个面对面的交流机会。</target>
+        <target>关注一名医生来获得他们的HealthTap回答，相互交流并且更新您的主页。您也可以通过给您的医生发一个信息来开始一个私人的对话或者请求一个面对面的交流机会。</target>
       </trans-unit>
       <trans-unit id="5476" resname="r3472613" restype="string" datatype="x-haml">
         <source>5</source>
@@ -3872,7 +3848,7 @@
       </trans-unit>
       <trans-unit id="5477" resname="r444623222" restype="string" datatype="x-haml">
         <source>Did you find a particular doctor&apos;s answer helpful? Show them your appreciation with just one click by thanking them. You&apos;ll also have the opportunity to provide a personalized thank you note.</source>
-        <target>您找到一个特别的医生有帮助的回答吗？向他们表示感谢，只需点击一下感谢他们。您还将有机会提供个性化的感谢信。</target>
+        <target>您找到一个特别的医生有帮助的回答吗？向他们表示感谢，只需点击一下感谢他们。您还将有机会提供专属于您的感谢信。</target>
       </trans-unit>
     </body>
   </file>
@@ -3924,7 +3900,7 @@
       </trans-unit>
       <trans-unit id="5487" resname="r259970063" restype="string" datatype="x-haml">
         <source>Want clarification?  Ask a question about the article to our community of experts, or even enter into a Private Conversation about it with the doctor you choose.</source>
-        <target>想要解释？您可以向我们的专家团队咨询一些有关这篇文章的问题，您也可以选择一个医生进行单独的会话。</target>
+        <target>想要解释？您可以向我们的专家团队咨询一些有关这篇文章的问题，您也可以选择一名医生进行单独的会话。</target>
       </trans-unit>
       <trans-unit id="5488" resname="r926132162" restype="string" datatype="x-haml">
         <source>Want to know what other doctors think of the research?  Read the comments posted by medical experts, and learn what they have to say.</source>
@@ -3964,7 +3940,7 @@
       </trans-unit>
       <trans-unit id="5496" resname="r881633193" restype="string" datatype="x-haml">
         <source>If you’d like to follow up with an additional question for this doctor, you can do so. Follow up messages to a private conversation are available at half price.</source>
-        <target>如果您想跟进这个医生的其他问题，您可以这样做。后续私人会话的消息可以半价获得。</target>
+        <target>如果您想跟进这名医生的其他问题，您可以这样做。后续私人会话的消息可以半价获得。</target>
       </trans-unit>
     </body>
   </file>
@@ -4004,7 +3980,7 @@
     <body>
       <trans-unit id="5507" resname="r421139474" restype="string" datatype="x-haml">
         <source>Your Virtual Practice page is how users see you on HealthTap. It is the place where all of the expert content you create, Agree with, and curate appear. Your professional contact information and bio also appear here. This is the place to send existing and prospective patients to demonstrate your expertise.</source>
-        <target>您的在线实践页面是用户如何在HealthTap上看到您。这是您创建，同意和策展的所有专家内容出现的地方。您的专业联系信息和个人资料也出现在这里。这里是传送现有的和可能的患者以展示您的专业知识的地方</target>
+        <target>您的在线诊疗页面是用户如何在HealthTap上看到您。这是您创建，同意和策展的所有专家内容出现的地方。您的专业联系信息和个人资料也出现在这里。这里是传送现有的和可能的患者以展示您的专业知识的地方</target>
       </trans-unit>
       <trans-unit id="5509" resname="r911785260" restype="string" datatype="x-haml">
         <source>Your statistics are a reflection of your engagement on HealthTap. Raising your stats raises your rank among your peers and enhances your Trust Score, which helps get you featured to new and existing patients.</source>
@@ -4052,7 +4028,7 @@
     <body>
       <trans-unit id="5520" resname="r388696234" restype="string" datatype="x-haml">
         <source>HealthTap’s new Publications feature expands the reach of your expertise.  Studies in peer-reviewed publications are now highlighted on HealthTap, directly from your Virtual Practice.  Your research will be highlighted to Members looking for related health information on HealthTap, and you can even add to the description of your work. Have comments on an existing study?  We’ve got you covered – add comments to the publications and even answer public questions or engage in private conversations with members about any study listed on HealthTap.</source>
-        <target>HealthTap的新出版物功能拓展了您的专业知识的范围。发表在同行评审出版物的研究现在突出显示在HealthTap上，直接在您的在线实践上可以看到。您的研究将突出显示给在HealthTap上寻找相关健康信息的会员，甚至您可以添加到您的工作描述中。对现有研究有评论吗？我们已经覆盖所有操作 - 向出版物添加评论，甚至回答公众问题，或与会员进行关于HealthTap上列出的任何研究的私人谈话。</target>
+        <target>HealthTap的新出版物功能拓展了您的专业知识的范围。发表在同行评审出版物的研究现在突出显示在HealthTap上，直接在您的在线诊疗上可以看到。您的研究将突出显示给在HealthTap上寻找相关健康信息的会员，甚至您可以添加到您的工作描述中。对现有研究有评论吗？我们已经覆盖所有操作 - 向出版物添加评论，甚至回答公众问题，或与会员进行关于HealthTap上列出的任何研究的私人谈话。</target>
       </trans-unit>
     </body>
   </file>
@@ -4124,7 +4100,7 @@
       </trans-unit>
       <trans-unit id="5534" resname="r54667956" restype="string" datatype="x-haml">
         <source>HealthTap U students review real health questions and assist licensed doctors in creating personalized answers. Experienced doctor mentors review, offer feedback and edit those answers. Work that meets mentors&apos; high clinical standards are cosigned and accepted for online publication.</source>
-        <target>HealthTap U学生回顾真实的健康问题，并帮助有执照的医生创建个性化的回答。经验丰富的医生导师审查，提供反馈和编辑那些回答。满足导师的高临床标准的工作是在网上发布的。</target>
+        <target>HealthTap U学生回顾真实的健康问题，并帮助有执照的医生创建专属于您的回答。经验丰富的医生导师审查，提供反馈和编辑那些回答。满足导师的高临床标准的工作是在网上发布的。</target>
       </trans-unit>
     </body>
   </file>
@@ -4140,11 +4116,11 @@
       </trans-unit>
       <trans-unit id="5537" resname="r228884141" restype="string" datatype="x-haml">
         <source>Ask any health question and get quick answers from thousands of trusted, U.S.-licensed doctors. Get updated on fresh information in a real-time feed.</source>
-        <target>咨询任何健康问题，并获得来自数千名可信赖的，具有美国医生执照医生的快速答复。更新实时新闻订阅中的新鲜信息。</target>
+        <target>咨询任何健康问题，并获得来自数千名可信赖的，具有美国医生执照医生的快速答复。更新实时主页中的新鲜信息。</target>
       </trans-unit>
       <trans-unit id="5538" resname="r364971773" restype="string" datatype="x-haml">
         <source>Ask one question; get multiple answers from trusted doctors across the country. Access your own personalized, relevant health feed that’s always up-to-date.</source>
-        <target>问一个问题; 从全国各地受信任的医生获得多个回答。访问您自己的个性化，相关的始终是最新的新闻订阅.。</target>
+        <target>问一个问题; 从全国各地受信任的医生获得多个回答。访问您自己的个性化，相关的始终是最新的主页.。</target>
       </trans-unit>
       <trans-unit id="5539" resname="r913103717" restype="string" datatype="x-haml">
         <source>Receive daily TipTaps on topics that matter most to you. TipTaps are beautiful, bite-sized, tid-bits of health wisdom delivered to you by the world&apos;s best doctors!</source>
@@ -4220,7 +4196,7 @@
     <body>
       <trans-unit id="5547" resname="r913623860" restype="string" datatype="x-haml">
         <source>Having broad online visibility is critical to creating a thriving practice, but it can be costly and confusing to set up and manage. With HealthTap, you get all of the benefits of an optimized website and a robust audience of patients for free. And your interactions on HealthTap are completely safe and HIPAA-secure.</source>
-        <target>具有广泛的在线可见性对于创建一个蓬勃发展的实践至关重要，但它可能是昂贵的，设置和管理起来很困惑。通过HealthTap，您可以免费获得关于网站优化和强大的患者受众的所有益处。您在HealthTap上的交互是完全安全的，并且HIPAA加密。</target>
+        <target>具有广泛的在线可见性对于创建一个蓬勃发展的诊疗至关重要，但它可能是昂贵的，设置和管理起来很困惑。通过HealthTap，您可以免费获得关于网站优化和强大的患者受众的所有益处。您在HealthTap上的交互是完全安全的，并且HIPAA加密。</target>
       </trans-unit>
       <trans-unit id="5548" resname="r692557324" restype="string" datatype="x-haml">
         <source>Create visibility. Manage your online reputation.</source>
@@ -4252,7 +4228,7 @@
     <body>
       <trans-unit id="5555" resname="r525636164" restype="string" datatype="x-haml">
         <source>for patients to use. Easily customize your photo, logo, and practice name.</source>
-        <target>为患者使用轻松自定义您的照片，标志和实践名称。</target>
+        <target>为患者使用轻松自定义您的照片，标志和诊疗名称。</target>
       </trans-unit>
     </body>
   </file>
@@ -4304,7 +4280,7 @@
     <body>
       <trans-unit id="5568" resname="r1041249213" restype="string" datatype="x-haml">
         <source>What you are &quot;Known For&quot; is a reflection of the advanced training you&apos;ve received combined with your interests and the experiences you&apos;ve had in your practice. You deserve tremendous recognition for your knowledge and expertise, and we want to give it it to you!</source>
-        <target>您因什么而闻名是结合您的兴趣和您在实践中的经验所得到的先进训练的反映。您应该得到许多关于您的知识和专长的认可，而我们想给它授予给您！</target>
+        <target>您因什么而闻名是结合您的兴趣和您在诊疗中的经验所得到的先进训练的反映。您应该得到许多关于您的知识和专长的认可，而我们想给它授予给您！</target>
       </trans-unit>
     </body>
   </file>
@@ -4372,7 +4348,7 @@
     <body>
       <trans-unit id="5587" resname="r624959997" restype="string" datatype="x-haml">
         <source>ClubMD membership is by special invitation only to a select group of the most active experts on HealthTap who create the highest quality, accurate, compassionate and helpful answers to member questions. We review the activities of experts, and select a limited number of experts to invite to ClubMD each month. Selection is based on the number and quality of helpful answers given, and on the number and quality of peer review Agrees. If you would like to be considered, feel free to let us know by sending an email to</source>
-        <target>ClubMD会员制度只邀请了HealthTap最活跃的专家，他们将会提高最好质量，准确，热情的以及有助的回答我们每月都会审核专家的工作，并且邀请数名专家进入ClubMD。筛选是基于专家给出的有用回答的数量和质量，以及同行评审对于专家回答的同意的数量和质量。可以通过HealthTap的媒体区访问演讲和媒体访谈。</target>
+        <target>ClubMD会员制度只邀请了HealthTap最活跃的专家，他们将会提高最好质量，准确，热情的以及有帮助的回答我们每月都会审核专家的工作，并且邀请数名专家进入ClubMD。筛选是基于专家给出的有帮助的回答的数量和质量，以及同行评审对于专家回答的同意的数量和质量。可以通过HealthTap的媒体区访问演讲和媒体访谈。</target>
       </trans-unit>
     </body>
   </file>
@@ -4384,7 +4360,7 @@
       </trans-unit>
       <trans-unit id="5589" resname="r187855808" restype="string" datatype="x-haml">
         <source>We believe that the best doctors can help millions of people identify which applications are the most useful and helpful. To facilitate this, we’ve created an Editorial Board to which the best doctors in the HealthTap Network are invited.</source>
-        <target>我们相信最好的医生是可以帮助数百万人找到哪些应用是最有效并且有用的。为促进健康应用更有效的使用，我们已为HealthTap平台最好的医生创建了一块编辑页面。</target>
+        <target>我们相信最好的医生是可以帮助数百万人找到哪些应用是最有效并且有帮助的。为促进健康应用更有效的使用，我们已为HealthTap平台最好的医生创建了一块编辑页面。</target>
       </trans-unit>
       <trans-unit id="5590" resname="r1012520298" restype="string" datatype="x-haml">
         <source>Members of the exclusive HealthTap Doctor Editorial Board are shaping the future of mobile health through their app recommendations. Application to the Editorial Board is simple:</source>
@@ -4636,7 +4612,7 @@
       </trans-unit>
       <trans-unit id="5692" resname="r542671087" restype="string" datatype="x-haml">
         <source>On the secure clinical records systems of your Primary Health Organisation &#40;such as a GP practice&#41;, if you are registered with one of these organisations. The same as if you met with a GP face to face.</source>
-        <target>如果您已注册这些组织之一，在您的初级健康组织的安全临床记录系统（如GP实践）。就像面对面的与GP见面一样。</target>
+        <target>如果您已注册这些组织之一，在您的初级健康组织的安全临床记录系统（如GP诊疗）。就像面对面的与GP见面一样。</target>
       </trans-unit>
     </body>
   </file>
@@ -4792,11 +4768,11 @@
       </trans-unit>
       <trans-unit id="5745" resname="r460367591" restype="string" datatype="x-haml">
         <source>means paid services provided through the Apps &#40;such as Concierge and Prime&#41;.</source>
-        <target>指通过应用程序提供的付费服务（如邀请和Prime）。</target>
+        <target>指通过应用程序提供的付费服务（如贵宾台和Prime）。</target>
       </trans-unit>
       <trans-unit id="5746" resname="r612336424" restype="string" datatype="x-haml">
         <source>HealthTap and HealthTap Premium Services &#40;Prime and Concierge&#41; connect you with leading doctors, trusted health information, answers, and tips, and even virtual consultations, all designed to help you feel good and live a happier, healthier life. HealthTap and HealthTap Premium Services are different services available through the same Apps, and additional terms of use apply to HealthTap Premium Services.</source>
-        <target>HealthTap和HealthTap黄金会员服务（黄金会员和专家医生）将您与首席医生，可信的健康信息，回答和小贴士，甚至在线咨询相关联，所有都旨在帮助您体验良好更快乐更健康的生活。HealthTap和HealthTap 黄金会员服务是通过相同应用程序提供的不同服务，其他使用条款将用于HealthTap 黄金会员服务。</target>
+        <target>HealthTap和HealthTap优质服务（Prime和贵宾台）将您与首席医生，可信的健康信息，回答和小贴士，甚至在线咨询相关联，所有都旨在帮助您体验良好更快乐更健康的生活。HealthTap和HealthTap优质服务是通过相同应用程序提供的不同服务，其他使用条款将用于HealthTap优质服务。</target>
       </trans-unit>
       <trans-unit id="5747" resname="r838261905" restype="string" datatype="x-haml">
         <source>On HealthTap no formal medical diagnosis, treatment, or prescriptions are allowed. ALL INFORMATION PROVIDED ON HEALTHTAP OR IN CONNECTION WITH ANY COMMUNICATIONS SUPPORTED BY HEALTHTAP, INCLUDING BUT NOT LIMITED TO COMMUNICATIONS WITH HEALTHTAP MEDICAL EXPERTS IS INTENDED TO BE FOR GENERAL INFORMATIONAL PURPOSES ONLY, AND IS IN NO WAY INTENDED TO CREATE A PHYSICIAN - PATIENT RELATIONSHIP AS DEFINED BY STATE AND FEDERAL LAW; HEALTHTAP IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL DIAGNOSIS OR TREATMENT; AND RELIANCE ON ANY INFORMATION PROVIDED BY HEALTHTAP OR ANY HEALTHTAP MEDICAL EXPERTS IS SOLELY AT YOUR OWN RISK.</source>
@@ -4804,7 +4780,7 @@
       </trans-unit>
       <trans-unit id="5748" resname="r283691226" restype="string" datatype="x-haml">
         <source>On HealthTap Prime and Concierge, as available and appropriate for virtual consults, diagnosis and prescriptions are available. HealthTap Prime and Concierge are not a substitute for: health insurance, a primary care doctor, or in-person health care interactions. You agree not to use HealthTap Prime as a substitute for health insurance or a primary care doctor or in- person doctor visits. You understand and agree that prescriptions on HealthTap prime are limited in type and duration, and you agree not to use HealthTap Prime to request prescriptions for any medications or for any duration not permitted via HealthTap Prime.</source>
-        <target>在HealthTap Prime黄金会员和专家医生，为了可实施并且合适的在线咨询，诊断和处方是可供使用的。HealthTap Prime黄金会员和专家医生不是为了医疗保险，一个普通门诊医生或切身健康护理互动的替代品。您同意不把HealthTap Prime作为健康保险或初级保健医生或现场医生访问的替代品使用。您理解并同意HealthTap 黄金会员的处方将被限制于类型和持续时间，并且您同意不使用HealthTap 黄金会员来请求任何药物或任何时间不被HealthTap黄金会员允许的处方。</target>
+        <target>在HealthTap Prime会员和贵宾台，为了可实施并且合适的在线咨询，诊断和处方是可供使用的。HealthTap Prime会员和贵宾台不是为了医疗保险，一个普通门诊医生或切身健康护理互动的替代品。您同意不把HealthTap Prime作为健康保险或初级保健医生或现场医生访问的替代品使用。您理解并同意HealthTap Prime的处方将被限制于类型和持续时间，并且您同意不使用HealthTap Prime来请求任何药物或任何时间不被HealthTap Prime允许的处方。</target>
       </trans-unit>
       <trans-unit id="5749" resname="r594966020" restype="string" datatype="x-haml">
         <source>These Terms of Use require the use of arbitration to resolve disputes and also limit the remedies available to you in the event of a dispute</source>
@@ -4824,11 +4800,11 @@
       </trans-unit>
       <trans-unit id="5753" resname="r964216537" restype="string" datatype="x-haml">
         <source>On HealthTap Prime you can obtain care &#40;if you are located in a state where this service is available&#41;. This TOU applies to HealthTap.</source>
-        <target>在HealthTap Prime黄金会员上，您可以获得护理（如果您位于此服务可用的状态）。本TOU适用于HealthTap。</target>
+        <target>在HealthTap Prime上，您可以获得护理（如果您位于此服务可用的状态）。本TOU适用于HealthTap。</target>
       </trans-unit>
       <trans-unit id="5754" resname="r774693743" restype="string" datatype="x-haml">
         <source>On HealthTap you can ask and find informational questions and related educational answers by Medical Experts. HealthTap is not a place for the practice of medicine, but Medical Experts on HealthTap can be a resource for reliable, relevant general health information. We hope these services will be of value to you. Please use them responsibly.</source>
-        <target>在HealthTap Prime黄金会员上，您可以询问并且找到医疗专家给出的回答。HealthTap不是医疗实践的地方，但HealthTap的医疗专家可以作为可靠，相关的一般健康信息的资源。我们希望这些服务对您有价值。请负责任地使用它们。</target>
+        <target>在HealthTap上，您可以询问并且找到医疗专家给出的回答。HealthTap不是医疗诊疗的地方，但HealthTap的医疗专家可以作为可靠，相关的一般健康信息的资源。我们希望这些服务对您有价值。请负责任地使用它们。</target>
       </trans-unit>
       <trans-unit id="5755" resname="r1035816923" restype="string" datatype="x-haml">
         <source>service is available&#41;. This TOU applies to HealthTap. Additional terms apply to HealthTap Prime and</source>
@@ -4840,7 +4816,7 @@
       </trans-unit>
       <trans-unit id="5757" resname="r928976790" restype="string" datatype="x-haml">
         <source>HealthTap Prime and HealthTap Concierge support doctor-patient relationships. HealthTap</source>
-        <target>HealthTap Prime和HealthTap特邀支持医患关系。HealthTap</target>
+        <target>HealthTap Prime和HealthTap贵宾台支持医患关系。HealthTap</target>
       </trans-unit>
       <trans-unit id="5758" resname="r154083028" restype="string" datatype="x-haml">
         <source>between you and your personal professional healthcare provider&#41; within the United States. Medical Experts on HealthTap are not &quot;your&quot; doctor,</source>
@@ -4860,11 +4836,11 @@
       </trans-unit>
       <trans-unit id="5762" resname="r210258511" restype="string" datatype="x-haml">
         <source>Content or Services to diagnose or treat a medical condition. Use HealthTap Prime or Concierge &#40;where appropriate and permitted&#41; or see your doctor in</source>
-        <target>内容或服务，以诊断或治疗医疗状况。使用HealthTap 黄金会员或专家医生（在适当和允许的情况下）或亲自见医生</target>
+        <target>内容或服务，以诊断或治疗医疗状况。使用HealthTap Prime或贵宾台（在适当和允许的情况下）或亲自见医生</target>
       </trans-unit>
       <trans-unit id="5763" resname="r767769823" restype="string" datatype="x-haml">
         <source>HealthTap Medical Experts and professionals or specialists utilizing or featured on HealthTap are not employees or independent contractor service providers of HealthTap. Any opinions, advice, or information expressed by any such individuals are those of the individual and the individual alone and they do not reflect the opinions of HealthTap. HealthTap does not recommend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned on HealthTap or by a licensee of HealthTap. &#40;Doctors on HealthTap Prime are independent contractors of separate professional corporations&#41;</source>
-        <target>HealthTap医疗专家和HealthTap使用的专家不是HealthTap的雇员或独立承包商服务提供商。任何此类个人所表达的任何意见，建议或信息都不代表HealthTap的意见。HealthTap不推荐或认可HealthTap或HealthTap许可证持有者可能提及的任何特定检验、医生、产品、临床操作、意见或其他信息。（HealthTap 黄金会员的医生是独立专业公司的合约人）</target>
+        <target>HealthTap医疗专家和HealthTap使用的专家不是HealthTap的雇员或独立承包商服务提供商。任何此类个人所表达的任何意见，建议或信息都不代表HealthTap的意见。HealthTap不推荐或认可HealthTap或HealthTap许可证持有者可能提及的任何特定检验、医生、产品、临床操作、意见或其他信息。（HealthTap Prime的医生是独立专业公司的合约人）</target>
       </trans-unit>
       <trans-unit id="5764" resname="r515029493" restype="string" datatype="x-haml">
         <source>The inclusion of professionals and specialists on HealthTap or in any professional directory on HealthTap does not imply recommendation or endorsement of such professional nor is such information intended as a tool for verifying the credentials, qualifications, or abilities of any professional contained therein. SUCH INFORMATION IS PROVIDED ON AN &quot;AS-IS&quot; BASIS AND HEALTHTAP DISCLAIMS ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR PARTICULAR PURPOSE. HEALTHTAP SHALL IN NO EVENT BE LIABLE TO YOU OR TO ANYONE FOR ANY DECISION MADE OR ACTION TAKEN BY ANY PARTY &#40;INCLUDING, WITHOUT LIMITATION, ANY USER&#41; IN RELIANCE ON INFORMATION ABOUT PROFESSIONALS AND SPECIALISTS ON HEALTHTAP. The use of HealthTap by any entity or individual to verify the credentials of professionals or specialists is prohibited.</source>
@@ -4940,11 +4916,11 @@
       </trans-unit>
       <trans-unit id="5782" resname="r593563298" restype="string" datatype="x-haml">
         <source>Second opinion consult: this is a consult in which a doctor can provide you with information about a health issue or a second opinion on a prior diagnosis. A new diagnosis, treatment, or other care are not available in a second opinion consult.</source>
-        <target>第二意见咨询：这是一个医生可以向您提供有关健康问题的信息或关于先前诊断的第二意见的咨询。在第二意见咨询中将不提供新的诊断，治疗或其他护理。</target>
+        <target>第二意见咨询：这是一名医生可以向您提供有关健康问题的信息或关于先前诊断的第二意见的咨询。在第二意见咨询中将不提供新的诊断，治疗或其他护理。</target>
       </trans-unit>
       <trans-unit id="5783" resname="r209490680" restype="string" datatype="x-haml">
         <source>HealthTap is intended to give you easy access to health information &#40;and even care&#41; on your computer or mobile device. As a HealthTap patient &#40;with a HealthTap Prime membership or other access to consulting doctors on HealthTap&#41;, you are entitled to receive medically necessary and appropriate care, and you agree not to abuse or overuse the access to doctors provided to you. Overuse includes requests for multiple opinions on single medical condition  HealthTap consults should not be used : to obtain numerous opinions on a single medical condition. In general, doctors may discourage this practice and may be hesitant to provide an assessment to those patients who attempt to seek multiple consults. In cases where there is an absolute medical necessity, it may be appropriate to do more than one consult in a day about a specific health issue, but you may also need to consider seeking in-person care or emergency services if the level of severity truly is at the point where multiple consults are warranted &#40;especially if in-person care is recommended by a consulting doctor on HealthTap&#41;.</source>
-        <target>HealthTap旨在让您轻松访问您计算机或移动设备上的健康信息（甚至护理）。作为HealthTap患者（具有HealthTap 黄金会员资格或其他访问HealthTap上的咨询医生的资格），您有权获得必要和适当的医疗护理，您同意不会滥用或过度使用医生的访问权。过度使用包括对单一医疗状况的多个意见的请求。HealthTap咨询不会被用于：在单个医疗状况下获得许多意见。一般来说，医生可能不鼓励这种做法，可能会犹豫向那些试图寻求多方咨询的患者提供评估。在有绝对医疗必要性的情况下，在一天内就一个特定的健康问题进行多次咨询是可行的，但如果严重程度的真实性是多方咨询所担保的，您可能需要考虑寻求面对面的护理或紧急服务（特别是如果面对面护理是HealthTap咨询医生推荐的）。</target>
+        <target>HealthTap旨在让您轻松访问您计算机或移动设备上的健康信息（甚至护理）。作为HealthTap患者（具有HealthTap Prime资格或其他访问HealthTap上的咨询医生的资格），您有权获得必要和适当的医疗护理，您同意不会滥用或过度使用医生的访问权。过度使用包括对单一医疗状况的多个意见的请求。HealthTap咨询不会被用于：在单个医疗状况下获得许多意见。一般来说，医生可能不鼓励这种做法，可能会犹豫向那些试图寻求多方咨询的患者提供评估。在有绝对医疗必要性的情况下，在一天内就一个特定的健康问题进行多次咨询是可行的，但如果严重程度的真实性是多方咨询所担保的，您可能需要考虑寻求面对面的护理或紧急服务（特别是如果面对面护理是HealthTap咨询医生推荐的）。</target>
       </trans-unit>
       <trans-unit id="5784" resname="r632748504" restype="string" datatype="x-haml">
         <source>Even if you believe you need a prescription or lab test, you should not expect a prescription or lab test order from any given consult. Patients who are located outside the U.S. may receive prescription recommendations only; lab orders are not currently possible for patients located outside the U.S. If the practitioner deems it appropriate to prescribe treatment or order lab tests for the condition discussed in a virtual consult, then the prescription or lab test&#40;s&#41; may be ordered by the physician. Lab tests are currently ordered using Quest Diagnostics lab test services; it may not be possible to order all of Quest Diagnostics lab tests &#40;if any&#41; in all U.S. states at this time. . The following medication categories cannot be prescribed or recommended in virtual consults on HealthTap: DEA category I-IV medications, lifestyle medications &#40;such as weight loss or hair loss medication&#41;, and U.S.-state regulated medications. It may be possible to get prescriptions for some psychiatric medications in HealthTap Concierge virtual consults, but doctors cannot prescribe psychiatric medications in HealthTap Prime virtual consults.</source>
@@ -4952,7 +4928,7 @@
       </trans-unit>
       <trans-unit id="5785" resname="r606500891" restype="string" datatype="x-haml">
         <source>There are cases when you may present with a condition that is long-standing for which you may have been taking a prescription for a long period of time. Even in this situation, it is up to the consulting doctor’s medical expertise and discretion to decide to order that prescription and for what duration. Please understand that in HealthTap Prime virtual consults, you and the doctor most likely do not have an established doctor-patient relationship, and best practice will be for the doctor to prescribe &#40;if at all&#41; a short-course of medication to hold you over until you are able to consult with your established doctor.</source>
-        <target>这些情况是当您可能会出现长期存在的病症，您可能已经长期服用处方。即使在这种情况下，还是取决于咨询医生的医疗专业知识和自由裁量决定是否订购处方和持续时间。请理解，在HealthTap Prime在线咨询中，您和医生很可能没有确定的医患关系，最佳实践将是医生给您开短期药物治疗的处方（如果有的话）， 直到您能够咨询到您的指定医生。</target>
+        <target>这些情况是当您可能会出现长期存在的病症，您可能已经长期服用处方。即使在这种情况下，还是取决于咨询医生的医疗专业知识和自由裁量决定是否订购处方和持续时间。请理解，在HealthTap Prime在线咨询中，您和医生很可能没有确定的医患关系，最佳诊疗将是医生给您开短期药物治疗的处方（如果有的话）， 直到您能够咨询到您的指定医生。</target>
       </trans-unit>
       <trans-unit id="5786" resname="r770388354" restype="string" datatype="x-haml">
         <source>accessed for a fee. &#40;&quot;Premium Services&quot; and &quot;Premium Content&quot;, respectively&#41;.</source>
@@ -4960,7 +4936,7 @@
       </trans-unit>
       <trans-unit id="5787" resname="r756774347" restype="string" datatype="x-haml">
         <source>HealthTap Prime Concierge are paid services. We will never ask you for your credit card</source>
-        <target>HealthTap Prime特邀是付费服务。我们永远不会询问您的信用卡</target>
+        <target>HealthTap Prime贵宾台是付费服务。我们永远不会询问您的信用卡</target>
       </trans-unit>
       <trans-unit id="5788" resname="r633901489" restype="string" datatype="x-haml">
         <source>health decisions. You may use HealthTap for personal, but not for commercial,</source>
@@ -4972,7 +4948,7 @@
       </trans-unit>
       <trans-unit id="5790" resname="r837137308" restype="string" datatype="x-haml">
         <source>consults via HealthTap Prime and Concierge. The Content is licensed only for the personal,</source>
-        <target>咨询通过HealthTap Prime和特邀。内容仅授予个人，</target>
+        <target>咨询通过HealthTap Prime和贵宾台。内容仅授予个人，</target>
       </trans-unit>
       <trans-unit id="5791" resname="r834381401" restype="string" datatype="x-haml">
         <source>household, and educational use of a single individual. No commercial use or</source>
@@ -5088,7 +5064,7 @@
       </trans-unit>
       <trans-unit id="5819" resname="r291762411" restype="string" datatype="x-haml">
         <source>help provide you with more relevant, personalized services. You may also change your location</source>
-        <target>帮助给您提供更相关，个性化的服务。您也可以更改您的位置</target>
+        <target>帮助给您提供更相关，专属于您的服务。您也可以更改您的位置</target>
       </trans-unit>
       <trans-unit id="5820" resname="r543811470" restype="string" datatype="x-haml">
         <source>. If you do not consent to such transfer, you may not use our Content or Services. The product information provided on HealthTap is intended only for residents of the United States, and may have different product labeling and disclosure requirements in different countries.</source>
@@ -5100,11 +5076,11 @@
       </trans-unit>
       <trans-unit id="5822" resname="r257212397" restype="string" datatype="x-haml">
         <source>We make no representation that all products, Content or Services described on or available through the Apps &#40;including HealthTap Prime and Concierge&#41;, are appropriate or available for use in locations outside the United States or all locations within the United States. Registered Users and Visitors access our Content and Services on their own initiative and are responsible for compliance with local laws. We make no claim that Content or Services are appropriate or may be downloaded outside of the United States. Personal information &#40;&quot;Information&quot;&#41; that is submitted to HealthTap will be collected, processed, stored, disclosed and disposed of in accordance with applicable U.S. law and our</source>
-        <target>我们不表示所有在应用程序上描述或可用的产品、内容和服务（包括黄金会员和专家）可以在美国以外或者美国所有地区使用。注册用户和访问者主动访问我们的内容和服务并有责任遵守当地法律。我们没有作相关声明表示内容和服务是适当或者能够在美国以外的地区下载。提交到HealthTap的个人信息将会根据适用的美国法律被收集、处理、存储、公开和处置。</target>
+        <target>我们不表示所有在应用程序上描述或可用的产品、内容和服务（包括Prime和专家）可以在美国以外或者美国所有地区使用。注册用户和访问者主动访问我们的内容和服务并有责任遵守当地法律。我们没有作相关声明表示内容和服务是适当或者能够在美国以外的地区下载。提交到HealthTap的个人信息将会根据适用的美国法律被收集、处理、存储、公开和处置。</target>
       </trans-unit>
       <trans-unit id="5823" resname="r1052829276" restype="string" datatype="x-haml">
         <source>When you use the Apps, you do so under a license from us. Your license to use HealthTap is personal, revocable, nonassignable, and nonexclusive. This means that you may not use the Apps for any commercial purpose, that we can take away your right to use the Apps, that you cannot give this license away to someone else, and that other members can use our Content and Services. All right, title and interest in and to the Apps and the Content, together with all intellectual property rights embodied therein &#40;including without all engagement, rating, and ranking systems and methodologies on the Apps&#41; are the property of HealthTap or our affiliates, excluding your rights under law to any information or Content related to virtual consults on HealthTap Prime or Concierge. Rights retained by other parties in the Content are their respective rights.</source>
-        <target>当您使用应用程序时，您在我们的许可证下进行。您使用HealthTap的许可是个人的、可撤销的、不可分配的和非独占性的。这就意味着您最好不要为了任何商业目的而使用应用程序，否则我们将收回您对应用程序的使用权，您也不能将许可证移交给其他人，其他会员可以使用我们的内容和服务。应用程序和内容的所有权利、所有权和利益，以及其中包含的所有知识产权（包括没有对应用程序的所有参与、评级和排名系统和方法）是属于HealthTap或我们的关联公司的财产，除了您在法律范围内对黄金会员和专家有关任何信息的在线咨询的权利。内容中其他方保留的权利是其各自的权利。</target>
+        <target>当您使用应用程序时，您在我们的许可证下进行。您使用HealthTap的许可是个人的、可撤销的、不可分配的和非独占性的。这就意味着您最好不要为了任何商业目的而使用应用程序，否则我们将收回您对应用程序的使用权，您也不能将许可证移交给其他人，其他会员可以使用我们的内容和服务。应用程序和内容的所有权利、所有权和利益，以及其中包含的所有知识产权（包括没有对应用程序的所有参与、评级和排名系统和方法）是属于HealthTap或我们的关联公司的财产，除了您在法律范围内对Prime和专家有关任何信息的在线咨询的权利。内容中其他方保留的权利是其各自的权利。</target>
       </trans-unit>
       <trans-unit id="5824" resname="r713820193" restype="string" datatype="x-haml">
         <source>We have obtained or applied for various Trademarks and service marks. HealthTap, the HealthTap logo, other HealthTap Trademarks and service marks and other HealthTap logos and product and service names are our trademarks &#40;the &quot;HealthTap Marks&quot;&#41;. If you would like to use or display any HealthTap Marks, you must ask our permission. Without our prior written permission, or according to the media use guidelines we publish, you agree not to display or use in any manner the HealthTap Marks. All trademarks, brands, and content on HealthTap are the property of their respective owners.</source>
@@ -5156,7 +5132,7 @@
       </trans-unit>
       <trans-unit id="5836" resname="r336788014" restype="string" datatype="x-haml">
         <source>HealthTap or participating on HealthTap Prime or HealthTap Concierge. Supplemental</source>
-        <target>HealthTap或参加HealthTap Prime或HealthTap特邀补充</target>
+        <target>HealthTap或参加HealthTap Prime或HealthTap贵宾台。补充</target>
       </trans-unit>
       <trans-unit id="5837" resname="r245627146" restype="string" datatype="x-haml">
         <source>for details&#41;,</source>
@@ -5268,15 +5244,15 @@
       </trans-unit>
       <trans-unit id="5865" resname="r529875894" restype="string" datatype="x-haml">
         <source>If you signed up for a free trial or limited-period discount HealthTap Prime account, and allow the trial or discount period to expire, your account will automatically convert to a standard paid subscription account &#40;starting your full-price subscription period and recurring charges&#41;.  For the first month of your full-price paid subscription only, you have a 72-hour grace period to notify HealthTap Support in writing if you do not want to continue the subscription and/or to request a refund of your first month’s full-price subscription fee. This grace-period does not apply if you have engaged in one or more consults after the free-trial period.  You may cancel your subscription at any time, and your subscription will be valid through the then current pre-paid month.  HealthTap does not offer partial-month refunds.</source>
-        <target>如果您注册了一个免费试用或时段限制的折扣HealthTap黄金会员账户，并允许试验或折扣期到期，您的帐户将自动转换为一个标准的付费订阅帐户&#40;开始您的全价购买订阅期和经常性费用&#41;。只对于您全价购买支付的第一个月的订阅，如果您不愿意继续订阅和/或要求退款全价购买订阅您的第一个月的费用，您有一个72小时的宽限期来书面通知HealthTap支持。在免费试用期之后，如果您有参与一个或更多的咨询，那么这个宽限期将不适用。您可以在任何时候取消您的订阅,然后您的订阅将通过目前预付费生效。HealthTap不提供分批月份退款。</target>
+        <target>如果您注册了一个免费试用或时段限制的折扣HealthTap Prime账户，并允许试验或折扣期到期，您的帐户将自动转换为一个标准的付费订购帐户&#40;开始您的全价购买订购期和经常性费用&#41;。只对于您全价购买支付的第一个月的订购，如果您不愿意继续订购和/或要求退款全价购买订购您的第一个月的费用，您有一个72小时的宽限期来书面通知HealthTap支持。在免费试用期之后，如果您有参与一个或更多的咨询，那么这个宽限期将不适用。您可以在任何时候取消您的订购,然后您的订购将通过目前预付费生效。HealthTap不提供分批月份退款。</target>
       </trans-unit>
       <trans-unit id="5866" resname="r759979782" restype="string" datatype="x-haml">
         <source>HealthTap Prime offers primary-care consults from specific physicians on HealthTap only.  Consults for specialist care are not available on HealthTap Prime.  HealthTap Prime consults are available under an “on call” model where you will be connected with the first-available HealthTap Prime physician.  If you wish to or do select a specific doctor &#40;including specialists&#41; to consult, these consults are part of the HealthTap Concierge service, are not included in your HealthTap Prime subscription, and are subject to additional per-consult fees.  HealthTap Prime may not cover the cost of consults that originated from searching for a specific doctor or specialty. Pricing for any Concierge consults will be shown prior to initiating such consults and by participating in such a consult you agree to pay the fees associated with such a consult.</source>
-        <target>HealthTap Prime黄金会员仅在HealthTap上提供特定医生的初级保健咨询。HealthTap Prime不提供专家护理的咨询服务。HealthTap Prime咨询可在“即时”模式下使用，您将与首个可用的HealthTap Prime医生联系。如果您希望或选择特定的医生（包括专家）咨询，这些咨询是HealthTap礼宾服务的一部分，但不包括在您的HealthTap Prime订阅，并且需要额外的咨询费。HealthTap Prime黄金会员可能不支付由于寻找特定医生或专业而产生的咨询费用。任何礼宾顾问的价格将在开始此类咨询之前显示，并通过参与此类咨询，您同意支付与此类咨询相关的费用。</target>
+        <target>HealthTap Prime仅在HealthTap上提供特定医生的初级保健咨询。HealthTap Prime不提供专家护理的咨询服务。HealthTap Prime咨询可在“即时”模式下使用，您将与首个可用的HealthTap Prime医生联系。如果您希望或选择特定的医生（包括专家）咨询，这些咨询是HealthTap礼宾服务的一部分，但不包括在您的HealthTap Prime订购，并且需要额外的咨询费。HealthTap Prime可能不支付由于寻找特定医生或专业而产生的咨询费用。任何礼宾顾问的价格将在开始此类咨询之前显示，并通过参与此类咨询，您同意支付与此类咨询相关的费用。</target>
       </trans-unit>
       <trans-unit id="5867" resname="r645232444" restype="string" datatype="x-haml">
         <source>You are responsible for monitoring your financial accounts and statements, and HealthTap is not responsible for any charges actually or allegedly not authorized by any account holder.  In the event that HealthTap agrees to provide you with a refund for any reason &#40;including but not limited to claims of unauthorized charges&#41;, the maximum refund to which you will be entitled is sixty &#40;60&#41; days from the time of purchase.  Unsubscribing from messages from HealthTap and/or uninstalling the HealthTap app do not automatically cancel any subscriptions you have on HealthTap, nor do these actions cancel your obligations to pay for any such subscriptions still active on HealthTap.</source>
-        <target>您负责监控您的财产账户和报表，并且HealthTap不负责实际的或所谓据称的未经任何账户持有人授权的任何费用。如果HealthTap同意以任何理由（包括但不限于对未授权费用的索赔）向您退款，您将享有自购买之日起六十（60）天的最大退款金额。取消订阅来自HealthTap的消息和/或卸载HealthTap应用程序不会自动取消您在HealthTap上的任何订阅，这些操作也不会取消您支付在HealthTap上仍处于活动状态的任何订阅的义务。您可以随时取消订阅，您的订阅将在当前预付月份之前有效。不要张贴广告或请求或链接到其他网站或个人。</target>
+        <target>您负责监控您的财产账户和报表，并且HealthTap不负责实际的或所谓据称的未经任何账户持有人授权的任何费用。如果HealthTap同意以任何理由（包括但不限于对未授权费用的索赔）向您退款，您将享有自购买之日起六十（60）天的最大退款金额。取消订购来自HealthTap的消息和/或卸载HealthTap应用程序不会自动取消您在HealthTap上的任何订购，这些操作也不会取消您支付在HealthTap上仍处于活动状态的任何订购的义务。您可以随时取消订购，您的订购将在当前预付月份之前有效。不要张贴广告或请求或链接到其他网站或个人。</target>
       </trans-unit>
       <trans-unit id="5868" resname="r401822106" restype="string" datatype="x-haml">
         <source>I have the right to withhold or withdraw my consent to Virtual Consults at any time without affecting my right to future care or treatment.</source>
@@ -5304,7 +5280,7 @@
       </trans-unit>
       <trans-unit id="5874" resname="r941234098" restype="string" datatype="x-haml">
         <source>I understand that, by having my consent to live virtual consults performed by video or telephone or asynchronous inbox consults, my physician associated with HealthTap Medical Group, P.C. may communicate medical information concerning me to physicians and other health care practitioners located in other parts of the state/jurisdiction or outside the state/jurisdiction.</source>
-        <target>我了解通过视频，电话或不同步的邮件咨询可以得到我的关于在线咨询的观点，我的与HealthTap医护团队有关的医师可能会与我所在的或别的省健康护理者交流医疗信息。</target>
+        <target>我了解通过视频，电话或异步查阅收件箱可以得到我的关于在线咨询的观点，我的与HealthTap医护团队有关的医师可能会与我所在的或别的省健康护理者交流医疗信息。</target>
       </trans-unit>
       <trans-unit id="5875" resname="r12143493" restype="string" datatype="x-haml">
         <source>I understand that records related to these consults may be reviewed under a HealthTap quality assurance program. Records of HealthTap Quality Assurance Committee records subject to confidentiality.</source>
@@ -5316,15 +5292,15 @@
       </trans-unit>
       <trans-unit id="5877" resname="r690434547" restype="string" datatype="x-haml">
         <source>You agree that that all information you provide on HealthTap Prime relates to you and is current, complete, and accurate. Additionally, you agree to update and maintain such information on HealthTap Prime to ensure that it is true, accurate, current and complete at all times.</source>
-        <target>您同意您所提供给HealthTap黄金会员的个人信息是准确完整的。另外，您同意更新这些HealthTap黄金会员的信息并确保一直是完整准确无误的。</target>
+        <target>您同意您所提供给HealthTap Prime的个人信息是准确完整的。另外，您同意更新这些HealthTap Prime的信息并确保一直是完整准确无误的。</target>
       </trans-unit>
       <trans-unit id="5878" resname="r698629491" restype="string" datatype="x-haml">
         <source>You agree to pay all fees or charges to your account in accordance with the fees, charges, and billing terms in effect at the time a fee or charge is due and payable. You authorize HealthTap to immediately invoice your credit card or other payment account provided for all fees and charges due and payable and agree that no additional notice or consent is required. HealthTap&apos;s fees are net of any applicable sales tax and if any services or payments for any goods or services are subject to sales tax in any jurisdiction. You will be responsible for payment of such sales tax and any related penalties or interest and will indemnify HealthTap for any liability or expense incurred in connection with such sales taxes &#40;including any use tax and any other tax measured by sales proceeds that HealthTap is permitted to pass to you&#41; and HealthTap may automatically charge and withhold such taxes for services to be delivered within any jurisdictions that it deems is required. Unless otherwise agreed to by HealthTap in writing, all fees paid are non-refundable. HealthTap reserves the right, without notice, to modify, change, terminate, or suspend service for a subscription plan you are on if, for any reason, payment for such plan is not made or cannot be processed on the due date. This right to modify a subscription plan includes, but is not limited to, the right to change a subscription plan type &#40;for example, from a fixed fee plan without consult co-pays to a lower priced fixed-fee plan with consult co-pays&#41;. You may adjust your subscription settings at any time &#40;where applicable, by paying any amounts due&#41;.</source>
-        <target>您同意支付您的账户上的所有值得支付的费用。您授权给HealthTap对您的信用卡或者其他支付费用的账户寄发票。HealthTap的费用是可适用于任意省份的消费税。您将负责支付销售税,赔偿HealthTap任何费用与销售税&#40;包括HealthTap允许传给您的任何使用税收和其他税收&#41;和HealthTap可能在任意省份自动收费和保留它认为是必需的税收服务交付。除非HealthTap明文规定，所有的费用都不归还。HealthTap保护这些权利，如果您已订阅，将不会修改、更改、终止、推迟此服务。如无特殊原因，此计划的付款方式不会更改直至到期日。修改订阅计划的权利包括修改订阅计划的类型，但不是限制（如从一个固定的费用计划没有咨询自费到一个较低的价格固定费与咨询）。您可能随时习惯于您的订阅模式（在适用的情况下，支付任何金额）。</target>
+        <target>您同意支付您的账户上的所有值得支付的费用。您授权给HealthTap对您的信用卡或者其他支付费用的账户寄发票。HealthTap的费用是可适用于任意省份的消费税。您将负责支付销售税,赔偿HealthTap任何费用与销售税&#40;包括HealthTap允许传给您的任何使用税收和其他税收&#41;和HealthTap可能在任意省份自动收费和保留它认为是必需的税收服务交付。除非HealthTap明文规定，所有的费用都不归还。HealthTap保护这些权利，如果您已订购，将不会修改、更改、终止、推迟此服务。如无特殊原因，此计划的付款方式不会更改直至到期日。修改订购计划的权利包括修改订购计划的类型，但不是限制（如从一个固定的费用计划没有咨询自费到一个较低的价格固定费与咨询）。您可能随时习惯于您的订购模式（在适用的情况下，支付任何金额）。</target>
       </trans-unit>
       <trans-unit id="5879" resname="r340073102" restype="string" datatype="x-haml">
         <source>You will agree to seek emergency help when needed or as recommended by doctors on HealthTap Prime and you agree continue to consult with your primary care doctor as recommended by your primary care doctor or the doctors on HealthTap Prime.</source>
-        <target>您将同意寻求紧急帮助当您需要或者被HealthTap黄金会员的医生建议，并且您将同意继续咨询您的初级护理医师正如您的初级护理医师或HealthTap黄金会员的医生所建议。</target>
+        <target>您将同意寻求紧急帮助当您需要或者被HealthTap Prime的医生建议，并且您将同意继续咨询您的初级护理医师正如您的初级护理医师或HealthTap Prime的医生所建议。</target>
       </trans-unit>
       <trans-unit id="5880" resname="r449712344" restype="string" datatype="x-haml">
         <source>Additional Terms: HealthTap Concierge</source>
@@ -5492,11 +5468,11 @@
     <body>
       <trans-unit id="5934" resname="r87957055" restype="string" datatype="x-haml">
         <source>Top doctors on HealthTap can now give you their opinion about your regular doctor’s assessment of your health problem and how to treat it. Second opinions can help you make a more informed decision about your care.</source>
-        <target>HealthTap的顶级医生现在可以为您常规就医的健康问题诊断提供建议并指导您如何治疗。第二个意见可以帮助您对您的护理做出更明智的决定。</target>
+        <target>HealthTap的顶级医生在线为您常规就医的健康问题诊断提供建议并指导您如何治疗。第二个意见可以帮助您对您的护理做出更明智的决定。</target>
       </trans-unit>
       <trans-unit id="5935" resname="r912258186" restype="string" datatype="x-haml">
         <source>As a patient, one of your most important rights is to get a second opinion about your diagnosis and treatment options. Being informed is a vital part of choosing a treatment. Good doctors understand the importance of being well informed and support a second opinions.</source>
-        <target>作为一位患者，您最重要的权利之一就是获取另一位医生对您诊断和治疗选择的第二意见。被告知是选择治疗的重要部分。优秀的医生明白保障患者充分知情权以及支持第二意见的重要性。</target>
+        <target>作为一位患者，您最重要的权利之一就是获取另一名医生对您诊断和治疗选择的第二意见。被告知是选择治疗的重要部分。优秀的医生明白保障患者充分知情权以及支持第二意见的重要性。</target>
       </trans-unit>
       <trans-unit id="5942" resname="r236766661" restype="string" datatype="x-haml">
         <source>地址：北京市朝阳区北土城西路  元大都7号B座801，100029</source>
@@ -5524,7 +5500,7 @@
     <body>
       <trans-unit id="5955" resname="r867865807" restype="string" datatype="x-haml">
         <source>Content on HealthTap &#40;including doctor created content, such as answers or ratings of medications, other treatments, products, or services&#41; is provided for educational and informational purposes only. Always consult with your doctor for advice, diagnosis and treatment and do not disregard or delay following your doctor&apos;s medical advice because of Content on HealthTap.  Interactions on HealthTap do not create a doctor-patient relationship &#40;for medical care, please use HealthTap Prime or HealthTap Concierge, as available, or see your own doctor&#41;. Call your doctor or 911 &#40;in the U.S.&#41; whenever you think you may have a medical emergency. See</source>
-        <target>HealthTap上提供的内容（包括医生创建的内容，例如药物明细或排名、其他治疗、产品或者服务）仅仅用于教育和信息目的。谨记应时常向您的医生咨询建议、诊断结果和治疗方法，不要因为HealthTap上的内容而漠视或者拖延您医生的医疗建议。HealthTap上的互动不构成医患关系（如需医疗护理，可以的话请使用HealthTap黄金会员或者HealthTap专家，或者是向您自己的医生寻求帮助）任何时候当您认为需要紧急治疗时，请联系您的医生或者拨打911（在美国）。查看</target>
+        <target>HealthTap上提供的内容（包括医生创建的内容，例如药物明细或排名、其他治疗、产品或者服务）仅仅用于教育和信息目的。谨记应时常向您的医生咨询建议、诊断结果和治疗方法，不要因为HealthTap上的内容而漠视或者拖延您医生的医疗建议。HealthTap上的互动不构成医患关系（如需医疗护理，可以的话请使用HealthTap Prime或者HealthTap贵宾台，或者是向您自己的医生寻求帮助）任何时候当您认为需要紧急治疗时，请联系您的医生或者拨打911（在美国）。查看</target>
       </trans-unit>
     </body>
   </file>
@@ -5544,7 +5520,7 @@
     <body>
       <trans-unit id="5979" resname="r869269584" restype="string" datatype="x-haml">
         <source>A new, independent resource for doctors and patients alike, RateRx presents ratings of medication effectiveness as reported by thousands of U.S.-licensed doctors in clinical practice in more than 137 specialties. RateRx is the first national survey of U.S.-licensed doctors, soliciting independent feedback from physicians across the country about their real-world clinical experience treating a broad range of common conditions, and rating the medications used in those treatments. RateRx represents the first comprehensive assessment of what experienced clinicians in each specialty actually use in the care of patients with specific conditions. Unlike other studies, which may report on the clinical effectiveness of treatments under controlled circumstances, RateRx calls on the deep, long-term, real-world experience of top doctors to reveal which treatments doctors have learned actually work with patients.</source>
-        <target>作为一个对于医生和患者来说都全新、独立的资源，RateRx提供对于药物治疗有效性的评分。这些药物治疗是美国数以千计的执照医生通过在超过137个专业领域的临床实践得出的。RateRx是第一个对于美国执照医生的全国性调查，征求全国的医生基于他们广泛临床经验的独立反馈，并对治疗手段中所使用的药物进行评分。RateRx代表了第一个针对有经验的医生在他们各自的专业领域所使用的治疗特定情况患者的手段的全面性评估。与其他研究在特定的情况下评价治疗有效性不同的是，RateRx希望获得顶级医生深入而长期的实际经验来获取最佳治疗方法。</target>
+        <target>作为一个对于医生和患者来说都全新、独立的资源，RateRx提供对于药物治疗有效性的评分。这些药物治疗是美国数以千计的执照医生通过在超过137个专业领域的临床诊疗得出的。RateRx是第一个对于美国执照医生的全国性调查，征求全国的医生基于他们广泛临床经验的独立反馈，并对治疗手段中所使用的药物进行评分。RateRx代表了第一个针对有经验的医生在他们各自的专业领域所使用的治疗特定情况患者的手段的全面性评估。与其他研究在特定的情况下评价治疗有效性不同的是，RateRx希望获得顶级医生深入而长期的实际经验来获取最佳治疗方法。</target>
       </trans-unit>
       <trans-unit id="5980" resname="r421131126" restype="string" datatype="x-haml">
         <source>The RateRx study was conducted by HealthTap. HealthTap collects extensive information from doctors on, among other topics, the treatments of all health-related issues.</source>
@@ -5568,7 +5544,7 @@
       </trans-unit>
       <trans-unit id="5985" resname="r872892893" restype="string" datatype="x-haml">
         <source>To ensure unbiased doctor evaluations, doctors do not see their colleagues’ existing contributions until after they have entered their own rating. Recommendations cannot be changed once submitted, but after ratings are submitted, doctors can view the ratings of other doctors and comment on these. Both patients and doctors can learn from the RateRx ratings system. Patients benefit from the collective wisdom shared by these doctors, enabling them to see how different treatments for the same conditions are rated and reviewed. Doctors benefit from their colleagues’ ratings and comments, and are able to interpret them by referring to the contributing doctors’ practice profiles &#40;which show their education and experience, their specialty training, years in practice, DocScore, and their &quot;Known-for&quot; topics&#41;.</source>
-        <target>为了保证医生评估的无偏性，医生无法看到他同行已经打好的分数直到他自己输入了评分。推荐一旦被提交就无法更改，但是在提交打分之后，医生可以查看其它医生的评分并进行评论。患者可以从这种医生集体智慧中受益，让他们能够看到对相同症状的不同治疗方式是如何被评分与评价的。医生会从他的同事的评分和评价中受益，能够通过查看参与评价的医生的资料来理解这些信息（资料展现了医生的教育背景和经历，他们的专长领域的训练，实践的年数，DocScore和他们的”Known-for”专题）。</target>
+        <target>为了保证医生评估的无偏性，医生无法看到他同行已经打好的分数直到他自己输入了评分。推荐一旦被提交就无法更改，但是在提交打分之后，医生可以查看其它医生的评分并进行评论。患者可以从这种医生集体智慧中受益，让他们能够看到对相同症状的不同治疗方式是如何被评分与评价的。医生会从他的同事的评分和评价中受益，能够通过查看参与评价的医生的资料来理解这些信息（资料展现了医生的教育背景和经历，他们的专长领域的训练，诊疗的年数，DocScore和他们的”Known-for”专题）。</target>
       </trans-unit>
       <trans-unit id="5986" resname="r768402304" restype="string" datatype="x-haml">
         <source>Comments, which are optional, are often used by doctors to qualify or explain ratings, or to share details of how medications are used for each indication. Comments are available to read and review, but do not change the numeric value of the rating.</source>
@@ -5720,7 +5696,7 @@
       </trans-unit>
       <trans-unit id="6042" resname="r762642335" restype="string" datatype="x-haml">
         <source>We&apos;ve designed our Privacy Statement with you in mind, creating links to the most common questions about HealthTap and HealthTap Premium Services &#40;including Prime and Concierge&#41; and how these services work where privacy issues may be involved. Everything in written in plain, easy to understand language.</source>
-        <target>我们与您在心中编撰了隐私权声明，创建关于HealthTap和HealthTap Premium Services（包括基础费用和管理费用）的最常见的问题和当会牵涉隐私事项时这些服务是如何来运作的链接。</target>
+        <target>我们与您在心中编撰了隐私权声明，创建关于HealthTap和HealthTap优质服务（包括Prime和贵宾台）的最常见的问题和当会牵涉隐私事项时这些服务是如何来运作的链接。</target>
       </trans-unit>
       <trans-unit id="6044" resname="r21794735" restype="string" datatype="x-haml">
         <source>that describes our core beliefs about privacy and your core rights as a user of our services. These documents are located on our</source>
@@ -5736,7 +5712,7 @@
       </trans-unit>
       <trans-unit id="6049" resname="r584385840" restype="string" datatype="x-haml">
         <source>Like an in-person patient-doctor interaction, HealthTap Prime and HealthTap Concierge are confidential but not anonymous services. When using Premium Services, some Profile information &#40;including your real name and health information from your Profile&#41; is visible to doctors with whom you enter into consults. Your personal contact information is never visible on HealthTap to other members or doctors.</source>
-        <target>就像直接的的医生与患者之间的交流，HealthTap Prime和HealthTap Concierge是秘密的但不匿名的服务。当使用高级服务时，有一些描述信息（包括真名和您资料中的健康信息）可以被您所咨询的医生看到。您的个人联系信息是永远无法被HealthTap的其他会员和医生看到的。</target>
+        <target>就像直接的的医生与患者之间的交流，HealthTap Prime和HealthTap贵宾台是秘密的但不匿名的服务。当使用高级服务时，有一些描述信息（包括真名和您资料中的健康信息）可以被您所咨询的医生看到。您的个人联系信息是永远无法被HealthTap的其他会员和医生看到的。</target>
       </trans-unit>
       <trans-unit id="6050" resname="r863213305" restype="string" datatype="x-haml">
         <source>Yes. HealthTap and HealthTap Premium Services use bank-level security and encryption. We meet HIPAA security standards for all interactions subject to HIPAA security regulations. We use a variety of technologies and procedures to help protect the security of your personal information from unauthorized access, use, or disclosure.</source>
@@ -5752,7 +5728,7 @@
       </trans-unit>
       <trans-unit id="6057" resname="r667160883" restype="string" datatype="x-haml">
         <source>On HealthTap other members and doctors cannot see your Profile or the health information in it. When using HealthTap Prime or Concierge, health information from your Profile and basic information about you &#40;such as your real name and age&#41; are visible to the doctors with whom you consult.</source>
-        <target>在HealthTap上其他的会员和医生不可以查看您在这里的资料或健康信息。当使用HealthTap Prime或特邀时，您资料中的健康信息和您的基本信息（如您的真名和年龄）对您咨询的医生可见。</target>
+        <target>在HealthTap上其他的会员和医生不可以查看您在这里的资料或健康信息。当使用HealthTap Prime或贵宾台时，您资料中的健康信息和您的基本信息（如您的真名和年龄）对您咨询的医生可见。</target>
       </trans-unit>
       <trans-unit id="6058" resname="r213567725" restype="string" datatype="x-haml">
         <source>Your account and Profile information are secure, encrypted, and password protected. More information on our security is</source>
@@ -5828,11 +5804,11 @@
       </trans-unit>
       <trans-unit id="6081" resname="r622203770" restype="string" datatype="x-haml">
         <source>Yes. Unlike publicly visible questions and answers on HealthTap, you may provide</source>
-        <target>是。</target>
+        <target>是。和在HealthTap上公开可见的问题和回答不同，您可以提供</target>
       </trans-unit>
       <trans-unit id="6082" resname="r38902968" restype="string" datatype="x-haml">
         <source>and Concierge. HealthTap Prime and Concierge interactions are not publicly visible. These</source>
-        <target>这些</target>
+        <target>和贵宾台。HealthTap Prime和贵宾台交互不是公开可见的。这些</target>
       </trans-unit>
       <trans-unit id="6083" resname="r375414173" restype="string" datatype="x-haml">
         <source>We use information collected through your use of HealthTap to provide you with information about our current or future services, to enable the services we provide, and otherwise as described in this Privacy Statement. This Privacy Statement describes the ways that we use or disclose your information. In support of these uses, we may use personal information to:</source>
@@ -6070,10 +6046,6 @@
         <source>by taking care of us and giving us comfort when we need it most. We can take care of each other, too. By bringing the fun back into taking care of each other, we work with doctors to make the world a better place.</source>
         <target>为了让照顾彼此的过程更加丰富，我们与医生一起合作，共同营造一个更美好的世界。</target>
       </trans-unit>
-      <trans-unit id="7205" resname="r753011875" restype="string" datatype="x-haml">
-        <source>. As we continue on our creative journey to help people smile and</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="7209" resname="r965098295" restype="string" datatype="x-haml">
         <source>by providing immediate access to top medical experts and their trusted health advice anytime, anywhere.</source>
         <target>通过提供随时随地最为便捷的通道来获取顶级的医学专家们值得信赖的健康咨询内容。</target>
@@ -6284,7 +6256,7 @@
       </trans-unit>
       <trans-unit id="7935" resname="r293231496" restype="string" datatype="x-haml">
         <source>If you’re a webmaster of a medical practice, hospital, or health website, you can enhance its attractiveness and appeal with a free, customized</source>
-        <target>如果您是医疗实践、医院或者健康网页的网页大师，您可以通过免费和定制来提高网页的吸引力。</target>
+        <target>如果您是医疗诊疗、医院或者健康网页的网页大师，您可以通过免费和定制来提高网页的吸引力。</target>
       </trans-unit>
       <trans-unit id="7937" resname="r989398347" restype="string" datatype="x-haml">
         <source>Why install a</source>
@@ -6352,7 +6324,7 @@
     <body>
       <trans-unit id="8174" resname="r152357116" restype="string" datatype="x-haml">
         <source>Fees: based on a per doctor per month subscription plus discounted per-consult transaction fees. Prices vary by practice size and patient volume. Discounts are available for annual commitments. Contact</source>
-        <target>收费标准：根据每位医生每月订阅数，再算上每次咨询的折扣交易费。</target>
+        <target>收费标准：根据每名医生每月订购数，再算上每次咨询的折扣交易费。</target>
       </trans-unit>
     </body>
   </file>
@@ -6380,7 +6352,7 @@
       </trans-unit>
       <trans-unit id="8509" resname="r793319325" restype="string" datatype="x-haml">
         <source>Licensee Commission. Licensee is entitled to the Licensee Commissions for all Qualified Subscriptions sold under this Agreement. Within thirty &#40;30&#41; business days of the end of each Reporting Period, HealthTap will provide to Licensee with a Qualified Subscription Report detailing the Licensee Commission due for the Reporting Period, and shall pay any such License Commission due to Licensee. Licensee Commissions are due only after Subscription Agreement payments are received by HealthTap from the related End User Group.</source>
-        <target>在每个报告周期的30个工作日之内，HealthTap会给被许可人提供一份详述报告期内许可佣金的合格订阅报告并由于被许可人付出相应佣金。被许可佣金仅在HealthTap收到其相关的终端用户组的订阅协议费用后生效。</target>
+        <target>在每个报告周期的30个工作日之内，HealthTap会给被许可人提供一份详述报告期内许可佣金的合格订购报告并由于被许可人付出相应佣金。被许可佣金仅在HealthTap收到其相关的终端用户组的订购协议费用后生效。</target>
       </trans-unit>
       <trans-unit id="8519" resname="r805657357" restype="string" datatype="x-haml">
         <source>Term. The initial term of this Agreement shall be for one &#40;1&#41; year from the Effective Date &#40;“Initial Term”&#41;, and shall automatically renew for additional one &#40;1&#41; year terms &#40;each a “Renewal Term”&#41; unless Licensee provides Licensor with written notice of its intent not to renew at least ninety &#40;90&#41; days prior to any such Renewal Term.  HealthTap may terminate this agreement for convenience upon thirty &#40;30&#41; notice to Licensee but in the event of such termination Licesee shall retain the right to sell any Pre-Paid subscriptions under the terms of this Agreement for the applicable Calendar Year.</source>
@@ -6418,89 +6390,9 @@
         <source>b. Either Party shall have the right to terminate this Agreement at any time and for any cause. The Company may terminate this Agreement without notice.  The Affiliate must give written notice to Company at least 30 days prior to the intended date of termination.</source>
         <target>任何一方在任何时候,都有权以任何原因终止该协议。附属公司必须至少在预定的终止日期30天前书面通知公司。</target>
       </trans-unit>
-      <trans-unit id="13052" resname="r94261928" restype="string" datatype="x-haml">
-        <source>. HealthTap reserves the right to modify the Licensed Services and their respective features and functionality at any time, without notice or warning and without liability.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13053" resname="r972892832" restype="string" datatype="x-haml">
-        <source>. HealthTap reserves the right to display the HealthTap brand, and any image, name, brand or label which HealthTap has rights to, on any and all of the Licensed Services. HealthTap reserves all rights not expressly granted to the Practice in this Agreement.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13054" resname="r248091416" restype="string" datatype="x-haml">
-        <source>. HealthTap may, in its sole discretion, suspend the Practice’s access to the Licensed Services for any of the following reasons &#40;i&#41; to prevent damages to, or degradation of, the Licensed Services; &#40;ii&#41; to comply with any law, regulation, court order, or other governmental request; &#40;iii&#41; if the Practice breaches any provision set forth in this Agreement, including, without limitation, this Section 1 or Section 2 hereof; &#40;iv&#41; to otherwise protect HealthTap from potential legal liability; and/or &#40;v&#41; in the event the License Fee &#40;as such term is defined in Section 3&#40;a&#41; hereof&#41; has not been collected in advance and remains unpaid for more than forty-five &#40;45&#41; or more days from the date such fee is due to HealthTap from the Practice.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13055" resname="r41524748" restype="string" datatype="x-haml">
-        <source>. The Practice warrants that it will cause any and all of its Licensed Users to comply with the terms of this Agreement and shall be responsible for all use of the Licensed Services by its Licensed Users.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13056" resname="r134815722" restype="string" datatype="x-haml">
-        <source>. During the Term the Practice shall be liable to HealthTap for License Fees. These fees may include an annual base fee &#40;if any&#41; and/or transactional license fees &#40;i.e. a per- consult fee&#41;. The License Fees are set forth or referenced in Schedule B &#40;“License Fees”&#41; for the Licensed Services. The annual base &#40;if any&#41; License Fee shall be paid in advance by the Practice and when due. In payment of the transactional License Fee, the Practice hereby authorizes HealthTap to: &#40;i&#41; collect and deposit, on behalf of the Practice, in a bank account in the name of HealthTap, the consultation fee for the Remote Medical Consultation conducted by the Practice; and &#40;ii&#41; deduct and retain the License Fee from the consultation fee collected by HealthTap prior to payment in full of the annual base &#40;if any&#41; license fee and then remitting to the Practice the remaining portion of the consultation fee for the Remote Medical Consultation. Remittances to the Practice shall be made on a regular basis, on or about the first of every month or otherwise as set forth in Schedule B. License Fees are subject to change at any time.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13057" resname="r95406330" restype="string" datatype="x-haml">
-        <source>. In the event the Licensee Fee is not collected by HealthTap or otherwise is insufficient or remains unpaid in full forty-five &#40;45&#41; or more days from the date such fee is due and owing from the Practice to HealthTap, HealthTap may, in its discretion, terminate this Agreement.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13058" resname="r961499283" restype="string" datatype="x-haml">
-        <source>. The Practice shall be responsible for and shall pay or reimburse HealthTap for any sales, use, import, excise, value added or other taxes or levies associated with this Agreement and the Licensed Services, excluding any taxes based on the net income of HealthTap, unless customer is tax exempt and provides documentation of such.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13059" resname="r630079427" restype="string" datatype="x-haml">
-        <source>. HealthTap may, from time to time, in its sole discretion provide Updates to the Practice, such updates may be provided across the platform in the cloud. For purposes of this Agreement, “Updates” means corrections, changes and improvements to the Licensed Services that &#40;i&#41; relate to the operating performance of the Licensed Services, but do not change the basic function of the Licensed Services; &#40;ii&#41; are intended for general commercial use in connection with the Licensed Services; and &#40;iii&#41; are provided generally to HealthTap’s other customers without additional charge. Updates do not necessarily include new releases or versions of the Licensed Services for which HealthTap, in its sole and exclusive discretion, imposes an additional charge. HealthTap may, however, in its sole and exclusive discretion, provide Updates to the Practice that include new functionality. Any and all Updates are deemed part of the Licensed Services and shall be protected and governed by the terms and conditions of this Agreement and subject to the license granted in Section 1.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13060" resname="r69645299" restype="string" datatype="x-haml">
-        <source>. The Practice acknowledges and agrees that the Licensed Services constitute valuable and confidential proprietary information and intellectual property of HealthTap, that are protected under civil and criminal law and under the laws of patent, copyright and trade secret, and, except as expressly provided herein, shall not be disclosed in any form by the Practice to any unauthorized third party. Each Party agrees that all information supplied by one Party and its affiliates and agents &#40;collectively, the “Disclosing Party”&#41; to the other &#40;“Receiving Party”&#41; including, without limitation, &#40;i&#41; source code, trade secrets, databases, designs and techniques, engine protocols, models, displays and manuals, and the selection, coordination, and arrangement of the contents of such materials; and &#40;ii&#41; any unpublished information concerning research activities and plans, customers, marketing or sales plans, sales forecasts or results of marketing efforts, pricing or pricing strategies, costs, operational techniques, strategic plans, and unpublished financial information, including information concerning revenues, profits and profit margins will be deemed confidential and proprietary to the Disclosing Party, regardless of whether such information was disclosed intentionally or unintentionally or marked as “confidential” or “proprietary” &#40;“Confidential Information”&#41;. The Licensed Services shall be deemed Confidential Information of HealthTap.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13061" resname="r459650655" restype="string" datatype="x-haml">
-        <source>. Confidential Information will not include any information or material, or any element thereof, whether or not such information or material is Confidential Information for the purposes of this Agreement, to the extent any such information or material, or any element thereof: &#40;a&#41; has previously become or is generally known, unless it has become generally known through a breach of this Agreement or a similar confidentiality or non- disclosure agreement, obligation or duty; &#40;b&#41; was already rightfully known to the Receiving Party prior to being disclosed by or obtained from the Disclosing Party as evidenced by written records kept in the ordinary course of business or by proof of actual use by the Receiving Party; &#40;c&#41; has been or is hereafter rightfully received by the Receiving Party from a third person &#40;other than the Disclosing Party&#41; without restriction or disclosure and without breach of a duty of confidentiality to the Disclosing Party; or &#40;d&#41; has been independently developed by the Receiving Party without access to Confidential Information of the Disclosing Party. It will be presumed that any Confidential Information in a Receiving Party’s possession is not within exceptions &#40;b&#41;, &#40;c&#41; or &#40;d&#41; above, and the burden will be upon the Receiving Party to prove otherwise by records and documentation.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13062" resname="r204889621" restype="string" datatype="x-haml">
-        <source>. Each Party recognizes the importance of the other’s Confidential Information. In particular, each Party recognizes and agrees that the Confidential Information of the other is critical to their respective businesses and that neither Party would enter into this Agreement without assurance that such information and the value thereof will be protected as provided in this Section 6 and elsewhere in this Agreement. Accordingly, each Party agrees as follows: &#40;a&#41; the Receiving Party will hold any and all Confidential Information it obtains in strictest confidence and will use and permit use of Confidential Information solely for the purposes of this Agreement; &#40;b&#41; the Receiving Party may disclose or provide access to its responsible employees who have a need to know and may make copies of Confidential Information only to the extent reasonably necessary to carry out its obligations hereunder; and &#40;c&#41; the Receiving Party currently has, and for so long as it possesses Confidential Information of the Disclosing Party, it will maintain in effect and enforce, rules and policies to protect against access to or use or disclosure of Confidential Information other than in accordance with this Agreement, including without limitation written instruction to and agreements with employees and agents who are bound by an obligation of confidentiality no less restrictive than set forth in this Agreement to ensure that such employees and agents protect the confidentiality of Confidential Information. The Receiving Party will instruct and require its employees and agents not to disclose Confidential Information to third parties, including without limitation customers, subcontractors or consultants, without the Disclosing Party’s prior written consent; and will notify the Disclosing Party immediately of any unauthorized disclosure or use, and will cooperate with the Disclosing Party to protect all proprietary rights in and ownership of its Confidential Information.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13063" resname="r566995014" restype="string" datatype="x-haml">
-        <source>. Each Party acknowledges and agrees that due to the unique nature of Confidential Information there can be no adequate remedy at law for any breach of its obligations hereunder, that any such breach or threatened breach may allow a Party or third parties to unfairly compete with the other Party resulting in irreparable harm to such party, and therefore, that upon any such breach or any threat thereof, each Party will be entitled to appropriate equitable remedies and may seek and obtain injunctive relief from a court of competent jurisdiction without the necessity of proving actual loss or posting of a bond or other security, in addition to whatever remedies either of them might have at law or equity. Any</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="13064" resname="r202186379" restype="string" datatype="x-haml">
         <source>Term.</source>
         <target>条款。</target>
-      </trans-unit>
-      <trans-unit id="13069" resname="r774456336" restype="string" datatype="x-haml">
-        <source>. Except as otherwise specifically provided herein, no remedy referred to in this Agreement is intended to be exclusive. No delay by either Party in exercising any of their respective rights or remedies hereunder shall be deemed to be a waiver of such rights or remedies. No waiver by either Party of any rights under this Agreement or breach by the other Party hereunder shall in any way be a waiver of any such rights in the future or any future breach. Any waiver, amendment or modification of this Agreement must be in writing and signed by the party against whom enforcement is sought.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13070" resname="r810113175" restype="string" datatype="x-haml">
-        <source>. Neither Party shall assign this Agreement without the prior written consent of the other Party, which consent shall not be unreasonably withheld. Furthermore, the Practice acknowledges and agrees that the Licensed Services may not be sublicensed or otherwise transferred voluntarily or by operation of law to any third party. Any attempted assignment, license, sublicense or transfer by the Practice, whether voluntary or involuntary, shall be void and shall be grounds for immediate termination of this Agreement. Subject to the foregoing, this Agreement shall be binding upon and shall inure to the benefit of the successors and permitted assigns of the parties hereto.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13071" resname="r176949037" restype="string" datatype="x-haml">
-        <source>. This Agreement and the rights of the parties hereto shall be governed by the laws of the State of California without regard to principles of conflict of laws. In the event of any litigation arising out of, or relating to, this Agreement or the breach thereof, the venue for any such action shall be in the State or Federal courts located in Santa Clara County, California.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13072" resname="r76412404" restype="string" datatype="x-haml">
-        <source>. If any provision of this Agreement is held to be invalid or unenforceable for any reason, such provision shall be conformed to prevailing law rather than voided, if possible, in order to achieve the intent of the parties and, in any event, the remaining provisions of this Agreement shall remain in full force and effect and shall be binding upon the parties hereto. The captions of this Agreement are solely for reference and have no legal effect whatsoever and shall not in any way affect the interpretation or construction of this Agreement.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13073" resname="r598803549" restype="string" datatype="x-haml">
-        <source>. Neither Party shall be liable for damage due to any cause beyond its control, including, without limitation, acts of God, acts of civil or military authority, labor disputes, failure or delay of suppliers or systems, including communications and power systems, fire, sabotage, war, embargo or acts or omissions of the other Party caused by any of such events.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13074" resname="r139306536" restype="string" datatype="x-haml">
-        <source>. The Practice shall comply with all applicable laws and regulations, including, but not limited to, those laws and regulations governing its use of the Licensed Services. HealthTap shall comply with applicable laws and regulations in its performance of this Agreement and the provision of the Licensed Services.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13075" resname="r84840513" restype="string" datatype="x-haml">
-        <source>. No notice or other communication shall be deemed given unless sent in any of the manners, and to the persons, as specified in this paragraph. All notices and other communications hereunder shall be in writing and shall be deemed given: &#40;a&#41; upon receipt if delivered personally to a Company officer; &#40;b&#41; upon receipt if mailed by registered or certified mail receipt requested, postage prepaid; &#40;c&#41; at 5:00 p.m. on the business day after dispatch if sent by a nationally recognized overnight courier; or &#40;d&#41; via e-mail notification:</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="13076" resname="r1054536195" restype="string" datatype="x-haml">
-        <source>. This Agreement constitutes the entire agreement between HealthTap and the Practice pertaining to the subject matter hereof and supersedes all proposals or prior and contemporaneous agreements or understandings of the parties regarding such matter.</source>
-        <target>.</target>
       </trans-unit>
     </body>
   </file>
@@ -6544,7 +6436,7 @@
     <body>
       <trans-unit id="8838" resname="r986432510" restype="string" datatype="x-haml">
         <source>HealthTap Prime provides primary care virtual consults with doctors licensed in your state for limited diagnosis, care and prescriptions &#40;as appropriate&#41;. HealthTap Concierge lets you connect with your doctor for viritual consults using the HelathTap platform, or with other doctors for second opinions or one-time consults for minor conditions that can be addressed and resolved, in the sole opinion of the doctor, via a virtual consult.  HealthTap Premium Services can be a great resource between doctor visits, but are not a substitute for in person doctor visits, your primary care doctor or your primary care doctor’s independent judgment about any symptom, condition, or the appropriateness or risks of a procedure or treatment for a given person. HealthTap Prime is not health insurance and is not a substitute for health insurance.</source>
-        <target>HealthTap Prime黄金帐号提供初级保健在线医生咨询,许可在您的国家进行有限的诊断，治疗和处方（如被适用）。HealthTap管家帐号可以让您与您的医生使用helathtap平台进行在线咨询，或提供其他医生的第二意见 或 通过在线咨询以医生的独家观点,在处理和解决次要条件后,进行一次性咨询。HealthTap黄金账户的优质服务是一个巨大的医生咨询资源，但不能代替私人的医生的建议，不能代替您的初级保健医生或您的初级保健医生对于任何症状，情况的独立判断，还有对于适用性,一个手术风险或特定患者治疗的独立判断。HealthTap Prime不是健康保险而且不能替代健康保险。</target>
+        <target>HealthTap Prime提供初级保健在线医生咨询,许可在您的国家进行有限的诊断，治疗和处方（如被适用）。HealthTap管家帐号可以让您与您的医生使用helathtap平台进行在线咨询，或提供其他医生的第二意见 或 通过在线咨询以医生的独家观点,在处理和解决次要条件后,进行一次性咨询。HealthTap优质服务是一个巨大的医生咨询资源，但不能代替私人的医生的建议，不能代替您的初级保健医生或您的初级保健医生对于任何症状，情况的独立判断，还有对于适用性,一个手术风险或特定患者治疗的独立判断。HealthTap Prime不是健康保险而且不能替代健康保险。</target>
       </trans-unit>
       <trans-unit id="8839" resname="r279642634" restype="string" datatype="x-haml">
         <source>The Apps contain health-related or medical-related materials that may be sexually explicit. If you find these materials offensive, you may wish to use the Apps in ways that minimize exposure to such Content. HealthTap Medical Experts  are intended third party beneficiaries with certain rights under the App Terms of Use. The Apps and the Content are provided on an &quot;as is&quot; basis. For additional information, see our</source>
@@ -6828,7 +6720,7 @@
       </trans-unit>
       <trans-unit id="9221" resname="r98945896" restype="string" datatype="x-haml">
         <source>Free for you as a Prime subscriber!</source>
-        <target>Prime免费订阅</target>
+        <target>Prime免费订购</target>
       </trans-unit>
     </body>
   </file>
@@ -7060,15 +6952,15 @@
     <body>
       <trans-unit id="9665" resname="r178604686" restype="string" datatype="x-haml">
         <source>“Annual Revenue Minimums” means revenue received by HealthTap &#40;less any applicable Licensee Commission&#41; equivalent to the value of the Minimum Number of Qualified Subscriptions.</source>
-        <target>“年最低收入”意味着受HealthTap收入（扣除任何适用的许可佣金）相当于合格的订阅数最小值。</target>
+        <target>“年最低收入”意味着受HealthTap收入（扣除任何适用的许可佣金）相当于合格的订购数最小值。</target>
       </trans-unit>
       <trans-unit id="9666" resname="r401101411" restype="string" datatype="x-haml">
         <source>“End User Groups” means unique employers or organizations with whom Licensee has a business relationship that have not entered into a prior Subscription Agreement with HealthTap or previously Subscribed to the HealthTap Software on behalf of all End User Group Members.</source>
-        <target>“终端用户组”指作为终端用户组会员代表的没有与HealthTap达成优先订阅协议或之前订阅过HealthTap软件的独特的雇主或组织。</target>
+        <target>“终端用户组”指作为终端用户组会员代表的没有与HealthTap达成优先订购协议或之前订购过HealthTap软件的独特的雇主或组织。</target>
       </trans-unit>
       <trans-unit id="9667" resname="r344624384" restype="string" datatype="x-haml">
         <source>“Licensee Commission” means the Subscription Agreement Fees collected by HealthTap for Qualified Subscriptions less the Base Fee for such Qualified Subscriptions and any unpaid and due Annual Revenue Minimum.</source>
-        <target>许可佣金是指HealthTap收集的合格订阅的订阅协议费用减去基础费用和任何未付和过期的最小年收入。</target>
+        <target>许可佣金是指HealthTap收集的合格订购的订购协议费用减去基础费用和任何未付和过期的最小年收入。</target>
       </trans-unit>
       <trans-unit id="9668" resname="r751215942" restype="string" datatype="x-haml">
         <source>“Licensee Landing Page” means a URL to a HealthTap-provided landing page for Licensee’s distribution of the HealthTap Software to End User Groups.</source>
@@ -7080,23 +6972,23 @@
       </trans-unit>
       <trans-unit id="9670" resname="r955098526" restype="string" datatype="x-haml">
         <source>“Qualified Subscriptions” means Subscriptions generated by Licensee through Licensee Landing Pages minus any Unqualified Subscriptions.</source>
-        <target>“合格的订阅”是指被持牌人通过持牌人的登陆页面减去任何不合格的订阅所产生的订阅。</target>
+        <target>“合格的订购”是指被持牌人通过持牌人的登陆页面减去任何不合格的订购所产生的订购。</target>
       </trans-unit>
       <trans-unit id="9671" resname="r808234177" restype="string" datatype="x-haml">
         <source>“Subscription Agreement” means the agreement between HealthTap and an End User Group governing the license of HealthTap Software for all End User Group employees or group members eligible to receive benefits from End User Group &#40;all End User Group Members&#41;, the terms of which are subject to change by HealthTap, at its sole discretion.</source>
-        <target>订阅协议是指为所有终端用户组会员的合理获益而签订的由HealthTap制定条款的HealthTap和一个终端用户组之间的协议。</target>
+        <target>订购协议是指为所有终端用户组会员的合理获益而签订的由HealthTap制定条款的HealthTap和一个终端用户组之间的协议。</target>
       </trans-unit>
       <trans-unit id="9672" resname="r296725210" restype="string" datatype="x-haml">
         <source>Licensee Commission. Licensee is entitled to the Licensee Commission for all Qualified Subscriptions sold under this Agreement. Within thirty &#40;30&#41; business days of the end of each Reporting Period, HealthTap will provide to Licensee with a Qualified Subscription Report detailing the Licensee Commission due for the Reporting Period, and shall pay any such License Commission due to Licensee. Licensee Commissions are due only after Subscription Agreement payments are received by HealthTap from the related End User Group.</source>
-        <target>被许可人有权收取这项协议下的所有合格订阅出售得来的被许可佣金。在每个报告周期的30个工作日之内，HealthTap会给被许可人提供一份详述报告期内许可佣金的合格订阅报告并由于被许可人付出相应佣金。被许可佣金仅在HealthTap收到其相关的终端用户组的订阅协议费用后生效。</target>
+        <target>被许可人有权收取这项协议下的所有合格订购出售得来的被许可佣金。在每个报告周期的30个工作日之内，HealthTap会给被许可人提供一份详述报告期内许可佣金的合格订购报告并由于被许可人付出相应佣金。被许可佣金仅在HealthTap收到其相关的终端用户组的订购协议费用后生效。</target>
       </trans-unit>
       <trans-unit id="9673" resname="r2813570" restype="string" datatype="x-haml">
         <source>Annual Revenue Minimum. To participate as a Licensee and distributor of the HealthTap Software, Licensee agrees that on or before the Licensee Minimum Date, Licensee shall meet the Annual Revenue Minimum, if any. In the event that HealthTap has not received Annual Revenue Minimums from Licensee Qualified Subscriptions before the Licensee Minimum Date, HealthTap may immediately collect from Licensee, including using payment information provided by Licensee at sign up, the Annual Revenue Minimum, if any, less any Qualified Agreement Subscription Fees collected and retained by HealthTap.</source>
-        <target>如果有参与HealthTap的软件许可和分销商，被许可方同意在最小的许可日期或之前，被许可方应满足最低年收入。如果HealthTap在最小许可日前未收到来自被许可合格订阅的最小年收入，HealthTap会立即从被许可人出收费，包括使用被许可人在注册时提供的付费信息，最小年收入将由留存在HealthTap的已收集的合格订阅协议费用中扣除。</target>
+        <target>如果有参与HealthTap的软件许可和分销商，被许可方同意在最小的许可日期或之前，被许可方应满足最低年收入。如果HealthTap在最小许可日前未收到来自被许可合格订购的最小年收入，HealthTap会立即从被许可人出收费，包括使用被许可人在注册时提供的付费信息，最小年收入将由留存在HealthTap的已收集的合格订购协议费用中扣除。</target>
       </trans-unit>
       <trans-unit id="9674" resname="r300707588" restype="string" datatype="x-haml">
         <source>Licensee Minimum Date Payments. On the Effective Date, Licensee shall provide payment information to Licensor for the Annual Revenue Minimum, if any. Where any Annual Revenue Minimum exists, such minimum shall not be charged to Licensee if the Licensee generates the Annual Revenue Minimum from Licensee Qualified Subscriptions under this Agreement each year on or before the Licensee Minimum Date.</source>
-        <target>在有效期内，被许可方应向许可方提供年度最低收入的付款信息。假使任何最低年收入存在，如果在协议下最低被许可日当天或之前被许可人从被许可合格订阅中获得了最低年收入，这样的最低收入不能由被许可人负责。</target>
+        <target>在有效期内，被许可方应向许可方提供年度最低收入的付款信息。假使任何最低年收入存在，如果在协议下最低被许可日当天或之前被许可人从被许可合格订购中获得了最低年收入，这样的最低收入不能由被许可人负责。</target>
       </trans-unit>
       <trans-unit id="9675" resname="r566327819" restype="string" datatype="x-haml">
         <source>Term. The initial term of this Agreement shall be for one &#40;1&#41; year from the Effective Date &#40;“Initial Term”&#41;, and shall automatically renew for additional one &#40;1&#41; year terms &#40;each a “Renewal Term”&#41; unless Licensee provides Licensor with written notice of its intent not to renew at least ninety &#40;90&#41; days prior to any such Renewal Term.</source>
@@ -7108,23 +7000,23 @@
       </trans-unit>
       <trans-unit id="9678" resname="r369966209" restype="string" datatype="x-haml">
         <source>“Subscription” means a new, pre-paid, non-trial, automatically renewing monthly Subscription to the HealthTap Software by a unique End User who did not previously have a Subscription to the HealthTap Software, and generated through a Subscription Agreement with an End User.</source>
-        <target>订阅是指一个唯一的终端用户之前没有订阅过HealthTap软件的新的、预付的、非实验的、每月自动更新的对HealthTap软件的订阅，它通过一个终端用户与HealthTap签订的订阅协议而生效。</target>
+        <target>订购是指一个唯一的终端用户之前没有订购过HealthTap软件的新的、预付的、非实验的、每月自动更新的对HealthTap软件的订购，它通过一个终端用户与HealthTap签订的订购协议而生效。</target>
       </trans-unit>
       <trans-unit id="9679" resname="r577632567" restype="string" datatype="x-haml">
         <source>“Subscription Agreement” means the agreement between HealthTap and an End User governing the license of HealthTap Software for the End User and all End User Family Members members eligible to receive benefits from End User &#40;all End User Family Members&#41;, the terms of which are subject to change by HealthTap, at its sole discretion.</source>
-        <target>订阅协议指的是HealthTap与有能力从其软件中获益的终端用户或终端家庭会员关于软件使用许可的规定而签订的协议，其中的条款可在HealthTap完全裁量权的情况下受其制约。</target>
+        <target>订购协议指的是HealthTap与有能力从其软件中获益的终端用户或终端家庭会员关于软件使用许可的规定而签订的协议，其中的条款可在HealthTap完全裁量权的情况下受其制约。</target>
       </trans-unit>
       <trans-unit id="9680" resname="r195217494" restype="string" datatype="x-haml">
         <source>“Subscription Agreement Fees” means fees collected by HealthTap for Qualified Subscriptions under Subscription Agreements with End User, based on Premium Pricing.</source>
-        <target>“订购协议费用”是指HealthTap根据高级定价在订购协议下对最终用户收取的合格订阅费用。</target>
+        <target>“订购协议费用”是指HealthTap根据高级定价在订购协议下对最终用户收取的合格订购费用。</target>
       </trans-unit>
       <trans-unit id="9683" resname="r626667343" restype="string" datatype="x-haml">
         <source>Subscriptions. All Subscriptions pre-purchased by Licensee must be sold to End Users &#40;including End User Family Members&#41;, and used not later than December 31, 2016.</source>
-        <target>由被许可人预先购买的所有订阅都必须销售给最终用户（包括最终用户家庭会员），并在2016年12月31日之前使用。</target>
+        <target>由被许可人预先购买的所有订购都必须销售给最终用户（包括最终用户家庭会员），并在2016年12月31日之前使用。</target>
       </trans-unit>
       <trans-unit id="9684" resname="r662560288" restype="string" datatype="x-haml">
         <source>Termination for Convenience.  HealthTap may terminate this Agreement for convenience on thirty &#40;30&#41; days notice to Licensee.  Such termination shall impact only the Licensee’s ability to sell additional future Subscriptions and the terms under which any pre-purchased or previously sold subscriptions shall remain unchanged.</source>
-        <target>为了方便，HealthTap可以在通知被许可方后三十（30）天终止本协议。这种终止只会影响被许可方未来销售更多订阅的能力，并且任何预购或以前售出的订阅的条款保持不变。这种终止只会影响被许可方未来销售更多订阅的能力，并且任何预购或以前售出的订阅的条款保持不变。</target>
+        <target>为了方便，HealthTap可以在通知被许可方后三十（30）天终止本协议。这种终止只会影响被许可方未来销售更多订购的能力，并且任何预购或以前售出的订购的条款保持不变。这种终止只会影响被许可方未来销售更多订购的能力，并且任何预购或以前售出的订购的条款保持不变。</target>
       </trans-unit>
       <trans-unit id="9685" resname="r111358800" restype="string" datatype="x-haml">
         <source>Effect of Termination. In the event of termination of this Agreement, the rights and licenses granted to Licensee hereunder shall immediately terminate and Licensee shall cease to market, distribute or sell the HealthTap Software; in the event of termination of this Agreement by Licensee prior to the end of any term, described above, any fees due to HealthTap hereunder. The provisions of this Agreement governing Ownership, Confidentiality, Limitation of Liability, the Relationship of the Parties, and Miscellaneous Provisions shall survive termination or cancelation of this Agreement for any reason.</source>
@@ -7184,7 +7076,7 @@
       </trans-unit>
       <trans-unit id="10033" resname="r787996001" restype="string" datatype="x-haml">
         <source>“I wish I had HealthTap Prime when my mom had a stroke and was in a coma. It would&apos;ve been amazing to get an immediate second opinion instead of paying $1000 out of pocket. My mom was bed-bound, so I had to coordinate doctor appointments for her, find a handicap-accessible van, then suffer the waiting room with her. Now, I can use HealthTap in minutes for a virtual consult.“</source>
-        <target>您不用支付$ 1000就可立即获取意见。我的妈妈是在躺在床上的，所以我不得不协调她和医生的会诊，要找到一个残疾人士访问面包车，并提供她的候诊室。</target>
+        <target>“当我妈妈中风并且昏迷时，我希望我能够有HealthTap Prime。您不用支付$ 1000就可立即获取意见。我的妈妈是在躺在床上的，所以我不得不协调她和医生的会诊，要找到一个残疾人士访问面包车，并提供她的候诊室。”</target>
       </trans-unit>
     </body>
   </file>
@@ -7202,10 +7094,6 @@
   </file>
   <file original="payment.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="10071" resname="r990854226" restype="string" datatype="x-haml">
-        <source>. However, you may still ask our doctors questions anonymously and for free.</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="10074" resname="r665253356" restype="string" datatype="x-haml">
         <source>Great! You&apos;re all set!</source>
         <target>太棒了！设置就绪</target>
@@ -7256,7 +7144,7 @@
     <body>
       <trans-unit id="10172" resname="r230112764" restype="string" datatype="x-haml">
         <source>Congratulations! You are now a HealthTap Prime member for</source>
-        <target>恭喜！</target>
+        <target>恭喜！您现在已经是一名HealthTap Prime会员</target>
       </trans-unit>
     </body>
   </file>
@@ -7356,7 +7244,7 @@
       </trans-unit>
       <trans-unit id="10410" resname="r94533586" restype="string" datatype="x-haml">
         <source>These decisions and choices are yours, and we believe that you, in connection with the advice you receive from your doctor or other professional healthcare provider, are the best decision maker about your health. You should always use common sense when making health decisions, and they should be made in consultation with your doctor. HealthTap cannot make decisions for you. What we can do is help you find good health information and connect with doctors for in-person care. On HealthTap you can ask and find informational questions and related educational answers and tips by Medical Experts. HealthTap is not a place for the practice of medicine, but Medical Experts on HealthTap can be a resource for reliable, relevant general health information. We hope these services will be of value to you. Please use them responsibly.</source>
-        <target>在做出健康判断时，您应该总是使用常识，并且应该咨询您的医生。我们可以做的是帮助您找到良好的健康信息，并与医生联系以当面关怀。在HealthTap上，您可以询问并找到信息性问题以及相关医疗专家的的教育性的回答和小贴士。HealthTap不是医疗实践的地方，但HealthTap的医疗专家可以作为可靠，相关的一般健康信息的资源。我们希望这些服务对您有价值。请负责任地使用它们。</target>
+        <target>在做出健康判断时，您应该总是使用常识，并且应该咨询您的医生。我们可以做的是帮助您找到良好的健康信息，并与医生联系以当面关怀。在HealthTap上，您可以询问并找到信息性问题以及相关医疗专家的的教育性的回答和小贴士。HealthTap不是医疗诊疗的地方，但HealthTap的医疗专家可以作为可靠，相关的一般健康信息的资源。我们希望这些服务对您有价值。请负责任地使用它们。</target>
       </trans-unit>
       <trans-unit id="10411" resname="r144064497" restype="string" datatype="x-haml">
         <source>HealthTap contains Content, and may help you identify services or may offer services. Everything on HealthTap, including Content accessed or Services provided through HealthTap, are for your information, and should be used for informational purposes only. This means that Content and Services are not a substitute for medical advice, diagnosis, treatment, or care from your doctor.</source>
@@ -7364,7 +7252,7 @@
       </trans-unit>
       <trans-unit id="10412" resname="r693693141" restype="string" datatype="x-haml">
         <source>On HealthTap you can connect privately with a doctor for an online consultation through our Private Conversation feature.  This interaction does not constitute the practice of medicine and consultations cannot be used for providing a medical diagnosis or a physical examination, prescriptions, or treatments.  Go see your doctor in person if you are looking for a prescription, or for diagnosis or treatment.  You can use HealthTap for second opinions.</source>
-        <target>在HealthTap上，您可以通过私人对话功能私下与医生联系，进行在线咨询。这种交互作用不构成医学实践，并且这里的咨询不能用于提供医学诊断或身体检查，处方或治疗。如果您正在寻找处方，诊断或治疗，那就去亲自看医生。</target>
+        <target>在HealthTap上，您可以通过私人对话功能私下与医生联系，进行在线咨询。这种交互作用不构成医学诊疗，并且这里的咨询不能用于提供医学诊断或身体检查，处方或治疗。如果您正在寻找处方，诊断或治疗，那就去亲自看医生。</target>
       </trans-unit>
       <trans-unit id="10413" resname="r534262575" restype="string" datatype="x-haml">
         <source>Accurate and complete registration information is required to use HealthTap. All members are encouraged to use password common sense: safeguard your log in password, pick a password that cannot be guessed by others, keep it private, and periodically change it. You are responsible for the security of your passwords and for any use of your account. Please immediately notify us of any unauthorized use of your password or account. As a part of registration you will create a profile with a Public Profile Name. Like your password, if you wish to remain anonymous, use common sense: safeguard your Public Profile Name, pick a name that cannot be guessed by others, and keep it private. Do not use your real name, or the real name of any one related to you when selecting your Public Profile Name. Allowing any other person or entity to use your identity for posting on or using HealthTap is not permitted. Do not include your real name or any other information that could be used to identify you in anything you post on HealthTap, including questions, comments, or other submissions.</source>
@@ -7576,7 +7464,7 @@
       </trans-unit>
       <trans-unit id="10467" resname="r246075141" restype="string" datatype="x-haml">
         <source>As a HealthTap Medical Expert, you are required to register with and use your real name and &#40;if you choose to upload a picture&#41; a real image of you in your Virtual Practice.</source>
-        <target>作为HealthTap医疗专家，您需要在您的在线实践中注册并使用您的真实姓名和（如果您选择上传照片）真实的形象。</target>
+        <target>作为HealthTap医疗专家，您需要在您的在线诊疗中注册并使用您的真实姓名和（如果您选择上传照片）真实的形象。</target>
       </trans-unit>
       <trans-unit id="10468" resname="r439626123" restype="string" datatype="x-haml">
         <source>Licensed doctors may apply to be and participate as Medical Experts on HealthTap. Physicians whose licenses are or become suspended or revoked, for any reason, are not permitted and agree not to participate in any way, including but not limited to submitting Content to HealthTap, as a Medical Expert on HealthTap.  HealthTap may expand the network to include other licensed medical experts.</source>
@@ -7584,7 +7472,7 @@
       </trans-unit>
       <trans-unit id="10469" resname="r997404020" restype="string" datatype="x-haml">
         <source>You retain the right to edit and delete your own Expert Submissions that appear in your Virtual Practice at any time. You also retain the right to use and create derivative works from your own Expert Submissions elsewhere &#40;such as on your own practice website, blog, or in your own social media posts&#41;.</source>
-        <target>您保留随时编辑和删除您的在线实践中显示的专家提交的权利。您同样也拥有从您自己的专家意见书的其他地方（如在您自己的实践网站，博客，或在您自己的社交媒体网站）使用和创建衍生作品的权利。</target>
+        <target>您保留随时编辑和删除您的在线诊疗中显示的专家提交的权利。您同样也拥有从您自己的专家意见书的其他地方（如在您自己的诊疗网站，博客，或在您自己的社交媒体网站）使用和创建衍生作品的权利。</target>
       </trans-unit>
       <trans-unit id="10470" resname="r990555033" restype="string" datatype="x-haml">
         <source>When a HealthTap Medical Expert submissions related to any HealthTap feature or function and made for publication on HealthTap &#40;such as an answer to a question&#41; &#40;an &quot;Expert Submission&quot;&#41;, you grant HealthTap an unrestricted right without limitation to use, reproduce, extract data from or add data to, publish and post any such Expert Submissions, including in connection with or on HealthTap, including in connection with your name. This means that when you make such a submission to us, you are giving us rights to this content, including the right to post it on HealthTap and use it in connection with HealthTap. You also give us the right to give or transfer all rights granted herein to others. While Expert Submissions generally are posted to HealthTap, we do not have an obligation to post any particular Expert Submission on HealthTap and reserve the right, at our sole discretion and for any reason whatsoever &#40;including but not limited to an Expert Submission being reported to us&#41;, to not post and/or to remove any Expert Submissions at any time.</source>
@@ -7616,7 +7504,7 @@
       </trans-unit>
       <trans-unit id="10478" resname="r872981473" restype="string" datatype="x-haml">
         <source>Patients on HealthTap can find your professional contact information through your Virtual Practice, and can contact you for an appointment. However, please avoid violating medical board rules regarding advertising and patient solicitation.</source>
-        <target>在HealthTap的患者可以通过在线实践找到您的专业联系信息，并且可以通过预约联系您。然而，请避免违反医学委员会关于广告和患者征集的规定。</target>
+        <target>在HealthTap的患者可以通过在线诊疗找到您的专业联系信息，并且可以通过预约联系您。然而，请避免违反医学委员会关于广告和患者征集的规定。</target>
       </trans-unit>
       <trans-unit id="10480" resname="r563959988" restype="string" datatype="x-haml">
         <source>Avoid other actions that violate board or other rules that apply to you.</source>
@@ -7624,7 +7512,7 @@
       </trans-unit>
       <trans-unit id="10481" resname="r487199707" restype="string" datatype="x-haml">
         <source>All other information, including suggestions, feedback, ideas, concepts and any other materials you disclose or offer to us on or in connection with HealthTap or any Content, are governed by the general member submission terms of this Agreement. This means that these submissions are made without any restrictions and without any expectation of confidentiality or compensation. You agree not to assert any property right or moral right of any kind with respect to any such submissions. You agree to our standard terms governing media submissions, except for the prohibition against uploading a facial portrait image of yourself for your Virtual Practice picture.</source>
-        <target>包括建议、反馈、想法、概念和其他您披露或提供给我们的材料或与HealthTap相关的或由普通会员提交的本协议条款的任何内容，在内的所有其他信息。这意味着这些提交是没有任何限制,也没有任何保密或补偿期望的。您同意对这样的提交不维护任何产权或任何形式的道德权利。您同意我们的标准条款执政媒体投稿，除了禁止我们对您自己上传的脸部肖像图像的在线实践的照片的使用。</target>
+        <target>包括建议、反馈、想法、概念和其他您披露或提供给我们的材料或与HealthTap相关的或由普通会员提交的本协议条款的任何内容，在内的所有其他信息。这意味着这些提交是没有任何限制,也没有任何保密或补偿期望的。您同意对这样的提交不维护任何产权或任何形式的道德权利。您同意我们的标准条款执政媒体投稿，除了禁止我们对您自己上传的脸部肖像图像的在线诊疗的照片的使用。</target>
       </trans-unit>
       <trans-unit id="10482" resname="r1071215986" restype="string" datatype="x-haml">
         <source>HealthTap permits Medical Experts to receive questions directly from specific members in Private Conversations.  You will receive compensation for participating in Private Conversations according to the additional terms of the [HealthTap License Agreement and Business Associate Agreement], which are incorporated herein by reference.</source>
@@ -7644,7 +7532,7 @@
       </trans-unit>
       <trans-unit id="10487" resname="r290249736" restype="string" datatype="x-haml">
         <source>You may upload appropriate content to HealthTap and rights in submissions to HealthTap are governed by the HealthTap Terms of Use.  Information in your Virtual Practice and any submissions to a Public Area of HealthTap are not confidential.  Outside of these, we ask that you keep confidential all information exchanged between us and all information exchanged between you and HealthTap members in Private Conversations. You agree to comply with all applicable laws and regulations when you use HealthTap, including necessary privacy and HIPAA requirements.</source>
-        <target>您可以将相应的内容上传到HealthTap，提交到HealthTap的权利受HealthTap使用条款的约束。您的在线实践中的信息和HealthTap公共区域的任何提交信息将不会保密。除此之外，我们要求您保密我们之间交换的所有信息和您与HealthTap会员之间在私人对话中交换的所有信息。您同意在使用HealthTap时遵守所有适用的法律和法规，包括必要的隐私和HIPAA要求。</target>
+        <target>您可以将相应的内容上传到HealthTap，提交到HealthTap的权利受HealthTap使用条款的约束。您的在线诊疗中的信息和HealthTap公共区域的任何提交信息将不会保密。除此之外，我们要求您保密我们之间发送的所有信息和您与HealthTap会员之间在私人对话中发送的所有信息。您同意在使用HealthTap时遵守所有适用的法律和法规，包括必要的隐私和HIPAA要求。</target>
       </trans-unit>
       <trans-unit id="10489" resname="r670072389" restype="string" datatype="x-haml">
         <source>, a Delaware corporation, having its principal place of business at 270 University Ave., 2nd Floor, Palo Alto, CA 94301 or as otherwise indicated on the Contact section of the</source>
@@ -7656,15 +7544,15 @@
       </trans-unit>
       <trans-unit id="10494" resname="r617466247" restype="string" datatype="x-haml">
         <source>HealthTap grants to Subscriber a personal and nontransferable, nonexclusive, worldwide, and nonsublicenseable license, during the Term: &#40;1&#41; to access and use HealthTap in connection with Private Conversations with Participants for which Subscriber will charge a fee for each Private Conversation &#40;as amended or updated from time to time, the &quot;Conversation Fee&quot;&#41; to be paid by Participant in advance of each Private Conversation and &#40;2&#41; to use the HealthTap’s Marks for the sole purpose of identifying and promoting the HealthTap Services &#40;defined below&#41;. This license is subject to Subscriber’s compliance with the terms and conditions set forth in this Agreement. HealthTap may withdraw any approval of any use of the HealthTap Marks at any time in its discretion. Subscriber shall not make any express or implied statement or suggestion, or use the HealthTap Marks in any manner, that dilutes, tarnishes, degrades, disparages or otherwise reflects adversely on HealthTap or its business, products, services or the HealthTap Marks.</source>
-        <target>HealthTap在期限内向用户授予个人和不可转让，非独占性，全球性和不可分许可的权利：（1）在与参与者的私人对话中访问和使用HealthTap，将为每个开通私人对话的用户收取费用（不时修改或更新“对话费”），且每个私人对话的费用需要由参与者提前支付（2）使用HealthTap的标记，唯一的目的是识别和促进HealthTap服务（定义以下）。此许可证需遵守订阅者遵守本协议中规定的条款和条件。HealthTap可以随时自行决定撤回任何使用HealthTap标志的任何批准。订阅者不得以任何方式对HealthTap或其业务，产品，服务或HealthTap标志作出任何明示或暗示，或以任何方式对HealthTap标志进行玷污，降级，贬损等。</target>
+        <target>HealthTap在期限内向用户授予个人和不可转让，非独占性，全球性和不可分许可的权利：（1）在与参与者的私人对话中访问和使用HealthTap，将为每个开通私人对话的用户收取费用（不时修改或更新“对话费”），且每个私人对话的费用需要由参与者提前支付（2）使用HealthTap的标记，唯一的目的是识别和促进HealthTap服务（定义以下）。此许可证需遵守订购者遵守本协议中规定的条款和条件。HealthTap可以随时自行决定撤回任何使用HealthTap标志的任何批准。订购者不得以任何方式对HealthTap或其业务，产品，服务或HealthTap标志作出任何明示或暗示，或以任何方式对HealthTap标志进行玷污，降级，贬损等。</target>
       </trans-unit>
       <trans-unit id="10495" resname="r351063967" restype="string" datatype="x-haml">
         <source>Participants can pay for Private Conversations, and HealthTap shall collect these Conversation Fees. Subscribers can also provide Participants with a promotional code, which allow for a Private Conversation without a Conversation Fee &#40;when such promotional codes are used, Subscriber shall not receive any compensation for any such interaction&#41;.  Conversation Fees collected from Participants will be distributed to Subscriber by check or money transfer &#40;using a service such as PayPal&#41; after both &#40;i&#41; the total of the Subscriber’s Conversation Fees exceeds $100 &#40;each a &quot;Payment Distribution&quot;&#41; and &#40;ii&#41; Subscriber request, and such distribution to Subscriber shall be the total of all collected Conversation Fees minus the applicable License and Subscription Fees. Conversation Fees and License and Subscription Fees are subject to adjustment pursuant to HealthTap policies and procedures</source>
-        <target>参与者可以支付私人对话，HealthTap应收取这些对话费。订阅者还可以向参与者提供促销代码，允许在没有对话费的情况下进行私人对话（当使用此类促销代码时，订阅者不会因任何此类交互而获得任何补偿）。当（i）订户的对话费用总额超过100美元（每个为“付款分配”）和（ii）订阅者的要求和所有收集的对话费减去适用的许可和订阅费用的总和时，向参与者所收取的对话费会分发给订阅者来确认费用（比如使用paypal等服务）对话费和许可费和订阅费可根据HealthTap政策和临床操作进行调整。</target>
+        <target>参与者可以支付私人对话，HealthTap应收取这些对话费。订购者还可以向参与者提供促销代码，允许在没有对话费的情况下进行私人对话（当使用此类促销代码时，订购者不会因任何此类交互而获得任何补偿）。当（i）订户的对话费用总额超过100美元（每个为“付款分配”）和（ii）订购者的要求和所有收集的对话费减去适用的许可和订购费用的总和时，向参与者所收取的对话费会分发给订购者来确认费用（比如使用paypal等服务）对话费和许可费和订购费可根据HealthTap政策和临床操作进行调整。</target>
       </trans-unit>
       <trans-unit id="10496" resname="r536516008" restype="string" datatype="x-haml">
         <source>Subscriber shall make best efforts to respond promptly to all Private Conversation requests. Subscriber is responsible and liable for all activities that occur in each Private Conversation, and: &#40;i&#41; has sole responsibility for all information provided in a Private Conversation, including the quality, accuracy, reliability, specificity, legality and appropriateness of the information; &#40;ii&#41; shall conduct each Private Conversation in adherence with HealthTap’s policies and procedures and, each as updated and amended from time to time; &#40;iii&#41; Subscriber shall not provide individual treatment recommendations or diagnosis in any Private Conversation; and &#40;iv&#41; Subscriber shall comply with any disclosure or disclaimer requirements of HealthTap. HealthTap will store archives of each Private Conversation, information on Participants, and Subscriber for at least the required legal period after each Private Conversation.</source>
-        <target>用户应尽最大努力迅速响应所有私人对话请求。订阅者应对每次私下交谈中发生的所有活动负责，并且：（i）对私人会话中提供的所有信息负全部责任，包括信息的质量，准确性，可靠性，特异性，合法性和适当性; （ii）按照HealthTap的政策和程序进行每个私人对话，并且不时更新和修改; （iii）认购人不得在任何私人会谈中提供个别治疗建议或诊断; （iv）认购人须遵守HealthTap的任何披露或免责声明规定。HealthTap将在每次私下交谈后存储每个私人对话的档案，参与者信息和订阅者至少所需的法定期限。</target>
+        <target>用户应尽最大努力迅速响应所有私人对话请求。订购者应对每次私下交谈中发生的所有活动负责，并且：（i）对私人会话中提供的所有信息负全部责任，包括信息的质量，准确性，可靠性，特异性，合法性和适当性; （ii）按照HealthTap的政策和程序进行每个私人对话，并且不时更新和修改; （iii）认购人不得在任何私人会谈中提供个别治疗建议或诊断; （iv）认购人须遵守HealthTap的任何披露或免责声明规定。HealthTap将在每次私下交谈后存储每个私人对话的档案，参与者信息和订购者至少所需的法定期限。</target>
       </trans-unit>
       <trans-unit id="10497" resname="r130534316" restype="string" datatype="x-haml">
         <source>Subscriber represents and warrants that the biographical information set forth in the Profile is true, correct and complete, and, Subscriber agrees to update Subscriber’s Profile immediately upon any updates to the information contained therein. In the event of any breach of the provisions of this Article 4, HealthTap and/or any of its parents, subsidiaries and affiliated entities, in addition to any other remedies available to them for such breach, including the recovery of damages, shall be entitled to injunctive relief to change any information in the Profile.</source>
@@ -7672,7 +7560,7 @@
       </trans-unit>
       <trans-unit id="10498" resname="r998614258" restype="string" datatype="x-haml">
         <source>As set forth in Exhibit A, Subscriber shall pay to HealthTap a fee for each Private Conversation as consideration for the license and HealthTap Services described in this Agreement &#40;collectively and as adjusted from time to time, the &quot;License and Subscription Fees&quot;&#41;, which amount may be adjusted from time to time. The License and Subscription Fees are immediately due and owning at the time Subscriber accepts a Private Conversation request. The License and Subscription Fees are subject to adjustment pursuant to HealthTap policies and procedures. HealthTap’s fees do not include, and Subscriber is responsible for paying, any direct or indirect local, state, federal or foreign taxes, levies, duties or similar governmental assessments of any nature associated with Subscriber’s activities.</source>
-        <target>如附录A所示，用户应向HealthTap支付每个私人对话的费用，作为本协议中描述的许可和HealthTap服务的费用（统称为不时调整的“许可和认购费”）， 金额可以不时调整。许可和订阅费在订阅者接受私人对话请求时立即到帐。许可和订阅费用可根据HealthTap的政策和程序进行调整。HealthTap的费用不包括，并且订阅者负责支付任何与订阅者活动相关的任何性质的任何直接或间接的地方，州，联邦或外国税务，征费，关税或类似的政府评估。</target>
+        <target>如附录A所示，用户应向HealthTap支付每个私人对话的费用，作为本协议中描述的许可和HealthTap服务的费用（统称为不时调整的“许可和认购费”）， 金额可以不时调整。许可和订购费在订购者接受私人对话请求时立即到帐。许可和订购费用可根据HealthTap的政策和程序进行调整。HealthTap的费用不包括，并且订购者负责支付任何与订购者活动相关的任何性质的任何直接或间接的地方，州，联邦或外国税务，征费，关税或类似的政府评估。</target>
       </trans-unit>
       <trans-unit id="10499" resname="r837674580" restype="string" datatype="x-haml">
         <source>HealthTap shall retain all right, title and interest in the HealthTap Intellectual Property and Proprietary Material. Subscriber hereby transfers and assigns and agrees to execute any documents required to transfer and assign to HealthTap all rights, title and interest in the HealthTap Intellectual Property and Proprietary Material and related protectable elements or derivative works.</source>
@@ -7680,7 +7568,7 @@
       </trans-unit>
       <trans-unit id="10501" resname="r209116557" restype="string" datatype="x-haml">
         <source>As between HealthTap and Subscriber, HealthTap and/or Participant own all rights, title and interest in and to all content &#40;including electronic data or information&#41; submitted by any Participant to HealthTap in connection with a Private Conversation, and such submissions are considered Confidential Information under this Agreement and are subject to the HealthTap Terms of Use and Privacy Statement. Subscriber Content, including content uploaded to HealthTap, is subject to HealthTap’s Terms of Use and Privacy Statement. Subscriber agrees not to upload or transmit any Content that &#40;i&#41; infringes another’s rights, &#40;ii&#41; is confidential, &#40;iii&#41; contains offensive content &#40;including hate-speech, obscenity, and pornography&#41;, or any material that could give rise to any civil or criminal liability under applicable law or regulations, or &#40;iv&#41; contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or HealthTap.</source>
-        <target>在HealthTap和订阅者之间，HealthTap和/或参与者拥有由任何参与者提交给HealthTap的与私人对话相关的所有内容（包括电子数据或信息）的所有权利，所有权和利益，这些提交被视为机密信息；根据本协议，并受HealthTap的使用条款和隐私声明的约束。订阅者内容（包括上传到HealthTap的内容）需遵守HealthTap的使用条款和隐私权声明。订阅者同意不会上传或传输（i）侵犯他人的权利，（ii）保密，（iii）包含攻击性内容（包括仇恨言论，淫秽内容和色情内容）或任何可能引起任何 民事或刑事责任，或（iv）包含设计用于中断，破坏或限制任何计算机软件或HealthTap的功能的软件病毒或任何其他计算机代码，文件或程序。</target>
+        <target>在HealthTap和订购者之间，HealthTap和/或参与者拥有由任何参与者提交给HealthTap的与私人对话相关的所有内容（包括电子数据或信息）的所有权利，所有权和利益，这些提交被视为机密信息；根据本协议，并受HealthTap的使用条款和隐私声明的约束。订购者内容（包括上传到HealthTap的内容）需遵守HealthTap的使用条款和隐私权声明。订购者同意不会上传或传输（i）侵犯他人的权利，（ii）保密，（iii）包含攻击性内容（包括仇恨言论，淫秽内容和色情内容）或任何可能引起任何 民事或刑事责任，或（iv）包含设计用于中断，破坏或限制任何计算机软件或HealthTap的功能的软件病毒或任何其他计算机代码，文件或程序。</target>
       </trans-unit>
       <trans-unit id="10503" resname="r1009973819" restype="string" datatype="x-haml">
         <source>7.     Restrictions.</source>
@@ -7732,7 +7620,7 @@
       </trans-unit>
       <trans-unit id="10521" resname="r517447183" restype="string" datatype="x-haml">
         <source>IN NO EVENT SHALL HEALTHTAP’S AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT, WHETHER IN CONTRACT, TORT OR UNDER ANY OTHER THEORY OF LIABILITY, EXCEED THE LESSER OF $100 OR THE AMOUNTS ACTUALLY PAID BY AND DUE FROM SUBSCRIBER HEREUNDER IN THE ONE MONTH PRECEDING THE INCIDENT GIVING RISE TO LIABILITY. IN NO EVENT SHALL EITHER PARTY HAVE ANY LIABILITY TO THE OTHER PARTY FOR ANY LOST PROFITS OR FOR ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES HOWEVER CAUSED AND, WHETHER IN CONTRACT, TORT OR UNDER ANY OTHER THEORY OF LIABILITY, WHETHER OR NOT THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</source>
-        <target>在任何情况下，HEALTHTAP对由本协议产生或与本协议相关的合同不负责任，无论是在合同，侵权或任何其他责任理论中，超过100美元的损失，或者在一个月前由此处的订阅者实际支付的金额引起责任的偶发事件。在任何情况下，任何一方对于任何利润损失或任何间接，特殊，偶发，惩罚性或间接损害，无论是否合同，侵权或任何其他责任理论，均不对其他方承担任何责任，无论是否非缔约方已被告知此类损害的可能性。</target>
+        <target>在任何情况下，HEALTHTAP对由本协议产生或与本协议相关的合同不负责任，无论是在合同，侵权或任何其他责任理论中，超过100美元的损失，或者在一个月前由此处的订购者实际支付的金额引起责任的偶发事件。在任何情况下，任何一方对于任何利润损失或任何间接，特殊，偶发，惩罚性或间接损害，无论是否合同，侵权或任何其他责任理论，均不对其他方承担任何责任，无论是否非缔约方已被告知此类损害的可能性。</target>
       </trans-unit>
       <trans-unit id="10525" resname="r947331786" restype="string" datatype="x-haml">
         <source>12.  General Provisions.</source>
@@ -7766,14 +7654,6 @@
   </file>
   <file original="_privacy_statement.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="10652" resname="r725096320" restype="string" datatype="x-haml">
-        <source>. The TRUSTe program covers only information that is collected through this Web site.</source>
-        <target>.</target>
-      </trans-unit>
-      <trans-unit id="10653" resname="r165019381" restype="string" datatype="x-haml">
-        <source>.  If you are not satisfied with our response you can contact</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="10657" resname="r45512938" restype="string" datatype="x-haml">
         <source>Yes. Your use of HealthTap is anonymous. Your real name, date of birth, e-mail address, and other Personally Identifiable Information are not visible on the site to other users. You select a name under which you appear when using the Site &#40;a Public Profile Name&#41;. You can stay anonymous by selecting a confidential Public Profile Name and by keeping that private. HealthTap uses bank-level security and encryption. More about our security measures can be found</source>
         <target>是。您的真实姓名、出生日期、电子邮件地址和其他个人身份信息不会显示给其他会员。您可以选择隐秘的公开资料名称并将其私有化，以保护您的隐私。</target>
@@ -7822,10 +7702,6 @@
         <source>Questions and answers on HealthTap are for general education and information. Only general, informational questions are permitted. For specific, personal health questions, always ask your own doctor or healthcare provider. &#40;HealthTap Medical Experts are not your personal doctor or healthcare provider, and their answers to questions are not personal or for personal use.&#41;</source>
         <target>对于具体的、私人的健康问题，请您咨询您的私人医生或是医疗保健提供者。（HealthTap的医疗专家不是您的私人医生或是医疗保健提供者，他们对于问题的回答也不是针对个人的或是可用作私人的。）</target>
       </trans-unit>
-      <trans-unit id="10679" resname="r613363625" restype="string" datatype="x-haml">
-        <source>. If we are unable to remove this information for any reason, we will let you know that we are unable to do so and why. You can control what is visible in your Public Profile through your Account Settings.</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="10681" resname="r690414968" restype="string" datatype="x-haml">
         <source>Aggregated information is information from multiple users that is not associated with any individual user account, statistics are summaries of information, not associated with any individual user account, and de-identified data does not include Personally Identifiable Information, such as first and last names or e-mail addresses. Aggregated information and de-identified data and statistics are used to run our service.  We may use aggregated information or de-identified data gathered from HealthTap and related statistics to improve the services provided through HealthTap, and for research and analysis. We may also provide this information to our partners for such purposes.</source>
         <target>聚集的信息和去可识别性的数据和统计被用来经营我们的服务。我们会使用从HealthTap收集的聚合信息或去可识别性数据以及相关统计来改善服务，增进研究和分析。</target>
@@ -7842,10 +7718,6 @@
         <source>Yes. While every user will be able to see basic information about you, such as your Public Profile Name and your Public Profile Picture, you can control what other information is shown about you through your Privacy &amp;amp; Sharing tab in your Settings.</source>
         <target>是。</target>
       </trans-unit>
-      <trans-unit id="10686" resname="r532285127" restype="string" datatype="x-haml">
-        <source>. More information about our security measures is located on our</source>
-        <target>.</target>
-      </trans-unit>
       <trans-unit id="10688" resname="r990413479" restype="string" datatype="x-haml">
         <source>The security of your personal information is a top priority for us. We are committed to protecting the security of your personal information. Experts design our security measures, and we use a variety of technologies and procedures to help protect the security of your personal information from unauthorized access, use, and disclosure. For example, information transferred between you and the site is encrypted. We restrict access to personal information to HealthTap employees, contractors, and agents who need to know that information in order to operate, develop, or improve our services. These individuals are bound by confidentiality obligations and may be subject to discipline, including termination and criminal prosecution, if they fail to meet these obligations. No method of transmission over the Internet, or method of electronic storage, is 100% secure, however. Therefore, we cannot guarantee its absolute security. If you have any specific questions about security on our Site, please see our</source>
         <target>我们严格限制需要了解个人信息以运营、开发或改进我们的服务的HealthTap的员工、承包商和代理商获取这些信息。这些个人受保密义务的约束，如果他们没有尽到这些义务将会受到包括终止业务和犯罪起诉在内的法律的制约。然而没有一种网络传输或电子储存的方法是100%安全的。</target>
@@ -7853,10 +7725,6 @@
       <trans-unit id="10689" resname="r832818263" restype="string" datatype="x-haml">
         <source>Currently, we only let you provide us with information about you &#40;except in the case of a Caregiver providing information about a Care Recipient&#41;. This Privacy Statement applies to this information.  In the future, we may allow users to provide us with information by or through other separately operated products or services.</source>
         <target>目前我们仅让您提供关于您的信息（除非护理者提供护理接受者信息的情况）。</target>
-      </trans-unit>
-      <trans-unit id="10690" resname="r352157577" restype="string" datatype="x-haml">
-        <source>. We cannot provide legal advice.</source>
-        <target>.</target>
       </trans-unit>
       <trans-unit id="10691" resname="r800680707" restype="string" datatype="x-haml">
         <source>This Privacy Statement does not apply to other service providers or links to other sites that are not owned or controlled by HealthTap, and you should read the individual privacy polices and terms of service of these providers before using their services. We encourage you to contact us if you believe a provider is not protecting the privacy or security of your health and wellness information. You may contact us in writing at:</source>
@@ -7976,14 +7844,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="millions_helped_survey.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="11679" resname="r182047412" restype="string" datatype="x-haml">
-        <source>. No story is too big or too short — they all bring smiles to our hearts and motivate our team, other users, and the amazing doctors who work day and night to help you and millions everywhere live healthier, happier lives.</source>
-        <target>.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="member_marketing_welcome_prime.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="11765" resname="r755741925" restype="string" datatype="x-haml">
@@ -8036,7 +7896,7 @@
     <body>
       <trans-unit id="12085" resname="r839019171" restype="string" datatype="x-haml">
         <source>An Introductory Consult is a &quot;meet and greet&quot; for customers who are not yet your patients. Please provide only advice in these sessions. At your discretion, and as appropriate under applicable medical standards &#40;including following an in-person visit where required&#41;, you may accept them as a patients.  With patients, you may provide treatment, write prescriptions, or suggest checklists. Patients will also be able to make additional appointments with you through your Virtual Practice.</source>
-        <target>对于尚未成为您患者的客户的一个介绍性咨询是“相遇打招呼”。您可以在谨慎和合理医疗条件是情况下（包括私人拜访）接受他们成为您的患者。您会为患者提供治疗、写处方和建议清单。患者也会通过您的在线实践和您做额外的预约。</target>
+        <target>对于尚未成为您患者的客户的一个介绍性咨询是“相遇打招呼”。您可以在谨慎和合理医疗条件是情况下（包括私人拜访）接受他们成为您的患者。您会为患者提供治疗、写处方和建议清单。患者也会通过您的在线诊疗和您做额外的预约。</target>
       </trans-unit>
     </body>
   </file>
@@ -8140,7 +8000,7 @@
     <body>
       <trans-unit id="12833" resname="r810064474" restype="string" datatype="x-haml">
         <source>Great!  You get all the benefits of HealthTap Prime</source>
-        <target>太棒了！</target>
+        <target>太棒了！您获得了HealthTap Prime的所有福利</target>
       </trans-unit>
       <trans-unit id="12855" resname="r438802283" restype="string" datatype="x-haml">
         <source>Payment Information</source>
@@ -8382,10 +8242,10 @@
       </trans-unit>
       <trans-unit id="13585" resname="Doctor                                &lt;span class=&amp;quot;instruction&amp;quot;&gt;&#40;requires valid U.S. medical professional license&#41;&lt;/span&gt;" restype="string" datatype="html">
         <source>Doctor
-                
+
                 &lt;span class=&quot;instruction&quot;&gt;&#40;requires valid U.S. medical professional license&#41;&lt;/span&gt;</source>
         <target>医生
-                
+
                 &lt;span class=&quot;instruction&quot;&gt;&#40;需要有效的美国医疗专业执照&#41;&lt;/span&gt;</target>
       </trans-unit>
     </body>
@@ -8407,7 +8267,7 @@
   <file original="public/javascripts/templates/people/health_history/history_entry.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="13587" resname=":         &lt;span class=&amp;quot;entry_activity&amp;quot;&gt;          &lt;%= health_journal_entry.entry.person_attribute_value.display_string.capitalize&#40;&#41; %&gt;        &lt;/span&gt;" restype="string" datatype="html">
-        <source>: 
+        <source>:
         &lt;span class=&quot;entry_activity&quot;&gt;
           &lt;%= health_journal_entry.entry.person_attribute_value.display_string.capitalize&#40;&#41; %&gt;
         &lt;/span&gt;</source>
@@ -8432,7 +8292,7 @@
       <trans-unit id="13589" resname="Find a doctor    &lt;a class=&amp;quot;expand-map&amp;quot;&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Find a doctor
     &lt;a class=&quot;expand-map&quot;&gt;&lt;/a&gt;</source>
-        <target>寻找一位医生
+        <target>寻找一名医生
     &lt;a class=&quot;expand-map&quot;&gt;&lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -8441,9 +8301,9 @@
     <body>
       <trans-unit id="13590" resname="Files  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;" restype="string" datatype="html">
         <source>Files
-		&lt;span class=&quot;sub_title&quot;&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;</source>
         <target>文件
-		&lt;span class=&quot;sub_title&quot;&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -8673,10 +8533,10 @@
     <body>
       <trans-unit id="13608" resname="This question has been sent to doctors in the     &lt;%= App.session.referSpecialty %&gt;     field" restype="string" datatype="html">
         <source>This question has been sent to doctors in the
-					&lt;%= App.session.referSpecialty %&gt;
-					field</source>
+          &lt;%= App.session.referSpecialty %&gt;
+          field</source>
         <target>这个问题已经发送给这个领域的医生
-					&lt;%= App.session.referSpecialty %&gt;</target>
+          &lt;%= App.session.referSpecialty %&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -8684,9 +8544,9 @@
     <body>
       <trans-unit id="13609" resname="REFER TO A COLLEAGUE  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
         <source>REFER TO A COLLEAGUE
-		&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
         <target>请参阅目录
-		&lt;span class=&quot;sub_title&quot;&gt;理解谁可以回答这个问题？太棒了！只需告诉我们是谁，我们会把它发送给他们。&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;理解谁可以回答这个问题？太棒了！只需告诉我们是谁，我们会把它发送给他们。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -8734,9 +8594,9 @@
     <body>
       <trans-unit id="13614" resname="ASK A DOCTOR A QUESTION  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
         <source>ASK A DOCTOR A QUESTION
-		&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
-        <target>询问一位医生一个问题
-		&lt;span class=&quot;sub_title&quot;&gt;直接从您在HealthTap选择的医生获得帮助使用HealthTap信用支付医生的时间。&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
+        <target>询问一名医生一个问题
+    &lt;span class=&quot;sub_title&quot;&gt;直接从您在HealthTap选择的医生获得帮助使用HealthTap信用支付医生的时间。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -8752,9 +8612,9 @@
     <body>
       <trans-unit id="13616" resname="Start a Private Conversation  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
         <source>Start a Private Conversation
-		&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience</source>
         <target>开始一次私人会话
-		&lt;span class=&quot;sub_title&quot;&gt;提高您的HealthTap体验</target>
+    &lt;span class=&quot;sub_title&quot;&gt;提高您的HealthTap体验</target>
       </trans-unit>
     </body>
   </file>
@@ -8762,9 +8622,9 @@
     <body>
       <trans-unit id="13617" resname="Start a Private Conversation  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
         <source>Start a Private Conversation
-		&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target>开始一次私人会话
-		&lt;span class=&quot;sub_title&quot;&gt;向您选择的医生询问更详细的问题，花费少量费用在一个私人的，HIPAA安全，一对一的设置下</target>
+    &lt;span class=&quot;sub_title&quot;&gt;向您选择的医生询问更详细的问题，花费少量费用在一个私人的，HIPAA安全，一对一的设置下</target>
       </trans-unit>
     </body>
   </file>
@@ -8772,9 +8632,9 @@
     <body>
       <trans-unit id="13618" resname="MESSAGE  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
         <source>MESSAGE
-		&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;</source>
         <target>信息
-		&lt;span class=&quot;sub_title&quot;&gt;私人的和HIPPA安全的&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;私人的和HIPPA安全的&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -8825,7 +8685,7 @@
   <file original="public/javascripts/templates/layers/messages/message_share_layer.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="13623" resname="Share with a friend or loved one here.         &lt;br&gt;" restype="string" datatype="html">
-        <source>Share with a friend or loved one here. 
+        <source>Share with a friend or loved one here.
         &lt;br&gt;</source>
         <target>&lt;br&gt;</target>
       </trans-unit>
@@ -8835,112 +8695,112 @@
     <body>
       <trans-unit id="13624" resname="GUIDELINES  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
         <source>GUIDELINES
-		&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
         <target>指南
-		&lt;span class=&quot;sub_title&quot;&gt;要提出一个优秀的HealthTap问题，请使用这些有帮助的指南&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;要提出一个优秀的HealthTap问题，请使用这些有帮助的指南&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13625" resname="Sweat the details... at least a little.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex1&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h1&amp;quot;&gt;Hide examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex1&amp;quot; class=&amp;quot;guidelineEx&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Sweat the details... at least a little.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex1&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h1&quot;&gt;Hide examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex1&quot; class=&quot;guidelineEx&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex1&quot; class=&quot;guidelineEx&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13626" resname="Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex2&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h2&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex2&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt; Why back pain?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex2&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h2&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex2&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex2&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13627" resname="Include sex/gender, when relevant.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex3&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h3&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex3&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Include sex/gender, when relevant.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex3&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h3&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex3&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex3&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13628" resname="Include an approximate age.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex4&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h4&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex4&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Include an approximate age.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex4&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h4&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex4&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;
-					&lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex4&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;
+          &lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13629" resname="Include weight, height and dosage units, where relevant.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex5&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h5&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex5&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Include weight, height and dosage units, where relevant.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex5&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h5&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex5&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex5&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13630" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex6&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h6&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex6&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol &#40;acetaminophen120mg/5ml&#41;, but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex6&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h6&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex6&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol &#40;acetaminophen120mg/5ml&#41;, but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex6&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol &#40;acetaminophen120mg/5ml&#41;, but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13631" resname="Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex7&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h7&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex7&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex7&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h7&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex7&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex7&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13632" resname="Try to leave opinions out.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex8&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h8&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex8&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Try to leave opinions out.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex8&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h8&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex8&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex8&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13633" resname="The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex9&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h9&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex9&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?    &lt;/span&gt;" restype="string" datatype="html">
         <source>The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex9&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h9&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex9&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex9&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13634" resname="Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex10&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h10&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex10&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex10&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h10&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex10&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex10&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13635" resname="To maintain privacy, leave your name and the names of others out &#40;unless that “other” is a celebrity who has publicly talked about an issue&#41;.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex11&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h11&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex11&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.    &lt;/span&gt;" restype="string" datatype="html">
         <source>To maintain privacy, leave your name and the names of others out &#40;unless that “other” is a celebrity who has publicly talked about an issue&#41;.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex11&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h11&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex11&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex11&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13636" resname="Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex12&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h12&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex12&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex12&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h12&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex12&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex12&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13637" resname="Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick=&amp;quot;$&#40;&apos;&#35;ex13&apos;&#41;.toggle&#40;&#41;;&amp;quot; class=&amp;quot;exampleToggle&amp;quot; id=&amp;quot;h13&amp;quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&amp;quot;ex13&amp;quot; class=&amp;quot;guidelineEx hide&amp;quot;&gt;     &lt;span class=&amp;quot;good&amp;quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;     &lt;span class=&amp;quot;bad&amp;quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?    &lt;/span&gt;" restype="string" datatype="html">
         <source>Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick=&quot;$&#40;&apos;&#35;ex13&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h13&quot;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&quot;ex13&quot; class=&quot;guidelineEx hide&quot;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?
-				&lt;/span&gt;</source>
+        &lt;span id=&quot;ex13&quot; class=&quot;guidelineEx hide&quot;&gt;
+          &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;
+          &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?
+        &lt;/span&gt;</source>
         <target>&lt;/span&gt;</target>
       </trans-unit>
     </body>
@@ -8958,13 +8818,13 @@
     <body>
       <trans-unit id="13647" resname="Ask doctors any question  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Anytime. Anywhere. &lt;span style=&amp;quot;font-weight: bold&amp;quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask doctors any question
-		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target>询问医生任何问题
-		&lt;span class=&quot;sub_title&quot;&gt;任何时间。任何地点。&lt;span style=&quot;font-weight: bold&quot;&gt;免费。 &lt;/span&gt;&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;任何时间。任何地点。&lt;span style=&quot;font-weight: bold&quot;&gt;免费。 &lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13648" resname=".   &lt;br&gt;" restype="string" datatype="html">
         <source>.
-			&lt;br&gt;</source>
+      &lt;br&gt;</source>
         <target>.&lt;br&gt;</target>
       </trans-unit>
     </body>
@@ -8973,9 +8833,9 @@
     <body>
       <trans-unit id="13649" resname="Ask Doctors Any Question  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&amp;quot;font-weight: bold&amp;quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask Doctors Any Question
-		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target>询问医生任何问题
-		&lt;span class=&quot;sub_title&quot;&gt;任何时间。任何地点。 &amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;免费。 &lt;/span&gt;&lt;/span&gt;</target>
+    &lt;span class=&quot;sub_title&quot;&gt;任何时间。任何地点。 &amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;免费。 &lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -8993,7 +8853,7 @@
     <body>
       <trans-unit id="13652" resname="Create a Tip  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
         <source>Create a Tip
-		&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
+    &lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target>创建一则小贴士
     &lt;span class=&quot;sub_title&quot;&gt;用100个字符帮助数百万人。通知，启发，激励。&lt;/span&gt;</target>
       </trans-unit>
@@ -9010,7 +8870,7 @@
   <file original="public/javascripts/templates/layers/IEDisclaimerPopup.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="13654" resname="Or download our mobile apps for       &lt;a href=&amp;quot;http://itunes.apple.com/us/app/id466079030&amp;quot;&gt;iPhone&lt;/a&gt;,      &lt;a href=&amp;quot;http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&amp;quot;&gt;Android&lt;/a&gt;, and      &lt;a href=&amp;quot;http://itunes.apple.com/us/app/id466079030&amp;quot;&gt;iPad&lt;/a&gt;" restype="string" datatype="html">
-        <source>Or download our mobile apps for 
+        <source>Or download our mobile apps for
       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPhone&lt;/a&gt;,
       &lt;a href=&quot;http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&quot;&gt;Android&lt;/a&gt;, and
       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPad&lt;/a&gt;</source>
@@ -9055,7 +8915,7 @@
         <source>Your feed is empty because we don&apos;t know what you&apos;re interested in. &lt;br&gt;
         &lt;a class=&quot;feed_settings_alt_link&quot;&gt;Let us know&lt;/a&gt;
         what you&apos;d like to see here.</source>
-        <target>您的新闻订阅是空的因为我们不知道您对什么感兴趣。 &lt;br&gt;
+        <target>您的主页是空的因为我们不知道您对什么感兴趣。 &lt;br&gt;
         &lt;a class=&quot;feed_settings_alt_link&quot;&gt;告诉我们&lt;/a&gt;
         您想在这里看到什么。</target>
       </trans-unit>
@@ -9155,7 +9015,7 @@
       <trans-unit id="13669" resname="Practice Information  &lt;span&gt;Drag to arrange order of entered locations with primary at top&lt;/span&gt;" restype="string" datatype="html">
         <source>Practice Information
   &lt;span&gt;Drag to arrange order of entered locations with primary at top&lt;/span&gt;</source>
-        <target>实践信息
+        <target>诊疗信息
   &lt;span&gt;拖动可排列输入位置的顺序，其中主要的位于顶部&lt;/span&gt;</target>
       </trans-unit>
     </body>
@@ -9329,7 +9189,7 @@
       <trans-unit id="13692" resname="You haven&apos;t added any doctors yet.        &lt;a href=&amp;quot;&#35;member/doctors/find_a_doctor&amp;quot;&gt;Find a doctor &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>You haven&apos;t added any doctors yet.
         &lt;a href=&quot;&#35;member/doctors/find_a_doctor&quot;&gt;Find a doctor &amp;raquo;&lt;/a&gt;</source>
-        <target>&lt;a href=&quot;&#35;member/doctors/find_a_doctor&quot;&gt;发现一位医生 &amp;raquo;&lt;/a&gt;</target>
+        <target>&lt;a href=&quot;&#35;member/doctors/find_a_doctor&quot;&gt;发现一名医生 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -9350,7 +9210,7 @@
       <trans-unit id="13695" resname="Added This Doctor          &#40;&lt;span class=&amp;quot;count third-tab&amp;quot;&gt;0&lt;/span&gt;&#41;" restype="string" datatype="html">
         <source>Added This Doctor
           &#40;&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;&#41;</source>
-        <target>添加这位医生
+        <target>添加这名医生
         &#40;&lt;span class=&quot;count&quot;&gt;&lt;/span&gt;&#41;</target>
       </trans-unit>
       <trans-unit id="13696" resname="Your Network          &#40;&lt;span class=&amp;quot;count first-tab&amp;quot;&gt;0&lt;/span&gt;&#41;" restype="string" datatype="html">
@@ -9469,24 +9329,24 @@
     <body>
       <trans-unit id="13710" resname="You earned    &lt;span class=&amp;quot;points_earned_highlight&amp;quot;&gt;     &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points    &lt;/span&gt;" restype="string" datatype="html">
         <source>You earned
-				&lt;span class=&quot;points_earned_highlight&quot;&gt;
-					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
-				&lt;/span&gt;</source>
+        &lt;span class=&quot;points_earned_highlight&quot;&gt;
+          &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
+        &lt;/span&gt;</source>
         <target>您获得的
-				&lt;span class=&quot;points_earned_highlight&quot;&gt;
-					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; 积分
-				&lt;/span&gt;</target>
+        &lt;span class=&quot;points_earned_highlight&quot;&gt;
+          &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; 积分
+        &lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="13711" resname="Today, you&apos;ve earned &lt;span class=&amp;quot;todays_points_highlight&amp;quot;&gt; 180 points&lt;/span&gt; for helping millions.   &lt;br&gt;   Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points." restype="string" datatype="html">
         <source>Today, you&apos;ve earned &lt;span class=&quot;todays_points_highlight&quot;&gt; 180 points&lt;/span&gt; for helping millions.
-			&lt;br&gt;
-			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
+      &lt;br&gt;
+      Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
         <target>今天，您已经获得 &lt;span class=&quot;todays_points_highlight&quot;&gt; 180积分&lt;/span&gt; 为需要帮助的数百万人。&lt;br&gt;
-			回答 &lt;b&gt;X&lt;/b&gt; 更多问题在接下来的&lt;b&gt;X&lt;/b&gt; 时间，可以双倍您的每日积分。</target>
+      回答 &lt;b&gt;X&lt;/b&gt; 更多问题在接下来的&lt;b&gt;X&lt;/b&gt; 时间，可以双倍您的每日积分。</target>
       </trans-unit>
       <trans-unit id="13712" resname="Here are a few patient questions to keep you going.  &lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Here are a few patient questions to keep you going.
-		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
+    &lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
         <target>&lt;a&gt;查看您的所有回答 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -9575,7 +9435,7 @@
         <source>This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt;
       will be given credit for assisting you. Edit as you deem necessary.
       &lt;a class=&quot;child-browser-link&quot; href=&quot;&#35;how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt; &lt;/a&gt;</source>
-        <target>这个回答会出现在您的在线实践中和 &lt;%= user_answer.contributor.name %&gt;
+        <target>这个回答会出现在您的在线诊疗中和 &lt;%= user_answer.contributor.name %&gt;
       会被给予信用协助您。&lt;a class=&quot;child-browser-link&quot; href=&quot;&#35;how_it_works/healthtap_university&quot;&gt;更多关于HealthTap大学 &amp;gt; &lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -9630,11 +9490,11 @@
       <trans-unit id="13728" resname="Medical Student &lt;a class=&amp;quot;actor_link&amp;quot; href=&amp;quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&amp;quot;&gt;          &lt;%= user_question.actor.name %&gt;        &lt;/a&gt;         asked:" restype="string" datatype="html">
         <source>Medical Student &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;
           &lt;%= user_question.actor.name %&gt;
-        &lt;/a&gt; 
+        &lt;/a&gt;
         asked:</source>
         <target>医学学生 &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;
           &lt;%= user_question.actor.name %&gt;
-        &lt;/a&gt; 
+        &lt;/a&gt;
         询问：</target>
       </trans-unit>
     </body>
@@ -9721,7 +9581,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
               1
               &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;
               &lt;/span&gt;
-              time consult discount for 
+              time consult discount for
               &lt;span style=&quot;display: inline-block;&quot;&gt;&lt;%= discount_price %&gt;
                 &lt;span class=&quot;sprite-icon tooltip offer-tooltip&quot;&gt;</source>
         <target>提供
@@ -9979,9 +9839,9 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
   <file original="public/feelGood/templates/legal_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="13767" resname="When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;.   You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for   virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay   seeking or receiving care in person as needed. &lt;br&gt;See &lt;a href=&amp;quot;/terms/additional_info&amp;quot; target=&amp;quot;_blank&amp;quot;&gt;Additional Information&lt;/a&gt;" restype="string" datatype="html">
-        <source>When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;. 
-  You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for 
-  virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay 
+        <source>When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;.
+  You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for
+  virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay
   seeking or receiving care in person as needed. &lt;br&gt;See &lt;a href=&quot;/terms/additional_info&quot; target=&quot;_blank&quot;&gt;Additional Information&lt;/a&gt;</source>
         <target>&lt;br&gt;查看 &lt;a href=&quot;/terms/additional_info&quot; target=&quot;_blank&quot;&gt;附加信息&lt;/a&gt;</target>
       </trans-unit>
@@ -10005,11 +9865,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="13773" resname="RB.getStringJS&#40;In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.&#41;.format&#40;{     bold_tag_start: &apos;&lt;b&gt;&apos;,     bold_tag_end: &apos;&lt;/b&gt;&apos;    }&#41;" restype="string" datatype="html">
         <source>RB.getStringJS&#40;In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.&#41;.format&#40;{
-    	bold_tag_start: &apos;&lt;b&gt;&apos;,
-    	bold_tag_end: &apos;&lt;/b&gt;&apos;
+      bold_tag_start: &apos;&lt;b&gt;&apos;,
+      bold_tag_end: &apos;&lt;/b&gt;&apos;
     }&#41;</source>
         <target>RB.getStringJS&#40;除了现场在线咨询，您也会收到 {bold_tag_start}信箱咨询{bold_tag_end}.&apos;&lt;b&gt;&apos;,
-    	bold_tag_end:&apos;&lt;/b&gt;&apos;
+      bold_tag_end:&apos;&lt;/b&gt;&apos;
     }&#41;</target>
       </trans-unit>
     </body>
@@ -10066,19 +9926,19 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="13781" resname="Sorry, this consult got disconnected.&lt;br&gt;   &lt;%=    RB.getString&#40;&apos;Please try again or {link_tag_start}contact us{link_tag_end} for support.&apos;&#41;.format&#40;{     link_tag_start: &apos;&lt;a href=&amp;quot;mailto:​feedback@healthtap.com?subject=My%20live%20consult%20was%20disconnected%20&#40;ID:%20&apos; + user_id + &apos;&#41;&amp;quot;&gt;&apos;,     link_tag_end: &apos;&lt;/a&gt;&apos;    }&#41;   %&gt;" restype="string" datatype="html">
         <source>Sorry, this consult got disconnected.&lt;br&gt;
-  	&lt;%=
-  		RB.getString&#40;&apos;Please try again or {link_tag_start}contact us{link_tag_end} for support.&apos;&#41;.format&#40;{
-  			link_tag_start: &apos;&lt;a href=&quot;mailto:​feedback@healthtap.com?subject=My%20live%20consult%20was%20disconnected%20&#40;ID:%20&apos; + user_id + &apos;&#41;&quot;&gt;&apos;,
-  			link_tag_end: &apos;&lt;/a&gt;&apos;
-  		}&#41;
-  	%&gt;</source>
+    &lt;%=
+      RB.getString&#40;&apos;Please try again or {link_tag_start}contact us{link_tag_end} for support.&apos;&#41;.format&#40;{
+        link_tag_start: &apos;&lt;a href=&quot;mailto:​feedback@healthtap.com?subject=My%20live%20consult%20was%20disconnected%20&#40;ID:%20&apos; + user_id + &apos;&#41;&quot;&gt;&apos;,
+        link_tag_end: &apos;&lt;/a&gt;&apos;
+      }&#41;
+    %&gt;</source>
         <target>对不起，这次咨询中断了。&lt;br&gt;
-  	&lt;%=
-  		RB.getString&#40;&apos;Please try again or {link_tag_start}contact us{link_tag_end} for support.&apos;&#41;.format&#40;{
-  			link_tag_start:&apos;&lt;a href=&quot;mailto:​feedback@healthtap.com?subject=My%20live%20consult%20was%20disconnected%20&#40;ID:%20&apos; + user_id + &apos;&#41;&quot;&gt;&apos;,
-  			link_tag_end:&apos;&lt;/a&gt;&apos;
-  		}&#41;
-  	%&gt;</target>
+    &lt;%=
+      RB.getString&#40;&apos;Please try again or {link_tag_start}contact us{link_tag_end} for support.&apos;&#41;.format&#40;{
+        link_tag_start:&apos;&lt;a href=&quot;mailto:​feedback@healthtap.com?subject=My%20live%20consult%20was%20disconnected%20&#40;ID:%20&apos; + user_id + &apos;&#41;&quot;&gt;&apos;,
+        link_tag_end:&apos;&lt;/a&gt;&apos;
+      }&#41;
+    %&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -10119,7 +9979,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
   <file original="public/feelGood/templates/benefits_column.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="13788" resname="Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.           &lt;a href=&amp;quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&amp;quot; target=&amp;quot;_blank&amp;quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
-        <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation. 
+        <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.
           &lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>新的治疗处方和补充药（不包括受管制的药物），可以发送到您当地的药店，根据您的在线咨询，医生给出适当的指示和治疗方式。&lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;了解&amp;nbsp;更多&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -10378,7 +10238,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="13899" resname="When you accept a consult, your patient will have the choice of interacting with you via video, voice, or text chat. It’s important to start each consult with a smile. Do whatever you can to make the patient feel comfortable. Practice now by typing a caring chat message below and pressing enter to send." restype="string" datatype="javascript">
         <source>When you accept a consult, your patient will have the choice of interacting with you via video, voice, or text chat. It’s important to start each consult with a smile. Do whatever you can to make the patient feel comfortable. Practice now by typing a caring chat message below and pressing enter to send.</source>
-        <target>当您接受咨询，您的患者将有机会选择通过视频，语音或文本聊天与您互动。用一个微笑开始每次咨询是非常重要的。做任何可以让患者感到舒适的事。现在实践在下面输入关心的聊天消息，然后按Enter键发送。</target>
+        <target>当您接受咨询，您的患者将有机会选择通过视频，语音或文本聊天与您互动。用一个微笑开始每次咨询是非常重要的。做任何可以让患者感到舒适的事。现在诊疗在下面输入关心的聊天消息，然后按Enter键发送。</target>
       </trans-unit>
       <trans-unit id="13900" resname="All consults will start with a chat message from the patient explaining the reason for the consult." restype="string" datatype="javascript">
         <source>All consults will start with a chat message from the patient explaining the reason for the consult.</source>
@@ -10410,7 +10270,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="13908" resname="&lt;b&gt;Intro consults&lt;/b&gt; are a first visit with a prospective patient who is not yet accepted into your practice. Even if you choose not to accept a patient into your practice, you can still offer advice and suggest appropriate follow-up care during the intro consult." restype="string" datatype="javascript">
         <source>&lt;b&gt;Intro consults&lt;/b&gt; are a first visit with a prospective patient who is not yet accepted into your practice. Even if you choose not to accept a patient into your practice, you can still offer advice and suggest appropriate follow-up care during the intro consult.</source>
-        <target>&lt;b&gt;咨询介绍&lt;/ b&gt;是对未来患者的首次访问那些还没有被接受过您实践的人。即使您选择不接受患者进行您的实践，您仍然可以提供咨询并在介绍性咨询期间建议适当的后续护理。</target>
+        <target>&lt;b&gt;咨询介绍&lt;/ b&gt;是对未来患者的首次访问那些还没有被接受过您诊疗的人。即使您选择不接受患者进行您的诊疗，您仍然可以提供咨询并在介绍性咨询期间建议适当的后续护理。</target>
       </trans-unit>
       <trans-unit id="13909" resname="Enter Introductory Consult Notes for the patient. When done, press the continue button." restype="string" datatype="javascript">
         <source>Enter Introductory Consult Notes for the patient. When done, press the continue button.</source>
@@ -10418,7 +10278,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="13910" resname="At any time during the intro consult, you may select the checkmark below the intro consult notes section to &lt;b&gt;accept the patient&lt;/b&gt; into your virtual practice. This is a great way to extend your reach and grow your practice!" restype="string" datatype="javascript">
         <source>At any time during the intro consult, you may select the checkmark below the intro consult notes section to &lt;b&gt;accept the patient&lt;/b&gt; into your virtual practice. This is a great way to extend your reach and grow your practice!</source>
-        <target>在介绍咨询期间的任何时间，您可以选择复选标记以下介绍咨询注意事项部分&lt;b&gt;接受患者&lt;/ b&gt;                           进入您的在线实践。这是一个很好的方式来扩展您的范围和增长您的实践经验！</target>
+        <target>在介绍咨询期间的任何时间，您可以选择复选标记以下介绍咨询注意事项部分&lt;b&gt;接受患者&lt;/ b&gt;                           进入您的在线诊疗。这是一个很好的方式来扩展您的范围和增长您的诊疗经验！</target>
       </trans-unit>
       <trans-unit id="13911" resname="When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note displays. To complete your consult, you&apos;ll need to complete and submit your summary or SOAP Note. To help you fully understand this form, let&apos;s take a tour through each of the sections." restype="string" datatype="javascript">
         <source>When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note displays. To complete your consult, you&apos;ll need to complete and submit your summary or SOAP Note. To help you fully understand this form, let&apos;s take a tour through each of the sections.</source>
@@ -10439,7 +10299,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="13915" resname="This is where you can really help your patient! You’ll notice that you can add as many &lt;b&gt;recommended actionable steps&lt;/b&gt; or follow-up care instructions. &lt;b&gt;Make sure you have at least one.&lt;/b&gt; You can also turn any recommendation into a helpful regular reminder with just a few clicks." restype="string" datatype="javascript">
         <source>This is where you can really help your patient! You’ll notice that you can add as many &lt;b&gt;recommended actionable steps&lt;/b&gt; or follow-up care instructions. &lt;b&gt;Make sure you have at least one.&lt;/b&gt; You can also turn any recommendation into a helpful regular reminder with just a few clicks.</source>
-        <target>这是您真正可以帮助您的患者的地方！您会注意到您可以添加任意数量的&lt;b&gt;建议的可操作步骤&lt;/ b&gt;或跟进的照顾说明。&lt;b&gt;请确保您至少有一个。&lt;/ b&gt;您可以将任何建议变成有用的常规提醒那些提醒只需几次点击。</target>
+        <target>这是您真正可以帮助您的患者的地方！您会注意到您可以添加任意数量的&lt;b&gt;建议的可操作步骤&lt;/ b&gt;或跟进的照顾说明。&lt;b&gt;请确保您至少有一个。&lt;/ b&gt;您可以将任何建议变成有帮助的常规提醒那些提醒只需几次点击。</target>
       </trans-unit>
       <trans-unit id="13916" resname="Go ahead and give it a try. For example, recommend a 30-minute walk, once a day, for a month." restype="string" datatype="javascript">
         <source>Go ahead and give it a try. For example, recommend a 30-minute walk, once a day, for a month.</source>
@@ -10548,17 +10408,17 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="13941" resname="You can set your &lt;b&gt;virtual office hours&lt;/b&gt; at your convenience, and you can change them at any time. You can update your virtual office hours, set vacation days, and choose &amp;quot;unavailable&amp;quot; times by clicking &amp;quot;Practice Hours.&amp;quot;" restype="string" datatype="javascript">
         <source>You can set your &lt;b&gt;virtual office hours&lt;/b&gt; at your convenience, and you can change them at any time. You can update your virtual office hours, set vacation days, and choose &quot;unavailable&quot; times by clicking &quot;Practice Hours.&quot;</source>
-        <target>您可以在方便时设置&lt;b&gt;在线办公时间&lt;/ b&gt;，并且您可以随时更改它们。通过单击“实践时间”，您可以更新您的在线办公室小时，设置假期日期。</target>
+        <target>您可以在方便时设置&lt;b&gt;在线办公时间&lt;/ b&gt;，并且您可以随时更改它们。通过单击“诊疗时间”，您可以更新您的在线办公室小时，设置假期日期。</target>
       </trans-unit>
       <trans-unit id="13942" resname="In addition to live virtual consults, you will also receive &lt;b&gt;Inbox Consults&lt;/b&gt;. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours. You will earn $30 when you complete patient consults and submit your SOAP Note." restype="string" datatype="javascript">
         <source>In addition to live virtual consults, you will also receive &lt;b&gt;Inbox Consults&lt;/b&gt;. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours. You will earn $30 when you complete patient consults and submit your SOAP Note.</source>
         <target>除了实时在线咨询，您还将收到&lt;b&gt; 收件箱咨询 &lt;/ b&gt;。这些是您患者付费的详细的消息，
-                    显示在您的首页的顶部，必须在24小时答复。当您完成患者咨询并提交您的SOAP注释，您将赚到30美金。</target>
+                    显示在您主页的顶部，必须在24小时答复。当您完成患者咨询并提交您的SOAP注释，您将赚到30美金。</target>
       </trans-unit>
       <trans-unit id="13943" resname="&lt;b&gt;Inbox Consults&lt;/b&gt; are detailed questions from your patients that appear at the top of your homepage feed and must be answered within 24 hours. You can send clarification questions and have a conversation with the patients. To end the consult, simply submit the SOAP note." restype="string" datatype="javascript">
         <source>&lt;b&gt;Inbox Consults&lt;/b&gt; are detailed questions from your patients that appear at the top of your homepage feed and must be answered within 24 hours. You can send clarification questions and have a conversation with the patients. To end the consult, simply submit the SOAP note.</source>
         <target>&lt;b&gt;收件箱咨询&lt;/ b&gt;是关于您患者的详细问题，
-                      他们将显示在您的首页的顶部，您必须在24小时答复。您可以发送解释性问题和和患者开启谈话。\要结束咨询，只需提交SOAP注释。</target>
+                      他们将显示在您主页的顶部，您必须在24小时答复。您可以发送解释性问题和和患者开启谈话。\要结束咨询，只需提交SOAP注释。</target>
       </trans-unit>
       <trans-unit id="13944" resname="Tip: Please respond to any Inbox Consults within 24 hours. Submit your answer as a SOAP consult note, or ask your patient follow-up questions by entering your question and clicking the “Wait for response” button." restype="string" datatype="javascript">
         <source>Tip: Please respond to any Inbox Consults within 24 hours. Submit your answer as a SOAP consult note, or ask your patient follow-up questions by entering your question and clicking the “Wait for response” button.</source>
@@ -10634,7 +10494,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="14000" resname=" More personalized doctor insights » " restype="string" datatype="javascript">
         <source>More personalized doctor insights »</source>
-        <target>更个性化的医生见解 »</target>
+        <target>更专属于您的医生见解 »</target>
       </trans-unit>
     </body>
   </file>

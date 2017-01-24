@@ -929,11 +929,11 @@
         <source>Subscribe to HealthTap Prime</source>
         <target>Suscríbete a HealthTap Prime</target>
       </trans-unit>
-      <trans-unit id="167" resname="r795486165" restype="string" datatype="java">
+      <trans-unit id="167" resname="r675065080" restype="string" datatype="java">
         <source>Talk to a doctor live 24/7 via video or text chat</source>
         <target>Habla con un doctor en vivo, 24/7, vía chat de video o texto</target>
       </trans-unit>
-      <trans-unit id="168" resname="r610432580" restype="string" datatype="java">
+      <trans-unit id="168" resname="r991907007" restype="string" datatype="java">
         <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
         <target>Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar en cualquier momento</target>
       </trans-unit>
@@ -1554,7 +1554,7 @@
       </trans-unit>
       <trans-unit id="281" resname="r682432029" restype="string" datatype="java">
         <source>\nTry a Virtual Consult ›</source>
-        <target>nPrueba una Consulta Virtual ›</target>
+        <target>\nPrueba una Consulta Virtual ›</target>
       </trans-unit>
       <trans-unit id="282" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
@@ -3772,7 +3772,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="676" resname="r112497852" restype="string" datatype="java">
+      <trans-unit id="676" resname="r45009371" restype="string" datatype="java">
         <source>Near you</source>
         <target>Cerca de ti</target>
       </trans-unit>

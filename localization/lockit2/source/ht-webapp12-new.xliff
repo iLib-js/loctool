@@ -43750,13 +43750,6 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/templates/connect_doctor_module.tmpl.html" source-language="en-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="12644" resname=" &lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;" restype="string">
-        <source> &lt;%= RB.getStringJS&#40;&apos;Search name, specialty, topic&apos;&#41; %&gt;</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/feelGood/templates/cme_content.tmpl.html" source-language="en-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="12645" resname="We track the &lt;i style=&quot;font-style: italic;&quot;&gt;AMA PRA Category 1 Credit&#40;s&#41;&lt;/i&gt;™ you&apos;ve earned on HealthTap. A certificate can be generated for your earned credits. &lt;a href=&quot;/expert/global_rounds?prompt_cme_agreement=1&quot; target=&quot;_blank&quot;&gt;See terms &amp;rsaquo;&lt;/a&gt;

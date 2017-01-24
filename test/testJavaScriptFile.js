@@ -330,10 +330,10 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource("We\\'ll notify you when {prefix}{last_name} accepts you as a patient!");
+        var r = set.getBySource("We'll notify you when {prefix}{last_name} accepts you as a patient!");
         test.ok(r);
-        test.equal(r.getSource(), "We\\'ll notify you when {prefix}{last_name} accepts you as a patient!");
-        test.equal(r.getKey(), "We\\'ll notify you when {prefix}{last_name} accepts you as a patient!");
+        test.equal(r.getSource(), "We'll notify you when {prefix}{last_name} accepts you as a patient!");
+        test.equal(r.getKey(), "We'll notify you when {prefix}{last_name} accepts you as a patient!");
         
         test.done();
     },
@@ -359,10 +359,10 @@ module.exports = {
         var set = j.getTranslationSet();
         test.ok(set);
         
-        var r = set.getBySource('We\\"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        var r = set.getBySource('We"ll notify you when {prefix}{last_name} accepts you as a patient!');
         test.ok(r);
-        test.equal(r.getSource(), 'We\\"ll notify you when {prefix}{last_name} accepts you as a patient!');
-        test.equal(r.getKey(), 'We\\"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        test.equal(r.getSource(), 'We"ll notify you when {prefix}{last_name} accepts you as a patient!');
+        test.equal(r.getKey(), 'We"ll notify you when {prefix}{last_name} accepts you as a patient!');
         
         test.done();
     },
