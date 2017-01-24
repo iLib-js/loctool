@@ -124,7 +124,7 @@
       </trans-unit>
       <trans-unit id="90" resname="r542330338" restype="string" datatype="ruby">
         <source>You get doctor advice,&lt;br&gt;actionable plans,&lt;br&gt;prescriptions, referrals,&lt;br&gt;and even lab tests</source>
-        <target>您可以得到医生的建议、&lt;br&gt;可行的计划、&lt;br&gt;处方、转介、&lt;br&gt、甚至实验室检验</target>
+        <target>您可以得到医生的建议、&lt;br&gt;可行的计划、&lt;br&gt;处方、转介、&lt;br&gt;、甚至实验室检验</target>
       </trans-unit>
       <trans-unit id="91" resname="r192293734" restype="string" datatype="ruby">
         <source>Safe, secure, and private:&lt;br&gt; We provide the right care when you need it most</source>
