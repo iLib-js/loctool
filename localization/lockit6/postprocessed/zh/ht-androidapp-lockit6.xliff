@@ -2393,7 +2393,7 @@
       <trans-unit id="428" resname="r22905822" restype="string" datatype="java">
         <source>Please fill out all the information</source>
         <target>请填写所有信息</target>
-      </trans您完成了！-unit>
+      </trans-unit>
     </body>
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/profiles/ProfilesGeneralListDialog.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
