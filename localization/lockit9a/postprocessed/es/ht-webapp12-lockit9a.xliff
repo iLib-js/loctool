@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="Would you like a translator to join you for this Prime consult?" restype="string" datatype="javascript">
+        <source>Would you like a translator to join you for this Prime consult?</source>
+        <target state="accepted">¿Quieres agregar un intérprete gratis? Si no, es posible que tu médico no hable español. Si eliges un médico individualmente, por favor confirma que tu médico habla español en su perfil.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
