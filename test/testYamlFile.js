@@ -1539,7 +1539,8 @@ module.exports = {
             sourceLocale: "en-US",
             resourceDirs: {
                 yml: "a/b"
-            }
+            },
+            id: "foo"
         }, "./testfiles");
 
         var yml = new YamlFile({
@@ -1552,7 +1553,6 @@ module.exports = {
         [
             new ResourcePlural({
                 project: "foo",
-                context: "blah",
                 locale: "de-DE",
                 key: "asdf",
                 strings: {
@@ -1568,15 +1568,15 @@ module.exports = {
             yml.addResource(res);
         });
 
-        diff(yml.getContent(),
-            'source_text: Quellen\"text\n' +
-            'more_source_text: mehr Quellen\"text\n'
-        );
+        var expected = "" +
+        "asdf:\n"+
+        "  one: This is singular\n" +
+        "  two: This is double\n" +
+        "  few: This is a different case\n"
 
-        test.equal(yml.getContent(),
-            'source_text: Quellen\"text\n' +
-            'more_source_text: mehr Quellen\"text\n'
-        );
+        diff(yml.getContent(),expected);
+
+        test.equal(yml.getContent(), expected);
 
         test.done();
     }
