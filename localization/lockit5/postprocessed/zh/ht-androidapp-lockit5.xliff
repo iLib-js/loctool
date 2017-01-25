@@ -217,7 +217,7 @@
     <body>
       <trans-unit id="812" resname="r363844654" restype="string" datatype="java">
         <source>{approver_name} agreed with {author_name}'s checklist</source>
-        <target>{Approver_name} 同意 {author_name}的清单</target>
+        <target>{approver_name} 同意 {author_name}的清单</target>
       </trans-unit>
     </body>
   </file>

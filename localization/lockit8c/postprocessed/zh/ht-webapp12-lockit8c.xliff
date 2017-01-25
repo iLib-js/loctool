@@ -458,7 +458,7 @@
       </trans-unit>
       <trans-unit id="5250" resname="r990081174" restype="string" datatype="ruby">
         <source>%{invited_byemail} via HealthTap &lt;notifications@healthtap.com&gt;</source>
-        <target state="translated">%{Invited_byemail}通过HealthTap &lt;notifications@healthtap.com&gt;</target>
+        <target state="translated">%{invited_byemail}通过HealthTap &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
       <trans-unit id="5251" resname="r268576192" restype="string" datatype="ruby">
         <source>You’ve been gifted $5 by %{gifter}!</source>
@@ -554,7 +554,7 @@
       </trans-unit>
       <trans-unit id="5274" resname="r134350509" restype="string" datatype="ruby">
         <source>%{fromname} via HealthTap</source>
-        <target state="translated">%{Fromname} 通过HealthTap</target>
+        <target state="translated">%{fromname} 通过HealthTap</target>
       </trans-unit>
       <trans-unit id="5275" resname="r335376282" restype="string" datatype="ruby">
         <source>Doctor has invited their colleague to Healthtap!</source>
@@ -722,7 +722,7 @@
       </trans-unit>
       <trans-unit id="5316" resname="r757712416" restype="string" datatype="ruby">
         <source>%{inviter} invited %{directory_expert} to join HealthTap</source>
-        <target state="translated">%{Inviter} 已邀请 %{directory_expert}加入HealthTap</target>
+        <target state="translated">%{inviter} 已邀请 %{directory_expert}加入HealthTap</target>
       </trans-unit>
       <trans-unit id="5317" resname="r646495610" restype="string" datatype="ruby">
         <source>New questions for you from HealthTap</source>
@@ -762,7 +762,7 @@
       </trans-unit>
       <trans-unit id="5326" resname="r791622700" restype="string" datatype="ruby">
         <source>%{inviter} wants you to join %{group} on HealthTap</source>
-        <target state="translated">%{Inviter} 希望您在HealthTap加入我的%{group}</target>
+        <target state="translated">%{inviter} 希望您在HealthTap加入我的%{group}</target>
       </trans-unit>
       <trans-unit id="5327" resname="r7976305" restype="string" datatype="ruby">
         <source>New group %{group} has been created</source>
@@ -770,7 +770,7 @@
       </trans-unit>
       <trans-unit id="5328" resname="r660525361" restype="string" datatype="ruby">
         <source>&#40;%{rails}&#41; New contact us message received</source>
-        <target state="translated">&#40;%{Rails}&#41; 收到了联系我们的新消息</target>
+        <target state="translated">&#40;%{rails}&#41; 收到了联系我们的新消息</target>
       </trans-unit>
       <trans-unit id="5329" resname="r884754983" restype="string" datatype="ruby">
         <source>%{expert}&apos;s smiling!</source>
@@ -850,7 +850,7 @@
       </trans-unit>
       <trans-unit id="5348" resname="r1029281684" restype="string" datatype="ruby">
         <source>%{campaigncategory} weekly digest campaign summary</source>
-        <target state="translated">%{Campaigncategory} 每周摘要活动总结</target>
+        <target state="translated">%{campaigncategory} 每周摘要活动总结</target>
       </trans-unit>
       <trans-unit id="5349" resname="r904518679" restype="string" datatype="ruby">
         <source>New message from %{message}</source>
@@ -938,7 +938,7 @@
       </trans-unit>
       <trans-unit id="5370" resname="r823372721" restype="string" datatype="ruby">
         <source>%{asker_name} copied you on a HealthTap question</source>
-        <target state="translated">%{Asker_name} 复制您在HealthTap的问题</target>
+        <target state="translated">%{asker_name} 复制您在HealthTap的问题</target>
       </trans-unit>
       <trans-unit id="5371" resname="r896064637" restype="string" datatype="ruby">
         <source>%{question}’s question was just answered</source>
@@ -1202,7 +1202,7 @@
       </trans-unit>
       <trans-unit id="5436" resname="r905278574" restype="string" datatype="ruby">
         <source>%{expert} would like to invite you to join HealthTap</source>
-        <target state="translated">%{Expert} 希望邀请您加入HealthTap</target>
+        <target state="translated">%{expert} 希望邀请您加入HealthTap</target>
       </trans-unit>
       <trans-unit id="5437" resname="r239352165" restype="string" datatype="ruby">
         <source>Healthtap Daily Pulse.</source>
@@ -1290,11 +1290,11 @@
       </trans-unit>
       <trans-unit id="5458" resname="r466065775" restype="string" datatype="ruby">
         <source>%{expert_name}, provide your patients higher quality care by joining %{branding}!</source>
-        <target state="translated">%{Expert_name}, 通过加入%{branding}提供给您患者更高质量的医护！</target>
+        <target state="translated">%{expert_name}, 通过加入%{branding}提供给您患者更高质量的医护！</target>
       </trans-unit>
       <trans-unit id="5459" resname="r428640611" restype="string" datatype="ruby">
         <source>%{expert_name}, your colleagues are joining %{branding} for various reasons!</source>
-        <target state="translated">%{Expert_name}, 您的同时因各种原因正在加入%{branding}！</target>
+        <target state="translated">%{expert_name}, 您的同时因各种原因正在加入%{branding}！</target>
       </trans-unit>
       <trans-unit id="5460" resname="r416665790" restype="string" datatype="ruby">
         <source>Final reminder, %{expert_name}: Claim your %{branding} account!</source>
@@ -1306,7 +1306,7 @@
       </trans-unit>
       <trans-unit id="5462" resname="r106586082" restype="string" datatype="ruby">
         <source>%{expert_name}, you can care for your patients virtually now</source>
-        <target state="translated">%{Expert_name}, 您现在可以在线医护您的患者了</target>
+        <target state="translated">%{expert_name}, 您现在可以在线医护您的患者了</target>
       </trans-unit>
       <trans-unit id="5463" resname="r492263607" restype="string" datatype="ruby">
         <source>%{expert_name}, help more patients and reduce your workload</source>
@@ -1471,7 +1471,7 @@
       </trans-unit>
       <trans-unit id="5503" resname="r261891375" restype="string" datatype="ruby">
         <source>%{expert}, your Virtual Practice is active again. You&apos;re good to go!</source>
-        <target state="translated">%{Expert}, 您的在线诊疗再次激活好好干吧！</target>
+        <target state="translated">%{expert}, 您的在线诊疗再次激活好好干吧！</target>
       </trans-unit>
       <trans-unit id="5504" resname="r464688660" restype="string" datatype="ruby">
         <source>%{expert}, your Concierge Virtual Practice is active again. You&apos;re good to go!</source>
@@ -1811,7 +1811,7 @@
       </trans-unit>
       <trans-unit id="5588" resname="r11819796" restype="string" datatype="ruby">
         <source>%{subject_title}, congratulations! Welcome to HealthTap Concierge</source>
-        <target state="translated">%{Subject_title}, 恭喜！欢迎来到HealthTap贵宾台</target>
+        <target state="translated">%{subject_title}, 恭喜！欢迎来到HealthTap贵宾台</target>
       </trans-unit>
       <trans-unit id="5589" resname="r213915888" restype="string" datatype="ruby">
         <source>%{subject_name}, your HealthTap Concierge application</source>
@@ -1839,7 +1839,7 @@
       </trans-unit>
       <trans-unit id="5595" resname="r337057437" restype="string" datatype="ruby">
         <source>%{subject_name}, thank you for applying to HealthTap</source>
-        <target state="translated">{subject_name}，感谢您申请HealthTap</target>
+        <target state="translated">%{subject_name}，感谢您申请HealthTap</target>
       </trans-unit>
       <trans-unit id="5596" resname="r255838271" restype="string" datatype="ruby">
         <source>%{subject_name}, thank you for applying to HealthTap&apos;s Medical Expert Network</source>
@@ -2139,7 +2139,7 @@
       </trans-unit>
       <trans-unit id="5670" resname="r228289190" restype="string" datatype="ruby">
         <source>%{person}, Help Others by Rating HealthTap Today! ★★★★★</source>
-        <target state="translated">%{Person}, 立刻通过HealthTap评分帮助其他人！★★★★★</target>
+        <target state="translated">%{person}, 立刻通过HealthTap评分帮助其他人！★★★★★</target>
       </trans-unit>
       <trans-unit id="5671" resname="r35312396" restype="string" datatype="ruby">
         <source>Hi there, Help Others by Rating HealthTap Today! ★★★★★</source>
@@ -2315,7 +2315,7 @@
       </trans-unit>
       <trans-unit id="5714" resname="r994918894" restype="string" datatype="ruby">
         <source>Message: &#40;%{message}&#41;, from: &#40;%{number}&#41;</source>
-        <target state="translated">信息：&#40;%{Message}&#41;, 从：&#40;%{number}&#41;</target>
+        <target state="translated">信息：&#40;%{message}&#41;, 从：&#40;%{number}&#41;</target>
       </trans-unit>
       <trans-unit id="5715" resname="r944217877" restype="string" datatype="ruby">
         <source>[PRIME OPS] message from %{number} via twilio</source>
@@ -2391,7 +2391,7 @@
       </trans-unit>
       <trans-unit id="5733" resname="r955328956" restype="string" datatype="ruby">
         <source>%{expert_name} &#40;%{expert_id}&#41; has taken more than 20 minutes of break with number of: %{num_of_break} times.</source>
-        <target state="translated">%{expert_name} &#40;%{expert_id}&#41; 已超过20分钟休息时间的数量为：%{Num_of_break} 次数。</target>
+        <target state="translated">%{expert_name} &#40;%{expert_id}&#41; 已超过20分钟休息时间的数量为：%{num_of_break} 次数。</target>
       </trans-unit>
       <trans-unit id="5734" resname="r985925195" restype="string" datatype="ruby">
         <source>%{name} &#40;%{id}&#41; got credit charge back for %{dollor_charge_back}.</source>
@@ -2451,7 +2451,7 @@
       </trans-unit>
       <trans-unit id="5748" resname="r649292409" restype="string" datatype="ruby">
         <source>%{person}, have you missed the Virtual Appointment on HealthTap?</source>
-        <target state="translated">%{Person}, 您错过了HealthTap的在线预约吗？</target>
+        <target state="translated">%{person}, 您错过了HealthTap的在线预约吗？</target>
       </trans-unit>
       <trans-unit id="5749" resname="r363454858" restype="string" datatype="ruby">
         <source>We’re sorry you weren’t able to connect with %{expert}</source>
@@ -2467,7 +2467,7 @@
       </trans-unit>
       <trans-unit id="5752" resname="r715027591" restype="string" datatype="ruby">
         <source>Would you like to consult %{expert}?</source>
-        <target state="translated">您希望咨询{doctor_name}吗？</target>
+        <target state="translated">您希望咨询%{expert}吗？</target>
       </trans-unit>
       <trans-unit id="5753" resname="r623023794" restype="string" datatype="ruby">
         <source>%{person}, here’s your receipt for your consult with %{expert}</source>
@@ -2539,7 +2539,7 @@
       </trans-unit>
       <trans-unit id="5770" resname="r108032841" restype="string" datatype="ruby">
         <source>%{person}, you can now consult me!</source>
-        <target state="translated">%{Person}, 您现在可以咨询我！</target>
+        <target state="translated">%{person}, 您现在可以咨询我！</target>
       </trans-unit>
       <trans-unit id="5771" resname="r299017939" restype="string" datatype="ruby">
         <source>Hi there, you can now consult me!</source>
@@ -2596,7 +2596,7 @@
       </trans-unit>
       <trans-unit id="5784" resname="r1024317613" restype="string" datatype="ruby">
         <source>%{person}, want to send me a secure message?</source>
-        <target state="translated">%{Person}, 想要我发送安全信息吗？</target>
+        <target state="translated">%{person}, 想要我发送安全信息吗？</target>
         <note annotates="source">TODO greeting</note>
       </trans-unit>
       <trans-unit id="5785" resname="r364274558" restype="string" datatype="ruby">
@@ -2732,7 +2732,7 @@
       </trans-unit>
       <trans-unit id="5817" resname="r394045836" restype="string" datatype="ruby">
         <source>%{expert}, would you like help inviting your patients?</source>
-        <target state="translated">%{Expert}, 您希望帮助邀请您的患者吗？</target>
+        <target state="translated">%{expert}, 您希望帮助邀请您的患者吗？</target>
       </trans-unit>
       <trans-unit id="5818" resname="r575444361" restype="string" datatype="ruby">
         <source>Dr. Geoffrey Rutledge &lt;expertsupport@healthtap.com&gt;</source>
@@ -2772,7 +2772,7 @@
       </trans-unit>
       <trans-unit id="5827" resname="r778517357" restype="string" datatype="ruby">
         <source>%{inviter} via HealthTap &lt;notifications@healthtap.com&gt;</source>
-        <target state="translated">%{Inviter} 通过HealthTap &lt;notifications@healthtap.com&gt;</target>
+        <target state="translated">%{inviter} 通过HealthTap &lt;notifications@healthtap.com&gt;</target>
       </trans-unit>
       <trans-unit id="5828" resname="r632006861" restype="string" datatype="ruby">
         <source>&apos;%{inviter}&apos; &lt;%{inviter}&gt;</source>
@@ -2856,7 +2856,7 @@
       </trans-unit>
       <trans-unit id="5848" resname="r533138463" restype="string" datatype="ruby">
         <source>%{person}, are you loving the service?</source>
-        <target state="translated">%{Person}, 您喜欢这项服务吗？</target>
+        <target state="translated">%{person}, 您喜欢这项服务吗？</target>
       </trans-unit>
       <trans-unit id="5849" resname="r790856073" restype="string" datatype="ruby">
         <source>Are you loving the service?</source>
@@ -2876,7 +2876,7 @@
       </trans-unit>
       <trans-unit id="5853" resname="r408477019" restype="string" datatype="ruby">
         <source>%{inviter} has gifted $5 off of Prime for better Health!</source>
-        <target state="translated">为更好的健康%{Inviter} Prime的$5优惠！</target>
+        <target state="translated">为更好的健康%{inviter} Prime的$5优惠！</target>
       </trans-unit>
       <trans-unit id="5854" resname="r289907155" restype="string" datatype="ruby">
         <source>You&apos;ve been gifted $5 off of Prime for better Health!</source>
@@ -2888,7 +2888,7 @@
       </trans-unit>
       <trans-unit id="5856" resname="r697472033" restype="string" datatype="ruby">
         <source>%{person} a big thank you! FREE gift for you :&#41;</source>
-        <target state="translated">%{Person} 非常感谢您！给您的免费礼物:&#41;</target>
+        <target state="translated">%{person} 非常感谢您！给您的免费礼物:&#41;</target>
       </trans-unit>
       <trans-unit id="5857" resname="r750091239" restype="string" datatype="ruby">
         <source>A big thank you! FREE gift for you :&#41;</source>
@@ -2924,7 +2924,7 @@
       </trans-unit>
       <trans-unit id="5865" resname="r765171697" restype="string" datatype="ruby">
         <source>%{person}, Claim Your Gift</source>
-        <target state="translated">%{Person}, 认领您的礼物</target>
+        <target state="translated">%{person}, 认领您的礼物</target>
       </trans-unit>
       <trans-unit id="5866" resname="r829130756" restype="string" datatype="ruby">
         <source>Claim Your Gift</source>
@@ -8036,7 +8036,7 @@
     <body>
       <trans-unit id="1400" resname="r184035735" restype="string" datatype="ruby">
         <source>%{num_years} years in practice</source>
-        <target state="translated">{years}年诊疗</target>
+        <target state="translated">%{num_years}年诊疗</target>
       </trans-unit>
       <trans-unit id="1401" resname="r724764332" restype="string" datatype="ruby">
         <source>Board Certified</source>
@@ -12418,7 +12418,7 @@
     <body>
       <trans-unit id="2389" resname="r120654461" restype="string" datatype="ruby">
         <source>%{open_tag}Ask health questions%{close_tag} and get free answers from the best doctors in the country</source>
-        <target state="translated">%{open_tag}询问健康问题%{open_tag}，并免费从国内最好的医生获得回答</target>
+        <target state="translated">%{open_tag}询问健康问题%{close_tag}，并免费从国内最好的医生获得回答</target>
       </trans-unit>
       <trans-unit id="2390" resname="r874426980" restype="string" datatype="ruby">
         <source>Learn about specific health topics with our %{open_tag}topics pages%{close_tag}</source>
@@ -13017,7 +13017,7 @@
     <body>
       <trans-unit id="2501" resname="r85014142" restype="string" datatype="ruby">
         <source>%{expert} just commented on %{app}, an %{source} app that you reviewed.</source>
-        <target state="translated">%{expert}刚刚对您评论过的%{app}%{app}应用程序发表了评论。</target>
+        <target state="translated">%{expert}刚刚对您评论过的%{source}%{app}应用程序发表了评论。</target>
       </trans-unit>
       <trans-unit id="2502" resname="r615373674" restype="string" datatype="ruby">
         <source>See what &lt;he/she&gt; has to say</source>
@@ -15216,7 +15216,7 @@
       </trans-unit>
       <trans-unit id="2907" resname="r808277972" restype="string" datatype="ruby">
         <source>%{agree_expert}, a %{specialist_name}, commented on %{expert}’s answer to your question:</source>
-        <target state="translated">%{Agree_expert},，%{specialist_name}，评论了%{expert}对您问题的回答：</target>
+        <target state="translated">%{agree_expert},，%{specialist_name}，评论了%{expert}对您问题的回答：</target>
       </trans-unit>
       <trans-unit id="2908" resname="r51439211" restype="string" datatype="ruby">
         <source>Even better, %{agree_expert} is now available to connect for a live virtual consultation through HealthTap Concierge! You can schedule a follow-up appointment if you still have any questions.</source>
@@ -15689,7 +15689,7 @@
       </trans-unit>
       <trans-unit id="3004" resname="r458448172" restype="string" datatype="ruby">
         <source>You control the reminders you receive: you can unsubscribe from receiving reminders via email, push notification, or both.  You can do this for any specific item on a checklist %{open_link}via the menu available in the top right corner of an action item%{close_link}, from an entire checklist, or from email and push notifications in general %{open_link_2}via your settings%{close_link}.</source>
-        <target state="translated">您可以控制您收到的提醒：您可以通过电子邮件，推送通知或两者接收提醒取消订购。通过您的设置%{close_link}您可以为任何具体的清单上的项目%{open_link_2}通过行动项目%{close_link}右上角的菜单，从整个清单，或从通常的电子邮件和推送通知%{open_link_2}。</target>
+        <target state="translated">您可以控制您收到的提醒：您可以通过电子邮件，推送通知或两者接收提醒取消订购。%{open_link}通过您的设置%{close_link}您可以为任何具体的清单上的项目%{open_link_2}通过行动项目右上角的菜单%{close_link}，从整个清单，或从通常的电子邮件和推送通知。</target>
       </trans-unit>
       <trans-unit id="3005" resname="r74089369" restype="string" datatype="ruby">
         <source>You control the utility, and the privacy, of the reminders you receive.</source>
@@ -16062,7 +16062,7 @@
     <body>
       <trans-unit id="3071" resname="r98256317" restype="string" datatype="ruby">
         <source>We wanted to remind you that your free trial ends in three days on %{next_due_date}, after which you will be charged $%{price_in_usd} every %{frequency}. If you’d like to discontinue your trial, you may always cancel your subscription.</source>
-        <target state="translated">我们想提醒您，您的免费试用期将于三天内&#40;%{next_due_date}&#41;结束，之后您将每%{frequency_in_usd}按{％}付费。如果您希望停止试用，可以随时取消您的订购。</target>
+        <target state="translated">我们想提醒您，您的免费试用期将于三天内&#40;%{next_due_date}&#41;结束，之后您将每%{frequency}按$%{price_in_usd}付费。如果您希望停止试用，可以随时取消您的订购。</target>
       </trans-unit>
       <trans-unit id="3072" resname="r403773541" restype="string" datatype="ruby">
         <source>Your free trial ends on %{next_due_date}</source>
@@ -16078,7 +16078,7 @@
       </trans-unit>
       <trans-unit id="3075" resname="r669479258" restype="string" datatype="ruby">
         <source>As always, we&apos;re committed to providing you with a delightful experience getting help from top doctors. Please take a moment to %{open_link}share your feedback%{close_link} about what we&apos;re doing best and how we can keep making our service better for you.</source>
-        <target state="translated">一如既往，我们致力于为您提供一个从顶级医生获得帮助的愉快的体验。请花一点时间%{open_link}与您分享您的反馈意见{close_link}，了解我们如何做到最好，以及我们如何继续为您提供更好的服务。</target>
+        <target state="translated">一如既往，我们致力于为您提供一个从顶级医生获得帮助的愉快的体验。请花一点时间%{open_link}与您分享您的反馈意见%{close_link}，了解我们如何做到最好，以及我们如何继续为您提供更好的服务。</target>
       </trans-unit>
       <trans-unit id="3076" resname="r910491485" restype="string" datatype="ruby">
         <source>We hope you’re enjoying peace of mind with your HealthTap Prime subscription, now that you have top doctor expertise and care at your fingertips, 24/7!</source>
@@ -16855,7 +16855,7 @@
     <body>
       <trans-unit id="3232" resname="r409711810" restype="string" datatype="ruby">
         <source>%{expert} is now on your Care-Team!</source>
-        <target state="translated">{doctor_name}现在在您的医护团队了！</target>
+        <target state="translated">%{expert}现在在您的医护团队了！</target>
       </trans-unit>
       <trans-unit id="3233" resname="r437332211" restype="string" datatype="ruby">
         <source>Thank you for adding %{expert} to your Care-Team! Now you can easily see %{expert} via video or text chat during the doctor&apos;s Virtual Practice hours or send a secure message next time you are outside the United States.</source>
@@ -20680,7 +20680,7 @@
     <body>
       <trans-unit id="3948" resname="r1013939542" restype="string" datatype="ruby">
         <source>%{num_years} years old,</source>
-        <target state="translated">%{Num_years} 岁,</target>
+        <target state="translated">%{num_years} 岁,</target>
       </trans-unit>
     </body>
   </file>
@@ -21140,7 +21140,7 @@
       </trans-unit>
       <trans-unit id="4028" resname="r897850636" restype="string" datatype="ruby">
         <source>%{sex} patient</source>
-        <target state="translated">%{Sex} 患者</target>
+        <target state="translated">%{sex}患者</target>
       </trans-unit>
       <trans-unit id="4029" resname="r135990335" restype="string" datatype="ruby">
         <source>%{person} for %{subaccount} &#40;%{relationship}</source>
@@ -22381,11 +22381,11 @@
       </trans-unit>
       <trans-unit id="4304" resname="r507762632" restype="string" datatype="ruby">
         <source>%{tip_name}: %{tip_type} - TipTaps by Top Doctors on HealthTap</source>
-        <target state="translated">%{tip_name}:%{text} - 由HealthTap上顶级医生的推心小贴士</target>
+        <target state="translated">%{tip_name}:%{tip_type} - 由HealthTap上顶级医生的推心小贴士</target>
       </trans-unit>
       <trans-unit id="4305" resname="r1040758041" restype="string" datatype="ruby">
         <source>%{question} - Health Tips by Top Doctors - HealthTap</source>
-        <target state="translated">%{tip_type} - 顶级医生的健康小贴士 - HealthTap</target>
+        <target state="translated">%{question} - 顶级医生的健康小贴士 - HealthTap</target>
       </trans-unit>
       <trans-unit id="4306" resname="r814706032" restype="string" datatype="ruby">
         <source>Would you like to video or text chat with %{expert}, a top %{specialist} with %{num_years} years of experience?</source>
@@ -22573,7 +22573,7 @@
       </trans-unit>
       <trans-unit id="4344" resname="r509413204" restype="string" datatype="ruby">
         <source>%{publication_title} - HealthTap</source>
-        <target state="translated">%{question} - HealthTap</target>
+        <target state="translated">%{publication_title} - HealthTap</target>
       </trans-unit>
     </body>
   </file>
@@ -23997,7 +23997,7 @@
       </trans-unit>
       <trans-unit id="4691" resname="r118229485" restype="string" datatype="ruby">
         <source>Someone thanked you for your tip on %{tip_name} on HealthTap.</source>
-        <target state="translated">有人感谢您在HealthTap上对%{topic_name}的小贴士</target>
+        <target state="translated">有人感谢您在HealthTap上对%{tip_name}的小贴士</target>
       </trans-unit>
       <trans-unit id="4692" resname="r486404308" restype="string" datatype="ruby">
         <source>Well done! &lt;b&gt;%{person}&lt;/b&gt; thanked you for answering a question. &lt;span style=&apos;color:&#35;039;&apos;&gt;See the question.&lt;/span&gt;</source>
@@ -24041,7 +24041,7 @@
       </trans-unit>
       <trans-unit id="4702" resname="r213575142" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{doctor}&lt;/b&gt; sent you a message. &lt;span style=&apos;color:&#35;039;&apos;&gt;Reply now.&lt;/span&gt;</source>
-        <target state="translated">&lt;b&gt;%{person}&lt;/b&gt;向您发送了一条信息。&lt;span style=’color:&#35;039;’&gt;立刻回复。&lt;/span&gt;</target>
+        <target state="translated">&lt;b&gt;%{doctor}&lt;/b&gt;向您发送了一条信息。&lt;span style=’color:&#35;039;’&gt;立刻回复。&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="4703" resname="r391401610" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{doctor}&lt;/b&gt; &#40;%{credentials}%{place}&#41; sent you a secure health file. &lt;span style=&apos;color:&#35;039;&apos;&gt;Check it out.&lt;/span&gt;</source>
@@ -25544,7 +25544,7 @@
       </trans-unit>
       <trans-unit id="5057" resname="r481095206" restype="string" datatype="ruby">
         <source>Sell at %{annual_price} per member per year</source>
-        <target state="translated">以每个会员每月%{monthly_price}的价格出售</target>
+        <target state="translated">以每个会员每月%{annual_price}的价格出售</target>
       </trans-unit>
       <trans-unit id="5058" resname="r986725357" restype="string" datatype="ruby">
         <source>Licensing and implementation fee: %{fee}</source>
@@ -33001,15 +33001,15 @@
     <body>
       <trans-unit id="7884" resname="r963547261" restype="string" datatype="ruby">
         <source>$%{price}/month</source>
-        <target state="translated">每月${price}</target>
+        <target state="translated">每月$%{price}</target>
       </trans-unit>
       <trans-unit id="7885" resname="r397773838" restype="string" datatype="ruby">
         <source>$%{price}/consult</source>
-        <target state="translated">每次咨询${price}</target>
+        <target state="translated">每次咨询$%{price}</target>
       </trans-unit>
       <trans-unit id="7886" resname="r797175419" restype="string" datatype="ruby">
         <source>%{price}/consult</source>
-        <target state="translated">每次咨询${price}</target>
+        <target state="translated">每次咨询$%{price}</target>
       </trans-unit>
       <trans-unit id="7887" resname="r232256159" restype="string" datatype="ruby">
         <source>%{price} for one consult - No commitment</source>

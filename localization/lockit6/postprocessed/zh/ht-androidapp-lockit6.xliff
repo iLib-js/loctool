@@ -2319,7 +2319,7 @@
       </trans-unit>
       <trans-unit id="416" resname="r23933610" restype="string" datatype="java">
         <source>We&apos;ll now help you with {topic_name} with timely, friendly reminders on behalf of {doc_name}</source>
-        <target>我们将代表{doctor_name}以及时、友好的提醒信息在{topic_name}上帮助您</target>
+        <target>我们将代表{doc_name}以及时、友好的提醒信息在{topic_name}上帮助您</target>
       </trans-unit>
     </body>
   </file>
