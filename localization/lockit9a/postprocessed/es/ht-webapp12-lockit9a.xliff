@@ -8,4 +8,32 @@
       </trans-unit>
     </body>
   </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2" resname="Please tell us the following about your clinician so we can invite them to provide you Virtual Care on HealthTap" restype="string" datatype="javascript">
+        <source>Please tell us the following about your clinician so we can invite them to provide you Virtual Care on HealthTap</source>
+        <target state="accepted">Porfavor diganos lo siguiente sobre su médico clínico para poder invitarlo a que le de Cuidado Virtual en HealthTap</target>
+      </trans-unit>
+      <trans-unit id="3" resname="Please tell us the following about your doctor so we can invite them to provide you Virtual Care on HealthTap" restype="string" datatype="javascript">
+        <source>Please tell us the following about your doctor so we can invite them to provide you Virtual Care on HealthTap</source>
+        <target state="accepted">Porfavor diganos lo siguiente sobre su doctor para poder invitarlo a que le de Cuidado Virtual en HealthTap</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Please tell us the following about your clinician so we can invite them to provide you Virtual Care with your health insurance" restype="string" datatype="javascript">
+        <source>Please tell us the following about your clinician so we can invite them to provide you Virtual Care with your health insurance</source>
+        <target state="accepted">Porfavor diganos lo siguiente sobre su médico clínico para poder invitarlo a que le de Cuidado Virtual con su seguro de salud</target>
+      </trans-unit>
+      <trans-unit id="5" resname="Please tell us the following about your doctor so we can invite them to provide you Virtual Care with your health insurance" restype="string" datatype="javascript">
+        <source>Please tell us the following about your doctor so we can invite them to provide you Virtual Care with your health insurance</source>
+        <target state="accepted">Porfavor diganos lo siguiente sobre su doctor para poder invitarlo a que le de Cuidado Virtual con su seguro de salud</target>
+      </trans-unit>
+      <trans-unit id="6" resname="Your clinician's name" restype="string" datatype="javascript">
+        <source>Your clinician's name</source>
+        <target state="accepted">Nombre de su médico clínico</target>
+      </trans-unit>
+      <trans-unit id="7" resname="Your doctor's name" restype="string" datatype="javascript">
+        <source>Your doctor's name</source>
+        <target state="accepted">Nombre de su doctor</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
