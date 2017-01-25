@@ -8340,7 +8340,7 @@
       </trans-unit>
       <trans-unit id="1846" resname="r668029431" restype="string" datatype="ruby">
         <source>In fact, we found another doctor on HealthTap Concierge who may also be able to help instead of %{expert}. %{suggested_expert},%{specialist_text} with %{suggested_expert} years in practice is available. Would you like to forward your message to %{suggested_expert} instead, at no additional charge?</source>
-        <target>事实上，我们在HealthTap贵宾台找到了另一位可以帮助您而代替%{expert}的医生。%{Suggested_expert},%{specialist_text} 有%{suggested_expert}年诊疗经验可以为您服务您希望将邮件转发给%{suggested_expert}，而不收取额外费用吗？</target>
+        <target>事实上，我们在HealthTap贵宾台找到了另一位可以帮助您而代替%{expert}的医生。%{suggested_expert},%{specialist_text} 有%{suggested_expert}年诊疗经验可以为您服务您希望将邮件转发给%{suggested_expert}，而不收取额外费用吗？</target>
       </trans-unit>
       <trans-unit id="1847" resname="r427697351" restype="string" datatype="ruby">
         <source>If you still need help, we have a team of top primary care doctors online 24/7 who may be able to provide you with advice or treatment.  Would you like to send your message a primary care doctor right now?</source>
@@ -8924,7 +8924,7 @@
       </trans-unit>
       <trans-unit id="1969" resname="r770507603" restype="string" datatype="ruby">
         <source>If you’re interested, we found another doctor on HealthTap Concierge who may also be able to help instead of %{expert}. %{suggested_expert}, a %{specialist} with %{suggested_expert}  years in practice is available. Would you like to reschedule an appointment with %{suggested_expert} instead, at no additional charge?</source>
-        <target>如果您有兴趣，我们在HealthTap贵宾台找到了另一位可以帮助您而代替%{expert}的医生。%{Suggested_expert}, 有%{suggested_expert}年诊疗的%{specialist}可以为您服务。您希望与替代的%{suggested_expert}重新安排预约时间，而不收取额外费用吗？</target>
+        <target>如果您有兴趣，我们在HealthTap贵宾台找到了另一位可以帮助您而代替%{expert}的医生。%{suggested_expert}, 有%{suggested_expert}年诊疗的%{specialist}可以为您服务。您希望与替代的%{suggested_expert}重新安排预约时间，而不收取额外费用吗？</target>
       </trans-unit>
       <trans-unit id="1970" resname="r427697351" restype="string" datatype="ruby">
         <source>If you still need help, we have a team of top primary care doctors online 24/7 who may be able to provide you with advice or treatment.  Would you like to send your message a primary care doctor right now?</source>
