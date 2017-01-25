@@ -1529,5 +1529,55 @@ module.exports = {
         }
         test.equals(y.getLocalizedPath('de-DE'), 'testfiles/de.yml');
         test.done();
+    },
+
+    testYamlFileGetContentPlural: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+            id: "ht-webapp12",
+            sourceLocale: "en-US",
+            resourceDirs: {
+                yml: "a/b"
+            },
+            id: "foo"
+        }, "./testfiles");
+
+        var yml = new YamlFile({
+            project: p,
+            pathName: "./asdf.yml",
+            locale: "de-DE"
+        });
+        test.ok(yml);
+
+        [
+            new ResourcePlural({
+                project: "foo",
+                locale: "de-DE",
+                key: "asdf",
+                strings: {
+                    "one": "This is singular",
+                    "two": "This is double",
+                    "few": "This is a different case"
+                },
+                pathName: "a/b/c.java",
+                comment: "foobar foo",
+                state: "accepted"
+            })
+        ].forEach(function(res) {
+            yml.addResource(res);
+        });
+
+        var expected = "" +
+        "asdf:\n"+
+        "  one: This is singular\n" +
+        "  two: This is double\n" +
+        "  few: This is a different case\n"
+
+        diff(yml.getContent(),expected);
+
+        test.equal(yml.getContent(), expected);
+
+        test.done();
     }
 };
