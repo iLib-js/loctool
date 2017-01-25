@@ -1426,7 +1426,7 @@
       </trans-unit>
       <trans-unit id="608" resname="r811964891" restype="string" datatype="ruby">
         <source>Submit your registration to join HealthTap to receive your invitation to the National Doctors Day Celebration, March 30, %{Time.now.year} at 5pm PDT.</source>
-        <target state="translated">提交您的注册加入HealthTap，以接收您的邀请参加国家医生日庆祝活动，3月30日，PDT时间，下午5点。</target>
+        <target state="translated">提交您的注册加入HealthTap，以接收您的邀请参加国家医生日庆祝活动，%{Time.now.year}年3月30日，PDT时间，下午5点。</target>
       </trans-unit>
     </body>
   </file>

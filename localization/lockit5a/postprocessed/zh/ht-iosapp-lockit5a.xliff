@@ -347,7 +347,7 @@
     <body>
       <trans-unit id="97" resname="Your credit card ending in %@ has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! " restype="string" datatype="x-objective-c">
         <source>Your credit card ending in %@ has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!</source>
-        <target>您尾号为* &#35;&#35;&#35;&#35;的信用卡已过期或已失效。请更新您的帐户信息，继续获得HealthTap Prime的福利！</target>
+        <target>您尾号为%@的信用卡已过期或已失效。请更新您的帐户信息，继续获得HealthTap Prime的福利！</target>
       </trans-unit>
       <trans-unit id="98" resname=" Update Now &gt;" restype="string" datatype="x-objective-c">
         <source>Update Now &gt;</source>
