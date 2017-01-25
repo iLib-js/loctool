@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/general_mailer/request_feedback_invitation.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="100" resname="r603260600" restype="string" datatype="ruby">
+        <source>Dear %{fn},</source>
+        <target state="new">Dear %{fn},</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/password_by_email.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="101" resname="r360954088" restype="string" datatype="ruby">
+        <source>Your password has been securely reset to the following: %{pw}</source>
+        <target state="new">Your password has been securely reset to the following: %{pw}</target>
+      </trans-unit>
+      <trans-unit id="102" resname="r102800168" restype="string" datatype="ruby">
+        <source>We suggest changing the password to your own in your %{open_link}Settings%{close_link} as soon as you log into your account.</source>
+        <target state="new">We suggest changing the password to your own in your %{open_link}Settings%{close_link} as soon as you log into your account.</target>
+      </trans-unit>
+      <trans-unit id="103" resname="r913981092" restype="string" datatype="ruby">
+        <source>If you would like additional assistance accessing HealthTap, please contact HealthTap Support at %{email}.</source>
+        <target state="new">If you would like additional assistance accessing HealthTap, please contact HealthTap Support at %{email}.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/partials/feelgood/_concierge_overlay.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="104" resname="r1005786304" restype="string" datatype="ruby">
+        <source>Your doctor is here so you can feel good anywhere</source>
+        <target state="new">Your doctor is here so you can feel good anywhere</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/partials/_test_drive.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="105" resname="r294029888" restype="string" datatype="ruby">
+        <source>Video or text chat right from your computer or mobile device for advice and treatment, now only %{test_drive_price}.</source>
+        <target state="new">Video or text chat right from your computer or mobile device for advice and treatment, now only %{test_drive_price}.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_welcome_password.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="106" resname="r631583130" restype="string" datatype="ruby">
+        <source>You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists from %{static_doctors_count} top doctors whenever you have a health question or want to accomplish a health goal.</source>
+        <target state="new">You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists from %{static_doctors_count} top doctors whenever you have a health question or want to accomplish a health goal.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_topic_goal_followed.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="107" resname="r517099029" restype="string" datatype="ruby">
+        <source>Great news! You can now consult via live video or text chat with doctors who specialize in the goals and topics you care about most. We’ve handpicked %{expert_name_abb}, %{specialty}, just for you.</source>
+        <target state="new">Great news! You can now consult via live video or text chat with doctors who specialize in the goals and topics you care about most. We’ve handpicked %{expert_name_abb}, %{specialty}, just for you.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_question_removed.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="108" resname="r641901963" restype="string" datatype="ruby">
+        <source>Be easy to understand: Questions must be in English, easy to understand, and about health or wellness topics.</source>
+        <target state="new">Be easy to understand: Questions must be in English, easy to understand, and about health or wellness topics.</target>
+      </trans-unit>
+      <trans-unit id="109" resname="r673890942" restype="string" datatype="ruby">
+        <source>Check spelling of words and medicines: Medications in different countries use different names, so be sure to include the generic name of the medication. Our experts are U.S.-licensed doctors and rarely answer questions about uniquely foreign medications they are not familiar with, or about hospitals or procedures in other countries that they have not visited.</source>
+        <target state="new">Check spelling of words and medicines: Medications in different countries use different names, so be sure to include the generic name of the medication. Our experts are U.S.-licensed doctors and rarely answer questions about uniquely foreign medications they are not familiar with, or about hospitals or procedures in other countries that they have not visited.</target>
+      </trans-unit>
+      <trans-unit id="110" resname="r776454932" restype="string" datatype="ruby">
+        <source>Unlimited consults with doctors 24/7 using a PC or any mobile device!</source>
+        <target state="new">Unlimited consults with doctors 24/7 using a PC or any mobile device!</target>
+      </trans-unit>
+      <trans-unit id="111" resname="r107846971" restype="string" datatype="ruby">
+        <source>Total peace of mind with a doctor always &quot;on call&quot; for you and your loved ones</source>
+        <target state="new">Total peace of mind with a doctor always &quot;on call&quot; for you and your loved ones</target>
+      </trans-unit>
+      <trans-unit id="112" resname="r864362339" restype="string" datatype="ruby">
+        <source>Health checklists personalized by doctors just for you or your family</source>
+        <target state="new">Health checklists personalized by doctors just for you or your family</target>
+      </trans-unit>
+      <trans-unit id="113" resname="r627748260" restype="string" datatype="ruby">
+        <source>Ask meaningful questions: Questions must include enough detail to be meaningful and answerable. Naming a topic &#40;for example, “headache?”&#41; without asking something specific, doesn,t give the doctor enough information to accurately answer. You can consider mentioning gender, duration, age range, or body area affected.</source>
+        <target state="new">Ask meaningful questions: Questions must include enough detail to be meaningful and answerable. Naming a topic &#40;for example, “headache?”&#41; without asking something specific, doesn,t give the doctor enough information to accurately answer. You can consider mentioning gender, duration, age range, or body area affected.</target>
+      </trans-unit>
+      <trans-unit id="114" resname="r272142849" restype="string" datatype="ruby">
+        <source>Stay private: Do not include your name, names of other people, or doctors, names.</source>
+        <target state="new">Stay private: Do not include your name, names of other people, or doctors, names.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_question_asked_confirmation.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="115" resname="r904441231" restype="string" datatype="ruby">
+        <source>Your question has been sent to %{static_doctors_count} U.S. licensed doctors.</source>
+        <target state="new">Your question has been sent to %{static_doctors_count} U.S. licensed doctors.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_marketing_welcome_prime.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="116" resname="r640416995" restype="string" datatype="ruby">
+        <source>As many consults with doctors as needed, 24/7 on any PC or mobile device!</source>
+        <target state="new">As many consults with doctors as needed, 24/7 on any PC or mobile device!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/doctor_prime_app_part2_approved.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="117" resname="r3013966" restype="string" datatype="ruby">
+        <source>.</source>
+        <target state="new">.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/doctor_concierge_invite_concierge_0days.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="118" resname="r416570097" restype="string" datatype="ruby">
+        <source>The HealthTap+ Team :&#41;</source>
+        <target state="new">The HealthTap+ Team :&#41;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/experiments/topics/_inline_doctor_suggestion_module.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="119" resname="r1056061371" restype="string" datatype="ruby">
+        <source>Board Certified,</source>
+        <target state="new">Board Certified,</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/b2b/partial/_compass_ctas.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="120" resname="r935015583" restype="string" datatype="ruby">
+        <source>Talk to a representative to learn what%{product_name} can do for you</source>
+        <target state="new">Talk to a representative to learn what%{product_name} can do for you</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/user_question/i18n.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="121" resname="r61634873" restype="string" datatype="ruby">
+        <source>Do&apos;s And Don&apos;ts</source>
+        <target state="new">Do&apos;s And Don&apos;ts</target>
+      </trans-unit>
+      <trans-unit id="122" resname="r761774429" restype="string" datatype="ruby">
+        <source>Haiku</source>
+        <target state="new">Haiku</target>
+      </trans-unit>
+      <trans-unit id="123" resname="r478791751" restype="string" datatype="ruby">
+        <source>What To Ask Your Doc</source>
+        <target state="new">What To Ask Your Doc</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/personal_check/i18n.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="124" resname="r697915062" restype="string" datatype="ruby">
+        <source>once for forever</source>
+        <target state="new">once for forever</target>
+      </trans-unit>
+      <trans-unit id="125" resname="r557027526" restype="string" datatype="ruby">
+        <source>daily for forever</source>
+        <target state="new">daily for forever</target>
+      </trans-unit>
+      <trans-unit id="126" resname="r303128910" restype="plural" datatype="ruby" extype="one">
+        <source>every %{count} minute</source>
+        <target state="new">every %{count} minute</target>
+      </trans-unit>
+      <trans-unit id="127" resname="r303128910" restype="plural" datatype="ruby" extype="other">
+        <source>every %{count} minutes</source>
+        <target state="new">every %{count} minutes</target>
+      </trans-unit>
+      <trans-unit id="128" resname="r828492227" restype="plural" datatype="ruby" extype="one">
+        <source>every %{count} hour</source>
+        <target state="new">every %{count} hour</target>
+      </trans-unit>
+      <trans-unit id="129" resname="r828492227" restype="plural" datatype="ruby" extype="other">
+        <source>every %{count} hours</source>
+        <target state="new">every %{count} hours</target>
+      </trans-unit>
+      <trans-unit id="130" resname="r878717838" restype="plural" datatype="ruby" extype="one">
+        <source>every %{count} day</source>
+        <target state="new">every %{count} day</target>
+      </trans-unit>
+      <trans-unit id="131" resname="r878717838" restype="plural" datatype="ruby" extype="other">
+        <source>every %{count} days</source>
+        <target state="new">every %{count} days</target>
+      </trans-unit>
+      <trans-unit id="132" resname="r275611525" restype="plural" datatype="ruby" extype="one">
+        <source>every %{count} week</source>
+        <target state="new">every %{count} week</target>
+      </trans-unit>
+      <trans-unit id="133" resname="r275611525" restype="plural" datatype="ruby" extype="other">
+        <source>every %{count} weeks</source>
+        <target state="new">every %{count} weeks</target>
+      </trans-unit>
+      <trans-unit id="134" resname="r603305865" restype="plural" datatype="ruby" extype="one">
+        <source>every %{count} month</source>
+        <target state="new">every %{count} month</target>
+      </trans-unit>
+      <trans-unit id="135" resname="r603305865" restype="plural" datatype="ruby" extype="other">
+        <source>every %{count} months</source>
+        <target state="new">every %{count} months</target>
+      </trans-unit>
+      <trans-unit id="136" resname="r635200049" restype="plural" datatype="ruby" extype="one">
+        <source>every %{count} year</source>
+        <target state="new">every %{count} year</target>
+      </trans-unit>
+      <trans-unit id="137" resname="r635200049" restype="plural" datatype="ruby" extype="other">
+        <source>every %{count} years</source>
+        <target state="new">every %{count} years</target>
+      </trans-unit>
+      <trans-unit id="138" resname="r707292913" restype="plural" datatype="ruby" extype="one">
+        <source>every %{start_time}-%{end_time} minute</source>
+        <target state="new">every %{start_time}-%{end_time} minute</target>
+      </trans-unit>
+      <trans-unit id="139" resname="r707292913" restype="plural" datatype="ruby" extype="other">
+        <source>every %{start_time}-%{end_time} minutes</source>
+        <target state="new">every %{start_time}-%{end_time} minutes</target>
+      </trans-unit>
+      <trans-unit id="140" resname="r842433024" restype="plural" datatype="ruby" extype="one">
+        <source>every %{start_time}-%{end_time} hour</source>
+        <target state="new">every %{start_time}-%{end_time} hour</target>
+      </trans-unit>
+      <trans-unit id="141" resname="r842433024" restype="plural" datatype="ruby" extype="other">
+        <source>every %{start_time}-%{end_time} hours</source>
+        <target state="new">every %{start_time}-%{end_time} hours</target>
+      </trans-unit>
+      <trans-unit id="142" resname="r903053860" restype="plural" datatype="ruby" extype="one">
+        <source>every %{start_time}-%{end_time} day</source>
+        <target state="new">every %{start_time}-%{end_time} day</target>
+      </trans-unit>
+      <trans-unit id="143" resname="r903053860" restype="plural" datatype="ruby" extype="other">
+        <source>every %{start_time}-%{end_time} days</source>
+        <target state="new">every %{start_time}-%{end_time} days</target>
+      </trans-unit>
+      <trans-unit id="144" resname="r289552322" restype="plural" datatype="ruby" extype="one">
+        <source>every %{start_time}-%{end_time} week</source>
+        <target state="new">every %{start_time}-%{end_time} week</target>
+      </trans-unit>
+      <trans-unit id="145" resname="r289552322" restype="plural" datatype="ruby" extype="other">
+        <source>every %{start_time}-%{end_time} weeks</source>
+        <target state="new">every %{start_time}-%{end_time} weeks</target>
+      </trans-unit>
+      <trans-unit id="146" resname="r264003663" restype="plural" datatype="ruby" extype="one">
+        <source>every %{start_time}-%{end_time} month</source>
+        <target state="new">every %{start_time}-%{end_time} month</target>
+      </trans-unit>
+      <trans-unit id="147" resname="r264003663" restype="plural" datatype="ruby" extype="other">
+        <source>every %{start_time}-%{end_time} months</source>
+        <target state="new">every %{start_time}-%{end_time} months</target>
+      </trans-unit>
+      <trans-unit id="148" resname="r649140846" restype="plural" datatype="ruby" extype="one">
+        <source>every %{start_time}-%{end_time} year</source>
+        <target state="new">every %{start_time}-%{end_time} year</target>
+      </trans-unit>
+      <trans-unit id="149" resname="r649140846" restype="plural" datatype="ruby" extype="other">
+        <source>every %{start_time}-%{end_time} years</source>
+        <target state="new">every %{start_time}-%{end_time} years</target>
+      </trans-unit>
+      <trans-unit id="150" resname="r442882837" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x a minute</source>
+        <target state="new">%{num}x a minute</target>
+      </trans-unit>
+      <trans-unit id="151" resname="r442882837" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x minutes</source>
+        <target state="new">%{num}x minutes</target>
+      </trans-unit>
+      <trans-unit id="152" resname="r123998485" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x a hour</source>
+        <target state="new">%{num}x a hour</target>
+      </trans-unit>
+      <trans-unit id="153" resname="r123998485" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x hours</source>
+        <target state="new">%{num}x hours</target>
+      </trans-unit>
+      <trans-unit id="154" resname="r761600222" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x a day</source>
+        <target state="new">%{num}x a day</target>
+      </trans-unit>
+      <trans-unit id="155" resname="r761600222" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x days</source>
+        <target state="new">%{num}x days</target>
+      </trans-unit>
+      <trans-unit id="156" resname="r644859572" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x a week</source>
+        <target state="new">%{num}x a week</target>
+      </trans-unit>
+      <trans-unit id="157" resname="r644859572" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x weeks</source>
+        <target state="new">%{num}x weeks</target>
+      </trans-unit>
+      <trans-unit id="158" resname="r554603604" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x a month</source>
+        <target state="new">%{num}x a month</target>
+      </trans-unit>
+      <trans-unit id="159" resname="r554603604" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x months</source>
+        <target state="new">%{num}x months</target>
+      </trans-unit>
+      <trans-unit id="160" resname="r1004448096" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x a year</source>
+        <target state="new">%{num}x a year</target>
+      </trans-unit>
+      <trans-unit id="161" resname="r1004448096" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x years</source>
+        <target state="new">%{num}x years</target>
+      </trans-unit>
+      <trans-unit id="162" resname="r193637374" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x minute</source>
+        <target state="new">%{num}x minute</target>
+      </trans-unit>
+      <trans-unit id="163" resname="r193637374" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x minutes</source>
+        <target state="new">%{num}x minutes</target>
+      </trans-unit>
+      <trans-unit id="164" resname="r242620583" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x hour</source>
+        <target state="new">%{num}x hour</target>
+      </trans-unit>
+      <trans-unit id="165" resname="r242620583" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x hours</source>
+        <target state="new">%{num}x hours</target>
+      </trans-unit>
+      <trans-unit id="166" resname="r827595503" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x day</source>
+        <target state="new">%{num}x day</target>
+      </trans-unit>
+      <trans-unit id="167" resname="r827595503" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x days</source>
+        <target state="new">%{num}x days</target>
+      </trans-unit>
+      <trans-unit id="168" resname="r763481670" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x week</source>
+        <target state="new">%{num}x week</target>
+      </trans-unit>
+      <trans-unit id="169" resname="r763481670" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x weeks</source>
+        <target state="new">%{num}x weeks</target>
+      </trans-unit>
+      <trans-unit id="170" resname="r1050017880" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x month</source>
+        <target state="new">%{num}x month</target>
+      </trans-unit>
+      <trans-unit id="171" resname="r1050017880" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x months</source>
+        <target state="new">%{num}x months</target>
+      </trans-unit>
+      <trans-unit id="172" resname="r49328405" restype="plural" datatype="ruby" extype="one">
+        <source>%{num}x year</source>
+        <target state="new">%{num}x year</target>
+      </trans-unit>
+      <trans-unit id="173" resname="r49328405" restype="plural" datatype="ruby" extype="other">
+        <source>%{num}x years</source>
+        <target state="new">%{num}x years</target>
+      </trans-unit>
+      <trans-unit id="174" resname="r788859162" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Second</source>
+        <target state="new">%{num} Second</target>
+      </trans-unit>
+      <trans-unit id="175" resname="r788859162" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Seconds</source>
+        <target state="new">%{num} Seconds</target>
+      </trans-unit>
+      <trans-unit id="176" resname="r27031417" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} second</source>
+        <target state="new">%{num} second</target>
+      </trans-unit>
+      <trans-unit id="177" resname="r27031417" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} seconds</source>
+        <target state="new">%{num} seconds</target>
+      </trans-unit>
+      <trans-unit id="178" resname="r760895205" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} sec</source>
+        <target state="new">%{num} sec</target>
+      </trans-unit>
+      <trans-unit id="179" resname="r760895205" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} secs</source>
+        <target state="new">%{num} secs</target>
+      </trans-unit>
+      <trans-unit id="180" resname="r125767714" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Sec</source>
+        <target state="new">%{num} Sec</target>
+      </trans-unit>
+      <trans-unit id="181" resname="r125767714" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Secs</source>
+        <target state="new">%{num} Secs</target>
+      </trans-unit>
+      <trans-unit id="182" resname="r433340086" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} min</source>
+        <target state="new">%{num} min</target>
+      </trans-unit>
+      <trans-unit id="183" resname="r433340086" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} mins</source>
+        <target state="new">%{num} mins</target>
+      </trans-unit>
+      <trans-unit id="184" resname="r288970396" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} minute</source>
+        <target state="new">%{num} minute</target>
+      </trans-unit>
+      <trans-unit id="185" resname="r288970396" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} minutes</source>
+        <target state="new">%{num} minutes</target>
+      </trans-unit>
+      <trans-unit id="186" resname="r1050798141" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Minute</source>
+        <target state="new">%{num} Minute</target>
+      </trans-unit>
+      <trans-unit id="187" resname="r1050798141" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Minutes</source>
+        <target state="new">%{num} Minutes</target>
+      </trans-unit>
+      <trans-unit id="188" resname="r871954384" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Min</source>
+        <target state="new">%{num} Min</target>
+      </trans-unit>
+      <trans-unit id="189" resname="r871954384" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Mins</source>
+        <target state="new">%{num} Mins</target>
+      </trans-unit>
+      <trans-unit id="190" resname="r628964016" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} hr</source>
+        <target state="new">%{num} hr</target>
+      </trans-unit>
+      <trans-unit id="191" resname="r628964016" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} hrs</source>
+        <target state="new">%{num} hrs</target>
+      </trans-unit>
+      <trans-unit id="192" resname="r691866896" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Hr</source>
+        <target state="new">%{num} Hr</target>
+      </trans-unit>
+      <trans-unit id="193" resname="r691866896" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Hrs</source>
+        <target state="new">%{num} Hrs</target>
+      </trans-unit>
+      <trans-unit id="194" resname="r968215799" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} hour</source>
+        <target state="new">%{num} hour</target>
+      </trans-unit>
+      <trans-unit id="195" resname="r968215799" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} hours</source>
+        <target state="new">%{num} hours</target>
+      </trans-unit>
+      <trans-unit id="196" resname="r716652472" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Hour</source>
+        <target state="new">%{num} Hour</target>
+      </trans-unit>
+      <trans-unit id="197" resname="r716652472" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Hours</source>
+        <target state="new">%{num} Hours</target>
+      </trans-unit>
+      <trans-unit id="198" resname="r1042908841" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} day</source>
+        <target state="new">%{num} day</target>
+      </trans-unit>
+      <trans-unit id="199" resname="r1042908841" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} days</source>
+        <target state="new">%{num} days</target>
+      </trans-unit>
+      <trans-unit id="200" resname="r407781350" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Day</source>
+        <target state="new">%{num} Day</target>
+      </trans-unit>
+      <trans-unit id="201" resname="r407781350" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Days</source>
+        <target state="new">%{num} Days</target>
+      </trans-unit>
+      <trans-unit id="202" resname="r860160094" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Mon</source>
+        <target state="new">%{num} Mon</target>
+      </trans-unit>
+      <trans-unit id="203" resname="r860160094" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Mons</source>
+        <target state="new">%{num} Mons</target>
+      </trans-unit>
+      <trans-unit id="204" resname="r421545796" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} mon</source>
+        <target state="new">%{num} mon</target>
+      </trans-unit>
+      <trans-unit id="205" resname="r421545796" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} mons</source>
+        <target state="new">%{num} mons</target>
+      </trans-unit>
+      <trans-unit id="206" resname="r708973863" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} month</source>
+        <target state="new">%{num} month</target>
+      </trans-unit>
+      <trans-unit id="207" resname="r708973863" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} months</source>
+        <target state="new">%{num} months</target>
+      </trans-unit>
+      <trans-unit id="208" resname="r1038428435" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Month</source>
+        <target state="new">%{num} Month</target>
+      </trans-unit>
+      <trans-unit id="209" resname="r1038428435" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Months</source>
+        <target state="new">%{num} Months</target>
+      </trans-unit>
+      <trans-unit id="210" resname="r523360294" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Year</source>
+        <target state="new">%{num} Year</target>
+      </trans-unit>
+      <trans-unit id="211" resname="r523360294" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Years</source>
+        <target state="new">%{num} Years</target>
+      </trans-unit>
+      <trans-unit id="212" resname="r774923621" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} year</source>
+        <target state="new">%{num} year</target>
+      </trans-unit>
+      <trans-unit id="213" resname="r774923621" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} years</source>
+        <target state="new">%{num} years</target>
+      </trans-unit>
+      <trans-unit id="214" resname="r595546861" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} yr</source>
+        <target state="new">%{num} yr</target>
+      </trans-unit>
+      <trans-unit id="215" resname="r595546861" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} yrs</source>
+        <target state="new">%{num} yrs</target>
+      </trans-unit>
+      <trans-unit id="216" resname="r658449741" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} Yr</source>
+        <target state="new">%{num} Yr</target>
+      </trans-unit>
+      <trans-unit id="217" resname="r658449741" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} Yrs</source>
+        <target state="new">%{num} Yrs</target>
+      </trans-unit>
+      <trans-unit id="218" resname="r871414534" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Second</source>
+        <target state="new">%{num} to %{end_num} Second</target>
+      </trans-unit>
+      <trans-unit id="219" resname="r871414534" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Seconds</source>
+        <target state="new">%{num} to %{end_num} Seconds</target>
+      </trans-unit>
+      <trans-unit id="220" resname="r109586789" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} second</source>
+        <target state="new">%{num} to %{end_num} second</target>
+      </trans-unit>
+      <trans-unit id="221" resname="r109586789" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} seconds</source>
+        <target state="new">%{num} to %{end_num} seconds</target>
+      </trans-unit>
+      <trans-unit id="222" resname="r73543581" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} sec</source>
+        <target state="new">%{num} to %{end_num} sec</target>
+      </trans-unit>
+      <trans-unit id="223" resname="r73543581" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} secs</source>
+        <target state="new">%{num} to %{end_num} secs</target>
+      </trans-unit>
+      <trans-unit id="224" resname="r512157879" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Sec</source>
+        <target state="new">%{num} to %{end_num} Sec</target>
+      </trans-unit>
+      <trans-unit id="225" resname="r512157879" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Secs</source>
+        <target state="new">%{num} to %{end_num} Secs</target>
+      </trans-unit>
+      <trans-unit id="226" resname="r819730251" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} min</source>
+        <target state="new">%{num} to %{end_num} min</target>
+      </trans-unit>
+      <trans-unit id="227" resname="r819730251" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} mins</source>
+        <target state="new">%{num} to %{end_num} mins</target>
+      </trans-unit>
+      <trans-unit id="228" resname="r371525768" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} minute</source>
+        <target state="new">%{num} to %{end_num} minute</target>
+      </trans-unit>
+      <trans-unit id="229" resname="r371525768" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} minutes</source>
+        <target state="new">%{num} to %{end_num} minutes</target>
+      </trans-unit>
+      <trans-unit id="230" resname="r59611724" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Minute</source>
+        <target state="new">%{num} to %{end_num} Minute</target>
+      </trans-unit>
+      <trans-unit id="231" resname="r59611724" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Minutes</source>
+        <target state="new">%{num} to %{end_num} Minutes</target>
+      </trans-unit>
+      <trans-unit id="232" resname="r184602760" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Min</source>
+        <target state="new">%{num} to %{end_num} Min</target>
+      </trans-unit>
+      <trans-unit id="233" resname="r184602760" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Mins</source>
+        <target state="new">%{num} to %{end_num} Mins</target>
+      </trans-unit>
+      <trans-unit id="234" resname="r644341623" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} hr</source>
+        <target state="new">%{num} to %{end_num} hr</target>
+      </trans-unit>
+      <trans-unit id="235" resname="r644341623" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} hrs</source>
+        <target state="new">%{num} to %{end_num} hrs</target>
+      </trans-unit>
+      <trans-unit id="236" resname="r707244503" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Hr</source>
+        <target state="new">%{num} to %{end_num} Hr</target>
+      </trans-unit>
+      <trans-unit id="237" resname="r707244503" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Hrs</source>
+        <target state="new">%{num} to %{end_num} Hrs</target>
+      </trans-unit>
+      <trans-unit id="238" resname="r954315722" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} hour</source>
+        <target state="new">%{num} to %{end_num} hour</target>
+      </trans-unit>
+      <trans-unit id="239" resname="r954315722" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} hours</source>
+        <target state="new">%{num} to %{end_num} hours</target>
+      </trans-unit>
+      <trans-unit id="240" resname="r702752395" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Hour</source>
+        <target state="new">%{num} to %{end_num} Hour</target>
+      </trans-unit>
+      <trans-unit id="241" resname="r702752395" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Hours</source>
+        <target state="new">%{num} to %{end_num} Hours</target>
+      </trans-unit>
+      <trans-unit id="242" resname="r355557217" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} day</source>
+        <target state="new">%{num} to %{end_num} day</target>
+      </trans-unit>
+      <trans-unit id="243" resname="r355557217" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} days</source>
+        <target state="new">%{num} to %{end_num} days</target>
+      </trans-unit>
+      <trans-unit id="244" resname="r794171515" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Day</source>
+        <target state="new">%{num} to %{end_num} Day</target>
+      </trans-unit>
+      <trans-unit id="245" resname="r794171515" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Days</source>
+        <target state="new">%{num} to %{end_num} Days</target>
+      </trans-unit>
+      <trans-unit id="246" resname="r172808470" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Mon</source>
+        <target state="new">%{num} to %{end_num} Mon</target>
+      </trans-unit>
+      <trans-unit id="247" resname="r172808470" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Mons</source>
+        <target state="new">%{num} to %{end_num} Mons</target>
+      </trans-unit>
+      <trans-unit id="248" resname="r807935961" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} mon</source>
+        <target state="new">%{num} to %{end_num} mon</target>
+      </trans-unit>
+      <trans-unit id="249" resname="r807935961" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} mons</source>
+        <target state="new">%{num} to %{end_num} mons</target>
+      </trans-unit>
+      <trans-unit id="250" resname="r495065818" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} month</source>
+        <target state="new">%{num} to %{end_num} month</target>
+      </trans-unit>
+      <trans-unit id="251" resname="r495065818" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} months</source>
+        <target state="new">%{num} to %{end_num} months</target>
+      </trans-unit>
+      <trans-unit id="252" resname="r824520390" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Month</source>
+        <target state="new">%{num} to %{end_num} Month</target>
+      </trans-unit>
+      <trans-unit id="253" resname="r824520390" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Months</source>
+        <target state="new">%{num} to %{end_num} Months</target>
+      </trans-unit>
+      <trans-unit id="254" resname="r509460217" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Year</source>
+        <target state="new">%{num} to %{end_num} Year</target>
+      </trans-unit>
+      <trans-unit id="255" resname="r509460217" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Years</source>
+        <target state="new">%{num} to %{end_num} Years</target>
+      </trans-unit>
+      <trans-unit id="256" resname="r761023544" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} year</source>
+        <target state="new">%{num} to %{end_num} year</target>
+      </trans-unit>
+      <trans-unit id="257" resname="r761023544" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} years</source>
+        <target state="new">%{num} to %{end_num} years</target>
+      </trans-unit>
+      <trans-unit id="258" resname="r610924468" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} yr</source>
+        <target state="new">%{num} to %{end_num} yr</target>
+      </trans-unit>
+      <trans-unit id="259" resname="r610924468" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} yrs</source>
+        <target state="new">%{num} to %{end_num} yrs</target>
+      </trans-unit>
+      <trans-unit id="260" resname="r673827348" restype="plural" datatype="ruby" extype="one">
+        <source>%{num} to %{end_num} Yr</source>
+        <target state="new">%{num} to %{end_num} Yr</target>
+      </trans-unit>
+      <trans-unit id="261" resname="r673827348" restype="plural" datatype="ruby" extype="other">
+        <source>%{num} to %{end_num} Yrs</source>
+        <target state="new">%{num} to %{end_num} Yrs</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/static_pages/investors.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="55" resname="r835733304" restype="string" datatype="ruby">
+        <source>Tim Chang is the Managing Director of the Mayfield Fund. Tim is a proven venture investor and experienced global executive. He was named on the 2011 Forbes Midas List of Top 100 Dealmakers and was featured by The Deal as one of five emerging VCs to watch. Tim invests in the mobile, gaming, digital media, and enterprise applications sectors. Prior to joining Mayfield Fund, Tim spent five years as a Partner at Norwest Venture Partners, and prior to Norwest, Tim worked for Gabriel Venture Partners, and as part of the founding team of CTR Ventures. Currently, Tim serves on the advisory boards of the Verizon 4G Venture Forum, Gamestop Corporation, Yoshimoto Kogyo, the Silicon Valley Telecom Council, MIT/Stanford VLAB, CasualConnect, and GamesBeat/MobileBeat. Tim holds an MBA from the Stanford Graduate School of Business, and an M.S. and B.S. from the University of Michigan. Mayfield is a global venture capital firm with over $2.6 billion under management and a 45-year history of championing entrepreneurs. Mayfield invests primarily in early-stage consumer and enterprise-facing IT companies. Since its founding in 1969, the firm has invested in more than 500 companies, resulting in over 110 IPOs and more than 150 mergers or acquisitions. For more information, visit www.mayfield.com</source>
+        <target state="new">Tim Chang is the Managing Director of the Mayfield Fund. Tim is a proven venture investor and experienced global executive. He was named on the 2011 Forbes Midas List of Top 100 Dealmakers and was featured by The Deal as one of five emerging VCs to watch. Tim invests in the mobile, gaming, digital media, and enterprise applications sectors. Prior to joining Mayfield Fund, Tim spent five years as a Partner at Norwest Venture Partners, and prior to Norwest, Tim worked for Gabriel Venture Partners, and as part of the founding team of CTR Ventures. Currently, Tim serves on the advisory boards of the Verizon 4G Venture Forum, Gamestop Corporation, Yoshimoto Kogyo, the Silicon Valley Telecom Council, MIT/Stanford VLAB, CasualConnect, and GamesBeat/MobileBeat. Tim holds an MBA from the Stanford Graduate School of Business, and an M.S. and B.S. from the University of Michigan. Mayfield is a global venture capital firm with over $2.6 billion under management and a 45-year history of championing entrepreneurs. Mayfield invests primarily in early-stage consumer and enterprise-facing IT companies. Since its founding in 1969, the firm has invested in more than 500 companies, resulting in over 110 IPOs and more than 150 mergers or acquisitions. For more information, visit www.mayfield.com</target>
+      </trans-unit>
+      <trans-unit id="56" resname="r687705591" restype="string" datatype="ruby">
+        <source>Eric Schmidt is Executive Chairman of Google and the founder of Innovation Endeavors. Since joining Google in 2001, he has helped grow it from a Silicon Valley startup to a global leader in technology. From 2001 to 2011, Eric served as Google&apos;s Chief Executive Officer, overseeing its technical and business strategy. Eric joined Google from Novell, where he served as Chief Executive Officer from April 1997 to July 2001 and as Chairman. Prior to Novel, he held various positions at Sun Microsystems, including serving as Chief Technology Officer and as Corporate Executive Officer. Before joining Sun in 1983, Eric served as a Member of the Research staff at the Computer Science Lab of Xerox Palo Alto Research Center &#40;PARC&#41;, and held positions at Bell Laboratories and ZiLOG. Eric has also served as the Chairman of the New America Foundation, Google, Novel, and InSight Venture Partners, and as a Director of Google, Apple, and Seibel Systems. Eric is also a member of the President&apos;s Council of Advisors on Science and Technology and the Prime Minister&apos;s Advisory Council in the U.K. Eric has Bachelor of Science and M.S. degrees in Electrical Engineering from Princeton University, and a Ph.D. in Computer Science from the University of California-Berkeley.</source>
+        <target state="new">Eric Schmidt is Executive Chairman of Google and the founder of Innovation Endeavors. Since joining Google in 2001, he has helped grow it from a Silicon Valley startup to a global leader in technology. From 2001 to 2011, Eric served as Google&apos;s Chief Executive Officer, overseeing its technical and business strategy. Eric joined Google from Novell, where he served as Chief Executive Officer from April 1997 to July 2001 and as Chairman. Prior to Novel, he held various positions at Sun Microsystems, including serving as Chief Technology Officer and as Corporate Executive Officer. Before joining Sun in 1983, Eric served as a Member of the Research staff at the Computer Science Lab of Xerox Palo Alto Research Center &#40;PARC&#41;, and held positions at Bell Laboratories and ZiLOG. Eric has also served as the Chairman of the New America Foundation, Google, Novel, and InSight Venture Partners, and as a Director of Google, Apple, and Seibel Systems. Eric is also a member of the President&apos;s Council of Advisors on Science and Technology and the Prime Minister&apos;s Advisory Council in the U.K. Eric has Bachelor of Science and M.S. degrees in Electrical Engineering from Princeton University, and a Ph.D. in Computer Science from the University of California-Berkeley.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/hopes/_drai.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="57" resname="r786893194" restype="string" datatype="ruby">
+        <source>Dr. %{ai_trademark} — your personal %{ai_serif}-powered &quot;physician&quot;</source>
+        <target state="new">Dr. %{ai_trademark} — your personal %{ai_serif}-powered &quot;physician&quot;</target>
+      </trans-unit>
+      <trans-unit id="58" resname="r655383491" restype="string" datatype="ruby">
+        <source>Based on your symptoms, Dr. %{ai_trademark} routes or &quot;triages&quot; you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</source>
+        <target state="new">Based on your symptoms, Dr. %{ai_trademark} routes or &quot;triages&quot; you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/home/_hopes_intro.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="59" resname="r498270014" restype="string" datatype="ruby">
+        <source>We’ve built the world’s first Health Operating System &#40;HOPESTM&#41;,  powering the delivery of world-class healthcare, from Query-to-Cure</source>
+        <target state="new">We’ve built the world’s first Health Operating System &#40;HOPESTM&#41;,  powering the delivery of world-class healthcare, from Query-to-Cure</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/get_give_health.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="60" resname="r195943088" restype="string" datatype="ruby">
+        <source>CanaryFoundation</source>
+        <target state="new">CanaryFoundation</target>
+      </trans-unit>
+      <trans-unit id="61" resname="r684901890" restype="string" datatype="ruby">
+        <source>Muscular DystrophyAssociation</source>
+        <target state="new">Muscular DystrophyAssociation</target>
+      </trans-unit>
+      <trans-unit id="62" resname="r971975343" restype="string" datatype="ruby">
+        <source>SF Hep BFree</source>
+        <target state="new">SF Hep BFree</target>
+      </trans-unit>
+      <trans-unit id="63" resname="r170304312" restype="string" datatype="ruby">
+        <source>Action AgainstHunger</source>
+        <target state="new">Action AgainstHunger</target>
+      </trans-unit>
+      <trans-unit id="64" resname="r167426065" restype="string" datatype="ruby">
+        <source>GiftingCare</source>
+        <target state="new">GiftingCare</target>
+      </trans-unit>
+      <trans-unit id="65" resname="r739969059" restype="string" datatype="ruby">
+        <source>Blind JudoFoundation</source>
+        <target state="new">Blind JudoFoundation</target>
+      </trans-unit>
+      <trans-unit id="66" resname="r301059848" restype="string" datatype="ruby">
+        <source>ProjectWeHOPE</source>
+        <target state="new">ProjectWeHOPE</target>
+      </trans-unit>
+      <trans-unit id="67" resname="r419293101" restype="string" datatype="ruby">
+        <source>AtlasDIY</source>
+        <target state="new">AtlasDIY</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/for_members.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="68" resname="r691446454" restype="string" datatype="ruby">
+        <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered &quot;physician&quot;, trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>
+        <target state="new">Dr. %{ai_trademark}, your personal %{ai_serif}-powered &quot;physician&quot;, trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/doctor_sign_up_v2.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="69" resname="r426557544" restype="string" datatype="ruby">
+        <source>HealthTap&apos;s Medical Group includes more than %{num} top doctors who: Share their knowledge • Learn from each other • Gain recognition for helping millions • Get unlimited free CME • and much more!</source>
+        <target state="new">HealthTap&apos;s Medical Group includes more than %{num} top doctors who: Share their knowledge • Learn from each other • Gain recognition for helping millions • Get unlimited free CME • and much more!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/searchPages/_search_attribute.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="70" resname="r448063773" restype="string" datatype="ruby">
+        <source>Profile Conditions</source>
+        <target state="new">Profile Conditions</target>
+      </trans-unit>
+      <trans-unit id="71" resname="r260038264" restype="string" datatype="ruby">
+        <source>Profile Medications</source>
+        <target state="new">Profile Medications</target>
+      </trans-unit>
+      <trans-unit id="72" resname="r78129919" restype="string" datatype="ruby">
+        <source>Profile Procedures</source>
+        <target state="new">Profile Procedures</target>
+      </trans-unit>
+      <trans-unit id="73" resname="r892657469" restype="string" datatype="ruby">
+        <source>All Conditions</source>
+        <target state="new">All Conditions</target>
+      </trans-unit>
+      <trans-unit id="74" resname="r942600099" restype="string" datatype="ruby">
+        <source>All Medications</source>
+        <target state="new">All Medications</target>
+      </trans-unit>
+      <trans-unit id="75" resname="r522723615" restype="string" datatype="ruby">
+        <source>All Procedures</source>
+        <target state="new">All Procedures</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/feed/_guest_tip.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="76" resname="r425200736" restype="plural" datatype="ruby" extype="one">
+        <source>&lt;b&gt;1&lt;/b&gt; other doctor agreed</source>
+        <target state="new">&lt;b&gt;1&lt;/b&gt; other doctor agreed</target>
+      </trans-unit>
+      <trans-unit id="77" resname="r425200736" restype="plural" datatype="ruby" extype="other">
+        <source>&lt;b&gt;%{count}&lt;/b&gt; other doctors agreed</source>
+        <target state="new">&lt;b&gt;%{count}&lt;/b&gt; other doctors agreed</target>
+      </trans-unit>
+      <trans-unit id="78" resname="r276766280" restype="plural" datatype="ruby" extype="one">
+        <source>&lt;b&gt;1&lt;/b&gt; other doctor agreed:</source>
+        <target state="new">&lt;b&gt;1&lt;/b&gt; other doctor agreed:</target>
+      </trans-unit>
+      <trans-unit id="79" resname="r276766280" restype="plural" datatype="ruby" extype="other">
+        <source>&lt;b&gt;%{count}&lt;/b&gt; other doctors agreed:</source>
+        <target state="new">&lt;b&gt;%{count}&lt;/b&gt; other doctors agreed:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/feed/_guest_checklist.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="80" resname="r785985135" restype="plural" datatype="ruby" extype="one">
+        <source>&lt;b&gt;1&lt;/b&gt; doctor agreed:</source>
+        <target state="new">&lt;b&gt;1&lt;/b&gt; doctor agreed:</target>
+      </trans-unit>
+      <trans-unit id="81" resname="r785985135" restype="plural" datatype="ruby" extype="other">
+        <source>&lt;b&gt;%{count}&lt;/b&gt; doctors agreed:</source>
+        <target state="new">&lt;b&gt;%{count}&lt;/b&gt; doctors agreed:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/feed/_guest_answer_bundle.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="82" resname="r499403269" restype="string" datatype="ruby">
+        <source>doctors agreed:</source>
+        <target state="new">doctors agreed:</target>
+        <note annotates="source">TODO pluralization</note>
+      </trans-unit>
+      <trans-unit id="83" resname="r462620720" restype="string" datatype="ruby">
+        <source>doctor agreed:</source>
+        <target state="new">doctor agreed:</target>
+        <note annotates="source">TODO pluralization</note>
+      </trans-unit>
+      <trans-unit id="84" resname="r534045277" restype="string" datatype="ruby">
+        <source>other doctor agreed</source>
+        <target state="new">other doctor agreed</target>
+        <note annotates="source">TODO pluralization</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/feed/_guest_answer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="85" resname="r860620556" restype="string" datatype="ruby">
+        <source>other doctors agreed</source>
+        <target state="new">other doctors agreed</target>
+        <note annotates="source">TODO pluralization</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/feed/_checklist.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="86" resname="r867129263" restype="plural" datatype="ruby" extype="one">
+        <source>See 1 more action...</source>
+        <target state="new">See 1 more action...</target>
+      </trans-unit>
+      <trans-unit id="87" resname="r867129263" restype="plural" datatype="ruby" extype="other">
+        <source>See %{count} more actions...</source>
+        <target state="new">See %{count} more actions...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/action_reminder.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="88" resname="r833997894" restype="string" datatype="ruby">
+        <source>Wow! you completed this %{count} times in a row! :&#41;</source>
+        <target state="new">Wow! you completed this %{count} times in a row! :&#41;</target>
+      </trans-unit>
+      <trans-unit id="89" resname="r965172792" restype="string" datatype="ruby">
+        <source>Thank Dr. %{last_name}</source>
+        <target state="new">Thank Dr. %{last_name}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/_success_screen.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="90" resname="r858517226" restype="string" datatype="ruby">
+        <source>Your message was sent to %{doctor_name}!</source>
+        <target state="new">Your message was sent to %{doctor_name}!</target>
+      </trans-unit>
+      <trans-unit id="91" resname="r145584529" restype="string" datatype="ruby">
+        <source>Your message was sent to the doctor!</source>
+        <target state="new">Your message was sent to the doctor!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/_compose_consult.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="92" resname="r924775129" restype="string" datatype="ruby">
+        <source>Talk to %{doctor_name} now!</source>
+        <target state="new">Talk to %{doctor_name} now!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/_checklist_todo.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="93" resname="r17830077" restype="string" datatype="ruby">
+        <source>for %{until_when}</source>
+        <target state="new">for %{until_when}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/pages/feelGood/sign_up_v2.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="94" resname="r286644437" restype="string" datatype="ruby">
+        <source>Join today for free to feel good and improve your health!</source>
+        <target state="new">Join today for free to feel good and improve your health!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/pages/feelGood/_flexible_payment_options_mobile_2.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="95" resname="r888794239" restype="string" datatype="ruby">
+        <source>Primary careon call</source>
+        <target state="new">Primary careon call</target>
+      </trans-unit>
+      <trans-unit id="96" resname="r760669751" restype="string" datatype="ruby">
+        <source>Specialist ofyour choice</source>
+        <target state="new">Specialist ofyour choice</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/member_mailer/member_subscription_charge_error.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="97" resname="r250431722" restype="string" datatype="ruby">
+        <source>If you have any questions or feedback, please %{open_link}contact our Quality Care team%{close_link}or call us at 650-376-6110. We’re here to listen and help :&#41;</source>
+        <target state="new">If you have any questions or feedback, please %{open_link}contact our Quality Care team%{close_link}or call us at 650-376-6110. We’re here to listen and help :&#41;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/upcoming_appointments_and_inbox_consults_daily_report.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="98" resname="r1017586373" restype="string" datatype="ruby">
+        <source>Inactive</source>
+        <target state="new">Inactive</target>
+        <note annotates="source">denotes the user&apos;s standing with a program. ie. Active user vs. Inactive user</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/reviewed_app_got_comment.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="99" resname="r465846240" restype="string" datatype="ruby">
+        <source>See what has to say</source>
+        <target state="new">See what has to say</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/request_feedback_invitation.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="100" resname="r603260600" restype="string" datatype="ruby">
+        <source>Dear %{fn},</source>
+        <target state="new">Dear %{fn},</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

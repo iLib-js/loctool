@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="lib/time_helper.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="r133973370" restype="string" datatype="ruby">
+        <source>today %{time}</source>
+        <target state="new">today %{time}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="lib/ht_argument_error.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2" resname="r810259444" restype="string" datatype="ruby">
+        <source>Appointment cannot be make at that time. Please choose another time slot. If you have any questions please contact our Quality Care team at support@healthtap.com. &#40;Error code: %{error}&#41;</source>
+        <target state="new">Appointment cannot be make at that time. Please choose another time slot. If you have any questions please contact our Quality Care team at support@healthtap.com. &#40;Error code: %{error}&#41;</target>
+      </trans-unit>
+      <trans-unit id="3" resname="r500719923" restype="string" datatype="ruby">
+        <source>Appointment cannot be make at that time. Please choose another time slot</source>
+        <target state="new">Appointment cannot be make at that time. Please choose another time slot</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/what_we_make/member_faqs.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="4" resname="r925290825" restype="string" datatype="ruby">
+        <source>Yes - it’s true!  Health questions submitted to HealthTap are submitted to our network of thousands of doctor across the U.S.  These doctors try to answer every question that’s submitted.  Questions are most likely to be answered when they have not already been asked and answered, and they are good health questions &#40;easy to understand and useful to the entire HealthTap community&#41;. Learn more &amp;raquo;</source>
+        <target state="new">Yes - it’s true!  Health questions submitted to HealthTap are submitted to our network of thousands of doctor across the U.S.  These doctors try to answer every question that’s submitted.  Questions are most likely to be answered when they have not already been asked and answered, and they are good health questions &#40;easy to understand and useful to the entire HealthTap community&#41;. Learn more &amp;raquo;</target>
+      </trans-unit>
+      <trans-unit id="5" resname="r141345879" restype="string" datatype="ruby">
+        <source>There is a small fee &#40;less than the cost of a typical co-pay for someone with comprehensive health insurance&#41; to ask a private question directly to the doctor of your choice on HealthTap. When you submit a private question to a doctor on HealthTap, that doctor has up to 72 hours to answer the question. You will receive a full refund if the question is not answered within that time. Learn more &amp;raquo;</source>
+        <target state="new">There is a small fee &#40;less than the cost of a typical co-pay for someone with comprehensive health insurance&#41; to ask a private question directly to the doctor of your choice on HealthTap. When you submit a private question to a doctor on HealthTap, that doctor has up to 72 hours to answer the question. You will receive a full refund if the question is not answered within that time. Learn more &amp;raquo;</target>
+      </trans-unit>
+      <trans-unit id="6" resname="r97611072" restype="string" datatype="ruby">
+        <source>To log in to HealthTap you must first register and create an account. When you do this, you’ll pick an email address and password to use. You can change your log in information in your settings at any time. If you’ve already registered and are having trouble logging in, please contact us.</source>
+        <target state="new">To log in to HealthTap you must first register and create an account. When you do this, you’ll pick an email address and password to use. You can change your log in information in your settings at any time. If you’ve already registered and are having trouble logging in, please contact us.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/what_we_make/medical_expert_faqs.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="7" resname="r931591608" restype="string" datatype="ruby">
+        <source>To add other group affiliations to your HealthTap profile, edit your Virtual Practice page. Learn more &amp;raquo;</source>
+        <target state="new">To add other group affiliations to your HealthTap profile, edit your Virtual Practice page. Learn more &amp;raquo;</target>
+      </trans-unit>
+      <trans-unit id="8" resname="r1070161257" restype="string" datatype="ruby">
+        <source>Providing helpful answers: answer more</source>
+        <target state="new">Providing helpful answers: answer more</target>
+      </trans-unit>
+      <trans-unit id="9" resname="r990638085" restype="string" datatype="ruby">
+        <source>Growing your network of patient and peers</source>
+        <target state="new">Growing your network of patient and peers</target>
+      </trans-unit>
+      <trans-unit id="10" resname="r1009993530" restype="string" datatype="ruby">
+        <source>Accepting new private messages from patients</source>
+        <target state="new">Accepting new private messages from patients</target>
+      </trans-unit>
+      <trans-unit id="11" resname="r1009999163" restype="string" datatype="ruby">
+        <source>The benefits of HealthTap for doctors are spelled out on our doctors page. If you are a U.S.-licensed doctor you can sign up online or by downloading the number one featured HealthTap MD app for iPhone, iPad and Android. Signing up is quick and easy — and getting started takes less than a minute. During the sign up process we will ask for information that is required to verify that every Medical Expert on HealthTap is a U.S. licensed physician in good standing. If you need assistance during the sign up process, please reach out to our support team here.</source>
+        <target state="new">The benefits of HealthTap for doctors are spelled out on our doctors page. If you are a U.S.-licensed doctor you can sign up online or by downloading the number one featured HealthTap MD app for iPhone, iPad and Android. Signing up is quick and easy — and getting started takes less than a minute. During the sign up process we will ask for information that is required to verify that every Medical Expert on HealthTap is a U.S. licensed physician in good standing. If you need assistance during the sign up process, please reach out to our support team here.</target>
+      </trans-unit>
+      <trans-unit id="12" resname="r269716433" restype="string" datatype="ruby">
+        <source>If you are a U.S. licensed doctor you can sign up online or by downloading the number one featured HealthTap MD app for iPhone, iPad and Android. Signing up is quick and easy — and getting started takes less than a minute. During the sign up process we will ask for information that is required to verify that every Medical Expert on HealthTap is a U.S. licensed doctor in good standing. If you need assistance during the sign up process, please reach out to our support team here</source>
+        <target state="new">If you are a U.S. licensed doctor you can sign up online or by downloading the number one featured HealthTap MD app for iPhone, iPad and Android. Signing up is quick and easy — and getting started takes less than a minute. During the sign up process we will ask for information that is required to verify that every Medical Expert on HealthTap is a U.S. licensed doctor in good standing. If you need assistance during the sign up process, please reach out to our support team here</target>
+      </trans-unit>
+      <trans-unit id="13" resname="r674107202" restype="string" datatype="ruby">
+        <source>Once you have declared your “Known For” topics you have the ability to showcase your expertise in this area and earn the &#35;1 spot on your block, in your neighborhood, city, state, and beyond! You can be the best in your known for areas simply by doing what you do best — helping people who are looking for your expertise. Learn more &amp;raquo;</source>
+        <target state="new">Once you have declared your “Known For” topics you have the ability to showcase your expertise in this area and earn the &#35;1 spot on your block, in your neighborhood, city, state, and beyond! You can be the best in your known for areas simply by doing what you do best — helping people who are looking for your expertise. Learn more &amp;raquo;</target>
+      </trans-unit>
+      <trans-unit id="14" resname="r1058278885" restype="string" datatype="ruby">
+        <source>Adding a video to a Wellness page is a great way to inspire others to improve their health and well-being. Learn more here about our Wellness pages and how to submit your videos directly on HealthTap or via email.</source>
+        <target state="new">Adding a video to a Wellness page is a great way to inspire others to improve their health and well-being. Learn more here about our Wellness pages and how to submit your videos directly on HealthTap or via email.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/what_we_make/for_doctors/_vip.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="15" resname="r211812106" restype="string" datatype="ruby">
+        <source>Get your free personalized app today! Download our mobile app. Or we}ll make you your own</source>
+        <target state="new">Get your free personalized app today! Download our mobile app. Or we}ll make you your own</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/user_questions/feelGood/show.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="16" resname="r52236871" restype="plural" datatype="ruby" extype="one">
+        <source>1 doctor weighed in:</source>
+        <target state="new">1 doctor weighed in:</target>
+      </trans-unit>
+      <trans-unit id="17" resname="r52236871" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} doctors weighed in:</source>
+        <target state="new">%{count} doctors weighed in:</target>
+      </trans-unit>
+      <trans-unit id="18" resname="r694579149" restype="plural" datatype="ruby" extype="one">
+        <source>1 doctor weighed in</source>
+        <target state="new">1 doctor weighed in</target>
+      </trans-unit>
+      <trans-unit id="19" resname="r694579149" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} doctors weighed in</source>
+        <target state="new">%{count} doctors weighed in</target>
+      </trans-unit>
+      <trans-unit id="20" resname="r534642353" restype="plural" datatype="ruby" extype="one">
+        <source>&lt;span class=&quot;num&quot;&gt;1&lt;/span&gt; comment</source>
+        <target state="new">&lt;span class=&quot;num&quot;&gt;1&lt;/span&gt; comment</target>
+      </trans-unit>
+      <trans-unit id="21" resname="r534642353" restype="plural" datatype="ruby" extype="other">
+        <source>&lt;span class=&quot;num&quot;&gt;%{count}&lt;/span&gt; comments</source>
+        <target state="new">&lt;span class=&quot;num&quot;&gt;%{count}&lt;/span&gt; comments</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/user_questions/feelGood/list_questions.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="22" resname="r589252575" restype="string" datatype="ruby">
+        <source>%{span_start}Get answers to your health questions%{span_end}%{span_start}from over %{count} top doctors%{span_end}</source>
+        <target state="new">%{span_start}Get answers to your health questions%{span_end}%{span_start}from over %{count} top doctors%{span_end}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/topics/feelgood/_topic_description_item.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="23" resname="r930257171" restype="string" datatype="ruby">
+        <source>doctor shared a insight</source>
+        <target state="new">doctor shared a insight</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/topics/feelgood/_more_answers.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="24" resname="r192201225" restype="string" datatype="ruby">
+        <source>Read more answers from doctors</source>
+        <target state="new">Read more answers from doctors</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/topics/feelgood/_ask_concierge_doctor_ad_module1.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="25" resname="r510625732" restype="string" datatype="ruby">
+        <source>%{num}K</source>
+        <target state="new">%{num}K</target>
+        <note annotates="source">TODO numerical shorthand</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/terms.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="26" resname="r122505891" restype="string" datatype="ruby">
+        <source>Date last modified: %{date}</source>
+        <target state="new">Date last modified: %{date}</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

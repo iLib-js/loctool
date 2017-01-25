@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/models/person_notification.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="262" resname="r443005047" restype="string" datatype="ruby">
+        <source>%{person}, %{specialty} commented on your answer to a question &quot;%{q_text}&quot;. See the comment.</source>
+        <target state="new">%{person}, %{specialty} commented on your answer to a question &quot;%{q_text}&quot;. See the comment.</target>
+      </trans-unit>
+      <trans-unit id="263" resname="r323108680" restype="string" datatype="ruby">
+        <source>You&apos;re leading the way! Your answer to &quot;%{q_text}&quot; is now the Top Answer! Keep it up!</source>
+        <target state="new">You&apos;re leading the way! Your answer to &quot;%{q_text}&quot; is now the Top Answer! Keep it up!</target>
+      </trans-unit>
+      <trans-unit id="264" resname="r198019584" restype="string" datatype="ruby">
+        <source>%{person} &#40;%{specialty}&#41; had something to add to %{other_person}&apos;s answer to your question &quot;%{q_text} &quot; See the comment.</source>
+        <target state="new">%{person} &#40;%{specialty}&#41; had something to add to %{other_person}&apos;s answer to your question &quot;%{q_text} &quot; See the comment.</target>
+      </trans-unit>
+      <trans-unit id="265" resname="r483003784" restype="string" datatype="ruby">
+        <source>Congrats! You have earned a medal! %{name}: %{trigger}Unlock the %{next_name} medal next. Learn How &amp;raquo;</source>
+        <target state="new">Congrats! You have earned a medal! %{name}: %{trigger}Unlock the %{next_name} medal next. Learn How &amp;raquo;</target>
+      </trans-unit>
+      <trans-unit id="266" resname="r598561090" restype="string" datatype="ruby">
+        <source>Congrats! You have earned a medal! %{name}: %{trigger}</source>
+        <target state="new">Congrats! You have earned a medal! %{name}: %{trigger}</target>
+      </trans-unit>
+      <trans-unit id="267" resname="r881943152" restype="string" datatype="ruby">
+        <source>Another doctor in our medical expert network thinks you&apos;re right. %{person} &#40;%{specialty}%{place}&#41; agrees with your answer to &quot;%{q_text}&quot;. See the answer.</source>
+        <target state="new">Another doctor in our medical expert network thinks you&apos;re right. %{person} &#40;%{specialty}%{place}&#41; agrees with your answer to &quot;%{q_text}&quot;. See the answer.</target>
+      </trans-unit>
+      <trans-unit id="268" resname="r805442684" restype="string" datatype="ruby">
+        <source>A HealthTap Scholar thinks you&apos;re right. %{person} &#40;%{specialty}%{place}&#41; agrees with your answer to &quot;%{q_text}&quot;. See the answer.</source>
+        <target state="new">A HealthTap Scholar thinks you&apos;re right. %{person} &#40;%{specialty}%{place}&#41; agrees with your answer to &quot;%{q_text}&quot;. See the answer.</target>
+      </trans-unit>
+      <trans-unit id="269" resname="r1063646532" restype="string" datatype="ruby">
+        <source>Good news! %{person} agrees with %{answerer}&apos;s answer to a question you asked &quot;%{q_text}&quot;. See the answer.</source>
+        <target state="new">Good news! %{person} agrees with %{answerer}&apos;s answer to a question you asked &quot;%{q_text}&quot;. See the answer.</target>
+      </trans-unit>
+      <trans-unit id="270" resname="r1050560191" restype="string" datatype="ruby">
+        <source>Good news! %{person} agrees with %{answerer}&apos;s answer to a question you&apos;re interested in &quot;%{q_text}&quot;. See the answer.</source>
+        <target state="new">Good news! %{person} agrees with %{answerer}&apos;s answer to a question you&apos;re interested in &quot;%{q_text}&quot;. See the answer.</target>
+      </trans-unit>
+      <trans-unit id="271" resname="r536296903" restype="string" datatype="ruby">
+        <source>%{person} sent you a thank you note for answering &quot;%{q_text}&quot; See the thank you note.</source>
+        <target state="new">%{person} sent you a thank you note for answering &quot;%{q_text}&quot; See the thank you note.</target>
+      </trans-unit>
+      <trans-unit id="272" resname="r143554789" restype="string" datatype="ruby">
+        <source>%{expert} just answered a question you asked &quot;%{q_text}&quot;. Go check it out.</source>
+        <target state="new">%{expert} just answered a question you asked &quot;%{q_text}&quot;. Go check it out.</target>
+      </trans-unit>
+      <trans-unit id="273" resname="r739190513" restype="string" datatype="ruby">
+        <source>%{expert} just answered a question you&apos;re interested in &quot;%{q_text}&quot;. Go check it out.</source>
+        <target state="new">%{expert} just answered a question you&apos;re interested in &quot;%{q_text}&quot;. Go check it out.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person/third_party.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="274" resname="r889985342" restype="string" datatype="ruby">
+        <source>I found %{doctor_name}&apos;s answer really helpful, and thought you might too:: &quot;%{question}&quot;</source>
+        <target state="new">I found %{doctor_name}&apos;s answer really helpful, and thought you might too:: &quot;%{question}&quot;</target>
+      </trans-unit>
+      <trans-unit id="275" resname="r219320126" restype="string" datatype="ruby">
+        <source>I found this doctor answer really helpful, and thought you might too: &quot;%{question_name}&quot;</source>
+        <target state="new">I found this doctor answer really helpful, and thought you might too: &quot;%{question_name}&quot;</target>
+      </trans-unit>
+      <trans-unit id="276" resname="r325377029" restype="string" datatype="ruby">
+        <source>I thought you like to check out %{goal} on HealthTap. HealthTap has thousands of answers, articles, tips, and checklists designed to help you with this goal, so you can smile and feel good all the time!</source>
+        <target state="new">I thought you like to check out %{goal} on HealthTap. HealthTap has thousands of answers, articles, tips, and checklists designed to help you with this goal, so you can smile and feel good all the time!</target>
+      </trans-unit>
+      <trans-unit id="277" resname="r6491183" restype="string" datatype="ruby">
+        <source>I wanted to give you a code that will give you $%{amount} off on a subscription to HealthTap Prime, an exciting new digital health service that gives you unlimited Virtual Consults with top doctors 24/7 via video, voice, or text chat from any PC or mobile device. Use my code %{promo_code} and get $%{amount} in credits toward your HealthTap Prime subscription! With HealthTap Prime, you also get: Total peace of mind, since you can consult a doctor anytime night or day on any issue Prioritized answers to any health question you ask through HealthTap’s free service Health checklists and tips customized just for you Unlimited access to the world’s leading knowledgebase of doctor-created health information Total confidentiality, with HIPAA-secure systems that safeguard your privacySubscribe today for ultimate peace of mind!</source>
+        <target state="new">I wanted to give you a code that will give you $%{amount} off on a subscription to HealthTap Prime, an exciting new digital health service that gives you unlimited Virtual Consults with top doctors 24/7 via video, voice, or text chat from any PC or mobile device. Use my code %{promo_code} and get $%{amount} in credits toward your HealthTap Prime subscription! With HealthTap Prime, you also get: Total peace of mind, since you can consult a doctor anytime night or day on any issue Prioritized answers to any health question you ask through HealthTap’s free service Health checklists and tips customized just for you Unlimited access to the world’s leading knowledgebase of doctor-created health information Total confidentiality, with HIPAA-secure systems that safeguard your privacySubscribe today for ultimate peace of mind!</target>
+      </trans-unit>
+      <trans-unit id="278" resname="r206263461" restype="string" datatype="ruby">
+        <source>HealthTap is an exciting new service for improving your health and well-being. You can learn more about your health by getting trusted health information 24/7 from me and more than 63,000 of my colleagues—who are some of the top doctors in the United States. You can get help by requesting Virtual Consults through HealthTap Prime and Virtual Appointments through HealthTap Concierge. You can also take action by following the tips and checklists I created along with my colleagues. All this helps you focus more on your health and well-being so you feel good all the time!</source>
+        <target state="new">HealthTap is an exciting new service for improving your health and well-being. You can learn more about your health by getting trusted health information 24/7 from me and more than 63,000 of my colleagues—who are some of the top doctors in the United States. You can get help by requesting Virtual Consults through HealthTap Prime and Virtual Appointments through HealthTap Concierge. You can also take action by following the tips and checklists I created along with my colleagues. All this helps you focus more on your health and well-being so you feel good all the time!</target>
+      </trans-unit>
+      <trans-unit id="279" resname="r1070399980" restype="string" datatype="ruby">
+        <source>I&apos;m delighted to share with you a special keycode: %{key_code}, which will help you connect with me as my patient! Schedule appointments to video or text chat me live, or message me any time via my Virtual Practice!</source>
+        <target state="new">I&apos;m delighted to share with you a special keycode: %{key_code}, which will help you connect with me as my patient! Schedule appointments to video or text chat me live, or message me any time via my Virtual Practice!</target>
+      </trans-unit>
+      <trans-unit id="280" resname="r569166535" restype="string" datatype="ruby">
+        <source>Hi, I just helped bring healthcare to those in need through HealthTap&apos;s Get health + Give health initiative! Because of my purchase, HealthTap donated %{bundle_value} doctor %{consult} to %{charity}. Virtual doctor consults bring high-quality medical expertise and top doctor knowledge. *Doctors are immediately available 24/7 *Get advice and prescriptions sent to your local pharmacy *Use a tailored action plan with timely, helpful reminders Help yourself while helping others: www.healthtap.com/get_and_give_health</source>
+        <target state="new">Hi, I just helped bring healthcare to those in need through HealthTap&apos;s Get health + Give health initiative! Because of my purchase, HealthTap donated %{bundle_value} doctor %{consult} to %{charity}. Virtual doctor consults bring high-quality medical expertise and top doctor knowledge. *Doctors are immediately available 24/7 *Get advice and prescriptions sent to your local pharmacy *Use a tailored action plan with timely, helpful reminders Help yourself while helping others: www.healthtap.com/get_and_give_health</target>
+      </trans-unit>
+      <trans-unit id="281" resname="r67674159" restype="string" datatype="ruby">
+        <source>Or call +1&#40;415&#41;429-1250 and type in pin %{room_pin} when prompted. &amp;nbsp;</source>
+        <target state="new">Or call +1&#40;415&#41;429-1250 and type in pin %{room_pin} when prompted. &amp;nbsp;</target>
+      </trans-unit>
+      <trans-unit id="282" resname="r467475399" restype="string" datatype="ruby">
+        <source>Please join this private %{live_consult_type}&amp;nbsp;consult between %{doctor}&amp;nbsp;and %{patient_name} %{last_name}&amp;nbsp;now.&amp;nbsp;</source>
+        <target state="new">Please join this private %{live_consult_type}&amp;nbsp;consult between %{doctor}&amp;nbsp;and %{patient_name} %{last_name}&amp;nbsp;now.&amp;nbsp;</target>
+      </trans-unit>
+      <trans-unit id="283" resname="r331167583" restype="string" datatype="ruby">
+        <source>Please join me in a private %{live_consult_type}&amp;nbsp;consult with %{patient_name} %{last_name}&amp;nbsp;now.</source>
+        <target state="new">Please join me in a private %{live_consult_type}&amp;nbsp;consult with %{patient_name} %{last_name}&amp;nbsp;now.</target>
+      </trans-unit>
+      <trans-unit id="284" resname="r722076930" restype="string" datatype="ruby">
+        <source>Please join me in a private %{live_consult_type}&amp;nbsp;consult with %{doctor}&amp;nbsp;now.</source>
+        <target state="new">Please join me in a private %{live_consult_type}&amp;nbsp;consult with %{doctor}&amp;nbsp;now.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/attribute.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="285" resname="r915826933" restype="string" datatype="ruby">
+        <source>Types of %{name}</source>
+        <target state="new">Types of %{name}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="286" resname="r675633407" restype="string" datatype="ruby">
+        <source>&quot;%{expert} via HealthTap&quot; &apos;</source>
+        <target state="new">&quot;%{expert} via HealthTap&quot; &apos;</target>
+      </trans-unit>
+      <trans-unit id="287" resname="r194184431" restype="string" datatype="ruby">
+        <source>&quot;%{expert} via HealthTap&quot;</source>
+        <target state="new">&quot;%{expert} via HealthTap&quot;</target>
+      </trans-unit>
+      <trans-unit id="288" resname="r1001000397" restype="string" datatype="ruby">
+        <source>&quot;%{expert}&quot;</source>
+        <target state="new">&quot;%{expert}&quot;</target>
+      </trans-unit>
+      <trans-unit id="289" resname="r928320740" restype="string" datatype="ruby">
+        <source>Hi there, want to send me a secure message?</source>
+        <target state="new">Hi there, want to send me a secure message?</target>
+        <note annotates="source">TODO greeting</note>
+      </trans-unit>
+      <trans-unit id="290" resname="r17877413" restype="string" datatype="ruby">
+        <source>Hi there, I haven’t heard back from you</source>
+        <target state="new">Hi there, I haven’t heard back from you</target>
+        <note annotates="source">TODO greeting</note>
+      </trans-unit>
+      <trans-unit id="291" resname="r195776156" restype="string" datatype="ruby">
+        <source>Hi there, let’s set a time to connect</source>
+        <target state="new">Hi there, let’s set a time to connect</target>
+        <note annotates="source">TODO greeting</note>
+      </trans-unit>
+      <trans-unit id="292" resname="r125613331" restype="string" datatype="ruby">
+        <source>&quot;%{expert}&apos;s Virtual Practice&quot;</source>
+        <target state="new">&quot;%{expert}&apos;s Virtual Practice&quot;</target>
+      </trans-unit>
+      <trans-unit id="293" resname="r639597094" restype="string" datatype="ruby">
+        <source>&quot;HealthTap Quality Care&quot;</source>
+        <target state="new">&quot;HealthTap Quality Care&quot;</target>
+      </trans-unit>
+      <trans-unit id="294" resname="r791326900" restype="string" datatype="ruby">
+        <source>%{expert}, a top %{expert_specialty}, has helpful insights to share with you!</source>
+        <target state="new">%{expert}, a top %{expert_specialty}, has helpful insights to share with you!</target>
+      </trans-unit>
+      <trans-unit id="295" resname="r925516596" restype="string" datatype="ruby">
+        <source>Kathelin from HealthTap</source>
+        <target state="new">Kathelin from HealthTap</target>
+      </trans-unit>
+      <trans-unit id="296" resname="r549018355" restype="string" datatype="ruby">
+        <source>HealthTap Team</source>
+        <target state="new">HealthTap Team</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

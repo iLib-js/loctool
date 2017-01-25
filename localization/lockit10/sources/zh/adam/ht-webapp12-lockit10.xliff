@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="public/javascripts/views/experts/settings/account_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="407" resname=" " restype="string" datatype="javascript">
+        <source></source>
+        <target state="new"></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="408" resname="The compensation report from {start_date} to {end_date} is being generated. \\n			It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. \n It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="new">The compensation report from {start_date} to {end_date} is being generated. \n It is gonna take a while. You will get an email once it is ready!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/inviteFriendsSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="409" resname="Build your professional network on HealthTap,&lt;br&gt;and stay connected with trusted colleagues" restype="string" datatype="javascript">
+        <source>Build your professional network on HealthTap,&lt;br&gt;and stay connected with trusted colleagues</source>
+        <target state="new">Build your professional network on HealthTap,&lt;br&gt;and stay connected with trusted colleagues</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/change_shift.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="410" resname="Your shift:&lt;br&gt; {shift}" restype="string" datatype="javascript">
+        <source>Your shift:&lt;br&gt; {shift}</source>
+        <target state="new">Your shift:&lt;br&gt; {shift}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/cancel_shift.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="411" resname="Shift cancellations for:&lt;br&gt; {shiftText}" restype="string" datatype="javascript">
+        <source>Shift cancellations for:&lt;br&gt; {shiftText}</source>
+        <target state="new">Shift cancellations for:&lt;br&gt; {shiftText}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/apptVerifyCode.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="412" resname="We just sent you a text to verify your phone number,&lt;br&gt; {span_tag_start}{span_tag_end}" restype="string" datatype="javascript">
+        <source>We just sent you a text to verify your phone number,&lt;br&gt; {span_tag_start}{span_tag_end}</source>
+        <target state="new">We just sent you a text to verify your phone number,&lt;br&gt; {span_tag_start}{span_tag_end}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/static/who_we_are/unitedwesavelives.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="413" resname="This counts the number of notes that we&apos;ve received from users thanking our doctors for saving their lives. " restype="string" datatype="javascript">
+        <source>This counts the number of notes that we&apos;ve received from users thanking our doctors for saving their lives. </source>
+        <target state="new">This counts the number of notes that we&apos;ve received from users thanking our doctors for saving their lives. </target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/static/what_we_make/get_your_widget.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="414" resname="{link_tag_start}{name}&apos;s Virtual Practice{link_tag_end}" restype="string" datatype="javascript">
+        <source>{link_tag_start}{name}&apos;s Virtual Practice{link_tag_end}</source>
+        <target state="new">{link_tag_start}{name}&apos;s Virtual Practice{link_tag_end}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/perf/sign_up_modals.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="415" resname="Don&apos;t have an account? " restype="string" datatype="javascript">
+        <source>Don&apos;t have an account? </source>
+        <target state="new">Don&apos;t have an account? </target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/controllers/user_questions/show_controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="416" resname="1&#35;There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\\n            &#35;There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
+        <source>1&#35;There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\
+            &#35;There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
+        <target state="new">1&#35;There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\
+            &#35;There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/controllers/people/personalize_controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="417" resname="Currently in {name}&apos;s health Profile:" restype="string" datatype="javascript">
+        <source>Currently in {name}&apos;s health Profile:</source>
+        <target state="new">Currently in {name}&apos;s health Profile:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/controllers/people/ask_success_controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="418" resname="{name}&apos;s Activity" restype="string" datatype="javascript">
+        <source>{name}&apos;s Activity</source>
+        <target state="new">{name}&apos;s Activity</target>
+      </trans-unit>
+      <trans-unit id="419" resname="Update {name}&apos;s profile now" restype="string" datatype="javascript">
+        <source>Update {name}&apos;s profile now</source>
+        <target state="new">Update {name}&apos;s profile now</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/controllers/pages/promote_controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="420" resname="{name}&apos;s Virtual Practice" restype="string" datatype="javascript">
+        <source>{name}&apos;s Virtual Practice</source>
+        <target state="new">{name}&apos;s Virtual Practice</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/app-controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="421" resname="We&apos;re sorry, but it seems your internet connection does not meet\\n                   our minimum requirement for consults. Please try again with a more stable network.\\n                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \\n                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
+        <source>We&apos;re sorry, but it seems your internet connection does not meet\
+                   our minimum requirement for consults. Please try again with a more stable network.\
+                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \
+                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
+        <target state="new">We&apos;re sorry, but it seems your internet connection does not meet\
+                   our minimum requirement for consults. Please try again with a more stable network.\
+                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \
+                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
+      </trans-unit>
+      <trans-unit id="422" resname="{name}&apos;s connect request has been removed." restype="string" datatype="javascript">
+        <source>{name}&apos;s connect request has been removed.</source>
+        <target state="new">{name}&apos;s connect request has been removed.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/waiting_question_item.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="423" resname="1&#35;1 doctor agrees|&#35;{count} doctors agree" restype="string" datatype="javascript">
+        <source>1&#35;1 doctor agrees|&#35;{count} doctors agree</source>
+        <target state="new">1&#35;1 doctor agrees|&#35;{count} doctors agree</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/ui_modules/edit_pregnancy_content.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="427" resname="Please share {first_name}&apos;s obstetric / pregnancy history" restype="string" datatype="javascript">
+        <source>Please share {first_name}&apos;s obstetric / pregnancy history</source>
+        <target state="new">Please share {first_name}&apos;s obstetric / pregnancy history</target>
+      </trans-unit>
+      <trans-unit id="428" resname="Please share this person&apos;s obstetric / pregnancy history?" restype="string" datatype="javascript">
+        <source>Please share this person&apos;s obstetric / pregnancy history?</source>
+        <target state="new">Please share this person&apos;s obstetric / pregnancy history?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/ui_modules/about_content.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="429" resname="{height_ft}&apos;{height_in}&quot; &#40;{height_meters}m&#41;" restype="string" datatype="javascript">
+        <source>{height_ft}&apos;{height_in}&quot; &#40;{height_meters}m&#41;</source>
+        <target state="new">{height_ft}&apos;{height_in}&quot; &#40;{height_meters}m&#41;</target>
+      </trans-unit>
+      <trans-unit id="430" resname="{weight_kilograms}kg" restype="string" datatype="javascript">
+        <source>{weight_kilograms}kg</source>
+        <target state="new">{weight_kilograms}kg</target>
+      </trans-unit>
+      <trans-unit id="431" resname="{weight_lbs}lbs &#40;{weight_kilograms}kg&#41;" restype="string" datatype="javascript">
+        <source>{weight_lbs}lbs &#40;{weight_kilograms}kg&#41;</source>
+        <target state="new">{weight_lbs}lbs &#40;{weight_kilograms}kg&#41;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/question_item.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="432" resname="1&#35;&lt;a class=&apos;agrees&apos;&gt;1 doctor&lt;/a&gt; agrees|&#35;&lt;a class=&apos;agrees&apos;&gt;{n} doctors&lt;/a&gt; agree" restype="string" datatype="javascript">
+        <source>1&#35;&lt;a class=&apos;agrees&apos;&gt;1 doctor&lt;/a&gt; agrees|&#35;&lt;a class=&apos;agrees&apos;&gt;{n} doctors&lt;/a&gt; agree</source>
+        <target state="new">1&#35;&lt;a class=&apos;agrees&apos;&gt;1 doctor&lt;/a&gt; agrees|&#35;&lt;a class=&apos;agrees&apos;&gt;{n} doctors&lt;/a&gt; agree</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="433" resname="Your {expertType}&apos;s Name" restype="string" datatype="javascript">
+        <source>Your {expertType}&apos;s Name</source>
+        <target state="new">Your {expertType}&apos;s Name</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/doctor_list.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="434" resname="Ask Dr. {last_name} your question" restype="string" datatype="javascript">
+        <source>Ask Dr. {last_name} your question</source>
+        <target state="new">Ask Dr. {last_name} your question</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/consult_rating_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="435" resname="Please vote for and recommend {short_name}&apos;s expertise and bedside manner" restype="string" datatype="javascript">
+        <source>Please vote for and recommend {short_name}&apos;s expertise and bedside manner</source>
+        <target state="new">Please vote for and recommend {short_name}&apos;s expertise and bedside manner</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/concierge_request_sent.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="436" resname="We&apos;ll notify you when {prefix}{last_name} accepts you as a patient!" restype="string" datatype="javascript">
+        <source>We&apos;ll notify you when {prefix}{last_name} accepts you as a patient!</source>
+        <target state="new">We&apos;ll notify you when {prefix}{last_name} accepts you as a patient!</target>
+      </trans-unit>
+      <trans-unit id="437" resname="We&apos;ll notify you when {full_name} accepts you as a patient!" restype="string" datatype="javascript">
+        <source>We&apos;ll notify you when {full_name} accepts you as a patient!</source>
+        <target state="new">We&apos;ll notify you when {full_name} accepts you as a patient!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/concierge_payment_wrap.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="438" resname="1&#35;Saved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; Life|&#35;Saved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; Lives" restype="string" datatype="javascript">
+        <source>1&#35;Saved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; Life|&#35;Saved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; Lives</source>
+        <target state="new">1&#35;Saved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; Life|&#35;Saved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; Lives</target>
+      </trans-unit>
+      <trans-unit id="439" resname="1&#35;Helped &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; person|&#35;Helped &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; people" restype="string" datatype="javascript">
+        <source>1&#35;Helped &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; person|&#35;Helped &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; people</source>
+        <target state="new">1&#35;Helped &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; person|&#35;Helped &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; people</target>
+      </trans-unit>
+      <trans-unit id="440" resname="1&#35;Received &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; doctor agrees|&#35;Received &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; doctor agrees" restype="string" datatype="javascript">
+        <source>1&#35;Received &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; doctor agrees|&#35;Received &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; doctor agrees</source>
+        <target state="new">1&#35;Received &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; doctor agrees|&#35;Received &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; doctor agrees</target>
+      </trans-unit>
+      <trans-unit id="441" resname="1&#35;Recieved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; thank|&#35;Recieved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; thanks" restype="string" datatype="javascript">
+        <source>1&#35;Recieved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; thank|&#35;Recieved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; thanks</source>
+        <target state="new">1&#35;Recieved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; thank|&#35;Recieved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; thanks</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/concierge_multi_connect_layout.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="442" resname="1&#35;We&apos;ve invited {n} doctor to join your Care-Team|&#35;We&apos;ve invited {n} doctors to join your Care-Team" restype="string" datatype="javascript">
+        <source>1&#35;We&apos;ve invited {n} doctor to join your Care-Team|&#35;We&apos;ve invited {n} doctors to join your Care-Team</source>
+        <target state="new">1&#35;We&apos;ve invited {n} doctor to join your Care-Team|&#35;We&apos;ve invited {n} doctors to join your Care-Team</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/concierge_landing_doc_detail.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="443" resname="1&#35;In practice for: &lt;em&gt;1&lt;/em&gt; year|&#35;In practice for: &lt;em&gt;{duration}&lt;/em&gt; years" restype="string" datatype="javascript">
+        <source>1&#35;In practice for: &lt;em&gt;1&lt;/em&gt; year|&#35;In practice for: &lt;em&gt;{duration}&lt;/em&gt; years</source>
+        <target state="new">1&#35;In practice for: &lt;em&gt;1&lt;/em&gt; year|&#35;In practice for: &lt;em&gt;{duration}&lt;/em&gt; years</target>
+      </trans-unit>
+      <trans-unit id="444" resname="1&#35;&lt;span&gt;1&lt;/span&gt; &quot;You saved my life&quot; thank you note|&#35;&lt;span&gt;{n}&lt;/span&gt; &quot;You saved my life&quot; thank you notes" restype="string" datatype="javascript">
+        <source>1&#35;&lt;span&gt;1&lt;/span&gt; &quot;You saved my life&quot; thank you note|&#35;&lt;span&gt;{n}&lt;/span&gt; &quot;You saved my life&quot; thank you notes</source>
+        <target state="new">1&#35;&lt;span&gt;1&lt;/span&gt; &quot;You saved my life&quot; thank you note|&#35;&lt;span&gt;{n}&lt;/span&gt; &quot;You saved my life&quot; thank you notes</target>
+      </trans-unit>
+      <trans-unit id="445" resname="1&#35;&lt;span&gt;1&lt;/span&gt; person helped|&#35;&lt;span&gt;{n}&lt;/span&gt; people helped" restype="string" datatype="javascript">
+        <source>1&#35;&lt;span&gt;1&lt;/span&gt; person helped|&#35;&lt;span&gt;{n}&lt;/span&gt; people helped</source>
+        <target state="new">1&#35;&lt;span&gt;1&lt;/span&gt; person helped|&#35;&lt;span&gt;{n}&lt;/span&gt; people helped</target>
+      </trans-unit>
+      <trans-unit id="446" resname="1&#35;Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees" restype="string" datatype="javascript">
+        <source>1&#35;Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees</source>
+        <target state="new">1&#35;Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees</target>
+      </trans-unit>
+      <trans-unit id="447" resname="1&#35;Received: &lt;span&gt;1&lt;/span&gt; thank|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; thanks" restype="string" datatype="javascript">
+        <source>1&#35;Received: &lt;span&gt;1&lt;/span&gt; thank|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; thanks</source>
+        <target state="new">1&#35;Received: &lt;span&gt;1&lt;/span&gt; thank|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; thanks</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/ask_question_payment.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="448" resname="I agree to HealthTap&apos;s {term_link_tag_start}Terms{link_tag_end} and {priv_link_tag_start}Privacy Policy{link_tag_end}" restype="string" datatype="javascript">
+        <source>I agree to HealthTap&apos;s {term_link_tag_start}Terms{link_tag_end} and {priv_link_tag_start}Privacy Policy{link_tag_end}</source>
+        <target state="new">I agree to HealthTap&apos;s {term_link_tag_start}Terms{link_tag_end} and {priv_link_tag_start}Privacy Policy{link_tag_end}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/ask_docs/when_picker.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="449" resname="We&apos;re sorry, virtual consults are not yet available in {state}" restype="string" datatype="javascript">
+        <source>We&apos;re sorry, virtual consults are not yet available in {state}</source>
+        <target state="new">We&apos;re sorry, virtual consults are not yet available in {state}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/ask_docs/basic_info.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="450" resname="What is {name}&apos;s gender?" restype="string" datatype="javascript">
+        <source>What is {name}&apos;s gender?</source>
+        <target state="new">What is {name}&apos;s gender?</target>
+      </trans-unit>
+      <trans-unit id="451" resname="Please provide the following for {name}&apos;s consult" restype="string" datatype="javascript">
+        <source>Please provide the following for {name}&apos;s consult</source>
+        <target state="new">Please provide the following for {name}&apos;s consult</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/add_office_hour.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="452" resname="Let patients know when you&apos;re available in your Virtual Practice on {day}s" restype="string" datatype="javascript">
+        <source>Let patients know when you&apos;re available in your Virtual Practice on {day}s</source>
+        <target state="new">Let patients know when you&apos;re available in your Virtual Practice on {day}s</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/unsubscribe.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="453" resname="We&apos;ll stop sending you announcements and notifications by email from now on. We&apos;ll miss you :&#40;" restype="string" datatype="javascript">
+        <source>We&apos;ll stop sending you announcements and notifications by email from now on. We&apos;ll miss you :&#40;</source>
+        <target state="new">We&apos;ll stop sending you announcements and notifications by email from now on. We&apos;ll miss you :&#40;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/training_room.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="454" resname="Try it out! Don&apos;t forget to click &quot;Prescribe&quot; once you&apos;ve entered the details." restype="string" datatype="javascript">
+        <source>Try it out! Don&apos;t forget to click &quot;Prescribe&quot; once you&apos;ve entered the details.</source>
+        <target state="new">Try it out! Don&apos;t forget to click &quot;Prescribe&quot; once you&apos;ve entered the details.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/staticPages/modules/expert_invite_form.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="455" resname="Please provide the doctor&apos;s name" restype="string" datatype="javascript">
+        <source>Please provide the doctor&apos;s name</source>
+        <target state="new">Please provide the doctor&apos;s name</target>
+      </trans-unit>
+      <trans-unit id="456" resname="Please provide the doctor&apos;s specialty" restype="string" datatype="javascript">
+        <source>Please provide the doctor&apos;s specialty</source>
+        <target state="new">Please provide the doctor&apos;s specialty</target>
+      </trans-unit>
+      <trans-unit id="457" resname="Please provide the doctor&apos;s city" restype="string" datatype="javascript">
+        <source>Please provide the doctor&apos;s city</source>
+        <target state="new">Please provide the doctor&apos;s city</target>
+      </trans-unit>
+      <trans-unit id="458" resname="Please provide the doctor&apos;s state" restype="string" datatype="javascript">
+        <source>Please provide the doctor&apos;s state</source>
+        <target state="new">Please provide the doctor&apos;s state</target>
+      </trans-unit>
+      <trans-unit id="459" resname="Please provide the doctor&apos;s email" restype="string" datatype="javascript">
+        <source>Please provide the doctor&apos;s email</source>
+        <target state="new">Please provide the doctor&apos;s email</target>
+      </trans-unit>
+      <trans-unit id="460" resname="The doctor&apos;s phone number is not valid" restype="string" datatype="javascript">
+        <source>The doctor&apos;s phone number is not valid</source>
+        <target state="new">The doctor&apos;s phone number is not valid</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="461" resname="{currentAge} years" restype="string" datatype="javascript">
+        <source>{currentAge} years</source>
+        <target state="new">{currentAge} years</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/layers.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="462" resname="{name} appreciates your gratitude!" restype="string" datatype="javascript">
+        <source>{name} appreciates your gratitude!</source>
+        <target state="new">{name} appreciates your gratitude!</target>
+      </trans-unit>
+      <trans-unit id="463" resname="Would you like to send a secure message to {name}&apos;s colleague, {colleague_name}?" restype="string" datatype="javascript">
+        <source>Would you like to send a secure message to {name}&apos;s colleague, {colleague_name}?</source>
+        <target state="new">Would you like to send a secure message to {name}&apos;s colleague, {colleague_name}?</target>
+      </trans-unit>
+      <trans-unit id="464" resname="Would you like to send a secure message to {name}?" restype="string" datatype="javascript">
+        <source>Would you like to send a secure message to {name}?</source>
+        <target state="new">Would you like to send a secure message to {name}?</target>
+      </trans-unit>
+      <trans-unit id="465" resname="Would you like to ask a follow-up question to {name}?" restype="string" datatype="javascript">
+        <source>Would you like to ask a follow-up question to {name}?</source>
+        <target state="new">Would you like to ask a follow-up question to {name}?</target>
+      </trans-unit>
+      <trans-unit id="466" resname="Would you like to ask a follow-up question to {name}&apos;s colleague, {colleague_name}?" restype="string" datatype="javascript">
+        <source>Would you like to ask a follow-up question to {name}&apos;s colleague, {colleague_name}?</source>
+        <target state="new">Would you like to ask a follow-up question to {name}&apos;s colleague, {colleague_name}?</target>
+      </trans-unit>
+      <trans-unit id="467" resname="{name} appreciates your gratitude! Have a follow up question?" restype="string" datatype="javascript">
+        <source>{name} appreciates your gratitude! Have a follow up question?</source>
+        <target state="new">{name} appreciates your gratitude! Have a follow up question?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/healthFilesPanel.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="468" resname="This type of file cannot be uploaded. Please try another common photo, multimedia, or document format." restype="string" datatype="javascript">
+        <source>This type of file cannot be uploaded. Please try another common photo, multimedia, or document format.</source>
+        <target state="new">This type of file cannot be uploaded. Please try another common photo, multimedia, or document format.</target>
+      </trans-unit>
+      <trans-unit id="469" resname="Please upload a smaller file." restype="string" datatype="javascript">
+        <source>Please upload a smaller file.</source>
+        <target state="new">Please upload a smaller file.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/enterprise/sign_up.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="470" resname="Please enter a non-work email &#40;one that doesn&apos;t end with {email_domain}" restype="string" datatype="javascript">
+        <source>Please enter a non-work email &#40;one that doesn&apos;t end with {email_domain}</source>
+        <target state="new">Please enter a non-work email &#40;one that doesn&apos;t end with {email_domain}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/ask_docs_v4/doctor.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="471" resname="Speaks {language}" restype="string" datatype="javascript">
+        <source>Speaks {language}</source>
+        <target state="new">Speaks {language}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/ask_docs/similar_questions.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="472" resname="Send your question to receive one or more information text answers \\n          within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
+        <source>Send your question to receive one or more information text answers \
+          within a day from our network of {n} doctors across 137 specialties.</source>
+        <target state="new">Send your question to receive one or more information text answers \
+          within a day from our network of {n} doctors across 137 specialties.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/ask_docs/doctor_search_header.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="473" resname="No {specialist_name} is available right now. \\n          You may still consult one by secure message or appointment." restype="string" datatype="javascript">
+        <source>No {specialist_name} is available right now. \
+          You may still consult one by secure message or appointment.</source>
+        <target state="new">No {specialist_name} is available right now. \
+          You may still consult one by secure message or appointment.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/app.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="474" resname="We&apos;ve registered your vote for &quot;{name}&quot; and will encourage more doctors to review the app." restype="string" datatype="javascript">
+        <source>We&apos;ve registered your vote for &quot;{name}&quot; and will encourage more doctors to review the app.</source>
+        <target state="new">We&apos;ve registered your vote for &quot;{name}&quot; and will encourage more doctors to review the app.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/partial/_chat_simulation.html.haml" source-language="en-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="475" resname="r459380774" restype="string" datatype="ruby">
+        <source>You can actually talk with me or another HealthTap doctor now by video or text chat. Would you like to see a doctor now? We&apos;re standing by!</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/submit_case.html.haml" source-language="en-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="476" resname="r833790376" restype="string" datatype="ruby">
+        <source>Diagnostic dilemma: &quot;What&apos;s the diagnosis?&quot;</source>
+      </trans-unit>
+      <trans-unit id="477" resname="r372120495" restype="string" datatype="ruby">
+        <source>Diagnostic dilemma: &quot;What are the next steps for evaluation?&quot;</source>
+      </trans-unit>
+      <trans-unit id="478" resname="r688178430" restype="string" datatype="ruby">
+        <source>Treatment decision: &quot;What&apos;s the best treatment?&quot;</source>
+      </trans-unit>
+      <trans-unit id="479" resname="r230124915" restype="string" datatype="ruby">
+        <source>Fascinating or rare case: &quot;Isn&apos;t this interesting?&quot;</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/doctor_test_results_critical_day1.html.haml" source-language="en-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="480" resname="r923729424" restype="string" datatype="ruby">
+        <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an &quot;addendum note&quot; to this consult using the chat input.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/doctor_inbox_incoming_group.html.haml" source-language="en-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="481" resname="r570522913" restype="string" datatype="ruby">
+        <source>page, and select the &quot;Answer Patient&quot; button.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person/third_party.rb" source-language="en-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="482" resname="r925928384" restype="string" datatype="ruby">
+        <source>Gift for you! Get 1 month free access to top doctors via video or text chat, 24/7, with HealthTap Prime.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/concierge_application_attestation.rb" source-language="en-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="483" resname="r277688003" restype="string" datatype="ruby">
+        <source>Please select one of the following:</source>
+      </trans-unit>
+      <trans-unit id="484" resname="r854720274" restype="string" datatype="ruby">
+        <source>Do you know of any reasons why the doctor&apos;s licensing applications in any state might be rejected or revoked?</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

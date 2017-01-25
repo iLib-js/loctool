@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="296" resname="r549018355" restype="string" datatype="ruby">
+        <source>HealthTap Team</source>
+        <target state="new">HealthTap Team</target>
+      </trans-unit>
+      <trans-unit id="297" resname="r144778231" restype="string" datatype="ruby">
+        <source>&quot;Dr. Geoff Rutledge&quot;</source>
+        <target state="new">&quot;Dr. Geoff Rutledge&quot;</target>
+      </trans-unit>
+      <trans-unit id="298" resname="r852981727" restype="string" datatype="ruby">
+        <source>&quot;Michelle at HealthTap&quot;</source>
+        <target state="new">&quot;Michelle at HealthTap&quot;</target>
+      </trans-unit>
+      <trans-unit id="299" resname="r82567100" restype="string" datatype="ruby">
+        <source>&quot;Ashley at HealthTap&quot;</source>
+        <target state="new">&quot;Ashley at HealthTap&quot;</target>
+      </trans-unit>
+      <trans-unit id="300" resname="r363698953" restype="string" datatype="ruby">
+        <source>HealthTap Quality Care</source>
+        <target state="new">HealthTap Quality Care</target>
+      </trans-unit>
+      <trans-unit id="301" resname="r134052028" restype="string" datatype="ruby">
+        <source>&quot;Isaac from HealthTap&quot;</source>
+        <target state="new">&quot;Isaac from HealthTap&quot;</target>
+      </trans-unit>
+      <trans-unit id="302" resname="r842995454" restype="string" datatype="ruby">
+        <source>&quot;HealthTap Team&quot;</source>
+        <target state="new">&quot;HealthTap Team&quot;</target>
+      </trans-unit>
+      <trans-unit id="303" resname="r559817010" restype="string" datatype="ruby">
+        <source>&quot;Ron Gutman and the HealthTap Team&quot;</source>
+        <target state="new">&quot;Ron Gutman and the HealthTap Team&quot;</target>
+      </trans-unit>
+      <trans-unit id="304" resname="r894928843" restype="string" datatype="ruby">
+        <source>&quot;Ron Gutman &#40;HealthTap&#41;&quot;</source>
+        <target state="new">&quot;Ron Gutman &#40;HealthTap&#41;&quot;</target>
+      </trans-unit>
+      <trans-unit id="305" resname="r986250982" restype="string" datatype="ruby">
+        <source>&quot;Isaac at HealthTap&quot;</source>
+        <target state="new">&quot;Isaac at HealthTap&quot;</target>
+      </trans-unit>
+      <trans-unit id="306" resname="r745850343" restype="string" datatype="ruby">
+        <source>&quot;Dr. Geoff Rutledge &#40;Chief Medical Officer&#41; at HealthTap&quot;</source>
+        <target state="new">&quot;Dr. Geoff Rutledge &#40;Chief Medical Officer&#41; at HealthTap&quot;</target>
+      </trans-unit>
+      <trans-unit id="307" resname="r560417376" restype="string" datatype="ruby">
+        <source>&quot;Dr. Geoff Rutledge&quot;</source>
+        <target state="new">&quot;Dr. Geoff Rutledge&quot;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/helpers/static_pages_helper.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="308" resname="r620205649" restype="string" datatype="ruby">
+        <source>Dr. %{ai_trademark} is an %{ai_serif}-powered personal &quot;physician&quot;, trained by HealthTap’s network of more than 105,000 doctors, incorporates both context and clinical expertise of doctors who have helped triage hundreds of millions of patients worldwide to right levels of doctor-recommended care. Just like a sympathetic human physician, Dr. %{ai_trademark} converses with the user to understand their current complaints or concerns and uses the user’s health profile to compute the probable causes of their symptoms.</source>
+        <target state="new">Dr. %{ai_trademark} is an %{ai_serif}-powered personal &quot;physician&quot;, trained by HealthTap’s network of more than 105,000 doctors, incorporates both context and clinical expertise of doctors who have helped triage hundreds of millions of patients worldwide to right levels of doctor-recommended care. Just like a sympathetic human physician, Dr. %{ai_trademark} converses with the user to understand their current complaints or concerns and uses the user’s health profile to compute the probable causes of their symptoms.</target>
+      </trans-unit>
+      <trans-unit id="309" resname="r327357502" restype="string" datatype="ruby">
+        <source>HealthTap launches Compass, a revolutionary new personal healthcare application that will give employees of Flex the ability to “tap in” to intelligent and cost-effective healthcare 24/7. HealthTap Compass serves as a hub for managing all employees’ healthcare needs, from information to prescriptions and even lab test referrals and interpretations, and will replace the traditional “benefits card.”</source>
+        <target state="new">HealthTap launches Compass, a revolutionary new personal healthcare application that will give employees of Flex the ability to “tap in” to intelligent and cost-effective healthcare 24/7. HealthTap Compass serves as a hub for managing all employees’ healthcare needs, from information to prescriptions and even lab test referrals and interpretations, and will replace the traditional “benefits card.”</target>
+      </trans-unit>
+      <trans-unit id="310" resname="r350886551" restype="string" datatype="ruby">
+        <source>HealthTap expands globally, unveiling its new “Health Operating System&amp;trade; &#40;HOPES&#41;&amp;trade;&quot; for hospitals, clinics, and community-based programs worldwide, starting with the Waikato District Health Board in New Zealand.</source>
+        <target state="new">HealthTap expands globally, unveiling its new “Health Operating System&amp;trade; &#40;HOPES&#41;&amp;trade;&quot; for hospitals, clinics, and community-based programs worldwide, starting with the Waikato District Health Board in New Zealand.</target>
+      </trans-unit>
+      <trans-unit id="311" resname="r289095764" restype="string" datatype="ruby">
+        <source>New &quot;Doctor %{ai_trademark}&quot; instantaneously translates symptoms into a path to feeling good</source>
+        <target state="new">New &quot;Doctor %{ai_trademark}&quot; instantaneously translates symptoms into a path to feeling good</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/helpers/ad_campaign_helper.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="312" resname="r932898299" restype="string" datatype="ruby">
+        <source>Concierge Medicine for EveryoneTM</source>
+        <target state="new">Concierge Medicine for EveryoneTM</target>
+      </trans-unit>
+      <trans-unit id="313" resname="r472132183" restype="string" datatype="ruby">
+        <source>100% Guarantee. Only $99 per month for unlimited visits. Cancel anytime.</source>
+        <target state="new">100% Guarantee. Only $99 per month for unlimited visits. Cancel anytime.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/topics_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="314" resname="r141785011" restype="plural" datatype="ruby" extype="one">
+        <source>1 doctor is available to help you</source>
+        <target state="new">1 doctor is available to help you</target>
+      </trans-unit>
+      <trans-unit id="315" resname="r141785011" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} doctors available to help you</source>
+        <target state="new">%{count} doctors available to help you</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/api/v2/subscriptions_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="316" resname="r959180041" restype="string" datatype="ruby">
+        <source>Processor Declined</source>
+        <target state="new">Processor Declined</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="index.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="317" resname="r3013966" restype="string" datatype="x-haml">
+        <source>.</source>
+        <target>.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="smiling.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="318" resname="r489998666" restype="string" datatype="x-haml">
+        <source>. That’s because we believe in smiling &amp;mdash; so much so that we&apos;ve made it central to our culture, to who we are, and to what we do.</source>
+        <target>. That’s because we believe in smiling &amp;mdash; so much so that we&apos;ve made it central to our culture, to who we are, and to what we do.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_topics_snapshot_section.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="319" resname="r35246520" restype="string" datatype="x-haml">
+        <source>Ask a free question to our network of doctors</source>
+        <target>Ask a free question to our network of doctors</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="320" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target>No</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="second_opinions.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="321" resname="r303864001" restype="string" datatype="x-haml">
+        <source>可信赖的顶尖专家</source>
+        <target>可信赖的顶尖专家</target>
+      </trans-unit>
+      <trans-unit id="322" resname="r469764042" restype="string" datatype="x-haml">
+        <source>从涵盖137个专科领域的数千名美国顶尖医生团队中选择专家会诊，帮助您更全面地了解病情，做出明智的治疗决定。</source>
+        <target>从涵盖137个专科领域的数千名美国顶尖医生团队中选择专家会诊，帮助您更全面地了解病情，做出明智的治疗决定。</target>
+      </trans-unit>
+      <trans-unit id="323" resname="r917944035" restype="string" datatype="x-haml">
+        <source>咨询顶尖美国医生</source>
+        <target>咨询顶尖美国医生</target>
+      </trans-unit>
+      <trans-unit id="324" resname="r512944245" restype="string" datatype="x-haml">
+        <source>通过我们的网络您可咨询71000多名美国顶级医生，涉及超过137个专科领域，附属于世界顶尖的医院、大学和医疗机构。我们非常重视信用和服务质量，对所有的医生都进行了严格的资质审核和质控把关。我们仅选择各个专科领域的顶级医生，以确保客户得到最专业的会诊咨询服务。</source>
+        <target>通过我们的网络您可咨询71000多名美国顶级医生，涉及超过137个专科领域，附属于世界顶尖的医院、大学和医疗机构。我们非常重视信用和服务质量，对所有的医生都进行了严格的资质审核和质控把关。我们仅选择各个专科领域的顶级医生，以确保客户得到最专业的会诊咨询服务。</target>
+      </trans-unit>
+      <trans-unit id="325" resname="r780941480" restype="string" datatype="x-haml">
+        <source>我曾经从医生手里拿到过一份报告，那份报告我完全看不懂。那周我预约了一次HealthTap咨询，接触到一位特别棒的医生，他的详细说明让我充分理解了报告的准确意思，非常专业和友好！谢谢你HealthTap！</source>
+        <target>我曾经从医生手里拿到过一份报告，那份报告我完全看不懂。那周我预约了一次HealthTap咨询，接触到一位特别棒的医生，他的详细说明让我充分理解了报告的准确意思，非常专业和友好！谢谢你HealthTap！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="psych_landing.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="326" resname="r938589072" restype="string" datatype="x-haml">
+        <source>used &amp;ldquo;telemental health&amp;rdquo; to reduce psychiatric hospital admissions by almost 25 percent and days of hospitalization by more than 25 percent in 84 percent of all age groups</source>
+        <target>used &amp;ldquo;telemental health&amp;rdquo; to reduce psychiatric hospital admissions by almost 25 percent and days of hospitalization by more than 25 percent in 84 percent of all age groups</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="provider_page_h.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="327" resname="r37618807" restype="string" datatype="x-haml">
+        <source>get better&amp;mdash;</source>
+        <target>get better&amp;mdash;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="prime_landing.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="328" resname="r134210951" restype="string" datatype="x-haml">
+        <source>&amp;mdash;whether you’re trying to stay healthy, get better, or improve your overall lifestyle.</source>
+        <target>&amp;mdash;whether you’re trying to stay healthy, get better, or improve your overall lifestyle.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_testimonials.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="329" resname="r515551188" restype="string" datatype="x-haml">
+        <source>from a network of top doctors, helping to curb costs.&amp;rdquo;</source>
+        <target>from a network of top doctors, helping to curb costs.&amp;rdquo;</target>
+      </trans-unit>
+      <trans-unit id="330" resname="r987717249" restype="string" datatype="x-haml">
+        <source>We needed to quickly provide thousands of our employees with accessible, easy-to-use information and virtual care, and that’s exactly what HealthTap delivered…through HealthTap&apos;s proprietary technology and deep domain expertise.…We are proud to partner with HealthTap and support their efforts to bring this much-needed service to population managers around the world.&amp;rdquo;</source>
+        <target>We needed to quickly provide thousands of our employees with accessible, easy-to-use information and virtual care, and that’s exactly what HealthTap delivered…through HealthTap&apos;s proprietary technology and deep domain expertise.…We are proud to partner with HealthTap and support their efforts to bring this much-needed service to population managers around the world.&amp;rdquo;</target>
+      </trans-unit>
+      <trans-unit id="331" resname="r947317708" restype="string" datatype="x-haml">
+        <source>&amp;ldquo;We are so thankful for HealthTap’s speed and efficiency.</source>
+        <target>&amp;ldquo;We are so thankful for HealthTap’s speed and efficiency.</target>
+      </trans-unit>
+      <trans-unit id="332" resname="r423226660" restype="string" datatype="x-haml">
+        <source>Thanks to HealthTap, our employees were able to immediately access high-quality health and medical information.&amp;rdquo;</source>
+        <target>Thanks to HealthTap, our employees were able to immediately access high-quality health and medical information.&amp;rdquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="how_it_works.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="333" resname="r237424254" restype="string" datatype="x-haml">
+        <source>...Read&amp;nbsp;more&amp;nbsp;&amp;rsaquo;</source>
+        <target>...Read&amp;nbsp;more&amp;nbsp;&amp;rsaquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="guest_overview.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="334" resname="r500566248" restype="string" datatype="x-haml">
+        <source>is a special &amp;ldquo;private&amp;rdquo; way of asking questions. I have an ongoing</source>
+        <target>is a special &amp;ldquo;private&amp;rdquo; way of asking questions. I have an ongoing</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="guest_expert_concierge.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="335" resname="r396872048" restype="string" datatype="x-haml">
+        <source>&amp;nbsp;terms</source>
+        <target>&amp;nbsp;terms</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="for_doctors.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="336" resname="r847374820" restype="string" datatype="x-haml">
+        <source>Apply now to learn &amp; earn ›</source>
+        <target>Apply now to learn &amp; earn ›</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="five_hundred.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="337" resname="r1032415132" restype="string" datatype="x-haml">
+        <source>Internal server error</source>
+        <target>Internal server error</target>
+      </trans-unit>
+      <trans-unit id="338" resname="r984267834" restype="string" datatype="x-haml">
+        <source>We&apos;re having some trouble reaching this page.</source>
+        <target>We&apos;re having some trouble reaching this page.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="concierge_marketing.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="339" resname="r699974609" restype="string" datatype="x-haml">
+        <source>&amp;mdash;both primary care and specialists&amp;mdash;over</source>
+        <target>&amp;mdash;both primary care and specialists&amp;mdash;over</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="concierge_heroes.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="340" resname="r226071922" restype="string" datatype="x-haml">
+        <source>&amp; text consults</source>
+        <target>&amp; text consults</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="broker_contract.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="341" resname="r903692391" restype="string" datatype="x-haml">
+        <source>Acknowledgements &amp; Ownership. Licensee acknowledges that the HealthTap Software is proprietary to HealthTap and that HealthTap retains all proprietary right, title and interest in and to the HealthTap Software and the Materials, including without limitation all patents, copyrights, trademarks and all other marks used by Licenser to identify the Licensed Software.</source>
+        <target>Acknowledgements &amp; Ownership. Licensee acknowledges that the HealthTap Software is proprietary to HealthTap and that HealthTap retains all proprietary right, title and interest in and to the HealthTap Software and the Materials, including without limitation all patents, copyrights, trademarks and all other marks used by Licenser to identify the Licensed Software.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="benefit_focus.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="342" resname="r925109523" restype="string" datatype="x-haml">
+        <source>&amp;mdash;from Query-to-Cure</source>
+        <target>&amp;mdash;from Query-to-Cure</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="apprx_landing.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="343" resname="r275933161" restype="string" datatype="x-haml">
+        <source>download the iOS Report&amp;nbsp;&amp;rsaquo;</source>
+        <target>download the iOS Report&amp;nbsp;&amp;rsaquo;</target>
+      </trans-unit>
+      <trans-unit id="344" resname="r427569039" restype="string" datatype="x-haml">
+        <source>download the Android Report&amp;nbsp;&amp;rsaquo;</source>
+        <target>download the Android Report&amp;nbsp;&amp;rsaquo;</target>
+      </trans-unit>
+      <trans-unit id="345" resname="r347196582" restype="string" datatype="x-haml">
+        <source>download the report&amp;nbsp;&amp;rsaquo;</source>
+        <target>download the report&amp;nbsp;&amp;rsaquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="search_results.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="346" resname="r864785970" restype="string" datatype="x-haml">
+        <source>no</source>
+        <target>no</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="privacy_statement.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="347" resname="r815942404" restype="string" datatype="x-haml">
+        <source>Privacy &amp; Security</source>
+        <target>Privacy &amp; Security</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="guidelines.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="348" resname="r802274916" restype="string" datatype="x-haml">
+        <source>&amp;nbsp; These are text, voice, or video calls from patients who wish to talk with you in real time. Live consults can be taken from the comfort of your laptop, desktop, smartphone, or tablet. During a live consult, you and the patient may exchange written messages, photos, videos, and other kinds of documents to support your ability to serve the patient.</source>
+        <target>&amp;nbsp; These are text, voice, or video calls from patients who wish to talk with you in real time. Live consults can be taken from the comfort of your laptop, desktop, smartphone, or tablet. During a live consult, you and the patient may exchange written messages, photos, videos, and other kinds of documents to support your ability to serve the patient.</target>
+      </trans-unit>
+      <trans-unit id="349" resname="r556959066" restype="string" datatype="x-haml">
+        <source>&amp;nbsp; These are asynchronous electronic messages that patients write to you. These also may include photo, video, or document attachments. You respond as soon as you can, but the exchange is not in real time.</source>
+        <target>&amp;nbsp; These are asynchronous electronic messages that patients write to you. These also may include photo, video, or document attachments. You respond as soon as you can, but the exchange is not in real time.</target>
+      </trans-unit>
+      <trans-unit id="350" resname="r665160675" restype="string" datatype="x-haml">
+        <source>and give professional advice in a respectful and courteous manner.&amp;nbsp;*</source>
+        <target>and give professional advice in a respectful and courteous manner.&amp;nbsp;*</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="simplified_payment_variants.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="351" resname="r742267475" restype="string" datatype="x-haml">
+        <source>Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;</source>
+        <target>Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_privacy_statement.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="352" resname="r302709126" restype="string" datatype="x-haml">
+        <source>Privacy &amp; Secure Sharing</source>
+        <target>Privacy &amp; Secure Sharing</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="styleguide_layout.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="353" resname="r961385639" restype="string" datatype="x-haml">
+        <source>New Styles</source>
+        <target>New Styles</target>
+      </trans-unit>
+      <trans-unit id="354" resname="r874307857" restype="string" datatype="x-haml">
+        <source>Palettes</source>
+        <target>Palettes</target>
+      </trans-unit>
+      <trans-unit id="355" resname="r48835764" restype="string" datatype="x-haml">
+        <source>Typography</source>
+        <target>Typography</target>
+      </trans-unit>
+      <trans-unit id="356" resname="r990863575" restype="string" datatype="x-haml">
+        <source>New Buttons</source>
+        <target>New Buttons</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="scholar_weekly_digest.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="357" resname="r1028108809" restype="string" datatype="x-haml">
+        <source>Regular participation on HealthTap is required to maintain Scholar status.  Exercise your influence</source>
+        <target>Regular participation on HealthTap is required to maintain Scholar status.  Exercise your influence</target>
+      </trans-unit>
+      <trans-unit id="358" resname="r778614490" restype="string" datatype="x-haml">
+        <source>creating or reviewing content today</source>
+        <target>creating or reviewing content today</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
