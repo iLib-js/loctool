@@ -6464,8 +6464,8 @@
   </file>
   <file original="public/feelGood/templates/todo_action.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1696" resname="{span_tag_start}{completed_total_count}x{span_tag_end}completed" restype="string" datatype="javascript">
-        <source>{span_tag_start}{completed_total_count}x{span_tag_end}completed</source>
+      <trans-unit id="1696" resname="{span_tag_start}{completed_total_count}x{span_tag_end} completed" restype="string" datatype="javascript">
+        <source>{span_tag_start}{completed_total_count}x{span_tag_end} completed</source>
         <target state="translated">{span_tag_start}{completed_total_count}x{span_tag_end}完成的</target>
       </trans-unit>
       <trans-unit id="1697" resname="{span_tag_start}{completed_in_a_row_count}x{span_tag_end}{frequency} in a row" restype="string" datatype="javascript">

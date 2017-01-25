@@ -30366,9 +30366,9 @@
   </file>
   <file original="public/feelGood/templates/todo_action.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="6106" resname="{span_tag_start}{completed_total_count}x{span_tag_end}completed" restype="string" datatype="html">
-        <source>{span_tag_start}{completed_total_count}x{span_tag_end}completed</source>
-        <target>{span_tag_start}{completed_total_count}x{span_tag_end}completados</target>
+      <trans-unit id="6106" resname="{span_tag_start}{completed_total_count}x{span_tag_end} completed" restype="string" datatype="html">
+        <source>{span_tag_start}{completed_total_count}x{span_tag_end} completed</source>
+        <target>{span_tag_start}{completed_total_count}x{span_tag_end} completados</target>
       </trans-unit>
       <trans-unit id="6107" resname="{span_tag_start}{completed_in_a_row_count}x{span_tag_end}{frequency} in a row" restype="string" datatype="html">
         <source>{span_tag_start}{completed_in_a_row_count}x{span_tag_end}{frequency} in a row</source>
