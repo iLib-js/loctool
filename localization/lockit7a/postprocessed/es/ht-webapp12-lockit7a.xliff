@@ -6583,9 +6583,9 @@
   </file>
   <file original="public/feelGood/templates/todo_action.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1925" resname="{span_tag_start}{completed_total_count}x{span_tag_end}completed" restype="string" datatype="javascript">
-        <source>{span_tag_start}{completed_total_count}x{span_tag_end}completed</source>
-        <target state="translated">{span_tag_start}{completed_total_count}x{span_tag_end}completado</target>
+      <trans-unit id="1925" resname="{span_tag_start}{completed_total_count}x{span_tag_end} completed" restype="string" datatype="javascript">
+        <source>{span_tag_start}{completed_total_count}x{span_tag_end} completed</source>
+        <target state="translated">{span_tag_start}{completed_total_count}x{span_tag_end} completado</target>
       </trans-unit>
       <trans-unit id="1926" resname="{span_tag_start}{completed_in_a_row_count}x{span_tag_end}{frequency} in a row" restype="string" datatype="javascript">
         <source>{span_tag_start}{completed_in_a_row_count}x{span_tag_end}{frequency} in a row</source>
