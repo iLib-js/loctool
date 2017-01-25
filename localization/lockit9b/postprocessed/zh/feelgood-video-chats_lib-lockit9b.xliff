@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="android/res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="1" resname="r812721282" restype="string" datatype="x-android-resource">
+        <source>Join my consult with:</source>
+        <target state="translated">加入我的咨询：</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r796565643" restype="string" datatype="x-android-resource">
+        <source>Share via:</source>
+        <target state="translated">分享：</target>
+      </trans-unit>
+      <trans-unit id="3" resname="r902851796" restype="string" datatype="x-android-resource">
+        <source>Downloaded to:</source>
+        <target state="translated">下载到：</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r795802560" restype="string" datatype="x-android-resource">
+        <source>Diagnosis codes:\n</source>
+        <target state="translated">诊断码：\n</target>
+      </trans-unit>
+      <trans-unit id="5" resname="r717299647" restype="string" datatype="x-android-resource">
+        <source>You haven\&apos;t selected a stethoscope yet</source>
+        <target state="translated">您尚未选择听诊器</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
