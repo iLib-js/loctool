@@ -7975,7 +7975,7 @@
         <target>我们希望您享受您的HealthTap Prime订购的安心，现在您拥有全天24小时就在您指尖的顶级医生的专业知识和关爱！</target>
       </trans-unit>
       <trans-unit id="1770" resname="r98256317" restype="string" datatype="ruby">
-        <source>We wanted to remind you that your free trial ends in three days on %{next_due_date}, after which you will be charged $%{price_in_usd} every . If you’d like to discontinue your trial, you may always cancel your subscription.</source>
+        <source>We wanted to remind you that your free trial ends in three days on %{next_due_date}, after which you will be charged $%{price_in_usd} every %{frequency}. If you’d like to discontinue your trial, you may always cancel your subscription.</source>
         <target>我们想提醒您，您的免费试用期将于三天内&#40;%{next_due_date}&#41;结束，之后您将每%{frequency}按$%{price_in_usd}付费。如果您希望停止试用，可以随时取消您的订购。</target>
       </trans-unit>
       <trans-unit id="1771" resname="r323513387" restype="string" datatype="ruby">
