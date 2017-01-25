@@ -80,7 +80,7 @@
 \u00B7 急性咽炎\n\
 \u00B7 急性鼻窦炎\n\
 \u00B7 过敏\n\
-\u00B7 哮喘（稳定/非紧急）\n\
+\u00B7 哮喘（非急性）\n\
 \u00B7 脚气\n\
 \u00B7 背疼\n\
 \u00B7 蜜蜂蜇伤\n\
@@ -119,7 +119,7 @@
 \u00B7 上呼吸道感染\n\
 \u00B7 泌尿道感染\n\
 \u00B7 阴道瘙痒\n\
-\u00B7 酵母感染\n\n\何时不使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+\u00B7 酵母感染\n\n\何时不应使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -188,7 +188,7 @@
       </trans-unit>
       <trans-unit id="4" resname="At which pharmacy do you prefer to pick up prescriptions?" restype="string" datatype="x-objective-c">
         <source>At which pharmacy do you prefer to pick up prescriptions?</source>
-        <target state="new">未找到药店</target>
+        <target state="new">您希望在哪个药房取药？</target>
         <note annotates="source">question for getting pharmacy selection</note>
       </trans-unit>
     </body>
@@ -197,7 +197,7 @@
     <body>
       <trans-unit id="5" resname="Languages spoken" restype="string" datatype="x-objective-c">
         <source>Languages spoken</source>
-        <target state="new">语言</target>
+        <target state="new">所说语言</target>
       </trans-unit>
     </body>
   </file>
@@ -221,12 +221,12 @@
     <body>
       <trans-unit id="23" resname="FnY-tJ-Ru5.text" restype="string" datatype="x-xib">
         <source>Ask Docs</source>
-        <target>问医生</target>
+        <target>询问医生</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Ask Docs&quot;; ObjectID = &quot;FnY-tJ-Ru5&quot;;</note>
       </trans-unit>
       <trans-unit id="24" resname="Jgd-39-xxH.text" restype="string" datatype="x-xib">
         <source>Feed</source>
-        <target>感觉</target>
+        <target>主页</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Feed&quot;; ObjectID = &quot;Jgd-39-xxH&quot;;</note>
       </trans-unit>
       <trans-unit id="25" resname="goV-9z-1Od.text" restype="string" datatype="x-xib">
@@ -250,7 +250,7 @@
     <body>
       <trans-unit id="28" resname="hon-2k-uh7.disabledTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
+        <target>发送注意事项</target>
         <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Send note&quot;; ObjectID = &quot;hon-2k-uh7&quot;;</note>
       </trans-unit>
     </body>
@@ -278,7 +278,7 @@
       </trans-unit>
       <trans-unit id="32" resname="H3A-5L-zru.placeholder" restype="string" datatype="x-xib">
         <source>Search name, specialty or topic</source>
-        <target>搜索名称，专科或话题</target>
+        <target>搜索姓名、专科或话题</target>
         <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search name, specialty or topic&quot;; ObjectID = &quot;H3A-5L-zru&quot;;</note>
       </trans-unit>
     </body>

@@ -85,4 +85,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/HTImportContactsMainViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="13" resname="Please allow HealthTap to access your address book by going to\nSettings -&gt; Privacy -&gt; Contacts" restype="string" datatype="x-objective-c">
+        <source>Please allow HealthTap to access your address book by going to\nSettings -&gt; Privacy -&gt; Contacts</source>
+        <target state="accepted">请改变以下设定来允许HealthTap访问您的通讯录:\n设置 -&gt; 隐私 -&gt; 通讯录</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

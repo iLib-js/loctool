@@ -10,7 +10,7 @@ if (!utils) {
 
 module.exports = {
     testUtilsIsAndroidResourceYes: function(test) {
-        test.expect(10);
+        test.expect(17);
         
         test.ok(utils.isAndroidResource("@anim/foo_bar_foo"));
         test.ok(utils.isAndroidResource("@array/foo_bar_foo"));
@@ -21,15 +21,23 @@ module.exports = {
         test.ok(utils.isAndroidResource("@integer/foo_bar_foo"));
         test.ok(utils.isAndroidResource("@layout/foo_bar_foo"));
         test.ok(utils.isAndroidResource("@string/foo_bar_foo"));
-        test.ok(utils.isAndroidResource("@style/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@+id/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@+style/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@+android:id/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@android:id/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@android:anim/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@android:color/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@android:id/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@android:style/foo_bar_foo"));
 
         test.done();
     },
 
     testUtilsIsAndroidResourceNo: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         test.ok(!utils.isAndroidResource("foo bar faooasdfas"));
+        test.ok(!utils.isAndroidResource("@foobar/foobar"));
         
         test.done();
     },

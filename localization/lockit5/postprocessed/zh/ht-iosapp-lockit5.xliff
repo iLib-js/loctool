@@ -28,7 +28,7 @@
     <body>
       <trans-unit id="17" resname="\nwith %@ years of experience:" restype="string" datatype="x-objective-c">
         <source>\nwith %@ years of experience:</source>
-        <target>\n用%@ 年实践经验：</target>
+        <target>\n用%@ 年诊疗经验：</target>
       </trans-unit>
       <trans-unit id="18" resname="Consult %@%@%@" restype="string" datatype="x-objective-c">
         <source>Consult %@%@%@</source>
@@ -86,7 +86,7 @@
       </trans-unit>
       <trans-unit id="30" resname="Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;" restype="string" datatype="x-objective-c">
         <source>Would you like to invite a translator to join this consult?\n&#40;Additional %@&#41;</source>
-        <target state="accepted">如果您想用中文沟通，请确认您的医生档案里显示TA会说中文，不然的话我们建议您邀请同声翻译加入这次咨询\n&#40;需额外支付 %@&#41;</target>
+        <target>您希望邀请翻译加入这次咨询吗？\n&#40;其他 %@&#41;</target>
         <note annotates="source">question to offser translation service with extra cost at end</note>
       </trans-unit>
     </body>
@@ -143,11 +143,11 @@
     <body>
       <trans-unit id="73" resname="Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?" restype="string" datatype="x-objective-c">
         <source>Thanks to %@, we can connect you to another doctor for free.\n\nWould you like to perform another consult?</source>
-        <target>感谢%@，我们可以免费为您联系另一位医生。\n\n您希望进行其他咨询吗？</target>
+        <target>感谢%@，我们可以免费为您联系另一名医生。\n\n您希望进行其他咨询吗？</target>
       </trans-unit>
       <trans-unit id="74" resname="As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed." restype="string" datatype="x-objective-c">
         <source>As a Premium subscriber, we can connect you to another consult FOR FREE.\n\nWould you like to perform another consult?\n\nYour satisfaction is 100% guaranteed.</source>
-        <target>作为Premium订阅者，我们可以为您联系另一次免费咨询。\n\n是否要进行其他咨询？\n\n100％保证您满意。</target>
+        <target>作为Premium订购者，我们可以为您联系另一次免费咨询。\n\n是否要进行其他咨询？\n\n100％保证您满意。</target>
       </trans-unit>
     </body>
   </file>
@@ -171,7 +171,7 @@
     <body>
       <trans-unit id="78" resname="Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!" restype="string" datatype="x-objective-c">
         <source>Did you know that thanks to %@ you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!</source>
-        <target>您是否知道因为%@您将可以在向贵宾台超过100多个专科的顶级医生进行咨询时获得折扣优惠？\n\n为您的需求获得正确的医护 - 立刻咨询一位专家！</target>
+        <target>您是否知道因为%@您将可以在向贵宾台超过100多个专科的顶级医生进行咨询时获得折扣优惠？\n\n为您的需求获得正确的医护 - 立即咨询一位专家！</target>
       </trans-unit>
     </body>
   </file>
@@ -259,7 +259,7 @@
     <body>
       <trans-unit id="94" resname="Get a personalized doctor answer\nnow via video or text chat" restype="string" datatype="x-objective-c">
         <source>Get a personalized doctor answer\nnow via video or text chat</source>
-        <target>通过视频或文本聊天\n获得一次个性化的医生回答</target>
+        <target>通过视频或文本聊天\n获得一次专属于您的医生回答</target>
       </trans-unit>
     </body>
   </file>
@@ -291,7 +291,7 @@
     <body>
       <trans-unit id="102" resname="It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients." restype="string" datatype="x-objective-c">
         <source>It appears you are near %@. Please confirm you are actually in %@. Doctors cannot legally provide you with medical advice or prescribe treatments if you are not located in a state where they are licensed to see patients.</source>
-        <target>您似乎在%@附近。请确认您确实在%@。如果您不在其拥有执业执照所在的州，医生不能合法地为您提供医疗建议或开处方。</target>
+        <target>您似乎在%@附近。请确认您确实在%@。如果您不在其拥有执业资格所在的州，医生不能合法地为您提供医疗建议或开处方。</target>
       </trans-unit>
     </body>
   </file>
@@ -363,7 +363,7 @@
     <body>
       <trans-unit id="112" resname="Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:" restype="string" datatype="x-objective-c">
         <source>Send your question to receive one or more educational text answers within a day from our network of %@ doctors across 137 specialties.\n\nTalk to a doctor in a private consult if you want to:</source>
-        <target>发送您的问题，在一天之内收到来自我们由涵盖137个专科%@名医生组成的网络的一个或多个教育性文本回答。\n\n如果您想要可以与医生进行一次私人咨询：</target>
+        <target>发送您的问题，在一天之内收到来自我们由涵盖137个专科%@名医生组成的网络的一个或多个具有教育意义的文本回答。\n\n如果您想要可以与医生进行一次私人咨询：</target>
       </trans-unit>
     </body>
   </file>
@@ -415,7 +415,7 @@
       </trans-unit>
       <trans-unit id="122" resname="From which doctor would\nyou like help?" restype="string" datatype="x-objective-c">
         <source>From which doctor would\nyou like help?</source>
-        <target>您希望\n选择哪个医生的帮助？</target>
+        <target>您希望\n选择哪名医生的帮助？</target>
       </trans-unit>
     </body>
   </file>
@@ -463,11 +463,11 @@
       </trans-unit>
       <trans-unit id="129" resname="Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer" restype="string" datatype="x-objective-c">
         <source>Ask a brief, anonymous question\nfor yourself or someone else,\nand add some health details\nfor a more personalized answer</source>
-        <target>为自己或他人询问一个简短的，匿名的问题，\n并为一个更个性化的回答\n添加一些健康细节</target>
+        <target>为自己或他人询问一个简短的，匿名的问题，\n并为一个更专属于您的回答\n添加一些健康细节</target>
       </trans-unit>
       <trans-unit id="130" resname="If your question wasn&apos;t already\nanswered, we&apos;ll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" restype="string" datatype="x-objective-c">
         <source>If your question wasn&apos;t already\nanswered, we&apos;ll send it to our\nnetwork of top U.S. doctors across\n130+ specialties</source>
-        <target>如果您的问题未\n获得解答，我们将会把问题发送至\n我们由涵盖超过\n130个专科的优秀美国医生组成的网络</target>
+        <target>如果您的问题未\n获得回答，我们将会把问题发送至\n我们由涵盖超过\n130个专科的优秀美国医生组成的网络</target>
       </trans-unit>
       <trans-unit id="131" resname="One or more doctors\nwill respond with short,\neducational answers" restype="string" datatype="x-objective-c">
         <source>One or more doctors\nwill respond with short,\neducational answers</source>
@@ -491,12 +491,12 @@
       </trans-unit>
       <trans-unit id="134" resname="We&apos;ll immediately start calling one\nof our doctors to help you\n&#40;you won&apos;t be charged until the\ndoctor picks up&#41;" restype="string" datatype="x-objective-c">
         <source>We&apos;ll immediately start calling one\nof our doctors to help you\n&#40;you won&apos;t be charged until the\ndoctor picks up&#41;</source>
-        <target>我们会立即开始呼叫\n我们的医生一位医生为您提供帮助\n（在医生开始之前\n您不会被收费）</target>
+        <target>我们会立即开始呼叫\n我们的医生一名医生为您提供帮助\n（在医生开始之前\n您不会被收费）</target>
         <note annotates="source">Tutorial step 2</note>
       </trans-unit>
       <trans-unit id="135" resname="Video chat with the doctor to get\nadvice, treatment, personalized\nchecklists, and reminders to help\nyou stay healthy" restype="string" datatype="x-objective-c">
         <source>Video chat with the doctor to get\nadvice, treatment, personalized\nchecklists, and reminders to help\nyou stay healthy</source>
-        <target>与医生进行视频聊天，获得帮助您保持健康的\n建议，治疗，个性化的\n清单和提醒</target>
+        <target>与医生进行视频聊天，获得帮助您保持健康的\n建议，治疗，专属于您的\n清单和提醒</target>
         <note annotates="source">Tutorial step 3</note>
       </trans-unit>
       <trans-unit id="136" resname="Rate your experience, and get your\ndoctor notes and prescriptions\nfrom the HealthTap app" restype="string" datatype="x-objective-c">
@@ -653,7 +653,7 @@
     <body>
       <trans-unit id="226" resname="$%@ regularly - $%@ in credits" restype="string" datatype="x-objective-c">
         <source>$%@ regularly - $%@ in credits</source>
-        <target>$%@ 定期地 - $%@ 余额</target>
+        <target>$%@ 正常费用 - $%@ 余额</target>
       </trans-unit>
     </body>
   </file>
@@ -707,7 +707,7 @@
     <body>
       <trans-unit id="235" resname="Create a {start} free, private {end} account or login" restype="string" datatype="x-objective-c">
         <source>Create a {start} free, private {end} account or login</source>
-        <target>创建{start}免费的私人{end}账号或登录</target>
+        <target>创建{start}免费的私人{end}账户或登录</target>
       </trans-unit>
       <trans-unit id="236" resname="{start}" restype="string" datatype="x-objective-c">
         <source>{start}</source>
@@ -764,7 +764,7 @@
     <body>
       <trans-unit id="264" resname="YfW-LA-phA.text" restype="string" datatype="x-xib">
         <source>Get the right care for your needs -\nconsult a specialist today!</source>
-        <target>根据您的需要获取合适的医护－\n立刻咨询一位专家！</target>
+        <target>根据您的需要获取合适的医护－\n立即咨询一位专家！</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get the right care for your needs -\nconsult a specialist today!&quot;; ObjectID = &quot;YfW-LA-phA&quot;;</note>
       </trans-unit>
       <trans-unit id="267" resname="jan-BE-S41.normalTitle" restype="string" datatype="x-xib">
@@ -778,7 +778,7 @@
     <body>
       <trans-unit id="272" resname="FD4-kh-UTk.text" restype="string" datatype="x-xib">
         <source>Get the right care for your needs -\nconsult a specialist today!</source>
-        <target>根据您的需要获取合适的医护－\n立刻咨询一位专家！</target>
+        <target>根据您的需要获取合适的医护－\n立即咨询一位专家！</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get the right care for your needs -\nconsult a specialist today!&quot;; ObjectID = &quot;FD4-kh-UTk&quot;;</note>
       </trans-unit>
       <trans-unit id="273" resname="Gql-Yp-fzd.normalTitle" restype="string" datatype="x-xib">
@@ -855,9 +855,9 @@
   <file original="feelgood/Classes/UI/Base.lproj/FGDocScoreLayerView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="333" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>每一个在HealthTap上的医学专家都有一个医者评分信誉评分从0到5星，反应了该医生在HealthTap上获得的同行认可，以及关于他的相关公开信息，包括：  •     来自其他医生的赞同，投票和评论 \n•     多年的经验\n\n•     参考他们的专家质量\n\n•     专家曾经学习和培训的地方\n\n•     认证\n\n•     其他专业成就（如同行评审的出版物和奖项）        •     来自会员的感谢，投票和建议</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
+        <target>每一个在HealthTap上的医学专家都有一个医者评分信誉评分从0到5星，反应了该医生在HealthTap上获得的同行认可，以及关于他的相关公开信息，包括：  •     来自其他医生的赞同，投票和评论 \n•     多年的经验\n\n•     参考他们的专家质量\n\n•     专家曾经学习和培训的地方\n\n•     认证\n\n•     其他专业成就（如同行评审的出版物和奖项）  •     来自会员的感谢，投票和建议</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
       </trans-unit>
     </body>
   </file>
@@ -891,9 +891,9 @@
   <file original="feelgood/Classes/UI/CustomizedPopups/Base.lproj/FGDoctorScoreView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="351" resname="djz-HC-hRp.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members</source>
-        <target>每一个在HealthTap上的医学专家都有一个医者评分信誉评分从0到5星，反应了该医生在HealthTap上获得的同行认可，以及关于他的相关公开信息，包括：  •     来自其他医生的赞同，投票和评论 \n•     多年的经验\n\n•     参考他们的专家质量\n\n•     专家曾经学习和培训的地方\n\n•     认证\n\n•     其他专业成就（如同行评审的出版物和奖项）        •     来自会员的感谢，投票和建议</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations         from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments        &#40;such as peer reviewed publications         and awards&#41;  •     Thanks, votes, and recommendations         from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
+        <target>每一个在HealthTap上的医学专家都有一个医者评分信誉评分从0到5星，反应了该医生在HealthTap上获得的同行认可，以及关于他的相关公开信息，包括：  •     来自其他医生的赞同，投票和评论 \n•     多年的经验\n\n•     参考他们的专家质量\n\n•     专家曾经学习和培训的地方\n\n•     认证\n\n•     其他专业成就（如同行评审的出版物和奖项）  •     来自会员的感谢，投票和建议</target>
+        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other doctors \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;djz-HC-hRp&quot;;</note>
       </trans-unit>
     </body>
   </file>

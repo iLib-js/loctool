@@ -1021,14 +1021,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/general_mailer/member_lowrating_2_star_consult.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="281" resname="r3013966" restype="string" datatype="ruby">
-        <source>.</source>
-        <target state="translated">.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="app/views/general_mailer/member_influencer_news_item_thanked.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="283" resname="r437780225" restype="string" datatype="ruby">
@@ -1278,14 +1270,6 @@
       <trans-unit id="445" resname="r258267076" restype="string" datatype="ruby">
         <source>DrRutledge@healthtap.com</source>
         <target state="translated">DrRutledge@healthtap.com</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="app/views/general_mailer/doctor_prime_app_part2_approved.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="483" resname="r3013966" restype="string" datatype="ruby">
-        <source>.</source>
-        <target state="translated">.</target>
       </trans-unit>
     </body>
   </file>
@@ -6599,9 +6583,9 @@
   </file>
   <file original="public/feelGood/templates/todo_action.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1925" resname="{span_tag_start}{completed_total_count}x{span_tag_end}completed" restype="string" datatype="javascript">
-        <source>{span_tag_start}{completed_total_count}x{span_tag_end}completed</source>
-        <target state="translated">{span_tag_start}{completed_total_count}x{span_tag_end}completado</target>
+      <trans-unit id="1925" resname="{span_tag_start}{completed_total_count}x{span_tag_end} completed" restype="string" datatype="javascript">
+        <source>{span_tag_start}{completed_total_count}x{span_tag_end} completed</source>
+        <target state="translated">{span_tag_start}{completed_total_count}x{span_tag_end} completado</target>
       </trans-unit>
       <trans-unit id="1926" resname="{span_tag_start}{completed_in_a_row_count}x{span_tag_end}{frequency} in a row" restype="string" datatype="javascript">
         <source>{span_tag_start}{completed_in_a_row_count}x{span_tag_end}{frequency} in a row</source>

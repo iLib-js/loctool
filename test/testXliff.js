@@ -888,7 +888,10 @@ module.exports = {
             pathName: "foo/bar/asdf.java",
             project: "ht-androidapp",
             resType: "plural",
-            quantity: "one"
+            origin: "source",
+    		autoKey: true,
+    		state: "new",
+    		datatype: "ruby"
         });
         
         x.addResource(res);
@@ -898,10 +901,10 @@ module.exports = {
                 '<xliff version="1.2">\n' +
                 '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="ruby" extype="one">\n' +
                 '        <source>There is 1 object.</source>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
+                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="ruby" extype="other">\n' +
                 '        <source>There are {n} objects.</source>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +

@@ -18676,10 +18676,6 @@
         <source>for any available shifts to perform Virtual Consults on HealthTap Prime. Lastly, we suggest reviewing our guidelines on setting up and preparing for your first Virtual Consult.</source>
         <target state="translated">为任何在HealthTap Prime上执行在线咨询服务可用的班次。 最后，我们建议您查看关于设置和准备第一次在线咨询的指南。</target>
       </trans-unit>
-      <trans-unit id="3576" resname="r3013966" restype="string" datatype="ruby">
-        <source>.</source>
-        <target state="translated">.</target>
-      </trans-unit>
     </body>
   </file>
   <file original="app/views/general_mailer/doctor_prime_app_part1_completed.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
@@ -24605,7 +24601,7 @@
       </trans-unit>
       <trans-unit id="4841" resname="r653185640" restype="string" datatype="ruby">
         <source>Chinese</source>
-        <target state="translated">汉语</target>
+        <target state="translated">中国/海外华人</target>
       </trans-unit>
       <trans-unit id="4842" resname="r338273669" restype="string" datatype="ruby">
         <source>South East Asian</source>
@@ -36646,7 +36642,7 @@
     <body>
       <trans-unit id="8634" resname="{weight_lbs} lbs" restype="string" datatype="javascript">
         <source>{weight_lbs} lbs</source>
-        <target state="translated">{Weight_lbs} 磅</target>
+        <target state="translated">{weight_lbs} 磅</target>
       </trans-unit>
       <trans-unit id="8635" resname="{weight_kg} kg" restype="string" datatype="javascript">
         <source>{weight_kg} kg</source>
@@ -37172,8 +37168,8 @@
   </file>
   <file original="public/feelGood/templates/todo_action.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="8741" resname="{span_tag_start}{completed_total_count}x{span_tag_end}completed" restype="string" datatype="javascript">
-        <source>{span_tag_start}{completed_total_count}x{span_tag_end}completed</source>
+      <trans-unit id="8741" resname="{span_tag_start}{completed_total_count}x{span_tag_end} completed" restype="string" datatype="javascript">
+        <source>{span_tag_start}{completed_total_count}x{span_tag_end} completed</source>
         <target state="translated">{span_tag_start}{completed_total_count}x{span_tag_end}完成的</target>
       </trans-unit>
       <trans-unit id="8742" resname="{span_tag_start}{completed_in_a_row_count}x{span_tag_end}{frequency} in a row" restype="string" datatype="javascript">
@@ -42234,7 +42230,7 @@
       </trans-unit>
       <trans-unit id="9786" resname="{name} is typing notes for you" restype="string" datatype="javascript">
         <source>{name} is typing notes for you</source>
-        <target state="translated">{doctor_name}正在为您输入注意事项</target>
+        <target state="translated">{name}正在为您输入注意事项</target>
       </trans-unit>
       <trans-unit id="9787" resname="&lt;b&gt;Read&lt;/b&gt; " restype="string" datatype="javascript">
         <source>&lt;b&gt;Read&lt;/b&gt;</source>
