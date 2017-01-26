@@ -151,5 +151,26 @@ module.exports = {
         test.equal(utils.hashKey("This is a test"), "r654479252");
         
         test.done();
+    },
+    
+    testTrimEscapedRealWhitespace: function(test) {
+        test.expect(4);
+        
+        test.equal(utils.trimEscaped("This is a test"), "This is a test");
+        test.equal(utils.trimEscaped(" \t \n   This is a test"), "This is a test");
+        test.equal(utils.trimEscaped("This is a test   \t  \n"), "This is a test");
+        test.equal(utils.trimEscaped("\n \t \r This is a test \r \t \n"), "This is a test");
+
+        test.done();
+    },
+
+    testTrimEscapedEscapedWhitespace: function(test) {
+        test.expect(3);
+        
+        test.equal(utils.trimEscaped(" \\t \\n   This is a test"), "This is a test");
+        test.equal(utils.trimEscaped("This is a test   \\t  \\n"), "This is a test");
+        test.equal(utils.trimEscaped("\\n \\t \\r This is a test \\r \\t \\n"), "This is a test");
+
+        test.done();
     }
 }
