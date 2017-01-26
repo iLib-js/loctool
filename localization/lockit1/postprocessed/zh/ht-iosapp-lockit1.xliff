@@ -7421,7 +7421,7 @@ anytime for free</source>
       </trans-unit>
       <trans-unit id="At what phone number can doctors, pharmacists or HealthTap reach %@ if needed?" resname="At what phone number can doctors, pharmacists or HealthTap reach %@ if needed?" restype="string" datatype="x-objective-c">
         <source>At what phone number can doctors, pharmacists or HealthTap reach %@ if needed?</source>
-        <target>若有需要，医生、药师或HealthTap能通过什么手机号码联系到您？</target>
+        <target>若有需要，医生、药师或HealthTap能通过什么手机号码联系到%@？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="At what phone number can doctors, pharmacists or HealthTap reach you if needed?" resname="At what phone number can doctors, pharmacists or HealthTap reach you if needed?" restype="string" datatype="x-objective-c">
@@ -9501,7 +9501,7 @@ members in your area are experiencing %2$@. How can our doctors help you?</sourc
       </trans-unit>
       <trans-unit id="How many deliveries did %@ have?" resname="How many deliveries did %@ have?" restype="string" datatype="x-objective-c">
         <source>How many deliveries did %@ have?</source>
-        <target>@生过几次孩子？</target>
+        <target>%@生过几次孩子？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="How many deliveries did you have?" resname="How many deliveries did you have?" restype="string" datatype="x-objective-c">
@@ -11277,7 +11277,7 @@ from the HealthTap app</source>
       </trans-unit>
       <trans-unit id="Saved %@ lives" resname="Saved %@ lives" restype="string" datatype="x-objective-c">
         <source>Saved %@ lives</source>
-        <target>拯救% @生命</target>
+        <target>拯救%@生命</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Schedule a video appointment" resname="Schedule a video appointment" restype="string" datatype="x-objective-c">
@@ -12897,7 +12897,7 @@ doctor picks up&#41;</source>
         <source>When not to use Virtual Consults
 Any medical problem that is life threatening. For example, if you experience any of the following medical issues go immediately to an %@:</source>
         <target>何时不应使用在线咨询
-任何医疗问题是危及生命的。比如，若您有任何一下症状，请立即去一家%2$@</target>
+任何医疗问题是危及生命的。比如，若您有任何一下症状，请立即去一家%@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="When was %@ born?" resname="When was %@ born?" restype="string" datatype="x-objective-c">
@@ -13453,7 +13453,7 @@ on your Apple Watch or iPhone</source>
       </trans-unit>
       <trans-unit id="\nwith %@ years of experience:" resname="\nwith %@ years of experience:" restype="string" datatype="x-objective-c">
         <source>with %@ years of experience:</source>
-        <target>有%年的经验：</target>
+        <target>有%@年的经验：</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="accepts your insurance" resname="accepts your insurance" restype="string" datatype="x-objective-c">

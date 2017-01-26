@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/static_pages/press.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="27" resname="r605167067" restype="string" datatype="ruby">
+        <source>HealthTap will metamorphose from a Q&amp;amp;A site into a service that doctors, hospitals, or provider organizations will buy to manage their larger patient pools more efficiently.</source>
+        <target state="new">HealthTap将从问答网站转变为医生，医院或提供者组织将更有效地管理其较大的患者库的服务。</target>
+      </trans-unit>
+      <trans-unit id="28" resname="r654595923" restype="string" datatype="ruby">
+        <source>HealthTap helps you &apos;prepare...to ask smarter questions when [you] get to the doctor&apos;s office&apos;.</source>
+        <target state="new">HealthTap帮助你准备...当你到达医生办公室时要问更直接了当的问题。</target>
+      </trans-unit>
+      <trans-unit id="29" resname="r821252415" restype="string" datatype="ruby">
+        <source>HealthTap’s Q&amp;amp;A service sees 7.5M uniques per month, with MDs spending an hour per session providing 581m answers.</source>
+        <target state="new">HealthTap的问答服务每月查看7.5M的独立问题，MD每次会话花费一小时，提供581万个答案。</target>
+      </trans-unit>
+      <trans-unit id="30" resname="r486917389" restype="string" datatype="ruby">
+        <source>HealthTap...appeal[s] to doctors who are willing to define their roles and organize their time differently.</source>
+        <target state="new">HealthTap...更愿意倾向于那些愿意个性化定义自己角色和工作时间的医生</target>
+      </trans-unit>
+      <trans-unit id="31" resname="r127921266" restype="string" datatype="ruby">
+        <source>Goodbye doctor&apos;s appointments and waiting rooms, hello HealthTap.</source>
+        <target state="new">欢迎来到HealthTap, 跟去医院看病的烦恼说再见.</target>
+      </trans-unit>
+      <trans-unit id="32" resname="r455048854" restype="string" datatype="ruby">
+        <source>HealthTap &apos;just might make you raise both eyebrows in surprise&apos;.</source>
+        <target state="new">HealthTap &apos;绝对让你眼前一亮&apos;.</target>
+      </trans-unit>
+      <trans-unit id="33" resname="r826633556" restype="string" datatype="ruby">
+        <source>What HealthTap is doing is revolutionary.</source>
+        <target state="new">HealthTap正在改变世界</target>
+      </trans-unit>
+      <trans-unit id="34" resname="r579809213" restype="string" datatype="ruby">
+        <source>HealthTap &apos;gives consumers more control over their health&apos;.</source>
+        <target state="new">HealthTap &apos;让顾客更好的管理自己的健康&apos;.</target>
+      </trans-unit>
+      <trans-unit id="35" resname="r700277872" restype="string" datatype="ruby">
+        <source>HealthTap was created &apos;to engage people in their health and to help them live healthier, happier lives&apos;.</source>
+        <target state="new">HealthTap的任务是让人们活的更加健康更加精彩</target>
+      </trans-unit>
+      <trans-unit id="36" resname="r734568465" restype="string" datatype="ruby">
+        <source>[Increasing] its network of doctors available to answer patients&apos; questions online, Palo Alto-based HealthTap is acquiring Q&amp;amp;A site Avvo Health.</source>
+        <target state="new">为了获得更多医生来帮助患者在线解决问题&apos;, HealthTap收购了Avvo Health.</target>
+      </trans-unit>
+      <trans-unit id="37" resname="r994522921" restype="string" datatype="ruby">
+        <source>HealthTap isn&apos;t the only service that puts real doctors on your computer screen or on your smartphone, but it&apos;s the best we&apos;ve seen</source>
+        <target state="new">HealthTap并不是唯一一个让你把医生带在身边的服务, 但是她是迄今为止最好的在线医疗服务</target>
+      </trans-unit>
+      <trans-unit id="38" resname="r635663345" restype="string" datatype="ruby">
+        <source>HealthTap Unveils Micropayment System and Doctor Chat</source>
+        <target state="new">HealthTap推出小额支付系统和医生聊天</target>
+      </trans-unit>
+      <trans-unit id="39" resname="r455160075" restype="string" datatype="ruby">
+        <source>HealthTap is Your Personalized Health Source</source>
+        <target state="new">HealthTap是您的个性化健康源</target>
+      </trans-unit>
+      <trans-unit id="40" resname="r1055836732" restype="string" datatype="ruby">
+        <source>HealthTap is...involving physicians in the conversations and by personalizing information to each person&apos;s individual needs.</source>
+        <target state="new">HealthTap让你在和医生面诊时更加私人订制</target>
+      </trans-unit>
+      <trans-unit id="41" resname="r559742024" restype="string" datatype="ruby">
+        <source>HealthTap distinguishes itself from other health education websites by having practicing physicians answer the consumers&apos; questions.</source>
+        <target state="new">HealthTap通过让执业医生回答消费者的健康教育， 这和其他在线医学教育网站完全不同</target>
+      </trans-unit>
+      <trans-unit id="42" resname="r313208786" restype="string" datatype="ruby">
+        <source>Trust is the cornerstone of HealthTap.</source>
+        <target state="new">您的信任是HealthTap的基石.</target>
+      </trans-unit>
+      <trans-unit id="43" resname="r709050172" restype="string" datatype="ruby">
+        <source>HealthTap aims to harness the mobile revolution to bring the house calls back into vogue - albeit virtually.</source>
+        <target state="new">HealthTap旨在利用可携带设备浪潮将家庭电话医生带回流行</target>
+      </trans-unit>
+      <trans-unit id="44" resname="r125752882" restype="string" datatype="ruby">
+        <source>HealthTap Adds App Suite, Doctor Consults via Text</source>
+        <target state="new">HealthTap添加应用套件, 和医生通过短信会诊。</target>
+      </trans-unit>
+      <trans-unit id="45" resname="r841605575" restype="string" datatype="ruby">
+        <source>HealthTap Takes Q&amp;amp;A with Your Physician Mobile.</source>
+        <target state="new">HealthTap让您和您的医生随时随地的问答。</target>
+      </trans-unit>
+      <trans-unit id="46" resname="r732769406" restype="string" datatype="ruby">
+        <source>[HealthTap] brilliantly shows the diversity of the medical community by allowing different physicians to answer the same question.</source>
+        <target state="new">[HealthTap]通过允许不同的医生回答同样的问题，显示出医疗社交网络的多样性</target>
+      </trans-unit>
+      <trans-unit id="47" resname="r567866410" restype="string" datatype="ruby">
+        <source>HealthTap is providing tens of millions of people with tailored health answers that will ultimately help save lives.</source>
+        <target state="new">HealthTap正在为数千万人提供量身定制的健康答案，帮助拯救生命。</target>
+      </trans-unit>
+      <trans-unit id="48" resname="r972923969" restype="string" datatype="ruby">
+        <source>HealthTap is taking the first step to bring personalization to digital health by providing you and millions of others with access to more detailed health answers.</source>
+        <target state="new">HealthTap领先于通过为您和数百万其他人提供更详细的健康答案，为数字医疗时代带来个性化。</target>
+      </trans-unit>
+      <trans-unit id="49" resname="r900900038" restype="string" datatype="ruby">
+        <source>What if you could have the best of both worlds – speaking to a real, live doctor and receiving quick answers without leaving home? HealthTap launched to provide people the ability to ask personal health questions to licensed physicians via the web and mobile devices.</source>
+        <target state="new">如果你能同时拥有两个最好的选择 - 对一个真正的医生说话，并得到快速的答案，同时也不用离开家？ HealthTap提供人们通过网络和移动设备向有执照的医生询问个人健康问题的能力。</target>
+      </trans-unit>
+      <trans-unit id="50" resname="r147082462" restype="string" datatype="ruby">
+        <source>Like HealthTap, TipTaps are free and each tip is created for you by the world’s best doctors.</source>
+        <target state="new">像HealthTap一样，TipTaps是免费的，每个小贴士是世界上最好的医生为您创建的。</target>
+      </trans-unit>
+      <trans-unit id="51" resname="r429499317" restype="string" datatype="ruby">
+        <source>HealthTap has just released their newest venture for taking charge of our own health and well being: AppRX.</source>
+        <target state="new">HealthTap刚刚发布了他们最新的业务，负责我们自己的健康和福祉：AppRX</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/partial/_chat_simulation.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="52" resname="r206516038" restype="string" datatype="ruby">
+        <source>Nice to meet you! I&apos;m %{doc_name}, and I&apos;m a Board Certified U.S. doctor. Can we answer a health question for you?</source>
+        <target state="new">很高兴认识你， 我是 %{doc_name}, 我是一个董事会认证的美国医生。我们能为你回答健康问题吗？</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="53" resname="r116346273" restype="string" datatype="ruby">
+        <source>WHAT MAKES PEOPLE FEEL GOOD?</source>
+        <target state="new">什么让人们感觉特别健康</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/investors.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="54" resname="r637275831" restype="string" datatype="ruby">
+        <source>Bill Ericson has been working with startups his entire career as a founder, key advisor, counselor and investor. He believes that entrepreneurship drives the American economy, and that the best venture capitalists see their role as supporting and challenging entrepreneurs to their best performance. Bill’s current investment focus is the big data revolution that is driving the commercial, consumer media, and healthcare worlds. Bill serves on the Board of Northwestern University School of Law and received his B.S.F.S. from Georgetown University of Foreign Service and J.D. from Northwestern University School of Law. MDV has over $1.4 billion under management and partners with entrepreneurs to architect and build successful companies. MDV invests in businesses that address significant challenges and opportunities, including personalizing medicine. MDV-funded companies that have gone public or been acquired include: Agile; Broadbase &#40;KANA&#41;; Brocade; Epigram &#40;BRCM&#41;; FormFactor &#40;FORM&#41;; Freshwater Software &#40;MERQ&#41;; Ipsilon Networks &#40;NOK&#41;; Kalpana &#40;CSCO&#41;; Numerical Technologies &#40;SNPS&#41;; ONI Systems &#40;CIEN&#41;; Pivotal Technologies &#40;BRCM&#41;; Rambus; Vantive; Vitesse; and Zip2 &#40;AltaVista&#41;.</source>
+        <target state="new">Bill Ericson一直与创业公司合作，他的整个职业生涯都是作为创始人，关键顾问，顾问和投资者。他认为创业驱使美国经济，最好的风险资本家看到他们的作用，支持和挑战企业家的最佳表现。 Bill目前的投资焦点是推动商业，消费媒体和医疗保健领域的大数据革命。 Bill在西北大学法学院董事会任职，并获得了B.S.F.S.来自乔治城外交大学和J.D.从西北大学法学院。 MDV有超过14亿美元的管理和合作伙伴与企业家建筑师和建立成功的公司。 MDV投资于解决重大挑战和机遇的企业，包括个性化医疗。上市或被收购的MDV资助公司包括: Agile; Broadbase &#40;KANA&#41;; Brocade; Epigram &#40;BRCM&#41;; FormFactor &#40;FORM&#41;; Freshwater Software &#40;MERQ&#41;; Ipsilon Networks &#40;NOK&#41;; Kalpana &#40;CSCO&#41;; Numerical Technologies &#40;SNPS&#41;; ONI Systems &#40;CIEN&#41;; Pivotal Technologies &#40;BRCM&#41;; Rambus; Vantive; Vitesse; 和 Zip2 &#40;AltaVista&#41;.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

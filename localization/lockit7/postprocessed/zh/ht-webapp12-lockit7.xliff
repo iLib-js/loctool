@@ -1541,7 +1541,7 @@
     <body>
       <trans-unit id="321" resname="r64073948" restype="string" datatype="ruby">
         <source>Please know that you may re-activate your account at any time up to one year. After one year, your account information will likely be permanently deleted. Just write back to %{open_link}%{email}%{close_link} requesting re-activation. If you do come back, we’ll do our best to make sure you have the most delightful experience! :&#41;</source>
-        <target>请注意，您可以在一年内的任何时间重新激活帐户。一年后，您的帐户信息可能会被永久删除。只需发送信息到%{open_link}%{email}{close_link}，请求重新激活。如果您想要回来，我们会尽全力为您提供有最愉快的体验！:&#41;</target>
+        <target>请注意，您可以在一年内的任何时间重新激活帐户。一年后，您的帐户信息可能会被永久删除。只需发送信息到%{open_link}%{email}%{close_link}，请求重新激活。如果您想要回来，我们会尽全力为您提供有最愉快的体验！:&#41;</target>
       </trans-unit>
     </body>
   </file>
