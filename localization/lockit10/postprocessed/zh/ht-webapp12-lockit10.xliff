@@ -204,7 +204,7 @@
       </trans-unit>
       <trans-unit id="437" resname="We&apos;ll notify you when {full_name} accepts you as a patient!" restype="string" datatype="javascript">
         <source>We&apos;ll notify you when {full_name} accepts you as a patient!</source>
-        <target state="new">我们将在{full_name}接受您为病人时通知您 !<</target>
+        <target state="new">我们将在{full_name}接受您为病人时通知您 !</target>
       </trans-unit>
     </body>
   </file>
@@ -555,7 +555,7 @@
       </trans-unit>
       <trans-unit id="14" resname="r1058278885" restype="string" datatype="ruby">
         <source>Adding a video to a Wellness page is a great way to inspire others to improve their health and well-being. Learn more here about our Wellness pages and how to submit your videos directly on HealthTap or via email.</source>
-        <target state="new">将视频添加到“健康”页面是激励他人改善健康的好方法。在这里了解我们的健康网页，以及如何直接在HealthTap或通过电子邮件提交您的视频/target>
+        <target state="new">将视频添加到“健康”页面是激励他人改善健康的好方法。在这里了解我们的健康网页，以及如何直接在HealthTap或通过电子邮件提交您的视频</target>
       </trans-unit>
     </body>
   </file>
@@ -2186,7 +2186,7 @@
     <body>
       <trans-unit id="342" resname="r925109523" restype="string" datatype="x-haml">
         <source>&amp;mdash;from Query-to-Cure</source>
-        <target>&amp;mdash;从查询到治疗/target>
+        <target>&amp;mdash;从查询到治疗</target>
       </trans-unit>
     </body>
   </file>
