@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="_onboarding_3.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="359" resname="r334496180" restype="string" datatype="x-haml">
+        <source>Be proactive about your health, not reactive. Take a minute or two to provide some personal information to enable HealthTap’s network to provide you with the right information.</source>
+        <target>要积极管理你的健康，而不是消极应对。多花一分钟来完善你的个人健康档案，帮助我们提供正确合适的信息。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="concierge_prime_invite.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="360" resname="r817921245" restype="string" datatype="x-haml">
+        <source>&amp;mdash;or any member of your Care Team&amp;mdash;during his or her virtual office hours, as often as you like. You can get advice, referrals, and prescriptions sent to your local pharmacy from the convenience of your home, office, or anywhere you happen to be! No more hassles of traveling to a physical doctor’s office or wasting valuable time in the doctor’s waiting room.</source>
+        <target>&amp;mdash;或你医护团队中的任何一位&amp;mdash;只要在其办公时间内，可以多次联系医生。你能够得到医生建议，推荐，和医药处方，并且在住所、办公室附件或任何地方的当地药店拿到。再也不用花费时间到医生办公室等待了。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="concierge_launch.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="361" resname="r898070077" restype="string" datatype="x-haml">
+        <source>doctor will do.  We’re excited to announce that now your own personal doctors are just a HealthTap away.  Connect directly with your doctors&amp;mdash;both primary care and specialists&amp;mdash;over secure HD video or text chat, at your convenience using our new</source>
+        <target>医生可以。我们很荣幸的宣告，现在您的私人医生就在手中。直接与您的医生联系，&amp;不论是普通门诊还是专家门诊&amp;mdash;都可以通过安全的视频、文字信息来交谈</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="concierge_find_your_doctor.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="362" resname="r405977689" restype="string" datatype="x-haml">
+        <source>doctors&amp;mdash;both primary care and specialists&amp;mdash;over secure HD video or text chat, at your convenience.</source>
+        <target>医生&amp;mdash;不论普通门诊还是专家门诊&amp;mdash;通过安全的视频、文字信息来交谈。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_prime_settings.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="363" resname="r801838208" restype="string" datatype="x-haml">
+        <source>Set Virtual Office Hours for available appointment times. Any unavailable times set will override the weekly Virtual Office Hours.</source>
+        <target>设定您的网上门诊办公时间，以便病人跟您预约。任何非办公时间都会在您的网上门诊更新。</target>
+      </trans-unit>
+      <trans-unit id="364" resname="r509837883" restype="string" datatype="x-haml">
+        <source>Automatically accept patient requests to join your Virtual Practice</source>
+        <target>自动接收病人加入您的网上门诊的请求</target>
+      </trans-unit>
+      <trans-unit id="365" resname="r552455694" restype="string" datatype="x-haml">
+        <source>Save time by automatically accepting patients who request to join your Virtual Practice. You&apos;ll receive weekly updates on new additions.</source>
+        <target>自动接收病人加入您的网上门诊的请求以节省时间。 您&apos; 每周会收到新病人加入的通知。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_agreement.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="366" resname="r399423196" restype="string" datatype="x-haml">
+        <source>LICENSE FEES &amp; PAYMENT TERMS</source>
+        <target>会员费 &amp; 付款条例</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_sos_features.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="367" resname="r730068882" restype="string" datatype="x-haml">
+        <source>&#41;, population managers receive real-time individual and population health insights, including information on what members need and where they are </source>
+        <target>&#41;, 人口管理经理会即时收到有关个人和群体健康的知识，包括人们需要什么。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/inbox_training_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="368" resname="In addition to live virtual consults, you will also receive &lt;b&gt;Inbox Consults&lt;/b&gt;.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours." restype="string" datatype="html">
+        <source>In addition to live virtual consults, you will also receive &lt;b&gt;Inbox Consults&lt;/b&gt;.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.</source>
+        <target state="new">除了在线的网上咨询，您还会收到 &lt;b&gt;来自病人的文字信息咨询&lt;/b&gt;。这些是病人们缴费后，编辑详细的文字信息描述的问题，会显示在您主页新鲜事的最上面，我们要求您在24小时内回答。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/newsletter_answer_content.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="369" resname="." restype="string" datatype="html">
+        <source>.</source>
+        <target state="new">.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/ui_modules/height_slider.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="370" resname="&#40;&lt;%= RB.getString&#40;&quot;{height_meters}m&quot;&#41;.format&#40;{ height_meters: height_m }&#41;%&gt;&#41;" restype="string" datatype="html">
+        <source>&#40;&lt;%= RB.getString&#40;&quot;{height_meters}m&quot;&#41;.format&#40;{ height_meters: height_m }&#41;%&gt;&#41;</source>
+        <target state="new">&#40;&lt;%= RB.getString&#40;&quot;{height_meters}m&quot;&#41;.format&#40;{ height_meters: height_m }&#41;%&gt;&#41;</target>
+      </trans-unit>
+      <trans-unit id="424" resname="{height_ft}&apos;" restype="string" datatype="javascript">
+        <source>{height_ft}&apos;</source>
+        <target state="new">{height_ft}&apos;</target>
+      </trans-unit>
+      <trans-unit id="425" resname="{height_inches}&quot;" restype="string" datatype="javascript">
+        <source>{height_inches}&quot;</source>
+        <target state="new">{height_inches}&quot;</target>
+      </trans-unit>
+      <trans-unit id="426" resname="{height_meters}m" restype="string" datatype="javascript">
+        <source>{height_meters}m</source>
+        <target state="new">{height_meters}m</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/experts/doc2doc_answer_feedback.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="371" resname="You earned				&lt;span class=&quot;points_earned_highlight&quot;&gt;					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points				&lt;/span&gt;" restype="string" datatype="html">
+        <source>You earned
+				&lt;span class=&quot;points_earned_highlight&quot;&gt;
+					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
+				&lt;/span&gt;</source>
+        <target state="new">您赚到了
+				&lt;span class=&quot;points_earned_highlight&quot;&gt;
+					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="372" resname="Today, you&apos;ve earned &lt;span class=&quot;todays_points_highlight&quot;&gt; 180 points&lt;/span&gt; for helping millions.			&lt;br&gt;			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points." restype="string" datatype="html">
+        <source>Today, you&apos;ve earned &lt;span class=&quot;todays_points_highlight&quot;&gt; 180 points&lt;/span&gt; for helping millions.
+			&lt;br&gt;
+			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
+        <target state="new">今天，您&apos;赚到了&lt;span class=&quot;todays_points_highlight&quot;&gt; 180分&lt;/span&gt; 帮助了许多人。
+			&lt;br&gt;
+			回答 &lt;b&gt;X&lt;/b&gt; 更多问题在之后的一 &lt;b&gt;X&lt;/b&gt; 小时之内，来得到双倍积分。</target>
+      </trans-unit>
+      <trans-unit id="373" resname="Here are a few patient questions to keep you going.		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+        <source>Here are a few patient questions to keep you going.
+		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
+        <target state="new">这有几个病人的问题，您可以开始回答。
+		&lt;a&gt;这能看到所有的问题 &amp;raquo;&lt;/a&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/answerPanel.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="374" resname="Create a Tip		&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
+        <source>Create a Tip
+		&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
+        <target state="new">创建一个小贴士
+		&lt;span class=&quot;sub_title&quot;&gt;用一百个字来帮助亿万大众。传播知识，激励人们。&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/askDoc.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="375" resname="Ask Doctors Any Question		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+        <source>Ask Doctors Any Question
+		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
+        <target state="new">向医生询问任何问题，
+		&lt;span class=&quot;sub_title&quot;&gt;随时随地，&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;并免费。&lt;/span&gt;&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/askDocSpelling.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="376" resname="Ask doctors any question		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+        <source>Ask doctors any question
+		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
+        <target state="new">向医生询问任何问题，
+		&lt;span class=&quot;sub_title&quot;&gt;随时随地，&lt;span style=&quot;font-weight: bold&quot;&gt;并免费。&lt;/span&gt;&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/doc2DocSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="377" resname="Curbside Consult &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;			&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
+        <source>Curbside Consult &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;
+			&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
+        <target state="new">路边咨询 &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;
+			&lt;span class=&quot;sub_title&quot;&gt;来自您专家同事的高质量回答。&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/editQuestion.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="378" resname="EDIT YOUR QUESTION		&lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!" restype="string" datatype="html">
+        <source>EDIT YOUR QUESTION
+		&lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!</source>
+        <target state="new">编辑您的问题
+		&lt;span class=&quot;sub_title&quot;&gt;想编辑您的问题？点击这里。记住，好的语法和拼写提高得到高质量回答的几率！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/guidelines.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="379" resname="GUIDELINES		&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
+        <source>GUIDELINES
+		&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
+        <target state="new">参考事项
+		&lt;span class=&quot;sub_title&quot;&gt;想问一个好问题，参考以下事项&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="380" resname="Sweat the details... at least a little.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex1&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Sweat the details... at least a little.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex1&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?
+				&lt;/span&gt;</source>
+        <target state="new">多给一些细节没有坏处。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex1&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 我的手肘内部有一块干干的红疹，已经3周了。是什么引起的呢？&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt; 为什么我有红疹？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="381" resname="Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex2&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex2&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?
+				&lt;/span&gt;</source>
+        <target state="new">尽量描述多些细节来帮助其他人。世界各地的人们都可能看到您的问题，和医生的回答。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex2&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 什么可能引起后背下部疼痛呢，在我做完家务活后？我以前从未有过后背受伤。&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt; 为什么我后背疼？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="382" resname="Include sex/gender, when relevant.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex3&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Include sex/gender, when relevant.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex3&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?
+				&lt;/span&gt;</source>
+        <target state="new">指明您的性别，如果这可以提供更多信息。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex3&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;指明性别会有帮助：&lt;/span&gt; 什么会引起一个硬币大小的突起，在一个男人胸口下面？&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不需要指明性别：&lt;/span&gt; 什么会引起一个豆子大的突起，在我手背的皮肤下面？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="383" resname="Include an approximate age.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex4&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;					&lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Include an approximate age.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex4&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;
+					&lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?
+				&lt;/span&gt;</source>
+        <target state="new">指明您的年龄。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex4&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;不同的年龄会导致不同回答：&lt;/span&gt; 过去2天，我15岁的儿子一直发烧，而且有点瘸好像脚疼似的。可能是什么引起的呢？ &lt;br&gt;
+					&lt;span class=&quot;good&quot;&gt;&lt;/span&gt; 过去2天，我3岁的儿子一直发烧，而且有点瘸好像脚疼似的。可能是什么引起的呢？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="384" resname="Include weight, height and dosage units, where relevant.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex5&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Include weight, height and dosage units, where relevant.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex5&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?
+				&lt;/span&gt;</source>
+        <target state="new">指明体重和身高的单位。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex5&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我儿子3岁大，27磅，34英寸高，这样在他的年龄正常吗？&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  我儿子3岁大，重27，高34，他这样正常吗？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="385" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex6&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol &#40;acetaminophen120mg/5ml&#41;, but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex6&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol &#40;acetaminophen120mg/5ml&#41;, but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?
+				&lt;/span&gt;</source>
+        <target state="new">请指出药物的牌子和名称，尤其是如果你不在美国境内，或问到很不常见的药物。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex6&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我儿子5岁大，55磅，一直发烧。他吃了5ml的泰诺 &#40;扑热息痛120mg/5ml&#41;，不过烧没退。这么大的孩子能够吃更多泰诺吗？&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  我儿子5岁大，重55，一直发烧。他吃了泰诺但是烧没退。能吃跟多药吗？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="386" resname="Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex7&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex7&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?
+				&lt;/span&gt;</source>
+        <target state="new">试着避免问医生用是或不是回答的问题。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex7&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 抗生素对年轻在上学的孩子怎么样？&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  抗生素对孩子有用吗？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="387" resname="Try to leave opinions out.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex8&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Try to leave opinions out.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex8&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?
+				&lt;/span&gt;</source>
+        <target state="new">尽量避免加入个人观点。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex8&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;好问题：&lt;/span&gt; 为什么有人会抗议使用疫苗，当疫苗可以用来治疗疾病的时候？&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  那些抗议疫苗的人是无知吗，还是只是不接受现实？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="388" resname="The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex9&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex9&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?
+				&lt;/span&gt;</source>
+        <target state="new">越清楚明白越好。注意语法，避免不雅词汇和俚语。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex9&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我在做胳膊弯曲锻炼，突然肱二头肌特别疼。我可能伤到肌肉了吗？&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  做弯曲，感觉不对，胳膊疼，怎么回事？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="389" resname="Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex10&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex10&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
+				&lt;/span&gt;</source>
+        <target state="new">不要假设医生知道你的病史，HealthTap医生通常看不到你之前的问题。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex10&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我2岁的儿子2个月前做了耳管，现在发烧并且右耳有脓，这正常吗？&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  现在都2天了，脓会很快流完吗？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="390" resname="To maintain privacy, leave your name and the names of others out &#40;unless that “other” is a celebrity who has publicly talked about an issue&#41;.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex11&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.				&lt;/span&gt;" restype="string" datatype="html">
+        <source>To maintain privacy, leave your name and the names of others out &#40;unless that “other” is a celebrity who has publicly talked about an issue&#41;.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex11&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.
+				&lt;/span&gt;</source>
+        <target state="new">为了您的隐私，不要写您和其他人的真名。 &#40;除非那是一个名人并且公开的谈论了一个问题。&#41;.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex11&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我听说演员Michael J. Fox谈论了他的帕金森症。最近3年内有什么新的更好的治疗方法吗？ &lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  医生您好。我叫John Doe，想知道有什么治疗帕金森症的好办法吗？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="391" resname="Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex12&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex12&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?
+				&lt;/span&gt;</source>
+        <target state="new">避免过多使用简写，那可能造成困惑。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex12&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 如果你的例假从来都不正常，你怎么知道是怀孕了呢？&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  例假都不正常，怎么就怀孕了？
+				&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="392" resname="Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex13&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?				&lt;/span&gt;" restype="string" datatype="html">
+        <source>Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex13&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?
+				&lt;/span&gt;</source>
+        <target state="new">请尽量使用英语问问题，HealthTap平台的英语医生最多。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex13&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;
+					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我上周末清理了一下后园，现在胳膊疼了2天了，这有关系吗？&lt;br&gt;
+					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?
+				&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/newEpisode/expertNewEpisode.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="393" resname="MESSAGE		&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
+        <source>MESSAGE
+		&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;</source>
+        <target state="new">文字信息
+		&lt;span class=&quot;sub_title&quot;&gt;私人的，并达到HIPPA安全级别&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/newEpisode/newEpisode.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="394" resname="Start a Private Conversation		&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
+        <source>Start a Private Conversation
+		&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience</source>
+        <target state="new">开始一段私人对话
+		&lt;span class=&quot;sub_title&quot;&gt;提升HealthTap服务</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/newEpisode/newEpisodeDocChoose.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="395" resname="Start a Private Conversation		&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
+        <source>Start a Private Conversation
+		&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
+        <target state="new">开始一段私人对话
+		&lt;span class=&quot;sub_title&quot;&gt;您可以选择医生，并询问更加私人和具体的问题，只需付一点费用，我们保证这是HIPAA安全的，并且是一对一咨询。可以添加图片，扫描，或其他文件来得到专门给您的回答。&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/newEpisode/newEpisodeHaveCredit.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="396" resname="ASK A DOCTOR A QUESTION		&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
+        <source>ASK A DOCTOR A QUESTION
+		&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
+        <target state="new">询问医生一个问题
+		&lt;span class=&quot;sub_title&quot;&gt;您可以使用HealthTap的信用点数，来支付您直接选择医生并与其交谈的费用。&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/referColleague.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="397" resname="REFER TO A COLLEAGUE		&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
+        <source>REFER TO A COLLEAGUE
+		&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
+        <target state="new">推荐您的同事
+		&lt;span class=&quot;sub_title&quot;&gt;认识其他同事可以回答这个问题？太好了，请告诉我们，我们会把问题转发给他们。&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/referColleagueSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="398" resname="This question has been sent to doctors in the					&lt;%= App.session.referSpecialty %&gt;					field" restype="string" datatype="html">
+        <source>This question has been sent to doctors in the
+					&lt;%= App.session.referSpecialty %&gt;
+					field</source>
+        <target state="new">这个问题已经被发送到
+					&lt;%= App.session.referSpecialty %&gt;
+					医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/people/sign_up.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="399" resname="Enter your doctor&amp;apos;s code" restype="string" datatype="html">
+        <source>Enter your doctor&amp;apos;s code</source>
+        <target state="new">输入医生的&amp;apos;s 编码</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/multipage/legacy/js/mvc/message_layer_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="400" resname="Earn {span_tag_start}{points}{span_tag_end} points \\n            and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
+        <source>Earn {span_tag_start}{points}{span_tag_end} points \
+            and a boost in your Helpfulness and DocScores.</source>
+        <target state="new">赚取 {span_tag_start}{points}{span_tag_end} 分数 \
+            同时提升您的医生分数。</target>
+      </trans-unit>
+      <trans-unit id="401" resname="*HealthTap credits are not awarded for clarifications, appointment requests, \\n              responses sent after 72 hours of receiving a patient message or when a patient uses \\n              your promo code for payment." restype="string" datatype="javascript">
+        <source>*HealthTap credits are not awarded for clarifications, appointment requests, \
+              responses sent after 72 hours of receiving a patient message or when a patient uses \
+              your promo code for payment.</source>
+        <target state="new">*HealthTap信用点数不会通过以下方式赚取：澄清，预约邀请，\
+              在病人发送消息的72小时之后回答或者当病人使用\
+              您的优惠码来付费时。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/multipage/legacy/js/mvc/feed_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="402" resname="HealthTap is for informational purposes only. \\n          Content on HealthTap &#40;including answers&#41; should not be used for medical advice, \\n          diagnosis, or treatment, and interactions on HealthTap do not create a \\n          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \\n          in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you \\n          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only. \
+          Content on HealthTap &#40;including answers&#41; should not be used for medical advice, \
+          diagnosis, or treatment, and interactions on HealthTap do not create a \
+          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \
+          in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you \
+          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+        <target state="new">HealthTap只是为了提供信息。 \
+          HealthTap的内容 &#40;包括问题回答&#41; 不应被用于医学建议， \
+          诊断，或治疗，并且在HealthTap平台的接触并不创建 \
+          医生病人关系。请不要放弃或延缓专业的医疗建议 \
+          因为HealthTap. 给您的医生打电话或911 &#40;如果您在美国。&#41; 如果您 \
+          认为这是紧急情况。 请看 {link_tag_start}更多的信息 &amp;rsaquo;{link_tag_end}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/multipage/js/member/newMemberHome.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="403" resname="HealthTap is for informational purposes only.  Content on HealthTap \\n    &#40;including answers&#41; should not be used for medical advice, diagnosis, or treatment, and interactions \\n    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \\n    medical advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if \\n    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.  Content on HealthTap \
+    &#40;including answers&#41; should not be used for medical advice, diagnosis, or treatment, and interactions \
+    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \
+    medical advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if \
+    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+        <target state="new">HealthTap只是为了提供信息。HealthTap的内容 \
+    &#40;包括问题回答&#41; 不应被用于医学建议，诊断，或治疗，并且在HealthTap平台的接触 \
+    并不创建医生病人关系。请不要放弃或延缓专业的医疗建议 \
+    因为HealthTap。给您的医生打电话或911 &#40;如果您在美国。&#41; 如果 \ 
+    您认为这是紧急情况。 请看 {link_tag_start}更多的信息 &amp;rsaquo;{link_tag_end}</target>
+      </trans-unit>
+      <trans-unit id="404" resname="Connect with women doctors who are also mothers for deeper, \\n    experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
+        <source>Connect with women doctors who are also mothers for deeper, \
+    experience-based answers to all your pregnancy and parenting questions.</source>
+        <target state="new">请与女性医生联系，她们也可能是母亲，来获得有关怀孕和为人父母的基于经验的回答。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/mobile/app/js/templates/topics/topic_navigation_main.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="405" resname="1&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;1&lt;/span&gt; doctor agrees&lt;/a&gt;|&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;{{n}&lt;/span&gt; doctors agree&lt;/a&gt;" restype="string" datatype="javascript">
+        <source>1&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;1&lt;/span&gt; doctor agrees&lt;/a&gt;|&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;{{n}&lt;/span&gt; doctors agree&lt;/a&gt;</source>
+        <target state="new">1位&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;1&lt;/span&gt; 医生同意&lt;/a&gt;|&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;{{n}&lt;/span&gt; 位医生同意&lt;/a&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/people/fileUploadStorage_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="406" resname="We know that health information is personal. That&apos;s why these files will always be secure. We take this stuff very, very seriously. " restype="string" datatype="javascript">
+        <source>We know that health information is personal. That&apos;s why these files will always be secure. We take this stuff very, very seriously. </source>
+        <target state="new">我们知道健康信息是私人的。这是&apos;为什么这些文件会是安全的，这对我们非常重要。 </target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
