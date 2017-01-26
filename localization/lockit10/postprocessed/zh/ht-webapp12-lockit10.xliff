@@ -784,7 +784,7 @@
       </trans-unit>
       <trans-unit id="58" resname="r655383491" restype="string" datatype="ruby">
         <source>Based on your symptoms, Dr. %{ai_trademark} routes or &quot;triages&quot; you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</source>
-        <target state="new">根据您的症状，％{ai_trademark}医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，％{ai_trademark}医生能立即通过症状来制订一套感觉良好的治疗方案。</target>
+        <target state="new">根据您的症状，%{ai_trademark}医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，%{ai_trademark}医生能立即通过症状来制订一套感觉良好的治疗方案。</target>
       </trans-unit>
     </body>
   </file>
@@ -836,7 +836,7 @@
     <body>
       <trans-unit id="68" resname="r691446454" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered &quot;physician&quot;, trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>
-        <target state="new">％{ai_trademark}医生，是由医生训练的您私人的％{ai_serif}电力医生，根据您的症状为您私人定制治疗方案。</target>
+        <target state="new">%{ai_trademark}医生，是由医生训练的您私人的%{ai_serif}电力医生，根据您的症状为您私人定制治疗方案。</target>
       </trans-unit>
     </body>
   </file>
