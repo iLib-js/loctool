@@ -792,7 +792,7 @@
     <body>
       <trans-unit id="59" resname="r498270014" restype="string" datatype="ruby">
         <source>We’ve built the world’s first Health Operating System &#40;HOPESTM&#41;,  powering the delivery of world-class healthcare, from Query-to-Cure</source>
-        <target state="new">我们建立了世界上第一个健康操作系统（HOPESTM），从查询到治疗，推动了世界级的医疗保健</target>
+        <target state="new">我们建立了世界上第一个健康操作系统（HOPES<sup>TM</sup>），从查询到治疗，推动了世界级的医疗保健</target>
       </trans-unit>
     </body>
   </file>
