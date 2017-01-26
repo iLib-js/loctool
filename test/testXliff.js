@@ -999,6 +999,50 @@ module.exports = {
         test.done();
     },
 
+    testXliffSerializeWithXMLEscapingWithQuotes: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        var res = new ResourceString({
+            source: "Here are \"double\" and 'single' quotes.",
+            locale: "en-US",
+            key: '"double" and \'single\'',
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            origin: "source"
+        });
+        
+        x.addResource(res);
+
+        var res = new ResourceString({
+            source: "Hier zijn \"dubbel\" en 'singel' quotaties.",
+            locale: "nl-NL",
+            key: '"double" and \'single\'',
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            origin: "target"
+        });
+        
+        x.addResource(res);
+
+        test.equal(x.serialize(), 
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="&quot;double&quot; and &apos;single&apos;" restype="string" datatype="plaintext">\n' +
+                '        <source>Here are &quot;double&quot; and &apos;single&apos; quotes.</source>\n' +
+                '        <target>Hier zijn &quot;dubbel&quot; en &apos;singel&apos; quotaties.</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '</xliff>');
+       
+        test.done();
+    },
+
     testXliffSerializeWithComments: function(test) {
         test.expect(2);
 
