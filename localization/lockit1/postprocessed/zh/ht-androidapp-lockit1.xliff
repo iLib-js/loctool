@@ -68,7 +68,7 @@
     <body>
       <trans-unit id="9" resname="text_We_re_dedicated_to_taking_care_of_you__Please_consider_letting_us_know_how_we_may_make_your_experience_better_instead_of_deactivating_your_account__We_ll_do_our_best_to_make_you_happy_as_soon_as_possible____" restype="string" datatype="x-android-resource">
         <source>We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)</source>
-        <target>我们致力于为您提供关爱。请考虑如何让我们改善您的体验而不是注销您的账户。我们将一切可能使您满意:)</target>
+        <target>我们致力于为您提供关爱。请考虑如何让我们改善您的体验而不是注销您的账户。我们将尽一切可能使您满意:)</target>
       </trans-unit>
     </body>
   </file>
@@ -11095,11 +11095,11 @@
         <target>{first_name}叔叔的年龄？</target>
       </trans-unit>
       <trans-unit id="2482" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="22">
-        <source>How old is {first_name}\&apos;s patient &#40;for Professional Caregivers&#41;?</source>
+        <source>How old is {first_name}&apos;s patient &#40;for Professional Caregivers&#41;?</source>
         <target>{first_name}患者的年龄（专业护理人员）？</target>
       </trans-unit>
       <trans-unit id="2483" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="23">
-        <source>How old is {first_name}\&apos;s other?</source>
+        <source>How old is {first_name}&apos;s other?</source>
         <target>{first_name}相关其他人的年龄？</target>
       </trans-unit>
       <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="0">
@@ -11167,11 +11167,11 @@
         <target>{first_name}叔叔当时的年龄？</target>
       </trans-unit>
       <trans-unit id="2500" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="22">
-        <source>How old was {first_name}\&apos;s patient &#40;for Professional Caregivers&#41;?</source>
+        <source>How old was {first_name}&apos;s patient &#40;for Professional Caregivers&#41;?</source>
         <target>{first_name}患者当时的年龄（专业护理人员）？</target>
       </trans-unit>
       <trans-unit id="2501" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="23">
-        <source>How old was {first_name}\&apos;s other?</source>
+        <source>How old was {first_name}&apos;s other?</source>
         <target>{first_name}相关其他人当时的年龄？</target>
       </trans-unit>
       <trans-unit id="2502" resname="prime_benefits" restype="array" datatype="x-android-resource" extype="0">

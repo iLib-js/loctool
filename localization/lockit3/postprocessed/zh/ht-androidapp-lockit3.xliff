@@ -1771,11 +1771,11 @@
         <target>{first_name}叔叔的年龄？</target>
       </trans-unit>
       <trans-unit id="347" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="22">
-        <source>How old is {first_name}\&apos;s patient &#40;for Professional Caregivers&#41;?</source>
+        <source>How old is {first_name}&apos;s patient &#40;for Professional Caregivers&#41;?</source>
         <target>{first_name}患者的年龄（专业护理人员）？</target>
       </trans-unit>
       <trans-unit id="348" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="23">
-        <source>How old is {first_name}\&apos;s other?</source>
+        <source>How old is {first_name}&apos;s other?</source>
         <target>{first_name}相关其他人的年龄？</target>
       </trans-unit>
       <trans-unit id="349" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="0">
@@ -1843,11 +1843,11 @@
         <target>{first_name}叔叔当时的年龄？</target>
       </trans-unit>
       <trans-unit id="365" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="22">
-        <source>How old was {first_name}\&apos;s patient &#40;for Professional Caregivers&#41;?</source>
+        <source>How old was {first_name}&apos;s patient &#40;for Professional Caregivers&#41;?</source>
         <target>{first_name}患者当时的年龄（专业护理人员）？</target>
       </trans-unit>
       <trans-unit id="366" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="23">
-        <source>How old was {first_name}\&apos;s other?</source>
+        <source>How old was {first_name}&apos;s other?</source>
         <target>{first_name}相关其他人当时的年龄？</target>
       </trans-unit>
       <trans-unit id="367" resname="prime_benefits" restype="array" datatype="x-android-resource" extype="0">
