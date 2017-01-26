@@ -722,7 +722,7 @@
   <file original="feelgood/iPadNative/Question/Base.lproj/FGiPadSearchQuestionViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="239" resname="map-gF-nCh.text" restype="string" datatype="x-xib">
-        <source>Thanks! Need more help? I\&apos;m available for you.</source>
+        <source>Thanks! Need more help? I&apos;m available for you.</source>
         <target>谢谢！需要更多帮助吗？我现在空闲可以为您服务。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help? I&apos;m available for you.&quot;; ObjectID = &quot;map-gF-nCh&quot;;</note>
       </trans-unit>
@@ -736,7 +736,7 @@
   <file original="feelgood/iPadNative/Expert/Base.lproj/FGDoctoriPadViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="243" resname="6QR-tf-UGg.text" restype="string" datatype="x-xib">
-        <source>Dr. hasn\&apos;t created any checklists yet</source>
+        <source>Dr. hasn&apos;t created any checklists yet</source>
         <target>医生还没有创建任何清单</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Dr. hasn&apos;t created any checklists yet&quot;; ObjectID = &quot;6QR-tf-UGg&quot;;</note>
       </trans-unit>
@@ -745,7 +745,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGVideoUnavailableRetryView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="247" resname="i78-6R-yDg.text" restype="string" datatype="x-xib">
-        <source>We\&apos;re having trouble establishing a video or audio connection on your device. Please continue by chat or try again.</source>
+        <source>We&apos;re having trouble establishing a video or audio connection on your device. Please continue by chat or try again.</source>
         <target>我们无法在您的设备上建立视频或音频连接。请继续聊天或再次尝试</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re having trouble establishing a video or audio connection on your device. Please continue by chat or try again.&quot;; ObjectID = &quot;i78-6R-yDg&quot;;</note>
       </trans-unit>
@@ -768,7 +768,7 @@
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get the right care for your needs -\nconsult a specialist today!&quot;; ObjectID = &quot;YfW-LA-phA&quot;;</note>
       </trans-unit>
       <trans-unit id="267" resname="jan-BE-S41.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\&apos;t get the right prescription</source>
+        <source>Can&apos;t get the right prescription</source>
         <target>没有得到合适的处方</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t get the right prescription&quot;; ObjectID = &quot;jan-BE-S41&quot;;</note>
       </trans-unit>
@@ -782,7 +782,7 @@
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get the right care for your needs -\nconsult a specialist today!&quot;; ObjectID = &quot;FD4-kh-UTk&quot;;</note>
       </trans-unit>
       <trans-unit id="273" resname="Gql-Yp-fzd.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\&apos;t get the right prescription</source>
+        <source>Can&apos;t get the right prescription</source>
         <target>没有得到合适的处方</target>
         <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t get the right prescription&quot;; ObjectID = &quot;Gql-Yp-fzd&quot;;</note>
       </trans-unit>
@@ -791,8 +791,8 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGSideMenuViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="282" resname="h4p-4j-JTj.text" restype="string" datatype="x-xib">
-        <source>0\&apos; &#40;0.0m&#41;</source>
-        <target>0\&apos; &#40;0.0m&#41;</target>
+        <source>0&apos; &#40;0.0m&#41;</source>
+        <target>0&apos; &#40;0.0m&#41;</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;0&apos; &#40;0.0m&#41;&quot;; ObjectID = &quot;h4p-4j-JTj&quot;;</note>
       </trans-unit>
     </body>
@@ -805,7 +805,7 @@
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help?\nDoctors are online ready to help.&quot;; ObjectID = &quot;8J9-lv-qdo&quot;;</note>
       </trans-unit>
       <trans-unit id="285" resname="ghm-jn-UVw.text" restype="string" datatype="x-xib">
-        <source>Thanks! Need more help? I\&apos;m available for you.</source>
+        <source>Thanks! Need more help? I&apos;m available for you.</source>
         <target>谢谢！需要更多帮助吗？我现在空闲可以为您服务。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Thanks! Need more help? I&apos;m available for you.&quot;; ObjectID = &quot;ghm-jn-UVw&quot;;</note>
       </trans-unit>
@@ -823,7 +823,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGSearchDoctorsProfileViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="293" resname="Lgu-j4-Xkx.text" restype="string" datatype="x-xib">
-        <source>Dr. hasn\&apos;t created any checklists yet</source>
+        <source>Dr. hasn&apos;t created any checklists yet</source>
         <target>医生还没有创建任何清单</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Dr. hasn&apos;t created any checklists yet&quot;; ObjectID = &quot;Lgu-j4-Xkx&quot;;</note>
       </trans-unit>
@@ -832,7 +832,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGGenericAppRatingViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="309" resname="5em-us-DCA.text" restype="string" datatype="x-xib">
-        <source>Please let us know how we\&apos;re doing...</source>
+        <source>Please let us know how we&apos;re doing...</source>
         <target>请告诉我们，我们如何...</target>
         <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Please let us know how we&apos;re doing...&quot;; ObjectID = &quot;5em-us-DCA&quot;;</note>
       </trans-unit>
@@ -846,7 +846,7 @@
   <file original="feelgood/ViewControllers/Prime Trial/Base.lproj/FGPrimeTrialPaymentViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="325" resname="VcR-do-QUz.text" restype="string" datatype="x-xib">
-        <source>I agree to the HealthTap\&apos;s</source>
+        <source>I agree to the HealthTap&apos;s</source>
         <target>我同意HealthTap的</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;I agree to the HealthTap&apos;s&quot;; ObjectID = &quot;VcR-do-QUz&quot;;</note>
       </trans-unit>
@@ -864,7 +864,7 @@
   <file original="feelgood/Classes/UI/Base.lproj/FGConnectionLostView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="334" resname="vQi-Zb-3ut.text" restype="string" datatype="x-xib">
-        <source>We\&apos;re sorry but there seems to be a problem with your connection.</source>
+        <source>We&apos;re sorry but there seems to be a problem with your connection.</source>
         <target>我们很抱歉但是您的连接似乎有问题。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re sorry but there seems to be a problem with your connection.&quot;; ObjectID = &quot;vQi-Zb-3ut&quot;;</note>
       </trans-unit>
@@ -873,7 +873,7 @@
   <file original="feelgood/Classes/UI/TableViewCells/Base.lproj/FGChatReferNonHTDoctorCellTableViewCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="340" resname="JB0-J5-1sj.text" restype="string" datatype="x-xib">
-        <source>I\&apos;d like to refer you to:</source>
+        <source>I&apos;d like to refer you to:</source>
         <target>我希望推荐您到：</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;I&apos;d like to refer you to:&quot;; ObjectID = &quot;JB0-J5-1sj&quot;;</note>
       </trans-unit>
@@ -882,7 +882,7 @@
   <file original="feelgood/Classes/UI/TableViewCells/Base.lproj/FGChatPodiatristCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="341" resname="6Kt-vE-Jwg.text" restype="string" datatype="x-xib">
-        <source>I\&apos;d like to refer you to a Podiatrist.</source>
+        <source>I&apos;d like to refer you to a Podiatrist.</source>
         <target>我希望把您推荐到一位足科医生。</target>
         <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;I&apos;d like to refer you to a Podiatrist.&quot;; ObjectID = &quot;6Kt-vE-Jwg&quot;;</note>
       </trans-unit>
@@ -900,7 +900,7 @@
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGInviteExternalDoctorViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="352" resname="c8b-7E-xsB.placeholder" restype="string" datatype="x-xib">
-        <source>Your doctor\&apos;s name</source>
+        <source>Your doctor&apos;s name</source>
         <target>您医生的姓名</target>
         <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Your doctor&apos;s name&quot;; ObjectID = &quot;c8b-7E-xsB&quot;;</note>
       </trans-unit>

@@ -42828,8 +42828,8 @@
         <source>To invite {doctor_detail} to privately video chat with you, please share your email:</source>
         <target state="translated">要邀请{doctor_detail}与您进行私人视频聊天，请分享您的电子邮件：</target>
       </trans-unit>
-      <trans-unit id="9915" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\&apos;ll get to work." restype="string" datatype="javascript">
-        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\&apos;ll get to work.</source>
+      <trans-unit id="9915" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get to work." restype="string" datatype="javascript">
+        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get to work.</source>
         <target state="translated">我是{doctor_name}医生，HealthTap领先的医疗专家，将确保您能为您的问题得到最好的回答。我的同事和我只需要一些关于您的更多细节，然后我们将开始工作。</target>
       </trans-unit>
       <trans-unit id="9916" resname="To schedule a virtual appointment with {doctor_value} and receive your consult notes, please share your email:" restype="string" datatype="javascript">
@@ -42840,8 +42840,8 @@
         <source>To invite {doctor_value} to accept your request for a virtual appointment, please share your email:</source>
         <target state="translated">要邀请{doctor_value}接受您的预约约会请求，请分享您的电子邮件：</target>
       </trans-unit>
-      <trans-unit id="9918" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\&apos;ll get you scheduled." restype="string" datatype="javascript">
-        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\&apos;ll get you scheduled.</source>
+      <trans-unit id="9918" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get you scheduled." restype="string" datatype="javascript">
+        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get you scheduled.</source>
         <target state="translated">我是{doctor_name}医生，HealthTap领先的医疗专家，将确保您能为您的问题得到最好的回答。我的同事和我只需要一些关于您的更多细节，然后我们将安排。</target>
       </trans-unit>
       <trans-unit id="9919" resname="Where should we send the doctor&apos;s response?" restype="string" datatype="javascript">

@@ -876,7 +876,7 @@
         <target state="translated">误区：</target>
       </trans-unit>
       <trans-unit id="226" resname="r322108465" restype="string" datatype="x-android-resource">
-        <source>agreed with {author_name}\&apos;s tip on \n{topic_name}</source>
+        <source>agreed with {author_name}&apos;s tip on \n{topic_name}</source>
         <target state="translated">同意{author_name}在\n{topic_name}的小贴士</target>
         <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
@@ -1585,7 +1585,7 @@
         <target state="translated">添加药物</target>
       </trans-unit>
       <trans-unit id="417" resname="r33874383" restype="string" datatype="x-android-resource">
-        <source>{name}\&apos;s</source>
+        <source>{name}&apos;s</source>
         <target state="translated">{name}的</target>
       </trans-unit>
       <trans-unit id="418" resname="r221517291" restype="string" datatype="x-android-resource">
@@ -1614,7 +1614,7 @@
         <target state="translated">您完成了！</target>
       </trans-unit>
       <trans-unit id="424" resname="r363844654" restype="string" datatype="x-android-resource">
-        <source>{approver_name} agreed with {author_name}\&apos;s checklist</source>
+        <source>{approver_name} agreed with {author_name}&apos;s checklist</source>
         <target state="translated">{approver_name}同意{author_name}的清单</target>
       </trans-unit>
       <trans-unit id="425" resname="r776974405" restype="string" datatype="x-android-resource">
@@ -1646,7 +1646,7 @@
         <target state="translated">{doctor_name}已回答</target>
       </trans-unit>
       <trans-unit id="433" resname="r620253570" restype="string" datatype="x-android-resource">
-        <source>{agreer_name} agrees with {answerer_name}\&apos;s answer</source>
+        <source>{agreer_name} agrees with {answerer_name}&apos;s answer</source>
         <target state="translated">{agreer_name}同意{answerer_name}的回答</target>
       </trans-unit>
       <trans-unit id="434" resname="r749540521" restype="string" datatype="x-android-resource">
@@ -1654,7 +1654,7 @@
         <target state="translated">{name}回答</target>
       </trans-unit>
       <trans-unit id="435" resname="r58726541" restype="string" datatype="x-android-resource">
-        <source>{commenter_name} commented on {answerer_name}\&apos;s answer</source>
+        <source>{commenter_name} commented on {answerer_name}&apos;s answer</source>
         <target state="translated">{commenter_name}评论了{answerer_name}的回答</target>
       </trans-unit>
       <trans-unit id="436" resname="r795123293" restype="string" datatype="x-android-resource">
@@ -1699,7 +1699,7 @@
         <target state="translated">{first_name}还健在吗?</target>
       </trans-unit>
       <trans-unit id="446" resname="r914415647" restype="string" datatype="x-android-resource">
-        <source>Does {first_name}\&apos;s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
+        <source>Does {first_name}&apos;s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
         <target state="translated">{first_name}健在的祖父母、父母或兄弟姐妹有什么重大医学病症吗？（危及生命还是其他情况？）</target>
       </trans-unit>
       <trans-unit id="447" resname="r685531918" restype="string" datatype="x-android-resource">
@@ -1728,7 +1728,7 @@
         <target state="translated">您的身高和体重？</target>
       </trans-unit>
       <trans-unit id="453" resname="r7023058" restype="string" datatype="x-android-resource">
-        <source>What is {first_name}\&apos;s height and weight?</source>
+        <source>What is {first_name}&apos;s height and weight?</source>
         <target state="translated">{first_name}的身高和体重？</target>
       </trans-unit>
       <trans-unit id="454" resname="r1970103" restype="string" datatype="x-android-resource">
@@ -1736,7 +1736,7 @@
         <target state="translated">他与您的关系是什么？</target>
       </trans-unit>
       <trans-unit id="455" resname="r571031941" restype="string" datatype="x-android-resource">
-        <source>What is {first_name}\&apos;s relationship to you</source>
+        <source>What is {first_name}&apos;s relationship to you</source>
         <target state="translated">{first_name}与您的关系是什么？</target>
       </trans-unit>
       <trans-unit id="456" resname="r565044854" restype="string" datatype="x-android-resource">
@@ -1757,7 +1757,7 @@
         <note annotates="source">This is an instruction message for patients to share their obstetric or pregnancy history</note>
       </trans-unit>
       <trans-unit id="460" resname="r77105519" restype="string" datatype="x-android-resource">
-        <source>Please share {first_name}\&apos;s obstetrics/pregnancy history</source>
+        <source>Please share {first_name}&apos;s obstetrics/pregnancy history</source>
         <target state="translated">请分享{first_name}的分娩/怀孕史</target>
       </trans-unit>
       <trans-unit id="461" resname="r230064504" restype="string" datatype="x-android-resource">
@@ -1765,7 +1765,7 @@
         <target state="translated">当前{first_name}是否怀孕？</target>
       </trans-unit>
       <trans-unit id="462" resname="r641804729" restype="string" datatype="x-android-resource">
-        <source>What\&apos;s your name?</source>
+        <source>What&apos;s your name?</source>
         <target state="translated">您的姓名?</target>
       </trans-unit>
       <trans-unit id="464" resname="r1049343603" restype="string" datatype="x-android-resource">
@@ -1818,7 +1818,7 @@
         <target state="translated">您的民族？</target>
       </trans-unit>
       <trans-unit id="476" resname="r1005343913" restype="string" datatype="x-android-resource">
-        <source>What is {first_name}\&apos;s ethnicity?</source>
+        <source>What is {first_name}&apos;s ethnicity?</source>
         <target state="translated">{first_name}的民族？</target>
       </trans-unit>
       <trans-unit id="477" resname="r546951572" restype="string" datatype="x-android-resource">
@@ -1864,7 +1864,7 @@
         <target state="translated">您如何分类您的饮酒量？</target>
       </trans-unit>
       <trans-unit id="487" resname="r153507971" restype="string" datatype="x-android-resource">
-        <source>How would you classify {first_name}\&apos;s consumption of alcohol?</source>
+        <source>How would you classify {first_name}&apos;s consumption of alcohol?</source>
         <target state="translated">{first_name}如何分类您的饮酒量？</target>
       </trans-unit>
       <trans-unit id="488" resname="r884770932" restype="string" datatype="x-android-resource">
@@ -2010,7 +2010,7 @@
         <target state="translated">邮箱地址</target>
       </trans-unit>
       <trans-unit id="522" resname="r561637973" restype="string" datatype="x-android-resource">
-        <source>What\&apos;s your email?</source>
+        <source>What&apos;s your email?</source>
         <target state="translated">您的邮箱?</target>
       </trans-unit>
       <trans-unit id="523" resname="r863217688" restype="string" datatype="x-android-resource">
@@ -2042,7 +2042,7 @@
         <target state="translated">申请码</target>
       </trans-unit>
       <trans-unit id="530" resname="r141446606" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re sorry to see you downgrade!</source>
+        <source>We&apos;re sorry to see you downgrade!</source>
         <target state="translated">我们很抱歉对您的降级！</target>
       </trans-unit>
       <trans-unit id="531" resname="r151255723" restype="string" datatype="x-android-resource">
