@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="408" resname="The compensation report from {start_date} to {end_date} is being generated. \\n			It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
         <source>The compensation report from {start_date} to {end_date} is being generated. \n It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="new">The compensation report from {start_date} to {end_date} is being generated. \n It is gonna take a while. You will get an email once it is ready!</target>
+        <target state="new">正在生成{start_date}到{end_date}的收入报告。\n 这还需要一会儿，完成后您会收到一封邮件</target>
       </trans-unit>
     </body>
   </file>
@@ -20,7 +20,7 @@
     <body>
       <trans-unit id="409" resname="Build your professional network on HealthTap,&lt;br&gt;and stay connected with trusted colleagues" restype="string" datatype="javascript">
         <source>Build your professional network on HealthTap,&lt;br&gt;and stay connected with trusted colleagues</source>
-        <target state="new">Build your professional network on HealthTap,&lt;br&gt;and stay connected with trusted colleagues</target>
+        <target state="new">在HealthTap建立您的专业脉络，&lt;br&gt;并与可信赖的同行保持联系。</target>
       </trans-unit>
     </body>
   </file>
@@ -28,7 +28,7 @@
     <body>
       <trans-unit id="410" resname="Your shift:&lt;br&gt; {shift}" restype="string" datatype="javascript">
         <source>Your shift:&lt;br&gt; {shift}</source>
-        <target state="new">Your shift:&lt;br&gt; {shift}</target>
+        <target state="new">你的坐诊时间:&lt;br&gt; {shift}</target>
       </trans-unit>
     </body>
   </file>
@@ -36,7 +36,7 @@
     <body>
       <trans-unit id="411" resname="Shift cancellations for:&lt;br&gt; {shiftText}" restype="string" datatype="javascript">
         <source>Shift cancellations for:&lt;br&gt; {shiftText}</source>
-        <target state="new">Shift cancellations for:&lt;br&gt; {shiftText}</target>
+        <target state="new">取消坐诊因为:&lt;br&gt; {shiftText}</target>
       </trans-unit>
     </body>
   </file>
@@ -44,7 +44,7 @@
     <body>
       <trans-unit id="412" resname="We just sent you a text to verify your phone number,&lt;br&gt; {span_tag_start}{span_tag_end}" restype="string" datatype="javascript">
         <source>We just sent you a text to verify your phone number,&lt;br&gt; {span_tag_start}{span_tag_end}</source>
-        <target state="new">We just sent you a text to verify your phone number,&lt;br&gt; {span_tag_start}{span_tag_end}</target>
+        <target state="new">我们刚发了一个短信来确认您的电话号码，&lt;br&gt; {span_tag_start}{span_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -52,7 +52,7 @@
     <body>
       <trans-unit id="413" resname="This counts the number of notes that we&apos;ve received from users thanking our doctors for saving their lives. " restype="string" datatype="javascript">
         <source>This counts the number of notes that we&apos;ve received from users thanking our doctors for saving their lives. </source>
-        <target state="new">This counts the number of notes that we&apos;ve received from users thanking our doctors for saving their lives. </target>
+        <target state="new">这个是我们收到的感谢医生拯救他们生命的感谢信总数</target>
       </trans-unit>
     </body>
   </file>
@@ -60,7 +60,7 @@
     <body>
       <trans-unit id="414" resname="{link_tag_start}{name}&apos;s Virtual Practice{link_tag_end}" restype="string" datatype="javascript">
         <source>{link_tag_start}{name}&apos;s Virtual Practice{link_tag_end}</source>
-        <target state="new">{link_tag_start}{name}&apos;s Virtual Practice{link_tag_end}</target>
+        <target state="new">{link_tag_start}{name}&apos;的在线问诊{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -68,7 +68,7 @@
     <body>
       <trans-unit id="415" resname="Don&apos;t have an account? " restype="string" datatype="javascript">
         <source>Don&apos;t have an account? </source>
-        <target state="new">Don&apos;t have an account? </target>
+        <target state="new">没有账户? </target>
       </trans-unit>
     </body>
   </file>
@@ -77,8 +77,8 @@
       <trans-unit id="416" resname="1&#35;There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\\n            &#35;There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
         <source>1&#35;There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\
             &#35;There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
-        <target state="new">1&#35;There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\
-            &#35;There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</target>
+        <target state="new">1&#35;这里有 &lt;b&gt;{n}更多解答&lt;/b&gt; 医生为这个问题|\
+            &#35;这里有 &lt;b&gt;{n} 更多解答&lt;/b&gt; 医生为这个问题！</target>
       </trans-unit>
     </body>
   </file>
@@ -86,7 +86,7 @@
     <body>
       <trans-unit id="417" resname="Currently in {name}&apos;s health Profile:" restype="string" datatype="javascript">
         <source>Currently in {name}&apos;s health Profile:</source>
-        <target state="new">Currently in {name}&apos;s health Profile:</target>
+        <target state="new">现在在{name}的健康档案:</target>
       </trans-unit>
     </body>
   </file>
@@ -94,11 +94,11 @@
     <body>
       <trans-unit id="418" resname="{name}&apos;s Activity" restype="string" datatype="javascript">
         <source>{name}&apos;s Activity</source>
-        <target state="new">{name}&apos;s Activity</target>
+        <target state="new">{name}的活动</target>
       </trans-unit>
       <trans-unit id="419" resname="Update {name}&apos;s profile now" restype="string" datatype="javascript">
         <source>Update {name}&apos;s profile now</source>
-        <target state="new">Update {name}&apos;s profile now</target>
+        <target state="new">立即更新{name}的档案</target>
       </trans-unit>
     </body>
   </file>
@@ -106,7 +106,7 @@
     <body>
       <trans-unit id="420" resname="{name}&apos;s Virtual Practice" restype="string" datatype="javascript">
         <source>{name}&apos;s Virtual Practice</source>
-        <target state="new">{name}&apos;s Virtual Practice</target>
+        <target state="new">{name}的在线问诊</target>
       </trans-unit>
     </body>
   </file>
@@ -117,14 +117,13 @@
                    our minimum requirement for consults. Please try again with a more stable network.\
                    &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \
                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
-        <target state="new">We&apos;re sorry, but it seems your internet connection does not meet\
-                   our minimum requirement for consults. Please try again with a more stable network.\
-                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \
-                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
+        <target state="new">非常抱歉，您的网络连接似乎不符合我们对于咨询的最低要求,请在稳定的网络下再次尝试\
+                   &lt;br&gt;&lt;br&gt;如果需要帮助，您可以通过{link_tag_start}expertsupport@healthtap.com{link_tag_end}联系我们 
+                   </target>
       </trans-unit>
       <trans-unit id="422" resname="{name}&apos;s connect request has been removed." restype="string" datatype="javascript">
         <source>{name}&apos;s connect request has been removed.</source>
-        <target state="new">{name}&apos;s connect request has been removed.</target>
+        <target state="new">{name}的互联请求已被移除。</target>
       </trans-unit>
     </body>
   </file>
@@ -132,7 +131,7 @@
     <body>
       <trans-unit id="423" resname="1&#35;1 doctor agrees|&#35;{count} doctors agree" restype="string" datatype="javascript">
         <source>1&#35;1 doctor agrees|&#35;{count} doctors agree</source>
-        <target state="new">1&#35;1 doctor agrees|&#35;{count} doctors agree</target>
+        <target state="new">1&#35;1 个医生同意|&#35;{count} 个医生同意</target>
       </trans-unit>
     </body>
   </file>
@@ -140,11 +139,11 @@
     <body>
       <trans-unit id="427" resname="Please share {first_name}&apos;s obstetric / pregnancy history" restype="string" datatype="javascript">
         <source>Please share {first_name}&apos;s obstetric / pregnancy history</source>
-        <target state="new">Please share {first_name}&apos;s obstetric / pregnancy history</target>
+        <target state="new">请分享{first_name}的生产/怀孕史</target>
       </trans-unit>
       <trans-unit id="428" resname="Please share this person&apos;s obstetric / pregnancy history?" restype="string" datatype="javascript">
         <source>Please share this person&apos;s obstetric / pregnancy history?</source>
-        <target state="new">Please share this person&apos;s obstetric / pregnancy history?</target>
+        <target state="new">请分享此人的生产/怀孕史</target>
       </trans-unit>
     </body>
   </file>
@@ -152,15 +151,15 @@
     <body>
       <trans-unit id="429" resname="{height_ft}&apos;{height_in}&quot; &#40;{height_meters}m&#41;" restype="string" datatype="javascript">
         <source>{height_ft}&apos;{height_in}&quot; &#40;{height_meters}m&#41;</source>
-        <target state="new">{height_ft}&apos;{height_in}&quot; &#40;{height_meters}m&#41;</target>
+        <target state="new">{height_ft}&apos;{height_in}&quot; &#40;{height_meters}米&#41;</target>
       </trans-unit>
       <trans-unit id="430" resname="{weight_kilograms}kg" restype="string" datatype="javascript">
         <source>{weight_kilograms}kg</source>
-        <target state="new">{weight_kilograms}kg</target>
+        <target state="new">{weight_kilograms}公斤</target>
       </trans-unit>
       <trans-unit id="431" resname="{weight_lbs}lbs &#40;{weight_kilograms}kg&#41;" restype="string" datatype="javascript">
-        <source>{weight_lbs}lbs &#40;{weight_kilograms}kg&#41;</source>
-        <target state="new">{weight_lbs}lbs &#40;{weight_kilograms}kg&#41;</target>
+        <source>{weight_lbs} &#40;{weight_kilograms}kg&#41;</source>
+        <target state="new">{weight_lbs}磅 &#40;{weight_kilograms}公斤&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -168,7 +167,7 @@
     <body>
       <trans-unit id="432" resname="1&#35;&lt;a class=&apos;agrees&apos;&gt;1 doctor&lt;/a&gt; agrees|&#35;&lt;a class=&apos;agrees&apos;&gt;{n} doctors&lt;/a&gt; agree" restype="string" datatype="javascript">
         <source>1&#35;&lt;a class=&apos;agrees&apos;&gt;1 doctor&lt;/a&gt; agrees|&#35;&lt;a class=&apos;agrees&apos;&gt;{n} doctors&lt;/a&gt; agree</source>
-        <target state="new">1&#35;&lt;a class=&apos;agrees&apos;&gt;1 doctor&lt;/a&gt; agrees|&#35;&lt;a class=&apos;agrees&apos;&gt;{n} doctors&lt;/a&gt; agree</target>
+        <target state="new">1&#35;&lt;a class=&apos;agrees&apos;&gt;1 名医生&lt;/a&gt; 同意|&#35;&lt;a class=&apos;agrees&apos;&gt;{n} 名医生&lt;/a&gt; 同意</target>
       </trans-unit>
     </body>
   </file>
@@ -176,7 +175,7 @@
     <body>
       <trans-unit id="433" resname="Your {expertType}&apos;s Name" restype="string" datatype="javascript">
         <source>Your {expertType}&apos;s Name</source>
-        <target state="new">Your {expertType}&apos;s Name</target>
+        <target state="new">您的{expertType}的名字</target>
       </trans-unit>
     </body>
   </file>
