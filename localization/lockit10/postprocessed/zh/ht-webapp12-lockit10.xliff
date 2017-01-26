@@ -790,7 +790,7 @@
   </file>
   <file original="app/views/static_pages/home/_hopes_intro.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="59" resname="r498270014" restype="string" datatype="ruby">
+      <trans-unit id="59" resname="r494573058" restype="string" datatype="ruby">
         <source>We’ve built the world’s first Health Operating System &#40;HOPES&trade;&#41;,  powering the delivery of world-class healthcare, from Query-to-Cure</source>
         <target state="new">我们建立了世界上第一个健康操作系统（HOPES&trade;），从查询到治疗，推动了世界级的医疗保健</target>
       </trans-unit>
