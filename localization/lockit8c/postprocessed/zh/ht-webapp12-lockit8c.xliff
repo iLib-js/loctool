@@ -5435,7 +5435,7 @@
       </trans-unit>
       <trans-unit id="874" resname="r268949204" restype="string" datatype="ruby">
         <source>This App Will Change Everything About Healthcare</source>
-        <target state="translated">这款应用程序将改变医疗保健的方方方面面</target>
+        <target state="translated">这款应用程序将改变医疗保健的方方面面</target>
       </trans-unit>
       <trans-unit id="875" resname="r772161129" restype="string" datatype="ruby">
         <source>Startups Bring Capital, Innovation to Online Health Services</source>
@@ -38098,7 +38098,7 @@
     <body>
       <trans-unit id="8899" resname="Content on HealthTap &#40;including answers&#41; should not be used for medical advice, diagnosis, or treatment, and interactions on HealthTap do not create a doctor-patient relationship. Never disregard or delay professional medical advice in person because of anything on HealthTap. Call your doctor or {emergency_num} if you think you may have a medical emergency." restype="string" datatype="javascript">
         <source>Content on HealthTap &#40;including answers&#41; should not be used for medical advice, diagnosis, or treatment, and interactions on HealthTap do not create a doctor-patient relationship. Never disregard or delay professional medical advice in person because of anything on HealthTap. Call your doctor or {emergency_num} if you think you may have a medical emergency.</source>
-        <target state="translated">HealthTap上的内容（包括回答）不能作为医嘱、诊断或治疗，HealthTap上的互动也不算建立医患关系。不能因为HealthTap上的任何内容而忽视或延迟当面的专业医疗建议。如果您认为可能是紧急的医疗事故，打电话给您的医生或{emergency_extension}</target>
+        <target state="translated">HealthTap上的内容（包括回答）不能作为医嘱、诊断或治疗，HealthTap上的互动也不算建立医患关系。不能因为HealthTap上的任何内容而忽视或延迟当面的专业医疗建议。如果您认为可能是紧急的医疗事故，打电话给您的医生或{emergency_num}</target>
       </trans-unit>
     </body>
   </file>

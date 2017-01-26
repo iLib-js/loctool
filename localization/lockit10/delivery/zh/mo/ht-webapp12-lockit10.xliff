@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/models/person_notification.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="262" resname="r443005047" restype="string" datatype="ruby">
+        <source>%{person}, %{specialty} commented on your answer to a question &quot;%{q_text}&quot;. See the comment.</source>
+        <target state="new">%{person}, %{specialty} 评论了你对问题&quot;%{q_text}&quot;的回答。请看评论。</target>
+      </trans-unit>
+      <trans-unit id="263" resname="r323108680" restype="string" datatype="ruby">
+        <source>You&apos;re leading the way! Your answer to &quot;%{q_text}&quot; is now the Top Answer! Keep it up!</source>
+        <target state="new">你一路领先！您对问题 &quot;%{q_text}&quot; 的回答现在已经是最佳答案！请继续保持！</target>
+      </trans-unit>
+      <trans-unit id="264" resname="r198019584" restype="string" datatype="ruby">
+        <source>%{person} &#40;%{specialty}&#41; had something to add to %{other_person}&apos;s answer to your question &quot;%{q_text} &quot; See the comment.</source>
+        <target state="new">%{person} &#40;%{specialty}&#41; 给你的问题 &quot;%{q_text} &quot; 上%{other_person}的回答添加了一个评论。看评论。</target>
+      </trans-unit>
+      <trans-unit id="265" resname="r483003784" restype="string" datatype="ruby">
+        <source>Congrats! You have earned a medal! %{name}: %{trigger}Unlock the %{next_name} medal next. Learn How &amp;raquo;</source>
+        <target state="new">恭喜! 你获得了一个奖牌! %{name}: %{trigger}解锁下一个 %{next_name} 奖牌. 学习如何继续 &amp;raquo;</target>
+      </trans-unit>
+      <trans-unit id="266" resname="r598561090" restype="string" datatype="ruby">
+        <source>Congrats! You have earned a medal! %{name}: %{trigger}</source>
+        <target state="new">恭喜! 你获得了一个奖牌! %{name}: %{trigger}</target>
+      </trans-unit>
+      <trans-unit id="267" resname="r881943152" restype="string" datatype="ruby">
+        <source>Another doctor in our medical expert network thinks you&apos;re right. %{person} &#40;%{specialty}%{place}&#41; agrees with your answer to &quot;%{q_text}&quot;. See the answer.</source>
+        <target state="new">我们的医疗专家网络中的另一个医生认同了你的观点。 %{person} &#40;%{specialty}%{place}&#41; 赞同你对于问题 &quot;%{q_text}&quot;的回答。 看回答。</target>
+      </trans-unit>
+      <trans-unit id="268" resname="r805442684" restype="string" datatype="ruby">
+        <source>A HealthTap Scholar thinks you&apos;re right. %{person} &#40;%{specialty}%{place}&#41; agrees with your answer to &quot;%{q_text}&quot;. See the answer.</source>
+        <target state="new">我们的医疗专家网络中的另一个学者认同了你的观点。 %{person} &#40;%{specialty}%{place}&#41; 赞同你对于问题 &quot;%{q_text}&quot;的回答。看回答。</target>
+      </trans-unit>
+      <trans-unit id="269" resname="r1063646532" restype="string" datatype="ruby">
+        <source>Good news! %{person} agrees with %{answerer}&apos;s answer to a question you asked &quot;%{q_text}&quot;. See the answer.</source>
+        <target state="new">Good news! %{person} agrees with %{answerer}&apos;s answer to a question you asked &quot;%{q_text}&quot;. See the answer.</target>
+        <target state="new">好消息! %{person} 赞同了您问的问题&quot;%{q_text}&quot;中 %{answerer}的回答。看回答。</target>
+      </trans-unit>
+      <trans-unit id="270" resname="r1050560191" restype="string" datatype="ruby">
+        <source>Good news! %{person} agrees with %{answerer}&apos;s answer to a question you&apos;re interested in &quot;%{q_text}&quot;. See the answer.</source>
+        <target state="new">好消息! %{person} 赞同了您感兴趣的问题&quot;%{q_text}&quot;中 %{answerer}的回答。看回答。 See the answer.</target>
+      </trans-unit>
+      <trans-unit id="271" resname="r536296903" restype="string" datatype="ruby">
+        <source>%{person} sent you a thank you note for answering &quot;%{q_text}&quot; See the thank you note.</source>
+        <target state="new">%{person} 很感谢你回答了问题&quot;%{q_text}&quot;，并且给你发送了感谢信。看感谢信。</target>
+      </trans-unit>
+      <trans-unit id="272" resname="r143554789" restype="string" datatype="ruby">
+        <source>%{expert} just answered a question you asked &quot;%{q_text}&quot;. Go check it out.</source>
+        <target state="new">%{expert}刚刚回答了你的问题&quot;%{q_text}&quot;。去看看吧。</target>
+      </trans-unit>
+      <trans-unit id="273" resname="r739190513" restype="string" datatype="ruby">
+        <source>%{expert} just answered a question you&apos;re interested in &quot;%{q_text}&quot;. Go check it out.</source>
+        <target state="new">%{expert}刚刚回答了你感兴趣的问题&quot;%{q_text}&quot;。去看看吧。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person/third_party.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="274" resname="r889985342" restype="string" datatype="ruby">
+        <source>I found %{doctor_name}&apos;s answer really helpful, and thought you might too:: &quot;%{question}&quot;</source>
+        <target state="new">我发现 %{doctor_name}的回答非常有帮助, 感觉你应该会感兴趣: &quot;%{question}&quot;</target>
+      </trans-unit>
+      <trans-unit id="275" resname="r219320126" restype="string" datatype="ruby">
+        <source>I found this doctor answer really helpful, and thought you might too: &quot;%{question_name}&quot;</source>
+        <target state="new">I found this doctor answer really helpful, and thought you might too: &quot;%{question_name}&quot;</target>
+      </trans-unit>
+      <trans-unit id="276" resname="r325377029" restype="string" datatype="ruby">
+        <source>I thought you like to check out %{goal} on HealthTap. HealthTap has thousands of answers, articles, tips, and checklists designed to help you with this goal, so you can smile and feel good all the time!</source>
+        <target state="new">我想你喜欢在HealthTap上查看%{goal}。HealthTap有数以千计的答案，文章，提示和检查表，旨在帮助您实现这一目标，所以你可以一直微笑和感觉良好！</target>
+      </trans-unit>
+      <trans-unit id="277" resname="r6491183" restype="string" datatype="ruby">
+        <source>I wanted to give you a code that will give you $%{amount} off on a subscription to HealthTap Prime, an exciting new digital health service that gives you unlimited Virtual Consults with top doctors 24/7 via video, voice, or text chat from any PC or mobile device. Use my code %{promo_code} and get $%{amount} in credits toward your HealthTap Prime subscription! With HealthTap Prime, you also get: Total peace of mind, since you can consult a doctor anytime night or day on any issue Prioritized answers to any health question you ask through HealthTap’s free service Health checklists and tips customized just for you Unlimited access to the world’s leading knowledgebase of doctor-created health information Total confidentiality, with HIPAA-secure systems that safeguard your privacySubscribe today for ultimate peace of mind!</source>
+        <target state="new">我想和你分享一个可以用来订阅HealthTap Prime并且给你%{amount}的优惠的优惠码，这是一个令人兴奋的新数字健康服务，给你无限的与顶级医生24/7通过视频，语音， 或从任何PC或移动设备的文本聊天的虚拟咨询。用我的优惠码%{promo_code}来得到$%{amount}的积分到你的HealthTap Prime订阅！使用HealthTap Prime，您还可以：完全安心，因为您可以任何时间随时咨询医生，无论白天还是夜晚。通过HealthTap的免费服务提出的任何健康问题的可以被标注优先回答。为您定制健康检查表和提示。世界领先的医生创建的健康信息知识库全面保密，使用HIPAA安全系统，保护您的隐私，立即订阅终极安心！</target>
+      </trans-unit>
+      <trans-unit id="278" resname="r206263461" restype="string" datatype="ruby">
+        <source>HealthTap is an exciting new service for improving your health and well-being. You can learn more about your health by getting trusted health information 24/7 from me and more than 63,000 of my colleagues—who are some of the top doctors in the United States. You can get help by requesting Virtual Consults through HealthTap Prime and Virtual Appointments through HealthTap Concierge. You can also take action by following the tips and checklists I created along with my colleagues. All this helps you focus more on your health and well-being so you feel good all the time!</source>
+        <target state="new">HealthTap是一个以改善你的健康和福祉的令人兴奋的新服务。您可以从我和超过63,000名同事（他们是美国的一些顶级医生）全天候获取可信赖的健康信息，从而了解您的健康状况。 您可以通过HealthTap Prime和在线预约过HealthTap Concierge请求Virtual Consults获取帮助。您也可以按照我与同事一起创建的提示和检查表采取行动。 所有这些都有助于你更多地关注你的健康和幸福，所以你总是感觉良好！</target>
+      </trans-unit>
+      <trans-unit id="279" resname="r1070399980" restype="string" datatype="ruby">
+        <source>I&apos;m delighted to share with you a special keycode: %{key_code}, which will help you connect with me as my patient! Schedule appointments to video or text chat me live, or message me any time via my Virtual Practice!</source>
+        <target state="new">I&apos;m delighted to share with you a special keycode: %{key_code}, which will help you connect with me as my patient! Schedule appointments to video or text chat me live, or message me any time via my Virtual Practice!</target>
+        <target state="new">我很高兴与您分享一个特殊的密码：%{key_code}，这将帮助您作为我的病人与我联系！安排预约视频或文字和我即时，或通过我的虚拟诊室任何时候给我留言！</target>
+      </trans-unit>
+      <trans-unit id="280" resname="r569166535" restype="string" datatype="ruby">
+        <source>Hi, I just helped bring healthcare to those in need through HealthTap&apos;s Get health + Give health initiative! Because of my purchase, HealthTap donated %{bundle_value} doctor %{consult} to %{charity}. Virtual doctor consults bring high-quality medical expertise and top doctor knowledge. *Doctors are immediately available 24/7 *Get advice and prescriptions sent to your local pharmacy *Use a tailored action plan with timely, helpful reminders Help yourself while helping others: www.healthtap.com/get_and_give_health</source>
+        <target state="new">您好，我刚刚通过HealthTap的“给予健康•获得健康”活动，帮助了急需医疗保健的人！ 通过我的消费，HealthTap向％{charity}捐赠了％{bundle_value}名医生的％{咨询}。 虚拟医生诊疗集合了高质量的医疗专业知识和顶尖的医生智慧。*24/7随时随地能获得医生帮助*把建议和处方直接送至您指定的药房*使用私人订制的行动方案，及时、有效地提醒自己，同时也帮助他人：www.healthtap.com/get_and_give_health</target>
+      </trans-unit>
+      <trans-unit id="281" resname="r67674159" restype="string" datatype="ruby">
+        <source>Or call +1&#40;415&#41;429-1250 and type in pin %{room_pin} when prompted. &amp;nbsp;</source>
+        <target state="new">或者给 +1&#40;415&#41;429-1250 打电话然后在提示时输入%{room_pin}. &amp;nbsp;</target>
+      </trans-unit>
+      <trans-unit id="282" resname="r467475399" restype="string" datatype="ruby">
+        <source>Please join this private %{live_consult_type}&amp;nbsp;consult between %{doctor}&amp;nbsp;and %{patient_name} %{last_name}&amp;nbsp;now.&amp;nbsp;</source>
+        <target state="new">请立即加入 %{live_consult_type}&amp;nbsp;%{doctor}&amp;nbsp;和 %{patient_name} %{last_name}&amp;nbsp;的私人咨询。&amp;nbsp;</target>
+      </trans-unit>
+      <trans-unit id="283" resname="r331167583" restype="string" datatype="ruby">
+        <source>Please join me in a private %{live_consult_type}&amp;nbsp;consult with %{patient_name} %{last_name}&amp;nbsp;now.</source>
+        <target state="new">请立即加入我 %{live_consult_type}&amp;nbsp;和 %{patient_name} %{last_name}&amp;nbsp;的私人咨询。</target>
+      </trans-unit>
+      <trans-unit id="284" resname="r722076930" restype="string" datatype="ruby">
+        <source>Please join me in a private %{live_consult_type}&amp;nbsp;consult with %{doctor}&amp;nbsp;now.</source>
+        <target state="new">请立即加入我 %{live_consult_type}&amp;nbsp;和 %{doctor}&amp;nbsp;医生的私人咨询。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/attribute.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="285" resname="r915826933" restype="string" datatype="ruby">
+        <source>%{name}的种类</source>
+        <target state="new">%{name}的种类</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="286" resname="r675633407" restype="string" datatype="ruby">
+        <source>&quot;%{expert} via HealthTap&quot; &apos;</source>
+        <target state="new">&quot;来自HealthTap的%{expert}&quot; &apos;</target>
+      </trans-unit>
+      <trans-unit id="287" resname="r194184431" restype="string" datatype="ruby">
+        <source>&quot;%{expert} via HealthTap&quot;</source>
+        <target state="new">&quot;来自HealthTap的%{expert}&quot;</target>
+      </trans-unit>
+      <trans-unit id="288" resname="r1001000397" restype="string" datatype="ruby">
+        <source>&quot;%{expert}&quot;</source>
+        <target state="new">&quot;%{expert}&quot;</target>
+      </trans-unit>
+      <trans-unit id="289" resname="r928320740" restype="string" datatype="ruby">
+        <source>Hi there, want to send me a secure message?</source>
+        <target state="new">你好，想给我发一条安全的消息吗？</target>
+        <note annotates="source">TODO greeting</note>
+      </trans-unit>
+      <trans-unit id="290" resname="r17877413" restype="string" datatype="ruby">
+        <source>Hi there, I haven’t heard back from you</source>
+        <target state="new">你好，我没有收到你的回音</target>
+        <note annotates="source">TODO greeting</note>
+      </trans-unit>
+      <trans-unit id="291" resname="r195776156" restype="string" datatype="ruby">
+        <source>Hi there, let’s set a time to connect</source>
+        <target state="new">您好，让我们约一个时间来交流</target>
+        <note annotates="source">TODO greeting</note>
+      </trans-unit>
+      <trans-unit id="292" resname="r125613331" restype="string" datatype="ruby">
+        <source>&quot;%{expert}&apos;s Virtual Practice&quot;</source>
+        <target state="new">&quot;%{expert}的虚拟诊所&quot;</target>
+      </trans-unit>
+      <trans-unit id="293" resname="r639597094" restype="string" datatype="ruby">
+        <source>&quot;HealthTap Quality Care&quot;</source>
+        <target state="new">&quot;HealthTap客服&quot;</target>
+      </trans-unit>
+      <trans-unit id="294" resname="r791326900" restype="string" datatype="ruby">
+        <source>%{expert}, a top %{expert_specialty}, has helpful insights to share with you!</source>
+        <target state="new">%{expert}，一个顶级的%{expert_specialty}, 有帮助的见解与您分享！</target>
+      </trans-unit>
+      <trans-unit id="295" resname="r925516596" restype="string" datatype="ruby">
+        <source>Kathelin from HealthTap</source>
+        <target state="new">来自HealthTap的Kathelin</target>
+      </trans-unit>
+      <trans-unit id="296" resname="r549018355" restype="string" datatype="ruby">
+        <source>HealthTap Team</source>
+        <target state="new">HealthTap团队</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
