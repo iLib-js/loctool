@@ -528,7 +528,7 @@
       </trans-unit>
       <trans-unit id="217" resname="r658449741" restype="plural" datatype="ruby" extype="other">
         <source>%{num} Yrs</source>
-        <target state="new">%{num} Yrs</target>
+        <target state="new">%{num} 年</target>
       </trans-unit>
       <trans-unit id="218" resname="r871414534" restype="plural" datatype="ruby" extype="one">
         <source>%{num} to %{end_num} Second</source>
