@@ -148,7 +148,7 @@
       </trans-unit>
       <trans-unit id="23" resname="Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n" restype="string" datatype="x-objective-c">
         <source>Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n</source>
-     <target state="new">如果您担心有紧急情况，请立即呼叫％@或找医生。 例如，如果您遇到以下任何医疗问题，请立即转到％@：\ n \ n</target>
+     <target state="new">如果您担心有紧急情况，请立即呼叫%@或找医生。 例如，如果您遇到以下任何医疗问题，请立即转到%@：\ n \ n</target>
         <note annotates="source">When not to use Virtual consults explanation</note>
       </trans-unit>
       <trans-unit id="24" resname="•\tChest pain or pressure\n•\tConvulsions or seizures\n•\tDifficulty breathing\n•\tMental health /  behavioral health / addiction issues\n•\tModerate to severe burns\n•\tPain medication &#40;narcotics&#41;\n•\tPoisoning\n•\tSerious head, neck, or back injury\n•\tSerious limb impairment or broken bone&#40;s&#41;\n•\tSignificant, uncontrolled bleeding\n•\tSuicide ideation\n•\tUnconsciousness\n•\tAny other critical or life-threatening situation\n\n" restype="string" datatype="x-objective-c">
@@ -224,13 +224,15 @@
     <body>
       <trans-unit id="35" resname="In Dr. %@&apos;s referral network" restype="string" datatype="x-objective-c">
         <source>In Dr. %@&apos;s referral network</source>
+    <target state="new">在 %@ 大夫推荐网络</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/AskDocsV4/HTAskDocsV4SpecificExpertModesViewController.m" source-language="en-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="36" resname="We&apos;re sorry but we are unable to contact the server. Please try again in a bit." restype="string" datatype="x-objective-c">
-        <source>We&apos;re sorry but we are unable to contact the server. Please try again in a bit.</source>
+        <source> We&apos;re sorry but we are unable to contact the server. Please try again in a bit.</source>
+        <target state="new">抱歉，我们无法与服务器联系。 请稍后重试。</target>
       </trans-unit>
     </body>
   </file>
