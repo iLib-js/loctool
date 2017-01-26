@@ -230,7 +230,7 @@
       </trans-unit>
       <trans-unit id="45" resname="r1062842433" restype="string" datatype="java">
         <source>Read on {time}</source>
-        <target>读取 {time}</target>
+        <target>{time}已读</target>
       </trans-unit>
     </body>
   </file>
@@ -417,7 +417,7 @@
       </trans-unit>
       <trans-unit id="84" resname="live_consult_connecting_text" restype="string" datatype="x-android-resource">
         <source>One moment while we connect…</source>
-        <target>我们连接的时候...</target>
+        <target>连接中...</target>
       </trans-unit>
       <trans-unit id="85" resname="live_consult_waiting_for_patient_text" restype="string" datatype="x-android-resource">
         <source>Waiting for patient to connect…</source>
@@ -425,15 +425,15 @@
       </trans-unit>
       <trans-unit id="86" resname="live_consult_waiting_for_patient_live_video" restype="string" datatype="x-android-resource">
         <source>One moment while we connect to the patient\&apos;s video camera…</source>
-        <target>我们连接到患者的摄像机时...</target>
+        <target>患者摄像机连接中...</target>
       </trans-unit>
       <trans-unit id="87" resname="live_consult_waiting_for_patient_live_audio" restype="string" datatype="x-android-resource">
         <source>One moment while we connect to the patient\&apos;s microphone…</source>
-        <target>我们连接到患者的麦克风时...</target>
+        <target>患者麦克风连接中...</target>
       </trans-unit>
       <trans-unit id="88" resname="live_consult_waiting_for_patient_live_text" restype="string" datatype="x-android-resource">
         <source>One moment while we connect to the patient\&apos;s text chat…</source>
-        <target>我们连接到患者的文字聊天时...</target>
+        <target>患者文字聊天连接中...</target>
       </trans-unit>
       <trans-unit id="89" resname="live_consult_waiting_for_doctor_text" restype="string" datatype="x-android-resource">
         <source>Waiting for doctor to connect…</source>
@@ -441,15 +441,15 @@
       </trans-unit>
       <trans-unit id="90" resname="live_consult_waiting_for_doctor_live_video" restype="string" datatype="x-android-resource">
         <source>One moment while we connect to the doctor\&apos;s video camera…</source>
-        <target>我们连接到医生的摄像机时...</target>
+        <target>医生摄像机连接中...</target>
       </trans-unit>
       <trans-unit id="91" resname="live_consult_waiting_for_doctor_live_audio" restype="string" datatype="x-android-resource">
         <source>One moment while we connect to the doctor\&apos;s microphone…</source>
-        <target>我们连接到医生的麦克风时...</target>
+        <target>医生麦克风连接中...</target>
       </trans-unit>
       <trans-unit id="92" resname="live_consult_waiting_for_doctor_live_text" restype="string" datatype="x-android-resource">
         <source>One moment while we connect to the doctor\&apos;s text chat…</source>
-        <target>我们连接到医生的文字聊天时...</target>
+        <target>医生文字聊天连接中...</target>
       </trans-unit>
       <trans-unit id="93" resname="keyboard_done_label" restype="string" datatype="x-android-resource">
         <source>Send</source>
