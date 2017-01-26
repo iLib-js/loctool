@@ -1087,7 +1087,7 @@
         <target>内心无比平静</target>
       </trans-unit>
       <trans-unit id="182" resname="upcoming_appointment_subaccount_row_text" restype="string" datatype="x-android-resource">
-        <source>{subaccount_name}\'s consult</source>
+        <source>{subaccount_name}'s consult</source>
         <target>{Subaccount_name}\’s 咨询</target>
       </trans-unit>
     </body>
@@ -1707,67 +1707,67 @@
         <target>您相关其他人当时的年龄？</target>
       </trans-unit>
       <trans-unit id="331" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="0">
-        <source>How old is {first_name}\'s mother?</source>
+        <source>How old is {first_name}'s mother?</source>
         <target>{first_name}母亲的年龄？</target>
       </trans-unit>
       <trans-unit id="332" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="1">
-        <source>How old is {first_name}\'s father?</source>
+        <source>How old is {first_name}'s father?</source>
         <target>{first_name}父亲的年龄？</target>
       </trans-unit>
       <trans-unit id="333" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="2">
-        <source>How old is {first_name}\'s brother?</source>
+        <source>How old is {first_name}'s brother?</source>
         <target>{first_name}兄/弟的年龄？</target>
       </trans-unit>
       <trans-unit id="334" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="3">
-        <source>How old is {first_name}\'s sister?</source>
+        <source>How old is {first_name}'s sister?</source>
         <target>{first_name}姐/妹的年龄？</target>
       </trans-unit>
       <trans-unit id="335" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="4">
-        <source>How old is {first_name}\'s son?</source>
+        <source>How old is {first_name}'s son?</source>
         <target>{first_name}儿子的年龄？</target>
       </trans-unit>
       <trans-unit id="336" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="5">
-        <source>How old is {first_name}\'s daughter?</source>
+        <source>How old is {first_name}'s daughter?</source>
         <target>{first_name}女儿的年龄？</target>
       </trans-unit>
       <trans-unit id="337" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="6">
-        <source>How old is {first_name}\'s grandfather?</source>
+        <source>How old is {first_name}'s grandfather?</source>
         <target>{first_name}祖母的年龄？</target>
       </trans-unit>
       <trans-unit id="338" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="7">
-        <source>How old is {first_name}\'s grandmother?</source>
+        <source>How old is {first_name}'s grandmother?</source>
         <target>{first_name}祖父的年龄？</target>
       </trans-unit>
       <trans-unit id="339" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="8">
-        <source>How old is {first_name}\'s firend?</source>
+        <source>How old is {first_name}'s firend?</source>
         <target>{first_name}朋友的年龄？</target>
       </trans-unit>
       <trans-unit id="340" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="9">
-        <source>How old is {first_name}\'s wife?</source>
+        <source>How old is {first_name}'s wife?</source>
         <target>{first_name}妻子的年龄？</target>
       </trans-unit>
       <trans-unit id="341" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="10">
-        <source>How old is {first_name}\'s husband?</source>
+        <source>How old is {first_name}'s husband?</source>
         <target>{first_name}丈夫的年龄？</target>
       </trans-unit>
       <trans-unit id="342" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="11">
-        <source>How old is {first_name}\'s boyfriend?</source>
+        <source>How old is {first_name}'s boyfriend?</source>
         <target>{first_name}男朋友的年龄？</target>
       </trans-unit>
       <trans-unit id="343" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="12">
-        <source>How old is {first_name}\'s girlfriend?</source>
+        <source>How old is {first_name}'s girlfriend?</source>
         <target>{first_name}女朋友的年龄？</target>
       </trans-unit>
       <trans-unit id="344" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="13">
-        <source>How old is {first_name}\'s cousin?</source>
+        <source>How old is {first_name}'s cousin?</source>
         <target>{first_name}表兄/弟/姐/妹的年龄？</target>
       </trans-unit>
       <trans-unit id="345" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="14">
-        <source>How old is {first_name}\'s aunt?</source>
+        <source>How old is {first_name}'s aunt?</source>
         <target>{first_name}姨姨的年龄？</target>
       </trans-unit>
       <trans-unit id="346" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="15">
-        <source>How old is {first_name}\'s uncle?</source>
+        <source>How old is {first_name}'s uncle?</source>
         <target>{first_name}叔叔的年龄？</target>
       </trans-unit>
       <trans-unit id="347" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="22">
@@ -1779,67 +1779,67 @@
         <target>{first_name}相关其他人的年龄？</target>
       </trans-unit>
       <trans-unit id="349" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="0">
-        <source>How old was {first_name}\'s mother?</source>
+        <source>How old was {first_name}'s mother?</source>
         <target>{first_name}母亲当时的年龄？</target>
       </trans-unit>
       <trans-unit id="350" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="1">
-        <source>How old was {first_name}\'s father?</source>
+        <source>How old was {first_name}'s father?</source>
         <target>{first_name}父亲当时的年龄？</target>
       </trans-unit>
       <trans-unit id="351" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="2">
-        <source>How old was {first_name}\'s brother?</source>
+        <source>How old was {first_name}'s brother?</source>
         <target>{first_name}兄/弟当时的年龄？</target>
       </trans-unit>
       <trans-unit id="352" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="3">
-        <source>How old was {first_name}\'s sister?</source>
+        <source>How old was {first_name}'s sister?</source>
         <target>{first_name}姐/妹当时的年龄？</target>
       </trans-unit>
       <trans-unit id="353" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="4">
-        <source>How old was {first_name}\'s son?</source>
+        <source>How old was {first_name}'s son?</source>
         <target>{first_name}儿子当时的年龄？</target>
       </trans-unit>
       <trans-unit id="354" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="5">
-        <source>How old was {first_name}\'s daughter?</source>
+        <source>How old was {first_name}'s daughter?</source>
         <target>{first_name}女儿当时的年龄？</target>
       </trans-unit>
       <trans-unit id="355" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="6">
-        <source>How old was {first_name}\'s grandfather?</source>
+        <source>How old was {first_name}'s grandfather?</source>
         <target>{first_name}祖父当时的年龄？</target>
       </trans-unit>
       <trans-unit id="356" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="7">
-        <source>How old was {first_name}\'s grandmother?</source>
+        <source>How old was {first_name}'s grandmother?</source>
         <target>{first_name}祖母当时的年龄？</target>
       </trans-unit>
       <trans-unit id="357" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="8">
-        <source>How old was {first_name}\'s firend?</source>
+        <source>How old was {first_name}'s firend?</source>
         <target>{first_name}朋友当时的年龄？</target>
       </trans-unit>
       <trans-unit id="358" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="9">
-        <source>How old was {first_name}\'s wife?</source>
+        <source>How old was {first_name}'s wife?</source>
         <target>{first_name}妻子当时的年龄？</target>
       </trans-unit>
       <trans-unit id="359" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="10">
-        <source>How old was {first_name}\'s husband?</source>
+        <source>How old was {first_name}'s husband?</source>
         <target>{first_name}丈夫当时的年龄？</target>
       </trans-unit>
       <trans-unit id="360" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="11">
-        <source>How old was {first_name}\'s boyfriend?</source>
+        <source>How old was {first_name}'s boyfriend?</source>
         <target>{first_name}男朋友当时的年龄？</target>
       </trans-unit>
       <trans-unit id="361" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="12">
-        <source>How old was {first_name}\'s girlfriend?</source>
+        <source>How old was {first_name}'s girlfriend?</source>
         <target>{first_name}女朋友当时的年龄？</target>
       </trans-unit>
       <trans-unit id="362" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="13">
-        <source>How old was {first_name}\'s cousin?</source>
+        <source>How old was {first_name}'s cousin?</source>
         <target>{first_name}表兄/弟/姐/妹当时的年龄？</target>
       </trans-unit>
       <trans-unit id="363" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="14">
-        <source>How old was {first_name}\'s aunt?</source>
+        <source>How old was {first_name}'s aunt?</source>
         <target>{first_name}姨姨当时的年龄？</target>
       </trans-unit>
       <trans-unit id="364" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="15">
-        <source>How old was {first_name}\'s uncle?</source>
+        <source>How old was {first_name}'s uncle?</source>
         <target>{first_name}叔叔当时的年龄？</target>
       </trans-unit>
       <trans-unit id="365" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="22">
@@ -1900,11 +1900,11 @@
         <target>坚持努力！</target>
       </trans-unit>
       <trans-unit id="378" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="6">
-        <source>That\'s amazing!</source>
+        <source>That's amazing!</source>
         <target>太棒了！</target>
       </trans-unit>
       <trans-unit id="379" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="7">
-        <source>You\'re awesome!</source>
+        <source>You're awesome!</source>
         <target>您真棒！</target>
       </trans-unit>
       <trans-unit id="380" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="8">
@@ -1944,11 +1944,11 @@
         <target>坚持努力！{name}</target>
       </trans-unit>
       <trans-unit id="389" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="6">
-        <source>That\'s amazing, {name}</source>
+        <source>That's amazing, {name}</source>
         <target>坚持努力！{name}</target>
       </trans-unit>
       <trans-unit id="390" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="7">
-        <source>You\'re awesome, {name}</source>
+        <source>You're awesome, {name}</source>
         <target>您真棒！{name}</target>
       </trans-unit>
       <trans-unit id="391" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="8">
@@ -3208,11 +3208,11 @@
         <target>{user_first_name}, 需要询问另一个问题吗？\u00a0›</target>
       </trans-unit>
       <trans-unit id="705" resname="downgrade_survey_reasons" restype="array" datatype="x-android-resource" extype="0">
-        <source>Can\'t find the right doctor</source>
+        <source>Can't find the right doctor</source>
         <target>没有为您找到合适的医生</target>
       </trans-unit>
       <trans-unit id="706" resname="downgrade_survey_reasons" restype="array" datatype="x-android-resource" extype="1">
-        <source>Can\'t get the prescriptions I want/need</source>
+        <source>Can't get the prescriptions I want/need</source>
         <target>没有得到我想要/需要的处方</target>
       </trans-unit>
       <trans-unit id="707" resname="downgrade_survey_reasons" restype="array" datatype="x-android-resource" extype="2">
@@ -3280,7 +3280,7 @@
         <target>其它</target>
       </trans-unit>
       <trans-unit id="723" resname="deactivate_survey_reasons" restype="array" datatype="x-android-resource" extype="0">
-        <source>Couldn\'t find the answer I was looking for</source>
+        <source>Couldn't find the answer I was looking for</source>
         <target>没有找到我需要的答案</target>
       </trans-unit>
       <trans-unit id="724" resname="deactivate_survey_reasons" restype="array" datatype="x-android-resource" extype="1">
@@ -3405,7 +3405,7 @@
         <note annotates="source">This is a list of reasons shown to users when they are dissatisfied with the consult experiences because they think the advice is not helpful.</note>
       </trans-unit>
       <trans-unit id="751" resname="dissatisfied_advice_not_helpful_reasons" restype="array" datatype="x-android-resource" extype="2">
-        <source>Doctor didn\'t answer my question</source>
+        <source>Doctor didn't answer my question</source>
         <target>医生没有回答我的问题</target>
         <note annotates="source">This is a list of reasons shown to users when they are dissatisfied with the consult experiences because they think the advice is not helpful.</note>
       </trans-unit>
@@ -3592,7 +3592,7 @@
         <target>哥斯达黎加</target>
       </trans-unit>
       <trans-unit id="797" resname="countries" restype="array" datatype="x-android-resource" extype="43">
-        <source>Cote d\'Ivoire</source>
+        <source>Cote d'Ivoire</source>
         <target>科特迪瓦</target>
       </trans-unit>
       <trans-unit id="798" resname="countries" restype="array" datatype="x-android-resource" extype="44">

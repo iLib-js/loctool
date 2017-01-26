@@ -103,7 +103,7 @@
         <target>您好，%s</target>
       </trans-unit>
       <trans-unit id="23" resname="symptom_triage_instructional_phr_content" restype="string" datatype="x-android-resource">
-        <source>I\'d love to get to know %s better.</source>
+        <source>I'd love to get to know %s better.</source>
         <target>我希望能更好地了解%s。</target>
       </trans-unit>
     </body>

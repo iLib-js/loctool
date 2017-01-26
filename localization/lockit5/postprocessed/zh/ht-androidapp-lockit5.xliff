@@ -240,11 +240,11 @@
   <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="1651" resname="cant_find_doctor" restype="string" datatype="x-android-resource">
-        <source>Can\'t find your doctor? Invite\u00a0them\u00a0»</source>
+        <source>Can't find your doctor? Invite\u00a0them\u00a0»</source>
         <target>查找不到您的医生？邀请\u00a0them\u00a0»</target>
       </trans-unit>
       <trans-unit id="1652" resname="cant_find_clinician" restype="string" datatype="x-android-resource">
-        <source>Can\'t find your clinician? Invite\u00a0them\u00a0»</source>
+        <source>Can't find your clinician? Invite\u00a0them\u00a0»</source>
         <target>查找不到您的临床医生？邀请\u00a0them\u00a0»</target>
       </trans-unit>
       <trans-unit id="1710" resname="cancel_appointment_content" restype="string" datatype="x-android-resource">
@@ -367,7 +367,7 @@
         <note annotates="source">'%s' refers to a language.</note>
       </trans-unit>
       <trans-unit id="2230" resname="invite_doctor_location" restype="string" datatype="x-android-resource">
-        <source>Your Doctor\'s Location</source>
+        <source>Your Doctor's Location</source>
         <target>您医生的地址</target>
       </trans-unit>
       <trans-unit id="2234" resname="starting_at" restype="string" datatype="x-android-resource">
@@ -452,7 +452,7 @@
         <target>点击或搜索您的症状。或者，您可以随时跳过此步骤直接向医生询问您的问题。</target>
       </trans-unit>
       <trans-unit id="2266" resname="symptom_triage_instructional_main_title" restype="string" datatype="x-android-resource">
-        <source>Let\'s get started!</source>
+        <source>Let's get started!</source>
         <target>让我们开始吧！</target>
       </trans-unit>
       <trans-unit id="2267" resname="symptom_triage_instructional_account_picker_title" restype="string" datatype="x-android-resource">
@@ -473,7 +473,7 @@
         <note annotates="source">'%s' refers to a symptom attribute name.</note>
       </trans-unit>
       <trans-unit id="2272" resname="symptom_triage_instructional_refinement_content" restype="string" datatype="x-android-resource">
-        <source>Let\'s learn a little more about that.</source>
+        <source>Let's learn a little more about that.</source>
         <target>让我们多了解一点。</target>
       </trans-unit>
       <trans-unit id="2273" resname="symptom_triage_instructional_risk_factors_title" restype="string" datatype="x-android-resource">
@@ -560,7 +560,7 @@
         <target>创建报告</target>
       </trans-unit>
       <trans-unit id="2297" resname="symptom_triage_warning_message" restype="string" datatype="x-android-resource">
-        <source>Heads up! If you go back from here, you\'ll lose the symptoms you shared.</source>
+        <source>Heads up! If you go back from here, you'll lose the symptoms you shared.</source>
         <target>小心！如果您从此处返回，您分享的症状将丢失。</target>
       </trans-unit>
       <trans-unit id="2300" resname="symptom_triage_emergency_header" restype="string" datatype="x-android-resource">
@@ -577,7 +577,7 @@
         <target>“大多数医生建议根据您报告的症状立即寻求紧急医疗“</target>
       </trans-unit>
       <trans-unit id="2303" resname="symptom_triage_search_no_result" restype="string" datatype="x-android-resource">
-        <source>Sorry, we couldn\'t find a symptom by that name. Maybe there are other ways to describe it?</source>
+        <source>Sorry, we couldn't find a symptom by that name. Maybe there are other ways to describe it?</source>
         <target>很抱歉，我们通过那个名称没有找到相应症状。也许有其他方法来描述它？</target>
       </trans-unit>
       <trans-unit id="2306" resname="symptom_triage_drawer_remove_text" restype="string" datatype="x-android-resource">

@@ -3372,7 +3372,7 @@
   <file original="feelgood/ipad/Plugins/Base.lproj/FGConnectionLostView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="638" resname="vQi-Zb-3ut.text" restype="string" datatype="x-xib">
-        <source>There\'s a problem with your connection.</source>
+        <source>There's a problem with your connection.</source>
         <target>您的连接有一个问题</target>
         <note annotates="source">Class = "UILabel"; text = "There's a problem with your connection."; ObjectID = "vQi-Zb-3ut";</note>
       </trans-unit>
@@ -3413,7 +3413,7 @@
   <file original="feelgood/Base.lproj/WelcomeAlertView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="643" resname="Mu2-0Z-4kA.text" restype="string" datatype="x-xib">
-        <source>Great! You\'re all set!</source>
+        <source>Great! You're all set!</source>
         <target>太棒了！设置就绪！</target>
         <note annotates="source">Class = "UILabel"; text = "Great! You're all set!"; ObjectID = "Mu2-0Z-4kA";</note>
       </trans-unit>
@@ -3422,7 +3422,7 @@
   <file original="feelgood/Base.lproj/FGThankAlertView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="644" resname="erM-oz-3w7.text" restype="string" datatype="x-xib">
-        <source>Please don\'t include a followup question in your note. To do so,</source>
+        <source>Please don't include a followup question in your note. To do so,</source>
         <target>请不要在您的备注中包含后续问题。若想这样做，</target>
         <note annotates="source">Class = "UILabel"; text = "Please don't include a followup question in your note. To do so,"; ObjectID = "erM-oz-3w7";</note>
       </trans-unit>
@@ -3440,7 +3440,7 @@
   <file original="feelgood/Base.lproj/FGChatQuestTestTableViewCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="646" resname="CZv-9x-Rur.text" restype="string" datatype="x-xib">
-        <source>I\'ve ordered a test for you via Quest Diagnostics.</source>
+        <source>I've ordered a test for you via Quest Diagnostics.</source>
         <target>我已通过Quest Diagnostic实验室为您安排了一次检验。</target>
         <note annotates="source">Class = "UILabel"; text = "I've ordered a test for you via Quest Diagnostics."; ObjectID = "CZv-9x-Rur";</note>
       </trans-unit>
@@ -3477,7 +3477,7 @@
         <note annotates="source">Class = "UILabel"; text = "Our doctors have answered similar questions"; ObjectID = "sWh-hA-9s9";</note>
       </trans-unit>
       <trans-unit id="651" resname="vLt-Hu-9yd.text" restype="string" datatype="x-xib">
-        <source>Didn\'t find what you are looking for?</source>
+        <source>Didn't find what you are looking for?</source>
         <target>没找到您想要找的东西？</target>
         <note annotates="source">Class = "UILabel"; text = "Didn't find what you are looking for?"; ObjectID = "vLt-Hu-9yd";</note>
       </trans-unit>
@@ -3486,7 +3486,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocsQuestionSentViewControlleriPad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="652" resname="1T1-t2-OU8.text" restype="string" datatype="x-xib">
-        <source>We\'ll notify you as soon as our doctors respond. In the meantime:</source>
+        <source>We'll notify you as soon as our doctors respond. In the meantime:</source>
         <target>我们会在医生回复后尽快通知您。与此同时:</target>
         <note annotates="source">Class = "UILabel"; text = "We'll notify you as soon as our doctors respond. In the meantime:"; ObjectID = "1T1-t2-OU8";</note>
       </trans-unit>
@@ -3495,7 +3495,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocsPaymentViewControlleriPad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="653" resname="Hel-CI-Fj1.text" restype="string" datatype="x-xib">
-        <source>We\'re committed to making you have a delightful experience with our doctors that leaves you feeling good. If you\'re unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you\'ll be satisfied :)</source>
+        <source>We're committed to making you have a delightful experience with our doctors that leaves you feeling good. If you're unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you'll be satisfied :)</source>
         <target>我们会努力给您与我们医生交流的愉快体验，让您感觉很好。如果您对在线咨询的质量不满意和认为在线咨询没有帮助，您可以随时联系我们并请求退款！我们保证您会满意:)</target>
         <note annotates="source">Class = "UILabel"; text = "We're committed to making you have a delightful experience with our doctors that leaves you feeling good. If you're unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you'll be satisfied :)"; ObjectID = "Hel-CI-Fj1";</note>
       </trans-unit>
@@ -3537,12 +3537,12 @@
         <note annotates="source">Class = "UILabel"; text = "Video Call"; ObjectID = "8Fc-pj-rKs";</note>
       </trans-unit>
       <trans-unit id="659" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
-        <source>You\'ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe\'d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\'d be happy to review your case and, if appropriate, enable you to start another consult. We\'re here to help!</source>
+        <source>You've talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe'd like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!</source>
         <target>您这个月已经和医生聊了X次。请记住，HealthTap 在线咨询不能取代%@普通门诊医师，或用于替代与现实世界中的医生建立关系。\n\n我们希望您可以联系support@healthtap.com，告诉我们您为什么需要继续跟医生对话。我们很高兴审核您的案例，如果合理，您可以开始其它咨询。我们在这里帮助您！</target>
         <note annotates="source">Class = "UILabel"; text = "You've talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe'd like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!"; ObjectID = "F8C-bC-b0r";</note>
       </trans-unit>
       <trans-unit id="660" resname="ONE-ub-R6W.text" restype="string" datatype="x-xib">
-        <source>Type a detailed description about your symptoms, concerns, and how you\'d like the doctor to help you.</source>
+        <source>Type a detailed description about your symptoms, concerns, and how you'd like the doctor to help you.</source>
         <target>键入关于您症状、担忧以及您希望医生如何帮助您的细节描述。</target>
         <note annotates="source">Class = "UILabel"; text = "Type a detailed description about your symptoms, concerns, and how you'd like the doctor to help you."; ObjectID = "ONE-ub-R6W";</note>
       </trans-unit>
@@ -3575,17 +3575,17 @@
         <note annotates="source">Class = "UITextField"; placeholder = "  Name of condition or symptom"; ObjectID = "KvY-4s-tV7";</note>
       </trans-unit>
       <trans-unit id="665" resname="UJ6-B8-aCt.text" restype="string" datatype="x-xib">
-        <source>The ability to dive deeper into women\'s issue</source>
+        <source>The ability to dive deeper into women's issue</source>
         <target>深入了解女性问题的能力</target>
         <note annotates="source">Class = "UILabel"; text = "The ability to dive deeper into women's issue"; ObjectID = "UJ6-B8-aCt";</note>
       </trans-unit>
       <trans-unit id="666" resname="WeL-BP-aJb.text" restype="string" datatype="x-xib">
-        <source>We\'ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.</source>
+        <source>We'll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.</source>
         <target>若您能向我们最关注的慈善机构捐出善款，我们将很乐意更快递回答您的问题。</target>
         <note annotates="source">Class = "UILabel"; text = "We'll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities."; ObjectID = "WeL-BP-aJb";</note>
       </trans-unit>
       <trans-unit id="667" resname="oS2-3x-xLb.text" restype="string" datatype="x-xib">
-        <source>Help us do good, we\'ll help you get a faster answer</source>
+        <source>Help us do good, we'll help you get a faster answer</source>
         <target>帮助我们改进，我们将帮助您更快地获得回答</target>
         <note annotates="source">Class = "UILabel"; text = "Help us do good, we'll help you get a faster answer"; ObjectID = "oS2-3x-xLb";</note>
       </trans-unit>
@@ -3618,12 +3618,12 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocAddSubAccountsViewControlleriPad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="672" resname="HWn-bN-Mn5.text" restype="string" datatype="x-xib">
-        <source>We\'re sorry to see you downgrade!</source>
+        <source>We're sorry to see you downgrade!</source>
         <target>我们对于您降低账户级别表示遗憾！</target>
         <note annotates="source">Class = "UILabel"; text = "We're sorry to see you downgrade!"; ObjectID = "HWn-bN-Mn5";</note>
       </trans-unit>
       <trans-unit id="673" resname="bsp-Xt-0j0.text" restype="string" datatype="x-xib">
-        <source>We\'re dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We\'ll respond to you and do our best to make you happy as soon as possible! :)</source>
+        <source>We're dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We'll respond to you and do our best to make you happy as soon as possible! :)</source>
         <target>我们致力于照顾您的健康请考虑给我们发送反馈而不是降级我们会尽快回复您并做最大的努力使您开心！:)</target>
         <note annotates="source">Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We'll respond to you and do our best to make you happy as soon as possible! :)"; ObjectID = "bsp-Xt-0j0";</note>
       </trans-unit>
@@ -3752,12 +3752,12 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGNuxInviteDoctorViewControllerSmallScreen.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="690" resname="Ege-W5-Zxn.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\'t find your doctor? Get help »</source>
+        <source>Can't find your doctor? Get help »</source>
         <target>无法找到您的医生获得帮助»</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Can't find your doctor? Get help »"; ObjectID = "Ege-W5-Zxn";</note>
       </trans-unit>
       <trans-unit id="691" resname="XuL-zM-XZw.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\'t find your doctor? Get help »</source>
+        <source>Can't find your doctor? Get help »</source>
         <target>无法找到您的医生获得帮助»</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Can't find your doctor? Get help »"; ObjectID = "XuL-zM-XZw";</note>
       </trans-unit>
@@ -3827,7 +3827,7 @@
         <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "Dcn-5D-eum";</note>
       </trans-unit>
       <trans-unit id="701" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
-        <source>Please don\'t include a followup question in your note. To do so,</source>
+        <source>Please don't include a followup question in your note. To do so,</source>
         <target>请不要在您的备注中包含后续问题。若想这样做，</target>
         <note annotates="source">Class = "UILabel"; text = "Please don't include a followup question in your note. To do so,"; ObjectID = "G3s-8R-ne9";</note>
       </trans-unit>
@@ -3846,7 +3846,7 @@
         <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "D1S-cE-SGi";</note>
       </trans-unit>
       <trans-unit id="704" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
-        <source>Please don\'t include a followup question in your note. To do so,</source>
+        <source>Please don't include a followup question in your note. To do so,</source>
         <target>请不要在您的备注中包含后续问题。若想这样做，</target>
         <note annotates="source">Class = "UILabel"; text = "Please don't include a followup question in your note. To do so,"; ObjectID = "G3s-8R-ne9";</note>
       </trans-unit>
@@ -3888,7 +3888,7 @@
         <note annotates="source">Class = "UIButton"; normalTitle = "  Helpful"; ObjectID = "5Zk-Ki-YZT";</note>
       </trans-unit>
       <trans-unit id="710" resname="t3e-iJ-qIK.text" restype="string" datatype="x-xib">
-        <source>Food Packaging Health Risk \'Unknown\'</source>
+        <source>Food Packaging Health Risk 'Unknown'</source>
         <target>食品包装健康风险\’未知’\</target>
         <note annotates="source">Class = "UILabel"; text = "Food Packaging Health Risk 'Unknown'"; ObjectID = "t3e-iJ-qIK";</note>
       </trans-unit>
@@ -3939,7 +3939,7 @@
         <note annotates="source">Class = "UILabel"; text = "We just sent you a link to reset your password.\nIf you dont see it after a few minutes, please \ncheck your Spam folder."; ObjectID = "fak-PA-FU7";</note>
       </trans-unit>
       <trans-unit id="717" resname="iqT-MJ-Oof.text" restype="string" datatype="x-xib">
-        <source>No worries! Let us know your email and we\'ll send you a link to reset it</source>
+        <source>No worries! Let us know your email and we'll send you a link to reset it</source>
         <target>不要担心！告诉我们您的电子邮件，我们会向您发送一个重置链接</target>
         <note annotates="source">Class = "UILabel"; text = "No worries! Let us know your email and we'll send you a link to reset it"; ObjectID = "iqT-MJ-Oof";</note>
       </trans-unit>
@@ -3948,7 +3948,7 @@
   <file original="feelgood/ViewControllers/Base.lproj/FGEndCarouselViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="718" resname="4jF-0K-bQp.text" restype="string" datatype="x-xib">
-        <source>You\'ll get more useful, beautiful doctor tips tomorrow</source>
+        <source>You'll get more useful, beautiful doctor tips tomorrow</source>
         <target>明天您会获得更多有用和精彩的医生小贴士。</target>
         <note annotates="source">Class = "UILabel"; text = "You'll get more useful, beautiful doctor tips tomorrow"; ObjectID = "4jF-0K-bQp";</note>
       </trans-unit>
@@ -4016,12 +4016,12 @@
   <file original="feelgood/ViewControllers/Settings/Base.lproj/FGMainSettingsViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="726" resname="DFA-eO-y9t.text" restype="string" datatype="x-xib">
-        <source>What\'s your email?</source>
+        <source>What's your email?</source>
         <target>您的邮箱?</target>
         <note annotates="source">Class = "UILabel"; text = "What's your email?"; ObjectID = "DFA-eO-y9t";</note>
       </trans-unit>
       <trans-unit id="727" resname="aro-gW-23T.text" restype="string" datatype="x-xib">
-        <source>We\'re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We\'ll do our best to make you happy as soon as possible! :)</source>
+        <source>We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)</source>
         <target>我们致力于照顾您的健康请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:)</target>
         <note annotates="source">Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)"; ObjectID = "aro-gW-23T";</note>
       </trans-unit>
@@ -4144,7 +4144,7 @@
   <file original="feelgood/Classes/UI/TableViewCells/Base.lproj/FGNUXConciergeInviteCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="742" resname="ext-If-5LF.text" restype="string" datatype="x-xib">
-        <source>Pediatrics, Known for Children\'s health</source>
+        <source>Pediatrics, Known for Children's health</source>
         <target>儿科,专攻儿童健康</target>
         <note annotates="source">Class = "UILabel"; text = "Pediatrics, Known for Children's health"; ObjectID = "ext-If-5LF";</note>
       </trans-unit>
@@ -4273,7 +4273,7 @@
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGConciergeSuggestedDoctorTableViewCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="763" resname="ext-If-5LF.text" restype="string" datatype="x-xib">
-        <source>Pediatrics, Known for Children\'s health</source>
+        <source>Pediatrics, Known for Children's health</source>
         <target>儿科,专攻儿童健康</target>
         <note annotates="source">Class = "UILabel"; text = "Pediatrics, Known for Children's health"; ObjectID = "ext-If-5LF";</note>
       </trans-unit>
