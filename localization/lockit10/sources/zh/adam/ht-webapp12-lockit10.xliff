@@ -117,7 +117,8 @@
                    our minimum requirement for consults. Please try again with a more stable network.\
                    &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \
                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
-        <target state="new">非常抱歉，您的网络连接似乎不符合我们对于咨询的最低要求,请在稳定的网络下再次尝试\
+        <target state="new">非常抱歉，您的网络连接似乎不符合\
+                   我们对于咨询的最低要求,请在稳定的网络下再次尝试\
                    &lt;br&gt;&lt;br&gt;如果需要帮助，您可以通过{link_tag_start}expertsupport@healthtap.com{link_tag_end}联系我们 
                    </target>
       </trans-unit>
@@ -183,7 +184,7 @@
     <body>
       <trans-unit id="434" resname="Ask Dr. {last_name} your question" restype="string" datatype="javascript">
         <source>Ask Dr. {last_name} your question</source>
-        <target state="new">Ask Dr. {last_name} your question</target>
+        <target state="new">问问{last_name}医生您的问题</target>
       </trans-unit>
     </body>
   </file>
@@ -191,7 +192,7 @@
     <body>
       <trans-unit id="435" resname="Please vote for and recommend {short_name}&apos;s expertise and bedside manner" restype="string" datatype="javascript">
         <source>Please vote for and recommend {short_name}&apos;s expertise and bedside manner</source>
-        <target state="new">Please vote for and recommend {short_name}&apos;s expertise and bedside manner</target>
+        <target state="new">请给{short_name}的专业性以及服务态度点赞</target>
       </trans-unit>
     </body>
   </file>
@@ -199,11 +200,11 @@
     <body>
       <trans-unit id="436" resname="We&apos;ll notify you when {prefix}{last_name} accepts you as a patient!" restype="string" datatype="javascript">
         <source>We&apos;ll notify you when {prefix}{last_name} accepts you as a patient!</source>
-        <target state="new">We&apos;ll notify you when {prefix}{last_name} accepts you as a patient!</target>
+        <target state="new">我们将在{prefix}{last_name}接受您为病人时通知您!</target>
       </trans-unit>
       <trans-unit id="437" resname="We&apos;ll notify you when {full_name} accepts you as a patient!" restype="string" datatype="javascript">
         <source>We&apos;ll notify you when {full_name} accepts you as a patient!</source>
-        <target state="new">We&apos;ll notify you when {full_name} accepts you as a patient!</target>
+        <target state="new">我们将在{full_name}接受您为病人时通知您 !<</target>
       </trans-unit>
     </body>
   </file>
@@ -211,19 +212,19 @@
     <body>
       <trans-unit id="438" resname="1&#35;Saved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; Life|&#35;Saved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; Lives" restype="string" datatype="javascript">
         <source>1&#35;Saved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; Life|&#35;Saved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; Lives</source>
-        <target state="new">1&#35;Saved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; Life|&#35;Saved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; Lives</target>
+        <target state="new">1&#35;得救 &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; 生命|&#35;得救 &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; 生命</target>
       </trans-unit>
       <trans-unit id="439" resname="1&#35;Helped &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; person|&#35;Helped &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; people" restype="string" datatype="javascript">
         <source>1&#35;Helped &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; person|&#35;Helped &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; people</source>
-        <target state="new">1&#35;Helped &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; person|&#35;Helped &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; people</target>
+        <target state="new">1&#35;被帮助 &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; 人|&#35;被帮助 &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; 人</target>
       </trans-unit>
       <trans-unit id="440" resname="1&#35;Received &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; doctor agrees|&#35;Received &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; doctor agrees" restype="string" datatype="javascript">
         <source>1&#35;Received &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; doctor agrees|&#35;Received &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; doctor agrees</source>
-        <target state="new">1&#35;Received &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; doctor agrees|&#35;Received &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; doctor agrees</target>
+        <target state="new">1&#35;收到 &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; 医生同意|&#35;收到 &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; 医生同意</target>
       </trans-unit>
       <trans-unit id="441" resname="1&#35;Recieved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; thank|&#35;Recieved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; thanks" restype="string" datatype="javascript">
         <source>1&#35;Recieved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; thank|&#35;Recieved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; thanks</source>
-        <target state="new">1&#35;Recieved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; thank|&#35;Recieved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; thanks</target>
+        <target state="new">1&#35;收到 &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; 感谢|&#35; &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; 感谢</target>
       </trans-unit>
     </body>
   </file>
@@ -231,7 +232,7 @@
     <body>
       <trans-unit id="442" resname="1&#35;We&apos;ve invited {n} doctor to join your Care-Team|&#35;We&apos;ve invited {n} doctors to join your Care-Team" restype="string" datatype="javascript">
         <source>1&#35;We&apos;ve invited {n} doctor to join your Care-Team|&#35;We&apos;ve invited {n} doctors to join your Care-Team</source>
-        <target state="new">1&#35;We&apos;ve invited {n} doctor to join your Care-Team|&#35;We&apos;ve invited {n} doctors to join your Care-Team</target>
+        <target state="new">1&#35;我们已邀请{n}个医生加入您的医护团队|&#35;我们已邀请{n}个医生加入您的医护团队</target>
       </trans-unit>
     </body>
   </file>
@@ -239,23 +240,23 @@
     <body>
       <trans-unit id="443" resname="1&#35;In practice for: &lt;em&gt;1&lt;/em&gt; year|&#35;In practice for: &lt;em&gt;{duration}&lt;/em&gt; years" restype="string" datatype="javascript">
         <source>1&#35;In practice for: &lt;em&gt;1&lt;/em&gt; year|&#35;In practice for: &lt;em&gt;{duration}&lt;/em&gt; years</source>
-        <target state="new">1&#35;In practice for: &lt;em&gt;1&lt;/em&gt; year|&#35;In practice for: &lt;em&gt;{duration}&lt;/em&gt; years</target>
+        <target state="new">1&#35;已从医: &lt;em&gt;1&lt;/em&gt; 年|&#35;已从医: &lt;em&gt;{duration}&lt;/em&gt; 年</target>
       </trans-unit>
       <trans-unit id="444" resname="1&#35;&lt;span&gt;1&lt;/span&gt; &quot;You saved my life&quot; thank you note|&#35;&lt;span&gt;{n}&lt;/span&gt; &quot;You saved my life&quot; thank you notes" restype="string" datatype="javascript">
         <source>1&#35;&lt;span&gt;1&lt;/span&gt; &quot;You saved my life&quot; thank you note|&#35;&lt;span&gt;{n}&lt;/span&gt; &quot;You saved my life&quot; thank you notes</source>
-        <target state="new">1&#35;&lt;span&gt;1&lt;/span&gt; &quot;You saved my life&quot; thank you note|&#35;&lt;span&gt;{n}&lt;/span&gt; &quot;You saved my life&quot; thank you notes</target>
+        <target state="new">1&#35;&lt;span&gt;1&lt;/span&gt; &quot;您救了我的命&quot; 感谢信|&#35;&lt;span&gt;{n}&lt;/span&gt; &quot;您救了我的命&quot; 感谢信</target>
       </trans-unit>
       <trans-unit id="445" resname="1&#35;&lt;span&gt;1&lt;/span&gt; person helped|&#35;&lt;span&gt;{n}&lt;/span&gt; people helped" restype="string" datatype="javascript">
         <source>1&#35;&lt;span&gt;1&lt;/span&gt; person helped|&#35;&lt;span&gt;{n}&lt;/span&gt; people helped</source>
-        <target state="new">1&#35;&lt;span&gt;1&lt;/span&gt; person helped|&#35;&lt;span&gt;{n}&lt;/span&gt; people helped</target>
+        <target state="new">1&#35;&lt;span&gt;1&lt;/span&gt; 个人被帮助|&#35;&lt;span&gt;{n}&lt;/span&gt; people 个人被帮助</target>
       </trans-unit>
       <trans-unit id="446" resname="1&#35;Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees" restype="string" datatype="javascript">
         <source>1&#35;Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees</source>
-        <target state="new">1&#35;Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees</target>
+        <target state="new">1&#35;已收到: &lt;span&gt;1&lt;/span&gt; 个医生同意|&#35;已收到: &lt;span&gt;{n}&lt;/span&gt; 个医生同意</target>
       </trans-unit>
       <trans-unit id="447" resname="1&#35;Received: &lt;span&gt;1&lt;/span&gt; thank|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; thanks" restype="string" datatype="javascript">
         <source>1&#35;Received: &lt;span&gt;1&lt;/span&gt; thank|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; thanks</source>
-        <target state="new">1&#35;Received: &lt;span&gt;1&lt;/span&gt; thank|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; thanks</target>
+        <target state="new">1&#35;已收到: &lt;span&gt;1&lt;/span&gt; 个谢谢|&#35;已收到: &lt;span&gt;{n}&lt;/span&gt; 个谢谢</target>
       </trans-unit>
     </body>
   </file>
@@ -263,7 +264,7 @@
     <body>
       <trans-unit id="448" resname="I agree to HealthTap&apos;s {term_link_tag_start}Terms{link_tag_end} and {priv_link_tag_start}Privacy Policy{link_tag_end}" restype="string" datatype="javascript">
         <source>I agree to HealthTap&apos;s {term_link_tag_start}Terms{link_tag_end} and {priv_link_tag_start}Privacy Policy{link_tag_end}</source>
-        <target state="new">I agree to HealthTap&apos;s {term_link_tag_start}Terms{link_tag_end} and {priv_link_tag_start}Privacy Policy{link_tag_end}</target>
+        <target state="new">我同意HealthTap的{term_link_tag_start}服务条款{link_tag_end}和{priv_link_tag_start}隐私政策{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -271,7 +272,7 @@
     <body>
       <trans-unit id="449" resname="We&apos;re sorry, virtual consults are not yet available in {state}" restype="string" datatype="javascript">
         <source>We&apos;re sorry, virtual consults are not yet available in {state}</source>
-        <target state="new">We&apos;re sorry, virtual consults are not yet available in {state}</target>
+        <target state="new">抱歉，在{state}在线诊疗不工作</target>
       </trans-unit>
     </body>
   </file>
@@ -279,11 +280,11 @@
     <body>
       <trans-unit id="450" resname="What is {name}&apos;s gender?" restype="string" datatype="javascript">
         <source>What is {name}&apos;s gender?</source>
-        <target state="new">What is {name}&apos;s gender?</target>
+        <target state="new">{name}的性别是什么?</target>
       </trans-unit>
       <trans-unit id="451" resname="Please provide the following for {name}&apos;s consult" restype="string" datatype="javascript">
         <source>Please provide the following for {name}&apos;s consult</source>
-        <target state="new">Please provide the following for {name}&apos;s consult</target>
+        <target state="new">请为{name}的咨询提供以下讯息</target>
       </trans-unit>
     </body>
   </file>
@@ -291,7 +292,7 @@
     <body>
       <trans-unit id="452" resname="Let patients know when you&apos;re available in your Virtual Practice on {day}s" restype="string" datatype="javascript">
         <source>Let patients know when you&apos;re available in your Virtual Practice on {day}s</source>
-        <target state="new">Let patients know when you&apos;re available in your Virtual Practice on {day}s</target>
+        <target state="new">告诉患者您在{day}的在线诊疗是有空的 </target>
       </trans-unit>
     </body>
   </file>
@@ -299,7 +300,7 @@
     <body>
       <trans-unit id="453" resname="We&apos;ll stop sending you announcements and notifications by email from now on. We&apos;ll miss you :&#40;" restype="string" datatype="javascript">
         <source>We&apos;ll stop sending you announcements and notifications by email from now on. We&apos;ll miss you :&#40;</source>
-        <target state="new">We&apos;ll stop sending you announcements and notifications by email from now on. We&apos;ll miss you :&#40;</target>
+        <target state="new">我们会停止发信和讯息，我们会想你 :&#40;</target>
       </trans-unit>
     </body>
   </file>
@@ -307,7 +308,7 @@
     <body>
       <trans-unit id="454" resname="Try it out! Don&apos;t forget to click &quot;Prescribe&quot; once you&apos;ve entered the details." restype="string" datatype="javascript">
         <source>Try it out! Don&apos;t forget to click &quot;Prescribe&quot; once you&apos;ve entered the details.</source>
-        <target state="new">Try it out! Don&apos;t forget to click &quot;Prescribe&quot; once you&apos;ve entered the details.</target>
+        <target state="new">试试看，输入具体内容后别忘了点击“开药”</target>
       </trans-unit>
     </body>
   </file>
@@ -315,27 +316,27 @@
     <body>
       <trans-unit id="455" resname="Please provide the doctor&apos;s name" restype="string" datatype="javascript">
         <source>Please provide the doctor&apos;s name</source>
-        <target state="new">Please provide the doctor&apos;s name</target>
+        <target state="new">请提供医生名字</target>
       </trans-unit>
       <trans-unit id="456" resname="Please provide the doctor&apos;s specialty" restype="string" datatype="javascript">
         <source>Please provide the doctor&apos;s specialty</source>
-        <target state="new">Please provide the doctor&apos;s specialty</target>
+        <target state="new">请提供医生专科</target>
       </trans-unit>
       <trans-unit id="457" resname="Please provide the doctor&apos;s city" restype="string" datatype="javascript">
         <source>Please provide the doctor&apos;s city</source>
-        <target state="new">Please provide the doctor&apos;s city</target>
+        <target state="new">请提供医生的城市</target>
       </trans-unit>
       <trans-unit id="458" resname="Please provide the doctor&apos;s state" restype="string" datatype="javascript">
         <source>Please provide the doctor&apos;s state</source>
-        <target state="new">Please provide the doctor&apos;s state</target>
+        <target state="new">请提供医生的州</target>
       </trans-unit>
       <trans-unit id="459" resname="Please provide the doctor&apos;s email" restype="string" datatype="javascript">
         <source>Please provide the doctor&apos;s email</source>
-        <target state="new">Please provide the doctor&apos;s email</target>
+        <target state="new">请提供医生的信箱</target>
       </trans-unit>
       <trans-unit id="460" resname="The doctor&apos;s phone number is not valid" restype="string" datatype="javascript">
         <source>The doctor&apos;s phone number is not valid</source>
-        <target state="new">The doctor&apos;s phone number is not valid</target>
+        <target state="new">医生的电话号码格式不对哦</target>
       </trans-unit>
     </body>
   </file>
@@ -343,7 +344,7 @@
     <body>
       <trans-unit id="461" resname="{currentAge} years" restype="string" datatype="javascript">
         <source>{currentAge} years</source>
-        <target state="new">{currentAge} years</target>
+        <target state="new">{currentAge} 岁</target>
       </trans-unit>
     </body>
   </file>
@@ -351,27 +352,27 @@
     <body>
       <trans-unit id="462" resname="{name} appreciates your gratitude!" restype="string" datatype="javascript">
         <source>{name} appreciates your gratitude!</source>
-        <target state="new">{name} appreciates your gratitude!</target>
+        <target state="new">{name} 谢谢您的赞赏!</target>
       </trans-unit>
       <trans-unit id="463" resname="Would you like to send a secure message to {name}&apos;s colleague, {colleague_name}?" restype="string" datatype="javascript">
         <source>Would you like to send a secure message to {name}&apos;s colleague, {colleague_name}?</source>
-        <target state="new">Would you like to send a secure message to {name}&apos;s colleague, {colleague_name}?</target>
+        <target state="new">您希望发一个私密的短信给{name}的同事colleague_name}?</target>
       </trans-unit>
       <trans-unit id="464" resname="Would you like to send a secure message to {name}?" restype="string" datatype="javascript">
         <source>Would you like to send a secure message to {name}?</source>
-        <target state="new">Would you like to send a secure message to {name}?</target>
+        <target state="new">您希望发一个私密的短信给{name}?</target>
       </trans-unit>
       <trans-unit id="465" resname="Would you like to ask a follow-up question to {name}?" restype="string" datatype="javascript">
         <source>Would you like to ask a follow-up question to {name}?</source>
-        <target state="new">Would you like to ask a follow-up question to {name}?</target>
+        <target state="new">您还想再进一步问{name}问题么?</target>
       </trans-unit>
       <trans-unit id="466" resname="Would you like to ask a follow-up question to {name}&apos;s colleague, {colleague_name}?" restype="string" datatype="javascript">
         <source>Would you like to ask a follow-up question to {name}&apos;s colleague, {colleague_name}?</source>
-        <target state="new">Would you like to ask a follow-up question to {name}&apos;s colleague, {colleague_name}?</target>
+        <target state="new">您还想再进一步问{name}的同事{colleague_name}问题么?</target>
       </trans-unit>
       <trans-unit id="467" resname="{name} appreciates your gratitude! Have a follow up question?" restype="string" datatype="javascript">
         <source>{name} appreciates your gratitude! Have a follow up question?</source>
-        <target state="new">{name} appreciates your gratitude! Have a follow up question?</target>
+        <target state="new">{name} 谢谢您的赞赏! 还有问题吗?</target>
       </trans-unit>
     </body>
   </file>
@@ -379,11 +380,11 @@
     <body>
       <trans-unit id="468" resname="This type of file cannot be uploaded. Please try another common photo, multimedia, or document format." restype="string" datatype="javascript">
         <source>This type of file cannot be uploaded. Please try another common photo, multimedia, or document format.</source>
-        <target state="new">This type of file cannot be uploaded. Please try another common photo, multimedia, or document format.</target>
+        <target state="new">这类文件不能上传，请试试其他的照片，视频，文件模式.</target>
       </trans-unit>
       <trans-unit id="469" resname="Please upload a smaller file." restype="string" datatype="javascript">
         <source>Please upload a smaller file.</source>
-        <target state="new">Please upload a smaller file.</target>
+        <target state="new">请上传个小点儿的文件.</target>
       </trans-unit>
     </body>
   </file>
@@ -391,7 +392,7 @@
     <body>
       <trans-unit id="470" resname="Please enter a non-work email &#40;one that doesn&apos;t end with {email_domain}" restype="string" datatype="javascript">
         <source>Please enter a non-work email &#40;one that doesn&apos;t end with {email_domain}</source>
-        <target state="new">Please enter a non-work email &#40;one that doesn&apos;t end with {email_domain}</target>
+        <target state="new">请输入一个非工作邮箱 &#40;邮箱结尾不为{email_domain}</target>
       </trans-unit>
     </body>
   </file>
@@ -399,7 +400,7 @@
     <body>
       <trans-unit id="471" resname="Speaks {language}" restype="string" datatype="javascript">
         <source>Speaks {language}</source>
-        <target state="new">Speaks {language}</target>
+        <target state="new">说 {language}</target>
       </trans-unit>
     </body>
   </file>
@@ -408,8 +409,8 @@
       <trans-unit id="472" resname="Send your question to receive one or more information text answers \\n          within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
         <source>Send your question to receive one or more information text answers \
           within a day from our network of {n} doctors across 137 specialties.</source>
-        <target state="new">Send your question to receive one or more information text answers \
-          within a day from our network of {n} doctors across 137 specialties.</target>
+        <target state="new">发你的问题来收到一个或者更多文字回答\
+          由我们的137个专科{n}个医生提供答案.</target>
       </trans-unit>
     </body>
   </file>
@@ -418,8 +419,8 @@
       <trans-unit id="473" resname="No {specialist_name} is available right now. \\n          You may still consult one by secure message or appointment." restype="string" datatype="javascript">
         <source>No {specialist_name} is available right now. \
           You may still consult one by secure message or appointment.</source>
-        <target state="new">No {specialist_name} is available right now. \
-          You may still consult one by secure message or appointment.</target>
+        <target state="new">{specialist_name}现在没空. \
+          您还可以用短信或预约咨询.</target>
       </trans-unit>
     </body>
   </file>
@@ -427,7 +428,7 @@
     <body>
       <trans-unit id="474" resname="We&apos;ve registered your vote for &quot;{name}&quot; and will encourage more doctors to review the app." restype="string" datatype="javascript">
         <source>We&apos;ve registered your vote for &quot;{name}&quot; and will encourage more doctors to review the app.</source>
-        <target state="new">We&apos;ve registered your vote for &quot;{name}&quot; and will encourage more doctors to review the app.</target>
+        <target state="new">我们收到您给{name}的投票并会鼓励跟多医生来评测这款应用</target>
       </trans-unit>
     </body>
   </file>
