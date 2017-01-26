@@ -204,7 +204,7 @@
       </trans-unit>
       <trans-unit id="437" resname="We&apos;ll notify you when {full_name} accepts you as a patient!" restype="string" datatype="javascript">
         <source>We&apos;ll notify you when {full_name} accepts you as a patient!</source>
-        <target state="new">我们将在{full_name}接受您为病人时通知您 !<</target>
+        <target state="new">我们将在{full_name}接受您为病人时通知您 !</target>
       </trans-unit>
     </body>
   </file>
