@@ -214,7 +214,7 @@ module.exports = {
         test.done();
 	},
 
-	testRubyFileMakeKeySkipHTML: function(test) {
+	testRubyFileMakeKeyNoSkipHTML: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -227,7 +227,7 @@ module.exports = {
 		});
         test.ok(rf);
 
-        test.equals(rf.makeKey("A <br> B"), "r191336864");
+        test.equals(rf.makeKey("A <br> B"), "r158397839");
 
         test.done();
 	},
@@ -262,7 +262,7 @@ module.exports = {
         test.equals(rf.makeKey("This is a double quoted string with \\u00A0 \\x23 hex escape chars in it"), "r347049046");
         test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\u00A0 \\x23 hex escape chars in it'), "r1000517606");
 
-        test.equals(rf.makeKey("We help more than %{num_docs} top doctors in our network enhance their reputations,<br>build professional networks, better serve existing patients, grow their practices,<br>and increase their income."), "r638463622");
+        test.equals(rf.makeKey("We help more than %{num_docs} top doctors in our network enhance their reputations,<br>build professional networks, better serve existing patients, grow their practices,<br>and increase their income."), "r576588458");
 
         test.done();
 	},
