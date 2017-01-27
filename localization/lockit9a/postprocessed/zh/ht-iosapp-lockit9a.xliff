@@ -18,13 +18,13 @@
         <source>Where the expert studied and trained</source>
         <target state="accepted">专家曾经学习和培训的地方</target>
       </trans-unit>
-      <trans-unit id="12" resname="Board certification&#40;s&#41;" restype="string" datatype="x-objective-c">
-        <source>Board certification&#40;s&#41;</source>
+      <trans-unit id="12" resname="Board certification(s)" restype="string" datatype="x-objective-c">
+        <source>Board certification(s)</source>
         <target state="accepted">认证</target>
       </trans-unit>
-      <trans-unit id="13" resname="Other professional accomplishments &#40;such as peer reviewed publications and awards&#41;" restype="string" datatype="x-objective-c">
-        <source>Other professional accomplishments &#40;such as peer reviewed publications and awards&#41;</source>
-        <target state="accepted">其他专业成就 &#40;如同行评审的出版物和奖项&#41;</target>
+      <trans-unit id="13" resname="Other professional accomplishments (such as peer reviewed publications and awards)" restype="string" datatype="x-objective-c">
+        <source>Other professional accomplishments (such as peer reviewed publications and awards)</source>
+        <target state="accepted">其他专业成就 (如同行评审的出版物和奖项)</target>
       </trans-unit>
       <trans-unit id="14" resname="Thanks, votes, and recommendations from members" restype="string" datatype="x-objective-c">
         <source>Thanks, votes, and recommendations from members</source>
@@ -39,15 +39,15 @@
   <file original="feelgood/iPadNative/Goals/FGGoalsBaseViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" restype="string" datatype="x-objective-c">
-        <source>We&apos;ll share more tips and checklists to help you with &quot;%@&quot;</source>
-        <target state="accepted">们会分享更多的小贴士和清单来帮助您&quot;%@&quot;</target>
+        <source>We'll share more tips and checklists to help you with "%@"</source>
+        <target state="accepted">们会分享更多的小贴士和清单来帮助您"%@"</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/iPadNative/Checklist/FGIpadChecklistViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="2" resname="Do you want to remove this action from your &quot;To Do&quot; list?" restype="string" datatype="x-objective-c">
-        <source>Do you want to remove this action from your &quot;To Do&quot; list?</source>
+        <source>Do you want to remove this action from your "To Do" list?</source>
         <target state="accepted">是否想将这项活动移出待做清单?</target>
       </trans-unit>
     </body>
@@ -55,32 +55,32 @@
   <file original="feelgood/ViewControllers/FGNuxSignupViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="6" resname="Please download the &quot;HealthTap for Doctors&quot; app to login or signup as a doctor with a valid US medical license" restype="string" datatype="x-objective-c">
-        <source>Please download the &quot;HealthTap for Doctors&quot; app to login or signup as a doctor with a valid US medical license</source>
-        <target state="accepted">请下载&quot;HealthTap for Doctors&quot;应用程序登陆或以美国有效的医疗执照注册成为医生</target>
+        <source>Please download the "HealthTap for Doctors" app to login or signup as a doctor with a valid US medical license</source>
+        <target state="accepted">请下载"HealthTap for Doctors"应用程序登陆或以美国有效的医疗执照注册成为医生</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGLiveChatViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="7" resname="A device connection code allows another app or medical device to securely send health data to this patient&apos;s chart. If you have an app requesting a &quot;device connection code&quot; or &quot;verification code&quot;, please use the code displayed here." restype="string" datatype="x-objective-c">
-        <source>A device connection code allows another app or medical device to securely send health data to this patient&apos;s chart. If you have an app requesting a &quot;device connection code&quot; or &quot;verification code&quot;, please use the code displayed here.</source>
-        <target state="accepted">设备连接代码允许其他应用程序或医疗设备将健康数据安全地发送到该患者的图表. 如果您的应用请求了&quot;设备连接代码”或“验证码&quot;，请使用此处显示的代码.</target>
+        <source>A device connection code allows another app or medical device to securely send health data to this patient's chart. If you have an app requesting a "device connection code" or "verification code", please use the code displayed here.</source>
+        <target state="accepted">设备连接代码允许其他应用程序或医疗设备将健康数据安全地发送到该患者的图表. 如果您的应用请求了"设备连接代码”或“验证码"，请使用此处显示的代码.</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTRateConsultCommentsViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="17" resname="Please provide details regarding &quot;%@&quot; &#40;Optional&#41;" restype="string" datatype="x-objective-c">
-        <source>Please provide details regarding &quot;%@&quot; &#40;Optional&#41;</source>
-        <target state="accepted">请提供有关“%@”的详细信息&quot;可选&quot;</target>
+      <trans-unit id="17" resname="Please provide details regarding &quot;%@&quot; (Optional)" restype="string" datatype="x-objective-c">
+        <source>Please provide details regarding "%@" (Optional)</source>
+        <target state="accepted">请提供有关“%@”的详细信息"可选"</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseTutorialView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="18" resname="When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone" restype="string" datatype="x-objective-c">
-        <source>When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone</source>
-        <target state="accepted">当您需要见一位医生，只要在Apple Watch或iPhone上简单按下&quot;DocNow&quot;的按钮即可</target>
+        <source>When you need to see a doctor,\nsimply tap the "DocNow" button\non your Apple Watch or iPhone</source>
+        <target state="accepted">当您需要见一位医生，只要在Apple Watch或iPhone上简单按下"DocNow"的按钮即可</target>
         <note annotates="source">Tutorial step 1</note>
       </trans-unit>
     </body>

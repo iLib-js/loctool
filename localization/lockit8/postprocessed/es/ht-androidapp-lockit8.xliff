@@ -23,15 +23,15 @@
   <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXProfileFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="6" resname="r119248257" restype="string" datatype="java">
-        <source>\nPlease restart the app/device and try again.</source>
-        <target>\nPor favor, reinicia la aplicación/dispositivo e intenta otra vez.</target>
+        <source>Please restart the app/device and try again.</source>
+        <target>Por favor, reinicia la aplicación/dispositivo e intenta otra vez.</target>
       </trans-unit>
     </body>
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerSearchFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="9" resname="r74563301" restype="string" datatype="java">
-        <source>Can&apos;t find a doctor?</source>
+        <source>Can't find a doctor?</source>
         <target>¿No puedes encontrar un doctor?</target>
       </trans-unit>
     </body>
@@ -87,15 +87,15 @@
         <target>{user_name} te está regalando ${price} de descuento para hablar con doctores de HealthTap</target>
       </trans-unit>
       <trans-unit id="21" resname="gift_refer_linkedin_summary" restype="string" datatype="x-android-resource">
-        <source>Get ${price} off video or text chat consults with your doctor or specialist on healthtap—advice &amp; prescriptions! :&#41;</source>
-        <target>Obtén ${price} de descuento para consultas de chat o video con tu doctor o especialista en HealthTap — ¡consejo &amp; recetas! :&#41;</target>
+        <source>Get ${price} off video or text chat consults with your doctor or specialist on healthtap—advice &amp; prescriptions! :)</source>
+        <target>Obtén ${price} de descuento para consultas de chat o video con tu doctor o especialista en HealthTap — ¡consejo &amp; recetas! :)</target>
       </trans-unit>
       <trans-unit id="22" resname="symptom_triage_instructional_phr_title" restype="string" datatype="x-android-resource">
         <source>Hi, %s</source>
         <target>Hola, %s</target>
       </trans-unit>
       <trans-unit id="23" resname="symptom_triage_instructional_phr_content" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d love to get to know %s better.</source>
+        <source>I\'d love to get to know %s better.</source>
         <target>Me encantaría conocer mejor a %s.</target>
       </trans-unit>
     </body>

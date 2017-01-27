@@ -26,11 +26,11 @@
         <source>Please tell us the following about your doctor so we can invite them to provide you Virtual Care with your health insurance</source>
         <target state="accepted">为了邀请您的医生来HealthTap为您提供可由保险支付的在线医疗咨询，请告诉我们以下关于您的医生的情况</target>
       </trans-unit>
-      <trans-unit id="6" resname="Your clinician's name" restype="string" datatype="javascript">
+      <trans-unit id="6" resname="Your clinician&apos;s name" restype="string" datatype="javascript">
         <source>Your clinician's name</source>
         <target state="accepted">您医师的名字</target>
       </trans-unit>
-      <trans-unit id="7" resname="Your doctor's name" restype="string" datatype="javascript">
+      <trans-unit id="7" resname="Your doctor&apos;s name" restype="string" datatype="javascript">
         <source>Your doctor's name</source>
         <target state="accepted">您医生的名字</target>
       </trans-unit>

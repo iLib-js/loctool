@@ -35,7 +35,7 @@
   <file original="feelgood/ViewControllers/FGMomentDetailViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="7" resname="Please don&apos;t include a followup question in your note. To do so, {start}ask a question{end}" restype="string" datatype="x-objective-c">
-        <source>Please don&apos;t include a followup question in your note. To do so, {start}ask a question{end}</source>
+        <source>Please don't include a followup question in your note. To do so, {start}ask a question{end}</source>
         <target>Por favor, no incluyas una pregunta de seguimiento en tu nota. Para hacerlo, {start}haz una pregunta.{end}</target>
       </trans-unit>
     </body>
@@ -178,7 +178,7 @@
       <trans-unit id="28" resname="wLz-4h-21J.text" restype="string" datatype="x-xib">
         <source>Show in which language?</source>
         <target>¿Mostar en qué idioma?</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Show in which language?&quot;; ObjectID = &quot;wLz-4h-21J&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Show in which language?"; ObjectID = "wLz-4h-21J";</note>
       </trans-unit>
     </body>
   </file>

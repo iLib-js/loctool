@@ -34,7 +34,7 @@
   </file>
   <file original="feelgood/ViewControllers/FGMomentDetailViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="7" resname="Please don't include a followup question in your note. To do so, {start}ask a question{end}" restype="string" datatype="x-objective-c">
+      <trans-unit id="7" resname="Please don&apos;t include a followup question in your note. To do so, {start}ask a question{end}" restype="string" datatype="x-objective-c">
         <source>Please don't include a followup question in your note. To do so, {start}ask a question{end}</source>
         <target>请不要在您的注意事项中包含后续问题。若想这样做，{start}就咨询一个问题{end}</target>
       </trans-unit>

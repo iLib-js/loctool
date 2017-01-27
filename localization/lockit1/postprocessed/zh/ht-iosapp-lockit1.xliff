@@ -6128,7 +6128,7 @@ and more</source>
         <target>%@ 赞成</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id=" %@'s " resname=" %@'s " restype="string" datatype="x-objective-c">
+      <trans-unit id=" %@&apos;s " resname=" %@&apos;s " restype="string" datatype="x-objective-c">
         <source>%@'s</source>
         <target>%@'s</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -6163,7 +6163,7 @@ and more</source>
         <target>1名医生参与讨论</target>
         <note annotates="source">to indicate one more doctor weighed in</note>
       </trans-unit>
-      <trans-unit id=" Are you sure you'd like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor." resname=" Are you sure you'd like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor." restype="string" datatype="x-objective-c">
+      <trans-unit id=" Are you sure you&apos;d like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor." resname=" Are you sure you&apos;d like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor." restype="string" datatype="x-objective-c">
         <source>Are you sure you'd like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor.</source>
         <target>您确定要取消此信用卡和您账户的关联吗？您将需要在下次咨询医生时提供相关信息。</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -6398,12 +6398,12 @@ accepted</source>
         <target>%@ 添加此清单</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="%@ agreed with %@'s answer." resname="%@ agreed with %@'s answer." restype="string" datatype="x-objective-c">
+      <trans-unit id="%@ agreed with %@&apos;s answer." resname="%@ agreed with %@&apos;s answer." restype="string" datatype="x-objective-c">
         <source>%1$@ agreed with %2$@'s answer.</source>
         <target>%1$@ 同意%2$@'s 回答。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="%@ agrees with %@'s answer:" resname="%@ agrees with %@'s answer:" restype="string" datatype="x-objective-c">
+      <trans-unit id="%@ agrees with %@&apos;s answer:" resname="%@ agrees with %@&apos;s answer:" restype="string" datatype="x-objective-c">
         <source>%1$@ agrees with %2$@'s answer:</source>
         <target>%1$@ 同意%2$@'s 回答。</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -6448,7 +6448,7 @@ accepted</source>
         <target>%@ 感谢您的支持。您在清单上做了什么？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="%@ appreciates your support. Why don't you try a few health goals yourself?" resname="%@ appreciates your support. Why don't you try a few health goals yourself?" restype="string" datatype="x-objective-c">
+      <trans-unit id="%@ appreciates your support. Why don&apos;t you try a few health goals yourself?" resname="%@ appreciates your support. Why don&apos;t you try a few health goals yourself?" restype="string" datatype="x-objective-c">
         <source>%@ appreciates your support. Why don't you try a few health goals yourself?</source>
         <target>%@ 感谢您的支持。您为什么不尝试一些健康的目标呢？</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -6458,19 +6458,19 @@ accepted</source>
         <target>%@个清单</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="%@ commented on  \r\n%@'s answer" resname="%@ commented on  \r\n%@'s answer" restype="string" datatype="x-objective-c">
+      <trans-unit id="%@ commented on  \r\n%@&apos;s answer" resname="%@ commented on  \r\n%@&apos;s answer" restype="string" datatype="x-objective-c">
         <source>%1$@ commented on  
 %2$@'s answer</source>
         <target>%1$@ 对
 %2$@的回答</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="%@ commented on %@'s answer" resname="%@ commented on %@'s answer" restype="string" datatype="x-objective-c">
+      <trans-unit id="%@ commented on %@&apos;s answer" resname="%@ commented on %@&apos;s answer" restype="string" datatype="x-objective-c">
         <source>%1$@ commented on %2$@'s answer</source>
         <target>%1$@ 同意%2$@'s 回答。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="%@ commented on \r\n%@'s answer:" resname="%@ commented on \r\n%@'s answer:" restype="string" datatype="x-objective-c">
+      <trans-unit id="%@ commented on \r\n%@&apos;s answer:" resname="%@ commented on \r\n%@&apos;s answer:" restype="string" datatype="x-objective-c">
         <source>%1$@ commented on 
 %2$@'s answer:</source>
         <target>%1$@ 对
@@ -6532,7 +6532,7 @@ accepted</source>
         <target>%@认为这有帮助</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="%@ hasn't created any checklists yet." resname="%@ hasn't created any checklists yet." restype="string" datatype="x-objective-c">
+      <trans-unit id="%@ hasn&apos;t created any checklists yet." resname="%@ hasn&apos;t created any checklists yet." restype="string" datatype="x-objective-c">
         <source>%@ hasn't created any checklists yet.</source>
         <target>%@医生还没有创建任何清单。</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -6602,7 +6602,7 @@ accepted</source>
         <target>从业%1$@%2$@年</target>
         <note annotates="source">Para1: speciality and experience, Para2: years in practice</note>
       </trans-unit>
-      <trans-unit id="%@'s" resname="%@'s" restype="string" datatype="x-objective-c">
+      <trans-unit id="%@&apos;s" resname="%@&apos;s" restype="string" datatype="x-objective-c">
         <source>%@'s</source>
         <target>%@'s</target>
         <note annotates="source">Para: word to show ownership after person's name</note>
@@ -7584,12 +7584,12 @@ anytime for free</source>
         <target>我们可以让您感觉更好吗？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Can't find an answer? " resname="Can't find an answer? " restype="string" datatype="x-objective-c">
+      <trans-unit id="Can&apos;t find an answer? " resname="Can&apos;t find an answer? " restype="string" datatype="x-objective-c">
         <source>Can't find an answer?</source>
         <target>找不到回答？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Can't find your doctor? Invite them ›" resname="Can't find your doctor? Invite them ›" restype="string" datatype="x-objective-c">
+      <trans-unit id="Can&apos;t find your doctor? Invite them ›" resname="Can&apos;t find your doctor? Invite them ›" restype="string" datatype="x-objective-c">
         <source>Can't find your doctor? Invite them ›</source>
         <target>找不到您医生？邀请他们</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -8323,7 +8323,7 @@ convenience</source>
         <target>无法获得价格信息</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Couldn't find the answer I was looking for" resname="Couldn't find the answer I was looking for" restype="string" datatype="x-objective-c">
+      <trans-unit id="Couldn&apos;t find the answer I was looking for" resname="Couldn&apos;t find the answer I was looking for" restype="string" datatype="x-objective-c">
         <source>Couldn't find the answer I was looking for</source>
         <target>无法找到我正在寻找的回答</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -8398,7 +8398,7 @@ convenience</source>
         <target>设备</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Did %@'s any close relative (sibling, parent, grandparent) die before the age of 60 from illness? If so what illness or condition caused it?" resname="Did %@'s any close relative (sibling, parent, grandparent) die before the age of 60 from illness? If so what illness or condition caused it?" restype="string" datatype="x-objective-c">
+      <trans-unit id="Did %@&apos;s any close relative (sibling, parent, grandparent) die before the age of 60 from illness? If so what illness or condition caused it?" resname="Did %@&apos;s any close relative (sibling, parent, grandparent) die before the age of 60 from illness? If so what illness or condition caused it?" restype="string" datatype="x-objective-c">
         <source>Did %@'s any close relative (sibling, parent, grandparent) die before the age of 60 from illness? If so what illness or condition caused it?</source>
         <target>%@的近亲（兄弟姐妹、父母、祖父母）是否有因为疾病死于60岁前的情况？如果有那么是什么疾病或症状导致的？</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -8532,7 +8532,7 @@ Get the right care for your needs - consult a specialist today!</source>
         <note annotates="source">popup body before canceling an operation</note>
       </trans-unit>
       <trans-unit id="Do you want to remove this action from your &quot;To Do&quot; list?" resname="Do you want to remove this action from your &amp;quot;To Do&amp;quot; list?" restype="string" datatype="x-objective-c">
-        <source>Do you want to remove this action from your &quot;To Do&quot; list?</source>
+        <source>Do you want to remove this action from your "To Do" list?</source>
         <target>您是否想将这项活动移出待做清单？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -8566,7 +8566,7 @@ Get the right care for your needs - consult a specialist today!</source>
         <target>临床态度</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Doctor didn't answer my question" resname="Doctor didn't answer my question" restype="string" datatype="x-objective-c">
+      <trans-unit id="Doctor didn&apos;t answer my question" resname="Doctor didn&apos;t answer my question" restype="string" datatype="x-objective-c">
         <source>Doctor didn't answer my question</source>
         <target>医生没有回答我的问题</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -8651,17 +8651,17 @@ Get the right care for your needs - consult a specialist today!</source>
         <target>%@使用过以下娱乐性药物吗？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Does %@'s grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)" resname="Does %@'s grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)" restype="string" datatype="x-objective-c">
+      <trans-unit id="Does %@&apos;s grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)" resname="Does %@&apos;s grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)" restype="string" datatype="x-objective-c">
         <source>Does %@'s grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
         <target>%@健在的祖父母、父母或兄弟姐妹有什么主要病史吗？（危机生命还是其他情况？）</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Does %@'s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)" resname="Does %@'s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)" restype="string" datatype="x-objective-c">
+      <trans-unit id="Does %@&apos;s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)" resname="Does %@&apos;s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)" restype="string" datatype="x-objective-c">
         <source>Does %@'s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
         <target>%@健在的祖父母、父母或兄弟姐妹有什么主要病史吗？（危机生命还是其他情况？）</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Don't have it" resname="Don't have it" restype="string" datatype="x-objective-c">
+      <trans-unit id="Don&apos;t have it" resname="Don&apos;t have it" restype="string" datatype="x-objective-c">
         <source>Don't have it</source>
         <target>没有</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -8716,7 +8716,7 @@ Get the right care for your needs - consult a specialist today!</source>
         <target>电子邮件</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Enter %@%@'s Keycode" resname="Enter %@%@'s Keycode" restype="string" datatype="x-objective-c">
+      <trans-unit id="Enter %@%@&apos;s Keycode" resname="Enter %@%@&apos;s Keycode" restype="string" datatype="x-objective-c">
         <source>Enter %1$@%2$@'s Keycode</source>
         <target>输入%1$@%2$@的键码</target>
         <note annotates="source">Para1: title, Para2: last name</note>
@@ -8761,7 +8761,7 @@ Get the right care for your needs - consult a specialist today!</source>
         <target>输入您的保险提供商</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Enter your question and we'll suggest specialists for you to select from:" resname="Enter your question and we'll suggest specialists for you to select from:" restype="string" datatype="x-objective-c">
+      <trans-unit id="Enter your question and we&apos;ll suggest specialists for you to select from:" resname="Enter your question and we&apos;ll suggest specialists for you to select from:" restype="string" datatype="x-objective-c">
         <source>Enter your question and we'll suggest specialists for you to select from:</source>
         <target>输入您的问题，我们会向您推荐专家，供您选择：</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -8953,7 +8953,7 @@ subscription</source>
   Feel Good :)</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Finish this sentence:\nI'd like to accomplish my goal of..." resname="Finish this sentence:\nI'd like to accomplish my goal of..." restype="string" datatype="x-objective-c">
+      <trans-unit id="Finish this sentence:\nI&apos;d like to accomplish my goal of..." resname="Finish this sentence:\nI&apos;d like to accomplish my goal of..." restype="string" datatype="x-objective-c">
         <source>Finish this sentence:
 I'd like to accomplish my goal of...</source>
         <target>完成这句话：
@@ -9579,7 +9579,7 @@ members in your area are experiencing %2$@. How can our doctors help you?</sourc
         <target>您希望多久获得帮助？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="How would you classify %@'s consumption of alcohol?" resname="How would you classify %@'s consumption of alcohol?" restype="string" datatype="x-objective-c">
+      <trans-unit id="How would you classify %@&apos;s consumption of alcohol?" resname="How would you classify %@&apos;s consumption of alcohol?" restype="string" datatype="x-objective-c">
         <source>How would you classify %@'s consumption of alcohol?</source>
         <target>您如何分类%@'s的饮酒量？</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -9651,37 +9651,37 @@ Would you like to connect?</source>
         <target>我在...受过教育和训练</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="I'd like to refer you to:" resname="I'd like to refer you to:" restype="string" datatype="x-objective-c">
+      <trans-unit id="I&apos;d like to refer you to:" resname="I&apos;d like to refer you to:" restype="string" datatype="x-objective-c">
         <source>I'd like to refer you to:</source>
         <target>我想推荐您：</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="I'd love your help to accomplish my goal of %@. Follow this link to see how: %@" resname="I'd love your help to accomplish my goal of %@. Follow this link to see how: %@" restype="string" datatype="x-objective-c">
+      <trans-unit id="I&apos;d love your help to accomplish my goal of %@. Follow this link to see how: %@" resname="I&apos;d love your help to accomplish my goal of %@. Follow this link to see how: %@" restype="string" datatype="x-objective-c">
         <source>I'd love your help to accomplish my goal of %1$@. Follow this link to see how: %2$@</source>
         <target>我很喜欢您来帮助我完成我的目标% 1美元@。点击此链接查看如何：%2$@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="I'm affiliated with" resname="I'm affiliated with" restype="string" datatype="x-objective-c">
+      <trans-unit id="I&apos;m affiliated with" resname="I&apos;m affiliated with" restype="string" datatype="x-objective-c">
         <source>I'm affiliated with</source>
         <target>我隶属于</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="I'm known for" resname="I'm known for" restype="string" datatype="x-objective-c">
+      <trans-unit id="I&apos;m known for" resname="I&apos;m known for" restype="string" datatype="x-objective-c">
         <source>I'm known for</source>
         <target>我专攻</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="I've ordered a test for you via %@. Please schedule an appointment with a local test center that is convenient for you." resname="I've ordered a test for you via %@. Please schedule an appointment with a local test center that is convenient for you." restype="string" datatype="x-objective-c">
+      <trans-unit id="I&apos;ve ordered a test for you via %@. Please schedule an appointment with a local test center that is convenient for you." resname="I&apos;ve ordered a test for you via %@. Please schedule an appointment with a local test center that is convenient for you." restype="string" datatype="x-objective-c">
         <source>I've ordered a test for you via %@. Please schedule an appointment with a local test center that is convenient for you.</source>
         <target>我已通过%@为您安排了检验。请在方便的当地检验中心安排预约。</target>
         <note annotates="source">SOAP note lab test request</note>
       </trans-unit>
-      <trans-unit id="I've published" resname="I've published" restype="string" datatype="x-objective-c">
+      <trans-unit id="I&apos;ve published" resname="I&apos;ve published" restype="string" datatype="x-objective-c">
         <source>I've published</source>
         <target>我已经出版了</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="I've won the following awards" resname="I've won the following awards" restype="string" datatype="x-objective-c">
+      <trans-unit id="I&apos;ve won the following awards" resname="I&apos;ve won the following awards" restype="string" datatype="x-objective-c">
         <source>I've won the following awards</source>
         <target>我赢了以下奖项</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -9691,7 +9691,7 @@ Would you like to connect?</source>
         <target>预产期是何时？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="If you know it, when its %@'s expected due date?" resname="If you know it, when its %@'s expected due date?" restype="string" datatype="x-objective-c">
+      <trans-unit id="If you know it, when its %@&apos;s expected due date?" resname="If you know it, when its %@&apos;s expected due date?" restype="string" datatype="x-objective-c">
         <source>If you know it, when its %@'s expected due date?</source>
         <target>%@'s的预产期是何时？</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -9706,7 +9706,7 @@ Would you like to connect?</source>
         <target>如果您认为您需要紧急治疗，请立即打电话给%1$@或前往%2$@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="If your question wasn't already\nanswered, we'll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" resname="If your question wasn't already\nanswered, we'll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" restype="string" datatype="x-objective-c">
+      <trans-unit id="If your question wasn&apos;t already\nanswered, we&apos;ll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" resname="If your question wasn&apos;t already\nanswered, we&apos;ll send it to our\nnetwork of top U.S. doctors across\n130+ specialties" restype="string" datatype="x-objective-c">
         <source>If your question wasn't already
 answered, we'll send it to our
 network of top U.S. doctors across
@@ -9841,7 +9841,7 @@ only a tap away</source>
         <target>邀请朋友和家人</target>
         <note annotates="source">page title</note>
       </trans-unit>
-      <trans-unit id="Invite friends &amp; family and they'll get $5 off their next doctor consult!" resname="Invite friends &amp; family and they'll get $5 off their next doctor consult!" restype="string" datatype="x-objective-c">
+      <trans-unit id="Invite friends &amp; family and they&apos;ll get $5 off their next doctor consult!" resname="Invite friends &amp; family and they&apos;ll get $5 off their next doctor consult!" restype="string" datatype="x-objective-c">
         <source>Invite friends &amp; family and they'll get $5 off their next doctor consult!</source>
         <target>邀请朋友和家人，他们将下一次医生咨询将优惠5美元！</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -9911,7 +9911,7 @@ only a tap away</source>
         <target>只是咨询</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Just sign up or log in — it's free and easy!" resname="Just sign up or log in — it's free and easy!" restype="string" datatype="x-objective-c">
+      <trans-unit id="Just sign up or log in — it&apos;s free and easy!" resname="Just sign up or log in — it&apos;s free and easy!" restype="string" datatype="x-objective-c">
         <source>Just sign up or log in — it's free and easy!</source>
         <target>只需注册或登录——免费且简单！</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -10730,18 +10730,18 @@ educational answers</source>
         <target>计划：</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Please allow camera access from:\nSettings -> HealthTap -> Camera" resname="Please allow camera access from:\nSettings -> HealthTap -> Camera" restype="string" datatype="x-objective-c">
+      <trans-unit id="Please allow camera access from:\nSettings -&gt; HealthTap -&gt; Camera" resname="Please allow camera access from:\nSettings -&gt; HealthTap -&gt; Camera" restype="string" datatype="x-objective-c">
         <source>Please allow camera access from:
-Settings -> HealthTap -> Camera</source>
+Settings -&gt; HealthTap -&gt; Camera</source>
         <target>请允许相机访问：
-设置 - > HealthTap - >相机</target>
+设置 - &gt; HealthTap - &gt;相机</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Please allow microphone access from:\n Settings -> HealthTap -> Microphone" resname="Please allow microphone access from:\n Settings -> HealthTap -> Microphone" restype="string" datatype="x-objective-c">
+      <trans-unit id="Please allow microphone access from:\n Settings -&gt; HealthTap -&gt; Microphone" resname="Please allow microphone access from:\n Settings -&gt; HealthTap -&gt; Microphone" restype="string" datatype="x-objective-c">
         <source>Please allow microphone access from:
- Settings -> HealthTap -> Microphone</source>
+ Settings -&gt; HealthTap -&gt; Microphone</source>
         <target>请允许麦克风访问：
- 设置 - > HealthTap - >麦克风</target>
+ 设置 - &gt; HealthTap - &gt;麦克风</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Please check" resname="Please check" restype="string" datatype="x-objective-c">
@@ -10796,14 +10796,14 @@ for your consult</source>
         <target>请让我们知道我们如何让您的HealthTap体验更好...</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Please log in to your Facebook account from Settings > Facebook" resname="Please log in to your Facebook account from Settings > Facebook" restype="string" datatype="x-objective-c">
-        <source>Please log in to your Facebook account from Settings > Facebook</source>
-        <target>请从设置> Facebook登录您的Facebook帐户</target>
+      <trans-unit id="Please log in to your Facebook account from Settings &gt; Facebook" resname="Please log in to your Facebook account from Settings &gt; Facebook" restype="string" datatype="x-objective-c">
+        <source>Please log in to your Facebook account from Settings &gt; Facebook</source>
+        <target>请从设置&gt; Facebook登录您的Facebook帐户</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Please log in to your Twitter account from Settings > Twitter" resname="Please log in to your Twitter account from Settings > Twitter" restype="string" datatype="x-objective-c">
-        <source>Please log in to your Twitter account from Settings > Twitter</source>
-        <target>请从设置> Twitter登录到您的Twitter帐户</target>
+      <trans-unit id="Please log in to your Twitter account from Settings &gt; Twitter" resname="Please log in to your Twitter account from Settings &gt; Twitter" restype="string" datatype="x-objective-c">
+        <source>Please log in to your Twitter account from Settings &gt; Twitter</source>
+        <target>请从设置&gt; Twitter登录到您的Twitter帐户</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Please provide a contact number?" resname="Please provide a contact number?" restype="string" datatype="x-objective-c">
@@ -10832,7 +10832,7 @@ for your consult</source>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Please provide details regarding &quot;%@&quot; (Optional)" resname="Please provide details regarding &amp;quot;%@&amp;quot; (Optional)" restype="string" datatype="x-objective-c">
-        <source>Please provide details regarding &quot;%@&quot; (Optional)</source>
+        <source>Please provide details regarding "%@" (Optional)</source>
         <target>请提供有关“%@”的详细信息（可选）</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
@@ -10856,7 +10856,7 @@ for your consult</source>
         <target>请在设置更改后重新启动HealthTap</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Please share %@'s obstetrics/pregnancy history" resname="Please share %@'s obstetrics/pregnancy history" restype="string" datatype="x-objective-c">
+      <trans-unit id="Please share %@&apos;s obstetrics/pregnancy history" resname="Please share %@&apos;s obstetrics/pregnancy history" restype="string" datatype="x-objective-c">
         <source>Please share %@'s obstetrics/pregnancy history</source>
         <target>请分享%@的产科/怀孕史</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -10952,7 +10952,7 @@ doctor can confirm you as a patient</source>
         <target>主姓氏</target>
         <note annotates="source">Insurance primary last name</note>
       </trans-unit>
-      <trans-unit id="Primary plan holder's gender:" resname="Primary plan holder's gender:" restype="string" datatype="x-objective-c">
+      <trans-unit id="Primary plan holder&apos;s gender:" resname="Primary plan holder&apos;s gender:" restype="string" datatype="x-objective-c">
         <source>Primary plan holder's gender:</source>
         <target>Prime计划持有人的性别</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -11739,7 +11739,7 @@ Check the spelling or try another search.</source>
         <target>对不起，这里有一个问题</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Sorry, we don't understand your question. Please try again and rephrase it so our doctors can respond to your concern." resname="Sorry, we don't understand your question. Please try again and rephrase it so our doctors can respond to your concern." restype="string" datatype="x-objective-c">
+      <trans-unit id="Sorry, we don&apos;t understand your question. Please try again and rephrase it so our doctors can respond to your concern." resname="Sorry, we don&apos;t understand your question. Please try again and rephrase it so our doctors can respond to your concern." restype="string" datatype="x-objective-c">
         <source>Sorry, we don't understand your question. Please try again and rephrase it so our doctors can respond to your concern.</source>
         <target>很抱歉，我们无法理解您的问题。请重新尝试并重新组织语句，这样我们的医生可以回复您的担忧。</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -12127,7 +12127,7 @@ Would you like to perform another consult?</source>
         <target>谢谢，这份清单让我感觉很好！</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="That's amazing" resname="That's amazing" restype="string" datatype="x-objective-c">
+      <trans-unit id="That&apos;s amazing" resname="That&apos;s amazing" restype="string" datatype="x-objective-c">
         <source>That's amazing</source>
         <target>真了不起</target>
         <note annotates="source">congratulate</note>
@@ -12142,7 +12142,7 @@ Would you like to perform another consult?</source>
         <target>现在医生与您只有一个点击的距离——给您最终的安心。请求咨询。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="The doctor's summary note will be sent to you shortly!" resname="The doctor's summary note will be sent to you shortly!" restype="string" datatype="x-objective-c">
+      <trans-unit id="The doctor&apos;s summary note will be sent to you shortly!" resname="The doctor&apos;s summary note will be sent to you shortly!" restype="string" datatype="x-objective-c">
         <source>The doctor's summary note will be sent to you shortly!</source>
         <target>医生的简历将很快发送给您！</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -12209,7 +12209,7 @@ Alternatively, you may send your question for one or more answers from our %@ to
         <target>预约无法进行，因为安排时间已经过期。如果需要，请进行另一个预约</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="This device doesn't support sending a message" resname="This device doesn't support sending a message" restype="string" datatype="x-objective-c">
+      <trans-unit id="This device doesn&apos;t support sending a message" resname="This device doesn&apos;t support sending a message" restype="string" datatype="x-objective-c">
         <source>This device doesn't support sending a message</source>
         <target>此设备不支持发送消息</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -12640,7 +12640,7 @@ you stay healthy</source>
         <target>等待结果</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Want a doctor's help with" resname="Want a doctor's help with" restype="string" datatype="x-objective-c">
+      <trans-unit id="Want a doctor&apos;s help with" resname="Want a doctor&apos;s help with" restype="string" datatype="x-objective-c">
         <source>Want a doctor's help with</source>
         <target>想要医生帮助...</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -12675,7 +12675,7 @@ you stay healthy</source>
         <target>我们非常致力于帮助您生活更健康和更快乐。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We couldn't remove your card. Please try again or contact support if the problem persists." resname="We couldn't remove your card. Please try again or contact support if the problem persists." restype="string" datatype="x-objective-c">
+      <trans-unit id="We couldn&apos;t remove your card. Please try again or contact support if the problem persists." resname="We couldn&apos;t remove your card. Please try again or contact support if the problem persists." restype="string" datatype="x-objective-c">
         <source>We couldn't remove your card. Please try again or contact support if the problem persists.</source>
         <target>我们无法移除您的银行卡。请再次尝试或者如果仍有问题可以联系服务人员。</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -12695,12 +12695,12 @@ you stay healthy</source>
         <target>当%@接受时，我们会通知您。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We'll 'tap' %@ to let %@ know you'd like %@ to do this" resname="We'll 'tap' %@ to let %@ know you'd like %@ to do this" restype="string" datatype="x-objective-c">
+      <trans-unit id="We&apos;ll &apos;tap&apos; %@ to let %@ know you&apos;d like %@ to do this" resname="We&apos;ll &apos;tap&apos; %@ to let %@ know you&apos;d like %@ to do this" restype="string" datatype="x-objective-c">
         <source>We'll 'tap' %1$@ to let %2$@ know you'd like %3$@ to do this</source>
         <target>我们将'tap'%1 $ @让%2 $ @知道您想要%3 $ @这样做</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We'll immediately start calling one\nof our doctors to help you\n(you won't be charged until the\ndoctor picks up)" resname="We'll immediately start calling one\nof our doctors to help you\n(you won't be charged until the\ndoctor picks up)" restype="string" datatype="x-objective-c">
+      <trans-unit id="We&apos;ll immediately start calling one\nof our doctors to help you\n(you won&apos;t be charged until the\ndoctor picks up)" resname="We&apos;ll immediately start calling one\nof our doctors to help you\n(you won&apos;t be charged until the\ndoctor picks up)" restype="string" datatype="x-objective-c">
         <source>We'll immediately start calling one
 of our doctors to help you
 (you won't be charged until the
@@ -12708,42 +12708,42 @@ doctor picks up)</source>
         <target>我们会立即开始联系我们中的一名医生来帮助您（医生接起电话前您不需要付费）</target>
         <note annotates="source">Tutorial step 2</note>
       </trans-unit>
-      <trans-unit id="We'll let you know when doctors add more answers or comments." resname="We'll let you know when doctors add more answers or comments." restype="string" datatype="x-objective-c">
+      <trans-unit id="We&apos;ll let you know when doctors add more answers or comments." resname="We&apos;ll let you know when doctors add more answers or comments." restype="string" datatype="x-objective-c">
         <source>We'll let you know when doctors add more answers or comments.</source>
         <target>我们会让您知道医生添加更多的回答和评论。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We'll miss you!" resname="We'll miss you!" restype="string" datatype="x-objective-c">
+      <trans-unit id="We&apos;ll miss you!" resname="We&apos;ll miss you!" restype="string" datatype="x-objective-c">
         <source>We'll miss you!</source>
         <target>我们会想念您！</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We'll share more doctor insights related to this topic from now on." resname="We'll share more doctor insights related to this topic from now on." restype="string" datatype="x-objective-c">
+      <trans-unit id="We&apos;ll share more doctor insights related to this topic from now on." resname="We&apos;ll share more doctor insights related to this topic from now on." restype="string" datatype="x-objective-c">
         <source>We'll share more doctor insights related to this topic from now on.</source>
         <target>从现在起我们将分享与这个话题相关的更多的医生建议。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We'll share more tips and checklists to help you with &quot;%@&quot;" resname="We'll share more tips and checklists to help you with &amp;quot;%@&amp;quot;" restype="string" datatype="x-objective-c">
+      <trans-unit id="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" resname="We&apos;ll share more tips and checklists to help you with &amp;quot;%@&amp;quot;" restype="string" datatype="x-objective-c">
         <source>We'll share more tips and checklists to help you with "%@"</source>
         <target>我们会分享更多的小贴士和清单来帮助您"%@"</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We're committed to providing the most reliable, high quality, and compassionate service. Your feedback helps us improve the service for you and millions of others." resname="We're committed to providing the most reliable, high quality, and compassionate service. Your feedback helps us improve the service for you and millions of others." restype="string" datatype="x-objective-c">
+      <trans-unit id="We&apos;re committed to providing the most reliable, high quality, and compassionate service. Your feedback helps us improve the service for you and millions of others." resname="We&apos;re committed to providing the most reliable, high quality, and compassionate service. Your feedback helps us improve the service for you and millions of others." restype="string" datatype="x-objective-c">
         <source>We're committed to providing the most reliable, high quality, and compassionate service. Your feedback helps us improve the service for you and millions of others.</source>
         <target>我们致力于为您提供最可靠的、高质量的热忱服务。您的反馈将帮助我们提升服务，更好的为您和千百万人服务。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We're sorry but we are unable to start your appointment at this time." resname="We're sorry but we are unable to start your appointment at this time." restype="string" datatype="x-objective-c">
+      <trans-unit id="We&apos;re sorry but we are unable to start your appointment at this time." resname="We&apos;re sorry but we are unable to start your appointment at this time." restype="string" datatype="x-objective-c">
         <source>We're sorry but we are unable to start your appointment at this time.</source>
         <target>很抱歉，我们目前无法开始您的预约。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We're sorry to hear that..." resname="We're sorry to hear that..." restype="string" datatype="x-objective-c">
+      <trans-unit id="We&apos;re sorry to hear that..." resname="We&apos;re sorry to hear that..." restype="string" datatype="x-objective-c">
         <source>We're sorry to hear that...</source>
         <target>很遗憾听到该消息…</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="We're sure %@ your encouragement and support!" resname="We're sure %@ your encouragement and support!" restype="string" datatype="x-objective-c">
+      <trans-unit id="We&apos;re sure %@ your encouragement and support!" resname="We&apos;re sure %@ your encouragement and support!" restype="string" datatype="x-objective-c">
         <source>We're sure %@ your encouragement and support!</source>
         <target>我们相信%@您的鼓励和支持！</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -12788,12 +12788,12 @@ doctor picks up)</source>
         <target>%@的性别?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="What is %@'s ethnicity?" resname="What is %@'s ethnicity?" restype="string" datatype="x-objective-c">
+      <trans-unit id="What is %@&apos;s ethnicity?" resname="What is %@&apos;s ethnicity?" restype="string" datatype="x-objective-c">
         <source>What is %@'s ethnicity?</source>
         <target>什么是%@的种族？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="What is %@'s height and weight?" resname="What is %@'s height and weight?" restype="string" datatype="x-objective-c">
+      <trans-unit id="What is %@&apos;s height and weight?" resname="What is %@&apos;s height and weight?" restype="string" datatype="x-objective-c">
         <source>What is %@'s height and weight?</source>
         <target>%@'s的身高和体重？</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -12803,7 +12803,7 @@ doctor picks up)</source>
         <target>他们的姓名？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="What is this person's name?" resname="What is this person's name?" restype="string" datatype="x-objective-c">
+      <trans-unit id="What is this person&apos;s name?" resname="What is this person&apos;s name?" restype="string" datatype="x-objective-c">
         <source>What is this person's name?</source>
         <target>这个人的名字是？</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -12868,17 +12868,17 @@ doctor picks up)</source>
         <target>您想咨询医生什么？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="What you'll experience" resname="What you'll experience" restype="string" datatype="x-objective-c">
+      <trans-unit id="What you&apos;ll experience" resname="What you&apos;ll experience" restype="string" datatype="x-objective-c">
         <source>What you'll experience</source>
         <target>您将会体验什么</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="What's your health goal?" resname="What's your health goal?" restype="string" datatype="x-objective-c">
+      <trans-unit id="What&apos;s your health goal?" resname="What&apos;s your health goal?" restype="string" datatype="x-objective-c">
         <source>What's your health goal?</source>
         <target>您的健康目标是什么？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="What's your name?" resname="What's your name?" restype="string" datatype="x-objective-c">
+      <trans-unit id="What&apos;s your name?" resname="What&apos;s your name?" restype="string" datatype="x-objective-c">
         <source>What's your name?</source>
         <target>您的姓名?</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -12905,7 +12905,7 @@ Any medical problem that is life threatening. For example, if you experience any
         <target>%@什么时候出生?</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="When was %@'s last menstrual period? " resname="When was %@'s last menstrual period? " restype="string" datatype="x-objective-c">
+      <trans-unit id="When was %@&apos;s last menstrual period? " resname="When was %@&apos;s last menstrual period? " restype="string" datatype="x-objective-c">
         <source>When was %@'s last menstrual period?</source>
         <target>%@的末次月经是什么时候？</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -13119,7 +13119,7 @@ on your Apple Watch or iPhone</source>
         <target>您</target>
         <note annotates="source">Tab bar label</note>
       </trans-unit>
-      <trans-unit id="You agree to HealthTap's Terms and Privacy Policy." resname="You agree to HealthTap's Terms and Privacy Policy." restype="string" datatype="x-objective-c">
+      <trans-unit id="You agree to HealthTap&apos;s Terms and Privacy Policy." resname="You agree to HealthTap&apos;s Terms and Privacy Policy." restype="string" datatype="x-objective-c">
         <source>You agree to HealthTap's Terms and Privacy Policy.</source>
         <target>您同意HealthTap的条款和隐私权政策</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -13219,37 +13219,37 @@ on your Apple Watch or iPhone</source>
         <target>您将会进入%@网站，来找到一家当地检测中心并安排一次预约。系统将要求您登录或创建安全帐户。</target>
         <note annotates="source">SOAP note lab test bottom</note>
       </trans-unit>
-      <trans-unit id="You're a true hero!" resname="You're a true hero!" restype="string" datatype="x-objective-c">
+      <trans-unit id="You&apos;re a true hero!" resname="You&apos;re a true hero!" restype="string" datatype="x-objective-c">
         <source>You're a true hero!</source>
         <target>您是一个真正的英雄！</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="You're account has been deactivated and you've been logged out. We hope you come back soon :)" resname="You're account has been deactivated and you've been logged out. We hope you come back soon :)" restype="string" datatype="x-objective-c">
+      <trans-unit id="You&apos;re account has been deactivated and you&apos;ve been logged out. We hope you come back soon :)" resname="You&apos;re account has been deactivated and you&apos;ve been logged out. We hope you come back soon :)" restype="string" datatype="x-objective-c">
         <source>You're account has been deactivated and you've been logged out. We hope you come back soon :)</source>
         <target>您的账户已无效，您已经登出。我们希望您尽快回来 :)</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="You're awesome" resname="You're awesome" restype="string" datatype="x-objective-c">
+      <trans-unit id="You&apos;re awesome" resname="You&apos;re awesome" restype="string" datatype="x-objective-c">
         <source>You're awesome</source>
         <target>您真厉害</target>
         <note annotates="source">congratulate</note>
       </trans-unit>
-      <trans-unit id="You're following this question!" resname="You're following this question!" restype="string" datatype="x-objective-c">
+      <trans-unit id="You&apos;re following this question!" resname="You&apos;re following this question!" restype="string" datatype="x-objective-c">
         <source>You're following this question!</source>
         <target>您已关注这个问题！</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="You're no longer following %@!" resname="You're no longer following %@!" restype="string" datatype="x-objective-c">
+      <trans-unit id="You&apos;re no longer following %@!" resname="You&apos;re no longer following %@!" restype="string" datatype="x-objective-c">
         <source>You're no longer following %@!</source>
         <target>您已不再关注%@！</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="You're now following %@! " resname="You're now following %@! " restype="string" datatype="x-objective-c">
+      <trans-unit id="You&apos;re now following %@! " resname="You&apos;re now following %@! " restype="string" datatype="x-objective-c">
         <source>You're now following %@!</source>
         <target>您已关注%@！</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="You've received kudos!" resname="You've received kudos!" restype="string" datatype="x-objective-c">
+      <trans-unit id="You&apos;ve received kudos!" resname="You&apos;ve received kudos!" restype="string" datatype="x-objective-c">
         <source>You've received kudos!</source>
         <target>您被称赞了！</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -13304,7 +13304,7 @@ on your Apple Watch or iPhone</source>
         <target>您的Paypal付款已确认。点击付款并继续！</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Your account has been deactivated and you've been logged out. We hope you come back soon :)" resname="Your account has been deactivated and you've been logged out. We hope you come back soon :)" restype="string" datatype="x-objective-c">
+      <trans-unit id="Your account has been deactivated and you&apos;ve been logged out. We hope you come back soon :)" resname="Your account has been deactivated and you&apos;ve been logged out. We hope you come back soon :)" restype="string" datatype="x-objective-c">
         <source>Your account has been deactivated and you've been logged out. We hope you come back soon :)</source>
         <target>您的帐户已被冻结，您已退出。我们希望您尽快回来 :)</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -13788,7 +13788,7 @@ with an available primary care doctor</source>
         <target>能够视频或文本聊天的建议和处方</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="to verify you as a patient, please enter %@%@'s Concierge Keycode" resname="to verify you as a patient, please enter %@%@'s Concierge Keycode" restype="string" datatype="x-objective-c">
+      <trans-unit id="to verify you as a patient, please enter %@%@&apos;s Concierge Keycode" resname="to verify you as a patient, please enter %@%@&apos;s Concierge Keycode" restype="string" datatype="x-objective-c">
         <source>to verify you as a patient, please enter %1$@%2$@'s Concierge Keycode</source>
         <target>要验证您是患者，请输入%1$@%2$@的贵宾台密钥</target>
         <note annotates="source">Para1: title, Para2: last name</note>
@@ -21021,7 +21021,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
   </file>
   <file original="feelgood/appirater/en.lproj/AppiraterLocalizable.strings" source-language="en" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="If you enjoy using %@, would you mind taking a moment to rate it? It won't take more than a minute. Thanks for your support!" resname="If you enjoy using %@, would you mind taking a moment to rate it? It won't take more than a minute. Thanks for your support!" restype="string" datatype="">
+      <trans-unit id="If you enjoy using %@, would you mind taking a moment to rate it? It won&apos;t take more than a minute. Thanks for your support!" resname="If you enjoy using %@, would you mind taking a moment to rate it? It won&apos;t take more than a minute. Thanks for your support!" restype="string" datatype="">
         <source>If you enjoy using %@, would you mind taking a moment to rate it? It won't take more than a minute. Thanks for your support!</source>
         <target>如果您喜欢使用%@，您会介意花点时间评价吗？它花费的时间不超过一分钟。谢谢您的支持！</target>
       </trans-unit>

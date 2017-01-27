@@ -126,7 +126,7 @@
       <trans-unit id="31" resname="r195753892" restype="string" datatype="x-android-resource">
         <source>{sound_track_id}, Len: %d</source>
         <target state="translated">{sound_track_id}, Len:%d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="x-android-resource">
         <source>Select a track you want to download</source>

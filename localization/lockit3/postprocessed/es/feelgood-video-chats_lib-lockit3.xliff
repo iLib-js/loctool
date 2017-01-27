@@ -3,8 +3,8 @@
   <file original="android/res/layout/layout_refer_individual.xml" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="1" resname="text__test_Known_for_blah" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41;Known for blah</source>
-        <target>&#40;prueba&#41;Conocido por blah</target>
+        <source>(test)Known for blah</source>
+        <target>(prueba)Conocido por blah</target>
       </trans-unit>
     </body>
   </file>
@@ -160,13 +160,13 @@
   <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="31" resname="r717299647" restype="string" datatype="java">
-        <source>You haven&apos;t selected a stethoscope yet</source>
+        <source>You haven't selected a stethoscope yet</source>
         <target>No has seleccionado un estetoscopio aún</target>
       </trans-unit>
       <trans-unit id="32" resname="r195753892" restype="string" datatype="java">
         <source>{sound_track_id}, Len: %d</source>
         <target>{sound_track_id}, Len: %d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="33" resname="r606329135" restype="string" datatype="java">
         <source>Select a track you want to download</source>
@@ -201,8 +201,8 @@
         <target>No se ha podido descargar pdf</target>
       </trans-unit>
       <trans-unit id="40" resname="r795802560" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target>Códigos de Diagnóstico:\n</target>
+        <source>Diagnosis codes:</source>
+        <target>Códigos de Diagnóstico:</target>
       </trans-unit>
     </body>
   </file>
@@ -424,15 +424,15 @@
         <target>Esperando a paciente para conectar...</target>
       </trans-unit>
       <trans-unit id="86" resname="live_consult_waiting_for_patient_live_video" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s video camera…</source>
+        <source>One moment while we connect to the patient\'s video camera…</source>
         <target>Un momento mientras nos conectamos a la video cámara del paciente...</target>
       </trans-unit>
       <trans-unit id="87" resname="live_consult_waiting_for_patient_live_audio" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s microphone…</source>
+        <source>One moment while we connect to the patient\'s microphone…</source>
         <target>Un momento mientras nos conectamos al micrófono del paciente...</target>
       </trans-unit>
       <trans-unit id="88" resname="live_consult_waiting_for_patient_live_text" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s text chat…</source>
+        <source>One moment while we connect to the patient\'s text chat…</source>
         <target>Un momento mientras nos conectamos al chat del paciente...</target>
       </trans-unit>
       <trans-unit id="89" resname="live_consult_waiting_for_doctor_text" restype="string" datatype="x-android-resource">
@@ -440,15 +440,15 @@
         <target>Esperando a doctor para conectar...</target>
       </trans-unit>
       <trans-unit id="90" resname="live_consult_waiting_for_doctor_live_video" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s video camera…</source>
+        <source>One moment while we connect to the doctor\'s video camera…</source>
         <target>Un momento mientras nos conectamos a la video cámara del doctor...</target>
       </trans-unit>
       <trans-unit id="91" resname="live_consult_waiting_for_doctor_live_audio" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s microphone…</source>
+        <source>One moment while we connect to the doctor\'s microphone…</source>
         <target>Un momento mientras nos conectamos al micrófono del doctor...</target>
       </trans-unit>
       <trans-unit id="92" resname="live_consult_waiting_for_doctor_live_text" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s text chat…</source>
+        <source>One moment while we connect to the doctor\'s text chat…</source>
         <target>Un momento mientras nos conectamos al chat del doctor...</target>
       </trans-unit>
       <trans-unit id="93" resname="keyboard_done_label" restype="string" datatype="x-android-resource">
@@ -577,11 +577,11 @@
         <target>Encontrar especialista</target>
       </trans-unit>
       <trans-unit id="123" resname="transcript_refer_specialist_text" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</source>
+        <source>I\'d like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</source>
         <target>Me gustaría referirte a &lt;b&gt;{specialist}&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="124" resname="transcript_refer_specialist_text_hmo" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;. As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</source>
+        <source>I\'d like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;. As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</source>
         <target>Me gustaría referir a &lt;b&gt;{specialist}&lt;/b&gt; Coomo un miembro de {network_name}, porfavor consulta con tu médico de atención primaria antes de ver a cualquier especialista.</target>
       </trans-unit>
       <trans-unit id="125" resname="soap_note_title_text" restype="string" datatype="x-android-resource">
@@ -589,12 +589,12 @@
         <target>Nota Resumen</target>
       </trans-unit>
       <trans-unit id="126" resname="soap_note_history_text" restype="string" datatype="x-android-resource">
-        <source>Subjective &#40;History&#41;:</source>
-        <target>Subjetivo &#40;Historia&#41;:</target>
+        <source>Subjective (History):</source>
+        <target>Subjetivo (Historia):</target>
       </trans-unit>
       <trans-unit id="127" resname="soap_note_data_text" restype="string" datatype="x-android-resource">
-        <source>Objective &#40;Data&#41;:</source>
-        <target>Objectivo &#40;Datos&#41;:</target>
+        <source>Objective (Data):</source>
+        <target>Objectivo (Datos):</target>
       </trans-unit>
       <trans-unit id="128" resname="soap_note_assessment_text" restype="string" datatype="x-android-resource">
         <source>Assessment:</source>
@@ -609,7 +609,7 @@
         <target>Ver listados</target>
       </trans-unit>
       <trans-unit id="131" resname="public_checklist_title_recommend_text" restype="string" datatype="x-android-resource">
-        <source>I recommend you try {name}\&apos;s checklist on {topic_name}</source>
+        <source>I recommend you try {name}\'s checklist on {topic_name}</source>
         <target>Recomiendo que intentes el listado de {name} acerca de {topic_name}</target>
       </trans-unit>
       <trans-unit id="132" resname="public_checklist_button_text" restype="string" datatype="x-android-resource">
@@ -621,7 +621,7 @@
         <target>Añadido</target>
       </trans-unit>
       <trans-unit id="134" resname="refer_individual_title_text" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer you to:</source>
+        <source>I\'d like to refer you to:</source>
         <target>Me gustaría referirte a:</target>
       </trans-unit>
       <trans-unit id="135" resname="refer_individual_call_text" restype="string" datatype="x-android-resource">
@@ -657,7 +657,7 @@
         <target>Archivos</target>
       </trans-unit>
       <trans-unit id="143" resname="no_previous_uploads" restype="string" datatype="x-android-resource">
-        <source>You haven\&apos;t uploaded any files or photos yet.</source>
+        <source>You haven\'t uploaded any files or photos yet.</source>
         <target>No has subido ningún archivo o foto aún.</target>
       </trans-unit>
       <trans-unit id="144" resname="connection_wrong" restype="string" datatype="x-android-resource">
@@ -685,11 +685,11 @@
         <target>Abandonar consulta</target>
       </trans-unit>
       <trans-unit id="150" resname="end_call_patient_body_text_format" restype="string" datatype="x-android-resource">
-        <source>Would you like to end this consult with {doctor_name}? The doctor hasn\&apos;t finished the session.</source>
+        <source>Would you like to end this consult with {doctor_name}? The doctor hasn\'t finished the session.</source>
         <target>¿Te gustaría terminar esta consulta con {doctor_name}? El doctor no ha terminado la sesión.</target>
       </trans-unit>
       <trans-unit id="151" resname="end_call_patient_body_text" restype="string" datatype="x-android-resource">
-        <source>Would you like to end this consult with the doctor? The doctor hasn\&apos;t finished the session.</source>
+        <source>Would you like to end this consult with the doctor? The doctor hasn\'t finished the session.</source>
         <target>¿Te gustaría terminar esta consulta con el docotr? El doctor no ha terminado la sesión.</target>
       </trans-unit>
       <trans-unit id="152" resname="end_call_doctor_body_text" restype="string" datatype="x-android-resource">
@@ -725,8 +725,8 @@
         <target>0/100</target>
       </trans-unit>
       <trans-unit id="160" resname="description_dialog_hint" restype="string" datatype="x-android-resource">
-        <source>Enter brief description &#40;ex. My chest xray&#41;</source>
-        <target>Ingresar descripción breve &#40;ex. Mi radiografía de tórax&#41;</target>
+        <source>Enter brief description (ex. My chest xray)</source>
+        <target>Ingresar descripción breve (ex. Mi radiografía de tórax)</target>
       </trans-unit>
       <trans-unit id="161" resname="title_remove_credit_card" restype="string" datatype="x-android-resource">
         <source>Are you sure?</source>
@@ -773,15 +773,15 @@
         <target>Cambiar a vista frontal</target>
       </trans-unit>
       <trans-unit id="172" resname="peer_unavailable_text" restype="string" datatype="x-android-resource">
-        <source>There is a problem with {peer_name}\&apos;s connection. One moment while we try to re-connect with {peer_name}.</source>
+        <source>There is a problem with {peer_name}\'s connection. One moment while we try to re-connect with {peer_name}.</source>
         <target>Hay un problema con la conexión de {peer_name}. Un momento mientras tratamos de volver a conectar con {peer_name}.</target>
       </trans-unit>
       <trans-unit id="173" resname="peer_unavailable_text_guest" restype="string" datatype="x-android-resource">
-        <source>There is a problem with the guest\&apos;s connection. One moment while we try to re-connect with the guest.</source>
+        <source>There is a problem with the guest\'s connection. One moment while we try to re-connect with the guest.</source>
         <target>Hay un problema con la conexión del invitado. Un momento mientras tratamos de volver a conectar con el invitado.</target>
       </trans-unit>
       <trans-unit id="174" resname="peer_unavailable_text_doctor" restype="string" datatype="x-android-resource">
-        <source>There is a problem with the doctor\&apos;s connection. One moment while we try to re-connect with the doctor.</source>
+        <source>There is a problem with the doctor\'s connection. One moment while we try to re-connect with the doctor.</source>
         <target>Hay un problema con la conexión del doctor. Un momento mientras tratamos de volver a conectar con el doctor.</target>
       </trans-unit>
       <trans-unit id="175" resname="local_connection_unavailable_text" restype="string" datatype="x-android-resource">
@@ -790,7 +790,7 @@
         <note annotates="source">%s refers to a person</note>
       </trans-unit>
       <trans-unit id="176" resname="disconnect_trigger_text_doctor" restype="string" datatype="x-android-resource">
-        <source>There seems to be a problem with the doctor\&apos;s connection. To continue by phone, please call:</source>
+        <source>There seems to be a problem with the doctor\'s connection. To continue by phone, please call:</source>
         <target>Parace que hay un problema con la conexión del doctor. Para continuar por teléfono, por favor llama a:</target>
       </trans-unit>
       <trans-unit id="177" resname="disconnect_trigger_text_patient" restype="string" datatype="x-android-resource">
@@ -798,7 +798,7 @@
         <target>Parace que hay un problema con tu conexión. Para continuar por teléfono, por favor llama a:</target>
       </trans-unit>
       <trans-unit id="178" resname="disconnect_trigger_text_doc" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source>
+        <source>We\'re offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source>
         <target>Estamos ofreciendo al paciente la opción de continuar esta consulta por teléfono y podemos llamarte en los próximos 2 minutos</target>
       </trans-unit>
       <trans-unit id="179" resname="standard_rates_text" restype="string" datatype="x-android-resource">
@@ -822,7 +822,7 @@
         <target>Intenta otra vez</target>
       </trans-unit>
       <trans-unit id="184" resname="peer_disconnected_im_done_text" restype="string" datatype="x-android-resource">
-        <source>Thanks, I\&apos;m done</source>
+        <source>Thanks, I\'m done</source>
         <target>Gracias, ya terminé</target>
       </trans-unit>
       <trans-unit id="185" resname="expert_peer_disconnected_text" restype="string" datatype="x-android-resource">
@@ -866,7 +866,7 @@
         <target>Subido en {date}</target>
       </trans-unit>
       <trans-unit id="195" resname="attach_file_dialog_error_opening_activity" restype="string" datatype="x-android-resource">
-        <source>Couldn\&apos;t find application to handle this!</source>
+        <source>Couldn\'t find application to handle this!</source>
         <target>¡No se ha podido encontrar aplicación para manejar esto!</target>
       </trans-unit>
       <trans-unit id="196" resname="vidyo_error_dialog_title" restype="string" datatype="x-android-resource">
@@ -878,19 +878,19 @@
         <target>Audio no disponible</target>
       </trans-unit>
       <trans-unit id="198" resname="vidyo_error_dialog_body" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re having trouble establising a video connection on your device. Please continue by chat or try again.</source>
+        <source>We\'re having trouble establising a video connection on your device. Please continue by chat or try again.</source>
         <target>Estamos teniendo problemas para establecer una conexión de video con tu dispositivo. Por favor continúa por chat o intenta otra vez.</target>
       </trans-unit>
       <trans-unit id="199" resname="camera_error_cant_connect" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t connect to camera</source>
+        <source>Can\'t connect to camera</source>
         <target>No se puede conectar a cámara</target>
       </trans-unit>
       <trans-unit id="200" resname="audio_error_cant_connect" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t connect to audio</source>
+        <source>Can\'t connect to audio</source>
         <target>No se puede conectar a audio</target>
       </trans-unit>
       <trans-unit id="201" resname="vidyo_error_audio_dialog_body" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re having trouble establising an audio connection on your device. Please continue by chat or try again.</source>
+        <source>We\'re having trouble establising an audio connection on your device. Please continue by chat or try again.</source>
         <target>Estamos teniendo problemas para establecer una conexión de audio con tu dispositivo. Por favor continúa por chat o intenta otra vez.</target>
       </trans-unit>
       <trans-unit id="202" resname="vidyo_error_dialog_chat" restype="string" datatype="x-android-resource">
@@ -934,8 +934,8 @@
         <target>Intenta otra vez</target>
       </trans-unit>
       <trans-unit id="212" resname="rated_consult_text" restype="string" datatype="x-android-resource">
-        <source>&quot;You rated this consult:&quot;</source>
-        <target>&quot;Calificaste esta consulta:&quot;</target>
+        <source>"You rated this consult:"</source>
+        <target>"Calificaste esta consulta:"</target>
       </trans-unit>
       <trans-unit id="213" resname="rated_consult_update_text" restype="string" datatype="x-android-resource">
         <source>Revise \u203a</source>
@@ -974,11 +974,11 @@
         <target>Okay</target>
       </trans-unit>
       <trans-unit id="222" resname="background_copy_doctor" restype="string" datatype="x-android-resource">
-        <source>You just left in the middle of a live consult. If you didn\&apos;t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
+        <source>You just left in the middle of a live consult. If you didn\'t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
         <target>Te acabas de ir a la mitad de una consulta en vivo. Si no le has informado ya al paciente que regresarás en breve, por favor hazlo ahora para que el paciente sepa que esperar.</target>
       </trans-unit>
       <trans-unit id="223" resname="background_copy_patient" restype="string" datatype="x-android-resource">
-        <source>You just left in the middle of a live consult. If you didn\&apos;t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source>
+        <source>You just left in the middle of a live consult. If you didn\'t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source>
         <target>Te acabas de ir a la mitad de una consulta en vivo. Si no le has informado ya al doctor que regresarás en breve, por favor hazlo ahora para que el paciente sepa que esperar.</target>
       </trans-unit>
       <trans-unit id="224" resname="camera_permission_rationale" restype="string" datatype="x-android-resource">
@@ -1063,12 +1063,12 @@
         <target>Compartir el enlace</target>
       </trans-unit>
       <trans-unit id="244" resname="text__test__Benzamycin" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; Benzamycin</source>
-        <target>&#40;test&#41; Benzamycin</target>
+        <source>(test) Benzamycin</source>
+        <target>(test) Benzamycin</target>
       </trans-unit>
       <trans-unit id="245" resname="text__test__500_mg__oral_capsules__twice_daily__x200" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; 500 mg, oral capsules, twice daily, x200</source>
-        <target>&#40;test&#41; 500 mg, cápsulas orales, dos veces al día, x200</target>
+        <source>(test) 500 mg, oral capsules, twice daily, x200</source>
+        <target>(test) 500 mg, cápsulas orales, dos veces al día, x200</target>
       </trans-unit>
       <trans-unit id="246" resname="text_These_are_doctor_comments_about_this_medication" restype="string" datatype="x-android-resource">
         <source>These are doctor comments about this medication</source>
@@ -1095,16 +1095,16 @@
         <target>Toca para resumir</target>
       </trans-unit>
       <trans-unit id="252" resname="text_You_complained_of_headache__fever_and_stress__test_" restype="string" datatype="x-android-resource">
-        <source>You complained of headache, fever and stress.&#40;test&#41;</source>
-        <target>Te quejaste de un dolor de cabeza, fiebre y estrés.&#40;prueba&#41;</target>
+        <source>You complained of headache, fever and stress.(test)</source>
+        <target>Te quejaste de un dolor de cabeza, fiebre y estrés.(prueba)</target>
       </trans-unit>
       <trans-unit id="253" resname="text_You_have_an_elevated_heart_rate_and_red_skin___Test_" restype="string" datatype="x-android-resource">
-        <source>You have an elevated heart rate and red skin. &#40;Test&#41;</source>
-        <target>Tienes una frecuencia cardiaca elevada y piel roja. &#40;Prueba&#41;</target>
+        <source>You have an elevated heart rate and red skin. (Test)</source>
+        <target>Tienes una frecuencia cardiaca elevada y piel roja. (Prueba)</target>
       </trans-unit>
       <trans-unit id="254" resname="text_You_likely_have_a_cold__test_" restype="string" datatype="x-android-resource">
-        <source>You likely have a cold.&#40;test&#41;</source>
-        <target>Lo más probable es que tienes un resfriado.&#40;prueba&#41;</target>
+        <source>You likely have a cold.(test)</source>
+        <target>Lo más probable es que tienes un resfriado.(prueba)</target>
       </trans-unit>
       <trans-unit id="255" resname="text_Diagnosis_" restype="string" datatype="x-android-resource">
         <source>Diagnosis:</source>
@@ -1115,32 +1115,32 @@
         <target>Invita a un seguidor</target>
       </trans-unit>
       <trans-unit id="257" resname="text__test_Dr__blah_blah" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41;Dr. blah blah</source>
-        <target>&#40;prueba&#41;Dr. blah blah</target>
+        <source>(test)Dr. blah blah</source>
+        <target>(prueba)Dr. blah blah</target>
       </trans-unit>
       <trans-unit id="258" resname="text__test_blah__blah" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41;blah, blah</source>
-        <target>&#40;prueba&#41;blah, blah</target>
+        <source>(test)blah, blah</source>
+        <target>(prueba)blah, blah</target>
       </trans-unit>
       <trans-unit id="259" resname="text_I_recommend_the_following_medication_" restype="string" datatype="x-android-resource">
         <source>I recommend the following medication:</source>
         <target>Recomiendo el siguiente medicamento:</target>
       </trans-unit>
       <trans-unit id="260" resname="text__test__Walgreens" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; Walgreens</source>
-        <target>&#40;prueba&#41; Walgreens</target>
+        <source>(test) Walgreens</source>
+        <target>(prueba) Walgreens</target>
       </trans-unit>
       <trans-unit id="261" resname="text__test__774_University_Ave_" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; 774 University Ave,</source>
-        <target>&#40;prueba&#41; 774 University Ave,</target>
+        <source>(test) 774 University Ave,</source>
+        <target>(prueba) 774 University Ave,</target>
       </trans-unit>
       <trans-unit id="262" resname="text__test__Palo_Alto__CA_23423" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; Palo Alto, CA 23423</source>
-        <target>&#40;prueba&#41; Palo Alto, CA 23423</target>
+        <source>(test) Palo Alto, CA 23423</source>
+        <target>(prueba) Palo Alto, CA 23423</target>
       </trans-unit>
       <trans-unit id="263" resname="text_1__617__392_838" restype="string" datatype="x-android-resource">
-        <source>1 &#40;617&#41; 392-838</source>
-        <target>1 &#40;617&#41; 392-838</target>
+        <source>1 (617) 392-838</source>
+        <target>1 (617) 392-838</target>
       </trans-unit>
       <trans-unit id="264" resname="text_Speakerphone" restype="string" datatype="x-android-resource">
         <source>Speakerphone</source>
@@ -1151,16 +1151,16 @@
         <target>Micrófono</target>
       </trans-unit>
       <trans-unit id="266" resname="text_Medical_Report_test_" restype="string" datatype="x-android-resource">
-        <source>Medical Report&#40;test&#41;</source>
-        <target>Reporte Médico&#40;prueba&#41;</target>
+        <source>Medical Report(test)</source>
+        <target>Reporte Médico(prueba)</target>
       </trans-unit>
       <trans-unit id="267" resname="text_Uploaded_Jan_4__2013__test_" restype="string" datatype="x-android-resource">
-        <source>Uploaded Jan 4, 2013 &#40;test&#41;</source>
-        <target>Subido en Ene 4, 2013 &#40;prueba&#41;</target>
+        <source>Uploaded Jan 4, 2013 (test)</source>
+        <target>Subido en Ene 4, 2013 (prueba)</target>
       </trans-unit>
       <trans-unit id="268" resname="text_2_3Mb__test_" restype="string" datatype="x-android-resource">
-        <source>2.3Mb &#40;test&#41;</source>
-        <target>2.3Mb &#40;prueba&#41;</target>
+        <source>2.3Mb (test)</source>
+        <target>2.3Mb (prueba)</target>
       </trans-unit>
       <trans-unit id="269" resname="text_Dr__Example_Doctor" restype="string" datatype="x-android-resource">
         <source>Dr. Example Doctor</source>

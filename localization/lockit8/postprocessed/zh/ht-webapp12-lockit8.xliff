@@ -91,7 +91,7 @@
   <file original="app/views/static_pages/consult_now/consult_now.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="81" resname="r470345606" restype="string" datatype="ruby">
-        <source>Tell us your question, and we&apos;ll suggest the best doctors for you</source>
+        <source>Tell us your question, and we'll suggest the best doctors for you</source>
         <target>请告诉我们您的问题，我们将为您推荐最好的医生</target>
       </trans-unit>
     </body>
@@ -114,39 +114,39 @@
   </file>
   <file original="app/views/static_pages/benefit_focus.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="88" resname="r945917850" restype="string" datatype="ruby">
+      <trans-unit id="88" resname="r269501934" restype="string" datatype="ruby">
         <source>Our %{n} top doctors are here for you,&lt;br&gt; anytime, anywhere</source>
         <target>我们有%{n}名顶级医生在这里&lt;br&gt;随时随地为您服务</target>
       </trans-unit>
-      <trans-unit id="89" resname="r260412711" restype="string" datatype="ruby">
+      <trans-unit id="89" resname="r363561295" restype="string" datatype="ruby">
         <source>You get doctor advice, actionable plans,&lt;br&gt; prescriptions, referrals, and even lab tests</source>
         <target>您可以获得医生的建议、可行的计划、&lt;br&gt;处方、转介、甚至实验室检验</target>
       </trans-unit>
-      <trans-unit id="90" resname="r542330338" restype="string" datatype="ruby">
+      <trans-unit id="90" resname="r352626996" restype="string" datatype="ruby">
         <source>You get doctor advice,&lt;br&gt;actionable plans,&lt;br&gt;prescriptions, referrals,&lt;br&gt;and even lab tests</source>
         <target>您可以得到医生的建议、&lt;br&gt;可行的计划、&lt;br&gt;处方、转介、&lt;br&gt;、甚至实验室检验</target>
       </trans-unit>
-      <trans-unit id="91" resname="r192293734" restype="string" datatype="ruby">
+      <trans-unit id="91" resname="r917056356" restype="string" datatype="ruby">
         <source>Safe, secure, and private:&lt;br&gt; We provide the right care when you need it most</source>
         <target>安全、可靠和私密：&lt;br&gt;当您有需要的时候，我们可以提供合适的医护</target>
       </trans-unit>
-      <trans-unit id="92" resname="r83587156" restype="string" datatype="ruby">
+      <trans-unit id="92" resname="r699856334" restype="string" datatype="ruby">
         <source>HealthTap Compass brings you&lt;br&gt;immediate answers&lt;br&gt;to your most pressing concerns&lt;br&gt;with convenience and compassion</source>
         <target>HealthTap Compass为您&lt;br&gt;最迫切的问题&lt;br&gt;快速提供回答，&lt;br&gt;为您带来便利和关爱</target>
       </trans-unit>
-      <trans-unit id="93" resname="r102174680" restype="string" datatype="ruby">
+      <trans-unit id="93" resname="r988622612" restype="string" datatype="ruby">
         <source>HealthTap Compass brings&lt;br&gt;you immediate answers&lt;br&gt;to your most pressing&lt;br&gt;concerns with convenience&lt;br&gt;and compassion</source>
         <target>HealthTap Compass为您&lt;br&gt;最迫切的问题&lt;br&gt;快速提供回答，&lt;br&gt;为您带来便利和关爱</target>
       </trans-unit>
-      <trans-unit id="94" resname="r470820396" restype="string" datatype="ruby">
+      <trans-unit id="94" resname="r768297829" restype="string" datatype="ruby">
         <source>No waiting rooms,&lt;br&gt;only immediate knowledge and immediate care</source>
         <target>不用候诊，&lt;br&gt;只有直接的知识和快速的医护</target>
       </trans-unit>
-      <trans-unit id="95" resname="r445983580" restype="string" datatype="ruby">
-        <source>You&apos;re never alone&lt;br&gt; Just &lt;i&gt; Tap-in &lt;/i&gt;</source>
+      <trans-unit id="95" resname="r548219023" restype="string" datatype="ruby">
+        <source>You're never alone&lt;br&gt; Just &lt;i&gt; Tap-in &lt;/i&gt;</source>
         <target>您永远不会孤独&lt;br&gt;只需&lt;i&gt;轻触&lt;/i&gt;</target>
       </trans-unit>
-      <trans-unit id="96" resname="r422123155" restype="string" datatype="ruby">
+      <trans-unit id="96" resname="r931665539" restype="string" datatype="ruby">
         <source>and a healthier, happier world&lt;br&gt;starts with you</source>
         <target>并让您在一个更健康、更快乐的世界&lt;br&gt;重新开始</target>
       </trans-unit>
@@ -155,7 +155,7 @@
   <file original="app/views/static_pages/ambassador.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="101" resname="r898160513" restype="string" datatype="ruby">
-        <source>Password&#40;6+ characters&#41;</source>
+        <source>Password(6+ characters)</source>
         <target>密码（6位以上字符）</target>
       </trans-unit>
     </body>
@@ -171,8 +171,8 @@
         <target>信用卡号码</target>
       </trans-unit>
       <trans-unit id="105" resname="r610977209" restype="string" datatype="ruby">
-        <source>Exp. &#40;MM/YY&#41;</source>
-        <target>有效期 &#40;月/年&#41;</target>
+        <source>Exp. (MM/YY)</source>
+        <target>有效期 (月/年)</target>
       </trans-unit>
     </body>
   </file>
@@ -219,7 +219,7 @@
   <file original="app/views/people/feelGood/influencer/nux.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="121" resname="r576699827" restype="string" datatype="ruby">
-        <source>Enter a brief bio &#40;ex. Fitness instructor, Vegan mom&#41;</source>
+        <source>Enter a brief bio (ex. Fitness instructor, Vegan mom)</source>
         <target>输入简短的个人资料（例如健身教练，素食妈妈）</target>
       </trans-unit>
     </body>
@@ -227,7 +227,7 @@
   <file original="app/views/people/feelGood/feed/_tip.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="122" resname="r895596425" restype="string" datatype="ruby">
-        <source>agreed with %{approver_link_tag}%{approver_name}%{close_tag}&apos;s tip on %{checklist_type}</source>
+        <source>agreed with %{approver_link_tag}%{approver_name}%{close_tag}'s tip on %{checklist_type}</source>
         <target>已同意%{approver_link_tag}%{approver_name}%{close_tag}关于%{checklist_type}的小贴士</target>
       </trans-unit>
       <trans-unit id="123" resname="r500059019" restype="string" datatype="ruby">
@@ -239,7 +239,7 @@
   <file original="app/views/people/feelGood/feed/_checklist.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="126" resname="r70346651" restype="string" datatype="ruby">
-        <source>%{approver_link_tag}%{approver_name}%{close_tag} agreed with %{author_link_tag}%{author_name}%{close_tag}&apos;s checklist</source>
+        <source>%{approver_link_tag}%{approver_name}%{close_tag} agreed with %{author_link_tag}%{author_name}%{close_tag}'s checklist</source>
         <target>%{approver_link_tag}%{approver_name}%{close_tag}同意了%{author_link_tag}%{author_name}%{close_tag}的清单</target>
         <note annotates="source">TODO possessive</note>
       </trans-unit>
@@ -253,17 +253,17 @@
   <file original="app/views/people/feelGood/feed/_answer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="128" resname="r56707068" restype="string" datatype="ruby">
-        <source>%{first_open_tag}%{actor}%{close_tag} agreed with %{line_break}%{second_open_tag}%{second_actor}%{close_tag}&apos;s answer:</source>
+        <source>%{first_open_tag}%{actor}%{close_tag} agreed with %{line_break}%{second_open_tag}%{second_actor}%{close_tag}'s answer:</source>
         <target>%{first_open_tag}%{actor}%{close_tag}同意了%{line_break}%{second_open_tag}%{second_actor}%{close_tag}的回答：</target>
         <note annotates="source">TODO possessive</note>
       </trans-unit>
       <trans-unit id="129" resname="r1042285998" restype="string" datatype="ruby">
-        <source>%{first_open_tag}%{actor}%{close_tag} agreed with%{line_break}%{second_open_tag}%{second_actor}%{close_tag}&apos;s answer:</source>
+        <source>%{first_open_tag}%{actor}%{close_tag} agreed with%{line_break}%{second_open_tag}%{second_actor}%{close_tag}'s answer:</source>
         <target>%{first_open_tag}%{actor}%{close_tag}同意了%{line_break}%{second_open_tag}%{second_actor}%{close_tag}的回答：</target>
         <note annotates="source">TODO possessive</note>
       </trans-unit>
       <trans-unit id="130" resname="r910777596" restype="string" datatype="ruby">
-        <source>%{first_open_tag}%{actor}%{close_tag} commented on%{line_break}%{second_open_tag}%{second_actor}%{close_tag}&apos;s answer:</source>
+        <source>%{first_open_tag}%{actor}%{close_tag} commented on%{line_break}%{second_open_tag}%{second_actor}%{close_tag}'s answer:</source>
         <target>%{first_open_tag}%{actor}%{close_tag}评论了%{line_break}%{second_open_tag}%{second_actor}的%{close_tag}的回答：</target>
         <note annotates="source">TODO possessive</note>
       </trans-unit>
@@ -281,7 +281,7 @@
   <file original="app/views/people/feelGood/checklist_panel.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="133" resname="r1008955882" restype="string" datatype="ruby">
-        <source>Find a goal &#40;ex. Lose weight&#41;</source>
+        <source>Find a goal (ex. Lose weight)</source>
         <target>查找目标（例如：减肥）</target>
       </trans-unit>
     </body>
@@ -317,11 +317,11 @@
   <file original="app/views/people/feelGood/_plugin_download.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="141" resname="r459417755" restype="string" datatype="ruby">
-        <source>First, let&apos;s get your browser up to speed in 3 easy steps</source>
+        <source>First, let's get your browser up to speed in 3 easy steps</source>
         <target>首先，通过3个简单的步骤快速设置您的浏览器</target>
       </trans-unit>
       <trans-unit id="142" resname="r99523208" restype="string" datatype="ruby">
-        <source>Once done, we&apos;ll begin your consult automatically</source>
+        <source>Once done, we'll begin your consult automatically</source>
         <target>完成后，我们将自动开始您的咨询</target>
       </trans-unit>
       <trans-unit id="143" resname="r535621931" restype="string" datatype="ruby">
@@ -332,15 +332,15 @@
         <source>In the meantime, please use latest versions of %{chrome_link_start}Chrome%{link_end}, %{firefox_link_start}Firefox%{link_end}, or %{ie_link_start}Internet Explorer%{link_end}.</source>
         <target>在此期间，请使用最新版本的%{chrome_link_start}Chrome%{link_end}, %{firefox_link_start}Firefox%{link_end}或%{ie_link_start}Internet Explorer%{link_end}。</target>
       </trans-unit>
-      <trans-unit id="145" resname="r857301806" restype="string" datatype="ruby">
-        <source>In order to talk to doctors from your computer,&lt;br&gt;you&apos;ll need to &lt;b&gt;install a browser video plug-in%{asterisk}&lt;/b&gt;&lt;br&gt; It&apos;s quick and easy, and we&apos;ll help you : &#41;</source>
-        <target>要通过您的计算机与医生交谈，&lt;br&gt;您需要&lt;b&gt;安装浏览器视频插件%{asterisk} &lt;/b&gt; &lt;br&gt;这非常简单快捷并且我们会帮助您 : &#41;</target>
+      <trans-unit id="145" resname="r761507253" restype="string" datatype="ruby">
+        <source>In order to talk to doctors from your computer,&lt;br&gt;you'll need to &lt;b&gt;install a browser video plug-in%{asterisk}&lt;/b&gt;&lt;br&gt; It's quick and easy, and we'll help you : )</source>
+        <target>要通过您的计算机与医生交谈，&lt;br&gt;您需要&lt;b&gt;安装浏览器视频插件%{asterisk} &lt;/b&gt; &lt;br&gt;这非常简单快捷并且我们会帮助您 : )</target>
       </trans-unit>
-      <trans-unit id="146" resname="r152667637" restype="string" datatype="ruby">
-        <source>*Note: If you&apos;ve installed our plug-in before,&lt;br&gt;you may need to %{link_tag_start}uninstall the old version%{link_tag_end} first.</source>
+      <trans-unit id="146" resname="r401914141" restype="string" datatype="ruby">
+        <source>*Note: If you've installed our plug-in before,&lt;br&gt;you may need to %{link_tag_start}uninstall the old version%{link_tag_end} first.</source>
         <target>*注意：如果您之前安装了我们的插件，&lt;br&gt;您可能需要先%{link_tag_start}卸载旧版本%{link_tag_end}。</target>
       </trans-unit>
-      <trans-unit id="147" resname="r330695315" restype="string" datatype="ruby">
+      <trans-unit id="147" resname="r926022994" restype="string" datatype="ruby">
         <source>Download the safe, &lt;br&gt;secure plug-in</source>
         <target>下载安全、&lt;br&gt;可靠的插件</target>
       </trans-unit>
@@ -357,8 +357,8 @@
   <file original="app/views/pages/feelGood/partnership_payment_quote.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="156" resname="r60873768" restype="string" datatype="ruby">
-        <source>&#40;555&#41; 555-5555</source>
-        <target>&#40;555&#41; 555-5555</target>
+        <source>(555) 555-5555</source>
+        <target>(555) 555-5555</target>
       </trans-unit>
       <trans-unit id="157" resname="r79518428" restype="string" datatype="ruby">
         <source>your@email.com</source>
@@ -409,7 +409,7 @@
   <file original="app/views/layouts/_header_guest_feelgood.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="185" resname="r485219661" restype="string" datatype="ruby">
-        <source>Create password &#40;6+ characters&#41;</source>
+        <source>Create password (6+ characters)</source>
         <target>创建密码（6个字符以上）</target>
       </trans-unit>
     </body>
@@ -421,7 +421,7 @@
         <target>这是HealthTap的首席医务官Geoff Rutledge医生。我想亲自为您提供一个福利解决方案可以显著降低您客户的医疗成本，让他们的员工安心，并加强您的客户关系。我们的屡获殊荣的方法已经使全世界数亿人感到愉快，并迅速取代了数十家世界500强公司的传统远程医疗产品。今天，我们以一个前所未有的价格为您提供这个已经验证的解决方案，将帮助您赚更多的钱并且可以保留您的业务。</target>
       </trans-unit>
       <trans-unit id="187" resname="r551365177" restype="string" datatype="ruby">
-        <source>HealthTap is a tremendous complement to traditional health insurance plans, particularly well suited for clients with high deductible plans.  Our HealthTap Prime service is an affordable subscription to all of the virtual care needed by an individual &#40;or even a family&#41;, offering unlimited access to doctor-created health information and answers to health questions, as well as immediate consultations with primary care doctors &#40;via text, audio or video&#41;, 24 hours a day, 7 days a week, directly from any web connection, or mobile device.</source>
+        <source>HealthTap is a tremendous complement to traditional health insurance plans, particularly well suited for clients with high deductible plans.  Our HealthTap Prime service is an affordable subscription to all of the virtual care needed by an individual (or even a family), offering unlimited access to doctor-created health information and answers to health questions, as well as immediate consultations with primary care doctors (via text, audio or video), 24 hours a day, 7 days a week, directly from any web connection, or mobile device.</source>
         <target>HealthTap是对传统医疗保险方案的重大补充，特别适合具有高扣除额方案的客户。 我们的HealthTap Prime服务对所有需要在线医护的个人（或甚至一个家庭）来说是一个实惠的订购，提供一周7天、每天24小时直接通过网页链接或移动设备无限访问医生创建的健康信息和健康问题的回答以及立即咨询普通门诊医生的机会（通过文本、音频或视频）。</target>
       </trans-unit>
       <trans-unit id="188" resname="r769692676" restype="string" datatype="ruby">
@@ -449,8 +449,8 @@
         <target>为了每天feel good，</target>
       </trans-unit>
       <trans-unit id="202" resname="r917189751" restype="string" datatype="ruby">
-        <source>rjg :&#41;</source>
-        <target>rjg :&#41;</target>
+        <source>rjg :)</source>
+        <target>rjg :)</target>
       </trans-unit>
       <trans-unit id="204" resname="r378047762" restype="string" datatype="ruby">
         <source>“We are shaped and fashioned by what we love.”</source>
@@ -489,7 +489,7 @@
         <target>HealthTap Prime允许来自世界任何地方的旅行者们在任何智能手机、平板电脑或PC电脑上通过视频、音频或文本聊天24/7全天候不受限制地向顶级美国执业医生进行即时的在线咨询。通过对来自美国医生的建议、推荐药物以及转介和医护安排，为您的客户在旅行途中带去安心。</target>
       </trans-unit>
       <trans-unit id="211" resname="r620633706" restype="string" datatype="ruby">
-        <source>For a limited time, we’re offering an extremely discounted rate for our packages that you can resell for 250% markup &#40;or more&#41;! It’s an amazing offer that is already making some of our partners tens of thousands of dollars in additional revenue — and we thought you would be interested too.</source>
+        <source>For a limited time, we’re offering an extremely discounted rate for our packages that you can resell for 250% markup (or more)! It’s an amazing offer that is already making some of our partners tens of thousands of dollars in additional revenue — and we thought you would be interested too.</source>
         <target>我们限时为我们的套餐提供极高的折扣率，您可以加价250%（或更多）转售！这是一个惊人的报价，已经使我们的一些合作伙伴有了成千上万美元的额外收入—我们认为您也会感兴趣。</target>
       </trans-unit>
       <trans-unit id="212" resname="r138136929" restype="string" datatype="ruby">
@@ -533,11 +533,11 @@
   <file original="app/views/general_mailer/travel_agent_outreach_email.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="221" resname="r499627687" restype="string" datatype="ruby">
-        <source>This is Geoff, from HealthTap. I&apos;d like to personally invite you to take advantage of a new state-of-the-art solution for your customers&apos; travel-health needs that also provides you with a highly profitable addition to the services you already deliver. Our virtual healthcare solution will delight your customers with the best travel health information and 24/7 access to advice and consultation from our network of U.S.- licensed physicians, whenever your customers need help, anywhere in the world, on any mobile device.</source>
+        <source>This is Geoff, from HealthTap. I'd like to personally invite you to take advantage of a new state-of-the-art solution for your customers' travel-health needs that also provides you with a highly profitable addition to the services you already deliver. Our virtual healthcare solution will delight your customers with the best travel health information and 24/7 access to advice and consultation from our network of U.S.- licensed physicians, whenever your customers need help, anywhere in the world, on any mobile device.</source>
         <target>我是来自HealthTap的Geoff。我希望能亲自邀请您使用这一能满足您客户的旅行健康需求并在您已提供服务的基础上为您带来高利润的最先进的全新解决方案。我们的在线医疗保健解决方案将在您客户需要帮助的任何时候，不管身处世界的任何地方都可以在任何移动设备上获得最好的旅行健康信息以及24/7全天候使用来自我们美国执业医生网络的建议和咨询从而为您的客户带来愉快的体验。</target>
       </trans-unit>
       <trans-unit id="222" resname="r576401192" restype="string" datatype="ruby">
-        <source>HealthTap is a Silicon Valley startup revolutionizing healthcare by giving people online and mobile access to the world&apos;s largest collection of doctor-authored health information and virtual care from more than 71,000 highly qualified doctors. We are the World Economic Forum Technology Pioneer 2015 in Life Sciences and Health. Other recent accolades include:</source>
+        <source>HealthTap is a Silicon Valley startup revolutionizing healthcare by giving people online and mobile access to the world's largest collection of doctor-authored health information and virtual care from more than 71,000 highly qualified doctors. We are the World Economic Forum Technology Pioneer 2015 in Life Sciences and Health. Other recent accolades include:</source>
         <target>HealthTap是一家位于硅谷的初创公司，通过为人们提供以在线及移动方式获取来自超过71000名优秀医生的、世界上最大型的医生授权健康信息和在线医护集合，为医疗保健带来了革命性的改变。我们是生命科学和健康领域的2015年世界经济论坛技术先锋。其他近期荣誉包括：</target>
       </trans-unit>
     </body>
@@ -634,7 +634,7 @@
         <target>24/7全天候询问健康医护专业人员问题</target>
       </trans-unit>
       <trans-unit id="247" resname="r854178708" restype="string" datatype="ruby">
-        <source>access to an after-hours doctor service &#40;NZ Registered Medical Practitioners – Monday to Friday 6pm-11pm, Saturday, Sunday and Public Holidays 8am-8pm&#41;</source>
+        <source>access to an after-hours doctor service (NZ Registered Medical Practitioners – Monday to Friday 6pm-11pm, Saturday, Sunday and Public Holidays 8am-8pm)</source>
         <target>获得在非工作时间的医生服务（新西兰注册医疗从业人员——星期一至星期五下午6点至11点，星期六、星期日及公众假期上午8点至下午8点）</target>
       </trans-unit>
       <trans-unit id="248" resname="r211940988" restype="string" datatype="ruby">
@@ -686,7 +686,7 @@
         <target>Rx自动化目前正在存在一些问题，请协助进行手动传输！</target>
       </trans-unit>
       <trans-unit id="270" resname="r332381438" restype="string" datatype="ruby">
-        <source>If it&apos;s not failed because of SIGNIFICANCE LEVEL: 1-Most Significant, please contact Claire Gong or Karan to restart selenium server&#40;by running ./healthtaprx.sh&#41; and investigate.</source>
+        <source>If it's not failed because of SIGNIFICANCE LEVEL: 1-Most Significant, please contact Claire Gong or Karan to restart selenium server(by running ./healthtaprx.sh) and investigate.</source>
         <target>如果它没有失败，因为显著水平：1-最有效的，请联系Claire Gong或Karan重新启动selenium服务器（通过运行./healthtaprx.sh）并调查。</target>
       </trans-unit>
     </body>
@@ -706,8 +706,8 @@
         <target>您的影响力明显增加！</target>
       </trans-unit>
       <trans-unit id="292" resname="r775292067" restype="string" datatype="ruby">
-        <source>View FeelGood:&#41; moment!</source>
-        <target>查看FeelGood:&#41;瞬间</target>
+        <source>View FeelGood:) moment!</source>
+        <target>查看FeelGood:)瞬间</target>
       </trans-unit>
     </body>
   </file>
@@ -823,7 +823,7 @@
   <file original="app/views/general_mailer/insurance_agent_wave_3_openers_2.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="323" resname="r743633144" restype="string" datatype="ruby">
-        <source>I recently invited you to partner with HealthTap to offer the industry-leading virtual healthcare service to your customers, and now I&apos;d like to offer you a new special pricing program available only to leading health insurance brokers who partner with us this month. Send me your contact information via email to partner.benefits@healthtap.com, or take just a moment to fill out this interest form, and a partnership specialist will be delighted to show you how you can earn even more by partnering with us this month.</source>
+        <source>I recently invited you to partner with HealthTap to offer the industry-leading virtual healthcare service to your customers, and now I'd like to offer you a new special pricing program available only to leading health insurance brokers who partner with us this month. Send me your contact information via email to partner.benefits@healthtap.com, or take just a moment to fill out this interest form, and a partnership specialist will be delighted to show you how you can earn even more by partnering with us this month.</source>
         <target>我最近邀请您与HealthTap合作，为您的客户提供业界领先的在线健康医护服务，现在我希望为您提供一个新的特别定价计划，只提供给本月与我们合作的领先健康保险经纪人。请通过电子邮件将您的联系信息发送到partner.benefits@healthtap.com，或者花一点时间填写此兴趣表格，合作伙伴专员将很高兴向您展示如何通过与我们合作来赚取更多收益。</target>
       </trans-unit>
       <trans-unit id="324" resname="r890515349" restype="string" datatype="ruby">
@@ -843,7 +843,7 @@
   <file original="app/views/general_mailer/insurance_agent_wave_3_openers.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="327" resname="r586347366" restype="string" datatype="ruby">
-        <source>I recently invited you to partner with HealthTap to offer the industry-leading virtual healthcare service to your customers, and now I&apos;d like to offer you a new special pricing program available only to leading health insurance brokers who partner with us this month. Send me your contact information via email to partnerships+rutledge@healthtap.com, or take just a moment to fill out this interest form, and a partnership specialist will be delighted to show you how you can earn even more by partnering with us this month.</source>
+        <source>I recently invited you to partner with HealthTap to offer the industry-leading virtual healthcare service to your customers, and now I'd like to offer you a new special pricing program available only to leading health insurance brokers who partner with us this month. Send me your contact information via email to partnerships+rutledge@healthtap.com, or take just a moment to fill out this interest form, and a partnership specialist will be delighted to show you how you can earn even more by partnering with us this month.</source>
         <target>我最近邀请您与HealthTap合作，为您的客户提供业界领先的在线健康医护服务，现在我希望为您提供一个新的特别定价计划，只提供给本月与我们合作的领先健康保险经纪人。请通过电子邮件将您的联系信息发送到partnerships+rutledge@healthtap.com，或者花一点时间填写此兴趣表格，合作伙伴专员将很高兴向您展示如何通过与我们合作来赚取更多收益。</target>
       </trans-unit>
       <trans-unit id="328" resname="r938438712" restype="string" datatype="ruby">
@@ -887,8 +887,8 @@
   <file original="app/views/general_mailer/happy_thanksgiving.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="336" resname="r766657192" restype="string" datatype="ruby">
-        <source>Many heartfelt thanks for helping us spread health, happiness, and smiles to millions everywhere. We appreciate your friendship and are grateful for your support. May all the good things in life be yours in abundance :&#41;</source>
-        <target>非常感谢您帮助我们将健康，幸福和微笑传播给数百万人。我们感谢您的友谊并感谢您的支持。愿您的生命中充满美好的事物:&#41;</target>
+        <source>Many heartfelt thanks for helping us spread health, happiness, and smiles to millions everywhere. We appreciate your friendship and are grateful for your support. May all the good things in life be yours in abundance :)</source>
+        <target>非常感谢您帮助我们将健康，幸福和微笑传播给数百万人。我们感谢您的友谊并感谢您的支持。愿您的生命中充满美好的事物:)</target>
       </trans-unit>
       <trans-unit id="337" resname="r290430046" restype="string" datatype="ruby">
         <source>and the HealthTap Team</source>
@@ -911,7 +911,7 @@
         <target>通过使用来自数亿人，数万名医生的数据，以及大量的产品迭代，我们构建了我们的感觉良好的专有路径的3个简单的步骤：“了解更多”，“获得帮助”和“采取行动”。我们意识到我们不是仅仅提供健康信息，或仅仅是”远程医疗“或只是安排医生预约，我们正式地和全心的投入帮助人们感觉良好的业务！</target>
       </trans-unit>
       <trans-unit id="341" resname="r31866236" restype="string" datatype="ruby">
-        <source>Simultaneously, we hired the best technical/product/design team in digital health, and one of the best in Silicon Valley, bringing together the brightest engineers with deep expertise in all frameworks and platforms &#40;iOS, Android, Web, and wearables&#41;, and with a deep passion for innovation and helping others. We fortified the team with some of the Valley’s finest designers, data geeks, and product managers, and a fabulous customer care and Medical Expert ops team, and together, we repeatedly iterated with millions of users and tens of thousands of doctors, until we were ready to launch our new groundbreaking platform to the world.</source>
+        <source>Simultaneously, we hired the best technical/product/design team in digital health, and one of the best in Silicon Valley, bringing together the brightest engineers with deep expertise in all frameworks and platforms (iOS, Android, Web, and wearables), and with a deep passion for innovation and helping others. We fortified the team with some of the Valley’s finest designers, data geeks, and product managers, and a fabulous customer care and Medical Expert ops team, and together, we repeatedly iterated with millions of users and tens of thousands of doctors, until we were ready to launch our new groundbreaking platform to the world.</source>
         <target>同时，我们聘请了数字健康中最好的技术/产品/设计团队，同时也是硅谷最好的团队之一，汇聚了所有框架和平台（iOS，Android，Web和可穿戴设备）里最专业的工程师，他们对创新和帮助他人有着深厚的热情。我们加强了与硅谷最好的设计师，数据极客和产品经理，以及一个神话般的客户关心和医学专家操作团队，与我们一起，反复与数以百万的用户和成千上万的医生，直到我们准备向世界推出我们的新的开创性平台。</target>
       </trans-unit>
       <trans-unit id="342" resname="r410329975" restype="string" datatype="ruby">
@@ -923,7 +923,7 @@
         <target>致力于我们的使命和质量，在初秋我们推出了我们的第一个端到端帮助世界各地的人们管理他们的健康和每一天都感觉良好的服务。我们新的基本服务仍然是免费的，但我们还介绍了我们的第一个付费的高级服务，HealthTap Prime。基于我们进行的研究创建的这种首创的服务是基于我们的新平台的三个主要模块：</target>
       </trans-unit>
       <trans-unit id="344" resname="r747902306" restype="string" datatype="ruby">
-        <source>Our all new HealthTap Prime, where users get unlimited doctor consults on any mobile device or personal computer 24/7 has been one of our most successful services to date, and is growing very rapidly! HealthTap Prime and our new platform received an unprecedented warm welcome in traditional and social media – attracting more than 82 original stories in print, digital, and broadcast, media &#40;from WIRED Magazine, to Good Morning America, and from Forbes Magazine to ABC News, everyone everywhere praised our innovation and the value we’re creating for people everywhere&#41;.</source>
+        <source>Our all new HealthTap Prime, where users get unlimited doctor consults on any mobile device or personal computer 24/7 has been one of our most successful services to date, and is growing very rapidly! HealthTap Prime and our new platform received an unprecedented warm welcome in traditional and social media – attracting more than 82 original stories in print, digital, and broadcast, media (from WIRED Magazine, to Good Morning America, and from Forbes Magazine to ABC News, everyone everywhere praised our innovation and the value we’re creating for people everywhere).</source>
         <target>我们所有新的HealthTap Prime，用户可以在任何移动设备或个人计算机上24/7全天候获得无限医生咨询是我们迄今为止最成功的服务之一，并且增长非常迅速！HealthTap Prime和我们的新平台在传统和社交媒体上获得了前所未有的热烈欢迎——吸引了在印刷，数字和广播，媒体超过82个原创故事（从连线杂志，到早安美国，从“福布斯”杂志到ABC新闻，每个人都称赞我们的创新和我们为世界各地的人创造的价值）。</target>
       </trans-unit>
       <trans-unit id="345" resname="r490278737" restype="string" datatype="ruby">
@@ -943,8 +943,8 @@
         <target>在2015年，我们对可穿戴设备的广泛使用感到非常兴奋。我们相信，我们拥有一个巨大的机会去收集与这些可穿戴设备宝贵的健康数据，并帮助医生为患者提供更好的建议，通过这些数据在线咨询更好的行动。 此外，我们相信这些可穿戴设备也可以作为伟大的通信设备，帮助我们的医生不仅了解他们的患者，而且在适当的时候给患者正确的信号以关闭宝贵的反馈回路，并在合适的时间鼓励正确的行为 。 我们已经将苹果的HealthKit和Google Fit整合到HealthTap的体验中，我们看到了与行业中的大型和小型企业合作的巨大机会，使可穿戴设备和大数据的承诺成为2015年医生和用户的有价值的现实。</target>
       </trans-unit>
       <trans-unit id="349" resname="r114542609" restype="string" datatype="ruby">
-        <source>There are so many exciting opportunities for us 2015, but most importantly, we’re here to serve you and your loved ones, and make everyone everywhere healthier and happier!  Thanks for helping us make HealthTap an ever-better service, and for putting your trust in us – we’re always here to do more, to do better, to make sure we deserve your support and trust, and of course, to smile :&#41;   Please continue to send us your feedback and the best people you know  - we’re continuing to expand and grow, and need the best ideas, and best people to make this world a healthier happier place in 2015!</source>
-        <target>对于我们而言，在2015年有这么多令人兴奋的机会，但最重要的是，我们在这里为您和您所爱的人服务，让无处不在的每个人更健康，更快乐！感谢您帮助我们使HealthTap成为一个更好的服务，并且信任我们 - 我们会一直做得更多，做得更好，以确保我们值得您的支持和信任，当然，要继续保持微笑:&#41;  请继续向我们发送您的反馈和推荐您认识的优秀的人 - 我们将不断的成长，并且我们需要最好的想法和最优秀的人，使这个世界在2015年成为更健康，更幸福的地方！</target>
+        <source>There are so many exciting opportunities for us 2015, but most importantly, we’re here to serve you and your loved ones, and make everyone everywhere healthier and happier!  Thanks for helping us make HealthTap an ever-better service, and for putting your trust in us – we’re always here to do more, to do better, to make sure we deserve your support and trust, and of course, to smile :)   Please continue to send us your feedback and the best people you know  - we’re continuing to expand and grow, and need the best ideas, and best people to make this world a healthier happier place in 2015!</source>
+        <target>对于我们而言，在2015年有这么多令人兴奋的机会，但最重要的是，我们在这里为您和您所爱的人服务，让无处不在的每个人更健康，更快乐！感谢您帮助我们使HealthTap成为一个更好的服务，并且信任我们 - 我们会一直做得更多，做得更好，以确保我们值得您的支持和信任，当然，要继续保持微笑:)  请继续向我们发送您的反馈和推荐您认识的优秀的人 - 我们将不断的成长，并且我们需要最好的想法和最优秀的人，使这个世界在2015年成为更健康，更幸福的地方！</target>
       </trans-unit>
       <trans-unit id="350" resname="r614338528" restype="string" datatype="ruby">
         <source>Happy New Year to you and your loved ones and looking forward to a great 2015!</source>
@@ -971,13 +971,13 @@
   <file original="app/views/general_mailer/happy_holidays.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="354" resname="r39622555" restype="string" datatype="ruby">
-        <source>As the fabulous 2014 is winding down and giving way to a promising 2015, I&apos;d like to send you and your loved ones warm wishes and big smiles for the holidays, and all the best for a super happy New Year!</source>
+        <source>As the fabulous 2014 is winding down and giving way to a promising 2015, I'd like to send you and your loved ones warm wishes and big smiles for the holidays, and all the best for a super happy New Year!</source>
         <target>作为神话般的2014年正在结束并让路给更有前途的2015年，我希望送给您与您的亲人温暖的祝福和大大的微笑，以及一切都是最好的一个超级快乐的新年！</target>
         <note annotates="source">TODO manual skip</note>
       </trans-unit>
       <trans-unit id="355" resname="r1055558589" restype="string" datatype="ruby">
-        <source>Ron Gutman and the HealthTap Team :&#41;</source>
-        <target>Ron Gutman和HealthTap团队 :&#41;</target>
+        <source>Ron Gutman and the HealthTap Team :)</source>
+        <target>Ron Gutman和HealthTap团队 :)</target>
         <note annotates="source">TODO manual skip</note>
       </trans-unit>
     </body>
@@ -1089,8 +1089,8 @@
         <target>一如既往的感谢您，</target>
       </trans-unit>
       <trans-unit id="381" resname="r954262044" restype="string" datatype="ruby">
-        <source>Team :&#41;</source>
-        <target>团队 :&#41;</target>
+        <source>Team :)</source>
+        <target>团队 :)</target>
       </trans-unit>
     </body>
   </file>
@@ -1113,11 +1113,11 @@
         <target>请花一分钟回顾一个或多个这样的病症，或只是访问新的知识共享部分：</target>
       </trans-unit>
       <trans-unit id="385" resname="r419954263" restype="string" datatype="ruby">
-        <source>You are on your way to being named a Knowledge Editor in HealthTap&apos;s new AI-based service that will help millions to a better understanding of what their symptoms mean.</source>
+        <source>You are on your way to being named a Knowledge Editor in HealthTap's new AI-based service that will help millions to a better understanding of what their symptoms mean.</source>
         <target>您正在使用命名为知识编辑器，它是HealthTap的新的基于AI的服务，这将帮助数百万患者更好地了解他们是什么症状。</target>
       </trans-unit>
       <trans-unit id="386" resname="r242564691" restype="string" datatype="ruby">
-        <source>When you achieve Knowledge Editor status, you&apos;ll be recognized for your contributions on a special page, and you&apos;ll also get a special designation in your Awards section on your Virtual Practice. You&apos;ll achieve the first level of Knowledge Editor standing with just 100 reviews.</source>
+        <source>When you achieve Knowledge Editor status, you'll be recognized for your contributions on a special page, and you'll also get a special designation in your Awards section on your Virtual Practice. You'll achieve the first level of Knowledge Editor standing with just 100 reviews.</source>
         <target>当您获得知识编辑器的状态时，您将在特定页面上获得您的贡献，您还将在您的在线诊疗的奖励部分获得特别的名称。您将凭借100条评论获得第一级的知识编辑器。</target>
       </trans-unit>
       <trans-unit id="387" resname="r443835734" restype="string" datatype="ruby">
@@ -1309,11 +1309,11 @@
         <target>添加银行账户信息</target>
       </trans-unit>
       <trans-unit id="432" resname="r27616819" restype="string" datatype="ruby">
-        <source>We&apos;ve automatically processed a request to deposit balance into your account set up with our trusted payments partner, Payoneer.</source>
+        <source>We've automatically processed a request to deposit balance into your account set up with our trusted payments partner, Payoneer.</source>
         <target>我们已自动处理将存款余额存入您的账户的请求，该账户是由我们信任的支付合作伙伴Payoneer设置的。</target>
       </trans-unit>
       <trans-unit id="433" resname="r434079545" restype="string" datatype="ruby">
-        <source>You should see this amount, which includes a $1 transaction fee, in your account in 1-2 business days. If there are any issues with the transaction on our end, we will let you know. As always, if you have any questions, we&apos;re here to support you. Please reply to this email or call us at 650-376-6010 anytime.</source>
+        <source>You should see this amount, which includes a $1 transaction fee, in your account in 1-2 business days. If there are any issues with the transaction on our end, we will let you know. As always, if you have any questions, we're here to support you. Please reply to this email or call us at 650-376-6010 anytime.</source>
         <target>您将在1-2个工作日内在账户中查到这笔金额，其中包括1美元的交易费。如果我们的交易有任何问题，我们会告诉您。 如往常一样，如果您有任何问题，我们会尽所能帮助您。请回复此电子邮件或随时致电650-376-6010与我们联系。</target>
       </trans-unit>
       <trans-unit id="434" resname="r347242817" restype="string" datatype="ruby">
@@ -1457,7 +1457,7 @@
         <target>立即采取行动，在所有轮班被占用之前保留您的位置。</target>
       </trans-unit>
       <trans-unit id="462" resname="r160396817" restype="string" datatype="ruby">
-        <source>You’ll be in the company of some of the most passionate and highly qualified doctors, who are helping people by delivering Virtual Consults on this revolutionary new platform. You can work from anywhere and be paid well &#40;up to $180/hour&#41; to deliver virtual house calls without any of the hassles, overhead, or costs of an office-based practice.</source>
+        <source>You’ll be in the company of some of the most passionate and highly qualified doctors, who are helping people by delivering Virtual Consults on this revolutionary new platform. You can work from anywhere and be paid well (up to $180/hour) to deliver virtual house calls without any of the hassles, overhead, or costs of an office-based practice.</source>
         <target>您将在拥有最热情的和高质量的医生的公司工作，他们通过这个革命性的新平台提供在线咨询服务来帮助人们。您可以在任何地方工作并获得丰厚的薪酬（高达$ 180 /小时），提供在线出诊服务，没有任何麻烦、开销，也没有门诊办公的成本。</target>
       </trans-unit>
     </body>
@@ -1517,7 +1517,7 @@
         <target>您第一次轮班时我们将与您联系，并为您第一次在线咨询的方向和准备提供更多的细节，包括您的视频设置，以及如何访问直观和易于使用的界面做实时视频和收件箱在线咨询。</target>
       </trans-unit>
       <trans-unit id="475" resname="r128427848" restype="string" datatype="ruby">
-        <source>In the meantime, we suggest reviewing our guidelines on setting up and preparing for your first Virtual Consult. We&apos;ll be in touch soon about training and getting started!</source>
+        <source>In the meantime, we suggest reviewing our guidelines on setting up and preparing for your first Virtual Consult. We'll be in touch soon about training and getting started!</source>
         <target>同时，我们建议您查看关于设置和准备您的第一次在线咨询的指南。关于培训和入门可以马上联系我们！</target>
       </trans-unit>
       <trans-unit id="476" resname="r873678664" restype="string" datatype="ruby">
@@ -1565,7 +1565,7 @@
         <target>HealthTap Prime培训指南</target>
       </trans-unit>
       <trans-unit id="486" resname="r770186429" restype="string" datatype="ruby">
-        <source>&#40;username: primedoctor / password: feelgood!&#41;. You may also watch our short</source>
+        <source>(username: primedoctor / password: feelgood!). You may also watch our short</source>
         <target>（用户名：primedoctor / 密码：feelgood！）。 您也可以观看我们简短的</target>
       </trans-unit>
       <trans-unit id="487" resname="r751174990" restype="string" datatype="ruby">
@@ -1573,7 +1573,7 @@
         <target>HealthTap Prime培训视频</target>
       </trans-unit>
       <trans-unit id="488" resname="r85450329" restype="string" datatype="ruby">
-        <source>&#40;password: feelgood!&#41;. In this video, we show you how to set up for Virtual Consults, guide you through the steps of giving a live video consult, and demonstrate the flexible note entry and electronic prescribing system.</source>
+        <source>(password: feelgood!). In this video, we show you how to set up for Virtual Consults, guide you through the steps of giving a live video consult, and demonstrate the flexible note entry and electronic prescribing system.</source>
         <target>（密码：feelgood！）。 在本视频中，我们将向您展示如何设置在线咨询服务，指导您完成实时视频咨询的步骤，以及演示灵活的注释输入和电子处方系统。</target>
       </trans-unit>
       <trans-unit id="489" resname="r286516871" restype="string" datatype="ruby">
@@ -1625,7 +1625,7 @@
         <target>感谢您有兴趣通过HealthTap Prime来帮助别人。恭喜，您的申请已获得批准，现在您只需完成注册即可成为</target>
       </trans-unit>
       <trans-unit id="500" resname="r792363093" restype="string" datatype="ruby">
-        <source>now to learn more about how to do Virtual Consults, review your contract with us &#40;including details on professional liability, insurance and compensation&#41;, and tell us which shifts you’d like to work each week.</source>
+        <source>now to learn more about how to do Virtual Consults, review your contract with us (including details on professional liability, insurance and compensation), and tell us which shifts you’d like to work each week.</source>
         <target>现在要详细了解如何做在线咨询服务，查看您与我们签订的合同（包括职业责任，保险和报酬的详细信息），并告诉我们您每周希望工作的班次。</target>
       </trans-unit>
       <trans-unit id="501" resname="r1027133048" restype="string" datatype="ruby">
@@ -1661,7 +1661,7 @@
         <target>在</target>
       </trans-unit>
       <trans-unit id="509" resname="r948367685" restype="string" datatype="ruby">
-        <source>you will learn more about how to do Virtual Consults on HealthTap, review your contract with us &#40;including details on professional liability insurance and compensation&#41;, and tell us which shifts you’d like to work each week when we do have shifts available.</source>
+        <source>you will learn more about how to do Virtual Consults on HealthTap, review your contract with us (including details on professional liability insurance and compensation), and tell us which shifts you’d like to work each week when we do have shifts available.</source>
         <target>您将更了解关于如何在HealthTap上做在线咨询服务，查看您与我们签订的合同（包括职业责任，保险和报酬的详细信息），并告诉我们，当我们有班次可用时，您每周希望工作的班次。</target>
       </trans-unit>
       <trans-unit id="510" resname="r433583626" restype="string" datatype="ruby">
@@ -1705,7 +1705,7 @@
         <target>更新付款信息</target>
       </trans-unit>
       <trans-unit id="520" resname="r97522428" restype="string" datatype="ruby">
-        <source>This is a one time setup. Once enabled, your earnings &#40;minus Payoneer&apos;s $0.60 transaction fee&#41; will be deposited in your account automatically each month. As always, if you have any questions, we&apos;re here to support you. Please reply to this email or call us at 650-376-6010 anytime.</source>
+        <source>This is a one time setup. Once enabled, your earnings (minus Payoneer's $0.60 transaction fee) will be deposited in your account automatically each month. As always, if you have any questions, we're here to support you. Please reply to this email or call us at 650-376-6010 anytime.</source>
         <target>这是一次性设置。启用后，您的收入（减去Payoneer的$ 0.60交易费）将每月自动存入您的账户。如往常一样，如果您有任何问题，我们将帮助您。请回复此电子邮件或随时致电650-376-6010与我们联系。</target>
       </trans-unit>
     </body>
@@ -1861,7 +1861,7 @@
   <file original="app/views/general_mailer/doctor_network_app_rejected.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="548" resname="r636827294" restype="string" datatype="ruby">
-        <source>Thank you for applying to the Medical Expert Network. We carefully verify all applicants, and we&apos;re sorry to inform you that we encountered one or more of the following issues that may prevent your acceptance into the Medical Expert Network:</source>
+        <source>Thank you for applying to the Medical Expert Network. We carefully verify all applicants, and we're sorry to inform you that we encountered one or more of the following issues that may prevent your acceptance into the Medical Expert Network:</source>
         <target>感谢您申请加入医学专家网络。我们将仔细审查所有申请人，但很抱歉通知您，我们遇到了可能妨碍您加入医学专家网络的一个或多个问题。</target>
       </trans-unit>
       <trans-unit id="549" resname="r458142203" restype="string" datatype="ruby">
@@ -1897,7 +1897,7 @@
         <target>详细了解参与HealthTap的许多优势</target>
       </trans-unit>
       <trans-unit id="556" resname="r471966690" restype="string" datatype="ruby">
-        <source>All applications go through a thorough review process, which includes checks on credentials, background, and medical licensing. We&apos;ll complete this process within three working days. We&apos;ll let you know if we have any questions, and inform you as soon as you&apos;re approved.</source>
+        <source>All applications go through a thorough review process, which includes checks on credentials, background, and medical licensing. We'll complete this process within three working days. We'll let you know if we have any questions, and inform you as soon as you're approved.</source>
         <target>所有的申请都要经过彻底的审核流程，包括对凭证，背景和医疗执业执照的检查。我们将在三个工作日内完成此流程。如果我们有任何问题，我们会告知您，并在您获得批准后尽快通知您。</target>
       </trans-unit>
       <trans-unit id="557" resname="r395394109" restype="string" datatype="ruby">
@@ -1921,7 +1921,7 @@
         <target>作为医疗专家网络中的新医生，您还可以享受HealthTap的新服务，您可以从您的办公室，家庭或您选择的任何地方提供普通门诊在线咨询。</target>
       </trans-unit>
       <trans-unit id="561" resname="r183653703" restype="string" datatype="ruby">
-        <source>HealthTap&apos;s groundbreaking new healthcare platform offers you the opportunity to give live video, audio, and chat Virtual Consults from the convenience of your office, home, or wherever you choose.</source>
+        <source>HealthTap's groundbreaking new healthcare platform offers you the opportunity to give live video, audio, and chat Virtual Consults from the convenience of your office, home, or wherever you choose.</source>
         <target>HealthTap的开创性新医护平台为您提供在办公室、家以及您选择的任意地方方便使用在线视频、音频和在线咨询的机会。</target>
       </trans-unit>
       <trans-unit id="562" resname="r975154446" restype="string" datatype="ruby">
@@ -1949,11 +1949,11 @@
         <target>当您熟悉之后</target>
       </trans-unit>
       <trans-unit id="567" resname="r361235246" restype="string" datatype="ruby">
-        <source>We are now completing final review of your application for a free Virtual Practice in HealthTap Concierge. If we need clarification from you, we will give you a call. As soon as you&apos;re approved for HealthTap Concierge, we’ll send you an email to let you know so you can start helping your patients with HD video, voice, or text chat virtual consults. As you become familiar with</source>
+        <source>We are now completing final review of your application for a free Virtual Practice in HealthTap Concierge. If we need clarification from you, we will give you a call. As soon as you're approved for HealthTap Concierge, we’ll send you an email to let you know so you can start helping your patients with HD video, voice, or text chat virtual consults. As you become familiar with</source>
         <target>我们正在完成您在HealthTap贵宾台关于免费在线诊疗的申请的最终审核。如果我们需要您的说明，我们会联系您。一旦您被HealthTap贵宾台批准，我们会向您发送一份邮件告知您可即刻开始使用高清视频、语音或文本聊天来帮助您的患者进行在线咨询。当您熟悉之后</target>
       </trans-unit>
       <trans-unit id="568" resname="r728998716" restype="string" datatype="ruby">
-        <source>, you&apos;ll find many opportunities to connect with your colleagues and help your patients and millions everywhere.</source>
+        <source>, you'll find many opportunities to connect with your colleagues and help your patients and millions everywhere.</source>
         <target>，您会发现许多和同事联系及帮助各地百万患者的机会。</target>
       </trans-unit>
       <trans-unit id="569" resname="r289842648" restype="string" datatype="ruby">
@@ -1969,15 +1969,15 @@
         <target>当您熟悉之后</target>
       </trans-unit>
       <trans-unit id="572" resname="r1015978731" restype="string" datatype="ruby">
-        <source>, you&apos;ll find many opportunities to connect with your colleagues and help millions everywhere.</source>
+        <source>, you'll find many opportunities to connect with your colleagues and help millions everywhere.</source>
         <target>，您会发现许多和同事联系及帮助各地百万人的机会。</target>
       </trans-unit>
       <trans-unit id="573" resname="r246949317" restype="string" datatype="ruby">
-        <source>This is the first step towards being certified as a HealthTap Prime doctor. Approval for HealthTap Prime requires some additional verification, and we&apos;re expediting that for you now. If we have any questions for you, we will give you a call. As soon as we’ve verified your HealthTap Prime application, we’ll send you an email to let you know you are able to sign up for available shifts and give primary care Virtual Consults. As you become familiar with</source>
+        <source>This is the first step towards being certified as a HealthTap Prime doctor. Approval for HealthTap Prime requires some additional verification, and we're expediting that for you now. If we have any questions for you, we will give you a call. As soon as we’ve verified your HealthTap Prime application, we’ll send you an email to let you know you are able to sign up for available shifts and give primary care Virtual Consults. As you become familiar with</source>
         <target>这是迈向获得HealthTap Prime医生认证的第一步。 批准HealthTap Prime需要一些额外的验证，我们正在为您加速验证。 如果我们有任何问题，我们会打电话给您。一旦我们验证您的HealthTap Prime申请，我们将向您发送一封电子邮件，告知您能够注册可用的班次并提供普通门诊在线咨询。 当您熟悉之后</target>
       </trans-unit>
       <trans-unit id="574" resname="r306674751" restype="string" datatype="ruby">
-        <source>We&apos;re so happy that you&apos;ve joined</source>
+        <source>We're so happy that you've joined</source>
         <target>我们很高兴您的加入</target>
       </trans-unit>
       <trans-unit id="575" resname="r427925882" restype="string" datatype="ruby">
@@ -2073,7 +2073,7 @@
   <file original="app/views/general_mailer/doctor_inbox_incoming_group.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="594" resname="r234950015" restype="string" datatype="ruby">
-        <source>Like with all Inbox Consults, the patient is expecting a response within 24 hours. If neither you nor your colleague&#40;s&#41; reply within this time period, your Concierge account&#40;s&#41; may be put on hold until we can confirm that you&apos;re receiving our notifications and able to reply to patient requests.</source>
+        <source>Like with all Inbox Consults, the patient is expecting a response within 24 hours. If neither you nor your colleague(s) reply within this time period, your Concierge account(s) may be put on hold until we can confirm that you're receiving our notifications and able to reply to patient requests.</source>
         <target>和所有收件箱咨询一样，患者希望在24小时之内收到回复。如果您或者您的同事未在指定时间内回答患者的问题，您的贵宾台账户会被锁定直到我们能确认您可以收到我们的提醒并有能力回答患者的问题。</target>
       </trans-unit>
       <trans-unit id="595" resname="r365849966" restype="string" datatype="ruby">
@@ -2117,8 +2117,8 @@
         <target>我们期待着回来，</target>
       </trans-unit>
       <trans-unit id="604" resname="r988927275" restype="string" datatype="ruby">
-        <source>Isaac &amp; the HealthTap Team :&#41;</source>
-        <target>Isaac和HealthTap团队 :&#41;</target>
+        <source>Isaac &amp; the HealthTap Team :)</source>
+        <target>Isaac和HealthTap团队 :)</target>
       </trans-unit>
     </body>
   </file>
@@ -2129,7 +2129,7 @@
         <target>这是第二意见咨询，您不会被要求提供治疗，诊断或处方。 患者只是寻求您的建议和/或咨询先前诊断出的问题。</target>
       </trans-unit>
       <trans-unit id="606" resname="r1037480920" restype="string" datatype="ruby">
-        <source>Welcome to HealthTap! We&apos;ve sent you a test consult so that you can practice responding to a patient who has sent you an Inbox Consult on HealthTap. Please see the instructions below, and respond as you would to a real patient.</source>
+        <source>Welcome to HealthTap! We've sent you a test consult so that you can practice responding to a patient who has sent you an Inbox Consult on HealthTap. Please see the instructions below, and respond as you would to a real patient.</source>
         <target>欢迎来到HealthTap！ 我们已向您发送测试咨询，以便您可以诊疗回复已向您发送HealthTap收件箱咨询的患者。 请参阅下面的说明，并作为您会对一个真正的患者作出的回复。</target>
       </trans-unit>
       <trans-unit id="607" resname="r1008350226" restype="string" datatype="ruby">
@@ -2213,8 +2213,8 @@
         <target>感谢您花时间确保您的帐户更安全！ 请点击下面的按钮确认您的邮箱。</target>
       </trans-unit>
       <trans-unit id="624" resname="r258690233" restype="string" datatype="ruby">
-        <source>Tatiana &amp; HealthTap Team :&#41;</source>
-        <target>Tatiana和HealthTap团队 :&#41;</target>
+        <source>Tatiana &amp; HealthTap Team :)</source>
+        <target>Tatiana和HealthTap团队 :)</target>
       </trans-unit>
     </body>
   </file>
@@ -2265,7 +2265,7 @@
   <file original="app/views/general_mailer/doctor_concierge_suggested_patients.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="632" resname="r876909950" restype="string" datatype="ruby">
-        <source>To help expand your virtual practice and showcase the value of virtual care we&apos;d like to  provide you with this limited-time opportunity to invite select HealthTap members to an introductory consult with you at a special discounted rate.</source>
+        <source>To help expand your virtual practice and showcase the value of virtual care we'd like to  provide you with this limited-time opportunity to invite select HealthTap members to an introductory consult with you at a special discounted rate.</source>
         <target>为了帮助您扩展您的在线诊疗并展示在线医护的价值，我们希望为您提供这个有限的机会，邀请选择HealthTap会员以特别折扣率与您进行介绍性咨询。</target>
       </trans-unit>
       <trans-unit id="633" resname="r309761727" restype="string" datatype="ruby">
@@ -2293,7 +2293,7 @@
   <file original="app/views/general_mailer/doctor_concierge_set_pricing_not_complete.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="638" resname="r608080251" restype="string" datatype="ruby">
-        <source>We noticed you recently started but didn&apos;t finalize the setup of your HealthTap Concierge program. Take a moment to complete all three signup steps so you can use this valuable service with your patients.</source>
+        <source>We noticed you recently started but didn't finalize the setup of your HealthTap Concierge program. Take a moment to complete all three signup steps so you can use this valuable service with your patients.</source>
         <target>我们注意到您最近已经开始，但没有最终确定您的HealthTap贵宾台计划的设置。 请花一点时间完成所有的三个注册步骤，以便您可以为您的患者使用这个有价值的服务。</target>
       </trans-unit>
       <trans-unit id="639" resname="r463296502" restype="string" datatype="ruby">
@@ -2308,21 +2308,21 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_set_pricing_change_and_upcoming_charge.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="641" resname="r744520428" restype="string" datatype="ruby">
+      <trans-unit id="641" resname="r77653476" restype="string" datatype="ruby">
         <source>&lt;b&gt;Optimize Your Custom Prices:&lt;/b&gt;</source>
         <target>&lt;b&gt;优化您的定制价格：&lt;/b&gt;</target>
       </trans-unit>
-      <trans-unit id="642" resname="r542703797" restype="string" datatype="ruby">
+      <trans-unit id="642" resname="r974973693" restype="string" datatype="ruby">
         <source>&lt;b&gt;Top Tips for Your Success on HealthTap Concierge:&lt;/b&gt;</source>
         <target>&lt;b&gt;为您在HealthTap贵宾台取得成功的秘诀：&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="643" resname="r593970094" restype="string" datatype="ruby">
-        <source>1&#41; When a patient has difficulty making it to your office at the times you&apos;re available, suggest a virtual appointment for that time &#40;make sure your office staff knows to offer this on the phone also&#41;.</source>
-        <target>1&#41; 当您可以服务而患者却难以到达您的办公室时，此时建议一次在线预约（确保您的办公室工作人员也知道可以在电话上提供）。</target>
+        <source>1) When a patient has difficulty making it to your office at the times you're available, suggest a virtual appointment for that time (make sure your office staff knows to offer this on the phone also).</source>
+        <target>1) 当您可以服务而患者却难以到达您的办公室时，此时建议一次在线预约（确保您的办公室工作人员也知道可以在电话上提供）。</target>
       </trans-unit>
       <trans-unit id="644" resname="r911632909" restype="string" datatype="ruby">
-        <source>3&#41; Spread the word about your Virtual Practice:</source>
-        <target>3&#41; 传播关于您的在线诊疗的消息：</target>
+        <source>3) Spread the word about your Virtual Practice:</source>
+        <target>3) 传播关于您的在线诊疗的消息：</target>
       </trans-unit>
       <trans-unit id="645" resname="r240059614" restype="string" datatype="ruby">
         <source>Display your</source>
@@ -2357,15 +2357,15 @@
         <target>为您的患者提供在线访问以咨询他们，并帮助他们的健康和健康生活的目标。</target>
       </trans-unit>
       <trans-unit id="653" resname="r33081691" restype="string" datatype="ruby">
-        <source>4&#41; Get help from a HealthTap Concierge support specialist. We&apos;re here to help you thrive on HealthTap Concierge! Call or email us anytime at 650.376.6010 or concierge@healthtap.com</source>
-        <target>4&#41; 从HealthTap贵宾台支持专家获得帮助。 我们在这里帮助您在HealthTap贵宾台茁壮成长！ 随时致电或发邮件给我们在650.376.6010或concierge@healthtap.com</target>
+        <source>4) Get help from a HealthTap Concierge support specialist. We're here to help you thrive on HealthTap Concierge! Call or email us anytime at 650.376.6010 or concierge@healthtap.com</source>
+        <target>4) 从HealthTap贵宾台支持专家获得帮助。 我们在这里帮助您在HealthTap贵宾台茁壮成长！ 随时致电或发邮件给我们在650.376.6010或concierge@healthtap.com</target>
       </trans-unit>
       <trans-unit id="654" resname="r436367148" restype="string" datatype="ruby">
         <source>Keep Experimenting and Growing Your Virtual Practice</source>
         <target>继续试验和成长您的在线诊疗</target>
       </trans-unit>
       <trans-unit id="655" resname="r47492411" restype="string" datatype="ruby">
-        <source>We&apos;re hearing many great stories and tips from doctors too, so please tell us what&apos;s working well for you on HealthTap Concierge — we&apos;ll share your learnings with your colleagues.</source>
+        <source>We're hearing many great stories and tips from doctors too, so please tell us what's working well for you on HealthTap Concierge — we'll share your learnings with your colleagues.</source>
         <target>我们还从医生那里听到很多很好的故事和小贴士，所以请告诉我们在HealthTap贵宾台什么是很好的工作—我们将与您的同事分享您的学习。</target>
       </trans-unit>
       <trans-unit id="656" resname="r856922692" restype="string" datatype="ruby">
@@ -2377,7 +2377,7 @@
   <file original="app/views/general_mailer/doctor_concierge_reminder_shift_started.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="658" resname="r310263541" restype="string" datatype="ruby">
-        <source>This is a courtesy notification to inform you that our system does not currently see you logged in with the &quot;Available&quot; status on HealthTap for your shift. If there are any technical issues preventing you from logging in, please consider trying to access HealthTap again after restarting your device or computer. Then, if you would like additional assistance, please contact expertsupport@healthtap.com &#40;or 650-376-6010&#41;.</source>
+        <source>This is a courtesy notification to inform you that our system does not currently see you logged in with the "Available" status on HealthTap for your shift. If there are any technical issues preventing you from logging in, please consider trying to access HealthTap again after restarting your device or computer. Then, if you would like additional assistance, please contact expertsupport@healthtap.com (or 650-376-6010).</source>
         <target>这是一个礼貌的通知，通知您我们的系统目前没有看到您登录HealthTap并为您的班次的设置为“空闲”状态。 如果有任何技术问题阻止您登录，请考虑在重新启动设备或计算机后再次尝试访问HealthTap。 然后，如果您需要其他帮助，请联系expertsupport@healthtap.com（或650-376-6010）。</target>
       </trans-unit>
     </body>
@@ -2397,11 +2397,11 @@
   <file original="app/views/general_mailer/doctor_concierge_pricing_started.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="661" resname="r444993849" restype="string" datatype="ruby">
-        <source>We noticed you recently started but didn&apos;t finalize the setup of your HealthTap Concierge service. Take a moment to complete signing up so you can start to earn more and benefit from using this service with your patients.</source>
+        <source>We noticed you recently started but didn't finalize the setup of your HealthTap Concierge service. Take a moment to complete signing up so you can start to earn more and benefit from using this service with your patients.</source>
         <target>我们注意到您最近刚开始，但没有最终确定您的HealthTap贵宾台服务的设置。 花一点时间完成注册，以便您可以开始赚取更多的收入，并通过您的患者使用此服务而受益。</target>
       </trans-unit>
       <trans-unit id="662" resname="r100138446" restype="string" datatype="ruby">
-        <source>How much will you earn? Play around with the calculator at the bottom of the page. For example, if you set your Inbox Consult price to $60 and do just 1 Inbox Consult per day, you&apos;ll earn an additional $14,050/year. This is a great way to start getting paid for the patient emails you may already be answering during your off time.</source>
+        <source>How much will you earn? Play around with the calculator at the bottom of the page. For example, if you set your Inbox Consult price to $60 and do just 1 Inbox Consult per day, you'll earn an additional $14,050/year. This is a great way to start getting paid for the patient emails you may already be answering during your off time.</source>
         <target>您会赚多少钱？ 在页面底部使用计算器。 例如，如果您将收件箱咨询价格设置为$ 60，每天只进行1次收件箱咨询，则每年还可获得额外的$ 14,050。 这是开始获得付款患者电子邮件的一个很好的方式，您可能已经在您的优惠期间回答。</target>
       </trans-unit>
       <trans-unit id="663" resname="r775001105" restype="string" datatype="ruby">
@@ -2413,7 +2413,7 @@
   <file original="app/views/general_mailer/doctor_concierge_pricing_optout.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="664" resname="r267416965" restype="string" datatype="ruby">
-        <source>Please let us know if you&apos;d like to rejoin HealthTap Concierge, and feel free to reach out if you have any feedback or suggestions about our services.</source>
+        <source>Please let us know if you'd like to rejoin HealthTap Concierge, and feel free to reach out if you have any feedback or suggestions about our services.</source>
         <target>请告诉我们您是否希望重新加入HealthTap贵宾台，如果您对我们的服务有任何反馈或建议，欢迎随时与我们联系。</target>
       </trans-unit>
       <trans-unit id="665" resname="r483529570" restype="string" datatype="ruby">
@@ -2425,11 +2425,11 @@
   <file original="app/views/general_mailer/doctor_concierge_pricing_confirmation.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="667" resname="r412724599" restype="string" datatype="ruby">
-        <source>Congratulations on joining the HealthTap Concierge service. We&apos;re thrilled you&apos;ve joined, and we’re excited to work together with you to improve medical care for patients everywhere. Your dedicated account representative will contact you to learn more about how your practice operates and provide you with the tools that will help you thrive as a HealthTap Concierge doctor.</source>
+        <source>Congratulations on joining the HealthTap Concierge service. We're thrilled you've joined, and we’re excited to work together with you to improve medical care for patients everywhere. Your dedicated account representative will contact you to learn more about how your practice operates and provide you with the tools that will help you thrive as a HealthTap Concierge doctor.</source>
         <target>恭喜您加入了HealthTap贵宾台服务。 我们很高兴您加入我们，我们很高兴与您携手合作，改善各地患者的医疗医护。 您的专门的客户代表将与您联系，以了解更多关于您的诊疗如何操作，并为您提供的工具，将帮助您成为HealthTap贵宾台医生。</target>
       </trans-unit>
       <trans-unit id="668" resname="r807127570" restype="string" datatype="ruby">
-        <source>You&apos;ve set the following consult prices:</source>
+        <source>You've set the following consult prices:</source>
         <target>您已设置以下咨询价格：</target>
       </trans-unit>
       <trans-unit id="669" resname="r854288773" restype="string" datatype="ruby">
@@ -2481,7 +2481,7 @@
         <target>分享您的自定义网址：</target>
       </trans-unit>
       <trans-unit id="681" resname="r943094727" restype="string" datatype="ruby">
-        <source>We&apos;re here to support the integration of virtual care into your practice! We suggest making small, daily commitments to welcome your patients to your Virtual Practice so you&apos;ll see ongoing and growing success on HealthTap Concierge.</source>
+        <source>We're here to support the integration of virtual care into your practice! We suggest making small, daily commitments to welcome your patients to your Virtual Practice so you'll see ongoing and growing success on HealthTap Concierge.</source>
         <target>我们在这里支持将在线医护整合到您的诊疗中！ 我们建议每天做出小的承诺，欢迎您的患者参加您的在线诊疗，以便您可以在HealthTap贵宾台感受到持续不断的成功。</target>
       </trans-unit>
       <trans-unit id="682" resname="r90715041" restype="string" datatype="ruby">
@@ -2533,16 +2533,16 @@
   <file original="app/views/general_mailer/doctor_concierge_invite_concierge_3days.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="692" resname="r254237896" restype="string" datatype="ruby">
-        <source>I&apos;d like to follow up on my request to connect with you as your patient. Please consider accepting my invitation to connect for Virtual Consults?</source>
+        <source>I'd like to follow up on my request to connect with you as your patient. Please consider accepting my invitation to connect for Virtual Consults?</source>
         <target>我希望跟进我的请求并作为您的患者与您联系。 请考虑接受我的在线咨询连接邀请？</target>
       </trans-unit>
     </body>
   </file>
   <file original="app/views/general_mailer/doctor_concierge_invite_concierge_0days.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="693" resname="r662306794" restype="string" datatype="ruby">
-        <source>&lt;span style=&quot;font-style:italic;&quot; &gt;The HealthTap&lt;sup&gt;+&lt;/sup&gt; Team :&#41;&lt;/span&gt;</source>
-        <target>&lt;span style=&quot;font-style:italic;&quot; &gt;HealthTap&lt;sup&gt;+&lt;/sup&gt;团队:&#41;&lt;/span&gt;</target>
+      <trans-unit id="693" resname="r416570097" restype="string" datatype="ruby">
+        <source>&lt;span style="font-style:italic;" &gt;The HealthTap&lt;sup&gt;+&lt;/sup&gt; Team :)&lt;/span&gt;</source>
+        <target>&lt;span style="font-style:italic;" &gt;HealthTap&lt;sup&gt;+&lt;/sup&gt;团队:)&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -2605,7 +2605,7 @@
   <file original="app/views/general_mailer/doctor_concierge_frozen_followup.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="702" resname="r457121423" restype="string" datatype="ruby">
-        <source>Please note - your Virtual Practice has been inactivated to prevent future appointments, Inbox Consults, and Live Consults until we can confirm that you&apos;re receiving our notifications and are able to complete virtual consults according to our current policies. We want to confirm your current HealthTap</source>
+        <source>Please note - your Virtual Practice has been inactivated to prevent future appointments, Inbox Consults, and Live Consults until we can confirm that you're receiving our notifications and are able to complete virtual consults according to our current policies. We want to confirm your current HealthTap</source>
         <target>请注意-您的在线诊疗直到我们可以确认您正收到我们的通知并有能力根据我们的当前政策完成在线诊疗的时候才会被激活，才能参与未来的预约、收件箱咨询和实时咨询。我们想确认您当前的HealthTap。</target>
       </trans-unit>
       <trans-unit id="703" resname="r46500260" restype="string" datatype="ruby">
@@ -2625,15 +2625,15 @@
   <file original="app/views/general_mailer/doctor_concierge_appointment_missed.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="705" resname="r361771980" restype="string" datatype="ruby">
-        <source>We&apos;re checking in to make sure you are configured to use HealthTap to help your patients. In particular, please confirm you are receiving HealthTap&apos;s notifications about your pending Virtual Appointments.</source>
+        <source>We're checking in to make sure you are configured to use HealthTap to help your patients. In particular, please confirm you are receiving HealthTap's notifications about your pending Virtual Appointments.</source>
         <target>我们在确认您是否适合于使用HealthTap来帮助您的患者。特别地，请确认您收到HealthTap的关于您未决定的在线预约的通知。</target>
       </trans-unit>
       <trans-unit id="706" resname="r175127758" restype="string" datatype="ruby">
-        <source>If you would like assistance checking your computer or device setup, please let us know. For the time being, we may put your Virtual Office hours schedule on hold temporarily to prevent future Virtual Appointments from being booked until you confirm that you&apos;re receiving notifications about your appointments and can be available during your designated Virtual Office hours.</source>
+        <source>If you would like assistance checking your computer or device setup, please let us know. For the time being, we may put your Virtual Office hours schedule on hold temporarily to prevent future Virtual Appointments from being booked until you confirm that you're receiving notifications about your appointments and can be available during your designated Virtual Office hours.</source>
         <target>如果您希望协助来查看您的电脑或设备设置，请告诉我们。我们会暂时锁定您的在线工作时间表来防止未来在线预约直到您可以收到预约的通知并确保在您指定的在线工作时间能正常工作。</target>
       </trans-unit>
       <trans-unit id="707" resname="r466895759" restype="string" datatype="ruby">
-        <source>If there&apos;s ever a scheduling conflict, please make sure to reschedule or cancel the virtual appointments in advance of the scheduled time.</source>
+        <source>If there's ever a scheduling conflict, please make sure to reschedule or cancel the virtual appointments in advance of the scheduled time.</source>
         <target>如果您有时间上的冲突，请重新安排或在安排的时间之前取消在线预约。</target>
       </trans-unit>
     </body>
@@ -2661,16 +2661,16 @@
   <file original="app/views/general_mailer/doctor_concierge_app_training_demo.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="711" resname="r811661794" restype="string" datatype="ruby">
-        <source>Before your demo, we recommend that you prepare a list of email addresses for your patients who you&apos;d like to invite to see you in your Virtual Practice. During your demo we&apos;ll show you how easy it is to send one-click custom invitations to tell your patients you can see them in your Virtual Office. At the time of your appointment, just follow these three steps to get started:</source>
+        <source>Before your demo, we recommend that you prepare a list of email addresses for your patients who you'd like to invite to see you in your Virtual Practice. During your demo we'll show you how easy it is to send one-click custom invitations to tell your patients you can see them in your Virtual Office. At the time of your appointment, just follow these three steps to get started:</source>
         <target>在您的演示之前，我们推荐您使用一系列为您希望邀请的患者来查看您的在线诊疗的电子邮件地址。在您的演示中我们会演示如何轻松的点击鼠标发送邀请来告诉您的患者您可以在在线办公室中查看他们。在您的预约中，请遵循以下三个步骤：</target>
       </trans-unit>
       <trans-unit id="712" resname="r110891085" restype="string" datatype="ruby">
-        <source>During your one-on-one training demo, we&apos;ll review your profile to help you enhance your online presence and attract new patients to your practice. Take a few minutes before your one-on-one session to enhance your profile — add a professional headshot, and add or edit your practice description, information about your professional background, and audio or video greeting.</source>
+        <source>During your one-on-one training demo, we'll review your profile to help you enhance your online presence and attract new patients to your practice. Take a few minutes before your one-on-one session to enhance your profile — add a professional headshot, and add or edit your practice description, information about your professional background, and audio or video greeting.</source>
         <target>在您的一对一训练演示中，我们会审核您的资料来帮助您增强您的在线存在感并吸引更多患者前来。在一对一环节之前花几分钟来增强您的个人资料—添加一个职业化的标题，添加或编辑您的诊疗描述、您的专业背景信息和音频/视频的问候。</target>
       </trans-unit>
       <trans-unit id="715" resname="r226345221" restype="string" datatype="ruby">
-        <source>, or call us at &#40;650&#41; 376-6010.</source>
-        <target>，或拨打电话&#40;650&#41; 376-6010。</target>
+        <source>, or call us at (650) 376-6010.</source>
+        <target>，或拨打电话(650) 376-6010。</target>
       </trans-unit>
     </body>
   </file>
@@ -2749,11 +2749,11 @@
   <file original="app/views/general_mailer/doctor_concierge_account_unfrozen.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="729" resname="r952131187" restype="string" datatype="ruby">
-        <source>Thank you for letting us know you&apos;re ready for HealthTap</source>
+        <source>Thank you for letting us know you're ready for HealthTap</source>
         <target>感谢您告诉我们您已准备好使用HealthTap</target>
       </trans-unit>
       <trans-unit id="730" resname="r231355300" restype="string" datatype="ruby">
-        <source>I hope you&apos;re enjoying HealthTap</source>
+        <source>I hope you're enjoying HealthTap</source>
         <target>我希望您可以享受HealthTap</target>
       </trans-unit>
     </body>
@@ -2957,11 +2957,11 @@
         <target>当有人使用您的链接购买咨询时，他们会得到一个$ 5余额，您会得到$ 5并添加到您的帐户</target>
       </trans-unit>
       <trans-unit id="774" resname="r97291376" restype="string" datatype="ruby">
-        <source>At the end of each month, we’ll send you CASH via PayPal for the amount you’ve earned—It&apos;s that easy :&#41;</source>
-        <target>在每个月的月底，我们将通过PayPal为您赚取的金额发送给您现款—这很轻松:&#41;</target>
+        <source>At the end of each month, we’ll send you CASH via PayPal for the amount you’ve earned—It's that easy :)</source>
+        <target>在每个月的月底，我们将通过PayPal为您赚取的金额发送给您现款—这很轻松:)</target>
       </trans-unit>
       <trans-unit id="775" resname="r369185047" restype="string" datatype="ruby">
-        <source>Start sharing today! Use these Twitter and Facebook posts to get you started, the more people who sign up, the more money you&apos;ll get. Just remember to include your personal URL or Promo code to get credit</source>
+        <source>Start sharing today! Use these Twitter and Facebook posts to get you started, the more people who sign up, the more money you'll get. Just remember to include your personal URL or Promo code to get credit</source>
         <target>立即开始分享！ 您可以通过使用这些Twitter和Facebook帖子开始，注册的人越多，您就会得到更多的钱。 只需记住添加您的个人网址或优惠码即可获得赠送金额</target>
       </trans-unit>
       <trans-unit id="776" resname="r695774474" restype="string" datatype="ruby">
@@ -2993,7 +2993,7 @@
   <file original="app/views/experts/patient_directory.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="781" resname="r728994113" restype="string" datatype="ruby">
-        <source>Write your patients a message&#40; Enter plain text or html &#41;</source>
+        <source>Write your patients a message( Enter plain text or html )</source>
         <target>给您的患者写一条信息（输入纯文本或HTML）</target>
       </trans-unit>
     </body>
@@ -3017,8 +3017,8 @@
   <file original="app/views/experts/_concierge_service.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="789" resname="r768231631" restype="string" datatype="ruby">
-        <source>1&#40;555&#41;555-5555</source>
-        <target>1&#40;555&#41;555-5555</target>
+        <source>1(555)555-5555</source>
+        <target>1(555)555-5555</target>
       </trans-unit>
     </body>
   </file>
@@ -3113,7 +3113,7 @@
   <file original="app/models/personalization_v2question_translation.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="820" resname="r79587754" restype="string" datatype="ruby">
-        <source>What&apos;s your gender?</source>
+        <source>What's your gender?</source>
         <target>您的性别？</target>
       </trans-unit>
       <trans-unit id="821" resname="r413874878" restype="string" datatype="ruby">
@@ -3177,7 +3177,7 @@
         <target>您说话或理解语言有突如其来的困难吗？</target>
       </trans-unit>
       <trans-unit id="837" resname="r210063777" restype="string" datatype="ruby">
-        <source>Are you having sudden numbness on the face, arm or leg &#40;especially on one side of the body&#41;?</source>
+        <source>Are you having sudden numbness on the face, arm or leg (especially on one side of the body)?</source>
         <target>您有脸，手臂或腿突然麻木吗（特别是身体的一侧）？</target>
       </trans-unit>
       <trans-unit id="838" resname="r604943998" restype="string" datatype="ruby">
@@ -3337,7 +3337,7 @@
         <target>您耳内有排泄物或排泄液体吗？</target>
       </trans-unit>
       <trans-unit id="880" resname="r949285399" restype="string" datatype="ruby">
-        <source>Do you have easy bruising or bleeding? &#40;ex. gums bleeding easily&#41;</source>
+        <source>Do you have easy bruising or bleeding? (ex. gums bleeding easily)</source>
         <target>您有容易瘀伤或出血吗？（例如牙龈容易出血）</target>
       </trans-unit>
       <trans-unit id="881" resname="r152053625" restype="string" datatype="ruby">
@@ -3513,7 +3513,7 @@
         <target>您试过非处方的头皮屑洗发水吗？</target>
       </trans-unit>
       <trans-unit id="925" resname="r711930347" restype="string" datatype="ruby">
-        <source>Have you tried any bendadryl, steroid &#40;hydrocortisone&#41; cream, or calamine lotion?</source>
+        <source>Have you tried any bendadryl, steroid (hydrocortisone) cream, or calamine lotion?</source>
         <target>您有尝试过任何苯那君，类固醇激素（氢化可的松）霜，或炉甘石洗剂吗？</target>
       </trans-unit>
       <trans-unit id="926" resname="r602550178" restype="string" datatype="ruby">
@@ -3569,7 +3569,7 @@
         <target>脚踝有伤吗？</target>
       </trans-unit>
       <trans-unit id="940" resname="r826401091" restype="string" datatype="ruby">
-        <source>Was there trauma to the arm or shoulder &#40;a fall or lifting too much weight?&#41;</source>
+        <source>Was there trauma to the arm or shoulder (a fall or lifting too much weight?)</source>
         <target>手臂或肩膀是否有损伤（跌倒或举重物？）</target>
       </trans-unit>
       <trans-unit id="941" resname="r473076146" restype="string" datatype="ruby">
@@ -3577,11 +3577,11 @@
         <target>膝盖有伤吗？</target>
       </trans-unit>
       <trans-unit id="942" resname="r970059508" restype="string" datatype="ruby">
-        <source>Was there trauma to the lower back &#40;a fall or lifting something to heavy&#41;?</source>
+        <source>Was there trauma to the lower back (a fall or lifting something to heavy)?</source>
         <target>后腰有伤吗（跌倒或提重的东西）？</target>
       </trans-unit>
       <trans-unit id="943" resname="r587292316" restype="string" datatype="ruby">
-        <source>Was there trauma to the neck &#40;whiplash from a car accident or turned head too quickly&#41;?</source>
+        <source>Was there trauma to the neck (whiplash from a car accident or turned head too quickly)?</source>
         <target>有颈部外伤（颈部扭伤或回头太快）？</target>
       </trans-unit>
       <trans-unit id="944" resname="r1070092431" restype="string" datatype="ruby">
@@ -3657,11 +3657,11 @@
   <file original="app/models/notifications/chat_notification_job.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="965" resname="r512089942" restype="string" datatype="ruby">
-        <source>Hi %{recipient}, my name is %{actor} and I&apos;m here to help you and %{expert} get ready for your virtual consult.</source>
+        <source>Hi %{recipient}, my name is %{actor} and I'm here to help you and %{expert} get ready for your virtual consult.</source>
         <target>您好，%{recipient}，我的名字是%{actor}，我来帮助您和%{expert}准备好为您的在线咨询。</target>
       </trans-unit>
       <trans-unit id="966" resname="r918244610" restype="string" datatype="ruby">
-        <source>Hi there, my name is %{actor} and I&apos;m here to help you and %{expert} get ready for your virtual consult.</source>
+        <source>Hi there, my name is %{actor} and I'm here to help you and %{expert} get ready for your virtual consult.</source>
         <target>您好，我的名字是%{actor}，我来帮助您和%{expert}准备好为您的在线咨询。</target>
       </trans-unit>
       <trans-unit id="967" resname="r532636474" restype="string" datatype="ruby">
@@ -3777,7 +3777,7 @@
         <target>2016年11月</target>
       </trans-unit>
       <trans-unit id="1030" resname="r852536477" restype="string" datatype="ruby">
-        <source>New &quot;HealthTap Cloud&quot; helps developers build interoperable, more engaging, and smarter health apps faster</source>
+        <source>New "HealthTap Cloud" helps developers build interoperable, more engaging, and smarter health apps faster</source>
         <target>新的“HealthTap云”帮助开发人员更快地构建可互操作，更具吸引力和更智能的健康应用程序</target>
       </trans-unit>
       <trans-unit id="1031" resname="r261460562" restype="string" datatype="ruby">
@@ -3789,7 +3789,7 @@
         <target>2016年12月</target>
       </trans-unit>
       <trans-unit id="1033" resname="r481000848" restype="string" datatype="ruby">
-        <source>New &quot;Doctor %{ai_serif}&quot; instantaneously translates symptoms into a path to feeling good</source>
+        <source>New "Doctor %{ai_serif}" instantaneously translates symptoms into a path to feeling good</source>
         <target>新的“Doctor%{ai_serif}”将症状即时转化为感觉良好的路径</target>
       </trans-unit>
       <trans-unit id="1034" resname="r599216549" restype="string" datatype="ruby">
@@ -4028,20 +4028,20 @@
   </file>
   <file original="public/feelGood/templates/generic_error.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1157" resname="We&apos;re having trouble reaching HealthTap. Please try again or refresh the page.      &lt;%=        RB.getString&#40;&quot;If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!&quot;&#41;.format&#40;{          link_tag_start: &apos;&lt;a href=&quot;mailto:&apos; + supportEmail + &apos;&quot;&gt;&apos;,          link_tag_end: &apos;&lt;/a&gt;&apos;        }&#41;      %&gt;" restype="string" datatype="html">
-        <source>We&apos;re having trouble reaching HealthTap. Please try again or refresh the page.
+      <trans-unit id="1157" resname="We&apos;re having trouble reaching HealthTap. Please try again or refresh the page.      &lt;%=        RB.getString(&quot;If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!&quot;).format({          link_tag_start: &apos;&lt;a href=&quot;mailto:&apos; + supportEmail + &apos;&quot;&gt;&apos;,          link_tag_end: &apos;&lt;/a&gt;&apos;        })      %&gt;" restype="string" datatype="html">
+        <source>We're having trouble reaching HealthTap. Please try again or refresh the page.
       &lt;%=
-        RB.getString&#40;&quot;If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!&quot;&#41;.format&#40;{
-          link_tag_start: &apos;&lt;a href=&quot;mailto:&apos; + supportEmail + &apos;&quot;&gt;&apos;,
-          link_tag_end: &apos;&lt;/a&gt;&apos;
-        }&#41;
+        RB.getString("If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!").format({
+          link_tag_start: '&lt;a href="mailto:' + supportEmail + '"&gt;',
+          link_tag_end: '&lt;/a&gt;'
+        })
       %&gt;</source>
         <target>我们无法连接到HealthTap。 请重试或刷新页面。
       &lt;%=
-        RB.getString&#40;“如果问题仍然存在，请{link_tag_start}与我们的支持小组联系{link_tag_end}，以获得进一步帮助。谢谢！“&#41;.format&#40;{
-          link_tag_start: &apos;&lt;a href=&quot;mailto:&apos; + supportEmail + &apos;&quot;&gt;&apos;,
-          link_tag_end: &apos;&lt;/a&gt;&apos;
-        }&#41;
+        RB.getString(“如果问题仍然存在，请{link_tag_start}与我们的支持小组联系{link_tag_end}，以获得进一步帮助。谢谢！“).format({
+          link_tag_start: '&lt;a href="mailto:' + supportEmail + '"&gt;',
+          link_tag_end: '&lt;/a&gt;'
+        })
       %&gt;</target>
       </trans-unit>
       <trans-unit id="1792" resname="If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!" restype="string" datatype="javascript">
@@ -4061,7 +4061,7 @@
   <file original="public/feelGood/templates/payment_content_old.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1755" resname="I agree to HealthTap&apos;s {terms_link_tag_start}Terms{link_tag_end} and {privacy_link_tag_start}Privacy Policy{link_tag_end}" restype="string" datatype="javascript">
-        <source>I agree to HealthTap&apos;s {terms_link_tag_start}Terms{link_tag_end} and {privacy_link_tag_start}Privacy Policy{link_tag_end}</source>
+        <source>I agree to HealthTap's {terms_link_tag_start}Terms{link_tag_end} and {privacy_link_tag_start}Privacy Policy{link_tag_end}</source>
         <target>您同意HealthTap的{terms_link_tag_start}条款{link_tag_end}和{privacy_link_tag_start}隐私政策{link_tag_end}。</target>
       </trans-unit>
     </body>
@@ -4069,35 +4069,35 @@
   <file original="public/multipage/compiled_js/member/newMemberLayout.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1383" resname="That username and password combo wasn&apos;t correct. Please try again or {link_tag_start}sign up{link_tag_end}." restype="string" datatype="javascript">
-        <source>That username and password combo wasn&apos;t correct. Please try again or {link_tag_start}sign up{link_tag_end}.</source>
+        <source>That username and password combo wasn't correct. Please try again or {link_tag_start}sign up{link_tag_end}.</source>
         <target>该用户名和密码组合不正确。 请重试或{link_tag_start}注册{link_tag_end}。</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/multipage/compiled_js/member/newMemberHome.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1385" resname="HealthTap is for informational purposes only.           Content on HealthTap &#40;including answers&#41; should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
-        <source>HealthTap is for informational purposes only.           Content on HealthTap &#40;including answers&#41; should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+      <trans-unit id="1385" resname="HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
         <target>HealthTap仅提供参考。 HealthTap上的内容（包括回答）不应用于医疗咨询，诊断或治疗，HealthTap上的互动不会创建医患关系。 不要因为HealthTap上的任何事情而忽视或延迟寻求专业的医疗建议。 如果您认为您可能有医疗紧急情况，请致电您的医生或911（美国）。 请参阅{link_tag_start}其他信息＆rsaquo; {link_tag_end}</target>
       </trans-unit>
       <trans-unit id="1386" resname="Type in your doctor&apos;s name, speciality or health topic..." restype="string" datatype="javascript">
-        <source>Type in your doctor&apos;s name, speciality or health topic...</source>
+        <source>Type in your doctor's name, speciality or health topic...</source>
         <target>请输入医生的姓名，专科或健康话题...</target>
       </trans-unit>
       <trans-unit id="1387" resname="Type a doctor&apos;s name or speciality" restype="string" datatype="javascript">
-        <source>Type a doctor&apos;s name or speciality</source>
+        <source>Type a doctor's name or speciality</source>
         <target>请输入医生的姓名或专科</target>
       </trans-unit>
       <trans-unit id="1388" resname="We look forward to connecting you with your patients.  HealthTap&apos;s HIPAA-secure messaging and practice updates allow for safe and efficient patient communication." restype="string" datatype="javascript">
-        <source>We look forward to connecting you with your patients.  HealthTap&apos;s HIPAA-secure messaging and practice updates allow for safe and efficient patient communication.</source>
+        <source>We look forward to connecting you with your patients.  HealthTap's HIPAA-secure messaging and practice updates allow for safe and efficient patient communication.</source>
         <target>我们期待与您的患者联系。 HealthTap的HIPAA安全信息和诊疗更新允许安全和有效的患者通信。</target>
       </trans-unit>
       <trans-unit id="1389" resname="Recruit new team members from your alma mater.  Help more patients and boost your school&apos;s reputation." restype="string" datatype="javascript">
-        <source>Recruit new team members from your alma mater.  Help more patients and boost your school&apos;s reputation.</source>
+        <source>Recruit new team members from your alma mater.  Help more patients and boost your school's reputation.</source>
         <target>从您的母校招聘新团队成员。 帮助更多的患者，提高学校的声誉。</target>
       </trans-unit>
-      <trans-unit id="1390" resname="HealthTap is for informational purposes only.  Content on HealthTap     &#40;including answers&#41; should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
-        <source>HealthTap is for informational purposes only.  Content on HealthTap     &#40;including answers&#41; should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+      <trans-unit id="1390" resname="HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
         <target>HealthTap仅提供参考。 HealthTap上的内容（包括回答）不应用于医疗咨询，诊断或治疗，HealthTap上的互动不会创建医患关系。 不要因为HealthTap上的任何事情而忽视或延迟寻求专业的医疗建议。 如果您认为您可能有医疗紧急情况，请致电您的医生或911（美国）。 请参阅{link_tag_start}其他信息＆rsaquo; {link_tag_end}</target>
       </trans-unit>
       <trans-unit id="1391" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
@@ -4109,7 +4109,7 @@
   <file original="public/multipage/compiled_js/expert/reviewTreatments.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1408" resname="Type in a clinician&apos;s name here" restype="string" datatype="javascript">
-        <source>Type in a clinician&apos;s name here</source>
+        <source>Type in a clinician's name here</source>
         <target>请在此输入临床医生的姓名</target>
       </trans-unit>
       <trans-unit id="1409" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
@@ -4133,15 +4133,15 @@
   <file original="public/multipage/compiled_js/expert/messages.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1424" resname="Why wasn&apos;t this helpful?" restype="string" datatype="javascript">
-        <source>Why wasn&apos;t this helpful?</source>
+        <source>Why wasn't this helpful?</source>
         <target>为什么这不是有帮助的？</target>
       </trans-unit>
       <trans-unit id="1425" resname="We&apos;re sorry! Please tell us why." restype="string" datatype="javascript">
-        <source>We&apos;re sorry! Please tell us why.</source>
+        <source>We're sorry! Please tell us why.</source>
         <target>我们很抱歉！ 请告诉我们为什么。</target>
       </trans-unit>
       <trans-unit id="1426" resname="You should hear from the doctor within 72 hours.  If, for some reason you don&apos;t, your money will be refunded to you" restype="string" datatype="javascript">
-        <source>You should hear from the doctor within 72 hours.  If, for some reason you don&apos;t, your money will be refunded to you</source>
+        <source>You should hear from the doctor within 72 hours.  If, for some reason you don't, your money will be refunded to you</source>
         <target>您应该在72小时内听到医生的意见。 如果，由于某种原因，您没有听到医生的建议，您的钱将退还给您</target>
       </trans-unit>
     </body>
@@ -4149,7 +4149,7 @@
   <file original="public/multipage/compiled_js/expert/grow_your_practice.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1433" resname="Can&apos;t get the prescriptions I want/need" restype="string" datatype="javascript">
-        <source>Can&apos;t get the prescriptions I want/need</source>
+        <source>Can't get the prescriptions I want/need</source>
         <target>无法得到我想要/需要的处方</target>
       </trans-unit>
     </body>
@@ -4157,7 +4157,7 @@
   <file original="public/multipage/compiled_js/expert/curbsideConsult.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1440" resname="They Doctor&apos;s office will be in contact with you soon!" restype="string" datatype="javascript">
-        <source>They Doctor&apos;s office will be in contact with you soon!</source>
+        <source>They Doctor's office will be in contact with you soon!</source>
         <target>他们的医生办公室将很快与您联系！</target>
       </trans-unit>
     </body>
@@ -4189,7 +4189,7 @@
   <file original="public/feelGood/templates/compiled_templates.en-US.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1965" resname="{name}&apos;s consult" restype="string" datatype="javascript">
-        <source>{name}&apos;s consult</source>
+        <source>{name}'s consult</source>
         <target>{name}的咨询</target>
       </trans-unit>
       <trans-unit id="1966" resname="{description_tag_start} You have an appointment with {div_tag_end}{caduceus_tag_start}{div_tag_end}{header_tag_start} {name} {header_tag_end}{description_2_tag_start} right now {div_tag_end}" restype="string" datatype="javascript">
@@ -4301,12 +4301,12 @@
         <target>啊，成功的滋味！</target>
       </trans-unit>
       <trans-unit id="2123" resname="You&apos;re tops!" restype="string" datatype="javascript">
-        <source>You&apos;re tops!</source>
+        <source>You're tops!</source>
         <target>您是最棒的！</target>
       </trans-unit>
-      <trans-unit id="2124" resname="You&apos;ve completed this checklist : &#41;" restype="string" datatype="javascript">
-        <source>You&apos;ve completed this checklist : &#41;</source>
-        <target>您已完成此清单 : &#41;</target>
+      <trans-unit id="2124" resname="You&apos;ve completed this checklist : )" restype="string" datatype="javascript">
+        <source>You've completed this checklist : )</source>
+        <target>您已完成此清单 : )</target>
       </trans-unit>
     </body>
   </file>
@@ -4329,7 +4329,7 @@
   <file original="public/feelGood/compiled_js/travel_agent.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2139" resname="It seems you&apos;re using a prepaid card instead of a credit card. You may continue, but you will be charged &lt;b&gt;$19.99&lt;/b&gt; now and we will refund you if you cancel before your trial ends on &lt;b&gt;{date}&lt;/b&gt;." restype="string" datatype="javascript">
-        <source>It seems you&apos;re using a prepaid card instead of a credit card. You may continue, but you will be charged &lt;b&gt;$19.99&lt;/b&gt; now and we will refund you if you cancel before your trial ends on &lt;b&gt;{date}&lt;/b&gt;.</source>
+        <source>It seems you're using a prepaid card instead of a credit card. You may continue, but you will be charged &lt;b&gt;$19.99&lt;/b&gt; now and we will refund you if you cancel before your trial ends on &lt;b&gt;{date}&lt;/b&gt;.</source>
         <target>看来您使用的是预付卡，而不是信用卡。您可以继续，但现在我们将会收取&lt;b&gt;$19.99&lt;/b&gt;的费用，如果您在&lt;b&gt;{date}&lt;/b&gt;前取消试用期，我们会退款给您。</target>
       </trans-unit>
     </body>
@@ -4337,67 +4337,67 @@
   <file original="public/feelGood/compiled_js/transcript.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2140" resname="We&apos;ll notify you as soon as the doctor responds." restype="string" datatype="javascript">
-        <source>We&apos;ll notify you as soon as the doctor responds.</source>
+        <source>We'll notify you as soon as the doctor responds.</source>
         <target>一旦医生回复，我们会通知您。</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/compiled_js/layout_member.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2141" resname="We&apos;ve emailed your friends and family. Thanks for sharing the gift of health with your loved ones :&#41;" restype="string" datatype="javascript">
-        <source>We&apos;ve emailed your friends and family. Thanks for sharing the gift of health with your loved ones :&#41;</source>
-        <target>我们已向您的朋友和家人发送邮件。 感谢与您的亲人分享健康的礼物:&#41;</target>
+      <trans-unit id="2141" resname="We&apos;ve emailed your friends and family. Thanks for sharing the gift of health with your loved ones :)" restype="string" datatype="javascript">
+        <source>We've emailed your friends and family. Thanks for sharing the gift of health with your loved ones :)</source>
+        <target>我们已向您的朋友和家人发送邮件。 感谢与您的亲人分享健康的礼物:)</target>
       </trans-unit>
       <trans-unit id="2142" resname="What is {first_name}&apos;s height and weight?" restype="string" datatype="javascript">
-        <source>What is {first_name}&apos;s height and weight?</source>
+        <source>What is {first_name}'s height and weight?</source>
         <target>{first_name}的身高和体重？</target>
       </trans-unit>
       <trans-unit id="2143" resname="What is this person&apos;s height and weight?" restype="string" datatype="javascript">
-        <source>What is this person&apos;s height and weight?</source>
+        <source>What is this person's height and weight?</source>
         <target>这个人的身高和体重？</target>
       </trans-unit>
       <trans-unit id="2144" resname="How would you classify {first_name}&apos;s consumption of alcohol?" restype="string" datatype="javascript">
-        <source>How would you classify {first_name}&apos;s consumption of alcohol?</source>
+        <source>How would you classify {first_name}'s consumption of alcohol?</source>
         <target>您如何分类{first_name}的酒精饮用量？</target>
       </trans-unit>
       <trans-unit id="2145" resname="How would you classify this person&apos;s consumption of alcohol?" restype="string" datatype="javascript">
-        <source>How would you classify this person&apos;s consumption of alcohol?</source>
+        <source>How would you classify this person's consumption of alcohol?</source>
         <target>您如何分类这个人的酒精消费？</target>
       </trans-unit>
       <trans-unit id="2146" resname="Are you sure you&apos;d like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor" restype="string" datatype="javascript">
-        <source>Are you sure you&apos;d like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor</source>
+        <source>Are you sure you'd like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor</source>
         <target>您确定要从您的帐户中删除此信用卡吗？ 下次与医生交谈时，您需要提供信用卡</target>
       </trans-unit>
       <trans-unit id="2148" resname="{first_name}&apos;s first name" restype="string" datatype="javascript">
-        <source>{first_name}&apos;s first name</source>
+        <source>{first_name}'s first name</source>
         <target>{first_name}的名字</target>
       </trans-unit>
       <trans-unit id="2149" resname="{first_name}&apos;s middle name" restype="string" datatype="javascript">
-        <source>{first_name}&apos;s middle name</source>
+        <source>{first_name}'s middle name</source>
         <target>{first_name}的中间名</target>
       </trans-unit>
       <trans-unit id="2150" resname="{first_name}&apos;s last name" restype="string" datatype="javascript">
-        <source>{first_name}&apos;s last name</source>
+        <source>{first_name}'s last name</source>
         <target>{first_name}的姓氏</target>
       </trans-unit>
       <trans-unit id="2151" resname="{first_name}&apos;s date of birth" restype="string" datatype="javascript">
-        <source>{first_name}&apos;s date of birth</source>
+        <source>{first_name}'s date of birth</source>
         <target>{first_name}的出生日期</target>
       </trans-unit>
       <trans-unit id="2152" resname="This person&apos;s first name" restype="string" datatype="javascript">
-        <source>This person&apos;s first name</source>
+        <source>This person's first name</source>
         <target>这个人的名字</target>
       </trans-unit>
       <trans-unit id="2153" resname="This person&apos;s middle name" restype="string" datatype="javascript">
-        <source>This person&apos;s middle name</source>
+        <source>This person's middle name</source>
         <target>这个人的中间名</target>
       </trans-unit>
       <trans-unit id="2154" resname="This person&apos;s last name" restype="string" datatype="javascript">
-        <source>This person&apos;s last name</source>
+        <source>This person's last name</source>
         <target>这个人的姓氏</target>
       </trans-unit>
       <trans-unit id="2155" resname="This person&apos;s date of birth" restype="string" datatype="javascript">
-        <source>This person&apos;s date of birth</source>
+        <source>This person's date of birth</source>
         <target>这个人的出生日期</target>
       </trans-unit>
     </body>
@@ -4405,7 +4405,7 @@
   <file original="public/feelGood/compiled_js/doctorView.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2156" resname="Where should we send the doctor&apos;s response to your message?" restype="string" datatype="javascript">
-        <source>Where should we send the doctor&apos;s response to your message?</source>
+        <source>Where should we send the doctor's response to your message?</source>
         <target>我们应该在哪里发送医生为您的信息的回复？</target>
       </trans-unit>
     </body>
@@ -4413,7 +4413,7 @@
   <file original="public/feelGood/compiled_js/concierge_talk.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2157" resname="You have an upcoming appointment starting soon. Please don&apos;t start another consult or you may miss your appointment." restype="string" datatype="javascript">
-        <source>You have an upcoming appointment starting soon. Please don&apos;t start another consult or you may miss your appointment.</source>
+        <source>You have an upcoming appointment starting soon. Please don't start another consult or you may miss your appointment.</source>
         <target>您有一次即将来临的预约。 请不要再开始咨询，否则可能会错过预约。</target>
       </trans-unit>
     </body>
@@ -4421,11 +4421,11 @@
   <file original="public/feelGood/compiled_js/concierge_guest_flow.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2158" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get to work." restype="string" datatype="javascript">
-        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get to work.</source>
+        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we'll get to work.</source>
         <target>我是{doctor_name}医生，HealthTap领先的医疗专家，将确保您能为您的问题得到可能的最好的回答。 我的同事和我只需要一些关于您的细节，我们即可开始工作。</target>
       </trans-unit>
       <trans-unit id="2159" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get you scheduled." restype="string" datatype="javascript">
-        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get you scheduled.</source>
+        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we'll get you scheduled.</source>
         <target>我是{doctor_name}医生，HealthTap领先的医疗专家，将确保您能为您的问题得到可能的最好的回答。 我的同事和我只需要一些关于您的细节，我们即可为您安排。</target>
       </trans-unit>
     </body>
@@ -4433,7 +4433,7 @@
   <file original="public/feelGood/compiled_js/checklists.min.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2160" resname="We&apos;ll now help you with {goal_name} with timely, friendly reminders on behalf of Dr. {last_name}" restype="string" datatype="javascript">
-        <source>We&apos;ll now help you with {goal_name} with timely, friendly reminders on behalf of Dr. {last_name}</source>
+        <source>We'll now help you with {goal_name} with timely, friendly reminders on behalf of Dr. {last_name}</source>
         <target>现在我们将及时的帮助您{goal_name} ，并代表{last_name}友好的提醒您</target>
       </trans-unit>
     </body>

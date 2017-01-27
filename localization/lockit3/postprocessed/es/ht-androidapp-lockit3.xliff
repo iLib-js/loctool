@@ -255,16 +255,16 @@
         <target>Cambiar tarjeta</target>
       </trans-unit>
       <trans-unit id="78" resname="text_Discount__HTFRIENDS__50__discount_" restype="string" datatype="x-android-resource">
-        <source>Discount: HTFRIENDS &#40;50% discount&#41;</source>
-        <target>Descuento: HTFRIENDS &#40;50% de descuento&#41;</target>
+        <source>Discount: HTFRIENDS (50% discount)</source>
+        <target>Descuento: HTFRIENDS (50% de descuento)</target>
       </trans-unit>
     </body>
   </file>
   <file original="res/layout/row_profile_language_spoken_item.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="45" resname="text_English__US_" restype="string" datatype="x-android-resource">
-        <source>English &#40;US&#41;</source>
-        <target>Inglés &#40;US&#41;</target>
+        <source>English (US)</source>
+        <target>Inglés (US)</target>
       </trans-unit>
       <trans-unit id="46" resname="text_Can_speak" restype="string" datatype="x-android-resource">
         <source>Can speak</source>
@@ -491,7 +491,7 @@
   <file original="res/layout/fragment_prime_bundle_success.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="83" resname="text_Here_s_your_promo_code_" restype="string" datatype="x-android-resource">
-        <source>Here&apos;s your promo code:</source>
+        <source>Here's your promo code:</source>
         <target>Aquí está tu código promocional:</target>
       </trans-unit>
     </body>
@@ -623,7 +623,7 @@
   <file original="res/layout/dialog_feature_demo.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="103" resname="text_What_s_new_" restype="string" datatype="x-android-resource">
-        <source>What&apos;s new!</source>
+        <source>What's new!</source>
         <target>¡Qué hay de nuevo!</target>
       </trans-unit>
     </body>
@@ -846,7 +846,7 @@
         <target>¡Gracias!</target>
       </trans-unit>
       <trans-unit id="138" resname="r808907878" restype="string" datatype="java">
-        <source>Please don&apos;t include a followup question in your note. {start}To do so, ask a question.{end}</source>
+        <source>Please don't include a followup question in your note. {start}To do so, ask a question.{end}</source>
         <target>Por favor no incluyas una pregunta de seguimiento en tu nota. {start}Para hacerlo, haz una pregunta.{end}</target>
       </trans-unit>
     </body>
@@ -907,7 +907,7 @@
   <file original="src/com/healthtap/userhtexpress/click_listeners/FollowItemListener.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="146" resname="r147358463" restype="string" datatype="java">
-        <source>We&apos;ll highlight this influencer&apos;s insights for you on your feed.</source>
+        <source>We'll highlight this influencer's insights for you on your feed.</source>
         <target>Resaltaremos las perspicacias de este influenciador para ti en tu feed.</target>
       </trans-unit>
     </body>
@@ -1087,7 +1087,7 @@
         <target>Paz Mental Ilimitada</target>
       </trans-unit>
       <trans-unit id="182" resname="upcoming_appointment_subaccount_row_text" restype="string" datatype="x-android-resource">
-        <source>{subaccount_name}\&apos;s consult</source>
+        <source>{subaccount_name}\'s consult</source>
         <target>Consulta de {subaccount_name}\</target>
       </trans-unit>
     </body>
@@ -1097,22 +1097,22 @@
       <trans-unit id="183" resname="app_recommend" restype="plural" datatype="x-android-resource" extype="one">
         <source>{start}1{end} doctor recommends</source>
         <target>{start}1{end} doctor recomienda</target>
-        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of &apos;1 doctor&apos; or &apos;%d doctors&apos;.</note>
+        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="184" resname="app_recommend" restype="plural" datatype="x-android-resource" extype="other">
         <source>{start}%d{end} doctors recommend</source>
         <target>{start}1{end} doctores recomiendan</target>
-        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of &apos;1 doctor&apos; or &apos;%d doctors&apos;.</note>
+        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="185" resname="app_recommend2" restype="plural" datatype="x-android-resource" extype="one">
         <source>{start}1 doctor{end} recommends this app</source>
         <target>{start}1 doctor{end} recomienda esta aplicación</target>
-        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of &apos;1 doctor&apos; or &apos;%d doctors&apos;.</note>
+        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="186" resname="app_recommend2" restype="plural" datatype="x-android-resource" extype="other">
         <source>{start}%d doctors{end} recommend this app</source>
         <target>{start}%d doctores{end} recomiendan esta aplicación</target>
-        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of &apos;1 doctor&apos; or &apos;%d doctors&apos;.</note>
+        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="187" resname="doctor_comment" restype="plural" datatype="x-android-resource" extype="one">
         <source>{start}1 doctor{end} commented</source>
@@ -1125,12 +1125,12 @@
       <trans-unit id="189" resname="doctor_weighed_in" restype="plural" datatype="x-android-resource" extype="one">
         <source>{doctor_name} and {start}1 doctor{end} weighed in</source>
         <target>{doctor_name} y {start}1 doctor{end} opinaron acerca de</target>
-        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of &apos;1 doctor&apos; or &apos;%d doctors&apos;.</note>
+        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="190" resname="doctor_weighed_in" restype="plural" datatype="x-android-resource" extype="other">
         <source>{doctor_name} and {start}%d doctors{end} weighed in</source>
         <target>{doctor_name} y {start}%d doctoress{end} opinaron acerca de</target>
-        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of &apos;1 doctor&apos; or &apos;%d doctors&apos;.</note>
+        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="191" resname="from_top_doctors" restype="plural" datatype="x-android-resource" extype="one">
         <source>Get answers to your health questions from top doctors</source>
@@ -1151,22 +1151,22 @@
       <trans-unit id="195" resname="similar_question_doctor_weighed_in" restype="plural" datatype="x-android-resource" extype="one">
         <source>{start}1 doctor{end} weighed in</source>
         <target>{start}1 doctor{end} opinó acerca de</target>
-        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of &apos;1 doctor&apos; or &apos;%d doctors&apos;.</note>
+        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="196" resname="similar_question_doctor_weighed_in" restype="plural" datatype="x-android-resource" extype="other">
         <source>{start}%d doctors{end} weighed in</source>
         <target>{start}%d doctores{end} opinaron acerca de</target>
-        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of &apos;1 doctor&apos; or &apos;%d doctors&apos;.</note>
+        <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="197" resname="subscribe_add_others_continue_multiple" restype="plural" datatype="x-android-resource" extype="one">
         <source>Continue for me and 1 other</source>
         <target>Continúa para mí y 1 más</target>
-        <note annotates="source">This is a button text. It indicates moving on to the next step of the flow after user subscribing a member plan with sub account&#40;s&#41; included. %d is the number of sub accounts.</note>
+        <note annotates="source">This is a button text. It indicates moving on to the next step of the flow after user subscribing a member plan with sub account(s) included. %d is the number of sub accounts.</note>
       </trans-unit>
       <trans-unit id="198" resname="subscribe_add_others_continue_multiple" restype="plural" datatype="x-android-resource" extype="other">
         <source>Continue for me and %d others</source>
         <target>Continúa para mí y %d más</target>
-        <note annotates="source">This is a button text. It indicates moving on to the next step of the flow after user subscribing a member plan with sub account&#40;s&#41; included. %d is the number of sub accounts.</note>
+        <note annotates="source">This is a button text. It indicates moving on to the next step of the flow after user subscribing a member plan with sub account(s) included. %d is the number of sub accounts.</note>
       </trans-unit>
       <trans-unit id="199" resname="years_in_practice" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 year in practice</source>
@@ -1505,7 +1505,7 @@
         <target>¿Cuántos hijos vivos tiene {first_name}?</target>
       </trans-unit>
       <trans-unit id="282" resname="subaccount_questions" restype="array" datatype="x-android-resource" extype="5">
-        <source>When was {first_name}&apos;s last menstrual period?</source>
+        <source>When was {first_name}'s last menstrual period?</source>
         <target>¿Cuándo fue el último periodo menstrual de {first_name}?</target>
       </trans-unit>
       <trans-unit id="283" resname="self_questions" restype="array" datatype="x-android-resource" extype="0">
@@ -1535,32 +1535,32 @@
       <trans-unit id="289" resname="bmi" restype="array" datatype="x-android-resource" extype="0">
         <source>Severely Underweight</source>
         <target>Peso Sevéramente Bajo</target>
-        <note annotates="source">This refers to a patient&apos;s health condition according to his or her BMI&#40;Body mass index&#41; number.</note>
+        <note annotates="source">This refers to a patient's health condition according to his or her BMI(Body mass index) number.</note>
       </trans-unit>
       <trans-unit id="290" resname="bmi" restype="array" datatype="x-android-resource" extype="1">
         <source>Underweight</source>
         <target>Peso Bajo</target>
-        <note annotates="source">This refers to a patient&apos;s health condition according to his or her BMI&#40;Body mass index&#41; number.</note>
+        <note annotates="source">This refers to a patient's health condition according to his or her BMI(Body mass index) number.</note>
       </trans-unit>
       <trans-unit id="291" resname="bmi" restype="array" datatype="x-android-resource" extype="2">
         <source>Normal</source>
         <target>Normal</target>
-        <note annotates="source">This refers to a patient&apos;s health condition according to his or her BMI&#40;Body mass index&#41; number.</note>
+        <note annotates="source">This refers to a patient's health condition according to his or her BMI(Body mass index) number.</note>
       </trans-unit>
       <trans-unit id="292" resname="bmi" restype="array" datatype="x-android-resource" extype="3">
         <source>Overweight</source>
         <target>Sobrepeso</target>
-        <note annotates="source">This refers to a patient&apos;s health condition according to his or her BMI&#40;Body mass index&#41; number.</note>
+        <note annotates="source">This refers to a patient's health condition according to his or her BMI(Body mass index) number.</note>
       </trans-unit>
       <trans-unit id="293" resname="bmi" restype="array" datatype="x-android-resource" extype="4">
         <source>Obese</source>
         <target>Obesidad</target>
-        <note annotates="source">This refers to a patient&apos;s health condition according to his or her BMI&#40;Body mass index&#41; number.</note>
+        <note annotates="source">This refers to a patient's health condition according to his or her BMI(Body mass index) number.</note>
       </trans-unit>
       <trans-unit id="294" resname="bmi" restype="array" datatype="x-android-resource" extype="5">
         <source>Severely Obese</source>
         <target>Sevéramente Obeso</target>
-        <note annotates="source">This refers to a patient&apos;s health condition according to his or her BMI&#40;Body mass index&#41; number.</note>
+        <note annotates="source">This refers to a patient's health condition according to his or her BMI(Body mass index) number.</note>
       </trans-unit>
       <trans-unit id="295" resname="living_relationship_age" restype="array" datatype="x-android-resource" extype="0">
         <source>How old is your mother?</source>
@@ -1627,8 +1627,8 @@
         <target>¿Cuántos años tiene tu tío?</target>
       </trans-unit>
       <trans-unit id="311" resname="living_relationship_age" restype="array" datatype="x-android-resource" extype="22">
-        <source>How old is your patient &#40;for Professional Caregivers&#41;?</source>
-        <target>¿Cuántos años tiene tu paciente &#40;para Dadores de Atención Profesionales&#41;?</target>
+        <source>How old is your patient (for Professional Caregivers)?</source>
+        <target>¿Cuántos años tiene tu paciente (para Dadores de Atención Profesionales)?</target>
       </trans-unit>
       <trans-unit id="312" resname="living_relationship_age" restype="array" datatype="x-android-resource" extype="23">
         <source>How old is your other?</source>
@@ -1699,181 +1699,181 @@
         <target>¿Cuántos años tenía tu tío?</target>
       </trans-unit>
       <trans-unit id="329" resname="dead_relationship_age" restype="array" datatype="x-android-resource" extype="22">
-        <source>How old was your patient &#40;for Professional Caregivers&#41;?</source>
-        <target>¿Cuántos años tenía tu paciente &#40;para Dadores de Atención Profesionales&#41;?</target>
+        <source>How old was your patient (for Professional Caregivers)?</source>
+        <target>¿Cuántos años tenía tu paciente (para Dadores de Atención Profesionales)?</target>
       </trans-unit>
       <trans-unit id="330" resname="dead_relationship_age" restype="array" datatype="x-android-resource" extype="23">
         <source>How old was your other?</source>
         <target>¿Cuántos años tenia tu otro?</target>
       </trans-unit>
       <trans-unit id="331" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="0">
-        <source>How old is {first_name}\&apos;s mother?</source>
+        <source>How old is {first_name}\'s mother?</source>
         <target>¿Cuántos años tiene la madre de {first_name}?</target>
       </trans-unit>
       <trans-unit id="332" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="1">
-        <source>How old is {first_name}\&apos;s father?</source>
+        <source>How old is {first_name}\'s father?</source>
         <target>¿Cuántos años tiene el padre de {first_name}?</target>
       </trans-unit>
       <trans-unit id="333" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="2">
-        <source>How old is {first_name}\&apos;s brother?</source>
+        <source>How old is {first_name}\'s brother?</source>
         <target>¿Cuántos años tiene el hermano de {first_name}?</target>
       </trans-unit>
       <trans-unit id="334" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="3">
-        <source>How old is {first_name}\&apos;s sister?</source>
+        <source>How old is {first_name}\'s sister?</source>
         <target>¿Cuántos años tiene la hermana de {first_name}?</target>
       </trans-unit>
       <trans-unit id="335" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="4">
-        <source>How old is {first_name}\&apos;s son?</source>
+        <source>How old is {first_name}\'s son?</source>
         <target>¿Cuántos años tiene el hijo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="336" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="5">
-        <source>How old is {first_name}\&apos;s daughter?</source>
+        <source>How old is {first_name}\'s daughter?</source>
         <target>¿Cuántos años tiene la hija de {first_name}?</target>
       </trans-unit>
       <trans-unit id="337" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="6">
-        <source>How old is {first_name}\&apos;s grandfather?</source>
+        <source>How old is {first_name}\'s grandfather?</source>
         <target>¿Cuántos años tiene el abuelo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="338" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="7">
-        <source>How old is {first_name}\&apos;s grandmother?</source>
+        <source>How old is {first_name}\'s grandmother?</source>
         <target>¿Cuántos años tiene la abuela de {first_name}?</target>
       </trans-unit>
       <trans-unit id="339" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="8">
-        <source>How old is {first_name}\&apos;s firend?</source>
+        <source>How old is {first_name}\'s firend?</source>
         <target>¿Cuántos años tiene el amigo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="340" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="9">
-        <source>How old is {first_name}\&apos;s wife?</source>
+        <source>How old is {first_name}\'s wife?</source>
         <target>¿Cuántos años tiene la esposa de {first_name}?</target>
       </trans-unit>
       <trans-unit id="341" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="10">
-        <source>How old is {first_name}\&apos;s husband?</source>
+        <source>How old is {first_name}\'s husband?</source>
         <target>¿Cuántos años tiene el esposo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="342" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="11">
-        <source>How old is {first_name}\&apos;s boyfriend?</source>
+        <source>How old is {first_name}\'s boyfriend?</source>
         <target>¿Cuántos años tiene el novio de {first_name}?</target>
       </trans-unit>
       <trans-unit id="343" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="12">
-        <source>How old is {first_name}\&apos;s girlfriend?</source>
+        <source>How old is {first_name}\'s girlfriend?</source>
         <target>¿Cuántos años tiene la novia de {first_name}?</target>
       </trans-unit>
       <trans-unit id="344" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="13">
-        <source>How old is {first_name}\&apos;s cousin?</source>
+        <source>How old is {first_name}\'s cousin?</source>
         <target>¿Cuántos años tiene el primo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="345" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="14">
-        <source>How old is {first_name}\&apos;s aunt?</source>
+        <source>How old is {first_name}\'s aunt?</source>
         <target>¿Cuántos años tiene la tía de {first_name}?</target>
       </trans-unit>
       <trans-unit id="346" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="15">
-        <source>How old is {first_name}\&apos;s uncle?</source>
+        <source>How old is {first_name}\'s uncle?</source>
         <target>¿Cuántos años tiene el tío de {first_name}?</target>
       </trans-unit>
       <trans-unit id="347" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="22">
-        <source>How old is {first_name}\&apos;s patient &#40;for Professional Caregivers&#41;?</source>
-        <target>¿Cuántos años tiene el paciente de {first_name} &#40;para Dadores de Atención Profesionales&#41;?</target>
+        <source>How old is {first_name}\'s patient (for Professional Caregivers)?</source>
+        <target>¿Cuántos años tiene el paciente de {first_name} (para Dadores de Atención Profesionales)?</target>
       </trans-unit>
       <trans-unit id="348" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="23">
-        <source>How old is {first_name}\&apos;s other?</source>
+        <source>How old is {first_name}\'s other?</source>
         <target>¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="349" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="0">
-        <source>How old was {first_name}\&apos;s mother?</source>
+        <source>How old was {first_name}\'s mother?</source>
         <target>¿Cuántos años tenía la madre de {first_name}?</target>
       </trans-unit>
       <trans-unit id="350" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="1">
-        <source>How old was {first_name}\&apos;s father?</source>
+        <source>How old was {first_name}\'s father?</source>
         <target>¿Cuántos años tenía el padre de {first_name}?</target>
       </trans-unit>
       <trans-unit id="351" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="2">
-        <source>How old was {first_name}\&apos;s brother?</source>
+        <source>How old was {first_name}\'s brother?</source>
         <target>¿Cuántos años tenía el hermano de {first_name}?</target>
       </trans-unit>
       <trans-unit id="352" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="3">
-        <source>How old was {first_name}\&apos;s sister?</source>
+        <source>How old was {first_name}\'s sister?</source>
         <target>¿Cuántos años tenía la hermana de {first_name}?</target>
       </trans-unit>
       <trans-unit id="353" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="4">
-        <source>How old was {first_name}\&apos;s son?</source>
+        <source>How old was {first_name}\'s son?</source>
         <target>¿Cuántos años tenía el hijo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="354" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="5">
-        <source>How old was {first_name}\&apos;s daughter?</source>
+        <source>How old was {first_name}\'s daughter?</source>
         <target>¿Cuántos años tenía la hija de {first_name}?</target>
       </trans-unit>
       <trans-unit id="355" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="6">
-        <source>How old was {first_name}\&apos;s grandfather?</source>
+        <source>How old was {first_name}\'s grandfather?</source>
         <target>¿Cuántos años tenía el abuelo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="356" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="7">
-        <source>How old was {first_name}\&apos;s grandmother?</source>
+        <source>How old was {first_name}\'s grandmother?</source>
         <target>¿Cuántos años tenía la abuela de {first_name}?</target>
       </trans-unit>
       <trans-unit id="357" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="8">
-        <source>How old was {first_name}\&apos;s firend?</source>
+        <source>How old was {first_name}\'s firend?</source>
         <target>¿Cuántos años tenía el amigo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="358" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="9">
-        <source>How old was {first_name}\&apos;s wife?</source>
+        <source>How old was {first_name}\'s wife?</source>
         <target>¿Cuántos años tenía la esposa de {first_name}?</target>
       </trans-unit>
       <trans-unit id="359" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="10">
-        <source>How old was {first_name}\&apos;s husband?</source>
+        <source>How old was {first_name}\'s husband?</source>
         <target>¿Cuántos años tenía el esposo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="360" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="11">
-        <source>How old was {first_name}\&apos;s boyfriend?</source>
+        <source>How old was {first_name}\'s boyfriend?</source>
         <target>¿Cuántos años tenía el novio de {first_name}?</target>
       </trans-unit>
       <trans-unit id="361" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="12">
-        <source>How old was {first_name}\&apos;s girlfriend?</source>
+        <source>How old was {first_name}\'s girlfriend?</source>
         <target>¿Cuántos años tenía la novia de {first_name}?</target>
       </trans-unit>
       <trans-unit id="362" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="13">
-        <source>How old was {first_name}\&apos;s cousin?</source>
+        <source>How old was {first_name}\'s cousin?</source>
         <target>¿Cuántos años tenía el primo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="363" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="14">
-        <source>How old was {first_name}\&apos;s aunt?</source>
+        <source>How old was {first_name}\'s aunt?</source>
         <target>¿Cuántos años tenía la tía de {first_name}?</target>
       </trans-unit>
       <trans-unit id="364" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="15">
-        <source>How old was {first_name}\&apos;s uncle?</source>
+        <source>How old was {first_name}\'s uncle?</source>
         <target>¿Cuántos años tenía el tío de {first_name}?</target>
       </trans-unit>
       <trans-unit id="365" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="22">
-        <source>How old was {first_name}\&apos;s patient &#40;for Professional Caregivers&#41;?</source>
-        <target>¿Cuántos años tenía el paciente de {first_name} &#40;para Dadores de Atención Profesionales&#41;?</target>
+        <source>How old was {first_name}\'s patient (for Professional Caregivers)?</source>
+        <target>¿Cuántos años tenía el paciente de {first_name} (para Dadores de Atención Profesionales)?</target>
       </trans-unit>
       <trans-unit id="366" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="23">
-        <source>How old was {first_name}\&apos;s other?</source>
+        <source>How old was {first_name}\'s other?</source>
         <target>¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="367" resname="prime_benefits" restype="array" datatype="x-android-resource" extype="0">
         <source>&lt;b&gt;Unlimited&lt;/b&gt; consults with top doctors</source>
         <target>&lt;b&gt;Ilimitadas&lt;/b&gt; consultas con los mejores doctores</target>
-        <note annotates="source">List of Prime membership benefits. Don&apos;t translate HTML tags. Keep consistency.</note>
+        <note annotates="source">List of Prime membership benefits. Don't translate HTML tags. Keep consistency.</note>
       </trans-unit>
       <trans-unit id="368" resname="prime_benefits" restype="array" datatype="x-android-resource" extype="1">
         <source>Video/text chat &lt;b&gt;anywhere, anytime&lt;/b&gt;</source>
         <target>Chat de texto/video &lt;b&gt;a cualquier hora y en cualquier lugar&lt;/b&gt;</target>
-        <note annotates="source">List of Prime membership benefits. Don&apos;t translate HTML tags. Keep consistency.</note>
+        <note annotates="source">List of Prime membership benefits. Don't translate HTML tags. Keep consistency.</note>
       </trans-unit>
       <trans-unit id="369" resname="prime_benefits" restype="array" datatype="x-android-resource" extype="2">
         <source>Referral to &lt;b&gt;specialists&lt;/b&gt;</source>
         <target>Referencias a &lt;b&gt;especialistas&lt;/b&gt;</target>
-        <note annotates="source">List of Prime membership benefits. Don&apos;t translate HTML tags. Keep consistency.</note>
+        <note annotates="source">List of Prime membership benefits. Don't translate HTML tags. Keep consistency.</note>
       </trans-unit>
       <trans-unit id="370" resname="prime_benefits" restype="array" datatype="x-android-resource" extype="3">
         <source>Prescriptions sent to &lt;b&gt;your pharmacy&lt;/b&gt;</source>
         <target>Recetas enviadas a &lt;b&gt;tu farmacia&lt;/b&gt;</target>
-        <note annotates="source">List of Prime membership benefits. Don&apos;t translate HTML tags. Keep consistency.</note>
+        <note annotates="source">List of Prime membership benefits. Don't translate HTML tags. Keep consistency.</note>
       </trans-unit>
       <trans-unit id="371" resname="prime_benefits" restype="array" datatype="x-android-resource" extype="4">
         <source>Personalized, timely &lt;b&gt;advice &amp; reminders&lt;/b&gt;</source>
         <target>&lt;b&gt;Consejo &amp; recordatorios&lt;/b&gt; personalizados y oportunos</target>
-        <note annotates="source">List of Prime membership benefits. Don&apos;t translate HTML tags. Keep consistency.</note>
+        <note annotates="source">List of Prime membership benefits. Don't translate HTML tags. Keep consistency.</note>
       </trans-unit>
       <trans-unit id="372" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="0">
         <source>Great Work!</source>
@@ -1900,11 +1900,11 @@
         <target>¡Manténte así!</target>
       </trans-unit>
       <trans-unit id="378" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="6">
-        <source>That\&apos;s amazing!</source>
+        <source>That\'s amazing!</source>
         <target>¡Eso es asombroso!</target>
       </trans-unit>
       <trans-unit id="379" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="7">
-        <source>You\&apos;re awesome!</source>
+        <source>You\'re awesome!</source>
         <target>¡Eres asombroso!</target>
       </trans-unit>
       <trans-unit id="380" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="8">
@@ -1944,11 +1944,11 @@
         <target>Manténte así, {name}</target>
       </trans-unit>
       <trans-unit id="389" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="6">
-        <source>That\&apos;s amazing, {name}</source>
+        <source>That\'s amazing, {name}</source>
         <target>Eso es asombroso, {name}</target>
       </trans-unit>
       <trans-unit id="390" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="7">
-        <source>You\&apos;re awesome, {name}</source>
+        <source>You\'re awesome, {name}</source>
         <target>Eres asombroso, {name}</target>
       </trans-unit>
       <trans-unit id="391" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="8">
@@ -3208,11 +3208,11 @@
         <target>{user_first_name}, ¿necesitas hacer otra pregunta?\u00a0›</target>
       </trans-unit>
       <trans-unit id="705" resname="downgrade_survey_reasons" restype="array" datatype="x-android-resource" extype="0">
-        <source>Can\&apos;t find the right doctor</source>
+        <source>Can\'t find the right doctor</source>
         <target>No puedo encontrar al médico adecuado</target>
       </trans-unit>
       <trans-unit id="706" resname="downgrade_survey_reasons" restype="array" datatype="x-android-resource" extype="1">
-        <source>Can\&apos;t get the prescriptions I want/need</source>
+        <source>Can\'t get the prescriptions I want/need</source>
         <target>No puedo obtener las recetas que quiero/necesito</target>
       </trans-unit>
       <trans-unit id="707" resname="downgrade_survey_reasons" restype="array" datatype="x-android-resource" extype="2">
@@ -3280,7 +3280,7 @@
         <target>otra</target>
       </trans-unit>
       <trans-unit id="723" resname="deactivate_survey_reasons" restype="array" datatype="x-android-resource" extype="0">
-        <source>Couldn\&apos;t find the answer I was looking for</source>
+        <source>Couldn\'t find the answer I was looking for</source>
         <target>No pude encontrar la respuesta que estaba buscando</target>
       </trans-unit>
       <trans-unit id="724" resname="deactivate_survey_reasons" restype="array" datatype="x-android-resource" extype="1">
@@ -3405,7 +3405,7 @@
         <note annotates="source">This is a list of reasons shown to users when they are dissatisfied with the consult experiences because they think the advice is not helpful.</note>
       </trans-unit>
       <trans-unit id="751" resname="dissatisfied_advice_not_helpful_reasons" restype="array" datatype="x-android-resource" extype="2">
-        <source>Doctor didn\&apos;t answer my question</source>
+        <source>Doctor didn\'t answer my question</source>
         <target>Doctor no contestó mi pregunta</target>
         <note annotates="source">This is a list of reasons shown to users when they are dissatisfied with the consult experiences because they think the advice is not helpful.</note>
       </trans-unit>
@@ -3592,7 +3592,7 @@
         <target>Costa Rica</target>
       </trans-unit>
       <trans-unit id="797" resname="countries" restype="array" datatype="x-android-resource" extype="43">
-        <source>Cote d\&apos;Ivoire</source>
+        <source>Cote d\'Ivoire</source>
         <target>Costa de Marfil</target>
       </trans-unit>
       <trans-unit id="798" resname="countries" restype="array" datatype="x-android-resource" extype="44">

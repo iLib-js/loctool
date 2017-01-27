@@ -19,11 +19,11 @@
         <target>您侄女当时的年龄？</target>
       </trans-unit>
       <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="21">
-        <source>How old is {first_name}\&apos;s niece?</source>
+        <source>How old is {first_name}\'s niece?</source>
         <target>{first_name}侄女的年龄？</target>
       </trans-unit>
       <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="21">
-        <source>How old was {first_name}\&apos;s niece?</source>
+        <source>How old was {first_name}\'s niece?</source>
         <target>{first_name}侄女当时的年龄？</target>
       </trans-unit>
     </body>

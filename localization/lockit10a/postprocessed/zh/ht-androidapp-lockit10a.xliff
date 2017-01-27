@@ -236,8 +236,8 @@
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/profiles/ProfilesFamilyHistoryYesNoAddConditionDialog.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="37" resname="r920181258" restype="string" datatype="java">
-        <source>Does {first_name}'s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
-        <target state="translated">您{first_name}健在的祖父母、父母或兄弟姐妹有什么主要病史吗？&#40;危及生命或以其他？&#41;</target>
+        <source>Does {first_name}'s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
+        <target state="translated">您{first_name}健在的祖父母、父母或兄弟姐妹有什么主要病史吗？(危及生命或以其他？)</target>
       </trans-unit>
     </body>
   </file>
@@ -453,8 +453,8 @@
         <target state="translated">我们会想念您的！</target>
       </trans-unit>
       <trans-unit id="82" resname="r860822785" restype="string" datatype="x-android-resource">
-        <source>You're account has been deactivated and you've been logged out. We hope you come back soon :&#41;</source>
-        <target state="translated">您的账户已被冻结，您已退出登录。我们希望能您尽快回来 :&#41;</target>
+        <source>You're account has been deactivated and you've been logged out. We hope you come back soon :)</source>
+        <target state="translated">您的账户已被冻结，您已退出登录。我们希望能您尽快回来 :)</target>
       </trans-unit>
       <trans-unit id="83" resname="r895141403" restype="string" datatype="x-android-resource">
         <source>We couldn't downgrade your plan. Please try again or contact support if the problem persists.</source>

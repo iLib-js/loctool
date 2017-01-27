@@ -202,7 +202,7 @@
   </file>
   <file original="feelgood/ViewControllers/FGGenericAppRatingViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="5" resname="Please let us know how we're doing..." restype="string" datatype="x-objective-c">
+      <trans-unit id="5" resname="Please let us know how we&apos;re doing..." restype="string" datatype="x-objective-c">
         <source>Please let us know how we're doing...</source>
         <target>请让我们了解我们的表现如何……</target>
       </trans-unit>
