@@ -15,7 +15,7 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/SendKudosFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="7" resname="r948339101" restype="string" datatype="java">
-        <source>You&apos;re awesome</source>
+        <source>You're awesome</source>
         <target state="translated">Eres asombroso</target>
       </trans-unit>
     </body>
@@ -31,8 +31,8 @@
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/ThankLayerDialogBox.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="16" resname="r635494459" restype="string" datatype="java">
-        <source>{name} appreciates your gratitude :&#41;</source>
-        <target state="translated">{name} aprecia tu gratitud :&#41;</target>
+        <source>{name} appreciates your gratitude :)</source>
+        <target state="translated">{name} aprecia tu gratitud :)</target>
       </trans-unit>
     </body>
   </file>

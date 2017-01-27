@@ -155,9 +155,9 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/TipsDetailFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="624" resname="r142482154" restype="string" datatype="java">
-        <source>agreed with {author_name}&apos;s tip on \n{topic_name}</source>
+        <source>agreed with {author_name}'s tip on \n{topic_name}</source>
         <target>estuvo de acuerdo con el tip de {author_name} acerca de \n{topic_name}</target>
-        <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
+        <note annotates="source">Subject of this phrase is a doctor's name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
     </body>
   </file>
@@ -184,7 +184,7 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerSearchFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="690" resname="r831947664" restype="string" datatype="java">
-        <source>Can&apos;t find a clinician?</source>
+        <source>Can't find a clinician?</source>
         <target>¿No puedes encontrar un clínico?</target>
       </trans-unit>
       <trans-unit id="691" resname="r554083360" restype="string" datatype="java">
@@ -216,7 +216,7 @@
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/GoalTakeActionListItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="812" resname="r390005620" restype="string" datatype="java">
-        <source>{approver_name} agreed with {author_name}&apos;s checklist</source>
+        <source>{approver_name} agreed with {author_name}'s checklist</source>
         <target>{approver_name} estuvo de acuerdo con el listado de {author_name}</target>
       </trans-unit>
     </body>
@@ -240,11 +240,11 @@
   <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="1651" resname="cant_find_doctor" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t find your doctor? Invite\u00a0them\u00a0»</source>
+        <source>Can\'t find your doctor? Invite\u00a0them\u00a0»</source>
         <target>¿No puedes encontrar a tu doctor? \u00a0\u00a0»</target>
       </trans-unit>
       <trans-unit id="1652" resname="cant_find_clinician" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t find your clinician? Invite\u00a0them\u00a0»</source>
+        <source>Can\'t find your clinician? Invite\u00a0them\u00a0»</source>
         <target>¿No puedes encontrar a tu clínico? \u00a0\u00a0»</target>
       </trans-unit>
       <trans-unit id="1710" resname="cancel_appointment_content" restype="string" datatype="x-android-resource">
@@ -359,15 +359,15 @@
       <trans-unit id="2227" resname="picker_indicator_enterprise" restype="string" datatype="x-android-resource">
         <source>Special for %1$s members</source>
         <target>Especial para miembros %1$s</target>
-        <note annotates="source">&apos;%1$s&apos; is a string formatter, and refers to an enterprise group name, e.g. Flex members. Do not translate &apos;%1$s&apos;.</note>
+        <note annotates="source">'%1$s' is a string formatter, and refers to an enterprise group name, e.g. Flex members. Do not translate '%1$s'.</note>
       </trans-unit>
       <trans-unit id="2228" resname="picker_lang_speaks" restype="string" datatype="x-android-resource">
         <source>Speaks %s</source>
         <target>Habla %s</target>
-        <note annotates="source">&apos;%s&apos; refers to a language.</note>
+        <note annotates="source">'%s' refers to a language.</note>
       </trans-unit>
       <trans-unit id="2230" resname="invite_doctor_location" restype="string" datatype="x-android-resource">
-        <source>Your Doctor\&apos;s Location</source>
+        <source>Your Doctor\'s Location</source>
         <target>La Ubicación de Tu Doctor</target>
       </trans-unit>
       <trans-unit id="2234" resname="starting_at" restype="string" datatype="x-android-resource">
@@ -377,7 +377,7 @@
       <trans-unit id="2235" resname="starting_at_old_price" restype="string" datatype="x-android-resource">
         <source>Starting at %1$s</source>
         <target>Empezando desde %1$s</target>
-        <note annotates="source">&apos;%1$s&apos; is a formatter and refers to a price. Do not translate &apos;%1$s&apos;.</note>
+        <note annotates="source">'%1$s' is a formatter and refers to a price. Do not translate '%1$s'.</note>
       </trans-unit>
       <trans-unit id="2237" resname="symptom_triage_search_hint" restype="string" datatype="x-android-resource">
         <source>Find symptoms</source>
@@ -452,7 +452,7 @@
         <target>Toca o busca tus síntomas. O, siempre puedes saltar a hacerle tu pregunta a doctores.</target>
       </trans-unit>
       <trans-unit id="2266" resname="symptom_triage_instructional_main_title" restype="string" datatype="x-android-resource">
-        <source>Let\&apos;s get started!</source>
+        <source>Let\'s get started!</source>
         <target>¡Vamos a empezar!</target>
       </trans-unit>
       <trans-unit id="2267" resname="symptom_triage_instructional_account_picker_title" restype="string" datatype="x-android-resource">
@@ -470,10 +470,10 @@
       <trans-unit id="2271" resname="symptom_triage_instructional_refinement_title" restype="string" datatype="x-android-resource">
         <source>%s \u2014 okay.</source>
         <target>%s \u2014 ok.</target>
-        <note annotates="source">&apos;%s&apos; refers to a symptom attribute name.</note>
+        <note annotates="source">'%s' refers to a symptom attribute name.</note>
       </trans-unit>
       <trans-unit id="2272" resname="symptom_triage_instructional_refinement_content" restype="string" datatype="x-android-resource">
-        <source>Let\&apos;s learn a little more about that.</source>
+        <source>Let\'s learn a little more about that.</source>
         <target>Vamos a aprender un poco más acerca de eso.</target>
       </trans-unit>
       <trans-unit id="2273" resname="symptom_triage_instructional_risk_factors_title" restype="string" datatype="x-android-resource">
@@ -487,7 +487,7 @@
       <trans-unit id="2275" resname="symptom_triage_instructional_search_results_title" restype="string" datatype="x-android-resource">
         <source>%s \u2014 got it.</source>
         <target>%s \u2014 lo tengo.</target>
-        <note annotates="source">&apos;%s&apos; refers to a symptom attribute name.</note>
+        <note annotates="source">'%s' refers to a symptom attribute name.</note>
       </trans-unit>
       <trans-unit id="2276" resname="symptom_triage_instructional_search_results_no_body_title" restype="string" datatype="x-android-resource">
         <source>Common symptoms</source>
@@ -542,8 +542,8 @@
         <target>2533 nos han ayudado</target>
       </trans-unit>
       <trans-unit id="2292" resname="symptom_triage_genertic_disclaimer_text" restype="string" datatype="x-android-resource">
-        <source>The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
-        <target>La información en HealthTap &#40;incluyendo esta herramienta&#41; es sólo para propósitos educativos e informativos y no constituye consejo, diagnóstico o recomendaciones de tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor local de servicios de emergencia si crees que puedes estar teniendo una emergencia médica. Ver Información Adicional.</target>
+        <source>The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
+        <target>La información en HealthTap (incluyendo esta herramienta) es sólo para propósitos educativos e informativos y no constituye consejo, diagnóstico o recomendaciones de tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor local de servicios de emergencia si crees que puedes estar teniendo una emergencia médica. Ver Información Adicional.</target>
       </trans-unit>
       <trans-unit id="2294" resname="symptom_triage_experiencing" restype="string" datatype="x-android-resource">
         <source>Experiencing</source>
@@ -558,7 +558,7 @@
         <target>Crear reporte</target>
       </trans-unit>
       <trans-unit id="2297" resname="symptom_triage_warning_message" restype="string" datatype="x-android-resource">
-        <source>Heads up! If you go back from here, you\&apos;ll lose the symptoms you shared.</source>
+        <source>Heads up! If you go back from here, you\'ll lose the symptoms you shared.</source>
         <target>¡Atención! Si regresas desde aquí, perderás los síntomas que has compartido.</target>
       </trans-unit>
       <trans-unit id="2300" resname="symptom_triage_emergency_header" restype="string" datatype="x-android-resource">
@@ -570,11 +570,11 @@
         <target>Busca atención médica de emergencia</target>
       </trans-unit>
       <trans-unit id="2302" resname="symptom_triage_emergency_description" restype="string" datatype="x-android-resource">
-        <source>&quot;Most doctors recommend seeking immediate emergency medical attention based on the symptoms you reported&quot;</source>
-        <target>&quot;La mayoría de los doctores recomiendan buscar atención médica de emergencia inmediatamente basándose en los síntomas que reportaste&quot;</target>
+        <source>"Most doctors recommend seeking immediate emergency medical attention based on the symptoms you reported"</source>
+        <target>"La mayoría de los doctores recomiendan buscar atención médica de emergencia inmediatamente basándose en los síntomas que reportaste"</target>
       </trans-unit>
       <trans-unit id="2303" resname="symptom_triage_search_no_result" restype="string" datatype="x-android-resource">
-        <source>Sorry, we couldn\&apos;t find a symptom by that name. Maybe there are other ways to describe it?</source>
+        <source>Sorry, we couldn\'t find a symptom by that name. Maybe there are other ways to describe it?</source>
         <target>Perdón, no pudimos encontrar un síntoma con ese nombre. ¿Tal vez haya otras formas de describirlo?</target>
       </trans-unit>
       <trans-unit id="2306" resname="symptom_triage_drawer_remove_text" restype="string" datatype="x-android-resource">

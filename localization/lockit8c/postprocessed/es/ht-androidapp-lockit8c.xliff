@@ -89,12 +89,12 @@
       <trans-unit id="26" resname="r724277777" restype="string" datatype="x-android-resource">
         <source>Height</source>
         <target state="translated">Altura</target>
-        <note annotates="source">This refers to patient&apos;s height.</note>
+        <note annotates="source">This refers to patient's height.</note>
       </trans-unit>
       <trans-unit id="27" resname="r199398867" restype="string" datatype="x-android-resource">
         <source>Weight</source>
         <target state="translated">Peso</target>
-        <note annotates="source">This refers to patient&apos;s weight.</note>
+        <note annotates="source">This refers to patient's weight.</note>
       </trans-unit>
       <trans-unit id="28" resname="r156740501" restype="string" datatype="x-android-resource">
         <source>BMI</source>
@@ -363,8 +363,8 @@
         <target state="translated">Tamaño:</target>
       </trans-unit>
       <trans-unit id="95" resname="r319738031" restype="string" datatype="x-android-resource">
-        <source>{name} &#40;{country_code}&#41;</source>
-        <target state="translated">{name} &#40;{country_code}&#41;</target>
+        <source>{name} ({country_code})</source>
+        <target state="translated">{name} ({country_code})</target>
       </trans-unit>
       <trans-unit id="96" resname="r119864497" restype="string" datatype="x-android-resource">
         <source>{height}cms</source>
@@ -470,7 +470,7 @@
       <trans-unit id="122" resname="r140327383" restype="string" datatype="x-android-resource">
         <source>Terms of Service</source>
         <target state="translated">Términos de Servicio</target>
-        <note annotates="source">This refers to HealthTap&apos;s terms of service.</note>
+        <note annotates="source">This refers to HealthTap's terms of service.</note>
       </trans-unit>
       <trans-unit id="123" resname="r557318342" restype="string" datatype="x-android-resource">
         <source>Privacy</source>
@@ -479,12 +479,12 @@
       <trans-unit id="124" resname="r927688850" restype="string" datatype="x-android-resource">
         <source>No</source>
         <target state="translated">No</target>
-        <note annotates="source">button label &apos;no&apos; to ignore the appointment</note>
+        <note annotates="source">button label 'no' to ignore the appointment</note>
       </trans-unit>
       <trans-unit id="125" resname="r266823229" restype="string" datatype="x-android-resource">
         <source>Yes</source>
         <target state="translated">Sí</target>
-        <note annotates="source">button label &apos;yes&apos; to ignore the appointment</note>
+        <note annotates="source">button label 'yes' to ignore the appointment</note>
       </trans-unit>
       <trans-unit id="126" resname="r987771035" restype="string" datatype="x-android-resource">
         <source>Sorry, there was a problem</source>
@@ -515,16 +515,16 @@
         <target state="translated">Ninguno</target>
       </trans-unit>
       <trans-unit id="134" resname="r156592917" restype="string" datatype="x-android-resource">
-        <source>Prime &#40;Pay-as-you-go&#41;</source>
-        <target state="translated">Prime &#40;El Plan de Pago por Uso&#41;</target>
+        <source>Prime (Pay-as-you-go)</source>
+        <target state="translated">Prime (El Plan de Pago por Uso)</target>
       </trans-unit>
       <trans-unit id="135" resname="r975846192" restype="string" datatype="x-android-resource">
         <source>Prime</source>
         <target state="translated">Prime</target>
       </trans-unit>
       <trans-unit id="136" resname="r280584620" restype="string" datatype="x-android-resource">
-        <source>Prime &#40;until {date}&#41;</source>
-        <target state="translated">Prime &#40;hasta {date}&#41;</target>
+        <source>Prime (until {date})</source>
+        <target state="translated">Prime (hasta {date})</target>
       </trans-unit>
       <trans-unit id="137" resname="r438802283" restype="string" datatype="x-android-resource">
         <source>Payment Information</source>
@@ -648,8 +648,8 @@
         <target state="translated">Aprox. {price}</target>
       </trans-unit>
       <trans-unit id="167" resname="r837205133" restype="string" datatype="x-android-resource">
-        <source>Discount: {promo_code} &#40;{discount_description}&#41;</source>
-        <target state="translated">Descuento: {promo_code} &#40;{discount_description}&#41;</target>
+        <source>Discount: {promo_code} ({discount_description})</source>
+        <target state="translated">Descuento: {promo_code} ({discount_description})</target>
       </trans-unit>
       <trans-unit id="168" resname="r976932793" restype="string" datatype="x-android-resource">
         <source>&amp;lt;b&amp;gt;Your total&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;No commitment, cancel anytime</source>
@@ -708,8 +708,8 @@
         <target state="translated">Tu tarjeta terminando en *{four_digit_number} ha vencido. \n Por favor añade una nueva</target>
       </trans-unit>
       <trans-unit id="182" resname="r253259183" restype="string" datatype="x-android-resource">
-        <source>Discount: &#40;%s&#41;</source>
-        <target state="translated">Descuento: &#40;%s&#41;</target>
+        <source>Discount: (%s)</source>
+        <target state="translated">Descuento: (%s)</target>
       </trans-unit>
       <trans-unit id="183" resname="r855674847" restype="string" datatype="x-android-resource">
         <source>Charge the card ending in %s</source>
@@ -728,12 +728,12 @@
         <target state="translated">¡Error desconocido mientras se realizaba el pago!</target>
       </trans-unit>
       <trans-unit id="187" resname="r942559806" restype="string" datatype="x-android-resource">
-        <source>&#40;${original_price} regularly - ${credits} in credits&#41;</source>
-        <target state="translated">&#40;${original_price} regularmente - ${credits} en créditos&#41;</target>
+        <source>(${original_price} regularly - ${credits} in credits)</source>
+        <target state="translated">(${original_price} regularmente - ${credits} en créditos)</target>
       </trans-unit>
       <trans-unit id="188" resname="r95353935" restype="string" datatype="x-android-resource">
-        <source>&#40;$%s regularly&#41;</source>
-        <target state="translated">&#40;$%s &#41;</target>
+        <source>($%s regularly)</source>
+        <target state="translated">($%s )</target>
       </trans-unit>
       <trans-unit id="189" resname="r317602886" restype="string" datatype="x-android-resource">
         <source>Pay &amp; Send</source>
@@ -776,8 +776,8 @@
         <target state="translated">Cobro a la tarjeta que finaliza en %s</target>
       </trans-unit>
       <trans-unit id="199" resname="r552622470" restype="string" datatype="x-android-resource">
-        <source>Discount: {promo_code} &#40;{discription}&#41;</source>
-        <target state="translated">Descuento: {promo_code} &#40;{discription}&#41;</target>
+        <source>Discount: {promo_code} ({discription})</source>
+        <target state="translated">Descuento: {promo_code} ({discription})</target>
       </trans-unit>
       <trans-unit id="200" resname="r949182702" restype="string" datatype="x-android-resource">
         <source>Please provide a valid email address</source>
@@ -876,14 +876,14 @@
         <target state="translated">Mito:</target>
       </trans-unit>
       <trans-unit id="226" resname="r322108465" restype="string" datatype="x-android-resource">
-        <source>agreed with {author_name}\&apos;s tip on \n{topic_name}</source>
+        <source>agreed with {author_name}\'s tip on \n{topic_name}</source>
         <target state="translated">estuvo de acuerdo con el tip de {author_name}\ acerca de \n{topic_name}</target>
-        <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
+        <note annotates="source">Subject of this phrase is a doctor's name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
       <trans-unit id="227" resname="r838526257" restype="string" datatype="x-android-resource">
         <source>shared a tip on {topic_name}</source>
         <target state="translated">compartió un tip acerca de {topic_name}</target>
-        <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
+        <note annotates="source">Subject of this phrase is a doctor's name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
       <trans-unit id="228" resname="r189044309" restype="string" datatype="x-android-resource">
         <source>Dr.</source>
@@ -955,8 +955,8 @@
         <target state="translated">Valoraciones de Tratamientos</target>
       </trans-unit>
       <trans-unit id="248" resname="r382554039" restype="string" datatype="x-android-resource">
-        <source>{topic_name}&#40;{topic_generic_name}&#41;</source>
-        <target state="translated">{topic_name}&#40;{topic_generic_name}&#41;</target>
+        <source>{topic_name}({topic_generic_name})</source>
+        <target state="translated">{topic_name}({topic_generic_name})</target>
       </trans-unit>
       <trans-unit id="249" resname="r221604632" restype="string" datatype="x-android-resource">
         <source>Answers</source>
@@ -1172,16 +1172,16 @@
         <target state="translated">Descargar</target>
       </trans-unit>
       <trans-unit id="305" resname="r921427758" restype="string" datatype="x-android-resource">
-        <source>Helpful Votes &#40;{count_num}&#41;</source>
-        <target state="translated">Votos Útiles &#40;{count_num}&#41;</target>
+        <source>Helpful Votes ({count_num})</source>
+        <target state="translated">Votos Útiles ({count_num})</target>
       </trans-unit>
       <trans-unit id="306" resname="r722804316" restype="string" datatype="x-android-resource">
         <source>Votes</source>
         <target state="translated">Votos</target>
       </trans-unit>
       <trans-unit id="307" resname="r616076898" restype="string" datatype="x-android-resource">
-        <source>Agrees and comments &#40;{count_num}&#41;</source>
-        <target state="translated">De Acuerdos y comentarios &#40;{count_num}&#41;</target>
+        <source>Agrees and comments ({count_num})</source>
+        <target state="translated">De Acuerdos y comentarios ({count_num})</target>
       </trans-unit>
       <trans-unit id="308" resname="r845402666" restype="string" datatype="x-android-resource">
         <source>Agrees and comments</source>
@@ -1202,12 +1202,12 @@
       </trans-unit>
       <trans-unit id="312" resname="r526219058" restype="string" datatype="x-android-resource">
         <source>Do you want to remove this action from your To-Do list?</source>
-        <target state="translated">¿Quieres quitar esta acción de tu lista de &quot;Qué Hacer&quot;?</target>
+        <target state="translated">¿Quieres quitar esta acción de tu lista de "Qué Hacer"?</target>
       </trans-unit>
       <trans-unit id="313" resname="r971402718" restype="string" datatype="x-android-resource">
         <source>Privacy Policy</source>
         <target state="translated">Política de Privacidad</target>
-        <note annotates="source">This refers to HealthTap&apos;s privacy policy.</note>
+        <note annotates="source">This refers to HealthTap's privacy policy.</note>
       </trans-unit>
       <trans-unit id="314" resname="r162225204" restype="string" datatype="x-android-resource">
         <source>Hi, Dr {doctor_name}!\n</source>
@@ -1360,7 +1360,7 @@
       <trans-unit id="351" resname="r1022238927" restype="string" datatype="x-android-resource">
         <source>By continuing, you understand the {start1}Guidelines{end1} for Virtual Consults and agree to the {start2}Terms{end2}.</source>
         <target state="translated">Al continuar, comprendes las {start1}Directrices{end1} para Consultas Virtuales y aceptas los {start2}Términos{end2}.</target>
-        <note annotates="source">make sure &apos;{start1}&apos;, &apos;{end1}&apos; and &apos;{start2}&apos;, &apos;{end2}&apos; are surrounding the translated words &apos;Guidelines&apos; and &apos;Terms&apos; respectively.</note>
+        <note annotates="source">make sure '{start1}', '{end1}' and '{start2}', '{end2}' are surrounding the translated words 'Guidelines' and 'Terms' respectively.</note>
       </trans-unit>
       <trans-unit id="352" resname="r996432451" restype="string" datatype="x-android-resource">
         <source>Failed to upload file to server</source>
@@ -1523,8 +1523,8 @@
         <target state="translated">{first_name} {last_name}</target>
       </trans-unit>
       <trans-unit id="401" resname="r126015684" restype="string" datatype="x-android-resource">
-        <source>&#40;{name}&#41;</source>
-        <target state="translated">&#40;{name}&#41;</target>
+        <source>({name})</source>
+        <target state="translated">({name})</target>
       </trans-unit>
       <trans-unit id="402" resname="r230593847" restype="string" datatype="x-android-resource">
         <source>{topic_name} in the context of:</source>
@@ -1559,9 +1559,9 @@
         <target state="translated">{approver_name} aprobó esta traducción de {answerer_name}</target>
       </trans-unit>
       <trans-unit id="411" resname="r418550126" restype="string" datatype="x-android-resource">
-        <source>{weight_num}lbs &#40;{weight_in_kilogram} kg&#41;</source>
-        <target state="translated">{weight_num}lbs &#40;{weight_in_kilogram} kg&#41;</target>
-        <note annotates="source">This refers to patient&apos;s weight, for example, 150lbs &#40;68.04kg&#41; TODO localize number format? translate into local measurements?</note>
+        <source>{weight_num}lbs ({weight_in_kilogram} kg)</source>
+        <target state="translated">{weight_num}lbs ({weight_in_kilogram} kg)</target>
+        <note annotates="source">This refers to patient's weight, for example, 150lbs (68.04kg) TODO localize number format? translate into local measurements?</note>
       </trans-unit>
       <trans-unit id="412" resname="r939388258" restype="string" datatype="x-android-resource">
         <source>100 lbs</source>
@@ -1585,7 +1585,7 @@
         <target state="translated">Añadir Medicamento</target>
       </trans-unit>
       <trans-unit id="417" resname="r33874383" restype="string" datatype="x-android-resource">
-        <source>{name}\&apos;s</source>
+        <source>{name}\'s</source>
         <target state="translated">{name}\</target>
       </trans-unit>
       <trans-unit id="418" resname="r221517291" restype="string" datatype="x-android-resource">
@@ -1614,7 +1614,7 @@
         <target state="translated">¡Tú completaste esto!</target>
       </trans-unit>
       <trans-unit id="424" resname="r363844654" restype="string" datatype="x-android-resource">
-        <source>{approver_name} agreed with {author_name}\&apos;s checklist</source>
+        <source>{approver_name} agreed with {author_name}\'s checklist</source>
         <target state="translated">{approver_name} estuvo de acuerdo con el listado de\ {author_name}</target>
       </trans-unit>
       <trans-unit id="425" resname="r776974405" restype="string" datatype="x-android-resource">
@@ -1646,7 +1646,7 @@
         <target state="translated">{doctor_name} contestó</target>
       </trans-unit>
       <trans-unit id="433" resname="r620253570" restype="string" datatype="x-android-resource">
-        <source>{agreer_name} agrees with {answerer_name}\&apos;s answer</source>
+        <source>{agreer_name} agrees with {answerer_name}\'s answer</source>
         <target state="translated">{agreer_name} está de acuerdo con la respuesta de {answerer_name}</target>
       </trans-unit>
       <trans-unit id="434" resname="r749540521" restype="string" datatype="x-android-resource">
@@ -1654,7 +1654,7 @@
         <target state="translated">{name} contestó</target>
       </trans-unit>
       <trans-unit id="435" resname="r58726541" restype="string" datatype="x-android-resource">
-        <source>{commenter_name} commented on {answerer_name}\&apos;s answer</source>
+        <source>{commenter_name} commented on {answerer_name}\'s answer</source>
         <target state="translated">{commenter_name} comentó la respuesta de {answerer_name}</target>
       </trans-unit>
       <trans-unit id="436" resname="r795123293" restype="string" datatype="x-android-resource">
@@ -1666,9 +1666,9 @@
         <target state="translated">¿Tienes una pregunta acerca de {goal_name}? Pregúntale a {doc_name}, un especialista en {specialty} con {practice}.</target>
       </trans-unit>
       <trans-unit id="438" resname="r113489780" restype="string" datatype="x-android-resource">
-        <source>When was the last time? &#40;year&#41;</source>
-        <target state="translated">¿Cuándo fue la última vez? &#40;Año&#41;</target>
-        <note annotates="source">When&#40;which year&#41; was the last time that the patient got a specific vaccination?</note>
+        <source>When was the last time? (year)</source>
+        <target state="translated">¿Cuándo fue la última vez? (Año)</target>
+        <note annotates="source">When(which year) was the last time that the patient got a specific vaccination?</note>
       </trans-unit>
       <trans-unit id="439" resname="r791973709" restype="string" datatype="x-android-resource">
         <source>Have you ever had sex? If so, with men, women, or both?</source>
@@ -1691,33 +1691,33 @@
         <target state="translated">¿Quién tenía {medical_condition_name}?</target>
       </trans-unit>
       <trans-unit id="444" resname="r62184480" restype="string" datatype="x-android-resource">
-        <source>Do your grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
-        <target state="translated">¿Tus abuelos, padres o hermanos tienen alguna condición médica mayor? &#40;¿que atente contra la vida o no?&#41;</target>
+        <source>Do your grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
+        <target state="translated">¿Tus abuelos, padres o hermanos tienen alguna condición médica mayor? (¿que atente contra la vida o no?)</target>
       </trans-unit>
       <trans-unit id="445" resname="r296786865" restype="string" datatype="x-android-resource">
         <source>Is {first_name} alive?</source>
         <target state="translated">¿Está vivo {first_name}?</target>
       </trans-unit>
       <trans-unit id="446" resname="r914415647" restype="string" datatype="x-android-resource">
-        <source>Does {first_name}\&apos;s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
-        <target state="translated">¿Los abuelos, padres o hermanos vivos de {first_name} tienen alguna condición médica mayor? &#40;¿que atente contra la vida o no?&#41;</target>
+        <source>Does {first_name}\'s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
+        <target state="translated">¿Los abuelos, padres o hermanos vivos de {first_name} tienen alguna condición médica mayor? (¿que atente contra la vida o no?)</target>
       </trans-unit>
       <trans-unit id="447" resname="r685531918" restype="string" datatype="x-android-resource">
-        <source>Did any close relative &#40;sibling, parent, grandparent&#41; of {first_name&#41; pass away before the age of 60 from a condition?</source>
-        <target state="translated">¿Algún familiar cercano &#40;hermano, padre, abuelo&#41; de {first_name} falleció antes de la edad de 60 por alguna condición?</target>
+        <source>Did any close relative (sibling, parent, grandparent) of {first_name) pass away before the age of 60 from a condition?</source>
+        <target state="translated">¿Algún familiar cercano (hermano, padre, abuelo) de {first_name} falleció antes de la edad de 60 por alguna condición?</target>
       </trans-unit>
       <trans-unit id="448" resname="r977679182" restype="string" datatype="x-android-resource">
-        <source>Do your living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
-        <target state="translated">¿Tus abuelos, padres o hermanos vivos tienen alguna condición médica mayor? &#40;¿que atente contra la vida o no?&#41;</target>
+        <source>Do your living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
+        <target state="translated">¿Tus abuelos, padres o hermanos vivos tienen alguna condición médica mayor? (¿que atente contra la vida o no?)</target>
       </trans-unit>
       <trans-unit id="449" resname="r498384066" restype="string" datatype="x-android-resource">
-        <source>Did any close relative &#40;sibling, parent, grandparent&#41; pass away before the age of 60 from a condition?</source>
-        <target state="translated">¿Algún familiar cercano &#40;hermano, padre, abuelo&#41; falleció antes de la edad de 60 por alguna condición?</target>
+        <source>Did any close relative (sibling, parent, grandparent) pass away before the age of 60 from a condition?</source>
+        <target state="translated">¿Algún familiar cercano (hermano, padre, abuelo) falleció antes de la edad de 60 por alguna condición?</target>
       </trans-unit>
       <trans-unit id="450" resname="r985904087" restype="string" datatype="x-android-resource">
         <source>{age_num} yrs</source>
         <target state="translated">{age_num} años</target>
-        <note annotates="source">This refers to a person&apos;s age, for example, 10 yrs. &apos;yrs&apos; means &apos;years&apos;.</note>
+        <note annotates="source">This refers to a person's age, for example, 10 yrs. 'yrs' means 'years'.</note>
       </trans-unit>
       <trans-unit id="451" resname="r264621208" restype="string" datatype="x-android-resource">
         <source>How old is your mother?</source>
@@ -1728,7 +1728,7 @@
         <target state="translated">¿Cuál es tu altura y peso?</target>
       </trans-unit>
       <trans-unit id="453" resname="r7023058" restype="string" datatype="x-android-resource">
-        <source>What is {first_name}\&apos;s height and weight?</source>
+        <source>What is {first_name}\'s height and weight?</source>
         <target state="translated">¿Cuál es la altura y peso de {first_name}?</target>
       </trans-unit>
       <trans-unit id="454" resname="r1970103" restype="string" datatype="x-android-resource">
@@ -1736,7 +1736,7 @@
         <target state="translated">¿Cuál es su relación contigo?</target>
       </trans-unit>
       <trans-unit id="455" resname="r571031941" restype="string" datatype="x-android-resource">
-        <source>What is {first_name}\&apos;s relationship to you</source>
+        <source>What is {first_name}\'s relationship to you</source>
         <target state="translated">¿Cuál es la relación de {first_name} contigo?</target>
       </trans-unit>
       <trans-unit id="456" resname="r565044854" restype="string" datatype="x-android-resource">
@@ -1757,7 +1757,7 @@
         <note annotates="source">This is an instruction message for patients to share their obstetric or pregnancy history</note>
       </trans-unit>
       <trans-unit id="460" resname="r77105519" restype="string" datatype="x-android-resource">
-        <source>Please share {first_name}\&apos;s obstetrics/pregnancy history</source>
+        <source>Please share {first_name}\'s obstetrics/pregnancy history</source>
         <target state="translated">Por favor, comparte el historial obstétrico/de embarazo de {first_name}</target>
       </trans-unit>
       <trans-unit id="461" resname="r230064504" restype="string" datatype="x-android-resource">
@@ -1765,7 +1765,7 @@
         <target state="translated">¿Está actualmente embarazada {first_name}?</target>
       </trans-unit>
       <trans-unit id="462" resname="r641804729" restype="string" datatype="x-android-resource">
-        <source>What\&apos;s your name?</source>
+        <source>What\'s your name?</source>
         <target state="translated">¿Cuál es tu nombre?</target>
       </trans-unit>
       <trans-unit id="464" resname="r1049343603" restype="string" datatype="x-android-resource">
@@ -1797,8 +1797,8 @@
         <target state="translated">¿Qué idiomas hablas?</target>
       </trans-unit>
       <trans-unit id="471" resname="r542116704" restype="string" datatype="x-android-resource">
-        <source>&#40;Choose all that apply&#41;</source>
-        <target state="translated">&#40;Elige a todos los que aplican&#41;</target>
+        <source>(Choose all that apply)</source>
+        <target state="translated">(Elige a todos los que aplican)</target>
         <note annotates="source">This is a subtitle text for a multi-selected list</note>
       </trans-unit>
       <trans-unit id="472" resname="r989778094" restype="string" datatype="x-android-resource">
@@ -1818,7 +1818,7 @@
         <target state="translated">¿Cuál es tu etnia?</target>
       </trans-unit>
       <trans-unit id="476" resname="r1005343913" restype="string" datatype="x-android-resource">
-        <source>What is {first_name}\&apos;s ethnicity?</source>
+        <source>What is {first_name}\'s ethnicity?</source>
         <target state="translated">¿Cuál es la etnia de {first_name}?</target>
       </trans-unit>
       <trans-unit id="477" resname="r546951572" restype="string" datatype="x-android-resource">
@@ -1864,7 +1864,7 @@
         <target state="translated">¿Cómo clasificarías tu consumo de alcohol?</target>
       </trans-unit>
       <trans-unit id="487" resname="r153507971" restype="string" datatype="x-android-resource">
-        <source>How would you classify {first_name}\&apos;s consumption of alcohol?</source>
+        <source>How would you classify {first_name}\'s consumption of alcohol?</source>
         <target state="translated">¿Cómo clasificarías el consumo de alcohol de {first_name}?</target>
       </trans-unit>
       <trans-unit id="488" resname="r884770932" restype="string" datatype="x-android-resource">
@@ -1874,7 +1874,7 @@
       <trans-unit id="489" resname="r690308697" restype="string" datatype="x-android-resource">
         <source>Add treatment</source>
         <target state="translated">Añadir tratamiento</target>
-        <note annotates="source">This means to add treatments in a patient&apos;s health profile</note>
+        <note annotates="source">This means to add treatments in a patient's health profile</note>
       </trans-unit>
       <trans-unit id="490" resname="r446307512" restype="string" datatype="x-android-resource">
         <source>Update treatment or procedure</source>
@@ -1884,22 +1884,22 @@
       <trans-unit id="491" resname="r438742889" restype="string" datatype="x-android-resource">
         <source>Add condition or symptom</source>
         <target state="translated">Añadir una condición o síntoma</target>
-        <note annotates="source">This is used to add conditions or symptoms in a patient&apos;s health profile</note>
+        <note annotates="source">This is used to add conditions or symptoms in a patient's health profile</note>
       </trans-unit>
       <trans-unit id="492" resname="r619195118" restype="string" datatype="x-android-resource">
-        <source>Optional Notes &#40;e.g., side effects, dosage&#41;</source>
-        <target state="translated">Notas Opcionales &#40;e.g. efectos secundarios y dosis&#41;</target>
-        <note annotates="source">This is used to add optional notes in patient&apos;s health profiles. Please also translate punctuations.</note>
+        <source>Optional Notes (e.g., side effects, dosage)</source>
+        <target state="translated">Notas Opcionales (e.g. efectos secundarios y dosis)</target>
+        <note annotates="source">This is used to add optional notes in patient's health profiles. Please also translate punctuations.</note>
       </trans-unit>
       <trans-unit id="493" resname="r888997785" restype="string" datatype="x-android-resource">
         <source>Add medication</source>
         <target state="translated">Añadir medicamento</target>
-        <note annotates="source">Add medications in patient&apos;s profile.</note>
+        <note annotates="source">Add medications in patient's profile.</note>
       </trans-unit>
       <trans-unit id="494" resname="r1052830974" restype="string" datatype="x-android-resource">
         <source>Type medication</source>
         <target state="translated">Escribir medicamento</target>
-        <note annotates="source">This is a hint for user instructing user to type in medication name for patient&apos;s health profile.</note>
+        <note annotates="source">This is a hint for user instructing user to type in medication name for patient's health profile.</note>
       </trans-unit>
       <trans-unit id="495" resname="r89603413" restype="string" datatype="x-android-resource">
         <source>No longer take this</source>
@@ -1912,14 +1912,14 @@
         <note annotates="source">This means that the patient is currently taking this medication.</note>
       </trans-unit>
       <trans-unit id="497" resname="r318925728" restype="string" datatype="x-android-resource">
-        <source>Optional Notes &#40;e.g., date and nature of last reaction, severity and frequency of reactions&#41;</source>
-        <target state="translated">Notas Opcionales &#40;e.g. fecha y naturaleza de la última reacción, gravedad y frecuencia de las reacciones&#41;</target>
-        <note annotates="source">This is used to add optional notes in patient&apos;s health profiles. Please also translate punctuations.</note>
+        <source>Optional Notes (e.g., date and nature of last reaction, severity and frequency of reactions)</source>
+        <target state="translated">Notas Opcionales (e.g. fecha y naturaleza de la última reacción, gravedad y frecuencia de las reacciones)</target>
+        <note annotates="source">This is used to add optional notes in patient's health profiles. Please also translate punctuations.</note>
       </trans-unit>
       <trans-unit id="498" resname="r630780197" restype="string" datatype="x-android-resource">
         <source>Add allergy</source>
         <target state="translated">Añadir alergia</target>
-        <note annotates="source">This is used to add allergies in patient&apos;s profile.</note>
+        <note annotates="source">This is used to add allergies in patient's profile.</note>
       </trans-unit>
       <trans-unit id="499" resname="r856984677" restype="string" datatype="x-android-resource">
         <source>Type allergy</source>
@@ -1929,17 +1929,17 @@
       <trans-unit id="500" resname="r578633561" restype="string" datatype="x-android-resource">
         <source>Update condition or symptom</source>
         <target state="translated">Actualizar una condición o síntoma</target>
-        <note annotates="source">This means to update patient&apos;s conditions or symptoms profile</note>
+        <note annotates="source">This means to update patient's conditions or symptoms profile</note>
       </trans-unit>
       <trans-unit id="501" resname="r655463906" restype="string" datatype="x-android-resource">
         <source>Update medication</source>
         <target state="translated">Actualizar medicamento</target>
-        <note annotates="source">This means to update patient&apos;s medications profile</note>
+        <note annotates="source">This means to update patient's medications profile</note>
       </trans-unit>
       <trans-unit id="502" resname="r603929412" restype="string" datatype="x-android-resource">
         <source>Update allergy</source>
         <target state="translated">Actualizar alergia</target>
-        <note annotates="source">This means to update patient&apos;s allergies profile</note>
+        <note annotates="source">This means to update patient's allergies profile</note>
       </trans-unit>
       <trans-unit id="503" resname="r199604478" restype="string" datatype="x-android-resource">
         <source>How is {first_name} insured for medical expenses?</source>
@@ -1966,8 +1966,8 @@
         <target state="translated">¡Gracias!</target>
       </trans-unit>
       <trans-unit id="510" resname="r635494459" restype="string" datatype="x-android-resource">
-        <source>{name} appreciates your gratitude :&#41;</source>
-        <target state="translated">{name} aprecia tu gratitud :&#41;</target>
+        <source>{name} appreciates your gratitude :)</source>
+        <target state="translated">{name} aprecia tu gratitud :)</target>
       </trans-unit>
       <trans-unit id="511" resname="r969824614" restype="string" datatype="x-android-resource">
         <source>Dr. {name}</source>
@@ -2010,7 +2010,7 @@
         <target state="translated">Dirección de correo electrónico</target>
       </trans-unit>
       <trans-unit id="522" resname="r561637973" restype="string" datatype="x-android-resource">
-        <source>What\&apos;s your email?</source>
+        <source>What\'s your email?</source>
         <target state="translated">¿Cuál es tu correo electrónico?</target>
       </trans-unit>
       <trans-unit id="523" resname="r863217688" restype="string" datatype="x-android-resource">
@@ -2042,7 +2042,7 @@
         <target state="translated">Aplicar código</target>
       </trans-unit>
       <trans-unit id="530" resname="r141446606" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re sorry to see you downgrade!</source>
+        <source>We\'re sorry to see you downgrade!</source>
         <target state="translated">¡Sentimos que bajes de categoría!</target>
       </trans-unit>
       <trans-unit id="531" resname="r151255723" restype="string" datatype="x-android-resource">
@@ -2090,8 +2090,8 @@
         <target state="translated">Aplicaciones</target>
       </trans-unit>
       <trans-unit id="546" resname="r489811388" restype="string" datatype="x-android-resource">
-        <source>{search_content} &#40;{search_result_count}&#41;</source>
-        <target state="translated">{search_content} &#40;{search_result_count}&#41;</target>
+        <source>{search_content} ({search_result_count})</source>
+        <target state="translated">{search_content} ({search_result_count})</target>
       </trans-unit>
       <trans-unit id="547" resname="r733994937" restype="string" datatype="x-android-resource">
         <source>Available for Virtual Consult</source>
@@ -2118,8 +2118,8 @@
         <target state="translated">Por favor selecciona al menos tema conocido por para recomendar.</target>
       </trans-unit>
       <trans-unit id="553" resname="r1067817368" restype="string" datatype="x-android-resource">
-        <source>{name} appreciates your recommendation :&#41;</source>
-        <target state="translated">{name} aprecia tu recomendación :&#41;</target>
+        <source>{name} appreciates your recommendation :)</source>
+        <target state="translated">{name} aprecia tu recomendación :)</target>
       </trans-unit>
       <trans-unit id="554" resname="r27047270" restype="string" datatype="x-android-resource">
         <source>Expertise in {specialty_name}</source>
@@ -2138,9 +2138,9 @@
         <target state="translated">Renuncia de responsabilidad</target>
       </trans-unit>
       <trans-unit id="558" resname="r571438431" restype="string" datatype="x-android-resource">
-        <source>Your invitation was sent :&#41;</source>
-        <target state="translated">Tu invitación fue enviada :&#41;</target>
-        <note annotates="source">Notification message when user successfully invites others to support him with his goal. Don&apos;t translate the smiling face.</note>
+        <source>Your invitation was sent :)</source>
+        <target state="translated">Tu invitación fue enviada :)</target>
+        <note annotates="source">Notification message when user successfully invites others to support him with his goal. Don't translate the smiling face.</note>
       </trans-unit>
       <trans-unit id="559" resname="r994191776" restype="string" datatype="x-android-resource">
         <source>We will notify you when {name} accepts.</source>
@@ -2174,8 +2174,8 @@
         <note annotates="source">Subject message. This refers to users editing the question they previously posted for answers and update it successfully.</note>
       </trans-unit>
       <trans-unit id="568" resname="r383208692" restype="string" datatype="x-android-resource">
-        <source>Your question has been updated for our doctors to answer :&#41;</source>
-        <target state="translated">Tu pregunta ha sido actualizada para que uno de nuestros doctores la responda :&#41;</target>
+        <source>Your question has been updated for our doctors to answer :)</source>
+        <target state="translated">Tu pregunta ha sido actualizada para que uno de nuestros doctores la responda :)</target>
         <note annotates="source">Body message. This refers to users editing the question they previously posted for answers and update it successfully. Do not translate the smilling face.</note>
       </trans-unit>
       <trans-unit id="569" resname="r528066642" restype="string" datatype="x-android-resource">
@@ -2186,12 +2186,12 @@
       <trans-unit id="570" resname="r916011381" restype="string" datatype="x-android-resource">
         <source>Appointment successfully updated!</source>
         <target state="translated">¡Cita actualizada exitosamente!</target>
-        <note annotates="source">Shown to users after they successfully update appointment details&#40;e.g. reason for consult, etc.&#41;.</note>
+        <note annotates="source">Shown to users after they successfully update appointment details(e.g. reason for consult, etc.).</note>
       </trans-unit>
       <trans-unit id="571" resname="r668621156" restype="string" datatype="x-android-resource">
         <source>Appointment update failed!</source>
         <target state="translated">¡Actualización de cita falló!</target>
-        <note annotates="source">Shown to users if updating appointment details&#40;e.g. reason for consult, etc.&#41; fails.</note>
+        <note annotates="source">Shown to users if updating appointment details(e.g. reason for consult, etc.) fails.</note>
       </trans-unit>
       <trans-unit id="572" resname="r872402269" restype="string" datatype="x-android-resource">
         <source>${price} special one-time offer!</source>
@@ -2218,7 +2218,7 @@
       <trans-unit id="577" resname="r56642254" restype="string" datatype="x-android-resource">
         <source>/month</source>
         <target state="translated">/mes</target>
-        <note annotates="source">This means &apos;per month&apos;. Please also translate punctuation.</note>
+        <note annotates="source">This means 'per month'. Please also translate punctuation.</note>
       </trans-unit>
       <trans-unit id="578" resname="r678731506" restype="string" datatype="x-android-resource">
         <source>One consult with the doctor for advice, prescription, lab tests, and more</source>
@@ -2227,11 +2227,11 @@
       <trans-unit id="579" resname="r861200767" restype="string" datatype="x-android-resource">
         <source>/consult</source>
         <target state="translated">/consulta</target>
-        <note annotates="source">This means &apos;per consult&apos;. Please also translate punctuation.</note>
+        <note annotates="source">This means 'per consult'. Please also translate punctuation.</note>
       </trans-unit>
       <trans-unit id="580" resname="r850247357" restype="string" datatype="x-android-resource">
-        <source>&#40;{time_zone}&#41;</source>
-        <target state="translated">&#40;{time_zone}&#41;</target>
+        <source>({time_zone})</source>
+        <target state="translated">({time_zone})</target>
       </trans-unit>
       <trans-unit id="581" resname="r410414603" restype="string" datatype="x-android-resource">
         <source>Vaccinations</source>
@@ -2290,8 +2290,8 @@
         <target state="translated">¿Estás seguro que quieres eliminar este seguro médico?</target>
       </trans-unit>
       <trans-unit id="595" resname="r765419435" restype="string" datatype="x-android-resource">
-        <source>Did any close relative &#40;sibling, parent, grandparent&#41; of {first_name} pass away before the age of 60 from a condition?</source>
-        <target state="translated">¿Algún familiar cercano &#40;hermano, padre, abuelo&#41; de {first_name} falleció antes de la edad de 60 por alguna condición?</target>
+        <source>Did any close relative (sibling, parent, grandparent) of {first_name} pass away before the age of 60 from a condition?</source>
+        <target state="translated">¿Algún familiar cercano (hermano, padre, abuelo) de {first_name} falleció antes de la edad de 60 por alguna condición?</target>
       </trans-unit>
       <trans-unit id="596" resname="r759847068" restype="string" datatype="x-android-resource">
         <source>Do any living close relatives of {first_name} have significant medical conditions?</source>
@@ -2361,16 +2361,16 @@
       <trans-unit id="612" resname="r781371042" restype="string" datatype="x-android-resource">
         <source>Male</source>
         <target state="translated">Hombre</target>
-        <note annotates="source">This refers to the patient&apos;s gender</note>
+        <note annotates="source">This refers to the patient's gender</note>
       </trans-unit>
       <trans-unit id="613" resname="r809623071" restype="string" datatype="x-android-resource">
         <source>Female</source>
         <target state="translated">Mujer</target>
-        <note annotates="source">This refers to the patient&apos;s gender</note>
+        <note annotates="source">This refers to the patient's gender</note>
       </trans-unit>
       <trans-unit id="614" resname="r796642698" restype="string" datatype="x-android-resource">
-        <source>&#40;{age}yrs&#41;</source>
-        <target state="translated">&#40;{age}años&#41;</target>
+        <source>({age}yrs)</source>
+        <target state="translated">({age}años)</target>
       </trans-unit>
       <trans-unit id="615" resname="r945651898" restype="string" datatype="x-android-resource">
         <source>{height_in_feet}ft {height_in_inch}in</source>
@@ -2386,7 +2386,7 @@
       </trans-unit>
       <trans-unit id="618" resname="r356004357" restype="string" datatype="x-android-resource">
         <source>Hi, {name}!</source>
-        <target state="translated">¡Hola, &#40;{name}&#41;!</target>
+        <target state="translated">¡Hola, ({name})!</target>
       </trans-unit>
       <trans-unit id="619" resname="r787211475" restype="string" datatype="x-android-resource">
         <source>99+</source>
@@ -2418,8 +2418,8 @@
         <target state="translated">¿También hiciste lo siguiente?</target>
       </trans-unit>
       <trans-unit id="626" resname="r157231057" restype="string" datatype="x-android-resource">
-        <source>&#40;{checklist_item_count}&#41;</source>
-        <target state="translated">&#40;{checklist_item_count}&#41;</target>
+        <source>({checklist_item_count})</source>
+        <target state="translated">({checklist_item_count})</target>
       </trans-unit>
       <trans-unit id="627" resname="r1070181179" restype="string" datatype="x-android-resource">
         <source>Thanked {name}</source>
@@ -2454,8 +2454,8 @@
         <target state="translated">Visita sitio web de consultorio</target>
       </trans-unit>
       <trans-unit id="636" resname="r726757202" restype="string" datatype="x-android-resource">
-        <source>{journal_name} &#40;{journal_year}&#41;</source>
-        <target state="translated">{journal_name} &#40;{journal_year}&#41;</target>
+        <source>{journal_name} ({journal_year})</source>
+        <target state="translated">{journal_name} ({journal_year})</target>
       </trans-unit>
       <trans-unit id="637" resname="r556911602" restype="string" datatype="x-android-resource">
         <source>Insurances accepted</source>
@@ -2524,7 +2524,7 @@
       <trans-unit id="653" resname="r908018304" restype="string" datatype="x-android-resource">
         <source>A profile with this name already exists.</source>
         <target state="translated">Un perfil con este nombre ya existe.</target>
-        <note annotates="source">This is an error message when the user try to add a sub account profile&#40;for example, patient&apos;s mother&#41; which already exists.</note>
+        <note annotates="source">This is an error message when the user try to add a sub account profile(for example, patient's mother) which already exists.</note>
       </trans-unit>
       <trans-unit id="654" resname="r586088259" restype="string" datatype="x-android-resource">
         <source>AnswersLogger by topic</source>
@@ -2550,7 +2550,7 @@
       <trans-unit id="661" resname="r217920742" restype="string" datatype="x-android-resource">
         <source>{character_numbers}/100</source>
         <target state="translated">{character_numbers}/100</target>
-        <note annotates="source">This counts the number of input characters. For example, 20/100. Do not translate {character_numbers} which is the input characters&apos; number. Maximum number of characters allowed is set to be 100.</note>
+        <note annotates="source">This counts the number of input characters. For example, 20/100. Do not translate {character_numbers} which is the input characters' number. Maximum number of characters allowed is set to be 100.</note>
       </trans-unit>
       <trans-unit id="662" resname="r732609481" restype="string" datatype="x-android-resource">
         <source>This appointment does not exist</source>
@@ -2585,13 +2585,13 @@
         <target state="translated">Soporte HealthTap</target>
       </trans-unit>
       <trans-unit id="675" resname="r511628729" restype="string" datatype="x-android-resource">
-        <source>&#40;Pending&#41;</source>
-        <target state="translated">&#40;Pendiente&#41;</target>
+        <source>(Pending)</source>
+        <target state="translated">(Pendiente)</target>
         <note annotates="source">This means that a payment transaction is pending. Punctuations also need to be translated.</note>
       </trans-unit>
       <trans-unit id="676" resname="r46160805" restype="string" datatype="x-android-resource">
-        <source>&#40;Failed&#41;</source>
-        <target state="translated">&#40;Fallida&#41;</target>
+        <source>(Failed)</source>
+        <target state="translated">(Fallida)</target>
         <note annotates="source">This means that a payment transaction failed. Punctuations also need to be translated.</note>
       </trans-unit>
       <trans-unit id="677" resname="r134934247" restype="string" datatype="x-android-resource">
@@ -2604,14 +2604,14 @@
         <target state="translated">Fax:</target>
       </trans-unit>
       <trans-unit id="679" resname="r425930773" restype="string" datatype="x-android-resource">
-        <source>&#40;{0}&#41;</source>
-        <target state="translated">&#40;{0}&#41;</target>
-        <note annotates="source">{0} is a patient name. Please translate punctuations &apos;&#40;&apos; and &apos;&#41;&apos;.</note>
+        <source>({0})</source>
+        <target state="translated">({0})</target>
+        <note annotates="source">{0} is a patient name. Please translate punctuations '(' and ')'.</note>
       </trans-unit>
       <trans-unit id="680" resname="r321971325" restype="string" datatype="x-android-resource">
-        <source>&#40;{0}, {1}&#41;</source>
-        <target state="translated">&#40;{0}, {1}&#41;</target>
-        <note annotates="source">{0} is a patient name. {1} is this patient&apos;s age. Please translate punctuations &apos;&#40;&apos; and &apos;&#41;&apos;.</note>
+        <source>({0}, {1})</source>
+        <target state="translated">({0}, {1})</target>
+        <note annotates="source">{0} is a patient name. {1} is this patient's age. Please translate punctuations '(' and ')'.</note>
       </trans-unit>
       <trans-unit id="681" resname="r304523712" restype="string" datatype="x-android-resource">
         <source>Are you sure you want to remove this condition from your family history?</source>
@@ -2635,12 +2635,12 @@
       <trans-unit id="685" resname="r140184302" restype="string" datatype="x-android-resource">
         <source>Pending your response</source>
         <target state="translated">Pendiente a tu respuesta</target>
-        <note annotates="source">This means that the patient&apos;s question is being reviewed.</note>
+        <note annotates="source">This means that the patient's question is being reviewed.</note>
       </trans-unit>
       <trans-unit id="686" resname="r668818537" restype="string" datatype="x-android-resource">
         <source>No responses yet.</source>
         <target state="translated">Ninguna respuesta aún.</target>
-        <note annotates="source">This means that there is no responses to the patient&apos;s question yet.</note>
+        <note annotates="source">This means that there is no responses to the patient's question yet.</note>
       </trans-unit>
       <trans-unit id="687" resname="r391613829" restype="string" datatype="x-android-resource">
         <source>No doctor picked up.</source>
@@ -2670,7 +2670,7 @@
       <trans-unit id="695" resname="r439163356" restype="string" datatype="x-android-resource">
         <source>Service/Cost</source>
         <target state="translated">Servicio/Costo</target>
-        <note annotates="source">This is a title for consult prices. &apos;Service&apos; refers to a consult type. &apos;Cost&apos; refers to the price.</note>
+        <note annotates="source">This is a title for consult prices. 'Service' refers to a consult type. 'Cost' refers to the price.</note>
       </trans-unit>
       <trans-unit id="696" resname="r930376086" restype="string" datatype="x-android-resource">
         <source>One consult\t\t\t${0}</source>
@@ -2680,7 +2680,7 @@
       <trans-unit id="697" resname="r633859442" restype="string" datatype="x-android-resource">
         <source>Length/Cost</source>
         <target state="translated">Duración/Costo</target>
-        <note annotates="source">This is a title for consult prices. &apos;Length&apos; refers to a consult time duration. &apos;Cost&apos; refers to the price.</note>
+        <note annotates="source">This is a title for consult prices. 'Length' refers to a consult time duration. 'Cost' refers to the price.</note>
       </trans-unit>
       <trans-unit id="698" resname="r372181401" restype="string" datatype="x-android-resource">
         <source>15m</source>

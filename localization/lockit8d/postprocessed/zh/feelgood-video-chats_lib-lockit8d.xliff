@@ -23,8 +23,8 @@
   <file original="android/src/com/healthtap/live_consult/chat/messages/SoapMessage.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="4" resname="r795802560" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target state="translated">诊断码：\n</target>
+        <source>Diagnosis codes:</source>
+        <target state="translated">诊断码：</target>
       </trans-unit>
     </body>
   </file>

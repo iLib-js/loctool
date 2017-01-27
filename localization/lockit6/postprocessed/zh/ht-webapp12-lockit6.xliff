@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="4894" resname="body" restype="string" datatype="x-yaml" x-context="saved_someone_else_life">
         <source>%1</source>
-        <target>&#35;1</target>
+        <target>#1</target>
       </trans-unit>
       <trans-unit id="4895" resname="ctoa" restype="string" datatype="x-yaml" x-context="saved_someone_else_life">
         <source>Ask another question</source>
@@ -95,7 +95,7 @@
         <target>%1已同意</target>
       </trans-unit>
       <trans-unit id="4916" resname="body" restype="string" datatype="x-yaml" x-context="member_question_asked_agreed">
-        <source>with %1&apos;s %2 to “%3“</source>
+        <source>with %1's %2 to “%3“</source>
         <target>与%1的%2到“%3“</target>
       </trans-unit>
       <trans-unit id="4917" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_question_asked_agreed">
@@ -111,7 +111,7 @@
         <target>%1已同意</target>
       </trans-unit>
       <trans-unit id="4920" resname="body" restype="string" datatype="x-yaml" x-context="member_answer_agree_concierge">
-        <source>with %1&apos;s answer to %2</source>
+        <source>with %1's answer to %2</source>
         <target>与%1的回答%2</target>
       </trans-unit>
       <trans-unit id="4921" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_answer_agree_concierge">
@@ -175,7 +175,7 @@
         <target>%1已评论！</target>
       </trans-unit>
       <trans-unit id="4936" resname="body" restype="string" datatype="x-yaml" x-context="member_question_followed_commented">
-        <source>Congrats! %1 commented on %2&apos;s %3 to a %4 you’re following: “%5”</source>
+        <source>Congrats! %1 commented on %2's %3 to a %4 you’re following: “%5”</source>
         <target>恭喜！%1评论了%4正在关注的%2的%3“%5”</target>
       </trans-unit>
       <trans-unit id="4937" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_question_followed_commented">
@@ -183,7 +183,7 @@
         <target>阅读回答</target>
       </trans-unit>
       <trans-unit id="4938" resname="push_data" restype="string" datatype="x-yaml" x-context="member_question_followed_commented">
-        <source>%1 comments on %2&apos;s %3 to a %4 you’re following: “%5”. Read comment</source>
+        <source>%1 comments on %2's %3 to a %4 you’re following: “%5”. Read comment</source>
         <target>%1评论%4正在关注的%2的%3“%5”.阅读评论</target>
       </trans-unit>
       <trans-unit id="4939" resname="subject" restype="string" datatype="x-yaml" x-context="member_consult_summary_message">
@@ -199,7 +199,7 @@
         <target>查看%1的回复</target>
       </trans-unit>
       <trans-unit id="4942" resname="push_data" restype="string" datatype="x-yaml" x-context="member_consult_summary_message">
-        <source>%1 responded to your consult! View %1&apos;s response</source>
+        <source>%1 responded to your consult! View %1's response</source>
         <target>%1回复了您的咨询！查看%1的回复</target>
       </trans-unit>
       <trans-unit id="4943" resname="category" restype="string" datatype="x-yaml" x-context="member_consult_summary_message">
@@ -415,16 +415,16 @@
         <target>好消息！医生现在在未来的两分钟内可以与您交谈。现在回答</target>
       </trans-unit>
       <trans-unit id="4996" resname="subject" restype="string" datatype="x-yaml" x-context="feel_good_moment_shared">
-        <source>%1,  a HealthTap customer shared your FeelGood:&#41; moment!</source>
-        <target>%1,  一位HealthTap客户分享了您的FeelGood:&#41;瞬间！</target>
+        <source>%1,  a HealthTap customer shared your FeelGood:) moment!</source>
+        <target>%1,  一位HealthTap客户分享了您的FeelGood:)瞬间！</target>
       </trans-unit>
       <trans-unit id="4997" resname="body" restype="string" datatype="x-yaml" x-context="feel_good_moment_shared">
         <source>HealthTap would  like to thank you for all the important contributions you make as an Influencer!</source>
         <target>HealthTap希望感谢您作为影响者所做的所有重要贡献！</target>
       </trans-unit>
       <trans-unit id="4998" resname="ctoa" restype="string" datatype="x-yaml" x-context="feel_good_moment_shared">
-        <source>Post another FeelGood:&#41; moment!»</source>
-        <target>发布另一个FeelGood:&#41;瞬间！»</target>
+        <source>Post another FeelGood:) moment!»</source>
+        <target>发布另一个FeelGood:)瞬间！»</target>
       </trans-unit>
       <trans-unit id="4999" resname="subject" restype="string" datatype="x-yaml" x-context="feel_good_moment_thanked">
         <source>%1,  a HealthTap customer thanked you!</source>
@@ -435,8 +435,8 @@
         <target>我们要感谢您作为影响者所做的所有重要贡献--和我们一位客户的同意！</target>
       </trans-unit>
       <trans-unit id="5001" resname="ctoa" restype="string" datatype="x-yaml" x-context="feel_good_moment_thanked">
-        <source>Post another FeelGood:&#41; moment!»</source>
-        <target>发布另一个FeelGood:&#41;瞬间！»</target>
+        <source>Post another FeelGood:) moment!»</source>
+        <target>发布另一个FeelGood:)瞬间！»</target>
       </trans-unit>
       <trans-unit id="5002" resname="subject" restype="string" datatype="x-yaml" x-context="doctor_came_online_individual">
         <source>Good news!</source>
@@ -463,16 +463,16 @@
         <target>喜爱HealthTap吗？我们也爱您！</target>
       </trans-unit>
       <trans-unit id="5008" resname="body" restype="string" datatype="x-yaml" x-context="member_marketing_rate_app">
-        <source>Help rate us 5-stars on “%1” and spread the love :&#41;</source>
-        <target>在“%1”帮助评价我们5星并传播爱意 :&#41;</target>
+        <source>Help rate us 5-stars on “%1” and spread the love :)</source>
+        <target>在“%1”帮助评价我们5星并传播爱意 :)</target>
       </trans-unit>
       <trans-unit id="5009" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_marketing_rate_app">
         <source>Rate HealthTap 5-stars</source>
         <target>评价HealthTap 5星</target>
       </trans-unit>
       <trans-unit id="5010" resname="push_data" restype="string" datatype="x-yaml" x-context="member_marketing_rate_app">
-        <source>Loving HealthTap? We love you too! Help rate us 5-stars on “%1”  and spread the love :&#41;</source>
-        <target>喜爱HealthTap吗？我们也爱您！在“%1”帮助评价我们5星并传播爱意 :&#41;</target>
+        <source>Loving HealthTap? We love you too! Help rate us 5-stars on “%1”  and spread the love :)</source>
+        <target>喜爱HealthTap吗？我们也爱您！在“%1”帮助评价我们5星并传播爱意 :)</target>
       </trans-unit>
       <trans-unit id="5011" resname="push_data" restype="string" datatype="x-yaml" x-context="member_marketing_rate_app_consult_high_rating">
         <source>Was %1 helpful? Rate the app on %2!</source>
@@ -483,16 +483,16 @@
         <target>生日快乐！</target>
       </trans-unit>
       <trans-unit id="5013" resname="body" restype="string" datatype="x-yaml" x-context="happy_birthday">
-        <source>We wish you health, happiness, and prosperity this year and for many more to come :&#41;</source>
-        <target>我们祝您今年以及接下来的很多年都可以健康，快乐和幸福 :&#41;</target>
+        <source>We wish you health, happiness, and prosperity this year and for many more to come :)</source>
+        <target>我们祝您今年以及接下来的很多年都可以健康，快乐和幸福 :)</target>
       </trans-unit>
       <trans-unit id="5014" resname="ctoa" restype="string" datatype="x-yaml" x-context="happy_birthday">
         <source>Set a health goal</source>
         <target>设置一个健康目标</target>
       </trans-unit>
       <trans-unit id="5015" resname="push_data" restype="string" datatype="x-yaml" x-context="happy_birthday">
-        <source>Happy Birthday! We wish you health, happiness, and prosperity this year and for many more to come :&#41;</source>
-        <target>生日快乐！我们祝您今年以及接下来的很多年都可以健康，快乐和幸福 :&#41;</target>
+        <source>Happy Birthday! We wish you health, happiness, and prosperity this year and for many more to come :)</source>
+        <target>生日快乐！我们祝您今年以及接下来的很多年都可以健康，快乐和幸福 :)</target>
       </trans-unit>
       <trans-unit id="5016" resname="subject" restype="string" datatype="x-yaml" x-context="member_action_reminder">
         <source>Reminder from %1%2:</source>
@@ -555,7 +555,7 @@
         <target>%1也在%2创建了清单。</target>
       </trans-unit>
       <trans-unit id="5031" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_checklist_created">
-        <source>View %1&apos;s checklist</source>
+        <source>View %1's checklist</source>
         <target>查看%1的清单</target>
       </trans-unit>
       <trans-unit id="5032" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_checklist_created">
@@ -619,11 +619,11 @@
         <target>患者%1正在请求与%2现在%3的一次实时咨询。</target>
       </trans-unit>
       <trans-unit id="5047" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_liveconsult_incoming_offline_backups">
-        <source>A premium member %1, from %2  is requesting a Live Consult while all the on-call doctors are busy. Please mark yourself &quot;Available&quot; and we&apos;ll route the patient to the first doctor to respond. Thank you</source>
+        <source>A premium member %1, from %2  is requesting a Live Consult while all the on-call doctors are busy. Please mark yourself "Available" and we'll route the patient to the first doctor to respond. Thank you</source>
         <target>当随传随到的医生忙碌时，来自%2的一位高级会员%1请求一次实时咨询。请标记自己“空闲”，我们会将患者送到第一名医生回复。谢谢</target>
       </trans-unit>
       <trans-unit id="5048" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_liveconsult_incoming_offline_backups">
-        <source>HealthTap - A premium member %1, from %2 is requesting a Live Consult while all the on-call doctors are busy. Please mark yourself &quot;Available&quot; and we&apos;ll route the patient to the first doctor to respond. Thank you</source>
+        <source>HealthTap - A premium member %1, from %2 is requesting a Live Consult while all the on-call doctors are busy. Please mark yourself "Available" and we'll route the patient to the first doctor to respond. Thank you</source>
         <target>HealthTap - 当随传随到的医生忙碌时，来自%2的一位高级会员%1请求一次实时咨询。请标记自己“空闲”，我们会将患者送到第一名医生回复。谢谢</target>
       </trans-unit>
       <trans-unit id="5049" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_compose_consult">
@@ -707,7 +707,7 @@
         <target>温馨提醒：您已经承诺在一小时内开始的班次。</target>
       </trans-unit>
       <trans-unit id="5069" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_concierge_reminder_shift_coming">
-        <source>Friendly reminder: You&apos;ve committed to a Concierge shift that begins in one hour. Please make sure to log in and set yourself as available by then.</source>
+        <source>Friendly reminder: You've committed to a Concierge shift that begins in one hour. Please make sure to log in and set yourself as available by then.</source>
         <target>温馨提醒：您已经承诺在一小时内开始的贵宾台班次。请确保登录并将自己设置为空闲。</target>
       </trans-unit>
       <trans-unit id="5070" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_concierge_reminder_shift_coming">
@@ -747,7 +747,7 @@
         <target>%1现在包括了您的班次</target>
       </trans-unit>
       <trans-unit id="5079" resname="body" restype="string" datatype="x-yaml" x-context="late_expert_arrives">
-        <source>We didn&apos;t see you online at the start of your shift, so we asked %1 to cover for you until %2. However, you can still become available and see overflow patients as needed. Would you like to do this instead?</source>
+        <source>We didn't see you online at the start of your shift, so we asked %1 to cover for you until %2. However, you can still become available and see overflow patients as needed. Would you like to do this instead?</source>
         <target>我们在您的班次开始时没有看到您在线，因此我们要求%1为您包括直到%2。然而，您仍可以空出时间，按需接诊超量的患者。您愿意这么做吗？</target>
       </trans-unit>
       <trans-unit id="5080" resname="0" restype="string" datatype="x-yaml" x-context="late_expert_arrives@ctoa">
@@ -827,7 +827,7 @@
         <target>查看处方</target>
       </trans-unit>
       <trans-unit id="5099" resname="push_data" restype="string" datatype="x-yaml" x-context="member_consult_prescription_sent">
-        <source>Your prescription from %1 was sent to %2 &#40;Pharmacy Phone %3&#41;</source>
+        <source>Your prescription from %1 was sent to %2 (Pharmacy Phone %3)</source>
         <target>您从%1开出的处方已发送到%2（药房电话%3）</target>
       </trans-unit>
       <trans-unit id="5100" resname="email_subject" restype="string" datatype="x-yaml" x-context="member_influencer_member_followed">
@@ -843,8 +843,8 @@
         <target>您在做您的一部分以帮助人们微笑和feel good！</target>
       </trans-unit>
       <trans-unit id="5103" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_influencer_member_followed">
-        <source>Post another article or FeelGood:&#41; moment!</source>
-        <target>发布另一篇文章或FeelGood:&#41;瞬间！»</target>
+        <source>Post another article or FeelGood:) moment!</source>
+        <target>发布另一篇文章或FeelGood:)瞬间！»</target>
       </trans-unit>
       <trans-unit id="5104" resname="push_data" restype="string" datatype="x-yaml" x-context="member_influencer_member_followed">
         <source>%1, another HealthTap member is following you!</source>
@@ -939,12 +939,12 @@
         <target>%1，HealthTap的关注者感谢您的FeelGood瞬间！查看FeelGood时刻</target>
       </trans-unit>
       <trans-unit id="5127" resname="email_subject" restype="string" datatype="x-yaml" x-context="member_influencer_fg_shared">
-        <source>Feel good, %1! A follower shared your FeelGood:&#41; moment!</source>
-        <target>感觉良好，%1！一位关注者分享了您的FeelGood:&#41;瞬间！</target>
+        <source>Feel good, %1! A follower shared your FeelGood:) moment!</source>
+        <target>感觉良好，%1！一位关注者分享了您的FeelGood:)瞬间！</target>
       </trans-unit>
       <trans-unit id="5128" resname="subject" restype="string" datatype="x-yaml" x-context="member_influencer_fg_shared">
         <source>%1, a follower shared your FeelGood moment!</source>
-        <target>%1，一位关注者分享了您的FeelGood:&#41;瞬间！</target>
+        <target>%1，一位关注者分享了您的FeelGood:)瞬间！</target>
       </trans-unit>
       <trans-unit id="5129" resname="body" restype="string" datatype="x-yaml" x-context="member_influencer_fg_shared">
         <source>“%1”</source>
@@ -956,7 +956,7 @@
       </trans-unit>
       <trans-unit id="5131" resname="push_data" restype="string" datatype="x-yaml" x-context="member_influencer_fg_shared">
         <source>%1, a follower shared your FeelGood moment! View FeelGood moment</source>
-        <target>%1，一位关注者分享了您的FeelGood:&#41;瞬间！查看FeelGood时刻</target>
+        <target>%1，一位关注者分享了您的FeelGood:)瞬间！查看FeelGood时刻</target>
       </trans-unit>
       <trans-unit id="5132" resname="subject" restype="string" datatype="x-yaml" x-context="doctor_news_helpful">
         <source>Helpful article!</source>
@@ -1679,11 +1679,11 @@
         <target>HealthTap - 您在已承诺班次期间似乎处于离线状态。请返回HealthTap并将自己切换为空闲。</target>
       </trans-unit>
       <trans-unit id="5312" resname="subject" restype="string" datatype="x-yaml" x-context="member_appointment_reminder">
-        <source>Reminder: %1&apos;s virtual appointment</source>
+        <source>Reminder: %1's virtual appointment</source>
         <target>提醒：%1的在线预约</target>
       </trans-unit>
       <trans-unit id="5313" resname="body" restype="string" datatype="x-yaml" x-context="member_appointment_reminder">
-        <source>%2&apos;s virtual appointment with %1 starts right now.</source>
+        <source>%2's virtual appointment with %1 starts right now.</source>
         <target>%2与%1的在线预约现在开始。</target>
       </trans-unit>
       <trans-unit id="5314" resname="push_data" restype="string" datatype="x-yaml" x-context="member_appointment_reminder">
@@ -1715,7 +1715,7 @@
         <target>重新安排预约</target>
       </trans-unit>
       <trans-unit id="5321" resname="subject" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_reminder">
-        <source>Reminder: %1&apos;s virtual appointment on HealthTap</source>
+        <source>Reminder: %1's virtual appointment on HealthTap</source>
         <target>提醒：%1在HealthTap的在线预约</target>
       </trans-unit>
       <trans-unit id="5322" resname="push_data" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_reminder">
@@ -1731,7 +1731,7 @@
         <target>提醒：在%2%3太平洋标准时间的%1的在线预约。请在当时可以登录HealthTap。</target>
       </trans-unit>
       <trans-unit id="5325" resname="body" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_reminder">
-        <source>Reminder: %4&apos;s virtual appointment with %1 on %2 at %3. Please log onto HealthTap five minutes before your appointment.</source>
+        <source>Reminder: %4's virtual appointment with %1 on %2 at %3. Please log onto HealthTap five minutes before your appointment.</source>
         <target>提醒：在%2%3与%1的%4的在线预约。请在预约五分钟前登录HealthTap。</target>
       </trans-unit>
       <trans-unit id="5326" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_appointment_reminder">
@@ -1795,12 +1795,12 @@
         <target>立即连接</target>
       </trans-unit>
       <trans-unit id="5341" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_prime_incoming_online">
-        <source>A patient needs your help now &#40;%1&#41; via a Live Consult on HealthTap. You have %2 to accept the consult.</source>
-        <target>通过HealthTap的实时咨询，患者现在&#40;%1&#41;需要您的帮助。您有%2接受咨询。</target>
+        <source>A patient needs your help now (%1) via a Live Consult on HealthTap. You have %2 to accept the consult.</source>
+        <target>通过HealthTap的实时咨询，患者现在(%1)需要您的帮助。您有%2接受咨询。</target>
       </trans-unit>
       <trans-unit id="5342" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_prime_incoming_online">
-        <source>A patient needs your help now &#40;%1&#41; via a Live Consult on HealthTap. You have %2 to accept the consult.</source>
-        <target>通过HealthTap的实时咨询，患者现在&#40;%1&#41;需要您的帮助。您有%2接受咨询。</target>
+        <source>A patient needs your help now (%1) via a Live Consult on HealthTap. You have %2 to accept the consult.</source>
+        <target>通过HealthTap的实时咨询，患者现在(%1)需要您的帮助。您有%2接受咨询。</target>
       </trans-unit>
       <trans-unit id="5343" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_concierge_inbox_new">
         <source>One of your patients, %1, sent you an Inbox Consult. Please reply within 24 hours.</source>
@@ -1843,8 +1843,8 @@
         <target>%1，我在这里提供帮助！来自您的HealthTap咨询的反馈</target>
       </trans-unit>
       <trans-unit id="5353" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_concierge_appointment_missed">
-        <source>You missed an appointment with %1 &#40;%2&#41;. Please contact %3 if we can help in any way http://htap.us/tuiqi</source>
-        <target>您错过了与%1 &#40;%2&#41;的预约。如果我们可以提供任何帮助http://htap.us/tuiqi，请与%3联系</target>
+        <source>You missed an appointment with %1 (%2). Please contact %3 if we can help in any way http://htap.us/tuiqi</source>
+        <target>您错过了与%1 (%2)的预约。如果我们可以提供任何帮助http://htap.us/tuiqi，请与%3联系</target>
       </trans-unit>
       <trans-unit id="5354" resname="sms_data" restype="string" datatype="x-yaml" x-context="doctor_concierge_appointment_coming">
         <source>HealthTap - REMINDER: Upcoming appointment with %1 starts in 5 minutes. Please mark yourself as “Available” now:</source>
@@ -1919,7 +1919,7 @@
         <target>%1:让我们连接一次介绍性咨询，看看我可以如何帮助您。接受邀请</target>
       </trans-unit>
       <trans-unit id="5372" resname="body" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_invitation_intro_0days">
-        <source>I&apos;d love to learn more about you to see if I can help you. Would you like to schedule a live video chat or send a secure message?</source>
+        <source>I'd love to learn more about you to see if I can help you. Would you like to schedule a live video chat or send a secure message?</source>
         <target>我希望了解更多关于您的信息，看看我是否可以帮助您。您希望安排视频实时聊天或发送安全信息吗？</target>
       </trans-unit>
       <trans-unit id="5373" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_invitation_intro_0days">
@@ -1935,7 +1935,7 @@
         <target>如果您有任何问题，%1邀请您发送安全的私人信息</target>
       </trans-unit>
       <trans-unit id="5376" resname="body" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_invitation_intro_14days">
-        <source>Have a question that you need answered outside of the doctor&apos;s Virtual Practice hours? You can always send %1 a private message and the doctor will answer your question as quickly as possible.</source>
+        <source>Have a question that you need answered outside of the doctor's Virtual Practice hours? You can always send %1 a private message and the doctor will answer your question as quickly as possible.</source>
         <target>有您需要在医生的在线诊疗时间外回答的问题吗？您可以随时发送%1的私人消息，医生会尽快回答您的问题。</target>
       </trans-unit>
       <trans-unit id="5377" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_invitation_intro_14days">
@@ -1951,7 +1951,7 @@
         <target>如果您有任何问题，%1邀请您发送安全的私人信息</target>
       </trans-unit>
       <trans-unit id="5380" resname="body" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_invitation_intro_7days">
-        <source>Have a question that you need answered outside of the doctor&apos;s Virtual Practice hours? You can always send %1 a private message and the doctor will answer your question as quickly as possible.</source>
+        <source>Have a question that you need answered outside of the doctor's Virtual Practice hours? You can always send %1 a private message and the doctor will answer your question as quickly as possible.</source>
         <target>有您需要在医生的在线诊疗时间外回答的问题吗？您可以随时发送%1的私人消息，医生会尽快回答您的问题。</target>
       </trans-unit>
       <trans-unit id="5381" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_invitation_intro_7days">
@@ -2003,7 +2003,7 @@
         <target>每当您需要它时，%1在这里提供帮助。您希望询问%2问题吗？</target>
       </trans-unit>
       <trans-unit id="5393" resname="body" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_activation_30days">
-        <source>If you have a health question, either schedule an appointment during %1&apos;s Virtual Practice hours or send a direct message if you have a question outside these hours.</source>
+        <source>If you have a health question, either schedule an appointment during %1's Virtual Practice hours or send a direct message if you have a question outside these hours.</source>
         <target>如果您有健康问题，请在%1的在线诊疗时间安排预约，如果您在这些时间以外有问题，请直接发送邮件。</target>
       </trans-unit>
       <trans-unit id="5394" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_activation_30days">
@@ -2019,8 +2019,8 @@
         <target>r</target>
       </trans-unit>
       <trans-unit id="5397" resname="push_data" restype="string" datatype="x-yaml" x-context="member_receive_kudos">
-        <source>%1 sent you a message :&#41;.</source>
-        <target>%1给您发送了一条消息:&#41;。</target>
+        <source>%1 sent you a message :).</source>
+        <target>%1给您发送了一条消息:)。</target>
       </trans-unit>
       <trans-unit id="5398" resname="category" restype="string" datatype="x-yaml" x-context="member_receive_kudos">
         <source>k</source>
@@ -2179,7 +2179,7 @@
         <target>根据您的兴趣，我们已将您与%1匹配！立即连接实时视频咨询</target>
       </trans-unit>
       <trans-unit id="5437" resname="push_data" restype="string" datatype="x-yaml" x-context="member_doctor_invitation_v1">
-        <source>You’ve been invited to join %1&apos;s virtual practice! Accept invitation</source>
+        <source>You’ve been invited to join %1's virtual practice! Accept invitation</source>
         <target>您已被邀请加入%1的在线诊疗！接受邀请</target>
       </trans-unit>
       <trans-unit id="5438" resname="push_data" restype="string" datatype="x-yaml" x-context="member_doctor_invitation_v2">
@@ -2187,7 +2187,7 @@
         <target>您有来自%1的待处理邀请需要在线连接。接受邀请</target>
       </trans-unit>
       <trans-unit id="5439" resname="push_data" restype="string" datatype="x-yaml" x-context="member_doctor_invitation_v3">
-        <source>%1 is waiting to hear back from you. Accept the doctor&apos;s invitation to connect</source>
+        <source>%1 is waiting to hear back from you. Accept the doctor's invitation to connect</source>
         <target>%1正在等待您的回复。接受医生的邀请连接</target>
       </trans-unit>
       <trans-unit id="5440" resname="push_data" restype="string" datatype="x-yaml" x-context="member_doctor_invitation_v4">
@@ -2195,7 +2195,7 @@
         <target>%1希望成为您的在线医生。接受邀请</target>
       </trans-unit>
       <trans-unit id="5441" resname="push_data" restype="string" datatype="x-yaml" x-context="member_question_before_answer">
-        <source>Would you like ask some other doctors who is %1&apos;s colleagues</source>
+        <source>Would you like ask some other doctors who is %1's colleagues</source>
         <target>您希望询问一些其他医生吗，他们是%1的同事</target>
       </trans-unit>
       <trans-unit id="5442" resname="sms_data" restype="string" datatype="x-yaml" x-context="officestaff_concierge_appointment_coming">
@@ -2251,7 +2251,7 @@
         <target>%1</target>
       </trans-unit>
       <trans-unit id="5455" resname="subject" restype="string" datatype="x-yaml" x-context="member_marketing_specialist_online">
-        <source>%1: &quot;Can I help you?&quot;</source>
+        <source>%1: "Can I help you?"</source>
         <target>%1:“我可以帮助您吗？”</target>
       </trans-unit>
       <trans-unit id="5456" resname="body" restype="string" datatype="x-yaml" x-context="member_marketing_specialist_online">
@@ -2271,7 +2271,7 @@
         <target>m</target>
       </trans-unit>
       <trans-unit id="5460" resname="subject" restype="string" datatype="x-yaml" x-context="member_marketing_second_opinion_specialist_online">
-        <source>%1: &quot;Can I help you?&quot;</source>
+        <source>%1: "Can I help you?"</source>
         <target>%1:“我可以帮助您吗？”</target>
       </trans-unit>
       <trans-unit id="5461" resname="body" restype="string" datatype="x-yaml" x-context="member_marketing_second_opinion_specialist_online">
@@ -2295,8 +2295,8 @@
         <target>%1，对%2感兴趣？</target>
       </trans-unit>
       <trans-unit id="5466" resname="body" restype="string" datatype="x-yaml" x-context="question_page_when_doctor_unavailable">
-        <source>Many users with similar interests found the answer to the following question helpful: &quot;%1&quot;</source>
-        <target>许多具有相似兴趣的用户发现以下问题的回答有帮助：“%1&quot;</target>
+        <source>Many users with similar interests found the answer to the following question helpful: "%1"</source>
+        <target>许多具有相似兴趣的用户发现以下问题的回答有帮助：“%1"</target>
       </trans-unit>
       <trans-unit id="5467" resname="ctoa" restype="string" datatype="x-yaml" x-context="question_page_when_doctor_unavailable">
         <source>View Answer</source>
@@ -2431,11 +2431,11 @@
         <target>您的检验结果已准备就绪。立即查看他们</target>
       </trans-unit>
       <trans-unit id="5500" resname="push_data" restype="string" datatype="x-yaml" x-context="member_consult_app_backgrounded">
-        <source>You just left in the middle of a live %1 chat consult. If you didn&apos;t already inform the %2 that you would return shortly, please do so now so the %2 knows what to expect.</source>
+        <source>You just left in the middle of a live %1 chat consult. If you didn't already inform the %2 that you would return shortly, please do so now so the %2 knows what to expect.</source>
         <target>您刚刚在实时%1聊天咨询中离开。如果您没有通知%2您会很快返回，请立即这样做，以便%2知道接下来会发生什么。</target>
       </trans-unit>
       <trans-unit id="5501" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_consult_app_backgrounded">
-        <source>You just left in the middle of a live %1 chat consult. If you didn&apos;t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
+        <source>You just left in the middle of a live %1 chat consult. If you didn't already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
         <target>您刚刚在实时%1聊天咨询中离开。如果您没有通知患者您会很快返回，请立即这样做，以便患者知道接下来会发生什么。</target>
       </trans-unit>
       <trans-unit id="5502" resname="push_data" restype="string" datatype="x-yaml" x-context="member_consult_app_backgrounded_newmessage">

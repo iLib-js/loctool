@@ -3,24 +3,24 @@
   <file original="feelgood/iPadNative/Goals/FGGoalsBaseViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" restype="string" datatype="x-objective-c">
-        <source>We&apos;ll share more tips and checklists to help you with &quot;%@&quot;</source>
-        <target state="translated">Compartiremos más consejos y listados para ayudarte con &quot;%@&quot;</target>
+        <source>We'll share more tips and checklists to help you with "%@"</source>
+        <target state="translated">Compartiremos más consejos y listados para ayudarte con "%@"</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/iPadNative/Checklist/FGIpadChecklistViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="2" resname="Do you want to remove this action from your &quot;To Do&quot; list?" restype="string" datatype="x-objective-c">
-        <source>Do you want to remove this action from your &quot;To Do&quot; list?</source>
-        <target state="translated">¿Quieres quitar esta acción de tu lista de &quot;Por hacer&quot;?</target>
+        <source>Do you want to remove this action from your "To Do" list?</source>
+        <target state="translated">¿Quieres quitar esta acción de tu lista de "Por hacer"?</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTRateConsultCommentsViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="29" resname="Please provide details regarding &quot;%@&quot; &#40;Optional&#41;" restype="string" datatype="x-objective-c">
-        <source>Please provide details regarding &quot;%@&quot; &#40;Optional&#41;</source>
-        <target state="translated">Por favor, proporciona detalles respecto a &quot;%@&quot; &#40;Opcional&#41;</target>
+      <trans-unit id="29" resname="Please provide details regarding &quot;%@&quot; (Optional)" restype="string" datatype="x-objective-c">
+        <source>Please provide details regarding "%@" (Optional)</source>
+        <target state="translated">Por favor, proporciona detalles respecto a "%@" (Opcional)</target>
       </trans-unit>
     </body>
   </file>
