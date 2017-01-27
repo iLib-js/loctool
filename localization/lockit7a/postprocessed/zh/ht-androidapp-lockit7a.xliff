@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="2" resname="r111630367" restype="string" datatype="java">
         <source>Turn on reminders</source>
-        <target>打开提醒</target>
+        <target state="translated">打开提醒</target>
       </trans-unit>
     </body>
   </file>
@@ -16,7 +16,7 @@
     <body>
       <trans-unit id="7" resname="r948339101" restype="string" datatype="java">
         <source>You're awesome</source>
-        <target>您真厉害</target>
+        <target state="translated">您真厉害</target>
       </trans-unit>
     </body>
   </file>
@@ -24,7 +24,7 @@
     <body>
       <trans-unit id="16" resname="r635494459" restype="string" datatype="java">
         <source>{name} appreciates your gratitude :)</source>
-        <target>{name} 感谢您的谢意:)</target>
+        <target state="translated">{name} 感谢您的谢意:)</target>
       </trans-unit>
     </body>
   </file>
@@ -32,7 +32,7 @@
     <body>
       <trans-unit id="17" resname="r541597638" restype="string" datatype="java">
         <source>Apps</source>
-        <target>应用程序</target>
+        <target state="translated">应用程序</target>
       </trans-unit>
     </body>
   </file>
@@ -40,7 +40,7 @@
     <body>
       <trans-unit id="18" resname="r382213733" restype="string" datatype="java">
         <source>We appreciate you bringing this to our attention.</source>
-        <target>我们感谢您提醒我们注意。</target>
+        <target state="translated">我们感谢您提醒我们注意。</target>
       </trans-unit>
     </body>
   </file>
@@ -48,19 +48,19 @@
     <body>
       <trans-unit id="24" resname="symptom_triage_condition_alert" restype="string" datatype="x-android-resource">
         <source>Would you like to start over with new symptoms or edit your current symptoms?</source>
-        <target>您希望重新开始新的症状还是编辑您的当前症状？</target>
+        <target state="translated">您希望重新开始新的症状还是编辑您的当前症状？</target>
       </trans-unit>
       <trans-unit id="25" resname="symptom_triage_condition_alert_positive" restype="string" datatype="x-android-resource">
         <source>Leave</source>
-        <target>离开</target>
+        <target state="translated">离开</target>
       </trans-unit>
       <trans-unit id="26" resname="symptom_triage_condition_alert_negative" restype="string" datatype="x-android-resource">
         <source>Edit Symptoms</source>
-        <target>编辑症状</target>
+        <target state="translated">编辑症状</target>
       </trans-unit>
       <trans-unit id="27" resname="symptom_triage_condition_alert_title" restype="string" datatype="x-android-resource">
         <source>Start over?</source>
-        <target>重新开始？</target>
+        <target state="translated">重新开始？</target>
       </trans-unit>
     </body>
   </file>
