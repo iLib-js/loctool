@@ -12,4 +12,28 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocUpgradeForSubAccountViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Update Subscription" restype="string" datatype="x-objective-c">
+        <source>Update Subscription</source>
+        <target state="accepted">更新您的会员计划</target>
+      </trans-unit>
+      <trans-unit id="2" resname="To ask for %@, please" restype="string" datatype="x-objective-c">
+        <source>To ask for %@, please</source>
+        <target state="accepted">想要咨询 %@，请</target>
+      </trans-unit>
+      <trans-unit id="3" resname="add %@ to your account" restype="string" datatype="x-objective-c">
+        <source>add %@ to your account</source>
+        <target state="accepted">添加 %@ 到您的账户</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Add %@" restype="string" datatype="x-objective-c">
+        <source>Add %@</source>
+        <target state="accepted">添加 %@</target>
+      </trans-unit>
+      <trans-unit id="5" resname="Only US $%@ / month" restype="string" datatype="x-objective-c">
+        <source>Only US $%@ / month</source>
+        <target state="accepted">每月只需 %@ 美元</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
