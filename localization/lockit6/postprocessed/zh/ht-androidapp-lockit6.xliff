@@ -408,7 +408,7 @@
   <file original="src/com/healthtap/userhtexpress/model/search/SearchResultAppNews.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="74" resname="r368448102" restype="string" datatype="java">
-        <source>iOS & Android App</source>
+        <source>iOS &amp; Android App</source>
         <target>iOS和Android应用程序</target>
       </trans-unit>
       <trans-unit id="75" resname="r49572776" restype="string" datatype="java">
@@ -877,7 +877,7 @@
   <file original="src/com/healthtap/userhtexpress/fragments/profiles/ProfileConditionSymptomsFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="160" resname="r898649411" restype="string" datatype="java">
-        <source>Conditions & Symptoms</source>
+        <source>Conditions &amp; Symptoms</source>
         <target>病症和症状</target>
       </trans-unit>
     </body>
@@ -954,12 +954,12 @@
   <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscribePaymentFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="172" resname="r976932793" restype="string" datatype="java">
-        <source>&lt;b&gt;Your total&lt;/b&gt;&lt;b&gt;No commitment, cancel anytime</source>
-        <target>&lt;b&gt;您的总计&lt;/b&gt;&lt;b&gt;无约束，随时可退订</target>
+        <source>&amp;lt;b&amp;gt;Your total&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;No commitment, cancel anytime</source>
+        <target>&amp;lt;b&amp;gt;您的总计&amp;lt;/b&amp;gt;&amp;lt;b&amp;gt;无约束，随时可退订</target>
       </trans-unit>
       <trans-unit id="173" resname="r844357829" restype="string" datatype="java">
-        <source>&lt;b&gt;Your total for 1 consult&lt;/b&gt;</source>
-        <target>&lt;b&gt;1次咨询总计&lt;/b&gt;</target>
+        <source>&amp;lt;b&amp;gt;Your total for 1 consult&amp;lt;/b&amp;gt;</source>
+        <target>&amp;lt;b&amp;gt;1次咨询总计&amp;lt;/b&amp;gt;</target>
       </trans-unit>
       <trans-unit id="174" resname="r343887672" restype="string" datatype="java">
         <source>Prime consult</source>
@@ -1046,7 +1046,7 @@
   <file original="src/com/healthtap/userhtexpress/fragments/payment/OnetimePayFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="192" resname="r317602886" restype="string" datatype="java">
-        <source>Pay & Send</source>
+        <source>Pay &amp; Send</source>
         <target>支付并发送</target>
       </trans-unit>
       <trans-unit id="193" resname="r626068628" restype="string" datatype="java">
@@ -1525,8 +1525,8 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/CareTeamTabFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="275" resname="r142513993" restype="string" datatype="java">
-        <source>Practicing: &lt;b&gt;</source>
-        <target>诊疗中：&lt;b&gt;</target>
+        <source>Practicing: &amp;lt;b&amp;gt;</source>
+        <target>诊疗中：&amp;lt;b&amp;gt;</target>
       </trans-unit>
       <trans-unit id="276" resname="r36845865" restype="string" datatype="java">
         <source>HealthTap Honor</source>
@@ -2207,8 +2207,8 @@
         <target>专攻{known_for_topic_name}</target>
       </trans-unit>
       <trans-unit id="394" resname="r758898992" restype="string" datatype="java">
-        <source>Here's a referral to a {expert_specialty} &lt;b&gt;{expert_name}&lt;/b&gt;, you can consult for advice and treatment:</source>
-        <target>以下是对{expert_specialty} &lt;b&gt;{expert_name}&lt;/b&gt;的转诊，您可以就建议和治疗进行咨询：</target>
+        <source>Here's a referral to a {expert_specialty} &amp;lt;b&amp;gt;{expert_name}&amp;lt;/b&amp;gt;, you can consult for advice and treatment:</source>
+        <target>以下是对{expert_specialty} &amp;lt;b&amp;gt;{expert_name}&amp;lt;/b&amp;gt;的转诊，您可以就建议和治疗进行咨询：</target>
       </trans-unit>
       <trans-unit id="395" resname="r964861592" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>

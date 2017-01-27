@@ -95,7 +95,7 @@
         <target>{user_name}为您进行的HealthTap医生咨询赠予了${price}优惠</target>
       </trans-unit>
       <trans-unit id="21" resname="gift_refer_linkedin_summary" restype="string" datatype="x-android-resource">
-        <source>Get ${price} off video or text chat consults with your doctor or specialist on healthtap—advice & prescriptions! :)</source>
+        <source>Get ${price} off video or text chat consults with your doctor or specialist on healthtap—advice &amp; prescriptions! :)</source>
         <target>在HealthTap上通过视频或文本聊天咨询您的医生或专科医生并获取建议和处方，可享受${price}优惠！:)</target>
       </trans-unit>
       <trans-unit id="22" resname="symptom_triage_instructional_phr_title" restype="string" datatype="x-android-resource">

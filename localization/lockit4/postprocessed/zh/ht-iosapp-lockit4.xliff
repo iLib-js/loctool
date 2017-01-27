@@ -234,8 +234,8 @@
         <source>Talk to doctors on any device 24/7</source>
         <target>可以24/7全天候在任何设备上和医生交谈</target>
       </trans-unit>
-      <trans-unit id="46" resname="Treatments, referrals, reminders, tips & news" restype="string" datatype="x-objective-c">
-        <source>Treatments, referrals, reminders, tips & news</source>
+      <trans-unit id="46" resname="Treatments, referrals, reminders, tips &amp; news" restype="string" datatype="x-objective-c">
+        <source>Treatments, referrals, reminders, tips &amp; news</source>
         <target>治疗、转诊、提醒、小贴士和新闻</target>
       </trans-unit>
       <trans-unit id="47" resname="Share photos and chat with doctors via video/text" restype="string" datatype="x-objective-c">
@@ -856,8 +856,8 @@
         <source>Personalized, timely</source>
         <target>个性化，及时</target>
       </trans-unit>
-      <trans-unit id="144" resname=" advice & reminders" restype="string" datatype="x-objective-c">
-        <source>advice & reminders</source>
+      <trans-unit id="144" resname=" advice &amp; reminders" restype="string" datatype="x-objective-c">
+        <source>advice &amp; reminders</source>
         <target>建议和提醒</target>
       </trans-unit>
       <trans-unit id="145" resname="Only US $ " restype="string" datatype="x-objective-c">
@@ -1092,8 +1092,8 @@
         <source>Basic Info</source>
         <target>基本信息</target>
       </trans-unit>
-      <trans-unit id="201" resname="Conditions & Symptoms" restype="string" datatype="x-objective-c">
-        <source>Conditions & Symptoms</source>
+      <trans-unit id="201" resname="Conditions &amp; Symptoms" restype="string" datatype="x-objective-c">
+        <source>Conditions &amp; Symptoms</source>
         <target>健康状况和症状</target>
       </trans-unit>
       <trans-unit id="202" resname="Allergies" restype="string" datatype="x-objective-c">
@@ -2022,9 +2022,9 @@
         <source>Immediate</source>
         <target>即时</target>
       </trans-unit>
-      <trans-unit id="378" resname="< 24 hrs" restype="string" datatype="x-objective-c">
-        <source>< 24 hrs</source>
-        <target><24小时</target>
+      <trans-unit id="378" resname="&lt; 24 hrs" restype="string" datatype="x-objective-c">
+        <source>&lt; 24 hrs</source>
+        <target>&lt;24小时</target>
       </trans-unit>
       <trans-unit id="379" resname="1-2 days" restype="string" datatype="x-objective-c">
         <source>1-2 days</source>
@@ -2148,7 +2148,7 @@
       </trans-unit>
       <trans-unit id="405" resname=" Update Now >" restype="string" datatype="x-objective-c">
         <source>Update Now ></source>
-        <target>现在更新></target>
+        <target>现在更新&gt;</target>
       </trans-unit>
       <trans-unit id="406" resname="Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! " restype="string" datatype="x-objective-c">
         <source>Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!</source>
@@ -2610,7 +2610,7 @@
       </trans-unit>
       <trans-unit id="491" resname="Ask Dr. ${last_name} now ›" restype="string" datatype="x-objective-c">
         <source>Ask Dr. ${last_name} now ›</source>
-        <target>询问医生$ {last_name} 现在></target>
+        <target>询问医生$ {last_name} 现在&gt;</target>
       </trans-unit>
       <trans-unit id="492" resname="36" restype="string" datatype="x-objective-c">
         <source>36</source>
@@ -2618,7 +2618,7 @@
       </trans-unit>
       <trans-unit id="493" resname="Speak with Dr. ${last_name} now ›" restype="string" datatype="x-objective-c">
         <source>Speak with Dr. ${last_name} now ›</source>
-        <target>与医生 $ {last_name}交流 现在></target>
+        <target>与医生 $ {last_name}交流 现在&gt;</target>
       </trans-unit>
       <trans-unit id="494" resname="47" restype="string" datatype="x-objective-c">
         <source>47</source>
@@ -3062,8 +3062,8 @@
         <source>Sign Up for HealthTap Prime - 24/7 access to doctors! Use this link and get $30 off.</source>
         <target>注册HealthTap Prime——可24/7全天候向医生咨询！使用此链接即可获得$30优惠。</target>
       </trans-unit>
-      <trans-unit id="577" resname="Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice & prescriptions!" restype="string" datatype="x-objective-c">
-        <source>Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice & prescriptions!</source>
+      <trans-unit id="577" resname="Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions!" restype="string" datatype="x-objective-c">
+        <source>Get $5 off video or text chat consults with your doctor or specialist on HealthTap—advice &amp; prescriptions!</source>
         <target>在HealthTap上通过视频或文本咨询您的医生或专家，将优惠5美元——建议和处方！</target>
       </trans-unit>
     </body>
@@ -3449,9 +3449,9 @@
   <file original="feelgood/Base.lproj/FGBaseSubscriptionView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="647" resname="oKS-Pc-4XA.text" restype="string" datatype="x-xib">
-        <source>Prescriptions, checklists, referrals, tips & news</source>
+        <source>Prescriptions, checklists, referrals, tips &amp; news</source>
         <target>处方、清单、转诊、小贴士与新闻</target>
-        <note annotates="source">Class = "UILabel"; text = "Prescriptions, checklists, referrals, tips & news "; ObjectID = "oKS-Pc-4XA";</note>
+        <note annotates="source">Class = "UILabel"; text = "Prescriptions, checklists, referrals, tips &amp; news "; ObjectID = "oKS-Pc-4XA";</note>
       </trans-unit>
     </body>
   </file>

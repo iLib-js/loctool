@@ -396,16 +396,16 @@
         <target>使用HealthTap的症状分类接受快速有效的医护</target>
       </trans-unit>
       <trans-unit id="2250" resname="symptom_triage_tutorial_step1" restype="string" datatype="x-android-resource">
-        <source><b>Step 1:</b>\nTap Symptoms</source>
-        <target><b>步骤1：</b>\n点击症状</target>
+        <source>&lt;b&gt;Step 1:&lt;/b&gt;\nTap Symptoms</source>
+        <target>&lt;b&gt;步骤1：&lt;/b&gt;\n点击症状</target>
       </trans-unit>
       <trans-unit id="2251" resname="symptom_triage_tutorial_step2" restype="string" datatype="x-android-resource">
-        <source><b>Step 2:</b>\nView condition report</source>
-        <target><b>步骤2：</b>\n查看病症报告</target>
+        <source>&lt;b&gt;Step 2:&lt;/b&gt;\nView condition report</source>
+        <target>&lt;b&gt;步骤2：&lt;/b&gt;\n查看病症报告</target>
       </trans-unit>
       <trans-unit id="2252" resname="symptom_triage_tutorial_step3" restype="string" datatype="x-android-resource">
-        <source><b>Step 3:</b>\nChoose care option</source>
-        <target><b>步骤3：</b>\n选择医护选项</target>
+        <source>&lt;b&gt;Step 3:&lt;/b&gt;\nChoose care option</source>
+        <target>&lt;b&gt;步骤3：&lt;/b&gt;\n选择医护选项</target>
       </trans-unit>
       <trans-unit id="2253" resname="symptom_triage_refinement_questions" restype="string" datatype="x-android-resource">
         <source>Refine symptoms</source>

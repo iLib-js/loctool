@@ -191,8 +191,8 @@
         <source>your pharmacy</source>
         <target>您的药房</target>
       </trans-unit>
-      <trans-unit id="34" resname=" advice & reminders" restype="string" datatype="x-objective-c">
-        <source>advice & reminders</source>
+      <trans-unit id="34" resname=" advice &amp; reminders" restype="string" datatype="x-objective-c">
+        <source>advice &amp; reminders</source>
         <target>建议和提醒</target>
       </trans-unit>
       <trans-unit id="35" resname="Only US $ " restype="string" datatype="x-objective-c">
@@ -733,7 +733,7 @@
       </trans-unit>
       <trans-unit id="120" resname=" Update Now >" restype="string" datatype="x-objective-c">
         <source>Update Now ></source>
-        <target>立即更新 ></target>
+        <target>立即更新 &gt;</target>
       </trans-unit>
       <trans-unit id="121" resname="Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! " restype="string" datatype="x-objective-c">
         <source>Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!</source>
@@ -1437,9 +1437,9 @@
   <file original="feelgood/Base.lproj/FGBaseSubscriptionView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="240" resname="oKS-Pc-4XA.text" restype="string" datatype="x-xib">
-        <source>Prescriptions, checklists, referrals, tips & news</source>
+        <source>Prescriptions, checklists, referrals, tips &amp; news</source>
         <target>处方、清单、转介、小贴士和新闻</target>
-        <note annotates="source">Class = "UILabel"; text = "Prescriptions, checklists, referrals, tips & news "; ObjectID = "oKS-Pc-4XA";</note>
+        <note annotates="source">Class = "UILabel"; text = "Prescriptions, checklists, referrals, tips &amp; news "; ObjectID = "oKS-Pc-4XA";</note>
       </trans-unit>
     </body>
   </file>
