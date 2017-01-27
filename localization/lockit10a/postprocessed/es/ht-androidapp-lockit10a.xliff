@@ -76,51 +76,51 @@
         <target state="translated">¿Cuántos años tenia tu otro?</target>
       </trans-unit>
       <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="16">
-        <source>How old is {first_name}\&apos;s grandson?</source>
+        <source>How old is {first_name}'s grandson?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="17">
-        <source>How old is {first_name}\&apos;s granddaughter?</source>
+        <source>How old is {first_name}'s granddaughter?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="18">
-        <source>How old is {first_name}\&apos;s stepson?</source>
+        <source>How old is {first_name}'s stepson?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="19">
-        <source>How old is {first_name}\&apos;s stepdaughter?</source>
+        <source>How old is {first_name}'s stepdaughter?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="20">
-        <source>How old is {first_name}\&apos;s nephew?</source>
+        <source>How old is {first_name}'s nephew?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="21">
-        <source>How old is {first_name}\&apos;s niece?</source>
+        <source>How old is {first_name}'s niece?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="16">
-        <source>How old was {first_name}\&apos;s grandson?</source>
+        <source>How old was {first_name}'s grandson?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="17">
-        <source>How old was {first_name}\&apos;s granddaughter?</source>
+        <source>How old was {first_name}'s granddaughter?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="18">
-        <source>How old was {first_name}\&apos;s stepson?</source>
+        <source>How old was {first_name}'s stepson?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="19">
-        <source>How old was {first_name}\&apos;s stepdaughter?</source>
+        <source>How old was {first_name}'s stepdaughter?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="20">
-        <source>How old was {first_name}\&apos;s nephew?</source>
+        <source>How old was {first_name}'s nephew?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="21">
-        <source>How old was {first_name}\&apos;s niece?</source>
+        <source>How old was {first_name}'s niece?</source>
         <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
       <trans-unit id="2889" resname="countries" restype="array" datatype="x-android-resource" extype="199">
