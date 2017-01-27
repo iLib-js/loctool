@@ -42854,7 +42854,7 @@
       </trans-unit>
       <trans-unit id="9921" resname="To connect with {doctor_value}, please let us know where to send your response:" restype="string" datatype="javascript">
         <source>To connect with {doctor_value}, please let us know where to send your response:</source>
-        <target state="translated">要与{doctor_name}联系，请告诉我们发送回复到您：</target>
+        <target state="translated">要与{doctor_value}联系，请告诉我们发送回复到您：</target>
       </trans-unit>
       <trans-unit id="9922" resname="To invite {doctor_value} to connect with you on HealthTap, please share your email:" restype="string" datatype="javascript">
         <source>To invite {doctor_value} to connect with you on HealthTap, please share your email:</source>
