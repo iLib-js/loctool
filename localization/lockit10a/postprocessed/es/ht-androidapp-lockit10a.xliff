@@ -11,8 +11,8 @@
         <target state="translated">Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar en cualquier momento</target>
       </trans-unit>
       <trans-unit id="4" resname="r547162446" restype="string" datatype="x-android-resource">
-        <source>nTry a Virtual Consult ›</source>
-        <target state="translated">\nPrueba una Consulta Virtual ›</target>
+        <source>Try a Virtual Consult ›</source>
+        <target state="translated">Prueba una Consulta Virtual ›</target>
       </trans-unit>
       <trans-unit id="5" resname="r45009371" restype="string" datatype="x-android-resource">
         <source>Near you</source>
