@@ -38578,7 +38578,7 @@
       </trans-unit>
       <trans-unit id="8992" resname="one#See {n} more doctor answer|#See {n} more doctor answers" restype="string" datatype="javascript">
         <source>one#See {n} more doctor answer|#See {n} more doctor answers</source>
-        <target state="translated">1#See {n} 更多医生回答|#See {n} 更多医生回答</target>
+        <target state="accepted">1#读读 {n} 更多医生回答|#读读 {n} 更多医生回答</target>
       </trans-unit>
     </body>
   </file>
