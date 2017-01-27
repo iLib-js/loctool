@@ -1,0 +1,19 @@
+{
+	"name": "HT Test",
+	"id": "ht-test",
+	"projectType": "web",
+	"pseudoLocale": "de-DE",
+	"resourceDirs": {
+		"yml": "config/locales",
+		"js": "public/localized_js"
+	},
+	"excludes": [
+		".*"
+	],
+	"includes": [
+		"config/notifications.yml"
+	],
+	"settings": {
+		"locales": ["en-GB", "es-US", "zh-Hans-CN"]
+	}
+}
