@@ -436,6 +436,7 @@
     <body>
       <trans-unit id="475" resname="r459380774" restype="string" datatype="ruby">
         <source>You can actually talk with me or another HealthTap doctor now by video or text chat. Would you like to see a doctor now? We&apos;re standing by!</source>
+        <target>You can actually talk with me or another HealthTap doctor now by video or text chat. Would you like to see a doctor now? We&apos;re standing by!</target>
       </trans-unit>
     </body>
   </file>
@@ -443,15 +444,19 @@
     <body>
       <trans-unit id="476" resname="r833790376" restype="string" datatype="ruby">
         <source>Diagnostic dilemma: &quot;What&apos;s the diagnosis?&quot;</source>
+        <target>Diagnostic dilemma: &quot;What&apos;s the diagnosis?&quot;</target>
       </trans-unit>
       <trans-unit id="477" resname="r372120495" restype="string" datatype="ruby">
         <source>Diagnostic dilemma: &quot;What are the next steps for evaluation?&quot;</source>
+        <target>Diagnostic dilemma: &quot;What are the next steps for evaluation?&quot;</target>
       </trans-unit>
       <trans-unit id="478" resname="r688178430" restype="string" datatype="ruby">
         <source>Treatment decision: &quot;What&apos;s the best treatment?&quot;</source>
+        <target>Treatment decision: &quot;What&apos;s the best treatment?&quot;</target>
       </trans-unit>
       <trans-unit id="479" resname="r230124915" restype="string" datatype="ruby">
         <source>Fascinating or rare case: &quot;Isn&apos;t this interesting?&quot;</source>
+        <target>Fascinating or rare case: &quot;Isn&apos;t this interesting?&quot;</target>
       </trans-unit>
     </body>
   </file>
@@ -459,6 +464,7 @@
     <body>
       <trans-unit id="480" resname="r923729424" restype="string" datatype="ruby">
         <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an &quot;addendum note&quot; to this consult using the chat input.</source>
+        <target>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an &quot;addendum note&quot; to this consult using the chat input.</target>
       </trans-unit>
     </body>
   </file>
@@ -466,6 +472,7 @@
     <body>
       <trans-unit id="481" resname="r570522913" restype="string" datatype="ruby">
         <source>page, and select the &quot;Answer Patient&quot; button.</source>
+        <target>page, and select the &quot;Answer Patient&quot; button.</target>
       </trans-unit>
     </body>
   </file>
@@ -473,6 +480,7 @@
     <body>
       <trans-unit id="482" resname="r925928384" restype="string" datatype="ruby">
         <source>Gift for you! Get 1 month free access to top doctors via video or text chat, 24/7, with HealthTap Prime.</source>
+        <target>Gift for you! Get 1 month free access to top doctors via video or text chat, 24/7, with HealthTap Prime.</target>
       </trans-unit>
     </body>
   </file>
@@ -480,9 +488,11 @@
     <body>
       <trans-unit id="483" resname="r277688003" restype="string" datatype="ruby">
         <source>Please select one of the following:</source>
+        <target>Please select one of the following:</target>
       </trans-unit>
       <trans-unit id="484" resname="r854720274" restype="string" datatype="ruby">
         <source>Do you know of any reasons why the doctor&apos;s licensing applications in any state might be rejected or revoked?</source>
+        <target>Do you know of any reasons why the doctor&apos;s licensing applications in any state might be rejected or revoked?</target>
       </trans-unit>
     </body>
   </file>
@@ -791,8 +801,8 @@
   <file original="app/views/static_pages/home/_hopes_intro.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="59" resname="r494573058" restype="string" datatype="ruby">
-        <source>We’ve built the world’s first Health Operating System &#40;HOPES&trade;&#41;,  powering the delivery of world-class healthcare, from Query-to-Cure</source>
-        <target state="new">我们建立了世界上第一个健康操作系统（HOPES&trade;），从查询到治疗，推动了世界级的医疗保健</target>
+        <source>We’ve built the world’s first Health Operating System (HOPES&amp;trade;),  powering the delivery of world-class healthcare, from Query-to-Cure</source>
+        <target state="new">我们建立了世界上第一个健康操作系统（HOPES&amp;trade;），从查询到治疗，推动了世界级的医疗保健</target>
       </trans-unit>
     </body>
   </file>
