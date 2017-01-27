@@ -16,10 +16,10 @@ module.exports = {
 
         var rf = new RubyFile();
         test.ok(rf);
-        
+
         test.done();
     },
-    
+
     testRubyFileConstructorParams: function(test) {
         test.expect(1);
 
@@ -27,11 +27,11 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile(p, "./ruby/external_user_metric.rb");
-        
+
         test.ok(rf);
-        
+
         test.done();
     },
 
@@ -42,12 +42,12 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         test.done();
     },
 
@@ -58,14 +58,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         test.equal(rf.makeKey("This is a test"), "r654479252");
-        
+
         test.done();
     },
 
@@ -76,14 +76,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKey("Medications    in $$$  your profile"), "r589776427");
-        
+
         test.done();
 	},
 
@@ -94,14 +94,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKey("Terms___and___Conditions"), "r906781227");
-        
+
         test.done();
 	},
 
@@ -112,7 +112,7 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
@@ -120,7 +120,7 @@ module.exports = {
 
         // makeKey is used for double-quoted strings, which ruby interprets before it is used
         test.equals(rf.makeKey("A \n B"), "r191336864");
-        
+
         test.done();
 	},
 
@@ -131,14 +131,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKey("A \t B"), "r191336864");
-        
+
         test.done();
 	},
 
@@ -149,14 +149,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKey("A \\'B\\' C"), "r935639115");
-        
+
         test.done();
 	},
 
@@ -167,14 +167,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKey("\\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z"), "r1027573048");
-        
+
         test.done();
 	},
 
@@ -185,14 +185,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKey("\\u00A0 \\x23"), "r2293235");
-        
+
         test.done();
 	},
 
@@ -203,17 +203,17 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKey("Talk to a doctor live 24/7 via video or\u00a0text\u00a0chat"), "r675065080");
-        
+
         test.done();
 	},
-	
+
 	testRubyFileMakeKeySkipHTML: function(test) {
         test.expect(2);
 
@@ -221,14 +221,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKey("A <br> B"), "r191336864");
-        
+
         test.done();
 	},
 
@@ -239,7 +239,7 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
@@ -261,7 +261,7 @@ module.exports = {
         test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\d \\g \\h \\i \\j \\k \\l \\m \\o \\p \\q \\w \\y \\z other escape chars in it'), "r102481693");
         test.equals(rf.makeKey("This is a double quoted string with \\u00A0 \\x23 hex escape chars in it"), "r347049046");
         test.equals(rf.makeKeyUnescaped('This is a single quoted string with \\u00A0 \\x23 hex escape chars in it'), "r1000517606");
-        
+
         test.equals(rf.makeKey("We help more than %{num_docs} top doctors in our network enhance their reputations,<br>build professional networks, better serve existing patients, grow their practices,<br>and increase their income."), "r638463622");
 
         test.done();
@@ -274,7 +274,7 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
@@ -282,7 +282,7 @@ module.exports = {
 
         // unescaped is used for single quoted strings
         test.equals(rf.makeKeyUnescaped("A \\\\n B"), "r968833504");
-        
+
         test.done();
 	},
 
@@ -293,14 +293,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKeyUnescaped("A \\\\t B"), "r215504705");
-        
+
         test.done();
 	},
 
@@ -311,14 +311,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKeyUnescaped("A \\'B\\' C"), "r935639115");
-        
+
         test.done();
 	},
 
@@ -329,14 +329,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
 
         test.equals(rf.makeKeyUnescaped("\\u00A0 \\x23"), "r262108213");
-        
+
         test.done();
 	},
 
@@ -347,14 +347,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         test.equal(rf.makeKey("0"), "r3145008");
-        
+
         test.done();
     },
 
@@ -365,14 +365,14 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         test.equal(rf.makeKey("foo: done?!@#$%^&*()"), "r621645297");
-        
+
         test.done();
     },
 
@@ -383,23 +383,23 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("This is a test")');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ResourceString.hashKey("webapp", "en-US", "r654479252", "ruby"));
         test.ok(r);
-        
+
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -410,23 +410,23 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse("Rb.t('This is a test')");
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.get(ResourceString.hashKey("webapp", "en-US", "r654479252", "ruby"));
         test.ok(r);
-        
+
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -437,22 +437,22 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("This is a test")');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -463,22 +463,22 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("  \t \n This is a test \t \t \n")');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -489,22 +489,22 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("  \\t \\n This is a test \\t \\t \\n\\n")');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -515,23 +515,23 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse("Rb.t('This is \\'a\\' test')");
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is 'a' test");
         test.ok(r);
-        
+
         test.equal(r.getSource(), "This is 'a' test");
         test.equal(r.getKey(), "r240708166");
-        
+
         test.done();
     },
 
@@ -542,23 +542,23 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse("Rb.t(\"This is \\'a\\' test\")");
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is 'a' test");
         test.ok(r);
-        
+
         test.equal(r.getSource(), "This is 'a' test");
         test.equal(r.getKey(), "r240708166");
-        
+
         test.done();
     },
 
@@ -569,19 +569,19 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("")');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -592,22 +592,22 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('   Rb.t  (    \t "This is a test"    );  ');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.done();
     },
 
@@ -619,7 +619,7 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
@@ -629,11 +629,11 @@ module.exports = {
         test.equal(set.size(), 0);
 
         rf.parse('Rb.t("This is a test")');
-        
+
         test.ok(set);
-        
+
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -644,23 +644,23 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('\tRb.t("This is a test"); # i18n: this is a translator\'s comment\n\tfoo("This is not");');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
         test.equal(r.getComment(), "this is a translator's comment");
-        
+
         test.done();
     },
 
@@ -671,27 +671,27 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("This is a test");\n\ta.parse("This is another test.");\n\t\tRb.t("This is also a test");');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "r999080996");
-        
+
         test.done();
     },
 
@@ -702,22 +702,22 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('This is Rb.t("This is a test"), a.parse("This is another test."), Rb.t("This is also a test"));');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
@@ -733,22 +733,22 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse("[Rb.t('Access the world’s leading online knowledgebase of doctor-created health information. '), Rb.t('We‘re committed to helping you feel good!')],");
 
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("Access the world’s leading online knowledgebase of doctor-created health information.");
         test.ok(r);
         test.equal(r.getSource(), "Access the world’s leading online knowledgebase of doctor-created health information.");
         test.equal(r.getKey(), "r911624588");
-        
+
         r = set.getBySource("We‘re committed to helping you feel good!");
         test.ok(r);
         test.equal(r.getSource(), "We‘re committed to helping you feel good!");
@@ -764,29 +764,29 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("This is a test");   # i18n: foo\n\ta.parse("This is another test.");\n\t\tRb.t("This is also a test");\t# i18n: bar');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
         test.equal(r.getComment(), "foo");
-        
+
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "r999080996");
         test.equal(r.getComment(), "bar");
-        
+
         test.done();
     },
 
@@ -797,29 +797,29 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("This is a test", "asdf");   # i18n: foo\n\ta.parse("This is another test.");\n\t\tRb.t("This is also a test", "kdkdkd");\t# i18n: bar');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
         test.equal(r.getComment(), "foo");
-        
+
         r = set.getBySource("This is also a test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a test");
         test.equal(r.getKey(), "r999080996");
         test.equal(r.getComment(), "bar");
-        
+
         test.done();
     },
 
@@ -830,33 +830,33 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse(
         		'            .about-item\n' +
         		'              .item-title\n' +
         		'                = @directory_doctor ? Rb.t(\'Specialty\') : Rb.t(\'I specialize in\') # i18n this is a section title. Ie. Title: Specialty, Content: Internal Medicine\n'
         );
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("Specialty");
         test.ok(r);
         test.equal(r.getSource(), "Specialty");
         test.equal(r.getKey(), "r912467643");
         test.equal(r.getComment(), "this is a section title. Ie. Title: Specialty, Content: Internal Medicine");
-        
+
         r = set.getBySource("I specialize in");
         test.ok(r);
         test.equal(r.getSource(), "I specialize in");
         test.equal(r.getKey(), "r271968593");
         test.equal(r.getComment(), "this is a section title. Ie. Title: Specialty, Content: Internal Medicine");
-        
+
         test.done();
     },
 
@@ -868,24 +868,24 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("This is a test");\n\ta.parse("This is another test.");\n\t\tRb.t("This is a test");');
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("This is a test");
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
-        
+
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -896,18 +896,18 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("This is a test" + " and this isnt");');
-        
+
         var set = rf.getTranslationSet();
 
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -918,17 +918,17 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t("This is a test" + foobar);');
-        
+
         var set = rf.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -939,17 +939,17 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t(foobar);');
-        
+
         var set = rf.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -960,17 +960,17 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('Rb.t();');
-        
+
         var set = rf.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -981,17 +981,17 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('EPIRb.t("This is a test");');
-        
+
         var set = rf.getTranslationSet();
         test.equal(set.size(), 0);
-        
+
         test.done();
     },
 
@@ -1002,17 +1002,17 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse('App.Rb.t("This is a test");');
-        
+
         var set = rf.getTranslationSet();
         test.equal(set.size(), 1);
-        
+
         test.done();
     },
 
@@ -1023,33 +1023,33 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
-        	project: p, 
+        	project: p,
         	pathName: "./ruby/external_user_metric.rb"
         });
         test.ok(rf);
-        
+
         // should read the file
         rf.extract();
-        
+
         var set = rf.getTranslationSet();
-        
+
         test.equal(set.size(), 13);
-        
+
         var r = set.getBySource("Noted that person %{person_id} has %{source} installed");
         test.ok(r);
         test.equal(r.getSource(), "Noted that person %{person_id} has %{source} installed");
         test.equal(r.getKey(), "r924558074");
-        
+
         r = set.getBySource("data is missing or empty.");
         test.ok(r);
         test.equal(r.getSource(), "data is missing or empty.");
         test.equal(r.getKey(), "r62756614");
-        
+
         test.done();
     },
-    
+
     testRubyFileExtractUndefinedFile: function(test) {
         test.expect(2);
 
@@ -1057,17 +1057,17 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         // should attempt to read the file and not fail
         rf.extract();
-        
+
         var set = rf.getTranslationSet();
-        
+
         test.equal(set.size(), 0);
 
         test.done();
@@ -1080,23 +1080,23 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
-        	project: p, 
+        	project: p,
         	pathName: "./ruby/foo.rb"
         });
         test.ok(rf);
-        
+
         // should attempt to read the file and not fail
         rf.extract();
-        
+
         var set = rf.getTranslationSet();
-        
+
         test.equal(set.size(), 0);
 
         test.done();
     },
-    
+
     testRubyFileParseHamlFile: function(test) {
         test.expect(18);
 
@@ -1104,12 +1104,12 @@ module.exports = {
         	id: "webapp",
 			sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
 			project: p
 		});
         test.ok(rf);
-        
+
         rf.parse(
     		'.contain-width\n' +
     		'  .hopes-for-everyone\n' +
@@ -1136,22 +1136,22 @@ module.exports = {
     		'              %a.small-text.link{:href=>link[:href]} \n' +
     		'                #{link[:caption]}\n' +
     		'                %span.arrow &rsaquo;\n'
-    
+
         );
-        
+
         var set = rf.getTranslationSet();
         test.ok(set);
-        
+
         var r = set.getBySource("Learn more about members");
         test.ok(r);
         test.equal(r.getSource(), "Learn more about members");
         test.equal(r.getKey(), "r899361143");
-        
+
         r = set.getBySource("Members");
         test.ok(r);
         test.equal(r.getSource(), "Members");
         test.equal(r.getKey(), "r412671705");
-        
+
         r = set.getBySource("Immediate access to top doctors and their expertise, anytime, anywhere");
         test.ok(r);
         test.equal(r.getSource(), "Immediate access to top doctors and their expertise, anytime, anywhere");
@@ -1166,9 +1166,9 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "Healthier patients, happier doctors, higher income");
         test.equal(r.getKey(), "r120591747");
-        
+
         test.equal(set.size(), 19);
-        
+
         test.done();
     },
 
@@ -1179,12 +1179,12 @@ module.exports = {
             id: "webapp",
             sourceLocale: "en-US"
         }, "./testfiles");
-        
+
         var rf = new RubyFile({
             project: p
         });
         test.ok(rf);
-        
+
         rf.parse('Rb.p(:one => "This is 1 test", :other => "There are %{count} tests", {count: 1})');
         var set = rf.getTranslationSet();
         test.ok(set);

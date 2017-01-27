@@ -72,7 +72,7 @@
     \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
     \u00B7 Consults in languages other than English\n\
     \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
-        <target state="translated">在线咨询的常见问题：
+        <target state="translated">进行在线咨询的常见原因：
 \u00B7 腹部疼痛\n\
 \u00B7 急性支气管炎\n\
 \u00B7 急性结膜炎\n\
@@ -80,7 +80,7 @@
 \u00B7 急性咽炎\n\
 \u00B7 急性鼻窦炎\n\
 \u00B7 过敏\n\
-\u00B7 哮喘（稳定/非紧急）\n\
+\u00B7 哮喘（非急性）\n\
 \u00B7 脚气\n\
 \u00B7 背疼\n\
 \u00B7 蜜蜂蜇伤\n\
@@ -119,7 +119,7 @@
 \u00B7 上呼吸道感染\n\
 \u00B7 泌尿道感染\n\
 \u00B7 阴道瘙痒\n\
-\u00B7 酵母感染\n\n\何时不使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+\u00B7 酵母感染\n\n\何时不应使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -132,7 +132,7 @@
      \u00B7自杀倾向\n\
      \u00B7失去意识\n\
      \u00B7任何其他危及生命的情况\n\
-     \u00B7请不要期待得到\n\
+     \u00B7不应期望\n\
      \u00B7任何毒品或美国特殊药品监督管理局控制的药物（一、二、三、四类药物）处方\n\
      \u00B7任何各州禁止药物处方\n\
      \u00B7任何精神病治疗药物或改变生活方式的药物处方（如：针对节食或勃起功能障碍的药物）\n\
@@ -166,7 +166,7 @@
     \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
     \u00B7 Consults in languages other than English\n\
                            \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
-        <target state="translated">在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+        <target state="translated">进行在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -179,7 +179,7 @@
      \u00B7自杀倾向\n\
      \u00B7失去意识\n\
      \u00B7任何其他危及生命的情况\n\
-     \u00B7请不要期待得到\n\
+     \u00B7不应期望\n\
      \u00B7任何毒品或美国特殊药品监督管理局控制的药物（一、二、三、四类药物）处方\n\
      \u00B7任何各州禁止药物处方\n\
      \u00B7任何精神病治疗药物或改变生活方式的药物处方（如：针对节食或勃起功能障碍的药物）\n\

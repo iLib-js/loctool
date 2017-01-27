@@ -1505,7 +1505,7 @@
         <target>¿Cuántos hijos vivos tiene {first_name}?</target>
       </trans-unit>
       <trans-unit id="282" resname="subaccount_questions" restype="array" datatype="x-android-resource" extype="5">
-        <source>When was {first_name} last menstrual period?</source>
+        <source>When was {first_name}&apos;s last menstrual period?</source>
         <target>¿Cuándo fue el último periodo menstrual de {first_name}?</target>
       </trans-unit>
       <trans-unit id="283" resname="self_questions" restype="array" datatype="x-android-resource" extype="0">
@@ -1529,8 +1529,8 @@
         <target>¿Cuántos hijos vivos tienes?</target>
       </trans-unit>
       <trans-unit id="288" resname="self_questions" restype="array" datatype="x-android-resource" extype="5">
-        <source>When was {first_name}\&apos;s last menstrual period?</source>
-        <target>¿Cuándo fue el último periodo menstrual de {first_name}?</target>
+        <source>When was your last menstrual period?</source>
+        <target>¿Cuándo fue el último periodo menstrual de usted?</target>
       </trans-unit>
       <trans-unit id="289" resname="bmi" restype="array" datatype="x-android-resource" extype="0">
         <source>Severely Underweight</source>
@@ -1626,11 +1626,11 @@
         <source>How old is your uncle?</source>
         <target>¿Cuántos años tiene tu tío?</target>
       </trans-unit>
-      <trans-unit id="311" resname="living_relationship_age" restype="array" datatype="x-android-resource" extype="16">
+      <trans-unit id="311" resname="living_relationship_age" restype="array" datatype="x-android-resource" extype="22">
         <source>How old is your patient &#40;for Professional Caregivers&#41;?</source>
         <target>¿Cuántos años tiene tu paciente &#40;para Dadores de Atención Profesionales&#41;?</target>
       </trans-unit>
-      <trans-unit id="312" resname="living_relationship_age" restype="array" datatype="x-android-resource" extype="17">
+      <trans-unit id="312" resname="living_relationship_age" restype="array" datatype="x-android-resource" extype="23">
         <source>How old is your other?</source>
         <target>¿Cuántos años tiene tu otro?</target>
       </trans-unit>
@@ -1698,11 +1698,11 @@
         <source>How old was your uncle?</source>
         <target>¿Cuántos años tenía tu tío?</target>
       </trans-unit>
-      <trans-unit id="329" resname="dead_relationship_age" restype="array" datatype="x-android-resource" extype="16">
+      <trans-unit id="329" resname="dead_relationship_age" restype="array" datatype="x-android-resource" extype="22">
         <source>How old was your patient &#40;for Professional Caregivers&#41;?</source>
         <target>¿Cuántos años tenía tu paciente &#40;para Dadores de Atención Profesionales&#41;?</target>
       </trans-unit>
-      <trans-unit id="330" resname="dead_relationship_age" restype="array" datatype="x-android-resource" extype="17">
+      <trans-unit id="330" resname="dead_relationship_age" restype="array" datatype="x-android-resource" extype="23">
         <source>How old was your other?</source>
         <target>¿Cuántos años tenia tu otro?</target>
       </trans-unit>
@@ -1770,11 +1770,11 @@
         <source>How old is {first_name}\&apos;s uncle?</source>
         <target>¿Cuántos años tiene el tío de {first_name}?</target>
       </trans-unit>
-      <trans-unit id="347" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="16">
+      <trans-unit id="347" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="22">
         <source>How old is {first_name}\&apos;s patient &#40;for Professional Caregivers&#41;?</source>
         <target>¿Cuántos años tiene el paciente de {first_name} &#40;para Dadores de Atención Profesionales&#41;?</target>
       </trans-unit>
-      <trans-unit id="348" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="17">
+      <trans-unit id="348" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="23">
         <source>How old is {first_name}\&apos;s other?</source>
         <target>¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>
@@ -1842,11 +1842,11 @@
         <source>How old was {first_name}\&apos;s uncle?</source>
         <target>¿Cuántos años tenía el tío de {first_name}?</target>
       </trans-unit>
-      <trans-unit id="365" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="16">
+      <trans-unit id="365" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="22">
         <source>How old was {first_name}\&apos;s patient &#40;for Professional Caregivers&#41;?</source>
         <target>¿Cuántos años tenía el paciente de {first_name} &#40;para Dadores de Atención Profesionales&#41;?</target>
       </trans-unit>
-      <trans-unit id="366" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="17">
+      <trans-unit id="366" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="23">
         <source>How old was {first_name}\&apos;s other?</source>
         <target>¿Cuántos años tenía el otro de {first_name}?</target>
       </trans-unit>

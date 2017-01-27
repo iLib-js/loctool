@@ -204,7 +204,7 @@
       </trans-unit>
       <trans-unit id="437" resname="We&apos;ll notify you when {full_name} accepts you as a patient!" restype="string" datatype="javascript">
         <source>We&apos;ll notify you when {full_name} accepts you as a patient!</source>
-        <target state="new">我们将在{full_name}接受您为病人时通知您 !<</target>
+        <target state="new">我们将在{full_name}接受您为病人时通知您 !</target>
       </trans-unit>
     </body>
   </file>
@@ -555,7 +555,7 @@
       </trans-unit>
       <trans-unit id="14" resname="r1058278885" restype="string" datatype="ruby">
         <source>Adding a video to a Wellness page is a great way to inspire others to improve their health and well-being. Learn more here about our Wellness pages and how to submit your videos directly on HealthTap or via email.</source>
-        <target state="new">将视频添加到“健康”页面是激励他人改善健康的好方法。在这里了解我们的健康网页，以及如何直接在HealthTap或通过电子邮件提交您的视频/target>
+        <target state="new">将视频添加到“健康”页面是激励他人改善健康的好方法。在这里了解我们的健康网页，以及如何直接在HealthTap或通过电子邮件提交您的视频</target>
       </trans-unit>
     </body>
   </file>
@@ -784,15 +784,15 @@
       </trans-unit>
       <trans-unit id="58" resname="r655383491" restype="string" datatype="ruby">
         <source>Based on your symptoms, Dr. %{ai_trademark} routes or &quot;triages&quot; you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</source>
-        <target state="new">根据您的症状，％{ai_trademark}医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，％{ai_trademark}医生能立即通过症状来制订一套感觉良好的治疗方案。</target>
+        <target state="new">根据您的症状，%{ai_trademark}医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，%{ai_trademark}医生能立即通过症状来制订一套感觉良好的治疗方案。</target>
       </trans-unit>
     </body>
   </file>
   <file original="app/views/static_pages/home/_hopes_intro.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="59" resname="r498270014" restype="string" datatype="ruby">
-        <source>We’ve built the world’s first Health Operating System &#40;HOPESTM&#41;,  powering the delivery of world-class healthcare, from Query-to-Cure</source>
-        <target state="new">我们建立了世界上第一个健康操作系统（HOPESTM），从查询到治疗，推动了世界级的医疗保健</target>
+      <trans-unit id="59" resname="r494573058" restype="string" datatype="ruby">
+        <source>We’ve built the world’s first Health Operating System &#40;HOPES&trade;&#41;,  powering the delivery of world-class healthcare, from Query-to-Cure</source>
+        <target state="new">我们建立了世界上第一个健康操作系统（HOPES&trade;），从查询到治疗，推动了世界级的医疗保健</target>
       </trans-unit>
     </body>
   </file>
@@ -836,7 +836,7 @@
     <body>
       <trans-unit id="68" resname="r691446454" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered &quot;physician&quot;, trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>
-        <target state="new">％{ai_trademark}医生，是由医生训练的您私人的％{ai_serif}电力医生，根据您的症状为您私人定制治疗方案。</target>
+        <target state="new">%{ai_trademark}医生，是由医生训练的您私人的%{ai_serif}电力医生，根据您的症状为您私人定制治疗方案。</target>
       </trans-unit>
     </body>
   </file>
@@ -2186,7 +2186,7 @@
     <body>
       <trans-unit id="342" resname="r925109523" restype="string" datatype="x-haml">
         <source>&amp;mdash;from Query-to-Cure</source>
-        <target>&amp;mdash;从查询到治疗/target>
+        <target>&amp;mdash;从查询到治疗</target>
       </trans-unit>
     </body>
   </file>

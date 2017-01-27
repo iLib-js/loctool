@@ -182,7 +182,7 @@
       </trans-unit>
       <trans-unit id="45" resname="r1062842433" restype="string" datatype="x-android-resource">
         <source>Read on {time}</source>
-        <target state="translated">在{time}读取</target>
+        <target state="translated">{time}已读</target>
       </trans-unit>
       <trans-unit id="46" resname="r284091905" restype="string" datatype="x-android-resource">
         <source>Read</source>

@@ -16,19 +16,19 @@ module.exports = {
 
         var rp = new ResourcePlural();
         test.ok(rp);
-        
+
         test.done();
     },
-    
+
 	testResourcePluralConstructorNoProps: function(test) {
 	    test.expect(1);
-	
+
 	    var rp = new ResourcePlural({});
 	    test.ok(rp);
-	    
+
 	    test.done();
 	},
-	
+
     testResourcePluralConstructor: function(test) {
         test.expect(1);
 
@@ -44,10 +44,10 @@ module.exports = {
         	}
         });
         test.ok(rp);
-        
+
         test.done();
     },
-    
+
     testResourcePluralConstructorRightContents: function(test) {
         test.expect(5);
 
@@ -63,7 +63,7 @@ module.exports = {
         	}
         });
         test.ok(rp);
-    
+
         test.equal(rp.getKey(), "asdf");
         test.deepEqual(rp.getPlurals(), {
     		"one": "This is singular",
@@ -73,10 +73,10 @@ module.exports = {
         });
         test.equal(rp.locale, "de-DE");
         test.equal(rp.pathName, "a/b/c.java");
-        
+
         test.done();
     },
-    
+
     testResourcePluralConstructorDefaults: function(test) {
         test.expect(6);
 
@@ -91,19 +91,19 @@ module.exports = {
         	}
         });
         test.ok(rp);
-    
+
         // got the right one?
         test.equal(rp.getKey(), "asdf");
-        
+
         // now the defaults
         test.equal(rp.locale, "en-US");
         test.equal(rp.origin, "source");
         test.equal(rp.datatype, "x-android-resource");
         test.equal(rp.resType, "plural");
-        
+
         test.done();
     },
-    
+
     testResourcePluralGetKey: function(test) {
         test.expect(2);
 
@@ -120,7 +120,7 @@ module.exports = {
         });
         test.ok(rp);
         test.equal(rp.getKey(), "foo");
-        
+
         test.done();
     },
 
@@ -143,7 +143,7 @@ module.exports = {
         test.equal(rp.get("two"), "This is double");
         test.equal(rp.get("few"), "This is the few case");
         test.equal(rp.get("many"), "This is the many case");
-        
+
         test.done();
     },
 
@@ -163,7 +163,7 @@ module.exports = {
         });
         test.ok(rp);
         test.ok(!rp.get("zero"));
-        
+
         test.done();
     },
 
@@ -173,7 +173,7 @@ module.exports = {
         var rp = new ResourcePlural();
         test.ok(rp);
         test.ok(!rp.getKey());
-        
+
         test.done();
     },
 
@@ -194,7 +194,7 @@ module.exports = {
         });
         test.ok(rp);
         test.equal(rp.getContext(), "landscape");
-        
+
         test.done();
     },
 
@@ -214,7 +214,7 @@ module.exports = {
         });
         test.ok(rp);
         test.ok(!rp.getContext());
-        
+
         test.done();
     },
 
@@ -239,7 +239,7 @@ module.exports = {
         	"few": "This is the few case",
         	"many": "This is the many case"
         });
-        
+
         test.done();
     },
 
@@ -249,7 +249,7 @@ module.exports = {
         var rp = new ResourcePlural();
         test.ok(rp);
         test.ok(!rp.getPlurals());
-        
+
         test.done();
     },
 
@@ -267,7 +267,7 @@ module.exports = {
         	}
         });
         test.ok(rp);
-        
+
         var rb = new ResBundle({
         	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
@@ -277,7 +277,7 @@ module.exports = {
 
         test.ok(rp2);
         test.equal(rp2.getLocale(), "de-DE");
-        
+
         test.done();
     },
 
@@ -295,7 +295,7 @@ module.exports = {
         	}
         });
         test.ok(rp);
-        
+
         var rb = new ResBundle({
         	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
@@ -304,9 +304,9 @@ module.exports = {
         var rp2 = rp.generatePseudo("de-DE", rb);
 
         test.ok(rp2);
-        
+
         var t = rp2.getPlurals();
-        
+
         test.ok(t);
         test.deepEqual(t, {
     		"one": "Ťĥíš íš šíñğüľàŕ",
@@ -314,7 +314,7 @@ module.exports = {
     		"few": "Ťĥíš íš ţĥë fëŵ çàšë",
     		"many": "Ťĥíš íš ţĥë màñÿ çàšë"
     	});
-        
+
         test.done();
     },
 
@@ -332,7 +332,7 @@ module.exports = {
         	}
         });
         test.ok(rp);
-        
+
         var rb = new ResBundle({
         	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
@@ -341,9 +341,9 @@ module.exports = {
         var rp2 = rp.generatePseudo("de-DE", rb);
 
         test.ok(rp2);
-        
+
         var t = rp2.getPlurals();
-        
+
         test.ok(t);
         test.deepEqual(t, {
     		"one": "Ťĥíš íš %s šíñğüľàŕ",
@@ -351,7 +351,7 @@ module.exports = {
     		"few": "Ťĥíš íš ţĥë fëŵ %2$-2.2f çàšë",
     		"many": "Ťĥíš íš ţĥë màñÿ %7x çàšë"
     	});
-        
+
         test.done();
     },
 
@@ -369,7 +369,7 @@ module.exports = {
         	}
         });
         test.ok(rp);
-        
+
         var rb = new ResBundle({
         	type: "c",
             locale: "zxx-XX" // the pseudo-locale!
@@ -377,7 +377,7 @@ module.exports = {
 
         var rp2 = rp.generatePseudo(undefined, rb);
         test.ok(!rp2);
-        
+
         test.done();
     },
 
@@ -395,14 +395,14 @@ module.exports = {
         	}
         });
         test.ok(rp);
-        
+
         var rp2 = rp.generatePseudo("de-DE", undefined);
 
         test.ok(!rp2);
-        
+
         test.done();
     },
-    
+
     testResourcePluralClone: function(test) {
         test.expect(10);
 
@@ -424,7 +424,7 @@ module.exports = {
         test.ok(rp);
 
         var rp2 = rp.clone();
-        
+
         test.ok(rp2);
         test.equal(rp2.project, rp.project);
         test.equal(rp2.context, rp.context);
@@ -434,10 +434,10 @@ module.exports = {
         test.equal(rp2.pathName, rp.pathName);
         test.equal(rp2.comment, rp.comment);
         test.equal(rp2.state, rp.state);
-        
+
         test.done();
     },
-    
+
     testResourcePluralCloneWithOverrides: function(test) {
         test.expect(10);
 
@@ -462,7 +462,7 @@ module.exports = {
         	locale: "fr-FR",
         	state: "asdfasdf"
         });
-        
+
         test.ok(rp2);
         test.equal(rp2.project, rp.project);
         test.equal(rp2.context, rp.context);
@@ -472,10 +472,10 @@ module.exports = {
         test.equal(rp2.pathName, rp.pathName);
         test.equal(rp2.comment, rp.comment);
         test.equal(rp2.state, "asdfasdf");
-        
+
         test.done();
     },
-    
+
     testResourcePluralAddString: function(test) {
         test.expect(3);
 
@@ -499,12 +499,12 @@ module.exports = {
         test.ok(!rp.get("zero"));
 
         rp.addString("zero", "This is the zero one")
-        
+
         test.equal(rp.get("zero"), "This is the zero one");
-        
+
         test.done();
     },
-    
+
     testResourcePluralAddStringReplace: function(test) {
         test.expect(3);
 
@@ -528,12 +528,12 @@ module.exports = {
         test.equal(rp.get("two"), "This is double");
 
         rp.addString("two", "This is two at a time")
-        
+
         test.equal(rp.get("two"), "This is two at a time");
-        
+
         test.done();
     },
-    
+
     testResourcePluralAddStringSize: function(test) {
         test.expect(3);
 
@@ -554,14 +554,14 @@ module.exports = {
         test.ok(rp);
 
         test.equal(rp.size(), 3);
-        
+
         rp.addString("many", "This is the many one")
-        
+
         test.equal(rp.size(), 4);
-        
+
         test.done();
     },
-    
+
     testResourcePluralAddStringUndefined: function(test) {
         test.expect(3);
 
@@ -584,12 +584,12 @@ module.exports = {
         test.equal(rp.get("one"), "This is singular");
 
         rp.addString("one", undefined)
-        
+
         test.equal(rp.get("one"), "This is singular");
-        
+
         test.done();
     },
-    
+
     testResourcePluralAddStringNoClass: function(test) {
         test.expect(3);
 
@@ -612,12 +612,12 @@ module.exports = {
         test.equal(rp.size(), 3);
 
         rp.addString(undefined, "foobar")
-        
+
         test.equal(rp.size(), 3);
-        
+
         test.done();
     },
-    
+
     testResourcePluralAddStringEmpty: function(test) {
         test.expect(3);
 
@@ -635,12 +635,12 @@ module.exports = {
         test.equal(rp.size(), 0);
 
         rp.addString("one", "foobar")
-        
+
         test.equal(rp.size(), 1);
-        
+
         test.done();
     },
-    
+
     testResourcePluralAddStringEmptyRightContents: function(test) {
         test.expect(3);
 
@@ -658,12 +658,12 @@ module.exports = {
         test.ok(!rp.get("one"));
 
         rp.addString("one", "foobar")
-        
+
         test.equal(rp.get("one"), "foobar");
-        
+
         test.done();
     },
-    
+
     testResourcePluralAddStringMultiple: function(test) {
         test.expect(6);
 
@@ -686,16 +686,16 @@ module.exports = {
 
         rp.addString("one", "This is singular");
         rp.addString("zero", "This is the zero one");
-        
+
         test.equal(rp.get("zero"), "This is the zero one");
         test.equal(rp.get("one"), "This is singular");
         test.equal(rp.get("two"), "This is double");
         test.equal(rp.get("few"), "This is the few case");
         test.equal(rp.get("many"), "This is the many case");
-        
+
         test.done();
     },
-    
+
     testResourcePluralEquals: function(test) {
         test.expect(3);
 
@@ -713,7 +713,7 @@ module.exports = {
             comment: "foobar foo",
             state: "accepted"
         });
-        
+
         var ra2 = new ResourcePlural({
         	project: "foo",
         	context: "blah",
@@ -728,7 +728,7 @@ module.exports = {
             comment: "foobar foo",
             state: "accepted"
         });
-        
+
         test.ok(ra1);
         test.ok(ra2);
 
@@ -754,7 +754,7 @@ module.exports = {
             comment: "foobar foo",
             state: "accepted"
         });
-        
+
         var ra2 = new ResourcePlural({
         	project: "foo",
         	context: "blah",
@@ -769,7 +769,7 @@ module.exports = {
             comment: "foobar foo",
             state: "accepted"
         });
-        
+
         test.ok(ra1);
         test.ok(ra2);
 
@@ -795,7 +795,7 @@ module.exports = {
             comment: "foobar foo",
             state: "accepted"
         });
-        
+
         var ra2 = new ResourcePlural({
         	project: "foo",
         	context: "blah",
@@ -810,7 +810,7 @@ module.exports = {
             comment: "asdf asdf asdf asdf asdf",
             state: "done"
         });
-        
+
         test.ok(ra1);
         test.ok(ra2);
 
@@ -818,7 +818,7 @@ module.exports = {
 
         test.done();
     },
-    
+
     testResourcePluralEqualsContentDifferent: function(test) {
         test.expect(3);
 
@@ -836,7 +836,7 @@ module.exports = {
             comment: "foobar foo",
             state: "accepted"
         });
-        
+
         var ra2 = new ResourcePlural({
         	project: "foo",
         	context: "blah",
@@ -851,7 +851,7 @@ module.exports = {
             comment: "foobar foo",
             state: "accepted"
         });
-        
+
         test.ok(ra1);
         test.ok(ra2);
 
@@ -864,7 +864,7 @@ module.exports = {
         test.expect(1);
 
         test.equal(ResourcePlural.hashKey("ht-androidapp", "foo", "de-DE", "This is a test"), "rp_ht-androidapp_foo_de-DE_This is a test");
-        
+
         test.done();
     },
 
@@ -872,7 +872,7 @@ module.exports = {
         test.expect(1);
 
         test.equal(ResourcePlural.hashKey(undefined, undefined, "de-DE", undefined), "rp___de-DE_");
-        
+
         test.done();
     },
 
@@ -894,9 +894,9 @@ module.exports = {
             state: "accepted"
         });
         test.ok(rp);
-        
+
         test.equal(rp.hashKey(), "rp_foo_blah_de-DE_asdf");
-        
+
         test.done();
     }
 };

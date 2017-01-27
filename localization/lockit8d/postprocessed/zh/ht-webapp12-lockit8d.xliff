@@ -537,15 +537,15 @@
   <file original="public/feelGood/js/payment.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="848" resname="Can\&apos;t find the right doctor" restype="string" datatype="javascript">
-        <source>Can\&apos;t find the right doctor</source>
+        <source>Can&apos;t find the right doctor</source>
         <target state="translated">没有为您找到合适的医生</target>
       </trans-unit>
       <trans-unit id="849" resname="Can\&apos;t get the prescriptions I want/need" restype="string" datatype="javascript">
-        <source>Can\&apos;t get the prescriptions I want/need</source>
+        <source>Can&apos;t get the prescriptions I want/need</source>
         <target state="translated">没有得到我想要/需要的处方</target>
       </trans-unit>
       <trans-unit id="850" resname="We\&apos;re sorry to see you downgrade!" restype="string" datatype="javascript">
-        <source>We\&apos;re sorry to see you downgrade!</source>
+        <source>We&apos;re sorry to see you downgrade!</source>
         <target state="translated">我们很抱歉对您的降级！</target>
       </trans-unit>
     </body>

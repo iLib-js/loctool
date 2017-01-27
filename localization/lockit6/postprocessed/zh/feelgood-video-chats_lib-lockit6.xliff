@@ -222,7 +222,7 @@
       </trans-unit>
       <trans-unit id="44" resname="r1062842433" restype="string" datatype="java">
         <source>Read on {time}</source>
-        <target>在{time}读取</target>
+        <target>{time}已读</target>
       </trans-unit>
     </body>
   </file>

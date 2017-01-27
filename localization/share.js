@@ -20,7 +20,7 @@ ios.deserialize(fs.readFileSync("./current/ht-iosapp.xliff", "utf-8"));
 var feelgood = new Xliff({pathName: "./current/feelgood-video-chats_lib.xliff"});
 feelgood.deserialize(fs.readFileSync("./current/feelgood-video-chats_lib.xliff", "utf-8"));
 
-log4js.configure("../log4js.json");
+log4js.configure("./log4js.json");
 
 console.log("Organizing the translation units");
 
@@ -40,7 +40,22 @@ function addUnits(unit) {
 		units[unit.targetLocale] = {};
 	}
 	
-	units[unit.targetLocale][unit.source] = unit.target;
+	units[unit.targetLocale][unit.source] = unit;
+	
+	// for the data types that use hashes, when the key
+	// is the same, then the string is the same
+	switch (unit.datatype) {
+	case "ruby":
+	case "java":
+	case "x-haml":
+	case "x-android-resource":
+		units[unit.targetLocale][unit.source.trim()] = unit;
+		units[unit.targetLocale][unit.key] = unit;
+		break;
+		
+	default:
+		break;
+	}
 }
 
 webunits.forEach(addUnits);
@@ -69,13 +84,36 @@ web = android = ios = feelgood = undefined;
 			console.log("Sharing translations ...");
 					
 			newunits.forEach(function(unit) {
+				var found;
+			
+				if (unit.source === "How old was your grandson?") {
+					console.log("Found it.");
+				}
 				if (units[locale][unit.source]) {
-					var newunit = unit.clone();
-					newunit.target = units[locale][unit.source];
-					newunit.targetLocale = locale;
-					newunit.state = "translated";
-					shared.addTranslationUnit(newunit);
-					console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
+					found = units[locale][unit.source];
+				} else if (unit.datatype === "ruby" || unit.datatype === "x-haml" || unit.datatype === "java" || unit.datatype === "x-android-resource") {
+					if (units[locale][unit.key]) {
+						found = units[locale][unit.key];
+					} else if (units[locale][unit.source.trim()]) {
+						found = units[locale][unit.source.trim()];
+					}
+				}
+				
+				if (found) {
+					if (found.key !== unit.key || found.datatype !== unit.datatype || found.context !== unit.context ||
+							found.project !== unit.project || found.resType !== unit.resType || found.pathName !== unit.pathName ||
+							found.ordinal !== unit.ordinal || found.quantity !== unit.quantity) {
+						var newunit = unit.clone();
+						newunit.target = found.target;
+						newunit.targetLocale = locale;
+						newunit.state = "translated";
+						shared.addTranslationUnit(newunit);
+						console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
+					} else {
+						console.log("Found a new string that has an exact translation... (loctool bug?)");
+						console.log("Found: " + JSON.stringify(found));
+						console.log("New: " + JSON.stringify(unit));
+					}
 				} else {
 					console.log("Found untranslated string.");
 					untranslated.addTranslationUnit(unit);
