@@ -368,9 +368,9 @@
       </trans-unit>
       <trans-unit id="68" resname="r179401187" restype="string" datatype="java">
         <source>Dr. {doctor_name}</source>
-        <target>{doctor_name}医生 </target>
+        <target>{doctor_name}医生</target>
       </trans-unit>
-      <trans-unit id="69" resname="r1055944314" restype="string" datatype="java">
+      <trans-unit id="69" resname="r398172866" restype="string" datatype="java">
         <source>Error:</source>
         <target>错误：</target>
       </trans-unit>
@@ -378,7 +378,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/transcript/messages/ConsultLabTestMessage.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="70" resname="r495471755" restype="string" datatype="java">
+      <trans-unit id="70" resname="r465894884" restype="string" datatype="java">
         <source>Test Name:</source>
         <target>测试姓名：</target>
       </trans-unit>
@@ -442,11 +442,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/model/ReviewableAppModel.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="80" resname="r840539820" restype="string" datatype="java">
+      <trans-unit id="80" resname="r704587734" restype="string" datatype="java">
         <source>Current Version:</source>
         <target>当前版本：</target>
       </trans-unit>
-      <trans-unit id="81" resname="r398757758" restype="string" datatype="java">
+      <trans-unit id="81" resname="r419221095" restype="string" datatype="java">
         <source>Size:</source>
         <target>大小：</target>
       </trans-unit>
@@ -474,7 +474,7 @@
         <source>Similar questions</source>
         <target>相似的问题</target>
       </trans-unit>
-      <trans-unit id="85" resname="r300878474" restype="string" datatype="java">
+      <trans-unit id="85" resname="r1043822317" restype="string" datatype="java">
         <source>In brief:</source>
         <target>概要：</target>
       </trans-unit>
@@ -775,7 +775,7 @@
         <source>Payment</source>
         <target>付款方式</target>
       </trans-unit>
-      <trans-unit id="146" resname="r804934937" restype="string" datatype="java">
+      <trans-unit id="146" resname="r901641921" restype="string" datatype="java">
         <source>per minute\n5-minute minimum</source>
         <target>每5分钟\n至少5分钟</target>
       </trans-unit>
@@ -795,7 +795,7 @@
         <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
         <target>得到建议，处方，提醒100%保证满意，取消 随时</target>
       </trans-unit>
-      <trans-unit id="150" resname="r723089520" restype="string" datatype="java">
+      <trans-unit id="150" resname="r391792951" restype="string" datatype="java">
         <source>Change PayPal:</source>
         <target>更换PayPal：</target>
       </trans-unit>
@@ -811,11 +811,11 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/SubscribePaymentFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="153" resname="r976932793" restype="string" datatype="java">
+      <trans-unit id="153" resname="r194999707" restype="string" datatype="java">
         <source>{start}Your total{end}No commitment, cancel anytime</source>
         <target>{start}您的总计{end}没有任何承诺可以随时取消</target>
       </trans-unit>
-      <trans-unit id="154" resname="r844357829" restype="string" datatype="java">
+      <trans-unit id="154" resname="r923373309" restype="string" datatype="java">
         <source>Your total for 1 consult</source>
         <target>您总计为1个咨询</target>
       </trans-unit>
@@ -867,7 +867,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/payment/PayOncePaymentFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="165" resname="r570949649" restype="string" datatype="java">
+      <trans-unit id="165" resname="r580375147" restype="string" datatype="java">
         <source>Your card ending in *{four_digit_number} has expired. \n Please add a new one</source>
         <target>您的银行卡尾号*{four_digit_number} 已过期\n 请添加新的（银行卡）</target>
       </trans-unit>
@@ -907,7 +907,7 @@
         <source>Pay &amp; Send</source>
         <target>支付并发送</target>
       </trans-unit>
-      <trans-unit id="174" resname="r626068628" restype="string" datatype="java">
+      <trans-unit id="174" resname="r715343662" restype="string" datatype="java">
         <source>{start}Your total{end}\nFor additional options</source>
         <target>{start}您总计{end}\n附件选项</target>
       </trans-unit>
@@ -943,7 +943,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXProfileFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="180" resname="r271666120" restype="string" datatype="java">
+      <trans-unit id="180" resname="r947674940" restype="string" datatype="java">
         <source>Failed while take picture:</source>
         <target>拍照时错误：</target>
       </trans-unit>
@@ -951,7 +951,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXPaymentFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="181" resname="r211729301" restype="string" datatype="java">
+      <trans-unit id="181" resname="r855674847" restype="string" datatype="java">
         <source>Charge the card ending in  %s</source>
         <target>收费的银行卡尾号 %s</target>
       </trans-unit>
@@ -1079,15 +1079,15 @@
         <source>Failed to get tips detail.</source>
         <target>详细的小贴士获取失败</target>
       </trans-unit>
-      <trans-unit id="206" resname="r205431071" restype="string" datatype="java">
+      <trans-unit id="206" resname="r601449928" restype="string" datatype="java">
         <source>What to Ask Your Doc:</source>
         <target>向您的医生咨询什么：</target>
       </trans-unit>
-      <trans-unit id="207" resname="r175388555" restype="string" datatype="java">
+      <trans-unit id="207" resname="r412842851" restype="string" datatype="java">
         <source>Haiku:</source>
         <target>俳句：</target>
       </trans-unit>
-      <trans-unit id="208" resname="r624129269" restype="string" datatype="java">
+      <trans-unit id="208" resname="r548900803" restype="string" datatype="java">
         <source>Myth:</source>
         <target>神话：</target>
       </trans-unit>
@@ -1112,7 +1112,7 @@
         <source>You're a true hero!</source>
         <target>您是一个真正的英雄！</target>
       </trans-unit>
-      <trans-unit id="212" resname="r304629477" restype="string" datatype="java">
+      <trans-unit id="212" resname="r8034615" restype="string" datatype="java">
         <source>Failed to send kudos!</source>
         <target>发送荣誉失败！</target>
       </trans-unit>
@@ -1128,7 +1128,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/SearchResultsFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="215" resname="r144782424" restype="string" datatype="java">
+      <trans-unit id="215" resname="r279921341" restype="string" datatype="java">
         <source>Not finding what you need?</source>
         <target>没有找到您需要的？</target>
       </trans-unit>
@@ -1400,7 +1400,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/CareTeamTabFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="260" resname="r142513993" restype="string" datatype="java">
+      <trans-unit id="260" resname="r383257904" restype="string" datatype="java">
         <source>Practicing:</source>
         <target>诊疗中：</target>
       </trans-unit>
@@ -1428,11 +1428,11 @@
         <source>Would you like to share more details and get an immediate doctor answer?</source>
         <target>您愿意分享更多的细节并立即得到医生的回答吗？</target>
       </trans-unit>
-      <trans-unit id="266" resname="r743681507" restype="string" datatype="java">
-        <source>\nTry a Virtual Consult ›</source>
-        <target>\n尝试一次在线咨询 ›</target>
+      <trans-unit id="266" resname="r682432029" restype="string" datatype="java">
+        <source>Try a Virtual Consult ›</source>
+        <target>尝试一次在线咨询 ›</target>
       </trans-unit>
-      <trans-unit id="267" resname="r156634543" restype="string" datatype="java">
+      <trans-unit id="267" resname="r437047272" restype="string" datatype="java">
         <source>Question not posted</source>
         <target>问题未发布</target>
       </trans-unit>
@@ -1468,9 +1468,9 @@
         <source>${month_price} per month + ${consult_price} per consult</source>
         <target>${month_price} 每月 + ${consult_price} 每次咨询</target>
       </trans-unit>
-      <trans-unit id="275" resname="r371969093" restype="string" datatype="java">
-        <source>Limited-time special offer!\n</source>
-        <target>限时特价！\n</target>
+      <trans-unit id="275" resname="r673639325" restype="string" datatype="java">
+        <source>Limited-time special offer!</source>
+        <target>限时特价！</target>
       </trans-unit>
       <trans-unit id="276" resname="r422752241" restype="string" datatype="java">
         <source>Only ${price}</source>
@@ -1564,13 +1564,13 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/login/LoginFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="292" resname="r162225204" restype="string" datatype="java">
-        <source>Hi, Dr {doctor_name}!\n</source>
-        <target>您好，{doctor_name}医生!\n</target>
+      <trans-unit id="292" resname="r338685022" restype="string" datatype="java">
+        <source>Hi, Dr {doctor_name}!</source>
+        <target>您好，{doctor_name}医生!</target>
       </trans-unit>
-      <trans-unit id="293" resname="r913394239" restype="string" datatype="java">
-        <source>To log in as a doctor, please download\n</source>
-        <target>作为医生登录，请下载\n</target>
+      <trans-unit id="293" resname="r9796713" restype="string" datatype="java">
+        <source>To log in as a doctor, please download</source>
+        <target>作为医生登录，请下载</target>
       </trans-unit>
       <trans-unit id="294" resname="r832518227" restype="string" datatype="java">
         <source>HealthTap for Doctors</source>
@@ -1801,7 +1801,7 @@
         <source>We're sorry, HealthTap Concierge is not currently available in Idaho. However, you may still user HealthTap Concierge when traveling out of state!</source>
         <target>很抱歉，目前爱达荷州的HealthTap贵宾台问答人员不在。但是，当您旅行时您依旧可以使用HealthTap贵宾台！</target>
       </trans-unit>
-      <trans-unit id="336" resname="r655096408" restype="string" datatype="java">
+      <trans-unit id="336" resname="r261042682" restype="string" datatype="java">
         <source>{docname} will only be able to provide you with a second opinion on an existing diagnosis or treatment plan from your own doctor. {docname} cannot treat or diagnose you during this consult.\nIf you'd like a new diagnosis or treatment, try consulting one of our top doctors licensed in your state.</source>
         <target>{docname} 只能给您提供在您医生现有诊断或治疗计划基础上的第二意见。在咨询过程中{docname}不能进行治疗与诊断，\n如果您想要新的诊断或治疗，请在您的权限范围内尝试咨询我们的顶级医生。</target>
       </trans-unit>
@@ -1861,7 +1861,7 @@
         <source>Your invitation is sent. We'll notify you when the doctor accepts you as a patient.</source>
         <target>您的邀请已发送。当医生接受您作为患者时，我们会通知您。</target>
       </trans-unit>
-      <trans-unit id="349" resname="r762730546" restype="string" datatype="java">
+      <trans-unit id="349" resname="r189044309" restype="string" datatype="java">
         <source>Dr.</source>
         <target>医生</target>
       </trans-unit>
@@ -1917,11 +1917,11 @@
         <source>Phone format invalid</source>
         <target>无效的电话格式</target>
       </trans-unit>
-      <trans-unit id="361" resname="r49042582" restype="string" datatype="java">
+      <trans-unit id="361" resname="r50442212" restype="string" datatype="java">
         <source>Failed updating profile!</source>
         <target>无法更新个人资料！</target>
       </trans-unit>
-      <trans-unit id="362" resname="r303034997" restype="string" datatype="java">
+      <trans-unit id="362" resname="r37614480" restype="string" datatype="java">
         <source>Failed sending request!</source>
         <target>发送请求失败！</target>
       </trans-unit>
@@ -1981,7 +1981,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/tablayouts/GoalTakeActionTabLayout.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="371" resname="r68162891" restype="string" datatype="java">
+      <trans-unit id="371" resname="r843399816" restype="string" datatype="java">
         <source>There are no checklists for this goal yet.\nWant a personalized checklist?</source>
         <target>没有这个目标的检查清单。\想要专属于您的清单吗？</target>
       </trans-unit>
@@ -1997,11 +1997,11 @@
         <source>({name})</source>
         <target>({name})</target>
       </trans-unit>
-      <trans-unit id="374" resname="r375052400" restype="string" datatype="java">
+      <trans-unit id="374" resname="r675366299" restype="string" datatype="java">
         <source>and</source>
         <target>和</target>
       </trans-unit>
-      <trans-unit id="375" resname="r989347001" restype="string" datatype="java">
+      <trans-unit id="375" resname="r2882924" restype="string" datatype="java">
         <source>,</source>
         <target>,</target>
       </trans-unit>
@@ -2041,11 +2041,11 @@
         <source>Known for {known_for_topic_name}</source>
         <target>专攻{known_for_topic_name}</target>
       </trans-unit>
-      <trans-unit id="381" resname="r758898992" restype="string" datatype="java">
+      <trans-unit id="381" resname="r812841735" restype="string" datatype="java">
         <source>Here's a referral to a {expert_specialty} {start}{expert_name}{end}, you can consult for advice and treatment:</source>
         <target>以下是对{expert_specialty}{start}{expert_name}{end}的推荐，您可以咨询建议和治疗：</target>
       </trans-unit>
-      <trans-unit id="382" resname="r964861592" restype="string" datatype="java">
+      <trans-unit id="382" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
         <target>您有后续问题吗？在线咨询医生：</target>
       </trans-unit>
@@ -2091,7 +2091,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/PersonalCheckItem.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="390" resname="r33874383" restype="string" datatype="java">
+      <trans-unit id="390" resname="r475478276" restype="string" datatype="java">
         <source>{name}'s</source>
         <target>{name}'s</target>
       </trans-unit>
@@ -2132,7 +2132,7 @@
         <source>{name} created</source>
         <target>{name}已创建</target>
       </trans-unit>
-      <trans-unit id="398" resname="r626562476" restype="string" datatype="java">
+      <trans-unit id="398" resname="r984143101" restype="string" datatype="java">
         <source>Checklist:</source>
         <target>清单：</target>
       </trans-unit>
@@ -2173,7 +2173,7 @@
         <source>{doctor_name} answered</source>
         <target>{doctor_name}回答</target>
       </trans-unit>
-      <trans-unit id="406" resname="r620253570" restype="string" datatype="java">
+      <trans-unit id="406" resname="r30778288" restype="string" datatype="java">
         <source>{agreer_name} agrees with {answerer_name}'s answer</source>
         <target>{agreer_name}同意{answerer_name}的回答</target>
       </trans-unit>
@@ -2181,7 +2181,7 @@
         <source>{name} answered</source>
         <target>{name}回答</target>
       </trans-unit>
-      <trans-unit id="408" resname="r58726541" restype="string" datatype="java">
+      <trans-unit id="408" resname="r153759784" restype="string" datatype="java">
         <source>{commenter_name} commented on {answerer_name}'s answer</source>
         <target>{commenter_name}评论了{answerer_name}的答案</target>
       </trans-unit>
@@ -2250,7 +2250,7 @@
         <source>Is {first_name} alive?</source>
         <target>您的{first_name}还健在吗?</target>
       </trans-unit>
-      <trans-unit id="419" resname="r914415647" restype="string" datatype="java">
+      <trans-unit id="419" resname="r920181258" restype="string" datatype="java">
         <source>Does {first_name}'s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
         <target>您{first_name}健在的祖父母、父母或兄弟姐妹有什么主要病史吗？(危及生命或以其他？)</target>
       </trans-unit>
@@ -2287,7 +2287,7 @@
         <source>What is your height and weight?</source>
         <target>您的身高和体重？</target>
       </trans-unit>
-      <trans-unit id="426" resname="r7023058" restype="string" datatype="java">
+      <trans-unit id="426" resname="r779525598" restype="string" datatype="java">
         <source>What is {first_name}'s height and weight?</source>
         <target>{first_name}的身高和体重？</target>
       </trans-unit>
@@ -2299,7 +2299,7 @@
         <source>What is his relationship to you?</source>
         <target>他和您的关系式什么？</target>
       </trans-unit>
-      <trans-unit id="428" resname="r571031941" restype="string" datatype="java">
+      <trans-unit id="428" resname="r595763610" restype="string" datatype="java">
         <source>What is {first_name}'s relationship to you</source>
         <target>{first_name}和您的关系式什么？</target>
       </trans-unit>
@@ -2328,7 +2328,7 @@
         <target>请分享您的产科/怀孕史</target>
         <note annotates="source">This is an instruction message for patients to share their obstetric or pregnancy history</note>
       </trans-unit>
-      <trans-unit id="433" resname="r77105519" restype="string" datatype="java">
+      <trans-unit id="433" resname="r116490053" restype="string" datatype="java">
         <source>Please share {first_name}'s obstetrics/pregnancy history</source>
         <target>请分享{first_name}'s的产科/怀孕史</target>
       </trans-unit>
@@ -2410,7 +2410,7 @@
         <source>What ethnicity are you?</source>
         <target>您的民族？</target>
       </trans-unit>
-      <trans-unit id="448" resname="r1005343913" restype="string" datatype="java">
+      <trans-unit id="448" resname="r178597753" restype="string" datatype="java">
         <source>What is {first_name}'s ethnicity?</source>
         <target>{first_name}的民族？</target>
       </trans-unit>
@@ -2476,7 +2476,7 @@
         <source>How would you classify your consumption of alcohol?</source>
         <target>您如何分类您的饮酒量？</target>
       </trans-unit>
-      <trans-unit id="460" resname="r153507971" restype="string" datatype="java">
+      <trans-unit id="460" resname="r482433768" restype="string" datatype="java">
         <source>How would you classify {first_name}'s consumption of alcohol?</source>
         <target>{first_name}如何分类您的饮酒量？</target>
       </trans-unit>
@@ -2614,7 +2614,7 @@
         <source>Please enter some note or select text.</source>
         <target>请输入一些备注或选择文本。</target>
       </trans-unit>
-      <trans-unit id="483" resname="r60757773" restype="string" datatype="java">
+      <trans-unit id="483" resname="r287900893" restype="string" datatype="java">
         <source>Thank you!</source>
         <target>谢谢您！</target>
       </trans-unit>
@@ -2698,7 +2698,7 @@
         <source>Please enter your feedback</source>
         <target>请输入您的反馈</target>
       </trans-unit>
-      <trans-unit id="499" resname="r180611118" restype="string" datatype="java">
+      <trans-unit id="499" resname="r287900893" restype="string" datatype="java">
         <source>Thank you!</source>
         <target>谢谢您！</target>
       </trans-unit>
@@ -2766,7 +2766,7 @@
         <source>You're account has been deactivated and you've been logged out. We hope you come back soon :)</source>
         <target>您的账户已无效，您已经登出。我们希望您尽快回来 :)</target>
       </trans-unit>
-      <trans-unit id="513" resname="r1053853380" restype="string" datatype="java">
+      <trans-unit id="513" resname="r987771035" restype="string" datatype="java">
         <source>Sorry, there was a problem</source>
         <target>抱歉，有一个问题</target>
       </trans-unit>
@@ -2927,7 +2927,7 @@
         <target>为了便于我们的医生回答，您的问题已更新 :)</target>
         <note annotates="source">Body message. This refers to users editing the question they previously posted for answers and update it successfully. Do not translate the smilling face.</note>
       </trans-unit>
-      <trans-unit id="540" resname="r528066642" restype="string" datatype="java">
+      <trans-unit id="540" resname="r252543260" restype="string" datatype="java">
         <source>Question:</source>
         <target>问题：</target>
         <note annotates="source">Refers to a question previously posted by the user, followed by an error message.</note>
@@ -3086,7 +3086,7 @@
         <source>How is {name} insured?</source>
         <target>{name}如何投保？</target>
       </trans-unit>
-      <trans-unit id="564" resname="r729325316" restype="string" datatype="java">
+      <trans-unit id="564" resname="r409490200" restype="string" datatype="java">
         <source>Are you sure?</source>
         <target>您确定吗？</target>
       </trans-unit>
@@ -3336,7 +3336,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/CreditCardEditView.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="612" resname="r419405630" restype="string" datatype="java">
+      <trans-unit id="612" resname="r1018816419" restype="string" datatype="java">
         <source>Failed performing payment request. Error code:</source>
         <target>执行付款要求失败。错误编码：</target>
       </trans-unit>
@@ -3517,7 +3517,7 @@
         <target>您已关注{0}！</target>
         <note annotates="source">{0} is an influencer's name.</note>
       </trans-unit>
-      <trans-unit id="645" resname="r50538946" restype="string" datatype="java">
+      <trans-unit id="645" resname="r147358463" restype="string" datatype="java">
         <source>We'll highlight this influencer's insights for you on your feed.</source>
         <target>我们将在您的主页突出该影响者的见解。</target>
       </trans-unit>
@@ -3734,7 +3734,7 @@
         <target>在 {1}, {2} {3} {4}与{0}的预约取消</target>
         <note annotates="source">This is a notification message for appointment cancellation. {0} is a doctor name. {1} is a weekday. {2} is a date. {3} is a time slot. {4} is a timezone.</note>
       </trans-unit>
-      <trans-unit id="682" resname="r88451716" restype="string" datatype="java">
+      <trans-unit id="682" resname="r904183721" restype="string" datatype="java">
         <source>As this appointment is less than 24 hours away, it cannot be refunded if cancelled now.</source>
         <target>由于此预约不到24小时，如果现在取消预订，将不予退还。</target>
       </trans-unit>
@@ -3780,7 +3780,7 @@
   </file>
   <file original="src/com/healthtap/userhtexpress/activity/MainActivity.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
-      <trans-unit id="689" resname="r777231780" restype="string" datatype="java">
+      <trans-unit id="689" resname="r892816468" restype="string" datatype="java">
         <source>Failed to share on Facebook:</source>
         <target>无法在Facebook上分享：</target>
       </trans-unit>
@@ -5137,10 +5137,6 @@
       <trans-unit id="1013" resname="new_user_msg" restype="string" datatype="x-android-resource">
         <source>There is no account with this email.</source>
         <target>这个邮箱下没有账户。</target>
-      </trans-unit>
-      <trans-unit id="1014" resname="deactivate_user_msg" restype="string" datatype="x-android-resource">
-        <source>This account has been deactivated. <u>Contact us</u>"" to re-activate it.</source>
-        <target>这个账户已经冻结。<u>联系我们</u>"" 重新激活它。</target>
       </trans-unit>
       <trans-unit id="1015" resname="create_account_msg" restype="string" datatype="x-android-resource">
         <source>Create an account</source>
@@ -7143,8 +7139,8 @@
         <target>给予${price}，得到${price}</target>
       </trans-unit>
       <trans-unit id="1482" resname="gift_description_concierge" restype="string" datatype="x-android-resource">
-        <source>Get &lt;font color=&apos;#FAA500&apos;&gt;${price}&lt;font&gt; for each consult purchased through your referral link:</source>
-        <target>获得&lt;font color=&apos;#FAA500&apos;&gt;${price}&lt;font&gt; 通过推荐您的链接购买的每次咨询：</target>
+        <source>Get &lt;font color='#FAA500'&gt;${price}&lt;font&gt; for each consult purchased through your referral link:</source>
+        <target>获得&lt;font color='#FAA500'&gt;${price}&lt;font&gt; 通过推荐您的链接购买的每次咨询：</target>
       </trans-unit>
       <trans-unit id="1483" resname="gift_share_text_dialog" restype="string" datatype="x-android-resource">
         <source>Share on social media:</source>
@@ -8563,7 +8559,7 @@
         <target>申请保险</target>
       </trans-unit>
       <trans-unit id="1834" resname="insurance_form_plan_name_accepted" restype="string" datatype="x-android-resource">
-        <source>{plan_name} accepted!></source>
+        <source>{plan_name} accepted!&gt;</source>
         <target>{plan_name} 已接受&gt;</target>
       </trans-unit>
       <trans-unit id="1835" resname="insurance_form_change" restype="string" datatype="x-android-resource">

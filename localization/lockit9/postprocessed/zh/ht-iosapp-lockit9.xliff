@@ -53,7 +53,7 @@
         <target state="translated">您好！</target>
         <note annotates="source">symptom triage tutorial header string</note>
       </trans-unit>
-      <trans-unit id="13" resname="I'm Dr. A.I., and I work with over 94,000 doctors to help understand your symptoms and show you the best path to feeling good. Let's get started!" restype="string" datatype="x-objective-c">
+      <trans-unit id="13" resname="I&apos;m Dr. A.I., and I work with over 94,000 doctors to help understand your symptoms and show you the best path to feeling good. Let&apos;s get started!" restype="string" datatype="x-objective-c">
         <source>I'm Dr. A.I., and I work with over 94,000 doctors to help understand your symptoms and show you the best path to feeling good. Let's get started!</source>
         <target state="translated">我是A.I.医生，我与超过94,000名医生合作，帮助了解您的症状，并告诉您最好的感觉良好的方法。 让我们开始吧！</target>
         <note annotates="source">symptom triage tutorial subheader string</note>
@@ -95,7 +95,7 @@
   </file>
   <file original="feelgood/Data/FGAvailableTalk2Docs.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="18" resname="In Dr. %@'s referral network" restype="string" datatype="x-objective-c">
+      <trans-unit id="18" resname="In Dr. %@&apos;s referral network" restype="string" datatype="x-objective-c">
         <source>In Dr. %@'s referral network</source>
         <target state="translated">在医生%@的转诊网络</target>
       </trans-unit>
@@ -103,7 +103,7 @@
   </file>
   <file original="feelgood/AskDocsV4/HTAskDocsV4SpecificExpertModesViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="19" resname="We're sorry but we are unable to contact the server. Please try again in a bit." restype="string" datatype="x-objective-c">
+      <trans-unit id="19" resname="We&apos;re sorry but we are unable to contact the server. Please try again in a bit." restype="string" datatype="x-objective-c">
         <source>We're sorry but we are unable to contact the server. Please try again in a bit.</source>
         <target state="translated">很抱歉，我们无法与服器联络。 请稍后重新尝试。</target>
       </trans-unit>

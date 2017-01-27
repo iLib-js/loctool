@@ -152,13 +152,13 @@
   <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="30" resname="r717299647" restype="string" datatype="java">
-        <source>You haven&apos;t selected a stethoscope yet</source>
+        <source>You haven't selected a stethoscope yet</source>
         <target>您尚未选择听诊器</target>
       </trans-unit>
       <trans-unit id="31" resname="r195753892" restype="string" datatype="java">
         <source>{sound_track_id}, Len: %d</source>
         <target>{sound_track_id}, Len:%d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="java">
         <source>Select a track you want to download</source>
@@ -193,8 +193,8 @@
         <target>无法下载pdf</target>
       </trans-unit>
       <trans-unit id="39" resname="r795802560" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target>诊断码：\n</target>
+        <source>Diagnosis codes:</source>
+        <target>诊断码：</target>
       </trans-unit>
     </body>
   </file>

@@ -3,48 +3,48 @@
   <file original="feelgood/iPadNative/Goals/FGGoalsBaseViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" restype="string" datatype="x-objective-c">
-        <source>We&apos;ll share more tips and checklists to help you with &quot;%@&quot;</source>
-        <target state="new">我们会跟您分享提示和清单有助于&quot;%@&quot;</target>
+        <source>We'll share more tips and checklists to help you with "%@"</source>
+        <target state="new">我们会跟您分享提示和清单有助于"%@"</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/iPadNative/Checklist/FGIpadChecklistViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="2" resname="Do you want to remove this action from your &quot;To Do&quot; list?" restype="string" datatype="x-objective-c">
-        <source>Do you want to remove this action from your &quot;To Do&quot; list?</source>
-        <target state="new">要不要把从 &quot;待办事项列表&quot;删掉这此活动？</target>
+        <source>Do you want to remove this action from your "To Do" list?</source>
+        <target state="new">要不要把从 "待办事项列表"删掉这此活动？</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGSideMenuViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="3" resname="%d&apos;%d&quot; &#40;%.02fm&#41;" restype="string" datatype="x-objective-c">
-        <source>%d&apos;%d&quot; &#40;%.02fm&#41;</source>
-        <target state="new">%d&apos;%d&quot; &#40;%.02fm&#41;</target>
+      <trans-unit id="3" resname="%d&apos;%d&quot; (%.02fm)" restype="string" datatype="x-objective-c">
+        <source>%d'%d" (%.02fm)</source>
+        <target state="new">%d'%d" (%.02fm)</target>
       </trans-unit>
-      <trans-unit id="4" resname="%@&apos;0&quot; &#40;%.02fm&#41;" restype="string" datatype="x-objective-c">
-        <source>%@&apos;0&quot; &#40;%.02fm&#41;</source>
-        <target state="new">%@&apos;0&quot; &#40;%.02fm&#41;</target>
+      <trans-unit id="4" resname="%@&apos;0&quot; (%.02fm)" restype="string" datatype="x-objective-c">
+        <source>%@'0" (%.02fm)</source>
+        <target state="new">%@'0" (%.02fm)</target>
       </trans-unit>
-      <trans-unit id="5" resname="%@&apos;%@&quot; &#40;%.02fm&#41;" restype="string" datatype="x-objective-c">
-        <source>%@&apos;%@&quot; &#40;%.02fm&#41;</source>
-        <target state="new">%@&apos;%@&quot; &#40;%.02fm&#41;</target>
+      <trans-unit id="5" resname="%@&apos;%@&quot; (%.02fm)" restype="string" datatype="x-objective-c">
+        <source>%@'%@" (%.02fm)</source>
+        <target state="new">%@'%@" (%.02fm)</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGNuxSignupViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="6" resname="Please download the &quot;HealthTap for Doctors&quot; app to login or signup as a doctor with a valid US medical license" restype="string" datatype="x-objective-c">
-        <source>Please download the &quot;HealthTap for Doctors&quot; app to login or signup as a doctor with a valid US medical license</source>
-        <target state="new">作为有美国医疗许可的医生，请下载 &quot;为医生的HealthTap&quot; 应用程序登录或注册</target>
+        <source>Please download the "HealthTap for Doctors" app to login or signup as a doctor with a valid US medical license</source>
+        <target state="new">作为有美国医疗许可的医生，请下载 "为医生的HealthTap" 应用程序登录或注册</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGLiveChatViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="7" resname="A device connection code allows another app or medical device to securely send health data to this patient&apos;s chart. If you have an app requesting a &quot;device connection code&quot; or &quot;verification code&quot;, please use the code displayed here." restype="string" datatype="x-objective-c">
-        <source>A device connection code allows another app or medical device to securely send health data to this patient&apos;s chart. If you have an app requesting a &quot;device connection code&quot; or &quot;verification code&quot;, please use the code displayed here.</source>
-        <target state="new">设备连接代码允许另一个应用程序或医疗设备安全地向该患者的图表发送健康数据。 如果您正使用的应用程序需要&quot;设备连接代码&quot;或&quot;验证码&quot;，请使用下面显示的代码。</target>
+        <source>A device connection code allows another app or medical device to securely send health data to this patient's chart. If you have an app requesting a "device connection code" or "verification code", please use the code displayed here.</source>
+        <target state="new">设备连接代码允许另一个应用程序或医疗设备安全地向该患者的图表发送健康数据。 如果您正使用的应用程序需要"设备连接代码"或"验证码"，请使用下面显示的代码。</target>
       </trans-unit>
     </body>
   </file>
@@ -77,91 +77,89 @@
       <trans-unit id="13" resname="Thanks!{pre-number}1{post-number}symptom added." restype="string" datatype="x-objective-c">
         <source>Thanks!{pre-number}1{post-number}symptom added.</source>
         <target state="new">谢谢！加了{pre-number}1{post-number}症状。</target>
-        <note annotates="source">symptom triage 1 succesful symptom added banner text. &quot;pre-number&quot; represents text pre number and &quot;post-number&quot; what goes after the number. The number is always 1. No spaces between parts please.</note>
+        <note annotates="source">symptom triage 1 succesful symptom added banner text. "pre-number" represents text pre number and "post-number" what goes after the number. The number is always 1. No spaces between parts please.</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSymptomTriageSearchViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="14" resname="Are you sure you want to remove &quot;%@&quot;?" restype="string" datatype="x-objective-c">
-        <source>Are you sure you want to remove &quot;%@&quot;?</source>
-        <target state="new">您确定要删除&quot;%@&quot;吗？</target>
+        <source>Are you sure you want to remove "%@"?</source>
+        <target state="new">您确定要删除"%@"吗？</target>
         <note annotates="source">remove symptom confirmation message</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTSymptomTriageDisclaimerViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="15" resname="The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. &quot;Dr. A.I.&quot; is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
-        <source>The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. &quot;Dr. A.I.&quot; is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source>
-        <target state="new"> HealthTap网络上的所有信息 &#40;包括此工具&#41;仅用于教育和信息目的，不构成医疗建议，诊断或治疗建议。 &quot;Dr. A.I.&quot; 并不是医生，此仅是以医生创建的医学知识库为基础的工具，包括症状和相关条件。 您如果认为可能出现医疗紧急情况，请立即致给医生打电话或亲子去看医生。 请参阅{开始}其他信息{结束}。</target>
+      <trans-unit id="15" resname="The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. &quot;Dr. A.I.&quot; is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
+        <source>The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. "Dr. A.I." is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source>
+        <target state="new">HealthTap网络上的所有信息 (包括此工具)仅用于教育和信息目的，不构成医疗建议，诊断或治疗建议。 "Dr. A.I." 并不是医生，此仅是以医生创建的医学知识库为基础的工具，包括症状和相关条件。 您如果认为可能出现医疗紧急情况，请立即致给医生打电话或亲子去看医生。 请参阅{开始}其他信息{结束}。</target>
         <note annotates="source">Generic disclaimer message</note>
       </trans-unit>
-      <trans-unit id="16" resname="&quot;Dr. A.I.&quot; is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have &#40;or don&apos;t have&#41; any particular potential conditions. The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
-        <source>&quot;Dr. A.I.&quot; is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have &#40;or don&apos;t have&#41; any particular potential conditions. The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source>
-        <target state="new">&quot;Dr. A.I.&quot; 并不是医生，此仅是以医生创建的医学知识库为基础的工具，包括症状和相关条件。 当您决定使用此工具时，工具可能会计算并显示与您输入的症状和数据相关的症状或治疗选项。 该信息不是诊断，并且不意味着您具有（或不具有）任何特定的潜在条件。 HealthTap（包括此工具）的信息仅用于教育和信息目的，不构成医疗建议，诊断或治疗建议。 您如果认为可能出现医疗紧急情况，请立即致给医生打电话或亲子去看医生。 请参阅{开始}其他信息{结束}。</target>
+      <trans-unit id="16" resname="&quot;Dr. A.I.&quot; is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have (or don&apos;t have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
+        <source>"Dr. A.I." is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have (or don't have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source>
+        <target state="new">"Dr. A.I." 并不是医生，此仅是以医生创建的医学知识库为基础的工具，包括症状和相关条件。 当您决定使用此工具时，工具可能会计算并显示与您输入的症状和数据相关的症状或治疗选项。 该信息不是诊断，并且不意味着您具有（或不具有）任何特定的潜在条件。 HealthTap（包括此工具）的信息仅用于教育和信息目的，不构成医疗建议，诊断或治疗建议。 您如果认为可能出现医疗紧急情况，请立即致给医生打电话或亲子去看医生。 请参阅{开始}其他信息{结束}。</target>
         <note annotates="source">Nondiagnosis disclaimer message</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTRateConsultCommentsViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="17" resname="Please provide details regarding &quot;%@&quot; &#40;Optional&#41;" restype="string" datatype="x-objective-c">
-        <source>Please provide details regarding &quot;%@&quot; &#40;Optional&#41;</source>
-        <target state="new">Please provide details regarding &quot;%@&quot; &#40;Optional&#41;</target>
+      <trans-unit id="17" resname="Please provide details regarding &quot;%@&quot; (Optional)" restype="string" datatype="x-objective-c">
+        <source>Please provide details regarding "%@" (Optional)</source>
+        <target state="new">Please provide details regarding "%@" (Optional)</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTBaseTutorialView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="18" resname="When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone" restype="string" datatype="x-objective-c">
-        <source>When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone</source>
-        <target state="new">看医生的时候，\n请点击您苹果手表或手机上的 &quot;DocNow&quot; 按钮\n</target>
+        <source>When you need to see a doctor,\nsimply tap the "DocNow" button\non your Apple Watch or iPhone</source>
+        <target state="new">看医生的时候，\n请点击您苹果手表或手机上的 "DocNow" 按钮\n</target>
         <note annotates="source">Tutorial step 1</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGT2DPersonalizeSliderQuestion.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="19" resname="%d&apos;%d&quot; &#40;%.2fm&#41;" restype="string" datatype="x-objective-c">
-        <source>%d&apos;%d&quot; &#40;%.2fm&#41;</source>
-        <target state="new">%d&apos;%d&quot; &#40;%.2fm&#41;</target>
+      <trans-unit id="19" resname="%d&apos;%d&quot; (%.2fm)" restype="string" datatype="x-objective-c">
+        <source>%d'%d" (%.2fm)</source>
+        <target state="new">%d'%d" (%.2fm)</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="20" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivitis\n•\tAcute Cystitis\n•\tAcute Pharyngitis\n•\tAcute Sinusitis\n•\tAllergies\n•\tAsthma &#40;stable / non-emergency&#41;\n•\tAthlete’s Foot\n•\tBack Pain\n•\tBee Sting\n•\tBladder infections\n•\tCellulitis &#40;skin infection&#41;\n•\tCold\n•\tCough\n•\tDepression\n•\tDiarrhea\n•\tDry Scalp\n•\tDry Skin &#40;Eczema&#41;\n•\tEye Irritation\n•\tFever\n•\tGenital Lesions\n•\tHay Fever\n•\tHeadache\n•\tHeartburn &#40;Gastroesophageal Reflux Disease, or GERD&#41;\n•\tInfluenza\n•\tLab Interpretation\n•\tLice\n•\tNasal Congestion\n•\tNausea\n•\tNosebleed\n•\tPainful Urination\n•\tPink Eye\n•\tPoison Oak / Poison Ivy\n•\tRash\n•\tRespiratory Infection\n•\tRolled Ankle\n•\tScabies\n•\tSeborrheic Dermatitis &#40;Dry Scalp&#41;\n•\tSkin Infection\n•\tSports Injuries\n•\tStrep Throat\n•\tTravel Medicine\n•\tUpper Respiratory Infection\n•\tUrinary Tract Infection\n•\tVaginal Itching\n•\tYeast Infection\n\n" restype="string" datatype="x-objective-c">
-        <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivitis\n•\tAcute Cystitis\n•\tAcute Pharyngitis\n•\tAcute Sinusitis\n•\tAllergies\n•\tAsthma &#40;stable / non-emergency&#41;\n•\tAthlete’s Foot\n•\tBack Pain\n•\tBee Sting\n•\tBladder infections\n•\tCellulitis &#40;skin infection&#41;\n•\tCold\n•\tCough\n•\tDepression\n•\tDiarrhea\n•\tDry Scalp\n•\tDry Skin &#40;Eczema&#41;\n•\tEye Irritation\n•\tFever\n•\tGenital Lesions\n•\tHay Fever\n•\tHeadache\n•\tHeartburn &#40;Gastroesophageal Reflux Disease, or GERD&#41;\n•\tInfluenza\n•\tLab Interpretation\n•\tLice\n•\tNasal Congestion\n•\tNausea\n•\tNosebleed\n•\tPainful Urination\n•\tPink Eye\n•\tPoison Oak / Poison Ivy\n•\tRash\n•\tRespiratory Infection\n•\tRolled Ankle\n•\tScabies\n•\tSeborrheic Dermatitis &#40;Dry Scalp&#41;\n•\tSkin Infection\n•\tSports Injuries\n•\tStrep Throat\n•\tTravel Medicine\n•\tUpper Respiratory Infection\n•\tUrinary Tract Infection\n•\tVaginal Itching\n•\tYeast Infection\n\n</source>
-      <target state="new">•\ t腹部疼痛\ n•\ t急性支气管炎\ n•\ t急性结膜炎\ n•\ t急性膀胱炎\ n•\ t急性咽炎\ n•\ t急性鼻窦炎\ n•\ tAllergies \ n•\ tAhma ）\ n•\ t•伤害\ n•\ t•伤害\ n•\ t腹泻\ n•\ t皮肤伤害\ n•\ t皮肤伤害（湿疹）\ n•\ tEye刺激\ n•\ t发烧\ n•\ tGenital病变\ n•\ t发热\ n•\ tHeadache \ n• \ tHeartburn（胃食管反流病或GERD）\ n•\ tInfluenza \ n•\ tLab诠释\ n•\ tLice \ n•\ t鼻塞现象\ n•\ n恶心\ n•\ t无效\ n•\ •\ tPink Eye \ n•\ tPoison Oak / Poison Ivy \ n•\ tRash \ n•\ t呼吸道感染\ n•\ t滚动踝关节\ n•\ tScabies \ n•\ t骨水疱性皮炎（干性头皮）\ n•\ tSkin感染\ n•\ t运动伤害\ n•\ tStrep喉咙\ n•\ t旅行医学\ n•\ t上呼吸道感染\ n•\ t泌尿道感染\ n•\ t阴道瘙痒\ n•\ tYeast感染\ n \ n</target>
+      <trans-unit id="20" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivitis\n•\tAcute Cystitis\n•\tAcute Pharyngitis\n•\tAcute Sinusitis\n•\tAllergies\n•\tAsthma (stable / non-emergency)\n•\tAthlete’s Foot\n•\tBack Pain\n•\tBee Sting\n•\tBladder infections\n•\tCellulitis (skin infection)\n•\tCold\n•\tCough\n•\tDepression\n•\tDiarrhea\n•\tDry Scalp\n•\tDry Skin (Eczema)\n•\tEye Irritation\n•\tFever\n•\tGenital Lesions\n•\tHay Fever\n•\tHeadache\n•\tHeartburn (Gastroesophageal Reflux Disease, or GERD)\n•\tInfluenza\n•\tLab Interpretation\n•\tLice\n•\tNasal Congestion\n•\tNausea\n•\tNosebleed\n•\tPainful Urination\n•\tPink Eye\n•\tPoison Oak / Poison Ivy\n•\tRash\n•\tRespiratory Infection\n•\tRolled Ankle\n•\tScabies\n•\tSeborrheic Dermatitis (Dry Scalp)\n•\tSkin Infection\n•\tSports Injuries\n•\tStrep Throat\n•\tTravel Medicine\n•\tUpper Respiratory Infection\n•\tUrinary Tract Infection\n•\tVaginal Itching\n•\tYeast Infection\n\n" restype="string" datatype="x-objective-c">
+        <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivitis\n•\tAcute Cystitis\n•\tAcute Pharyngitis\n•\tAcute Sinusitis\n•\tAllergies\n•\tAsthma (stable / non-emergency)\n•\tAthlete’s Foot\n•\tBack Pain\n•\tBee Sting\n•\tBladder infections\n•\tCellulitis (skin infection)\n•\tCold\n•\tCough\n•\tDepression\n•\tDiarrhea\n•\tDry Scalp\n•\tDry Skin (Eczema)\n•\tEye Irritation\n•\tFever\n•\tGenital Lesions\n•\tHay Fever\n•\tHeadache\n•\tHeartburn (Gastroesophageal Reflux Disease, or GERD)\n•\tInfluenza\n•\tLab Interpretation\n•\tLice\n•\tNasal Congestion\n•\tNausea\n•\tNosebleed\n•\tPainful Urination\n•\tPink Eye\n•\tPoison Oak / Poison Ivy\n•\tRash\n•\tRespiratory Infection\n•\tRolled Ankle\n•\tScabies\n•\tSeborrheic Dermatitis (Dry Scalp)\n•\tSkin Infection\n•\tSports Injuries\n•\tStrep Throat\n•\tTravel Medicine\n•\tUpper Respiratory Infection\n•\tUrinary Tract Infection\n•\tVaginal Itching\n•\tYeast Infection\n\n</source>
+        <target state="new">•\ t腹部疼痛\ n•\ t急性支气管炎\ n•\ t急性结膜炎\ n•\ t急性膀胱炎\ n•\ t急性咽炎\ n•\ t急性鼻窦炎\ n•\ tAllergies \ n•\ tAhma ）\ n•\ t•伤害\ n•\ t•伤害\ n•\ t腹泻\ n•\ t皮肤伤害\ n•\ t皮肤伤害（湿疹）\ n•\ tEye刺激\ n•\ t发烧\ n•\ tGenital病变\ n•\ t发热\ n•\ tHeadache \ n• \ tHeartburn（胃食管反流病或GERD）\ n•\ tInfluenza \ n•\ tLab诠释\ n•\ tLice \ n•\ t鼻塞现象\ n•\ n恶心\ n•\ t无效\ n•\ •\ tPink Eye \ n•\ tPoison Oak / Poison Ivy \ n•\ tRash \ n•\ t呼吸道感染\ n•\ t滚动踝关节\ n•\ tScabies \ n•\ t骨水疱性皮炎（干性头皮）\ n•\ tSkin感染\ n•\ t运动伤害\ n•\ tStrep喉咙\ n•\ t旅行医学\ n•\ t上呼吸道感染\ n•\ t泌尿道感染\ n•\ t阴道瘙痒\ n•\ tYeast感染\ n \ n</target>
         <note annotates="source">Common reasons to use virtual consults bullets full list</note>
       </trans-unit>
       <trans-unit id="21" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n\n\n" restype="string" datatype="x-objective-c">
         <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n\n\n</source>
-     <target state="new">•\ t腹部疼痛\ n•\ t急性支气管炎\ n•\ t急性结膜炎\ n•\ t急性膀胱炎\n\n\n</target>
-        <target state="new">•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n\n\n</target>
         <note annotates="source">Common reasons to use virtual consults bullets full list</note>
       </trans-unit>
       <trans-unit id="22" resname="Common reasons to use Virtual Consults\n" restype="string" datatype="x-objective-c">
         <source>Common reasons to use Virtual Consults\n</source>
-    <target state="new">参加远程医生咨询常见的原因\n</target>
+        <target state="new">参加远程医生咨询常见的原因\n</target>
       </trans-unit>
       <trans-unit id="23" resname="Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n" restype="string" datatype="x-objective-c">
         <source>Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n</source>
-     <target state="new">如果您担心有紧急情况，请立即呼叫%@或找医生。 例如，如果您遇到以下任何医疗问题，请立即转到%@：\ n \ n</target>
+        <target state="new">如果您担心有紧急情况，请立即呼叫%@或找医生。 例如，如果您遇到以下任何医疗问题，请立即转到%@：\ n \ n</target>
         <note annotates="source">When not to use Virtual consults explanation</note>
       </trans-unit>
-      <trans-unit id="24" resname="•\tChest pain or pressure\n•\tConvulsions or seizures\n•\tDifficulty breathing\n•\tMental health /  behavioral health / addiction issues\n•\tModerate to severe burns\n•\tPain medication &#40;narcotics&#41;\n•\tPoisoning\n•\tSerious head, neck, or back injury\n•\tSerious limb impairment or broken bone&#40;s&#41;\n•\tSignificant, uncontrolled bleeding\n•\tSuicide ideation\n•\tUnconsciousness\n•\tAny other critical or life-threatening situation\n\n" restype="string" datatype="x-objective-c">
-        <source>•\tChest pain or pressure\n•\tConvulsions or seizures\n•\tDifficulty breathing\n•\tMental health /  behavioral health / addiction issues\n•\tModerate to severe burns\n•\tPain medication &#40;narcotics&#41;\n•\tPoisoning\n•\tSerious head, neck, or back injury\n•\tSerious limb impairment or broken bone&#40;s&#41;\n•\tSignificant, uncontrolled bleeding\n•\tSuicide ideation\n•\tUnconsciousness\n•\tAny other critical or life-threatening situation\n\n</source>
-    <target state="new">•\ t最高的疼痛或压力\ n•\ t痉挛或癫痫发作\ n•\ t困难呼吸\ n•\ t心理健康/行为健康/成瘾问题\ n•\ t严重烧伤\ n•\ t使用药物 •\ t消失\ n•\ t严重的头部，颈部或背部受伤\ n•\ t严重肢体损伤或骨折\ n•\ t严重不受控制的出血\ n•\ t自杀意念\ n•\ u2 \ \ t任何其他危急或危及生命的情况\ n \ n</target>
+      <trans-unit id="24" resname="•\tChest pain or pressure\n•\tConvulsions or seizures\n•\tDifficulty breathing\n•\tMental health /  behavioral health / addiction issues\n•\tModerate to severe burns\n•\tPain medication (narcotics)\n•\tPoisoning\n•\tSerious head, neck, or back injury\n•\tSerious limb impairment or broken bone(s)\n•\tSignificant, uncontrolled bleeding\n•\tSuicide ideation\n•\tUnconsciousness\n•\tAny other critical or life-threatening situation\n\n" restype="string" datatype="x-objective-c">
+        <source>•\tChest pain or pressure\n•\tConvulsions or seizures\n•\tDifficulty breathing\n•\tMental health /  behavioral health / addiction issues\n•\tModerate to severe burns\n•\tPain medication (narcotics)\n•\tPoisoning\n•\tSerious head, neck, or back injury\n•\tSerious limb impairment or broken bone(s)\n•\tSignificant, uncontrolled bleeding\n•\tSuicide ideation\n•\tUnconsciousness\n•\tAny other critical or life-threatening situation\n\n</source>
+        <target state="new">•\ t最高的疼痛或压力\ n•\ t痉挛或癫痫发作\ n•\ t困难呼吸\ n•\ t心理健康/行为健康/成瘾问题\ n•\ t严重烧伤\ n•\ t使用药物 •\ t消失\ n•\ t严重的头部，颈部或背部受伤\ n•\ t严重肢体损伤或骨折\ n•\ t严重不受控制的出血\ n•\ t自杀意念\ n•\ u2 \ \ t任何其他危急或危及生命的情况\ n \ n</target>
         <note annotates="source">When not to use Virtual consults bullets</note>
       </trans-unit>
       <trans-unit id="25" resname="What not to expect\n" restype="string" datatype="x-objective-c">
         <source>What not to expect\n</source>
       </trans-unit>
-      <trans-unit id="26" resname="•\tAny prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n•\tAny prescriptions for medications that are restricted by individual states\n•\tAny prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n•\tConsults in languages other than English\n•\tInstant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
-        <source>•\tAny prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n•\tAny prescriptions for medications that are restricted by individual states\n•\tAny prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n•\tConsults in languages other than English\n•\tInstant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
-     <target state="new">\ t麻醉药或DEA（禁毒管理）受控物质（附表一，二，三，四）的处方\ n•\ t受个别国家限制的药物的处方\ n•\ t精神病或生活方式药物的处方 例如饮食或勃起功能障碍药物）\ n•\ t使用非英语语言的结果\ n•\ t对收件箱/消息咨询的即时回复（考虑与可用医生的视频咨询以获得更快的护理</target>
+      <trans-unit id="26" resname="•\tAny prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n•\tAny prescriptions for medications that are restricted by individual states\n•\tAny prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n•\tConsults in languages other than English\n•\tInstant responses to inbox / message consults (consider video consults with available doctors for faster care)" restype="string" datatype="x-objective-c">
+        <source>•\tAny prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n•\tAny prescriptions for medications that are restricted by individual states\n•\tAny prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n•\tConsults in languages other than English\n•\tInstant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
+        <target state="new">\ t麻醉药或DEA（禁毒管理）受控物质（附表一，二，三，四）的处方\ n•\ t受个别国家限制的药物的处方\ n•\ t精神病或生活方式药物的处方 例如饮食或勃起功能障碍药物）\ n•\ t使用非英语语言的结果\ n•\ t对收件箱/消息咨询的即时回复（考虑与可用医生的视频咨询以获得更快的护理</target>
         <note annotates="source">What not to expect bullets</note>
       </trans-unit>
       <trans-unit id="27" resname="remove" restype="string" datatype="x-objective-c">
@@ -176,12 +174,12 @@
     <body>
       <trans-unit id="29" resname="Hello!" restype="string" datatype="x-objective-c">
         <source>Hello!</source>
-   <target state="new">你好！</target>
+        <target state="new">你好！</target>
         <note annotates="source">symptom triage tutorial header string</note>
       </trans-unit>
       <trans-unit id="30" resname="I&apos;m Dr. A.I., and I work with over 94,000 doctors to help understand your symptoms and show you the best path to feeling good. Let&apos;s get started!" restype="string" datatype="x-objective-c">
-        <source>I&apos;m Dr. A.I., and I work with over 94,000 doctors to help understand your symptoms and show you the best path to feeling good. Let&apos;s get started!</source>
-   <target state="new">我是A.I.大夫，我与超过94,000名医生合作了解你的症状，并给你解释最好的治疗方法。 开始吧</target>
+        <source>I'm Dr. A.I., and I work with over 94,000 doctors to help understand your symptoms and show you the best path to feeling good. Let's get started!</source>
+        <target state="new">我是A.I.大夫，我与超过94,000名医生合作了解你的症状，并给你解释最好的治疗方法。 开始吧</target>
         <note annotates="source">symptom triage tutorial subheader string</note>
       </trans-unit>
     </body>
@@ -190,8 +188,6 @@
     <body>
       <trans-unit id="31" resname="Tap and drag" restype="string" datatype="x-objective-c">
         <source>Tap and drag</source>
-   <target state="new">点按并拖动</target>
-        <target>  </target>
         <note annotates="source">title of body picker while doing a long press zoom</note>
       </trans-unit>
     </body>
@@ -208,7 +204,7 @@
     <body>
       <trans-unit id="33" resname="Password recovery" restype="string" datatype="x-objective-c">
         <source>Password recovery</source>
-    <target state="new">找回密码</target>
+        <target state="new">找回密码</target>
       </trans-unit>
     </body>
   </file>
@@ -216,22 +212,22 @@
     <body>
       <trans-unit id="34" resname="\n\n%@ approved this translation of %@" restype="string" datatype="x-objective-c">
         <source>\n\n%@ approved this translation of %@</source>
-    <target state="new">\n\n%@ 已批准此翻译%@</target>
+        <target state="new">\n\n%@ 已批准此翻译%@</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGAvailableTalk2Docs.m" source-language="en-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="35" resname="In Dr. %@&apos;s referral network" restype="string" datatype="x-objective-c">
-        <source>In Dr. %@&apos;s referral network</source>
-    <target state="new">在 %@ 大夫推荐网络</target>
+        <source>In Dr. %@'s referral network</source>
+        <target state="new">在 %@ 大夫推荐网络</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/AskDocsV4/HTAskDocsV4SpecificExpertModesViewController.m" source-language="en-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="36" resname="We&apos;re sorry but we are unable to contact the server. Please try again in a bit." restype="string" datatype="x-objective-c">
-        <source> We&apos;re sorry but we are unable to contact the server. Please try again in a bit.</source>
+        <source>We're sorry but we are unable to contact the server. Please try again in a bit.</source>
         <target state="new">抱歉，我们无法与服务器联系。 请稍后重试。</target>
       </trans-unit>
     </body>

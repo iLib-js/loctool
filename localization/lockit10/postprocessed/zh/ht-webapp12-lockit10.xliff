@@ -436,6 +436,7 @@
     <body>
       <trans-unit id="475" resname="r459380774" restype="string" datatype="ruby">
         <source>You can actually talk with me or another HealthTap doctor now by video or text chat. Would you like to see a doctor now? We&apos;re standing by!</source>
+        <target state="new">你可以立即和我或者其他HealthTap医生通过视频或者文字对话，你需要现在就看医生吗？我们随时服务！</target>
       </trans-unit>
     </body>
   </file>
@@ -443,15 +444,19 @@
     <body>
       <trans-unit id="476" resname="r833790376" restype="string" datatype="ruby">
         <source>Diagnostic dilemma: &quot;What&apos;s the diagnosis?&quot;</source>
+        <target state="new">诊断的难点：诊断意味着什么</target>
       </trans-unit>
       <trans-unit id="477" resname="r372120495" restype="string" datatype="ruby">
         <source>Diagnostic dilemma: &quot;What are the next steps for evaluation?&quot;</source>
+         <target state="new">诊断的难点：下一步怎么来评论</target>
       </trans-unit>
       <trans-unit id="478" resname="r688178430" restype="string" datatype="ruby">
         <source>Treatment decision: &quot;What&apos;s the best treatment?&quot;</source>
+         <target state="new">治疗决定：什么是最好的治疗方案</target>
       </trans-unit>
       <trans-unit id="479" resname="r230124915" restype="string" datatype="ruby">
         <source>Fascinating or rare case: &quot;Isn&apos;t this interesting?&quot;</source>
+         <target state="new">特殊的或罕见病例：这挺有意思的，不是么？</target>
       </trans-unit>
     </body>
   </file>
@@ -459,6 +464,7 @@
     <body>
       <trans-unit id="480" resname="r923729424" restype="string" datatype="ruby">
         <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an &quot;addendum note&quot; to this consult using the chat input.</source>
+        <target state="new">请审核这些结果，提供您对这些结果的看法，然后告诉病人下一步该怎么办，在在线医疗咨询聊天处添加一个附加条就行</target>
       </trans-unit>
     </body>
   </file>
@@ -466,6 +472,7 @@
     <body>
       <trans-unit id="481" resname="r570522913" restype="string" datatype="ruby">
         <source>page, and select the &quot;Answer Patient&quot; button.</source>
+        <target state="new">页，并选择&quot;回答病人&quot;按钮</target>
       </trans-unit>
     </body>
   </file>
@@ -473,6 +480,7 @@
     <body>
       <trans-unit id="482" resname="r925928384" restype="string" datatype="ruby">
         <source>Gift for you! Get 1 month free access to top doctors via video or text chat, 24/7, with HealthTap Prime.</source>
+        <target state="new">福利来咯！参加HealthTap Prime, 一个月免费通过视频或文字和顶级美国医生交流</target>
       </trans-unit>
     </body>
   </file>
@@ -480,9 +488,11 @@
     <body>
       <trans-unit id="483" resname="r277688003" restype="string" datatype="ruby">
         <source>Please select one of the following:</source>
+         <target state="new">请选择以下的一项:</target>
       </trans-unit>
       <trans-unit id="484" resname="r854720274" restype="string" datatype="ruby">
         <source>Do you know of any reasons why the doctor&apos;s licensing applications in any state might be rejected or revoked?</source>
+          <target state="new">你知道什么原因会使医生的认证申请书在某些州会被拒绝或取消吗？</target>
       </trans-unit>
     </body>
   </file>
@@ -780,19 +790,19 @@
     <body>
       <trans-unit id="57" resname="r786893194" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark} — your personal %{ai_serif}-powered &quot;physician&quot;</source>
-        <target state="new">%{ai_trademark}医生 — 你私人的%{ai_serif}电力医生</target>
+        <target state="new">智能医生 — 你私人的%{ai_serif}电力医生</target>
       </trans-unit>
       <trans-unit id="58" resname="r655383491" restype="string" datatype="ruby">
         <source>Based on your symptoms, Dr. %{ai_trademark} routes or &quot;triages&quot; you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</source>
-        <target state="new">根据您的症状，％{ai_trademark}医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，％{ai_trademark}医生能立即通过症状来制订一套感觉良好的治疗方案。</target>
+        <target state="new">根据您的症状，智能医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，智能医生能立即通过症状来制订一套感觉良好的治疗方案。</target>
       </trans-unit>
     </body>
   </file>
   <file original="app/views/static_pages/home/_hopes_intro.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="59" resname="r498270014" restype="string" datatype="ruby">
-        <source>We’ve built the world’s first Health Operating System &#40;HOPESTM&#41;,  powering the delivery of world-class healthcare, from Query-to-Cure</source>
-        <target state="new">我们建立了世界上第一个健康操作系统（HOPESTM），从查询到治疗，推动了世界级的医疗保健</target>
+      <trans-unit id="59" resname="r494573058" restype="string" datatype="ruby">
+        <source>We’ve built the world’s first Health Operating System (HOPES&amp;trade;),  powering the delivery of world-class healthcare, from Query-to-Cure</source>
+        <target state="new">我们建立了世界上第一个健康操作系统（HOPES&amp;trade;），从查询到治疗，推动了世界级的医疗保健</target>
       </trans-unit>
     </body>
   </file>
@@ -836,7 +846,7 @@
     <body>
       <trans-unit id="68" resname="r691446454" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered &quot;physician&quot;, trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>
-        <target state="new">％{ai_trademark}医生，是由医生训练的您私人的％{ai_serif}电力医生，根据您的症状为您私人定制治疗方案。</target>
+        <target state="new">智能医生，是由医生训练的您私人的%{ai_serif}电力医生，根据您的症状为您私人定制治疗方案。</target>
       </trans-unit>
     </body>
   </file>
@@ -1569,7 +1579,7 @@
       </trans-unit>
       <trans-unit id="217" resname="r658449741" restype="plural" datatype="ruby" extype="other">
         <source>%{num} Yrs</source>
-        <target state="new">%{num} Yrs</target>
+        <target state="new">%{num} 年</target>
       </trans-unit>
       <trans-unit id="218" resname="r871414534" restype="plural" datatype="ruby" extype="one">
         <source>%{num} to %{end_num} Second</source>
@@ -1966,7 +1976,7 @@
     <body>
       <trans-unit id="308" resname="r620205649" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark} is an %{ai_serif}-powered personal &quot;physician&quot;, trained by HealthTap’s network of more than 105,000 doctors, incorporates both context and clinical expertise of doctors who have helped triage hundreds of millions of patients worldwide to right levels of doctor-recommended care. Just like a sympathetic human physician, Dr. %{ai_trademark} converses with the user to understand their current complaints or concerns and uses the user’s health profile to compute the probable causes of their symptoms.</source>
-        <target state="new">Dr. %{ai_trademark} 一个 %{ai_serif}-支持的个人&quot;医师&quot;, 它由HealthTap超过10，5000名医生网络训练, 结合了帮助世界各地数以亿计的患者的医生推荐的临床专业知识。 它就像一个有同情心的医生, Dr. %{ai_trademark}帮助患者理解他们的需求和担忧，然后利用病人的健康资料去计算可能的病因。</target>
+        <target state="new">智能医生 一个 %{ai_serif}-支持的个人&quot;医师&quot;, 它由HealthTap超过10，5000名医生网络训练, 结合了帮助世界各地数以亿计的患者的医生推荐的临床专业知识。 它就像一个有同情心的医生, 智能医生帮助患者理解他们的需求和担忧，然后利用病人的健康资料去计算可能的病因。</target>
       </trans-unit>
       <trans-unit id="309" resname="r327357502" restype="string" datatype="ruby">
         <source>HealthTap launches Compass, a revolutionary new personal healthcare application that will give employees of Flex the ability to “tap in” to intelligent and cost-effective healthcare 24/7. HealthTap Compass serves as a hub for managing all employees’ healthcare needs, from information to prescriptions and even lab test referrals and interpretations, and will replace the traditional “benefits card.”</source>
@@ -1978,7 +1988,7 @@
       </trans-unit>
       <trans-unit id="311" resname="r289095764" restype="string" datatype="ruby">
         <source>New &quot;Doctor %{ai_trademark}&quot; instantaneously translates symptoms into a path to feeling good</source>
-        <target state="new">新 &quot;医生 %{ai_trademark}&quot; 实时为病人指明康复的路径。</target>
+        <target state="new">新 &quot;智能医生&quot; 实时为病人指明康复的路径。</target>
       </trans-unit>
     </body>
   </file>

@@ -430,8 +430,8 @@ end
 # text get hashed to the same thing
 def clean_string(string)
   string.
-    gsub(/<(['"][^'"]*['"]|[^>])*>/, "").
-    gsub(/\\\\/, "").
+    # gsub(/<(['"][^'"]*['"]|[^>])*>/, "").
+    gsub(/\\\\/, "\\").
     gsub(/\\t/, "\t").
     gsub(/\\n/, "\n").
     gsub(/\s+/, " ").

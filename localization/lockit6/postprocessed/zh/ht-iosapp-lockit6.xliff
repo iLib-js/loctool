@@ -2,7 +2,7 @@
 <xliff version="1.2">
   <file original="feelgood/iPadNative/Topic/FGBaseTopicViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="1" resname="You're now following %@! " restype="string" datatype="x-objective-c">
+      <trans-unit id="1" resname="You&apos;re now following %@! " restype="string" datatype="x-objective-c">
         <source>You're now following %@!</source>
         <target>您已关注%@！</target>
       </trans-unit>
@@ -50,7 +50,7 @@
   </file>
   <file original="feelgood/ViewControllers/Settings/FGMainSettingsViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="8" resname=" Are you sure you'd like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor." restype="string" datatype="x-objective-c">
+      <trans-unit id="8" resname=" Are you sure you&apos;d like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor." restype="string" datatype="x-objective-c">
         <source>Are you sure you'd like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor.</source>
         <target>您确定您要将这张信用卡与账户取消关联吗？下次与医生交谈时您需要提供一份。</target>
       </trans-unit>
@@ -151,7 +151,7 @@
         <source>for %@</source>
         <target>为%@</target>
       </trans-unit>
-      <trans-unit id="26" resname=" %@'s " restype="string" datatype="x-objective-c">
+      <trans-unit id="26" resname=" %@&apos;s " restype="string" datatype="x-objective-c">
         <source>%@'s</source>
         <target>%@的</target>
       </trans-unit>
@@ -423,7 +423,7 @@
   </file>
   <file original="feelgood/HTTipCreatedContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="71" resname="agreed with %@'s tip on %@" restype="string" datatype="x-objective-c">
+      <trans-unit id="71" resname="agreed with %@&apos;s tip on %@" restype="string" datatype="x-objective-c">
         <source>agreed with %@'s tip on %@</source>
         <target>同意%@关于%@的小贴士</target>
       </trans-unit>
@@ -502,7 +502,7 @@
         <target>小心！</target>
         <note annotates="source">symptom triage lose symptoms alert title</note>
       </trans-unit>
-      <trans-unit id="84" resname="If you go back you'll lose the symptoms you reported." restype="string" datatype="x-objective-c">
+      <trans-unit id="84" resname="If you go back you&apos;ll lose the symptoms you reported." restype="string" datatype="x-objective-c">
         <source>If you go back you'll lose the symptoms you reported.</source>
         <target>如果您返回，您会失去您报告的症状。</target>
         <note annotates="source">symptom triage lose symptoms alert body</note>
@@ -623,7 +623,7 @@
         <target>HealthTap（包括此工具）的信息仅用于教育和提供信息的目的，不构成医疗建议，诊断或治疗建议。如果您认为您可能有紧急医疗情况，请立即致电或拜访您的医生或当地紧急服务提供人员。查看{start}附加信息{end}。</target>
         <note annotates="source">Generic disclaimer message</note>
       </trans-unit>
-      <trans-unit id="101" resname="When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis it does not mean that you have (or don't have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
+      <trans-unit id="101" resname="When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis it does not mean that you have (or don&apos;t have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
         <source>When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis it does not mean that you have (or don't have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source>
         <target>当您选择使用此工具时，我们可能会计算并显示与您输入的症状和数据相关的症状或治疗选项。这个信息不是诊断，并不意味着您有（或没有）任何特定的潜在病症。HealthTap（包括此工具）的信息仅用于教育和提供信息的目的，不构成医疗建议，诊断或治疗建议。如果您认为您可能有紧急医疗情况，请立即致电或拜访您的医生或当地紧急服务提供人员。查看{start}附加信息{end}。</target>
         <note annotates="source">Nondiagnosis disclaimer message</note>
@@ -679,7 +679,7 @@
         <source>Send your question for one or more answers from our %@ doctors, or consult a doctor.</source>
         <target>发送您的问题，从我们%@名医生出获得一个或多个回答，或咨询一名医生。</target>
       </trans-unit>
-      <trans-unit id="110" resname="Can't find an answer? " restype="string" datatype="x-objective-c">
+      <trans-unit id="110" resname="Can&apos;t find an answer? " restype="string" datatype="x-objective-c">
         <source>Can't find an answer?</source>
         <target>找不到回答？</target>
       </trans-unit>
@@ -731,8 +731,8 @@
         <source>Your credit card ending in %@ has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!</source>
         <target>您尾号为%@的信用卡已过期或已失效。请更新您的帐户信息，继续获得HealthTap Prime的福利！</target>
       </trans-unit>
-      <trans-unit id="120" resname=" Update Now >" restype="string" datatype="x-objective-c">
-        <source>Update Now ></source>
+      <trans-unit id="120" resname=" Update Now &gt;" restype="string" datatype="x-objective-c">
+        <source>Update Now &gt;</source>
         <target>立即更新 &gt;</target>
       </trans-unit>
       <trans-unit id="121" resname="Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! " restype="string" datatype="x-objective-c">
@@ -784,7 +784,7 @@
   </file>
   <file original="feelgood/HTChecklistCreatedContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="128" resname="%@ agreed with %@'s checklist" restype="string" datatype="x-objective-c">
+      <trans-unit id="128" resname="%@ agreed with %@&apos;s checklist" restype="string" datatype="x-objective-c">
         <source>%@ agreed with %@'s checklist</source>
         <target>%@已同意%@的清单。</target>
       </trans-unit>
@@ -806,7 +806,7 @@
   </file>
   <file original="feelgood/HTAddSubaccountModalViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="131" resname="What's the relationship to you?" restype="string" datatype="x-objective-c">
+      <trans-unit id="131" resname="What&apos;s the relationship to you?" restype="string" datatype="x-objective-c">
         <source>What's the relationship to you?</source>
         <target>和您是什么关系？</target>
         <note annotates="source">subaccount creation relationship input prompt</note>
@@ -914,7 +914,7 @@
   </file>
   <file original="feelgood/Data/FGProfileObstetricsQuestionData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="148" resname="When was %@'s last menstrual period? " restype="string" datatype="x-objective-c">
+      <trans-unit id="148" resname="When was %@&apos;s last menstrual period? " restype="string" datatype="x-objective-c">
         <source>When was %@'s last menstrual period?</source>
         <target>%@末次月经是什么时候？</target>
       </trans-unit>
@@ -1229,7 +1229,7 @@
         <source>Cancel request</source>
         <target>取消请求</target>
       </trans-unit>
-      <trans-unit id="203" resname="Are you sure you want to cancel the request to connect via an Introductory Consult? (We'll credit your account)" restype="string" datatype="x-objective-c">
+      <trans-unit id="203" resname="Are you sure you want to cancel the request to connect via an Introductory Consult? (We&apos;ll credit your account)" restype="string" datatype="x-objective-c">
         <source>Are you sure you want to cancel the request to connect via an Introductory Consult? (We'll credit your account)</source>
         <target>您确定想要通过介绍性咨询取消连接请求吗？(我们会存入您的账户)</target>
       </trans-unit>
@@ -1357,7 +1357,7 @@
         <source>Discounted for Prime members</source>
         <target>Prime会员折扣</target>
       </trans-unit>
-      <trans-unit id="226" resname="Choose how you'd like to get help" restype="string" datatype="x-objective-c">
+      <trans-unit id="226" resname="Choose how you&apos;d like to get help" restype="string" datatype="x-objective-c">
         <source>Choose how you'd like to get help</source>
         <target>选择您希望获得帮助的方式</target>
       </trans-unit>

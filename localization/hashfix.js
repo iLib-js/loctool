@@ -34,8 +34,8 @@ for (var i = 0; i < units.length; i++) {
 	
 	if (unit.datatype === "x-haml" || unit.datatype === "ruby") {
 		var hash = rf.makeKey(unit.source);
-		unit.source = RubyFile.unescapeString(unit.source.trim());
-		unit.target = RubyFile.unescapeString(unit.target.trim().replace(/％\{/g, "%{"));
+		unit.source = RubyFile.unescapeString(utils.trimEscaped(unit.source));
+		unit.target = RubyFile.unescapeString(utils.trimEscaped(unit.target).replace(/％\{/g, "%{"));
 		
 		if ( unit.key !== hash ) {
 			console.log("File: " + unit.file + " key: " + unit.key + " -> " + hash);
@@ -43,8 +43,8 @@ for (var i = 0; i < units.length; i++) {
 		unit.key = hash;
 	} else if (unit.datatype === "java") {
 		var hash = jf.makeKey(unit.source);
-		unit.source = JavaFile.unescapeString(unit.source.trim());
-		unit.target = JavaFile.unescapeString(unit.target.trim());
+		unit.source = JavaFile.unescapeString(utils.trimEscaped(unit.source));
+		unit.target = JavaFile.unescapeString(utils.trimEscaped(unit.target));
 		
 		if ( unit.key !== hash ) {
 			console.log("File: " + unit.file + " key: " + unit.key + " -> " + hash);
