@@ -60,7 +60,7 @@
       </trans-unit>
       <trans-unit id="259" resname="text_Primary_care_doctors_available_now" restype="string" datatype="x-android-resource">
         <source>Primary care doctors available now</source>
-        <target>普通门诊医生现在可以为您服务</target>
+        <target>在线普通门诊医生为您服务</target>
       </trans-unit>
     </body>
   </file>
@@ -157,7 +157,7 @@
       <trans-unit id="624" resname="r322108465" restype="string" datatype="java">
         <source>agreed with {author_name}'s tip on \n{topic_name}</source>
         <target>同意{author_name}关于\n{topic_name}的小贴士</target>
-        <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
+        <note annotates="source">Subject of this phrase is a doctor's name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
     </body>
   </file>
@@ -184,7 +184,7 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerSearchFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="690" resname="r469329242" restype="string" datatype="java">
-        <source>Can&apos;t find a clinician?</source>
+        <source>Can't find a clinician?</source>
         <target>查找不到临床医生？</target>
       </trans-unit>
       <trans-unit id="691" resname="r554083360" restype="string" datatype="java">
@@ -240,11 +240,11 @@
   <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="1651" resname="cant_find_doctor" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t find your doctor? Invite\u00a0them\u00a0»</source>
+        <source>Can't find your doctor? Invite\u00a0them\u00a0»</source>
         <target>查找不到您的医生？邀请\u00a0them\u00a0»</target>
       </trans-unit>
       <trans-unit id="1652" resname="cant_find_clinician" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t find your clinician? Invite\u00a0them\u00a0»</source>
+        <source>Can't find your clinician? Invite\u00a0them\u00a0»</source>
         <target>查找不到您的临床医生？邀请\u00a0them\u00a0»</target>
       </trans-unit>
       <trans-unit id="1710" resname="cancel_appointment_content" restype="string" datatype="x-android-resource">
@@ -262,7 +262,7 @@
       </trans-unit>
       <trans-unit id="2191" resname="translation_attribution" restype="string" datatype="x-android-resource">
         <source>Translation approved by HealthTap doctors</source>
-        <target>翻译经HealthTap医生批准</target>
+        <target>翻译已获得HealthTap医生通过</target>
       </trans-unit>
       <trans-unit id="2192" resname="picker_symptom_triage" restype="string" datatype="x-android-resource">
         <source>Or, check your symptoms</source>
@@ -286,7 +286,7 @@
       </trans-unit>
       <trans-unit id="2200" resname="picker_consult_description" restype="string" datatype="x-android-resource">
         <source>For advice, prescriptions, and referrals</source>
-        <target>为获得建议、处方和转介</target>
+        <target>为获得建议、处方和转诊</target>
       </trans-unit>
       <trans-unit id="2202" resname="picker_go_symptoms" restype="string" datatype="x-android-resource">
         <source>Or, enter your symptoms</source>
@@ -359,15 +359,15 @@
       <trans-unit id="2227" resname="picker_indicator_enterprise" restype="string" datatype="x-android-resource">
         <source>Special for %1$s members</source>
         <target>%1$s会员专属</target>
-        <note annotates="source">&apos;%1$s&apos; is a string formatter, and refers to an enterprise group name, e.g. Flex members. Do not translate &apos;%1$s&apos;.</note>
+        <note annotates="source">'%1$s' is a string formatter, and refers to an enterprise group name, e.g. Flex members. Do not translate '%1$s'.</note>
       </trans-unit>
       <trans-unit id="2228" resname="picker_lang_speaks" restype="string" datatype="x-android-resource">
         <source>Speaks %s</source>
         <target>说 %s</target>
-        <note annotates="source">&apos;%s&apos; refers to a language.</note>
+        <note annotates="source">'%s' refers to a language.</note>
       </trans-unit>
       <trans-unit id="2230" resname="invite_doctor_location" restype="string" datatype="x-android-resource">
-        <source>Your Doctor\&apos;s Location</source>
+        <source>Your Doctor's Location</source>
         <target>您医生的地址</target>
       </trans-unit>
       <trans-unit id="2234" resname="starting_at" restype="string" datatype="x-android-resource">
@@ -377,7 +377,7 @@
       <trans-unit id="2235" resname="starting_at_old_price" restype="string" datatype="x-android-resource">
         <source>Starting at %1$s</source>
         <target>起步价 %1$s</target>
-        <note annotates="source">&apos;%1$s&apos; is a formatter and refers to a price. Do not translate &apos;%1$s&apos;.</note>
+        <note annotates="source">'%1$s' is a formatter and refers to a price. Do not translate '%1$s'.</note>
       </trans-unit>
       <trans-unit id="2237" resname="symptom_triage_search_hint" restype="string" datatype="x-android-resource">
         <source>Find symptoms</source>
@@ -437,7 +437,7 @@
       </trans-unit>
       <trans-unit id="2261" resname="symptom_triage_main_search_tap_text" restype="string" datatype="x-android-resource">
         <source>Tap anywhere to start</source>
-        <target>点按任意位置即可开始</target>
+        <target>轻触任意位置即可开始</target>
       </trans-unit>
       <trans-unit id="2262" resname="meter_high" restype="string" datatype="x-android-resource">
         <source>HIGHER</source>
@@ -452,7 +452,7 @@
         <target>点击或搜索您的症状。或者，您可以随时跳过此步骤直接向医生询问您的问题。</target>
       </trans-unit>
       <trans-unit id="2266" resname="symptom_triage_instructional_main_title" restype="string" datatype="x-android-resource">
-        <source>Let\&apos;s get started!</source>
+        <source>Let's get started!</source>
         <target>让我们开始吧！</target>
       </trans-unit>
       <trans-unit id="2267" resname="symptom_triage_instructional_account_picker_title" restype="string" datatype="x-android-resource">
@@ -470,10 +470,10 @@
       <trans-unit id="2271" resname="symptom_triage_instructional_refinement_title" restype="string" datatype="x-android-resource">
         <source>%s \u2014 okay.</source>
         <target>%s \u2014 确定。</target>
-        <note annotates="source">&apos;%s&apos; refers to a symptom attribute name.</note>
+        <note annotates="source">'%s' refers to a symptom attribute name.</note>
       </trans-unit>
       <trans-unit id="2272" resname="symptom_triage_instructional_refinement_content" restype="string" datatype="x-android-resource">
-        <source>Let\&apos;s learn a little more about that.</source>
+        <source>Let's learn a little more about that.</source>
         <target>让我们多了解一点。</target>
       </trans-unit>
       <trans-unit id="2273" resname="symptom_triage_instructional_risk_factors_title" restype="string" datatype="x-android-resource">
@@ -487,7 +487,7 @@
       <trans-unit id="2275" resname="symptom_triage_instructional_search_results_title" restype="string" datatype="x-android-resource">
         <source>%s \u2014 got it.</source>
         <target>%s \u2014 收到。</target>
-        <note annotates="source">&apos;%s&apos; refers to a symptom attribute name.</note>
+        <note annotates="source">'%s' refers to a symptom attribute name.</note>
       </trans-unit>
       <trans-unit id="2276" resname="symptom_triage_instructional_search_results_no_body_title" restype="string" datatype="x-android-resource">
         <source>Common symptoms</source>
@@ -542,7 +542,7 @@
         <target>2533名医生帮助过我们</target>
       </trans-unit>
       <trans-unit id="2292" resname="symptom_triage_genertic_disclaimer_text" restype="string" datatype="x-android-resource">
-        <source>The information on HealthTap &#40;including this tool&#41; is for educational and informational purposes only and does not constitute
+        <source>The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute
         medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
         <target>HealthTap（包括此工具）的信息仅用于教育和提供信息的目的，不构成
          医疗建议，诊断或治疗建议。如果您认为您可能有紧急医疗情况，请立即致电或拜访您的医生或当地紧急服务提供人员。查看附加信息。</target>
@@ -560,8 +560,8 @@
         <target>创建报告</target>
       </trans-unit>
       <trans-unit id="2297" resname="symptom_triage_warning_message" restype="string" datatype="x-android-resource">
-        <source>Heads up! If you go back from here, you\&apos;ll lose the symptoms you shared.</source>
-        <target>小心！如果您从此处返回，您会失去您分享的症状。</target>
+        <source>Heads up! If you go back from here, you'll lose the symptoms you shared.</source>
+        <target>小心！如果您从此处返回，您分享的症状将丢失。</target>
       </trans-unit>
       <trans-unit id="2300" resname="symptom_triage_emergency_header" restype="string" datatype="x-android-resource">
         <source>About this care option</source>
@@ -572,17 +572,17 @@
         <target>寻求紧急医疗医护</target>
       </trans-unit>
       <trans-unit id="2302" resname="symptom_triage_emergency_description" restype="string" datatype="x-android-resource">
-        <source>&quot;Most doctors recommend seeking immediate emergency medical attention based on the symptoms
-        you reported&quot;</source>
+        <source>"Most doctors recommend seeking immediate emergency medical attention based on the symptoms
+        you reported"</source>
         <target>“大多数医生建议根据您报告的症状立即寻求紧急医疗“</target>
       </trans-unit>
       <trans-unit id="2303" resname="symptom_triage_search_no_result" restype="string" datatype="x-android-resource">
-        <source>Sorry, we couldn\&apos;t find a symptom by that name. Maybe there are other ways to describe it?</source>
+        <source>Sorry, we couldn't find a symptom by that name. Maybe there are other ways to describe it?</source>
         <target>很抱歉，我们通过那个名称没有找到相应症状。也许有其他方法来描述它？</target>
       </trans-unit>
       <trans-unit id="2306" resname="symptom_triage_drawer_remove_text" restype="string" datatype="x-android-resource">
         <source>Are you sure you want to remove {symptom_name}?</source>
-        <target>您确定要移除{symptom_name}吗?</target>
+        <target>您确定要删除{symptom_name}吗?</target>
       </trans-unit>
     </body>
   </file>

@@ -230,7 +230,7 @@
       </trans-unit>
       <trans-unit id="45" resname="r1062842433" restype="string" datatype="java">
         <source>Read on {time}</source>
-        <target>读取 {time}</target>
+        <target>{time}已读</target>
       </trans-unit>
     </body>
   </file>
@@ -417,39 +417,39 @@
       </trans-unit>
       <trans-unit id="84" resname="live_consult_connecting_text" restype="string" datatype="x-android-resource">
         <source>One moment while we connect…</source>
-        <target>我们连接的时候...</target>
+        <target>连接中...</target>
       </trans-unit>
       <trans-unit id="85" resname="live_consult_waiting_for_patient_text" restype="string" datatype="x-android-resource">
         <source>Waiting for patient to connect…</source>
         <target>正在等待患者连接...</target>
       </trans-unit>
       <trans-unit id="86" resname="live_consult_waiting_for_patient_live_video" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s video camera…</source>
-        <target>我们连接到患者的摄像机时...</target>
+        <source>One moment while we connect to the patient&apos;s video camera…</source>
+        <target>患者摄像机连接中...</target>
       </trans-unit>
       <trans-unit id="87" resname="live_consult_waiting_for_patient_live_audio" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s microphone…</source>
-        <target>我们连接到患者的麦克风时...</target>
+        <source>One moment while we connect to the patient&apos;s microphone…</source>
+        <target>患者麦克风连接中...</target>
       </trans-unit>
       <trans-unit id="88" resname="live_consult_waiting_for_patient_live_text" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s text chat…</source>
-        <target>我们连接到患者的文字聊天时...</target>
+        <source>One moment while we connect to the patient&apos;s text chat…</source>
+        <target>患者文字聊天连接中...</target>
       </trans-unit>
       <trans-unit id="89" resname="live_consult_waiting_for_doctor_text" restype="string" datatype="x-android-resource">
         <source>Waiting for doctor to connect…</source>
         <target>正在等待医生连接...</target>
       </trans-unit>
       <trans-unit id="90" resname="live_consult_waiting_for_doctor_live_video" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s video camera…</source>
-        <target>我们连接到医生的摄像机时...</target>
+        <source>One moment while we connect to the doctor&apos;s video camera…</source>
+        <target>医生摄像机连接中...</target>
       </trans-unit>
       <trans-unit id="91" resname="live_consult_waiting_for_doctor_live_audio" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s microphone…</source>
-        <target>我们连接到医生的麦克风时...</target>
+        <source>One moment while we connect to the doctor&apos;s microphone…</source>
+        <target>医生麦克风连接中...</target>
       </trans-unit>
       <trans-unit id="92" resname="live_consult_waiting_for_doctor_live_text" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s text chat…</source>
-        <target>我们连接到医生的文字聊天时...</target>
+        <source>One moment while we connect to the doctor&apos;s text chat…</source>
+        <target>医生文字聊天连接中...</target>
       </trans-unit>
       <trans-unit id="93" resname="keyboard_done_label" restype="string" datatype="x-android-resource">
         <source>Send</source>
@@ -576,11 +576,11 @@
         <target>发现专家</target>
       </trans-unit>
       <trans-unit id="123" resname="transcript_refer_specialist_text" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</source>
+        <source>I&apos;d like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</source>
         <target>我向您推荐一位&lt;b&gt;{specialist}&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="124" resname="transcript_refer_specialist_text_hmo" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;. As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</source>
+        <source>I&apos;d like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;. As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</source>
         <target>我想推荐一位 &lt;b&gt;{specialist}&lt;/b&gt;作为{network_name}的会员，请先咨询您的普通门诊医生，然后再寻找其他专家。</target>
       </trans-unit>
       <trans-unit id="125" resname="soap_note_title_text" restype="string" datatype="x-android-resource">
@@ -608,7 +608,7 @@
         <target>查看清单</target>
       </trans-unit>
       <trans-unit id="131" resname="public_checklist_title_recommend_text" restype="string" datatype="x-android-resource">
-        <source>I recommend you try {name}\&apos;s checklist on {topic_name}</source>
+        <source>I recommend you try {name}&apos;s checklist on {topic_name}</source>
         <target>我建议您尝试{name}在{topic_name}的检查</target>
       </trans-unit>
       <trans-unit id="132" resname="public_checklist_button_text" restype="string" datatype="x-android-resource">
@@ -620,7 +620,7 @@
         <target>已添加</target>
       </trans-unit>
       <trans-unit id="134" resname="refer_individual_title_text" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer you to:</source>
+        <source>I&apos;d like to refer you to:</source>
         <target>我向您推荐：</target>
       </trans-unit>
       <trans-unit id="135" resname="refer_individual_call_text" restype="string" datatype="x-android-resource">
@@ -656,7 +656,7 @@
         <target>文件</target>
       </trans-unit>
       <trans-unit id="143" resname="no_previous_uploads" restype="string" datatype="x-android-resource">
-        <source>You haven\&apos;t uploaded any files or photos yet.</source>
+        <source>You haven&apos;t uploaded any files or photos yet.</source>
         <target>您尚未上传任何文件或照片。</target>
       </trans-unit>
       <trans-unit id="144" resname="connection_wrong" restype="string" datatype="x-android-resource">
@@ -684,11 +684,11 @@
         <target>离开咨询</target>
       </trans-unit>
       <trans-unit id="150" resname="end_call_patient_body_text_format" restype="string" datatype="x-android-resource">
-        <source>Would you like to end this consult with {doctor_name}? The doctor hasn\&apos;t finished the session.</source>
+        <source>Would you like to end this consult with {doctor_name}? The doctor hasn&apos;t finished the session.</source>
         <target>您要结束与{doctor_name}的咨询吗？医生没有完成会话。</target>
       </trans-unit>
       <trans-unit id="151" resname="end_call_patient_body_text" restype="string" datatype="x-android-resource">
-        <source>Would you like to end this consult with the doctor? The doctor hasn\&apos;t finished the session.</source>
+        <source>Would you like to end this consult with the doctor? The doctor hasn&apos;t finished the session.</source>
         <target>您要结束与医生的咨询吗？医生没有完成会话。</target>
       </trans-unit>
       <trans-unit id="152" resname="end_call_doctor_body_text" restype="string" datatype="x-android-resource">
@@ -772,15 +772,15 @@
         <target>切换到前视图</target>
       </trans-unit>
       <trans-unit id="172" resname="peer_unavailable_text" restype="string" datatype="x-android-resource">
-        <source>There is a problem with {peer_name}\&apos;s connection. One moment while we try to re-connect with {peer_name}.</source>
+        <source>There is a problem with {peer_name}&apos;s connection. One moment while we try to re-connect with {peer_name}.</source>
         <target>{peer_name}的连接有问题。我们尝试与{peer_name}重新连接时。</target>
       </trans-unit>
       <trans-unit id="173" resname="peer_unavailable_text_guest" restype="string" datatype="x-android-resource">
-        <source>There is a problem with the guest\&apos;s connection. One moment while we try to re-connect with the guest.</source>
+        <source>There is a problem with the guest&apos;s connection. One moment while we try to re-connect with the guest.</source>
         <target>顾客的连接有问题。我们尝试与顾客重新连接时。</target>
       </trans-unit>
       <trans-unit id="174" resname="peer_unavailable_text_doctor" restype="string" datatype="x-android-resource">
-        <source>There is a problem with the doctor\&apos;s connection. One moment while we try to re-connect with the doctor.</source>
+        <source>There is a problem with the doctor&apos;s connection. One moment while we try to re-connect with the doctor.</source>
         <target>医生的连接有问题。我们尝试与顾客重新连接时。</target>
       </trans-unit>
       <trans-unit id="175" resname="local_connection_unavailable_text" restype="string" datatype="x-android-resource">
@@ -789,7 +789,7 @@
         <note annotates="source">%s refers to a person</note>
       </trans-unit>
       <trans-unit id="176" resname="disconnect_trigger_text_doctor" restype="string" datatype="x-android-resource">
-        <source>There seems to be a problem with the doctor\&apos;s connection. To continue by phone, please call:</source>
+        <source>There seems to be a problem with the doctor&apos;s connection. To continue by phone, please call:</source>
         <target>医生的连接似乎有一个问题。通过手机继续，请拨打：</target>
       </trans-unit>
       <trans-unit id="177" resname="disconnect_trigger_text_patient" restype="string" datatype="x-android-resource">
@@ -797,7 +797,7 @@
         <target>您的连接似乎有一个问题通过手机继续，请拨打：</target>
       </trans-unit>
       <trans-unit id="178" resname="disconnect_trigger_text_doc" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source>
+        <source>We&apos;re offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source>
         <target>我们为患者提供通过电话恢复此咨询的选项，我们可能会在接下来的2分钟内呼叫您</target>
       </trans-unit>
       <trans-unit id="179" resname="standard_rates_text" restype="string" datatype="x-android-resource">
@@ -821,7 +821,7 @@
         <target>再试一次</target>
       </trans-unit>
       <trans-unit id="184" resname="peer_disconnected_im_done_text" restype="string" datatype="x-android-resource">
-        <source>Thanks, I\&apos;m done</source>
+        <source>Thanks, I&apos;m done</source>
         <target>谢谢，我完成了</target>
       </trans-unit>
       <trans-unit id="185" resname="expert_peer_disconnected_text" restype="string" datatype="x-android-resource">
@@ -865,7 +865,7 @@
         <target>在{date}已上传</target>
       </trans-unit>
       <trans-unit id="195" resname="attach_file_dialog_error_opening_activity" restype="string" datatype="x-android-resource">
-        <source>Couldn\&apos;t find application to handle this!</source>
+        <source>Couldn&apos;t find application to handle this!</source>
         <target>无法找到应用程序来处理这个问题！</target>
       </trans-unit>
       <trans-unit id="196" resname="vidyo_error_dialog_title" restype="string" datatype="x-android-resource">
@@ -877,19 +877,19 @@
         <target>音频不可用</target>
       </trans-unit>
       <trans-unit id="198" resname="vidyo_error_dialog_body" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re having trouble establising a video connection on your device. Please continue by chat or try again.</source>
+        <source>We&apos;re having trouble establising a video connection on your device. Please continue by chat or try again.</source>
         <target>我们无法在您的设备上建立视频连接。请通过聊天继续或再次尝试</target>
       </trans-unit>
       <trans-unit id="199" resname="camera_error_cant_connect" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t connect to camera</source>
+        <source>Can&apos;t connect to camera</source>
         <target>无法连接到相机</target>
       </trans-unit>
       <trans-unit id="200" resname="audio_error_cant_connect" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t connect to audio</source>
+        <source>Can&apos;t connect to audio</source>
         <target>无法连接到音频</target>
       </trans-unit>
       <trans-unit id="201" resname="vidyo_error_audio_dialog_body" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re having trouble establising an audio connection on your device. Please continue by chat or try again.</source>
+        <source>We&apos;re having trouble establising an audio connection on your device. Please continue by chat or try again.</source>
         <target>我们无法在您的设备上建立音频连接。请通过聊天继续或再次尝试</target>
       </trans-unit>
       <trans-unit id="202" resname="vidyo_error_dialog_chat" restype="string" datatype="x-android-resource">
@@ -973,11 +973,11 @@
         <target>好</target>
       </trans-unit>
       <trans-unit id="222" resname="background_copy_doctor" restype="string" datatype="x-android-resource">
-        <source>You just left in the middle of a live consult. If you didn\&apos;t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
+        <source>You just left in the middle of a live consult. If you didn&apos;t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
         <target>您刚刚在实时咨询中离开。如果您没有通知患者您会很快返回，请立刻这样做，以便患者知道接下来会发生什么。</target>
       </trans-unit>
       <trans-unit id="223" resname="background_copy_patient" restype="string" datatype="x-android-resource">
-        <source>You just left in the middle of a live consult. If you didn\&apos;t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source>
+        <source>You just left in the middle of a live consult. If you didn&apos;t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source>
         <target>您刚刚在实时咨询中离开。如果您没有通知医生您会很快返回，请立刻这样做，以便医生知道接下来会发生什么。</target>
       </trans-unit>
       <trans-unit id="224" resname="camera_permission_rationale" restype="string" datatype="x-android-resource">

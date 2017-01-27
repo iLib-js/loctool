@@ -10,8 +10,8 @@
   </file>
   <file original="feelgood/iPadNative/Topic/FGBaseTopicViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="2" resname="You&apos;re now following %@! " restype="string" datatype="x-objective-c">
-        <source>You&apos;re now following %@!</source>
+      <trans-unit id="2" resname="You're now following %@! " restype="string" datatype="x-objective-c">
+        <source>You're now following %@!</source>
         <target>您已关注%@！</target>
       </trans-unit>
     </body>
@@ -162,8 +162,8 @@
         <source>$0</source>
         <target>$0</target>
       </trans-unit>
-      <trans-unit id="29" resname=" Are you sure you&apos;d like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor." restype="string" datatype="x-objective-c">
-        <source>Are you sure you&apos;d like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor.</source>
+      <trans-unit id="29" resname=" Are you sure you'd like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor." restype="string" datatype="x-objective-c">
+        <source>Are you sure you'd like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor.</source>
         <target>您确定要取消此信用卡和您账户的关联吗？您将需要在下次咨询医生时提供相关信息。</target>
       </trans-unit>
     </body>
@@ -180,7 +180,7 @@
       </trans-unit>
       <trans-unit id="32" resname="Sign up in minutes!" restype="string" datatype="x-objective-c">
         <source>Sign up in minutes!</source>
-        <target>立即注册！</target>
+        <target>几分钟就能注册好！</target>
       </trans-unit>
       <trans-unit id="33" resname="Doctors available 24/7 to talk live - connect in about 2 mins." restype="string" datatype="x-objective-c">
         <source>Doctors available 24/7 to talk live - connect in about 2 mins.</source>
@@ -194,8 +194,8 @@
         <source>HealthTap has reinvented the way people all over the world take care of their health and well-being, connecting millions everywhere with the most trusted information and doctors.</source>
         <target>HealthTap重塑了全世界得到医护的方式，连接数百万各地最值得信赖的信息和医生。</target>
       </trans-unit>
-      <trans-unit id="36" resname="HealthTap&apos;s doctors are all U.S. board certified, pass a stringent qualification pocess, and undergo training on how to give helpful advice using our technology platform." restype="string" datatype="x-objective-c">
-        <source>HealthTap&apos;s doctors are all U.S. board certified, pass a stringent qualification pocess, and undergo training on how to give helpful advice using our technology platform.</source>
+      <trans-unit id="36" resname="HealthTap's doctors are all U.S. board certified, pass a stringent qualification pocess, and undergo training on how to give helpful advice using our technology platform." restype="string" datatype="x-objective-c">
+        <source>HealthTap's doctors are all U.S. board certified, pass a stringent qualification pocess, and undergo training on how to give helpful advice using our technology platform.</source>
         <target>HealthTap的医生均为经严格资格筛选的美国执业医生，他们均接受过培训，了解如何能够使用我们的技术平台给出有帮助的建议。</target>
       </trans-unit>
       <trans-unit id="37" resname="HealthTap has received critically acclaimed coverage from leading media channels - both in the U.S. and internationally." restype="string" datatype="x-objective-c">
@@ -210,8 +210,8 @@
         <source>HealthTap has reinvented the way people all over the world take care of</source>
         <target>HealthTap重塑了全世界得到医护的方式</target>
       </trans-unit>
-      <trans-unit id="40" resname="HealthTap&apos;s doctors are all U.S. board certified, pass a stringent" restype="string" datatype="x-objective-c">
-        <source>HealthTap&apos;s doctors are all U.S. board certified, pass a stringent</source>
+      <trans-unit id="40" resname="HealthTap's doctors are all U.S. board certified, pass a stringent" restype="string" datatype="x-objective-c">
+        <source>HealthTap's doctors are all U.S. board certified, pass a stringent</source>
         <target>HealthTap的医生均为经严格资格筛选的美国执业医生</target>
       </trans-unit>
       <trans-unit id="41" resname="HealthTap has received critically acclaimed coverage from" restype="string" datatype="x-objective-c">
@@ -236,7 +236,7 @@
       </trans-unit>
       <trans-unit id="46" resname="Treatments, referrals, reminders, tips &amp; news" restype="string" datatype="x-objective-c">
         <source>Treatments, referrals, reminders, tips &amp; news</source>
-        <target>治疗、转介、提醒、小贴士和新闻</target>
+        <target>治疗、转诊、提醒、小贴士和新闻</target>
       </trans-unit>
       <trans-unit id="47" resname="Share photos and chat with doctors via video/text" restype="string" datatype="x-objective-c">
         <source>Share photos and chat with doctors via video/text</source>
@@ -315,9 +315,9 @@
         <source>Tip</source>
         <target>小贴士</target>
       </trans-unit>
-      <trans-unit id="61" resname=" tip &#40;%ld of %lu&#41;" restype="string" datatype="x-objective-c">
-        <source>tip &#40;%ld of %lu&#41;</source>
-        <target>小贴士 &#40;%ld of %lu&#41;</target>
+      <trans-unit id="61" resname=" tip (%ld of %lu)" restype="string" datatype="x-objective-c">
+        <source>tip (%ld of %lu)</source>
+        <target>小贴士 (%ld of %lu)</target>
       </trans-unit>
       <trans-unit id="62" resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
@@ -478,7 +478,7 @@
       </trans-unit>
       <trans-unit id="97" resname="%@, %ld years in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld years in practice</source>
-        <target state="accepted">%@, %ld 年诊疗经验的专家</target>
+        <target>%@, %ld 年诊疗经验的专家</target>
       </trans-unit>
       <trans-unit id="98" resname="%@, %ld year in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld year in practice</source>
@@ -532,8 +532,8 @@
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="109" resname="You&apos;ve talked to a doctor %@ times%@ this month. Remember, HealthTap Virtual Consults are not meant to replace %@ primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n\nWe&apos;d like you to contact us at support@healthtap.com to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!" restype="string" datatype="x-objective-c">
-        <source>You&apos;ve talked to a doctor %@ times%@ this month. Remember, HealthTap Virtual Consults are not meant to replace %@ primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n\nWe&apos;d like you to contact us at support@healthtap.com to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!</source>
+      <trans-unit id="109" resname="You've talked to a doctor %@ times%@ this month. Remember, HealthTap Virtual Consults are not meant to replace %@ primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n\nWe'd like you to contact us at support@healthtap.com to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!" restype="string" datatype="x-objective-c">
+        <source>You've talked to a doctor %@ times%@ this month. Remember, HealthTap Virtual Consults are not meant to replace %@ primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n\nWe'd like you to contact us at support@healthtap.com to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!</source>
         <target>您%@ 这个月已经和医生聊了%@ 次。请记住，HealthTap 在线咨询不能取代%@普通门诊医师，或用于替代与现实世界中的医生建立关系。\n\n我们希望您可以联系support@healthtap.com 让我们知道您为什么需要继续跟医生对话。我们很高兴审核您的案例，如果合理，您可以开始其它咨询。我们在这里帮助您！</target>
       </trans-unit>
       <trans-unit id="110" resname="Choose relationship" restype="string" datatype="x-objective-c">
@@ -566,11 +566,11 @@
       </trans-unit>
       <trans-unit id="117" resname="Grandfather" restype="string" datatype="x-objective-c">
         <source>Grandfather</source>
-        <target>爷爷/祖父</target>
+        <target>祖父/外祖父</target>
       </trans-unit>
       <trans-unit id="118" resname="Grandmother" restype="string" datatype="x-objective-c">
         <source>Grandmother</source>
-        <target>奶奶/祖母</target>
+        <target>祖母/外祖母</target>
       </trans-unit>
       <trans-unit id="119" resname="Friend" restype="string" datatype="x-objective-c">
         <source>Friend</source>
@@ -604,7 +604,7 @@
         <source>Uncle</source>
         <target>姑父/伯父/叔叔</target>
       </trans-unit>
-      <trans-unit id="127" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivitis\n\\n    \u00B7 Acute Cystitis\n\\n    \u00B7 Acute Pharyngitis\n\\n    \u00B7 Acute Sinusitis\n\\n    \u00B7 Allergies\n\\n    \u00B7 Asthma &#40;stable / non-emergency&#41;\n\\n    \u00B7 Athlete’s Foot\n\\n    \u00B7 Back Pain\n\\n    \u00B7 Bee Sting\n\\n    \u00B7 Bladder infections\n\\n    \u00B7 Cellulitis &#40;skin infection&#41;\n\\n    \u00B7 Cold\n\\n    \u00B7 Cough\n\\n    \u00B7 Depression\n\\n    \u00B7 Diarrhea\n\\n    \u00B7 Dry Scalp\n\\n    \u00B7 Dry Skin &#40;Eczema&#41;\n\\n    \u00B7 Eye Irritation\n\\n    \u00B7 Fever\n\\n    \u00B7 Genital Lesions\n\\n    \u00B7 Hay Fever\n\\n    \u00B7 Headache\n\\n    \u00B7 Heartburn &#40;Gastroesophageal Reflux Disease, or GERD&#41;\n\\n    \u00B7 Influenza\n\\n    \u00B7 Lab Interpretation\n\\n    \u00B7 Lice\n\\n    \u00B7 Nasal Congestion\n\\n    \u00B7 Nausea\n\\n    \u00B7 Nosebleed\n\\n    \u00B7 Painful Urination\n\\n    \u00B7 Pink Eye\n\\n    \u00B7 Poison Oak / Poison Ivy\n\\n    \u00B7 Rash\n\\n    \u00B7 Respiratory Infection\n\\n    \u00B7 Rolled Ankle\n\\n    \u00B7 Scabies\n\\n    \u00B7 Seborrheic Dermatitis &#40;Dry Scalp&#41;\n\\n    \u00B7 Skin Infection\n\\n    \u00B7 Sports Injuries\n\\n    \u00B7 Strep Throat\n\\n    \u00B7 Travel Medicine\n\\n    \u00B7 Upper Respiratory Infection\n\\n    \u00B7 Urinary Tract Infection\n\\n    \u00B7 Vaginal Itching\n\\n    \u00B7 Yeast Infection\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication &#40;narcotics&#41;\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\\n    \u00B7 Consults in languages other than English\n\\n    \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
+      <trans-unit id="127" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivitis\n\\n    \u00B7 Acute Cystitis\n\\n    \u00B7 Acute Pharyngitis\n\\n    \u00B7 Acute Sinusitis\n\\n    \u00B7 Allergies\n\\n    \u00B7 Asthma (stable / non-emergency)\n\\n    \u00B7 Athlete’s Foot\n\\n    \u00B7 Back Pain\n\\n    \u00B7 Bee Sting\n\\n    \u00B7 Bladder infections\n\\n    \u00B7 Cellulitis (skin infection)\n\\n    \u00B7 Cold\n\\n    \u00B7 Cough\n\\n    \u00B7 Depression\n\\n    \u00B7 Diarrhea\n\\n    \u00B7 Dry Scalp\n\\n    \u00B7 Dry Skin (Eczema)\n\\n    \u00B7 Eye Irritation\n\\n    \u00B7 Fever\n\\n    \u00B7 Genital Lesions\n\\n    \u00B7 Hay Fever\n\\n    \u00B7 Headache\n\\n    \u00B7 Heartburn (Gastroesophageal Reflux Disease, or GERD)\n\\n    \u00B7 Influenza\n\\n    \u00B7 Lab Interpretation\n\\n    \u00B7 Lice\n\\n    \u00B7 Nasal Congestion\n\\n    \u00B7 Nausea\n\\n    \u00B7 Nosebleed\n\\n    \u00B7 Painful Urination\n\\n    \u00B7 Pink Eye\n\\n    \u00B7 Poison Oak / Poison Ivy\n\\n    \u00B7 Rash\n\\n    \u00B7 Respiratory Infection\n\\n    \u00B7 Rolled Ankle\n\\n    \u00B7 Scabies\n\\n    \u00B7 Seborrheic Dermatitis (Dry Scalp)\n\\n    \u00B7 Skin Infection\n\\n    \u00B7 Sports Injuries\n\\n    \u00B7 Strep Throat\n\\n    \u00B7 Travel Medicine\n\\n    \u00B7 Upper Respiratory Infection\n\\n    \u00B7 Urinary Tract Infection\n\\n    \u00B7 Vaginal Itching\n\\n    \u00B7 Yeast Infection\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication (narcotics)\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone(s)\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\\n    \u00B7 Consults in languages other than English\n\\n    \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)" restype="string" datatype="x-objective-c">
         <source>Common reasons to use Virtual Consults\n\
     \u00B7 Abdominal Pain\n\
     \u00B7 Acute Bronchitis\n\
@@ -613,24 +613,24 @@
     \u00B7 Acute Pharyngitis\n\
     \u00B7 Acute Sinusitis\n\
     \u00B7 Allergies\n\
-    \u00B7 Asthma &#40;stable / non-emergency&#41;\n\
+    \u00B7 Asthma (stable / non-emergency)\n\
     \u00B7 Athlete’s Foot\n\
     \u00B7 Back Pain\n\
     \u00B7 Bee Sting\n\
     \u00B7 Bladder infections\n\
-    \u00B7 Cellulitis &#40;skin infection&#41;\n\
+    \u00B7 Cellulitis (skin infection)\n\
     \u00B7 Cold\n\
     \u00B7 Cough\n\
     \u00B7 Depression\n\
     \u00B7 Diarrhea\n\
     \u00B7 Dry Scalp\n\
-    \u00B7 Dry Skin &#40;Eczema&#41;\n\
+    \u00B7 Dry Skin (Eczema)\n\
     \u00B7 Eye Irritation\n\
     \u00B7 Fever\n\
     \u00B7 Genital Lesions\n\
     \u00B7 Hay Fever\n\
     \u00B7 Headache\n\
-    \u00B7 Heartburn &#40;Gastroesophageal Reflux Disease, or GERD&#41;\n\
+    \u00B7 Heartburn (Gastroesophageal Reflux Disease, or GERD)\n\
     \u00B7 Influenza\n\
     \u00B7 Lab Interpretation\n\
     \u00B7 Lice\n\
@@ -644,7 +644,7 @@
     \u00B7 Respiratory Infection\n\
     \u00B7 Rolled Ankle\n\
     \u00B7 Scabies\n\
-    \u00B7 Seborrheic Dermatitis &#40;Dry Scalp&#41;\n\
+    \u00B7 Seborrheic Dermatitis (Dry Scalp)\n\
     \u00B7 Skin Infection\n\
     \u00B7 Sports Injuries\n\
     \u00B7 Strep Throat\n\
@@ -660,20 +660,20 @@
     \u00B7 Difficulty breathing\n\
     \u00B7 Mental health /  behavioral health / addiction issues\n\
     \u00B7 Moderate to severe burns\n\
-    \u00B7 Pain medication &#40;narcotics&#41;\n\
+    \u00B7 Pain medication (narcotics)\n\
     \u00B7 Poisoning\n\
     \u00B7 Serious head, neck, or back injury\n\
-    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\
+    \u00B7 Serious limb impairment or broken bone(s)\n\
     \u00B7 Significant, uncontrolled bleeding\n\
     \u00B7 Suicide ideation\n\
     \u00B7 Unconsciousness\n\
     \u00B7 Any other critical or life-threatening situation\n\n\
     What not to expect\n\n\
-    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\
+    \u00B7 Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n\
     \u00B7 Any prescriptions for medications that are restricted by individual states\n\
-    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
+    \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
-    \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
+    \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
         <target>在线咨询的常见问题：
 \u00B7 腹部疼痛\n\
 \u00B7 急性支气管炎\n\
@@ -682,7 +682,7 @@
 \u00B7 急性咽炎\n\
 \u00B7 急性鼻窦炎\n\
 \u00B7 过敏\n\
-\u00B7 哮喘（稳定/非紧急）\n\
+\u00B7 哮喘（非急性）\n\
 \u00B7 脚气\n\
 \u00B7 背疼\n\
 \u00B7 蜜蜂蜇伤\n\
@@ -701,7 +701,7 @@
 \u00B7 头痛\n\
 \u00B7 胃灼热（胃食管反流病或GERD）\n\
 \u00B7 流感\n\
-\u00B7 医疗检查单解释\n\
+\u00B7 医疗清单解释\n\
 \u00B7 虱子\n\
 \u00B7 鼻塞\n\
 \u00B7 恶心\n\
@@ -734,14 +734,14 @@
      \u00B7自杀倾向\n\
      \u00B7失去意识\n\
      \u00B7任何其他危及生命的情况\n\
-     \u00B7请不要期待得到\n\
+     \u00B7不应期望\n\
      \u00B7任何毒品或美国特殊药品监督管理局控制的药物（一、二、三、四类药物）处方\n\
      \u00B7任何各州禁止药物处方\n\
      \u00B7任何精神病治疗药物或改变生活方式的药物处方（如：针对节食或勃起功能障碍的药物）\n\
     \u00B7除英文外的其他语言咨询\n\
     \u00B7电子邮件或信息咨询的立即回复（考虑到视频咨询会有相应医生更快回复）</target>
       </trans-unit>
-      <trans-unit id="128" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivistis\n\\n    \u00B7 Acute Cystitis\n\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication &#40;narcotics&#41;\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\\n    \u00B7 Consults in languages other than English\n\\n                           \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
+      <trans-unit id="128" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivistis\n\\n    \u00B7 Acute Cystitis\n\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication (narcotics)\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone(s)\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\\n    \u00B7 Consults in languages other than English\n\\n                           \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)" restype="string" datatype="x-objective-c">
         <source>Common reasons to use Virtual Consults\n\
     \u00B7 Abdominal Pain\n\
     \u00B7 Acute Bronchitis\n\
@@ -754,20 +754,20 @@
     \u00B7 Difficulty breathing\n\
     \u00B7 Mental health /  behavioral health / addiction issues\n\
     \u00B7 Moderate to severe burns\n\
-    \u00B7 Pain medication &#40;narcotics&#41;\n\
+    \u00B7 Pain medication (narcotics)\n\
     \u00B7 Poisoning\n\
     \u00B7 Serious head, neck, or back injury\n\
-    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\
+    \u00B7 Serious limb impairment or broken bone(s)\n\
     \u00B7 Significant, uncontrolled bleeding\n\
     \u00B7 Suicide ideation\n\
     \u00B7 Unconsciousness\n\
     \u00B7 Any other critical or life-threatening situation\n\n\
     What not to expect\n\n\
-    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\
+    \u00B7 Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n\
     \u00B7 Any prescriptions for medications that are restricted by individual states\n\
-    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
+    \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
-                           \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
+                           \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
         <target>在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立即打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
@@ -796,9 +796,9 @@
         <source>for %@</source>
         <target>为%@</target>
       </trans-unit>
-      <trans-unit id="131" resname=" %@&apos;s " restype="string" datatype="x-objective-c">
-        <source>%@&apos;s</source>
-        <target>%@&apos;s</target>
+      <trans-unit id="131" resname=" %@'s " restype="string" datatype="x-objective-c">
+        <source>%@'s</source>
+        <target>%@'s</target>
       </trans-unit>
       <trans-unit id="132" resname=" your " restype="string" datatype="x-objective-c">
         <source>your</source>
@@ -812,8 +812,8 @@
         <source>Tip:</source>
         <target>小贴士：</target>
       </trans-unit>
-      <trans-unit id="134" resname="Add more details and get an immediate doctor answer &#40;text or video&#41; " restype="string" datatype="x-objective-c">
-        <source>Add more details and get an immediate doctor answer &#40;text or video&#41;</source>
+      <trans-unit id="134" resname="Add more details and get an immediate doctor answer (text or video) " restype="string" datatype="x-objective-c">
+        <source>Add more details and get an immediate doctor answer (text or video)</source>
         <target>添加更多详细信息并立即获得医生回答（文本或视频）</target>
       </trans-unit>
     </body>
@@ -888,8 +888,8 @@
         <source>Enjoy the benefits for Prime!</source>
         <target>享受Prime的福利</target>
       </trans-unit>
-      <trans-unit id="152" resname="We guarantee you&apos;ll be satisfied with access to our caring doctors whenever you need them. We value you as a Prime member and are committed to your health and happiness :&#41;" restype="string" datatype="x-objective-c">
-        <source>We guarantee you&apos;ll be satisfied with access to our caring doctors whenever you need them. We value you as a Prime member and are committed to your health and happiness :&#41;</source>
+      <trans-unit id="152" resname="We guarantee you'll be satisfied with access to our caring doctors whenever you need them. We value you as a Prime member and are committed to your health and happiness :)" restype="string" datatype="x-objective-c">
+        <source>We guarantee you'll be satisfied with access to our caring doctors whenever you need them. We value you as a Prime member and are committed to your health and happiness :)</source>
         <target>我们保证当您需要我们帮助时，您会对我们的医护医生满意。您成为我们的Prime会员，我们非常珍惜并努力使您健康和幸福。</target>
       </trans-unit>
       <trans-unit id="153" resname="Welcome to HealthTap Prime!" restype="string" datatype="x-objective-c">
@@ -972,8 +972,8 @@
         <source>Date of Birth</source>
         <target>生日</target>
       </trans-unit>
-      <trans-unit id="171" resname="Patient &#40;for Professional Caregivers&#41;" restype="string" datatype="x-objective-c">
-        <source>Patient &#40;for Professional Caregivers&#41;</source>
+      <trans-unit id="171" resname="Patient (for Professional Caregivers)" restype="string" datatype="x-objective-c">
+        <source>Patient (for Professional Caregivers)</source>
         <target>患者（专业护理人员）</target>
       </trans-unit>
       <trans-unit id="172" resname="My Location" restype="string" datatype="x-objective-c">
@@ -1018,7 +1018,7 @@
       </trans-unit>
       <trans-unit id="182" resname="Living Children" restype="string" datatype="x-objective-c">
         <source>Living Children</source>
-        <target>存活的孩子</target>
+        <target>活了几个</target>
       </trans-unit>
       <trans-unit id="183" resname="Expected Due Date" restype="string" datatype="x-objective-c">
         <source>Expected Due Date</source>
@@ -1068,9 +1068,9 @@
         <source>Ethnicity</source>
         <target>民族</target>
       </trans-unit>
-      <trans-unit id="195" resname="%dlbs &#40;%.01fkg&#41;" restype="string" datatype="x-objective-c">
-        <source>%d磅 &#40;%.01f千克&#41;</source>
-        <target>%d磅 &#40;%.01f千克&#41;</target>
+      <trans-unit id="195" resname="%dlbs (%.01fkg)" restype="string" datatype="x-objective-c">
+        <source>%d磅 (%.01f千克)</source>
+        <target>%d磅 (%.01f千克)</target>
       </trans-unit>
       <trans-unit id="196" resname="%.01f" restype="string" datatype="x-objective-c">
         <source>%.01f</source>
@@ -1094,7 +1094,7 @@
       </trans-unit>
       <trans-unit id="201" resname="Conditions &amp; Symptoms" restype="string" datatype="x-objective-c">
         <source>Conditions &amp; Symptoms</source>
-        <target>健康状况&amp;症状</target>
+        <target>健康状况和症状</target>
       </trans-unit>
       <trans-unit id="202" resname="Allergies" restype="string" datatype="x-objective-c">
         <source>Allergies</source>
@@ -1167,7 +1167,7 @@
     <body>
       <trans-unit id="211" resname="Not at this time" restype="string" datatype="x-objective-c">
         <source>Not at this time</source>
-        <target>这个时间没有</target>
+        <target>现在没有</target>
       </trans-unit>
       <trans-unit id="212" resname="Add a condition or symptom" restype="string" datatype="x-objective-c">
         <source>Add a condition or symptom</source>
@@ -1261,8 +1261,8 @@
         <source>Follow three or more topics of interest</source>
         <target>请关注三个或更多感兴趣的话题</target>
       </trans-unit>
-      <trans-unit id="230" resname="Find a topic &#40;e.g. Lose weight&#41;" restype="string" datatype="x-objective-c">
-        <source>Find a topic &#40;e.g. Lose weight&#41;</source>
+      <trans-unit id="230" resname="Find a topic (e.g. Lose weight)" restype="string" datatype="x-objective-c">
+        <source>Find a topic (e.g. Lose weight)</source>
         <target>查找话题（例如：减肥）</target>
       </trans-unit>
     </body>
@@ -1356,7 +1356,7 @@
       </trans-unit>
       <trans-unit id="247" resname="Your account is deactivated. To re-activate, send a request to " restype="string" datatype="x-objective-c">
         <source>Your account is deactivated. To re-activate, send a request to</source>
-        <target>您的帐户已冻结。重新激活，发送请求邮件到</target>
+        <target>您的帐户已停用。重新激活，发送请求邮件到</target>
       </trans-unit>
       <trans-unit id="248" resname="Good " restype="string" datatype="x-objective-c">
         <source>Good</source>
@@ -1386,13 +1386,13 @@
         <source>Hi, Dr. %@!</source>
         <target>您好，%@医生!</target>
       </trans-unit>
-      <trans-unit id="255" resname="Please reactivate my account &#40;%@&#41;" restype="string" datatype="x-objective-c">
-        <source>Please reactivate my account &#40;%@&#41;</source>
+      <trans-unit id="255" resname="Please reactivate my account (%@)" restype="string" datatype="x-objective-c">
+        <source>Please reactivate my account (%@)</source>
         <target>请重新启用我的帐户（%@）</target>
       </trans-unit>
-      <trans-unit id="256" resname="Please download the &apos;HealthTap for Doctors&apos; app to login or signup as a doctor with a valid US medical license" restype="string" datatype="x-objective-c">
-        <source>Please download the &apos;HealthTap for Doctors&apos; app to login or signup as a doctor with a valid US medical license</source>
-        <target>请下载\“HealthTap for Doctors\” 应用程序登陆或以美国有效的医疗执照注册成为医生</target>
+      <trans-unit id="256" resname="Please download the 'HealthTap for Doctors' app to login or signup as a doctor with a valid US medical license" restype="string" datatype="x-objective-c">
+        <source>Please download the 'HealthTap for Doctors' app to login or signup as a doctor with a valid US medical license</source>
+        <target>请下载\“HealthTap for Doctors\” 应用程序，以美国有效的医疗执照注册登录或注册</target>
       </trans-unit>
     </body>
   </file>
@@ -1418,12 +1418,12 @@
         <source>Attach</source>
         <target>附加</target>
       </trans-unit>
-      <trans-unit id="262" resname="There seems to be a problem with the patient&apos;s connection. Please try chatting while we try to re-connect..." restype="string" datatype="x-objective-c">
-        <source>There seems to be a problem with the patient&apos;s connection. Please try chatting while we try to re-connect...</source>
+      <trans-unit id="262" resname="There seems to be a problem with the patient's connection. Please try chatting while we try to re-connect..." restype="string" datatype="x-objective-c">
+        <source>There seems to be a problem with the patient's connection. Please try chatting while we try to re-connect...</source>
         <target>您医生的连接似乎有问题.当我们尝试重新连接的时候，请试着聊天…</target>
       </trans-unit>
-      <trans-unit id="263" resname="There seems to be a problem with the doctor&apos;s connection. Please try chatting while we try to re-connect..." restype="string" datatype="x-objective-c">
-        <source>There seems to be a problem with the doctor&apos;s connection. Please try chatting while we try to re-connect...</source>
+      <trans-unit id="263" resname="There seems to be a problem with the doctor's connection. Please try chatting while we try to re-connect..." restype="string" datatype="x-objective-c">
+        <source>There seems to be a problem with the doctor's connection. Please try chatting while we try to re-connect...</source>
         <target>您医生的连接似乎有问题.当我们尝试重新连接的时候，请试着聊天…</target>
       </trans-unit>
       <trans-unit id="264" resname="Video unavailable..." restype="string" datatype="x-objective-c">
@@ -1438,16 +1438,16 @@
         <source>A doctor is reviewing your chart and will be with you shortly...</source>
         <target>一名医生正在检查您的图表，并会很快和您联系……</target>
       </trans-unit>
-      <trans-unit id="267" resname="One moment while we connect to the doctor&apos;s video camera..." restype="string" datatype="x-objective-c">
-        <source>One moment while we connect to the doctor&apos;s video camera...</source>
+      <trans-unit id="267" resname="One moment while we connect to the doctor's video camera..." restype="string" datatype="x-objective-c">
+        <source>One moment while we connect to the doctor's video camera...</source>
         <target>当我们连接到医生的摄像机时…</target>
       </trans-unit>
-      <trans-unit id="268" resname="One moment while we connect to the doctor&apos;s microphone..." restype="string" datatype="x-objective-c">
-        <source>One moment while we connect to the doctor&apos;s microphone...</source>
+      <trans-unit id="268" resname="One moment while we connect to the doctor's microphone..." restype="string" datatype="x-objective-c">
+        <source>One moment while we connect to the doctor's microphone...</source>
         <target>当我们连接到医生的麦克风时…</target>
       </trans-unit>
-      <trans-unit id="269" resname="One moment while we connect to the doctor&apos;s text chat..." restype="string" datatype="x-objective-c">
-        <source>One moment while we connect to the doctor&apos;s text chat...</source>
+      <trans-unit id="269" resname="One moment while we connect to the doctor's text chat..." restype="string" datatype="x-objective-c">
+        <source>One moment while we connect to the doctor's text chat...</source>
         <target>我们连接到医生的文本聊天时，</target>
       </trans-unit>
       <trans-unit id="270" resname="The patient has ended the consult." restype="string" datatype="x-objective-c">
@@ -1524,7 +1524,7 @@
     <body>
       <trans-unit id="287" resname="Share FeelGood Moment" restype="string" datatype="x-objective-c">
         <source>Share FeelGood Moment</source>
-        <target>分享FeelGood时刻</target>
+        <target>分享FeelGood瞬间</target>
       </trans-unit>
       <trans-unit id="288" resname="Oops!" restype="string" datatype="x-objective-c">
         <source>Oops!</source>
@@ -1532,11 +1532,11 @@
       </trans-unit>
       <trans-unit id="289" resname="To publish your FeelGood moment, please add a photo" restype="string" datatype="x-objective-c">
         <source>To publish your FeelGood moment, please add a photo</source>
-        <target>要发布您的FeelGood时刻，请添加照片</target>
+        <target>要发布您的FeelGood瞬间，请添加照片</target>
       </trans-unit>
       <trans-unit id="290" resname="To publish your FeelGood moment, please add a caption" restype="string" datatype="x-objective-c">
         <source>To publish your FeelGood moment, please add a caption</source>
-        <target>要发布您的FeelGood时刻，请添加标题</target>
+        <target>要发布您的FeelGood瞬间，请添加标题</target>
       </trans-unit>
       <trans-unit id="291" resname="Change photo" restype="string" datatype="x-objective-c">
         <source>Change photo</source>
@@ -1556,7 +1556,7 @@
     <body>
       <trans-unit id="294" resname="No Commitment, cancel anytime" restype="string" datatype="x-objective-c">
         <source>No Commitment, cancel anytime</source>
-        <target>没有承诺，随时取消</target>
+        <target>没有任何承诺，可以随时取消</target>
       </trans-unit>
       <trans-unit id="295" resname="per month" restype="string" datatype="x-objective-c">
         <source>per month</source>
@@ -1582,9 +1582,9 @@
         <source>Please help me log in to my HealthTap account</source>
         <target>请帮助我登录我的HealthTap帐户</target>
       </trans-unit>
-      <trans-unit id="299" resname="Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :&#41;" restype="string" datatype="x-objective-c">
-        <source>Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :&#41;</source>
-        <target>您好，HealthTap团队！\n\n我在登入我的HealthTap帐户时遇到问题。能帮我重置我的密码吗？\在\设备上%@  设备详细信息：%@ \n \n谢谢:&#41;</target>
+      <trans-unit id="299" resname="Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)" restype="string" datatype="x-objective-c">
+        <source>Hi HealthTap Team!\n\nI am experiencing difficulty logging into my HealthTap account. Can you please help me reset my password?\n\nDEVICE: %@\nDEVICE DETAILS: %@\n\nThanks :)</source>
+        <target>您好，HealthTap团队！\n\n我在登入我的HealthTap帐户时遇到问题。能帮我重置我的密码吗？\在\设备上%@  设备详细信息：%@ \n \n谢谢:)</target>
       </trans-unit>
     </body>
   </file>
@@ -1626,8 +1626,8 @@
   </file>
   <file original="feelgood/ViewControllers/FGCheckListSearchViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="305" resname="Find a topic &#40;e.g.: Lose weight&#41;   " restype="string" datatype="x-objective-c">
-        <source>Find a topic &#40;e.g.: Lose weight&#41;</source>
+      <trans-unit id="305" resname="Find a topic (e.g.: Lose weight)   " restype="string" datatype="x-objective-c">
+        <source>Find a topic (e.g.: Lose weight)</source>
         <target>查找话题（例如：减肥）</target>
       </trans-unit>
     </body>
@@ -1658,12 +1658,12 @@
         <source>Poor network connection.\nPlease check your network connection and try again</source>
         <target>网络连接不良。\n请检查您的连接并再次尝试</target>
       </trans-unit>
-      <trans-unit id="311" resname="There seems to be a problem with the patient&apos;s connection.  One moment while we try to reconnect you" restype="string" datatype="x-objective-c">
-        <source>There seems to be a problem with the patient&apos;s connection.  One moment while we try to reconnect you</source>
+      <trans-unit id="311" resname="There seems to be a problem with the patient's connection.  One moment while we try to reconnect you" restype="string" datatype="x-objective-c">
+        <source>There seems to be a problem with the patient's connection.  One moment while we try to reconnect you</source>
         <target>您医生的连接似乎有问题.我们尝试重新连接的时候</target>
       </trans-unit>
-      <trans-unit id="312" resname="There seems to be a problem with the doctor&apos;s connection. One moment while we try to reconnect you" restype="string" datatype="x-objective-c">
-        <source>There seems to be a problem with the doctor&apos;s connection. One moment while we try to reconnect you</source>
+      <trans-unit id="312" resname="There seems to be a problem with the doctor's connection. One moment while we try to reconnect you" restype="string" datatype="x-objective-c">
+        <source>There seems to be a problem with the doctor's connection. One moment while we try to reconnect you</source>
         <target>您医生的连接似乎有问题.我们尝试重新连接的时候</target>
       </trans-unit>
       <trans-unit id="313" resname="%@ is typing" restype="string" datatype="x-objective-c">
@@ -1734,9 +1734,9 @@
         <source>Thank Dr. %@</source>
         <target>感谢%@医生</target>
       </trans-unit>
-      <trans-unit id="326" resname="Thank you! Dr. %@ appreciates your gratitude :&#41;" restype="string" datatype="x-objective-c">
-        <source>Thank you! Dr. %@ appreciates your gratitude :&#41;</source>
-        <target>谢谢您！%@医生感谢您的谢意 :&#41;</target>
+      <trans-unit id="326" resname="Thank you! Dr. %@ appreciates your gratitude :)" restype="string" datatype="x-objective-c">
+        <source>Thank you! Dr. %@ appreciates your gratitude :)</source>
+        <target>谢谢您！%@医生感谢您的谢意 :)</target>
       </trans-unit>
     </body>
   </file>
@@ -1766,16 +1766,16 @@
   </file>
   <file original="feelgood/ReusableViews/HTUpsellOptionsContainerView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="331" resname="Any additional services? &#40;optional&#41;" restype="string" datatype="x-objective-c">
-        <source>Any additional services? &#40;optional&#41;</source>
+      <trans-unit id="331" resname="Any additional services? (optional)" restype="string" datatype="x-objective-c">
+        <source>Any additional services? (optional)</source>
         <target>需要其它服务吗？（可选）</target>
       </trans-unit>
       <trans-unit id="332" resname="FREE FOR YOU AS A PRIME SUBSCRIBER!" restype="string" datatype="x-objective-c">
         <source>FREE FOR YOU AS A PRIME SUBSCRIBER!</source>
         <target>Prime订购者免费享有！</target>
       </trans-unit>
-      <trans-unit id="333" resname="&#40;optional&#41;" restype="string" datatype="x-objective-c">
-        <source>&#40;optional&#41;</source>
+      <trans-unit id="333" resname="(optional)" restype="string" datatype="x-objective-c">
+        <source>(optional)</source>
         <target>（可选）</target>
       </trans-unit>
     </body>
@@ -1854,8 +1854,8 @@
         <source>Send your question for one or more answers from our %@ doctors, or consult a doctor.</source>
         <target>发送您的问题，从我们的%@医生出获得一个或多个回答，或咨询一名医生。</target>
       </trans-unit>
-      <trans-unit id="345" resname="Can&apos;t find an answer? " restype="string" datatype="x-objective-c">
-        <source>Can&apos;t find an answer?</source>
+      <trans-unit id="345" resname="Can't find an answer? " restype="string" datatype="x-objective-c">
+        <source>Can't find an answer?</source>
         <target>没有找到一个回答？</target>
       </trans-unit>
     </body>
@@ -1962,16 +1962,16 @@
         <source>Your question was sent to our doctors!</source>
         <target>您的问题已经发送给我们医生!</target>
       </trans-unit>
-      <trans-unit id="366" resname="We&apos;ll notify you as soon as our doctors respond. In the meantime:" restype="string" datatype="x-objective-c">
-        <source>We&apos;ll notify you as soon as our doctors respond. In the meantime:</source>
+      <trans-unit id="366" resname="We'll notify you as soon as our doctors respond. In the meantime:" restype="string" datatype="x-objective-c">
+        <source>We'll notify you as soon as our doctors respond. In the meantime:</source>
         <target>我们会在医生回复后尽快通知您。与此同时:</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTPrimeNowAskDoctorsWhatToAskViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="367" resname="Share a detailed description of your symptoms, concerns, and how you&apos;d like the doctor to help you. Attach images as necessary." restype="string" datatype="x-objective-c">
-        <source>Share a detailed description of your symptoms, concerns, and how you&apos;d like the doctor to help you. Attach images as necessary.</source>
+      <trans-unit id="367" resname="Share a detailed description of your symptoms, concerns, and how you'd like the doctor to help you. Attach images as necessary." restype="string" datatype="x-objective-c">
+        <source>Share a detailed description of your symptoms, concerns, and how you'd like the doctor to help you. Attach images as necessary.</source>
         <target>分享您的症状，关注事项以及您希望医生如何帮助您的详细说明。根据需要附加图像。</target>
       </trans-unit>
     </body>
@@ -1994,8 +1994,8 @@
         <source>Your doctor</source>
         <target>您的医生</target>
       </trans-unit>
-      <trans-unit id="372" resname=" &#40;Licensed in %@&#41;" restype="string" datatype="x-objective-c">
-        <source>&#40;Licensed in %@&#41;</source>
+      <trans-unit id="372" resname=" (Licensed in %@)" restype="string" datatype="x-objective-c">
+        <source>(Licensed in %@)</source>
         <target>（在%@中具有执业资格）</target>
       </trans-unit>
       <trans-unit id="373" resname="Invited" restype="string" datatype="x-objective-c">
@@ -2098,8 +2098,8 @@
         <source>Basic</source>
         <target>基础</target>
       </trans-unit>
-      <trans-unit id="397" resname="Preview what you&apos;ll experience with..." restype="string" datatype="x-objective-c">
-        <source>Preview what you&apos;ll experience with...</source>
+      <trans-unit id="397" resname="Preview what you'll experience with..." restype="string" datatype="x-objective-c">
+        <source>Preview what you'll experience with...</source>
         <target>预览您将体验到的…</target>
       </trans-unit>
     </body>
@@ -2146,8 +2146,8 @@
         <source>Your credit card ending in %@ has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!</source>
         <target>您尾号为%@的信用卡已过期或已失效。请更新您的帐户信息，继续获得HealthTap Prime的福利！</target>
       </trans-unit>
-      <trans-unit id="405" resname=" Update Now &gt;" restype="string" datatype="x-objective-c">
-        <source>Update Now &gt;</source>
+      <trans-unit id="405" resname=" Update Now >" restype="string" datatype="x-objective-c">
+        <source>Update Now ></source>
         <target>现在更新&gt;</target>
       </trans-unit>
       <trans-unit id="406" resname="Your Paypal account has changed or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! " restype="string" datatype="x-objective-c">
@@ -2182,16 +2182,16 @@
         <source>One consult</source>
         <target>一次咨询</target>
       </trans-unit>
-      <trans-unit id="412" resname="As many as you need &#40;per month&#41;" restype="string" datatype="x-objective-c">
-        <source>As many as you need &#40;per month&#41;</source>
+      <trans-unit id="412" resname="As many as you need (per month)" restype="string" datatype="x-objective-c">
+        <source>As many as you need (per month)</source>
         <target>您需要多少（每月）</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/HTFeedFirstTimeGeneratedView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="413" resname="We&apos;re computing your Health Graph\nfor a delightful, personalized experience" restype="string" datatype="x-objective-c">
-        <source>We&apos;re computing your Health Graph\nfor a delightful, personalized experience</source>
+      <trans-unit id="413" resname="We're computing your Health Graph\nfor a delightful, personalized experience" restype="string" datatype="x-objective-c">
+        <source>We're computing your Health Graph\nfor a delightful, personalized experience</source>
         <target>我们正在计算您的健康图表\n以便为您提供愉快的个性化体验</target>
       </trans-unit>
     </body>
@@ -2202,8 +2202,8 @@
         <source>Yes disconnect</source>
         <target>是断开连接</target>
       </trans-unit>
-      <trans-unit id="415" resname="No I&apos;ll wait" restype="string" datatype="x-objective-c">
-        <source>No I&apos;ll wait</source>
+      <trans-unit id="415" resname="No I'll wait" restype="string" datatype="x-objective-c">
+        <source>No I'll wait</source>
         <target>没有我会等</target>
       </trans-unit>
     </body>
@@ -2218,8 +2218,8 @@
   </file>
   <file original="feelgood/HTConfirmPresentLocationView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="417" resname="Only doctors licensed in the state you&apos;re presently in can provide you with advice, treatment, prescriptions, and more. &#40;This does not apply to people outside the U.S.&#41;" restype="string" datatype="x-objective-c">
-        <source>Only doctors licensed in the state you&apos;re presently in can provide you with advice, treatment, prescriptions, and more. &#40;This does not apply to people outside the U.S.&#41;</source>
+      <trans-unit id="417" resname="Only doctors licensed in the state you're presently in can provide you with advice, treatment, prescriptions, and more. (This does not apply to people outside the U.S.)" restype="string" datatype="x-objective-c">
+        <source>Only doctors licensed in the state you're presently in can provide you with advice, treatment, prescriptions, and more. (This does not apply to people outside the U.S.)</source>
         <target>只有在您所在州具有执业资格的医生才能为您提供建议、治疗、处方等。（这不适用于美国以外的人士）</target>
       </trans-unit>
       <trans-unit id="418" resname="Enter Manually" restype="string" datatype="x-objective-c">
@@ -2274,8 +2274,8 @@
         <source>MM/DD/YYYY</source>
         <target>MM/DD/YYYY</target>
       </trans-unit>
-      <trans-unit id="427" resname="Add more health information &#40;optional&#41;" restype="string" datatype="x-objective-c">
-        <source>Add more health information &#40;optional&#41;</source>
+      <trans-unit id="427" resname="Add more health information (optional)" restype="string" datatype="x-objective-c">
+        <source>Add more health information (optional)</source>
         <target>添加更多的健康信息（可选）</target>
       </trans-unit>
       <trans-unit id="428" resname="Questions about HealthTap?\nCall our Quality Care team at 1-650-376-6110" restype="string" datatype="x-objective-c">
@@ -2290,8 +2290,8 @@
         <source>Is %@ pregnant?</source>
         <target>是%@怀孕吗？</target>
       </trans-unit>
-      <trans-unit id="430" resname="What is %@&apos;s gender?" restype="string" datatype="x-objective-c">
-        <source>What is %@&apos;s gender?</source>
+      <trans-unit id="430" resname="What is %@'s gender?" restype="string" datatype="x-objective-c">
+        <source>What is %@'s gender?</source>
         <target>%@的性别是？</target>
       </trans-unit>
       <trans-unit id="431" resname="You must be 18 years or older\nto do a consult" restype="string" datatype="x-objective-c">
@@ -2386,8 +2386,8 @@
   </file>
   <file original="feelgood/HTAddPersonalInfoWithTableHeaderHeaderView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="449" resname=" &#40;optional&#41;" restype="string" datatype="x-objective-c">
-        <source>&#40;optional&#41;</source>
+      <trans-unit id="449" resname=" (optional)" restype="string" datatype="x-objective-c">
+        <source>(optional)</source>
         <target>（可选）</target>
       </trans-unit>
     </body>
@@ -2407,9 +2407,9 @@
         <source>%@ appreciates your gratitude!</source>
         <target>%@ 感激您！</target>
       </trans-unit>
-      <trans-unit id="452" resname=" &#41;" restype="string" datatype="x-objective-c">
-        <source>&#41;</source>
-        <target>&#41;</target>
+      <trans-unit id="452" resname=" )" restype="string" datatype="x-objective-c">
+        <source>)</source>
+        <target>)</target>
       </trans-unit>
     </body>
   </file>
@@ -2457,7 +2457,7 @@
       </trans-unit>
       <trans-unit id="463" resname="Medication" restype="string" datatype="x-objective-c">
         <source>Medication</source>
-        <target>药物治疗</target>
+        <target>药物</target>
       </trans-unit>
       <trans-unit id="464" resname="Symptoms List" restype="string" datatype="x-objective-c">
         <source>Symptoms List</source>
@@ -2495,16 +2495,16 @@
         <source>in the context of:</source>
         <target>在...的背景下</target>
       </trans-unit>
-      <trans-unit id="472" resname=" &#40;tap to select&#41;" restype="string" datatype="x-objective-c">
-        <source>&#40;tap to select&#41;</source>
+      <trans-unit id="472" resname=" (tap to select)" restype="string" datatype="x-objective-c">
+        <source>(tap to select)</source>
         <target>（点击选择）</target>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Data/FGT2DUserBasicInfoData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="473" resname="Date of Birth &#40;Must be 18 years old&#41;" restype="string" datatype="x-objective-c">
-        <source>Date of Birth &#40;Must be 18 years old&#41;</source>
+      <trans-unit id="473" resname="Date of Birth (Must be 18 years old)" restype="string" datatype="x-objective-c">
+        <source>Date of Birth (Must be 18 years old)</source>
         <target>出生日期（必须年满18岁）</target>
       </trans-unit>
       <trans-unit id="474" resname="You must be 18 years or older to do a consult." restype="string" datatype="x-objective-c">
@@ -2523,9 +2523,9 @@
   </file>
   <file original="feelgood/Data/FGT2DPersonalizeSliderQuestion.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="476" resname="%.0flbs &#40;%.0fkg&#41;" restype="string" datatype="x-objective-c">
-        <source>%.0f磅 &#40;%.0f千克&#41;</source>
-        <target>%.0f磅 &#40;%.0f千克&#41;</target>
+      <trans-unit id="476" resname="%.0flbs (%.0fkg)" restype="string" datatype="x-objective-c">
+        <source>%.0f磅 (%.0f千克)</source>
+        <target>%.0f磅 (%.0f千克)</target>
       </trans-unit>
       <trans-unit id="477" resname="%.0fyrs" restype="string" datatype="x-objective-c">
         <source>%.0fyrs</source>
@@ -2576,17 +2576,17 @@
         <target>概要：</target>
         <note annotates="source">prefix for summary of an answer</note>
       </trans-unit>
-      <trans-unit id="484" resname="Send &gt;" restype="string" datatype="x-objective-c">
-        <source>Send &gt;</source>
+      <trans-unit id="484" resname="Send >" restype="string" datatype="x-objective-c">
+        <source>Send ></source>
         <target>发送›</target>
       </trans-unit>
       <trans-unit id="485" resname="Thanked. Leave a note?" restype="string" datatype="x-objective-c">
         <source>Thanked. Leave a note?</source>
-        <target>感谢。留言？</target>
+        <target>已感谢。留言？</target>
       </trans-unit>
       <trans-unit id="486" resname="Thanked. " restype="string" datatype="x-objective-c">
         <source>Thanked.</source>
-        <target>感谢。</target>
+        <target>已感谢。</target>
       </trans-unit>
     </body>
   </file>
@@ -2652,8 +2652,8 @@
   </file>
   <file original="feelgood/Data/FGProfileObstetricsQuestionData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="500" resname="When was %@&apos;s last menstrual period? " restype="string" datatype="x-objective-c">
-        <source>When was %@&apos;s last menstrual period?</source>
+      <trans-unit id="500" resname="When was %@'s last menstrual period? " restype="string" datatype="x-objective-c">
+        <source>When was %@'s last menstrual period?</source>
         <target>%@的末次月经是什么时候？</target>
       </trans-unit>
     </body>
@@ -2815,17 +2815,17 @@
       <trans-unit id="533" resname="checklist on " restype="string" datatype="x-objective-c">
         <source>checklist on</source>
         <target>清单上</target>
-        <note annotates="source">Checklist title e.g: Dr. XYZ&apos;s checklist on Fixing pain</note>
+        <note annotates="source">Checklist title e.g: Dr. XYZ's checklist on Fixing pain</note>
       </trans-unit>
       <trans-unit id="534" resname="checklist from your " restype="string" datatype="x-objective-c">
         <source>checklist from your</source>
         <target>您的清单</target>
-        <note annotates="source">Checklist title e.g: Dr. XYZ&apos;s checklist from your private consult on Oct 4. 2014</note>
+        <note annotates="source">Checklist title e.g: Dr. XYZ's checklist from your private consult on Oct 4. 2014</note>
       </trans-unit>
       <trans-unit id="535" resname="Private Consult " restype="string" datatype="x-objective-c">
         <source>Private Consult</source>
         <target>私人咨询</target>
-        <note annotates="source">Checklist title e.g: Dr. XYZ&apos;s checklist from your private consult on Oct 4. 2014</note>
+        <note annotates="source">Checklist title e.g: Dr. XYZ's checklist from your private consult on Oct 4. 2014</note>
       </trans-unit>
       <trans-unit id="536" resname="\nYou completed this! " restype="string" datatype="x-objective-c">
         <source>\nYou completed this!</source>
@@ -2894,12 +2894,12 @@
   </file>
   <file original="feelgood/Data/FGChatSummaryNoteSection.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="547" resname="Subjective &#40;History&#41;:" restype="string" datatype="x-objective-c">
-        <source>Subjective &#40;History&#41;:</source>
+      <trans-unit id="547" resname="Subjective (History):" restype="string" datatype="x-objective-c">
+        <source>Subjective (History):</source>
         <target>主观（历史）：</target>
       </trans-unit>
-      <trans-unit id="548" resname="Objective &#40;Data&#41;:" restype="string" datatype="x-objective-c">
-        <source>Objective &#40;Data&#41;:</source>
+      <trans-unit id="548" resname="Objective (Data):" restype="string" datatype="x-objective-c">
+        <source>Objective (Data):</source>
         <target>目标（数据）：</target>
       </trans-unit>
       <trans-unit id="549" resname="Invite a supporter" restype="string" datatype="x-objective-c">
@@ -2953,7 +2953,7 @@
       <trans-unit id="556" resname="You asked " restype="string" datatype="x-objective-c">
         <source>You asked</source>
         <target>您问的</target>
-        <note annotates="source">Part of label &apos;You asked on Oct24, 2016&apos;</note>
+        <note annotates="source">Part of label 'You asked on Oct24, 2016'</note>
       </trans-unit>
       <trans-unit id="557" resname="You asked for %@ " restype="string" datatype="x-objective-c">
         <source>You asked for %@</source>
@@ -3111,8 +3111,8 @@
         <source>No longer have this</source>
         <target>不再这样</target>
       </trans-unit>
-      <trans-unit id="585" resname="Optional Notes &#40;e.g, severity and nature of condition, previous dates of occurrence&#41;" restype="string" datatype="x-objective-c">
-        <source>Optional Notes &#40;e.g, severity and nature of condition, previous dates of occurrence&#41;</source>
+      <trans-unit id="585" resname="Optional Notes (e.g, severity and nature of condition, previous dates of occurrence)" restype="string" datatype="x-objective-c">
+        <source>Optional Notes (e.g, severity and nature of condition, previous dates of occurrence)</source>
         <target>选填信息（症状特性和严重程度，上次发生日期）</target>
       </trans-unit>
       <trans-unit id="586" resname=" Currently taking" restype="string" datatype="x-objective-c">
@@ -3123,20 +3123,20 @@
         <source>Used to take</source>
         <target>服用过</target>
       </trans-unit>
-      <trans-unit id="588" resname="Optional Notes &#40;e.g, side effects, dossage&#41;" restype="string" datatype="x-objective-c">
-        <source>Optional Notes &#40;e.g, side effects, dossage&#41;</source>
+      <trans-unit id="588" resname="Optional Notes (e.g, side effects, dossage)" restype="string" datatype="x-objective-c">
+        <source>Optional Notes (e.g, side effects, dossage)</source>
         <target>可选注意事项（如副作用，剂量）</target>
       </trans-unit>
-      <trans-unit id="589" resname="Optional Notes &#40;e.g, date and nature of last reaction, severity and frequency of reactions&#41;" restype="string" datatype="x-objective-c">
-        <source>Optional Notes &#40;e.g, date and nature of last reaction, severity and frequency of reactions&#41;</source>
-        <target>可选纪录（例如，日期和最后的反应性质，严重程度和反应的频率）</target>
+      <trans-unit id="589" resname="Optional Notes (e.g, date and nature of last reaction, severity and frequency of reactions)" restype="string" datatype="x-objective-c">
+        <source>Optional Notes (e.g, date and nature of last reaction, severity and frequency of reactions)</source>
+        <target>可选的注意事项（例如：最后一次发生反应的日期和性质，反应严重性和频率）</target>
       </trans-unit>
       <trans-unit id="590" resname="Name of treatment" restype="string" datatype="x-objective-c">
         <source>Name of treatment</source>
         <target>治疗名称</target>
       </trans-unit>
-      <trans-unit id="591" resname="Optional Notes &#40;e.g, side effects, after-procedure instructions&#41;" restype="string" datatype="x-objective-c">
-        <source>Optional Notes &#40;e.g, side effects, after-procedure instructions&#41;</source>
+      <trans-unit id="591" resname="Optional Notes (e.g, side effects, after-procedure instructions)" restype="string" datatype="x-objective-c">
+        <source>Optional Notes (e.g, side effects, after-procedure instructions)</source>
         <target>可选注意事项（例如：副作用，临床操作后说明）</target>
       </trans-unit>
     </body>
@@ -3191,20 +3191,20 @@
         <source>Request sent to</source>
         <target>发送请求</target>
       </trans-unit>
-      <trans-unit id="600" resname="Your invitation is sent. We&apos;ll notify you when the doctor accepts you as a patient." restype="string" datatype="x-objective-c">
-        <source>Your invitation is sent. We&apos;ll notify you when the doctor accepts you as a patient.</source>
+      <trans-unit id="600" resname="Your invitation is sent. We'll notify you when the doctor accepts you as a patient." restype="string" datatype="x-objective-c">
+        <source>Your invitation is sent. We'll notify you when the doctor accepts you as a patient.</source>
         <target>您的邀请已发送。当医生接受您作为患者时，我们会通知您。</target>
       </trans-unit>
-      <trans-unit id="601" resname="Your invitation is being processed. We&apos;ll notify you when the doctor accepts you as a patient." restype="string" datatype="x-objective-c">
-        <source>Your invitation is being processed. We&apos;ll notify you when the doctor accepts you as a patient.</source>
+      <trans-unit id="601" resname="Your invitation is being processed. We'll notify you when the doctor accepts you as a patient." restype="string" datatype="x-objective-c">
+        <source>Your invitation is being processed. We'll notify you when the doctor accepts you as a patient.</source>
         <target>正在处理您的邀请。当医生接受您作为患者时，我们会通知您。</target>
       </trans-unit>
       <trans-unit id="602" resname="There was a problem sending your request" restype="string" datatype="x-objective-c">
         <source>There was a problem sending your request</source>
         <target>发送您的请求时出现问题</target>
       </trans-unit>
-      <trans-unit id="603" resname="This email doesn&apos;t seem to be valid" restype="string" datatype="x-objective-c">
-        <source>This email doesn&apos;t seem to be valid</source>
+      <trans-unit id="603" resname="This email doesn't seem to be valid" restype="string" datatype="x-objective-c">
+        <source>This email doesn't seem to be valid</source>
         <target>此邮箱似乎无效</target>
       </trans-unit>
     </body>
@@ -3243,8 +3243,8 @@
   </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergeLocationInputViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="609" resname="We&apos;re sorry but" restype="string" datatype="x-objective-c">
-        <source>We&apos;re sorry but</source>
+      <trans-unit id="609" resname="We're sorry but" restype="string" datatype="x-objective-c">
+        <source>We're sorry but</source>
         <target>我们很抱歉，但</target>
       </trans-unit>
       <trans-unit id="610" resname="Please note," restype="string" datatype="x-objective-c">
@@ -3283,24 +3283,24 @@
         <source>Dr. %@ is licensed to see patients from %@.</source>
         <target>%@医生具备为来自%@的患者进行诊疗的执业资格。</target>
       </trans-unit>
-      <trans-unit id="619" resname="We&apos;re sorry, HealthTap Concierge is not currently available in %@. However, you may still use HealthTap Concierge when traveling out of state!" restype="string" datatype="x-objective-c">
-        <source>We&apos;re sorry, HealthTap Concierge is not currently available in %@. However, you may still use HealthTap Concierge when traveling out of state!</source>
-        <target>很抱歉，目前%@.的HealthTap贵宾台不在。但是，当您在州外旅行时您依旧可以使用HealthTap 贵宾台！</target>
+      <trans-unit id="619" resname="We're sorry, HealthTap Concierge is not currently available in %@. However, you may still use HealthTap Concierge when traveling out of state!" restype="string" datatype="x-objective-c">
+        <source>We're sorry, HealthTap Concierge is not currently available in %@. However, you may still use HealthTap Concierge when traveling out of state!</source>
+        <target>很抱歉，目前%@.的HealthTap贵宾台不在。但是，当您外州旅行时您依旧可以使用HealthTap贵宾台！</target>
       </trans-unit>
-      <trans-unit id="620" resname="We&apos;re sorry, but Dr. %@ is currently licensed to see patients only in %@" restype="string" datatype="x-objective-c">
-        <source>We&apos;re sorry, but Dr. %@ is currently licensed to see patients only in %@</source>
+      <trans-unit id="620" resname="We're sorry, but Dr. %@ is currently licensed to see patients only in %@" restype="string" datatype="x-objective-c">
+        <source>We're sorry, but Dr. %@ is currently licensed to see patients only in %@</source>
         <target>很抱歉，%@医生目前只具备在%@的诊疗执业资格</target>
       </trans-unit>
       <trans-unit id="621" resname="Dr. %@ is only licensed to see patients in %@. You may still request to connect, however you will only be able to consult Dr. %@ when you are traveling to one of these locations." restype="string" datatype="x-objective-c">
         <source>Dr. %@ is only licensed to see patients in %@. You may still request to connect, however you will only be able to consult Dr. %@ when you are traveling to one of these locations.</source>
         <target>%@医生仅在%@具备诊疗执业资格，您只有在前往这些地方时才能咨询%@医生。</target>
       </trans-unit>
-      <trans-unit id="622" resname="Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to consult the doctor unless you&apos;re traveling to a state where the doctor is licensed." restype="string" datatype="x-objective-c">
-        <source>Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to consult the doctor unless you&apos;re traveling to a state where the doctor is licensed.</source>
+      <trans-unit id="622" resname="Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to consult the doctor unless you're traveling to a state where the doctor is licensed." restype="string" datatype="x-objective-c">
+        <source>Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to consult the doctor unless you're traveling to a state where the doctor is licensed.</source>
         <target>%@医生在%@不具备诊疗执业资格且无法为您提供符合法律的医学建议或开具处方。您是否确定仍然将该名医生添加至您的医护团队？您将无法咨询此医生，除非您前往该名医生具备执业资格的州。</target>
       </trans-unit>
-      <trans-unit id="623" resname="Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to receive diagnosis or treatment unless you&apos;re traveling to a state where the doctor is licensed." restype="string" datatype="x-objective-c">
-        <source>Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to receive diagnosis or treatment unless you&apos;re traveling to a state where the doctor is licensed.</source>
+      <trans-unit id="623" resname="Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to receive diagnosis or treatment unless you're traveling to a state where the doctor is licensed." restype="string" datatype="x-objective-c">
+        <source>Dr. %@ is not licensed to see patients in %@ and cannot legally provide you with medical advice or prescribe treatments. Are you sure you still want to add this doctor to your Care-Team? You will not be able to receive diagnosis or treatment unless you're traveling to a state where the doctor is licensed.</source>
         <target>%@医生在%@不具备诊疗执业资格且无法为您提供符合法律的医学建议或开具处方。您是否确定仍然将该名医生添加至您的医护团队？您将无法接受诊断或治疗，除非您前往该名医生具备执业资格的州。</target>
       </trans-unit>
       <trans-unit id="624" resname="Here are some doctors from %@ you could connect with:" restype="string" datatype="x-objective-c">
@@ -3372,9 +3372,9 @@
   <file original="feelgood/ipad/Plugins/Base.lproj/FGConnectionLostView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="638" resname="vQi-Zb-3ut.text" restype="string" datatype="x-xib">
-        <source>There\&apos;s a problem with your connection.</source>
+        <source>There's a problem with your connection.</source>
         <target>您的连接有一个问题</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;There&apos;s a problem with your connection.&quot;; ObjectID = &quot;vQi-Zb-3ut&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "There's a problem with your connection."; ObjectID = "vQi-Zb-3ut";</note>
       </trans-unit>
     </body>
   </file>
@@ -3383,12 +3383,12 @@
       <trans-unit id="639" resname="IE2-yq-Pxp.text" restype="string" datatype="x-xib">
         <source>We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with:</source>
         <target>我们可以通过安全信息，视频/文本聊天或安排在线预约进行连接。\n\n我可以为您提供：</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with: &quot;; ObjectID = &quot;IE2-yq-Pxp&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with: "; ObjectID = "IE2-yq-Pxp";</note>
       </trans-unit>
       <trans-unit id="640" resname="JqY-vb-xQd.normalTitle" restype="string" datatype="x-xib">
         <source>Talk to doctor</source>
         <target>与医生交流</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Talk to doctor&quot;; ObjectID = &quot;JqY-vb-xQd&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Talk to doctor"; ObjectID = "JqY-vb-xQd";</note>
       </trans-unit>
     </body>
   </file>
@@ -3397,7 +3397,7 @@
       <trans-unit id="641" resname="Tao-vh-SIO.placeholder" restype="string" datatype="x-xib">
         <source>Search name, speciality, or topic</source>
         <target>搜索姓名、专科或话题</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search name, speciality, or topic        &quot;; ObjectID = &quot;Tao-vh-SIO&quot;;</note>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Search name, speciality, or topic        "; ObjectID = "Tao-vh-SIO";</note>
       </trans-unit>
     </body>
   </file>
@@ -3406,43 +3406,43 @@
       <trans-unit id="642" resname="5gC-Xz-n6i.normalTitle" restype="string" datatype="x-xib">
         <source>Download</source>
         <target>下载</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;     Download&quot;; ObjectID = &quot;5gC-Xz-n6i&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "     Download"; ObjectID = "5gC-Xz-n6i";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Base.lproj/WelcomeAlertView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="643" resname="Mu2-0Z-4kA.text" restype="string" datatype="x-xib">
-        <source>Great! You\&apos;re all set!</source>
+        <source>Great! You're all set!</source>
         <target>太棒了！设置就绪！</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Great! You&apos;re all set!&quot;; ObjectID = &quot;Mu2-0Z-4kA&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Great! You're all set!"; ObjectID = "Mu2-0Z-4kA";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Base.lproj/FGThankAlertView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="644" resname="erM-oz-3w7.text" restype="string" datatype="x-xib">
-        <source>Please don\&apos;t include a followup question in your note. To do so,</source>
-        <target>请不要在您的备注中包含后续问题。这样做，</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so,&quot;; ObjectID = &quot;erM-oz-3w7&quot;;</note>
+        <source>Please don't include a followup question in your note. To do so,</source>
+        <target>请不要在您的备注中包含后续问题。若想这样做，</target>
+        <note annotates="source">Class = "UILabel"; text = "Please don't include a followup question in your note. To do so,"; ObjectID = "erM-oz-3w7";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Base.lproj/FGRateAlertView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="645" resname="VK9-Mt-EjL.text" restype="string" datatype="x-xib">
-        <source>Spread the word and rate\nus in the App Store :&#41;</source>
-        <target>帮我们宣传并在苹果商店给我们评分哦:&#41;</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Spread the word and rate\nus in the App Store :&#41;&quot;; ObjectID = &quot;VK9-Mt-EjL&quot;;</note>
+        <source>Spread the word and rate\nus in the App Store :)</source>
+        <target>帮我们宣传并在苹果商店给我们评分哦:)</target>
+        <note annotates="source">Class = "UILabel"; text = "Spread the word and rate\nus in the App Store :)"; ObjectID = "VK9-Mt-EjL";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Base.lproj/FGChatQuestTestTableViewCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="646" resname="CZv-9x-Rur.text" restype="string" datatype="x-xib">
-        <source>I\&apos;ve ordered a test for you via Quest Diagnostics.</source>
+        <source>I've ordered a test for you via Quest Diagnostics.</source>
         <target>我已通过Quest Diagnostic实验室为您安排了一次检验。</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;I&apos;ve ordered a test for you via Quest Diagnostics.&quot;; ObjectID = &quot;CZv-9x-Rur&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "I've ordered a test for you via Quest Diagnostics."; ObjectID = "CZv-9x-Rur";</note>
       </trans-unit>
     </body>
   </file>
@@ -3450,8 +3450,8 @@
     <body>
       <trans-unit id="647" resname="oKS-Pc-4XA.text" restype="string" datatype="x-xib">
         <source>Prescriptions, checklists, referrals, tips &amp; news</source>
-        <target>处方、清单、转介、小贴士与新闻</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Prescriptions, checklists, referrals, tips &amp; news &quot;; ObjectID = &quot;oKS-Pc-4XA&quot;;</note>
+        <target>处方、清单、转诊、小贴士与新闻</target>
+        <note annotates="source">Class = "UILabel"; text = "Prescriptions, checklists, referrals, tips &amp; news "; ObjectID = "oKS-Pc-4XA";</note>
       </trans-unit>
     </body>
   </file>
@@ -3460,7 +3460,7 @@
       <trans-unit id="648" resname="Pe4-Qb-iAQ.placeholder" restype="string" datatype="x-xib">
         <source>Seach name, speciality, or topic</source>
         <target>搜索姓名、专科或话题</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Seach name, speciality, or topic       &quot;; ObjectID = &quot;Pe4-Qb-iAQ&quot;;</note>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Seach name, speciality, or topic       "; ObjectID = "Pe4-Qb-iAQ";</note>
       </trans-unit>
     </body>
   </file>
@@ -3469,35 +3469,35 @@
       <trans-unit id="649" resname="2hw-Z4-cVZ.text" restype="string" datatype="x-xib">
         <source>We may already have your answer</source>
         <target>我们可能已经有了您的回答</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We may already have your answer&quot;; ObjectID = &quot;2hw-Z4-cVZ&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "We may already have your answer"; ObjectID = "2hw-Z4-cVZ";</note>
       </trans-unit>
       <trans-unit id="650" resname="sWh-hA-9s9.text" restype="string" datatype="x-xib">
         <source>Our doctors have answered similar questions</source>
         <target>我们的医生回答过相似的问题</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Our doctors have answered similar questions&quot;; ObjectID = &quot;sWh-hA-9s9&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Our doctors have answered similar questions"; ObjectID = "sWh-hA-9s9";</note>
       </trans-unit>
       <trans-unit id="651" resname="vLt-Hu-9yd.text" restype="string" datatype="x-xib">
-        <source>Didn\&apos;t find what you are looking for?</source>
+        <source>Didn't find what you are looking for?</source>
         <target>没找到您想要找的东西？</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Didn&apos;t find what you are looking for?&quot;; ObjectID = &quot;vLt-Hu-9yd&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Didn't find what you are looking for?"; ObjectID = "vLt-Hu-9yd";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocsQuestionSentViewControlleriPad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="652" resname="1T1-t2-OU8.text" restype="string" datatype="x-xib">
-        <source>We\&apos;ll notify you as soon as our doctors respond. In the meantime:</source>
+        <source>We'll notify you as soon as our doctors respond. In the meantime:</source>
         <target>我们会在医生回复后尽快通知您。与此同时:</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;ll notify you as soon as our doctors respond. In the meantime:&quot;; ObjectID = &quot;1T1-t2-OU8&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "We'll notify you as soon as our doctors respond. In the meantime:"; ObjectID = "1T1-t2-OU8";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocsPaymentViewControlleriPad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="653" resname="Hel-CI-Fj1.text" restype="string" datatype="x-xib">
-        <source>We\&apos;re committed to making you have a delightful experience with our doctors that leaves you feeling good. If you\&apos;re unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you\&apos;ll be satisfied :&#41;</source>
-        <target>我们会努力给您与我们医生交流的愉快体验，让您感觉很好。如果您对在线咨询的质量不满意和认为在线咨询没有帮助，您可以随时联系我们并请求退款！我们保证您会满意:&#41;</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re committed to making you have a delightful experience with our doctors that leaves you feeling good. If you&apos;re unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you&apos;ll be satisfied :&#41;&quot;; ObjectID = &quot;Hel-CI-Fj1&quot;;</note>
+        <source>We're committed to making you have a delightful experience with our doctors that leaves you feeling good. If you're unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you'll be satisfied :)</source>
+        <target>我们会努力给您与我们医生交流的愉快体验，让您感觉很好。如果您对在线咨询的质量不满意和认为在线咨询没有帮助，您可以随时联系我们并请求退款！我们保证您会满意:)</target>
+        <note annotates="source">Class = "UILabel"; text = "We're committed to making you have a delightful experience with our doctors that leaves you feeling good. If you're unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you'll be satisfied :)"; ObjectID = "Hel-CI-Fj1";</note>
       </trans-unit>
     </body>
   </file>
@@ -3506,7 +3506,7 @@
       <trans-unit id="654" resname="KLE-0h-R7W.normalTitle" restype="string" datatype="x-xib">
         <source>Scan card</source>
         <target>扫描卡</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot; Scan card&quot;; ObjectID = &quot;KLE-0h-R7W&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = " Scan card"; ObjectID = "KLE-0h-R7W";</note>
       </trans-unit>
     </body>
   </file>
@@ -3515,7 +3515,7 @@
       <trans-unit id="655" resname="GkE-Au-ETd.normalTitle" restype="string" datatype="x-xib">
         <source>Scan card</source>
         <target>扫描卡</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot; Scan card&quot;; ObjectID = &quot;GkE-Au-ETd&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = " Scan card"; ObjectID = "GkE-Au-ETd";</note>
       </trans-unit>
     </body>
   </file>
@@ -3524,27 +3524,27 @@
       <trans-unit id="656" resname="4Qh-jU-tl7.text" restype="string" datatype="x-xib">
         <source>Voice Call</source>
         <target>语音聊天</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Voice Call&quot;; ObjectID = &quot;4Qh-jU-tl7&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Voice Call"; ObjectID = "4Qh-jU-tl7";</note>
       </trans-unit>
       <trans-unit id="657" resname="73Q-nf-NFY.text" restype="string" datatype="x-xib">
         <source>Text chat</source>
         <target>文本聊天</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Text chat&quot;; ObjectID = &quot;73Q-nf-NFY&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Text chat"; ObjectID = "73Q-nf-NFY";</note>
       </trans-unit>
       <trans-unit id="658" resname="8Fc-pj-rKs.text" restype="string" datatype="x-xib">
         <source>Video Call</source>
         <target>视频聊天</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Video Call&quot;; ObjectID = &quot;8Fc-pj-rKs&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Video Call"; ObjectID = "8Fc-pj-rKs";</note>
       </trans-unit>
       <trans-unit id="659" resname="F8C-bC-b0r.text" restype="string" datatype="x-xib">
-        <source>You\&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe\&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We\&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We\&apos;re here to help!</source>
+        <source>You've talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe'd like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!</source>
         <target>您这个月已经和医生聊了X次。请记住，HealthTap 在线咨询不能取代%@普通门诊医师，或用于替代与现实世界中的医生建立关系。\n\n我们希望您可以联系support@healthtap.com，告诉我们您为什么需要继续跟医生对话。我们很高兴审核您的案例，如果合理，您可以开始其它咨询。我们在这里帮助您！</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ve talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe&apos;d like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We&apos;d be happy to review your case and, if appropriate, enable you to start another consult. We&apos;re here to help!&quot;; ObjectID = &quot;F8C-bC-b0r&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "You've talked to a doctor X times this month. Remember, HealthTap Virtual Consults are not meant to replace your primary care physician or be used as a substitute for establishing a relationship with a doctor in the real world.\n \nWe'd like you to contact us at [support@healthtap.com] to let us know why you need to continue talking to a doctor. We'd be happy to review your case and, if appropriate, enable you to start another consult. We're here to help!"; ObjectID = "F8C-bC-b0r";</note>
       </trans-unit>
       <trans-unit id="660" resname="ONE-ub-R6W.text" restype="string" datatype="x-xib">
-        <source>Type a detailed description about your symptoms, concerns, and how you\&apos;d like the doctor to help you.</source>
+        <source>Type a detailed description about your symptoms, concerns, and how you'd like the doctor to help you.</source>
         <target>键入关于您症状、担忧以及您希望医生如何帮助您的细节描述。</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Type a detailed description about your symptoms, concerns, and how you&apos;d like the doctor to help you.&quot;; ObjectID = &quot;ONE-ub-R6W&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Type a detailed description about your symptoms, concerns, and how you'd like the doctor to help you."; ObjectID = "ONE-ub-R6W";</note>
       </trans-unit>
     </body>
   </file>
@@ -3553,17 +3553,17 @@
       <trans-unit id="661" resname="8Ox-wK-Mh7.text" restype="string" datatype="x-xib">
         <source>Video Call</source>
         <target>视频聊天</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Video Call&quot;; ObjectID = &quot;8Ox-wK-Mh7&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Video Call"; ObjectID = "8Ox-wK-Mh7";</note>
       </trans-unit>
       <trans-unit id="662" resname="dfZ-av-L1L.text" restype="string" datatype="x-xib">
         <source>Voice Call</source>
         <target>语音聊天</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Voice Call&quot;; ObjectID = &quot;dfZ-av-L1L&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Voice Call"; ObjectID = "dfZ-av-L1L";</note>
       </trans-unit>
       <trans-unit id="663" resname="hQM-vQ-cAb.text" restype="string" datatype="x-xib">
         <source>Text Chat</source>
         <target>文本聊天</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Text Chat&quot;; ObjectID = &quot;hQM-vQ-cAb&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Text Chat"; ObjectID = "hQM-vQ-cAb";</note>
       </trans-unit>
     </body>
   </file>
@@ -3572,27 +3572,27 @@
       <trans-unit id="664" resname="KvY-4s-tV7.placeholder" restype="string" datatype="x-xib">
         <source>Name of condition or symptom</source>
         <target>状况或症状名称</target>
-        <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;  Name of condition or symptom&quot;; ObjectID = &quot;KvY-4s-tV7&quot;;</note>
+        <note annotates="source">Class = "UITextField"; placeholder = "  Name of condition or symptom"; ObjectID = "KvY-4s-tV7";</note>
       </trans-unit>
       <trans-unit id="665" resname="UJ6-B8-aCt.text" restype="string" datatype="x-xib">
-        <source>The ability to dive deeper into women\&apos;s issue</source>
+        <source>The ability to dive deeper into women's issue</source>
         <target>深入了解女性问题的能力</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;The ability to dive deeper into women&apos;s issue&quot;; ObjectID = &quot;UJ6-B8-aCt&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "The ability to dive deeper into women's issue"; ObjectID = "UJ6-B8-aCt";</note>
       </trans-unit>
       <trans-unit id="666" resname="WeL-BP-aJb.text" restype="string" datatype="x-xib">
-        <source>We\&apos;ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.</source>
+        <source>We'll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.</source>
         <target>若您能向我们最关注的慈善机构捐出善款，我们将很乐意更快递回答您的问题。</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;ll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities.&quot;; ObjectID = &quot;WeL-BP-aJb&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "We'll happily expedite your question for a faster answer in exchange for a charitable donation to one of our favorite charities."; ObjectID = "WeL-BP-aJb";</note>
       </trans-unit>
       <trans-unit id="667" resname="oS2-3x-xLb.text" restype="string" datatype="x-xib">
-        <source>Help us do good, we\&apos;ll help you get a faster answer</source>
+        <source>Help us do good, we'll help you get a faster answer</source>
         <target>帮助我们改进，我们将帮助您更快地获得回答</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Help us do good, we&apos;ll help you get a faster answer&quot;; ObjectID = &quot;oS2-3x-xLb&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Help us do good, we'll help you get a faster answer"; ObjectID = "oS2-3x-xLb";</note>
       </trans-unit>
       <trans-unit id="668" resname="pje-c9-jWE.text" restype="string" datatype="x-xib">
-        <source>\&quot;Been there, done that\&quot; answers based on personal knowledge and experience</source>
+        <source>\"Been there, done that\" answers based on personal knowledge and experience</source>
         <target>“已经去过某处，做过某事”的回答是基于个人知识和经验的</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;\&quot;Been there, done that\&quot; answers based on personal knowledge and experience&quot;; ObjectID = &quot;pje-c9-jWE&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "\"Been there, done that\" answers based on personal knowledge and experience"; ObjectID = "pje-c9-jWE";</note>
       </trans-unit>
     </body>
   </file>
@@ -3601,31 +3601,31 @@
       <trans-unit id="669" resname="4JM-yv-O1p.text" restype="string" datatype="x-xib">
         <source>Get a more personalized answer</source>
         <target>获得一个更专属于您的回答</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get a more personalized answer&quot;; ObjectID = &quot;4JM-yv-O1p&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Get a more personalized answer"; ObjectID = "4JM-yv-O1p";</note>
       </trans-unit>
       <trans-unit id="670" resname="KvY-4s-tV7.placeholder" restype="string" datatype="x-xib">
         <source>Name of condition or symptom</source>
         <target>状况或症状名称</target>
-        <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;  Name of condition or symptom&quot;; ObjectID = &quot;KvY-4s-tV7&quot;;</note>
+        <note annotates="source">Class = "UITextField"; placeholder = "  Name of condition or symptom"; ObjectID = "KvY-4s-tV7";</note>
       </trans-unit>
       <trans-unit id="671" resname="q32-Yx-z8d.text" restype="string" datatype="x-xib">
         <source>Tell the doctor a little about you</source>
         <target>告诉医生关于您的信息</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Tell the doctor a little about you&quot;; ObjectID = &quot;q32-Yx-z8d&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Tell the doctor a little about you"; ObjectID = "q32-Yx-z8d";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocAddSubAccountsViewControlleriPad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="672" resname="HWn-bN-Mn5.text" restype="string" datatype="x-xib">
-        <source>We\&apos;re sorry to see you downgrade!</source>
+        <source>We're sorry to see you downgrade!</source>
         <target>我们对于您降低账户级别表示遗憾！</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re sorry to see you downgrade!&quot;; ObjectID = &quot;HWn-bN-Mn5&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "We're sorry to see you downgrade!"; ObjectID = "HWn-bN-Mn5";</note>
       </trans-unit>
       <trans-unit id="673" resname="bsp-Xt-0j0.text" restype="string" datatype="x-xib">
-        <source>We\&apos;re dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We\&apos;ll respond to you and do our best to make you happy as soon as possible! :&#41;</source>
-        <target>我们致力于照顾您的健康请考虑给我们发送反馈而不是降级我们会尽快回复您并做最大的努力使您开心！:&#41;</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We&apos;ll respond to you and do our best to make you happy as soon as possible! :&#41;&quot;; ObjectID = &quot;bsp-Xt-0j0&quot;;</note>
+        <source>We're dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We'll respond to you and do our best to make you happy as soon as possible! :)</source>
+        <target>我们致力于照顾您的健康请考虑给我们发送反馈而不是降级我们会尽快回复您并做最大的努力使您开心！:)</target>
+        <note annotates="source">Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We'll respond to you and do our best to make you happy as soon as possible! :)"; ObjectID = "bsp-Xt-0j0";</note>
       </trans-unit>
     </body>
   </file>
@@ -3634,22 +3634,22 @@
       <trans-unit id="674" resname="btX-Gh-PJY.text" restype="string" datatype="x-xib">
         <source>We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with:</source>
         <target>我们可以通过安全信息，视频/文本聊天或安排在线预约进行连接。\n\n我可以为您提供：</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with: &quot;; ObjectID = &quot;btX-Gh-PJY&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "We can connect via secure messaging, video/text chat, or schedule a virtual appointment.\n\nI can provide you with: "; ObjectID = "btX-Gh-PJY";</note>
       </trans-unit>
       <trans-unit id="675" resname="eyf-AW-JAK.normalTitle" restype="string" datatype="x-xib">
         <source>Take action</source>
         <target>采取行动</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Take action&quot;; ObjectID = &quot;eyf-AW-JAK&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Take action"; ObjectID = "eyf-AW-JAK";</note>
       </trans-unit>
       <trans-unit id="676" resname="pDZ-Hz-LT8.normalTitle" restype="string" datatype="x-xib">
         <source>Talk to doctors</source>
         <target>与医生交流</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Talk to doctors&quot;; ObjectID = &quot;pDZ-Hz-LT8&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Talk to doctors"; ObjectID = "pDZ-Hz-LT8";</note>
       </trans-unit>
       <trans-unit id="677" resname="t5N-S8-gqI.text" restype="string" datatype="x-xib">
         <source>What would you like to do next?</source>
         <target>您接下来想要做什么？</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What would you like to do next?&quot;; ObjectID = &quot;t5N-S8-gqI&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "What would you like to do next?"; ObjectID = "t5N-S8-gqI";</note>
       </trans-unit>
     </body>
   </file>
@@ -3658,12 +3658,12 @@
       <trans-unit id="678" resname="DVF-6a-8LI.placeholder" restype="string" datatype="x-xib">
         <source>Search for location</source>
         <target>搜索位置</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search for location                   &quot;; ObjectID = &quot;DVF-6a-8LI&quot;;</note>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Search for location                   "; ObjectID = "DVF-6a-8LI";</note>
       </trans-unit>
       <trans-unit id="679" resname="vLe-Sn-YWd.normalTitle" restype="string" datatype="x-xib">
         <source>Current Location</source>
         <target>当前位置</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;  Current Location&quot;; ObjectID = &quot;vLe-Sn-YWd&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "  Current Location"; ObjectID = "vLe-Sn-YWd";</note>
       </trans-unit>
     </body>
   </file>
@@ -3672,7 +3672,7 @@
       <trans-unit id="680" resname="WOf-G7-uB9.placeholder" restype="string" datatype="x-xib">
         <source>Search for language</source>
         <target>搜索语言</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search for language                 &quot;; ObjectID = &quot;WOf-G7-uB9&quot;;</note>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Search for language                 "; ObjectID = "WOf-G7-uB9";</note>
       </trans-unit>
     </body>
   </file>
@@ -3681,7 +3681,7 @@
       <trans-unit id="681" resname="NRs-29-UNG.placeholder" restype="string" datatype="x-xib">
         <source>Search for insurance</source>
         <target>搜索保险</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search for insurance              &quot;; ObjectID = &quot;NRs-29-UNG&quot;;</note>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Search for insurance              "; ObjectID = "NRs-29-UNG";</note>
       </trans-unit>
     </body>
   </file>
@@ -3690,7 +3690,7 @@
       <trans-unit id="682" resname="2FB-8E-ha2.placeholder" restype="string" datatype="x-xib">
         <source>Name, specialty or topic</source>
         <target>姓名、专科或话题</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Name, specialty or topic          &quot;; ObjectID = &quot;2FB-8E-ha2&quot;;</note>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Name, specialty or topic          "; ObjectID = "2FB-8E-ha2";</note>
       </trans-unit>
     </body>
   </file>
@@ -3699,12 +3699,12 @@
       <trans-unit id="683" resname="6dm-aD-7F0.text" restype="string" datatype="x-xib">
         <source>Helpful and personalized answers, tips, news, and app recommendations from top doctors!</source>
         <target>从顶级医生处获得有帮助的个性化回答、小贴士、新闻和应用程序的建议!</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Helpful and personalized answers, tips, news, and app recommendations from top doctors! &quot;; ObjectID = &quot;6dm-aD-7F0&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Helpful and personalized answers, tips, news, and app recommendations from top doctors! "; ObjectID = "6dm-aD-7F0";</note>
       </trans-unit>
       <trans-unit id="684" resname="pWe-o3-Qtc.text" restype="string" datatype="x-xib">
         <source>Are you a doctor?</source>
         <target>您是一名医生吗？</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Are you a doctor? &quot;; ObjectID = &quot;pWe-o3-Qtc&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Are you a doctor? "; ObjectID = "pWe-o3-Qtc";</note>
       </trans-unit>
     </body>
   </file>
@@ -3713,12 +3713,12 @@
       <trans-unit id="685" resname="6dm-aD-7F0.text" restype="string" datatype="x-xib">
         <source>Helpful and personalized answers, tips, news, and app recommendations from top doctors!</source>
         <target>从顶级医生处获得有帮助的个性化回答、小贴士、新闻和应用程序的建议!</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Helpful and personalized answers, tips, news, and app recommendations from top doctors! &quot;; ObjectID = &quot;6dm-aD-7F0&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Helpful and personalized answers, tips, news, and app recommendations from top doctors! "; ObjectID = "6dm-aD-7F0";</note>
       </trans-unit>
       <trans-unit id="686" resname="pWe-o3-Qtc.text" restype="string" datatype="x-xib">
         <source>Are you a doctor?</source>
         <target>您是一名医生吗？</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Are you a doctor? &quot;; ObjectID = &quot;pWe-o3-Qtc&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Are you a doctor? "; ObjectID = "pWe-o3-Qtc";</note>
       </trans-unit>
     </body>
   </file>
@@ -3727,16 +3727,16 @@
       <trans-unit id="687" resname="P2Q-rj-nfc.text" restype="string" datatype="x-xib">
         <source>Are you a doctor?</source>
         <target>您是一名医生吗？</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Are you a doctor? &quot;; ObjectID = &quot;P2Q-rj-nfc&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Are you a doctor? "; ObjectID = "P2Q-rj-nfc";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGNuxSearchViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="688" resname="S2c-WI-KEa.placeholder" restype="string" datatype="x-xib">
-        <source>Find a goal &#40;e.g: Lose weight&#41;</source>
-        <target>查找目标&#40;例如: 减肥）</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find a goal &#40;e.g: Lose weight&#41;                                              &quot;; ObjectID = &quot;S2c-WI-KEa&quot;;</note>
+        <source>Find a goal (e.g: Lose weight)</source>
+        <target>查找目标(例如: 减肥）</target>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Find a goal (e.g: Lose weight)                                              "; ObjectID = "S2c-WI-KEa";</note>
       </trans-unit>
     </body>
   </file>
@@ -3745,21 +3745,21 @@
       <trans-unit id="689" resname="jGc-Rz-QTV.normalTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Continue&quot;; ObjectID = &quot;jGc-Rz-QTV&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Continue"; ObjectID = "jGc-Rz-QTV";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGNuxInviteDoctorViewControllerSmallScreen.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="690" resname="Ege-W5-Zxn.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\&apos;t find your doctor? Get help »</source>
+        <source>Can't find your doctor? Get help »</source>
         <target>无法找到您的医生获得帮助»</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;Ege-W5-Zxn&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Can't find your doctor? Get help »"; ObjectID = "Ege-W5-Zxn";</note>
       </trans-unit>
       <trans-unit id="691" resname="XuL-zM-XZw.normalTitle" restype="string" datatype="x-xib">
-        <source>Can\&apos;t find your doctor? Get help »</source>
+        <source>Can't find your doctor? Get help »</source>
         <target>无法找到您的医生获得帮助»</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Can&apos;t find your doctor? Get help »&quot;; ObjectID = &quot;XuL-zM-XZw&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Can't find your doctor? Get help »"; ObjectID = "XuL-zM-XZw";</note>
       </trans-unit>
     </body>
   </file>
@@ -3768,12 +3768,12 @@
       <trans-unit id="692" resname="pmT-Bv-he8.disabledTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Continue&quot;; ObjectID = &quot;pmT-Bv-he8&quot;;</note>
+        <note annotates="source">Class = "UIButton"; disabledTitle = "Continue"; ObjectID = "pmT-Bv-he8";</note>
       </trans-unit>
       <trans-unit id="693" resname="pmT-Bv-he8.normalTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Continue&quot;; ObjectID = &quot;pmT-Bv-he8&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Continue"; ObjectID = "pmT-Bv-he8";</note>
       </trans-unit>
     </body>
   </file>
@@ -3782,12 +3782,12 @@
       <trans-unit id="694" resname="euA-lh-mG0.disabledTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Continue&quot;; ObjectID = &quot;euA-lh-mG0&quot;;</note>
+        <note annotates="source">Class = "UIButton"; disabledTitle = "Continue"; ObjectID = "euA-lh-mG0";</note>
       </trans-unit>
       <trans-unit id="695" resname="euA-lh-mG0.normalTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Continue&quot;; ObjectID = &quot;euA-lh-mG0&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Continue"; ObjectID = "euA-lh-mG0";</note>
       </trans-unit>
     </body>
   </file>
@@ -3796,12 +3796,12 @@
       <trans-unit id="696" resname="KrP-9x-Z9n.disabledTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Continue&quot;; ObjectID = &quot;KrP-9x-Z9n&quot;;</note>
+        <note annotates="source">Class = "UIButton"; disabledTitle = "Continue"; ObjectID = "KrP-9x-Z9n";</note>
       </trans-unit>
       <trans-unit id="697" resname="KrP-9x-Z9n.normalTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Continue&quot;; ObjectID = &quot;KrP-9x-Z9n&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Continue"; ObjectID = "KrP-9x-Z9n";</note>
       </trans-unit>
     </body>
   </file>
@@ -3810,7 +3810,7 @@
       <trans-unit id="698" resname="WXj-nW-5ds.normalTitle" restype="string" datatype="x-xib">
         <source>Button</source>
         <target>按钮</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Button&quot;; ObjectID = &quot;WXj-nW-5ds&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Button"; ObjectID = "WXj-nW-5ds";</note>
       </trans-unit>
     </body>
   </file>
@@ -3819,22 +3819,22 @@
       <trans-unit id="699" resname="D1S-cE-SGi.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
         <target>共享</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Share&quot;; ObjectID = &quot;D1S-cE-SGi&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "D1S-cE-SGi";</note>
       </trans-unit>
       <trans-unit id="700" resname="Dcn-5D-eum.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
         <target>共享</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Share&quot;; ObjectID = &quot;Dcn-5D-eum&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "Dcn-5D-eum";</note>
       </trans-unit>
       <trans-unit id="701" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
-        <source>Please don\&apos;t include a followup question in your note. To do so,</source>
-        <target>请不要在您的备注中包含后续问题。这样做</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so,&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
+        <source>Please don't include a followup question in your note. To do so,</source>
+        <target>请不要在您的备注中包含后续问题。若想这样做，</target>
+        <note annotates="source">Class = "UILabel"; text = "Please don't include a followup question in your note. To do so,"; ObjectID = "G3s-8R-ne9";</note>
       </trans-unit>
       <trans-unit id="702" resname="KaS-Fq-bjx.normalTitle" restype="string" datatype="x-xib">
         <source>Thank</source>
         <target>谢谢</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Thank&quot;; ObjectID = &quot;KaS-Fq-bjx&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Thank"; ObjectID = "KaS-Fq-bjx";</note>
       </trans-unit>
     </body>
   </file>
@@ -3843,12 +3843,12 @@
       <trans-unit id="703" resname="D1S-cE-SGi.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
         <target>共享</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Share&quot;; ObjectID = &quot;D1S-cE-SGi&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "D1S-cE-SGi";</note>
       </trans-unit>
       <trans-unit id="704" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
-        <source>Please don\&apos;t include a followup question in your note. To do so,</source>
-        <target>请不要在您的备注中包含后续问题。这样做</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Please don&apos;t include a followup question in your note. To do so,&quot;; ObjectID = &quot;G3s-8R-ne9&quot;;</note>
+        <source>Please don't include a followup question in your note. To do so,</source>
+        <target>请不要在您的备注中包含后续问题。若想这样做，</target>
+        <note annotates="source">Class = "UILabel"; text = "Please don't include a followup question in your note. To do so,"; ObjectID = "G3s-8R-ne9";</note>
       </trans-unit>
     </body>
   </file>
@@ -3857,17 +3857,17 @@
       <trans-unit id="705" resname="D1S-cE-SGi.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
         <target>共享</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Share&quot;; ObjectID = &quot;D1S-cE-SGi&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "D1S-cE-SGi";</note>
       </trans-unit>
       <trans-unit id="706" resname="Dcn-5D-eum.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
         <target>共享</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Share&quot;; ObjectID = &quot;Dcn-5D-eum&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "Dcn-5D-eum";</note>
       </trans-unit>
       <trans-unit id="707" resname="KaS-Fq-bjx.normalTitle" restype="string" datatype="x-xib">
         <source>Thank</source>
         <target>谢谢</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Thank&quot;; ObjectID = &quot;KaS-Fq-bjx&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Thank"; ObjectID = "KaS-Fq-bjx";</note>
       </trans-unit>
     </body>
   </file>
@@ -3876,7 +3876,7 @@
       <trans-unit id="708" resname="NGg-7n-SgJ.text" restype="string" datatype="x-xib">
         <source>Share more Feel Good Moments to inspire and motivate millions to achieve their goals</source>
         <target>分享更多Feel Good瞬间以鼓舞和激励更多的人去实现他们的目标</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Share more Feel Good Moments to inspire and motivate millions to achieve their goals &quot;; ObjectID = &quot;NGg-7n-SgJ&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Share more Feel Good Moments to inspire and motivate millions to achieve their goals "; ObjectID = "NGg-7n-SgJ";</note>
       </trans-unit>
     </body>
   </file>
@@ -3885,12 +3885,12 @@
       <trans-unit id="709" resname="5Zk-Ki-YZT.normalTitle" restype="string" datatype="x-xib">
         <source>Helpful</source>
         <target>有帮助的</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;  Helpful&quot;; ObjectID = &quot;5Zk-Ki-YZT&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "  Helpful"; ObjectID = "5Zk-Ki-YZT";</note>
       </trans-unit>
       <trans-unit id="710" resname="t3e-iJ-qIK.text" restype="string" datatype="x-xib">
-        <source>Food Packaging Health Risk \&apos;Unknown\&apos;</source>
+        <source>Food Packaging Health Risk 'Unknown'</source>
         <target>食品包装健康风险\’未知’\</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Food Packaging Health Risk &apos;Unknown&apos;&quot;; ObjectID = &quot;t3e-iJ-qIK&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Food Packaging Health Risk 'Unknown'"; ObjectID = "t3e-iJ-qIK";</note>
       </trans-unit>
     </body>
   </file>
@@ -3899,7 +3899,7 @@
       <trans-unit id="711" resname="5Zk-Ki-YZT.normalTitle" restype="string" datatype="x-xib">
         <source>Helpful</source>
         <target>有帮助的</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;  Helpful&quot;; ObjectID = &quot;5Zk-Ki-YZT&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "  Helpful"; ObjectID = "5Zk-Ki-YZT";</note>
       </trans-unit>
     </body>
   </file>
@@ -3908,12 +3908,12 @@
       <trans-unit id="712" resname="lyX-Gv-P5t.text" restype="string" datatype="x-xib">
         <source>Private storage and easy, secure sharing with doctors</source>
         <target>私人存储，与医生简单、安全的分享</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private storage and easy, secure sharing with doctors&quot;; ObjectID = &quot;lyX-Gv-P5t&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Private storage and easy, secure sharing with doctors"; ObjectID = "lyX-Gv-P5t";</note>
       </trans-unit>
       <trans-unit id="713" resname="vj8-2g-5Ix.text" restype="string" datatype="x-xib">
         <source>Upload photos or documents</source>
         <target>更新照片或文件</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Upload photos or documents&quot;; ObjectID = &quot;vj8-2g-5Ix&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Upload photos or documents"; ObjectID = "vj8-2g-5Ix";</note>
       </trans-unit>
     </body>
   </file>
@@ -3922,12 +3922,12 @@
       <trans-unit id="714" resname="Eyz-IA-iAt.text" restype="string" datatype="x-xib">
         <source>Upload photos or documents</source>
         <target>更新照片或文件</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Upload photos or documents&quot;; ObjectID = &quot;Eyz-IA-iAt&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Upload photos or documents"; ObjectID = "Eyz-IA-iAt";</note>
       </trans-unit>
       <trans-unit id="715" resname="Fla-9e-gY4.text" restype="string" datatype="x-xib">
         <source>Private storage and easy, secure sharing with doctors</source>
         <target>私人存储，与医生简单、安全的分享</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private storage and easy, secure sharing with doctors&quot;; ObjectID = &quot;Fla-9e-gY4&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Private storage and easy, secure sharing with doctors"; ObjectID = "Fla-9e-gY4";</note>
       </trans-unit>
     </body>
   </file>
@@ -3936,21 +3936,21 @@
       <trans-unit id="716" resname="fak-PA-FU7.text" restype="string" datatype="x-xib">
         <source>We just sent you a link to reset your password.\nIf you dont see it after a few minutes, please \ncheck your Spam folder.</source>
         <target>我们刚刚向您发送了重置密码的链接。\n如果几分钟后仍未看到，请\n查看您的垃圾邮件文件夹。</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We just sent you a link to reset your password.\nIf you dont see it after a few minutes, please \ncheck your Spam folder.&quot;; ObjectID = &quot;fak-PA-FU7&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "We just sent you a link to reset your password.\nIf you dont see it after a few minutes, please \ncheck your Spam folder."; ObjectID = "fak-PA-FU7";</note>
       </trans-unit>
       <trans-unit id="717" resname="iqT-MJ-Oof.text" restype="string" datatype="x-xib">
-        <source>No worries! Let us know your email and we\&apos;ll send you a link to reset it</source>
+        <source>No worries! Let us know your email and we'll send you a link to reset it</source>
         <target>不要担心！告诉我们您的电子邮件，我们会向您发送一个重置链接</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;No worries! Let us know your email and we&apos;ll send you a link to reset it&quot;; ObjectID = &quot;iqT-MJ-Oof&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "No worries! Let us know your email and we'll send you a link to reset it"; ObjectID = "iqT-MJ-Oof";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGEndCarouselViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="718" resname="4jF-0K-bQp.text" restype="string" datatype="x-xib">
-        <source>You\&apos;ll get more useful, beautiful doctor tips tomorrow</source>
-        <target>明天您会得到更多有帮助的，美丽的医生小贴士。</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;You&apos;ll get more useful, beautiful doctor tips tomorrow&quot;; ObjectID = &quot;4jF-0K-bQp&quot;;</note>
+        <source>You'll get more useful, beautiful doctor tips tomorrow</source>
+        <target>明天您会获得更多有用和精彩的医生小贴士。</target>
+        <note annotates="source">Class = "UILabel"; text = "You'll get more useful, beautiful doctor tips tomorrow"; ObjectID = "4jF-0K-bQp";</note>
       </trans-unit>
     </body>
   </file>
@@ -3959,16 +3959,16 @@
       <trans-unit id="719" resname="gJN-lB-iYu.text" restype="string" datatype="x-xib">
         <source>Want a personalized checklist?\nOur doctors can help</source>
         <target>想要专属于您的清单吗？\n我们的医生可以给予帮助</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Want a personalized checklist?\nOur doctors can help&quot;; ObjectID = &quot;gJN-lB-iYu&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Want a personalized checklist?\nOur doctors can help"; ObjectID = "gJN-lB-iYu";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGCheckListSearchViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="720" resname="Wdk-yd-mkO.placeholder" restype="string" datatype="x-xib">
-        <source>Find a goal &#40;e.g: Lose weight&#41;</source>
+        <source>Find a goal (e.g: Lose weight)</source>
         <target>查找目标（例如：减肥）</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find a goal &#40;e.g: Lose weight&#41;                                              &quot;; ObjectID = &quot;Wdk-yd-mkO&quot;;</note>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Find a goal (e.g: Lose weight)                                              "; ObjectID = "Wdk-yd-mkO";</note>
       </trans-unit>
     </body>
   </file>
@@ -3977,7 +3977,7 @@
       <trans-unit id="721" resname="ccY-LM-9nb.placeholder" restype="string" datatype="x-xib">
         <source>Search name, speciality, or topic</source>
         <target>搜索姓名、专科或话题</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search name, speciality, or topic        &quot;; ObjectID = &quot;ccY-LM-9nb&quot;;</note>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Search name, speciality, or topic        "; ObjectID = "ccY-LM-9nb";</note>
       </trans-unit>
     </body>
   </file>
@@ -3986,7 +3986,7 @@
       <trans-unit id="722" resname="Kb2-2Q-Ixz.normalTitle" restype="string" datatype="x-xib">
         <source>Update question</source>
         <target>更新问题</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Update question&quot;; ObjectID = &quot;Kb2-2Q-Ixz&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Update question"; ObjectID = "Kb2-2Q-Ixz";</note>
       </trans-unit>
     </body>
   </file>
@@ -3995,12 +3995,12 @@
       <trans-unit id="723" resname="Kb2-2Q-Ixz.normalTitle" restype="string" datatype="x-xib">
         <source>Update question</source>
         <target>更新问题</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Update question&quot;; ObjectID = &quot;Kb2-2Q-Ixz&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Update question"; ObjectID = "Kb2-2Q-Ixz";</note>
       </trans-unit>
       <trans-unit id="724" resname="gwj-a0-AZQ.text" restype="string" datatype="x-xib">
         <source>Get help</source>
         <target>获得帮助</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get help&quot;; ObjectID = &quot;gwj-a0-AZQ&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Get help"; ObjectID = "gwj-a0-AZQ";</note>
       </trans-unit>
     </body>
   </file>
@@ -4009,21 +4009,21 @@
       <trans-unit id="725" resname="GUB-lX-WIJ.text" restype="string" datatype="x-xib">
         <source>Dr. Agrees</source>
         <target>医生同意</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Dr. Agrees &quot;; ObjectID = &quot;GUB-lX-WIJ&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Dr. Agrees "; ObjectID = "GUB-lX-WIJ";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Settings/Base.lproj/FGMainSettingsViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="726" resname="DFA-eO-y9t.text" restype="string" datatype="x-xib">
-        <source>What\&apos;s your email?</source>
+        <source>What's your email?</source>
         <target>您的邮箱?</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;What&apos;s your email?&quot;; ObjectID = &quot;DFA-eO-y9t&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "What's your email?"; ObjectID = "DFA-eO-y9t";</note>
       </trans-unit>
       <trans-unit id="727" resname="aro-gW-23T.text" restype="string" datatype="x-xib">
-        <source>We\&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We\&apos;ll do our best to make you happy as soon as possible! :&#41;</source>
-        <target>我们致力于照顾您的健康请不要冻结账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:&#41;</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;We&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We&apos;ll do our best to make you happy as soon as possible! :&#41;&quot;; ObjectID = &quot;aro-gW-23T&quot;;</note>
+        <source>We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)</source>
+        <target>我们致力于照顾您的健康请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:)</target>
+        <note annotates="source">Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)"; ObjectID = "aro-gW-23T";</note>
       </trans-unit>
     </body>
   </file>
@@ -4032,7 +4032,7 @@
       <trans-unit id="728" resname="unY-OG-63U.text" restype="string" datatype="x-xib">
         <source>MM/YY        CVV</source>
         <target>MM/YY        CVV</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;  MM/YY        CVV&quot;; ObjectID = &quot;unY-OG-63U&quot;;</note>
+        <note annotates="source">Class = "UITextView"; text = "  MM/YY        CVV"; ObjectID = "unY-OG-63U";</note>
       </trans-unit>
     </body>
   </file>
@@ -4041,7 +4041,7 @@
       <trans-unit id="729" resname="sgQ-be-O8h.normalTitle" restype="string" datatype="x-xib">
         <source>Scan card</source>
         <target>扫描卡</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot; Scan card&quot;; ObjectID = &quot;sgQ-be-O8h&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = " Scan card"; ObjectID = "sgQ-be-O8h";</note>
       </trans-unit>
     </body>
   </file>
@@ -4050,7 +4050,7 @@
       <trans-unit id="730" resname="liD-ow-9ga.text" restype="string" datatype="x-xib">
         <source>Add</source>
         <target>添加</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Add &quot;; ObjectID = &quot;liD-ow-9ga&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Add "; ObjectID = "liD-ow-9ga";</note>
       </trans-unit>
     </body>
   </file>
@@ -4059,22 +4059,22 @@
       <trans-unit id="731" resname="XoB-sm-Jcb.normalTitle" restype="string" datatype="x-xib">
         <source>Have this</source>
         <target>存在这种</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot; Have this&quot;; ObjectID = &quot;XoB-sm-Jcb&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = " Have this"; ObjectID = "XoB-sm-Jcb";</note>
       </trans-unit>
       <trans-unit id="732" resname="XoB-sm-Jcb.selectedTitle" restype="string" datatype="x-xib">
         <source>Have this</source>
         <target>存在这种</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; selectedTitle = &quot; Have this&quot;; ObjectID = &quot;XoB-sm-Jcb&quot;;</note>
+        <note annotates="source">Class = "UIButton"; selectedTitle = " Have this"; ObjectID = "XoB-sm-Jcb";</note>
       </trans-unit>
       <trans-unit id="733" resname="eXo-Lg-cIZ.normalTitle" restype="string" datatype="x-xib">
         <source>No longer have this</source>
         <target>不再这样</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot; No longer have this&quot;; ObjectID = &quot;eXo-Lg-cIZ&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = " No longer have this"; ObjectID = "eXo-Lg-cIZ";</note>
       </trans-unit>
       <trans-unit id="734" resname="eXo-Lg-cIZ.selectedTitle" restype="string" datatype="x-xib">
         <source>No longer have this</source>
         <target>不再这样</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; selectedTitle = &quot; No longer have this&quot;; ObjectID = &quot;eXo-Lg-cIZ&quot;;</note>
+        <note annotates="source">Class = "UIButton"; selectedTitle = " No longer have this"; ObjectID = "eXo-Lg-cIZ";</note>
       </trans-unit>
     </body>
   </file>
@@ -4083,16 +4083,16 @@
       <trans-unit id="735" resname="sMV-bk-Som.text" restype="string" datatype="x-xib">
         <source>Add</source>
         <target>添加</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Add &quot;; ObjectID = &quot;sMV-bk-Som&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Add "; ObjectID = "sMV-bk-Som";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Base.lproj/FGDocScoreLayerView~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="736" resname="dSG-zo-7RR.text" restype="string" datatype="x-xib">
-        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members</source>
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification(s)\n\n•     Other professional accomplishments       (such as peer reviewed publications        and awards)  •     Thanks, votes, and recommendations        from members</source>
         <target>每一个在HealthTap上的医学专家都有一个医者评分这个评分系统从0到5星，反映了这名医生在HealthTap上的认可度以及这位专业医生相关的公开信息，包括：  其他医生的赞同、投票和推荐                        从业时间                                                     与其相关的专家水平                                       学业技能学习履历                                         学会认证证书 其他学术成就（如同业审评论文和奖项） 会员的感谢、投票和推荐</target>
-        <note annotates="source">Class = &quot;UITextView&quot;; text = &quot;Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification&#40;s&#41;\n\n•     Other professional accomplishments       &#40;such as peer reviewed publications        and awards&#41;  •     Thanks, votes, and recommendations        from members&quot;; ObjectID = &quot;dSG-zo-7RR&quot;;</note>
+        <note annotates="source">Class = "UITextView"; text = "Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:  •     Agrees, votes, and recommendations        from other experts \n•     Years of experience\n\n•     Quality of experts who refer to them\n\n•     Where the expert studied and trained\n\n•     Board certification(s)\n\n•     Other professional accomplishments       (such as peer reviewed publications        and awards)  •     Thanks, votes, and recommendations        from members"; ObjectID = "dSG-zo-7RR";</note>
       </trans-unit>
     </body>
   </file>
@@ -4101,7 +4101,7 @@
       <trans-unit id="737" resname="Can-an-KQ9.text" restype="string" datatype="x-xib">
         <source>Add a profile</source>
         <target>添加个人资料</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Add a profile&quot;; ObjectID = &quot;Can-an-KQ9&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Add a profile"; ObjectID = "Can-an-KQ9";</note>
       </trans-unit>
     </body>
   </file>
@@ -4110,7 +4110,7 @@
       <trans-unit id="738" resname="lha-dw-e4h.normalTitle" restype="string" datatype="x-xib">
         <source>Revise ›</source>
         <target>修改</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Revise › &quot;; ObjectID = &quot;lha-dw-e4h&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Revise › "; ObjectID = "lha-dw-e4h";</note>
       </trans-unit>
     </body>
   </file>
@@ -4119,7 +4119,7 @@
       <trans-unit id="739" resname="CL6-OZ-JR6.placeholder" restype="string" datatype="x-xib">
         <source>MM/DD/YYYY</source>
         <target>MM/DD/YYYY</target>
-        <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;  MM/DD/YYYY&quot;; ObjectID = &quot;CL6-OZ-JR6&quot;;</note>
+        <note annotates="source">Class = "UITextField"; placeholder = "  MM/DD/YYYY"; ObjectID = "CL6-OZ-JR6";</note>
       </trans-unit>
     </body>
   </file>
@@ -4128,7 +4128,7 @@
       <trans-unit id="740" resname="7Wp-7V-hd6.normalTitle" restype="string" datatype="x-xib">
         <source>Thank</source>
         <target>谢谢</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Thank&quot;; ObjectID = &quot;7Wp-7V-hd6&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Thank"; ObjectID = "7Wp-7V-hd6";</note>
       </trans-unit>
     </body>
   </file>
@@ -4137,16 +4137,16 @@
       <trans-unit id="741" resname="jSh-u9-Oof.normalTitle" restype="string" datatype="x-xib">
         <source>Scan card</source>
         <target>扫描卡</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot; Scan card&quot;; ObjectID = &quot;jSh-u9-Oof&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = " Scan card"; ObjectID = "jSh-u9-Oof";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/TableViewCells/Base.lproj/FGNUXConciergeInviteCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="742" resname="ext-If-5LF.text" restype="string" datatype="x-xib">
-        <source>Pediatrics, Known for Children\&apos;s health</source>
+        <source>Pediatrics, Known for Children's health</source>
         <target>儿科,专攻儿童健康</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Pediatrics, Known for Children&apos;s health&quot;; ObjectID = &quot;ext-If-5LF&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Pediatrics, Known for Children's health"; ObjectID = "ext-If-5LF";</note>
       </trans-unit>
     </body>
   </file>
@@ -4155,7 +4155,7 @@
       <trans-unit id="743" resname="ZSZ-X7-2iN.text" restype="string" datatype="x-xib">
         <source>Dr. Lester</source>
         <target>Lester医生</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Dr. Lester &quot;; ObjectID = &quot;ZSZ-X7-2iN&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Dr. Lester "; ObjectID = "ZSZ-X7-2iN";</note>
       </trans-unit>
     </body>
   </file>
@@ -4164,32 +4164,32 @@
       <trans-unit id="744" resname="MCI-He-Gs3.disabledTitle" restype="string" datatype="x-xib">
         <source>Share</source>
         <target>共享</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Share&quot;; ObjectID = &quot;MCI-He-Gs3&quot;;</note>
+        <note annotates="source">Class = "UIButton"; disabledTitle = "Share"; ObjectID = "MCI-He-Gs3";</note>
       </trans-unit>
       <trans-unit id="745" resname="MCI-He-Gs3.highlightedTitle" restype="string" datatype="x-xib">
         <source>Share</source>
         <target>共享</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; highlightedTitle = &quot;Share&quot;; ObjectID = &quot;MCI-He-Gs3&quot;;</note>
+        <note annotates="source">Class = "UIButton"; highlightedTitle = "Share"; ObjectID = "MCI-He-Gs3";</note>
       </trans-unit>
       <trans-unit id="746" resname="MCI-He-Gs3.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
         <target>共享</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Share&quot;; ObjectID = &quot;MCI-He-Gs3&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "MCI-He-Gs3";</note>
       </trans-unit>
       <trans-unit id="747" resname="hrz-f6-Mah.disabledTitle" restype="string" datatype="x-xib">
         <source>Try</source>
         <target>尝试</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Try&quot;; ObjectID = &quot;hrz-f6-Mah&quot;;</note>
+        <note annotates="source">Class = "UIButton"; disabledTitle = "Try"; ObjectID = "hrz-f6-Mah";</note>
       </trans-unit>
       <trans-unit id="748" resname="hrz-f6-Mah.highlightedTitle" restype="string" datatype="x-xib">
         <source>Try</source>
         <target>尝试</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; highlightedTitle = &quot;Try&quot;; ObjectID = &quot;hrz-f6-Mah&quot;;</note>
+        <note annotates="source">Class = "UIButton"; highlightedTitle = "Try"; ObjectID = "hrz-f6-Mah";</note>
       </trans-unit>
       <trans-unit id="749" resname="hrz-f6-Mah.normalTitle" restype="string" datatype="x-xib">
         <source>Try</source>
         <target>尝试</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Try&quot;; ObjectID = &quot;hrz-f6-Mah&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Try"; ObjectID = "hrz-f6-Mah";</note>
       </trans-unit>
     </body>
   </file>
@@ -4198,7 +4198,7 @@
       <trans-unit id="750" resname="aKa-PX-rT5.text" restype="string" datatype="x-xib">
         <source>Updated</source>
         <target>已更新</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Updated &quot;; ObjectID = &quot;aKa-PX-rT5&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Updated "; ObjectID = "aKa-PX-rT5";</note>
       </trans-unit>
     </body>
   </file>
@@ -4207,7 +4207,7 @@
       <trans-unit id="751" resname="WVE-UK-wjc.normalTitle" restype="string" datatype="x-xib">
         <source>Download</source>
         <target>下载</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;     Download&quot;; ObjectID = &quot;WVE-UK-wjc&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "     Download"; ObjectID = "WVE-UK-wjc";</note>
       </trans-unit>
     </body>
   </file>
@@ -4216,7 +4216,7 @@
       <trans-unit id="756" resname="Yjx-vI-AME.text" restype="string" datatype="x-xib">
         <source>Private Consult on</source>
         <target>私人咨询</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Private Consult on &quot;; ObjectID = &quot;Yjx-vI-AME&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Private Consult on "; ObjectID = "Yjx-vI-AME";</note>
       </trans-unit>
     </body>
   </file>
@@ -4225,7 +4225,7 @@
       <trans-unit id="757" resname="OJq-G9-Ulq.text" restype="string" datatype="x-xib">
         <source>Label</source>
         <target>标签</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Label &quot;; ObjectID = &quot;OJq-G9-Ulq&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Label "; ObjectID = "OJq-G9-Ulq";</note>
       </trans-unit>
     </body>
   </file>
@@ -4234,12 +4234,12 @@
       <trans-unit id="758" resname="1wx-lv-7Yo.normalTitle" restype="string" datatype="x-xib">
         <source>OK</source>
         <target>好</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;OK&quot;; ObjectID = &quot;1wx-lv-7Yo&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "OK"; ObjectID = "1wx-lv-7Yo";</note>
       </trans-unit>
       <trans-unit id="759" resname="BGa-p8-VxZ.normalTitle" restype="string" datatype="x-xib">
         <source>Cancel</source>
         <target>取消</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Cancel&quot;; ObjectID = &quot;BGa-p8-VxZ&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "BGa-p8-VxZ";</note>
       </trans-unit>
     </body>
   </file>
@@ -4248,7 +4248,7 @@
       <trans-unit id="760" resname="mRg-tY-Dbn.placeholder" restype="string" datatype="x-xib">
         <source>Speciality</source>
         <target>专科</target>
-        <note annotates="source">Class = &quot;UITextField&quot;; placeholder = &quot;Speciality &quot;; ObjectID = &quot;mRg-tY-Dbn&quot;;</note>
+        <note annotates="source">Class = "UITextField"; placeholder = "Speciality "; ObjectID = "mRg-tY-Dbn";</note>
       </trans-unit>
     </body>
   </file>
@@ -4257,7 +4257,7 @@
       <trans-unit id="761" resname="k9o-ao-ye4.text" restype="string" datatype="x-xib">
         <source>Get help</source>
         <target>获得帮助</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get help&quot;; ObjectID = &quot;k9o-ao-ye4&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Get help"; ObjectID = "k9o-ao-ye4";</note>
       </trans-unit>
     </body>
   </file>
@@ -4266,16 +4266,16 @@
       <trans-unit id="762" resname="pfs-VB-GRo.text" restype="string" datatype="x-xib">
         <source>Get help</source>
         <target>获得帮助</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Get help&quot;; ObjectID = &quot;pfs-VB-GRo&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Get help"; ObjectID = "pfs-VB-GRo";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/Classes/UI/Concierge/Base.lproj/FGConciergeSuggestedDoctorTableViewCell.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="763" resname="ext-If-5LF.text" restype="string" datatype="x-xib">
-        <source>Pediatrics, Known for Children\&apos;s health</source>
+        <source>Pediatrics, Known for Children's health</source>
         <target>儿科,专攻儿童健康</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Pediatrics, Known for Children&apos;s health&quot;; ObjectID = &quot;ext-If-5LF&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Pediatrics, Known for Children's health"; ObjectID = "ext-If-5LF";</note>
       </trans-unit>
     </body>
   </file>
@@ -4284,7 +4284,7 @@
       <trans-unit id="764" resname="NVW-dy-BQY.normalTitle" restype="string" datatype="x-xib">
         <source>Scan card</source>
         <target>扫描卡</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot; Scan card&quot;; ObjectID = &quot;NVW-dy-BQY&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = " Scan card"; ObjectID = "NVW-dy-BQY";</note>
       </trans-unit>
     </body>
   </file>
@@ -4293,12 +4293,12 @@
       <trans-unit id="765" resname="Sy9-wL-XQ4.normalTitle" restype="string" datatype="x-xib">
         <source>Apple Pay</source>
         <target>Apple Pay</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot; Apple Pay&quot;; ObjectID = &quot;Sy9-wL-XQ4&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = " Apple Pay"; ObjectID = "Sy9-wL-XQ4";</note>
       </trans-unit>
       <trans-unit id="766" resname="ysY-GQ-KaS.normalTitle" restype="string" datatype="x-xib">
         <source>Scan card</source>
         <target>扫描卡</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot; Scan card&quot;; ObjectID = &quot;ysY-GQ-KaS&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = " Scan card"; ObjectID = "ysY-GQ-KaS";</note>
       </trans-unit>
     </body>
   </file>
