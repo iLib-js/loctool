@@ -34,8 +34,8 @@ for (var i = 0; i < units.length; i++) {
 	
 	if (unit.datatype === "x-haml" || unit.datatype === "ruby") {
 		var hash = rf.makeKey(unit.source);
-		unit.source = RubyFile.unescapeString(trimEscaped(unit.source));
-		unit.target = RubyFile.unescapeString(trimEscaped(unit.target).replace(/％\{/g, "%{"));
+		unit.source = RubyFile.unescapeString(utils.trimEscaped(unit.source));
+		unit.target = RubyFile.unescapeString(utils.trimEscaped(unit.target).replace(/％\{/g, "%{"));
 		
 		if ( unit.key !== hash ) {
 			console.log("File: " + unit.file + " key: " + unit.key + " -> " + hash);
