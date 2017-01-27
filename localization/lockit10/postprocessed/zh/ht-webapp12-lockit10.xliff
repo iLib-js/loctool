@@ -436,6 +436,7 @@
     <body>
       <trans-unit id="475" resname="r459380774" restype="string" datatype="ruby">
         <source>You can actually talk with me or another HealthTap doctor now by video or text chat. Would you like to see a doctor now? We&apos;re standing by!</source>
+        <target state="new">你可以立即和我或者其他HealthTap医生通过视频或者文字对话，你需要现在就看医生吗？我们随时服务！</target>
       </trans-unit>
     </body>
   </file>
@@ -443,15 +444,19 @@
     <body>
       <trans-unit id="476" resname="r833790376" restype="string" datatype="ruby">
         <source>Diagnostic dilemma: &quot;What&apos;s the diagnosis?&quot;</source>
+        <target state="new">诊断的难点：诊断意味着什么</target>
       </trans-unit>
       <trans-unit id="477" resname="r372120495" restype="string" datatype="ruby">
         <source>Diagnostic dilemma: &quot;What are the next steps for evaluation?&quot;</source>
+         <target state="new">诊断的难点：下一步怎么来评论</target>
       </trans-unit>
       <trans-unit id="478" resname="r688178430" restype="string" datatype="ruby">
         <source>Treatment decision: &quot;What&apos;s the best treatment?&quot;</source>
+         <target state="new">治疗决定：什么是最好的治疗方案</target>
       </trans-unit>
       <trans-unit id="479" resname="r230124915" restype="string" datatype="ruby">
         <source>Fascinating or rare case: &quot;Isn&apos;t this interesting?&quot;</source>
+         <target state="new">特殊的或罕见病例：这挺有意思的，不是么？</target>
       </trans-unit>
     </body>
   </file>
@@ -459,6 +464,7 @@
     <body>
       <trans-unit id="480" resname="r923729424" restype="string" datatype="ruby">
         <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an &quot;addendum note&quot; to this consult using the chat input.</source>
+        <target state="new">请审核这些结果，提供您对这些结果的看法，然后告诉病人下一步该怎么办，在在线医疗咨询聊天处添加一个附加条就行</target>
       </trans-unit>
     </body>
   </file>
@@ -466,6 +472,7 @@
     <body>
       <trans-unit id="481" resname="r570522913" restype="string" datatype="ruby">
         <source>page, and select the &quot;Answer Patient&quot; button.</source>
+        <target state="new">页，并选择&quot;回答病人&quot;按钮</target>
       </trans-unit>
     </body>
   </file>
@@ -473,6 +480,7 @@
     <body>
       <trans-unit id="482" resname="r925928384" restype="string" datatype="ruby">
         <source>Gift for you! Get 1 month free access to top doctors via video or text chat, 24/7, with HealthTap Prime.</source>
+        <target state="new">福利来咯！参加HealthTap Prime, 一个月免费通过视频或文字和顶级美国医生交流</target>
       </trans-unit>
     </body>
   </file>
@@ -480,9 +488,11 @@
     <body>
       <trans-unit id="483" resname="r277688003" restype="string" datatype="ruby">
         <source>Please select one of the following:</source>
+         <target state="new">请选择以下的一项:</target>
       </trans-unit>
       <trans-unit id="484" resname="r854720274" restype="string" datatype="ruby">
         <source>Do you know of any reasons why the doctor&apos;s licensing applications in any state might be rejected or revoked?</source>
+          <target state="new">你知道什么原因会使医生的认证申请书在某些州会被拒绝或取消吗？</target>
       </trans-unit>
     </body>
   </file>
