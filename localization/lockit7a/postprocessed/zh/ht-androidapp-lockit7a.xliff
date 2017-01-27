@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="r984391622" restype="string" datatype="java">
         <source>Mark as completed</source>
-        <target>标记为已完成</target>
+        <target state="translated">标记为已完成</target>
       </trans-unit>
       <trans-unit id="2" resname="r111630367" restype="string" datatype="java">
         <source>Turn on reminders</source>
