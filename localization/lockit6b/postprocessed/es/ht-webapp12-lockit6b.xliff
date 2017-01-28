@@ -118,7 +118,7 @@
   </file>
   <file original="public/feelGood/templates/inbox_training_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1031" resname="RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({     bold_tag_start: &apos;&lt;b&gt;&apos;,     bold_tag_end: &apos;&lt;/b&gt;&apos;    })" restype="string" datatype="html">
+      <trans-unit id="1031" resname="RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({ bold_tag_start: &apos;&lt;b&gt;&apos;, bold_tag_end: &apos;&lt;/b&gt;&apos; })" restype="string" datatype="html">
         <source>RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({
     	bold_tag_start: '&lt;b&gt;',
     	bold_tag_end: '&lt;/b&gt;'
@@ -148,7 +148,7 @@
   </file>
   <file original="public/javascripts/templates/experts/doc2doc_answer_feedback.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1080" resname="You earned    &lt;span class=&amp;quot;points_earned_highlight&amp;quot;&gt;     &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1080" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+&lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
         <source>You earned
 				&lt;span class="points_earned_highlight"&gt;
 					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
@@ -158,7 +158,7 @@
 					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; puntos
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1081" resname="Today, you&apos;ve earned &lt;span class=&amp;quot;todays_points_highlight&amp;quot;&gt; 180 points&lt;/span&gt; for helping millions.   &lt;br&gt;   Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points." restype="string" datatype="html">
+      <trans-unit id="1081" resname="Today, you&apos;ve earned&lt;span class=&quot;todays_points_highlight&quot;&gt;180 points&lt;/span&gt;for helping millions.&lt;br&gt;Answer&lt;b&gt;X&lt;/b&gt;more questions in the next&lt;b&gt;X&lt;/b&gt;hours to double your daily points." restype="string" datatype="html">
         <source>Today, you've earned &lt;span class="todays_points_highlight"&gt; 180 points&lt;/span&gt; for helping millions.
 			&lt;br&gt;
 			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
@@ -166,7 +166,7 @@
 			&lt;br&gt;
 			Responde &lt;b&gt;X&lt;/b&gt; más preguntas en las próximas &lt;b&gt;X&lt;/b&gt; horas para duplicar tus puntos diarios.</target>
       </trans-unit>
-      <trans-unit id="1082" resname="Here are a few patient questions to keep you going.  &lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1082" resname="Here are a few patient questions to keep you going.&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Here are a few patient questions to keep you going.
 		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
         <target state="translated">Acá están unas pocas preguntas de pacientes para que sigas.
@@ -184,7 +184,7 @@
   </file>
   <file original="public/javascripts/templates/layers/answerPanel.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1124" resname="Create a Tip  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1124" resname="Create a Tip&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
         <source>Create a Tip
 		&lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target state="translated">Crear un Consejo
@@ -194,7 +194,7 @@
   </file>
   <file original="public/javascripts/templates/layers/askDoc.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1132" resname="Ask Doctors Any Question  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&amp;quot;font-weight: bold&amp;quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1132" resname="Ask Doctors Any Question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask Doctors Any Question
 		&lt;span class="sub_title"&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target state="translated">Haz cualquier pregunta a los médicos
@@ -208,7 +208,7 @@
   </file>
   <file original="public/javascripts/templates/layers/askDocSpelling.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1135" resname="Ask doctors any question  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Anytime. Anywhere. &lt;span style=&amp;quot;font-weight: bold&amp;quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1135" resname="Ask doctors any question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask doctors any question
 		&lt;span class="sub_title"&gt;Anytime. Anywhere. &lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target state="translated">Pregunta a los médicos cualquier pregunta
@@ -218,7 +218,7 @@
   </file>
   <file original="public/javascripts/templates/layers/doc2DocSuccess.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1146" resname="Curbside Consult &lt;span class=&amp;quot;super&amp;quot;&gt;beta&lt;/span&gt;   &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1146" resname="Curbside Consult&lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
         <source>Curbside Consult &lt;span class="super"&gt;beta&lt;/span&gt;
 			&lt;span class="sub_title"&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
         <target state="translated">Consulta al Borde de la Acera &lt;span class="super"&gt;beta&lt;/span&gt;
@@ -228,7 +228,7 @@
   </file>
   <file original="public/javascripts/templates/layers/guidelines.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1151" resname="GUIDELINES  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1151" resname="GUIDELINES&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
         <source>GUIDELINES
 		&lt;span class="sub_title"&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
         <target state="translated">INSTRUCCIONES
@@ -238,7 +238,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/expertNewEpisode.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1173" resname="MESSAGE  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1173" resname="MESSAGE&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
         <source>MESSAGE
 		&lt;span class="sub_title"&gt;Private and HIPPA secure&lt;/span&gt;</source>
         <target state="translated">MENSAJE
@@ -248,7 +248,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisode.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1174" resname="Start a Private Conversation  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
+      <trans-unit id="1174" resname="Start a Private Conversation&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
         <source>Start a Private Conversation
 		&lt;span class="sub_title"&gt;Enhance your HealthTap experience</source>
         <target state="translated">Comenzar una conversación privada
@@ -258,7 +258,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeDocChoose.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1177" resname="Start a Private Conversation  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1177" resname="Start a Private Conversation&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
         <source>Start a Private Conversation
 		&lt;span class="sub_title"&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target state="translated">Comienza una Conversación Privada
@@ -276,7 +276,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeHaveCredit.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1179" resname="ASK A DOCTOR A QUESTION  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1179" resname="ASK A DOCTOR A QUESTION&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
         <source>ASK A DOCTOR A QUESTION
 		&lt;span class="sub_title"&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
         <target state="translated">HAZ UNA PREGUNTA AL MÉDICO
@@ -286,7 +286,7 @@
   </file>
   <file original="public/javascripts/templates/layers/referColleague.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1185" resname="REFER TO A COLLEAGUE  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1185" resname="REFER TO A COLLEAGUE&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
         <source>REFER TO A COLLEAGUE
 		&lt;span class="sub_title"&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
         <target state="translated">REMITIR A UN COLEGA
@@ -296,7 +296,7 @@
   </file>
   <file original="public/javascripts/templates/layers/referColleagueSuccess.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1189" resname="This question has been sent to doctors in the     &lt;%= App.session.referSpecialty %&gt;     field" restype="string" datatype="html">
+      <trans-unit id="1189" resname="This question has been sent to doctors in the&lt;%= App.session.referSpecialty %&gt;field" restype="string" datatype="html">
         <source>This question has been sent to doctors in the
 					&lt;%= App.session.referSpecialty %&gt;
 					field</source>
@@ -315,7 +315,7 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_answer/expert_answer_preview.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1230" resname="Originally authored by &lt;span class=&amp;quot;bold&amp;quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt; in response to question, &lt;span class=&amp;quot;bold&amp;quot;&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt; &amp;quot; &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1230" resname="Originally authored by&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;in response to question,&lt;span class=&quot;bold&quot;&gt;&amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt;&amp;quot;&lt;/span&gt;" restype="string" datatype="html">
         <source>Originally authored by &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; in response to question, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</source>
         <target state="translated">Escrita originalmente por &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; en respuesta a la pregunta, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</target>
       </trans-unit>

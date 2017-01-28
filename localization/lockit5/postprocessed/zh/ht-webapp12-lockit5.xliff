@@ -28369,7 +28369,7 @@
         <source>Introductory Consult</source>
         <target>介绍性咨询</target>
       </trans-unit>
-      <trans-unit id="13639" resname="Prime &lt;%= consult_type_name %&gt; Consult" restype="string" datatype="html">
+      <trans-unit id="13639" resname="Prime&lt;%= consult_type_name %&gt;Consult" restype="string" datatype="html">
         <source>Prime &lt;%= consult_type_name %&gt; Consult</source>
         <target>Prime &lt;%= consult_type_name %&gt; 咨询</target>
       </trans-unit>
@@ -28385,7 +28385,7 @@
   </file>
   <file original="public/javascripts/templates/feedItemTemplate.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13661" resname="Medical Student &lt;a class=&amp;quot;actor_link&amp;quot; href=&amp;quot;&lt;%= user_answer.contributor.url.replace(&apos;people&apos;, &apos;experts&apos;).toHashFragment() %&gt;&amp;quot;&gt;                      &lt;%= user_answer.contributor.name %&gt;&lt;/a&gt;  needs an answer to be reviewed:" restype="string" datatype="html">
+      <trans-unit id="13661" resname="Medical Student&lt;a class=&quot;actor_link&quot; href=&quot;&lt;%= user_answer.contributor.url.replace(&apos;people&apos;, &apos;experts&apos;).toHashFragment() %&gt;&quot;&gt;&lt;%= user_answer.contributor.name %&gt;&lt;/a&gt;needs an answer to be reviewed:" restype="string" datatype="html">
         <source>Medical Student &lt;a class="actor_link" href="&lt;%= user_answer.contributor.url.replace('people', 'experts').toHashFragment() %&gt;"&gt;
                       &lt;%= user_answer.contributor.name %&gt;&lt;/a&gt;
   needs an answer to be reviewed:</source>
@@ -28405,7 +28405,7 @@
   </file>
   <file original="public/feelGood/templates/symptom_disclaimer_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13736" resname="The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See &lt;a class=&amp;quot;link&amp;quot; href=&amp;quot;/pages/additional_info&amp;quot;&gt;Additional Information.&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13736" resname="The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See&lt;a class=&quot;link&quot; href=&quot;/pages/additional_info&quot;&gt;Additional Information.&lt;/a&gt;" restype="string" datatype="html">
         <source>The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See &lt;a class="link" href="/pages/additional_info"&gt;Additional Information.&lt;/a&gt;</source>
         <target>HealthTap（包括此工具）的信息仅用于教育和内容丰富的目的，不构成医疗建议，诊断或治疗建议。如果您认为您可能有紧急医疗情况，请立即致电或拜访您的医生或当地紧急服务提供人员。查看&lt;a class=”link” href=”/pages/additional_info”&gt;附加信息。&lt;/a&gt;</target>
       </trans-unit>
@@ -28413,7 +28413,7 @@
   </file>
   <file original="public/feelGood/templates/subaccount_list.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13742" resname="People you care for&lt;span&gt;      &lt;span class=&amp;quot;number&amp;quot;&gt;&lt;%= subaccounts.length %&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="13742" resname="People you care for&lt;span&gt;&lt;span class=&quot;number&quot;&gt;&lt;%= subaccounts.length %&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>People you care for&lt;span&gt;
       &lt;span class="number"&gt;&lt;%= subaccounts.length %&gt;&lt;/span&gt;</source>
         <target>您关心的人&lt;span&gt;
@@ -28435,7 +28435,7 @@
   </file>
   <file original="public/feelGood/templates/messages/refer_doctor.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13762" resname="I&apos;d like to refer you to the following specialist. As a member of &lt;%= HMO_provider %&gt;,   please first check with your primary care physician before seeing this specialist:" restype="string" datatype="html">
+      <trans-unit id="13762" resname="I&apos;d like to refer you to the following specialist. As a member of&lt;%= HMO_provider %&gt;, please first check with your primary care physician before seeing this specialist:" restype="string" datatype="html">
         <source>I'd like to refer you to the following specialist. As a member of &lt;%= HMO_provider %&gt;, 
   please first check with your primary care physician before seeing this specialist:</source>
         <target>我希望向您推荐以下专家。作为一名&lt;%= HMO_provider %&gt;的会员，                                                                                                                        请在问诊这名专家前先与您的普通门诊医师确认。</target>
@@ -28448,15 +28448,15 @@
         <source>Invite your</source>
         <target>邀请您</target>
       </trans-unit>
-      <trans-unit id="13769" resname="Your &lt;%= upperExpertType %&gt;&apos;s Name" restype="string" datatype="html">
+      <trans-unit id="13769" resname="Your&lt;%= upperExpertType %&gt;&apos;s Name" restype="string" datatype="html">
         <source>Your &lt;%= upperExpertType %&gt;'s Name</source>
         <target>您&lt;%= upperExpertType %&gt;的名字</target>
       </trans-unit>
-      <trans-unit id="13770" resname="Please tell us a little about yourself so your &lt;%= expertType %&gt; can verify you as a patient" restype="string" datatype="html">
+      <trans-unit id="13770" resname="Please tell us a little about yourself so your&lt;%= expertType %&gt;can verify you as a patient" restype="string" datatype="html">
         <source>Please tell us a little about yourself so your &lt;%= expertType %&gt; can verify you as a patient</source>
         <target>请告诉我们一些关于您自身的信息，这样您的&lt;%= expertType %&gt;能够核实您的患者身份。</target>
       </trans-unit>
-      <trans-unit id="13771" resname="*Your number can help the &lt;%= upperExpertType %&gt; recognize you" restype="string" datatype="html">
+      <trans-unit id="13771" resname="*Your number can help the&lt;%= upperExpertType %&gt;recognize you" restype="string" datatype="html">
         <source>*Your number can help the &lt;%= upperExpertType %&gt; recognize you</source>
         <target>*&lt;%= upperExpertType %&gt;会通过号码对您进行确认</target>
       </trans-unit>
@@ -28484,7 +28484,7 @@
   </file>
   <file original="public/feelGood/templates/concierge_request_form.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13786" resname="Sorry, you must be at least 18 years old to be a patient. You may have a guardian add you to their account, or you can &lt;a href=&amp;quot;/ask_docs&amp;quot;&gt; ask a question &lt;/a&gt; if you&apos;re 16 or older." restype="string" datatype="html">
+      <trans-unit id="13786" resname="Sorry, you must be at least 18 years old to be a patient. You may have a guardian add you to their account, or you can&lt;a href=&quot;/ask_docs&quot;&gt;ask a question&lt;/a&gt;if you&apos;re 16 or older." restype="string" datatype="html">
         <source>Sorry, you must be at least 18 years old to be a patient. You may have a guardian add you to their account, or you can &lt;a href="/ask_docs"&gt; ask a question &lt;/a&gt; if you're 16 or older.</source>
         <target>抱歉，作为患者您必须至少年满18周岁。您可以通过一个监护人将您添加到他们的帐户，或者您可以&lt;a href=”/ask_docs”&gt;询问一个问题&lt;/a&gt;如果您16岁或以上。</target>
       </trans-unit>
@@ -28492,7 +28492,7 @@
   </file>
   <file original="public/feelGood/templates/ask_docs/secure_server.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13792" resname="Secure server&lt;a class=&amp;quot;terms-disclaimer&amp;quot; track_data=&amp;quot;{ &amp;quot;type&amp;quot; : &amp;quot;ask_docs_v3&amp;quot; }&amp;quot; track_event=&amp;quot;secure_click&amp;quot;&gt;Tell me more&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13792" resname="Secure server&lt;a class=&quot;terms-disclaimer&quot; track_data=&quot;{ &amp;quot;type&amp;quot; : &amp;quot;ask_docs_v3&amp;quot; }&quot; track_event=&quot;secure_click&quot;&gt;Tell me more&lt;/a&gt;" restype="string" datatype="html">
         <source>Secure server
 &lt;a class="terms-disclaimer" track_data="{ &amp;quot;type&amp;quot; : &amp;quot;ask_docs_v3&amp;quot; }" track_event="secure_click"&gt;Tell me more&lt;/a&gt;</source>
         <target>安全服务器
@@ -28502,7 +28502,7 @@
   </file>
   <file original="public/feelGood/templates/ask_docs/message_picker.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13796" resname="Ask anonymously and&lt;br&gt;        get informational answers" restype="string" datatype="html">
+      <trans-unit id="13796" resname="Ask anonymously and&lt;br&gt;get informational answers" restype="string" datatype="html">
         <source>Ask anonymously and&lt;br&gt;
         get informational answers</source>
         <target>匿名询问和&lt;br&gt;
@@ -28548,7 +28548,7 @@
         <source>Similar Questions</source>
         <target>相似的问题</target>
       </trans-unit>
-      <trans-unit id="13813" resname="See more&lt;span class=&amp;quot;loading-dots&amp;quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="13813" resname="See more&lt;span class=&quot;loading-dots&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>See more&lt;span class="loading-dots"&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;</source>
         <target>查看更多&lt;span class="loading-dots"&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
@@ -28556,7 +28556,7 @@
         <source>Need more help?</source>
         <target>需要更多帮助吗？</target>
       </trans-unit>
-      <trans-unit id="13815" resname="Ask &lt;%= expertType %&gt;s" restype="string" datatype="html">
+      <trans-unit id="13815" resname="Ask&lt;%= expertType %&gt;s" restype="string" datatype="html">
         <source>Ask &lt;%= expertType %&gt;s</source>
         <target>询问&lt;%= expertType %&gt;</target>
       </trans-unit>
@@ -28612,7 +28612,7 @@
         <source>Search by name, specialty, or topic</source>
         <target>按名称，专科，话题查找</target>
       </trans-unit>
-      <trans-unit id="13826" resname="Can&apos;t find a &lt;%= expertType %&gt;? &lt;a href=&amp;quot;#&amp;quot; class=&amp;quot;inviteLink&amp;quot;&gt;Invite them to HealthTap&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13826" resname="Can&apos;t find a&lt;%= expertType %&gt;?&lt;a href=&quot;#&quot; class=&quot;inviteLink&quot;&gt;Invite them to HealthTap&lt;/a&gt;" restype="string" datatype="html">
         <source>Can't find a &lt;%= expertType %&gt;? &lt;a href="#" class="inviteLink"&gt;Invite them to HealthTap&lt;/a&gt;</source>
         <target>找不到一位&lt;%= expertType %&gt;?&lt;a href="#" class="inviteLink"&gt;邀请他们加入HealthTap&lt;/a&gt;</target>
       </trans-unit>
@@ -28620,11 +28620,11 @@
   </file>
   <file original="public/feelGood/page_templates/ask_docs_v4/ask.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13827" resname="Ask &lt;span&gt;&lt;%= expertType %&gt;s&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="13827" resname="Ask&lt;span&gt;&lt;%= expertType %&gt;s&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask &lt;span&gt;&lt;%= expertType %&gt;s&lt;/span&gt;</source>
         <target>询问&lt;span&gt;&lt;%= expertType %&gt;&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="13828" resname="What would you like to ask our &lt;%= expertType %&gt;s?" restype="string" datatype="html">
+      <trans-unit id="13828" resname="What would you like to ask our&lt;%= expertType %&gt;s?" restype="string" datatype="html">
         <source>What would you like to ask our &lt;%= expertType %&gt;s?</source>
         <target>您希望询问我们的&lt;%= expertType %&gt;s?</target>
       </trans-unit>

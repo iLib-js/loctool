@@ -4028,7 +4028,7 @@
   </file>
   <file original="public/feelGood/templates/generic_error.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1157" resname="We&apos;re having trouble reaching HealthTap. Please try again or refresh the page.      &lt;%=        RB.getString(&quot;If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!&quot;).format({          link_tag_start: &apos;&lt;a href=&quot;mailto:&apos; + supportEmail + &apos;&quot;&gt;&apos;,          link_tag_end: &apos;&lt;/a&gt;&apos;        })      %&gt;" restype="string" datatype="html">
+      <trans-unit id="1157" resname="We&apos;re having trouble reaching HealthTap. Please try again or refresh the page.&lt;%= RB.getString(&quot;If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!&quot;).format({ link_tag_start: &apos;&lt;a href=&quot;mailto:&apos; + supportEmail + &apos;&quot;&gt;&apos;, link_tag_end: &apos;&lt;/a&gt;&apos; }) %&gt;" restype="string" datatype="html">
         <source>We're having trouble reaching HealthTap. Please try again or refresh the page.
       &lt;%=
         RB.getString("If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!").format({

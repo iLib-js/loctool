@@ -79,7 +79,7 @@
   </file>
   <file original="public/feelGood/templates/inbox_training_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="709" resname="RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({     bold_tag_start: &apos;&lt;b&gt;&apos;,     bold_tag_end: &apos;&lt;/b&gt;&apos;    })" restype="string" datatype="html">
+      <trans-unit id="709" resname="RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({ bold_tag_start: &apos;&lt;b&gt;&apos;, bold_tag_end: &apos;&lt;/b&gt;&apos; })" restype="string" datatype="html">
         <source>RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({
     	bold_tag_start: '&lt;b&gt;',
     	bold_tag_end: '&lt;/b&gt;'
@@ -93,7 +93,7 @@
   </file>
   <file original="public/javascripts/templates/experts/doc2doc_answer_feedback.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="713" resname="You earned    &lt;span class=&quot;points_earned_highlight&quot;&gt;     &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="713" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+&lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
         <source>You earned
 				&lt;span class="points_earned_highlight"&gt;
 					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
@@ -103,7 +103,7 @@
 					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; puntos
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="714" resname="Today, you&apos;ve earned &lt;span class=&quot;todays_points_highlight&quot;&gt; 180 points&lt;/span&gt; for helping millions.   &lt;br&gt;   Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points." restype="string" datatype="html">
+      <trans-unit id="714" resname="Today, you&apos;ve earned&lt;span class=&quot;todays_points_highlight&quot;&gt;180 points&lt;/span&gt;for helping millions.&lt;br&gt;Answer&lt;b&gt;X&lt;/b&gt;more questions in the next&lt;b&gt;X&lt;/b&gt;hours to double your daily points." restype="string" datatype="html">
         <source>Today, you've earned &lt;span class="todays_points_highlight"&gt; 180 points&lt;/span&gt; for helping millions.
 			&lt;br&gt;
 			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
@@ -111,7 +111,7 @@
 			&lt;br&gt;
 			Responde &lt;b&gt;X&lt;/b&gt; más preguntas en las próximas &lt;b&gt;X&lt;/b&gt; horas para duplicar tus puntos diarios.</target>
       </trans-unit>
-      <trans-unit id="715" resname="Here are a few patient questions to keep you going.  &lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="715" resname="Here are a few patient questions to keep you going.&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Here are a few patient questions to keep you going.
 		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
         <target state="translated">Acá están unas pocas preguntas de pacientes para que sigas.
@@ -121,7 +121,7 @@
   </file>
   <file original="public/javascripts/templates/layers/answerPanel.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="722" resname="Create a Tip  &lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="722" resname="Create a Tip&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
         <source>Create a Tip
 		&lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target state="translated">Crear un Consejo
@@ -131,7 +131,7 @@
   </file>
   <file original="public/javascripts/templates/layers/askDoc.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="723" resname="Ask Doctors Any Question  &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="723" resname="Ask Doctors Any Question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask Doctors Any Question
 		&lt;span class="sub_title"&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target state="translated">Haz cualquier pregunta a los médicos
@@ -141,7 +141,7 @@
   </file>
   <file original="public/javascripts/templates/layers/askDocSpelling.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="724" resname="Ask doctors any question  &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="724" resname="Ask doctors any question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask doctors any question
 		&lt;span class="sub_title"&gt;Anytime. Anywhere. &lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target state="translated">Pregunta a los médicos cualquier pregunta
@@ -151,7 +151,7 @@
   </file>
   <file original="public/javascripts/templates/layers/doc2DocSuccess.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="725" resname="Curbside Consult &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;   &lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="725" resname="Curbside Consult&lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
         <source>Curbside Consult &lt;span class="super"&gt;beta&lt;/span&gt;
 			&lt;span class="sub_title"&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
         <target state="translated">Consulta al Borde de la Acera &lt;span class="super"&gt;beta&lt;/span&gt;
@@ -161,7 +161,7 @@
   </file>
   <file original="public/javascripts/templates/layers/editQuestion.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="726" resname="EDIT YOUR QUESTION  &lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!" restype="string" datatype="html">
+      <trans-unit id="726" resname="EDIT YOUR QUESTION&lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!" restype="string" datatype="html">
         <source>EDIT YOUR QUESTION
 		&lt;span class="sub_title"&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!</source>
         <target state="translated">EDITAR TU PREGUNTA
@@ -171,13 +171,13 @@
   </file>
   <file original="public/javascripts/templates/layers/guidelines.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="727" resname="GUIDELINES  &lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="727" resname="GUIDELINES&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
         <source>GUIDELINES
 		&lt;span class="sub_title"&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
         <target state="translated">INSTRUCCIONES
 		&lt;span class="sub_title"&gt;Para hacer una pregunta estupenda a HealthTap, utiliza estas útiles instrucciones&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="728" resname="Sweat the details... at least a little.  &lt;a onclick=&quot;$(&amp;apos;#ex1&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="728" resname="Sweat the details... at least a little.&lt;a onclick=&quot;$(&amp;apos;#ex1&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I had an itchy dry rash on the inside of my elbows for 3 weeks. What could be the causes?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Why do I have a rash?&lt;/span&gt;" restype="string" datatype="html">
         <source>Sweat the details... at least a little.  &lt;a onclick="$(&amp;apos;#ex1&amp;apos;).toggle();" class='exampleToggle' id='h1'&gt;Hide examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex1' class='guidelineEx'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;
@@ -188,7 +188,7 @@
 					&lt;span class="good"&gt;Bueno:&lt;/span&gt; Tenía un sarpullido seco con comezón en la parte de adentro de mis codos por 3 semanas. ¿Cuáles podrían ser las causas?&lt;br&gt;
 					&lt;span class="bad"&gt;No tan bueno:&lt;/span&gt; ¿Por qué tengo un sarpullido? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="729" resname="Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick=&quot;$(&amp;apos;#ex2&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="729" resname="Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.&lt;a onclick=&quot;$(&amp;apos;#ex2&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Why back pain?&lt;/span&gt;" restype="string" datatype="html">
         <source>Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick="$(&amp;apos;#ex2&amp;apos;).toggle();" class='exampleToggle' id='h2'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex2' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;
@@ -199,7 +199,7 @@
 					&lt;span class="good"&gt;Bueno:&lt;/span&gt; ¿Qué podría causar dolor de espalda baja después de hacer el qué hacer de la casa? – ¿Nunca he tenido una lesión en la espalda?&lt;br&gt;
 					&lt;span class="bad"&gt;No tan bueno:&lt;/span&gt; Why back pain? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="730" resname="Include sex/gender, when relevant.  &lt;a onclick=&quot;$(&amp;apos;#ex3&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="730" resname="Include sex/gender, when relevant.&lt;a onclick=&quot;$(&amp;apos;#ex3&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt;What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt;What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?&lt;/span&gt;" restype="string" datatype="html">
         <source>Include sex/gender, when relevant.  &lt;a onclick="$(&amp;apos;#ex3&amp;apos;).toggle();" class='exampleToggle' id='h3'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex3' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;
@@ -210,7 +210,7 @@
 					&lt;span class="good"&gt;Sexo/Género útil:&lt;/span&gt; Qué podria causar una bola, del tamaño de una moneda, justo debajo del seno de hombre.&lt;br&gt;
 					&lt;span class="bad"&gt;Sexo/Género no necesario:&lt;/span&gt; ¿Qué podría causar una bolita, del tamaño de un frijo, debajo de la piel del dorso de mi mano? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="731" resname="Include an approximate age.  &lt;a onclick=&quot;$(&amp;apos;#ex4&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;     &lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="731" resname="Include an approximate age.&lt;a onclick=&quot;$(&amp;apos;#ex4&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt;For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts. What are some things that could cause this?&lt;br&gt;&lt;span class=&quot;good&quot;&gt;&lt;/span&gt;Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?&lt;/span&gt;" restype="string" datatype="html">
         <source>Include an approximate age.  &lt;a onclick="$(&amp;apos;#ex4&amp;apos;).toggle();" class='exampleToggle' id='h4'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex4' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;
@@ -221,7 +221,7 @@
 					&lt;span class="good"&gt;Diferentes edades llevarán a diferentes respuestas:&lt;/span&gt; Por los últimos 2 días, mi hijo de 15 años ha tenido una fiebre y ha estado cojeando como si le doliera su pierna. ¿Qué son algunas de las cosas que podrían causar esto? &lt;br&gt;
 					&lt;span class="good"&gt;&lt;/span&gt; ¿Por qué mi bebé de 3 años ha estado experimentando fiebre y cojea como si le doliera su pierna desde los últimos 2 días? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="732" resname="Include weight, height and dosage units, where relevant.  &lt;a onclick=&quot;$(&amp;apos;#ex5&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="732" resname="Include weight, height and dosage units, where relevant.&lt;a onclick=&quot;$(&amp;apos;#ex5&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;My son is 3, weighs 27, and has a height of 34. Is he OK for his age?&lt;/span&gt;" restype="string" datatype="html">
         <source>Include weight, height and dosage units, where relevant.  &lt;a onclick="$(&amp;apos;#ex5&amp;apos;).toggle();" class='exampleToggle' id='h5'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex5' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;
@@ -232,7 +232,7 @@
 					&lt;span class="good"&gt;Bueno:&lt;/span&gt; Mi hijo tiene 3 años, pesa 27 libras y tiene 34 pulgadas de estatura. ¿Está bien su tamaño para su edad?&lt;br&gt;
 					&lt;span class="bad"&gt;No tan bien:&lt;/span&gt;  Mi hijo tiene 3, pesa 27 y mide 34. ¿Está bien para su edad? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="733" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick=&quot;$(&amp;apos;#ex6&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="733" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.&lt;a onclick=&quot;$(&amp;apos;#ex6&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?&lt;/span&gt;" restype="string" datatype="html">
         <source>Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick="$(&amp;apos;#ex6&amp;apos;).toggle();" class='exampleToggle' id='h6'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex6' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
@@ -243,7 +243,7 @@
 					&lt;span class="good"&gt;Bueno:&lt;/span&gt; Mi hijo tiene 5 años, 55lbs, y tiene una fiebre. Tomó 5ml de Tylenol (acetaminofen120mg/5ml), pero su fiebre persiste. ¿Pueden los niños de este peso y edad tomar una dosis más grande de Tylenol?&lt;br&gt;
 					&lt;span class="bad"&gt;Not tan bueno:&lt;/span&gt;  Mi hijo tiene 5, pesa 55 y tiene una fiebre. Intenté con Tylenol pero fiebre persiste. ¿Tomar más Tylenol? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="734" resname="Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick=&quot;$(&amp;apos;#ex7&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="734" resname="Try to avoid questions that set doctors up for a YES or NO answer.&lt;a onclick=&quot;$(&amp;apos;#ex7&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;How do antibiotics work in young, school-aged children?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Do antibiotics work in children?&lt;/span&gt;" restype="string" datatype="html">
         <source>Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick="$(&amp;apos;#ex7&amp;apos;).toggle();" class='exampleToggle' id='h7'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex7' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;
@@ -254,7 +254,7 @@
 					&lt;span class="good"&gt;Bueno:&lt;/span&gt; ¿Cómo funcionan los antibióticos en niños jovenes de edad escolar?&lt;br&gt;
 					&lt;span class="bad"&gt;Not tan bueno:&lt;/span&gt;  ¿Funcionan los antibióticos en niños? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="735" resname="Try to leave opinions out.  &lt;a onclick=&quot;$(&amp;apos;#ex8&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="735" resname="Try to leave opinions out.&lt;a onclick=&quot;$(&amp;apos;#ex8&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Are those anti-vaccine folks completely clueless or just in denial?&lt;/span&gt;" restype="string" datatype="html">
         <source>Try to leave opinions out.  &lt;a onclick="$(&amp;apos;#ex8&amp;apos;).toggle();" class='exampleToggle' id='h8'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex8' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
@@ -265,7 +265,7 @@
 					&lt;span class="good"&gt;Bueno:&lt;/span&gt; ¿Por qué algunas personas están en contra de las vacunas, cuando las vacunas se usan para prevenir males enfermedades?&lt;br&gt;
 					&lt;span class="bad"&gt;No tan bueno:&lt;/span&gt;  ¿La gente anti vacuna está perdida o en solo en negación? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="736" resname="The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick=&quot;$(&amp;apos;#ex9&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="736" resname="The clearer, the better. Use good grammar, avoid profanities and stay away from slang.&lt;a onclick=&quot;$(&amp;apos;#ex9&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Doing curls, felt something and arm hurts?&lt;/span&gt;" restype="string" datatype="html">
         <source>The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick="$(&amp;apos;#ex9&amp;apos;).toggle();" class='exampleToggle' id='h9'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex9' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;
@@ -276,7 +276,7 @@
 					&lt;span class="good"&gt;Bueno:&lt;/span&gt; Estaba haciendo curIs de bíceps y sentí un dolor quemante en mis bíceps. ¿Podría tener un desgarro muscular?&lt;br&gt;
 					&lt;span class="bad"&gt;No tan bueno:&lt;/span&gt;  Haciendo curls, sentí algo y me duele el brazo? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="737" resname="Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick=&quot;$(&amp;apos;#ex10&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="737" resname="Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.&lt;a onclick=&quot;$(&amp;apos;#ex10&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;And it’s been going on for two days, and pus is coming out too?&lt;/span&gt;" restype="string" datatype="html">
         <source>Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick="$(&amp;apos;#ex10&amp;apos;).toggle();" class='exampleToggle' id='h10'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex10' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
@@ -287,7 +287,7 @@
 					&lt;span class="good"&gt;Bueno:&lt;/span&gt; A mi hijo de 2 años le pusieron tubos en los oídos hace 2 meses y ahora tiene fiebre y le está saliendo puso del oído derecho. ¿Es común esto?&lt;br&gt;
 					&lt;span class="bad"&gt;No tan bueno:&lt;/span&gt;  Y ya tiene 2 días, y también le está saliendo pus? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="738" resname="To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).  &lt;a onclick=&quot;$(&amp;apos;#ex11&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="738" resname="To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).&lt;a onclick=&quot;$(&amp;apos;#ex11&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.&lt;/span&gt;" restype="string" datatype="html">
         <source>To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).  &lt;a onclick="$(&amp;apos;#ex11&amp;apos;).toggle();" class='exampleToggle' id='h11'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex11' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;
@@ -298,7 +298,7 @@
 					&lt;span class="good"&gt;Bueno:&lt;/span&gt; Acabo de escuchar al actor Michael J. Fox hablar acerca de su enfermedad de Parkinson. ¿Hay nuevos buenos tratamientos que hayan salido en los últimos 3 años?&lt;br&gt;
 					&lt;span class="bad"&gt;No tan bueno:&lt;/span&gt;  Hola doctor. Mi nombre es John Doe, y me pregunto si hay buenos tratamientos para la enfermedad de Parkinson. &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="739" resname="Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick=&quot;$(&amp;apos;#ex12&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="739" resname="Avoid using too many abbreviations because these can get downright confusing.&lt;a onclick=&quot;$(&amp;apos;#ex12&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;How do u no ur prego if u never have reg periods?&lt;/span&gt;" restype="string" datatype="html">
         <source>Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick="$(&amp;apos;#ex12&amp;apos;).toggle();" class='exampleToggle' id='h12'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex12' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;
@@ -309,7 +309,7 @@
 					&lt;span class="good"&gt;Bueno:&lt;/span&gt; ¿Cómo sabes si estás embarazada si nunca has tenido periodos regulares?&lt;br&gt;
 					&lt;span class="bad"&gt;No tan bueno:&lt;/span&gt;  ¿Cómo sabs si stas panzona si nunc tienes priods regus? &lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="740" resname="Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick=&quot;$(&amp;apos;#ex13&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="740" resname="Ask in English. This is the language commonly used by doctors on HealthTap.&lt;a onclick=&quot;$(&amp;apos;#ex13&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I pruned some trees last weekend and my arm has been hurting for 2 days. Could this be the cause?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Porque mi brazo me duele mucho esta semana?&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick="$(&amp;apos;#ex13&amp;apos;).toggle();" class='exampleToggle' id='h13'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex13' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;
@@ -324,7 +324,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/expertNewEpisode.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="741" resname="MESSAGE  &lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="741" resname="MESSAGE&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
         <source>MESSAGE
 		&lt;span class="sub_title"&gt;Private and HIPPA secure&lt;/span&gt;</source>
         <target state="translated">MENSAJE
@@ -334,7 +334,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisode.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="742" resname="Start a Private Conversation  &lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
+      <trans-unit id="742" resname="Start a Private Conversation&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
         <source>Start a Private Conversation
 		&lt;span class="sub_title"&gt;Enhance your HealthTap experience</source>
         <target state="translated">Comenzar una conversación privada
@@ -344,7 +344,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeDocChoose.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="743" resname="Start a Private Conversation  &lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="743" resname="Start a Private Conversation&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
         <source>Start a Private Conversation
 		&lt;span class="sub_title"&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target state="translated">Comienza una Conversación Privada
@@ -354,7 +354,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeHaveCredit.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="744" resname="ASK A DOCTOR A QUESTION  &lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="744" resname="ASK A DOCTOR A QUESTION&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
         <source>ASK A DOCTOR A QUESTION
 		&lt;span class="sub_title"&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
         <target state="translated">HAZ UNA PREGUNTA AL MÉDICO
@@ -364,7 +364,7 @@
   </file>
   <file original="public/javascripts/templates/layers/referColleague.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="745" resname="REFER TO A COLLEAGUE  &lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="745" resname="REFER TO A COLLEAGUE&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
         <source>REFER TO A COLLEAGUE
 		&lt;span class="sub_title"&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
         <target state="translated">REMITIR A UN COLEGA
@@ -374,7 +374,7 @@
   </file>
   <file original="public/javascripts/templates/layers/referColleagueSuccess.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="747" resname="This question has been sent to doctors in the     &lt;%= App.session.referSpecialty %&gt;     field" restype="string" datatype="html">
+      <trans-unit id="747" resname="This question has been sent to doctors in the&lt;%= App.session.referSpecialty %&gt;field" restype="string" datatype="html">
         <source>This question has been sent to doctors in the
 					&lt;%= App.session.referSpecialty %&gt;
 					field</source>

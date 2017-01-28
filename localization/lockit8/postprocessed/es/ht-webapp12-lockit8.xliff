@@ -4012,7 +4012,7 @@
   </file>
   <file original="public/feelGood/templates/about_raterx.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1110" resname="RateRx is a new, independent resource for doctors and patients alike, that presents ratings of medication effectiveness as reported by thousands of U.S.-licensed doctors in clinical practice of more than 137 specialties. RateRx represents the first comprehensive assessment of what experienced clinicians in each specialty actually use in the care of patients with specific conditions. Unlike other studies, which may report on the clinical effectiveness of treatments under controlled circumstances, RateRx calls on the deep, long-term, real-world experience of top doctors to reveal which treatments doctors have learned actually work with patients. &lt;br&gt;&lt;br&gt;      Doctors were asked to rate the clinical effectiveness of a drug for treating a condition on a scale of 1 to 5 stars. Contributing doctors gave ratings to medications for their use with specific indications based on their knowledge and were instructed to provide input based only on clinical experience using the drug for that indication. We summarized the combined ratings for each treatment into an aggregate rating reflecting doctors’ collective experiences. The profiles of all doctors who provided ratings are visible to users, who can review details of the doctors’ training and experiences, including their specialties and board certifications. &lt;br&gt;&lt;br&gt;      Participation in this study was open to all U.S.-licensed doctors in good standing. All 66,000 doctors in HealthTap’s Medical Expert Network were encouraged to participate. In addition, HealthTap invited more than 500,000 U.S. licensed doctors in our extended network to participate. Doctors are able to enter effectiveness ratings for medications that treat any condition, and can enter and add ratings for any new medication treatments not already included. &lt;br&gt;&lt;br&gt;      RateRx results display each treatment for an indication in an ordered rank based on average ratings, from highest rated to lowest.  When differences between the ratings of alternative treatments are deemed meaningful based on the amount of data presented.&lt;br&gt; &lt;br&gt;      To ensure unbiased doctor evaluations, doctors do not see their colleagues’ existing contributions until after they have entered their own rating. Recommendations cannot be changed once submitted, but after ratings are submitted, doctors can view the ratings of other doctors and comment on these. Both patients and doctors can learn from the RateRx ratings system.   Patients benefit from the collective wisdom shared by these doctors, enabling them to see how different treatments for the same conditions are rated and reviewed. Doctors benefit from their colleagues’ ratings and comments, and are able to interpret them by referring to the contributing doctors’ practice profiles (which show their education and experience, their specialty training, years in practice, DocScore, and their “Known for” topics).&lt;br&gt; &lt;br&gt;      Comments, which are optional, are often used by doctors to qualify or explain ratings, or to share details of how medications are used for each indication. Comments are available to read and review, do not change the numeric value of the rating. Ratings are based on generic drug names, but brand names are presented to permit doctors to rate specific drugs. Brand names are shown for every generic medication name presented. This study does not differentiate ratings between different brand names for the same medication. The most common medication treatments for each condition are listed for ratings, but doctors are encouraged to add treatments for any indication, ensuring the inclusion of new or novel treatments for each condition. Doctors were instructed to add medications not previously  on the list of standard treatment only if they had experience using the medication to treat the condition at issue and found these medication effective in the treatment of that condition. &lt;br&gt;&lt;br&gt;    &lt;a class=&quot;btn okay&quot;&gt;Okay&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1110" resname="RateRx is a new, independent resource for doctors and patients alike, that presents ratings of medication effectiveness as reported by thousands of U.S.-licensed doctors in clinical practice of more than 137 specialties. RateRx represents the first comprehensive assessment of what experienced clinicians in each specialty actually use in the care of patients with specific conditions. Unlike other studies, which may report on the clinical effectiveness of treatments under controlled circumstances, RateRx calls on the deep, long-term, real-world experience of top doctors to reveal which treatments doctors have learned actually work with patients.&lt;br&gt;&lt;br&gt;Doctors were asked to rate the clinical effectiveness of a drug for treating a condition on a scale of 1 to 5 stars. Contributing doctors gave ratings to medications for their use with specific indications based on their knowledge and were instructed to provide input based only on clinical experience using the drug for that indication. We summarized the combined ratings for each treatment into an aggregate rating reflecting doctors’ collective experiences. The profiles of all doctors who provided ratings are visible to users, who can review details of the doctors’ training and experiences, including their specialties and board certifications.&lt;br&gt;&lt;br&gt;Participation in this study was open to all U.S.-licensed doctors in good standing. All 66,000 doctors in HealthTap’s Medical Expert Network were encouraged to participate. In addition, HealthTap invited more than 500,000 U.S. licensed doctors in our extended network to participate. Doctors are able to enter effectiveness ratings for medications that treat any condition, and can enter and add ratings for any new medication treatments not already included.&lt;br&gt;&lt;br&gt;RateRx results display each treatment for an indication in an ordered rank based on average ratings, from highest rated to lowest. When differences between the ratings of alternative treatments are deemed meaningful based on the amount of data presented.&lt;br&gt;&lt;br&gt;To ensure unbiased doctor evaluations, doctors do not see their colleagues’ existing contributions until after they have entered their own rating. Recommendations cannot be changed once submitted, but after ratings are submitted, doctors can view the ratings of other doctors and comment on these. Both patients and doctors can learn from the RateRx ratings system. Patients benefit from the collective wisdom shared by these doctors, enabling them to see how different treatments for the same conditions are rated and reviewed. Doctors benefit from their colleagues’ ratings and comments, and are able to interpret them by referring to the contributing doctors’ practice profiles (which show their education and experience, their specialty training, years in practice, DocScore, and their “Known for” topics).&lt;br&gt;&lt;br&gt;Comments, which are optional, are often used by doctors to qualify or explain ratings, or to share details of how medications are used for each indication. Comments are available to read and review, do not change the numeric value of the rating. Ratings are based on generic drug names, but brand names are presented to permit doctors to rate specific drugs. Brand names are shown for every generic medication name presented. This study does not differentiate ratings between different brand names for the same medication. The most common medication treatments for each condition are listed for ratings, but doctors are encouraged to add treatments for any indication, ensuring the inclusion of new or novel treatments for each condition. Doctors were instructed to add medications not previously on the list of standard treatment only if they had experience using the medication to treat the condition at issue and found these medication effective in the treatment of that condition.&lt;br&gt;&lt;br&gt;&lt;a class=&quot;btn okay&quot;&gt;Okay&lt;/a&gt;" restype="string" datatype="html">
         <source>RateRx is a new, independent resource for doctors and patients alike, that presents ratings of medication effectiveness as reported by thousands of U.S.-licensed doctors in clinical practice of more than 137 specialties. RateRx represents the first comprehensive assessment of what experienced clinicians in each specialty actually use in the care of patients with specific conditions. Unlike other studies, which may report on the clinical effectiveness of treatments under controlled circumstances, RateRx calls on the deep, long-term, real-world experience of top doctors to reveal which treatments doctors have learned actually work with patients. &lt;br&gt;&lt;br&gt;
 
       Doctors were asked to rate the clinical effectiveness of a drug for treating a condition on a scale of 1 to 5 stars. Contributing doctors gave ratings to medications for their use with specific indications based on their knowledge and were instructed to provide input based only on clinical experience using the drug for that indication. We summarized the combined ratings for each treatment into an aggregate rating reflecting doctors’ collective experiences. The profiles of all doctors who provided ratings are visible to users, who can review details of the doctors’ training and experiences, including their specialties and board certifications. &lt;br&gt;&lt;br&gt;
@@ -4048,7 +4048,7 @@
   </file>
   <file original="public/feelGood/templates/ask_docs/live_consult.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1117" resname="Participants (        &lt;span class=&quot;num-participants&quot;&gt;&lt;/span&gt;        )" restype="string" datatype="html">
+      <trans-unit id="1117" resname="Participants (&lt;span class=&quot;num-participants&quot;&gt;&lt;/span&gt;)" restype="string" datatype="html">
         <source>Participants (
         &lt;span class="num-participants"&gt;&lt;/span&gt;
         )</source>
@@ -4060,7 +4060,7 @@
   </file>
   <file original="public/feelGood/templates/ask_docs/question_form.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1118" resname="Would you like any of these additional services?          &lt;span class=&quot;hint-text&quot;&gt;(optional)&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1118" resname="Would you like any of these additional services?&lt;span class=&quot;hint-text&quot;&gt;(optional)&lt;/span&gt;" restype="string" datatype="html">
         <source>Would you like any of these additional services?
           &lt;span class="hint-text"&gt;(optional)&lt;/span&gt;</source>
         <target>¿Te gustaría alguno de estos servicios adicionales?
@@ -4070,13 +4070,13 @@
   </file>
   <file original="public/feelGood/templates/ask_docs/waiting_room.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1121" resname="Estimated wait:          &lt;span class=&quot;estimated-wait-time&quot;&gt;-- min&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1121" resname="Estimated wait:&lt;span class=&quot;estimated-wait-time&quot;&gt;-- min&lt;/span&gt;" restype="string" datatype="html">
         <source>Estimated wait:
           &lt;span class="estimated-wait-time"&gt;-- min&lt;/span&gt;</source>
         <target>Espera estimada:
           &lt;span class="estimated-wait-time"&gt;-- min&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2489" resname="Your concern is very important to us. &lt;br&gt;            A doctor will be with you as soon as possible. &lt;br&gt;            In the meanwhile, would you like to wait or try one of the following?" restype="string" datatype="html">
+      <trans-unit id="2489" resname="Your concern is very important to us.&lt;br&gt;A doctor will be with you as soon as possible.&lt;br&gt;In the meanwhile, would you like to wait or try one of the following?" restype="string" datatype="html">
         <source>Your concern is very important to us. &lt;br&gt;
             A doctor will be with you as soon as possible. &lt;br&gt;
             In the meanwhile, would you like to wait or try one of the following?</source>
@@ -4088,13 +4088,13 @@
   </file>
   <file original="public/feelGood/templates/benefits_column.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1124" resname="Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills (both excluding controlled drugs), which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.           &lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1124" resname="Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills (both excluding controlled drugs), which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult.&lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.&lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills (both excluding controlled drugs), which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you're at home or on vacation.
           &lt;a href="https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults" target="_blank"&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>Doctores pueden brindar atención y recomendar y recetar tratamientos apropiados. Nuevas recetas para tratamiento y órdenes para rellenarlas (excluyendo de ambas drogas controladas) están disponibles donde sean médicamente indicadas y consideradas como apropiadas por el doctor tratante basadas en tu Consulta Virtual. &lt;br&gt;&lt;br&gt;Disfruta la conveniencia de tener recetas para tratamiento enviadas a tu farmacia local, ya sea que estés en casa o de vacaciones.
           &lt;a href="https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults" target="_blank"&gt;Aprender&amp;nbsp;más&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="2490" resname="Your interactions with doctors on HealthTap are safe, private, and secure.          HealthTap does not share or sell your personal information with third parties." restype="string" datatype="html">
+      <trans-unit id="2490" resname="Your interactions with doctors on HealthTap are safe, private, and secure. HealthTap does not share or sell your personal information with third parties." restype="string" datatype="html">
         <source>Your interactions with doctors on HealthTap are safe, private, and secure.
           HealthTap does not share or sell your personal information with third parties.</source>
         <target>Tus interacciones con doctores en HealthTap son seguras y privadas. HealthTap no comparte o vende tu información personal a terceras partes.</target>
@@ -4103,7 +4103,7 @@
   </file>
   <file original="public/feelGood/templates/fast_thank_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1133" resname="Secure server (        &lt;span class=&quot;teal security-link&quot;&gt;Tell me more&lt;/span&gt;        )" restype="string" datatype="html">
+      <trans-unit id="1133" resname="Secure server (&lt;span class=&quot;teal security-link&quot;&gt;Tell me more&lt;/span&gt;)" restype="string" datatype="html">
         <source>Secure server (
         &lt;span class="teal security-link"&gt;Tell me more&lt;/span&gt;
         )</source>
@@ -4115,7 +4115,7 @@
   </file>
   <file original="public/feelGood/templates/generic_error.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1134" resname="We&apos;re having trouble reaching HealthTap. Please try again or refresh the page.      &lt;%=        RB.getString(&quot;If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!&quot;).format({          link_tag_start: &apos;&lt;a href=&quot;mailto:&apos; + supportEmail + &apos;&quot;&gt;&apos;,          link_tag_end: &apos;&lt;/a&gt;&apos;        })      %&gt;" restype="string" datatype="html">
+      <trans-unit id="1134" resname="We&apos;re having trouble reaching HealthTap. Please try again or refresh the page.&lt;%= RB.getString(&quot;If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!&quot;).format({ link_tag_start: &apos;&lt;a href=&quot;mailto:&apos; + supportEmail + &apos;&quot;&gt;&apos;, link_tag_end: &apos;&lt;/a&gt;&apos; }) %&gt;" restype="string" datatype="html">
         <source>We're having trouble reaching HealthTap. Please try again or refresh the page.
       &lt;%=
         RB.getString("If the problem persists, {link_tag_start}contact our support{link_tag_end} for further assistance. Thank you!").format({
@@ -4139,7 +4139,7 @@
   </file>
   <file original="public/feelGood/templates/guest_flow_content.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1136" resname="Secure server (      &lt;span class=&quot;teal security-link&quot;&gt;Tell me more&lt;/span&gt;      )" restype="string" datatype="html">
+      <trans-unit id="1136" resname="Secure server (&lt;span class=&quot;teal security-link&quot;&gt;Tell me more&lt;/span&gt;)" restype="string" datatype="html">
         <source>Secure server (
       &lt;span class="teal security-link"&gt;Tell me more&lt;/span&gt;
       )</source>
@@ -4151,7 +4151,7 @@
   </file>
   <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1140" resname="You agree to the      &lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;Terms&lt;/a&gt;      and      &lt;a href=&quot;/terms/privacy_sharing&quot; target=&quot;_blank&quot;&gt;Privacy Policy&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1140" resname="You agree to the&lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;Terms&lt;/a&gt;and&lt;a href=&quot;/terms/privacy_sharing&quot; target=&quot;_blank&quot;&gt;Privacy Policy&lt;/a&gt;" restype="string" datatype="html">
         <source>You agree to the
       &lt;a href="/terms" target="_blank"&gt;Terms&lt;/a&gt;
       and
@@ -4169,7 +4169,7 @@
   </file>
   <file original="public/feelGood/templates/legal_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1141" resname="When you request to connect with a doctor, we will notify the doctor via email (as available).   You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for   virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay   seeking or receiving care in person as needed. &lt;br&gt;See &lt;a href=&quot;/terms/additional_info&quot; target=&quot;_blank&quot;&gt;Additional Information&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1141" resname="When you request to connect with a doctor, we will notify the doctor via email (as available). You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay seeking or receiving care in person as needed.&lt;br&gt;See&lt;a href=&quot;/terms/additional_info&quot; target=&quot;_blank&quot;&gt;Additional Information&lt;/a&gt;" restype="string" datatype="html">
         <source>When you request to connect with a doctor, we will notify the doctor via email (as available).
   You will be notified if you are confirmed as this doctor's patient or accepted by the doctor for
   virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay
@@ -4183,7 +4183,7 @@
   </file>
   <file original="public/feelGood/templates/messages/lab_order.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1142" resname="You will be taken to the &lt;%= test_provider %&gt; website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.    &lt;a class=&quot;btn schedule-test-btn&quot; href=&quot;&lt;%= consult_lab_test.schedule_test_url %&gt;&quot; target=&quot;_blank&quot;&gt;      Schedule lab test    &lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1142" resname="You will be taken to the&lt;%= test_provider %&gt;website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.&lt;a class=&quot;btn schedule-test-btn&quot; href=&quot;&lt;%= consult_lab_test.schedule_test_url %&gt;&quot; target=&quot;_blank&quot;&gt;Schedule lab test&lt;/a&gt;" restype="string" datatype="html">
         <source>You will be taken to the &lt;%= test_provider %&gt; website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.
     &lt;a class="btn schedule-test-btn" href="&lt;%= consult_lab_test.schedule_test_url %&gt;" target="_blank"&gt;
       Schedule lab test
@@ -4197,7 +4197,7 @@
   </file>
   <file original="public/feelGood/templates/messages/soap.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1144" resname="Summary Note    &lt;a class=&quot;download-pdf&quot; href=&quot;/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;&quot; target=&quot;_blank&quot;&gt;Download PDF&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1144" resname="Summary Note&lt;a class=&quot;download-pdf&quot; href=&quot;/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;&quot; target=&quot;_blank&quot;&gt;Download PDF&lt;/a&gt;" restype="string" datatype="html">
         <source>Summary Note
     &lt;a class="download-pdf" href="/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;" target="_blank"&gt;Download PDF&lt;/a&gt;</source>
         <target>Nota de Resumen
@@ -4207,7 +4207,7 @@
   </file>
   <file original="public/feelGood/templates/missed_call.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1145" resname=", you missed      &lt;span class=&quot;missed-call-count&quot;&gt;&lt;%= num_missed %&gt;&lt;/span&gt;      patient      &lt;span class=&quot;missed-call-copy&quot;&gt;&lt;%= callCopy %&gt;&lt;/span&gt;      . If you cannot see patients at this time, please indicate that you are" restype="string" datatype="html">
+      <trans-unit id="1145" resname=", you missed&lt;span class=&quot;missed-call-count&quot;&gt;&lt;%= num_missed %&gt;&lt;/span&gt;patient&lt;span class=&quot;missed-call-copy&quot;&gt;&lt;%= callCopy %&gt;&lt;/span&gt;. If you cannot see patients at this time, please indicate that you are" restype="string" datatype="html">
         <source>, you missed
       &lt;span class="missed-call-count"&gt;&lt;%= num_missed %&gt;&lt;/span&gt;
       patient
@@ -4225,7 +4225,7 @@
   </file>
   <file original="public/feelGood/templates/payment_content.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1152" resname="Secure server (    &lt;span class=&quot;teal security-link&quot;&gt;Tell me more&lt;/span&gt;    )" restype="string" datatype="html">
+      <trans-unit id="1152" resname="Secure server (&lt;span class=&quot;teal security-link&quot;&gt;Tell me more&lt;/span&gt;)" restype="string" datatype="html">
         <source>Secure server (
     &lt;span class="teal security-link"&gt;Tell me more&lt;/span&gt;
     )</source>
@@ -4237,7 +4237,7 @@
   </file>
   <file original="public/feelGood/templates/payment_content_old.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1153" resname="/month regularly - $      &lt;span class=&quot;remaining-credit&quot;&gt;&lt;/span&gt;      credits this month" restype="string" datatype="html">
+      <trans-unit id="1153" resname="/month regularly - $&lt;span class=&quot;remaining-credit&quot;&gt;&lt;/span&gt;credits this month" restype="string" datatype="html">
         <source>/month regularly - $
       &lt;span class="remaining-credit"&gt;&lt;/span&gt;
       credits this month</source>
@@ -4245,7 +4245,7 @@
       &lt;span class="remaining-credit"&gt;&lt;/span&gt;
       créditos este mes</target>
       </trans-unit>
-      <trans-unit id="1154" resname="regularly - $      &lt;span class=&quot;remaining-credit&quot;&gt;&lt;/span&gt;      in credits" restype="string" datatype="html">
+      <trans-unit id="1154" resname="regularly - $&lt;span class=&quot;remaining-credit&quot;&gt;&lt;/span&gt;in credits" restype="string" datatype="html">
         <source>regularly - $
       &lt;span class="remaining-credit"&gt;&lt;/span&gt;
       in credits</source>
@@ -4261,7 +4261,7 @@
   </file>
   <file original="public/feelGood/templates/pipeline_info.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1155" resname="No clients yet.    &lt;a class=&quot;invite-clients&quot; data-show-container=&quot;invite&quot;&gt;Invite your clients now! ›&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1155" resname="No clients yet.&lt;a class=&quot;invite-clients&quot; data-show-container=&quot;invite&quot;&gt;Invite your clients now! ›&lt;/a&gt;" restype="string" datatype="html">
         <source>No clients yet.
     &lt;a class="invite-clients" data-show-container="invite"&gt;Invite your clients now! ›&lt;/a&gt;</source>
         <target>Ningún cliente aún.
@@ -4271,7 +4271,7 @@
   </file>
   <file original="public/feelGood/templates/promocode_policy.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1157" resname="These terms (the “Free Trial Terms”) govern the offer (the “Prime Free Trial Offer”) by HealthTap to New Qualified Users to access to the HealthTap Prime Service upon signing up and submitting payment information for a new HealthTap Prime account (the “Free Trial Period”). By submitting your payment details, you accept the Prime Free-Trial Offer and: (i) consent to our use of your payment information in accordance with our Payment Details Terms, and (ii) acknowledge and agree to the HealthTap &lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;Terms of Use&lt;/a&gt; and these Free Trial Terms. If you decide that you do not want to become a paying user of HealthTap Prime under the standard HealthTap Prime Terms in effect at the end of the Free Trial Period, you must cancel your HealthTap Prime Subscription (in the Billing Settings section of your HealthTap account &lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription?b_id=2340&quot; target=&quot;_blank&quot;&gt;Settings&lt;/a&gt;) before the end of the Free Trial Period. Subscription fees are not prorated; cancellations after the termination of the Free Trial Period will remain active through the end of the trial length period during which the account is canceled. You may only use this Free Trial Offer once. HealthTap reserves the right, in its absolute discretion, to determine individual eligibility for this Prime Free-Trial Offer and to withdraw or to modify this Prime Trial Offer and/or the Free Trial Terms at any time, without prior notice and with no liability.&lt;br&gt;&lt;br&gt;    Payment Details Terms: When you sign up for a trial or any of our Premium Services, or make other purchases through the Apps, your credit card information and other financial data needed to process your payment are collected and stored by third party payment processors, and we may collect some limited information, such as your postal code and transaction history details. The use of your data by any such third party payment processors is subject to their privacy policies. These third parties generally provide us with some limited information (such as a unique token that enables you to make additional purchases using the information they’ve stored, and your card’s type, expiration date, and last four digits).    &lt;br&gt;&lt;br&gt;    See the HealthTap &lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;Terms of Use&lt;/a&gt; for the definitions of “HealthTap,” “HealthTap Prime,” “Apps,” and “Premium Services.” “New Qualified Users” means new HealthTap Prime customers without a prior primary or sub-account or trial account on HealthTap Prime.    &lt;br&gt;&lt;br&gt;    Please note that the following prescriptions are not currently available via HealthTap Prime: narcotics or DEA controlled substances (Schedule I, II, III, IV), psychiatric or lifestyle medications (such as diet or erectile dysfunction drugs), or medications restricted by individual states." restype="string" datatype="html">
+      <trans-unit id="1157" resname="These terms (the “Free Trial Terms”) govern the offer (the “Prime Free Trial Offer”) by HealthTap to New Qualified Users to access to the HealthTap Prime Service upon signing up and submitting payment information for a new HealthTap Prime account (the “Free Trial Period”). By submitting your payment details, you accept the Prime Free-Trial Offer and: (i) consent to our use of your payment information in accordance with our Payment Details Terms, and (ii) acknowledge and agree to the HealthTap&lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;Terms of Use&lt;/a&gt;and these Free Trial Terms. If you decide that you do not want to become a paying user of HealthTap Prime under the standard HealthTap Prime Terms in effect at the end of the Free Trial Period, you must cancel your HealthTap Prime Subscription (in the Billing Settings section of your HealthTap account&lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription?b_id=2340&quot; target=&quot;_blank&quot;&gt;Settings&lt;/a&gt;) before the end of the Free Trial Period. Subscription fees are not prorated; cancellations after the termination of the Free Trial Period will remain active through the end of the trial length period during which the account is canceled. You may only use this Free Trial Offer once. HealthTap reserves the right, in its absolute discretion, to determine individual eligibility for this Prime Free-Trial Offer and to withdraw or to modify this Prime Trial Offer and/or the Free Trial Terms at any time, without prior notice and with no liability.&lt;br&gt;&lt;br&gt;Payment Details Terms: When you sign up for a trial or any of our Premium Services, or make other purchases through the Apps, your credit card information and other financial data needed to process your payment are collected and stored by third party payment processors, and we may collect some limited information, such as your postal code and transaction history details. The use of your data by any such third party payment processors is subject to their privacy policies. These third parties generally provide us with some limited information (such as a unique token that enables you to make additional purchases using the information they’ve stored, and your card’s type, expiration date, and last four digits).&lt;br&gt;&lt;br&gt;See the HealthTap&lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;Terms of Use&lt;/a&gt;for the definitions of “HealthTap,” “HealthTap Prime,” “Apps,” and “Premium Services.” “New Qualified Users” means new HealthTap Prime customers without a prior primary or sub-account or trial account on HealthTap Prime.&lt;br&gt;&lt;br&gt;Please note that the following prescriptions are not currently available via HealthTap Prime: narcotics or DEA controlled substances (Schedule I, II, III, IV), psychiatric or lifestyle medications (such as diet or erectile dysfunction drugs), or medications restricted by individual states." restype="string" datatype="html">
         <source>These terms (the “Free Trial Terms”) govern the offer (the “Prime Free Trial Offer”) by HealthTap to New Qualified Users to access to the HealthTap Prime Service upon signing up and submitting payment information for a new HealthTap Prime account (the “Free Trial Period”). By submitting your payment details, you accept the Prime Free-Trial Offer and: (i) consent to our use of your payment information in accordance with our Payment Details Terms, and (ii) acknowledge and agree to the HealthTap &lt;a href="/terms" target="_blank"&gt;Terms of Use&lt;/a&gt; and these Free Trial Terms. If you decide that you do not want to become a paying user of HealthTap Prime under the standard HealthTap Prime Terms in effect at the end of the Free Trial Period, you must cancel your HealthTap Prime Subscription (in the Billing Settings section of your HealthTap account &lt;a href="https://healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription?b_id=2340" target="_blank"&gt;Settings&lt;/a&gt;) before the end of the Free Trial Period. Subscription fees are not prorated; cancellations after the termination of the Free Trial Period will remain active through the end of the trial length period during which the account is canceled. You may only use this Free Trial Offer once. HealthTap reserves the right, in its absolute discretion, to determine individual eligibility for this Prime Free-Trial Offer and to withdraw or to modify this Prime Trial Offer and/or the Free Trial Terms at any time, without prior notice and with no liability.&lt;br&gt;&lt;br&gt;
     Payment Details Terms: When you sign up for a trial or any of our Premium Services, or make other purchases through the Apps, your credit card information and other financial data needed to process your payment are collected and stored by third party payment processors, and we may collect some limited information, such as your postal code and transaction history details. The use of your data by any such third party payment processors is subject to their privacy policies. These third parties generally provide us with some limited information (such as a unique token that enables you to make additional purchases using the information they’ve stored, and your card’s type, expiration date, and last four digits).
     &lt;br&gt;&lt;br&gt;
@@ -4289,7 +4289,7 @@
   </file>
   <file original="public/feelGood/templates/setup_device.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1162" resname="Having trouble?&lt;br&gt;      Call us at (650) 376-6010 or email&lt;br&gt;      &lt;a href=&quot;mailto:concierge@healthtap.com&quot;&gt;concierge@healthtap.com&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1162" resname="Having trouble?&lt;br&gt;Call us at (650) 376-6010 or email&lt;br&gt;&lt;a href=&quot;mailto:concierge@healthtap.com&quot;&gt;concierge@healthtap.com&lt;/a&gt;" restype="string" datatype="html">
         <source>Having trouble?&lt;br&gt;
       Call us at (650) 376-6010 or email&lt;br&gt;
       &lt;a href="mailto:concierge@healthtap.com"&gt;concierge@healthtap.com&lt;/a&gt;</source>
@@ -4301,7 +4301,7 @@
   </file>
   <file original="public/feelGood/templates/suggested_patients_list.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1165" resname="Offer            &lt;span class=&quot;suffix-wrap&quot;&gt;            1            &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;            &lt;/span&gt;            time consult discount - &lt;%= discount_price %&gt;" restype="string" datatype="html">
+      <trans-unit id="1165" resname="Offer&lt;span class=&quot;suffix-wrap&quot;&gt;1&lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;&lt;/span&gt;time consult discount -&lt;%= discount_price %&gt;" restype="string" datatype="html">
         <source>Offer
             &lt;span class="suffix-wrap"&gt;
             1
@@ -4319,7 +4319,7 @@
   </file>
   <file original="public/feelGood/templates/ui_modules/weight_slider.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1169" resname="(&lt;span class=&quot;weight-kg&quot;&gt;        &lt;%=          RB.getString(&quot;{weight_kg} kg&quot;).format({            weight_kg: weight_kg          })        %&gt;      &lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1169" resname="(&lt;span class=&quot;weight-kg&quot;&gt;&lt;%= RB.getString(&quot;{weight_kg} kg&quot;).format({ weight_kg: weight_kg }) %&gt;&lt;/span&gt;)" restype="string" datatype="html">
         <source>(&lt;span class="weight-kg"&gt;
         &lt;%=
           RB.getString("{weight_kg} kg").format({
@@ -4339,13 +4339,13 @@
   </file>
   <file original="public/javascripts/_legacy/ipad_expert_sign_up.old.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1170" resname="Already have a HealthTap account?    &lt;a class=&quot;btn blue&quot; href=&quot;#login&quot;&gt;Log In&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1170" resname="Already have a HealthTap account?&lt;a class=&quot;btn blue&quot; href=&quot;#login&quot;&gt;Log In&lt;/a&gt;" restype="string" datatype="html">
         <source>Already have a HealthTap account?
     &lt;a class="btn blue" href="#login"&gt;Log In&lt;/a&gt;</source>
         <target>¿Ya tienes una cuenta HealthTap?
     &lt;a class="btn blue" href="#login"&gt;Iniciar sesión&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1171" resname="Doctor                                &lt;span class=&quot;instruction&quot;&gt;(requires valid U.S. medical professional license)&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1171" resname="Doctor&lt;span class=&quot;instruction&quot;&gt;(requires valid U.S. medical professional license)&lt;/span&gt;" restype="string" datatype="html">
         <source>Doctor
 
                 &lt;span class="instruction"&gt;(requires valid U.S. medical professional license)&lt;/span&gt;</source>
@@ -4353,7 +4353,7 @@
 
                 &lt;span class=”instruction”&gt;(requiere licencia médica profesional válida de los EE.UU.)&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1173" resname="By signing up, you agree to our        &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Terms of Use&lt;/a&gt;        and        &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1173" resname="By signing up, you agree to our&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Terms of Use&lt;/a&gt;and&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;" restype="string" datatype="html">
         <source>By signing up, you agree to our
         &lt;a class="childBrowser_link" href="/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;Terms of Use&lt;/a&gt;
         and
@@ -4367,7 +4367,7 @@
   </file>
   <file original="public/javascripts/templates/experts/answer_question_actor.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1177" resname="Medical Student &lt;a class=&quot;actor_link&quot; href=&quot;#experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;          &lt;%= user_question.actor.name %&gt;        &lt;/a&gt;         asked:" restype="string" datatype="html">
+      <trans-unit id="1177" resname="Medical Student&lt;a class=&quot;actor_link&quot; href=&quot;#experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;&lt;%= user_question.actor.name %&gt;&lt;/a&gt;asked:" restype="string" datatype="html">
         <source>Medical Student &lt;a class="actor_link" href="#experts/&lt;%= user_question.actor.id %&gt;"&gt;
           &lt;%= user_question.actor.name %&gt;
         &lt;/a&gt;
@@ -4381,7 +4381,7 @@
   </file>
   <file original="public/javascripts/templates/experts/answer_question_feedback_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1184" resname="You&apos;ve helped      &lt;br&gt;      &lt;b class=&quot;heart-icon&quot;&gt;        &lt;%= (number_of_people_helped + &apos;&apos;).comma() %&gt;      &lt;/b&gt; PEOPLE" restype="string" datatype="html">
+      <trans-unit id="1184" resname="You&apos;ve helped&lt;br&gt;&lt;b class=&quot;heart-icon&quot;&gt;&lt;%= (number_of_people_helped + &apos;&apos;).comma() %&gt;&lt;/b&gt;PEOPLE" restype="string" datatype="html">
         <source>You've helped
       &lt;br&gt;
       &lt;b class="heart-icon"&gt;
@@ -4393,7 +4393,7 @@
       &lt;%= (number_of_people_helped + ‘’).comma() %&gt;
       &lt;/b&gt; PERSONAS</target>
       </trans-unit>
-      <trans-unit id="1185" resname="Answer &lt;b&gt;&lt;%= number_to_go %&gt; more Questions&lt;/b&gt; and get your next medal for today, the &quot;&lt;%= next_badge %&gt;&quot; medal!    &lt;br&gt;    &lt;br&gt;    &lt;a href=&quot;/#docscore/achievements&quot;&gt;See your medals &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1185" resname="Answer&lt;b&gt;&lt;%= number_to_go %&gt;more Questions&lt;/b&gt;and get your next medal for today, the &quot;&lt;%= next_badge %&gt;&quot; medal!&lt;br&gt;&lt;br&gt;&lt;a href=&quot;/#docscore/achievements&quot;&gt;See your medals &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Answer &lt;b&gt;&lt;%= number_to_go %&gt; more Questions&lt;/b&gt; and get your next medal for today, the "&lt;%= next_badge %&gt;" medal!
     &lt;br&gt;
     &lt;br&gt;
@@ -4407,7 +4407,7 @@
   </file>
   <file original="public/javascripts/templates/experts/answer_question_form.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1186" resname="This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt;      will be given credit for assisting you. Edit as you deem necessary.      &lt;a class=&quot;child-browser-link&quot; href=&quot;#how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt; &lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1186" resname="This answer will appear in your Virtual Practice and&lt;%= user_answer.contributor.name %&gt;will be given credit for assisting you. Edit as you deem necessary.&lt;a class=&quot;child-browser-link&quot; href=&quot;#how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt;
       will be given credit for assisting you. Edit as you deem necessary.
       &lt;a class="child-browser-link" href="#how_it_works/healthtap_university"&gt;More about HealthTap University &amp;gt; &lt;/a&gt;</source>
@@ -4419,7 +4419,7 @@
   </file>
   <file original="public/javascripts/templates/experts/competitions/known_for_leaderboard_row.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1190" resname="You stand alone as a top doctor!            &lt;a class=&quot;invite_colleagues&quot;&gt;Invite colleagues &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1190" resname="You stand alone as a top doctor!&lt;a class=&quot;invite_colleagues&quot;&gt;Invite colleagues &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>You stand alone as a top doctor!
             &lt;a class="invite_colleagues"&gt;Invite colleagues &amp;raquo;&lt;/a&gt;</source>
         <target>¡Estás solo como uno de los mejores doctores!
@@ -4429,11 +4429,11 @@
   </file>
   <file original="public/javascripts/templates/experts/competitions/top_doctors_comp.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1191" resname="The Top Doctors Competition has ended.  The Top Doctor Competition awards that visitors to your Virtual Practice see are shown &lt;a href=&quot;/#experts/&lt;%= App.user.id %&gt;/about&quot;&gt;here&lt;/a&gt;." restype="string" datatype="html">
+      <trans-unit id="1191" resname="The Top Doctors Competition has ended. The Top Doctor Competition awards that visitors to your Virtual Practice see are shown&lt;a href=&quot;/#experts/&lt;%= App.user.id %&gt;/about&quot;&gt;here&lt;/a&gt;." restype="string" datatype="html">
         <source>The Top Doctors Competition has ended.  The Top Doctor Competition awards that visitors to your Virtual Practice see are shown &lt;a href="/#experts/&lt;%= App.user.id %&gt;/about"&gt;here&lt;/a&gt;.</source>
         <target>La Competición de los Mejores Doctores ha finalizado.  Los galardones de la Competición del Mejor Doctor que los visitantes ven en tu Consultorio Virtual son mostrados &lt;a href="/#experts/&lt;%= App.user.id %&gt;/about"&gt;aquí&lt;/a&gt;.</target>
       </trans-unit>
-      <trans-unit id="1192" resname="Leaderboard          &lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST &lt;%= today_str %&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1192" resname="Leaderboard&lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST&lt;%= today_str %&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Leaderboard
           &lt;span class="last-updated"&gt;as of 1AM PST &lt;%= today_str %&gt;&lt;/span&gt;</source>
         <target>Tabla de Posiciones
@@ -4443,7 +4443,7 @@
   </file>
   <file original="public/javascripts/templates/experts/concierge_consult_module.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1193" resname="Now become a &quot;Top Concierge Doctor&quot;&lt;br&gt;          and do just &lt;%= 25 - no_of_consults %&gt; more &lt;%= no_of_consults == 24 ? &apos;consult&apos; : &apos;consults&apos; %&gt; &lt;br&gt;          &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos; day&apos; : &apos; days&apos;) %&gt; left in the competition!&lt;/b&gt;" restype="string" datatype="html">
+      <trans-unit id="1193" resname="Now become a &quot;Top Concierge Doctor&quot;&lt;br&gt;and do just&lt;%= 25 - no_of_consults %&gt;more&lt;%= no_of_consults == 24 ? &apos;consult&apos; : &apos;consults&apos; %&gt;&lt;br&gt;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos; day&apos; : &apos; days&apos;) %&gt;left in the competition!&lt;/b&gt;" restype="string" datatype="html">
         <source>Now become a "Top Concierge Doctor"&lt;br&gt;
           and do just &lt;%= 25 - no_of_consults %&gt; more &lt;%= no_of_consults == 24 ? 'consult' : 'consults' %&gt; &lt;br&gt;
           &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? ' day' : ' days') %&gt; left in the competition!&lt;/b&gt;</source>
@@ -4451,13 +4451,13 @@
           y haz solo &lt;%= 25 - no_of_consults %&gt; más &lt;%= no_of_consults == 24 ? ‘consult' : ‘consults' %&gt; &lt;br&gt;
           &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? ‘ day' : ‘ days’) %&gt; restantes en la competición!&lt;/b&gt;</target>
       </trans-unit>
-      <trans-unit id="1194" resname="Now become &lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt; &quot;Top Concierge Doctor&quot;          Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos;&amp;nbsp;day&apos; : &apos;&amp;nbsp;days&apos;) %&gt; left in the competition!&lt;/b&gt;" restype="string" datatype="html">
+      <trans-unit id="1194" resname="Now become&lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt;&quot;Top Concierge Doctor&quot; Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos;&amp;nbsp;day&apos; : &apos;&amp;nbsp;days&apos;) %&gt;left in the competition!&lt;/b&gt;" restype="string" datatype="html">
         <source>Now become &lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt; "Top Concierge Doctor"
           Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? '&amp;nbsp;day' : '&amp;nbsp;days') %&gt; left in the competition!&lt;/b&gt;</source>
         <target>Ahora conviértete en &lt;b&gt;&lt;i&gt;el&lt;/i&gt;&lt;/b&gt; “Mejor Doctor Concierge"
           Ganador&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? ‘&amp;nbsp;day' : ‘&amp;nbsp;days’) %&gt; restantes en la competición!&lt;/b&gt;</target>
       </trans-unit>
-      <trans-unit id="1196" resname="&amp;rdquo;Have questions? Join me for a brief informational webinar.        &lt;span class=&quot;no-wrap&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://tiny.cc/concierge_webinar&quot;&gt;          Sign up here&amp;nbsp;&amp;rsaquo;        &lt;/a&gt;&amp;ldquo;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1196" resname="&amp;rdquo;Have questions? Join me for a brief informational webinar.&lt;span class=&quot;no-wrap&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://tiny.cc/concierge_webinar&quot;&gt;Sign up here&amp;nbsp;&amp;rsaquo;&lt;/a&gt;&amp;ldquo;&lt;/span&gt;" restype="string" datatype="html">
         <source>&amp;rdquo;Have questions? Join me for a brief informational webinar.
         &lt;span class="no-wrap"&gt;&lt;a target="_blank" href="http://tiny.cc/concierge_webinar"&gt;
           Sign up here&amp;nbsp;&amp;rsaquo;
@@ -4471,13 +4471,13 @@
   </file>
   <file original="public/javascripts/templates/experts/edit_publications.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1203" resname="Add publication from search        &lt;span class=&quot;cancel_edit_wrapper&quot;&gt;( &lt;a class=&quot;cancel_edit&quot;&gt;Cancel&lt;/a&gt; )&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1203" resname="Add publication from search&lt;span class=&quot;cancel_edit_wrapper&quot;&gt;(&lt;a class=&quot;cancel_edit&quot;&gt;Cancel&lt;/a&gt;)&lt;/span&gt;" restype="string" datatype="html">
         <source>Add publication from search
         &lt;span class="cancel_edit_wrapper"&gt;( &lt;a class="cancel_edit"&gt;Cancel&lt;/a&gt; )&lt;/span&gt;</source>
         <target>Añadir publicación desde búsqueda
         &lt;span class="cancel_edit_wrapper"&gt;( &lt;a class="cancel_edit"&gt;Cancelar&lt;/a&gt; )&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1204" resname="Edit Publication        &lt;span class=&quot;cancel_edit_wrapper&quot;&gt;( &lt;a class=&quot;cancel_edit&quot;&gt;Cancel&lt;/a&gt; )&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1204" resname="Edit Publication&lt;span class=&quot;cancel_edit_wrapper&quot;&gt;(&lt;a class=&quot;cancel_edit&quot;&gt;Cancel&lt;/a&gt;)&lt;/span&gt;" restype="string" datatype="html">
         <source>Edit Publication
         &lt;span class="cancel_edit_wrapper"&gt;( &lt;a class="cancel_edit"&gt;Cancel&lt;/a&gt; )&lt;/span&gt;</source>
         <target>Editar Publicación
@@ -4487,7 +4487,7 @@
   </file>
   <file original="public/javascripts/templates/experts/enhance_profile/basic/greeting.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1211" resname="In order to use the feature you will need to install flash.            &lt;br&gt;            You can install it from here: &lt;a href=&quot;http://get.adobe.com/flashplayer/&quot;&gt;http://get.adobe.com/flashplayer/&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1211" resname="In order to use the feature you will need to install flash.&lt;br&gt;You can install it from here:&lt;a href=&quot;http://get.adobe.com/flashplayer/&quot;&gt;http://get.adobe.com/flashplayer/&lt;/a&gt;" restype="string" datatype="html">
         <source>In order to use the feature you will need to install flash.
             &lt;br&gt;
             You can install it from here: &lt;a href="http://get.adobe.com/flashplayer/"&gt;http://get.adobe.com/flashplayer/&lt;/a&gt;</source>
@@ -4499,7 +4499,7 @@
   </file>
   <file original="public/javascripts/templates/experts/enhance_profile/education/known_fors.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1219" resname="Showcase what you are known for  (+&lt;%= ht.completionPercentages.knownFors %&gt;&amp;#37;) &lt;span class=&quot;hint-text&quot;&gt;(drag to arrange)&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1219" resname="Showcase what you are known for (+&lt;%= ht.completionPercentages.knownFors %&gt;&amp;#37;)&lt;span class=&quot;hint-text&quot;&gt;(drag to arrange)&lt;/span&gt;" restype="string" datatype="html">
         <source>Showcase what you are known for  (+&lt;%= ht.completionPercentages.knownFors %&gt;&amp;#37;) &lt;span class="hint-text"&gt;(drag to arrange)&lt;/span&gt;</source>
         <target>Muestra por lo que eres conocido  (+&lt;%= ht.completionPercentages.knownFors %&gt;&amp;#37;) &lt;span class="hint-text"&gt;(arrastra para acomodar)&lt;/span&gt;</target>
       </trans-unit>
@@ -4507,7 +4507,7 @@
   </file>
   <file original="public/javascripts/templates/experts/enhance_profile/education/specialties.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1223" resname="Add up to 5 specialties or areas of practice  (+&lt;%= ht.completionPercentages.specialties %&gt;&amp;#37;) &lt;span class=&quot;hint-text&quot;&gt;(drag to arrange)&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1223" resname="Add up to 5 specialties or areas of practice (+&lt;%= ht.completionPercentages.specialties %&gt;&amp;#37;)&lt;span class=&quot;hint-text&quot;&gt;(drag to arrange)&lt;/span&gt;" restype="string" datatype="html">
         <source>Add up to 5 specialties or areas of practice  (+&lt;%= ht.completionPercentages.specialties %&gt;&amp;#37;) &lt;span class="hint-text"&gt;(drag to arrange)&lt;/span&gt;</source>
         <target>Agrega hasta 5 especialidades o áreas de práctica  (+&lt;%= ht.completionPercentages.specialties %&gt;&amp;#37;) &lt;span class="hint-text"&gt;(arrastra para acomodar)&lt;/span&gt;</target>
       </trans-unit>
@@ -4515,7 +4515,7 @@
   </file>
   <file original="public/javascripts/templates/experts/enhance_profile/misc/publications.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1229" resname="Enter your publications or presentations  (+&lt;%= ht.completionPercentages.publications %&gt;&amp;#37;)&lt;span class=&quot;hint-text&quot;&gt;(drag to arrange)&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1229" resname="Enter your publications or presentations (+&lt;%= ht.completionPercentages.publications %&gt;&amp;#37;)&lt;span class=&quot;hint-text&quot;&gt;(drag to arrange)&lt;/span&gt;" restype="string" datatype="html">
         <source>Enter your publications or presentations  (+&lt;%= ht.completionPercentages.publications %&gt;&amp;#37;)&lt;span class="hint-text"&gt;(drag to arrange)&lt;/span&gt;</source>
         <target>Ingresa tus publicaciones o presentaciones  (+&lt;%= ht.completionPercentages.publications %&gt;&amp;#37;)&lt;span class="hint-text"&gt;(arrastra para acomodar)&lt;/span&gt;</target>
       </trans-unit>
@@ -4523,7 +4523,7 @@
   </file>
   <file original="public/javascripts/templates/experts/enhance_profile/practice_info/mailing.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1233" resname="Let HealthTap know where to reach you  (+&lt;%= ht.completionPercentages.mailing %&gt;&amp;#37;) &lt;span class=&quot;sub-text&quot;&gt;This information will not be shared with any third parties&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1233" resname="Let HealthTap know where to reach you (+&lt;%= ht.completionPercentages.mailing %&gt;&amp;#37;)&lt;span class=&quot;sub-text&quot;&gt;This information will not be shared with any third parties&lt;/span&gt;" restype="string" datatype="html">
         <source>Let HealthTap know where to reach you  (+&lt;%= ht.completionPercentages.mailing %&gt;&amp;#37;) &lt;span class="sub-text"&gt;This information will not be shared with any third parties&lt;/span&gt;</source>
         <target>Hazle saber a HealthTap dónde localizarte  (+&lt;%= ht.completionPercentages.mailing %&gt;&amp;#37;) &lt;span class="sub-text"&gt;Esta información no será compartida con ningún tercero&lt;/span&gt;</target>
       </trans-unit>
@@ -4531,55 +4531,55 @@
   </file>
   <file original="public/javascripts/templates/experts/expert_directory/index.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1239" resname="Entire Network          (&lt;span class=&quot;count first-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1239" resname="Entire Network (&lt;span class=&quot;count first-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Entire Network
           (&lt;span class="count first-tab"&gt;0&lt;/span&gt;)</source>
         <target>Red Entera
           (&lt;span class="count first-tab"&gt;0&lt;/span&gt;)</target>
       </trans-unit>
-      <trans-unit id="1240" resname="Referral Network          (&lt;span class=&quot;count second-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1240" resname="Referral Network (&lt;span class=&quot;count second-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Referral Network
           (&lt;span class="count second-tab"&gt;0&lt;/span&gt;)</source>
         <target>Red de Referencia
           (&lt;span class="count second-tab"&gt;0&lt;/span&gt;)</target>
       </trans-unit>
-      <trans-unit id="1241" resname="Added This Doctor          (&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1241" resname="Added This Doctor (&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Added This Doctor
           (&lt;span class="count third-tab"&gt;0&lt;/span&gt;)</source>
         <target>Añadió a Este Doctor
           (&lt;span class="count second-tab"&gt;0&lt;/span&gt;)</target>
       </trans-unit>
-      <trans-unit id="1242" resname="Your Network          (&lt;span class=&quot;count first-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1242" resname="Your Network (&lt;span class=&quot;count first-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Your Network
           (&lt;span class="count first-tab"&gt;0&lt;/span&gt;)</source>
         <target>Tu Red
           (&lt;span class="count first-tab"&gt;0&lt;/span&gt;)</target>
       </trans-unit>
-      <trans-unit id="1243" resname="Referrals          (&lt;span class=&quot;count second-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1243" resname="Referrals (&lt;span class=&quot;count second-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Referrals
           (&lt;span class="count second-tab"&gt;0&lt;/span&gt;)</source>
         <target>Referencias
           (&lt;span class="count second-tab"&gt;0&lt;/span&gt;)</target>
       </trans-unit>
-      <trans-unit id="1244" resname="Added you          (&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1244" resname="Added you (&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Added you
           (&lt;span class="count third-tab"&gt;0&lt;/span&gt;)</source>
         <target>Te agregó
           (&lt;span class="count third-tab"&gt;0&lt;/span&gt;)</target>
       </trans-unit>
-      <trans-unit id="1245" resname="All          (&lt;span class=&quot;count first-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1245" resname="All (&lt;span class=&quot;count first-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>All
           (&lt;span class="count first-tab"&gt;0&lt;/span&gt;)</source>
         <target>Todos
           (&lt;span class="count first-tab"&gt;0&lt;/span&gt;)</target>
       </trans-unit>
-      <trans-unit id="1246" resname="Following          (&lt;span class=&quot;count second-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1246" resname="Following (&lt;span class=&quot;count second-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Following
           (&lt;span class="count second-tab"&gt;0&lt;/span&gt;)</source>
         <target>Siguiendo
           (&lt;span class="count second-tab"&gt;0&lt;/span&gt;)</target>
       </trans-unit>
-      <trans-unit id="1247" resname="Your Doctors          (&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1247" resname="Your Doctors (&lt;span class=&quot;count third-tab&quot;&gt;0&lt;/span&gt;)" restype="string" datatype="html">
         <source>Your Doctors
           (&lt;span class="count third-tab"&gt;0&lt;/span&gt;)</source>
         <target>Tus Doctores
@@ -4589,7 +4589,7 @@
   </file>
   <file original="public/javascripts/templates/experts/expert_directory/list_item.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1248" resname="You haven&apos;t added any doctors yet.        &lt;a href=&quot;#member/doctors/find_a_doctor&quot;&gt;Find a doctor &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1248" resname="You haven&apos;t added any doctors yet.&lt;a href=&quot;#member/doctors/find_a_doctor&quot;&gt;Find a doctor &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>You haven't added any doctors yet.
         &lt;a href="#member/doctors/find_a_doctor"&gt;Find a doctor &amp;raquo;&lt;/a&gt;</source>
         <target>No has añadido a ningún doctor aún.
@@ -4599,19 +4599,19 @@
   </file>
   <file original="public/javascripts/templates/experts/expert_directory.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1249" resname="Your Network        (&lt;span class=&quot;count&quot;&gt;&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1249" resname="Your Network (&lt;span class=&quot;count&quot;&gt;&lt;/span&gt;)" restype="string" datatype="html">
         <source>Your Network
         (&lt;span class="count"&gt;&lt;/span&gt;)</source>
         <target>Tu Red
         (&lt;span class="count"&gt;&lt;/span&gt;)</target>
       </trans-unit>
-      <trans-unit id="1250" resname="Referrals        (&lt;span class=&quot;count&quot;&gt;&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1250" resname="Referrals (&lt;span class=&quot;count&quot;&gt;&lt;/span&gt;)" restype="string" datatype="html">
         <source>Referrals
         (&lt;span class="count"&gt;&lt;/span&gt;)</source>
         <target>Referencias
         (&lt;span class="count"&gt;&lt;/span&gt;)</target>
       </trans-unit>
-      <trans-unit id="1251" resname="Added you        (&lt;span class=&quot;count&quot;&gt;&lt;/span&gt;)" restype="string" datatype="html">
+      <trans-unit id="1251" resname="Added you (&lt;span class=&quot;count&quot;&gt;&lt;/span&gt;)" restype="string" datatype="html">
         <source>Added you
         (&lt;span class="count"&gt;&lt;/span&gt;)</source>
         <target>Te añadió
@@ -4621,13 +4621,13 @@
   </file>
   <file original="public/javascripts/templates/experts/header.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1253" resname=",            &lt;span class=&quot;credentials_certified&quot;&gt;Board Certified&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1253" resname=",&lt;span class=&quot;credentials_certified&quot;&gt;Board Certified&lt;/span&gt;" restype="string" datatype="html">
         <source>,
             &lt;span class="credentials_certified"&gt;Board Certified&lt;/span&gt;</source>
         <target>,
             &lt;span class=”credentials_certified”&gt;Certificado por Consejo&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1254" resname=",          &lt;span class=&quot;credentials_certified&quot;&gt;Board Certified&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1254" resname=",&lt;span class=&quot;credentials_certified&quot;&gt;Board Certified&lt;/span&gt;" restype="string" datatype="html">
         <source>,
           &lt;span class="credentials_certified"&gt;Board Certified&lt;/span&gt;</source>
         <target>,
@@ -4637,7 +4637,7 @@
   </file>
   <file original="public/javascripts/templates/experts/htreferenceToolTip.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1255" resname="Doctor definitions or descriptions will be showcased on topic pages and seen by millions of users. Get recognized for your knowledge by providing a brief and informative definition or description for this topic.  &lt;br&gt;  &lt;a class=&quot;btn blue close_layer&quot; style=&quot;display: block; width: 100px; float: right;&quot;&gt;Thanks&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1255" resname="Doctor definitions or descriptions will be showcased on topic pages and seen by millions of users. Get recognized for your knowledge by providing a brief and informative definition or description for this topic.&lt;br&gt;&lt;a class=&quot;btn blue close_layer&quot; style=&quot;display: block; width: 100px; float: right;&quot;&gt;Thanks&lt;/a&gt;" restype="string" datatype="html">
         <source>Doctor definitions or descriptions will be showcased on topic pages and seen by millions of users. Get recognized for your knowledge by providing a brief and informative definition or description for this topic.
   &lt;br&gt;
   &lt;a class="btn blue close_layer" style="display: block; width: 100px; float: right;"&gt;Thanks&lt;/a&gt;</source>
@@ -4649,11 +4649,11 @@
   </file>
   <file original="public/javascripts/templates/experts/patientNewsletter.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1262" resname="&amp;vert; &lt;a class=&quot;hide_feedback  &lt;% if(!newsletter[&apos;feedback_enabled?&apos;]){ %&gt;active&lt;% } %&gt;&quot;&gt;Hide&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1262" resname="&amp;vert;&lt;a class=&quot;hide_feedback&lt;% if(!newsletter[&apos;feedback_enabled?&apos;]){ %&gt;active&lt;% } %&gt;&quot;&gt;Hide&lt;/a&gt;" restype="string" datatype="html">
         <source>&amp;vert; &lt;a class="hide_feedback  &lt;% if(!newsletter['feedback_enabled?']){ %&gt;active&lt;% } %&gt;"&gt;Hide&lt;/a&gt;</source>
         <target>&amp;vert; &lt;a class="hide_feedback  &lt;% if(!newsletter['feedback_enabled?']){ %&gt;active&lt;% } %&gt;"&gt;Ocultar&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1263" resname="Please share your feedback about my practice:          &lt;br&gt;          &lt;a class=&quot;doctor_name_link&quot; href=&quot;#feedback/&lt;%= App.user.get(&apos;person.profile_name&apos;) %&gt;&quot; target=&quot;_blank&quot;&gt;            www.healthtap.com/feedback/&lt;%= App.user.get(&apos;person.profile_name&apos;) %&gt;          &lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1263" resname="Please share your feedback about my practice:&lt;br&gt;&lt;a class=&quot;doctor_name_link&quot; href=&quot;#feedback/&lt;%= App.user.get(&apos;person.profile_name&apos;) %&gt;&quot; target=&quot;_blank&quot;&gt;www.healthtap.com/feedback/&lt;%= App.user.get(&apos;person.profile_name&apos;) %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Please share your feedback about my practice:
           &lt;br&gt;
           &lt;a class="doctor_name_link" href="#feedback/&lt;%= App.user.get('person.profile_name') %&gt;" target="_blank"&gt;
@@ -4668,7 +4668,7 @@
   </file>
   <file original="public/javascripts/templates/experts/patientUpload.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1265" resname="Sincerely,          &lt;br&gt;          Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;          &lt;br&gt;          &lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1265" resname="Sincerely,&lt;br&gt;Dr.&lt;%= App.user.get(&apos;person&apos;).name %&gt;&lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -4680,7 +4680,7 @@
           &lt;br&gt;
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" target="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1266" resname="Sincerely,          &lt;br&gt;          Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;          &lt;br&gt;          &lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1266" resname="Sincerely,&lt;br&gt;Dr.&lt;%= App.user.get(&apos;person&apos;).name %&gt;&lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -4692,7 +4692,7 @@
           &lt;br&gt;
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" target="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="2496" resname="I’m happy to share with you that I&apos;ve found a great new simple and free way to help you live a healthier happier life, and for us to stay connected between visits. Very soon, you will start receiving from me a weekly HealthTap newsletter filled with great pearls of wisdom and beautiful pictures that can help you keep healthy living top of mind.          &lt;br&gt;          &lt;br&gt;          The newsletter will come from my Virtual Practice on HealthTap - a free web and mobile service that allows you to ask health questions, receive daily health tips, and benefit from the world’s most trustworthy and useful health information written by yours truly and some of the best doctors in the US." restype="string" datatype="html">
+      <trans-unit id="2496" resname="I’m happy to share with you that I&apos;ve found a great new simple and free way to help you live a healthier happier life, and for us to stay connected between visits. Very soon, you will start receiving from me a weekly HealthTap newsletter filled with great pearls of wisdom and beautiful pictures that can help you keep healthy living top of mind.&lt;br&gt;&lt;br&gt;The newsletter will come from my Virtual Practice on HealthTap - a free web and mobile service that allows you to ask health questions, receive daily health tips, and benefit from the world’s most trustworthy and useful health information written by yours truly and some of the best doctors in the US." restype="string" datatype="html">
         <source>I’m happy to share with you that I've found a great new simple and free way to help you live a healthier happier life, and for us to stay connected between visits. Very soon, you will start receiving from me a weekly HealthTap newsletter filled with great pearls of wisdom and beautiful pictures that can help you keep healthy living top of mind.
           &lt;br&gt;
           &lt;br&gt;
@@ -4701,7 +4701,7 @@
           &lt;br&gt;
            El boletín vendrá de mi Consultorio Virtual en HealthTap – un servicio web y móvil gratuito que te permite hacer preguntas de salud, recibir tips diarios, y beneficiarte de la información más confiable y útil del mundo escrita por mí y algunos de los mejores doctores en EE.UU.</target>
       </trans-unit>
-      <trans-unit id="2497" resname="I&apos;ve found a great way for us to stay connected between visits.          &lt;br&gt;          &lt;br&gt;          HealthTap is a free web and mobile service that allows you to ask health questions, receive daily health tips, and browse helpful information.          &lt;br&gt;&lt;br&gt;          I encourage you sign up for free and connect with me on HealthTap today." restype="string" datatype="html">
+      <trans-unit id="2497" resname="I&apos;ve found a great way for us to stay connected between visits.&lt;br&gt;&lt;br&gt;HealthTap is a free web and mobile service that allows you to ask health questions, receive daily health tips, and browse helpful information.&lt;br&gt;&lt;br&gt;I encourage you sign up for free and connect with me on HealthTap today." restype="string" datatype="html">
         <source>I've found a great way for us to stay connected between visits.
           &lt;br&gt;
           &lt;br&gt;
@@ -4717,49 +4717,49 @@
   </file>
   <file original="public/javascripts/templates/experts/personality_popup.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1268" resname="Caring      &lt;a id=&quot;111058163&quot; topic=&quot;Caring&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1268" resname="Caring&lt;a id=&quot;111058163&quot; topic=&quot;Caring&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
         <source>Caring
       &lt;a id="111058163" topic="Caring" class="addKnownFor_popup"&gt;+Add&lt;/a&gt;</source>
         <target>Bondadoso
       &lt;a id="111058163" topic="Caring" class="addKnownFor_popup"&gt;+Añadir&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1269" resname="Knowledgeable      &lt;a id=&quot;111058164&quot; topic=&quot;Knowledgeable&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1269" resname="Knowledgeable&lt;a id=&quot;111058164&quot; topic=&quot;Knowledgeable&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
         <source>Knowledgeable
       &lt;a id="111058164" topic="Knowledgeable" class="addKnownFor_popup"&gt;+Add&lt;/a&gt;</source>
         <target>Erudito
       &lt;a id="111058164" topic="Knowledgeable" class="addKnownFor_popup"&gt;+Añadir&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1270" resname="Good Humored      &lt;a id=&quot;111058165&quot; topic=&quot;Good Humored&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1270" resname="Good Humored&lt;a id=&quot;111058165&quot; topic=&quot;Good Humored&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
         <source>Good Humored
       &lt;a id="111058165" topic="Good Humored" class="addKnownFor_popup"&gt;+Add&lt;/a&gt;</source>
         <target>Jovial
       &lt;a id="111058165" topic="Good Humored" class="addKnownFor_popup"&gt;+Añadir&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1271" resname="Dedicated      &lt;a id=&quot;111058166&quot; topic=&quot;Dedicated&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1271" resname="Dedicated&lt;a id=&quot;111058166&quot; topic=&quot;Dedicated&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
         <source>Dedicated
       &lt;a id="111058166" topic="Dedicated" class="addKnownFor_popup"&gt;+Add&lt;/a&gt;</source>
         <target>Dedicado
       &lt;a id="111058166" topic="Dedicated" class="addKnownFor_popup"&gt;+Añadir&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1272" resname="Calm      &lt;a id=&quot;111058167&quot; topic=&quot;Calm&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1272" resname="Calm&lt;a id=&quot;111058167&quot; topic=&quot;Calm&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
         <source>Calm
       &lt;a id="111058167" topic="Calm" class="addKnownFor_popup"&gt;+Add&lt;/a&gt;</source>
         <target>Tranquilo
       &lt;a id="111058167" topic="Calm" class="addKnownFor_popup"&gt;+Añadir&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1273" resname="Nurturing      &lt;a id=&quot;111058168&quot; topic=&quot;Nurturing&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1273" resname="Nurturing&lt;a id=&quot;111058168&quot; topic=&quot;Nurturing&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
         <source>Nurturing
       &lt;a id="111058168" topic="Nurturing" class="addKnownFor_popup"&gt;+Add&lt;/a&gt;</source>
         <target>Cariñoso
       &lt;a id="111058168" topic="Nurturing" class="addKnownFor_popup"&gt;+Añadir&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1274" resname="Flexible      &lt;a id=&quot;111058169&quot; topic=&quot;Flexible&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1274" resname="Flexible&lt;a id=&quot;111058169&quot; topic=&quot;Flexible&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
         <source>Flexible
       &lt;a id="111058169" topic="Flexible" class="addKnownFor_popup"&gt;+Add&lt;/a&gt;</source>
         <target>Flexible
       &lt;a id=”111058169" topic="Flexible" class="addKnownFor_popup"&gt;+Añadir&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1275" resname="Inspiring      &lt;a id=&quot;111058170&quot; topic=&quot;Inspiring&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1275" resname="Inspiring&lt;a id=&quot;111058170&quot; topic=&quot;Inspiring&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
         <source>Inspiring
       &lt;a id="111058170" topic="Inspiring" class="addKnownFor_popup"&gt;+Add&lt;/a&gt;</source>
         <target>Inspirador
@@ -4769,7 +4769,7 @@
   </file>
   <file original="public/javascripts/templates/experts/right_column/known_for_rankings.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1280" resname="Enhance your online reputation.    &lt;a style=&quot;display:block;margin:10px 0;&quot; href=&quot;#docscore/competitions/known_for&quot;&gt;See your standings &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1280" resname="Enhance your online reputation.&lt;a style=&quot;display:block;margin:10px 0;&quot; href=&quot;#docscore/competitions/known_for&quot;&gt;See your standings &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Enhance your online reputation.
     &lt;a style="display:block;margin:10px 0;" href="#docscore/competitions/known_for"&gt;See your standings &amp;raquo;&lt;/a&gt;</source>
         <target>Mejora tu reputación en línea.
@@ -4779,7 +4779,7 @@
   </file>
   <file original="public/javascripts/templates/experts/right_column/medical_school_rankings.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1281" resname="Join your alma mater in helping millions!    &lt;br&gt;    &lt;br&gt;    &lt;a class=&quot;see_full_standings&quot; href=&quot;#docscore/competitions/medical_school&quot;&gt;      See full standings &amp;raquo;    &lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1281" resname="Join your alma mater in helping millions!&lt;br&gt;&lt;br&gt;&lt;a class=&quot;see_full_standings&quot; href=&quot;#docscore/competitions/medical_school&quot;&gt;See full standings &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Join your alma mater in helping millions!
     &lt;br&gt;
     &lt;br&gt;
@@ -4797,13 +4797,13 @@
   </file>
   <file original="public/javascripts/templates/experts/settings/mobile.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1287" resname="Customize your own mobile app and stationary for your practice! &lt;br&gt;      &lt;a href=&quot;/#promote&quot;&gt;Discover more ways to extend your reach »&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1287" resname="Customize your own mobile app and stationary for your practice!&lt;br&gt;&lt;a href=&quot;/#promote&quot;&gt;Discover more ways to extend your reach »&lt;/a&gt;" restype="string" datatype="html">
         <source>Customize your own mobile app and stationary for your practice! &lt;br&gt;
       &lt;a href="/#promote"&gt;Discover more ways to extend your reach »&lt;/a&gt;</source>
         <target>¡Personaliza tu propia aplicación móvil y papelería para tu consultorio! &lt;br&gt;
       &lt;a href=”/#promote”&gt;Descubre más formas de extender tu alcance »&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="2498" resname="Once patients enter your code, they&apos;ll turn HealthTap&apos;s mobile app into a unique experience with your name, logo, office information and answers      prominently displayed.  Take a bold leap into the mobile market and give them your code today:" restype="string" datatype="html">
+      <trans-unit id="2498" resname="Once patients enter your code, they&apos;ll turn HealthTap&apos;s mobile app into a unique experience with your name, logo, office information and answers prominently displayed. Take a bold leap into the mobile market and give them your code today:" restype="string" datatype="html">
         <source>Once patients enter your code, they'll turn HealthTap's mobile app into a unique experience with your name, logo, office information and answers
       prominently displayed.  Take a bold leap into the mobile market and give them your code today:</source>
         <target>Una vez que pacientes ingresen tu código, convertirán la aplicación móvil de HealthTap en una experiencia única con tu nombre, logo, información de oficina y respuestas
@@ -4813,7 +4813,7 @@
   </file>
   <file original="public/javascripts/templates/feedItemTemplate.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1298" resname="Your feed is empty because we don&apos;t know what you&apos;re interested in. &lt;br&gt;        &lt;a class=&quot;feed_settings_alt_link&quot;&gt;Let us know&lt;/a&gt;        what you&apos;d like to see here." restype="string" datatype="html">
+      <trans-unit id="1298" resname="Your feed is empty because we don&apos;t know what you&apos;re interested in.&lt;br&gt;&lt;a class=&quot;feed_settings_alt_link&quot;&gt;Let us know&lt;/a&gt;what you&apos;d like to see here." restype="string" datatype="html">
         <source>Your feed is empty because we don't know what you're interested in. &lt;br&gt;
         &lt;a class="feed_settings_alt_link"&gt;Let us know&lt;/a&gt;
         what you'd like to see here.</source>
@@ -4821,7 +4821,7 @@
         &lt;a class=”feed_settings_alt_link”&gt;Haznos saber&lt;/a&gt;
         lo que te gustaría ver aquí.</target>
       </trans-unit>
-      <trans-unit id="1299" resname="agreed with        &lt;a class=&quot;actor_link&quot; href=&quot;#experts/&lt;%= user_answer.actor.id %&gt;-&lt;%= ((user_answer.actor.name || user_answer.actor.full_name || &apos;&apos;).toLowerCase().toDashedUrl()) %&gt;&quot;&gt;          &lt;%= user_answer.actor.name || user_answer.actor.full_name %&gt;&lt;/a&gt;&apos;s" restype="string" datatype="html">
+      <trans-unit id="1299" resname="agreed with&lt;a class=&quot;actor_link&quot; href=&quot;#experts/&lt;%= user_answer.actor.id %&gt;-&lt;%= ((user_answer.actor.name || user_answer.actor.full_name || &apos;&apos;).toLowerCase().toDashedUrl()) %&gt;&quot;&gt;&lt;%= user_answer.actor.name || user_answer.actor.full_name %&gt;&lt;/a&gt;&apos;s" restype="string" datatype="html">
         <source>agreed with
         &lt;a class="actor_link" href="#experts/&lt;%= user_answer.actor.id %&gt;-&lt;%= ((user_answer.actor.name || user_answer.actor.full_name || '').toLowerCase().toDashedUrl()) %&gt;"&gt;
           &lt;%= user_answer.actor.name || user_answer.actor.full_name %&gt;&lt;/a&gt;'s</source>
@@ -4833,7 +4833,7 @@
   </file>
   <file original="public/javascripts/templates/layers/IEDisclaimerPopup.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1304" resname="Or download our mobile apps for       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPhone&lt;/a&gt;,      &lt;a href=&quot;http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&quot;&gt;Android&lt;/a&gt;, and      &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPad&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1304" resname="Or download our mobile apps for&lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPhone&lt;/a&gt;,&lt;a href=&quot;http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&quot;&gt;Android&lt;/a&gt;, and&lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPad&lt;/a&gt;" restype="string" datatype="html">
         <source>Or download our mobile apps for
       &lt;a href="http://itunes.apple.com/us/app/id466079030"&gt;iPhone&lt;/a&gt;,
       &lt;a href="http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress"&gt;Android&lt;/a&gt;, and
@@ -4847,7 +4847,7 @@
   </file>
   <file original="public/javascripts/templates/layers/answerPanel_m2.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1310" resname="Create a Tip    &lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1310" resname="Create a Tip&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
         <source>Create a Tip
     &lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target>Crea un Tip
@@ -4857,7 +4857,7 @@
   </file>
   <file original="public/javascripts/templates/layers/askDoctorLoggedOut.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1317" resname="Ask doctors any question        &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. Anonymously. &lt;span style=&quot;font-weight: bold&quot;&gt;For Free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1317" resname="Ask doctors any question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. Anonymously.&lt;span style=&quot;font-weight: bold&quot;&gt;For Free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask doctors any question
         &lt;span class="sub_title"&gt;Anytime. Anywhere. Anonymously. &lt;span style="font-weight: bold"&gt;For Free.&lt;/span&gt;&lt;/span&gt;</source>
         <target>Hazle cualquier pregunta a doctores
@@ -4867,7 +4867,7 @@
   </file>
   <file original="public/javascripts/templates/layers/fast_signup.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1322" resname="Doctor                    &lt;span class=&quot;notes&quot;&gt;(valid U.S. medical professional license required)&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1322" resname="Doctor&lt;span class=&quot;notes&quot;&gt;(valid U.S. medical professional license required)&lt;/span&gt;" restype="string" datatype="html">
         <source>Doctor
                     &lt;span class="notes"&gt;(valid U.S. medical professional license required)&lt;/span&gt;</source>
         <target>Doctor
@@ -4877,7 +4877,7 @@
   </file>
   <file original="public/javascripts/templates/layers/mommadoc_tooltip.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1350" resname="Millions of pregnant women and moms are seeking the expert knowledge and compassion of doctors who      have first-hand experiences as mothers.&lt;br&gt;        &lt;a target=&quot;_blank&quot; class=&quot;mommaDocMeta_h&quot;&gt;Learn more ›&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1350" resname="Millions of pregnant women and moms are seeking the expert knowledge and compassion of doctors who have first-hand experiences as mothers.&lt;br&gt;&lt;a target=&quot;_blank&quot; class=&quot;mommaDocMeta_h&quot;&gt;Learn more ›&lt;/a&gt;" restype="string" datatype="html">
         <source>Millions of pregnant women and moms are seeking the expert knowledge and compassion of doctors who
       have first-hand experiences as mothers.&lt;br&gt;
         &lt;a target="_blank" class="mommaDocMeta_h"&gt;Learn more ›&lt;/a&gt;</source>
@@ -4889,7 +4889,7 @@
   </file>
   <file original="public/javascripts/templates/layers/nominate_colleagues.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1357" resname="Nominate trusted colleagues  &lt;br&gt;&lt;span class=&quot;layer_sub_title&quot;&gt;    Endorse their expertise as a top doctor&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1357" resname="Nominate trusted colleagues&lt;br&gt;&lt;span class=&quot;layer_sub_title&quot;&gt;Endorse their expertise as a top doctor&lt;/span&gt;" restype="string" datatype="html">
         <source>Nominate trusted colleagues
   &lt;br&gt;&lt;span class="layer_sub_title"&gt;
     Endorse their expertise as a top doctor&lt;/span&gt;</source>
@@ -4901,7 +4901,7 @@
   </file>
   <file original="public/javascripts/templates/layers/payment_settings.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1360" resname="Payoneer account              &lt;a href=&quot;&lt;%= payoneer_url %&gt;&quot;&gt;(make changes)&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1360" resname="Payoneer account&lt;a href=&quot;&lt;%= payoneer_url %&gt;&quot;&gt;(make changes)&lt;/a&gt;" restype="string" datatype="html">
         <source>Payoneer account
               &lt;a href="&lt;%= payoneer_url %&gt;"&gt;(make changes)&lt;/a&gt;</source>
         <target>Cuenta de Payoneer
@@ -4911,7 +4911,7 @@
   </file>
   <file original="public/javascripts/templates/layers/points.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1361" resname="Your DocScore is a reflection of the quality and helpfulness of your answers, and your level of engagement on HealthTap.&lt;br&gt;                &lt;a class=&quot;scroll-to&quot; data-target=&quot;.pointsDetails&quot;&gt;Discover ways to improve your DocScore »&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1361" resname="Your DocScore is a reflection of the quality and helpfulness of your answers, and your level of engagement on HealthTap.&lt;br&gt;&lt;a class=&quot;scroll-to&quot; data-target=&quot;.pointsDetails&quot;&gt;Discover ways to improve your DocScore »&lt;/a&gt;" restype="string" datatype="html">
         <source>Your DocScore is a reflection of the quality and helpfulness of your answers, and your level of engagement on HealthTap.&lt;br&gt;
                 &lt;a class="scroll-to" data-target=".pointsDetails"&gt;Discover ways to improve your DocScore »&lt;/a&gt;</source>
         <target>Tu DocScore es un reflejo de la calidad y utilidad de tus respuestas, y tu nivel de participación en HealthTap. &lt;br&gt;
@@ -4921,7 +4921,7 @@
   </file>
   <file original="public/javascripts/templates/layers/sign_up_or_join.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1367" resname="By signing up, you agree to our                &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms&quot; target=&quot;_blank&quot;&gt;Terms of Use&lt;/a&gt;                and                &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing&quot; target=&quot;_blank&quot;&gt;Privacy Policy&lt;/a&gt;,                and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
+      <trans-unit id="1367" resname="By signing up, you agree to our&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms&quot; target=&quot;_blank&quot;&gt;Terms of Use&lt;/a&gt;and&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing&quot; target=&quot;_blank&quot;&gt;Privacy Policy&lt;/a&gt;, and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
         <source>By signing up, you agree to our
                 &lt;a class="childBrowser_link" href="/pages/terms" target="_blank"&gt;Terms of Use&lt;/a&gt;
                 and
@@ -4937,7 +4937,7 @@
   </file>
   <file original="public/javascripts/templates/layers/sign_up_or_join_mobile.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1370" resname="&amp;mdash; or &amp;mdash;            &lt;a class=&quot;btn blue&quot; href=&quot;/login&quot;&gt;                Log in            &lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1370" resname="&amp;mdash; or &amp;mdash;&lt;a class=&quot;btn blue&quot; href=&quot;/login&quot;&gt;Log in&lt;/a&gt;" restype="string" datatype="html">
         <source>&amp;mdash; or &amp;mdash;
             &lt;a class="btn blue" href="/login"&gt;
                 Log in
@@ -4951,7 +4951,7 @@
   </file>
   <file original="public/javascripts/templates/pages/apps_badge_wizard.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1373" resname="Increase downloads by showcasing the number of doctors who recommend &lt;span class=&quot;wizard_app_name&quot;&gt;&lt;/span&gt;. Install this widget onto your website or blog in minutes and start highlighting your doctor seal of approval.    &lt;br&gt;&lt;br&gt;    You can also update your App Store description with the same information (just remember to provide attribution to HealthTap)." restype="string" datatype="html">
+      <trans-unit id="1373" resname="Increase downloads by showcasing the number of doctors who recommend&lt;span class=&quot;wizard_app_name&quot;&gt;&lt;/span&gt;. Install this widget onto your website or blog in minutes and start highlighting your doctor seal of approval.&lt;br&gt;&lt;br&gt;You can also update your App Store description with the same information (just remember to provide attribution to HealthTap)." restype="string" datatype="html">
         <source>Increase downloads by showcasing the number of doctors who recommend &lt;span class="wizard_app_name"&gt;&lt;/span&gt;. Install this widget onto your website or blog in minutes and start highlighting your doctor seal of approval.
     &lt;br&gt;&lt;br&gt;
     You can also update your App Store description with the same information (just remember to provide attribution to HealthTap).</source>
@@ -4963,7 +4963,7 @@
   </file>
   <file original="public/javascripts/templates/people/accept_invitation.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1383" resname="Already a member?            &lt;a href=&quot;#login&quot;&gt;Log in&lt;/a&gt;            &lt;br&gt;            &lt;br&gt;            By signing up, you agree to our            &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Terms of Use&lt;/a&gt;            and            &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;,            and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
+      <trans-unit id="1383" resname="Already a member?&lt;a href=&quot;#login&quot;&gt;Log in&lt;/a&gt;&lt;br&gt;&lt;br&gt;By signing up, you agree to our&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Terms of Use&lt;/a&gt;and&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;, and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
         <source>Already a member?
             &lt;a href="#login"&gt;Log in&lt;/a&gt;
             &lt;br&gt;
@@ -4986,7 +4986,7 @@
   </file>
   <file original="public/javascripts/templates/people/ask_a_question.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1385" resname="Donate to charity and we&apos;ll give you 50 extra characters to ask your question! Your proceeds go to one of many charities HealthTap supports, including:    &lt;a href=&quot;http://www.operationsmile.org&quot; target=&quot;_blank&quot;&gt;Operation Smile&lt;/a&gt;,    &lt;a href=&quot;http://www.doctorswithoutborders.org&quot; target=&quot;_blank&quot;&gt;Doctors Without Borders&lt;/a&gt;,    &lt;a href=&quot;http://www.redcross.org&quot; target=&quot;_blank&quot;&gt;American Red Cross&lt;/a&gt;,    &lt;a href=&quot;http://ww5.komen.org&quot; target=&quot;_blank&quot;&gt;Susan G. Komen for the Cure&lt;/a&gt;,    &lt;a href=&quot;http://www.directrelief.org&quot; target=&quot;_blank&quot;&gt;Direct Relief International&lt;/a&gt;,    &lt;a href=&quot;http://www.amref.org&quot; target=&quot;_blank&quot;&gt;African Medical &amp; Research Foundation (AMREF)&lt;/a&gt;,    &lt;a href=&quot;http://www.againstmalaria.com&quot; target=&quot;_blank&quot;&gt;Against Malaria Foundation&lt;/a&gt;,    &lt;a href=&quot;http://www.nursefamilypartnership.org&quot; target=&quot;_blank&quot;&gt;Nurse Family Partnership&lt;/a&gt;,    &lt;a href=&quot;http://www.nyayahealth.org&quot; target=&quot;_blank&quot;&gt;Naya Health&lt;/a&gt;,    &lt;a href=&quot;http://www3.imperial.ac.uk/schisto&quot; target=&quot;_blank&quot;&gt;Schistosomiasis Control Initiative (SCI)&lt;/a&gt;,    &lt;a href=&quot;http://www.map.org&quot; target=&quot;_blank&quot;&gt;MAP International&lt;/a&gt;, or    &lt;a href=&quot;http://www.gpfd.org&quot; target=&quot;_blank&quot;&gt;Global Partners for Development&lt;/a&gt;." restype="string" datatype="html">
+      <trans-unit id="1385" resname="Donate to charity and we&apos;ll give you 50 extra characters to ask your question! Your proceeds go to one of many charities HealthTap supports, including:&lt;a href=&quot;http://www.operationsmile.org&quot; target=&quot;_blank&quot;&gt;Operation Smile&lt;/a&gt;,&lt;a href=&quot;http://www.doctorswithoutborders.org&quot; target=&quot;_blank&quot;&gt;Doctors Without Borders&lt;/a&gt;,&lt;a href=&quot;http://www.redcross.org&quot; target=&quot;_blank&quot;&gt;American Red Cross&lt;/a&gt;,&lt;a href=&quot;http://ww5.komen.org&quot; target=&quot;_blank&quot;&gt;Susan G. Komen for the Cure&lt;/a&gt;,&lt;a href=&quot;http://www.directrelief.org&quot; target=&quot;_blank&quot;&gt;Direct Relief International&lt;/a&gt;,&lt;a href=&quot;http://www.amref.org&quot; target=&quot;_blank&quot;&gt;African Medical &amp; Research Foundation (AMREF)&lt;/a&gt;,&lt;a href=&quot;http://www.againstmalaria.com&quot; target=&quot;_blank&quot;&gt;Against Malaria Foundation&lt;/a&gt;,&lt;a href=&quot;http://www.nursefamilypartnership.org&quot; target=&quot;_blank&quot;&gt;Nurse Family Partnership&lt;/a&gt;,&lt;a href=&quot;http://www.nyayahealth.org&quot; target=&quot;_blank&quot;&gt;Naya Health&lt;/a&gt;,&lt;a href=&quot;http://www3.imperial.ac.uk/schisto&quot; target=&quot;_blank&quot;&gt;Schistosomiasis Control Initiative (SCI)&lt;/a&gt;,&lt;a href=&quot;http://www.map.org&quot; target=&quot;_blank&quot;&gt;MAP International&lt;/a&gt;, or&lt;a href=&quot;http://www.gpfd.org&quot; target=&quot;_blank&quot;&gt;Global Partners for Development&lt;/a&gt;." restype="string" datatype="html">
         <source>Donate to charity and we'll give you 50 extra characters to ask your question! Your proceeds go to one of many charities HealthTap supports, including:
     &lt;a href="http://www.operationsmile.org" target="_blank"&gt;Operation Smile&lt;/a&gt;,
     &lt;a href="http://www.doctorswithoutborders.org" target="_blank"&gt;Doctors Without Borders&lt;/a&gt;,
@@ -5014,7 +5014,7 @@
     &lt;a href="http://www.map.org" target="_blank"&gt;MAP International&lt;/a&gt;, or
     &lt;a href="http://www.gpfd.org" target="_blank"&gt;Global Partners for Development&lt;/a&gt;.</target>
       </trans-unit>
-      <trans-unit id="1386" resname="If you donate to one of the following charities, we will prioritize your question over others when sending them to our best doctors! Your proceeds go to one of the many charities HealthTap supports, including:    &lt;a href=&quot;http://www.operationsmile.org&quot; target=&quot;_blank&quot;&gt;Operation Smile&lt;/a&gt;,    &lt;a href=&quot;http://www.doctorswithoutborders.org&quot; target=&quot;_blank&quot;&gt;Doctors Without Borders&lt;/a&gt;,    &lt;a href=&quot;http://www.redcross.org&quot; target=&quot;_blank&quot;&gt;American Red Cross&lt;/a&gt;,    &lt;a href=&quot;http://ww5.komen.org&quot; target=&quot;_blank&quot;&gt;Susan G. Komen for the Cure&lt;/a&gt;,    &lt;a href=&quot;http://www.directrelief.org&quot; target=&quot;_blank&quot;&gt;Direct Relief International&lt;/a&gt;,    &lt;a href=&quot;http://www.amref.org&quot; target=&quot;_blank&quot;&gt;African Medical &amp; Research Foundation (AMREF)&lt;/a&gt;,    &lt;a href=&quot;http://www.againstmalaria.com&quot; target=&quot;_blank&quot;&gt;Against Malaria Foundation&lt;/a&gt;,    &lt;a href=&quot;http://www.nursefamilypartnership.org&quot; target=&quot;_blank&quot;&gt;Nurse Family Partnership&lt;/a&gt;,    &lt;a href=&quot;http://www.nyayahealth.org&quot; target=&quot;_blank&quot;&gt;Naya Health&lt;/a&gt;,    &lt;a href=&quot;http://www3.imperial.ac.uk/schisto&quot; target=&quot;_blank&quot;&gt;Schistosomiasis Control Initiative (SCI)&lt;/a&gt;,    &lt;a href=&quot;http://www.map.org&quot; target=&quot;_blank&quot;&gt;MAP International&lt;/a&gt;, or    &lt;a href=&quot;http://www.gpfd.org&quot; target=&quot;_blank&quot;&gt;Global Partners for Development&lt;/a&gt;." restype="string" datatype="html">
+      <trans-unit id="1386" resname="If you donate to one of the following charities, we will prioritize your question over others when sending them to our best doctors! Your proceeds go to one of the many charities HealthTap supports, including:&lt;a href=&quot;http://www.operationsmile.org&quot; target=&quot;_blank&quot;&gt;Operation Smile&lt;/a&gt;,&lt;a href=&quot;http://www.doctorswithoutborders.org&quot; target=&quot;_blank&quot;&gt;Doctors Without Borders&lt;/a&gt;,&lt;a href=&quot;http://www.redcross.org&quot; target=&quot;_blank&quot;&gt;American Red Cross&lt;/a&gt;,&lt;a href=&quot;http://ww5.komen.org&quot; target=&quot;_blank&quot;&gt;Susan G. Komen for the Cure&lt;/a&gt;,&lt;a href=&quot;http://www.directrelief.org&quot; target=&quot;_blank&quot;&gt;Direct Relief International&lt;/a&gt;,&lt;a href=&quot;http://www.amref.org&quot; target=&quot;_blank&quot;&gt;African Medical &amp; Research Foundation (AMREF)&lt;/a&gt;,&lt;a href=&quot;http://www.againstmalaria.com&quot; target=&quot;_blank&quot;&gt;Against Malaria Foundation&lt;/a&gt;,&lt;a href=&quot;http://www.nursefamilypartnership.org&quot; target=&quot;_blank&quot;&gt;Nurse Family Partnership&lt;/a&gt;,&lt;a href=&quot;http://www.nyayahealth.org&quot; target=&quot;_blank&quot;&gt;Naya Health&lt;/a&gt;,&lt;a href=&quot;http://www3.imperial.ac.uk/schisto&quot; target=&quot;_blank&quot;&gt;Schistosomiasis Control Initiative (SCI)&lt;/a&gt;,&lt;a href=&quot;http://www.map.org&quot; target=&quot;_blank&quot;&gt;MAP International&lt;/a&gt;, or&lt;a href=&quot;http://www.gpfd.org&quot; target=&quot;_blank&quot;&gt;Global Partners for Development&lt;/a&gt;." restype="string" datatype="html">
         <source>If you donate to one of the following charities, we will prioritize your question over others when sending them to our best doctors! Your proceeds go to one of the many charities HealthTap supports, including:
     &lt;a href="http://www.operationsmile.org" target="_blank"&gt;Operation Smile&lt;/a&gt;,
     &lt;a href="http://www.doctorswithoutborders.org" target="_blank"&gt;Doctors Without Borders&lt;/a&gt;,
@@ -5042,7 +5042,7 @@
     &lt;a href="http://www.map.org" target="_blank"&gt;MAP International&lt;/a&gt;, or
     &lt;a href="http://www.gpfd.org" target="_blank"&gt;Global Partners for Development&lt;/a&gt;.</target>
       </trans-unit>
-      <trans-unit id="1387" resname="Your donation allows you to send longer questions or get faster answers! Your proceeds go to one of the many charities HealthTap supports, including:    &lt;a href=&quot;http://www.operationsmile.org&quot; target=&quot;_blank&quot;&gt;Operation Smile&lt;/a&gt;,    &lt;a href=&quot;http://www.doctorswithoutborders.org&quot; target=&quot;_blank&quot;&gt;Doctors Without Borders&lt;/a&gt;,    &lt;a href=&quot;http://www.redcross.org&quot; target=&quot;_blank&quot;&gt;American Red Cross&lt;/a&gt;,    &lt;a href=&quot;http://ww5.komen.org&quot; target=&quot;_blank&quot;&gt;Susan G. Komen for the Cure&lt;/a&gt;,    &lt;a href=&quot;http://www.directrelief.org&quot; target=&quot;_blank&quot;&gt;Direct Relief International&lt;/a&gt;,    &lt;a href=&quot;http://www.amref.org&quot; target=&quot;_blank&quot;&gt;African Medical &amp; Research Foundation (AMREF)&lt;/a&gt;,    &lt;a href=&quot;http://www.againstmalaria.com&quot; target=&quot;_blank&quot;&gt;Against Malaria Foundation&lt;/a&gt;,    &lt;a href=&quot;http://www.nursefamilypartnership.org&quot; target=&quot;_blank&quot;&gt;Nurse Family Partnership&lt;/a&gt;,    &lt;a href=&quot;http://www.nyayahealth.org&quot; target=&quot;_blank&quot;&gt;Naya Health&lt;/a&gt;,    &lt;a href=&quot;http://www3.imperial.ac.uk/schisto&quot; target=&quot;_blank&quot;&gt;Schistosomiasis Control Initiative (SCI)&lt;/a&gt;,    &lt;a href=&quot;http://www.map.org&quot; target=&quot;_blank&quot;&gt;MAP International&lt;/a&gt;, or    &lt;a href=&quot;http://www.gpfd.org&quot; target=&quot;_blank&quot;&gt;Global Partners for Development&lt;/a&gt;." restype="string" datatype="html">
+      <trans-unit id="1387" resname="Your donation allows you to send longer questions or get faster answers! Your proceeds go to one of the many charities HealthTap supports, including:&lt;a href=&quot;http://www.operationsmile.org&quot; target=&quot;_blank&quot;&gt;Operation Smile&lt;/a&gt;,&lt;a href=&quot;http://www.doctorswithoutborders.org&quot; target=&quot;_blank&quot;&gt;Doctors Without Borders&lt;/a&gt;,&lt;a href=&quot;http://www.redcross.org&quot; target=&quot;_blank&quot;&gt;American Red Cross&lt;/a&gt;,&lt;a href=&quot;http://ww5.komen.org&quot; target=&quot;_blank&quot;&gt;Susan G. Komen for the Cure&lt;/a&gt;,&lt;a href=&quot;http://www.directrelief.org&quot; target=&quot;_blank&quot;&gt;Direct Relief International&lt;/a&gt;,&lt;a href=&quot;http://www.amref.org&quot; target=&quot;_blank&quot;&gt;African Medical &amp; Research Foundation (AMREF)&lt;/a&gt;,&lt;a href=&quot;http://www.againstmalaria.com&quot; target=&quot;_blank&quot;&gt;Against Malaria Foundation&lt;/a&gt;,&lt;a href=&quot;http://www.nursefamilypartnership.org&quot; target=&quot;_blank&quot;&gt;Nurse Family Partnership&lt;/a&gt;,&lt;a href=&quot;http://www.nyayahealth.org&quot; target=&quot;_blank&quot;&gt;Naya Health&lt;/a&gt;,&lt;a href=&quot;http://www3.imperial.ac.uk/schisto&quot; target=&quot;_blank&quot;&gt;Schistosomiasis Control Initiative (SCI)&lt;/a&gt;,&lt;a href=&quot;http://www.map.org&quot; target=&quot;_blank&quot;&gt;MAP International&lt;/a&gt;, or&lt;a href=&quot;http://www.gpfd.org&quot; target=&quot;_blank&quot;&gt;Global Partners for Development&lt;/a&gt;." restype="string" datatype="html">
         <source>Your donation allows you to send longer questions or get faster answers! Your proceeds go to one of the many charities HealthTap supports, including:
     &lt;a href="http://www.operationsmile.org" target="_blank"&gt;Operation Smile&lt;/a&gt;,
     &lt;a href="http://www.doctorswithoutborders.org" target="_blank"&gt;Doctors Without Borders&lt;/a&gt;,
@@ -5074,19 +5074,19 @@
   </file>
   <file original="public/javascripts/templates/people/expert_claim_sign_up.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1389" resname="DATE CERTIFICATION EXPIRES                        &lt;span class=&quot;optional&quot;&gt;(OPTIONAL)&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1389" resname="DATE CERTIFICATION EXPIRES&lt;span class=&quot;optional&quot;&gt;(OPTIONAL)&lt;/span&gt;" restype="string" datatype="html">
         <source>DATE CERTIFICATION EXPIRES
                         &lt;span class="optional"&gt;(OPTIONAL)&lt;/span&gt;</source>
         <target>FECHA EN QUE VENCE LA CERTIFICACIÓN
                         &lt;span class="optional"&gt;(OPCIONAL)&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1390" resname="DATE CERTIFICATION EXPIRES                      &lt;span class=&quot;optional&quot;&gt;(OPTIONAL)&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1390" resname="DATE CERTIFICATION EXPIRES&lt;span class=&quot;optional&quot;&gt;(OPTIONAL)&lt;/span&gt;" restype="string" datatype="html">
         <source>DATE CERTIFICATION EXPIRES
                       &lt;span class="optional"&gt;(OPTIONAL)&lt;/span&gt;</source>
         <target>FECHA EN QUE VENCE LA CERTIFICACIÓN
                         &lt;span class="optional"&gt;(OPCIONAL)&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1391" resname="HealthTap is a free service. If you don&apos;t already have an expert account, you&apos;ll receive one when your profile is updated. Log in to edit your profile at any time. By signing up, you agree to our            &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Terms of Use&lt;/a&gt;            and            &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;.            If you have any questions, email or call us at            &lt;a href=&quot;mailto:expertsupport@healthtap.com&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;            or (650) 644-1833." restype="string" datatype="html">
+      <trans-unit id="1391" resname="HealthTap is a free service. If you don&apos;t already have an expert account, you&apos;ll receive one when your profile is updated. Log in to edit your profile at any time. By signing up, you agree to our&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Terms of Use&lt;/a&gt;and&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;. If you have any questions, email or call us at&lt;a href=&quot;mailto:expertsupport@healthtap.com&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;or (650) 644-1833." restype="string" datatype="html">
         <source>HealthTap is a free service. If you don't already have an expert account, you'll receive one when your profile is updated. Log in to edit your profile at any time. By signing up, you agree to our
             &lt;a class="childBrowser_link" href="/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;Terms of Use&lt;/a&gt;
             and
@@ -5106,7 +5106,7 @@
   </file>
   <file original="public/javascripts/templates/people/fileUploadItem.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1395" resname="These files will always be private and secure.  We take this stuff very, very seriously. &lt;br&gt;&lt;a class=&quot;extLink&quot; href=&quot;#pages/privacy_sharing&quot;&gt;See our privacy statement&lt;/a&gt;." restype="string" datatype="html">
+      <trans-unit id="1395" resname="These files will always be private and secure. We take this stuff very, very seriously.&lt;br&gt;&lt;a class=&quot;extLink&quot; href=&quot;#pages/privacy_sharing&quot;&gt;See our privacy statement&lt;/a&gt;." restype="string" datatype="html">
         <source>These files will always be private and secure.  We take this stuff very, very seriously. &lt;br&gt;&lt;a class="extLink" href="#pages/privacy_sharing"&gt;See our privacy statement&lt;/a&gt;.</source>
         <target>Estos archivos siempre serán privados y seguros. Nos tomamos este asunto muy, muy seriamente. &lt;br&gt;&lt;a class="extLink" href="#pages/privacy_sharing"&gt;Ve nuestro aviso de privacidad&lt;/a&gt;.</target>
       </trans-unit>
@@ -5114,7 +5114,7 @@
   </file>
   <file original="public/javascripts/templates/people/forgotPW.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1396" resname="Need help? Email us at&lt;br&gt;      &lt;a href=&quot;mailto:support@healthtap.com&quot; class=&quot;forgot_password&quot;&gt;support@healthtap.com&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1396" resname="Need help? Email us at&lt;br&gt;&lt;a href=&quot;mailto:support@healthtap.com&quot; class=&quot;forgot_password&quot;&gt;support@healthtap.com&lt;/a&gt;" restype="string" datatype="html">
         <source>Need help? Email us at&lt;br&gt;
       &lt;a href="mailto:support@healthtap.com" class="forgot_password"&gt;support@healthtap.com&lt;/a&gt;</source>
         <target>¿Necesitas ayuda? Escríbenos a
@@ -5124,7 +5124,7 @@
   </file>
   <file original="public/javascripts/templates/people/ipad_sign_up.old.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1399" resname="By signing up, you agree to our            &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Terms of Use&lt;/a&gt;            and            &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;,            and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
+      <trans-unit id="1399" resname="By signing up, you agree to our&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Terms of Use&lt;/a&gt;and&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;, and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
         <source>By signing up, you agree to our
             &lt;a class="childBrowser_link" href="/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;Terms of Use&lt;/a&gt;
             and
@@ -5140,7 +5140,7 @@
   </file>
   <file original="public/javascripts/templates/people/ipad_sign_up.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1400" resname="Already a member?                &lt;a href=&quot;#login&quot;&gt;Log in&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1400" resname="Already a member?&lt;a href=&quot;#login&quot;&gt;Log in&lt;/a&gt;" restype="string" datatype="html">
         <source>Already a member?
                 &lt;a href="#login"&gt;Log in&lt;/a&gt;</source>
         <target>¿Ya eres un miembro?
@@ -5150,7 +5150,7 @@
   </file>
   <file original="public/javascripts/templates/people/nux/first_step.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1403" resname="Put a beautiful face to that name.      &lt;span class=&quot;make_it_easier_to_remember&quot;&gt; This will make it easier for doctors to remember you if you choose to send them a message.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1403" resname="Put a beautiful face to that name.&lt;span class=&quot;make_it_easier_to_remember&quot;&gt;This will make it easier for doctors to remember you if you choose to send them a message.&lt;/span&gt;" restype="string" datatype="html">
         <source>Put a beautiful face to that name.
       &lt;span class="make_it_easier_to_remember"&gt; This will make it easier for doctors to remember you if you choose to send them a message.&lt;/span&gt;</source>
         <target>Pon una hermosa cara a ese nombre.
@@ -5160,7 +5160,7 @@
   </file>
   <file original="public/javascripts/templates/people/quick_signup.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1409" resname="By signing up, you agree to our             &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms&quot;&gt;Terms of Use&lt;/a&gt;             and             &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing&quot;&gt;Privacy Policy&lt;/a&gt;,             and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
+      <trans-unit id="1409" resname="By signing up, you agree to our&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms&quot;&gt;Terms of Use&lt;/a&gt;and&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing&quot;&gt;Privacy Policy&lt;/a&gt;, and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
         <source>By signing up, you agree to our             &lt;a class="childBrowser_link" href="/pages/terms"&gt;Terms of Use&lt;/a&gt;             and             &lt;a class="childBrowser_link" href="/pages/privacy_sharing"&gt;Privacy Policy&lt;/a&gt;,             and you confirm that you're 16 years old or over.</source>
         <target>Al registrarte, aceptas nuestros             &lt;a class="childBrowser_link" href="/pages/terms"&gt;Términos de Uso&lt;/a&gt;             y             &lt;a class="childBrowser_link" href="/pages/privacy_sharing"&gt;Política de Privacidad&lt;/a&gt;,             y confirmas que tienes 16 años de edad o más.</target>
       </trans-unit>
@@ -5168,7 +5168,7 @@
   </file>
   <file original="public/javascripts/templates/people/resetPW.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1410" resname="Need help? Email us at&lt;br&gt;                &lt;a href=&quot;mailto:support@healthtap.com&quot; class=&quot;forgot_password&quot;&gt;support@healthtap.com&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1410" resname="Need help? Email us at&lt;br&gt;&lt;a href=&quot;mailto:support@healthtap.com&quot; class=&quot;forgot_password&quot;&gt;support@healthtap.com&lt;/a&gt;" restype="string" datatype="html">
         <source>Need help? Email us at&lt;br&gt;
                 &lt;a href="mailto:support@healthtap.com" class="forgot_password"&gt;support@healthtap.com&lt;/a&gt;</source>
         <target>¿Necesitas ayuda? Escríbenos a&lt;br&gt;
@@ -5178,7 +5178,7 @@
   </file>
   <file original="public/javascripts/templates/people/settings.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1412" resname="We&apos;d love for you to stay. If you&apos;re sure you&apos;d like to leave, you can disable your account by clicking below.  &lt;br&gt;  &lt;a class=&quot;disable_account&quot;&gt;Disable account&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1412" resname="We&apos;d love for you to stay. If you&apos;re sure you&apos;d like to leave, you can disable your account by clicking below.&lt;br&gt;&lt;a class=&quot;disable_account&quot;&gt;Disable account&lt;/a&gt;" restype="string" datatype="html">
         <source>We'd love for you to stay. If you're sure you'd like to leave, you can disable your account by clicking below.
   &lt;br&gt;
   &lt;a class="disable_account"&gt;Disable account&lt;/a&gt;</source>
@@ -5190,13 +5190,13 @@
   </file>
   <file original="public/javascripts/templates/people/sign_up.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1414" resname="Already a member?                  &lt;a href=&quot;#login&quot;&gt;Log in &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1414" resname="Already a member?&lt;a href=&quot;#login&quot;&gt;Log in &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Already a member?
                   &lt;a href="#login"&gt;Log in &amp;raquo;&lt;/a&gt;</source>
         <target>¿Ya eres un miembro?
                   &lt;&lt;a href="#login"&gt; Iniciar sesión &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1415" resname="By signing up, you agree to our              &lt;a class=&quot;childBrowser_link&quot; target=&quot;_blank&quot; href=&quot;/pages/terms&quot;&gt;Terms of Use&lt;/a&gt;              and              &lt;a class=&quot;childBrowser_link&quot; target=&quot;_blank&quot; href=&quot;/pages/privacy_sharing&quot;&gt;Privacy Policy&lt;/a&gt;,              and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
+      <trans-unit id="1415" resname="By signing up, you agree to our&lt;a class=&quot;childBrowser_link&quot; target=&quot;_blank&quot; href=&quot;/pages/terms&quot;&gt;Terms of Use&lt;/a&gt;and&lt;a class=&quot;childBrowser_link&quot; target=&quot;_blank&quot; href=&quot;/pages/privacy_sharing&quot;&gt;Privacy Policy&lt;/a&gt;, and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
         <source>By signing up, you agree to our
               &lt;a class="childBrowser_link" target="_blank" href="/pages/terms"&gt;Terms of Use&lt;/a&gt;
               and
@@ -5212,7 +5212,7 @@
   </file>
   <file original="public/javascripts/templates/people/tips.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1417" resname="Featured    &lt;span class=&quot;new&quot;&gt;New!&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1417" resname="Featured&lt;span class=&quot;new&quot;&gt;New!&lt;/span&gt;" restype="string" datatype="html">
         <source>Featured
     &lt;span class="new"&gt;New!&lt;/span&gt;</source>
         <target>Destacado
@@ -5222,7 +5222,7 @@
   </file>
   <file original="public/javascripts/templates/profile/gameScorePage.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1420" resname="&quot;HealthTap offers a very sociable and time-efficient way of getting in touch with a treasure trove of physicians.  Try it!&quot;" restype="string" datatype="html">
+      <trans-unit id="1420" resname="&quot;HealthTap offers a very sociable and time-efficient way of getting in touch with a treasure trove of physicians. Try it!&quot;" restype="string" datatype="html">
         <source>"HealthTap offers a very sociable and time-efficient way of getting in touch with a treasure trove of physicians.  Try it!"</source>
         <target>"HealthTap ofrece una forma muy sociable y eficiente de ponerse en contacto con un gran tesoro de médicos.  ¡Pruébalo!"</target>
       </trans-unit>
@@ -5706,12 +5706,12 @@
   </file>
   <file original="public/feelGood/templates/_concierge_update_insurance_profile.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2484" resname="Default to accept insurance(we collect a lesser amount from your patients, and if you do not participate in their insurance plan, you may be paid less)." restype="string" datatype="html">
+      <trans-unit id="2484" resname="Default to accept insurance (we collect a lesser amount from your patients, and if you do not participate in their insurance plan, you may be paid less)." restype="string" datatype="html">
         <source>Default to accept insurance
 (we collect a lesser amount from your patients, and if you do not participate in their insurance plan, you may be paid less).</source>
         <target>Aceptar seguro por defecto (recolectamos una menor cantidad de tus pacientes, y si no participan en su plan de seguro, puede que se te pague menos).</target>
       </trans-unit>
-      <trans-unit id="2485" resname="Default to not accept insurance(if you do participate in their insurance plan your patient will be charged a higher amount up front, and may be refunded after the billing completes)." restype="string" datatype="html">
+      <trans-unit id="2485" resname="Default to not accept insurance (if you do participate in their insurance plan your patient will be charged a higher amount up front, and may be refunded after the billing completes)." restype="string" datatype="html">
         <source>Default to not accept insurance
 (if you do participate in their insurance plan your patient will be charged a higher amount up front, and may be refunded after the billing completes).</source>
         <target>No aceptar seguro por defecto (si participas en su plan de seguro se le cobrará una cantidad más grande a tu paciente al principio, y puede ser reembolsada cuando la cobranza se complete).</target>
@@ -5720,7 +5720,7 @@
   </file>
   <file original="public/feelGood/templates/about_popup.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2486" resname="HealthTap has reinvented the way people all over the world take care of their health and well-being, connecting millions everywhere with the most trusted health information and doctors.   &lt;br&gt;  &lt;br&gt;  &lt;b&gt;Why choose us&lt;/b&gt;  &lt;br&gt;  With over 2.6 billion answers served from more than 100 specialties, our experts are able to provide the best medical advice for your question. We have the largest doctor network to provide answers, personalized advice, and care for any question.   &lt;br&gt;  &lt;br&gt;  &lt;b&gt;About our doctors&lt;/b&gt;  &lt;br&gt;  To become a member of HealthTap’s Medical Expert Network, doctors have to be U.S. board certified, pass a stringent qualification process, and undergo training on how to give helpful advice using our technology platform. We closely monitor user feedback to ensure that our doctors are providing the highest possible care." restype="string" datatype="html">
+      <trans-unit id="2486" resname="HealthTap has reinvented the way people all over the world take care of their health and well-being, connecting millions everywhere with the most trusted health information and doctors.&lt;br&gt;&lt;br&gt;&lt;b&gt;Why choose us&lt;/b&gt;&lt;br&gt;With over 2.6 billion answers served from more than 100 specialties, our experts are able to provide the best medical advice for your question. We have the largest doctor network to provide answers, personalized advice, and care for any question.&lt;br&gt;&lt;br&gt;&lt;b&gt;About our doctors&lt;/b&gt;&lt;br&gt;To become a member of HealthTap’s Medical Expert Network, doctors have to be U.S. board certified, pass a stringent qualification process, and undergo training on how to give helpful advice using our technology platform. We closely monitor user feedback to ensure that our doctors are providing the highest possible care." restype="string" datatype="html">
         <source>HealthTap has reinvented the way people all over the world take care of their health and well-being, connecting millions everywhere with the most trusted health information and doctors.
   &lt;br&gt;
   &lt;br&gt;
@@ -5747,7 +5747,7 @@
   </file>
   <file original="public/feelGood/templates/apprx_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2487" resname="Each year HealthTap&apos;s doctors recommend the best Health &amp; Medical apps across 30 categories.     Vote for your favorite apps and boost their visibility to doctors to get more recommendations from them,    which help customers find the best app for their health!" restype="string" datatype="html">
+      <trans-unit id="2487" resname="Each year HealthTap&apos;s doctors recommend the best Health &amp; Medical apps across 30 categories. Vote for your favorite apps and boost their visibility to doctors to get more recommendations from them, which help customers find the best app for their health!" restype="string" datatype="html">
         <source>Each year HealthTap's doctors recommend the best Health &amp; Medical apps across 30 categories.
     Vote for your favorite apps and boost their visibility to doctors to get more recommendations from them,
     which help customers find the best app for their health!</source>
@@ -5758,7 +5758,7 @@
   </file>
   <file original="public/feelGood/templates/ask_docs/message_picker.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2488" resname="Share personal health information and&lt;br&gt;        get advice and treatment" restype="string" datatype="html">
+      <trans-unit id="2488" resname="Share personal health information and&lt;br&gt;get advice and treatment" restype="string" datatype="html">
         <source>Share personal health information and&lt;br&gt;
         get advice and treatment</source>
         <target>Comparte información personal de salud&lt;br&gt;
@@ -5768,7 +5768,7 @@
   </file>
   <file original="public/feelGood/templates/consult_rating_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2492" resname="We&apos;re deeply commited to making everyone&apos;s experience delightful and would love your feedback        on how we can make things better for you and for many other&apos;s in the future." restype="string" datatype="html">
+      <trans-unit id="2492" resname="We&apos;re deeply commited to making everyone&apos;s experience delightful and would love your feedback on how we can make things better for you and for many other&apos;s in the future." restype="string" datatype="html">
         <source>We're deeply commited to making everyone's experience delightful and would love your feedback
         on how we can make things better for you and for many other's in the future.</source>
         <target>Estamos profundamente comprometidos a hacer encantadora la experiencia de todos y nos encantarían tus comentarios
@@ -5778,7 +5778,7 @@
   </file>
   <file original="public/feelGood/templates/deactivate_account.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2493" resname="We&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of    deactivating your account. We&apos;ll do our best to make you happy so soon as possible!" restype="string" datatype="html">
+      <trans-unit id="2493" resname="We&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We&apos;ll do our best to make you happy so soon as possible!" restype="string" datatype="html">
         <source>We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of
     deactivating your account. We'll do our best to make you happy so soon as possible!</source>
         <target>Estamos dedicados a cuidar de ti. Por favor, considera hacernos saber cómo podemos hacer tu experiencia mejor en vez de
@@ -5788,7 +5788,7 @@
   </file>
   <file original="public/feelGood/templates/pick_location.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2494" resname="so we can connect you with the right doctor    and send prescriptions to your current location" restype="string" datatype="html">
+      <trans-unit id="2494" resname="so we can connect you with the right doctor and send prescriptions to your current location" restype="string" datatype="html">
         <source>so we can connect you with the right doctor
     and send prescriptions to your current location</source>
         <target>para que podamos conectarte con el doctor adecuado
@@ -5798,7 +5798,7 @@
   </file>
   <file original="public/feelGood/templates/subaccount_list.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2495" resname="You may add profiles for people you care for and ask questions and add    topics to each. As you add information to their profile, the doctors will    be to tailor better answers for them." restype="string" datatype="html">
+      <trans-unit id="2495" resname="You may add profiles for people you care for and ask questions and add topics to each. As you add information to their profile, the doctors will be to tailor better answers for them." restype="string" datatype="html">
         <source>You may add profiles for people you care for and ask questions and add
     topics to each. As you add information to their profile, the doctors will
     be to tailor better answers for them.</source>
@@ -5810,7 +5810,7 @@
   </file>
   <file original="public/javascripts/templates/pages/goMobilePopup.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2499" resname="Let us send to you an email with the&lt;br&gt;  download link to open from your phone." restype="string" datatype="html">
+      <trans-unit id="2499" resname="Let us send to you an email with the&lt;br&gt;download link to open from your phone." restype="string" datatype="html">
         <source>Let us send to you an email with the&lt;br&gt;
   download link to open from your phone.</source>
         <target>Déjanos enviarte un correo electrónico con el&lt;br&gt;
