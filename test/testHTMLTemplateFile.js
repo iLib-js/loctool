@@ -91,7 +91,37 @@ module.exports = {
         var htf = new HTMLTemplateFile(p);
         test.ok(htf);
         
-        test.equal(htf.makeKey("This is\n a te\nst"), "This is a test");
+        test.equal(htf.makeKey("This is\n a te\nst"), "This is a te st");
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileMakeKeyCompressWhiteSpace: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        test.equal(htf.makeKey("This \t is\n \t a   test"), "This is a test");
+        
+        test.done();
+    },
+
+    testHTMLTemplateFileMakeKeyTrimWhiteSpace: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new HTMLTemplateFile(p);
+        test.ok(htf);
+        
+        test.equal(htf.makeKey("\n\t This \t is\n \t a   test\n\n\n"), "This is a test");
         
         test.done();
     },
@@ -401,7 +431,7 @@ module.exports = {
         var r = set.getBySource("This is also a \u000C test");
         test.ok(r);
         test.equal(r.getSource(), "This is also a \u000C test");
-        test.equal(r.getKey(), "This is also a \u000C test");
+        test.equal(r.getKey(), "This is also a test");
         
         test.done();
     },
@@ -524,7 +554,7 @@ module.exports = {
         var r = set.getBySource("This is a <em>test</em> of the emergency parsing system.");
         test.ok(r);
         test.equal(r.getSource(), "This is a <em>test</em> of the emergency parsing system.");
-        test.equal(r.getKey(), "This is a <em>test</em> of the emergency parsing system.");
+        test.equal(r.getKey(), "This is a<em>test</em>of the emergency parsing system.");
                 
         test.done();
     },
@@ -582,7 +612,7 @@ module.exports = {
         var r = set.getBySource('This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
         test.ok(r);
         test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
-        test.equal(r.getKey(), 'This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.');
+        test.equal(r.getKey(), 'This is<span id="foo" class="bar">a test of the emergency parsing</span>system.');
                 
         test.done();
     },
@@ -610,7 +640,7 @@ module.exports = {
         var r = set.getBySource('This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.');
         test.ok(r);
         test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.');
-        test.equal(r.getKey(), 'This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.');
+        test.equal(r.getKey(), 'This is<span id="foo" class="bar">a test of the<em>emergency</em>parsing</span>system.');
                 
         test.done();
     },
@@ -638,7 +668,7 @@ module.exports = {
         var r = set.getBySource('This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.');
         test.ok(r);
         test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.');
-        test.equal(r.getKey(), 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.');
+        test.equal(r.getKey(), 'This is<span id="foo" class="bar">a test of the<em>emergency parsing</span>system.');
                 
         test.done();
     },
@@ -666,7 +696,7 @@ module.exports = {
         var r = set.getBySource('This is <span id="foo" class="bar"> a test of the <em>emergency parsing');
         test.ok(r);
         test.equal(r.getSource(), 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing');
-        test.equal(r.getKey(), 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing');
+        test.equal(r.getKey(), 'This is<span id="foo" class="bar">a test of the<em>emergency parsing');
                 
         test.done();
     },
@@ -695,7 +725,7 @@ module.exports = {
         var r = set.getBySource('This is <b>another test</b> of the emergency parsing');
         test.ok(r);
         test.equal(r.getSource(), 'This is <b>another test</b> of the emergency parsing');
-        test.equal(r.getKey(), 'This is <b>another test</b> of the emergency parsing');
+        test.equal(r.getKey(), 'This is<b>another test</b>of the emergency parsing');
                 
         test.done();
     },
@@ -826,7 +856,7 @@ module.exports = {
         var r = set.getBySource('This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.');
         test.ok(r);
         test.equal(r.getSource(), 'This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.');
-        test.equal(r.getKey(), 'This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.');
+        test.equal(r.getKey(), 'This is<a href="foo.html" title="{title}">a test</a>of non-breaking tags.');
         
         r = set.getBySource("localizable title");
         test.ok(r);
@@ -1130,7 +1160,7 @@ module.exports = {
         r = set.getBySource('and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
         test.ok(r);
         test.equal(r.getSource(), 'and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
-        test.equal(r.getKey(), 'and <a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span> doctor<%=val.desc_agrees.length> 1 ? \'s\' : \'\'%> agree</a>');
+        test.equal(r.getKey(), 'and<a class="bold"><span class="doc_agree_count_h"><%=val.desc_agrees.length%></span>doctor<%=val.desc_agrees.length>1 ? \'s\' : \'\'%> agree</a>');
 
         r = set.getBySource("Write a better description &raquo;");
         test.ok(r);
@@ -1203,12 +1233,15 @@ module.exports = {
         	project: "foo",
         	key: "This is a test",
         	source: "Ceci est un essai",
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
-        test.equal(htf.localizeText(translations, "fr-FR"),
-    		'<html><body>Ceci est un essai</body></html>\n');
+        var actual = htf.localizeText(translations, "fr-FR");
+        var expected = '<html><body>Ceci est un essai</body></html>\n';
         
+        diff(actual, expected);
+        test.equal(actual, expected);
         test.done();
     },
 
@@ -1235,7 +1268,8 @@ module.exports = {
         	project: "foo",
         	key: "This is a test",
         	source: "Ceci est un essai",
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1273,13 +1307,15 @@ module.exports = {
         	project: "foo",
         	key: "This is a test",
         	source: "Ceci est un essai",
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: "This is also a test",
         	source: "Ceci est aussi un essai",
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1321,13 +1357,15 @@ module.exports = {
         	project: "foo",
         	key: "This is a test",
         	source: "Ceci est un essai",
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: "This is also a test",
         	source: "Ceci est aussi un essai",
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1374,7 +1412,8 @@ module.exports = {
         	project: "foo",
         	key: "This is a test",
         	source: "Ceci est un essai",
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1415,9 +1454,10 @@ module.exports = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
         	project: "foo",
-        	key: "This is a <em>test</em> of the emergency parsing system.",
+        	key: "This is a<em>test</em>of the emergency parsing system.",
         	source: "Ceci est un <em>essai</em> du système d'analyse syntaxique de l'urgence.",
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1452,7 +1492,8 @@ module.exports = {
         	project: "foo",
         	key: "This is a test of the emergency parsing system.",
         	source: "Ceci est un essai du système d'analyse syntaxique de l'urgence.",
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1485,9 +1526,10 @@ module.exports = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
         	project: "foo",
-        	key: 'This is <span id="foo" class="bar"> a test of the emergency parsing </span> system.',
+        	key: 'This is<span id="foo" class="bar">a test of the emergency parsing</span>system.',
         	source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de l\'urgence.</span>',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1520,9 +1562,10 @@ module.exports = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
         	project: "foo",
-        	key: 'This is <span id="foo" class="bar"> a test of the <em>emergency</em> parsing </span> system.',
+        	key: 'This is<span id="foo" class="bar">a test of the<em>emergency</em>parsing</span>system.',
         	source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence</em>.</span>',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1555,9 +1598,10 @@ module.exports = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
         	project: "foo",
-        	key: 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing </span> system.',
+        	key: 'This is<span id="foo" class="bar">a test of the<em>emergency parsing</span>system.',
         	source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique de <em>l\'urgence.</span>',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1590,9 +1634,10 @@ module.exports = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
         	project: "foo",
-        	key: 'This is <span id="foo" class="bar"> a test of the <em>emergency parsing',
+        	key: 'This is<span id="foo" class="bar">a test of the<em>emergency parsing',
         	source: 'Ceci est <span id="foo" class="bar"> un essai du système d\'analyse syntaxique',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1629,13 +1674,15 @@ module.exports = {
         	project: "foo",
         	key: 'This value is localizable',
         	source: 'Cette valeur est localisable',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: 'This is a test',
         	source: 'Ceci est un essai',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1674,19 +1721,22 @@ module.exports = {
         	project: "foo",
         	key: 'Alternate text',
         	source: 'Texte alternative',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: 'This is a test',
         	source: 'Ceci est un essai',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: 'localizable placeholder here',
         	source: 'espace réservé localisable ici',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1721,15 +1771,17 @@ module.exports = {
         var translations = new TranslationSet();
         translations.add(new ResourceString({
         	project: "foo",
-        	key: 'This is <a href="foo.html" title="{title}">a test</a> of non-breaking tags.',
+        	key: 'This is<a href="foo.html" title="{title}">a test</a>of non-breaking tags.',
         	source: 'Ceci est <a href="foo.html" title="{title}">un essai</a> des balises non-ruptures.',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: 'localizable title',
         	source: 'titre localisable',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1768,13 +1820,15 @@ module.exports = {
         	project: "foo",
         	key: 'Consult',
         	source: 'Une consultation',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "foo",
         	key: 'Get doctor answers for free!',
         	source: 'Obtenez des réponses de médecins gratuitement!',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1813,7 +1867,8 @@ module.exports = {
         	project: "foo",
         	key: 'Dr. <%= family_name %> is not available.',
         	source: 'Dr. <%= family_name %> n\'est pas disponibles.',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
              
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1849,7 +1904,8 @@ module.exports = {
         	project: "foo",
         	key: 'This is a test of the emergency parsing system.',
         	source: 'Ceci est un essai du système d\'analyse syntaxique de l\'urgence.',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
                 
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -1964,50 +2020,58 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'Get doctor answers for free!',
         	source: 'Obtenir des réponses de médecins gratuitement!',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "ht-webapp12",
         	key: 'Consult',
         	source: 'Consultation',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "ht-webapp12",
         	key: 'Ask',
         	source: 'Poser un question',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "ht-webapp12",
         	key: 'Send question',
         	source: 'Envoyer la question',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         translations.add(new ResourceString({
         	project: "ht-webapp12",
         	key: 'Get doctor answers for free!',
         	source: 'Kostenlosen antworten von Ärzten erhalten!',
-        	locale: "de-DE"
+        	locale: "de-DE",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "ht-webapp12",
         	key: 'Consult',
         	source: 'Beratung',
-        	locale: "de-DE"
+        	locale: "de-DE",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "ht-webapp12",
         	key: 'Ask',
         	source: 'Eine Frage stellen',
-        	locale: "de-DE"
+        	locale: "de-DE",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "ht-webapp12",
         	key: 'Send question',
         	source: 'Frage abschicken',
-        	locale: "de-DE"
+        	locale: "de-DE",
+        	datatype: "html"
         }));
 
         htf.localize(translations, ["fr-FR", "de-DE"]);
@@ -2121,13 +2185,15 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'Get doctor answers for free!',
         	source: 'Obtenir des réponses de médecins gratuitement!',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         translations.add(new ResourceString({
         	project: "ht-webapp12",
         	key: 'Get doctor answers for free!',
         	source: 'Kostenlosen antworten von Ärzten erhalten!',
-        	locale: "de-DE"
+        	locale: "de-DE",
+        	datatype: "html"
         }));
 
         htf.localize(translations, ["fr-FR", "de-DE"]);
@@ -2169,7 +2235,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'Dr. <%= family_name %> is not available.',
         	source: 'Dr. <%= family_name %> n\'est pas disponible.',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -2212,7 +2279,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'Dr. <%= family_name %> is not available.',
         	source: 'Dr. <%= family_name %> n\'est pas disponible.',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         var actual = htf.localizeText(translations, "fr-FR");
@@ -2256,7 +2324,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'Group',
         	source: 'Groupe',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -2295,7 +2364,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -2335,7 +2405,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -2372,7 +2443,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -2432,7 +2504,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         var actual = htf.localizeText(translations, "fr-FR");
@@ -2494,7 +2567,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -2524,7 +2598,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         test.equal(htf.localizeText(translations, "fr-FR"),
@@ -2560,7 +2635,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         diff(htf.localizeText(translations, "fr-FR"),
@@ -2603,7 +2679,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         diff(htf.localizeText(translations, "fr-FR"),
@@ -2636,7 +2713,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         diff(htf.localizeText(translations, "fr-FR"),
@@ -2669,7 +2747,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         diff(htf.localizeText(translations, "fr-FR"),
@@ -2706,7 +2785,8 @@ module.exports = {
         	project: "ht-webapp12",
         	key: 'foo',
         	source: 'asdf',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
 
         diff(htf.localizeText(translations, "fr-FR"),
@@ -2772,7 +2852,8 @@ module.exports = {
         	project: "foo",
         	key: 'Uploaded <%= dateString %>',
         	source: 'Téléchargé sur <%= dateString %>',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
                 
         diff(htf.localizeText(translations, "fr-FR"),
@@ -2937,7 +3018,8 @@ module.exports = {
         	project: "foo",
         	key: 'Assumptions',
         	source: 'Téléchargé sur <%= dateString %>',
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
                 
         diff(htf.localizeText(translations, "fr-FR"),
@@ -3103,7 +3185,8 @@ module.exports = {
         	project: "foo",
         	key: 'I\'d like to refer you to<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:',
         	source: 'Ich moechte Sie referieren an<%= HMO_provider ? (\' the following specialist. As a member of \' + HMO_provider + \', please first check with your primary care physician before seeing this specialist\') : \'\' %>:',
-        	locale: "de-DE"
+        	locale: "de-DE",
+        	datatype: "html"
         }));
         
         var actual = htf.localizeText(translations, "de-DE");
@@ -3251,7 +3334,8 @@ module.exports = {
         	project: "foo",
         	key: 'Uploaded',
         	source: 'Cargada',
-        	locale: "es-US"
+        	locale: "es-US",
+        	datatype: "html"
         }));
 
         var actual = htf.localizeText(translations, "es-US");
@@ -3394,7 +3478,8 @@ module.exports = {
         	project: "foo",
         	key: "Choose a consult method",
         	source: "Choicissez une methode de consultation",
-        	locale: "fr-FR"
+        	locale: "fr-FR",
+        	datatype: "html"
         }));
         
         var actual = htf.localizeText(translations, "fr-FR");

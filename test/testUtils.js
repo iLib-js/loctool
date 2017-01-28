@@ -172,5 +172,14 @@ module.exports = {
         test.equal(utils.trimEscaped("\\n \\t \\r This is a test \\r \\t \\n"), "This is a test");
 
         test.done();
+    },
+    
+    testTrimEscapedEscapedUndefined: function(test) {
+        test.expect(1);
+        
+        test.equal(utils.trimEscaped(undefined), undefined);
+        
+        test.done();
     }
+
 }
