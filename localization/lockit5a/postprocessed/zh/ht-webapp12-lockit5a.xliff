@@ -8086,7 +8086,7 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_answer/expert_answer_preview.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13568" resname="Originally authored by&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;in response to question,&lt;span class=&quot;bold&quot;&gt;&amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt;&amp;quot;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="13568" resname="Originally authored by&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;in response to question,&lt;span class=&quot;bold&quot;&gt;&amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt; &amp;quot;&lt;/span&gt;" restype="string" datatype="html">
         <source>Originally authored by &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; in response to question, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</source>
         <target>原始作者&lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; 回答问题, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</target>
       </trans-unit>
@@ -8531,7 +8531,7 @@
   </file>
   <file original="public/javascripts/templates/layers/referColleagueSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13608" resname="This question has been sent to doctors in the&lt;%= App.session.referSpecialty %&gt;field" restype="string" datatype="html">
+      <trans-unit id="13608" resname="This question has been sent to doctors in the &lt;%= App.session.referSpecialty %&gt; field" restype="string" datatype="html">
         <source>This question has been sent to doctors in the
           &lt;%= App.session.referSpecialty %&gt;
           field</source>
@@ -9088,7 +9088,7 @@
         <target>亲爱的 [患者名字],
           &lt;br&gt;</target>
       </trans-unit>
-      <trans-unit id="13681" resname="Sincerely,&lt;br&gt;Dr.&lt;%= App.user.get(&apos;person&apos;).name %&gt;&lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13681" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -9100,7 +9100,7 @@
           &lt;br&gt;
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" targete="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="13683" resname="Sincerely,&lt;br&gt;Dr.&lt;%= App.user.get(&apos;person&apos;).name %&gt;&lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13683" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -9313,7 +9313,7 @@
         <target>编辑出版物
         &lt;span class="cancel_edit_wrapper"&gt;( &lt;a class="cancel_edit"&gt;Cancel&lt;/a&gt; )&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="13709" resname=",&lt;%= App.user.get(&apos;person.name&apos;).substr(0, 1) %&gt;&lt;a class=&quot;remove_author&quot;&gt;&lt;%= App.image_tag(&quot;/imgs/icons/close_gray.png&quot;) %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13709" resname=", &lt;%= App.user.get(&apos;person.name&apos;).substr(0, 1) %&gt;&lt;a class=&quot;remove_author&quot;&gt;&lt;%= App.image_tag(&quot;/imgs/icons/close_gray.png&quot;) %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>, &lt;%= App.user.get('person.name').substr(0, 1) %&gt;
             &lt;a class="remove_author"&gt;
               &lt;%= App.image_tag("/imgs/icons/close_gray.png") %&gt;
@@ -9327,7 +9327,7 @@
   </file>
   <file original="public/javascripts/templates/experts/doc2doc_answer_feedback.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13710" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+&lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="13710" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
         <source>You earned
         &lt;span class="points_earned_highlight"&gt;
           &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
@@ -9353,13 +9353,13 @@
   </file>
   <file original="public/javascripts/templates/experts/concierge_consult_module.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13713" resname="Only&lt;%= 10 - no_of_consults %&gt;more&lt;%= no_of_consults == 9 ? &apos;consult&apos; : &apos;consults&apos; %&gt;to win the&lt;br&gt;Featured Concierge Doctor Award!" restype="string" datatype="html">
+      <trans-unit id="13713" resname="Only &lt;%= 10 - no_of_consults %&gt; more &lt;%= no_of_consults == 9 ? &apos;consult&apos; : &apos;consults&apos; %&gt; to win the&lt;br&gt;Featured Concierge Doctor Award!" restype="string" datatype="html">
         <source>Only &lt;%= 10 - no_of_consults %&gt; more &lt;%= no_of_consults == 9 ? 'consult' : 'consults' %&gt; to win the&lt;br&gt;
          Featured Concierge Doctor Award!</source>
         <target>只需 &lt;%= 10 - no_of_consults %&gt; more &lt;%= no_of_consults == 9 ?'咨询' :'咨询' %&gt; 获得&lt;br&gt;
          精选特邀医生奖！</target>
       </trans-unit>
-      <trans-unit id="13714" resname="Now become a &quot;Top Concierge Doctor&quot;&lt;br&gt;and do just&lt;%= 25 - no_of_consults %&gt;more&lt;%= no_of_consults == 24 ? &apos;consult&apos; : &apos;consults&apos; %&gt;&lt;br&gt;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos; day&apos; : &apos; days&apos;) %&gt;left in the competition!&lt;/b&gt;" restype="string" datatype="html">
+      <trans-unit id="13714" resname="Now become a &quot;Top Concierge Doctor&quot;&lt;br&gt;and do just &lt;%= 25 - no_of_consults %&gt; more &lt;%= no_of_consults == 24 ? &apos;consult&apos; : &apos;consults&apos; %&gt;&lt;br&gt;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos; day&apos; : &apos; days&apos;) %&gt; left in the competition!&lt;/b&gt;" restype="string" datatype="html">
         <source>Now become a "Top Concierge Doctor"&lt;br&gt;
           and do just &lt;%= 25 - no_of_consults %&gt; more &lt;%= no_of_consults == 24 ? 'consult' : 'consults' %&gt; &lt;br&gt;
           &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? ' day' : ' days') %&gt; left in the competition!&lt;/b&gt;</source>
@@ -9367,7 +9367,7 @@
           和只需要做 &lt;%= 25 - no_of_consults %&gt; 更多 &lt;%= no_of_consults == 24 ?'咨询' :'咨询' %&gt; &lt;br&gt;
           &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ?' 天' :' days') %&gt; 保持竞争力！&lt;/b&gt;</target>
       </trans-unit>
-      <trans-unit id="13715" resname="Now become&lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt;&quot;Top Concierge Doctor&quot; Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos;&amp;nbsp;day&apos; : &apos;&amp;nbsp;days&apos;) %&gt;left in the competition!&lt;/b&gt;" restype="string" datatype="html">
+      <trans-unit id="13715" resname="Now become&lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt;&quot;Top Concierge Doctor&quot; Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos;&amp;nbsp;day&apos; : &apos;&amp;nbsp;days&apos;) %&gt; left in the competition!&lt;/b&gt;" restype="string" datatype="html">
         <source>Now become &lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt; "Top Concierge Doctor"
           Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? '&amp;nbsp;day' : '&amp;nbsp;days') %&gt; left in the competition!&lt;/b&gt;</source>
         <target>立刻成为 &lt;b&gt;&lt;i&gt;&lt;/i&gt;&lt;/b&gt; "知名特邀医生"
@@ -9392,7 +9392,7 @@
   </file>
   <file original="public/javascripts/templates/experts/competitions/top_doctors_comp.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13718" resname="Leaderboard&lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST&lt;%= today_str %&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="13718" resname="Leaderboard&lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST &lt;%= today_str %&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Leaderboard
           &lt;span class="last-updated"&gt;as of 1AM PST &lt;%= today_str %&gt;&lt;/span&gt;</source>
         <target>排行榜
@@ -9431,7 +9431,7 @@
   </file>
   <file original="public/javascripts/templates/experts/answer_question_form.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13723" resname="This answer will appear in your Virtual Practice and&lt;%= user_answer.contributor.name %&gt;will be given credit for assisting you. Edit as you deem necessary.&lt;a class=&quot;child-browser-link&quot; href=&quot;#how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13723" resname="This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt; will be given credit for assisting you. Edit as you deem necessary.&lt;a class=&quot;child-browser-link&quot; href=&quot;#how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt;
       will be given credit for assisting you. Edit as you deem necessary.
       &lt;a class="child-browser-link" href="#how_it_works/healthtap_university"&gt;More about HealthTap University &amp;gt; &lt;/a&gt;</source>
@@ -9474,7 +9474,7 @@
         &lt;%= (number_of_people_helped + '').comma() %&gt;
       &lt;/b&gt; 人</target>
       </trans-unit>
-      <trans-unit id="13727" resname="Answer&lt;b&gt;&lt;%= number_to_go %&gt;more Questions&lt;/b&gt;and get your next medal for today, the &quot;&lt;%= next_badge %&gt;&quot; medal!&lt;br&gt;&lt;br&gt;&lt;a href=&quot;/#docscore/achievements&quot;&gt;See your medals &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13727" resname="Answer&lt;b&gt;&lt;%= number_to_go %&gt; more Questions&lt;/b&gt;and get your next medal for today, the &quot;&lt;%= next_badge %&gt;&quot; medal!&lt;br&gt;&lt;br&gt;&lt;a href=&quot;/#docscore/achievements&quot;&gt;See your medals &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Answer &lt;b&gt;&lt;%= number_to_go %&gt; more Questions&lt;/b&gt; and get your next medal for today, the "&lt;%= next_badge %&gt;" medal!
     &lt;br&gt;
     &lt;br&gt;
@@ -9593,7 +9593,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
               &lt;span style="display: inline-block;"&gt;&lt;%= discount_price %&gt;
                 &lt;span class="sprite-icon tooltip offer-tooltip"&gt;</target>
       </trans-unit>
-      <trans-unit id="13738" resname="Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just&lt;%= discount_price %&gt;(you&apos;ll receive $10), after which normal rates and compensation apply." restype="string" datatype="html">
+      <trans-unit id="13738" resname="Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just &lt;%= discount_price %&gt; (you&apos;ll receive $10), after which normal rates and compensation apply." restype="string" datatype="html">
         <source>Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just
                         &lt;%= discount_price %&gt; (you'll receive $10), after which normal rates and compensation apply.</source>
         <target>患者只需支付
@@ -9613,7 +9613,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
             &lt;/span&gt;
             次咨询折扣 -</target>
       </trans-unit>
-      <trans-unit id="13740" resname="Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just&lt;%= discount_price %&gt;(you&apos;ll receive $10), after which normal rates and compensation apply." restype="string" datatype="html">
+      <trans-unit id="13740" resname="Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just &lt;%= discount_price %&gt; (you&apos;ll receive $10), after which normal rates and compensation apply." restype="string" datatype="html">
         <source>Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just
                 &lt;%= discount_price %&gt; (you'll receive $10), after which normal rates and compensation apply.</source>
         <target>患者只需支付
@@ -9801,7 +9801,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
   </file>
   <file original="public/feelGood/templates/messages/lab_result.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13764" resname="Uploaded&lt;%= feelGood.strftime(uploadedDate, &apos;%b %d, %Y&apos;) %&gt;" restype="string" datatype="html">
+      <trans-unit id="13764" resname="Uploaded &lt;%= feelGood.strftime(uploadedDate, &apos;%b %d, %Y&apos;) %&gt;" restype="string" datatype="html">
         <source>Uploaded
         &lt;%= feelGood.strftime(uploadedDate, '%b %d, %Y') %&gt;</source>
         <target>上传
@@ -9811,7 +9811,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
   </file>
   <file original="public/feelGood/templates/messages/lab_order.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13765" resname="You will be taken to the&lt;%= test_provider %&gt;website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.&lt;a class=&quot;btn schedule-test-btn&quot; href=&quot;&lt;%= consult_lab_test.schedule_test_url %&gt;&quot; target=&quot;_blank&quot;&gt;Schedule lab test&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13765" resname="You will be taken to the &lt;%= test_provider %&gt; website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.&lt;a class=&quot;btn schedule-test-btn&quot; href=&quot;&lt;%= consult_lab_test.schedule_test_url %&gt;&quot; target=&quot;_blank&quot;&gt;Schedule lab test&lt;/a&gt;" restype="string" datatype="html">
         <source>You will be taken to the &lt;%= test_provider %&gt; website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.
     &lt;a class="btn schedule-test-btn" href="&lt;%= consult_lab_test.schedule_test_url %&gt;" target="_blank"&gt;
       Schedule lab test

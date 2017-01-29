@@ -86,9 +86,6 @@ web = android = ios = feelgood = undefined;
 			newunits.forEach(function(unit) {
 				var found;
 			
-				if (unit.source === "How old was your grandson?") {
-					console.log("Found it.");
-				}
 				if (units[locale][unit.source]) {
 					found = units[locale][unit.source];
 				} else if (unit.datatype === "ruby" || unit.datatype === "x-haml" || unit.datatype === "java" || unit.datatype === "x-android-resource") {

@@ -4475,7 +4475,7 @@
   </file>
   <file original="public/feelGood/templates/enter_concierge_key.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="996" resname="Enter&lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;&amp;apos;s Concierge Keycode" restype="string" datatype="html">
+      <trans-unit id="996" resname="Enter &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;&amp;apos;s Concierge Keycode" restype="string" datatype="html">
         <source>Enter &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;&amp;apos;s Concierge Keycode</source>
         <target>输入&lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;&amp;apos;s 贵宾台秘钥</target>
       </trans-unit>
@@ -4694,7 +4694,7 @@
   </file>
   <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1027" resname="Your&lt;%= upperExpertType %&gt;&amp;apos;s Name" restype="string" datatype="html">
+      <trans-unit id="1027" resname="Your &lt;%= upperExpertType %&gt;&amp;apos;s Name" restype="string" datatype="html">
         <source>Your &lt;%= upperExpertType %&gt;&amp;apos;s Name</source>
         <target>您的&lt;%= upperExpertType %&gt;&amp;apos;s 姓名</target>
       </trans-unit>
@@ -5094,7 +5094,7 @@
         <source>Dear [Patient name],</source>
         <target>亲爱的 [患者名字],</target>
       </trans-unit>
-      <trans-unit id="1094" resname="Sincerely,&lt;br&gt;Dr.&lt;%= App.user.get(&apos;person&apos;).name %&gt;&lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&apos;_blank&apos;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1094" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&apos;_blank&apos;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -5174,7 +5174,7 @@
   </file>
   <file original="public/javascripts/templates/experts/tabs/about.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1106" resname=":&lt;a class=&quot;showInsurances&quot; onclick=&quot;$(&amp;apos;ul.&lt;%= className %&gt;&amp;apos;).toggleClass(&amp;apos;hidden&amp;apos;)&quot;&gt;&lt;%= val.plans.length %&gt;Plans&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1106" resname=":&lt;a class=&quot;showInsurances&quot; onclick=&quot;$(&amp;apos;ul.&lt;%= className %&gt;&amp;apos;).toggleClass(&amp;apos;hidden&amp;apos;)&quot;&gt;&lt;%= val.plans.length %&gt; Plans&lt;/a&gt;" restype="string" datatype="html">
         <source>: &lt;a class="showInsurances" onclick="$(&amp;apos;ul.&lt;%= className %&gt;&amp;apos;).toggleClass(&amp;apos;hidden&amp;apos;)"&gt;&lt;%= val.plans.length %&gt; Plans&lt;/a&gt;</source>
         <target>:&lt;a class=”showInsurances” onclick=”$(&amp;apos;ul.&lt;%= className %&gt;&amp;apos;).toggleClass(&amp;apos;hidden&amp;apos;)”&gt;&lt;%= val.plans.length %&gt;计划&lt;/a&gt;</target>
       </trans-unit>
@@ -6169,7 +6169,7 @@
   </file>
   <file original="public/mobile/app/js/templates/search/askQuestion.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1260" resname=", for&lt;%=App.settings.ios_payment_changes ? &apos;&apos; : &apos;a charitable donation of&apos;%&gt;99&amp;cent;" restype="string" datatype="html">
+      <trans-unit id="1260" resname=", for &lt;%=App.settings.ios_payment_changes ? &apos;&apos; : &apos;a charitable donation of&apos;%&gt; 99&amp;cent;" restype="string" datatype="html">
         <source>, for &lt;%=App.settings.ios_payment_changes ? '' : 'a charitable donation of'%&gt; 99&amp;cent;</source>
         <target>，for &lt;%=App.settings.ios_payment_changes ?'' :‘一次慈善捐赠’%&gt; 99&amp;美分;</target>
       </trans-unit>
@@ -6209,7 +6209,7 @@
   </file>
   <file original="public/mobile/app/js/templates/search/relatedQuestionsAsk.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1266" resname="and&lt;%=user_question.verified_answers_count%&gt;other doctors answered:" restype="string" datatype="html">
+      <trans-unit id="1266" resname="and &lt;%=user_question.verified_answers_count%&gt; other doctors answered:" restype="string" datatype="html">
         <source>and &lt;%=user_question.verified_answers_count%&gt; other doctors answered:</source>
         <target>与其他医生的解答&lt;%=user_question.verified_answers_count%&gt;</target>
       </trans-unit>

@@ -166,7 +166,7 @@
         <source>Authored by &lt;a class="actor_link bold" href="#expert_vip/&lt;%=val.author.id%&gt;/"&gt;&lt;%=val.author.full_name%&gt;&lt;/a&gt;</source>
         <target>Escrito por &lt;a class="actor_link bold" href="#expert_vip/&lt;%=val.author.id%&gt;/"&gt;&lt;%=val.author.full_name%&gt;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="36" resname="and&lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt;doctor&lt;%=val.desc_agrees.length&gt;1 ? &apos;s&apos; : &apos;&apos;%&gt;agree&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="36" resname="and&lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt;doctor&lt;%=val.desc_agrees.length&gt;1 ? &apos;s&apos; : &apos;&apos;%&gt; agree&lt;/a&gt;" restype="string" datatype="html">
         <source>and &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt; doctor&lt;%=val.desc_agrees.length&gt; 1 ? 's' : ''%&gt; agree&lt;/a&gt;</source>
         <target>y &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt; doctor&lt;%=val.desc_agrees.length&gt; 1 ? 's' : ''%&gt; de acuerdo&lt;/a&gt;</target>
       </trans-unit>
@@ -202,11 +202,11 @@
         <source>2&amp;#176;</source>
         <target>2&amp;#176;</target>
       </trans-unit>
-      <trans-unit id="44" resname="In&lt;%=second_degree_connection%&gt;&apos;s Network" restype="string" datatype="html">
+      <trans-unit id="44" resname="In &lt;%=second_degree_connection%&gt;&apos;s Network" restype="string" datatype="html">
         <source>In &lt;%=second_degree_connection%&gt;'s Network</source>
         <target>En la Red de &lt;%=second_degree_connection%&gt;</target>
       </trans-unit>
-      <trans-unit id="45" resname="Known for:&lt;%=topics%&gt;... more" restype="string" datatype="html">
+      <trans-unit id="45" resname="Known for: &lt;%=topics%&gt; ... more" restype="string" datatype="html">
         <source>Known for: &lt;%=topics%&gt; ... more</source>
         <target>Conocido por: &lt;%=topics%&gt; ... más</target>
       </trans-unit>
@@ -270,7 +270,7 @@
   </file>
   <file original="public/mobile/app/js/templates/topics/follow_topic_region.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="59" resname="&apos;); background-position:&lt;%=alignText%&gt;; background-size:cover; position: absolute; z-index: 3;&quot;&gt;" restype="string" datatype="html">
+      <trans-unit id="59" resname="&apos;); background-position: &lt;%=alignText%&gt;; background-size:cover; position: absolute; z-index: 3;&quot;&gt;" restype="string" datatype="html">
         <source>'); background-position: &lt;%=alignText%&gt;; background-size:cover; position: absolute; z-index: 3;"&gt;</source>
         <target>'); background-position: &lt;%=alignText%&gt;; background-size:cover; position: absolute; z-index: 3;"&gt;</target>
       </trans-unit>
@@ -410,7 +410,7 @@
   </file>
   <file original="public/mobile/app/js/templates/share_layers/email.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="87" resname="Share with a friend or loved one here. Increase your&lt;%=App.user.isExpert() ? &apos;DocScore&apos; : &apos;HealthScore&apos;%&gt;while you’re at it!" restype="string" datatype="html">
+      <trans-unit id="87" resname="Share with a friend or loved one here. Increase your &lt;%=App.user.isExpert() ? &apos;DocScore&apos; : &apos;HealthScore&apos;%&gt; while you’re at it!" restype="string" datatype="html">
         <source>Share with a friend or loved one here. Increase your &lt;%=App.user.isExpert() ? 'DocScore' : 'HealthScore'%&gt; while you’re at it!</source>
         <target>Comparte con un amigo o ser querido aquí. ¡Aumenta tu &lt;%=App.user.isExpert() ? 'DocScore' : 'HealthScore'%&gt; mientras lo haces!</target>
       </trans-unit>
@@ -446,11 +446,11 @@
         <source>Near You</source>
         <target>Cerca de Ti</target>
       </trans-unit>
-      <trans-unit id="95" resname="In&lt;%=expert.second_degree_connection%&gt;&apos;s Network" restype="string" datatype="html">
+      <trans-unit id="95" resname="In &lt;%=expert.second_degree_connection%&gt;&apos;s Network" restype="string" datatype="html">
         <source>In &lt;%=expert.second_degree_connection%&gt;'s Network</source>
         <target>En la Red de &lt;%=expert.second_degree_connection%&gt;</target>
       </trans-unit>
-      <trans-unit id="96" resname="Known for:&lt;%=topics%&gt;... more" restype="string" datatype="html">
+      <trans-unit id="96" resname="Known for: &lt;%=topics%&gt;... more" restype="string" datatype="html">
         <source>Known for: &lt;%=topics%&gt;... more</source>
         <target>Conocido por: &lt;%=topics%&gt;... más</target>
       </trans-unit>
@@ -642,7 +642,7 @@
   </file>
   <file original="public/mobile/app/js/templates/search/relatedQuestionsAsk.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="132" resname="and&lt;%=user_question.verified_answers_count%&gt;other doctors answered:&lt;span&gt;" restype="string" datatype="html">
+      <trans-unit id="132" resname="and &lt;%=user_question.verified_answers_count%&gt; other doctors answered:&lt;span&gt;" restype="string" datatype="html">
         <source>and &lt;%=user_question.verified_answers_count%&gt; other doctors answered: &lt;span&gt;</source>
         <target>y &lt;%=user_question.verified_answers_count%&gt; otros doctores contestaron: &lt;span&gt;</target>
       </trans-unit>
@@ -1234,7 +1234,7 @@
         <source>Faster</source>
         <target>Más rápido</target>
       </trans-unit>
-      <trans-unit id="274" resname=", for&lt;%=App.settings.ios_payment_changes ? &apos;&apos; : &apos;a charitable donation of&apos;%&gt;99&amp;cent;&lt;span class=&quot;tool_tip tool_tip_h&quot; style=&quot;display:&lt;%=App.settings.ios_payment_changes ? &apos;none&apos; : &apos;inline&apos;%&gt;; padding-left:3px; top:2px;&quot;&gt;" restype="string" datatype="html">
+      <trans-unit id="274" resname=", for &lt;%=App.settings.ios_payment_changes ? &apos;&apos; : &apos;a charitable donation of&apos;%&gt; 99&amp;cent;&lt;span class=&quot;tool_tip tool_tip_h&quot; style=&quot;display: &lt;%=App.settings.ios_payment_changes ? &apos;none&apos; : &apos;inline&apos;%&gt;; padding-left:3px; top:2px;&quot;&gt;" restype="string" datatype="html">
         <source>, for &lt;%=App.settings.ios_payment_changes ? '' : 'a charitable donation of'%&gt; 99&amp;cent; &lt;span class="tool_tip tool_tip_h" style="display: &lt;%=App.settings.ios_payment_changes ? 'none' : 'inline'%&gt;; padding-left:3px; top:2px;"&gt;</source>
         <target>, por &lt;%=App.settings.ios_payment_changes ? '' : 'una donación caritativa de'%&gt; 99&amp;centavos; &lt;span class="tool_tip tool_tip_h" style="display: &lt;%=App.settings.ios_payment_changes ? 'none' : 'inline'%&gt;; padding-left:3px; top:2px;"&gt;</target>
       </trans-unit>
@@ -1434,7 +1434,7 @@
         <source>COMMENTS</source>
         <target>COMENTARIOS</target>
       </trans-unit>
-      <trans-unit id="316" resname="View all&lt;%= publication.comment_count %&gt;comments &amp;raquo;" restype="string" datatype="html">
+      <trans-unit id="316" resname="View all &lt;%= publication.comment_count %&gt; comments &amp;raquo;" restype="string" datatype="html">
         <source>View all &lt;%= publication.comment_count %&gt; comments &amp;raquo;</source>
         <target>Ver todos los &lt;%= publication.comment_count %&gt; comentarios &amp;raquo;</target>
       </trans-unit>
@@ -1530,7 +1530,7 @@
         <source>Type procedure, test, or surgery</source>
         <target>Escribe un procedimiento, prueba o cirugía</target>
       </trans-unit>
-      <trans-unit id="337" resname="Currently in&lt;%=prompt_type == &quot;prompt&quot; ? &apos;your&apos; : otherName %&gt;Health Profile:" restype="string" datatype="html">
+      <trans-unit id="337" resname="Currently in &lt;%=prompt_type == &quot;prompt&quot; ? &apos;your&apos; : otherName %&gt; Health Profile:" restype="string" datatype="html">
         <source>Currently in &lt;%=prompt_type == "prompt" ? 'your' : otherName %&gt; Health Profile:</source>
         <target>Actualmente en &lt;%=prompt_type == "prompt" ? 'tu' : otherName %&gt; Perfil de Salud:</target>
       </trans-unit>
@@ -1894,7 +1894,7 @@
         <source>Earn more medals to gain recognition for your expertise and compassion.</source>
         <target>Gana más medallas para ganar reconocimiento por tu destreza y compasión.</target>
       </trans-unit>
-      <trans-unit id="418" resname="Unlock the&lt;%=childObject.name%&gt;medal next." restype="string" datatype="html">
+      <trans-unit id="418" resname="Unlock the &lt;%=childObject.name%&gt; medal next." restype="string" datatype="html">
         <source>Unlock the &lt;%=childObject.name%&gt; medal next.</source>
         <target>Desbloquea la medalla &lt;%=childObject.name%&gt; a continuación.</target>
       </trans-unit>
@@ -2250,7 +2250,7 @@
         <source>Thanks for your quick reply!</source>
         <target>¡Gracias por tu rápida respuesta!</target>
       </trans-unit>
-      <trans-unit id="497" resname="Thank you, your&lt;%=App.session.temporary &amp;&amp; App.session.temporary.thankNote &amp;&amp; App.session.temporary.thankNote.isTip ? &apos;tip&apos; : App.session.temporary.thankNote.isPost ? &apos;post&apos; : &apos;answer&apos;%&gt;was very helpful!" restype="string" datatype="html">
+      <trans-unit id="497" resname="Thank you, your &lt;%=App.session.temporary &amp;&amp; App.session.temporary.thankNote &amp;&amp; App.session.temporary.thankNote.isTip ? &apos;tip&apos; : App.session.temporary.thankNote.isPost ? &apos;post&apos; : &apos;answer&apos;%&gt; was very helpful!" restype="string" datatype="html">
         <source>Thank you, your &lt;%=App.session.temporary &amp;&amp; App.session.temporary.thankNote &amp;&amp; App.session.temporary.thankNote.isTip ? 'tip' : App.session.temporary.thankNote.isPost ? 'post' : 'answer'%&gt; was very helpful!</source>
         <target>Gracias, tu &lt;%=App.session.temporary &amp;&amp; App.session.temporary.thankNote &amp;&amp; App.session.temporary.thankNote.isTip ? 'tip' : App.session.temporary.thankNote.isPost ? 'publicación' : 'respuesta'%&gt; fue muy útil!</target>
       </trans-unit>
@@ -2298,7 +2298,7 @@
         <source>users</source>
         <target>usuarios</target>
       </trans-unit>
-      <trans-unit id="508" resname="are seeking a tip on&lt;%=user_question.tip_topic_name ? user_question.tip_topic_name.trim() : &apos;&apos;%&gt;:" restype="string" datatype="html">
+      <trans-unit id="508" resname="are seeking a tip on &lt;%=user_question.tip_topic_name ? user_question.tip_topic_name.trim() : &apos;&apos;%&gt;:" restype="string" datatype="html">
         <source>are seeking a tip on &lt;%=user_question.tip_topic_name ? user_question.tip_topic_name.trim() : ''%&gt;:</source>
         <target>están buscando un tip sobre &lt;%=user_question.tip_topic_name ? user_question.tip_topic_name.trim() : ''%&gt;:</target>
       </trans-unit>
@@ -2306,15 +2306,15 @@
         <source>asked:</source>
         <target>preguntó:</target>
       </trans-unit>
-      <trans-unit id="510" resname="A&lt;%=user_question.actor.age_years%&gt;, year old&lt;%=user_question.actor.gender%&gt;," restype="string" datatype="html">
+      <trans-unit id="510" resname="A &lt;%=user_question.actor.age_years%&gt;, year old &lt;%=user_question.actor.gender%&gt;," restype="string" datatype="html">
         <source>A &lt;%=user_question.actor.age_years%&gt;, year old &lt;%=user_question.actor.gender%&gt;,</source>
         <target>Un individuo &lt;%=user_question.actor.gender%&gt; de &lt;%=user_question.actor.age_years%&gt; años de edad,</target>
       </trans-unit>
-      <trans-unit id="511" resname="A&lt;%=user_question.actor.age_years%&gt;year old," restype="string" datatype="html">
+      <trans-unit id="511" resname="A &lt;%=user_question.actor.age_years%&gt; year old," restype="string" datatype="html">
         <source>A &lt;%=user_question.actor.age_years%&gt; year old,</source>
         <target>Un individuo de &lt;%=user_question.actor.age_years%&gt; años de edad,</target>
       </trans-unit>
-      <trans-unit id="512" resname="A&lt;%=user_question.actor.gender%&gt;," restype="string" datatype="html">
+      <trans-unit id="512" resname="A &lt;%=user_question.actor.gender%&gt;," restype="string" datatype="html">
         <source>A &lt;%=user_question.actor.gender%&gt;,</source>
         <target>Un individuo &lt;%=user_question.actor.gender%&gt;,</target>
       </trans-unit>
@@ -2322,7 +2322,7 @@
         <source>,</source>
         <target>,</target>
       </trans-unit>
-      <trans-unit id="514" resname="Regarding a&lt;%=user_question.person.age%&gt;year old" restype="string" datatype="html">
+      <trans-unit id="514" resname="Regarding a &lt;%=user_question.person.age%&gt; year old" restype="string" datatype="html">
         <source>Regarding a &lt;%=user_question.person.age%&gt; year old</source>
         <target>Respecto a un individuo de &lt;%=user_question.person.age%&gt; años de edad</target>
       </trans-unit>
@@ -2334,7 +2334,7 @@
         <source>♀</source>
         <target>♀</target>
       </trans-unit>
-      <trans-unit id="517" resname="A&lt;%=user_question.person.age%&gt;year old" restype="string" datatype="html">
+      <trans-unit id="517" resname="A &lt;%=user_question.person.age%&gt; year old" restype="string" datatype="html">
         <source>A &lt;%=user_question.person.age%&gt; year old</source>
         <target>Un individuo de &lt;%=user_question.person.age%&gt; años de edad</target>
       </trans-unit>
@@ -2342,7 +2342,7 @@
         <source>, asked:</source>
         <target>, preguntó:</target>
       </trans-unit>
-      <trans-unit id="519" resname="Regarding a&lt;%=ageInMonths%&gt;month-old" restype="string" datatype="html">
+      <trans-unit id="519" resname="Regarding a &lt;%=ageInMonths%&gt; month-old" restype="string" datatype="html">
         <source>Regarding a &lt;%=ageInMonths%&gt; month-old</source>
         <target>Respecto a un bebé de &lt;%=ageInMonths%&gt; meses de edad</target>
       </trans-unit>
@@ -2442,7 +2442,7 @@
         <source>Follow</source>
         <target>Seguir</target>
       </trans-unit>
-      <trans-unit id="540" resname="View all&lt;%= user_answer.comment_count %&gt;comments &amp;raquo;" restype="string" datatype="html">
+      <trans-unit id="540" resname="View all &lt;%= user_answer.comment_count %&gt; comments &amp;raquo;" restype="string" datatype="html">
         <source>View all &lt;%= user_answer.comment_count %&gt; comments &amp;raquo;</source>
         <target>Ver todos los &lt;%= user_answer.comment_count %&gt; comentarios &amp;raquo;</target>
       </trans-unit>
@@ -2510,7 +2510,7 @@
         <source>SHOW YOUR APPRECIATION!</source>
         <target>¡MUESTRA TU APRECIACIÓN!</target>
       </trans-unit>
-      <trans-unit id="556" resname="SEND DR.&lt;%=App.session.temporary.thankNote.name%&gt;A THANK YOU NOTE" restype="string" datatype="html">
+      <trans-unit id="556" resname="SEND DR. &lt;%=App.session.temporary.thankNote.name%&gt; A THANK YOU NOTE" restype="string" datatype="html">
         <source>SEND DR. &lt;%=App.session.temporary.thankNote.name%&gt; A THANK YOU NOTE</source>
         <target>ENVIAR AL DR. &lt;%=App.session.temporary.thankNote.name%&gt; UNA NOTA DE AGRACEDIMIENTO</target>
       </trans-unit>
@@ -3162,7 +3162,7 @@
         <source>Conversation</source>
         <target>Conversación</target>
       </trans-unit>
-      <trans-unit id="695" resname="and&lt;%=episode.number_of_files%&gt;&lt;%=episode.number_of_files == 1 ? &apos;file&apos; : &apos;files&apos;%&gt;with" restype="string" datatype="html">
+      <trans-unit id="695" resname="and &lt;%=episode.number_of_files%&gt;&lt;%=episode.number_of_files == 1 ? &apos;file&apos; : &apos;files&apos;%&gt; with" restype="string" datatype="html">
         <source>and &lt;%=episode.number_of_files%&gt;&lt;%=episode.number_of_files == 1 ? 'file' : 'files'%&gt; with</source>
         <target>y &lt;%=episode.number_of_files%&gt;&lt;%=episode.number_of_files == 1 ? 'file' : 'files'%&gt; con</target>
       </trans-unit>
@@ -3170,7 +3170,7 @@
         <source>with</source>
         <target>con</target>
       </trans-unit>
-      <trans-unit id="697" resname="and&lt;%=expertsLeft%&gt;other" restype="string" datatype="html">
+      <trans-unit id="697" resname="and &lt;%=expertsLeft%&gt; other" restype="string" datatype="html">
         <source>and &lt;%=expertsLeft%&gt; other</source>
         <target>y otros &lt;%=expertsLeft%&gt;</target>
       </trans-unit>
@@ -3182,11 +3182,11 @@
         <source>FOLLOWING QUESTION</source>
         <target>SIGUIENDO PREGUNTA</target>
       </trans-unit>
-      <trans-unit id="700" resname="added a&lt;%= health_journal_entry.hh_type %&gt;:" restype="string" datatype="html">
+      <trans-unit id="700" resname="added a &lt;%= health_journal_entry.hh_type %&gt;:" restype="string" datatype="html">
         <source>added a &lt;%= health_journal_entry.hh_type %&gt;:</source>
         <target>añadió un &lt;%= health_journal_entry.hh_type %&gt;:</target>
       </trans-unit>
-      <trans-unit id="701" resname="added&lt;%= (health_journal_entry.hh_type == &quot;allergy&quot; || health_journal_entry.hh_type == &quot;immunization&quot;) ? &apos;an&apos; : &apos;a&apos; %&gt;&lt;%= health_journal_entry.hh_type %&gt;:" restype="string" datatype="html">
+      <trans-unit id="701" resname="added &lt;%= (health_journal_entry.hh_type == &quot;allergy&quot; || health_journal_entry.hh_type == &quot;immunization&quot;) ? &apos;an&apos; : &apos;a&apos; %&gt;&lt;%= health_journal_entry.hh_type %&gt;:" restype="string" datatype="html">
         <source>added &lt;%= (health_journal_entry.hh_type == "allergy" || health_journal_entry.hh_type == "immunization") ? 'an' : 'a' %&gt;&lt;%= health_journal_entry.hh_type %&gt;:</source>
         <target>añadió &lt;%= (health_journal_entry.hh_type == "allergy" || health_journal_entry.hh_type == "immunization") ? 'un' : 'un' %&gt;&lt;%= health_journal_entry.hh_type %&gt;:</target>
       </trans-unit>
@@ -3222,7 +3222,7 @@
   </file>
   <file original="public/mobile/app/js/templates/member/member_health_history/member_health_history_health_profile.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="708" resname="It looks like&lt;%=person.sex.toLowerCase() == &apos;male&apos; || !person.sex ? &apos;Mr.&apos; : &apos;Ms.&apos;%&gt;&lt;%=person.name%&gt;&lt;%=person.last_name%&gt;hasn&apos;t filled out any profile information yet" restype="string" datatype="html">
+      <trans-unit id="708" resname="It looks like &lt;%=person.sex.toLowerCase() == &apos;male&apos; || !person.sex ? &apos;Mr.&apos; : &apos;Ms.&apos;%&gt;&lt;%=person.name%&gt;&lt;%=person.last_name%&gt; hasn&apos;t filled out any profile information yet" restype="string" datatype="html">
         <source>It looks like &lt;%=person.sex.toLowerCase() == 'male' || !person.sex ? 'Mr.' : 'Ms.'%&gt;&lt;%=person.name%&gt;&lt;%=person.last_name%&gt; hasn't filled out any profile information yet</source>
         <target>Parece que &lt;%=person.sex.toLowerCase() == 'male' || !person.sex ? 'Sr.' : 'Srta.'%&gt;&lt;%=person.name%&gt;&lt;%=person.last_name%&gt; no ha llenado nada de la información de perfil aún.</target>
       </trans-unit>
@@ -3398,7 +3398,7 @@
         <source>&gt;</source>
         <target>&gt;</target>
       </trans-unit>
-      <trans-unit id="749" resname="+&lt;%=upload.number_of_shares%&gt;SHARE" restype="string" datatype="html">
+      <trans-unit id="749" resname="+&lt;%=upload.number_of_shares%&gt; SHARE" restype="string" datatype="html">
         <source>+&lt;%=upload.number_of_shares%&gt; SHARE</source>
         <target>+&lt;%=upload.number_of_shares%&gt; COMPARTIR</target>
       </trans-unit>
@@ -3514,7 +3514,7 @@
         <source>THANKS FOR ASKING</source>
         <target>GRACIAS POR PREGUNTAR</target>
       </trans-unit>
-      <trans-unit id="772" resname="Thanks! We’ve sent your message to&lt;%=App.sessionVars.memberExpertMessage.expertName%&gt;." restype="string" datatype="html">
+      <trans-unit id="772" resname="Thanks! We’ve sent your message to &lt;%=App.sessionVars.memberExpertMessage.expertName%&gt;." restype="string" datatype="html">
         <source>Thanks! We’ve sent your message to &lt;%=App.sessionVars.memberExpertMessage.expertName%&gt;.</source>
         <target>¡Gracias! Hemos enviado tu mensaje a &lt;%=App.sessionVars.memberExpertMessage.expertName%&gt;.</target>
       </trans-unit>
@@ -3694,7 +3694,7 @@
   </file>
   <file original="public/mobile/app/js/templates/member/member_expert_message/member_expert_message_buy_credits.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="811" resname="I have&lt;%=expert_name%&gt;&apos;s promo code" restype="string" datatype="html">
+      <trans-unit id="811" resname="I have &lt;%=expert_name%&gt;&apos;s promo code" restype="string" datatype="html">
         <source>I have &lt;%=expert_name%&gt;'s promo code</source>
         <target>Tengo el código de promoción de &lt;%=expert_name%&gt;</target>
       </trans-unit>
@@ -3730,7 +3730,7 @@
         <source>Level</source>
         <target>Nivel</target>
       </trans-unit>
-      <trans-unit id="819" resname="Would you like to forward your message to&lt;%=item.attached_object.expert.full_name%&gt;?" restype="string" datatype="html">
+      <trans-unit id="819" resname="Would you like to forward your message to &lt;%=item.attached_object.expert.full_name%&gt;?" restype="string" datatype="html">
         <source>Would you like to forward your message to &lt;%=item.attached_object.expert.full_name%&gt;?</source>
         <target>¿Te gustaría reenviar tu mensaje a &lt;%=item.attached_object.expert.full_name%&gt;?</target>
       </trans-unit>
@@ -3954,7 +3954,7 @@
   </file>
   <file original="public/mobile/app/js/templates/launchpadFeed.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="870" resname="are seeking a tip on&lt;%=user_question.tip_topic_name%&gt;:" restype="string" datatype="html">
+      <trans-unit id="870" resname="are seeking a tip on &lt;%=user_question.tip_topic_name%&gt;:" restype="string" datatype="html">
         <source>are seeking a tip on &lt;%=user_question.tip_topic_name%&gt;:</source>
         <target>están buscando un tipo sobre &lt;%=user_question.tip_topic_name%&gt;:</target>
       </trans-unit>
@@ -4058,7 +4058,7 @@
   </file>
   <file original="public/mobile/app/js/templates/launchPad.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="894" resname="Hi Dr.&lt;%=expertname.truncate({length:16})%&gt;!" restype="string" datatype="html">
+      <trans-unit id="894" resname="Hi Dr. &lt;%=expertname.truncate({length:16})%&gt;!" restype="string" datatype="html">
         <source>Hi Dr. &lt;%=expertname.truncate({length:16})%&gt;!</source>
         <target>¡Hola, Dr. &lt;%=expertname.truncate({length:16})%&gt;!</target>
       </trans-unit>
@@ -4066,7 +4066,7 @@
         <source>Invite &lt;br&gt; colleagues</source>
         <target>Invita a &lt;br&gt; colegas</target>
       </trans-unit>
-      <trans-unit id="896" resname="Hi&lt;%=userName.truncate({length:16})%&gt;!" restype="string" datatype="html">
+      <trans-unit id="896" resname="Hi &lt;%=userName.truncate({length:16})%&gt;!" restype="string" datatype="html">
         <source>Hi &lt;%=userName.truncate({length:16})%&gt;!</source>
         <target>¡Hola, &lt;%=userName.truncate({length:16})%&gt;!</target>
       </trans-unit>
@@ -4082,7 +4082,7 @@
         <source>Get experience-based answers to your pregnancy &amp;amp; parenting questions. &lt;a class="bold"&gt; Ask today &amp;#187;&lt;/a&gt;</source>
         <target>Obtén respuestas basadas en experiencia a tus preguntas de embarazo y crianza. &lt;a class="bold"&gt; Pregunta hoy &amp;#187;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="900" resname="class=&quot;app_item_container app_item_container_h&lt;%=app.className ? app.className : &apos;&apos;%&gt;&quot; style=&quot;height:&lt;%=imageContainerHeight%&gt;px; width:&lt;%=imageContainerHeight%&gt;px; display: inline-block; position: relative;&lt;%=app.isDisabled ? &apos;opacity: 0.5;pointer-events:none&apos; : &apos;&apos;%&gt;; border-radius:7px;&quot;&gt;" restype="string" datatype="html">
+      <trans-unit id="900" resname="class=&quot;app_item_container app_item_container_h &lt;%=app.className ? app.className : &apos;&apos;%&gt;&quot; style=&quot;height:&lt;%=imageContainerHeight%&gt;px; width:&lt;%=imageContainerHeight%&gt;px; display: inline-block; position: relative;&lt;%=app.isDisabled ? &apos;opacity: 0.5;pointer-events:none&apos; : &apos;&apos;%&gt;; border-radius:7px;&quot;&gt;" restype="string" datatype="html">
         <source>class="app_item_container app_item_container_h &lt;%=app.className ? app.className : ''%&gt;" style="height:&lt;%=imageContainerHeight%&gt;px; width:&lt;%=imageContainerHeight%&gt;px; display: inline-block; position: relative;&lt;%=app.isDisabled ? 'opacity: 0.5;pointer-events:none' : ''%&gt;; border-radius:7px;"&gt;</source>
         <target>class="app_item_container app_item_container_h &lt;%=app.className ? app.className : ''%&gt;" style="height:&lt;%=imageContainerHeight%&gt;px; width:&lt;%=imageContainerHeight%&gt;px; display: inline-block; position: relative;&lt;%=app.isDisabled ? 'opacity: 0.5;pointer-events:none' : ''%&gt;; border-radius:7px;"&gt;</target>
       </trans-unit>
@@ -4118,7 +4118,7 @@
         <source>Nobody found. Try another search.</source>
         <target>Nadie encontrado. Intenta otra búsqueda.</target>
       </trans-unit>
-      <trans-unit id="907" resname="/&gt;&lt;span class=&quot;checkbox_span_h&quot; value=&quot;&lt;%=phoneNumber.value%&gt;&quot;&gt;&lt;span class=&quot;pointer-events-none&quot;&gt;&lt;span style=&quot;text-transform: uppercase&quot;&gt;&lt;%=phoneNumber.type%&gt;&lt;/span&gt;:&lt;%=_.escape(phoneNumber.value)%&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;" restype="string" datatype="html">
+      <trans-unit id="907" resname="/&gt;&lt;span class=&quot;checkbox_span_h&quot; value=&quot;&lt;%=phoneNumber.value%&gt;&quot;&gt;&lt;span class=&quot;pointer-events-none&quot;&gt;&lt;span style=&quot;text-transform: uppercase&quot;&gt;&lt;%=phoneNumber.type%&gt;&lt;/span&gt;: &lt;%=_.escape(phoneNumber.value)%&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;" restype="string" datatype="html">
         <source>/&gt;&lt;span class="checkbox_span_h" value="&lt;%=phoneNumber.value%&gt;"&gt;&lt;span class="pointer-events-none"&gt;&lt;span style="text-transform: uppercase"&gt;&lt;%=phoneNumber.type%&gt;&lt;/span&gt; : &lt;%=_.escape(phoneNumber.value)%&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;</source>
         <target>/&gt;&lt;span class="checkbox_span_h" value="&lt;%=phoneNumber.value%&gt;"&gt;&lt;span class="pointer-events-none"&gt;&lt;span style="text-transform: uppercase"&gt;&lt;%=phoneNumber.type%&gt;&lt;/span&gt; : &lt;%=_.escape(phoneNumber.value)%&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;</target>
       </trans-unit>
@@ -5022,7 +5022,7 @@
         <source>will be notified that you thought they were best qualified to answer:</source>
         <target>será notificado que pensaste que serían los más calificados para conestar:</target>
       </trans-unit>
-      <trans-unit id="1094" resname="Top experts in&lt;%=specialty%&gt;will be notified." restype="string" datatype="html">
+      <trans-unit id="1094" resname="Top experts in &lt;%=specialty%&gt; will be notified." restype="string" datatype="html">
         <source>Top experts in &lt;%=specialty%&gt; will be notified.</source>
         <target>Los mejores expertos en &lt;%=specialty%&gt; serán notificados.</target>
       </trans-unit>
@@ -5158,7 +5158,7 @@
         <source>You have no upcoming shifts &lt;a class="edit_shift_h"&gt;(add shift)&lt;/a&gt;</source>
         <target>No tienes turnos próximos &lt;a class="edit_shift_h"&gt;(añadir turno)&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1122" resname="on&lt;span&gt;&lt;%=day%&gt;&lt;/span&gt;at&lt;span&gt;&lt;%=shift_start_ts%&gt;-&lt;%=shift_end_ts%&gt;&lt;/span&gt;&lt;%=tz%&gt;&lt;a class=&quot;edit_shift_h&quot;&gt;(change)&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1122" resname="on&lt;span&gt;&lt;%=day%&gt;&lt;/span&gt;at&lt;span&gt;&lt;%=shift_start_ts%&gt; - &lt;%=shift_end_ts%&gt;&lt;/span&gt;&lt;%=tz%&gt;&lt;a class=&quot;edit_shift_h&quot;&gt;(change)&lt;/a&gt;" restype="string" datatype="html">
         <source>on &lt;span&gt;&lt;%=day%&gt;&lt;/span&gt; at &lt;span&gt;&lt;%=shift_start_ts%&gt; - &lt;%=shift_end_ts%&gt;&lt;/span&gt;&lt;%=tz%&gt;&lt;a class="edit_shift_h"&gt;(change)&lt;/a&gt;</source>
         <target>el &lt;span&gt;&lt;%=day%&gt;&lt;/span&gt; a las &lt;span&gt;&lt;%=shift_start_ts%&gt; - &lt;%=shift_end_ts%&gt;&lt;/span&gt;&lt;%=tz%&gt;&lt;a class="edit_shift_h"&gt;(cambiar)&lt;/a&gt;</target>
       </trans-unit>
@@ -5362,7 +5362,7 @@
         <source>A Dr. posted:</source>
         <target>Un Dr. publicó:</target>
       </trans-unit>
-      <trans-unit id="1167" resname="are seeking a tip on&lt;%=user_answers[0].user_answer.user_question.tip_topic_name.trim()%&gt;:" restype="string" datatype="html">
+      <trans-unit id="1167" resname="are seeking a tip on &lt;%=user_answers[0].user_answer.user_question.tip_topic_name.trim()%&gt;:" restype="string" datatype="html">
         <source>are seeking a tip on &lt;%=user_answers[0].user_answer.user_question.tip_topic_name.trim()%&gt;:</source>
         <target>están buscando un tipo sobre &lt;%=user_answers[0].user_answer.user_question.tip_topic_name.trim()%&gt;:</target>
       </trans-unit>
@@ -5390,7 +5390,7 @@
         <source>Message</source>
         <target>Mensaje</target>
       </trans-unit>
-      <trans-unit id="1174" resname="View all&lt;%= user_answers[0].user_answer.comments_count %&gt;comments &amp;raquo;" restype="string" datatype="html">
+      <trans-unit id="1174" resname="View all &lt;%= user_answers[0].user_answer.comments_count %&gt; comments &amp;raquo;" restype="string" datatype="html">
         <source>View all &lt;%= user_answers[0].user_answer.comments_count %&gt; comments &amp;raquo;</source>
         <target>Ver todos los &lt;%= user_answers[0].user_answer.comments_count %&gt; comentarios &amp;raquo;</target>
       </trans-unit>
@@ -5406,7 +5406,7 @@
         <source>,&lt;br&gt;&lt;span style="color:#999"&gt;Board&amp;nbsp;Certified&lt;/span&gt;</source>
         <target>,&lt;br&gt;&lt;span style="color:#999"&gt;Certificado por Consejo&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1177" resname="Is&lt;span&gt;Dr.&lt;%=doctor.expert.last_name%&gt;&lt;/span&gt;known for:" restype="string" datatype="html">
+      <trans-unit id="1177" resname="Is&lt;span&gt;Dr. &lt;%=doctor.expert.last_name%&gt;&lt;/span&gt;known for:" restype="string" datatype="html">
         <source>Is &lt;span&gt;Dr. &lt;%=doctor.expert.last_name%&gt;&lt;/span&gt; known for:</source>
         <target>Es el &lt;span&gt;Dr. &lt;%=doctor.expert.last_name%&gt;&lt;/span&gt; conocido por:</target>
       </trans-unit>
@@ -5414,7 +5414,7 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_patients/your_patients.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1178" resname="Last virtual consult on&lt;%=(consults[0].updated_at)%&gt;.&lt;br&gt;&lt;a href=&quot;&lt;%=consults[0].transcript_url%&gt;&quot;&gt;View transcript &amp;#187;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1178" resname="Last virtual consult on &lt;%=(consults[0].updated_at)%&gt;.&lt;br&gt;&lt;a href=&quot;&lt;%=consults[0].transcript_url%&gt;&quot;&gt;View transcript &amp;#187;&lt;/a&gt;" restype="string" datatype="html">
         <source>Last virtual consult on &lt;%=(consults[0].updated_at)%&gt;.&lt;br&gt;&lt;a href="&lt;%=consults[0].transcript_url%&gt;"&gt;View transcript &amp;#187;&lt;/a&gt;</source>
         <target>Última consulta virtual el &lt;%=(consults[0].updated_at)%&gt;.&lt;br&gt;&lt;a href="&lt;%=consults[0].transcript_url%&gt;"&gt;Ver transcripción &amp;#187;&lt;/a&gt;</target>
       </trans-unit>
@@ -5714,7 +5714,7 @@
         <source>MEDICAL/GRADUATE SCHOOLS</source>
         <target>ESCUELAS DE MEDICINA/POSGRADO</target>
       </trans-unit>
-      <trans-unit id="1245" resname=",&lt;%=school.year%&gt;," restype="string" datatype="html">
+      <trans-unit id="1245" resname=", &lt;%=school.year%&gt;," restype="string" datatype="html">
         <source>, &lt;%=school.year%&gt;,</source>
         <target>, &lt;%=school.year%&gt;,</target>
       </trans-unit>
@@ -6146,7 +6146,7 @@
         <source>You</source>
         <target>Tú</target>
       </trans-unit>
-      <trans-unit id="1344" resname="and&lt;a class=&quot;bold voters_h&quot;&gt;&lt;%=(feed[index].helpful_votes_count - 1)%&gt;others&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1344" resname="and&lt;a class=&quot;bold voters_h&quot;&gt;&lt;%=(feed[index].helpful_votes_count - 1)%&gt; others&lt;/a&gt;" restype="string" datatype="html">
         <source>and &lt;a class="bold voters_h"&gt;&lt;%=(feed[index].helpful_votes_count - 1)%&gt; others&lt;/a&gt;</source>
         <target>y &lt;a class="bold voters_h"&gt;&lt;%=(feed[index].helpful_votes_count - 1)%&gt; otros&lt;/a&gt;</target>
       </trans-unit>
@@ -6270,7 +6270,7 @@
         <source>Known for</source>
         <target>Conocido por</target>
       </trans-unit>
-      <trans-unit id="1369" resname="Thanks for referring&lt;%=episode.person.name%&gt;&lt;%=episode.person.last_name%&gt;to&lt;%=referral.expert.full_name%&gt;. That was very kind, responsive and helpful of you." restype="string" datatype="html">
+      <trans-unit id="1369" resname="Thanks for referring &lt;%=episode.person.name%&gt;&lt;%=episode.person.last_name%&gt; to &lt;%=referral.expert.full_name%&gt;. That was very kind, responsive and helpful of you." restype="string" datatype="html">
         <source>Thanks for referring &lt;%=episode.person.name%&gt;&lt;%=episode.person.last_name%&gt; to &lt;%=referral.expert.full_name%&gt;. That was very kind, responsive and helpful of you.</source>
         <target>Gracias por referir a &lt;%=episode.person.name%&gt;&lt;%=episode.person.last_name%&gt; a &lt;%=referral.expert.full_name%&gt;. Eso fue muy amable, atento y útil de ti.</target>
       </trans-unit>
@@ -6350,7 +6350,7 @@
         <source>*You do not earn credits when you don't respond in 72 hours or a patient uses your promo code.</source>
         <target>*No ganas créditos cuando no respondes en 72 horas o un paciente utiliza tu código promocional.</target>
       </trans-unit>
-      <trans-unit id="1388" resname="Would you like to refer&lt;%=episode.person.name%&gt;to a doctor" restype="string" datatype="html">
+      <trans-unit id="1388" resname="Would you like to refer &lt;%=episode.person.name%&gt; to a doctor" restype="string" datatype="html">
         <source>Would you like to refer &lt;%=episode.person.name%&gt; to a doctor</source>
         <target>¿Te gustaría referir a &lt;%=episode.person.name%&gt; a un doctor?</target>
       </trans-unit>
@@ -6358,7 +6358,7 @@
         <source>REFER</source>
         <target>REFERIR</target>
       </trans-unit>
-      <trans-unit id="1390" resname="Earn&lt;%=episode.points_and_credits_for_referral.points%&gt;points and a boost in your Responsiveness, Helpfulness and DocScore." restype="string" datatype="html">
+      <trans-unit id="1390" resname="Earn &lt;%=episode.points_and_credits_for_referral.points%&gt; points and a boost in your Responsiveness, Helpfulness and DocScore." restype="string" datatype="html">
         <source>Earn &lt;%=episode.points_and_credits_for_referral.points%&gt; points and a boost in your Responsiveness, Helpfulness and DocScore.</source>
         <target>Gana &lt;%=episode.points_and_credits_for_referral.points%&gt; puntos y un impulso en tu Capacidad de Respuesta, Utilidad y DocScore.</target>
       </trans-unit>
@@ -6366,7 +6366,7 @@
         <source>SORRY, NOT THIS TIME</source>
         <target>PERDÓN, ESTA VEZ NO</target>
       </trans-unit>
-      <trans-unit id="1392" resname="Dr.&lt;%=App.user.get(&quot;person.name&quot;)%&gt;isn’t available at the moment. We’ve issued a full refund so you can ask another doctor for help." restype="string" datatype="html">
+      <trans-unit id="1392" resname="Dr. &lt;%=App.user.get(&quot;person.name&quot;)%&gt; isn’t available at the moment. We’ve issued a full refund so you can ask another doctor for help." restype="string" datatype="html">
         <source>Dr. &lt;%=App.user.get("person.name")%&gt; isn’t available at the moment. We’ve issued a full refund so you can ask another doctor for help.</source>
         <target>Dr. &lt;%=App.user.get("person.name")%&gt; no está disponible en este momento. Hemos emitido un reembolso completo para que puedas solicitar ayuda a otro doctor.</target>
       </trans-unit>
@@ -6378,7 +6378,7 @@
         <source>We know we're privileged to have you here on HealthTap, and we've preserved your Responsiveness level.</source>
         <target>Sabemos que somos privilegiados de tenerte aquí en HealthTap, y hemos preservado tu nivel de Capacidad de Respuesta.</target>
       </trans-unit>
-      <trans-unit id="1395" resname="Earn&lt;%=episode.points_and_credits_for_answer.points%&gt;points and a boost in your Helpfulness and DocScore." restype="string" datatype="html">
+      <trans-unit id="1395" resname="Earn &lt;%=episode.points_and_credits_for_answer.points%&gt; points and a boost in your Helpfulness and DocScore." restype="string" datatype="html">
         <source>Earn &lt;%=episode.points_and_credits_for_answer.points%&gt; points and a boost in your Helpfulness and DocScore.</source>
         <target>Gana &lt;%=episode.points_and_credits_for_answer.points%&gt; puntos y un impulso a tu Utilidad y DocScore.</target>
       </trans-unit>
@@ -6406,7 +6406,7 @@
         <source>Clarify answer to boost your Responsiveness, Helpfulness and DocScore.</source>
         <target>Aclara respuesta para impulsar tu Capacidad de Respuesta, Utilidad y DocScore.</target>
       </trans-unit>
-      <trans-unit id="1402" resname="Thanks for answering, Dr.&lt;%=App.user.get(&apos;person.last_name&apos;)%&gt;. That was very kind, responsive and helpful of you." restype="string" datatype="html">
+      <trans-unit id="1402" resname="Thanks for answering, Dr. &lt;%=App.user.get(&apos;person.last_name&apos;)%&gt;. That was very kind, responsive and helpful of you." restype="string" datatype="html">
         <source>Thanks for answering, Dr. &lt;%=App.user.get('person.last_name')%&gt;. That was very kind, responsive and helpful of you.</source>
         <target>Gracias por contestar, Dr. &lt;%=App.user.get('person.last_name')%&gt;. Eso fue muy amable, atento y útil de ti.</target>
       </trans-unit>
@@ -6450,7 +6450,7 @@
         <source>SORRY, CAN'T HELP RIGHT NOW</source>
         <target>PERDÓN, NO PUEDO AYUDAR EN ESTE MOMENTO</target>
       </trans-unit>
-      <trans-unit id="1412" resname="Dr.&lt;%=App.user.get(&quot;person.name&quot;)%&gt;isn&apos;t available at the moments.We&apos;he refunded you[number] HealthTap Credits so you can ask another doctor for help." restype="string" datatype="html">
+      <trans-unit id="1412" resname="Dr. &lt;%=App.user.get(&quot;person.name&quot;)%&gt; isn&apos;t available at the moments.We&apos;he refunded you[number] HealthTap Credits so you can ask another doctor for help." restype="string" datatype="html">
         <source>Dr. &lt;%=App.user.get("person.name")%&gt; isn't available at the moments.We'he refunded you[number] HealthTap Credits so you can ask another doctor for help.</source>
         <target>Dr. &lt;%=App.user.get("person.name")%&gt; no está disponible en este momento. Te hemos reembolsado [number] Créditos HealthTap para que puedas solicitar ayuda a otro doctor.</target>
       </trans-unit>
@@ -6622,7 +6622,7 @@
         <source>LEVEL</source>
         <target>NIVEL</target>
       </trans-unit>
-      <trans-unit id="1444" resname="/&lt;%=expert.next_level_point_range_start ? expert.next_level_point_range_start.toString().digits(): &apos;&apos;%&gt;&lt;span style=&quot;font-style: italic; text-transform:none;&quot;&gt;Points &amp;raquo;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1444" resname="/ &lt;%=expert.next_level_point_range_start ? expert.next_level_point_range_start.toString().digits(): &apos;&apos;%&gt;&lt;span style=&quot;font-style: italic; text-transform:none;&quot;&gt;Points &amp;raquo;&lt;/span&gt;" restype="string" datatype="html">
         <source>/ &lt;%=expert.next_level_point_range_start ? expert.next_level_point_range_start.toString().digits(): ''%&gt;&lt;span style="font-style: italic; text-transform:none;"&gt;Points &amp;raquo;&lt;/span&gt;</source>
         <target>/ &lt;%=expert.next_level_point_range_start ? expert.next_level_point_range_start.toString().digits(): ''%&gt;&lt;span style="font-style: italic; text-transform:none;"&gt;Puntos &amp;raquo;&lt;/span&gt;</target>
       </trans-unit>
@@ -7522,7 +7522,7 @@
         <source>Thanks for your helpful answer!</source>
         <target>¡Gracias por tu útil respuesta!</target>
       </trans-unit>
-      <trans-unit id="1647" resname="You earned&lt;span class=&quot;earned_point&quot;&gt;&lt;span&gt;+&lt;%=points%&gt;&lt;/span&gt;POINTS&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1647" resname="You earned&lt;span class=&quot;earned_point&quot;&gt;&lt;span&gt;+ &lt;%=points%&gt;&lt;/span&gt;POINTS&lt;/span&gt;" restype="string" datatype="html">
         <source>You earned &lt;span class="earned_point"&gt;&lt;span&gt;+ &lt;%=points%&gt;&lt;/span&gt; POINTS &lt;/span&gt;</source>
         <target>Ganaste &lt;span class="earned_point"&gt;&lt;span&gt;+ &lt;%=points%&gt;&lt;/span&gt; PUNTOS &lt;/span&gt;</target>
       </trans-unit>
@@ -7534,7 +7534,7 @@
         <source>Each answer you author helps millions with the same question. We calculate “people helped” based on the number of times your answers are thanked, agreed, or viewed by people and doctors worldwide.</source>
         <target>Cada respuesta que redactas ayuda a millones con la misma pregunta. Calculamos a las "personas ayudadas" basándonos en el número de veces que tus respuestas son agradecidas, acordadas, o vistas por personas y doctores a nivel mundial.</target>
       </trans-unit>
-      <trans-unit id="1650" resname="more&lt;%=App.session &amp;&amp; App.session.expertAnswerSuccess &amp;&amp; App.session.expertAnswerSuccess.isTip ? &apos;tips&apos; : &apos;questions&apos;%&gt;to&lt;span style=&quot;font-weight: bold&quot;&gt;&lt;%=pointMap[bonus_bar.target_bonus_multiplier - 1]%&gt;&lt;/span&gt;your daily points!" restype="string" datatype="html">
+      <trans-unit id="1650" resname="more &lt;%=App.session &amp;&amp; App.session.expertAnswerSuccess &amp;&amp; App.session.expertAnswerSuccess.isTip ? &apos;tips&apos; : &apos;questions&apos;%&gt; to&lt;span style=&quot;font-weight: bold&quot;&gt;&lt;%=pointMap[bonus_bar.target_bonus_multiplier - 1]%&gt;&lt;/span&gt;your daily points!" restype="string" datatype="html">
         <source>more &lt;%=App.session &amp;&amp; App.session.expertAnswerSuccess &amp;&amp; App.session.expertAnswerSuccess.isTip ? 'tips' : 'questions'%&gt; to &lt;span style="font-weight: bold"&gt;&lt;%=pointMap[bonus_bar.target_bonus_multiplier - 1]%&gt;&lt;/span&gt; your daily points!</source>
         <target>más &lt;%=App.session &amp;&amp; App.session.expertAnswerSuccess &amp;&amp; App.session.expertAnswerSuccess.isTip ? 'tips' : 'preguntas'%&gt; para &lt;span style="font-weight: bold"&gt;&lt;%=pointMap[bonus_bar.target_bonus_multiplier - 1]%&gt;&lt;/span&gt; tus puntos diarios!</target>
       </trans-unit>
@@ -7566,7 +7566,7 @@
         <source>&amp;#10003; Connected</source>
         <target>&amp;#10003; Conectado</target>
       </trans-unit>
-      <trans-unit id="1656" resname="A&lt;%=user_question.actor.age_years%&gt;year old,&lt;%=user_question.actor.gender%&gt;" restype="string" datatype="html">
+      <trans-unit id="1656" resname="A &lt;%=user_question.actor.age_years%&gt; year old, &lt;%=user_question.actor.gender%&gt;" restype="string" datatype="html">
         <source>A &lt;%=user_question.actor.age_years%&gt; year old, &lt;%=user_question.actor.gender%&gt;</source>
         <target>Un individuo &lt;%=user_question.actor.gender%&gt; de &lt;%=user_question.actor.age_years%&gt; años de edad,</target>
       </trans-unit>
@@ -7574,7 +7574,7 @@
         <source>member, asked:</source>
         <target>miembro, preguntó:</target>
       </trans-unit>
-      <trans-unit id="1658" resname="A&lt;%=user_question.actor.age_years%&gt;year old" restype="string" datatype="html">
+      <trans-unit id="1658" resname="A &lt;%=user_question.actor.age_years%&gt; year old" restype="string" datatype="html">
         <source>A &lt;%=user_question.actor.age_years%&gt; year old</source>
         <target>Un individuo de &lt;%=user_question.actor.age_years%&gt; años de edad</target>
       </trans-unit>
@@ -7602,7 +7602,7 @@
         <source>suggests &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt;'s answer:</source>
         <target>sugiere la respuesta de &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt;:</target>
       </trans-unit>
-      <trans-unit id="1665" resname="Originally authored by&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;in response to question,&lt;span class=&quot;bold&quot;&gt;&amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt;&amp;quot;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1665" resname="Originally authored by&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;in response to question,&lt;span class=&quot;bold&quot;&gt;&amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt; &amp;quot;&lt;/span&gt;" restype="string" datatype="html">
         <source>Originally authored by &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; in response to question, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</source>
         <target>Originalmente redactada por &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; in response to question, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</target>
       </trans-unit>
@@ -7754,7 +7754,7 @@
         <source>Type and select to add your own</source>
         <target>Escribe y selecciona para añadir las tuyas</target>
       </trans-unit>
-      <trans-unit id="1699" resname="Saving your&lt;%=App.session.expertAnswerForm &amp;&amp; App.session.expertAnswerForm.isTip ? &apos;Tip&apos; : &apos;Answer&apos;%&gt;..." restype="string" datatype="html">
+      <trans-unit id="1699" resname="Saving your &lt;%=App.session.expertAnswerForm &amp;&amp; App.session.expertAnswerForm.isTip ? &apos;Tip&apos; : &apos;Answer&apos;%&gt;..." restype="string" datatype="html">
         <source>Saving your &lt;%=App.session.expertAnswerForm &amp;&amp; App.session.expertAnswerForm.isTip ? 'Tip' : 'Answer'%&gt;...</source>
         <target>Guardando tu &lt;%=App.session.expertAnswerForm &amp;&amp; App.session.expertAnswerForm.isTip ? 'Tip' : 'Respuesta'%&gt;...</target>
       </trans-unit>
@@ -7774,7 +7774,7 @@
         <source>Please review this app for members:</source>
         <target>Por favor, valora esta aplicación para miembros:</target>
       </trans-unit>
-      <trans-unit id="1703" resname="View all&lt;%= reviewable_app.comments_count %&gt;comments &amp;raquo;" restype="string" datatype="html">
+      <trans-unit id="1703" resname="View all &lt;%= reviewable_app.comments_count %&gt; comments &amp;raquo;" restype="string" datatype="html">
         <source>View all &lt;%= reviewable_app.comments_count %&gt; comments &amp;raquo;</source>
         <target>Ver todos los &lt;%= reviewable_app.comments_count %&gt; comentarios &amp;raquo;</target>
       </trans-unit>
@@ -8214,7 +8214,7 @@
         <source>About</source>
         <target>Acerca de</target>
       </trans-unit>
-      <trans-unit id="1800" resname="Updated:&lt;%=reviewable_app.updated_at.dateConvert(&apos;YYYY-MM-DDThh:mm:ssZ&apos;, &apos;%B DD, YYYY&apos;)%&gt;" restype="string" datatype="html">
+      <trans-unit id="1800" resname="Updated: &lt;%=reviewable_app.updated_at.dateConvert(&apos;YYYY-MM-DDThh:mm:ssZ&apos;, &apos;%B DD, YYYY&apos;)%&gt;" restype="string" datatype="html">
         <source>Updated: &lt;%=reviewable_app.updated_at.dateConvert('YYYY-MM-DDThh:mm:ssZ', '%B DD, YYYY')%&gt;</source>
         <target>Actualizado: &lt;%=reviewable_app.updated_at.dateConvert('YYYY-MM-DDThh:mm:ssZ', '%B DD, YYYY')%&gt;</target>
       </trans-unit>
@@ -8626,7 +8626,7 @@
         <source>and &lt;span class="bold"&gt;&lt;%= user_question.num_experts_answered %&gt;&lt;/span&gt; other doctors answered:</source>
         <target>y otros &lt;span class="bold"&gt;&lt;%= user_question.num_experts_answered %&gt;&lt;/span&gt; doctores contestaron:</target>
       </trans-unit>
-      <trans-unit id="1874" resname="Re: MedPub#&lt;%= user_question.publication_id %&gt;-" restype="string" datatype="html">
+      <trans-unit id="1874" resname="Re: MedPub#&lt;%= user_question.publication_id %&gt; -" restype="string" datatype="html">
         <source>Re: MedPub#&lt;%= user_question.publication_id %&gt; -</source>
         <target>Re: MedPub#&lt;%= user_question.publication_id %&gt; -</target>
       </trans-unit>
@@ -8794,7 +8794,7 @@
         <source>Ask about this</source>
         <target>Preguntar acerca de esto</target>
       </trans-unit>
-      <trans-unit id="1908" resname="Source:&lt;%= publication.journal_name %&gt;&lt;%= publication.journal_year ? publication.journal_year.substr(0, 4) : &apos;&apos; %&gt;;" restype="string" datatype="html">
+      <trans-unit id="1908" resname="Source: &lt;%= publication.journal_name %&gt; &lt;%= publication.journal_year ? publication.journal_year.substr(0, 4) : &apos;&apos; %&gt;;" restype="string" datatype="html">
         <source>Source: &lt;%= publication.journal_name %&gt; &lt;%= publication.journal_year ? publication.journal_year.substr(0, 4) : '' %&gt;;</source>
         <target>Fuente: &lt;%= publication.journal_name %&gt; &lt;%= publication.journal_year ? publication.journal_year.substr(0, 4) : '' %&gt;;</target>
       </trans-unit>
@@ -8874,7 +8874,7 @@
         <source>Ask all doctors &lt;b class="ask_fee"&gt;(free)&lt;/b&gt;</source>
         <target>Pregúntales a todos los doctores &lt;b class="ask_fee"&gt;(gratis)&lt;/b&gt;</target>
       </trans-unit>
-      <trans-unit id="1924" resname="Ask&lt;%= author.person.full_name %&gt;&lt;b class=&quot;ask_fee&quot;&gt;(paid)&lt;/b&gt;" restype="string" datatype="html">
+      <trans-unit id="1924" resname="Ask &lt;%= author.person.full_name %&gt;&lt;b class=&quot;ask_fee&quot;&gt;(paid)&lt;/b&gt;" restype="string" datatype="html">
         <source>Ask &lt;%= author.person.full_name %&gt; &lt;b class="ask_fee"&gt;(paid)&lt;/b&gt;</source>
         <target>Pregúntale a &lt;%= author.person.full_name %&gt; &lt;b class="ask_fee"&gt;(pagado)&lt;/b&gt;</target>
       </trans-unit>
@@ -10754,7 +10754,7 @@
   </file>
   <file original="public/javascripts/templates/people/expert_claim_sign_up.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2320" resname="Hi Dr.&lt;%= last_name %&gt;!" restype="string" datatype="html">
+      <trans-unit id="2320" resname="Hi Dr. &lt;%= last_name %&gt;!" restype="string" datatype="html">
         <source>Hi Dr. &lt;%= last_name %&gt;!</source>
         <target>¡Hola Dr. &lt;%= last_name %&gt;!</target>
       </trans-unit>
@@ -10774,7 +10774,7 @@
         <source>checked</source>
         <target>revisado</target>
       </trans-unit>
-      <trans-unit id="2325" resname="/&gt;&lt;span class=&quot;board-certified-label&quot;&gt;Board certified&lt;/span&gt;&lt;a class=&quot;add-another-specialty&lt;% if( i&lt; specialties.length - 1 ){ %&gt;hidden&lt;% } %&gt;&quot;&gt;+ add another&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="2325" resname="/&gt;&lt;span class=&quot;board-certified-label&quot;&gt;Board certified&lt;/span&gt;&lt;a class=&quot;add-another-specialty &lt;% if( i&lt; specialties.length - 1 ){ %&gt;hidden&lt;% } %&gt;&quot;&gt;+ add another&lt;/a&gt;" restype="string" datatype="html">
         <source>/&gt; &lt;span class="board-certified-label"&gt;Board certified&lt;/span&gt; &lt;a class="add-another-specialty &lt;% if( i &lt; specialties.length - 1 ){ %&gt;hidden&lt;% } %&gt;"&gt;+ add another&lt;/a&gt;</source>
         <target>/&gt; &lt;span class="board-certified-label"&gt;Certificado por consejo&lt;/span&gt; &lt;a class="add-another-specialty &lt;% if( i &lt; specialties.length - 1 ){ %&gt;hidden&lt;% } %&gt;"&gt;+ añadir otra&lt;/a&gt;</target>
       </trans-unit>
@@ -11282,7 +11282,7 @@
         <source>Welcome!</source>
         <target>¡Bienvenido!</target>
       </trans-unit>
-      <trans-unit id="2438" resname="Your thanks has been sent to Dr.&lt;%= (location.search.parseQuesryString()[&apos;doctor&apos;]) %&gt;." restype="string" datatype="html">
+      <trans-unit id="2438" resname="Your thanks has been sent to Dr. &lt;%= (location.search.parseQuesryString()[&apos;doctor&apos;]) %&gt;." restype="string" datatype="html">
         <source>Your thanks has been sent to Dr. &lt;%= (location.search.parseQuesryString()['doctor']) %&gt;.</source>
         <target>Tus agradecimientos han sido enviados al Dr. &lt;%= (location.search.parseQuesryString()['doctor']) %&gt;.</target>
       </trans-unit>
@@ -11426,7 +11426,7 @@
         <source>Congratulations, you are now eligible for a position on our Editorial Board! The board will evaluate your candidacy and notify you soon.</source>
         <target>¡Felicidades! ¡Ahora eres elegible para una posición en nuestro Consejo Editorial! El consejo evaluará tu candidatura y te notificará pronto.</target>
       </trans-unit>
-      <trans-unit id="2468" resname="Review&lt;span class=&quot;bold&quot;&gt;&lt;%= (App.user.get(&apos;person&apos;).editorial_board_threshold - App.user.get(&apos;person&apos;).apps_recommended_num - 1) %&gt;more apps&lt;/span&gt;and become eligible for Editorial status, and have your reviews publicly displayed!&lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1#how_it_works/apprx&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="2468" resname="Review&lt;span class=&quot;bold&quot;&gt;&lt;%= (App.user.get(&apos;person&apos;).editorial_board_threshold - App.user.get(&apos;person&apos;).apps_recommended_num - 1) %&gt; more apps&lt;/span&gt;and become eligible for Editorial status, and have your reviews publicly displayed!&lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1#how_it_works/apprx&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Review &lt;span class="bold"&gt;&lt;%= (App.user.get('person').editorial_board_threshold - App.user.get('person').apps_recommended_num - 1) %&gt; more apps&lt;/span&gt; and become eligible for Editorial status, and have your reviews publicly displayed! &lt;a class="learn_more_editorial" href="/?doctor=1#how_it_works/apprx"&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
         <target>Valora &lt;span class="bold"&gt;&lt;%= (App.user.get('person').editorial_board_threshold - App.user.get('person').apps_recommended_num - 1) %&gt; aplicaciones más&lt;/span&gt; y vuelvete elegible para estado Editorial, y haz que tus valoraciones sean mostradas públicamente! &lt;a class="learn_more_editorial" href="/?doctor=1#how_it_works/apprx"&gt;Aprender más &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -11894,11 +11894,11 @@
   </file>
   <file original="public/javascripts/templates/layout/launchpad/member.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2557" resname="10){ %&gt;class=&quot;long-name&quot;" restype="string" datatype="html">
+      <trans-unit id="2557" resname="10){ %&gt; class=&quot;long-name&quot;" restype="string" datatype="html">
         <source>10){ %&gt; class="long-name"</source>
         <target>10){ %&gt; class="long-name"</target>
       </trans-unit>
-      <trans-unit id="2558" resname="&gt;Hi&lt;%= App.user.get(&apos;person.name&apos;).toLowerCase() == &apos;anonymous&apos; ? &apos;there&apos; : App.user.get(&apos;person.name&apos;).truncate({ length : 20 }) %&gt;!" restype="string" datatype="html">
+      <trans-unit id="2558" resname="&gt; Hi &lt;%= App.user.get(&apos;person.name&apos;).toLowerCase() == &apos;anonymous&apos; ? &apos;there&apos; : App.user.get(&apos;person.name&apos;).truncate({ length : 20 }) %&gt;!" restype="string" datatype="html">
         <source>&gt; Hi &lt;%= App.user.get('person.name').toLowerCase() == 'anonymous' ? 'there' : App.user.get('person.name').truncate({ length : 20 }) %&gt;!</source>
         <target>&gt; Hola &lt;%= App.user.get('person.name').toLowerCase() == 'anónimo' ? 'there' : App.user.get('person.name').truncate({ length : 20 }) %&gt;!</target>
       </trans-unit>
@@ -11926,11 +11926,11 @@
   </file>
   <file original="public/javascripts/templates/layout/launchpad/expert.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2564" resname="Hi Dr.&lt;%= App.user.get(&apos;person.last_name&apos;) %&gt;!" restype="string" datatype="html">
+      <trans-unit id="2564" resname="Hi Dr. &lt;%= App.user.get(&apos;person.last_name&apos;) %&gt;!" restype="string" datatype="html">
         <source>Hi Dr. &lt;%= App.user.get('person.last_name') %&gt;!</source>
         <target>Hola, Dr. &lt;%= App.user.get('person.last_name') %&gt;!</target>
       </trans-unit>
-      <trans-unit id="2565" resname="&gt;Hi&lt;%= studentName %&gt;!" restype="string" datatype="html">
+      <trans-unit id="2565" resname="&gt; Hi &lt;%= studentName %&gt;!" restype="string" datatype="html">
         <source>&gt; Hi &lt;%= studentName %&gt;!</source>
         <target>¡&gt; Hola &lt;%= studentName %&gt;!</target>
       </trans-unit>
@@ -12250,7 +12250,7 @@
         <source>We'll let&amp;nbsp;&lt;%= App.session.followUpAnswerName %&gt;&amp;nbsp;know that you thought of them for this question.</source>
         <target>Le haremos saber a&amp;nbsp;&lt;%= App.session.followUpAnswerName %&gt;&amp;nbsp;que pensaste en ellos para esta pregunta.</target>
       </trans-unit>
-      <trans-unit id="2628" resname="This question has been sent to doctors in the&lt;%= App.session.referSpecialty %&gt;field" restype="string" datatype="html">
+      <trans-unit id="2628" resname="This question has been sent to doctors in the &lt;%= App.session.referSpecialty %&gt; field" restype="string" datatype="html">
         <source>This question has been sent to doctors in the &lt;%= App.session.referSpecialty %&gt; field</source>
         <target>Esta pregunta ha sido enviada a doctores en el campo de &lt;%= App.session.referSpecialty %&gt;</target>
       </trans-unit>
@@ -12290,7 +12290,7 @@
         <source>Level</source>
         <target>Nivel</target>
       </trans-unit>
-      <trans-unit id="2636" resname="/&lt;%= (&apos;&apos; + next_level_point_range_start).comma() %&gt;points »" restype="string" datatype="html">
+      <trans-unit id="2636" resname="/ &lt;%= (&apos;&apos; + next_level_point_range_start).comma() %&gt; points »" restype="string" datatype="html">
         <source>/ &lt;%= ('' + next_level_point_range_start).comma() %&gt; points »</source>
         <target>/ &lt;%= ('' + next_level_point_range_start).comma() %&gt; puntos »</target>
       </trans-unit>
@@ -12438,7 +12438,7 @@
         <source>Your shift:&lt;br&gt;</source>
         <target>Tu turno: &lt;br&gt;</target>
       </trans-unit>
-      <trans-unit id="2655" resname="Shift changes take effect in&lt;%= waittime %&gt;days" restype="string" datatype="html">
+      <trans-unit id="2655" resname="Shift changes take effect in &lt;%= waittime %&gt; days" restype="string" datatype="html">
         <source>Shift changes take effect in &lt;%= waittime %&gt; days</source>
         <target>Los cambios de turno surten efecto en &lt;%= waittime %&gt; días</target>
       </trans-unit>
@@ -12942,7 +12942,7 @@
         <source>needs a clarification</source>
         <target>necesita una aclaración</target>
       </trans-unit>
-      <trans-unit id="2761" resname="Please help&lt;%=interlocutor.person.name+&apos; &apos;+interlocutor.person.last_name%&gt;with a little more information regarding the answer you supplied. Earn&lt;span class=&quot;episode_points&quot;&gt;500&lt;/span&gt;points and a boost in your Helpfulness and DocScores." restype="string" datatype="html">
+      <trans-unit id="2761" resname="Please help &lt;%=interlocutor.person.name+&apos; &apos;+interlocutor.person.last_name%&gt; with a little more information regarding the answer you supplied. Earn&lt;span class=&quot;episode_points&quot;&gt;500&lt;/span&gt;points and a boost in your Helpfulness and DocScores." restype="string" datatype="html">
         <source>Please help &lt;%=interlocutor.person.name+' '+interlocutor.person.last_name%&gt; with a little more information regarding the answer you supplied. Earn &lt;span class="episode_points"&gt;500&lt;/span&gt; points and a boost in your Helpfulness and DocScores.</source>
         <target>Por favor, ayuda a &lt;%=interlocutor.person.name+' '+interlocutor.person.last_name%&gt; con un poco más de información respecto a la pregunta que entregaste. Gana &lt;span class="episode_points"&gt;500&lt;/span&gt; puntos y un impulso en tu Utilidad y DocScores.</target>
       </trans-unit>
@@ -13550,7 +13550,7 @@
         <source>Consult...</source>
         <target>Consulta...</target>
       </trans-unit>
-      <trans-unit id="2896" resname="Prime&lt;%= consult_type_name %&gt;Consult..." restype="string" datatype="html">
+      <trans-unit id="2896" resname="Prime &lt;%= consult_type_name %&gt; Consult..." restype="string" datatype="html">
         <source>Prime &lt;%= consult_type_name %&gt; Consult...</source>
         <target>Consulta &lt;%= consult_type_name %&gt; Prime...</target>
       </trans-unit>
@@ -13558,7 +13558,7 @@
         <source>We'll save the answer you're working on so you may complete it after this call.</source>
         <target>Guardaremos la respuesta en la que estás trabajando para que puedas completarla luego de esta llamada.</target>
       </trans-unit>
-      <trans-unit id="2898" resname="Answer&lt;%= consult_type_mode %&gt;call" restype="string" datatype="html">
+      <trans-unit id="2898" resname="Answer &lt;%= consult_type_mode %&gt; call" restype="string" datatype="html">
         <source>Answer &lt;%= consult_type_mode %&gt; call</source>
         <target>Contestar &lt;%= consult_type_mode %&gt; llamada</target>
       </trans-unit>
@@ -14466,7 +14466,7 @@
         <source>Here are more tips users are seeking...</source>
         <target>Aquí hay más tips que los usuarios están buscando...</target>
       </trans-unit>
-      <trans-unit id="3069" resname="Users are seeking a tip on&lt;%= val.user_question.tip_topic_name %&gt;:" restype="string" datatype="html">
+      <trans-unit id="3069" resname="Users are seeking a tip on &lt;%= val.user_question.tip_topic_name %&gt;:" restype="string" datatype="html">
         <source>Users are seeking a tip on &lt;%= val.user_question.tip_topic_name %&gt;:</source>
         <target>Los usuarios están buscando un tip sobre &lt;%= val.user_question.tip_topic_name %&gt;:</target>
       </trans-unit>
@@ -14550,7 +14550,7 @@
         <source>Concierge Virtual Practice Hours</source>
         <target>Horario de Consultorio Virtual Concierge</target>
       </trans-unit>
-      <trans-unit id="3083" resname="Let patients know when you&apos;re available in your Virtual Practice on&lt;%=toTitleCase(day) %&gt;s" restype="string" datatype="html">
+      <trans-unit id="3083" resname="Let patients know when you&apos;re available in your Virtual Practice on &lt;%=toTitleCase(day) %&gt;s" restype="string" datatype="html">
         <source>Let patients know when you're available in your Virtual Practice on &lt;%=toTitleCase(day) %&gt;s</source>
         <target>Hazle saber a los pacientes cuando estás disponible en tu Consultorio Virtual en &lt;%=toTitleCase(day) %&gt;s</target>
       </trans-unit>
@@ -15330,11 +15330,11 @@
         <source>topics_follow</source>
         <target>topics_follow</target>
       </trans-unit>
-      <trans-unit id="3248" resname="View all&lt;%= comment_count %&gt;comments &amp;raquo;" restype="string" datatype="html">
+      <trans-unit id="3248" resname="View all &lt;%= comment_count %&gt; comments &amp;raquo;" restype="string" datatype="html">
         <source>View all &lt;%= comment_count %&gt; comments &amp;raquo;</source>
         <target>Ver todos los &lt;%= comment_count %&gt; comentarios &amp;raquo;</target>
       </trans-unit>
-      <trans-unit id="3249" resname="Related to&lt;%= decodeURI(App.session.params.topic).capitalize().replace(/\-/g, &apos; &apos;) %&gt;:" restype="string" datatype="html">
+      <trans-unit id="3249" resname="Related to &lt;%= decodeURI(App.session.params.topic).capitalize().replace(/\-/g, &apos; &apos;) %&gt;:" restype="string" datatype="html">
         <source>Related to &lt;%= decodeURI(App.session.params.topic).capitalize().replace(/\-/g, ' ') %&gt;:</source>
         <target>Relacionado con &lt;%= decodeURI(App.session.params.topic).capitalize().replace(/\-/g, ' ') %&gt;:</target>
       </trans-unit>
@@ -15350,7 +15350,7 @@
         <source>Medical Student &lt;a class="actor_link" href="#experts/&lt;%= user_question.actor.id %&gt;"&gt; &lt;%= user_question.actor.first_name ? user_question.actor.first_name+' '+user_question.actor.last_name : user_question.actor.name %&gt; &lt;/a&gt;</source>
         <target>Estudiante de Medicina &lt;a class="actor_link" href="#experts/&lt;%= user_question.actor.id %&gt;"&gt; &lt;%= user_question.actor.first_name ? user_question.actor.first_name+' '+user_question.actor.last_name : user_question.actor.name %&gt; &lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="3253" resname="users are seeking a tip on&lt;%= user_question.tip_topic_name %&gt;:" restype="string" datatype="html">
+      <trans-unit id="3253" resname="users are seeking a tip on &lt;%= user_question.tip_topic_name %&gt;:" restype="string" datatype="html">
         <source>users are seeking a tip on &lt;%= user_question.tip_topic_name %&gt;:</source>
         <target>los usuarios están buscando un tip sobre &lt;%= user_question.tip_topic_name %&gt;:</target>
       </trans-unit>
@@ -15602,7 +15602,7 @@
         <source>LIVES SAVED</source>
         <target>VIDAS SALVADAS</target>
       </trans-unit>
-      <trans-unit id="3304" resname="= my_rank){ %&gt;rank_arrow_up" restype="string" datatype="html">
+      <trans-unit id="3304" resname="= my_rank){ %&gt; rank_arrow_up" restype="string" datatype="html">
         <source>= my_rank){ %&gt; rank_arrow_up</source>
         <target>= my_rank){ %&gt; rank_arrow_up</target>
       </trans-unit>
@@ -15834,7 +15834,7 @@
         <source>INSURANCE COMPANIES</source>
         <target>COMPAÑÍAS DE SEGUROS</target>
       </trans-unit>
-      <trans-unit id="3354" resname=":&lt;a class=&quot;showInsurances&quot; onclick=&quot;$(&apos;ul.&lt;%= className %&gt;&apos;).toggleClass(&apos;hidden&apos;)&quot;&gt;&lt;%= val.plans.length %&gt;Plans&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="3354" resname=":&lt;a class=&quot;showInsurances&quot; onclick=&quot;$(&apos;ul.&lt;%= className %&gt;&apos;).toggleClass(&apos;hidden&apos;)&quot;&gt;&lt;%= val.plans.length %&gt; Plans&lt;/a&gt;" restype="string" datatype="html">
         <source>: &lt;a class="showInsurances" onclick="$('ul.&lt;%= className %&gt;').toggleClass('hidden')"&gt;&lt;%= val.plans.length %&gt; Plans&lt;/a&gt;</source>
         <target>: &lt;a class="showInsurances" onclick="$('ul.&lt;%= className %&gt;').toggleClass('hidden')"&gt;&lt;%= val.plans.length %&gt; Planes&lt;/a&gt;</target>
       </trans-unit>
@@ -15910,7 +15910,7 @@
         <source>In the Spotlight</source>
         <target>En el Centro de Atención</target>
       </trans-unit>
-      <trans-unit id="3371" resname="Answer&lt;%= (spotlight_goal - spotlight_progress) %&gt;questions" restype="string" datatype="html">
+      <trans-unit id="3371" resname="Answer &lt;%= (spotlight_goal - spotlight_progress) %&gt; questions" restype="string" datatype="html">
         <source>Answer &lt;%= (spotlight_goal - spotlight_progress) %&gt; questions</source>
         <target>Contestar &lt;%= (spotlight_goal - spotlight_progress) %&gt; preguntas</target>
       </trans-unit>
@@ -16266,11 +16266,11 @@
         <source>You have</source>
         <target>Tú tienes</target>
       </trans-unit>
-      <trans-unit id="3449" resname="paid private&lt;%= messages &gt;1 ? &quot;conversations&quot; : &quot;conversation&quot; %&gt;" restype="string" datatype="html">
+      <trans-unit id="3449" resname="paid private &lt;%= messages &gt;1 ? &quot;conversations&quot; : &quot;conversation&quot; %&gt;" restype="string" datatype="html">
         <source>paid private &lt;%= messages &gt; 1 ? "conversations" : "conversation" %&gt;</source>
         <target>&lt;%= messages &gt; 1 ? "conversaciones" : "conversación" %&gt; privada(s) pagada(s)</target>
       </trans-unit>
-      <trans-unit id="3450" resname="and&lt;a href=&quot;#expert/messages&quot;&gt;&lt;%= (appointments.toString().comma()) %&gt;appointment&lt;%= appointments &gt;1 ? &quot;requests&quot; : &quot;request&quot; %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="3450" resname="and&lt;a href=&quot;#expert/messages&quot;&gt;&lt;%= (appointments.toString().comma()) %&gt; appointment &lt;%= appointments &gt;1 ? &quot;requests&quot; : &quot;request&quot; %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>and &lt;a href="#expert/messages"&gt;&lt;%= (appointments.toString().comma()) %&gt; appointment &lt;%= appointments &gt; 1 ? "requests" : "request" %&gt;&lt;/a&gt;</source>
         <target>y &lt;a href="#expert/messages"&gt;&lt;%= (appointments.toString().comma()) %&gt; &lt;%= appointments &gt; 1 ? "solicitudes" : "solicitud" %&gt;&lt;/a&gt; de cita(s)</target>
       </trans-unit>
@@ -16318,27 +16318,27 @@
   </file>
   <file original="public/javascripts/templates/experts/recommend_note.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3458" resname="Recommend&lt;%= expert.full_name %&gt;!" restype="string" datatype="html">
+      <trans-unit id="3458" resname="Recommend &lt;%= expert.full_name %&gt;!" restype="string" datatype="html">
         <source>Recommend &lt;%= expert.full_name %&gt;!</source>
         <target>Recomienda &lt;%= expert.full_name %&gt;!</target>
       </trans-unit>
-      <trans-unit id="3459" resname="Write a recommendation for&lt;%= expert.full_name %&gt;here. Remember, what you say will appear on this doctor’s Virtual Practice page." restype="string" datatype="html">
+      <trans-unit id="3459" resname="Write a recommendation for &lt;%= expert.full_name %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page." restype="string" datatype="html">
         <source>Write a recommendation for &lt;%= expert.full_name %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page.</source>
         <target>Escribe una recomendación para &lt;%= expert.full_name %&gt; aquí. Recuerda, lo que digas aparecerá en la página de Consultorio Virtual de este doctor.</target>
       </trans-unit>
-      <trans-unit id="3460" resname="Recommend&lt;%= App.models[&apos;expertInfo_&apos;+App.session.params.id].get(&apos;full_name&apos;) %&gt;!" restype="string" datatype="html">
+      <trans-unit id="3460" resname="Recommend &lt;%= App.models[&apos;expertInfo_&apos;+App.session.params.id].get(&apos;full_name&apos;) %&gt;!" restype="string" datatype="html">
         <source>Recommend &lt;%= App.models['expertInfo_'+App.session.params.id].get('full_name') %&gt;!</source>
         <target>Recomendar &lt;%= App.models['expertInfo_'+App.session.params.id].get('full_name') %&gt;!</target>
       </trans-unit>
-      <trans-unit id="3461" resname="Write a recommendation for&lt;%= App.models[&apos;expertInfo_&apos;+App.session.params.id].get(&apos;full_name&apos;) %&gt;here. Remember, what you say will appear on this doctor’s Virtual Practice page." restype="string" datatype="html">
+      <trans-unit id="3461" resname="Write a recommendation for &lt;%= App.models[&apos;expertInfo_&apos;+App.session.params.id].get(&apos;full_name&apos;) %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page." restype="string" datatype="html">
         <source>Write a recommendation for &lt;%= App.models['expertInfo_'+App.session.params.id].get('full_name') %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page.</source>
         <target>Escribe una recomendación para &lt;%= App.models['expertInfo_'+App.session.params.id].get('full_name') %&gt; aquí. Recuerda, lo que digas aparecerá en la página de Consultorio Virtual de este doctor.</target>
       </trans-unit>
-      <trans-unit id="3462" resname="Recommend&lt;%= App.models.thisDoctor.get(&apos;item.full_name&apos;) %&gt;!" restype="string" datatype="html">
+      <trans-unit id="3462" resname="Recommend &lt;%= App.models.thisDoctor.get(&apos;item.full_name&apos;) %&gt;!" restype="string" datatype="html">
         <source>Recommend &lt;%= App.models.thisDoctor.get('item.full_name') %&gt;!</source>
         <target>Recomendar a &lt;%= App.models.thisDoctor.get('item.full_name') %&gt;!</target>
       </trans-unit>
-      <trans-unit id="3463" resname="Write a recommendation for&lt;%= App.models.thisDoctor.get(&apos;item.full_name&apos;) %&gt;here. Remember, what you say will appear on this doctor’s Virtual Practice page." restype="string" datatype="html">
+      <trans-unit id="3463" resname="Write a recommendation for &lt;%= App.models.thisDoctor.get(&apos;item.full_name&apos;) %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page." restype="string" datatype="html">
         <source>Write a recommendation for &lt;%= App.models.thisDoctor.get('item.full_name') %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page.</source>
         <target>Escribe una recomendación para &lt;%= App.models.thisDoctor.get('item.full_name') %&gt; aquí. Recuerda, lo que digas aparecerá en la página de Consultorio Virtual de este doctor.</target>
       </trans-unit>
@@ -16698,7 +16698,7 @@
         <source>I’m happy to share with you that I've found a great new simple and free way to help you live a healthier happier life, and for us to stay connected between visits. Very soon, you will start receiving from me a weekly HealthTap newsletter filled with great pearls of wisdom and beautiful pictures that can help you keep healthy living top of mind. &lt;br&gt; &lt;br&gt; The newsletter will come from my Virtual Practice on HealthTap - a free web and mobile service that allows you to ask health questions, receive daily health tips, and benefit from the world’s most trustworthy and useful health information written by yours truly and some of the best doctors in the US.</source>
         <target>Estoy feliz de compartirte que he encontrado una nueva, simple, grandiosa y gratuita forma de ayudarte a vivir una vida más feliz y más saludable, y para que podamos mantenernos conectados entre visitas. Muy pronto, recibirás de mí un boletín semanal de HealthTap lleno de grandes perlas de sabiduría y hermosas imágenes que pueden ayudarte a mantener vivir sano como prioridad. &lt;br&gt; &lt;br&gt; El boletín vendrá de mi Consultorio Virtual en HealthTap – un servicio web y móvil gratuito que te permite hacer preguntas de salud, recibir tips diarios, y beneficiarte de la información más confiable y útil del mundo escrita por mí y algunos de los mejores doctores en EE.UU.</target>
       </trans-unit>
-      <trans-unit id="3541" resname="Sincerely,&lt;br&gt;Dr.&lt;%= App.user.get(&apos;person&apos;).name %&gt;&lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="3541" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Sincerely, &lt;br&gt; Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt; &lt;br&gt; &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" targete="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</source>
         <target>Sinceramente, &lt;br&gt; Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt; &lt;br&gt; &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" targete="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</target>
       </trans-unit>
@@ -16706,7 +16706,7 @@
         <source>I've found a great way for us to stay connected between visits. &lt;br&gt; &lt;br&gt; HealthTap is a free web and mobile service that allows you to ask health questions, receive daily health tips, and browse helpful information. &lt;br&gt;&lt;br&gt; I encourage you sign up for free and connect with me on HealthTap today.</source>
         <target>He encontrado una gran forma para mantenernos conectados entre visitas. &lt;br&gt; &lt;br&gt; HealthTap es un servicio móvil y web gratuito que te permite hacer preguntas de salud, recibir tips de salud diarios, y buscar información útil. &lt;br&gt; &lt;br&gt; Te animo a registrarte gratis y conectarte conmigo en HealthTap hoy.</target>
       </trans-unit>
-      <trans-unit id="3543" resname="Sincerely,&lt;br&gt;Dr.&lt;%= App.user.get(&apos;person&apos;).name %&gt;&lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="3543" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Sincerely, &lt;br&gt; Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt; &lt;br&gt; &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" target="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</source>
         <target>Sinceramente, &lt;br&gt; Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt; &lt;br&gt; &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" target="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</target>
       </trans-unit>
@@ -16854,7 +16854,7 @@
         <source>Read more &amp;rsaquo;</source>
         <target>Leer más &amp;rsaquo;</target>
       </trans-unit>
-      <trans-unit id="3578" resname="Choose answer&lt;%= (key + 1) %&gt;..." restype="string" datatype="html">
+      <trans-unit id="3578" resname="Choose answer &lt;%= (key + 1) %&gt;..." restype="string" datatype="html">
         <source>Choose answer &lt;%= (key + 1) %&gt;...</source>
         <target>Elegir respuesta &lt;%= (key + 1) %&gt;...</target>
       </trans-unit>
@@ -16866,7 +16866,7 @@
         <source>Show</source>
         <target>Mostrar</target>
       </trans-unit>
-      <trans-unit id="3581" resname="&amp;vert;&lt;a class=&quot;hide_feedback&lt;% if(!newsletter[&apos;feedback_enabled?&apos;]){ %&gt;active&lt;% } %&gt;&quot;&gt;Hide&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="3581" resname="&amp;vert;&lt;a class=&quot;hide_feedback &lt;% if(!newsletter[&apos;feedback_enabled?&apos;]){ %&gt;active&lt;% } %&gt;&quot;&gt;Hide&lt;/a&gt;" restype="string" datatype="html">
         <source>&amp;vert; &lt;a class="hide_feedback &lt;% if(!newsletter['feedback_enabled?']){ %&gt;active&lt;% } %&gt;"&gt;Hide&lt;/a&gt;</source>
         <target>&amp;vert; &lt;a class="hide_feedback &lt;% if(!newsletter['feedback_enabled?']){ %&gt;active&lt;% } %&gt;"&gt;Ocultar&lt;/a&gt;</target>
       </trans-unit>
@@ -16982,7 +16982,7 @@
   </file>
   <file original="public/javascripts/templates/experts/patientDirectory_item.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3608" resname="Last Virtual Consult on&lt;%=month%&gt;&lt;%=day%&gt;," restype="string" datatype="html">
+      <trans-unit id="3608" resname="Last Virtual Consult on &lt;%=month%&gt; &lt;%=day%&gt;," restype="string" datatype="html">
         <source>Last Virtual Consult on &lt;%=month%&gt; &lt;%=day%&gt;,</source>
         <target>Última Consulta Virtual el &lt;%=day%&gt; de &lt;%=month%&gt; del</target>
       </trans-unit>
@@ -17290,7 +17290,7 @@
         <source>In the spotlight</source>
         <target>En el Centro de Atención</target>
       </trans-unit>
-      <trans-unit id="3673" resname="= spotlight_goal ){ %&gt;style=&quot;margin-bottom: -3px;&quot;" restype="string" datatype="html">
+      <trans-unit id="3673" resname="= spotlight_goal ){ %&gt; style=&quot;margin-bottom: -3px;&quot;" restype="string" datatype="html">
         <source>= spotlight_goal ){ %&gt; style="margin-bottom: -3px;"</source>
         <target>= spotlight_goal ){ %&gt; style="margin-bottom: -3px;"</target>
       </trans-unit>
@@ -17302,7 +17302,7 @@
         <source>You can be in the spotlight!</source>
         <target>¡Tú puedes estar en el centro de atención!</target>
       </trans-unit>
-      <trans-unit id="3676" resname="Answer&lt;%= spotlight_goal - spotlight_progress %&gt;Questions" restype="string" datatype="html">
+      <trans-unit id="3676" resname="Answer &lt;%= spotlight_goal - spotlight_progress %&gt; Questions" restype="string" datatype="html">
         <source>Answer &lt;%= spotlight_goal - spotlight_progress %&gt; Questions</source>
         <target>Responde a las &lt;%= spotlight_goal - spotlight_progress %&gt; Preguntas</target>
       </trans-unit>
@@ -17590,7 +17590,7 @@
   </file>
   <file original="public/javascripts/templates/experts/expertConversations_item.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3737" resname="Would you like to forward your question to&lt;%= expert.full_name %&gt;?" restype="string" datatype="html">
+      <trans-unit id="3737" resname="Would you like to forward your question to &lt;%= expert.full_name %&gt;?" restype="string" datatype="html">
         <source>Would you like to forward your question to &lt;%= expert.full_name %&gt;?</source>
         <target>¿Te gustaría reenviar tu pregunta a &lt;%= expert.full_name %&gt;?</target>
       </trans-unit>
@@ -18178,7 +18178,7 @@
         <source>"Welcome!</source>
         <target>"¡Bienvenido!</target>
       </trans-unit>
-      <trans-unit id="3865" resname="I&apos;m&lt;%= App.user.get(&apos;person&apos;)[&apos;expert_name_prefix&apos;] %&gt;Firstname" restype="string" datatype="html">
+      <trans-unit id="3865" resname="I&apos;m &lt;%= App.user.get(&apos;person&apos;)[&apos;expert_name_prefix&apos;] %&gt;Firstname" restype="string" datatype="html">
         <source>I'm &lt;%= App.user.get('person')['expert_name_prefix'] %&gt;Firstname</source>
         <target>Soy &lt;%= App.user.get('person')['expert_name_prefix'] %&gt;Nombre</target>
       </trans-unit>
@@ -18302,7 +18302,7 @@
         <source>Edit Publication &lt;span class="cancel_edit_wrapper"&gt;( &lt;a class="cancel_edit"&gt;Cancel&lt;/a&gt; )&lt;/span&gt;</source>
         <target>Editar Publicación &lt;span class="cancel_edit_wrapper"&gt;( &lt;a class="cancel_edit"&gt;Cancelar&lt;/a&gt; )&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="3891" resname=",&lt;%= App.user.get(&apos;person.name&apos;).substr(0, 1) %&gt;&lt;a class=&quot;remove_author&quot;&gt;&lt;%= App.image_tag(&quot;/imgs/icons/close_gray.png&quot;) %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="3891" resname=", &lt;%= App.user.get(&apos;person.name&apos;).substr(0, 1) %&gt;&lt;a class=&quot;remove_author&quot;&gt;&lt;%= App.image_tag(&quot;/imgs/icons/close_gray.png&quot;) %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>, &lt;%= App.user.get('person.name').substr(0, 1) %&gt; &lt;a class="remove_author"&gt; &lt;%= App.image_tag("/imgs/icons/close_gray.png") %&gt; &lt;/a&gt;</source>
         <target>, &lt;%= App.user.get('person.name').substr(0, 1) %&gt; &lt;a class="remove_author"&gt; &lt;%= App.image_tag("/imgs/icons/close_gray.png") %&gt; &lt;/a&gt;</target>
       </trans-unit>
@@ -18438,7 +18438,7 @@
         <source>Thanks for helping a colleague!</source>
         <target>¡Gracias por ayudar a un colega!</target>
       </trans-unit>
-      <trans-unit id="3920" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+&lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="3920" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
         <source>You earned &lt;span class="points_earned_highlight"&gt; &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points &lt;/span&gt;</source>
         <target>Tu ganaste &lt;span class="points_earned_highlight"&gt; &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; puntos &lt;/span&gt;</target>
       </trans-unit>
@@ -18514,7 +18514,7 @@
         <source>left in the competition!</source>
         <target>restantes en la competición!</target>
       </trans-unit>
-      <trans-unit id="3936" resname="Only&lt;%= 10 - no_of_consults %&gt;more&lt;%= no_of_consults == 9 ? &apos;consult&apos; : &apos;consults&apos; %&gt;to win the&lt;br&gt;Featured Concierge Doctor Award!" restype="string" datatype="html">
+      <trans-unit id="3936" resname="Only &lt;%= 10 - no_of_consults %&gt; more &lt;%= no_of_consults == 9 ? &apos;consult&apos; : &apos;consults&apos; %&gt; to win the&lt;br&gt;Featured Concierge Doctor Award!" restype="string" datatype="html">
         <source>Only &lt;%= 10 - no_of_consults %&gt; more &lt;%= no_of_consults == 9 ? 'consult' : 'consults' %&gt; to win the&lt;br&gt; Featured Concierge Doctor Award!</source>
         <target>¡Solo &lt;%= 10 - no_of_consults %&gt; más &lt;%= no_of_consults == 9 ? ‘consult' : ‘consults’ %&gt; para ganar el&lt;br&gt; Galardón por Doctor Concierge Destacado!</target>
       </trans-unit>
@@ -18526,7 +18526,7 @@
         <source>You're a Featured Concierge Doctor!</source>
         <target>¡Eres un Doctor Concierge Destacado!</target>
       </trans-unit>
-      <trans-unit id="3939" resname="Now become a &quot;Top Concierge Doctor&quot;&lt;br&gt;and do just&lt;%= 25 - no_of_consults %&gt;more&lt;%= no_of_consults == 24 ? &apos;consult&apos; : &apos;consults&apos; %&gt;&lt;br&gt;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos; day&apos; : &apos; days&apos;) %&gt;left in the competition!&lt;/b&gt;" restype="string" datatype="html">
+      <trans-unit id="3939" resname="Now become a &quot;Top Concierge Doctor&quot;&lt;br&gt;and do just &lt;%= 25 - no_of_consults %&gt; more &lt;%= no_of_consults == 24 ? &apos;consult&apos; : &apos;consults&apos; %&gt;&lt;br&gt;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos; day&apos; : &apos; days&apos;) %&gt; left in the competition!&lt;/b&gt;" restype="string" datatype="html">
         <source>Now become a "Top Concierge Doctor"&lt;br&gt; and do just &lt;%= 25 - no_of_consults %&gt; more &lt;%= no_of_consults == 24 ? 'consult' : 'consults' %&gt; &lt;br&gt; &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? ' day' : ' days') %&gt; left in the competition!&lt;/b&gt;</source>
         <target>Ahora conviértete uno de los “Mejores Doctores Concierge”&lt;br&gt; y haz solo &lt;%= 25 - no_of_consults %&gt; más &lt;%= no_of_consults == 24 ? ‘consult' : ‘consults' %&gt; &lt;br&gt; &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? ‘ day' : ‘ days’) %&gt; restantes en la competición!&lt;/b&gt;</target>
       </trans-unit>
@@ -18538,7 +18538,7 @@
         <source>You're a Top Concierge Doctor!</source>
         <target>¡Eres unos de los Mejores Doctores Concierge!</target>
       </trans-unit>
-      <trans-unit id="3942" resname="Now become&lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt;&quot;Top Concierge Doctor&quot; Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos;&amp;nbsp;day&apos; : &apos;&amp;nbsp;days&apos;) %&gt;left in the competition!&lt;/b&gt;" restype="string" datatype="html">
+      <trans-unit id="3942" resname="Now become&lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt;&quot;Top Concierge Doctor&quot; Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos;&amp;nbsp;day&apos; : &apos;&amp;nbsp;days&apos;) %&gt; left in the competition!&lt;/b&gt;" restype="string" datatype="html">
         <source>Now become &lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt; "Top Concierge Doctor" Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? '&amp;nbsp;day' : '&amp;nbsp;days') %&gt; left in the competition!&lt;/b&gt;</source>
         <target>Ahora conviértete en &lt;b&gt;&lt;i&gt;el&lt;/i&gt;&lt;/b&gt; “Mejor Doctor Concierge" Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? ‘&amp;nbsp;day' : ‘&amp;nbsp;days’) %&gt; restantes en la competición!&lt;/b&gt;</target>
       </trans-unit>
@@ -18674,7 +18674,7 @@
         <source>&gt;Nationally</source>
         <target>&gt;Nacionalmente</target>
       </trans-unit>
-      <trans-unit id="3974" resname="Leaderboard&lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST&lt;%= today_str %&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="3974" resname="Leaderboard&lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST &lt;%= today_str %&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Leaderboard &lt;span class="last-updated"&gt;as of 1AM PST &lt;%= today_str %&gt;&lt;/span&gt;</source>
         <target>Tabla de Posiciones &lt;span class="last-updated"&gt;a la 1AM PST &lt;%= today_str %&gt;&lt;/span&gt;</target>
       </trans-unit>
@@ -18918,7 +18918,7 @@
         <source>CO-SIGN THIS ANSWER</source>
         <target>COFIRMAR ESTA RESPUESTA</target>
       </trans-unit>
-      <trans-unit id="4024" resname="This answer will appear in your Virtual Practice and&lt;%= user_answer.contributor.name %&gt;will be given credit for assisting you. Edit as you deem necessary.&lt;a class=&quot;child-browser-link&quot; href=&quot;#how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="4024" resname="This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt; will be given credit for assisting you. Edit as you deem necessary.&lt;a class=&quot;child-browser-link&quot; href=&quot;#how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt; will be given credit for assisting you. Edit as you deem necessary. &lt;a class="child-browser-link" href="#how_it_works/healthtap_university"&gt;More about HealthTap University &amp;gt; &lt;/a&gt;</source>
         <target>Esta respuesta aparecerá en tu Consultorio Virtual y &lt;%= user_answer.contributor.name %&gt; recibirá crédito por asistirte. Edita como consideres necesario. &lt;a class=”child-browser-link” href=”#how_it_works/healthtap_university”&gt;Más acerca HealthTap University &amp;gt; &lt;/a&gt;</target>
       </trans-unit>
@@ -19018,7 +19018,7 @@
         <source>You've helped &lt;br&gt; &lt;b class="heart-icon"&gt; &lt;%= (number_of_people_helped + '').comma() %&gt; &lt;/b&gt; PEOPLE</source>
         <target>Has ayudado a &lt;br&gt; &lt;b class=”heart-icon”&gt; &lt;%= (number_of_people_helped + ‘’).comma() %&gt; &lt;/b&gt; PERSONAS</target>
       </trans-unit>
-      <trans-unit id="4047" resname="Answer&lt;b&gt;&lt;%= number_to_go %&gt;more Questions&lt;/b&gt;and get your next medal for today, the &quot;&lt;%= next_badge %&gt;&quot; medal!&lt;br&gt;&lt;br&gt;&lt;a href=&quot;/#docscore/achievements&quot;&gt;See your medals &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="4047" resname="Answer&lt;b&gt;&lt;%= number_to_go %&gt; more Questions&lt;/b&gt;and get your next medal for today, the &quot;&lt;%= next_badge %&gt;&quot; medal!&lt;br&gt;&lt;br&gt;&lt;a href=&quot;/#docscore/achievements&quot;&gt;See your medals &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Answer &lt;b&gt;&lt;%= number_to_go %&gt; more Questions&lt;/b&gt; and get your next medal for today, the "&lt;%= next_badge %&gt;" medal! &lt;br&gt; &lt;br&gt; &lt;a href="/#docscore/achievements"&gt;See your medals &amp;rsaquo;&lt;/a&gt;</source>
         <target>¡Contesta &lt;b&gt;&lt;%= number_to_go %&gt; más Preguntas &lt;/b&gt; y obtén tu siguiente medalla hoy, ¡la medalla de “&lt;%= next_badge %&gt;”! &lt;br&gt; &lt;br&gt; &lt;a href=”/#docscore/achievements”&gt;Ve tus medallas &amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -20586,7 +20586,7 @@
         <source>Offer &lt;span class="suffix-wrap"&gt; 1 &lt;span class="suffix"&gt;st&lt;/span&gt; &lt;/span&gt; time consult discount for &lt;span style="display: inline-block;"&gt;&lt;%= discount_price %&gt; &lt;span class="sprite-icon tooltip offer-tooltip"&gt;</source>
         <target>Ofrece un descuento por &lt;span class=”suffix-wrap”&gt; 1 &lt;span class=”suffix”&gt;era&lt;/span&gt; &lt;/span&gt; vez &lt;span style="display: inline-block;"&gt;&lt;%= discount_price %&gt; &lt;span class="sprite-icon tooltip offer-tooltip"&gt;</target>
       </trans-unit>
-      <trans-unit id="4298" resname="Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just&lt;%= discount_price %&gt;(you&apos;ll receive $10), after which normal rates and compensation apply." restype="string" datatype="html">
+      <trans-unit id="4298" resname="Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just &lt;%= discount_price %&gt; (you&apos;ll receive $10), after which normal rates and compensation apply." restype="string" datatype="html">
         <source>Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just &lt;%= discount_price %&gt; (you'll receive $10), after which normal rates and compensation apply.</source>
         <target>Alienta a tus pacientes a probar consultas virtuales ofreciéndoles una tasa con descuento para su primera consulta contigo. Pacientes pagan solo &lt;%= discount_price %&gt; (tu recibirás $10), después de la cual tasas y compensación normal aplican.</target>
       </trans-unit>
@@ -20594,7 +20594,7 @@
         <source>Offer &lt;span class="suffix-wrap"&gt; 1 &lt;span class="suffix"&gt;st&lt;/span&gt; &lt;/span&gt; time consult discount -</source>
         <target>Ofrece un descuento por &lt;span class="suffix-wrap"&gt; 1 &lt;span class="suffix"&gt;era&lt;/span&gt; &lt;/span&gt; vez -</target>
       </trans-unit>
-      <trans-unit id="4300" resname="Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just&lt;%= discount_price %&gt;(you&apos;ll receive $10), after which normal rates and compensation apply." restype="string" datatype="html">
+      <trans-unit id="4300" resname="Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just &lt;%= discount_price %&gt; (you&apos;ll receive $10), after which normal rates and compensation apply." restype="string" datatype="html">
         <source>Encourage your patients to try virtual consults by offering them a discounted rate for their very first consult with you. Patients pay just &lt;%= discount_price %&gt; (you'll receive $10), after which normal rates and compensation apply.</source>
         <target>Alienta a tus pacientes a probar consultas virtuales ofreciéndoles una tasa con descuento para su primera consulta contigo. Pacientes pagan solo &lt;%= discount_price %&gt; (tu recibirás $10), después de la cual tasas y compensación normal aplican.</target>
       </trans-unit>
@@ -20626,7 +20626,7 @@
   </file>
   <file original="public/feelGood/templates/suggested_patient_row_staff.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4306" resname=",&lt;%= patient.age_years %&gt;Years Old" restype="string" datatype="html">
+      <trans-unit id="4306" resname=", &lt;%= patient.age_years %&gt; Years Old" restype="string" datatype="html">
         <source>, &lt;%= patient.age_years %&gt; Years Old</source>
         <target>, &lt;%= patient.age_years %&gt; Años de edad</target>
       </trans-unit>
@@ -21530,7 +21530,7 @@
         <source>Payment_banner_alt</source>
         <target>Payment_banner_alt</target>
       </trans-unit>
-      <trans-unit id="4464" resname="Get help from&lt;%= doctor_detail.value %&gt;— it&apos;s fast and easy" restype="string" datatype="html">
+      <trans-unit id="4464" resname="Get help from &lt;%= doctor_detail.value %&gt; — it&apos;s fast and easy" restype="string" datatype="html">
         <source>Get help from &lt;%= doctor_detail.value %&gt; — it's fast and easy</source>
         <target>Obtén ayuda de &lt;%= doctor_detail.value %&gt; — es rápido y sencillo</target>
       </trans-unit>
@@ -21702,11 +21702,11 @@
         <source>Thanks for spreading your influence to millions!</source>
         <target>¡Gracias por esparcir tu influencia a millones!</target>
       </trans-unit>
-      <trans-unit id="4493" resname="You’re helping millions live happier and healthier lives. Review&lt;b&gt;&lt;%= num_to_go %&gt;&lt;/b&gt;more helpful article&lt;%= num_to_go !== 1 ? &apos;s&apos; : &apos;&apos; %&gt;to further your impact." restype="string" datatype="html">
+      <trans-unit id="4493" resname="You’re helping millions live happier and healthier lives. Review&lt;b&gt;&lt;%= num_to_go %&gt;&lt;/b&gt;more helpful article&lt;%= num_to_go !== 1 ? &apos;s&apos; : &apos;&apos; %&gt; to further your impact." restype="string" datatype="html">
         <source>You’re helping millions live happier and healthier lives. Review &lt;b&gt;&lt;%= num_to_go %&gt;&lt;/b&gt; more helpful article&lt;%= num_to_go !== 1 ? 's' : '' %&gt; to further your impact.</source>
         <target>Estás ayudando a que millones vivan vidas más felices y saludables. Revisa &lt;b&gt;&lt;%= num_to_go %&gt;&lt;/b&gt; artículo útil más&lt;%= num_to_go !== 1 ? 's' : '' %&gt; para aumentar tu impacto.</target>
       </trans-unit>
-      <trans-unit id="4494" resname="Share&lt;b&gt;&lt;%= num_to_go %&gt;&lt;/b&gt;more FeelGood Moment&lt;%= num_to_go &gt;1 ? &apos;s&apos; : &apos;&apos; %&gt;to inspire and motivate millions to achieve their health goals" restype="string" datatype="html">
+      <trans-unit id="4494" resname="Share&lt;b&gt;&lt;%= num_to_go %&gt;&lt;/b&gt;more FeelGood Moment&lt;%= num_to_go &gt;1 ? &apos;s&apos; : &apos;&apos; %&gt; to inspire and motivate millions to achieve their health goals" restype="string" datatype="html">
         <source>Share &lt;b&gt;&lt;%= num_to_go %&gt;&lt;/b&gt; more FeelGood Moment&lt;%= num_to_go &gt; 1 ? 's' : '' %&gt; to inspire and motivate millions to achieve their health goals</source>
         <target>Comparte &lt;b&gt;&lt;%= num_to_go %&gt;&lt;/b&gt; Momento&lt;%= num_to_go &gt; 1 ? 's' : '' %&gt; FeelGood más para inspirar y motivar a millones para que logren sus metas de salud</target>
       </trans-unit>
@@ -21934,7 +21934,7 @@
         <source>Last payment</source>
         <target>Último pago</target>
       </trans-unit>
-      <trans-unit id="4543" resname="$&lt;%=client_info.price/100%&gt;/" restype="string" datatype="html">
+      <trans-unit id="4543" resname="$&lt;%=client_info.price/100%&gt; /" restype="string" datatype="html">
         <source>$&lt;%=client_info.price/100%&gt; /</source>
         <target>$&lt;%=client_info.price/100%&gt; /</target>
       </trans-unit>
@@ -21958,7 +21958,7 @@
         <source>so we can connect you with the right doctor and send prescriptions to your current location</source>
         <target>para que podamos conectarte con el doctor adecuado y enviar recetas a tu ubicación actual</target>
       </trans-unit>
-      <trans-unit id="4548" resname="A Prime doctor is currently not available in&lt;%= stateItem.state %&gt;. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders." restype="string" datatype="html">
+      <trans-unit id="4548" resname="A Prime doctor is currently not available in &lt;%= stateItem.state %&gt;. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders." restype="string" datatype="html">
         <source>A Prime doctor is currently not available in &lt;%= stateItem.state %&gt;. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders.</source>
         <target>Un doctor Prime actualmente no está disponible en &lt;%= stateItem.state %&gt;. Sin embargo, todavía puedes consultar con tu doctor o especialista a través de chat de texto seguro y obtener consejo, recetas y recordatorios.</target>
       </trans-unit>
@@ -22154,7 +22154,7 @@
         <source>Your total this</source>
         <target>Tu total este</target>
       </trans-unit>
-      <trans-unit id="4588" resname="Billed&lt;%= subscription_plan.frequency.toLowerCase() %&gt;, cancel anytime" restype="string" datatype="html">
+      <trans-unit id="4588" resname="Billed &lt;%= subscription_plan.frequency.toLowerCase() %&gt;, cancel anytime" restype="string" datatype="html">
         <source>Billed &lt;%= subscription_plan.frequency.toLowerCase() %&gt;, cancel anytime</source>
         <target>Facturado &lt;%= subscription_plan.frequency.toLowerCase() %&gt;, cancela en cualquier momento</target>
       </trans-unit>
@@ -22162,11 +22162,11 @@
         <source>USD /</source>
         <target>USD /</target>
       </trans-unit>
-      <trans-unit id="4590" resname="$&lt;%= subscription_dollars %&gt;USD /" restype="string" datatype="html">
+      <trans-unit id="4590" resname="$&lt;%= subscription_dollars %&gt; USD /" restype="string" datatype="html">
         <source>$&lt;%= subscription_dollars %&gt; USD /</source>
         <target>$&lt;%= subscription_dollars %&gt; USD /</target>
       </trans-unit>
-      <trans-unit id="4591" resname="$&lt;%= add_person_dollars %&gt;USD /" restype="string" datatype="html">
+      <trans-unit id="4591" resname="$&lt;%= add_person_dollars %&gt; USD /" restype="string" datatype="html">
         <source>$&lt;%= add_person_dollars %&gt; USD /</source>
         <target>$&lt;%= add_person_dollars %&gt; USD /</target>
       </trans-unit>
@@ -22358,7 +22358,7 @@
   </file>
   <file original="public/feelGood/templates/patientRequest_item.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4628" resname="Waited&lt;%=parseInt(daysPast)%&gt;days" restype="string" datatype="html">
+      <trans-unit id="4628" resname="Waited &lt;%=parseInt(daysPast)%&gt; days" restype="string" datatype="html">
         <source>Waited &lt;%=parseInt(daysPast)%&gt; days</source>
         <target>Esperó &lt;%=parseInt(daysPast)%&gt; días</target>
       </trans-unit>
@@ -22398,7 +22398,7 @@
   </file>
   <file original="public/feelGood/templates/past_due_banner.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4636" resname="Your credit card ending in -&lt;%= last_4 %&gt;has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!&lt;a class=&quot;update-billing&quot;&gt;Update Now &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="4636" resname="Your credit card ending in -&lt;%= last_4 %&gt; has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!&lt;a class=&quot;update-billing&quot;&gt;Update Now &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Your credit card ending in -&lt;%= last_4 %&gt; has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! &lt;a class="update-billing"&gt;Update Now &amp;rsaquo;&lt;/a&gt;</source>
         <target>Tu tarjeta de crédito que termina en -&lt;%= last_4 %&gt; ha vencido o ya no es válida. ¡Por favor, actualiza tu información de facturación para continuar con tus beneficios de HealthTap Prime! &lt;a class="update-billing"&gt;Actualizar Ahora &amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -22442,7 +22442,7 @@
   </file>
   <file original="public/feelGood/templates/not_available_state.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4643" resname="A Prime doctor is currently not available in&lt;%= state %&gt;. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders." restype="string" datatype="html">
+      <trans-unit id="4643" resname="A Prime doctor is currently not available in &lt;%= state %&gt;. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders." restype="string" datatype="html">
         <source>A Prime doctor is currently not available in &lt;%= state %&gt;. However, you can still consult your doctor or specialist via secure text chat and get advice, prescriptions, and reminders.</source>
         <target>Un doctor Prime actualmente no está disponible en &lt;%= state %&gt;. Sin embargo, todavía puedes consultar con tu doctor o especialista a través de chat de texto seguro y obtener consejo, recetas y recordatorios.</target>
       </trans-unit>
@@ -22458,7 +22458,7 @@
         <source>Request to connect with</source>
         <target>Solicitar conectarse con</target>
       </trans-unit>
-      <trans-unit id="4645" resname="If you don’t have&lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;’s Keycode, you may still have an Introductory Consult before the&lt;%= doctor_detail.expert_type %&gt;confirms you as a patient" restype="string" datatype="html">
+      <trans-unit id="4645" resname="If you don’t have &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;’s Keycode, you may still have an Introductory Consult before the &lt;%= doctor_detail.expert_type %&gt; confirms you as a patient" restype="string" datatype="html">
         <source>If you don’t have &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;’s Keycode, you may still have an Introductory Consult before the &lt;%= doctor_detail.expert_type %&gt; confirms you as a patient</source>
         <target>Si aún no tienes la Clave del &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;, todavía puedes tener una Consulta Introductoria antes que el &lt;%= doctor_detail.expert_type %&gt; te confirme como paciente</target>
       </trans-unit>
@@ -22658,7 +22658,7 @@
         <source>I'd like to refer you to &lt;b&gt;&lt;%= specialist %&gt;&lt;/b&gt;.</source>
         <target>Me gustaría referirte a &lt;b&gt;&lt;%= specialist %&gt;&lt;/b&gt;.</target>
       </trans-unit>
-      <trans-unit id="4682" resname="As a member of&lt;%= HMO_provider %&gt;, please first check with your primary care physician before seeing any specialist." restype="string" datatype="html">
+      <trans-unit id="4682" resname="As a member of &lt;%= HMO_provider %&gt;, please first check with your primary care physician before seeing any specialist." restype="string" datatype="html">
         <source>As a member of &lt;%= HMO_provider %&gt;, please first check with your primary care physician before seeing any specialist.</source>
         <target>Como miembro de &lt;%= HMO_provider %&gt;, por favor, revisa primero con tu doctor de atención primaria antes de ver algún especialista.</target>
       </trans-unit>
@@ -22718,11 +22718,11 @@
   </file>
   <file original="public/feelGood/templates/messages/lab_result.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4693" resname=", your test results are in and we&apos;ve notified Dr.&lt;%= doctor.name %&gt;. You may review the results below." restype="string" datatype="html">
+      <trans-unit id="4693" resname=", your test results are in and we&apos;ve notified Dr. &lt;%= doctor.name %&gt;. You may review the results below." restype="string" datatype="html">
         <source>, your test results are in and we've notified Dr. &lt;%= doctor.name %&gt;. You may review the results below.</source>
         <target>, los resultados de tu prueba están listos y le hemos notificado al Dr. &lt;%= doctor.name %&gt;. Puedes revisar los resultados más abajo.</target>
       </trans-unit>
-      <trans-unit id="4694" resname="Dr.&lt;%= doctor.name %&gt;, here are the results of the tests you ordered for this patient." restype="string" datatype="html">
+      <trans-unit id="4694" resname="Dr. &lt;%= doctor.name %&gt;, here are the results of the tests you ordered for this patient." restype="string" datatype="html">
         <source>Dr. &lt;%= doctor.name %&gt;, here are the results of the tests you ordered for this patient.</source>
         <target>Dr. &lt;%= doctor.name %&gt;, aquí están los resultados de los exámenes que ordenaste para este paciente.</target>
       </trans-unit>
@@ -22730,11 +22730,11 @@
         <source>They have returned with a critical value that require your attention.</source>
         <target>Han vuelto con un valor crítico que requiere tu atención.</target>
       </trans-unit>
-      <trans-unit id="4696" resname="Uploaded&lt;%= feelGood.strftime(uploadedDate, &apos;%b %d, %Y&apos;) %&gt;" restype="string" datatype="html">
+      <trans-unit id="4696" resname="Uploaded &lt;%= feelGood.strftime(uploadedDate, &apos;%b %d, %Y&apos;) %&gt;" restype="string" datatype="html">
         <source>Uploaded &lt;%= feelGood.strftime(uploadedDate, '%b %d, %Y') %&gt;</source>
         <target>Subido &lt;%= feelGood.strftime(uploadedDate, '%b %d, %Y') %&gt;</target>
       </trans-unit>
-      <trans-unit id="4697" resname="You may have a follow-up consult with Dr.&lt;%= doctor.name %&gt;to understand what these results mean and what to do next." restype="string" datatype="html">
+      <trans-unit id="4697" resname="You may have a follow-up consult with Dr. &lt;%= doctor.name %&gt; to understand what these results mean and what to do next." restype="string" datatype="html">
         <source>You may have a follow-up consult with Dr. &lt;%= doctor.name %&gt; to understand what these results mean and what to do next.</source>
         <target>Puedes tener una consulta de seguimiento con el Dr. &lt;%= doctor.name %&gt; para comprender lo que quieren decir estos resultados y qué hacer a continuación.</target>
       </trans-unit>
@@ -22758,7 +22758,7 @@
         <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an "addendum note" to this consult using the chat.</source>
         <target>Por favor, revisa los resultados, proporciona tu interpretación de estos resultados, y aconseja al paciente sobre los siguientes pasos. Para hacerlo, sólo deja una "nota anexa" a esta consulta usando el chat.</target>
       </trans-unit>
-      <trans-unit id="4703" resname="The patient is also reachable at&lt;%= phone %&gt;if you&apos;d like to supplement your written note with a phone call." restype="string" datatype="html">
+      <trans-unit id="4703" resname="The patient is also reachable at &lt;%= phone %&gt; if you&apos;d like to supplement your written note with a phone call." restype="string" datatype="html">
         <source>The patient is also reachable at &lt;%= phone %&gt; if you'd like to supplement your written note with a phone call.</source>
         <target>También puedes contactar al paciente al &lt;%= phone %&gt; si te gustaría complementar tu nota escrita con una llamada telefónica.</target>
       </trans-unit>
@@ -22778,7 +22778,7 @@
         <source>Status:</source>
         <target>Estado:</target>
       </trans-unit>
-      <trans-unit id="4707" resname="You will be taken to the&lt;%= test_provider %&gt;website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.&lt;a class=&quot;btn schedule-test-btn&quot; href=&quot;&lt;%= consult_lab_test.schedule_test_url %&gt;&quot; target=&quot;_blank&quot;&gt;Schedule lab test&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="4707" resname="You will be taken to the &lt;%= test_provider %&gt; website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.&lt;a class=&quot;btn schedule-test-btn&quot; href=&quot;&lt;%= consult_lab_test.schedule_test_url %&gt;&quot; target=&quot;_blank&quot;&gt;Schedule lab test&lt;/a&gt;" restype="string" datatype="html">
         <source>You will be taken to the &lt;%= test_provider %&gt; website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account. &lt;a class="btn schedule-test-btn" href="&lt;%= consult_lab_test.schedule_test_url %&gt;" target="_blank"&gt; Schedule lab test &lt;/a&gt;</source>
         <target>Serás llevado al sitio web de &lt;%= test_provider %&gt; para encontrar un centro de pruebas local y para agendar una cita. Se te pedirá que inicies sesión o crees una cuenta segura. &lt;a class=”btn schedule-test-btn” href=”&lt;%= consult_lab_test.schedule_test_url %&gt;” target=”_blank”&gt; Agendar prueba de laboratorio &lt;/a&gt;</target>
       </trans-unit>
@@ -22914,7 +22914,7 @@
   </file>
   <file original="public/feelGood/templates/location_center.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4727" resname="is licensed to see patients from&lt;%= feelGood.joinSentenceList(licensed_states) %&gt;." restype="string" datatype="html">
+      <trans-unit id="4727" resname="is licensed to see patients from &lt;%= feelGood.joinSentenceList(licensed_states) %&gt;." restype="string" datatype="html">
         <source>is licensed to see patients from &lt;%= feelGood.joinSentenceList(licensed_states) %&gt;.</source>
         <target>está acreditado para ver pacientes de &lt;%= feelGood.joinSentenceList(licensed_states) %&gt;.</target>
       </trans-unit>
@@ -23186,7 +23186,7 @@
         <source>RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({ bold_tag_start: '&lt;b&gt;', bold_tag_end: '&lt;/b&gt;' })</source>
         <target>RB.getStringJS(Además de consultas virtuales en vivo, también recibirás {bold_tag_start}Consultas por Buzón de Entrada{bold_tag_end}. Estos son mensajes detallados pagados de tus pacientes que aparecen en la parte superior del feed de tu página de inicio y deben de ser contestadas en 24 horas.).format({ bold_tag_start: ‘&lt;b&gt;', bold_tag_end: ‘&lt;/b&gt;' })</target>
       </trans-unit>
-      <trans-unit id="4771" resname="You will earn $&lt;%= inbox_compensation %&gt;when you complete patient consults and submit your SOAP Note." restype="string" datatype="html">
+      <trans-unit id="4771" resname="You will earn $&lt;%= inbox_compensation %&gt; when you complete patient consults and submit your SOAP Note." restype="string" datatype="html">
         <source>You will earn $&lt;%= inbox_compensation %&gt; when you complete patient consults and submit your SOAP Note.</source>
         <target>Ganarás $&lt;%= inbox_compensation %&gt; cuando completes las consultas de pacientes y envíes tu Nota SOAP.</target>
       </trans-unit>
@@ -23882,7 +23882,7 @@
         <source>Choose a flower</source>
         <target>Elige una flor</target>
       </trans-unit>
-      <trans-unit id="4906" resname="Why do you appreciate&lt;%= doctor_name %&gt;?" restype="string" datatype="html">
+      <trans-unit id="4906" resname="Why do you appreciate &lt;%= doctor_name %&gt;?" restype="string" datatype="html">
         <source>Why do you appreciate &lt;%= doctor_name %&gt;?</source>
         <target>¿Por qué aprecias al &lt;%= doctor_name %&gt;?</target>
       </trans-unit>
@@ -24658,7 +24658,7 @@
   </file>
   <file original="public/feelGood/templates/expert_billing_info.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5054" resname="&gt;&lt;%= RB.getString(&quot;Your PayPal account {email} has been verified&quot;).format({ email: paypal_email }) %&gt;&lt;a class=&quot;cc-edit&quot;&gt;Update&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="5054" resname="&gt; &lt;%= RB.getString(&quot;Your PayPal account {email} has been verified&quot;).format({ email: paypal_email }) %&gt;&lt;a class=&quot;cc-edit&quot;&gt;Update&lt;/a&gt;" restype="string" datatype="html">
         <source>&gt; &lt;%= RB.getString("Your PayPal account {email} has been verified").format({ email: paypal_email }) %&gt; &lt;a class="cc-edit"&gt;Update&lt;/a&gt;</source>
         <target>&gt; &lt;%= RB.getString("Tu cuenta de Paypal {email} ha sido verificada").format({ email: paypal_email }) %&gt; &lt;a class="cc-edit"&gt;Actualizar&lt;/a&gt;</target>
       </trans-unit>
@@ -24742,7 +24742,7 @@
         <source>This keycode is not accurate. Please try again</source>
         <target>Esta clave no es correcta. Por favor, intenta otra vez</target>
       </trans-unit>
-      <trans-unit id="5066" resname="Enter&lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;&apos;s Concierge Keycode" restype="string" datatype="html">
+      <trans-unit id="5066" resname="Enter &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;&apos;s Concierge Keycode" restype="string" datatype="html">
         <source>Enter &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;'s Concierge Keycode</source>
         <target>Ingresa la Clave Concierge de &lt;%= doctor_detail.expert_name_prefix + doctor_detail.last_name %&gt;</target>
       </trans-unit>
@@ -25050,7 +25050,7 @@
         <source>="display: none"</source>
         <target>="display: none"</target>
       </trans-unit>
-      <trans-unit id="5111" resname="&gt;Location" restype="string" datatype="html">
+      <trans-unit id="5111" resname="&gt; Location" restype="string" datatype="html">
         <source>&gt; Location</source>
         <target>&gt; Ubicación</target>
       </trans-unit>
@@ -25058,15 +25058,15 @@
         <source>Current location</source>
         <target>Ubicación actual</target>
       </trans-unit>
-      <trans-unit id="5113" resname="&gt;Available for Virtual Consult" restype="string" datatype="html">
+      <trans-unit id="5113" resname="&gt; Available for Virtual Consult" restype="string" datatype="html">
         <source>&gt; Available for Virtual Consult</source>
         <target>&gt; Disponible para una Consulta Virtual</target>
       </trans-unit>
-      <trans-unit id="5114" resname="&gt;Specialty" restype="string" datatype="html">
+      <trans-unit id="5114" resname="&gt; Specialty" restype="string" datatype="html">
         <source>&gt; Specialty</source>
         <target>&gt; Especialidad</target>
       </trans-unit>
-      <trans-unit id="5115" resname="&gt;Insurance plan" restype="string" datatype="html">
+      <trans-unit id="5115" resname="&gt; Insurance plan" restype="string" datatype="html">
         <source>&gt; Insurance plan</source>
         <target>&gt; Plan de seguros</target>
       </trans-unit>
@@ -25074,7 +25074,7 @@
         <source>Enter insurance</source>
         <target>Ingresar seguro</target>
       </trans-unit>
-      <trans-unit id="5117" resname="&gt;Language spoken" restype="string" datatype="html">
+      <trans-unit id="5117" resname="&gt; Language spoken" restype="string" datatype="html">
         <source>&gt; Language spoken</source>
         <target>&gt; Idioma hablado</target>
       </trans-unit>
@@ -25082,19 +25082,19 @@
         <source>Enter a language</source>
         <target>Ingresar un idioma</target>
       </trans-unit>
-      <trans-unit id="5119" resname="&gt;DocScore" restype="string" datatype="html">
+      <trans-unit id="5119" resname="&gt; DocScore" restype="string" datatype="html">
         <source>&gt; DocScore</source>
         <target>&gt; DocScore</target>
       </trans-unit>
-      <trans-unit id="5120" resname="&gt;Years in Practice" restype="string" datatype="html">
+      <trans-unit id="5120" resname="&gt; Years in Practice" restype="string" datatype="html">
         <source>&gt; Years in Practice</source>
         <target>&gt; Años Ejerciendo</target>
       </trans-unit>
-      <trans-unit id="5121" resname="&gt;Degrees" restype="string" datatype="html">
+      <trans-unit id="5121" resname="&gt; Degrees" restype="string" datatype="html">
         <source>&gt; Degrees</source>
         <target>&gt; Grados</target>
       </trans-unit>
-      <trans-unit id="5122" resname="&gt;Medical School" restype="string" datatype="html">
+      <trans-unit id="5122" resname="&gt; Medical School" restype="string" datatype="html">
         <source>&gt; Medical School</source>
         <target>&gt; Escuela de Medicina</target>
       </trans-unit>
@@ -25102,7 +25102,7 @@
         <source>Enter a school</source>
         <target>Ingresar una escuela</target>
       </trans-unit>
-      <trans-unit id="5124" resname="&gt;Residency" restype="string" datatype="html">
+      <trans-unit id="5124" resname="&gt; Residency" restype="string" datatype="html">
         <source>&gt; Residency</source>
         <target>&gt; Residencia</target>
       </trans-unit>
@@ -25286,7 +25286,7 @@
         <source>We're deeply commited to making everyone's experience delightful and would love your feedback on how we can make things better for you and for many other's in the future.</source>
         <target>Estamos profundamente comprometidos a hacer encantadora la experiencia de todos y nos encantarían tus comentarios acerca de cómo podemos hacer las cosas mejor para ti y para muchos otros en el futuro.</target>
       </trans-unit>
-      <trans-unit id="5153" resname="0 %&gt;data-tracking-value=&quot;&lt;%= option.tracking_value%&gt;&quot; &gt;" restype="string" datatype="html">
+      <trans-unit id="5153" resname="0 %&gt; data-tracking-value=&quot;&lt;%= option.tracking_value%&gt;&quot; &gt;" restype="string" datatype="html">
         <source>0 %&gt; data-tracking-value="&lt;%= option.tracking_value%&gt;" &gt;</source>
         <target>0 %&gt; data-tracking-value="&lt;%= option.tracking_value%&gt;" &gt;</target>
       </trans-unit>
@@ -25550,7 +25550,7 @@
   </file>
   <file original="public/feelGood/templates/concierge_upsell_vip_mobile.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5182" resname="How can&lt;%= last_name %&gt;help you? Enter your question..." restype="string" datatype="html">
+      <trans-unit id="5182" resname="How can &lt;%= last_name %&gt; help you? Enter your question..." restype="string" datatype="html">
         <source>How can &lt;%= last_name %&gt; help you? Enter your question...</source>
         <target>¿Cómo &lt;%= last_name %&gt; puede ayudarte? Ingresa tu pregunta...</target>
       </trans-unit>
@@ -27958,7 +27958,7 @@
   </file>
   <file original="app/views/layouts/feelGood/topic_help_doctor.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5544" resname="Dr.&lt;%= doctor.value.split(&quot; &quot;)[2] %&gt;, a specialist in&lt;%= doctor.specialty %&gt;, is available to help for only $" restype="string" datatype="html">
+      <trans-unit id="5544" resname="Dr. &lt;%= doctor.value.split(&quot; &quot;)[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $" restype="string" datatype="html">
         <source>Dr. &lt;%= doctor.value.split(" ")[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $</source>
         <target>Dr. &lt;%= doctor.value.split(" ")[2] %&gt;, un especialista en &lt;%= doctor.specialty %&gt;, está disponible para ayudarte por sólo $</target>
       </trans-unit>

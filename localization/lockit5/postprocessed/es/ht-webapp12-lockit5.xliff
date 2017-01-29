@@ -28368,7 +28368,7 @@
         <source>Introductory Consult</source>
         <target>Consulta Introductoria</target>
       </trans-unit>
-      <trans-unit id="13639" resname="Prime&lt;%= consult_type_name %&gt;Consult" restype="string" datatype="html">
+      <trans-unit id="13639" resname="Prime &lt;%= consult_type_name %&gt; Consult" restype="string" datatype="html">
         <source>Prime &lt;%= consult_type_name %&gt; Consult</source>
         <target>Consulta &lt;%= consult_type_name %&gt; Prime</target>
       </trans-unit>
@@ -28433,7 +28433,7 @@
   </file>
   <file original="public/feelGood/templates/messages/refer_doctor.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13762" resname="I&apos;d like to refer you to the following specialist. As a member of&lt;%= HMO_provider %&gt;, please first check with your primary care physician before seeing this specialist:" restype="string" datatype="html">
+      <trans-unit id="13762" resname="I&apos;d like to refer you to the following specialist. As a member of &lt;%= HMO_provider %&gt;, please first check with your primary care physician before seeing this specialist:" restype="string" datatype="html">
         <source>I'd like to refer you to the following specialist. As a member of &lt;%= HMO_provider %&gt;, 
   please first check with your primary care physician before seeing this specialist:</source>
         <target>Me gustaría referirte con el siguiente especialista. Como un miembro de &lt;%= HMO_provider %&gt;, 
@@ -28447,15 +28447,15 @@
         <source>Invite your</source>
         <target>Invita a tu</target>
       </trans-unit>
-      <trans-unit id="13769" resname="Your&lt;%= upperExpertType %&gt;&apos;s Name" restype="string" datatype="html">
+      <trans-unit id="13769" resname="Your &lt;%= upperExpertType %&gt;&apos;s Name" restype="string" datatype="html">
         <source>Your &lt;%= upperExpertType %&gt;'s Name</source>
         <target>El nombre de tu &lt;%= upperExpertType %&gt;</target>
       </trans-unit>
-      <trans-unit id="13770" resname="Please tell us a little about yourself so your&lt;%= expertType %&gt;can verify you as a patient" restype="string" datatype="html">
+      <trans-unit id="13770" resname="Please tell us a little about yourself so your &lt;%= expertType %&gt; can verify you as a patient" restype="string" datatype="html">
         <source>Please tell us a little about yourself so your &lt;%= expertType %&gt; can verify you as a patient</source>
         <target>Por favor, comparte un poco sobre ti mismo para que el doctor pueda confirmarte como paciente</target>
       </trans-unit>
-      <trans-unit id="13771" resname="*Your number can help the&lt;%= upperExpertType %&gt;recognize you" restype="string" datatype="html">
+      <trans-unit id="13771" resname="*Your number can help the &lt;%= upperExpertType %&gt; recognize you" restype="string" datatype="html">
         <source>*Your number can help the &lt;%= upperExpertType %&gt; recognize you</source>
         <target>*Tu número puede ayudar al &lt;%= upperExpertType %&gt; a reconocerte</target>
       </trans-unit>
@@ -28554,7 +28554,7 @@
         <source>Need more help?</source>
         <target>¿Necesitas más ayuda?</target>
       </trans-unit>
-      <trans-unit id="13815" resname="Ask&lt;%= expertType %&gt;s" restype="string" datatype="html">
+      <trans-unit id="13815" resname="Ask &lt;%= expertType %&gt;s" restype="string" datatype="html">
         <source>Ask &lt;%= expertType %&gt;s</source>
         <target>Pregúntale a &lt;%= expertType %&gt;s</target>
       </trans-unit>
@@ -28610,7 +28610,7 @@
         <source>Search by name, specialty, or topic</source>
         <target>Buscar por nombre, especialidad o tema</target>
       </trans-unit>
-      <trans-unit id="13826" resname="Can&apos;t find a&lt;%= expertType %&gt;?&lt;a href=&quot;#&quot; class=&quot;inviteLink&quot;&gt;Invite them to HealthTap&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13826" resname="Can&apos;t find a &lt;%= expertType %&gt;?&lt;a href=&quot;#&quot; class=&quot;inviteLink&quot;&gt;Invite them to HealthTap&lt;/a&gt;" restype="string" datatype="html">
         <source>Can't find a &lt;%= expertType %&gt;? &lt;a href="#" class="inviteLink"&gt;Invite them to HealthTap&lt;/a&gt;</source>
         <target>¿No puedes encontrar a un &lt;%= expertType %&gt;? &lt;a href="#" class="inviteLink"&gt;Invítalos a HealthTap&lt;/a&gt;</target>
       </trans-unit>
@@ -28622,7 +28622,7 @@
         <source>Ask &lt;span&gt;&lt;%= expertType %&gt;s&lt;/span&gt;</source>
         <target>Pregúntale a &lt;span&gt;&lt;%= expertType %&gt;s&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="13828" resname="What would you like to ask our&lt;%= expertType %&gt;s?" restype="string" datatype="html">
+      <trans-unit id="13828" resname="What would you like to ask our &lt;%= expertType %&gt;s?" restype="string" datatype="html">
         <source>What would you like to ask our &lt;%= expertType %&gt;s?</source>
         <target>¿Qué te gustaría preguntarles a nuestros &lt;%= expertType %&gt;s?</target>
       </trans-unit>

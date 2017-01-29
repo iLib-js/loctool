@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2">
-  <file original="public/javascripts/views/experts/settings/account_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="407" resname=" " restype="string" datatype="javascript">
-        <source></source>
-        <target state="new"></target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="408" resname="The compensation report from {start_date} to {end_date} is being generated. \\n			It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+      <trans-unit id="408" resname="The compensation report from {start_date} to {end_date} is being generated. \\n   It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
         <source>The compensation report from {start_date} to {end_date} is being generated. \n It is gonna take a while. You will get an email once it is ready!</source>
         <target state="new">正在生成{start_date}到{end_date}的收入报告。\n 这还需要一会儿，完成后您会收到一封邮件</target>
       </trans-unit>
@@ -51,7 +43,7 @@
   <file original="public/javascripts/static/who_we_are/unitedwesavelives.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="413" resname="This counts the number of notes that we&apos;ve received from users thanking our doctors for saving their lives. " restype="string" datatype="javascript">
-        <source>This counts the number of notes that we&apos;ve received from users thanking our doctors for saving their lives. </source>
+        <source>This counts the number of notes that we've received from users thanking our doctors for saving their lives.</source>
         <target state="new">这个是我们收到的感谢医生拯救他们生命的感谢信总数</target>
       </trans-unit>
     </body>
@@ -59,33 +51,33 @@
   <file original="public/javascripts/static/what_we_make/get_your_widget.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="414" resname="{link_tag_start}{name}&apos;s Virtual Practice{link_tag_end}" restype="string" datatype="javascript">
-        <source>{link_tag_start}{name}&apos;s Virtual Practice{link_tag_end}</source>
-        <target state="new">{link_tag_start}{name}&apos;的在线问诊{link_tag_end}</target>
+        <source>{link_tag_start}{name}'s Virtual Practice{link_tag_end}</source>
+        <target state="new">{link_tag_start}{name}'的在线问诊{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/perf/sign_up_modals.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="415" resname="Don&apos;t have an account? " restype="string" datatype="javascript">
-        <source>Don&apos;t have an account? </source>
-        <target state="new">没有账户? </target>
+        <source>Don't have an account?</source>
+        <target state="new">没有账户?</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/controllers/user_questions/show_controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="416" resname="1&#35;There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\\n            &#35;There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
-        <source>1&#35;There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\
-            &#35;There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
-        <target state="new">1&#35;这里有 &lt;b&gt;{n}更多解答&lt;/b&gt; 医生为这个问题|\
-            &#35;这里有 &lt;b&gt;{n} 更多解答&lt;/b&gt; 医生为这个问题！</target>
+      <trans-unit id="416" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\\n            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
+        <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\
+            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
+        <target state="new">1#这里有 &lt;b&gt;{n}更多解答&lt;/b&gt; 医生为这个问题|\
+            #这里有 &lt;b&gt;{n} 更多解答&lt;/b&gt; 医生为这个问题！</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/controllers/people/personalize_controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="417" resname="Currently in {name}&apos;s health Profile:" restype="string" datatype="javascript">
-        <source>Currently in {name}&apos;s health Profile:</source>
+        <source>Currently in {name}'s health Profile:</source>
         <target state="new">现在在{name}的健康档案:</target>
       </trans-unit>
     </body>
@@ -93,11 +85,11 @@
   <file original="public/javascripts/controllers/people/ask_success_controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="418" resname="{name}&apos;s Activity" restype="string" datatype="javascript">
-        <source>{name}&apos;s Activity</source>
+        <source>{name}'s Activity</source>
         <target state="new">{name}的活动</target>
       </trans-unit>
       <trans-unit id="419" resname="Update {name}&apos;s profile now" restype="string" datatype="javascript">
-        <source>Update {name}&apos;s profile now</source>
+        <source>Update {name}'s profile now</source>
         <target state="new">立即更新{name}的档案</target>
       </trans-unit>
     </body>
@@ -105,7 +97,7 @@
   <file original="public/javascripts/controllers/pages/promote_controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="420" resname="{name}&apos;s Virtual Practice" restype="string" datatype="javascript">
-        <source>{name}&apos;s Virtual Practice</source>
+        <source>{name}'s Virtual Practice</source>
         <target state="new">{name}的在线问诊</target>
       </trans-unit>
     </body>
@@ -113,69 +105,68 @@
   <file original="public/javascripts/app-controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="421" resname="We&apos;re sorry, but it seems your internet connection does not meet\\n                   our minimum requirement for consults. Please try again with a more stable network.\\n                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \\n                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
-        <source>We&apos;re sorry, but it seems your internet connection does not meet\
+        <source>We're sorry, but it seems your internet connection does not meet\
                    our minimum requirement for consults. Please try again with a more stable network.\
                    &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \
                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
         <target state="new">非常抱歉，您的网络连接似乎不符合\
                    我们对于咨询的最低要求,请在稳定的网络下再次尝试\
-                   &lt;br&gt;&lt;br&gt;如果需要帮助，您可以通过{link_tag_start}expertsupport@healthtap.com{link_tag_end}联系我们 
-                   </target>
+                   &lt;br&gt;&lt;br&gt;如果需要帮助，您可以通过{link_tag_start}expertsupport@healthtap.com{link_tag_end}联系我们</target>
       </trans-unit>
       <trans-unit id="422" resname="{name}&apos;s connect request has been removed." restype="string" datatype="javascript">
-        <source>{name}&apos;s connect request has been removed.</source>
+        <source>{name}'s connect request has been removed.</source>
         <target state="new">{name}的互联请求已被移除。</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/waiting_question_item.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="423" resname="1&#35;1 doctor agrees|&#35;{count} doctors agree" restype="string" datatype="javascript">
-        <source>1&#35;1 doctor agrees|&#35;{count} doctors agree</source>
-        <target state="new">1&#35;1 个医生同意|&#35;{count} 个医生同意</target>
+      <trans-unit id="423" resname="1#1 doctor agrees|#{count} doctors agree" restype="string" datatype="javascript">
+        <source>1#1 doctor agrees|#{count} doctors agree</source>
+        <target state="new">1#1 个医生同意|#{count} 个医生同意</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/ui_modules/edit_pregnancy_content.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="427" resname="Please share {first_name}&apos;s obstetric / pregnancy history" restype="string" datatype="javascript">
-        <source>Please share {first_name}&apos;s obstetric / pregnancy history</source>
+        <source>Please share {first_name}'s obstetric / pregnancy history</source>
         <target state="new">请分享{first_name}的生产/怀孕史</target>
       </trans-unit>
       <trans-unit id="428" resname="Please share this person&apos;s obstetric / pregnancy history?" restype="string" datatype="javascript">
-        <source>Please share this person&apos;s obstetric / pregnancy history?</source>
+        <source>Please share this person's obstetric / pregnancy history?</source>
         <target state="new">请分享此人的生产/怀孕史</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/ui_modules/about_content.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="429" resname="{height_ft}&apos;{height_in}&quot; &#40;{height_meters}m&#41;" restype="string" datatype="javascript">
-        <source>{height_ft}&apos;{height_in}&quot; &#40;{height_meters}m&#41;</source>
-        <target state="new">{height_ft}&apos;{height_in}&quot; &#40;{height_meters}米&#41;</target>
+      <trans-unit id="429" resname="{height_ft}&apos;{height_in}&quot; ({height_meters}m)" restype="string" datatype="javascript">
+        <source>{height_ft}'{height_in}" ({height_meters}m)</source>
+        <target state="new">{height_ft}'{height_in}" ({height_meters}米)</target>
       </trans-unit>
       <trans-unit id="430" resname="{weight_kilograms}kg" restype="string" datatype="javascript">
         <source>{weight_kilograms}kg</source>
         <target state="new">{weight_kilograms}公斤</target>
       </trans-unit>
-      <trans-unit id="431" resname="{weight_lbs}lbs &#40;{weight_kilograms}kg&#41;" restype="string" datatype="javascript">
-        <source>{weight_lbs} &#40;{weight_kilograms}kg&#41;</source>
-        <target state="new">{weight_lbs}磅 &#40;{weight_kilograms}公斤&#41;</target>
+      <trans-unit id="431" resname="{weight_lbs}lbs ({weight_kilograms}kg)" restype="string" datatype="javascript">
+        <source>{weight_lbs} ({weight_kilograms}kg)</source>
+        <target state="new">{weight_lbs}磅 ({weight_kilograms}公斤)</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/question_item.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="432" resname="1&#35;&lt;a class=&apos;agrees&apos;&gt;1 doctor&lt;/a&gt; agrees|&#35;&lt;a class=&apos;agrees&apos;&gt;{n} doctors&lt;/a&gt; agree" restype="string" datatype="javascript">
-        <source>1&#35;&lt;a class=&apos;agrees&apos;&gt;1 doctor&lt;/a&gt; agrees|&#35;&lt;a class=&apos;agrees&apos;&gt;{n} doctors&lt;/a&gt; agree</source>
-        <target state="new">1&#35;&lt;a class=&apos;agrees&apos;&gt;1 名医生&lt;/a&gt; 同意|&#35;&lt;a class=&apos;agrees&apos;&gt;{n} 名医生&lt;/a&gt; 同意</target>
+      <trans-unit id="432" resname="1#&lt;a class=&apos;agrees&apos;&gt;1 doctor&lt;/a&gt; agrees|#&lt;a class=&apos;agrees&apos;&gt;{n} doctors&lt;/a&gt; agree" restype="string" datatype="javascript">
+        <source>1#&lt;a class='agrees'&gt;1 doctor&lt;/a&gt; agrees|#&lt;a class='agrees'&gt;{n} doctors&lt;/a&gt; agree</source>
+        <target state="new">1#&lt;a class='agrees'&gt;1 名医生&lt;/a&gt; 同意|#&lt;a class='agrees'&gt;{n} 名医生&lt;/a&gt; 同意</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="433" resname="Your {expertType}&apos;s Name" restype="string" datatype="javascript">
-        <source>Your {expertType}&apos;s Name</source>
+        <source>Your {expertType}'s Name</source>
         <target state="new">您的{expertType}的名字</target>
       </trans-unit>
     </body>
@@ -191,7 +182,7 @@
   <file original="public/feelGood/templates/consult_rating_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="435" resname="Please vote for and recommend {short_name}&apos;s expertise and bedside manner" restype="string" datatype="javascript">
-        <source>Please vote for and recommend {short_name}&apos;s expertise and bedside manner</source>
+        <source>Please vote for and recommend {short_name}'s expertise and bedside manner</source>
         <target state="new">请给{short_name}的专业性以及服务态度点赞</target>
       </trans-unit>
     </body>
@@ -199,71 +190,71 @@
   <file original="public/feelGood/templates/concierge_request_sent.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="436" resname="We&apos;ll notify you when {prefix}{last_name} accepts you as a patient!" restype="string" datatype="javascript">
-        <source>We&apos;ll notify you when {prefix}{last_name} accepts you as a patient!</source>
+        <source>We'll notify you when {prefix}{last_name} accepts you as a patient!</source>
         <target state="new">我们将在{prefix}{last_name}接受您为病人时通知您!</target>
       </trans-unit>
       <trans-unit id="437" resname="We&apos;ll notify you when {full_name} accepts you as a patient!" restype="string" datatype="javascript">
-        <source>We&apos;ll notify you when {full_name} accepts you as a patient!</source>
+        <source>We'll notify you when {full_name} accepts you as a patient!</source>
         <target state="new">我们将在{full_name}接受您为病人时通知您 !</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/concierge_payment_wrap.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="438" resname="1&#35;Saved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; Life|&#35;Saved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; Lives" restype="string" datatype="javascript">
-        <source>1&#35;Saved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; Life|&#35;Saved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; Lives</source>
-        <target state="new">1&#35;得救 &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; 生命|&#35;得救 &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; 生命</target>
+      <trans-unit id="438" resname="1#Saved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; Life|#Saved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; Lives" restype="string" datatype="javascript">
+        <source>1#Saved &lt;span class="orange"&gt;1&lt;/span&gt; Life|#Saved &lt;span class="orange"&gt;{n}&lt;/span&gt; Lives</source>
+        <target state="new">1#得救 &lt;span class="orange"&gt;1&lt;/span&gt; 生命|#得救 &lt;span class="orange"&gt;{n}&lt;/span&gt; 生命</target>
       </trans-unit>
-      <trans-unit id="439" resname="1&#35;Helped &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; person|&#35;Helped &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; people" restype="string" datatype="javascript">
-        <source>1&#35;Helped &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; person|&#35;Helped &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; people</source>
-        <target state="new">1&#35;被帮助 &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; 人|&#35;被帮助 &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; 人</target>
+      <trans-unit id="439" resname="1#Helped &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; person|#Helped &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; people" restype="string" datatype="javascript">
+        <source>1#Helped &lt;span class="orange"&gt;1&lt;/span&gt; person|#Helped &lt;span class="orange"&gt;{n}&lt;/span&gt; people</source>
+        <target state="new">1#被帮助 &lt;span class="orange"&gt;1&lt;/span&gt; 人|#被帮助 &lt;span class="orange"&gt;{n}&lt;/span&gt; 人</target>
       </trans-unit>
-      <trans-unit id="440" resname="1&#35;Received &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; doctor agrees|&#35;Received &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; doctor agrees" restype="string" datatype="javascript">
-        <source>1&#35;Received &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; doctor agrees|&#35;Received &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; doctor agrees</source>
-        <target state="new">1&#35;收到 &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; 医生同意|&#35;收到 &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; 医生同意</target>
+      <trans-unit id="440" resname="1#Received &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; doctor agrees|#Received &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; doctor agrees" restype="string" datatype="javascript">
+        <source>1#Received &lt;span class="orange"&gt;1&lt;/span&gt; doctor agrees|#Received &lt;span class="orange"&gt;{n}&lt;/span&gt; doctor agrees</source>
+        <target state="new">1#收到 &lt;span class="orange"&gt;1&lt;/span&gt; 医生同意|#收到 &lt;span class="orange"&gt;{n}&lt;/span&gt; 医生同意</target>
       </trans-unit>
-      <trans-unit id="441" resname="1&#35;Recieved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; thank|&#35;Recieved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; thanks" restype="string" datatype="javascript">
-        <source>1&#35;Recieved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; thank|&#35;Recieved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; thanks</source>
-        <target state="new">1&#35;收到 &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; 感谢|&#35; &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; 感谢</target>
+      <trans-unit id="441" resname="1#Recieved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; thank|#Recieved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; thanks" restype="string" datatype="javascript">
+        <source>1#Recieved &lt;span class="orange"&gt;1&lt;/span&gt; thank|#Recieved &lt;span class="orange"&gt;{n}&lt;/span&gt; thanks</source>
+        <target state="new">1#收到 &lt;span class="orange"&gt;1&lt;/span&gt; 感谢|# &lt;span class="orange"&gt;{n}&lt;/span&gt; 感谢</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/concierge_multi_connect_layout.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="442" resname="1&#35;We&apos;ve invited {n} doctor to join your Care-Team|&#35;We&apos;ve invited {n} doctors to join your Care-Team" restype="string" datatype="javascript">
-        <source>1&#35;We&apos;ve invited {n} doctor to join your Care-Team|&#35;We&apos;ve invited {n} doctors to join your Care-Team</source>
-        <target state="new">1&#35;我们已邀请{n}个医生加入您的医护团队|&#35;我们已邀请{n}个医生加入您的医护团队</target>
+      <trans-unit id="442" resname="1#We&apos;ve invited {n} doctor to join your Care-Team|#We&apos;ve invited {n} doctors to join your Care-Team" restype="string" datatype="javascript">
+        <source>1#We've invited {n} doctor to join your Care-Team|#We've invited {n} doctors to join your Care-Team</source>
+        <target state="new">1#我们已邀请{n}个医生加入您的医护团队|#我们已邀请{n}个医生加入您的医护团队</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/concierge_landing_doc_detail.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="443" resname="1&#35;In practice for: &lt;em&gt;1&lt;/em&gt; year|&#35;In practice for: &lt;em&gt;{duration}&lt;/em&gt; years" restype="string" datatype="javascript">
-        <source>1&#35;In practice for: &lt;em&gt;1&lt;/em&gt; year|&#35;In practice for: &lt;em&gt;{duration}&lt;/em&gt; years</source>
-        <target state="new">1&#35;已从医: &lt;em&gt;1&lt;/em&gt; 年|&#35;已从医: &lt;em&gt;{duration}&lt;/em&gt; 年</target>
+      <trans-unit id="443" resname="1#In practice for: &lt;em&gt;1&lt;/em&gt; year|#In practice for: &lt;em&gt;{duration}&lt;/em&gt; years" restype="string" datatype="javascript">
+        <source>1#In practice for: &lt;em&gt;1&lt;/em&gt; year|#In practice for: &lt;em&gt;{duration}&lt;/em&gt; years</source>
+        <target state="new">1#已从医: &lt;em&gt;1&lt;/em&gt; 年|#已从医: &lt;em&gt;{duration}&lt;/em&gt; 年</target>
       </trans-unit>
-      <trans-unit id="444" resname="1&#35;&lt;span&gt;1&lt;/span&gt; &quot;You saved my life&quot; thank you note|&#35;&lt;span&gt;{n}&lt;/span&gt; &quot;You saved my life&quot; thank you notes" restype="string" datatype="javascript">
-        <source>1&#35;&lt;span&gt;1&lt;/span&gt; &quot;You saved my life&quot; thank you note|&#35;&lt;span&gt;{n}&lt;/span&gt; &quot;You saved my life&quot; thank you notes</source>
-        <target state="new">1&#35;&lt;span&gt;1&lt;/span&gt; &quot;您救了我的命&quot; 感谢信|&#35;&lt;span&gt;{n}&lt;/span&gt; &quot;您救了我的命&quot; 感谢信</target>
+      <trans-unit id="444" resname="1#&lt;span&gt;1&lt;/span&gt; &quot;You saved my life&quot; thank you note|#&lt;span&gt;{n}&lt;/span&gt; &quot;You saved my life&quot; thank you notes" restype="string" datatype="javascript">
+        <source>1#&lt;span&gt;1&lt;/span&gt; "You saved my life" thank you note|#&lt;span&gt;{n}&lt;/span&gt; "You saved my life" thank you notes</source>
+        <target state="new">1#&lt;span&gt;1&lt;/span&gt; "您救了我的命" 感谢信|#&lt;span&gt;{n}&lt;/span&gt; "您救了我的命" 感谢信</target>
       </trans-unit>
-      <trans-unit id="445" resname="1&#35;&lt;span&gt;1&lt;/span&gt; person helped|&#35;&lt;span&gt;{n}&lt;/span&gt; people helped" restype="string" datatype="javascript">
-        <source>1&#35;&lt;span&gt;1&lt;/span&gt; person helped|&#35;&lt;span&gt;{n}&lt;/span&gt; people helped</source>
-        <target state="new">1&#35;&lt;span&gt;1&lt;/span&gt; 个人被帮助|&#35;&lt;span&gt;{n}&lt;/span&gt; people 个人被帮助</target>
+      <trans-unit id="445" resname="1#&lt;span&gt;1&lt;/span&gt; person helped|#&lt;span&gt;{n}&lt;/span&gt; people helped" restype="string" datatype="javascript">
+        <source>1#&lt;span&gt;1&lt;/span&gt; person helped|#&lt;span&gt;{n}&lt;/span&gt; people helped</source>
+        <target state="new">1#&lt;span&gt;1&lt;/span&gt; 个人被帮助|#&lt;span&gt;{n}&lt;/span&gt; people 个人被帮助</target>
       </trans-unit>
-      <trans-unit id="446" resname="1&#35;Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees" restype="string" datatype="javascript">
-        <source>1&#35;Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees</source>
-        <target state="new">1&#35;已收到: &lt;span&gt;1&lt;/span&gt; 个医生同意|&#35;已收到: &lt;span&gt;{n}&lt;/span&gt; 个医生同意</target>
+      <trans-unit id="446" resname="1#Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|#Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees" restype="string" datatype="javascript">
+        <source>1#Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|#Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees</source>
+        <target state="new">1#已收到: &lt;span&gt;1&lt;/span&gt; 个医生同意|#已收到: &lt;span&gt;{n}&lt;/span&gt; 个医生同意</target>
       </trans-unit>
-      <trans-unit id="447" resname="1&#35;Received: &lt;span&gt;1&lt;/span&gt; thank|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; thanks" restype="string" datatype="javascript">
-        <source>1&#35;Received: &lt;span&gt;1&lt;/span&gt; thank|&#35;Received: &lt;span&gt;{n}&lt;/span&gt; thanks</source>
-        <target state="new">1&#35;已收到: &lt;span&gt;1&lt;/span&gt; 个谢谢|&#35;已收到: &lt;span&gt;{n}&lt;/span&gt; 个谢谢</target>
+      <trans-unit id="447" resname="1#Received: &lt;span&gt;1&lt;/span&gt; thank|#Received: &lt;span&gt;{n}&lt;/span&gt; thanks" restype="string" datatype="javascript">
+        <source>1#Received: &lt;span&gt;1&lt;/span&gt; thank|#Received: &lt;span&gt;{n}&lt;/span&gt; thanks</source>
+        <target state="new">1#已收到: &lt;span&gt;1&lt;/span&gt; 个谢谢|#已收到: &lt;span&gt;{n}&lt;/span&gt; 个谢谢</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/ask_question_payment.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="448" resname="I agree to HealthTap&apos;s {term_link_tag_start}Terms{link_tag_end} and {priv_link_tag_start}Privacy Policy{link_tag_end}" restype="string" datatype="javascript">
-        <source>I agree to HealthTap&apos;s {term_link_tag_start}Terms{link_tag_end} and {priv_link_tag_start}Privacy Policy{link_tag_end}</source>
+        <source>I agree to HealthTap's {term_link_tag_start}Terms{link_tag_end} and {priv_link_tag_start}Privacy Policy{link_tag_end}</source>
         <target state="new">我同意HealthTap的{term_link_tag_start}服务条款{link_tag_end}和{priv_link_tag_start}隐私政策{link_tag_end}</target>
       </trans-unit>
     </body>
@@ -271,7 +262,7 @@
   <file original="public/feelGood/templates/ask_docs/when_picker.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="449" resname="We&apos;re sorry, virtual consults are not yet available in {state}" restype="string" datatype="javascript">
-        <source>We&apos;re sorry, virtual consults are not yet available in {state}</source>
+        <source>We're sorry, virtual consults are not yet available in {state}</source>
         <target state="new">抱歉，在{state}在线诊疗不工作</target>
       </trans-unit>
     </body>
@@ -279,11 +270,11 @@
   <file original="public/feelGood/templates/ask_docs/basic_info.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="450" resname="What is {name}&apos;s gender?" restype="string" datatype="javascript">
-        <source>What is {name}&apos;s gender?</source>
+        <source>What is {name}'s gender?</source>
         <target state="new">{name}的性别是什么?</target>
       </trans-unit>
       <trans-unit id="451" resname="Please provide the following for {name}&apos;s consult" restype="string" datatype="javascript">
-        <source>Please provide the following for {name}&apos;s consult</source>
+        <source>Please provide the following for {name}'s consult</source>
         <target state="new">请为{name}的咨询提供以下讯息</target>
       </trans-unit>
     </body>
@@ -291,23 +282,23 @@
   <file original="public/feelGood/templates/add_office_hour.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="452" resname="Let patients know when you&apos;re available in your Virtual Practice on {day}s" restype="string" datatype="javascript">
-        <source>Let patients know when you&apos;re available in your Virtual Practice on {day}s</source>
-        <target state="new">告诉患者您在{day}的在线诊疗是有空的 </target>
+        <source>Let patients know when you're available in your Virtual Practice on {day}s</source>
+        <target state="new">告诉患者您在{day}的在线诊疗是有空的</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/js/unsubscribe.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="453" resname="We&apos;ll stop sending you announcements and notifications by email from now on. We&apos;ll miss you :&#40;" restype="string" datatype="javascript">
-        <source>We&apos;ll stop sending you announcements and notifications by email from now on. We&apos;ll miss you :&#40;</source>
-        <target state="new">我们会停止发信和讯息，我们会想你 :&#40;</target>
+      <trans-unit id="453" resname="We&apos;ll stop sending you announcements and notifications by email from now on. We&apos;ll miss you :(" restype="string" datatype="javascript">
+        <source>We'll stop sending you announcements and notifications by email from now on. We'll miss you :(</source>
+        <target state="new">我们会停止发信和讯息，我们会想你 :(</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/js/training_room.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="454" resname="Try it out! Don&apos;t forget to click &quot;Prescribe&quot; once you&apos;ve entered the details." restype="string" datatype="javascript">
-        <source>Try it out! Don&apos;t forget to click &quot;Prescribe&quot; once you&apos;ve entered the details.</source>
+        <source>Try it out! Don't forget to click "Prescribe" once you've entered the details.</source>
         <target state="new">试试看，输入具体内容后别忘了点击“开药”</target>
       </trans-unit>
     </body>
@@ -315,27 +306,27 @@
   <file original="public/feelGood/js/staticPages/modules/expert_invite_form.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="455" resname="Please provide the doctor&apos;s name" restype="string" datatype="javascript">
-        <source>Please provide the doctor&apos;s name</source>
+        <source>Please provide the doctor's name</source>
         <target state="new">请提供医生名字</target>
       </trans-unit>
       <trans-unit id="456" resname="Please provide the doctor&apos;s specialty" restype="string" datatype="javascript">
-        <source>Please provide the doctor&apos;s specialty</source>
+        <source>Please provide the doctor's specialty</source>
         <target state="new">请提供医生专科</target>
       </trans-unit>
       <trans-unit id="457" resname="Please provide the doctor&apos;s city" restype="string" datatype="javascript">
-        <source>Please provide the doctor&apos;s city</source>
+        <source>Please provide the doctor's city</source>
         <target state="new">请提供医生的城市</target>
       </trans-unit>
       <trans-unit id="458" resname="Please provide the doctor&apos;s state" restype="string" datatype="javascript">
-        <source>Please provide the doctor&apos;s state</source>
+        <source>Please provide the doctor's state</source>
         <target state="new">请提供医生的州</target>
       </trans-unit>
       <trans-unit id="459" resname="Please provide the doctor&apos;s email" restype="string" datatype="javascript">
-        <source>Please provide the doctor&apos;s email</source>
+        <source>Please provide the doctor's email</source>
         <target state="new">请提供医生的信箱</target>
       </trans-unit>
       <trans-unit id="460" resname="The doctor&apos;s phone number is not valid" restype="string" datatype="javascript">
-        <source>The doctor&apos;s phone number is not valid</source>
+        <source>The doctor's phone number is not valid</source>
         <target state="new">医生的电话号码格式不对哦</target>
       </trans-unit>
     </body>
@@ -355,7 +346,7 @@
         <target state="new">{name} 谢谢您的赞赏!</target>
       </trans-unit>
       <trans-unit id="463" resname="Would you like to send a secure message to {name}&apos;s colleague, {colleague_name}?" restype="string" datatype="javascript">
-        <source>Would you like to send a secure message to {name}&apos;s colleague, {colleague_name}?</source>
+        <source>Would you like to send a secure message to {name}'s colleague, {colleague_name}?</source>
         <target state="new">您希望发一个私密的短信给{name}的同事colleague_name}?</target>
       </trans-unit>
       <trans-unit id="464" resname="Would you like to send a secure message to {name}?" restype="string" datatype="javascript">
@@ -367,7 +358,7 @@
         <target state="new">您还想再进一步问{name}问题么?</target>
       </trans-unit>
       <trans-unit id="466" resname="Would you like to ask a follow-up question to {name}&apos;s colleague, {colleague_name}?" restype="string" datatype="javascript">
-        <source>Would you like to ask a follow-up question to {name}&apos;s colleague, {colleague_name}?</source>
+        <source>Would you like to ask a follow-up question to {name}'s colleague, {colleague_name}?</source>
         <target state="new">您还想再进一步问{name}的同事{colleague_name}问题么?</target>
       </trans-unit>
       <trans-unit id="467" resname="{name} appreciates your gratitude! Have a follow up question?" restype="string" datatype="javascript">
@@ -390,9 +381,9 @@
   </file>
   <file original="public/feelGood/js/enterprise/sign_up.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="470" resname="Please enter a non-work email &#40;one that doesn&apos;t end with {email_domain}" restype="string" datatype="javascript">
-        <source>Please enter a non-work email &#40;one that doesn&apos;t end with {email_domain}</source>
-        <target state="new">请输入一个非工作邮箱 &#40;邮箱结尾不为{email_domain}</target>
+      <trans-unit id="470" resname="Please enter a non-work email (one that doesn&apos;t end with {email_domain}" restype="string" datatype="javascript">
+        <source>Please enter a non-work email (one that doesn't end with {email_domain}</source>
+        <target state="new">请输入一个非工作邮箱 (邮箱结尾不为{email_domain}</target>
       </trans-unit>
     </body>
   </file>
@@ -427,7 +418,7 @@
   <file original="public/feelGood/js/app.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="474" resname="We&apos;ve registered your vote for &quot;{name}&quot; and will encourage more doctors to review the app." restype="string" datatype="javascript">
-        <source>We&apos;ve registered your vote for &quot;{name}&quot; and will encourage more doctors to review the app.</source>
+        <source>We've registered your vote for "{name}" and will encourage more doctors to review the app.</source>
         <target state="new">我们收到您给{name}的投票并会鼓励跟多医生来评测这款应用</target>
       </trans-unit>
     </body>
@@ -435,7 +426,7 @@
   <file original="app/views/static_pages/partial/_chat_simulation.html.haml" source-language="en-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="475" resname="r459380774" restype="string" datatype="ruby">
-        <source>You can actually talk with me or another HealthTap doctor now by video or text chat. Would you like to see a doctor now? We&apos;re standing by!</source>
+        <source>You can actually talk with me or another HealthTap doctor now by video or text chat. Would you like to see a doctor now? We're standing by!</source>
         <target state="new">你可以立即和我或者其他HealthTap医生通过视频或者文字对话，你需要现在就看医生吗？我们随时服务！</target>
       </trans-unit>
     </body>
@@ -443,27 +434,27 @@
   <file original="app/views/people/feelGood/submit_case.html.haml" source-language="en-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="476" resname="r833790376" restype="string" datatype="ruby">
-        <source>Diagnostic dilemma: &quot;What&apos;s the diagnosis?&quot;</source>
+        <source>Diagnostic dilemma: "What's the diagnosis?"</source>
         <target state="new">诊断的难点：诊断意味着什么</target>
       </trans-unit>
       <trans-unit id="477" resname="r372120495" restype="string" datatype="ruby">
-        <source>Diagnostic dilemma: &quot;What are the next steps for evaluation?&quot;</source>
-         <target state="new">诊断的难点：下一步怎么来评论</target>
+        <source>Diagnostic dilemma: "What are the next steps for evaluation?"</source>
+        <target state="new">诊断的难点：下一步怎么来评论</target>
       </trans-unit>
       <trans-unit id="478" resname="r688178430" restype="string" datatype="ruby">
-        <source>Treatment decision: &quot;What&apos;s the best treatment?&quot;</source>
-         <target state="new">治疗决定：什么是最好的治疗方案</target>
+        <source>Treatment decision: "What's the best treatment?"</source>
+        <target state="new">治疗决定：什么是最好的治疗方案</target>
       </trans-unit>
       <trans-unit id="479" resname="r230124915" restype="string" datatype="ruby">
-        <source>Fascinating or rare case: &quot;Isn&apos;t this interesting?&quot;</source>
-         <target state="new">特殊的或罕见病例：这挺有意思的，不是么？</target>
+        <source>Fascinating or rare case: "Isn't this interesting?"</source>
+        <target state="new">特殊的或罕见病例：这挺有意思的，不是么？</target>
       </trans-unit>
     </body>
   </file>
   <file original="app/views/general_mailer/doctor_test_results_critical_day1.html.haml" source-language="en-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="480" resname="r923729424" restype="string" datatype="ruby">
-        <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an &quot;addendum note&quot; to this consult using the chat input.</source>
+        <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an "addendum note" to this consult using the chat input.</source>
         <target state="new">请审核这些结果，提供您对这些结果的看法，然后告诉病人下一步该怎么办，在在线医疗咨询聊天处添加一个附加条就行</target>
       </trans-unit>
     </body>
@@ -471,8 +462,8 @@
   <file original="app/views/general_mailer/doctor_inbox_incoming_group.html.haml" source-language="en-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="481" resname="r570522913" restype="string" datatype="ruby">
-        <source>page, and select the &quot;Answer Patient&quot; button.</source>
-        <target state="new">页，并选择&quot;回答病人&quot;按钮</target>
+        <source>page, and select the "Answer Patient" button.</source>
+        <target state="new">页，并选择"回答病人"按钮</target>
       </trans-unit>
     </body>
   </file>
@@ -488,17 +479,17 @@
     <body>
       <trans-unit id="483" resname="r277688003" restype="string" datatype="ruby">
         <source>Please select one of the following:</source>
-         <target state="new">请选择以下的一项:</target>
+        <target state="new">请选择以下的一项:</target>
       </trans-unit>
       <trans-unit id="484" resname="r854720274" restype="string" datatype="ruby">
-        <source>Do you know of any reasons why the doctor&apos;s licensing applications in any state might be rejected or revoked?</source>
-          <target state="new">你知道什么原因会使医生的认证申请书在某些州会被拒绝或取消吗？</target>
+        <source>Do you know of any reasons why the doctor's licensing applications in any state might be rejected or revoked?</source>
+        <target state="new">你知道什么原因会使医生的认证申请书在某些州会被拒绝或取消吗？</target>
       </trans-unit>
     </body>
   </file>
   <file original="lib/time_helper.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1" resname="r133973370" restype="string" datatype="ruby">
+      <trans-unit id="1" resname="r232519831" restype="string" datatype="ruby">
         <source>今天 %{time}</source>
         <target state="new">今天 %{time}</target>
       </trans-unit>
@@ -507,8 +498,8 @@
   <file original="lib/ht_argument_error.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2" resname="r810259444" restype="string" datatype="ruby">
-        <source>Appointment cannot be make at that time. Please choose another time slot. If you have any questions please contact our Quality Care team at support@healthtap.com. &#40;Error code: %{error}&#41;</source>
-        <target state="new">该时间段无法完成预约。请选择其他时间段。如果您有任何问题，请联系我们的质量保证团队support@healthtap.com。 &#40;错误代码：%{error}&#41;</target>
+        <source>Appointment cannot be make at that time. Please choose another time slot. If you have any questions please contact our Quality Care team at support@healthtap.com. (Error code: %{error})</source>
+        <target state="new">该时间段无法完成预约。请选择其他时间段。如果您有任何问题，请联系我们的质量保证团队support@healthtap.com。 (错误代码：%{error})</target>
       </trans-unit>
       <trans-unit id="3" resname="r500719923" restype="string" datatype="ruby">
         <source>Appointment cannot be make at that time. Please choose another time slot</source>
@@ -518,16 +509,16 @@
   </file>
   <file original="app/views/what_we_make/member_faqs.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="4" resname="r925290825" restype="string" datatype="ruby">
-        <source>Yes - it’s true!  Health questions submitted to HealthTap are submitted to our network of thousands of doctor across the U.S.  These doctors try to answer every question that’s submitted.  Questions are most likely to be answered when they have not already been asked and answered, and they are good health questions &#40;easy to understand and useful to the entire HealthTap community&#41;. Learn more &amp;raquo;</source>
+      <trans-unit id="4" resname="r1070662255" restype="string" datatype="ruby">
+        <source>Yes - it’s true!  Health questions submitted to HealthTap are submitted to our network of thousands of doctor across the U.S.  These doctors try to answer every question that’s submitted.  Questions are most likely to be answered when they have not already been asked and answered, and they are good health questions (easy to understand and useful to the entire HealthTap community). Learn more &amp;raquo;</source>
         <target state="new">对，是真的！提交到HealthTap的健康问题会被提交到我们网络上的数千名美国医生。这些医生试图回答提交的每个问题。
-        那些没有被问过或回答过的，良好的， &#40;容易被理解并且对整个HealthTap社区有用的&#41;健康问题最有可能得到回答。了解详情 &amp;raquo;</target>
+        那些没有被问过或回答过的，良好的， (容易被理解并且对整个HealthTap社区有用的)健康问题最有可能得到回答。了解详情 &amp;raquo;</target>
       </trans-unit>
-      <trans-unit id="5" resname="r141345879" restype="string" datatype="ruby">
-        <source>There is a small fee &#40;less than the cost of a typical co-pay for someone with comprehensive health insurance&#41; to ask a private question directly to the doctor of your choice on HealthTap. When you submit a private question to a doctor on HealthTap, that doctor has up to 72 hours to answer the question. You will receive a full refund if the question is not answered within that time. Learn more &amp;raquo;</source>
-        <target state="new">&#40;对于有全面健康保险的人来说，有一个低于典型共同支付的小额的费用，&#41; 从而可以直接向HealthTap上您选择的医生询问私人问题。当您向HealthTap上的医生提交一个私人问题时，该医生有长达72小时回答这个问题。如果在该时间内未能回答您的问题，您将收到全额退款。了解详情 &amp;raquo;</target>
+      <trans-unit id="5" resname="r597744609" restype="string" datatype="ruby">
+        <source>There is a small fee (less than the cost of a typical co-pay for someone with comprehensive health insurance) to ask a private question directly to the doctor of your choice on HealthTap. When you submit a private question to a doctor on HealthTap, that doctor has up to 72 hours to answer the question. You will receive a full refund if the question is not answered within that time. Learn more &amp;raquo;</source>
+        <target state="new">(对于有全面健康保险的人来说，有一个低于典型共同支付的小额的费用，) 从而可以直接向HealthTap上您选择的医生询问私人问题。当您向HealthTap上的医生提交一个私人问题时，该医生有长达72小时回答这个问题。如果在该时间内未能回答您的问题，您将收到全额退款。了解详情 &amp;raquo;</target>
       </trans-unit>
-      <trans-unit id="6" resname="r97611072" restype="string" datatype="ruby">
+      <trans-unit id="6" resname="r580751419" restype="string" datatype="ruby">
         <source>To log in to HealthTap you must first register and create an account. When you do this, you’ll pick an email address and password to use. You can change your log in information in your settings at any time. If you’ve already registered and are having trouble logging in, please contact us.</source>
         <target state="new">要登录HealthTap，您必须先注册并创建一个帐户。执行此操作时，您将选择要使用的电子邮件地址和密码。您可以随时在设置中更改登录信息。如果您已经注册并且无法登录，请与我们联系。</target>
       </trans-unit>
@@ -535,35 +526,35 @@
   </file>
   <file original="app/views/what_we_make/medical_expert_faqs.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="7" resname="r931591608" restype="string" datatype="ruby">
+      <trans-unit id="7" resname="r290077816" restype="string" datatype="ruby">
         <source>To add other group affiliations to your HealthTap profile, edit your Virtual Practice page. Learn more &amp;raquo;</source>
         <target state="new">要将其他组织成员添加到您的HealthTap档案，请编辑您的虚拟实践页面。了解更多 &amp;raquo;</target>
       </trans-unit>
-      <trans-unit id="8" resname="r1070161257" restype="string" datatype="ruby">
+      <trans-unit id="8" resname="r783010191" restype="string" datatype="ruby">
         <source>Providing helpful answers: answer more</source>
         <target state="new">提供有用的答案：回答更多</target>
       </trans-unit>
-      <trans-unit id="9" resname="r990638085" restype="string" datatype="ruby">
+      <trans-unit id="9" resname="r568917292" restype="string" datatype="ruby">
         <source>Growing your network of patient and peers</source>
         <target state="new">增长您的病人网络和同行网络</target>
       </trans-unit>
-      <trans-unit id="10" resname="r1009993530" restype="string" datatype="ruby">
+      <trans-unit id="10" resname="r887373116" restype="string" datatype="ruby">
         <source>Accepting new private messages from patients</source>
         <target state="new">接受患者的私信</target>
       </trans-unit>
-      <trans-unit id="11" resname="r1009999163" restype="string" datatype="ruby">
+      <trans-unit id="11" resname="r135053626" restype="string" datatype="ruby">
         <source>The benefits of HealthTap for doctors are spelled out on our doctors page. If you are a U.S.-licensed doctor you can sign up online or by downloading the number one featured HealthTap MD app for iPhone, iPad and Android. Signing up is quick and easy — and getting started takes less than a minute. During the sign up process we will ask for information that is required to verify that every Medical Expert on HealthTap is a U.S. licensed physician in good standing. If you need assistance during the sign up process, please reach out to our support team here.</source>
         <target state="new">HealthTap面向医生服务的好处在我们的医生页面上有详细说明。如果您是美国认证的医生，您可以在线注册或下载HealthTap医生应用程序（iPhone，iPad和Android）。注册过程很快很简单 - 开始只需不到一分钟。在注册过程中，我们将要求提供信息，以验证HealthTap上的每位医疗专家都是具有良好信誉的美国执业医师。如果您在申请过程中需要帮助，请在联系我们的用户支持团队。</target>
       </trans-unit>
-      <trans-unit id="12" resname="r269716433" restype="string" datatype="ruby">
+      <trans-unit id="12" resname="r863997893" restype="string" datatype="ruby">
         <source>If you are a U.S. licensed doctor you can sign up online or by downloading the number one featured HealthTap MD app for iPhone, iPad and Android. Signing up is quick and easy — and getting started takes less than a minute. During the sign up process we will ask for information that is required to verify that every Medical Expert on HealthTap is a U.S. licensed doctor in good standing. If you need assistance during the sign up process, please reach out to our support team here</source>
         <target state="new">如果您是美国持牌医生，您可以在线注册或下载HealthTap医生应用程序（iPhone，iPad和Android）。注册过程很快很简单 - 开始只需不到一分钟。在注册过程中，我们将要求提供信息，以验证HealthTap上的每位医疗专家都是具有良好信誉的美国执业医师。如果您在申请过程中需要帮助，请在联系我们的用户支持团队。</target>
       </trans-unit>
-      <trans-unit id="13" resname="r674107202" restype="string" datatype="ruby">
-        <source>Once you have declared your “Known For” topics you have the ability to showcase your expertise in this area and earn the &#35;1 spot on your block, in your neighborhood, city, state, and beyond! You can be the best in your known for areas simply by doing what you do best — helping people who are looking for your expertise. Learn more &amp;raquo;</source>
-        <target state="new">一旦您有了您“闻名的”主题，您将可以在这里展示您在这方面的专业知识，并获得在你的街区，在你家附近，城市，国家甚至更远地方的&#35;关注度！您可以通过做您最擅长的东西 - 帮助需要您专业知识的人，从而成为你所在的领域最好的一员。了解详情 &amp;raquo;</target>
+      <trans-unit id="13" resname="r801361737" restype="string" datatype="ruby">
+        <source>Once you have declared your “Known For” topics you have the ability to showcase your expertise in this area and earn the #1 spot on your block, in your neighborhood, city, state, and beyond! You can be the best in your known for areas simply by doing what you do best — helping people who are looking for your expertise. Learn more &amp;raquo;</source>
+        <target state="new">一旦您有了您“闻名的”主题，您将可以在这里展示您在这方面的专业知识，并获得在你的街区，在你家附近，城市，国家甚至更远地方的#关注度！您可以通过做您最擅长的东西 - 帮助需要您专业知识的人，从而成为你所在的领域最好的一员。了解详情 &amp;raquo;</target>
       </trans-unit>
-      <trans-unit id="14" resname="r1058278885" restype="string" datatype="ruby">
+      <trans-unit id="14" resname="r554919936" restype="string" datatype="ruby">
         <source>Adding a video to a Wellness page is a great way to inspire others to improve their health and well-being. Learn more here about our Wellness pages and how to submit your videos directly on HealthTap or via email.</source>
         <target state="new">将视频添加到“健康”页面是激励他人改善健康的好方法。在这里了解我们的健康网页，以及如何直接在HealthTap或通过电子邮件提交您的视频</target>
       </trans-unit>
@@ -571,7 +562,7 @@
   </file>
   <file original="app/views/what_we_make/for_doctors/_vip.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="15" resname="r211812106" restype="string" datatype="ruby">
+      <trans-unit id="15" resname="r30832463" restype="string" datatype="ruby">
         <source>Get your free personalized app today! Download our mobile app. Or we'll make you your own</source>
         <target state="new">今天就获取您的免费个性化应用程序！下载我们的移动应用。或者做出你自己的应用</target>
       </trans-unit>
@@ -595,13 +586,13 @@
         <source>%{count} doctors weighed in</source>
         <target state="new">%{count}位医生参与了</target>
       </trans-unit>
-      <trans-unit id="20" resname="r534642353" restype="plural" datatype="ruby" extype="one">
-        <source>&lt;span class=&quot;num&quot;&gt;1&lt;/span&gt; comment</source>
-        <target state="new">&lt;span class=&quot;num&quot;&gt;1&lt;/span&gt; 评论</target>
+      <trans-unit id="20" resname="r734656289" restype="plural" datatype="ruby" extype="one">
+        <source>&lt;span class="num"&gt;1&lt;/span&gt; comment</source>
+        <target state="new">&lt;span class="num"&gt;1&lt;/span&gt; 评论</target>
       </trans-unit>
-      <trans-unit id="21" resname="r534642353" restype="plural" datatype="ruby" extype="other">
-        <source>&lt;span class=&quot;num&quot;&gt;%{count}&lt;/span&gt; comments</source>
-        <target state="new">&lt;span class=&quot;num&quot;&gt;%{count}&lt;/span&gt; 评论</target>
+      <trans-unit id="21" resname="r734656289" restype="plural" datatype="ruby" extype="other">
+        <source>&lt;span class="num"&gt;%{count}&lt;/span&gt; comments</source>
+        <target state="new">&lt;span class="num"&gt;%{count}&lt;/span&gt; 评论</target>
       </trans-unit>
     </body>
   </file>
@@ -653,7 +644,7 @@
         <target state="new">HealthTap将从问答网站转变为医生，医院或提供者组织将更有效地管理其较大的患者库的服务。</target>
       </trans-unit>
       <trans-unit id="28" resname="r654595923" restype="string" datatype="ruby">
-        <source>HealthTap helps you &apos;prepare...to ask smarter questions when [you] get to the doctor&apos;s office&apos;.</source>
+        <source>HealthTap helps you 'prepare...to ask smarter questions when [you] get to the doctor's office'.</source>
         <target state="new">HealthTap帮助你准备...当你到达医生办公室时要问更直接了当的问题。</target>
       </trans-unit>
       <trans-unit id="29" resname="r821252415" restype="string" datatype="ruby">
@@ -665,31 +656,31 @@
         <target state="new">HealthTap...更愿意倾向于那些愿意个性化定义自己角色和工作时间的医生</target>
       </trans-unit>
       <trans-unit id="31" resname="r127921266" restype="string" datatype="ruby">
-        <source>Goodbye doctor&apos;s appointments and waiting rooms, hello HealthTap.</source>
+        <source>Goodbye doctor's appointments and waiting rooms, hello HealthTap.</source>
         <target state="new">欢迎来到HealthTap, 跟去医院看病的烦恼说再见.</target>
       </trans-unit>
       <trans-unit id="32" resname="r455048854" restype="string" datatype="ruby">
-        <source>HealthTap &apos;just might make you raise both eyebrows in surprise&apos;.</source>
-        <target state="new">HealthTap &apos;绝对让你眼前一亮&apos;.</target>
+        <source>HealthTap 'just might make you raise both eyebrows in surprise'.</source>
+        <target state="new">HealthTap '绝对让你眼前一亮'.</target>
       </trans-unit>
       <trans-unit id="33" resname="r826633556" restype="string" datatype="ruby">
         <source>What HealthTap is doing is revolutionary.</source>
         <target state="new">HealthTap正在改变世界</target>
       </trans-unit>
       <trans-unit id="34" resname="r579809213" restype="string" datatype="ruby">
-        <source>HealthTap &apos;gives consumers more control over their health&apos;.</source>
-        <target state="new">HealthTap &apos;让顾客更好的管理自己的健康&apos;.</target>
+        <source>HealthTap 'gives consumers more control over their health'.</source>
+        <target state="new">HealthTap '让顾客更好的管理自己的健康'.</target>
       </trans-unit>
       <trans-unit id="35" resname="r700277872" restype="string" datatype="ruby">
-        <source>HealthTap was created &apos;to engage people in their health and to help them live healthier, happier lives&apos;.</source>
+        <source>HealthTap was created 'to engage people in their health and to help them live healthier, happier lives'.</source>
         <target state="new">HealthTap的任务是让人们活的更加健康更加精彩</target>
       </trans-unit>
       <trans-unit id="36" resname="r734568465" restype="string" datatype="ruby">
-        <source>[Increasing] its network of doctors available to answer patients&apos; questions online, Palo Alto-based HealthTap is acquiring Q&amp;amp;A site Avvo Health.</source>
-        <target state="new">为了获得更多医生来帮助患者在线解决问题&apos;, HealthTap收购了Avvo Health.</target>
+        <source>[Increasing] its network of doctors available to answer patients' questions online, Palo Alto-based HealthTap is acquiring Q&amp;amp;A site Avvo Health.</source>
+        <target state="new">为了获得更多医生来帮助患者在线解决问题', HealthTap收购了Avvo Health.</target>
       </trans-unit>
       <trans-unit id="37" resname="r994522921" restype="string" datatype="ruby">
-        <source>HealthTap isn&apos;t the only service that puts real doctors on your computer screen or on your smartphone, but it&apos;s the best we&apos;ve seen</source>
+        <source>HealthTap isn't the only service that puts real doctors on your computer screen or on your smartphone, but it's the best we've seen</source>
         <target state="new">HealthTap并不是唯一一个让你把医生带在身边的服务, 但是她是迄今为止最好的在线医疗服务</target>
       </trans-unit>
       <trans-unit id="38" resname="r635663345" restype="string" datatype="ruby">
@@ -701,11 +692,11 @@
         <target state="new">HealthTap是您的个性化健康源</target>
       </trans-unit>
       <trans-unit id="40" resname="r1055836732" restype="string" datatype="ruby">
-        <source>HealthTap is...involving physicians in the conversations and by personalizing information to each person&apos;s individual needs.</source>
+        <source>HealthTap is...involving physicians in the conversations and by personalizing information to each person's individual needs.</source>
         <target state="new">HealthTap让你在和医生面诊时更加私人订制</target>
       </trans-unit>
       <trans-unit id="41" resname="r559742024" restype="string" datatype="ruby">
-        <source>HealthTap distinguishes itself from other health education websites by having practicing physicians answer the consumers&apos; questions.</source>
+        <source>HealthTap distinguishes itself from other health education websites by having practicing physicians answer the consumers' questions.</source>
         <target state="new">HealthTap通过让执业医生回答消费者的健康教育， 这和其他在线医学教育网站完全不同</target>
       </trans-unit>
       <trans-unit id="42" resname="r313208786" restype="string" datatype="ruby">
@@ -753,14 +744,14 @@
   <file original="app/views/static_pages/partial/_chat_simulation.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="52" resname="r206516038" restype="string" datatype="ruby">
-        <source>Nice to meet you! I&apos;m %{doc_name}, and I&apos;m a Board Certified U.S. doctor. Can we answer a health question for you?</source>
+        <source>Nice to meet you! I'm %{doc_name}, and I'm a Board Certified U.S. doctor. Can we answer a health question for you?</source>
         <target state="new">很高兴认识你， 我是 %{doc_name}, 我是一个董事会认证的美国医生。我们能为你回答健康问题吗？</target>
       </trans-unit>
     </body>
   </file>
   <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="53" resname="r116346273" restype="string" datatype="ruby">
+      <trans-unit id="53" resname="r228338120" restype="string" datatype="ruby">
         <source>WHAT MAKES PEOPLE FEEL GOOD?</source>
         <target state="new">什么让人们感觉特别健康</target>
       </trans-unit>
@@ -769,19 +760,15 @@
   <file original="app/views/static_pages/investors.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="54" resname="r637275831" restype="string" datatype="ruby">
-        <source>Bill Ericson has been working with startups his entire career as a founder, key advisor, counselor and investor. He believes that entrepreneurship drives the American economy, and that the best venture capitalists see their role as supporting and challenging entrepreneurs to their best performance. Bill’s current investment focus is the big data revolution that is driving the commercial, consumer media, and healthcare worlds. Bill serves on the Board of Northwestern University School of Law and received his B.S.F.S. from Georgetown University of Foreign Service and J.D. from Northwestern University School of Law. MDV has over $1.4 billion under management and partners with entrepreneurs to architect and build successful companies. MDV invests in businesses that address significant challenges and opportunities, including personalizing medicine. MDV-funded companies that have gone public or been acquired include: Agile; Broadbase &#40;KANA&#41;; Brocade; Epigram &#40;BRCM&#41;; FormFactor &#40;FORM&#41;; Freshwater Software &#40;MERQ&#41;; Ipsilon Networks &#40;NOK&#41;; Kalpana &#40;CSCO&#41;; Numerical Technologies &#40;SNPS&#41;; ONI Systems &#40;CIEN&#41;; Pivotal Technologies &#40;BRCM&#41;; Rambus; Vantive; Vitesse; and Zip2 &#40;AltaVista&#41;.</source>
-        <target state="new">Bill Ericson一直与创业公司合作，他的整个职业生涯都是作为创始人，关键顾问，顾问和投资者。他认为创业驱使美国经济，最好的风险资本家看到他们的作用，支持和挑战企业家的最佳表现。 Bill目前的投资焦点是推动商业，消费媒体和医疗保健领域的大数据革命。 Bill在西北大学法学院董事会任职，并获得了B.S.F.S.来自乔治城外交大学和J.D.从西北大学法学院。 MDV有超过14亿美元的管理和合作伙伴与企业家建筑师和建立成功的公司。 MDV投资于解决重大挑战和机遇的企业，包括个性化医疗。上市或被收购的MDV资助公司包括: Agile; Broadbase &#40;KANA&#41;; Brocade; Epigram &#40;BRCM&#41;; FormFactor &#40;FORM&#41;; Freshwater Software &#40;MERQ&#41;; Ipsilon Networks &#40;NOK&#41;; Kalpana &#40;CSCO&#41;; Numerical Technologies &#40;SNPS&#41;; ONI Systems &#40;CIEN&#41;; Pivotal Technologies &#40;BRCM&#41;; Rambus; Vantive; Vitesse; 和 Zip2 &#40;AltaVista&#41;.</target>
+        <source>Bill Ericson has been working with startups his entire career as a founder, key advisor, counselor and investor. He believes that entrepreneurship drives the American economy, and that the best venture capitalists see their role as supporting and challenging entrepreneurs to their best performance. Bill’s current investment focus is the big data revolution that is driving the commercial, consumer media, and healthcare worlds. Bill serves on the Board of Northwestern University School of Law and received his B.S.F.S. from Georgetown University of Foreign Service and J.D. from Northwestern University School of Law. MDV has over $1.4 billion under management and partners with entrepreneurs to architect and build successful companies. MDV invests in businesses that address significant challenges and opportunities, including personalizing medicine. MDV-funded companies that have gone public or been acquired include: Agile; Broadbase (KANA); Brocade; Epigram (BRCM); FormFactor (FORM); Freshwater Software (MERQ); Ipsilon Networks (NOK); Kalpana (CSCO); Numerical Technologies (SNPS); ONI Systems (CIEN); Pivotal Technologies (BRCM); Rambus; Vantive; Vitesse; and Zip2 (AltaVista).</source>
+        <target state="new">Bill Ericson一直与创业公司合作，他的整个职业生涯都是作为创始人，关键顾问，顾问和投资者。他认为创业驱使美国经济，最好的风险资本家看到他们的作用，支持和挑战企业家的最佳表现。 Bill目前的投资焦点是推动商业，消费媒体和医疗保健领域的大数据革命。 Bill在西北大学法学院董事会任职，并获得了B.S.F.S.来自乔治城外交大学和J.D.从西北大学法学院。 MDV有超过14亿美元的管理和合作伙伴与企业家建筑师和建立成功的公司。 MDV投资于解决重大挑战和机遇的企业，包括个性化医疗。上市或被收购的MDV资助公司包括: Agile; Broadbase (KANA); Brocade; Epigram (BRCM); FormFactor (FORM); Freshwater Software (MERQ); Ipsilon Networks (NOK); Kalpana (CSCO); Numerical Technologies (SNPS); ONI Systems (CIEN); Pivotal Technologies (BRCM); Rambus; Vantive; Vitesse; 和 Zip2 (AltaVista).</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="app/views/static_pages/investors.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
       <trans-unit id="55" resname="r835733304" restype="string" datatype="ruby">
         <source>Tim Chang is the Managing Director of the Mayfield Fund. Tim is a proven venture investor and experienced global executive. He was named on the 2011 Forbes Midas List of Top 100 Dealmakers and was featured by The Deal as one of five emerging VCs to watch. Tim invests in the mobile, gaming, digital media, and enterprise applications sectors. Prior to joining Mayfield Fund, Tim spent five years as a Partner at Norwest Venture Partners, and prior to Norwest, Tim worked for Gabriel Venture Partners, and as part of the founding team of CTR Ventures. Currently, Tim serves on the advisory boards of the Verizon 4G Venture Forum, Gamestop Corporation, Yoshimoto Kogyo, the  Silicon Valley Telecom Council, MIT/Stanford VLAB, CasualConnect, and GamesBeat/MobileBeat. Tim holds an MBA from the Stanford Graduate School of Business, and an M.S. and B.S. from the University of Michigan. Mayfield is a global venture capital firm with over $2.6 billion under management and a 45-year history of championing entrepreneurs. Mayfield invests primarily in early-stage consumer and enterprise-facing IT companies. Since its founding in 1969, the firm has invested in more than 500 companies, resulting in over 110 IPOs and more than 150 mergers or acquisitions. For more information, visit www.mayfield.com</source>
         <target state="new">Tim Chang是梅菲尔德基金的管理总监。 Tim是一位目光敏锐的风险投资人和经验丰富的全球管理者。2011年Tim被列入福布斯百强投资人之一，并被评为五个新兴风险投资公司之一。Tim致力于投资移动，游戏，数字媒体和企业应用领域。在加入梅菲尔的基金之前，Tim在诺维斯特风险投资担任合伙人五年，在此之前，Tim也曾在加百列创投工作，同时也是CTR创投创始团队的一员。目前，Tim是威瑞森（Verizon）的4G创业论坛，Gamestop，Yoshimoto工业，硅谷电信委员会，麻省理工/斯坦福创业实验室，CasualConnect和GamesBeat/MobileBeat等公司的董事会成员。Tim拥有斯坦福大学商学院的工商管理硕士学位以及密歇根大学的理学学士和硕士学位。梅菲尔德是一家全球风险投资公司，管理着超过26亿美元资金，并拥有超过45年行业领先的经验。梅菲尔德主要投资于早期的面向企业用户的IT公司。自1969年成立以来，该公司已经投资了超过500家公司，超过110个公司实现了IPO，并成功地促成了超过150个并购。有关详细信息，请访问www.mayfield.com</target>
       </trans-unit>
-      <trans-unit id="56" resname="r687705591" restype="string" datatype="ruby">
-        <source>Eric Schmidt is Executive Chairman of Google and the founder of Innovation Endeavors. Since joining Google in 2001, he has helped grow it from a Silicon Valley startup to a global leader in technology. From 2001 to 2011, Eric served as Google&apos;s Chief Executive Officer, overseeing its technical and business strategy. Eric joined Google from Novell, where he served as Chief Executive Officer from April 1997 to July 2001 and as Chairman. Prior to Novel, he held various positions at Sun Microsystems, including serving as Chief Technology Officer and as Corporate Executive Officer. Before joining Sun in 1983, Eric served as a Member of the Research staff at the Computer Science Lab of Xerox Palo Alto Research Center &#40;PARC&#41;, and held positions at Bell Laboratories and ZiLOG. Eric has also served as the Chairman of the New America Foundation, Google, Novell, and InSight Venture Partners, and as a Director of Google, Apple, and Seibel Systems. Eric is also a member of the President&apos;s Council of Advisors on Science and Technology and the Prime Minister&apos;s Advisory Council in the U.K. Eric has Bachelor of Science and M.S. degrees in Electrical Engineering from Princeton University, and a Ph.D. in Computer Science from the University of California-Berkeley.</source>
+      <trans-unit id="56" resname="r1030978470" restype="string" datatype="ruby">
+        <source>Eric Schmidt is Executive Chairman of Google and the founder of Innovation Endeavors. Since joining Google in 2001, he has helped grow it from a Silicon Valley startup to a global leader in technology. From 2001 to 2011, Eric served as Google's Chief Executive Officer, overseeing its technical and business strategy. Eric joined Google from Novell, where he served as Chief Executive Officer from April 1997 to July 2001 and as Chairman. Prior to Novel, he held various positions at Sun Microsystems, including serving as Chief Technology Officer and as Corporate Executive Officer. Before joining Sun in 1983, Eric served as a Member of the Research staff at the Computer Science Lab of Xerox Palo Alto Research Center (PARC), and held positions at Bell Laboratories and ZiLOG. Eric has also served as the Chairman of the New America Foundation, Google, Novell, and InSight Venture Partners, and as a Director of Google, Apple, and Seibel Systems. Eric is also a member of the President's Council of Advisors on Science and Technology and the Prime Minister's Advisory Council in the U.K. Eric has Bachelor of Science and M.S. degrees in Electrical Engineering from Princeton University, and a Ph.D. in Computer Science from the University of California-Berkeley.</source>
         <target state="new">埃里克·施密特是谷歌的执行主席，也是Innovation Endeavors的创始人。自2001年加入谷歌以来，他一直致力于将其从硅谷创业公司发展成为全球技术领导者。从2001年到2011年，埃里克担任谷歌的首席执行官，负责技术和业务发展战略。埃里克从Novell加入谷歌，1997年4月至2001年7月担任首席执行官，并担任主席。在Novell之前，他在Sun Microsystems担任过多个职位，包括担任首席技术官和首席执行官。在1983年加入Sun之前，埃里克曾在Xerox Palo Alto研究中心（PARC）的计算机科学实验室担任研究员，并在贝尔实验室和ZiLOG担任职位。埃里克还曾担任新美国基金会，谷歌，Novell和InSight风险合作伙伴的主席，以及谷歌，苹果和Seibel系统公司的董事。埃里克也曾是英国科学技术总顾问委员会成员和总理顾问委员会成员。埃里克拥有普林斯顿大学电子工程师学士学位，同时有加州大学伯克利分校的计算机科学硕士学位和博士学位。</target>
       </trans-unit>
     </body>
@@ -789,11 +776,11 @@
   <file original="app/views/static_pages/hopes/_drai.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="57" resname="r786893194" restype="string" datatype="ruby">
-        <source>Dr. %{ai_trademark} — your personal %{ai_serif}-powered &quot;physician&quot;</source>
+        <source>Dr. %{ai_trademark} — your personal %{ai_serif}-powered "physician"</source>
         <target state="new">智能医生 — 你私人的%{ai_serif}电力医生</target>
       </trans-unit>
       <trans-unit id="58" resname="r655383491" restype="string" datatype="ruby">
-        <source>Based on your symptoms, Dr. %{ai_trademark} routes or &quot;triages&quot; you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</source>
+        <source>Based on your symptoms, Dr. %{ai_trademark} routes or "triages" you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</source>
         <target state="new">根据您的症状，智能医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，智能医生能立即通过症状来制订一套感觉良好的治疗方案。</target>
       </trans-unit>
     </body>
@@ -808,35 +795,35 @@
   </file>
   <file original="app/views/static_pages/get_give_health.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="60" resname="r195943088" restype="string" datatype="ruby">
+      <trans-unit id="60" resname="r369622797" restype="string" datatype="ruby">
         <source>CanaryFoundation</source>
         <target state="new">康纳利基金会</target>
       </trans-unit>
-      <trans-unit id="61" resname="r684901890" restype="string" datatype="ruby">
+      <trans-unit id="61" resname="r313623963" restype="string" datatype="ruby">
         <source>Muscular DystrophyAssociation</source>
         <target state="new">肌肉萎缩症协会</target>
       </trans-unit>
-      <trans-unit id="62" resname="r971975343" restype="string" datatype="ruby">
+      <trans-unit id="62" resname="r766863237" restype="string" datatype="ruby">
         <source>SF Hep BFree</source>
         <target state="new">旧金山预防乙型肝炎基金</target>
       </trans-unit>
-      <trans-unit id="63" resname="r170304312" restype="string" datatype="ruby">
+      <trans-unit id="63" resname="r369044487" restype="string" datatype="ruby">
         <source>Action AgainstHunger</source>
         <target state="new">反饥饿行动组织</target>
       </trans-unit>
-      <trans-unit id="64" resname="r167426065" restype="string" datatype="ruby">
+      <trans-unit id="64" resname="r1011692691" restype="string" datatype="ruby">
         <source>GiftingCare</source>
         <target state="new">Gifting Care</target>
       </trans-unit>
-      <trans-unit id="65" resname="r739969059" restype="string" datatype="ruby">
+      <trans-unit id="65" resname="r460296045" restype="string" datatype="ruby">
         <source>Blind JudoFoundation</source>
         <target state="new">盲人柔道基金会</target>
       </trans-unit>
-      <trans-unit id="66" resname="r301059848" restype="string" datatype="ruby">
+      <trans-unit id="66" resname="r59260148" restype="string" datatype="ruby">
         <source>ProjectWeHOPE</source>
         <target state="new">Project WeHOPE</target>
       </trans-unit>
-      <trans-unit id="67" resname="r419293101" restype="string" datatype="ruby">
+      <trans-unit id="67" resname="r741939369" restype="string" datatype="ruby">
         <source>AtlasDIY</source>
         <target state="new">Atlas DIY</target>
       </trans-unit>
@@ -845,7 +832,7 @@
   <file original="app/views/static_pages/for_members.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="68" resname="r691446454" restype="string" datatype="ruby">
-        <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered &quot;physician&quot;, trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>
+        <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered "physician", trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>
         <target state="new">智能医生，是由医生训练的您私人的%{ai_serif}电力医生，根据您的症状为您私人定制治疗方案。</target>
       </trans-unit>
     </body>
@@ -853,8 +840,8 @@
   <file original="app/views/static_pages/doctor_sign_up_v2.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="69" resname="r426557544" restype="string" datatype="ruby">
-        <source>HealthTap&apos;s Medical Group includes more than %{num} top doctors who: Share their knowledge • Learn from each other • Gain recognition for helping millions • Get unlimited free CME • and much more!</source>
-        <target state="new">HealthTap的医疗团队拥有超过％{num}名顶级医生，他们分享知识•相互学习•通过帮助数百万人而声名远播•获得无限免费的医疗教育以及更多资源！</target>
+        <source>HealthTap's Medical Group includes more than %{num} top doctors who: Share their knowledge • Learn from each other • Gain recognition for helping millions • Get unlimited free CME • and much more!</source>
+        <target state="new">HealthTap的医疗团队拥有超过%{num}名顶级医生，他们分享知识•相互学习•通过帮助数百万人而声名远播•获得无限免费的医疗教育以及更多资源！</target>
       </trans-unit>
     </body>
   </file>
@@ -888,19 +875,19 @@
   </file>
   <file original="app/views/people/feelGood/feed/_guest_tip.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="76" resname="r425200736" restype="plural" datatype="ruby" extype="one">
+      <trans-unit id="76" resname="r159875844" restype="plural" datatype="ruby" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; other doctor agreed</source>
         <target state="new">&lt;b&gt;1&lt;/b&gt; 名其他医生同意了</target>
       </trans-unit>
-      <trans-unit id="77" resname="r425200736" restype="plural" datatype="ruby" extype="other">
+      <trans-unit id="77" resname="r159875844" restype="plural" datatype="ruby" extype="other">
         <source>&lt;b&gt;%{count}&lt;/b&gt; other doctors agreed</source>
         <target state="new">&lt;b&gt;%{count}&lt;/b&gt; 名其他医生同意了</target>
       </trans-unit>
-      <trans-unit id="78" resname="r276766280" restype="plural" datatype="ruby" extype="one">
+      <trans-unit id="78" resname="r877823247" restype="plural" datatype="ruby" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; other doctor agreed:</source>
         <target state="new">&lt;b&gt;1&lt;/b&gt; 名其他医生同意了：</target>
       </trans-unit>
-      <trans-unit id="79" resname="r276766280" restype="plural" datatype="ruby" extype="other">
+      <trans-unit id="79" resname="r877823247" restype="plural" datatype="ruby" extype="other">
         <source>&lt;b&gt;%{count}&lt;/b&gt; other doctors agreed:</source>
         <target state="new">&lt;b&gt;%{count}&lt;/b&gt; 名其他医生同意了：</target>
       </trans-unit>
@@ -908,11 +895,11 @@
   </file>
   <file original="app/views/people/feelGood/feed/_guest_checklist.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="80" resname="r785985135" restype="plural" datatype="ruby" extype="one">
+      <trans-unit id="80" resname="r590134039" restype="plural" datatype="ruby" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor agreed:</source>
         <target state="new">&lt;b&gt;1&lt;/b&gt; doctor agreed:</target>
       </trans-unit>
-      <trans-unit id="81" resname="r785985135" restype="plural" datatype="ruby" extype="other">
+      <trans-unit id="81" resname="r590134039" restype="plural" datatype="ruby" extype="other">
         <source>&lt;b&gt;%{count}&lt;/b&gt; doctors agreed:</source>
         <target state="new">&lt;b&gt;%{count}&lt;/b&gt; 名医生同意了:</target>
       </trans-unit>
@@ -961,8 +948,8 @@
   <file original="app/views/people/feelGood/action_reminder.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="88" resname="r833997894" restype="string" datatype="ruby">
-        <source>Wow! you completed this %{count} times in a row! :&#41;</source>
-        <target state="new">哇！ 你完成了这个％{count}次！:&#41;</target>
+        <source>Wow! you completed this %{count} times in a row! :)</source>
+        <target state="new">哇！ 你完成了这个%{count}次！:)</target>
       </trans-unit>
       <trans-unit id="89" resname="r965172792" restype="string" datatype="ruby">
         <source>Thank Dr. %{last_name}</source>
@@ -1000,7 +987,7 @@
   </file>
   <file original="app/views/pages/feelGood/sign_up_v2.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="94" resname="r286644437" restype="string" datatype="ruby">
+      <trans-unit id="94" resname="r114728304" restype="string" datatype="ruby">
         <source>Join today for free to feel good and improve your health!</source>
         <target state="new">今天免费加入，尽快提高健康感觉良好！</target>
       </trans-unit>
@@ -1008,11 +995,11 @@
   </file>
   <file original="app/views/pages/feelGood/_flexible_payment_options_mobile_2.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="95" resname="r888794239" restype="string" datatype="ruby">
+      <trans-unit id="95" resname="r191093157" restype="string" datatype="ruby">
         <source>Primary care on-call</source>
         <target state="new">普通门诊医生随叫随到</target>
       </trans-unit>
-      <trans-unit id="96" resname="r760669751" restype="string" datatype="ruby">
+      <trans-unit id="96" resname="r897305559" restype="string" datatype="ruby">
         <source>Specialist of your choice</source>
         <target state="new">您选择的专家医生</target>
       </trans-unit>
@@ -1020,9 +1007,9 @@
   </file>
   <file original="app/views/member_mailer/member_subscription_charge_error.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="97" resname="r250431722" restype="string" datatype="ruby">
-        <source>If you have any questions or feedback, please %{open_link}contact our Quality Care team%{close_link}or call us at 650-376-6110. We’re here to listen and help :&#41;</source>
-        <target state="new">如果您有问题或者反馈, 请随时联系我们的%{open_link}客服团队%{close_link}或者致电650-376-6110. 我们在此竭诚为您服务 :&#41;</target>
+      <trans-unit id="97" resname="r398376953" restype="string" datatype="ruby">
+        <source>If you have any questions or feedback, please %{open_link}contact our Quality Care team%{close_link}or call us at 650-376-6110. We’re here to listen and help :)</source>
+        <target state="new">如果您有问题或者反馈, 请随时联系我们的%{open_link}客服团队%{close_link}或者致电650-376-6110. 我们在此竭诚为您服务 :)</target>
       </trans-unit>
     </body>
   </file>
@@ -1031,13 +1018,13 @@
       <trans-unit id="98" resname="r1017586373" restype="string" datatype="ruby">
         <source>Inactive</source>
         <target state="new">不活跃</target>
-        <note annotates="source">denotes the user&apos;s standing with a program. ie. Active user vs. Inactive user</note>
+        <note annotates="source">denotes the user's standing with a program. ie. Active user vs. Inactive user</note>
       </trans-unit>
     </body>
   </file>
   <file original="app/views/general_mailer/reviewed_app_got_comment.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="99" resname="r465846240" restype="string" datatype="ruby">
+      <trans-unit id="99" resname="r615373674" restype="string" datatype="ruby">
         <source>See what has to say</source>
         <target state="new">看看要说什么</target>
       </trans-unit>
@@ -1049,10 +1036,6 @@
         <source>Dear %{fn},</source>
         <target state="new">亲爱的 %{fn},</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="app/views/general_mailer/request_feedback_invitation.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
       <trans-unit id="100" resname="r603260600" restype="string" datatype="ruby">
         <source>Dear %{fn},</source>
         <target state="new">亲爱的 %{fn},</target>
@@ -1109,31 +1092,31 @@
   </file>
   <file original="app/views/general_mailer/member_question_removed.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="108" resname="r641901963" restype="string" datatype="ruby">
+      <trans-unit id="108" resname="r384457466" restype="string" datatype="ruby">
         <source>Be easy to understand: Questions must be in English, easy to understand, and about health or wellness topics.</source>
         <target state="new">简单明了： 提问必须使用英文、简单明了，而且必须是有关于健康主题.</target>
       </trans-unit>
-      <trans-unit id="109" resname="r673890942" restype="string" datatype="ruby">
+      <trans-unit id="109" resname="r724618421" restype="string" datatype="ruby">
         <source>Check spelling of words and medicines: Medications in different countries use different names, so be sure to include the generic name of the medication. Our experts are U.S.-licensed doctors and rarely answer questions about uniquely foreign medications they are not familiar with, or about hospitals or procedures in other countries that they have not visited.</source>
         <target state="new">检查错字: 药物在不同的国家有不同的名字，请务必提供药物的通用名称。 我们在美国的医师们很少会回答他们不熟系的外国药物、或是回答关于他们没有访问过的其他国家的医院或医疗程序。</target>
       </trans-unit>
-      <trans-unit id="110" resname="r776454932" restype="string" datatype="ruby">
+      <trans-unit id="110" resname="r728929077" restype="string" datatype="ruby">
         <source>Unlimited consults with doctors 24/7 using a PC or any mobile device!</source>
         <target state="new">24小时全天候，从电脑或移动装置上无限次数的医疗谘询!</target>
       </trans-unit>
-      <trans-unit id="111" resname="r107846971" restype="string" datatype="ruby">
-        <source>Total peace of mind with a doctor always &quot;on call&quot; for you and your loved ones</source>
-        <target state="new">有我们的医师全天候为您的家人们&quot;待命&quot;，您可以完全放心</target>
+      <trans-unit id="111" resname="r648642929" restype="string" datatype="ruby">
+        <source>Total peace of mind with a doctor always "on call" for you and your loved ones</source>
+        <target state="new">有我们的医师全天候为您的家人们"待命"，您可以完全放心</target>
       </trans-unit>
-      <trans-unit id="112" resname="r864362339" restype="string" datatype="ruby">
+      <trans-unit id="112" resname="r237744669" restype="string" datatype="ruby">
         <source>Health checklists personalized by doctors just for you or your family</source>
         <target state="new">您与您家人专属的健康清单</target>
       </trans-unit>
-      <trans-unit id="113" resname="r627748260" restype="string" datatype="ruby">
-        <source>Ask meaningful questions: Questions must include enough detail to be meaningful and answerable. Naming a topic &#40;for example, “headache?”&#41; without asking something specific, doesn,t give the doctor enough information to accurately answer. You can consider mentioning gender, duration, age range, or body area affected.</source>
-        <target state="new">问有意义的问题: 提问必须提供足够且详细的资讯. 举例来说&#40;「头疼」&#41;如果没有提供更详尽的资料，您的医师将无法正确的回答您的提问。 您可以考虑提及您的性别、年龄，症状持续时间或受影响的身体区域.</target>
+      <trans-unit id="113" resname="r74212451" restype="string" datatype="ruby">
+        <source>Ask meaningful questions: Questions must include enough detail to be meaningful and answerable. Naming a topic (for example, “headache?”) without asking something specific, doesn,t give the doctor enough information to accurately answer. You can consider mentioning gender, duration, age range, or body area affected.</source>
+        <target state="new">问有意义的问题: 提问必须提供足够且详细的资讯. 举例来说(「头疼」)如果没有提供更详尽的资料，您的医师将无法正确的回答您的提问。 您可以考虑提及您的性别、年龄，症状持续时间或受影响的身体区域.</target>
       </trans-unit>
-      <trans-unit id="114" resname="r272142849" restype="string" datatype="ruby">
+      <trans-unit id="114" resname="r951118332" restype="string" datatype="ruby">
         <source>Stay private: Do not include your name, names of other people, or doctors, names.</source>
         <target state="new">保护隐私：不要提及您的姓名、其他人的姓名或医生的姓名。</target>
       </trans-unit>
@@ -1149,7 +1132,7 @@
   </file>
   <file original="app/views/general_mailer/member_marketing_welcome_prime.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="116" resname="r640416995" restype="string" datatype="ruby">
+      <trans-unit id="116" resname="r35243066" restype="string" datatype="ruby">
         <source>As many consults with doctors as needed, 24/7 on any PC or mobile device!</source>
         <target state="new">24小时全天候，从电脑或移动装置上无限次数的医疗谘询!</target>
       </trans-unit>
@@ -1165,9 +1148,9 @@
   </file>
   <file original="app/views/general_mailer/doctor_concierge_invite_concierge_0days.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="118" resname="r416570097" restype="string" datatype="ruby">
-        <source>The HealthTap+ Team :&#41;</source>
-        <target state="new">HealthTap+ 团队 :&#41;</target>
+      <trans-unit id="118" resname="r662306794" restype="string" datatype="ruby">
+        <source>The HealthTap+ Team :)</source>
+        <target state="new">HealthTap+ 团队 :)</target>
       </trans-unit>
     </body>
   </file>
@@ -1190,7 +1173,7 @@
   <file original="app/models/user_question/i18n.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="121" resname="r61634873" restype="string" datatype="ruby">
-        <source>Do&apos;s And Don&apos;ts</source>
+        <source>Do's And Don'ts</source>
         <target state="new">为与不为</target>
       </trans-unit>
       <trans-unit id="122" resname="r761774429" restype="string" datatype="ruby">
@@ -1762,16 +1745,16 @@
   <file original="app/models/person_notification.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="262" resname="r443005047" restype="string" datatype="ruby">
-        <source>%{person}, %{specialty} commented on your answer to a question &quot;%{q_text}&quot;. See the comment.</source>
-        <target state="new">%{person}, %{specialty} 评论了你对问题&quot;%{q_text}&quot;的回答。请看评论。</target>
+        <source>%{person}, %{specialty} commented on your answer to a question "%{q_text}". See the comment.</source>
+        <target state="new">%{person}, %{specialty} 评论了你对问题"%{q_text}"的回答。请看评论。</target>
       </trans-unit>
       <trans-unit id="263" resname="r323108680" restype="string" datatype="ruby">
-        <source>You&apos;re leading the way! Your answer to &quot;%{q_text}&quot; is now the Top Answer! Keep it up!</source>
-        <target state="new">你一路领先！您对问题 &quot;%{q_text}&quot; 的回答现在已经是最佳答案！请继续保持！</target>
+        <source>You're leading the way! Your answer to "%{q_text}" is now the Top Answer! Keep it up!</source>
+        <target state="new">你一路领先！您对问题 "%{q_text}" 的回答现在已经是最佳答案！请继续保持！</target>
       </trans-unit>
       <trans-unit id="264" resname="r198019584" restype="string" datatype="ruby">
-        <source>%{person} &#40;%{specialty}&#41; had something to add to %{other_person}&apos;s answer to your question &quot;%{q_text} &quot; See the comment.</source>
-        <target state="new">%{person} &#40;%{specialty}&#41; 给你的问题 &quot;%{q_text} &quot; 上%{other_person}的回答添加了一个评论。看评论。</target>
+        <source>%{person} (%{specialty}) had something to add to %{other_person}'s answer to your question "%{q_text} " See the comment.</source>
+        <target state="new">%{person} (%{specialty}) 给你的问题 "%{q_text} " 上%{other_person}的回答添加了一个评论。看评论。</target>
       </trans-unit>
       <trans-unit id="265" resname="r483003784" restype="string" datatype="ruby">
         <source>Congrats! You have earned a medal! %{name}: %{trigger}Unlock the %{next_name} medal next. Learn How &amp;raquo;</source>
@@ -1782,45 +1765,43 @@
         <target state="new">恭喜! 你获得了一个奖牌! %{name}: %{trigger}</target>
       </trans-unit>
       <trans-unit id="267" resname="r881943152" restype="string" datatype="ruby">
-        <source>Another doctor in our medical expert network thinks you&apos;re right. %{person} &#40;%{specialty}%{place}&#41; agrees with your answer to &quot;%{q_text}&quot;. See the answer.</source>
-        <target state="new">我们的医疗专家网络中的另一个医生认同了你的观点。 %{person} &#40;%{specialty}%{place}&#41; 赞同你对于问题 &quot;%{q_text}&quot;的回答。 看回答。</target>
+        <source>Another doctor in our medical expert network thinks you're right. %{person} (%{specialty}%{place}) agrees with your answer to "%{q_text}". See the answer.</source>
+        <target state="new">我们的医疗专家网络中的另一个医生认同了你的观点。 %{person} (%{specialty}%{place}) 赞同你对于问题 "%{q_text}"的回答。 看回答。</target>
       </trans-unit>
       <trans-unit id="268" resname="r805442684" restype="string" datatype="ruby">
-        <source>A HealthTap Scholar thinks you&apos;re right. %{person} &#40;%{specialty}%{place}&#41; agrees with your answer to &quot;%{q_text}&quot;. See the answer.</source>
-        <target state="new">我们的医疗专家网络中的另一个学者认同了你的观点。 %{person} &#40;%{specialty}%{place}&#41; 赞同你对于问题 &quot;%{q_text}&quot;的回答。看回答。</target>
+        <source>A HealthTap Scholar thinks you're right. %{person} (%{specialty}%{place}) agrees with your answer to "%{q_text}". See the answer.</source>
+        <target state="new">我们的医疗专家网络中的另一个学者认同了你的观点。 %{person} (%{specialty}%{place}) 赞同你对于问题 "%{q_text}"的回答。看回答。</target>
       </trans-unit>
       <trans-unit id="269" resname="r1063646532" restype="string" datatype="ruby">
-        <source>Good news! %{person} agrees with %{answerer}&apos;s answer to a question you asked &quot;%{q_text}&quot;. See the answer.</source>
-        <target state="new">Good news! %{person} agrees with %{answerer}&apos;s answer to a question you asked &quot;%{q_text}&quot;. See the answer.</target>
-        <target state="new">好消息! %{person} 赞同了您问的问题&quot;%{q_text}&quot;中 %{answerer}的回答。看回答。</target>
+        <source>Good news! %{person} agrees with %{answerer}'s answer to a question you asked "%{q_text}". See the answer.</source>
       </trans-unit>
       <trans-unit id="270" resname="r1050560191" restype="string" datatype="ruby">
-        <source>Good news! %{person} agrees with %{answerer}&apos;s answer to a question you&apos;re interested in &quot;%{q_text}&quot;. See the answer.</source>
-        <target state="new">好消息! %{person} 赞同了您感兴趣的问题&quot;%{q_text}&quot;中 %{answerer}的回答。看回答。 See the answer.</target>
+        <source>Good news! %{person} agrees with %{answerer}'s answer to a question you're interested in "%{q_text}". See the answer.</source>
+        <target state="new">好消息! %{person} 赞同了您感兴趣的问题"%{q_text}"中 %{answerer}的回答。看回答。 See the answer.</target>
       </trans-unit>
       <trans-unit id="271" resname="r536296903" restype="string" datatype="ruby">
-        <source>%{person} sent you a thank you note for answering &quot;%{q_text}&quot; See the thank you note.</source>
-        <target state="new">%{person} 很感谢你回答了问题&quot;%{q_text}&quot;，并且给你发送了感谢信。看感谢信。</target>
+        <source>%{person} sent you a thank you note for answering "%{q_text}" See the thank you note.</source>
+        <target state="new">%{person} 很感谢你回答了问题"%{q_text}"，并且给你发送了感谢信。看感谢信。</target>
       </trans-unit>
       <trans-unit id="272" resname="r143554789" restype="string" datatype="ruby">
-        <source>%{expert} just answered a question you asked &quot;%{q_text}&quot;. Go check it out.</source>
-        <target state="new">%{expert}刚刚回答了你的问题&quot;%{q_text}&quot;。去看看吧。</target>
+        <source>%{expert} just answered a question you asked "%{q_text}". Go check it out.</source>
+        <target state="new">%{expert}刚刚回答了你的问题"%{q_text}"。去看看吧。</target>
       </trans-unit>
       <trans-unit id="273" resname="r739190513" restype="string" datatype="ruby">
-        <source>%{expert} just answered a question you&apos;re interested in &quot;%{q_text}&quot;. Go check it out.</source>
-        <target state="new">%{expert}刚刚回答了你感兴趣的问题&quot;%{q_text}&quot;。去看看吧。</target>
+        <source>%{expert} just answered a question you're interested in "%{q_text}". Go check it out.</source>
+        <target state="new">%{expert}刚刚回答了你感兴趣的问题"%{q_text}"。去看看吧。</target>
       </trans-unit>
     </body>
   </file>
   <file original="app/models/person/third_party.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="274" resname="r889985342" restype="string" datatype="ruby">
-        <source>I found %{doctor_name}&apos;s answer really helpful, and thought you might too:: &quot;%{question}&quot;</source>
-        <target state="new">我发现 %{doctor_name}的回答非常有帮助, 感觉你应该会感兴趣: &quot;%{question}&quot;</target>
+        <source>I found %{doctor_name}'s answer really helpful, and thought you might too:: "%{question}"</source>
+        <target state="new">我发现 %{doctor_name}的回答非常有帮助, 感觉你应该会感兴趣: "%{question}"</target>
       </trans-unit>
       <trans-unit id="275" resname="r219320126" restype="string" datatype="ruby">
-        <source>I found this doctor answer really helpful, and thought you might too: &quot;%{question_name}&quot;</source>
-        <target state="new">I found this doctor answer really helpful, and thought you might too: &quot;%{question_name}&quot;</target>
+        <source>I found this doctor answer really helpful, and thought you might too: "%{question_name}"</source>
+        <target state="new">I found this doctor answer really helpful, and thought you might too: "%{question_name}"</target>
       </trans-unit>
       <trans-unit id="276" resname="r325377029" restype="string" datatype="ruby">
         <source>I thought you like to check out %{goal} on HealthTap. HealthTap has thousands of answers, articles, tips, and checklists designed to help you with this goal, so you can smile and feel good all the time!</source>
@@ -1835,27 +1816,25 @@
         <target state="new">HealthTap是一个以改善你的健康和福祉的令人兴奋的新服务。您可以从我和超过63,000名同事（他们是美国的一些顶级医生）全天候获取可信赖的健康信息，从而了解您的健康状况。 您可以通过HealthTap Prime和在线预约过HealthTap Concierge请求Virtual Consults获取帮助。您也可以按照我与同事一起创建的提示和检查表采取行动。 所有这些都有助于你更多地关注你的健康和幸福，所以你总是感觉良好！</target>
       </trans-unit>
       <trans-unit id="279" resname="r1070399980" restype="string" datatype="ruby">
-        <source>I&apos;m delighted to share with you a special keycode: %{key_code}, which will help you connect with me as my patient! Schedule appointments to video or text chat me live, or message me any time via my Virtual Practice!</source>
-        <target state="new">I&apos;m delighted to share with you a special keycode: %{key_code}, which will help you connect with me as my patient! Schedule appointments to video or text chat me live, or message me any time via my Virtual Practice!</target>
-        <target state="new">我很高兴与您分享一个特殊的密码：%{key_code}，这将帮助您作为我的病人与我联系！安排预约视频或文字和我即时，或通过我的虚拟诊室任何时候给我留言！</target>
+        <source>I'm delighted to share with you a special keycode: %{key_code}, which will help you connect with me as my patient! Schedule appointments to video or text chat me live, or message me any time via my Virtual Practice!</source>
       </trans-unit>
       <trans-unit id="280" resname="r569166535" restype="string" datatype="ruby">
-        <source>Hi, I just helped bring healthcare to those in need through HealthTap&apos;s Get health + Give health initiative! Because of my purchase, HealthTap donated %{bundle_value} doctor %{consult} to %{charity}. Virtual doctor consults bring high-quality medical expertise and top doctor knowledge. *Doctors are immediately available 24/7 *Get advice and prescriptions sent to your local pharmacy *Use a tailored action plan with timely, helpful reminders Help yourself while helping others: www.healthtap.com/get_and_give_health</source>
-        <target state="new">您好，我刚刚通过HealthTap的“给予健康•获得健康”活动，帮助了急需医疗保健的人！ 通过我的消费，HealthTap向％{charity}捐赠了％{bundle_value}名医生的％{咨询}。 虚拟医生诊疗集合了高质量的医疗专业知识和顶尖的医生智慧。*24/7随时随地能获得医生帮助*把建议和处方直接送至您指定的药房*使用私人订制的行动方案，及时、有效地提醒自己，同时也帮助他人：www.healthtap.com/get_and_give_health</target>
+        <source>Hi, I just helped bring healthcare to those in need through HealthTap's Get health + Give health initiative! Because of my purchase, HealthTap donated %{bundle_value} doctor %{consult} to %{charity}. Virtual doctor consults bring high-quality medical expertise and top doctor knowledge. *Doctors are immediately available 24/7 *Get advice and prescriptions sent to your local pharmacy *Use a tailored action plan with timely, helpful reminders Help yourself while helping others: www.healthtap.com/get_and_give_health</source>
+        <target state="new">您好，我刚刚通过HealthTap的“给予健康•获得健康”活动，帮助了急需医疗保健的人！ 通过我的消费，HealthTap向%{charity}捐赠了%{bundle_value}名医生的%{咨询}。 虚拟医生诊疗集合了高质量的医疗专业知识和顶尖的医生智慧。*24/7随时随地能获得医生帮助*把建议和处方直接送至您指定的药房*使用私人订制的行动方案，及时、有效地提醒自己，同时也帮助他人：www.healthtap.com/get_and_give_health</target>
       </trans-unit>
       <trans-unit id="281" resname="r67674159" restype="string" datatype="ruby">
-        <source>Or call +1&#40;415&#41;429-1250 and type in pin %{room_pin} when prompted. &amp;nbsp;</source>
-        <target state="new">或者给 +1&#40;415&#41;429-1250 打电话然后在提示时输入%{room_pin}. &amp;nbsp;</target>
+        <source>Or call +1(415)429-1250 and type in pin %{room_pin} when prompted. &amp;nbsp;</source>
+        <target state="new">或者给 +1(415)429-1250 打电话然后在提示时输入%{room_pin}. &amp;nbsp;</target>
       </trans-unit>
       <trans-unit id="282" resname="r467475399" restype="string" datatype="ruby">
         <source>Please join this private %{live_consult_type}&amp;nbsp;consult between %{doctor}&amp;nbsp;and %{patient_name} %{last_name}&amp;nbsp;now.&amp;nbsp;</source>
         <target state="new">请立即加入 %{live_consult_type}&amp;nbsp;%{doctor}&amp;nbsp;和 %{patient_name} %{last_name}&amp;nbsp;的私人咨询。&amp;nbsp;</target>
       </trans-unit>
-      <trans-unit id="283" resname="r331167583" restype="string" datatype="ruby">
+      <trans-unit id="283" resname="r912446226" restype="string" datatype="ruby">
         <source>Please join me in a private %{live_consult_type}&amp;nbsp;consult with %{patient_name} %{last_name}&amp;nbsp;now.</source>
         <target state="new">请立即加入我 %{live_consult_type}&amp;nbsp;和 %{patient_name} %{last_name}&amp;nbsp;的私人咨询。</target>
       </trans-unit>
-      <trans-unit id="284" resname="r722076930" restype="string" datatype="ruby">
+      <trans-unit id="284" resname="r194096570" restype="string" datatype="ruby">
         <source>Please join me in a private %{live_consult_type}&amp;nbsp;consult with %{doctor}&amp;nbsp;now.</source>
         <target state="new">请立即加入我 %{live_consult_type}&amp;nbsp;和 %{doctor}&amp;nbsp;医生的私人咨询。</target>
       </trans-unit>
@@ -1863,7 +1842,7 @@
   </file>
   <file original="app/models/attribute.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="285" resname="r915826933" restype="string" datatype="ruby">
+      <trans-unit id="285" resname="r608683248" restype="string" datatype="ruby">
         <source>%{name}的种类</source>
         <target state="new">%{name}的种类</target>
       </trans-unit>
@@ -1872,16 +1851,16 @@
   <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="286" resname="r675633407" restype="string" datatype="ruby">
-        <source>&quot;%{expert} via HealthTap&quot; &apos;</source>
-        <target state="new">&quot;来自HealthTap的%{expert}&quot; &apos;</target>
+        <source>"%{expert} via HealthTap" '</source>
+        <target state="new">"来自HealthTap的%{expert}" '</target>
       </trans-unit>
       <trans-unit id="287" resname="r194184431" restype="string" datatype="ruby">
-        <source>&quot;%{expert} via HealthTap&quot;</source>
-        <target state="new">&quot;来自HealthTap的%{expert}&quot;</target>
+        <source>"%{expert} via HealthTap"</source>
+        <target state="new">"来自HealthTap的%{expert}"</target>
       </trans-unit>
       <trans-unit id="288" resname="r1001000397" restype="string" datatype="ruby">
-        <source>&quot;%{expert}&quot;</source>
-        <target state="new">&quot;%{expert}&quot;</target>
+        <source>"%{expert}"</source>
+        <target state="new">"%{expert}"</target>
       </trans-unit>
       <trans-unit id="289" resname="r928320740" restype="string" datatype="ruby">
         <source>Hi there, want to send me a secure message?</source>
@@ -1899,106 +1878,102 @@
         <note annotates="source">TODO greeting</note>
       </trans-unit>
       <trans-unit id="292" resname="r125613331" restype="string" datatype="ruby">
-        <source>&quot;%{expert}&apos;s Virtual Practice&quot;</source>
-        <target state="new">&quot;%{expert}的虚拟诊所&quot;</target>
+        <source>"%{expert}'s Virtual Practice"</source>
+        <target state="new">"%{expert}的虚拟诊所"</target>
       </trans-unit>
       <trans-unit id="293" resname="r639597094" restype="string" datatype="ruby">
-        <source>&quot;HealthTap Quality Care&quot;</source>
-        <target state="new">&quot;HealthTap客服&quot;</target>
+        <source>"HealthTap Quality Care"</source>
+        <target state="new">"HealthTap客服"</target>
       </trans-unit>
       <trans-unit id="294" resname="r791326900" restype="string" datatype="ruby">
         <source>%{expert}, a top %{expert_specialty}, has helpful insights to share with you!</source>
         <target state="new">%{expert}，一个顶级的%{expert_specialty}, 有帮助的见解与您分享！</target>
       </trans-unit>
-      <trans-unit id="295" resname="r925516596" restype="string" datatype="ruby">
+      <trans-unit id="295" resname="r953430203" restype="string" datatype="ruby">
         <source>Kathelin from HealthTap</source>
         <target state="new">来自HealthTap的Kathelin</target>
       </trans-unit>
-      <trans-unit id="296" resname="r549018355" restype="string" datatype="ruby">
+      <trans-unit id="296" resname="r406418399" restype="string" datatype="ruby">
         <source>HealthTap Team</source>
         <target state="new">HealthTap团队</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="296" resname="r549018355" restype="string" datatype="ruby">
+      <trans-unit id="296" resname="r406418399" restype="string" datatype="ruby">
         <source>HealthTap Team</source>
         <target state="new">HealthTap 团队</target>
       </trans-unit>
-      <trans-unit id="297" resname="r144778231" restype="string" datatype="ruby">
-        <source>&quot;Dr. Geoff Rutledge&quot;</source>
-        <target state="new">&quot;Dr. Geoff Rutledge&quot;</target>
+      <trans-unit id="297" resname="r616700516" restype="string" datatype="ruby">
+        <source>"Dr. Geoff Rutledge"</source>
+        <target state="new">"Dr. Geoff Rutledge"</target>
       </trans-unit>
-      <trans-unit id="298" resname="r852981727" restype="string" datatype="ruby">
-        <source>&quot;Michelle at HealthTap&quot;</source>
-        <target state="new">&quot;来自HealthTap的Michelle&quot;</target>
+      <trans-unit id="298" resname="r157636433" restype="string" datatype="ruby">
+        <source>"Michelle at HealthTap"</source>
+        <target state="new">"来自HealthTap的Michelle"</target>
       </trans-unit>
-      <trans-unit id="299" resname="r82567100" restype="string" datatype="ruby">
-        <source>&quot;Ashley at HealthTap&quot;</source>
-        <target state="new">&quot;来自HealthTap的Ashley&quot;</target>
+      <trans-unit id="299" resname="r983415778" restype="string" datatype="ruby">
+        <source>"Ashley at HealthTap"</source>
+        <target state="new">"来自HealthTap的Ashley"</target>
       </trans-unit>
-      <trans-unit id="300" resname="r363698953" restype="string" datatype="ruby">
+      <trans-unit id="300" resname="r847509131" restype="string" datatype="ruby">
         <source>HealthTap Quality Care</source>
         <target state="new">HealthTap 品质呵护</target>
       </trans-unit>
-      <trans-unit id="301" resname="r134052028" restype="string" datatype="ruby">
-        <source>&quot;Isaac from HealthTap&quot;</source>
-        <target state="new">&quot;来自HealthTap的Isaac&quot;</target>
+      <trans-unit id="301" resname="r467682574" restype="string" datatype="ruby">
+        <source>"Isaac from HealthTap"</source>
+        <target state="new">"来自HealthTap的Isaac"</target>
       </trans-unit>
-      <trans-unit id="302" resname="r842995454" restype="string" datatype="ruby">
-        <source>&quot;HealthTap Team&quot;</source>
-        <target state="new">&quot;HealthTap 团队&quot;</target>
+      <trans-unit id="302" resname="r75609662" restype="string" datatype="ruby">
+        <source>"HealthTap Team"</source>
+        <target state="new">"HealthTap 团队"</target>
       </trans-unit>
-      <trans-unit id="303" resname="r559817010" restype="string" datatype="ruby">
-        <source>&quot;Ron Gutman and the HealthTap Team&quot;</source>
-        <target state="new">&quot;Ron Gutman 和 HealthTap 团队&quot;</target>
+      <trans-unit id="303" resname="r591778277" restype="string" datatype="ruby">
+        <source>"Ron Gutman and the HealthTap Team"</source>
+        <target state="new">"Ron Gutman 和 HealthTap 团队"</target>
       </trans-unit>
-      <trans-unit id="304" resname="r894928843" restype="string" datatype="ruby">
-        <source>&quot;Ron Gutman &#40;HealthTap&#41;&quot;</source>
-        <target state="new">&quot;Ron Gutman &#40;HealthTap&#41;&quot;</target>
+      <trans-unit id="304" resname="r935072635" restype="string" datatype="ruby">
+        <source>"Ron Gutman (HealthTap)"</source>
+        <target state="new">"Ron Gutman (HealthTap)"</target>
       </trans-unit>
-      <trans-unit id="305" resname="r986250982" restype="string" datatype="ruby">
-        <source>&quot;Isaac at HealthTap&quot;</source>
-        <target state="new">&quot;来自HealthTap的Isaac&quot;</target>
+      <trans-unit id="305" resname="r575066070" restype="string" datatype="ruby">
+        <source>"Isaac at HealthTap"</source>
+        <target state="new">"来自HealthTap的Isaac"</target>
       </trans-unit>
-      <trans-unit id="306" resname="r745850343" restype="string" datatype="ruby">
-        <source>&quot;Dr. Geoff Rutledge &#40;Chief Medical Officer&#41; at HealthTap&quot;</source>
-        <target state="new">&quot;Dr. Geoff Rutledge &#40;首席医疗官&#41; at HealthTap&quot;</target>
+      <trans-unit id="306" resname="r400379540" restype="string" datatype="ruby">
+        <source>"Dr. Geoff Rutledge (Chief Medical Officer) at HealthTap"</source>
+        <target state="new">"Dr. Geoff Rutledge (首席医疗官) at HealthTap"</target>
       </trans-unit>
-      <trans-unit id="307" resname="r560417376" restype="string" datatype="ruby">
-        <source>&quot;Dr. Geoff Rutledge&quot;</source>
-        <target state="new">&quot;Dr. Geoff Rutledge&quot;</target>
+      <trans-unit id="307" resname="r616700516" restype="string" datatype="ruby">
+        <source>"Dr. Geoff Rutledge"</source>
+        <target state="new">"Dr. Geoff Rutledge"</target>
       </trans-unit>
     </body>
   </file>
   <file original="app/helpers/static_pages_helper.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="308" resname="r620205649" restype="string" datatype="ruby">
-        <source>Dr. %{ai_trademark} is an %{ai_serif}-powered personal &quot;physician&quot;, trained by HealthTap’s network of more than 105,000 doctors, incorporates both context and clinical expertise of doctors who have helped triage hundreds of millions of patients worldwide to right levels of doctor-recommended care. Just like a sympathetic human physician, Dr. %{ai_trademark} converses with the user to understand their current complaints or concerns and uses the user’s health profile to compute the probable causes of their symptoms.</source>
-        <target state="new">智能医生 一个 %{ai_serif}-支持的个人&quot;医师&quot;, 它由HealthTap超过10，5000名医生网络训练, 结合了帮助世界各地数以亿计的患者的医生推荐的临床专业知识。 它就像一个有同情心的医生, 智能医生帮助患者理解他们的需求和担忧，然后利用病人的健康资料去计算可能的病因。</target>
+        <source>Dr. %{ai_trademark} is an %{ai_serif}-powered personal "physician", trained by HealthTap’s network of more than 105,000 doctors, incorporates both context and clinical expertise of doctors who have helped triage hundreds of millions of patients worldwide to right levels of doctor-recommended care. Just like a sympathetic human physician, Dr. %{ai_trademark} converses with the user to understand their current complaints or concerns and uses the user’s health profile to compute the probable causes of their symptoms.</source>
+        <target state="new">智能医生 一个 %{ai_serif}-支持的个人"医师", 它由HealthTap超过10，5000名医生网络训练, 结合了帮助世界各地数以亿计的患者的医生推荐的临床专业知识。 它就像一个有同情心的医生, 智能医生帮助患者理解他们的需求和担忧，然后利用病人的健康资料去计算可能的病因。</target>
       </trans-unit>
-      <trans-unit id="309" resname="r327357502" restype="string" datatype="ruby">
+      <trans-unit id="309" resname="r842843461" restype="string" datatype="ruby">
         <source>HealthTap launches Compass, a revolutionary new personal healthcare application that will give employees of Flex the ability to “tap in” to intelligent and cost-effective healthcare 24/7. HealthTap Compass serves as a hub for managing all employees’ healthcare needs, from information to prescriptions and even lab test referrals and interpretations, and will replace the traditional “benefits card.”</source>
         <target state="new">HealthTap推出了Compass，这是一个革命性的新型个人医疗保健应用程序，将让Flex的员工能够全天候“点入”智能化和低价的医疗保健。 HealthTap Compass作为一个中心，用于管理所有员工的医疗需求，从信息到处方，甚至测试推荐和专业解释，它将取代传统的“福利卡”。</target>
       </trans-unit>
-      <trans-unit id="310" resname="r350886551" restype="string" datatype="ruby">
-        <source>HealthTap expands globally, unveiling its new “Health Operating System&amp;trade; &#40;HOPES&#41;&amp;trade;&quot; for hospitals, clinics, and community-based programs worldwide, starting with the Waikato District Health Board in New Zealand.</source>
-        <target state="new">HealthTap全球化扩张, 推出了全新的“健康操作系统”&amp;trade; &#40;HOPES&#41;&amp;trade;&quot; 这款产品针对医院，诊所，和社区保健项目, 新西兰的Waikato 特区医疗系统会首先使用这款系统。</target>
+      <trans-unit id="310" resname="r380308093" restype="string" datatype="ruby">
+        <source>HealthTap expands globally, unveiling its new “Health Operating System&amp;trade; (HOPES)&amp;trade;" for hospitals, clinics, and community-based programs worldwide, starting with the Waikato District Health Board in New Zealand.</source>
+        <target state="new">HealthTap全球化扩张, 推出了全新的“健康操作系统”&amp;trade; (HOPES)&amp;trade;" 这款产品针对医院，诊所，和社区保健项目, 新西兰的Waikato 特区医疗系统会首先使用这款系统。</target>
       </trans-unit>
       <trans-unit id="311" resname="r289095764" restype="string" datatype="ruby">
-        <source>New &quot;Doctor %{ai_trademark}&quot; instantaneously translates symptoms into a path to feeling good</source>
-        <target state="new">新 &quot;智能医生&quot; 实时为病人指明康复的路径。</target>
+        <source>New "Doctor %{ai_trademark}" instantaneously translates symptoms into a path to feeling good</source>
+        <target state="new">新 "智能医生" 实时为病人指明康复的路径。</target>
       </trans-unit>
     </body>
   </file>
   <file original="app/helpers/ad_campaign_helper.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="312" resname="r932898299" restype="string" datatype="ruby">
+      <trans-unit id="312" resname="r1068447080" restype="string" datatype="ruby">
         <source>Concierge Medicine for EveryoneTM</source>
         <target state="new">人民的贵宾医疗TM</target>
       </trans-unit>
-      <trans-unit id="313" resname="r472132183" restype="string" datatype="ruby">
+      <trans-unit id="313" resname="r18391854" restype="string" datatype="ruby">
         <source>100% Guarantee. Only $99 per month for unlimited visits. Cancel anytime.</source>
         <target state="new">100%保证。每月$99，无限制使用。随时取消。</target>
       </trans-unit>
@@ -2035,8 +2010,8 @@
   <file original="smiling.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="318" resname="r489998666" restype="string" datatype="x-haml">
-        <source>. That’s because we believe in smiling &amp;mdash; so much so that we&apos;ve made it central to our culture, to who we are, and to what we do.</source>
-        <target>. 我们相信微笑的力量 &amp;mdash; 我们&apos;把微笑融入公司文化。</target>
+        <source>. That’s because we believe in smiling &amp;mdash; so much so that we've made it central to our culture, to who we are, and to what we do.</source>
+        <target>. 我们相信微笑的力量 &amp;mdash; 我们'把微笑融入公司文化。</target>
       </trans-unit>
     </body>
   </file>
@@ -2111,8 +2086,8 @@
         <target>从顶级医生的网络，帮助控制成本.&amp;rdquo;</target>
       </trans-unit>
       <trans-unit id="330" resname="r987717249" restype="string" datatype="x-haml">
-        <source>We needed to quickly provide thousands of our employees with accessible, easy-to-use information and virtual care, and that’s exactly what HealthTap delivered…through HealthTap&apos;s proprietary technology and deep domain expertise.…We are proud to partner with HealthTap and support their efforts to bring this much-needed service to population managers around the world.&amp;rdquo;</source>
-        <target>我们需要快速为成千上万的员工提供可访问，易于使用的信息和虚拟护理，这正是HealthTap的使命…通过 HealthTap&apos;的先进技术和专业积累。…我们很自豪能与HealthTap合作，并支持他们的努力，为世界各地的医疗管理者带来急需的服务。&amp;rdquo;</target>
+        <source>We needed to quickly provide thousands of our employees with accessible, easy-to-use information and virtual care, and that’s exactly what HealthTap delivered…through HealthTap's proprietary technology and deep domain expertise.…We are proud to partner with HealthTap and support their efforts to bring this much-needed service to population managers around the world.&amp;rdquo;</source>
+        <target>我们需要快速为成千上万的员工提供可访问，易于使用的信息和虚拟护理，这正是HealthTap的使命…通过 HealthTap'的先进技术和专业积累。…我们很自豪能与HealthTap合作，并支持他们的努力，为世界各地的医疗管理者带来急需的服务。&amp;rdquo;</target>
       </trans-unit>
       <trans-unit id="331" resname="r947317708" restype="string" datatype="x-haml">
         <source>&amp;ldquo;We are so thankful for HealthTap’s speed and efficiency.</source>
@@ -2163,8 +2138,8 @@
         <target>内部服务器错误</target>
       </trans-unit>
       <trans-unit id="338" resname="r984267834" restype="string" datatype="x-haml">
-        <source>We&apos;re having some trouble reaching this page.</source>
-        <target>我们&apos;暂时无法连接。</target>
+        <source>We're having some trouble reaching this page.</source>
+        <target>我们'暂时无法连接。</target>
       </trans-unit>
     </body>
   </file>
@@ -2339,8 +2314,8 @@
         <target>自动接收病人加入您的网上门诊的请求</target>
       </trans-unit>
       <trans-unit id="365" resname="r552455694" restype="string" datatype="x-haml">
-        <source>Save time by automatically accepting patients who request to join your Virtual Practice. You&apos;ll receive weekly updates on new additions.</source>
-        <target>自动接收病人加入您的网上门诊的请求以节省时间。 您&apos; 每周会收到新病人加入的通知。</target>
+        <source>Save time by automatically accepting patients who request to join your Virtual Practice. You'll receive weekly updates on new additions.</source>
+        <target>自动接收病人加入您的网上门诊的请求以节省时间。 您' 每周会收到新病人加入的通知。</target>
       </trans-unit>
     </body>
   </file>
@@ -2354,15 +2329,15 @@
   </file>
   <file original="_sos_features.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="367" resname="r730068882" restype="string" datatype="x-haml">
-        <source>&#41;, population managers receive real-time individual and population health insights, including information on what members need and where they are </source>
-        <target>&#41;, 人口管理经理会即时收到有关个人和群体健康的知识，包括人们需要什么。</target>
+      <trans-unit id="367" resname="r794956291" restype="string" datatype="x-haml">
+        <source>), population managers receive real-time individual and population health insights, including information on what members need and where they are</source>
+        <target>), 人口管理经理会即时收到有关个人和群体健康的知识，包括人们需要什么。</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/templates/inbox_training_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="368" resname="In addition to live virtual consults, you will also receive &lt;b&gt;Inbox Consults&lt;/b&gt;.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours." restype="string" datatype="html">
+      <trans-unit id="368" resname="In addition to live virtual consults, you will also receive&lt;b&gt;Inbox Consults&lt;/b&gt;. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours." restype="string" datatype="html">
         <source>In addition to live virtual consults, you will also receive &lt;b&gt;Inbox Consults&lt;/b&gt;.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.</source>
         <target state="new">除了在线的网上咨询，您还会收到 &lt;b&gt;来自病人的文字信息咨询&lt;/b&gt;。这些是病人们缴费后，编辑详细的文字信息描述的问题，会显示在您主页新鲜事的最上面，我们要求您在24小时内回答。</target>
       </trans-unit>
@@ -2378,17 +2353,17 @@
   </file>
   <file original="public/feelGood/templates/ui_modules/height_slider.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="370" resname="&#40;&lt;%= RB.getString&#40;&quot;{height_meters}m&quot;&#41;.format&#40;{ height_meters: height_m }&#41;%&gt;&#41;" restype="string" datatype="html">
-        <source>&#40;&lt;%= RB.getString&#40;&quot;{height_meters}m&quot;&#41;.format&#40;{ height_meters: height_m }&#41;%&gt;&#41;</source>
-        <target state="new">&#40;&lt;%= RB.getString&#40;&quot;{height_meters}m&quot;&#41;.format&#40;{ height_meters: height_m }&#41;%&gt;&#41;</target>
+      <trans-unit id="370" resname="(&lt;%= RB.getString(&quot;{height_meters}m&quot;).format({ height_meters: height_m })%&gt;)" restype="string" datatype="html">
+        <source>(&lt;%= RB.getString("{height_meters}m").format({ height_meters: height_m })%&gt;)</source>
+        <target state="new">(&lt;%= RB.getString("{height_meters}m").format({ height_meters: height_m })%&gt;)</target>
       </trans-unit>
       <trans-unit id="424" resname="{height_ft}&apos;" restype="string" datatype="javascript">
-        <source>{height_ft}&apos;</source>
-        <target state="new">{height_ft}&apos;</target>
+        <source>{height_ft}'</source>
+        <target state="new">{height_ft}'</target>
       </trans-unit>
       <trans-unit id="425" resname="{height_inches}&quot;" restype="string" datatype="javascript">
-        <source>{height_inches}&quot;</source>
-        <target state="new">{height_inches}&quot;</target>
+        <source>{height_inches}"</source>
+        <target state="new">{height_inches}"</target>
       </trans-unit>
       <trans-unit id="426" resname="{height_meters}m" restype="string" datatype="javascript">
         <source>{height_meters}m</source>
@@ -2398,25 +2373,25 @@
   </file>
   <file original="public/javascripts/templates/experts/doc2doc_answer_feedback.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="371" resname="You earned				&lt;span class=&quot;points_earned_highlight&quot;&gt;					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points				&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="371" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
         <source>You earned
-				&lt;span class=&quot;points_earned_highlight&quot;&gt;
+				&lt;span class="points_earned_highlight"&gt;
 					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
 				&lt;/span&gt;</source>
         <target state="new">您赚到了
-				&lt;span class=&quot;points_earned_highlight&quot;&gt;
+				&lt;span class="points_earned_highlight"&gt;
 					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="372" resname="Today, you&apos;ve earned &lt;span class=&quot;todays_points_highlight&quot;&gt; 180 points&lt;/span&gt; for helping millions.			&lt;br&gt;			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points." restype="string" datatype="html">
-        <source>Today, you&apos;ve earned &lt;span class=&quot;todays_points_highlight&quot;&gt; 180 points&lt;/span&gt; for helping millions.
+      <trans-unit id="372" resname="Today, you&apos;ve earned&lt;span class=&quot;todays_points_highlight&quot;&gt;180 points&lt;/span&gt;for helping millions.&lt;br&gt;Answer&lt;b&gt;X&lt;/b&gt;more questions in the next&lt;b&gt;X&lt;/b&gt;hours to double your daily points." restype="string" datatype="html">
+        <source>Today, you've earned &lt;span class="todays_points_highlight"&gt; 180 points&lt;/span&gt; for helping millions.
 			&lt;br&gt;
 			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
-        <target state="new">今天，您&apos;赚到了&lt;span class=&quot;todays_points_highlight&quot;&gt; 180分&lt;/span&gt; 帮助了许多人。
+        <target state="new">今天，您'赚到了&lt;span class="todays_points_highlight"&gt; 180分&lt;/span&gt; 帮助了许多人。
 			&lt;br&gt;
 			回答 &lt;b&gt;X&lt;/b&gt; 更多问题在之后的一 &lt;b&gt;X&lt;/b&gt; 小时之内，来得到双倍积分。</target>
       </trans-unit>
-      <trans-unit id="373" resname="Here are a few patient questions to keep you going.		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="373" resname="Here are a few patient questions to keep you going.&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Here are a few patient questions to keep you going.
 		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
         <target state="new">这有几个病人的问题，您可以开始回答。
@@ -2426,273 +2401,273 @@
   </file>
   <file original="public/javascripts/templates/layers/answerPanel.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="374" resname="Create a Tip		&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="374" resname="Create a Tip&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
         <source>Create a Tip
-		&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
+		&lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target state="new">创建一个小贴士
-		&lt;span class=&quot;sub_title&quot;&gt;用一百个字来帮助亿万大众。传播知识，激励人们。&lt;/span&gt;</target>
+		&lt;span class="sub_title"&gt;用一百个字来帮助亿万大众。传播知识，激励人们。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/askDoc.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="375" resname="Ask Doctors Any Question		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="375" resname="Ask Doctors Any Question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask Doctors Any Question
-		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
+		&lt;span class="sub_title"&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target state="new">向医生询问任何问题，
-		&lt;span class=&quot;sub_title&quot;&gt;随时随地，&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;并免费。&lt;/span&gt;&lt;/span&gt;</target>
+		&lt;span class="sub_title"&gt;随时随地，&amp;nbsp;&lt;span style="font-weight: bold"&gt;并免费。&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/askDocSpelling.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="376" resname="Ask doctors any question		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="376" resname="Ask doctors any question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask doctors any question
-		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
+		&lt;span class="sub_title"&gt;Anytime. Anywhere. &lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target state="new">向医生询问任何问题，
-		&lt;span class=&quot;sub_title&quot;&gt;随时随地，&lt;span style=&quot;font-weight: bold&quot;&gt;并免费。&lt;/span&gt;&lt;/span&gt;</target>
+		&lt;span class="sub_title"&gt;随时随地，&lt;span style="font-weight: bold"&gt;并免费。&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/doc2DocSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="377" resname="Curbside Consult &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;			&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
-        <source>Curbside Consult &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;
-			&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
-        <target state="new">路边咨询 &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;
-			&lt;span class=&quot;sub_title&quot;&gt;来自您专家同事的高质量回答。&lt;/span&gt;</target>
+      <trans-unit id="377" resname="Curbside Consult&lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
+        <source>Curbside Consult &lt;span class="super"&gt;beta&lt;/span&gt;
+			&lt;span class="sub_title"&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
+        <target state="new">路边咨询 &lt;span class="super"&gt;beta&lt;/span&gt;
+			&lt;span class="sub_title"&gt;来自您专家同事的高质量回答。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/editQuestion.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="378" resname="EDIT YOUR QUESTION		&lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!" restype="string" datatype="html">
+      <trans-unit id="378" resname="EDIT YOUR QUESTION&lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!" restype="string" datatype="html">
         <source>EDIT YOUR QUESTION
-		&lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!</source>
+		&lt;span class="sub_title"&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!</source>
         <target state="new">编辑您的问题
-		&lt;span class=&quot;sub_title&quot;&gt;想编辑您的问题？点击这里。记住，好的语法和拼写提高得到高质量回答的几率！</target>
+		&lt;span class="sub_title"&gt;想编辑您的问题？点击这里。记住，好的语法和拼写提高得到高质量回答的几率！</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/guidelines.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="379" resname="GUIDELINES		&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="379" resname="GUIDELINES&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
         <source>GUIDELINES
-		&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
+		&lt;span class="sub_title"&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
         <target state="new">参考事项
-		&lt;span class=&quot;sub_title&quot;&gt;想问一个好问题，参考以下事项&lt;/span&gt;</target>
+		&lt;span class="sub_title"&gt;想问一个好问题，参考以下事项&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="380" resname="Sweat the details... at least a little.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex1&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Sweat the details... at least a little.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex1&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?
+      <trans-unit id="380" resname="Sweat the details... at least a little.&lt;a onclick=&quot;$(&amp;apos;#ex1&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I had an itchy dry rash on the inside of my elbows for 3 weeks. What could be the causes?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Why do I have a rash?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Sweat the details... at least a little.  &lt;a onclick="$(&amp;apos;#ex1&amp;apos;).toggle();" class='exampleToggle' id='h1'&gt;Hide examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex1' class='guidelineEx'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt; Why do I have a rash?
 				&lt;/span&gt;</source>
-        <target state="new">多给一些细节没有坏处。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex1&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; 我的手肘内部有一块干干的红疹，已经3周了。是什么引起的呢？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt; 为什么我有红疹？
+        <target state="new">多给一些细节没有坏处。  &lt;a onclick="$(&amp;apos;#ex1&amp;apos;).toggle();" class='exampleToggle' id='h1'&gt;Hide examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex1' class='guidelineEx'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; 我的手肘内部有一块干干的红疹，已经3周了。是什么引起的呢？&lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt; 为什么我有红疹？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="381" resname="Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex2&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex2&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?
+      <trans-unit id="381" resname="Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.&lt;a onclick=&quot;$(&amp;apos;#ex2&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Why back pain?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick="$(&amp;apos;#ex2&amp;apos;).toggle();" class='exampleToggle' id='h2'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex2' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt; Why back pain?
 				&lt;/span&gt;</source>
-        <target state="new">尽量描述多些细节来帮助其他人。世界各地的人们都可能看到您的问题，和医生的回答。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex2&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 什么可能引起后背下部疼痛呢，在我做完家务活后？我以前从未有过后背受伤。&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt; 为什么我后背疼？
+        <target state="new">尽量描述多些细节来帮助其他人。世界各地的人们都可能看到您的问题，和医生的回答。  &lt;a onclick="$(&amp;apos;#ex2&amp;apos;).toggle();" class='exampleToggle' id='h2'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex2' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 什么可能引起后背下部疼痛呢，在我做完家务活后？我以前从未有过后背受伤。&lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt; 为什么我后背疼？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="382" resname="Include sex/gender, when relevant.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex3&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Include sex/gender, when relevant.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex3&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?
+      <trans-unit id="382" resname="Include sex/gender, when relevant.&lt;a onclick=&quot;$(&amp;apos;#ex3&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt;What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt;What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Include sex/gender, when relevant.  &lt;a onclick="$(&amp;apos;#ex3&amp;apos;).toggle();" class='exampleToggle' id='h3'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex3' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;
+					&lt;span class="bad"&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?
 				&lt;/span&gt;</source>
-        <target state="new">指明您的性别，如果这可以提供更多信息。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex3&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;指明性别会有帮助：&lt;/span&gt; 什么会引起一个硬币大小的突起，在一个男人胸口下面？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不需要指明性别：&lt;/span&gt; 什么会引起一个豆子大的突起，在我手背的皮肤下面？
+        <target state="new">指明您的性别，如果这可以提供更多信息。  &lt;a onclick="$(&amp;apos;#ex3&amp;apos;).toggle();" class='exampleToggle' id='h3'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex3' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;指明性别会有帮助：&lt;/span&gt; 什么会引起一个硬币大小的突起，在一个男人胸口下面？&lt;br&gt;
+					&lt;span class="bad"&gt;不需要指明性别：&lt;/span&gt; 什么会引起一个豆子大的突起，在我手背的皮肤下面？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="383" resname="Include an approximate age.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex4&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;					&lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Include an approximate age.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex4&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;
-					&lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?
+      <trans-unit id="383" resname="Include an approximate age.&lt;a onclick=&quot;$(&amp;apos;#ex4&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt;For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts. What are some things that could cause this?&lt;br&gt;&lt;span class=&quot;good&quot;&gt;&lt;/span&gt;Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Include an approximate age.  &lt;a onclick="$(&amp;apos;#ex4&amp;apos;).toggle();" class='exampleToggle' id='h4'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex4' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;
+					&lt;span class="good"&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?
 				&lt;/span&gt;</source>
-        <target state="new">指明您的年龄。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex4&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;不同的年龄会导致不同回答：&lt;/span&gt; 过去2天，我15岁的儿子一直发烧，而且有点瘸好像脚疼似的。可能是什么引起的呢？ &lt;br&gt;
-					&lt;span class=&quot;good&quot;&gt;&lt;/span&gt; 过去2天，我3岁的儿子一直发烧，而且有点瘸好像脚疼似的。可能是什么引起的呢？
+        <target state="new">指明您的年龄。  &lt;a onclick="$(&amp;apos;#ex4&amp;apos;).toggle();" class='exampleToggle' id='h4'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex4' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;不同的年龄会导致不同回答：&lt;/span&gt; 过去2天，我15岁的儿子一直发烧，而且有点瘸好像脚疼似的。可能是什么引起的呢？ &lt;br&gt;
+					&lt;span class="good"&gt;&lt;/span&gt; 过去2天，我3岁的儿子一直发烧，而且有点瘸好像脚疼似的。可能是什么引起的呢？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="384" resname="Include weight, height and dosage units, where relevant.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex5&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Include weight, height and dosage units, where relevant.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex5&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?
+      <trans-unit id="384" resname="Include weight, height and dosage units, where relevant.&lt;a onclick=&quot;$(&amp;apos;#ex5&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;My son is 3, weighs 27, and has a height of 34. Is he OK for his age?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Include weight, height and dosage units, where relevant.  &lt;a onclick="$(&amp;apos;#ex5&amp;apos;).toggle();" class='exampleToggle' id='h5'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex5' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?
 				&lt;/span&gt;</source>
-        <target state="new">指明体重和身高的单位。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex5&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我儿子3岁大，27磅，34英寸高，这样在他的年龄正常吗？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  我儿子3岁大，重27，高34，他这样正常吗？
+        <target state="new">指明体重和身高的单位。  &lt;a onclick="$(&amp;apos;#ex5&amp;apos;).toggle();" class='exampleToggle' id='h5'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex5' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 我儿子3岁大，27磅，34英寸高，这样在他的年龄正常吗？&lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  我儿子3岁大，重27，高34，他这样正常吗？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="385" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex6&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol &#40;acetaminophen120mg/5ml&#41;, but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex6&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol &#40;acetaminophen120mg/5ml&#41;, but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?
+      <trans-unit id="385" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.&lt;a onclick=&quot;$(&amp;apos;#ex6&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick="$(&amp;apos;#ex6&amp;apos;).toggle();" class='exampleToggle' id='h6'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex6' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?
 				&lt;/span&gt;</source>
-        <target state="new">请指出药物的牌子和名称，尤其是如果你不在美国境内，或问到很不常见的药物。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex6&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我儿子5岁大，55磅，一直发烧。他吃了5ml的泰诺 &#40;扑热息痛120mg/5ml&#41;，不过烧没退。这么大的孩子能够吃更多泰诺吗？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  我儿子5岁大，重55，一直发烧。他吃了泰诺但是烧没退。能吃跟多药吗？
+        <target state="new">请指出药物的牌子和名称，尤其是如果你不在美国境内，或问到很不常见的药物。  &lt;a onclick="$(&amp;apos;#ex6&amp;apos;).toggle();" class='exampleToggle' id='h6'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex6' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 我儿子5岁大，55磅，一直发烧。他吃了5ml的泰诺 (扑热息痛120mg/5ml)，不过烧没退。这么大的孩子能够吃更多泰诺吗？&lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  我儿子5岁大，重55，一直发烧。他吃了泰诺但是烧没退。能吃跟多药吗？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="386" resname="Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex7&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex7&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?
+      <trans-unit id="386" resname="Try to avoid questions that set doctors up for a YES or NO answer.&lt;a onclick=&quot;$(&amp;apos;#ex7&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;How do antibiotics work in young, school-aged children?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Do antibiotics work in children?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick="$(&amp;apos;#ex7&amp;apos;).toggle();" class='exampleToggle' id='h7'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex7' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?
 				&lt;/span&gt;</source>
-        <target state="new">试着避免问医生用是或不是回答的问题。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex7&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 抗生素对年轻在上学的孩子怎么样？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  抗生素对孩子有用吗？
+        <target state="new">试着避免问医生用是或不是回答的问题。  &lt;a onclick="$(&amp;apos;#ex7&amp;apos;).toggle();" class='exampleToggle' id='h7'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex7' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 抗生素对年轻在上学的孩子怎么样？&lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  抗生素对孩子有用吗？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="387" resname="Try to leave opinions out.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex8&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Try to leave opinions out.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex8&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?
+      <trans-unit id="387" resname="Try to leave opinions out.&lt;a onclick=&quot;$(&amp;apos;#ex8&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Are those anti-vaccine folks completely clueless or just in denial?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Try to leave opinions out.  &lt;a onclick="$(&amp;apos;#ex8&amp;apos;).toggle();" class='exampleToggle' id='h8'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex8' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?
 				&lt;/span&gt;</source>
-        <target state="new">尽量避免加入个人观点。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex8&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;好问题：&lt;/span&gt; 为什么有人会抗议使用疫苗，当疫苗可以用来治疗疾病的时候？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  那些抗议疫苗的人是无知吗，还是只是不接受现实？
+        <target state="new">尽量避免加入个人观点。  &lt;a onclick="$(&amp;apos;#ex8&amp;apos;).toggle();" class='exampleToggle' id='h8'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex8' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;好问题：&lt;/span&gt; 为什么有人会抗议使用疫苗，当疫苗可以用来治疗疾病的时候？&lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  那些抗议疫苗的人是无知吗，还是只是不接受现实？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="388" resname="The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex9&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex9&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?
+      <trans-unit id="388" resname="The clearer, the better. Use good grammar, avoid profanities and stay away from slang.&lt;a onclick=&quot;$(&amp;apos;#ex9&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Doing curls, felt something and arm hurts?&lt;/span&gt;" restype="string" datatype="html">
+        <source>The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick="$(&amp;apos;#ex9&amp;apos;).toggle();" class='exampleToggle' id='h9'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex9' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?
 				&lt;/span&gt;</source>
-        <target state="new">越清楚明白越好。注意语法，避免不雅词汇和俚语。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex9&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我在做胳膊弯曲锻炼，突然肱二头肌特别疼。我可能伤到肌肉了吗？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  做弯曲，感觉不对，胳膊疼，怎么回事？
+        <target state="new">越清楚明白越好。注意语法，避免不雅词汇和俚语。  &lt;a onclick="$(&amp;apos;#ex9&amp;apos;).toggle();" class='exampleToggle' id='h9'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex9' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 我在做胳膊弯曲锻炼，突然肱二头肌特别疼。我可能伤到肌肉了吗？&lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  做弯曲，感觉不对，胳膊疼，怎么回事？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="389" resname="Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex10&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex10&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
+      <trans-unit id="389" resname="Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.&lt;a onclick=&quot;$(&amp;apos;#ex10&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;And it’s been going on for two days, and pus is coming out too?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick="$(&amp;apos;#ex10&amp;apos;).toggle();" class='exampleToggle' id='h10'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex10' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
 				&lt;/span&gt;</source>
-        <target state="new">不要假设医生知道你的病史，HealthTap医生通常看不到你之前的问题。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex10&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我2岁的儿子2个月前做了耳管，现在发烧并且右耳有脓，这正常吗？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  现在都2天了，脓会很快流完吗？
+        <target state="new">不要假设医生知道你的病史，HealthTap医生通常看不到你之前的问题。  &lt;a onclick="$(&amp;apos;#ex10&amp;apos;).toggle();" class='exampleToggle' id='h10'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex10' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 我2岁的儿子2个月前做了耳管，现在发烧并且右耳有脓，这正常吗？&lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  现在都2天了，脓会很快流完吗？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="390" resname="To maintain privacy, leave your name and the names of others out &#40;unless that “other” is a celebrity who has publicly talked about an issue&#41;.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex11&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.				&lt;/span&gt;" restype="string" datatype="html">
-        <source>To maintain privacy, leave your name and the names of others out &#40;unless that “other” is a celebrity who has publicly talked about an issue&#41;.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex11&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.
+      <trans-unit id="390" resname="To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).&lt;a onclick=&quot;$(&amp;apos;#ex11&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.&lt;/span&gt;" restype="string" datatype="html">
+        <source>To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).  &lt;a onclick="$(&amp;apos;#ex11&amp;apos;).toggle();" class='exampleToggle' id='h11'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex11' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.
 				&lt;/span&gt;</source>
-        <target state="new">为了您的隐私，不要写您和其他人的真名。 &#40;除非那是一个名人并且公开的谈论了一个问题。&#41;.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex11&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我听说演员Michael J. Fox谈论了他的帕金森症。最近3年内有什么新的更好的治疗方法吗？ &lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  医生您好。我叫John Doe，想知道有什么治疗帕金森症的好办法吗？
+        <target state="new">为了您的隐私，不要写您和其他人的真名。 (除非那是一个名人并且公开的谈论了一个问题。).  &lt;a onclick="$(&amp;apos;#ex11&amp;apos;).toggle();" class='exampleToggle' id='h11'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex11' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 我听说演员Michael J. Fox谈论了他的帕金森症。最近3年内有什么新的更好的治疗方法吗？ &lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  医生您好。我叫John Doe，想知道有什么治疗帕金森症的好办法吗？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="391" resname="Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex12&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex12&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?
+      <trans-unit id="391" resname="Avoid using too many abbreviations because these can get downright confusing.&lt;a onclick=&quot;$(&amp;apos;#ex12&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;How do u no ur prego if u never have reg periods?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick="$(&amp;apos;#ex12&amp;apos;).toggle();" class='exampleToggle' id='h12'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex12' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?
 				&lt;/span&gt;</source>
-        <target state="new">避免过多使用简写，那可能造成困惑。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex12&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 如果你的例假从来都不正常，你怎么知道是怀孕了呢？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  例假都不正常，怎么就怀孕了？
+        <target state="new">避免过多使用简写，那可能造成困惑。  &lt;a onclick="$(&amp;apos;#ex12&amp;apos;).toggle();" class='exampleToggle' id='h12'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex12' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 如果你的例假从来都不正常，你怎么知道是怀孕了呢？&lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  例假都不正常，怎么就怀孕了？
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="392" resname="Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex13&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;				&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?				&lt;/span&gt;" restype="string" datatype="html">
-        <source>Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex13&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?
+      <trans-unit id="392" resname="Ask in English. This is the language commonly used by doctors on HealthTap.&lt;a onclick=&quot;$(&amp;apos;#ex13&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I pruned some trees last weekend and my arm has been hurting for 2 days. Could this be the cause?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Porque mi brazo me duele mucho esta semana?&lt;/span&gt;" restype="string" datatype="html">
+        <source>Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick="$(&amp;apos;#ex13&amp;apos;).toggle();" class='exampleToggle' id='h13'&gt;Show examples&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex13' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;
+					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?
 				&lt;/span&gt;</source>
-        <target state="new">请尽量使用英语问问题，HealthTap平台的英语医生最多。  &lt;a onclick=&quot;$&#40;&amp;apos;&#35;ex13&amp;apos;&#41;.toggle&#40;&#41;;&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;举例来说&lt;/a&gt;&lt;br&gt;
-				&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;
-					&lt;span class=&quot;good&quot;&gt;好的问题：&lt;/span&gt; 我上周末清理了一下后园，现在胳膊疼了2天了，这有关系吗？&lt;br&gt;
-					&lt;span class=&quot;bad&quot;&gt;不太好的问题：&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?
+        <target state="new">请尽量使用英语问问题，HealthTap平台的英语医生最多。  &lt;a onclick="$(&amp;apos;#ex13&amp;apos;).toggle();" class='exampleToggle' id='h13'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+				&lt;span id='ex13' class='guidelineEx hide'&gt;
+					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 我上周末清理了一下后园，现在胳膊疼了2天了，这有关系吗？&lt;br&gt;
+					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?
 				&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/expertNewEpisode.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="393" resname="MESSAGE		&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="393" resname="MESSAGE&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
         <source>MESSAGE
-		&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;</source>
+		&lt;span class="sub_title"&gt;Private and HIPPA secure&lt;/span&gt;</source>
         <target state="new">文字信息
-		&lt;span class=&quot;sub_title&quot;&gt;私人的，并达到HIPPA安全级别&lt;/span&gt;</target>
+		&lt;span class="sub_title"&gt;私人的，并达到HIPPA安全级别&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisode.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="394" resname="Start a Private Conversation		&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
+      <trans-unit id="394" resname="Start a Private Conversation&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
         <source>Start a Private Conversation
-		&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience</source>
+		&lt;span class="sub_title"&gt;Enhance your HealthTap experience</source>
         <target state="new">开始一段私人对话
-		&lt;span class=&quot;sub_title&quot;&gt;提升HealthTap服务</target>
+		&lt;span class="sub_title"&gt;提升HealthTap服务</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeDocChoose.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="395" resname="Start a Private Conversation		&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="395" resname="Start a Private Conversation&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
         <source>Start a Private Conversation
-		&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
+		&lt;span class="sub_title"&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target state="new">开始一段私人对话
-		&lt;span class=&quot;sub_title&quot;&gt;您可以选择医生，并询问更加私人和具体的问题，只需付一点费用，我们保证这是HIPAA安全的，并且是一对一咨询。可以添加图片，扫描，或其他文件来得到专门给您的回答。&lt;/span&gt;</target>
+		&lt;span class="sub_title"&gt;您可以选择医生，并询问更加私人和具体的问题，只需付一点费用，我们保证这是HIPAA安全的，并且是一对一咨询。可以添加图片，扫描，或其他文件来得到专门给您的回答。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeHaveCredit.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="396" resname="ASK A DOCTOR A QUESTION		&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="396" resname="ASK A DOCTOR A QUESTION&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
         <source>ASK A DOCTOR A QUESTION
-		&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
+		&lt;span class="sub_title"&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
         <target state="new">询问医生一个问题
-		&lt;span class=&quot;sub_title&quot;&gt;您可以使用HealthTap的信用点数，来支付您直接选择医生并与其交谈的费用。&lt;/span&gt;</target>
+		&lt;span class="sub_title"&gt;您可以使用HealthTap的信用点数，来支付您直接选择医生并与其交谈的费用。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/referColleague.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="397" resname="REFER TO A COLLEAGUE		&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="397" resname="REFER TO A COLLEAGUE&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
         <source>REFER TO A COLLEAGUE
-		&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
+		&lt;span class="sub_title"&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
         <target state="new">推荐您的同事
-		&lt;span class=&quot;sub_title&quot;&gt;认识其他同事可以回答这个问题？太好了，请告诉我们，我们会把问题转发给他们。&lt;/span&gt;</target>
+		&lt;span class="sub_title"&gt;认识其他同事可以回答这个问题？太好了，请告诉我们，我们会把问题转发给他们。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/templates/layers/referColleagueSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="398" resname="This question has been sent to doctors in the					&lt;%= App.session.referSpecialty %&gt;					field" restype="string" datatype="html">
+      <trans-unit id="398" resname="This question has been sent to doctors in the &lt;%= App.session.referSpecialty %&gt; field" restype="string" datatype="html">
         <source>This question has been sent to doctors in the
 					&lt;%= App.session.referSpecialty %&gt;
 					field</source>
@@ -2730,34 +2705,34 @@
   </file>
   <file original="public/multipage/legacy/js/mvc/feed_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="402" resname="HealthTap is for informational purposes only. \\n          Content on HealthTap &#40;including answers&#41; should not be used for medical advice, \\n          diagnosis, or treatment, and interactions on HealthTap do not create a \\n          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \\n          in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you \\n          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+      <trans-unit id="402" resname="HealthTap is for informational purposes only. \\n          Content on HealthTap (including answers) should not be used for medical advice, \\n          diagnosis, or treatment, and interactions on HealthTap do not create a \\n          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \\n          in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you \\n          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
         <source>HealthTap is for informational purposes only. \
-          Content on HealthTap &#40;including answers&#41; should not be used for medical advice, \
+          Content on HealthTap (including answers) should not be used for medical advice, \
           diagnosis, or treatment, and interactions on HealthTap do not create a \
           doctor-patient relationship.  Never disregard or delay seeking professional medical advice \
-          in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if you \
+          in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you \
           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
         <target state="new">HealthTap只是为了提供信息。 \
-          HealthTap的内容 &#40;包括问题回答&#41; 不应被用于医学建议， \
+          HealthTap的内容 (包括问题回答) 不应被用于医学建议， \
           诊断，或治疗，并且在HealthTap平台的接触并不创建 \
           医生病人关系。请不要放弃或延缓专业的医疗建议 \
-          因为HealthTap. 给您的医生打电话或911 &#40;如果您在美国。&#41; 如果您 \
+          因为HealthTap. 给您的医生打电话或911 (如果您在美国。) 如果您 \
           认为这是紧急情况。 请看 {link_tag_start}更多的信息 &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/multipage/js/member/newMemberHome.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="403" resname="HealthTap is for informational purposes only.  Content on HealthTap \\n    &#40;including answers&#41; should not be used for medical advice, diagnosis, or treatment, and interactions \\n    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \\n    medical advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if \\n    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+      <trans-unit id="403" resname="HealthTap is for informational purposes only.  Content on HealthTap \\n    (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions \\n    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \\n    medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if \\n    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
         <source>HealthTap is for informational purposes only.  Content on HealthTap \
-    &#40;including answers&#41; should not be used for medical advice, diagnosis, or treatment, and interactions \
+    (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions \
     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \
-    medical advice in person because of anything on HealthTap. Call your doctor or 911 &#40;in the U.S.&#41; if \
+    medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if \
     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
         <target state="new">HealthTap只是为了提供信息。HealthTap的内容 \
-    &#40;包括问题回答&#41; 不应被用于医学建议，诊断，或治疗，并且在HealthTap平台的接触 \
+    (包括问题回答) 不应被用于医学建议，诊断，或治疗，并且在HealthTap平台的接触 \
     并不创建医生病人关系。请不要放弃或延缓专业的医疗建议 \
-    因为HealthTap。给您的医生打电话或911 &#40;如果您在美国。&#41; 如果 \ 
+    因为HealthTap。给您的医生打电话或911 (如果您在美国。) 如果 \ 
     您认为这是紧急情况。 请看 {link_tag_start}更多的信息 &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
       <trans-unit id="404" resname="Connect with women doctors who are also mothers for deeper, \\n    experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
@@ -2769,17 +2744,17 @@
   </file>
   <file original="public/mobile/app/js/templates/topics/topic_navigation_main.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="405" resname="1&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;1&lt;/span&gt; doctor agrees&lt;/a&gt;|&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;{{n}&lt;/span&gt; doctors agree&lt;/a&gt;" restype="string" datatype="javascript">
-        <source>1&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;1&lt;/span&gt; doctor agrees&lt;/a&gt;|&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;{{n}&lt;/span&gt; doctors agree&lt;/a&gt;</source>
-        <target state="new">1位&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;1&lt;/span&gt; 医生同意&lt;/a&gt;|&#35;and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;{{n}&lt;/span&gt; 位医生同意&lt;/a&gt;</target>
+      <trans-unit id="405" resname="1#and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;1&lt;/span&gt; doctor agrees&lt;/a&gt;|#and &lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;{{n}&lt;/span&gt; doctors agree&lt;/a&gt;" restype="string" datatype="javascript">
+        <source>1#and &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;1&lt;/span&gt; doctor agrees&lt;/a&gt;|#and &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;{{n}&lt;/span&gt; doctors agree&lt;/a&gt;</source>
+        <target state="new">1位#and &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;1&lt;/span&gt; 医生同意&lt;/a&gt;|#and &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;{{n}&lt;/span&gt; 位医生同意&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/views/people/fileUploadStorage_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="406" resname="We know that health information is personal. That&apos;s why these files will always be secure. We take this stuff very, very seriously. " restype="string" datatype="javascript">
-        <source>We know that health information is personal. That&apos;s why these files will always be secure. We take this stuff very, very seriously. </source>
-        <target state="new">我们知道健康信息是私人的。这是&apos;为什么这些文件会是安全的，这对我们非常重要。 </target>
+        <source>We know that health information is personal. That's why these files will always be secure. We take this stuff very, very seriously.</source>
+        <target state="new">我们知道健康信息是私人的。这是'为什么这些文件会是安全的，这对我们非常重要。</target>
       </trans-unit>
     </body>
   </file>

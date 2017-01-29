@@ -129,4 +129,68 @@
       </trans-unit>
     </body>
   </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2" resname="r675065080" restype="string" datatype="x-android-resource">
+        <source>Talk to a doctor live 24/7 via video or text chat</source>
+        <target state="translated">Habla con un doctor en vivo, 24/7, vía chat de video o texto</target>
+      </trans-unit>
+      <trans-unit id="3" resname="r991907007" restype="string" datatype="x-android-resource">
+        <source>Get advice, prescriptions, reminders. 100% satisfaction guaranteed, cancel anytime</source>
+        <target state="translated">Obtén asesoría, recetas y recordatorios. Satisfacción garantizada al 100%, cancelar en cualquier momento</target>
+      </trans-unit>
+      <trans-unit id="5" resname="r45009371" restype="string" datatype="x-android-resource">
+        <source>Near you</source>
+        <target state="translated">Cerca de ti</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/arrays.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="16">
+        <source>How old is {first_name}\'s grandson?</source>
+        <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="18">
+        <source>How old is {first_name}\'s stepson?</source>
+        <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="19">
+        <source>How old is {first_name}\'s stepdaughter?</source>
+        <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="20">
+        <source>How old is {first_name}\'s nephew?</source>
+        <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="2466" resname="living_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="21">
+        <source>How old is {first_name}\'s niece?</source>
+        <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="16">
+        <source>How old was {first_name}\'s grandson?</source>
+        <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="18">
+        <source>How old was {first_name}\'s stepson?</source>
+        <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="19">
+        <source>How old was {first_name}\'s stepdaughter?</source>
+        <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="20">
+        <source>How old was {first_name}\'s nephew?</source>
+        <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="2484" resname="dead_relationship_age_subaccount" restype="array" datatype="x-android-resource" extype="21">
+        <source>How old was {first_name}\'s niece?</source>
+        <target state="translated">¿Cuántos años tenía el otro de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="2889" resname="countries" restype="array" datatype="x-android-resource" extype="199">
+        <source>Zimbabwe</source>
+        <target state="translated">Zimbabue</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

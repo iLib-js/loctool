@@ -2640,7 +2640,7 @@
   </file>
   <file original="public/feelGood/templates/messages/lab_order.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1163" resname="You will be taken to the&lt;%= test_provider %&gt;website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.&lt;a class=&quot;btn schedule-test-btn&quot; href=&quot;&lt;%= consult_lab_test.schedule_test_url %&gt;&quot; target=&quot;_blank&quot;&gt;Schedule lab test&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1163" resname="You will be taken to the &lt;%= test_provider %&gt; website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.&lt;a class=&quot;btn schedule-test-btn&quot; href=&quot;&lt;%= consult_lab_test.schedule_test_url %&gt;&quot; target=&quot;_blank&quot;&gt;Schedule lab test&lt;/a&gt;" restype="string" datatype="html">
         <source>You will be taken to the &lt;%= test_provider %&gt; website to find a local test center and schedule an appointment. You will be asked to log in or create a secure account.
     &lt;a class="btn schedule-test-btn" href="&lt;%= consult_lab_test.schedule_test_url %&gt;" target="_blank"&gt;
       Schedule lab test
@@ -2971,7 +2971,7 @@
         &lt;%= (number_of_people_helped + '').comma() %&gt;
       &lt;/b&gt; 人</target>
       </trans-unit>
-      <trans-unit id="1184" resname="Answer&lt;b&gt;&lt;%= number_to_go %&gt;more Questions&lt;/b&gt;and get your next medal for today, the &quot;&lt;%= next_badge %&gt;&quot; medal!&lt;br&gt;&lt;br&gt;&lt;a href=&quot;/#docscore/achievements&quot;&gt;See your medals &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1184" resname="Answer&lt;b&gt;&lt;%= number_to_go %&gt; more Questions&lt;/b&gt;and get your next medal for today, the &quot;&lt;%= next_badge %&gt;&quot; medal!&lt;br&gt;&lt;br&gt;&lt;a href=&quot;/#docscore/achievements&quot;&gt;See your medals &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Answer &lt;b&gt;&lt;%= number_to_go %&gt; more Questions&lt;/b&gt; and get your next medal for today, the "&lt;%= next_badge %&gt;" medal!
     &lt;br&gt;
     &lt;br&gt;
@@ -2984,7 +2984,7 @@
   </file>
   <file original="public/javascripts/templates/experts/answer_question_form.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1185" resname="This answer will appear in your Virtual Practice and&lt;%= user_answer.contributor.name %&gt;will be given credit for assisting you. Edit as you deem necessary.&lt;a class=&quot;child-browser-link&quot; href=&quot;#how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1185" resname="This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt; will be given credit for assisting you. Edit as you deem necessary.&lt;a class=&quot;child-browser-link&quot; href=&quot;#how_it_works/healthtap_university&quot;&gt;More about HealthTap University &amp;gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>This answer will appear in your Virtual Practice and &lt;%= user_answer.contributor.name %&gt;
       will be given credit for assisting you. Edit as you deem necessary.
       &lt;a class="child-browser-link" href="#how_it_works/healthtap_university"&gt;More about HealthTap University &amp;gt; &lt;/a&gt;</source>
@@ -3004,7 +3004,7 @@
   </file>
   <file original="public/javascripts/templates/experts/competitions/top_doctors_comp.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1187" resname="Leaderboard&lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST&lt;%= today_str %&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1187" resname="Leaderboard&lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST &lt;%= today_str %&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Leaderboard
           &lt;span class="last-updated"&gt;as of 1AM PST &lt;%= today_str %&gt;&lt;/span&gt;</source>
         <target state="translated">排行榜
@@ -3018,7 +3018,7 @@
   </file>
   <file original="public/javascripts/templates/experts/concierge_consult_module.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1188" resname="Now become a &quot;Top Concierge Doctor&quot;&lt;br&gt;and do just&lt;%= 25 - no_of_consults %&gt;more&lt;%= no_of_consults == 24 ? &apos;consult&apos; : &apos;consults&apos; %&gt;&lt;br&gt;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos; day&apos; : &apos; days&apos;) %&gt;left in the competition!&lt;/b&gt;" restype="string" datatype="html">
+      <trans-unit id="1188" resname="Now become a &quot;Top Concierge Doctor&quot;&lt;br&gt;and do just &lt;%= 25 - no_of_consults %&gt; more &lt;%= no_of_consults == 24 ? &apos;consult&apos; : &apos;consults&apos; %&gt;&lt;br&gt;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos; day&apos; : &apos; days&apos;) %&gt; left in the competition!&lt;/b&gt;" restype="string" datatype="html">
         <source>Now become a "Top Concierge Doctor"&lt;br&gt;
           and do just &lt;%= 25 - no_of_consults %&gt; more &lt;%= no_of_consults == 24 ? 'consult' : 'consults' %&gt; &lt;br&gt;
           &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? ' day' : ' days') %&gt; left in the competition!&lt;/b&gt;</source>
@@ -3026,7 +3026,7 @@
           和只需要做 &lt;%= 25 - no_of_consults %&gt; 更多 &lt;%= no_of_consults == 24 ?'咨询' :'咨询' %&gt; &lt;br&gt;
           &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ?' 天' :' days') %&gt; 保持竞争力！&lt;/b&gt;</target>
       </trans-unit>
-      <trans-unit id="1189" resname="Now become&lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt;&quot;Top Concierge Doctor&quot; Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos;&amp;nbsp;day&apos; : &apos;&amp;nbsp;days&apos;) %&gt;left in the competition!&lt;/b&gt;" restype="string" datatype="html">
+      <trans-unit id="1189" resname="Now become&lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt;&quot;Top Concierge Doctor&quot; Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos;&amp;nbsp;day&apos; : &apos;&amp;nbsp;days&apos;) %&gt; left in the competition!&lt;/b&gt;" restype="string" datatype="html">
         <source>Now become &lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt; "Top Concierge Doctor"
           Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? '&amp;nbsp;day' : '&amp;nbsp;days') %&gt; left in the competition!&lt;/b&gt;</source>
         <target state="translated">立刻成为 &lt;b&gt;&lt;i&gt;&lt;/i&gt;&lt;/b&gt; "知名特邀医生"
@@ -3049,7 +3049,7 @@
   </file>
   <file original="public/javascripts/templates/experts/doc2doc_answer_feedback.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1191" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+&lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1191" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
         <source>You earned
         &lt;span class="points_earned_highlight"&gt;
           &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
@@ -3273,7 +3273,7 @@
         <source>Please create another tip or choose one from "Best tips by topic" or "All tips"</source>
         <target state="translated">请创建另一个小贴士，或从“按话题的最佳小贴士“选择一条或“所有小贴士”</target>
       </trans-unit>
-      <trans-unit id="2309" resname="&amp;vert;&lt;a class=&quot;hide_feedback&lt;% if(!newsletter[&apos;feedback_enabled?&apos;]){ %&gt;active&lt;% } %&gt;&quot;&gt;Hide&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="2309" resname="&amp;vert;&lt;a class=&quot;hide_feedback &lt;% if(!newsletter[&apos;feedback_enabled?&apos;]){ %&gt;active&lt;% } %&gt;&quot;&gt;Hide&lt;/a&gt;" restype="string" datatype="html">
         <source>&amp;vert; &lt;a class="hide_feedback  &lt;% if(!newsletter['feedback_enabled?']){ %&gt;active&lt;% } %&gt;"&gt;Hide&lt;/a&gt;</source>
         <target state="translated">&amp;vert; &lt;a class="hide_feedback  &lt;% if(!newsletter['feedback_enabled?']){ %&gt;active&lt;% } %&gt;"&gt;Hide&lt;/a&gt;</target>
       </trans-unit>
@@ -3291,7 +3291,7 @@
           &lt;br&gt;
          该通讯将来自HealthTap上我的在线咨询——一个免费的网络和移动服务，让您提问健康问题，接收每日健康小贴士，并收益于世界上最可靠和有用的健康信息，这些信息由您忠实的医生所写，其中有一些是美国最好的医生。</target>
       </trans-unit>
-      <trans-unit id="1216" resname="Sincerely,&lt;br&gt;Dr.&lt;%= App.user.get(&apos;person&apos;).name %&gt;&lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1216" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -3317,7 +3317,7 @@
           &lt;br&gt;&lt;br&gt;
           我鼓励您免费注册，并立刻在HealthTap上与我连接。</target>
       </trans-unit>
-      <trans-unit id="1218" resname="Sincerely,&lt;br&gt;Dr.&lt;%= App.user.get(&apos;person&apos;).name %&gt;&lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1218" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -3329,7 +3329,7 @@
           &lt;br&gt;
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" targete="_blank"&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="1219" resname="Sincerely,&lt;br&gt;Dr.&lt;%= App.user.get(&apos;person&apos;).name %&gt;&lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&apos;_blank&apos;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1219" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&apos;_blank&apos;&gt;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -3438,7 +3438,7 @@
   </file>
   <file original="public/javascripts/templates/experts/tabs/about.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1232" resname=":&lt;a class=&quot;showInsurances&quot; onclick=&quot;$(&amp;apos;ul.&lt;%= className %&gt;&amp;apos;).toggleClass(&amp;apos;hidden&amp;apos;)&quot;&gt;&lt;%= val.plans.length %&gt;Plans&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1232" resname=":&lt;a class=&quot;showInsurances&quot; onclick=&quot;$(&amp;apos;ul.&lt;%= className %&gt;&amp;apos;).toggleClass(&amp;apos;hidden&amp;apos;)&quot;&gt;&lt;%= val.plans.length %&gt; Plans&lt;/a&gt;" restype="string" datatype="html">
         <source>: &lt;a class="showInsurances" onclick="$(&amp;apos;ul.&lt;%= className %&gt;&amp;apos;).toggleClass(&amp;apos;hidden&amp;apos;)"&gt;&lt;%= val.plans.length %&gt; Plans&lt;/a&gt;</source>
         <target state="translated">:&lt;a class=”showInsurances” onclick=”$(&amp;apos;ul.&lt;%= className %&gt;&amp;apos;).toggleClass(&amp;apos;hidden&amp;apos;)”&gt;&lt;%= val.plans.length %&gt;计划&lt;/a&gt;</target>
       </trans-unit>
@@ -3969,7 +3969,7 @@
   </file>
   <file original="public/javascripts/templates/layers/referColleagueSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1273" resname="This question has been sent to doctors in the&lt;%= App.session.referSpecialty %&gt;field" restype="string" datatype="html">
+      <trans-unit id="1273" resname="This question has been sent to doctors in the &lt;%= App.session.referSpecialty %&gt; field" restype="string" datatype="html">
         <source>This question has been sent to doctors in the
           &lt;%= App.session.referSpecialty %&gt;
           field</source>
@@ -4378,11 +4378,11 @@
         <source>You've helped &lt;span class="helped_count"&gt;&lt;span class="bold"&gt;&lt;%=(people_helped || '').toString().digits()%&gt;&lt;/span&gt; People&lt;/span&gt;</source>
         <target state="translated">您已帮助&lt;span class=”helped_count”&gt;&lt;span class=”bold”&gt;&lt;%=(people_helped || ‘’).toString().digits()%&gt;&lt;/span&gt;人&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2413" resname="You earned&lt;span class=&quot;earned_point&quot;&gt;&lt;span&gt;+&lt;%=points%&gt;&lt;/span&gt;POINTS&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="2413" resname="You earned&lt;span class=&quot;earned_point&quot;&gt;&lt;span&gt;+ &lt;%=points%&gt;&lt;/span&gt;POINTS&lt;/span&gt;" restype="string" datatype="html">
         <source>You earned &lt;span class="earned_point"&gt;&lt;span&gt;+ &lt;%=points%&gt;&lt;/span&gt; POINTS &lt;/span&gt;</source>
         <target state="translated">您获得 &lt;span class="earned_point"&gt;&lt;span&gt;+ &lt;%=points%&gt;&lt;/span&gt; 积分&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="2414" resname="more&lt;%=App.session &amp;&amp; App.session.expertAnswerSuccess &amp;&amp; App.session.expertAnswerSuccess.isTip ? &apos;tips&apos; : &apos;questions&apos;%&gt;to&lt;span style=&quot;font-weight: bold&quot;&gt;&lt;%=pointMap[bonus_bar.target_bonus_multiplier - 1]%&gt;&lt;/span&gt;your daily points!" restype="string" datatype="html">
+      <trans-unit id="2414" resname="more &lt;%=App.session &amp;&amp; App.session.expertAnswerSuccess &amp;&amp; App.session.expertAnswerSuccess.isTip ? &apos;tips&apos; : &apos;questions&apos;%&gt; to&lt;span style=&quot;font-weight: bold&quot;&gt;&lt;%=pointMap[bonus_bar.target_bonus_multiplier - 1]%&gt;&lt;/span&gt;your daily points!" restype="string" datatype="html">
         <source>more &lt;%=App.session &amp;&amp; App.session.expertAnswerSuccess &amp;&amp; App.session.expertAnswerSuccess.isTip ? 'tips' : 'questions'%&gt; to &lt;span style="font-weight: bold"&gt;&lt;%=pointMap[bonus_bar.target_bonus_multiplier - 1]%&gt;&lt;/span&gt; your daily points!</source>
         <target state="translated">更多&lt;%=App.session &amp;&amp; App.session.expertAnswerSuccess &amp;&amp; App.session.expertAnswerSuccess.isTip ? 'tip' : ‘Questions’%&gt; 到 &lt;span style="font-weight: bold"&gt;&lt;%=pointMap[bonus_bar.target_bonus_multiplier - 1]%&gt;&lt;/span&gt; 您的每日积分！</target>
       </trans-unit>
@@ -8752,7 +8752,7 @@
   </file>
   <file original="app/views/layouts/feelGood/topic_help_doctor.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2223" resname="Dr.&lt;%= doctor.value.split(&quot; &quot;)[2] %&gt;, a specialist in&lt;%= doctor.specialty %&gt;, is available to help for only $" restype="string" datatype="html">
+      <trans-unit id="2223" resname="Dr. &lt;%= doctor.value.split(&quot; &quot;)[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $" restype="string" datatype="html">
         <source>Dr. &lt;%= doctor.value.split(" ")[2] %&gt;, a specialist in &lt;%= doctor.specialty %&gt;, is available to help for only $</source>
         <target state="translated">医生 &lt;%= doctor.value.split(" ")[2] %&gt;, 一位专家 &lt;%= doctor.specialty %&gt;, 可以帮助您只需$</target>
       </trans-unit>
@@ -8860,7 +8860,7 @@
   </file>
   <file original="public/feelGood/templates/past_due_banner.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2242" resname="Your credit card ending in -&lt;%= last_4 %&gt;has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!&lt;a class=&quot;update-billing&quot;&gt;Update Now &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="2242" resname="Your credit card ending in -&lt;%= last_4 %&gt; has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits!&lt;a class=&quot;update-billing&quot;&gt;Update Now &amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Your credit card ending in -&lt;%= last_4 %&gt; has expired or is no longer valid. Please update your billing info to continue your HealthTap Prime benefits! &lt;a class="update-billing"&gt;Update Now &amp;rsaquo;&lt;/a&gt;</source>
         <target state="translated">您的银行卡尾号-&lt;%= last_4 %&gt;已过期或已经无效。请更新您的帐户信息，继续获得HealthTap Prime的福利！&lt;a class="update-billing"&gt;现在更新 &amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -9224,7 +9224,7 @@
         <source>paid private</source>
         <target state="translated">私人付费</target>
       </trans-unit>
-      <trans-unit id="2313" resname="and&lt;a href=&quot;#expert/messages&quot;&gt;&lt;%= (appointments.toString().comma()) %&gt;appointment&lt;%= appointments &gt;1 ? &quot;requests&quot; : &quot;request&quot; %&gt;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="2313" resname="and&lt;a href=&quot;#expert/messages&quot;&gt;&lt;%= (appointments.toString().comma()) %&gt; appointment &lt;%= appointments &gt;1 ? &quot;requests&quot; : &quot;request&quot; %&gt;&lt;/a&gt;" restype="string" datatype="html">
         <source>and &lt;a href="#expert/messages"&gt;&lt;%= (appointments.toString().comma()) %&gt; appointment &lt;%= appointments &gt; 1 ? "requests" : "request" %&gt;&lt;/a&gt;</source>
         <target state="translated">和 &lt;a href="#expert/messages"&gt;&lt;%= (appointments.toString().comma()) %&gt; 预约 &lt;%= appointments &gt; 1 ? "请求" : "请求" %&gt;&lt;/a&gt;</target>
       </trans-unit>
@@ -9356,7 +9356,7 @@
         <source>Earn &lt;span class="episode_credits"&gt;&lt;/span&gt; credits, &lt;span class="episode_points"&gt;&lt;/span&gt; points and a boost in your Responsiveness, Helpfulness and DocScores.</source>
         <target state="translated">获得 &lt;span class=”episode_credits”&gt;&lt;/span&gt; 积分， &lt;span class=”episode_points”&gt;&lt;/span&gt; 分数，并提高您的反应灵敏，乐于助人和医者评分。</target>
       </trans-unit>
-      <trans-unit id="2348" resname="Please help&lt;%=interlocutor.person.name+&apos; &apos;+interlocutor.person.last_name%&gt;with a little more information regarding the answer you supplied. Earn&lt;span class=&quot;episode_points&quot;&gt;500&lt;/span&gt;points and a boost in your Helpfulness and DocScores." restype="string" datatype="html">
+      <trans-unit id="2348" resname="Please help &lt;%=interlocutor.person.name+&apos; &apos;+interlocutor.person.last_name%&gt; with a little more information regarding the answer you supplied. Earn&lt;span class=&quot;episode_points&quot;&gt;500&lt;/span&gt;points and a boost in your Helpfulness and DocScores." restype="string" datatype="html">
         <source>Please help &lt;%=interlocutor.person.name+' '+interlocutor.person.last_name%&gt; with a little more information regarding the answer you supplied. Earn &lt;span class="episode_points"&gt;500&lt;/span&gt; points and a boost in your Helpfulness and DocScores.</source>
         <target state="translated">请帮助&lt;%=interlocutor.person.name+' '+interlocutor.person.last_name%&gt; 关于您提供的回答的一些更多信息。获得 &lt;span class=”episode_points”&gt;500&lt;/span&gt; 分数，并提高您的乐于助人和医者评分。</target>
       </trans-unit>
@@ -9408,7 +9408,7 @@
   </file>
   <file original="public/javascripts/templates/pages/recommend_app_profile_editorial.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2363" resname="Review&lt;span class=&quot;bold&quot;&gt;&lt;%= (App.user.get(&apos;person&apos;).editorial_board_threshold - App.user.get(&apos;person&apos;).apps_recommended_num - 1) %&gt;more apps&lt;/span&gt;and become eligible for Editorial status, and have your reviews publicly displayed!&lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1#how_it_works/apprx&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="2363" resname="Review&lt;span class=&quot;bold&quot;&gt;&lt;%= (App.user.get(&apos;person&apos;).editorial_board_threshold - App.user.get(&apos;person&apos;).apps_recommended_num - 1) %&gt; more apps&lt;/span&gt;and become eligible for Editorial status, and have your reviews publicly displayed!&lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1#how_it_works/apprx&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Review &lt;span class="bold"&gt;&lt;%= (App.user.get('person').editorial_board_threshold - App.user.get('person').apps_recommended_num - 1) %&gt; more apps&lt;/span&gt; and become eligible for Editorial status, and have your reviews publicly displayed! &lt;a class="learn_more_editorial" href="/?doctor=1#how_it_works/apprx"&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
         <target state="translated">评论&lt;span class="bold"&gt;&lt;%= (App.user.get('person').editorial_board_threshold - App.user.get('person').apps_recommended_num - 1) %&gt; more apps&lt;/span&gt; 和成为有资格的可编辑状态，并且您的评论会公开显示！&lt;a class="learn_more_editorial" href="/?doctor=1#how_it_works/apprx"&gt;了解更多 &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -9512,7 +9512,7 @@
         <source>Ask all doctors &lt;b class="ask_fee"&gt;(free)&lt;/b&gt;</source>
         <target state="translated">询问所有医生 &lt;b class="ask_fee"&gt;(free)&lt;/b&gt;</target>
       </trans-unit>
-      <trans-unit id="2391" resname="Ask&lt;%= author.person.full_name %&gt;&lt;b class=&quot;ask_fee&quot;&gt;(paid)&lt;/b&gt;" restype="string" datatype="html">
+      <trans-unit id="2391" resname="Ask &lt;%= author.person.full_name %&gt;&lt;b class=&quot;ask_fee&quot;&gt;(paid)&lt;/b&gt;" restype="string" datatype="html">
         <source>Ask &lt;%= author.person.full_name %&gt; &lt;b class="ask_fee"&gt;(paid)&lt;/b&gt;</source>
         <target state="translated">询问 &lt;%= author.person.full_name %&gt; &lt;b class="ask_fee"&gt;(paid)&lt;/b&gt;</target>
       </trans-unit>
@@ -9592,7 +9592,7 @@
         <source>suggests &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt;'s answer:</source>
         <target state="translated">建议&lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt;'s 回答:</target>
       </trans-unit>
-      <trans-unit id="2412" resname="Originally authored by&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;in response to question,&lt;span class=&quot;bold&quot;&gt;&amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt;&amp;quot;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="2412" resname="Originally authored by&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;in response to question,&lt;span class=&quot;bold&quot;&gt;&amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt; &amp;quot;&lt;/span&gt;" restype="string" datatype="html">
         <source>Originally authored by &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; in response to question, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</source>
         <target state="translated">原始作者&lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; 回答问题, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</target>
       </trans-unit>
@@ -9640,7 +9640,7 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_doc_score/expert_own_standing.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2420" resname="/&lt;%=expert.next_level_point_range_start ? expert.next_level_point_range_start.toString().digits(): &apos;&apos;%&gt;&lt;span style=&quot;font-style: italic; text-transform:none;&quot;&gt;Points &amp;raquo;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="2420" resname="/ &lt;%=expert.next_level_point_range_start ? expert.next_level_point_range_start.toString().digits(): &apos;&apos;%&gt;&lt;span style=&quot;font-style: italic; text-transform:none;&quot;&gt;Points &amp;raquo;&lt;/span&gt;" restype="string" datatype="html">
         <source>/ &lt;%=expert.next_level_point_range_start ? expert.next_level_point_range_start.toString().digits(): ''%&gt;&lt;span style="font-style: italic; text-transform:none;"&gt;Points &amp;raquo;&lt;/span&gt;</source>
         <target state="translated">/ &lt;%=expert.next_level_point_range_start ? expert.next_level_point_range_start.toString().digits(): ‘’%&gt;&lt;span style=”font-style: italic; text-transform:none;”&gt;积分&amp;raquo;&lt;/span&gt;</target>
       </trans-unit>
@@ -9656,7 +9656,7 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_messages/expert_episode-re.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2422" resname="Dr.&lt;%=App.user.get(&quot;person.name&quot;)%&gt;isn&apos;t available at the moments.We&apos;he refunded you[number] HealthTap Credits so you can ask another doctor for help." restype="string" datatype="html">
+      <trans-unit id="2422" resname="Dr. &lt;%=App.user.get(&quot;person.name&quot;)%&gt; isn&apos;t available at the moments.We&apos;he refunded you[number] HealthTap Credits so you can ask another doctor for help." restype="string" datatype="html">
         <source>Dr. &lt;%=App.user.get("person.name")%&gt; isn't available at the moments.We'he refunded you[number] HealthTap Credits so you can ask another doctor for help.</source>
         <target state="translated">医生&lt;%=App.user.get(”person.name”)%&gt; 现在正在忙。我们将退还您的[number] HealthTap余额，您可以请求另一名医生的帮助。</target>
       </trans-unit>
@@ -9664,7 +9664,7 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_messages/expert_episode.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2423" resname="Dr.&lt;%=App.user.get(&quot;person.name&quot;)%&gt;isn’t available at the moment. We’ve issued a full refund so you can ask another doctor for help." restype="string" datatype="html">
+      <trans-unit id="2423" resname="Dr. &lt;%=App.user.get(&quot;person.name&quot;)%&gt; isn’t available at the moment. We’ve issued a full refund so you can ask another doctor for help." restype="string" datatype="html">
         <source>Dr. &lt;%=App.user.get("person.name")%&gt; isn’t available at the moment. We’ve issued a full refund so you can ask another doctor for help.</source>
         <target state="translated">医生&lt;%=App.user.get("person.name")%&gt; 正在忙。我们已全额向您退款，您可以向另一名医生寻求帮助。</target>
       </trans-unit>
@@ -9680,7 +9680,7 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_news/newsItemOverview.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2425" resname="and&lt;a class=&quot;bold voters_h&quot;&gt;&lt;%=(feed[index].helpful_votes_count - 1)%&gt;others&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="2425" resname="and&lt;a class=&quot;bold voters_h&quot;&gt;&lt;%=(feed[index].helpful_votes_count - 1)%&gt; others&lt;/a&gt;" restype="string" datatype="html">
         <source>and &lt;a class="bold voters_h"&gt;&lt;%=(feed[index].helpful_votes_count - 1)%&gt; others&lt;/a&gt;</source>
         <target state="translated">和&lt;a class=”bold voters_h”&gt;&lt;%=(feed[index].helpful_votes_count - 1)%&gt; 其他人&lt;/a&gt;</target>
       </trans-unit>
@@ -9724,7 +9724,7 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_patients/your_patients.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2431" resname="Last virtual consult on&lt;%=(consults[0].updated_at)%&gt;.&lt;br&gt;&lt;a href=&quot;&lt;%=consults[0].transcript_url%&gt;&quot;&gt;View transcript &amp;#187;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="2431" resname="Last virtual consult on &lt;%=(consults[0].updated_at)%&gt;.&lt;br&gt;&lt;a href=&quot;&lt;%=consults[0].transcript_url%&gt;&quot;&gt;View transcript &amp;#187;&lt;/a&gt;" restype="string" datatype="html">
         <source>Last virtual consult on &lt;%=(consults[0].updated_at)%&gt;.&lt;br&gt;&lt;a href="&lt;%=consults[0].transcript_url%&gt;"&gt;View transcript &amp;#187;&lt;/a&gt;</source>
         <target state="translated">上一次在线咨询在 &lt;%=(consults[0].updated_at)%&gt;.&lt;br&gt;&lt;a href="&lt;%=consults[0].transcript_url%&gt;"&gt;View transcript &amp;#187;&lt;/a&gt;</target>
       </trans-unit>
@@ -9776,7 +9776,7 @@
         <source>You have no upcoming shifts &lt;a class="edit_shift_h"&gt;(add shift)&lt;/a&gt;</source>
         <target state="translated">您没有即将到来的班次&lt;a ass="edit_shift_h"&gt;(add shift)&lt;/a&gt;</target>
       </trans-unit>
-      <trans-unit id="2440" resname="on&lt;span&gt;&lt;%=day%&gt;&lt;/span&gt;at&lt;span&gt;&lt;%=shift_start_ts%&gt;-&lt;%=shift_end_ts%&gt;&lt;/span&gt;&lt;%=tz%&gt;&lt;a class=&quot;edit_shift_h&quot;&gt;(change)&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="2440" resname="on&lt;span&gt;&lt;%=day%&gt;&lt;/span&gt;at&lt;span&gt;&lt;%=shift_start_ts%&gt; - &lt;%=shift_end_ts%&gt;&lt;/span&gt;&lt;%=tz%&gt;&lt;a class=&quot;edit_shift_h&quot;&gt;(change)&lt;/a&gt;" restype="string" datatype="html">
         <source>on &lt;span&gt;&lt;%=day%&gt;&lt;/span&gt; at &lt;span&gt;&lt;%=shift_start_ts%&gt; - &lt;%=shift_end_ts%&gt;&lt;/span&gt;&lt;%=tz%&gt;&lt;a class="edit_shift_h"&gt;(change)&lt;/a&gt;</source>
         <target state="translated">在&lt;span&gt;&lt;%=day%&gt;&lt;/span&gt; at &lt;span&gt;&lt;%=shift_start_ts%&gt; - &lt;%=shift_end_ts%&gt;&lt;/span&gt;&lt;%=tz%&gt;&lt;a class=”edit_shift_h”&gt;(更改)&lt;/a&gt;</target>
       </trans-unit>
@@ -9980,7 +9980,7 @@
   </file>
   <file original="public/mobile/app/js/templates/member/member_health_history/member_health_history_timeline_item.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2469" resname="added&lt;%= (health_journal_entry.hh_type == &quot;allergy&quot; || health_journal_entry.hh_type == &quot;immunization&quot;) ? &apos;an&apos; : &apos;a&apos; %&gt;&lt;%= health_journal_entry.hh_type %&gt;:" restype="string" datatype="html">
+      <trans-unit id="2469" resname="added &lt;%= (health_journal_entry.hh_type == &quot;allergy&quot; || health_journal_entry.hh_type == &quot;immunization&quot;) ? &apos;an&apos; : &apos;a&apos; %&gt;&lt;%= health_journal_entry.hh_type %&gt;:" restype="string" datatype="html">
         <source>added &lt;%= (health_journal_entry.hh_type == "allergy" || health_journal_entry.hh_type == "immunization") ? 'an' : 'a' %&gt;&lt;%= health_journal_entry.hh_type %&gt;:</source>
         <target state="translated">已添加&lt;%= (health_journal_entry.hh_type == "allergy" || health_journal_entry.hh_type == "immunization") ? '一' : '一' %&gt;&lt;%= health_journal_entry.hh_type %&gt;:</target>
       </trans-unit>
@@ -10048,7 +10048,7 @@
   </file>
   <file original="public/mobile/app/js/templates/personalization/personalize_question.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2478" resname="Currently in&lt;%=prompt_type == &quot;prompt&quot; ? &apos;your&apos; : otherName %&gt;Health Profile:" restype="string" datatype="html">
+      <trans-unit id="2478" resname="Currently in &lt;%=prompt_type == &quot;prompt&quot; ? &apos;your&apos; : otherName %&gt; Health Profile:" restype="string" datatype="html">
         <source>Currently in &lt;%=prompt_type == "prompt" ? 'your' : otherName %&gt; Health Profile:</source>
         <target state="translated">当前在&lt;%=prompt_type == "prompt" ? 'your' : otherName %&gt;健康资料：</target>
       </trans-unit>
@@ -10148,7 +10148,7 @@
   </file>
   <file original="public/mobile/app/js/templates/topics/topic_navigation_main.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="2493" resname="and&lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt;doctor&lt;%=val.desc_agrees.length&gt;1 ? &apos;s&apos; : &apos;&apos;%&gt;agree&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="2493" resname="and&lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt;doctor&lt;%=val.desc_agrees.length&gt;1 ? &apos;s&apos; : &apos;&apos;%&gt; agree&lt;/a&gt;" restype="string" datatype="html">
         <source>and &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt; doctor&lt;%=val.desc_agrees.length&gt; 1 ? 's' : ''%&gt; agree&lt;/a&gt;</source>
         <target state="translated">和&lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt; doctor&lt;%=val.desc_agrees.length&gt; 1 ? 's' : ''%&gt; 同意&lt;/a&gt;</target>
       </trans-unit>

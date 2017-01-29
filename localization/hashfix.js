@@ -27,6 +27,7 @@ var unit, units = xliff.getTranslationUnits();
 var rf = new RubyFile();
 var jf = new JavaFile();
 var htf = new HTMLTemplateFile();
+var plurals = {};
 
 console.log("Processing translation units ...");
 
@@ -35,14 +36,21 @@ for (var i = 0; i < units.length; i++) {
 	unit = units[i];
 	
 	if (unit.datatype === "x-haml" || unit.datatype === "ruby") {
-		var hash = rf.makeKey(unit.source);
-		unit.source = RubyFile.unescapeString(utils.trimEscaped(unit.source));
-		unit.target = RubyFile.unescapeString(utils.trimEscaped(unit.target).replace(/％\{/g, "%{"));
-		
-		if ( unit.key !== hash ) {
-			console.log("File: " + unit.file + " key: " + unit.key + " -> " + hash);
-		}
-		unit.key = hash;
+		if (unit.resType !== "plural" || unit.quantity === "one") {
+			var hash = rf.makeKey(unit.source);
+			unit.source = RubyFile.unescapeString(utils.trimEscaped(unit.source));
+			if (unit.target) unit.target = RubyFile.unescapeString(utils.trimEscaped(unit.target).replace(/％\{/g, "%{"));
+			
+			if ( unit.key !== hash ) {
+				console.log("File: " + unit.file + " key: " + unit.key + " -> " + hash);
+			}
+			if (unit.resType === "plural") {
+				// store for the 2nd pass -- plurals are referenced by their "one" quantity only
+				console.log("Storing plural " + hash);
+				plurals[unit.key] = hash;
+			}
+			unit.key = hash;
+		} // do the other quantities in a second pass
 	} else if (unit.datatype === "java") {
 		var hash = jf.makeKey(unit.source);
 		unit.source = JavaFile.unescapeString(utils.trimEscaped(unit.source));
@@ -58,6 +66,18 @@ for (var i = 0; i < units.length; i++) {
 			console.log("File: " + unit.file + " key: " + unit.key + " -> " + newkey);
 		}
 		unit.key = newkey;
+	}
+}
+
+for (var i = 0; i < units.length; i++) {
+	unit = units[i];
+	
+	if (unit.datatype === "ruby" && unit.resType === "plural" && unit.quantity !== "one") {
+		var hash = plurals[unit.key];
+		if ( hash && unit.key !== hash ) {
+			console.log("File: " + unit.file + " update plural key: " + unit.key + " -> " + hash);
+			unit.key = hash;
+		}
 	}
 }
 
