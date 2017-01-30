@@ -10,6 +10,7 @@ var utils = require("../lib/utils.js");
 var RubyFile = require("../lib/RubyFile.js");
 var JavaFile = require("../lib/JavaFile.js");
 var HTMLTemplateFile = require("../lib/HTMLTemplateFile.js");
+var JavaScriptFile = require("../lib/JavaScriptFile.js");
 
 log4js.configure(path.join(path.dirname(module.filename), '..', 'log4js.json'));
 
@@ -27,6 +28,7 @@ var unit, units = xliff.getTranslationUnits();
 var rf = new RubyFile();
 var jf = new JavaFile();
 var htf = new HTMLTemplateFile();
+var jsf = new JavaScriptFile();
 var plurals = {};
 
 console.log("Processing translation units ...");
@@ -62,6 +64,12 @@ for (var i = 0; i < units.length; i++) {
 		unit.key = hash;
 	} else if (unit.datatype === "html") {
 		var newkey = htf.makeKey(unit.source);
+		if ( unit.key !== newkey ) {
+			console.log("File: " + unit.file + " key: " + unit.key + " -> " + newkey);
+		}
+		unit.key = newkey;
+	} else if (unit.datatype === "javascript") {
+		var newkey = jsf.makeKey(unit.source);
 		if ( unit.key !== newkey ) {
 			console.log("File: " + unit.file + " key: " + unit.key + " -> " + newkey);
 		}

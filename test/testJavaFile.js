@@ -393,7 +393,7 @@ module.exports = {
 		});
         test.ok(jf);
 
-        test.equals(jf.makeKey("A \\b\\t\\n\\f\\r\\\\ B"), "r191336864");
+        test.equals(jf.makeKey("A \\b\\t\\n\\f\\r B"), "r191336864");
         
         test.done();
 	},
@@ -536,6 +536,29 @@ module.exports = {
         test.ok(r);
         test.equal(r.getSource(), "This is a test");
         test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testJavaFileParseDoubleEscapedWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('ssb.append(RB.getString("\\\\nTry a Virtual Consult ›"));');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("Try a Virtual Consult ›");
+        test.ok(r);
+        test.equal(r.getSource(), "Try a Virtual Consult ›");
+        test.equal(r.getKey(), "r682432029");
         
         test.done();
     },
