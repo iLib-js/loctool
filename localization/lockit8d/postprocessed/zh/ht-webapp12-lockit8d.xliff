@@ -490,11 +490,11 @@
       </trans-unit>
       <trans-unit id="814" resname="Grandfather" restype="string" datatype="javascript">
         <source>Grandfather</source>
-        <target state="translated">爷爷/祖父</target>
+        <target state="translated">爷爷/外公</target>
       </trans-unit>
       <trans-unit id="815" resname="Grandmother" restype="string" datatype="javascript">
         <source>Grandmother</source>
-        <target state="translated">奶奶/祖母</target>
+        <target state="translated">奶奶/外婆</target>
       </trans-unit>
       <trans-unit id="816" resname="Friend" restype="string" datatype="javascript">
         <source>Friend</source>
