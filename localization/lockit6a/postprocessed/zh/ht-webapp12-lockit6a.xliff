@@ -36378,7 +36378,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="8317" resname="SMS:" restype="string" datatype="html">
         <source>SMS:</source>
-        <target>SMS:</target>
+        <target>短信:</target>
       </trans-unit>
       <trans-unit id="8318" resname="Text messages sent to the mobile phone number you set for your HealthTap account" restype="string" datatype="html">
         <source>Text messages sent to the mobile phone number you set for your HealthTap account</source>
@@ -38174,7 +38174,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="8776" resname="SMS" restype="string" datatype="html">
         <source>SMS</source>
-        <target>SMS</target>
+        <target>短信</target>
       </trans-unit>
       <trans-unit id="8777" resname="- Carrier -" restype="string" datatype="html">
         <source>- Carrier -</source>

@@ -11262,7 +11262,7 @@ from the HealthTap app</source>
       </trans-unit>
       <trans-unit id="SMS" resname="SMS" restype="string" datatype="x-objective-c">
         <source>SMS</source>
-        <target>SMS</target>
+        <target>短信</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="STATUS:" resname="STATUS:" restype="string" datatype="x-objective-c">
