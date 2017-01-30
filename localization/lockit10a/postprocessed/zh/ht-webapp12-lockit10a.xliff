@@ -148,14 +148,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="index.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="50" resname="r3013966" restype="string" datatype="x-haml">
-        <source>.</source>
-        <target state="translated">。</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="test_call.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="53" resname="r927688850" restype="string" datatype="x-haml">
