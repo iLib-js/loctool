@@ -8,6 +8,7 @@ var path = require("path");
 
 var Xliff = require("../lib/Xliff.js");
 var TranslationUnit = Xliff.TranslationUnit;
+log4js.configure("./log4js.json");
 
 console.log("Reading all xliffs...");
 
@@ -19,8 +20,6 @@ var ios = new Xliff({pathName: "./current/ht-iosapp.xliff"});
 ios.deserialize(fs.readFileSync("./current/ht-iosapp.xliff", "utf-8"));
 var feelgood = new Xliff({pathName: "./current/feelgood-video-chats_lib.xliff"});
 feelgood.deserialize(fs.readFileSync("./current/feelgood-video-chats_lib.xliff", "utf-8"));
-
-log4js.configure("/Users/edwinhoogerbeets/src/loctool/localization/log4js.json");
 
 console.log("Organizing the translation units");
 
