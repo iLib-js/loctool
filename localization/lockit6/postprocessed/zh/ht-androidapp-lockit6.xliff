@@ -3357,7 +3357,7 @@
       </trans-unit>
       <trans-unit id="602" resname="r356004357" restype="string" datatype="java">
         <source>Hi, {name}!</source>
-        <target>您好，({name})！</target>
+        <target>您好，{name}！</target>
       </trans-unit>
       <trans-unit id="603" resname="r787211475" restype="string" datatype="java">
         <source>99+</source>
