@@ -21502,7 +21502,7 @@ us in the App Store :)</source>
       </trans-unit>
       <trans-unit id="hon-2k-uh7.normalTitle" resname="hon-2k-uh7.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>留言</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Send note"; ObjectID = "hon-2k-uh7";</note>
       </trans-unit>
       <trans-unit id="zEZ-Fm-5PZ.text" resname="zEZ-Fm-5PZ.text" restype="string" datatype="x-xib">
@@ -25922,7 +25922,7 @@ and more</source>
     <body>
       <trans-unit id="0Es-QU-ucF.text" resname="0Es-QU-ucF.text" restype="string" datatype="x-xib">
         <source>Following</source>
-        <target>已关注</target>
+        <target state="accepted">已关注</target>
         <note annotates="source">Class = "UILabel"; text = "Following"; ObjectID = "0Es-QU-ucF";</note>
       </trans-unit>
       <trans-unit id="Nxc-Vd-WRw.text" resname="Nxc-Vd-WRw.text" restype="string" datatype="x-xib">
@@ -28453,7 +28453,7 @@ available in %@</source>
       </trans-unit>
       <trans-unit id="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately." resname="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately." restype="string" datatype="x-objective-c">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately.</source>
-        <target>HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立即打电话给%@或当地应急服务人员。</target>
+        <target state="accepted">HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立即打电话给%@或当地应急服务人员。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Any primary care doctor" resname="Any primary care doctor" restype="string" datatype="x-objective-c">
@@ -30071,7 +30071,7 @@ subscription</source>
       </trans-unit>
       <trans-unit id="Facebook" resname="Facebook" restype="string" datatype="x-objective-c">
         <source>Facebook</source>
-        <target>脸书</target>
+        <target state="accepted">脸书</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Failed to access remote files" resname="Failed to access remote files" restype="string" datatype="x-objective-c">
@@ -30204,7 +30204,7 @@ I'd like to accomplish my goal of...</source>
       </trans-unit>
       <trans-unit id="Following" resname="Following" restype="string" datatype="x-objective-c">
         <source>Following</source>
-        <target>已关注</target>
+        <target state="accepted">已关注</target>
         <note annotates="source">following button label
    Label to indicate that user is already following a topic
    label to indticate user is already following a given topic</note>
@@ -31852,7 +31852,7 @@ educational answers</source>
       </trans-unit>
       <trans-unit id="Pay &amp; Book" resname="Pay &amp; Book" restype="string" datatype="x-objective-c">
         <source>Pay &amp; Book</source>
-        <target>支付并预定</target>
+        <target state="accepted">支付并预定</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Pay &amp; Continue" resname="Pay &amp; Continue" restype="string" datatype="x-objective-c">
@@ -32487,7 +32487,7 @@ from the HealthTap app</source>
       </trans-unit>
       <trans-unit id="SMS" resname="SMS" restype="string" datatype="x-objective-c">
         <source>SMS</source>
-        <target>SMS</target>
+        <target>短信</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="STATUS:" resname="STATUS:" restype="string" datatype="x-objective-c">
@@ -36633,7 +36633,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>留言</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Send note"; ObjectID = "u1p-9T-OIc";</note>
       </trans-unit>
     </body>
@@ -36702,7 +36702,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>留言</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Send note"; ObjectID = "u1p-9T-OIc";</note>
       </trans-unit>
     </body>
@@ -36761,7 +36761,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>留言</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Send note"; ObjectID = "u1p-9T-OIc";</note>
       </trans-unit>
     </body>
@@ -37940,7 +37940,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="oQj-RC-pXP.text" resname="oQj-RC-pXP.text" restype="string" datatype="x-xib">
         <source>Following</source>
-        <target>已关注</target>
+        <target state="accepted">已关注</target>
         <note annotates="source">Class = "UILabel"; text = "Following"; ObjectID = "oQj-RC-pXP";</note>
       </trans-unit>
       <trans-unit id="pq3-hc-t6G.text" resname="pq3-hc-t6G.text" restype="string" datatype="x-xib">
@@ -41419,7 +41419,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
       </trans-unit>
       <trans-unit id="sQO-Yv-5Ru.normalTitle" resname="sQO-Yv-5Ru.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>留言</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Send note"; ObjectID = "sQO-Yv-5Ru";</note>
       </trans-unit>
       <trans-unit id="t19-M2-NXs.text" resname="t19-M2-NXs.text" restype="string" datatype="x-xib">
@@ -43193,6 +43193,42 @@ Doctors are online ready to help.</source>
       <trans-unit id="36" resname="We&apos;re sorry but we are unable to contact the server. Please try again in a bit." restype="string" datatype="x-objective-c">
         <source>We're sorry but we are unable to contact the server. Please try again in a bit.</source>
         <target state="new">抱歉，我们无法与服务器联系。 请稍后重试。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomCTAHeaderCollectionReusableView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Experiencing symptoms?" restype="string" datatype="x-objective-c">
+        <source>Experiencing symptoms?</source>
+        <target state="accepted">经历症状?</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Find out why" restype="string" datatype="x-objective-c">
+        <source>Find out why</source>
+        <target state="accepted">找出为什么</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocUpgradeForSubAccountViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Update Subscription" restype="string" datatype="x-objective-c">
+        <source>Update Subscription</source>
+        <target state="accepted">更新您的会员计划</target>
+      </trans-unit>
+      <trans-unit id="2" resname="To ask for %@, please" restype="string" datatype="x-objective-c">
+        <source>To ask for %@, please</source>
+        <target state="accepted">想要咨询 %@，请</target>
+      </trans-unit>
+      <trans-unit id="3" resname="add %@ to your account" restype="string" datatype="x-objective-c">
+        <source>add %@ to your account</source>
+        <target state="accepted">添加 %@ 到您的账户</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Add %@" restype="string" datatype="x-objective-c">
+        <source>Add %@</source>
+        <target state="accepted">添加 %@</target>
+      </trans-unit>
+      <trans-unit id="5" resname="Only US $%@ / month" restype="string" datatype="x-objective-c">
+        <source>Only US $%@ / month</source>
+        <target state="accepted">每月只需 %@ 美元</target>
       </trans-unit>
     </body>
   </file>
@@ -47986,7 +48022,7 @@ Doctors are online ready to help.</source>
       </trans-unit>
       <trans-unit id="97" resname="%@, %ld years in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld years in practice</source>
-        <target>%@, %ld 年诊疗经验的专家</target>
+        <target state="accepted">%@, %ld 年诊疗经验的专家</target>
       </trans-unit>
       <trans-unit id="98" resname="%@, %ld year in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld year in practice</source>
@@ -60679,7 +60715,7 @@ Doctors are online ready to help.</source>
     \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
     \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
-        <target>在线咨询的常见问题：
+        <target state="new">在线咨询的常见问题：
 \u00B7 腹部疼痛\n\
 \u00B7 急性支气管炎\n\
 \u00B7 急性结膜炎\n\
@@ -60773,7 +60809,7 @@ Doctors are online ready to help.</source>
     \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
                            \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
-        <target>在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+        <target state="new">在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -60795,7 +60831,7 @@ Doctors are online ready to help.</source>
       </trans-unit>
       <trans-unit id="4" resname="At which pharmacy do you prefer to pick up prescriptions?" restype="string" datatype="x-objective-c">
         <source>At which pharmacy do you prefer to pick up prescriptions?</source>
-        <target>您希望在哪个药房取药？</target>
+        <target state="new">您希望在哪个药房取药？</target>
         <note annotates="source">question for getting pharmacy selection</note>
       </trans-unit>
     </body>
@@ -60804,7 +60840,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="5" resname="Languages spoken" restype="string" datatype="x-objective-c">
         <source>Languages spoken</source>
-        <target>所说语言</target>
+        <target state="new">所说语言</target>
       </trans-unit>
     </body>
   </file>
@@ -60812,7 +60848,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="15" resname="other" restype="string" datatype="x-objective-c">
         <source>other</source>
-        <target>其它</target>
+        <target state="new">其它</target>
       </trans-unit>
     </body>
   </file>
@@ -60820,7 +60856,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="16" resname="Type your location" restype="string" datatype="x-objective-c">
         <source>Type your location</source>
-        <target>输入您的位置</target>
+        <target state="new">输入您的位置</target>
       </trans-unit>
     </body>
   </file>
@@ -61942,7 +61978,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="1" resname="Earlier, you requested to be notified when a doctor became available for another consult. Would you like to cancel that consult and start a new one?" restype="string" datatype="x-objective-c">
         <source>Earlier, you requested to be notified when a doctor became available for another consult. Would you like to cancel that consult and start a new one?</source>
-        <target>较早前，您发出请求，希望在医生能够进行另一次咨询时收到通知。您是否希望取消该次咨询并开始一次新的咨询？</target>
+        <target state="translated">较早前，您发出请求，希望在医生能够进行另一次咨询时收到通知。您是否希望取消该次咨询并开始一次新的咨询？</target>
       </trans-unit>
       <trans-unit id="2" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivitis\n\\n    \u00B7 Acute Cystitis\n\\n    \u00B7 Acute Pharyngitis\n\\n    \u00B7 Acute Sinusitis\n\\n    \u00B7 Allergies\n\\n    \u00B7 Asthma (stable / non-emergency)\n\\n    \u00B7 Athlete’s Foot\n\\n    \u00B7 Back Pain\n\\n    \u00B7 Bee Sting\n\\n    \u00B7 Bladder infections\n\\n    \u00B7 Cellulitis (skin infection)\n\\n    \u00B7 Cold\n\\n    \u00B7 Cough\n\\n    \u00B7 Depression\n\\n    \u00B7 Diarrhea\n\\n    \u00B7 Dry Scalp\n\\n    \u00B7 Dry Skin (Eczema)\n\\n    \u00B7 Eye Irritation\n\\n    \u00B7 Fever\n\\n    \u00B7 Genital Lesions\n\\n    \u00B7 Hay Fever\n\\n    \u00B7 Headache\n\\n    \u00B7 Heartburn (Gastroesophageal Reflux Disease, or GERD)\n\\n    \u00B7 Influenza\n\\n    \u00B7 Lab Interpretation\n\\n    \u00B7 Lice\n\\n    \u00B7 Nasal Congestion\n\\n    \u00B7 Nausea\n\\n    \u00B7 Nosebleed\n\\n    \u00B7 Painful Urination\n\\n    \u00B7 Pink Eye\n\\n    \u00B7 Poison Oak / Poison Ivy\n\\n    \u00B7 Rash\n\\n    \u00B7 Respiratory Infection\n\\n    \u00B7 Rolled Ankle\n\\n    \u00B7 Scabies\n\\n    \u00B7 Seborrheic Dermatitis (Dry Scalp)\n\\n    \u00B7 Skin Infection\n\\n    \u00B7 Sports Injuries\n\\n    \u00B7 Strep Throat\n\\n    \u00B7 Travel Medicine\n\\n    \u00B7 Upper Respiratory Infection\n\\n    \u00B7 Urinary Tract Infection\n\\n    \u00B7 Vaginal Itching\n\\n    \u00B7 Yeast Infection\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication (narcotics)\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone(s)\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\\n    \u00B7 Consults in languages other than English\n\\n    \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)" restype="string" datatype="x-objective-c">
         <source>Common reasons to use Virtual Consults\n\
@@ -62014,7 +62050,7 @@ Doctors are online ready to help.</source>
     \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
     \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
-        <target>在线咨询的常见问题：
+        <target state="translated">在线咨询的常见问题：
 \u00B7 腹部疼痛\n\
 \u00B7 急性支气管炎\n\
 \u00B7 急性结膜炎\n\
@@ -62108,7 +62144,7 @@ Doctors are online ready to help.</source>
     \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
                            \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
-        <target>进行在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+        <target state="translated">进行在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -62134,7 +62170,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="4" resname="Find a specialty" restype="string" datatype="x-objective-c">
         <source>Find a specialty</source>
-        <target>查找专科</target>
+        <target state="translated">查找专科</target>
       </trans-unit>
     </body>
   </file>
@@ -62142,11 +62178,11 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="5" resname="Please let us know how we&apos;re doing..." restype="string" datatype="x-objective-c">
         <source>Please let us know how we're doing...</source>
-        <target>请让我们了解我们的表现如何……</target>
+        <target state="translated">请让我们了解我们的表现如何……</target>
       </trans-unit>
       <trans-unit id="6" resname="Enjoying HealthTap?" restype="string" datatype="x-objective-c">
         <source>Enjoying HealthTap?</source>
-        <target>喜欢HealthTap？</target>
+        <target state="translated">喜欢HealthTap？</target>
       </trans-unit>
     </body>
   </file>
@@ -62154,11 +62190,11 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="9" resname="Create a {start}free, private{end} account or login" restype="string" datatype="x-objective-c">
         <source>Create a {start}free, private{end} account or login</source>
-        <target>创建一个{start}免费的私人{end}帐户或登录</target>
+        <target state="translated">创建一个{start}免费的私人{end}帐户或登录</target>
       </trans-unit>
       <trans-unit id="10" resname="You agree to our {start1}Terms{end1} and {start2}Privacy Policy{end2}" restype="string" datatype="x-objective-c">
         <source>You agree to our {start1}Terms{end1} and {start2}Privacy Policy{end2}</source>
-        <target>您同意我们的{start1}条款{end1} 和 {start2}隐私政策{end2}。</target>
+        <target state="translated">您同意我们的{start1}条款{end1} 和 {start2}隐私政策{end2}。</target>
       </trans-unit>
     </body>
   </file>
@@ -62622,45 +62658,45 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="1" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivitis\n•\tAcute Cystitis\n•\tAcute Pharyngitis\n•\tAcute Sinusitis\n•\tAllergies\n•\tAsthma (stable / non-emergency)\n•\tAthlete’s Foot\n•\tBack Pain\n•\tBee Sting\n•\tBladder infections\n•\tCellulitis (skin infection)\n•\tCold\n•\tCough\n•\tDepression\n•\tDiarrhea\n•\tDry Scalp\n•\tDry Skin (Eczema)\n•\tEye Irritation\n•\tFever\n•\tGenital Lesions\n•\tHay Fever\n•\tHeadache\n•\tHeartburn (Gastroesophageal Reflux Disease, or GERD)\n•\tInfluenza\n•\tLab Interpretation\n•\tLice\n•\tNasal Congestion\n•\tNausea\n•\tNosebleed\n•\tPainful Urination\n•\tPink Eye\n•\tPoison Oak / Poison Ivy\n•\tRash\n•\tRespiratory Infection\n•\tRolled Ankle\n•\tScabies\n•\tSeborrheic Dermatitis (Dry Scalp)\n•\tSkin Infection\n•\tSports Injuries\n•\tStrep Throat\n•\tTravel Medicine\n•\tUpper Respiratory Infection\n•\tUrinary Tract Infection\n•\tVaginal Itching\n•\tYeast Infection\n\n" restype="string" datatype="x-objective-c">
         <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivitis\n•\tAcute Cystitis\n•\tAcute Pharyngitis\n•\tAcute Sinusitis\n•\tAllergies\n•\tAsthma (stable / non-emergency)\n•\tAthlete’s Foot\n•\tBack Pain\n•\tBee Sting\n•\tBladder infections\n•\tCellulitis (skin infection)\n•\tCold\n•\tCough\n•\tDepression\n•\tDiarrhea\n•\tDry Scalp\n•\tDry Skin (Eczema)\n•\tEye Irritation\n•\tFever\n•\tGenital Lesions\n•\tHay Fever\n•\tHeadache\n•\tHeartburn (Gastroesophageal Reflux Disease, or GERD)\n•\tInfluenza\n•\tLab Interpretation\n•\tLice\n•\tNasal Congestion\n•\tNausea\n•\tNosebleed\n•\tPainful Urination\n•\tPink Eye\n•\tPoison Oak / Poison Ivy\n•\tRash\n•\tRespiratory Infection\n•\tRolled Ankle\n•\tScabies\n•\tSeborrheic Dermatitis (Dry Scalp)\n•\tSkin Infection\n•\tSports Injuries\n•\tStrep Throat\n•\tTravel Medicine\n•\tUpper Respiratory Infection\n•\tUrinary Tract Infection\n•\tVaginal Itching\n•\tYeast Infection\n\n</source>
-        <target>•\t腹痛\n•\t急性支气管炎\n•\t急性结膜炎\n•\t急性膀胱炎\n•\t急性咽炎\n•\t急性鼻窦炎\n•\t过敏\n•\t哮喘（稳定/非紧急）\n•\t足癣\n•\t背疼\n•\t蜂蜇伤\n•\t膀胱感染\n•\t蜂窝织炎（皮肤感染）\n•\t感冒\n•\t咳嗽\n•\t抑郁症\n•\t腹泻\n•\t干性头皮\n•\t干性皮肤（湿疹）\n•\t眼睛刺激性\n•\t发烧\n•\t生殖器损伤\n•\t花粉过敏\n•\t头痛\n•\t胃灼热（胃食管反流病或胃食管反流病）\n•\t流行性感冒\n•\t实验室分析结果的解释\n•\t虱子\n•\t鼻塞\n•\t恶心\n•\t鼻出血\n•\t尿痛\n•\t红眼病\n•\t毒栎/毒藤\n•\t皮疹\n•\t呼吸道感染\n•\t脚裸弯曲\n•\t疥疮\n•\t脂溢性皮炎（干性皮炎）\n•\t皮肤感染\n•\t运动损伤\n•\t链球菌性喉炎\n•\t旅游医学\n•\t上呼吸道感染\n•\t泌尿道感染\n•\t阴道瘙痒\n•\t宫颈感染\n\n</target>
+        <target state="translated">•\t腹痛\n•\t急性支气管炎\n•\t急性结膜炎\n•\t急性膀胱炎\n•\t急性咽炎\n•\t急性鼻窦炎\n•\t过敏\n•\t哮喘（稳定/非紧急）\n•\t足癣\n•\t背疼\n•\t蜂蜇伤\n•\t膀胱感染\n•\t蜂窝织炎（皮肤感染）\n•\t感冒\n•\t咳嗽\n•\t抑郁症\n•\t腹泻\n•\t干性头皮\n•\t干性皮肤（湿疹）\n•\t眼睛刺激性\n•\t发烧\n•\t生殖器损伤\n•\t花粉过敏\n•\t头痛\n•\t胃灼热（胃食管反流病或胃食管反流病）\n•\t流行性感冒\n•\t实验室分析结果的解释\n•\t虱子\n•\t鼻塞\n•\t恶心\n•\t鼻出血\n•\t尿痛\n•\t红眼病\n•\t毒栎/毒藤\n•\t皮疹\n•\t呼吸道感染\n•\t脚裸弯曲\n•\t疥疮\n•\t脂溢性皮炎（干性皮炎）\n•\t皮肤感染\n•\t运动损伤\n•\t链球菌性喉炎\n•\t旅游医学\n•\t上呼吸道感染\n•\t泌尿道感染\n•\t阴道瘙痒\n•\t宫颈感染\n\n</target>
         <note annotates="source">Common reasons to use virtual consults bullets full list</note>
       </trans-unit>
       <trans-unit id="2" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n\n\n" restype="string" datatype="x-objective-c">
         <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n\n\n</source>
-        <target>•\t腹痛\n•\t急性支气管炎\n•\t急性结膜炎\n•\t性膀胱炎\n\n\n</target>
+        <target state="translated">•\t腹痛\n•\t急性支气管炎\n•\t急性结膜炎\n•\t性膀胱炎\n\n\n</target>
         <note annotates="source">Common reasons to use virtual consults bullets full list</note>
       </trans-unit>
       <trans-unit id="3" resname="Common reasons to use Virtual Consults\n" restype="string" datatype="x-objective-c">
         <source>Common reasons to use Virtual Consults\n</source>
-        <target>使用在线咨询的常见理由\n</target>
+        <target state="translated">使用在线咨询的常见理由\n</target>
       </trans-unit>
       <trans-unit id="4" resname="Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n" restype="string" datatype="x-objective-c">
         <source>Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n</source>
-        <target>如果您认为您有紧急情况，请立即呼叫%@或您当地的紧急服务。 例如，如果您遇到以下任何医疗问题，请立即转到%@:\n\n</target>
+        <target state="translated">如果您认为您有紧急情况，请立即呼叫%@或您当地的紧急服务。 例如，如果您遇到以下任何医疗问题，请立即转到%@:\n\n</target>
         <note annotates="source">When not to use Virtual consults explanation</note>
       </trans-unit>
       <trans-unit id="5" resname="•\tChest pain or pressure\n•\tConvulsions or seizures\n•\tDifficulty breathing\n•\tMental health /  behavioral health / addiction issues\n•\tModerate to severe burns\n•\tPain medication (narcotics)\n•\tPoisoning\n•\tSerious head, neck, or back injury\n•\tSerious limb impairment or broken bone(s)\n•\tSignificant, uncontrolled bleeding\n•\tSuicide ideation\n•\tUnconsciousness\n•\tAny other critical or life-threatening situation\n\n" restype="string" datatype="x-objective-c">
         <source>•\tChest pain or pressure\n•\tConvulsions or seizures\n•\tDifficulty breathing\n•\tMental health /  behavioral health / addiction issues\n•\tModerate to severe burns\n•\tPain medication (narcotics)\n•\tPoisoning\n•\tSerious head, neck, or back injury\n•\tSerious limb impairment or broken bone(s)\n•\tSignificant, uncontrolled bleeding\n•\tSuicide ideation\n•\tUnconsciousness\n•\tAny other critical or life-threatening situation\n\n</source>
-        <target>•\t胸痛或胸口郁闷\n•\t痉挛或癫痫\n•\t呼吸困难\n•\t心理健康/行为健康/成瘾问题\n•\t中度至重度烧伤\n•\t疼痛药（麻醉剂）\n•\t中毒\n•\t严重的头疼，脖子疼或背部受伤\n•\t严重肢体损伤或骨折\n•\t重大的，不可控的失血\n•\t自杀倾向\n•\t无意识\n
+        <target state="translated">•\t胸痛或胸口郁闷\n•\t痉挛或癫痫\n•\t呼吸困难\n•\t心理健康/行为健康/成瘾问题\n•\t中度至重度烧伤\n•\t疼痛药（麻醉剂）\n•\t中毒\n•\t严重的头疼，脖子疼或背部受伤\n•\t严重肢体损伤或骨折\n•\t重大的，不可控的失血\n•\t自杀倾向\n•\t无意识\n
 •\t所有其他严重或危及生命的情况</target>
         <note annotates="source">When not to use Virtual consults bullets</note>
       </trans-unit>
       <trans-unit id="6" resname="What not to expect\n" restype="string" datatype="x-objective-c">
         <source>What not to expect\n</source>
-        <target>不应发生\n</target>
+        <target state="translated">不应发生\n</target>
       </trans-unit>
       <trans-unit id="7" resname="•\tAny prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n•\tAny prescriptions for medications that are restricted by individual states\n•\tAny prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n•\tConsults in languages other than English\n•\tInstant responses to inbox / message consults (consider video consults with available doctors for faster care)" restype="string" datatype="x-objective-c">
         <source>•\tAny prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n•\tAny prescriptions for medications that are restricted by individual states\n•\tAny prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n•\tConsults in languages other than English\n•\tInstant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
-        <target>•\t麻醉品或DEA（禁毒执法管理）受控物质（附表I, II, III, IV）\n•\t所有受个别国家限制的药物处方\n•\t所有精神病学或生活方式药物处方（例如，饮食或勃起功能障碍药物）\n•\t用英语以外的其它语言咨询\n•\t即时回复收件箱/消息咨询（考虑与空闲医生的视频咨询，以获得更快的医护）</target>
+        <target state="translated">•\t麻醉品或DEA（禁毒执法管理）受控物质（附表I, II, III, IV）\n•\t所有受个别国家限制的药物处方\n•\t所有精神病学或生活方式药物处方（例如，饮食或勃起功能障碍药物）\n•\t用英语以外的其它语言咨询\n•\t即时回复收件箱/消息咨询（考虑与空闲医生的视频咨询，以获得更快的医护）</target>
         <note annotates="source">What not to expect bullets</note>
       </trans-unit>
       <trans-unit id="8" resname="remove" restype="string" datatype="x-objective-c">
         <source>remove</source>
-        <target>删除</target>
+        <target state="translated">删除</target>
       </trans-unit>
       <trans-unit id="9" resname="Please enter 1 or more words" restype="string" datatype="x-objective-c">
         <source>Please enter 1 or more words</source>
-        <target>请输入1个以上单词</target>
+        <target state="translated">请输入1个以上单词</target>
       </trans-unit>
     </body>
   </file>
@@ -62668,12 +62704,12 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="12" resname="Hello!" restype="string" datatype="x-objective-c">
         <source>Hello!</source>
-        <target>您好！</target>
+        <target state="translated">您好！</target>
         <note annotates="source">symptom triage tutorial header string</note>
       </trans-unit>
       <trans-unit id="13" resname="I&apos;m Dr. A.I., and I work with over 94,000 doctors to help understand your symptoms and show you the best path to feeling good. Let&apos;s get started!" restype="string" datatype="x-objective-c">
         <source>I'm Dr. A.I., and I work with over 94,000 doctors to help understand your symptoms and show you the best path to feeling good. Let's get started!</source>
-        <target>我是A.I.医生，我与超过94,000名医生合作，帮助了解您的症状，并告诉您最好的感觉良好的方法。 让我们开始吧！</target>
+        <target state="translated">我是A.I.医生，我与超过94,000名医生合作，帮助了解您的症状，并告诉您最好的感觉良好的方法。 让我们开始吧！</target>
         <note annotates="source">symptom triage tutorial subheader string</note>
       </trans-unit>
     </body>
@@ -62682,7 +62718,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="14" resname="Tap and drag" restype="string" datatype="x-objective-c">
         <source>Tap and drag</source>
-        <target>点按并拖动</target>
+        <target state="translated">点按并拖动</target>
         <note annotates="source">title of body picker while doing a long press zoom</note>
       </trans-unit>
     </body>
@@ -62691,7 +62727,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="15" resname="Helping you to live a healthier, happier, longer life!" restype="string" datatype="x-objective-c">
         <source>Helping you to live a healthier, happier, longer life!</source>
-        <target>帮助您生活的更健康，更快乐，更长寿！</target>
+        <target state="translated">帮助您生活的更健康，更快乐，更长寿！</target>
       </trans-unit>
     </body>
   </file>
@@ -62699,7 +62735,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="16" resname="Password recovery" restype="string" datatype="x-objective-c">
         <source>Password recovery</source>
-        <target>找回密码</target>
+        <target state="translated">找回密码</target>
       </trans-unit>
     </body>
   </file>
@@ -62707,7 +62743,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="17" resname="\n\n%@ approved this translation of %@" restype="string" datatype="x-objective-c">
         <source>\n\n%@ approved this translation of %@</source>
-        <target>\n\n%@已批准此翻译%@</target>
+        <target state="translated">\n\n%@已批准此翻译%@</target>
       </trans-unit>
     </body>
   </file>
@@ -62715,7 +62751,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="18" resname="In Dr. %@&apos;s referral network" restype="string" datatype="x-objective-c">
         <source>In Dr. %@'s referral network</source>
-        <target>在医生%@的转诊网络</target>
+        <target state="translated">在医生%@的转诊网络</target>
       </trans-unit>
     </body>
   </file>
@@ -62723,7 +62759,7 @@ Doctors are online ready to help.</source>
     <body>
       <trans-unit id="19" resname="We&apos;re sorry but we are unable to contact the server. Please try again in a bit." restype="string" datatype="x-objective-c">
         <source>We're sorry but we are unable to contact the server. Please try again in a bit.</source>
-        <target>很抱歉，我们无法与服器联络。 请稍后重新尝试。</target>
+        <target state="translated">很抱歉，我们无法与服器联络。 请稍后重新尝试。</target>
       </trans-unit>
     </body>
   </file>
