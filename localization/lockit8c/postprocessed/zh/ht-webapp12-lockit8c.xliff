@@ -24731,7 +24731,7 @@
       </trans-unit>
       <trans-unit id="4880" resname="r845396312" restype="string" datatype="ruby">
         <source>Grandfather</source>
-        <target state="translated">爷爷/祖父</target>
+        <target state="translated">爷爷/外公</target>
       </trans-unit>
       <trans-unit id="4881" resname="r950610981" restype="string" datatype="ruby">
         <source>Grandson</source>
@@ -24771,7 +24771,7 @@
       </trans-unit>
       <trans-unit id="4890" resname="r366837963" restype="string" datatype="ruby">
         <source>Grandmother</source>
-        <target state="translated">奶奶/祖母</target>
+        <target state="translated">奶奶/外婆</target>
       </trans-unit>
       <trans-unit id="4891" resname="r1054716214" restype="string" datatype="ruby">
         <source>Granddaughter</source>
@@ -41052,11 +41052,11 @@
     <body>
       <trans-unit id="9531" resname="Would you like to video or text chat with {name}, a top Specialist, with {years} years of experience?" restype="string" datatype="javascript">
         <source>Would you like to video or text chat with {name}, a top Specialist, with {years} years of experience?</source>
-        <target state="translated">您要与拥有{years} 多年经验的顶级专家{name}视频或文本聊天吗？</target>
+        <target state="accepted">您要与拥有{years} 年经验的顶级专家{name}视频或文本聊天吗？</target>
       </trans-unit>
       <trans-unit id="9532" resname="Would you like to video or text chat with {name}, a top Specialist?" restype="string" datatype="javascript">
         <source>Would you like to video or text chat with {name}, a top Specialist?</source>
-        <target state="translated">您要与拥有{years} 多年经验的顶级专家{name}视频或文本聊天吗？</target>
+        <target state="accepted">您要与拥有多年经验的顶级专家{name}视频或文本聊天吗？</target>
       </trans-unit>
       <trans-unit id="9533" resname="Do you want to video or text chat with a top doctor?" restype="string" datatype="javascript">
         <source>Do you want to video or text chat with a top doctor?</source>

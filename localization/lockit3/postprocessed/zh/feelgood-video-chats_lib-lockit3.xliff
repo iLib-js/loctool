@@ -1030,7 +1030,7 @@
       </trans-unit>
       <trans-unit id="236" resname="action_share_through_sms" restype="string" datatype="x-android-resource">
         <source>SMS</source>
-        <target>SMS</target>
+        <target>短信</target>
       </trans-unit>
       <trans-unit id="237" resname="action_share_through_link" restype="string" datatype="x-android-resource">
         <source>Share the link</source>
@@ -1055,7 +1055,7 @@
       </trans-unit>
       <trans-unit id="242" resname="title_SMS" restype="string" datatype="x-android-resource">
         <source>SMS</source>
-        <target>SMS</target>
+        <target>短信</target>
       </trans-unit>
       <trans-unit id="243" resname="title_Share_the_link" restype="string" datatype="x-android-resource">
         <source>Share the link</source>
