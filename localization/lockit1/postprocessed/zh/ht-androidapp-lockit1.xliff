@@ -1306,7 +1306,7 @@
       </trans-unit>
       <trans-unit id="244" resname="r909283218" restype="string" datatype="java">
         <source>Can't find an application for SMS</source>
-        <target>没有找到可以发送短信的应用</target>
+        <target state="accepted">没有找到可以发送短信的应用</target>
       </trans-unit>
     </body>
   </file>
@@ -4936,7 +4936,7 @@
       </trans-unit>
       <trans-unit id="963" resname="appointment_short" restype="string" datatype="x-android-resource">
         <source>Virtual Appt</source>
-        <target>在线预约</target>
+        <target state="accepted">在线预约</target>
       </trans-unit>
       <trans-unit id="964" resname="make_appointment" restype="string" datatype="x-android-resource">
         <source>Make Appointment</source>
@@ -6140,7 +6140,7 @@
       </trans-unit>
       <trans-unit id="1232" resname="transcript_similar_question_title" restype="string" datatype="x-android-resource">
         <source>We hope you found %s's advice helpful. To learn more, check related insights by other doctors</source>
-        <target>我们希望您得到了%s's 有帮助的建议。想了解更多，请查看其他医生的相关见解</target>
+        <target>我们希望您得到了%s有帮助的建议。想了解更多，请查看其他医生的相关见解</target>
       </trans-unit>
       <trans-unit id="1233" resname="system_message_started" restype="string" datatype="x-android-resource">
         <source>Started at %s</source>
@@ -6504,7 +6504,7 @@
       </trans-unit>
       <trans-unit id="1323" resname="share_dialog_sms" restype="string" datatype="x-android-resource">
         <source>Your device does not have a SMS account set up yet.</source>
-        <target>您的设备尚未设置短信帐户。</target>
+        <target state="accepted">您的设备尚未设置短信帐户。</target>
       </trans-unit>
       <trans-unit id="1324" resname="share_dialog_email" restype="string" datatype="x-android-resource">
         <source>Your device does not have an email account set up yet.</source>
@@ -8004,7 +8004,7 @@
       </trans-unit>
       <trans-unit id="1698" resname="concierge_incentive_text" restype="string" datatype="x-android-resource">
         <source>{doc_prefix} {doc_last_name} appreciates your gratitude and would like to offer you a discount on your\u00a0first\u00a0consult.</source>
-        <target>您的致谢对{doc_prefix} {doc_last_name} 是很大的鼓舞，他／她愿意为您第一次咨询提供折扣。</target>
+        <target state="accepted">您的致谢对{doc_prefix} {doc_last_name} 是很大的鼓舞，他／她愿意为您第一次咨询提供折扣。</target>
       </trans-unit>
       <trans-unit id="1699" resname="concierge_incentive_banner" restype="string" datatype="x-android-resource">
         <source>One time offer - $5 off!</source>
@@ -8480,7 +8480,7 @@
       </trans-unit>
       <trans-unit id="1814" resname="compose_consult_translator_description" restype="string" datatype="x-android-resource">
         <source>Would you like to invite a translator to join this consult? An additional ${price}</source>
-        <target>如果您想用中文沟通，请确认您的医生档案里显示TA会说中文，不然的话我们建议您邀请同声翻译加入这次咨询。需额外支付${price}</target>
+        <target state="accepted">如果您想用中文沟通，请确认您的医生档案里显示TA会说中文，不然的话我们建议您邀请同声翻译加入这次咨询。需额外支付${price}</target>
       </trans-unit>
       <trans-unit id="1815" resname="compose_consult_add_translator" restype="string" datatype="x-android-resource">
         <source>Add translator</source>
@@ -10324,7 +10324,7 @@
       </trans-unit>
       <trans-unit id="2275" resname="text_Sms" restype="string" datatype="x-android-resource">
         <source>Sms</source>
-        <target>短信</target>
+        <target state="accepted">短信</target>
       </trans-unit>
       <trans-unit id="2276" resname="hint_Share_you_thoughts_with_doctors_and_followers" restype="string" datatype="x-android-resource">
         <source>Share you thoughts with doctors and followers</source>

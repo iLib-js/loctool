@@ -478,7 +478,7 @@
       </trans-unit>
       <trans-unit id="97" resname="%@, %ld years in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld years in practice</source>
-        <target>%@, %ld 年诊疗经验的专家</target>
+        <target state="accepted">%@, %ld 年诊疗经验的专家</target>
       </trans-unit>
       <trans-unit id="98" resname="%@, %ld year in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld year in practice</source>

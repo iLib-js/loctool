@@ -277,7 +277,7 @@ us in the App Store :)</source>
       </trans-unit>
       <trans-unit id="hon-2k-uh7.normalTitle" resname="hon-2k-uh7.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>留言</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Send note"; ObjectID = "hon-2k-uh7";</note>
       </trans-unit>
       <trans-unit id="zEZ-Fm-5PZ.text" resname="zEZ-Fm-5PZ.text" restype="string" datatype="x-xib">
@@ -4697,7 +4697,7 @@ and more</source>
     <body>
       <trans-unit id="0Es-QU-ucF.text" resname="0Es-QU-ucF.text" restype="string" datatype="x-xib">
         <source>Following</source>
-        <target>已关注</target>
+        <target state="accepted">已关注</target>
         <note annotates="source">Class = "UILabel"; text = "Following"; ObjectID = "0Es-QU-ucF";</note>
       </trans-unit>
       <trans-unit id="Nxc-Vd-WRw.text" resname="Nxc-Vd-WRw.text" restype="string" datatype="x-xib">
@@ -7228,7 +7228,7 @@ available in %@</source>
       </trans-unit>
       <trans-unit id="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately." resname="Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately." restype="string" datatype="x-objective-c">
         <source>Answers on HealthTap are not intended for individual diagnosis, treatment or prescription. If you think you have a medical emergency, call %@ or your local emergency service immediately.</source>
-        <target>HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立即打电话给%@或当地应急服务人员。</target>
+        <target state="accepted">HealthTap上的回答并不用于个人诊断、治疗或处方。如果您认为您需要紧急治疗，请立即打电话给%@或当地应急服务人员。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Any primary care doctor" resname="Any primary care doctor" restype="string" datatype="x-objective-c">
@@ -8846,7 +8846,7 @@ subscription</source>
       </trans-unit>
       <trans-unit id="Facebook" resname="Facebook" restype="string" datatype="x-objective-c">
         <source>Facebook</source>
-        <target>脸书</target>
+        <target state="accepted">脸书</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Failed to access remote files" resname="Failed to access remote files" restype="string" datatype="x-objective-c">
@@ -8979,7 +8979,7 @@ I'd like to accomplish my goal of...</source>
       </trans-unit>
       <trans-unit id="Following" resname="Following" restype="string" datatype="x-objective-c">
         <source>Following</source>
-        <target>已关注</target>
+        <target state="accepted">已关注</target>
         <note annotates="source">following button label
    Label to indicate that user is already following a topic
    label to indticate user is already following a given topic</note>
@@ -10627,7 +10627,7 @@ educational answers</source>
       </trans-unit>
       <trans-unit id="Pay &amp; Book" resname="Pay &amp; Book" restype="string" datatype="x-objective-c">
         <source>Pay &amp; Book</source>
-        <target>支付并预定</target>
+        <target state="accepted">支付并预定</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Pay &amp; Continue" resname="Pay &amp; Continue" restype="string" datatype="x-objective-c">
@@ -15408,7 +15408,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>留言</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Send note"; ObjectID = "u1p-9T-OIc";</note>
       </trans-unit>
     </body>
@@ -15477,7 +15477,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>留言</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Send note"; ObjectID = "u1p-9T-OIc";</note>
       </trans-unit>
     </body>
@@ -15536,7 +15536,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="u1p-9T-OIc.normalTitle" resname="u1p-9T-OIc.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>留言</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Send note"; ObjectID = "u1p-9T-OIc";</note>
       </trans-unit>
     </body>
@@ -16715,7 +16715,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="oQj-RC-pXP.text" resname="oQj-RC-pXP.text" restype="string" datatype="x-xib">
         <source>Following</source>
-        <target>已关注</target>
+        <target state="accepted">已关注</target>
         <note annotates="source">Class = "UILabel"; text = "Following"; ObjectID = "oQj-RC-pXP";</note>
       </trans-unit>
       <trans-unit id="pq3-hc-t6G.text" resname="pq3-hc-t6G.text" restype="string" datatype="x-xib">
@@ -20194,7 +20194,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
       </trans-unit>
       <trans-unit id="sQO-Yv-5Ru.normalTitle" resname="sQO-Yv-5Ru.normalTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>留言</target>
+        <target state="accepted">留言</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Send note"; ObjectID = "sQO-Yv-5Ru";</note>
       </trans-unit>
       <trans-unit id="t19-M2-NXs.text" resname="t19-M2-NXs.text" restype="string" datatype="x-xib">

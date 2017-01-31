@@ -12,186 +12,186 @@
     <body>
       <trans-unit id="5" resname="r398172866" restype="string" datatype="x-android-resource">
         <source>Error:</source>
-        <target>错误：</target>
+        <target state="translated">错误：</target>
       </trans-unit>
       <trans-unit id="6" resname="r465894884" restype="string" datatype="x-android-resource">
         <source>Test Name:</source>
-        <target>测试姓名：</target>
+        <target state="translated">测试姓名：</target>
       </trans-unit>
       <trans-unit id="8" resname="r704587734" restype="string" datatype="x-android-resource">
         <source>Current Version:</source>
-        <target>当前版本：</target>
+        <target state="translated">当前版本：</target>
       </trans-unit>
       <trans-unit id="9" resname="r419221095" restype="string" datatype="x-android-resource">
         <source>Size:</source>
-        <target>大小：</target>
+        <target state="translated">大小：</target>
       </trans-unit>
       <trans-unit id="10" resname="r1043822317" restype="string" datatype="x-android-resource">
         <source>In brief:</source>
-        <target>概要：</target>
+        <target state="translated">概要：</target>
       </trans-unit>
       <trans-unit id="13" resname="r901641921" restype="string" datatype="x-android-resource">
         <source>per minute\n5-minute minimum</source>
-        <target>每5分钟\n至少5分钟</target>
+        <target state="translated">每5分钟\n至少5分钟</target>
       </trans-unit>
       <trans-unit id="14" resname="r194999707" restype="string" datatype="x-android-resource">
         <source>{start}Your total{end}No commitment, cancel anytime</source>
-        <target>{start}您的总计{end}没有任何承诺，可以随时取消</target>
+        <target state="translated">{start}您的总计{end}没有任何承诺，可以随时取消</target>
       </trans-unit>
       <trans-unit id="15" resname="r923373309" restype="string" datatype="x-android-resource">
         <source>Your total for 1 consult</source>
-        <target>您总计1次咨询</target>
+        <target state="translated">您总计1次咨询</target>
       </trans-unit>
       <trans-unit id="16" resname="r580375147" restype="string" datatype="x-android-resource">
         <source>Your card ending in *{four_digit_number} has expired. \n Please add a new one</source>
-        <target>您尾号为*{four_digit_number}的银行卡已过期。\n 请添加新的银行卡</target>
+        <target state="translated">您尾号为*{four_digit_number}的银行卡已过期。\n 请添加新的银行卡</target>
       </trans-unit>
       <trans-unit id="17" resname="r715343662" restype="string" datatype="x-android-resource">
         <source>{start}Your total{end}\nFor additional options</source>
-        <target>{start}您总计{end}\n为其他选项</target>
+        <target state="translated">{start}您总计{end}\n为其他选项</target>
       </trans-unit>
       <trans-unit id="18" resname="r947674940" restype="string" datatype="x-android-resource">
         <source>Failed while take picture:</source>
-        <target>拍照时出错：</target>
+        <target state="translated">拍照时出错：</target>
       </trans-unit>
       <trans-unit id="19" resname="r119248257" restype="string" datatype="x-android-resource">
         <source>\nPlease restart the app/device and try again.</source>
-        <target>\n请重新启动应用程序或设备，然后重新尝试。</target>
+        <target state="translated">\n请重新启动应用程序或设备，然后重新尝试。</target>
       </trans-unit>
       <trans-unit id="22" resname="r601449928" restype="string" datatype="x-android-resource">
         <source>What to Ask Your Doc:</source>
-        <target>向您的医生咨询什么：</target>
+        <target state="translated">向您的医生咨询什么：</target>
       </trans-unit>
       <trans-unit id="23" resname="r412842851" restype="string" datatype="x-android-resource">
         <source>Haiku:</source>
-        <target>俳句：</target>
+        <target state="translated">俳句：</target>
       </trans-unit>
       <trans-unit id="24" resname="r548900803" restype="string" datatype="x-android-resource">
         <source>Myth:</source>
-        <target>误区：</target>
+        <target state="translated">误区：</target>
       </trans-unit>
       <trans-unit id="25" resname="r142482154" restype="string" datatype="x-android-resource">
         <source>agreed with {author_name}'s tip on \n{topic_name}</source>
-        <target>同意{author_name}在\n{topic_name}的小贴士</target>
+        <target state="translated">同意{author_name}在\n{topic_name}的小贴士</target>
         <note annotates="source">Subject of this phrase is a doctor's name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
       <trans-unit id="28" resname="r8034615" restype="string" datatype="x-android-resource">
         <source>Failed to send kudos!</source>
-        <target>点赞失败！</target>
+        <target state="translated">点赞失败！</target>
       </trans-unit>
       <trans-unit id="29" resname="r279921341" restype="string" datatype="x-android-resource">
         <source>Not finding what you need?</source>
-        <target>没有找到您需要的？</target>
+        <target state="translated">没有找到您需要的？</target>
       </trans-unit>
       <trans-unit id="32" resname="r383257904" restype="string" datatype="x-android-resource">
         <source>Practicing:</source>
-        <target>诊疗中：</target>
+        <target state="translated">诊疗中：</target>
       </trans-unit>
       <trans-unit id="33" resname="r437047272" restype="string" datatype="x-android-resource">
         <source>Question not posted</source>
-        <target>问题未发布</target>
+        <target state="translated">问题未发布</target>
       </trans-unit>
       <trans-unit id="36" resname="r2882924" restype="string" datatype="x-android-resource">
         <source>,</source>
-        <target>,</target>
+        <target state="translated">,</target>
       </trans-unit>
       <trans-unit id="37" resname="r338685022" restype="string" datatype="x-android-resource">
         <source>Hi, Dr {doctor_name}!\n</source>
-        <target>您好，{doctor_name}医生！\n</target>
+        <target state="translated">您好，{doctor_name}医生！\n</target>
       </trans-unit>
       <trans-unit id="38" resname="r9796713" restype="string" datatype="x-android-resource">
         <source>To log in as a doctor, please download\n</source>
-        <target>要以医生身份登录，请下载\n</target>
+        <target state="translated">要以医生身份登录，请下载\n</target>
       </trans-unit>
       <trans-unit id="49" resname="r50442212" restype="string" datatype="x-android-resource">
         <source>Failed updating profile!</source>
-        <target>更新个人资料失败！</target>
+        <target state="translated">更新个人资料失败！</target>
       </trans-unit>
       <trans-unit id="50" resname="r37614480" restype="string" datatype="x-android-resource">
         <source>Failed sending request!</source>
-        <target>发送请求失败！</target>
+        <target state="translated">发送请求失败！</target>
       </trans-unit>
       <trans-unit id="51" resname="r843399816" restype="string" datatype="x-android-resource">
         <source>There are no checklists for this goal yet.\nWant a personalized checklist?</source>
-        <target>没有这个目标的清单。\n想要专属于您的清单吗？</target>
+        <target state="translated">没有这个目标的清单。\n想要专属于您的清单吗？</target>
       </trans-unit>
       <trans-unit id="53" resname="r410094745" restype="string" datatype="x-android-resource">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target>您有后续问题吗？立即在线询问医生：</target>
+        <target state="translated">您有后续问题吗？立即在线询问医生：</target>
       </trans-unit>
       <trans-unit id="54" resname="r475478276" restype="string" datatype="x-android-resource">
         <source>{name}'s</source>
-        <target>{name}的</target>
+        <target state="translated">{name}的</target>
       </trans-unit>
       <trans-unit id="55" resname="r390005620" restype="string" datatype="x-android-resource">
         <source>{approver_name} agreed with {author_name}'s checklist</source>
-        <target>{approver_name}同意{author_name}的清单</target>
+        <target state="translated">{approver_name}同意{author_name}的清单</target>
       </trans-unit>
       <trans-unit id="56" resname="r984143101" restype="string" datatype="x-android-resource">
         <source>Checklist:</source>
-        <target>清单：</target>
+        <target state="translated">清单：</target>
       </trans-unit>
       <trans-unit id="58" resname="r30778288" restype="string" datatype="x-android-resource">
         <source>{agreer_name} agrees with {answerer_name}'s answer</source>
-        <target>{agreer_name}同意{answerer_name}的回答</target>
+        <target state="translated">{agreer_name}同意{answerer_name}的回答</target>
       </trans-unit>
       <trans-unit id="59" resname="r153759784" restype="string" datatype="x-android-resource">
         <source>{commenter_name} commented on {answerer_name}'s answer</source>
-        <target>{commenter_name}评论了{answerer_name}的回答</target>
+        <target state="translated">{commenter_name}评论了{answerer_name}的回答</target>
       </trans-unit>
       <trans-unit id="60" resname="r920181258" restype="string" datatype="x-android-resource">
         <source>Does {first_name}'s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
-        <target>{first_name}健在的祖父母、父母或兄弟姐妹有什么重大医学病症吗？（危及生命还是其他情况？）</target>
+        <target state="translated">{first_name}健在的祖父母、父母或兄弟姐妹有什么重大医学病症吗？（危及生命还是其他情况？）</target>
       </trans-unit>
       <trans-unit id="61" resname="r779525598" restype="string" datatype="x-android-resource">
         <source>What is {first_name}'s height and weight?</source>
-        <target>{first_name}的身高和体重？</target>
+        <target state="translated">{first_name}的身高和体重？</target>
       </trans-unit>
       <trans-unit id="62" resname="r595763610" restype="string" datatype="x-android-resource">
         <source>What is {first_name}'s relationship to you</source>
-        <target>{first_name}与您的关系是什么？</target>
+        <target state="translated">{first_name}与您的关系是什么？</target>
       </trans-unit>
       <trans-unit id="63" resname="r116490053" restype="string" datatype="x-android-resource">
         <source>Please share {first_name}'s obstetrics/pregnancy history</source>
-        <target>请分享{first_name}的分娩/怀孕史</target>
+        <target state="translated">请分享{first_name}的分娩/怀孕史</target>
       </trans-unit>
       <trans-unit id="65" resname="r178597753" restype="string" datatype="x-android-resource">
         <source>What is {first_name}'s ethnicity?</source>
-        <target>{first_name}的民族？</target>
+        <target state="translated">{first_name}的民族？</target>
       </trans-unit>
       <trans-unit id="66" resname="r482433768" restype="string" datatype="x-android-resource">
         <source>How would you classify {first_name}'s consumption of alcohol?</source>
-        <target>您认为{first_name}的酒量如何？</target>
+        <target state="translated">您认为{first_name}的酒量如何？</target>
       </trans-unit>
       <trans-unit id="68" resname="r287900893" restype="string" datatype="x-android-resource">
         <source>Thank you!</source>
-        <target>谢谢您！</target>
+        <target state="translated">谢谢您！</target>
       </trans-unit>
       <trans-unit id="74" resname="r863086007" restype="string" datatype="x-android-resource">
         <source>We appreciate you bringing this to our attention.</source>
-        <target>我们感谢您提醒我们注意。</target>
+        <target state="translated">我们感谢您提醒我们注意。</target>
       </trans-unit>
       <trans-unit id="77" resname="r252543260" restype="string" datatype="x-android-resource">
         <source>Question:</source>
-        <target>问题：</target>
+        <target state="translated">问题：</target>
         <note annotates="source">Refers to a question previously posted by the user, followed by an error message.</note>
       </trans-unit>
       <trans-unit id="79" resname="r1018816419" restype="string" datatype="x-android-resource">
         <source>Failed performing payment request. Error code:</source>
-        <target>执行付款要求失败。错误编码：</target>
+        <target state="translated">执行付款要求失败。错误编码：</target>
       </trans-unit>
       <trans-unit id="89" resname="r884996706" restype="string" datatype="x-android-resource">
         <source>One consult\t\t\t${0}</source>
-        <target>一次咨询\t\t\t${0}</target>
+        <target state="translated">一次咨询\t\t\t${0}</target>
         <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>
       </trans-unit>
       <trans-unit id="90" resname="r904183721" restype="string" datatype="x-android-resource">
         <source>As this appointment is less than 24 hours away, it cannot be refunded if cancelled now.</source>
-        <target>由于此预约不到24小时，如果现在取消预订，将不予退还。</target>
+        <target state="translated">由于此预约不到24小时，如果现在取消预订，将不予退还。</target>
       </trans-unit>
       <trans-unit id="91" resname="r892816468" restype="string" datatype="x-android-resource">
         <source>Failed to share on Facebook:</source>
-        <target>在Facebook上分享失败：</target>
+        <target state="translated">在Facebook上分享失败：</target>
       </trans-unit>
     </body>
   </file>

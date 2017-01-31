@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="34" resname="r563885918" restype="string" datatype="java">
         <source>Ask {doctor_name} a question...</source>
-        <target>询问{doctor_name}一个问题...</target>
+        <target state="translated">询问{doctor_name}一个问题...</target>
         <note annotates="source">{0} is a name prefix, such as Dr. Jr. Sr. etc. {1} is the last name of a doctor.</note>
       </trans-unit>
     </body>
@@ -13,7 +13,7 @@
     <body>
       <trans-unit id="37" resname="body_fetus" restype="string" datatype="x-android-resource">
         <source>Fetus</source>
-        <target>胎儿</target>
+        <target state="translated">胎儿</target>
       </trans-unit>
       <trans-unit id="2457" resname="symptom_triage_generic_disclaimer_text" restype="string" datatype="x-android-resource">
         <source>The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. “Dr. A.I.” is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See Additional Information.</source>
