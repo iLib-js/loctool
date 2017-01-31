@@ -28226,9 +28226,9 @@
         <source>Sorry, something went wrong with your request</source>
         <target>Lo sentimos, algo salió mal con tu solicitud</target>
       </trans-unit>
-      <trans-unit id="5593" resname="Earn {span_tag_start}{points}{span_tag_end} points \\n            and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
-        <source>Earn {span_tag_start}{points}{span_tag_end} points \ and a boost in your Helpfulness and DocScores.</source>
-        <target>Gana {span_tag_start}{points}{span_tag_end} puntos \ y un impulso a tu Utilidad y DocScores.</target>
+      <trans-unit id="5593" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
+        <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
+        <target>Gana {span_tag_start}{points}{span_tag_end} puntos  y un impulso a tu Utilidad y DocScores.</target>
       </trans-unit>
       <trans-unit id="5594" resname="*To receive HealthTap Credit and a responsiveness boost please answer private questions within 72 hours." restype="string" datatype="javascript">
         <source>*To receive HealthTap Credit and a responsiveness boost please answer private questions within 72 hours.</source>
@@ -28238,9 +28238,9 @@
         <source>CREDITS*</source>
         <target>CRÉDITOS*</target>
       </trans-unit>
-      <trans-unit id="5596" resname="*HealthTap credits are not awarded for clarifications, appointment requests, \\n              responses sent after 72 hours of receiving a patient message or when a patient uses \\n              your promo code for payment." restype="string" datatype="javascript">
-        <source>*HealthTap credits are not awarded for clarifications, appointment requests, \ responses sent after 72 hours of receiving a patient message or when a patient uses \ your promo code for payment.</source>
-        <target>*Créditos de HealthTap no se dan por clarificaciones, solicitudes de citas, \ respuestas enviadas después de 72 horas de recibir un mensaje de paciente o cuando un paciente usa \ tu código promocional como pago.</target>
+      <trans-unit id="5596" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
+        <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
+        <target>*Créditos de HealthTap no se dan por clarificaciones, solicitudes de citas,  respuestas enviadas después de 72 horas de recibir un mensaje de paciente o cuando un paciente usa  tu código promocional como pago.</target>
       </trans-unit>
     </body>
   </file>
@@ -28374,9 +28374,9 @@
         <source>FEATURED</source>
         <target>DESTACADO</target>
       </trans-unit>
-      <trans-unit id="5625" resname="HealthTap is for informational purposes only. \\n          Content on HealthTap (including answers) should not be used for medical advice, \\n          diagnosis, or treatment, and interactions on HealthTap do not create a \\n          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \\n          in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you \\n          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
-        <source>HealthTap is for informational purposes only. \ Content on HealthTap (including answers) should not be used for medical advice, \ diagnosis, or treatment, and interactions on HealthTap do not create a \ doctor-patient relationship. Never disregard or delay seeking professional medical advice \ in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you \ think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target>HealthTap es solo para propósitos informativos. \ Contenido en HealthTap (incluyendo respuestas) no deberá ser usado para consejo médico, \ diagnóstico o tratamiento, e interacciones en HealthTap no crean una relación \ médico - paciente. Nunca ignores o retrases la búsqueda de consejo médico profesional \ en persona por ninguna cosa en HealthTap. Llama a tu doctor o al 911 (en los EE.UU.) si \ piensas que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
+      <trans-unit id="5625" resname="HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+        <target>HealthTap es solo para propósitos informativos.  Contenido en HealthTap (incluyendo respuestas) no deberá ser usado para consejo médico,  diagnóstico o tratamiento, e interacciones en HealthTap no crean una relación  médico - paciente. Nunca ignores o retrases la búsqueda de consejo médico profesional  en persona por ninguna cosa en HealthTap. Llama a tu doctor o al 911 (en los EE.UU.) si  piensas que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
       <trans-unit id="5626" resname="agreeing.." restype="string" datatype="javascript">
         <source>agreeing..</source>
@@ -28710,13 +28710,13 @@
   </file>
   <file original="public/multipage/js/member/newMemberHome.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5694" resname="HealthTap is for informational purposes only.  Content on HealthTap \\n    (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions \\n    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \\n    medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if \\n    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
-        <source>HealthTap is for informational purposes only. Content on HealthTap \ (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions \ on HealthTap do not create a doctor-patient relationship. Never disregard or delay seeking professional \ medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if \ you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target>HealthTap es solo para propósitos informativos. Contenido en HealthTap \ (incluyendo respuestas) no deberá ser usado para consejo médico, diagnóstico o tratamiento, e interacciones \ en HealthTap no crean una relación médico - paciente. Nunca ignores o retrases la búsqueda de consejo médico \ profesional en persona por ninguna cosa en HealthTap. Llama a tu doctor o al 911 (en los EE.UU.) si \ piensas que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
+      <trans-unit id="5694" resname="HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+        <target>HealthTap es solo para propósitos informativos. Contenido en HealthTap  (incluyendo respuestas) no deberá ser usado para consejo médico, diagnóstico o tratamiento, e interacciones  en HealthTap no crean una relación médico - paciente. Nunca ignores o retrases la búsqueda de consejo médico  profesional en persona por ninguna cosa en HealthTap. Llama a tu doctor o al 911 (en los EE.UU.) si  piensas que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
-      <trans-unit id="5695" resname="Connect with women doctors who are also mothers for deeper, \\n    experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
-        <source>Connect with women doctors who are also mothers for deeper, \ experience-based answers to all your pregnancy and parenting questions.</source>
-        <target>Conéctate con “Mamás Doctoras” quienes han criado niños para sus propias profundas \ respuestas basadas en experiencia para tus preguntas de embarazo y crianza.</target>
+      <trans-unit id="5695" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
+        <source>Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions.</source>
+        <target>Conéctate con “Mamás Doctoras” quienes han criado niños para sus propias profundas  respuestas basadas en experiencia para tus preguntas de embarazo y crianza.</target>
       </trans-unit>
       <trans-unit id="5696" resname="Learn more ›" restype="string" datatype="javascript">
         <source>Learn more ›</source>
@@ -29570,9 +29570,9 @@
   </file>
   <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5837" resname="The compensation report from {start_date} to {end_date} is being generated. \\n   It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. \ It is gonna take a while. You will get an email once it is ready!</source>
-        <target>El reporte de compensación desde el {start_date} hasta el {end_date} está siendo generado. \ Va a tomar un rato. ¡Recibirás un correo electrónico cuando esté listo!</target>
+      <trans-unit id="5837" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
+        <target>El reporte de compensación desde el {start_date} hasta el {end_date} está siendo generado.  Va a tomar un rato. ¡Recibirás un correo electrónico cuando esté listo!</target>
       </trans-unit>
       <trans-unit id="5838" resname="The compensation report from {start_date} to {end_date} has been generated ! Please check your email!" restype="string" datatype="javascript">
         <source>The compensation report from {start_date} to {end_date} has been generated ! Please check your email!</source>
@@ -29946,8 +29946,8 @@
   </file>
   <file original="public/javascripts/controllers/user_questions/show_controller.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5980" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\\n            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
-        <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\ #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
+      <trans-unit id="5980" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
+        <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
         <target>1#¡Hay &lt;b&gt;{n} respuesta más&lt;/b&gt; de doctores para esta pregunta!|\ #¡Hay &lt;b&gt;{n} respuestas más&lt;/b&gt; de doctores para esta pregunta!</target>
       </trans-unit>
     </body>
@@ -30126,9 +30126,9 @@
         <source>Checking your connection</source>
         <target>Verificando tu conexión</target>
       </trans-unit>
-      <trans-unit id="6012" resname="We&apos;re sorry, but it seems your internet connection does not meet\\n                   our minimum requirement for consults. Please try again with a more stable network.\\n                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \\n                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
-        <source>We're sorry, but it seems your internet connection does not meet\ our minimum requirement for consults. Please try again with a more stable network.\ &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \ {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
-        <target>Lo sentimos, pero parece que tu conexión de internet no cumple\ con nuestros requerimientos mínimos para consultas. Por favor, intenta otra vez con una red más estable.\ &lt;br&gt;&lt;br&gt;Para apoyo, puedes contactarnos a \ {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
+      <trans-unit id="6012" resname="We&apos;re sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
+        <source>We're sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
+        <target>Lo sentimos, pero parece que tu conexión de internet no cumple\ con nuestros requerimientos mínimos para consultas. Por favor, intenta otra vez con una red más estable.\ &lt;br&gt;&lt;br&gt;Para apoyo, puedes contactarnos a  {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
       </trans-unit>
       <trans-unit id="6013" resname="Insufficient connection: Unable to receive virtual consults" restype="string" datatype="javascript">
         <source>Insufficient connection: Unable to receive virtual consults</source>
@@ -30666,9 +30666,9 @@
         <source>Processing</source>
         <target>Procesando</target>
       </trans-unit>
-      <trans-unit id="6450" resname="This email is already in use. Please {login_link_tag_start}log in{link_tag_end} \\n            or {forgotpw_link_tag_start}change password{link_tag_end}." restype="string" datatype="javascript">
-        <source>This email is already in use. Please {login_link_tag_start}log in{link_tag_end} \ or {forgotpw_link_tag_start}change password{link_tag_end}.</source>
-        <target>Este correo electrónico ya se está usando. Por favor, {login_link_tag_start}inicia sesión{link_tag_end} \ o {forgotpw_link_tag_start}cambia la contraseña{link_tag_end}.</target>
+      <trans-unit id="6450" resname="This email is already in use. Please {login_link_tag_start}log in{link_tag_end}             or {forgotpw_link_tag_start}change password{link_tag_end}." restype="string" datatype="javascript">
+        <source>This email is already in use. Please {login_link_tag_start}log in{link_tag_end}             or {forgotpw_link_tag_start}change password{link_tag_end}.</source>
+        <target>Este correo electrónico ya se está usando. Por favor, {login_link_tag_start}inicia sesión{link_tag_end}  o {forgotpw_link_tag_start}cambia la contraseña{link_tag_end}.</target>
       </trans-unit>
       <trans-unit id="6451" resname="What would you like to ask Dr. {last_name}?" restype="string" datatype="javascript">
         <source>What would you like to ask Dr. {last_name}?</source>
@@ -30678,9 +30678,9 @@
         <source>Getting started</source>
         <target>Empezando</target>
       </trans-unit>
-      <trans-unit id="6453" resname="This email is already in use. Please {login_link_tag_start}log in{link_tag_end} \\n          or {forgotpw_link_tag_start}change password{link_tag_end}." restype="string" datatype="javascript">
-        <source>This email is already in use. Please {login_link_tag_start}log in{link_tag_end} \ or {forgotpw_link_tag_start}change password{link_tag_end}.</source>
-        <target>Este correo electrónico ya se está usando. Por favor, {login_link_tag_start}inicia sesión{link_tag_end} \ o {forgotpw_link_tag_start}cambia la contraseña{link_tag_end}.</target>
+      <trans-unit id="6453" resname="This email is already in use. Please {login_link_tag_start}log in{link_tag_end}           or {forgotpw_link_tag_start}change password{link_tag_end}." restype="string" datatype="javascript">
+        <source>This email is already in use. Please {login_link_tag_start}log in{link_tag_end}           or {forgotpw_link_tag_start}change password{link_tag_end}.</source>
+        <target>Este correo electrónico ya se está usando. Por favor, {login_link_tag_start}inicia sesión{link_tag_end}  o {forgotpw_link_tag_start}cambia la contraseña{link_tag_end}.</target>
       </trans-unit>
       <trans-unit id="6454" resname="Are you sure you want to close the window?" restype="string" datatype="javascript">
         <source>Are you sure you want to close the window?</source>
@@ -30854,9 +30854,9 @@
   </file>
   <file original="public/feelGood/js/ui_consult.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="6494" resname="We are offering the patient the option to resume this consult \\n                                             by phone and we may be calling you from 650-620-7086 in the next 2 minutes" restype="string" datatype="javascript">
-        <source>We are offering the patient the option to resume this consult \ by phone and we may be calling you from 650-620-7086 in the next 2 minutes</source>
-        <target>Estamos ofreciendo al paciente la opción de continuar esta consulta \ por teléfono y puede que te llamemos desde 650-520-7086 en los próximos 2 minutos</target>
+      <trans-unit id="6494" resname="We are offering the patient the option to resume this consult                                              by phone and we may be calling you from 650-620-7086 in the next 2 minutes" restype="string" datatype="javascript">
+        <source>We are offering the patient the option to resume this consult                                              by phone and we may be calling you from 650-620-7086 in the next 2 minutes</source>
+        <target>Estamos ofreciendo al paciente la opción de continuar esta consulta  por teléfono y puede que te llamemos desde 650-520-7086 en los próximos 2 minutos</target>
       </trans-unit>
       <trans-unit id="6495" resname="Please complete your SOAP note" restype="string" datatype="javascript">
         <source>Please complete your SOAP note</source>
@@ -30934,13 +30934,13 @@
         <source>‹ Back</source>
         <target>‹ Atrás</target>
       </trans-unit>
-      <trans-unit id="6510" resname="When you accept a consult, your patient will have the \\n        choice of interacting with you via video, voice, or text chat. \\n        It’s important to start each consult with a smile. Do whatever \\n        you can to make the patient feel comfortable. Practice now by \\n        typing a caring chat message below and pressing enter to send." restype="string" datatype="javascript">
-        <source>When you accept a consult, your patient will have the \ choice of interacting with you via video, voice, or text chat. \ It’s important to start each consult with a smile. Do whatever \ you can to make the patient feel comfortable. Practice now by \ typing a caring chat message below and pressing enter to send.</source>
-        <target>Cuando aceptas una consulta, tu paciente tendrá la \ opción de interactuar contigo a través de chat de texto, video o voz. \ Es importante empezar cada consulta con una sonrisa. Haz lo que \ puedas para hacer al paciente sentirse cómodo. Practica ahora \ escribiendo un mensaje de chat bondadoso abajo y presionando enter para enviar.</target>
+      <trans-unit id="6510" resname="When you accept a consult, your patient will have the         choice of interacting with you via video, voice, or text chat.         It’s important to start each consult with a smile. Do whatever         you can to make the patient feel comfortable. Practice now by         typing a caring chat message below and pressing enter to send." restype="string" datatype="javascript">
+        <source>When you accept a consult, your patient will have the         choice of interacting with you via video, voice, or text chat.         It’s important to start each consult with a smile. Do whatever         you can to make the patient feel comfortable. Practice now by         typing a caring chat message below and pressing enter to send.</source>
+        <target>Cuando aceptas una consulta, tu paciente tendrá la  opción de interactuar contigo a través de chat de texto, video o voz.  Es importante empezar cada consulta con una sonrisa. Haz lo que  puedas para hacer al paciente sentirse cómodo. Practica ahora  escribiendo un mensaje de chat bondadoso abajo y presionando enter para enviar.</target>
       </trans-unit>
-      <trans-unit id="6511" resname="All consults will start with a chat message from the patient \\n                 explaining the reason for the consult." restype="string" datatype="javascript">
-        <source>All consults will start with a chat message from the patient \ explaining the reason for the consult.</source>
-        <target>Todas las consultas empezarán con un mensaje de chat del paciente \ explicando la razón de la consulta.</target>
+      <trans-unit id="6511" resname="All consults will start with a chat message from the patient                  explaining the reason for the consult." restype="string" datatype="javascript">
+        <source>All consults will start with a chat message from the patient                  explaining the reason for the consult.</source>
+        <target>Todas las consultas empezarán con un mensaje de chat del paciente  explicando la razón de la consulta.</target>
       </trans-unit>
       <trans-unit id="6512" resname="Practice now by sending a friendly, caring chat message below." restype="string" datatype="javascript">
         <source>Practice now by sending a friendly, caring chat message below.</source>
@@ -30950,32 +30950,32 @@
         <source>Hi, {name}.</source>
         <target>Hola, {name}.</target>
       </trans-unit>
-      <trans-unit id="6514" resname=" I have a skin rash and I’m concerned it might be from \\n                      food allergies." restype="string" datatype="javascript">
-        <source>I have a skin rash and I’m concerned it might be from \ food allergies.</source>
-        <target>Tengo un sarpullido en la piel y me preocupa que pueda ser de \ alergias alimentarias.</target>
+      <trans-unit id="6514" resname=" I have a skin rash and I’m concerned it might be from                       food allergies." restype="string" datatype="javascript">
+        <source> I have a skin rash and I’m concerned it might be from                       food allergies.</source>
+        <target>Tengo un sarpullido en la piel y me preocupa que pueda ser de  alergias alimentarias.</target>
       </trans-unit>
       <trans-unit id="6515" resname="Rash on left arm" restype="string" datatype="javascript">
         <source>Rash on left arm</source>
         <target>Erupción cutánea en brazo izquierdo</target>
       </trans-unit>
-      <trans-unit id="6516" resname="One of the exciting things about virtual consults is that \\n                 patients can &lt;b&gt;share photos, test results, or other \\n                 documents&lt;/b&gt; with you." restype="string" datatype="javascript">
-        <source>One of the exciting things about virtual consults is that \ patients can &lt;b&gt;share photos, test results, or other \ documents&lt;/b&gt; with you.</source>
-        <target>Una de las cosas más emocionantes acerca de consultas virtuales es que \ pacientes pueden &lt;b&gt;compartir fotos, resultados de pruebas, u otros \ documentos&lt;/b&gt; contigo.</target>
+      <trans-unit id="6516" resname="One of the exciting things about virtual consults is that                  patients can &lt;b&gt;share photos, test results, or other                  documents&lt;/b&gt; with you." restype="string" datatype="javascript">
+        <source>One of the exciting things about virtual consults is that                  patients can &lt;b&gt;share photos, test results, or other                  documents&lt;/b&gt; with you.</source>
+        <target>Una de las cosas más emocionantes acerca de consultas virtuales es que  pacientes pueden &lt;b&gt;compartir fotos, resultados de pruebas, u otros  documentos&lt;/b&gt; contigo.</target>
       </trans-unit>
       <trans-unit id="6517" resname="Click on the image to enlarge." restype="string" datatype="javascript">
         <source>Click on the image to enlarge.</source>
         <target>Haz clic en la imagen para agrandarla.</target>
       </trans-unit>
-      <trans-unit id="6518" resname="And communication is a two-way street! During your consult, \\n                 you can &lt;b&gt;attach files (like pamphlets or educational materials)&lt;/b&gt;\\n                 to help your patient understand your comments or advice." restype="string" datatype="javascript">
-        <source>And communication is a two-way street! During your consult, \ you can &lt;b&gt;attach files (like pamphlets or educational materials)&lt;/b&gt;\ to help your patient understand your comments or advice.</source>
+      <trans-unit id="6518" resname="And communication is a two-way street! During your consult,                  you can &lt;b&gt;attach files (like pamphlets or educational materials)&lt;/b&gt;                 to help your patient understand your comments or advice." restype="string" datatype="javascript">
+        <source>And communication is a two-way street! During your consult,                  you can &lt;b&gt;attach files (like pamphlets or educational materials)&lt;/b&gt;                 to help your patient understand your comments or advice.</source>
         <target>¡Y la comunicación es una calle de dos vías! Durante tu consulta puedes &lt;b&gt;adjuntar archivos (como panfletos o materiales educativos) &lt;/b&gt;\ para ayudar a tu paciente a entender tus comentarios o consejo.</target>
       </trans-unit>
       <trans-unit id="6519" resname="Click on the paper clip to attach a file." restype="string" datatype="javascript">
         <source>Click on the paper clip to attach a file.</source>
         <target>Haz clic en el sujetapapeles para adjuntar un archivo.</target>
       </trans-unit>
-      <trans-unit id="6520" resname="In addition to text consults, patients can choose to have video \\n                 consults. Next we will check if your video is working correctly." restype="string" datatype="javascript">
-        <source>In addition to text consults, patients can choose to have video \ consults. Next we will check if your video is working correctly.</source>
+      <trans-unit id="6520" resname="In addition to text consults, patients can choose to have video                  consults. Next we will check if your video is working correctly." restype="string" datatype="javascript">
+        <source>In addition to text consults, patients can choose to have video                  consults. Next we will check if your video is working correctly.</source>
         <target>Además de consultas de texto, los pacientes pueden elegir tener consultas de video. Ahora verificaremos si tu video esté funcionando correctamente.</target>
       </trans-unit>
       <trans-unit id="6521" resname="Click the continue button." restype="string" datatype="javascript">
@@ -30986,101 +30986,101 @@
         <source>We are now initializing our video plugin.</source>
         <target>Ahora estamos inicializando nuestro complemento de video.</target>
       </trans-unit>
-      <trans-unit id="6523" resname="Great! The &lt;b&gt;Patient Chart&lt;/b&gt; will be very helpful to you, as you \\n                 can see your patient’s medical history, read questions the patient \\n                 has asked, and review consult notes from other HealthTap doctors." restype="string" datatype="javascript">
-        <source>Great! The &lt;b&gt;Patient Chart&lt;/b&gt; will be very helpful to you, as you \ can see your patient’s medical history, read questions the patient \ has asked, and review consult notes from other HealthTap doctors.</source>
-        <target>¡Estupendo! La &lt;b&gt;Tabla de Paciente&lt;/b&gt; será muy útil para ti, ya que \ puedes ver el historial médico de tu paciente, leer las preguntas que el paciente \ ha hecho, y revisar las notas de consulta de otros doctores de HealthTap.</target>
+      <trans-unit id="6523" resname="Great! The &lt;b&gt;Patient Chart&lt;/b&gt; will be very helpful to you, as you                  can see your patient’s medical history, read questions the patient                  has asked, and review consult notes from other HealthTap doctors." restype="string" datatype="javascript">
+        <source>Great! The &lt;b&gt;Patient Chart&lt;/b&gt; will be very helpful to you, as you                  can see your patient’s medical history, read questions the patient                  has asked, and review consult notes from other HealthTap doctors.</source>
+        <target>¡Estupendo! La &lt;b&gt;Tabla de Paciente&lt;/b&gt; será muy útil para ti, ya que  puedes ver el historial médico de tu paciente, leer las preguntas que el paciente  ha hecho, y revisar las notas de consulta de otros doctores de HealthTap.</target>
       </trans-unit>
-      <trans-unit id="6524" resname="Click on the different sections below to explore the patient chart. \\n                When ready, press the continue button." restype="string" datatype="javascript">
-        <source>Click on the different sections below to explore the patient chart. \ When ready, press the continue button.</source>
-        <target>Haz Clic en las diferentes secciones abajo para explorar la tabla de paciente. \ Cuando estés listo, presiona el botón de continuar.</target>
+      <trans-unit id="6524" resname="Click on the different sections below to explore the patient chart.                 When ready, press the continue button." restype="string" datatype="javascript">
+        <source>Click on the different sections below to explore the patient chart.                 When ready, press the continue button.</source>
+        <target>Haz Clic en las diferentes secciones abajo para explorar la tabla de paciente.  Cuando estés listo, presiona el botón de continuar.</target>
       </trans-unit>
-      <trans-unit id="6525" resname="Tip: Always explain to the patient when you divert your eyes from \\n                 the camera to read or type notes. Make them feel comfortable by \\n                 explaining that this is normal and expected." restype="string" datatype="javascript">
-        <source>Tip: Always explain to the patient when you divert your eyes from \ the camera to read or type notes. Make them feel comfortable by \ explaining that this is normal and expected.</source>
-        <target>Tip: Siempre explica al paciente cuando apartas la vista de \ la cámara para leer o escribir notas. Hazlos sentir cómodos \ explicando que esto es normal y esperado.</target>
+      <trans-unit id="6525" resname="Tip: Always explain to the patient when you divert your eyes from                  the camera to read or type notes. Make them feel comfortable by                  explaining that this is normal and expected." restype="string" datatype="javascript">
+        <source>Tip: Always explain to the patient when you divert your eyes from                  the camera to read or type notes. Make them feel comfortable by                  explaining that this is normal and expected.</source>
+        <target>Tip: Siempre explica al paciente cuando apartas la vista de  la cámara para leer o escribir notas. Hazlos sentir cómodos  explicando que esto es normal y esperado.</target>
       </trans-unit>
-      <trans-unit id="6526" resname="&lt;b&gt;Intro consults&lt;/b&gt; are a first visit with a prospective patient \\n                 who is not yet accepted into your practice. Even if you choose not \\n                 to accept a patient into your practice, you can still offer advice \\n                 and suggest appropriate follow-up care during the intro consult." restype="string" datatype="javascript">
-        <source>&lt;b&gt;Intro consults&lt;/b&gt; are a first visit with a prospective patient \ who is not yet accepted into your practice. Even if you choose not \ to accept a patient into your practice, you can still offer advice \ and suggest appropriate follow-up care during the intro consult.</source>
-        <target>&lt;b&gt;Consultas introductorias&lt;/b&gt; son una primera visita con un paciente prospectivo \ que todavía no es aceptado a tu consultorio. Aún si eliges no \ aceptar un paciente a tu consultorio, todavía puedes ofrecer consejo \ y sugerir atención de seguimiento apropiado durante la consulta introductoria.</target>
+      <trans-unit id="6526" resname="&lt;b&gt;Intro consults&lt;/b&gt; are a first visit with a prospective patient                  who is not yet accepted into your practice. Even if you choose not                  to accept a patient into your practice, you can still offer advice                  and suggest appropriate follow-up care during the intro consult." restype="string" datatype="javascript">
+        <source>&lt;b&gt;Intro consults&lt;/b&gt; are a first visit with a prospective patient                  who is not yet accepted into your practice. Even if you choose not                  to accept a patient into your practice, you can still offer advice                  and suggest appropriate follow-up care during the intro consult.</source>
+        <target>&lt;b&gt;Consultas introductorias&lt;/b&gt; son una primera visita con un paciente prospectivo  que todavía no es aceptado a tu consultorio. Aún si eliges no  aceptar un paciente a tu consultorio, todavía puedes ofrecer consejo  y sugerir atención de seguimiento apropiado durante la consulta introductoria.</target>
       </trans-unit>
-      <trans-unit id="6527" resname="Enter Introductory Consult Notes for the patient. When done, press the \\n                continue button." restype="string" datatype="javascript">
-        <source>Enter Introductory Consult Notes for the patient. When done, press the \ continue button.</source>
-        <target>Ingresa Notas de Consulta Introductoria para el paciente. Cuando termines, presiona el \ botón de continuar.</target>
+      <trans-unit id="6527" resname="Enter Introductory Consult Notes for the patient. When done, press the                 continue button." restype="string" datatype="javascript">
+        <source>Enter Introductory Consult Notes for the patient. When done, press the                 continue button.</source>
+        <target>Ingresa Notas de Consulta Introductoria para el paciente. Cuando termines, presiona el  botón de continuar.</target>
       </trans-unit>
-      <trans-unit id="6528" resname="At any time during the intro consult, you may select the checkmark \\n                 below the intro consult notes section to &lt;b&gt;accept the patient&lt;/b&gt; \\n                 into your virtual practice. This is a great way to extend your \\n                 reach and grow your practice!" restype="string" datatype="javascript">
-        <source>At any time during the intro consult, you may select the checkmark \ below the intro consult notes section to &lt;b&gt;accept the patient&lt;/b&gt; \ into your virtual practice. This is a great way to extend your \ reach and grow your practice!</source>
-        <target>En cualquier momento durante la consulta introductoria, puedes seleccionar la casilla\ abajo de la sección de notas de consulta para &lt;b&gt; aceptar al paciente&lt;/b&gt; \ a tu consultorio virtual. ¡Esa es una grandiosa forma de extender tu \ alcance y crecer tu consultorio!</target>
+      <trans-unit id="6528" resname="At any time during the intro consult, you may select the checkmark                  below the intro consult notes section to &lt;b&gt;accept the patient&lt;/b&gt;                  into your virtual practice. This is a great way to extend your                  reach and grow your practice!" restype="string" datatype="javascript">
+        <source>At any time during the intro consult, you may select the checkmark                  below the intro consult notes section to &lt;b&gt;accept the patient&lt;/b&gt;                  into your virtual practice. This is a great way to extend your                  reach and grow your practice!</source>
+        <target>En cualquier momento durante la consulta introductoria, puedes seleccionar la casilla\ abajo de la sección de notas de consulta para &lt;b&gt; aceptar al paciente&lt;/b&gt;  a tu consultorio virtual. ¡Esa es una grandiosa forma de extender tu  alcance y crecer tu consultorio!</target>
       </trans-unit>
       <trans-unit id="6529" resname="Press the checkmark icon to accept the patient." restype="string" datatype="javascript">
         <source>Press the checkmark icon to accept the patient.</source>
         <target>Presiona el ícono de la casilla para aceptar al paciente.</target>
       </trans-unit>
-      <trans-unit id="6530" resname="When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note \\n                 displays. To complete your consult, you&apos;ll need to complete and submit \\n                 your summary or SOAP Note. To help you fully understand this form, let&apos;s \\n                 take a tour through each of the sections." restype="string" datatype="javascript">
-        <source>When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note \ displays. To complete your consult, you'll need to complete and submit \ your summary or SOAP Note. To help you fully understand this form, let's \ take a tour through each of the sections.</source>
-        <target>Cuando aceptas una persona como paciente, la Nota &lt;b&gt;SOAP&lt;/b&gt; completa se \ muestra. Para completar tu consulta, necesitarás completar y presentar \ tu resumen o tu Nota SOAP. Para ayudarte a comprender completamente esta forma, tomemos \ un tour a través de cada una de las secciones.</target>
+      <trans-unit id="6530" resname="When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note                  displays. To complete your consult, you&apos;ll need to complete and submit                  your summary or SOAP Note. To help you fully understand this form, let&apos;s                  take a tour through each of the sections." restype="string" datatype="javascript">
+        <source>When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note                  displays. To complete your consult, you'll need to complete and submit                  your summary or SOAP Note. To help you fully understand this form, let's                  take a tour through each of the sections.</source>
+        <target>Cuando aceptas una persona como paciente, la Nota &lt;b&gt;SOAP&lt;/b&gt; completa se  muestra. Para completar tu consulta, necesitarás completar y presentar  tu resumen o tu Nota SOAP. Para ayudarte a comprender completamente esta forma, tomemos  un tour a través de cada una de las secciones.</target>
       </trans-unit>
-      <trans-unit id="6531" resname="When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note \\n                 displays. To complete your consult, \\n                 you&apos;ll need to complete and submit your summary or SOAP Note. To \\n                 help you fully understand this form, let&apos;s take a tour through each \\n                 of the sections." restype="string" datatype="javascript">
-        <source>When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note \ displays. To complete your consult, \ you'll need to complete and submit your summary or SOAP Note. To \ help you fully understand this form, let's take a tour through each \ of the sections.</source>
-        <target>Cuando aceptas una persona como paciente, la Nota &lt;b&gt;SOAP&lt;/b&gt; completa se \ muestra. Para completar tu consulta, \ necesitarás completar y presentar tu resumen o tu Nota SOAP. Para \ ayudarte a comprender completamente esta forma, tomemos un tour a través de cada una \ de las secciones.</target>
+      <trans-unit id="6531" resname="When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note                  displays. To complete your consult,                  you&apos;ll need to complete and submit your summary or SOAP Note. To                  help you fully understand this form, let&apos;s take a tour through each                  of the sections." restype="string" datatype="javascript">
+        <source>When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note                  displays. To complete your consult,                  you'll need to complete and submit your summary or SOAP Note. To                  help you fully understand this form, let's take a tour through each                  of the sections.</source>
+        <target>Cuando aceptas una persona como paciente, la Nota &lt;b&gt;SOAP&lt;/b&gt; completa se  muestra. Para completar tu consulta,  necesitarás completar y presentar tu resumen o tu Nota SOAP. Para  ayudarte a comprender completamente esta forma, tomemos un tour a través de cada una  de las secciones.</target>
       </trans-unit>
-      <trans-unit id="6532" resname="When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note \\n                 displays. To complete your consult and get paid for the visit, \\n                 you&apos;ll need to complete and submit your summary or SOAP Note. To \\n                 help you fully understand this form, let&apos;s take a tour through each \\n                 of the sections." restype="string" datatype="javascript">
-        <source>When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note \ displays. To complete your consult and get paid for the visit, \ you'll need to complete and submit your summary or SOAP Note. To \ help you fully understand this form, let's take a tour through each \ of the sections.</source>
-        <target>Cuando aceptas una persona como paciente, la Nota &lt;b&gt;SOAP&lt;/b&gt; completa se \ muestra. Para completar tu consulta y ser pagado por la visita, \ necesitarás completar y presentar tu resumen o tu Nota SOAP. Para \ ayudarte a comprender completamente esta forma, tomemos un tour a través de cada una \ de las secciones.</target>
+      <trans-unit id="6532" resname="When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note                  displays. To complete your consult and get paid for the visit,                  you&apos;ll need to complete and submit your summary or SOAP Note. To                  help you fully understand this form, let&apos;s take a tour through each                  of the sections." restype="string" datatype="javascript">
+        <source>When you accept a person as a patient, the full &lt;b&gt;SOAP&lt;/b&gt; Note                  displays. To complete your consult and get paid for the visit,                  you'll need to complete and submit your summary or SOAP Note. To                  help you fully understand this form, let's take a tour through each                  of the sections.</source>
+        <target>Cuando aceptas una persona como paciente, la Nota &lt;b&gt;SOAP&lt;/b&gt; completa se  muestra. Para completar tu consulta y ser pagado por la visita,  necesitarás completar y presentar tu resumen o tu Nota SOAP. Para  ayudarte a comprender completamente esta forma, tomemos un tour a través de cada una  de las secciones.</target>
       </trans-unit>
       <trans-unit id="6533" resname="Please click continue to move forward." restype="string" datatype="javascript">
         <source>Please click continue to move forward.</source>
         <target>Por favor, haz clic en continuar para avanzar.</target>
       </trans-unit>
-      <trans-unit id="6534" resname="Keep it up! You are more than half way done. &lt;b&gt;Subjective, Objective, \\n                 and Assessment&lt;/b&gt; sections are where you can enter text freely about \\n                 the visit." restype="string" datatype="javascript">
-        <source>Keep it up! You are more than half way done. &lt;b&gt;Subjective, Objective, \ and Assessment&lt;/b&gt; sections are where you can enter text freely about \ the visit.</source>
-        <target>¡Continúa! Ya llevas más de la mitad. Las secciones de &lt;b&gt;Subjetivo, Objetivo, \ y Análisis&lt;/b&gt; son donde puedes ingresar texto libremente acerca de \ la consulta.</target>
+      <trans-unit id="6534" resname="Keep it up! You are more than half way done. &lt;b&gt;Subjective, Objective,                  and Assessment&lt;/b&gt; sections are where you can enter text freely about                  the visit." restype="string" datatype="javascript">
+        <source>Keep it up! You are more than half way done. &lt;b&gt;Subjective, Objective,                  and Assessment&lt;/b&gt; sections are where you can enter text freely about                  the visit.</source>
+        <target>¡Continúa! Ya llevas más de la mitad. Las secciones de &lt;b&gt;Subjetivo, Objetivo,  y Análisis&lt;/b&gt; son donde puedes ingresar texto libremente acerca de  la consulta.</target>
       </trans-unit>
       <trans-unit id="6535" resname="Try filling these out. Click continue when you&apos;re ready." restype="string" datatype="javascript">
         <source>Try filling these out. Click continue when you're ready.</source>
         <target>Intenta llenarlos. Haz clic en continuar cuando estés listo.</target>
       </trans-unit>
-      <trans-unit id="6536" resname="The &lt;b&gt;Plan&lt;/b&gt; section has several structured elements to help your \\n                 patient follow through with your recommendations." restype="string" datatype="javascript">
-        <source>The &lt;b&gt;Plan&lt;/b&gt; section has several structured elements to help your \ patient follow through with your recommendations.</source>
-        <target>La sección de &lt;b&gt;Plan&lt;/b&gt; tiene varios elementos estructurados para ayudar a tu \ paciente a seguir adelante con tus recomendaciones.</target>
+      <trans-unit id="6536" resname="The &lt;b&gt;Plan&lt;/b&gt; section has several structured elements to help your                  patient follow through with your recommendations." restype="string" datatype="javascript">
+        <source>The &lt;b&gt;Plan&lt;/b&gt; section has several structured elements to help your                  patient follow through with your recommendations.</source>
+        <target>La sección de &lt;b&gt;Plan&lt;/b&gt; tiene varios elementos estructurados para ayudar a tu  paciente a seguir adelante con tus recomendaciones.</target>
       </trans-unit>
       <trans-unit id="6537" resname="Click continue to go through each one." restype="string" datatype="javascript">
         <source>Click continue to go through each one.</source>
         <target>Haz clic en continuar para pasar por cada uno.</target>
       </trans-unit>
-      <trans-unit id="6538" resname="This is where you can really help your patient! You’ll notice that \\n                 you can add as many &lt;b&gt;recommended actionable steps&lt;/b&gt; or follow-up \\n                 care instructions. &lt;b&gt;Make sure you have at least one.&lt;/b&gt; You can \\n                 also turn any recommendation into a helpful regular reminder with just \\n                 a few clicks." restype="string" datatype="javascript">
-        <source>This is where you can really help your patient! You’ll notice that \ you can add as many &lt;b&gt;recommended actionable steps&lt;/b&gt; or follow-up \ care instructions. &lt;b&gt;Make sure you have at least one.&lt;/b&gt; You can \ also turn any recommendation into a helpful regular reminder with just \ a few clicks.</source>
-        <target>¡Aquí es donde realmente puedes ayudar a tu paciente! Te darás cuenta \ que puedes agregar tantos &lt;b&gt; pasos de acción recomendados&lt;/b&gt; o instrucciones de atención \ de seguimiento. &lt;b&gt;Asegúrate que tienes al menos uno. &lt;/b&gt; Puedes también \ convertir cualquier recomendación en un recordatorio útil y regularlo con sólo unos clics.</target>
+      <trans-unit id="6538" resname="This is where you can really help your patient! You’ll notice that                  you can add as many &lt;b&gt;recommended actionable steps&lt;/b&gt; or follow-up                  care instructions. &lt;b&gt;Make sure you have at least one.&lt;/b&gt; You can                  also turn any recommendation into a helpful regular reminder with just                  a few clicks." restype="string" datatype="javascript">
+        <source>This is where you can really help your patient! You’ll notice that                  you can add as many &lt;b&gt;recommended actionable steps&lt;/b&gt; or follow-up                  care instructions. &lt;b&gt;Make sure you have at least one.&lt;/b&gt; You can                  also turn any recommendation into a helpful regular reminder with just                  a few clicks.</source>
+        <target>¡Aquí es donde realmente puedes ayudar a tu paciente! Te darás cuenta  que puedes agregar tantos &lt;b&gt; pasos de acción recomendados&lt;/b&gt; o instrucciones de atención  de seguimiento. &lt;b&gt;Asegúrate que tienes al menos uno. &lt;/b&gt; Puedes también  convertir cualquier recomendación en un recordatorio útil y regularlo con sólo unos clics.</target>
       </trans-unit>
-      <trans-unit id="6539" resname="Go ahead and give it a try. For example, recommend a 30-minute walk, \\n                once a day, for a month." restype="string" datatype="javascript">
-        <source>Go ahead and give it a try. For example, recommend a 30-minute walk, \ once a day, for a month.</source>
-        <target>Ve e inténtalo. Por ejemplo, recomienda una caminata de 30 minutos, \ una vez al día, por un mes.</target>
+      <trans-unit id="6539" resname="Go ahead and give it a try. For example, recommend a 30-minute walk,                 once a day, for a month." restype="string" datatype="javascript">
+        <source>Go ahead and give it a try. For example, recommend a 30-minute walk,                 once a day, for a month.</source>
+        <target>Ve e inténtalo. Por ejemplo, recomienda una caminata de 30 minutos,  una vez al día, por un mes.</target>
       </trans-unit>
       <trans-unit id="6540" resname="To prescribe a medication, press &quot;Add&quot; to the right of the section." restype="string" datatype="javascript">
         <source>To prescribe a medication, press "Add" to the right of the section.</source>
         <target>Para recetar un medicamento, presiona "Añadir" a la derecha de la sección.</target>
       </trans-unit>
-      <trans-unit id="6541" resname="One of the things patients really appreciate is that you can &lt;b&gt;prescribe \\n                   medications&lt;/b&gt; that are sent directly to a patient&apos;s indicated pharmacy. \\n                   For patients located outside of the U.S, you can recommend medications." restype="string" datatype="javascript">
-        <source>One of the things patients really appreciate is that you can &lt;b&gt;prescribe \ medications&lt;/b&gt; that are sent directly to a patient's indicated pharmacy. \ For patients located outside of the U.S, you can recommend medications.</source>
-        <target>Una de las cosas que los pacientes realmente aprecian es que puedas &lt;b&gt;recetar \  medicamentos&lt;/b&gt; que son enviados directamente a la farmacia indicada de tu paciente. \ Para pacientes localizados fuera de los EE.UU. puedes recomendar medicamentos.</target>
+      <trans-unit id="6541" resname="One of the things patients really appreciate is that you can &lt;b&gt;prescribe                    medications&lt;/b&gt; that are sent directly to a patient&apos;s indicated pharmacy.                    For patients located outside of the U.S, you can recommend medications." restype="string" datatype="javascript">
+        <source>One of the things patients really appreciate is that you can &lt;b&gt;prescribe                    medications&lt;/b&gt; that are sent directly to a patient's indicated pharmacy.                    For patients located outside of the U.S, you can recommend medications.</source>
+        <target>Una de las cosas que los pacientes realmente aprecian es que puedas &lt;b&gt;recetar   medicamentos&lt;/b&gt; que son enviados directamente a la farmacia indicada de tu paciente.  Para pacientes localizados fuera de los EE.UU. puedes recomendar medicamentos.</target>
       </trans-unit>
       <trans-unit id="6542" resname="To order lab tests, press &quot;Add&quot; to the right of the section." restype="string" datatype="javascript">
         <source>To order lab tests, press "Add" to the right of the section.</source>
         <target>Para pedir exámenes de laboratorio, presiona "Añadir" a la derecha de la sección.</target>
       </trans-unit>
-      <trans-unit id="6543" resname="Another new functionality, that delights and saves patients \\n                   time is the ability for you to order lab tests virtually. The \\n                   lab order will be sent to the Quest Service Center the patient \\n                   chooses. Once the patient has been tested you will be sent the \\n                   results for review." restype="string" datatype="javascript">
-        <source>Another new functionality, that delights and saves patients \ time is the ability for you to order lab tests virtually. The \ lab order will be sent to the Quest Service Center the patient \ chooses. Once the patient has been tested you will be sent the \ results for review.</source>
-        <target>Otra nueva funcionalidad, que encanta y ahorra tiempo \ a pacientes es la habilidad que tienes de ordenar pruebas de laboratorio virtualmente. La \ orden de laboratorio será enviada al Centro Quest Service que el paciente \ escoja. Una vez que al paciente se le ha tomado la prueba se te enviarán los \ resultados para revisión.</target>
+      <trans-unit id="6543" resname="Another new functionality, that delights and saves patients                    time is the ability for you to order lab tests virtually. The                    lab order will be sent to the Quest Service Center the patient                    chooses. Once the patient has been tested you will be sent the                    results for review." restype="string" datatype="javascript">
+        <source>Another new functionality, that delights and saves patients                    time is the ability for you to order lab tests virtually. The                    lab order will be sent to the Quest Service Center the patient                    chooses. Once the patient has been tested you will be sent the                    results for review.</source>
+        <target>Otra nueva funcionalidad, que encanta y ahorra tiempo  a pacientes es la habilidad que tienes de ordenar pruebas de laboratorio virtualmente. La  orden de laboratorio será enviada al Centro Quest Service que el paciente  escoja. Una vez que al paciente se le ha tomado la prueba se te enviarán los  resultados para revisión.</target>
       </trans-unit>
-      <trans-unit id="6544" resname="Simply start typing to see the options of more than 2,000 lab \\n                  tests you can order." restype="string" datatype="javascript">
-        <source>Simply start typing to see the options of more than 2,000 lab \ tests you can order.</source>
-        <target>Simplemente empieza escribiendo para ver las opciones de más de 2,000 pruebas \ de laboratorio que puedes ordenar.</target>
+      <trans-unit id="6544" resname="Simply start typing to see the options of more than 2,000 lab                   tests you can order." restype="string" datatype="javascript">
+        <source>Simply start typing to see the options of more than 2,000 lab                   tests you can order.</source>
+        <target>Simplemente empieza escribiendo para ver las opciones de más de 2,000 pruebas  de laboratorio que puedes ordenar.</target>
       </trans-unit>
       <trans-unit id="6545" resname="To request a follow-up appointment, press &quot;Add&quot; to the right of the section." restype="string" datatype="javascript">
         <source>To request a follow-up appointment, press "Add" to the right of the section.</source>
         <target>Para solicitar una cita de seguimiento, presiona "Añadir" a la derecha de la sección.</target>
       </trans-unit>
-      <trans-unit id="6546" resname="To suggest a follow-up appointment, include when the patient \\n                  should schedule the appointment and, optionally, what the purpose of the follow-up is. \\n                  The patient will receive a link to easily schedule the appointment." restype="string" datatype="javascript">
-        <source>To suggest a follow-up appointment, include when the patient \ should schedule the appointment and, optionally, what the purpose of the follow-up is. \ The patient will receive a link to easily schedule the appointment.</source>
-        <target>Para sugerir una cita de seguimiento, incluye cuándo debe el paciente \ agendar la cita y, opcionalmente, cuál es el propósito del seguimiento. \ El paciente recibirá un enlace para agendar fácilmente la cita.</target>
+      <trans-unit id="6546" resname="To suggest a follow-up appointment, include when the patient                   should schedule the appointment and, optionally, what the purpose of the follow-up is.                   The patient will receive a link to easily schedule the appointment." restype="string" datatype="javascript">
+        <source>To suggest a follow-up appointment, include when the patient                   should schedule the appointment and, optionally, what the purpose of the follow-up is.                   The patient will receive a link to easily schedule the appointment.</source>
+        <target>Para sugerir una cita de seguimiento, incluye cuándo debe el paciente  agendar la cita y, opcionalmente, cuál es el propósito del seguimiento.  El paciente recibirá un enlace para agendar fácilmente la cita.</target>
       </trans-unit>
       <trans-unit id="6547" resname="Go ahead, try it now. Click the &quot;Add&quot; button to confirm." restype="string" datatype="javascript">
         <source>Go ahead, try it now. Click the "Add" button to confirm.</source>
@@ -31090,97 +31090,97 @@
         <source>To make a referral, press "Add" to the right of the section.</source>
         <target>Para hacer una referencia, presiona "Añadir" a la derecha de la sección.</target>
       </trans-unit>
-      <trans-unit id="6549" resname="You can &lt;b&gt;refer your patients&lt;/b&gt; to any doctor within or outside \\n                   the HealthTap network. Alternatively, refer a specialty and we’ll \\n                   provide a list of specialists for your patient to choose from." restype="string" datatype="javascript">
-        <source>You can &lt;b&gt;refer your patients&lt;/b&gt; to any doctor within or outside \ the HealthTap network. Alternatively, refer a specialty and we’ll \ provide a list of specialists for your patient to choose from.</source>
-        <target>Puedes &lt;b&gt;recomendar a tus pacientes&lt;/b&gt; a cualquier doctor dentro o fuera \ de la red HealthTap. Alternativamente, recomienda a una especialidad y nosotros \ proporcionaremos una lista de especialistas para que tu paciente escoja.</target>
+      <trans-unit id="6549" resname="You can &lt;b&gt;refer your patients&lt;/b&gt; to any doctor within or outside                    the HealthTap network. Alternatively, refer a specialty and we’ll                    provide a list of specialists for your patient to choose from." restype="string" datatype="javascript">
+        <source>You can &lt;b&gt;refer your patients&lt;/b&gt; to any doctor within or outside                    the HealthTap network. Alternatively, refer a specialty and we’ll                    provide a list of specialists for your patient to choose from.</source>
+        <target>Puedes &lt;b&gt;recomendar a tus pacientes&lt;/b&gt; a cualquier doctor dentro o fuera  de la red HealthTap. Alternativamente, recomienda a una especialidad y nosotros  proporcionaremos una lista de especialistas para que tu paciente escoja.</target>
       </trans-unit>
       <trans-unit id="6550" resname="Try it now." restype="string" datatype="javascript">
         <source>Try it now.</source>
         <target>¡Pruébalo ahora!</target>
       </trans-unit>
-      <trans-unit id="6551" resname="Tip: We recommend you refer patients to doctors who participate in \\n                   HealthTap Concierge so your patients can get immediate follow-up care. \\n                   Concierge doctors will be indicated with a small green dot and labeled \\n                   &quot;Available for Virtual Consults&quot;." restype="string" datatype="javascript">
-        <source>Tip: We recommend you refer patients to doctors who participate in \ HealthTap Concierge so your patients can get immediate follow-up care. \ Concierge doctors will be indicated with a small green dot and labeled \ "Available for Virtual Consults".</source>
-        <target>Tip: Te recomendamos que recomiendes a tus pacientes doctores que participan en \ HealthTap Concierge para que tus pacientes puedan obtener atención de seguimiento.  \ Los Doctores Concierge serán indicados con un pequeño punto verde y etiquetados “Disponible para Consultas Virtuales”.</target>
+      <trans-unit id="6551" resname="Tip: We recommend you refer patients to doctors who participate in                    HealthTap Concierge so your patients can get immediate follow-up care.                    Concierge doctors will be indicated with a small green dot and labeled                    &quot;Available for Virtual Consults&quot;." restype="string" datatype="javascript">
+        <source>Tip: We recommend you refer patients to doctors who participate in                    HealthTap Concierge so your patients can get immediate follow-up care.                    Concierge doctors will be indicated with a small green dot and labeled                    "Available for Virtual Consults".</source>
+        <target>Tip: Te recomendamos que recomiendes a tus pacientes doctores que participan en  HealthTap Concierge para que tus pacientes puedan obtener atención de seguimiento.   Los Doctores Concierge serán indicados con un pequeño punto verde y etiquetados “Disponible para Consultas Virtuales”.</target>
       </trans-unit>
       <trans-unit id="6552" resname="To recommend a checklist, press &quot;Add&quot; to the right of the section." restype="string" datatype="javascript">
         <source>To recommend a checklist, press "Add" to the right of the section.</source>
         <target>Para recomendar una listado, presiona "Añadir" a la derecha de la sección.</target>
       </trans-unit>
-      <trans-unit id="6553" resname="&lt;b&gt;Checklists&lt;/b&gt; are recommended actions that help your patient achieve \\n                 a health goal or feel better. Patients receive timely reminders for each \\n                 to-do on the list. You can browse through a wealth of checklists that \\n                 doctors on HealthTap have created by topic and choose the best one for \\n                 your patient." restype="string" datatype="javascript">
-        <source>&lt;b&gt;Checklists&lt;/b&gt; are recommended actions that help your patient achieve \ a health goal or feel better. Patients receive timely reminders for each \ to-do on the list. You can browse through a wealth of checklists that \ doctors on HealthTap have created by topic and choose the best one for \ your patient.</source>
-        <target>&lt;b&gt;Listados&lt;/b&gt; son acciones recomendadas que ayudan a tu paciente a lograr \ una meta de salud o sentirse mejor. Pacientes reciben recordatorios oportunos para cada \ qué hacer en la lista. Puedes ojear a través de una riqueza de listados que \doctores en HealthTap han creado por tema y elegir el mejor para tu paciente.</target>
+      <trans-unit id="6553" resname="&lt;b&gt;Checklists&lt;/b&gt; are recommended actions that help your patient achieve                  a health goal or feel better. Patients receive timely reminders for each                  to-do on the list. You can browse through a wealth of checklists that                  doctors on HealthTap have created by topic and choose the best one for                  your patient." restype="string" datatype="javascript">
+        <source>&lt;b&gt;Checklists&lt;/b&gt; are recommended actions that help your patient achieve                  a health goal or feel better. Patients receive timely reminders for each                  to-do on the list. You can browse through a wealth of checklists that                  doctors on HealthTap have created by topic and choose the best one for                  your patient.</source>
+        <target>&lt;b&gt;Listados&lt;/b&gt; son acciones recomendadas que ayudan a tu paciente a lograr  una meta de salud o sentirse mejor. Pacientes reciben recordatorios oportunos para cada  qué hacer en la lista. Puedes ojear a través de una riqueza de listados que \doctores en HealthTap han creado por tema y elegir el mejor para tu paciente.</target>
       </trans-unit>
       <trans-unit id="6554" resname="Try it out and then click continue." restype="string" datatype="javascript">
         <source>Try it out and then click continue.</source>
         <target>Pruébalo y luego haz clic en continuar.</target>
       </trans-unit>
-      <trans-unit id="6555" resname="Patients see the SOAP notes you enter. If you wish to add notes only \\n                 visible to doctors, please include them in the &lt;b&gt;Additional Chart \\n                 Notes&lt;/b&gt; section." restype="string" datatype="javascript">
-        <source>Patients see the SOAP notes you enter. If you wish to add notes only \ visible to doctors, please include them in the &lt;b&gt;Additional Chart \ Notes&lt;/b&gt; section.</source>
-        <target>Los pacientes ven las notas SOAP que ingresas. Si deseas agregar notas sólo \ visibles para doctores, por favor, inclúyelas en la sección &lt;b&gt;Notas Adicionales \ de Tabla&lt;/b&gt;</target>
+      <trans-unit id="6555" resname="Patients see the SOAP notes you enter. If you wish to add notes only                  visible to doctors, please include them in the &lt;b&gt;Additional Chart                  Notes&lt;/b&gt; section." restype="string" datatype="javascript">
+        <source>Patients see the SOAP notes you enter. If you wish to add notes only                  visible to doctors, please include them in the &lt;b&gt;Additional Chart                  Notes&lt;/b&gt; section.</source>
+        <target>Los pacientes ven las notas SOAP que ingresas. Si deseas agregar notas sólo  visibles para doctores, por favor, inclúyelas en la sección &lt;b&gt;Notas Adicionales  de Tabla&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="6556" resname="Click continue when you&apos;re done." restype="string" datatype="javascript">
         <source>Click continue when you're done.</source>
         <target>Haz clic en continuar cuando hayas terminado.</target>
       </trans-unit>
-      <trans-unit id="6557" resname="In the unlikely event that the consult cannot be completed successfully \\n                or the patient behaves inappropriately, please &lt;b&gt;flag the consult&lt;/b&gt;. \\n                This notifies us and ends the consult. Always inform your patient before you press \\n                the &lt;b&gt;flag&lt;/b&gt;, as it will end the consult. Go ahead, try it now." restype="string" datatype="javascript">
-        <source>In the unlikely event that the consult cannot be completed successfully \ or the patient behaves inappropriately, please &lt;b&gt;flag the consult&lt;/b&gt;. \ This notifies us and ends the consult. Always inform your patient before you press \ the &lt;b&gt;flag&lt;/b&gt;, as it will end the consult. Go ahead, try it now.</source>
-        <target>En el poco probable caso de que la consulta no pueda ser completada exitosamente \  o el paciente se comporte inapropiadamente, por favor, &lt;b&gt;señala la consulta&lt;/b&gt;. \  Esto nos notifica y termina la consulta. Siempre informa a tu paciente antes de presionar \  la &lt;b&gt;señal&lt;/b&gt;, ya que terminará la consulta. Ve e inténtalo ahora.</target>
+      <trans-unit id="6557" resname="In the unlikely event that the consult cannot be completed successfully                 or the patient behaves inappropriately, please &lt;b&gt;flag the consult&lt;/b&gt;.                 This notifies us and ends the consult. Always inform your patient before you press                 the &lt;b&gt;flag&lt;/b&gt;, as it will end the consult. Go ahead, try it now." restype="string" datatype="javascript">
+        <source>In the unlikely event that the consult cannot be completed successfully                 or the patient behaves inappropriately, please &lt;b&gt;flag the consult&lt;/b&gt;.                 This notifies us and ends the consult. Always inform your patient before you press                 the &lt;b&gt;flag&lt;/b&gt;, as it will end the consult. Go ahead, try it now.</source>
+        <target>En el poco probable caso de que la consulta no pueda ser completada exitosamente   o el paciente se comporte inapropiadamente, por favor, &lt;b&gt;señala la consulta&lt;/b&gt;.   Esto nos notifica y termina la consulta. Siempre informa a tu paciente antes de presionar   la &lt;b&gt;señal&lt;/b&gt;, ya que terminará la consulta. Ve e inténtalo ahora.</target>
       </trans-unit>
       <trans-unit id="6558" resname="Go ahead, try it now." restype="string" datatype="javascript">
         <source>Go ahead, try it now.</source>
         <target>Adelante, pruébala ahora.</target>
       </trans-unit>
-      <trans-unit id="6559" resname="When you click the &apos;Send &amp; End Consult&apos; button, the &lt;b&gt;consult will end&lt;/b&gt; \\n                 and your SOAP Note will be sent to the patient and become a part of their \\n                 Patient&apos;s Chart. You can ask your patient to end the consult on their end \\n                 so that you can take a few minutes to finish your SOAP Note. Then click \\n                 this button when you are done." restype="string" datatype="javascript">
-        <source>When you click the 'Send &amp; End Consult' button, the &lt;b&gt;consult will end&lt;/b&gt; \ and your SOAP Note will be sent to the patient and become a part of their \ Patient's Chart. You can ask your patient to end the consult on their end \ so that you can take a few minutes to finish your SOAP Note. Then click \ this button when you are done.</source>
-        <target>Cuando haces clic en el botón ‘Enviar y Terminar Consulta’, la &lt;b&gt;consulta terminará&lt;/b&gt; \  y tu Nota SOAP será enviada al paciente y se convertirá en una parte de su \  Tabla de Paciente. Puedes pedir a tu paciente que termine la consulta en su fin \  para que puedas tomarte algunos minutos para terminar to Nota SOAP. Entonces haz clic en \  este botón cuando estés listo.</target>
+      <trans-unit id="6559" resname="When you click the &apos;Send &amp; End Consult&apos; button, the &lt;b&gt;consult will end&lt;/b&gt;                  and your SOAP Note will be sent to the patient and become a part of their                  Patient&apos;s Chart. You can ask your patient to end the consult on their end                  so that you can take a few minutes to finish your SOAP Note. Then click                  this button when you are done." restype="string" datatype="javascript">
+        <source>When you click the 'Send &amp; End Consult' button, the &lt;b&gt;consult will end&lt;/b&gt;                  and your SOAP Note will be sent to the patient and become a part of their                  Patient's Chart. You can ask your patient to end the consult on their end                  so that you can take a few minutes to finish your SOAP Note. Then click                  this button when you are done.</source>
+        <target>Cuando haces clic en el botón ‘Enviar y Terminar Consulta’, la &lt;b&gt;consulta terminará&lt;/b&gt;   y tu Nota SOAP será enviada al paciente y se convertirá en una parte de su   Tabla de Paciente. Puedes pedir a tu paciente que termine la consulta en su fin   para que puedas tomarte algunos minutos para terminar to Nota SOAP. Entonces haz clic en   este botón cuando estés listo.</target>
       </trans-unit>
-      <trans-unit id="6560" resname="Tip: Please remember to always start and finish every consult with a \\n                 smile and warm greetings. When ending a consult, show patients that you \\n                 care by asking if there&apos;s anything else you can do to help them." restype="string" datatype="javascript">
-        <source>Tip: Please remember to always start and finish every consult with a \ smile and warm greetings. When ending a consult, show patients that you \ care by asking if there's anything else you can do to help them.</source>
-        <target>Tip: Por favor, recuerda siempre empezar y terminar cada consulta con una \  sonrisa y saludos cálidos. Cuando termines una consulta, muéstrale a tus pacientes que \  te interesan preguntándoles si hay algo más que puedas hacer para ayudarlos,</target>
+      <trans-unit id="6560" resname="Tip: Please remember to always start and finish every consult with a                  smile and warm greetings. When ending a consult, show patients that you                  care by asking if there&apos;s anything else you can do to help them." restype="string" datatype="javascript">
+        <source>Tip: Please remember to always start and finish every consult with a                  smile and warm greetings. When ending a consult, show patients that you                  care by asking if there's anything else you can do to help them.</source>
+        <target>Tip: Por favor, recuerda siempre empezar y terminar cada consulta con una   sonrisa y saludos cálidos. Cuando termines una consulta, muéstrale a tus pacientes que   te interesan preguntándoles si hay algo más que puedas hacer para ayudarlos,</target>
       </trans-unit>
       <trans-unit id="6561" resname="Go ahead and click the button to end the consult and send your notes." restype="string" datatype="javascript">
         <source>Go ahead and click the button to end the consult and send your notes.</source>
         <target>Continúa y haz clic en el botón para finalizar la consulta y enviar tus notas.</target>
       </trans-unit>
-      <trans-unit id="6562" resname="(Note: in an actual consult, this would trigger your \\n                                    earnings to go into your account, which gets disbursed \\n                                    monthly)" restype="string" datatype="javascript">
-        <source>(Note: in an actual consult, this would trigger your \ earnings to go into your account, which gets disbursed \ monthly)</source>
-        <target>(Nota: en una consulta real, esto puede aumentar las \  ganancias que van a tu cuenta, las cuales se pagan \  mensualmente)</target>
+      <trans-unit id="6562" resname="(Note: in an actual consult, this would trigger your                                     earnings to go into your account, which gets disbursed                                     monthly)" restype="string" datatype="javascript">
+        <source>(Note: in an actual consult, this would trigger your                                     earnings to go into your account, which gets disbursed                                     monthly)</source>
+        <target>(Nota: en una consulta real, esto puede aumentar las   ganancias que van a tu cuenta, las cuales se pagan   mensualmente)</target>
       </trans-unit>
-      <trans-unit id="6563" resname="Once the consult has ended, you and the patient &lt;b&gt;rate each other&lt;/b&gt; \\n                 on a 5-star scale. At HealthTap, we strive for the highest standards, \\n                 and the highest levels of customer satisfaction, so it’s  important to \\n                 maintain a high star ratings to retain your HealthTap Concierge license." restype="string" datatype="javascript">
-        <source>Once the consult has ended, you and the patient &lt;b&gt;rate each other&lt;/b&gt; \ on a 5-star scale. At HealthTap, we strive for the highest standards, \ and the highest levels of customer satisfaction, so it’s important to \ maintain a high star ratings to retain your HealthTap Concierge license.</source>
-        <target>Una vez que la consulta ha terminado, tú y el paciente &lt;b&gt;se califican el uno al otro&lt;/b&gt; \  en una escala de 5 estrellas. En HealthTap, nos esforzamos por los más altos estándares, \  y los más altos niveles de satisfacción del cliente, así que es importante \  mantener una calificación de estrellas alta para tener tu licencia HealthTap Concierge.</target>
+      <trans-unit id="6563" resname="Once the consult has ended, you and the patient &lt;b&gt;rate each other&lt;/b&gt;                  on a 5-star scale. At HealthTap, we strive for the highest standards,                  and the highest levels of customer satisfaction, so it’s  important to                  maintain a high star ratings to retain your HealthTap Concierge license." restype="string" datatype="javascript">
+        <source>Once the consult has ended, you and the patient &lt;b&gt;rate each other&lt;/b&gt;                  on a 5-star scale. At HealthTap, we strive for the highest standards,                  and the highest levels of customer satisfaction, so it’s  important to                  maintain a high star ratings to retain your HealthTap Concierge license.</source>
+        <target>Una vez que la consulta ha terminado, tú y el paciente &lt;b&gt;se califican el uno al otro&lt;/b&gt;   en una escala de 5 estrellas. En HealthTap, nos esforzamos por los más altos estándares,   y los más altos niveles de satisfacción del cliente, así que es importante   mantener una calificación de estrellas alta para tener tu licencia HealthTap Concierge.</target>
       </trans-unit>
       <trans-unit id="6564" resname="Rate this consult and then you&apos;re a few steps away from completing the training!" restype="string" datatype="javascript">
         <source>Rate this consult and then you're a few steps away from completing the training!</source>
         <target>¡Califica esta consulta y luego estás a unos pocos pasos de completar el entrenamiento!</target>
       </trans-unit>
-      <trans-unit id="6565" resname="It seems our plugin does not have permission to load in your browser. \\n          {link_tag_start}Click here{link_tag_end} to learn how to enable this." restype="string" datatype="javascript">
-        <source>It seems our plugin does not have permission to load in your browser. \ {link_tag_start}Click here{link_tag_end} to learn how to enable this.</source>
-        <target>Parece que nuestro complemento no tiene permiso de cargar en tu navegador. \ {link_tag_start}Haz clic aquí{link_tag_end} para aprender cómo habilitar esto.</target>
+      <trans-unit id="6565" resname="It seems our plugin does not have permission to load in your browser.           {link_tag_start}Click here{link_tag_end} to learn how to enable this." restype="string" datatype="javascript">
+        <source>It seems our plugin does not have permission to load in your browser.           {link_tag_start}Click here{link_tag_end} to learn how to enable this.</source>
+        <target>Parece que nuestro complemento no tiene permiso de cargar en tu navegador.  {link_tag_start}Haz clic aquí{link_tag_end} para aprender cómo habilitar esto.</target>
       </trans-unit>
       <trans-unit id="6566" resname="We are now setting up your video display." restype="string" datatype="javascript">
         <source>We are now setting up your video display.</source>
         <target>Ahora estamos configurando la visualización de tu video.</target>
       </trans-unit>
-      <trans-unit id="6567" resname="Do you see yourself? If not, click the white gear icon on the \\n                        bottom left to check your camera settings." restype="string" datatype="javascript">
-        <source>Do you see yourself? If not, click the white gear icon on the \ bottom left to check your camera settings.</source>
-        <target>¿Te ves a ti mismo? Si no es así, haz clic en el engrane blanco en la \  izquierda inferior para revisar la configuración de la cámara.</target>
+      <trans-unit id="6567" resname="Do you see yourself? If not, click the white gear icon on the                         bottom left to check your camera settings." restype="string" datatype="javascript">
+        <source>Do you see yourself? If not, click the white gear icon on the                         bottom left to check your camera settings.</source>
+        <target>¿Te ves a ti mismo? Si no es así, haz clic en el engrane blanco en la   izquierda inferior para revisar la configuración de la cámara.</target>
       </trans-unit>
-      <trans-unit id="6568" resname="Do you see yourself? If not, click the white gear icon on the \\n                        top left to check your camera settings." restype="string" datatype="javascript">
-        <source>Do you see yourself? If not, click the white gear icon on the \ top left to check your camera settings.</source>
-        <target>¿Te ves a ti mismo? Si no es así, haz clic en el engrane blanco en la \  izquierda superior para revisar la configuración de la cámara.</target>
+      <trans-unit id="6568" resname="Do you see yourself? If not, click the white gear icon on the                         top left to check your camera settings." restype="string" datatype="javascript">
+        <source>Do you see yourself? If not, click the white gear icon on the                         top left to check your camera settings.</source>
+        <target>¿Te ves a ti mismo? Si no es así, haz clic en el engrane blanco en la   izquierda superior para revisar la configuración de la cámara.</target>
       </trans-unit>
-      <trans-unit id="6569" resname=" If you need additional support, please contact your IT \\n                           department." restype="string" datatype="javascript">
-        <source>If you need additional support, please contact your IT \ department.</source>
-        <target>Si necesitas ayuda adicional, por favor, contacta tu departamento de \ IT.</target>
+      <trans-unit id="6569" resname=" If you need additional support, please contact your IT                            department." restype="string" datatype="javascript">
+        <source> If you need additional support, please contact your IT                            department.</source>
+        <target>Si necesitas ayuda adicional, por favor, contacta tu departamento de  IT.</target>
       </trans-unit>
-      <trans-unit id="6570" resname=" If you need additional support, please email \\n                          {email_link_tag_start}{email}{link_tag_end} or call us at {phone}." restype="string" datatype="javascript">
-        <source>If you need additional support, please email \ {email_link_tag_start}{email}{link_tag_end} or call us at {phone}.</source>
-        <target>Si necesitas ayuda adicional, por favor, envía un correo electrónico a \ {email_link_tag_start}{email}{link_tag_end} o llámanos al {phone}.</target>
+      <trans-unit id="6570" resname=" If you need additional support, please email                           {email_link_tag_start}{email}{link_tag_end} or call us at {phone}." restype="string" datatype="javascript">
+        <source> If you need additional support, please email                           {email_link_tag_start}{email}{link_tag_end} or call us at {phone}.</source>
+        <target>Si necesitas ayuda adicional, por favor, envía un correo electrónico a  {email_link_tag_start}{email}{link_tag_end} o llámanos al {phone}.</target>
       </trans-unit>
-      <trans-unit id="6571" resname="It seems like you are still having issues granting permission to the \\n                   plug-in. Don&apos;t worry, continue now and someone from our team will \\n                   call you later to help you set up your plug-in." restype="string" datatype="javascript">
-        <source>It seems like you are still having issues granting permission to the \ plug-in. Don't worry, continue now and someone from our team will \ call you later to help you set up your plug-in.</source>
-        <target>Parece que sigues teniendo problemas dando permiso al \ complemento. No te preocupes, continúa ahora y alguien de nuestro equipo \ te llamará para ayudarte a establecer tu complemento.</target>
+      <trans-unit id="6571" resname="It seems like you are still having issues granting permission to the                    plug-in. Don&apos;t worry, continue now and someone from our team will                    call you later to help you set up your plug-in." restype="string" datatype="javascript">
+        <source>It seems like you are still having issues granting permission to the                    plug-in. Don't worry, continue now and someone from our team will                    call you later to help you set up your plug-in.</source>
+        <target>Parece que sigues teniendo problemas dando permiso al  complemento. No te preocupes, continúa ahora y alguien de nuestro equipo  te llamará para ayudarte a establecer tu complemento.</target>
       </trans-unit>
     </body>
   </file>
@@ -31194,9 +31194,9 @@
         <source>• Same day appointment reminders are sent by SMS</source>
         <target>• Recordatorios del mismo día son enviados por SMS</target>
       </trans-unit>
-      <trans-unit id="6574" resname="Here are a few additional facts you should know: • Patients schedule \\n               appointments during your virtual office hours • Your next day’s schedule \\n               is sent by email at 9pm{appointments}" restype="string" datatype="javascript">
-        <source>Here are a few additional facts you should know: • Patients schedule \ appointments during your virtual office hours • Your next day’s schedule \ is sent by email at 9pm{appointments}</source>
-        <target>Aquí hay algunos datos adicionales que debes saber: •Pacientes agendan \ citas durante tu horario de oficina virtual • Tu horario del día siguiente \ es enviado por correo electrónico a las 9pm {appointments}</target>
+      <trans-unit id="6574" resname="Here are a few additional facts you should know: • Patients schedule                appointments during your virtual office hours • Your next day’s schedule                is sent by email at 9pm{appointments}" restype="string" datatype="javascript">
+        <source>Here are a few additional facts you should know: • Patients schedule                appointments during your virtual office hours • Your next day’s schedule                is sent by email at 9pm{appointments}</source>
+        <target>Aquí hay algunos datos adicionales que debes saber: •Pacientes agendan  citas durante tu horario de oficina virtual • Tu horario del día siguiente  es enviado por correo electrónico a las 9pm {appointments}</target>
       </trans-unit>
       <trans-unit id="6575" resname="{bold_tag_start}1 appointment{bold_tag_end}is scheduled this week" restype="string" datatype="javascript">
         <source>{bold_tag_start}1 appointment{bold_tag_end}is scheduled this week</source>
@@ -31206,33 +31206,33 @@
         <source>VIEW APPOINTMENTS</source>
         <target>VER CITAS</target>
       </trans-unit>
-      <trans-unit id="6577" resname="Just like you&apos;re available when your real {clinic_slash}office is open, it&apos;s important \\n               that you&apos;re &lt;b&gt;online and available&lt;/b&gt; during your designated Virtual \\n               Office Hours. Patients may be looking for you at these times. You do not \\n               have to be at your desk, simply sign in and set yourself as “available” on \\n               the HealthTap for Doctors mobile app. The app will ring when your \\n               patient calls." restype="string" datatype="javascript">
-        <source>Just like you're available when your real {clinic_slash}office is open, it's important \ that you're &lt;b&gt;online and available&lt;/b&gt; during your designated Virtual \ Office Hours. Patients may be looking for you at these times. You do not \ have to be at your desk, simply sign in and set yourself as “available” on \ the HealthTap for Doctors mobile app. The app will ring when your \ patient calls.</source>
-        <target>Justo como cuando estás disponible cuando tu oficina {clinic_slash}real está abierta, es importante \ que estés &lt;b&gt;en línea y disponible&lt;/b&gt; durante tu Horario \ de Oficina Virtual designado, Pacientes pueden estar buscándote en estos horarios. No tienes \ que estar en tu escritorio, simplemente regístrate y ponte como “disponible” en \ la aplicación móvil HealthTap para Doctores. La aplicación sonará cuando tu \ paciente llame.</target>
+      <trans-unit id="6577" resname="Just like you&apos;re available when your real {clinic_slash}office is open, it&apos;s important                that you&apos;re &lt;b&gt;online and available&lt;/b&gt; during your designated Virtual                Office Hours. Patients may be looking for you at these times. You do not                have to be at your desk, simply sign in and set yourself as “available” on                the HealthTap for Doctors mobile app. The app will ring when your                patient calls." restype="string" datatype="javascript">
+        <source>Just like you're available when your real {clinic_slash}office is open, it's important                that you're &lt;b&gt;online and available&lt;/b&gt; during your designated Virtual                Office Hours. Patients may be looking for you at these times. You do not                have to be at your desk, simply sign in and set yourself as “available” on                the HealthTap for Doctors mobile app. The app will ring when your                patient calls.</source>
+        <target>Justo como cuando estás disponible cuando tu oficina {clinic_slash}real está abierta, es importante  que estés &lt;b&gt;en línea y disponible&lt;/b&gt; durante tu Horario  de Oficina Virtual designado, Pacientes pueden estar buscándote en estos horarios. No tienes  que estar en tu escritorio, simplemente regístrate y ponte como “disponible” en  la aplicación móvil HealthTap para Doctores. La aplicación sonará cuando tu  paciente llame.</target>
       </trans-unit>
-      <trans-unit id="6578" resname="Tip: The HealthTap for Doctors app is available to download \\n               for free on any mobile device or tablet for iOS and Android. You \\n               can start consults on your mobile device. At any time, you can \\n               continue the consult on your computer by going to your logged in \\n               homepage." restype="string" datatype="javascript">
-        <source>Tip: The HealthTap for Doctors app is available to download \ for free on any mobile device or tablet for iOS and Android. You \ can start consults on your mobile device. At any time, you can \ continue the consult on your computer by going to your logged in \ homepage.</source>
-        <target>Tip: La aplicación HealthTap for Doctors está disponible para descargar \ gratis desde cualquier dispositivo móvil o tableta para iOS y Android. Puedes \ empezar consultas en tu dispositivo móvil. En cualquier momento, puedes \ continuar la consulta en tu computadora yendo a tu página de inicio \ ingresada.</target>
+      <trans-unit id="6578" resname="Tip: The HealthTap for Doctors app is available to download                for free on any mobile device or tablet for iOS and Android. You                can start consults on your mobile device. At any time, you can                continue the consult on your computer by going to your logged in                homepage." restype="string" datatype="javascript">
+        <source>Tip: The HealthTap for Doctors app is available to download                for free on any mobile device or tablet for iOS and Android. You                can start consults on your mobile device. At any time, you can                continue the consult on your computer by going to your logged in                homepage.</source>
+        <target>Tip: La aplicación HealthTap for Doctors está disponible para descargar  gratis desde cualquier dispositivo móvil o tableta para iOS y Android. Puedes  empezar consultas en tu dispositivo móvil. En cualquier momento, puedes  continuar la consulta en tu computadora yendo a tu página de inicio  ingresada.</target>
       </trans-unit>
-      <trans-unit id="6579" resname="You can set your shifts at your convenience, \\n               and you can change them at any time by clicking &quot;Shift Schedule.&quot;" restype="string" datatype="javascript">
-        <source>You can set your shifts at your convenience, \ and you can change them at any time by clicking "Shift Schedule."</source>
-        <target>Puedes establecer turnos a tu conveniencia, \ y puedes cambiarlos en cualquier momento haciendo clic en “Horario de Turno.”</target>
+      <trans-unit id="6579" resname="You can set your shifts at your convenience,                and you can change them at any time by clicking &quot;Shift Schedule.&quot;" restype="string" datatype="javascript">
+        <source>You can set your shifts at your convenience,                and you can change them at any time by clicking "Shift Schedule."</source>
+        <target>Puedes establecer turnos a tu conveniencia,  y puedes cambiarlos en cualquier momento haciendo clic en “Horario de Turno.”</target>
       </trans-unit>
-      <trans-unit id="6580" resname="You can set your &lt;b&gt;virtual office hours&lt;/b&gt; at your convenience, \\n               and you can change them at any time. You can update your virtual office \\n               hours, set vacation days, and choose &quot;unavailable&quot; times by clicking \\n               &quot;Practice Hours.&quot;" restype="string" datatype="javascript">
-        <source>You can set your &lt;b&gt;virtual office hours&lt;/b&gt; at your convenience, \ and you can change them at any time. You can update your virtual office \ hours, set vacation days, and choose "unavailable" times by clicking \ "Practice Hours."</source>
-        <target>Puedes establecer tu &lt;b&gt;horario de oficina virtual&lt;/b&gt; a tu conveniencia, \ y puedes cambiarlo en cualquier momento, Puedes actualizar tu horario \ de oficina virtual, establecer días de vacaciones, y escoger horas “no disponibles” haciendo clic en \ “Horario de Consultorio”</target>
+      <trans-unit id="6580" resname="You can set your &lt;b&gt;virtual office hours&lt;/b&gt; at your convenience,                and you can change them at any time. You can update your virtual office                hours, set vacation days, and choose &quot;unavailable&quot; times by clicking                &quot;Practice Hours.&quot;" restype="string" datatype="javascript">
+        <source>You can set your &lt;b&gt;virtual office hours&lt;/b&gt; at your convenience,                and you can change them at any time. You can update your virtual office                hours, set vacation days, and choose "unavailable" times by clicking                "Practice Hours."</source>
+        <target>Puedes establecer tu &lt;b&gt;horario de oficina virtual&lt;/b&gt; a tu conveniencia,  y puedes cambiarlo en cualquier momento, Puedes actualizar tu horario  de oficina virtual, establecer días de vacaciones, y escoger horas “no disponibles” haciendo clic en  “Horario de Consultorio”</target>
       </trans-unit>
-      <trans-unit id="6581" resname="In addition to live virtual consults, you will also receive &lt;b&gt;Inbox \\n                   Consults&lt;/b&gt;. These are paid, detailed messages from your patients that \\n                   appear at the top of your homepage feed and must be answered within 24 \\n                   hours. You will earn $30 when you complete patient consults and submit \\n                   your SOAP Note." restype="string" datatype="javascript">
-        <source>In addition to live virtual consults, you will also receive &lt;b&gt;Inbox \ Consults&lt;/b&gt;. These are paid, detailed messages from your patients that \ appear at the top of your homepage feed and must be answered within 24 \ hours. You will earn $30 when you complete patient consults and submit \ your SOAP Note.</source>
-        <target>Además de consultas virtuales en vivo, también recibirás &lt;b&gt;Consultas de \ Buzón de Entrada&lt;/b&gt;. Estos son mensajes detallados pagados de tus pacientes que \ aparecen en la parte superior del feed de tu página de inicio y deben de ser contestadas en 24 \ horas. Ganarás $30 cuando completes consultas de pacientes y envíes \ tu nota SOAP.</target>
+      <trans-unit id="6581" resname="In addition to live virtual consults, you will also receive &lt;b&gt;Inbox                    Consults&lt;/b&gt;. These are paid, detailed messages from your patients that                    appear at the top of your homepage feed and must be answered within 24                    hours. You will earn $30 when you complete patient consults and submit                    your SOAP Note." restype="string" datatype="javascript">
+        <source>In addition to live virtual consults, you will also receive &lt;b&gt;Inbox                    Consults&lt;/b&gt;. These are paid, detailed messages from your patients that                    appear at the top of your homepage feed and must be answered within 24                    hours. You will earn $30 when you complete patient consults and submit                    your SOAP Note.</source>
+        <target>Además de consultas virtuales en vivo, también recibirás &lt;b&gt;Consultas de  Buzón de Entrada&lt;/b&gt;. Estos son mensajes detallados pagados de tus pacientes que  aparecen en la parte superior del feed de tu página de inicio y deben de ser contestadas en 24  horas. Ganarás $30 cuando completes consultas de pacientes y envíes  tu nota SOAP.</target>
       </trans-unit>
-      <trans-unit id="6582" resname="&lt;b&gt;Inbox Consults&lt;/b&gt; are detailed questions from your patients that \\n                     appear at the top of your homepage feed and must be answered within \\n                     24 hours. You can send clarification questions and have a conversation \\n                     with the patients. To end the consult, simply submit the SOAP note." restype="string" datatype="javascript">
-        <source>&lt;b&gt;Inbox Consults&lt;/b&gt; are detailed questions from your patients that \ appear at the top of your homepage feed and must be answered within \ 24 hours. You can send clarification questions and have a conversation \ with the patients. To end the consult, simply submit the SOAP note.</source>
-        <target>&lt;b&gt;Consultas de Buzón de Entrada&lt;/b&gt; son preguntas detalladas de tus pacientes que \ aparecen en la parte superior del feed de tu página inicio y debe ser contestadas dentro de \ 24 horas. Puedes enviar preguntas de aclaración y tener una conversación con \ pacientes. Para terminar la consulta, simplemente envía la nota SOAP.</target>
+      <trans-unit id="6582" resname="&lt;b&gt;Inbox Consults&lt;/b&gt; are detailed questions from your patients that                      appear at the top of your homepage feed and must be answered within                      24 hours. You can send clarification questions and have a conversation                      with the patients. To end the consult, simply submit the SOAP note." restype="string" datatype="javascript">
+        <source>&lt;b&gt;Inbox Consults&lt;/b&gt; are detailed questions from your patients that                      appear at the top of your homepage feed and must be answered within                      24 hours. You can send clarification questions and have a conversation                      with the patients. To end the consult, simply submit the SOAP note.</source>
+        <target>&lt;b&gt;Consultas de Buzón de Entrada&lt;/b&gt; son preguntas detalladas de tus pacientes que  aparecen en la parte superior del feed de tu página inicio y debe ser contestadas dentro de  24 horas. Puedes enviar preguntas de aclaración y tener una conversación con  pacientes. Para terminar la consulta, simplemente envía la nota SOAP.</target>
       </trans-unit>
-      <trans-unit id="6583" resname="Tip: Please respond to any Inbox Consults within 24 hours. \\n               Submit your answer as a SOAP consult note, or ask your \\n               patient follow-up questions by entering your question and \\n               clicking the “Wait for response” button." restype="string" datatype="javascript">
-        <source>Tip: Please respond to any Inbox Consults within 24 hours. \ Submit your answer as a SOAP consult note, or ask your \ patient follow-up questions by entering your question and \ clicking the “Wait for response” button.</source>
-        <target>Tip: Por favor, responde a cualquier Consulta de Buzón de Entrada dentro de 24 horas. \ Envía tu respuesta como una nota de consulta SOAP, o hazle a tu \ paciente preguntas de seguimiento ingresando tu pregunta y \ haciendo clic el botón “Esperar por respuesta”.</target>
+      <trans-unit id="6583" resname="Tip: Please respond to any Inbox Consults within 24 hours.                Submit your answer as a SOAP consult note, or ask your                patient follow-up questions by entering your question and                clicking the “Wait for response” button." restype="string" datatype="javascript">
+        <source>Tip: Please respond to any Inbox Consults within 24 hours.                Submit your answer as a SOAP consult note, or ask your                patient follow-up questions by entering your question and                clicking the “Wait for response” button.</source>
+        <target>Tip: Por favor, responde a cualquier Consulta de Buzón de Entrada dentro de 24 horas.  Envía tu respuesta como una nota de consulta SOAP, o hazle a tu  paciente preguntas de seguimiento ingresando tu pregunta y  haciendo clic el botón “Esperar por respuesta”.</target>
       </trans-unit>
     </body>
   </file>
@@ -33582,8 +33582,8 @@
         <source>To invite {doctor_detail} to privately video chat with you, please share your email:</source>
         <target>Para invitar a {doctor_detail} a chatear por video  de forma privada contigo, por favor, comparte tu correo electrónico:</target>
       </trans-unit>
-      <trans-unit id="7071" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\&apos;ll get to work." restype="string" datatype="javascript">
-        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\'ll get to work.</source>
+      <trans-unit id="7071" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get to work." restype="string" datatype="javascript">
+        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we'll get to work.</source>
         <target>Soy el Dr. {doctor_name}, un Experto Médico líder en HealthTap que se asegurará que obtengas la mejor respuesta posible a tu pregunta. Mis colegas y yo sólo necesitamos unos pocos detalles más acerca de ti y comenzaremos a trabajar.</target>
       </trans-unit>
       <trans-unit id="7072" resname="To schedule a virtual appointment with {doctor_value} and receive your consult notes, please share your email:" restype="string" datatype="javascript">
@@ -33594,8 +33594,8 @@
         <source>To invite {doctor_value} to accept your request for a virtual appointment, please share your email:</source>
         <target>Para invitar a {doctor_value} a que acepte tu solicitud para una cita virtual, por favor, comparte tu correo electrónico:</target>
       </trans-unit>
-      <trans-unit id="7074" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\&apos;ll get you scheduled." restype="string" datatype="javascript">
-        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\'ll get you scheduled.</source>
+      <trans-unit id="7074" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get you scheduled." restype="string" datatype="javascript">
+        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we'll get you scheduled.</source>
         <target>Soy el Dr. {doctor_name}, un Experto Médico líder en HealthTap que se asegurará que obtengas la mejor respuesta posible a tu pregunta. Mis colegas y yo sólo necesitamos unos pocos detalles más acerca de ti y te agendaremos.</target>
       </trans-unit>
       <trans-unit id="7075" resname="Where should we send the doctor&apos;s response?" restype="string" datatype="javascript">
@@ -33634,9 +33634,9 @@
   </file>
   <file original="public/feelGood/js/concierge_careteam_message.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="7082" resname="We sincerely apologize, but there was an issue completing this transaction. \\n                For further assistance, please contact our Quality Care Team at support@healthtap.com." restype="string" datatype="javascript">
-        <source>We sincerely apologize, but there was an issue completing this transaction. \ For further assistance, please contact our Quality Care Team at support@healthtap.com.</source>
-        <target>Nos disculpamos sinceramente, pero hubo un problema completando esta transacción. \ Para más apoyo, por favor, contacta a nuestro Equipo de Atención de Calidad a support@healthtap.com.</target>
+      <trans-unit id="7082" resname="We sincerely apologize, but there was an issue completing this transaction.                 For further assistance, please contact our Quality Care Team at support@healthtap.com." restype="string" datatype="javascript">
+        <source>We sincerely apologize, but there was an issue completing this transaction.                 For further assistance, please contact our Quality Care Team at support@healthtap.com.</source>
+        <target>Nos disculpamos sinceramente, pero hubo un problema completando esta transacción.  Para más apoyo, por favor, contacta a nuestro Equipo de Atención de Calidad a support@healthtap.com.</target>
       </trans-unit>
     </body>
   </file>
@@ -34018,9 +34018,9 @@
         <source>Talk to a doctor</source>
         <target>Habla con un doctor</target>
       </trans-unit>
-      <trans-unit id="7165" resname="Send your question to receive one or more information text answers \\n          within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
-        <source>Send your question to receive one or more information text answers \ within a day from our network of {n} doctors across 137 specialties.</source>
-        <target>Envía tu pregunta para recibir una o más repuestas de información en texto \ dentro de un día de nuestra red de {n} doctores en 137 especialidades.</target>
+      <trans-unit id="7165" resname="Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
+        <source>Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties.</source>
+        <target>Envía tu pregunta para recibir una o más repuestas de información en texto  dentro de un día de nuestra red de {n} doctores en 137 especialidades.</target>
       </trans-unit>
       <trans-unit id="7166" resname="Send a question or talk to a doctor?" restype="string" datatype="javascript">
         <source>Send a question or talk to a doctor?</source>
@@ -34074,9 +34074,9 @@
   </file>
   <file original="public/feelGood/js/ask_docs/doctor_search_header.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="7177" resname="No {specialist_name} is available right now. \\n          You may still consult one by secure message or appointment." restype="string" datatype="javascript">
-        <source>No {specialist_name} is available right now. \ You may still consult one by secure message or appointment.</source>
-        <target>Ningún {specialist_name} está disponible en este momento. \ Puedes seguir consultando uno con un mensaje o cita.</target>
+      <trans-unit id="7177" resname="No {specialist_name} is available right now.           You may still consult one by secure message or appointment." restype="string" datatype="javascript">
+        <source>No {specialist_name} is available right now.           You may still consult one by secure message or appointment.</source>
+        <target>Ningún {specialist_name} está disponible en este momento.  Puedes seguir consultando uno con un mensaje o cita.</target>
       </trans-unit>
       <trans-unit id="7178" resname="No {specialist_name} is available." restype="string" datatype="javascript">
         <source>No {specialist_name} is available.</source>
@@ -34202,9 +34202,9 @@
         <source>Second Opinion Consult</source>
         <target>Consulta de Segunda Opinión</target>
       </trans-unit>
-      <trans-unit id="7201" resname="{bold_tag_start}NOTE:{bold_tag_end} This is a second opinion consult. \\n          You may answer questions, give information, and provide your professional opinion. \\n          We informed this patient that you are unable to make new diagnoses or give specific treatment advice during this consult." restype="string" datatype="javascript">
-        <source>{bold_tag_start}NOTE:{bold_tag_end} This is a second opinion consult. \ You may answer questions, give information, and provide your professional opinion. \ We informed this patient that you are unable to make new diagnoses or give specific treatment advice during this consult.</source>
-        <target>{bold_tag_start}NOTA:{bold_tag_end} Esta es una consulta de segunda opinión. \ Puedes contestar preguntas, dar información, y brindar tu opinión profesional. \ Informamos a este paciente que no eres capaz de hacer un nuevo diagnóstico y dar consejo de tratamiento específico durante esta consulta.</target>
+      <trans-unit id="7201" resname="{bold_tag_start}NOTE:{bold_tag_end} This is a second opinion consult.           You may answer questions, give information, and provide your professional opinion.           We informed this patient that you are unable to make new diagnoses or give specific treatment advice during this consult." restype="string" datatype="javascript">
+        <source>{bold_tag_start}NOTE:{bold_tag_end} This is a second opinion consult.           You may answer questions, give information, and provide your professional opinion.           We informed this patient that you are unable to make new diagnoses or give specific treatment advice during this consult.</source>
+        <target>{bold_tag_start}NOTA:{bold_tag_end} Esta es una consulta de segunda opinión.  Puedes contestar preguntas, dar información, y brindar tu opinión profesional.  Informamos a este paciente que no eres capaz de hacer un nuevo diagnóstico y dar consejo de tratamiento específico durante esta consulta.</target>
       </trans-unit>
       <trans-unit id="7202" resname="(LIVE) Virtual Consult with {patient_name} — HealthTap" restype="string" datatype="javascript">
         <source>(LIVE) Virtual Consult with {patient_name} — HealthTap</source>
@@ -34286,9 +34286,9 @@
         <source>Already answered call</source>
         <target>Llamada ya contestada</target>
       </trans-unit>
-      <trans-unit id="7222" resname="Please check if the call is open in another window. \\n              If not, reload this page to resume the call." restype="string" datatype="javascript">
-        <source>Please check if the call is open in another window. \ If not, reload this page to resume the call.</source>
-        <target>Por favor, revisa si la llamada está abierta en otra ventana. \ Si no es así, recarga esta página para continuar la llamada.</target>
+      <trans-unit id="7222" resname="Please check if the call is open in another window.               If not, reload this page to resume the call." restype="string" datatype="javascript">
+        <source>Please check if the call is open in another window.               If not, reload this page to resume the call.</source>
+        <target>Por favor, revisa si la llamada está abierta en otra ventana.  Si no es así, recarga esta página para continuar la llamada.</target>
       </trans-unit>
     </body>
   </file>

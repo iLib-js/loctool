@@ -3647,9 +3647,9 @@
   </file>
   <file original="public/feelGood/templates/ui_modules/about_content.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="794" resname="{height_ft}&apos;{height_in}\&quot; ({height_meters}m)" restype="string" datatype="javascript">
-        <source>{height_ft}'{height_in}\" ({height_meters}m)</source>
-        <target state="translated">{height_ft}'{height_in}\" ({height_meters}m)</target>
+      <trans-unit id="794" resname="{height_ft}&apos;{height_in}&quot; ({height_meters}m)" restype="string" datatype="javascript">
+        <source>{height_ft}'{height_in}" ({height_meters}m)</source>
+        <target state="translated">{height_ft}'{height_in}" ({height_meters}m)</target>
       </trans-unit>
       <trans-unit id="795" resname="{weight_kilograms}kg" restype="string" datatype="javascript">
         <source>{weight_kilograms}kg</source>
@@ -3983,9 +3983,9 @@
   </file>
   <file original="public/feelGood/js/app.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="874" resname="We&apos;ve registered your vote for \&quot;{name}\&quot; and will encourage more doctors to review the app." restype="string" datatype="javascript">
-        <source>We've registered your vote for \"{name}\" and will encourage more doctors to review the app.</source>
-        <target state="translated">Hemos registrado tu voto por \"{name}\" y alentaremos a más doctores a valorar la aplicación.</target>
+      <trans-unit id="874" resname="We&apos;ve registered your vote for &quot;{name}&quot; and will encourage more doctors to review the app." restype="string" datatype="javascript">
+        <source>We've registered your vote for "{name}" and will encourage more doctors to review the app.</source>
+        <target state="translated">Hemos registrado tu voto por "{name}" y alentaremos a más doctores a valorar la aplicación.</target>
       </trans-unit>
     </body>
   </file>

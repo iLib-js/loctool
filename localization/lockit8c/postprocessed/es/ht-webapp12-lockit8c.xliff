@@ -4532,19 +4532,13 @@
   </file>
   <file original="public/multipage/legacy/js/mvc/message_layer_view.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="732" resname="Earn {span_tag_start}{points}{span_tag_end} points \\n            and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
-        <source>Earn {span_tag_start}{points}{span_tag_end} points \
-            and a boost in your Helpfulness and DocScores.</source>
-        <target state="translated">Gana {span_tag_start}{points}{span_tag_end} puntos \
-            y un impulso en tu Utilidad y DocScores.</target>
+      <trans-unit id="732" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
+        <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
+        <target state="translated">Gana {span_tag_start}{points}{span_tag_end} puntos             y un impulso en tu Utilidad y DocScores.</target>
       </trans-unit>
-      <trans-unit id="733" resname="*HealthTap credits are not awarded for clarifications, appointment requests, \\n              responses sent after 72 hours of receiving a patient message or when a patient uses \\n              your promo code for payment." restype="string" datatype="javascript">
-        <source>*HealthTap credits are not awarded for clarifications, appointment requests, \
-              responses sent after 72 hours of receiving a patient message or when a patient uses \
-              your promo code for payment.</source>
-        <target state="translated">*Los créditos HealthTap no son otorgados por aclaratorias, solicitudes de citas, \
-              respuestas enviadas luego de 72 horas de recibir un mensaje del paciente o cuando un paciente utiliza \
-              tu código de promoción por el pago.</target>
+      <trans-unit id="733" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
+        <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
+        <target state="translated">*Los créditos HealthTap no son otorgados por aclaratorias, solicitudes de citas,               respuestas enviadas luego de 72 horas de recibir un mensaje del paciente o cuando un paciente utiliza               tu código de promoción por el pago.</target>
       </trans-unit>
       <trans-unit id="8048" resname="CHOOSE DOCTOR TO REFER" restype="string" datatype="javascript">
         <source>CHOOSE DOCTOR TO REFER</source>
@@ -4586,19 +4580,9 @@
   </file>
   <file original="public/multipage/legacy/js/mvc/feed_view.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="734" resname="HealthTap is for informational purposes only. \\n          Content on HealthTap (including answers) should not be used for medical advice, \\n          diagnosis, or treatment, and interactions on HealthTap do not create a \\n          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \\n          in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you \\n          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
-        <source>HealthTap is for informational purposes only. \
-          Content on HealthTap (including answers) should not be used for medical advice, \
-          diagnosis, or treatment, and interactions on HealthTap do not create a \
-          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \
-          in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you \
-          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target state="translated">HealthTap es sólo para fines informativos. \
-          El contenido en HealthTap (incluyendo las respuestas) no deberán usarse para asesoría, \
-          diagnóstico o tratamiento médico, y las interacciones en HealthTap no crean una \
-          relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría médica profesional \
-          en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si \
-          crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
+      <trans-unit id="734" resname="HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+        <target state="translated">HealthTap es sólo para fines informativos.           El contenido en HealthTap (incluyendo las respuestas) no deberán usarse para asesoría,           diagnóstico o tratamiento médico, y las interacciones en HealthTap no crean una           relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría médica profesional           en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si           crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
       <trans-unit id="8096" resname="Thanked" restype="string" datatype="javascript">
         <source>Thanked</source>
@@ -4720,23 +4704,13 @@
   </file>
   <file original="public/multipage/js/member/newMemberHome.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="735" resname="HealthTap is for informational purposes only.  Content on HealthTap \\n    (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions \\n    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \\n    medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if \\n    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
-        <source>HealthTap is for informational purposes only.  Content on HealthTap \
-    (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions \
-    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \
-    medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if \
-    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target state="translated">HealthTap es sólo para fines informativos.  El contenido en HealthTap \
-    (incluyendo las respuestas) no deberán usarse para asesoría, diagnóstico o tratamiento médico, y las interacciones \
-    en HealthTap no crean una relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría \
-    médica profesional en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si \
-    crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
+      <trans-unit id="735" resname="HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+        <target state="translated">HealthTap es sólo para fines informativos.  El contenido en HealthTap     (incluyendo las respuestas) no deberán usarse para asesoría, diagnóstico o tratamiento médico, y las interacciones     en HealthTap no crean una relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría     médica profesional en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si     crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
-      <trans-unit id="736" resname="Connect with women doctors who are also mothers for deeper, \\n    experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
-        <source>Connect with women doctors who are also mothers for deeper, \
-    experience-based answers to all your pregnancy and parenting questions.</source>
-        <target state="translated">Conéctate con doctoras que también son mamás para unas respuestas más profundas \
-    y experimentadas a todas tus preguntas de embarazo y crianza.</target>
+      <trans-unit id="736" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
+        <source>Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions.</source>
+        <target state="translated">Conéctate con doctoras que también son mamás para unas respuestas más profundas     y experimentadas a todas tus preguntas de embarazo y crianza.</target>
       </trans-unit>
       <trans-unit id="8197" resname="Disclaimer" restype="string" datatype="javascript">
         <source>Disclaimer</source>
@@ -4770,11 +4744,9 @@
   </file>
   <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="739" resname="The compensation report from {start_date} to {end_date} is being generated. \\n   It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. \
-			It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">El informe de compensación desde {start_date} hasta {end_date} está siendo generado. \
-			Va a tomar un tiempo. ¡Obtendrás un correo electrónico una vez esté listo!</target>
+      <trans-unit id="739" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">El informe de compensación desde {start_date} hasta {end_date} está siendo generado. 			Va a tomar un tiempo. ¡Obtendrás un correo electrónico una vez esté listo!</target>
       </trans-unit>
       <trans-unit id="8411" resname="The compensation report from {start_date} to {end_date} has been generated ! Please check your email!" restype="string" datatype="javascript">
         <source>The compensation report from {start_date} to {end_date} has been generated ! Please check your email!</source>
@@ -4796,25 +4768,17 @@
   </file>
   <file original="public/javascripts/controllers/user_questions/show_controller.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="742" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\\n            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
-        <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\
-            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
-        <target state="translated">1#¡Hay &lt;b&gt;{n} respuesta más&lt;/b&gt; de los médicos para esta pregunta!|\
-            #¡Hay &lt;b&gt;{n} respuestas más&lt;/b&gt; de los médicos para esta pregunta!</target>
+      <trans-unit id="742" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
+        <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
+        <target state="translated">1#¡Hay &lt;b&gt;{n} respuesta más&lt;/b&gt; de los médicos para esta pregunta!|            #¡Hay &lt;b&gt;{n} respuestas más&lt;/b&gt; de los médicos para esta pregunta!</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/app-controller.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="743" resname="We&apos;re sorry, but it seems your internet connection does not meet\\n                   our minimum requirement for consults. Please try again with a more stable network.\\n                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \\n                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
-        <source>We're sorry, but it seems your internet connection does not meet\
-                   our minimum requirement for consults. Please try again with a more stable network.\
-                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \
-                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
-        <target state="translated">Lo sentimos, pero parece que tu conexión a internet no cumple\
-                   nuestros requisitos mínimos para las consultas. Por favor, intenta de nuevo con una red más estable.\
-                   &lt;br&gt;&lt;br&gt;Para asistencia, puedes contactarnos al \
-                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
+      <trans-unit id="743" resname="We&apos;re sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
+        <source>We're sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
+        <target state="translated">Lo sentimos, pero parece que tu conexión a internet no cumple                   nuestros requisitos mínimos para las consultas. Por favor, intenta de nuevo con una red más estable.                   &lt;br&gt;&lt;br&gt;Para asistencia, puedes contactarnos al                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
       </trans-unit>
       <trans-unit id="8614" resname="Connecting" restype="string" datatype="javascript">
         <source>Connecting</source>
@@ -4864,11 +4828,9 @@
   </file>
   <file original="public/feelGood/js/ask_docs/similar_questions.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="753" resname="Send your question to receive one or more information text answers \\n          within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
-        <source>Send your question to receive one or more information text answers \
-          within a day from our network of {n} doctors across 137 specialties.</source>
-        <target state="translated">Envía tu pregunta para recibir una respuesta textual educativa o más \
-          dentro de un día por parte de nuestra red de {n} médicos a lo largo de 137 especialidades.</target>
+      <trans-unit id="753" resname="Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
+        <source>Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties.</source>
+        <target state="translated">Envía tu pregunta para recibir una respuesta textual educativa o más           dentro de un día por parte de nuestra red de {n} médicos a lo largo de 137 especialidades.</target>
       </trans-unit>
       <trans-unit id="10027" resname="Talk to a doctor" restype="string" datatype="javascript">
         <source>Talk to a doctor</source>
@@ -4918,11 +4880,9 @@
   </file>
   <file original="public/feelGood/js/ask_docs/doctor_search_header.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="754" resname="No {specialist_name} is available right now. \\n          You may still consult one by secure message or appointment." restype="string" datatype="javascript">
-        <source>No {specialist_name} is available right now. \
-          You may still consult one by secure message or appointment.</source>
-        <target state="translated">Ningún {specialist_name} está disponible en este momento. \
-          Todavía puedes consultar una por mensaje protegido o cita.</target>
+      <trans-unit id="754" resname="No {specialist_name} is available right now.           You may still consult one by secure message or appointment." restype="string" datatype="javascript">
+        <source>No {specialist_name} is available right now.           You may still consult one by secure message or appointment.</source>
+        <target state="translated">Ningún {specialist_name} está disponible en este momento.           Todavía puedes consultar una por mensaje protegido o cita.</target>
       </trans-unit>
       <trans-unit id="10042" resname="No {specialist_name} is available." restype="string" datatype="javascript">
         <source>No {specialist_name} is available.</source>
@@ -42810,8 +42770,8 @@
         <source>To invite {doctor_detail} to privately video chat with you, please share your email:</source>
         <target state="translated">Para invitar a {doctor_detail} a chatear por video  de forma privada contigo, por favor, comparte tu correo electrónico:</target>
       </trans-unit>
-      <trans-unit id="9915" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\&apos;ll get to work." restype="string" datatype="javascript">
-        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\'ll get to work.</source>
+      <trans-unit id="9915" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get to work." restype="string" datatype="javascript">
+        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we'll get to work.</source>
         <target state="translated">Soy el Dr. {doctor_name}, un Experto Médico líder en HealthTap que se asegurará que obtengas la mejor respuesta posible a tu pregunta. Mis colegas y yo sólo necesitamos unos pocos detalles más acerca de ti y comenzaremos a trabajar.</target>
       </trans-unit>
       <trans-unit id="9916" resname="To schedule a virtual appointment with {doctor_value} and receive your consult notes, please share your email:" restype="string" datatype="javascript">
@@ -42822,8 +42782,8 @@
         <source>To invite {doctor_value} to accept your request for a virtual appointment, please share your email:</source>
         <target state="translated">Para invitar a {doctor_value} a que acepte tu solicitud para una cita virtual, por favor, comparte tu correo electrónico:</target>
       </trans-unit>
-      <trans-unit id="9918" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\&apos;ll get you scheduled." restype="string" datatype="javascript">
-        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we\'ll get you scheduled.</source>
+      <trans-unit id="9918" resname="I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we&apos;ll get you scheduled." restype="string" datatype="javascript">
+        <source>I am Dr. {doctor_name}, a leading Medical Expert on HealthTap who will make sure you get the best answer possible for your question. My colleagues and I just need a few more details about you and we'll get you scheduled.</source>
         <target state="translated">Soy el Dr. {doctor_name}, un Experto Médico líder en HealthTap que se asegurará que obtengas la mejor respuesta posible a tu pregunta. Mis colegas y yo sólo necesitamos unos pocos detalles más acerca de ti y te agendaremos.</target>
       </trans-unit>
       <trans-unit id="9919" resname="Where should we send the doctor&apos;s response?" restype="string" datatype="javascript">
