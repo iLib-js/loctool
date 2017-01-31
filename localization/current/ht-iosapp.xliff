@@ -43196,6 +43196,18 @@ Doctors are online ready to help.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/HTSymptomCTAHeaderCollectionReusableView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="18" resname="Experiencing symptoms?" restype="string" datatype="x-objective-c">
+        <source>Experiencing symptoms?</source>
+        <target state="translated">¿Experimentando síntomas?</target>
+      </trans-unit>
+      <trans-unit id="19" resname="Find out why" restype="string" datatype="x-objective-c">
+        <source>Find out why</source>
+        <target state="translated">Averigua por qué</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="feelgood/HTSymptomCTAHeaderCollectionReusableView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="Experiencing symptoms?" restype="string" datatype="x-objective-c">
