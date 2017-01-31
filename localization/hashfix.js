@@ -69,9 +69,11 @@ for (var i = 0; i < units.length; i++) {
 		}
 		unit.key = newkey;
 	} else if (unit.datatype === "javascript") {
-		var newkey = jsf.makeKey(unit.source);
+		var newkey = JavaScriptFile.unescapeString(unit.key).replace(/\\\\n/g, "").replace(/\\n/g, "");
 		if ( unit.key !== newkey ) {
 			console.log("File: " + unit.file + " key: " + unit.key + " -> " + newkey);
+			unit.source = newkey;
+			unit.target = JavaScriptFile.unescapeString(unit.target.replace(/ \\ /g, "  "));
 		}
 		unit.key = newkey;
 	}
