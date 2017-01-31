@@ -493,7 +493,7 @@
   </file>
   <file original="public/feelGood/templates/inbox_training_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="378" resname="RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({     bold_tag_start: &apos;&lt;b&gt;&apos;,     bold_tag_end: &apos;&lt;/b&gt;&apos;    })" restype="string" datatype="html">
+      <trans-unit id="378" resname="RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({ bold_tag_start: &apos;&lt;b&gt;&apos;, bold_tag_end: &apos;&lt;/b&gt;&apos; })" restype="string" datatype="html">
         <source>RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({
     	bold_tag_start: '&lt;b&gt;',
     	bold_tag_end: '&lt;/b&gt;'
@@ -506,7 +506,7 @@
   </file>
   <file original="public/javascripts/templates/experts/doc2doc_answer_feedback.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="380" resname="You earned    &lt;span class=&quot;points_earned_highlight&quot;&gt;     &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="380" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
         <source>You earned
 				&lt;span class="points_earned_highlight"&gt;
 					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
@@ -516,14 +516,14 @@
 					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; 积分
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="381" resname="Today, you&apos;ve earned &lt;span class=&quot;todays_points_highlight&quot;&gt; 180 points&lt;/span&gt; for helping millions.   &lt;br&gt;   Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points." restype="string" datatype="html">
+      <trans-unit id="381" resname="Today, you&apos;ve earned&lt;span class=&quot;todays_points_highlight&quot;&gt;180 points&lt;/span&gt;for helping millions.&lt;br&gt;Answer&lt;b&gt;X&lt;/b&gt;more questions in the next&lt;b&gt;X&lt;/b&gt;hours to double your daily points." restype="string" datatype="html">
         <source>Today, you've earned &lt;span class="todays_points_highlight"&gt; 180 points&lt;/span&gt; for helping millions.
 			&lt;br&gt;
 			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
         <target state="translated">今天，您已经获得 &lt;span class="todays_points_highlight"&gt; 180积分&lt;/span&gt; 为需要帮助的数百万人。&lt;br&gt;
 			解答 &lt;b&gt;X&lt;/b&gt; 更多问题在接下来的&lt;b&gt;X&lt;/b&gt; 时间，可以双倍您的每日积分。</target>
       </trans-unit>
-      <trans-unit id="382" resname="Here are a few patient questions to keep you going.  &lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="382" resname="Here are a few patient questions to keep you going.&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Here are a few patient questions to keep you going.
 		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
         <target state="translated">&lt;a&gt;查看您的所有解答 &amp;raquo;&lt;/a&gt;</target>
@@ -532,7 +532,7 @@
   </file>
   <file original="public/javascripts/templates/layers/answerPanel.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="383" resname="Create a Tip  &lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="383" resname="Create a Tip&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
         <source>Create a Tip
 		&lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target state="translated">创建一则小贴士
@@ -542,7 +542,7 @@
   </file>
   <file original="public/javascripts/templates/layers/askDoc.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="384" resname="Ask Doctors Any Question  &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="384" resname="Ask Doctors Any Question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask Doctors Any Question
 		&lt;span class="sub_title"&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target state="translated">询问医生任何问题
@@ -552,7 +552,7 @@
   </file>
   <file original="public/javascripts/templates/layers/askDocSpelling.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="385" resname="Ask doctors any question  &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="385" resname="Ask doctors any question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask doctors any question
 		&lt;span class="sub_title"&gt;Anytime. Anywhere. &lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target state="translated">询问医生任何问题
@@ -562,7 +562,7 @@
   </file>
   <file original="public/javascripts/templates/layers/doc2DocSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="386" resname="Curbside Consult &lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;   &lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="386" resname="Curbside Consult&lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
         <source>Curbside Consult &lt;span class="super"&gt;beta&lt;/span&gt;
 			&lt;span class="sub_title"&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
         <target state="translated">路边咨询 &lt;span class=”super”&gt;测试版&lt;/span&gt;
@@ -572,7 +572,7 @@
   </file>
   <file original="public/javascripts/templates/layers/editQuestion.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="387" resname="EDIT YOUR QUESTION  &lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!" restype="string" datatype="html">
+      <trans-unit id="387" resname="EDIT YOUR QUESTION&lt;span class=&quot;sub_title&quot;&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!" restype="string" datatype="html">
         <source>EDIT YOUR QUESTION
 		&lt;span class="sub_title"&gt;Want to change your question? You can do that here. Remember, proper grammar and correct spelling increase your chances of getting a great answer!</source>
         <target state="translated">编辑您的问题
@@ -582,13 +582,13 @@
   </file>
   <file original="public/javascripts/templates/layers/guidelines.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="388" resname="GUIDELINES  &lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="388" resname="GUIDELINES&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
         <source>GUIDELINES
 		&lt;span class="sub_title"&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
         <target state="translated">指南
 		&lt;span class="sub_title"&gt;要提出一个优秀的HealthTap问题，请使用这些有帮助的指南&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="389" resname="Sweat the details... at least a little.  &lt;a onclick=&quot;$(&amp;apos;#ex1&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why do I have a rash?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="389" resname="Sweat the details... at least a little.&lt;a onclick=&quot;$(&amp;apos;#ex1&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I had an itchy dry rash on the inside of my elbows for 3 weeks. What could be the causes?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Why do I have a rash?&lt;/span&gt;" restype="string" datatype="html">
         <source>Sweat the details... at least a little.  &lt;a onclick="$(&amp;apos;#ex1&amp;apos;).toggle();" class='exampleToggle' id='h1'&gt;Hide examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex1' class='guidelineEx'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; I had an itchy dry rash on the inside of my elbows for 3 weeks.  What could be the causes?&lt;br&gt;
@@ -599,7 +599,7 @@
 					&lt;span class="good"&gt;好：&lt;/span&gt;在过去3个星期里，为什么我的手肘内部一直瘙痒，从而导致干性皮疹？这可能由什么导致？&lt;br&gt;
 					&lt;span class="bad"&gt;不太好：&lt;/span&gt; 为什么我有一个皮疹？&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="390" resname="Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick=&quot;$(&amp;apos;#ex2&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt; Why back pain?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="390" resname="Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.&lt;a onclick=&quot;$(&amp;apos;#ex2&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h2&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex2&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Why back pain?&lt;/span&gt;" restype="string" datatype="html">
         <source>Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.  &lt;a onclick="$(&amp;apos;#ex2&amp;apos;).toggle();" class='exampleToggle' id='h2'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex2' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; What could cause low back pain after doing chores in the house – I’ve never had a back injury?&lt;br&gt;
@@ -610,7 +610,7 @@
 					&lt;span class=”good”&gt;好：&lt;/span&gt; 是什么导致在家里做家务后会后背疼 - 我的背部从来没有受过伤？&lt;br&gt;
 					&lt;span class=”bad”&gt;不太好：&lt;/span&gt; 什么背疼？&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="391" resname="Include sex/gender, when relevant.  &lt;a onclick=&quot;$(&amp;apos;#ex3&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt; What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="391" resname="Include sex/gender, when relevant.&lt;a onclick=&quot;$(&amp;apos;#ex3&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h3&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex3&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Sex/Gender helpful:&lt;/span&gt;What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Sex/Gender not necessary:&lt;/span&gt;What could cause a rubbery bump, the size of a jelly bean, under the skin on the back of my hand?&lt;/span&gt;" restype="string" datatype="html">
         <source>Include sex/gender, when relevant.  &lt;a onclick="$(&amp;apos;#ex3&amp;apos;).toggle();" class='exampleToggle' id='h3'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex3' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Sex/Gender helpful:&lt;/span&gt; What could cause a lump, the size of a quarter, just under a man’s breast.&lt;br&gt;
@@ -621,7 +621,7 @@
 					&lt;span class=”good”&gt;性别有帮助:&lt;/span&gt;什么可能导致男人胸部下面一个四分之一大小的肿块？&lt;br&gt;
 					&lt;span class=”bad”&gt;不需要性别：&lt;/span&gt;在我的手背皮肤上。这个类似橡胶凸起，果冻豆的大小的东西是什么？&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="392" resname="Include an approximate age.  &lt;a onclick=&quot;$(&amp;apos;#ex4&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;     &lt;span class=&quot;good&quot;&gt;&lt;/span&gt; Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="392" resname="Include an approximate age.&lt;a onclick=&quot;$(&amp;apos;#ex4&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h4&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex4&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Different ages will lead to different answers:&lt;/span&gt;For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts. What are some things that could cause this?&lt;br&gt;&lt;span class=&quot;good&quot;&gt;&lt;/span&gt;Why has my 3 year old been experiencing some fever and limping as if his leg hurts for the past 2 days?&lt;/span&gt;" restype="string" datatype="html">
         <source>Include an approximate age.  &lt;a onclick="$(&amp;apos;#ex4&amp;apos;).toggle();" class='exampleToggle' id='h4'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex4' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Different ages will lead to different answers:&lt;/span&gt; For the past 2 days my 15 year old son has had a fever and been limping as if his leg hurts.  What are some things that could cause this? &lt;br&gt;
@@ -632,7 +632,7 @@
 					&lt;span class="good"&gt;不同的年龄段有不同的解答：&lt;/span&gt; 前两天，我15岁的儿子发烧了，而且走路一瘸一拐的，好像腿受了伤一样。哪些东西可能导致这种情况？&lt;br&gt;
 					&lt;span class="good"&gt;&lt;/span&gt; 为什么前两天我3岁的孩子发着烧，走路还一瘸一拐，好像腿受了一样呢？使问题尽可能的对其他人是有帮助的。</target>
       </trans-unit>
-      <trans-unit id="393" resname="Include weight, height and dosage units, where relevant.  &lt;a onclick=&quot;$(&amp;apos;#ex5&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 3, weighs 27, and has a height of 34. Is he OK for his age?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="393" resname="Include weight, height and dosage units, where relevant.&lt;a onclick=&quot;$(&amp;apos;#ex5&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h5&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex5&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;My son is 3, weighs 27, and has a height of 34. Is he OK for his age?&lt;/span&gt;" restype="string" datatype="html">
         <source>Include weight, height and dosage units, where relevant.  &lt;a onclick="$(&amp;apos;#ex5&amp;apos;).toggle();" class='exampleToggle' id='h5'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex5' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; My son is 3 years old, weights 27 pounds, and is 34 inches tall. Is his size OK for his age?&lt;br&gt;
@@ -643,7 +643,7 @@
 					&lt;span class="good"&gt;好：&lt;/span&gt;我3岁大的儿子，重27磅，高34英尺。在他这个年龄这个身高体重正常吗？&lt;br&gt;
 					&lt;span class="bad"&gt;不太好：&lt;/span&gt;我3岁大的儿子，重27磅，高34英尺。在他这个年龄正常吗？&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="394" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick=&quot;$(&amp;apos;#ex6&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="394" resname="Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.&lt;a onclick=&quot;$(&amp;apos;#ex6&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h6&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex6&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?&lt;/span&gt;" restype="string" datatype="html">
         <source>Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.  &lt;a onclick="$(&amp;apos;#ex6&amp;apos;).toggle();" class='exampleToggle' id='h6'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex6' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
@@ -654,7 +654,7 @@
 					&lt;span class=”good”&gt;好：&lt;/span&gt;我5岁大的儿子，55磅，正在发烧。他服用5ml的泰诺（对乙酰氨基酚120mg / 5ml），但还在发烧。体重和年龄这么大的孩子可以服用更大剂量的泰诺吗？&lt;br&gt;
 					&lt;span class=”bad”&gt;不太好:&lt;/span&gt;我的儿子5岁，体重55，有一点发烧。已服用过泰诺但还在发烧。服用更多泰诺吗？&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="395" resname="Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick=&quot;$(&amp;apos;#ex7&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Do antibiotics work in children?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="395" resname="Try to avoid questions that set doctors up for a YES or NO answer.&lt;a onclick=&quot;$(&amp;apos;#ex7&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h7&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex7&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;How do antibiotics work in young, school-aged children?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Do antibiotics work in children?&lt;/span&gt;" restype="string" datatype="html">
         <source>Try to avoid questions that set doctors up for a YES or NO answer.  &lt;a onclick="$(&amp;apos;#ex7&amp;apos;).toggle();" class='exampleToggle' id='h7'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex7' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; How do antibiotics work in young, school-aged children?&lt;br&gt;
@@ -665,7 +665,7 @@
 					&lt;span class=”good”&gt;好：&lt;/span&gt;抗生素如何在年轻的学龄儿童中起作用？&lt;br&gt;
 					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;抗生素对儿童起作用吗？&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="396" resname="Try to leave opinions out.  &lt;a onclick=&quot;$(&amp;apos;#ex8&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="396" resname="Try to leave opinions out.&lt;a onclick=&quot;$(&amp;apos;#ex8&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Are those anti-vaccine folks completely clueless or just in denial?&lt;/span&gt;" restype="string" datatype="html">
         <source>Try to leave opinions out.  &lt;a onclick="$(&amp;apos;#ex8&amp;apos;).toggle();" class='exampleToggle' id='h8'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex8' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
@@ -676,7 +676,7 @@
 					&lt;span class=”good”&gt;好：&lt;/span&gt; 为什么有些人会抵抗疫苗，明明疫苗可以用来预防疾病？&lt;br&gt;
 					&lt;span class="bad"&gt;不太好：&lt;/span&gt;那些反疫苗的人是彻底地不懂还是只是拒绝接受？&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="397" resname="The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick=&quot;$(&amp;apos;#ex9&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Doing curls, felt something and arm hurts?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="397" resname="The clearer, the better. Use good grammar, avoid profanities and stay away from slang.&lt;a onclick=&quot;$(&amp;apos;#ex9&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h9&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex9&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Doing curls, felt something and arm hurts?&lt;/span&gt;" restype="string" datatype="html">
         <source>The clearer, the better. Use good grammar, avoid profanities and stay away from slang.  &lt;a onclick="$(&amp;apos;#ex9&amp;apos;).toggle();" class='exampleToggle' id='h9'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex9' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?&lt;br&gt;
@@ -687,7 +687,7 @@
 					&lt;span class=”good”&gt;好：&lt;/span&gt;我当时正在锻炼手臂，然后感到二头肌处有火烧一样的疼痛。我是肌肉撕裂了吗？&lt;br&gt;
 					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;做弯举，感觉不对和胳膊受伤？&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="398" resname="Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick=&quot;$(&amp;apos;#ex10&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="398" resname="Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.&lt;a onclick=&quot;$(&amp;apos;#ex10&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h10&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex10&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;And it’s been going on for two days, and pus is coming out too?&lt;/span&gt;" restype="string" datatype="html">
         <source>Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.  &lt;a onclick="$(&amp;apos;#ex10&amp;apos;).toggle();" class='exampleToggle' id='h10'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex10' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
@@ -698,7 +698,7 @@
 					&lt;span class=”good”&gt;好：&lt;/span&gt; 我两岁的儿子两个月前得了耳管炎，现在还发烧了，右耳会流脓。这正常吗？&lt;br&gt;
 					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;  这种症状已经持续两天，也一直有浓流出来吗？&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="399" resname="To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).  &lt;a onclick=&quot;$(&amp;apos;#ex11&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="399" resname="To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).&lt;a onclick=&quot;$(&amp;apos;#ex11&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.&lt;/span&gt;" restype="string" datatype="html">
         <source>To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).  &lt;a onclick="$(&amp;apos;#ex11&amp;apos;).toggle();" class='exampleToggle' id='h11'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex11' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;
@@ -709,7 +709,7 @@
 					&lt;span class="good"&gt;好：&lt;/span&gt;我叫John Doe，我比较好奇是否有针对帕金森综合征的有效治疗方法。在过去三年里有新的，好的治疗方法面世吗？&lt;br&gt;
 					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;  您好，医生。我叫John Doe，我比较好奇是否有针对帕金森综合征的有效治疗方法。&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="400" resname="Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick=&quot;$(&amp;apos;#ex12&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  How do u no ur prego if u never have reg periods?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="400" resname="Avoid using too many abbreviations because these can get downright confusing.&lt;a onclick=&quot;$(&amp;apos;#ex12&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h12&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex12&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;How do u no ur prego if u never have reg periods?&lt;/span&gt;" restype="string" datatype="html">
         <source>Avoid using too many abbreviations because these can get downright confusing.  &lt;a onclick="$(&amp;apos;#ex12&amp;apos;).toggle();" class='exampleToggle' id='h12'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex12' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; How do you know if you are pregnant, if you never have regular periods?&lt;br&gt;
@@ -720,7 +720,7 @@
 					&lt;span class=”good”&gt;好：&lt;/span&gt;如果您没有来生理周期，您是如何知道您怀孕了？&lt;br&gt;
 					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;如果您没有正常的生理周期，您是如何知道您怀孕了？&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="401" resname="Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick=&quot;$(&amp;apos;#ex13&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;    &lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;     &lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;     &lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  Porque mi brazo me duele mucho esta semana?    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="401" resname="Ask in English. This is the language commonly used by doctors on HealthTap.&lt;a onclick=&quot;$(&amp;apos;#ex13&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I pruned some trees last weekend and my arm has been hurting for 2 days. Could this be the cause?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Porque mi brazo me duele mucho esta semana?&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick="$(&amp;apos;#ex13&amp;apos;).toggle();" class='exampleToggle' id='h13'&gt;Show examples&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex13' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;Good:&lt;/span&gt; I pruned some trees last weekend and my arm has been hurting for 2 days.  Could this be the cause?&lt;br&gt;
@@ -735,7 +735,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/expertNewEpisode.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="402" resname="MESSAGE  &lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="402" resname="MESSAGE&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
         <source>MESSAGE
 		&lt;span class="sub_title"&gt;Private and HIPPA secure&lt;/span&gt;</source>
         <target state="translated">信息
@@ -745,7 +745,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisode.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="403" resname="Start a Private Conversation  &lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
+      <trans-unit id="403" resname="Start a Private Conversation&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
         <source>Start a Private Conversation
 		&lt;span class="sub_title"&gt;Enhance your HealthTap experience</source>
         <target state="translated">开始一次私人会话
@@ -755,7 +755,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeDocChoose.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="404" resname="Start a Private Conversation  &lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="404" resname="Start a Private Conversation&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
         <source>Start a Private Conversation
 		&lt;span class="sub_title"&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target state="translated">开始一次私人会话
@@ -765,7 +765,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeHaveCredit.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="405" resname="ASK A DOCTOR A QUESTION  &lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="405" resname="ASK A DOCTOR A QUESTION&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
         <source>ASK A DOCTOR A QUESTION
 		&lt;span class="sub_title"&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
         <target state="translated">询问一位医生一个问题
@@ -775,7 +775,7 @@
   </file>
   <file original="public/javascripts/templates/layers/referColleague.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="406" resname="REFER TO A COLLEAGUE  &lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="406" resname="REFER TO A COLLEAGUE&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
         <source>REFER TO A COLLEAGUE
 		&lt;span class="sub_title"&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
         <target state="translated">请参阅目录
@@ -785,7 +785,7 @@
   </file>
   <file original="public/javascripts/templates/layers/referColleagueSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="407" resname="This question has been sent to doctors in the     &lt;%= App.session.referSpecialty %&gt;     field" restype="string" datatype="html">
+      <trans-unit id="407" resname="This question has been sent to doctors in the &lt;%= App.session.referSpecialty %&gt; field" restype="string" datatype="html">
         <source>This question has been sent to doctors in the
 					&lt;%= App.session.referSpecialty %&gt;
 					field</source>
@@ -800,56 +800,41 @@
   </file>
   <file original="public/multipage/legacy/js/mvc/message_layer_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="408" resname="Earn {span_tag_start}{points}{span_tag_end} points \n            and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
-        <source>Earn {span_tag_start}{points}{span_tag_end} points \
-            and a boost in your Helpfulness and DocScores.</source>
+      <trans-unit id="408" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
+        <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
         <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的乐于助人和医者评分。</target>
       </trans-unit>
-      <trans-unit id="409" resname="*HealthTap credits are not awarded for clarifications, appointment requests, \n              responses sent after 72 hours of receiving a patient message or when a patient uses \\n              your promo code for payment." restype="string" datatype="javascript">
-        <source>*HealthTap credits are not awarded for clarifications, appointment requests, \
-              responses sent after 72 hours of receiving a patient message or when a patient uses \
-              your promo code for payment.</source>
+      <trans-unit id="409" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
+        <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
         <target state="translated">当您阐明问题或收到预约请求，或收到患者信息72小时后才答复，或当患者使用您的支付优惠码时，您不会得到HealthTap信用奖励。</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/multipage/legacy/js/mvc/feed_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="410" resname="HealthTap is for informational purposes only. \n          Content on HealthTap (including answers) should not be used for medical advice, \\n          diagnosis, or treatment, and interactions on HealthTap do not create a \\n          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \\n          in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you \\n          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
-        <source>HealthTap is for informational purposes only. \
-          Content on HealthTap (including answers) should not be used for medical advice, \
-          diagnosis, or treatment, and interactions on HealthTap do not create a \
-          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \
-          in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you \
-          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+      <trans-unit id="410" resname="HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
         <target state="translated">查看 {link_tag_start}附加信息 &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/multipage/js/member/newMemberHome.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="411" resname="HealthTap is for informational purposes only.  Content on HealthTap \n    (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions \\n    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \\n    medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if \\n    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
-        <source>HealthTap is for informational purposes only.  Content on HealthTap \
-    (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions \
-    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \
-    medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if \
-    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+      <trans-unit id="411" resname="HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
         <target state="translated">查看 {link_tag_start}附加信息 &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
-      <trans-unit id="412" resname="Connect with women doctors who are also mothers for deeper, \n    experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
-        <source>Connect with women doctors who are also mothers for deeper, \
-    experience-based answers to all your pregnancy and parenting questions.</source>
+      <trans-unit id="412" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
+        <source>Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions.</source>
         <target state="translated">与已育女性医生联系，医生会对你的怀孕和养育问题作出更深层次的，基于经验的答案。</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="415" resname="The compensation report from {start_date} to {end_date} is being generated. \n   It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. \
-			It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成{start_date}到{end_date}的补偿报告\
-			它还需要一会。当它完成后您会收到一封邮件</target>
+      <trans-unit id="415" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成{start_date}到{end_date}的补偿报告			它还需要一会。当它完成后您会收到一封邮件</target>
       </trans-unit>
     </body>
   </file>
@@ -871,44 +856,33 @@
   </file>
   <file original="public/javascripts/controllers/user_questions/show_controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="426" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\n            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
-        <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\
-            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
-        <target state="translated">1#这里有 &lt;b&gt;{n}更多解答&lt;/b&gt; 医生为这个问题|\
-            #这里有 &lt;b&gt;{n} 更多解答&lt;/b&gt; 医生为这个问题！</target>
+      <trans-unit id="426" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
+        <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
+        <target state="translated">1#这里有 &lt;b&gt;{n}更多解答&lt;/b&gt; 医生为这个问题|            #这里有 &lt;b&gt;{n} 更多解答&lt;/b&gt; 医生为这个问题！</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/app-controller.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="431" resname="We&apos;re sorry, but it seems your internet connection does not meet\n                   our minimum requirement for consults. Please try again with a more stable network.\\n                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \\n                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
-        <source>We're sorry, but it seems your internet connection does not meet\
-                   our minimum requirement for consults. Please try again with a more stable network.\
-                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \
-                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
-        <target state="translated">非常抱歉，您的网络连接似乎不符合我们对于咨询的最低要求。请在稳定的网络下再次尝试\
-                   &lt;br&gt;&lt;br&gt;为了协助，您可以联系我们在 \
-                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
+      <trans-unit id="431" resname="We&apos;re sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
+        <source>We're sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
+        <target state="translated">非常抱歉，您的网络连接似乎不符合我们对于咨询的最低要求。请在稳定的网络下再次尝试                   &lt;br&gt;&lt;br&gt;为了协助，您可以联系我们在                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/js/ask_docs/similar_questions.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="471" resname="Send your question to receive one or more information text answers \n          within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
-        <source>Send your question to receive one or more information text answers \
-          within a day from our network of {n} doctors across 137 specialties.</source>
-        <target state="translated">发送您的问题以接收一个或多个信息文本答案\
-           在一天内，我们的{n}医生在137个专业的网络。</target>
+      <trans-unit id="471" resname="Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
+        <source>Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties.</source>
+        <target state="translated">发送您的问题以接收一个或多个信息文本答案           在一天内，我们的{n}医生在137个专业的网络。</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/js/ask_docs/doctor_search_header.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="472" resname="No {specialist_name} is available right now. \n          You may still consult one by secure message or appointment." restype="string" datatype="javascript">
-        <source>No {specialist_name} is available right now. \
-          You may still consult one by secure message or appointment.</source>
-        <target state="translated">没有{specialist_name} 现在空闲。\
-          您仍然可以通过发送安全信息进行咨询或预约</target>
+      <trans-unit id="472" resname="No {specialist_name} is available right now.           You may still consult one by secure message or appointment." restype="string" datatype="javascript">
+        <source>No {specialist_name} is available right now.           You may still consult one by secure message or appointment.</source>
+        <target state="translated">没有{specialist_name} 现在空闲。          您仍然可以通过发送安全信息进行咨询或预约</target>
       </trans-unit>
     </body>
   </file>
@@ -3318,7 +3292,7 @@
   </file>
   <file original="public/feelGood/templates/suggested_patients_list.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1053" resname="Offer            &lt;span class=&quot;suffix-wrap&quot;&gt;            1            &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;            &lt;/span&gt;            time consult discount -" restype="string" datatype="html">
+      <trans-unit id="1053" resname="Offer&lt;span class=&quot;suffix-wrap&quot;&gt;1&lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;&lt;/span&gt;time consult discount -" restype="string" datatype="html">
         <source>Offer
             &lt;span class="suffix-wrap"&gt;
             1
@@ -3336,7 +3310,7 @@
   </file>
   <file original="public/javascripts/templates/experts/competitions/top_doctors_comp.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1054" resname="Leaderboard          &lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST" restype="string" datatype="html">
+      <trans-unit id="1054" resname="Leaderboard&lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST" restype="string" datatype="html">
         <source>Leaderboard
           &lt;span class="last-updated"&gt;as of 1AM PST</source>
         <target state="translated">排行榜
@@ -3346,7 +3320,7 @@
   </file>
   <file original="public/javascripts/templates/experts/patientNewsletter.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1055" resname="Please share your feedback about my practice:          &lt;br&gt;          &lt;a class=&quot;doctor_name_link&quot; href=&quot;#feedback/&lt;%= App.user.get(&apos;person.profile_name&apos;) %&gt;&quot; target=&quot;_blank&quot;&gt;            www.healthtap.com/feedback/" restype="string" datatype="html">
+      <trans-unit id="1055" resname="Please share your feedback about my practice:&lt;br&gt;&lt;a class=&quot;doctor_name_link&quot; href=&quot;#feedback/&lt;%= App.user.get(&apos;person.profile_name&apos;) %&gt;&quot; target=&quot;_blank&quot;&gt;www.healthtap.com/feedback/" restype="string" datatype="html">
         <source>Please share your feedback about my practice:
           &lt;br&gt;
           &lt;a class="doctor_name_link" href="#feedback/&lt;%= App.user.get('person.profile_name') %&gt;" target="_blank"&gt;
@@ -3360,7 +3334,7 @@
   </file>
   <file original="public/javascripts/templates/experts/patientUpload.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1056" resname="Sincerely,          &lt;br&gt;          Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;          &lt;br&gt;          &lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
+      <trans-unit id="1056" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -3372,7 +3346,7 @@
           &lt;br&gt;
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" targete="_blank"&gt;&lt;%= App.settings.server %&gt;/</target>
       </trans-unit>
-      <trans-unit id="1057" resname="Sincerely,          &lt;br&gt;          Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;          &lt;br&gt;          &lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
+      <trans-unit id="1057" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -3384,7 +3358,7 @@
           &lt;br&gt;
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" target="_blank"&gt;&lt;%= App.settings.server %&gt;/</target>
       </trans-unit>
-      <trans-unit id="1058" resname="Sincerely,          &lt;br&gt;          Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;          &lt;br&gt;          &lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&apos;_blank&apos;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
+      <trans-unit id="1058" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&apos;_blank&apos;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -3404,7 +3378,7 @@
         <source>paid private</source>
         <target state="translated">私人付费</target>
       </trans-unit>
-      <trans-unit id="1060" resname="and &lt;a href=&quot;#expert/messages&quot;&gt;&lt;%= (appointments.toString().comma()) %&gt; appointment" restype="string" datatype="html">
+      <trans-unit id="1060" resname="and&lt;a href=&quot;#expert/messages&quot;&gt;&lt;%= (appointments.toString().comma()) %&gt; appointment" restype="string" datatype="html">
         <source>and &lt;a href="#expert/messages"&gt;&lt;%= (appointments.toString().comma()) %&gt; appointment</source>
         <target state="translated">和 &lt;a href=”#expert/messages”&gt;&lt;%= (appointments.toString().comma()) %&gt; 预约</target>
       </trans-unit>

@@ -235,6 +235,29 @@ module.exports = {
         test.done();
     },
 
+    testJavaScriptFileParseJSCompressWhitespaceInKey: function(test) {
+        test.expect(5);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaScriptFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getStringJS("\t\t This \\n \n is \\\n\t a    test")');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "\t\t This \\n \n is \t a    test");
+        
+        test.done();
+    },
 
     testJavaScriptFileParseSimpleRightSize: function(test) {
         test.expect(4);

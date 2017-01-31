@@ -3196,7 +3196,7 @@
   </file>
   <file original="public/javascripts/templates/experts/competitions/top_doctors_comp.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="702" resname="Leaderboard          &lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST" restype="string" datatype="html">
+      <trans-unit id="702" resname="Leaderboard&lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST" restype="string" datatype="html">
         <source>Leaderboard
           &lt;span class="last-updated"&gt;as of 1AM PST</source>
         <target>排行榜
@@ -3206,7 +3206,7 @@
   </file>
   <file original="public/javascripts/templates/experts/patientNewsletter.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="706" resname="Please share your feedback about my practice:          &lt;br&gt;          &lt;a class=&quot;doctor_name_link&quot; href=&quot;#feedback/&lt;%= App.user.get(&apos;person.profile_name&apos;) %&gt;&quot; target=_blank&quot;&gt;            www.healthtap.com/feedback/" restype="string" datatype="html">
+      <trans-unit id="706" resname="Please share your feedback about my practice:&lt;br&gt;&lt;a class=&quot;doctor_name_link&quot; href=&quot;#feedback/&lt;%= App.user.get(&apos;person.profile_name&apos;) %&gt;&quot; target=&quot;_blank&quot;&gt;www.healthtap.com/feedback/" restype="string" datatype="html">
         <source>Please share your feedback about my practice:
           &lt;br&gt;
           &lt;a class="doctor_name_link" href="#feedback/&lt;%= App.user.get('person.profile_name') %&gt;" target="_blank"&gt;
@@ -3220,7 +3220,7 @@
   </file>
   <file original="public/javascripts/templates/experts/patientUpload.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="707" resname="Sincerely,          &lt;br&gt;          Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;          &lt;br&gt;          &lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
+      <trans-unit id="707" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; targete=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -3232,7 +3232,7 @@
           &lt;br&gt;
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" targete="_blank"&gt;&lt;%= App.settings.server %&gt;/</target>
       </trans-unit>
-      <trans-unit id="708" resname="Sincerely,          &lt;br&gt;          Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;          &lt;br&gt;          &lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
+      <trans-unit id="708" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -3244,7 +3244,7 @@
           &lt;br&gt;
           &lt;a href="&lt;%= App.settings.server %&gt;/&lt;%= App.user.get('person').profile_name %&gt;" target="_blank"&gt;&lt;%= App.settings.server %&gt;/</target>
       </trans-unit>
-      <trans-unit id="709" resname="Sincerely,          &lt;br&gt;          Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;          &lt;br&gt;          &lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&apos;_blank&apos;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
+      <trans-unit id="709" resname="Sincerely,&lt;br&gt;Dr. &lt;%= App.user.get(&apos;person&apos;).name %&gt; &lt;%= App.user.get(&apos;person&apos;).last_name %&gt;&lt;br&gt;&lt;a href=&quot;&lt;%= App.settings.server %&gt;/&lt;%= App.user.get(&apos;person&apos;).profile_name %&gt;&quot; target=&apos;_blank&apos;&gt;&lt;%= App.settings.server %&gt;/" restype="string" datatype="html">
         <source>Sincerely,
           &lt;br&gt;
           Dr. &lt;%= App.user.get('person').name %&gt; &lt;%= App.user.get('person').last_name %&gt;
@@ -3260,7 +3260,7 @@
   </file>
   <file original="public/javascripts/templates/experts/reminder_banner.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="710" resname="and &lt;a href=&quot;#expert/messages&quot;&gt;&lt;%= (appointments.toString().comma()) %&gt; appointment" restype="string" datatype="html">
+      <trans-unit id="710" resname="and&lt;a href=&quot;#expert/messages&quot;&gt;&lt;%= (appointments.toString().comma()) %&gt; appointment" restype="string" datatype="html">
         <source>and &lt;a href="#expert/messages"&gt;&lt;%= (appointments.toString().comma()) %&gt; appointment</source>
         <target>和 &lt;a href=”#expert/messages”&gt;&lt;%= (appointments.toString().comma()) %&gt; 预约</target>
       </trans-unit>

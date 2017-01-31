@@ -118,7 +118,7 @@
   </file>
   <file original="public/feelGood/templates/inbox_training_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1031" resname="RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({     bold_tag_start: &apos;&lt;b&gt;&apos;,     bold_tag_end: &apos;&lt;/b&gt;&apos;    })" restype="string" datatype="html">
+      <trans-unit id="1031" resname="RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({ bold_tag_start: &apos;&lt;b&gt;&apos;, bold_tag_end: &apos;&lt;/b&gt;&apos; })" restype="string" datatype="html">
         <source>RB.getStringJS(In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.).format({
     	bold_tag_start: '&lt;b&gt;',
     	bold_tag_end: '&lt;/b&gt;'
@@ -148,7 +148,7 @@
   </file>
   <file original="public/javascripts/templates/experts/doc2doc_answer_feedback.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1080" resname="You earned    &lt;span class=&amp;quot;points_earned_highlight&amp;quot;&gt;     &lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points    &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1080" resname="You earned&lt;span class=&quot;points_earned_highlight&quot;&gt;&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt;points&lt;/span&gt;" restype="string" datatype="html">
         <source>You earned
 				&lt;span class="points_earned_highlight"&gt;
 					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; points
@@ -158,7 +158,7 @@
 					&lt;b&gt;+ &lt;%= answer.points %&gt;&lt;/b&gt; puntos
 				&lt;/span&gt;</target>
       </trans-unit>
-      <trans-unit id="1081" resname="Today, you&apos;ve earned &lt;span class=&amp;quot;todays_points_highlight&amp;quot;&gt; 180 points&lt;/span&gt; for helping millions.   &lt;br&gt;   Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points." restype="string" datatype="html">
+      <trans-unit id="1081" resname="Today, you&apos;ve earned&lt;span class=&quot;todays_points_highlight&quot;&gt;180 points&lt;/span&gt;for helping millions.&lt;br&gt;Answer&lt;b&gt;X&lt;/b&gt;more questions in the next&lt;b&gt;X&lt;/b&gt;hours to double your daily points." restype="string" datatype="html">
         <source>Today, you've earned &lt;span class="todays_points_highlight"&gt; 180 points&lt;/span&gt; for helping millions.
 			&lt;br&gt;
 			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
@@ -166,7 +166,7 @@
 			&lt;br&gt;
 			Responde &lt;b&gt;X&lt;/b&gt; más preguntas en las próximas &lt;b&gt;X&lt;/b&gt; horas para duplicar tus puntos diarios.</target>
       </trans-unit>
-      <trans-unit id="1082" resname="Here are a few patient questions to keep you going.  &lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="1082" resname="Here are a few patient questions to keep you going.&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Here are a few patient questions to keep you going.
 		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
         <target state="translated">Acá están unas pocas preguntas de pacientes para que sigas.
@@ -184,7 +184,7 @@
   </file>
   <file original="public/javascripts/templates/layers/answerPanel.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1124" resname="Create a Tip  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1124" resname="Create a Tip&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
         <source>Create a Tip
 		&lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target state="translated">Crear un Consejo
@@ -194,7 +194,7 @@
   </file>
   <file original="public/javascripts/templates/layers/askDoc.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1132" resname="Ask Doctors Any Question  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&amp;quot;font-weight: bold&amp;quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1132" resname="Ask Doctors Any Question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask Doctors Any Question
 		&lt;span class="sub_title"&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target state="translated">Haz cualquier pregunta a los médicos
@@ -208,7 +208,7 @@
   </file>
   <file original="public/javascripts/templates/layers/askDocSpelling.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1135" resname="Ask doctors any question  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Anytime. Anywhere. &lt;span style=&amp;quot;font-weight: bold&amp;quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1135" resname="Ask doctors any question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask doctors any question
 		&lt;span class="sub_title"&gt;Anytime. Anywhere. &lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
         <target state="translated">Pregunta a los médicos cualquier pregunta
@@ -218,7 +218,7 @@
   </file>
   <file original="public/javascripts/templates/layers/doc2DocSuccess.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1146" resname="Curbside Consult &lt;span class=&amp;quot;super&amp;quot;&gt;beta&lt;/span&gt;   &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1146" resname="Curbside Consult&lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
         <source>Curbside Consult &lt;span class="super"&gt;beta&lt;/span&gt;
 			&lt;span class="sub_title"&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
         <target state="translated">Consulta al Borde de la Acera &lt;span class="super"&gt;beta&lt;/span&gt;
@@ -228,7 +228,7 @@
   </file>
   <file original="public/javascripts/templates/layers/guidelines.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1151" resname="GUIDELINES  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1151" resname="GUIDELINES&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
         <source>GUIDELINES
 		&lt;span class="sub_title"&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
         <target state="translated">INSTRUCCIONES
@@ -238,7 +238,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/expertNewEpisode.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1173" resname="MESSAGE  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1173" resname="MESSAGE&lt;span class=&quot;sub_title&quot;&gt;Private and HIPPA secure&lt;/span&gt;" restype="string" datatype="html">
         <source>MESSAGE
 		&lt;span class="sub_title"&gt;Private and HIPPA secure&lt;/span&gt;</source>
         <target state="translated">MENSAJE
@@ -248,7 +248,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisode.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1174" resname="Start a Private Conversation  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
+      <trans-unit id="1174" resname="Start a Private Conversation&lt;span class=&quot;sub_title&quot;&gt;Enhance your HealthTap experience" restype="string" datatype="html">
         <source>Start a Private Conversation
 		&lt;span class="sub_title"&gt;Enhance your HealthTap experience</source>
         <target state="translated">Comenzar una conversación privada
@@ -258,7 +258,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeDocChoose.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1177" resname="Start a Private Conversation  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1177" resname="Start a Private Conversation&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;" restype="string" datatype="html">
         <source>Start a Private Conversation
 		&lt;span class="sub_title"&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target state="translated">Comienza una Conversación Privada
@@ -276,7 +276,7 @@
   </file>
   <file original="public/javascripts/templates/layers/newEpisode/newEpisodeHaveCredit.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1179" resname="ASK A DOCTOR A QUESTION  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1179" resname="ASK A DOCTOR A QUESTION&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
         <source>ASK A DOCTOR A QUESTION
 		&lt;span class="sub_title"&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
         <target state="translated">HAZ UNA PREGUNTA AL MÉDICO
@@ -286,7 +286,7 @@
   </file>
   <file original="public/javascripts/templates/layers/referColleague.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1185" resname="REFER TO A COLLEAGUE  &lt;span class=&amp;quot;sub_title&amp;quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1185" resname="REFER TO A COLLEAGUE&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
         <source>REFER TO A COLLEAGUE
 		&lt;span class="sub_title"&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
         <target state="translated">REMITIR A UN COLEGA
@@ -296,7 +296,7 @@
   </file>
   <file original="public/javascripts/templates/layers/referColleagueSuccess.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1189" resname="This question has been sent to doctors in the     &lt;%= App.session.referSpecialty %&gt;     field" restype="string" datatype="html">
+      <trans-unit id="1189" resname="This question has been sent to doctors in the &lt;%= App.session.referSpecialty %&gt; field" restype="string" datatype="html">
         <source>This question has been sent to doctors in the
 					&lt;%= App.session.referSpecialty %&gt;
 					field</source>
@@ -315,7 +315,7 @@
   </file>
   <file original="public/mobile/app/js/templates/expert/expert_answer/expert_answer_preview.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1230" resname="Originally authored by &lt;span class=&amp;quot;bold&amp;quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt; in response to question, &lt;span class=&amp;quot;bold&amp;quot;&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt; &amp;quot; &lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="1230" resname="Originally authored by&lt;span class=&quot;bold&quot;&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || &apos;&apos;) : &apos;&apos;%&gt;&lt;/span&gt;in response to question,&lt;span class=&quot;bold&quot;&gt;&amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : &apos;&apos;%&gt; &amp;quot;&lt;/span&gt;" restype="string" datatype="html">
         <source>Originally authored by &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; in response to question, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</source>
         <target state="translated">Escrita originalmente por &lt;span class="bold"&gt;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor) ? (App.session.expertAnswerForm.recycle_answers_data.data.user_answer.actor.name || '') : ''%&gt;&lt;/span&gt; en respuesta a la pregunta, &lt;span class="bold"&gt; &amp;quot;&lt;%=(App.session.expertAnswerForm.recycle_answers_data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer &amp;&amp; App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question) ? App.session.expertAnswerForm.recycle_answers_data.data.user_answer.question : ''%&gt; &amp;quot; &lt;/span&gt;</target>
       </trans-unit>
@@ -323,93 +323,57 @@
   </file>
   <file original="public/multipage/legacy/js/mvc/message_layer_view.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1274" resname="Earn {span_tag_start}{points}{span_tag_end} points \\n            and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
-        <source>Earn {span_tag_start}{points}{span_tag_end} points \
-            and a boost in your Helpfulness and DocScores.</source>
-        <target state="translated">Gana {span_tag_start}{points}{span_tag_end} puntos \
-            y un impulso en tu Utilidad y DocScores.</target>
+      <trans-unit id="1274" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
+        <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
+        <target state="translated">Gana {span_tag_start}{points}{span_tag_end} puntos             y un impulso en tu Utilidad y DocScores.</target>
       </trans-unit>
-      <trans-unit id="1275" resname="*HealthTap credits are not awarded for clarifications, appointment requests, \\n              responses sent after 72 hours of receiving a patient message or when a patient uses \\n              your promo code for payment." restype="string" datatype="javascript">
-        <source>*HealthTap credits are not awarded for clarifications, appointment requests, \
-              responses sent after 72 hours of receiving a patient message or when a patient uses \
-              your promo code for payment.</source>
-        <target state="translated">*Los créditos HealthTap no son otorgados por aclaratorias, solicitudes de citas, \
-              respuestas enviadas luego de 72 horas de recibir un mensaje del paciente o cuando un paciente utiliza \
-              tu código de promoción por el pago.</target>
+      <trans-unit id="1275" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
+        <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
+        <target state="translated">*Los créditos HealthTap no son otorgados por aclaratorias, solicitudes de citas,               respuestas enviadas luego de 72 horas de recibir un mensaje del paciente o cuando un paciente utiliza               tu código de promoción por el pago.</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/multipage/legacy/js/mvc/feed_view.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1276" resname="HealthTap is for informational purposes only. \\n          Content on HealthTap (including answers) should not be used for medical advice, \\n          diagnosis, or treatment, and interactions on HealthTap do not create a \\n          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \\n          in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you \\n          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
-        <source>HealthTap is for informational purposes only. \
-          Content on HealthTap (including answers) should not be used for medical advice, \
-          diagnosis, or treatment, and interactions on HealthTap do not create a \
-          doctor-patient relationship.  Never disregard or delay seeking professional medical advice \
-          in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you \
-          think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target state="translated">HealthTap es sólo para fines informativos. \
-          El contenido en HealthTap (incluyendo las respuestas) no deberán usarse para asesoría, \
-          diagnóstico o tratamiento médico, y las interacciones en HealthTap no crean una \
-          relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría médica profesional \
-          en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si \
-          crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
+      <trans-unit id="1276" resname="HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+        <target state="translated">HealthTap es sólo para fines informativos.           El contenido en HealthTap (incluyendo las respuestas) no deberán usarse para asesoría,           diagnóstico o tratamiento médico, y las interacciones en HealthTap no crean una           relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría médica profesional           en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si           crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/multipage/js/member/newMemberHome.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1277" resname="HealthTap is for informational purposes only.  Content on HealthTap \\n    (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions \\n    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \\n    medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if \\n    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
-        <source>HealthTap is for informational purposes only.  Content on HealthTap \
-    (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions \
-    on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional \
-    medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if \
-    you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target state="translated">HealthTap es sólo para fines informativos.  El contenido en HealthTap \
-    (incluyendo las respuestas) no deberán usarse para asesoría, diagnóstico o tratamiento médico, y las interacciones \
-    en HealthTap no crean una relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría \
-    médica profesional en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si \
-    crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
+      <trans-unit id="1277" resname="HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
+        <source>HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
+        <target state="translated">HealthTap es sólo para fines informativos.  El contenido en HealthTap     (incluyendo las respuestas) no deberán usarse para asesoría, diagnóstico o tratamiento médico, y las interacciones     en HealthTap no crean una relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría     médica profesional en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si     crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
-      <trans-unit id="1278" resname="Connect with women doctors who are also mothers for deeper, \\n    experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
-        <source>Connect with women doctors who are also mothers for deeper, \
-    experience-based answers to all your pregnancy and parenting questions.</source>
-        <target state="translated">Conéctate con doctoras que también son mamás para unas respuestas más profundas \
-    y experimentadas a todas tus preguntas de embarazo y crianza.</target>
+      <trans-unit id="1278" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
+        <source>Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions.</source>
+        <target state="translated">Conéctate con doctoras que también son mamás para unas respuestas más profundas     y experimentadas a todas tus preguntas de embarazo y crianza.</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1280" resname="The compensation report from {start_date} to {end_date} is being generated. \\n   It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. \
-			It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">El informe de compensación desde {start_date} hasta {end_date} está siendo generado. \
-			Va a tomar un tiempo. ¡Obtendrás un correo electrónico una vez esté listo!</target>
+      <trans-unit id="1280" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">El informe de compensación desde {start_date} hasta {end_date} está siendo generado. 			Va a tomar un tiempo. ¡Obtendrás un correo electrónico una vez esté listo!</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/controllers/user_questions/show_controller.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1281" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\\n            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
-        <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|\
-            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
-        <target state="translated">1#¡Hay &lt;b&gt;{n} respuesta más&lt;/b&gt; de los médicos para esta pregunta!|\
-            #¡Hay &lt;b&gt;{n} respuestas más&lt;/b&gt; de los médicos para esta pregunta!</target>
+      <trans-unit id="1281" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
+        <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
+        <target state="translated">1#¡Hay &lt;b&gt;{n} respuesta más&lt;/b&gt; de los médicos para esta pregunta!|            #¡Hay &lt;b&gt;{n} respuestas más&lt;/b&gt; de los médicos para esta pregunta!</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/javascripts/app-controller.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1282" resname="We&apos;re sorry, but it seems your internet connection does not meet\\n                   our minimum requirement for consults. Please try again with a more stable network.\\n                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \\n                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
-        <source>We're sorry, but it seems your internet connection does not meet\
-                   our minimum requirement for consults. Please try again with a more stable network.\
-                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at \
-                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
-        <target state="translated">Lo sentimos, pero parece que tu conexión a internet no cumple\
-                   nuestros requisitos mínimos para las consultas. Por favor, intenta de nuevo con una red más estable.\
-                   &lt;br&gt;&lt;br&gt;Para asistencia, puedes contactarnos al \
-                   {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
+      <trans-unit id="1282" resname="We&apos;re sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}" restype="string" datatype="javascript">
+        <source>We're sorry, but it seems your internet connection does not meet                   our minimum requirement for consults. Please try again with a more stable network.                   &lt;br&gt;&lt;br&gt;For assistance, you may contact us at                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</source>
+        <target state="translated">Lo sentimos, pero parece que tu conexión a internet no cumple                   nuestros requisitos mínimos para las consultas. Por favor, intenta de nuevo con una red más estable.                   &lt;br&gt;&lt;br&gt;Para asistencia, puedes contactarnos al                    {link_tag_start}expertsupport@healthtap.com{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -499,21 +463,17 @@
   </file>
   <file original="public/feelGood/js/ask_docs/similar_questions.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1382" resname="Send your question to receive one or more information text answers \\n          within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
-        <source>Send your question to receive one or more information text answers \
-          within a day from our network of {n} doctors across 137 specialties.</source>
-        <target state="translated">Envía tu pregunta para recibir una respuesta textual educativa o más \
-          dentro de un día por parte de nuestra red de {n} médicos a lo largo de 137 especialidades.</target>
+      <trans-unit id="1382" resname="Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
+        <source>Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties.</source>
+        <target state="translated">Envía tu pregunta para recibir una respuesta textual educativa o más           dentro de un día por parte de nuestra red de {n} médicos a lo largo de 137 especialidades.</target>
       </trans-unit>
     </body>
   </file>
   <file original="public/feelGood/js/ask_docs/doctor_search_header.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="1383" resname="No {specialist_name} is available right now. \\n          You may still consult one by secure message or appointment." restype="string" datatype="javascript">
-        <source>No {specialist_name} is available right now. \
-          You may still consult one by secure message or appointment.</source>
-        <target state="translated">Ningún {specialist_name} está disponible en este momento. \
-          Todavía puedes consultar una por mensaje protegido o cita.</target>
+      <trans-unit id="1383" resname="No {specialist_name} is available right now.           You may still consult one by secure message or appointment." restype="string" datatype="javascript">
+        <source>No {specialist_name} is available right now.           You may still consult one by secure message or appointment.</source>
+        <target state="translated">Ningún {specialist_name} está disponible en este momento.           Todavía puedes consultar una por mensaje protegido o cita.</target>
       </trans-unit>
     </body>
   </file>

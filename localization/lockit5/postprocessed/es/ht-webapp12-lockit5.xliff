@@ -28384,7 +28384,7 @@
   </file>
   <file original="public/javascripts/templates/feedItemTemplate.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13661" resname="Medical Student &lt;a class=&amp;quot;actor_link&amp;quot; href=&amp;quot;&lt;%= user_answer.contributor.url.replace(&apos;people&apos;, &apos;experts&apos;).toHashFragment() %&gt;&amp;quot;&gt;                      &lt;%= user_answer.contributor.name %&gt;&lt;/a&gt;  needs an answer to be reviewed:" restype="string" datatype="html">
+      <trans-unit id="13661" resname="Medical Student&lt;a class=&quot;actor_link&quot; href=&quot;&lt;%= user_answer.contributor.url.replace(&apos;people&apos;, &apos;experts&apos;).toHashFragment() %&gt;&quot;&gt;&lt;%= user_answer.contributor.name %&gt;&lt;/a&gt;needs an answer to be reviewed:" restype="string" datatype="html">
         <source>Medical Student &lt;a class="actor_link" href="&lt;%= user_answer.contributor.url.replace('people', 'experts').toHashFragment() %&gt;"&gt;
                       &lt;%= user_answer.contributor.name %&gt;&lt;/a&gt;
   needs an answer to be reviewed:</source>
@@ -28403,7 +28403,7 @@
   </file>
   <file original="public/feelGood/templates/symptom_disclaimer_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13736" resname="The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See &lt;a class=&amp;quot;link&amp;quot; href=&amp;quot;/pages/additional_info&amp;quot;&gt;Additional Information.&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13736" resname="The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See&lt;a class=&quot;link&quot; href=&quot;/pages/additional_info&quot;&gt;Additional Information.&lt;/a&gt;" restype="string" datatype="html">
         <source>The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See &lt;a class="link" href="/pages/additional_info"&gt;Additional Information.&lt;/a&gt;</source>
         <target>La información en HealthTap (incluyendo esta herramienta) es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor de servicios de emergencia local si crees que puedes estar teniendo una emergencia médica. Ver &lt;a class="link" href="/pages/additional_info"&gt;Información Adicional.&lt;/a&gt;</target>
       </trans-unit>
@@ -28411,7 +28411,7 @@
   </file>
   <file original="public/feelGood/templates/subaccount_list.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13742" resname="People you care for&lt;span&gt;      &lt;span class=&amp;quot;number&amp;quot;&gt;&lt;%= subaccounts.length %&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="13742" resname="People you care for&lt;span&gt;&lt;span class=&quot;number&quot;&gt;&lt;%= subaccounts.length %&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>People you care for&lt;span&gt;
       &lt;span class="number"&gt;&lt;%= subaccounts.length %&gt;&lt;/span&gt;</source>
         <target>Personas que te importan&lt;span&gt;
@@ -28433,7 +28433,7 @@
   </file>
   <file original="public/feelGood/templates/messages/refer_doctor.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13762" resname="I&apos;d like to refer you to the following specialist. As a member of &lt;%= HMO_provider %&gt;,   please first check with your primary care physician before seeing this specialist:" restype="string" datatype="html">
+      <trans-unit id="13762" resname="I&apos;d like to refer you to the following specialist. As a member of &lt;%= HMO_provider %&gt;, please first check with your primary care physician before seeing this specialist:" restype="string" datatype="html">
         <source>I'd like to refer you to the following specialist. As a member of &lt;%= HMO_provider %&gt;, 
   please first check with your primary care physician before seeing this specialist:</source>
         <target>Me gustaría referirte con el siguiente especialista. Como un miembro de &lt;%= HMO_provider %&gt;, 
@@ -28483,7 +28483,7 @@
   </file>
   <file original="public/feelGood/templates/concierge_request_form.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13786" resname="Sorry, you must be at least 18 years old to be a patient. You may have a guardian add you to their account, or you can &lt;a href=&amp;quot;/ask_docs&amp;quot;&gt; ask a question &lt;/a&gt; if you&apos;re 16 or older." restype="string" datatype="html">
+      <trans-unit id="13786" resname="Sorry, you must be at least 18 years old to be a patient. You may have a guardian add you to their account, or you can&lt;a href=&quot;/ask_docs&quot;&gt;ask a question&lt;/a&gt;if you&apos;re 16 or older." restype="string" datatype="html">
         <source>Sorry, you must be at least 18 years old to be a patient. You may have a guardian add you to their account, or you can &lt;a href="/ask_docs"&gt; ask a question &lt;/a&gt; if you're 16 or older.</source>
         <target>Perdón, debes tener al menos18 años de edad para ser paciente. Puedes hacer que tu tutor te añada a su cuenta, o puedes &lt;a href="/ask_docs"&gt; hacer una pregunta &lt;/a&gt; si tienes 16 o más.</target>
       </trans-unit>
@@ -28491,7 +28491,7 @@
   </file>
   <file original="public/feelGood/templates/ask_docs/secure_server.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13792" resname="Secure server&lt;a class=&amp;quot;terms-disclaimer&amp;quot; track_data=&amp;quot;{ &amp;quot;type&amp;quot; : &amp;quot;ask_docs_v3&amp;quot; }&amp;quot; track_event=&amp;quot;secure_click&amp;quot;&gt;Tell me more&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13792" resname="Secure server&lt;a class=&quot;terms-disclaimer&quot; track_data=&quot;{ &amp;quot;type&amp;quot; : &amp;quot;ask_docs_v3&amp;quot; }&quot; track_event=&quot;secure_click&quot;&gt;Tell me more&lt;/a&gt;" restype="string" datatype="html">
         <source>Secure server
 &lt;a class="terms-disclaimer" track_data="{ &amp;quot;type&amp;quot; : &amp;quot;ask_docs_v3&amp;quot; }" track_event="secure_click"&gt;Tell me more&lt;/a&gt;</source>
         <target>Servidor seguro &lt;a class="terms-disclaimer" track_data="{ &amp;quot;type&amp;quot; : &amp;quot;ask_docs_v3&amp;quot; }" track_event="secure_click"&gt;Dime más&lt;/a&gt;</target>
@@ -28500,7 +28500,7 @@
   </file>
   <file original="public/feelGood/templates/ask_docs/message_picker.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13796" resname="Ask anonymously and&lt;br&gt;        get informational answers" restype="string" datatype="html">
+      <trans-unit id="13796" resname="Ask anonymously and&lt;br&gt;get informational answers" restype="string" datatype="html">
         <source>Ask anonymously and&lt;br&gt;
         get informational answers</source>
         <target>Pregunta de forma anónima y&lt;br&gt;
@@ -28546,7 +28546,7 @@
         <source>Similar Questions</source>
         <target>Preguntas Similares</target>
       </trans-unit>
-      <trans-unit id="13813" resname="See more&lt;span class=&amp;quot;loading-dots&amp;quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="13813" resname="See more&lt;span class=&quot;loading-dots&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>See more&lt;span class="loading-dots"&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;</source>
         <target>Ver más&lt;span class="loading-dots"&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
@@ -28610,7 +28610,7 @@
         <source>Search by name, specialty, or topic</source>
         <target>Buscar por nombre, especialidad o tema</target>
       </trans-unit>
-      <trans-unit id="13826" resname="Can&apos;t find a &lt;%= expertType %&gt;? &lt;a href=&amp;quot;#&amp;quot; class=&amp;quot;inviteLink&amp;quot;&gt;Invite them to HealthTap&lt;/a&gt;" restype="string" datatype="html">
+      <trans-unit id="13826" resname="Can&apos;t find a &lt;%= expertType %&gt;?&lt;a href=&quot;#&quot; class=&quot;inviteLink&quot;&gt;Invite them to HealthTap&lt;/a&gt;" restype="string" datatype="html">
         <source>Can't find a &lt;%= expertType %&gt;? &lt;a href="#" class="inviteLink"&gt;Invite them to HealthTap&lt;/a&gt;</source>
         <target>¿No puedes encontrar a un &lt;%= expertType %&gt;? &lt;a href="#" class="inviteLink"&gt;Invítalos a HealthTap&lt;/a&gt;</target>
       </trans-unit>
@@ -28618,7 +28618,7 @@
   </file>
   <file original="public/feelGood/page_templates/ask_docs_v4/ask.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="13827" resname="Ask &lt;span&gt;&lt;%= expertType %&gt;s&lt;/span&gt;" restype="string" datatype="html">
+      <trans-unit id="13827" resname="Ask&lt;span&gt;&lt;%= expertType %&gt;s&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask &lt;span&gt;&lt;%= expertType %&gt;s&lt;/span&gt;</source>
         <target>Pregúntale a &lt;span&gt;&lt;%= expertType %&gt;s&lt;/span&gt;</target>
       </trans-unit>
