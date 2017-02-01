@@ -1032,4 +1032,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/layouts/feelGood/static/_header_static_guest_new.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="20" resname="r466948495" restype="string" datatype="ruby">
+        <source>Dr. %{ai_trademark}</source>
+        <target state="new">智能医生</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
