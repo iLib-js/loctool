@@ -39,6 +39,8 @@ function usage() {
 		"-f or --filetype\n" +
 		"  Restrict operation to only the given list of file types. This allows you to\n" +
 		"  run only the parts of the loctool that are needed at the moment.\n" +
+		"-n or --nopseudo\n" +
+		"  Do not pseudo-localize missing strings and do not generate the pseudo-locale.\n" +
 		"command\n" +
 		"  a command to execute. This is one of:\n" +
 		"    localize [root-dir-name] - extract strings and generate localized resource\n" +
@@ -77,6 +79,8 @@ for (var i = 0; i < argv.length; i++) {
 		if (i < argv.length && argv[i+1]) {
 			settings.locales = argv[++i].split(",");
 		}
+	} else if (val === "-n" || val === "--nopseudo") {
+		settings.nopseudo = true;
 	} else if (val === "-f" || val === "--filetype") {
 		if (i < argv.length && argv[i+1]) {
 			var types = argv[++i].split(",");
