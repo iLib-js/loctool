@@ -8,18 +8,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/user_questions/feelGood/show.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="2" resname="r359045259" restype="plural" datatype="ruby" extype="one">
-        <source>&lt;span class="num"&gt;1&lt;/span&gt; doctor agrees</source>
-        <target state="translated">&lt;span class="num"&gt;1&lt;/span&gt; doctor agrees</target>
-      </trans-unit>
-      <trans-unit id="3" resname="r359045259" restype="plural" datatype="ruby" extype="other">
-        <source>&lt;span class="num"&gt;%{count}&lt;/span&gt; doctors agree</source>
-        <target state="translated">&lt;span class="num"&gt;%{count}&lt;/span&gt; 医生同意</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="app/views/user_questions/feelGood/list_questions.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="4" resname="r658863033" restype="string" datatype="ruby">
