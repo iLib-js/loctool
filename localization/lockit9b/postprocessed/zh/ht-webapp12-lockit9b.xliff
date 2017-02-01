@@ -122,10 +122,15 @@
   </file>
   <file original="app/views/people/feelGood/_checklist_discover.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="81" resname="r799856089" restype="plural" datatype="ruby" extype="other">
+      <trans-unit id="81" resname="r799856089" restype="plural" datatype="ruby" extype="one">
         <source>1 checklist</source>
         <target state="translated">1个清单</target>
       </trans-unit>
+      <trans-unit id="82" resname="r799856089" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} checklists</source>
+        <target state="translated">%{count}个清单</target>
+      </trans-unit>
+
     </body>
   </file>
   <file original="app/views/general_mailer/partials/_member_digest_available_doctors.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
