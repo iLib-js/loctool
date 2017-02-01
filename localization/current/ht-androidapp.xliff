@@ -17643,7 +17643,7 @@
       </trans-unit>
       <trans-unit id="587" resname="r356004357" restype="string" datatype="java">
         <source>Hi, {name}!</source>
-        <target>您好，({name})！</target>
+        <target>您好，{name}！</target>
       </trans-unit>
       <trans-unit id="588" resname="r787211475" restype="string" datatype="java">
         <source>99+</source>
@@ -24862,11 +24862,11 @@
     <body>
       <trans-unit id="2300" resname="app_recommend" restype="plural" datatype="x-android-resource" extype="one">
         <source>{start}1{end} doctor recommends</source>
-        <target>{start}1{end}医生建议</target>
+        <target>{start}1{end}名医生建议</target>
       </trans-unit>
       <trans-unit id="2301" resname="app_recommend" restype="plural" datatype="x-android-resource" extype="other">
         <source>{start}%d{end} doctors recommend</source>
-        <target>{start}%d{end}医生建议</target>
+        <target>{start}%d{end}名医生建议</target>
       </trans-unit>
       <trans-unit id="2302" resname="doctor_comment" restype="plural" datatype="x-android-resource" extype="one">
         <source>{start}1 doctor{end} commented</source>
@@ -24990,47 +24990,47 @@
       </trans-unit>
       <trans-unit id="2332" resname="search_result_responded" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor responded</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生回复</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生回复</target>
       </trans-unit>
       <trans-unit id="2333" resname="search_result_responded" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors responded</source>
-        <target>&lt;b&gt; %d&lt;/b&gt;医生回复</target>
+        <target>&lt;b&gt; %d&lt;/b&gt;名医生回复</target>
       </trans-unit>
       <trans-unit id="2334" resname="search_result_agreed" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor agreed</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生同意</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生同意</target>
       </trans-unit>
       <trans-unit id="2335" resname="search_result_agreed" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors agreed</source>
-        <target>&lt;b&gt; %d&lt;/b&gt;医生同意</target>
+        <target>&lt;b&gt; %d&lt;/b&gt;名医生同意</target>
       </trans-unit>
       <trans-unit id="2336" resname="search_result_recommended" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor recommended</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生建议</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生建议</target>
       </trans-unit>
       <trans-unit id="2337" resname="search_result_recommended" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors recommended</source>
-        <target>&lt;b&gt; %d&lt;/b&gt;医生建议</target>
+        <target>&lt;b&gt; %d&lt;/b&gt;名医生建议</target>
       </trans-unit>
       <trans-unit id="2338" resname="search_result_endorsed" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor endorsed</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生认可</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生认可</target>
       </trans-unit>
       <trans-unit id="2339" resname="search_result_endorsed" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors endorsed</source>
-        <target>&lt;b&gt; %d&lt;/b&gt;医生认可</target>
+        <target>&lt;b&gt; %d&lt;/b&gt;名医生认可</target>
       </trans-unit>
       <trans-unit id="2340" resname="search_result_shared_insights" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor shared insights</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生分享了见解</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生分享了见解</target>
       </trans-unit>
       <trans-unit id="2341" resname="search_result_shared_insights" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors shared insights</source>
-        <target>&lt;b&gt; %d&lt;/b&gt;医生分享了见解</target>
+        <target>&lt;b&gt; %d&lt;/b&gt;名医生分享了见解</target>
       </trans-unit>
       <trans-unit id="2342" resname="search_result_available" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor available</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生空闲</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生空闲</target>
       </trans-unit>
       <trans-unit id="2343" resname="search_result_available" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors available</source>
@@ -35095,12 +35095,12 @@
     <body>
       <trans-unit id="183" resname="app_recommend" restype="plural" datatype="x-android-resource" extype="one">
         <source>{start}1{end} doctor recommends</source>
-        <target>{start}1{end}医生建议</target>
+        <target>{start}1{end}名医生建议</target>
         <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="184" resname="app_recommend" restype="plural" datatype="x-android-resource" extype="other">
         <source>{start}%d{end} doctors recommend</source>
-        <target>{start}%d{end}医生建议</target>
+        <target>{start}%d{end}名医生建议</target>
         <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="185" resname="app_recommend2" restype="plural" datatype="x-android-resource" extype="one">
@@ -35241,43 +35241,43 @@
       </trans-unit>
       <trans-unit id="217" resname="search_result_responded" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor responded</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生回复</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生回复</target>
       </trans-unit>
       <trans-unit id="218" resname="search_result_responded" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors responded</source>
-        <target>&lt;b&gt; %d&lt;/b&gt;医生回复</target>
+        <target>&lt;b&gt; %d&lt;/b&gt;名医生回复</target>
       </trans-unit>
       <trans-unit id="219" resname="search_result_agreed" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor agreed</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生同意</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生同意</target>
       </trans-unit>
       <trans-unit id="220" resname="search_result_agreed" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors agreed</source>
-        <target>&lt;b&gt; %d&lt;/b&gt;医生同意</target>
+        <target>&lt;b&gt; %d&lt;/b&gt;名医生同意</target>
       </trans-unit>
       <trans-unit id="221" resname="search_result_recommended" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor recommended</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生建议</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生建议</target>
       </trans-unit>
       <trans-unit id="222" resname="search_result_recommended" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors recommended</source>
-        <target>&lt;b&gt; %d&lt;/b&gt;医生建议</target>
+        <target>&lt;b&gt; %d&lt;/b&gt;名医生建议</target>
       </trans-unit>
       <trans-unit id="223" resname="search_result_endorsed" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor endorsed</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生认可</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生认可</target>
       </trans-unit>
       <trans-unit id="224" resname="search_result_endorsed" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors endorsed</source>
-        <target>&lt;b&gt; %d&lt;/b&gt;医生认可</target>
+        <target>&lt;b&gt; %d&lt;/b&gt;名医生认可</target>
       </trans-unit>
       <trans-unit id="225" resname="search_result_shared_insights" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor shared insights</source>
-        <target>&lt;b&gt; 1 &lt;/b&gt;医生分享了见解</target>
+        <target>&lt;b&gt; 1 &lt;/b&gt;名医生分享了见解</target>
       </trans-unit>
       <trans-unit id="226" resname="search_result_shared_insights" restype="plural" datatype="x-android-resource" extype="other">
         <source>&lt;b&gt;%d&lt;/b&gt; doctors shared insights</source>
-        <target>&lt;b&gt; %d&lt;/b&gt;医生分享了见解</target>
+        <target>&lt;b&gt; %d&lt;/b&gt;名医生分享了见解</target>
       </trans-unit>
       <trans-unit id="227" resname="search_result_available" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor available</source>
@@ -46974,7 +46974,7 @@
       </trans-unit>
       <trans-unit id="602" resname="r356004357" restype="string" datatype="java">
         <source>Hi, {name}!</source>
-        <target>您好，({name})！</target>
+        <target>您好，{name}！</target>
       </trans-unit>
       <trans-unit id="603" resname="r787211475" restype="string" datatype="java">
         <source>99+</source>
@@ -53605,7 +53605,7 @@
       </trans-unit>
       <trans-unit id="618" resname="r356004357" restype="string" datatype="x-android-resource">
         <source>Hi, {name}!</source>
-        <target state="translated">您好，({name})！</target>
+        <target state="translated">您好，{name}！</target>
       </trans-unit>
       <trans-unit id="619" resname="r787211475" restype="string" datatype="x-android-resource">
         <source>99+</source>

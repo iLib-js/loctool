@@ -8,18 +8,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/user_questions/feelGood/show.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="2" resname="r359045259" restype="plural" datatype="ruby" extype="one">
-        <source>&lt;span class="num"&gt;1&lt;/span&gt; doctor agrees</source>
-        <target state="translated">&lt;span class="num"&gt;1&lt;/span&gt; doctor agrees</target>
-      </trans-unit>
-      <trans-unit id="3" resname="r359045259" restype="plural" datatype="ruby" extype="other">
-        <source>&lt;span class="num"&gt;%{count}&lt;/span&gt; doctors agree</source>
-        <target state="translated">&lt;span class="num"&gt;%{count}&lt;/span&gt; 医生同意</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="app/views/user_questions/feelGood/list_questions.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="4" resname="r658863033" restype="string" datatype="ruby">
@@ -264,7 +252,7 @@
       </trans-unit>
       <trans-unit id="45" resname="r970741512" restype="string" datatype="ruby">
         <source>&lt;p&gt;I'm delighted to share with you a special keycode: &lt;b&gt;%{key_code}, which will help you connect with me as my patient!&lt;/b&gt; Schedule appointments to video or text chat me live, or message me any time via my Virtual Practice!&lt;/p&gt;</source>
-        <target state="translated">&lt;p&gt;很高兴与您分享一个特殊的代码: &lt;b&gt;%{key_code}, 这将帮助您作为我的病人与我们联系！&lt;/b&gt安排视频或文字预约，或通过我的在线诊疗在任何时候给我留言！&lt;/p&gt;</target>
+        <target state="translated">&lt;p&gt;很高兴与您分享一个特殊的代码: &lt;b&gt;%{key_code}, 这将帮助您作为我的病人与我们联系！&lt;/b&gt;安排视频或文字预约，或通过我的在线诊疗在任何时候给我留言！&lt;/p&gt;</target>
       </trans-unit>
       <trans-unit id="46" resname="r70768464" restype="string" datatype="ruby">
         <source>&lt;p&gt;Please join this private %{live_consult_type}&amp;nbsp;consult between %{doctor}&amp;nbsp;and %{patient_name} %{last_name}&amp;nbsp;now.&amp;nbsp;&lt;/p&gt;</source>
