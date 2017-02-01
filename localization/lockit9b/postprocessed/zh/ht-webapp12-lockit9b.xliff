@@ -58,7 +58,7 @@
   </file>
   <file original="app/views/people/feelGood/searchPages/search_results.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="49" resname="r1072022560" restype="plural" datatype="ruby" extype="other">
+      <trans-unit id="49" resname="r1072022560" restype="plural" datatype="ruby" extype="one">
         <source>1 doctor responded</source>
         <target state="translated">1位医生回复</target>
       </trans-unit>
@@ -66,11 +66,11 @@
   </file>
   <file original="app/views/people/feelGood/feed/_answer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="60" resname="r80475342" restype="plural" datatype="ruby" extype="other">
+      <trans-unit id="60" resname="r80475342" restype="plural" datatype="ruby" extype="one">
         <source>1 doctor agrees</source>
         <target state="translated">1名医生赞成</target>
       </trans-unit>
-      <trans-unit id="62" resname="r619530839" restype="plural" datatype="ruby" extype="other">
+      <trans-unit id="62" resname="r619530839" restype="plural" datatype="ruby" extype="one">
         <source>See 1 more answer</source>
         <target state="translated">多查看1个回答</target>
       </trans-unit>
@@ -122,7 +122,7 @@
   </file>
   <file original="app/views/people/feelGood/_checklist_discover.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="81" resname="r799856089" restype="plural" datatype="ruby" extype="other">
+      <trans-unit id="81" resname="r799856089" restype="plural" datatype="ruby" extype="one">
         <source>1 checklist</source>
         <target state="translated">1个清单</target>
       </trans-unit>
