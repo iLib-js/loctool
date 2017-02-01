@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="r133973370" restype="string" datatype="ruby">
         <source>today %{time}</source>
-        <target state="new">今天 %{time}</target>
+        <target state="translated">今天 %{time}</target>
       </trans-unit>
     </body>
   </file>
@@ -12,11 +12,11 @@
     <body>
       <trans-unit id="2" resname="r359045259" restype="plural" datatype="ruby" extype="one">
         <source>&lt;span class="num"&gt;1&lt;/span&gt; doctor agrees</source>
-        <target state="new">&lt;span class="num"&gt;1&lt;/span&gt; doctor agrees</target>
+        <target state="translated">&lt;span class="num"&gt;1&lt;/span&gt; doctor agrees</target>
       </trans-unit>
       <trans-unit id="3" resname="r359045259" restype="plural" datatype="ruby" extype="other">
         <source>&lt;span class="num"&gt;%{count}&lt;/span&gt; doctors agree</source>
-        <target state="new">&lt;span class="num"&gt;%{count}&lt;/span&gt; 医生同意</target>
+        <target state="translated">&lt;span class="num"&gt;%{count}&lt;/span&gt; 医生同意</target>
       </trans-unit>
     </body>
   </file>
@@ -24,7 +24,7 @@
     <body>
       <trans-unit id="4" resname="r658863033" restype="string" datatype="ruby">
         <source>%{span_start}Get answers to your health questions%{span_end}&lt;br&gt;%{span_start}from over %{count} top doctors%{span_end}</source>
-        <target state="new">%{span_start}从超过 %{count} 的顶级医生%获得您健康问题的答案%{span_end}&lt;br&gt;%{span_start}{span_end}</target>
+        <target state="translated">%{span_start}从超过 %{count} 的顶级医生%获得您健康问题的答案%{span_end}&lt;br&gt;%{span_start}{span_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -32,11 +32,11 @@
     <body>
       <trans-unit id="5" resname="r25125964" restype="plural" datatype="ruby" extype="one">
         <source>doctor responded</source>
-        <target state="new">医生已回答</target>
+        <target state="translated">医生已回答</target>
       </trans-unit>
       <trans-unit id="6" resname="r25125964" restype="plural" datatype="ruby" extype="other">
         <source>doctors responded</source>
-        <target state="new">医生已回答</target>
+        <target state="translated">医生已回答</target>
       </trans-unit>
     </body>
   </file>
@@ -44,19 +44,19 @@
     <body>
       <trans-unit id="7" resname="r462161509" restype="string" datatype="ruby">
         <source>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; will metamorphose from a Q&amp;amp;A site into a service that doctors, hospitals, or provider organizations will buy to manage their larger patient pools more efficiently.</source>
-        <target state="new">&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; 将从问答网站变换为医生、医院或健康服务提供者组织将购买以更有效地管理其患者群体的服务。</target>
+        <target state="translated">&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; 将从问答网站变换为医生、医院或健康服务提供者组织将购买以更有效地管理其患者群体的服务。</target>
       </trans-unit>
       <trans-unit id="8" resname="r4717942" restype="string" datatype="ruby">
         <source>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;’s Q&amp;amp;A service sees 7.5M uniques per month, with MDs spending an hour per session providing 581m answers.</source>
-        <target state="new">&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;’s问答服务每月可获得7500万的不重复医生回答，医生平均每个诊疗用一个小时的时间。</target>
+        <target state="translated">&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt;’s问答服务每月可获得7500万的不重复医生回答，医生平均每个诊疗用一个小时的时间。</target>
       </trans-unit>
       <trans-unit id="9" resname="r1043107356" restype="string" datatype="ruby">
         <source>[Increasing] its network of doctors available to answer patients' questions online, Palo Alto-based &lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; is acquiring Q&amp;amp;A site Avvo Health.</source>
-        <target state="new">[为了增长]可回答患者、在线问题的医生网络，Palo Alto的HealthTap正在收购问答网站Avvo Health。</target>
+        <target state="translated">[为了增长]可回答患者、在线问题的医生网络，Palo Alto的HealthTap正在收购问答网站Avvo Health。</target>
       </trans-unit>
       <trans-unit id="10" resname="r119911438" restype="string" datatype="ruby">
         <source>&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; Takes Q&amp;amp;A with Your Physician Mobile.</source>
-        <target state="new">&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; 用智能手机与医生问答。</target>
+        <target state="translated">&lt;span class="ht-name"&gt;HealthTap&lt;/span&gt; 用智能手机与医生问答。</target>
       </trans-unit>
     </body>
   </file>
@@ -64,7 +64,7 @@
     <body>
       <trans-unit id="11" resname="r808842909" restype="string" datatype="ruby">
         <source>Curated by doctors to keep you&lt;br/&gt;informed on current events in medicine</source>
-        <target state="new">由医生策划，让您随时了解医学发展中的当前事件</target>
+        <target state="translated">由医生策划，让您随时了解医学发展中的当前事件</target>
       </trans-unit>
     </body>
   </file>
@@ -72,19 +72,19 @@
     <body>
       <trans-unit id="12" resname="r420577192" restype="string" datatype="ruby">
         <source>Upper Abdomen</source>
-        <target state="new">上腹部</target>
+        <target state="translated">上腹部</target>
       </trans-unit>
       <trans-unit id="13" resname="r569067464" restype="string" datatype="ruby">
         <source>Lower Abdomen</source>
-        <target state="new">下腹部</target>
+        <target state="translated">下腹部</target>
       </trans-unit>
       <trans-unit id="14" resname="r1040580325" restype="string" datatype="ruby">
         <source>Upper Back</source>
-        <target state="new">背部上方</target>
+        <target state="translated">背部上方</target>
       </trans-unit>
       <trans-unit id="15" resname="r431798784" restype="string" datatype="ruby">
         <source>Lower Back</source>
-        <target state="new">背部下方</target>
+        <target state="translated">背部下方</target>
       </trans-unit>
     </body>
   </file>
@@ -92,11 +92,11 @@
     <body>
       <trans-unit id="16" resname="r1001786497" restype="string" datatype="ruby">
         <source>Find doctors then select how you would like to connect with them</source>
-        <target state="new">寻找医生，然后选择您想如何与他们联系的方式</target>
+        <target state="translated">寻找医生，然后选择您想如何与他们联系的方式</target>
       </trans-unit>
       <trans-unit id="17" resname="r535372463" restype="string" datatype="ruby">
         <source>Add doctors to your Care-Team</source>
-        <target state="new">加入医生到您的医护团队中</target>
+        <target state="translated">加入医生到您的医护团队中</target>
       </trans-unit>
     </body>
   </file>
@@ -104,35 +104,35 @@
     <body>
       <trans-unit id="18" resname="r366075547" restype="string" datatype="ruby">
         <source>Edit symptoms</source>
-        <target state="new">编辑症状</target>
+        <target state="translated">编辑症状</target>
       </trans-unit>
       <trans-unit id="19" resname="r306721015" restype="string" datatype="ruby">
         <source>Who needs help?</source>
-        <target state="new">谁需要帮助？</target>
+        <target state="translated">谁需要帮助？</target>
       </trans-unit>
       <trans-unit id="20" resname="r783088456" restype="string" datatype="ruby">
         <source>Tap symptoms or ask doctors</source>
-        <target state="new">点击症状或询问医生</target>
+        <target state="translated">点击症状或询问医生</target>
       </trans-unit>
       <trans-unit id="21" resname="r572969928" restype="string" datatype="ruby">
         <source>Search symptoms</source>
-        <target state="new">搜索症状</target>
+        <target state="translated">搜索症状</target>
       </trans-unit>
       <trans-unit id="22" resname="r455959661" restype="string" datatype="ruby">
         <source>Risk factor</source>
-        <target state="new">风险因素</target>
+        <target state="translated">风险因素</target>
       </trans-unit>
       <trans-unit id="23" resname="r15825047" restype="string" datatype="ruby">
         <source>Choose condition</source>
-        <target state="new">选择病症</target>
+        <target state="translated">选择病症</target>
       </trans-unit>
       <trans-unit id="24" resname="r996759903" restype="string" datatype="ruby">
         <source>Care options</source>
-        <target state="new">护理选择</target>
+        <target state="translated">护理选择</target>
       </trans-unit>
       <trans-unit id="25" resname="r374668228" restype="string" datatype="ruby">
         <source>Seek emergency medical attention</source>
-        <target state="new">寻求紧急医疗救助</target>
+        <target state="translated">寻求紧急医疗救助</target>
       </trans-unit>
     </body>
   </file>
@@ -140,11 +140,11 @@
     <body>
       <trans-unit id="26" resname="r978704542" restype="plural" datatype="ruby" extype="one">
         <source>1 doctor &lt;span&gt;agrees&lt;/span&gt;</source>
-        <target state="new">1 医生 &lt;span&gt;agrees&lt;/span&gt;</target>
+        <target state="translated">1 医生 &lt;span&gt;agrees&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="27" resname="r978704542" restype="plural" datatype="ruby" extype="other">
         <source>%{count} doctors &lt;span&gt;agree&lt;/span&gt;</source>
-        <target state="new">%{count} 医生 &lt;span&gt;agree&lt;/span&gt;</target>
+        <target state="translated">%{count} 医生 &lt;span&gt;agree&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -152,11 +152,11 @@
     <body>
       <trans-unit id="28" resname="r316944342" restype="plural" datatype="ruby" extype="one">
         <source>&lt;a class="agrees"&gt;1 doctor&lt;/a&gt; agrees</source>
-        <target state="new">&lt;a class="agrees"&gt;1 医生&lt;/a&gt; 同意</target>
+        <target state="translated">&lt;a class="agrees"&gt;1 医生&lt;/a&gt; 同意</target>
       </trans-unit>
       <trans-unit id="29" resname="r316944342" restype="plural" datatype="ruby" extype="other">
         <source>&lt;a class="agrees"&gt;%{count} doctors&lt;/a&gt; agree</source>
-        <target state="new">&lt;a class="agrees"&gt;%{count} 医生&lt;/a&gt; 同意</target>
+        <target state="translated">&lt;a class="agrees"&gt;%{count} 医生&lt;/a&gt; 同意</target>
       </trans-unit>
     </body>
   </file>
@@ -164,7 +164,7 @@
     <body>
       <trans-unit id="30" resname="r543871242" restype="string" datatype="ruby">
         <source>%{doctor_specialty}, Board Certified</source>
-        <target state="new">%{doctor_specialty}, 医疗委员会认证</target>
+        <target state="translated">%{doctor_specialty}, 医疗委员会认证</target>
       </trans-unit>
     </body>
   </file>
@@ -172,7 +172,7 @@
     <body>
       <trans-unit id="31" resname="r238242935" restype="string" datatype="ruby">
         <source>You can also ask %{static_doctors_count} doctors for FREE!</source>
-        <target state="new">您可以免费向 %{static_doctors_count} 名医生询问!</target>
+        <target state="translated">您可以免费向 %{static_doctors_count} 名医生询问!</target>
       </trans-unit>
     </body>
   </file>
@@ -180,7 +180,7 @@
     <body>
       <trans-unit id="32" resname="r466948495" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}</source>
-        <target state="new">Dr. %{ai_trademark}</target>
+        <target state="translated">Dr. %{ai_trademark}</target>
       </trans-unit>
     </body>
   </file>
@@ -188,7 +188,7 @@
     <body>
       <trans-unit id="33" resname="r770298187" restype="string" datatype="ruby">
         <source>Your password has been securely reset to the following: &lt;b&gt;%{pw}&lt;/b&gt;</source>
-        <target state="new">您的密码已经被安全重置为： &lt;b&gt;%{pw}&lt;/b&gt;</target>
+        <target state="translated">您的密码已经被安全重置为： &lt;b&gt;%{pw}&lt;/b&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -196,7 +196,7 @@
     <body>
       <trans-unit id="34" resname="r1031254890" restype="string" datatype="ruby">
         <source>Video or text chat right from your computer or mobile device for advice and treatment, now only &lt;b&gt;%{test_drive_price}&lt;/b&gt;.</source>
-        <target state="new">视频或文字聊天，直接用您的计算机或移动设备就能获得建议和治疗，现在只要 &lt;b&gt;%{test_drive_price}&lt;/b&gt;.</target>
+        <target state="translated">视频或文字聊天，直接用您的计算机或移动设备就能获得建议和治疗，现在只要 &lt;b&gt;%{test_drive_price}&lt;/b&gt;.</target>
       </trans-unit>
     </body>
   </file>
@@ -204,7 +204,7 @@
     <body>
       <trans-unit id="35" resname="r625042656" restype="string" datatype="ruby">
         <source>Staying healthy is easier when it's a part of your everyday life. Below are some helpful tips for managing and improving health and well-being, as well as some recent answers to health questions on HealthTap.&lt;br/&gt;&lt;br/&gt;You can visit my Virtual Practice on HealthTap at any time, before and between visits, to read more of my answers to health questions, and to discover more of my healthy living tips.</source>
-        <target state="new">当它成为你的日常生活的一部分时，保持健康更容易。以下是一些有用的提示，用于管理和改善健康和福利，以及HealthTap对健康问题的一些最新解答。&lt;br/&gt;&lt;br/&gt;您可以在访问之前和之间随时访问HealthTap“我的在线诊疗” ，阅读更多的“我的健康问题”的答案，并发现更多的“我的健康生活小贴士”。</target>
+        <target state="translated">当它成为你的日常生活的一部分时，保持健康更容易。以下是一些有用的提示，用于管理和改善健康和福利，以及HealthTap对健康问题的一些最新解答。&lt;br/&gt;&lt;br/&gt;您可以在访问之前和之间随时访问HealthTap“我的在线诊疗” ，阅读更多的“我的健康问题”的答案，并发现更多的“我的健康生活小贴士”。</target>
       </trans-unit>
     </body>
   </file>
@@ -212,7 +212,7 @@
     <body>
       <trans-unit id="36" resname="r953178003" restype="string" datatype="ruby">
         <source>Page [page] of [toPage]     Prescriber Signature:  _______________________</source>
-        <target state="new">第 [page]页，共 [toPage]页     处方签名:  _______________________</target>
+        <target state="translated">第 [page]页，共 [toPage]页     处方签名:  _______________________</target>
       </trans-unit>
     </body>
   </file>
@@ -220,7 +220,7 @@
     <body>
       <trans-unit id="37" resname="r228408514" restype="string" datatype="ruby">
         <source>Talk to a representative to learn what&lt;br/&gt;%{product_name} can do for you</source>
-        <target state="new">与代表交谈，了解&lt;br/&gt;%{product_name}可以为您做什么</target>
+        <target state="translated">与代表交谈，了解&lt;br/&gt;%{product_name}可以为您做什么</target>
       </trans-unit>
     </body>
   </file>
@@ -228,15 +228,15 @@
     <body>
       <trans-unit id="38" resname="r291477475" restype="string" datatype="ruby">
         <source>Select any risk factors from the following list</source>
-        <target state="new">从以下列表中选择任何风险因素</target>
+        <target state="translated">从以下列表中选择任何风险因素</target>
       </trans-unit>
       <trans-unit id="39" resname="r117180508" restype="string" datatype="ruby">
         <source>List any medications</source>
-        <target state="new">列出任何药物</target>
+        <target state="translated">列出任何药物</target>
       </trans-unit>
       <trans-unit id="40" resname="r931077598" restype="string" datatype="ruby">
         <source>List any allergies</source>
-        <target state="new">列出任何过敏</target>
+        <target state="translated">列出任何过敏</target>
       </trans-unit>
     </body>
   </file>
@@ -244,11 +244,11 @@
     <body>
       <trans-unit id="41" resname="r216002396" restype="string" datatype="ruby">
         <source>&lt;div style="color:#d8ac45;padding-bottom:5px"&gt;&lt;b&gt;Congrats! You have earned a medal!&lt;/b&gt;&lt;/div&gt; &lt;div style='padding-bottom:5px'&gt;&lt;b&gt;%{name}:&lt;/b&gt; &lt;i style='font-style: italic;'&gt;%{trigger}&lt;/i&gt;&lt;/d][Earn more medals to gain recognition for your expertise and compassion.&lt;br&gt;&lt;b&gt;Unlock the %{next_name} medal next. &lt;a href='/#expert/home'&gt;Learn How &amp;raquo;&lt;/a&gt;&lt;/b&gt;&lt;/div&gt;</source>
-        <target state="new">&lt;div style="color:#d8ac45;padding-bottom:5px"&gt;&lt;b&gt;恭喜！您赢得了一枚勋章！&lt;/b&gt;&lt;/div&gt; &lt;div style='padding-bottom:5px'&gt;&lt;b&gt;%{name}:&lt;/b&gt; &lt;i style='font-style: italic;'&gt;%{trigger}&lt;/i&gt;&lt;/d][赢得更多勋章，得到对您的专业水平和医者仁心的承认。&lt;br&gt;&lt;b&gt;接下来打开 %{next_name} 勋章。 &lt;a href='/#expert/home'&gt;了解如何 &amp;raquo;&lt;/a&gt;&lt;/b&gt;&lt;/div&gt;</target>
+        <target state="translated">&lt;div style="color:#d8ac45;padding-bottom:5px"&gt;&lt;b&gt;恭喜！您赢得了一枚勋章！&lt;/b&gt;&lt;/div&gt; &lt;div style='padding-bottom:5px'&gt;&lt;b&gt;%{name}:&lt;/b&gt; &lt;i style='font-style: italic;'&gt;%{trigger}&lt;/i&gt;&lt;/d][赢得更多勋章，得到对您的专业水平和医者仁心的承认。&lt;br&gt;&lt;b&gt;接下来打开 %{next_name} 勋章。 &lt;a href='/#expert/home'&gt;了解如何 &amp;raquo;&lt;/a&gt;&lt;/b&gt;&lt;/div&gt;</target>
       </trans-unit>
       <trans-unit id="42" resname="r45477801" restype="string" datatype="ruby">
         <source>&lt;div style="color:#d8ac45;padding-bottom:5px"&gt;&lt;b&gt;Congrats! You have earned a medal!&lt;/b&gt;&lt;/div&gt; &lt;div style='padding-bottom:5px'&gt;&lt;b&gt;%{name}:&lt;/b&gt; &lt;i style='font-style: italic;'&gt;%{trigger}&lt;/i&gt;&lt;/d][Earn more medals to gain recognition for your expertise and compassion.&lt;br&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;</source>
-        <target state="new">&lt;div style="color:#d8ac45;padding-bottom:5px"&gt;&lt;b&gt;恭喜！您赢得了一枚勋章！&lt;/b&gt;&lt;/div&gt; &lt;div style='padding-bottom:5px'&gt;&lt;b&gt;%{name}:&lt;/b&gt; &lt;i style='font-style: italic;'&gt;%{trigger}&lt;/i&gt;&lt;/d][赢得更多勋章，得到对您的专业水平和医者仁心的承认。&lt;br&gt;&lt;b&gt;接下来打开 %{next_name} 勋章。&lt;br&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;</target>
+        <target state="translated">&lt;div style="color:#d8ac45;padding-bottom:5px"&gt;&lt;b&gt;恭喜！您赢得了一枚勋章！&lt;/b&gt;&lt;/div&gt; &lt;div style='padding-bottom:5px'&gt;&lt;b&gt;%{name}:&lt;/b&gt; &lt;i style='font-style: italic;'&gt;%{trigger}&lt;/i&gt;&lt;/d][赢得更多勋章，得到对您的专业水平和医者仁心的承认。&lt;br&gt;&lt;b&gt;接下来打开 %{next_name} 勋章。&lt;br&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -256,27 +256,27 @@
     <body>
       <trans-unit id="43" resname="r493812557" restype="string" datatype="ruby">
         <source>&lt;p&gt;HealthTap is an exciting new service for improving your health and well-being. You can learn more about your health by getting trusted health information 24/7 from me and more than 63,000 of my colleagues—who are some of the top doctors in the United States. You can get help by requesting Virtual Consults through HealthTap Prime and Virtual Appointments through HealthTap Concierge. You can also take action by following the tips and checklists I created along with my colleagues. All this helps you focus more on your health and well-being so you feel good all the time!&lt;/p&gt;</source>
-        <target state="new">&lt;p&gt;HealthTap是一个令人兴奋的新服务，以改善你的健康和福祉。您可以从我和超过63000名同事（他们是美国的顶级医生）那里全天候获得值得信任的健康信息，从而了解您的健康状况。 您可以通过HealthTap Prime和在线预约，通过HealthTap 贵宾台请求在线咨询以获取帮助。 您也可以按照我与同事一起创建的小贴士和清单来采取行动。 所有这些都有助于您更专注于您的健康和福祉，所以您才能总是感觉很好！&lt;/p&gt;</target>
+        <target state="translated">&lt;p&gt;HealthTap是一个令人兴奋的新服务，以改善你的健康和福祉。您可以从我和超过63000名同事（他们是美国的顶级医生）那里全天候获得值得信任的健康信息，从而了解您的健康状况。 您可以通过HealthTap Prime和在线预约，通过HealthTap 贵宾台请求在线咨询以获取帮助。 您也可以按照我与同事一起创建的小贴士和清单来采取行动。 所有这些都有助于您更专注于您的健康和福祉，所以您才能总是感觉很好！&lt;/p&gt;</target>
       </trans-unit>
       <trans-unit id="44" resname="r174320118" restype="string" datatype="ruby">
         <source>&lt;b&gt;Join today!&lt;/b&gt;</source>
-        <target state="new">&lt;b&gt;今天就加入!&lt;/b&gt;</target>
+        <target state="translated">&lt;b&gt;今天就加入!&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="45" resname="r970741512" restype="string" datatype="ruby">
         <source>&lt;p&gt;I'm delighted to share with you a special keycode: &lt;b&gt;%{key_code}, which will help you connect with me as my patient!&lt;/b&gt; Schedule appointments to video or text chat me live, or message me any time via my Virtual Practice!&lt;/p&gt;</source>
-        <target state="new">&lt;p&gt;很高兴与您分享一个特殊的代码: &lt;b&gt;%{key_code}, 这将帮助您作为我的病人与我们联系！&lt;/b&gt安排视频或文字预约，或通过我的在线诊疗在任何时候给我留言！&lt;/p&gt;</target>
+        <target state="translated">&lt;p&gt;很高兴与您分享一个特殊的代码: &lt;b&gt;%{key_code}, 这将帮助您作为我的病人与我们联系！&lt;/b&gt安排视频或文字预约，或通过我的在线诊疗在任何时候给我留言！&lt;/p&gt;</target>
       </trans-unit>
       <trans-unit id="46" resname="r70768464" restype="string" datatype="ruby">
         <source>&lt;p&gt;Please join this private %{live_consult_type}&amp;nbsp;consult between %{doctor}&amp;nbsp;and %{patient_name} %{last_name}&amp;nbsp;now.&amp;nbsp;&lt;/p&gt;</source>
-        <target state="new">&lt;p&gt;请现在加入 %{doctor}&amp;nbsp;与 %{patient_name} %{last_name}&amp;nbsp;之间的私人 %{live_consult_type}&amp;nbsp;咨询。&amp;nbsp;&lt;/p&gt;</target>
+        <target state="translated">&lt;p&gt;请现在加入 %{doctor}&amp;nbsp;与 %{patient_name} %{last_name}&amp;nbsp;之间的私人 %{live_consult_type}&amp;nbsp;咨询。&amp;nbsp;&lt;/p&gt;</target>
       </trans-unit>
       <trans-unit id="47" resname="r331167583" restype="string" datatype="ruby">
         <source>&lt;p&gt;Please join me in a private %{live_consult_type}&amp;nbsp;consult with %{patient_name} %{last_name}&amp;nbsp;now.&lt;/p&gt;</source>
-        <target state="new">&lt;p&gt;请现在加入我与%{patient_name} %{last_name}&amp;nbsp;的%{live_consult_type}咨询&amp;nbsp;&lt;/p&gt;</target>
+        <target state="translated">&lt;p&gt;请现在加入我与%{patient_name} %{last_name}&amp;nbsp;的%{live_consult_type}咨询&amp;nbsp;&lt;/p&gt;</target>
       </trans-unit>
       <trans-unit id="48" resname="r722076930" restype="string" datatype="ruby">
         <source>&lt;p&gt;Please join me in a private %{live_consult_type}&amp;nbsp;consult with %{doctor}&amp;nbsp;now.&lt;/p&gt;</source>
-        <target state="new">&lt;p&gt;请现在加入我与 %{doctor}&amp;nbsp;的%{live_consult_type}咨询&amp;nbsp;&lt;/p&gt;</target>
+        <target state="translated">&lt;p&gt;请现在加入我与 %{doctor}&amp;nbsp;的%{live_consult_type}咨询&amp;nbsp;&lt;/p&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -284,19 +284,19 @@
     <body>
       <trans-unit id="49" resname="r380428015" restype="string" datatype="ruby">
         <source>Serious</source>
-        <target state="new">严重的</target>
+        <target state="translated">严重的</target>
       </trans-unit>
       <trans-unit id="50" resname="r262838433" restype="string" datatype="ruby">
         <source>Severe reactions may occur when taken with</source>
-        <target state="new">当服用...时可能发生严重的反应</target>
+        <target state="translated">当服用...时可能发生严重的反应</target>
       </trans-unit>
       <trans-unit id="51" resname="r698739531" restype="string" datatype="ruby">
         <source>May cause reaction if taken with</source>
-        <target state="new">当同时服用...时可能发生严重的反应</target>
+        <target state="translated">当同时服用...时可能发生严重的反应</target>
       </trans-unit>
       <trans-unit id="52" resname="r915826933" restype="string" datatype="ruby">
         <source>Types of %{name}</source>
-        <target state="new">%{name}的类型</target>
+        <target state="translated">%{name}的类型</target>
       </trans-unit>
     </body>
   </file>
@@ -304,15 +304,15 @@
     <body>
       <trans-unit id="53" resname="r714693681" restype="string" datatype="ruby">
         <source>"May cause reaction if taken with</source>
-        <target state="new">"当同时服用...时可能发生严重的反应</target>
+        <target state="translated">"当同时服用...时可能发生严重的反应</target>
       </trans-unit>
       <trans-unit id="54" resname="r273784856" restype="string" datatype="ruby">
         <source>Personal risk factors</source>
-        <target state="new">个人风险因素</target>
+        <target state="translated">个人风险因素</target>
       </trans-unit>
       <trans-unit id="55" resname="r593089974" restype="string" datatype="ruby">
         <source>Family history risk factors</source>
-        <target state="new">家庭病史风险因素</target>
+        <target state="translated">家庭病史风险因素</target>
       </trans-unit>
     </body>
   </file>
@@ -320,7 +320,7 @@
     <body>
       <trans-unit id="56" resname="r551518064" restype="string" datatype="ruby">
         <source>"%{expert} via HealthTap" &lt;notifications@healthtap.com&gt;'</source>
-        <target state="new">"HealthTap的%{expert}" &lt;notifications@healthtap.com&gt;'</target>
+        <target state="translated">"HealthTap的%{expert}" &lt;notifications@healthtap.com&gt;'</target>
       </trans-unit>
     </body>
   </file>
