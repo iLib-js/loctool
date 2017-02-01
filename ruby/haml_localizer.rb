@@ -197,7 +197,9 @@ def process_values(locale_mappings, values, unmapped_words)
     elsif locale_mappings[v]
       ret[v] = locale_mappings[v]
     else
-      ret[v] = pseudolocalize(v)
+      # TODO: turn off pseudolocalize for missing translation via a command-line switch
+      # ret[v] = pseudolocalize(v)
+      ret[v] = v
       unmapped_words << v
     end
   }
