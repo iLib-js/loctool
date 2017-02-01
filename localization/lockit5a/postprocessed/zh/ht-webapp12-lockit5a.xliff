@@ -7024,7 +7024,7 @@
       </trans-unit>
       <trans-unit id="9426" resname="r796072103" restype="string" datatype="x-haml">
         <source>&#40;Fox Business&#41;. You can also build a strong referral network and connect with peers from Medical School, Residency, and beyond.</source>
-        <target>&#40;Fox Business&#41。您还可以建立一个强大的转诊网络，与来自医学院、在高级专科住院实习的同龄人交流。</target>
+        <target>&#40;Fox Business&#41;。您还可以建立一个强大的转诊网络，与来自医学院、在高级专科住院实习的同龄人交流。</target>
       </trans-unit>
     </body>
   </file>
@@ -8382,10 +8382,10 @@
       </trans-unit>
       <trans-unit id="13585" resname="Doctor                                &lt;span class=&amp;quot;instruction&amp;quot;&gt;&#40;requires valid U.S. medical professional license&#41;&lt;/span&gt;" restype="string" datatype="html">
         <source>Doctor
-                
+
                 &lt;span class=&quot;instruction&quot;&gt;&#40;requires valid U.S. medical professional license&#41;&lt;/span&gt;</source>
         <target>医生
-                
+
                 &lt;span class=&quot;instruction&quot;&gt;&#40;需要有效的美国医疗专业执照&#41;&lt;/span&gt;</target>
       </trans-unit>
     </body>
@@ -8407,7 +8407,7 @@
   <file original="public/javascripts/templates/people/health_history/history_entry.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="13587" resname=":         &lt;span class=&amp;quot;entry_activity&amp;quot;&gt;          &lt;%= health_journal_entry.entry.person_attribute_value.display_string.capitalize&#40;&#41; %&gt;        &lt;/span&gt;" restype="string" datatype="html">
-        <source>: 
+        <source>:
         &lt;span class=&quot;entry_activity&quot;&gt;
           &lt;%= health_journal_entry.entry.person_attribute_value.display_string.capitalize&#40;&#41; %&gt;
         &lt;/span&gt;</source>
@@ -8828,7 +8828,7 @@
   <file original="public/javascripts/templates/layers/messages/message_share_layer.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="13623" resname="Share with a friend or loved one here.         &lt;br&gt;" restype="string" datatype="html">
-        <source>Share with a friend or loved one here. 
+        <source>Share with a friend or loved one here.
         &lt;br&gt;</source>
         <target>与一位朋友或您爱的人分享。&lt;br&gt;</target>
       </trans-unit>
@@ -9056,7 +9056,7 @@
   <file original="public/javascripts/templates/layers/IEDisclaimerPopup.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="13654" resname="Or download our mobile apps for       &lt;a href=&amp;quot;http://itunes.apple.com/us/app/id466079030&amp;quot;&gt;iPhone&lt;/a&gt;,      &lt;a href=&amp;quot;http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&amp;quot;&gt;Android&lt;/a&gt;, and      &lt;a href=&amp;quot;http://itunes.apple.com/us/app/id466079030&amp;quot;&gt;iPad&lt;/a&gt;" restype="string" datatype="html">
-        <source>Or download our mobile apps for 
+        <source>Or download our mobile apps for
       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPhone&lt;/a&gt;,
       &lt;a href=&quot;http://play.google.com/store/apps/details?id=com.healthtap.userhtexpress&quot;&gt;Android&lt;/a&gt;, and
       &lt;a href=&quot;http://itunes.apple.com/us/app/id466079030&quot;&gt;iPad&lt;/a&gt;</source>
@@ -9677,11 +9677,11 @@
       <trans-unit id="13728" resname="Medical Student &lt;a class=&amp;quot;actor_link&amp;quot; href=&amp;quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&amp;quot;&gt;          &lt;%= user_question.actor.name %&gt;        &lt;/a&gt;         asked:" restype="string" datatype="html">
         <source>Medical Student &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;
           &lt;%= user_question.actor.name %&gt;
-        &lt;/a&gt; 
+        &lt;/a&gt;
         asked:</source>
         <target>医学学生 &lt;a class=&quot;actor_link&quot; href=&quot;&#35;experts/&lt;%= user_question.actor.id %&gt;&quot;&gt;
           &lt;%= user_question.actor.name %&gt;
-        &lt;/a&gt; 
+        &lt;/a&gt;
         询问：</target>
       </trans-unit>
     </body>
@@ -9768,7 +9768,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
               1
               &lt;span class=&quot;suffix&quot;&gt;st&lt;/span&gt;
               &lt;/span&gt;
-              time consult discount for 
+              time consult discount for
               &lt;span style=&quot;display: inline-block;&quot;&gt;&lt;%= discount_price %&gt;
                 &lt;span class=&quot;sprite-icon tooltip offer-tooltip&quot;&gt;</source>
         <target>提供
@@ -10032,9 +10032,9 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
   <file original="public/feelGood/templates/legal_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="13767" resname="When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;.   You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for   virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay   seeking or receiving care in person as needed. &lt;br&gt;See &lt;a href=&amp;quot;/terms/additional_info&amp;quot; target=&amp;quot;_blank&amp;quot;&gt;Additional Information&lt;/a&gt;" restype="string" datatype="html">
-        <source>When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;. 
-  You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for 
-  virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay 
+        <source>When you request to connect with a doctor, we will notify the doctor via email &#40;as available&#41;.
+  You will be notified if you are confirmed as this doctor&apos;s patient or accepted by the doctor for
+  virtual consults. Please note: doctors do not always receive or respond to these requests, so never delay
   seeking or receiving care in person as needed. &lt;br&gt;See &lt;a href=&quot;/terms/additional_info&quot; target=&quot;_blank&quot;&gt;Additional Information&lt;/a&gt;</source>
         <target>当您请求与医生联系时，我们将通过电子邮件（如可用）通知医生。
    如果您被确认为该医生的病人或由医生接受，您将被通知
@@ -10175,7 +10175,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
   <file original="public/feelGood/templates/benefits_column.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="13788" resname="Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.           &lt;a href=&amp;quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&amp;quot; target=&amp;quot;_blank&amp;quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;" restype="string" datatype="html">
-        <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation. 
+        <source>Doctors can provide care and recommend and prescribe appropriate treatments. New treatment prescriptions and refills &#40;both excluding controlled drugs&#41;, which can be sent to your local pharmacy, are available where medically indicated and deemed appropriate by the treating doctor based on your Virtual Consult. &lt;br&gt;&lt;br&gt;Enjoy the convenience of having prescription treatments sent to your local pharmacy, whether you&apos;re at home or on vacation.
           &lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;Learn&amp;nbsp;more&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
         <target>医生可以提供护理，推荐和开具适当的治疗。新的治疗处方和补充药（不包括受管制的药物），可以发送到您当地的药店，根据您的在线咨询，医生给出适当的指示和治疗方式。 &lt;br&gt;&lt;br&gt;无论您是在家还是度假，都可享受向您当地药房发送处方治疗的便利。&lt;a href=&quot;https://healthtap.desk.com/customer/portal/articles/1537931-common-reasons-to-use-virtual-consults&quot; target=&quot;_blank&quot;&gt;了解&amp;nbsp;更多&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
@@ -10257,16 +10257,16 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       Comments, which are optional, are often used by doctors to qualify or explain ratings, or to share details of how medications are used for each indication. Comments are available to read and review, do not change the numeric value of the rating. Ratings are based on generic drug names, but brand names are presented to permit doctors to rate specific drugs. Brand names are shown for every generic medication name presented. This study does not differentiate ratings between different brand names for the same medication. The most common medication treatments for each condition are listed for ratings, but doctors are encouraged to add treatments for any indication, ensuring the inclusion of new or novel treatments for each condition. Doctors were instructed to add medications not previously  on the list of standard treatment only if they had experience using the medication to treat the condition at issue and found these medication effective in the treatment of that condition. &lt;br&gt;&lt;br&gt;
     &lt;a class=&quot;btn okay&quot;&gt;Okay&lt;/a&gt;</source>
         <target>RateRx是一种为医生和患者提供的新的\独立的资源、提供数以千计的美国执照医生在临床实践中报告的超过137种专业药物的有效性评级。 RateRx代表了第一个针对有经验的医生在他们各自的专业领域所使用的治疗特定情况患者的手段的全面性评估。与其他研究在特定的情况下评价治疗有效性不同的是，RateRx希望获得顶级医生深入而长期的实际经验来获取最佳治疗方法。&lt;br&gt;&lt;br&gt;
-		
+
 		医生们被要求评价用1至5星级为药物的临床有效性评分。做出评分的医生根据他们的知识对药物的具体适应症进行评级，并被指示仅根据使用该药物的临床经验提供输入。我们将每种治疗的综合评分总结为反映医生集体经验的总评级。提供评级的所有医生的个人介绍对用户可见，他们可以查看医生的培训和经验的细节，包括他们的专业和医学委员会认证。&lt;br&gt;&lt;br&gt;
-		
+
 		参与这项研究的所有美国持牌医生都有良好的信誉。HealthTap鼓励医疗专家网络中的全部66000名医生参加。此外，HealthTap邀请了超过500000名美国执照医生参与我们的扩展网络。医生能够针对治疗任何疾病的药物输入有效性评级，并且可以输入并添加任何尚未包括的新药物治疗的评级。&lt;br&gt;&lt;br&gt;
-		
+
 		 RateRx结果显示基于平均评级（从最高评级到最低）的有序排名中的指示的每种治疗。当基于所呈现的数据量，替代治疗的评级之间的差异被认为是有意义时。&lt;br&gt; &lt;br&gt;
 		为了确保医生的公正评估，医生在他们输入自己的评分之后才会看到他们同事的现有评分。建议不能在提交后更改，但在提交评分后，医生可以查看其他医生的评分并对其进行评论。患者和医生都可以从RateRx评级系统中学习。患者受益于这些医生共同的集体智慧，使他们能够看到如何评估和审查相同条件下的不同治疗。医生从同事的评分和评论中获益，并且能够通过参考贡献的医生的诊疗简介（显示他们的教育和经验，他们的专业培训，诊疗年份，医者评分和他们的“专攻”主题）。&lt;br&gt; &lt;br&gt;
-		
+
 		评论是可选的，经常被医生用来限定或解释评级，或者分享关于药物用于每种适应症的细节。评论可以阅读和评论，不要改变评分的数值。评分是基于仿制药名称，但品牌名称也可显示、以便医生对特定药物评级。每个提供的仿制药名称的品牌名称都被显示。这项研究没有区分同一药物的不同品牌名称之间的评级。每种情况的最常见的药物治疗被列出来评级，但鼓励医生添加任何适当的治疗，确保包括每种病症的最新研究。医生被指示添加以前不在标准治疗名单上的药物，但只在他们有使用药物治疗有争议的病症的经验、并发现这些药物治疗有效时才可以。&lt;br&gt;&lt;br&gt;
-		
+
     &lt;a class=&quot;btn okay&quot;&gt;好&lt;/a&gt;</target>
       </trans-unit>
     </body>
