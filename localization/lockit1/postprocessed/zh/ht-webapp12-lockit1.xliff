@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="4" resname="• &amp;nbsp; Benefit from doctor review" restype="string" datatype="html">
         <source>• &amp;nbsp; Benefit from doctor review</source>
-        <target>• &amp;nbsp; 从医生建议中受益</target>
+        <target>• &amp;nbsp; 从医生审查中受益</target>
       </trans-unit>
       <trans-unit id="5" resname="Examples of good health articles:" restype="string" datatype="html">
         <source>Examples of good health articles:</source>
@@ -36,7 +36,7 @@
       </trans-unit>
       <trans-unit id="9" resname="Helpful" restype="string" datatype="html">
         <source>Helpful</source>
-        <target>有帮助</target>
+        <target>有帮助的</target>
       </trans-unit>
       <trans-unit id="10" resname="Not Really" restype="string" datatype="html">
         <source>Not Really</source>
@@ -44,11 +44,11 @@
       </trans-unit>
       <trans-unit id="11" resname="F.D.A. Approves Pill to Treat Hepatitis C" restype="string" datatype="html">
         <source>F.D.A. Approves Pill to Treat Hepatitis C</source>
-        <target>F.D.A批准药物/药丸治疗丙型肝炎</target>
+        <target>F.D.A批准治疗丙型肝炎的药物</target>
       </trans-unit>
       <trans-unit id="12" resname="The Food and Drug Administration has approved Sovaldi, from Gilead Sciences, which will let some patients be treated for a minimum of 12 weeks, but at a cost of $1,000 per daily pill." restype="string" datatype="html">
         <source>The Food and Drug Administration has approved Sovaldi, from Gilead Sciences, which will let some patients be treated for a minimum of 12 weeks, but at a cost of $1,000 per daily pill.</source>
-        <target>美国食品和药物管理局已批准来自Gilead Sciences的Sovaldi，患者需至少服用12周，但是每天服用药丸需要花费1,000美元。</target>
+        <target>美国食品和药物管理局已批准来自Gilead Sciences的Sovaldi，患者需至少服用12周，但是每天服用药物需要花费1,000美元。</target>
       </trans-unit>
       <trans-unit id="13" resname="www.nytimes.com/2013/12/07/bu..." restype="string" datatype="html">
         <source>www.nytimes.com/2013/12/07/bu...</source>
@@ -60,7 +60,7 @@
     <body>
       <trans-unit id="14" resname="How to be a great influencer:" restype="string" datatype="html">
         <source>How to be a great influencer:</source>
-        <target>如何成为一个优秀的影响者：</target>
+        <target>如何成为一位优秀的影响者：</target>
       </trans-unit>
       <trans-unit id="15" resname="•" restype="string" datatype="html">
         <source>•</source>
@@ -76,7 +76,7 @@
       </trans-unit>
       <trans-unit id="18" resname="Share FeelGood:) moments that make you and others smile" restype="string" datatype="html">
         <source>Share FeelGood:) moments that make you and others smile</source>
-        <target>分享使您和其他人微笑的FeelGood时刻</target>
+        <target>分享使您和其他人微笑的FeelGood:)瞬间</target>
       </trans-unit>
       <trans-unit id="19" resname="Examples of a helpful article:" restype="string" datatype="html">
         <source>Examples of a helpful article:</source>
@@ -128,7 +128,7 @@
     <body>
       <trans-unit id="28" resname="No conditions found." restype="string" datatype="html">
         <source>No conditions found.</source>
-        <target>没有找到条件</target>
+        <target>没有找到条件。</target>
       </trans-unit>
       <trans-unit id="29" resname="&quot;)&apos;&gt;" restype="string" datatype="html">
         <source>")'&gt;</source>
@@ -168,7 +168,7 @@
       </trans-unit>
       <trans-unit id="36" resname="and&lt;a class=&quot;bold&quot;&gt;&lt;span class=&quot;doc_agree_count_h&quot;&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt;doctor&lt;%=val.desc_agrees.length&gt;1 ? &apos;s&apos; : &apos;&apos;%&gt; agree&lt;/a&gt;" restype="string" datatype="html">
         <source>and &lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt; doctor&lt;%=val.desc_agrees.length&gt; 1 ? 's' : ''%&gt; agree&lt;/a&gt;</source>
-        <target>和&lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt; doctor&lt;%=val.desc_agrees.length&gt; 1 ? 's' : ''%&gt; 同意&lt;/a&gt;</target>
+        <target>和&lt;a class="bold"&gt;&lt;span class="doc_agree_count_h"&gt;&lt;%=val.desc_agrees.length%&gt;&lt;/span&gt; 医生&lt;%=val.desc_agrees.length&gt; 1 ? 's' : ''%&gt; 同意&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="37" resname="Write a better description &amp;raquo;" restype="string" datatype="html">
         <source>Write a better description &amp;raquo;</source>
@@ -204,7 +204,7 @@
       </trans-unit>
       <trans-unit id="44" resname="In &lt;%=second_degree_connection%&gt;&apos;s Network" restype="string" datatype="html">
         <source>In &lt;%=second_degree_connection%&gt;'s Network</source>
-        <target>在网络中&lt;%=second_degree_connection%&gt;</target>
+        <target>在&lt;%=second_degree_connection%&gt;的网络中</target>
       </trans-unit>
       <trans-unit id="45" resname="Known for: &lt;%=topics%&gt; ... more" restype="string" datatype="html">
         <source>Known for: &lt;%=topics%&gt; ... more</source>
@@ -220,7 +220,7 @@
       </trans-unit>
       <trans-unit id="47" resname="Ask doctors now! It’s fast, private &amp;amp; free!" restype="string" datatype="html">
         <source>Ask doctors now! It’s fast, private &amp;amp; free!</source>
-        <target>马上咨询医生(它是)快速的，私人的 &amp;amp，免费的！</target>
+        <target>立刻询问医生！它是快速的，私人的 &amp;amp，免费的！</target>
       </trans-unit>
       <trans-unit id="48" resname="Search phrase goes here" restype="string" datatype="html">
         <source>Search phrase goes here</source>
@@ -244,7 +244,7 @@
       </trans-unit>
       <trans-unit id="53" resname="Re: MedPub#" restype="string" datatype="html">
         <source>Re: MedPub#</source>
-        <target>回复MedPub#</target>
+        <target>回复：MedPub#</target>
       </trans-unit>
       <trans-unit id="54" resname="answered:" restype="string" datatype="html">
         <source>answered:</source>
@@ -276,7 +276,7 @@
       </trans-unit>
       <trans-unit id="60" resname="Add topic" restype="string" datatype="html">
         <source>Add topic</source>
-        <target>添加主题</target>
+        <target>添加话题</target>
       </trans-unit>
     </body>
   </file>
@@ -304,11 +304,11 @@
       </trans-unit>
       <trans-unit id="65" resname="Your subscriptions have been updated." restype="string" datatype="html">
         <source>Your subscriptions have been updated.</source>
-        <target>您的订购已更新</target>
+        <target>您的订购已更新。</target>
       </trans-unit>
       <trans-unit id="66" resname="Select All" restype="string" datatype="html">
         <source>Select All</source>
-        <target>全部选择</target>
+        <target>选择全部</target>
       </trans-unit>
       <trans-unit id="67" resname="Save" restype="string" datatype="html">
         <source>Save</source>
@@ -324,7 +324,7 @@
     <body>
       <trans-unit id="69" resname="This is a test page for tips subscription item template" restype="string" datatype="html">
         <source>This is a test page for tips subscription item template</source>
-        <target>这是一个提示订购项目模板的检验页面</target>
+        <target>这是一个提示订购项目模板的测试页面</target>
       </trans-unit>
     </body>
   </file>
@@ -336,7 +336,7 @@
       </trans-unit>
       <trans-unit id="71" resname="This is a test content" restype="string" datatype="html">
         <source>This is a test content</source>
-        <target>这是一个检验内容</target>
+        <target>这是一个测试内容</target>
       </trans-unit>
     </body>
   </file>
@@ -344,7 +344,7 @@
     <body>
       <trans-unit id="72" resname="TipTap examples" restype="string" datatype="html">
         <source>TipTap examples</source>
-        <target>TipTap范例</target>
+        <target>推心小贴士范例</target>
       </trans-unit>
       <trans-unit id="73" resname="Sleep Better" restype="string" datatype="html">
         <source>Sleep Better</source>
@@ -356,7 +356,7 @@
       </trans-unit>
       <trans-unit id="75" resname="If you eat a big meal before bed and you&apos;re feeling full, lay on your left side." restype="string" datatype="html">
         <source>If you eat a big meal before bed and you're feeling full, lay on your left side.</source>
-        <target>如果您在睡觉前吃了一顿丰盛的饭后感觉很饱，就向左边躺着休息。</target>
+        <target>如果您在睡觉前吃了一顿丰盛的饭后感觉很饱，就请向左边躺着休息。</target>
       </trans-unit>
       <trans-unit id="76" resname="Lose weight" restype="string" datatype="html">
         <source>Lose weight</source>
@@ -368,7 +368,7 @@
       </trans-unit>
       <trans-unit id="78" resname="Want to eat smaller portions? Try using a bowl instead of a plate." restype="string" datatype="html">
         <source>Want to eat smaller portions? Try using a bowl instead of a plate.</source>
-        <target>想吃较小的部分吗？尝试使用碗代替盘子。</target>
+        <target>想吃的比较少吗？请尝试使用碗代替盘子。</target>
       </trans-unit>
       <trans-unit id="79" resname="Flu &amp;amp; Cold" restype="string" datatype="html">
         <source>Flu &amp;amp; Cold</source>
@@ -376,7 +376,7 @@
       </trans-unit>
       <trans-unit id="80" resname="TREATMENT" restype="string" datatype="html">
         <source>TREATMENT</source>
-        <target>治疗/治疗方法</target>
+        <target>治疗方法</target>
       </trans-unit>
       <trans-unit id="81" resname="Treat stomach flu with mild tea, fluids and BRAT (bananas, rice, applesauce and toast)." restype="string" datatype="html">
         <source>Treat stomach flu with mild tea, fluids and BRAT (bananas, rice, applesauce and toast).</source>
@@ -392,7 +392,7 @@
       </trans-unit>
       <trans-unit id="83" resname="Share this using Facebook Twitter or Email." restype="string" datatype="html">
         <source>Share this using Facebook Twitter or Email.</source>
-        <target>分享这个使用方法到Facebook Twitter 或邮箱。</target>
+        <target>分享这个使用方法到Facebook，Twitter或邮箱。</target>
       </trans-unit>
       <trans-unit id="84" resname="YOUR POST" restype="string" datatype="html">
         <source>YOUR POST</source>
@@ -416,11 +416,11 @@
       </trans-unit>
       <trans-unit id="88" resname="TO" restype="string" datatype="html">
         <source>TO</source>
-        <target>到/为了</target>
+        <target>到</target>
       </trans-unit>
       <trans-unit id="89" resname="Type in name, or email address..." restype="string" datatype="html">
         <source>Type in name, or email address...</source>
-        <target>输入名字或邮箱地址...</target>
+        <target>输入姓名或邮箱地址...</target>
       </trans-unit>
       <trans-unit id="90" resname="ADD" restype="string" datatype="html">
         <source>ADD</source>
@@ -432,7 +432,7 @@
       </trans-unit>
       <trans-unit id="92" resname="Add a personalized message here..." restype="string" datatype="html">
         <source>Add a personalized message here...</source>
-        <target>添加一个个性化信息...</target>
+        <target>在这里添加一个个性化信息...</target>
       </trans-unit>
     </body>
   </file>
@@ -448,7 +448,7 @@
       </trans-unit>
       <trans-unit id="95" resname="In &lt;%=expert.second_degree_connection%&gt;&apos;s Network" restype="string" datatype="html">
         <source>In &lt;%=expert.second_degree_connection%&gt;'s Network</source>
-        <target>在网络中&lt;%=second_degree_connection%&gt;</target>
+        <target>在&lt;%=second_degree_connection%&gt;的网络中</target>
       </trans-unit>
       <trans-unit id="96" resname="Known for: &lt;%=topics%&gt;... more" restype="string" datatype="html">
         <source>Known for: &lt;%=topics%&gt;... more</source>
@@ -484,7 +484,7 @@
     <body>
       <trans-unit id="101" resname="ASK A QUESTION" restype="string" datatype="html">
         <source>ASK A QUESTION</source>
-        <target>咨询一个问题</target>
+        <target>询问一个问题</target>
       </trans-unit>
       <trans-unit id="102" resname="PSST....WE FOUND SOME SPELLING ERRORS!" restype="string" datatype="html">
         <source>PSST....WE FOUND SOME SPELLING ERRORS!</source>
@@ -492,7 +492,7 @@
       </trans-unit>
       <trans-unit id="103" resname="Use correct spelling to&lt;a class=&quot;guidelines_h&quot;&gt;improve the quality of answers&lt;/a&gt;you receive. In the meantime, we found these potential misspellings in your question." restype="string" datatype="html">
         <source>Use correct spelling to &lt;a class="guidelines_h"&gt;improve the quality of answers&lt;/a&gt; you receive. In the meantime, we found these potential misspellings in your question.</source>
-        <target>请您使用正确的拼写&lt;a class="guidelines_h"&gt;提高问题的质量&lt;/a&gt;同时，我们在您的问题发现了这些可能的拼写错误。</target>
+        <target>请您使用正确的拼写以&lt;a class="guidelines_h"&gt;提高您收到回答的质量&lt;/a&gt;同时，我们在您的问题发现了这些可能的拼写错误。</target>
       </trans-unit>
       <trans-unit id="104" resname="0" restype="string" datatype="html">
         <source>0</source>
@@ -660,7 +660,7 @@
       </trans-unit>
       <trans-unit id="135" resname="TO ASK A GREAT HEALTHTAP QUESTION, USE THESE HELPFUL GUIDELINES" restype="string" datatype="html">
         <source>TO ASK A GREAT HEALTHTAP QUESTION, USE THESE HELPFUL GUIDELINES</source>
-        <target>要向HealthTap提出一个很棒的问题，可以参考这些有用的指南。</target>
+        <target>要向HealthTap询问一个优秀的问题，可以参考这些有帮助的指南。</target>
       </trans-unit>
       <trans-unit id="136" resname="1." restype="string" datatype="html">
         <source>1.</source>
@@ -668,15 +668,15 @@
       </trans-unit>
       <trans-unit id="137" resname="Put some details in your question. Details help doctors understand your problem.&lt;span class=&quot;examples_link&quot;&gt;Hide examples&lt;/span&gt;" restype="string" datatype="html">
         <source>Put some details in your question. Details help doctors understand your problem.&lt;span class="examples_link"&gt; Hide examples&lt;/span&gt;</source>
-        <target>在您的问题中加入一些细节，详细的（信息）可以帮助医生更好的理解您的问题。&lt;span class=”examples_link”&gt;隐藏范例&lt;/span&gt;</target>
+        <target>在您的问题中加入一些细节，详细的信息可以帮助医生更好的理解您的问题。&lt;span class=”examples_link”&gt;隐藏范例&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="138" resname="Good: Why have I had an itchy, dry rash on the insides of my elbows, for the past 3 weeks?" restype="string" datatype="html">
         <source>Good: Why have I had an itchy, dry rash on the insides of my elbows, for the past 3 weeks?</source>
-        <target>好：在过去3个星期里，为什么我的手肘内部一直瘙痒，从而导致干性皮疹？</target>
+        <target>好的问题：在过去3个星期里，为什么我的手肘内部一直瘙痒，从而导致干性皮疹？</target>
       </trans-unit>
       <trans-unit id="139" resname="Bad: Why do I have a rash?" restype="string" datatype="html">
         <source>Bad: Why do I have a rash?</source>
-        <target>不好：为什么我会有皮疹？</target>
+        <target>不好的问题：为什么我会有皮疹？</target>
       </trans-unit>
       <trans-unit id="140" resname="2." restype="string" datatype="html">
         <source>2.</source>
@@ -684,7 +684,7 @@
       </trans-unit>
       <trans-unit id="141" resname="Make your question long enough to be helpful to others, because thousands of people all over the world may read your question and its answers. Questions of less than 4 words are bad questions.&lt;span class=&quot;examples_link&quot;&gt;See examples&lt;/span&gt;" restype="string" datatype="html">
         <source>Make your question long enough to be helpful to others, because thousands of people all over the world may read your question and its answers. Questions of less than 4 words are bad questions.&lt;span class="examples_link"&gt; See examples&lt;/span&gt;</source>
-        <target>使您的问题描述尽可能长（详细）这样可以帮助到其他人。因为世界各地有成千上万的人可能会读您的问题和其相应的回答。小于4个单词的问题不是一个好问题。&lt;span class="examples_link"&gt; 查看范例&lt;/span&gt;</target>
+        <target>使您的问题描述尽可能详细这样可以帮助到其他人。因为世界各地有成千上万的人可能会读您的问题和其相应的回答。小于4个单词的问题不是一个好问题。&lt;span class="examples_link"&gt; 查看范例&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="142" resname="3." restype="string" datatype="html">
         <source>3.</source>
@@ -712,15 +712,15 @@
       </trans-unit>
       <trans-unit id="147" resname="To ask a great HealthTap question, use these helpful guidelines" restype="string" datatype="html">
         <source>To ask a great HealthTap question, use these helpful guidelines</source>
-        <target>要向HealthTap提出一个很棒的问题，可以参考这些有帮助的指南。</target>
+        <target>要向HealthTap询问一个优秀的问题，可以参考这些有帮助的指南。</target>
       </trans-unit>
       <trans-unit id="148" resname="1. Sweat the details... at least a little." restype="string" datatype="html">
         <source>1. Sweat the details... at least a little.</source>
-        <target>1.更多的细节...至少有一点</target>
+        <target>1.更多的详细信息...至少有一点</target>
       </trans-unit>
       <trans-unit id="149" resname="Good:" restype="string" datatype="html">
         <source>Good:</source>
-        <target>好：</target>
+        <target>好的问题：</target>
       </trans-unit>
       <trans-unit id="150" resname="I had an itchy dry rash on the inside of my elbows for 3 weeks. What could be the causes?" restype="string" datatype="html">
         <source>I had an itchy dry rash on the inside of my elbows for 3 weeks. What could be the causes?</source>
@@ -728,7 +728,7 @@
       </trans-unit>
       <trans-unit id="151" resname="Not so Good:" restype="string" datatype="html">
         <source>Not so Good:</source>
-        <target>不算太好：</target>
+        <target>不算太好的问题：</target>
       </trans-unit>
       <trans-unit id="152" resname="Why do I have a rash?" restype="string" datatype="html">
         <source>Why do I have a rash?</source>
@@ -736,7 +736,7 @@
       </trans-unit>
       <trans-unit id="153" resname="2. Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers." restype="string" datatype="html">
         <source>2. Make it long enough to be helpful to others. Millions of people all over the world may read your question and its answers.</source>
-        <target>2.使（您的问题描述）尽可能长这样可以帮助到其他人。因为世界各地有成千上万的人可能会读您的问题和其相应的回答。</target>
+        <target>2.使您的问题描述尽可能长这样可以帮助到其他人。因为世界各地有成千上万的人可能会读您的问题和其相应的回答。</target>
       </trans-unit>
       <trans-unit id="154" resname="What could cause low back pain after doing chores in the house – I’ve never had a back injury?" restype="string" datatype="html">
         <source>What could cause low back pain after doing chores in the house – I’ve never had a back injury?</source>
@@ -788,11 +788,11 @@
       </trans-unit>
       <trans-unit id="166" resname="My son is 3 years old, weight 27 pounds, and is 34 inches tall. Is his size OK for his age?" restype="string" datatype="html">
         <source>My son is 3 years old, weight 27 pounds, and is 34 inches tall. Is his size OK for his age?</source>
-        <target>我儿子三岁，重27磅，高34英寸。他的身高体重在他这个年龄正常吗？</target>
+        <target>我儿子3岁，重27磅，高34英寸。他的身高体重在他这个年龄正常吗？</target>
       </trans-unit>
       <trans-unit id="167" resname="My son is 3, weighs 27, and has a height of 34. Is he OK for his age?" restype="string" datatype="html">
         <source>My son is 3, weighs 27, and has a height of 34. Is he OK for his age?</source>
-        <target>我儿子三岁，重27磅，高34英寸。在他这个年龄正常吗？</target>
+        <target>我儿子3，重27，高34。在他这个年龄正常吗？</target>
       </trans-unit>
       <trans-unit id="168" resname="6. Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication." restype="string" datatype="html">
         <source>6. Please use both brand and generic names for medications, especially if you’re outside of the U.S. or asking about an uncommon medication.</source>
@@ -800,15 +800,15 @@
       </trans-unit>
       <trans-unit id="169" resname="My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?" restype="string" datatype="html">
         <source>My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?</source>
-        <target>我的儿子5岁，55磅，正在发烧。他服用5ml的泰诺（对乙酰氨基酚120mg / 5ml），但还在发烧。这种体重和年龄的孩子可以服用更多剂量的泰诺吗？</target>
+        <target>我的儿子5岁，55磅，正在发烧。他服用5ml的泰诺（对乙酰氨基酚120mg/5ml），但还在发烧。这种体重和年龄的孩子可以服用更多剂量的泰诺吗？</target>
       </trans-unit>
       <trans-unit id="170" resname="My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?" restype="string" datatype="html">
         <source>My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?</source>
-        <target>我的儿子5岁，55磅，正在发烧。已服用过泰诺但还在发烧。服用泰诺</target>
+        <target>我的儿子5岁，55磅，正在发烧。已服用过泰诺但还在发烧。可以服用更多泰诺吗？</target>
       </trans-unit>
       <trans-unit id="171" resname="7. Try to avoid questions that set doctors up for YES or NO answers." restype="string" datatype="html">
         <source>7. Try to avoid questions that set doctors up for YES or NO answers.</source>
-        <target>7.尽量避免提问一些医生回答“是”或者“不是”的问题。</target>
+        <target>7.尽量避免询问一些医生回答“是”或者“不是”的问题。</target>
       </trans-unit>
       <trans-unit id="172" resname="How do antibiotics work in young, school-aged children?" restype="string" datatype="html">
         <source>How do antibiotics work in young, school-aged children?</source>
@@ -820,7 +820,7 @@
       </trans-unit>
       <trans-unit id="174" resname="8. Try to leave opinions out." restype="string" datatype="html">
         <source>8. Try to leave opinions out.</source>
-        <target>8.尝试留下意见</target>
+        <target>8.尝试留下意见。</target>
       </trans-unit>
       <trans-unit id="175" resname="Why are some people against vaccines, when vaccines are used to prevent bad diseases?" restype="string" datatype="html">
         <source>Why are some people against vaccines, when vaccines are used to prevent bad diseases?</source>
@@ -832,7 +832,7 @@
       </trans-unit>
       <trans-unit id="177" resname="9. The clearer, the better. Use good grammar, avoid profanities and stay away from slang" restype="string" datatype="html">
         <source>9. The clearer, the better. Use good grammar, avoid profanities and stay away from slang</source>
-        <target>9.越清楚越好运用好语法，不要说脏话和俚语。</target>
+        <target>9.越清楚越好。运用好语法，不要说脏话和俚语。</target>
       </trans-unit>
       <trans-unit id="178" resname="I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?" restype="string" datatype="html">
         <source>I was doing arm curls and felt a burning pain in my biceps. Could I have torn a muscle?</source>
@@ -844,7 +844,7 @@
       </trans-unit>
       <trans-unit id="180" resname="10. Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions." restype="string" datatype="html">
         <source>10. Don’t assume personal historical knowledge. HealthTap doctors often will not have seen your previous questions.</source>
-        <target>10.不要假设个人的历史经历（知识）。HealthTap的医生经常不会看到您以前的问题。</target>
+        <target>10.不要假设个人的历史知识。HealthTap的医生通过不会看到您以前的问题。</target>
       </trans-unit>
       <trans-unit id="181" resname="My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?" restype="string" datatype="html">
         <source>My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?</source>
@@ -856,7 +856,7 @@
       </trans-unit>
       <trans-unit id="183" resname="11. To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue)." restype="string" datatype="html">
         <source>11. To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).</source>
-        <target>11.为了保护隐私，请留下您的姓名和他人的姓名（“其他”除已公开谈论某个问题的名人的名字）。</target>
+        <target>11.为了保护隐私，请不要留下您的姓名和他人的姓名（“其他”除已公开谈论某个问题的名人的名字）。</target>
       </trans-unit>
       <trans-unit id="184" resname="I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?" restype="string" datatype="html">
         <source>I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?</source>
@@ -888,11 +888,11 @@
       </trans-unit>
       <trans-unit id="191" resname="Porque mi brazo me duele mucho esta semana?" restype="string" datatype="html">
         <source>Porque mi brazo me duele mucho esta semana?</source>
-        <target>因为我的胳膊很疼吗？</target>
+        <target>Porque mi brazo me duele mucho esta semana?</target>
       </trans-unit>
       <trans-unit id="192" resname="Here at HealthTap, we’re all about great questions AND great answers. Take a quick minute to re-read your question before posting to keep the quality of information high for everyone in our community. And thanks! We’re glad you’re here." restype="string" datatype="html">
         <source>Here at HealthTap, we’re all about great questions AND great answers. Take a quick minute to re-read your question before posting to keep the quality of information high for everyone in our community. And thanks! We’re glad you’re here.</source>
-        <target>在HealthTap上，都是很棒的问题和很好的回答。在发表之前，请再快速读一遍您的问题，以保证高质量的信息提供给社区内每个人。谢谢！我们很高兴您在这里。</target>
+        <target>在HealthTap上，都是很好的问题和很优秀的回答。在发表之前，请再快速阅读一遍您的问题，以保证提供给社区内每个人高质量的信息。谢谢！我们很高兴您在这里。</target>
       </trans-unit>
     </body>
   </file>
@@ -908,7 +908,7 @@
       </trans-unit>
       <trans-unit id="195" resname="All Physicians(MDs, DOs)" restype="string" datatype="html">
         <source>All Physicians(MDs, DOs)</source>
-        <target>所有医师(MDs, DOs)</target>
+        <target>所有医师(医学博士, 医生)</target>
       </trans-unit>
       <trans-unit id="196" resname="ASK TO:" restype="string" datatype="html">
         <source>ASK TO:</source>
@@ -972,7 +972,7 @@
       </trans-unit>
       <trans-unit id="210" resname="Your credit card information is safe safe and secure. If you have any questions, please see our&lt;a&gt;Privacy Policy.&lt;/a&gt;" restype="string" datatype="html">
         <source>Your credit card information is safe safe and secure. If you have any questions, please see our &lt;a&gt;Privacy Policy.&lt;/a&gt;</source>
-        <target>您的信用卡信息是安全有保障的。如果您有更多的问题请查阅我们的 &lt;a&gt;隐私政策。&lt;/a&gt;</target>
+        <target>您的信用卡信息是安全有保障的。如果您有更多的问题请查阅我们的&lt;a&gt;隐私政策。&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="211" resname="YOUR PROFILE IS PRIVATE" restype="string" datatype="html">
         <source>YOUR PROFILE IS PRIVATE</source>
@@ -1004,7 +1004,7 @@
       </trans-unit>
       <trans-unit id="218" resname="Increase your HealthScore by inviting friends, completing your Health Profile or asking questionsand get private messages with doctors for as little as &amp;#36;7.99." restype="string" datatype="html">
         <source>Increase your HealthScore by inviting friends, completing your Health Profile or asking questionsand get private messages with doctors for as little as &amp;#36;7.99.</source>
-        <target>通过邀请好友，完善您的健康资料或只需7.99$咨询问题得到医生的私人信息来增加您的健康分数。</target>
+        <target>通过邀请好友，完善您的健康资料或只需7.99美元即可咨询问题并得到医生的私人信息来增加您的健康分数。</target>
       </trans-unit>
       <trans-unit id="219" resname="PROMO CODE" restype="string" datatype="html">
         <source>PROMO CODE</source>
@@ -1028,7 +1028,7 @@
       </trans-unit>
       <trans-unit id="223" resname="Choose a credit card to submit&lt;br&gt;your question." restype="string" datatype="html">
         <source>Choose a credit card to submit&lt;br&gt; your question.</source>
-        <target>选择一张信用卡来提交&lt;br&gt;您的问题</target>
+        <target>选择一张信用卡来提交&lt;br&gt;您的问题。</target>
       </trans-unit>
       <trans-unit id="224" resname="Enter your credit card information:" restype="string" datatype="html">
         <source>Enter your credit card information:</source>
@@ -1068,7 +1068,7 @@
       </trans-unit>
       <trans-unit id="233" resname="EXPIRATION" restype="string" datatype="html">
         <source>EXPIRATION</source>
-        <target>到期</target>
+        <target>到期日期</target>
       </trans-unit>
       <trans-unit id="234" resname="Month" restype="string" datatype="html">
         <source>Month</source>
@@ -1092,7 +1092,7 @@
     <body>
       <trans-unit id="238" resname="Tell doctors about you" restype="string" datatype="html">
         <source>Tell doctors about you</source>
-        <target>告诉医生多一点您的情况</target>
+        <target>告诉医生关于您的更多情况</target>
       </trans-unit>
       <trans-unit id="239" resname="To receive a better answer, provide a few&lt;br&gt;details to the doctors about yourself." restype="string" datatype="html">
         <source>To receive a better answer, provide a few &lt;br&gt;details to the doctors about yourself.</source>

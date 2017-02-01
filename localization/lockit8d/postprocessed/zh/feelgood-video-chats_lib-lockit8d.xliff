@@ -24,7 +24,7 @@
     <body>
       <trans-unit id="4" resname="r795802560" restype="string" datatype="java">
         <source>Diagnosis codes:</source>
-        <target state="translated">诊断码：</target>
+        <target state="translated">诊断代码：</target>
       </trans-unit>
     </body>
   </file>
