@@ -36,4 +36,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/ViewControllers/FGSearchLocationViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Enter Location" restype="string" datatype="x-objective-c">
+        <source>Enter Location</source>
+        <target state="accepted">输入地址</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
