@@ -43244,6 +43244,22 @@ Doctors are online ready to help.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Data/FGAvailableTalk2Docs.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Refers to Dr. %@" restype="string" datatype="x-objective-c">
+        <source>Refers to Dr. %@</source>
+        <target state="accepted">转诊给 %@医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGChooseMessageConsultPreferenceViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Message Consult" restype="string" datatype="x-objective-c">
+        <source>Message Consult</source>
+        <target state="accepted">知识消息问答</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="feelgood/iPadNative/Topic/FGiPadTopicsDetailViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="Topic" restype="string" datatype="x-objective-c">
