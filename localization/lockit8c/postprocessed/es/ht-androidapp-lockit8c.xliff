@@ -2386,7 +2386,7 @@
       </trans-unit>
       <trans-unit id="618" resname="r356004357" restype="string" datatype="x-android-resource">
         <source>Hi, {name}!</source>
-        <target state="translated">¡Hola, ({name})!</target>
+        <target state="translated">¡Hola, {name}!</target>
       </trans-unit>
       <trans-unit id="619" resname="r787211475" restype="string" datatype="x-android-resource">
         <source>99+</source>
