@@ -36,4 +36,28 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Data/FGProfileInsuranceData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="\nName of Plan: %@ " restype="string" datatype="x-objective-c">
+        <source>\nName of Plan: %@ </source>
+        <target state="accepted">\n保险计划名称: %@ </target>
+      </trans-unit>
+      <trans-unit id="2" resname="\nGroup #: %@ " restype="string" datatype="x-objective-c">
+        <source>\nGroup #: %@ </source>
+        <target state="accepted">\n保险公司 #: %@ </target>
+      </trans-unit>
+      <trans-unit id="3" resname="\nSubscriber ID: %@ " restype="string" datatype="x-objective-c">
+        <source>\nSubscriber ID: %@ </source>
+        <target state="accepted">\n订购号码: %@ </target>
+      </trans-unit>
+      <trans-unit id="4" resname="\nGroup: %@ " restype="string" datatype="x-objective-c">
+        <source>\nGroup: %@ </source>
+        <target state="accepted">\n保险公司: %@ </target>
+      </trans-unit>
+      <trans-unit id="5" resname="\nMember ID: %@ " restype="string" datatype="x-objective-c">
+        <source>\nMember ID: %@ </source>
+        <target state="accepted">\n会员号: %@ </target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
