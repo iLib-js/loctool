@@ -3222,7 +3222,7 @@
       </trans-unit>
       <trans-unit id="590" resname="r536808143" restype="string" datatype="java">
         <source>Dr. Rutledge: Welcome, {name}! Have a health question? We’re here to help.</source>
-        <target>Rutledge医生：欢迎，({name})！有健康问题吗？我们在这里帮助您。</target>
+        <target>Rutledge医生：欢迎，{name}！有健康问题吗？我们在这里帮助您。</target>
       </trans-unit>
     </body>
   </file>
