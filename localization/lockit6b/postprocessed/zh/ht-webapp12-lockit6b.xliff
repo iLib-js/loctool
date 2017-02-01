@@ -2922,7 +2922,7 @@
       </trans-unit>
       <trans-unit id="2452" resname="r923823026" restype="string" datatype="x-haml">
         <source>OR</source>
-        <target state="translated">OR</target>
+        <target state="translated">或</target>
       </trans-unit>
     </body>
   </file>
