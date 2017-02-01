@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="64" resname="r190707551" restype="string" datatype="ruby">
         <source>Treatment</source>
-        <target state="translated">治疗/治疗方法</target>
+        <target state="translated">治疗</target>
       </trans-unit>
     </body>
   </file>
