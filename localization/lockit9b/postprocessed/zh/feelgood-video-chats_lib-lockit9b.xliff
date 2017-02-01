@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="4" resname="r795802560" restype="string" datatype="x-android-resource">
         <source>Diagnosis codes:\n</source>
-        <target state="translated">诊断码：\n</target>
+        <target state="translated">诊断代码：\n</target>
       </trans-unit>
       <trans-unit id="5" resname="r717299647" restype="string" datatype="x-android-resource">
         <source>You haven't selected a stethoscope yet</source>
