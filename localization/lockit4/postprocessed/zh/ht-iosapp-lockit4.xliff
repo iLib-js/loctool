@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="Topic" restype="string" datatype="x-objective-c">
         <source>Topic</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>

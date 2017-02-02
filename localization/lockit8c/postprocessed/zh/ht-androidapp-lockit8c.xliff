@@ -849,7 +849,7 @@
       </trans-unit>
       <trans-unit id="219" resname="r789310818" restype="string" datatype="x-android-resource">
         <source>Topic</source>
-        <target state="translated">话题</target>
+        <target state="translated">专题</target>
       </trans-unit>
       <trans-unit id="220" resname="r629190714" restype="string" datatype="x-android-resource">
         <source>{tip_topic_name} Tip</source>
