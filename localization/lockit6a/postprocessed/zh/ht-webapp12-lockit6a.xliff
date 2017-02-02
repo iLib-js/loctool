@@ -47376,7 +47376,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="10963" resname="TREATMENT" restype="string" datatype="html">
         <source>TREATMENT</source>
-        <target>治疗/治疗方法</target>
+        <target>治疗</target>
       </trans-unit>
       <trans-unit id="10964" resname="Treat stomach flu with mild tea, fluids and BRAT (bananas, rice, applesauce and toast)." restype="string" datatype="html">
         <source>Treat stomach flu with mild tea, fluids and BRAT (bananas, rice, applesauce and toast).</source>

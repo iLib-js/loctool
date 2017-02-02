@@ -1774,7 +1774,7 @@
       </trans-unit>
       <trans-unit id="2225" resname="r190707551" restype="string" datatype="x-haml">
         <source>Treatment</source>
-        <target state="translated">治疗/治疗方法</target>
+        <target state="translated">治疗</target>
       </trans-unit>
       <trans-unit id="2226" resname="r380668570" restype="string" datatype="x-haml">
         <source>Standard virtual consults: In these consults, doctors who have accepted you as a patient (whether for “on call” care, unless you already have an ongoing care relationship with the doctor) can provide care.  You may receive an examination (within the limits of virtual care), provide a medical history, obtain an assessment from a physician, and receive a treatment plan as determined to be medically appropriate by the consulting doctor.</source>

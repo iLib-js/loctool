@@ -8380,7 +8380,7 @@
       </trans-unit>
       <trans-unit id="1789" resname="snapshot_section_type_treatment" restype="string" datatype="x-android-resource">
         <source>treatment</source>
-        <target>治疗/治疗方法</target>
+        <target>治疗</target>
       </trans-unit>
       <trans-unit id="1790" resname="snapshot_section_type_tests" restype="string" datatype="x-android-resource">
         <source>test</source>
@@ -8768,7 +8768,7 @@
       </trans-unit>
       <trans-unit id="1886" resname="treatment" restype="string" datatype="x-android-resource">
         <source>Treatment</source>
-        <target>治疗/治疗方法</target>
+        <target>治疗</target>
       </trans-unit>
       <trans-unit id="1887" resname="allergy" restype="string" datatype="x-android-resource">
         <source>Allergy</source>

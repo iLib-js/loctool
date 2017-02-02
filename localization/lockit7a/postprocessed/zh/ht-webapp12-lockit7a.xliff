@@ -7736,19 +7736,19 @@
       </trans-unit>
       <trans-unit id="1985" resname="1 star or higher" restype="string" datatype="javascript">
         <source>1 star or higher</source>
-        <target state="translated">1星火更多</target>
+        <target state="translated">1星或更多</target>
       </trans-unit>
       <trans-unit id="1986" resname="2 stars or higher" restype="string" datatype="javascript">
         <source>2 stars or higher</source>
-        <target state="translated">2星火更多</target>
+        <target state="translated">2星或更多</target>
       </trans-unit>
       <trans-unit id="1987" resname="3 stars or higher" restype="string" datatype="javascript">
         <source>3 stars or higher</source>
-        <target state="translated">3星火更多</target>
+        <target state="translated">3星或更多</target>
       </trans-unit>
       <trans-unit id="1988" resname="4 stars or higher" restype="string" datatype="javascript">
         <source>4 stars or higher</source>
-        <target state="translated">4星火更多</target>
+        <target state="translated">4星或更多</target>
       </trans-unit>
       <trans-unit id="1989" resname="5 stars" restype="string" datatype="javascript">
         <source>5 stars</source>
@@ -7940,7 +7940,7 @@
       </trans-unit>
       <trans-unit id="2036" resname="Treatment" restype="string" datatype="javascript">
         <source>Treatment</source>
-        <target state="translated">治疗/治疗方法</target>
+        <target state="translated">治疗</target>
       </trans-unit>
       <trans-unit id="2037" resname="Prognosis" restype="string" datatype="javascript">
         <source>Prognosis</source>

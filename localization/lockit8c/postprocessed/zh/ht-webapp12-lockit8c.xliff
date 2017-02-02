@@ -7830,7 +7830,7 @@
       </trans-unit>
       <trans-unit id="1366" resname="r190707551" restype="string" datatype="ruby">
         <source>Treatment</source>
-        <target state="translated">治疗/治疗方法</target>
+        <target state="translated">治疗</target>
       </trans-unit>
       <trans-unit id="1367" resname="r647891558" restype="string" datatype="ruby">
         <source>Conditions Treated</source>
@@ -38372,7 +38372,7 @@
       </trans-unit>
       <trans-unit id="8959" resname="Treatment" restype="string" datatype="javascript">
         <source>Treatment</source>
-        <target state="translated">治疗/治疗方法</target>
+        <target state="translated">治疗</target>
       </trans-unit>
       <trans-unit id="8960" resname="Prognosis" restype="string" datatype="javascript">
         <source>Prognosis</source>
@@ -38588,19 +38588,19 @@
       </trans-unit>
       <trans-unit id="8997" resname="1 star or higher" restype="string" datatype="javascript">
         <source>1 star or higher</source>
-        <target state="translated">1星火更多</target>
+        <target state="translated">1星或更多</target>
       </trans-unit>
       <trans-unit id="8998" resname="2 stars or higher" restype="string" datatype="javascript">
         <source>2 stars or higher</source>
-        <target state="translated">2星火更多</target>
+        <target state="translated">2星或更多</target>
       </trans-unit>
       <trans-unit id="8999" resname="3 stars or higher" restype="string" datatype="javascript">
         <source>3 stars or higher</source>
-        <target state="translated">3星火更多</target>
+        <target state="translated">3星或更多</target>
       </trans-unit>
       <trans-unit id="9000" resname="4 stars or higher" restype="string" datatype="javascript">
         <source>4 stars or higher</source>
-        <target state="translated">4星火更多</target>
+        <target state="translated">4星或更多</target>
       </trans-unit>
       <trans-unit id="9001" resname="5 stars" restype="string" datatype="javascript">
         <source>5 stars</source>
