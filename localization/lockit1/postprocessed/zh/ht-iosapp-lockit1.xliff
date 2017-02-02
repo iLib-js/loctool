@@ -6629,7 +6629,7 @@ accepted</source>
       </trans-unit>
       <trans-unit id="%@, Board Certified" resname="%@, Board Certified" restype="string" datatype="x-objective-c">
         <source>%@, Board Certified</source>
-        <target>%@, 院士</target>
+        <target>%@, 认证医师</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@, Known for %@" resname="%@, Known for %@" restype="string" datatype="x-objective-c">
