@@ -8688,7 +8688,7 @@
       </trans-unit>
       <trans-unit id="1866" resname="insurance_summary_group_name" restype="string" datatype="x-android-resource">
         <source>Insurance group name</source>
-        <target>保险集团名字</target>
+        <target>保险集团名称</target>
       </trans-unit>
       <trans-unit id="1867" resname="insurance_summary_rel" restype="string" datatype="x-android-resource">
         <source>Primary relationship</source>

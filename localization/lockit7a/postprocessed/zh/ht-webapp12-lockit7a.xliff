@@ -6064,7 +6064,7 @@
       </trans-unit>
       <trans-unit id="1619" resname="Insurance group name" restype="string" datatype="javascript">
         <source>Insurance group name</source>
-        <target state="translated">保险集团名字</target>
+        <target state="translated">保险集团名称</target>
       </trans-unit>
       <trans-unit id="1620" resname="Primary relationship" restype="string" datatype="javascript">
         <source>Primary relationship</source>
