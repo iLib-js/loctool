@@ -2896,11 +2896,11 @@
     <body>
       <trans-unit id="547" resname="Subjective (History):" restype="string" datatype="x-objective-c">
         <source>Subjective (History):</source>
-        <target>主观（历史）：</target>
+        <target>主观性资料 (历史）：</target>
       </trans-unit>
       <trans-unit id="548" resname="Objective (Data):" restype="string" datatype="x-objective-c">
         <source>Objective (Data):</source>
-        <target>目标（数据）：</target>
+        <target>客观性资料（数据）：</target>
       </trans-unit>
       <trans-unit id="549" resname="Invite a supporter" restype="string" datatype="x-objective-c">
         <source>Invite a supporter</source>

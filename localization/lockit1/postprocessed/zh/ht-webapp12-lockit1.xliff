@@ -24424,15 +24424,15 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4671" resname="Subjective (History):" restype="string" datatype="html">
         <source>Subjective (History):</source>
-        <target>主观（历史）：</target>
+        <target>主观性资料（历史）：</target>
       </trans-unit>
       <trans-unit id="4672" resname="Objective (Data):" restype="string" datatype="html">
         <source>Objective (Data):</source>
-        <target>目标（数据）：</target>
+        <target>客观性资料（数据）：</target>
       </trans-unit>
       <trans-unit id="4673" resname="Assessment:" restype="string" datatype="html">
         <source>Assessment:</source>
-        <target>评定：</target>
+        <target>诊断分析及评定 ：</target>
       </trans-unit>
       <trans-unit id="4674" resname="Diagnosis codes:" restype="string" datatype="html">
         <source>Diagnosis codes:</source>
@@ -24440,7 +24440,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4675" resname="Plan:" restype="string" datatype="html">
         <source>Plan:</source>
-        <target>计划：</target>
+        <target>治疗方案：</target>
       </trans-unit>
       <trans-unit id="4676" resname="See checklist" restype="string" datatype="html">
         <source>See checklist</source>

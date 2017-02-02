@@ -10256,20 +10256,20 @@
       <trans-unit id="262" resname="Summary Note&lt;a class=&quot;download-pdf&quot; href=&quot;/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;&quot; target=&quot;_blank&quot;&gt;Download PDF&lt;/a&gt;" restype="string" datatype="html">
         <source>Summary Note
     &lt;a class="download-pdf" href="/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;" target="_blank"&gt;Download PDF&lt;/a&gt;</source>
-        <target state="translated">简要注意
+        <target state="translated">简要医嘱
     &lt;a class="download-pdf" href="/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;" target="_blank"&gt;下载PDF&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6960" resname="Subjective (History):" restype="string" datatype="html">
         <source>Subjective (History):</source>
-        <target>主观（历史）：</target>
+        <target>主观性资料（历史）：</target>
       </trans-unit>
       <trans-unit id="6961" resname="Objective (Data):" restype="string" datatype="html">
         <source>Objective (Data):</source>
-        <target>目标（数据）：</target>
+        <target>客观性资料（数据）：</target>
       </trans-unit>
       <trans-unit id="6962" resname="Assessment:" restype="string" datatype="html">
         <source>Assessment:</source>
-        <target>评定：</target>
+        <target>诊断分析及评定：</target>
       </trans-unit>
       <trans-unit id="6963" resname="Diagnosis codes:" restype="string" datatype="html">
         <source>Diagnosis codes:</source>
@@ -10277,7 +10277,7 @@
       </trans-unit>
       <trans-unit id="6964" resname="Plan:" restype="string" datatype="html">
         <source>Plan:</source>
-        <target>计划：</target>
+        <target>治疗方案：</target>
       </trans-unit>
       <trans-unit id="6965" resname="See checklist" restype="string" datatype="html">
         <source>See checklist</source>
