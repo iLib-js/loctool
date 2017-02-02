@@ -27796,11 +27796,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6053" resname="Primary first name" restype="string" datatype="html">
         <source>Primary first name</source>
-        <target>主要名字</target>
+        <target>主保人名</target>
       </trans-unit>
       <trans-unit id="6054" resname="Primary last name" restype="string" datatype="html">
         <source>Primary last name</source>
-        <target>主姓氏</target>
+        <target>主保人姓</target>
       </trans-unit>
       <trans-unit id="6055" resname="Apply insurance" restype="string" datatype="html">
         <source>Apply insurance</source>
