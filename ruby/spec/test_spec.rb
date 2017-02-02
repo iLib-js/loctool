@@ -529,6 +529,19 @@ describe 'HamlLocalizer' do
         expect(res.keys).to include(test_sentence)
         expect(res[test_sentence]).to eq('acclimatisation <span class="acclimatization"> acclimatisation </span> &acclimatization;')
       end
+      it 'keeps last punctuation character of string' do
+        test_sentence = 'acclimatization)'
+        res = process_british_values([test_sentence])
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('acclimatisation)')
+      end
+
+      it 'keeps last digit character of string' do
+        test_sentence = 'acclimatization 9'
+        res = process_british_values([test_sentence])
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('acclimatisation 9')
+      end
     end
     describe 'match_case_for_words' do
       it 'works for lowercase' do
