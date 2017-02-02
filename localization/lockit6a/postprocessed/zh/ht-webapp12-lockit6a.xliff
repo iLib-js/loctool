@@ -27788,7 +27788,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6051" resname="Child" restype="string" datatype="html">
         <source>Child</source>
-        <target>儿童</target>
+        <target>子女</target>
       </trans-unit>
       <trans-unit id="6052" resname="Other" restype="string" datatype="html">
         <source>Other</source>
@@ -27796,11 +27796,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6053" resname="Primary first name" restype="string" datatype="html">
         <source>Primary first name</source>
-        <target>主要名字</target>
+        <target>主要被保人名字</target>
       </trans-unit>
       <trans-unit id="6054" resname="Primary last name" restype="string" datatype="html">
         <source>Primary last name</source>
-        <target>主姓氏</target>
+        <target>主要被保人姓氏</target>
       </trans-unit>
       <trans-unit id="6055" resname="Apply insurance" restype="string" datatype="html">
         <source>Apply insurance</source>
