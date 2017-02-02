@@ -1270,7 +1270,7 @@
     <body>
       <trans-unit id="2136" resname="r789310818" restype="string" datatype="x-haml">
         <source>Topic</source>
-        <target state="translated">话题</target>
+        <target state="translated">专题</target>
       </trans-unit>
       <trans-unit id="2137" resname="r540548250" restype="string" datatype="x-haml">
         <source>›</source>

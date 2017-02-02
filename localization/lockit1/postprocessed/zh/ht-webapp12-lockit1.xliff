@@ -22764,7 +22764,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4371" resname="Topic" restype="string" datatype="html">
         <source>Topic</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
       <trans-unit id="6138" resname="1#{n} doctor responded|#{n} doctors responded" restype="string" datatype="html">
         <source>1#{n} doctor responded|#{n} doctors responded</source>

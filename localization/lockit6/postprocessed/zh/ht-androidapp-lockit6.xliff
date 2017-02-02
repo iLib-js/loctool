@@ -1195,7 +1195,7 @@
     <body>
       <trans-unit id="220" resname="r742115697" restype="string" datatype="java">
         <source>Topics</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
@@ -1203,7 +1203,7 @@
     <body>
       <trans-unit id="221" resname="r789310818" restype="string" datatype="java">
         <source>Topic</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
