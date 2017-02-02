@@ -1789,15 +1789,15 @@
       </trans-unit>
       <trans-unit id="673" resname="r647499247" restype="string" datatype="ruby">
         <source>Does {$person} have any previously diagnosed conditions?</source>
-        <target state="translated">{person}有任何先前诊断的情况吗？</target>
+        <target state="translated">{$person}有任何先前诊断的情况吗？</target>
       </trans-unit>
       <trans-unit id="674" resname="r1044268810" restype="string" datatype="ruby">
         <source>Does {$person} take any medications?</source>
-        <target state="translated">{person}服用过任何药物吗?</target>
+        <target state="translated">{$person}服用过任何药物吗?</target>
       </trans-unit>
       <trans-unit id="675" resname="r209692684" restype="string" datatype="ruby">
         <source>Does {$person} have any allergies?</source>
-        <target state="translated">{person}有任何过敏吗？</target>
+        <target state="translated">{$person}有任何过敏吗？</target>
       </trans-unit>
       <trans-unit id="676" resname="r644925248" restype="string" datatype="ruby">
         <source>How tall is {$person}?</source>
