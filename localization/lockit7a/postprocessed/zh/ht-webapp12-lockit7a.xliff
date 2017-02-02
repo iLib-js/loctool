@@ -6004,7 +6004,7 @@
       </trans-unit>
       <trans-unit id="1607" resname="At which pharmacy do you prefer to pick up prescriptions?" restype="string" datatype="javascript">
         <source>At which pharmacy do you prefer to pick up prescriptions?</source>
-        <target state="translated">未找到药店</target>
+        <target state="translated">您倾向于去哪个药房取药？</target>
       </trans-unit>
     </body>
   </file>

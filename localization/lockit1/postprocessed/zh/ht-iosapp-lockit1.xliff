@@ -804,7 +804,7 @@ us in the App Store :)</source>
     <body>
       <trans-unit id="1Ji-Xb-Q9Q.text" resname="1Ji-Xb-Q9Q.text" restype="string" datatype="x-xib">
         <source>At which pharmacy do you prefer to pick up prescriptions?</source>
-        <target>未找到药店</target>
+        <target>您倾向于去哪个药房取药？</target>
         <note annotates="source">Class = "UILabel"; text = "At which pharmacy do you prefer to pick up prescriptions?"; ObjectID = "1Ji-Xb-Q9Q";</note>
       </trans-unit>
       <trans-unit id="MbS-B8-LoK.text" resname="MbS-B8-LoK.text" restype="string" datatype="x-xib">
