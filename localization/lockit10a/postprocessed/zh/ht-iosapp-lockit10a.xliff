@@ -488,6 +488,45 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Classes/DSLCalendarView/DSLCalendarMonthSelectorView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="5" resname="S" restype="string" datatype="x-objective-c">
+        <source>S</source>
+        <target state="accepted">日</target>
+        <note annotates="source">Day of the week: Sunday</note>
+      </trans-unit>
+      <trans-unit id="6" resname="M" restype="string" datatype="x-objective-c">
+        <source>M</source>
+        <target state="accepted">一</target>
+        <note annotates="source">Day of the week: Monday</note>
+      </trans-unit>
+      <trans-unit id="7" resname="T" restype="string" datatype="x-objective-c">
+        <source>T</source>
+        <target state="accepted">二</target>
+        <note annotates="source">Day of the week: Tuesday</note>
+      </trans-unit>
+      <trans-unit id="8" resname="W" restype="string" datatype="x-objective-c">
+        <source>W</source>
+        <target state="accepted">三</target>
+        <note annotates="source">Day of the week: Wednesday</note>
+      </trans-unit>
+      <trans-unit id="9" resname="Th" restype="string" datatype="x-objective-c">
+        <source>Th</source>
+        <target state="accepted">四</target>
+        <note annotates="source">Day of the week: Thursday</note>
+      </trans-unit>
+      <trans-unit id="10" resname="F" restype="string" datatype="x-objective-c">
+        <source>F</source>
+        <target state="accepted">五</target>
+        <note annotates="source">Day of the week: Friday</note>
+      </trans-unit>
+      <trans-unit id="11" resname="Sa" restype="string" datatype="x-objective-c">
+        <source>Sa</source>
+        <target state="accepted">六</target>
+        <note annotates="source">Day of the week: Saturday</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="feelgood/iPadNative/Expert/FGDoctorBaseViewController.h" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="Write recommendation" restype="string" datatype="x-objective-c">
