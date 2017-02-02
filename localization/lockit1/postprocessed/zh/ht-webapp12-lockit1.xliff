@@ -32326,7 +32326,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6088" resname="Living" restype="string" datatype="html">
         <source>Living</source>
-        <target>居住地</target>
+        <target>在世</target>
       </trans-unit>
       <trans-unit id="6089" resname="{birthday} {span_tag_start}{age} yrs{span_tag_end}" restype="string" datatype="html">
         <source>{birthday} {span_tag_start}{age} yrs{span_tag_end}</source>
