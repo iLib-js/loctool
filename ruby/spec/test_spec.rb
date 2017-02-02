@@ -490,7 +490,7 @@ describe 'HamlLocalizer' do
     it 'extracts whole line with html things' do
       template = '&ldquo;Flex is all about helping the world live smarter, and we are dedicated to bringing intelligent solutions to how our employees access healthcare and manage their health and well-being. HealthTap offers a query-to-cure system that <em>provides Flex employees a simple, immediate, and personalized way to tap in and access health services</em> from a network of top doctors, helping to curb costs.&rdquo;'
       local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
-      puts "\n#{local_name_to_output['de-DE']}"
+      #puts "\n#{local_name_to_output['de-DE']}"
       local_name_to_output['de-DE'].include?('query-to-cure').should be_false
       local_name_to_output['de-DE'].include?('powering the delivery').should be_false
     end
@@ -528,6 +528,19 @@ describe 'HamlLocalizer' do
         res = process_british_values([test_sentence])
         expect(res.keys).to include(test_sentence)
         expect(res[test_sentence]).to eq('acclimatisation <span class="acclimatization"> acclimatisation </span> &acclimatization;')
+      end
+      it 'keeps last punctuation character of string' do
+        test_sentence = 'acclimatization)'
+        res = process_british_values([test_sentence])
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('acclimatisation)')
+      end
+
+      it 'keeps last digit character of string' do
+        test_sentence = 'acclimatization 9'
+        res = process_british_values([test_sentence])
+        expect(res.keys).to include(test_sentence)
+        expect(res[test_sentence]).to eq('acclimatisation 9')
       end
     end
     describe 'match_case_for_words' do

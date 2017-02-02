@@ -248,7 +248,12 @@ module.exports = {
 
         var rp = new ResourcePlural();
         test.ok(rp);
-        test.ok(!rp.getPlurals());
+        var plurals = rp.getPlurals();
+        var count = 0;
+        for (var p in plurals) {
+        	count++;
+        }
+        test.equal(count, 0);
 
         test.done();
     },

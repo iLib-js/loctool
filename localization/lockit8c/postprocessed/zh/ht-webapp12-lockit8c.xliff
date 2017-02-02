@@ -36946,8 +36946,8 @@
   </file>
   <file original="public/feelGood/templates/ui_modules/edit_contact_number.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="8705" resname="At what mobile number can doctors, pharmacists, or HealthTap reach  {first_name} if needed?" restype="string" datatype="javascript">
-        <source>At what mobile number can doctors, pharmacists, or HealthTap reach  {first_name} if needed?</source>
+      <trans-unit id="8705" resname="At what mobile number can doctors, pharmacists, or HealthTap reach {first_name} if needed?" restype="string" datatype="javascript">
+        <source>At what mobile number can doctors, pharmacists, or HealthTap reach {first_name} if needed?</source>
         <target state="translated">如果需要，医生，药剂师或HealthTap可以通过哪个手机号码访问{first_name}？</target>
       </trans-unit>
       <trans-unit id="8706" resname="At what mobile number can doctors, pharmacists, or HealthTap reach this person if needed?" restype="string" datatype="javascript">
@@ -37412,7 +37412,7 @@
       </trans-unit>
       <trans-unit id="8785" resname="Get {span_tag_start}{amount}{span_tag_end} credit to consult with a specialist when your referral link is used" restype="string" datatype="javascript">
         <source>Get {span_tag_start}{amount}{span_tag_end} credit to consult with a specialist when your referral link is used</source>
-        <target state="translated">当您的转诊链接被使用时，可获得{span_tag_start}{amount}{span_tag_end}咨询专科医生的信用</target>
+        <target state="translated">邀请朋友和家人，他们将下一次医生咨询获得{span_tag_start}{amount}{span_tag_end}美元优惠</target>
       </trans-unit>
     </body>
   </file>

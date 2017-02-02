@@ -2316,14 +2316,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/templates/newsletter_answer_content.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="369" resname="." restype="string" datatype="html">
-        <source>.</source>
-        <target state="new">.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/feelGood/templates/ui_modules/height_slider.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="370" resname="(&lt;%= RB.getString(&quot;{height_meters}m&quot;).format({ height_meters: height_m })%&gt;)" restype="string" datatype="html">
