@@ -1032,4 +1032,144 @@
       </trans-unit>
     </body>
   </file>
+  <file original="public/feelGood/templates/connect_doctor_module.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="112" resname="Search name, specialty, topic" restype="string" datatype="html">
+        <source>Search name, specialty, topic</source>
+        <target state="translated">搜索姓名，专科，话题</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/news_reviews.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="113" resname="Helpful Votes" restype="string" datatype="html">
+        <source>Helpful Votes</source>
+        <target state="translated">有帮助的投票</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="114" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成从{start_date}到{end_date}的补偿报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="117" resname="*Your number can help the doctor recognize you" restype="string" datatype="javascript">
+        <source>*Your number can help the doctor recognize you</source>
+        <target state="translated">*您的号码可以帮助医生认出您</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/searchPages/init_symptom_search.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="119" resname="Edit symptoms" restype="string" datatype="javascript">
+        <source>Edit symptoms</source>
+        <target state="translated">编辑症状</target>
+      </trans-unit>
+      <trans-unit id="120" resname="Added symptoms" restype="string" datatype="javascript">
+        <source>Added symptoms</source>
+        <target state="translated">已添加的症状</target>
+      </trans-unit>
+      <trans-unit id="122" resname="Refine symptoms" restype="string" datatype="javascript">
+        <source>Refine symptoms</source>
+        <target state="translated">改善症状</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/symptom_triage_copy.yml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="127" resname="top_header" restype="string" datatype="x-yaml" x-context="greeting">
+        <source>Get started</source>
+        <target state="translated">开始</target>
+      </trans-unit>
+      <trans-unit id="131" resname="top_header" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who needs help?</source>
+        <target state="translated">谁需要帮助？</target>
+      </trans-unit>
+      <trans-unit id="132" resname="heading" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who are we here to help?</source>
+        <target state="translated">我们在这里帮助谁？</target>
+      </trans-unit>
+      <trans-unit id="133" resname="description" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Please choose, and then tap or type symptoms, or skip to ask our doctors directly.</source>
+        <target state="translated">请选择，然后轻触或输入症状，或跳过此步骤直接询问我们的医生。</target>
+      </trans-unit>
+      <trans-unit id="134" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_dob">
+        <source>Update health profile</source>
+        <target state="translated">更新健康资料</target>
+      </trans-unit>
+      <trans-unit id="140" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_gender">
+        <source>Update health profile</source>
+        <target state="translated">更新健康资料</target>
+      </trans-unit>
+      <trans-unit id="143" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_pregnancy">
+        <source>Update health profile</source>
+        <target state="translated">更新健康资料</target>
+      </trans-unit>
+      <trans-unit id="147" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_body_part">
+        <source>Tap or type a symptom</source>
+        <target state="translated">点击或输入症状</target>
+      </trans-unit>
+      <trans-unit id="150" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_symptom">
+        <source>Choose symptom</source>
+        <target state="translated">选择症状</target>
+      </trans-unit>
+      <trans-unit id="154" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_symptom_no_body_part">
+        <source>Choose symptom</source>
+        <target state="translated">选择症状</target>
+      </trans-unit>
+      <trans-unit id="158" resname="top_header" restype="string" datatype="x-yaml" x-context="symptom_added_success">
+        <source>Tap additional symptoms</source>
+        <target state="translated">点击其他症状</target>
+      </trans-unit>
+      <trans-unit id="163" resname="top_header" restype="string" datatype="x-yaml" x-context="update_risk_factors">
+        <source>More about you</source>
+        <target state="translated">关于您的更多信息</target>
+      </trans-unit>
+      <trans-unit id="168" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report">
+        <source>Creating report</source>
+        <target state="translated">创建报告中</target>
+      </trans-unit>
+      <trans-unit id="218" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report_error">
+        <source>Creating report</source>
+        <target state="translated">创建报告中</target>
+      </trans-unit>
+      <trans-unit id="219" resname="heading" restype="string" datatype="x-yaml" x-context="creating_report_error">
+        <source>Hmm...</source>
+        <target state="translated">糟糕...</target>
+      </trans-unit>
+      <trans-unit id="222" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report_success">
+        <source>Possible explanations</source>
+        <target state="translated">可能的解释</target>
+      </trans-unit>
+      <trans-unit id="237" resname="top_header" restype="string" datatype="x-yaml" x-context="care_options">
+        <source>Care options</source>
+        <target state="translated">医护选项</target>
+      </trans-unit>
+      <trans-unit id="241" resname="top_header" restype="string" datatype="x-yaml" x-context="emergency_medicine_condition">
+        <source>About this care option</source>
+        <target state="translated">关于此医护选项</target>
+      </trans-unit>
+      <trans-unit id="245" resname="top_header" restype="string" datatype="x-yaml" x-context="disclaimer_generic">
+        <source>Disclaimer</source>
+        <target state="translated">免责申明</target>
+      </trans-unit>
+      <trans-unit id="247" resname="top_header" restype="string" datatype="x-yaml" x-context="disclaimer_condition_report">
+        <source>Disclaimer</source>
+        <target state="translated">免责申明</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="125" resname="Please enter a valid date" restype="string" datatype="javascript">
+        <source>Please enter a valid date</source>
+        <target state="translated">请输入有效日期</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
