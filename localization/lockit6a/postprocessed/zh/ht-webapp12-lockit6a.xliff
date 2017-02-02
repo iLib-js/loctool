@@ -33308,7 +33308,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="7333" resname="This made me feel good. Thanks!" restype="string" datatype="html">
         <source>This made me feel good. Thanks!</source>
-        <target>这是我感觉很好。谢谢！</target>
+        <target>这使我感觉很好。谢谢！</target>
       </trans-unit>
       <trans-unit id="7334" resname="This was very helpful. Thanks!" restype="string" datatype="html">
         <source>This was very helpful. Thanks!</source>
