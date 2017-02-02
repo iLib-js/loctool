@@ -92,4 +92,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/HTAppointmentLocationWarningPopupView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Doctors can only provide advice, diagnosis, treatment, prescriptions to patients located where they are licensed to practice medicine." restype="string" datatype="x-objective-c">
+        <source>Doctors can only provide advice, diagnosis, treatment, prescriptions to patients located where they are licensed to practice medicine.</source>
+        <target state="accepted">医生只能为那些位于医生执照允许的州的病人提供建议，诊断，治疗和处方</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
