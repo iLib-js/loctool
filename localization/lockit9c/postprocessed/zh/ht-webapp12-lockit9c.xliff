@@ -3270,7 +3270,7 @@
     <body>
       <trans-unit id="1050" resname="Write a recommendation for &lt;%= short_name %&gt;" restype="string" datatype="html">
         <source>Write a recommendation for &lt;%= short_name %&gt;</source>
-        <target state="translated">在这里写一条推荐为 &lt;%= expert.full_name %&gt;</target>
+        <target state="translated">在这里写一条推荐为 &lt;%= short_name %&gt;</target>
       </trans-unit>
     </body>
   </file>
