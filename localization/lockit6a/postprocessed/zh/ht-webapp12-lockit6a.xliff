@@ -27980,7 +27980,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="6092" resname="Insurance accepted as payment" restype="string" datatype="html">
         <source>Insurance accepted as payment</source>
-        <target>保险接受为付款</target>
+        <target>接受保险付款</target>
       </trans-unit>
       <trans-unit id="6093" resname="Availability" restype="string" datatype="html">
         <source>Availability</source>

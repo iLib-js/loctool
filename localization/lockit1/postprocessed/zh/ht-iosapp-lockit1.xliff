@@ -9778,7 +9778,7 @@ only a tap away</source>
       </trans-unit>
       <trans-unit id="Insurance accepted as payment" resname="Insurance accepted as payment" restype="string" datatype="x-objective-c">
         <source>Insurance accepted as payment</source>
-        <target>保险接受为付款</target>
+        <target>接受保险付款</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Insurance plan" resname="Insurance plan" restype="string" datatype="x-objective-c">
