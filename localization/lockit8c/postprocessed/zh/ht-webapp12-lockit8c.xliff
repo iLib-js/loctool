@@ -37412,7 +37412,7 @@
       </trans-unit>
       <trans-unit id="8785" resname="Get {span_tag_start}{amount}{span_tag_end} credit to consult with a specialist when your referral link is used" restype="string" datatype="javascript">
         <source>Get {span_tag_start}{amount}{span_tag_end} credit to consult with a specialist when your referral link is used</source>
-        <target state="translated">当您的转诊链接被使用时，可获得{span_tag_start}{amount}{span_tag_end}咨询专科医生的信用</target>
+        <target state="translated">当您的邀请链接被使用时，可获得{span_tag_start}{amount}{span_tag_end}咨询专科医生的信用</target>
       </trans-unit>
     </body>
   </file>
