@@ -1164,8 +1164,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" ta
-rget-language="zh-Hans-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="125" resname="Please enter a valid date" restype="string" datatype="javascript">
         <source>Please enter a valid date</source>
