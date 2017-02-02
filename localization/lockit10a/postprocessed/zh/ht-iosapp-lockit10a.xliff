@@ -84,4 +84,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Classes/UI/TableViewCells/Settings/HTNotificationSettingHeaderContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Push" restype="string" datatype="x-objective-c">
+        <source>Push</source>
+        <target state="accepted">推送</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
