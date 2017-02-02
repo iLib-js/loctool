@@ -43696,6 +43696,30 @@ Doctors are online ready to help.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/iPadNative/Expert/FGDoctorBaseViewController.h" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Write recommendation" restype="string" datatype="x-objective-c">
+        <source>Write recommendation</source>
+        <target state="new">写下您的推荐</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/Util/FGStringUtil.h" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="Thank you, your quick reply made me feel good!" restype="string" datatype="x-objective-c">
+        <source>Thank you, your quick reply made me feel good!</source>
+        <target state="new">谢谢，您及时的回答让我很放心！</target>
+      </trans-unit>
+      <trans-unit id="3" resname="Thank you, your answer was very helpful!" restype="string" datatype="x-objective-c">
+        <source>Thank you, your answer was very helpful!</source>
+        <target state="new">谢谢，您的回答对我很有帮助！</target>
+      </trans-unit>
+      <trans-unit id="4" resname="This saved my life. Thank you!" restype="string" datatype="x-objective-c">
+        <source>This saved my life. Thank you!</source>
+        <target state="new">这救了我的生命，谢谢！</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="feelgood/iPadNative/Topic/FGiPadTopicsDetailViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="Topic" restype="string" datatype="x-objective-c">
