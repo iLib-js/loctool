@@ -804,7 +804,7 @@ us in the App Store :)</source>
     <body>
       <trans-unit id="1Ji-Xb-Q9Q.text" resname="1Ji-Xb-Q9Q.text" restype="string" datatype="x-xib">
         <source>At which pharmacy do you prefer to pick up prescriptions?</source>
-        <target>未找到药店</target>
+        <target>您倾向于去哪个药房取药？</target>
         <note annotates="source">Class = "UILabel"; text = "At which pharmacy do you prefer to pick up prescriptions?"; ObjectID = "1Ji-Xb-Q9Q";</note>
       </trans-unit>
       <trans-unit id="MbS-B8-LoK.text" resname="MbS-B8-LoK.text" restype="string" datatype="x-xib">
@@ -6629,7 +6629,7 @@ accepted</source>
       </trans-unit>
       <trans-unit id="%@, Board Certified" resname="%@, Board Certified" restype="string" datatype="x-objective-c">
         <source>%@, Board Certified</source>
-        <target>%@, 院士</target>
+        <target>%@, 认证医师</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@, Known for %@" resname="%@, Known for %@" restype="string" datatype="x-objective-c">
@@ -9778,7 +9778,7 @@ only a tap away</source>
       </trans-unit>
       <trans-unit id="Insurance accepted as payment" resname="Insurance accepted as payment" restype="string" datatype="x-objective-c">
         <source>Insurance accepted as payment</source>
-        <target>保险接受为付款</target>
+        <target>接受保险付款</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Insurance plan" resname="Insurance plan" restype="string" datatype="x-objective-c">
@@ -10944,17 +10944,17 @@ doctor can confirm you as a patient</source>
       </trans-unit>
       <trans-unit id="Primary first name" resname="Primary first name" restype="string" datatype="x-objective-c">
         <source>Primary first name</source>
-        <target>主要名字</target>
+        <target>主要被保人名字</target>
         <note annotates="source">Insurance primary first name</note>
       </trans-unit>
       <trans-unit id="Primary last name" resname="Primary last name" restype="string" datatype="x-objective-c">
         <source>Primary last name</source>
-        <target>主姓氏</target>
+        <target>主要被保人姓氏</target>
         <note annotates="source">Insurance primary last name</note>
       </trans-unit>
       <trans-unit id="Primary plan holder&apos;s gender:" resname="Primary plan holder&apos;s gender:" restype="string" datatype="x-objective-c">
         <source>Primary plan holder's gender:</source>
-        <target>Prime计划持有人的性别</target>
+        <target>主要被保人性别</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Prime (until %@)" resname="Prime (until %@)" restype="string" datatype="x-objective-c">

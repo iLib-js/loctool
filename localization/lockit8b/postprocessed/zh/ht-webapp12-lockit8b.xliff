@@ -44,7 +44,7 @@
       </trans-unit>
       <trans-unit id="66" resname="r951784064" restype="string" datatype="ruby">
         <source>Managing a Condition</source>
-        <target state="translated">管理一个条件/健康状况</target>
+        <target state="translated">管理症状/健康状况</target>
       </trans-unit>
     </body>
   </file>

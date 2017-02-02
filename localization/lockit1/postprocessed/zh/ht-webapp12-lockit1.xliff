@@ -7128,7 +7128,7 @@
       </trans-unit>
       <trans-unit id="1551" resname="Managing a Condition" restype="string" datatype="html">
         <source>Managing a Condition</source>
-        <target>管理一个条件/健康状况</target>
+        <target>管理症状/健康状况</target>
       </trans-unit>
       <trans-unit id="1552" resname="Avoiding Dehydration" restype="string" datatype="html">
         <source>Avoiding Dehydration</source>
@@ -22076,7 +22076,7 @@ display:none;
       </trans-unit>
       <trans-unit id="4271" resname="This made me feel good. Thanks!" restype="string" datatype="html">
         <source>This made me feel good. Thanks!</source>
-        <target>这是我感觉很好。谢谢！</target>
+        <target>这使我感觉很好。谢谢！</target>
       </trans-unit>
       <trans-unit id="4272" resname="value=&quot;This was very helpful. Thanks!&quot;&gt;" restype="string" datatype="html">
         <source>value="This was very helpful. Thanks!"&gt;</source>
@@ -24424,15 +24424,15 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4671" resname="Subjective (History):" restype="string" datatype="html">
         <source>Subjective (History):</source>
-        <target>主观（历史）：</target>
+        <target>主观性资料（历史）：</target>
       </trans-unit>
       <trans-unit id="4672" resname="Objective (Data):" restype="string" datatype="html">
         <source>Objective (Data):</source>
-        <target>目标（数据）：</target>
+        <target>客观性资料（数据）：</target>
       </trans-unit>
       <trans-unit id="4673" resname="Assessment:" restype="string" datatype="html">
         <source>Assessment:</source>
-        <target>评定：</target>
+        <target>诊断分析及评定 ：</target>
       </trans-unit>
       <trans-unit id="4674" resname="Diagnosis codes:" restype="string" datatype="html">
         <source>Diagnosis codes:</source>
@@ -24440,7 +24440,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4675" resname="Plan:" restype="string" datatype="html">
         <source>Plan:</source>
-        <target>计划：</target>
+        <target>治疗方案：</target>
       </trans-unit>
       <trans-unit id="4676" resname="See checklist" restype="string" datatype="html">
         <source>See checklist</source>
@@ -32326,7 +32326,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6088" resname="Living" restype="string" datatype="html">
         <source>Living</source>
-        <target>居住地</target>
+        <target>在世</target>
       </trans-unit>
       <trans-unit id="6089" resname="{birthday} {span_tag_start}{age} yrs{span_tag_end}" restype="string" datatype="html">
         <source>{birthday} {span_tag_start}{age} yrs{span_tag_end}</source>

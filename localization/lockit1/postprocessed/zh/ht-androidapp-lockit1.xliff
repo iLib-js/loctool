@@ -236,7 +236,7 @@
       </trans-unit>
       <trans-unit id="38" resname="r415124616" restype="string" datatype="java">
         <source>Living</source>
-        <target>居住地</target>
+        <target>在世</target>
       </trans-unit>
       <trans-unit id="39" resname="r199869805" restype="string" datatype="java">
         <source>Date of Birth</source>

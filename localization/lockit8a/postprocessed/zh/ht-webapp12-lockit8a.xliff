@@ -616,7 +616,7 @@
       <trans-unit id="920" resname="Summary Note&lt;a class=&quot;download-pdf&quot; href=&quot;/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;&quot; target=&quot;_blank&quot;&gt;Download PDF&lt;/a&gt;" restype="string" datatype="html">
         <source>Summary Note
     &lt;a class="download-pdf" href="/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;" target="_blank"&gt;Download PDF&lt;/a&gt;</source>
-        <target state="translated">简要注意
+        <target state="translated">简要医嘱
     &lt;a class="download-pdf" href="/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;" target="_blank"&gt;下载PDF&lt;/a&gt;</target>
       </trans-unit>
     </body>

@@ -10256,20 +10256,20 @@
       <trans-unit id="262" resname="Summary Note&lt;a class=&quot;download-pdf&quot; href=&quot;/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;&quot; target=&quot;_blank&quot;&gt;Download PDF&lt;/a&gt;" restype="string" datatype="html">
         <source>Summary Note
     &lt;a class="download-pdf" href="/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;" target="_blank"&gt;Download PDF&lt;/a&gt;</source>
-        <target state="translated">简要注意
+        <target state="translated">简要医嘱
     &lt;a class="download-pdf" href="/api/v2/chat/history.pdf?chat_session_id=&lt;%= soap.session_id %&gt;&amp;key=&lt;%= feelGood.APIv2Key %&gt;" target="_blank"&gt;下载PDF&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6960" resname="Subjective (History):" restype="string" datatype="html">
         <source>Subjective (History):</source>
-        <target>主观（历史）：</target>
+        <target>主观性资料（历史）：</target>
       </trans-unit>
       <trans-unit id="6961" resname="Objective (Data):" restype="string" datatype="html">
         <source>Objective (Data):</source>
-        <target>目标（数据）：</target>
+        <target>客观性资料（数据）：</target>
       </trans-unit>
       <trans-unit id="6962" resname="Assessment:" restype="string" datatype="html">
         <source>Assessment:</source>
-        <target>评定：</target>
+        <target>诊断分析及评定：</target>
       </trans-unit>
       <trans-unit id="6963" resname="Diagnosis codes:" restype="string" datatype="html">
         <source>Diagnosis codes:</source>
@@ -10277,7 +10277,7 @@
       </trans-unit>
       <trans-unit id="6964" resname="Plan:" restype="string" datatype="html">
         <source>Plan:</source>
-        <target>计划：</target>
+        <target>治疗方案：</target>
       </trans-unit>
       <trans-unit id="6965" resname="See checklist" restype="string" datatype="html">
         <source>See checklist</source>
@@ -27788,7 +27788,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6051" resname="Child" restype="string" datatype="html">
         <source>Child</source>
-        <target>儿童</target>
+        <target>子女</target>
       </trans-unit>
       <trans-unit id="6052" resname="Other" restype="string" datatype="html">
         <source>Other</source>
@@ -27796,11 +27796,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6053" resname="Primary first name" restype="string" datatype="html">
         <source>Primary first name</source>
-        <target>主要名字</target>
+        <target>主要被保人名字</target>
       </trans-unit>
       <trans-unit id="6054" resname="Primary last name" restype="string" datatype="html">
         <source>Primary last name</source>
-        <target>主姓氏</target>
+        <target>主要被保人姓氏</target>
       </trans-unit>
       <trans-unit id="6055" resname="Apply insurance" restype="string" datatype="html">
         <source>Apply insurance</source>
@@ -27980,7 +27980,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="6092" resname="Insurance accepted as payment" restype="string" datatype="html">
         <source>Insurance accepted as payment</source>
-        <target>保险接受为付款</target>
+        <target>接受保险付款</target>
       </trans-unit>
       <trans-unit id="6093" resname="Availability" restype="string" datatype="html">
         <source>Availability</source>
@@ -31928,7 +31928,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="7021" resname="Push" restype="string" datatype="html">
         <source>Push</source>
-        <target>推进/推动</target>
+        <target>推送</target>
       </trans-unit>
     </body>
   </file>
@@ -32684,7 +32684,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="7210" resname="Following" restype="string" datatype="html">
         <source>Following</source>
-        <target>以下</target>
+        <target>已关注</target>
       </trans-unit>
     </body>
   </file>
@@ -33308,7 +33308,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="7333" resname="This made me feel good. Thanks!" restype="string" datatype="html">
         <source>This made me feel good. Thanks!</source>
-        <target>这是我感觉很好。谢谢！</target>
+        <target>这使我感觉很好。谢谢！</target>
       </trans-unit>
       <trans-unit id="7334" resname="This was very helpful. Thanks!" restype="string" datatype="html">
         <source>This was very helpful. Thanks!</source>
@@ -42428,7 +42428,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="9918" resname="Managing a Condition" restype="string" datatype="html">
         <source>Managing a Condition</source>
-        <target>管理一个条件/健康状况</target>
+        <target>管理症状/健康状况</target>
       </trans-unit>
       <trans-unit id="9919" resname="Avoiding Dehydration" restype="string" datatype="html">
         <source>Avoiding Dehydration</source>
