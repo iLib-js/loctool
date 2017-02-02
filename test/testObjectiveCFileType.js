@@ -39,6 +39,21 @@ module.exports = {
         test.done();
     },
 
+    testObjectiveCFileTypeHandlesHeaderFileTrue: function(test) {
+        test.expect(2);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var htf = new ObjectiveCFileType(p);
+        test.ok(htf);
+        
+        test.ok(htf.handles("foo.h"));
+        
+        test.done();
+    },
+
     testObjectiveCFileTypeHandlesFalseClose: function(test) {
         test.expect(2);
 
