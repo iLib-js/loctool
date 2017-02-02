@@ -27507,7 +27507,7 @@
       </trans-unit>
       <trans-unit id="10916" resname="r402158633" restype="string" datatype="x-haml">
         <source>Take</source>
-        <target>服用</target>
+        <target>采取</target>
       </trans-unit>
     </body>
   </file>
