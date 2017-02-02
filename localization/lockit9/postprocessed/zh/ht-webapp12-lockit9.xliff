@@ -1159,8 +1159,8 @@
   <file original="app/views/b2b/partial/_compass_ctas.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="227" resname="r228408514" restype="string" datatype="ruby">
-        <source>Talk to a representative to learn what<br/>%{product_name} can do for you</source>
-        <target state="translated">请与代表交流了解<br/>%{product_name}可以为您做些什么</target>
+        <source>Talk to a representative to learn what&lt;br/&gt;%{product_name} can do for you</source>
+        <target state="translated">请与代表交流了解&lt;br/&gt;%{product_name}可以为您做些什么</target>
       </trans-unit>
     </body>
   </file>
