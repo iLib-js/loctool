@@ -42428,7 +42428,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="9918" resname="Managing a Condition" restype="string" datatype="html">
         <source>Managing a Condition</source>
-        <target>管理一个条件/健康状况</target>
+        <target>管理症状/健康状况</target>
       </trans-unit>
       <trans-unit id="9919" resname="Avoiding Dehydration" restype="string" datatype="html">
         <source>Avoiding Dehydration</source>
