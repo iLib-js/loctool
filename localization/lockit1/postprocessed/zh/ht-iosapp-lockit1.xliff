@@ -10944,17 +10944,17 @@ doctor can confirm you as a patient</source>
       </trans-unit>
       <trans-unit id="Primary first name" resname="Primary first name" restype="string" datatype="x-objective-c">
         <source>Primary first name</source>
-        <target>主要名字</target>
+        <target>主要被保人名字</target>
         <note annotates="source">Insurance primary first name</note>
       </trans-unit>
       <trans-unit id="Primary last name" resname="Primary last name" restype="string" datatype="x-objective-c">
         <source>Primary last name</source>
-        <target>主姓氏</target>
+        <target>主要被保人姓氏</target>
         <note annotates="source">Insurance primary last name</note>
       </trans-unit>
       <trans-unit id="Primary plan holder&apos;s gender:" resname="Primary plan holder&apos;s gender:" restype="string" datatype="x-objective-c">
         <source>Primary plan holder's gender:</source>
-        <target>Prime计划持有人的性别</target>
+        <target>主要被保人性别</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Prime (until %@)" resname="Prime (until %@)" restype="string" datatype="x-objective-c">
