@@ -31928,7 +31928,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="7021" resname="Push" restype="string" datatype="html">
         <source>Push</source>
-        <target>推进/推动</target>
+        <target>推送</target>
       </trans-unit>
     </body>
   </file>
