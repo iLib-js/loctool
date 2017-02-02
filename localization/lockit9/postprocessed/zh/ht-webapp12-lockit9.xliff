@@ -906,7 +906,7 @@
   <file original="app/views/general_mailer/partials/_expert_digest_intro.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="188" resname="r625042656" restype="string" datatype="ruby">
-        <source>Staying healthy is easier when it's a part of your everyday life. Below are some helpful tips for managing and improving health and well-being, as well as some recent answers to health questions on HealthTap.<br/><br/>You can visit my Virtual Practice on HealthTap at any time, before and between visits, to read more of my answers to health questions, and to discover more of my healthy living tips.</source>
+        <source>Staying healthy is easier when it's a part of your everyday life. Below are some helpful tips for managing and improving health and well-being, as well as some recent answers to health questions on HealthTap.&gt;br/&lt;&gt;br/&lt;You can visit my Virtual Practice on HealthTap at any time, before and between visits, to read more of my answers to health questions, and to discover more of my healthy living tips.</source>
         <target state="translated">保持健康更容易，当它是您的日常生活的一部分。以下是一些有帮助的小贴士，用于管理和改善健康与保健，以及HealthTap的健康问题的一些最近的答案。<br/><br/>您可以随时访问我的HealthTap在现在很了，在此之前或访问之间，阅读更多的我的健康问题的回答，并发现更多的健康生活小贴士。</target>
       </trans-unit>
     </body>
