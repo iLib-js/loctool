@@ -1306,7 +1306,7 @@
       </trans-unit>
       <trans-unit id="2139" resname="r639533158" restype="string" datatype="x-haml">
         <source>Following</source>
-        <target state="translated">以下</target>
+        <target state="translated">已关注</target>
       </trans-unit>
     </body>
   </file>

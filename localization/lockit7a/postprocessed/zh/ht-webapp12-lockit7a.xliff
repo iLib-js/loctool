@@ -4692,7 +4692,7 @@
     <body>
       <trans-unit id="1353" resname="Following" restype="string" datatype="javascript">
         <source>Following</source>
-        <target state="translated">以下</target>
+        <target state="translated">已关注</target>
       </trans-unit>
       <trans-unit id="1354" resname="Follow" restype="string" datatype="javascript">
         <source>Follow</source>

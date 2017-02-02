@@ -7685,7 +7685,7 @@
     <body>
       <trans-unit id="1332" resname="r639533158" restype="string" datatype="ruby">
         <source>Following</source>
-        <target state="translated">以下</target>
+        <target state="translated">已关注</target>
         <note annotates="source">TODO constructed</note>
       </trans-unit>
     </body>
@@ -34044,7 +34044,7 @@
     <body>
       <trans-unit id="8147" resname="Following" restype="string" datatype="javascript">
         <source>Following</source>
-        <target state="translated">以下</target>
+        <target state="translated">已关注</target>
       </trans-unit>
       <trans-unit id="8148" resname="Follow" restype="string" datatype="javascript">
         <source>Follow</source>

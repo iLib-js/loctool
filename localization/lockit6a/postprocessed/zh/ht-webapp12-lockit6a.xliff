@@ -32684,7 +32684,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="7210" resname="Following" restype="string" datatype="html">
         <source>Following</source>
-        <target>以下</target>
+        <target>已关注</target>
       </trans-unit>
     </body>
   </file>
