@@ -1042,7 +1042,7 @@
       </trans-unit>
       <trans-unit id="188" resname="Living" restype="string" datatype="x-objective-c">
         <source>Living</source>
-        <target>居住地</target>
+        <target>在世</target>
       </trans-unit>
       <trans-unit id="189" resname="Alcohol" restype="string" datatype="x-objective-c">
         <source>Alcohol</source>
