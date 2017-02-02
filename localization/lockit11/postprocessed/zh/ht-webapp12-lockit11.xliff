@@ -128,11 +128,11 @@
     <body>
       <trans-unit id="26" resname="r978704542" restype="plural" datatype="ruby" extype="one">
         <source>1 doctor &lt;span&gt;agrees&lt;/span&gt;</source>
-        <target state="translated">1 医生 &lt;span&gt;同意&lt;/span&gt;</target>
+        <target state="translated">1 个医生 &lt;span&gt;同意&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="27" resname="r978704542" restype="plural" datatype="ruby" extype="other">
         <source>%{count} doctors &lt;span&gt;agree&lt;/span&gt;</source>
-        <target state="translated">%{count} 医生 &lt;span&gt;同意&lt;/span&gt;</target>
+        <target state="translated">%{count} 个医生 &lt;span&gt;同意&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
