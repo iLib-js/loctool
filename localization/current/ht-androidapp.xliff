@@ -17656,7 +17656,7 @@
       </trans-unit>
       <trans-unit id="590" resname="r536808143" restype="string" datatype="java">
         <source>Dr. Rutledge: Welcome, {name}! Have a health question? We’re here to help.</source>
-        <target>Rutledge医生：欢迎，({name})！有健康问题吗？我们在这里帮助您。</target>
+        <target>Rutledge医生：欢迎，{name}！有健康问题吗？我们在这里帮助您。</target>
       </trans-unit>
     </body>
   </file>
@@ -46987,7 +46987,7 @@
       </trans-unit>
       <trans-unit id="605" resname="r536808143" restype="string" datatype="java">
         <source>Dr. Rutledge: Welcome, {name}! Have a health question? We’re here to help.</source>
-        <target>Rutledge医生：欢迎，({name})！有健康问题吗？我们在这里帮助您。</target>
+        <target>Rutledge医生：欢迎，{name}！有健康问题吗？我们在这里帮助您。</target>
       </trans-unit>
     </body>
   </file>
@@ -50725,7 +50725,7 @@
       </trans-unit>
       <trans-unit id="618" resname="r356004357" restype="string" datatype="x-android-resource">
         <source>Hi, {name}!</source>
-        <target state="translated">¡Hola, ({name})!</target>
+        <target state="translated">¡Hola, {name}!</target>
       </trans-unit>
       <trans-unit id="619" resname="r787211475" restype="string" datatype="x-android-resource">
         <source>99+</source>
@@ -53618,7 +53618,7 @@
       </trans-unit>
       <trans-unit id="621" resname="r536808143" restype="string" datatype="x-android-resource">
         <source>Dr. Rutledge: Welcome, {name}! Have a health question? We’re here to help.</source>
-        <target state="translated">Rutledge医生：欢迎，({name})！有健康问题吗？我们在这里帮助您。</target>
+        <target state="translated">Rutledge医生：欢迎，{name}！有健康问题吗？我们在这里帮助您。</target>
       </trans-unit>
       <trans-unit id="622" resname="r668199878" restype="string" datatype="x-android-resource">
         <source>No application can handle this request</source>
