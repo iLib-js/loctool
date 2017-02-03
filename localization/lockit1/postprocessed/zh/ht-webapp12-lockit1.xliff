@@ -8728,11 +8728,11 @@
       </trans-unit>
       <trans-unit id="1890" resname="other doctors&lt;/strong&gt;weighed in:" restype="string" datatype="html">
         <source>other doctors&lt;/strong&gt; weighed in:</source>
-        <target>其他医生&lt;/strong&gt; 称重：</target>
+        <target>其他医生&lt;/strong&gt; 参与：</target>
       </trans-unit>
       <trans-unit id="1891" resname="answered and&lt;strong&gt;1 other doctor&lt;/strong&gt;weighed in:" restype="string" datatype="html">
         <source>answered and &lt;strong&gt;1 other doctor&lt;/strong&gt; weighed in:</source>
-        <target>回答的和&lt;strong&gt;1 其他医生&lt;/strong&gt; 称重：</target>
+        <target>回答的和&lt;strong&gt;1 其他医生&lt;/strong&gt; 参与：</target>
       </trans-unit>
       <trans-unit id="1892" resname="Be the first to answer:" restype="string" datatype="html">
         <source>Be the first to answer:</source>
@@ -28804,19 +28804,19 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6327" resname="1 star or higher" restype="string" datatype="html">
         <source>1 star or higher</source>
-        <target>1星火更多</target>
+        <target>1星或更多</target>
       </trans-unit>
       <trans-unit id="6328" resname="2 stars or higher" restype="string" datatype="html">
         <source>2 stars or higher</source>
-        <target>2星火更多</target>
+        <target>2星或更多</target>
       </trans-unit>
       <trans-unit id="6329" resname="3 stars or higher" restype="string" datatype="html">
         <source>3 stars or higher</source>
-        <target>3星火更多</target>
+        <target>3星或更多</target>
       </trans-unit>
       <trans-unit id="6330" resname="4 stars or higher" restype="string" datatype="html">
         <source>4 stars or higher</source>
-        <target>4星火更多</target>
+        <target>4星或更多</target>
       </trans-unit>
       <trans-unit id="6331" resname="5 stars" restype="string" datatype="html">
         <source>5 stars</source>

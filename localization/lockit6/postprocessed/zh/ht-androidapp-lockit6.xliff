@@ -168,7 +168,7 @@
       </trans-unit>
       <trans-unit id="29" resname="r415124616" restype="string" datatype="java">
         <source>Living</source>
-        <target>居住在</target>
+        <target>健在</target>
       </trans-unit>
       <trans-unit id="30" resname="r199869805" restype="string" datatype="java">
         <source>Date of Birth</source>
@@ -3774,7 +3774,7 @@
     <body>
       <trans-unit id="676" resname="r45009371" restype="string" datatype="java">
         <source>Near you</source>
-        <target>靠近 您</target>
+        <target>靠近您</target>
       </trans-unit>
       <trans-unit id="677" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>

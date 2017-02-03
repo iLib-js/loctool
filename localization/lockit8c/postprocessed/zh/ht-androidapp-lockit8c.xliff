@@ -68,7 +68,7 @@
       </trans-unit>
       <trans-unit id="21" resname="r415124616" restype="string" datatype="x-android-resource">
         <source>Living</source>
-        <target state="translated">居住地</target>
+        <target state="translated">健在</target>
       </trans-unit>
       <trans-unit id="22" resname="r199869805" restype="string" datatype="x-android-resource">
         <source>Date of Birth</source>
@@ -1338,7 +1338,7 @@
       </trans-unit>
       <trans-unit id="346" resname="r158653628" restype="string" datatype="x-android-resource">
         <source>From HealthTap</source>
-        <target state="translated">来自健康问答</target>
+        <target state="translated">已上传的文档</target>
       </trans-unit>
       <trans-unit id="347" resname="r74842871" restype="string" datatype="x-android-resource">
         <source>If you leave, your changes will be lost.</source>

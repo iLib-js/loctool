@@ -505,7 +505,7 @@
       </trans-unit>
       <trans-unit id="95" resname="r45009371" restype="string" datatype="x-android-resource">
         <source>Near you</source>
-        <target state="translated">靠近 您</target>
+        <target state="translated">靠近您</target>
       </trans-unit>
       <trans-unit id="96" resname="r563885918" restype="string" datatype="x-android-resource">
         <source>Ask {doctor_name} a question...</source>

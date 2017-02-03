@@ -6904,11 +6904,11 @@
       </trans-unit>
       <trans-unit id="9280" resname="r845396312" restype="string" datatype="x-haml">
         <source>Grandfather</source>
-        <target>祖父/外祖父</target>
+        <target>爷爷/外公</target>
       </trans-unit>
       <trans-unit id="9281" resname="r366837963" restype="string" datatype="x-haml">
         <source>Grandmother</source>
-        <target>祖母/外祖母</target>
+        <target>奶奶/外婆</target>
       </trans-unit>
       <trans-unit id="9282" resname="r585512997" restype="string" datatype="x-haml">
         <source>Friend</source>

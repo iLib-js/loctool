@@ -1774,7 +1774,7 @@
       </trans-unit>
       <trans-unit id="2225" resname="r190707551" restype="string" datatype="x-haml">
         <source>Treatment</source>
-        <target state="translated">治疗/治疗方法</target>
+        <target state="translated">治疗</target>
       </trans-unit>
       <trans-unit id="2226" resname="r380668570" restype="string" datatype="x-haml">
         <source>Standard virtual consults: In these consults, doctors who have accepted you as a patient (whether for “on call” care, unless you already have an ongoing care relationship with the doctor) can provide care.  You may receive an examination (within the limits of virtual care), provide a medical history, obtain an assessment from a physician, and receive a treatment plan as determined to be medically appropriate by the consulting doctor.</source>
@@ -2946,7 +2946,7 @@
       </trans-unit>
       <trans-unit id="2456" resname="r658464755" restype="string" datatype="x-haml">
         <source>Our mission is to help people live healthier, longer, and</source>
-        <target state="translated">我们的使命是帮助人们生活更健康，更长命，和</target>
+        <target state="translated">我们的使命是帮助人们生活更健康，更长寿，和</target>
       </trans-unit>
       <trans-unit id="2457" resname="r356849928" restype="string" datatype="x-haml">
         <source>. Whether we’re trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better—and we always want to</source>
@@ -4746,7 +4746,7 @@
       </trans-unit>
       <trans-unit id="2837" resname="r50265502" restype="string" datatype="x-haml">
         <source>Available</source>
-        <target state="translated">有效的</target>
+        <target state="translated">在线</target>
       </trans-unit>
       <trans-unit id="2838" resname="r316110521" restype="string" datatype="x-haml">
         <source>Feed</source>

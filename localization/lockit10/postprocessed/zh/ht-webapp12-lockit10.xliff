@@ -766,7 +766,7 @@
     <body>
       <trans-unit id="57" resname="r786893194" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark} — your personal %{ai_serif}-powered "physician"</source>
-        <target state="new">智能医生 — 你私人的%{ai_serif}电力医生</target>
+        <target state="new">智能医生 — 你私人的%{ai_serif}医生</target>
       </trans-unit>
       <trans-unit id="58" resname="r655383491" restype="string" datatype="ruby">
         <source>Based on your symptoms, Dr. %{ai_trademark} routes or "triages" you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</source>
@@ -822,7 +822,7 @@
     <body>
       <trans-unit id="68" resname="r691446454" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered "physician", trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>
-        <target state="new">智能医生，是由医生训练的您私人的%{ai_serif}电力医生，根据您的症状为您私人定制治疗方案。</target>
+        <target state="new">智能医生，是由医生训练的您私人的%{ai_serif}医生，根据您的症状为您私人定制治疗方案。</target>
       </trans-unit>
     </body>
   </file>
@@ -2682,7 +2682,7 @@
     <body>
       <trans-unit id="403" resname="HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
         <source>HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target state="new">HealthTap只是为了提供信息。HealthTap的内容     (包括问题回答) 不应被用于医学建议，诊断，或治疗，并且在HealthTap平台的接触     并不创建医生病人关系。请不要放弃或延缓专业的医疗建议     因为HealthTap。给您的医生打电话或911 (如果您在美国。) 如果  
+        <target state="new">HealthTap只是为了提供信息。HealthTap的内容     (包括问题回答) 不应被用于医学建议，诊断，或治疗，并且在HealthTap平台的接触     并不创建医生病人关系。请不要放弃或延缓专业的医疗建议     因为HealthTap。给您的医生打电话或911 (如果您在美国。) 如果
     您认为这是紧急情况。 请看 {link_tag_start}更多的信息 &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
       <trans-unit id="404" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">

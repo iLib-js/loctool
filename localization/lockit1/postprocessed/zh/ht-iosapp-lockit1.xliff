@@ -732,7 +732,7 @@ us in the App Store :)</source>
       </trans-unit>
       <trans-unit id="oe4-7M-MP9.text" resname="oe4-7M-MP9.text" restype="string" datatype="x-xib">
         <source>Available</source>
-        <target>有效的</target>
+        <target>在线</target>
         <note annotates="source">Class = "UILabel"; text = "Available"; ObjectID = "oe4-7M-MP9";</note>
       </trans-unit>
       <trans-unit id="uyT-2e-Q09.text" resname="uyT-2e-Q09.text" restype="string" datatype="x-xib">
@@ -761,7 +761,7 @@ us in the App Store :)</source>
       </trans-unit>
       <trans-unit id="Jpj-Gh-ICj.text" resname="Jpj-Gh-ICj.text" restype="string" datatype="x-xib">
         <source>Available</source>
-        <target>有效的</target>
+        <target>在线</target>
         <note annotates="source">Class = "UILabel"; text = "Available"; ObjectID = "Jpj-Gh-ICj";</note>
       </trans-unit>
       <trans-unit id="Qq0-a6-Dfe.text" resname="Qq0-a6-Dfe.text" restype="string" datatype="x-xib">
@@ -6383,7 +6383,7 @@ consults and other benefits</source>
       </trans-unit>
       <trans-unit id="%@ (Tip)" resname="%@ (Tip)" restype="string" datatype="x-objective-c">
         <source>%@ (Tip)</source>
-        <target>%@ (小费)</target>
+        <target>%@ (小贴士)</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ \naccepted" resname="%@ \naccepted" restype="string" datatype="x-objective-c">
@@ -7456,7 +7456,7 @@ anytime for free</source>
       </trans-unit>
       <trans-unit id="Available" resname="Available" restype="string" datatype="x-objective-c">
         <source>Available</source>
-        <target>有效的</target>
+        <target>在线</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Available for Virtual Consult" resname="Available for Virtual Consult" restype="string" datatype="x-objective-c">
@@ -9041,7 +9041,7 @@ I'd like to accomplish my goal of...</source>
       </trans-unit>
       <trans-unit id="From HealthTap" resname="From HealthTap" restype="string" datatype="x-objective-c">
         <source>From HealthTap</source>
-        <target>来自健康问答</target>
+        <target>已上传的文档</target>
         <note annotates="source">specify source of attachment - previously uploaded HealthTap Files</note>
       </trans-unit>
       <trans-unit id="From album" resname="From album" restype="string" datatype="x-objective-c">
@@ -12255,7 +12255,7 @@ Please try again</source>
       </trans-unit>
       <trans-unit id="Tip: " resname="Tip: " restype="string" datatype="x-objective-c">
         <source>Tip:</source>
-        <target>小费：</target>
+        <target>小贴士：</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Tips" resname="Tips" restype="string" datatype="x-objective-c">
@@ -16735,7 +16735,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="tpi-e3-bzH.text" resname="tpi-e3-bzH.text" restype="string" datatype="x-xib">
         <source>Available</source>
-        <target>有效的</target>
+        <target>在线</target>
         <note annotates="source">Class = "UILabel"; text = "Available"; ObjectID = "tpi-e3-bzH";</note>
       </trans-unit>
       <trans-unit id="xzS-R8-mDp.title" resname="xzS-R8-mDp.title" restype="string" datatype="x-xib">

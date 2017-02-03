@@ -1817,7 +1817,7 @@
       </trans-unit>
       <trans-unit id="979" resname="r845396312" restype="string" datatype="ruby">
         <source>Grandfather</source>
-        <target state="translated">爷爷/祖父</target>
+        <target state="translated">爷爷/外公</target>
       </trans-unit>
       <trans-unit id="980" resname="r473663570" restype="string" datatype="ruby">
         <source>Husband</source>
@@ -1845,7 +1845,7 @@
       </trans-unit>
       <trans-unit id="986" resname="r366837963" restype="string" datatype="ruby">
         <source>Grandmother</source>
-        <target state="translated">奶奶/祖母</target>
+        <target state="translated">奶奶/外婆</target>
       </trans-unit>
       <trans-unit id="987" resname="r829234159" restype="string" datatype="ruby">
         <source>Wife</source>
@@ -6064,7 +6064,7 @@
       </trans-unit>
       <trans-unit id="1619" resname="Insurance group name" restype="string" datatype="javascript">
         <source>Insurance group name</source>
-        <target state="translated">保险集团名字</target>
+        <target state="translated">保险集团名称</target>
       </trans-unit>
       <trans-unit id="1620" resname="Primary relationship" restype="string" datatype="javascript">
         <source>Primary relationship</source>
@@ -6308,7 +6308,7 @@
       </trans-unit>
       <trans-unit id="1670" resname="Living" restype="string" datatype="javascript">
         <source>Living</source>
-        <target state="translated">居住地</target>
+        <target state="translated">健在</target>
       </trans-unit>
       <trans-unit id="1671" resname="Relationship" restype="string" datatype="javascript">
         <source>Relationship</source>
@@ -7736,19 +7736,19 @@
       </trans-unit>
       <trans-unit id="1985" resname="1 star or higher" restype="string" datatype="javascript">
         <source>1 star or higher</source>
-        <target state="translated">1星火更多</target>
+        <target state="translated">1星或更多</target>
       </trans-unit>
       <trans-unit id="1986" resname="2 stars or higher" restype="string" datatype="javascript">
         <source>2 stars or higher</source>
-        <target state="translated">2星火更多</target>
+        <target state="translated">2星或更多</target>
       </trans-unit>
       <trans-unit id="1987" resname="3 stars or higher" restype="string" datatype="javascript">
         <source>3 stars or higher</source>
-        <target state="translated">3星火更多</target>
+        <target state="translated">3星或更多</target>
       </trans-unit>
       <trans-unit id="1988" resname="4 stars or higher" restype="string" datatype="javascript">
         <source>4 stars or higher</source>
-        <target state="translated">4星火更多</target>
+        <target state="translated">4星或更多</target>
       </trans-unit>
       <trans-unit id="1989" resname="5 stars" restype="string" datatype="javascript">
         <source>5 stars</source>
@@ -7940,7 +7940,7 @@
       </trans-unit>
       <trans-unit id="2036" resname="Treatment" restype="string" datatype="javascript">
         <source>Treatment</source>
-        <target state="translated">治疗/治疗方法</target>
+        <target state="translated">治疗</target>
       </trans-unit>
       <trans-unit id="2037" resname="Prognosis" restype="string" datatype="javascript">
         <source>Prognosis</source>
@@ -8276,7 +8276,7 @@
     <body>
       <trans-unit id="2108" resname="Available" restype="string" datatype="javascript">
         <source>Available</source>
-        <target state="translated">有效的</target>
+        <target state="translated">在线</target>
       </trans-unit>
       <trans-unit id="2109" resname="To invite the doctor to respond to your message, please share your email:" restype="string" datatype="javascript">
         <source>To invite the doctor to respond to your message, please share your email:</source>
@@ -8412,7 +8412,7 @@
     <body>
       <trans-unit id="2135" resname="From HealthTap" restype="string" datatype="javascript">
         <source>From HealthTap</source>
-        <target state="translated">来自健康问答</target>
+        <target state="translated">已上传的文档</target>
       </trans-unit>
     </body>
   </file>
