@@ -838,15 +838,15 @@
     <body>
       <trans-unit id="70" resname="r448063773" restype="string" datatype="ruby">
         <source>Profile Conditions</source>
-        <target state="new">症状简介</target>
+        <target state="new">已关注症状</target>
       </trans-unit>
       <trans-unit id="71" resname="r260038264" restype="string" datatype="ruby">
         <source>Profile Medications</source>
-        <target state="new">药物简介</target>
+        <target state="new">已关注药物</target>
       </trans-unit>
       <trans-unit id="72" resname="r78129919" restype="string" datatype="ruby">
         <source>Profile Procedures</source>
-        <target state="new">疗程简介</target>
+        <target state="new">已关注疗程</target>
       </trans-unit>
       <trans-unit id="73" resname="r892657469" restype="string" datatype="ruby">
         <source>All Conditions</source>
