@@ -8728,11 +8728,11 @@
       </trans-unit>
       <trans-unit id="1890" resname="other doctors&lt;/strong&gt;weighed in:" restype="string" datatype="html">
         <source>other doctors&lt;/strong&gt; weighed in:</source>
-        <target>其他医生&lt;/strong&gt; 称重：</target>
+        <target>其他医生&lt;/strong&gt; 参与：</target>
       </trans-unit>
       <trans-unit id="1891" resname="answered and&lt;strong&gt;1 other doctor&lt;/strong&gt;weighed in:" restype="string" datatype="html">
         <source>answered and &lt;strong&gt;1 other doctor&lt;/strong&gt; weighed in:</source>
-        <target>回答的和&lt;strong&gt;1 其他医生&lt;/strong&gt; 称重：</target>
+        <target>回答的和&lt;strong&gt;1 其他医生&lt;/strong&gt; 参与：</target>
       </trans-unit>
       <trans-unit id="1892" resname="Be the first to answer:" restype="string" datatype="html">
         <source>Be the first to answer:</source>

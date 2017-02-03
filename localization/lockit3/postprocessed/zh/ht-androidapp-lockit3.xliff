@@ -1150,12 +1150,12 @@
       </trans-unit>
       <trans-unit id="195" resname="similar_question_doctor_weighed_in" restype="plural" datatype="x-android-resource" extype="one">
         <source>{start}1 doctor{end} weighed in</source>
-        <target>{start}1名医生{end}称重</target>
+        <target>{start}1名医生{end}参与</target>
         <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="196" resname="similar_question_doctor_weighed_in" restype="plural" datatype="x-android-resource" extype="other">
         <source>{start}%d doctors{end} weighed in</source>
-        <target>{start}%d名医生{end}称重</target>
+        <target>{start}%d名医生{end}参与</target>
         <note annotates="source">Make sure {start} and {end} are surrounding the translated words of '1 doctor' or '%d doctors'.</note>
       </trans-unit>
       <trans-unit id="197" resname="subscribe_add_others_continue_multiple" restype="plural" datatype="x-android-resource" extype="one">

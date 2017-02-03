@@ -34112,11 +34112,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="7527" resname="other doctors&lt;/strong&gt;weighed in:" restype="string" datatype="html">
         <source>other doctors&lt;/strong&gt; weighed in:</source>
-        <target>其他医生&lt;/strong&gt; 称重：</target>
+        <target>其他医生&lt;/strong&gt; 参与：</target>
       </trans-unit>
       <trans-unit id="7528" resname="answered and&lt;strong&gt;1 other doctor&lt;/strong&gt;weighed in:" restype="string" datatype="html">
         <source>answered and &lt;strong&gt;1 other doctor&lt;/strong&gt; weighed in:</source>
-        <target>回答的和&lt;strong&gt;1 其他医生&lt;/strong&gt; 称重：</target>
+        <target>回答的和&lt;strong&gt;1 其他医生&lt;/strong&gt; 参与：</target>
       </trans-unit>
       <trans-unit id="7529" resname="doctors" restype="string" datatype="html">
         <source>doctors</source>
