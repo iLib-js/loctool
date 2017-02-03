@@ -4586,7 +4586,7 @@
     <body>
       <trans-unit id="2806" resname="r695167887" restype="string" datatype="x-haml">
         <source>Rotate</source>
-        <target state="translated">循环</target>
+        <target state="translated">旋转</target>
       </trans-unit>
       <trans-unit id="2807" resname="r228196999" restype="string" datatype="x-haml">
         <source>Skin</source>
