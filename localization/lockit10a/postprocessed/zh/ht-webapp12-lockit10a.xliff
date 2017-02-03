@@ -1328,4 +1328,28 @@
       </trans-unit>
     </body>
   </file>
+  <file original="public/feelGood/js/searchPages/init_symptom_search.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="607" resname="Are you sure you would like to remove this symptom?" restype="string" datatype="javascript">
+        <source>Are you sure you would like to remove this symptom?</source>
+        <target state="translated"> 您确定要删除这条症状吗？</target>
+      </trans-unit>
+      <trans-unit id="608" resname="Wait!" restype="string" datatype="javascript">
+        <source>Wait!</source>
+        <target state="translated">等待!</target>
+      </trans-unit>
+      <trans-unit id="609" resname="We don&apos;t have enough information to generate an accurate report" restype="string" datatype="javascript">
+        <source>We don't have enough information to generate an accurate report</source>
+        <target state="translated">我们目前没有足够信息来生成报告</target>
+      </trans-unit>
+      <trans-unit id="610" resname="Start over?" restype="string" datatype="javascript">
+        <source>Start over?</source>
+        <target state="translated">重新开始?</target>
+      </trans-unit>
+      <trans-unit id="611" resname="Heads up! If you go back from here, you&apos;ll lose the symptoms you shared." restype="string" datatype="javascript">
+        <source>Heads up! If you go back from here, you'll lose the symptoms you shared.</source>
+        <target state="translated">注意哦，如果您返回上一步，我们无法保存您添加的症状</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
