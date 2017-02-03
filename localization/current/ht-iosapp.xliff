@@ -43767,6 +43767,62 @@ Doctors are online ready to help.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/NSString+helperMethods.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="anonymous" restype="string" datatype="x-objective-c">
+        <source>anonymous</source>
+        <target state="accepted">匿名</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="nurse" restype="string" datatype="x-objective-c">
+        <source>nurse</source>
+        <target state="accepted">护士</target>
+      </trans-unit>
+      <trans-unit id="2" resname="greeter" restype="string" datatype="x-objective-c">
+        <source>greeter</source>
+        <target state="accepted">接待人员</target>
+      </trans-unit>
+      <trans-unit id="3" resname="health professional" restype="string" datatype="x-objective-c">
+        <source>health professional</source>
+        <target state="accepted">医护人员</target>
+      </trans-unit>
+      <trans-unit id="4" resname="staff member" restype="string" datatype="x-objective-c">
+        <source>staff member</source>
+        <target state="accepted">员工</target>
+      </trans-unit>
+      <trans-unit id="5" resname="expert" restype="string" datatype="x-objective-c">
+        <source>expert</source>
+        <target state="accepted">专家</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatPodiatristData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="I&apos;d like to refer you to a %@." restype="string" datatype="x-objective-c">
+        <source>I'd like to refer you to a %@.</source>
+        <target state="accepted">我为您推荐%@</target>
+      </trans-unit>
+      <trans-unit id="2" resname="I&apos;d like to refer you to a " restype="string" datatype="x-objective-c">
+        <source>I'd like to refer you to a </source>
+        <target state="accepted">我为您推荐</target>
+      </trans-unit>
+      <trans-unit id="3" resname="Find specialist" restype="string" datatype="x-objective-c">
+        <source>Find specialist</source>
+        <target state="accepted">找专科医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatChecklistSection.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="4" resname="Try Now" restype="string" datatype="x-objective-c">
+        <source>Try Now</source>
+        <target state="accepted">现在试试</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="feelgood/iPadNative/Topic/FGiPadTopicsDetailViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="Topic" restype="string" datatype="x-objective-c">
