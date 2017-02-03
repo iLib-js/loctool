@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="3" resname="r340023370" restype="string" datatype="ruby">
         <source>All doctors on HealthTap are licensed to practice medicine in the U.S. and are in good standing.  They include doctors from leading U.S. medical institutions (like Stanford and Harvard), as well as private practices from across the country.  HealthTap Medical Experts are independent third parties, and are not employed by or affiliated with HealthTap.  Admission to the HealthTap network is by application and invitation only.</source>
-        <target state="translated">在HealthTap上所有的医生都持有用药证书并且有良好的信誉。他们包括美国顶级医学院（比如斯坦福和哈佛）的医生，也包括美国的私人医生。HealthTap的医学专家独立于第三方，他们并不受雇或附属于HealthTap。只有申请或受邀才能进入HealthTap网站。</target>
+        <target state="translated">在HealthTap上所有的医生都持有执业证书并且有良好的信誉。他们包括美国顶级医学院（比如斯坦福和哈佛）的医生，也包括美国的私人医生。HealthTap的医学专家独立于第三方，他们并不受雇或附属于HealthTap。只有申请或受邀才能进入HealthTap网站。</target>
       </trans-unit>
       <trans-unit id="4" resname="r772305069" restype="string" datatype="ruby">
         <source>Yes - it’s true!  Health questions submitted to HealthTap are submitted to our network of thousands of doctor across the U.S.  These doctors try to answer every question that’s submitted.  Questions are most likely to be answered when they have not already been asked and answered, and they are good health questions (easy to understand and useful to the entire HealthTap community).  &lt;a href="/how_it_works/member_guides"&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
@@ -200,7 +200,7 @@
     <body>
       <trans-unit id="99" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
         <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
-        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的乐于助人和医者评分。</target>
+        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的有助度和医者评分。</target>
       </trans-unit>
       <trans-unit id="100" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
         <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
@@ -232,7 +232,7 @@
     <body>
       <trans-unit id="105" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
         <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成{start_date}到{end_date}的补偿报告			它还需要一会。当它完成后您会收到一封邮件</target>
+        <target state="translated">正在生成{start_date}到{end_date}的报酬报告			它还需要一会。当它完成后您会收到一封邮件</target>
       </trans-unit>
     </body>
   </file>
@@ -300,7 +300,7 @@
       </trans-unit>
       <trans-unit id="123" resname="heading" restype="string" datatype="x-yaml" x-context="account_selection">
         <source>Who are we here to help?</source>
-        <target state="translated">我们在这里帮助谁？</target>
+        <target state="translated">谁需要帮助？</target>
       </trans-unit>
       <trans-unit id="124" resname="description" restype="string" datatype="x-yaml" x-context="account_selection">
         <source>Please choose, and then tap or type symptoms, or skip to ask our doctors directly.</source>

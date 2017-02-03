@@ -32,7 +32,7 @@
       </trans-unit>
       <trans-unit id="40" resname="r233052603" restype="string" datatype="ruby">
         <source>You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists</source>
-        <target state="translated">您现在可以即时访问数百万医生回复，小贴士，新闻，应用推荐和检查清单。</target>
+        <target state="translated">您现在可以即时访问数百万医生回复，小贴士，新闻，应用程序推荐和检查清单。</target>
       </trans-unit>
     </body>
   </file>
@@ -44,7 +44,7 @@
       </trans-unit>
       <trans-unit id="66" resname="r951784064" restype="string" datatype="ruby">
         <source>Managing a Condition</source>
-        <target state="translated">管理一个条件/健康状况</target>
+        <target state="translated">管理一个健康状况</target>
       </trans-unit>
     </body>
   </file>
@@ -116,11 +116,11 @@
       </trans-unit>
       <trans-unit id="103" resname="r683821345" restype="string" datatype="ruby">
         <source>every other hours, while awake</source>
-        <target state="translated">醒的时，每隔一小时</target>
+        <target state="translated">醒着时，每隔一小时</target>
       </trans-unit>
       <trans-unit id="151" resname="r40246091" restype="string" datatype="ruby">
         <source>hourly, while awake</source>
-        <target state="translated">醒的时，每小时</target>
+        <target state="translated">醒着时，每小时</target>
       </trans-unit>
       <trans-unit id="164" resname="r123414641" restype="string" datatype="ruby">
         <source>once every night</source>
