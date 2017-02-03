@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/HTSymptomCTAHeaderCollectionReusableView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="18" resname="Experiencing symptoms?" restype="string" datatype="x-objective-c">
+        <source>Experiencing symptoms?</source>
+        <target state="translated">¿Experimentando síntomas?</target>
+      </trans-unit>
+      <trans-unit id="19" resname="Find out why" restype="string" datatype="x-objective-c">
+        <source>Find out why</source>
+        <target state="translated">Averigua por qué</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -28,18 +28,29 @@ var androidunits = android.getTranslationUnits();
 var iosunits = ios.getTranslationUnits();
 var feelgoodunits = feelgood.getTranslationUnits();
 
-var units = {};
+var units = {
+	bySource: {},
+	bySourceLower: {},
+	byKey: {}
+};
 
 function clean(string) {
 	return string.replace(/\s+/g, "").trim();
 }
 
 function addUnits(unit) {
-	if (!units[unit.targetLocale]) {
-		units[unit.targetLocale] = {};
+	if (!units.byKey[unit.targetLocale]) {
+		units.byKey[unit.targetLocale] = {};
+	}
+	if (!units.bySource[unit.targetLocale]) {
+		units.bySource[unit.targetLocale] = {};
+	}
+	if (!units.bySourceLower[unit.targetLocale]) {
+		units.bySourceLower[unit.targetLocale] = {};
 	}
 	
-	units[unit.targetLocale][unit.source] = unit;
+	units.bySource[unit.targetLocale][unit.source] = unit;
+	units.bySourceLower[unit.targetLocale][unit.source.toLowerCase()] = unit;
 	
 	// for the data types that use hashes, when the key
 	// is the same, then the string is the same
@@ -48,8 +59,7 @@ function addUnits(unit) {
 	case "java":
 	case "x-haml":
 	case "x-android-resource":
-		units[unit.targetLocale][unit.source.trim()] = unit;
-		units[unit.targetLocale][unit.key] = unit;
+		units.byKey[unit.targetLocale][unit.key] = unit;
 		break;
 		
 	default:
@@ -85,13 +95,17 @@ web = android = ios = feelgood = undefined;
 			newunits.forEach(function(unit) {
 				var found;
 			
-				if (units[locale][unit.source]) {
-					found = units[locale][unit.source];
+				if (units.bySource[locale][unit.source]) {
+					found = units.bySource[locale][unit.source];
 				} else if (unit.datatype === "ruby" || unit.datatype === "x-haml" || unit.datatype === "java" || unit.datatype === "x-android-resource") {
-					if (units[locale][unit.key]) {
-						found = units[locale][unit.key];
-					} else if (units[locale][unit.source.trim()]) {
-						found = units[locale][unit.source.trim()];
+					if (units.byKey[locale][unit.key]) {
+						found = units.byKey[locale][unit.key];
+					} else if (units.bySource[locale][unit.source.trim()]) {
+						found = units.bySource[locale][unit.source.trim()];
+					} else if (locale === "zh-Hans-CN" && units.bySourceLower[locale][unit.source.toLowerCase()]) {
+						// since Chinese is not case-sensitive, we can search case insensitively in the English
+						// and get the right match in Chinese
+						found = units.bySourceLower[locale][unit.source.toLowerCase()];
 					}
 				}
 				

@@ -36,4 +36,583 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/ViewControllers/FGSearchLocationViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Enter Location" restype="string" datatype="x-objective-c">
+        <source>Enter Location</source>
+        <target state="accepted">输入地址</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGProfileInsuranceData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="\nName of Plan: %@ " restype="string" datatype="x-objective-c">
+        <source>\nName of Plan: %@ </source>
+        <target state="accepted">\n保险计划名称: %@ </target>
+      </trans-unit>
+      <trans-unit id="2" resname="\nGroup #: %@ " restype="string" datatype="x-objective-c">
+        <source>\nGroup #: %@ </source>
+        <target state="accepted">\n保险公司 #: %@ </target>
+      </trans-unit>
+      <trans-unit id="3" resname="\nSubscriber ID: %@ " restype="string" datatype="x-objective-c">
+        <source>\nSubscriber ID: %@ </source>
+        <target state="accepted">\n订购号码: %@ </target>
+      </trans-unit>
+      <trans-unit id="4" resname="\nGroup: %@ " restype="string" datatype="x-objective-c">
+        <source>\nGroup: %@ </source>
+        <target state="accepted">\n保险公司: %@ </target>
+      </trans-unit>
+      <trans-unit id="5" resname="\nMember ID: %@ " restype="string" datatype="x-objective-c">
+        <source>\nMember ID: %@ </source>
+        <target state="accepted">\n会员号: %@ </target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGAvailableTalk2Docs.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Refers to Dr. %@" restype="string" datatype="x-objective-c">
+        <source>Refers to Dr. %@</source>
+        <target state="accepted">转诊给 %@医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGChooseMessageConsultPreferenceViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Message Consult" restype="string" datatype="x-objective-c">
+        <source>Message Consult</source>
+        <target state="accepted">知识消息问答</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/TableViewCells/Settings/HTNotificationSettingHeaderContentView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Push" restype="string" datatype="x-objective-c">
+        <source>Push</source>
+        <target state="accepted">推送</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTAppointmentLocationWarningPopupView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Doctors can only provide advice, diagnosis, treatment, prescriptions to patients located where they are licensed to practice medicine." restype="string" datatype="x-objective-c">
+        <source>Doctors can only provide advice, diagnosis, treatment, prescriptions to patients located where they are licensed to practice medicine.</source>
+        <target state="accepted">医生只能为那些位于医生执照允许的州的病人提供建议，诊断，治疗和处方</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/Util/FGHelpUtils.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Afrikaans" restype="string" datatype="x-objective-c">
+        <source>Afrikaans</source>
+        <target state="translated">南非语</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Albanian" restype="string" datatype="x-objective-c">
+        <source>Albanian</source>
+        <target state="translated">阿尔巴尼亚语</target>
+      </trans-unit>
+      <trans-unit id="3" resname="Amharic" restype="string" datatype="x-objective-c">
+        <source>Amharic</source>
+        <target state="translated">阿姆哈拉语</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Arabic" restype="string" datatype="x-objective-c">
+        <source>Arabic</source>
+        <target state="translated">阿拉伯语</target>
+      </trans-unit>
+      <trans-unit id="5" resname="Armenian" restype="string" datatype="x-objective-c">
+        <source>Armenian</source>
+        <target state="translated">亚美尼亚语</target>
+      </trans-unit>
+      <trans-unit id="6" resname="Assamese" restype="string" datatype="x-objective-c">
+        <source>Assamese</source>
+        <target state="translated">阿萨姆语</target>
+      </trans-unit>
+      <trans-unit id="7" resname="Aymara" restype="string" datatype="x-objective-c">
+        <source>Aymara</source>
+        <target state="translated">艾马拉语</target>
+      </trans-unit>
+      <trans-unit id="8" resname="Azeri" restype="string" datatype="x-objective-c">
+        <source>Azeri</source>
+        <target state="translated">阿塞拜疆语</target>
+      </trans-unit>
+      <trans-unit id="9" resname="Belarusian" restype="string" datatype="x-objective-c">
+        <source>Belarusian</source>
+        <target state="translated">白俄罗斯语</target>
+      </trans-unit>
+      <trans-unit id="10" resname="Bengali" restype="string" datatype="x-objective-c">
+        <source>Bengali</source>
+        <target state="translated">孟加拉语</target>
+      </trans-unit>
+      <trans-unit id="11" resname="Bislama" restype="string" datatype="x-objective-c">
+        <source>Bislama</source>
+        <target state="translated">比斯拉马语</target>
+      </trans-unit>
+      <trans-unit id="12" resname="Bosnian" restype="string" datatype="x-objective-c">
+        <source>Bosnian</source>
+        <target state="translated">波斯尼亚语</target>
+      </trans-unit>
+      <trans-unit id="13" resname="Bulgarian" restype="string" datatype="x-objective-c">
+        <source>Bulgarian</source>
+        <target state="translated">保加利亚语</target>
+      </trans-unit>
+      <trans-unit id="14" resname="Burmese" restype="string" datatype="x-objective-c">
+        <source>Burmese</source>
+        <target state="translated">缅甸语</target>
+      </trans-unit>
+      <trans-unit id="15" resname="Catalan" restype="string" datatype="x-objective-c">
+        <source>Catalan</source>
+        <target state="translated">加泰罗尼亚语</target>
+      </trans-unit>
+      <trans-unit id="16" resname="Chinese" restype="string" datatype="x-objective-c">
+        <source>Chinese</source>
+        <target state="translated">汉语</target>
+      </trans-unit>
+      <trans-unit id="17" resname="Croatian" restype="string" datatype="x-objective-c">
+        <source>Croatian</source>
+        <target state="translated">克罗地亚语</target>
+      </trans-unit>
+      <trans-unit id="18" resname="Czech" restype="string" datatype="x-objective-c">
+        <source>Czech</source>
+        <target state="translated">捷克语</target>
+      </trans-unit>
+      <trans-unit id="19" resname="Danish" restype="string" datatype="x-objective-c">
+        <source>Danish</source>
+        <target state="translated">丹麦语</target>
+      </trans-unit>
+      <trans-unit id="20" resname="Dari" restype="string" datatype="x-objective-c">
+        <source>Dari</source>
+        <target state="translated">达里语</target>
+      </trans-unit>
+      <trans-unit id="21" resname="Dhivehi" restype="string" datatype="x-objective-c">
+        <source>Dhivehi</source>
+        <target state="translated">迪维希语</target>
+      </trans-unit>
+      <trans-unit id="22" resname="Dutch" restype="string" datatype="x-objective-c">
+        <source>Dutch</source>
+        <target state="translated">荷兰语</target>
+      </trans-unit>
+      <trans-unit id="23" resname="Dzongkha" restype="string" datatype="x-objective-c">
+        <source>Dzongkha</source>
+        <target state="translated">不丹语</target>
+      </trans-unit>
+      <trans-unit id="24" resname="English" restype="string" datatype="x-objective-c">
+        <source>English</source>
+        <target state="translated">英语</target>
+      </trans-unit>
+      <trans-unit id="25" resname="Estonian" restype="string" datatype="x-objective-c">
+        <source>Estonian</source>
+        <target state="translated">爱沙尼亚语</target>
+      </trans-unit>
+      <trans-unit id="26" resname="Fijian" restype="string" datatype="x-objective-c">
+        <source>Fijian</source>
+        <target state="translated">斐济语</target>
+      </trans-unit>
+      <trans-unit id="27" resname="Filipino" restype="string" datatype="x-objective-c">
+        <source>Filipino</source>
+        <target state="translated">菲律宾语</target>
+      </trans-unit>
+      <trans-unit id="28" resname="Finnish" restype="string" datatype="x-objective-c">
+        <source>Finnish</source>
+        <target state="translated">芬兰语</target>
+      </trans-unit>
+      <trans-unit id="29" resname="French" restype="string" datatype="x-objective-c">
+        <source>French</source>
+        <target state="translated">法语</target>
+      </trans-unit>
+      <trans-unit id="30" resname="West Frisian" restype="string" datatype="x-objective-c">
+        <source>West Frisian</source>
+        <target state="translated">西弗里斯语</target>
+      </trans-unit>
+      <trans-unit id="31" resname="Gagauz" restype="string" datatype="x-objective-c">
+        <source>Gagauz</source>
+        <target state="translated">加告兹语</target>
+      </trans-unit>
+      <trans-unit id="32" resname="Georgian" restype="string" datatype="x-objective-c">
+        <source>Georgian</source>
+        <target state="translated">格鲁吉亚语</target>
+      </trans-unit>
+      <trans-unit id="33" resname="German" restype="string" datatype="x-objective-c">
+        <source>German</source>
+        <target state="translated">德语</target>
+      </trans-unit>
+      <trans-unit id="34" resname="Greek" restype="string" datatype="x-objective-c">
+        <source>Greek</source>
+        <target state="translated">希腊语</target>
+      </trans-unit>
+      <trans-unit id="36" resname="Gujarati" restype="string" datatype="x-objective-c">
+        <source>Gujarati</source>
+        <target state="translated">古吉拉特语</target>
+      </trans-unit>
+      <trans-unit id="37" resname="Haitian Creole" restype="string" datatype="x-objective-c">
+        <source>Haitian Creole</source>
+        <target state="translated">海地克里奥尔语</target>
+      </trans-unit>
+      <trans-unit id="38" resname="Hebrew" restype="string" datatype="x-objective-c">
+        <source>Hebrew</source>
+        <target state="translated">希伯来语</target>
+      </trans-unit>
+      <trans-unit id="39" resname="Hindi" restype="string" datatype="x-objective-c">
+        <source>Hindi</source>
+        <target state="translated">印地语</target>
+      </trans-unit>
+      <trans-unit id="40" resname="Hiri Motu" restype="string" datatype="x-objective-c">
+        <source>Hiri Motu</source>
+        <target state="translated">希里摩图语</target>
+      </trans-unit>
+      <trans-unit id="41" resname="Hungarian" restype="string" datatype="x-objective-c">
+        <source>Hungarian</source>
+        <target state="translated">匈牙利语</target>
+      </trans-unit>
+      <trans-unit id="42" resname="Icelandic" restype="string" datatype="x-objective-c">
+        <source>Icelandic</source>
+        <target state="translated">冰岛语</target>
+      </trans-unit>
+      <trans-unit id="43" resname="Indonesian" restype="string" datatype="x-objective-c">
+        <source>Indonesian</source>
+        <target state="translated">印尼语</target>
+      </trans-unit>
+      <trans-unit id="44" resname="Irish Gaelic" restype="string" datatype="x-objective-c">
+        <source>Irish Gaelic</source>
+        <target state="translated">爱尔兰语</target>
+      </trans-unit>
+      <trans-unit id="45" resname="Italian" restype="string" datatype="x-objective-c">
+        <source>Italian</source>
+        <target state="translated">意大利语</target>
+      </trans-unit>
+      <trans-unit id="46" resname="Japanese" restype="string" datatype="x-objective-c">
+        <source>Japanese</source>
+        <target state="translated">日语</target>
+      </trans-unit>
+      <trans-unit id="47" resname="Kannada" restype="string" datatype="x-objective-c">
+        <source>Kannada</source>
+        <target state="translated">卡纳达语</target>
+      </trans-unit>
+      <trans-unit id="48" resname="Kashmiri" restype="string" datatype="x-objective-c">
+        <source>Kashmiri</source>
+        <target state="translated">克什米尔语</target>
+      </trans-unit>
+      <trans-unit id="49" resname="Kazakh" restype="string" datatype="x-objective-c">
+        <source>Kazakh</source>
+        <target state="translated">哈萨克语</target>
+      </trans-unit>
+      <trans-unit id="50" resname="Khmer" restype="string" datatype="x-objective-c">
+        <source>Khmer</source>
+        <target state="translated">高棉语</target>
+      </trans-unit>
+      <trans-unit id="51" resname="Korean" restype="string" datatype="x-objective-c">
+        <source>Korean</source>
+        <target state="translated">韩语</target>
+      </trans-unit>
+      <trans-unit id="52" resname="Kurdish" restype="string" datatype="x-objective-c">
+        <source>Kurdish</source>
+        <target state="translated">库尔德语</target>
+      </trans-unit>
+      <trans-unit id="53" resname="Kyrgyz" restype="string" datatype="x-objective-c">
+        <source>Kyrgyz</source>
+        <target state="translated">吉尔吉斯坦语</target>
+      </trans-unit>
+      <trans-unit id="54" resname="Lao" restype="string" datatype="x-objective-c">
+        <source>Lao</source>
+        <target state="translated">老挝语</target>
+      </trans-unit>
+      <trans-unit id="55" resname="Latvian" restype="string" datatype="x-objective-c">
+        <source>Latvian</source>
+        <target state="translated">拉脱维亚语</target>
+      </trans-unit>
+      <trans-unit id="56" resname="Lithuanian" restype="string" datatype="x-objective-c">
+        <source>Lithuanian</source>
+        <target state="translated">立陶宛语</target>
+      </trans-unit>
+      <trans-unit id="57" resname="Luxembourgish" restype="string" datatype="x-objective-c">
+        <source>Luxembourgish</source>
+        <target state="translated">卢森堡语</target>
+      </trans-unit>
+      <trans-unit id="58" resname="Macedonian" restype="string" datatype="x-objective-c">
+        <source>Macedonian</source>
+        <target state="translated">马其顿语</target>
+      </trans-unit>
+      <trans-unit id="59" resname="Malagasy" restype="string" datatype="x-objective-c">
+        <source>Malagasy</source>
+        <target state="translated">马拉加斯语</target>
+      </trans-unit>
+      <trans-unit id="60" resname="Malay" restype="string" datatype="x-objective-c">
+        <source>Malay</source>
+        <target state="translated">马来语</target>
+      </trans-unit>
+      <trans-unit id="61" resname="Malayalam" restype="string" datatype="x-objective-c">
+        <source>Malayalam</source>
+        <target state="translated">马拉雅拉姆语</target>
+      </trans-unit>
+      <trans-unit id="62" resname="Maltese" restype="string" datatype="x-objective-c">
+        <source>Maltese</source>
+        <target state="translated">马耳他语</target>
+      </trans-unit>
+      <trans-unit id="64" resname="Marathi" restype="string" datatype="x-objective-c">
+        <source>Marathi</source>
+        <target state="translated">马拉地语</target>
+      </trans-unit>
+      <trans-unit id="65" resname="Moldovan" restype="string" datatype="x-objective-c">
+        <source>Moldovan</source>
+        <target state="translated">摩尔多瓦语</target>
+      </trans-unit>
+      <trans-unit id="66" resname="Mongolian" restype="string" datatype="x-objective-c">
+        <source>Mongolian</source>
+        <target state="translated">蒙古语</target>
+      </trans-unit>
+      <trans-unit id="67" resname="Montenegrin" restype="string" datatype="x-objective-c">
+        <source>Montenegrin</source>
+        <target state="translated">蒙特内哥罗语</target>
+      </trans-unit>
+      <trans-unit id="68" resname="Ndebele" restype="string" datatype="x-objective-c">
+        <source>Ndebele</source>
+        <target state="translated">恩德贝勒语</target>
+      </trans-unit>
+      <trans-unit id="69" resname="Nepali" restype="string" datatype="x-objective-c">
+        <source>Nepali</source>
+        <target state="translated">尼泊尔语</target>
+      </trans-unit>
+      <trans-unit id="70" resname="New Zealand Sign Language" restype="string" datatype="x-objective-c">
+        <source>New Zealand Sign Language</source>
+        <target state="translated">新西兰手语</target>
+      </trans-unit>
+      <trans-unit id="71" resname="Northern Sotho" restype="string" datatype="x-objective-c">
+        <source>Northern Sotho</source>
+        <target state="translated">北索托语</target>
+      </trans-unit>
+      <trans-unit id="72" resname="Norwegian" restype="string" datatype="x-objective-c">
+        <source>Norwegian</source>
+        <target state="translated">挪威语</target>
+      </trans-unit>
+      <trans-unit id="73" resname="Oriya" restype="string" datatype="x-objective-c">
+        <source>Oriya</source>
+        <target state="translated">奥里亚语</target>
+      </trans-unit>
+      <trans-unit id="74" resname="Papiamento" restype="string" datatype="x-objective-c">
+        <source>Papiamento</source>
+        <target state="translated">帕皮阿门托语</target>
+      </trans-unit>
+      <trans-unit id="75" resname="Pashto" restype="string" datatype="x-objective-c">
+        <source>Pashto</source>
+        <target state="translated">普什图语</target>
+      </trans-unit>
+      <trans-unit id="76" resname="Persian" restype="string" datatype="x-objective-c">
+        <source>Persian</source>
+        <target state="translated">波斯语</target>
+      </trans-unit>
+      <trans-unit id="77" resname="Polish" restype="string" datatype="x-objective-c">
+        <source>Polish</source>
+        <target state="translated">波兰语</target>
+      </trans-unit>
+      <trans-unit id="78" resname="Portuguese" restype="string" datatype="x-objective-c">
+        <source>Portuguese</source>
+        <target state="translated">葡萄牙语</target>
+      </trans-unit>
+      <trans-unit id="79" resname="Punjabi" restype="string" datatype="x-objective-c">
+        <source>Punjabi</source>
+        <target state="translated">旁遮普语</target>
+      </trans-unit>
+      <trans-unit id="80" resname="Quechua" restype="string" datatype="x-objective-c">
+        <source>Quechua</source>
+        <target state="translated">克丘亚语</target>
+      </trans-unit>
+      <trans-unit id="81" resname="Romanian" restype="string" datatype="x-objective-c">
+        <source>Romanian</source>
+        <target state="translated">罗马尼亚语</target>
+      </trans-unit>
+      <trans-unit id="82" resname="Russian" restype="string" datatype="x-objective-c">
+        <source>Russian</source>
+        <target state="translated">俄语</target>
+      </trans-unit>
+      <trans-unit id="83" resname="Somali" restype="string" datatype="x-objective-c">
+        <source>Somali</source>
+        <target state="translated">索马里语</target>
+      </trans-unit>
+      <trans-unit id="84" resname="Sotho" restype="string" datatype="x-objective-c">
+        <source>Sotho</source>
+        <target state="translated">索托语</target>
+      </trans-unit>
+      <trans-unit id="85" resname="Spanish" restype="string" datatype="x-objective-c">
+        <source>Spanish</source>
+        <target state="translated">西班牙语</target>
+      </trans-unit>
+      <trans-unit id="86" resname="Swahili" restype="string" datatype="x-objective-c">
+        <source>Swahili</source>
+        <target state="translated">斯瓦希里语</target>
+      </trans-unit>
+      <trans-unit id="87" resname="Swati" restype="string" datatype="x-objective-c">
+        <source>Swati</source>
+        <target state="translated">斯瓦特语</target>
+      </trans-unit>
+      <trans-unit id="88" resname="Swedish" restype="string" datatype="x-objective-c">
+        <source>Swedish</source>
+        <target state="translated">瑞典语</target>
+      </trans-unit>
+      <trans-unit id="89" resname="Tajik" restype="string" datatype="x-objective-c">
+        <source>Tajik</source>
+        <target state="translated">塔吉克语</target>
+      </trans-unit>
+      <trans-unit id="90" resname="Tamil" restype="string" datatype="x-objective-c">
+        <source>Tamil</source>
+        <target state="translated">泰米尔语</target>
+      </trans-unit>
+      <trans-unit id="91" resname="Telugu" restype="string" datatype="x-objective-c">
+        <source>Telugu</source>
+        <target state="translated">泰卢固语</target>
+      </trans-unit>
+      <trans-unit id="92" resname="Tetum" restype="string" datatype="x-objective-c">
+        <source>Tetum</source>
+        <target state="translated">德顿语</target>
+      </trans-unit>
+      <trans-unit id="93" resname="Thai" restype="string" datatype="x-objective-c">
+        <source>Thai</source>
+        <target state="translated">泰语</target>
+      </trans-unit>
+      <trans-unit id="94" resname="Tok Pisin" restype="string" datatype="x-objective-c">
+        <source>Tok Pisin</source>
+        <target state="translated">托克皮辛语</target>
+      </trans-unit>
+      <trans-unit id="95" resname="Tsonga" restype="string" datatype="x-objective-c">
+        <source>Tsonga</source>
+        <target state="translated">聪加语</target>
+      </trans-unit>
+      <trans-unit id="96" resname="Tswana" restype="string" datatype="x-objective-c">
+        <source>Tswana</source>
+        <target state="translated">茨瓦纳语</target>
+      </trans-unit>
+      <trans-unit id="97" resname="Yiddish" restype="string" datatype="x-objective-c">
+        <source>Yiddish</source>
+        <target state="translated">意第绪语</target>
+      </trans-unit>
+      <trans-unit id="35" resname="Guaraní" restype="string" datatype="x-objective-c">
+        <source>Guaraní</source>
+        <target state="translated">瓜拉尼</target>
+      </trans-unit>
+      <trans-unit id="63" resname="Māori" restype="string" datatype="x-objective-c">
+        <source>Māori</source>
+        <target state="translated">毛利</target>
+      </trans-unit>
+      <trans-unit id="98" resname="Zulu" restype="string" datatype="x-objective-c">
+        <source>Zulu</source>
+        <target state="translated">祖鲁</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/DSLCalendarView/DSLCalendarMonthSelectorView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="5" resname="S" restype="string" datatype="x-objective-c">
+        <source>S</source>
+        <target state="accepted">日</target>
+        <note annotates="source">Day of the week: Sunday</note>
+      </trans-unit>
+      <trans-unit id="6" resname="M" restype="string" datatype="x-objective-c">
+        <source>M</source>
+        <target state="accepted">一</target>
+        <note annotates="source">Day of the week: Monday</note>
+      </trans-unit>
+      <trans-unit id="7" resname="T" restype="string" datatype="x-objective-c">
+        <source>T</source>
+        <target state="accepted">二</target>
+        <note annotates="source">Day of the week: Tuesday</note>
+      </trans-unit>
+      <trans-unit id="8" resname="W" restype="string" datatype="x-objective-c">
+        <source>W</source>
+        <target state="accepted">三</target>
+        <note annotates="source">Day of the week: Wednesday</note>
+      </trans-unit>
+      <trans-unit id="9" resname="Th" restype="string" datatype="x-objective-c">
+        <source>Th</source>
+        <target state="accepted">四</target>
+        <note annotates="source">Day of the week: Thursday</note>
+      </trans-unit>
+      <trans-unit id="10" resname="F" restype="string" datatype="x-objective-c">
+        <source>F</source>
+        <target state="accepted">五</target>
+        <note annotates="source">Day of the week: Friday</note>
+      </trans-unit>
+      <trans-unit id="11" resname="Sa" restype="string" datatype="x-objective-c">
+        <source>Sa</source>
+        <target state="accepted">六</target>
+        <note annotates="source">Day of the week: Saturday</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/iPadNative/Expert/FGDoctorBaseViewController.h" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Write recommendation" restype="string" datatype="x-objective-c">
+        <source>Write recommendation</source>
+        <target state="new">写下您的推荐</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/Util/FGStringUtil.h" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="Thank you, your quick reply made me feel good!" restype="string" datatype="x-objective-c">
+        <source>Thank you, your quick reply made me feel good!</source>
+        <target state="new">谢谢，您及时的回答让我很放心！</target>
+      </trans-unit>
+      <trans-unit id="3" resname="Thank you, your answer was very helpful!" restype="string" datatype="x-objective-c">
+        <source>Thank you, your answer was very helpful!</source>
+        <target state="new">谢谢，您的回答对我很有帮助！</target>
+      </trans-unit>
+      <trans-unit id="4" resname="This saved my life. Thank you!" restype="string" datatype="x-objective-c">
+        <source>This saved my life. Thank you!</source>
+        <target state="new">这救了我的生命，谢谢！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/NSString+helperMethods.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="anonymous" restype="string" datatype="x-objective-c">
+        <source>anonymous</source>
+        <target state="accepted">匿名</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="nurse" restype="string" datatype="x-objective-c">
+        <source>nurse</source>
+        <target state="accepted">护士</target>
+      </trans-unit>
+      <trans-unit id="2" resname="greeter" restype="string" datatype="x-objective-c">
+        <source>greeter</source>
+        <target state="accepted">接待人员</target>
+      </trans-unit>
+      <trans-unit id="3" resname="health professional" restype="string" datatype="x-objective-c">
+        <source>health professional</source>
+        <target state="accepted">医护人员</target>
+      </trans-unit>
+      <trans-unit id="4" resname="staff member" restype="string" datatype="x-objective-c">
+        <source>staff member</source>
+        <target state="accepted">员工</target>
+      </trans-unit>
+      <trans-unit id="5" resname="expert" restype="string" datatype="x-objective-c">
+        <source>expert</source>
+        <target state="accepted">专家</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatPodiatristData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="I&apos;d like to refer you to a %@." restype="string" datatype="x-objective-c">
+        <source>I'd like to refer you to a %@.</source>
+        <target state="accepted">我为您推荐%@</target>
+      </trans-unit>
+      <trans-unit id="2" resname="I&apos;d like to refer you to a " restype="string" datatype="x-objective-c">
+        <source>I'd like to refer you to a </source>
+        <target state="accepted">我为您推荐</target>
+      </trans-unit>
+      <trans-unit id="3" resname="Find specialist" restype="string" datatype="x-objective-c">
+        <source>Find specialist</source>
+        <target state="accepted">找专科医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatChecklistSection.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="4" resname="Try Now" restype="string" datatype="x-objective-c">
+        <source>Try Now</source>
+        <target state="accepted">现在试试</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

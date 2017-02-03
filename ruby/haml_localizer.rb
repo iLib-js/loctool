@@ -106,7 +106,7 @@ def get_overlap_strings2(orig_with_markup, stripped)
     md = /(.*)(<[^>]*>)(.*)/.match(orig_with_markup)
   end
   if md.nil?
-    if stripped.include?(orig_with_markup)
+    if stripped.include?(orig_with_markup) || stripped.include?(Sanitize.clean(orig_with_markup))
       return [orig_with_markup]
     else
       return []
@@ -173,6 +173,7 @@ def process_pseudo_values(values)
 end
 
 def pseudolocalize(string)
+  string = string.gsub(/(&.*?;)/, '')
   replaced = string.split('').map{|c| PSEUDO_MAP[c] ? PSEUDO_MAP[c] : c}.join('')
   padding = ((string.length * 0.4).to_i).downto(1).to_a.join('')
   (replaced).concat(padding)
@@ -197,7 +198,9 @@ def process_values(locale_mappings, values, unmapped_words)
     elsif locale_mappings[v]
       ret[v] = locale_mappings[v]
     else
-      ret[v] = pseudolocalize(v)
+      # TODO: turn off pseudolocalize for missing translation via a command-line switch
+      # ret[v] = pseudolocalize(v)
+      ret[v] = v
       unmapped_words << v
     end
   }
@@ -234,7 +237,7 @@ def process_british_values(values)
       end
       if (!is_letter || last_character)
         processed << check_for_british(curr_word)
-        processed << c unless last_character
+        processed << c unless (last_character && is_letter)
         curr_word = ''
         if HTML_ESCAPE_CHARS.keys.include?(c) and !skipping
           skipping = true

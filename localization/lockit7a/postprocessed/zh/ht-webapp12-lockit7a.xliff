@@ -5256,18 +5256,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/javascripts/views/experts/settings/prime_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="1469" resname="AM" restype="string" datatype="javascript">
-        <source>AM</source>
-        <target state="translated">AM</target>
-      </trans-unit>
-      <trans-unit id="1470" resname="PM" restype="string" datatype="javascript">
-        <source>PM</source>
-        <target state="translated">PM</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/javascripts/views/experts/settings/mobile_view.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="1471" resname="Error" restype="string" datatype="javascript">

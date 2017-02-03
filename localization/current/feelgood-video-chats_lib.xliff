@@ -1220,7 +1220,7 @@
     <body>
       <trans-unit id="2" resname="r431194129" restype="string" datatype="java">
         <source>Enter name, specialty, or topic</source>
-        <target>输入姓名，专业或主题</target>
+        <target>输入姓名，专科，或话题</target>
       </trans-unit>
       <trans-unit id="3" resname="r713954102" restype="string" datatype="java">
         <source>{doctor_name} invited.</source>
@@ -1228,7 +1228,7 @@
       </trans-unit>
       <trans-unit id="4" resname="r758668640" restype="string" datatype="java">
         <source>Failed to invite {doctor_name}</source>
-        <target>邀请失败 {doctor_name}</target>
+        <target>邀请 {doctor_name}失败</target>
       </trans-unit>
     </body>
   </file>
@@ -1252,27 +1252,27 @@
       </trans-unit>
       <trans-unit id="9" resname="r202246463" restype="string" datatype="java">
         <source>Failed to remove {person_name}: {message}</source>
-        <target>移除失败 {person_name}: {message}</target>
+        <target>移除{person_name}失败: {message}</target>
       </trans-unit>
       <trans-unit id="10" resname="r425723870" restype="string" datatype="java">
         <source>Failed to remove {person_name}</source>
-        <target>移除失败 {person_name}</target>
+        <target>移除{person_name}失败</target>
       </trans-unit>
       <trans-unit id="11" resname="r211395157" restype="string" datatype="java">
         <source>Failed to promote {person_name}: {message}</source>
-        <target>升级失败 {person_name}: {message}</target>
+        <target>升级{person_name}失败: {message}</target>
       </trans-unit>
       <trans-unit id="12" resname="r653015505" restype="string" datatype="java">
         <source>Failed to promote {person_name}</source>
-        <target>升级失败 {person_name}</target>
+        <target>升级{person_name}失败</target>
       </trans-unit>
       <trans-unit id="13" resname="r728008924" restype="string" datatype="java">
         <source>Failed to call {person_name}: {message}</source>
-        <target>呼叫失败 {person_name}: {message}</target>
+        <target>呼叫{person_name}失败: {message}</target>
       </trans-unit>
       <trans-unit id="14" resname="r260271836" restype="string" datatype="java">
         <source>Failed to call {person_name}</source>
-        <target>呼叫失败 {person_name}</target>
+        <target>呼叫{person_name}失败</target>
       </trans-unit>
     </body>
   </file>
@@ -1304,27 +1304,27 @@
       </trans-unit>
       <trans-unit id="20" resname="r475455417" restype="string" datatype="java">
         <source>Transcript</source>
-        <target>复印件</target>
+        <target>记录副本</target>
         <note annotates="source">This refers to medical consult transcript</note>
       </trans-unit>
       <trans-unit id="21" resname="r388976557" restype="string" datatype="java">
         <source>Speakerphone on</source>
-        <target>打开扬声器</target>
+        <target>扬声器打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the speakerphone</note>
       </trans-unit>
       <trans-unit id="22" resname="r894038144" restype="string" datatype="java">
         <source>Speakerphone off</source>
-        <target>关闭扬声器</target>
+        <target>扬声器关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
       </trans-unit>
       <trans-unit id="23" resname="r732893650" restype="string" datatype="java">
         <source>Microphone on</source>
-        <target>打开麦克风</target>
+        <target>麦克风打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
       </trans-unit>
       <trans-unit id="24" resname="r66962854" restype="string" datatype="java">
         <source>Microphone off</source>
-        <target>关闭麦克风</target>
+        <target>麦克风关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
       </trans-unit>
       <trans-unit id="25" resname="r898356852" restype="string" datatype="java">
@@ -1345,7 +1345,7 @@
     <body>
       <trans-unit id="28" resname="r1052400974" restype="string" datatype="java">
         <source>You are currently on hold</source>
-        <target>您目前处于暂停状态</target>
+        <target>您目前处于等候接听状态</target>
       </trans-unit>
     </body>
   </file>
@@ -1398,7 +1398,7 @@
       </trans-unit>
       <trans-unit id="38" resname="r902851796" restype="string" datatype="java">
         <source>Downloaded to:</source>
-        <target>下载到：</target>
+        <target>已下载到：</target>
       </trans-unit>
     </body>
   </file>
@@ -1410,7 +1410,7 @@
       </trans-unit>
       <trans-unit id="40" resname="r795802560" restype="string" datatype="java">
         <source>Diagnosis codes:</source>
-        <target>诊断码：</target>
+        <target>诊断代码：</target>
       </trans-unit>
     </body>
   </file>
@@ -1434,7 +1434,7 @@
       </trans-unit>
       <trans-unit id="44" resname="r48889349" restype="string" datatype="java">
         <source>Delivered on {time}</source>
-        <target>发送 {time}</target>
+        <target>已于{time}发送 </target>
       </trans-unit>
       <trans-unit id="45" resname="r1062842433" restype="string" datatype="java">
         <source>Read on {time}</source>
@@ -1625,7 +1625,7 @@
       </trans-unit>
       <trans-unit id="84" resname="live_consult_connecting_text" restype="string" datatype="x-android-resource">
         <source>One moment while we connect…</source>
-        <target>连接中...</target>
+        <target>稍等，正在连接中...</target>
       </trans-unit>
       <trans-unit id="85" resname="live_consult_waiting_for_patient_text" restype="string" datatype="x-android-resource">
         <source>Waiting for patient to connect…</source>
@@ -1793,7 +1793,7 @@
       </trans-unit>
       <trans-unit id="125" resname="soap_note_title_text" restype="string" datatype="x-android-resource">
         <source>Summary Note</source>
-        <target>简要注意</target>
+        <target>总结报告</target>
       </trans-unit>
       <trans-unit id="126" resname="soap_note_history_text" restype="string" datatype="x-android-resource">
         <source>Subjective (History):</source>
@@ -1801,7 +1801,7 @@
       </trans-unit>
       <trans-unit id="127" resname="soap_note_data_text" restype="string" datatype="x-android-resource">
         <source>Objective (Data):</source>
-        <target>目标（数据）：</target>
+        <target>客观（数据）：</target>
       </trans-unit>
       <trans-unit id="128" resname="soap_note_assessment_text" restype="string" datatype="x-android-resource">
         <source>Assessment:</source>
@@ -1817,7 +1817,7 @@
       </trans-unit>
       <trans-unit id="131" resname="public_checklist_title_recommend_text" restype="string" datatype="x-android-resource">
         <source>I recommend you try {name}'s checklist on {topic_name}</source>
-        <target>我建议您尝试{name}在{topic_name}的检查</target>
+        <target>我建议您尝试{name}关于{topic_name}的清单</target>
       </trans-unit>
       <trans-unit id="132" resname="public_checklist_button_text" restype="string" datatype="x-android-resource">
         <source>Try now</source>
@@ -1981,28 +1981,28 @@
       </trans-unit>
       <trans-unit id="172" resname="peer_unavailable_text" restype="string" datatype="x-android-resource">
         <source>There is a problem with {peer_name}'s connection. One moment while we try to re-connect with {peer_name}.</source>
-        <target>{peer_name}的连接有问题。我们尝试与{peer_name}重新连接时。</target>
+        <target>{peer_name}的连接有问题。请稍后，我们正在尝试与{peer_name}重新连接。</target>
       </trans-unit>
       <trans-unit id="173" resname="peer_unavailable_text_guest" restype="string" datatype="x-android-resource">
         <source>There is a problem with the guest's connection. One moment while we try to re-connect with the guest.</source>
-        <target>顾客的连接有问题。我们尝试与顾客重新连接时。</target>
+        <target>顾客的连接有问题。请稍后，我们正在尝试与重新连接。</target>
       </trans-unit>
       <trans-unit id="174" resname="peer_unavailable_text_doctor" restype="string" datatype="x-android-resource">
         <source>There is a problem with the doctor's connection. One moment while we try to re-connect with the doctor.</source>
-        <target>医生的连接有问题。我们尝试与顾客重新连接时。</target>
+        <target>医生的连接有问题。请稍后，我们正在尝试与顾客重新连接。</target>
       </trans-unit>
       <trans-unit id="175" resname="local_connection_unavailable_text" restype="string" datatype="x-android-resource">
         <source>There is a problem with your connection. One moment while we try to re-connect with %s.</source>
-        <target>您的连接有一个问题。我们尝试与%s重新连接时。</target>
+        <target>您的连接有一个问题。请稍后，我们正在尝试与%s重新连接。</target>
         <note annotates="source">%s refers to a person</note>
       </trans-unit>
       <trans-unit id="176" resname="disconnect_trigger_text_doctor" restype="string" datatype="x-android-resource">
         <source>There seems to be a problem with the doctor's connection. To continue by phone, please call:</source>
-        <target>医生的连接似乎有一个问题。通过手机继续，请拨打：</target>
+        <target>医生的连接似乎有一个问题。若想通过电话继续，请拨打：</target>
       </trans-unit>
       <trans-unit id="177" resname="disconnect_trigger_text_patient" restype="string" datatype="x-android-resource">
         <source>There seems to be a problem with your connection. To continue by phone, please call:</source>
-        <target>您的连接似乎有一个问题通过手机继续，请拨打：</target>
+        <target>您的连接似乎有一个问题。若想通过电话继续，请拨打：</target>
       </trans-unit>
       <trans-unit id="178" resname="disconnect_trigger_text_doc" restype="string" datatype="x-android-resource">
         <source>We're offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source>
@@ -2010,7 +2010,7 @@
       </trans-unit>
       <trans-unit id="179" resname="standard_rates_text" restype="string" datatype="x-android-resource">
         <source>Standard carrier rates may apply</source>
-        <target>可能需要支付标准费用</target>
+        <target>可能需要支付标准运行商费用</target>
       </trans-unit>
       <trans-unit id="180" resname="access_code_text" restype="string" datatype="x-android-resource">
         <source>+ Access code:</source>
@@ -2238,7 +2238,7 @@
       </trans-unit>
       <trans-unit id="236" resname="action_share_through_sms" restype="string" datatype="x-android-resource">
         <source>SMS</source>
-        <target>SMS</target>
+        <target>短信</target>
       </trans-unit>
       <trans-unit id="237" resname="action_share_through_link" restype="string" datatype="x-android-resource">
         <source>Share the link</source>
@@ -2263,7 +2263,7 @@
       </trans-unit>
       <trans-unit id="242" resname="title_SMS" restype="string" datatype="x-android-resource">
         <source>SMS</source>
-        <target>SMS</target>
+        <target>短信</target>
       </trans-unit>
       <trans-unit id="243" resname="title_Share_the_link" restype="string" datatype="x-android-resource">
         <source>Share the link</source>
@@ -2291,7 +2291,7 @@
       </trans-unit>
       <trans-unit id="249" resname="text_Specialty" restype="string" datatype="x-android-resource">
         <source>Specialty</source>
-        <target>专业</target>
+        <target>专科</target>
       </trans-unit>
       <trans-unit id="250" resname="text_City__State" restype="string" datatype="x-android-resource">
         <source>City, State</source>
@@ -2303,11 +2303,11 @@
       </trans-unit>
       <trans-unit id="252" resname="text_You_complained_of_headache__fever_and_stress__test_" restype="string" datatype="x-android-resource">
         <source>You complained of headache, fever and stress.(test)</source>
-        <target>您抱怨头痛，发热和有压力(测试)</target>
+        <target>您抱怨头痛，发热和有压力。(测试)</target>
       </trans-unit>
       <trans-unit id="253" resname="text_You_have_an_elevated_heart_rate_and_red_skin___Test_" restype="string" datatype="x-android-resource">
         <source>You have an elevated heart rate and red skin. (Test)</source>
-        <target>您心率偏高和皮肤发红(测试)</target>
+        <target>您心率偏高和皮肤发红。(测试)</target>
       </trans-unit>
       <trans-unit id="254" resname="text_You_likely_have_a_cold__test_" restype="string" datatype="x-android-resource">
         <source>You likely have a cold.(test)</source>
@@ -2339,11 +2339,11 @@
       </trans-unit>
       <trans-unit id="261" resname="text__test__774_University_Ave_" restype="string" datatype="x-android-resource">
         <source>(test) 774 University Ave,</source>
-        <target>(test) 774 University Ave,</target>
+        <target>(测试) 774 University Ave,</target>
       </trans-unit>
       <trans-unit id="262" resname="text__test__Palo_Alto__CA_23423" restype="string" datatype="x-android-resource">
         <source>(test) Palo Alto, CA 23423</source>
-        <target>(test) Palo Alto, CA 23423</target>
+        <target>(测试) Palo Alto, CA 23423</target>
       </trans-unit>
       <trans-unit id="263" resname="text_1__617__392_838" restype="string" datatype="x-android-resource">
         <source>1 (617) 392-838</source>
@@ -2371,11 +2371,11 @@
       </trans-unit>
       <trans-unit id="269" resname="text_Dr__Example_Doctor" restype="string" datatype="x-android-resource">
         <source>Dr. Example Doctor</source>
-        <target>Example Doctor医生</target>
+        <target>举例 Doctor医生</target>
       </trans-unit>
       <trans-unit id="270" resname="text_Addiction_Medicine" restype="string" datatype="x-android-resource">
         <source>Addiction Medicine</source>
-        <target>成瘾性药</target>
+        <target>成瘾科</target>
       </trans-unit>
       <trans-unit id="271" resname="text_Palo_Alto__CA" restype="string" datatype="x-android-resource">
         <source>Palo Alto, CA</source>
@@ -2771,7 +2771,7 @@
     <body>
       <trans-unit id="1" resname="r431194129" restype="string" datatype="java">
         <source>Enter name, specialty, or topic</source>
-        <target>输入姓名，专科或话题</target>
+        <target>输入姓名，专科，或话题</target>
       </trans-unit>
       <trans-unit id="2" resname="r713954102" restype="string" datatype="java">
         <source>{doctor_name} invited.</source>
@@ -2803,27 +2803,27 @@
       </trans-unit>
       <trans-unit id="8" resname="r202246463" restype="string" datatype="java">
         <source>Failed to remove {person_name}: {message}</source>
-        <target>删除失败{person_name}:{message}</target>
+        <target>删除{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="9" resname="r425723870" restype="string" datatype="java">
         <source>Failed to remove {person_name}</source>
-        <target>删除失败{person_name}</target>
+        <target>删除{person_name}失败</target>
       </trans-unit>
       <trans-unit id="10" resname="r211395157" restype="string" datatype="java">
         <source>Failed to promote {person_name}: {message}</source>
-        <target>升级失败{person_name}:{message}</target>
+        <target>升级{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="11" resname="r653015505" restype="string" datatype="java">
         <source>Failed to promote {person_name}</source>
-        <target>升级失败{person_name}</target>
+        <target>升级{person_name}失败</target>
       </trans-unit>
       <trans-unit id="12" resname="r728008924" restype="string" datatype="java">
         <source>Failed to call {person_name}: {message}</source>
-        <target>呼叫失败 {person_name}:{message}</target>
+        <target>呼叫 {person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="13" resname="r260271836" restype="string" datatype="java">
         <source>Failed to call {person_name}</source>
-        <target>呼叫失败{person_name}</target>
+        <target>呼叫{person_name}失败</target>
       </trans-unit>
     </body>
   </file>
@@ -2855,27 +2855,27 @@
       </trans-unit>
       <trans-unit id="19" resname="r475455417" restype="string" datatype="java">
         <source>Transcript</source>
-        <target>复印件</target>
+        <target>记录副本</target>
         <note annotates="source">This refers to medical consult transcript</note>
       </trans-unit>
       <trans-unit id="20" resname="r388976557" restype="string" datatype="java">
         <source>Speakerphone on</source>
-        <target>打开扬声器</target>
+        <target>扬声器打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the speakerphone</note>
       </trans-unit>
       <trans-unit id="21" resname="r894038144" restype="string" datatype="java">
         <source>Speakerphone off</source>
-        <target>关闭扬声器</target>
+        <target>扬声器关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
       </trans-unit>
       <trans-unit id="22" resname="r732893650" restype="string" datatype="java">
         <source>Microphone on</source>
-        <target>打开麦克风</target>
+        <target>麦克风打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
       </trans-unit>
       <trans-unit id="23" resname="r66962854" restype="string" datatype="java">
         <source>Microphone off</source>
-        <target>关闭麦克风</target>
+        <target>麦克风关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
       </trans-unit>
       <trans-unit id="24" resname="r898356852" restype="string" datatype="java">
@@ -2896,7 +2896,7 @@
     <body>
       <trans-unit id="27" resname="r1052400974" restype="string" datatype="java">
         <source>You are currently on hold</source>
-        <target>您目前处于暂停状态</target>
+        <target>您目前处于等候接听状态</target>
       </trans-unit>
     </body>
   </file>
@@ -2961,7 +2961,7 @@
       </trans-unit>
       <trans-unit id="39" resname="r795802560" restype="string" datatype="java">
         <source>Diagnosis codes:</source>
-        <target>诊断码：</target>
+        <target>诊断代码：</target>
       </trans-unit>
     </body>
   </file>
@@ -2985,7 +2985,7 @@
       </trans-unit>
       <trans-unit id="43" resname="r48889349" restype="string" datatype="java">
         <source>Delivered on {time}</source>
-        <target>在{time}发送</target>
+        <target>已在{time}发送</target>
       </trans-unit>
       <trans-unit id="44" resname="r1062842433" restype="string" datatype="java">
         <source>Read on {time}</source>
@@ -3371,7 +3371,7 @@
     <body>
       <trans-unit id="1" resname="r431194129" restype="string" datatype="x-android-resource">
         <source>Enter name, specialty, or topic</source>
-        <target state="translated">输入姓名，专科或话题</target>
+        <target state="translated">输入姓名，专科，或话题</target>
       </trans-unit>
       <trans-unit id="2" resname="r713954102" restype="string" datatype="x-android-resource">
         <source>{doctor_name} invited.</source>
@@ -3399,27 +3399,27 @@
       </trans-unit>
       <trans-unit id="8" resname="r202246463" restype="string" datatype="x-android-resource">
         <source>Failed to remove {person_name}: {message}</source>
-        <target state="translated">删除失败{person_name}:{message}</target>
+        <target state="translated">删除{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="9" resname="r425723870" restype="string" datatype="x-android-resource">
         <source>Failed to remove {person_name}</source>
-        <target state="translated">删除失败{person_name}</target>
+        <target state="translated">删除{person_name}失败</target>
       </trans-unit>
       <trans-unit id="10" resname="r211395157" restype="string" datatype="x-android-resource">
         <source>Failed to promote {person_name}: {message}</source>
-        <target state="translated">升级失败{person_name}:{message}</target>
+        <target state="translated">升级{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="11" resname="r653015505" restype="string" datatype="x-android-resource">
         <source>Failed to promote {person_name}</source>
-        <target state="translated">升级失败{person_name}</target>
+        <target state="translated">升级{person_name}失败</target>
       </trans-unit>
       <trans-unit id="12" resname="r728008924" restype="string" datatype="x-android-resource">
         <source>Failed to call {person_name}: {message}</source>
-        <target state="translated">呼叫失败 {person_name}:{message}</target>
+        <target state="translated">呼叫{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="13" resname="r260271836" restype="string" datatype="x-android-resource">
         <source>Failed to call {person_name}</source>
-        <target state="translated">呼叫失败{person_name}</target>
+        <target state="translated">呼叫{person_name}失败</target>
       </trans-unit>
       <trans-unit id="14" resname="r842940493" restype="string" datatype="x-android-resource">
         <source>{state}, {country}</source>
@@ -3443,27 +3443,27 @@
       </trans-unit>
       <trans-unit id="19" resname="r475455417" restype="string" datatype="x-android-resource">
         <source>Transcript</source>
-        <target state="translated">复印件</target>
+        <target state="translated">记录副本</target>
         <note annotates="source">This refers to medical consult transcript</note>
       </trans-unit>
       <trans-unit id="20" resname="r388976557" restype="string" datatype="x-android-resource">
         <source>Speakerphone on</source>
-        <target state="translated">打开扬声器</target>
+        <target state="translated">扬声器打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the speakerphone</note>
       </trans-unit>
       <trans-unit id="21" resname="r894038144" restype="string" datatype="x-android-resource">
         <source>Speakerphone off</source>
-        <target state="translated">关闭扬声器</target>
+        <target state="translated">扬声器关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
       </trans-unit>
       <trans-unit id="22" resname="r732893650" restype="string" datatype="x-android-resource">
         <source>Microphone on</source>
-        <target state="translated">打开麦克风</target>
+        <target state="translated">麦克风打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
       </trans-unit>
       <trans-unit id="23" resname="r66962854" restype="string" datatype="x-android-resource">
         <source>Microphone off</source>
-        <target state="translated">关闭麦克风</target>
+        <target state="translated">麦克风关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
       </trans-unit>
       <trans-unit id="24" resname="r898356852" restype="string" datatype="x-android-resource">
@@ -3525,7 +3525,7 @@
       </trans-unit>
       <trans-unit id="39" resname="r324623762" restype="string" datatype="x-android-resource">
         <source>Diagnosis codes:\n</source>
-        <target state="translated">诊断码：\n</target>
+        <target state="translated">诊断代码：\n</target>
       </trans-unit>
       <trans-unit id="40" resname="r402577151" restype="string" datatype="x-android-resource">
         <source>{duration}, {frequency}</source>
@@ -3907,7 +3907,7 @@
     <body>
       <trans-unit id="1" resname="r431194129" restype="string" datatype="x-android-resource">
         <source>Enter name, specialty, or topic</source>
-        <target state="translated">输入姓名，专科或话题</target>
+        <target state="translated">输入姓名，专科，或话题</target>
       </trans-unit>
       <trans-unit id="2" resname="r713954102" restype="string" datatype="x-android-resource">
         <source>{doctor_name} invited.</source>
@@ -3935,27 +3935,27 @@
       </trans-unit>
       <trans-unit id="8" resname="r202246463" restype="string" datatype="x-android-resource">
         <source>Failed to remove {person_name}: {message}</source>
-        <target state="translated">删除失败{person_name}:{message}</target>
+        <target state="translated">删除{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="9" resname="r425723870" restype="string" datatype="x-android-resource">
         <source>Failed to remove {person_name}</source>
-        <target state="translated">删除失败{person_name}</target>
+        <target state="translated">删除{person_name}失败</target>
       </trans-unit>
       <trans-unit id="10" resname="r211395157" restype="string" datatype="x-android-resource">
         <source>Failed to promote {person_name}: {message}</source>
-        <target state="translated">升级失败{person_name}:{message}</target>
+        <target state="translated">升级{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="11" resname="r653015505" restype="string" datatype="x-android-resource">
         <source>Failed to promote {person_name}</source>
-        <target state="translated">升级失败{person_name}</target>
+        <target state="translated">升级{person_name}失败</target>
       </trans-unit>
       <trans-unit id="12" resname="r728008924" restype="string" datatype="x-android-resource">
         <source>Failed to call {person_name}: {message}</source>
-        <target state="translated">呼叫失败 {person_name}:{message}</target>
+        <target state="translated">呼叫{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="13" resname="r260271836" restype="string" datatype="x-android-resource">
         <source>Failed to call {person_name}</source>
-        <target state="translated">呼叫失败{person_name}</target>
+        <target state="translated">呼叫{person_name}失败</target>
       </trans-unit>
       <trans-unit id="14" resname="r842940493" restype="string" datatype="x-android-resource">
         <source>{state}, {country}</source>
@@ -3979,7 +3979,7 @@
       </trans-unit>
       <trans-unit id="19" resname="r475455417" restype="string" datatype="x-android-resource">
         <source>Transcript</source>
-        <target state="translated">复印件</target>
+        <target state="translated">记录副本</target>
         <note annotates="source">This refers to medical consult transcript</note>
       </trans-unit>
       <trans-unit id="20" resname="r388976557" restype="string" datatype="x-android-resource">
@@ -3989,17 +3989,17 @@
       </trans-unit>
       <trans-unit id="21" resname="r894038144" restype="string" datatype="x-android-resource">
         <source>Speakerphone off</source>
-        <target state="translated">关闭扬声器</target>
+        <target state="translated">扬声器关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
       </trans-unit>
       <trans-unit id="22" resname="r732893650" restype="string" datatype="x-android-resource">
         <source>Microphone on</source>
-        <target state="translated">打开麦克风</target>
+        <target state="translated">麦克风打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
       </trans-unit>
       <trans-unit id="23" resname="r66962854" restype="string" datatype="x-android-resource">
         <source>Microphone off</source>
-        <target state="translated">关闭麦克风</target>
+        <target state="translated">麦克风关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
       </trans-unit>
       <trans-unit id="24" resname="r898356852" restype="string" datatype="x-android-resource">
@@ -4016,7 +4016,7 @@
       </trans-unit>
       <trans-unit id="27" resname="r1052400974" restype="string" datatype="x-android-resource">
         <source>You are currently on hold</source>
-        <target state="translated">您目前处于暂停状态</target>
+        <target state="translated">您目前处于等候接听状态</target>
       </trans-unit>
       <trans-unit id="28" resname="r705098731" restype="string" datatype="x-android-resource">
         <source>Settings</source>
@@ -4061,7 +4061,7 @@
       </trans-unit>
       <trans-unit id="39" resname="r324623762" restype="string" datatype="x-android-resource">
         <source>Diagnosis codes:\n</source>
-        <target state="translated">诊断码：\n</target>
+        <target state="translated">诊断代码：\n</target>
       </trans-unit>
       <trans-unit id="40" resname="r402577151" restype="string" datatype="x-android-resource">
         <source>{duration}, {frequency}</source>
@@ -4077,7 +4077,7 @@
       </trans-unit>
       <trans-unit id="43" resname="r48889349" restype="string" datatype="x-android-resource">
         <source>Delivered on {time}</source>
-        <target state="translated">在{time}发送</target>
+        <target state="translated">已在{time}发送</target>
       </trans-unit>
       <trans-unit id="44" resname="r998864187" restype="string" datatype="x-android-resource">
         <source>Delivered</source>
@@ -4223,7 +4223,7 @@
     <body>
       <trans-unit id="4" resname="r795802560" restype="string" datatype="java">
         <source>Diagnosis codes:</source>
-        <target state="translated">诊断码：</target>
+        <target state="translated">诊断代码：</target>
       </trans-unit>
     </body>
   </file>
@@ -4259,7 +4259,7 @@
       </trans-unit>
       <trans-unit id="4" resname="r795802560" restype="string" datatype="x-android-resource">
         <source>Diagnosis codes:\n</source>
-        <target state="translated">诊断码：\n</target>
+        <target state="translated">诊断代码：\n</target>
       </trans-unit>
       <trans-unit id="5" resname="r717299647" restype="string" datatype="x-android-resource">
         <source>You haven't selected a stethoscope yet</source>

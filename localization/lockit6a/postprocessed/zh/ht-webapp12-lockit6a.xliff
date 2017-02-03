@@ -4437,7 +4437,7 @@
         <source>Warm wishes and big smiles for healthy, happy holidays!</source>
         <target>为健康的温暖的祝福和笑容满面，节日快乐！</target>
       </trans-unit>
-      <trans-unit id="4252" resnam e="r476034207" restype="string" datatype="ruby">
+      <trans-unit id="4252" resname="r476034207" restype="string" datatype="ruby">
         <source>Heartfelt Thanks :)</source>
         <target>衷心感谢 :)</target>
       </trans-unit>
@@ -30460,11 +30460,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6658" resname="AM" restype="string" datatype="html">
         <source>AM</source>
-        <target>AM</target>
+        <target>上午</target>
       </trans-unit>
       <trans-unit id="6659" resname="PM" restype="string" datatype="html">
         <source>PM</source>
-        <target>PM</target>
+        <target>下午</target>
       </trans-unit>
     </body>
   </file>
