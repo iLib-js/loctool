@@ -559,4 +559,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/NSString+helperMethods.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="anonymous" restype="string" datatype="x-objective-c">
+        <source>anonymous</source>
+        <target state="accepted">匿名</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
