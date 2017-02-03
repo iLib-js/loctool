@@ -1172,4 +1172,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/models/person.rb" source-language="en-US" target-language
+="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="502" resname="r1014486431" restype="string" datatype="rub
+y">
+        <source>Dr. %{full_name}</source>
+        <target state="new">%{full_name}医生</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

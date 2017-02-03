@@ -74,6 +74,10 @@
         <source>See 1 more answer</source>
         <target state="translated">多查看1个回答</target>
       </trans-unit>
+      <trans-unit id="62" resname="r619530839" restype="plural" datatype="ruby" extype="other">
+        <source>See %{count} more answers</source>
+        <target state="translated">多查看%{count}个回答</target>
+      </trans-unit>
     </body>
   </file>
   <file original="app/views/people/feelGood/doctorView.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
