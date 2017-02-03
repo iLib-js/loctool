@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="2" resname="You&apos;re now following %@! " restype="string" datatype="x-objective-c">
         <source>You're now following %@!</source>
-        <target>您已关注%@！</target>
+        <target>您现在关注%@！</target>
       </trans-unit>
     </body>
   </file>
@@ -510,7 +510,7 @@
       </trans-unit>
       <trans-unit id="104" resname="Pay as you go plan" restype="string" datatype="x-objective-c">
         <source>Pay as you go plan</source>
-        <target>随收随付</target>
+        <target>随付随用</target>
       </trans-unit>
       <trans-unit id="105" resname="$%d USD / month" restype="string" datatype="x-objective-c">
         <source>$%d USD / month</source>
@@ -838,7 +838,7 @@
       </trans-unit>
       <trans-unit id="139" resname="Referral to" restype="string" datatype="x-objective-c">
         <source>Referral to</source>
-        <target>推荐给</target>
+        <target>转诊给</target>
       </trans-unit>
       <trans-unit id="140" resname=" specialists" restype="string" datatype="x-objective-c">
         <source>specialists</source>
@@ -1512,7 +1512,7 @@
       </trans-unit>
       <trans-unit id="285" resname="Poor network connection. Please check your network connection and try again..." restype="string" datatype="x-objective-c">
         <source>Poor network connection. Please check your network connection and try again...</source>
-        <target>网络连接不良。请检查您的连接并再次尝试...</target>
+        <target>网络连接不佳。请检查您的连接并再次尝试...</target>
       </trans-unit>
       <trans-unit id="286" resname="Unavailable at this time" restype="string" datatype="x-objective-c">
         <source>Unavailable at this time</source>
@@ -1656,7 +1656,7 @@
     <body>
       <trans-unit id="310" resname="Poor network connection.\nPlease check your network connection and try again" restype="string" datatype="x-objective-c">
         <source>Poor network connection.\nPlease check your network connection and try again</source>
-        <target>网络连接不良。\n请检查您的连接并再次尝试</target>
+        <target>网络连接不佳。\n请检查您的连接并再次尝试</target>
       </trans-unit>
       <trans-unit id="311" resname="There seems to be a problem with the patient&apos;s connection.  One moment while we try to reconnect you" restype="string" datatype="x-objective-c">
         <source>There seems to be a problem with the patient's connection.  One moment while we try to reconnect you</source>
@@ -2056,7 +2056,7 @@
       </trans-unit>
       <trans-unit id="386" resname="Privately share full health profile" restype="string" datatype="x-objective-c">
         <source>Privately share full health profile</source>
-        <target>私下共享完整的健康档案</target>
+        <target>私下分享完整的健康档案</target>
       </trans-unit>
       <trans-unit id="387" resname="Anonymous profile" restype="string" datatype="x-objective-c">
         <source>Anonymous profile</source>
@@ -2072,7 +2072,7 @@
       </trans-unit>
       <trans-unit id="390" resname="Advice, diagnosis, treatment, referrals" restype="string" datatype="x-objective-c">
         <source>Advice, diagnosis, treatment, referrals</source>
-        <target>建议、诊断、治疗、转介</target>
+        <target>建议、诊断、治疗、转诊</target>
       </trans-unit>
       <trans-unit id="391" resname="Order lab tests and receive results" restype="string" datatype="x-objective-c">
         <source>Order lab tests and receive results</source>
@@ -2272,7 +2272,7 @@
       </trans-unit>
       <trans-unit id="426" resname="MM/DD/YYYY" restype="string" datatype="x-objective-c">
         <source>MM/DD/YYYY</source>
-        <target>MM/DD/YYYY</target>
+        <target>月月/日日/年年年年</target>
       </trans-unit>
       <trans-unit id="427" resname="Add more health information (optional)" restype="string" datatype="x-objective-c">
         <source>Add more health information (optional)</source>
@@ -2465,7 +2465,7 @@
       </trans-unit>
       <trans-unit id="465" resname="Conditions treated" restype="string" datatype="x-objective-c">
         <source>Conditions treated</source>
-        <target>条件处理</target>
+        <target>治疗了的健康状况</target>
       </trans-unit>
       <trans-unit id="466" resname="Contraindications" restype="string" datatype="x-objective-c">
         <source>Contraindications</source>
@@ -2674,7 +2674,7 @@
       </trans-unit>
       <trans-unit id="503" resname="Conditions related to " restype="string" datatype="x-objective-c">
         <source>Conditions related to</source>
-        <target>相关条件</target>
+        <target>相关健康状况</target>
       </trans-unit>
       <trans-unit id="504" resname="Risk factors of " restype="string" datatype="x-objective-c">
         <source>Risk factors of</source>
@@ -2702,7 +2702,7 @@
       </trans-unit>
       <trans-unit id="510" resname="Conditions treated by " restype="string" datatype="x-objective-c">
         <source>Conditions treated by</source>
-        <target>条件处理</target>
+        <target>治疗了的健康状况</target>
       </trans-unit>
       <trans-unit id="511" resname="Medical devices used in " restype="string" datatype="x-objective-c">
         <source>Medical devices used in</source>
@@ -2710,7 +2710,7 @@
       </trans-unit>
       <trans-unit id="512" resname="Conditions screened by " restype="string" datatype="x-objective-c">
         <source>Conditions screened by</source>
-        <target>筛选的条件</target>
+        <target>筛选的健康状况</target>
       </trans-unit>
       <trans-unit id="513" resname="Procedures for " restype="string" datatype="x-objective-c">
         <source>Procedures for</source>
@@ -2718,7 +2718,7 @@
       </trans-unit>
       <trans-unit id="514" resname="Conditions prevented by " restype="string" datatype="x-objective-c">
         <source>Conditions prevented by</source>
-        <target>预防的条件</target>
+        <target>被预防的健康状况</target>
       </trans-unit>
       <trans-unit id="515" resname=" include:" restype="string" datatype="x-objective-c">
         <source>include:</source>
@@ -3496,7 +3496,7 @@
     <body>
       <trans-unit id="653" resname="Hel-CI-Fj1.text" restype="string" datatype="x-xib">
         <source>We're committed to making you have a delightful experience with our doctors that leaves you feeling good. If you're unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you'll be satisfied :)</source>
-        <target>我们会努力给您与我们医生交流的愉快体验，让您感觉很好。如果您对在线咨询的质量不满意和认为在线咨询没有帮助，您可以随时联系我们并请求退款！我们保证您会满意:)</target>
+        <target>我们会努力给您与我们医生交流的愉快体验，让您Feel Good。如果您对在线咨询的质量不满意和认为在线咨询没有帮助，您可以随时联系我们并请求退款！我们保证您会满意:)</target>
         <note annotates="source">Class = "UILabel"; text = "We're committed to making you have a delightful experience with our doctors that leaves you feeling good. If you're unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you'll be satisfied :)"; ObjectID = "Hel-CI-Fj1";</note>
       </trans-unit>
     </body>
@@ -3624,7 +3624,7 @@
       </trans-unit>
       <trans-unit id="673" resname="bsp-Xt-0j0.text" restype="string" datatype="x-xib">
         <source>We're dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We'll respond to you and do our best to make you happy as soon as possible! :)</source>
-        <target>我们致力于照顾您的健康请考虑给我们发送反馈而不是降级我们会尽快回复您并做最大的努力使您开心！:)</target>
+        <target>我们致力于照顾您的健康，请考虑给我们发送反馈而不是降级我们会尽快回复您并做最大的努力使您开心！:)</target>
         <note annotates="source">Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We'll respond to you and do our best to make you happy as soon as possible! :)"; ObjectID = "bsp-Xt-0j0";</note>
       </trans-unit>
     </body>
@@ -3818,12 +3818,12 @@
     <body>
       <trans-unit id="699" resname="D1S-cE-SGi.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
-        <target>共享</target>
+        <target>分享</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "D1S-cE-SGi";</note>
       </trans-unit>
       <trans-unit id="700" resname="Dcn-5D-eum.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
-        <target>共享</target>
+        <target>分享</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "Dcn-5D-eum";</note>
       </trans-unit>
       <trans-unit id="701" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
@@ -3842,7 +3842,7 @@
     <body>
       <trans-unit id="703" resname="D1S-cE-SGi.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
-        <target>共享</target>
+        <target>分享</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "D1S-cE-SGi";</note>
       </trans-unit>
       <trans-unit id="704" resname="G3s-8R-ne9.text" restype="string" datatype="x-xib">
@@ -3856,12 +3856,12 @@
     <body>
       <trans-unit id="705" resname="D1S-cE-SGi.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
-        <target>共享</target>
+        <target>分享</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "D1S-cE-SGi";</note>
       </trans-unit>
       <trans-unit id="706" resname="Dcn-5D-eum.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
-        <target>共享</target>
+        <target>分享</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "Dcn-5D-eum";</note>
       </trans-unit>
       <trans-unit id="707" resname="KaS-Fq-bjx.normalTitle" restype="string" datatype="x-xib">
@@ -4022,7 +4022,7 @@
       </trans-unit>
       <trans-unit id="727" resname="aro-gW-23T.text" restype="string" datatype="x-xib">
         <source>We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)</source>
-        <target>我们致力于照顾您的健康请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:)</target>
+        <target>我们致力于照顾您的健康，请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:)</target>
         <note annotates="source">Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)"; ObjectID = "aro-gW-23T";</note>
       </trans-unit>
     </body>
@@ -4118,7 +4118,7 @@
     <body>
       <trans-unit id="739" resname="CL6-OZ-JR6.placeholder" restype="string" datatype="x-xib">
         <source>MM/DD/YYYY</source>
-        <target>MM/DD/YYYY</target>
+        <target>月月/日日/年年年年</target>
         <note annotates="source">Class = "UITextField"; placeholder = "  MM/DD/YYYY"; ObjectID = "CL6-OZ-JR6";</note>
       </trans-unit>
     </body>
@@ -4163,17 +4163,17 @@
     <body>
       <trans-unit id="744" resname="MCI-He-Gs3.disabledTitle" restype="string" datatype="x-xib">
         <source>Share</source>
-        <target>共享</target>
+        <target>分享</target>
         <note annotates="source">Class = "UIButton"; disabledTitle = "Share"; ObjectID = "MCI-He-Gs3";</note>
       </trans-unit>
       <trans-unit id="745" resname="MCI-He-Gs3.highlightedTitle" restype="string" datatype="x-xib">
         <source>Share</source>
-        <target>共享</target>
+        <target>分享</target>
         <note annotates="source">Class = "UIButton"; highlightedTitle = "Share"; ObjectID = "MCI-He-Gs3";</note>
       </trans-unit>
       <trans-unit id="746" resname="MCI-He-Gs3.normalTitle" restype="string" datatype="x-xib">
         <source>Share</source>
-        <target>共享</target>
+        <target>分享</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Share"; ObjectID = "MCI-He-Gs3";</note>
       </trans-unit>
       <trans-unit id="747" resname="hrz-f6-Mah.disabledTitle" restype="string" datatype="x-xib">
