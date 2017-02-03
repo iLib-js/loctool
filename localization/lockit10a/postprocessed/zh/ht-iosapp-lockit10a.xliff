@@ -591,4 +591,28 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Data/FGChatPodiatristData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="I&apos;d like to refer you to a %@." restype="string" datatype="x-objective-c">
+        <source>I'd like to refer you to a %@.</source>
+        <target state="accepted">我为您推荐%@</target>
+      </trans-unit>
+      <trans-unit id="2" resname="I&apos;d like to refer you to a " restype="string" datatype="x-objective-c">
+        <source>I'd like to refer you to a </source>
+        <target state="accepted">我为您推荐</target>
+      </trans-unit>
+      <trans-unit id="3" resname="Find specialist" restype="string" datatype="x-objective-c">
+        <source>Find specialist</source>
+        <target state="accepted">找专科医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatChecklistSection.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="4" resname="Try Now" restype="string" datatype="x-objective-c">
+        <source>Try Now</source>
+        <target state="accepted">现在试试</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
