@@ -157,7 +157,7 @@
     <body>
       <trans-unit id="25" resname="Add a %@ interpreter for %@" restype="string" datatype="x-objective-c">
         <source>Add a %@ interpreter for %@</source>
-        <target>多付%$2@添加一名%$1@翻译</target>
+        <target>多付%2$@添加一名%1$@翻译</target>
       </trans-unit>
     </body>
   </file>
