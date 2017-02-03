@@ -2356,7 +2356,7 @@
     <body>
       <trans-unit id="443" resname="Update appointment" restype="string" datatype="x-objective-c">
         <source>Update appointment</source>
-        <target>上传预约</target>
+        <target>更新预约</target>
       </trans-unit>
       <trans-unit id="444" resname="Great!" restype="string" datatype="x-objective-c">
         <source>Great!</source>

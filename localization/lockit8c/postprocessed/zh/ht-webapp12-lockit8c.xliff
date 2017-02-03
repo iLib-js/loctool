@@ -43329,7 +43329,7 @@
     <body>
       <trans-unit id="10038" resname="From HealthTap" restype="string" datatype="javascript">
         <source>From HealthTap</source>
-        <target state="translated">来自健康问答</target>
+        <target state="translated">已上传的文档</target>
       </trans-unit>
     </body>
   </file>

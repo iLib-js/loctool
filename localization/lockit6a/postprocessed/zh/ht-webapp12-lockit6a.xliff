@@ -28400,7 +28400,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6208" resname="From HealthTap" restype="string" datatype="html">
         <source>From HealthTap</source>
-        <target>来自健康问答</target>
+        <target>已上传的文档</target>
       </trans-unit>
     </body>
   </file>

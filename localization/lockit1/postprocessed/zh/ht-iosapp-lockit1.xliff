@@ -9041,7 +9041,7 @@ I'd like to accomplish my goal of...</source>
       </trans-unit>
       <trans-unit id="From HealthTap" resname="From HealthTap" restype="string" datatype="x-objective-c">
         <source>From HealthTap</source>
-        <target>来自健康问答</target>
+        <target>已上传的文档</target>
         <note annotates="source">specify source of attachment - previously uploaded HealthTap Files</note>
       </trans-unit>
       <trans-unit id="From album" resname="From album" restype="string" datatype="x-objective-c">

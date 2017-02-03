@@ -6876,7 +6876,7 @@
       </trans-unit>
       <trans-unit id="1416" resname="edit_appointment_update" restype="string" datatype="x-android-resource">
         <source>Update appointment</source>
-        <target>上传预约</target>
+        <target>更新预约</target>
       </trans-unit>
       <trans-unit id="1417" resname="concierge_suggested_docs_header" restype="string" datatype="x-android-resource">
         <source>Connect with top doctors and build your Care-Team for free — get covered anytime, anywhere</source>
