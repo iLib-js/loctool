@@ -6383,7 +6383,7 @@ consults and other benefits</source>
       </trans-unit>
       <trans-unit id="%@ (Tip)" resname="%@ (Tip)" restype="string" datatype="x-objective-c">
         <source>%@ (Tip)</source>
-        <target>%@ (小费)</target>
+        <target>%@ (小贴士)</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ \naccepted" resname="%@ \naccepted" restype="string" datatype="x-objective-c">
@@ -12255,7 +12255,7 @@ Please try again</source>
       </trans-unit>
       <trans-unit id="Tip: " resname="Tip: " restype="string" datatype="x-objective-c">
         <source>Tip:</source>
-        <target>小费：</target>
+        <target>小贴士：</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Tips" resname="Tips" restype="string" datatype="x-objective-c">
