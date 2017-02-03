@@ -42380,7 +42380,7 @@
       </trans-unit>
       <trans-unit id="9818" resname="Available" restype="string" datatype="javascript">
         <source>Available</source>
-        <target state="translated">有效的</target>
+        <target state="translated">在线</target>
       </trans-unit>
       <trans-unit id="9819" resname="You are now following Dr. {name} !" restype="string" datatype="javascript">
         <source>You are now following Dr. {name} !</source>

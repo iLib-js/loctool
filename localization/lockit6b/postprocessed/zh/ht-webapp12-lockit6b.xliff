@@ -4746,7 +4746,7 @@
       </trans-unit>
       <trans-unit id="2837" resname="r50265502" restype="string" datatype="x-haml">
         <source>Available</source>
-        <target state="translated">有效的</target>
+        <target state="translated">在线</target>
       </trans-unit>
       <trans-unit id="2838" resname="r316110521" restype="string" datatype="x-haml">
         <source>Feed</source>

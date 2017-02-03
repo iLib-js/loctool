@@ -44164,7 +44164,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="10294" resname="Available" restype="string" datatype="html">
         <source>Available</source>
-        <target>有效的</target>
+        <target>在线</target>
       </trans-unit>
     </body>
   </file>
