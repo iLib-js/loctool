@@ -3639,7 +3639,7 @@
     <body>
       <trans-unit id="664" resname="r45009371" restype="string" datatype="java">
         <source>Near you</source>
-        <target>靠近 您</target>
+        <target>靠近您</target>
       </trans-unit>
       <trans-unit id="665" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>

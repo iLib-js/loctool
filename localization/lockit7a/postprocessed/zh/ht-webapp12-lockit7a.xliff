@@ -6308,7 +6308,7 @@
       </trans-unit>
       <trans-unit id="1670" resname="Living" restype="string" datatype="javascript">
         <source>Living</source>
-        <target state="translated">居住地</target>
+        <target state="translated">健在</target>
       </trans-unit>
       <trans-unit id="1671" resname="Relationship" restype="string" datatype="javascript">
         <source>Relationship</source>

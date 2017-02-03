@@ -68,7 +68,7 @@
       </trans-unit>
       <trans-unit id="21" resname="r415124616" restype="string" datatype="x-android-resource">
         <source>Living</source>
-        <target state="translated">居住地</target>
+        <target state="translated">健在</target>
       </trans-unit>
       <trans-unit id="22" resname="r199869805" restype="string" datatype="x-android-resource">
         <source>Date of Birth</source>
