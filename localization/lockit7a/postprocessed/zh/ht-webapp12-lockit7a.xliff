@@ -6048,7 +6048,7 @@
       </trans-unit>
       <trans-unit id="1618" resname="Insurance group ID" restype="string" datatype="javascript">
         <source>Insurance group ID</source>
-        <target state="translated">保险组别ID</target>
+        <target state="translated">保险集团ID</target>
       </trans-unit>
       <trans-unit id="1619" resname="Insurance group name" restype="string" datatype="javascript">
         <source>Insurance group name</source>
@@ -6212,7 +6212,7 @@
       </trans-unit>
       <trans-unit id="1656" resname="Insurance plan group ID" restype="string" datatype="javascript">
         <source>Insurance plan group ID</source>
-        <target state="translated">保险组别ID</target>
+        <target state="translated">保险集团ID</target>
       </trans-unit>
       <trans-unit id="1657" resname="Insurance plan group name" restype="string" datatype="javascript">
         <source>Insurance plan group name</source>
