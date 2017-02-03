@@ -61,11 +61,11 @@
     <body>
       <trans-unit id="662" resname="r951015431" restype="string" datatype="x-haml">
         <source>AM</source>
-        <target state="translated">AM</target>
+        <target state="translated">上午</target>
       </trans-unit>
       <trans-unit id="663" resname="r921529706" restype="string" datatype="x-haml">
         <source>PM</source>
-        <target state="translated">PM</target>
+        <target state="translated">下午</target>
       </trans-unit>
     </body>
   </file>
