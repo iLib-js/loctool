@@ -30460,11 +30460,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6658" resname="AM" restype="string" datatype="html">
         <source>AM</source>
-        <target>AM</target>
+        <target>上午</target>
       </trans-unit>
       <trans-unit id="6659" resname="PM" restype="string" datatype="html">
         <source>PM</source>
-        <target>PM</target>
+        <target>下午</target>
       </trans-unit>
     </body>
   </file>
