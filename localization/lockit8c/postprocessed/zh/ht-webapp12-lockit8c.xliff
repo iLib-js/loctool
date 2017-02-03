@@ -40936,7 +40936,7 @@
     <body>
       <trans-unit id="9512" resname="Rotate" restype="string" datatype="javascript">
         <source>Rotate</source>
-        <target state="translated">循环</target>
+        <target state="translated">旋转</target>
       </trans-unit>
       <trans-unit id="9513" resname="Full Body" restype="string" datatype="javascript">
         <source>Full Body</source>
