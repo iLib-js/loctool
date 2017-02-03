@@ -236,7 +236,7 @@
     <body>
       <trans-unit id="47" resname="r892841672" restype="string" datatype="ruby">
         <source>RateRx brings together the experience of the more than %{num} doctors in our Medical Expert Network, representing over 1.5 million years of cumulative clinical experience across more than a billion patient visits.</source>
-        <target state="translated">Rate医生评测在我们的医学专家网络汇集了超过%{num}名医生的经验，代表累积超过150万年临床经验以及超过十亿的患者访问。</target>
+        <target state="translated">RateRx医生评测在我们的医学专家网络汇集了超过%{num}名医生的经验，代表累积超过150万年临床经验以及超过十亿的患者访问。</target>
       </trans-unit>
     </body>
   </file>
@@ -470,7 +470,7 @@
       </trans-unit>
       <trans-unit id="99" resname="r30385378" restype="string" datatype="ruby">
         <source>Hi there! I'm %{doc_name}, a Board Certified U.S. doctor. What can we do to help you feel good today?</source>
-        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。我们能做些什么来帮助您今天感觉良好？</target>
+        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。我们能做些什么来帮助您今天Feel Good？</target>
       </trans-unit>
       <trans-unit id="100" resname="r954038769" restype="string" datatype="ruby">
         <source>Hi there! I'm %{doc_name}, a Board Certified U.S. doctor. what can we help you with today?</source>
@@ -510,7 +510,7 @@
       </trans-unit>
       <trans-unit id="109" resname="r436833636" restype="string" datatype="ruby">
         <source>Hi, I'm %{doc_name}, a Board Certified U.S. doctor. How can we help you feel good today?</source>
-        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们如何帮助您感觉良好？</target>
+        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们如何帮助您Feel Good？</target>
       </trans-unit>
       <trans-unit id="110" resname="r477169725" restype="string" datatype="ruby">
         <source>Hi, I'm %{doc_name}, a Board Certified U.S. doctor. How can we help you today?</source>
@@ -554,7 +554,7 @@
       </trans-unit>
       <trans-unit id="120" resname="r648809268" restype="string" datatype="ruby">
         <source>Hi, my name is %{doc_name}, and I'm a Board Certified U.S. doctor. How can we help you feel good today?</source>
-        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您感觉良好？</target>
+        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您Feel Good？</target>
       </trans-unit>
       <trans-unit id="121" resname="r134576110" restype="string" datatype="ruby">
         <source>Hi, my name is %{doc_name}, and I'm a Board Certified U.S. doctor. What seems to be the problem?</source>
@@ -582,7 +582,7 @@
       </trans-unit>
       <trans-unit id="127" resname="r19131042" restype="string" datatype="ruby">
         <source>Nice to meet you! I'm %{doc_name}, and I'm a Board Certified U.S. doctor. How can we help you feel good today?</source>
-        <target state="translated">很高兴见到您！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您感觉良好？</target>
+        <target state="translated">很高兴见到您！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您Feel Good？</target>
       </trans-unit>
       <trans-unit id="128" resname="r1058450921" restype="string" datatype="ruby">
         <source>Nice to meet you! I'm %{doc_name}, and I'm a Board Certified U.S. doctor. How can we help you today?</source>
@@ -618,7 +618,7 @@
       </trans-unit>
       <trans-unit id="136" resname="r486535834" restype="string" datatype="ruby">
         <source>Welcome to HealthTap. I'm %{doc_name}, and I'm a Board Certified U.S. doctor. How can we help you feel good today?</source>
-        <target state="translated">欢迎来到HealthTap。我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您感觉良好？</target>
+        <target state="translated">欢迎来到HealthTap。我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您Feel Good？</target>
       </trans-unit>
       <trans-unit id="137" resname="r80533206" restype="string" datatype="ruby">
         <source>Welcome to HealthTap. I'm %{doc_name}, and I'm a Board Certified U.S. doctor. How can we help you today?</source>
@@ -899,7 +899,7 @@
     <body>
       <trans-unit id="187" resname="r761673750" restype="string" datatype="ruby">
         <source>Your doctor is here so you can &lt;span class="line-break" &gt;&lt;/span&gt; feel good anywhere&lt;br/&gt;</source>
-        <target state="translated">您的医生就在这里，因此您在任何地方都可以&lt;span class="line-break" &gt;&lt;/span&gt;感觉良好&lt;br/&gt;</target>
+        <target state="translated">您的医生就在这里，因此您在任何地方都可以&lt;span class="line-break" &gt;&lt;/span&gt;Feel Good&lt;br/&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -988,7 +988,7 @@
       </trans-unit>
       <trans-unit id="201" resname="r487837888" restype="string" datatype="ruby">
         <source>I'd like to personally invite you to %{open_link}be featured for free on HealthTap,%{close_link} where you can gain recognition for your expertise and help %{actor} and all your medical school colleagues win the competition.</source>
-        <target state="accepted">我想亲自邀请您在HealthTap上参加%{open_link}免费专题%{close_link}您可以获得对您专业知识的认可并帮助%{actor}所有的医学院同事赢得竞赛。</target>
+        <target state="accepted">我想亲自邀请您在HealthTap上参加%{open_link}免费话题%{close_link}您可以获得对您专业知识的认可并帮助%{actor}所有的医学院同事赢得竞赛。</target>
       </trans-unit>
     </body>
   </file>
@@ -2244,11 +2244,11 @@
       </trans-unit>
       <trans-unit id="488" resname="r318715433" restype="string" datatype="ruby">
         <source>%{doctor}, %{a_an_specialist}, shares trustworthy, caring answers on HealthTap, helping millions of people feel good! You should follow %{doctor} on HealthTap</source>
-        <target state="translated">%{doctor}, %{a_an_specialist}, 在HealthTap上分享值得信赖和有关爱的回答，帮助数百万人感觉良好！您应该关注HealthTap上的%{doctor}</target>
+        <target state="translated">%{doctor}, %{a_an_specialist}, 在HealthTap上分享值得信赖和有关爱的回答，帮助数百万人Feel Good！您应该关注HealthTap上的%{doctor}</target>
       </trans-unit>
       <trans-unit id="489" resname="r552122891" restype="string" datatype="ruby">
         <source>%{doctor}, %{a_an_specialist} in %{doctor_location}, shares trustworthy, caring answers on HealthTap, helping millions of people feel good! You should follow %{doctor} on HealthTap</source>
-        <target state="translated">%{doctor}, 在%{doctor_location}的%{a_an_specialist}, 在HealthTap上分享值得信赖和有关爱的回答，帮助数百万人感觉良好！您应该关注HealthTap上的%{doctor}</target>
+        <target state="translated">%{doctor}, 在%{doctor_location}的%{a_an_specialist}, 在HealthTap上分享值得信赖和有关爱的回答，帮助数百万人Feel Good！您应该关注HealthTap上的%{doctor}</target>
       </trans-unit>
       <trans-unit id="490" resname="r1061577932" restype="string" datatype="ruby">
         <source>%{doctor} is a great %{specialist} who gives trustworthy, caring answers on #HealthTap!</source>
@@ -2272,7 +2272,7 @@
       </trans-unit>
       <trans-unit id="495" resname="r325377029" restype="string" datatype="ruby">
         <source>I thought you like to check out %{goal} on HealthTap. HealthTap has  thousands of answers, articles, tips, and checklists designed to help you with this goal, so you can smile and feel good all the time!</source>
-        <target state="translated">我想您喜欢在HealthTap上查看%{goal}。 HealthTap有数以千计的回答，文章，小贴士和清单，旨在帮助您实现这一目标，所以您可以始终微笑和感觉良好！</target>
+        <target state="translated">我想您喜欢在HealthTap上查看%{goal}。 HealthTap有数以千计的回答，文章，小贴士和清单，旨在帮助您实现这一目标，所以您可以始终微笑和Feel Good！</target>
       </trans-unit>
       <trans-unit id="496" resname="r898014206" restype="string" datatype="ruby">
         <source>Is %{goal} a goal of yours? Top docs help you achieve this goal with checklists and tips on #HealthTap!</source>
@@ -2308,7 +2308,7 @@
       </trans-unit>
       <trans-unit id="504" resname="r502382219" restype="string" datatype="ruby">
         <source>At HealthTap, top doctors create actionable checklists to help you achieve your health and wellness goals and feel good! I thought you'd be interested in seeing the checklist that %{doctor}, %{a_an_specialist}, created about %{g}. Try the checklist!</source>
-        <target state="translated">在HealthTap，顶级医生创建可操作的清单来帮助您实现您的健康与保健目标并感觉良好！ 我想您有兴趣查看%{doctor}，%{a_an_specialist}，创建的关于%{g}的清单。 尝试清单吧！</target>
+        <target state="translated">在HealthTap，顶级医生创建可操作的清单来帮助您实现您的健康与保健目标并Feel Good！ 我想您有兴趣查看%{doctor}，%{a_an_specialist}，创建的关于%{g}的清单。 尝试清单吧！</target>
       </trans-unit>
       <trans-unit id="505" resname="r164389534" restype="string" datatype="ruby">
         <source>Try this doctor checklist for %{g} from %{doctor} on @HealthTap!</source>
@@ -2320,7 +2320,7 @@
       </trans-unit>
       <trans-unit id="507" resname="r1045259591" restype="string" datatype="ruby">
         <source>At HealthTap, top doctors create actionable checklists to help you achieve your health and wellness goals and feel good! I thought you'd be interested in seeing the checklist that %{doctor}, %{a_an_specialist}, created. Try the checklist!</source>
-        <target state="translated">在HealthTap，顶级医生创建可操作的清单来帮助您实现您的健康与保健目标并感觉良好！ 我想您有兴趣查看%{doctor}，%{a_an_specialist}，创建的清单。 尝试清单吧！</target>
+        <target state="translated">在HealthTap，顶级医生创建可操作的清单来帮助您实现您的健康与保健目标并Feel Good！ 我想您有兴趣查看%{doctor}，%{a_an_specialist}，创建的清单。 尝试清单吧！</target>
       </trans-unit>
       <trans-unit id="508" resname="r672905091" restype="string" datatype="ruby">
         <source>Try this doctor checklist from %{doctor} on @HealthTap!</source>
@@ -2345,7 +2345,7 @@
       <trans-unit id="513" resname="r1066714463" restype="string" datatype="ruby">
         <source>&lt;div&gt;&lt;p&gt;I wanted to give you a code that will give you $%{amount} off on a subscription to HealthTap Prime, an exciting new digital health service that gives you unlimited Virtual Consults with top doctors 24/7 via video, voice, or text chat from any PC or mobile device.&lt;/p&gt; &lt;p&gt; Use my code %{promo_code} and get $%{amount} in credits toward your HealthTap Prime subscription!&lt;/p&gt;&lt;p&gt; With HealthTap Prime, you also get:&lt;/p&gt;&lt;ul&gt;&lt;li&gt; Total peace of mind, since you can consult a doctor anytime night or day on any issue&lt;/li&gt;&lt;li&gt; Prioritized answers to any health question you ask through HealthTap’s free service&lt;/li&gt;&lt;li&gt; Health checklists and tips customized just for you&lt;/li&gt;&lt;li&gt; Unlimited access to the world’s leading knowledgebase of doctor-created health information&lt;/li&gt;&lt;li&gt; Total confidentiality, with HIPAA-secure systems that safeguard your privacy&lt;/ul&gt;&lt;p&gt;Subscribe today for ultimate peace of mind!&lt;/p&gt;&lt;/div&gt;</source>
         <target state="translated">&lt;div&gt;&lt;p&gt;我想给您一个代码，将给您关于HealthTap Prime订购$%{amount}的减免，这是一个令人兴奋的新的数字健康服务，给您与顶级医生24/7全天候通过视频，语音或文字聊天的无限制的在线咨询&lt;/p&gt; &lt;p&gt; 使用我的优惠码%{promo_code}，并得到$%{amount}的积分来减免您的HealthTap Prime订购费用！
-&lt;/p&gt;&lt;p&gt;使用HealthTap Prime，您还可以获得：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;完全的放心，因为您可以在任何夜间或白天对任何问题随时咨询医生&lt;/li&gt;&lt;li&gt;通过HealthTap的免费服务提出的任何健康问题的优先答案&lt;/li&gt;&lt;li&gt;只为您定制的健康清单和小贴士&lt;/li&gt;&lt;li&gt;无限访问世界领先的医生创建的健康信息的知识库&lt;/li&gt;&lt;li&gt;完全保密，采用HIPAA安全系统，保护您的隐私&lt;/ul&gt;&lt;p&gt;立即订购以获得最终的安心！&lt;/p&gt;&lt;/div&gt;</target>
+&lt;/p&gt;&lt;p&gt;使用HealthTap Prime，您还可以获得：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;完全的安心，因为您可以在任何夜间或白天对任何问题随时咨询医生&lt;/li&gt;&lt;li&gt;通过HealthTap的免费服务提出的任何健康问题的优先答案&lt;/li&gt;&lt;li&gt;只为您定制的健康清单和小贴士&lt;/li&gt;&lt;li&gt;无限访问世界领先的医生创建的健康信息的知识库&lt;/li&gt;&lt;li&gt;完全保密，采用HIPAA安全系统，保护您的隐私&lt;/ul&gt;&lt;p&gt;立即订购以获得最终的安心！&lt;/p&gt;&lt;/div&gt;</target>
       </trans-unit>
       <trans-unit id="514" resname="r501921449" restype="string" datatype="ruby">
         <source>A gift for you: Use code %{promo_code} and get $%{amount} off a subscription to HealthTap Prime for unlimited live doctor consults 24/7!</source>
@@ -3194,7 +3194,7 @@
     <body>
       <trans-unit id="697" resname="Prime Credits:" restype="string" datatype="html">
         <source>Prime Credits:</source>
-        <target state="translated">主要银行卡：</target>
+        <target state="translated">Prime余额：</target>
       </trans-unit>
     </body>
   </file>
@@ -3314,7 +3314,7 @@
     <body>
       <trans-unit id="750" resname="Ask {span_tag_start}clinicians{span_tag_end}" restype="string" datatype="javascript">
         <source>Ask {span_tag_start}clinicians{span_tag_end}</source>
-        <target state="translated">询问{span_tag_start}临床医生{span_tag_end}</target>
+        <target state="translated">询问{span_tag_start}医师{span_tag_end}</target>
       </trans-unit>
       <trans-unit id="751" resname="Ask {span_tag_start}doctors{span_tag_end}" restype="string" datatype="javascript">
         <source>Ask {span_tag_start}doctors{span_tag_end}</source>
@@ -3322,7 +3322,7 @@
       </trans-unit>
       <trans-unit id="752" resname="What would you like to ask our clinicians?" restype="string" datatype="javascript">
         <source>What would you like to ask our clinicians?</source>
-        <target state="translated">您希望询问我们的临床医生吗？</target>
+        <target state="translated">您希望询问我们的医师吗？</target>
       </trans-unit>
     </body>
   </file>

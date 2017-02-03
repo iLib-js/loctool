@@ -85,7 +85,7 @@
         <source>Create a Tip
     &lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target state="translated">创建一则小贴士
-    &lt;span class="sub_title"&gt;用100个字符帮助数百万人。通知，启发，激励。&lt;/span&gt;</target>
+    &lt;span class="sub_title"&gt;用100个字符帮助数百万人。告知，启发，激励。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -198,7 +198,7 @@
           &lt;span class="good"&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
           &lt;span class="bad"&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?
         &lt;/span&gt;</source>
-        <target state="translated">请同时使用药物的商标名和通用名称，尤其当您不在美国或问及不常见的药物时。&lt;a onclick=”$(&amp;apos;#ex6&amp;apos;).toggle();” class=’exampleToggle’ id=’h6’&gt;显示范例&lt;/a&gt;&lt;br&gt;
+        <target state="translated">请同时使用药物的商标名和通用（仿制药）名称，尤其当您不在美国或问及不常见的药物时。&lt;a onclick=”$(&amp;apos;#ex6&amp;apos;).toggle();” class=’exampleToggle’ id=’h6’&gt;显示范例&lt;/a&gt;&lt;br&gt;
         &lt;span id=’ex6’ class=’guidelineEx hide’&gt;
           &lt;span class=”good”&gt;好：&lt;/span&gt;我5岁大的儿子，55磅，正在发烧。他服用5ml的泰诺（对乙酰氨基酚120mg / 5ml），但还在发烧。体重和年龄这么大的孩子可以服用更大剂量的泰诺吗？&lt;br&gt;
           &lt;span class=”bad”&gt;差:&lt;/span&gt;我的儿子5岁，体重55，有一点发烧。已服用过泰诺但还在发烧。服用更多泰诺吗？&lt;/span&gt;</target>
@@ -211,7 +211,7 @@
         &lt;/span&gt;</source>
         <target state="translated">尽量避免提问一些医生回答“是”或者“不是”的问题。&lt;a onclick=”$(&amp;apos;#ex7&amp;apos;).toggle();” class=’exampleToggle’ id=’h7’&gt;显示范例&lt;/a&gt;&lt;br&gt;
         &lt;span id=’ex7’ class=’guidelineEx hide’&gt;
-          &lt;span class=”good”&gt;好：&lt;/span&gt;抗生素如何在年轻的学龄儿童中起作用？&lt;br&gt;
+          &lt;span class=”good”&gt;好：&lt;/span&gt;抗生素如何在年幼的学龄儿童中起作用？&lt;br&gt;
           &lt;span class=”bad”&gt;差：&lt;/span&gt;抗生素对儿童起作用吗？&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="818" resname="Try to leave opinions out.&lt;a onclick=&quot;$(&amp;apos;#ex8&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Are those anti-vaccine folks completely clueless or just in denial?&lt;/span&gt;" restype="string" datatype="html">
@@ -220,7 +220,7 @@
           &lt;span class="good"&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
           &lt;span class="bad"&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?
         &lt;/span&gt;</source>
-        <target state="translated">尝试留下意见&lt;a onclick=”$(&amp;apos;#ex8&amp;apos;).toggle();” class=’exampleToggle’ id=’h8’&gt;显示范例&lt;/a&gt;&lt;br&gt;
+        <target state="translated">尝试不要发表意见&lt;a onclick=”$(&amp;apos;#ex8&amp;apos;).toggle();” class=’exampleToggle’ id=’h8’&gt;显示范例&lt;/a&gt;&lt;br&gt;
         &lt;span id=’ex8’ class=’guidelineEx hide’&gt;
           &lt;span class=”good”&gt;好：&lt;/span&gt; 为什么有些人会抵抗疫苗，明明疫苗可以用来预防疾病？&lt;br&gt;
           &lt;span class="bad"&gt;差：&lt;/span&gt;那些反疫苗的人是彻底地不懂还是只是拒绝接受？&lt;/span&gt;</target>
@@ -242,10 +242,10 @@
           &lt;span class="good"&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
           &lt;span class="bad"&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
         &lt;/span&gt;</source>
-        <target state="translated">不要假设个人的历史知识。HealthTap的医生经常不会看到您以前的问题。&lt;a onclick=”$(&amp;apos;#ex10&amp;apos;).toggle();” class=’exampleToggle’ id=’h10’&gt;显示范例&lt;/a&gt;&lt;br&gt;
+        <target state="translated">不要假设个人的病史知识。HealthTap的医生经常不会看到您以前的问题。&lt;a onclick=”$(&amp;apos;#ex10&amp;apos;).toggle();” class=’exampleToggle’ id=’h10’&gt;显示范例&lt;/a&gt;&lt;br&gt;
         &lt;span id=’ex10’ class=’guidelineEx hide’&gt;
           &lt;span class=”good”&gt;好：&lt;/span&gt; 我两岁的儿子两个月前得了耳管炎，现在还发烧了，右耳会流脓。这正常吗？&lt;br&gt;
-          &lt;span class=”bad”&gt;差：&lt;/span&gt;  这种症状已经持续两天，也一直有浓流出来吗？&lt;/span&gt;</target>
+          &lt;span class=”bad”&gt;差：&lt;/span&gt;  这种症状已经持续两天，也一直有脓流出来吗？&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="821" resname="To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).&lt;a onclick=&quot;$(&amp;apos;#ex11&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.&lt;/span&gt;" restype="string" datatype="html">
         <source>To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).  &lt;a onclick="$(&amp;apos;#ex11&amp;apos;).toggle();" class='exampleToggle' id='h11'&gt;Show examples&lt;/a&gt;&lt;br&gt;
@@ -267,7 +267,7 @@
         <target state="translated">避免使用太多的缩写，因为可能导致混淆&lt;a onclick=”$(&amp;apos;#ex12&amp;apos;).toggle();” class=’exampleToggle’ id=’h12’&gt;显示范例&lt;/a&gt;&lt;br&gt;
         &lt;span id=’ex12’ class=’guidelineEx hide’&gt;
           &lt;span class=”good”&gt;好：&lt;/span&gt;如果您没有来生理周期，您是如何知道您怀孕了？&lt;br&gt;
-          &lt;span class=”bad”&gt;差：&lt;/span&gt;如果您没有正常的生理周期，您是如何知道您怀孕了？&lt;/span&gt;</target>
+          &lt;span class=”bad”&gt;差：&lt;/span&gt;如果您没有周期，如何知道怀了？&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="823" resname="Ask in English. This is the language commonly used by doctors on HealthTap.&lt;a onclick=&quot;$(&amp;apos;#ex13&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I pruned some trees last weekend and my arm has been hurting for 2 days. Could this be the cause?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Porque mi brazo me duele mucho esta semana?&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick="$(&amp;apos;#ex13&amp;apos;).toggle();" class='exampleToggle' id='h13'&gt;Show examples&lt;/a&gt;&lt;br&gt;
@@ -278,7 +278,7 @@
         <target state="translated">用英语询问。这是HealthTap医生的常用语言。&lt;a onclick=”$(&amp;apos;#ex13&amp;apos;).toggle();” class=’exampleToggle’ id=’h13’&gt;显示范例&lt;/a&gt;&lt;br&gt;
         &lt;span id=’ex13’ class=’guidelineEx hide’&gt;
           &lt;span class=”good”&gt;好：&lt;/span&gt;我上周末修剪了一些树木，我的手臂已经疼了2天。这可能由什么引起？&lt;br&gt;
-          &lt;span class=”bad”&gt;差：&lt;/span&gt;因为我的胳膊很疼吗？&lt;/span&gt;</target>
+          &lt;span class=”bad”&gt;差：&lt;/span&gt;Porque mi brazo me duele mucho esta semana?&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -355,7 +355,7 @@
     <body>
       <trans-unit id="831" resname="Born on" restype="string" datatype="html">
         <source>Born on</source>
-        <target state="translated">出生</target>
+        <target state="translated">出生于</target>
       </trans-unit>
     </body>
   </file>
@@ -363,7 +363,7 @@
     <body>
       <trans-unit id="832" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
         <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
-        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的乐于助人和医者评分。</target>
+        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的有助度和医者评分。</target>
       </trans-unit>
       <trans-unit id="833" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
         <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
@@ -395,7 +395,7 @@
     <body>
       <trans-unit id="838" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
         <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成{start_date}到{end_date}的补偿报告      它还需要一会。当它完成后您会收到一封邮件</target>
+        <target state="translated">正在生成{start_date}到{end_date}的报酬报告      它还需要一会。当它完成后您会收到一封邮件</target>
       </trans-unit>
     </body>
   </file>
@@ -463,7 +463,7 @@
     <body>
       <trans-unit id="892" resname="r864785970" restype="string" datatype="x-haml">
         <source>no</source>
-        <target state="translated">不是</target>
+        <target state="translated">没有</target>
       </trans-unit>
     </body>
   </file>
@@ -505,7 +505,7 @@
       To ensure unbiased doctor evaluations, doctors do not see their colleagues’ existing contributions until after they have entered their own rating. Recommendations cannot be changed once submitted, but after ratings are submitted, doctors can view the ratings of other doctors and comment on these. Both patients and doctors can learn from the RateRx ratings system.   Patients benefit from the collective wisdom shared by these doctors, enabling them to see how different treatments for the same conditions are rated and reviewed. Doctors benefit from their colleagues’ ratings and comments, and are able to interpret them by referring to the contributing doctors’ practice profiles (which show their education and experience, their specialty training, years in practice, DocScore, and their “Known for” topics).&lt;br&gt; &lt;br&gt;
       Comments, which are optional, are often used by doctors to qualify or explain ratings, or to share details of how medications are used for each indication. Comments are available to read and review, do not change the numeric value of the rating. Ratings are based on generic drug names, but brand names are presented to permit doctors to rate specific drugs. Brand names are shown for every generic medication name presented. This study does not differentiate ratings between different brand names for the same medication. The most common medication treatments for each condition are listed for ratings, but doctors are encouraged to add treatments for any indication, ensuring the inclusion of new or novel treatments for each condition. Doctors were instructed to add medications not previously  on the list of standard treatment only if they had experience using the medication to treat the condition at issue and found these medication effective in the treatment of that condition. &lt;br&gt;&lt;br&gt;
     &lt;a class="btn okay"&gt;Okay&lt;/a&gt;</source>
-        <target state="translated">RateRx代表了第一个针对有经验的医生在他们各自的专业领域所使用的治疗特定情况患者的手段的全面性评估。与其他研究在特定的情况下评价治疗有效性不同的是，RateRx希望获得顶级医生深入而长期的实际经验来获取最佳治疗方法。推荐一旦被提交就无法更改，但是在提交打分之后，医生可以查看其它医生的评分并进行评论。患者可以从这种医生集体智慧中受益，让他们能够看到对相同症状的不同治疗方式是如何被评分与评价的。打分是基于药品的通用名称的，但是也会显示品牌名称，准许医生对特定的药品进行评分。该调查不会区分不同品牌的药物对同一种药物治疗方式的评分。&lt;br&gt;&lt;br&gt;
+        <target state="translated">RateRx代表了第一个针对有经验的医生在他们各自的专业领域所使用的治疗特定情况患者的手段的全面性评估。与其他研究在特定的情况下评价治疗有效性不同的是，RateRx希望获得顶级医生深入而长期的实际经验来获取最佳治疗方法。推荐一旦被提交就无法更改，但是在提交打分之后，医生可以查看其它医生的评分并进行评论。患者可以从这种医生集体智慧中受益，让他们能够看到对相同症状的不同治疗方式是如何被评分与评价的。打分是基于药品的通用（仿制药）名称的，但是也会显示品牌名称，准许医生对特定的药品进行评分。该调查不会区分不同品牌的药物对同一种药物治疗方式的评分。&lt;br&gt;&lt;br&gt;
     &lt;a class="btn okay"&gt;好&lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -690,7 +690,7 @@
     &lt;br&gt;&lt;br&gt;
     Please note that the following prescriptions are not currently available via HealthTap Prime: narcotics or DEA controlled substances (Schedule I, II, III, IV), psychiatric or lifestyle medications (such as diet or erectile dysfunction drugs), or medications restricted by individual states.</source>
         <target state="translated">&lt;br&gt;&lt;br&gt;
-    参阅HealthTap &lt;a href="/terms" target="_blank"&gt;使用条款&lt;/a&gt; 对于“HealthTap”，“HealthTap Prime”，“应用程序”和“高级服务”的定义。</target>
+    参阅HealthTap &lt;a href="/terms" target="_blank"&gt;按专科分类的回答&lt;/a&gt; 对于“HealthTap”，“HealthTap Prime”，“应用程序”和“高级服务”的定义。</target>
       </trans-unit>
     </body>
   </file>
@@ -749,7 +749,7 @@
       <trans-unit id="930" resname="Already have a HealthTap account?&lt;a class=&quot;btn blue&quot; href=&quot;#login&quot;&gt;Log In&lt;/a&gt;" restype="string" datatype="html">
         <source>Already have a HealthTap account?
     &lt;a class="btn blue" href="#login"&gt;Log In&lt;/a&gt;</source>
-        <target state="translated">&lt;a class="btn blue" href="#login"&gt;登陆&lt;/a&gt;</target>
+        <target state="translated">&lt;a class="btn blue" href="#login"&gt;登录&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="931" resname="Doctor&lt;span class=&quot;instruction&quot;&gt;(requires valid U.S. medical professional license)&lt;/span&gt;" restype="string" datatype="html">
         <source>Doctor
@@ -765,7 +765,7 @@
         and
         &lt;a class="childBrowser_link" href="/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;Privacy Policy&lt;/a&gt;</source>
         <target state="translated">通过注册，您同意我们的
-        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
+        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
         和
         &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;</target>
       </trans-unit>
@@ -834,7 +834,7 @@
     <body>
       <trans-unit id="938" resname="The Top Doctors Competition has ended. The Top Doctor Competition awards that visitors to your Virtual Practice see are shown&lt;a href=&quot;/#experts/&lt;%= App.user.id %&gt;/about&quot;&gt;here&lt;/a&gt;." restype="string" datatype="html">
         <source>The Top Doctors Competition has ended.  The Top Doctor Competition awards that visitors to your Virtual Practice see are shown &lt;a href="/#experts/&lt;%= App.user.id %&gt;/about"&gt;here&lt;/a&gt;.</source>
-        <target state="translated">顶级医生竞赛已结束顶级医生竞赛奖显示您的在线诊疗的访客 &lt;a href="/#experts/&lt;%= App.user.id %&gt;/about"&gt;这里&lt;/a&gt;.</target>
+        <target state="translated">顶级医生竞赛已结束。顶级医生竞赛奖显示您的在线诊疗的访客 &lt;a href="/#experts/&lt;%= App.user.id %&gt;/about"&gt;这里&lt;/a&gt;.</target>
       </trans-unit>
       <trans-unit id="939" resname="Leaderboard&lt;span class=&quot;last-updated&quot;&gt;as of 1AM PST &lt;%= today_str %&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Leaderboard
@@ -850,14 +850,14 @@
         <source>Now become a "Top Concierge Doctor"&lt;br&gt;
           and do just &lt;%= 25 - no_of_consults %&gt; more &lt;%= no_of_consults == 24 ? 'consult' : 'consults' %&gt; &lt;br&gt;
           &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? ' day' : ' days') %&gt; left in the competition!&lt;/b&gt;</source>
-        <target state="translated">立即成为一名 "知名特邀医生"&lt;br&gt;
+        <target state="translated">立即成为一名 "顶级贵宾室医生"&lt;br&gt;
           和只需要做 &lt;%= 25 - no_of_consults %&gt; 更多 &lt;%= no_of_consults == 24 ?'咨询' :'咨询' %&gt; &lt;br&gt;
           &lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ?' 天' :' days') %&gt; 保持竞争力！&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="941" resname="Now become&lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt;&quot;Top Concierge Doctor&quot; Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? &apos;&amp;nbsp;day&apos; : &apos;&amp;nbsp;days&apos;) %&gt; left in the competition!&lt;/b&gt;" restype="string" datatype="html">
         <source>Now become &lt;b&gt;&lt;i&gt;the&lt;/i&gt;&lt;/b&gt; "Top Concierge Doctor"
           Winner&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ? '&amp;nbsp;day' : '&amp;nbsp;days') %&gt; left in the competition!&lt;/b&gt;</source>
-        <target state="translated">立即成为 &lt;b&gt;&lt;i&gt;&lt;/i&gt;&lt;/b&gt; "知名特邀医生"
+        <target state="translated">立即成为 &lt;b&gt;&lt;i&gt;&lt;/i&gt;&lt;/b&gt; "顶级贵宾室医生"
           胜利者&amp;nbsp;&amp;mdash;&amp;nbsp;&lt;b&gt;&lt;%= no_of_days_left + (no_of_days_left == 1 ?'&amp;nbsp;天' :'&amp;nbsp;days') %&gt; 保持竞争力！&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="942" resname="&amp;rdquo;Have questions? Join me for a brief informational webinar.&lt;span class=&quot;no-wrap&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://tiny.cc/concierge_webinar&quot;&gt;Sign up here&amp;nbsp;&amp;rsaquo;&lt;/a&gt;&amp;ldquo;&lt;/span&gt;" restype="string" datatype="html">
@@ -926,7 +926,7 @@
     <body>
       <trans-unit id="949" resname="Let HealthTap know where to reach you (+&lt;%= ht.completionPercentages.mailing %&gt;&amp;#37;)&lt;span class=&quot;sub-text&quot;&gt;This information will not be shared with any third parties&lt;/span&gt;" restype="string" datatype="html">
         <source>Let HealthTap know where to reach you  (+&lt;%= ht.completionPercentages.mailing %&gt;&amp;#37;) &lt;span class="sub-text"&gt;This information will not be shared with any third parties&lt;/span&gt;</source>
-        <target state="translated">告诉HealthTap您达到的  (+&lt;%= ht.completionPercentages.mailing %&gt;&amp;#37;) &lt;span class="sub-text"&gt;这个信息不会分享给任何第三方机构&lt;/span&gt;</target>
+        <target state="translated">告诉HealthTap如何联络您  (+&lt;%= ht.completionPercentages.mailing %&gt;&amp;#37;) &lt;span class="sub-text"&gt;这个信息不会分享给任何第三方机构&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -1128,7 +1128,7 @@
       <trans-unit id="975" resname="Nurturing&lt;a id=&quot;111058168&quot; topic=&quot;Nurturing&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
         <source>Nurturing
       &lt;a id="111058168" topic="Nurturing" class="addKnownFor_popup"&gt;+Add&lt;/a&gt;</source>
-        <target state="translated">培养
+        <target state="translated">培养的
       &lt;a id="111058168" topic="Dedicated" class="addKnownFor_popup"&gt;+添加&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="976" resname="Flexible&lt;a id=&quot;111058169&quot; topic=&quot;Flexible&quot; class=&quot;addKnownFor_popup&quot;&gt;+Add&lt;/a&gt;" restype="string" datatype="html">
@@ -1221,7 +1221,7 @@
         <source>Create a Tip
     &lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target state="translated">创建一则小贴士
-    &lt;span class="sub_title"&gt;用100个字符帮助数百万人。通知，启发，激励。&lt;/span&gt;</target>
+    &lt;span class="sub_title"&gt;用100个字符帮助数百万人。告知，启发，激励。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -1282,8 +1282,8 @@
       <trans-unit id="990" resname="Your DocScore is a reflection of the quality and helpfulness of your answers, and your level of engagement on HealthTap.&lt;br&gt;&lt;a class=&quot;scroll-to&quot; data-target=&quot;.pointsDetails&quot;&gt;Discover ways to improve your DocScore »&lt;/a&gt;" restype="string" datatype="html">
         <source>Your DocScore is a reflection of the quality and helpfulness of your answers, and your level of engagement on HealthTap.&lt;br&gt;
                 &lt;a class="scroll-to" data-target=".pointsDetails"&gt;Discover ways to improve your DocScore »&lt;/a&gt;</source>
-        <target state="translated">您的DocScore是反映您的回答的质量和乐于助人，以及您在HealthTap上的参与级别。&lt;br&gt;
-                &lt;a class="scroll-to" data-target=".pointsDetails"&gt;发现如何提高您DocScore的方法 »&lt;/a&gt;</target>
+        <target state="translated">您的医者评分是反映您的回答的质量和有助度，以及您在HealthTap上的参与级别。&lt;br&gt;
+                &lt;a class="scroll-to" data-target=".pointsDetails"&gt;发现如何提高您的医者评分的方法 »&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -1296,7 +1296,7 @@
                 &lt;a class="childBrowser_link" href="/pages/privacy_sharing" target="_blank"&gt;Privacy Policy&lt;/a&gt;,
                 and you confirm that you're 16 years old or over.</source>
         <target state="translated">通过注册，您同意我们的
-                &lt;a class="childBrowser_link" href="/pages/terms" target="_blank"&gt;使用条款&lt;/a&gt;
+                &lt;a class="childBrowser_link" href="/pages/terms" target="_blank"&gt;按专科分类的回答&lt;/a&gt;
                 和
                 &lt;a class="childBrowser_link" href="/pages/privacy_sharing" target="_blank"&gt;隐私政策&lt;/a&gt;,
                 并确认您已满16岁或以上。</target>
@@ -1339,11 +1339,11 @@
             and
             &lt;a class="childBrowser_link" href="/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;Privacy Policy&lt;/a&gt;,
             and you confirm that you're 16 years old or over.</source>
-        <target state="translated">已经是会员？&lt;a href=”#login”登陆&gt;Log in&lt;/a&gt;
+        <target state="translated">已经是会员？&lt;a href=”#login”登录&gt;Log in&lt;/a&gt;
             &lt;br&gt;
             &lt;br&gt;
             通过注册，您同意我们的
-            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
+            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
             和
             &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;,
             并确认您已满16岁或以上。</target>
@@ -1366,7 +1366,7 @@
     &lt;a href="http://www3.imperial.ac.uk/schisto" target="_blank"&gt;Schistosomiasis Control Initiative (SCI)&lt;/a&gt;,
     &lt;a href="http://www.map.org" target="_blank"&gt;MAP International&lt;/a&gt;, or
     &lt;a href="http://www.gpfd.org" target="_blank"&gt;Global Partners for Development&lt;/a&gt;.</source>
-        <target state="translated">&lt;a href=”http://www.operationsmile.org” target=”_blank”&gt;操作微笑&lt;/a&gt;,
+        <target state="translated">&lt;a href=”http://www.operationsmile.org” target=”_blank”&gt;微笑行动&lt;/a&gt;,
     &lt;a href=”http://www.doctorswithoutborders.org” target=”_blank”&gt;无国界医生组织&lt;/a&gt;,
     &lt;a href=”http://www.redcross.org” target=”_blank”&gt;美国红十字会&lt;/a&gt;,
     &lt;a href=”http://ww5.komen.org” target=”_blank”&gt;Susan G. Komen为治愈&lt;/a&gt;,
@@ -1393,7 +1393,7 @@
     &lt;a href="http://www3.imperial.ac.uk/schisto" target="_blank"&gt;Schistosomiasis Control Initiative (SCI)&lt;/a&gt;,
     &lt;a href="http://www.map.org" target="_blank"&gt;MAP International&lt;/a&gt;, or
     &lt;a href="http://www.gpfd.org" target="_blank"&gt;Global Partners for Development&lt;/a&gt;.</source>
-        <target state="translated">&lt;a href=”http://www.operationsmile.org” target=”_blank”&gt;操作微笑&lt;/a&gt;,
+        <target state="translated">&lt;a href=”http://www.operationsmile.org” target=”_blank”&gt;微笑行动&lt;/a&gt;,
     &lt;a href=”http://www.doctorswithoutborders.org” target=”_blank”&gt;无国界医生组织&lt;/a&gt;,
     &lt;a href=”http://www.redcross.org” target=”_blank”&gt;美国红十字会&lt;/a&gt;,
     &lt;a href=”http://ww5.komen.org” target=”_blank”&gt;Susan G. Komen为治愈&lt;/a&gt;,
@@ -1420,7 +1420,7 @@
     &lt;a href="http://www3.imperial.ac.uk/schisto" target="_blank"&gt;Schistosomiasis Control Initiative (SCI)&lt;/a&gt;,
     &lt;a href="http://www.map.org" target="_blank"&gt;MAP International&lt;/a&gt;, or
     &lt;a href="http://www.gpfd.org" target="_blank"&gt;Global Partners for Development&lt;/a&gt;.</source>
-        <target state="translated">&lt;a href=”http://www.operationsmile.org” target=”_blank”&gt;操作微笑&lt;/a&gt;,
+        <target state="translated">&lt;a href=”http://www.operationsmile.org” target=”_blank”&gt;微笑行动&lt;/a&gt;,
     &lt;a href=”http://www.doctorswithoutborders.org” target=”_blank”&gt;无国界医生组织&lt;/a&gt;,
     &lt;a href=”http://www.redcross.org” target=”_blank”&gt;美国红十字会&lt;/a&gt;,
     &lt;a href=”http://ww5.komen.org” target=”_blank”&gt;Susan G. Komen为治愈&lt;/a&gt;,
@@ -1458,7 +1458,7 @@
             &lt;a href="mailto:expertsupport@healthtap.com"&gt;expertsupport@healthtap.com&lt;/a&gt;
             or (650) 644-1833.</source>
         <target state="translated">通过注册，您同意我们的
-        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
+        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
         和
         &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;如果您有任何问题，给我们发送邮件或电话联系我们
             &lt;a href=”mailto:expertsupport@healthtap.com”&gt;expertsupport@healthtap.com&lt;/a&gt;
@@ -1470,7 +1470,7 @@
     <body>
       <trans-unit id="1001" resname="These files will always be private and secure. We take this stuff very, very seriously.&lt;br&gt;&lt;a class=&quot;extLink&quot; href=&quot;#pages/privacy_sharing&quot;&gt;See our privacy statement&lt;/a&gt;." restype="string" datatype="html">
         <source>These files will always be private and secure.  We take this stuff very, very seriously. &lt;br&gt;&lt;a class="extLink" href="#pages/privacy_sharing"&gt;See our privacy statement&lt;/a&gt;.</source>
-        <target state="translated">我们会一直保持这些文件的隐私性和安全性我们非常非常严肃地看待这些文件&lt;br&gt;&lt;a class="extLink" href="#pages/privacy_sharing"&gt;查阅我们的隐私声明&lt;/a&gt;.</target>
+        <target state="translated">我们会一直保持这些文件的隐私性和安全性。我们非常非常严肃地看待这些文件&lt;br&gt;&lt;a class="extLink" href="#pages/privacy_sharing"&gt;查阅我们的隐私声明&lt;/a&gt;.</target>
       </trans-unit>
     </body>
   </file>
@@ -1493,7 +1493,7 @@
             &lt;a class="childBrowser_link" href="/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1"&gt;Privacy Policy&lt;/a&gt;,
             and you confirm that you're 16 years old or over.</source>
         <target state="translated">通过注册，您同意我们的
-            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
+            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
             和
             &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;,
             并确认您已满16岁或以上。</target>
@@ -1505,7 +1505,7 @@
       <trans-unit id="1004" resname="Already a member?&lt;a href=&quot;#login&quot;&gt;Log in&lt;/a&gt;" restype="string" datatype="html">
         <source>Already a member?
                 &lt;a href="#login"&gt;Log in&lt;/a&gt;</source>
-        <target state="translated">已经是会员？&lt;a href=”#login”&gt;登陆&lt;/a&gt;</target>
+        <target state="translated">已经是会员？&lt;a href=”#login”&gt;登录&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -1522,7 +1522,7 @@
     <body>
       <trans-unit id="1006" resname="By signing up, you agree to our&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms&quot;&gt;Terms of Use&lt;/a&gt;and&lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing&quot;&gt;Privacy Policy&lt;/a&gt;, and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
         <source>By signing up, you agree to our             &lt;a class="childBrowser_link" href="/pages/terms"&gt;Terms of Use&lt;/a&gt;             and             &lt;a class="childBrowser_link" href="/pages/privacy_sharing"&gt;Privacy Policy&lt;/a&gt;,             and you confirm that you're 16 years old or over.</source>
-        <target state="translated">通过注册，您同意我们的            &lt;a class="childBrowser_link" href="/pages/terms"&gt;使用条款&lt;/a&gt;             和             &lt;a class="childBrowser_link" href="/pages/privacy_sharing"&gt;隐私政策&lt;/a&gt;,             和您确认您已满16周岁或以上。</target>
+        <target state="translated">通过注册，您同意我们的            &lt;a class="childBrowser_link" href="/pages/terms"&gt;按专科分类的回答&lt;/a&gt;             和             &lt;a class="childBrowser_link" href="/pages/privacy_sharing"&gt;隐私政策&lt;/a&gt;,             和您确认您已满16周岁或以上。</target>
       </trans-unit>
     </body>
   </file>
@@ -1552,7 +1552,7 @@
       <trans-unit id="1009" resname="Already a member?&lt;a href=&quot;#login&quot;&gt;Log in &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Already a member?
                   &lt;a href="#login"&gt;Log in &amp;raquo;&lt;/a&gt;</source>
-        <target state="translated">已经是会员？&lt;a href=”#login”&gt;登陆&amp;raquo;&lt;/a&gt;</target>
+        <target state="translated">已经是会员？&lt;a href=”#login”&gt;登录&amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="1010" resname="By signing up, you agree to our&lt;a class=&quot;childBrowser_link&quot; target=&quot;_blank&quot; href=&quot;/pages/terms&quot;&gt;Terms of Use&lt;/a&gt;and&lt;a class=&quot;childBrowser_link&quot; target=&quot;_blank&quot; href=&quot;/pages/privacy_sharing&quot;&gt;Privacy Policy&lt;/a&gt;, and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
         <source>By signing up, you agree to our
@@ -1561,7 +1561,7 @@
               &lt;a class="childBrowser_link" target="_blank" href="/pages/privacy_sharing"&gt;Privacy Policy&lt;/a&gt;,
               and you confirm that you're 16 years old or over.</source>
         <target state="translated">通过注册，您同意我们的
-              &lt;a class=”childBrowser_link” target=”_blank” href=”/pages/terms”&gt;使用条款&lt;/a&gt;
+              &lt;a class=”childBrowser_link” target=”_blank” href=”/pages/terms”&gt;按专科分类的回答&lt;/a&gt;
               和
               &lt;a class=”childBrowser_link” target=”_blank” href=”/pages/privacy_sharing”&gt;隐私政策&lt;/a&gt;,
               并确认您已满16岁或以上。</target>
@@ -1573,8 +1573,8 @@
       <trans-unit id="1011" resname="Featured&lt;span class=&quot;new&quot;&gt;New!&lt;/span&gt;" restype="string" datatype="html">
         <source>Featured
     &lt;span class="new"&gt;New!&lt;/span&gt;</source>
-        <target state="translated">特色
-    &lt;span class="new"&gt;新的！&lt;/span&gt;</target>
+        <target state="translated">精选
+    &lt;span class="new"&gt;新！&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -1614,7 +1614,7 @@
     <body>
       <trans-unit id="1016" resname="Consult  {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in practice:" restype="string" datatype="javascript">
         <source>Consult  {span_tag_start}{value}{span_tag_end}, a {specialist_name} with {years} years in practice:</source>
-        <target state="translated">咨询 {span_tag_start}{value}{span_tag_end}, 一个 {specialist_name} 有{years}多年诊疗：</target>
+        <target state="translated">咨询 {span_tag_start}{value}{span_tag_end}, 一个 {specialist_name} 有{years}年诊疗经验：</target>
       </trans-unit>
     </body>
   </file>

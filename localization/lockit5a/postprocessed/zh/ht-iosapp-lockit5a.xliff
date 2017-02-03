@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="You&apos;re now following %@! " restype="string" datatype="x-objective-c">
         <source>You're now following %@!</source>
-        <target>您已关注%@！</target>
+        <target>您现在关注%@！</target>
       </trans-unit>
     </body>
   </file>
@@ -477,7 +477,7 @@
       </trans-unit>
       <trans-unit id="167" resname="Conditions related to " restype="string" datatype="x-objective-c">
         <source>Conditions related to</source>
-        <target>相关条件</target>
+        <target>相关健康状况</target>
       </trans-unit>
       <trans-unit id="168" resname="Risk factors of " restype="string" datatype="x-objective-c">
         <source>Risk factors of</source>
@@ -505,7 +505,7 @@
       </trans-unit>
       <trans-unit id="174" resname="Conditions treated by " restype="string" datatype="x-objective-c">
         <source>Conditions treated by</source>
-        <target>条件处理</target>
+        <target>健康状况处理</target>
       </trans-unit>
       <trans-unit id="175" resname="Medical devices used in " restype="string" datatype="x-objective-c">
         <source>Medical devices used in</source>
@@ -513,7 +513,7 @@
       </trans-unit>
       <trans-unit id="176" resname="Conditions screened by " restype="string" datatype="x-objective-c">
         <source>Conditions screened by</source>
-        <target>筛选的条件</target>
+        <target>筛选的健康状况</target>
       </trans-unit>
       <trans-unit id="177" resname="Procedures for " restype="string" datatype="x-objective-c">
         <source>Procedures for</source>
@@ -521,7 +521,7 @@
       </trans-unit>
       <trans-unit id="178" resname="Conditions prevented by " restype="string" datatype="x-objective-c">
         <source>Conditions prevented by</source>
-        <target>预防的条件</target>
+        <target>预防的健康状况</target>
       </trans-unit>
       <trans-unit id="179" resname=" include:" restype="string" datatype="x-objective-c">
         <source>include:</source>
@@ -756,7 +756,7 @@
     <body>
       <trans-unit id="225" resname=" Video or text chat securely with \n top doctors right away \n" restype="string" datatype="x-objective-c">
         <source>Video or text chat securely with \n top doctors right away \n</source>
-        <target>立即与 \n知名医生进行安全的视频和问题聊天 \n</target>
+        <target>立即与 \n顶级医生进行安全的视频和问题聊天 \n</target>
       </trans-unit>
     </body>
   </file>
@@ -808,7 +808,7 @@
     <body>
       <trans-unit id="245" resname="oKS-Pc-4XA.text" restype="string" datatype="x-xib">
         <source>Prescriptions, checklists, referrals, tips &amp; news</source>
-        <target>处方、清单、转介、小贴士和新闻</target>
+        <target>处方、清单、转诊、小贴士和新闻</target>
         <note annotates="source">Class = "UILabel"; text = "Prescriptions, checklists, referrals, tips &amp; news "; ObjectID = "oKS-Pc-4XA";</note>
       </trans-unit>
     </body>
@@ -914,7 +914,7 @@
     <body>
       <trans-unit id="261" resname="LiQ-UF-90s.text" restype="string" datatype="x-xib">
         <source>We're sorry to see you leave!</source>
-        <target>很抱歉看到您离开！</target>
+        <target>很遗憾看到您离开！</target>
         <note annotates="source">Class = "UILabel"; text = "We're sorry to see you leave!"; ObjectID = "LiQ-UF-90s";</note>
       </trans-unit>
       <trans-unit id="262" resname="PuE-j3-ZkW.text" restype="string" datatype="x-xib">
@@ -934,7 +934,7 @@
       </trans-unit>
       <trans-unit id="266" resname="jG8-eb-QdW.text" restype="string" datatype="x-xib">
         <source>We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)</source>
-        <target>我们致力于照顾您的健康请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:)</target>
+        <target>我们致力于照顾您的健康，请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:)</target>
         <note annotates="source">Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)"; ObjectID = "jG8-eb-QdW";</note>
       </trans-unit>
       <trans-unit id="268" resname="nbQ-bS-Vtz.text" restype="string" datatype="x-xib">
@@ -958,7 +958,7 @@
       </trans-unit>
       <trans-unit id="271" resname="8hE-Yi-u4O.text" restype="string" datatype="x-xib">
         <source>We're sorry to see you leave!</source>
-        <target>很抱歉看到您离开！</target>
+        <target>很遗憾看到您离开！</target>
         <note annotates="source">Class = "UILabel"; text = "We're sorry to see you leave!"; ObjectID = "8hE-Yi-u4O";</note>
       </trans-unit>
       <trans-unit id="274" resname="HWn-bN-Mn5.text" restype="string" datatype="x-xib">
@@ -978,12 +978,12 @@
       </trans-unit>
       <trans-unit id="277" resname="bsp-Xt-0j0.text" restype="string" datatype="x-xib">
         <source>We're dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We'll respond to you and do our best to make you happy as soon as possible! :)</source>
-        <target>我们致力于照顾您的健康请考虑给我们发送反馈而不是降级我们会尽快回复您并做最大的努力使您开心！:)</target>
+        <target>我们致力于照顾您的健康，请考虑给我们发送反馈而不是降级我们会尽快回复您并做最大的努力使您开心！:)</target>
         <note annotates="source">Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider sending us feedback instead of downgrading. We'll respond to you and do our best to make you happy as soon as possible! :)"; ObjectID = "bsp-Xt-0j0";</note>
       </trans-unit>
       <trans-unit id="278" resname="mWx-qB-R1d.text" restype="string" datatype="x-xib">
         <source>We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)</source>
-        <target>我们致力于照顾您的健康请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:)</target>
+        <target>我们致力于照顾您的健康，请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:)</target>
         <note annotates="source">Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)"; ObjectID = "mWx-qB-R1d";</note>
       </trans-unit>
       <trans-unit id="279" resname="roc-jA-Xop.normalTitle" restype="string" datatype="x-xib">
@@ -1075,7 +1075,7 @@
     <body>
       <trans-unit id="295" resname="6dm-aD-7F0.text" restype="string" datatype="x-xib">
         <source>Helpful and personalized answers, tips, news, and app recommendations from top doctors!</source>
-        <target>从知名医生那里得到有帮助的和专属于您的回答，小贴士，新闻和应用程序建议!</target>
+        <target>从顶级医生那里得到有帮助的和专属于您的回答，小贴士，新闻和应用程序建议!</target>
         <note annotates="source">Class = "UILabel"; text = "Helpful and personalized answers, tips, news, and app recommendations from top doctors! "; ObjectID = "6dm-aD-7F0";</note>
       </trans-unit>
       <trans-unit id="296" resname="pWe-o3-Qtc.text" restype="string" datatype="x-xib">
@@ -1089,7 +1089,7 @@
     <body>
       <trans-unit id="297" resname="6dm-aD-7F0.text" restype="string" datatype="x-xib">
         <source>Helpful and personalized answers, tips, news, and app recommendations from top doctors!</source>
-        <target>从知名医生那里得到有帮助的和专属于您的回答，小贴士，新闻和应用程序建议!</target>
+        <target>从顶级医生那里得到有帮助的和专属于您的回答，小贴士，新闻和应用程序建议!</target>
         <note annotates="source">Class = "UILabel"; text = "Helpful and personalized answers, tips, news, and app recommendations from top doctors! "; ObjectID = "6dm-aD-7F0";</note>
       </trans-unit>
       <trans-unit id="298" resname="pWe-o3-Qtc.text" restype="string" datatype="x-xib">
@@ -1249,7 +1249,7 @@
       </trans-unit>
       <trans-unit id="319" resname="cOY-aw-Sc0.text" restype="string" datatype="x-xib">
         <source>We're sorry to see you leave!</source>
-        <target>很抱歉看到您离开！</target>
+        <target>很遗憾看到您离开！</target>
         <note annotates="source">Class = "UILabel"; text = "We're sorry to see you leave!"; ObjectID = "cOY-aw-Sc0";</note>
       </trans-unit>
     </body>
@@ -1268,12 +1268,12 @@
       </trans-unit>
       <trans-unit id="322" resname="aro-gW-23T.text" restype="string" datatype="x-xib">
         <source>We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)</source>
-        <target>我们致力于照顾您的健康请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:)</target>
+        <target>我们致力于照顾您的健康，请不要停用账户，告诉我们知道如何可以给您更好的体验。我们会尽快做最大的努力使您开心！:)</target>
         <note annotates="source">Class = "UILabel"; text = "We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We'll do our best to make you happy as soon as possible! :)"; ObjectID = "aro-gW-23T";</note>
       </trans-unit>
       <trans-unit id="323" resname="sG4-kB-Az0.text" restype="string" datatype="x-xib">
         <source>We're sorry to see you leave!</source>
-        <target>很抱歉看到您离开！</target>
+        <target>很遗憾看到您离开！</target>
         <note annotates="source">Class = "UILabel"; text = "We're sorry to see you leave!"; ObjectID = "sG4-kB-Az0";</note>
       </trans-unit>
     </body>
@@ -1351,7 +1351,7 @@
     <body>
       <trans-unit id="336" resname="CL6-OZ-JR6.placeholder" restype="string" datatype="x-xib">
         <source>MM/DD/YYYY</source>
-        <target>MM/DD/YYYY</target>
+        <target>月月/日日/年年年年</target>
         <note annotates="source">Class = "UITextField"; placeholder = "  MM/DD/YYYY"; ObjectID = "CL6-OZ-JR6";</note>
       </trans-unit>
     </body>

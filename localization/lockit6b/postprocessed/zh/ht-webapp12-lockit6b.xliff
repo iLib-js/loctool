@@ -101,7 +101,7 @@
     <body>
       <trans-unit id="1029" resname="checklist on" restype="string" datatype="html">
         <source>checklist on</source>
-        <target state="translated">清单上</target>
+        <target state="translated">清单</target>
       </trans-unit>
     </body>
   </file>
@@ -153,7 +153,7 @@
         <source>Create a Tip
     &lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target state="translated">创建一则小贴士
-    &lt;span class="sub_title"&gt;用100个字符帮助数百万人。通知，启发，激励。&lt;/span&gt;</target>
+    &lt;span class="sub_title"&gt;用100个字符帮助数百万人。告知，启发，激励。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -251,7 +251,7 @@
         <source>REFER TO A COLLEAGUE
     &lt;span class="sub_title"&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
         <target state="translated">请参阅目录
-    &lt;span class="sub_title"&gt;理解谁可以回答这个问题？太棒了！只需告诉我们是谁，我们会把它发送给他们。&lt;/span&gt;</target>
+    &lt;span class="sub_title"&gt;认识可以回答这个问题的人？太棒了！只需告诉我们是谁，我们会把它发送给他们。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -270,7 +270,7 @@
     <body>
       <trans-unit id="1215" resname="Born on" restype="string" datatype="html">
         <source>Born on</source>
-        <target state="translated">出生</target>
+        <target state="translated">出生于</target>
       </trans-unit>
     </body>
   </file>
@@ -286,7 +286,7 @@
     <body>
       <trans-unit id="1269" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
         <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
-        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的乐于助人和医者评分。</target>
+        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的有助度和医者评分。</target>
       </trans-unit>
       <trans-unit id="1270" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
         <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
@@ -638,7 +638,7 @@
     <body>
       <trans-unit id="2032" resname="r60947249" restype="string" datatype="x-haml">
         <source>How it works</source>
-        <target state="translated">它是如何工作</target>
+        <target state="translated">它是如何工作的</target>
       </trans-unit>
       <trans-unit id="2033" resname="r754392321" restype="string" datatype="x-haml">
         <source>Connect with us</source>
@@ -710,11 +710,11 @@
       </trans-unit>
       <trans-unit id="2047" resname="r463772363" restype="string" datatype="x-haml">
         <source>Now you can get top doctor lists for free from HealthTap.  Rankings are comprehensive, reliable and customizable.  You get the lists you want, when you want them.</source>
-        <target state="translated">现在您可以从HealthTap免费获得知名医生名单排名是全面，可靠和可定制。当您需要他们时，您可以得到您想要的名单。</target>
+        <target state="translated">现在您可以从HealthTap免费获得顶级医生名单排名是全面，可靠和可定制的。当您需要他们时，您可以得到您想要的名单。</target>
       </trans-unit>
       <trans-unit id="2048" resname="r515199732" restype="string" datatype="x-haml">
         <source>Lists can be used in connection with everything from special issues dedicated to best doctors to one-off articles.  Sign up for access today!</source>
-        <target state="translated">列表可以用来连接从知名医生到一次性物品等各种特殊需要。立即注册访问！</target>
+        <target state="translated">列表可以用来连接顶级医生到一次性内容等各种特殊需要。立即注册访问！</target>
       </trans-unit>
     </body>
   </file>
@@ -738,7 +738,7 @@
       </trans-unit>
       <trans-unit id="2053" resname="r4793720" restype="string" datatype="x-haml">
         <source>Log in</source>
-        <target state="translated">登陆</target>
+        <target state="translated">登录</target>
       </trans-unit>
       <trans-unit id="2054" resname="r971042013" restype="string" datatype="x-haml">
         <source>Send</source>
@@ -846,7 +846,7 @@
     <body>
       <trans-unit id="2072" resname="r1025781938" restype="string" datatype="x-haml">
         <source>TipTaps</source>
-        <target state="translated">小贴士</target>
+        <target state="translated">推心小贴士</target>
       </trans-unit>
       <trans-unit id="2073" resname="r744268545" restype="string" datatype="x-haml">
         <source>Publications</source>
@@ -986,7 +986,7 @@
     <body>
       <trans-unit id="2098" resname="r1052342179" restype="string" datatype="x-haml">
         <source>Online</source>
-        <target state="translated">在线/线上</target>
+        <target state="translated">在线</target>
       </trans-unit>
       <trans-unit id="2099" resname="r639077826" restype="string" datatype="x-haml">
         <source>About</source>
@@ -1014,15 +1014,15 @@
     <body>
       <trans-unit id="2103" resname="r487952412" restype="string" datatype="x-haml">
         <source>If you wish to answer this private message, just click the Answer button. If you don't wish to or aren't able to respond within 72 hours, you can instead click the "Sorry,  I cannot help you" button below. Responding in a timely fashion will improve your Responsiveness and your DocScore.</source>
-        <target state="translated">如果您想要回答这条私人信息，只需点击回答按钮如果在72小时内您不想回复或无法回复，可以点击下面的“对不起，我无法帮助您”按钮。及时回复会提高您的反应灵敏和您的DocScore。</target>
+        <target state="translated">如果您想要回答这条私人信息，只需点击回答按钮如果在72小时内您不想回复或无法回复，可以点击下面的“对不起，我无法帮助您”按钮。及时回复会提高您的反应灵敏和您的医者评分。</target>
       </trans-unit>
       <trans-unit id="2104" resname="r1071266829" restype="string" datatype="x-haml">
         <source>Helpfulness</source>
-        <target state="translated">乐于助人</target>
+        <target state="translated">有助度</target>
       </trans-unit>
       <trans-unit id="2105" resname="r622040944" restype="string" datatype="x-haml">
         <source>Responsiveness</source>
-        <target state="translated">反应灵敏</target>
+        <target state="translated">响应度</target>
       </trans-unit>
     </body>
   </file>
@@ -1086,7 +1086,7 @@
       </trans-unit>
       <trans-unit id="2557" resname="r811333675" restype="string" datatype="x-haml">
         <source>wellness iOS and Android apps</source>
-        <target state="translated">健康iOS和Android应用程序</target>
+        <target state="translated">福祉iOS和Android应用程序</target>
       </trans-unit>
       <trans-unit id="2561" resname="r145289408" restype="string" datatype="x-haml">
         <source>Medical Expert Network</source>
@@ -1198,7 +1198,7 @@
     <body>
       <trans-unit id="2124" resname="r789336672" restype="string" datatype="x-haml">
         <source>Doctor Authentication Made Easy</source>
-        <target state="translated">医生认真使其变得简单</target>
+        <target state="translated">医生认证变得简单</target>
       </trans-unit>
       <trans-unit id="2125" resname="r873096097" restype="string" datatype="x-haml">
         <source>"We love the power that HealthTap unleashes to doctors and patients – and we wanted the reproduce that functionality for our community. So rather than re-inventing the wheel, we plugged our users directly into their service, and are unlocking the power of doctor-patient interaction right within our own web portal.  Integration took us a fraction of the time it would have taken us to develop an inferior solution from scratch."</source>
@@ -1290,7 +1290,7 @@
       </trans-unit>
       <trans-unit id="3581" resname="r819927279" restype="string" datatype="x-haml">
         <source>Availability:</source>
-        <target state="translated">可以/空闲</target>
+        <target state="translated">空闲</target>
       </trans-unit>
       <trans-unit id="3582" resname="r649495233" restype="string" datatype="x-haml">
         <source>Insurance:</source>
@@ -1306,7 +1306,7 @@
       </trans-unit>
       <trans-unit id="2139" resname="r639533158" restype="string" datatype="x-haml">
         <source>Following</source>
-        <target state="translated">已关注</target>
+        <target state="translated">关注中</target>
       </trans-unit>
     </body>
   </file>
@@ -1350,7 +1350,7 @@
       </trans-unit>
       <trans-unit id="2145" resname="r754434835" restype="string" datatype="x-haml">
         <source>Only</source>
-        <target state="translated">只有</target>
+        <target state="translated">只要</target>
       </trans-unit>
       <trans-unit id="2146" resname="r178695376" restype="string" datatype="x-haml">
         <source>Cancel</source>
@@ -1410,7 +1410,7 @@
       </trans-unit>
       <trans-unit id="2155" resname="r742115697" restype="string" datatype="x-haml">
         <source>Topics</source>
-        <target state="translated">专题</target>
+        <target state="translated">话题</target>
       </trans-unit>
     </body>
   </file>
@@ -1454,7 +1454,7 @@
     <body>
       <trans-unit id="2161" resname="r342342299" restype="string" datatype="x-haml">
         <source>Get a virtual consult with a top</source>
-        <target state="translated">向知名医生在线咨询</target>
+        <target state="translated">向顶级医生在线咨询</target>
       </trans-unit>
     </body>
   </file>
@@ -1462,7 +1462,7 @@
     <body>
       <trans-unit id="2162" resname="r500750545" restype="string" datatype="x-haml">
         <source>to enjoy this holiday season to its fullest</source>
-        <target state="translated">享受这个节日的最充分的</target>
+        <target state="translated">充分享受这个节日</target>
       </trans-unit>
       <trans-unit id="2163" resname="r194880084" restype="string" datatype="x-haml">
         <source>Get a</source>
@@ -1490,7 +1490,7 @@
     <body>
       <trans-unit id="2166" resname="r385613077" restype="string" datatype="x-haml">
         <source>ordered and delivered to your phone or computer from top doctors!</source>
-        <target state="translated">订购可将知名医生的建议发到您的手机或电脑！</target>
+        <target state="translated">订购可将顶级医生的建议发到您的手机或电脑！</target>
       </trans-unit>
       <trans-unit id="2167" resname="r478262125" restype="string" datatype="x-haml">
         <source>Finally, you can have</source>
@@ -1526,15 +1526,15 @@
     <body>
       <trans-unit id="2172" resname="r798330783" restype="string" datatype="x-haml">
         <source>for you now!</source>
-        <target state="translated">为您现在！</target>
+        <target state="translated">现在为您！</target>
       </trans-unit>
       <trans-unit id="2173" resname="r986707379" restype="string" datatype="x-haml">
         <source>is available</source>
-        <target state="translated">可用</target>
+        <target state="translated">空闲</target>
       </trans-unit>
       <trans-unit id="2174" resname="r660903042" restype="string" datatype="x-haml">
         <source>A live doctor</source>
-        <target state="translated">现场医生</target>
+        <target state="translated">实时在线医生</target>
       </trans-unit>
       <trans-unit id="2175" resname="r75714244" restype="string" datatype="x-haml">
         <source>0/150</source>
@@ -1570,7 +1570,7 @@
       </trans-unit>
       <trans-unit id="2182" resname="r436367226" restype="string" datatype="x-haml">
         <source>Leave</source>
-        <target state="translated">离开</target>
+        <target state="translated">留下</target>
       </trans-unit>
     </body>
   </file>
@@ -1738,7 +1738,7 @@
       </trans-unit>
       <trans-unit id="2216" resname="r597745879" restype="string" datatype="x-haml">
         <source>apply), HealthTap Concierge (</source>
-        <target state="translated">应用), HealthTap特邀 (</target>
+        <target state="translated">应用), HealthTap贵宾台 (</target>
       </trans-unit>
       <trans-unit id="2217" resname="r201491617" restype="string" datatype="x-haml">
         <source>means HealthTap Inc.,</source>
@@ -1966,7 +1966,7 @@
       </trans-unit>
       <trans-unit id="2273" resname="r266330783" restype="string" datatype="x-haml">
         <source>If you agree to accept health insurance coverage for Concierge virtual consults with eligible patients (where available), you agree that HealthTap may submit the initial claim form on your behalf based on the completed consult SOAP note.  By agreeing to accept this claim under insurance coverage (where available), you agree to assume all responsibility and liability for rejected claims, for collection of amounts due for such consults, and to hold HealthTap harmless from any and all claims, losses or harm related to any such consults or submissions.  Where insurance claims are denied, for any reason, you understand and agree that you are solely responsible for any re-submission or appeal of claim denials, and that HealthTap is not involved in the claims re-submission process.</source>
-        <target state="translated">如果您同意模拟参考服务对符合条件（适用）的患者的健康保险覆盖面，HealthTap可能基于您提交的初始索赔申请表完成最优方案。通过同意接受保险条款下的这一索赔，您将同意承担所有责任及拒绝索赔的债务，处于这样的咨询，并保持HealthTap免受任何与所有索赔、损失或损害相关的咨询或提交。通过同意接受保险条款下的这一索赔，您将同意承担所有责任及拒绝索赔的债务，处于这样的咨询，并保持HealthTap免受任何与所有索赔、损失或损害相关的咨询或提交。</target>
+        <target state="translated">如果您同意贵宾台在线咨询服务对符合条件（适用）的患者的健康保险覆盖面，HealthTap可能基于您提交的初始索赔申请表完成最优方案。通过同意接受保险条款下的这一索赔，您将同意承担所有责任及拒绝索赔的债务，处于这样的咨询，并保持HealthTap免受任何与所有索赔、损失或损害相关的咨询或提交。通过同意接受保险条款下的这一索赔，您将同意承担所有责任及拒绝索赔的债务，处于这样的咨询，并保持HealthTap免受任何与所有索赔、损失或损害相关的咨询或提交。</target>
       </trans-unit>
       <trans-unit id="2274" resname="r282737411" restype="string" datatype="x-haml">
         <source>means a direct access method, such as through a HyperText Transfer Protocol ("HTTP") that is provided by NUANCE and is used by LICENSEE to access the Service from the LICENSEE Product.</source>
@@ -2474,7 +2474,7 @@
       </trans-unit>
       <trans-unit id="2358" resname="r419486985" restype="string" datatype="x-haml">
         <source>log in to your account ›</source>
-        <target state="translated">登陆您的账户</target>
+        <target state="translated">登录您的账户</target>
       </trans-unit>
       <trans-unit id="2359" resname="r3079487" restype="string" datatype="x-haml">
         <source>/</source>
@@ -2486,7 +2486,7 @@
       </trans-unit>
       <trans-unit id="2361" resname="r1067974145" restype="string" datatype="x-haml">
         <source>Specialties</source>
-        <target state="translated">特性</target>
+        <target state="translated">专业</target>
       </trans-unit>
       <trans-unit id="2362" resname="r34349558" restype="string" datatype="x-haml">
         <source>Part 2</source>
@@ -2638,7 +2638,7 @@
       </trans-unit>
       <trans-unit id="2392" resname="r994919907" restype="string" datatype="x-haml">
         <source>pay?</source>
-        <target state="translated">钱？</target>
+        <target state="translated">付款？</target>
       </trans-unit>
       <trans-unit id="2393" resname="r603998518" restype="string" datatype="x-haml">
         <source>prescription?</source>
@@ -2650,11 +2650,11 @@
       </trans-unit>
       <trans-unit id="2395" resname="r257717648" restype="string" datatype="x-haml">
         <source>me?</source>
-        <target state="translated">？</target>
+        <target state="translated">我？</target>
       </trans-unit>
       <trans-unit id="2396" resname="r388761695" restype="string" datatype="x-haml">
         <source>security?</source>
-        <target state="translated">安全做的如何？</target>
+        <target state="translated">安全？</target>
       </trans-unit>
       <trans-unit id="2397" resname="r145895677" restype="string" datatype="x-haml">
         <source>For more information, read our</source>
@@ -2662,7 +2662,7 @@
       </trans-unit>
       <trans-unit id="2398" resname="r737235381" restype="string" datatype="x-haml">
         <source>handle?</source>
-        <target state="translated">处理</target>
+        <target state="translated">处理？</target>
       </trans-unit>
       <trans-unit id="2399" resname="r628295851" restype="string" datatype="x-haml">
         <source>What does</source>
@@ -2686,7 +2686,7 @@
     <body>
       <trans-unit id="2403" resname="r85517952" restype="string" datatype="x-haml">
         <source>USD</source>
-        <target state="translated">USD</target>
+        <target state="translated">美元</target>
       </trans-unit>
       <trans-unit id="2404" resname="r758385424" restype="string" datatype="x-haml">
         <source>Total charge:</source>
@@ -2734,7 +2734,7 @@
       </trans-unit>
       <trans-unit id="2413" resname="r961992159" restype="string" datatype="x-haml">
         <source>HealthTap Concierge</source>
-        <target state="translated">HealthTap特邀</target>
+        <target state="translated">HealthTap贵宾台</target>
       </trans-unit>
       <trans-unit id="2414" resname="r754322474" restype="string" datatype="x-haml">
         <source>HealthTap Prime</source>
@@ -2742,7 +2742,7 @@
       </trans-unit>
       <trans-unit id="2415" resname="r499825980" restype="string" datatype="x-haml">
         <source>RateRx Reviews</source>
-        <target state="translated">Rate医生评测评论</target>
+        <target state="translated">RateRx医生评测评论</target>
       </trans-unit>
       <trans-unit id="2416" resname="r1073708023" restype="string" datatype="x-haml">
         <source>Second Opinions</source>
@@ -2922,7 +2922,7 @@
       </trans-unit>
       <trans-unit id="2452" resname="r923823026" restype="string" datatype="x-haml">
         <source>OR</source>
-        <target state="translated">OR</target>
+        <target state="translated">或</target>
       </trans-unit>
     </body>
   </file>
@@ -2942,7 +2942,7 @@
       </trans-unit>
       <trans-unit id="2455" resname="r499866728" restype="string" datatype="x-haml">
         <source>lives.</source>
-        <target state="translated">生活。</target>
+        <target state="translated">生命。</target>
       </trans-unit>
       <trans-unit id="2456" resname="r658464755" restype="string" datatype="x-haml">
         <source>Our mission is to help people live healthier, longer, and</source>
@@ -3358,7 +3358,7 @@
       </trans-unit>
       <trans-unit id="2537" resname="r838450144" restype="string" datatype="x-haml">
         <source>University and help the world feel good!</source>
-        <target state="translated">学院和帮助世界感觉良好！</target>
+        <target state="translated">学院和帮助世界Feel Good！</target>
       </trans-unit>
       <trans-unit id="2538" resname="r1073103453" restype="string" datatype="x-haml">
         <source>Apply to join</source>
@@ -3626,7 +3626,7 @@
       </trans-unit>
       <trans-unit id="2619" resname="r961713157" restype="string" datatype="x-haml">
         <source>doctors answer them. They can also view rich statistics and other key metrics that tell them how leading doctors rate both the answers and the doctors that posted the answers.</source>
-        <target state="translated">他们还可以查看丰富的统计数据和其他关键指标，告诉他们知名医生如何评价回答，以及上传回答的医生。</target>
+        <target state="translated">他们还可以查看丰富的统计数据和其他关键指标，告诉他们顶级医生如何评价回答，以及上传回答的医生。</target>
       </trans-unit>
       <trans-unit id="2620" resname="r974342039" restype="string" datatype="x-haml">
         <source>Your users can ask questions and get notified when</source>
@@ -3894,7 +3894,7 @@
     <body>
       <trans-unit id="2667" resname="r645373156" restype="string" datatype="x-haml">
         <source>With HealthTap, top doctors can order tests</source>
-        <target state="translated">使用HealthTap，知名医生可以订购测试</target>
+        <target state="translated">使用HealthTap，顶级医生可以订购测试</target>
       </trans-unit>
       <trans-unit id="2668" resname="r832559795" restype="string" datatype="x-haml">
         <source>Protection through Prevention:</source>
@@ -3978,7 +3978,7 @@
       </trans-unit>
       <trans-unit id="2686" resname="r679861382" restype="string" datatype="x-haml">
         <source>“Licensee Links” means URL(s) to a HealthTap-provided landing page for Licensee’s distribution of the HealthTap Software to End User Groups.</source>
-        <target state="translated">“持证许可人链接”，即一个由HealthTap提供的方便持证许可人分配HealthTap Software给终端用户群组的登陆页面。</target>
+        <target state="translated">“持证许可人链接”，即一个由HealthTap提供的方便持证许可人分配HealthTap Software给终端用户群组的登录页面。</target>
       </trans-unit>
       <trans-unit id="2687" resname="r1019533155" restype="string" datatype="x-haml">
         <source>“Licensee Program” means the program identified in Exhibit A, through which the License promotes the HealthTap Software.</source>
@@ -4182,7 +4182,7 @@
     <body>
       <trans-unit id="2736" resname="r848853621" restype="string" datatype="x-haml">
         <source>By dividing apps into 30 separate categories, AppRx and the HealthTap Annual AppRx Report help users make sense of the vast landscape of health and wellness apps.  The independent reviews provided by doctors on HealthTap help both patients and peer doctors learn which apps are medically sound, useful in supporting health or wellness goals, and easy to learn and use.  The ratings reveal some surprising recommendations for best apps that might otherwise be missed.</source>
-        <target state="translated">通过将应用程序分为30个不同的类别，App医生评测和HealthTap年度App医生评测报告帮助用户了解健康应用程序的广阔景观。HealthTap上医生提供的独立评价帮助患者和同行医生了解哪些应用程序在医学上是健全的，有助于支持健康或健康目标，以及易于学习和使用。对于那些容易被忽视的最好的应用程序，评分显示了令人惊讶的意见。</target>
+        <target state="translated">通过将应用程序分为30个不同的类别，AppRx医生评测和HealthTap年度AppRx医生评测报告帮助用户了解健康应用程序的广阔景观。HealthTap上医生提供的独立评价帮助患者和同行医生了解哪些应用程序在医学上是健全的，有助于支持健康或健康目标，以及易于学习和使用。对于那些容易被忽视的最好的应用程序，评分显示了令人惊讶的意见。</target>
       </trans-unit>
       <trans-unit id="2737" resname="r925520376" restype="string" datatype="x-haml">
         <source>To see more,</source>
@@ -4322,7 +4322,7 @@
     <body>
       <trans-unit id="2756" resname="r435290504" restype="string" datatype="x-haml">
         <source>Download as</source>
-        <target state="translated">下载如</target>
+        <target state="translated">下载为</target>
       </trans-unit>
       <trans-unit id="2757" resname="r768032028" restype="string" datatype="x-haml">
         <source>Other options</source>
@@ -4610,11 +4610,11 @@
     <body>
       <trans-unit id="2811" resname="r537806372" restype="string" datatype="x-haml">
         <source>Clear</source>
-        <target state="translated">清楚的</target>
+        <target state="translated">清空</target>
       </trans-unit>
       <trans-unit id="2812" resname="r420272031" restype="string" datatype="x-haml">
         <source>Filter results</source>
-        <target state="translated">过滤结果</target>
+        <target state="translated">筛选结果</target>
       </trans-unit>
     </body>
   </file>
@@ -4722,7 +4722,7 @@
     <body>
       <trans-unit id="2834" resname="r938921095" restype="string" datatype="x-haml">
         <source>Prescriptions, referrals, reminders, tips &amp; news</source>
-        <target state="translated">处方、清单、转介、小贴士与新闻</target>
+        <target state="translated">处方、清单、转诊、小贴士与新闻</target>
       </trans-unit>
     </body>
   </file>
@@ -4746,7 +4746,7 @@
       </trans-unit>
       <trans-unit id="2837" resname="r50265502" restype="string" datatype="x-haml">
         <source>Available</source>
-        <target state="translated">在线</target>
+        <target state="translated">空闲</target>
       </trans-unit>
       <trans-unit id="2838" resname="r316110521" restype="string" datatype="x-haml">
         <source>Feed</source>
@@ -4770,7 +4770,7 @@
       </trans-unit>
       <trans-unit id="2843" resname="r356712107" restype="string" datatype="x-haml">
         <source>Fellowships</source>
-        <target state="translated">奖学金/助学金</target>
+        <target state="translated">奖学金</target>
       </trans-unit>
     </body>
   </file>
@@ -4810,7 +4810,7 @@
     <body>
       <trans-unit id="2849" resname="r918366438" restype="string" datatype="x-haml">
         <source>Recommended</source>
-        <target state="translated">被推荐</target>
+        <target state="translated">已推荐</target>
       </trans-unit>
     </body>
   </file>
@@ -4850,11 +4850,11 @@
     <body>
       <trans-unit id="2855" resname="r721821501" restype="string" datatype="x-haml">
         <source>Voted</source>
-        <target state="translated">投票</target>
+        <target state="translated">已投票</target>
       </trans-unit>
       <trans-unit id="2856" resname="r409622736" restype="string" datatype="x-haml">
         <source>Vote</source>
-        <target state="translated">票数/投票</target>
+        <target state="translated">投票</target>
       </trans-unit>
     </body>
   </file>
@@ -5022,7 +5022,7 @@
       </trans-unit>
       <trans-unit id="2887" resname="r143590406" restype="string" datatype="x-haml">
         <source>as a nationally recognized Top Doctor</source>
-        <target state="translated">作为国家公认的知名医生</target>
+        <target state="translated">作为国家公认的顶级医生</target>
       </trans-unit>
       <trans-unit id="2888" resname="r81906456" restype="string" datatype="x-haml">
         <source>requests online</source>
@@ -5086,7 +5086,7 @@
       </trans-unit>
       <trans-unit id="2900" resname="r80062028" restype="string" datatype="x-haml">
         <source>, I better serve my existing patients by offering Virtual Consults via HealthTap Concierge. Join my HealthTap professional referral network (doctors) or follow me and make an appointment for a Virtual Consult (patients) by visiting</source>
-        <target state="translated">，我通过HealthTap特邀提供模拟诊断，更好地为我现有的患者服务。（医生）可以加入我的HealthTap专业转诊网络或跟随我；（患者）可以通过访问预约模拟咨询</target>
+        <target state="translated">，我通过HealthTap贵宾台提供模拟诊断，更好地为我现有的患者服务。（医生）可以加入我的HealthTap专业转诊网络或跟随我；（患者）可以通过访问预约模拟咨询</target>
       </trans-unit>
       <trans-unit id="2901" resname="r984329181" restype="string" datatype="x-haml">
         <source>Through my Virtual Practice on</source>
@@ -5154,7 +5154,7 @@
       </trans-unit>
       <trans-unit id="2945" resname="r751215942" restype="string" datatype="x-haml">
         <source>“Licensee Landing Page” means a URL to a HealthTap-provided landing page for Licensee’s distribution of the HealthTap Software to End User Groups.</source>
-        <target state="translated">“被许可人的登陆页”是指一个给终端用户组的HealthTap软件的许可分发的到HealthTap提供的登陆页面URL。</target>
+        <target state="translated">“被许可人的登录页”是指一个给终端用户组的HealthTap软件的许可分发的到HealthTap提供的登录页面URL。</target>
       </trans-unit>
       <trans-unit id="2946" resname="r758303714" restype="string" datatype="x-haml">
         <source>“Licensee Minimum Dates” mean the dates, identified in Exhibit A, by which either HealthTap shall have received the Annual Revenue Minimums; or, if not, the dates on which Licensee agrees that HealthTap may collect the Annual Revenue Minimum from Licensee using payment information provided by Licensee.</source>
@@ -5162,7 +5162,7 @@
       </trans-unit>
       <trans-unit id="2947" resname="r955098526" restype="string" datatype="x-haml">
         <source>“Qualified Subscriptions” means Subscriptions generated by Licensee through Licensee Landing Pages minus any Unqualified Subscriptions.</source>
-        <target state="translated">“合格的订购”是指被持牌人通过持牌人的登陆页面减去任何不合格的订购所产生的订购。</target>
+        <target state="translated">“合格的订购”是指被持牌人通过持牌人的登录页面减去任何不合格的订购所产生的订购。</target>
       </trans-unit>
       <trans-unit id="2948" resname="r808234177" restype="string" datatype="x-haml">
         <source>“Subscription Agreement” means the agreement between HealthTap and an End User Group governing the license of HealthTap Software for all End User Group employees or group members eligible to receive benefits from End User Group (all End User Group Members), the terms of which are subject to change by HealthTap, at its sole discretion.</source>
@@ -5394,7 +5394,7 @@
       </trans-unit>
       <trans-unit id="3002" resname="r293071175" restype="string" datatype="x-haml">
         <source>for all patients, providing general care. For issues outside your speciality, you may refer the patient to see a specialist in your SOAP note.</source>
-        <target state="translated">对于您的专业以外的问题，您可以参考患者在SOAP注释中查看专家。</target>
+        <target state="translated">对于您的专业以外的问题，您可以转诊患者，在SOAP注释中查看专家。</target>
       </trans-unit>
       <trans-unit id="3003" resname="r770266280" restype="string" datatype="x-haml">
         <source>(subjective, objective, assessment, plan) report immediately following the consult. Always include instructions for further care in person with a doctor if symptoms persist.</source>
@@ -5630,7 +5630,7 @@
       </trans-unit>
       <trans-unit id="3057" resname="r173510312" restype="string" datatype="x-haml">
         <source>top doctors are available for</source>
-        <target state="translated">知名医生目前可以提供服务</target>
+        <target state="translated">顶级医生目前可以提供服务</target>
       </trans-unit>
       <trans-unit id="3058" resname="r647987542" restype="string" datatype="x-haml">
         <source>Personalized answers, tips, news, and more for</source>
@@ -5926,7 +5926,7 @@
       </trans-unit>
       <trans-unit id="3120" resname="r41248377" restype="string" datatype="x-haml">
         <source>The Content and Services may not be used for any illegal purpose. You may not access our networks, computers, or the Content and Services in any manner that could damage, disable, overburden, or impair them, or interfere with any other person's use and enjoyment. You may not attempt to gain unauthorized access to any Content or Services, other accounts, computer systems, or networks connected with HealthTap, the Content, or Services. You may not use any automated means (such as a scraper) to access HealthTap, the Content, or Services for any purpose. Such unauthorized access includes, but is not limited to, using another person’s login credentials to access his or her HealthTap account.  Any attempt by any individual or entity to solicit login information of any other user or HealthTap Medical Expert or to access any such account is an express and direct violation of these Terms of Use and of applicable law, including relevant privacy and security laws and laws prohibiting unfair or unethical business practices.</source>
-        <target state="translated">内容和服务不得用于任何非法目的。您不能以任何可能损害，禁用，过度使用或损害其内容或干扰任何其他人的使用和享受的方式访问我们的网络，计算机或内容和服务。您最好不要通过未经授权的渠道进入任何与HealthTap及其内容或服务相关的内容或服务、其他账号、电脑系统或网络。您最好不要有目的地通过一些自动化方式（例如刮刀）来访问HealthTap及其内容或服务。这种未经授权的访问包括但不限于使用另一个人的登录凭证来访问他/她的HealthTap帐户。个人或整体的任何征求其他用户或医学专家的登陆信息，以及登录这些账号的企图都是一种直接违反这些使用条款和法律适用的体现，包括相关隐私和安全的法律以及禁止不公平不道德的商业行为的法律。</target>
+        <target state="translated">内容和服务不得用于任何非法目的。您不能以任何可能损害，禁用，过度使用或损害其内容或干扰任何其他人的使用和享受的方式访问我们的网络，计算机或内容和服务。您最好不要通过未经授权的渠道进入任何与HealthTap及其内容或服务相关的内容或服务、其他账号、电脑系统或网络。您最好不要有目的地通过一些自动化方式（例如刮刀）来访问HealthTap及其内容或服务。这种未经授权的访问包括但不限于使用另一个人的登录凭证来访问他/她的HealthTap帐户。个人或整体的任何征求其他用户或医学专家的登录信息，以及登录这些账号的企图都是一种直接违反这些使用条款和法律适用的体现，包括相关隐私和安全的法律以及禁止不公平不道德的商业行为的法律。</target>
       </trans-unit>
       <trans-unit id="3121" resname="r894109663" restype="string" datatype="x-haml">
         <source>We do not recommend or endorse any specific Content, Services, tests, doctors, products, procedures, opinions, or other information that may be mentioned on HealthTap. HealthTap is designed to be used with common sense, and in connection with the advice of your doctor or your other healthcare provider. Reliance on HealthTap Content or Services is solely at your own risk. Some Content and Services, including posts by Medical Experts, may be or have been provided by third parties directly and are not reviewed or certified by HealthTap. We hope that our Content and Services will be useful, but we cannot guarantee that the Content and Services will help you achieve any specific goals or results. Content regarding dietary supplements or other treatments or regimens has not been evaluated by the Food and Drug Administration and is not intended to diagnose, treat, cure, or prevent any disease.</source>
@@ -6662,7 +6662,7 @@
     <body>
       <trans-unit id="3301" resname="r979143934" restype="string" datatype="x-haml">
         <source>Logout</source>
-        <target state="translated">注销</target>
+        <target state="translated">退出</target>
       </trans-unit>
     </body>
   </file>
@@ -6686,7 +6686,7 @@
     <body>
       <trans-unit id="3304" resname="r753403287" restype="string" datatype="x-haml">
         <source>New</source>
-        <target state="translated">新闻</target>
+        <target state="translated">新</target>
       </trans-unit>
     </body>
   </file>
@@ -6694,7 +6694,7 @@
     <body>
       <trans-unit id="3305" resname="r814209495" restype="string" datatype="x-haml">
         <source>NEW</source>
-        <target state="translated">新的</target>
+        <target state="translated">新</target>
       </trans-unit>
     </body>
   </file>
@@ -6722,7 +6722,7 @@
     <body>
       <trans-unit id="3309" resname="r381183789" restype="string" datatype="x-haml">
         <source>Unsubscribe</source>
-        <target state="translated">未订购</target>
+        <target state="translated">取消订购</target>
       </trans-unit>
       <trans-unit id="3310" resname="r514582991" restype="string" datatype="x-haml">
         <source>2013</source>
@@ -6734,7 +6734,7 @@
     <body>
       <trans-unit id="3311" resname="r111997200" restype="string" datatype="x-haml">
         <source>Home</source>
-        <target state="translated">家/主页</target>
+        <target state="translated">主页</target>
       </trans-unit>
       <trans-unit id="3312" resname="r70441332" restype="string" datatype="x-haml">
         <source>Messages</source>
@@ -6762,7 +6762,7 @@
     <body>
       <trans-unit id="3316" resname="r860483400" restype="string" datatype="x-haml">
         <source>Wellness</source>
-        <target state="translated">健康</target>
+        <target state="translated">福祉</target>
       </trans-unit>
     </body>
   </file>
@@ -6846,15 +6846,15 @@
     <body>
       <trans-unit id="3331" resname="r689990032" restype="string" datatype="x-haml">
         <source>raves CNBC.</source>
-        <target state="translated">CNBC赞扬到</target>
+        <target state="translated">CNBC赞扬道</target>
       </trans-unit>
       <trans-unit id="3332" resname="r391604116" restype="string" datatype="x-haml">
         <source>says Good Morning America.</source>
-        <target state="translated">早安美国说到。</target>
+        <target state="translated">早安美国说道。</target>
       </trans-unit>
       <trans-unit id="3333" resname="r442761910" restype="string" datatype="x-haml">
         <source>said CNBC. Ready to have a health experience that will delight you? Get unlimited advice, prescriptions, and reminders for 30 days for free! To thank you for your interest in HealthTap, for a limited time we’re thrilled to give you this exclusive offer that’s just for you (not transferable). Sign up today to start your free trial.</source>
-        <target state="translated">CNBC说到准备一个您会喜欢的健康体验？30天内免费获得无限制的建议，处方和提醒！为了感谢您对于HealthTap的兴趣，在有限的时间里，我们只能独家为您提供这个（不可转让）。立即注册，开始免费试用。</target>
+        <target state="translated">CNBC说道。准备开始一个您会喜欢的健康体验？30天内免费获得无限制的建议，处方和提醒！为了感谢您对于HealthTap的兴趣，在有限的时间里，我们只能独家为您提供这个（不可转让）。立即注册，开始免费试用。</target>
       </trans-unit>
     </body>
   </file>
@@ -6894,7 +6894,7 @@
     <body>
       <trans-unit id="3338" resname="r765014527" restype="string" datatype="x-haml">
         <source>If you have any questions about how to improve your DocScore, we'd be happy to help! Please contact us directly at</source>
-        <target state="translated">如果您有任何关于如何提高您的DocScore的问题，我们很开心能够帮助您！请直接联系我们通过</target>
+        <target state="translated">如果您有任何关于如何提高您的医者评分的问题，我们很开心能够帮助您！请直接联系我们通过</target>
       </trans-unit>
     </body>
   </file>
@@ -7114,7 +7114,7 @@
     <body>
       <trans-unit id="3378" resname="r949371220" restype="string" datatype="x-haml">
         <source>Availability</source>
-        <target state="translated">可以/空闲</target>
+        <target state="translated">空闲</target>
       </trans-unit>
     </body>
   </file>
@@ -7334,7 +7334,7 @@
       </trans-unit>
       <trans-unit id="3419" resname="r129395356" restype="string" datatype="x-haml">
         <source>Check out AppRx today!</source>
-        <target state="translated">立刻查看App医生评测</target>
+        <target state="translated">立刻查看AppRx医生评测</target>
       </trans-unit>
     </body>
   </file>
@@ -7806,7 +7806,7 @@
     <body>
       <trans-unit id="3509" resname="r1007276002" restype="string" datatype="x-haml">
         <source>Entity</source>
-        <target state="translated">个体</target>
+        <target state="translated">实体</target>
       </trans-unit>
       <trans-unit id="3510" resname="r434389226" restype="string" datatype="x-haml">
         <source>Group</source>
@@ -7870,7 +7870,7 @@
     <body>
       <trans-unit id="3520" resname="r1004215168" restype="string" datatype="x-haml">
         <source>Please enter your phone number.</source>
-        <target state="translated">请输入您的手机号码</target>
+        <target state="translated">请输入您的电话号码</target>
       </trans-unit>
       <trans-unit id="3521" resname="r625847200" restype="string" datatype="x-haml">
         <source>Weak</source>
@@ -7894,7 +7894,7 @@
       </trans-unit>
       <trans-unit id="3526" resname="r964814864" restype="string" datatype="x-haml">
         <source>and will be charged</source>
-        <target state="translated">会被收费</target>
+        <target state="translated">且会被收费</target>
       </trans-unit>
     </body>
   </file>
@@ -7934,7 +7934,7 @@
       </trans-unit>
       <trans-unit id="3532" resname="r108295620" restype="string" datatype="x-haml">
         <source>HealthTap Concierge application</source>
-        <target state="translated">HealthTap Concierge申请</target>
+        <target state="translated">HealthTap 贵宾台申请</target>
       </trans-unit>
     </body>
   </file>
@@ -8102,7 +8102,7 @@
       </trans-unit>
       <trans-unit id="3569" resname="r744646303" restype="string" datatype="x-haml">
         <source>Check to automatically submit insurance claim information at consult completion. (If unchecked, instructions for claim review will be emailed.)  You can view submitted and unsubmitted claims under "Claim History" on your HealthTap “Grow Your Practice” page.</source>
-        <target state="translated">在咨询结束后核对自动提交的保险索赔信息(若未经核对，将会以电子邮件的形式发送给您索赔信息核对的说明。)您可在HealthTap的“成长您的诊疗”页中的“索赔历史”中查阅提交和未提交的索赔信息</target>
+        <target state="translated">在咨询结束后核对自动提交的保险索赔信息(若未经核对，将会以电子邮件的形式发送给您索赔信息核对的说明。)您可在HealthTap的“壮大您的诊疗”页中的“索赔历史”中查阅提交和未提交的索赔信息</target>
       </trans-unit>
       <trans-unit id="3570" resname="r885771692" restype="string" datatype="x-haml">
         <source>Send &amp; End Consult</source>
@@ -8274,7 +8274,7 @@
       </trans-unit>
       <trans-unit id="3603" resname="r973329272" restype="string" datatype="x-haml">
         <source>RESPONSIVENESS</source>
-        <target state="translated">反应灵敏</target>
+        <target state="translated">响应度</target>
       </trans-unit>
       <trans-unit id="3604" resname="r237594051" restype="string" datatype="x-haml">
         <source>Medals</source>
@@ -8358,7 +8358,7 @@
       </trans-unit>
       <trans-unit id="3621" resname="Your password was updated. Going forward, please use this to log in" restype="string" datatype="javascript">
         <source>Your password was updated. Going forward, please use this to log in</source>
-        <target state="translated">您的密码已更新下一步，请使用这个登陆</target>
+        <target state="translated">您的密码已更新下一步，请使用这个登录</target>
       </trans-unit>
       <trans-unit id="3622" resname="Couldn&apos;t find the answer I was looking for" restype="string" datatype="javascript">
         <source>Couldn't find the answer I was looking for</source>
@@ -8394,7 +8394,7 @@
       </trans-unit>
       <trans-unit id="3629" resname="Conditions &amp; Symptoms" restype="string" datatype="javascript">
         <source>Conditions &amp; Symptoms</source>
-        <target state="translated">健康状况&amp;症状</target>
+        <target state="translated">健康状况和症状</target>
       </trans-unit>
     </body>
   </file>

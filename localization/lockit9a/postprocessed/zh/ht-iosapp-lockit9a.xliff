@@ -20,7 +20,7 @@
       </trans-unit>
       <trans-unit id="12" resname="Board certification(s)" restype="string" datatype="x-objective-c">
         <source>Board certification(s)</source>
-        <target state="accepted">认证</target>
+        <target state="accepted">美国医学委员会认证医</target>
       </trans-unit>
       <trans-unit id="13" resname="Other professional accomplishments (such as peer reviewed publications and awards)" restype="string" datatype="x-objective-c">
         <source>Other professional accomplishments (such as peer reviewed publications and awards)</source>
@@ -56,7 +56,7 @@
     <body>
       <trans-unit id="6" resname="Please download the &quot;HealthTap for Doctors&quot; app to login or signup as a doctor with a valid US medical license" restype="string" datatype="x-objective-c">
         <source>Please download the "HealthTap for Doctors" app to login or signup as a doctor with a valid US medical license</source>
-        <target state="accepted">请下载"HealthTap for Doctors"应用程序登陆或以美国有效的医疗执照注册成为医生</target>
+        <target state="accepted">请下载"HealthTap for Doctors"应用程序登录或以美国有效的医疗执照注册成为医生</target>
       </trans-unit>
     </body>
   </file>
