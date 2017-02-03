@@ -567,4 +567,28 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="nurse" restype="string" datatype="x-objective-c">
+        <source>nurse</source>
+        <target state="accepted">护士</target>
+      </trans-unit>
+      <trans-unit id="2" resname="greeter" restype="string" datatype="x-objective-c">
+        <source>greeter</source>
+        <target state="accepted">接待人员</target>
+      </trans-unit>
+      <trans-unit id="3" resname="health professional" restype="string" datatype="x-objective-c">
+        <source>health professional</source>
+        <target state="accepted">医护人员</target>
+      </trans-unit>
+      <trans-unit id="4" resname="staff member" restype="string" datatype="x-objective-c">
+        <source>staff member</source>
+        <target state="accepted">员工</target>
+      </trans-unit>
+      <trans-unit id="5" resname="expert" restype="string" datatype="x-objective-c">
+        <source>expert</source>
+        <target state="accepted">专家</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
