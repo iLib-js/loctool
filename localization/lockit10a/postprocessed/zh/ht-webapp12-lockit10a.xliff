@@ -1180,4 +1180,152 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/user_questions/feelGood/_related_questions.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="49" resname="r1072022560" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} doctors responded</source>
+        <target state="translated">1位医生回复</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="508" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target state="translated">不是</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_search_options.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="537" resname="r91472850" restype="string" datatype="x-haml">
+        <source>Clinicians</source>
+        <target state="translated">临床医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="597" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成从{start_date}到{end_date}的补偿报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="600" resname="Invite your doctor" restype="string" datatype="javascript">
+        <source>Invite your doctor</source>
+        <target state="translated">邀请您的医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/searchPages/init_symptom_search.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="610" resname="Start over?" restype="string" datatype="javascript">
+        <source>Start over?</source>
+        <target state="translated">重新开始？</target>
+      </trans-unit>
+      <trans-unit id="611" resname="Heads up! If you go back from here, you&apos;ll lose the symptoms you shared." restype="string" datatype="javascript">
+        <source>Heads up! If you go back from here, you'll lose the symptoms you shared.</source>
+        <target state="translated">小心！如果您从此处返回，您分享的症状将丢失。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/member_profile_value_store.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="507" resname="r633096851" restype="string" datatype="ruby">
+        <source>father</source>
+        <target state="translated">父亲</target>
+      </trans-unit>
+      <trans-unit id="508" resname="r264783012" restype="string" datatype="ruby">
+        <source>brother</source>
+        <target state="translated">兄弟</target>
+      </trans-unit>
+      <trans-unit id="509" resname="r561552975" restype="string" datatype="ruby">
+        <source>son</source>
+        <target state="translated">儿子</target>
+      </trans-unit>
+      <trans-unit id="510" resname="r896982751" restype="string" datatype="ruby">
+        <source>stepson</source>
+        <target state="translated">继子</target>
+      </trans-unit>
+      <trans-unit id="511" resname="r738106537" restype="string" datatype="ruby">
+        <source>grandfather</source>
+        <target state="translated">祖父/外祖父</target>
+      </trans-unit>
+      <trans-unit id="512" resname="r240673246" restype="string" datatype="ruby">
+        <source>grandson</source>
+        <target state="translated">外孙</target>
+      </trans-unit>
+      <trans-unit id="513" resname="r866270457" restype="string" datatype="ruby">
+        <source>husband</source>
+        <target state="translated">丈夫</target>
+      </trans-unit>
+      <trans-unit id="514" resname="r928040231" restype="string" datatype="ruby">
+        <source>boyfriend</source>
+        <target state="translated">男朋友</target>
+      </trans-unit>
+      <trans-unit id="515" resname="r1050327994" restype="string" datatype="ruby">
+        <source>uncle</source>
+        <target state="translated">姑父/伯父/叔叔</target>
+      </trans-unit>
+      <trans-unit id="516" resname="r504558006" restype="string" datatype="ruby">
+        <source>nephew</source>
+        <target state="translated">侄子</target>
+      </trans-unit>
+      <trans-unit id="517" resname="r154538502" restype="string" datatype="ruby">
+        <source>mother</source>
+        <target state="translated">母亲</target>
+      </trans-unit>
+      <trans-unit id="518" resname="r739987589" restype="string" datatype="ruby">
+        <source>sister</source>
+        <target state="translated">姐妹</target>
+      </trans-unit>
+      <trans-unit id="519" resname="r805983089" restype="string" datatype="ruby">
+        <source>daughter</source>
+        <target state="translated">女儿</target>
+      </trans-unit>
+      <trans-unit id="520" resname="r143506102" restype="string" datatype="ruby">
+        <source>stepdaughter</source>
+        <target state="translated">继女</target>
+      </trans-unit>
+      <trans-unit id="521" resname="r259548188" restype="string" datatype="ruby">
+        <source>grandmother</source>
+        <target state="translated">祖母/外祖母</target>
+      </trans-unit>
+      <trans-unit id="522" resname="r1033810326" restype="string" datatype="ruby">
+        <source>granddaughter</source>
+        <target state="translated">外孙女</target>
+      </trans-unit>
+      <trans-unit id="523" resname="r7055697" restype="string" datatype="ruby">
+        <source>wife</source>
+        <target state="translated">妻子</target>
+      </trans-unit>
+      <trans-unit id="524" resname="r928663617" restype="string" datatype="ruby">
+        <source>girlfriend</source>
+        <target state="translated">女朋友</target>
+      </trans-unit>
+      <trans-unit id="525" resname="r1064168741" restype="string" datatype="ruby">
+        <source>aunt</source>
+        <target state="translated">姑姑/伯母/姨姨</target>
+      </trans-unit>
+      <trans-unit id="526" resname="r771377575" restype="string" datatype="ruby">
+        <source>niece</source>
+        <target state="translated">侄女</target>
+      </trans-unit>
+      <trans-unit id="527" resname="r897427041" restype="string" datatype="ruby">
+        <source>friend</source>
+        <target state="translated">朋友</target>
+      </trans-unit>
+      <trans-unit id="528" resname="r6691401" restype="string" datatype="ruby">
+        <source>cousin</source>
+        <target state="translated">堂兄弟姐妹</target>
+      </trans-unit>
+      <trans-unit id="529" resname="r190006147" restype="string" datatype="ruby">
+        <source>patient</source>
+        <target state="translated">患者</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
