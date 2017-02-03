@@ -2946,7 +2946,7 @@
       </trans-unit>
       <trans-unit id="2456" resname="r658464755" restype="string" datatype="x-haml">
         <source>Our mission is to help people live healthier, longer, and</source>
-        <target state="translated">我们的使命是帮助人们生活更健康，更长命，和</target>
+        <target state="translated">我们的使命是帮助人们生活更健康，更长寿，和</target>
       </trans-unit>
       <trans-unit id="2457" resname="r356849928" restype="string" datatype="x-haml">
         <source>. Whether we’re trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better—and we always want to</source>
