@@ -8836,11 +8836,11 @@
       </trans-unit>
       <trans-unit id="1903" resname="grandfather" restype="string" datatype="x-android-resource">
         <source>Grandfather</source>
-        <target>爷爷/祖父</target>
+        <target>爷爷/外公</target>
       </trans-unit>
       <trans-unit id="1904" resname="grandmother" restype="string" datatype="x-android-resource">
         <source>Grandmother</source>
-        <target>奶奶/祖母</target>
+        <target>奶奶/外婆</target>
       </trans-unit>
       <trans-unit id="1905" resname="friend" restype="string" datatype="x-android-resource">
         <source>Friend</source>

@@ -1817,7 +1817,7 @@
       </trans-unit>
       <trans-unit id="979" resname="r845396312" restype="string" datatype="ruby">
         <source>Grandfather</source>
-        <target state="translated">爷爷/祖父</target>
+        <target state="translated">爷爷/外公</target>
       </trans-unit>
       <trans-unit id="980" resname="r473663570" restype="string" datatype="ruby">
         <source>Husband</source>
@@ -1845,7 +1845,7 @@
       </trans-unit>
       <trans-unit id="986" resname="r366837963" restype="string" datatype="ruby">
         <source>Grandmother</source>
-        <target state="translated">奶奶/祖母</target>
+        <target state="translated">奶奶/外婆</target>
       </trans-unit>
       <trans-unit id="987" resname="r829234159" restype="string" datatype="ruby">
         <source>Wife</source>
