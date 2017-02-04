@@ -698,7 +698,7 @@ module.exports = {
         var r = set.getBySource("This is a 'test'.");
         test.ok(r);
         test.equal(r.getSource(), "This is a 'test'.");
-        test.equal(r.getKey(), "r446151779");
+        test.equal(r.getKey(), "r531222461");
         
         test.done();
     },
@@ -721,7 +721,7 @@ module.exports = {
         var r = set.getBySource("This is a 'test'.");
         test.ok(r);
         test.equal(r.getSource(), "This is a 'test'.");
-        test.equal(r.getKey(), "r446151779");
+        test.equal(r.getKey(), "r531222461");
         
         test.done();
     },
