@@ -30,6 +30,7 @@ var feelgoodunits = feelgood.getTranslationUnits();
 
 var units = {
 	bySource: {},
+	bySourceLower: {},
 	byKey: {}
 };
 
@@ -44,8 +45,12 @@ function addUnits(unit) {
 	if (!units.bySource[unit.targetLocale]) {
 		units.bySource[unit.targetLocale] = {};
 	}
+	if (!units.bySourceLower[unit.targetLocale]) {
+		units.bySourceLower[unit.targetLocale] = {};
+	}
 	
 	units.bySource[unit.targetLocale][unit.source] = unit;
+	units.bySourceLower[unit.targetLocale][unit.source.toLowerCase()] = unit;
 	
 	// for the data types that use hashes, when the key
 	// is the same, then the string is the same
@@ -97,6 +102,10 @@ web = android = ios = feelgood = undefined;
 						found = units.byKey[locale][unit.key];
 					} else if (units.bySource[locale][unit.source.trim()]) {
 						found = units.bySource[locale][unit.source.trim()];
+					} else if (locale === "zh-Hans-CN" && units.bySourceLower[locale][unit.source.toLowerCase()]) {
+						// since Chinese is not case-sensitive, we can search case insensitively in the English
+						// and get the right match in Chinese
+						found = units.bySourceLower[locale][unit.source.toLowerCase()];
 					}
 				}
 				

@@ -35320,19 +35320,19 @@
     <body>
       <trans-unit id="8381" resname="AM" restype="string" datatype="javascript">
         <source>AM</source>
-        <target state="translated">AM</target>
+        <target state="translated">上午</target>
       </trans-unit>
       <trans-unit id="8382" resname="PM" restype="string" datatype="javascript">
         <source>PM</source>
-        <target state="translated">PM</target>
+        <target state="translated">下午</target>
       </trans-unit>
       <trans-unit id="8383" resname="AM (Midnight)" restype="string" datatype="javascript">
         <source>AM (Midnight)</source>
-        <target state="translated">AM (Midnight)</target>
+        <target state="translated">午夜</target>
       </trans-unit>
       <trans-unit id="8384" resname="PM (Noon)" restype="string" datatype="javascript">
         <source>PM (Noon)</source>
-        <target state="translated">PM (Noon)</target>
+        <target state="translated">中午</target>
       </trans-unit>
       <trans-unit id="8385" resname="You have no activity on in this period." restype="string" datatype="javascript">
         <source>You have no activity on in this period.</source>
@@ -40936,7 +40936,7 @@
     <body>
       <trans-unit id="9512" resname="Rotate" restype="string" datatype="javascript">
         <source>Rotate</source>
-        <target state="translated">循环</target>
+        <target state="translated">旋转</target>
       </trans-unit>
       <trans-unit id="9513" resname="Full Body" restype="string" datatype="javascript">
         <source>Full Body</source>

@@ -92,6 +92,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/HTAppointmentLocationWarningPopupView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Doctors can only provide advice, diagnosis, treatment, prescriptions to patients located where they are licensed to practice medicine." restype="string" datatype="x-objective-c">
+        <source>Doctors can only provide advice, diagnosis, treatment, prescriptions to patients located where they are licensed to practice medicine.</source>
+        <target state="accepted">医生只能为那些位于医生执照允许的州的病人提供建议，诊断，治疗和处方</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="feelgood/Classes/Util/FGHelpUtils.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="Afrikaans" restype="string" datatype="x-objective-c">
@@ -488,6 +496,45 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Classes/DSLCalendarView/DSLCalendarMonthSelectorView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="5" resname="S" restype="string" datatype="x-objective-c">
+        <source>S</source>
+        <target state="accepted">日</target>
+        <note annotates="source">Day of the week: Sunday</note>
+      </trans-unit>
+      <trans-unit id="6" resname="M" restype="string" datatype="x-objective-c">
+        <source>M</source>
+        <target state="accepted">一</target>
+        <note annotates="source">Day of the week: Monday</note>
+      </trans-unit>
+      <trans-unit id="7" resname="T" restype="string" datatype="x-objective-c">
+        <source>T</source>
+        <target state="accepted">二</target>
+        <note annotates="source">Day of the week: Tuesday</note>
+      </trans-unit>
+      <trans-unit id="8" resname="W" restype="string" datatype="x-objective-c">
+        <source>W</source>
+        <target state="accepted">三</target>
+        <note annotates="source">Day of the week: Wednesday</note>
+      </trans-unit>
+      <trans-unit id="9" resname="Th" restype="string" datatype="x-objective-c">
+        <source>Th</source>
+        <target state="accepted">四</target>
+        <note annotates="source">Day of the week: Thursday</note>
+      </trans-unit>
+      <trans-unit id="10" resname="F" restype="string" datatype="x-objective-c">
+        <source>F</source>
+        <target state="accepted">五</target>
+        <note annotates="source">Day of the week: Friday</note>
+      </trans-unit>
+      <trans-unit id="11" resname="Sa" restype="string" datatype="x-objective-c">
+        <source>Sa</source>
+        <target state="accepted">六</target>
+        <note annotates="source">Day of the week: Saturday</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="feelgood/iPadNative/Expert/FGDoctorBaseViewController.h" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="Write recommendation" restype="string" datatype="x-objective-c">
@@ -509,6 +556,270 @@
       <trans-unit id="4" resname="This saved my life. Thank you!" restype="string" datatype="x-objective-c">
         <source>This saved my life. Thank you!</source>
         <target state="new">这救了我的生命，谢谢！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/NSString+helperMethods.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="anonymous" restype="string" datatype="x-objective-c">
+        <source>anonymous</source>
+        <target state="accepted">匿名</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="nurse" restype="string" datatype="x-objective-c">
+        <source>nurse</source>
+        <target state="accepted">护士</target>
+      </trans-unit>
+      <trans-unit id="2" resname="greeter" restype="string" datatype="x-objective-c">
+        <source>greeter</source>
+        <target state="accepted">接待人员</target>
+      </trans-unit>
+      <trans-unit id="3" resname="health professional" restype="string" datatype="x-objective-c">
+        <source>health professional</source>
+        <target state="accepted">医护人员</target>
+      </trans-unit>
+      <trans-unit id="4" resname="staff member" restype="string" datatype="x-objective-c">
+        <source>staff member</source>
+        <target state="accepted">员工</target>
+      </trans-unit>
+      <trans-unit id="5" resname="expert" restype="string" datatype="x-objective-c">
+        <source>expert</source>
+        <target state="accepted">专家</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatPodiatristData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="I&apos;d like to refer you to a %@." restype="string" datatype="x-objective-c">
+        <source>I'd like to refer you to a %@.</source>
+        <target state="accepted">我为您推荐%@</target>
+      </trans-unit>
+      <trans-unit id="2" resname="I&apos;d like to refer you to a " restype="string" datatype="x-objective-c">
+        <source>I'd like to refer you to a </source>
+        <target state="accepted">我为您推荐</target>
+      </trans-unit>
+      <trans-unit id="3" resname="Find specialist" restype="string" datatype="x-objective-c">
+        <source>Find specialist</source>
+        <target state="accepted">找专科医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatChecklistSection.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="4" resname="Try Now" restype="string" datatype="x-objective-c">
+        <source>Try Now</source>
+        <target state="accepted">现在试试</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGStateAbbreviator.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Alabama" restype="string" datatype="x-objective-c">
+        <source>Alabama</source>
+        <target state="accepted">阿拉巴马州</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Alaska" restype="string" datatype="x-objective-c">
+        <source>Alaska</source>
+        <target state="accepted">阿拉斯加州</target>
+      </trans-unit>
+      <trans-unit id="3" resname="Arizona" restype="string" datatype="x-objective-c">
+        <source>Arizona</source>
+        <target state="accepted">亚利桑那</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Arkansas" restype="string" datatype="x-objective-c">
+        <source>Arkansas</source>
+        <target state="accepted">阿肯色州</target>
+      </trans-unit>
+      <trans-unit id="5" resname="California" restype="string" datatype="x-objective-c">
+        <source>California</source>
+        <target state="accepted">加利福尼亚</target>
+      </trans-unit>
+      <trans-unit id="6" resname="Colorado" restype="string" datatype="x-objective-c">
+        <source>Colorado</source>
+        <target state="accepted">科罗拉多</target>
+      </trans-unit>
+      <trans-unit id="7" resname="Connecticut" restype="string" datatype="x-objective-c">
+        <source>Connecticut</source>
+        <target state="accepted">康涅狄格</target>
+      </trans-unit>
+      <trans-unit id="8" resname="District of Columbia" restype="string" datatype="x-objective-c">
+        <source>District of Columbia</source>
+        <target state="accepted">哥伦比亚特区</target>
+      </trans-unit>
+      <trans-unit id="9" resname="Delaware" restype="string" datatype="x-objective-c">
+        <source>Delaware</source>
+        <target state="accepted">特拉华</target>
+      </trans-unit>
+      <trans-unit id="10" resname="Florida" restype="string" datatype="x-objective-c">
+        <source>Florida</source>
+        <target state="accepted">佛罗里达</target>
+      </trans-unit>
+      <trans-unit id="11" resname="Georgia" restype="string" datatype="x-objective-c">
+        <source>Georgia</source>
+        <target state="accepted">格鲁吉亚</target>
+      </trans-unit>
+      <trans-unit id="12" resname="Hawaii" restype="string" datatype="x-objective-c">
+        <source>Hawaii</source>
+        <target state="accepted">夏威夷</target>
+      </trans-unit>
+      <trans-unit id="13" resname="Idaho" restype="string" datatype="x-objective-c">
+        <source>Idaho</source>
+        <target state="accepted">爱达荷州</target>
+      </trans-unit>
+      <trans-unit id="14" resname="Illinois" restype="string" datatype="x-objective-c">
+        <source>Illinois</source>
+        <target state="accepted">伊利诺伊州</target>
+      </trans-unit>
+      <trans-unit id="15" resname="Indiana" restype="string" datatype="x-objective-c">
+        <source>Indiana</source>
+        <target state="accepted">印第安纳</target>
+      </trans-unit>
+      <trans-unit id="16" resname="Iowa" restype="string" datatype="x-objective-c">
+        <source>Iowa</source>
+        <target state="accepted">爱荷华州</target>
+      </trans-unit>
+      <trans-unit id="17" resname="Kansas" restype="string" datatype="x-objective-c">
+        <source>Kansas</source>
+        <target state="accepted">堪萨斯州</target>
+      </trans-unit>
+      <trans-unit id="18" resname="Kentucky" restype="string" datatype="x-objective-c">
+        <source>Kentucky</source>
+        <target state="accepted">肯塔基州</target>
+      </trans-unit>
+      <trans-unit id="19" resname="Louisiana" restype="string" datatype="x-objective-c">
+        <source>Louisiana</source>
+        <target state="accepted">路易斯安那州</target>
+      </trans-unit>
+      <trans-unit id="20" resname="Maine" restype="string" datatype="x-objective-c">
+        <source>Maine</source>
+        <target state="accepted">缅因州</target>
+      </trans-unit>
+      <trans-unit id="21" resname="Maryland" restype="string" datatype="x-objective-c">
+        <source>Maryland</source>
+        <target state="accepted">马里兰</target>
+      </trans-unit>
+      <trans-unit id="22" resname="Massachusetts" restype="string" datatype="x-objective-c">
+        <source>Massachusetts</source>
+        <target state="accepted">马萨诸塞</target>
+      </trans-unit>
+      <trans-unit id="23" resname="Michigan" restype="string" datatype="x-objective-c">
+        <source>Michigan</source>
+        <target state="accepted">密歇根州</target>
+      </trans-unit>
+      <trans-unit id="24" resname="Minnesota" restype="string" datatype="x-objective-c">
+        <source>Minnesota</source>
+        <target state="accepted">明尼苏达州</target>
+      </trans-unit>
+      <trans-unit id="25" resname="Mississippi" restype="string" datatype="x-objective-c">
+        <source>Mississippi</source>
+        <target state="accepted">密西西比州</target>
+      </trans-unit>
+      <trans-unit id="26" resname="Missouri" restype="string" datatype="x-objective-c">
+        <source>Missouri</source>
+        <target state="accepted">密苏里州</target>
+      </trans-unit>
+      <trans-unit id="27" resname="Montana" restype="string" datatype="x-objective-c">
+        <source>Montana</source>
+        <target state="accepted">蒙大拿</target>
+      </trans-unit>
+      <trans-unit id="28" resname="Nebraska" restype="string" datatype="x-objective-c">
+        <source>Nebraska</source>
+        <target state="accepted">内布拉斯加州</target>
+      </trans-unit>
+      <trans-unit id="29" resname="Nevada" restype="string" datatype="x-objective-c">
+        <source>Nevada</source>
+        <target state="accepted">内华达州</target>
+      </trans-unit>
+      <trans-unit id="30" resname="New Hampshire" restype="string" datatype="x-objective-c">
+        <source>New Hampshire</source>
+        <target state="accepted">新罕布什尔</target>
+      </trans-unit>
+      <trans-unit id="31" resname="New Jersey" restype="string" datatype="x-objective-c">
+        <source>New Jersey</source>
+        <target state="accepted">新泽西州</target>
+      </trans-unit>
+      <trans-unit id="32" resname="New Mexico" restype="string" datatype="x-objective-c">
+        <source>New Mexico</source>
+        <target state="accepted">新墨西哥</target>
+      </trans-unit>
+      <trans-unit id="33" resname="New York" restype="string" datatype="x-objective-c">
+        <source>New York</source>
+        <target state="accepted">纽约</target>
+      </trans-unit>
+      <trans-unit id="34" resname="North Carolina" restype="string" datatype="x-objective-c">
+        <source>North Carolina</source>
+        <target state="accepted">北卡罗来纳</target>
+      </trans-unit>
+      <trans-unit id="35" resname="North Dakota" restype="string" datatype="x-objective-c">
+        <source>North Dakota</source>
+        <target state="accepted">北达科他州</target>
+      </trans-unit>
+      <trans-unit id="36" resname="Ohio" restype="string" datatype="x-objective-c">
+        <source>Ohio</source>
+        <target state="accepted">俄亥俄</target>
+      </trans-unit>
+      <trans-unit id="37" resname="Oklahoma" restype="string" datatype="x-objective-c">
+        <source>Oklahoma</source>
+        <target state="accepted">俄克拉荷马州</target>
+      </trans-unit>
+      <trans-unit id="38" resname="Oregon" restype="string" datatype="x-objective-c">
+        <source>Oregon</source>
+        <target state="accepted">俄勒冈州</target>
+      </trans-unit>
+      <trans-unit id="39" resname="Pennsylvania" restype="string" datatype="x-objective-c">
+        <source>Pennsylvania</source>
+        <target state="accepted">宾夕法尼亚</target>
+      </trans-unit>
+      <trans-unit id="40" resname="Rhode Island" restype="string" datatype="x-objective-c">
+        <source>Rhode Island</source>
+        <target state="accepted">罗德岛</target>
+      </trans-unit>
+      <trans-unit id="41" resname="South Carolina" restype="string" datatype="x-objective-c">
+        <source>South Carolina</source>
+        <target state="accepted">南卡罗来纳</target>
+      </trans-unit>
+      <trans-unit id="42" resname="South Dakota" restype="string" datatype="x-objective-c">
+        <source>South Dakota</source>
+        <target state="accepted">南达科他州</target>
+      </trans-unit>
+      <trans-unit id="43" resname="Tennessee" restype="string" datatype="x-objective-c">
+        <source>Tennessee</source>
+        <target state="accepted">田纳西州</target>
+      </trans-unit>
+      <trans-unit id="44" resname="Texas" restype="string" datatype="x-objective-c">
+        <source>Texas</source>
+        <target state="accepted">德克萨斯州</target>
+      </trans-unit>
+      <trans-unit id="45" resname="Utah" restype="string" datatype="x-objective-c">
+        <source>Utah</source>
+        <target state="accepted">犹他州</target>
+      </trans-unit>
+      <trans-unit id="46" resname="Vermont" restype="string" datatype="x-objective-c">
+        <source>Vermont</source>
+        <target state="accepted">佛蒙特</target>
+      </trans-unit>
+      <trans-unit id="47" resname="Virginia" restype="string" datatype="x-objective-c">
+        <source>Virginia</source>
+        <target state="accepted">弗吉尼亚州</target>
+      </trans-unit>
+      <trans-unit id="48" resname="Washington" restype="string" datatype="x-objective-c">
+        <source>Washington</source>
+        <target state="accepted">华盛顿</target>
+      </trans-unit>
+      <trans-unit id="49" resname="West Virginia" restype="string" datatype="x-objective-c">
+        <source>West Virginia</source>
+        <target state="accepted">西弗吉尼亚</target>
+      </trans-unit>
+      <trans-unit id="50" resname="Wisconsin" restype="string" datatype="x-objective-c">
+        <source>Wisconsin</source>
+        <target state="accepted">威斯康星州</target>
+      </trans-unit>
+      <trans-unit id="51" resname="Wyoming" restype="string" datatype="x-objective-c">
+        <source>Wyoming</source>
+        <target state="accepted">怀俄明</target>
       </trans-unit>
     </body>
   </file>
