@@ -7024,7 +7024,7 @@
       </trans-unit>
       <trans-unit id="9426" resname="r796072103" restype="string" datatype="x-haml">
         <source>&#40;Fox Business&#41;. You can also build a strong referral network and connect with peers from Medical School, Residency, and beyond.</source>
-        <target>&#40;Fox Business&#41。您还可以建立一个强大的转诊网络，与来自医学院、在高级专科住院实习的同龄人交流。</target>
+        <target>&#40;Fox Business&#41;。您还可以建立一个强大的转诊网络，与来自医学院、在高级专科住院实习的同龄人交流。</target>
       </trans-unit>
     </body>
   </file>
