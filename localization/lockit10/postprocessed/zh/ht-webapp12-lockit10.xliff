@@ -20,7 +20,7 @@
     <body>
       <trans-unit id="410" resname="Your shift:&lt;br&gt; {shift}" restype="string" datatype="javascript">
         <source>Your shift:&lt;br&gt; {shift}</source>
-        <target state="new">你的坐诊时间:&lt;br&gt; {shift}</target>
+        <target state="new">您的轮班时间:&lt;br&gt; {shift}</target>
       </trans-unit>
     </body>
   </file>
@@ -28,7 +28,7 @@
     <body>
       <trans-unit id="411" resname="Shift cancellations for:&lt;br&gt; {shiftText}" restype="string" datatype="javascript">
         <source>Shift cancellations for:&lt;br&gt; {shiftText}</source>
-        <target state="new">取消坐诊因为:&lt;br&gt; {shiftText}</target>
+        <target state="new">取消轮班因为:&lt;br&gt; {shiftText}</target>
       </trans-unit>
     </body>
   </file>
@@ -116,7 +116,7 @@
     <body>
       <trans-unit id="423" resname="1#1 doctor agrees|#{count} doctors agree" restype="string" datatype="javascript">
         <source>1#1 doctor agrees|#{count} doctors agree</source>
-        <target state="new">1#1 个医生同意|#{count} 个医生同意</target>
+        <target state="new">1#1 名医生同意|#{count} 名医生同意</target>
       </trans-unit>
     </body>
   </file>
@@ -136,7 +136,7 @@
     <body>
       <trans-unit id="429" resname="{height_ft}&apos;{height_in}&quot; ({height_meters}m)" restype="string" datatype="javascript">
         <source>{height_ft}'{height_in}" ({height_meters}m)</source>
-        <target state="new">{height_ft}'{height_in}" ({height_meters}米)</target>
+        <target state="new">{height_ft}英尺{height_in}英寸 ({height_meters}米)</target>
       </trans-unit>
       <trans-unit id="430" resname="{weight_kilograms}kg" restype="string" datatype="javascript">
         <source>{weight_kilograms}kg</source>
@@ -196,19 +196,19 @@
     <body>
       <trans-unit id="438" resname="1#Saved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; Life|#Saved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; Lives" restype="string" datatype="javascript">
         <source>1#Saved &lt;span class="orange"&gt;1&lt;/span&gt; Life|#Saved &lt;span class="orange"&gt;{n}&lt;/span&gt; Lives</source>
-        <target state="new">1#得救 &lt;span class="orange"&gt;1&lt;/span&gt; 生命|#得救 &lt;span class="orange"&gt;{n}&lt;/span&gt; 生命</target>
+        <target state="new">1#拯救了 &lt;span class="orange"&gt;1&lt;/span&gt; 生命|#拯救了 &lt;span class="orange"&gt;{n}&lt;/span&gt; 生命</target>
       </trans-unit>
       <trans-unit id="439" resname="1#Helped &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; person|#Helped &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; people" restype="string" datatype="javascript">
         <source>1#Helped &lt;span class="orange"&gt;1&lt;/span&gt; person|#Helped &lt;span class="orange"&gt;{n}&lt;/span&gt; people</source>
-        <target state="new">1#被帮助 &lt;span class="orange"&gt;1&lt;/span&gt; 人|#被帮助 &lt;span class="orange"&gt;{n}&lt;/span&gt; 人</target>
+        <target state="new">1#帮助了 &lt;span class="orange"&gt;1&lt;/span&gt; 人|#帮助了 &lt;span class="orange"&gt;{n}&lt;/span&gt; 人</target>
       </trans-unit>
       <trans-unit id="440" resname="1#Received &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; doctor agrees|#Received &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; doctor agrees" restype="string" datatype="javascript">
         <source>1#Received &lt;span class="orange"&gt;1&lt;/span&gt; doctor agrees|#Received &lt;span class="orange"&gt;{n}&lt;/span&gt; doctor agrees</source>
-        <target state="new">1#收到 &lt;span class="orange"&gt;1&lt;/span&gt; 医生同意|#收到 &lt;span class="orange"&gt;{n}&lt;/span&gt; 医生同意</target>
+        <target state="new">1#收到了 &lt;span class="orange"&gt;1&lt;/span&gt; 医生同意|#收到了 &lt;span class="orange"&gt;{n}&lt;/span&gt; 医生同意</target>
       </trans-unit>
       <trans-unit id="441" resname="1#Recieved &lt;span class=&quot;orange&quot;&gt;1&lt;/span&gt; thank|#Recieved &lt;span class=&quot;orange&quot;&gt;{n}&lt;/span&gt; thanks" restype="string" datatype="javascript">
         <source>1#Recieved &lt;span class="orange"&gt;1&lt;/span&gt; thank|#Recieved &lt;span class="orange"&gt;{n}&lt;/span&gt; thanks</source>
-        <target state="new">1#收到 &lt;span class="orange"&gt;1&lt;/span&gt; 感谢|# &lt;span class="orange"&gt;{n}&lt;/span&gt; 感谢</target>
+        <target state="new">1#收到了 &lt;span class="orange"&gt;1&lt;/span&gt; 感谢|#收到了 &lt;span class="orange"&gt;{n}&lt;/span&gt; 感谢</target>
       </trans-unit>
     </body>
   </file>
@@ -236,11 +236,11 @@
       </trans-unit>
       <trans-unit id="446" resname="1#Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|#Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees" restype="string" datatype="javascript">
         <source>1#Received: &lt;span&gt;1&lt;/span&gt; doctor agrees|#Received: &lt;span&gt;{n}&lt;/span&gt; doctor agrees</source>
-        <target state="new">1#已收到: &lt;span&gt;1&lt;/span&gt; 个医生同意|#已收到: &lt;span&gt;{n}&lt;/span&gt; 个医生同意</target>
+        <target state="new">1#收到了: &lt;span&gt;1&lt;/span&gt; 个医生同意|#收到了: &lt;span&gt;{n}&lt;/span&gt; 个医生同意</target>
       </trans-unit>
       <trans-unit id="447" resname="1#Received: &lt;span&gt;1&lt;/span&gt; thank|#Received: &lt;span&gt;{n}&lt;/span&gt; thanks" restype="string" datatype="javascript">
         <source>1#Received: &lt;span&gt;1&lt;/span&gt; thank|#Received: &lt;span&gt;{n}&lt;/span&gt; thanks</source>
-        <target state="new">1#已收到: &lt;span&gt;1&lt;/span&gt; 个谢谢|#已收到: &lt;span&gt;{n}&lt;/span&gt; 个谢谢</target>
+        <target state="new">1#收到了: &lt;span&gt;1&lt;/span&gt; 个谢谢|#收到了: &lt;span&gt;{n}&lt;/span&gt; 个谢谢</target>
       </trans-unit>
     </body>
   </file>
@@ -256,7 +256,7 @@
     <body>
       <trans-unit id="449" resname="We&apos;re sorry, virtual consults are not yet available in {state}" restype="string" datatype="javascript">
         <source>We're sorry, virtual consults are not yet available in {state}</source>
-        <target state="new">抱歉，在{state}在线诊疗不工作</target>
+        <target state="new">抱歉，在{state}没有在线诊疗功能</target>
       </trans-unit>
     </body>
   </file>
@@ -284,7 +284,7 @@
     <body>
       <trans-unit id="453" resname="We&apos;ll stop sending you announcements and notifications by email from now on. We&apos;ll miss you :(" restype="string" datatype="javascript">
         <source>We'll stop sending you announcements and notifications by email from now on. We'll miss you :(</source>
-        <target state="new">我们会停止发信和讯息，我们会想你 :(</target>
+        <target state="new">我们会停止发信和讯息，我们会想您 :(</target>
       </trans-unit>
     </body>
   </file>
@@ -400,7 +400,7 @@
     <body>
       <trans-unit id="473" resname="No {specialist_name} is available right now.           You may still consult one by secure message or appointment." restype="string" datatype="javascript">
         <source>No {specialist_name} is available right now.           You may still consult one by secure message or appointment.</source>
-        <target state="new">{specialist_name}现在没空.           您还可以用短信或预约咨询.</target>
+        <target state="new">{specialist_name}现在没空。           您还可以用短信或预约咨询.</target>
       </trans-unit>
     </body>
   </file>
@@ -517,7 +517,7 @@
     <body>
       <trans-unit id="7" resname="r290077816" restype="string" datatype="ruby">
         <source>To add other group affiliations to your HealthTap profile, edit your Virtual Practice page. Learn more &amp;raquo;</source>
-        <target state="new">要将其他组织成员添加到您的HealthTap档案，请编辑您的虚拟实践页面。了解更多 &amp;raquo;</target>
+        <target state="new">要将其他组织成员添加到您的HealthTap档案，请编辑您的在线诊疗页面。了解更多 &amp;raquo;</target>
       </trans-unit>
       <trans-unit id="8" resname="r783010191" restype="string" datatype="ruby">
         <source>Providing helpful answers: answer more</source>
@@ -541,7 +541,7 @@
       </trans-unit>
       <trans-unit id="13" resname="r801361737" restype="string" datatype="ruby">
         <source>Once you have declared your “Known For” topics you have the ability to showcase your expertise in this area and earn the #1 spot on your block, in your neighborhood, city, state, and beyond! You can be the best in your known for areas simply by doing what you do best — helping people who are looking for your expertise. Learn more &amp;raquo;</source>
-        <target state="new">一旦您有了您“闻名的”主题，您将可以在这里展示您在这方面的专业知识，并获得在你的街区，在你家附近，城市，国家甚至更远地方的#关注度！您可以通过做您最擅长的东西 - 帮助需要您专业知识的人，从而成为你所在的领域最好的一员。了解详情 &amp;raquo;</target>
+        <target state="new">一旦您有了您“专攻”主题，您将可以在这里展示您在这方面的专业知识，并获得在你的街区，在你家附近，城市，国家甚至更远地方的#关注度！您可以通过做您最擅长的东西 - 帮助需要您专业知识的人，从而成为你所在的领域最好的一员。了解详情 &amp;raquo;</target>
       </trans-unit>
       <trans-unit id="14" resname="r554919936" restype="string" datatype="ruby">
         <source>Adding a video to a Wellness page is a great way to inspire others to improve their health and well-being. Learn more here about our Wellness pages and how to submit your videos directly on HealthTap or via email.</source>
@@ -561,19 +561,19 @@
     <body>
       <trans-unit id="16" resname="r52236871" restype="plural" datatype="ruby" extype="one">
         <source>1 doctor weighed in:</source>
-        <target state="new">一位医生参与了:</target>
+        <target state="new">一位医生权衡了:</target>
       </trans-unit>
       <trans-unit id="17" resname="r52236871" restype="plural" datatype="ruby" extype="other">
         <source>%{count} doctors weighed in:</source>
-        <target state="new">%{count}位医生参与了:</target>
+        <target state="new">%{count}位医生权衡了:</target>
       </trans-unit>
       <trans-unit id="18" resname="r694579149" restype="plural" datatype="ruby" extype="one">
         <source>1 doctor weighed in</source>
-        <target state="new">一位医生参与了</target>
+        <target state="new">一位医生权衡了</target>
       </trans-unit>
       <trans-unit id="19" resname="r694579149" restype="plural" datatype="ruby" extype="other">
         <source>%{count} doctors weighed in</source>
-        <target state="new">%{count}位医生参与了</target>
+        <target state="new">%{count}位医生权衡了</target>
       </trans-unit>
       <trans-unit id="20" resname="r734656289" restype="plural" datatype="ruby" extype="one">
         <source>&lt;span class="num"&gt;1&lt;/span&gt; comment</source>
@@ -634,7 +634,7 @@
       </trans-unit>
       <trans-unit id="28" resname="r654595923" restype="string" datatype="ruby">
         <source>HealthTap helps you 'prepare...to ask smarter questions when [you] get to the doctor's office'.</source>
-        <target state="new">HealthTap帮助你准备...当你到达医生办公室时要问更直接了当的问题。</target>
+        <target state="new">HealthTap帮助您准备...当您到达医生办公室时可以问更直接了当的问题。</target>
       </trans-unit>
       <trans-unit id="29" resname="r821252415" restype="string" datatype="ruby">
         <source>HealthTap’s Q&amp;amp;A service sees 7.5M uniques per month, with MDs spending an hour per session providing 581m answers.</source>
@@ -650,7 +650,7 @@
       </trans-unit>
       <trans-unit id="32" resname="r455048854" restype="string" datatype="ruby">
         <source>HealthTap 'just might make you raise both eyebrows in surprise'.</source>
-        <target state="new">HealthTap '绝对让你眼前一亮'.</target>
+        <target state="new">HealthTap '绝对让您眼前一亮'.</target>
       </trans-unit>
       <trans-unit id="33" resname="r826633556" restype="string" datatype="ruby">
         <source>What HealthTap is doing is revolutionary.</source>
@@ -670,7 +670,7 @@
       </trans-unit>
       <trans-unit id="37" resname="r994522921" restype="string" datatype="ruby">
         <source>HealthTap isn't the only service that puts real doctors on your computer screen or on your smartphone, but it's the best we've seen</source>
-        <target state="new">HealthTap并不是唯一一个让你把医生带在身边的服务, 但是她是迄今为止最好的在线医疗服务</target>
+        <target state="new">HealthTap并不是唯一一个让您把医生带在身边的服务, 但是她是迄今为止最好的在线医疗服务</target>
       </trans-unit>
       <trans-unit id="38" resname="r635663345" restype="string" datatype="ruby">
         <source>HealthTap Unveils Micropayment System and Doctor Chat</source>
@@ -682,7 +682,7 @@
       </trans-unit>
       <trans-unit id="40" resname="r1055836732" restype="string" datatype="ruby">
         <source>HealthTap is...involving physicians in the conversations and by personalizing information to each person's individual needs.</source>
-        <target state="new">HealthTap让你在和医生面诊时更加私人订制</target>
+        <target state="new">HealthTap让您在和医生面诊时更加私人订制</target>
       </trans-unit>
       <trans-unit id="41" resname="r559742024" restype="string" datatype="ruby">
         <source>HealthTap distinguishes itself from other health education websites by having practicing physicians answer the consumers' questions.</source>
@@ -718,11 +718,11 @@
       </trans-unit>
       <trans-unit id="49" resname="r900900038" restype="string" datatype="ruby">
         <source>What if you could have the best of both worlds – speaking to a real, live doctor and receiving quick answers without leaving home? HealthTap launched to provide people the ability to ask personal health questions to licensed physicians via the web and mobile devices.</source>
-        <target state="new">如果你能同时拥有两个最好的选择 - 对一个真正的医生说话，并得到快速的答案，同时也不用离开家？ HealthTap提供人们通过网络和移动设备向有执照的医生询问个人健康问题的能力。</target>
+        <target state="new">如果您能同时拥有两个最好的选择 - 对一个真正的医生说话，并得到快速的答案，同时也不用离开家？ HealthTap提供人们通过网络和移动设备向有执照的医生询问个人健康问题的能力。</target>
       </trans-unit>
       <trans-unit id="50" resname="r147082462" restype="string" datatype="ruby">
         <source>Like HealthTap, TipTaps are free and each tip is created for you by the world’s best doctors.</source>
-        <target state="new">像HealthTap一样，TipTaps是免费的，每个小贴士是世界上最好的医生为您创建的。</target>
+        <target state="new">像HealthTap一样，推心小贴士是免费的，每个小贴士是世界上最好的医生为您创建的。</target>
       </trans-unit>
       <trans-unit id="51" resname="r429499317" restype="string" datatype="ruby">
         <source>HealthTap has just released their newest venture for taking charge of our own health and well being: AppRX.</source>
@@ -734,7 +734,7 @@
     <body>
       <trans-unit id="52" resname="r206516038" restype="string" datatype="ruby">
         <source>Nice to meet you! I'm %{doc_name}, and I'm a Board Certified U.S. doctor. Can we answer a health question for you?</source>
-        <target state="new">很高兴认识你， 我是 %{doc_name}, 我是一个董事会认证的美国医生。我们能为你回答健康问题吗？</target>
+        <target state="new">很高兴认识您， 我是 %{doc_name}, 我是一个医疗委员会认证的美国医生。我们能为您回答健康问题吗？</target>
       </trans-unit>
     </body>
   </file>
@@ -742,7 +742,7 @@
     <body>
       <trans-unit id="53" resname="r228338120" restype="string" datatype="ruby">
         <source>WHAT MAKES PEOPLE FEEL GOOD?</source>
-        <target state="new">什么让人们感觉特别健康</target>
+        <target state="new">什么让人们FEEL GOOD?</target>
       </trans-unit>
     </body>
   </file>
@@ -766,11 +766,11 @@
     <body>
       <trans-unit id="57" resname="r786893194" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark} — your personal %{ai_serif}-powered "physician"</source>
-        <target state="new">智能医生 — 你私人的%{ai_serif}电力医生</target>
+        <target state="new">智能医生 — 您私人的%{ai_serif}医生</target>
       </trans-unit>
       <trans-unit id="58" resname="r655383491" restype="string" datatype="ruby">
         <source>Based on your symptoms, Dr. %{ai_trademark} routes or "triages" you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</source>
-        <target state="new">根据您的症状，智能医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，智能医生能立即通过症状来制订一套感觉良好的治疗方案。</target>
+        <target state="new">根据您的症状，智能医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，智能医生能立即通过症状来制订一套Feel Good的治疗方案。</target>
       </trans-unit>
     </body>
   </file>
@@ -822,7 +822,7 @@
     <body>
       <trans-unit id="68" resname="r691446454" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered "physician", trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>
-        <target state="new">智能医生，是由医生训练的您私人的%{ai_serif}电力医生，根据您的症状为您私人定制治疗方案。</target>
+        <target state="new">智能医生，是由医生训练的您私人的%{ai_serif}医生，根据您的症状为您私人定制治疗方案。</target>
       </trans-unit>
     </body>
   </file>
@@ -898,17 +898,17 @@
     <body>
       <trans-unit id="82" resname="r499403269" restype="string" datatype="ruby">
         <source>doctors agreed:</source>
-        <target state="new">医生认同：</target>
+        <target state="new">医生同意了：</target>
         <note annotates="source">TODO pluralization</note>
       </trans-unit>
       <trans-unit id="83" resname="r462620720" restype="string" datatype="ruby">
         <source>doctor agreed:</source>
-        <target state="new">医生认同：</target>
+        <target state="new">医生同意了：</target>
         <note annotates="source">TODO pluralization</note>
       </trans-unit>
       <trans-unit id="84" resname="r534045277" restype="string" datatype="ruby">
         <source>other doctor agreed</source>
-        <target state="new">其他医生认同</target>
+        <target state="new">其他医生同意了</target>
         <note annotates="source">TODO pluralization</note>
       </trans-unit>
     </body>
@@ -917,7 +917,7 @@
     <body>
       <trans-unit id="85" resname="r860620556" restype="string" datatype="ruby">
         <source>other doctors agreed</source>
-        <target state="new">其他医生认同</target>
+        <target state="new">其他医生同意了</target>
         <note annotates="source">TODO pluralization</note>
       </trans-unit>
     </body>
@@ -938,7 +938,7 @@
     <body>
       <trans-unit id="88" resname="r833997894" restype="string" datatype="ruby">
         <source>Wow! you completed this %{count} times in a row! :)</source>
-        <target state="new">哇！ 你完成了这个%{count}次！:)</target>
+        <target state="new">哇！ 您连续完成了%{count}次！:)</target>
       </trans-unit>
       <trans-unit id="89" resname="r965172792" restype="string" datatype="ruby">
         <source>Thank Dr. %{last_name}</source>
@@ -978,7 +978,7 @@
     <body>
       <trans-unit id="94" resname="r114728304" restype="string" datatype="ruby">
         <source>Join today for free to feel good and improve your health!</source>
-        <target state="new">今天免费加入，尽快提高健康感觉良好！</target>
+        <target state="new">今天免费加入，尽快提高健康Feel Good！</target>
       </trans-unit>
     </body>
   </file>
@@ -1083,11 +1083,11 @@
     <body>
       <trans-unit id="108" resname="r384457466" restype="string" datatype="ruby">
         <source>Be easy to understand: Questions must be in English, easy to understand, and about health or wellness topics.</source>
-        <target state="new">简单明了： 提问必须使用英文、简单明了，而且必须是有关于健康主题.</target>
+        <target state="new">简单明了： 提问必须使用英文、简单明了，而且必须是有关于健康主题的。</target>
       </trans-unit>
       <trans-unit id="109" resname="r724618421" restype="string" datatype="ruby">
         <source>Check spelling of words and medicines: Medications in different countries use different names, so be sure to include the generic name of the medication. Our experts are U.S.-licensed doctors and rarely answer questions about uniquely foreign medications they are not familiar with, or about hospitals or procedures in other countries that they have not visited.</source>
-        <target state="new">检查错字: 药物在不同的国家有不同的名字，请务必提供药物的通用名称。 我们在美国的医师们很少会回答他们不熟系的外国药物、或是回答关于他们没有访问过的其他国家的医院或医疗程序。</target>
+        <target state="new">检查错字: 药物在不同的国家有不同的名字，请务必提供药物的通用（仿制药）名称。 我们在美国的医师们很少会回答他们不熟系的外国药物、或是回答关于他们没有访问过的其他国家的医院或医疗程序。</target>
       </trans-unit>
       <trans-unit id="110" resname="r728929077" restype="string" datatype="ruby">
         <source>Unlimited consults with doctors 24/7 using a PC or any mobile device!</source>
@@ -1139,7 +1139,7 @@
     <body>
       <trans-unit id="119" resname="r1056061371" restype="string" datatype="ruby">
         <source>Board Certified,</source>
-        <target state="new">经过专业认证,</target>
+        <target state="new">美国医学委员会认证,</target>
       </trans-unit>
     </body>
   </file>
@@ -1155,7 +1155,7 @@
     <body>
       <trans-unit id="121" resname="r61634873" restype="string" datatype="ruby">
         <source>Do's And Don'ts</source>
-        <target state="new">为与不为</target>
+        <target state="new">要求与禁忌</target>
       </trans-unit>
       <trans-unit id="122" resname="r761774429" restype="string" datatype="ruby">
         <source>Haiku</source>
@@ -1299,7 +1299,7 @@
       </trans-unit>
       <trans-unit id="156" resname="r644859572" restype="plural" datatype="ruby" extype="one">
         <source>%{num}x a week</source>
-        <target state="new">%一周{num}次</target>
+        <target state="new">一周%{num}次</target>
       </trans-unit>
       <trans-unit id="157" resname="r644859572" restype="plural" datatype="ruby" extype="other">
         <source>%{num}x weeks</source>
@@ -1727,31 +1727,31 @@
     <body>
       <trans-unit id="262" resname="r443005047" restype="string" datatype="ruby">
         <source>%{person}, %{specialty} commented on your answer to a question "%{q_text}". See the comment.</source>
-        <target state="new">%{person}, %{specialty} 评论了你对问题"%{q_text}"的回答。请看评论。</target>
+        <target state="new">%{person}, %{specialty} 评论了您对问题"%{q_text}"的回答。请看评论。</target>
       </trans-unit>
       <trans-unit id="263" resname="r323108680" restype="string" datatype="ruby">
         <source>You're leading the way! Your answer to "%{q_text}" is now the Top Answer! Keep it up!</source>
-        <target state="new">你一路领先！您对问题 "%{q_text}" 的回答现在已经是最佳答案！请继续保持！</target>
+        <target state="new">您一路领先！您对问题 "%{q_text}" 的回答现在已经是最佳答案！请继续保持！</target>
       </trans-unit>
       <trans-unit id="264" resname="r198019584" restype="string" datatype="ruby">
         <source>%{person} (%{specialty}) had something to add to %{other_person}'s answer to your question "%{q_text} " See the comment.</source>
-        <target state="new">%{person} (%{specialty}) 给你的问题 "%{q_text} " 上%{other_person}的回答添加了一个评论。看评论。</target>
+        <target state="new">%{person} (%{specialty}) 给您的问题 "%{q_text} " 上%{other_person}的回答添加了一个评论。看评论。</target>
       </trans-unit>
       <trans-unit id="265" resname="r483003784" restype="string" datatype="ruby">
         <source>Congrats! You have earned a medal! %{name}: %{trigger}Unlock the %{next_name} medal next. Learn How &amp;raquo;</source>
-        <target state="new">恭喜! 你获得了一个奖牌! %{name}: %{trigger}解锁下一个 %{next_name} 奖牌. 学习如何继续 &amp;raquo;</target>
+        <target state="new">恭喜! 您获得了一个奖牌! %{name}: %{trigger}解锁下一个 %{next_name} 奖牌. 学习如何继续 &amp;raquo;</target>
       </trans-unit>
       <trans-unit id="266" resname="r598561090" restype="string" datatype="ruby">
         <source>Congrats! You have earned a medal! %{name}: %{trigger}</source>
-        <target state="new">恭喜! 你获得了一个奖牌! %{name}: %{trigger}</target>
+        <target state="new">恭喜! 您获得了一个奖牌! %{name}: %{trigger}</target>
       </trans-unit>
       <trans-unit id="267" resname="r881943152" restype="string" datatype="ruby">
         <source>Another doctor in our medical expert network thinks you're right. %{person} (%{specialty}%{place}) agrees with your answer to "%{q_text}". See the answer.</source>
-        <target state="new">我们的医疗专家网络中的另一个医生认同了你的观点。 %{person} (%{specialty}%{place}) 赞同你对于问题 "%{q_text}"的回答。 看回答。</target>
+        <target state="new">我们的医疗专家网络中的另一个医生认同了您的观点。 %{person} (%{specialty}%{place}) 赞同您对于问题 "%{q_text}"的回答。 看回答。</target>
       </trans-unit>
       <trans-unit id="268" resname="r805442684" restype="string" datatype="ruby">
         <source>A HealthTap Scholar thinks you're right. %{person} (%{specialty}%{place}) agrees with your answer to "%{q_text}". See the answer.</source>
-        <target state="new">我们的医疗专家网络中的另一个学者认同了你的观点。 %{person} (%{specialty}%{place}) 赞同你对于问题 "%{q_text}"的回答。看回答。</target>
+        <target state="new">我们的医疗专家网络中的另一个学者认同了您的观点。 %{person} (%{specialty}%{place}) 赞同您对于问题 "%{q_text}"的回答。看回答。</target>
       </trans-unit>
       <trans-unit id="269" resname="r1063646532" restype="string" datatype="ruby">
         <source>Good news! %{person} agrees with %{answerer}'s answer to a question you asked "%{q_text}". See the answer.</source>
@@ -1762,15 +1762,15 @@
       </trans-unit>
       <trans-unit id="271" resname="r536296903" restype="string" datatype="ruby">
         <source>%{person} sent you a thank you note for answering "%{q_text}" See the thank you note.</source>
-        <target state="new">%{person} 很感谢你回答了问题"%{q_text}"，并且给你发送了感谢信。看感谢信。</target>
+        <target state="new">%{person} 很感谢您回答了问题"%{q_text}"，并且给您发送了感谢信。看感谢信。</target>
       </trans-unit>
       <trans-unit id="272" resname="r143554789" restype="string" datatype="ruby">
         <source>%{expert} just answered a question you asked "%{q_text}". Go check it out.</source>
-        <target state="new">%{expert}刚刚回答了你的问题"%{q_text}"。去看看吧。</target>
+        <target state="new">%{expert}刚刚回答了您的问题"%{q_text}"。去看看吧。</target>
       </trans-unit>
       <trans-unit id="273" resname="r739190513" restype="string" datatype="ruby">
         <source>%{expert} just answered a question you're interested in "%{q_text}". Go check it out.</source>
-        <target state="new">%{expert}刚刚回答了你感兴趣的问题"%{q_text}"。去看看吧。</target>
+        <target state="new">%{expert}刚刚回答了您感兴趣的问题"%{q_text}"。去看看吧。</target>
       </trans-unit>
     </body>
   </file>
@@ -1778,7 +1778,7 @@
     <body>
       <trans-unit id="274" resname="r889985342" restype="string" datatype="ruby">
         <source>I found %{doctor_name}'s answer really helpful, and thought you might too:: "%{question}"</source>
-        <target state="new">我发现 %{doctor_name}的回答非常有帮助, 感觉你应该会感兴趣: "%{question}"</target>
+        <target state="new">我发现 %{doctor_name}的回答非常有帮助, 感觉您应该会感兴趣: "%{question}"</target>
       </trans-unit>
       <trans-unit id="275" resname="r219320126" restype="string" datatype="ruby">
         <source>I found this doctor answer really helpful, and thought you might too: "%{question_name}"</source>
@@ -1786,22 +1786,22 @@
       </trans-unit>
       <trans-unit id="276" resname="r325377029" restype="string" datatype="ruby">
         <source>I thought you like to check out %{goal} on HealthTap. HealthTap has thousands of answers, articles, tips, and checklists designed to help you with this goal, so you can smile and feel good all the time!</source>
-        <target state="new">我想你喜欢在HealthTap上查看%{goal}。HealthTap有数以千计的答案，文章，提示和检查表，旨在帮助您实现这一目标，所以你可以一直微笑和感觉良好！</target>
+        <target state="new">我想您喜欢在HealthTap上查看%{goal}。HealthTap有数以千计的答案，文章，提示和检查表，旨在帮助您实现这一目标，所以您可以一直微笑和Feel Good！</target>
       </trans-unit>
       <trans-unit id="277" resname="r6491183" restype="string" datatype="ruby">
         <source>I wanted to give you a code that will give you $%{amount} off on a subscription to HealthTap Prime, an exciting new digital health service that gives you unlimited Virtual Consults with top doctors 24/7 via video, voice, or text chat from any PC or mobile device. Use my code %{promo_code} and get $%{amount} in credits toward your HealthTap Prime subscription! With HealthTap Prime, you also get: Total peace of mind, since you can consult a doctor anytime night or day on any issue Prioritized answers to any health question you ask through HealthTap’s free service Health checklists and tips customized just for you Unlimited access to the world’s leading knowledgebase of doctor-created health information Total confidentiality, with HIPAA-secure systems that safeguard your privacySubscribe today for ultimate peace of mind!</source>
-        <target state="new">我想和你分享一个可以用来订阅HealthTap Prime并且给你%{amount}的优惠的优惠码，这是一个令人兴奋的新数字健康服务，给你无限的与顶级医生24/7通过视频，语音， 或从任何PC或移动设备的文本聊天的虚拟咨询。用我的优惠码%{promo_code}来得到$%{amount}的积分到你的HealthTap Prime订阅！使用HealthTap Prime，您还可以：完全安心，因为您可以任何时间随时咨询医生，无论白天还是夜晚。通过HealthTap的免费服务提出的任何健康问题的可以被标注优先回答。为您定制健康检查表和提示。世界领先的医生创建的健康信息知识库全面保密，使用HIPAA安全系统，保护您的隐私，立即订阅终极安心！</target>
+        <target state="new">我想和您分享一个可以用来订阅HealthTap Prime并且给您%{amount}的优惠的优惠码，这是一个令人兴奋的新数字健康服务，给您无限的与顶级医生24/7通过视频，语音， 或从任何PC或移动设备的文本聊天的在线咨询。用我的优惠码%{promo_code}来得到$%{amount}的积分到您的HealthTap Prime订阅！使用HealthTap Prime，您还可以：完全安心，因为您可以任何时间随时咨询医生，无论白天还是夜晚。通过HealthTap的免费服务提出的任何健康问题的可以被标注优先回答。为您定制健康检查表和提示。世界领先的医生创建的健康信息知识库全面保密，使用HIPAA安全系统，保护您的隐私，立即订阅终极安心！</target>
       </trans-unit>
       <trans-unit id="278" resname="r206263461" restype="string" datatype="ruby">
         <source>HealthTap is an exciting new service for improving your health and well-being. You can learn more about your health by getting trusted health information 24/7 from me and more than 63,000 of my colleagues—who are some of the top doctors in the United States. You can get help by requesting Virtual Consults through HealthTap Prime and Virtual Appointments through HealthTap Concierge. You can also take action by following the tips and checklists I created along with my colleagues. All this helps you focus more on your health and well-being so you feel good all the time!</source>
-        <target state="new">HealthTap是一个以改善你的健康和福祉的令人兴奋的新服务。您可以从我和超过63,000名同事（他们是美国的一些顶级医生）全天候获取可信赖的健康信息，从而了解您的健康状况。 您可以通过HealthTap Prime和在线预约过HealthTap Concierge请求Virtual Consults获取帮助。您也可以按照我与同事一起创建的提示和检查表采取行动。 所有这些都有助于你更多地关注你的健康和幸福，所以你总是感觉良好！</target>
+        <target state="new">HealthTap是一个以改善您的健康和福祉的令人兴奋的新服务。您可以从我和超过63,000名同事（他们是美国的一些顶级医生）全天候获取可信赖的健康信息，从而了解您的健康状况。 您可以通过HealthTap Prime和在线预约过HealthTap Concierge请求Virtual Consults获取帮助。您也可以按照我与同事一起创建的提示和检查表采取行动。 所有这些都有助于您更多地关注您的健康和幸福，所以您总是Feel Good！</target>
       </trans-unit>
       <trans-unit id="279" resname="r1070399980" restype="string" datatype="ruby">
         <source>I'm delighted to share with you a special keycode: %{key_code}, which will help you connect with me as my patient! Schedule appointments to video or text chat me live, or message me any time via my Virtual Practice!</source>
       </trans-unit>
       <trans-unit id="280" resname="r569166535" restype="string" datatype="ruby">
         <source>Hi, I just helped bring healthcare to those in need through HealthTap's Get health + Give health initiative! Because of my purchase, HealthTap donated %{bundle_value} doctor %{consult} to %{charity}. Virtual doctor consults bring high-quality medical expertise and top doctor knowledge. *Doctors are immediately available 24/7 *Get advice and prescriptions sent to your local pharmacy *Use a tailored action plan with timely, helpful reminders Help yourself while helping others: www.healthtap.com/get_and_give_health</source>
-        <target state="new">您好，我刚刚通过HealthTap的“给予健康•获得健康”活动，帮助了急需医疗保健的人！ 通过我的消费，HealthTap向%{charity}捐赠了%{bundle_value}名医生的%{咨询}。 虚拟医生诊疗集合了高质量的医疗专业知识和顶尖的医生智慧。*24/7随时随地能获得医生帮助*把建议和处方直接送至您指定的药房*使用私人订制的行动方案，及时、有效地提醒自己，同时也帮助他人：www.healthtap.com/get_and_give_health</target>
+        <target state="new">您好，我刚刚通过HealthTap的“给予健康•获得健康”活动，帮助了急需医疗保健的人！ 通过我的消费，HealthTap向%{charity}捐赠了%{bundle_value}名医生的%{consult}。 在线医生诊疗集合了高质量的医疗专业知识和顶尖的医生智慧。*24/7随时随地能获得医生帮助*把建议和处方直接送至您指定的药房*使用私人订制的行动方案，及时、有效地提醒自己，同时也帮助他人：www.healthtap.com/get_and_give_health</target>
       </trans-unit>
       <trans-unit id="281" resname="r67674159" restype="string" datatype="ruby">
         <source>Or call +1(415)429-1250 and type in pin %{room_pin} when prompted. &amp;nbsp;</source>
@@ -1845,12 +1845,12 @@
       </trans-unit>
       <trans-unit id="289" resname="r928320740" restype="string" datatype="ruby">
         <source>Hi there, want to send me a secure message?</source>
-        <target state="new">你好，想给我发一条安全的消息吗？</target>
+        <target state="new">您好，想给我发一条安全的消息吗？</target>
         <note annotates="source">TODO greeting</note>
       </trans-unit>
       <trans-unit id="290" resname="r17877413" restype="string" datatype="ruby">
         <source>Hi there, I haven’t heard back from you</source>
-        <target state="new">你好，我没有收到你的回音</target>
+        <target state="new">您好，我没有收到您的回音</target>
         <note annotates="source">TODO greeting</note>
       </trans-unit>
       <trans-unit id="291" resname="r195776156" restype="string" datatype="ruby">
@@ -1860,7 +1860,7 @@
       </trans-unit>
       <trans-unit id="292" resname="r125613331" restype="string" datatype="ruby">
         <source>"%{expert}'s Virtual Practice"</source>
-        <target state="new">"%{expert}的虚拟诊所"</target>
+        <target state="new">"%{expert}的在线诊疗"</target>
       </trans-unit>
       <trans-unit id="293" resname="r639597094" restype="string" datatype="ruby">
         <source>"HealthTap Quality Care"</source>
@@ -1952,7 +1952,7 @@
     <body>
       <trans-unit id="312" resname="r1068447080" restype="string" datatype="ruby">
         <source>Concierge Medicine for EveryoneTM</source>
-        <target state="new">人民的贵宾医疗TM</target>
+        <target state="new">每个人的贵宾医疗TM</target>
       </trans-unit>
       <trans-unit id="313" resname="r18391854" restype="string" datatype="ruby">
         <source>100% Guarantee. Only $99 per month for unlimited visits. Cancel anytime.</source>
@@ -1964,11 +1964,11 @@
     <body>
       <trans-unit id="314" resname="r141785011" restype="plural" datatype="ruby" extype="one">
         <source>1 doctor is available to help you</source>
-        <target state="new">一个医生可以帮助你。</target>
+        <target state="new">一个医生可以帮助您。</target>
       </trans-unit>
       <trans-unit id="315" resname="r141785011" restype="plural" datatype="ruby" extype="other">
         <source>%{count} doctors available to help you</source>
-        <target state="new">%{count}名医生可以帮助你。</target>
+        <target state="new">%{count}名医生可以帮助您。</target>
       </trans-unit>
     </body>
   </file>
@@ -1984,7 +1984,7 @@
     <body>
       <trans-unit id="318" resname="r489998666" restype="string" datatype="x-haml">
         <source>. That’s because we believe in smiling &amp;mdash; so much so that we've made it central to our culture, to who we are, and to what we do.</source>
-        <target>. 我们相信微笑的力量 &amp;mdash; 我们'把微笑融入公司文化。</target>
+        <target>. 我们相信微笑的力量 &amp;mdash; 我们把微笑融入公司文化。</target>
       </trans-unit>
     </body>
   </file>
@@ -2000,7 +2000,7 @@
     <body>
       <trans-unit id="320" resname="r927688850" restype="string" datatype="x-haml">
         <source>No</source>
-        <target>No</target>
+        <target>不</target>
       </trans-unit>
     </body>
   </file>
@@ -2023,8 +2023,8 @@
         <target>通过我们的网络您可咨询71000多名美国顶级医生，涉及超过137个专科领域，附属于世界顶尖的医院、大学和医疗机构。我们非常重视信用和服务质量，对所有的医生都进行了严格的资质审核和质控把关。我们仅选择各个专科领域的顶级医生，以确保客户得到最专业的会诊咨询服务。</target>
       </trans-unit>
       <trans-unit id="325" resname="r780941480" restype="string" datatype="x-haml">
-        <source>我曾经从医生手里拿到过一份报告，那份报告我完全看不懂。那周我预约了一次HealthTap咨询，接触到一位特别棒的医生，他的详细说明让我充分理解了报告的准确意思，非常专业和友好！谢谢你HealthTap！</source>
-        <target>我曾经从医生手里拿到过一份报告，那份报告我完全看不懂。那周我预约了一次HealthTap咨询，接触到一位特别棒的医生，他的详细说明让我充分理解了报告的准确意思，非常专业和友好！谢谢你HealthTap！</target>
+        <source>我曾经从医生手里拿到过一份报告，那份报告我完全看不懂。那周我预约了一次HealthTap咨询，接触到一位特别棒的医生，他的详细说明让我充分理解了报告的准确意思，非常专业和友好！谢谢您HealthTap！</source>
+        <target>我曾经从医生手里拿到过一份报告，那份报告我完全看不懂。那周我预约了一次HealthTap咨询，接触到一位特别棒的医生，他的详细说明让我充分理解了报告的准确意思，非常专业和友好！谢谢您HealthTap！</target>
       </trans-unit>
     </body>
   </file>
@@ -2048,7 +2048,7 @@
     <body>
       <trans-unit id="328" resname="r134210951" restype="string" datatype="x-haml">
         <source>&amp;mdash;whether you’re trying to stay healthy, get better, or improve your overall lifestyle.</source>
-        <target>&amp;mdash;无论你是想保持健康，变得更好，还是改善你的生活方式。</target>
+        <target>&amp;mdash;无论您是想保持健康，变得更好，还是改善您的生活方式。</target>
       </trans-unit>
     </body>
   </file>
@@ -2060,7 +2060,7 @@
       </trans-unit>
       <trans-unit id="330" resname="r987717249" restype="string" datatype="x-haml">
         <source>We needed to quickly provide thousands of our employees with accessible, easy-to-use information and virtual care, and that’s exactly what HealthTap delivered…through HealthTap's proprietary technology and deep domain expertise.…We are proud to partner with HealthTap and support their efforts to bring this much-needed service to population managers around the world.&amp;rdquo;</source>
-        <target>我们需要快速为成千上万的员工提供可访问，易于使用的信息和虚拟护理，这正是HealthTap的使命…通过 HealthTap'的先进技术和专业积累。…我们很自豪能与HealthTap合作，并支持他们的努力，为世界各地的医疗管理者带来急需的服务。&amp;rdquo;</target>
+        <target>我们需要快速为成千上万的员工提供可访问，易于使用的信息和在线护理，这正是HealthTap的使命…通过 HealthTap'的先进技术和专业积累。…我们很自豪能与HealthTap合作，并支持他们的努力，为世界各地的医疗管理者带来急需的服务。&amp;rdquo;</target>
       </trans-unit>
       <trans-unit id="331" resname="r947317708" restype="string" datatype="x-haml">
         <source>&amp;ldquo;We are so thankful for HealthTap’s speed and efficiency.</source>
@@ -2076,7 +2076,7 @@
     <body>
       <trans-unit id="333" resname="r237424254" restype="string" datatype="x-haml">
         <source>...Read&amp;nbsp;more&amp;nbsp;&amp;rsaquo;</source>
-        <target>...读&amp;nbsp;更多&amp;nbsp;&amp;rsaquo;</target>
+        <target>...阅读&amp;nbsp;更多&amp;nbsp;&amp;rsaquo;</target>
       </trans-unit>
     </body>
   </file>
@@ -2100,7 +2100,7 @@
     <body>
       <trans-unit id="336" resname="r847374820" restype="string" datatype="x-haml">
         <source>Apply now to learn &amp; earn ›</source>
-        <target>立即申请学习 &amp; 获得报酬 ›</target>
+        <target>立即申请学习并获得报酬 ›</target>
       </trans-unit>
     </body>
   </file>
@@ -2112,7 +2112,7 @@
       </trans-unit>
       <trans-unit id="338" resname="r984267834" restype="string" datatype="x-haml">
         <source>We're having some trouble reaching this page.</source>
-        <target>我们'暂时无法连接。</target>
+        <target>我们暂时无法连接。</target>
       </trans-unit>
     </body>
   </file>
@@ -2136,7 +2136,7 @@
     <body>
       <trans-unit id="341" resname="r903692391" restype="string" datatype="x-haml">
         <source>Acknowledgements &amp; Ownership. Licensee acknowledges that the HealthTap Software is proprietary to HealthTap and that HealthTap retains all proprietary right, title and interest in and to the HealthTap Software and the Materials, including without limitation all patents, copyrights, trademarks and all other marks used by Licenser to identify the Licensed Software.</source>
-        <target>声明 &amp; 所有权。被许可人承认HealthTap软件是HealthTap所有的，并且HealthTap保留对HealthTap软件和材料的所有所有权，所有权和利益，包括但不限于许可人使用的所有专利，版权，商标和所有其他标记，许可软件。</target>
+        <target>声明和 所有权。被许可人承认HealthTap软件是HealthTap所有的，并且HealthTap保留对HealthTap软件和材料的所有所有权，所有权和利益，包括但不限于许可人使用的所有专利，版权，商标和所有其他标记，许可软件。</target>
       </trans-unit>
     </body>
   </file>
@@ -2176,7 +2176,7 @@
     <body>
       <trans-unit id="347" resname="r815942404" restype="string" datatype="x-haml">
         <source>Privacy &amp; Security</source>
-        <target>隐私&amp;安全</target>
+        <target>隐私和安全</target>
       </trans-unit>
     </body>
   </file>
@@ -2188,7 +2188,7 @@
       </trans-unit>
       <trans-unit id="349" resname="r556959066" restype="string" datatype="x-haml">
         <source>&amp;nbsp; These are asynchronous electronic messages that patients write to you. These also may include photo, video, or document attachments. You respond as soon as you can, but the exchange is not in real time.</source>
-        <target>&amp;nbsp; 这是患者发给你的信息。它们包括了图片，视屏或者文件。请尽快回复，但是交换信息并不会实时发生。</target>
+        <target>&amp;nbsp; 这是患者发给您的信息。它们包括了图片，视屏或者文件。请尽快回复，但是交换信息并不会实时发生。</target>
       </trans-unit>
       <trans-unit id="350" resname="r665160675" restype="string" datatype="x-haml">
         <source>and give professional advice in a respectful and courteous manner.&amp;nbsp;*</source>
@@ -2248,7 +2248,7 @@
     <body>
       <trans-unit id="359" resname="r334496180" restype="string" datatype="x-haml">
         <source>Be proactive about your health, not reactive. Take a minute or two to provide some personal information to enable HealthTap’s network to provide you with the right information.</source>
-        <target>要积极管理你的健康，而不是消极应对。多花一分钟来完善你的个人健康档案，帮助我们提供正确合适的信息。</target>
+        <target>要积极管理您的健康，而不是消极应对。多花一分钟来完善您的个人健康档案，帮助我们提供正确合适的信息。</target>
       </trans-unit>
     </body>
   </file>
@@ -2256,7 +2256,7 @@
     <body>
       <trans-unit id="360" resname="r817921245" restype="string" datatype="x-haml">
         <source>&amp;mdash;or any member of your Care Team&amp;mdash;during his or her virtual office hours, as often as you like. You can get advice, referrals, and prescriptions sent to your local pharmacy from the convenience of your home, office, or anywhere you happen to be! No more hassles of traveling to a physical doctor’s office or wasting valuable time in the doctor’s waiting room.</source>
-        <target>&amp;mdash;或你医护团队中的任何一位&amp;mdash;只要在其办公时间内，可以多次联系医生。你能够得到医生建议，推荐，和医药处方，并且在住所、办公室附件或任何地方的当地药店拿到。再也不用花费时间到医生办公室等待了。</target>
+        <target>&amp;mdash;或您医护团队中的任何一位&amp;mdash;只要在其办公时间内，可以多次联系医生。您能够得到医生建议，推荐，和医药处方，并且在住所、办公室附件或任何地方的当地药店拿到。再也不用花费时间到医生办公室等待了。</target>
       </trans-unit>
     </body>
   </file>
@@ -2324,15 +2324,15 @@
       </trans-unit>
       <trans-unit id="424" resname="{height_ft}&apos;" restype="string" datatype="javascript">
         <source>{height_ft}'</source>
-        <target state="new">{height_ft}'</target>
+        <target state="new">{height_ft}英尺</target>
       </trans-unit>
       <trans-unit id="425" resname="{height_inches}&quot;" restype="string" datatype="javascript">
         <source>{height_inches}"</source>
-        <target state="new">{height_inches}"</target>
+        <target state="new">{height_inches}英寸</target>
       </trans-unit>
       <trans-unit id="426" resname="{height_meters}m" restype="string" datatype="javascript">
         <source>{height_meters}m</source>
-        <target state="new">{height_meters}m</target>
+        <target state="new">{height_meters}米</target>
       </trans-unit>
     </body>
   </file>
@@ -2352,9 +2352,9 @@
         <source>Today, you've earned &lt;span class="todays_points_highlight"&gt; 180 points&lt;/span&gt; for helping millions.
 			&lt;br&gt;
 			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
-        <target state="new">今天，您'赚到了&lt;span class="todays_points_highlight"&gt; 180分&lt;/span&gt; 帮助了许多人。
+        <target state="new">今天，您赚到了&lt;span class="todays_points_highlight"&gt; 180分&lt;/span&gt; 帮助了许多人。
 			&lt;br&gt;
-			回答 &lt;b&gt;X&lt;/b&gt; 更多问题在之后的一 &lt;b&gt;X&lt;/b&gt; 小时之内，来得到双倍积分。</target>
+			回答 &lt;b&gt;X&lt;/b&gt; 更多问题在之后的 &lt;b&gt;X&lt;/b&gt; 小时之内，来得到双倍积分。</target>
       </trans-unit>
       <trans-unit id="373" resname="Here are a few patient questions to keep you going.&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Here are a few patient questions to keep you going.
@@ -2419,7 +2419,7 @@
       <trans-unit id="379" resname="GUIDELINES&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
         <source>GUIDELINES
 		&lt;span class="sub_title"&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
-        <target state="new">参考事项
+        <target state="new">指南
 		&lt;span class="sub_title"&gt;想问一个好问题，参考以下事项&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="380" resname="Sweat the details... at least a little.&lt;a onclick=&quot;$(&amp;apos;#ex1&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I had an itchy dry rash on the inside of my elbows for 3 weeks. What could be the causes?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Why do I have a rash?&lt;/span&gt;" restype="string" datatype="html">
@@ -2488,7 +2488,7 @@
 					&lt;span class="good"&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
 					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?
 				&lt;/span&gt;</source>
-        <target state="new">请指出药物的牌子和名称，尤其是如果你不在美国境内，或问到很不常见的药物。  &lt;a onclick="$(&amp;apos;#ex6&amp;apos;).toggle();" class='exampleToggle' id='h6'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+        <target state="new">请指出药物的牌子和名称，尤其是如果您不在美国境内，或问到很不常见的药物。  &lt;a onclick="$(&amp;apos;#ex6&amp;apos;).toggle();" class='exampleToggle' id='h6'&gt;举例来说&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex6' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 我儿子5岁大，55磅，一直发烧。他吃了5ml的泰诺 (扑热息痛120mg/5ml)，不过烧没退。这么大的孩子能够吃更多泰诺吗？&lt;br&gt;
 					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  我儿子5岁大，重55，一直发烧。他吃了泰诺但是烧没退。能吃跟多药吗？
@@ -2536,7 +2536,7 @@
 					&lt;span class="good"&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
 					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
 				&lt;/span&gt;</source>
-        <target state="new">不要假设医生知道你的病史，HealthTap医生通常看不到你之前的问题。  &lt;a onclick="$(&amp;apos;#ex10&amp;apos;).toggle();" class='exampleToggle' id='h10'&gt;举例来说&lt;/a&gt;&lt;br&gt;
+        <target state="new">不要假设医生知道您的病史，HealthTap医生通常看不到您之前的问题。  &lt;a onclick="$(&amp;apos;#ex10&amp;apos;).toggle();" class='exampleToggle' id='h10'&gt;举例来说&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex10' class='guidelineEx hide'&gt;
 					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 我2岁的儿子2个月前做了耳管，现在发烧并且右耳有脓，这正常吗？&lt;br&gt;
 					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  现在都2天了，脓会很快流完吗？
@@ -2562,7 +2562,7 @@
 				&lt;/span&gt;</source>
         <target state="new">避免过多使用简写，那可能造成困惑。  &lt;a onclick="$(&amp;apos;#ex12&amp;apos;).toggle();" class='exampleToggle' id='h12'&gt;举例来说&lt;/a&gt;&lt;br&gt;
 				&lt;span id='ex12' class='guidelineEx hide'&gt;
-					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 如果你的例假从来都不正常，你怎么知道是怀孕了呢？&lt;br&gt;
+					&lt;span class="good"&gt;好的问题：&lt;/span&gt; 如果您的例假从来都不正常，您怎么知道是怀孕了呢？&lt;br&gt;
 					&lt;span class="bad"&gt;不太好的问题：&lt;/span&gt;  例假都不正常，怎么就怀孕了？
 				&lt;/span&gt;</target>
       </trans-unit>
@@ -2654,7 +2654,7 @@
     <body>
       <trans-unit id="400" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
         <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
-        <target state="new">赚取 {span_tag_start}{points}{span_tag_end} 分数             同时提升您的医生分数。</target>
+        <target state="new">赚取 {span_tag_start}{points}{span_tag_end} 分数             同时提升您的医者评分。</target>
       </trans-unit>
       <trans-unit id="401" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
         <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
@@ -2674,7 +2674,7 @@
     <body>
       <trans-unit id="403" resname="HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
         <source>HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target state="new">HealthTap只是为了提供信息。HealthTap的内容     (包括问题回答) 不应被用于医学建议，诊断，或治疗，并且在HealthTap平台的接触     并不创建医生病人关系。请不要放弃或延缓专业的医疗建议     因为HealthTap。给您的医生打电话或911 (如果您在美国。) 如果  
+        <target state="new">HealthTap只是为了提供信息。HealthTap的内容     (包括问题回答) 不应被用于医学建议，诊断，或治疗，并且在HealthTap平台的接触     并不创建医生病人关系。请不要放弃或延缓专业的医疗建议     因为HealthTap。给您的医生打电话或911 (如果您在美国。) 如果
     您认为这是紧急情况。 请看 {link_tag_start}更多的信息 &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
       <trans-unit id="404" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
@@ -2695,7 +2695,7 @@
     <body>
       <trans-unit id="406" resname="We know that health information is personal. That&apos;s why these files will always be secure. We take this stuff very, very seriously. " restype="string" datatype="javascript">
         <source>We know that health information is personal. That's why these files will always be secure. We take this stuff very, very seriously.</source>
-        <target state="new">我们知道健康信息是私人的。这是'为什么这些文件会是安全的，这对我们非常重要。</target>
+        <target state="new">我们知道健康信息是私人的。这就是为什么这些文件会是安全的，这对我们非常重要。</target>
       </trans-unit>
     </body>
   </file>

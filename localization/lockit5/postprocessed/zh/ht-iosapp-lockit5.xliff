@@ -127,7 +127,7 @@
       </trans-unit>
       <trans-unit id="61" resname="Send a thank you note to \n%@" restype="string" datatype="x-objective-c">
         <source>Send a thank you note to \n%@</source>
-        <target>发送一封感谢信到 \n%@</target>
+        <target>发送一封感谢信给 \n%@</target>
       </trans-unit>
     </body>
   </file>
@@ -874,7 +874,7 @@
     <body>
       <trans-unit id="340" resname="JB0-J5-1sj.text" restype="string" datatype="x-xib">
         <source>I'd like to refer you to:</source>
-        <target>我希望推荐您到：</target>
+        <target>我希望转诊您到：</target>
         <note annotates="source">Class = "UILabel"; text = "I'd like to refer you to:"; ObjectID = "JB0-J5-1sj";</note>
       </trans-unit>
     </body>

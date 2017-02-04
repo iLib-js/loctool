@@ -236,7 +236,7 @@
       </trans-unit>
       <trans-unit id="38" resname="r415124616" restype="string" datatype="java">
         <source>Living</source>
-        <target>居住地</target>
+        <target>在世</target>
       </trans-unit>
       <trans-unit id="39" resname="r199869805" restype="string" datatype="java">
         <source>Date of Birth</source>
@@ -1053,7 +1053,7 @@
     <body>
       <trans-unit id="201" resname="r742115697" restype="string" datatype="java">
         <source>Topics</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
@@ -1061,7 +1061,7 @@
     <body>
       <trans-unit id="202" resname="r789310818" restype="string" datatype="java">
         <source>Topic</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
@@ -2720,7 +2720,7 @@
     <body>
       <trans-unit id="502" resname="r99694554" restype="string" datatype="java">
         <source>Apply code</source>
-        <target>申请码</target>
+        <target>使用优惠</target>
       </trans-unit>
     </body>
   </file>
@@ -3639,7 +3639,7 @@
     <body>
       <trans-unit id="664" resname="r45009371" restype="string" datatype="java">
         <source>Near you</source>
-        <target>靠近 您</target>
+        <target>靠近您</target>
       </trans-unit>
       <trans-unit id="665" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>
@@ -6876,7 +6876,7 @@
       </trans-unit>
       <trans-unit id="1416" resname="edit_appointment_update" restype="string" datatype="x-android-resource">
         <source>Update appointment</source>
-        <target>上传预约</target>
+        <target>更新预约</target>
       </trans-unit>
       <trans-unit id="1417" resname="concierge_suggested_docs_header" restype="string" datatype="x-android-resource">
         <source>Connect with top doctors and build your Care-Team for free — get covered anytime, anywhere</source>
@@ -8380,7 +8380,7 @@
       </trans-unit>
       <trans-unit id="1789" resname="snapshot_section_type_treatment" restype="string" datatype="x-android-resource">
         <source>treatment</source>
-        <target>治疗/治疗方法</target>
+        <target>治疗</target>
       </trans-unit>
       <trans-unit id="1790" resname="snapshot_section_type_tests" restype="string" datatype="x-android-resource">
         <source>test</source>
@@ -8688,7 +8688,7 @@
       </trans-unit>
       <trans-unit id="1866" resname="insurance_summary_group_name" restype="string" datatype="x-android-resource">
         <source>Insurance group name</source>
-        <target>保险集团名字</target>
+        <target>保险集团名称</target>
       </trans-unit>
       <trans-unit id="1867" resname="insurance_summary_rel" restype="string" datatype="x-android-resource">
         <source>Primary relationship</source>
@@ -8768,7 +8768,7 @@
       </trans-unit>
       <trans-unit id="1886" resname="treatment" restype="string" datatype="x-android-resource">
         <source>Treatment</source>
-        <target>治疗/治疗方法</target>
+        <target>治疗</target>
       </trans-unit>
       <trans-unit id="1887" resname="allergy" restype="string" datatype="x-android-resource">
         <source>Allergy</source>
@@ -8836,11 +8836,11 @@
       </trans-unit>
       <trans-unit id="1903" resname="grandfather" restype="string" datatype="x-android-resource">
         <source>Grandfather</source>
-        <target>爷爷/祖父</target>
+        <target>祖父/外祖父</target>
       </trans-unit>
       <trans-unit id="1904" resname="grandmother" restype="string" datatype="x-android-resource">
         <source>Grandmother</source>
-        <target>奶奶/祖母</target>
+        <target>祖母/外祖母</target>
       </trans-unit>
       <trans-unit id="1905" resname="friend" restype="string" datatype="x-android-resource">
         <source>Friend</source>
@@ -10468,11 +10468,11 @@
       </trans-unit>
       <trans-unit id="2310" resname="similar_question_doctor_weighed_in" restype="plural" datatype="x-android-resource" extype="one">
         <source>{start}1 doctor{end} weighed in</source>
-        <target>{start}1名医生{end}称重</target>
+        <target>{start}1名医生{end}参与</target>
       </trans-unit>
       <trans-unit id="2311" resname="similar_question_doctor_weighed_in" restype="plural" datatype="x-android-resource" extype="other">
         <source>{start}%d doctors{end} weighed in</source>
-        <target>{start}%d名医生{end}称重</target>
+        <target>{start}%d名医生{end}参与</target>
       </trans-unit>
       <trans-unit id="2312" resname="subscribe_add_others_continue_multiple" restype="plural" datatype="x-android-resource" extype="one">
         <source>Continue for me and 1 other</source>
