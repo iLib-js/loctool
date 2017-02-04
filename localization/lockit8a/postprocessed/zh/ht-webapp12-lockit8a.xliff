@@ -1041,7 +1041,8 @@
         <source>Doctor definitions or descriptions will be showcased on topic pages and seen by millions of users. Get recognized for your knowledge by providing a brief and informative definition or description for this topic.
   &lt;br&gt;
   &lt;a class="btn blue close_layer" style="display: block; width: 100px; float: right;"&gt;Thanks&lt;/a&gt;</source>
-        <target state="translated">&lt;br&gt;
+        <target state="translated">在主题页面我们会显示医生对该主题的解释或描述，造福于亿万用户。您可以对此主题提供一段简要的知识性描述。
+  &lt;br&gt;
   &lt;a class="btn blue close_layer" style="display: block; width:100px; float: right;"&gt;谢谢&lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -1058,7 +1059,8 @@
           &lt;a class="doctor_name_link" href="#feedback/&lt;%= App.user.get('person.profile_name') %&gt;" target="_blank"&gt;
             www.healthtap.com/feedback/&lt;%= App.user.get('person.profile_name') %&gt;
           &lt;/a&gt;</source>
-        <target state="translated">&lt;br&gt;
+        <target state="translated">请分享您对我的网上诊所的反馈：
+          &lt;br&gt;
           &lt;a class="doctor_name_link" href="#feedback/&lt;%= App.user.get('person.profile_name') %&gt;" target="_blank"&gt;
             www.healthtap.com/feedback/&lt;%= App.user.get('person.profile_name') %&gt;
           &lt;/a&gt;</target>
