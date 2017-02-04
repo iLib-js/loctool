@@ -2890,7 +2890,7 @@
     <body>
       <trans-unit id="515" resname="r99694554" restype="string" datatype="java">
         <source>Apply code</source>
-        <target>申请码</target>
+        <target>使用优惠</target>
       </trans-unit>
     </body>
   </file>

@@ -2039,7 +2039,7 @@
       </trans-unit>
       <trans-unit id="529" resname="r99694554" restype="string" datatype="x-android-resource">
         <source>Apply code</source>
-        <target state="translated">申请码</target>
+        <target state="translated">使用优惠</target>
       </trans-unit>
       <trans-unit id="530" resname="r141446606" restype="string" datatype="x-android-resource">
         <source>We're sorry to see you downgrade!</source>
