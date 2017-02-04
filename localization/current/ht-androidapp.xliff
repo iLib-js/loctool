@@ -6773,12 +6773,12 @@
         <target>Con el fin de</target>
       </trans-unit>
       <trans-unit id="1390" resname="concierge_intro_header" restype="string" datatype="x-android-resource">
-        <source>Request to connect with {doctor_prefix} {doctor_name}?</source>
-        <target>¿Solicitar conectarse con {doctor_prefix} {doctor_name}?</target>
+        <source>Request to connect with {doctor_name}?</source>
+        <target>¿Solicitar conectarse con {doctor_name}?</target>
       </trans-unit>
       <trans-unit id="1391" resname="concierge_intro_content" restype="string" datatype="x-android-resource">
-        <source>If you don\'t have {doctor_prefix} {doctor_name}\'s Keycode yet, you may still have an Introductory Consult before the doctor can confirm you as a patient.</source>
-        <target>Si aún no tienes la Clave de {doctor_prefix} {doctor_name}, todavía puedes tener una Consulta Introductoria antes de que el doctor pueda confirmarte como paciente.</target>
+        <source>If you don\'t have {doctor_name}\'s Keycode yet, you may still have an Introductory Consult before the doctor can confirm you as a patient.</source>
+        <target>Si aún no tienes la Clave de {doctor_name}, todavía puedes tener una Consulta Introductoria antes de que el doctor pueda confirmarte como paciente.</target>
       </trans-unit>
       <trans-unit id="1392" resname="concierge_intro_cancel_confirm_title" restype="string" datatype="x-android-resource">
         <source>Cancel request</source>
@@ -8005,8 +8005,8 @@
         <target>No, gracias</target>
       </trans-unit>
       <trans-unit id="1698" resname="concierge_incentive_text" restype="string" datatype="x-android-resource">
-        <source>{doc_prefix} {doc_last_name} appreciates your gratitude and would like to offer you a discount on your\u00a0first\u00a0consult.</source>
-        <target>{doc_prefix} {doc_last_name} aprecia tu gratitud y le gustaría ofrecerte un descuento en tu\u00a0primera\u00a0consulta.</target>
+        <source>{doc_last_name} appreciates your gratitude and would like to offer you a discount on your\u00a0first\u00a0consult.</source>
+        <target>{doc_last_name} aprecia tu gratitud y le gustaría ofrecerte un descuento en tu\u00a0primera\u00a0consulta.</target>
       </trans-unit>
       <trans-unit id="1699" resname="concierge_incentive_banner" restype="string" datatype="x-android-resource">
         <source>One time offer - $5 off!</source>
@@ -21205,12 +21205,12 @@
         <target>为了</target>
       </trans-unit>
       <trans-unit id="1390" resname="concierge_intro_header" restype="string" datatype="x-android-resource">
-        <source>Request to connect with {doctor_prefix} {doctor_name}?</source>
-        <target>请求连接{doctor_prefix} {doctor_name}?</target>
+        <source>Request to connect with {doctor_name}?</source>
+        <target>请求连接{doctor_name}?</target>
       </trans-unit>
       <trans-unit id="1391" resname="concierge_intro_content" restype="string" datatype="x-android-resource">
-        <source>If you don't have {doctor_prefix} {doctor_name}'s Keycode yet, you may still have an Introductory Consult before the doctor can confirm you as a patient.</source>
-        <target>如果您还没有{doctor_prefix} {doctor_name}的验证码，您可能还需要进行介绍性咨询，然后医生才能确认您为患者。</target>
+        <source>If you don't have {doctor_name}'s Keycode yet, you may still have an Introductory Consult before the doctor can confirm you as a patient.</source>
+        <target>如果您还没有{doctor_name}的验证码，您可能还需要进行介绍性咨询，然后医生才能确认您为患者。</target>
       </trans-unit>
       <trans-unit id="1392" resname="concierge_intro_cancel_confirm_title" restype="string" datatype="x-android-resource">
         <source>Cancel request</source>
@@ -22437,8 +22437,8 @@
         <target>不，谢谢</target>
       </trans-unit>
       <trans-unit id="1698" resname="concierge_incentive_text" restype="string" datatype="x-android-resource">
-        <source>{doc_prefix} {doc_last_name} appreciates your gratitude and would like to offer you a discount on your\u00a0first\u00a0consult.</source>
-        <target state="accepted">您的致谢对{doc_prefix} {doc_last_name} 是很大的鼓舞，他／她愿意为您第一次咨询提供折扣。</target>
+        <source>{doc_last_name} appreciates your gratitude and would like to offer you a discount on your\u00a0first\u00a0consult.</source>
+        <target state="accepted">您的致谢对{doc_last_name}是很大的鼓舞，他／她愿意为您第一次咨询提供折扣。</target>
       </trans-unit>
       <trans-unit id="1699" resname="concierge_incentive_banner" restype="string" datatype="x-android-resource">
         <source>One time offer - $5 off!</source>
