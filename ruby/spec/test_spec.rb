@@ -495,6 +495,12 @@ describe 'HamlLocalizer' do
       local_name_to_output['de-DE'].include?('powering the delivery').should be_false
     end
 
+    it 'works with fancy characters' do
+      template = '“I’m thrilled that in one easy interface I can see all the relevant information on my patients, including medical history, test results, and even browsing and adherence data, enabling me to tailor the best course of action for the most effective care.”'
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {'de-DE' => {template => 'FOO'}})
+      expect(local_name_to_output['de-DE']).to eq('FOO')
+    end
+
   end
 
   describe 'british translation' do
