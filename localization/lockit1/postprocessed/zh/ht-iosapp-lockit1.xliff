@@ -6281,7 +6281,7 @@ and more</source>
       </trans-unit>
       <trans-unit id="#Feelgood" resname="#Feelgood" restype="string" datatype="x-objective-c">
         <source>#Feelgood</source>
-        <target>Feel Good</target>
+        <target>#Feelgood</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="$" resname="$" restype="string" datatype="x-objective-c">
@@ -15383,7 +15383,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="aGw-Ti-WXh.text" resname="aGw-Ti-WXh.text" restype="string" datatype="x-xib">
         <source>FeelGood :)</source>
-        <target>Feel Good</target>
+        <target>FeelGood :)</target>
         <note annotates="source">Class = "UILabel"; text = "FeelGood :)"; ObjectID = "aGw-Ti-WXh";</note>
       </trans-unit>
       <trans-unit id="l1j-Yj-vkX.text" resname="l1j-Yj-vkX.text" restype="string" datatype="x-xib">

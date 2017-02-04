@@ -1040,7 +1040,7 @@
     <body>
       <trans-unit id="20" resname="r466948495" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}</source>
-        <target state="new">智能%{ai_trademark}医生</target>
+        <target state="new">智能医生</target>
       </trans-unit>
     </body>
   </file>

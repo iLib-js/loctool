@@ -766,11 +766,11 @@
     <body>
       <trans-unit id="57" resname="r786893194" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark} — your personal %{ai_serif}-powered "physician"</source>
-        <target state="new">智能%{ai_trademark}医生 — 您私人的%{ai_serif}医生</target>
+        <target state="new">智能医生 — 您私人的%{ai_serif}医生</target>
       </trans-unit>
       <trans-unit id="58" resname="r655383491" restype="string" datatype="ruby">
         <source>Based on your symptoms, Dr. %{ai_trademark} routes or "triages" you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</source>
-        <target state="new">根据您的症状，智能%{ai_trademark}医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，智能医生能立即通过症状来制订一套Feel Good的治疗方案。</target>
+        <target state="new">根据您的症状，智能医生为您合理的进行了分诊，制定了合理适当的治疗方案。通过交互，智能医生能立即通过症状来制订一套Feel Good的治疗方案。</target>
       </trans-unit>
     </body>
   </file>
@@ -822,7 +822,7 @@
     <body>
       <trans-unit id="68" resname="r691446454" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered "physician", trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>
-        <target state="new">智能%{ai_trademark}医生，是由医生训练的您私人的%{ai_serif}医生，根据您的症状为您私人定制治疗方案。</target>
+        <target state="new">智能医生，是由医生训练的您私人的%{ai_serif}医生，根据您的症状为您私人定制治疗方案。</target>
       </trans-unit>
     </body>
   </file>
@@ -1932,7 +1932,7 @@
     <body>
       <trans-unit id="308" resname="r620205649" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark} is an %{ai_serif}-powered personal "physician", trained by HealthTap’s network of more than 105,000 doctors, incorporates both context and clinical expertise of doctors who have helped triage hundreds of millions of patients worldwide to right levels of doctor-recommended care. Just like a sympathetic human physician, Dr. %{ai_trademark} converses with the user to understand their current complaints or concerns and uses the user’s health profile to compute the probable causes of their symptoms.</source>
-        <target state="new">智能%{ai_trademark}医生 一个 %{ai_serif}-支持的个人"医师", 它由HealthTap超过10，5000名医生网络训练, 结合了帮助世界各地数以亿计的患者的医生推荐的临床专业知识。 它就像一个有同情心的医生, 智能医生帮助患者理解他们的需求和担忧，然后利用病人的健康资料去计算可能的病因。</target>
+        <target state="new">智能医生 一个 %{ai_serif}-支持的个人"医师", 它由HealthTap超过10，5000名医生网络训练, 结合了帮助世界各地数以亿计的患者的医生推荐的临床专业知识。 它就像一个有同情心的医生, 智能医生帮助患者理解他们的需求和担忧，然后利用病人的健康资料去计算可能的病因。</target>
       </trans-unit>
       <trans-unit id="309" resname="r842843461" restype="string" datatype="ruby">
         <source>HealthTap launches Compass, a revolutionary new personal healthcare application that will give employees of Flex the ability to “tap in” to intelligent and cost-effective healthcare 24/7. HealthTap Compass serves as a hub for managing all employees’ healthcare needs, from information to prescriptions and even lab test referrals and interpretations, and will replace the traditional “benefits card.”</source>
@@ -1944,7 +1944,7 @@
       </trans-unit>
       <trans-unit id="311" resname="r289095764" restype="string" datatype="ruby">
         <source>New "Doctor %{ai_trademark}" instantaneously translates symptoms into a path to feeling good</source>
-        <target state="new">新 "智能%{ai_trademark}医生" 实时为病人指明康复的路径。</target>
+        <target state="new">新 "智能医生" 实时为病人指明康复的路径。</target>
       </trans-unit>
     </body>
   </file>

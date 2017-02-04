@@ -11497,19 +11497,19 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="7715" resname="st" restype="string" datatype="html">
         <source>st</source>
-        <target></target>
+        <target>&amp;nbsp;</target>
       </trans-unit>
       <trans-unit id="7716" resname="nd" restype="string" datatype="html">
         <source>nd</source>
-        <target></target>
+        <target>&amp;nbsp;</target>
       </trans-unit>
       <trans-unit id="7717" resname="rd" restype="string" datatype="html">
         <source>rd</source>
-        <target></target>
+        <target>&amp;nbsp;</target>
       </trans-unit>
       <trans-unit id="7718" resname="th" restype="string" datatype="html">
         <source>th</source>
-        <target></target>
+        <target>&amp;nbsp;</target>
       </trans-unit>
       <trans-unit id="7719" resname="consults" restype="string" datatype="html">
         <source>consults</source>

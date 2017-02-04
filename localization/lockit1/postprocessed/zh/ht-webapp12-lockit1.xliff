@@ -5598,14 +5598,6 @@
         <source>TIME OPEN</source>
         <target>开放时间</target>
       </trans-unit>
-      <trans-unit id="1215" resname="AM" restype="string" datatype="html">
-        <source>AM</source>
-        <target>上午</target>
-      </trans-unit>
-      <trans-unit id="1216" resname="PM" restype="string" datatype="html">
-        <source>PM</source>
-        <target>下午</target>
-      </trans-unit>
       <trans-unit id="1217" resname="to" restype="string" datatype="html">
         <source>to</source>
         <target>到：</target>
