@@ -185,4 +185,20 @@
       </trans-unit>
     </body>
   </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="5" resname="r682432029" restype="string" datatype="x-android-resource">
+        <source>Try a Virtual Consult ›</source>
+        <target state="translated">Prueba una Consulta Virtual ›</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/plurals.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="one">
+        <source>Thanks! {start}1{end} symptom added.\nAny additional symptoms?</source>
+        <target state="translated">¡Gracias! %d síntomas añadidos.\n¿Algún síntoma adicional?</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

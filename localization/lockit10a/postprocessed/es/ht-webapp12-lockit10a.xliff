@@ -744,4 +744,344 @@
       </trans-unit>
     </body>
   </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">El reporte de compensación de {start_date} a {end_date} está siendo generado. Va a tomar un rato. ¡Recibirás un correo electrónico cuando esté listo!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/pay_total.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="6" resname="Your total this month" restype="string" datatype="javascript">
+        <source>Your total this month</source>
+        <target state="translated">Tu total este mes</target>
+      </trans-unit>
+      <trans-unit id="8" resname="year" restype="string" datatype="javascript">
+        <source>year</source>
+        <target state="translated">año</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="12" resname="Invite your doctor" restype="string" datatype="javascript">
+        <source>Invite your doctor</source>
+        <target state="translated">Invita a tu doctor</target>
+      </trans-unit>
+      <trans-unit id="14" resname="*Your number can help the doctor recognize you" restype="string" datatype="javascript">
+        <source>*Your number can help the doctor recognize you</source>
+        <target state="translated">* Tu número puede ayudar a que el médico te reconozca</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="24" resname="Spouse" restype="string" datatype="javascript">
+        <source>Spouse</source>
+        <target state="translated">Cónyuge</target>
+      </trans-unit>
+      <trans-unit id="25" resname="Child" restype="string" datatype="javascript">
+        <source>Child</source>
+        <target state="translated">Niño(a)</target>
+      </trans-unit>
+      <trans-unit id="26" resname="Self" restype="string" datatype="javascript">
+        <source>Self</source>
+        <target state="translated">Tú mismo</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/searchPages/init_symptom_search.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="35" resname="Edit symptoms" restype="string" datatype="javascript">
+        <source>Edit symptoms</source>
+        <target state="translated">Editar síntomas</target>
+      </trans-unit>
+      <trans-unit id="36" resname="Added symptoms" restype="string" datatype="javascript">
+        <source>Added symptoms</source>
+        <target state="translated">Síntomas añadidos</target>
+      </trans-unit>
+      <trans-unit id="38" resname="Refine symptoms" restype="string" datatype="javascript">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="41" resname="Start over?" restype="string" datatype="javascript">
+        <source>Start over?</source>
+        <target state="translated">¿Volver a empezar?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/questions.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="43" resname="specialist" restype="string" datatype="javascript">
+        <source>specialist</source>
+        <target state="translated">especialista</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="46" resname="Please enter a valid date" restype="string" datatype="javascript">
+        <source>Please enter a valid date</source>
+        <target state="translated">Por favor, ingresa una fecha válida</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/user_questions/feelGood/_related_questions.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="198" resname="r1072022560" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} doctors responded</source>
+        <target state="translated">1 doctor contestó</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/searchPages/symptoms.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2044" resname="r420577192" restype="string" datatype="ruby">
+        <source>Upper Abdomen</source>
+        <target state="translated">Abdomen Superior</target>
+      </trans-unit>
+      <trans-unit id="2045" resname="r569067464" restype="string" datatype="ruby">
+        <source>Lower Abdomen</source>
+        <target state="translated">Abdomen Inferior</target>
+      </trans-unit>
+      <trans-unit id="2046" resname="r1040580325" restype="string" datatype="ruby">
+        <source>Upper Back</source>
+        <target state="translated">Espalda Superior</target>
+      </trans-unit>
+      <trans-unit id="2047" resname="r431798784" restype="string" datatype="ruby">
+        <source>Lower Back</source>
+        <target state="translated">Espalda baja</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/searchPages/body_symptoms_search.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2050" resname="r366075547" restype="string" datatype="ruby">
+        <source>Edit symptoms</source>
+        <target state="translated">Editar síntomas</target>
+      </trans-unit>
+      <trans-unit id="2051" resname="r306721015" restype="string" datatype="ruby">
+        <source>Who needs help?</source>
+        <target state="translated">¿Quién necesita ayuda?</target>
+      </trans-unit>
+      <trans-unit id="2052" resname="r783088456" restype="string" datatype="ruby">
+        <source>Tap symptoms or ask doctors</source>
+        <target state="translated">Elige síntomas o pregúntale a doctores</target>
+      </trans-unit>
+      <trans-unit id="2056" resname="r996759903" restype="string" datatype="ruby">
+        <source>Care options</source>
+        <target state="translated">Opciones de atención</target>
+      </trans-unit>
+      <trans-unit id="2057" resname="r374668228" restype="string" datatype="ruby">
+        <source>Seek emergency medical attention</source>
+        <target state="translated">Busca atención médica de emergencia</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/searchPages/_search_attribute.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2061" resname="r892657469" restype="string" datatype="ruby">
+        <source>All Conditions</source>
+        <target state="translated">Todas las Condiciones</target>
+      </trans-unit>
+      <trans-unit id="2062" resname="r942600099" restype="string" datatype="ruby">
+        <source>All Medications</source>
+        <target state="translated">Todos los Medicamentos</target>
+      </trans-unit>
+      <trans-unit id="2063" resname="r522723615" restype="string" datatype="ruby">
+        <source>All Procedures</source>
+        <target state="translated">Todos los Procedimientos</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/feed/_answer.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="211" resname="r619530839" restype="plural" datatype="ruby" extype="other">
+        <source>See %{count} more answers</source>
+        <target state="translated">Ver 1 respuesta más</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/_checklist_discover.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="230" resname="r799856089" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} checklists</source>
+        <target state="translated">1 listado</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/member_profile_value_store.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2296" resname="r190006147" restype="string" datatype="ruby">
+        <source>patient</source>
+        <target state="translated">paciente</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/expert/i18n.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2297" resname="r789219506" restype="string" datatype="ruby">
+        <source>doctor</source>
+        <target state="translated">doctor</target>
+      </trans-unit>
+      <trans-unit id="2302" resname="r35261176" restype="string" datatype="ruby">
+        <source>expert</source>
+        <target state="translated">experto</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/attribute.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2307" resname="r845077243" restype="string" datatype="ruby">
+        <source>Immunization</source>
+        <target state="translated">Vacuna</target>
+      </trans-unit>
+      <trans-unit id="2309" resname="r789310818" restype="string" datatype="ruby">
+        <source>Topic</source>
+        <target state="translated">Tema</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/get_call.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2327" resname="Second Opinion Consult" restype="string" datatype="html">
+        <source>Second Opinion Consult</source>
+        <target state="translated">Consulta de Segunda Opinión</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/news_reviews.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2329" resname="Helpful Votes" restype="string" datatype="html">
+        <source>Helpful Votes</source>
+        <target state="translated">Votos Útiles</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2334" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">El reporte de compensación de {start_date} a {end_date} está siendo generado. Va a tomar un rato. ¡Recibirás un correo electrónico cuando esté listo!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/plan_subscribe.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2339" resname="Just one consult" restype="string" datatype="javascript">
+        <source>Just one consult</source>
+        <target state="translated">Solo una consulta</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/pay_total.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2340" resname="Your total this month" restype="string" datatype="javascript">
+        <source>Your total this month</source>
+        <target state="translated">Tu total este mes</target>
+      </trans-unit>
+      <trans-unit id="2342" resname="year" restype="string" datatype="javascript">
+        <source>year</source>
+        <target state="translated">año</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2346" resname="Invite your doctor" restype="string" datatype="javascript">
+        <source>Invite your doctor</source>
+        <target state="translated">Invita a tu doctor</target>
+      </trans-unit>
+      <trans-unit id="2348" resname="*Your number can help the doctor recognize you" restype="string" datatype="javascript">
+        <source>*Your number can help the doctor recognize you</source>
+        <target state="translated">* Tu número puede ayudar a que el médico te reconozca</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2359" resname="Spouse" restype="string" datatype="javascript">
+        <source>Spouse</source>
+        <target state="translated">Cónyuge</target>
+      </trans-unit>
+      <trans-unit id="2360" resname="Child" restype="string" datatype="javascript">
+        <source>Child</source>
+        <target state="translated">Niño(a)</target>
+      </trans-unit>
+      <trans-unit id="2361" resname="Self" restype="string" datatype="javascript">
+        <source>Self</source>
+        <target state="translated">Tú mismo</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/settingsPanel.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2370" resname="Prime (until {date})" restype="string" datatype="javascript">
+        <source>Prime (until {date})</source>
+        <target state="translated">Prime (hasta {date})</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/searchPages/init_symptom_search.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2371" resname="Edit symptoms" restype="string" datatype="javascript">
+        <source>Edit symptoms</source>
+        <target state="translated">Editar síntomas</target>
+      </trans-unit>
+      <trans-unit id="2372" resname="Added symptoms" restype="string" datatype="javascript">
+        <source>Added symptoms</source>
+        <target state="translated">Síntomas añadidos</target>
+      </trans-unit>
+      <trans-unit id="2374" resname="Refine symptoms" restype="string" datatype="javascript">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="2377" resname="Start over?" restype="string" datatype="javascript">
+        <source>Start over?</source>
+        <target state="translated">¿Volver a empezar?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/questions.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2379" resname="specialist" restype="string" datatype="javascript">
+        <source>specialist</source>
+        <target state="translated">especialista</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2382" resname="Please enter a valid date" restype="string" datatype="javascript">
+        <source>Please enter a valid date</source>
+        <target state="translated">Por favor, ingresa una fecha válida</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/consult_rating.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2396" resname="Vote" restype="string" datatype="javascript">
+        <source>Vote</source>
+        <target state="translated">Voto</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2403" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target state="translated">No</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_search_options.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2509" resname="r91472850" restype="string" datatype="x-haml">
+        <source>Clinicians</source>
+        <target state="translated">Clínicos</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

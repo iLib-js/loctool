@@ -12,4 +12,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Classes/Util/FGStringUtil.h" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="21" resname="Thank you, your answer was very helpful!" restype="string" datatype="x-objective-c">
+        <source>Thank you, your answer was very helpful!</source>
+        <target state="translated">Gracias, ¡tu respuesta fue muy útil!</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
