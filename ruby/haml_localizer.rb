@@ -332,6 +332,10 @@ def process_line(skip_block_indent, ret, line, from_to)
               #puts '3'
               #punctuation in beginning
               res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
+              if !res && Sanitize.clean(line).gsub(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
+                line = Sanitize.clean(line).gsub(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
+              end
+
             elsif k.strip.match(/^[[:punct:]]/)
               #puts '4'
               res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
