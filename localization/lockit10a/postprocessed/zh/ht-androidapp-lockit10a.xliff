@@ -611,4 +611,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="res/values/plurals.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="one">
+        <source>Thanks! {start}1{end} symptom added.\nAny additional symptoms?</source>
+        <target state="translated">谢谢！{start}%d{end}个症状已添加。\n有其他症状吗？</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
