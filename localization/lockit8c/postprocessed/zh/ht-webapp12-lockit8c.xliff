@@ -16392,8 +16392,8 @@
   <file original="app/views/general_mailer/member_consult_premature_end.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="3146" resname="r828215130" restype="string" datatype="ruby">
-        <source>It seems you started a Virtual Consult%{name} but it ended after a very brief amount of time. Usually this means that you got your answer right away, but if you experienced a technical issue or if there were any other reasons that left you unsatisfied, we’d love to hear what happened so we can fix it. Our goal is one hundred percent patient satisfaction, and we want to be sure you receive the care you need.</source>
-        <target state="translated">您似乎开始了一个在线咨询%{name}，但它在很短的时间内就结束了。通常这意味着您立即得到了您的回答，但如果您遇到技术问题，或者有任何其他让您不满意的原因，我们很乐意倾听发生了什么，这样我们可以解决它。我们的目标是百分之百的患者满意度，我们希望确保您得到您需要的医护。</target>
+        <source>It seems you started a Virtual Consult with %{name} but it ended after a very brief amount of time. Usually this means that you got your answer right away, but if you experienced a technical issue or if there were any other reasons that left you unsatisfied, we’d love to hear what happened so we can fix it. Our goal is one hundred percent patient satisfaction, and we want to be sure you receive the care you need.</source>
+        <target state="translated">您似乎同%{name}开始了一个在线咨询，但它在很短的时间内就结束了。通常这意味着您立即得到了您的回答，但如果您遇到技术问题，或者有任何其他让您不满意的原因，我们很乐意倾听发生了什么，这样我们可以解决它。我们的目标是百分之百的患者满意度，我们希望确保您得到您需要的医护。</target>
       </trans-unit>
       <trans-unit id="3147" resname="r577720221" restype="string" datatype="ruby">
         <source>Please reply to this email and let us know about your experience. Your feedback is immensely helpful so we can improve the service for you and your loved ones in the future.</source>
