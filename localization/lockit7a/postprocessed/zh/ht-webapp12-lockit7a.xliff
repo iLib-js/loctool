@@ -1891,10 +1891,6 @@
         <source>Editorial Board</source>
         <target state="translated">编辑部</target>
       </trans-unit>
-      <trans-unit id="995" resname="r597944566" restype="string" datatype="ruby">
-        <source>Doctor Mom</source>
-        <target state="translated">医生妈妈</target>
-      </trans-unit>
       <trans-unit id="996" resname="r413013762" restype="string" datatype="ruby">
         <source>HealthTap Hero</source>
         <target state="translated">HealthTap英雄</target>
