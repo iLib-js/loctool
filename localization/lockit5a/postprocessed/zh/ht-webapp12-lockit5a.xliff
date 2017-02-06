@@ -3032,7 +3032,7 @@
       </trans-unit>
       <trans-unit id="4752" resname="r892894860" restype="string" datatype="ruby">
         <source>Hourly</source>
-        <target>小时</target>
+        <target>每小时</target>
       </trans-unit>
       <trans-unit id="4753" resname="r264381725" restype="string" datatype="ruby">
         <source>Daily</source>
@@ -3040,11 +3040,11 @@
       </trans-unit>
       <trans-unit id="4755" resname="r776680027" restype="string" datatype="ruby">
         <source>Weekly</source>
-        <target>周</target>
+        <target>每周</target>
       </trans-unit>
       <trans-unit id="4757" resname="r746638809" restype="string" datatype="ruby">
         <source>Monthly</source>
-        <target>月</target>
+        <target>每月</target>
       </trans-unit>
       <trans-unit id="4758" resname="r809473596" restype="string" datatype="ruby">
         <source>months</source>

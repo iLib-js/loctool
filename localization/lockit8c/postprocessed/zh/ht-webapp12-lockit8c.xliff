@@ -23155,19 +23155,19 @@
       </trans-unit>
       <trans-unit id="4490" resname="r776680027" restype="string" datatype="ruby">
         <source>Weekly</source>
-        <target state="translated">周</target>
+        <target state="translated">每周</target>
       </trans-unit>
       <trans-unit id="4491" resname="r746638809" restype="string" datatype="ruby">
         <source>Monthly</source>
-        <target state="translated">月</target>
+        <target state="translated">每月</target>
       </trans-unit>
       <trans-unit id="4492" resname="r892894860" restype="string" datatype="ruby">
         <source>Hourly</source>
-        <target state="translated">小时</target>
+        <target state="translated">每小时</target>
       </trans-unit>
       <trans-unit id="4493" resname="r735891223" restype="string" datatype="ruby">
         <source>Yearly</source>
-        <target state="translated">年</target>
+        <target state="translated">每年</target>
       </trans-unit>
       <trans-unit id="4494" resname="r1022379177" restype="string" datatype="ruby">
         <source>once</source>

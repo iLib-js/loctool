@@ -12348,7 +12348,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="8159" resname="Weekly" restype="string" datatype="html">
         <source>Weekly</source>
-        <target>周</target>
+        <target>每周</target>
       </trans-unit>
       <trans-unit id="8160" resname="The next date this newsletter will be sent is:" restype="string" datatype="html">
         <source>The next date this newsletter will be sent is:</source>
@@ -12356,7 +12356,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="8162" resname="Monthly" restype="string" datatype="html">
         <source>Monthly</source>
-        <target>月</target>
+        <target>每月</target>
       </trans-unit>
       <trans-unit id="8163" resname="Don&apos;t Send" restype="string" datatype="html">
         <source>Don't Send</source>
