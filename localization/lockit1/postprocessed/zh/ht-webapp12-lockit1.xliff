@@ -7228,23 +7228,23 @@
       </trans-unit>
       <trans-unit id="1578" resname="Hourly" restype="string" datatype="html">
         <source>Hourly</source>
-        <target>小时</target>
+        <target>每小时</target>
       </trans-unit>
       <trans-unit id="1579" resname="Daily" restype="string" datatype="html">
         <source>Daily</source>
-        <target>天</target>
+        <target>每天</target>
       </trans-unit>
       <trans-unit id="1580" resname="Weekly" restype="string" datatype="html">
         <source>Weekly</source>
-        <target>周</target>
+        <target>每周</target>
       </trans-unit>
       <trans-unit id="1581" resname="Monthly" restype="string" datatype="html">
         <source>Monthly</source>
-        <target>月</target>
+        <target>每月</target>
       </trans-unit>
       <trans-unit id="1582" resname="Yearly" restype="string" datatype="html">
         <source>Yearly</source>
-        <target>年</target>
+        <target>每年</target>
       </trans-unit>
       <trans-unit id="1583" resname="Every other day" restype="string" datatype="html">
         <source>Every other day</source>
