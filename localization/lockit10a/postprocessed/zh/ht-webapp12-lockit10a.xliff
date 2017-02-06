@@ -1844,4 +1844,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/people/feelGood/doctorPartials/_doctor_result.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="60" resname="r944712741" restype="string" datatype="ruby">
+        <source>In Dr. %{name}'s Referral Network</source>
+        <target state="new">在%{name}医生的转诊网络内</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
