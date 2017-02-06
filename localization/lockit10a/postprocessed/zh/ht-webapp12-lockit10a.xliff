@@ -1836,4 +1836,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/models/chat_session.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="98" resname="r842450398" restype="string" datatype="ruby">
+        <source>We're sorry but it appears the doctor ended this consult because they could not answer your consult, often because the question is not within the doctor's area of expertise.</source>
+        <target state="accepted">真抱歉，看起来好像是医生本人结束了本次咨询， 这常常是由于他/她不处于您所需要的专科而无法回答您的问题</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
