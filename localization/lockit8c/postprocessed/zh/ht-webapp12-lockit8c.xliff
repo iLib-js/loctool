@@ -25282,7 +25282,7 @@
       </trans-unit>
       <trans-unit id="5005" resname="r597944566" restype="string" datatype="ruby">
         <source>Doctor Mom</source>
-        <target state="translated">Doctor Mom</target>
+        <target state="translated">医生妈妈</target>
       </trans-unit>
       <trans-unit id="5006" resname="r87112296" restype="string" datatype="ruby">
         <source>HealthTap Founding Doctor</source>
