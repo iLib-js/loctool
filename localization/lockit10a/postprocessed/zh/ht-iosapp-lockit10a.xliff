@@ -1001,4 +1001,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="People also viewed" restype="string" datatype="x-objective-c">
+        <source>People also viewed</source>
+        <target state="accepted">其他用户也看过</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
