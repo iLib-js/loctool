@@ -40621,7 +40621,7 @@
       </trans-unit>
       <trans-unit id="9438" resname="Expires (MM/YY)" restype="string" datatype="javascript">
         <source>Expires (MM/YY)</source>
-        <target state="translated">有效期至 (MM/YY)</target>
+        <target state="translated">有效期至 (月月/年年)</target>
       </trans-unit>
       <trans-unit id="9439" resname="Security code" restype="string" datatype="javascript">
         <source>Security code</source>
