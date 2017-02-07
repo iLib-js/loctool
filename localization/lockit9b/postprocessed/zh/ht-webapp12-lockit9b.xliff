@@ -1046,7 +1046,7 @@
     <body>
       <trans-unit id="534" resname="Owner" restype="string" datatype="javascript">
         <source>Owner</source>
-        <target state="translated">所有者</target>
+        <target state="translated">主治医生</target>
       </trans-unit>
       <trans-unit id="535" resname="Invited" restype="string" datatype="javascript">
         <source>Invited</source>
@@ -1062,7 +1062,7 @@
       </trans-unit>
       <trans-unit id="538" resname="Joined" restype="string" datatype="javascript">
         <source>Joined</source>
-        <target state="translated">加入</target>
+        <target state="translated">已加入</target>
       </trans-unit>
     </body>
   </file>
