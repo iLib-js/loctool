@@ -1009,4 +1009,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Classes/UI/FGFollowLayerView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Add or remove %@" restype="string" datatype="x-objective-c">
+        <source>Add or remove %@</source>
+        <target state="accepted">添加或移除 %@</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
