@@ -439,6 +439,7 @@ end
 def clean_string(string)
   string.
     # gsub(/<(['"][^'"]*['"]|[^>])*>/, "").
+    gsub(/\u2028/,' '). # remove weird unicode space (line break character)
     gsub(/\\\\/, "\\").
     gsub(/\\t/, "\t").
     gsub(/\\n/, "\n").
