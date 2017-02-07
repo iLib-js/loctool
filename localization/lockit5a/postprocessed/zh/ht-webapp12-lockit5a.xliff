@@ -4564,7 +4564,7 @@
       </trans-unit>
       <trans-unit id="5660" resname="r968859451" restype="string" datatype="x-haml">
         <source>, we’ve got them all. And we need more of them to accomplish even bigger goals!</source>
-        <target>，我们成就了所有人。我们需要更多的人共同完成更大的目标！</target>
+        <target>，我们成就所有人。我们需要更多的人共同完成更大的目标！</target>
       </trans-unit>
       <trans-unit id="5661" resname="r933237391" restype="string" datatype="x-haml">
         <source>Big dreamers and big doers? You bet. Here at</source>
