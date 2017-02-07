@@ -146,7 +146,8 @@ def accumulate_values(root, values, path_name)
   if orig && orig.is_a?(String)
     s = Sanitize.clean(orig)
     if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
-      values << s.gsub(/[^[:print:]]/ , '')#.gsub(/[^a-zA-Z0-9_\s,\.'’_—\(\)!\?-]/, '').strip
+      #values << orig.gsub(/[^[:print:]]/ , '')
+      values << orig
     elsif !(/(.*)(<[^>]*>)(.*)/.match(orig))
       #there is no html only special characters filtered out by Sanitize.clean
       values.concat(break_around_non_clean_chars(orig, s))
@@ -332,9 +333,9 @@ def process_line(skip_block_indent, ret, line, from_to)
               #puts '3'
               #punctuation in beginning
               res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
-              if !res && Sanitize.clean(line).gsub(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
-                line = Sanitize.clean(line).gsub(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
-              end
+              #if !res && Sanitize.clean(line).gsub(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
+              #  line = Sanitize.clean(line).gsub(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
+              #end
 
             elsif k.strip.match(/^[[:punct:]]/)
               #puts '4'

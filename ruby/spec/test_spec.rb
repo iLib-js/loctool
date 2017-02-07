@@ -503,6 +503,18 @@ describe 'HamlLocalizer' do
       #expect(local_name_to_output['de-DE']).to eq('FOO')
     end
 
+    it 'should leave alone ruby hashes' do
+      template = '
+- content_for :guest_content do
+  #expertsShowPage.logout
+    %a.questionPageLoggedOutBanner.hidden{:href=>"/sign_up"}
+'
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      puts local_name_to_output['de-DE']
+      local_name_to_output['de-DE'].include?(':href=>').should be_true
+      local_name_to_output['de-DE'].include?('&gt;').should be_false
+    end
+
   end
 
   describe 'british translation' do
