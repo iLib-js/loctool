@@ -21674,7 +21674,7 @@ display:none;
     <body>
       <trans-unit id="4211" resname="Please provide a contact number" restype="string" datatype="html">
         <source>Please provide a contact number</source>
-        <target>请提供您的联系方式。</target>
+        <target>请提供您的联系方式</target>
       </trans-unit>
       <trans-unit id="6085" resname="Mobile number:" restype="string" datatype="html">
         <source>Mobile number:</source>
@@ -22092,7 +22092,7 @@ display:none;
       </trans-unit>
       <trans-unit id="4277" resname="Send note" restype="string" datatype="html">
         <source>Send note</source>
-        <target>发送注意事项</target>
+        <target>发送感谢信</target>
       </trans-unit>
       <trans-unit id="6109" resname="To send your thanks to {last_name} and receive follow-up doctor answers and tips for this question, please share your email:" restype="string" datatype="html">
         <source>To send your thanks to {last_name} and receive follow-up doctor answers and tips for this question, please share your email:</source>

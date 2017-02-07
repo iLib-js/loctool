@@ -250,7 +250,7 @@
     <body>
       <trans-unit id="28" resname="hon-2k-uh7.disabledTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>发送注意事项</target>
+        <target>发送感谢信</target>
         <note annotates="source">Class = "UIButton"; disabledTitle = "Send note"; ObjectID = "hon-2k-uh7";</note>
       </trans-unit>
     </body>

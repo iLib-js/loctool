@@ -576,7 +576,7 @@
     <body>
       <trans-unit id="190" resname="Send Note" restype="string" datatype="javascript">
         <source>Send Note</source>
-        <target state="translated">发送注意事项</target>
+        <target state="translated">发送感谢信</target>
       </trans-unit>
     </body>
   </file>

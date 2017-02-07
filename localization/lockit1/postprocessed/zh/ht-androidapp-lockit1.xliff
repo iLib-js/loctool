@@ -7252,11 +7252,11 @@
       </trans-unit>
       <trans-unit id="1510" resname="collect_mobile_number" restype="string" datatype="x-android-resource">
         <source>Please provide a contact number.</source>
-        <target>请提供您的联系方式。</target>
+        <target>请提供您的联系方式</target>
       </trans-unit>
       <trans-unit id="1511" resname="collect_mailing_address" restype="string" datatype="x-android-resource">
         <source>Please provide a mailing address.</source>
-        <target>请提供您的电子邮箱.</target>
+        <target>请提供您的电子邮箱</target>
       </trans-unit>
       <trans-unit id="1512" resname="nux_invite_doctor_title" restype="string" datatype="x-android-resource">
         <source>Add Doctors to your Care-Team</source>
@@ -10300,7 +10300,7 @@
       </trans-unit>
       <trans-unit id="2269" resname="text_Send_note" restype="string" datatype="x-android-resource">
         <source>Send note</source>
-        <target>发送注意事项</target>
+        <target>发送感谢信</target>
       </trans-unit>
       <trans-unit id="2270" resname="text_More_information_needed_" restype="string" datatype="x-android-resource">
         <source>More information needed.</source>
