@@ -19178,7 +19178,7 @@
       </trans-unit>
       <trans-unit id="915" resname="i_specialize_in" restype="string" datatype="x-android-resource">
         <source>I specialize in</source>
-        <target>我专攻</target>
+        <target>我的主治科室</target>
       </trans-unit>
       <trans-unit id="916" resname="i_specialize_in_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Specialty</source>
@@ -19206,7 +19206,7 @@
       </trans-unit>
       <trans-unit id="922" resname="known_for" restype="string" datatype="x-android-resource">
         <source>I'm known for</source>
-        <target>我专攻</target>
+        <target>我的特色</target>
       </trans-unit>
       <trans-unit id="923" resname="known_for_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Known for</source>
@@ -24058,11 +24058,11 @@
       </trans-unit>
       <trans-unit id="2100" resname="text_Have_this" restype="string" datatype="x-android-resource">
         <source>Have this</source>
-        <target>有这个</target>
+        <target>现有这情况</target>
       </trans-unit>
       <trans-unit id="2101" resname="text_No_longer_have_this" restype="string" datatype="x-android-resource">
         <source>No longer have this</source>
-        <target>不再采取这个</target>
+        <target>现在无但曾经有这情况</target>
       </trans-unit>
       <trans-unit id="2102" resname="hint_Email_address" restype="string" datatype="x-android-resource">
         <source>Email address</source>
@@ -47763,7 +47763,7 @@
       </trans-unit>
       <trans-unit id="770" resname="feed_experiencing_symptoms" restype="string" datatype="x-android-resource">
         <source>Experiencing symptoms?</source>
-        <target>曾患症状？</target>
+        <target>有不舒服的症状？</target>
       </trans-unit>
       <trans-unit id="771" resname="feed_symptom_find_out_why" restype="string" datatype="x-android-resource">
         <source>Find out why</source>
