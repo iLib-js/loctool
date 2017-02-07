@@ -1040,7 +1040,7 @@
     <body>
       <trans-unit id="20" resname="r466948495" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}</source>
-        <target state="new">智能医生</target>
+        <target state="translated">智能医生</target>
       </trans-unit>
     </body>
   </file>
@@ -1188,7 +1188,7 @@
     <body>
       <trans-unit id="502" resname="r1014486431" restype="string" datatype="ruby">
         <source>Dr. %{full_name}</source>
-        <target state="new">%{full_name}医生</target>
+        <target state="translated">%{full_name}医生</target>
       </trans-unit>
     </body>
   </file>
@@ -1836,91 +1836,91 @@
       </trans-unit>
       <trans-unit id="110" resname="r902962623" restype="string" datatype="ruby">
         <source>American Sign Language</source>
-        <target state="new">美国手语</target>
+        <target state="translated">美国手语</target>
       </trans-unit>
       <trans-unit id="111" resname="r326691307" restype="string" datatype="ruby">
         <source>Azerbaijani</source>
-        <target state="new">阿塞拜疆</target>
+        <target state="translated">阿塞拜疆</target>
       </trans-unit>
       <trans-unit id="113" resname="r413818187" restype="string" datatype="ruby">
         <source>Cantonese</source>
-        <target state="new">广东话</target>
+        <target state="translated">广东话</target>
       </trans-unit>
       <trans-unit id="114" resname="r384026336" restype="string" datatype="ruby">
         <source>Chinese (Simplified)</source>
-        <target state="new">简体中文</target>
+        <target state="translated">简体中文</target>
       </trans-unit>
       <trans-unit id="115" resname="r404364090" restype="string" datatype="ruby">
         <source>Chinese (Traditional)</source>
-        <target state="new">中国传统的</target>
+        <target state="translated">中国传统的</target>
       </trans-unit>
       <trans-unit id="116" resname="r68179021" restype="string" datatype="ruby">
         <source>Guarani</source>
-        <target state="new">瓜拉尼</target>
+        <target state="translated">瓜拉尼</target>
       </trans-unit>
       <trans-unit id="117" resname="r311822480" restype="string" datatype="ruby">
         <source>Hausa</source>
-        <target state="new">豪萨</target>
+        <target state="translated">豪萨</target>
       </trans-unit>
       <trans-unit id="120" resname="r918780086" restype="string" datatype="ruby">
         <source>Kyrgiz</source>
-        <target state="new">吉尔吉斯</target>
+        <target state="translated">吉尔吉斯</target>
       </trans-unit>
       <trans-unit id="121" resname="r840511806" restype="string" datatype="ruby">
         <source>Mandarin</source>
-        <target state="new">普通话</target>
+        <target state="translated">普通话</target>
       </trans-unit>
       <trans-unit id="122" resname="r366588042" restype="string" datatype="ruby">
         <source>Navajo</source>
-        <target state="new">纳瓦霍</target>
+        <target state="translated">纳瓦霍</target>
       </trans-unit>
       <trans-unit id="123" resname="r955040749" restype="string" datatype="ruby">
         <source>Portuguese (Brazil)</source>
-        <target state="new">葡萄牙语（巴西）</target>
+        <target state="translated">葡萄牙语（巴西）</target>
       </trans-unit>
       <trans-unit id="124" resname="r273071435" restype="string" datatype="ruby">
         <source>Portuguese (Portugal)</source>
-        <target state="new">葡萄牙语（葡萄牙）</target>
+        <target state="translated">葡萄牙语（葡萄牙）</target>
       </trans-unit>
       <trans-unit id="125" resname="r480179844" restype="string" datatype="ruby">
         <source>Serbian</source>
-        <target state="new">塞尔维亚</target>
+        <target state="translated">塞尔维亚</target>
       </trans-unit>
       <trans-unit id="126" resname="r479950306" restype="string" datatype="ruby">
         <source>Slovak</source>
-        <target state="new">斯洛伐克</target>
+        <target state="translated">斯洛伐克</target>
       </trans-unit>
       <trans-unit id="127" resname="r403306952" restype="string" datatype="ruby">
         <source>Spanish (Latin American)</source>
-        <target state="new">西班牙语（拉丁美洲）</target>
+        <target state="translated">西班牙语（拉丁美洲）</target>
       </trans-unit>
       <trans-unit id="128" resname="r814842848" restype="string" datatype="ruby">
         <source>Spanish (Spain)</source>
-        <target state="new">西班牙语（西班牙）</target>
+        <target state="translated">西班牙语（西班牙）</target>
       </trans-unit>
       <trans-unit id="129" resname="r958401360" restype="string" datatype="ruby">
         <source>Tigrinya</source>
-        <target state="new">提格里尼亚</target>
+        <target state="translated">提格里尼亚</target>
       </trans-unit>
       <trans-unit id="130" resname="r1018926330" restype="string" datatype="ruby">
         <source>Turkish</source>
-        <target state="new">土耳其</target>
+        <target state="translated">土耳其</target>
       </trans-unit>
       <trans-unit id="131" resname="r286762168" restype="string" datatype="ruby">
         <source>Ukrainian</source>
-        <target state="new">乌克兰</target>
+        <target state="translated">乌克兰</target>
       </trans-unit>
       <trans-unit id="132" resname="r963566393" restype="string" datatype="ruby">
         <source>Urdu</source>
-        <target state="new">乌尔都语</target>
+        <target state="translated">乌尔都语</target>
       </trans-unit>
       <trans-unit id="133" resname="r382305876" restype="string" datatype="ruby">
         <source>Vietnamese</source>
-        <target state="new">越南语</target>
+        <target state="translated">越南语</target>
       </trans-unit>
       <trans-unit id="134" resname="r844207535" restype="string" datatype="ruby">
         <source>Yoruba</source>
-        <target state="new">约鲁巴</target>
+        <target state="translated">约鲁巴</target>
       </trans-unit>
     </body>
   </file>
@@ -1936,7 +1936,7 @@
     <body>
       <trans-unit id="60" resname="r944712741" restype="string" datatype="ruby">
         <source>In Dr. %{name}'s Referral Network</source>
-        <target state="new">在%{name}医生的转诊网络内</target>
+        <target state="translated">在%{name}医生的转诊网络内</target>
       </trans-unit>
     </body>
   </file>
@@ -1960,23 +1960,23 @@
     <body>
       <trans-unit id="109" resname="r1015693398" restype="string" datatype="ruby">
         <source>Clinical Finding</source>
-        <target state="new">临床发现</target>
+        <target state="translated">临床发现</target>
       </trans-unit>
       <trans-unit id="110" resname="r334558496" restype="string" datatype="ruby">
         <source>Clinical finding</source>
-        <target state="new">临床发现</target>
+        <target state="translated">临床发现</target>
       </trans-unit>
       <trans-unit id="111" resname="r161249316" restype="string" datatype="ruby">
         <source>Test Result</source>
-        <target state="new">检验结果</target>
+        <target state="translated">检验结果</target>
       </trans-unit>
       <trans-unit id="112" resname="r179500500" restype="string" datatype="ruby">
         <source>Diet</source>
-        <target state="new">饮食</target>
+        <target state="translated">饮食</target>
       </trans-unit>
       <trans-unit id="113" resname="r473163360" restype="string" datatype="ruby">
         <source>Test result</source>
-        <target state="new">检验结果</target>
+        <target state="translated">检验结果</target>
       </trans-unit>
     </body>
   </file>
@@ -1984,7 +1984,11 @@
     <body>
       <trans-unit id="243" resname="r688992261" restype="string" datatype="ruby">
         <source>Credit card number is invalid.</source>
-        <target state="new">Credit card number is invalid.</target>
+        <target state="accepted">信用卡号码无效</target>
+      </trans-unit>
+      <trans-unit id="265" resname="r963721111" restype="string" datatype="ruby">
+        <source>Postal code may contain no more than 9 letter or number characters.</source>
+        <target state="accepted">邮政编码不能超过9个字母或数字</target>
       </trans-unit>
     </body>
   </file>
