@@ -33412,7 +33412,7 @@
       </trans-unit>
       <trans-unit id="7982" resname="r848686431" restype="string" datatype="ruby">
         <source>Educational text answers</source>
-        <target state="translated">教育性文本回答</target>
+        <target state="translated">知识消息问答</target>
       </trans-unit>
       <trans-unit id="7983" resname="r934205858" restype="string" datatype="ruby">
         <source>From top doctors in 141 specialties</source>
@@ -38560,7 +38560,7 @@
     <body>
       <trans-unit id="8993" resname="Send your question for one or more answers from our network of more than {num_experts} doctors or consult a doctor." restype="string" datatype="javascript">
         <source>Send your question for one or more answers from our network of more than {num_experts} doctors or consult a doctor.</source>
-        <target state="translated">发送您的问题，获得来自我们由超过{num_experts}名医生组成的网络的一个或多个教育性文本回答，或者咨询一名医生。</target>
+        <target state="translated">发送您的问题，获得来自我们由超过{num_experts}名医生组成的网络的一个或多个知识消息问答，或者咨询一名医生。</target>
       </trans-unit>
     </body>
   </file>
