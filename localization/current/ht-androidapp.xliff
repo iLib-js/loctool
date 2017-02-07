@@ -16116,7 +16116,7 @@
       </trans-unit>
       <trans-unit id="312" resname="r1046176237" restype="string" datatype="java">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
     </body>
   </file>
@@ -16164,7 +16164,7 @@
       </trans-unit>
       <trans-unit id="322" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="323" resname="r586469932" restype="string" datatype="java">
         <source>Are you sure you want to remove this from your profile?</source>
@@ -18906,7 +18906,7 @@
       </trans-unit>
       <trans-unit id="848" resname="never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="849" resname="not_member_msg" restype="string" datatype="x-android-resource">
         <source>Not a member?</source>
@@ -20007,7 +20007,7 @@
       </trans-unit>
       <trans-unit id="1124" resname="settings_nevermind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1125" resname="default_error_payment_credit_card" restype="string" datatype="x-android-resource">
         <source>An error occurred</source>
@@ -20027,7 +20027,7 @@
       </trans-unit>
       <trans-unit id="1129" resname="settings_unavialable_state_dialog_button_nevermind" restype="string" datatype="x-android-resource">
         <source>Nevermind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1130" resname="concierge_credit_balance" restype="string" datatype="x-android-resource">
         <source>Credit Balance</source>
@@ -20682,7 +20682,7 @@
       </trans-unit>
       <trans-unit id="1259" resname="cancel_subscription_dialog_downgrade_cancel" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1260" resname="cancel_subscription_dialog_downgrade_downgrade" restype="string" datatype="x-android-resource">
         <source>Downgrade</source>
@@ -20762,7 +20762,7 @@
       </trans-unit>
       <trans-unit id="1279" resname="cancel_previous_session_never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1280" resname="cancel_previous_session_yes" restype="string" datatype="x-android-resource">
         <source>Yes</source>
@@ -21278,7 +21278,7 @@
       </trans-unit>
       <trans-unit id="1408" resname="concierge_appointment_list_never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1409" resname="cancel_appointment_title" restype="string" datatype="x-android-resource">
         <source>Are you sure?</source>
@@ -24090,7 +24090,7 @@
       </trans-unit>
       <trans-unit id="2108" resname="text_Never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="2109" resname="text_Change" restype="string" datatype="x-android-resource">
         <source>Change</source>
@@ -24850,7 +24850,7 @@
       </trans-unit>
       <trans-unit id="2298" resname="text_Never_Mind" restype="string" datatype="x-android-resource">
         <source>Never Mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="2299" resname="text_Send_Report" restype="string" datatype="x-android-resource">
         <source>Send Report</source>
@@ -29723,6 +29723,48 @@
       <trans-unit id="4" resname="location_search_unavailable" restype="string" datatype="x-android-resource">
         <source>Sorry, changing your location is currently not available.</source>
         <target state="translated">抱歉，目前无法更改您的位置。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/UnfollowLayerDialogBox.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="3" resname="r32892148" restype="string" datatype="java">
+        <source>You're now following "{topic_name}"</source>
+        <target state="new">你现在关注了 "{topic_name}"</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/click_listeners/FollowItemListener.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="4" resname="r440805493" restype="string" datatype="java">
+        <source>You're now following the topic "{0}"!</source>
+        <target state="new">你现在关注了此专题 "{0}"!</target>
+        <note annotates="source">{0} is a topic name.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/adapters/AllAttributeListAdapter.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="5" resname="r780459903" restype="string" datatype="java">
+        <source>You're now following "{0}"</source>
+        <target state="new">你现在关注了 "{0}"</target>
+        <note annotates="source">{0} is a topic name.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="6" resname="deactivate_user_msg" restype="string" datatype="x-android-resource">
+        <source>This account has been deactivated. &lt;u&gt;Contact us&lt;/u&gt; to re-activate it.</source>
+        <target>这个账户已被取消。 &lt;u&gt;联系我们&lt;/u&gt; 以重新激活。</target>
+      </trans-unit>
+      <trans-unit id="8" resname="location_search_unavailable" restype="string" datatype="x-android-resource">
+        <source>Sorry, changing your location is currently not available.</source>
+        <target>抱歉，现在无法更新您的地址。</target>
+      </trans-unit>
+      <trans-unit id="9" resname="deactivate" restype="string" datatype="x-android-resource">
+        <source>Deactivate</source>
+        <target>取消账户</target>
       </trans-unit>
     </body>
   </file>
@@ -45459,7 +45501,7 @@
     <body>
       <trans-unit id="327" resname="r1046176237" restype="string" datatype="java">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
         <note annotates="source">This is used to dismiss a popup dialog.</note>
       </trans-unit>
     </body>
@@ -45545,7 +45587,7 @@
     <body>
       <trans-unit id="337" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
         <note annotates="source">This is used to dismiss a popup dialog.</note>
       </trans-unit>
       <trans-unit id="469" resname="r856768157" restype="string" datatype="java">
