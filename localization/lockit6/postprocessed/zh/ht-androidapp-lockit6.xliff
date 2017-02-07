@@ -1806,7 +1806,7 @@
     <body>
       <trans-unit id="327" resname="r1046176237" restype="string" datatype="java">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
         <note annotates="source">This is used to dismiss a popup dialog.</note>
       </trans-unit>
     </body>
@@ -1892,7 +1892,7 @@
     <body>
       <trans-unit id="337" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
         <note annotates="source">This is used to dismiss a popup dialog.</note>
       </trans-unit>
       <trans-unit id="469" resname="r856768157" restype="string" datatype="java">
