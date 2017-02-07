@@ -144,7 +144,7 @@
       </trans-unit>
       <trans-unit id="95" resname="r548219023" restype="string" datatype="ruby">
         <source>You're never alone&lt;br&gt; Just &lt;i&gt; Tap-in &lt;/i&gt;</source>
-        <target>您永远不会孤独&lt;br&gt;只需&lt;i&gt;轻触&lt;/i&gt;</target>
+        <target>你永远能获得帮助&lt;br&gt;只需&lt;i&gt;轻轻一点&lt;/i&gt;</target>
       </trans-unit>
       <trans-unit id="96" resname="r931665539" restype="string" datatype="ruby">
         <source>and a healthier, happier world&lt;br&gt;starts with you</source>
