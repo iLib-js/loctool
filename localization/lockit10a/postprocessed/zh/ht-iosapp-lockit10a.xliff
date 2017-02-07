@@ -992,4 +992,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/HTBodyPickerViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Back_Body_Part" restype="string" datatype="x-objective-c">
+        <source>Back_Body_Part</source>
+        <target state="accepted">后背</target>
+        <note annotates="source">This should be the translation of 'Back' as a part of the body</note>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
