@@ -9172,7 +9172,7 @@
       </trans-unit>
       <trans-unit id="1987" resname="text_Availability" restype="string" datatype="x-android-resource">
         <source>Availability</source>
-        <target>可以/空闲</target>
+        <target>空闲</target>
       </trans-unit>
       <trans-unit id="1988" resname="text_more___" restype="string" datatype="x-android-resource">
         <source>more...</source>
