@@ -860,4 +860,68 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="Conditions Treated" restype="string" datatype="x-objective-c">
+        <source>Conditions Treated</source>
+        <target state="translated">已治疗的病症</target>
+      </trans-unit>
+      <trans-unit id="3" resname="condition" restype="string" datatype="x-objective-c">
+        <source>condition</source>
+        <target state="translated">健康状况</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Immunizations" restype="string" datatype="x-objective-c">
+        <source>Immunizations</source>
+        <target state="translated">免疫/预防接种</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/TableViewCells/FGSearchResultAgeDistributionCell.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="5" resname="Very common" restype="string" datatype="x-objective-c">
+        <source>Very common</source>
+        <target state="translated">很常见</target>
+      </trans-unit>
+      <trans-unit id="7" resname="Common" restype="string" datatype="x-objective-c">
+        <source>Common</source>
+        <target state="translated">普通</target>
+      </trans-unit>
+      <trans-unit id="9" resname="Rare" restype="string" datatype="x-objective-c">
+        <source>Rare</source>
+        <target state="translated">稀有</target>
+      </trans-unit>
+      <trans-unit id="11" resname="Very rare" restype="string" datatype="x-objective-c">
+        <source>Very rare</source>
+        <target state="translated">很罕见</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Symptoms list" restype="string" datatype="x-objective-c">
+        <source>Symptoms list</source>
+        <target state="accepted">症状列表</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/TableViewCells/FGSearchResultAgeDistributionCell.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="6" resname="very common" restype="string" datatype="x-objective-c">
+        <source>very common</source>
+        <target state="accepted">很常见</target>
+      </trans-unit>
+      <trans-unit id="8" resname="common" restype="string" datatype="x-objective-c">
+        <source>common</source>
+        <target state="accepted">普通</target>
+      </trans-unit>
+      <trans-unit id="10" resname="rare" restype="string" datatype="x-objective-c">
+        <source>rare</source>
+        <target state="accepted">稀有</target>
+      </trans-unit>
+      <trans-unit id="12" resname="very rare" restype="string" datatype="x-objective-c">
+        <source>very rare</source>
+        <target state="accepted">很罕见</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
