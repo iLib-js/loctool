@@ -1980,4 +1980,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/models/loc_strings_dummy.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="243" resname="r688992261" restype="string" datatype="ruby">
+        <source>Credit card number is invalid.</source>
+        <target state="new">Credit card number is invalid.</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
