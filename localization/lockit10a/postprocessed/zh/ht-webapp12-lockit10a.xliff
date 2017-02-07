@@ -1922,6 +1922,26 @@
         <source>Yoruba</source>
         <target state="new">约鲁巴</target>
       </trans-unit>
+      <trans-unit id="113" resname="r376623140" restype="string" datatype="ruby">
+        <source>Bihari</source>
+        <target state="translated">比哈尔语</target>
+      </trans-unit>
+      <trans-unit id="114" resname="r259232445" restype="string" datatype="ruby">
+        <source>Chinese (Cantonese)</source>
+        <target state="translated">中文(粤语)</target>
+      </trans-unit>
+      <trans-unit id="115" resname="r808802199" restype="string" datatype="ruby">
+        <source>Chinese (Mandarin)</source>
+        <target state="translated">中文(普通话)</target>
+      </trans-unit>
+      <trans-unit id="116" resname="r1035491504" restype="string" datatype="ruby">
+        <source>Hmong</source>
+        <target state="translated">苗語</target>
+      </trans-unit>
+      <trans-unit id="117" resname="r419562358" restype="string" datatype="ruby">
+        <source>Igbo</source>
+        <target state="translated">伊博语</target>
+      </trans-unit>
     </body>
   </file>
   <file original="app/models/chat_session.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
