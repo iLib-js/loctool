@@ -146,8 +146,8 @@ def accumulate_values(root, values, path_name)
   if orig && orig.is_a?(String)
     s = Sanitize.clean(orig)
     if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
-      #values << orig.gsub(/[^[:print:]]/ , '')
-      values << orig
+      values << orig.gsub(/[^[:print:]]/ , '')
+      #values << orig
     elsif !(/(.*)(<[^>]*>)(.*)/.match(orig))
       #there is no html only special characters filtered out by Sanitize.clean
       values.concat(break_around_non_clean_chars(orig, s))
