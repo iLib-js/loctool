@@ -9396,7 +9396,7 @@ what they are looking at</source>
       </trans-unit>
       <trans-unit id="Here are kind words from others" resname="Here are kind words from others" restype="string" datatype="x-objective-c">
         <source>Here are kind words from others</source>
-        <target>这是别人的善言。</target>
+        <target>这是别人的好评。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Here are some doctor insights while you wait..." resname="Here are some doctor insights while you wait..." restype="string" datatype="x-objective-c">
@@ -9893,7 +9893,7 @@ only a tap away</source>
       </trans-unit>
       <trans-unit id="Joined" resname="Joined" restype="string" datatype="x-objective-c">
         <source>Joined</source>
-        <target>加入</target>
+        <target>已加入</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Jul" resname="Jul" restype="string" datatype="x-objective-c">
@@ -10607,7 +10607,7 @@ educational answers</source>
       </trans-unit>
       <trans-unit id="Owner" resname="Owner" restype="string" datatype="x-objective-c">
         <source>Owner</source>
-        <target>所有者</target>
+        <target>主治医生</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Participants" resname="Participants" restype="string" datatype="x-objective-c">

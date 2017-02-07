@@ -2487,7 +2487,7 @@
       </trans-unit>
       <trans-unit id="9150" resname="r212262046" restype="string" datatype="x-haml">
         <source>Here are kind words from others</source>
-        <target>这是别人的善言。</target>
+        <target>这是别人的好评。</target>
       </trans-unit>
       <trans-unit id="9151" resname="r873521129" restype="string" datatype="x-haml">
         <source>I am located at</source>
@@ -4564,7 +4564,7 @@
       </trans-unit>
       <trans-unit id="5660" resname="r968859451" restype="string" datatype="x-haml">
         <source>, we’ve got them all. And we need more of them to accomplish even bigger goals!</source>
-        <target>，我们成就了所有人。我们需要更多的人共同完成更大的目标！</target>
+        <target>，我们成就所有人。我们需要更多的人共同完成更大的目标！</target>
       </trans-unit>
       <trans-unit id="5661" resname="r933237391" restype="string" datatype="x-haml">
         <source>Big dreamers and big doers? You bet. Here at</source>

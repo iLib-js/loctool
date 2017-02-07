@@ -4668,7 +4668,7 @@
       </trans-unit>
       <trans-unit id="897" resname="preask_edittext_hint_inbox_consult" restype="string" datatype="x-android-resource">
         <source>Share a detailed description of your symptoms, concerns, and how you'd like the doctor to help you. Attach images and files as necessary.</source>
-        <target>分享您的症状，担心以及您希望医生如何帮助您的详细说明。必须附加照片或文件</target>
+        <target>分享您的症状，担心以及您希望医生如何帮助您的详细说明。最好附加照片或文件</target>
       </trans-unit>
       <trans-unit id="898" resname="preask_edittext_count" restype="string" datatype="x-android-resource">
         <source>0/150</source>
@@ -7256,7 +7256,7 @@
       </trans-unit>
       <trans-unit id="1511" resname="collect_mailing_address" restype="string" datatype="x-android-resource">
         <source>Please provide a mailing address.</source>
-        <target>请提供您的电子邮箱.</target>
+        <target>请提供您的电子邮箱。</target>
       </trans-unit>
       <trans-unit id="1512" resname="nux_invite_doctor_title" restype="string" datatype="x-android-resource">
         <source>Add Doctors to your Care-Team</source>
@@ -9172,7 +9172,7 @@
       </trans-unit>
       <trans-unit id="1987" resname="text_Availability" restype="string" datatype="x-android-resource">
         <source>Availability</source>
-        <target>可以/空闲</target>
+        <target>空闲</target>
       </trans-unit>
       <trans-unit id="1988" resname="text_more___" restype="string" datatype="x-android-resource">
         <source>more...</source>
@@ -10300,7 +10300,7 @@
       </trans-unit>
       <trans-unit id="2269" resname="text_Send_note" restype="string" datatype="x-android-resource">
         <source>Send note</source>
-        <target>发送注意事项</target>
+        <target>发送感谢信</target>
       </trans-unit>
       <trans-unit id="2270" resname="text_More_information_needed_" restype="string" datatype="x-android-resource">
         <source>More information needed.</source>

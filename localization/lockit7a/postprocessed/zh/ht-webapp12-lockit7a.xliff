@@ -1793,7 +1793,7 @@
       </trans-unit>
       <trans-unit id="973" resname="r118374496" restype="string" datatype="ruby">
         <source>Both</source>
-        <target state="translated">都</target>
+        <target state="translated">两者</target>
       </trans-unit>
       <trans-unit id="974" resname="r655006897" restype="string" datatype="ruby">
         <source>I don't know</source>
@@ -6484,7 +6484,7 @@
       </trans-unit>
       <trans-unit id="1707" resname="Would you like to consult {link_tag_start}{name}{link_tag_end}, a specialist in {specialty}, for any follow-up questions?" restype="string" datatype="javascript">
         <source>Would you like to consult {link_tag_start}{name}{link_tag_end}, a specialist in {specialty}, for any follow-up questions?</source>
-        <target state="translated">您想要咨询什么{link_tag_start}{name}{link_tag_end}, 在{specialty}一位专家, 对于任何后续问题？</target>
+        <target state="translated">您想要咨询什么后续问题吗?可以询问{link_tag_start}{name}{link_tag_end}, 一位{specialty}专家。</target>
       </trans-unit>
     </body>
   </file>

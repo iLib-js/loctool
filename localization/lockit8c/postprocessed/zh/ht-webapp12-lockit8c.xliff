@@ -189,7 +189,7 @@
     <body>
       <trans-unit id="177" resname="r358657435" restype="string" datatype="ruby">
         <source>Share a detailed description of your symptoms, concerns, and how you'd like the doctor to help you. Attach images and files as necessary.</source>
-        <target state="translated">分享您的症状，担心以及您希望医生如何帮助您的详细说明。必须附加照片或文件</target>
+        <target state="translated">分享您的症状，担心以及您希望医生如何帮助您的详细说明。最好附加照片或文件</target>
       </trans-unit>
       <trans-unit id="2237" resname="r143437710" restype="string" datatype="ruby">
         <source>Your zip code</source>
@@ -10464,7 +10464,7 @@
     <body>
       <trans-unit id="2060" resname="r269501934" restype="string" datatype="ruby">
         <source>Our %{n} top doctors are here for you,&lt;br&gt; anytime, anywhere</source>
-        <target state="translated">我们的%{n}顶级医生在这里&lt;br&gt;随时随地为您服务</target>
+        <target state="translated">我们的%{n}名顶级医生在这里&lt;br&gt;随时随地为您服务</target>
       </trans-unit>
       <trans-unit id="2061" resname="r363561295" restype="string" datatype="ruby">
         <source>You get doctor advice, actionable plans,&lt;br&gt; prescriptions, referrals, and even lab tests</source>
@@ -10492,7 +10492,7 @@
       </trans-unit>
       <trans-unit id="2067" resname="r548219023" restype="string" datatype="ruby">
         <source>You're never alone&lt;br&gt; Just &lt;i&gt; Tap-in &lt;/i&gt;</source>
-        <target state="translated">您永远不是孤独的&lt;br&gt;只需&lt;i&gt;轻触&lt;/i&gt;</target>
+        <target state="translated">你永远能获得帮助&lt;br&gt;只需&lt;i&gt;轻轻一点&lt;/i&gt;</target>
       </trans-unit>
       <trans-unit id="2068" resname="r931665539" restype="string" datatype="ruby">
         <source>and a healthier, happier world&lt;br&gt;starts with you</source>
@@ -11697,7 +11697,7 @@
     <body>
       <trans-unit id="2257" resname="r286644437" restype="string" datatype="ruby">
         <source>Join today for &lt;b&gt;free&lt;/b&gt; to feel good and improve your health!</source>
-        <target state="translated">立刻&lt;b&gt;免费&lt;/b&gt;加入，Feel Good并提高您的健康！</target>
+        <target state="translated">立刻&lt;b&gt;免费&lt;/b&gt;加入，Feel Good并改善您的健康！</target>
       </trans-unit>
       <trans-unit id="2258" resname="r598895172" restype="string" datatype="ruby">
         <source>Create a free, private account</source>
@@ -23879,7 +23879,7 @@
       </trans-unit>
       <trans-unit id="4669" resname="r751296443" restype="string" datatype="ruby">
         <source>Improving your Experience</source>
-        <target state="translated">丰富您的经验</target>
+        <target state="translated">提高您的用户体验</target>
       </trans-unit>
       <trans-unit id="4670" resname="r413594303" restype="string" datatype="ruby">
         <source>Tips on making the most of HealthTap</source>
@@ -24391,7 +24391,7 @@
       </trans-unit>
       <trans-unit id="4795" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
-        <target state="translated">不是性活跃</target>
+        <target state="translated">非性活跃</target>
       </trans-unit>
       <trans-unit id="4796" resname="r699411433" restype="string" datatype="ruby">
         <source>Men</source>
@@ -24403,7 +24403,7 @@
       </trans-unit>
       <trans-unit id="4798" resname="r118374496" restype="string" datatype="ruby">
         <source>Both</source>
-        <target state="translated">都</target>
+        <target state="translated">两者</target>
       </trans-unit>
       <trans-unit id="4799" resname="r276834703" restype="string" datatype="ruby">
         <source>Marijuana</source>
@@ -33412,7 +33412,7 @@
       </trans-unit>
       <trans-unit id="7982" resname="r848686431" restype="string" datatype="ruby">
         <source>Educational text answers</source>
-        <target state="translated">教育性文本回答</target>
+        <target state="translated">知识消息问答</target>
       </trans-unit>
       <trans-unit id="7983" resname="r934205858" restype="string" datatype="ruby">
         <source>From top doctors in 141 specialties</source>
@@ -37200,7 +37200,7 @@
       </trans-unit>
       <trans-unit id="8752" resname="Would you like to consult {link_tag_start}{name}{link_tag_end}, a specialist in {specialty}, for any follow-up questions?" restype="string" datatype="javascript">
         <source>Would you like to consult {link_tag_start}{name}{link_tag_end}, a specialist in {specialty}, for any follow-up questions?</source>
-        <target state="translated">您想要咨询什么{link_tag_start}{name}{link_tag_end}, 在{specialty}一位专家, 对于任何后续问题？</target>
+        <target state="translated">您想要咨询什么后续问题吗?可以询问{link_tag_start}{name}{link_tag_end}, 一位{specialty}专家。</target>
       </trans-unit>
     </body>
   </file>
@@ -38560,7 +38560,7 @@
     <body>
       <trans-unit id="8993" resname="Send your question for one or more answers from our network of more than {num_experts} doctors or consult a doctor." restype="string" datatype="javascript">
         <source>Send your question for one or more answers from our network of more than {num_experts} doctors or consult a doctor.</source>
-        <target state="translated">发送您的问题，获得来自我们由超过{num_experts}名医生组成的网络的一个或多个教育性文本回答，或者咨询一名医生。</target>
+        <target state="translated">发送您的问题，获得来自我们由超过{num_experts}名医生组成的网络的一个或多个知识消息问答，或者咨询一名医生。</target>
       </trans-unit>
     </body>
   </file>
@@ -40621,7 +40621,7 @@
       </trans-unit>
       <trans-unit id="9438" resname="Expires (MM/YY)" restype="string" datatype="javascript">
         <source>Expires (MM/YY)</source>
-        <target state="translated">过期 (MM/YY)</target>
+        <target state="translated">有效期至 (月月/年年)</target>
       </trans-unit>
       <trans-unit id="9439" resname="Security code" restype="string" datatype="javascript">
         <source>Security code</source>
@@ -42709,11 +42709,11 @@
       </trans-unit>
       <trans-unit id="9893" resname="Exp (MM/YY)" restype="string" datatype="javascript">
         <source>Exp (MM/YY)</source>
-        <target state="translated">过期 (月/年)</target>
+        <target state="translated">有效期至 (月/年)</target>
       </trans-unit>
       <trans-unit id="9894" resname="Expiry (MM/YY)" restype="string" datatype="javascript">
         <source>Expiry (MM/YY)</source>
-        <target state="translated">过期 (月/年)</target>
+        <target state="translated">有效期至 (月/年)</target>
       </trans-unit>
       <trans-unit id="9895" resname="You can ask 150-character health questions to one of our {n} top doctors for free." restype="string" datatype="javascript">
         <source>You can ask 150-character health questions to one of our {n} top doctors for free.</source>

@@ -12384,7 +12384,7 @@
       </trans-unit>
       <trans-unit id="2629" resname="r751296443" restype="string" datatype="ruby">
         <source>Improving your Experience</source>
-        <target>丰富您的经验</target>
+        <target>提高您的用户体验</target>
       </trans-unit>
       <trans-unit id="2630" resname="r413594303" restype="string" datatype="ruby">
         <source>Tips on making the most of HealthTap</source>
@@ -24375,7 +24375,7 @@
       </trans-unit>
       <trans-unit id="5660" resname="r968859451" restype="string" datatype="x-haml">
         <source>, we’ve got them all. And we need more of them to accomplish even bigger goals!</source>
-        <target>，我们成就了所有人。我们需要更多的人共同完成更大的目标！</target>
+        <target>，我们成就所有人。我们需要更多的人共同完成更大的目标！</target>
       </trans-unit>
       <trans-unit id="5661" resname="r933237391" restype="string" datatype="x-haml">
         <source>Big dreamers and big doers? You bet. Here at</source>

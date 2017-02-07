@@ -835,7 +835,7 @@
     <body>
       <trans-unit id="1" resname="Resolution" restype="string" datatype="x-objective-c">
         <source>Resolution</source>
-        <target state="accepted">分辨率</target>
+        <target state="accepted">决心</target>
         <note annotates="source">search bar place holder, format: Search Resolution</note>
       </trans-unit>
     </body>

@@ -21674,7 +21674,7 @@ display:none;
     <body>
       <trans-unit id="4211" resname="Please provide a contact number" restype="string" datatype="html">
         <source>Please provide a contact number</source>
-        <target>请提供您的联系方式。</target>
+        <target>请提供您的联系方式</target>
       </trans-unit>
       <trans-unit id="6085" resname="Mobile number:" restype="string" datatype="html">
         <source>Mobile number:</source>
@@ -22092,7 +22092,7 @@ display:none;
       </trans-unit>
       <trans-unit id="4277" resname="Send note" restype="string" datatype="html">
         <source>Send note</source>
-        <target>发送注意事项</target>
+        <target>发送感谢信</target>
       </trans-unit>
       <trans-unit id="6109" resname="To send your thanks to {last_name} and receive follow-up doctor answers and tips for this question, please share your email:" restype="string" datatype="html">
         <source>To send your thanks to {last_name} and receive follow-up doctor answers and tips for this question, please share your email:</source>
@@ -22148,7 +22148,7 @@ display:none;
       </trans-unit>
       <trans-unit id="6116" resname="Would you like to consult {link_tag_start}{name}{link_tag_end}, a specialist in {specialty}, for any follow-up questions?" restype="string" datatype="html">
         <source>Would you like to consult {link_tag_start}{name}{link_tag_end}, a specialist in {specialty}, for any follow-up questions?</source>
-        <target>您想要咨询什么{link_tag_start}{name}{link_tag_end}, 在{specialty}一位专家, 对于任何后续问题？</target>
+        <target>您想要咨询什么后续问题吗?可以询问{link_tag_start}{name}{link_tag_end}, 一位{specialty}专家。</target>
       </trans-unit>
     </body>
   </file>
@@ -34583,7 +34583,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6817" resname="Expires (MM/YY)" restype="string" datatype="javascript">
         <source>Expires (MM/YY)</source>
-        <target>过期 (月月/年年)</target>
+        <target>有效期至 (月月/年年)</target>
       </trans-unit>
       <trans-unit id="6818" resname="Invalid code entered" restype="string" datatype="javascript">
         <source>Invalid code entered</source>
@@ -35691,11 +35691,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7046" resname="Exp (MM/YY)" restype="string" datatype="javascript">
         <source>Exp (MM/YY)</source>
-        <target>过期 (MM/YY)</target>
+        <target>有效期至 (月月/年年)</target>
       </trans-unit>
       <trans-unit id="7047" resname="Expiry (MM/YY)" restype="string" datatype="javascript">
         <source>Expiry (MM/YY)</source>
-        <target>过期 (MM/YY)</target>
+        <target>有效期至 (月月/年年)</target>
       </trans-unit>
       <trans-unit id="7048" resname="You can ask 150-character health questions to one of our {n} top doctors for free." restype="string" datatype="javascript">
         <source>You can ask 150-character health questions to one of our {n} top doctors for free.</source>

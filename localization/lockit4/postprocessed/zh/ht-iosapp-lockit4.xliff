@@ -2372,7 +2372,7 @@
     <body>
       <trans-unit id="446" resname="Availability" restype="string" datatype="x-objective-c">
         <source>Availability</source>
-        <target>可以/空闲</target>
+        <target>空闲</target>
       </trans-unit>
       <trans-unit id="447" resname="More..." restype="string" datatype="x-objective-c">
         <source>More...</source>
