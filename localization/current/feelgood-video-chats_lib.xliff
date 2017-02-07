@@ -1669,7 +1669,7 @@
       </trans-unit>
       <trans-unit id="95" resname="nonaction_owner" restype="string" datatype="x-android-resource">
         <source>Owner</source>
-        <target>所有者</target>
+        <target>主治医生</target>
       </trans-unit>
       <trans-unit id="96" resname="nonaction_staff" restype="string" datatype="x-android-resource">
         <source>Staff</source>
