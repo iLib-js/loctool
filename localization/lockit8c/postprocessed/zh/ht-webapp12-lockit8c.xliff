@@ -10464,7 +10464,7 @@
     <body>
       <trans-unit id="2060" resname="r269501934" restype="string" datatype="ruby">
         <source>Our %{n} top doctors are here for you,&lt;br&gt; anytime, anywhere</source>
-        <target state="translated">我们的%{n}顶级医生在这里&lt;br&gt;随时随地为您服务</target>
+        <target state="translated">我们的%{n}名顶级医生在这里&lt;br&gt;随时随地为您服务</target>
       </trans-unit>
       <trans-unit id="2061" resname="r363561295" restype="string" datatype="ruby">
         <source>You get doctor advice, actionable plans,&lt;br&gt; prescriptions, referrals, and even lab tests</source>
