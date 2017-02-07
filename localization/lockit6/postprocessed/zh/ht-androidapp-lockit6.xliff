@@ -4130,7 +4130,7 @@
       </trans-unit>
       <trans-unit id="770" resname="feed_experiencing_symptoms" restype="string" datatype="x-android-resource">
         <source>Experiencing symptoms?</source>
-        <target>曾患症状？</target>
+        <target>有不舒服的症状？</target>
       </trans-unit>
       <trans-unit id="771" resname="feed_symptom_find_out_why" restype="string" datatype="x-android-resource">
         <source>Find out why</source>
