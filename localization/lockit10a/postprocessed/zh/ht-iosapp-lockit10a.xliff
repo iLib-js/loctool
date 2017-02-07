@@ -924,4 +924,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Data/FGChatCompositeHeaderData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="I recommend you try Dr. %@&apos;s checklist on %@" restype="string" datatype="x-objective-c">
+        <source>I recommend you try Dr. %@'s checklist on %@</source>
+        <target state="accepted">我建议你试试 %@ 医生关于 %@ 的清单</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
