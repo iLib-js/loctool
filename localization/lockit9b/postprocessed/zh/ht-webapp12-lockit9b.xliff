@@ -84,7 +84,7 @@
     <body>
       <trans-unit id="64" resname="r271968593" restype="string" datatype="ruby">
         <source>I specialize in</source>
-        <target state="translated">我专攻</target>
+        <target state="translated">我的主治科室</target>
         <note annotates="source">this is a section title. Ie. Title: Specialty, Content: Internal Medicine</note>
       </trans-unit>
       <trans-unit id="65" resname="r356270234" restype="string" datatype="ruby">
