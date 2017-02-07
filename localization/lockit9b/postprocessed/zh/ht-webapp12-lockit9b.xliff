@@ -104,7 +104,7 @@
       </trans-unit>
       <trans-unit id="69" resname="r212262046" restype="string" datatype="ruby">
         <source>Here are kind words from others</source>
-        <target state="translated">这是别人的善言。</target>
+        <target state="translated">这是别人的好评。</target>
         <note annotates="source">this is a section title. Ie. Specialty: Internal Medicine</note>
       </trans-unit>
       <trans-unit id="70" resname="r873521129" restype="string" datatype="ruby">

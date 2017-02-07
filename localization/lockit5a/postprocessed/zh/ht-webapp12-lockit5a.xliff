@@ -2487,7 +2487,7 @@
       </trans-unit>
       <trans-unit id="9150" resname="r212262046" restype="string" datatype="x-haml">
         <source>Here are kind words from others</source>
-        <target>这是别人的善言。</target>
+        <target>这是别人的好评。</target>
       </trans-unit>
       <trans-unit id="9151" resname="r873521129" restype="string" datatype="x-haml">
         <source>I am located at</source>

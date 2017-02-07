@@ -9396,7 +9396,7 @@ what they are looking at</source>
       </trans-unit>
       <trans-unit id="Here are kind words from others" resname="Here are kind words from others" restype="string" datatype="x-objective-c">
         <source>Here are kind words from others</source>
-        <target>这是别人的善言。</target>
+        <target>这是别人的好评。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Here are some doctor insights while you wait..." resname="Here are some doctor insights while you wait..." restype="string" datatype="x-objective-c">
