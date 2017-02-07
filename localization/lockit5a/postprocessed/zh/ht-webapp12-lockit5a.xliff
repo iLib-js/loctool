@@ -2463,7 +2463,7 @@
       </trans-unit>
       <trans-unit id="9142" resname="r271968593" restype="string" datatype="x-haml">
         <source>I specialize in</source>
-        <target>我专攻</target>
+        <target>我的主治科室</target>
       </trans-unit>
       <trans-unit id="9144" resname="r780599855" restype="string" datatype="x-haml">
         <source>I am licensed to see patients from</source>

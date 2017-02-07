@@ -4744,7 +4744,7 @@
       </trans-unit>
       <trans-unit id="915" resname="i_specialize_in" restype="string" datatype="x-android-resource">
         <source>I specialize in</source>
-        <target>我专攻</target>
+        <target>我的主治科室</target>
       </trans-unit>
       <trans-unit id="916" resname="i_specialize_in_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Specialty</source>
@@ -4772,7 +4772,7 @@
       </trans-unit>
       <trans-unit id="922" resname="known_for" restype="string" datatype="x-android-resource">
         <source>I'm known for</source>
-        <target>我专攻</target>
+        <target>我的特色</target>
       </trans-unit>
       <trans-unit id="923" resname="known_for_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Known for</source>
