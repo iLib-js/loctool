@@ -1834,6 +1834,94 @@
         <source>Yiddish</source>
         <target state="translated">意第绪语</target>
       </trans-unit>
+      <trans-unit id="110" resname="r902962623" restype="string" datatype="ruby">
+        <source>American Sign Language</source>
+        <target state="new">美国手语</target>
+      </trans-unit>
+      <trans-unit id="111" resname="r326691307" restype="string" datatype="ruby">
+        <source>Azerbaijani</source>
+        <target state="new">阿塞拜疆</target>
+      </trans-unit>
+      <trans-unit id="113" resname="r413818187" restype="string" datatype="ruby">
+        <source>Cantonese</source>
+        <target state="new">广东话</target>
+      </trans-unit>
+      <trans-unit id="114" resname="r384026336" restype="string" datatype="ruby">
+        <source>Chinese (Simplified)</source>
+        <target state="new">简体中文</target>
+      </trans-unit>
+      <trans-unit id="115" resname="r404364090" restype="string" datatype="ruby">
+        <source>Chinese (Traditional)</source>
+        <target state="new">中国传统的</target>
+      </trans-unit>
+      <trans-unit id="116" resname="r68179021" restype="string" datatype="ruby">
+        <source>Guarani</source>
+        <target state="new">瓜拉尼</target>
+      </trans-unit>
+      <trans-unit id="117" resname="r311822480" restype="string" datatype="ruby">
+        <source>Hausa</source>
+        <target state="new">豪萨</target>
+      </trans-unit>
+      <trans-unit id="120" resname="r918780086" restype="string" datatype="ruby">
+        <source>Kyrgiz</source>
+        <target state="new">吉尔吉斯</target>
+      </trans-unit>
+      <trans-unit id="121" resname="r840511806" restype="string" datatype="ruby">
+        <source>Mandarin</source>
+        <target state="new">普通话</target>
+      </trans-unit>
+      <trans-unit id="122" resname="r366588042" restype="string" datatype="ruby">
+        <source>Navajo</source>
+        <target state="new">纳瓦霍</target>
+      </trans-unit>
+      <trans-unit id="123" resname="r955040749" restype="string" datatype="ruby">
+        <source>Portuguese (Brazil)</source>
+        <target state="new">葡萄牙语（巴西）</target>
+      </trans-unit>
+      <trans-unit id="124" resname="r273071435" restype="string" datatype="ruby">
+        <source>Portuguese (Portugal)</source>
+        <target state="new">葡萄牙语（葡萄牙）</target>
+      </trans-unit>
+      <trans-unit id="125" resname="r480179844" restype="string" datatype="ruby">
+        <source>Serbian</source>
+        <target state="new">塞尔维亚</target>
+      </trans-unit>
+      <trans-unit id="126" resname="r479950306" restype="string" datatype="ruby">
+        <source>Slovak</source>
+        <target state="new">斯洛伐克</target>
+      </trans-unit>
+      <trans-unit id="127" resname="r403306952" restype="string" datatype="ruby">
+        <source>Spanish (Latin American)</source>
+        <target state="new">西班牙语（拉丁美洲）</target>
+      </trans-unit>
+      <trans-unit id="128" resname="r814842848" restype="string" datatype="ruby">
+        <source>Spanish (Spain)</source>
+        <target state="new">西班牙语（西班牙）</target>
+      </trans-unit>
+      <trans-unit id="129" resname="r958401360" restype="string" datatype="ruby">
+        <source>Tigrinya</source>
+        <target state="new">提格里尼亚</target>
+      </trans-unit>
+      <trans-unit id="130" resname="r1018926330" restype="string" datatype="ruby">
+        <source>Turkish</source>
+        <target state="new">土耳其</target>
+      </trans-unit>
+      <trans-unit id="131" resname="r286762168" restype="string" datatype="ruby">
+        <source>Ukrainian</source>
+        <target state="new">乌克兰</target>
+      </trans-unit>
+      <trans-unit id="132" resname="r963566393" restype="string" datatype="ruby">
+        <source>Urdu</source>
+        <target state="new">乌尔都语</target>
+      </trans-unit>
+      <trans-unit id="133" resname="r382305876" restype="string" datatype="ruby">
+        <source>Vietnamese</source>
+        <target state="new">越南语</target>
+      </trans-unit>
+      <trans-unit id="134" resname="r844207535" restype="string" datatype="ruby">
+        <source>Yoruba</source>
+        <target state="new">约鲁巴</target>
+      </trans-unit>
     </body>
   </file>
   <file original="app/models/chat_session.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
@@ -1849,6 +1937,22 @@
       <trans-unit id="60" resname="r944712741" restype="string" datatype="ruby">
         <source>In Dr. %{name}'s Referral Network</source>
         <target state="new">在%{name}医生的转诊网络内</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/api/v2/reference_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="135" resname="r82233625" restype="string" datatype="ruby">
+        <source>only $10 USD / month</source>
+        <target state="translated">只有10美元/月</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="139" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成从{start_date}到{end_date}的报酬报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
       </trans-unit>
     </body>
   </file>
