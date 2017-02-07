@@ -334,7 +334,7 @@
       </trans-unit>
       <trans-unit id="145" resname="r761507253" restype="string" datatype="ruby">
         <source>In order to talk to doctors from your computer,&lt;br&gt;you'll need to &lt;b&gt;install a browser video plug-in%{asterisk}&lt;/b&gt;&lt;br&gt; It's quick and easy, and we'll help you : )</source>
-        <target>要通过您的计算机与医生交谈，&lt;br&gt;您需要&lt;b&gt;安装浏览器视频插件%{asterisk} &lt;/b&gt; &lt;br&gt;这非常简单快捷并且我们会帮助您 : )</target>
+        <target>要通过您的计算机与医生交谈，&lt;br&gt;您需要&lt;b&gt;安装浏览器视频插件%{asterisk} &lt;/b&gt; &lt;br&gt;这非常简单快捷，并且我们会帮助您 : )</target>
       </trans-unit>
       <trans-unit id="146" resname="r401914141" restype="string" datatype="ruby">
         <source>*Note: If you've installed our plug-in before,&lt;br&gt;you may need to %{link_tag_start}uninstall the old version%{link_tag_end} first.</source>
@@ -446,7 +446,7 @@
     <body>
       <trans-unit id="201" resname="r845302875" restype="string" datatype="ruby">
         <source>To feeling good every day,</source>
-        <target>为了每天feel good，</target>
+        <target>为了每天Feel Good，</target>
       </trans-unit>
       <trans-unit id="202" resname="r917189751" restype="string" datatype="ruby">
         <source>rjg :)</source>
@@ -595,7 +595,7 @@
     <body>
       <trans-unit id="235" resname="r660909568" restype="string" datatype="ruby">
         <source>This is a followup to tell you how you can profit from an affordable healthcare service that gives your clients peace of mind during their travels. With our award-winning service, your clients will have access to 24/7 immediate medical consultations via mobile or computer from board-certified doctors any time they have a health concern, from anywhere, for less than $2/day. Earn more income today!</source>
-        <target>此跟进信息是要告知您，您如何可以从能在您客户旅行期间给予他们安心的这项价格实惠的医疗保健服务中获利。通过我们这项屡获殊荣的服务，您的客户将能够随时随地通过移动设备或电脑就他们关心的健康问题向执业医生进行即时的医疗咨询，费用低于$2/天。立即赚取更多收入吧！</target>
+        <target>此随访信息是要告知您，您如何可以从能在您客户旅行期间给予他们安心的这项价格实惠的医疗保健服务中获利。通过我们这项屡获殊荣的服务，您的客户将能够随时随地通过移动设备或电脑就他们关心的健康问题向执业医生进行即时的医疗咨询，费用低于$2/天。立即赚取更多收入吧！</target>
       </trans-unit>
       <trans-unit id="236" resname="r862206573" restype="string" datatype="ruby">
         <source>You can embed the cost of this coverage within your current travel packages or offer it as an add-on at a price that you set. We stand ready to help you incorporate this valuable offering into your business today.</source>
@@ -715,7 +715,7 @@
     <body>
       <trans-unit id="293" resname="r263189304" restype="string" datatype="ruby">
         <source>You should feel good, too! We’re very appreciative of all you do!</source>
-        <target>您也应该feel good！ 我们非常感谢您所做的一切！</target>
+        <target>您也应该Feel Good！ 我们非常感谢您所做的一切！</target>
       </trans-unit>
     </body>
   </file>
@@ -904,11 +904,11 @@
       </trans-unit>
       <trans-unit id="339" resname="r831154482" restype="string" datatype="ruby">
         <source>We started the year with the deepest research and development effort we’ve ever taken on ourselves – to create the first end-to-end Virtual Care experience that will help people everywhere manage their health and well being.  We aspired to support health journeys, yours and your loved ones’, from a wellness aspiration, or physical/emotional discomfort or pain, all the way to reaching a desirable health goal and to feeling good!</source>
-        <target>我们在这一年开始对自己采取最深入的研究和开发工作 – 创建第一个端到端的在线医护体验，将帮助各地的人们管理他们的健康与保健。我们渴望支持您和您的亲人健康旅程，从健康的愿望，或身体/情绪的不适或疼痛，一直到达到理想的健康目标并感觉良好！</target>
+        <target>我们在这一年开始对自己采取最深入的研究和开发工作 – 创建第一个端到端的在线医护体验，将帮助各地的人们管理他们的健康与保健。我们渴望支持您和您的亲人健康旅程，从健康的愿望，或身体/情绪的不适或疼痛，一直到达到理想的健康目标并Feel Good！</target>
       </trans-unit>
       <trans-unit id="340" resname="r301786139" restype="string" datatype="ruby">
         <source>Working with data from hundreds of millions of people, and tens of thousands of doctors, and with numerous product iterations, we architected our proprietary path to feeling good in 3 easy steps: “Learn More”, “Get Help”, and “Take Action.” We realized that we are not in the business of just providing health information, or mere “telemedicine” or simply scheduling doctor appointments, we officially and wholeheartedly entered the business of helping people feel good!</source>
-        <target>通过使用来自数亿人，数万名医生的数据，以及大量的产品迭代，我们构建了我们的感觉良好的专有路径的3个简单的步骤：“了解更多”，“获得帮助”和“采取行动”。我们意识到我们不是仅仅提供健康信息，或仅仅是”远程医疗“或只是安排医生预约，我们正式地和全心的投入帮助人们感觉良好的业务！</target>
+        <target>通过使用来自数亿人，数万名医生的数据，以及大量的产品迭代，我们构建了我们的Feel Good的专有路径的3个简单的步骤：“了解更多”，“获得帮助”和“采取行动”。我们意识到我们不是仅仅提供健康信息，或仅仅是”远程医疗“或只是安排医生预约，我们正式地和全心的投入帮助人们Feel Good的业务！</target>
       </trans-unit>
       <trans-unit id="341" resname="r31866236" restype="string" datatype="ruby">
         <source>Simultaneously, we hired the best technical/product/design team in digital health, and one of the best in Silicon Valley, bringing together the brightest engineers with deep expertise in all frameworks and platforms (iOS, Android, Web, and wearables), and with a deep passion for innovation and helping others. We fortified the team with some of the Valley’s finest designers, data geeks, and product managers, and a fabulous customer care and Medical Expert ops team, and together, we repeatedly iterated with millions of users and tens of thousands of doctors, until we were ready to launch our new groundbreaking platform to the world.</source>
@@ -920,7 +920,7 @@
       </trans-unit>
       <trans-unit id="343" resname="r485104820" restype="string" datatype="ruby">
         <source>Committed to our mission, and to quality, in early fall we launched our first end-to-end service helping people everywhere manage their health and feel good every day.  Our new basic service remains available for free, but we also introduced our first paid premium service, HealthTap Prime. This first-of-a-kind service, that was created based on the research we conducted, is premised on the three main modules of our new platform:</source>
-        <target>致力于我们的使命和质量，在初秋我们推出了我们的第一个端到端帮助世界各地的人们管理他们的健康和每一天都感觉良好的服务。我们新的基本服务仍然是免费的，但我们还介绍了我们的第一个付费的高级服务，HealthTap Prime。基于我们进行的研究创建的这种首创的服务是基于我们的新平台的三个主要模块：</target>
+        <target>致力于我们的使命和质量，在初秋我们推出了我们的第一个端到端帮助世界各地的人们管理他们的健康和每一天都Feel Good的服务。我们新的基本服务仍然是免费的，但我们还介绍了我们的第一个付费的高级服务，HealthTap Prime。基于我们进行的研究创建的这种首创的服务是基于我们的新平台的三个主要模块：</target>
       </trans-unit>
       <trans-unit id="344" resname="r747902306" restype="string" datatype="ruby">
         <source>Our all new HealthTap Prime, where users get unlimited doctor consults on any mobile device or personal computer 24/7 has been one of our most successful services to date, and is growing very rapidly! HealthTap Prime and our new platform received an unprecedented warm welcome in traditional and social media – attracting more than 82 original stories in print, digital, and broadcast, media (from WIRED Magazine, to Good Morning America, and from Forbes Magazine to ABC News, everyone everywhere praised our innovation and the value we’re creating for people everywhere).</source>
@@ -1010,7 +1010,7 @@
     <body>
       <trans-unit id="365" resname="r459432738" restype="string" datatype="ruby">
         <source>Keep having fun, and see how many other trophies you can unlock while helping millions everywhere feel good!</source>
-        <target>保持乐趣，看看您还可以解锁多少奖杯，同时帮助无处不在的数百万人感觉良好！</target>
+        <target>保持乐趣，看看您还可以解锁多少奖杯，同时帮助无处不在的数百万人Feel Good！</target>
       </trans-unit>
     </body>
   </file>
@@ -1018,7 +1018,7 @@
     <body>
       <trans-unit id="367" resname="r164883497" restype="string" datatype="ruby">
         <source>Keep having fun, and see how many other medals you can win while  helping millions of people everywhere feel good</source>
-        <target>保持乐趣，看看您还可以赢得多少奖牌，同时帮助无处不在的数百万人感觉良好！</target>
+        <target>保持乐趣，看看您还可以赢得多少奖牌，同时帮助无处不在的数百万人Feel Good！</target>
       </trans-unit>
     </body>
   </file>
@@ -1054,7 +1054,7 @@
       </trans-unit>
       <trans-unit id="373" resname="r369710864" restype="string" datatype="ruby">
         <source>member feel good!</source>
-        <target>一位会员感觉良好！</target>
+        <target>一位会员Feel Good！</target>
       </trans-unit>
     </body>
   </file>
@@ -1158,11 +1158,11 @@
     <body>
       <trans-unit id="395" resname="r522824896" restype="string" datatype="ruby">
         <source>We need your help to complete an upcoming public report on RateRx that will reveal the incredible insights of what doctors know are the most effective treatments.</source>
-        <target>我们需要您帮助完成即将公布的Rate医生评测公开报告，将揭示医生知道的最有效的治疗的令人难以置信的见解。</target>
+        <target>我们需要您帮助完成即将公布的RateRx医生评测公开报告，将揭示医生知道的最有效的治疗的令人难以置信的见解。</target>
       </trans-unit>
       <trans-unit id="396" resname="r127981919" restype="string" datatype="ruby">
         <source>Share your knowledge with just one click today, and your ratings will be included in the RateRx report that will very soon reach millions. Simply click on the star for your rating:</source>
-        <target>只需立即点击一下即可分享您的知识，您的评分将包括在Rate医生评测报告，并将很快通知数百万人。 只需点击星级即可为您评分：</target>
+        <target>只需立即点击一下即可分享您的知识，您的评分将包括在RateRx医生评测报告，并将很快通知数百万人。 只需点击星级即可为您评分：</target>
       </trans-unit>
     </body>
   </file>
@@ -1394,7 +1394,7 @@
       </trans-unit>
       <trans-unit id="448" resname="r438710707" restype="string" datatype="ruby">
         <source>as we have a limited number of shifts, and they are filling up quickly. We are thrilled to see that hundreds of passionate and highly qualified doctors are interested in joining us on the forefront of a revolution of the doctor-patient relationship. Take the next step to reserve your spot today!</source>
-        <target>因为我们只有有限的班次，他们正在迅速填满。 我们很高兴看到数百名充满激情和高度合格的医生有兴趣加入我们的医患关系革命的前沿。 采取下一步，立即保留您的位置！</target>
+        <target>因为我们只有有限的班次，它们正在迅速填满。 我们很高兴看到数百名充满激情和高度合格的医生有兴趣加入我们的医患关系革命的前沿。 采取下一步，立即保留您的位置！</target>
       </trans-unit>
       <trans-unit id="449" resname="r674498203" restype="string" datatype="ruby">
         <source>Our initial shift schedule is limited and filling up quickly, due to the high degree of interest from passionate and well-qualified doctors like yourself. Complete your application now, to ensure you can work at the times most convenient for you.</source>
@@ -1434,7 +1434,7 @@
       </trans-unit>
       <trans-unit id="457" resname="r20994888" restype="string" datatype="ruby">
         <source>Unfortunately, upon review of your application, we are unable to approve you for the HealthTap Prime network at this time. To become certified as a HealthTap Prime doctor, you must :</source>
-        <target>遗憾的是，在审核您的申请后，我们目前无法批准您的HealthTap Prime网络。 要成为HealthTap Prime的认证医生，您必须：</target>
+        <target>遗憾的是，在审核您的申请后，我们目前无法批准您的HealthTap Prime申请。 要成为HealthTap Prime的认证医生，您必须：</target>
       </trans-unit>
       <trans-unit id="458" resname="r189943924" restype="string" datatype="ruby">
         <source>If we have made this determination in error, or if there is additional information you can provide to us, please let us know at expertsupport@healthtap.com. We will be happy to review your application again after we receive additional information.</source>
@@ -1610,7 +1610,7 @@
       </trans-unit>
       <trans-unit id="496" resname="r643225675" restype="string" datatype="ruby">
         <source>Due to the high degree of interest from top doctors around the country, our initial shift schedule is filling up quickly!</source>
-        <target>由于全国各地知名医生的高度关注，我们的初始班次计划正在快速填补！</target>
+        <target>由于全国各地顶级医生的高度关注，我们的初始班次计划正在快速填补！</target>
       </trans-unit>
       <trans-unit id="497" resname="r1033950674" restype="string" datatype="ruby">
         <source>Hundreds of highly qualified doctors from around the country have already reserved shifts, so act quickly, while shifts are still available!</source>
@@ -2166,7 +2166,7 @@
       </trans-unit>
       <trans-unit id="615" resname="r199934287" restype="string" datatype="ruby">
         <source>is time sensitive.</source>
-        <target>时间棘手</target>
+        <target>时间紧张</target>
       </trans-unit>
       <trans-unit id="616" resname="r605985293" restype="string" datatype="ruby">
         <source>status on</source>
@@ -2230,7 +2230,7 @@
     <body>
       <trans-unit id="626" resname="r300602386" restype="string" datatype="ruby">
         <source>Thank you for all the work you do as a HealthTap Prime doctor helping people feel good!</source>
-        <target>感谢您作为HealthTap Prime医生所做的所有工作，帮助人们感觉良好！</target>
+        <target>感谢您作为HealthTap Prime医生所做的所有工作，帮助人们Feel Good！</target>
       </trans-unit>
     </body>
   </file>
@@ -2534,7 +2534,7 @@
     <body>
       <trans-unit id="692" resname="r254237896" restype="string" datatype="ruby">
         <source>I'd like to follow up on my request to connect with you as your patient. Please consider accepting my invitation to connect for Virtual Consults?</source>
-        <target>我希望跟进我的请求并作为您的患者与您联系。 请考虑接受我的在线咨询连接邀请？</target>
+        <target>我希望随访我的请求并作为您的患者与您联系。 请考虑接受我的在线咨询连接邀请？</target>
       </trans-unit>
     </body>
   </file>
@@ -2562,7 +2562,7 @@
       </trans-unit>
       <trans-unit id="696" resname="r943416745" restype="string" datatype="ruby">
         <source>You can access your claims submission history anytime on the Grow Your Practice page of your HealthTap Virtual Practice. If a claim requires your attention the status will be labeled “Needs Update” and once you open the claim, the fields requiring your attention will be identified. After editing the necessary items, you will be able to resubmit the claim to the insurance company for reimbursement.</source>
-        <target>您可以随时通过您的HealthTap在线诊疗“成长您的诊疗页面”访问您的历史索赔。如果一项索赔需要您留意，这一项会被标注“需要更新”，一旦您打开它，您所需要注意的事项就会被识别。在编辑完成必要项目之后，您可以重新向保险公司索赔以获得赔偿。</target>
+        <target>您可以随时通过您的HealthTap在线诊疗“壮大您的诊疗页面”访问您的历史索赔。如果一项索赔需要您留意，这一项会被标注“需要更新”，一旦您打开它，您所需要注意的事项就会被识别。在编辑完成必要项目之后，您可以重新向保险公司索赔以获得赔偿。</target>
       </trans-unit>
     </body>
   </file>
@@ -2590,7 +2590,7 @@
     <body>
       <trans-unit id="700" resname="r248830516" restype="string" datatype="ruby">
         <source>You can access your claims submission history anytime on the Grow Your Practice page of your HealthTap Virtual Practice. All your approved claims will have the status labeled “Accepted.”</source>
-        <target>您可以随时通过您的HealthTap在线诊疗”成长您的诊疗“页面查看您的历史索赔。所有被许可的索赔都会被标记为“通过”。请在24小时以内通过收件箱咨询和这位患者分享您的专业技能。</target>
+        <target>您可以随时通过您的HealthTap在线诊疗”壮大您的诊疗“页面查看您的历史索赔。所有被许可的索赔都会被标记为“通过”。请在24小时以内通过收件箱咨询和这位患者分享您的专业技能。</target>
       </trans-unit>
     </body>
   </file>
@@ -2854,7 +2854,7 @@
       </trans-unit>
       <trans-unit id="753" resname="r195875281" restype="string" datatype="ruby">
         <source>You should feel great for helping this member feel good!</source>
-        <target>通过帮助这位会员感觉良好您应该感觉很好！</target>
+        <target>通过帮助这位会员Feel Good您应该Feel Good！</target>
       </trans-unit>
     </body>
   </file>
@@ -3074,7 +3074,7 @@
     <body>
       <trans-unit id="800" resname="r788524314" restype="string" datatype="ruby">
         <source>Page [page] of [toPage]</source>
-        <target>第[page]页的[toPage]</target>
+        <target>第[page]页共[toPage]页</target>
       </trans-unit>
       <trans-unit id="801" resname="r798518878" restype="string" datatype="ruby">
         <source>Legal</source>
@@ -3102,7 +3102,7 @@
       </trans-unit>
       <trans-unit id="810" resname="r359295819" restype="string" datatype="ruby">
         <source>Number of doctors/providers</source>
-        <target>医生/提供者的数量</target>
+        <target>医生/医护提供者的数量</target>
       </trans-unit>
       <trans-unit id="811" resname="r735340032" restype="string" datatype="ruby">
         <source>Size of population</source>
@@ -3330,7 +3330,7 @@
       </trans-unit>
       <trans-unit id="878" resname="r163772072" restype="string" datatype="ruby">
         <source>Do you have difficulty falling asleep or staying asleep?</source>
-        <target>您难以入睡或深睡吗？</target>
+        <target>您难以入睡或保持入睡吗？</target>
       </trans-unit>
       <trans-unit id="879" resname="r332404179" restype="string" datatype="ruby">
         <source>Do you have discharge or drainage coming from the ear?</source>
@@ -3422,7 +3422,7 @@
       </trans-unit>
       <trans-unit id="902" resname="r860884454" restype="string" datatype="ruby">
         <source>Has a first degree relative been diagnosed with colon cancer before the age of 60?</source>
-        <target>在60岁之前，有一级亲属被诊断出患有结肠癌吗？</target>
+        <target>在60岁之前，有直系亲属被诊断出患有结肠癌吗？</target>
       </trans-unit>
       <trans-unit id="903" resname="r49398497" restype="string" datatype="ruby">
         <source>Has anyone in your family been diagnosed with melanoma?</source>
@@ -3650,7 +3650,7 @@
       </trans-unit>
       <trans-unit id="964" resname="r283928932" restype="string" datatype="ruby">
         <source>Disable the on-call card options</source>
-        <target>禁用随传随到卡选项</target>
+        <target>取消随传随到卡选项</target>
       </trans-unit>
     </body>
   </file>
@@ -3682,7 +3682,7 @@
       </trans-unit>
       <trans-unit id="971" resname="r1050441662" restype="string" datatype="ruby">
         <source>As this is a text consult, a few minutes may pass between my responses, but please be patient as I want to help you feel good.</source>
-        <target>由于这是一个文本咨询，我的回复可能需要几分钟的通过时间，但是请耐心等待，我想帮助您感觉良好。</target>
+        <target>由于这是一个文本咨询，我的回复可能需要几分钟的通过时间，但是请耐心等待，我想帮助您Feel Good。</target>
       </trans-unit>
     </body>
   </file>
@@ -3790,7 +3790,7 @@
       </trans-unit>
       <trans-unit id="1033" resname="r481000848" restype="string" datatype="ruby">
         <source>New "Doctor %{ai_serif}" instantaneously translates symptoms into a path to feeling good</source>
-        <target>新的“Doctor%{ai_serif}”将症状即时转化为感觉良好的路径</target>
+        <target>新的“Doctor%{ai_serif}”将症状即时转化为Feel Good的路径</target>
       </trans-unit>
       <trans-unit id="1034" resname="r599216549" restype="string" datatype="ruby">
         <source>Doctor %{ai_serif} is a personal %{ai_serif}-powered physician trained by HealthTap’s network of more than 105,000 top doctors that uses machine learning algorithms to apply doctor-sourced clinical expertise. Dr. %{ai_serif} converses with the patient to understand their health profile to determine the possible causes of their symptoms and route users to the right care immediately.</source>
@@ -3994,7 +3994,7 @@
       </trans-unit>
       <trans-unit id="1129" resname="r779221005" restype="string" datatype="ruby">
         <source>logged in person cannot keep this session alive</source>
-        <target>登录的人不能保持此会话仍然存在</target>
+        <target>登录的人不能保持此会话进行</target>
       </trans-unit>
       <trans-unit id="1130" resname="r817558203" restype="string" datatype="ruby">
         <source>Session already ended</source>
@@ -4114,7 +4114,7 @@
       </trans-unit>
       <trans-unit id="1409" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
         <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
-        <target>获得 {span_tag_start}{points}{span_tag_end} 积分         并提高您的乐于助人和医者评分。</target>
+        <target>获得 {span_tag_start}{points}{span_tag_end} 积分         并提高您的有助度和医者评分。</target>
       </trans-unit>
       <trans-unit id="1410" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
         <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
@@ -4226,7 +4226,7 @@
     <body>
       <trans-unit id="2087" resname="Their zip code" restype="string" datatype="javascript">
         <source>Their zip code</source>
-        <target>他们的邮递区号</target>
+        <target>他们的邮政编码</target>
       </trans-unit>
       <trans-unit id="2089" resname="Their postal code" restype="string" datatype="javascript">
         <source>Their postal code</source>
@@ -4262,7 +4262,7 @@
       </trans-unit>
       <trans-unit id="2097" resname="&lt;b&gt;Read&lt;/b&gt; " restype="string" datatype="javascript">
         <source>&lt;b&gt;Read&lt;/b&gt;</source>
-        <target>&lt;b&gt;已读&lt;/b&gt;</target>
+        <target>&lt;b&gt;读&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="2099" resname="There was an error starting session" restype="string" datatype="javascript">
         <source>There was an error starting session</source>
@@ -4362,7 +4362,7 @@
       </trans-unit>
       <trans-unit id="2145" resname="How would you classify this person&apos;s consumption of alcohol?" restype="string" datatype="javascript">
         <source>How would you classify this person's consumption of alcohol?</source>
-        <target>您如何分类这个人的酒精消费？</target>
+        <target>您如何分类这个人的酒精饮用量？</target>
       </trans-unit>
       <trans-unit id="2146" resname="Are you sure you&apos;d like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor" restype="string" datatype="javascript">
         <source>Are you sure you'd like to remove this credit card from your account? You will need to provide one the next time you talk to a doctor</source>
@@ -4518,7 +4518,7 @@
       </trans-unit>
       <trans-unit id="2211" resname="r817341676" restype="string" datatype="x-haml">
         <source>Doctor checklists and reminders to help you take action and feel good</source>
-        <target>医生的清单和提醒可以帮助您采取行动并且感觉良好</target>
+        <target>医生的清单和提醒可以帮助您采取行动并且Feel Good</target>
       </trans-unit>
     </body>
   </file>

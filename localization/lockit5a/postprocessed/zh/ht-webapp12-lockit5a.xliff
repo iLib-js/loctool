@@ -374,7 +374,7 @@
       </trans-unit>
       <trans-unit id="576" resname="r651513018" restype="string" datatype="ruby">
         <source>Learn More</source>
-        <target>学习更多</target>
+        <target>了解更多</target>
       </trans-unit>
       <trans-unit id="577" resname="r784084451" restype="string" datatype="ruby">
         <source>Get Help</source>
@@ -859,7 +859,7 @@
       </trans-unit>
       <trans-unit id="975" resname="r6816197" restype="string" datatype="ruby">
         <source>Please enter your phone number</source>
-        <target>请输入您的手机号码</target>
+        <target>请输入您的电话号码</target>
       </trans-unit>
       <trans-unit id="976" resname="r198965378" restype="string" datatype="ruby">
         <source>Enter your promotional code</source>
@@ -2371,7 +2371,7 @@
       </trans-unit>
       <trans-unit id="2619" resname="r742115697" restype="string" datatype="ruby">
         <source>Topics</source>
-        <target>专题</target>
+        <target>话题</target>
       </trans-unit>
       <trans-unit id="2623" resname="r68392769" restype="string" datatype="ruby">
         <source>Your Doctor Care-Team</source>
@@ -2992,7 +2992,7 @@
     <body>
       <trans-unit id="9016" resname="r420272031" restype="string" datatype="x-haml">
         <source>Filter results</source>
-        <target>过滤结果</target>
+        <target>筛选结果</target>
       </trans-unit>
       <trans-unit id="9017" resname="r1010677943" restype="string" datatype="x-haml">
         <source>Still need an answer?</source>
@@ -3032,7 +3032,7 @@
       </trans-unit>
       <trans-unit id="4752" resname="r892894860" restype="string" datatype="ruby">
         <source>Hourly</source>
-        <target>小时</target>
+        <target>每小时</target>
       </trans-unit>
       <trans-unit id="4753" resname="r264381725" restype="string" datatype="ruby">
         <source>Daily</source>
@@ -3040,11 +3040,11 @@
       </trans-unit>
       <trans-unit id="4755" resname="r776680027" restype="string" datatype="ruby">
         <source>Weekly</source>
-        <target>周</target>
+        <target>每周</target>
       </trans-unit>
       <trans-unit id="4757" resname="r746638809" restype="string" datatype="ruby">
         <source>Monthly</source>
-        <target>月</target>
+        <target>每月</target>
       </trans-unit>
       <trans-unit id="4758" resname="r809473596" restype="string" datatype="ruby">
         <source>months</source>
@@ -3220,7 +3220,7 @@
     <body>
       <trans-unit id="5060" resname="r4793720" restype="string" datatype="ruby">
         <source>Log in</source>
-        <target>登陆</target>
+        <target>登录</target>
       </trans-unit>
     </body>
   </file>
@@ -3372,11 +3372,11 @@
       </trans-unit>
       <trans-unit id="5326" resname="r578655137" restype="string" datatype="ruby">
         <source>Cannot login as expert</source>
-        <target>无法作为专家登陆</target>
+        <target>无法作为专家登录</target>
       </trans-unit>
       <trans-unit id="5327" resname="r56345809" restype="string" datatype="ruby">
         <source>Cannot login as member</source>
-        <target>无法作为会员登陆</target>
+        <target>无法作为会员登录</target>
       </trans-unit>
       <trans-unit id="5328" resname="r774341218" restype="string" datatype="ruby">
         <source>Your account is deactivated. To re-activate, send a request to support@healthtap.com</source>
@@ -4092,7 +4092,7 @@
       </trans-unit>
       <trans-unit id="5528" resname="r424326427" restype="string" datatype="x-haml">
         <source>After searching and filtering, matching doctors are shown in a list that patients can interact. DocScore, Known fors and other important data are shown in a snapshot. One click brings patients to your Virtual Practice or allows them to follow your updates and answers that patients can interact with.</source>
-        <target>在搜索和过滤之后，匹配的医生将显示在患者可以联系交流的列表中。医者评分，专攻领域和其他重要数据显示在快照中。患者通过点击进入您的在线操作，并关注您的更新与答复。</target>
+        <target>在搜索和筛选之后，匹配的医生将显示在患者可以联系交流的列表中。医者评分，专攻领域和其他重要数据显示在快照中。患者通过点击进入您的在线操作，并关注您的更新与答复。</target>
       </trans-unit>
     </body>
   </file>
@@ -4504,7 +4504,7 @@
     <body>
       <trans-unit id="5646" resname="r385613077" restype="string" datatype="x-haml">
         <source>ordered and delivered to your phone or computer from top doctors!</source>
-        <target>订购可将顶级医生的建议发到您的手机或电脑！</target>
+        <target>订阅可将顶级医生的建议发到您的手机或电脑！</target>
       </trans-unit>
       <trans-unit id="5647" resname="r478262125" restype="string" datatype="x-haml">
         <source>Finally, you can have</source>
@@ -4572,7 +4572,7 @@
       </trans-unit>
       <trans-unit id="5662" resname="r545414002" restype="string" datatype="x-haml">
         <source>We believe our ability to marry healthcare and technology will have a great impact on the world, and will prolong the life expectancy of humankind. We’re excited about improving the efficiency of care, while enhancing the quality of people’s lives, and making people’s feel good every day.</source>
-        <target>我们相信我们与医疗技术紧密联系的能力将对世界产生巨大影响，并将延长人类的预期寿命。我们很高兴提高护理效率，同时提高人们的生活质量，使人们每天都感觉很好。</target>
+        <target>我们相信我们与医疗技术紧密联系的能力将对世界产生巨大影响，并将延长人类的预期寿命。我们很高兴提高护理效率，同时提高人们的生活质量，使人们每天都Feel Good。</target>
       </trans-unit>
       <trans-unit id="5663" resname="r232786897" restype="string" datatype="x-haml">
         <source>We value health and happiness. This means that you get full health benefits &#40;health, dental, vision&#41;, one of Silicon Valley’s best PTO policies, healthy catered lunches, dinners, and snacks throughout the day, lots of great company events and outings, subsidized gym memberships, yearly retreats to fun places, and much, much more.</source>
@@ -4948,11 +4948,11 @@
       </trans-unit>
       <trans-unit id="5784" resname="r632748504" restype="string" datatype="x-haml">
         <source>Even if you believe you need a prescription or lab test, you should not expect a prescription or lab test order from any given consult. Patients who are located outside the U.S. may receive prescription recommendations only; lab orders are not currently possible for patients located outside the U.S. If the practitioner deems it appropriate to prescribe treatment or order lab tests for the condition discussed in a virtual consult, then the prescription or lab test&#40;s&#41; may be ordered by the physician. Lab tests are currently ordered using Quest Diagnostics lab test services; it may not be possible to order all of Quest Diagnostics lab tests &#40;if any&#41; in all U.S. states at this time. . The following medication categories cannot be prescribed or recommended in virtual consults on HealthTap: DEA category I-IV medications, lifestyle medications &#40;such as weight loss or hair loss medication&#41;, and U.S.-state regulated medications. It may be possible to get prescriptions for some psychiatric medications in HealthTap Concierge virtual consults, but doctors cannot prescribe psychiatric medications in HealthTap Prime virtual consults.</source>
-        <target>即使您相信您需要处方或实验室检验，您也不应该期望任何给定咨询的处方或实验室检验。位于美国境外的患者只能获得处方建议; 实验室下单目前不能用于位于美国境外的患者。如果医生认为在在线咨询中对于讨论的病症开处方或预定实验室检验是合适的，则处方或实验室检验可以由医生订购。实验室检验目前使用Quest Diagnostics实验室检验服务; 目前可能无法在美国所有州订购所有Quest Diagnostics实验室检验（如果有）。以下药物类别不能出现在HealthTap的在线咨询的处方或推荐中：DEA类别I-IV药物，生活用药（例如减肥或脱发药物）和美国国家管制药物。有可能在HealthTap 贵宾台在线咨询中获得一些精神病药物的处方，但医生不能在HealthTap Prime在线咨询中开精神病药物的处方。</target>
+        <target>即使您相信您需要处方或实验室检验，您也不应该期望任何给定咨询的处方或实验室检验。位于美国境外的患者只能获得处方建议; 实验室下单目前不能用于位于美国境外的患者。如果医生认为在在线咨询中对于讨论的病症开处方或预定实验室检验是合适的，则处方或实验室检验可以由医生订阅。实验室检验目前使用Quest Diagnostics实验室检验服务; 目前可能无法在美国所有州订阅所有Quest Diagnostics实验室检验（如果有）。以下药物类别不能出现在HealthTap的在线咨询的处方或推荐中：DEA类别I-IV药物，生活用药（例如减肥或脱发药物）和美国国家管制药物。有可能在HealthTap 贵宾台在线咨询中获得一些精神病药物的处方，但医生不能在HealthTap Prime在线咨询中开精神病药物的处方。</target>
       </trans-unit>
       <trans-unit id="5785" resname="r606500891" restype="string" datatype="x-haml">
         <source>There are cases when you may present with a condition that is long-standing for which you may have been taking a prescription for a long period of time. Even in this situation, it is up to the consulting doctor’s medical expertise and discretion to decide to order that prescription and for what duration. Please understand that in HealthTap Prime virtual consults, you and the doctor most likely do not have an established doctor-patient relationship, and best practice will be for the doctor to prescribe &#40;if at all&#41; a short-course of medication to hold you over until you are able to consult with your established doctor.</source>
-        <target>这些情况是当您可能会出现长期存在的病症，您可能已经长期服用处方。即使在这种情况下，还是取决于咨询医生的医疗专业知识和自由裁量决定是否订购处方和持续时间。请理解，在HealthTap Prime在线咨询中，您和医生很可能没有确定的医患关系，最佳实践将是医生给您开短期药物治疗的处方（如果有的话）， 直到您能够咨询到您的指定医生。</target>
+        <target>这些情况是当您可能会出现长期存在的病症，您可能已经长期服用处方。即使在这种情况下，还是取决于咨询医生的医疗专业知识和自由裁量决定是否订阅处方和持续时间。请理解，在HealthTap Prime在线咨询中，您和医生很可能没有确定的医患关系，最佳实践将是医生给您开短期药物治疗的处方（如果有的话）， 直到您能够咨询到您的指定医生。</target>
       </trans-unit>
       <trans-unit id="5786" resname="r770388354" restype="string" datatype="x-haml">
         <source>accessed for a fee. &#40;&quot;Premium Services&quot; and &quot;Premium Content&quot;, respectively&#41;.</source>
@@ -4992,7 +4992,7 @@
       </trans-unit>
       <trans-unit id="5795" resname="r876235835" restype="string" datatype="x-haml">
         <source>The Content and Services may not be used for any illegal purpose. You may not access our networks, computers, or the Content and Services in any manner that could damage, disable, overburden, or impair them, or interfere with any other person&apos;s use and enjoyment. You may not attempt to gain unauthorized access to any Content or Services, other accounts, computer systems, or networks connected with HealthTap, the Content, or Services. You may not use any automated means &#40;such as a scraper&#41; to access HealthTap, the Content, or Services for any purpose. Such unauthorized access includes, but is not limited to, using another person&apos;s login credentials to access HealthTap. Any attempt by any individual or entity to solicit login information of any other user or HealthTap Medical Expert or to access any such account is an express and direct violation of these Terms of Use and of applicable law, including relevant privacy and security laws and laws prohibiting unfair or unethical business practices.</source>
-        <target>内容和服务不得用于任何非法目的。您不能以任何可能损害，禁用，过度使用或损害其内容或干扰任何其他人的使用和享受的方式访问我们的网络，计算机或内容和服务。您最好不要通过未经授权的渠道进入任何与HealthTap及其内容或服务相关的内容或服务、其他账号、电脑系统或网络。您最好不要有目的地通过一些自动化方式（例如刮刀）来访问HealthTap及其内容或服务。这种未经授权的访问包括但不限于使用另一个人的登录凭证来访问HealthTap。个人或整体的任何征求其他用户或医学专家的登陆信息，以及登录这些账号的企图都是一种直接违反这些使用条款和法律适用的体现，包括相关隐私和安全的法律以及禁止不公平不道德的商业行为的法律。</target>
+        <target>内容和服务不得用于任何非法目的。您不能以任何可能损害，禁用，过度使用或损害其内容或干扰任何其他人的使用和享受的方式访问我们的网络，计算机或内容和服务。您最好不要通过未经授权的渠道进入任何与HealthTap及其内容或服务相关的内容或服务、其他账号、电脑系统或网络。您最好不要有目的地通过一些自动化方式（例如刮刀）来访问HealthTap及其内容或服务。这种未经授权的访问包括但不限于使用另一个人的登录凭证来访问HealthTap。个人或整体的任何征求其他用户或医学专家的登录信息，以及登录这些账号的企图都是一种直接违反这些使用条款和法律适用的体现，包括相关隐私和安全的法律以及禁止不公平不道德的商业行为的法律。</target>
       </trans-unit>
       <trans-unit id="5796" resname="r88007734" restype="string" datatype="x-haml">
         <source>We do not recommend or endorse any specific Content, Services, tests, doctors, products, procedures, opinions, or other information that may be mentioned on HealthTap. HealthTap is designed to be used with common sense, and in connection with the advice of your doctor or healthcare provider. Reliance on HealthTap Content or Services is solely at your own risk. Some Content and Services, including posts by Medical Experts, may be or have been provided by third parties directly and are not reviewed or certified by HealthTap. We cannot guarantee that the Content and Services will help you achieve any specific goals or results. Content regarding dietary supplements or other treatments or regimens has not been evaluated by the Food and Drug Administration and is not intended to diagnose, treat, cure, or prevent any disease.</source>
@@ -5568,7 +5568,7 @@
       </trans-unit>
       <trans-unit id="5985" resname="r872892893" restype="string" datatype="x-haml">
         <source>To ensure unbiased doctor evaluations, doctors do not see their colleagues’ existing contributions until after they have entered their own rating. Recommendations cannot be changed once submitted, but after ratings are submitted, doctors can view the ratings of other doctors and comment on these. Both patients and doctors can learn from the RateRx ratings system. Patients benefit from the collective wisdom shared by these doctors, enabling them to see how different treatments for the same conditions are rated and reviewed. Doctors benefit from their colleagues’ ratings and comments, and are able to interpret them by referring to the contributing doctors’ practice profiles &#40;which show their education and experience, their specialty training, years in practice, DocScore, and their &quot;Known-for&quot; topics&#41;.</source>
-        <target>为了保证医生评估的无偏性，医生无法看到他同行已经打好的分数直到他自己输入了评分。推荐一旦被提交就无法更改，但是在提交打分之后，医生可以查看其它医生的评分并进行评论。患者可以从这种医生集体智慧中受益，让他们能够看到对相同症状的不同治疗方式是如何被评分与评价的。医生会从他的同事的评分和评价中受益，能够通过查看参与评价的医生的资料来理解这些信息（资料展现了医生的教育背景和经历，他们的专长领域的训练，实践的年数，医者评分和他们的“专攻领域”专题）。</target>
+        <target>为了保证医生评估的无偏性，医生无法看到他同行已经打好的分数直到他自己输入了评分。推荐一旦被提交就无法更改，但是在提交打分之后，医生可以查看其它医生的评分并进行评论。患者可以从这种医生集体智慧中受益，让他们能够看到对相同症状的不同治疗方式是如何被评分与评价的。医生会从他的同事的评分和评价中受益，能够通过查看参与评价的医生的资料来理解这些信息（资料展现了医生的教育背景和经历，他们的专长领域的训练，实践的年数，医者评分和他们的“专攻领域”话题）。</target>
       </trans-unit>
       <trans-unit id="5986" resname="r768402304" restype="string" datatype="x-haml">
         <source>Comments, which are optional, are often used by doctors to qualify or explain ratings, or to share details of how medications are used for each indication. Comments are available to read and review, but do not change the numeric value of the rating.</source>
@@ -6260,7 +6260,7 @@
       </trans-unit>
       <trans-unit id="7729" resname="r751548890" restype="string" datatype="x-haml">
         <source>Return to log in</source>
-        <target>返回登陆</target>
+        <target>返回登录</target>
       </trans-unit>
     </body>
   </file>
@@ -7072,7 +7072,7 @@
       </trans-unit>
       <trans-unit id="9668" resname="r751215942" restype="string" datatype="x-haml">
         <source>“Licensee Landing Page” means a URL to a HealthTap-provided landing page for Licensee’s distribution of the HealthTap Software to End User Groups.</source>
-        <target>“被许可人的登陆页”是指一个给终端用户组的HealthTap软件的许可分发的到HealthTap提供的登陆页面URL。</target>
+        <target>“被许可人的登录页”是指一个给终端用户组的HealthTap软件的许可分发的到HealthTap提供的登录页面URL。</target>
       </trans-unit>
       <trans-unit id="9669" resname="r758303714" restype="string" datatype="x-haml">
         <source>“Licensee Minimum Dates” mean the dates, identified in Exhibit A, by which either HealthTap shall have received the Annual Revenue Minimums; or, if not, the dates on which Licensee agrees that HealthTap may collect the Annual Revenue Minimum from Licensee using payment information provided by Licensee.</source>
@@ -7080,7 +7080,7 @@
       </trans-unit>
       <trans-unit id="9670" resname="r955098526" restype="string" datatype="x-haml">
         <source>“Qualified Subscriptions” means Subscriptions generated by Licensee through Licensee Landing Pages minus any Unqualified Subscriptions.</source>
-        <target>“合格的订阅”是指被持牌人通过持牌人的登陆页面减去任何不合格的订阅所产生的订阅。</target>
+        <target>“合格的订阅”是指被持牌人通过持牌人的登录页面减去任何不合格的订阅所产生的订阅。</target>
       </trans-unit>
       <trans-unit id="9671" resname="r808234177" restype="string" datatype="x-haml">
         <source>“Subscription Agreement” means the agreement between HealthTap and an End User Group governing the license of HealthTap Software for all End User Group employees or group members eligible to receive benefits from End User Group &#40;all End User Group Members&#41;, the terms of which are subject to change by HealthTap, at its sole discretion.</source>
@@ -7116,7 +7116,7 @@
       </trans-unit>
       <trans-unit id="9680" resname="r195217494" restype="string" datatype="x-haml">
         <source>“Subscription Agreement Fees” means fees collected by HealthTap for Qualified Subscriptions under Subscription Agreements with End User, based on Premium Pricing.</source>
-        <target>“订购协议费用”是指HealthTap根据高级定价在订购协议下对最终用户收取的合格订阅费用。</target>
+        <target>“订阅协议费用”是指HealthTap根据高级定价在订阅协议下对最终用户收取的合格订阅费用。</target>
       </trans-unit>
       <trans-unit id="9683" resname="r626667343" restype="string" datatype="x-haml">
         <source>Subscriptions. All Subscriptions pre-purchased by Licensee must be sold to End Users &#40;including End User Family Members&#41;, and used not later than December 31, 2016.</source>
@@ -7244,7 +7244,7 @@
     <body>
       <trans-unit id="10141" resname="r242475903" restype="string" datatype="x-haml">
         <source>per month. Just send me a message and I can answer any follow-up questions, give you prescriptions and refills, order and review lab tests, and more.</source>
-        <target>给我发一个消息，我可以回答任何后续问题，给您处方和补充，订购和审查实验室检验，等等。</target>
+        <target>给我发一个消息，我可以回答任何后续问题，给您处方和补充，订阅和审查实验室检验，等等。</target>
       </trans-unit>
       <trans-unit id="10142" resname="r862671805" restype="string" datatype="x-haml">
         <source>You agree to HealthTap&apos;s</source>
@@ -7388,7 +7388,7 @@
       </trans-unit>
       <trans-unit id="10418" resname="r41248377" restype="string" datatype="x-haml">
         <source>The Content and Services may not be used for any illegal purpose. You may not access our networks, computers, or the Content and Services in any manner that could damage, disable, overburden, or impair them, or interfere with any other person&apos;s use and enjoyment. You may not attempt to gain unauthorized access to any Content or Services, other accounts, computer systems, or networks connected with HealthTap, the Content, or Services. You may not use any automated means &#40;such as a scraper&#41; to access HealthTap, the Content, or Services for any purpose. Such unauthorized access includes, but is not limited to, using another person’s login credentials to access his or her HealthTap account.  Any attempt by any individual or entity to solicit login information of any other user or HealthTap Medical Expert or to access any such account is an express and direct violation of these Terms of Use and of applicable law, including relevant privacy and security laws and laws prohibiting unfair or unethical business practices.</source>
-        <target>内容和服务不得用于任何非法目的。您不能以任何可能损害，禁用，过度使用或损害其内容或干扰任何其他人的使用和享受的方式访问我们的网络，计算机或内容和服务。您最好不要通过未经授权的渠道进入任何与HealthTap及其内容或服务相关的内容或服务、其他账号、电脑系统或网络。您最好不要有目的地通过一些自动化方式（例如Scraper）来访问HealthTap及其内容或服务。这种未经授权的访问包括但不限于使用另一个人的登录凭证来访问他/她的HealthTap帐户。个人或整体的任何征求其他用户或医学专家的登陆信息，以及登录这些账号的企图都是一种直接违反这些使用条款和法律适用的体现，包括相关隐私和安全的法律以及禁止不公平不道德的商业行为的法律。</target>
+        <target>内容和服务不得用于任何非法目的。您不能以任何可能损害，禁用，过度使用或损害其内容或干扰任何其他人的使用和享受的方式访问我们的网络，计算机或内容和服务。您最好不要通过未经授权的渠道进入任何与HealthTap及其内容或服务相关的内容或服务、其他账号、电脑系统或网络。您最好不要有目的地通过一些自动化方式（例如Scraper）来访问HealthTap及其内容或服务。这种未经授权的访问包括但不限于使用另一个人的登录凭证来访问他/她的HealthTap帐户。个人或整体的任何征求其他用户或医学专家的登录信息，以及登录这些账号的企图都是一种直接违反这些使用条款和法律适用的体现，包括相关隐私和安全的法律以及禁止不公平不道德的商业行为的法律。</target>
       </trans-unit>
       <trans-unit id="10419" resname="r894109663" restype="string" datatype="x-haml">
         <source>We do not recommend or endorse any specific Content, Services, tests, doctors, products, procedures, opinions, or other information that may be mentioned on HealthTap. HealthTap is designed to be used with common sense, and in connection with the advice of your doctor or your other healthcare provider. Reliance on HealthTap Content or Services is solely at your own risk. Some Content and Services, including posts by Medical Experts, may be or have been provided by third parties directly and are not reviewed or certified by HealthTap. We hope that our Content and Services will be useful, but we cannot guarantee that the Content and Services will help you achieve any specific goals or results. Content regarding dietary supplements or other treatments or regimens has not been evaluated by the Food and Drug Administration and is not intended to diagnose, treat, cure, or prevent any disease.</source>
@@ -8132,7 +8132,7 @@
     <body>
       <trans-unit id="12804" resname="r501470977" restype="string" datatype="x-haml">
         <source>What is your mobile phone number?</source>
-        <target>您的手机号码是多少？</target>
+        <target>您的电话号码是多少？</target>
       </trans-unit>
     </body>
   </file>
@@ -8284,7 +8284,7 @@
       <trans-unit id="13574" resname="Already a member?                  &lt;a href=&amp;quot;&#35;login&amp;quot;&gt;Log in &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Already a member?
                   &lt;a href=&quot;&#35;login&quot;&gt;Log in &amp;raquo;&lt;/a&gt;</source>
-        <target>已经是会员了？&lt;a href=”&#35;login”&gt;登陆&amp;raquo;&lt;/a&gt;</target>
+        <target>已经是会员了？&lt;a href=”&#35;login”&gt;登录&amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="13575" resname="By signing up, you agree to our              &lt;a class=&amp;quot;childBrowser_link&amp;quot; target=&amp;quot;_blank&amp;quot; href=&amp;quot;/pages/terms&amp;quot;&gt;Terms of Use&lt;/a&gt;              and              &lt;a class=&amp;quot;childBrowser_link&amp;quot; target=&amp;quot;_blank&amp;quot; href=&amp;quot;/pages/privacy_sharing&amp;quot;&gt;Privacy Policy&lt;/a&gt;,              and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
         <source>By signing up, you agree to our
@@ -8293,7 +8293,7 @@
               &lt;a class=&quot;childBrowser_link&quot; target=&quot;_blank&quot; href=&quot;/pages/privacy_sharing&quot;&gt;Privacy Policy&lt;/a&gt;,
               and you confirm that you&apos;re 16 years old or over.</source>
         <target>通过注册，您同意我们的
-              &lt;a class=”childBrowser_link” target=”_blank” href=”/pages/terms”&gt;使用条款&lt;/a&gt;
+              &lt;a class=”childBrowser_link” target=”_blank” href=”/pages/terms”&gt;按专科分类的回答&lt;/a&gt;
               和
               &lt;a class=”childBrowser_link” target=”_blank” href=”/pages/privacy_sharing”&gt;隐私政策&lt;/a&gt;,
               并确认您已满16岁或以上。</target>
@@ -8351,7 +8351,7 @@
       <trans-unit id="13581" resname="Already a member?                &lt;a href=&amp;quot;&#35;login&amp;quot;&gt;Log in&lt;/a&gt;" restype="string" datatype="html">
         <source>Already a member?
                 &lt;a href=&quot;&#35;login&quot;&gt;Log in&lt;/a&gt;</source>
-        <target>已经是会员？&lt;a href=”&#35;login”&gt;登陆&lt;/a&gt;</target>
+        <target>已经是会员？&lt;a href=”&#35;login”&gt;登录&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="13582" resname="By signing up, you agree to our            &lt;a class=&amp;quot;childBrowser_link&amp;quot; href=&amp;quot;/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&amp;quot;&gt;Terms of Use&lt;/a&gt;            and            &lt;a class=&amp;quot;childBrowser_link&amp;quot; href=&amp;quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&amp;quot;&gt;Privacy Policy&lt;/a&gt;,            and you confirm that you&apos;re 16 years old or over." restype="string" datatype="html">
         <source>By signing up, you agree to our
@@ -8360,7 +8360,7 @@
             &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;,
             and you confirm that you&apos;re 16 years old or over.</source>
         <target>通过注册，您同意我们的
-            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
+            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
             和
             &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;,
             并确认您已满16岁或以上。</target>
@@ -8372,7 +8372,7 @@
       <trans-unit id="13583" resname="Already have a HealthTap account?    &lt;a class=&amp;quot;btn blue&amp;quot; href=&amp;quot;&#35;login&amp;quot;&gt;Log In&lt;/a&gt;" restype="string" datatype="html">
         <source>Already have a HealthTap account?
     &lt;a class=&quot;btn blue&quot; href=&quot;&#35;login&quot;&gt;Log In&lt;/a&gt;</source>
-        <target>已经是HealthTap会员了？&lt;a class=&quot;btn blue&quot; href=&quot;&#35;login&quot;&gt;登陆&lt;/a&gt;</target>
+        <target>已经是HealthTap会员了？&lt;a class=&quot;btn blue&quot; href=&quot;&#35;login&quot;&gt;登录&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="13584" resname="Caregiver                &lt;br&gt;" restype="string" datatype="html">
         <source>Caregiver
@@ -8398,7 +8398,7 @@
         and
         &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;</source>
         <target>通过注册，您同意我们的
-        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
+        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
         和
         &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;</target>
       </trans-unit>
@@ -8455,7 +8455,7 @@
                 and
                 &lt;a class=&quot;childBrowser_link&quot; id=&quot;privacyLink&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;</source>
         <target>通过注册，您同意我们的
-                &lt;a class=”childBrowser_link” id=”termsLink” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
+                &lt;a class=”childBrowser_link” id=”termsLink” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
                 和
                 &lt;a class=&quot;childBrowser_link&quot; id=&quot;privacyLink&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;隐私政策&lt;/a&gt;</target>
       </trans-unit>
@@ -8484,7 +8484,7 @@
             &lt;a href=&quot;mailto:expertsupport@healthtap.com&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;
             or &#40;650&#41; 644-1833.</source>
         <target>通过注册，您同意我们的
-        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
+        &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
         和
         &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;如果您有任何问题，给我们发送邮件或电话联系我们
             &lt;a href=”mailto:expertsupport@healthtap.com”&gt;expertsupport@healthtap.com&lt;/a&gt;
@@ -8611,11 +8611,11 @@
             and
             &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1&quot;&gt;Privacy Policy&lt;/a&gt;,
             and you confirm that you&apos;re 16 years old or over.</source>
-        <target>已经是会员了？&lt;a href=”&#35;login”登陆&gt;Log in&lt;/a&gt;
+        <target>已经是会员了？&lt;a href=”&#35;login”登录&gt;Log in&lt;/a&gt;
             &lt;br&gt;
             &lt;br&gt;
             通过注册，您同意我们的
-            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;使用条款&lt;/a&gt;
+            &lt;a class=”childBrowser_link” href=”/pages/terms?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;按专科分类的回答&lt;/a&gt;
             和
             &lt;a class=”childBrowser_link” href=”/pages/privacy_sharing?display_frame_render=true&amp;nativeScroll=1&amp;no_splash=1”&gt;隐私政策&lt;/a&gt;,
             并确认您已满16岁或以上。</target>
@@ -8665,7 +8665,7 @@
                 &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing&quot; target=&quot;_blank&quot;&gt;Privacy Policy&lt;/a&gt;,
                 and you confirm that you&apos;re 16 years old or over.</source>
         <target>通过注册，您同意我们的
-                &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms&quot; target=&quot;_blank&quot;&gt;使用条款&lt;/a&gt;
+                &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/terms&quot; target=&quot;_blank&quot;&gt;按专科分类的回答&lt;/a&gt;
                 和
                 &lt;a class=&quot;childBrowser_link&quot; href=&quot;/pages/privacy_sharing&quot; target=&quot;_blank&quot;&gt;隐私政策&lt;/a&gt;,
                 并确认您已满16岁或以上。</target>
@@ -8951,7 +8951,7 @@
 					&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
 					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
 				&lt;/span&gt;</source>
-        <target>不要假设个人的历史知识。 HealthTap医生经常不会看到你以前的问题。 &lt;a onclick=&quot;$&#40;&apos;&#35;ex10&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h10&quot;&gt;显示示例&lt;/a&gt;&lt;br&gt;
+        <target>不要假设个人的病史知识。 HealthTap医生经常不会看到你以前的问题。 &lt;a onclick=&quot;$&#40;&apos;&#35;ex10&apos;&#41;.toggle&#40;&#41;;&quot; class=&quot;exampleToggle&quot; id=&quot;h10&quot;&gt;显示示例&lt;/a&gt;&lt;br&gt;
 				&lt;span id=&quot;ex10&quot; class=&quot;好：&lt;/span&gt;我的2岁的儿子有两个月的耳管，现在发烧和有脓从他的右耳里流出来。 这是正常的吗？&lt;br&gt;
 					&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;  它已经有两天了，脓是出来了吗？
 					&lt;/span&gt;</target>
@@ -9327,7 +9327,7 @@
         <source>Doctor definitions or descriptions will be showcased on topic pages and seen by millions of users. Get recognized for your knowledge by providing a brief and informative definition or description for this topic.
   &lt;br&gt;
   &lt;a class=&quot;btn blue close_layer&quot; style=&quot;display: block; width: 100px; float: right;&quot;&gt;Thanks&lt;/a&gt;</source>
-        <target>医生的定义或描述将在专题页面上展示，并由数百万用户查看。 通过为此专题提供简短且翔实的定义或描述，获得对您的知识的认可。
+        <target>医生的定义或描述将在话题页面上展示，并由数百万用户查看。 通过为此话题提供简短且翔实的定义或描述，获得对您的知识的认可。
 		&lt;br&gt;
   &lt;a class=&quot;btn blue close_layer&quot; style=&quot;display: block; width:100px; float: right;&quot;&gt;谢谢&lt;/a&gt;</target>
       </trans-unit>
@@ -9544,7 +9544,7 @@
         <source>Only &lt;%= 10 - no_of_consults %&gt; more &lt;%= no_of_consults == 9 ? &apos;consult&apos; : &apos;consults&apos; %&gt; to win the&lt;br&gt;
          Featured Concierge Doctor Award!</source>
         <target>只需 &lt;%= 10 - no_of_consults %&gt; more &lt;%= no_of_consults == 9 ?&apos;咨询&apos; :&apos;咨询&apos; %&gt; 获得&lt;br&gt;
-         精选特邀医生奖！</target>
+         精选贵宾台医生奖！</target>
       </trans-unit>
       <trans-unit id="13714" resname="Now become a &amp;quot;Top Concierge Doctor&amp;quot;&lt;br&gt;          and do just &lt;%= 25 - no_of_consults %&gt; more &lt;%= no_of_consults == 24 ? &apos;consult&apos; : &apos;consults&apos; %&gt; &lt;br&gt;          &lt;b&gt;&lt;%= no_of_days_left + &#40;no_of_days_left == 1 ? &apos; day&apos; : &apos; days&apos;&#41; %&gt; left in the competition!&lt;/b&gt;" restype="string" datatype="html">
         <source>Now become a &quot;Top Concierge Doctor&quot;&lt;br&gt;
@@ -9871,11 +9871,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     See the HealthTap &lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;Terms of Use&lt;/a&gt; for the definitions of “HealthTap,” “HealthTap Prime,” “Apps,” and “Premium Services.” “New Qualified Users” means new HealthTap Prime customers without a prior primary or sub-account or trial account on HealthTap Prime.
     &lt;br&gt;&lt;br&gt;
     Please note that the following prescriptions are not currently available via HealthTap Prime: narcotics or DEA controlled substances &#40;Schedule I, II, III, IV&#41;, psychiatric or lifestyle medications &#40;such as diet or erectile dysfunction drugs&#41;, or medications restricted by individual states.</source>
-        <target>这些条款（“免费试用条款”）规定HealthTap向新合格用户提供的报价（“免费试用报价”），以便在注册并提交新的HealthTap Prime帐户的付款信息时访问HealthTap Prime服务“免费试用期”）。提交您的付款明细后，即表示您接受Prime Free-Trial Offer：（i）同意我们根据我们的付款明细条款使用您的付款信息，以及（ii）确认并同意HealthTap &lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;使用条款&lt;/a&gt;和这些免费试用条款。如果您决定根据在免费试用期结束时生效的标准HealthTap Prime条款，您不希望成为HealthTap Prime的付费用户，您必须取消您的HealthTap Prime订阅（在您的HealthTap帐户的“帐单设置”部分中） &lt;a href=&quot;https：//healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription？b_id = 2340&quot; target=&quot;_blank&quot;&gt;Settings设置&lt;/a&gt;&#41;）在免费试用期结束前。订阅费不按比例分配;免费试用期结束后的取消将在帐户取消的试用期结束时保持有效。您只能使用此免费试用优惠一次。 HealthTap保留绝对酌情权决定个人是否符合此Prime免费试用优惠，并随时撤销或修改此试用优惠和/或免费试用条款的权利，恕不另行通知，也不承担任何责任。 &lt;br&gt;&lt;br&gt;
+        <target>这些条款（“免费试用条款”）规定HealthTap向新合格用户提供的报价（“免费试用报价”），以便在注册并提交新的HealthTap Prime帐户的付款信息时访问HealthTap Prime服务“免费试用期”）。提交您的付款明细后，即表示您接受Prime Free-Trial Offer：（i）同意我们根据我们的付款明细条款使用您的付款信息，以及（ii）确认并同意HealthTap &lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;按专科分类的回答&lt;/a&gt;和这些免费试用条款。如果您决定根据在免费试用期结束时生效的标准HealthTap Prime条款，您不希望成为HealthTap Prime的付费用户，您必须取消您的HealthTap Prime订阅（在您的HealthTap帐户的“帐单设置”部分中） &lt;a href=&quot;https：//healthtap.desk.com/customer/portal/articles/1672814-how-to-cancel-your-healthtap-prime-subscription？b_id = 2340&quot; target=&quot;_blank&quot;&gt;Settings设置&lt;/a&gt;&#41;）在免费试用期结束前。订阅费不按比例分配;免费试用期结束后的取消将在帐户取消的试用期结束时保持有效。您只能使用此免费试用优惠一次。 HealthTap保留绝对酌情权决定个人是否符合此Prime免费试用优惠，并随时撤销或修改此试用优惠和/或免费试用条款的权利，恕不另行通知，也不承担任何责任。 &lt;br&gt;&lt;br&gt;
     付款详情条款：当您注册试用或我们的任何高级服务，或通过应用程序进行其他购买，您的信用卡信息和其他财务数据需要处理您的付款由第三方付款处理器收集和存储，我们可能会收集一些有限的信息，例如您的邮政编码和交易记录详细信息。任何此类第三方付款处理商使用您的数据都必须遵守其隐私权政策。这些第三方通常会向我们提供一些有限的信息（例如，您可以使用存储的信息进行额外购买的唯一令牌，以及您的卡的类型，到期日期和最后四位数字）。
   &#41;.
     &lt;br&gt;&lt;br&gt;
-    请参阅HealthTap&lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;使用条款&lt;/a&gt; 对于“HealthTap”，“HealthTap Prime”，“Apps”和“Premium Services”的定义。“新合格用户”是指在HealthTap Prime上没有先前的主帐户或子帐户或试用帐户的新HealthTap Prime客户。
+    请参阅HealthTap&lt;a href=&quot;/terms&quot; target=&quot;_blank&quot;&gt;按专科分类的回答&lt;/a&gt; 对于“HealthTap”，“HealthTap Prime”，“Apps”和“Premium Services”的定义。“新合格用户”是指在HealthTap Prime上没有先前的主帐户或子帐户或试用帐户的新HealthTap Prime客户。
      &lt;br&gt;&lt;br&gt;
     请注意，以下处方目前不适用于HealthTap Prime：麻醉药或DEA受控物质（附表一，二，三，四），精神或生活用药（如饮食或勃起功能障碍药物），或个别国家限制的药物。</target>
       </trans-unit>
@@ -10277,7 +10277,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
         <source>Our mission is to measurably prolong the life expectancy of humankind and help everyone Feel Good by providing immediate access to top medical experts and their trusted health advice anytime, anywhere.
     &lt;br&gt;
     &lt;br&gt;</source>
-        <target>我们的使命是显著地延长人类的预期寿命，并帮助每个人感觉良好——通过随时随地提供立即访问顶级医疗专家的渠道以及他们可信的健康建议。&lt;br&gt;
+        <target>我们的使命是显著地延长人类的预期寿命，并帮助每个人Feel Good——通过随时随地提供立即访问顶级医疗专家的渠道以及他们可信的健康建议。&lt;br&gt;
     &lt;br&gt;</target>
       </trans-unit>
     </body>
@@ -10536,7 +10536,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="13920" resname="To suggest a follow-up appointment, include when the patient should schedule the appointment and, optionally, what the purpose of the follow-up is. The patient will receive a link to easily schedule the appointment." restype="string" datatype="javascript">
         <source>To suggest a follow-up appointment, include when the patient should schedule the appointment and, optionally, what the purpose of the follow-up is. The patient will receive a link to easily schedule the appointment.</source>
-        <target>建议后续预约，包括当患者何时应该安排预约，并且可选地规定后续活动的目的。患者将收到一个链接，以方便安排预约。</target>
+        <target>建议随访预约，包括当患者何时应该安排预约，并且可选地规定后续活动的目的。患者将收到一个链接，以方便安排预约。</target>
       </trans-unit>
       <trans-unit id="13921" resname="You can &lt;b&gt;refer your patients&lt;/b&gt; to any doctor within or outside the HealthTap network. Alternatively, refer a specialty and we’ll provide a list of specialists for your patient to choose from." restype="string" datatype="javascript">
         <source>You can &lt;b&gt;refer your patients&lt;/b&gt; to any doctor within or outside the HealthTap network. Alternatively, refer a specialty and we’ll provide a list of specialists for your patient to choose from.</source>
@@ -10646,7 +10646,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="13974" resname="Never mind " restype="string" datatype="javascript">
         <source>Never mind</source>
-        <target>没有关系</target>
+        <target>不用了</target>
       </trans-unit>
     </body>
   </file>

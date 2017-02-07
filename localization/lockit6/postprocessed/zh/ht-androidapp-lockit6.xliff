@@ -168,7 +168,7 @@
       </trans-unit>
       <trans-unit id="29" resname="r415124616" restype="string" datatype="java">
         <source>Living</source>
-        <target>居住在</target>
+        <target>健在</target>
       </trans-unit>
       <trans-unit id="30" resname="r199869805" restype="string" datatype="java">
         <source>Date of Birth</source>
@@ -1195,7 +1195,7 @@
     <body>
       <trans-unit id="220" resname="r742115697" restype="string" datatype="java">
         <source>Topics</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
@@ -1203,7 +1203,7 @@
     <body>
       <trans-unit id="221" resname="r789310818" restype="string" datatype="java">
         <source>Topic</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
@@ -2890,7 +2890,7 @@
     <body>
       <trans-unit id="515" resname="r99694554" restype="string" datatype="java">
         <source>Apply code</source>
-        <target>申请码</target>
+        <target>使用优惠</target>
       </trans-unit>
     </body>
   </file>
@@ -3774,7 +3774,7 @@
     <body>
       <trans-unit id="676" resname="r45009371" restype="string" datatype="java">
         <source>Near you</source>
-        <target>靠近 您</target>
+        <target>靠近您</target>
       </trans-unit>
       <trans-unit id="677" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>
@@ -4130,7 +4130,7 @@
       </trans-unit>
       <trans-unit id="770" resname="feed_experiencing_symptoms" restype="string" datatype="x-android-resource">
         <source>Experiencing symptoms?</source>
-        <target>曾患症状？</target>
+        <target>有不舒服的症状？</target>
       </trans-unit>
       <trans-unit id="771" resname="feed_symptom_find_out_why" restype="string" datatype="x-android-resource">
         <source>Find out why</source>

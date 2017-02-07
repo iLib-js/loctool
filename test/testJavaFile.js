@@ -657,6 +657,75 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileParseWithEmbeddedDoubleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('\tRB.getString("This is a \\\"test\\\".");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a \"test\".");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a \"test\".");
+        test.equal(r.getKey(), "r446151779");
+        
+        test.done();
+    },
+
+    testJavaFileParseWithEmbeddedEscapedSingleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('\tRB.getString("This is a \\\'test\\\'.");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a 'test'.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a 'test'.");
+        test.equal(r.getKey(), "r531222461");
+        
+        test.done();
+    },
+
+    testJavaFileParseWithEmbeddedUnescapedSingleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('\tRB.getString("This is a \'test\'.");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a 'test'.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a 'test'.");
+        test.equal(r.getKey(), "r531222461");
+        
+        test.done();
+    },
+
     testJavaFileParseWithKey: function(test) {
         test.expect(5);
 

@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="5" resname="r340023370" restype="string" datatype="ruby">
         <source>All doctors on HealthTap are licensed to practice medicine in the U.S. and are in good standing.  They include doctors from leading U.S. medical institutions (like Stanford and Harvard), as well as private practices from across the country.  HealthTap Medical Experts are independent third parties, and are not employed by or affiliated with HealthTap.  Admission to the HealthTap network is by application and invitation only.</source>
-        <target state="translated">在HealthTap上所有的医生都持有用药证书并且有良好的信誉。他们包括美国顶级医学院（比如斯坦福和哈佛）的医生，也包括美国的私人医生。HealthTap的医学专家独立于第三方，他们并不受雇或附属于HealthTap。只有申请或受邀才能进入HealthTap网站。</target>
+        <target state="translated">在HealthTap上所有的医生都持有执业证书并且有良好的信誉。他们包括美国顶级医学院（比如斯坦福和哈佛）的医生，也包括美国的私人医生。HealthTap的医学专家独立于第三方，他们并不受雇或附属于HealthTap。只有申请或受邀才能进入HealthTap网站。</target>
       </trans-unit>
     </body>
   </file>
@@ -16,15 +16,15 @@
     <body>
       <trans-unit id="17" resname="r425388093" restype="string" datatype="ruby">
         <source>Learn more &amp;raquo;</source>
-        <target state="translated">学习更多 &amp;raquo;</target>
+        <target state="translated">了解更多 &amp;raquo;</target>
       </trans-unit>
       <trans-unit id="18" resname="r425388093" restype="string" datatype="ruby">
         <source>Learn more &amp;raquo;</source>
-        <target state="translated">学习更多 &amp;raquo;</target>
+        <target state="translated">了解更多 &amp;raquo;</target>
       </trans-unit>
       <trans-unit id="19" resname="r425388093" restype="string" datatype="ruby">
         <source>Learn more &amp;raquo;</source>
-        <target state="translated">学习更多 &amp;raquo;</target>
+        <target state="translated">了解更多 &amp;raquo;</target>
       </trans-unit>
       <trans-unit id="570" resname="r110835031" restype="string" datatype="ruby">
         <source>It's easy and rewarding to add your entire group to HealthTap — no matter the size!</source>
@@ -36,7 +36,7 @@
     <body>
       <trans-unit id="27" resname="r303142986" restype="plural" datatype="ruby" extype="other">
         <source>doctors agree</source>
-        <target state="translated">医生赞成</target>
+        <target state="translated">医生同意</target>
       </trans-unit>
     </body>
   </file>
@@ -375,7 +375,7 @@
     <body>
       <trans-unit id="323" resname="r741607495" restype="string" datatype="x-haml">
         <source>HealthTap RateRx provides—for the first time—real transparency on which medications and procedures are best for treating a comprehensive list of ailments, conditions, and illnesses.</source>
-        <target state="translated">HealthTap Rate医生评测首次提供了真实的透明度，关于药物和临床操作最适合用于治疗病患，病症和疾病的综合列表。</target>
+        <target state="translated">HealthTap RateRx医生评测首次提供了真实的透明度，关于药物和临床操作最适合用于治疗病患，病症和疾病的综合列表。</target>
       </trans-unit>
     </body>
   </file>
@@ -688,7 +688,7 @@
         <source>Create a Tip
 		&lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
         <target state="translated">创建一则小贴士
-    &lt;span class="sub_title"&gt;用100个字符帮助数百万人。通知，启发，激励。&lt;/span&gt;</target>
+    &lt;span class="sub_title"&gt;用100个字符帮助数百万人。告知，启发，激励。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -801,7 +801,7 @@
 					&lt;span class="good"&gt;Good:&lt;/span&gt; My son is 5 years old, 55lbs, and has a fever. He took 5ml of Tylenol (acetaminophen120mg/5ml), but his fever persists. Can children of this weight and age take a bigger dose of Tylenol?&lt;br&gt;
 					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  My son is 5, weighs 55, and has a fever. Tried Tylenol but fever persists. Take more Tylenol?
 				&lt;/span&gt;</source>
-        <target state="translated">请同时使用药物的商标名和通用名称，尤其当您不在美国或问及不常见的药物时。&lt;a onclick=”$(&amp;apos;#ex6&amp;apos;).toggle();” class=’exampleToggle’ id=’h6’&gt;显示范例&lt;/a&gt;&lt;br&gt;
+        <target state="translated">请同时使用药物的商标名和通用（仿制药）名称，尤其当您不在美国或问及不常见的药物时。&lt;a onclick=”$(&amp;apos;#ex6&amp;apos;).toggle();” class=’exampleToggle’ id=’h6’&gt;显示范例&lt;/a&gt;&lt;br&gt;
 				&lt;span id=’ex6’ class=’guidelineEx hide’&gt;
 					&lt;span class=”good”&gt;好：&lt;/span&gt;我5岁大的儿子，55磅，正在发烧。他服用5ml的泰诺（对乙酰氨基酚120mg / 5ml），但还在发烧。体重和年龄这么大的孩子可以服用更大剂量的泰诺吗？&lt;br&gt;
 					&lt;span class=”bad”&gt;不太好:&lt;/span&gt;我的儿子5岁，体重55，有一点发烧。已服用过泰诺但还在发烧。服用更多泰诺吗？&lt;/span&gt;</target>
@@ -814,7 +814,7 @@
 				&lt;/span&gt;</source>
         <target state="translated">尽量避免提问一些医生回答“是”或者“不是”的问题。&lt;a onclick=”$(&amp;apos;#ex7&amp;apos;).toggle();” class=’exampleToggle’ id=’h7’&gt;显示范例&lt;/a&gt;&lt;br&gt;
 				&lt;span id=’ex7’ class=’guidelineEx hide’&gt;
-					&lt;span class=”good”&gt;好：&lt;/span&gt;抗生素如何在年轻的学龄儿童中起作用？&lt;br&gt;
+					&lt;span class=”good”&gt;好：&lt;/span&gt;抗生素如何在年幼的学龄儿童中起作用？&lt;br&gt;
 					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;抗生素对儿童起作用吗？&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="427" resname="Try to leave opinions out.&lt;a onclick=&quot;$(&amp;apos;#ex8&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h8&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex8&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Are those anti-vaccine folks completely clueless or just in denial?&lt;/span&gt;" restype="string" datatype="html">
@@ -823,7 +823,7 @@
 					&lt;span class="good"&gt;Good:&lt;/span&gt; Why are some people against vaccines, when vaccines are used to prevent bad diseases?&lt;br&gt;
 					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  Are those anti-vaccine folks completely clueless or just in denial?
 				&lt;/span&gt;</source>
-        <target state="translated">尝试留下意见&lt;a onclick=”$(&amp;apos;#ex8&amp;apos;).toggle();” class=’exampleToggle’ id=’h8’&gt;显示范例&lt;/a&gt;&lt;br&gt;
+        <target state="translated">尝试不要发表意见&lt;a onclick=”$(&amp;apos;#ex8&amp;apos;).toggle();” class=’exampleToggle’ id=’h8’&gt;显示范例&lt;/a&gt;&lt;br&gt;
 				&lt;span id=’ex8’ class=’guidelineEx hide’&gt;
 					&lt;span class=”good”&gt;好：&lt;/span&gt; 为什么有些人会抵抗疫苗，明明疫苗可以用来预防疾病？&lt;br&gt;
 					&lt;span class="bad"&gt;不太好：&lt;/span&gt;那些反疫苗的人是彻底地不懂还是只是拒绝接受？&lt;/span&gt;</target>
@@ -845,10 +845,10 @@
 					&lt;span class="good"&gt;Good:&lt;/span&gt; My 2 year old son got ear tubes two months and now has a fever and pus coming from his right ear. Is this common?&lt;br&gt;
 					&lt;span class="bad"&gt;Not so good:&lt;/span&gt;  And it’s been going on for two days, and pus is coming out too?
 				&lt;/span&gt;</source>
-        <target state="translated">不要假设个人的历史知识。HealthTap的医生经常不会看到您以前的问题。&lt;a onclick=”$(&amp;apos;#ex10&amp;apos;).toggle();” class=’exampleToggle’ id=’h10’&gt;显示范例&lt;/a&gt;&lt;br&gt;
+        <target state="translated">不要假设个人的病史知识。HealthTap的医生经常不会看到您以前的问题。&lt;a onclick=”$(&amp;apos;#ex10&amp;apos;).toggle();” class=’exampleToggle’ id=’h10’&gt;显示范例&lt;/a&gt;&lt;br&gt;
 				&lt;span id=’ex10’ class=’guidelineEx hide’&gt;
 					&lt;span class=”good”&gt;好：&lt;/span&gt; 我两岁的儿子两个月前得了耳管炎，现在还发烧了，右耳会流脓。这正常吗？&lt;br&gt;
-					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;  这种症状已经持续两天，也一直有浓流出来吗？&lt;/span&gt;</target>
+					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;  这种症状已经持续两天，也一直有脓流出来吗？&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="430" resname="To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).&lt;a onclick=&quot;$(&amp;apos;#ex11&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h11&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex11&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I just heard the actor Michael J. Fox talk about his Parkinson’s disease. Are there any new, good treatments that have come out in the last 3 years?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Hello doctor. My name is John Doe, and I am wondering if there are any good treatments for Parkinson’s disease.&lt;/span&gt;" restype="string" datatype="html">
         <source>To maintain privacy, leave your name and the names of others out (unless that “other” is a celebrity who has publicly talked about an issue).  &lt;a onclick="$(&amp;apos;#ex11&amp;apos;).toggle();" class='exampleToggle' id='h11'&gt;Show examples&lt;/a&gt;&lt;br&gt;
@@ -870,7 +870,7 @@
         <target state="translated">避免使用太多的缩写，因为可能导致混淆&lt;a onclick=”$(&amp;apos;#ex12&amp;apos;).toggle();” class=’exampleToggle’ id=’h12’&gt;显示范例&lt;/a&gt;&lt;br&gt;
 				&lt;span id=’ex12’ class=’guidelineEx hide’&gt;
 					&lt;span class=”good”&gt;好：&lt;/span&gt;如果您没有来生理周期，您是如何知道您怀孕了？&lt;br&gt;
-					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;如果您没有正常的生理周期，您是如何知道您怀孕了？&lt;/span&gt;</target>
+					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;如果您没有周期，如何知道怀了？&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="432" resname="Ask in English. This is the language commonly used by doctors on HealthTap.&lt;a onclick=&quot;$(&amp;apos;#ex13&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h13&apos;&gt;Show examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex13&apos; class=&apos;guidelineEx hide&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I pruned some trees last weekend and my arm has been hurting for 2 days. Could this be the cause?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Porque mi brazo me duele mucho esta semana?&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask in English. This is the language commonly used by doctors on HealthTap.  &lt;a onclick="$(&amp;apos;#ex13&amp;apos;).toggle();" class='exampleToggle' id='h13'&gt;Show examples&lt;/a&gt;&lt;br&gt;
@@ -881,7 +881,7 @@
         <target state="translated">用英语询问。这是HealthTap医生的常用语言。&lt;a onclick=”$(&amp;apos;#ex13&amp;apos;).toggle();” class=’exampleToggle’ id=’h13’&gt;显示范例&lt;/a&gt;&lt;br&gt;
 				&lt;span id=’ex13’ class=’guidelineEx hide’&gt;
 					&lt;span class=”good”&gt;好：&lt;/span&gt;我上周末修剪了一些树木，我的手臂已经疼了2天。这可能由什么引起？&lt;br&gt;
-					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;因为我的胳膊很疼吗？&lt;/span&gt;</target>
+					&lt;span class=”bad”&gt;不太好：&lt;/span&gt;Porque mi brazo me duele mucho esta semana?&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -931,7 +931,7 @@
         <source>REFER TO A COLLEAGUE
 		&lt;span class="sub_title"&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
         <target state="translated">请参阅目录
-		&lt;span class="sub_title"&gt;理解谁可以回答这个问题？太棒了！只需告诉我们是谁，我们会把它发送给他们。&lt;/span&gt;</target>
+		&lt;span class="sub_title"&gt;知道谁可以回答这个问题？太棒了！只需告诉我们是谁，我们会把它发送给他们。&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -954,7 +954,7 @@
     <body>
       <trans-unit id="440" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
         <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
-        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的乐于助人和医者评分。</target>
+        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的有助度和医者评分。</target>
       </trans-unit>
       <trans-unit id="441" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
         <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
@@ -986,7 +986,7 @@
     <body>
       <trans-unit id="458" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
         <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成{start_date}到{end_date}的补偿报告			它还需要一会。当它完成后您会收到一封邮件</target>
+        <target state="translated">正在生成{start_date}到{end_date}的报酬报告			它还需要一会。当它完成后您会收到一封邮件</target>
       </trans-unit>
     </body>
   </file>
@@ -1238,7 +1238,7 @@
     <body>
       <trans-unit id="578" resname="r998320698" restype="string" datatype="ruby">
         <source>%{num} years in practice</source>
-        <target state="translated">%{num}年诊疗</target>
+        <target state="translated">%{num}年诊疗经验</target>
       </trans-unit>
       <trans-unit id="579" resname="r734689807" restype="string" datatype="ruby">
         <source>%{num} doctors available</source>
@@ -1322,7 +1322,7 @@
     <body>
       <trans-unit id="592" resname="r892841672" restype="string" datatype="ruby">
         <source>RateRx brings together the experience of the more than %{num} doctors in our Medical Expert Network, representing over 1.5 million years of cumulative clinical experience across more than a billion patient visits.</source>
-        <target state="translated">Rate医生评测在我们的医学专家网络汇集了超过%{num}名医生的经验，代表累积超过150万年临床经验以及超过十亿患者的访问。</target>
+        <target state="translated">RateRx医生评测在我们的医学专家网络汇集了超过%{num}名医生的经验，代表累积超过150万年临床经验以及超过十亿患者的访问。</target>
       </trans-unit>
     </body>
   </file>
@@ -1376,7 +1376,7 @@
       </trans-unit>
       <trans-unit id="626" resname="r30385378" restype="string" datatype="ruby">
         <source>Hi there! I'm %{doc_name}, a Board Certified U.S. doctor. What can we do to help you feel good today?</source>
-        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。我们能做些什么来帮助您今天感觉良好？</target>
+        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。我们能做些什么来帮助您今天Feel Good？</target>
       </trans-unit>
       <trans-unit id="627" resname="r954038769" restype="string" datatype="ruby">
         <source>Hi there! I'm %{doc_name}, a Board Certified U.S. doctor. what can we help you with today?</source>
@@ -1416,7 +1416,7 @@
       </trans-unit>
       <trans-unit id="636" resname="r436833636" restype="string" datatype="ruby">
         <source>Hi, I'm %{doc_name}, a Board Certified U.S. doctor. How can we help you feel good today?</source>
-        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们如何帮助您感觉良好？</target>
+        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们如何帮助您Feel Good？</target>
       </trans-unit>
       <trans-unit id="637" resname="r477169725" restype="string" datatype="ruby">
         <source>Hi, I'm %{doc_name}, a Board Certified U.S. doctor. How can we help you today?</source>
@@ -1460,7 +1460,7 @@
       </trans-unit>
       <trans-unit id="647" resname="r648809268" restype="string" datatype="ruby">
         <source>Hi, my name is %{doc_name}, and I'm a Board Certified U.S. doctor. How can we help you feel good today?</source>
-        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您感觉良好？</target>
+        <target state="translated">您好！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您Feel Good？</target>
       </trans-unit>
       <trans-unit id="648" resname="r134576110" restype="string" datatype="ruby">
         <source>Hi, my name is %{doc_name}, and I'm a Board Certified U.S. doctor. What seems to be the problem?</source>
@@ -1484,7 +1484,7 @@
       </trans-unit>
       <trans-unit id="654" resname="r19131042" restype="string" datatype="ruby">
         <source>Nice to meet you! I'm %{doc_name}, and I'm a Board Certified U.S. doctor. How can we help you feel good today?</source>
-        <target state="translated">很高兴见到您！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您感觉良好？</target>
+        <target state="translated">很高兴见到您！ 我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您Feel Good？</target>
       </trans-unit>
       <trans-unit id="655" resname="r1058450921" restype="string" datatype="ruby">
         <source>Nice to meet you! I'm %{doc_name}, and I'm a Board Certified U.S. doctor. How can we help you today?</source>
@@ -1520,7 +1520,7 @@
       </trans-unit>
       <trans-unit id="663" resname="r486535834" restype="string" datatype="ruby">
         <source>Welcome to HealthTap. I'm %{doc_name}, and I'm a Board Certified U.S. doctor. How can we help you feel good today?</source>
-        <target state="translated">欢迎来到HealthTap。我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您感觉良好？</target>
+        <target state="translated">欢迎来到HealthTap。我是%{doc_name}，是美国医学委员会认证医生。今天我们可以如何帮助您Feel Good？</target>
       </trans-unit>
       <trans-unit id="664" resname="r80533206" restype="string" datatype="ruby">
         <source>Welcome to HealthTap. I'm %{doc_name}, and I'm a Board Certified U.S. doctor. How can we help you today?</source>
@@ -2013,7 +2013,7 @@
       </trans-unit>
       <trans-unit id="753" resname="r1050216247" restype="string" datatype="ruby">
         <source>Growing Older</source>
-        <target state="translated">成长故事</target>
+        <target state="translated">慢慢变老</target>
       </trans-unit>
       <trans-unit id="754" resname="r1041996180" restype="string" datatype="ruby">
         <source>Coping with Disaster</source>
@@ -2973,11 +2973,11 @@
       </trans-unit>
       <trans-unit id="1001" resname="r318715433" restype="string" datatype="ruby">
         <source>%{doctor}, %{a_an_specialist}, shares trustworthy, caring answers on HealthTap, helping millions of people feel good! You should follow %{doctor} on HealthTap</source>
-        <target state="translated">%{doctor}, %{a_an_specialist}, 在HealthTap上分享值得信赖和有关爱的回答，帮助数百万人感觉良好！您应该关注HealthTap上的%{doctor}</target>
+        <target state="translated">%{doctor}, %{a_an_specialist}, 在HealthTap上分享值得信赖和有关爱的回答，帮助数百万人Feel Good！您应该关注HealthTap上的%{doctor}</target>
       </trans-unit>
       <trans-unit id="1002" resname="r552122891" restype="string" datatype="ruby">
         <source>%{doctor}, %{a_an_specialist} in %{doctor_location}, shares trustworthy, caring answers on HealthTap, helping millions of people feel good! You should follow %{doctor} on HealthTap</source>
-        <target state="translated">%{doctor}, 在%{doctor_location}的%{a_an_specialist}, 在HealthTap上分享值得信赖和有关爱的回答，帮助数百万人感觉良好！您应该关注HealthTap上的%{doctor}</target>
+        <target state="translated">%{doctor}, 在%{doctor_location}的%{a_an_specialist}, 在HealthTap上分享值得信赖和有关爱的回答，帮助数百万人Feel Good！您应该关注HealthTap上的%{doctor}</target>
       </trans-unit>
       <trans-unit id="1003" resname="r1061577932" restype="string" datatype="ruby">
         <source>%{doctor} is a great %{specialist} who gives trustworthy, caring answers on #HealthTap!</source>
@@ -3033,7 +3033,7 @@
       </trans-unit>
       <trans-unit id="1017" resname="r502382219" restype="string" datatype="ruby">
         <source>At HealthTap, top doctors create actionable checklists to help you achieve your health and wellness goals and feel good! I thought you'd be interested in seeing the checklist that %{doctor}, %{a_an_specialist}, created about %{g}. Try the checklist!</source>
-        <target state="translated">在HealthTap，顶级医生创建可操作的清单来帮助您实现您的健康与保健目标并感觉良好！ 我想您有兴趣查看%{doctor}，%{a_an_specialist}，创建的关于%{g}的清单。 尝试清单吧！</target>
+        <target state="translated">在HealthTap，顶级医生创建可操作的清单来帮助您实现您的健康与保健目标并Feel Good！ 我想您有兴趣查看%{doctor}，%{a_an_specialist}，创建的关于%{g}的清单。 尝试清单吧！</target>
       </trans-unit>
       <trans-unit id="1018" resname="r164389534" restype="string" datatype="ruby">
         <source>Try this doctor checklist for %{g} from %{doctor} on @HealthTap!</source>
@@ -3045,7 +3045,7 @@
       </trans-unit>
       <trans-unit id="1020" resname="r1045259591" restype="string" datatype="ruby">
         <source>At HealthTap, top doctors create actionable checklists to help you achieve your health and wellness goals and feel good! I thought you'd be interested in seeing the checklist that %{doctor}, %{a_an_specialist}, created. Try the checklist!</source>
-        <target state="translated">在HealthTap，顶级医生创建可操作的清单来帮助您实现您的健康与保健目标并感觉良好！ 我想您有兴趣查看%{doctor}，%{a_an_specialist}，创建的清单。 尝试清单吧！</target>
+        <target state="translated">在HealthTap，顶级医生创建可操作的清单来帮助您实现您的健康与保健目标并Feel Good！ 我想您有兴趣查看%{doctor}，%{a_an_specialist}，创建的清单。 尝试清单吧！</target>
       </trans-unit>
       <trans-unit id="1021" resname="r672905091" restype="string" datatype="ruby">
         <source>Try this doctor checklist from %{doctor} on @HealthTap!</source>
@@ -3057,11 +3057,11 @@
       </trans-unit>
       <trans-unit id="1023" resname="r728146337" restype="string" datatype="ruby">
         <source>At HealthTap, top doctors review and rank health apps as part of AppRx so you can find the right ones for you. See what doctors are saying about "%{app_name}", an %{app_type} app on HealthTap!</source>
-        <target state="translated">在HealthTap，顶级医生审查和排名健康应用程序作为App医生评测的一部分，所以您可以找到适合您的。 查看医生在HealthTap上正在说的“%{app_name}”，一类%{app_type}应用程序！</target>
+        <target state="translated">在HealthTap，顶级医生审查和排名健康应用程序作为AppRx医生评测的一部分，所以您可以找到适合您的。 查看医生在HealthTap上正在说的“%{app_name}”，一类%{app_type}应用程序！</target>
       </trans-unit>
       <trans-unit id="1024" resname="r931929129" restype="string" datatype="ruby">
         <source>See what doctors are saying about "%{app_name}", an %{app_type} app on @HealthTap #AppRx!</source>
-        <target state="translated">查看医生在@HealthTap #App医生评测上正在说的“%{app_name}”，一类%{app_type}应用程序！</target>
+        <target state="translated">查看医生在@HealthTap #AppRx医生评测上正在说的“%{app_name}”，一类%{app_type}应用程序！</target>
       </trans-unit>
       <trans-unit id="1025" resname="r414539705" restype="string" datatype="ruby">
         <source>Join me on HealthTap - free answers from %{static_doctors_count} top doctors, and more!</source>
@@ -3101,7 +3101,7 @@
       </trans-unit>
       <trans-unit id="1036" resname="r961165407" restype="string" datatype="ruby">
         <source>Check out HealthTap's 'RateRx' report by doctors</source>
-        <target state="translated">查看医生给出的HealthTap的“Rate医生评测”报告</target>
+        <target state="translated">查看医生给出的HealthTap的“RateRx医生评测”报告</target>
       </trans-unit>
       <trans-unit id="1037" resname="r24804746" restype="string" datatype="ruby">
         <source>%{num_docs} top U.S. doctors reviewed treatments for popular conditions and symptoms on HealthTap. The results are amazing. Check them out!</source>
@@ -3109,11 +3109,11 @@
       </trans-unit>
       <trans-unit id="1038" resname="r786762726" restype="string" datatype="ruby">
         <source>NEW: Top doctors review treatments for %{treatment} on @HealthTap #RateRx!</source>
-        <target state="translated">新的：在@HealthTap #Rate医生评测顶级医生为%{treatment}审查的治疗方法！</target>
+        <target state="translated">新的：在@HealthTap #RateRx医生评测顶级医生为%{treatment}审查的治疗方法！</target>
       </trans-unit>
       <trans-unit id="1039" resname="r732503007" restype="string" datatype="ruby">
         <source>Doctors review treatments for %{treatment} on HealthTap RateRx</source>
-        <target state="translated">在@HealthTap #Rate医生评测医生为%{treatment}审查的治疗方法！</target>
+        <target state="translated">在@HealthTap #RateRx医生评测医生为%{treatment}审查的治疗方法！</target>
       </trans-unit>
       <trans-unit id="1040" resname="r546973418" restype="string" datatype="ruby">
         <source>%{num_docs} top U.S. doctors reviewed treatments for %{treatment} on HealthTap. The results are amazing. Check them out!</source>
@@ -3229,7 +3229,7 @@
       </trans-unit>
       <trans-unit id="1069" resname="r122896159" restype="string" datatype="ruby">
         <source>NEW: Top doctors review treatments for popular conditions and symptoms on @HealthTap #RateRx!</source>
-        <target state="translated">新的：在@HealthTap #Rate医生评测顶级医生审查流行病症和症状的治疗！</target>
+        <target state="translated">新的：在@HealthTap #RateRx医生评测顶级医生审查流行病症和症状的治疗！</target>
       </trans-unit>
     </body>
   </file>
@@ -3526,7 +3526,7 @@
     <body>
       <trans-unit id="1135" resname="Prime Credits:" restype="string" datatype="html">
         <source>Prime Credits:</source>
-        <target state="translated">主要银行卡：</target>
+        <target state="translated">Prime余额：</target>
       </trans-unit>
     </body>
   </file>
