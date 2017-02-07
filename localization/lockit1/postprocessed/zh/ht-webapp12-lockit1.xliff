@@ -16139,7 +16139,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3286" resname="Nevermind" restype="string" datatype="html">
         <source>Nevermind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
     </body>
   </file>
