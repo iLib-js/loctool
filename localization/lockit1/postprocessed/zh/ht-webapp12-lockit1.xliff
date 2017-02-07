@@ -34255,7 +34255,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6739" resname="Have this" restype="string" datatype="javascript">
         <source>Have this</source>
-        <target>有这个</target>
+        <target>现有这情况</target>
       </trans-unit>
       <trans-unit id="6740" resname="No longer have this" restype="string" datatype="javascript">
         <source>No longer have this</source>
