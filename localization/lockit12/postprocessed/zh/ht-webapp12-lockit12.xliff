@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2">
-  <file original="app/views/static_pages/press.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/static_pages/press.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="46" resname="r53097884" restype="string" datatype="ruby">
         <source>...[HealthTap's] ecosystem of the doctors and peer review are how [it creates] a transparency..., a rating system..., and a learning system, ...to create a place where people can manage their health from query-to-cure.</source>
@@ -24,7 +24,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/static_pages/partial/_testimonials.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/static_pages/partial/_testimonials.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="51" resname="r60049643" restype="string" datatype="ruby">
         <source>&amp;ldquo;Flex is all about helping the world live smarter, and we are dedicated to bringing intelligent solutions to how our employees access healthcare and manage their health and well-being. HealthTap offers a query-to-cure system that &lt;em&gt;provides Flex employees a simple, immediate, and personalized way to tap in and access health services&lt;/em&gt; from a network of top doctors, helping to curb costs.&amp;rdquo;</source>
@@ -40,7 +40,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="54" resname="r221038386" restype="string" datatype="ruby">
         <source>Our first responsibility is to do good for the individuals who use &lt;span class="ht-name" &gt;HealthTap&lt;/span&gt;, especially when making decisions that affect their health and the health of their loved ones. We care deeply about people and are committed to providing information and access to &lt;a href="#" class="read-more-link"&gt; ...MORE&amp;nbsp;&amp;rsaquo;&lt;/a&gt; &lt;span class="hidden-text"&gt;care that meet the highest standards of safety and validity, and help people take actions to &lt;span class="no-break" &gt;Feel Good&lt;/span&gt; every day.&lt;/span&gt;</source>
@@ -56,7 +56,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/people/feelGood/feed/_subscription_ad.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/people/feelGood/feed/_subscription_ad.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="57" resname="r738758154" restype="string" datatype="ruby">
         <source>USD per %{frequency}</source>
@@ -64,7 +64,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/people/feelGood/doctorView.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/people/feelGood/doctorView.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="58" resname="r773944652" restype="plural" datatype="ruby" extype="one">
         <source>Saved %{span_start}1%{span_end} life</source>
@@ -76,7 +76,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/people/feelGood/doctorPartials/_doctor_result.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/people/feelGood/doctorPartials/_doctor_result.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="60" resname="r944712741" restype="string" datatype="ruby">
         <source>In Dr. %{name}'s Referral Network</source>
@@ -88,7 +88,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/pages/feelGood/simplified_payment_variants.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/pages/feelGood/simplified_payment_variants.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="62" resname="r302861822" restype="string" datatype="ruby">
         <source>More than %{number} lives saved!</source>
@@ -96,7 +96,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/general_mailer/member_consult_premature_end.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/general_mailer/member_consult_premature_end.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="63" resname="r123272099" restype="string" datatype="ruby">
         <source>It seems you started a Virtual Consult but it ended after a very brief amount of time. Usually this means that you got your answer right away, but if you experienced a technical issue or if there were any other reasons that left you unsatisfied, we’d love to hear what happened so we can fix it. Our goal is one hundred percent patient satisfaction, and we want to be sure you receive the care you need.</source>
@@ -104,7 +104,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/general_mailer/member_concierge_doctor_invitation_discount.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/general_mailer/member_concierge_doctor_invitation_discount.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="64" resname="r13016262" restype="string" datatype="ruby">
         <source>Here's what %{expert} said:</source>
@@ -112,7 +112,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/general_mailer/member_concierge_cannotanswer_refund.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/general_mailer/member_concierge_cannotanswer_refund.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="65" resname="r276904410" restype="string" datatype="ruby">
         <source>We’d still love to help you find an answer to your question, however.</source>
@@ -132,7 +132,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/general_mailer/member_concierge_appointment_missed_bydoctor.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/general_mailer/member_concierge_appointment_missed_bydoctor.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="69" resname="r1055415101" restype="string" datatype="ruby">
         <source>You may reschedule a Virtual Appointment for another time during the doctor's virtual office hours.</source>
@@ -146,7 +146,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/views/chat/feelgood/chat_history_pdf.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/views/chat/feelgood/chat_history_pdf.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="71" resname="r510048504" restype="string" datatype="ruby">
         <source>Virtual Consult with %{expert_name} for %{patient_first_name} %{patient_last_name}</source>
@@ -158,7 +158,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/models/promo_code.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/models/promo_code.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="73" resname="r463906685" restype="string" datatype="ruby">
         <source>Promo code can not be applied to given subscription plan</source>
@@ -202,7 +202,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/models/personal_check.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/models/personal_check.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="83" resname="r930344070" restype="string" datatype="ruby">
         <source>%{action} %{frequency} for %{duration} for %{until_when}</source>
@@ -242,7 +242,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/models/person/third_party.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/models/person/third_party.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="92" resname="r842205903" restype="string" datatype="ruby">
         <source>&lt;p&gt;Please join this private video&amp;nbsp;consult between %{doctor}&amp;nbsp;and %{patient_name} %{last_name}&amp;nbsp;now.&amp;nbsp;&lt;/p&gt;</source>
@@ -302,7 +302,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/models/chat_session.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/models/chat_session.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="106" resname="r423357169" restype="string" datatype="ruby">
         <source>The other party ended the session prematurely</source>
@@ -310,7 +310,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="107" resname="r223800509" restype="string" datatype="ruby">
         <source>%{expert} invites you to join her virtual practice</source>
@@ -322,7 +322,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/controllers/mobile_controller.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/controllers/mobile_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="109" resname="r1017162231" restype="string" datatype="ruby">
         <source>app_name can't be blank</source>
@@ -330,7 +330,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/controllers/api/v2/reference_controller.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/controllers/api/v2/reference_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="112" resname="r376623140" restype="string" datatype="ruby">
         <source>Bihari</source>
@@ -346,7 +346,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="app/controllers/api/v2/api_controller.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="app/controllers/api/v2/api_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="136" resname="r352954835" restype="string" datatype="ruby">
         <source>%{consult_geo_state} not available</source>
@@ -354,7 +354,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/templates/install_extension.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/templates/install_extension.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="137" resname="Add to Chrome" restype="string" datatype="html">
         <source>Add to Chrome</source>
@@ -362,7 +362,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/javascripts/templates/experts/add_topic_popup.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/javascripts/templates/experts/add_topic_popup.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="140" resname="Add {topic}" restype="string" datatype="javascript">
         <source>Add {topic}</source>
@@ -370,7 +370,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/templates/plan_subscribe.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/templates/plan_subscribe.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="141" resname="Your first consult" restype="string" datatype="javascript">
         <source>Your first consult</source>
@@ -378,7 +378,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/templates/pay_total.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/templates/pay_total.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="142" resname="Billed monthly. Cancel anytime" restype="string" datatype="javascript">
         <source>Billed monthly. Cancel anytime</source>
@@ -394,7 +394,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="145" resname="Invite your clinician" restype="string" datatype="javascript">
         <source>Invite your clinician</source>
@@ -406,7 +406,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/templates/health_files.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/templates/health_files.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="147" resname="Choose a file" restype="string" datatype="javascript">
         <source>Choose a file</source>
@@ -414,7 +414,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="148" resname="LESS&lt;br&gt;LIKELY" restype="string" datatype="javascript">
         <source>LESS&lt;br&gt;LIKELY</source>
@@ -430,7 +430,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/js/ui_modules.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/js/ui_modules.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="151" resname="Hi {name}" restype="string" datatype="javascript">
         <source>Hi {name}</source>
@@ -438,7 +438,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/js/soap_note.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/js/soap_note.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="152" resname="I&apos;d like to request you consult with a doctor again for a follow-up virtual consult on {date}" restype="string" datatype="javascript">
         <source>I'd like to request you consult with a doctor again for a follow-up virtual consult on {date}</source>
@@ -458,7 +458,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/js/questions.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/js/questions.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="156" resname="Would you like to video or text chat with {name}, a top {span_start}{specialist_name}{span_end} with {years} years of experience?" restype="string" datatype="javascript">
         <source>Would you like to video or text chat with {name}, a top {span_start}{specialist_name}{span_end} with {years} years of experience?</source>
@@ -470,7 +470,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/js/payment.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/js/payment.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="158" resname="{n}-day Free Trial!" restype="string" datatype="javascript">
         <source>{n}-day Free Trial!</source>
@@ -482,7 +482,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/js/helpers/vidyo_player2.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/js/helpers/vidyo_player2.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="160" resname="on hold" restype="string" datatype="javascript">
         <source>on hold</source>
@@ -490,7 +490,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/js/enterprise/verification.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/js/enterprise/verification.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="161" resname="&lt;span&gt;Your 6-digit code was re-sent to your&lt;br/&gt;email {email}&lt;/span&gt;" restype="string" datatype="javascript">
         <source>&lt;span&gt;Your 6-digit code was re-sent to your&lt;br/&gt;email {email}&lt;/span&gt;</source>
@@ -526,7 +526,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/js/audio_test.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/js/audio_test.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="169" resname="Error getting audio" restype="string" datatype="javascript">
         <source>Error getting audio</source>
@@ -534,7 +534,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/feelGood/js/answering_room.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="public/feelGood/js/answering_room.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="170" resname="Consult has ended, you will be redirected back to Your Virtual Practice page." restype="string" datatype="javascript">
         <source>Consult has ended, you will be redirected back to Your Virtual Practice page.</source>
@@ -542,7 +542,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="config/notifications.yml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="config/notifications.yml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="171" resname="body_female" restype="string" datatype="x-yaml" x-context="member_consult_summary_live">
         <source>%1 shared her instructions and plan for you for your recent consult!</source>
@@ -554,7 +554,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="terms.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="terms.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="174" resname="r179193766" restype="string" datatype="x-haml">
         <source>This updated document eliminates redundancies, better explains the relationship between you and HealthTap, and updates outdated references Separate Terms apply to HealthTap Prime and HealthTap Concierge.</source>
@@ -812,7 +812,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="raterx_results.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="raterx_results.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="237" resname="r571766609" restype="string" datatype="x-haml">
         <source>&amp;copy; 2015 HealthTap Inc. Unauthorized commercial use, reproduction, or distribution is prohibited.  To license HealthTap content</source>
@@ -820,7 +820,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="provider_page_h.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="provider_page_h.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="238" resname="r108646318" restype="string" datatype="x-haml">
         <source>and vetted diagnosis &amp;mdash;</source>
@@ -828,7 +828,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="privacy_statement.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="privacy_statement.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="239" resname="r584884260" restype="string" datatype="x-haml">
         <source>How HealthTap protects your privacy when using our free service as well as HealthTap Premium Services (including Prime and Concierge).</source>
@@ -892,7 +892,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="privacy_sharing.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="privacy_sharing.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="254" resname="r304108278" restype="string" datatype="x-haml">
         <source>Our company culture respects the values of secure sharing.</source>
@@ -920,7 +920,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="guest_expert_concierge.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="guest_expert_concierge.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="260" resname="r508629567" restype="string" datatype="x-haml">
         <source>Practice medicine on&amp;nbsp;</source>
@@ -928,7 +928,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="apple_watch.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="apple_watch.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="261" resname="r644783799" restype="string" datatype="x-haml">
         <source>Voice your health questions&amp;mdash;</source>
@@ -936,7 +936,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="prime_bundle_moms.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="prime_bundle_moms.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="262" resname="r653898399" restype="string" datatype="x-haml">
         <source>Give mom a helping hand&amp;mdash;access to top doctors 24/7 at a</source>
@@ -944,7 +944,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="payment.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="payment.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="263" resname="r721590602" restype="string" datatype="x-haml">
         <source>&lt;script src="</source>
@@ -952,7 +952,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_terms.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_terms.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="264" resname="r45551544" restype="string" datatype="x-haml">
         <source>strong&gt;C.</source>
@@ -964,7 +964,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_expert_sidebar.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_expert_sidebar.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="266" resname="r36862091" restype="string" datatype="x-haml">
         <source>Support &amp; Feedback</source>
@@ -972,7 +972,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="welcome_email.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="welcome_email.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="267" resname="r773504987" restype="string" datatype="x-haml">
         <source>&amp;bull;</source>
@@ -980,7 +980,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_expert_provider_training_7.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_expert_provider_training_7.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="268" resname="r46724211" restype="string" datatype="x-haml">
         <source>Did you miss our last email? We’ve noticed that you haven’t completed your tutorial for SmartHealth powered by HealthTap yet.</source>
@@ -1004,7 +1004,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_expert_provider_training_3.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_expert_provider_training_3.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="273" resname="r860757861" restype="string" datatype="x-haml">
         <source>We’ve noticed that you haven’t completed your tutorial for SmartHealth powered by HealthTap yet.</source>
@@ -1028,7 +1028,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_expert_provider_training_14.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_expert_provider_training_14.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="274" resname="r618576137" restype="string" datatype="x-haml">
         <source>Remember, you need to complete the tutorial before conducting any live consultations. The tutorial covers important aspects of online  consulting etiquette, and tests your PC for video consulting capability.</source>
@@ -1040,7 +1040,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_expert_provider_training_25.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_expert_provider_training_25.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="279" resname="r562191348" restype="string" datatype="x-haml">
         <source>This is your final reminder about completing your HealthTap tutorial to get started with virtual care.</source>
@@ -1080,7 +1080,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_expert_provider_training_20.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_expert_provider_training_20.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="288" resname="r653178289" restype="string" datatype="x-haml">
         <source>This is your fourth reminder.</source>
@@ -1092,7 +1092,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_onboarding_askdoctors.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_onboarding_askdoctors.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="291" resname="r828796572" restype="string" datatype="x-haml">
         <source>Please take a minute to confirm your location, so we can connect you within minutes to personalized, high-quality health information when you need it most.</source>
@@ -1100,7 +1100,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="concierge_launch.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="concierge_launch.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="292" resname="r588954154" restype="string" datatype="x-haml">
         <source>Sometimes it’s not possible to visit your doctor in person &amp;mdash; especially when only</source>
@@ -1108,7 +1108,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_sign_up.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_sign_up.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="293" resname="r136740460" restype="string" datatype="x-haml">
         <source>Please enter GP Practice</source>
@@ -1132,7 +1132,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_step_one.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_step_one.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="298" resname="r129453591" restype="string" datatype="x-haml">
         <source>There are one or more errors with the information above, please scroll up and review the fields highlighted in red</source>
@@ -1140,7 +1140,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="_contracts.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+  <file original="_contracts.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="299" resname="r463285564" restype="string" datatype="x-haml">
         <source>California &amp; Others</source>
