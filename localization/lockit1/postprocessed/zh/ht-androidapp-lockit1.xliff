@@ -4668,7 +4668,7 @@
       </trans-unit>
       <trans-unit id="897" resname="preask_edittext_hint_inbox_consult" restype="string" datatype="x-android-resource">
         <source>Share a detailed description of your symptoms, concerns, and how you'd like the doctor to help you. Attach images and files as necessary.</source>
-        <target>分享您的症状，担心以及您希望医生如何帮助您的详细说明。必须附加照片或文件</target>
+        <target>分享您的症状，担心以及您希望医生如何帮助您的详细说明。最好附加照片或文件</target>
       </trans-unit>
       <trans-unit id="898" resname="preask_edittext_count" restype="string" datatype="x-android-resource">
         <source>0/150</source>
