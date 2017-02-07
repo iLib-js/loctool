@@ -7496,7 +7496,7 @@ anytime for free</source>
       </trans-unit>
       <trans-unit id="Back" resname="Back" restype="string" datatype="x-objective-c">
         <source>Back</source>
-        <target>背部</target>
+        <target>返回</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Billed monthly, cancel anytime" resname="Billed monthly, cancel anytime" restype="string" datatype="x-objective-c">
