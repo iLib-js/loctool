@@ -1956,4 +1956,28 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/models/kb_attribute_relationship.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="109" resname="r1015693398" restype="string" datatype="ruby">
+        <source>Clinical Finding</source>
+        <target state="new">临床发现</target>
+      </trans-unit>
+      <trans-unit id="110" resname="r334558496" restype="string" datatype="ruby">
+        <source>Clinical finding</source>
+        <target state="new">临床发现</target>
+      </trans-unit>
+      <trans-unit id="111" resname="r161249316" restype="string" datatype="ruby">
+        <source>Test Result</source>
+        <target state="new">检验结果</target>
+      </trans-unit>
+      <trans-unit id="112" resname="r179500500" restype="string" datatype="ruby">
+        <source>Diet</source>
+        <target state="new">饮食</target>
+      </trans-unit>
+      <trans-unit id="113" resname="r473163360" restype="string" datatype="ruby">
+        <source>Test result</source>
+        <target state="new">检验结果</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
