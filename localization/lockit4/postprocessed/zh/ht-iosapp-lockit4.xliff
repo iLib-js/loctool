@@ -2517,7 +2517,7 @@
     <body>
       <trans-unit id="475" resname="%d %@ weighed in" restype="string" datatype="x-objective-c">
         <source>%d %@ weighed in</source>
-        <target>%d %@医生参与讨论</target>
+        <target>%d 个 %@ 参与讨论</target>
       </trans-unit>
     </body>
   </file>
