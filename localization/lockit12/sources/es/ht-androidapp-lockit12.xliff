@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="src/com/healthtap/userhtexpress/model/PhoneCountryCodeModel.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="r1044062367" restype="string" datatype="java">
+        <source>{name} ( +{country_code})</source>
+        <target state="new">{name} ( +{country_code})</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2" resname="period" restype="string" datatype="x-android-resource">
+        <source>.</source>
+        <target>.</target>
+      </trans-unit>
+      <trans-unit id="3" resname="location_search_unavailable" restype="string" datatype="x-android-resource">
+        <source>Sorry, changing your location is currently not available.</source>
+        <target>Sorry, changing your location is currently not available.</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r1044062367" restype="string" datatype="x-android-resource">
+        <source>{name} ( +{country_code})</source>
+        <target>{name} ( +{country_code})</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
