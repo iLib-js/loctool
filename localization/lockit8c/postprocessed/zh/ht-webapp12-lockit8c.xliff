@@ -24391,7 +24391,7 @@
       </trans-unit>
       <trans-unit id="4795" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
-        <target state="translated">不是性活跃</target>
+        <target state="translated">非性活跃</target>
       </trans-unit>
       <trans-unit id="4796" resname="r699411433" restype="string" datatype="ruby">
         <source>Men</source>
@@ -24403,7 +24403,7 @@
       </trans-unit>
       <trans-unit id="4798" resname="r118374496" restype="string" datatype="ruby">
         <source>Both</source>
-        <target state="translated">都</target>
+        <target state="translated">两者</target>
       </trans-unit>
       <trans-unit id="4799" resname="r276834703" restype="string" datatype="ruby">
         <source>Marijuana</source>

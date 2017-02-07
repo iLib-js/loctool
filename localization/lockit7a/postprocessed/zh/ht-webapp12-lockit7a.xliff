@@ -1793,7 +1793,7 @@
       </trans-unit>
       <trans-unit id="973" resname="r118374496" restype="string" datatype="ruby">
         <source>Both</source>
-        <target state="translated">都</target>
+        <target state="translated">两者</target>
       </trans-unit>
       <trans-unit id="974" resname="r655006897" restype="string" datatype="ruby">
         <source>I don't know</source>

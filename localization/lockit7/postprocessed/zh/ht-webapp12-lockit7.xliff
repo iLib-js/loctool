@@ -2131,7 +2131,7 @@
       </trans-unit>
       <trans-unit id="435" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
-        <target>不是性活跃</target>
+        <target>非性活跃</target>
       </trans-unit>
       <trans-unit id="436" resname="r699411433" restype="string" datatype="ruby">
         <source>Men</source>
