@@ -40621,7 +40621,7 @@
       </trans-unit>
       <trans-unit id="9438" resname="Expires (MM/YY)" restype="string" datatype="javascript">
         <source>Expires (MM/YY)</source>
-        <target state="translated">过期 (MM/YY)</target>
+        <target state="translated">有效期至 (MM/YY)</target>
       </trans-unit>
       <trans-unit id="9439" resname="Security code" restype="string" datatype="javascript">
         <source>Security code</source>
@@ -42709,11 +42709,11 @@
       </trans-unit>
       <trans-unit id="9893" resname="Exp (MM/YY)" restype="string" datatype="javascript">
         <source>Exp (MM/YY)</source>
-        <target state="translated">过期 (月/年)</target>
+        <target state="translated">有效期至 (月/年)</target>
       </trans-unit>
       <trans-unit id="9894" resname="Expiry (MM/YY)" restype="string" datatype="javascript">
         <source>Expiry (MM/YY)</source>
-        <target state="translated">过期 (月/年)</target>
+        <target state="translated">有效期至 (月/年)</target>
       </trans-unit>
       <trans-unit id="9895" resname="You can ask 150-character health questions to one of our {n} top doctors for free." restype="string" datatype="javascript">
         <source>You can ask 150-character health questions to one of our {n} top doctors for free.</source>
