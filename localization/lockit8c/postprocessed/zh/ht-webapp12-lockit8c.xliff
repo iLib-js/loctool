@@ -11697,7 +11697,7 @@
     <body>
       <trans-unit id="2257" resname="r286644437" restype="string" datatype="ruby">
         <source>Join today for &lt;b&gt;free&lt;/b&gt; to feel good and improve your health!</source>
-        <target state="translated">立刻&lt;b&gt;免费&lt;/b&gt;加入，Feel Good并提高您的健康！</target>
+        <target state="translated">立刻&lt;b&gt;免费&lt;/b&gt;加入，Feel Good并改善您的健康！</target>
       </trans-unit>
       <trans-unit id="2258" resname="r598895172" restype="string" datatype="ruby">
         <source>Create a free, private account</source>
