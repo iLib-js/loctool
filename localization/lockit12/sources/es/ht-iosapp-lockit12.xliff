@@ -1,126 +1,687 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2">
-  <file original="feelgood/iPadNative/Expert/FGDoctorBaseViewController.h" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+  <file original="feelgood/ViewControllers/Settings/FGNotificationSettingsViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="1" resname="Write recommendation" restype="string" datatype="x-objective-c">
-        <source>Write recommendation</source>
-        <target state="new">Write recommendation</target>
+      <trans-unit id="2" resname="Push" restype="string" datatype="x-objective-c">
+        <source>Push</source>
+        <target state="translated">Push</target>
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/ViewControllers/FGTalk2DocUpgradeForSubAccountViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+  <file original="feelgood/ViewControllers/FGSearchLocationViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="2" resname="Update Subscription" restype="string" datatype="x-objective-c">
-        <source>Update Subscription</source>
-        <target state="new">Update Subscription</target>
-      </trans-unit>
-      <trans-unit id="3" resname="To ask for %@, please" restype="string" datatype="x-objective-c">
-        <source>To ask for %@, please</source>
-        <target state="new">To ask for %@, please</target>
-      </trans-unit>
-      <trans-unit id="4" resname="add %@ to your account" restype="string" datatype="x-objective-c">
-        <source>add %@ to your account</source>
-        <target state="new">add %@ to your account</target>
-      </trans-unit>
-      <trans-unit id="5" resname="Add %@" restype="string" datatype="x-objective-c">
-        <source>Add %@</source>
-        <target state="new">Add %@</target>
-      </trans-unit>
-      <trans-unit id="6" resname="Only US $%@ / month" restype="string" datatype="x-objective-c">
-        <source>Only US $%@ / month</source>
-        <target state="new">Only US $%@ / month</target>
+      <trans-unit id="11" resname="Enter Location" restype="string" datatype="x-objective-c">
+        <source>Enter Location</source>
+        <target state="translated">Ingresar Ubicación</target>
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/ViewControllers/FGSideMenuViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+  <file original="feelgood/ViewControllers/FGForgotPasswordViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="7" resname="%d&apos;%d&quot; (%.02fm)" restype="string" datatype="x-objective-c">
-        <source>%d'%d" (%.02fm)</source>
-        <target state="new">%d'%d" (%.02fm)</target>
-      </trans-unit>
-      <trans-unit id="8" resname="%@&apos;0&quot; (%.02fm)" restype="string" datatype="x-objective-c">
-        <source>%@'0" (%.02fm)</source>
-        <target state="new">%@'0" (%.02fm)</target>
-      </trans-unit>
-      <trans-unit id="9" resname="%@&apos;%@&quot; (%.02fm)" restype="string" datatype="x-objective-c">
-        <source>%@'%@" (%.02fm)</source>
-        <target state="new">%@'%@" (%.02fm)</target>
+      <trans-unit id="12" resname="Return to log in" restype="string" datatype="x-objective-c">
+        <source>Return to log in</source>
+        <target state="translated">Regresar a inicio de sesión</target>
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/HTTopicSnapshotTableViewDataSource.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+  <file original="feelgood/NSString+helperMethods.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="10" resname="tests" restype="string" datatype="x-objective-c">
-        <source>tests</source>
-        <target state="new">tests</target>
-      </trans-unit>
-      <trans-unit id="11" resname="treatments" restype="string" datatype="x-objective-c">
-        <source>treatments</source>
-        <target state="new">treatments</target>
-      </trans-unit>
-      <trans-unit id="12" resname="symptoms" restype="string" datatype="x-objective-c">
-        <source>symptoms</source>
-        <target state="new">symptoms</target>
-      </trans-unit>
-      <trans-unit id="13" resname="side effects" restype="string" datatype="x-objective-c">
-        <source>side effects</source>
-        <target state="new">side effects</target>
-      </trans-unit>
-      <trans-unit id="14" resname="uses" restype="string" datatype="x-objective-c">
-        <source>uses</source>
-        <target state="new">uses</target>
+      <trans-unit id="13" resname="anonymous" restype="string" datatype="x-objective-c">
+        <source>anonymous</source>
+        <target state="translated">anónimo</target>
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/HTSymptomTriageSelectBodyPartViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="15" resname="Thanks!{pre-number}1{post-number}symptom added." restype="string" datatype="x-objective-c">
-        <source>Thanks!{pre-number}1{post-number}symptom added.</source>
-        <target state="new">Thanks!{pre-number}1{post-number}symptom added.</target>
-        <note annotates="source">symptom triage 1 succesful symptom added banner text. "pre-number" represents text pre number and "post-number" what goes after the number. The number is always 1. No spaces between parts please.</note>
+      <trans-unit id="27" resname="expert" restype="string" datatype="x-objective-c">
+        <source>expert</source>
+        <target state="translated">experto</target>
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/HTSymptomTriageSearchViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+  <file original="feelgood/HTAppointmentLocationWarningPopupView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="16" resname="Are you sure you want to remove &quot;%@&quot;?" restype="string" datatype="x-objective-c">
-        <source>Are you sure you want to remove "%@"?</source>
-        <target state="new">Are you sure you want to remove "%@"?</target>
-        <note annotates="source">remove symptom confirmation message</note>
+      <trans-unit id="28" resname="Doctors can only provide advice, diagnosis, treatment, prescriptions to patients located where they are licensed to practice medicine." restype="string" datatype="x-objective-c">
+        <source>Doctors can only provide advice, diagnosis, treatment, prescriptions to patients located where they are licensed to practice medicine.</source>
+        <target state="translated">Los doctores sólo pueden brindar consejo, diagnóstico, tratamiento y recetas a los pacientes ubicados donde estén acreditados para ejercer la medicina.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/HTSymptomTriageDisclaimerViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+  <file original="feelgood/Data/FGChatPodiatristData.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="17" resname="The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. &quot;Dr. A.I.&quot; is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
-        <source>The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. "Dr. A.I." is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source>
-        <target state="new">The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. "Dr. A.I." is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</target>
-        <note annotates="source">Generic disclaimer message</note>
-      </trans-unit>
-      <trans-unit id="18" resname="&quot;Dr. A.I.&quot; is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have (or don&apos;t have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
-        <source>"Dr. A.I." is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have (or don't have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source>
-        <target state="new">"Dr. A.I." is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have (or don't have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</target>
-        <note annotates="source">Nondiagnosis disclaimer message</note>
+      <trans-unit id="39" resname="Find specialist" restype="string" datatype="x-objective-c">
+        <source>Find specialist</source>
+        <target state="translated">Encontrar especialista</target>
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/Data/FGT2DPersonalizeSliderQuestion.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+  <file original="feelgood/Classes/Util/FGHelpUtils.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="19" resname="%d&apos;%d&quot; (%.2fm)" restype="string" datatype="x-objective-c">
-        <source>%d'%d" (%.2fm)</source>
-        <target state="new">%d'%d" (%.2fm)</target>
+      <trans-unit id="44" resname="Afrikaans" restype="string" datatype="x-objective-c">
+        <source>Afrikaans</source>
+        <target state="translated">Afrikaans</target>
+      </trans-unit>
+      <trans-unit id="45" resname="Albanian" restype="string" datatype="x-objective-c">
+        <source>Albanian</source>
+        <target state="translated">Albanés</target>
+      </trans-unit>
+      <trans-unit id="46" resname="Amharic" restype="string" datatype="x-objective-c">
+        <source>Amharic</source>
+        <target state="translated">Amárico</target>
+      </trans-unit>
+      <trans-unit id="47" resname="Arabic" restype="string" datatype="x-objective-c">
+        <source>Arabic</source>
+        <target state="translated">Árabe</target>
+      </trans-unit>
+      <trans-unit id="48" resname="Armenian" restype="string" datatype="x-objective-c">
+        <source>Armenian</source>
+        <target state="translated">Armenio</target>
+      </trans-unit>
+      <trans-unit id="49" resname="Assamese" restype="string" datatype="x-objective-c">
+        <source>Assamese</source>
+        <target state="translated">Asamés</target>
+      </trans-unit>
+      <trans-unit id="50" resname="Aymara" restype="string" datatype="x-objective-c">
+        <source>Aymara</source>
+        <target state="translated">Aymara</target>
+      </trans-unit>
+      <trans-unit id="51" resname="Azeri" restype="string" datatype="x-objective-c">
+        <source>Azeri</source>
+        <target state="translated">Azerí</target>
+      </trans-unit>
+      <trans-unit id="52" resname="Belarusian" restype="string" datatype="x-objective-c">
+        <source>Belarusian</source>
+        <target state="translated">Bielorruso</target>
+      </trans-unit>
+      <trans-unit id="53" resname="Bengali" restype="string" datatype="x-objective-c">
+        <source>Bengali</source>
+        <target state="translated">Bengalí</target>
+      </trans-unit>
+      <trans-unit id="54" resname="Bislama" restype="string" datatype="x-objective-c">
+        <source>Bislama</source>
+        <target state="translated">Bislama</target>
+      </trans-unit>
+      <trans-unit id="55" resname="Bosnian" restype="string" datatype="x-objective-c">
+        <source>Bosnian</source>
+        <target state="translated">Bosnio</target>
+      </trans-unit>
+      <trans-unit id="56" resname="Bulgarian" restype="string" datatype="x-objective-c">
+        <source>Bulgarian</source>
+        <target state="translated">Búlgaro</target>
+      </trans-unit>
+      <trans-unit id="57" resname="Burmese" restype="string" datatype="x-objective-c">
+        <source>Burmese</source>
+        <target state="translated">Birmano</target>
+      </trans-unit>
+      <trans-unit id="58" resname="Catalan" restype="string" datatype="x-objective-c">
+        <source>Catalan</source>
+        <target state="translated">Catalán</target>
+      </trans-unit>
+      <trans-unit id="59" resname="Chinese" restype="string" datatype="x-objective-c">
+        <source>Chinese</source>
+        <target state="translated">Chino</target>
+      </trans-unit>
+      <trans-unit id="60" resname="Croatian" restype="string" datatype="x-objective-c">
+        <source>Croatian</source>
+        <target state="translated">Croata</target>
+      </trans-unit>
+      <trans-unit id="61" resname="Czech" restype="string" datatype="x-objective-c">
+        <source>Czech</source>
+        <target state="translated">Checo</target>
+      </trans-unit>
+      <trans-unit id="62" resname="Danish" restype="string" datatype="x-objective-c">
+        <source>Danish</source>
+        <target state="translated">Danés</target>
+      </trans-unit>
+      <trans-unit id="63" resname="Dari" restype="string" datatype="x-objective-c">
+        <source>Dari</source>
+        <target state="translated">Dari</target>
+      </trans-unit>
+      <trans-unit id="64" resname="Dhivehi" restype="string" datatype="x-objective-c">
+        <source>Dhivehi</source>
+        <target state="translated">Dhivehi</target>
+      </trans-unit>
+      <trans-unit id="65" resname="Dutch" restype="string" datatype="x-objective-c">
+        <source>Dutch</source>
+        <target state="translated">Holandés</target>
+      </trans-unit>
+      <trans-unit id="66" resname="Dzongkha" restype="string" datatype="x-objective-c">
+        <source>Dzongkha</source>
+        <target state="translated">Dzongkha</target>
+      </trans-unit>
+      <trans-unit id="67" resname="English" restype="string" datatype="x-objective-c">
+        <source>English</source>
+        <target state="translated">Inglés</target>
+      </trans-unit>
+      <trans-unit id="68" resname="Estonian" restype="string" datatype="x-objective-c">
+        <source>Estonian</source>
+        <target state="translated">Estonio</target>
+      </trans-unit>
+      <trans-unit id="69" resname="Fijian" restype="string" datatype="x-objective-c">
+        <source>Fijian</source>
+        <target state="translated">Fiyiano</target>
+      </trans-unit>
+      <trans-unit id="70" resname="Filipino" restype="string" datatype="x-objective-c">
+        <source>Filipino</source>
+        <target state="translated">Filipino</target>
+      </trans-unit>
+      <trans-unit id="71" resname="Finnish" restype="string" datatype="x-objective-c">
+        <source>Finnish</source>
+        <target state="translated">Finlandés</target>
+      </trans-unit>
+      <trans-unit id="72" resname="French" restype="string" datatype="x-objective-c">
+        <source>French</source>
+        <target state="translated">Francés</target>
+      </trans-unit>
+      <trans-unit id="73" resname="West Frisian" restype="string" datatype="x-objective-c">
+        <source>West Frisian</source>
+        <target state="translated">Frisón occidental</target>
+      </trans-unit>
+      <trans-unit id="74" resname="Gagauz" restype="string" datatype="x-objective-c">
+        <source>Gagauz</source>
+        <target state="translated">Gagauz</target>
+      </trans-unit>
+      <trans-unit id="75" resname="Georgian" restype="string" datatype="x-objective-c">
+        <source>Georgian</source>
+        <target state="translated">Georgiano</target>
+      </trans-unit>
+      <trans-unit id="76" resname="German" restype="string" datatype="x-objective-c">
+        <source>German</source>
+        <target state="translated">Alemán</target>
+      </trans-unit>
+      <trans-unit id="77" resname="Greek" restype="string" datatype="x-objective-c">
+        <source>Greek</source>
+        <target state="translated">Griego</target>
+      </trans-unit>
+      <trans-unit id="79" resname="Gujarati" restype="string" datatype="x-objective-c">
+        <source>Gujarati</source>
+        <target state="translated">Gujarati</target>
+      </trans-unit>
+      <trans-unit id="80" resname="Haitian Creole" restype="string" datatype="x-objective-c">
+        <source>Haitian Creole</source>
+        <target state="translated">Criollo haitiano</target>
+      </trans-unit>
+      <trans-unit id="81" resname="Hebrew" restype="string" datatype="x-objective-c">
+        <source>Hebrew</source>
+        <target state="translated">Hebreo</target>
+      </trans-unit>
+      <trans-unit id="82" resname="Hindi" restype="string" datatype="x-objective-c">
+        <source>Hindi</source>
+        <target state="translated">Hindi</target>
+      </trans-unit>
+      <trans-unit id="83" resname="Hiri Motu" restype="string" datatype="x-objective-c">
+        <source>Hiri Motu</source>
+        <target state="translated">Hiri Motu</target>
+      </trans-unit>
+      <trans-unit id="84" resname="Hungarian" restype="string" datatype="x-objective-c">
+        <source>Hungarian</source>
+        <target state="translated">Húngaro</target>
+      </trans-unit>
+      <trans-unit id="85" resname="Icelandic" restype="string" datatype="x-objective-c">
+        <source>Icelandic</source>
+        <target state="translated">Islandés</target>
+      </trans-unit>
+      <trans-unit id="86" resname="Indonesian" restype="string" datatype="x-objective-c">
+        <source>Indonesian</source>
+        <target state="translated">Indonesio</target>
+      </trans-unit>
+      <trans-unit id="87" resname="Irish Gaelic" restype="string" datatype="x-objective-c">
+        <source>Irish Gaelic</source>
+        <target state="translated">Gaélico irlandés</target>
+      </trans-unit>
+      <trans-unit id="88" resname="Italian" restype="string" datatype="x-objective-c">
+        <source>Italian</source>
+        <target state="translated">Italiano</target>
+      </trans-unit>
+      <trans-unit id="89" resname="Japanese" restype="string" datatype="x-objective-c">
+        <source>Japanese</source>
+        <target state="translated">Japonés</target>
+      </trans-unit>
+      <trans-unit id="90" resname="Kannada" restype="string" datatype="x-objective-c">
+        <source>Kannada</source>
+        <target state="translated">Kannada</target>
+      </trans-unit>
+      <trans-unit id="91" resname="Kashmiri" restype="string" datatype="x-objective-c">
+        <source>Kashmiri</source>
+        <target state="translated">Kashmiri</target>
+      </trans-unit>
+      <trans-unit id="92" resname="Kazakh" restype="string" datatype="x-objective-c">
+        <source>Kazakh</source>
+        <target state="translated">Kazajo</target>
+      </trans-unit>
+      <trans-unit id="93" resname="Khmer" restype="string" datatype="x-objective-c">
+        <source>Khmer</source>
+        <target state="translated">Camboyano</target>
+      </trans-unit>
+      <trans-unit id="94" resname="Korean" restype="string" datatype="x-objective-c">
+        <source>Korean</source>
+        <target state="translated">Coreano</target>
+      </trans-unit>
+      <trans-unit id="95" resname="Kurdish" restype="string" datatype="x-objective-c">
+        <source>Kurdish</source>
+        <target state="translated">Kurdo</target>
+      </trans-unit>
+      <trans-unit id="96" resname="Kyrgyz" restype="string" datatype="x-objective-c">
+        <source>Kyrgyz</source>
+        <target state="translated">Kirguís</target>
+      </trans-unit>
+      <trans-unit id="97" resname="Lao" restype="string" datatype="x-objective-c">
+        <source>Lao</source>
+        <target state="translated">Lao</target>
+      </trans-unit>
+      <trans-unit id="98" resname="Latvian" restype="string" datatype="x-objective-c">
+        <source>Latvian</source>
+        <target state="translated">Letón</target>
+      </trans-unit>
+      <trans-unit id="99" resname="Lithuanian" restype="string" datatype="x-objective-c">
+        <source>Lithuanian</source>
+        <target state="translated">Lituano</target>
+      </trans-unit>
+      <trans-unit id="100" resname="Luxembourgish" restype="string" datatype="x-objective-c">
+        <source>Luxembourgish</source>
+        <target state="translated">Luxemburgués</target>
+      </trans-unit>
+      <trans-unit id="101" resname="Macedonian" restype="string" datatype="x-objective-c">
+        <source>Macedonian</source>
+        <target state="translated">Macedonio</target>
+      </trans-unit>
+      <trans-unit id="102" resname="Malagasy" restype="string" datatype="x-objective-c">
+        <source>Malagasy</source>
+        <target state="translated">Malgache</target>
+      </trans-unit>
+      <trans-unit id="103" resname="Malay" restype="string" datatype="x-objective-c">
+        <source>Malay</source>
+        <target state="translated">Malayo</target>
+      </trans-unit>
+      <trans-unit id="104" resname="Malayalam" restype="string" datatype="x-objective-c">
+        <source>Malayalam</source>
+        <target state="translated">Malabar</target>
+      </trans-unit>
+      <trans-unit id="105" resname="Maltese" restype="string" datatype="x-objective-c">
+        <source>Maltese</source>
+        <target state="translated">Maltés</target>
+      </trans-unit>
+      <trans-unit id="107" resname="Marathi" restype="string" datatype="x-objective-c">
+        <source>Marathi</source>
+        <target state="translated">Marathi</target>
+      </trans-unit>
+      <trans-unit id="108" resname="Moldovan" restype="string" datatype="x-objective-c">
+        <source>Moldovan</source>
+        <target state="translated">Moldavo</target>
+      </trans-unit>
+      <trans-unit id="109" resname="Mongolian" restype="string" datatype="x-objective-c">
+        <source>Mongolian</source>
+        <target state="translated">Mongól</target>
+      </trans-unit>
+      <trans-unit id="110" resname="Montenegrin" restype="string" datatype="x-objective-c">
+        <source>Montenegrin</source>
+        <target state="translated">Montegrino</target>
+      </trans-unit>
+      <trans-unit id="111" resname="Ndebele" restype="string" datatype="x-objective-c">
+        <source>Ndebele</source>
+        <target state="translated">Ndebele</target>
+      </trans-unit>
+      <trans-unit id="112" resname="Nepali" restype="string" datatype="x-objective-c">
+        <source>Nepali</source>
+        <target state="translated">Nepalés</target>
+      </trans-unit>
+      <trans-unit id="113" resname="New Zealand Sign Language" restype="string" datatype="x-objective-c">
+        <source>New Zealand Sign Language</source>
+        <target state="translated">Lenguaje de Señas de Nueva Zelanda</target>
+      </trans-unit>
+      <trans-unit id="114" resname="Northern Sotho" restype="string" datatype="x-objective-c">
+        <source>Northern Sotho</source>
+        <target state="translated">Sesotho del Norte</target>
+      </trans-unit>
+      <trans-unit id="115" resname="Norwegian" restype="string" datatype="x-objective-c">
+        <source>Norwegian</source>
+        <target state="translated">Noruego</target>
+      </trans-unit>
+      <trans-unit id="116" resname="Oriya" restype="string" datatype="x-objective-c">
+        <source>Oriya</source>
+        <target state="translated">Oriya</target>
+      </trans-unit>
+      <trans-unit id="117" resname="Papiamento" restype="string" datatype="x-objective-c">
+        <source>Papiamento</source>
+        <target state="translated">Papicamento</target>
+      </trans-unit>
+      <trans-unit id="118" resname="Pashto" restype="string" datatype="x-objective-c">
+        <source>Pashto</source>
+        <target state="translated">Pastún</target>
+      </trans-unit>
+      <trans-unit id="119" resname="Persian" restype="string" datatype="x-objective-c">
+        <source>Persian</source>
+        <target state="translated">Persa</target>
+      </trans-unit>
+      <trans-unit id="120" resname="Polish" restype="string" datatype="x-objective-c">
+        <source>Polish</source>
+        <target state="translated">Polaco</target>
+      </trans-unit>
+      <trans-unit id="121" resname="Portuguese" restype="string" datatype="x-objective-c">
+        <source>Portuguese</source>
+        <target state="translated">Portugués</target>
+      </trans-unit>
+      <trans-unit id="122" resname="Punjabi" restype="string" datatype="x-objective-c">
+        <source>Punjabi</source>
+        <target state="translated">Panyabí</target>
+      </trans-unit>
+      <trans-unit id="123" resname="Quechua" restype="string" datatype="x-objective-c">
+        <source>Quechua</source>
+        <target state="translated">Qechua</target>
+      </trans-unit>
+      <trans-unit id="124" resname="Romanian" restype="string" datatype="x-objective-c">
+        <source>Romanian</source>
+        <target state="translated">Rumano</target>
+      </trans-unit>
+      <trans-unit id="125" resname="Russian" restype="string" datatype="x-objective-c">
+        <source>Russian</source>
+        <target state="translated">Ruso</target>
+      </trans-unit>
+      <trans-unit id="126" resname="Somali" restype="string" datatype="x-objective-c">
+        <source>Somali</source>
+        <target state="translated">Somalí</target>
+      </trans-unit>
+      <trans-unit id="127" resname="Sotho" restype="string" datatype="x-objective-c">
+        <source>Sotho</source>
+        <target state="translated">Sesotho</target>
+      </trans-unit>
+      <trans-unit id="128" resname="Spanish" restype="string" datatype="x-objective-c">
+        <source>Spanish</source>
+        <target state="translated">Español</target>
+      </trans-unit>
+      <trans-unit id="129" resname="Swahili" restype="string" datatype="x-objective-c">
+        <source>Swahili</source>
+        <target state="translated">Swahili</target>
+      </trans-unit>
+      <trans-unit id="130" resname="Swati" restype="string" datatype="x-objective-c">
+        <source>Swati</source>
+        <target state="translated">Swati</target>
+      </trans-unit>
+      <trans-unit id="131" resname="Swedish" restype="string" datatype="x-objective-c">
+        <source>Swedish</source>
+        <target state="translated">Sueco</target>
+      </trans-unit>
+      <trans-unit id="132" resname="Tajik" restype="string" datatype="x-objective-c">
+        <source>Tajik</source>
+        <target state="translated">Tajiko</target>
+      </trans-unit>
+      <trans-unit id="133" resname="Tamil" restype="string" datatype="x-objective-c">
+        <source>Tamil</source>
+        <target state="translated">Tamil</target>
+      </trans-unit>
+      <trans-unit id="134" resname="Telugu" restype="string" datatype="x-objective-c">
+        <source>Telugu</source>
+        <target state="translated">Télugu</target>
+      </trans-unit>
+      <trans-unit id="135" resname="Tetum" restype="string" datatype="x-objective-c">
+        <source>Tetum</source>
+        <target state="translated">Tetum</target>
+      </trans-unit>
+      <trans-unit id="136" resname="Thai" restype="string" datatype="x-objective-c">
+        <source>Thai</source>
+        <target state="translated">Tailandés</target>
+      </trans-unit>
+      <trans-unit id="137" resname="Tok Pisin" restype="string" datatype="x-objective-c">
+        <source>Tok Pisin</source>
+        <target state="translated">Tok pisin</target>
+      </trans-unit>
+      <trans-unit id="138" resname="Tsonga" restype="string" datatype="x-objective-c">
+        <source>Tsonga</source>
+        <target state="translated">Tsonga</target>
+      </trans-unit>
+      <trans-unit id="139" resname="Tswana" restype="string" datatype="x-objective-c">
+        <source>Tswana</source>
+        <target state="translated">Setsuana</target>
+      </trans-unit>
+      <trans-unit id="140" resname="Yiddish" restype="string" datatype="x-objective-c">
+        <source>Yiddish</source>
+        <target state="translated">Yidis</target>
       </trans-unit>
     </body>
   </file>
-  <file original="feelgood/Classes/Util/FGStringUtil.h" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+  <file original="feelgood/Classes/UI/Concierge/FGStateAbbreviator.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="20" resname="Thank you, your quick reply made me feel good!" restype="string" datatype="x-objective-c">
-        <source>Thank you, your quick reply made me feel good!</source>
-        <target state="new">Thank you, your quick reply made me feel good!</target>
+      <trans-unit id="142" resname="Alabama" restype="string" datatype="x-objective-c">
+        <source>Alabama</source>
+        <target state="translated">Alabama</target>
       </trans-unit>
-      <trans-unit id="22" resname="This saved my life. Thank you!" restype="string" datatype="x-objective-c">
-        <source>This saved my life. Thank you!</source>
-        <target state="new">This saved my life. Thank you!</target>
+      <trans-unit id="143" resname="Alaska" restype="string" datatype="x-objective-c">
+        <source>Alaska</source>
+        <target state="translated">Alaska</target>
+      </trans-unit>
+      <trans-unit id="144" resname="Arizona" restype="string" datatype="x-objective-c">
+        <source>Arizona</source>
+        <target state="translated">Arizona</target>
+      </trans-unit>
+      <trans-unit id="145" resname="Arkansas" restype="string" datatype="x-objective-c">
+        <source>Arkansas</source>
+        <target state="translated">Arkansas</target>
+      </trans-unit>
+      <trans-unit id="146" resname="California" restype="string" datatype="x-objective-c">
+        <source>California</source>
+        <target state="translated">California</target>
+      </trans-unit>
+      <trans-unit id="147" resname="Colorado" restype="string" datatype="x-objective-c">
+        <source>Colorado</source>
+        <target state="translated">Colorado</target>
+      </trans-unit>
+      <trans-unit id="148" resname="Connecticut" restype="string" datatype="x-objective-c">
+        <source>Connecticut</source>
+        <target state="translated">Connecticut</target>
+      </trans-unit>
+      <trans-unit id="150" resname="Delaware" restype="string" datatype="x-objective-c">
+        <source>Delaware</source>
+        <target state="translated">Delaware</target>
+      </trans-unit>
+      <trans-unit id="151" resname="Florida" restype="string" datatype="x-objective-c">
+        <source>Florida</source>
+        <target state="translated">Florida</target>
+      </trans-unit>
+      <trans-unit id="152" resname="Georgia" restype="string" datatype="x-objective-c">
+        <source>Georgia</source>
+        <target state="translated">Georgia</target>
+      </trans-unit>
+      <trans-unit id="153" resname="Hawaii" restype="string" datatype="x-objective-c">
+        <source>Hawaii</source>
+        <target state="translated">Hawaii</target>
+      </trans-unit>
+      <trans-unit id="154" resname="Idaho" restype="string" datatype="x-objective-c">
+        <source>Idaho</source>
+        <target state="translated">Idaho</target>
+      </trans-unit>
+      <trans-unit id="155" resname="Illinois" restype="string" datatype="x-objective-c">
+        <source>Illinois</source>
+        <target state="translated">Illinois</target>
+      </trans-unit>
+      <trans-unit id="156" resname="Indiana" restype="string" datatype="x-objective-c">
+        <source>Indiana</source>
+        <target state="translated">Indiana</target>
+      </trans-unit>
+      <trans-unit id="157" resname="Iowa" restype="string" datatype="x-objective-c">
+        <source>Iowa</source>
+        <target state="translated">Iowa</target>
+      </trans-unit>
+      <trans-unit id="158" resname="Kansas" restype="string" datatype="x-objective-c">
+        <source>Kansas</source>
+        <target state="translated">Kansas</target>
+      </trans-unit>
+      <trans-unit id="159" resname="Kentucky" restype="string" datatype="x-objective-c">
+        <source>Kentucky</source>
+        <target state="translated">Kentucky</target>
+      </trans-unit>
+      <trans-unit id="160" resname="Louisiana" restype="string" datatype="x-objective-c">
+        <source>Louisiana</source>
+        <target state="translated">Louisiana</target>
+      </trans-unit>
+      <trans-unit id="161" resname="Maine" restype="string" datatype="x-objective-c">
+        <source>Maine</source>
+        <target state="translated">Maine</target>
+      </trans-unit>
+      <trans-unit id="162" resname="Maryland" restype="string" datatype="x-objective-c">
+        <source>Maryland</source>
+        <target state="translated">Maryland</target>
+      </trans-unit>
+      <trans-unit id="163" resname="Massachusetts" restype="string" datatype="x-objective-c">
+        <source>Massachusetts</source>
+        <target state="translated">Massachusetts</target>
+      </trans-unit>
+      <trans-unit id="164" resname="Michigan" restype="string" datatype="x-objective-c">
+        <source>Michigan</source>
+        <target state="translated">Michigan</target>
+      </trans-unit>
+      <trans-unit id="165" resname="Minnesota" restype="string" datatype="x-objective-c">
+        <source>Minnesota</source>
+        <target state="translated">Minnesota</target>
+      </trans-unit>
+      <trans-unit id="166" resname="Mississippi" restype="string" datatype="x-objective-c">
+        <source>Mississippi</source>
+        <target state="translated">Mississippi</target>
+      </trans-unit>
+      <trans-unit id="167" resname="Missouri" restype="string" datatype="x-objective-c">
+        <source>Missouri</source>
+        <target state="translated">Missouri</target>
+      </trans-unit>
+      <trans-unit id="168" resname="Montana" restype="string" datatype="x-objective-c">
+        <source>Montana</source>
+        <target state="translated">Montana</target>
+      </trans-unit>
+      <trans-unit id="169" resname="Nebraska" restype="string" datatype="x-objective-c">
+        <source>Nebraska</source>
+        <target state="translated">Nebraska</target>
+      </trans-unit>
+      <trans-unit id="170" resname="Nevada" restype="string" datatype="x-objective-c">
+        <source>Nevada</source>
+        <target state="translated">Nevada</target>
+      </trans-unit>
+      <trans-unit id="172" resname="New Jersey" restype="string" datatype="x-objective-c">
+        <source>New Jersey</source>
+        <target state="translated">New Jersey</target>
+      </trans-unit>
+      <trans-unit id="173" resname="New Mexico" restype="string" datatype="x-objective-c">
+        <source>New Mexico</source>
+        <target state="translated">New Mexico</target>
+      </trans-unit>
+      <trans-unit id="174" resname="New York" restype="string" datatype="x-objective-c">
+        <source>New York</source>
+        <target state="translated">New York</target>
+      </trans-unit>
+      <trans-unit id="175" resname="North Carolina" restype="string" datatype="x-objective-c">
+        <source>North Carolina</source>
+        <target state="translated">North Carolina</target>
+      </trans-unit>
+      <trans-unit id="176" resname="North Dakota" restype="string" datatype="x-objective-c">
+        <source>North Dakota</source>
+        <target state="translated">North Dakota</target>
+      </trans-unit>
+      <trans-unit id="177" resname="Ohio" restype="string" datatype="x-objective-c">
+        <source>Ohio</source>
+        <target state="translated">Ohio</target>
+      </trans-unit>
+      <trans-unit id="178" resname="Oklahoma" restype="string" datatype="x-objective-c">
+        <source>Oklahoma</source>
+        <target state="translated">Oklahoma</target>
+      </trans-unit>
+      <trans-unit id="179" resname="Oregon" restype="string" datatype="x-objective-c">
+        <source>Oregon</source>
+        <target state="translated">Oregon</target>
+      </trans-unit>
+      <trans-unit id="180" resname="Pennsylvania" restype="string" datatype="x-objective-c">
+        <source>Pennsylvania</source>
+        <target state="translated">Pennsylvania</target>
+      </trans-unit>
+      <trans-unit id="181" resname="Rhode Island" restype="string" datatype="x-objective-c">
+        <source>Rhode Island</source>
+        <target state="translated">Rhode Island</target>
+      </trans-unit>
+      <trans-unit id="182" resname="South Carolina" restype="string" datatype="x-objective-c">
+        <source>South Carolina</source>
+        <target state="translated">South Carolina</target>
+      </trans-unit>
+      <trans-unit id="183" resname="South Dakota" restype="string" datatype="x-objective-c">
+        <source>South Dakota</source>
+        <target state="translated">South Dakota</target>
+      </trans-unit>
+      <trans-unit id="184" resname="Tennessee" restype="string" datatype="x-objective-c">
+        <source>Tennessee</source>
+        <target state="translated">Tennessee</target>
+      </trans-unit>
+      <trans-unit id="185" resname="Texas" restype="string" datatype="x-objective-c">
+        <source>Texas</source>
+        <target state="translated">Texas</target>
+      </trans-unit>
+      <trans-unit id="186" resname="Utah" restype="string" datatype="x-objective-c">
+        <source>Utah</source>
+        <target state="translated">Utah</target>
+      </trans-unit>
+      <trans-unit id="187" resname="Vermont" restype="string" datatype="x-objective-c">
+        <source>Vermont</source>
+        <target state="translated">Vermont</target>
+      </trans-unit>
+      <trans-unit id="188" resname="Virginia" restype="string" datatype="x-objective-c">
+        <source>Virginia</source>
+        <target state="translated">Virginia</target>
+      </trans-unit>
+      <trans-unit id="189" resname="Washington" restype="string" datatype="x-objective-c">
+        <source>Washington</source>
+        <target state="translated">Washington</target>
+      </trans-unit>
+      <trans-unit id="190" resname="West Virginia" restype="string" datatype="x-objective-c">
+        <source>West Virginia</source>
+        <target state="translated">West Virginia</target>
+      </trans-unit>
+      <trans-unit id="191" resname="Wisconsin" restype="string" datatype="x-objective-c">
+        <source>Wisconsin</source>
+        <target state="translated">Wisconsin</target>
+      </trans-unit>
+      <trans-unit id="192" resname="Wyoming" restype="string" datatype="x-objective-c">
+        <source>Wyoming</source>
+        <target state="translated">Wyoming</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGConciergeAppointmentReminderPopupView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="193" resname="Text chat" restype="string" datatype="x-objective-c">
+        <source>Text chat</source>
+        <target state="translated">Texto</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGChooseMessageConsultPreferenceViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="194" resname="Message Consult" restype="string" datatype="x-objective-c">
+        <source>Message Consult</source>
+        <target state="translated">Consulta de Mensaje</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/DSLCalendarView/DSLCalendarMonthSelectorView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="195" resname="S" restype="string" datatype="x-objective-c">
+        <source>S</source>
+        <target state="translated">D</target>
+        <note annotates="source">Day of the week: Sunday</note>
+      </trans-unit>
+      <trans-unit id="196" resname="M" restype="string" datatype="x-objective-c">
+        <source>M</source>
+        <target state="translated">L</target>
+        <note annotates="source">Day of the week: Monday</note>
+      </trans-unit>
+      <trans-unit id="197" resname="T" restype="string" datatype="x-objective-c">
+        <source>T</source>
+        <target state="translated">J</target>
+        <note annotates="source">Day of the week: Tuesday</note>
+      </trans-unit>
+      <trans-unit id="198" resname="W" restype="string" datatype="x-objective-c">
+        <source>W</source>
+        <target state="translated">Mi</target>
+        <note annotates="source">Day of the week: Wednesday</note>
+      </trans-unit>
+      <trans-unit id="200" resname="F" restype="string" datatype="x-objective-c">
+        <source>F</source>
+        <target state="translated">V</target>
+        <note annotates="source">Day of the week: Friday</note>
       </trans-unit>
     </body>
   </file>
