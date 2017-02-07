@@ -9624,11 +9624,11 @@
       </trans-unit>
       <trans-unit id="2100" resname="text_Have_this" restype="string" datatype="x-android-resource">
         <source>Have this</source>
-        <target>有这个</target>
+        <target>现有这情况</target>
       </trans-unit>
       <trans-unit id="2101" resname="text_No_longer_have_this" restype="string" datatype="x-android-resource">
         <source>No longer have this</source>
-        <target>不再采取这个</target>
+        <target>现在无但曾经有这情况</target>
       </trans-unit>
       <trans-unit id="2102" resname="hint_Email_address" restype="string" datatype="x-android-resource">
         <source>Email address</source>
