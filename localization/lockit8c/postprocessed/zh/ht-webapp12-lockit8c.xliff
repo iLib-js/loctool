@@ -39132,7 +39132,7 @@
     <body>
       <trans-unit id="9107" resname="Logging in" restype="string" datatype="javascript">
         <source>Logging in</source>
-        <target state="translated">登录中...</target>
+        <target state="translated">登录中</target>
       </trans-unit>
     </body>
   </file>
