@@ -63,6 +63,15 @@ for (var i = 0; i < units.length; i++) {
 	} else {
 		unit.target = unit.target.replace(/％\{/g, "%{");
 	}
+	
+	var targets = [
+	    "zh-Hans-CN",
+	    "es-US"
+	];
+	if (unit.sourceLocale !== "en-US" || targets.indexOf(unit.targetLocale) === -1) {
+		console.log("Error: unknown source or target locale: " + unit.sourceLocale + " " + unit.targetLocale);
+		console.log(JSON.stringify(unit));
+	}
 }
 
 console.log("Writing results");
