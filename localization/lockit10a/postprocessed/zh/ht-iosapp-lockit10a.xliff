@@ -1045,4 +1045,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Data/FGSearchResultQuestionUserAnswer.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Do you have a follow-up question?\n" restype="string" datatype="x-objective-c">
+        <source>Do you have a follow-up question?\n</source>
+        <target state="accepted">您还有后续问题吗?\n</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Send a secure message for expert advice" restype="string" datatype="x-objective-c">
+        <source>Send a secure message for expert advice</source>
+        <target state="accepted">发送保密信息来获得专业建议</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
