@@ -25343,7 +25343,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="5308" resname="r867893033" restype="string" datatype="ruby">
         <source>Healthier, happier workforce. Lower costs</source>
-        <target>更健康，更快乐的职工总数。更低的成本</target>
+        <target>更健康，更快乐的职工。更低的成本</target>
       </trans-unit>
       <trans-unit id="5309" resname="r95063595" restype="string" datatype="ruby">
         <source>Product tour</source>
@@ -33316,7 +33316,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="7335" resname="This saved my life. Thank you." restype="string" datatype="html">
         <source>This saved my life. Thank you.</source>
-        <target>这救了我的命。谢谢。</target>
+        <target>这挽救了我的生命。谢谢。</target>
       </trans-unit>
       <trans-unit id="7336" resname="/70" restype="string" datatype="html">
         <source>/70</source>
@@ -33336,7 +33336,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="7339" resname="Make this doctor&apos;s day! Send a thank you note to:" restype="string" datatype="html">
         <source>Make this doctor's day! Send a thank you note to:</source>
-        <target>使这名医生的一天更美好！发送一封感谢信到:</target>
+        <target>使这名医生的一天更美好！发送一封感谢信给:</target>
       </trans-unit>
     </body>
   </file>

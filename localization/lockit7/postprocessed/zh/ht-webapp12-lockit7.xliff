@@ -1979,7 +1979,7 @@
       </trans-unit>
       <trans-unit id="402" resname="r887055656" restype="string" datatype="ruby">
         <source>Lower absenteeism and presenteeism due to immediate, easy access to doctors.</source>
-        <target>由于可以立即容易的访问医生产生比较低的缺勤和出勤。</target>
+        <target>由于可以立即便捷地访问医生，降低缺勤率。</target>
       </trans-unit>
       <trans-unit id="403" resname="r210059061" restype="string" datatype="ruby">
         <source>Offer a unique, cutting-edge healthcare solution that other companies can’t.</source>
