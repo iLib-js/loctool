@@ -96,4 +96,20 @@
       </trans-unit>
     </body>
   </file>
+  <file original="public/feelGood/js/ui_modules.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="209" resname="It seems you&apos;re in a different state than your preferred pharmacy. " restype="string" datatype="javascript">
+        <source>It seems you're in a different state than your preferred pharmacy.</source>
+        <target state="new">看起来您选择的药房与您的当前地址不在同一个州</target>
+      </trans-unit>
+      <trans-unit id="210" resname="Please let us know your preferred pharmacy in {state}" restype="string" datatype="javascript">
+        <source>Please let us know your preferred pharmacy in {state}</source>
+        <target state="new">请选择您希望在 {state} 取药的药房</target>
+      </trans-unit>
+      <trans-unit id="211" resname="Update pharmacy" restype="string" datatype="javascript">
+        <source>Update pharmacy</source>
+        <target state="new">更新药房信息</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
