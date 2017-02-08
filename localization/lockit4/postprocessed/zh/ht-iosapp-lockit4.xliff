@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="2" resname="You&apos;re now following %@! " restype="string" datatype="x-objective-c">
         <source>You're now following %@!</source>
-        <target>您现在关注%@！</target>
+        <target>您现在正在关注%@！</target>
       </trans-unit>
     </body>
   </file>
@@ -220,7 +220,7 @@
       </trans-unit>
       <trans-unit id="42" resname="With over 2 billion answers served from more than 100 specialties" restype="string" datatype="x-objective-c">
         <source>With over 2 billion answers served from more than 100 specialties</source>
-        <target>过来自超过100个专科超过20亿条问题回答</target>
+        <target>来自超过100个专科超过20亿条问题回答</target>
       </trans-unit>
       <trans-unit id="43" resname="How people use HealthTap PRIME" restype="string" datatype="x-objective-c">
         <source>How people use HealthTap PRIME</source>
@@ -265,7 +265,7 @@
       </trans-unit>
       <trans-unit id="53" resname="“This app will change everything about healthcare.”" restype="string" datatype="x-objective-c">
         <source>“This app will change everything about healthcare.”</source>
-        <target>《这款应用程序将改变医疗保健的方方方面面》</target>
+        <target>《这款应用程序将改变医疗保健的方方面面》</target>
       </trans-unit>
     </body>
   </file>
@@ -297,7 +297,7 @@
     <body>
       <trans-unit id="58" resname="How does this work?" restype="string" datatype="x-objective-c">
         <source>How does this work?</source>
-        <target>这个怎么用？</target>
+        <target>它是怎么工作的？</target>
       </trans-unit>
     </body>
   </file>
@@ -418,7 +418,7 @@
       </trans-unit>
       <trans-unit id="82" resname="Free\nfor you" restype="string" datatype="x-objective-c">
         <source>Free\nfor you</source>
-        <target>完全\n免费</target>
+        <target>为您\n免费</target>
       </trans-unit>
       <trans-unit id="83" resname="Free for you" restype="string" datatype="x-objective-c">
         <source>Free for you</source>
@@ -482,7 +482,7 @@
       </trans-unit>
       <trans-unit id="98" resname="%@, %ld year in practice" restype="string" datatype="x-objective-c">
         <source>%@, %ld year in practice</source>
-        <target>%@, %ld 年诊疗</target>
+        <target>%@, %ld 年诊疗经验</target>
       </trans-unit>
     </body>
   </file>
@@ -701,14 +701,14 @@
 \u00B7 头痛\n\
 \u00B7 胃灼热（胃食管反流病或GERD）\n\
 \u00B7 流感\n\
-\u00B7 医疗清单解释\n\
+\u00B7 医疗检查单解释\n\
 \u00B7 虱子\n\
 \u00B7 鼻塞\n\
 \u00B7 恶心\n\
 \u00B7 鼻出血\n\
 \u00B7 尿疼痛\n\
 \u00B7 红眼病\n\
-\u00B7 毒橡树/毒藤\n\
+\u00B7 毒藤皮炎\n\
 \u00B7 皮疹\n\
 \u00B7 呼吸道感染\n\
 \u00B7 脚踝扭伤\n\
@@ -721,7 +721,7 @@
 \u00B7 上呼吸道感染\n\
 \u00B7 泌尿道感染\n\
 \u00B7 阴道瘙痒\n\
-\u00B7 酵母感染\n\n\何时不使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+\u00B7 酵母感染\n\n\何时不应使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -902,7 +902,7 @@
       </trans-unit>
       <trans-unit id="155" resname="Your Prime plan is now Pay-as-you-go, with a low monthly fee of $20 per month and $30 per consult." restype="string" datatype="x-objective-c">
         <source>Your Prime plan is now Pay-as-you-go, with a low monthly fee of $20 per month and $30 per consult.</source>
-        <target>您的Prime计划现在是即付即用，月度费用为每月20美元，每次咨询费为30美元。</target>
+        <target>您的Prime计划现在是随付随用，月度费用为每月20美元，每次咨询费为30美元。</target>
       </trans-unit>
       <trans-unit id="156" resname="Something went wrong" restype="string" datatype="x-objective-c">
         <source>Something went wrong</source>
@@ -918,7 +918,7 @@
       </trans-unit>
       <trans-unit id="159" resname="What would you be willing to pay?" restype="string" datatype="x-objective-c">
         <source>What would you be willing to pay?</source>
-        <target>您愿意支付什么？</target>
+        <target>您愿意支付多少？</target>
       </trans-unit>
       <trans-unit id="160" resname="Choose Speciality" restype="string" datatype="x-objective-c">
         <source>Choose Speciality</source>
@@ -946,7 +946,7 @@
     <body>
       <trans-unit id="165" resname="Message a doctor" restype="string" datatype="x-objective-c">
         <source>Message a doctor</source>
-        <target>通知 医生</target>
+        <target>给医生发消息</target>
       </trans-unit>
       <trans-unit id="166" resname="Would you like to attach a photo, video, or document?" restype="string" datatype="x-objective-c">
         <source>Would you like to attach a photo, video, or document?</source>
@@ -1231,7 +1231,7 @@
     <body>
       <trans-unit id="224" resname="For US Doctors" restype="string" datatype="x-objective-c">
         <source>For US Doctors</source>
-        <target>美国医生</target>
+        <target>为美国医生</target>
       </trans-unit>
       <trans-unit id="225" resname="Download" restype="string" datatype="x-objective-c">
         <source>Download</source>
@@ -1271,11 +1271,11 @@
     <body>
       <trans-unit id="231" resname="DD / MM / YEAR" restype="string" datatype="x-objective-c">
         <source>DD / MM / YEAR</source>
-        <target>DD / MM / YEAR</target>
+        <target>日日 / 月月 / 年年年年</target>
       </trans-unit>
       <trans-unit id="232" resname="MM / DD / YEAR" restype="string" datatype="x-objective-c">
         <source>MM / DD / YEAR</source>
-        <target>MM / DD / YEAR</target>
+        <target>月月 / 日日 / 年年年年</target>
       </trans-unit>
     </body>
   </file>
@@ -1283,7 +1283,7 @@
     <body>
       <trans-unit id="233" resname="Thank Review Team" restype="string" datatype="x-objective-c">
         <source>Thank Review Team</source>
-        <target>谢谢评论团队</target>
+        <target>谢谢审查团队</target>
       </trans-unit>
       <trans-unit id="234" resname="%@ and " restype="string" datatype="x-objective-c">
         <source>%@ and</source>
@@ -1291,7 +1291,7 @@
       </trans-unit>
       <trans-unit id="235" resname=" found it helpful" restype="string" datatype="x-objective-c">
         <source>found it helpful</source>
-        <target>有帮助</target>
+        <target>认为这有帮助</target>
       </trans-unit>
       <trans-unit id="236" resname="%@, %@ and " restype="string" datatype="x-objective-c">
         <source>%@, %@ and</source>
@@ -1299,11 +1299,11 @@
       </trans-unit>
       <trans-unit id="237" resname="appreciates " restype="string" datatype="x-objective-c">
         <source>appreciates</source>
-        <target>欣赏</target>
+        <target>感激</target>
       </trans-unit>
       <trans-unit id="238" resname="and the review team appreciate " restype="string" datatype="x-objective-c">
         <source>and the review team appreciate</source>
-        <target>问卷审阅团队很感激</target>
+        <target>审查团队很感激</target>
       </trans-unit>
     </body>
   </file>
@@ -1440,15 +1440,15 @@
       </trans-unit>
       <trans-unit id="267" resname="One moment while we connect to the doctor&apos;s video camera..." restype="string" datatype="x-objective-c">
         <source>One moment while we connect to the doctor's video camera...</source>
-        <target>当我们连接到医生的摄像机时…</target>
+        <target>请稍候，我们正在连接医生的摄像机…</target>
       </trans-unit>
       <trans-unit id="268" resname="One moment while we connect to the doctor&apos;s microphone..." restype="string" datatype="x-objective-c">
         <source>One moment while we connect to the doctor's microphone...</source>
-        <target>当我们连接到医生的麦克风时…</target>
+        <target>请稍候，我们正在连接医生的麦克风…</target>
       </trans-unit>
       <trans-unit id="269" resname="One moment while we connect to the doctor&apos;s text chat..." restype="string" datatype="x-objective-c">
         <source>One moment while we connect to the doctor's text chat...</source>
-        <target>我们连接到医生的文本聊天时，</target>
+        <target>请稍候，我们正在连接医生的文本聊天，</target>
       </trans-unit>
       <trans-unit id="270" resname="The patient has ended the consult." restype="string" datatype="x-objective-c">
         <source>The patient has ended the consult.</source>
@@ -1980,11 +1980,11 @@
     <body>
       <trans-unit id="368" resname="%@ is not yet available for virtual consults, however, you can send an invite to join HealthTap." restype="string" datatype="x-objective-c">
         <source>%@ is not yet available for virtual consults, however, you can send an invite to join HealthTap.</source>
-        <target>%@尚不可用于在线咨询，但是，您可以发送邀请以加入HealthTap。</target>
+        <target>%@现在无法进行在线咨询，但是，您可以发送邀请以加入HealthTap。</target>
       </trans-unit>
       <trans-unit id="369" resname="%@ is not available for virtual consults." restype="string" datatype="x-objective-c">
         <source>%@ is not available for virtual consults.</source>
-        <target>%@不适用于在线咨询。</target>
+        <target>%@无法进行在线咨询。</target>
       </trans-unit>
       <trans-unit id="370" resname="%@ is not licensed to practice medicine in %@, so is unavailable for consults." restype="string" datatype="x-objective-c">
         <source>%@ is not licensed to practice medicine in %@, so is unavailable for consults.</source>
@@ -1996,7 +1996,7 @@
       </trans-unit>
       <trans-unit id="372" resname=" (Licensed in %@)" restype="string" datatype="x-objective-c">
         <source>(Licensed in %@)</source>
-        <target>（在%@中具有执业资格）</target>
+        <target>（在%@具有执业资格）</target>
       </trans-unit>
       <trans-unit id="373" resname="Invited" restype="string" datatype="x-objective-c">
         <source>Invited</source>
@@ -2200,11 +2200,11 @@
     <body>
       <trans-unit id="414" resname="Yes disconnect" restype="string" datatype="x-objective-c">
         <source>Yes disconnect</source>
-        <target>是断开连接</target>
+        <target>是，断开连接</target>
       </trans-unit>
       <trans-unit id="415" resname="No I&apos;ll wait" restype="string" datatype="x-objective-c">
         <source>No I'll wait</source>
-        <target>没有我会等</target>
+        <target>不，我会等</target>
       </trans-unit>
     </body>
   </file>
@@ -2288,7 +2288,7 @@
     <body>
       <trans-unit id="429" resname="Is %@ pregnant?" restype="string" datatype="x-objective-c">
         <source>Is %@ pregnant?</source>
-        <target>是%@怀孕吗？</target>
+        <target>%@怀孕了吗？</target>
       </trans-unit>
       <trans-unit id="430" resname="What is %@&apos;s gender?" restype="string" datatype="x-objective-c">
         <source>What is %@'s gender?</source>
@@ -2376,7 +2376,7 @@
       </trans-unit>
       <trans-unit id="447" resname="More..." restype="string" datatype="x-objective-c">
         <source>More...</source>
-        <target>更多的...</target>
+        <target>更多...</target>
       </trans-unit>
       <trans-unit id="448" resname="Less..." restype="string" datatype="x-objective-c">
         <source>Less...</source>
@@ -2405,7 +2405,7 @@
     <body>
       <trans-unit id="451" resname="%@ appreciates your gratitude! " restype="string" datatype="x-objective-c">
         <source>%@ appreciates your gratitude!</source>
-        <target>%@ 感激您！</target>
+        <target>%@ 感激您的感谢！</target>
       </trans-unit>
       <trans-unit id="452" resname=" )" restype="string" datatype="x-objective-c">
         <source>)</source>
@@ -2529,7 +2529,7 @@
       </trans-unit>
       <trans-unit id="477" resname="%.0fyrs" restype="string" datatype="x-objective-c">
         <source>%.0fyrs</source>
-        <target>%.0fyrs</target>
+        <target>%.0f岁</target>
       </trans-unit>
     </body>
   </file>
@@ -2996,7 +2996,7 @@
     <body>
       <trans-unit id="564" resname=" doctors recommend" restype="string" datatype="x-objective-c">
         <source>doctors recommend</source>
-        <target>医生推荐</target>
+        <target>医生建议</target>
       </trans-unit>
       <trans-unit id="565" resname=" doctor recommends" restype="string" datatype="x-objective-c">
         <source>doctor recommends</source>
@@ -3044,15 +3044,15 @@
     <body>
       <trans-unit id="572" resname="%@ is gifting you 1 month FREE on Prime to help you live a healthier, happier life!" restype="string" datatype="x-objective-c">
         <source>%@ is gifting you 1 month FREE on Prime to help you live a healthier, happier life!</source>
-        <target>%@正在赠送您1个月免费Prime，以帮助您获得更健康，更快乐的生活！</target>
+        <target>%@赠送给您1个月免费Prime，以帮助您获得更健康，更快乐的生活！</target>
       </trans-unit>
       <trans-unit id="573" resname="%@ is gifting you $30 credit on Prime to help you live a healthier, happier life!" restype="string" datatype="x-objective-c">
         <source>%@ is gifting you $30 credit on Prime to help you live a healthier, happier life!</source>
-        <target>%@为您赠送30美元Prime积分，帮助您获得更健康，更幸福的生活！</target>
+        <target>%@赠送给您30美元Prime积分，帮助您获得更健康，更幸福的生活！</target>
       </trans-unit>
       <trans-unit id="574" resname="%@ is gifting you $5 off to talk to HealthTap doctors" restype="string" datatype="x-objective-c">
         <source>%@ is gifting you $5 off to talk to HealthTap doctors</source>
-        <target>%@为您赠送5美元，与HealthTap医生交谈</target>
+        <target>%@赠送给您5美元，与HealthTap医生交谈</target>
       </trans-unit>
       <trans-unit id="575" resname="Sign Up for HealthTap Prime - 24/7 access to doctors! Use this link and get a 1 month FREE trial." restype="string" datatype="x-objective-c">
         <source>Sign Up for HealthTap Prime - 24/7 access to doctors! Use this link and get a 1 month FREE trial.</source>
@@ -3105,11 +3105,11 @@
       </trans-unit>
       <trans-unit id="583" resname=" Have this" restype="string" datatype="x-objective-c">
         <source>Have this</source>
-        <target>存在这种</target>
+        <target>有这个</target>
       </trans-unit>
       <trans-unit id="584" resname=" No longer have this" restype="string" datatype="x-objective-c">
         <source>No longer have this</source>
-        <target>不再这样</target>
+        <target>不再有这个</target>
       </trans-unit>
       <trans-unit id="585" resname="Optional Notes (e.g, severity and nature of condition, previous dates of occurrence)" restype="string" datatype="x-objective-c">
         <source>Optional Notes (e.g, severity and nature of condition, previous dates of occurrence)</source>
@@ -3173,11 +3173,11 @@
     <body>
       <trans-unit id="596" resname="%d years in practice" restype="string" datatype="x-objective-c">
         <source>%d years in practice</source>
-        <target>%d年诊疗</target>
+        <target>%d年诊疗经验</target>
       </trans-unit>
       <trans-unit id="597" resname="%d year in practice" restype="string" datatype="x-objective-c">
         <source>%d year in practice</source>
-        <target>%d年诊疗</target>
+        <target>%d年诊疗经验</target>
       </trans-unit>
     </body>
   </file>
@@ -3265,7 +3265,7 @@
       </trans-unit>
       <trans-unit id="614" resname="is not available for Virtual Consult\n\nThis may change, but in the mean time, you may consider consulting one of our other top doctors:\n" restype="string" datatype="x-objective-c">
         <source>is not available for Virtual Consult\n\nThis may change, but in the mean time, you may consider consulting one of our other top doctors:\n</source>
-        <target>不适用于在线咨询\n\n这可能会更改，但在此期间，您可以考虑咨询我们其他的顶级医生：\n</target>
+        <target>现在无法进行在线咨询\n\n这可能会更改，但在此期间，您可以考虑咨询我们其他的顶级医生：\n</target>
       </trans-unit>
       <trans-unit id="615" resname="will only be able to provide you with general information or a second opinion on an existing diagnosis or treatment plan from your doctor." restype="string" datatype="x-objective-c">
         <source>will only be able to provide you with general information or a second opinion on an existing diagnosis or treatment plan from your doctor.</source>
@@ -4031,7 +4031,7 @@
     <body>
       <trans-unit id="728" resname="unY-OG-63U.text" restype="string" datatype="x-xib">
         <source>MM/YY        CVV</source>
-        <target>MM/YY        CVV</target>
+        <target>月月/年年        CVV</target>
         <note annotates="source">Class = "UITextView"; text = "  MM/YY        CVV"; ObjectID = "unY-OG-63U";</note>
       </trans-unit>
     </body>
@@ -4058,22 +4058,22 @@
     <body>
       <trans-unit id="731" resname="XoB-sm-Jcb.normalTitle" restype="string" datatype="x-xib">
         <source>Have this</source>
-        <target>存在这种</target>
+        <target>有这个</target>
         <note annotates="source">Class = "UIButton"; normalTitle = " Have this"; ObjectID = "XoB-sm-Jcb";</note>
       </trans-unit>
       <trans-unit id="732" resname="XoB-sm-Jcb.selectedTitle" restype="string" datatype="x-xib">
         <source>Have this</source>
-        <target>存在这种</target>
+        <target>没有这个</target>
         <note annotates="source">Class = "UIButton"; selectedTitle = " Have this"; ObjectID = "XoB-sm-Jcb";</note>
       </trans-unit>
       <trans-unit id="733" resname="eXo-Lg-cIZ.normalTitle" restype="string" datatype="x-xib">
         <source>No longer have this</source>
-        <target>不再这样</target>
+        <target>不再有这个</target>
         <note annotates="source">Class = "UIButton"; normalTitle = " No longer have this"; ObjectID = "eXo-Lg-cIZ";</note>
       </trans-unit>
       <trans-unit id="734" resname="eXo-Lg-cIZ.selectedTitle" restype="string" datatype="x-xib">
         <source>No longer have this</source>
-        <target>不再这样</target>
+        <target>不再有这个</target>
         <note annotates="source">Class = "UIButton"; selectedTitle = " No longer have this"; ObjectID = "eXo-Lg-cIZ";</note>
       </trans-unit>
     </body>
