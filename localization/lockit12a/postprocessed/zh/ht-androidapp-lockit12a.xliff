@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="3" resname="r32892148" restype="string" datatype="java">
         <source>You're now following "{topic_name}"</source>
-        <target state="new">你现在关注了 "{topic_name}"</target>
+        <target state="translated">你现在关注了 "{topic_name}"</target>
       </trans-unit>
     </body>
   </file>
@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="4" resname="r440805493" restype="string" datatype="java">
         <source>You're now following the topic "{0}"!</source>
-        <target state="new">你现在关注了此专题 "{0}"!</target>
+        <target state="translated">你现在关注了此专题 "{0}"!</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
     </body>
@@ -21,7 +21,7 @@
     <body>
       <trans-unit id="5" resname="r780459903" restype="string" datatype="java">
         <source>You're now following "{0}"</source>
-        <target state="new">你现在关注了 "{0}"</target>
+        <target state="translated">你现在关注了 "{0}"</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
     </body>
@@ -39,30 +39,6 @@
       <trans-unit id="9" resname="deactivate" restype="string" datatype="x-android-resource">
         <source>Deactivate</source>
         <target>取消账户</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="app/views/b2b/partial/_compass_phones.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="59" resname="r797088921" restype="string" datatype="ruby">
-        <source>Expert</source>
-        <target state="new">专家</target>
-      </trans-unit>
-      <trans-unit id="60" resname="r337038770" restype="string" datatype="ruby">
-        <source>Personalized</source>
-        <target state="new">个性化</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="app/views/virtualdhb/patients.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="1" resname="r576817317" restype="string" datatype="ruby">
-        <source>Clinician</source>
-        <target state="new">临床医生</target>
-      </trans-unit>
-      <trans-unit id="2" resname="r1036965404" restype="string" datatype="ruby">
-        <source>Personalised</source>
-        <target state="new">个性化</target>
       </trans-unit>
     </body>
   </file>
