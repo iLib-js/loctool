@@ -870,11 +870,11 @@
       </trans-unit>
       <trans-unit id="147" resname="Subscribe for you and %i other" restype="string" datatype="x-objective-c">
         <source>Subscribe for you and %i other</source>
-        <target>订购您和%i其他</target>
+        <target>为您和其他%i人订购</target>
       </trans-unit>
       <trans-unit id="148" resname="Subscribe for you and %i others" restype="string" datatype="x-objective-c">
         <source>Subscribe for you and %i others</source>
-        <target>订购您和%i其他</target>
+        <target>为您和其他%i人订购</target>
       </trans-unit>
       <trans-unit id="149" resname="Keep your plan" restype="string" datatype="x-objective-c">
         <source>Keep your plan</source>
