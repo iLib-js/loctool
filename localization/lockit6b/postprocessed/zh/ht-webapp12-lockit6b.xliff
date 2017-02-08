@@ -2870,7 +2870,7 @@
       </trans-unit>
       <trans-unit id="2442" resname="r209694489" restype="string" datatype="x-haml">
         <source>to provide a smart solution to this big,</source>
-        <target state="translated">为解决这个大问题我们提供了一个聪明的解决方法，</target>
+        <target state="translated">为这个大问题提供了一个聪明的解决方法，</target>
       </trans-unit>
       <trans-unit id="2443" resname="r473758986" restype="string" datatype="x-haml">
         <source>We created</source>
@@ -2878,7 +2878,7 @@
       </trans-unit>
       <trans-unit id="2444" resname="r511267498" restype="string" datatype="x-haml">
         <source>is one of these rare services with the potential to serve 100 percent</source>
-        <target state="translated">提供这些有可能服务于</target>
+        <target state="translated">提供这些服务于</target>
       </trans-unit>
     </body>
   </file>
