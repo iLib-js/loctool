@@ -3176,7 +3176,7 @@
       </trans-unit>
       <trans-unit id="695" resname="and &lt;%=episode.number_of_files%&gt;&lt;%=episode.number_of_files == 1 ? &apos;file&apos; : &apos;files&apos;%&gt; with" restype="string" datatype="html">
         <source>and &lt;%=episode.number_of_files%&gt;&lt;%=episode.number_of_files == 1 ? 'file' : 'files'%&gt; with</source>
-        <target>和&lt;%=episode.number_of_files%&gt;&lt;%=episode.number_of_files == 1 ? 'file' : 'files'%&gt; 与</target>
+        <target>和&lt;%=episode.number_of_files%&gt;文件与</target>
       </trans-unit>
       <trans-unit id="696" resname="with" restype="string" datatype="html">
         <source>with</source>
@@ -24488,7 +24488,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
     <body>
       <trans-unit id="4684" resname="I&apos;d like to refer you to&lt;%= HMO_provider ? (&apos; the following specialist. As a member of &apos; + HMO_provider + &apos;, please first check with your primary care physician before seeing this specialist&apos;) : &apos;&apos; %&gt;:" restype="string" datatype="html">
         <source>I'd like to refer you to&lt;%= HMO_provider ? (' the following specialist. As a member of ' + HMO_provider + ', please first check with your primary care physician before seeing this specialist') : '' %&gt;:</source>
-        <target>我希望转诊您到 &lt;%= HMO_provider ? (' 关注中的专家作为一名’HMO_provider % + ‘的会员，请在问诊这名专家前先与您的普通门诊医师确认。'' %&gt;:</target>
+        <target>我希望转诊您到 &lt;%= HMO_provider ? (' 关注中一名' + HMO_provider + '的专家，请在问诊这名专家前先与您的普通门诊医师确认。') : '' %&gt;:</target>
       </trans-unit>
       <trans-unit id="4685" resname="Call:" restype="string" datatype="html">
         <source>Call:</source>

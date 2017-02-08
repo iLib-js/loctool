@@ -6440,7 +6440,7 @@ accepted</source>
       </trans-unit>
       <trans-unit id="%@ appreciates your support. How are you doing on your checklist for %@?" resname="%@ appreciates your support. How are you doing on your checklist for %@?" restype="string" datatype="x-objective-c">
         <source>%1$@ appreciates your support. How are you doing on your checklist for %2$@?</source>
-        <target>%1$@ 感谢您的支持。您在%2 $ @的做得怎么样？</target>
+        <target>%1$@ 感谢您的支持。您在%2$@的做得怎么样？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ appreciates your support. How are you doing on your checklist?" resname="%@ appreciates your support. How are you doing on your checklist?" restype="string" datatype="x-objective-c">
@@ -6544,7 +6544,7 @@ accepted</source>
       </trans-unit>
       <trans-unit id="%@ is incredibly grateful for your support! Getting healthy is awesome. How are you doing on your checklist for %@?" resname="%@ is incredibly grateful for your support! Getting healthy is awesome. How are you doing on your checklist for %@?" restype="string" datatype="x-objective-c">
         <source>%1$@ is incredibly grateful for your support! Getting healthy is awesome. How are you doing on your checklist for %2$@?</source>
-        <target>%1$@ 非常感谢您的支持！健康真棒。您在%2 $ @的做得怎么样？</target>
+        <target>%1$@ 非常感谢您的支持！健康真棒。您在%2$@的做得怎么样？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ is incredibly grateful for your support! Getting healthy is awesome. Why not try for a health goal yourself?" resname="%@ is incredibly grateful for your support! Getting healthy is awesome. Why not try for a health goal yourself?" restype="string" datatype="x-objective-c">
@@ -9581,7 +9581,7 @@ members in your area are experiencing %2$@. How can our doctors help you?</sourc
       </trans-unit>
       <trans-unit id="How would you classify %@&apos;s consumption of alcohol?" resname="How would you classify %@&apos;s consumption of alcohol?" restype="string" datatype="x-objective-c">
         <source>How would you classify %@'s consumption of alcohol?</source>
-        <target>您如何分类%@'s的酒精摄入量？</target>
+        <target>您如何分类%@的酒精摄入量？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="How would you classify your consumption of alcohol?" resname="How would you classify your consumption of alcohol?" restype="string" datatype="x-objective-c">
@@ -10502,7 +10502,7 @@ educational answers</source>
       </trans-unit>
       <trans-unit id="Only $%.2f" resname="Only $%.2f" restype="string" datatype="x-objective-c">
         <source>Only $%.2f</source>
-        <target>只要% .2f</target>
+        <target>只要%.2f</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Optional Notes (e.g. date and nature of last reaction, severity and frequency of reactions)" resname="Optional Notes (e.g. date and nature of last reaction, severity and frequency of reactions)" restype="string" datatype="x-objective-c">
