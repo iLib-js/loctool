@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="6" resname="r465894884" restype="string" datatype="x-android-resource">
         <source>Test Name:</source>
-        <target state="translated">测试姓名：</target>
+        <target state="translated">测试名称：</target>
       </trans-unit>
       <trans-unit id="8" resname="r704587734" restype="string" datatype="x-android-resource">
         <source>Current Version:</source>
@@ -113,11 +113,11 @@
       </trans-unit>
       <trans-unit id="51" resname="r843399816" restype="string" datatype="x-android-resource">
         <source>There are no checklists for this goal yet.\nWant a personalized checklist?</source>
-        <target state="translated">没有这个目标的清单。\n想要专属于您的清单吗？</target>
+        <target state="translated">尚无此目标清单。\n想要专属于您的清单吗？</target>
       </trans-unit>
       <trans-unit id="53" resname="r410094745" restype="string" datatype="x-android-resource">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target state="translated">您有后续问题吗？立即在线询问医生：</target>
+        <target state="translated">您有随访问题吗？立即在线咨询医生：</target>
       </trans-unit>
       <trans-unit id="54" resname="r475478276" restype="string" datatype="x-android-resource">
         <source>{name}'s</source>
@@ -161,7 +161,7 @@
       </trans-unit>
       <trans-unit id="66" resname="r482433768" restype="string" datatype="x-android-resource">
         <source>How would you classify {first_name}'s consumption of alcohol?</source>
-        <target state="translated">您认为{first_name}的酒量如何？</target>
+        <target state="translated">您如何分类{first_name}的酒精摄入量？</target>
       </trans-unit>
       <trans-unit id="68" resname="r287900893" restype="string" datatype="x-android-resource">
         <source>Thank you!</source>

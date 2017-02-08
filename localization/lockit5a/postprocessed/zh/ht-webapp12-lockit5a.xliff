@@ -10646,7 +10646,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="13974" resname="Never mind " restype="string" datatype="javascript">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
     </body>
   </file>

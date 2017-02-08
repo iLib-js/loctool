@@ -20,7 +20,7 @@
     <body>
       <trans-unit id="3" resname="text__doctor_reviews" restype="string" datatype="x-android-resource">
         <source>doctor reviews</source>
-        <target>医生评论</target>
+        <target>医生审查</target>
       </trans-unit>
     </body>
   </file>
@@ -36,7 +36,7 @@
     <body>
       <trans-unit id="5" resname="text_Available_now" restype="string" datatype="x-android-resource">
         <source>Available now</source>
-        <target>在线</target>
+        <target>现在在线</target>
       </trans-unit>
     </body>
   </file>
@@ -377,7 +377,7 @@
     <body>
       <trans-unit id="69" resname="r465894884" restype="string" datatype="java">
         <source>Test Name:</source>
-        <target>测试姓名：</target>
+        <target>测试名称：</target>
       </trans-unit>
     </body>
   </file>
@@ -975,7 +975,7 @@
       </trans-unit>
       <trans-unit id="177" resname="r828194376" restype="string" datatype="java">
         <source>Message consult</source>
-        <target>短信咨询</target>
+        <target>发送消息咨询</target>
       </trans-unit>
       <trans-unit id="178" resname="r879878872" restype="string" datatype="java">
         <source>-${price}</source>
@@ -1035,7 +1035,7 @@
       </trans-unit>
       <trans-unit id="190" resname="r942559806" restype="string" datatype="java">
         <source>(${original_price} regularly - ${credits} in credits)</source>
-        <target>(${original_price} 正常费用- ${credits} 余额)</target>
+        <target>(${original_price} 正常费用 - ${credits} 余额)</target>
       </trans-unit>
       <trans-unit id="191" resname="r95353935" restype="string" datatype="java">
         <source>($%s regularly)</source>
@@ -1183,11 +1183,11 @@
     <body>
       <trans-unit id="218" resname="r854757057" restype="string" datatype="java">
         <source>Failed to get request token</source>
-        <target>无法获取请求令牌</target>
+        <target>无法获取请求代币</target>
       </trans-unit>
       <trans-unit id="219" resname="r816182285" restype="string" datatype="java">
         <source>Failed to get access token</source>
-        <target>无法获取访问令牌</target>
+        <target>无法获取访问代币</target>
       </trans-unit>
     </body>
   </file>
@@ -1290,7 +1290,7 @@
     <body>
       <trans-unit id="237" resname="r724989430" restype="string" datatype="java">
         <source>Procedures in your profile</source>
-        <target>在您个人资料中的临床操作</target>
+        <target>您个人资料中的临床操作</target>
       </trans-unit>
       <trans-unit id="238" resname="r16766574" restype="string" datatype="java">
         <source>All procedures</source>
@@ -1374,11 +1374,11 @@
       </trans-unit>
       <trans-unit id="250" resname="r436261634" restype="string" datatype="java">
         <source>{doctor_name}, {sharer_name} {start}found this helpful{end}</source>
-        <target>{doctor_name}, {sharer_name} {start}认为这有帮助{end}</target>
+        <target>{doctor_name}, {sharer_name} {start}发现这有帮助{end}</target>
       </trans-unit>
       <trans-unit id="251" resname="r858107784" restype="string" datatype="java">
         <source>{sharer_name} {start}found this helpful{end}</source>
-        <target>{sharer_name} {start}认为这有帮助{end}</target>
+        <target>{sharer_name} {start}发现这有帮助{end}</target>
       </trans-unit>
     </body>
   </file>
@@ -1422,11 +1422,11 @@
     <body>
       <trans-unit id="257" resname="r140625167" restype="string" datatype="java">
         <source>Referral Link</source>
-        <target>推介链接</target>
+        <target>转诊链接</target>
       </trans-unit>
       <trans-unit id="258" resname="r201354363" restype="string" datatype="java">
         <source>Referral link copied!</source>
-        <target>推介链接已复制！</target>
+        <target>转诊链接已复制！</target>
       </trans-unit>
       <trans-unit id="259" resname="r909283218" restype="string" datatype="java">
         <source>Can't find an application for SMS</source>
@@ -1446,7 +1446,7 @@
       </trans-unit>
       <trans-unit id="262" resname="r584966709" restype="string" datatype="java">
         <source>Suggested doctors for you</source>
-        <target>为您建议的医生</target>
+        <target>相关医生推荐</target>
       </trans-unit>
       <trans-unit id="263" resname="r828138216" restype="string" datatype="java">
         <source>Consults and Answers</source>
@@ -1482,7 +1482,7 @@
       </trans-unit>
       <trans-unit id="268" resname="r56571927" restype="string" datatype="java">
         <source>Search by specialty</source>
-        <target>通过专科搜索</target>
+        <target>按专科搜索</target>
       </trans-unit>
     </body>
   </file>
@@ -1530,7 +1530,7 @@
       </trans-unit>
       <trans-unit id="276" resname="r36845865" restype="string" datatype="java">
         <source>HealthTap Honor</source>
-        <target>HealthTap荣誉</target>
+        <target>HealthTap荣耀</target>
       </trans-unit>
     </body>
   </file>
@@ -1806,7 +1806,7 @@
     <body>
       <trans-unit id="327" resname="r1046176237" restype="string" datatype="java">
         <source>Never mind</source>
-        <target>算了, 暂不</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">This is used to dismiss a popup dialog.</note>
       </trans-unit>
     </body>
@@ -1855,7 +1855,7 @@
       </trans-unit>
       <trans-unit id="340" resname="r1022238927" restype="string" datatype="java">
         <source>By continuing, you understand the {start1}Guidelines{end1} for Virtual Consults and agree to the {start2}Terms{end2}.</source>
-        <target>继续使用，表示您了解在线咨询的{start1}指南{end1}并同意{start2}条款{end2}。</target>
+        <target>如果继续，默认您已阅读并接受在线咨询的{start1}协议{end1}和{start2}条款{end2}。</target>
         <note annotates="source">make sure '{start1}', '{end1}' and '{start2}', '{end2}' are surrounding the translated words 'Guidelines' and 'Terms' respectively.</note>
       </trans-unit>
       <trans-unit id="341" resname="r996432451" restype="string" datatype="java">
@@ -1892,7 +1892,7 @@
     <body>
       <trans-unit id="337" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target>算了, 暂不</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">This is used to dismiss a popup dialog.</note>
       </trans-unit>
       <trans-unit id="469" resname="r856768157" restype="string" datatype="java">
@@ -1960,7 +1960,7 @@
       </trans-unit>
       <trans-unit id="348" resname="r588782950" restype="string" datatype="java">
         <source>{doctor_name} is licensed to see patients in {states}.</source>
-        <target>{doctor_name}具备在{states}为患者诊疗的执业资格。</target>
+        <target>{doctor_name}在{states}拥有诊疗执业执照。</target>
       </trans-unit>
       <trans-unit id="349" resname="r23201581" restype="string" datatype="java">
         <source>Type your location</source>
@@ -1972,7 +1972,7 @@
       </trans-unit>
       <trans-unit id="351" resname="r261042682" restype="string" datatype="java">
         <source>{docname} will only be able to provide you with a second opinion on an existing diagnosis or treatment plan from your own doctor. {docname} cannot treat or diagnose you during this consult.\nIf you'd like a new diagnosis or treatment, try consulting one of our top doctors licensed in your state.</source>
-        <target>{docname}将只能够为您提供和来自您自己医生的现有诊断或治疗计划有关的第二意见。{docname}无法在此次咨询期间为您进行治疗或诊断。\n如果您希望接受新的诊断或治疗，请尝试向我们在您所在州具备执业资格的顶级医生进行咨询。</target>
+        <target>{docname}将只能够为您提供和来自您自己医生的现有诊断或治疗计划有关的第二意见。{docname}无法在此次咨询期间为您进行治疗或诊断。\n如果您希望接受新的诊断或治疗，请尝试向我们在您所在州拥有执业执照的顶级医生进行咨询。</target>
       </trans-unit>
       <trans-unit id="352" resname="r201775100" restype="string" datatype="java">
         <source>Here are some doctors from {state} you could connect with:</source>
@@ -1988,11 +1988,11 @@
       </trans-unit>
       <trans-unit id="355" resname="r701380780" restype="string" datatype="java">
         <source>{docname} is currently licensed to see patients in {states} and anywhere outside the US</source>
-        <target>{docname}当前具备在{states}和美国以外地区为患者进行诊疗的执业资格</target>
+        <target>{docname}当前在{states}和美国以外地区拥有诊疗执业执照</target>
       </trans-unit>
       <trans-unit id="356" resname="r635460755" restype="string" datatype="java">
         <source>{doctor_name} is only licensed to see patients in {states}. You may still request to connect, however you will only be able to consult {doctor_name} when you are traveling to one of these locations.</source>
-        <target>{doctor_name}仅在{states}具备诊疗执业资格。您仍然可以请求咨询，但是只有当您前往这些州时才能咨询{doctor_name}。</target>
+        <target>{doctor_name}仅在{states}拥有诊疗执业执照。您仍然可以请求咨询，但是只有当您前往这些州时才能咨询{doctor_name}。</target>
       </trans-unit>
     </body>
   </file>
@@ -2128,7 +2128,7 @@
     <body>
       <trans-unit id="382" resname="r747172322" restype="string" datatype="java">
         <source>Suggested Apps</source>
-        <target>推荐的应用程序</target>
+        <target>相关应用程序推荐</target>
       </trans-unit>
       <trans-unit id="383" resname="r715695906" restype="string" datatype="java">
         <source>Search results for {search_text}</source>
@@ -2148,7 +2148,7 @@
     <body>
       <trans-unit id="385" resname="r843399816" restype="string" datatype="java">
         <source>There are no checklists for this goal yet.\nWant a personalized checklist?</source>
-        <target>没有此目标的清单。\n想要专属于您的清单吗？</target>
+        <target>尚无此目标清单。\n想要专属于您的清单吗？</target>
       </trans-unit>
       <trans-unit id="386" resname="r987877798" restype="string" datatype="java">
         <source>Checklists</source>
@@ -2212,7 +2212,7 @@
       </trans-unit>
       <trans-unit id="395" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target>您有后续问题吗？立即在线询问医生：</target>
+        <target>您有随访问题吗？立即在线咨询医生：</target>
       </trans-unit>
       <trans-unit id="396" resname="r129012652" restype="string" datatype="java">
         <source>Answer assisted by Medical Student {name}</source>
@@ -2270,7 +2270,7 @@
       </trans-unit>
       <trans-unit id="406" resname="r145244118" restype="string" datatype="java">
         <source>checklist from your</source>
-        <target>清单来自您的</target>
+        <target>您的清单</target>
       </trans-unit>
       <trans-unit id="407" resname="r343285203" restype="string" datatype="java">
         <source>Private Consult</source>
@@ -2327,11 +2327,11 @@
     <body>
       <trans-unit id="417" resname="r762668460" restype="string" datatype="java">
         <source>{reviewer_name} and {influencer_name} found this helpful</source>
-        <target>{reviewer_name}和{influencer_name}找到这些有帮助的</target>
+        <target>{reviewer_name}和{influencer_name}发现这有帮助</target>
       </trans-unit>
       <trans-unit id="418" resname="r519237633" restype="string" datatype="java">
         <source>{reviewer_name} found this helpful</source>
-        <target>{reviewer_name}找到这些有帮助的</target>
+        <target>{reviewer_name}发现这有帮助</target>
       </trans-unit>
     </body>
   </file>
@@ -2502,7 +2502,7 @@
       </trans-unit>
       <trans-unit id="452" resname="r67767556" restype="string" datatype="java">
         <source>Please provide valid phone number</source>
-        <target>请提供有效的手机号码</target>
+        <target>请提供有效的电话号码</target>
       </trans-unit>
     </body>
   </file>
@@ -2616,11 +2616,11 @@
     <body>
       <trans-unit id="473" resname="r474674216" restype="string" datatype="java">
         <source>How would you classify your consumption of alcohol?</source>
-        <target>您如何评价您的饮酒量？</target>
+        <target>您如何评价您的酒精摄入量？</target>
       </trans-unit>
       <trans-unit id="474" resname="r482433768" restype="string" datatype="java">
         <source>How would you classify {first_name}'s consumption of alcohol?</source>
-        <target>{first_name}如何评价您的饮酒量？</target>
+        <target>{first_name}如何评价您的酒精摄入量？</target>
       </trans-unit>
     </body>
   </file>
@@ -2628,7 +2628,7 @@
     <body>
       <trans-unit id="475" resname="r884770932" restype="string" datatype="java">
         <source>Please share a photo of yourself with doctors</source>
-        <target>请分享一张您自己与医生的照片</target>
+        <target>请与医生分享一幅您的照片</target>
       </trans-unit>
     </body>
   </file>
@@ -2636,12 +2636,12 @@
     <body>
       <trans-unit id="476" resname="r690308697" restype="string" datatype="java">
         <source>Add treatment</source>
-        <target>添加治疗方法</target>
+        <target>添加治疗</target>
         <note annotates="source">This means to add treatments in a patient's health profile</note>
       </trans-unit>
       <trans-unit id="477" resname="r446307512" restype="string" datatype="java">
         <source>Update treatment or procedure</source>
-        <target>更新治疗方法或临床操作</target>
+        <target>更新治疗或临床操作</target>
         <note annotates="source">This means to update treatments or procedures health profile for a patient</note>
       </trans-unit>
     </body>
@@ -2794,7 +2794,7 @@
       </trans-unit>
       <trans-unit id="498" resname="r808907878" restype="string" datatype="java">
         <source>Please don't include a followup question in your note. {start}To do so, ask a question.{end}</source>
-        <target>请不要在您的注意事项中包含后续问题。{start}如有需要，请提出问题。{end}</target>
+        <target>请不要在您的注意事项中包含随访问题。{start}如有需要，请提出问题。{end}</target>
       </trans-unit>
     </body>
   </file>
@@ -2862,7 +2862,7 @@
     <body>
       <trans-unit id="510" resname="r881154280" restype="string" datatype="java">
         <source>Deactivate Account</source>
-        <target>冻结账户</target>
+        <target>停用账户</target>
       </trans-unit>
       <trans-unit id="511" resname="r616392764" restype="string" datatype="java">
         <source>Please enter your feedback</source>
@@ -2890,7 +2890,7 @@
     <body>
       <trans-unit id="515" resname="r99694554" restype="string" datatype="java">
         <source>Apply code</source>
-        <target>使用优惠</target>
+        <target>使用代码</target>
       </trans-unit>
     </body>
   </file>
@@ -2918,7 +2918,7 @@
       </trans-unit>
       <trans-unit id="521" resname="r829279545" restype="string" datatype="java">
         <source>Failed to downgrade to pay-as-you-go plan!!!</source>
-        <target>无法降级至随收随付计划！！！</target>
+        <target>无法降级至随付随用计划！！！</target>
       </trans-unit>
       <trans-unit id="522" resname="r105168299" restype="string" datatype="java">
         <source>Subscription Canceled</source>
@@ -2934,7 +2934,7 @@
       </trans-unit>
       <trans-unit id="525" resname="r860822785" restype="string" datatype="java">
         <source>You're account has been deactivated and you've been logged out. We hope you come back soon :)</source>
-        <target>您的账户已被冻结，您已退出登录。我们希望能您尽快回来 :)</target>
+        <target>您的账户已被停用，您已退出登录。我们希望能您尽快回来 :)</target>
       </trans-unit>
       <trans-unit id="526" resname="r987771035" restype="string" datatype="java">
         <source>Sorry, there was a problem</source>
@@ -3190,7 +3190,7 @@
     <body>
       <trans-unit id="566" resname="r366455092" restype="string" datatype="java">
         <source>Add treatment or procedure</source>
-        <target>添加治疗方法或临床操作</target>
+        <target>添加治疗或临床操作</target>
       </trans-unit>
       <trans-unit id="567" resname="r448807785" restype="string" datatype="java">
         <source>None at this time</source>
@@ -3222,7 +3222,7 @@
     <body>
       <trans-unit id="571" resname="r890649575" restype="string" datatype="java">
         <source>Where would {first_name} prefer to collect their prescriptions?</source>
-        <target>{first_name} 希望在哪里取他们的处方药？</target>
+        <target>{first_name}希望在哪里取处方药？</target>
       </trans-unit>
     </body>
   </file>
@@ -3370,7 +3370,7 @@
       </trans-unit>
       <trans-unit id="605" resname="r536808143" restype="string" datatype="java">
         <source>Dr. Rutledge: Welcome, {name}! Have a health question? We’re here to help.</source>
-        <target>Rutledge医生：欢迎，{name}！有健康问题吗？我们在这里帮助您。</target>
+        <target>Rutledge医生：欢迎，({name})！有健康问题吗？我们在这里帮助您。</target>
       </trans-unit>
     </body>
   </file>
@@ -3414,7 +3414,7 @@
       </trans-unit>
       <trans-unit id="613" resname="r123858632" restype="string" datatype="java">
         <source>checklist on {checklist_item_name}</source>
-        <target>清单{checklist_item_name}</target>
+        <target>关于{checklist_item_name}的清单</target>
       </trans-unit>
     </body>
   </file>
@@ -3502,7 +3502,7 @@
       </trans-unit>
       <trans-unit id="630" resname="r198416966" restype="string" datatype="java">
         <source>Please provide your phone number.</source>
-        <target>请提供您的手机号码。</target>
+        <target>请提供您的电话号码。</target>
       </trans-unit>
     </body>
   </file>
@@ -3522,7 +3522,7 @@
       </trans-unit>
       <trans-unit id="634" resname="r129797690" restype="string" datatype="java">
         <source>phone number</source>
-        <target>手机号</target>
+        <target>电话号码</target>
       </trans-unit>
       <trans-unit id="635" resname="r542212145" restype="string" datatype="java">
         <source>gender</source>
@@ -3620,7 +3620,7 @@
       </trans-unit>
       <trans-unit id="655" resname="r762155906" restype="string" datatype="java">
         <source>We'll let you know when doctors add more answers or comments.</source>
-        <target>我们会告诉您医生增加更多的回答和评论。</target>
+        <target>我们会在医生添加更多回答或评论时会告诉您。</target>
       </trans-unit>
       <trans-unit id="656" resname="r380153215" restype="string" datatype="java">
         <source>We'll share more insights related to this topic from now on.</source>
@@ -3761,12 +3761,12 @@
       </trans-unit>
       <trans-unit id="674" resname="r565514845" restype="string" datatype="java">
         <source>We'll share more tips and checklists to help you with {0}</source>
-        <target>我们会分享更多的小贴士和清单来帮助您{0}</target>
+        <target>我们会分享更多关于{0}的小贴士和清单来帮助您</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
       <trans-unit id="675" resname="r244615001" restype="string" datatype="java">
         <source>Sorry! You could not follow right now</source>
-        <target>抱歉!您现在不能关注.</target>
+        <target>抱歉!您现在不能关注。</target>
       </trans-unit>
     </body>
   </file>
@@ -3850,7 +3850,7 @@
     <body>
       <trans-unit id="695" resname="r639533158" restype="string" datatype="java">
         <source>Following</source>
-        <target>已关注</target>
+        <target>关注中</target>
         <note annotates="source">user is following a medical condition</note>
       </trans-unit>
       <trans-unit id="696" resname="r433324132" restype="string" datatype="java">
@@ -3976,7 +3976,7 @@
       </trans-unit>
       <trans-unit id="732" resname="picker_filter_years_in_practice" restype="string" datatype="x-android-resource">
         <source>Years in practice</source>
-        <target>诊疗年限</target>
+        <target>年诊疗经验</target>
       </trans-unit>
       <trans-unit id="733" resname="picker_filter_degrees" restype="string" datatype="x-android-resource">
         <source>Degrees</source>
@@ -4016,7 +4016,7 @@
       </trans-unit>
       <trans-unit id="742" resname="body_picker_rotate_text" restype="string" datatype="x-android-resource">
         <source>Rotate</source>
-        <target>循环</target>
+        <target>翻转</target>
       </trans-unit>
       <trans-unit id="743" resname="symptom_triage_search_hint" restype="string" datatype="x-android-resource">
         <source>Type a symptom</source>
@@ -4064,7 +4064,7 @@
       </trans-unit>
       <trans-unit id="754" resname="meter_medium" restype="string" datatype="x-android-resource">
         <source>MEDIUM</source>
-        <target>中等的</target>
+        <target>中等</target>
       </trans-unit>
       <trans-unit id="755" resname="symptom_triage_instructional_tutorial_title" restype="string" datatype="x-android-resource">
         <source>Welcome</source>
@@ -4130,11 +4130,11 @@
       </trans-unit>
       <trans-unit id="770" resname="feed_experiencing_symptoms" restype="string" datatype="x-android-resource">
         <source>Experiencing symptoms?</source>
-        <target>有不舒服的症状？</target>
+        <target>有症状？</target>
       </trans-unit>
       <trans-unit id="771" resname="feed_symptom_find_out_why" restype="string" datatype="x-android-resource">
         <source>Find out why</source>
-        <target>找出为什么</target>
+        <target>找出原因</target>
       </trans-unit>
     </body>
   </file>
