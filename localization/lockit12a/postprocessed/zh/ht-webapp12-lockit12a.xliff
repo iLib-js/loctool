@@ -84,4 +84,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/topics/feelgood/_topic_element.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="r962600294" restype="plural" datatype="ruby" extype="one">
+        <source>1 doctor &lt;div class="review"&gt;review&lt;/div&gt;</source>
+        <target state="translated">1名医生 &lt;div class="review"&gt;评论&lt;/div&gt;</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r962600294" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} doctor &lt;div class="review"&gt;reviews&lt;/div&gt;</source>
+        <target state="translated">%{count}名医生 &lt;div class="review"&gt;评论&lt;/div&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
