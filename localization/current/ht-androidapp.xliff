@@ -20343,7 +20343,7 @@
       </trans-unit>
       <trans-unit id="1208" resname="conditionsHeaderQuestion" restype="string" datatype="x-android-resource">
         <source>Do you have any previously diagnosed conditions?</source>
-        <target>您以前有什么确诊的病史吗？</target>
+        <target>您是否患有任何在以前确诊的病症？</target>
       </trans-unit>
       <trans-unit id="1209" resname="medicationsHeaderQuestion" restype="string" datatype="x-android-resource">
         <source>Do you take any medications?</source>
@@ -22638,7 +22638,7 @@
       </trans-unit>
       <trans-unit id="1748" resname="similar_question_fork_consult_doc" restype="string" datatype="x-android-resource">
         <source>Talk\u00a0to\u00a0a\u00a0doctor\u00a0now</source>
-        <target>现在和医生交流</target>
+        <target>现在交流\u00a0to\u00a0a\u00a0doctor\u00a0</target>
       </trans-unit>
       <trans-unit id="1749" resname="similar_question_help_title" restype="string" datatype="x-android-resource">
         <source>Consult a doctor</source>
@@ -52635,7 +52635,7 @@
       </trans-unit>
       <trans-unit id="346" resname="r158653628" restype="string" datatype="x-android-resource">
         <source>From HealthTap</source>
-        <target state="translated">来自健康问答</target>
+        <target state="translated">已上传的文件</target>
       </trans-unit>
       <trans-unit id="347" resname="r74842871" restype="string" datatype="x-android-resource">
         <source>If you leave, your changes will be lost.</source>
