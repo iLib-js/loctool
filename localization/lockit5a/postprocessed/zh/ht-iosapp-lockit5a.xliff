@@ -424,11 +424,11 @@
     <body>
       <trans-unit id="152" resname=" doctor responded" restype="string" datatype="x-objective-c">
         <source>doctor responded</source>
-        <target>医生已回复</target>
+        <target>名医生已回复</target>
       </trans-unit>
       <trans-unit id="153" resname=" doctors responded" restype="string" datatype="x-objective-c">
         <source>doctors responded</source>
-        <target>医生已回复</target>
+        <target>名医生已回复</target>
       </trans-unit>
     </body>
   </file>
@@ -631,11 +631,11 @@
     <body>
       <trans-unit id="201" resname=" + %d doctor weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %d doctor weighed in:</source>
-        <target>+ %d 医生参与讨论</target>
+        <target>+ %d名医生参与讨论</target>
       </trans-unit>
       <trans-unit id="202" resname=" + %d doctors weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %d doctors weighed in:</source>
-        <target>+ %d 医生参与讨论</target>
+        <target>+ %d名医生参与讨论</target>
       </trans-unit>
       <trans-unit id="203" resname=" answered:" restype="string" datatype="x-objective-c">
         <source>answered:</source>
