@@ -14632,7 +14632,7 @@ display:none;
       </trans-unit>
       <trans-unit id="2996" resname="Never mind" restype="string" datatype="html">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
     </body>
   </file>

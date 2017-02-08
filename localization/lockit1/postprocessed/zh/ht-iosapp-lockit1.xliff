@@ -10269,7 +10269,7 @@ only a tap away</source>
       </trans-unit>
       <trans-unit id="Never mind" resname="Never mind" restype="string" datatype="x-objective-c">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Cancel action
    popu btn title to indicate user changed their mind and no longer wants continue with canceling  the operation</note>
       </trans-unit>
@@ -14475,7 +14475,7 @@ Our doctors can help</source>
       </trans-unit>
       <trans-unit id="PTg-uY-Hvv.normalTitle" resname="PTg-uY-Hvv.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "PTg-uY-Hvv";</note>
       </trans-unit>
       <trans-unit id="Rm1-68-4JN.text" resname="Rm1-68-4JN.text" restype="string" datatype="x-xib">
@@ -14532,7 +14532,7 @@ check your Spam folder.</source>
       </trans-unit>
       <trans-unit id="PTg-uY-Hvv.normalTitle" resname="PTg-uY-Hvv.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "PTg-uY-Hvv";</note>
       </trans-unit>
       <trans-unit id="Rm1-68-4JN.text" resname="Rm1-68-4JN.text" restype="string" datatype="x-xib">
@@ -16508,7 +16508,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="TBK-IL-g8f.normalTitle" resname="TBK-IL-g8f.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "TBK-IL-g8f";</note>
       </trans-unit>
       <trans-unit id="exd-Hq-6Es.text" resname="exd-Hq-6Es.text" restype="string" datatype="x-xib">
@@ -16532,7 +16532,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="TBK-IL-g8f.normalTitle" resname="TBK-IL-g8f.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "TBK-IL-g8f";</note>
       </trans-unit>
       <trans-unit id="exd-Hq-6Es.text" resname="exd-Hq-6Es.text" restype="string" datatype="x-xib">
@@ -17501,7 +17501,7 @@ I can provide you with:</source>
       </trans-unit>
       <trans-unit id="2xs-oF-Brm.normalTitle" resname="2xs-oF-Brm.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "2xs-oF-Brm";</note>
       </trans-unit>
       <trans-unit id="2zX-9b-eRN.text" resname="2zX-9b-eRN.text" restype="string" datatype="x-xib">
@@ -17591,7 +17591,7 @@ I can provide you with:</source>
       </trans-unit>
       <trans-unit id="Drx-sk-mY6.normalTitle" resname="Drx-sk-mY6.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "Drx-sk-mY6";</note>
       </trans-unit>
       <trans-unit id="Dvh-CC-9Fr.text" resname="Dvh-CC-9Fr.text" restype="string" datatype="x-xib">
@@ -17712,12 +17712,12 @@ consult a specialist today!</source>
       </trans-unit>
       <trans-unit id="V9a-hq-Xxh.normalTitle" resname="V9a-hq-Xxh.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "V9a-hq-Xxh";</note>
       </trans-unit>
       <trans-unit id="WR0-UI-a00.normalTitle" resname="WR0-UI-a00.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "WR0-UI-a00";</note>
       </trans-unit>
       <trans-unit id="X7G-FQ-cYg.text" resname="X7G-FQ-cYg.text" restype="string" datatype="x-xib">
@@ -17993,7 +17993,7 @@ pay per consult</source>
       </trans-unit>
       <trans-unit id="2xs-oF-Brm.normalTitle" resname="2xs-oF-Brm.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "2xs-oF-Brm";</note>
       </trans-unit>
       <trans-unit id="4bo-FP-m9c.text" resname="4bo-FP-m9c.text" restype="string" datatype="x-xib">
@@ -18073,7 +18073,7 @@ pay per consult</source>
       </trans-unit>
       <trans-unit id="ETK-C3-bKT.normalTitle" resname="ETK-C3-bKT.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "ETK-C3-bKT";</note>
       </trans-unit>
       <trans-unit id="FEA-M0-HEG.text" resname="FEA-M0-HEG.text" restype="string" datatype="x-xib">
@@ -18228,7 +18228,7 @@ pay per consult</source>
       </trans-unit>
       <trans-unit id="Unt-kn-MD3.normalTitle" resname="Unt-kn-MD3.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind";	 ObjectID = "Unt-kn-MD3";</note>
       </trans-unit>
       <trans-unit id="VmQ-vH-d6a.text" resname="VmQ-vH-d6a.text" restype="string" datatype="x-xib">
@@ -18314,7 +18314,7 @@ consult a specialist today!</source>
       </trans-unit>
       <trans-unit id="fWd-O5-q2Z.normalTitle" resname="fWd-O5-q2Z.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "fWd-O5-q2Z";</note>
       </trans-unit>
       <trans-unit id="fng-AX-mYO.normalTitle" resname="fng-AX-mYO.normalTitle" restype="string" datatype="x-xib">
@@ -20655,7 +20655,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
       </trans-unit>
       <trans-unit id="xr8-E9-HRr.normalTitle" resname="xr8-E9-HRr.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "xr8-E9-HRr";</note>
       </trans-unit>
       <trans-unit id="yUM-vS-fCK.text" resname="yUM-vS-fCK.text" restype="string" datatype="x-xib">
@@ -20849,7 +20849,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
       </trans-unit>
       <trans-unit id="xr8-E9-HRr.normalTitle" resname="xr8-E9-HRr.normalTitle" restype="string" datatype="x-xib">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Never mind"; ObjectID = "xr8-E9-HRr";</note>
       </trans-unit>
     </body>

@@ -28632,7 +28632,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="6272" resname="Never mind" restype="string" datatype="html">
         <source>Never mind</source>
-        <target>不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="6273" resname="Confirm" restype="string" datatype="html">
         <source>Confirm</source>
