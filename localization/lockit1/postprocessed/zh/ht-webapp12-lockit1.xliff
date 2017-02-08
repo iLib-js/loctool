@@ -17777,7 +17777,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3459" resname="Write a recommendation for &lt;%= expert.full_name %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page." restype="string" datatype="html">
         <source>Write a recommendation for &lt;%= expert.full_name %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page.</source>
-        <target>在这里为 &lt;%= expert.full_name %&gt写一条推荐；记住，您说的话会出现在这我医生的在线诊疗页面。</target>
+        <target>在这里为 &lt;%= expert.full_name %&gt;写一条推荐；记住，您说的话会出现在这我医生的在线诊疗页面。</target>
       </trans-unit>
       <trans-unit id="3460" resname="Recommend &lt;%= App.models[&apos;expertInfo_&apos;+App.session.params.id].get(&apos;full_name&apos;) %&gt;!" restype="string" datatype="html">
         <source>Recommend &lt;%= App.models['expertInfo_'+App.session.params.id].get('full_name') %&gt;!</source>
@@ -17785,7 +17785,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3461" resname="Write a recommendation for &lt;%= App.models[&apos;expertInfo_&apos;+App.session.params.id].get(&apos;full_name&apos;) %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page." restype="string" datatype="html">
         <source>Write a recommendation for &lt;%= App.models['expertInfo_'+App.session.params.id].get('full_name') %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page.</source>
-        <target>在这里为 &lt;%= App.models['expertInfo_'+App.session.params.id].get('full_name') %&gt写一条推荐；记住，您说的话会出现在这我医生的在线诊疗页面。</target>
+        <target>在这里为 &lt;%= App.models['expertInfo_'+App.session.params.id].get('full_name') %&gt;写一条推荐；记住，您说的话会出现在这我医生的在线诊疗页面。</target>
       </trans-unit>
       <trans-unit id="3462" resname="Recommend &lt;%= App.models.thisDoctor.get(&apos;item.full_name&apos;) %&gt;!" restype="string" datatype="html">
         <source>Recommend &lt;%= App.models.thisDoctor.get('item.full_name') %&gt;!</source>
@@ -17793,7 +17793,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3463" resname="Write a recommendation for &lt;%= App.models.thisDoctor.get(&apos;item.full_name&apos;) %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page." restype="string" datatype="html">
         <source>Write a recommendation for &lt;%= App.models.thisDoctor.get('item.full_name') %&gt; here. Remember, what you say will appear on this doctor’s Virtual Practice page.</source>
-        <target>在这里为 &lt;%= App.models.thisDoctor.get('item.full_name') %&gt写一条推荐；记住，您说的话会出现在这我医生的在线诊疗页面。</target>
+        <target>在这里为 &lt;%= App.models.thisDoctor.get('item.full_name') %&gt;写一条推荐；记住，您说的话会出现在这我医生的在线诊疗页面。</target>
       </trans-unit>
     </body>
   </file>
@@ -35447,7 +35447,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6991" resname="Sorry, no results were found." restype="string" datatype="javascript">
         <source>Sorry, no results were found.</source>
-        <target>对不起，没有找到结果。target>
+        <target>对不起，没有找到结果。</target>
       </trans-unit>
       <trans-unit id="6992" resname="Please enter a valid email" restype="string" datatype="javascript">
         <source>Please enter a valid email</source>

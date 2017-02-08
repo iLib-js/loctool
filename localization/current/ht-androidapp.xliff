@@ -29730,7 +29730,7 @@
     <body>
       <trans-unit id="3" resname="r32892148" restype="string" datatype="java">
         <source>You're now following "{topic_name}"</source>
-        <target state="new">你现在关注了 "{topic_name}"</target>
+        <target state="translated">你现在关注了 "{topic_name}"</target>
       </trans-unit>
     </body>
   </file>
@@ -29738,7 +29738,7 @@
     <body>
       <trans-unit id="4" resname="r440805493" restype="string" datatype="java">
         <source>You're now following the topic "{0}"!</source>
-        <target state="new">你现在关注了此专题 "{0}"!</target>
+        <target state="translated">你现在关注了此专题 "{0}"!</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
     </body>
@@ -29747,7 +29747,7 @@
     <body>
       <trans-unit id="5" resname="r780459903" restype="string" datatype="java">
         <source>You're now following "{0}"</source>
-        <target state="new">你现在关注了 "{0}"</target>
+        <target state="translated">你现在关注了 "{0}"</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
     </body>
@@ -47793,7 +47793,7 @@
       </trans-unit>
       <trans-unit id="762" resname="symptom_triage_disclaimer_additional_info" restype="string" datatype="x-android-resource">
         <source>Additional Information</source>
-        <target>附加信息</target>
+        <target>更多信息</target>
       </trans-unit>
       <trans-unit id="763" resname="leave" restype="string" datatype="x-android-resource">
         <source>Leave</source>

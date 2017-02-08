@@ -16356,7 +16356,7 @@ and let the world know :)</source>
       </trans-unit>
       <trans-unit id="Zu2-nO-D5g.text" resname="Zu2-nO-D5g.text" restype="string" datatype="x-xib">
         <source>Get Help</source>
-        <target获得帮助</target>
+        <target>获得帮助</target>
         <note annotates="source">Class = "UILabel"; text = "Get Help"; ObjectID = "Zu2-nO-D5g";</note>
       </trans-unit>
       <trans-unit id="pWe-o3-Qtc.text" resname="pWe-o3-Qtc.text" restype="string" datatype="x-xib">
