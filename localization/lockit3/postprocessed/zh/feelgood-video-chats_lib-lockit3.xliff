@@ -299,7 +299,7 @@
       </trans-unit>
       <trans-unit id="58" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target>没有关系</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Positive Button text. Give up removing an attachment.</note>
       </trans-unit>
     </body>
@@ -532,7 +532,7 @@
       </trans-unit>
       <trans-unit id="112" resname="button_never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没有关系</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="113" resname="button_cancel" restype="string" datatype="x-android-resource">
         <source>Cancel</source>
@@ -737,7 +737,7 @@
       </trans-unit>
       <trans-unit id="163" resname="description_dialog_never_mind_text" restype="string" datatype="x-android-resource">
         <source>Never Mind</source>
-        <target>没有关系</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="164" resname="description_dialog_remove_text" restype="string" datatype="x-android-resource">
         <source>Remove</source>

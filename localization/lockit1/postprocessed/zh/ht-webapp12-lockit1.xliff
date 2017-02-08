@@ -34043,7 +34043,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6698" resname="Never mind " restype="string" datatype="javascript">
         <source>Never mind</source>
-        <target>没有关系</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="6699" resname="Invitations sent!" restype="string" datatype="javascript">
         <source>Invitations sent!</source>
