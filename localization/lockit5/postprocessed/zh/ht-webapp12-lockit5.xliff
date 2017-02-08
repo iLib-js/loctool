@@ -908,7 +908,7 @@
       </trans-unit>
       <trans-unit id="227" resname="r827767806" restype="string" datatype="ruby">
         <source>HealthTap brings doctor-created tips straight to your mobile device or computer.  To keep healthy living top of mind, users can subscribe to health topics of interest, and receive daily doctor-created tips, suggestions, or bits of advice delivered via email or by SMS push notifications to mobile devices.  Users can also discover and browse TipTaps on HealthTap.</source>
-        <target>HealthTap将医生创建的小贴士直接推送到您的移动设备或计算机。为了保持放心健康的生活，用户可以订购感兴趣的健康话题，并且接收通过电子邮件或SMS短信每天接收医生创建的小贴士、建议或一点忠告的推送通知。用户还可以在HealthTap上发现和浏览推心小贴士。</target>
+        <target>HealthTap将医生创建的小贴士直接推送到您的移动设备或计算机。为了保持放心健康的生活，用户可以订阅感兴趣的健康话题，并且接收通过电子邮件或SMS短信每天接收医生创建的小贴士、建议或一点忠告的推送通知。用户还可以在HealthTap上发现和浏览推心小贴士。</target>
       </trans-unit>
       <trans-unit id="228" resname="r226990040" restype="string" datatype="ruby">
         <source>Global mobile featuring! (February 2013)</source>
@@ -1622,7 +1622,7 @@
       </trans-unit>
       <trans-unit id="411" resname="r317071704" restype="string" datatype="ruby">
         <source>You have the power to decide if you will respond to a private message. When you do respond to a private message you will have access to the patient’s Health Activity and any shared files associated with the message. Responding consists of answering the question posed by the patient in a 600-character answer field. You are encouraged to use photos if they will help support the information you are providing. When you are satisfied with the information. If you elect not to respond to a particular private message you may do so by selecting the “Can’t Help” button. When you do so, you have the option of referring the patient’s message to a colleague in your network. If a private message is unattended for 72 hours, your Responsiveness score will decrease, although the message is still available to view and respond to beyond 72 hours.</source>
-        <target>您有权决定是否回复私人信息当您回复私人信息的时候，您可以使用患者的健康活动以及任何与该信息相关的已分享的文件。回复需要回答患者提出的问题，字数为600字以内。我们期望您使用能够帮助补充您提供的信息的照片当您满意该信息时。如果您选择不回复个别私人信息，您需要选择“无法帮助”按钮。当您这么做的时候，您可以选择将该患者的信息在您的网络内推荐给同事。如果私人消息72小时没有被查看，您的反应灵敏分数将会减少，尽管该消息还可以查看，并且可以在超过72小时之后回复。</target>
+        <target>您有权决定是否回复私人信息当您回复私人信息的时候，您可以使用患者的健康活动以及任何与该信息相关的已分享的文件。回复需要回答患者提出的问题，字数为600字以内。我们期望您使用能够帮助补充您提供的信息的照片当您满意该信息时。如果您选择不回复个别私人信息，您需要选择“无法帮助”按钮。当您这么做的时候，您可以选择将该患者的信息在您的网络内推荐给同事。如果私人消息72小时没有被查看，您的响应度分数将会减少，尽管该消息还可以查看，并且可以在超过72小时之后回复。</target>
       </trans-unit>
       <trans-unit id="412" resname="r266549344" restype="string" datatype="ruby">
         <source>Any tips on how to answer a question?</source>
@@ -1638,7 +1638,7 @@
       </trans-unit>
       <trans-unit id="415" resname="r696582920" restype="string" datatype="ruby">
         <source>Patients will have an opportunity to pay for a shorter follow up question if they desire. You will be reimbursed for providing a short reply to follow up questions in a similar manner to the original question and responsiveness and helpfulness scores are impacted in the same fashion. Follow up answers are limited to 250 characters. Follow up questions are reimbursed at the rate of half a full question.</source>
-        <target>如果患者要求，可以通过支付的方式再询问一个更短的后续的问题。您以回答原始问题相同的方式对后续问题给出简要回复将获得补偿，并且您的反应灵敏和乐于助人分数将以相同的方式添加。后续问题需控制在250字以内。后续问题将按半个问题的比例获得报酬</target>
+        <target>如果患者要求，可以通过支付的方式再询问一个更短的后续的问题。您以回答原始问题相同的方式对后续问题给出简要回复将获得补偿，并且您的响应度和有助度分数将以相同的方式添加。后续问题需控制在250字以内。后续问题将按半个问题的比例获得报酬</target>
       </trans-unit>
       <trans-unit id="416" resname="r68904350" restype="string" datatype="ruby">
         <source>How do I make a withdrawal?</source>
@@ -1790,7 +1790,7 @@
       </trans-unit>
       <trans-unit id="5161" resname="r746309101" restype="string" datatype="ruby">
         <source>Enter City and State or Zip Code</source>
-        <target>输入城市和州或邮递区号</target>
+        <target>输入城市和州或邮政编码</target>
       </trans-unit>
       <trans-unit id="5162" resname="r524498042" restype="string" datatype="ruby">
         <source>All Types</source>
@@ -2086,7 +2086,7 @@
       </trans-unit>
       <trans-unit id="508" resname="r288520576" restype="string" datatype="ruby">
         <source>People-powered healthcare</source>
-        <target>人力健康医护</target>
+        <target>以人为本的健康医护</target>
       </trans-unit>
       <trans-unit id="509" resname="r443376577" restype="string" datatype="ruby">
         <source>Learn from your colleagues and earn CME</source>
@@ -2472,7 +2472,7 @@
     <body>
       <trans-unit id="608" resname="r188832825" restype="string" datatype="ruby">
         <source>Immediate peace of mind</source>
-        <target>完全的放心</target>
+        <target>完全的安心</target>
       </trans-unit>
       <trans-unit id="609" resname="r337494286" restype="string" datatype="ruby">
         <source>No more waiting rooms</source>
@@ -2600,7 +2600,7 @@
       </trans-unit>
       <trans-unit id="9053" resname="r761274645" restype="string" datatype="x-haml">
         <source>We are tapping in to the wisdom of 100,000 doctors to find matching conditions</source>
-        <target>我们正在10万医生的智慧搜索匹配的条件</target>
+        <target>我们正在用10万医生的智慧搜索匹配的健康状况</target>
       </trans-unit>
       <trans-unit id="9054" resname="r24315647" restype="string" datatype="x-haml">
         <source>Just a moment</source>
@@ -2608,7 +2608,7 @@
       </trans-unit>
       <trans-unit id="9055" resname="r787713246" restype="string" datatype="x-haml">
         <source>While we tap in to the knowledge of more than 100,000 doctors to find matching conditions...</source>
-        <target>在我们搜索10万医生的知识找到匹配的条件时...</target>
+        <target>在我们搜索10万医生的知识找到匹配的健康状况时...</target>
       </trans-unit>
       <trans-unit id="9056" resname="r1066734361" restype="string" datatype="x-haml">
         <source>doctors helped us</source>
@@ -2916,7 +2916,7 @@
       </trans-unit>
       <trans-unit id="675" resname="r920907166" restype="string" datatype="ruby">
         <source>HealthTap Launches RateRx, A Doctor Recommendation System For Drug Treatments</source>
-        <target>HealthTap开发Rate医生评测，一个为药物治疗提供的医生推荐系统</target>
+        <target>HealthTap开发RateRx医生评测，一个为药物治疗提供的医生推荐系统</target>
       </trans-unit>
       <trans-unit id="676" resname="r177594981" restype="string" datatype="ruby">
         <source>Can Amazon-Like Reviews Work for Prescriptions?</source>
@@ -3368,7 +3368,7 @@
       </trans-unit>
       <trans-unit id="788" resname="r328545599" restype="string" datatype="ruby">
         <source>Pre-purchase unlimited access subscriptions to HealthTap for up to 75% off the standard group rate</source>
-        <target>预购HealthTap的无限制访问订购，最多可以降低75％的标准群组费率</target>
+        <target>预购HealthTap的无限制访问订阅，最多可以降低75％的标准群组费率</target>
       </trans-unit>
       <trans-unit id="789" resname="r503456923" restype="string" datatype="ruby">
         <source>“Without HealthTap, I’d still be searching on the Internet for my symptoms. HealthTap doctors guide me and help me through my health concerns."</source>
@@ -3496,7 +3496,7 @@
     <body>
       <trans-unit id="831" resname="r726553891" restype="string" datatype="ruby">
         <source>Find goal or topic (eg. Lose Weight)</source>
-        <target>查找目标或专题（例如，减肥）</target>
+        <target>查找目标或话题（例如，减肥）</target>
       </trans-unit>
       <trans-unit id="832" resname="r925714868" restype="string" datatype="ruby">
         <source>Type your goal</source>
@@ -3756,7 +3756,7 @@
       </trans-unit>
       <trans-unit id="897" resname="r222933024" restype="string" datatype="ruby">
         <source>There are so many reasons why I'm excited to walk into the HealthTap office every morning. In many internship programs, mentors play a supportive role and teach students a lot. What makes the HealthTap internship program unique, though, is that I have been given some real, important responsibilties and I am therefore able to play a role in the growth of a movement. The people here are energetic and inspiring. &lt;em&gt;Every day, I'm challenged to take charge of a project and see it through to completion.&lt;/em&gt; It's so exciting to work at HealthTap!</source>
-        <target>有很多的原因解释为什么我每天早上进入HealthTap办公室很兴奋。在许多实习计划中，导师扮演支持角色，并教会学生很多。但是，HealthTap实习计划的独特之处在于，我获得了一些真正重要的责任，因此我能够在运动的成长中发挥作用。这里的人是充满活力和受到激励的。&lt;em&gt;每天，我都有责任承担一个项目，并完成任务。&lt;/em&gt;在HealthTap工作非常令人兴奋！</target>
+        <target>有很多的原因解释为什么我每天早上进入HealthTap办公室很兴奋。在许多实习计划中，导师扮演支持角色，并教会学生很多。但是，HealthTap实习计划的独特之处在于，我获得了一些真正重要的责任，因此我能够在运动的成长中发挥作用。这里的人是充满活力和鼓舞人心的。&lt;em&gt;每天，我都有责任承担一个项目，并完成任务。&lt;/em&gt;在HealthTap工作非常令人兴奋！</target>
       </trans-unit>
       <trans-unit id="898" resname="r29758956" restype="string" datatype="ruby">
         <source>B.S. in Biology</source>
@@ -3868,11 +3868,11 @@
     <body>
       <trans-unit id="918" resname="r899361143" restype="string" datatype="ruby">
         <source>Learn more about members</source>
-        <target>了解更多关于会员</target>
+        <target>详细了解会员</target>
       </trans-unit>
       <trans-unit id="919" resname="r851737678" restype="string" datatype="ruby">
         <source>Learn about providers &amp; health systems</source>
-        <target>了解供应商和健康系统</target>
+        <target>详细了解供应商和健康系统</target>
       </trans-unit>
       <trans-unit id="920" resname="r839013275" restype="string" datatype="ruby">
         <source>Learn more about employers &amp; insurers</source>
@@ -4086,7 +4086,7 @@
       </trans-unit>
       <trans-unit id="974" resname="r511253480" restype="string" datatype="ruby">
         <source>Please supply your phone number</source>
-        <target>请提供您的手机号码</target>
+        <target>请提供您的电话号码</target>
         <note annotates="source">TODO possessive</note>
       </trans-unit>
     </body>
@@ -4111,7 +4111,7 @@
       </trans-unit>
       <trans-unit id="985" resname="r1048987766" restype="string" datatype="ruby">
         <source>Award-winning service as featured in</source>
-        <target>作为特色的一流的服务</target>
+        <target>一流的服务被报道在</target>
       </trans-unit>
     </body>
   </file>
@@ -4143,7 +4143,7 @@
       </trans-unit>
       <trans-unit id="6612" resname="r1052752993" restype="string" datatype="x-haml">
         <source>Prescriptions sent to your local pharmacy, and lab tests ordered and reviewed</source>
-        <target>处方发送到您当地的药房，订购和审查实验室检验</target>
+        <target>处方发送到您当地的药房，订阅和审查实验室检验</target>
       </trans-unit>
       <trans-unit id="6613" resname="r798047674" restype="string" datatype="x-haml">
         <source>HIPAA-compliant to keep your information safe</source>
@@ -4371,7 +4371,7 @@
       </trans-unit>
       <trans-unit id="1035" resname="r647257862" restype="string" datatype="ruby">
         <source>Zip/Postal code</source>
-        <target>邮递区号/邮政编码</target>
+        <target>邮政编码/邮政编码</target>
       </trans-unit>
     </body>
   </file>
@@ -4559,7 +4559,7 @@
     <body>
       <trans-unit id="1039" resname="r581058721" restype="string" datatype="ruby">
         <source>Ask doctors a question or search a topic to get started</source>
-        <target>向医生询问问题或搜索专题以开始使用</target>
+        <target>向医生询问问题或搜索话题以开始使用</target>
       </trans-unit>
       <trans-unit id="1040" resname="r941448855" restype="string" datatype="ruby">
         <source>Go</source>
@@ -4825,7 +4825,7 @@
       </trans-unit>
       <trans-unit id="1115" resname="r261884407" restype="string" datatype="ruby">
         <source>, %{years_in_practice} years in practice</source>
-        <target>, %{years_in_practice} 年诊疗</target>
+        <target>, %{years_in_practice} 年诊疗经验</target>
       </trans-unit>
     </body>
   </file>
@@ -4833,7 +4833,7 @@
     <body>
       <trans-unit id="1117" resname="r974113517" restype="string" datatype="ruby">
         <source>Search for name, topic or specialty</source>
-        <target>搜索姓名，专题和专业</target>
+        <target>搜索姓名，话题和专业</target>
       </trans-unit>
       <trans-unit id="1118" resname="r1052314406" restype="string" datatype="ruby">
         <source>City, State</source>
@@ -4885,7 +4885,7 @@
     <body>
       <trans-unit id="1130" resname="r455480936" restype="string" datatype="ruby">
         <source>Find goal or topic (ex. Lose weight)</source>
-        <target>查找目标或专题(例如减肥）</target>
+        <target>查找目标或话题(例如减肥）</target>
       </trans-unit>
     </body>
   </file>
@@ -5045,11 +5045,11 @@
     <body>
       <trans-unit id="1177" resname="r526673035" restype="string" datatype="ruby">
         <source>Your HealthTap Prime subscription provides you with 24/7/365 access to top primary care physicians who are ready to help you stay healthy and happy. Recent charges to your PayPal account under %{email} have been unsuccessful, and your HealthTap Prime subscription payments are now past due in the amount of %{amount} (USD). We will continue to attempt charging the PayPal account on file or may update your subscription to our Pay-As-You-Go HealthTap Prime Plan or Basic Plan to ensure ongoing access to our services. Please take a moment now to update your PayPal information so you can proceed with uninterrupted access to HealthTap Prime virtual consults and other benefits.</source>
-        <target>您的HealthTap Prime订购为您提供全年365天全天24小时随时访问准备帮助您保持健康和快乐的顶级普通门诊医生。最近在%{email}之下向您的PayPal帐户收取的费用未成功，您的HealthTap Prime订购付款现已逾期，金额为%{amount}(美元)。我们将继续尝试向您的PayPal帐户收费，或者您可以更新订购的我们的即付即用HealthTap Prime计划或基本计划，以确保继续访问我们的服务。请花一点时间更新您的PayPal信息，以便您可以继续不间断地访问HealthTap Prime在线咨询和其他福利。</target>
+        <target>您的HealthTap Prime订阅为您提供全年365天全天24小时随时访问准备帮助您保持健康和快乐的顶级普通门诊医生。最近在%{email}之下向您的PayPal帐户收取的费用未成功，您的HealthTap Prime订阅付款现已逾期，金额为%{amount}(美元)。我们将继续尝试向您的PayPal帐户收费，或者您可以更新订阅的我们的即付即用HealthTap Prime计划或基本计划，以确保继续访问我们的服务。请花一点时间更新您的PayPal信息，以便您可以继续不间断地访问HealthTap Prime在线咨询和其他福利。</target>
       </trans-unit>
       <trans-unit id="1178" resname="r80280455" restype="string" datatype="ruby">
         <source>Your HealthTap Prime subscription provides you with 24/7/365 access to top primary care physicians who are ready to help you stay healthy and happy. Recent charges to your credit card ending *%{number} have been unsuccessful, and your HealthTap Prime subscription payments are now past due in the amount of %{amount} (USD). We will continue to attempt charging the credit card on file or may update your subscription to our Pay-As-You-Go HealthTap Prime Plan or Basic Plan to ensure ongoing access to our services. Please take a moment now to update your credit card information so you can proceed with uninterrupted access to HealthTap Prime virtual consults and other benefits.</source>
-        <target>您的HealthTap Prime订购为您提供全年365天全天24小时随时访问准备帮助您保持健康和快乐的顶级普通门诊医生。最近在%{number}之下向您的信用卡收取的费用未成功，您的HealthTap Prime订购付款现已逾期，金额为%{amount}(美元)。我们将继续尝试从登记的信用卡收费，或者您可以更新您订购的我们的即付即用HealthTap Prime计划或基本计划，以确保继续访问我们的服务。请花一点时间更新您的信用卡信息，以便您可以继续不间断地访问HealthTap Prime在线咨询和其他福利。</target>
+        <target>您的HealthTap Prime订阅为您提供全年365天全天24小时随时访问准备帮助您保持健康和快乐的顶级普通门诊医生。最近在%{number}之下向您的信用卡收取的费用未成功，您的HealthTap Prime订阅付款现已逾期，金额为%{amount}(美元)。我们将继续尝试从登记的信用卡收费，或者您可以更新您订阅的我们的即付即用HealthTap Prime计划或基本计划，以确保继续访问我们的服务。请花一点时间更新您的信用卡信息，以便您可以继续不间断地访问HealthTap Prime在线咨询和其他福利。</target>
       </trans-unit>
       <trans-unit id="1179" resname="r468992619" restype="string" datatype="ruby">
         <source>Update PayPal information</source>
@@ -5189,7 +5189,7 @@
     <body>
       <trans-unit id="1209" resname="r472988984" restype="string" datatype="ruby">
         <source>Access the world's leading online knowledgebase of doctor-created health information. We're committed to helping you feel good!</source>
-        <target>访问医生创建的世界级领先的在线知识库的健康信息。我们致力于帮助您feel good！</target>
+        <target>访问医生创建的世界级领先的在线知识库的健康信息。我们致力于帮助您Feel Good！</target>
       </trans-unit>
       <trans-unit id="1210" resname="r848869956" restype="string" datatype="ruby">
         <source>Get beautiful, bite-sized tips of health information created by doctors, personalized for you.</source>
@@ -5287,7 +5287,7 @@
     <body>
       <trans-unit id="1229" resname="r330535439" restype="string" datatype="ruby">
         <source>Subscribe now!</source>
-        <target>立刻订购</target>
+        <target>立刻订阅</target>
       </trans-unit>
     </body>
   </file>
@@ -5700,7 +5700,7 @@
       </trans-unit>
       <trans-unit id="1308" resname="r788733078" restype="string" datatype="ruby">
         <source>Congratulations on completing a checklist for your health goal! You’ve just taken a huge step towards living a happier, healthier life and we hope you’re feeling good.</source>
-        <target>恭喜您完成了您的健康目标的清单！您已朝着一个更快乐，更健康的生活迈出了巨大的一步，我们希望您感觉很好。</target>
+        <target>恭喜您完成了您的健康目标的清单！您已朝着一个更快乐，更健康的生活迈出了巨大的一步，我们希望您Feel Good。</target>
       </trans-unit>
       <trans-unit id="1309" resname="r276769883" restype="string" datatype="ruby">
         <source>We’re delighted to offer you a %{open_link}free trial of HealthTap Prime%{close_link}, our new special service that connects you and your loved ones with a top doctor via video or text chat anytime, anywhere. You too can get doctor advice, prescriptions and even reminders from top doctors right from your mobile device or personal computer.</source>
@@ -5780,7 +5780,7 @@
       </trans-unit>
       <trans-unit id="1327" resname="r236360292" restype="string" datatype="ruby">
         <source>We would love for you to feel good about your health every day. Try HealthTap Prime for free and see how easy it is to achieve your goals and live a healthier, happier life!</source>
-        <target>我们希望爱您并让您的每一天都feel good。免费试用HealthTap Prime，看看实现您的更健康，更快乐地生活的目标是多么的容易！</target>
+        <target>我们希望爱您并让您的每一天都Feel Good。免费试用HealthTap Prime，看看实现您的更健康，更快乐地生活的目标是多么的容易！</target>
       </trans-unit>
       <trans-unit id="1328" resname="r67891544" restype="string" datatype="ruby">
         <source>We’re so glad that you have taken an interest in improving your health by following the goal Eating a Healthier Diet. We want to help you get there! That’s why we want to offer you a %{open_link}free month of HealthTap Prime%{close_link}, our new, easy-to-use service that connects you with top primary-care doctors via HD video or secure text chat anytime, anywhere. You can now get doctor advice, prescriptions, and even personalized reminders right from your phone or computer.</source>
@@ -6020,7 +6020,7 @@
       </trans-unit>
       <trans-unit id="1376" resname="r104785607" restype="string" datatype="ruby">
         <source>DISMISS</source>
-        <target>解雇</target>
+        <target>拒绝</target>
       </trans-unit>
       <trans-unit id="1377" resname="r110031994" restype="string" datatype="ruby">
         <source>See request</source>
@@ -6076,7 +6076,7 @@
       </trans-unit>
       <trans-unit id="1388" resname="r785797973" restype="string" datatype="ruby">
         <source>Our top doctors can prescribe medications, order lab tests, help with your New Year’s Resolution, and much more!</source>
-        <target>我们的顶级医生可以开处方药，订购实验室检验，帮助您的新年的决议，以及更多</target>
+        <target>我们的顶级医生可以开处方药，订阅实验室检验，帮助您的新年的决议，以及更多</target>
       </trans-unit>
     </body>
   </file>
@@ -6280,7 +6280,7 @@
       </trans-unit>
       <trans-unit id="1426" resname="r727478882" restype="string" datatype="ruby">
         <source>Get medical advice, prescriptions, lab tests ordered and reviewed anytime, anywhere</source>
-        <target>随时随地获得医学建议，处方，订购和审查实验室检验</target>
+        <target>随时随地获得医学建议，处方，订阅和审查实验室检验</target>
       </trans-unit>
     </body>
   </file>
@@ -6388,7 +6388,7 @@
     <body>
       <trans-unit id="1453" resname="r582104691" restype="string" datatype="ruby">
         <source>Do good • Do well • Feel good</source>
-        <target>做得好 • 做得健康 • 感觉良好</target>
+        <target>做得好 • 做得健康 • Feel Good</target>
       </trans-unit>
     </body>
   </file>
@@ -6770,11 +6770,11 @@
       </trans-unit>
       <trans-unit id="1526" resname="r41725081" restype="string" datatype="ruby">
         <source>If you prefer not to receive health information and tips from me in this newsletter, you may %{open_link}click here to unsubscribe%{close_link}</source>
-        <target>如果您不希望在本通讯中收到我的健康信息和小贴士，您可以%{open_link}点击这里取消订购%{close_link}</target>
+        <target>如果您不希望在本通讯中收到我的健康信息和小贴士，您可以%{open_link}点击这里取消订阅%{close_link}</target>
       </trans-unit>
       <trans-unit id="1527" resname="r946632962" restype="string" datatype="ruby">
         <source>If you are not interested in receiving the newsletter, %{open_link}click here to unsubscribe%{close_link}</source>
-        <target>如果您不想收到通讯，%{open_link}点击这里取消订购%{close_link}</target>
+        <target>如果您不想收到通讯，%{open_link}点击这里取消订阅%{close_link}</target>
       </trans-unit>
       <trans-unit id="1528" resname="r310517288" restype="string" datatype="ruby">
         <source>Here are a few ways you can make the&lt;br&gt;most out of HealthTap for free!</source>
@@ -6834,11 +6834,11 @@
     <body>
       <trans-unit id="1536" resname="r219021624" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Access the world's leading online knowledgebase&lt;/strong&gt; of doctor-created health information. We're committed to helping you feel good!</source>
-        <target>&lt;strong&gt;访问医生创建的世界级领先的在线知识库&lt;/strong&gt;的健康信息。我们致力于帮助您feel good！</target>
+        <target>&lt;strong&gt;访问医生创建的世界级领先的在线知识库&lt;/strong&gt;的健康信息。我们致力于帮助您Feel Good！</target>
       </trans-unit>
       <trans-unit id="1537" resname="r998415530" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Get beautiful, bite-sized tips of health information&lt;/strong&gt; created by doctors, personalized for you.</source>
-        <target>&lt;strong&gt;获得美丽的，很小的医生为您创建的专属于您的健康信息&lt;/strong&gt;小贴士。</target>
+        <target>&lt;strong&gt;获得美丽的、短小精悍的医生为您创建的专属于您的健康信息&lt;/strong&gt;小贴士。</target>
       </trans-unit>
       <trans-unit id="1538" resname="r997081439" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Take action to achieve your health goals&lt;/strong&gt; with our proprietary, customizable doctor-created checklists!</source>
@@ -6862,7 +6862,7 @@
       </trans-unit>
       <trans-unit id="1542" resname="r766985949" restype="string" datatype="ruby">
         <source>We have carefully vetted the doctors who perform Virtual Consults, and firmly believe that your next experience with HealthTap will make you smile and feel good.</source>
-        <target>我们仔细审查了进行在线咨询的医生，坚信您的下一次HealthTap体验的会让您微笑和感觉很好。</target>
+        <target>我们仔细审查了进行在线咨询的医生，坚信您的下一次HealthTap体验的会让您微笑和Feel Good。</target>
       </trans-unit>
       <trans-unit id="1543" resname="r57807735" restype="string" datatype="ruby">
         <source>In the meantime, we would love your comments on the experience, as we take our members’ feedback very seriously to improve and enhance our services.</source>
@@ -6906,7 +6906,7 @@
       </trans-unit>
       <trans-unit id="1551" resname="r938658758" restype="string" datatype="ruby">
         <source>Subscribe to Virtual Consults</source>
-        <target>订购在线咨询</target>
+        <target>订阅在线咨询</target>
       </trans-unit>
     </body>
   </file>
@@ -6954,15 +6954,15 @@
       </trans-unit>
       <trans-unit id="1559" resname="r878121557" restype="string" datatype="ruby">
         <source>Congratulations on taking the first step in managing your health and feeling good every day by becoming a HealthTap Prime member for %{time_period}!</source>
-        <target>恭喜您通过成为%{time_period}HealthTap Prime会员，采取每天管理您的健康和感觉很好的第一步！</target>
+        <target>恭喜您通过成为%{time_period}HealthTap Prime会员，采取每天管理您的健康和Feel Good的第一步！</target>
       </trans-unit>
       <trans-unit id="1560" resname="r69555759" restype="string" datatype="ruby">
         <source>Congratulations on taking the first step in managing your health and feeling good every day by becoming a HealthTap Prime member!</source>
-        <target>恭喜您通过成为HealthTap Prime会员，采取每天管理您的健康和感觉很好的第一步！</target>
+        <target>恭喜您通过成为HealthTap Prime会员，采取每天管理您的健康和Feel Good的第一步！</target>
       </trans-unit>
       <trans-unit id="1561" resname="r264794976" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Your trial extends through %{next_date}&lt;/strong&gt;. To continue your membership after this trial period, you don't need to do anything – your $%{price} payment at sign up will be applied to your first month's subscription. If, for any reason, you don't wish to continue, simply cancel online before %{next_date} and your first month's payment of $%{price} will be refunded to you.</source>
-        <target>&lt;strong&gt;您的试用期延伸到%{next_date} &lt;/strong&gt;。要在此试用期后继续您的会员资格，您不需要执行任何操作 - 您在注册时的$%{price}付款将用于您的第一个月的订购。如果由于任何原因，您不想继续，只需在%{next_date}之前在线取消，您的第一个月的付款$%{price}将退还给您。</target>
+        <target>&lt;strong&gt;您的试用期延伸到%{next_date} &lt;/strong&gt;。要在此试用期后继续您的会员资格，您不需要执行任何操作 - 您在注册时的$%{price}付款将用于您的第一个月的订阅。如果由于任何原因，您不想继续，只需在%{next_date}之前在线取消，您的第一个月的付款$%{price}将退还给您。</target>
       </trans-unit>
       <trans-unit id="1562" resname="r313391428" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Your free trial expires on %{next_date}&lt;/strong&gt;. After the free trial period, you'll be automatically charged $%{price} per month for the service. If, for any reason, you don't wish to continue please %{open_link}cancel the service%{close_link} before %{next_date}.</source>
@@ -6970,19 +6970,19 @@
       </trans-unit>
       <trans-unit id="1563" resname="r197361951" restype="string" datatype="ruby">
         <source>You'll have access to all the benefits of HealthTap Prime until your subscription expires on %{expiration_time}.</source>
-        <target>您可以访问HealthTap Prime的所有福利，直到您的订购在%{expiration_time}到期。</target>
+        <target>您可以访问HealthTap Prime的所有福利，直到您的订阅在%{expiration_time}到期。</target>
       </trans-unit>
       <trans-unit id="1564" resname="r915630152" restype="string" datatype="ruby">
         <source>You'll have access to all the benefits of HealthTap Prime until your subscription expired.</source>
-        <target>您可以访问HealthTap Prime的所有福利，直到您的订购到期。</target>
+        <target>您可以访问HealthTap Prime的所有福利，直到您的订阅到期。</target>
       </trans-unit>
       <trans-unit id="1565" resname="r565160936" restype="string" datatype="ruby">
         <source>Your annual membership to HealthTap Prime will be renewed automatically on %{next_date} unless you %{open_link}cancel your subscription%{close_link}.</source>
-        <target>除非您%{open_link}取消订购%{close_link}，否则您在HealthTap Prime的年度会员资格将在%{next_date}自动续订。</target>
+        <target>除非您%{open_link}取消订阅%{close_link}，否则您在HealthTap Prime的年度会员资格将在%{next_date}自动续订。</target>
       </trans-unit>
       <trans-unit id="1566" resname="r977592436" restype="string" datatype="ruby">
         <source>Your next charge will be on %{next_date}, after which you will be billed $%{price} automatically every %{freq} unless you %{open_link}cancel your subscription%{close_link}.</source>
-        <target>您的下一笔费用将在%{next_date}上，除非您%{open_link}取消订购%{close_link}，否则您将每%{freq}自动向您收取$%{price}</target>
+        <target>您的下一笔费用将在%{next_date}上，除非您%{open_link}取消订阅%{close_link}，否则您将每%{freq}自动向您收取$%{price}</target>
       </trans-unit>
       <trans-unit id="1567" resname="r974801714" restype="string" datatype="ruby">
         <source>Take advantage of all the wonderful things we offer! Get full access to all of HealthTap's standard benefits, plus:</source>
@@ -7038,7 +7038,7 @@
     <body>
       <trans-unit id="1581" resname="r442462188" restype="string" datatype="ruby">
         <source>We hope you have found HealthTap Prime helpful, and we're sorry to see you go. Your HealthTap Prime free-trial subscription has been cancelled, and you will not be charged for a HealthTap Prime subscription unless you subscribe again in the future.</source>
-        <target>我们希望您已经发现HealthTap Prime是有帮助的，并且我们很抱歉看到您的离开。您的HealthTap Prime免费试用订购已经取消，除非您以后再次订购，否则不会向您收取HealthTap Prime的订购费用。</target>
+        <target>我们希望您已经发现HealthTap Prime是有帮助的，并且我们很抱歉看到您的离开。您的HealthTap Prime免费试用订阅已经取消，除非您以后再次订阅，否则不会向您收取HealthTap Prime的订阅费用。</target>
       </trans-unit>
       <trans-unit id="1582" resname="r847468747" restype="string" datatype="ruby">
         <source>Before you go, we have have a special offer you may be interested in:</source>
@@ -7046,7 +7046,7 @@
       </trans-unit>
       <trans-unit id="1583" resname="r164450893" restype="string" datatype="ruby">
         <source>For a limited-time only, we're offering &lt;strong&gt;doctor consults without a subscription at a special discount&lt;/strong&gt; with our new %{open_link}Prime Bundles%{close_link}! Now, you can buy individual consults for you and your loved ones, without committing to a monthly subscription. It's a great deal, and won't be available for long!</source>
-        <target>我们将限时提供我们新推出的%{open_link}Prime套餐%{close_link}，没有订阅也可以享受&lt;strong&gt;特别折扣的医生咨询&lt;/strong&gt;！现在，您可以为您和您的亲人购买个人咨询，而不必承诺每月订购。这非常划算，但是不会提供很长时间！</target>
+        <target>我们将限时提供我们新推出的%{open_link}Prime套餐%{close_link}，没有订阅也可以享受&lt;strong&gt;特别折扣的医生咨询&lt;/strong&gt;！现在，您可以为您和您的亲人购买个人咨询，而不必承诺每月订阅。这非常划算，但是不会提供很长时间！</target>
       </trans-unit>
       <trans-unit id="1584" resname="r346170472" restype="string" datatype="ruby">
         <source>Get your bundle today</source>
@@ -7086,7 +7086,7 @@
       </trans-unit>
       <trans-unit id="1589" resname="r1019185901" restype="string" datatype="ruby">
         <source>Your HealthTap Prime free-trial subscription has been cancelled, and we’ve issued you a refund in the amount of %{amount}. You will not be charged for a HealthTap Prime subscription unless you subscribe again in the future.</source>
-        <target>您的HealthTap Prime免费试用订购已取消，我们已向您退款金额为%{amount}。除非您以后再次订购，否则不会向您收取HealthTap Prime的订购费用。</target>
+        <target>您的HealthTap Prime免费试用订阅已取消，我们已向您退款金额为%{amount}。除非您以后再次订阅，否则不会向您收取HealthTap Prime的订阅费用。</target>
       </trans-unit>
       <trans-unit id="1590" resname="r213065871" restype="string" datatype="ruby">
         <source>You still have access to all of HealthTap's free services and features that help you live healthier and happier: trusted answers from top doctors, helpful tips, personalized checklists, doctor-curated news, and more. You may also continue to use our HealthTap Concierge service to get help from your doctor or specialists of your choice in Concierge Virtual Consults.</source>
@@ -7102,7 +7102,7 @@
     <body>
       <trans-unit id="1592" resname="r693932101" restype="string" datatype="ruby">
         <source>We're sorry you are leaving HealthTap Prime. Your HealthTap Prime subscription is being cancelled, and you still have access to the Prime doctors and services through the end of this subscription period on %{billing_end_date}. You may re-subscribe to HealthTap Prime in the future after this subscription period ends.</source>
-        <target>关于您将离开HealthTap Prime，我们感到很抱歉。您的HealthTap Prime订购正在取消，您仍然可以在此订购周期%{billing_end_date}计费结束日期之内访问Prime医生和服务。您可以在此订购期结束后重新订购HealthTap Prime。</target>
+        <target>关于您将离开HealthTap Prime，我们感到很抱歉。您的HealthTap Prime订阅正在取消，您仍然可以在此订阅周期%{billing_end_date}计费结束日期之内访问Prime医生和服务。您可以在此订阅期结束后重新订阅HealthTap Prime。</target>
       </trans-unit>
       <trans-unit id="1593" resname="r671115728" restype="string" datatype="ruby">
         <source>We would appreciate any feedback you may have on how we can improve and provide you with better care on HealthTap. Please respond to this email with any feedback. Thank you for your help.</source>
@@ -7118,7 +7118,7 @@
       </trans-unit>
       <trans-unit id="1595" resname="r840521956" restype="string" datatype="ruby">
         <source>Your HealthTap Prime subscription is being cancelled, and you still have access to the Prime doctors and services through the end of this subscription period on %{billing_end_date}. You may re-subscribe to HealthTap Prime in the future after this subscription period ends.</source>
-        <target>您的HealthTap Prime订购正在取消，您仍然可以在此订购周期%{billing_end_date}计费结束日期之内访问Prime医生和服务。您可以在此订购期结束后重新订购HealthTap Prime。</target>
+        <target>您的HealthTap Prime订阅正在取消，您仍然可以在此订阅周期%{billing_end_date}计费结束日期之内访问Prime医生和服务。您可以在此订阅期结束后重新订阅HealthTap Prime。</target>
       </trans-unit>
       <trans-unit id="1596" resname="r671115728" restype="string" datatype="ruby">
         <source>We would appreciate any feedback you may have on how we can improve and provide you with better care on HealthTap. Please respond  to this email with any feedback.  Thank you for your help.</source>
@@ -7134,7 +7134,7 @@
       </trans-unit>
       <trans-unit id="1598" resname="r673890942" restype="string" datatype="ruby">
         <source>&lt;strong style="font-weight:400;" &gt;Check spelling of words and medicines:&lt;/strong&gt; Medications in different countries use different names, so be sure to include the generic name of the medication. Our experts are U.S.-licensed doctors and rarely answer questions about uniquely foreign medications they are not familiar with, or about hospitals or procedures in other countries that they have not visited.</source>
-        <target>&lt;strong style=”font-weight:400;” &gt;检查单词和药物的拼写：&lt;/strong&gt;不同国家/地区的药物使用不同的名称，因此请务必包含药物的通用名称。我们的专家是拥有美国执业执照的医生，很少回答关于他们不熟悉的国外独特的药物，或他们没有访问的其他国家的医院或临床操作的问题。</target>
+        <target>&lt;strong style=”font-weight:400;” &gt;检查单词和药物的拼写：&lt;/strong&gt;不同国家/地区的药物使用不同的名称，因此请务必包含药物的通用（仿制药）名称。我们的专家是拥有美国执业执照的医生，很少回答关于他们不熟悉的国外独特的药物，或他们没有访问的其他国家的医院或临床操作的问题。</target>
       </trans-unit>
       <trans-unit id="1599" resname="r83113449" restype="string" datatype="ruby">
         <source>Start your FREE trial</source>
@@ -7158,7 +7158,7 @@
       </trans-unit>
       <trans-unit id="1604" resname="r627748260" restype="string" datatype="ruby">
         <source>&lt;strong style="font-weight:400;" &gt;Ask meaningful questions:&lt;/strong&gt; Questions must include enough detail to be meaningful and answerable. Naming a topic (for example, “headache?”) without asking something specific, doesn,t give the doctor enough information to accurately answer. You can consider mentioning gender, duration, age range, or body area affected.</source>
-        <target>&lt;strong style=”font-weight:400;” &gt;询问有意义的问题：&lt;/strong&gt;问题必须包含足够有意义的和有责任的详细信息。命名一个专题（例如，“头痛？”）而不询问具体的东西，不给医生准确地回答的足够信息。您可以考虑提到有影响的性别，持续时间，年龄范围或身体区域。</target>
+        <target>&lt;strong style=”font-weight:400;” &gt;询问有意义的问题：&lt;/strong&gt;问题必须包含足够有意义的和有责任的详细信息。命名一个话题（例如，“头痛？”）而不询问具体的东西，不给医生准确地回答的足够信息。您可以考虑提到有影响的性别，持续时间，年龄范围或身体区域。</target>
       </trans-unit>
       <trans-unit id="1605" resname="r272142849" restype="string" datatype="ruby">
         <source>&lt;strong style="font-weight:400;" &gt;Stay private:&lt;/strong&gt; Do not include your name, names of other people, or doctors, names.</source>
@@ -7238,7 +7238,7 @@
       </trans-unit>
       <trans-unit id="1620" resname="r686211308" restype="string" datatype="ruby">
         <source>If you become a subscriber to HealthTap Prime, your questions will be prioritized, and you’ll get unlimited real-time video or audio consults with top doctors.</source>
-        <target>如果您成为HealthTap Prime的订购者，您的问题将优先并且您将获得与顶级医生无限的实时视频或音频咨询。</target>
+        <target>如果您成为HealthTap Prime的订阅者，您的问题将优先并且您将获得与顶级医生无限的实时视频或音频咨询。</target>
       </trans-unit>
       <trans-unit id="1621" resname="r519672901" restype="string" datatype="ruby">
         <source>Become a Premium Member</source>
@@ -7302,7 +7302,7 @@
     <body>
       <trans-unit id="1632" resname="r141587085" restype="string" datatype="ruby">
         <source>We've received your question—thank you! We’re  hard at work getting you a helpful doctor’s answer as quickly as possible. We’re eager to find the right answer for you and to help you feel good!</source>
-        <target>我们已收到您的问题 - 谢谢！我们正在努力工作，尽快让您得到帮助的医生的回答。我们渴望为您找到正确的回答，并帮助您feel good！</target>
+        <target>我们已收到您的问题 - 谢谢！我们正在努力工作，尽快让您得到帮助的医生的回答。我们渴望为您找到正确的回答，并帮助您Feel Good！</target>
       </trans-unit>
       <trans-unit id="1633" resname="r514033514" restype="string" datatype="ruby">
         <source>We’ll send you an email as soon as your question has been answered—it should be very soon!</source>
@@ -7322,11 +7322,11 @@
       </trans-unit>
       <trans-unit id="1636" resname="r51439211" restype="string" datatype="ruby">
         <source>Even better, %{agree_expert} is now available to connect for a live virtual consultation through HealthTap Concierge! You can schedule a follow-up appointment if you still have any questions.</source>
-        <target>更好的是，%{agree_expert}现在可以通过HealthTap贵宾台连接进行实时在线咨询！如果您还有任何问题，可以安排后续预约。</target>
+        <target>更好的是，%{agree_expert}现在可以通过HealthTap贵宾台连接进行实时在线咨询！如果您还有任何问题，可以安排随访预约。</target>
       </trans-unit>
       <trans-unit id="1637" resname="r955581650" restype="string" datatype="ruby">
         <source>Follow up with %{agree_expert}</source>
-        <target>后续与%{agree_expert}</target>
+        <target>随访与%{agree_expert}</target>
       </trans-unit>
     </body>
   </file>
@@ -7386,7 +7386,7 @@
       </trans-unit>
       <trans-unit id="1648" resname="r1013852768" restype="string" datatype="ruby">
         <source>If you’d like to get your question answered faster, you can also become a HealthTap Prime subscriber for priority status in receiving answers. Being a HealthTap Prime subscriber also gives you unlimited real-time video or audio Virtual Consults with top doctors so you can ask your question of a doctor personally.</source>
-        <target>如果您想更快地得到您问题的回答，您也可以成为一个在接收回答时是优先级状态的HealthTap Prime订购户。作为HealthTap Prime订购者还为您提供与顶级的医生无限的实时视频或音频在线咨询，所以您可以当面向医生提出您的问题。</target>
+        <target>如果您想更快地得到您问题的回答，您也可以成为一个在接收回答时是优先级状态的HealthTap Prime订阅户。作为HealthTap Prime订阅者还为您提供与顶级的医生无限的实时视频或音频在线咨询，所以您可以当面向医生提出您的问题。</target>
       </trans-unit>
       <trans-unit id="1651" resname="r945353894" restype="string" datatype="ruby">
         <source>We encourage you to look around HealthTap+ at other questions, tips, checklists, and relevant information, and use it to improve your question. With our huge database of questions and health topics, chances are you’ll find similar questions that have the answer you’re looking for.</source>
@@ -7434,11 +7434,11 @@
       </trans-unit>
       <trans-unit id="1658" resname="r546310851" restype="string" datatype="ruby">
         <source>Become a HealthTap Prime subscriber</source>
-        <target>成为一个HealthTap Prime订购者</target>
+        <target>成为一个HealthTap Prime订阅者</target>
       </trans-unit>
       <trans-unit id="1659" resname="r36556795" restype="string" datatype="ruby">
         <source>If you’d like to get your question answered more quickly, you can become a HealthTap Prime  subscriber for priority status in receiving answers. Being a HealthTap Prime  subscriber also gives you unlimited real-time video or audio consults with top doctors so you can ask your question of a doctor personally.</source>
-        <target>如果您想更快地得到您问题的回答，您可以成为一个在接收回答时是优先级状态的HealthTap Prime订购者。作为HealthTap Prime订购者还为您提供与顶级的医生无限的实时视频或音频咨询，所以您可以当面向医生提出您的问题。</target>
+        <target>如果您想更快地得到您问题的回答，您可以成为一个在接收回答时是优先级状态的HealthTap Prime订阅者。作为HealthTap Prime订阅者还为您提供与顶级的医生无限的实时视频或音频咨询，所以您可以当面向医生提出您的问题。</target>
       </trans-unit>
       <trans-unit id="1660" resname="r451419695" restype="string" datatype="ruby">
         <source>Review similar content</source>
@@ -7470,7 +7470,7 @@
       </trans-unit>
       <trans-unit id="1666" resname="r447650743" restype="string" datatype="ruby">
         <source>If you’d like to get your question answered more quickly, you can become a Prime subscriber for priority status in receiving answers. Being a Prime subscriber also gives you unlimited  real-time  video, audio, or text consults so you can ask your question of a doctor  personally anytime from anywhere.</source>
-        <target>如果您想更快地得到您问题的回答，您也可以成为一个在接收回答时是优先级状态的HealthTap Prime订购者。作为HealthTap Prime订购者还为您提供与顶级的医生无限的实时视频，音频或文本咨询，所以您可以随时随地当面向医生提出您的问题。</target>
+        <target>如果您想更快地得到您问题的回答，您也可以成为一个在接收回答时是优先级状态的HealthTap Prime订阅者。作为HealthTap Prime订阅者还为您提供与顶级的医生无限的实时视频，音频或文本咨询，所以您可以随时随地当面向医生提出您的问题。</target>
       </trans-unit>
       <trans-unit id="1667" resname="r508897165" restype="string" datatype="ruby">
         <source>Talk to a Doctor</source>
@@ -7522,7 +7522,7 @@
       </trans-unit>
       <trans-unit id="1676" resname="r605097617" restype="string" datatype="ruby">
         <source>Medication prescriptions, lab tests ordered and reviewed, and referrals</source>
-        <target>药物处方，实验室检验订购和审查，以及转诊记录</target>
+        <target>药物处方，实验室检验订阅和审查，以及转诊记录</target>
       </trans-unit>
       <trans-unit id="1677" resname="r227842177" restype="string" datatype="ruby">
         <source>The ability to communicate with your doctor from any mobile device or computer!</source>
@@ -7586,15 +7586,15 @@
     <body>
       <trans-unit id="1690" resname="r930627000" restype="string" datatype="ruby">
         <source>Your message subscription to %{expert} has been canceled. If this is a mistake, simply click on the link below to re-subscribe.</source>
-        <target>您对%{expert}的邮件订购已取消。如果这是一个错误，只需点击下面的链接重新订购。</target>
+        <target>您对%{expert}的邮件订阅已取消。如果这是一个错误，只需点击下面的链接重新订阅。</target>
       </trans-unit>
       <trans-unit id="1691" resname="r632957540" restype="string" datatype="ruby">
         <source>If you would like to reconnect with %{expert} in the future for medical advice, prescriptions, lab tests, and more, you can re-subscribe by clicking the link below.</source>
-        <target>如果您日后想要与%{expert}重新连接，以获得医疗建议，处方，实验室检验等，您可以点击以下链接重新订购。</target>
+        <target>如果您日后想要与%{expert}重新连接，以获得医疗建议，处方，实验室检验等，您可以点击以下链接重新订阅。</target>
       </trans-unit>
       <trans-unit id="1692" resname="r957880334" restype="string" datatype="ruby">
         <source>%{expert} is also available by one-time message consults for advice, prescriptions, lab tests ordering and more %{open_link}here ›%{close_link}.</source>
-        <target>%{open_link}这里&gt;%{close_link}，%{expert}也可通过一次性消息咨询，以获得建议，处方，实验室检验订购和更多。</target>
+        <target>%{open_link}这里&gt;%{close_link}，%{expert}也可通过一次性消息咨询，以获得建议，处方，实验室检验订阅和更多。</target>
       </trans-unit>
       <trans-unit id="1694" resname="r381263748" restype="string" datatype="ruby">
         <source>Naveen and the HealthTap Team</source>
@@ -7607,11 +7607,11 @@
     <body>
       <trans-unit id="1695" resname="r479349034" restype="string" datatype="ruby">
         <source>We’re happy to see that you’re taking control of your health with your message subscription to %{expert}. This message subscription means you can send %{expert} as many messages as you need—and %{expert} can respond with advice, write prescriptions, order lab tests, and more! We wanted to let you know that %{expert} changed the price for his message subscription service to %{price}.</source>
-        <target>我们很高兴看到您通过订购%{expert}的消息来控制您的健康状况。这个消息订购意味着您可以发送%{expert}尽可能多的消息—和%{expert}可以回复咨询，开处方，订购实验室检验和更多！我们想让您知道，%{expert}将他的邮件订购服务的价格更改为%{price}。</target>
+        <target>我们很高兴看到您通过订阅%{expert}的消息来控制您的健康状况。这个消息订阅意味着您可以发送%{expert}尽可能多的消息—和%{expert}可以回复咨询，开处方，订阅实验室检验和更多！我们想让您知道，%{expert}将他的邮件订阅服务的价格更改为%{price}。</target>
       </trans-unit>
       <trans-unit id="1696" resname="r898307529" restype="string" datatype="ruby">
         <source>We’re happy to see that you’re taking control of your health with your message subscription to %{expert}. This message subscription means you can send %{expert} as many messages as you need—and %{expert} can respond with advice, write prescriptions, order lab tests, and more!</source>
-        <target>我们很高兴看到您通过订购%{expert}的消息来控制您的健康状况。这个消息订购意味着您可以发送%{expert}尽可能多的消息—和%{expert}可以回复咨询，开处方，订购实验室检验和更多！</target>
+        <target>我们很高兴看到您通过订阅%{expert}的消息来控制您的健康状况。这个消息订阅意味着您可以发送%{expert}尽可能多的消息—和%{expert}可以回复咨询，开处方，订阅实验室检验和更多！</target>
       </trans-unit>
       <trans-unit id="1697" resname="r5107147" restype="string" datatype="ruby">
         <source>This is a reminder that you will be charged %{price} on %{date}. You can %{open_link}cancel%{close_link} anytime you want.</source>
@@ -7623,11 +7623,11 @@
     <body>
       <trans-unit id="1698" resname="r641821199" restype="string" datatype="ruby">
         <source>%{expert} has decided to discontinue the message subscription service. %{expert} will continue providing this service for you until the end of your current cycle after which this subscription will be canceled.</source>
-        <target>%{expert}已决定停止消息订购服务。%{expert}将继续为您提供此服务，直到当前周期结束，此后该订购将被取消。</target>
+        <target>%{expert}已决定停止消息订阅服务。%{expert}将继续为您提供此服务，直到当前周期结束，此后该订阅将被取消。</target>
       </trans-unit>
       <trans-unit id="1699" resname="r1009226361" restype="string" datatype="ruby">
         <source>%{expert}, %{specialty} offers message subscriptions for %{money}. At any point, if you would like you can message subscribe to %{expert} here ›.</source>
-        <target>%{expert}，%{specialty}提供%{money}的邮件订购。在任何时候，如果您希望您可以在这里消息订购%{expert} ›。</target>
+        <target>%{expert}，%{specialty}提供%{money}的邮件订阅。在任何时候，如果您希望您可以在这里消息订阅%{expert} ›。</target>
       </trans-unit>
     </body>
   </file>
@@ -7635,7 +7635,7 @@
     <body>
       <trans-unit id="1700" resname="r958884504" restype="string" datatype="ruby">
         <source>Congratulations on getting a message subscription to %{expert}. With this message subscription, getting answers to your health concerns from %{expert} is now easier than ever. You can send as many messages as you need, and %{expert} can respond with advice, write prescriptions, order lab tests, and more!</source>
-        <target>恭喜您收到%{expert}的邮件订购。使用此邮件订购，比以往更容易的从%{expert}获取对您的健康担忧的回答。您可以根据需要发送尽可能多的邮件，%{expert}可以回复咨询，开处方，订购实验室检验等和更多！</target>
+        <target>恭喜您收到%{expert}的邮件订阅。使用此邮件订阅，比以往更容易的从%{expert}获取对您的健康担忧的回答。您可以根据需要发送尽可能多的邮件，%{expert}可以回复咨询，开处方，订阅实验室检验等和更多！</target>
       </trans-unit>
       <trans-unit id="1701" resname="r1057233741" restype="string" datatype="ruby">
         <source>You have been charged %{number_to_currencymessage_subscription_price}. Your next charge will be on %{next_due_date}.</source>
@@ -7651,7 +7651,7 @@
     <body>
       <trans-unit id="1703" resname="r640416995" restype="string" datatype="ruby">
         <source>&lt;strong&gt;As many consults&lt;/strong&gt; with doctors as needed, 24/7 on any PC or mobile device!</source>
-        <target>在任何个人电脑或移动设备上24/7全天候，&lt;strong&gt;根据医生需要的许多咨询&lt;/strong&gt;！</target>
+        <target>在任何个人电脑或移动设备上24/7全天候，&lt;strong&gt;清单是一个为您保持健康的好帮手&lt;/strong&gt;！</target>
       </trans-unit>
       <trans-unit id="1705" resname="r947180065" restype="string" datatype="ruby">
         <source>What to Expect with HealthTap Prime</source>
@@ -7691,7 +7691,7 @@
     <body>
       <trans-unit id="1715" resname="r849950672" restype="string" datatype="ruby">
         <source>Congratulations on subscribing to your first checklist! You'll feel good taking action to accomplish your health goal of “%{checklist}” And you'll have the convenience of getting a doctor's reminder just for you. Here’s what to expect from adding this checklist to your profile:</source>
-        <target>恭喜您订购了您的第一份清单！您会feel good的采取行动，完成您的健康目标“%{checklist}”并且您会有只为您的方便的医生提醒。将此检查清单添加到您的个人资料的期望以下：</target>
+        <target>恭喜您订阅了您的第一份清单！您会feel good的采取行动，完成您的健康目标“%{checklist}”并且您会有只为您的方便的医生提醒。将此检查清单添加到您的个人资料的期望以下：</target>
       </trans-unit>
       <trans-unit id="1716" resname="r458506035" restype="string" datatype="ruby">
         <source>Stay engaged with your health by receiving checklists and reminders</source>
@@ -7699,7 +7699,7 @@
       </trans-unit>
       <trans-unit id="1717" resname="r903292956" restype="string" datatype="ruby">
         <source>Get better care from our doctors</source>
-        <target>从我们的医生得到更好的医护</target>
+        <target>从我们的医生那里得到更好的医护</target>
       </trans-unit>
       <trans-unit id="1718" resname="r484678173" restype="string" datatype="ruby">
         <source>Get reminders by email and mobile device notification</source>
@@ -7715,7 +7715,7 @@
       </trans-unit>
       <trans-unit id="1721" resname="r458448172" restype="string" datatype="ruby">
         <source>You control the reminders you receive: you can unsubscribe from receiving reminders via email, push notification, or both.  You can do this for any specific item on a checklist %{open_link}via the menu available in the top right corner of an action item%{close_link}, from an entire checklist, or from email and push notifications in general %{open_link_2}via your settings%{close_link}.</source>
-        <target>您可以控制您收到的提醒：您可以通过电子邮件，推送通知或两者接收提醒取消订购。%{open_link}通过您的设置%{close_link}您可以为任何具体的清单上的项目%{open_link_2}通过行动项目右上角的菜单%{close_link}，从整个清单，或从通常的电子邮件和推送通知。</target>
+        <target>您可以控制您收到的提醒：您可以通过电子邮件，推送通知或两者接收提醒取消订阅。%{open_link}通过您的设置%{close_link}您可以为任何具体的清单上的项目%{open_link_2}通过行动项目右上角的菜单%{close_link}，从整个清单，或从通常的电子邮件和推送通知。</target>
       </trans-unit>
     </body>
   </file>
@@ -7819,7 +7819,7 @@
     <body>
       <trans-unit id="1740" resname="r70091936" restype="string" datatype="ruby">
         <source>I’m sorry to hear that you had a 2-star experience on HealthTap. I'm here to provide you with the best possible healthcare experience – with the end goal of helping you feel good. If there’s anything I can do to help, please let me know.</source>
-        <target>我很抱歉听到您在HealthTap上有一个2星级的体验。我在这里为您提供可能达到最好的医疗体验 – 以帮助您feel good为最终目标。如果有任何我可以提供的帮助，请告诉我。</target>
+        <target>我很抱歉听到您在HealthTap上有一个2星级的体验。我在这里为您提供可能达到最好的医疗体验 – 以帮助您Feel Good为最终目标。如果有任何我可以提供的帮助，请告诉我。</target>
       </trans-unit>
       <trans-unit id="1741" resname="r220571691" restype="string" datatype="ruby">
         <source>If you’re available to share how we can improve your experience, I'd love to connect on a brief call. If so, please let me know the best number at which to reach you and convenient times for a call. Thanks for sharing your feedback with us.</source>
@@ -7839,7 +7839,7 @@
     <body>
       <trans-unit id="1744" resname="r37751152" restype="string" datatype="ruby">
         <source>I’m sorry to hear that you had a 1-star experience on HealthTap. I'm here to provide you with the best possible healthcare experience – with the end goal of helping you feel good. If there’s anything I can do to help, please let me know.</source>
-        <target>我很抱歉听到您在HealthTap上有一个1星级的体验。我在这里为您提供可能达到最好的医疗体验 – 以帮助您feel good为最终目标。如果有任何我可以提供的帮助，请告诉我。</target>
+        <target>我很抱歉听到您在HealthTap上有一个1星级的体验。我在这里为您提供可能达到最好的医疗体验 – 以帮助您Feel Good为最终目标。如果有任何我可以提供的帮助，请告诉我。</target>
       </trans-unit>
     </body>
   </file>
@@ -7972,15 +7972,15 @@
     <body>
       <trans-unit id="1769" resname="r910491485" restype="string" datatype="ruby">
         <source>We hope you’re enjoying peace of mind with your HealthTap Prime subscription, now that you have top doctor expertise and care at your fingertips, 24/7!</source>
-        <target>我们希望您享受您的HealthTap Prime订购的安心，现在您拥有全天24小时就在您指尖的顶级医生的专业知识和关爱！</target>
+        <target>我们希望您享受您的HealthTap Prime订阅的安心，现在您拥有全天24小时就在您指尖的顶级医生的专业知识和关爱！</target>
       </trans-unit>
       <trans-unit id="1770" resname="r98256317" restype="string" datatype="ruby">
         <source>We wanted to remind you that your free trial ends in three days on %{next_due_date}, after which you will be charged $%{price_in_usd} every %{frequency}. If you’d like to discontinue your trial, you may always cancel your subscription.</source>
-        <target>我们想提醒您，您的免费试用期将于三天内(%{next_due_date})结束，之后您将每%{frequency}按$%{price_in_usd}付费。如果您希望停止试用，可以随时取消您的订购。</target>
+        <target>我们想提醒您，您的免费试用期将于三天内(%{next_due_date})结束，之后您将每%{frequency}按$%{price_in_usd}付费。如果您希望停止试用，可以随时取消您的订阅。</target>
       </trans-unit>
       <trans-unit id="1771" resname="r323513387" restype="string" datatype="ruby">
         <source>As a valued Prime member, you can continue enjoying some amazing benefits of your subscription:</source>
-        <target>作为尊贵的Prime会员，您可以继续享受您的订购的一些神奇好处：</target>
+        <target>作为尊贵的Prime会员，您可以继续享受您的订阅的一些神奇好处：</target>
       </trans-unit>
       <trans-unit id="1772" resname="r393513258" restype="string" datatype="ruby">
         <source>Personalized reminders and tips from doctors to help you take action and feel good</source>
@@ -8056,7 +8056,7 @@
       </trans-unit>
       <trans-unit id="1786" resname="r584908175" restype="string" datatype="ruby">
         <source>Before you leave us, we’d appreciate it if you %{open_link}reach out%{close_link} to our Quality Care team and tell us why you’re going. We’d be delighted to help in any way to ensure you had a wonderful experience at HealthTap and feel good every day.</source>
-        <target>在您离开我们之前，如果您%{open_link}与我们的质量保证团队联系%{close_link}，并告诉我们您的原因，我们将不胜感激。我们很乐意以任何方式提供帮助确保您在HealthTap有一个美好的体验，每一天都感觉很好。</target>
+        <target>在您离开我们之前，如果您%{open_link}与我们的质量保证团队联系%{close_link}，并告诉我们您的原因，我们将不胜感激。我们很乐意以任何方式提供帮助确保您在HealthTap有一个美好的体验，每一天都Feel Good。</target>
       </trans-unit>
       <trans-unit id="1787" resname="r303654817" restype="string" datatype="ruby">
         <source>So … are you sure you want to go? Think of what you’ll miss!</source>
@@ -8100,7 +8100,7 @@
       </trans-unit>
       <trans-unit id="1796" resname="r511998808" restype="string" datatype="ruby">
         <source>%{expert} also ordered tests for you during your consult.</source>
-        <target>%{expert}还在您咨询期间为您订购了检验。</target>
+        <target>%{expert}还在您咨询期间为您订阅了检验。</target>
       </trans-unit>
       <trans-unit id="1797" resname="r610256485" restype="string" datatype="ruby">
         <source>We recommend that you find a local test center and schedule an appointment to complete testing.</source>
@@ -8248,7 +8248,7 @@
     <body>
       <trans-unit id="1825" resname="r177501776" restype="string" datatype="ruby">
         <source>We’re delighted that your virtual consult with %{expert} was a success! Having a primary care doctor on call, 24/7 provides a level of care unlike any other service. You can now follow up with a &lt;strong&gt;specialist&lt;/strong&gt; on HealthTap Concierge–where you can get second opinions, schedule online appointments, get prescriptions/refills, and more. You can even invite your personal doctor to use HealthTap Concierge for virtual consults with you.</source>
-        <target>我们很高兴您与%{expert}的在线咨询取得了成功！有一名普通门诊医生随传随到，不像任何其他服务，全天24小时提供了一级医护。您现在可以在HealthTap贵宾台上可以&lt;strong&gt;跟进&lt;/strong&gt;专家，您可以在其中获取第二意见，安排在线预约，获取处方/再配方等。您甚至可以邀请您的私人医生使用HealthTap贵宾台与您进行在线咨询。</target>
+        <target>我们很高兴您与%{expert}的在线咨询取得了成功！有一名普通门诊医生随传随到，不像任何其他服务，全天24小时提供一级医护。您现在可以在HealthTap贵宾台上可以&lt;strong&gt;跟进&lt;/strong&gt;专家，您可以在其中获取第二意见，安排在线预约，获取处方/补充药方等。您甚至可以邀请您的私人医生使用HealthTap贵宾台与您进行在线咨询。</target>
       </trans-unit>
       <trans-unit id="1826" resname="r471816485" restype="string" datatype="ruby">
         <source>&lt;strong&gt;Remember:&lt;/strong&gt; as a Prime member you get a &lt;strong&gt;&lt;i&gt;special discount&lt;/strong&gt;&lt;/i&gt; on consultations with Concierge doctors. We’ve even matched you with a suggested specialist; simply schedule an appointment to get started.</source>
@@ -8264,7 +8264,7 @@
     <body>
       <trans-unit id="1828" resname="r902658277" restype="string" datatype="ruby">
         <source>We’re delighted that your virtual consult with %{expert} was a success! Now’s the perfect time to schedule a follow up appointment with %{expert} to make sure you’re still feeling great.</source>
-        <target>我们很高兴您与%{expert}的在线咨询取得了成功！现在是与%{expert}安排复诊预约的完美时间，以确保您仍然感觉很好。</target>
+        <target>我们很高兴您与%{expert}的在线咨询取得了成功！现在是与%{expert}安排复诊预约的完美时间，以确保您仍然Feel Good。</target>
       </trans-unit>
     </body>
   </file>
@@ -8352,7 +8352,7 @@
       </trans-unit>
       <trans-unit id="1849" resname="r303462439" restype="string" datatype="ruby">
         <source>You won’t be charged $99/month for 15 days. Cancel anytime, 100% guarantee.</source>
-        <target>我们不会向您收取每月$99/15天的费用。随时取消，100％保证。</target>
+        <target>在前15天我们不会向您收取每月$99的费用。随时取消，100％保证。</target>
       </trans-unit>
     </body>
   </file>
@@ -8436,7 +8436,7 @@
       </trans-unit>
       <trans-unit id="1868" resname="r462300896" restype="string" datatype="ruby">
         <source>I look forward to connecting with you and helping you feel good!</source>
-        <target>我期待着与您联系，帮助您feel good！</target>
+        <target>我期待着与您联系，帮助您Feel Good！</target>
       </trans-unit>
     </body>
   </file>
@@ -8476,7 +8476,7 @@
       </trans-unit>
       <trans-unit id="1877" resname="r461309004" restype="string" datatype="ruby">
         <source>Cost of a co-pay</source>
-        <target>花费共同支付</target>
+        <target>共同支付费用</target>
       </trans-unit>
       <trans-unit id="1878" resname="r50398380" restype="string" datatype="ruby">
         <source>Great news! %{expert} would like to offer you a virtual visit for only %{discount_price}. You can get advice and even prescriptions directly from your smartphone or computer, without leaving home or talking time off of work.</source>
@@ -8512,7 +8512,7 @@
       </trans-unit>
       <trans-unit id="1885" resname="r597971811" restype="string" datatype="ruby">
         <source>Accept %{expert}'s invitation to join %{expert} virtual practice. Get your health questions answered, prescriptions sent to you local pharmacy, lab tests ordered, and so much more—all from your phone or computer. With %{expert} on your doctor care-team, you'll have access to a doctor whenever you need it, wherever you are.</source>
-        <target>接受%{expert}邀请加入%{expert}的在线诊疗。让您的健康问题得到回答，发送给您当地药房的处方，订购实验室检验，以及更多—所有都可以在您的手机或计算机。通过%{expert}您的医护团队，无论您在哪里，您都可以随时随地访问医生。</target>
+        <target>接受%{expert}邀请加入%{expert}的在线诊疗。让您的健康问题得到回答，发送给您当地药房的处方，订阅实验室检验，以及更多—所有都可以在您的手机或计算机。通过%{expert}您的医护团队，无论您在哪里，您都可以随时随地访问医生。</target>
       </trans-unit>
     </body>
   </file>
@@ -8540,7 +8540,7 @@
       </trans-unit>
       <trans-unit id="1890" resname="r203432862" restype="string" datatype="ruby">
         <source>Have ultimate peace of mind with %{expert} on your Care-Team. When a medical question arises you'll feel good knowing that with just the touch of a button you can connect with a doctor you can trust. And if needed, you can get prescriptions or labs test ordered right from your consult.</source>
-        <target>有%{expert}您的医护团队，可以安心。当一个医疗问题出现，您只需点击一个按钮，就可以与您可以信任的医生取得联系，您将feel good。如果需要，您可以从您的咨询获取处方或实验室检验订购。</target>
+        <target>有%{expert}您的医护团队，可以安心。当一个医疗问题出现，您只需点击一个按钮，就可以与您可以信任的医生取得联系，您将feel good。如果需要，您可以从您的咨询获取处方或实验室检验订阅。</target>
       </trans-unit>
       <trans-unit id="1891" resname="r364134811" restype="string" datatype="ruby">
         <source>Join %{expert}'s virtual practice today by accepting your invitation below:</source>
@@ -8624,7 +8624,7 @@
       </trans-unit>
       <trans-unit id="1908" resname="r174173957" restype="string" datatype="ruby">
         <source>Remember, there are lots of things that can managed without an office visit. Through HealthTap Concierge, a doctor may refill prescriptions, answer questions, and share insights specific to you and your health concerns and goals.</source>
-        <target>请牢记，有很多事情可以在没有办公室访问的情况下进行管理。通过HealthTap贵宾台，医生可以再配方处方，回答问题，并分享关于您特定的观察以及您的健康担忧和目标。</target>
+        <target>请牢记，有很多事情可以在没有办公室访问的情况下进行管理。通过HealthTap贵宾台，医生可以补充药方，回答问题，并分享关于您特定的观察以及您的健康担忧和目标。</target>
       </trans-unit>
     </body>
   </file>
@@ -8660,7 +8660,7 @@
       </trans-unit>
       <trans-unit id="1915" resname="r125745" restype="string" datatype="ruby">
         <source>We hadn’t heard back from you and wanted to see if you’d like to schedule your first Virtual Consult with %{expert}. You can talk about any health concerns or questions you have, and you’ll save yourself the trip to the doctor's office. With HealthTap Concierge, we can connect from your smartphone, laptop, or tablet – from wherever you are – plus you can get the medications and prescription refills you need (as medically appropriate).</source>
-        <target>我们没有收到您的回复，希望了解您是否希望安排与%{expert}的第一次在线咨询。您可以谈论您的任何健康担忧或问题，您会省去一趟去医生办公室的奔波。有了HealthTap贵宾台，无论您身在何处，我们可以从您的智能手机，笔记本电脑或平板电脑进行连接，并且您可以得到您需要的药物和再配方处方（医疗上适当地）。</target>
+        <target>我们没有收到您的回复，希望了解您是否希望安排与%{expert}的第一次在线咨询。您可以谈论您的任何健康担忧或问题，您会省去一趟去医生办公室的奔波。有了HealthTap贵宾台，无论您身在何处，我们可以从您的智能手机，笔记本电脑或平板电脑进行连接，并且您可以得到您需要的药物和补充药方（医疗上适当地）。</target>
       </trans-unit>
     </body>
   </file>
@@ -8900,7 +8900,7 @@
       </trans-unit>
       <trans-unit id="1963" resname="r539355093" restype="string" datatype="ruby">
         <source>. If you experienced a technical problem, let us know. If something urgent came up, you can schedule a new Virtual Appointment for a time that works for you.</source>
-        <target>.如果您遇到技术问题，请告诉我们。如果有紧急事情，您可以安排一个新的在线预约为您工作一段时间。</target>
+        <target>.如果您遇到技术问题，请告诉我们。如果有紧急事情，您可以安排一个新的在线预约。</target>
       </trans-unit>
       <trans-unit id="1965" resname="r1067125206" restype="string" datatype="ruby">
         <source>Do you have any questions or concerns? Please</source>
@@ -8924,7 +8924,7 @@
       </trans-unit>
       <trans-unit id="1969" resname="r770507603" restype="string" datatype="ruby">
         <source>If you’re interested, we found another doctor on HealthTap Concierge who may also be able to help instead of %{expert}. %{suggested_expert}, a %{specialist} with %{suggested_expert}  years in practice is available. Would you like to reschedule an appointment with %{suggested_expert} instead, at no additional charge?</source>
-        <target>如果您有兴趣，我们在HealthTap贵宾台找到了另一位可以帮助您而代替%{expert}的医生。%{suggested_expert}, 有%{suggested_expert}年诊疗的%{specialist}可以为您服务。您希望与替代的%{suggested_expert}重新安排预约时间，而不收取额外费用吗？</target>
+        <target>如果您有兴趣，我们在HealthTap贵宾台找到了另一位可以帮助您而代替%{expert}的医生。%{suggested_expert}, 有%{suggested_expert}年诊疗经验的%{specialist}可以为您服务。您希望与替代的%{suggested_expert}重新安排预约时间，而不收取额外费用吗？</target>
       </trans-unit>
       <trans-unit id="1970" resname="r427697351" restype="string" datatype="ruby">
         <source>If you still need help, we have a team of top primary care doctors online 24/7 who may be able to provide you with advice or treatment.  Would you like to send your message a primary care doctor right now?</source>
@@ -9032,7 +9032,7 @@
       </trans-unit>
       <trans-unit id="1991" resname="r496813422" restype="string" datatype="ruby">
         <source>We hope this answer helped you feel good. If it did, make the %{expert} feel good in return with a heartfelt thank you! It just takes a second!</source>
-        <target>我们希望这个回答帮助您feel good。如果是这样，回报衷心的感谢使%{expert}feel good！它只需要一秒！</target>
+        <target>我们希望这个回答帮助您Feel Good。如果是这样，回报衷心的感谢使%{expert}feel good！它只需要一秒！</target>
       </trans-unit>
     </body>
   </file>
@@ -9044,7 +9044,7 @@
       </trans-unit>
       <trans-unit id="1994" resname="r204555380" restype="string" datatype="ruby">
         <source>Even better, %{comment_expert} is now available to connect for a live virtual consultation through HealthTap Concierge! You can schedule a follow-up appointment if you still have any questions.</source>
-        <target>更好的是，%{comment_expert}现在可以通过HealthTap贵宾台连接进行实时在线咨询！如果您还有任何问题，可以安排后续预约。</target>
+        <target>更好的是，%{comment_expert}现在可以通过HealthTap贵宾台连接进行实时在线咨询！如果您还有任何问题，可以安排随访预约。</target>
       </trans-unit>
       <trans-unit id="1995" resname="r40243034" restype="string" datatype="ruby">
         <source>Follow up with %{comment_expert}</source>
@@ -9164,7 +9164,7 @@
       </trans-unit>
       <trans-unit id="7790" resname="r918774171" restype="string" datatype="x-haml">
         <source>To help people feel good, and measurably prolong the life</source>
-        <target>帮助人们感觉很好，并通过随时随地访问</target>
+        <target>帮助人们Feel Good，并通过随时随地访问</target>
       </trans-unit>
       <trans-unit id="7791" resname="r889979875" restype="string" datatype="x-haml">
         <source>expectancy of humankind by providing immediate access to</source>
@@ -9212,7 +9212,7 @@
       </trans-unit>
       <trans-unit id="7802" resname="r703006298" restype="string" datatype="x-haml">
         <source>by educating them and getting them to take action. Empower people with checklists and tips so they can proactively seize control of their health. And smile as you reconnect with your original excitement for practicing medicine.</source>
-        <target>并通过教育他们，让他们采取行动，帮助数百万人感觉很好。给予人们清单和小贴士，以便他们可以主动地掌握和管理他们的健康。微笑的重新连接原来使您兴奋的诊疗医学。</target>
+        <target>并通过教育他们，让他们采取行动，帮助数百万人Feel Good。给予人们清单和小贴士，以便他们可以主动地掌握和管理他们的健康。微笑的重新连接原来使您兴奋的诊疗医学。</target>
       </trans-unit>
       <trans-unit id="7803" resname="r533872628" restype="string" datatype="x-haml">
         <source>Learn from other top doctors</source>
@@ -9456,19 +9456,19 @@
       </trans-unit>
       <trans-unit id="7863" resname="r369456508" restype="string" datatype="x-haml">
         <source>via audio or video conferences and gets well</source>
-        <target>通过音频或视频会议，并得到良好的</target>
+        <target>通过音频或视频会议，并通过专业知识、</target>
       </trans-unit>
       <trans-unit id="7864" resname="r433326882" restype="string" datatype="x-haml">
         <source>compensated for their expert, compassionate, and</source>
-        <target>补偿他们的专家，同情心和</target>
+        <target>同情心和关怀</target>
       </trans-unit>
       <trans-unit id="7865" resname="r260576211" restype="string" datatype="x-haml">
         <source>empathic care of</source>
-        <target>同情投入的关心</target>
+        <target>得到良好的报酬</target>
       </trans-unit>
       <trans-unit id="7866" resname="r888618104" restype="string" datatype="x-haml">
         <source>HeathTap Concierge is a private paid video or text connection between you and your patients from anywhere in the world at your convenience.</source>
-        <target>HeathTap贵宾台是您和您的患者之间在世界上任何您方便的地方私人的付费视频或文本连接。</target>
+        <target>HeathTap贵宾台是您和您的患者之间、在世界上任何地方进行的私人付费视频或文本连接。</target>
       </trans-unit>
       <trans-unit id="7867" resname="r120676927" restype="string" datatype="x-haml">
         <source>Claim your Virtual Practice page (ViP) today and establish your paid virtual office hours in minutes.</source>
@@ -9536,7 +9536,7 @@
       </trans-unit>
       <trans-unit id="7885" resname="r178734493" restype="string" datatype="x-haml">
         <source>and include the most engaged, respected, and helpful experts on</source>
-        <target>并包括最参与，受尊敬和有帮助的专家</target>
+        <target>并包括最积极参与，受尊敬和有帮助的专家</target>
       </trans-unit>
       <trans-unit id="7886" resname="r988075981" restype="string" datatype="x-haml">
         <source>The training, career accomplishments, and overall enthusiasm for</source>
@@ -9544,7 +9544,7 @@
       </trans-unit>
       <trans-unit id="7887" resname="r144317375" restype="string" datatype="x-haml">
         <source>and its mission set these leaders apart. Members of this invitation-only group,</source>
-        <target>和他的使命可以区分这些领导人。仅邀请群组的会员，</target>
+        <target>和他的使命感将这些领导人区分开来。仅邀请群组的会员，</target>
       </trans-unit>
       <trans-unit id="7888" resname="r1028018194" restype="string" datatype="x-haml">
         <source>identified by the Scholar badge on their profile, play a key role in curating</source>
@@ -9584,11 +9584,11 @@
       </trans-unit>
       <trans-unit id="7898" resname="r811415578" restype="string" datatype="x-haml">
         <source>Doctors who are also mothers have a special place at</source>
-        <target>她们也是母亲与其他母亲一样有一个特别的</target>
+        <target>她们也是母亲，与其他母亲一样有一个特别的</target>
       </trans-unit>
       <trans-unit id="7899" resname="r344763324" restype="string" datatype="x-haml">
         <source>caring, compassion, and special knowledge with other mothers, and answer their</source>
-        <target>在照顾，同情和特殊的知识，</target>
+        <target>具有关爱、同情和特殊的知识，</target>
       </trans-unit>
       <trans-unit id="7900" resname="r777661381" restype="string" datatype="x-haml">
         <source>questions about parenting and pregnancy by calling on your deep</source>
@@ -9596,7 +9596,7 @@
       </trans-unit>
       <trans-unit id="7901" resname="r806676381" restype="string" datatype="x-haml">
         <source>personal experience and professional know-how.</source>
-        <target>回答他们关于育儿和怀孕的问题。</target>
+        <target>回答人们关于育儿和怀孕的问题。</target>
       </trans-unit>
       <trans-unit id="7902" resname="r30721047" restype="string" datatype="x-haml">
         <source>What Our Doctors Have to Say</source>
@@ -9616,11 +9616,11 @@
       </trans-unit>
       <trans-unit id="7906" resname="r188937521" restype="string" datatype="x-haml">
         <source>doctors delight in</source>
-        <target>医生很高兴</target>
+        <target>让医生很高兴</target>
       </trans-unit>
       <trans-unit id="7907" resname="r786643384" restype="string" datatype="x-haml">
         <source>What</source>
-        <target>什么</target>
+        <target>的是什么</target>
       </trans-unit>
       <trans-unit id="7908" resname="r594079546" restype="string" datatype="x-haml">
         <source>Sharing their wisdom through answers, tips, and news</source>
@@ -9784,7 +9784,7 @@
     <body>
       <trans-unit id="2020" resname="r1040222534" restype="string" datatype="ruby">
         <source>See why over %{total_expert_display_count} U.S. licensed doctors are deeply engaged and speaking so highly of HealthTap.</source>
-        <target>了解为什么超过%{total_expert_display_count}位拥有美国执业执照的医生深受感动，并对HealthTap如此高度评价。</target>
+        <target>了解为什么超过%{total_expert_display_count}位拥有美国执业执照的医生深入参与，并对HealthTap如此高度评价。</target>
       </trans-unit>
       <trans-unit id="2021" resname="r830739708" restype="string" datatype="ruby">
         <source>Answer questions.</source>
@@ -9832,7 +9832,7 @@
     <body>
       <trans-unit id="2029" resname="r487837888" restype="string" datatype="ruby">
         <source>I'd like to personally invite you to %{open_link}be featured for free on HealthTap,%{close_link} where you can gain recognition for your expertise and help %{actor} and all your medical school colleagues win the competition.</source>
-        <target>我想亲自邀请您在HealthTap上参加%{open_link}免费专题%{close_link}，您可以获得您的专业知识的认可并获得帮助%{actor}您所有的医学院发同事赢得比赛。</target>
+        <target>我想亲自邀请您在HealthTap上参加%{open_link}免费话题%{close_link}，您可以获得您的专业知识的认可并获得帮助%{actor}您所有的医学院发同事赢得比赛。</target>
       </trans-unit>
     </body>
   </file>
@@ -9840,7 +9840,7 @@
     <body>
       <trans-unit id="2030" resname="r694705051" restype="string" datatype="ruby">
         <source>be featured for free on HealthTap,</source>
-        <target>在HealthTap上的免费专题</target>
+        <target>在HealthTap上获得免费报道</target>
       </trans-unit>
     </body>
   </file>
@@ -9848,7 +9848,7 @@
     <body>
       <trans-unit id="2031" resname="r961079196" restype="string" datatype="ruby">
         <source>Get featured for free on HealthTap,</source>
-        <target>在HealthTap上获得的免费专题</target>
+        <target>在HealthTap上获得免费报道</target>
       </trans-unit>
       <trans-unit id="2032" resname="r951952400" restype="string" datatype="ruby">
         <source>%{open_link1}Join over %{num_docs} leading doctors%{close_tag} in 128 specialties from respected private practices and top institutions.  It's free and takes just a minute to %{open_link2}sign up on HealthTap.%{close_tag}</source>
@@ -9917,7 +9917,7 @@
       </trans-unit>
       <trans-unit id="2047" resname="r22172263" restype="string" datatype="ruby">
         <source>Show %{expert} your appreciation with just one-click by saying %{open_link}'Thanks'%{close_link} and even sending a thank you note.</source>
-        <target>只需一次点击说出%{open_link}“感谢”%{close_link}，甚至发送感谢信，即可显示%{expert}您的感激。</target>
+        <target>只需一次点击说出%{open_link}“感谢”%{close_link}，甚至发送感谢信，即可表达您对%{expert}的感激。</target>
       </trans-unit>
       <trans-unit id="2048" resname="r639631969" restype="string" datatype="ruby">
         <source>%{open_link}Recommend %{actor}%{close_link} to others and %{open_link}vote for %{actor}'s expertise%{close_link}.</source>
@@ -9941,11 +9941,11 @@
     <body>
       <trans-unit id="2051" resname="r962254231" restype="string" datatype="ruby">
         <source>We would love for you to feel good about your health, especially during your pregnancy. Try HealthTap Prime for free and see how easy it is to achieve your goals and live a healthier, happier life!</source>
-        <target>我们希望爱您并让您的每一天都感觉很好，特别是在您怀孕期间。免费试用HealthTap Prime，看看实现您的更健康，更快乐的生活的目标是多么的容易！</target>
+        <target>我们希望爱您并让您的每一天都Feel Good，特别是在您怀孕期间。免费试用HealthTap Prime，看看实现您的更健康，更快乐的生活的目标是多么的容易！</target>
       </trans-unit>
       <trans-unit id="2052" resname="r236360292" restype="string" datatype="ruby">
         <source>We would love for you to feel good about your health every day. Try HealthTap Prime for free and see how easy it is to achieve your goals and live a healthier, happier life!</source>
-        <target>我们希望爱您并让您的每一天都感觉很好。免费试用HealthTap Prime，看看实现您的更健康，更快乐的生活的目标是多么的容易！</target>
+        <target>我们希望爱您并让您的每一天都Feel Good。免费试用HealthTap Prime，看看实现您的更健康，更快乐的生活的目标是多么的容易！</target>
       </trans-unit>
     </body>
   </file>
@@ -10109,7 +10109,7 @@
       </trans-unit>
       <trans-unit id="2081" resname="r344169842" restype="string" datatype="ruby">
         <source>Modify your topic subscriptions.</source>
-        <target>修改您的订购专题</target>
+        <target>修改您的订阅话题</target>
       </trans-unit>
     </body>
   </file>
@@ -10361,7 +10361,7 @@
     <body>
       <trans-unit id="2127" resname="r42194758" restype="string" datatype="ruby">
         <source>Start typing and choose a topic</source>
-        <target>开始输入并选择专题</target>
+        <target>开始输入并选择话题</target>
       </trans-unit>
       <trans-unit id="2128" resname="r623964073" restype="string" datatype="ruby">
         <source>Search name</source>
@@ -10385,7 +10385,7 @@
       </trans-unit>
       <trans-unit id="2139" resname="r954381026" restype="string" datatype="ruby">
         <source>Your mobile phone number</source>
-        <target>您的手机号码</target>
+        <target>您的电话号码</target>
       </trans-unit>
     </body>
   </file>
@@ -10541,7 +10541,7 @@
       </trans-unit>
       <trans-unit id="2186" resname="r448111371" restype="string" datatype="ruby">
         <source>Search by city or zip code</source>
-        <target>按城市或邮递区号搜索</target>
+        <target>按城市或邮政编码搜索</target>
       </trans-unit>
       <trans-unit id="2187" resname="r860654748" restype="string" datatype="ruby">
         <source>Not displayed to patient</source>
@@ -10553,7 +10553,7 @@
     <body>
       <trans-unit id="13242" resname="r744646303" restype="string" datatype="x-haml">
         <source>Check to automatically submit insurance claim information at consult completion. (If unchecked, instructions for claim review will be emailed.)  You can view submitted and unsubmitted claims under "Claim History" on your HealthTap “Grow Your Practice” page.</source>
-        <target>在咨询结束后核对自动提交的保险索赔信息(若未经核对，将会以电子邮件的形式发送给您索赔信息核对的说明。)您可在HealthTap的“成长您的诊疗”页中的“索赔历史”中查阅提交和未提交的索赔信息</target>
+        <target>在咨询结束后核对自动提交的保险索赔信息(若未经核对，将会以电子邮件的形式发送给您索赔信息核对的说明。)您可在HealthTap的“壮大您的诊疗”页中的“索赔历史”中查阅提交和未提交的索赔信息</target>
       </trans-unit>
       <trans-unit id="13243" resname="r632058845" restype="string" datatype="x-haml">
         <source>SEND &amp; END</source>
@@ -10629,7 +10629,7 @@
     <body>
       <trans-unit id="2204" resname="r247102145" restype="string" datatype="ruby">
         <source>Search for a health goal or topic</source>
-        <target>搜索健康目标或专题</target>
+        <target>搜索健康目标或话题</target>
       </trans-unit>
     </body>
   </file>
@@ -10829,7 +10829,7 @@
       </trans-unit>
       <trans-unit id="2251" resname="r805828207" restype="string" datatype="ruby">
         <source>Set your own pricing for monthly subscriptions to exchange secure asychronous messages</source>
-        <target>为了发送安全的异步消息，为每月订购设置自己的定价</target>
+        <target>为了发送安全的异步消息，为每月订阅设置自己的定价</target>
       </trans-unit>
       <trans-unit id="2252" resname="r321253968" restype="string" datatype="ruby">
         <source>Set your own pricing for live consults by appointment duration</source>
@@ -10865,7 +10865,7 @@
       </trans-unit>
       <trans-unit id="2260" resname="r647722886" restype="string" datatype="ruby">
         <source>Order tests and receive results seamlessly in a virtual consult</source>
-        <target>订购检验并在在线咨询中无缝接收结果</target>
+        <target>订阅检验并在在线咨询中无缝接收结果</target>
       </trans-unit>
       <trans-unit id="2261" resname="r63116807" restype="string" datatype="ruby">
         <source>Prescriptions instantly transmitted to any retail or mail-order pharmacy</source>
@@ -10966,7 +10966,7 @@
       </trans-unit>
       <trans-unit id="2319" resname="r157428958" restype="string" datatype="ruby">
         <source>Lab tests ordered at any test lab and results shared virtually</source>
-        <target>实验室检验可以在任何检验实验室订购，并且在线分享结果</target>
+        <target>实验室检验可以在任何检验实验室订阅，并且在线分享结果</target>
       </trans-unit>
       <trans-unit id="2320" resname="r672638474" restype="string" datatype="ruby">
         <source>Automated employee feedback and surveys</source>
@@ -11242,7 +11242,7 @@
     <body>
       <trans-unit id="2345" resname="r208931908" restype="string" datatype="ruby">
         <source>VERIFY YOUR MOBILE PHONE NUMBER</source>
-        <target>验证您的手机号码</target>
+        <target>验证您的电话号码</target>
       </trans-unit>
       <trans-unit id="2346" resname="r96931000" restype="string" datatype="ruby">
         <source>We need your phone number to send you reminders of consult appointments and if poor connection, direct the consult via your phone:</source>
@@ -11616,11 +11616,11 @@
       </trans-unit>
       <trans-unit id="2429" resname="r89220565" restype="string" datatype="ruby">
         <source>Topic name:</source>
-        <target>专题名称：</target>
+        <target>话题名称：</target>
       </trans-unit>
       <trans-unit id="2430" resname="r728346873" restype="string" datatype="ruby">
         <source>Topic description:</source>
-        <target>专题描述：</target>
+        <target>话题描述：</target>
       </trans-unit>
       <trans-unit id="2431" resname="r668067699" restype="string" datatype="ruby">
         <source>Answer by %{person} — Summary</source>
@@ -11812,7 +11812,7 @@
       </trans-unit>
       <trans-unit id="2472" resname="r806353480" restype="string" datatype="ruby">
         <source>Someone just asked a question on a topic of interest: %{question} Share your expertise.</source>
-        <target>有人只是在感兴趣的专题中询问一个问题：%{question}分享您的专业知识。</target>
+        <target>有人只是在感兴趣的话题中询问一个问题：%{question}分享您的专业知识。</target>
       </trans-unit>
       <trans-unit id="2473" resname="r369375719" restype="string" datatype="ruby">
         <source>Your expertise is needed! Answer your patient, %{fn} %{ln}, now: %{question}</source>
@@ -11860,7 +11860,7 @@
       </trans-unit>
       <trans-unit id="2484" resname="r1043415759" restype="string" datatype="ruby">
         <source>%{person} just thanked you for your helpful description of publications: '%{title}'.</source>
-        <target>%{person}只是感谢您对出版物有帮助的描述：‘%{title}'.</target>
+        <target>%{person}刚刚感谢您对出版物有帮助的描述：‘%{title}'.</target>
       </trans-unit>
       <trans-unit id="2485" resname="r200842507" restype="string" datatype="ruby">
         <source>Congratulations! %{actor} recommended you. See the recommendation</source>
@@ -12384,7 +12384,7 @@
       </trans-unit>
       <trans-unit id="2629" resname="r751296443" restype="string" datatype="ruby">
         <source>Improving your Experience</source>
-        <target>丰富您的经验</target>
+        <target>提高您的用户体验</target>
       </trans-unit>
       <trans-unit id="2630" resname="r413594303" restype="string" datatype="ruby">
         <source>Tips on making the most of HealthTap</source>
@@ -12512,7 +12512,7 @@
       </trans-unit>
       <trans-unit id="2658" resname="r751401093" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; would like to ask you a question. Reply now to earn %{num_credits} credits, %{num_points} points and a boost to your DocScore. &lt;span style='color:#039;'&gt;Check it out.&lt;/span&gt;</source>
-        <target>&lt;b&gt;%{person}&lt;/b&gt;希望询问您一个问题。立刻回复以获得%{num_credits}信用，%{num_points}积分，并提高您的医者评分。&lt;span style=’color:#039;’&gt;一探究竟。&lt;/span&gt;</target>
+        <target>&lt;b&gt;%{person}&lt;/b&gt;希望询问您一个问题。立刻回复以获得%{num_credits}信用，%{num_points}积分，并提高您的医者评分。&lt;span style=’color:#039;’&gt;去看看。&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="2659" resname="r1023503513" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; asked you for a clarification on your answer. Reply now to earn %{num_points} points and a boost to your DocScore. &lt;span style='color:#039;'&gt;Check it out.&lt;/span&gt;</source>
@@ -12740,7 +12740,7 @@
       </trans-unit>
       <trans-unit id="2714" resname="r754977834" restype="string" datatype="ruby">
         <source>You have been unsubscribed from further text message notifications from HealthTap. You may re-subscribe by submitting another question.</source>
-        <target>您已取消订购HealthTap的其他短信通知。您可以通过提交另一个问题重新订购。</target>
+        <target>您已取消订阅HealthTap的其他短信通知。您可以通过提交另一个问题重新订阅。</target>
       </trans-unit>
       <trans-unit id="2715" resname="r661378715" restype="string" datatype="ruby">
         <source>HealthTap's 50k top US doctors are here to help. Ask a question and be as detailed as possible in less than 150 characters.</source>
@@ -12808,7 +12808,7 @@
     <body>
       <trans-unit id="2729" resname="r490168967" restype="string" datatype="ruby">
         <source>Join me as a featured expert in HealthTap's Medical Expert Network.</source>
-        <target>加入我作为HealthTap的医学专家网络的特色专家。</target>
+        <target>加入我作为HealthTap的医学专家网络的精选专家。</target>
       </trans-unit>
       <trans-unit id="2730" resname="r375560909" restype="string" datatype="ruby">
         <source>HealthTap is the largest and fastest growing, free, Interactive and Mobile Health Platform serving over 82,000 US licensed doctors and millions of patients in your community and beyond - and now you can quickly join for free and connect with me.</source>
@@ -12848,7 +12848,7 @@
       </trans-unit>
       <trans-unit id="2739" resname="r1871472" restype="string" datatype="ruby">
         <source>I'm using HealthTap to get fast, free answers from thousands of top doctors. Check it out! %{link}</source>
-        <target>我使用HealthTap从数千名顶级医生获得快速，免费的回答。一探究竟！%{link}</target>
+        <target>我使用HealthTap从数千名顶级医生获得快速，免费的回答。去看看！%{link}</target>
       </trans-unit>
       <trans-unit id="2740" resname="r251080968" restype="string" datatype="ruby">
         <source>Get FREE up-to-date answers from the best doctors online!</source>
@@ -12920,7 +12920,7 @@
       </trans-unit>
       <trans-unit id="2757" resname="r464921549" restype="string" datatype="ruby">
         <source>Connect with me on HealthTap for ultimate peace of mind!</source>
-        <target>为了完全的安心在HealthTap上与我联系！</target>
+        <target>为了完全的安心，在HealthTap上与我联系！</target>
       </trans-unit>
       <trans-unit id="2758" resname="r770923140" restype="string" datatype="ruby">
         <source>Connect with me on my Virtual Practice on Healthtap with my special keycode for you: %{key_code}! Securely video or text chat with me live or by virtual appointment. %{url}</source>
@@ -13836,7 +13836,7 @@
       </trans-unit>
       <trans-unit id="2994" resname="r969745065" restype="string" datatype="ruby">
         <source>Generic name</source>
-        <target>通用名称</target>
+        <target>通用（仿制药）名称</target>
       </trans-unit>
       <trans-unit id="2995" resname="r10671418" restype="string" datatype="ruby">
         <source>Drug Class</source>
@@ -13876,11 +13876,11 @@
       </trans-unit>
       <trans-unit id="3010" resname="r649301435" restype="string" datatype="ruby">
         <source>Medium Term (weeks to months)</source>
-        <target>中期（周至月）</target>
+        <target>中期（几周至几月）</target>
       </trans-unit>
       <trans-unit id="3011" resname="r538411299" restype="string" datatype="ruby">
         <source>Short Term (days to weeks)</source>
-        <target>短期（天至周）</target>
+        <target>短期（几天至几周）</target>
       </trans-unit>
     </body>
   </file>
@@ -13896,19 +13896,19 @@
       </trans-unit>
       <trans-unit id="3014" resname="r438181099" restype="string" datatype="ruby">
         <source>%{person}, please update your PayPal account. Your Prime subscription payment is past due</source>
-        <target>%{person}，请更新您的PayPal帐户。您的Prime订购付款已过期</target>
+        <target>%{person}，请更新您的PayPal帐户。您的Prime订阅付款已过期</target>
       </trans-unit>
       <trans-unit id="3015" resname="r734631851" restype="string" datatype="ruby">
         <source>%{person}, please update your credit card information. Your Prime subscription payment is past due</source>
-        <target>%{person}，请更新您的信用卡信息。您的Prime订购付款已过期</target>
+        <target>%{person}，请更新您的信用卡信息。您的Prime订阅付款已过期</target>
       </trans-unit>
       <trans-unit id="3016" resname="r629552633" restype="string" datatype="ruby">
         <source>Please update your PayPal account. Your Prime subscription payment is past due</source>
-        <target>请更新您的PayPal帐户。您的Prime订购付款已过期</target>
+        <target>请更新您的PayPal帐户。您的Prime订阅付款已过期</target>
       </trans-unit>
       <trans-unit id="3017" resname="r526329681" restype="string" datatype="ruby">
         <source>Please update your credit card information. Your Prime subscription payment is past due</source>
-        <target>请更新您的信用卡信息您的Prime订购付款已过期</target>
+        <target>请更新您的信用卡信息您的Prime订阅付款已过期</target>
       </trans-unit>
       <trans-unit id="3018" resname="r35582786" restype="string" datatype="ruby">
         <source>%{person} Thank you for your purchase</source>
@@ -14868,7 +14868,7 @@
       </trans-unit>
       <trans-unit id="3262" resname="r111168977" restype="string" datatype="ruby">
         <source>A new question has been asked on the topic of `%{topic}`.</source>
-        <target>询问一个新的问题“%{topic}”的专题。</target>
+        <target>询问一个新的问题“%{topic}”的话题。</target>
       </trans-unit>
       <trans-unit id="3263" resname="r880901930" restype="string" datatype="ruby">
         <source>Congrats on completing your Influencer earnings form!</source>
@@ -14952,11 +14952,11 @@
       </trans-unit>
       <trans-unit id="3283" resname="r642156931" restype="string" datatype="ruby">
         <source>%{person}, %{expert} is now available!</source>
-        <target>%{person}, %{expert} 现在没有空！</target>
+        <target>%{person}, %{expert} 现在有空！</target>
       </trans-unit>
       <trans-unit id="3284" resname="r965956886" restype="string" datatype="ruby">
         <source>%{expert} is now available!</source>
-        <target>%{expert} 现在没有空！</target>
+        <target>%{expert} 现在有空！</target>
       </trans-unit>
       <trans-unit id="3285" resname="r57773163" restype="string" datatype="ruby">
         <source>%{dir_expert}, %{expert} cordially  invites you to join HealthTap</source>
@@ -14980,7 +14980,7 @@
       </trans-unit>
       <trans-unit id="3290" resname="r436262553" restype="string" datatype="ruby">
         <source>Feel Good by Giving Thanks!</source>
-        <target>通过给予感谢感觉很好！</target>
+        <target>通过给予感谢Feel Good！</target>
       </trans-unit>
       <trans-unit id="3291" resname="r769815057" restype="string" datatype="ruby">
         <source>A friendly reminder from %{expert}</source>
@@ -14996,11 +14996,11 @@
       </trans-unit>
       <trans-unit id="3294" resname="r1065514782" restype="string" datatype="ruby">
         <source>Friendly reminders to help you feel good :)</source>
-        <target>帮助您感觉很好的友好提醒 :)</target>
+        <target>帮助您Feel Good的友好提醒 :)</target>
       </trans-unit>
       <trans-unit id="3295" resname="r473533829" restype="string" datatype="ruby">
         <source>A friendly reminder to help you feel good :)</source>
-        <target>帮助您感觉很好的一次友好提醒 :)</target>
+        <target>帮助您Feel Good的一次友好提醒 :)</target>
       </trans-unit>
       <trans-unit id="3296" resname="r705555575" restype="string" datatype="ruby">
         <source>%{notification_name}, ask doctors another question on HealthTap</source>
@@ -15180,7 +15180,7 @@
       </trans-unit>
       <trans-unit id="3340" resname="r430360760" restype="string" datatype="ruby">
         <source>Message Subscription Reminder</source>
-        <target>消息订购提醒</target>
+        <target>消息订阅提醒</target>
       </trans-unit>
       <trans-unit id="3341" resname="r453058330" restype="string" datatype="ruby">
         <source>Exclusive: get your new personalized healthcare %{subject_name} today!</source>
@@ -15252,7 +15252,7 @@
       </trans-unit>
       <trans-unit id="3358" resname="r762673917" restype="string" datatype="ruby">
         <source>What’s your #1 health goal?</source>
-        <target>您的＃1健康目标是什么？</target>
+        <target>您的第一位健康目标是什么？</target>
       </trans-unit>
       <trans-unit id="3359" resname="r64203389" restype="string" datatype="ruby">
         <source>Warm and caring doctors are available to you anytime, anywhere, 24/7</source>
@@ -15293,11 +15293,11 @@
       </trans-unit>
       <trans-unit id="3368" resname="r751076580" restype="string" datatype="ruby">
         <source>Message Subscription to %{expert} Confirmed</source>
-        <target>对%{expert}的消息订购已确认</target>
+        <target>对%{expert}的消息订阅已确认</target>
       </trans-unit>
       <trans-unit id="3369" resname="r631304139" restype="string" datatype="ruby">
         <source>Message Subscription to %{expert} Canceled</source>
-        <target>对%{expert}的消息订购已取消</target>
+        <target>对%{expert}的消息订阅已取消</target>
       </trans-unit>
       <trans-unit id="3370" resname="r615327927" restype="string" datatype="ruby">
         <source>Earn more and better serve your patients—starting today</source>
@@ -15317,7 +15317,7 @@
       </trans-unit>
       <trans-unit id="3374" resname="r728406743" restype="string" datatype="ruby">
         <source>Earn more and improve your patient care—starting today!</source>
-        <target>赚的更多和提高您患者的医护—立刻开始</target>
+        <target>赚得更多并提高您对患者的医护—立刻开始！</target>
       </trans-unit>
       <trans-unit id="3375" resname="r212020415" restype="string" datatype="ruby">
         <source>Confirmation: Welcome to HealthTap Concierge!</source>
@@ -15341,7 +15341,7 @@
       </trans-unit>
       <trans-unit id="3380" resname="r261891375" restype="string" datatype="ruby">
         <source>%{expert}, your Virtual Practice is active again. You're good to go!</source>
-        <target>%{expert}, 您的在线诊疗再次激活好好干吧！</target>
+        <target>%{expert}, 您的在线诊疗再次激活。您现在可以开始了！</target>
       </trans-unit>
       <trans-unit id="3381" resname="r43630267" restype="string" datatype="ruby">
         <source>%{expert} re-scheduled the appointment</source>
@@ -15505,7 +15505,7 @@
       </trans-unit>
       <trans-unit id="3421" resname="r868955909" restype="string" datatype="ruby">
         <source>%{subject_name}, get paid well! Act now to give your patients Virtual Consults anytime, from anywhere</source>
-        <target>%{subject_name}，很好的得到报酬！立刻行动，随时随地为您的患者提供在线咨询</target>
+        <target>%{subject_name}，得到高额报酬！立刻行动，随时随地为您的患者提供在线咨询</target>
       </trans-unit>
       <trans-unit id="3422" resname="r401627337" restype="string" datatype="ruby">
         <source>%{subject_name}, see your patients from anywhere, limited time free offer for HealthTap Concierge</source>
@@ -15737,7 +15737,7 @@
       </trans-unit>
       <trans-unit id="3479" resname="r395345361" restype="string" datatype="ruby">
         <source>You’ve received a 1-star rating for patient satisfaction for the first time</source>
-        <target>您第一次获得了对患者满意度的1星评分</target>
+        <target>您第一次获得了患者满意度的1星评分</target>
       </trans-unit>
       <trans-unit id="3480" resname="r755996834" restype="string" datatype="ruby">
         <source>You’ve received a one-star rating for the second time</source>
@@ -15841,11 +15841,11 @@
       </trans-unit>
       <trans-unit id="3505" resname="r296497693" restype="string" datatype="ruby">
         <source>A very happy birthday to you, %{person}!</source>
-        <target>给您一个非常快乐的生日，%{person}！</target>
+        <target>祝您生日快乐，%{person}！</target>
       </trans-unit>
       <trans-unit id="3506" resname="r217359546" restype="string" datatype="ruby">
         <source>A very happy birthday to you!</source>
-        <target>给您一个非常快乐的生日！</target>
+        <target>祝您生日快乐！</target>
       </trans-unit>
       <trans-unit id="3507" resname="r350106219" restype="string" datatype="ruby">
         <source>%{notification_name}, another HealthTap member shared your post %{news_item}!</source>
@@ -16061,7 +16061,7 @@
       </trans-unit>
       <trans-unit id="3560" resname="r401976300" restype="string" datatype="ruby">
         <source>Subscribe Now</source>
-        <target>立刻订购</target>
+        <target>立刻订阅</target>
       </trans-unit>
       <trans-unit id="3561" resname="r216618238" restype="string" datatype="ruby">
         <source>Help us make the world a happier and healthier place</source>
@@ -16213,7 +16213,7 @@
       </trans-unit>
       <trans-unit id="3598" resname="r923086474" restype="string" datatype="ruby">
         <source>Congratulations, %{person}! You’re now a HealthTap Prime subscriber!</source>
-        <target>恭喜， %{person}！您现在是HealthTap Prime订购者！</target>
+        <target>恭喜， %{person}！您现在是HealthTap Prime订阅者！</target>
       </trans-unit>
       <trans-unit id="3599" resname="r657832154" restype="string" datatype="ruby">
         <source>Congratulations! You're now a HealthTap Prime member!</source>
@@ -16221,15 +16221,15 @@
       </trans-unit>
       <trans-unit id="3600" resname="r733775060" restype="string" datatype="ruby">
         <source>Congratulations! You're now a HealthTap Prime subscriber!</source>
-        <target>恭喜！您现在是HealthTap Prime订购者！</target>
+        <target>恭喜！您现在是HealthTap Prime订阅者！</target>
       </trans-unit>
       <trans-unit id="3601" resname="r393236598" restype="string" datatype="ruby">
         <source>%{notification_name}, an update about your Prime subscription</source>
-        <target>%{notification_name}, 有关您的Prime订购的更新</target>
+        <target>%{notification_name}, 有关您的Prime订阅的更新</target>
       </trans-unit>
       <trans-unit id="3602" resname="r782101567" restype="string" datatype="ruby">
         <source>An update about your Prime subscription</source>
-        <target>有关您的Prime订购的更新</target>
+        <target>有关您的Prime订阅的更新</target>
       </trans-unit>
       <trans-unit id="3603" resname="r986250982" restype="string" datatype="ruby">
         <source>"Isaac at HealthTap" &lt;notifications@healthtap.com&gt;</source>
@@ -16794,7 +16794,7 @@
       </trans-unit>
       <trans-unit id="3743" resname="r480919651" restype="string" datatype="ruby">
         <source>Give the Gift of Health - on us!</source>
-        <target>给予健康的礼物 - 对我们！</target>
+        <target>给予健康的礼物 - 由我们支付！</target>
       </trans-unit>
       <trans-unit id="3744" resname="r132594003" restype="string" datatype="ruby">
         <source>You've been gifted 1 month FREE of Prime for better Health!</source>
@@ -16802,7 +16802,7 @@
       </trans-unit>
       <trans-unit id="3745" resname="r408477019" restype="string" datatype="ruby">
         <source>%{inviter} has gifted $5 off of Prime for better Health!</source>
-        <target>为更好的健康%{inviter} Prime的$5优惠！</target>
+        <target>为更好的健康，%{inviter} Prime的$5优惠！</target>
       </trans-unit>
       <trans-unit id="3746" resname="r289907155" restype="string" datatype="ruby">
         <source>You've been gifted $5 off of Prime for better Health!</source>
@@ -16810,7 +16810,7 @@
       </trans-unit>
       <trans-unit id="3747" resname="r935351009" restype="string" datatype="ruby">
         <source>Congratulation, you got $30 off your Prime subscription!</source>
-        <target>恭喜，您已为您的Prime订购获得$30的优惠！</target>
+        <target>恭喜，您已为您的Prime订阅获得$30的优惠！</target>
       </trans-unit>
       <trans-unit id="3748" resname="r770446029" restype="string" datatype="ruby">
         <source>Gift of health</source>
@@ -16834,11 +16834,11 @@
       </trans-unit>
       <trans-unit id="3753" resname="r669002594" restype="string" datatype="ruby">
         <source>%{person}, you thanked %{expert} – now connect virtually!</source>
-        <target>%{person}, 您感谢%{expert} - 立刻在线连接！</target>
+        <target>%{person}, 您感谢了%{expert} - 立刻在线连接！</target>
       </trans-unit>
       <trans-unit id="3754" resname="r525738716" restype="string" datatype="ruby">
         <source>You thanked the following answer:</source>
-        <target>您感谢以下回答：</target>
+        <target>您感谢了以下回答：</target>
       </trans-unit>
       <trans-unit id="3755" resname="r570335029" restype="string" datatype="ruby">
         <source>%{person}, you have more to be thankful for – connect virtually with a doctor today!</source>
@@ -16942,7 +16942,7 @@
       </trans-unit>
       <trans-unit id="3780" resname="r379403693" restype="string" datatype="ruby">
         <source>Get help with a topic you followed!</source>
-        <target>获取您已关注专题的帮助！</target>
+        <target>获取您已关注话题的帮助！</target>
       </trans-unit>
       <trans-unit id="3781" resname="r531065373" restype="string" datatype="ruby">
         <source>%{person}, ready to take the next step in managing your health?</source>
@@ -17339,7 +17339,7 @@
       </trans-unit>
       <trans-unit id="3865" resname="r872011240" restype="string" datatype="ruby">
         <source>Perform pre-operation evaluations</source>
-        <target>进行预操作评估</target>
+        <target>进行手术前评估</target>
       </trans-unit>
       <trans-unit id="3866" resname="r207398393" restype="string" datatype="ruby">
         <source>Check up on patients post-operation</source>
@@ -17367,7 +17367,7 @@
       </trans-unit>
       <trans-unit id="3874" resname="r558388840" restype="string" datatype="ruby">
         <source>Act as a second opinion</source>
-        <target>作为第二意见行动</target>
+        <target>作为第二意见</target>
       </trans-unit>
       <trans-unit id="3875" resname="r817346373" restype="string" datatype="ruby">
         <source>Explain proposed treatment plan</source>
@@ -17419,7 +17419,7 @@
       </trans-unit>
       <trans-unit id="3888" resname="r205975806" restype="string" datatype="ruby">
         <source>Perform mole checks</source>
-        <target>进行摩尔检查</target>
+        <target>检查痣</target>
       </trans-unit>
       <trans-unit id="3889" resname="r698033452" restype="string" datatype="ruby">
         <source>Prescribe pain medication for sunburn, wind burn</source>
@@ -17455,7 +17455,7 @@
       </trans-unit>
       <trans-unit id="3900" resname="r311038743" restype="string" datatype="ruby">
         <source>Offer remedies for sleeping</source>
-        <target>提供睡眠的补救措施</target>
+        <target>提供睡眠帮助</target>
       </trans-unit>
       <trans-unit id="3901" resname="r234869790" restype="string" datatype="ruby">
         <source>Interpret laboratory tests</source>
@@ -17495,7 +17495,7 @@
       </trans-unit>
       <trans-unit id="3912" resname="r1041387514" restype="string" datatype="ruby">
         <source>Identify hazardous pesticides</source>
-        <target>检测危险农药</target>
+        <target>识别危险农药</target>
       </trans-unit>
       <trans-unit id="3913" resname="r621040721" restype="string" datatype="ruby">
         <source>Educate on environmental safety</source>
@@ -17651,7 +17651,7 @@
       </trans-unit>
       <trans-unit id="3960" resname="r325991905" restype="string" datatype="ruby">
         <source>Medication / therapy dose change</source>
-        <target>药物/疗法确实会不断改变</target>
+        <target>药物/疗法用量更改</target>
       </trans-unit>
       <trans-unit id="3962" resname="r101935189" restype="string" datatype="ruby">
         <source>Demonstrate how fingers, wrist, or arm moves</source>
@@ -17719,7 +17719,7 @@
       </trans-unit>
       <trans-unit id="3983" resname="r36662956" restype="string" datatype="ruby">
         <source>Perform post-partum check-in</source>
-        <target>执行产后登记制度</target>
+        <target>产后随访检查</target>
       </trans-unit>
       <trans-unit id="3984" resname="r627276501" restype="string" datatype="ruby">
         <source>Conduct baby length and weight evaluations</source>
@@ -17727,11 +17727,11 @@
       </trans-unit>
       <trans-unit id="3985" resname="r133391372" restype="string" datatype="ruby">
         <source>Provide breastfeeding advice</source>
-        <target>建议母乳喂养</target>
+        <target>为母乳喂养提供建议</target>
       </trans-unit>
       <trans-unit id="3987" resname="r82495977" restype="string" datatype="ruby">
         <source>Discuss patient bloodwork</source>
-        <target>对患者血液进行检查</target>
+        <target>讨论患者的血液检查结果</target>
       </trans-unit>
       <trans-unit id="3988" resname="r864660789" restype="string" datatype="ruby">
         <source>Nephrology</source>
@@ -17771,7 +17771,7 @@
       </trans-unit>
       <trans-unit id="3998" resname="r483605471" restype="string" datatype="ruby">
         <source>Conduct follow-up appointments with patients after seeing them in the office</source>
-        <target>对之前在办公室检查过的患者进行后续预约</target>
+        <target>对之前在办公室检查过的患者进行随访预约</target>
       </trans-unit>
       <trans-unit id="3999" resname="r916658349" restype="string" datatype="ruby">
         <source>Consult about changes to medication dosages</source>
@@ -18111,7 +18111,7 @@
       </trans-unit>
       <trans-unit id="4106" resname="r624670091" restype="string" datatype="ruby">
         <source>Refer to physical therapist</source>
-        <target>参考物理治疗师</target>
+        <target>转诊物理治疗师</target>
       </trans-unit>
       <trans-unit id="4107" resname="r921063633" restype="string" datatype="ruby">
         <source>Triage injuries for ER or office visit</source>
@@ -18631,7 +18631,7 @@
       </trans-unit>
       <trans-unit id="4243" resname="r527140497" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; brings doctor-created tips straight to your mobile device or computer. To keep healthy living top of mind, users can subscribe to health topics of interest, and receive daily doctor-created tips, suggestions, or bits of advice delivered via email or by SMS push notifications to mobile devices. Users can also discover and browse TipTaps on &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;.</source>
-        <target>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;将医生创建的小贴士直接推送到您的移动设备或计算机。为了保持放心健康的生活，用户可以订购感兴趣的健康话题，并且接收通过电子邮件或短信在移动设备上接收每天医生创建的小贴士、建议或一点忠告的推送通知。用户还可以在&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;上发现和浏览推心小贴士。</target>
+        <target>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;将医生创建的小贴士直接推送到您的移动设备或计算机。为了保持放心健康的生活，用户可以订阅感兴趣的健康话题，并且接收通过电子邮件或短信在移动设备上接收每天医生创建的小贴士、建议或一点忠告的推送通知。用户还可以在&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;上发现和浏览推心小贴士。</target>
       </trans-unit>
       <trans-unit id="4244" resname="r616506917" restype="string" datatype="ruby">
         <source>Global mobile featuring!</source>
@@ -18703,7 +18703,7 @@
       </trans-unit>
       <trans-unit id="4261" resname="r796496547" restype="string" datatype="ruby">
         <source>In May 2013, &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; launched AppRX so our users can get app recommendations from real doctors. With AppRX, we make it fast and easy to find health and wellness apps by creating intuitive, user-friendly categories, and posting doctor recommendations and written reviews.  &lt;a href='http://venturebeat.com/2013/05/30/healthtap-apprx/' target='_blank' rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target>在2013年5月，&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;推出了“App医生评测”，因此我们的用户可以从真正的医生获得应用程序的建议。使用AppRx医生评测，我们通过创建直观，用户友好的类别，并为应用程序发布医生建议和书面评论，使其快速，轻松地找到健康与保健应用程序。&lt;a href=’http://venturebeat.com/2013/05/30/healthtap-apprx/’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target>在2013年5月，&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;推出了“AppRx医生评测”，因此我们的用户可以从真正的医生获得应用程序的建议。使用AppRx医生评测，我们通过创建直观，用户友好的类别，并为应用程序发布医生建议和书面评论，使其快速，轻松地找到健康与保健应用程序。&lt;a href=’http://venturebeat.com/2013/05/30/healthtap-apprx/’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="4262" resname="r998021805" restype="string" datatype="ruby">
         <source>Jul 2013</source>
@@ -18751,7 +18751,7 @@
       </trans-unit>
       <trans-unit id="4273" resname="r938253770" restype="string" datatype="ruby">
         <source>We were thrilled when the 50,000th doctor signed up to join our Medical Expert Network!  The thank you notes keep pouring in from members who have been helped by our devoted and inspirational doctors. And the doctors are happy too! Word of mouth is spreading in the medical community about &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; and how it is helping millions of people around the world feel good!</source>
-        <target>当5万名医生报名加入我们的医学专家网络时，我们感到非常高兴！我们奉献的和鼓舞人心的医生帮助过的会员的感谢信持续的涌入。医生也很高兴！口碑传播在医疗社区关于&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;和它如何帮助世界各地的数百万人感觉很好！</target>
+        <target>当5万名医生报名加入我们的医学专家网络时，我们感到非常高兴！我们奉献的和鼓舞人心的医生帮助过的会员的感谢信持续的涌入。医生也很高兴！口碑传播在医疗社区关于&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;和它如何帮助世界各地的数百万人Feel Good！</target>
       </trans-unit>
       <trans-unit id="4274" resname="r60723732" restype="string" datatype="ruby">
         <source>Nov 2013</source>
@@ -18855,7 +18855,7 @@
       </trans-unit>
       <trans-unit id="4300" resname="r563025742" restype="string" datatype="ruby">
         <source>With HealthTap Concierge, you can connect with your own doctor from anywhere via video or text consults for a low per-consult fee. No monthly subscription required. Create your own 24/7 Care-Team and get a 2nd, 3rd, or 10th opinion from doctors in more than 100 specialties!</source>
-        <target>有了HealthTap贵宾台，为了每次低的咨询费用，您可以通过视频或文本咨询从任何地方与自己的医生联系。不需要每月订购。创建自己的24/7全天候医护团队，并从超过100个专科的医生获得第2，第3或第10意见！</target>
+        <target>有了HealthTap贵宾台，为了每次低的咨询费用，您可以通过视频或文本咨询从任何地方与自己的医生联系。不需要每月订阅。创建自己的24/7全天候医护团队，并从超过100个专科的医生获得第2，第3或第10意见！</target>
       </trans-unit>
       <trans-unit id="4301" resname="r906485894" restype="string" datatype="ruby">
         <source>Jan 2015</source>
@@ -18875,11 +18875,11 @@
       </trans-unit>
       <trans-unit id="4305" resname="r555778117" restype="string" datatype="ruby">
         <source>RateRx Launched</source>
-        <target>Rate医生评测发布</target>
+        <target>RateRx医生评测发布</target>
       </trans-unit>
       <trans-unit id="4306" resname="r559517643" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; launches RateRx, the first large-scale resource created by doctors to help consumers understand the effectiveness of drugs and treatments based on doctor’s real-world experience with medications. RateRx empowers more informed discussions between patients and doctors about treatment options.</source>
-        <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;发布了Rate医生评测，这是医生创建的第一个大规模资源，帮助消费者基于医生现实世界的药物经验来了解药物和治疗的有效性。Rate医生评测使患者和医生之间就治疗选择进行更多的知情讨论。</target>
+        <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;发布了RateRx医生评测，这是医生创建的第一个大规模资源，帮助消费者基于医生现实世界的药物经验来了解药物和治疗的有效性。RateRx医生评测使患者和医生之间就治疗选择进行更多的知情讨论。</target>
       </trans-unit>
       <trans-unit id="4307" resname="r523873274" restype="string" datatype="ruby">
         <source>Apr 2015</source>
@@ -18931,7 +18931,7 @@
       </trans-unit>
       <trans-unit id="4319" resname="r246088051" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; announces its collaboration with Quest Diagnostics to enable doctors to order diagnostic testing services for patients.</source>
-        <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;宣布与Quest Diagonstics公司合作，使医生能够为患者订购诊断检验服务。</target>
+        <target>&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;宣布与Quest Diagonstics公司合作，使医生能够为患者订阅诊断检验服务。</target>
       </trans-unit>
       <trans-unit id="4320" resname="r645769802" restype="string" datatype="ruby">
         <source>Aug 2015</source>
@@ -19907,7 +19907,7 @@
       </trans-unit>
       <trans-unit id="4566" resname="r288440791" restype="string" datatype="ruby">
         <source>Asking about just one topic</source>
-        <target>对一个专题进行询问</target>
+        <target>对一个话题进行询问</target>
       </trans-unit>
       <trans-unit id="4567" resname="r795309941" restype="string" datatype="ruby">
         <source>Double-checking</source>
@@ -19971,7 +19971,7 @@
       </trans-unit>
       <trans-unit id="4581" resname="r475571595" restype="string" datatype="ruby">
         <source>You are not alone. 50 million people in the United States suffer from allergy symptoms and its prevalence is increasing, affecting as many as 30 percent of adults and up to 40 percent of children. Allergies can be frustrating and can be an annoyance if not properly treated. At HealthTap, we have licensed qualified doctors who can help make you feel good!  We're here 24/7, to help with prescriptions, treatment and advice. What are you waiting for?</source>
-        <target>您不是一个人。在美国有5000万人患有过敏症状并且患病率正在不断变高，影响了30%的成年人和40%的儿童。如果没有适当的治疗过敏会令人沮丧和烦恼。在HealthTap，我们有拥有执业执照医生使您感觉很好！我们在这里24/7全天候帮助提供处方，治疗和建议。那么您还在等什么？</target>
+        <target>您不是一个人。在美国有5000万人患有过敏症状并且患病率正在不断变高，影响了30%的成年人和40%的儿童。如果没有适当的治疗过敏会令人沮丧和烦恼。在HealthTap，我们有拥有执业执照医生使您Feel Good！我们在这里24/7全天候帮助提供处方，治疗和建议。那么您还在等什么？</target>
       </trans-unit>
       <trans-unit id="4582" resname="r238248195" restype="string" datatype="ruby">
         <source>Connect with a doctor in under two minutes today and alleviate those allergy frustrations!</source>
@@ -20011,7 +20011,7 @@
       </trans-unit>
       <trans-unit id="4591" resname="r130138525" restype="string" datatype="ruby">
         <source>Connect with a doctor in minutes via phone, tablet or computer, 24/7. 	We're here to help and make sure you and your newborn feel good! Try us today!</source>
-        <target>您可以通过手机、平板、电脑24/7全天候数分钟内与医生获得联系。我们会帮助您和您的宝宝感觉很好！立刻尝试！</target>
+        <target>您可以通过手机、平板、电脑24/7全天候数分钟内与医生获得联系。我们会帮助您和您的宝宝Feel Good！立刻尝试！</target>
       </trans-unit>
       <trans-unit id="4592" resname="r670954730" restype="string" datatype="ruby">
         <source>Get Treatment for Your Skin Condition Now!</source>
@@ -20063,7 +20063,7 @@
       </trans-unit>
       <trans-unit id="4605" resname="r136115374" restype="string" datatype="ruby">
         <source>Get an answer that is personalized to you</source>
-        <target>获得为您专属于您的回答</target>
+        <target>获得专属于您的回答</target>
       </trans-unit>
       <trans-unit id="4606" resname="r444896698" restype="string" datatype="ruby">
         <source>Would you like to talk to a doctor now?</source>
@@ -20075,11 +20075,11 @@
       </trans-unit>
       <trans-unit id="4608" resname="r236835786" restype="string" datatype="ruby">
         <source>The doctor will see you now</source>
-        <target>现在医生将会看到您</target>
+        <target>现在医生现在将为您问诊</target>
       </trans-unit>
       <trans-unit id="4609" resname="r101080553" restype="string" datatype="ruby">
         <source>A doctor will see you now</source>
-        <target>一名医生将会看到您</target>
+        <target>一名医生现在将为您问诊</target>
       </trans-unit>
       <trans-unit id="4610" resname="r199105576" restype="string" datatype="ruby">
         <source>Speak to a doctor now</source>
@@ -20091,7 +20091,7 @@
       </trans-unit>
       <trans-unit id="4612" resname="r925572329" restype="string" datatype="ruby">
         <source>See a doctor now</source>
-        <target>现在查看医生</target>
+        <target>现在看医生</target>
       </trans-unit>
       <trans-unit id="4613" resname="r614060262" restype="string" datatype="ruby">
         <source>Connect with a doctor now</source>
@@ -20223,7 +20223,7 @@
       </trans-unit>
       <trans-unit id="4647" resname="r821054688" restype="string" datatype="ruby">
         <source>All your medical questions</source>
-        <target>所有您的医学问题</target>
+        <target>您所有的医学问题</target>
       </trans-unit>
       <trans-unit id="4648" resname="r942931195" restype="string" datatype="ruby">
         <source>65,000+ top doctors</source>
@@ -20755,11 +20755,11 @@
       </trans-unit>
       <trans-unit id="4795" resname="r322591213" restype="string" datatype="ruby">
         <source>Topic category</source>
-        <target>专题类别</target>
+        <target>话题类别</target>
       </trans-unit>
       <trans-unit id="4796" resname="r81456199" restype="string" datatype="ruby">
         <source>Body parts</source>
-        <target>身体部分</target>
+        <target>身体部位</target>
       </trans-unit>
       <trans-unit id="4799" resname="r295816798" restype="string" datatype="ruby">
         <source># votes</source>
@@ -20843,7 +20843,7 @@
       </trans-unit>
       <trans-unit id="7686" resname="r833711172" restype="string" datatype="x-haml">
         <source>To keep you feeling good!</source>
-        <target>让您感觉很好！</target>
+        <target>让您Feel Good！</target>
       </trans-unit>
       <trans-unit id="7688" resname="r652098786" restype="string" datatype="x-haml">
         <source>Immediate Connection</source>
@@ -20891,7 +20891,7 @@
       </trans-unit>
       <trans-unit id="4816" resname="r664687186" restype="string" datatype="ruby">
         <source>Subscribe to Prime today!</source>
-        <target>立刻订购Prime！</target>
+        <target>立刻订阅Prime！</target>
       </trans-unit>
       <trans-unit id="4818" resname="r529688884" restype="string" datatype="ruby">
         <source>The Doctor is Always in</source>
@@ -20959,7 +20959,7 @@
       </trans-unit>
       <trans-unit id="4836" resname="r187545644" restype="string" datatype="ruby">
         <source>We've got you covered</source>
-        <target>我们已让您参与其中</target>
+        <target>我们会顾全您</target>
       </trans-unit>
       <trans-unit id="4837" resname="r204349679" restype="string" datatype="ruby">
         <source>Kelly B, mother of two</source>
@@ -21015,7 +21015,7 @@
       </trans-unit>
       <trans-unit id="4851" resname="r1052738240" restype="string" datatype="ruby">
         <source>Doctors at Your Service</source>
-        <target>医生在为您的服务</target>
+        <target>医生为您服务</target>
       </trans-unit>
       <trans-unit id="4852" resname="r733417780" restype="string" datatype="ruby">
         <source>Save Time</source>
@@ -21279,7 +21279,7 @@
       </trans-unit>
       <trans-unit id="4910" resname="r10493883" restype="string" datatype="ruby">
         <source>%{name}: %{long_text}... Share and subscribe to health tips written by top doctors on topics of your interest.</source>
-        <target>%{name}:%{long_text}...分享和订购由顶级医生写的关于您感兴趣的话题的健康小贴士。</target>
+        <target>%{name}:%{long_text}...分享和订阅由顶级医生写的关于您感兴趣的话题的健康小贴士。</target>
       </trans-unit>
       <trans-unit id="4911" resname="r258059391" restype="string" datatype="ruby">
         <source>Question not found</source>
@@ -21451,15 +21451,15 @@
       </trans-unit>
       <trans-unit id="4947" resname="r172241046" restype="string" datatype="ruby">
         <source>Topics - HealthTap</source>
-        <target>专题 - HealthTap</target>
+        <target>话题 - HealthTap</target>
       </trans-unit>
       <trans-unit id="4948" resname="r640116199" restype="string" datatype="ruby">
         <source>%{name}'s Topics - HealthTap</source>
-        <target>%{name}的专题 - HealthTap</target>
+        <target>%{name}的话题 - HealthTap</target>
       </trans-unit>
       <trans-unit id="4949" resname="r1018994954" restype="string" datatype="ruby">
         <source>Unsubscribe - HealthTap</source>
-        <target>取消订购 - HealthTap</target>
+        <target>取消订阅 - HealthTap</target>
       </trans-unit>
       <trans-unit id="4950" resname="r498580788" restype="string" datatype="ruby">
         <source>Terms - HealthTap</source>
@@ -21648,7 +21648,7 @@
       </trans-unit>
       <trans-unit id="4997" resname="r557872979" restype="string" datatype="ruby">
         <source>HeathTap Concierge — Your Key to Feeling Good — HealthTap</source>
-        <target>HeathTap贵宾台 — 您感觉很好的关键 — HealthTap</target>
+        <target>HeathTap贵宾台 — 您Feel Good的关键 — HealthTap</target>
       </trans-unit>
       <trans-unit id="4999" resname="r304906336" restype="string" datatype="ruby">
         <source>Give the gift of health</source>
@@ -21728,7 +21728,7 @@
       </trans-unit>
       <trans-unit id="5019" resname="r1723863" restype="string" datatype="ruby">
         <source>RateRx: Top doctors Review Treatments — HealthTap</source>
-        <target>Rate医生评测顶级医生审查治疗 — HealthTap</target>
+        <target>RateRx医生评测顶级医生审查治疗 — HealthTap</target>
       </trans-unit>
       <trans-unit id="5020" resname="r81750265" restype="string" datatype="ruby">
         <source>%{doctor_count} now share their experience and expertise to guide millions toward the best treatments</source>
@@ -21744,7 +21744,7 @@
       </trans-unit>
       <trans-unit id="5023" resname="r601961606" restype="string" datatype="ruby">
         <source>RateRx Results: Top doctors Review Treatments — HealthTap</source>
-        <target>Rate医生评测结果：顶级医生审查治疗 — HealthTap</target>
+        <target>RateRx医生评测结果：顶级医生审查治疗 — HealthTap</target>
       </trans-unit>
       <trans-unit id="5024" resname="r369980793" restype="string" datatype="ruby">
         <source>%{expert_count} now share their experience and expertise to guide millions toward the best treatments</source>
@@ -21776,7 +21776,7 @@
       </trans-unit>
       <trans-unit id="5031" resname="r771822107" restype="string" datatype="ruby">
         <source>Introducing 3 HealthTap Apple Watch Apps to help you feel good</source>
-        <target>介绍3款HealthTap苹果手表应用程序，以帮助您feel good</target>
+        <target>介绍3款HealthTap苹果手表应用程序，以帮助您Feel Good</target>
       </trans-unit>
       <trans-unit id="5032" resname="r452513469" restype="string" datatype="ruby">
         <source>Manage your health and well-being right from your wrist. (1) DocNow: New, Instant, Trusted, Affordable Care App. Only $2.99 a minute. (2) HealthTap: Feel good anytime with helpful answers, tips, and reminders from %{doctor_count}. (3) HealthTap for Doctors: First of its kind doctor app for Apple Watch</source>
@@ -21784,7 +21784,7 @@
       </trans-unit>
       <trans-unit id="5033" resname="r1040533385" restype="string" datatype="ruby">
         <source>Order lab tests and get the results in your Virtual Consult — HealthTap</source>
-        <target>订购实验室检验并在您的在线咨询中获得结果 — HealthTap</target>
+        <target>订阅实验室检验并在您的在线咨询中获得结果 — HealthTap</target>
       </trans-unit>
       <trans-unit id="5034" resname="r692758988" restype="string" datatype="ruby">
         <source>Get health - Give health — HealthTap</source>
@@ -21981,7 +21981,7 @@
       </trans-unit>
       <trans-unit id="7985" resname="r335519892" restype="string" datatype="x-haml">
         <source>E-prescribe &amp; order labs via HD video, voice and secure messages</source>
-        <target>通过高清视频，语音和安全信息获得E-prescribe和订购实验室</target>
+        <target>通过高清视频，语音和安全信息获得E-prescribe和订阅实验室</target>
       </trans-unit>
     </body>
   </file>
@@ -22314,7 +22314,7 @@
       </trans-unit>
       <trans-unit id="5141" resname="r294662769" restype="string" datatype="ruby">
         <source>Followup Appointments with %{name}</source>
-        <target>后续预约%{name}</target>
+        <target>随访预约%{name}</target>
       </trans-unit>
       <trans-unit id="5142" resname="r20900900" restype="string" datatype="ruby">
         <source>concierge_message</source>
@@ -22622,7 +22622,7 @@
     <body>
       <trans-unit id="5251" resname="r248264449" restype="string" datatype="ruby">
         <source>Subscription does not exist</source>
-        <target>订购不存在</target>
+        <target>订阅不存在</target>
       </trans-unit>
     </body>
   </file>
@@ -22682,7 +22682,7 @@
       </trans-unit>
       <trans-unit id="5266" resname="r818886963" restype="string" datatype="ruby">
         <source>$99/month subscription</source>
-        <target>每月订购$99</target>
+        <target>每月订阅$99</target>
       </trans-unit>
     </body>
   </file>
@@ -22814,7 +22814,7 @@
       </trans-unit>
       <trans-unit id="5301" resname="r378325117" restype="string" datatype="ruby">
         <source>Person does not exist with that id</source>
-        <target>个人与该ID不存在</target>
+        <target>该ID不存在</target>
       </trans-unit>
       <trans-unit id="5302" resname="r660520710" restype="string" datatype="ruby">
         <source>No such Global Attribute found!</source>
@@ -22838,7 +22838,7 @@
       </trans-unit>
       <trans-unit id="5307" resname="r335096380" restype="string" datatype="ruby">
         <source>subscription failed</source>
-        <target>订购失败</target>
+        <target>订阅失败</target>
       </trans-unit>
       <trans-unit id="5308" resname="r216999686" restype="string" datatype="ruby">
         <source>not available</source>
@@ -23291,7 +23291,7 @@
       </trans-unit>
       <trans-unit id="5412" resname="r463772363" restype="string" datatype="x-haml">
         <source>Now you can get top doctor lists for free from HealthTap.  Rankings are comprehensive, reliable and customizable.  You get the lists you want, when you want them.</source>
-        <target>现在您可以从HealthTap免费获得知名医生名单排名是全面，可靠和可定制。当您需要他们时，您可以得到您想要的名单。</target>
+        <target>现在您可以从HealthTap免费获得顶级医生名单排名是全面，可靠和可定制。当您需要他们时，您可以得到您想要的名单。</target>
       </trans-unit>
       <trans-unit id="5413" resname="r515199732" restype="string" datatype="x-haml">
         <source>Lists can be used in connection with everything from special issues dedicated to best doctors to one-off articles.  Sign up for access today!</source>
@@ -23391,7 +23391,7 @@
     <body>
       <trans-unit id="5438" resname="r820729496" restype="string" datatype="x-haml">
         <source>Read more &amp;raquo</source>
-        <target>阅读更多 &amp;raquo</target>
+        <target>延展阅读 &amp;raquo</target>
       </trans-unit>
       <trans-unit id="5439" resname="r105234301" restype="string" datatype="x-haml">
         <source>Learn about Top Doctor Lists</source>
@@ -23575,7 +23575,7 @@
     <body>
       <trans-unit id="5478" resname="r114069524" restype="string" datatype="x-haml">
         <source>Topic pages provide a general overview of a health topic, and reflect the collective wisdom of HealthTap Medical Experts. In addition to a description, you'll find links to relevant content (including Answers, Tips, and Health Guides) and to related Topics. Current Top Doctors for each Topic are featured on this page. You can add content to Health Guides, and even share content, directly from a Topic page.</source>
-        <target>专题页面提供关于健康话题的总体概述，并反映HealthTap医学专家的集体智慧。除了描述之外，您还可以找到相关内容（包括答复，小贴士和健康指南）以及相关专题的链接。本页面显示每个专题的当前热门医生。您可以直接从专题页面添加内容到健康指南，甚至分享内容。</target>
+        <target>话题页面提供关于健康话题的总体概述，并反映HealthTap医学专家的集体智慧。除了描述之外，您还可以找到相关内容（包括答复，小贴士和健康指南）以及相关话题的链接。本页面显示每个话题的当前热门医生。您可以直接从话题页面添加内容到健康指南，甚至分享内容。</target>
       </trans-unit>
       <trans-unit id="5479" resname="r69276417" restype="string" datatype="x-haml">
         <source>If you can improve a description on HealthTap simply select "Edit description" and make your changes.  These will take effect immediately, and you'll be identified as the most recent editor to the Topic description.</source>
@@ -23595,7 +23595,7 @@
     <body>
       <trans-unit id="5481" resname="r233952863" restype="string" datatype="x-haml">
         <source>All the responses to questions that have been answered appear on this page, where you can Thank experts, send Thank You Notes, and even Share the Answers that you appreciate. You can also add to your Health Activity and see Top Doctors on Related Topics.</source>
-        <target>所有的对于这个问题的回答将会出现在这一页中，在这里您可以感谢专家，发送感谢信甚至可以分享您觉得有用的回答。您也可以添加到您的健康活动，并看到相关话题的知名医生。</target>
+        <target>所有的对于这个问题的回答将会出现在这一页中，在这里您可以感谢专家，发送感谢信甚至可以分享您觉得有用的回答。您也可以添加到您的健康活动，并看到相关话题的顶级医生。</target>
       </trans-unit>
       <trans-unit id="5482" resname="r652556215" restype="string" datatype="x-haml">
         <source>Questions &amp; Answers</source>
@@ -23795,19 +23795,19 @@
       </trans-unit>
       <trans-unit id="5523" resname="r487952412" restype="string" datatype="x-haml">
         <source>If you wish to answer this private message, just click the Answer button. If you don't wish to or aren't able to respond within 72 hours, you can instead click the "Sorry,  I cannot help you" button below. Responding in a timely fashion will improve your Responsiveness and your DocScore.</source>
-        <target>如果您想要回答这条私人信息，只需点击回答按钮如果在72小时内您不想回复或无法回复，可以点击下面的“对不起，我无法帮助您”按钮。及时回复会提高您的反应灵敏和您的医者评分。</target>
+        <target>如果您想要回答这条私人信息，只需点击回答按钮如果在72小时内您不想回复或无法回复，可以点击下面的“对不起，我无法帮助您”按钮。及时回复会提高您的响应度和您的医者评分。</target>
       </trans-unit>
       <trans-unit id="5524" resname="r114986078" restype="string" datatype="x-haml">
         <source>When you provide information that really hits the mark, you are likely to get a “Thank You” in return. Each “Thanks” that you receive gives your Helpfulness a boost! On the other hand, responses that are deemed to have missed the target will potentially be marked as “Not Helpful” and will result in a decrease in Helpfulness. You are more likely to get new private messages if you have a higher Helpfulness score.</source>
-        <target>当您提供的信息确实解决了问题时，您会得到一个“谢谢”作为回报。每个您收到的“谢谢”都会提高您的乐于助人另一方面，被认为没有有帮助的答复可能被标记为“没有帮助”，并且将影响乐于助人指标。如果您有更高的乐于助人得分，您更有可能获得新的私人消息。</target>
+        <target>当您提供的信息确实解决了问题时，您会得到一个“谢谢”作为回报。每个您收到的“谢谢”都会提高您的有助度另一方面，被认为没有有帮助的答复可能被标记为“没有帮助”，并且将影响有助度指标。如果您有更高的有助度得分，您更有可能获得新的私人消息。</target>
       </trans-unit>
       <trans-unit id="5525" resname="r866963383" restype="string" datatype="x-haml">
         <source>If you accept private messages through HealthTap, it is important either to answer questions as you receive them or to indicate that you cannot help right now. If you respond one way or the other within 72 hours, you will maintain a high Responsiveness score. You are more likely to receive new private messages if you have a higher Responsiveness rating.</source>
-        <target>如果您通过HealthTap接受私人消息，重要的是在您收到问题时回答问题，或者表明您现在无法及时帮助。如果您在72小时内以某种方式回复，您将保持高的反应灵敏分数。如果您的反应灵敏等级较高，则您更有可能收到新的私人信息。</target>
+        <target>如果您通过HealthTap接受私人消息，重要的是在您收到问题时回答问题，或者表明您现在无法及时帮助。如果您在72小时内以某种方式回复，您将保持高的响应度分数。如果您的响应度等级较高，则您更有可能收到新的私人信息。</target>
       </trans-unit>
       <trans-unit id="5526" resname="r578218299" restype="string" datatype="x-haml">
         <source>If you do not wish to respond, or cannot respond within 72 hours, you have the option of respectfully declining the message (by clicking “Sorry, can’t help right now”) and referring it to a colleague. Responding one way or the other preserves your Responsiveness rating.</source>
-        <target>如果您在72小时不想回复或无法回复，您可以选择尊重地拒绝该消息（通过点击“对不起，现在无法帮助”），并将其转发给同事。回复单向或其他方式保持您的反应灵敏评级。</target>
+        <target>如果您在72小时不想回复或无法回复，您可以选择尊重地拒绝该消息（通过点击“对不起，现在无法帮助”），并将其转发给同事。回复单向或其他方式保持您的响应度评级。</target>
       </trans-unit>
     </body>
   </file>
@@ -23827,7 +23827,7 @@
     <body>
       <trans-unit id="5529" resname="r356586474" restype="string" datatype="x-haml">
         <source>This is where you create Answers to questions on HealthTap. Answers should be concise (400 characters or less), friendly, and helpful. Add Topic tags to improve the visibility and accuracy of your Answers.</source>
-        <target>这是您在HealthTap上创建问题回答的地方。回答应该简洁（400个字符或更少），友好和有帮助。添加专题标签以提高您的回答的可见性和准确性。</target>
+        <target>这是您在HealthTap上创建问题回答的地方。回答应该简洁（400个字符或更少），友好和有帮助。添加话题标签以提高您的回答的可见性和准确性。</target>
       </trans-unit>
       <trans-unit id="5530" resname="r101038635" restype="string" datatype="x-haml">
         <source>When an individual asks you a question, their age, gender, location and relation to your Known fors will become visible to you. You will also be able to see if the individual if this patient is in your HealthTap network.</source>
@@ -24147,7 +24147,7 @@
     <body>
       <trans-unit id="5588" resname="r583812302" restype="string" datatype="x-haml">
         <source>With millions of new mobile devices activated every day, the proliferation of health and wellness apps has the potential to revolutionize how patients gain access to the best information and health services. Currently, there are more than 40,000 mobile health applications, and they vary widely in quality, helpfulness, and medical accuracy.</source>
-        <target>随着每天几百万的移动设备被激活，健康养生方面的应用程序将会不停地升级，提供给患者最好的信息和健康服务目前，有4万多个手机健康应用程序，它们在质量，乐于助人和医疗准确性方面差异很大。</target>
+        <target>随着每天几百万的移动设备被激活，健康养生方面的应用程序将会不停地升级，提供给患者最好的信息和健康服务目前，有4万多个手机健康应用程序，它们在质量，有助度和医疗准确性方面差异很大。</target>
       </trans-unit>
       <trans-unit id="5589" resname="r187855808" restype="string" datatype="x-haml">
         <source>We believe that the best doctors can help millions of people identify which applications are the most useful and helpful. To facilitate this, we’ve created an Editorial Board to which the best doctors in the HealthTap Network are invited.</source>
@@ -24375,7 +24375,7 @@
       </trans-unit>
       <trans-unit id="5660" resname="r968859451" restype="string" datatype="x-haml">
         <source>, we’ve got them all. And we need more of them to accomplish even bigger goals!</source>
-        <target>，我们成就了所有人。我们需要更多的人共同完成更大的目标！</target>
+        <target>，我们成就所有人。我们需要更多的人共同完成更大的目标！</target>
       </trans-unit>
       <trans-unit id="5661" resname="r933237391" restype="string" datatype="x-haml">
         <source>Big dreamers and big doers? You bet. Here at</source>
@@ -24383,7 +24383,7 @@
       </trans-unit>
       <trans-unit id="5662" resname="r545414002" restype="string" datatype="x-haml">
         <source>We believe our ability to marry healthcare and technology will have a great impact on the world, and will prolong the life expectancy of humankind. We’re excited about improving the efficiency of care, while enhancing the quality of people’s lives, and making people’s feel good every day.</source>
-        <target>我们相信我们与健康医护紧密联系的能力将对世界产生巨大影响，并将延长人类的预期寿命。我们很高兴提高医护效率，同时提高人们的生活质量，使人们每天都感觉很好。</target>
+        <target>我们相信我们与健康医护紧密联系的能力将对世界产生巨大影响，并将延长人类的预期寿命。我们很高兴提高医护效率，同时提高人们的生活质量，使人们每天都Feel Good。</target>
       </trans-unit>
       <trans-unit id="5663" resname="r232786897" restype="string" datatype="x-haml">
         <source>We value health and happiness. This means that you get full health benefits (health, dental, vision), one of Silicon Valley’s best PTO policies, healthy catered lunches, dinners, and snacks throughout the day, lots of great company events and outings, subsidized gym memberships, yearly retreats to fun places, and much, much more.</source>
@@ -24507,7 +24507,7 @@
       </trans-unit>
       <trans-unit id="5696" resname="r379982234" restype="string" datatype="x-haml">
         <source>We're sorry to hear you'd like to unsubscribe this email</source>
-        <target>我们非常抱歉的听到您希望取消此邮箱订购</target>
+        <target>我们非常抱歉的听到您希望取消此邮箱订阅</target>
       </trans-unit>
       <trans-unit id="5697" resname="r931258887" restype="string" datatype="x-haml">
         <source>we'll make sure to address your feedback  as best as possible!</source>
@@ -24519,7 +24519,7 @@
     <body>
       <trans-unit id="5698" resname="r352161212" restype="string" datatype="x-haml">
         <source>doctors can prescribe medication and refill prescripitons, which you can conveniently pick up at your local pharmacy. By collaborating with Quest Diagnostics, our doctors can also order and review lab tests through virtual consults. Simply visit one of the thousands of local test centers nationwide to save multiple trips to the doctor.</source>
-        <target>医生可以开处方药并且再配方处方，您可以很方便的在您当地的药店取药。通过与Quest Diagnostics实验室合作，我们的医生还可以通过在线咨询去订购和审查实验室检验。只需访问全国数千个地方检验中心之一，以节省多次去看医生的次数。</target>
+        <target>医生可以开处方药并且补充药方，您可以很方便的在您当地的药店取药。通过与Quest Diagnostics实验室合作，我们的医生还可以通过在线咨询去订阅和审查实验室检验。只需访问全国数千个地方检验中心之一，以节省多次去看医生的次数。</target>
       </trans-unit>
     </body>
   </file>
@@ -24803,11 +24803,11 @@
       </trans-unit>
       <trans-unit id="5784" resname="r632748504" restype="string" datatype="x-haml">
         <source>Even if you believe you need a prescription or lab test, you should not expect a prescription or lab test order from any given consult. Patients who are located outside the U.S. may receive prescription recommendations only; lab orders are not currently possible for patients located outside the U.S. If the practitioner deems it appropriate to prescribe treatment or order lab tests for the condition discussed in a virtual consult, then the prescription or lab test(s) may be ordered by the physician. Lab tests are currently ordered using Quest Diagnostics lab test services; it may not be possible to order all of Quest Diagnostics lab tests (if any) in all U.S. states at this time. . The following medication categories cannot be prescribed or recommended in virtual consults on HealthTap: DEA category I-IV medications, lifestyle medications (such as weight loss or hair loss medication), and U.S.-state regulated medications. It may be possible to get prescriptions for some psychiatric medications in HealthTap Concierge virtual consults, but doctors cannot prescribe psychiatric medications in HealthTap Prime virtual consults.</source>
-        <target>即使您相信您需要处方或实验室检验，您也不应该期望任何给定咨询的处方或实验室检验。位于美国境外的患者只能获得处方建议; 实验室下单目前不能用于位于美国境外的患者。如果医生认为在线咨询中对于讨论的病症开处方或预定实验室检验是合适的，则处方或实验室检验可以由医生订购。实验室检验目前使用Quest Diagnostics实验室检验服务; 目前可能无法在美国所有州订购所有Quest Diagnostics实验室检验（如果有）。.以下药物类别不能出现在HealthTap的在线咨询的处方或推荐中：DEA类别I-IV药物，生活用药（例如减肥或脱发药物）和美国国家管制药物。有可能在HealthTap贵宾台在线咨询中获得一些精神病药物的处方，但医生不能在HealthTap Prime在线咨询中开精神病药物的处方。</target>
+        <target>即使您相信您需要处方或实验室检验，您也不应该期望任何给定咨询的处方或实验室检验。位于美国境外的患者只能获得处方建议; 实验室下单目前不能用于位于美国境外的患者。如果医生认为在线咨询中对于讨论的病症开处方或预定实验室检验是合适的，则处方或实验室检验可以由医生订阅。实验室检验目前使用Quest Diagnostics实验室检验服务; 目前可能无法在美国所有州订阅所有Quest Diagnostics实验室检验（如果有）。.以下药物类别不能出现在HealthTap的在线咨询的处方或推荐中：DEA类别I-IV药物，生活用药（例如减肥或脱发药物）和美国国家管制药物。有可能在HealthTap贵宾台在线咨询中获得一些精神病药物的处方，但医生不能在HealthTap Prime在线咨询中开精神病药物的处方。</target>
       </trans-unit>
       <trans-unit id="5785" resname="r606500891" restype="string" datatype="x-haml">
         <source>There are cases when you may present with a condition that is long-standing for which you may have been taking a prescription for a long period of time. Even in this situation, it is up to the consulting doctor’s medical expertise and discretion to decide to order that prescription and for what duration. Please understand that in HealthTap Prime virtual consults, you and the doctor most likely do not have an established doctor-patient relationship, and best practice will be for the doctor to prescribe (if at all) a short-course of medication to hold you over until you are able to consult with your established doctor.</source>
-        <target>这些情况是当您可能会出现长期存在的病症，您可能已经长期服用处方。即使在这种情况下，还是取决于咨询医生的医疗专业知识和自由裁量决定是否订购处方和持续时间。请理解，在HealthTap Prime在线咨询中，您和医生很可能没有确定的医患关系，最佳诊疗将是医生给您开短期药物治疗的处方（如果有的话）， 直到您能够咨询到您的指定医生。</target>
+        <target>这些情况是当您可能会出现长期存在的病症，您可能已经长期服用处方。即使在这种情况下，还是取决于咨询医生的医疗专业知识和自由裁量决定是否订阅处方和持续时间。请理解，在HealthTap Prime在线咨询中，您和医生很可能没有确定的医患关系，最佳诊疗将是医生给您开短期药物治疗的处方（如果有的话）， 直到您能够咨询到您的指定医生。</target>
       </trans-unit>
       <trans-unit id="5786" resname="r770388354" restype="string" datatype="x-haml">
         <source>accessed for a fee. ("Premium Services" and "Premium Content", respectively).</source>
@@ -24847,7 +24847,7 @@
       </trans-unit>
       <trans-unit id="5795" resname="r876235835" restype="string" datatype="x-haml">
         <source>The Content and Services may not be used for any illegal purpose. You may not access our networks, computers, or the Content and Services in any manner that could damage, disable, overburden, or impair them, or interfere with any other person's use and enjoyment. You may not attempt to gain unauthorized access to any Content or Services, other accounts, computer systems, or networks connected with HealthTap, the Content, or Services. You may not use any automated means (such as a scraper) to access HealthTap, the Content, or Services for any purpose. Such unauthorized access includes, but is not limited to, using another person's login credentials to access HealthTap. Any attempt by any individual or entity to solicit login information of any other user or HealthTap Medical Expert or to access any such account is an express and direct violation of these Terms of Use and of applicable law, including relevant privacy and security laws and laws prohibiting unfair or unethical business practices.</source>
-        <target>内容和服务不得用于任何非法目的。您不能以任何可能损害，禁用，过度使用或损害其内容或干扰任何其他人的使用和享受的方式访问我们的网络，计算机或内容和服务。您最好不要通过未经授权的渠道进入任何与HealthTap及其内容或服务相关的内容或服务、其他账号、电脑系统或网络。您最好不要有目的地通过一些自动化方式（例如刮刀）来访问HealthTap及其内容或服务。这种未经授权的访问包括但不限于使用另一个人的登录凭证来访问HealthTap。个人或整体的任何征求其他用户或医学专家的登陆信息，以及登录这些账号的企图都是一种直接违反这些使用条款和法律适用的体现，包括相关隐私和安全的法律以及禁止不公平不道德的商业行为的法律。</target>
+        <target>内容和服务不得用于任何非法目的。您不能以任何可能损害，禁用，过度使用或损害其内容或干扰任何其他人的使用和享受的方式访问我们的网络，计算机或内容和服务。您最好不要通过未经授权的渠道进入任何与HealthTap及其内容或服务相关的内容或服务、其他账号、电脑系统或网络。您最好不要有目的地通过一些自动化方式（例如刮刀）来访问HealthTap及其内容或服务。这种未经授权的访问包括但不限于使用另一个人的登录凭证来访问HealthTap。个人或整体的任何征求其他用户或医学专家的登录信息，以及登录这些账号的企图都是一种直接违反这些使用条款和法律适用的体现，包括相关隐私和安全的法律以及禁止不公平不道德的商业行为的法律。</target>
       </trans-unit>
       <trans-unit id="5796" resname="r88007734" restype="string" datatype="x-haml">
         <source>We do not recommend or endorse any specific Content, Services, tests, doctors, products, procedures, opinions, or other information that may be mentioned on HealthTap. HealthTap is designed to be used with common sense, and in connection with the advice of your doctor or healthcare provider. Reliance on HealthTap Content or Services is solely at your own risk. Some Content and Services, including posts by Medical Experts, may be or have been provided by third parties directly and are not reviewed or certified by HealthTap. We cannot guarantee that the Content and Services will help you achieve any specific goals or results. Content regarding dietary supplements or other treatments or regimens has not been evaluated by the Food and Drug Administration and is not intended to diagnose, treat, cure, or prevent any disease.</source>
@@ -25067,15 +25067,15 @@
       </trans-unit>
       <trans-unit id="5865" resname="r529875894" restype="string" datatype="x-haml">
         <source>If you signed up for a free trial or limited-period discount HealthTap Prime account, and allow the trial or discount period to expire, your account will automatically convert to a standard paid subscription account (starting your full-price subscription period and recurring charges).  For the first month of your full-price paid subscription only, you have a 72-hour grace period to notify HealthTap Support in writing if you do not want to continue the subscription and/or to request a refund of your first month’s full-price subscription fee. This grace-period does not apply if you have engaged in one or more consults after the free-trial period.  You may cancel your subscription at any time, and your subscription will be valid through the then current pre-paid month.  HealthTap does not offer partial-month refunds.</source>
-        <target>如果您注册了一个免费试用或时段限制的折扣HealthTap Prime账户，并允许试验或折扣期到期，您的帐户将自动转换为一个标准的付费订购帐户(开始您的全价购买订购期和经常性费用)。只对于您全价购买支付的第一个月的订购，如果您不愿意继续订购和/或要求退款全价购买订购您的第一个月的费用，您有一个72小时的宽限期来书面通知HealthTap支持。在免费试用期之后，如果您有参与一个或更多的咨询，那么这个宽限期将不适用。您可以在任何时候取消您的订购,然后您的订购将通过目前预付费生效。HealthTap不提供分批月份退款。</target>
+        <target>如果您注册了一个免费试用或时段限制的折扣HealthTap Prime账户，并允许试验或折扣期到期，您的帐户将自动转换为一个标准的付费订阅帐户(开始您的全价购买订阅期和经常性费用)。只对于您全价购买支付的第一个月的订阅，如果您不愿意继续订阅和/或要求退款全价购买订阅您的第一个月的费用，您有一个72小时的宽限期来书面通知HealthTap支持。在免费试用期之后，如果您有参与一个或更多的咨询，那么这个宽限期将不适用。您可以在任何时候取消您的订阅,然后您的订阅将通过目前预付费生效。HealthTap不提供分批月份退款。</target>
       </trans-unit>
       <trans-unit id="5866" resname="r759979782" restype="string" datatype="x-haml">
         <source>HealthTap Prime offers primary-care consults from specific physicians on HealthTap only.  Consults for specialist care are not available on HealthTap Prime.  HealthTap Prime consults are available under an “on call” model where you will be connected with the first-available HealthTap Prime physician.  If you wish to or do select a specific doctor (including specialists) to consult, these consults are part of the HealthTap Concierge service, are not included in your HealthTap Prime subscription, and are subject to additional per-consult fees.  HealthTap Prime may not cover the cost of consults that originated from searching for a specific doctor or specialty. Pricing for any Concierge consults will be shown prior to initiating such consults and by participating in such a consult you agree to pay the fees associated with such a consult.</source>
-        <target>HealthTap Prime仅在HealthTap上提供特定医生的普通门诊咨询。HealthTap Prime不提供专家医护的咨询服务。HealthTap Prime咨询可在“即时”模式下使用，您将与首个可用的HealthTap Prime医师联系。如果您希望或选择特定的医生（包括专家）咨询，这些咨询是HealthTap贵宾台服务的一部分，但不包括在您的HealthTap Prime订购，并且需要额外的咨询费。HealthTap Prime可能不支付由于寻找特定医生或专业而产生的咨询费用。任何贵宾台咨询的价格将在开始此类咨询之前显示，并通过参与此类咨询，您同意支付与此类咨询相关的费用。</target>
+        <target>HealthTap Prime仅在HealthTap上提供特定医生的普通门诊咨询。HealthTap Prime不提供专家医护的咨询服务。HealthTap Prime咨询可在“即时”模式下使用，您将与首个可用的HealthTap Prime医师联系。如果您希望或选择特定的医生（包括专家）咨询，这些咨询是HealthTap贵宾台服务的一部分，但不包括在您的HealthTap Prime订阅，并且需要额外的咨询费。HealthTap Prime可能不支付由于寻找特定医生或专业而产生的咨询费用。任何贵宾台咨询的价格将在开始此类咨询之前显示，并通过参与此类咨询，您同意支付与此类咨询相关的费用。</target>
       </trans-unit>
       <trans-unit id="5867" resname="r645232444" restype="string" datatype="x-haml">
         <source>You are responsible for monitoring your financial accounts and statements, and HealthTap is not responsible for any charges actually or allegedly not authorized by any account holder.  In the event that HealthTap agrees to provide you with a refund for any reason (including but not limited to claims of unauthorized charges), the maximum refund to which you will be entitled is sixty (60) days from the time of purchase.  Unsubscribing from messages from HealthTap and/or uninstalling the HealthTap app do not automatically cancel any subscriptions you have on HealthTap, nor do these actions cancel your obligations to pay for any such subscriptions still active on HealthTap.</source>
-        <target>您负责监控您的财产账户和报表，并且HealthTap不负责实际的或所谓据称的未经任何账户持有人授权的任何费用。如果HealthTap同意以任何理由（包括但不限于对未授权费用的索赔）向您退款，您将享有自购买之日起六十（60）天的最大退款金额。取消订购来自HealthTap的消息和/或卸载HealthTap应用程序不会自动取消您在HealthTap上的任何订购，这些操作也不会取消您支付在HealthTap上仍处于活动状态的任何订购的义务。您可以随时取消订购，您的订购将在当前预付月份之前有效。不要张贴广告或请求或链接到其他网站或个人。</target>
+        <target>您负责监控您的财产账户和报表，并且HealthTap不负责实际的或所谓据称的未经任何账户持有人授权的任何费用。如果HealthTap同意以任何理由（包括但不限于对未授权费用的索赔）向您退款，您将享有自购买之日起六十（60）天的最大退款金额。取消订阅来自HealthTap的消息和/或卸载HealthTap应用程序不会自动取消您在HealthTap上的任何订阅，这些操作也不会取消您支付在HealthTap上仍处于活动状态的任何订阅的义务。您可以随时取消订阅，您的订阅将在当前预付月份之前有效。不要张贴广告或请求或链接到其他网站或个人。</target>
       </trans-unit>
       <trans-unit id="5880" resname="r449712344" restype="string" datatype="x-haml">
         <source>Additional Terms: HealthTap Concierge</source>
@@ -25323,7 +25323,7 @@
       </trans-unit>
       <trans-unit id="5973" resname="r600962115" restype="string" datatype="x-haml">
         <source>The result: HealthTap RateRx, the world’s first (and only) large-scale doctor rating of the effectiveness of drugs and treatments.</source>
-        <target>结果：HealthTap Rate医生评测，世界上第一个（并且是唯一一个）大型的对药物与治疗有效性进行医生评分的系统。</target>
+        <target>结果：HealthTap RateRx医生评测，世界上第一个（并且是唯一一个）大型的对药物与治疗有效性进行医生评分的系统。</target>
       </trans-unit>
     </body>
   </file>
@@ -25331,11 +25331,11 @@
     <body>
       <trans-unit id="5979" resname="r869269584" restype="string" datatype="x-haml">
         <source>A new, independent resource for doctors and patients alike, RateRx presents ratings of medication effectiveness as reported by thousands of U.S.-licensed doctors in clinical practice in more than 137 specialties. RateRx is the first national survey of U.S.-licensed doctors, soliciting independent feedback from physicians across the country about their real-world clinical experience treating a broad range of common conditions, and rating the medications used in those treatments. RateRx represents the first comprehensive assessment of what experienced clinicians in each specialty actually use in the care of patients with specific conditions. Unlike other studies, which may report on the clinical effectiveness of treatments under controlled circumstances, RateRx calls on the deep, long-term, real-world experience of top doctors to reveal which treatments doctors have learned actually work with patients.</source>
-        <target>作为一个对于医生和患者来说都全新、独立的资源，Rate医生评测提供对于药物治疗有效性的评分。这些药物治疗是数千拥有美国执业执照的医生通过在超过137个专科领域的临床诊疗得出的。Rate医生评测是第一个对于拥有美国执业执照医生的全国性调查，征求全国的医生基于他们广泛临床经验的独立反馈，并对治疗手段中所使用的药物进行评分。Rate医生评测代表了第一个针对有经验的医生在他们各自的专业领域所使用的治疗特定情况患者的手段的全面性评估。与可能会报告在可控状态下的治疗的临床有效性的其他研究不同的是，Rate医生评测呼吁深入、长期、真实的顶级医生的经验，来展示医生了解到的哪些治疗计划对患者有效。</target>
+        <target>作为一个对于医生和患者来说都全新、独立的资源，RateRx医生评测提供对于药物治疗有效性的评分。这些药物治疗是数千拥有美国执业执照的医生通过在超过137个专科领域的临床诊疗得出的。RateRx医生评测是第一个对于拥有美国执业执照医生的全国性调查，征求全国的医生基于他们广泛临床经验的独立反馈，并对治疗手段中所使用的药物进行评分。RateRx医生评测代表了第一个针对有经验的医生在他们各自的专业领域所使用的治疗特定情况患者的手段的全面性评估。与可能会报告在可控状态下的治疗的临床有效性的其他研究不同的是，RateRx医生评测呼吁深入、长期、真实的顶级医生的经验，来展示医生了解到的哪些治疗计划对患者有效。</target>
       </trans-unit>
       <trans-unit id="5980" resname="r421131126" restype="string" datatype="x-haml">
         <source>The RateRx study was conducted by HealthTap. HealthTap collects extensive information from doctors on, among other topics, the treatments of all health-related issues.</source>
-        <target>通过HealthTap进行Rate医生评测的研究HealthTap从医生那里广泛收集所有其他方面有关健康问题的信息。</target>
+        <target>通过HealthTap进行RateRx医生评测的研究HealthTap从医生那里广泛收集所有其他方面有关健康问题的信息。</target>
       </trans-unit>
       <trans-unit id="5981" resname="r437766298" restype="string" datatype="x-haml">
         <source>Doctors were asked to rate the clinical effectiveness of a drug for treating a condition on a scale of 1 to 5 stars. Based on their knowledge from clinical experience using the drug for that indication, contributing doctors were instructed to rate medications for their use with specific indications. The combined ratings for each treatment have been summarized into an aggregate rating that reflects doctors’ collective experiences. The profiles of all doctors who provided ratings are publicly visible, and anyone can review details of the doctors’ training and experiences, including their specialties and board certifications.</source>
@@ -25347,15 +25347,15 @@
       </trans-unit>
       <trans-unit id="5983" resname="r572776544" restype="string" datatype="x-haml">
         <source>Doctors could rate any medication for its effectiveness in treating any condition. For common conditions, medications known to be treatments for the conditions were presented alongside the conditions. Doctors could add ratings for any new medication treatments not already included in the list.</source>
-        <target>医生可以评价任何药物在任何条件下的有效性。对于常见症状，已知的药物治疗方式会在症状的旁边注明。医生可以对任何新的没有在清单里的药物治疗方式添加打分。</target>
+        <target>医生可以评价任何药物在任何健康状况下的有效性。对于常见症状，已知的药物治疗方式会在症状的旁边注明。医生可以对任何新的没有在清单里的药物治疗方式添加打分。</target>
       </trans-unit>
       <trans-unit id="5984" resname="r140192565" restype="string" datatype="x-haml">
         <source>RateRx results display each treatment for an indication in an ordered rank, based on average weighted ratings, from highest-rated to lowest, and only when there are sufficient data for a meaningful weighted average. The weighted average takes into account both the average rating and the number of ratings, discounting higher average ratings that are based on a smaller number of assessments.</source>
-        <target>Rate医生评测通过一种有次序的排列方式来显示每一种治疗方式对某一症状的效果。这种排列方式基于加权评分，从高到低排列。只有当数据量对于加权平均足够时才会对这一治疗方式其进行排列。加权平均分同时参照了平均分和打分数量，会对高平均分但是打分数量较少的评分进行扣分。</target>
+        <target>RateRx医生评测通过一种有次序的排列方式来显示每一种治疗方式对某一症状的效果。这种排列方式基于加权评分，从高到低排列。只有当数据量对于加权平均足够时才会对这一治疗方式其进行排列。加权平均分同时参照了平均分和打分数量，会对高平均分但是打分数量较少的评分进行扣分。</target>
       </trans-unit>
       <trans-unit id="5985" resname="r872892893" restype="string" datatype="x-haml">
         <source>To ensure unbiased doctor evaluations, doctors do not see their colleagues’ existing contributions until after they have entered their own rating. Recommendations cannot be changed once submitted, but after ratings are submitted, doctors can view the ratings of other doctors and comment on these. Both patients and doctors can learn from the RateRx ratings system. Patients benefit from the collective wisdom shared by these doctors, enabling them to see how different treatments for the same conditions are rated and reviewed. Doctors benefit from their colleagues’ ratings and comments, and are able to interpret them by referring to the contributing doctors’ practice profiles (which show their education and experience, their specialty training, years in practice, DocScore, and their "Known-for" topics).</source>
-        <target>为了保证医生评估的无偏性，医生无法看到他同行已经打好的分数直到他自己输入了评分。推荐一旦被提交就无法更改，但是在提交打分之后，医生可以查看其它医生的评分并进行评论。患者和医生都可以从Rate医生评测评级系统中学习。患者受益于这些医生分享的集体智慧，使他们能够看到不同的治疗方法在相同的条件下是如何评价和审查的。医生会从他的同事的评分和评价中受益，能够通过查看参与评价的医生的资料来理解这些信息（资料展现了医生的教育背景和经历，他们的专长领域的训练，诊疗的年数，医者评分和他们的”专攻”话题）。</target>
+        <target>为了保证医生评估的无偏性，医生无法看到他同行已经打好的分数直到他自己输入了评分。推荐一旦被提交就无法更改，但是在提交打分之后，医生可以查看其它医生的评分并进行评论。患者和医生都可以从RateRx医生评测评级系统中学习。患者受益于这些医生分享的集体智慧，使他们能够看到不同的治疗方法在相同的条件下是如何评价和审查的。医生会从他的同事的评分和评价中受益，能够通过查看参与评价的医生的资料来理解这些信息（资料展现了医生的教育背景和经历，他们的专长领域的训练，诊疗的年数，医者评分和他们的”专攻”话题）。</target>
       </trans-unit>
       <trans-unit id="5986" resname="r768402304" restype="string" datatype="x-haml">
         <source>Comments, which are optional, are often used by doctors to qualify or explain ratings, or to share details of how medications are used for each indication. Comments are available to read and review, but do not change the numeric value of the rating.</source>
@@ -25371,7 +25371,7 @@
       </trans-unit>
       <trans-unit id="5989" resname="r668962001" restype="string" datatype="x-haml">
         <source>RateRx is a living work.  As an open and ongoing feature on the HealthTap platform, any U.S.-licensed doctor in good standing can contribute to this data at any time.  RateRx data reflect the ongoing feedback and ratings provided by doctors based on their real-world use of medications in treating patients, serving as a unique, continuously updated resource for the efficacy of both existing and new treatments.</source>
-        <target>Rate医生评测是一项生活工作正是因为HealthTap平台有着开放的并且持续发展的特征，任何有良好声誉的拥有美国执业执照的医生都可以在任何时候完善数据。Rate医生评测的数据反映了医生基于现实中对患者的药物治疗的实时的反馈和评分，这些数据为现有的和新的治疗方式提供了独一无二的，同时也是最新的资源。</target>
+        <target>RateRx医生评测是一项生活工作正是因为HealthTap平台有着开放的并且持续发展的特征，任何有良好声誉的拥有美国执业执照的医生都可以在任何时候完善数据。RateRx医生评测的数据反映了医生基于现实中对患者的药物治疗的实时的反馈和评分，这些数据为现有的和新的治疗方式提供了独一无二的，同时也是最新的资源。</target>
       </trans-unit>
       <trans-unit id="5990" resname="r88043317" restype="string" datatype="x-haml">
         <source>. Content, including AppRx ratings and report results, may be licensed from HealthTap.  For details contact</source>
@@ -25379,7 +25379,7 @@
       </trans-unit>
       <trans-unit id="5992" resname="r448487612" restype="string" datatype="x-haml">
         <source>HealthTap does not recommend or endorse any specific content or other information mentioned on our service.  Please remember, that content on HealthTap (including but not limited to treatment options and ratings listed in RateRx): (i) is provided for informational and educational purposes only, and is designed to be used with common sense, and in connection with the advice of your doctor or healthcare provider; (ii) is for personal, household, educational use of a single individual, and commercial use or commercial distribution of any content is prohibited. For more information please see</source>
-        <target>HealthTap不推荐任何在我们的服务中提到的特定内容或其他的信息。请记住，HealthTap中的内容（包括但不限于在Rate医生评测中列出的治疗选项和评分）(i)是仅为获取信息和教育的目的提供的，需要与常识，您的医生或者健康医护提供商的建议相配合；(ii)是为个人，家庭，个人的教育而提供的，内容的商业用途或者商业性传播都是被禁止的。获得更多信息，请查看</target>
+        <target>HealthTap不推荐任何在我们的服务中提到的特定内容或其他的信息。请记住，HealthTap中的内容（包括但不限于在RateRx医生评测中列出的治疗选项和评分）(i)是仅为获取信息和教育的目的提供的，需要与常识，您的医生或者健康医护提供商的建议相配合；(ii)是为个人，家庭，个人的教育而提供的，内容的商业用途或者商业性传播都是被禁止的。获得更多信息，请查看</target>
       </trans-unit>
       <trans-unit id="5993" resname="r581520958" restype="string" datatype="x-haml">
         <source>Learn more about our methodology</source>
@@ -25723,7 +25723,7 @@
     <body>
       <trans-unit id="6686" resname="r212184506" restype="string" datatype="x-haml">
         <source>Increase revenue with</source>
-        <target>通过添加收入</target>
+        <target>通过增加收入</target>
       </trans-unit>
       <trans-unit id="6687" resname="r839223020" restype="string" datatype="x-haml">
         <source>state-of-the-art virtual healthcare</source>
@@ -25807,7 +25807,7 @@
       </trans-unit>
       <trans-unit id="6707" resname="r150319784" restype="string" datatype="x-haml">
         <source>*This total does not include subscription fees, which vary by practice size.</source>
-        <target>*此总额不包括订购费，这取决于诊疗的大小。</target>
+        <target>*此总额不包括订阅费，这取决于诊疗的大小。</target>
       </trans-unit>
       <trans-unit id="6708" resname="r901389800" restype="string" datatype="x-haml">
         <source>Success stories</source>
@@ -25819,7 +25819,7 @@
     <body>
       <trans-unit id="6735" resname="r885700767" restype="string" datatype="x-haml">
         <source>Unlimited visits with a monthly subscription. Cancel anytime.</source>
-        <target>每月订购即可无限次访问。随时取消</target>
+        <target>每月订阅即可无限次访问。随时取消</target>
       </trans-unit>
     </body>
   </file>
@@ -26371,7 +26371,7 @@
       </trans-unit>
       <trans-unit id="8095" resname="r786078406" restype="string" datatype="x-haml">
         <source>Boost revenue</source>
-        <target>添加收入</target>
+        <target>增加收入</target>
       </trans-unit>
       <trans-unit id="8096" resname="r223964069" restype="string" datatype="x-haml">
         <source>Delight and retain your patients</source>
@@ -26395,15 +26395,15 @@
       </trans-unit>
       <trans-unit id="8101" resname="r769256774" restype="string" datatype="x-haml">
         <source>Top practices across the U.S. are now using our industry-leading technology to increase revenue and boost efficiency while improving the healthcare experience for their patients.</source>
-        <target>在美国的顶级诊疗现在正使用我们领先的技术，以添加收入和提高效率，同时改善他们患者健康医护体验。</target>
+        <target>在美国的顶级诊疗现在正使用我们领先的技术，以增加收入和提高效率，同时改善他们患者健康医护体验。</target>
       </trans-unit>
       <trans-unit id="8102" resname="r1024827608" restype="string" datatype="x-haml">
         <source>Send prescriptions and order lab tests</source>
-        <target>发送处方和订购实验室检验</target>
+        <target>发送处方和订阅实验室检验</target>
       </trans-unit>
       <trans-unit id="8103" resname="r718751116" restype="string" datatype="x-haml">
         <source>HealthTap doctors can prescribe medication and refill prescriptions, which patients can conveniently pick up at their local pharmacy (those below and more!). By collaborating with Quest Diagnostics, our doctors can also order and review lab tests through virtual consults.</source>
-        <target>医生可以开处方和再配方处方，患者可以很方便的在您当地的药店取药(以上这些或更多！)。通过与Quest Diagnostics实验室合作，我们的医生还可以通过在线咨询去订购和审查实验室检验。</target>
+        <target>医生可以开处方和补充药方，患者可以很方便的在您当地的药店取药(以上这些或更多！)。通过与Quest Diagnostics实验室合作，我们的医生还可以通过在线咨询去订阅和审查实验室检验。</target>
       </trans-unit>
     </body>
   </file>
@@ -26471,7 +26471,7 @@
       </trans-unit>
       <trans-unit id="8369" resname="r831444508" restype="string" datatype="x-haml">
         <source>Get a screening test ordered during a virtual consult on HealthTap</source>
-        <target>获得在HealthTap上在线咨询期间订购的筛选检验</target>
+        <target>获得在HealthTap上在线咨询期间订阅的筛选检验</target>
       </trans-unit>
       <trans-unit id="8370" resname="r574018141" restype="string" datatype="x-haml">
         <source>But there's good news: Hepatitis C is treatable.</source>
@@ -26539,15 +26539,15 @@
     <body>
       <trans-unit id="8483" resname="r976620051" restype="string" datatype="x-haml">
         <source>Pre-purchase distribution: Licensee agrees to pre-purchase at the Base Price at least the Minimum Number of annual Qualified Subscriptions upon execution of this Agreement.  Payment for this purchase shall grants Licensee the right to: (i) sell these Pre-Purchased Subscriptions at any price, for which Licensee shall receive from HealthTap all Subscription Agreement Fees collected by HealthTap for these Pre-Purchased Subscriptions.</source>
-        <target>预购分销：根据此协议，执业执照人同意以基准价格预先购买至少基本数量的合格的产品订购。本次付款应授予执业执照人以下权利：(I) 以任何价格出售这些预购订购，执业执照人应从HealthTap收到HealthTap为这些预购订购收集的所有订购协议费用。</target>
+        <target>预购分销：根据此协议，执业执照人同意以基准价格预先购买至少基本数量的合格的产品订阅。本次付款应授予执业执照人以下权利：(I) 以任何价格出售这些预购订阅，执业执照人应从HealthTap收到HealthTap为这些预购订阅收集的所有订阅协议费用。</target>
       </trans-unit>
       <trans-unit id="8512" resname="r208202705" restype="string" datatype="x-haml">
         <source>Revenue Share Subscriptions. Licensee agrees to Licensee pay the Revenue Share Distribution Fee.  The price for this fee is set forth in Exhibit A. This shall entitle Licensee to sell memberships for the Licensee Commission set forth in Exhibit A.</source>
-        <target>收入分享订购。：执业执照人同意被许可人支付收入分配费。此费用的价格在附录A被提出。这应授予执业执照人出售会员资格以得到佣金的资格。佣金问题在附录A中有被提到。</target>
+        <target>收入分享订阅。：执业执照人同意被许可人支付收入分配费。此费用的价格在附录A被提出。这应授予执业执照人出售会员资格以得到佣金的资格。佣金问题在附录A中有被提到。</target>
       </trans-unit>
       <trans-unit id="8519" resname="r805657357" restype="string" datatype="x-haml">
         <source>Term. The initial term of this Agreement shall be for one (1) year from the Effective Date (“Initial Term”), and shall automatically renew for additional one (1) year terms (each a “Renewal Term”) unless Licensee provides Licensor with written notice of its intent not to renew at least ninety (90) days prior to any such Renewal Term.  HealthTap may terminate this agreement for convenience upon thirty (30) notice to Licensee but in the event of such termination Licesee shall retain the right to sell any Pre-Paid subscriptions under the terms of this Agreement for the applicable Calendar Year.</source>
-        <target>条款。本协议的初始期限为自生效日期（“初始期限”）起一（1）年，并自动续约一（1）年（每次为“续约期”），除非被许可人向执业执照人提供 书面通知其意图在任何此类续订期限前至少九十（90）天不续订。HealthTap可以在向被许可方发出三十（30）条通知后终止本协议，但如果终止，执业执照人应保留在适用的日历年根据本协议的条款出售任何预付费订购的权利。</target>
+        <target>条款。本协议的初始期限为自生效日期（“初始期限”）起一（1）年，并自动续约一（1）年（每次为“续约期”），除非被许可人向执业执照人提供 书面通知其意图在任何此类续订期限前至少九十（90）天不续订。HealthTap可以在向被许可方发出三十（30）条通知后终止本协议，但如果终止，执业执照人应保留在适用的日历年根据本协议的条款出售任何预付费订阅的权利。</target>
       </trans-unit>
     </body>
   </file>
@@ -26563,7 +26563,7 @@
     <body>
       <trans-unit id="8637" resname="r848853621" restype="string" datatype="x-haml">
         <source>By dividing apps into 30 separate categories, AppRx and the HealthTap Annual AppRx Report help users make sense of the vast landscape of health and wellness apps.  The independent reviews provided by doctors on HealthTap help both patients and peer doctors learn which apps are medically sound, useful in supporting health or wellness goals, and easy to learn and use.  The ratings reveal some surprising recommendations for best apps that might otherwise be missed.</source>
-        <target>通过将应用程序分为30个不同的类别，App医生评测和HealthTap年度AppRx医生评测报告帮助用户了解健康应用程序的广阔景观。HealthTap上医生提供的独立评价帮助患者和同行医生了解哪些应用程序在医学上是健全的，有助于支持健康或健康目标，以及易于学习和使用。对于那些容易被忽视的最好的应用程序，评分显示了令人惊讶的意见。</target>
+        <target>通过将应用程序分为30个不同的类别，AppRx医生评测和HealthTap年度AppRx医生评测报告帮助用户了解健康应用程序的广阔景观。HealthTap上医生提供的独立评价帮助患者和同行医生了解哪些应用程序在医学上是健全的，有助于支持健康或健康目标，以及易于学习和使用。对于那些容易被忽视的最好的应用程序，评分显示了令人惊讶的意见。</target>
       </trans-unit>
     </body>
   </file>
@@ -26895,15 +26895,15 @@
     <body>
       <trans-unit id="9684" resname="r662560288" restype="string" datatype="x-haml">
         <source>Termination for Convenience.  HealthTap may terminate this Agreement for convenience on thirty (30) days notice to Licensee.  Such termination shall impact only the Licensee’s ability to sell additional future Subscriptions and the terms under which any pre-purchased or previously sold subscriptions shall remain unchanged.</source>
-        <target>可任意解除合同为了方便，HealthTap可以在通知被许可方后三十（30）天终止本协议。这种终止只会影响被许可方未来销售更多订购的能力，并且任何预购或以前售出的订购的条款保持不变。这种终止只会影响被许可方未来销售更多订购的能力，并且任何预购或以前售出的订购的条款保持不变。</target>
+        <target>可任意解除合同为了方便，HealthTap可以在通知被许可方后三十（30）天终止本协议。这种终止只会影响被许可方未来销售更多订阅的能力，并且任何预购或以前售出的订阅的条款保持不变。这种终止只会影响被许可方未来销售更多订阅的能力，并且任何预购或以前售出的订阅的条款保持不变。</target>
       </trans-unit>
       <trans-unit id="9686" resname="r897705089" restype="string" datatype="x-haml">
         <source>$20 per pre-paid One-Week End User Family Subscriptions</source>
-        <target>每预付一周的最终用户家庭订购$20</target>
+        <target>每预付一周的最终用户家庭订阅$20</target>
       </trans-unit>
       <trans-unit id="9687" resname="r39246482" restype="string" datatype="x-haml">
         <source>100 One-Week Family Subscriptions ($2,000 minimum)</source>
-        <target>100一周家庭订购（最低$2,000）</target>
+        <target>100一周家庭订阅（最低$2,000）</target>
       </trans-unit>
     </body>
   </file>
@@ -26919,7 +26919,7 @@
       </trans-unit>
       <trans-unit id="9722" resname="r872843049" restype="string" datatype="x-haml">
         <source>GET FEATURED AS A LAUNCH PARTNER NOW</source>
-        <target>立刻获得精选作为发布合作伙伴</target>
+        <target>立刻成为精选发布合作伙伴</target>
       </trans-unit>
       <trans-unit id="9723" resname="r813316535" restype="string" datatype="x-haml">
         <source>SIGN UP AS A LAUNCH PARTNER NOW</source>
@@ -27055,7 +27055,7 @@
     <body>
       <trans-unit id="10141" resname="r242475903" restype="string" datatype="x-haml">
         <source>per month. Just send me a message and I can answer any follow-up questions, give you prescriptions and refills, order and review lab tests, and more.</source>
-        <target>每月。给我发一个消息，我可以回答任何后续问题，给您处方和重新配方，订购和审查实验室检验，等等。</target>
+        <target>每月。给我发一个消息，我可以回答任何后续问题，给您处方和重新配方，订阅和审查实验室检验，等等。</target>
       </trans-unit>
     </body>
   </file>
@@ -27151,7 +27151,7 @@
       </trans-unit>
       <trans-unit id="10418" resname="r41248377" restype="string" datatype="x-haml">
         <source>The Content and Services may not be used for any illegal purpose. You may not access our networks, computers, or the Content and Services in any manner that could damage, disable, overburden, or impair them, or interfere with any other person's use and enjoyment. You may not attempt to gain unauthorized access to any Content or Services, other accounts, computer systems, or networks connected with HealthTap, the Content, or Services. You may not use any automated means (such as a scraper) to access HealthTap, the Content, or Services for any purpose. Such unauthorized access includes, but is not limited to, using another person’s login credentials to access his or her HealthTap account.  Any attempt by any individual or entity to solicit login information of any other user or HealthTap Medical Expert or to access any such account is an express and direct violation of these Terms of Use and of applicable law, including relevant privacy and security laws and laws prohibiting unfair or unethical business practices.</source>
-        <target>内容和服务不得用于任何非法目的。您不能以任何可能损害，禁用，过度使用或损害其内容或干扰任何其他人的使用和享受的方式访问我们的网络，计算机或内容和服务。您最好不要通过未经授权的渠道进入任何与HealthTap及其内容或服务相关的内容或服务、其他账号、电脑系统或网络。您最好不要有目的地通过一些自动化方式（例如刮刀）来访问HealthTap及其内容或服务。这种未经授权的访问包括但不限于使用另一个人的登录凭证来访问他/她的HealthTap帐户。个人或整体的任何征求其他用户或医学专家的登陆信息，以及登录这些账号的企图都是一种直接违反这些使用条款和法律适用的体现，包括相关隐私和安全的法律以及禁止不公平不道德的商业行为的法律。</target>
+        <target>内容和服务不得用于任何非法目的。您不能以任何可能损害，禁用，过度使用或损害其内容或干扰任何其他人的使用和享受的方式访问我们的网络，计算机或内容和服务。您最好不要通过未经授权的渠道进入任何与HealthTap及其内容或服务相关的内容或服务、其他账号、电脑系统或网络。您最好不要有目的地通过一些自动化方式（例如刮刀）来访问HealthTap及其内容或服务。这种未经授权的访问包括但不限于使用另一个人的登录凭证来访问他/她的HealthTap帐户。个人或整体的任何征求其他用户或医学专家的登录信息，以及登录这些账号的企图都是一种直接违反这些使用条款和法律适用的体现，包括相关隐私和安全的法律以及禁止不公平不道德的商业行为的法律。</target>
       </trans-unit>
       <trans-unit id="10419" resname="r894109663" restype="string" datatype="x-haml">
         <source>We do not recommend or endorse any specific Content, Services, tests, doctors, products, procedures, opinions, or other information that may be mentioned on HealthTap. HealthTap is designed to be used with common sense, and in connection with the advice of your doctor or your other healthcare provider. Reliance on HealthTap Content or Services is solely at your own risk. Some Content and Services, including posts by Medical Experts, may be or have been provided by third parties directly and are not reviewed or certified by HealthTap. We hope that our Content and Services will be useful, but we cannot guarantee that the Content and Services will help you achieve any specific goals or results. Content regarding dietary supplements or other treatments or regimens has not been evaluated by the Food and Drug Administration and is not intended to diagnose, treat, cure, or prevent any disease.</source>
@@ -27219,7 +27219,7 @@
       </trans-unit>
       <trans-unit id="10495" resname="r351063967" restype="string" datatype="x-haml">
         <source>Participants can pay for Private Conversations, and HealthTap shall collect these Conversation Fees. Subscribers can also provide Participants with a promotional code, which allow for a Private Conversation without a Conversation Fee (when such promotional codes are used, Subscriber shall not receive any compensation for any such interaction).  Conversation Fees collected from Participants will be distributed to Subscriber by check or money transfer (using a service such as PayPal) after both (i) the total of the Subscriber’s Conversation Fees exceeds $100 (each a "Payment Distribution") and (ii) Subscriber request, and such distribution to Subscriber shall be the total of all collected Conversation Fees minus the applicable License and Subscription Fees. Conversation Fees and License and Subscription Fees are subject to adjustment pursuant to HealthTap policies and procedures</source>
-        <target>参与者可以支付私人对话，HealthTap应收取这些对话费。订购者还可以向参与者提供促销代码，允许在没有对话费的情况下进行私人对话（当使用此类促销代码时，订购者不会因任何此类交互而获得任何补偿）。当(i) 订户的对话费用总额超过100美元（每个为“付款分配”）和(ii)订购者的要求和所有收集的对话费减去适用的执业执照和订购费用的总和时，向参与者所收取的对话费会分发给订购者来确认费用（比如使用PayPal等服务）对咨询费用和执业执照和订购费可根据HealthTap政策和程序进行调整。</target>
+        <target>参与者可以支付私人对话，HealthTap应收取这些对话费。订阅者还可以向参与者提供促销代码，允许在没有对话费的情况下进行私人对话（当使用此类促销代码时，订阅者不会因任何此类交互而获得任何补偿）。当(i) 订户的对话费用总额超过100美元（每个为“付款分配”）和(ii)订阅者的要求和所有收集的对话费减去适用的执业执照和订阅费用的总和时，向参与者所收取的对话费会分发给订阅者来确认费用（比如使用PayPal等服务）对咨询费用和执业执照和订阅费可根据HealthTap政策和程序进行调整。</target>
       </trans-unit>
       <trans-unit id="10500" resname="r547054427" restype="string" datatype="x-haml">
         <source>A.   Ownership of Intellectual Property.</source>
@@ -27291,7 +27291,7 @@
       </trans-unit>
       <trans-unit id="10527" resname="r769419692" restype="string" datatype="x-haml">
         <source>The License and Subscription Fee shall be the License and Subscription Fee Percentage.  The License and Subscription Fee Percentage is a percentage of the Conversation Fee that ranges between Twenty and Twenty-Five Percent of the Conversation Fee based on the DocScore of the Subscriber. Each separate transaction in a Private Conversation, such as a question and a follow up question, shall each be subject to a Conversation Fee.</source>
-        <target>执业执照和订购费应是执业执照和认购费的百分比。执业执照和订购费用百分比是对话费的百分比，其范围介于基于用户的医者评分的对话费用的二十和二十五之间。在私人对话中的每个单独的交易，例如问题和后续问题，每个都需要支付对话费</target>
+        <target>执业执照和订阅费应是执业执照和认购费的百分比。执业执照和订阅费用百分比是对话费的百分比，其范围介于基于用户的医者评分的对话费用的二十和二十五之间。在私人对话中的每个单独的交易，例如问题和后续问题，每个都需要支付对话费</target>
       </trans-unit>
       <trans-unit id="10550" resname="r972572860" restype="string" datatype="x-haml">
         <source>5.</source>
@@ -27347,7 +27347,7 @@
       </trans-unit>
       <trans-unit id="10665" resname="r476412764" restype="string" datatype="x-haml">
         <source>Yes, but only if you choose to publicly display this information. Other users see Topic and Checklist data that appears in your Public Profile – but they will never see Personally Identifiable Information about you, such as your real name or e-mail address. You can control what information is publicly visible through your Privacy &amp; Sharing tab in your settings. You can limit visibility of information to everyone, connections, or no one.</source>
-        <target>是的，但只有当您选择公布这个信息的时候。其他用户可以在您公开资料查看专题和清单–但他们看不见您的个人身份信息，比如您的名字或者您的邮箱。您可以通过保密和公开功能控制您允许别人看到的公开信息。您可以将信息的可见性限制为每个人，联系的人或没有人。</target>
+        <target>是的，但只有当您选择公布这个信息的时候。其他用户可以在您公开资料查看话题和清单–但他们看不见您的个人身份信息，比如您的名字或者您的邮箱。您可以通过保密和公开功能控制您允许别人看到的公开信息。您可以将信息的可见性限制为每个人，联系的人或没有人。</target>
       </trans-unit>
       <trans-unit id="10666" resname="r960862486" restype="string" datatype="x-haml">
         <source>Every user has a Public Profile. Your Public Profile is how other users will see you on the Site. Your Public Profile is your Public Profile Name, and an image or avatar you choose (your Public Profile Picture). It does not contain any Personally Identifiable Information, unless you put such information in your Public Profile Name or Public Profile Picture. Do not use your real name, picture or any other Personally Identifiable Information in your Public Profile Name and avatar.  Each user’s Public Profile is linked to that user’s Health Activity, so that all users on the Site can find similar Public Profiles, and so that we can all share in communal health learning.</source>
@@ -27507,7 +27507,7 @@
       </trans-unit>
       <trans-unit id="10916" resname="r402158633" restype="string" datatype="x-haml">
         <source>Take</source>
-        <target>服用</target>
+        <target>采取</target>
       </trans-unit>
     </body>
   </file>
@@ -27515,7 +27515,7 @@
     <body>
       <trans-unit id="10954" resname="r648729767" restype="string" datatype="x-haml">
         <source>Experiencing symptoms?</source>
-        <target>经历过得症状？</target>
+        <target>经历症状？</target>
       </trans-unit>
       <trans-unit id="10955" resname="r188965397" restype="string" datatype="x-haml">
         <source>Find out why</source>
@@ -27535,7 +27535,7 @@
     <body>
       <trans-unit id="11048" resname="r689990032" restype="string" datatype="x-haml">
         <source>raves CNBC.</source>
-        <target>CNBC赞扬到</target>
+        <target>CNBC赞扬道。</target>
       </trans-unit>
       <trans-unit id="11049" resname="r1017698141" restype="string" datatype="x-haml">
         <source>Your next doctor’s visit could be on your iPhone,</source>
@@ -27543,7 +27543,7 @@
       </trans-unit>
       <trans-unit id="11050" resname="r391604116" restype="string" datatype="x-haml">
         <source>says Good Morning America.</source>
-        <target>早安美国说到。</target>
+        <target>早安美国说道。</target>
       </trans-unit>
       <trans-unit id="11051" resname="r125780051" restype="string" datatype="x-haml">
         <source>Doctor house calls are making a come-back with a high-tech twist,</source>
@@ -27571,7 +27571,7 @@
     <body>
       <trans-unit id="11121" resname="r829967595" restype="string" datatype="x-haml">
         <source>If you don’t find an answer you’re 100% happy with by looking at similar questions on HealthTap, feel free to edit and improve your question.  Our doctors are able to select which questions to answer, and may skip questions that aren’t answerable, clear, and/or detailed.  Ways to improve your question include: add enough detail to make it meaningful, answerable, and easy to understand; ask about just one topic in your question; and double-check your spelling and grammar.</source>
-        <target>如果您通过看HealthTap上的类似问题没有找到100％满意回答，请随时修改和改进您的问题。我们的医生能够选择回答哪些问题，可能会跳过很难回答，不清晰和/或不详细的问题。改善您的问题的方法包括：添加足够的细节使其有意义，可回答和易于理解; 只问一个和问题相关的专题; 并仔细检查您的拼写和语法。</target>
+        <target>如果您通过看HealthTap上的类似问题没有找到100％满意回答，请随时修改和改进您的问题。我们的医生能够选择回答哪些问题，可能会跳过很难回答，不清晰和/或不详细的问题。改善您的问题的方法包括：添加足够的细节使其有意义，可回答和易于理解; 只问一个和问题相关的话题; 并仔细检查您的拼写和语法。</target>
       </trans-unit>
     </body>
   </file>
@@ -27623,7 +27623,7 @@
     <body>
       <trans-unit id="11284" resname="r463035521" restype="string" datatype="x-haml">
         <source>you and your family will be immediately connected with top doctors  without the hassle of traveling to a doctor's office or spending time in a waiting room. You can get medical advice, prescriptions, lab tests ordered and reviewed, and much more!</source>
-        <target>您和您的家人将立即与顶级医生联系，而无需前往医生办公室或在等候室消磨时间。您可以获得医疗咨询，处方，实验室检验订购和审查，以及更多！</target>
+        <target>您和您的家人将立即与顶级医生联系，而无需前往医生办公室或在等候室消磨时间。您可以获得医疗咨询，处方，实验室检验订阅和审查，以及更多！</target>
       </trans-unit>
     </body>
   </file>
@@ -27715,7 +27715,7 @@
     <body>
       <trans-unit id="11491" resname="r456554357" restype="string" datatype="x-haml">
         <source>to help you and your practice thrive on our popular platform that NBC, CBS, the New York Times, and the Wall Street Journal have featured as the leading digital healthcare solution for doctors.</source>
-        <target>去帮助您和您的诊疗在我们流行的平台上蓬勃发展，NBC，CBS，纽约时报和华尔街日报已经为医生领先的数字健康医护解决方案起着重要方案。</target>
+        <target>去帮助您和您的诊疗在我们流行的平台上蓬勃发展，NBC，CBS，纽约时报和华尔街日报已经报道了领先的数字健康医护解决方案。</target>
       </trans-unit>
     </body>
   </file>
@@ -27855,7 +27855,7 @@
     <body>
       <trans-unit id="11764" resname="r70258684" restype="string" datatype="x-haml">
         <source>push notification, or both.  You can do this for any specific</source>
-        <target>推送通知或两者取消订购接收提醒。您可以对清单上的任何特定</target>
+        <target>推送通知或两者取消订阅接收提醒。您可以对清单上的任何特定</target>
       </trans-unit>
       <trans-unit id="11765" resname="r755741925" restype="string" datatype="x-haml">
         <source>notifications in general.  You control the utility, and</source>
@@ -28610,7 +28610,7 @@
       </trans-unit>
       <trans-unit id="13825" resname="Search by name, specialty, or topic" restype="string" datatype="html">
         <source>Search by name, specialty, or topic</source>
-        <target>按名称，专科，专题查找</target>
+        <target>按名称，专科，话题查找</target>
       </trans-unit>
       <trans-unit id="13826" resname="Can&apos;t find a &lt;%= expertType %&gt;?&lt;a href=&quot;#&quot; class=&quot;inviteLink&quot;&gt;Invite them to HealthTap&lt;/a&gt;" restype="string" datatype="html">
         <source>Can't find a &lt;%= expertType %&gt;? &lt;a href="#" class="inviteLink"&gt;Invite them to HealthTap&lt;/a&gt;</source>

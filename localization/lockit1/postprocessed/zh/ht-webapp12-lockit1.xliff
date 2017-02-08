@@ -1280,7 +1280,7 @@
     <body>
       <trans-unit id="283" resname="Wellness and Healthy Living" restype="string" datatype="html">
         <source>Wellness and Healthy Living</source>
-        <target>健康和健康的生活</target>
+        <target>健康的生活</target>
       </trans-unit>
       <trans-unit id="284" resname="Achieve your personal wellness and healthy living goals with the help of over 32,000 U.S.-licensed doctors who are ready to assist, inspire and motivate you 24/7!" restype="string" datatype="html">
         <source>Achieve your personal wellness and healthy living goals with the help of over 32,000 U.S.-licensed doctors who are ready to assist, inspire and motivate you 24/7!</source>
@@ -7128,7 +7128,7 @@
       </trans-unit>
       <trans-unit id="1551" resname="Managing a Condition" restype="string" datatype="html">
         <source>Managing a Condition</source>
-        <target>管理一个健康状况</target>
+        <target>管理症状/健康状况</target>
       </trans-unit>
       <trans-unit id="1552" resname="Avoiding Dehydration" restype="string" datatype="html">
         <source>Avoiding Dehydration</source>
@@ -7236,23 +7236,23 @@
       </trans-unit>
       <trans-unit id="1578" resname="Hourly" restype="string" datatype="html">
         <source>Hourly</source>
-        <target>小时</target>
+        <target>每小时</target>
       </trans-unit>
       <trans-unit id="1579" resname="Daily" restype="string" datatype="html">
         <source>Daily</source>
-        <target>天</target>
+        <target>每天</target>
       </trans-unit>
       <trans-unit id="1580" resname="Weekly" restype="string" datatype="html">
         <source>Weekly</source>
-        <target>周</target>
+        <target>每周</target>
       </trans-unit>
       <trans-unit id="1581" resname="Monthly" restype="string" datatype="html">
         <source>Monthly</source>
-        <target>月</target>
+        <target>每月</target>
       </trans-unit>
       <trans-unit id="1582" resname="Yearly" restype="string" datatype="html">
         <source>Yearly</source>
-        <target>年</target>
+        <target>每年</target>
       </trans-unit>
       <trans-unit id="1583" resname="Every other day" restype="string" datatype="html">
         <source>Every other day</source>
@@ -12407,7 +12407,7 @@ display:none;
     <body>
       <trans-unit id="2586" resname="Find colleagues and add them to your network to share and refer patients, keep up with their activity and send them messages." restype="string" datatype="html">
         <source>Find colleagues and add them to your network to share and refer patients, keep up with their activity and send them messages.</source>
-        <target>找到同事，把他们加入您的网络，分享患者，随访他们的活动，给他们发消息。</target>
+        <target>找到同事，把他们加入您的人脉网，分享患者，随访他们的活动，给他们发消息。</target>
       </trans-unit>
       <trans-unit id="2587" resname="Medical School" restype="string" datatype="html">
         <source>Medical School</source>
@@ -15680,7 +15680,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3193" resname="All specialities" restype="string" datatype="html">
         <source>All specialities</source>
-        <target>所有专科</target>
+        <target>所有专业</target>
       </trans-unit>
       <trans-unit id="3194" resname="Edit Feed Subscriptions »" restype="string" datatype="html">
         <source>Edit Feed Subscriptions »</source>
@@ -15728,7 +15728,7 @@ display:none;
         <source>/&gt;
   Show my specialty only</source>
         <target>/&gt;
-  只显示我的专科</target>
+  只显示我的专业</target>
       </trans-unit>
     </body>
   </file>
@@ -16147,7 +16147,7 @@ display:none;
       </trans-unit>
       <trans-unit id="3286" resname="Nevermind" restype="string" datatype="html">
         <source>Nevermind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
     </body>
   </file>
@@ -21682,7 +21682,7 @@ display:none;
     <body>
       <trans-unit id="4211" resname="Please provide a contact number" restype="string" datatype="html">
         <source>Please provide a contact number</source>
-        <target>请提供您的联系方式。</target>
+        <target>请提供您的联系方式</target>
       </trans-unit>
       <trans-unit id="6085" resname="Mobile number:" restype="string" datatype="html">
         <source>Mobile number:</source>
@@ -22100,7 +22100,7 @@ display:none;
       </trans-unit>
       <trans-unit id="4277" resname="Send note" restype="string" datatype="html">
         <source>Send note</source>
-        <target>发送注意事项</target>
+        <target>发送感谢信</target>
       </trans-unit>
       <trans-unit id="6109" resname="To send your thanks to {last_name} and receive follow-up doctor answers and tips for this question, please share your email:" restype="string" datatype="html">
         <source>To send your thanks to {last_name} and receive follow-up doctor answers and tips for this question, please share your email:</source>
@@ -22156,7 +22156,7 @@ display:none;
       </trans-unit>
       <trans-unit id="6116" resname="Would you like to consult {link_tag_start}{name}{link_tag_end}, a specialist in {specialty}, for any follow-up questions?" restype="string" datatype="html">
         <source>Would you like to consult {link_tag_start}{name}{link_tag_end}, a specialist in {specialty}, for any follow-up questions?</source>
-        <target>您想要咨询什么{link_tag_start}{name}{link_tag_end}, 在{specialty}一位专家, 对于任何后续问题？</target>
+        <target>您想要咨询什么后续问题吗?可以询问{link_tag_start}{name}{link_tag_end}, 一位{specialty}专家。</target>
       </trans-unit>
     </body>
   </file>
@@ -22764,7 +22764,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4371" resname="Topic" restype="string" datatype="html">
         <source>Topic</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
       <trans-unit id="6138" resname="1#{n} doctor responded|#{n} doctors responded" restype="string" datatype="html">
         <source>1#{n} doctor responded|#{n} doctors responded</source>
@@ -24424,15 +24424,15 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4671" resname="Subjective (History):" restype="string" datatype="html">
         <source>Subjective (History):</source>
-        <target>主观（历史）：</target>
+        <target>主观性资料（历史）：</target>
       </trans-unit>
       <trans-unit id="4672" resname="Objective (Data):" restype="string" datatype="html">
         <source>Objective (Data):</source>
-        <target>目标（数据）：</target>
+        <target>客观性资料（数据）：</target>
       </trans-unit>
       <trans-unit id="4673" resname="Assessment:" restype="string" datatype="html">
         <source>Assessment:</source>
-        <target>评定：</target>
+        <target>诊断分析及评定 ：</target>
       </trans-unit>
       <trans-unit id="4674" resname="Diagnosis codes:" restype="string" datatype="html">
         <source>Diagnosis codes:</source>
@@ -24440,7 +24440,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="4675" resname="Plan:" restype="string" datatype="html">
         <source>Plan:</source>
-        <target>计划：</target>
+        <target>治疗方案：</target>
       </trans-unit>
       <trans-unit id="4676" resname="See checklist" restype="string" datatype="html">
         <source>See checklist</source>
@@ -32326,7 +32326,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6088" resname="Living" restype="string" datatype="html">
         <source>Living</source>
-        <target>居住地</target>
+        <target>在世</target>
       </trans-unit>
       <trans-unit id="6089" resname="{birthday} {span_tag_start}{age} yrs{span_tag_end}" restype="string" datatype="html">
         <source>{birthday} {span_tag_start}{age} yrs{span_tag_end}</source>
@@ -34263,7 +34263,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6739" resname="Have this" restype="string" datatype="javascript">
         <source>Have this</source>
-        <target>有这个</target>
+        <target>现有这情况</target>
       </trans-unit>
       <trans-unit id="6740" resname="No longer have this" restype="string" datatype="javascript">
         <source>No longer have this</source>
@@ -34591,7 +34591,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6817" resname="Expires (MM/YY)" restype="string" datatype="javascript">
         <source>Expires (MM/YY)</source>
-        <target>过期 (月月/年年)</target>
+        <target>有效期至 (月月/年年)</target>
       </trans-unit>
       <trans-unit id="6818" resname="Invalid code entered" restype="string" datatype="javascript">
         <source>Invalid code entered</source>
@@ -35699,11 +35699,11 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="7046" resname="Exp (MM/YY)" restype="string" datatype="javascript">
         <source>Exp (MM/YY)</source>
-        <target>过期(月月/年年)</target>
+        <target>有效期至 (月月/年年)</target>
       </trans-unit>
       <trans-unit id="7047" resname="Expiry (MM/YY)" restype="string" datatype="javascript">
         <source>Expiry (MM/YY)</source>
-        <target>过期(月月/年年)</target>
+        <target>有效期至 (月月/年年)</target>
       </trans-unit>
       <trans-unit id="7048" resname="You can ask 150-character health questions to one of our {n} top doctors for free." restype="string" datatype="javascript">
         <source>You can ask 150-character health questions to one of our {n} top doctors for free.</source>

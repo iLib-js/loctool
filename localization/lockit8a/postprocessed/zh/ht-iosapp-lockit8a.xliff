@@ -44,7 +44,7 @@
     <body>
       <trans-unit id="22" resname="sQO-Yv-5Ru.disabledTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target state="translated">发送注意事项</target>
+        <target state="translated">发送感谢信</target>
         <note annotates="source">Class = "UIButton"; disabledTitle = "Send note"; ObjectID = "sQO-Yv-5Ru";</note>
       </trans-unit>
     </body>
@@ -86,7 +86,7 @@
     <body>
       <trans-unit id="28" resname="u1p-9T-OIc.disabledTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target state="translated">发送注意事项</target>
+        <target state="translated">发送感谢信</target>
         <note annotates="source">Class = "UIButton"; disabledTitle = "Send note"; ObjectID = "u1p-9T-OIc";</note>
       </trans-unit>
     </body>

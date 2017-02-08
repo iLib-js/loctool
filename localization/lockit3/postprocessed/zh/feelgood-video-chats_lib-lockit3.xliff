@@ -461,7 +461,7 @@
       </trans-unit>
       <trans-unit id="95" resname="nonaction_owner" restype="string" datatype="x-android-resource">
         <source>Owner</source>
-        <target>所有者</target>
+        <target>主治医生</target>
       </trans-unit>
       <trans-unit id="96" resname="nonaction_staff" restype="string" datatype="x-android-resource">
         <source>Staff</source>
@@ -589,19 +589,19 @@
       </trans-unit>
       <trans-unit id="126" resname="soap_note_history_text" restype="string" datatype="x-android-resource">
         <source>Subjective (History):</source>
-        <target>主观（历史）：</target>
+        <target>主观性资料（历史）：</target>
       </trans-unit>
       <trans-unit id="127" resname="soap_note_data_text" restype="string" datatype="x-android-resource">
         <source>Objective (Data):</source>
-        <target>客观（数据）：</target>
+        <target>客观性资料（数据）：</target>
       </trans-unit>
       <trans-unit id="128" resname="soap_note_assessment_text" restype="string" datatype="x-android-resource">
         <source>Assessment:</source>
-        <target>评定：</target>
+        <target>诊断分析及评定：</target>
       </trans-unit>
       <trans-unit id="129" resname="soap_note_personal_checklist_title_text" restype="string" datatype="x-android-resource">
         <source>Plan:</source>
-        <target>计划：</target>
+        <target>治疗方案：</target>
       </trans-unit>
       <trans-unit id="130" resname="soap_note_personal_checklist_button_text" restype="string" datatype="x-android-resource">
         <source>See checklists</source>

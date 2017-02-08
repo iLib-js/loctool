@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="Topic" restype="string" datatype="x-objective-c">
         <source>Topic</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
@@ -1042,7 +1042,7 @@
       </trans-unit>
       <trans-unit id="188" resname="Living" restype="string" datatype="x-objective-c">
         <source>Living</source>
-        <target>居住地</target>
+        <target>在世</target>
       </trans-unit>
       <trans-unit id="189" resname="Alcohol" restype="string" datatype="x-objective-c">
         <source>Alcohol</source>
@@ -2356,7 +2356,7 @@
     <body>
       <trans-unit id="443" resname="Update appointment" restype="string" datatype="x-objective-c">
         <source>Update appointment</source>
-        <target>上传预约</target>
+        <target>更新预约</target>
       </trans-unit>
       <trans-unit id="444" resname="Great!" restype="string" datatype="x-objective-c">
         <source>Great!</source>
@@ -2465,7 +2465,7 @@
       </trans-unit>
       <trans-unit id="465" resname="Conditions treated" restype="string" datatype="x-objective-c">
         <source>Conditions treated</source>
-        <target>治疗的健康状况</target>
+        <target>治疗了的健康状况</target>
       </trans-unit>
       <trans-unit id="466" resname="Contraindications" restype="string" datatype="x-objective-c">
         <source>Contraindications</source>
@@ -2517,7 +2517,7 @@
     <body>
       <trans-unit id="475" resname="%d %@ weighed in" restype="string" datatype="x-objective-c">
         <source>%d %@ weighed in</source>
-        <target>%d %@医生参与讨论</target>
+        <target>%d 个 %@ 参与讨论</target>
       </trans-unit>
     </body>
   </file>
@@ -2561,11 +2561,11 @@
     <body>
       <trans-unit id="481" resname=" doctor responded" restype="string" datatype="x-objective-c">
         <source>doctor responded</source>
-        <target>医生已回复</target>
+        <target>名医生已回复</target>
       </trans-unit>
       <trans-unit id="482" resname=" doctors responded" restype="string" datatype="x-objective-c">
         <source>doctors responded</source>
-        <target>医生已回复</target>
+        <target>名医生已回复</target>
       </trans-unit>
     </body>
   </file>
@@ -2896,11 +2896,11 @@
     <body>
       <trans-unit id="547" resname="Subjective (History):" restype="string" datatype="x-objective-c">
         <source>Subjective (History):</source>
-        <target>主观（历史）：</target>
+        <target>主观性资料 (历史）：</target>
       </trans-unit>
       <trans-unit id="548" resname="Objective (Data):" restype="string" datatype="x-objective-c">
         <source>Objective (Data):</source>
-        <target>目标（数据）：</target>
+        <target>客观性资料（数据）：</target>
       </trans-unit>
       <trans-unit id="549" resname="Invite a supporter" restype="string" datatype="x-objective-c">
         <source>Invite a supporter</source>
@@ -2932,11 +2932,11 @@
     <body>
       <trans-unit id="553" resname=" + %d doctor weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %d doctor weighed in:</source>
-        <target>+ %d 医生参与讨论</target>
+        <target>+ %d名医生参与讨论</target>
       </trans-unit>
       <trans-unit id="554" resname=" + %d doctors weighed in:" restype="string" datatype="x-objective-c">
         <source>+ %d doctors weighed in:</source>
-        <target>+ %d 医生参与讨论</target>
+        <target>+ %d名医生参与讨论</target>
       </trans-unit>
       <trans-unit id="555" resname=" answered:" restype="string" datatype="x-objective-c">
         <source>answered:</source>

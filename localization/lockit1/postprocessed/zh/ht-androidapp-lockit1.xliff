@@ -236,7 +236,7 @@
       </trans-unit>
       <trans-unit id="38" resname="r415124616" restype="string" datatype="java">
         <source>Living</source>
-        <target>居住地</target>
+        <target>在世</target>
       </trans-unit>
       <trans-unit id="39" resname="r199869805" restype="string" datatype="java">
         <source>Date of Birth</source>
@@ -1053,7 +1053,7 @@
     <body>
       <trans-unit id="201" resname="r742115697" restype="string" datatype="java">
         <source>Topics</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
@@ -1061,7 +1061,7 @@
     <body>
       <trans-unit id="202" resname="r789310818" restype="string" datatype="java">
         <source>Topic</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
@@ -1682,7 +1682,7 @@
       </trans-unit>
       <trans-unit id="312" resname="r1046176237" restype="string" datatype="java">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
     </body>
   </file>
@@ -1730,7 +1730,7 @@
       </trans-unit>
       <trans-unit id="322" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="323" resname="r586469932" restype="string" datatype="java">
         <source>Are you sure you want to remove this from your profile?</source>
@@ -2720,7 +2720,7 @@
     <body>
       <trans-unit id="502" resname="r99694554" restype="string" datatype="java">
         <source>Apply code</source>
-        <target>申请码</target>
+        <target>使用优惠</target>
       </trans-unit>
     </body>
   </file>
@@ -3639,7 +3639,7 @@
     <body>
       <trans-unit id="664" resname="r45009371" restype="string" datatype="java">
         <source>Near you</source>
-        <target>靠近 您</target>
+        <target>靠近您</target>
       </trans-unit>
       <trans-unit id="665" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>
@@ -4472,7 +4472,7 @@
       </trans-unit>
       <trans-unit id="848" resname="never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="849" resname="not_member_msg" restype="string" datatype="x-android-resource">
         <source>Not a member?</source>
@@ -4668,7 +4668,7 @@
       </trans-unit>
       <trans-unit id="897" resname="preask_edittext_hint_inbox_consult" restype="string" datatype="x-android-resource">
         <source>Share a detailed description of your symptoms, concerns, and how you'd like the doctor to help you. Attach images and files as necessary.</source>
-        <target>分享您的症状，担心以及您希望医生如何帮助您的详细说明。必须附加照片或文件</target>
+        <target>分享您的症状，担心以及您希望医生如何帮助您的详细说明。最好附加照片或文件</target>
       </trans-unit>
       <trans-unit id="898" resname="preask_edittext_count" restype="string" datatype="x-android-resource">
         <source>0/150</source>
@@ -4744,7 +4744,7 @@
       </trans-unit>
       <trans-unit id="915" resname="i_specialize_in" restype="string" datatype="x-android-resource">
         <source>I specialize in</source>
-        <target>我专攻</target>
+        <target>我的主治科室</target>
       </trans-unit>
       <trans-unit id="916" resname="i_specialize_in_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Specialty</source>
@@ -4772,7 +4772,7 @@
       </trans-unit>
       <trans-unit id="922" resname="known_for" restype="string" datatype="x-android-resource">
         <source>I'm known for</source>
-        <target>我专攻</target>
+        <target>我的特色</target>
       </trans-unit>
       <trans-unit id="923" resname="known_for_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Known for</source>
@@ -5573,7 +5573,7 @@
       </trans-unit>
       <trans-unit id="1124" resname="settings_nevermind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1125" resname="default_error_payment_credit_card" restype="string" datatype="x-android-resource">
         <source>An error occurred</source>
@@ -5593,7 +5593,7 @@
       </trans-unit>
       <trans-unit id="1129" resname="settings_unavialable_state_dialog_button_nevermind" restype="string" datatype="x-android-resource">
         <source>Nevermind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1130" resname="concierge_credit_balance" restype="string" datatype="x-android-resource">
         <source>Credit Balance</source>
@@ -6248,7 +6248,7 @@
       </trans-unit>
       <trans-unit id="1259" resname="cancel_subscription_dialog_downgrade_cancel" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1260" resname="cancel_subscription_dialog_downgrade_downgrade" restype="string" datatype="x-android-resource">
         <source>Downgrade</source>
@@ -6328,7 +6328,7 @@
       </trans-unit>
       <trans-unit id="1279" resname="cancel_previous_session_never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1280" resname="cancel_previous_session_yes" restype="string" datatype="x-android-resource">
         <source>Yes</source>
@@ -6771,12 +6771,12 @@
         <target>为了</target>
       </trans-unit>
       <trans-unit id="1390" resname="concierge_intro_header" restype="string" datatype="x-android-resource">
-        <source>Request to connect with {doctor_prefix} {doctor_name}?</source>
-        <target>请求连接{doctor_prefix} {doctor_name}?</target>
+        <source>Request to connect with {doctor_name}?</source>
+        <target>请求连接{doctor_name}?</target>
       </trans-unit>
       <trans-unit id="1391" resname="concierge_intro_content" restype="string" datatype="x-android-resource">
-        <source>If you don't have {doctor_prefix} {doctor_name}'s Keycode yet, you may still have an Introductory Consult before the doctor can confirm you as a patient.</source>
-        <target>如果您还没有{doctor_prefix} {doctor_name}的验证码，您可能还需要进行介绍性咨询，然后医生才能确认您为患者。</target>
+        <source>If you don't have {doctor_name}'s Keycode yet, you may still have an Introductory Consult before the doctor can confirm you as a patient.</source>
+        <target>如果您还没有{doctor_name}的验证码，您可能还需要进行介绍性咨询，然后医生才能确认您为患者。</target>
       </trans-unit>
       <trans-unit id="1392" resname="concierge_intro_cancel_confirm_title" restype="string" datatype="x-android-resource">
         <source>Cancel request</source>
@@ -6844,7 +6844,7 @@
       </trans-unit>
       <trans-unit id="1408" resname="concierge_appointment_list_never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1409" resname="cancel_appointment_title" restype="string" datatype="x-android-resource">
         <source>Are you sure?</source>
@@ -6876,7 +6876,7 @@
       </trans-unit>
       <trans-unit id="1416" resname="edit_appointment_update" restype="string" datatype="x-android-resource">
         <source>Update appointment</source>
-        <target>上传预约</target>
+        <target>更新预约</target>
       </trans-unit>
       <trans-unit id="1417" resname="concierge_suggested_docs_header" restype="string" datatype="x-android-resource">
         <source>Connect with top doctors and build your Care-Team for free — get covered anytime, anywhere</source>
@@ -7256,7 +7256,7 @@
       </trans-unit>
       <trans-unit id="1511" resname="collect_mailing_address" restype="string" datatype="x-android-resource">
         <source>Please provide a mailing address.</source>
-        <target>请提供您的电子邮箱.</target>
+        <target>请提供您的电子邮箱。</target>
       </trans-unit>
       <trans-unit id="1512" resname="nux_invite_doctor_title" restype="string" datatype="x-android-resource">
         <source>Add Doctors to your Care-Team</source>
@@ -8003,8 +8003,8 @@
         <target>不，谢谢</target>
       </trans-unit>
       <trans-unit id="1698" resname="concierge_incentive_text" restype="string" datatype="x-android-resource">
-        <source>{doc_prefix} {doc_last_name} appreciates your gratitude and would like to offer you a discount on your\u00a0first\u00a0consult.</source>
-        <target state="accepted">您的致谢对{doc_prefix} {doc_last_name} 是很大的鼓舞，他／她愿意为您第一次咨询提供折扣。</target>
+        <source>{doc_last_name} appreciates your gratitude and would like to offer you a discount on your\u00a0first\u00a0consult.</source>
+        <target state="accepted">您的致谢对{doc_last_name}是很大的鼓舞，他／她愿意为您第一次咨询提供折扣。</target>
       </trans-unit>
       <trans-unit id="1699" resname="concierge_incentive_banner" restype="string" datatype="x-android-resource">
         <source>One time offer - $5 off!</source>
@@ -8380,7 +8380,7 @@
       </trans-unit>
       <trans-unit id="1789" resname="snapshot_section_type_treatment" restype="string" datatype="x-android-resource">
         <source>treatment</source>
-        <target>治疗/治疗方法</target>
+        <target>治疗</target>
       </trans-unit>
       <trans-unit id="1790" resname="snapshot_section_type_tests" restype="string" datatype="x-android-resource">
         <source>test</source>
@@ -8688,7 +8688,7 @@
       </trans-unit>
       <trans-unit id="1866" resname="insurance_summary_group_name" restype="string" datatype="x-android-resource">
         <source>Insurance group name</source>
-        <target>保险集团名字</target>
+        <target>保险集团名称</target>
       </trans-unit>
       <trans-unit id="1867" resname="insurance_summary_rel" restype="string" datatype="x-android-resource">
         <source>Primary relationship</source>
@@ -8768,7 +8768,7 @@
       </trans-unit>
       <trans-unit id="1886" resname="treatment" restype="string" datatype="x-android-resource">
         <source>Treatment</source>
-        <target>治疗/治疗方法</target>
+        <target>治疗</target>
       </trans-unit>
       <trans-unit id="1887" resname="allergy" restype="string" datatype="x-android-resource">
         <source>Allergy</source>
@@ -8836,11 +8836,11 @@
       </trans-unit>
       <trans-unit id="1903" resname="grandfather" restype="string" datatype="x-android-resource">
         <source>Grandfather</source>
-        <target>爷爷/祖父</target>
+        <target>祖父/外祖父</target>
       </trans-unit>
       <trans-unit id="1904" resname="grandmother" restype="string" datatype="x-android-resource">
         <source>Grandmother</source>
-        <target>奶奶/祖母</target>
+        <target>祖母/外祖母</target>
       </trans-unit>
       <trans-unit id="1905" resname="friend" restype="string" datatype="x-android-resource">
         <source>Friend</source>
@@ -9172,7 +9172,7 @@
       </trans-unit>
       <trans-unit id="1987" resname="text_Availability" restype="string" datatype="x-android-resource">
         <source>Availability</source>
-        <target>可以/空闲</target>
+        <target>空闲</target>
       </trans-unit>
       <trans-unit id="1988" resname="text_more___" restype="string" datatype="x-android-resource">
         <source>more...</source>
@@ -9624,11 +9624,11 @@
       </trans-unit>
       <trans-unit id="2100" resname="text_Have_this" restype="string" datatype="x-android-resource">
         <source>Have this</source>
-        <target>有这个</target>
+        <target>现有这情况</target>
       </trans-unit>
       <trans-unit id="2101" resname="text_No_longer_have_this" restype="string" datatype="x-android-resource">
         <source>No longer have this</source>
-        <target>不再采取这个</target>
+        <target>现在无但曾经有这情况</target>
       </trans-unit>
       <trans-unit id="2102" resname="hint_Email_address" restype="string" datatype="x-android-resource">
         <source>Email address</source>
@@ -9656,7 +9656,7 @@
       </trans-unit>
       <trans-unit id="2108" resname="text_Never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="2109" resname="text_Change" restype="string" datatype="x-android-resource">
         <source>Change</source>
@@ -10300,7 +10300,7 @@
       </trans-unit>
       <trans-unit id="2269" resname="text_Send_note" restype="string" datatype="x-android-resource">
         <source>Send note</source>
-        <target>发送注意事项</target>
+        <target>发送感谢信</target>
       </trans-unit>
       <trans-unit id="2270" resname="text_More_information_needed_" restype="string" datatype="x-android-resource">
         <source>More information needed.</source>
@@ -10416,7 +10416,7 @@
       </trans-unit>
       <trans-unit id="2298" resname="text_Never_Mind" restype="string" datatype="x-android-resource">
         <source>Never Mind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
       <trans-unit id="2299" resname="text_Send_Report" restype="string" datatype="x-android-resource">
         <source>Send Report</source>
@@ -10468,11 +10468,11 @@
       </trans-unit>
       <trans-unit id="2310" resname="similar_question_doctor_weighed_in" restype="plural" datatype="x-android-resource" extype="one">
         <source>{start}1 doctor{end} weighed in</source>
-        <target>{start}1名医生{end}称重</target>
+        <target>{start}1名医生{end}参与</target>
       </trans-unit>
       <trans-unit id="2311" resname="similar_question_doctor_weighed_in" restype="plural" datatype="x-android-resource" extype="other">
         <source>{start}%d doctors{end} weighed in</source>
-        <target>{start}%d名医生{end}称重</target>
+        <target>{start}%d名医生{end}参与</target>
       </trans-unit>
       <trans-unit id="2312" resname="subscribe_add_others_continue_multiple" restype="plural" datatype="x-android-resource" extype="one">
         <source>Continue for me and 1 other</source>

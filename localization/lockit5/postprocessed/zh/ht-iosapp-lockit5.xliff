@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="3" resname="%d doctor %@" restype="string" datatype="x-objective-c">
         <source>%d doctor %@</source>
-        <target>%d 医生 %@</target>
+        <target>%d名医生 %@</target>
       </trans-unit>
     </body>
   </file>

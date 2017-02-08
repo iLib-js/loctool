@@ -68,7 +68,7 @@
       </trans-unit>
       <trans-unit id="21" resname="r415124616" restype="string" datatype="x-android-resource">
         <source>Living</source>
-        <target state="translated">居住地</target>
+        <target state="translated">健在</target>
       </trans-unit>
       <trans-unit id="22" resname="r199869805" restype="string" datatype="x-android-resource">
         <source>Date of Birth</source>
@@ -849,7 +849,7 @@
       </trans-unit>
       <trans-unit id="219" resname="r789310818" restype="string" datatype="x-android-resource">
         <source>Topic</source>
-        <target state="translated">话题</target>
+        <target state="translated">专题</target>
       </trans-unit>
       <trans-unit id="220" resname="r629190714" restype="string" datatype="x-android-resource">
         <source>{tip_topic_name} Tip</source>
@@ -1338,7 +1338,7 @@
       </trans-unit>
       <trans-unit id="346" resname="r158653628" restype="string" datatype="x-android-resource">
         <source>From HealthTap</source>
-        <target state="translated">来自健康问答</target>
+        <target state="translated">已上传的文档</target>
       </trans-unit>
       <trans-unit id="347" resname="r74842871" restype="string" datatype="x-android-resource">
         <source>If you leave, your changes will be lost.</source>
@@ -2039,7 +2039,7 @@
       </trans-unit>
       <trans-unit id="529" resname="r99694554" restype="string" datatype="x-android-resource">
         <source>Apply code</source>
-        <target state="translated">申请码</target>
+        <target state="translated">使用优惠</target>
       </trans-unit>
       <trans-unit id="530" resname="r141446606" restype="string" datatype="x-android-resource">
         <source>We're sorry to see you downgrade!</source>
@@ -2047,7 +2047,7 @@
       </trans-unit>
       <trans-unit id="531" resname="r151255723" restype="string" datatype="x-android-resource">
         <source>Change</source>
-        <target state="translated">改变</target>
+        <target state="translated">更改</target>
       </trans-unit>
       <trans-unit id="532" resname="r2780161" restype="string" datatype="x-android-resource">
         <source>Downgrade subscription</source>

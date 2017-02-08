@@ -124,6 +124,18 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/people/feelGood/feed/_tip.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="26" resname="r978704542" restype="plural" datatype="ruby" extype="one">
+        <source>1 doctor &lt;span&gt;agrees&lt;/span&gt;</source>
+        <target state="translated">1 个医生 &lt;span&gt;同意&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="27" resname="r978704542" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} doctors &lt;span&gt;agree&lt;/span&gt;</source>
+        <target state="translated">%{count} 个医生 &lt;span&gt;同意&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="app/views/people/feelGood/feed/_answer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="28" resname="r316944342" restype="plural" datatype="ruby" extype="one">
