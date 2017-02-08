@@ -2047,7 +2047,7 @@
       </trans-unit>
       <trans-unit id="531" resname="r151255723" restype="string" datatype="x-android-resource">
         <source>Change</source>
-        <target state="translated">改变</target>
+        <target state="translated">更改</target>
       </trans-unit>
       <trans-unit id="532" resname="r2780161" restype="string" datatype="x-android-resource">
         <source>Downgrade subscription</source>

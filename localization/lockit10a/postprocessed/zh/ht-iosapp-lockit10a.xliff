@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="Experiencing symptoms?" restype="string" datatype="x-objective-c">
         <source>Experiencing symptoms?</source>
-        <target state="accepted">经历症状?</target>
+        <target state="accepted">有不舒服的症状?</target>
       </trans-unit>
       <trans-unit id="2" resname="Find out why" restype="string" datatype="x-objective-c">
         <source>Find out why</source>
@@ -820,6 +820,228 @@
       <trans-unit id="51" resname="Wyoming" restype="string" datatype="x-objective-c">
         <source>Wyoming</source>
         <target state="accepted">怀俄明</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGForgotPasswordViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Return to log in" restype="string" datatype="x-objective-c">
+        <source>Return to log in</source>
+        <target state="accepted">返回登录</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGBasicSearchViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Resolution" restype="string" datatype="x-objective-c">
+        <source>Resolution</source>
+        <target state="accepted">决心</target>
+        <note annotates="source">search bar place holder, format: Search Resolution</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGDocPracticeDuration.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="%ld year" restype="string" datatype="x-objective-c">
+        <source>%ld year</source>
+        <target state="accepted">%ld 年</target>
+      </trans-unit>
+      <trans-unit id="3" resname="%ld years" restype="string" datatype="x-objective-c">
+        <source>%ld years</source>
+        <target state="accepted">%ld 年</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGConciergeAppointmentReminderPopupView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="4" resname="Text chat" restype="string" datatype="x-objective-c">
+        <source>Text chat</source>
+        <target state="accepted">文字聊天咨询</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="Conditions Treated" restype="string" datatype="x-objective-c">
+        <source>Conditions Treated</source>
+        <target state="translated">已治疗的病症</target>
+      </trans-unit>
+      <trans-unit id="3" resname="condition" restype="string" datatype="x-objective-c">
+        <source>condition</source>
+        <target state="translated">健康状况</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Immunizations" restype="string" datatype="x-objective-c">
+        <source>Immunizations</source>
+        <target state="translated">免疫/预防接种</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/TableViewCells/FGSearchResultAgeDistributionCell.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="5" resname="Very common" restype="string" datatype="x-objective-c">
+        <source>Very common</source>
+        <target state="translated">很常见</target>
+      </trans-unit>
+      <trans-unit id="7" resname="Common" restype="string" datatype="x-objective-c">
+        <source>Common</source>
+        <target state="translated">普通</target>
+      </trans-unit>
+      <trans-unit id="9" resname="Rare" restype="string" datatype="x-objective-c">
+        <source>Rare</source>
+        <target state="translated">稀有</target>
+      </trans-unit>
+      <trans-unit id="11" resname="Very rare" restype="string" datatype="x-objective-c">
+        <source>Very rare</source>
+        <target state="translated">很罕见</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Symptoms list" restype="string" datatype="x-objective-c">
+        <source>Symptoms list</source>
+        <target state="accepted">症状列表</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/TableViewCells/FGSearchResultAgeDistributionCell.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="6" resname="very common" restype="string" datatype="x-objective-c">
+        <source>very common</source>
+        <target state="accepted">很常见</target>
+      </trans-unit>
+      <trans-unit id="8" resname="common" restype="string" datatype="x-objective-c">
+        <source>common</source>
+        <target state="accepted">普通</target>
+      </trans-unit>
+      <trans-unit id="10" resname="rare" restype="string" datatype="x-objective-c">
+        <source>rare</source>
+        <target state="accepted">稀有</target>
+      </trans-unit>
+      <trans-unit id="12" resname="very rare" restype="string" datatype="x-objective-c">
+        <source>very rare</source>
+        <target state="accepted">很罕见</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatCompositeHeaderData.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="I recommend you try Dr. %@&apos;s checklist on %@" restype="string" datatype="x-objective-c">
+        <source>I recommend you try Dr. %@'s checklist on %@</source>
+        <target state="accepted">我建议你试试 %@ 医生关于 %@ 的清单</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGSearchResultMake.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Get help now  ›" restype="string" datatype="x-objective-c">
+        <source>Get help now  ›</source>
+        <target state="accepted">立即获得帮助  ›</target>
+      </trans-unit>
+      <trans-unit id="2" resname="{firstname}, need to ask another question?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, need to ask another question?</source>
+        <target state="accepted">{firstname}, 还有问题么?</target>
+      </trans-unit>
+      <trans-unit id="3" resname="{firstname}, do you have a follow-up question?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, do you have a follow-up question?</source>
+        <target state="accepted">{firstname}, 还有接下来的问题么?</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Need a more personalized answer? ›" restype="string" datatype="x-objective-c">
+        <source>Need a more personalized answer? ›</source>
+        <target state="accepted">要一个更针对您个人的回答吗? ›</target>
+      </trans-unit>
+      <trans-unit id="5" resname="The doctor will see you now ›" restype="string" datatype="x-objective-c">
+        <source>The doctor will see you now ›</source>
+        <target state="accepted">医生现在马上就会和您连线 ›</target>
+      </trans-unit>
+      <trans-unit id="6" resname="A doctor will see you now " restype="string" datatype="x-objective-c">
+        <source>A doctor will see you now</source>
+        <target state="translated">一位医生将会看到您</target>
+      </trans-unit>
+      <trans-unit id="7" resname="See a doctor now ›" restype="string" datatype="x-objective-c">
+        <source>See a doctor now ›</source>
+        <target state="accepted">即刻看医生 ›</target>
+      </trans-unit>
+      <trans-unit id="8" resname="Consult a doctor now ›" restype="string" datatype="x-objective-c">
+        <source>Consult a doctor now ›</source>
+        <target state="accepted">现在咨询医生 ›</target>
+      </trans-unit>
+      <trans-unit id="9" resname="{firstname}, would you like to talk to a doctor?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, would you like to talk to a doctor?</source>
+        <target state="accepted">{firstname}, 你想和医生谈话吗?</target>
+      </trans-unit>
+      <trans-unit id="10" resname="{firstname}, would you like to send doctors a secure message?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, would you like to send doctors a secure message?</source>
+        <target state="accepted">{firstname}, 你想给医生发一个私密安全的信息吗?</target>
+      </trans-unit>
+      <trans-unit id="11" resname="{firstname}, would you like to video chat with a doctor?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, would you like to video chat with a doctor?</source>
+        <target state="accepted">{firstname}, 你想和医生视频嘛?</target>
+      </trans-unit>
+      <trans-unit id="12" resname="{firstname}, would you like to text chat with a doctor?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, would you like to text chat with a doctor?</source>
+        <target state="accepted">{firstname}, 你想和医生文字聊天嘛?</target>
+      </trans-unit>
+      <trans-unit id="13" resname="{firstname}, consult Dr. ${last_name} now ›" restype="string" datatype="x-objective-c">
+        <source>{firstname}, consult Dr. ${last_name} now ›</source>
+        <target state="accepted">{firstname}, 现在就找${last_name}医生咨询吧 ›</target>
+      </trans-unit>
+      <trans-unit id="14" resname="{firstname}, speak with Dr. ${last_name} now ›" restype="string" datatype="x-objective-c">
+        <source>{firstname}, speak with Dr. ${last_name} now ›</source>
+        <target state="accepted">{firstname}, 现在就和${last_name}医生聊吧 ›</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTBodyPickerViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Back_Body_Part" restype="string" datatype="x-objective-c">
+        <source>Back_Body_Part</source>
+        <target state="accepted">后背</target>
+        <note annotates="source">This should be the translation of 'Back' as a part of the body</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="People also viewed" restype="string" datatype="x-objective-c">
+        <source>People also viewed</source>
+        <target state="accepted">其他用户也看过</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/FGFollowLayerView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Add or remove %@" restype="string" datatype="x-objective-c">
+        <source>Add or remove %@</source>
+        <target state="accepted">添加或移除 %@</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Base.lproj/FGTopicListViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Hvu-2b-Kwm.text" restype="string" datatype="x-xib">
+        <source>Add health topics</source>
+        <target>关注健康专题</target>
+        <note annotates="source">Class = "UILabel"; text = "Add health topics"; ObjectID = "Hvu-2b-Kwm";</note>
+      </trans-unit>
+      <trans-unit id="2" resname="inc-kR-3x4.text" restype="string" datatype="x-xib">
+        <source>Add topics to your profile so doctors may provide you with better answers</source>
+        <target>关注更多专题以获得更好的医生回答与帮助</target>
+        <note annotates="source">Class = "UILabel"; text = "Add topics to your profile so doctors may provide you with better answers"; ObjectID = "inc-kR-3x4";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Base.lproj/FGTopicListViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="3" resname="EhN-6k-GKw.text" restype="string" datatype="x-xib">
+        <source>Add health topics</source>
+        <target>关注健康专题</target>
+        <note annotates="source">Class = "UILabel"; text = "Add health topics"; ObjectID = "EhN-6k-GKw";</note>
+      </trans-unit>
+      <trans-unit id="4" resname="tb3-7a-KBu.text" restype="string" datatype="x-xib">
+        <source>Add topics to your profile so doctors may provide you with better answers</source>
+        <target>关注更多专题以获得更好的医生回答与帮助</target>
+        <note annotates="source">Class = "UILabel"; text = "Add topics to your profile so doctors may provide you with better answers"; ObjectID = "tb3-7a-KBu";</note>
       </trans-unit>
     </body>
   </file>

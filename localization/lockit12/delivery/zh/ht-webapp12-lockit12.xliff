@@ -1,0 +1,1168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/static_pages/press.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="46" resname="r53097884" restype="string" datatype="ruby">
+        <source>...[HealthTap's] ecosystem of the doctors and peer review are how [it creates] a transparency..., a rating system..., and a learning system, ...to create a place where people can manage their health from query-to-cure.</source>
+        <target state="translated">... [HealthTap的]医生和同行评论的生态系统[创建了]一个透明的系统...，一个评级系统...和一个学习系统...以创建一个人们可以从查询到治疗来管理他们健康的地方。</target>
+      </trans-unit>
+      <trans-unit id="47" resname="r471419186" restype="string" datatype="ruby">
+        <source>You Can Now Download an Artificial Intelligence Doctor</source>
+        <target state="translated">你现在可以下载一个人工智能医生</target>
+      </trans-unit>
+      <trans-unit id="48" resname="r18565305" restype="string" datatype="ruby">
+        <source>This AI doctor will help you avoid the waiting room</source>
+        <target state="translated">这位AI医生可以帮助您避开候诊室</target>
+      </trans-unit>
+      <trans-unit id="49" resname="r566342224" restype="string" datatype="ruby">
+        <source>A healthcare startup wants to use AI to tell you how severe your symptoms are</source>
+        <target state="translated">一个医疗保健初创公司想要用AI来告诉您，您的症状有多严重</target>
+      </trans-unit>
+      <trans-unit id="50" resname="r680907130" restype="string" datatype="ruby">
+        <source>HealthTap brings artificial intelligence to self-triage</source>
+        <target state="translated">HealthTap将人工智能带入自我诊断</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/partial/_testimonials.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="51" resname="r60049643" restype="string" datatype="ruby">
+        <source>&amp;ldquo;Flex is all about helping the world live smarter, and we are dedicated to bringing intelligent solutions to how our employees access healthcare and manage their health and well-being. HealthTap offers a query-to-cure system that &lt;em&gt;provides Flex employees a simple, immediate, and personalized way to tap in and access health services&lt;/em&gt; from a network of top doctors, helping to curb costs.&amp;rdquo;</source>
+        <target state="translated">&amp;ldquo;Flex是帮助生活变得更智能，我们致力于为我们的员工找到获得医疗保健和管理他们的健康和幸福的智能的解决方案。HealthTap提供了一个查询到治疗系统，可以为Flex员工提供一种简单，即时，专属的方式，轻轻滑动即可&lt;/em&gt;从顶级医生网络访问健康服务，从而帮助控制成本。&amp;rdquo;</target>
+      </trans-unit>
+      <trans-unit id="52" resname="r853379367" restype="string" datatype="ruby">
+        <source>&lt;em&gt;&amp;ldquo;We are so thankful for HealthTap’s speed and efficiency.&lt;/em&gt; We needed to quickly provide thousands of our employees with accessible, easy-to-use information and virtual care, and that’s exactly what HealthTap delivered…through HealthTap's proprietary technology and deep domain expertise.…We are proud to partner with HealthTap and support their efforts to bring this much-needed service to population managers around the world.&amp;rdquo;</source>
+        <target state="translated">&lt;em&gt;&amp;ldquo;我们非常感谢HealthTap的速度和效率。&lt;/em&gt;我们需要快速为成千上万的员工提供可访问的，易于使用的信息和在线医护，这正是HealthTap可以提供的...通过HealthTap的专有技术和深厚的领域专业知识...我们很自豪能与HealthTap合作并支持他们的努力为世界各地的人口管理者带来急需的服务。&amp;rdquo;</target>
+      </trans-unit>
+      <trans-unit id="53" resname="r840203701" restype="string" datatype="ruby">
+        <source>&amp;ldquo;We have thousands of employees in Chennai, and providing each with care and support during natural disasters is a top priority with Flex. &lt;em&gt;Thanks to HealthTap, our employees were able to immediately access high-quality health and medical information.&amp;rdquo;&lt;/em&gt;</source>
+        <target state="translated">&amp;ldquo;我们在金奈有成千上万的员工，在自然灾害期间为每个人提供医护和支持是Flex的首要任务。&lt;em&gt;感谢HealthTap，我们的员工能够立即获得高质量的健康和医疗信息。&amp;rdquo;&lt;/em&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="54" resname="r221038386" restype="string" datatype="ruby">
+        <source>Our first responsibility is to do good for the individuals who use &lt;span class="ht-name" &gt;HealthTap&lt;/span&gt;, especially when making decisions that affect their health and the health of their loved ones. We care deeply about people and are committed to providing information and access to &lt;a href="#" class="read-more-link"&gt; ...MORE&amp;nbsp;&amp;rsaquo;&lt;/a&gt; &lt;span class="hidden-text"&gt;care that meet the highest standards of safety and validity, and help people take actions to &lt;span class="no-break" &gt;Feel Good&lt;/span&gt; every day.&lt;/span&gt;</source>
+        <target state="translated">我们的第一使命是为使用&lt;span class=”ht-name” &gt;HealthTap &lt;/span&gt;的个人服务，特别是在做出影响他们的健康和他们亲人健康的决策时。 我们深切关注每一个人，并致力于提供信息和访问&lt;a href="#" class="read-more-link"&gt; ...更多&amp;nbsp;&amp;rsaquo;&lt;/a&gt; &lt;span class="hidden-text"&gt;满足最高安全性和有效性标准的医护，并帮助人们每天&lt;/span&gt;采取行动&lt;span class="no-break" &gt;Feel Good&lt;/span&gt;。</target>
+      </trans-unit>
+      <trans-unit id="55" resname="r785909450" restype="string" datatype="ruby">
+        <source>We value and honor the trust of those who use &lt;span class="ht-name" &gt;HealthTap&lt;/span&gt;. We treat the personal information of individuals with the utmost care and maintain the highest standards of privacy and security.</source>
+        <target state="translated">我们重视和尊重那些使用&lt;span class="ht-name" &gt;HealthTap&lt;/span&gt;的用户的信任。我们非常小心地处理个人的个人信息，并保持最高的隐私和安全标准。</target>
+      </trans-unit>
+      <trans-unit id="56" resname="r513727480" restype="string" datatype="ruby">
+        <source>We believe in collaboration and recognize that partnership is integral to realizing our vision. We are committed to being a great partner, and to attracting and retaining the world's best organizations and institutions as &lt;a href="#" class="read-more-link"&gt; ...MORE&amp;nbsp;&amp;rsaquo;&lt;/a&gt; &lt;span class="hidden-text"&gt; collaborators. &lt;/span&gt;</source>
+        <target state="translated">我们相信合作，并认识到合作伙伴关系是实现我们的愿景的必要条件。我们致力于成为一个优秀的合作伙伴，并吸引和留住世界上最好的组织和机构，如&lt;a href="#" class="read-more-link"&gt; ...更多&amp;nbsp;&amp;rsaquo;&lt;/a&gt; &lt;span class="hidden-text"&gt; 合作伙伴。 &lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/feed/_subscription_ad.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="57" resname="r738758154" restype="string" datatype="ruby">
+        <source>USD per %{frequency}</source>
+        <target state="translated">美元每%{frequency}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/doctorView.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="58" resname="r773944652" restype="plural" datatype="ruby" extype="one">
+        <source>Saved %{span_start}1%{span_end} life</source>
+        <target state="translated">挽救了%{span_start}1%{span_end}条生命</target>
+      </trans-unit>
+      <trans-unit id="59" resname="r773944652" restype="plural" datatype="ruby" extype="other">
+        <source>Saved %{span_start}%{count_with_delimiter}%{span_end} lives</source>
+        <target state="translated">挽救了%{span_start}%{count_with_delimiter}%{span_end}条生命</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/doctorPartials/_doctor_result.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="60" resname="r944712741" restype="string" datatype="ruby">
+        <source>In Dr. %{name}'s Referral Network</source>
+        <target state="translated">在%{name}医生的转诊网络</target>
+      </trans-unit>
+      <trans-unit id="61" resname="r520880950" restype="string" datatype="ruby">
+        <source>Refers to Dr. %{name}</source>
+        <target state="translated">转诊到%{name}医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/pages/feelGood/simplified_payment_variants.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="62" resname="r302861822" restype="string" datatype="ruby">
+        <source>More than %{number} lives saved!</source>
+        <target state="translated">挽救超过%{number}条生命！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_consult_premature_end.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="63" resname="r123272099" restype="string" datatype="ruby">
+        <source>It seems you started a Virtual Consult but it ended after a very brief amount of time. Usually this means that you got your answer right away, but if you experienced a technical issue or if there were any other reasons that left you unsatisfied, we’d love to hear what happened so we can fix it. Our goal is one hundred percent patient satisfaction, and we want to be sure you receive the care you need.</source>
+        <target state="translated">您似乎开始了一次在线咨询，但它很快的结束了。通常这意味着您立即地得到了您的回答，但如果您遇到技术问题，或者有任何其他原因，让您感到不满意，我们很乐意听到发生了什么，这样我们可以帮助解决它。我们的目标是百分之百的患者满意度，我们希望确保您得到所需要的医护。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_concierge_doctor_invitation_discount.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="64" resname="r13016262" restype="string" datatype="ruby">
+        <source>Here's what %{expert} said:</source>
+        <target state="translated">这是％{expert}说的一些话：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_concierge_cannotanswer_refund.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="65" resname="r276904410" restype="string" datatype="ruby">
+        <source>We’d still love to help you find an answer to your question, however.</source>
+        <target state="translated">不过，我们仍然乐意帮助您找到您的问题的答案。</target>
+      </trans-unit>
+      <trans-unit id="66" resname="r61989235" restype="string" datatype="ruby">
+        <source>We found a doctor on HealthTap Concierge who may be more appropriate expert to help you for your consult.</source>
+        <target state="translated">我们在HealthTap贵宾台找到了一名医生，他可能是更适合帮助您咨询的专家。</target>
+      </trans-unit>
+      <trans-unit id="67" resname="r275416310" restype="string" datatype="ruby">
+        <source>%{person}, a %{specialist} with %{num_years} years in practice is available.</source>
+        <target state="translated">%{person}, 一位有%{num_years}年诊疗经验的%{specialist}医生现在空闲。</target>
+      </trans-unit>
+      <trans-unit id="68" resname="r742490338" restype="string" datatype="ruby">
+        <source>Would you like to forward your message to %{expert} instead?</source>
+        <target state="translated">您希望将信息转发到%{expert}?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_concierge_appointment_missed_bydoctor.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="69" resname="r1055415101" restype="string" datatype="ruby">
+        <source>You may reschedule a Virtual Appointment for another time during the doctor's virtual office hours.</source>
+        <target state="translated">您可以在医生的在线办公时间内重新安排一次在线预约。</target>
+        
+      <note>TODO constructed</note></trans-unit>
+      <trans-unit id="70" resname="r586844194" restype="string" datatype="ruby">
+        <source>You may reschedule a Virtual Appointment for another time during the doctor's virtual office hours without additional charge.</source>
+        <target state="translated">您可以在医生的在线办公时间内重新安排一次在线预约，而无需支付额外费用。</target>
+        
+      <note>TODO constructed</note></trans-unit>
+    </body>
+  </file>
+  <file original="app/views/chat/feelgood/chat_history_pdf.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="71" resname="r510048504" restype="string" datatype="ruby">
+        <source>Virtual Consult with %{expert_name} for %{patient_first_name} %{patient_last_name}</source>
+        <target state="translated">为%{patient_first_name} %{patient_last_name}与％{expert_name}的在线咨询</target>
+      </trans-unit>
+      <trans-unit id="72" resname="r17892385" restype="string" datatype="ruby">
+        <source>Started at %{start_time}</source>
+        <target state="translated">开始于％{start_time}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/promo_code.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="73" resname="r463906685" restype="string" datatype="ruby">
+        <source>Promo code can not be applied to given subscription plan</source>
+        <target state="translated">优惠码无法应用于该订购计划</target>
+      </trans-unit>
+      <trans-unit id="74" resname="r552602972" restype="string" datatype="ruby">
+        <source>This code is only valid for subscriptions. Please try again.</source>
+        <target state="translated">此代码仅对订购有效。请重新尝试。</target>
+      </trans-unit>
+      <trans-unit id="75" resname="r411943652" restype="string" datatype="ruby">
+        <source>Invalid plan. Please try again.</source>
+        <target state="translated">计划无效。请重新尝试。</target>
+      </trans-unit>
+      <trans-unit id="76" resname="r76237767" restype="string" datatype="ruby">
+        <source>Promo code can only be applied for expert.</source>
+        <target state="translated">优惠码只能应用于专家。</target>
+      </trans-unit>
+      <trans-unit id="77" resname="r293222583" restype="string" datatype="ruby">
+        <source>This code is only valid for one-time charges. Please try again.</source>
+        <target state="translated">此代码仅适用于一次性费用。请重新尝试。</target>
+      </trans-unit>
+      <trans-unit id="78" resname="r441795463" restype="string" datatype="ruby">
+        <source>This code is only valid for concierge charges. Please try again.</source>
+        <target state="translated">此代码仅适用于贵宾台费用。请重新尝试。</target>
+      </trans-unit>
+      <trans-unit id="79" resname="r864002762" restype="string" datatype="ruby">
+        <source>This code is only valid for Prime consults. Please choose "Prime" from "Ask Docs" to talk to a primary care doctor on call, 24/7.</source>
+        <target state="translated">此代码仅适用于Prime咨询。请从“询问医生”中选择“Prime”，普通门诊医生24/7全天候随时恭候。</target>
+      </trans-unit>
+      <trans-unit id="80" resname="r64812869" restype="string" datatype="ruby">
+        <source>Promo code can not be applied to given doctor</source>
+        <target state="translated">优惠码无法应用于给定的医生</target>
+      </trans-unit>
+      <trans-unit id="81" resname="r760108251" restype="string" datatype="ruby">
+        <source>This promo code has already been used for this credit card. Please try another.</source>
+        <target state="translated">此优惠码已用于此信用卡。请尝试另一个。</target>
+      </trans-unit>
+      <trans-unit id="82" resname="r604759457" restype="string" datatype="ruby">
+        <source>Promo code can not be applied to current transaction</source>
+        <target state="translated">优惠码无法应用于当前交易</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/personal_check.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="83" resname="r930344070" restype="string" datatype="ruby">
+        <source>%{action} %{frequency} for %{duration} for %{until_when}</source>
+        <target state="translated">%{action} %{frequency}为%{duration}%{until_when}</target>
+      </trans-unit>
+      <trans-unit id="84" resname="r876765637" restype="string" datatype="ruby">
+        <source>%{action} %{frequency} for %{duration}</source>
+        <target state="translated">%{action} %{frequency}为%{duration}</target>
+      </trans-unit>
+      <trans-unit id="85" resname="r1054967873" restype="string" datatype="ruby">
+        <source>%{action} %{frequency}</source>
+        <target state="translated">%{action} %{frequency}</target>
+      </trans-unit>
+      <trans-unit id="86" resname="r480767335" restype="string" datatype="ruby">
+        <source>%{action}</source>
+        <target state="translated">%{action}</target>
+      </trans-unit>
+      <trans-unit id="87" resname="r999886080" restype="string" datatype="ruby">
+        <source>%{frequency} for %{duration} for %{until_when}</source>
+        <target state="translated">%{frequency}为%{duration}%{until_when}</target>
+      </trans-unit>
+      <trans-unit id="88" resname="r144076796" restype="string" datatype="ruby">
+        <source>%{frequency} for %{duration}</source>
+        <target state="translated">%{frequency}为%{duration}</target>
+      </trans-unit>
+      <trans-unit id="89" resname="r828358785" restype="string" datatype="ruby">
+        <source>%{frequency}</source>
+        <target state="translated">%{frequency}</target>
+      </trans-unit>
+      <trans-unit id="90" resname="r964520866" restype="string" datatype="ruby">
+        <source>for %{duration} for %{until_when}</source>
+        <target state="translated">为%{duration}%{until_when}</target>
+      </trans-unit>
+      <trans-unit id="91" resname="r794130434" restype="string" datatype="ruby">
+        <source>for %{duration}</source>
+        <target state="translated">为%{duration}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person/third_party.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="92" resname="r842205903" restype="string" datatype="ruby">
+        <source>&lt;p&gt;Please join this private video&amp;nbsp;consult between %{doctor}&amp;nbsp;and %{patient_name} %{last_name}&amp;nbsp;now.&amp;nbsp;&lt;/p&gt;</source>
+        <target state="translated">&lt;P&gt;请立即加入这个%{doctor}&amp;nbsp;和%{patient_name}之间的私人视频&amp;nbsp;咨询。%{last_name}&amp;nbsp;&amp;nbsp;&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="93" resname="r698790836" restype="string" datatype="ruby">
+        <source>&lt;p&gt;Please join this private audio&amp;nbsp;consult between %{doctor}&amp;nbsp;and %{patient_name} %{last_name}&amp;nbsp;now.&amp;nbsp;&lt;/p&gt;</source>
+        <target state="translated">&lt;P&gt;请立即加入这个%{doctor}&amp;nbsp;和%{patient_name}之间的私人语音&amp;nbsp;咨询。%{last_name}&amp;nbsp;&amp;nbsp;&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="94" resname="r363746974" restype="string" datatype="ruby">
+        <source>&lt;p&gt;Please join this private text&amp;nbsp;consult between %{doctor}&amp;nbsp;and %{patient_name} %{last_name}&amp;nbsp;now.&amp;nbsp;&lt;/p&gt;</source>
+        <target state="translated">&lt;P&gt;请立即加入这个%{doctor}&amp;nbsp;和%{patient_name}之间的私人文本&amp;nbsp;咨询。%{last_name}&amp;nbsp;&amp;nbsp;&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="95" resname="r863741599" restype="string" datatype="ruby">
+        <source>Please join this private video consult between %{doctor} and %{patient_name} %{patient_last_name} now. %{join_url}</source>
+        <target state="translated">请立刻加入％{doctor}和％{patient_name}％{patient_last_name}之间的此私人视频咨询。％{join_url}</target>
+      </trans-unit>
+      <trans-unit id="96" resname="r348106630" restype="string" datatype="ruby">
+        <source>Please join this private text consult between %{doctor} and %{patient_name} %{patient_last_name} now. %{join_url}</source>
+        <target state="translated">请立刻加入％{doctor}和％{patient_name}％{patient_last_name}之间的此私人文本咨询。％{join_url}</target>
+      </trans-unit>
+      <trans-unit id="97" resname="r265486198" restype="string" datatype="ruby">
+        <source>Please join me in a private video consult with a patient, %{patient_name} %{patient_last_name}, now. %{join_url}</source>
+        <target state="translated">请立刻加入我和患者％{patient_name}％{patient_last_name}之间的私人视频咨询。％{join_url}</target>
+      </trans-unit>
+      <trans-unit id="98" resname="r882119441" restype="string" datatype="ruby">
+        <source>Please join me in a private audio consult with a patient, %{patient_name} %{patient_last_name}, now. %{join_url}</source>
+        <target state="translated">请立刻加入我和患者％{patient_name}％{patient_last_name}之间的私人语音咨询。％{join_url}</target>
+      </trans-unit>
+      <trans-unit id="99" resname="r173282547" restype="string" datatype="ruby">
+        <source>Please join me in a private text consult with a patient, %{patient_name} %{patient_last_name}, now. %{join_url}</source>
+        <target state="translated">请立刻加入我和患者％{patient_name}％{patient_last_name}之间的私人文本咨询。％{join_url}</target>
+      </trans-unit>
+      <trans-unit id="100" resname="r622749420" restype="string" datatype="ruby">
+        <source>&lt;p&gt;Please join me in a private video&amp;nbsp;consult with %{patient_name} %{last_name}&amp;nbsp;now.&lt;/p&gt;</source>
+        <target state="translated">&lt;p&gt;请立刻加入我和％{patient_name}％{patient_last_name}之间的私人视频&amp;nbsp;咨询。&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="101" resname="r531299469" restype="string" datatype="ruby">
+        <source>&lt;p&gt;Please join me in a private audio&amp;nbsp;consult with %{patient_name} %{last_name}&amp;nbsp;now.&lt;/p&gt;</source>
+        <target state="translated">&lt;p&gt;请立刻加入我和％{patient_name}％{patient_last_name}之间的私人语音&amp;nbsp;咨询。&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="102" resname="r130159983" restype="string" datatype="ruby">
+        <source>&lt;p&gt;Please join me in a private text&amp;nbsp;consult with %{patient_name} %{last_name}&amp;nbsp;now.&lt;/p&gt;</source>
+        <target state="translated">&lt;p&gt;请立刻加入我和％{patient_name}％{patient_last_name}之间的私人文本&amp;nbsp;咨询。&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="103" resname="r218765600" restype="string" datatype="ruby">
+        <source>&lt;p&gt;Please join me in a private video&amp;nbsp;consult with %{doctor}&amp;nbsp;now.&lt;/p&gt;</source>
+        <target state="translated">&lt;p&gt;请立刻加入我和%{doctor}&amp;nbsp;之间的私人视频&amp;nbsp;咨询。&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="104" resname="r74935543" restype="string" datatype="ruby">
+        <source>&lt;p&gt;Please join me in a private audio&amp;nbsp;consult with %{doctor}&amp;nbsp;now.&lt;/p&gt;</source>
+        <target state="translated">&lt;p&gt;请立刻加入我和%{doctor}&amp;nbsp;之间的私人语音&amp;nbsp;咨询。&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="105" resname="r937516650" restype="string" datatype="ruby">
+        <source>&lt;p&gt;Please join me in a private text&amp;nbsp;consult with %{doctor}&amp;nbsp;now.&lt;/p&gt;</source>
+        <target state="translated">&lt;p&gt;请立刻加入我和%{doctor}&amp;nbsp;之间的私人文本&amp;nbsp;咨询。&lt;/p&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/chat_session.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="106" resname="r423357169" restype="string" datatype="ruby">
+        <source>The other party ended the session prematurely</source>
+        <target state="translated">对方提前结束了会议</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="107" resname="r223800509" restype="string" datatype="ruby">
+        <source>%{expert} invites you to join her virtual practice</source>
+        <target state="translated">％{expert}邀请您加入她的在线诊疗</target>
+      </trans-unit>
+      <trans-unit id="108" resname="r898046520" restype="string" datatype="ruby">
+        <source>%{expert} invites you to join his virtual practice</source>
+        <target state="translated">％{expert}邀请您加入他的在线诊疗</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/mobile_controller.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="109" resname="r1017162231" restype="string" datatype="ruby">
+        <source>app_name can't be blank</source>
+        <target state="translated">app_name不能为空</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/api/v2/reference_controller.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="112" resname="r376623140" restype="string" datatype="ruby">
+        <source>Bihari</source>
+        <target state="translated">比哈里语</target>
+      </trans-unit>
+      <trans-unit id="118" resname="r1035491504" restype="string" datatype="ruby">
+        <source>Hmong</source>
+        <target state="translated">印度尼西亚语</target>
+      </trans-unit>
+      <trans-unit id="119" resname="r419562358" restype="string" datatype="ruby">
+        <source>Igbo</source>
+        <target state="translated">伊博语</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/api/v2/api_controller.rb" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="136" resname="r352954835" restype="string" datatype="ruby">
+        <source>%{consult_geo_state} not available</source>
+        <target state="translated">%{consult_geo_state}不可用</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/install_extension.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="137" resname="Add to Chrome" restype="string" datatype="html">
+        <source>Add to Chrome</source>
+        <target state="translated">添加到Chrome</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/newsletter_answer_content.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="138" resname="." restype="string" datatype="html">
+        <source>.</source>
+        <target state="translated">.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/experts/add_topic_popup.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="140" resname="Add {topic}" restype="string" datatype="javascript">
+        <source>Add {topic}</source>
+        <target state="translated">添加{topic}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/plan_subscribe.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="141" resname="Your first consult" restype="string" datatype="javascript">
+        <source>Your first consult</source>
+        <target state="translated">您的第一次咨询</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/pay_total.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="142" resname="Billed monthly. Cancel anytime" restype="string" datatype="javascript">
+        <source>Billed monthly. Cancel anytime</source>
+        <target state="translated">按月计费。随时取消</target>
+      </trans-unit>
+      <trans-unit id="143" resname="Your total this year" restype="string" datatype="javascript">
+        <source>Your total this year</source>
+        <target state="translated">您今年的总额</target>
+      </trans-unit>
+      <trans-unit id="144" resname="Billed annually. Cancel anytime" restype="string" datatype="javascript">
+        <source>Billed annually. Cancel anytime</source>
+        <target state="translated">按年计费。随时取消</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="145" resname="Invite your clinician" restype="string" datatype="javascript">
+        <source>Invite your clinician</source>
+        <target state="translated">邀请您的临床医生</target>
+      </trans-unit>
+      <trans-unit id="146" resname="*Your number can help the clinician recognize you" restype="string" datatype="javascript">
+        <source>*Your number can help the clinician recognize you</source>
+        <target state="translated">*您的号码可以帮助临床医生识别您</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/health_files.tmpl.html" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="147" resname="Choose a file" restype="string" datatype="javascript">
+        <source>Choose a file</source>
+        <target state="translated">选择一份文件</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="148" resname="LESS&lt;br&gt;LIKELY" restype="string" datatype="javascript">
+        <source>LESS&lt;br&gt;LIKELY</source>
+        <target state="translated">不太&lt;br&gt;可能</target>
+      </trans-unit>
+      <trans-unit id="149" resname="SOMEWHAT&lt;br&gt;LIKELY" restype="string" datatype="javascript">
+        <source>SOMEWHAT&lt;br&gt;LIKELY</source>
+        <target state="translated">有点&lt;br&gt;可能</target>
+      </trans-unit>
+      <trans-unit id="150" resname="MORE&lt;br&gt;LIKELY" restype="string" datatype="javascript">
+        <source>MORE&lt;br&gt;LIKELY</source>
+        <target state="translated">很&lt;br&gt;可能</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/ui_modules.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="151" resname="Hi {name}" restype="string" datatype="javascript">
+        <source>Hi {name}</source>
+        <target state="translated">您好{name}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/soap_note.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="152" resname="I'd like to request you consult with a doctor again for a follow-up virtual consult on {date}" restype="string" datatype="javascript">
+        <source>I'd like to request you consult with a doctor again for a follow-up virtual consult on {date}</source>
+        <target state="translated">我希望要求您再次咨询医生，以便在{date}进行随访在线咨询。</target>
+      </trans-unit>
+      <trans-unit id="153" resname="I'd like to request you schedule another appointment with me for a follow-up virtual consult on {date}" restype="string" datatype="javascript">
+        <source>I'd like to request you schedule another appointment with me for a follow-up virtual consult on {date}</source>
+        <target state="translated">我希望要求您为在{date}的随访在线咨询与我安排另一次预约。</target>
+      </trans-unit>
+      <trans-unit id="154" resname="I'd like to request you consult with a doctor again for a follow-up virtual consult around {date}" restype="string" datatype="javascript">
+        <source>I'd like to request you consult with a doctor again for a follow-up virtual consult around {date}</source>
+        <target state="translated">我希望要求您再次咨询医生，以便大约在{date}进行随访在线咨询。</target>
+      </trans-unit>
+      <trans-unit id="155" resname="I'd like to request you schedule another appointment with me for a follow-up virtual consult around {date}" restype="string" datatype="javascript">
+        <source>I'd like to request you schedule another appointment with me for a follow-up virtual consult around {date}</source>
+        <target state="translated">我希望要求您为大约在{date}的随访在线咨询与我安排另一次预约。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/questions.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="156" resname="Would you like to video or text chat with {name}, a top {span_start}{specialist_name}{span_end} with {years} years of experience?" restype="string" datatype="javascript">
+        <source>Would you like to video or text chat with {name}, a top {span_start}{specialist_name}{span_end} with {years} years of experience?</source>
+        <target state="translated">您希望通过视频或文本与{name}, 一位有 {years}年经验的顶级{span_start}{specialist_name}{span_end}医生聊天吗？</target>
+      </trans-unit>
+      <trans-unit id="157" resname="Would you like to video or text chat with {name}, a top {span_start}{specialist_name}{span_end}?" restype="string" datatype="javascript">
+        <source>Would you like to video or text chat with {name}, a top {span_start}{specialist_name}{span_end}?</source>
+        <target state="translated">您希望通过视频或文本与{name}, 一位顶级span_start}{specialist_name}{span_end}医生聊天?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/payment.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="158" resname="{n}-day Free Trial!" restype="string" datatype="javascript">
+        <source>{n}-day Free Trial!</source>
+        <target state="translated">{n}天免费试用！</target>
+      </trans-unit>
+      <trans-unit id="159" resname="No charge until {date}" restype="string" datatype="javascript">
+        <source>No charge until {date}</source>
+        <target state="translated">直到{date}才收取费用</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/helpers/vidyo_player2.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="160" resname="on hold" restype="string" datatype="javascript">
+        <source>on hold</source>
+        <target state="translated">暂停</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/enterprise/verification.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="161" resname="&lt;span&gt;Your 6-digit code was re-sent to your&lt;br/&gt;email {email}&lt;/span&gt;" restype="string" datatype="javascript">
+        <source>&lt;span&gt;Your 6-digit code was re-sent to your&lt;br/&gt;email {email}&lt;/span&gt;</source>
+        <target state="translated">&lt;span&gt;您的6位数代码已重新发送到您的&lt;br/&gt;邮箱{email}&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="162" resname="&lt;span&gt;Your 6-digit code was re-sent to your&lt;br/&gt;mobile phone number {sms}&lt;/span&gt;" restype="string" datatype="javascript">
+        <source>&lt;span&gt;Your 6-digit code was re-sent to your&lt;br/&gt;mobile phone number {sms}&lt;/span&gt;</source>
+        <target state="translated">&lt;span&gt;您的6位数代码已重新发送到您的&lt;br/&gt;手机号码{sms}&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="163" resname="Code re-sent" restype="string" datatype="javascript">
+        <source>Code re-sent</source>
+        <target state="translated">代码重新发送</target>
+      </trans-unit>
+      <trans-unit id="164" resname="We've sent a 6-digit code to your phone" restype="string" datatype="javascript">
+        <source>We've sent a 6-digit code to your phone</source>
+        <target state="translated">我们已将6位数的代码发送到您的手机</target>
+      </trans-unit>
+      <trans-unit id="165" resname="We've sent a 6-digit code to your email" restype="string" datatype="javascript">
+        <source>We've sent a 6-digit code to your email</source>
+        <target state="translated">我们已将6位数的代码发送到您的邮箱</target>
+      </trans-unit>
+      <trans-unit id="166" resname="By {option}" restype="string" datatype="javascript">
+        <source>By {option}</source>
+        <target state="translated">通过{option}</target>
+      </trans-unit>
+      <trans-unit id="167" resname="Please enter your {option}" restype="string" datatype="javascript">
+        <source>Please enter your {option}</source>
+        <target state="translated">请输入您的{option}</target>
+      </trans-unit>
+      <trans-unit id="168" resname="This information does not match our records. Please check your information, or verify by text message or email" restype="string" datatype="javascript">
+        <source>This information does not match our records. Please check your information, or verify by text message or email</source>
+        <target state="translated">此信息与我们的记录不匹配。请检查您的信息，或通过短信或邮箱验证</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/audio_test.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="169" resname="Error getting audio" restype="string" datatype="javascript">
+        <source>Error getting audio</source>
+        <target state="translated">获取音频时出错</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/answering_room.js" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="170" resname="Consult has ended, you will be redirected back to Your Virtual Practice page." restype="string" datatype="javascript">
+        <source>Consult has ended, you will be redirected back to Your Virtual Practice page.</source>
+        <target state="translated">咨询已结束，您将被重新返回您的在线诊疗页面。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/notifications.yml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="171" resname="body_female" restype="string" datatype="x-yaml" x-context="member_consult_summary_live">
+        <source>%1 shared her instructions and plan for you for your recent consult!</source>
+        <target state="translated">％1已分享她的说明并为您计划您最近的咨询！</target>
+      </trans-unit>
+      <trans-unit id="172" resname="push_data_female" restype="string" datatype="x-yaml" x-context="member_consult_summary_live">
+        <source>%1 shared her instructions and plan for you for your recent consult! View %1’s response</source>
+        <target state="translated">％1已分享她的说明并为您计划您最近的咨询！查看％1的回复</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="index.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="173" resname="r3013966" restype="string" datatype="x-haml">
+        <source>.</source>
+        <target state="translated">.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="terms.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="174" resname="r179193766" restype="string" datatype="x-haml">
+        <source>This updated document eliminates redundancies, better explains the relationship between you and HealthTap, and updates outdated references Separate Terms apply to HealthTap Prime and HealthTap Concierge.</source>
+        <target state="translated">此更新的文档消除了冗余部分，更好地解释了您与HealthTap之间的关系，并更新过时的适用于HealthTap Prime和HealthTap贵宾台的参考独立条款。</target>
+      </trans-unit>
+      <trans-unit id="175" resname="r998378464" restype="string" datatype="x-haml">
+        <source>We strongly encourage everyone to read our new Terms of Use carefully, and in their entirety. Thank you for your support.</source>
+        <target state="translated">我们强烈鼓励每个人全面仔细地阅读我们的新使用条款。感谢您的支持。</target>
+      </trans-unit>
+      <trans-unit id="176" resname="r288766811" restype="string" datatype="x-haml">
+        <source>This Terms of Use (or "TOU") is an agreement between you and HealthTap, Inc. ("HealthTap"). There are rules you agree to follow when using our mobile applications and website(s) (the "Apps"), including when you ask questions and when you view or input content on or into the Apps.</source>
+        <target state="translated">本使用条款（或“TOU”）是您与HealthTap，Inc.（“HealthTap”）之间的协议。 在使用我们的移动应用程序和网站（“应用程序”）时，您同意遵守的规则，包括当您提出问题时以及在应用程序中或在其中查看或输入内容时需遵守的规则。</target>
+      </trans-unit>
+      <trans-unit id="177" resname="r803803940" restype="string" datatype="x-haml">
+        <source>Additional terms govern your use of HealthTap Prime and HealthTap Concierge.</source>
+        <target state="translated">附加条款将对您使用 HealthTap Prime和HealthTap 贵宾台作出规定。</target>
+      </trans-unit>
+      <trans-unit id="178" resname="r1053304360" restype="string" datatype="x-haml">
+        <source>Generally, this agreement governs your use of the Apps. Other terms may apply to your use of a specific features or parts of our Apps.</source>
+        <target state="translated">总的来说，本协议规定了您对应用程序（Apps）的使用。其他条款适用于有特定功能或部分的应用程序（Apps）。</target>
+      </trans-unit>
+      <trans-unit id="179" resname="r934381021" restype="string" datatype="x-haml">
+        <source>HealthTap is designed to support the health decisions and choices that you make. These decisions and choices are yours, and we believe that you are the best decision maker about your health and that these decisions should be made in connection with the advice you receive within a formal doctor-patient relationship. Always use common sense when making health decisions. HealthTap cannot make decisions for you. We can help you find good health information and, where available and appropriate, connect with doctors for care via HealthTap Prime or HealthTap Concierge or for in-person care.</source>
+        <target state="translated">HealthTap旨在支持您做出的健康决定和选择。这些决定和选择是属于您的并且我们相信您是您健康的最佳决策者，并且这些决定应与您在正式医患关系中接受的建议相关。在做出健康决定时总是使用常识。HealthTap不能为您做出决定。但是我们可以帮助您找到良好的健康信息，并在可行和适当的情况下，通过HealthTap Prime或HealthTap贵宾台与医生联系以进行医护或面对面的医护。</target>
+      </trans-unit>
+      <trans-unit id="180" resname="r359415925" restype="string" datatype="x-haml">
+        <source>On HealthTap Prime and Concierge you can obtain care (if you are located in a state where such service is available). This TOU applies to HealthTap. Additional terms apply to HealthTap Prime and HealthTap Concierge.</source>
+        <target state="translated">在HealthTap Prime和贵宾台您可以获得医护（如果您所在州可以提供这样的服务）。本使用条款适用于HealthTap。附加条款适用于HealthTap Prime和HealthTap贵宾台。</target>
+      </trans-unit>
+      <trans-unit id="181" resname="r807776459" restype="string" datatype="x-haml">
+        <source>HealthTap Prime and HealthTap Concierge support doctor-patient relationships. HealthTap Concierge may be used where an ongoing doctor-patient relationship exists, and a temporary doctor-patient relationship is created by the use of HealthTap Prime.</source>
+        <target state="translated">HealthTap Prime和HealthTap贵宾台支持医患关系。HealthTap贵宾台可用于已有持续的医患关系，并可以通过使用HealthTap Prime创建临时的医患关系。</target>
+      </trans-unit>
+      <trans-unit id="182" resname="r591932131" restype="string" datatype="x-haml">
+        <source>Whenever we use the words "your physician" or "your doctor" or "healthcare provider" or similar words on HealthTap, including in these Terms of Use, we mean your personal doctor with whom you have of an actual, mutually acknowledged, doctor-patient relationship (or the same kind of formal, real-world relationship between you and your personal professional healthcare provider) within the United States. Medical Experts on HealthTap are not "your" doctor, physician, or healthcare provider. When you participate in a Virtual Consult on HealthTap Prime, you understand and agree that Medical Experts on HealthTap Prime are not your Primary Care Physician and you agree not to use HealthTap Prime as a substitute for interactions with your Primary Care Physician. Where available to you, you may use HealthTap Concierge for Virtual Consults with your existing doctor(s).</source>
+        <target state="translated">无论何时我们在HealthTap上包括在这些使用条款上，使用“您的医师”或“您的医生”或“医疗保健提供者”或类似的词语时，我们都是指在美国境内与您有实质的、互相认可的、建立了医患关系（或正式的、现实生活中您和您的个人专业护理提供者之间的关系）的个人医生。当您在 HealthTap Prime上进行在线咨询时，您理解并同意HealthTap Prime 上的医学专家不是您的初级保健医生，您同意不使用HealthTap Prime 替代您与您的初级保健医生的交流。在允许的地方，您可以使用HealthTap贵宾台和在线诊疗与您既有的医生交流。</target>
+      </trans-unit>
+      <trans-unit id="183" resname="r264611700" restype="string" datatype="x-haml">
+        <source>Interactions on HealthTap do not constitute the practice of medicine and consultations cannot be used for providing a formal medical diagnosis, for a physical examination, for obtaining prescriptions, or for treatment. Do not use HealthTap or Content or Services to diagnose or treat a medical condition. Use HealthTap Prime or Concierge (where appropriate and permitted) or see your doctor in person if you are looking for a personal medial evaluation, diagnosis, or prescription.</source>
+        <target state="translated">HealthTap的互动不构成医学的诊疗，咨询不能用于提供正式的医疗诊断，身体检查，获取处方或治疗。不要使用HealthTap或内容或服务来诊断或治疗医疗状况。如果您正在寻找个人医疗评估，诊断或处方，，请使用HealthTap Prime或贵宾台（在适当和允许的情况下）或者请与您的医生亲自见面。</target>
+      </trans-unit>
+      <trans-unit id="184" resname="r632305463" restype="string" datatype="x-haml">
+        <source>HealthTap is a Business Associate of health care professionals under the federal health care privacy and security law known as HIPAA. Your personal information will be stored in a secure manner. HealthTap has implemented various encryption and security technologies and procedures to protect, from unauthorized access, your personal information which is stored in our computer systems. We also maintain standard physical and electronic procedural safeguards that limit access to your personal information to our employees (or people working on our behalf and under confidentiality agreements) who, through the course of standard business activities, need to access your personal information. Full access to the Apps is enabled only by usernames and passwords. You are fully and solely responsible for any and all use of the Apps using your username and password. We reserve the right to revoke or deactivate your username and password at any time.</source>
+        <target state="translated">HealthTap是受联邦医疗隐私和安全法(HIPAA)监管下医疗保健专业人员的业务伙伴。您的个人信息将以安全的方式存储。HealthTap已实施了各种加密和安全技术及程序，来保护储存于我们电脑系统内的个人信息，避免未经授权的访问。我们还实行标准的物理和电子程序保障措施，来限制我们的员工（或代表我们的人以及有保密协议的人）只能在进行标准的业务活动而需要访问您的个人信息时，才可以访问您的个人信息完全访问应用程序只有在使用用户名和密码时才有效。您使用您的用户名和密码，并完全和独自对任何和所有使用应用程序(Apps)的行为负责。我们保留在任何时间取消或停用您的用户名和密码的权利。</target>
+      </trans-unit>
+      <trans-unit id="185" resname="r172954002" restype="string" datatype="x-haml">
+        <source>Your use of HealthTap and any Content and Services must comply with all applicable federal and state laws, regulations, and ordinances. Currently, you must be at least 16 years old to use HealthTap and at least 18 years old to register for HealthTap Premium Services.</source>
+        <target state="translated">您使用HealthTap任何内容和服务必须遵守所有适用的联邦和州的法律，法规，条例。目前，您必须至少16岁才能使用HealthTap，年满18岁才能注册HealthTap的高级服务。</target>
+      </trans-unit>
+      <trans-unit id="186" resname="r141851599" restype="string" datatype="x-haml">
+        <source>When you register, you agree that HealthTap may communicate with you, including by sending information, correspondence, and notices to you. These communications may be sent via email, SMS (text message), push notification, phone, or otherwise using contact information associated with your account, including information provided when you register or update information in your Account Settings. We have a No-Spam policy, and you can opt out of communications and control your communications preferences through your Account Settings. We do not sell or distribute the email addresses of our users.</source>
+        <target state="translated">当您注册时，您同意HealthTap可能与您的沟通，包括向您发送信息，通讯和通知。这些通信可以通过电子邮件，短信（文本消息），推送通知，电话或其他方式使用与您的帐户相关联的联系信息发送，包括在您的帐户设置中注册或更新信息时提供的信息。我们制定了“垃圾邮件”政策，您可以通过“帐户设置”选择停止通讯并控制您的通讯偏好设置。我们绝不会出售或分发我们用户的电子邮件地址。</target>
+      </trans-unit>
+      <trans-unit id="187" resname="r887386252" restype="string" datatype="x-haml">
+        <source>It's free to ask health questions and receive health answers and tips on HealthTap. HealthTap also provides premium, optional Services and Content that can be accessed for a fee. ("Premium Services" and "Premium Content", respectively). HealthTap Prime Concierge are paid services. We will never ask you for your credit card or other payment information unless you indicate that you would like to use a paid service.</source>
+        <target state="translated">在HealthTap可以免费询问健康问题并收到健康的回答和小贴士。HealthTap还提供可以访问的付费的高级，可选服务和内容。 （分别为“高级服务”和“高级内容”）。HealthTap Prime和贵宾台是付费服务。我们绝不会要求您提供您的信用卡或其他付款信息，除非您表明您希望使用付费服务。</target>
+      </trans-unit>
+      <trans-unit id="188" resname="r388445820" restype="string" datatype="x-haml">
+        <source>HealthTap is a service for individuals to use to support their personal health decisions. You may use HealthTap for personal, but not for commercial, purposes in accordance with all applicable federal, state and local laws. Organizations, companies, and businesses may not become registered members or use our Apps as entities or through individual members. Licensed U.S. doctors and other qualified medical experts may apply to participate on HealthTap for educational purposes as Medical Experts, or to provide virtual consults via HealthTap Prime and Concierge. The Content is licensed only for the personal, household, and educational use of a single individual. No commercial use or commercial redistribution of any Content is permitted. Any hyperlink or other re-display of the information on another website must display the Content full-screen and not within a "frame" on the linked or other site, unless expressly pre-approved and permitted by HealthTap in writing. By using HealthTap, you agree not to harvest, scrape or otherwise collect any information about our members or doctors for any reason, including but not limited to for sending unsolicited communications, including spam.</source>
+        <target state="translated">HealthTap是个人用来支持他们个人健康决定的服务。您可以根据所有适用的联邦，州和当地法律，将HealthTap用于个人服务，但是不用于商业目的。组织，公司和企业不得作为单位或通过个人会员成为注册会员或使用我们的应用程序。拥有美国执业执照的医生和其他合格的医疗专家可以为教育目的申请参加HealthTap作为医疗专家，或通过HealthTap Prime和贵宾台提供在线咨询。内容许可仅授予个人，家庭和教育使用的单独个人。不允许对任何内容进行商业使用或商业再分发。任何超链接或其他网站上的信息的其他重新显示必须全屏显示内容，而不是在链接或其他网站的“框架”内，除非HealthTap明确地预先批准和允许。通过使用HealthTap，您同意不以任何原因（包括但不限于发送未经请求的通信，包括垃圾邮件）获取，刮除或以其他方式收集有关我们的会员或医生的任何信息。</target>
+      </trans-unit>
+      <trans-unit id="189" resname="r250516580" restype="string" datatype="x-haml">
+        <source>The platforms available via the Apps (the “HealthTap Platforms”) offer features and services available to you via your mobile phone or other mobile device. These features and services may include the ability to upload content to the HealthTap Platforms, receive messages from the HealthTap Platforms, download applications to your mobile phone or access HealthTap Platforms features (collectively, the "Mobile Features"). Standard messaging, data and other fees may be charged by your carrier. Your carrier may prohibit or restrict certain Mobile Features, and certain Mobile Features may be incompatible with your carrier or mobile device. Contact your carrier with questions regarding these issues. As applicable, instructions regarding how to opt-out of Mobile Features will be disclosed in connection with Mobile Features. The instructions will typically require you to text a keyword (such as "STOP," "CANCEL," "END," "UNSUBSCRIBE," "QUIT," etc.) to the applicable shortcode for the Mobile Feature, or to change your profile settings inside the Apps. You agree to notify HealthTap of any changes to your mobile number and update your account(s) on the HealthTap Platforms to reflect this change.</source>
+        <target state="translated">通过应用程序（“HealthTap平台”）提供的平台通过您的手机或其他移动设备为您提供功能和服务。这些功能和服务可能包括将内容上传到HealthTap平台，从HealthTap平台接收消息，将应用程序下载到您的手机或访问HealthTap平台功能（统称为“移动功能”）。标准信息，数据和其他费用可能由您的运营商收取。您的运营商可能会禁止或限制某些移动功能，某些移动功能可能与您的运营商或移动设备不兼容。有关这些问题的问题，请与您的运营商联系。如果适用，将结合移动功能公开有关如何退出移动功能的说明。这些说明通常要求您将关键字（例如“停止”，“取消”，“结束”，“取消订购”，“退出”等）用文本表示为移动功能适用的短代码或更改您的个人资料设置。您同意向HealthTap通知您的手机号码的任何更改，并更新您的HealthTap平台帐户以反映此更改。</target>
+      </trans-unit>
+      <trans-unit id="190" resname="r558380611" restype="string" datatype="x-haml">
+        <source>When you use action-oriented features on HealthTap and HealthTap Premium Services (including subscribing to a checklist or participating in a Virtual Consult), you agree that HealthTap and HealthTap Medical Group, P.C. may send you automatically via e-mail, mobile telephone or other contact information provided by you in your account settings, content including but not limited to, reminders relating to health checklists or doctor recommended actions for you. As a result, the content in those reminders may contain protected health information under HIPAA, including content related to conditions, treatments, and medications. You understand and agree that by using these features, you are opting into receiving your own protected health information by email, SMS or mobile telephone notification, which is not secure. You also understand and agree that by receiving such protected health information by e-mail, SMS or mobile telephone notification, you will be charged by your wireless or internet provider and that such e-mails, SMS or mobile telephone notification may be generated by an automated dialing system. You control the utility, and the privacy, of the reminders you receive. In your account settings, you can control what information is sent to you, and where it’s sent, and you can unsubscribe or opt-out from receiving reminders via email, SMS or mobile telephone notification , or any of them. If you prefer not to receive personal information by email or mobile notification, you agree to update your account notification settings.</source>
+        <target state="translated">当您在HealthTap和HealthTap高级服务（包括订阅清单或参与在线咨询）中使用行为性功能时，您同意HealthTap和HealthTap Medical Group，P.C.可以通过您在帐户设置中提供的电子邮件、移动电话或其他联系信息自动发送给您，内容包括但不限于与健康清单或医生建议的行动有关的提醒。因此，这些提醒中的内容可能包含受HIPAA保护的健康信息，包括与症状、治疗和药物相关的内容。您理解并同意，通过使用这些功能，您选择通过电子邮件、短信或移动电话通知接收您自己的受保护的健康信息，这是不安全的。您还理解并同意，通过电子邮件、短信或移动电话通知接收此类受保护的健康信息，您将被您的无线或互联网提供商收取费用，并且此类电子邮件、短信或移动电话通知可能由自动拨号系统发出。您可以控制收到的提醒的实用程序和隐私权。在您的帐户设置中，您可以控制发送给您的信息以及发送到何处，并且您可以通过电子邮件、短信或移动电话通知取消订阅或选择退出接收提醒。如果您不希望通过电子邮件或移动通知接收个人信息，则表示您同意更新您的帐户通知设置。</target>
+      </trans-unit>
+      <trans-unit id="191" resname="r56207769" restype="string" datatype="x-haml">
+        <source>If you violate any of these Terms of Use, your permission to use the Content and Services automatically terminates and you must immediately destroy any copies you have made of any portion of the Content.</source>
+        <target state="translated">如果您违反任何这些使用条款，您使用内容和服务的权限自动终止，您必须立即销毁您对内容的任何部分所做的任何副本。</target>
+      </trans-unit>
+      <trans-unit id="192" resname="r410540368" restype="string" datatype="x-haml">
+        <source>If you create, transmit, or display health and wellness or other information while using HealthTap, you agree to do so with information that you own or have the right to use.</source>
+        <target state="translated">如果您在使用HealthTap时创建、传输或显示健康或其他信息，则表示您同意接受您拥有或有权使用的信息。</target>
+      </trans-unit>
+      <trans-unit id="193" resname="r887402741" restype="string" datatype="x-haml">
+        <source>We request permission for the collection of precise location from your device per the permission system used by your mobile operating system. If you initially permit the collection of this information, you can later disable it by changing the location settings on your mobile device, however this will limit your ability to use certain features of our Services. If you permit our Apps to access location services, we may also collect your device location when the app is running in the foreground or background. Disabling our app’s collection of precise location from your device will not limit our ability to derive approximate location from your IP address. We use location information to help provide you with more relevant, personalized services. You may also change your location in the app settings.</source>
+        <target state="translated">我们根据您的移动操作系统所使用的权限系统，向您的设备请求获取精确位置的权限。如果您最初允许收集此信息，以后可以通过更改移动设备上的位置设置来停用此功能，但这将限制您使用我们服务的某些功能的能力。如果您允许我们的应用程序访问位置，当应用程序在前台或后台运行时，我们还可能会收集您的设备位置。从您的设备中停用我们的应用程序收集精确位置信息不会限制我们从您的IP地址获取大致位置的能力。我们使用位置信息为您提供更相关的个性化服务。您也可以在应用程式设定中变更您的位置。</target>
+      </trans-unit>
+      <trans-unit id="194" resname="r70317789" restype="string" datatype="x-haml">
+        <source>We make no representation that all products, Content or Services described on or available through the Apps (including HealthTap Prime and Concierge), are appropriate or available for use in locations outside the United States or all locations within the United States. Registered Users and Visitors access our Content and Services on their own initiative and are responsible for compliance with local laws. We make no claim that Content or Services are appropriate or may be downloaded outside of the United States.</source>
+        <target state="translated">我们不认为所有产品，也就是本应用程序所描述或可行的内容或服务（包括HealthTap Prime和贵宾台），合适或能够在美国以外的地区或全美地区使用。注册用户和游客可主动访问我们的内容和服务，并有责任遵循当地法律。我们并不声称内容或服务是适当的，也不声称其可能在美国以外的地区下载。</target>
+      </trans-unit>
+      <trans-unit id="195" resname="r921100723" restype="string" datatype="x-haml">
+        <source>If you are a non-U.S. member, you acknowledge and agree that HealthTap may collect and use your Information and disclose it to other entities outside your resident jurisdiction. In addition, such Information may be stored on servers located outside your resident jurisdiction. U.S. law may not provide the degree of protection for Information that is available in other countries.</source>
+        <target state="translated">如果您是非美国会员，这意味着您承认并同意HealthTap收集使用您的信息并透露给居民管辖权地区以外其他实体的可能性。此外，这些信息可能会被存储在您居民管辖权以外地区的服务器上。美国法律可能不会提供在其他国家保护信息的程度。</target>
+      </trans-unit>
+      <trans-unit id="196" resname="r311493466" restype="string" datatype="x-haml">
+        <source>If you do not consent to such transfer, you may not use our Content or Services. The product information provided on HealthTap is intended only for residents of the United States, and may have different product labeling and disclosure requirements in different countries.</source>
+        <target state="translated">如果您不认同这种转移方式，您可以不使用我们的内容或服务。HealthTap提供的产品信息仅针对美国居民，而产品在不同国家可能有不同的标签和资料公开的要求。如果您不认同这种转移方式，您可以不使用我们的内容或服务。HealthTap提供的产品信息仅针对美国居民，而产品在不同国家可能有不同的标签和资料公开的要求。</target>
+      </trans-unit>
+      <trans-unit id="197" resname="r744028158" restype="string" datatype="x-haml">
+        <source>You agree that member or expert submissions will apply with HealthTap's Submissions Terms and Policies.</source>
+        <target state="translated">您同意会员或专家的提交将适用于HealthTap的提交条款和政策。</target>
+      </trans-unit>
+      <trans-unit id="198" resname="r900877629" restype="string" datatype="x-haml">
+        <source>With the exception of any personal data or information you submit (which shall be maintained in accordance with our Privacy Policy) and other information governed by the Health Insurance Portability and Accountability Act of 1996, Public Law 104-191 and the rules and regulations promulgated thereunder (as amended to date, "HIPAA"), if you make any submissions (by email or otherwise) on, to or through HealthTap, including but not limited to data, questions, comments, suggestions, business information, ideas, concepts or inventions, you make such submission without any restrictions or expectation of compensation or of confidentiality, and you agree that your submissions may be used without restriction for any purpose whatsoever, and you automatically grant-or warrant that the owner of such content or intellectual property has expressly granted-HealthTap the complete right to freely use such submissions in any way, commercial or otherwise, and for any purpose whatsoever, including the right to use, reproduce, modify, adapt, publish, transmit, translate, create derivative works from, publicly perform or display (in any media or form now known or hereafter developed), or otherwise communicate to the public, in the form of a royalty-free, perpetual, irrevocable, worldwide nonexclusive license. HealthTap may sublicense its rights. Such submissions will be treated as non-confidential and nonproprietary and will become the property of HealthTap, and HealthTap shall be free to use any ideas, concepts, know-how, or techniques contained in any communication you send to HealthTap for any purpose whatsoever, including, without limitation, developing and marketing products using such information.</source>
+        <target state="translated">除了您提交的任何个人数据或信息（这应依照我们的隐私政策）和其他受1996年健康保险流通和责任法案，公法104-191和其颁布的相关规则及规例（修订到目前为止，“HIPPA”）管理的信息，如果您作出任何提交（通过电子邮件或其他方式）到或通过HealthTap，包括但不限于数据、问题、评论、建议、商业信息、理念、概念或发明，如果您的提交没有任何限制或对报酬和机密的期望，并且同意不限制您提交内容的使用目的，您自动批准或保证这些内容或知识产权所有者向HealthTap明确授予以任何方式自由使用这些提交内容的完整权利，不论是商业或是其他目的，包含使用、复制、修改、改编、出版、传播、翻译、创作衍生作品、公开演出或展示的权利（在任何媒体或以任何形式，无论是现在已知的或此后开发的），或以其他方式与公众沟通，以免版税、永久、不可撤销、全球非独家许可的形式。HealthTap有发布从属证书的权利。这样的提交将被视为非机密非专利，并将成为HealthTap的财产，HealthTap可以自由使用您以任何目的发送给HealthTap的任何想法、概念、技术或通信中包含的任何技术，包括但不限于，使用这些信息营销和开发产品。</target>
+      </trans-unit>
+      <trans-unit id="199" resname="r464432326" restype="string" datatype="x-haml">
+        <source>HealthTap does not accept unsolicited recruiter or similar submissions and noes not pay fees for any such parties without a current contract on file, and you agree that any submissions of candidates by a recruiter or other third party without a valid and signed recruiting agreement in place with HealthTap prior to such submission will not be subject to any recruiter or similar fees.</source>
+        <target state="translated">HealthTap不接受不请自来的招聘人员或类似的提交，在没有当前合同文件的情况下不为任一方支付费用，您同意对于任何在提交前没有与HealthTap合法签署招聘协议的候选人或第三方的提交，HealthTap不承认并不支付费用。</target>
+      </trans-unit>
+      <trans-unit id="200" resname="r263360172" restype="string" datatype="x-haml">
+        <source>Don't submit anything to us if you don't want to give us rights to it. If you wish to keep any business information, ideas, concepts or inventions private or proprietary, do not submit them on, through, or to HealthTap, by email or otherwise.</source>
+        <target state="translated">如果您不想授予我们权利，请不要向我们提交任何东西。如果您想保留任何商业信息、想法、概念或的私有或专有发明，不要提交到或通过HealthTap提交，无论是通过电子邮件还是其他方式。</target>
+      </trans-unit>
+      <trans-unit id="201" resname="r255246407" restype="string" datatype="x-haml">
+        <source>Medical Experts on the Apps include respected doctors throughout the United States. Only U.S.-licensed doctors may participate as Medical Experts on HealthTap (including HealthTap Prime and Concierge). Doctors whose licenses are or become suspended or revoked, for any reason, are not permitted and agree not to participate in any way, including but not limited to submitting Content to HealthTap as a Medical Expert on HealthTap or participating on HealthTap Prime or HealthTap Concierge. Supplemental Terms of Use apply to Experts who participate on HealthTap (including those who provide Premium Services).</source>
+        <target state="translated">应用程序的医学专家包括在美国各地的受尊敬的医生。只有美国授权的医生可以作为HealthTap的医学专家参加（包括HealthTap Prime和贵宾台）。因任何原因许可被暂停或撤销的医生，不被允许并且同意不以任何方式参与，包括但不限于作为HealthTap的医学专家在HealthTap上提交内容或参与HealthTap Prime或HealthTap贵宾台。补充使用条款适用于参与HealthTap的专家（包括提供高级服务的专家）。</target>
+      </trans-unit>
+      <trans-unit id="202" resname="r1194619" restype="string" datatype="x-haml">
+        <source>The Apps and the Content are provided on as "as is" basis. NEITHER WE, HEALTHTAP MEDICAL EXPERTS, NOR ANY OF OUR LICENSORS MAY BE HELD LIABLE UNDER THIS AGREEMENT FOR ANY DAMAGES OTHER THAN DIRECT DAMAGES, EVEN IF THE PARTY KNOWS OR SHOULD KNOW THAT OTHER DAMAGES ARE POSSIBLE, OR THAT DIRECT DAMAGES ARE NOT A SATISFACTORY REMEDY. THE LIMITATIONS IN THIS SECTION APPLY TO YOU ONLY TO THE EXTENT THEY ARE LAWFUL IN YOUR JURISDICTION. WE DISCLAIM ALL WARRANTIES EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT OF THIRD PARTIES' RIGHTS, AND FITNESS FOR PARTICULAR PURPOSE. Specifically, and without limiting the foregoing, We, our licensors, and our suppliers, make no representations or warranties about: (i) the accuracy, reliability, completeness, currentness, or timeliness of the Content provided on or through the use of HealthTap, whether by HealthTap or any other party; or (ii) the satisfaction of any government regulations requiring disclosure of information on prescription drug products or the approval or compliance of any software tools with HealthTap. Any location data accessed via the Apps may be inaccurate or incomplete and any use of such data is at your own risk.</source>
+        <target state="translated">应用程序和内容按“原样”提供。根据本协议，对于任何直接损害以外的任何损害，即使本公司知道或应当知道其他损害可能发生，或者直接损害不是满意的补救，我们健康医疗专家或任何我们的持有执业执照的人均不承担责任。本部分的限制仅适用于您在您所在司法辖区内适用的范围。我们不提供任何明示或暗示，法定或其他方式的担保，包括但不限于适销性，非侵权第三方权利和特定用途适用性的默示担保。具体而言，且不限制前述内容，我们的持有执业执照的人和我们的供应商不对以下内容做出任何陈述或保证：(i) 通过或通过使用HealthTap提供的内容的准确性，可靠性，完整性，现时性或及时性，无论是通过HealthTap或任何其他方;或(ii) 满足任何政府规定要求公开处方药产品的信息或使用HealthTap批准或遵守任何软件工具。通过应用程序访问的任何位置数据可能不准确或不完整，且任何使用此类数据的风险由您自行承担。</target>
+      </trans-unit>
+      <trans-unit id="203" resname="r284556297" restype="string" datatype="x-haml">
+        <source>A party who intends to seek arbitration must first send to the other, by certified mail, a written Notice of Dispute ("Notice").</source>
+        <target state="translated">意图寻求仲裁的当事人必须通过认证邮件向另一方发送书面的争议通知（“通知”）。</target>
+      </trans-unit>
+      <trans-unit id="204" resname="r1072941110" restype="string" datatype="x-haml">
+        <source>The Notice must (a) describe the nature and basis of the claim or dispute; and (b) set forth the specific relief sought and the specific applicable legal basis for the requested relief ("Demand").</source>
+        <target state="translated">通知必须（a）描述索赔或争议的性质和基础;和（b）列出所要求的特定补救措施和所要求救济的具体适用法律依据（“需求”）。</target>
+      </trans-unit>
+      <trans-unit id="205" resname="r581897973" restype="string" datatype="x-haml">
+        <source>Do not use the Apps excessively or inappropriately or in ways that the Apps were not designed for or that are not, in the opinion of HealthTap doctors, medically appropriate or legitimate.</source>
+        <target state="translated">不要以过度使用或不当使用的方式使用本应用程序，或不使用为HealthTap医生认为医疗上适当或合法的方式使用应用程序。</target>
+      </trans-unit>
+      <trans-unit id="206" resname="r42937035" restype="string" datatype="x-haml">
+        <source>I understand that there are risks from Virtual Consults, including the following: 1) Loss of records from failure of electronic equipment, 2) power or other technical failures with loss of communication, and 3) invasion of electronic records by outsiders (hackers). Finally, I understand that it is impossible to list every possible risk, that my condition may not be cured or improved, and in rare cases, may get worse.</source>
+        <target state="translated">我理解在线咨询存在风险，包括以下内容：1）电子设备故障的记录丢失，2）电源或其他技术故障，通信丢失，以及
+3）外来者（黑客）入侵电子记录。最后，我明白，不可能列出所有可能的风险，我的病症可能无法治愈或改善，在极少数情况下，可能会变得更糟。</target>
+      </trans-unit>
+      <trans-unit id="207" resname="r199230938" restype="string" datatype="x-haml">
+        <source>The following terms apply to your use of HealthTap Concierge and live virtual consults performed by video or audio or asynchronous inbox consults (collectively, "Virtual Consults"). By using HealthTap Concierge you represent that you understand and agree to all of the following:</source>
+        <target state="translated">以下条款适用于使用HealthTap贵宾台和通过视频或音频或异步收件箱进行的实时在线咨询（统称为“在线咨询”）。通过使用HealthTap贵宾台您表示理解并同意以下所有条款：</target>
+      </trans-unit>
+      <trans-unit id="208" resname="r549926310" restype="string" datatype="x-haml">
+        <source>You have an existing physician-patient relationship with any doctor with whom you have Virtual Consults using HealthTap Concierge.</source>
+        <target state="translated">您与使用HealthTap贵宾台的任何在线咨询医生有既有的医患关系</target>
+      </trans-unit>
+      <trans-unit id="209" resname="r622293034" restype="string" datatype="x-haml">
+        <source>You understand and agree that only minor non-emergency medical services are provided with respect to Virtual Consults.</source>
+        <target state="translated">您理解并同意，只针对轻微的非紧急医疗服务来在线咨询。</target>
+      </trans-unit>
+      <trans-unit id="210" resname="r385977302" restype="string" datatype="x-haml">
+        <source>You agree to seek emergency help when needed, and continue to consult with other physicians as recommended by doctors on HealthTap Concierge and by your primary care physician.</source>
+        <target state="translated">您同意在需要时寻求紧急帮助，并按照HealthTap贵宾台医生和您的初级保健医生的建议继续咨询其他医生。</target>
+      </trans-unit>
+      <trans-unit id="211" resname="r854392394" restype="string" datatype="x-haml">
+        <source>You understand that if your medical condition warrants emergency help, you will be directed to the nearest local hospital emergency department or emergency room.</source>
+        <target state="translated">您理解，如果您的医疗状况需要紧急帮助，您将被引导到最近的当地医院急诊科或急诊室。</target>
+      </trans-unit>
+      <trans-unit id="212" resname="r976039807" restype="string" datatype="x-haml">
+        <source>You understand that the services offered by HealthTap, Inc. are not health insurance, are not a substitute for health insurance, and you agree not to use such services as health insurance. HealthTap Concierge is designed for use independent of health insurance as an out-of-pocket cost service and that associated fees may not qualify for insurance or HSA or similar reimbursement.</source>
+        <target state="translated">您理解HealthTap，Inc.提供的服务不是健康保险，不能代替健康保险，您同意不将其服务用于健康保险等。HealthTap贵宾室是专门用于独立于健康保险的自费服务，相关费用可能不符合保险或HSA或类似的报销条件。</target>
+      </trans-unit>
+      <trans-unit id="213" resname="r375704868" restype="string" datatype="x-haml">
+        <source>HealthTap, Inc. is the provider of certain administrative and technical services to doctors using the services and does not provide professional medical services.</source>
+        <target state="translated">HealthTap，Inc.是向使用这些服务的医生提供某些管理和技术服务的提供商，不提供专业的医疗服务。</target>
+      </trans-unit>
+      <trans-unit id="214" resname="r841557483" restype="string" datatype="x-haml">
+        <source>HealthTap agrees to refund you the cost of your virtual consult performed by video or audio in the event that a documented technical failure, which is the responsibility of HealthTap (and not your own technical or connectivity limitations) prevented the completion of the consult. (Satisfaction Guarantee does not apply to asynchronous inbox consults.) This guarantee is subject to your submission to HealthTap of documentation supporting your request for a refund. All determinations of refund eligibility are made solely by HealthTap and are final once HealthTap reaches its decision.</source>
+        <target state="translated">如果因为HealthTap（而不是您自己的技术或连接限制）的责任导致的书面记录的技术故障阻碍了咨询的完成，HealthTap同意退还您通过视频或音频进行的在线咨询的费用。（满意保证不适用于异步收件箱咨询。）此保证受限于您向HealthTap提交的支持您的退款请求的文件。所有退款资格的决定都由HealthTap单独完成，一旦HealthTap达成决定，即为最终决定。</target>
+      </trans-unit>
+      <trans-unit id="215" resname="r988854406" restype="string" datatype="x-haml">
+        <source>HealthTap and HealthTap Premium Services are technology platforms, not doctors, and do not practice medicine and do not participate in or interfere with the practice of medicine by doctors on HealthTap or HealthTap Concierge, each of whom is responsible for his or her services and compliance with the requirements applicable to his or her profession and license.</source>
+        <target state="translated">HealthTap和HealthTap高级服务是HealthTap或HealthTap贵宾台上的医生的技术平台，而不是医生，不参与或干扰医学诊疗，每个人都负责他或她的服务和合规性，适用于他或她的专业和执照的要求。</target>
+      </trans-unit>
+      <trans-unit id="216" resname="r807703631" restype="string" datatype="x-haml">
+        <source>You agree to the entry of your medical records into the HealthTap computer database and understand that all reasonable measures have been taken to safeguard your medical information, in accordance with federal HIPAA standards, as amended to date, but no computer or information or communications system is totally secure. In accordance with HealthTap’s Privacy Policy Statement, we will not release information to anyone without your written authorization or as required by law.</source>
+        <target state="translated">您同意将您的医疗记录输入HealthTap计算机数据库，并了解根据最新修订的联邦HIPAA标准我们已采取一切合理措施保护您的医疗信息，但没有计算机或信息或通信系统是完全安全的。根据HealthTap的隐私政策声明，我们不会在没有您的书面授权或法律要求的情况下向任何人发布信息。</target>
+      </trans-unit>
+      <trans-unit id="217" resname="r230545567" restype="string" datatype="x-haml">
+        <source>You understand and agree Virtual Consults involve the communication of your medical information to physicians and other health care practitioners located in other parts of the state/jurisdiction or outside of the state/jurisdiction.</source>
+        <target state="translated">您理解并同意在线咨询包括将您的医疗信息传达给位于州/辖区其他地区或国家/管辖区之外的医生和其他医疗保健从业者。</target>
+      </trans-unit>
+      <trans-unit id="218" resname="r563167071" restype="string" datatype="x-haml">
+        <source>You also understand that HealthTap, Inc. is a "covered entity" as defined under the Health Insurance Portability and Accountability Act and associated regulations and HealthTap will maintain the privacy of your Health Information as required by HIPAA.</source>
+        <target state="translated">您还理解HealthTap，Inc.是根据健康保险流通和责任法案及相关法规定义的“被保险实体”，HealthTap将根据HIPAA的要求维护您的健康信息的隐私。</target>
+      </trans-unit>
+      <trans-unit id="219" resname="r464108052" restype="string" datatype="x-haml">
+        <source>You also understand and agree that by using HealthTap and HealthTap Concierge that we may automatically send your own personal health information and related reminders to you and you opt into receiving this information by email, mobile notification, or using other contact information provided by you in your account settings. You may opt out of receiving any such communication via email or mobile notification at any time through your account settings. If you prefer not to receive or do not consent to the receipt of personal health information by email or mobile notification, you agree to update your account notification settings before using HealthTap Concierge or any features utilizing reminders.</source>
+        <target state="translated">您还理解并同意，通过使用HealthTap和HealthTap贵宾台，我们可能会自动发送您自己的个人健康信息和相关提醒给您，您选择通过电子邮件、移动通知或使用您在账户设定下提供的其他联系信息。您可以通过您的帐户设置随时通过电子邮件或移动通知选择不接收此类通信。如果您不希望通过电子邮件或移动通知接收或不同意接收个人健康信息，您同意在使用HealthTap贵宾台或任何使用提醒的功能之前更新您的帐户通知设置。</target>
+      </trans-unit>
+      <trans-unit id="220" resname="r303560553" restype="string" datatype="x-haml">
+        <source>You understand and agree that we are not responsible for the data bandwidth, signal strength, or Internet or data connectivity of your mobile device or computer.</source>
+        <target state="translated">您了解并同意，我们不对您的移动设备或计算机的数据带宽，信号强度或Internet或数据连接负责。</target>
+      </trans-unit>
+      <trans-unit id="221" resname="r891504892" restype="string" datatype="x-haml">
+        <source>You agree to refrain from excessive or inappropriate use of HealthTap Concierge, including but not limited to multiple consults for the same issue without a valid medical reason, attempts to obtain prescriptions unavailable through HealthTap Concierge or not previously prescribed to you in a prior HealthTap Concierge consult for the same issue, or any other behavior deemed by HealthTap or a HealthTap Concierge doctor to be excessive or inappropriate.</source>
+        <target state="translated">您同意避免过度或不当使用HealthTap贵宾台服务，包括但不限于对没有有效医疗原因的同一问题进行多次咨询，试图获得无法通过HealthTap 贵宾台得到的处方，或之前针对同一健康状况的在线咨询中没有开具的处方，或有被HealthTap或HealthTap贵宾台医生认为过多或不适当的任何其他行为。</target>
+      </trans-unit>
+      <trans-unit id="222" resname="r188737285" restype="string" datatype="x-haml">
+        <source>You agree to refrain from contacting or seeking to contact the physician for telemedicine care outside of the platform. This protects both patients and physicians and to ensure clinical care is delivered in a reliable, continuous and controlled platform. HealthTap is not responsible for any interactions with physicians not conducted on the HealthTap platform.</source>
+        <target state="translated">您同意不要在平台外联系或寻求联系远程医疗医护的医生。这保护患者和医生，并且确保临床医护在可靠，连续和受控的平台中交付。 HealthTap不对未在HealthTap平台上进行的任何医生交流负责。</target>
+      </trans-unit>
+      <trans-unit id="223" resname="r518126957" restype="string" datatype="x-haml">
+        <source>You represent and warrant to us that, to the extent you enter “protected health information” (as such term is defined under HIPAA) for a third person, you are legally authorized to do so on behalf of such third person, and such third person has validly consented to your inputting of, and your review of, “protected health information” of such third person on HealthTap Premium Services and via the HealthTap website and mobile apps.</source>
+        <target state="translated">您向我们表示并保证，在您为第三方输入“受保护的健康信息”（根据HIPAA定义的此类术语）的范围内，您是被合法授权的代表此类第三方这样做，并且第三方已经有效地同意您在HealthTap高级服务以及通过HealthTap网站和移动应用程序输入和审核此类第三方的“受保护的健康信息”。</target>
+      </trans-unit>
+      <trans-unit id="224" resname="r709340502" restype="string" datatype="x-haml">
+        <source>Free Choice. I have the right to withhold or withdraw my consent to Virtual Consults at any time without affecting my right to future care or treatment.</source>
+        <target state="translated">自由选择。我有权随时保留或撤回我对在线咨询的同意，而不影响我对未来护理或治疗的权利。</target>
+      </trans-unit>
+      <trans-unit id="225" resname="r415757055" restype="string" datatype="x-haml">
+        <source>Access to Information. I have the right to inspect all medical information transmitted during a Virtual Consult and may receive copies of this information for a reasonable fee.</source>
+        <target state="translated">信息访问。我有权检查在在线咨询期间传送的所有医疗信息，并可能付合理费用获取此信息的副本。</target>
+      </trans-unit>
+      <trans-unit id="226" resname="r706608629" restype="string" datatype="x-haml">
+        <source>Confidentiality. I understand that the laws that protect the confidentiality of medical information apply to Virtual Consults, and that no information or images from such interaction which identify me will be disclosed to other entities without my consent.</source>
+        <target state="translated">保密性。我理解，保护医疗信息的可靠性的法律适用于在线消费者，未经我同意，不会向其他实体透露可识别我的任何信息或图片。</target>
+      </trans-unit>
+      <trans-unit id="227" resname="r77340267" restype="string" datatype="x-haml">
+        <source>Risks. I understand that there are risks from Virtual Consults, including the following: 1) Loss of records from failure of electronic equipment, 2) power or other technical failures with loss of communication, and 3) invasion of electronic records by outsiders (hackers). Finally, I understand that it is impossible to list every possible risk, that my condition may not be cured or improved, and in rare cases, may get worse.</source>
+        <target state="translated">风险。我理解在线咨询存在风险，包括以下内容：1）电子设备故障的记录丢失，2）电源或其他技术故障，通信丢失，以及
+3）外来者（黑客）入侵电子记录。最后，我明白，不可能列出所有可能的风险，我的病症可能无法治愈或改善，在极少数情况下，可能会变得更糟。</target>
+      </trans-unit>
+      <trans-unit id="228" resname="r1008566820" restype="string" datatype="x-haml">
+        <source>Benefits. I understand that I can expect the following benefits from Virtual Consults, but that no results can be guaranteed or assured: (i) reduced visit time, (ii) rapid innovation of treatments, and (iii) focused information.</source>
+        <target state="translated">好处。我明白，我可以期望从在线咨询中获得以下好处，但没有结果可以保证或确认：（i）减少访问时间，（ii）快速创新的治疗，和（iii）重点信息。</target>
+      </trans-unit>
+      <trans-unit id="229" resname="r610492878" restype="string" datatype="x-haml">
+        <source>I agree to consult with my primary care physician or specialist in person for follow-up treatment, and/or seek treatment, if necessary at a local hospital emergency department, in the event that the diagnosis or treatment provided via the virtual consult using HealthTap Concierge does not resolve the medical issue for which the consultation was sought.</source>
+        <target state="translated">在使用HealthTap贵宾台提供的在线咨询诊断和治疗后不能解决我所咨询的医疗问题的情况下，我同意亲自咨询我的初级保健医生或专家以进行后续治疗；和/或如有必要去当地医院急诊部寻求治疗。</target>
+      </trans-unit>
+      <trans-unit id="230" resname="r5909741" restype="string" datatype="x-haml">
+        <source>I understand that, by consenting to live virtual consults performed by video or audio or asynchronous inbox consults, my physician may communicate medical information concerning me to physicians and other health care practitioners located in other parts of the state/jurisdiction or outside the state/jurisdiction.</source>
+        <target state="translated">我理解，经过我的同意，通过视频或电话或异步收件箱进行在线咨询，我的医生可能会将关于我的医疗信息传达给位于州/辖区的其他部分或州/管辖区之外的医生和其他保健医生。</target>
+      </trans-unit>
+      <trans-unit id="231" resname="r310355389" restype="string" datatype="x-haml">
+        <source>Quality Assurance. I understand that records related to these consults may be reviewed under a HealthTap quality assurance program. Records of HealthTap Quality Assurance Committee records subject to confidentiality.</source>
+        <target state="translated">质量保证。我理解与这些咨询相关的记录可以根据HealthTap质量保证项目进行审查。HealthTap质量保证委员会记录的记录受制于保密性。</target>
+      </trans-unit>
+      <trans-unit id="232" resname="r691915721" restype="string" datatype="x-haml">
+        <source>You agree that that all information you provide on HealthTap and HealthTap Concierge relates to you and is current, complete, and accurate. Additionally, you agree to update and maintain such information on HealthTap and HealthTap Concierge to ensure that it is true, accurate, current and complete at all times.</source>
+        <target state="translated">您同意您在HealthTap和HealthTap贵宾台上提供的所有信息都与您相关，并且是最新，完整和准确的。 此外，您同意更新和维护HealthTap和HealthTap贵宾台上的此类信息，以确保其始终是真实，准确，最新和完整的。</target>
+      </trans-unit>
+      <trans-unit id="233" resname="r1068798443" restype="string" datatype="x-haml">
+        <source>You agree to pay all fees or charges to your account in accordance with the fees, charges, and billing terms in effect at the time a fee or charge is due and payable. You authorize HealthTap to immediately invoice your credit card or other payment account provided for all fees and charges due and payable and agree that no additional notice or consent is required. HealthTap's fees are net of any applicable sales tax and if any services or payments for any goods or services are subject to sales tax in any jurisdiction. You will be responsible for payment of such sales tax and any related penalties or interest and will indemnify HealthTap for any liability or expense incurred in connection with such sales taxes (including any use tax and any other tax measured by sales proceeds that HealthTap is permitted to pass to you) and HealthTap may automatically charge and withhold such taxes for services to be delivered within any jurisdictions that it deems is required. Unless otherwise agreed to by HealthTap in writing, all fees paid are non-refundable. Your credit card information and other financial data needed to process your payment are collected and stored by third party payment processors, and we may collect some limited information. The use of your data by any such third party payment processors is subject to their privacy policies. These third parties generally provide us with some limited information (such as a unique token that enables you to make additional purchases using the information they’ve stored, and your card’s type, expiration date, and last four digits). HealthTap reserves the right, without notice, to modify, change, terminate, or suspend service for a subscription plan you are on if, for any reason, payment for such plan is not made or cannot be processed on the due date. This right to modify a subscription plan includes, but is not limited to, the right to change a subscription plan type (for example, from a fixed fee plan without consult co-pays to a lower priced fixed-fee plan with consult co-pays). You may adjust your subscription settings at any time (where applicable, by paying any amounts due).</source>
+        <target state="translated">您同意按照费用或收费，并在费用到期和应付时向您的帐户提取所有费用或收费。您授权HealthTap立即向您的信用卡或其他支付帐户开具发票，提供所有应付的费用，并同意不需要额外通知或同意。HealthTap的费用扣除任何适用的销售税，如果任何服务或任何货物或服务的付款在任何管辖区都需缴纳销售税。您将负责支付此类销售税和任何相关的罚金或利息，并将赔偿HealthTap因与此类销售税相关的任何责任或费用（包括任何使用税和HealthTap允许的销售收入衡量的任何其他税），HealthTap可能会自动收取和扣除这些税款，以便在其认为必要的任何管辖区内提供服务。除非HealthTap以书面形式另行同意，否则所有支付的费用不予退还。如果由于任何原因，该计划的付款没有或不能在到期日处理，HealthTap保留权利，恕不另行通知，而修改，更改，终止或暂停服务您的订购计划。这种修改订阅计划的权利包括但不限于更改订阅计划类型的权利（例如，从没有咨询协议的固定费用计划到具有咨询费用的较低价格的固定费用计划）。您可以随时调整您的订阅设置（如果适用，通过支付任何应付金额）。</target>
+      </trans-unit>
+      <trans-unit id="234" resname="r721255487" restype="string" datatype="x-haml">
+        <source>You will agree to seek emergency help when needed or as recommended by doctors on HealthTap Concierge and you agree continue to consult with your primary care doctor or speicalist as recommended by your primary care doctor or specialist or the doctors on HealthTap Concierge.</source>
+        <target state="translated">您将同意听从HealthTap贵宾台医生的建议何时寻求紧急救助，并且您同意通过与您的普通门诊医生或专家或HealthTap贵宾台医生建议的普通门诊医生或专家继续进行咨询。</target>
+      </trans-unit>
+      <trans-unit id="235" resname="r636048829" restype="string" datatype="x-haml">
+        <source>As a HealthTap Medical Expert, you are required to register with and use your real name, professional contact information, and (if you choose to upload a picture) a real image of you in your Public Profile. You consent to HealthTap’s use on or in connection with the Apps of your name, likeness, photograph, biographical information and other personal information provided by you to HealthTap or publicly available about you.</source>
+        <target state="translated">作为HealthTap医学专家，您需要注册并使用您的真实姓名，职业联系信息，以及（如果您选择上传图片）您公共场景中的真实形象。您同意HealthTap将您的名称，肖像，照片，履历信息和其他您提供给HealthTap或您公开提供的个人信息用于应用程序或与其相关的用途。</target>
+      </trans-unit>
+      <trans-unit id="236" resname="r886034206" restype="string" datatype="x-haml">
+        <source>When sign up for and deliver care through HealthTap Premium Services, you agree to abide by all of the terms of the applications you submit to, and the contractual agreements you enter into with, HealthTap or HealthTap Medical Group, P.C. related to those services (including any representations and warranties and terms governing indemnification and obligations).</source>
+        <target state="translated">当通过HealthTap高级服务注册并提供护理时，您同意遵守您提交的申请的所有条款以及您与HealthTap或HealthTap Medical Group（P.C.）签订的合同协议（包括任何关于报酬和义务的陈述，保证和条款）。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="raterx_results.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="237" resname="r571766609" restype="string" datatype="x-haml">
+        <source>&amp;copy; 2015 HealthTap Inc. Unauthorized commercial use, reproduction, or distribution is prohibited.  To license HealthTap content</source>
+        <target state="translated">&amp;copy; 2015 HealthTap Inc. 禁止未经授权的商业使用，复制或分发。许可HealthTap内容</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="provider_page_h.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="238" resname="r108646318" restype="string" datatype="x-haml">
+        <source>and vetted diagnosis &amp;mdash;</source>
+        <target state="translated">和审查诊断&amp;mdash;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="privacy_statement.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="239" resname="r584884260" restype="string" datatype="x-haml">
+        <source>How HealthTap protects your privacy when using our free service as well as HealthTap Premium Services (including Prime and Concierge).</source>
+        <target state="translated">当您在使用我们的免费服务和HealthTap时，我们是如何保护您的隐私的（包括Prime和贵宾台）。</target>
+      </trans-unit>
+      <trans-unit id="240" resname="r122674808" restype="string" datatype="x-haml">
+        <source>Yes. HealthTap and HealthTap Premium Services use bank-level security and encryption. We meet HIPAA security standards for all interactions subject to HIPAA security regulations. We use a variety of technologies and procedures to help protect the security of your personal information from unauthorized access, use, or disclosure. HealthTap also maintains standard physical and electronic procedural safeguards that limit access to your personal information to our employees (or people working on our behalf and under confidentiality agreements) who, through the course of standard business activities, need to access your personal information. HealthTap is a Business Associate of health care professionals under the federal health care privacy and security law known as HIPAA. Your personal information will be stored in a secure manner. Full access to the Apps is enabled only by usernames and passwords. You are fully and solely responsible for any and all use of the Apps using your username and password. We reserve the right to revoke or deactivate your username and password at any time.</source>
+        <target state="translated">是的。HealthTap和HealthTap贵宾台使用银行级安全和加密。我们满足HIPAA安全标准，适用于符合HIPAA安全规定的所有互动。我们使用各种技术和程序来帮助保护您的个人信息的安全，防止未经授权的访问，使用或公开。HealthTap还维护标准的物理和电子程序保护，限制我们的员工访问您的个人信息（或代表我们和保密协议的人员），他们通过标准的业务活动，需要访问您的个人信息。 HealthTap是根据联邦医疗保健隐私和安全法被称为HIPAA的医疗保健专业人员的业务伙伴。您的个人信息将以安全的方式存储。只有用户名和密码才能启用对应用程序的完全访问权限。您使用您的用户名和密码对应用程序的任何和所有使用负全部和单独责任。我们保留随时撤销或停用您的用户名和密码的权利。</target>
+      </trans-unit>
+      <trans-unit id="241" resname="r799577462" restype="string" datatype="x-haml">
+        <source>Your account and Profile information are secure, encrypted, and password protected.</source>
+        <target state="translated">您的账户和个人简述信息是安全的被加密和密码保护的。</target>
+      </trans-unit>
+      <trans-unit id="242" resname="r2582568" restype="string" datatype="x-haml">
+        <source>We keep your Personally Identifiable Information private by not displaying it or sharing it without your consent.</source>
+        <target state="translated">我们不会在没有您的同意的情况下显示或分享您的个人身份信息，以此来保证这些信息的安全。</target>
+      </trans-unit>
+      <trans-unit id="243" resname="r888182288" restype="string" datatype="x-haml">
+        <source>We do not display this information on HealthTap, except inside of your Profile, which is visible only to you. We keep this information secure by using state of the art encryption and other security measures.</source>
+        <target state="translated">除在您的个人资料之中，我们不会在HealthTap上显示此信息，只有您可以看到此信息。我们通过使用最先进的加密和其他安全措施保持这些信息的安全。</target>
+      </trans-unit>
+      <trans-unit id="244" resname="r460539362" restype="string" datatype="x-haml">
+        <source>On HealthTap Premium Services (including Prime an Concierge) you may ask specific, personal health questions and receive care and prescriptions (as appropriate for Virtual Consults).</source>
+        <target state="translated">在HealthTap高级服务（包括贵宾台服务），您可以询问具体的个人健康问题，并获得医护和处方（适用于在线咨询）。</target>
+      </trans-unit>
+      <trans-unit id="245" resname="r926822342" restype="string" datatype="x-haml">
+        <source>Posting Personally Identifiable Information (such as a real name, phone number, or email address) is not permitted in content that is publicly visible on HealthTap (including in user submitted free questions). Posting such information, about yourself or another person, is a violation of our Terms of Use. Do not include Personally Identifiable Information about you or anyone else in these questions or any other submissions that are publicly visible. HealthTap reserves the right to remove or exclude such content. Personal information may be shared with doctors during Virtual Consults on HealthTap Prime and Concierge.</source>
+        <target state="translated">在HealthTap上公开显示的内容（包括用户提交的免费问题）中，不允许发布个人身份信息（例如真实姓名，电话号码或电子邮件地址）。发布此类信息，关于您自己或他人的信息，是违反我们的使用条款。不要在这些问题或公开显示的任何其他提交中包含关于您或任何其他人的个人身份信息。HealthTap保留删除或排除此类内容的权利。个人信息可以在HealthTap Prime和贵宾台上的在线咨询期间与医生共享。</target>
+      </trans-unit>
+      <trans-unit id="246" resname="r851048783" restype="string" datatype="x-haml">
+        <source>Yes. Your email address and phone number are not displayed and are never visible to other members or doctors.</source>
+        <target state="translated">是的。您的电子邮件地址和电话号码不会显示并且永远不会可见于其他会员或医生。</target>
+      </trans-unit>
+      <trans-unit id="247" resname="r1049485744" restype="string" datatype="x-haml">
+        <source>To receive the full benefits of HealthTap simply create an account. During registration, we ask for some basic information, such as your name, email address, and date of birth. No additional data other than mandatory registration information is required to use HealthTap. Additional information, including payment information, is required to use HealthTap Premium Services.</source>
+        <target state="translated">只需创建一个帐户，即可享受HealthTap的全部福利。在注册过程中，我们会要求您提供一些基本信息，例如您的姓名，电子邮件地址和出生日期。使用HealthTap不需要强制注册信息之外的其他数据。使用HealthTap高级服务需要其他信息（包括付款信息）。</target>
+      </trans-unit>
+      <trans-unit id="248" resname="r550815457" restype="string" datatype="x-haml">
+        <source>Health conditions and appropriate actions often depend on your age group, geography, and gender. These data help us provide you with a personalized online health experience. Your personally identifiable information is not visible to other members or doctors on HealthTap. These data are visible to doctors you connect with using HealthTap Premium Services (including Prime and Concierge).</source>
+        <target state="translated">健康状况和合适的行动通常取决于您的年龄群组，地理位置和性别。这些数据帮助我们为您提供专属的在线健康体验。您的个人身份信息在HealthTap上不会显示给其他会员或医生。这些数据对使用HealthTap高级服务（包括Prime和贵宾台）连接的医生可见。</target>
+      </trans-unit>
+      <trans-unit id="249" resname="r189705506" restype="string" datatype="x-haml">
+        <source>The Consult Summaries of your consults become part of your Profile. When you initiate Virtual Consults on HealthTap, the doctor seeing you will be able to view all of the Consult Summaries of your prior consults on HealthTap.</source>
+        <target state="translated">咨询的咨询总结成为您的资料的一部分。当您在HealthTap上开始在线咨询时，为您诊疗的医生将能够查看您之前在HealthTap上的咨询的所有咨询总结。</target>
+      </trans-unit>
+      <trans-unit id="250" resname="r260671456" restype="string" datatype="x-haml">
+        <source>Questions, answers, and interactions with doctors on HealthTap Prime and Concierge are private, secure, and are not publicly visible. Please note: the doctor(s) you interact with using HealthTap Premium Services will be able to see your real name and the health information in your Profile.</source>
+        <target state="translated">HealthTap Prime和贵宾台上的医生的问题，回答和互动是私人的，安全的，不公开可见的。请注意：使用HealthTap高级服务进行互动的医生将能够在您的个人资料中看到您的真实姓名和健康信息。</target>
+      </trans-unit>
+      <trans-unit id="251" resname="r744456946" restype="string" datatype="x-haml">
+        <source>Yes. Unlike publicly visible questions and answers on HealthTap, you may provide Personally Identifiable Information in your interactions with doctors on HealthTap Prime and Concierge. HealthTap Prime and Concierge interactions are not publicly visible. These interactions are confidential, but not anonymous.</source>
+        <target state="translated">是的。与HealthTap上公开可见的问题和回答不同，您可以在与HealthTap Prime和贵宾台上的医生的互动中提供个人身份信息。HealthTap Prime和贵宾台互动不公开显示。这些互动是保密的，但不是匿名的。</target>
+      </trans-unit>
+      <trans-unit id="252" resname="r1013404366" restype="string" datatype="x-haml">
+        <source>HealthTap does not share your Personally Identifiable Information (for example, your real name or email address) with anyone without your consent. By using HealthTap Premium Services (including Prime and Concierge), you consent to sharing your name and the health information in your Profile with the doctors you interact with when using these services.</source>
+        <target state="translated">HealthTap不会与未经您同意的任何人分享您的个人身份信息（例如，您的真实姓名或电子邮件地址）。通过使用HealthTap高级服务（包括Prime和贵宾台），您同意在使用这些服务时与您互动的医生分享您的个人资料中的姓名和健康信息。</target>
+      </trans-unit>
+      <trans-unit id="253" resname="r161122476" restype="string" datatype="x-haml">
+        <source>You may reach us by contacting our support team via email or you may write to us at our most current address.</source>
+        <target state="translated">您可以通过电子邮件联系我们的支持团队，或者通过我们最新的地址写信给我们。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="privacy_sharing.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="254" resname="r304108278" restype="string" datatype="x-haml">
+        <source>Our company culture respects the values of secure sharing.</source>
+        <target state="translated">我们的公司文化尊重安全分享的价值观。</target>
+      </trans-unit>
+      <trans-unit id="255" resname="r530274083" restype="string" datatype="x-haml">
+        <source>We even provided additional suggestions for sharing securely and safeguarding your privacy when participating on HealthTap.</source>
+        <target state="translated">我们甚至提供了额外的建议，当您参与时，在HealthTap上安全地分享和保护您的隐私。</target>
+      </trans-unit>
+      <trans-unit id="256" resname="r379805175" restype="string" datatype="x-haml">
+        <source>On HealthTap Prime and Concierge, you can connect with a doctor by video, directly from your computer, tablet, or smartphone. You can ask personal health questions directly to a doctor, and receive care and prescriptions as appropriate for virtual consults. While interactions on HealthTap Prime and HealthTap Concierge are not anonymous (your name and health information are shared with the doctors you consult with), they are secure and confidential.</source>
+        <target state="translated">在HealthTap Prime和贵宾台上，您可以直接从计算机，平板电脑或智能手机上通过视频与医生联系。您可以直接向医生询问个人健康问题，并通过在线咨询获得合适的医护和处方。虽然HealthTap Prime和HealthTap贵宾台上的互动不是匿名的（您的姓名和健康信息与您咨询的医生分享），但它们是安全和保密的。</target>
+      </trans-unit>
+      <trans-unit id="257" resname="r713009346" restype="string" datatype="x-haml">
+        <source>We take your privacy and security very seriously.</source>
+        <target state="translated">我们非常重视您的隐私和安全。</target>
+      </trans-unit>
+      <trans-unit id="258" resname="r26392024" restype="string" datatype="x-haml">
+        <source>It contains answers to common questions about how our service works and how information provided to us is used and protected.</source>
+        <target state="translated">它包含关于我们的服务如何工作以及如何使用和保护提供给我们的信息的常见问题的回答。</target>
+      </trans-unit>
+      <trans-unit id="259" resname="r697816317" restype="string" datatype="x-haml">
+        <source>Our experience is designed to keep your information anonymous and secure.</source>
+        <target state="translated">我们的经验旨在保持您的信息匿名和安全。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="guest_expert_concierge.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="260" resname="r508629567" restype="string" datatype="x-haml">
+        <source>Practice medicine on&amp;nbsp;</source>
+        <target state="translated">医学诊疗&amp;nbsp;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="apple_watch.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="261" resname="r644783799" restype="string" datatype="x-haml">
+        <source>Voice your health questions&amp;mdash;</source>
+        <target state="translated">提出您的健康问题s&amp;mdash;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="prime_bundle_moms.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="262" resname="r653898399" restype="string" datatype="x-haml">
+        <source>Give mom a helping hand&amp;mdash;access to top doctors 24/7 at a</source>
+        <target state="translated">给妈妈一个助手＆mdash;24/7全天候访问顶级医生在</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="payment.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="263" resname="r721590602" restype="string" datatype="x-haml">
+        <source>&lt;script src="</source>
+        <target state="translated">&lt;script src="</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_terms.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="264" resname="r45551544" restype="string" datatype="x-haml">
+        <source>strong&gt;C.</source>
+        <target state="translated">strong&gt;C.</target>
+      </trans-unit>
+      <trans-unit id="265" resname="r883300644" restype="string" datatype="x-haml">
+        <source>strong&gt;1.     Definitions.</source>
+        <target state="translated">strong&gt;1.     定义。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_expert_sidebar.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="266" resname="r36862091" restype="string" datatype="x-haml">
+        <source>Support &amp; Feedback</source>
+        <target state="translated">支持和反馈</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="welcome_email.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="267" resname="r773504987" restype="string" datatype="x-haml">
+        <source>&amp;bull;</source>
+        <target state="translated">&amp;bull;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_expert_provider_training_7.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="268" resname="r46724211" restype="string" datatype="x-haml">
+        <source>Did you miss our last email? We’ve noticed that you haven’t completed your tutorial for SmartHealth powered by HealthTap yet.</source>
+        <target state="translated">您错过了我们上一封邮件吗？我们注意到您还没有完成由HealthTap提供的SmartHealth教程。</target>
+      </trans-unit>
+      <trans-unit id="269" resname="r992067617" restype="string" datatype="x-haml">
+        <source>This is your second reminder.</source>
+        <target state="translated">这是您的第二次提醒。</target>
+      </trans-unit>
+      <trans-unit id="270" resname="r1013198975" restype="string" datatype="x-haml">
+        <source>Remember, you may need to complete the tutorial before conducting any live consultations. The tutorial covers important aspects of online  consulting etiquette, and tests your PC for video consulting capability.</source>
+        <target state="translated">记住，您需要在进行任何实时咨询之前完成教程。本教程涵盖在线咨询礼仪的重要方面，并测试您个人电脑的视频咨询能力。</target>
+      </trans-unit>
+      <trans-unit id="271" resname="r249059614" restype="string" datatype="x-haml">
+        <source>The tutorial takes 10-15 minutes, and needs to be completed on a computer (not an iPhone or iPad).</source>
+        <target state="translated">教程需要10-15分钟，需要在计算机上完成（不是iPhone或iPad）。</target>
+      </trans-unit>
+      <trans-unit id="272" resname="r645290298" restype="string" datatype="x-haml">
+        <source>Please complete the tutorial at your earliest convenience, and if there is any issue that is preventing you from doing this, please let us know</source>
+        <target state="translated">请尽早完成本教程，如果有任何问题影响您这样做，请告诉我们</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_expert_provider_training_3.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="273" resname="r860757861" restype="string" datatype="x-haml">
+        <source>We’ve noticed that you haven’t completed your tutorial for SmartHealth powered by HealthTap yet.</source>
+        <target state="translated">我们注意到您还没有完成由HealthTap提供的SmartHealth教程。</target>
+      </trans-unit>
+      <trans-unit id="275" resname="r181694603" restype="string" datatype="x-haml">
+        <source>If you’d prefer to do it later, you can access the tutorial any time by following these steps:</source>
+        <target state="translated">如果您希望以后进行，可以按照以下步骤随时访问教程：</target>
+      </trans-unit>
+      <trans-unit id="276" resname="r980700977" restype="string" datatype="x-haml">
+        <source>Once logged in, click the tutorial link in the top right of your screen.</source>
+        <target state="translated">登录后，点击您屏幕右上角的教程链接：</target>
+      </trans-unit>
+      <trans-unit id="277" resname="r722112930" restype="string" datatype="x-haml">
+        <source>Follow the instructions until the tutorial is finished.</source>
+        <target state="translated">按照说明操作，直到教程完成。</target>
+      </trans-unit>
+      <trans-unit id="278" resname="r411945560" restype="string" datatype="x-haml">
+        <source>Please complete the tutorial at your earliest convenience, and if there is any issue that is preventing you from doing this, please let us know.</source>
+        <target state="translated">请尽早完成本教程，如果有任何问题影响您这样做，请告诉我们。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_expert_provider_training_14.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="274" resname="r618576137" restype="string" datatype="x-haml">
+        <source>Remember, you need to complete the tutorial before conducting any live consultations. The tutorial covers important aspects of online  consulting etiquette, and tests your PC for video consulting capability.</source>
+        <target state="translated">记住，您需要在进行任何实时咨询之前完成教程。本教程涵盖在线咨询礼仪的重要方面，并测试您个人电脑的视频咨询能力。</target>
+      </trans-unit>
+      <trans-unit id="290" resname="r742717928" restype="string" datatype="x-haml">
+        <source>This is your third reminder.</source>
+        <target state="translated">这是您的第三次提醒。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_expert_provider_training_25.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="279" resname="r562191348" restype="string" datatype="x-haml">
+        <source>This is your final reminder about completing your HealthTap tutorial to get started with virtual care.</source>
+        <target state="translated">这是您最后一次提醒您完成HealthTap教程以开始使用在线医护。</target>
+      </trans-unit>
+      <trans-unit id="280" resname="r334940973" restype="string" datatype="x-haml">
+        <source>Do you have questions or concerns? Do you have a technical problem, or is something else standing in your way? Please let us know.</source>
+        <target state="translated">您有问题或疑虑吗？您有技术问题，还是有其他的事情影响您的方法？请告诉我们。
+</target>
+      </trans-unit>
+      <trans-unit id="281" resname="r591431538" restype="string" datatype="x-haml">
+        <source>Remember, you need to complete the tutorial before conducting any live consultations. The tutorial covers important aspects of online consulting etiquette, and tests your PC for video consulting capability. The tutorial takes 10-15 minutes, and needs to be completed on a computer (not an iPhone or iPad).</source>
+        <target state="translated">记住，您需要在进行任何实时咨询之前完成教程。本教程涵盖在线咨询礼仪的重要方面，并测试您个人电脑的视频咨询能力。本教程需要10-15分钟，需要在计算机（而不是iPhone或iPad）上完成。</target>
+      </trans-unit>
+      <trans-unit id="282" resname="r718431207" restype="string" datatype="x-haml">
+        <source>The tutorial takes 10-15 minutes, and needs to be completed on a computer (not an iPhone or iPad Pro).</source>
+        <target state="translated">教程需要10-15分钟，需要在计算机上完成（不是iPhone或iPad Pro）。</target>
+      </trans-unit>
+      <trans-unit id="283" resname="r768091807" restype="string" datatype="x-haml">
+        <source>You can also access the tutorial any time by following these steps:</source>
+        <target state="translated">您也可以随时通过以下步骤访问教程：</target>
+      </trans-unit>
+      <trans-unit id="284" resname="r321275616" restype="string" datatype="x-haml">
+        <source>Log in via your browser</source>
+        <target state="translated">通过您的浏览器登录</target>
+      </trans-unit>
+      <trans-unit id="285" resname="r333503320" restype="string" datatype="x-haml">
+        <source>Once logged in, click the Tutorial link in the top right:</source>
+        <target state="translated">登录后，点击右上角的教程链接：</target>
+      </trans-unit>
+      <trans-unit id="286" resname="r8024585" restype="string" datatype="x-haml">
+        <source>Follow the instructions until the tutorial is finished</source>
+        <target state="translated">按照说明操作，直到教程完成</target>
+      </trans-unit>
+      <trans-unit id="287" resname="r993822859" restype="string" datatype="x-haml">
+        <source>Please complete this tutorial at your earliest convenience, and if there is any issue that is preventing you from doing this, please let us know.</source>
+        <target state="translated">请尽早完成本教程，如果有任何问题影响您这样做，请告诉我们。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_expert_provider_training_20.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="288" resname="r653178289" restype="string" datatype="x-haml">
+        <source>This is your fourth reminder.</source>
+        <target state="translated">这是您的第四次提醒。</target>
+      </trans-unit>
+      <trans-unit id="289" resname="r785726925" restype="string" datatype="x-haml">
+        <source>The tutorial must be completed on a computer (not an iPhone or iPad) before conducting any live consultations. The tutorial covers important aspects of online consulting etiquette, and tests your PC for video consulting capability</source>
+        <target state="translated">在进行任何实时咨询之前，教程必须在计算机（而不是iPhone或iPad）上完成。本教程涵盖在线咨询礼仪的重要方面，并测试您个人电脑的视频咨询能力</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_onboarding_askdoctors.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="291" resname="r828796572" restype="string" datatype="x-haml">
+        <source>Please take a minute to confirm your location, so we can connect you within minutes to personalized, high-quality health information when you need it most.</source>
+        <target state="translated">请花一点时间确认您的位置，以便在您最需要它时，我们可以在几分钟内连接您的专属的，高质量的健康信息。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="concierge_launch.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="292" resname="r588954154" restype="string" datatype="x-haml">
+        <source>Sometimes it’s not possible to visit your doctor in person &amp;mdash; especially when only</source>
+        <target state="translated">有时不可能亲自去医生诊所&amp;mdash; 特别是当只有</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_sign_up.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="293" resname="r136740460" restype="string" datatype="x-haml">
+        <source>Please enter GP Practice</source>
+        <target state="translated">请输入全科医生的诊疗</target>
+      </trans-unit>
+      <trans-unit id="294" resname="r764549673" restype="string" datatype="x-haml">
+        <source>Please enter GP Name</source>
+        <target state="translated">请输入全科医生的姓名</target>
+      </trans-unit>
+      <trans-unit id="295" resname="r425396141" restype="string" datatype="x-haml">
+        <source>This field is required</source>
+        <target state="translated">这个地方是必填的</target>
+      </trans-unit>
+      <trans-unit id="296" resname="r481227845" restype="string" datatype="x-haml">
+        <source>--select--</source>
+        <target state="translated">--选择--</target>
+      </trans-unit>
+      <trans-unit id="297" resname="r907746073" restype="string" datatype="x-haml">
+        <source>I see the first available doctor or I am not sure who is my GP</source>
+        <target state="translated">我想见最先有空的医生或我不知道谁是我的全科医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_step_one.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="298" resname="r129453591" restype="string" datatype="x-haml">
+        <source>There are one or more errors with the information above, please scroll up and review the fields highlighted in red</source>
+        <target state="translated">上述信息存在一个或多个错误，请向上滚动并查看以红色突出显示的字段</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_contracts.html.haml" source-language="en-US" target-language="zh-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="299" resname="r463285564" restype="string" datatype="x-haml">
+        <source>California &amp; Others</source>
+        <target state="translated">加利福尼亚州和其他</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

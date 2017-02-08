@@ -5618,7 +5618,7 @@
       </trans-unit>
       <trans-unit id="3054" resname="r151255723" restype="string" datatype="x-haml">
         <source>Change</source>
-        <target state="translated">改变</target>
+        <target state="translated">更改</target>
       </trans-unit>
       <trans-unit id="3055" resname="r481239240" restype="string" datatype="x-haml">
         <source>Done</source>

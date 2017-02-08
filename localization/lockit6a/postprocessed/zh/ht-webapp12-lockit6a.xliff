@@ -2106,7 +2106,7 @@
       </trans-unit>
       <trans-unit id="3393" resname="r751296443" restype="string" datatype="ruby">
         <source>Improving your Experience</source>
-        <target>丰富您的经验</target>
+        <target>提高您的用户体验</target>
       </trans-unit>
       <trans-unit id="3394" resname="r413594303" restype="string" datatype="ruby">
         <source>Tips on making the most of HealthTap</source>
@@ -12348,7 +12348,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="8159" resname="Weekly" restype="string" datatype="html">
         <source>Weekly</source>
-        <target>周</target>
+        <target>每周</target>
       </trans-unit>
       <trans-unit id="8160" resname="The next date this newsletter will be sent is:" restype="string" datatype="html">
         <source>The next date this newsletter will be sent is:</source>
@@ -12356,7 +12356,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="8162" resname="Monthly" restype="string" datatype="html">
         <source>Monthly</source>
-        <target>月</target>
+        <target>每月</target>
       </trans-unit>
       <trans-unit id="8163" resname="Don&apos;t Send" restype="string" datatype="html">
         <source>Don't Send</source>
@@ -33640,7 +33640,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
     <body>
       <trans-unit id="7394" resname="Please provide a contact number" restype="string" datatype="html">
         <source>Please provide a contact number</source>
-        <target>请提供您的联系方式。</target>
+        <target>请提供您的联系方式</target>
       </trans-unit>
     </body>
   </file>
@@ -36864,7 +36864,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum. Nam novum doming hab
       </trans-unit>
       <trans-unit id="8425" resname="Nevermind" restype="string" datatype="html">
         <source>Nevermind</source>
-        <target>没关系</target>
+        <target>算了, 暂不</target>
       </trans-unit>
     </body>
   </file>

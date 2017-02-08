@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="src/com/healthtap/userhtexpress/model/PhoneCountryCodeModel.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="r1044062367" restype="string" datatype="java">
+        <source>{name} ( +{country_code})</source><seg-source><mrk mtype="seg" mid="1">{name} ( +{country_code})</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="1">{name} ( +{country_code})</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2" resname="deactivate_user_msg" restype="string" datatype="x-android-resource">
+        <source>This account has been deactivated. &lt;u&gt;Contact us&lt;/u&gt; to re-activate it.</source><seg-source><mrk mtype="seg" mid="2">This account has been deactivated. &lt;u&gt;Contact us&lt;/u&gt; to re-activate it.</mrk></seg-source>
+        <target state="needs-translation"><mrk mtype="seg" mid="2">此帐户已停用。&lt;u&gt;联系我们&lt;/u&gt;以重新激活。</mrk></target>
+      </trans-unit>
+      <trans-unit id="3" resname="period" restype="string" datatype="x-android-resource">
+        <source>.</source><seg-source><mrk mtype="seg" mid="3">.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="3">.</mrk></target>
+      </trans-unit>
+      <trans-unit id="4" resname="location_search_unavailable" restype="string" datatype="x-android-resource">
+        <source>Sorry, changing your location is currently not available.</source><seg-source><mrk mtype="seg" mid="4">Sorry, changing your location is currently not available.</mrk></seg-source>
+        <target state="needs-translation"><mrk mtype="seg" mid="4">抱歉，目前无法更改您的位置。</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

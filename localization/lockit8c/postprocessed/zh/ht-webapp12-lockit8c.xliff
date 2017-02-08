@@ -189,7 +189,7 @@
     <body>
       <trans-unit id="177" resname="r358657435" restype="string" datatype="ruby">
         <source>Share a detailed description of your symptoms, concerns, and how you'd like the doctor to help you. Attach images and files as necessary.</source>
-        <target state="translated">分享您的症状，担心以及您希望医生如何帮助您的详细说明。必须附加照片或文件</target>
+        <target state="translated">分享您的症状，担心以及您希望医生如何帮助您的详细说明。最好附加照片或文件</target>
       </trans-unit>
       <trans-unit id="2237" resname="r143437710" restype="string" datatype="ruby">
         <source>Your zip code</source>
@@ -6313,7 +6313,7 @@
       </trans-unit>
       <trans-unit id="979" resname="r104217239" restype="string" datatype="ruby">
         <source>In March 2013, HealthTap was featured on the TODAY Show as one of the 4 best health apps among the 40,000 health applications available for consumers. Watch the video &lt;a href='http://www.today.com/video/today/51273692/#51273692' target='_blank'&gt;here&lt;/a&gt;!</source>
-        <target state="translated">2013年3月，HealthTap在今日秀上作为消费者提供的4万个健康应用程序中的4个最好的健康应用程序之一。观看视频&lt;a href=’http://www.today.com/video/today/51273692/#51273692’ target=’_blank’&gt;这里&lt;/a&gt;!</target>
+        <target state="translated">2013年3月，HealthTap在今日秀上作为消费者提供的4万个健康应用程序中的4个最好的健康应用程序之一。观看视频&lt;a href='http://www.today.com/video/today/51273692/#51273692' target='_blank'&gt;这里&lt;/a&gt;!</target>
       </trans-unit>
       <trans-unit id="980" resname="r94673386" restype="string" datatype="ruby">
         <source>This month HealthTap unveiled its new initiative called “Curbside Content.” The program allows a HealthTap physician to use the platform’s network to broadcast a question to other physicians.</source>
@@ -6353,7 +6353,7 @@
       </trans-unit>
       <trans-unit id="989" resname="r291505764" restype="string" datatype="ruby">
         <source>HealthTap continued to be featured in national press, with articles in Inc. Magazine (November 2013) (&lt;a href='http://www.wired.com/business/2013/09/health-startups-target-the-massive-money-behind-real-pain/' target='_blank'&gt;here&lt;/a&gt;) and Forbes (November 2013) (&lt;a href='http://www.forbes.com/sites/brucerogers/2013/11/20/ron-gutmans-healthtap-seeks-to-be-the-first-global-mobile-health-brand/' target='_blank'&gt;here&lt;/a&gt;), among many others.</source>
-        <target state="translated">HealthTap继续在国家新闻界发表，其中包括华纳出版社（2013年11月） (&lt;a href=’http://www.wired.com/business/2013/09/health-startups-target-the-massive-money-behind-real-pain/’ target=’_blank’&gt;here&lt;/a&gt;) 和福布斯（2013年11月） (&lt;a href=’http://www.forbes.com/sites/brucerogers/2013/11/20/ron-gutmans-healthtap-seeks-to-be-the-first-global-mobile-health-brand/’ target=’_blank’&gt;here&lt;/a&gt;), 许多其他。</target>
+        <target state="translated">HealthTap继续在国家新闻界发表，其中包括华纳出版社（2013年11月） (&lt;a href='http://www.wired.com/business/2013/09/health-startups-target-the-massive-money-behind-real-pain/' target='_blank'&gt;here&lt;/a&gt;) 和福布斯（2013年11月） (&lt;a href='http://www.forbes.com/sites/brucerogers/2013/11/20/ron-gutmans-healthtap-seeks-to-be-the-first-global-mobile-health-brand/' target='_blank'&gt;here&lt;/a&gt;), 许多其他。</target>
       </trans-unit>
       <trans-unit id="990" resname="r370840746" restype="string" datatype="ruby">
         <source>Jul 10</source>
@@ -10464,7 +10464,7 @@
     <body>
       <trans-unit id="2060" resname="r269501934" restype="string" datatype="ruby">
         <source>Our %{n} top doctors are here for you,&lt;br&gt; anytime, anywhere</source>
-        <target state="translated">我们的%{n}顶级医生在这里&lt;br&gt;随时随地为您服务</target>
+        <target state="translated">我们的%{n}名顶级医生在这里&lt;br&gt;随时随地为您服务</target>
       </trans-unit>
       <trans-unit id="2061" resname="r363561295" restype="string" datatype="ruby">
         <source>You get doctor advice, actionable plans,&lt;br&gt; prescriptions, referrals, and even lab tests</source>
@@ -10492,7 +10492,7 @@
       </trans-unit>
       <trans-unit id="2067" resname="r548219023" restype="string" datatype="ruby">
         <source>You're never alone&lt;br&gt; Just &lt;i&gt; Tap-in &lt;/i&gt;</source>
-        <target state="translated">您永远不是孤独的&lt;br&gt;只需&lt;i&gt;轻触&lt;/i&gt;</target>
+        <target state="translated">你永远能获得帮助&lt;br&gt;只需&lt;i&gt;轻轻一点&lt;/i&gt;</target>
       </trans-unit>
       <trans-unit id="2068" resname="r931665539" restype="string" datatype="ruby">
         <source>and a healthier, happier world&lt;br&gt;starts with you</source>
@@ -11697,7 +11697,7 @@
     <body>
       <trans-unit id="2257" resname="r286644437" restype="string" datatype="ruby">
         <source>Join today for &lt;b&gt;free&lt;/b&gt; to feel good and improve your health!</source>
-        <target state="translated">立刻&lt;b&gt;免费&lt;/b&gt;加入，Feel Good并提高您的健康！</target>
+        <target state="translated">立刻&lt;b&gt;免费&lt;/b&gt;加入，Feel Good并改善您的健康！</target>
       </trans-unit>
       <trans-unit id="2258" resname="r598895172" restype="string" datatype="ruby">
         <source>Create a free, private account</source>
@@ -16391,9 +16391,9 @@
   </file>
   <file original="app/views/general_mailer/member_consult_premature_end.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="3146" resname="r828215130" restype="string" datatype="ruby">
-        <source>It seems you started a Virtual Consult%{name} but it ended after a very brief amount of time. Usually this means that you got your answer right away, but if you experienced a technical issue or if there were any other reasons that left you unsatisfied, we’d love to hear what happened so we can fix it. Our goal is one hundred percent patient satisfaction, and we want to be sure you receive the care you need.</source>
-        <target state="translated">您似乎开始了一个在线咨询%{name}，但它在很短的时间内就结束了。通常这意味着您立即得到了您的回答，但如果您遇到技术问题，或者有任何其他让您不满意的原因，我们很乐意倾听发生了什么，这样我们可以解决它。我们的目标是百分之百的患者满意度，我们希望确保您得到您需要的医护。</target>
+      <trans-unit id="3146" resname="r420314748" restype="string" datatype="ruby">
+        <source>It seems you started a Virtual Consult with %{name} but it ended after a very brief amount of time. Usually this means that you got your answer right away, but if you experienced a technical issue or if there were any other reasons that left you unsatisfied, we’d love to hear what happened so we can fix it. Our goal is one hundred percent patient satisfaction, and we want to be sure you receive the care you need.</source>
+        <target state="translated">您似乎同%{name}开始了一个在线咨询，但它在很短的时间内就结束了。通常这意味着您立即得到了您的回答，但如果您遇到技术问题，或者有任何其他让您不满意的原因，我们很乐意倾听发生了什么，这样我们可以解决它。我们的目标是百分之百的患者满意度，我们希望确保您得到您需要的医护。</target>
       </trans-unit>
       <trans-unit id="3147" resname="r577720221" restype="string" datatype="ruby">
         <source>Please reply to this email and let us know about your experience. Your feedback is immensely helpful so we can improve the service for you and your loved ones in the future.</source>
@@ -23155,19 +23155,19 @@
       </trans-unit>
       <trans-unit id="4490" resname="r776680027" restype="string" datatype="ruby">
         <source>Weekly</source>
-        <target state="translated">周</target>
+        <target state="translated">每周</target>
       </trans-unit>
       <trans-unit id="4491" resname="r746638809" restype="string" datatype="ruby">
         <source>Monthly</source>
-        <target state="translated">月</target>
+        <target state="translated">每月</target>
       </trans-unit>
       <trans-unit id="4492" resname="r892894860" restype="string" datatype="ruby">
         <source>Hourly</source>
-        <target state="translated">小时</target>
+        <target state="translated">每小时</target>
       </trans-unit>
       <trans-unit id="4493" resname="r735891223" restype="string" datatype="ruby">
         <source>Yearly</source>
-        <target state="translated">年</target>
+        <target state="translated">每年</target>
       </trans-unit>
       <trans-unit id="4494" resname="r1022379177" restype="string" datatype="ruby">
         <source>once</source>
@@ -23879,7 +23879,7 @@
       </trans-unit>
       <trans-unit id="4669" resname="r751296443" restype="string" datatype="ruby">
         <source>Improving your Experience</source>
-        <target state="translated">丰富您的经验</target>
+        <target state="translated">提高您的用户体验</target>
       </trans-unit>
       <trans-unit id="4670" resname="r413594303" restype="string" datatype="ruby">
         <source>Tips on making the most of HealthTap</source>
@@ -24391,7 +24391,7 @@
       </trans-unit>
       <trans-unit id="4795" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
-        <target state="translated">不是性活跃</target>
+        <target state="translated">非性活跃</target>
       </trans-unit>
       <trans-unit id="4796" resname="r699411433" restype="string" datatype="ruby">
         <source>Men</source>
@@ -24403,7 +24403,7 @@
       </trans-unit>
       <trans-unit id="4798" resname="r118374496" restype="string" datatype="ruby">
         <source>Both</source>
-        <target state="translated">都</target>
+        <target state="translated">两者</target>
       </trans-unit>
       <trans-unit id="4799" resname="r276834703" restype="string" datatype="ruby">
         <source>Marijuana</source>
@@ -25282,7 +25282,7 @@
       </trans-unit>
       <trans-unit id="5005" resname="r597944566" restype="string" datatype="ruby">
         <source>Doctor Mom</source>
-        <target state="translated">Doctor Mom</target>
+        <target state="translated">医生妈妈</target>
       </trans-unit>
       <trans-unit id="5006" resname="r87112296" restype="string" datatype="ruby">
         <source>HealthTap Founding Doctor</source>
@@ -26262,7 +26262,7 @@
       </trans-unit>
       <trans-unit id="6091" resname="r13875026" restype="string" datatype="ruby">
         <source>HealthTap's angels include some of the best and brightest company builders in Silicon Valley and beyond. Their backing of our shared vision enables us to create the &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; you see today. &lt;a href='http://techcrunch.epuls.net/2011/03/23/healthtap-raises-2-35-million-to-help-people-manage-their-health/' target='_blank' rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target state="translated">HealthTap的天使投资者包括一些在硅谷和其他地区最好和最聪明的公司建设者。他们支持我们的共同愿景，使我们能够创建您今天看到的&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;。&lt;a href=’http://techcrunch.epuls.net/2011/03/23/healthtap-raises-2-35-million-to-help-people-manage-their-health/’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target state="translated">HealthTap的天使投资者包括一些在硅谷和其他地区最好和最聪明的公司建设者。他们支持我们的共同愿景，使我们能够创建您今天看到的&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;。&lt;a href='http://techcrunch.epuls.net/2011/03/23/healthtap-raises-2-35-million-to-help-people-manage-their-health/' target='_blank' rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6092" resname="r263568149" restype="string" datatype="ruby">
         <source>The first Interactive Health Symposium</source>
@@ -26386,7 +26386,7 @@
       </trans-unit>
       <trans-unit id="6122" resname="r254090643" restype="string" datatype="ruby">
         <source>It's not just for individual physicians anymore! Group practices, hospitals, and other health organizations join HealthTap. Now, these groups can maintain a presence on HealthTap and connect with individual physicians. Five hundred physicians now participate in groups.  &lt;a href='http://techcrunch.com/2011/12/06/eric-schmidt-mayfield-fund-put-11-5m-in-online-medical-community-healthtap/' target='_blank' rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target state="translated">这不再只是为个别医师！群组诊疗、医院和其他卫生组织加入HealthTap。现在，这些群组可以在HealthTap上保持存在并与个别医生联系。500名医师现在参加群组。&lt;a href=’http://techcrunch.com/2011/12/06/eric-schmidt-mayfield-fund-put-11-5m-in-online-medical-community-healthtap/’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target state="translated">这不再只是为个别医师！群组诊疗、医院和其他卫生组织加入HealthTap。现在，这些群组可以在HealthTap上保持存在并与个别医生联系。500名医师现在参加群组。&lt;a href='http://techcrunch.com/2011/12/06/eric-schmidt-mayfield-fund-put-11-5m-in-online-medical-community-healthtap/' target='_blank' rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6123" resname="r108777340" restype="string" datatype="ruby">
         <source>Dec 2011</source>
@@ -26510,7 +26510,7 @@
       </trans-unit>
       <trans-unit id="6153" resname="r3477517" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;’s first acquisition, health Q&amp;A and directory service Avvo Health, expanded &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;’s Medical Expert Network to more than 40,000 doctors in 128 specialties, and broadened local coverage across all 50 states. At the same time, &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; announced the expansion of its directory coverage to include 1.2 million U.S.-licensed doctors.  &lt;a href='http://techcrunch.com/2012/11/29/healthtap-buys-avvos-health-business-looks-to-become-the-go-to-resource-for-medical-advice-info/' rel=nofollow target='_blank' &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target state="translated">&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;首次收购，健康问答和目录服务Avvo Health将&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;的医学专家网络扩展到了超过40,000名医生，共有128个专科，并扩展了所有50个州的本地覆盖面。与此同时，&lt;span class =’ht-name’&gt; HealthTap &lt;/span&gt;宣布扩大其目录覆盖范围，包括120万拥有美国执业执照的医生。&lt;a href=’http://techcrunch.com/2012/11/29/healthtap-buys-avvos-health-business-looks-to-become-the-go-to-resource-for-medical-advice-info/’ rel=nofollow target=’_blank’ &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target state="translated">&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;首次收购，健康问答和目录服务Avvo Health将&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;的医学专家网络扩展到了超过40,000名医生，共有128个专科，并扩展了所有50个州的本地覆盖面。与此同时，&lt;span class ='ht-name'&gt; HealthTap &lt;/span&gt;宣布扩大其目录覆盖范围，包括120万拥有美国执业执照的医生。&lt;a href='http://techcrunch.com/2012/11/29/healthtap-buys-avvos-health-business-looks-to-become-the-go-to-resource-for-medical-advice-info/' rel=nofollow target='_blank' &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6154" resname="r240429377" restype="string" datatype="ruby">
         <source>Disrupting healthcare for the better</source>
@@ -26542,7 +26542,7 @@
       </trans-unit>
       <trans-unit id="6161" resname="r507957909" restype="string" datatype="ruby">
         <source>CNN highlighted &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; as one of the very best apps to help you keep your New Year's health resolutions. The video feature aired on CNN during prime time, and was simulcast on 150 stations across the country.  &lt;a href='//www.youtube.com/embed/Ho6DbWCVLYo' videoID='Ho6DbWCVLYo' class='play-video' target='_blank' rel=nofollow &gt;Watch video&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target state="translated">CNN强调&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;作为最好的应用程序之一，以帮助您保持您的新年的健康决议。在黄金时段，CNN播出的视频功能，并在全国150个电台同时播出。&lt;a href=’//www.youtube.com/embed/Ho6DbWCVLYo’ videoID=’Ho6DbWCVLYo’ class=’play-video’ target=’_blank’ rel=nofollow &gt;观看视频&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target state="translated">CNN强调&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;作为最好的应用程序之一，以帮助您保持您的新年的健康决议。在黄金时段，CNN播出的视频功能，并在全国150个电台同时播出。&lt;a href='//www.youtube.com/embed/Ho6DbWCVLYo' videoID='Ho6DbWCVLYo' class='play-video' target='_blank' rel=nofollow &gt;观看视频&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6162" resname="r449414623" restype="string" datatype="ruby">
         <source>Winter retreat  envisions &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;’s next generation</source>
@@ -26590,7 +26590,7 @@
       </trans-unit>
       <trans-unit id="6173" resname="r668849546" restype="string" datatype="ruby">
         <source>In Mar 2013, &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; was featured on the TODAY Show as one of the four best health apps from among the 40,000 health applications available for consumers.  &lt;a href='http://www.today.com/video/today/51273692/#51273692' target='_blank' &gt;Watch video&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target state="translated">2013年3月，&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;在今日秀上作为消费者提供的4万个健康应用程序中的4个最好的健康应用程序之一。&lt;a href=’http://www.today.com/video/today/51273692/#51273692’ target=’_blank’ &gt;观看视频&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target state="translated">2013年3月，&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;在今日秀上作为消费者提供的4万个健康应用程序中的4个最好的健康应用程序之一。&lt;a href='http://www.today.com/video/today/51273692/#51273692' target='_blank' &gt;观看视频&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6174" resname="r107035534" restype="string" datatype="ruby">
         <source>Mar 2013</source>
@@ -26634,7 +26634,7 @@
       </trans-unit>
       <trans-unit id="6184" resname="r796496547" restype="string" datatype="ruby">
         <source>In May 2013, &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; launched AppRX so our users can get app recommendations from real doctors. With AppRX, we make it fast and easy to find health and wellness apps by creating intuitive, user-friendly categories, and posting doctor recommendations and written reviews.  &lt;a href='http://venturebeat.com/2013/05/30/healthtap-apprx/' target='_blank' rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target state="translated">在2013年5月，&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;推出了“AppRx医生评测”，因此我们的用户可以从真正的医生获得应用程序的建议。使用AppRx医生评测，我们通过创建直观，用户友好的类别，并为应用程序发布医生建议和书面评论，使其快速，轻松地找到健康与保健应用程序。&lt;a href=’http://venturebeat.com/2013/05/30/healthtap-apprx/’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target state="translated">在2013年5月，&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;推出了“AppRx医生评测”，因此我们的用户可以从真正的医生获得应用程序的建议。使用AppRx医生评测，我们通过创建直观，用户友好的类别，并为应用程序发布医生建议和书面评论，使其快速，轻松地找到健康与保健应用程序。&lt;a href='http://venturebeat.com/2013/05/30/healthtap-apprx/' target='_blank' rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6185" resname="r998021805" restype="string" datatype="ruby">
         <source>Jul 2013</source>
@@ -26666,7 +26666,7 @@
       </trans-unit>
       <trans-unit id="6192" resname="r647168468" restype="string" datatype="ruby">
         <source>In Oct 2013, &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; received the 10,000th user note telling us that information on &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; saved a life. By making digital health personal, we're working hard to help many more thousands all over the world live longer, healthier lives.  &lt;a href='http://bits.blogs.nytimes.com/2013/10/05/how-to-save-10000-lives-with-an-app-flatter-doctors/?_php=true&amp;_type=blogs&amp;_r=0' target='_blank' rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target state="translated">在2013年十月，&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;收到了第10,000条用户通知告诉我们在&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;上挽救一条生命。通过使电子健康私人化，我们致力于帮助全世界更多人活得更长久更健康。&lt;a href=’http://bits.blogs.nytimes.com/2013/10/05/how-to-save-10000-lives-with-an-app-flatter-doctors/?_php=true&amp;_type=blogs&amp;_r=0’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target state="translated">在2013年十月，&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;收到了第10,000条用户通知告诉我们在&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;上挽救一条生命。通过使电子健康私人化，我们致力于帮助全世界更多人活得更长久更健康。&lt;a href='http://bits.blogs.nytimes.com/2013/10/05/how-to-save-10000-lives-with-an-app-flatter-doctors/?_php=true&amp;_type=blogs&amp;_r=0' target='_blank' rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6193" resname="r858443408" restype="string" datatype="ruby">
         <source>One billion answers served</source>
@@ -26694,7 +26694,7 @@
       </trans-unit>
       <trans-unit id="6199" resname="r187948061" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; Labs launches its first app - Talk To Docs. Just speak a question, and the app reads back answers from top doctors. Uses advanced natural language processing, artificial intelligence, and advanced voice recognition technology, Talk To Docs recognizes the health topics you’re interested in, and delivers the most appropriate answers.  &lt;a href='http://www.fastcoexist.com/3020791/why-go-to-the-doctor-when-you-can-talk-to-a-doctor-in-your-phone' target='_blank' rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target state="translated">&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;实验室发布他的第一款应用程序 - Talk To Docs.仅仅说出一个问题，这款应用程序就会从顶级医生那里获取回答。Talk To Docs使用先进的自然语言处理、人工智能和先进的声音识别技术来识别您感兴趣的话题并向您推送最适合的回答。&lt;a href=’http://www.fastcoexist.com/3020791/why-go-to-the-doctor-when-you-can-talk-to-a-doctor-in-your-phone’ target=’_blank’ rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target state="translated">&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;实验室发布他的第一款应用程序 - Talk To Docs.仅仅说出一个问题，这款应用程序就会从顶级医生那里获取回答。Talk To Docs使用先进的自然语言处理、人工智能和先进的声音识别技术来识别您感兴趣的话题并向您推送最适合的回答。&lt;a href='http://www.fastcoexist.com/3020791/why-go-to-the-doctor-when-you-can-talk-to-a-doctor-in-your-phone' target='_blank' rel=nofollow &gt;阅读&amp;nbsp;文章&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6200" resname="r823345537" restype="string" datatype="ruby">
         <source>&amp;ldquo;Disrupting Healthcare&amp;rdquo;</source>
@@ -26702,7 +26702,7 @@
       </trans-unit>
       <trans-unit id="6201" resname="r775485321" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; continued to be featured in national press, with articles in Inc. Magazine (&lt;a href='http://www.inc.com/magazine/201311/darren-dahl/how-healthtap-disrupted-the-health-care-industry.html' target='_blank' rel=nofollow &gt;November 2013&lt;/a&gt;) and Forbes (&lt;a href='http://www.forbes.com/sites/brucerogers/2013/11/20/ron-gutmans-healthtap-seeks-to-be-the-first-global-mobile-health-brand/' target='_blank' rel=nofollow &gt;November 2013&lt;/a&gt;), among many others celebrating the changes that &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is making in the health field.</source>
-        <target state="translated">&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;继续在国家级新闻界报道，其中包括华纳出版社 (&lt;a href=’http://www.inc.com/magazine/201311/darren-dahl/how-healthtap-disrupted-the-health-care-industry.html’ target=’_blank’ rel=nofollow &gt;November 2013&lt;/a&gt;)和福布斯(&lt;a href=’http://www.forbes.com/sites/brucerogers/2013/11/20/ron-gutmans-healthtap-seeks-to-be-the-first-global-mobile-health-brand/’ target=’_blank’ rel=nofollow &gt;November 2013&lt;/a&gt;), 在许多其他人中庆祝&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;在健康领域正在发生的变化。</target>
+        <target state="translated">&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;继续在国家级新闻界报道，其中包括华纳出版社 (&lt;a href='http://www.inc.com/magazine/201311/darren-dahl/how-healthtap-disrupted-the-health-care-industry.html' target='_blank' rel=nofollow &gt;November 2013&lt;/a&gt;)和福布斯(&lt;a href='http://www.forbes.com/sites/brucerogers/2013/11/20/ron-gutmans-healthtap-seeks-to-be-the-first-global-mobile-health-brand/'' target='_blank' rel=nofollow &gt;November 2013&lt;/a&gt;), 在许多其他人中庆祝&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;在健康领域正在发生的变化。</target>
       </trans-unit>
       <trans-unit id="6202" resname="r658835237" restype="string" datatype="ruby">
         <source>Feb 2014</source>
@@ -26714,7 +26714,7 @@
       </trans-unit>
       <trans-unit id="6204" resname="r416821242" restype="string" datatype="ruby">
         <source>A mini-documentary on &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; was released underscoring the importance of the company’s mission to revolutionize the doctor-patient relationship. The film featured patients and doctors who spoke about the deep impact HealthTap is having on their lives. &lt;a href='//www.youtube.com/embed/euXY8YJSL84' videoID='euXY8YJSL84' class='play-video' target='_blank' rel=nofollow &gt;Watch video&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target state="translated">发布了一部关于&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;的小纪录片，强调了公司使命改变医生与患者关系的重要性。这部电影精选了患者和医生，他们谈到了HealthTap对他们生活的深远影响。&lt;a href=’//www.youtube.com/embed/euXY8YJSL84’ videoID=’euXY8YJSL84’ class=’play-video’ target=’_blank’ rel=nofollow &gt;观看视频&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target state="translated">发布了一部关于&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;的小纪录片，强调了公司使命改变医生与患者关系的重要性。这部电影精选了患者和医生，他们谈到了HealthTap对他们生活的深远影响。&lt;a href='//www.youtube.com/embed/euXY8YJSL84' videoID='euXY8YJSL84' class='play-video' target='_blank' rel=nofollow &gt;观看视频&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="6205" resname="r826944260" restype="string" datatype="ruby">
         <source>June 2014</source>
@@ -33412,7 +33412,7 @@
       </trans-unit>
       <trans-unit id="7982" resname="r848686431" restype="string" datatype="ruby">
         <source>Educational text answers</source>
-        <target state="translated">教育性文本回答</target>
+        <target state="translated">知识消息问答</target>
       </trans-unit>
       <trans-unit id="7983" resname="r934205858" restype="string" datatype="ruby">
         <source>From top doctors in 141 specialties</source>
@@ -37200,7 +37200,7 @@
       </trans-unit>
       <trans-unit id="8752" resname="Would you like to consult {link_tag_start}{name}{link_tag_end}, a specialist in {specialty}, for any follow-up questions?" restype="string" datatype="javascript">
         <source>Would you like to consult {link_tag_start}{name}{link_tag_end}, a specialist in {specialty}, for any follow-up questions?</source>
-        <target state="translated">您想要咨询什么{link_tag_start}{name}{link_tag_end}, 在{specialty}一位专家, 对于任何后续问题？</target>
+        <target state="translated">您想要咨询什么后续问题吗?可以询问{link_tag_start}{name}{link_tag_end}, 一位{specialty}专家。</target>
       </trans-unit>
     </body>
   </file>
@@ -37412,7 +37412,7 @@
       </trans-unit>
       <trans-unit id="8785" resname="Get {span_tag_start}{amount}{span_tag_end} credit to consult with a specialist when your referral link is used" restype="string" datatype="javascript">
         <source>Get {span_tag_start}{amount}{span_tag_end} credit to consult with a specialist when your referral link is used</source>
-        <target state="translated">当您的邀请链接被使用时，可获得{span_tag_start}{amount}{span_tag_end}咨询专科医生的信用</target>
+        <target state="translated">邀请朋友和家人，他们将下一次医生咨询获得{span_tag_start}{amount}{span_tag_end}美元优惠</target>
       </trans-unit>
     </body>
   </file>
@@ -38560,7 +38560,7 @@
     <body>
       <trans-unit id="8993" resname="Send your question for one or more answers from our network of more than {num_experts} doctors or consult a doctor." restype="string" datatype="javascript">
         <source>Send your question for one or more answers from our network of more than {num_experts} doctors or consult a doctor.</source>
-        <target state="translated">发送您的问题，获得来自我们由超过{num_experts}名医生组成的网络的一个或多个教育性文本回答，或者咨询一名医生。</target>
+        <target state="translated">发送您的问题，获得来自我们由超过{num_experts}名医生组成的网络的一个或多个知识消息问答，或者咨询一名医生。</target>
       </trans-unit>
     </body>
   </file>
@@ -39132,7 +39132,7 @@
     <body>
       <trans-unit id="9107" resname="Logging in" restype="string" datatype="javascript">
         <source>Logging in</source>
-        <target state="translated">登录中...</target>
+        <target state="translated">登录中</target>
       </trans-unit>
     </body>
   </file>
@@ -40621,7 +40621,7 @@
       </trans-unit>
       <trans-unit id="9438" resname="Expires (MM/YY)" restype="string" datatype="javascript">
         <source>Expires (MM/YY)</source>
-        <target state="translated">过期 (MM/YY)</target>
+        <target state="translated">有效期至 (月月/年年)</target>
       </trans-unit>
       <trans-unit id="9439" resname="Security code" restype="string" datatype="javascript">
         <source>Security code</source>
@@ -42709,11 +42709,11 @@
       </trans-unit>
       <trans-unit id="9893" resname="Exp (MM/YY)" restype="string" datatype="javascript">
         <source>Exp (MM/YY)</source>
-        <target state="translated">过期 (月/年)</target>
+        <target state="translated">有效期至 (月/年)</target>
       </trans-unit>
       <trans-unit id="9894" resname="Expiry (MM/YY)" restype="string" datatype="javascript">
         <source>Expiry (MM/YY)</source>
-        <target state="translated">过期 (月/年)</target>
+        <target state="translated">有效期至 (月/年)</target>
       </trans-unit>
       <trans-unit id="9895" resname="You can ask 150-character health questions to one of our {n} top doctors for free." restype="string" datatype="javascript">
         <source>You can ask 150-character health questions to one of our {n} top doctors for free.</source>
