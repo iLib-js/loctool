@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="You&apos;re now following %@! " restype="string" datatype="x-objective-c">
         <source>You're now following %@!</source>
-        <target>您已关注%@！</target>
+        <target>您现在关注%@！</target>
       </trans-unit>
     </body>
   </file>
@@ -753,7 +753,7 @@
     <body>
       <trans-unit id="123" resname="One moment" restype="string" datatype="x-objective-c">
         <source>One moment</source>
-        <target>马上</target>
+        <target>请稍候</target>
       </trans-unit>
       <trans-unit id="124" resname="We’re fetching your location to find right doctors for you" restype="string" datatype="x-objective-c">
         <source>We’re fetching your location to find right doctors for you</source>
@@ -928,7 +928,7 @@
       </trans-unit>
       <trans-unit id="150" resname="Conditions related to " restype="string" datatype="x-objective-c">
         <source>Conditions related to</source>
-        <target>相关条件</target>
+        <target>相关健康状况</target>
       </trans-unit>
       <trans-unit id="151" resname="Risk factors of " restype="string" datatype="x-objective-c">
         <source>Risk factors of</source>
@@ -964,7 +964,7 @@
       </trans-unit>
       <trans-unit id="159" resname="Conditions screened by " restype="string" datatype="x-objective-c">
         <source>Conditions screened by</source>
-        <target>筛选的条件</target>
+        <target>筛选的健康状况</target>
       </trans-unit>
       <trans-unit id="160" resname="Procedures for " restype="string" datatype="x-objective-c">
         <source>Procedures for</source>
@@ -972,7 +972,7 @@
       </trans-unit>
       <trans-unit id="161" resname="Conditions prevented by " restype="string" datatype="x-objective-c">
         <source>Conditions prevented by</source>
-        <target>预防的条件</target>
+        <target>预防的健康状况</target>
       </trans-unit>
       <trans-unit id="162" resname=" include:" restype="string" datatype="x-objective-c">
         <source>include:</source>
@@ -1231,7 +1231,7 @@
       </trans-unit>
       <trans-unit id="203" resname="Are you sure you want to cancel the request to connect via an Introductory Consult? (We&apos;ll credit your account)" restype="string" datatype="x-objective-c">
         <source>Are you sure you want to cancel the request to connect via an Introductory Consult? (We'll credit your account)</source>
-        <target>您确定想要通过介绍性咨询取消连接请求吗？(我们会存入您的账户)</target>
+        <target>您确定想要通过介绍性咨询取消连接请求吗？(我们会退款到您的账户)</target>
       </trans-unit>
     </body>
   </file>
@@ -1438,7 +1438,7 @@
     <body>
       <trans-unit id="240" resname="oKS-Pc-4XA.text" restype="string" datatype="x-xib">
         <source>Prescriptions, checklists, referrals, tips &amp; news</source>
-        <target>处方、清单、转介、小贴士和新闻</target>
+        <target>处方、清单、转诊、小贴士和新闻</target>
         <note annotates="source">Class = "UILabel"; text = "Prescriptions, checklists, referrals, tips &amp; news "; ObjectID = "oKS-Pc-4XA";</note>
       </trans-unit>
     </body>
@@ -1533,7 +1533,7 @@
     <body>
       <trans-unit id="251" resname="2FB-8E-ha2.placeholder" restype="string" datatype="x-xib">
         <source>Name, specialty or topic</source>
-        <target>名称，专业或主题</target>
+        <target>名称，专科或主题</target>
         <note annotates="source">Class = "UISearchBar"; placeholder = "Name, specialty or topic          "; ObjectID = "2FB-8E-ha2";</note>
       </trans-unit>
     </body>

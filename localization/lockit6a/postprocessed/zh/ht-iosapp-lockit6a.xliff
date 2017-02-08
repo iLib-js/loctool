@@ -250,7 +250,7 @@
     <body>
       <trans-unit id="28" resname="hon-2k-uh7.disabledTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>发送注意事项</target>
+        <target>发送便条</target>
         <note annotates="source">Class = "UIButton"; disabledTitle = "Send note"; ObjectID = "hon-2k-uh7";</note>
       </trans-unit>
     </body>
@@ -319,7 +319,7 @@
     <body>
       <trans-unit id="37" resname="GdQ-6V-dXe.normalTitle" restype="string" datatype="x-xib">
         <source>Return to log in</source>
-        <target>返回登陆</target>
+        <target>返回登录</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Return to log in"; ObjectID = "GdQ-6V-dXe";</note>
       </trans-unit>
     </body>

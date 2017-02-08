@@ -127,7 +127,7 @@
       </trans-unit>
       <trans-unit id="61" resname="Send a thank you note to \n%@" restype="string" datatype="x-objective-c">
         <source>Send a thank you note to \n%@</source>
-        <target>发送一封感谢信到 \n%@</target>
+        <target>发送一封感谢信给 \n%@</target>
       </trans-unit>
     </body>
   </file>
@@ -299,7 +299,7 @@
     <body>
       <trans-unit id="103" resname="One moment while we find\nthe right doctors for your location..." restype="string" datatype="x-objective-c">
         <source>One moment while we find\nthe right doctors for your location...</source>
-        <target>当我们找到\n您所在位置的合适的医生...</target>
+        <target>请稍候，我们正在查找\n您所在位置的合适的医生...</target>
       </trans-unit>
     </body>
   </file>
@@ -311,7 +311,7 @@
       </trans-unit>
       <trans-unit id="105" resname="Remind %@ to:\n%@" restype="string" datatype="x-objective-c">
         <source>Remind %@ to:\n%@</source>
-        <target>提醒{user_name}到：\n%@</target>
+        <target>提醒{user_name}：\n%@</target>
       </trans-unit>
     </body>
   </file>
@@ -707,7 +707,7 @@
     <body>
       <trans-unit id="235" resname="Create a {start} free, private {end} account or login" restype="string" datatype="x-objective-c">
         <source>Create a {start} free, private {end} account or login</source>
-        <target>创建{start}免费的私人{end}账户或登录</target>
+        <target>创建{start}免费，私密{end}账户或登录</target>
       </trans-unit>
       <trans-unit id="236" resname="{start}" restype="string" datatype="x-objective-c">
         <source>{start}</source>
@@ -874,7 +874,7 @@
     <body>
       <trans-unit id="340" resname="JB0-J5-1sj.text" restype="string" datatype="x-xib">
         <source>I'd like to refer you to:</source>
-        <target>我希望推荐您到：</target>
+        <target>我希望转诊您到：</target>
         <note annotates="source">Class = "UILabel"; text = "I'd like to refer you to:"; ObjectID = "JB0-J5-1sj";</note>
       </trans-unit>
     </body>
