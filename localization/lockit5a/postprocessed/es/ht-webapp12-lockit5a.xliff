@@ -31261,7 +31261,7 @@
       </trans-unit>
       <trans-unit id="12741" resname="r856013763" restype="string" datatype="x-haml">
         <source>N/A</source>
-        <target>N/A</target>
+        <target state="accepted">不适用</target>
       </trans-unit>
       <trans-unit id="12742" resname="r478313490" restype="string" datatype="x-haml">
         <source>Subscription fee(Groups of 5-20 doctors)</source>

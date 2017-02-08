@@ -28,7 +28,7 @@
     <body>
       <trans-unit id="59" resname="r856013763" restype="string" datatype="ruby">
         <source>N/A</source>
-        <target state="translated">N/A</target>
+        <target state="accepted">不适用</target>
       </trans-unit>
     </body>
   </file>
