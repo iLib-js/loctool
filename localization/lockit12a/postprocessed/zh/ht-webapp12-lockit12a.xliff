@@ -112,4 +112,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/layouts/feelGood/static/_footer_static_v2.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="55" resname="r223665654" restype="string" datatype="ruby">
+        <source>Made with a %{link_start}smile%{link_end} in sunny California</source>
+        <target state="translated">和煦加州，%{link_start}微笑%{link_end} 制作</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
