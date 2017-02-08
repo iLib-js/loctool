@@ -47793,7 +47793,7 @@
       </trans-unit>
       <trans-unit id="762" resname="symptom_triage_disclaimer_additional_info" restype="string" datatype="x-android-resource">
         <source>Additional Information</source>
-        <target>更多信息</target>
+        <target>附加信息</target>
       </trans-unit>
       <trans-unit id="763" resname="leave" restype="string" datatype="x-android-resource">
         <source>Leave</source>
