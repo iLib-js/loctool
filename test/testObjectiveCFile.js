@@ -346,6 +346,54 @@ module.exports = {
         test.done();
     },
 
+    testObjectiveCFileParseNonNilComment: function(test) {
+        test.expect(6);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new ObjectiveCFile(p);
+        test.ok(j);
+        
+        j.parse('NSLocalizedString(@"This is a test", foobar)');
+        
+        var set = j.getTranslationSet();
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+        test.ok(!r.getComment());
+        
+        test.equal(set.size(), 1);
+        
+        test.done();
+    },
+
+    testObjectiveCFileParseZeroComment: function(test) {
+        test.expect(6);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new ObjectiveCFile(p);
+        test.ok(j);
+        
+        j.parse('NSLocalizedString(@"This is a test", 0)');
+        
+        var set = j.getTranslationSet();
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+        test.ok(!r.getComment());
+        
+        test.equal(set.size(), 1);
+        
+        test.done();
+    },
+
     testObjectiveCFileParseEmptyParams: function(test) {
         test.expect(2);
 
