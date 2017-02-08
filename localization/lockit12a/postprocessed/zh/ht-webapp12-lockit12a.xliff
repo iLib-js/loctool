@@ -100,7 +100,7 @@
     <body>
       <trans-unit id="209" resname="It seems you&apos;re in a different state than your preferred pharmacy. " restype="string" datatype="javascript">
         <source>It seems you're in a different state than your preferred pharmacy.</source>
-        <target state="new">看起来您选择的药房与您的当前地址不在同一个州</target>
+        <target state="new">看起来您选择的药房与您的当前地址不在同一个州。</target>
       </trans-unit>
       <trans-unit id="210" resname="Please let us know your preferred pharmacy in {state}" restype="string" datatype="javascript">
         <source>Please let us know your preferred pharmacy in {state}</source>
