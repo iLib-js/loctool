@@ -42,4 +42,28 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/b2b/partial/_compass_phones.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="59" resname="r797088921" restype="string" datatype="ruby">
+        <source>Expert</source>
+        <target state="new">专家</target>
+      </trans-unit>
+      <trans-unit id="60" resname="r337038770" restype="string" datatype="ruby">
+        <source>Personalized</source>
+        <target state="new">个性化</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/virtualdhb/patients.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="r576817317" restype="string" datatype="ruby">
+        <source>Clinician</source>
+        <target state="new">临床医生</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r1036965404" restype="string" datatype="ruby">
+        <source>Personalised</source>
+        <target state="new">个性化</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
