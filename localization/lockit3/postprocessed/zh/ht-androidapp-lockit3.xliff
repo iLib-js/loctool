@@ -500,7 +500,7 @@
     <body>
       <trans-unit id="84" resname="text_Regularly__44" restype="string" datatype="x-android-resource">
         <source>Regularly $44</source>
-        <target>正常费用44$</target>
+        <target>正常费用$44</target>
       </trans-unit>
       <trans-unit id="85" resname="text_Change_the_card_ending_in___1122" restype="string" datatype="x-android-resource">
         <source>Change the card ending in   1122</source>
