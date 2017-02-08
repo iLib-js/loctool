@@ -21913,7 +21913,7 @@
       </trans-unit>
       <trans-unit id="4207" resname="r887055656" restype="string" datatype="ruby">
         <source>Lower absenteeism and presenteeism due to immediate, easy access to doctors.</source>
-        <target state="translated">由于可以立即容易的访问医生产生比较低的缺勤和出勤。</target>
+        <target state="translated">由于可以立即便捷地访问医生，降低缺勤率。</target>
       </trans-unit>
       <trans-unit id="4208" resname="r525470198" restype="string" datatype="ruby">
         <source>Attract and retain employees</source>
@@ -29830,7 +29830,7 @@
       </trans-unit>
       <trans-unit id="6977" resname="r867893033" restype="string" datatype="ruby">
         <source>Healthier, happier workforce. Lower costs</source>
-        <target state="translated">更健康，更快乐的职工总数。更低的成本</target>
+        <target state="translated">更健康，更快乐的职工。更低的成本</target>
       </trans-unit>
       <trans-unit id="6978" resname="r140994250" restype="string" datatype="ruby">
         <source>Give employees immediate access to world-class doctor care, from Query to Cure</source>
