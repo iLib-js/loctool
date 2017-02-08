@@ -1338,7 +1338,7 @@
       </trans-unit>
       <trans-unit id="346" resname="r158653628" restype="string" datatype="x-android-resource">
         <source>From HealthTap</source>
-        <target state="translated">来自健康问答</target>
+        <target state="translated">已上传的文件</target>
       </trans-unit>
       <trans-unit id="347" resname="r74842871" restype="string" datatype="x-android-resource">
         <source>If you leave, your changes will be lost.</source>

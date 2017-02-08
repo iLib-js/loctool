@@ -8483,7 +8483,7 @@ Get the right care for your needs - consult a specialist today!</source>
       </trans-unit>
       <trans-unit id="Do you have any previously diagnosed conditions?" resname="Do you have any previously diagnosed conditions?" restype="string" datatype="x-objective-c">
         <source>Do you have any previously diagnosed conditions?</source>
-        <target>您是否患有任何在以前诊断的病症？</target>
+        <target>您是否患有任何在以前确诊的病症？</target>
         <note annotates="source">Question</note>
       </trans-unit>
       <trans-unit id="Do you need a consult right now?" resname="Do you need a consult right now?" restype="string" datatype="x-objective-c">

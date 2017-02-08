@@ -231,7 +231,7 @@
       </trans-unit>
       <trans-unit id="57" resname="r794612910" restype="string" datatype="x-android-resource">
         <source>Never Mind</source>
-        <target state="translated">没有关系</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Positive Button text. Give up removing an attachment.</note>
       </trans-unit>
       <trans-unit id="58" resname="r477931224" restype="string" datatype="x-android-resource">

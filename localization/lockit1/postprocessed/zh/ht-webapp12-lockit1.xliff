@@ -29064,7 +29064,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6359" resname="Do you have any previously diagnosed conditions?" restype="string" datatype="html">
         <source>Do you have any previously diagnosed conditions?</source>
-        <target>您有任何先前诊断的情况吗？</target>
+        <target>您是否患有任何在以前确诊的病症？</target>
       </trans-unit>
       <trans-unit id="6360" resname="Do you take any medications?" restype="string" datatype="html">
         <source>Do you take any medications?</source>
@@ -34043,7 +34043,7 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
       </trans-unit>
       <trans-unit id="6698" resname="Never mind " restype="string" datatype="javascript">
         <source>Never mind</source>
-        <target>没有关系</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="6699" resname="Invitations sent!" restype="string" datatype="javascript">
         <source>Invitations sent!</source>
