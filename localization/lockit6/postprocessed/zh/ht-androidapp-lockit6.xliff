@@ -168,7 +168,7 @@
       </trans-unit>
       <trans-unit id="29" resname="r415124616" restype="string" datatype="java">
         <source>Living</source>
-        <target>居住在</target>
+        <target>健在</target>
       </trans-unit>
       <trans-unit id="30" resname="r199869805" restype="string" datatype="java">
         <source>Date of Birth</source>
@@ -1035,11 +1035,11 @@
       </trans-unit>
       <trans-unit id="190" resname="r942559806" restype="string" datatype="java">
         <source>(${original_price} regularly - ${credits} in credits)</source>
-        <target>(${original_price} 定期- ${credits} 余额)</target>
+        <target>(${original_price} 正常费用 - ${credits} 余额)</target>
       </trans-unit>
       <trans-unit id="191" resname="r95353935" restype="string" datatype="java">
         <source>($%s regularly)</source>
-        <target>($%s定期 )</target>
+        <target>($%s正常费用 )</target>
       </trans-unit>
     </body>
   </file>
@@ -1195,7 +1195,7 @@
     <body>
       <trans-unit id="220" resname="r742115697" restype="string" datatype="java">
         <source>Topics</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
@@ -1203,7 +1203,7 @@
     <body>
       <trans-unit id="221" resname="r789310818" restype="string" datatype="java">
         <source>Topic</source>
-        <target>话题</target>
+        <target>专题</target>
       </trans-unit>
     </body>
   </file>
@@ -1354,7 +1354,7 @@
     <body>
       <trans-unit id="247" resname="r710774033" restype="string" datatype="java">
         <source>People you care for</source>
-        <target>您照顾的人</target>
+        <target>您关心的人</target>
       </trans-unit>
     </body>
   </file>
@@ -2665,12 +2665,12 @@
       </trans-unit>
       <trans-unit id="482" resname="r89603413" restype="string" datatype="java">
         <source>No longer take this</source>
-        <target>不再服用这个</target>
+        <target>不再服用此药</target>
         <note annotates="source">This means that the patient used to but no longer take this medication.</note>
       </trans-unit>
       <trans-unit id="483" resname="r629431647" restype="string" datatype="java">
         <source>Take this</source>
-        <target>服用这个</target>
+        <target>服用此药</target>
         <note annotates="source">This means that the patient is currently taking this medication.</note>
       </trans-unit>
       <trans-unit id="484" resname="r318925728" restype="string" datatype="java">
@@ -3010,7 +3010,7 @@
       </trans-unit>
       <trans-unit id="539" resname="r811762799" restype="string" datatype="java">
         <source>Being {topic_name}</source>
-        <target>{topic_name}</target>
+        <target>作为{topic_name}</target>
       </trans-unit>
       <trans-unit id="540" resname="r923208447" restype="string" datatype="java">
         <source>Expertise in {topic_name}</source>
@@ -3357,7 +3357,7 @@
       </trans-unit>
       <trans-unit id="602" resname="r356004357" restype="string" datatype="java">
         <source>Hi, {name}!</source>
-        <target>您好，({name})！</target>
+        <target>您好，{name}！</target>
       </trans-unit>
       <trans-unit id="603" resname="r787211475" restype="string" datatype="java">
         <source>99+</source>
@@ -3774,7 +3774,7 @@
     <body>
       <trans-unit id="676" resname="r45009371" restype="string" datatype="java">
         <source>Near you</source>
-        <target>靠近 您</target>
+        <target>靠近您</target>
       </trans-unit>
       <trans-unit id="677" resname="r52874560" restype="string" datatype="java">
         <source>Ask {0} {1} a question...</source>
