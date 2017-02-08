@@ -1017,4 +1017,32 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/ViewControllers/Base.lproj/FGTopicListViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Hvu-2b-Kwm.text" restype="string" datatype="x-xib">
+        <source>Add health topics</source>
+        <target>关注健康专题</target>
+        <note annotates="source">Class = "UILabel"; text = "Add health topics"; ObjectID = "Hvu-2b-Kwm";</note>
+      </trans-unit>
+      <trans-unit id="2" resname="inc-kR-3x4.text" restype="string" datatype="x-xib">
+        <source>Add topics to your profile so doctors may provide you with better answers</source>
+        <target>关注更多专题以获得更好的医生回答与帮助</target>
+        <note annotates="source">Class = "UILabel"; text = "Add topics to your profile so doctors may provide you with better answers"; ObjectID = "inc-kR-3x4";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Base.lproj/FGTopicListViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="3" resname="EhN-6k-GKw.text" restype="string" datatype="x-xib">
+        <source>Add health topics</source>
+        <target>关注健康专题</target>
+        <note annotates="source">Class = "UILabel"; text = "Add health topics"; ObjectID = "EhN-6k-GKw";</note>
+      </trans-unit>
+      <trans-unit id="4" resname="tb3-7a-KBu.text" restype="string" datatype="x-xib">
+        <source>Add topics to your profile so doctors may provide you with better answers</source>
+        <target>关注更多专题以获得更好的医生回答与帮助</target>
+        <note annotates="source">Class = "UILabel"; text = "Add topics to your profile so doctors may provide you with better answers"; ObjectID = "tb3-7a-KBu";</note>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
