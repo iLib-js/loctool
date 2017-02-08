@@ -44,4 +44,44 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/models/person/third_party.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="58" resname="r599538436" restype="string" datatype="ruby">
+        <source>Join HealthTap Today!</source>
+        <target state="translated">今天就加入HealthTap！</target>
+      </trans-unit>
+      <trans-unit id="59" resname="r640061042" restype="string" datatype="ruby">
+        <source>HealthTap is also great because I can:</source>
+        <target state="translated">HealthTap很棒，因为我可以：</target>
+      </trans-unit>
+      <trans-unit id="60" resname="r962795287" restype="string" datatype="ruby">
+        <source>&lt;b&gt;Learn more&lt;/b&gt; about health issues from doctors’ answers to members questions, and from tips and news items that doctors post</source>
+        <target state="translated">&lt;b&gt;深入了解&lt;/b&gt;医生对用户们关于健康问题的答案，以及医生发表的提示和新闻项目</target>
+      </trans-unit>
+      <trans-unit id="61" resname="r268716543" restype="string" datatype="ruby">
+        <source>&lt;b&gt;Get help&lt;/b&gt; from doctors in live Virtual Consults when I need it most, 24/7</source>
+        <target state="translated">在我最需要的时候&lt;b&gt;获取帮助&lt;/b&gt;，7x24全天候</target>
+      </trans-unit>
+      <trans-unit id="62" resname="r722225624" restype="string" datatype="ruby">
+        <source>&lt;b&gt;Take action&lt;/b&gt; on my health by following doctor-created checklists.</source>
+        <target state="translated">按照医生创建的检查表&lt;b&gt;采取行动&lt;/b&gt;对我的健康。</target>
+      </trans-unit>
+      <trans-unit id="63" resname="r258678165" restype="string" datatype="ruby">
+        <source>HealthTap is a great way to smile and feel good every day!</source>
+        <target state="translated">HealthTap极力帮助你微笑和Feel Good每一天！</target>
+      </trans-unit>
+      <trans-unit id="64" resname="r884373723" restype="string" datatype="ruby">
+        <source>Sign-Up Now!</source>
+        <target state="translated">立即注册！</target>
+      </trans-unit>
+      <trans-unit id="65" resname="r674186773" restype="plural" datatype="ruby" extype="one">
+        <source>Join me on HealthTap - a place where you can ask a top doctor your questions anytime, anywhere and get free answers.</source>
+        <target state="translated">和我一起来HealthTap吧- 在这儿你你可以随时随地问超过顶级医生问题并得到免费的答案。</target>
+      </trans-unit>
+      <trans-unit id="66" resname="r674186773" restype="plural" datatype="ruby" extype="other">
+        <source>Join me on HealthTap - a place where you can ask more than %{count} top doctors your questions anytime, anywhere and get free answers.</source>
+        <target state="translated">和我一起来HealthTap吧- 在这儿你你可以随时随地问超过%{count}顶级医生问题并得到免费的答案。</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
