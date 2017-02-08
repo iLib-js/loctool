@@ -22799,7 +22799,7 @@
       </trans-unit>
       <trans-unit id="4404" resname="r835981178" restype="string" datatype="ruby">
         <source>Do you have any previously diagnosed conditions?</source>
-        <target state="translated">您是否有任何历史已诊断疾病？</target>
+        <target state="translated">您是否患有任何在以前确诊的病症？</target>
       </trans-unit>
       <trans-unit id="4405" resname="r812352811" restype="string" datatype="ruby">
         <source>Do you have blood in your stools?</source>
@@ -38736,7 +38736,7 @@
       </trans-unit>
       <trans-unit id="9030" resname="Do you have any previously diagnosed conditions?" restype="string" datatype="javascript">
         <source>Do you have any previously diagnosed conditions?</source>
-        <target state="translated">您是否有任何历史已诊断疾病？</target>
+        <target state="translated">您是否患有任何在以前确诊的病症？</target>
       </trans-unit>
       <trans-unit id="9031" resname="Do you take any medications?" restype="string" datatype="javascript">
         <source>Do you take any medications?</source>
@@ -41097,7 +41097,7 @@
     <body>
       <trans-unit id="9540" resname="Do you have any previously diagnosed conditions or known symptoms?" restype="string" datatype="javascript">
         <source>Do you have any previously diagnosed conditions or known symptoms?</source>
-        <target state="translated">您有任何先前诊断的病症或已知的症状吗？</target>
+        <target state="translated">您是否患有任何在以前确诊的病症？</target>
       </trans-unit>
       <trans-unit id="9541" resname="Does this person have any previously diagnosed conditions or known symptoms?" restype="string" datatype="javascript">
         <source>Does this person have any previously diagnosed conditions or known symptoms?</source>

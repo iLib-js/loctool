@@ -5909,7 +5909,7 @@
       </trans-unit>
       <trans-unit id="1208" resname="conditionsHeaderQuestion" restype="string" datatype="x-android-resource">
         <source>Do you have any previously diagnosed conditions?</source>
-        <target>您以前有什么确诊的病史吗？</target>
+        <target>您是否患有任何在以前确诊的病症？</target>
       </trans-unit>
       <trans-unit id="1209" resname="medicationsHeaderQuestion" restype="string" datatype="x-android-resource">
         <source>Do you take any medications?</source>

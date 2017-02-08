@@ -1741,7 +1741,7 @@
       </trans-unit>
       <trans-unit id="874" resname="r835981178" restype="string" datatype="ruby">
         <source>Do you have any previously diagnosed conditions?</source>
-        <target state="translated">您是否有任何已诊断的疾病？</target>
+        <target state="translated">您是否患有任何在以前确诊的病症？</target>
       </trans-unit>
       <trans-unit id="895" resname="r866629048" restype="string" datatype="ruby">
         <source>Do you take any medications?</source>
@@ -7660,7 +7660,7 @@
       </trans-unit>
       <trans-unit id="1970" resname="Do you have any previously diagnosed conditions?" restype="string" datatype="javascript">
         <source>Do you have any previously diagnosed conditions?</source>
-        <target state="translated">您是否有任何历史已诊断疾病？</target>
+        <target state="translated">您是否患有任何在以前确诊的病症？</target>
       </trans-unit>
       <trans-unit id="1971" resname="Do you take any medications?" restype="string" datatype="javascript">
         <source>Do you take any medications?</source>
