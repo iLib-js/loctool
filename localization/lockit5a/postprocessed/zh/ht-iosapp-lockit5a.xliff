@@ -319,7 +319,7 @@
     <body>
       <trans-unit id="79" resname="Did you know that as a Prime member you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!" restype="string" datatype="x-objective-c">
         <source>Did you know that as a Prime member you can have discounted consults with top Concierge doctors in over 100+ specialties?\n\nGet the right care for your needs - consult a specialist today!</source>
-        <target>您知道吗，作为Prime会员，咨询超过100多个专业的特邀医生可以享受折扣\n\n根据您的需要获得最合适的护理 ——今天就咨询专家吧！</target>
+        <target>您知道吗，作为Prime会员，咨询超过100多个专科的贵宾室医生可以享受折扣\n\n根据您的需要获得最合适的护理 ——今天就咨询专家吧！</target>
       </trans-unit>
     </body>
   </file>
@@ -441,7 +441,7 @@
       </trans-unit>
       <trans-unit id="158" resname="Thanked. " restype="string" datatype="x-objective-c">
         <source>Thanked.</source>
-        <target>感谢。</target>
+        <target>已感谢。</target>
       </trans-unit>
     </body>
   </file>
@@ -924,7 +924,7 @@
       </trans-unit>
       <trans-unit id="263" resname="X3S-c8-hzM.normalTitle" restype="string" datatype="x-xib">
         <source>Couldn't find the answer I was looking for</source>
-        <target>没有找到我需要的回答</target>
+        <target>无法找到我需要的回答</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Couldn't find the answer I was looking for"; ObjectID = "X3S-c8-hzM";</note>
       </trans-unit>
       <trans-unit id="265" resname="ZxU-47-847.normalTitle" restype="string" datatype="x-xib">
@@ -953,7 +953,7 @@
     <body>
       <trans-unit id="270" resname="4z9-Xa-bcj.normalTitle" restype="string" datatype="x-xib">
         <source>Couldn't find the answer I was looking for</source>
-        <target>没有找到我需要的回答</target>
+        <target>无法找到我需要的回答</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Couldn't find the answer I was looking for"; ObjectID = "4z9-Xa-bcj";</note>
       </trans-unit>
       <trans-unit id="271" resname="8hE-Yi-u4O.text" restype="string" datatype="x-xib">
@@ -1052,7 +1052,7 @@
     <body>
       <trans-unit id="290" resname="2FB-8E-ha2.placeholder" restype="string" datatype="x-xib">
         <source>Name, specialty or topic</source>
-        <target>名称，专业或话题</target>
+        <target>名称，专科或话题</target>
         <note annotates="source">Class = "UISearchBar"; placeholder = "Name, specialty or topic          "; ObjectID = "2FB-8E-ha2";</note>
       </trans-unit>
       <trans-unit id="292" resname="n8O-BB-25p.normalTitle" restype="string" datatype="x-xib">
@@ -1244,7 +1244,7 @@
     <body>
       <trans-unit id="318" resname="ErF-gu-fPz.normalTitle" restype="string" datatype="x-xib">
         <source>Couldn't find the answer I was looking for</source>
-        <target>没有找到我需要的回答</target>
+        <target>无法找到我需要的回答</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Couldn't find the answer I was looking for"; ObjectID = "ErF-gu-fPz";</note>
       </trans-unit>
       <trans-unit id="319" resname="cOY-aw-Sc0.text" restype="string" datatype="x-xib">
@@ -1263,7 +1263,7 @@
       </trans-unit>
       <trans-unit id="321" resname="Rem-A5-UnX.normalTitle" restype="string" datatype="x-xib">
         <source>Couldn't find the answer I was looking for</source>
-        <target>没有找到我需要的回答</target>
+        <target>无法找到我需要的回答</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Couldn't find the answer I was looking for"; ObjectID = "Rem-A5-UnX";</note>
       </trans-unit>
       <trans-unit id="322" resname="aro-gW-23T.text" restype="string" datatype="x-xib">
@@ -1437,7 +1437,7 @@
       </trans-unit>
       <trans-unit id="354" resname="mRg-tY-Dbn.placeholder" restype="string" datatype="x-xib">
         <source>Speciality</source>
-        <target>专业</target>
+        <target>专科</target>
         <note annotates="source">Class = "UITextField"; placeholder = "Speciality "; ObjectID = "mRg-tY-Dbn";</note>
       </trans-unit>
     </body>
