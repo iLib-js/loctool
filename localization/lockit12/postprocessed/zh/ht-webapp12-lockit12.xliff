@@ -546,11 +546,11 @@
     <body>
       <trans-unit id="171" resname="body_female" restype="string" datatype="x-yaml" x-context="member_consult_summary_live">
         <source>%1 shared her instructions and plan for you for your recent consult!</source>
-        <target state="translated">％1已分享她的说明并为您计划您最近的咨询！</target>
+        <target state="translated">%1已分享她的说明并为您计划您最近的咨询！</target>
       </trans-unit>
       <trans-unit id="172" resname="push_data_female" restype="string" datatype="x-yaml" x-context="member_consult_summary_live">
         <source>%1 shared her instructions and plan for you for your recent consult! View %1’s response</source>
-        <target state="translated">％1已分享她的说明并为您计划您最近的咨询！查看％1的回复</target>
+        <target state="translated">%1已分享她的说明并为您计划您最近的咨询！查看%1的回复</target>
       </trans-unit>
     </body>
   </file>
