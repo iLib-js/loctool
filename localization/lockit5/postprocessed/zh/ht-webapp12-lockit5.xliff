@@ -9240,7 +9240,7 @@
       </trans-unit>
       <trans-unit id="7809" resname="r260525205" restype="string" datatype="x-haml">
         <source>Discover what other doctors and people are buzzing about</source>
-        <target>发现其他医生和人们正在探讨的</target>
+        <target>发现其他医生和人们正在探讨什么</target>
       </trans-unit>
       <trans-unit id="7810" resname="r721726325" restype="string" datatype="x-haml">
         <source>By networking with your colleagues, with influencers, and with members, you’ll</source>
@@ -9248,7 +9248,7 @@
       </trans-unit>
       <trans-unit id="7811" resname="r659084680" restype="string" datatype="x-haml">
         <source>find out what’s top of mind in the health world.</source>
-        <target>发现健康世界中最高端的什么。</target>
+        <target>发现健康世界的最高端。</target>
       </trans-unit>
       <trans-unit id="7812" resname="r169913241" restype="string" datatype="x-haml">
         <source>Get a free Virtual Practice (ViP) that complements your existing practice!</source>
@@ -9272,11 +9272,11 @@
       </trans-unit>
       <trans-unit id="7817" resname="r1035600553" restype="string" datatype="x-haml">
         <source>makes this possible!</source>
-        <target>变成可能！</target>
+        <target>让这一切变成可能！</target>
       </trans-unit>
       <trans-unit id="7818" resname="r423495500" restype="string" datatype="x-haml">
         <source>And because our apps run on any mobile device or computer (tablets, phones, PCs) you can run your ViP from anywhere at any time at no cost. Imagine sitting on the beach while on vacation, and still managing to save lives.</source>
-        <target>由于我们的应用程序可以在任何移动设备或计算机（平板电脑，手机，电脑）上运行，您可以随时随地免费运行您的ViP。想象一下，在度假时坐在海滩，确仍然可以挽救生命。</target>
+        <target>由于我们的应用程序可以在任何移动设备或计算机（平板电脑，手机，电脑）上运行，您可以随时随地免费运行您的ViP。想象一下，在度假时坐在海滩，却仍然可以挽救生命。</target>
       </trans-unit>
       <trans-unit id="7819" resname="r553013995" restype="string" datatype="x-haml">
         <source>Get your own free personalized profile page</source>
@@ -9288,11 +9288,11 @@
       </trans-unit>
       <trans-unit id="7821" resname="r2620795" restype="string" datatype="x-haml">
         <source>your existing website or blog as a way to promote your practice and interact with your patients 24/7.</source>
-        <target>您现有的网站或博客，作为一种方式来宣传您的诊疗和与您与患者的全天24小时的互动。</target>
+        <target>您现有的网站或博客，作为一种方式来宣传您的诊疗，让您与患者可以全天24小时互动。</target>
       </trans-unit>
       <trans-unit id="7822" resname="r957424213" restype="string" datatype="x-haml">
         <source>Connect, reconnect, learn, and have fun!</source>
-        <target>连接，重新连接，学习，并且有乐趣！</target>
+        <target>连接，重新连接，学习，并且乐在其中！</target>
       </trans-unit>
       <trans-unit id="7823" resname="r646639569" restype="string" datatype="x-haml">
         <source>You’ll enjoy a high-energy, collaborative environment with colleagues and people who are as passionate about promoting</source>
@@ -9304,7 +9304,7 @@
       </trans-unit>
       <trans-unit id="7825" resname="r678942392" restype="string" datatype="x-haml">
         <source>Grow your own practice</source>
-        <target>成长您自己的诊疗</target>
+        <target>扩大您的诊疗范围</target>
       </trans-unit>
       <trans-unit id="7826" resname="r627228561" restype="string" datatype="x-haml">
         <source>You’ll get more patients to your real-world practice, your institution, or your Virtual Practice while serving existing patients better.</source>
@@ -9480,7 +9480,7 @@
       </trans-unit>
       <trans-unit id="7869" resname="r1004273586" restype="string" datatype="x-haml">
         <source>through HealthTap Global Rounds. Doctors can access peer-reviewed medical literature, and use that knowledge to respond to real medical questions from real HealthTap members. Inspired by the tradition of medical education through grand rounds, HealthTap Global Rounds also allows doctors to submit challenging, interesting, or unsolved medical cases for debate and discussion.</source>
-        <target>通过HealthTap全球巡回。医生可以访问同行评审的医学文献，并利用这些知识来回复真实的HealthTap会员的真实的医学问题。通过全球巡回受到传统医学教育的启发，HealthTap全球回合也允许医生提交具有挑战性的，有趣的或未解决的医学案例进行辩论和讨论。</target>
+        <target>通过HealthTap全球巡回。医生可以访问同行评审的医学文献，并利用这些知识来回复真实的HealthTap会员的真实的医学问题。通过全球巡回受到传统医学教育的启发，HealthTap全球巡回也允许医生提交具有挑战性的，有趣的或未解决的医学案例进行辩论和讨论。</target>
       </trans-unit>
       <trans-unit id="7871" resname="r944366247" restype="string" datatype="x-haml">
         <source>earning AMA PRA Category 1 Credits</source>

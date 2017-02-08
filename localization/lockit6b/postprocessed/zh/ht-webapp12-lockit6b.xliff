@@ -3438,11 +3438,11 @@
       </trans-unit>
       <trans-unit id="2573" resname="r1035600553" restype="string" datatype="x-haml">
         <source>makes this possible!</source>
-        <target state="translated">变成可能！</target>
+        <target state="translated">让这一切变成可能！</target>
       </trans-unit>
       <trans-unit id="2574" resname="r423495500" restype="string" datatype="x-haml">
         <source>And because our apps run on any mobile device or computer (tablets, phones, PCs) you can run your ViP from anywhere at any time at no cost. Imagine sitting on the beach while on vacation, and still managing to save lives.</source>
-        <target state="translated">由于我们的应用程序可以在任何移动设备或计算机（平板电脑，手机，电脑）上运行，您可以随时随地免费运行您的ViP。想象一下，在度假时坐在海滩，确仍然可以挽救生命。</target>
+        <target state="translated">由于我们的应用程序可以在任何移动设备或计算机（平板电脑，手机，电脑）上运行，您可以随时随地免费运行您的ViP。想象一下，在度假时坐在海滩，却仍然可以挽救生命。</target>
       </trans-unit>
       <trans-unit id="2575" resname="r947066598" restype="string" datatype="x-haml">
         <source>health and well-being as you are! Catch up with your medical school classmates and with colleagues from residencies, fellowships, and practices. Introduce yourself to all the distinguished colleagues who are waiting to connect with you on</source>
@@ -3478,7 +3478,7 @@
       </trans-unit>
       <trans-unit id="2583" resname="r1004273586" restype="string" datatype="x-haml">
         <source>through HealthTap Global Rounds. Doctors can access peer-reviewed medical literature, and use that knowledge to respond to real medical questions from real HealthTap members. Inspired by the tradition of medical education through grand rounds, HealthTap Global Rounds also allows doctors to submit challenging, interesting, or unsolved medical cases for debate and discussion.</source>
-        <target state="translated">通过HealthTap全球巡回。医生可以访问同行评审的医学文献，并利用这些知识来回复真实的HealthTap会员的真实的医学问题。通过全球巡回受到传统医学教育的启发，HealthTap全球回合也允许医生提交具有挑战性的，有趣的或未解决的医学案例进行辩论和讨论。</target>
+        <target state="translated">通过HealthTap全球巡回。医生可以访问同行评审的医学文献，并利用这些知识来回复真实的HealthTap会员的真实的医学问题。通过全球巡回受到传统医学教育的启发，HealthTap全球巡回也允许医生提交具有挑战性的，有趣的或未解决的医学案例进行辩论和讨论。</target>
       </trans-unit>
       <trans-unit id="2584" resname="r359514405" restype="string" datatype="x-haml">
         <source>anytime, anywhere</source>
