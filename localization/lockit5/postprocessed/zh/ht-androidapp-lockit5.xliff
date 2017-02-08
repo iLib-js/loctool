@@ -258,7 +258,7 @@
       </trans-unit>
       <trans-unit id="2021" resname="location_confirmation_content_text" restype="string" datatype="x-android-resource">
         <source>Please confirm so we can connect you with the right doctor who is licensed to help you in your state or country.</source>
-        <target>请确认，以便我们为您联系在您的州或国家具备向您提供建议和治疗方法执业资格的合适的医生。</target>
+        <target>请确认，以便我们为您联系在您的州或国家拥有执业执照能够向您提供建议和治疗方法合适的医生。</target>
       </trans-unit>
       <trans-unit id="2191" resname="translation_attribution" restype="string" datatype="x-android-resource">
         <source>Translation approved by HealthTap doctors</source>
@@ -409,7 +409,7 @@
       </trans-unit>
       <trans-unit id="2253" resname="symptom_triage_refinement_questions" restype="string" datatype="x-android-resource">
         <source>Refine symptoms</source>
-        <target>改善症状</target>
+        <target>完善症状</target>
       </trans-unit>
       <trans-unit id="2254" resname="symptom_triage_refinement_splash_title" restype="string" datatype="x-android-resource">
         <source>Help us better understand the {attribute_name}</source>
@@ -515,7 +515,7 @@
       </trans-unit>
       <trans-unit id="2285" resname="symptom_triage_care_options_description" restype="string" datatype="x-android-resource">
         <source>our doctors ordered these suggested actions on your road to feeling better. What would you like to do?</source>
-        <target>我们的医生在您通向感觉更好的路上安排了这些推荐性行动。您希望做什么？</target>
+        <target>我们的医生在您通向感觉更好的路上安排了这些相关行动推荐。您希望做什么？</target>
       </trans-unit>
       <trans-unit id="2286" resname="symptom_triage_condition_report" restype="string" datatype="x-android-resource">
         <source>Creating report</source>

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2">
+  <file original="res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="50" resname="period" restype="string" datatype="x-android-resource">
+        <source>.</source>
+        <target>。</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="res/values/arrays.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="2430" resname="living_relationship_age" restype="array" datatype="x-android-resource" extype="21">

@@ -29,7 +29,7 @@
     <body>
       <trans-unit id="1199" resname="r565514845" restype="string" datatype="java">
         <source>We'll share more tips and checklists to help you with {0}</source>
-        <target>我们会分享更多的小贴士和清单来帮助您{0}</target>
+        <target>我们会分享更多关于{0}的小贴士和清单来帮助您</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
     </body>

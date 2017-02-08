@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="2" resname="r465894884" restype="string" datatype="java">
         <source>Test Name:</source>
-        <target state="translated">测试姓名：</target>
+        <target state="translated">测试名称：</target>
       </trans-unit>
     </body>
   </file>
@@ -100,7 +100,7 @@
       </trans-unit>
       <trans-unit id="16" resname="r142482154" restype="string" datatype="java">
         <source>agreed with {author_name}'s tip on {topic_name}</source>
-        <target state="translated">同意{author_name}在\n{topic_name}的小贴士</target>
+        <target state="translated">同意{author_name}关于\n{topic_name}的小贴士</target>
         <note annotates="source">Subject of this phrase is a doctor's name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
     </body>
@@ -185,7 +185,7 @@
     <body>
       <trans-unit id="29" resname="r843399816" restype="string" datatype="java">
         <source>There are no checklists for this goal yet. Want a personalized checklist?</source>
-        <target state="translated">没有这个目标的清单。\n想要个性化的清单吗？</target>
+        <target state="translated">尚无此目标清单。\n想要专属于您的清单吗？</target>
       </trans-unit>
     </body>
   </file>
@@ -197,7 +197,7 @@
       </trans-unit>
       <trans-unit id="31" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target state="translated">您有后续问题吗？立刻在线询问医生：</target>
+        <target state="translated">您有随访问题吗？立即在线询问医生：</target>
       </trans-unit>
     </body>
   </file>
@@ -237,7 +237,7 @@
     <body>
       <trans-unit id="37" resname="r920181258" restype="string" datatype="java">
         <source>Does {first_name}'s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
-        <target state="translated">您{first_name}健在的祖父母、父母或兄弟姐妹有什么主要病史吗？(危及生命或以其他？)</target>
+        <target state="translated">{first_name}健在的祖父母、父母或兄弟姐妹有什么主要病史吗？(危及生命或其他？)</target>
       </trans-unit>
     </body>
   </file>
@@ -253,7 +253,7 @@
     <body>
       <trans-unit id="39" resname="r595763610" restype="string" datatype="java">
         <source>What is {first_name}'s relationship to you</source>
-        <target state="translated">{first_name}和您的关系式什么？</target>
+        <target state="translated">{first_name}和您的关系是什么？</target>
       </trans-unit>
     </body>
   </file>
@@ -454,7 +454,7 @@
       </trans-unit>
       <trans-unit id="82" resname="r860822785" restype="string" datatype="x-android-resource">
         <source>You're account has been deactivated and you've been logged out. We hope you come back soon :)</source>
-        <target state="translated">您的账户已被冻结，您已退出登录。我们希望能您尽快回来 :)</target>
+        <target state="translated">您的账户已被停用，您已退出登录。我们希望能您尽快回来 :)</target>
       </trans-unit>
       <trans-unit id="83" resname="r895141403" restype="string" datatype="x-android-resource">
         <source>We couldn't downgrade your plan. Please try again or contact support if the problem persists.</source>
@@ -487,7 +487,7 @@
       </trans-unit>
       <trans-unit id="90" resname="r762155906" restype="string" datatype="x-android-resource">
         <source>We'll let you know when doctors add more answers or comments.</source>
-        <target state="translated">我们会告诉您医生增加更多的回答和评论。</target>
+        <target state="translated">我们会在医生添加更多回答或评论时会告诉您。</target>
       </trans-unit>
       <trans-unit id="91" resname="r380153215" restype="string" datatype="x-android-resource">
         <source>We'll share more insights related to this topic from now on.</source>
@@ -500,12 +500,12 @@
       </trans-unit>
       <trans-unit id="94" resname="r565514845" restype="string" datatype="x-android-resource">
         <source>We'll share more tips and checklists to help you with {0}</source>
-        <target state="translated">我们会分享更多的小贴士和清单来帮助您{0}</target>
+        <target state="translated">我们会分享更多关于{0}的小贴士和清单来帮助您</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
       <trans-unit id="95" resname="r45009371" restype="string" datatype="x-android-resource">
         <source>Near you</source>
-        <target state="translated">靠近您</target>
+        <target state="translated">靠近 您</target>
       </trans-unit>
       <trans-unit id="96" resname="r563885918" restype="string" datatype="x-android-resource">
         <source>Ask {doctor_name} a question...</source>
@@ -608,14 +608,6 @@
       <trans-unit id="2889" resname="countries" restype="array" datatype="x-android-resource" extype="199">
         <source>Zimbabwe</source>
         <target state="translated">津巴布韦</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="res/values/plurals.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
-    <body>
-      <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="one">
-        <source>Thanks! {start}1{end} symptom added.\nAny additional symptoms?</source>
-        <target state="translated">谢谢！{start}%d{end}个症状已添加。\n有其他症状吗？</target>
       </trans-unit>
     </body>
   </file>
