@@ -13585,7 +13585,7 @@ with an available primary care doctor</source>
       </trans-unit>
       <trans-unit id="doctor" resname="doctor" restype="string" datatype="x-objective-c">
         <source>doctor</source>
-        <target>医生</target>
+        <target>名医生</target>
         <note annotates="source">part of : 1 doctor responded
    Used in feed: 1 doctor agreed or found useful</note>
       </trans-unit>
@@ -13596,38 +13596,38 @@ with an available primary care doctor</source>
       </trans-unit>
       <trans-unit id="doctors" resname="doctors" restype="string" datatype="x-objective-c">
         <source>doctors</source>
-        <target>医生</target>
+        <target>名医生</target>
         <note annotates="source">part of: 10 doctors responded
    Used in feed: X doctors agreed or found useful</note>
       </trans-unit>
       <trans-unit id="doctors agree" resname="doctors agree" restype="string" datatype="x-objective-c">
         <source>doctors agree</source>
-        <target>医生同意</target>
+        <target>名医生同意</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="doctors agreed" resname="doctors agreed" restype="string" datatype="x-objective-c">
         <source>doctors agreed</source>
-        <target>医生已同意</target>
+        <target>名医生已同意</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="doctors endorsed" resname="doctors endorsed" restype="string" datatype="x-objective-c">
         <source>doctors endorsed</source>
-        <target>医生已批准</target>
+        <target>名医生已批准</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="doctors recommended" resname="doctors recommended" restype="string" datatype="x-objective-c">
         <source>doctors recommended</source>
-        <target>医生已建议</target>
+        <target>名医生已建议</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="doctors responded" resname="doctors responded" restype="string" datatype="x-objective-c">
         <source>doctors responded</source>
-        <target>医生已回答</target>
+        <target>名医生已回答</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="doctors shared insights" resname="doctors shared insights" restype="string" datatype="x-objective-c">
         <source>doctors shared insights</source>
-        <target>医生分享了见解</target>
+        <target>名医生分享了见解</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="e.g. &quot;Managing Stress&quot;" resname="e.g. &amp;quot;Managing Stress&amp;quot;" restype="string" datatype="x-objective-c">
