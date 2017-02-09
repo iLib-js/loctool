@@ -43450,7 +43450,7 @@
       </trans-unit>
       <trans-unit id="10062" resname="Voted" restype="string" datatype="javascript">
         <source>Voted</source>
-        <target state="translated">投票</target>
+        <target state="translated">已投票</target>
       </trans-unit>
       <trans-unit id="10063" resname="App voted!" restype="string" datatype="javascript">
         <source>App voted!</source>
