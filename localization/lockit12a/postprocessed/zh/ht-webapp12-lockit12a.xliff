@@ -120,4 +120,880 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/static_pages/raterx_results.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="36" resname="r888749929" restype="string" datatype="ruby">
+        <source>medications</source>
+        <target state="translated">药物</target>
+      </trans-unit>
+      <trans-unit id="37" resname="r108533132" restype="string" datatype="ruby">
+        <source>medication</source>
+        <target state="translated">药物</target>
+      </trans-unit>
+      <trans-unit id="38" resname="r301733980" restype="string" datatype="ruby">
+        <source>procedures</source>
+        <target state="translated">临床操作</target>
+      </trans-unit>
+      <trans-unit id="39" resname="r1066207914" restype="string" datatype="ruby">
+        <source>procedure</source>
+        <target state="translated">临床操作</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="57" resname="r154799176" restype="string" datatype="ruby">
+        <source>Healthtap Member</source>
+        <target state="translated">HealthTap会员</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/expert.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="211" resname="r25035652" restype="string" datatype="ruby">
+        <source>Medical Student</source>
+        <target state="translated">医学专业的学生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="213" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">正在生成从{start_date}到{end_date}的报酬报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/credit_card_simple.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="214" resname="United States" restype="string" datatype="javascript">
+        <source>United States</source>
+        <target state="translated">美国</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="215" resname="Afghanistan" restype="string" datatype="javascript">
+        <source>Afghanistan</source>
+        <target state="translated">阿富汗</target>
+      </trans-unit>
+      <trans-unit id="216" resname="Albania" restype="string" datatype="javascript">
+        <source>Albania</source>
+        <target state="translated">阿尔巴尼亚</target>
+      </trans-unit>
+      <trans-unit id="217" resname="Algeria" restype="string" datatype="javascript">
+        <source>Algeria</source>
+        <target state="translated">阿尔及利亚</target>
+      </trans-unit>
+      <trans-unit id="218" resname="Andorra" restype="string" datatype="javascript">
+        <source>Andorra</source>
+        <target state="translated">安道尔</target>
+      </trans-unit>
+      <trans-unit id="219" resname="Angola" restype="string" datatype="javascript">
+        <source>Angola</source>
+        <target state="translated">安哥拉</target>
+      </trans-unit>
+      <trans-unit id="220" resname="Antigua and Barbuda" restype="string" datatype="javascript">
+        <source>Antigua and Barbuda</source>
+        <target state="translated">安提瓜和巴布达</target>
+      </trans-unit>
+      <trans-unit id="221" resname="Argentina" restype="string" datatype="javascript">
+        <source>Argentina</source>
+        <target state="translated">阿根廷</target>
+      </trans-unit>
+      <trans-unit id="222" resname="Armenia" restype="string" datatype="javascript">
+        <source>Armenia</source>
+        <target state="translated">亚美尼亚</target>
+      </trans-unit>
+      <trans-unit id="223" resname="Aruba" restype="string" datatype="javascript">
+        <source>Aruba</source>
+        <target state="translated">阿鲁巴</target>
+      </trans-unit>
+      <trans-unit id="224" resname="Australia" restype="string" datatype="javascript">
+        <source>Australia</source>
+        <target state="translated">澳大利亚</target>
+      </trans-unit>
+      <trans-unit id="225" resname="Austria" restype="string" datatype="javascript">
+        <source>Austria</source>
+        <target state="translated">奥地利</target>
+      </trans-unit>
+      <trans-unit id="226" resname="Azerbaijan" restype="string" datatype="javascript">
+        <source>Azerbaijan</source>
+        <target state="translated">奥地利</target>
+      </trans-unit>
+      <trans-unit id="227" resname="Bahamas, The" restype="string" datatype="javascript">
+        <source>Bahamas, The</source>
+        <target state="translated">巴哈马的</target>
+      </trans-unit>
+      <trans-unit id="228" resname="Bahrain" restype="string" datatype="javascript">
+        <source>Bahrain</source>
+        <target state="translated">巴林</target>
+      </trans-unit>
+      <trans-unit id="229" resname="Bangladesh" restype="string" datatype="javascript">
+        <source>Bangladesh</source>
+        <target state="translated">孟加拉国</target>
+      </trans-unit>
+      <trans-unit id="230" resname="Barbados" restype="string" datatype="javascript">
+        <source>Barbados</source>
+        <target state="translated">巴巴多斯</target>
+      </trans-unit>
+      <trans-unit id="231" resname="Belarus" restype="string" datatype="javascript">
+        <source>Belarus</source>
+        <target state="translated">白俄罗斯</target>
+      </trans-unit>
+      <trans-unit id="232" resname="Belgium" restype="string" datatype="javascript">
+        <source>Belgium</source>
+        <target state="translated">比利时</target>
+      </trans-unit>
+      <trans-unit id="233" resname="Belize" restype="string" datatype="javascript">
+        <source>Belize</source>
+        <target state="translated">伯利兹</target>
+      </trans-unit>
+      <trans-unit id="234" resname="Benin" restype="string" datatype="javascript">
+        <source>Benin</source>
+        <target state="translated">贝宁</target>
+      </trans-unit>
+      <trans-unit id="235" resname="Bhutan" restype="string" datatype="javascript">
+        <source>Bhutan</source>
+        <target state="translated">不丹</target>
+      </trans-unit>
+      <trans-unit id="236" resname="Bolivia" restype="string" datatype="javascript">
+        <source>Bolivia</source>
+        <target state="translated">玻利维亚</target>
+      </trans-unit>
+      <trans-unit id="237" resname="Bosnia and Herzegovina" restype="string" datatype="javascript">
+        <source>Bosnia and Herzegovina</source>
+        <target state="translated">波黑</target>
+      </trans-unit>
+      <trans-unit id="238" resname="Botswana" restype="string" datatype="javascript">
+        <source>Botswana</source>
+        <target state="translated">博茨瓦纳</target>
+      </trans-unit>
+      <trans-unit id="239" resname="Brazil" restype="string" datatype="javascript">
+        <source>Brazil</source>
+        <target state="translated">巴西</target>
+      </trans-unit>
+      <trans-unit id="240" resname="Brunei" restype="string" datatype="javascript">
+        <source>Brunei</source>
+        <target state="translated">文莱</target>
+      </trans-unit>
+      <trans-unit id="241" resname="Bulgaria" restype="string" datatype="javascript">
+        <source>Bulgaria</source>
+        <target state="translated">保加利亚</target>
+      </trans-unit>
+      <trans-unit id="242" resname="Burkina Faso" restype="string" datatype="javascript">
+        <source>Burkina Faso</source>
+        <target state="translated">布基纳法索</target>
+      </trans-unit>
+      <trans-unit id="243" resname="Burma" restype="string" datatype="javascript">
+        <source>Burma</source>
+        <target state="translated">缅甸</target>
+      </trans-unit>
+      <trans-unit id="244" resname="Burundi" restype="string" datatype="javascript">
+        <source>Burundi</source>
+        <target state="translated">布隆迪</target>
+      </trans-unit>
+      <trans-unit id="245" resname="Cambodia" restype="string" datatype="javascript">
+        <source>Cambodia</source>
+        <target state="translated">柬埔寨</target>
+      </trans-unit>
+      <trans-unit id="246" resname="Cameroon" restype="string" datatype="javascript">
+        <source>Cameroon</source>
+        <target state="translated">喀麦隆</target>
+      </trans-unit>
+      <trans-unit id="247" resname="Canada" restype="string" datatype="javascript">
+        <source>Canada</source>
+        <target state="translated">加拿大</target>
+      </trans-unit>
+      <trans-unit id="248" resname="Cape Verde" restype="string" datatype="javascript">
+        <source>Cape Verde</source>
+        <target state="translated">佛得角</target>
+      </trans-unit>
+      <trans-unit id="249" resname="Central African Republic" restype="string" datatype="javascript">
+        <source>Central African Republic</source>
+        <target state="translated">中非共和国</target>
+      </trans-unit>
+      <trans-unit id="250" resname="Chad" restype="string" datatype="javascript">
+        <source>Chad</source>
+        <target state="translated">乍得</target>
+      </trans-unit>
+      <trans-unit id="251" resname="Chile" restype="string" datatype="javascript">
+        <source>Chile</source>
+        <target state="translated">智利</target>
+      </trans-unit>
+      <trans-unit id="252" resname="China" restype="string" datatype="javascript">
+        <source>China</source>
+        <target state="translated">中国</target>
+      </trans-unit>
+      <trans-unit id="253" resname="Colombia" restype="string" datatype="javascript">
+        <source>Colombia</source>
+        <target state="translated">哥伦比亚</target>
+      </trans-unit>
+      <trans-unit id="254" resname="Comoros" restype="string" datatype="javascript">
+        <source>Comoros</source>
+        <target state="translated">科摩罗</target>
+      </trans-unit>
+      <trans-unit id="255" resname="Congo, Democratic Republic of the" restype="string" datatype="javascript">
+        <source>Congo, Democratic Republic of the</source>
+        <target state="translated">刚果民主共和国</target>
+      </trans-unit>
+      <trans-unit id="256" resname="Congo, Republic of the" restype="string" datatype="javascript">
+        <source>Congo, Republic of the</source>
+        <target state="translated">刚果共和国</target>
+      </trans-unit>
+      <trans-unit id="257" resname="Costa Rica" restype="string" datatype="javascript">
+        <source>Costa Rica</source>
+        <target state="translated">哥斯达黎加</target>
+      </trans-unit>
+      <trans-unit id="258" resname="Cote d&apos;Ivoire" restype="string" datatype="javascript">
+        <source>Cote d'Ivoire</source>
+        <target state="translated">科特迪瓦</target>
+      </trans-unit>
+      <trans-unit id="259" resname="Croatia" restype="string" datatype="javascript">
+        <source>Croatia</source>
+        <target state="translated">克罗地亚</target>
+      </trans-unit>
+      <trans-unit id="260" resname="Cuba" restype="string" datatype="javascript">
+        <source>Cuba</source>
+        <target state="translated">古巴</target>
+      </trans-unit>
+      <trans-unit id="261" resname="Curacao" restype="string" datatype="javascript">
+        <source>Curacao</source>
+        <target state="translated">库腊索岛</target>
+      </trans-unit>
+      <trans-unit id="262" resname="Cyprus" restype="string" datatype="javascript">
+        <source>Cyprus</source>
+        <target state="translated">塞浦路斯</target>
+      </trans-unit>
+      <trans-unit id="263" resname="Czech Republic" restype="string" datatype="javascript">
+        <source>Czech Republic</source>
+        <target state="translated">捷克共和国</target>
+      </trans-unit>
+      <trans-unit id="264" resname="Denmark" restype="string" datatype="javascript">
+        <source>Denmark</source>
+        <target state="translated">丹麦</target>
+      </trans-unit>
+      <trans-unit id="265" resname="Djibouti" restype="string" datatype="javascript">
+        <source>Djibouti</source>
+        <target state="translated">吉布提</target>
+      </trans-unit>
+      <trans-unit id="266" resname="Dominica" restype="string" datatype="javascript">
+        <source>Dominica</source>
+        <target state="translated">多米尼加</target>
+      </trans-unit>
+      <trans-unit id="267" resname="Dominican Republic" restype="string" datatype="javascript">
+        <source>Dominican Republic</source>
+        <target state="translated">多明尼加共和国</target>
+      </trans-unit>
+      <trans-unit id="268" resname="East Timor" restype="string" datatype="javascript">
+        <source>East Timor</source>
+        <target state="translated">东帝汶</target>
+      </trans-unit>
+      <trans-unit id="269" resname="Ecuador" restype="string" datatype="javascript">
+        <source>Ecuador</source>
+        <target state="translated">厄瓜多尔</target>
+      </trans-unit>
+      <trans-unit id="270" resname="Egypt" restype="string" datatype="javascript">
+        <source>Egypt</source>
+        <target state="translated">埃及</target>
+      </trans-unit>
+      <trans-unit id="271" resname="El Salvador" restype="string" datatype="javascript">
+        <source>El Salvador</source>
+        <target state="translated">萨尔瓦多</target>
+      </trans-unit>
+      <trans-unit id="272" resname="Equatorial Guinea" restype="string" datatype="javascript">
+        <source>Equatorial Guinea</source>
+        <target state="translated">赤道几内亚</target>
+      </trans-unit>
+      <trans-unit id="273" resname="Eritrea" restype="string" datatype="javascript">
+        <source>Eritrea</source>
+        <target state="translated">厄立特里亚</target>
+      </trans-unit>
+      <trans-unit id="274" resname="Estonia" restype="string" datatype="javascript">
+        <source>Estonia</source>
+        <target state="translated">爱沙尼亚</target>
+      </trans-unit>
+      <trans-unit id="275" resname="Ethiopia" restype="string" datatype="javascript">
+        <source>Ethiopia</source>
+        <target state="translated">埃塞俄比亚</target>
+      </trans-unit>
+      <trans-unit id="276" resname="Fiji" restype="string" datatype="javascript">
+        <source>Fiji</source>
+        <target state="translated">斐济</target>
+      </trans-unit>
+      <trans-unit id="277" resname="Finland" restype="string" datatype="javascript">
+        <source>Finland</source>
+        <target state="translated">芬兰</target>
+      </trans-unit>
+      <trans-unit id="278" resname="France" restype="string" datatype="javascript">
+        <source>France</source>
+        <target state="translated">法国</target>
+      </trans-unit>
+      <trans-unit id="279" resname="Gabon" restype="string" datatype="javascript">
+        <source>Gabon</source>
+        <target state="translated">加蓬</target>
+      </trans-unit>
+      <trans-unit id="280" resname="Gambia" restype="string" datatype="javascript">
+        <source>Gambia</source>
+        <target state="translated">冈比亚</target>
+      </trans-unit>
+      <trans-unit id="281" resname="Georgia" restype="string" datatype="javascript">
+        <source>Georgia</source>
+        <target state="translated">格鲁吉亚</target>
+      </trans-unit>
+      <trans-unit id="282" resname="Germany" restype="string" datatype="javascript">
+        <source>Germany</source>
+        <target state="translated">德国</target>
+      </trans-unit>
+      <trans-unit id="283" resname="Ghana" restype="string" datatype="javascript">
+        <source>Ghana</source>
+        <target state="translated">加纳</target>
+      </trans-unit>
+      <trans-unit id="284" resname="Greece" restype="string" datatype="javascript">
+        <source>Greece</source>
+        <target state="translated">希腊</target>
+      </trans-unit>
+      <trans-unit id="285" resname="Grenada" restype="string" datatype="javascript">
+        <source>Grenada</source>
+        <target state="translated">格拉纳达</target>
+      </trans-unit>
+      <trans-unit id="286" resname="Guatemala" restype="string" datatype="javascript">
+        <source>Guatemala</source>
+        <target state="translated">危地马拉</target>
+      </trans-unit>
+      <trans-unit id="287" resname="Guinea" restype="string" datatype="javascript">
+        <source>Guinea</source>
+        <target state="translated">几内亚</target>
+      </trans-unit>
+      <trans-unit id="289" resname="Guyana" restype="string" datatype="javascript">
+        <source>Guyana</source>
+        <target state="translated">圭亚那</target>
+      </trans-unit>
+      <trans-unit id="290" resname="Haiti" restype="string" datatype="javascript">
+        <source>Haiti</source>
+        <target state="translated">海地</target>
+      </trans-unit>
+      <trans-unit id="291" resname="Holy See" restype="string" datatype="javascript">
+        <source>Holy See</source>
+        <target state="translated">梵蒂冈</target>
+      </trans-unit>
+      <trans-unit id="292" resname="Honduras" restype="string" datatype="javascript">
+        <source>Honduras</source>
+        <target state="translated">洪都拉斯</target>
+      </trans-unit>
+      <trans-unit id="293" resname="Hong Kong" restype="string" datatype="javascript">
+        <source>Hong Kong</source>
+        <target state="translated">香港</target>
+      </trans-unit>
+      <trans-unit id="294" resname="Hungary" restype="string" datatype="javascript">
+        <source>Hungary</source>
+        <target state="translated">匈牙利</target>
+      </trans-unit>
+      <trans-unit id="295" resname="Iceland" restype="string" datatype="javascript">
+        <source>Iceland</source>
+        <target state="translated">冰岛</target>
+      </trans-unit>
+      <trans-unit id="296" resname="India" restype="string" datatype="javascript">
+        <source>India</source>
+        <target state="translated">印度</target>
+      </trans-unit>
+      <trans-unit id="297" resname="Indonesia" restype="string" datatype="javascript">
+        <source>Indonesia</source>
+        <target state="translated">印度尼西亚</target>
+      </trans-unit>
+      <trans-unit id="298" resname="Iran" restype="string" datatype="javascript">
+        <source>Iran</source>
+        <target state="translated">伊朗</target>
+      </trans-unit>
+      <trans-unit id="299" resname="Iraq" restype="string" datatype="javascript">
+        <source>Iraq</source>
+        <target state="translated">伊拉克</target>
+      </trans-unit>
+      <trans-unit id="300" resname="Ireland" restype="string" datatype="javascript">
+        <source>Ireland</source>
+        <target state="translated">爱尔兰</target>
+      </trans-unit>
+      <trans-unit id="301" resname="Israel" restype="string" datatype="javascript">
+        <source>Israel</source>
+        <target state="translated">以色列</target>
+      </trans-unit>
+      <trans-unit id="302" resname="Italy" restype="string" datatype="javascript">
+        <source>Italy</source>
+        <target state="translated">意大利</target>
+      </trans-unit>
+      <trans-unit id="303" resname="Jamaica" restype="string" datatype="javascript">
+        <source>Jamaica</source>
+        <target state="translated">牙买加</target>
+      </trans-unit>
+      <trans-unit id="304" resname="Japan" restype="string" datatype="javascript">
+        <source>Japan</source>
+        <target state="translated">日本</target>
+      </trans-unit>
+      <trans-unit id="305" resname="Jordan" restype="string" datatype="javascript">
+        <source>Jordan</source>
+        <target state="translated">约旦</target>
+      </trans-unit>
+      <trans-unit id="306" resname="Kazakhstan" restype="string" datatype="javascript">
+        <source>Kazakhstan</source>
+        <target state="translated">哈萨克斯坦</target>
+      </trans-unit>
+      <trans-unit id="307" resname="Kenya" restype="string" datatype="javascript">
+        <source>Kenya</source>
+        <target state="translated">肯尼亚</target>
+      </trans-unit>
+      <trans-unit id="308" resname="Kiribati" restype="string" datatype="javascript">
+        <source>Kiribati</source>
+        <target state="translated">基里巴斯</target>
+      </trans-unit>
+      <trans-unit id="309" resname="Korea, North" restype="string" datatype="javascript">
+        <source>Korea, North</source>
+        <target state="translated">北朝鲜</target>
+      </trans-unit>
+      <trans-unit id="310" resname="Korea, South" restype="string" datatype="javascript">
+        <source>Korea, South</source>
+        <target state="translated">南朝鲜</target>
+      </trans-unit>
+      <trans-unit id="311" resname="Kosovo" restype="string" datatype="javascript">
+        <source>Kosovo</source>
+        <target state="translated">科索沃</target>
+      </trans-unit>
+      <trans-unit id="312" resname="Kuwait" restype="string" datatype="javascript">
+        <source>Kuwait</source>
+        <target state="translated">科威特</target>
+      </trans-unit>
+      <trans-unit id="313" resname="Kyrgyzstan" restype="string" datatype="javascript">
+        <source>Kyrgyzstan</source>
+        <target state="translated">吉尔吉斯斯坦</target>
+      </trans-unit>
+      <trans-unit id="314" resname="Laos" restype="string" datatype="javascript">
+        <source>Laos</source>
+        <target state="translated">老挝</target>
+      </trans-unit>
+      <trans-unit id="315" resname="Latvia" restype="string" datatype="javascript">
+        <source>Latvia</source>
+        <target state="translated">拉脱维亚</target>
+      </trans-unit>
+      <trans-unit id="316" resname="Lebanon" restype="string" datatype="javascript">
+        <source>Lebanon</source>
+        <target state="translated">黎巴嫩</target>
+      </trans-unit>
+      <trans-unit id="317" resname="Lesotho" restype="string" datatype="javascript">
+        <source>Lesotho</source>
+        <target state="translated">莱索托</target>
+      </trans-unit>
+      <trans-unit id="318" resname="Liberia" restype="string" datatype="javascript">
+        <source>Liberia</source>
+        <target state="translated">利比里亚</target>
+      </trans-unit>
+      <trans-unit id="319" resname="Libya" restype="string" datatype="javascript">
+        <source>Libya</source>
+        <target state="translated">利比亚</target>
+      </trans-unit>
+      <trans-unit id="320" resname="Liechtenstein" restype="string" datatype="javascript">
+        <source>Liechtenstein</source>
+        <target state="translated">列支敦士登</target>
+      </trans-unit>
+      <trans-unit id="321" resname="Lithuania" restype="string" datatype="javascript">
+        <source>Lithuania</source>
+        <target state="translated">立陶宛</target>
+      </trans-unit>
+      <trans-unit id="322" resname="Luxembourg" restype="string" datatype="javascript">
+        <source>Luxembourg</source>
+        <target state="translated">卢森堡</target>
+      </trans-unit>
+      <trans-unit id="323" resname="Macau" restype="string" datatype="javascript">
+        <source>Macau</source>
+        <target state="translated">澳门</target>
+      </trans-unit>
+      <trans-unit id="324" resname="Macedonia" restype="string" datatype="javascript">
+        <source>Macedonia</source>
+        <target state="translated">马其顿</target>
+      </trans-unit>
+      <trans-unit id="325" resname="Madagascar" restype="string" datatype="javascript">
+        <source>Madagascar</source>
+        <target state="translated">马达加斯加</target>
+      </trans-unit>
+      <trans-unit id="326" resname="Malawi" restype="string" datatype="javascript">
+        <source>Malawi</source>
+        <target state="translated">马拉维</target>
+      </trans-unit>
+      <trans-unit id="327" resname="Malaysia" restype="string" datatype="javascript">
+        <source>Malaysia</source>
+        <target state="translated">马来西亚</target>
+      </trans-unit>
+      <trans-unit id="328" resname="Maldives" restype="string" datatype="javascript">
+        <source>Maldives</source>
+        <target state="translated">马尔代夫</target>
+      </trans-unit>
+      <trans-unit id="329" resname="Mali" restype="string" datatype="javascript">
+        <source>Mali</source>
+        <target state="translated">马里</target>
+      </trans-unit>
+      <trans-unit id="330" resname="Malta" restype="string" datatype="javascript">
+        <source>Malta</source>
+        <target state="translated">马耳他</target>
+      </trans-unit>
+      <trans-unit id="331" resname="Marshall Islands" restype="string" datatype="javascript">
+        <source>Marshall Islands</source>
+        <target state="translated">马绍尔群岛</target>
+      </trans-unit>
+      <trans-unit id="332" resname="Mauritania" restype="string" datatype="javascript">
+        <source>Mauritania</source>
+        <target state="translated">毛里塔尼亚</target>
+      </trans-unit>
+      <trans-unit id="333" resname="Mauritius" restype="string" datatype="javascript">
+        <source>Mauritius</source>
+        <target state="translated">毛里求斯</target>
+      </trans-unit>
+      <trans-unit id="334" resname="Mexico" restype="string" datatype="javascript">
+        <source>Mexico</source>
+        <target state="translated">墨西哥</target>
+      </trans-unit>
+      <trans-unit id="335" resname="Micronesia" restype="string" datatype="javascript">
+        <source>Micronesia</source>
+        <target state="translated">密克罗尼西亚</target>
+      </trans-unit>
+      <trans-unit id="336" resname="Moldova" restype="string" datatype="javascript">
+        <source>Moldova</source>
+        <target state="translated">摩尔多瓦</target>
+      </trans-unit>
+      <trans-unit id="337" resname="Monaco" restype="string" datatype="javascript">
+        <source>Monaco</source>
+        <target state="translated">摩纳哥</target>
+      </trans-unit>
+      <trans-unit id="338" resname="Mongolia" restype="string" datatype="javascript">
+        <source>Mongolia</source>
+        <target state="translated">蒙古</target>
+      </trans-unit>
+      <trans-unit id="339" resname="Montenegro" restype="string" datatype="javascript">
+        <source>Montenegro</source>
+        <target state="translated">黑山</target>
+      </trans-unit>
+      <trans-unit id="340" resname="Morocco" restype="string" datatype="javascript">
+        <source>Morocco</source>
+        <target state="translated">摩洛哥</target>
+      </trans-unit>
+      <trans-unit id="341" resname="Mozambique" restype="string" datatype="javascript">
+        <source>Mozambique</source>
+        <target state="translated">莫桑比克</target>
+      </trans-unit>
+      <trans-unit id="342" resname="Namibia" restype="string" datatype="javascript">
+        <source>Namibia</source>
+        <target state="translated">纳米比亚</target>
+      </trans-unit>
+      <trans-unit id="343" resname="Nauru" restype="string" datatype="javascript">
+        <source>Nauru</source>
+        <target state="translated">瑙鲁</target>
+      </trans-unit>
+      <trans-unit id="344" resname="Nepal" restype="string" datatype="javascript">
+        <source>Nepal</source>
+        <target state="translated">尼泊尔</target>
+      </trans-unit>
+      <trans-unit id="345" resname="Netherlands" restype="string" datatype="javascript">
+        <source>Netherlands</source>
+        <target state="translated">荷兰</target>
+      </trans-unit>
+      <trans-unit id="346" resname="Netherlands Antilles" restype="string" datatype="javascript">
+        <source>Netherlands Antilles</source>
+        <target state="translated">荷属安的列斯群岛</target>
+      </trans-unit>
+      <trans-unit id="347" resname="New Zealand" restype="string" datatype="javascript">
+        <source>New Zealand</source>
+        <target state="translated">新西兰</target>
+      </trans-unit>
+      <trans-unit id="348" resname="Nicaragua" restype="string" datatype="javascript">
+        <source>Nicaragua</source>
+        <target state="translated">尼加拉瓜</target>
+      </trans-unit>
+      <trans-unit id="349" resname="Niger" restype="string" datatype="javascript">
+        <source>Niger</source>
+        <target state="translated">尼日尔</target>
+      </trans-unit>
+      <trans-unit id="350" resname="Nigeria" restype="string" datatype="javascript">
+        <source>Nigeria</source>
+        <target state="translated">尼日利亚</target>
+      </trans-unit>
+      <trans-unit id="351" resname="North Korea" restype="string" datatype="javascript">
+        <source>North Korea</source>
+        <target state="translated">北朝鲜</target>
+      </trans-unit>
+      <trans-unit id="352" resname="Norway" restype="string" datatype="javascript">
+        <source>Norway</source>
+        <target state="translated">挪威</target>
+      </trans-unit>
+      <trans-unit id="353" resname="Oman" restype="string" datatype="javascript">
+        <source>Oman</source>
+        <target state="translated">阿曼</target>
+      </trans-unit>
+      <trans-unit id="354" resname="Pakistan" restype="string" datatype="javascript">
+        <source>Pakistan</source>
+        <target state="translated">巴基斯坦</target>
+      </trans-unit>
+      <trans-unit id="355" resname="Palau" restype="string" datatype="javascript">
+        <source>Palau</source>
+        <target state="translated">帕劳</target>
+      </trans-unit>
+      <trans-unit id="356" resname="Palestinian Territories" restype="string" datatype="javascript">
+        <source>Palestinian Territories</source>
+        <target state="translated">巴勒斯坦</target>
+      </trans-unit>
+      <trans-unit id="357" resname="Panama" restype="string" datatype="javascript">
+        <source>Panama</source>
+        <target state="translated">巴拿马</target>
+      </trans-unit>
+      <trans-unit id="358" resname="Papua New Guinea" restype="string" datatype="javascript">
+        <source>Papua New Guinea</source>
+        <target state="translated">巴布亚新几内亚</target>
+      </trans-unit>
+      <trans-unit id="359" resname="Paraguay" restype="string" datatype="javascript">
+        <source>Paraguay</source>
+        <target state="translated">巴拉圭</target>
+      </trans-unit>
+      <trans-unit id="360" resname="Peru" restype="string" datatype="javascript">
+        <source>Peru</source>
+        <target state="translated">秘鲁</target>
+      </trans-unit>
+      <trans-unit id="361" resname="Philippines" restype="string" datatype="javascript">
+        <source>Philippines</source>
+        <target state="translated">菲律宾</target>
+      </trans-unit>
+      <trans-unit id="362" resname="Poland" restype="string" datatype="javascript">
+        <source>Poland</source>
+        <target state="translated">波兰</target>
+      </trans-unit>
+      <trans-unit id="363" resname="Portugal" restype="string" datatype="javascript">
+        <source>Portugal</source>
+        <target state="translated">葡萄牙</target>
+      </trans-unit>
+      <trans-unit id="364" resname="Qatar" restype="string" datatype="javascript">
+        <source>Qatar</source>
+        <target state="translated">卡塔尔</target>
+      </trans-unit>
+      <trans-unit id="365" resname="Romania" restype="string" datatype="javascript">
+        <source>Romania</source>
+        <target state="translated">罗马尼亚</target>
+      </trans-unit>
+      <trans-unit id="366" resname="Russia" restype="string" datatype="javascript">
+        <source>Russia</source>
+        <target state="translated">俄罗斯</target>
+      </trans-unit>
+      <trans-unit id="367" resname="Rwanda" restype="string" datatype="javascript">
+        <source>Rwanda</source>
+        <target state="translated">卢旺达</target>
+      </trans-unit>
+      <trans-unit id="368" resname="Saint Kitts and Nevis" restype="string" datatype="javascript">
+        <source>Saint Kitts and Nevis</source>
+        <target state="translated">圣基茨和尼维斯</target>
+      </trans-unit>
+      <trans-unit id="369" resname="Saint Lucia" restype="string" datatype="javascript">
+        <source>Saint Lucia</source>
+        <target state="translated">圣卢西亚</target>
+      </trans-unit>
+      <trans-unit id="370" resname="Saint Vincent and the Grenadines" restype="string" datatype="javascript">
+        <source>Saint Vincent and the Grenadines</source>
+        <target state="translated">圣文森特和格林纳丁斯</target>
+      </trans-unit>
+      <trans-unit id="371" resname="Samoa" restype="string" datatype="javascript">
+        <source>Samoa</source>
+        <target state="translated">萨摩亚</target>
+      </trans-unit>
+      <trans-unit id="372" resname="San Marino" restype="string" datatype="javascript">
+        <source>San Marino</source>
+        <target state="translated">圣马力诺</target>
+      </trans-unit>
+      <trans-unit id="373" resname="Sao Tome and Principe" restype="string" datatype="javascript">
+        <source>Sao Tome and Principe</source>
+        <target state="translated">圣多美和普林西比</target>
+      </trans-unit>
+      <trans-unit id="374" resname="Saudi Arabia" restype="string" datatype="javascript">
+        <source>Saudi Arabia</source>
+        <target state="translated">沙特阿拉伯</target>
+      </trans-unit>
+      <trans-unit id="375" resname="Senegal" restype="string" datatype="javascript">
+        <source>Senegal</source>
+        <target state="translated">塞内加尔</target>
+      </trans-unit>
+      <trans-unit id="376" resname="Serbia" restype="string" datatype="javascript">
+        <source>Serbia</source>
+        <target state="translated">塞尔维亚</target>
+      </trans-unit>
+      <trans-unit id="377" resname="Seychelles" restype="string" datatype="javascript">
+        <source>Seychelles</source>
+        <target state="translated">塞舌尔</target>
+      </trans-unit>
+      <trans-unit id="378" resname="Sierra Leone" restype="string" datatype="javascript">
+        <source>Sierra Leone</source>
+        <target state="translated">塞拉利昂</target>
+      </trans-unit>
+      <trans-unit id="379" resname="Singapore" restype="string" datatype="javascript">
+        <source>Singapore</source>
+        <target state="translated">新加坡</target>
+      </trans-unit>
+      <trans-unit id="380" resname="Sint Maarten" restype="string" datatype="javascript">
+        <source>Sint Maarten</source>
+        <target state="translated">圣马丁</target>
+      </trans-unit>
+      <trans-unit id="381" resname="Slovakia" restype="string" datatype="javascript">
+        <source>Slovakia</source>
+        <target state="translated">斯洛伐克</target>
+      </trans-unit>
+      <trans-unit id="382" resname="Slovenia" restype="string" datatype="javascript">
+        <source>Slovenia</source>
+        <target state="translated">斯洛文尼亚</target>
+      </trans-unit>
+      <trans-unit id="383" resname="Solomon Islands" restype="string" datatype="javascript">
+        <source>Solomon Islands</source>
+        <target state="translated">所罗门群岛</target>
+      </trans-unit>
+      <trans-unit id="384" resname="Somalia" restype="string" datatype="javascript">
+        <source>Somalia</source>
+        <target state="translated">索马里</target>
+      </trans-unit>
+      <trans-unit id="385" resname="South Africa" restype="string" datatype="javascript">
+        <source>South Africa</source>
+        <target state="translated">南非</target>
+      </trans-unit>
+      <trans-unit id="386" resname="South Korea" restype="string" datatype="javascript">
+        <source>South Korea</source>
+        <target state="translated">韩国</target>
+      </trans-unit>
+      <trans-unit id="387" resname="South Sudan" restype="string" datatype="javascript">
+        <source>South Sudan</source>
+        <target state="translated">南苏丹</target>
+      </trans-unit>
+      <trans-unit id="388" resname="Spain" restype="string" datatype="javascript">
+        <source>Spain</source>
+        <target state="translated">西班牙</target>
+      </trans-unit>
+      <trans-unit id="389" resname="Sri Lanka" restype="string" datatype="javascript">
+        <source>Sri Lanka</source>
+        <target state="translated">斯里兰卡</target>
+      </trans-unit>
+      <trans-unit id="390" resname="Sudan" restype="string" datatype="javascript">
+        <source>Sudan</source>
+        <target state="translated">苏丹</target>
+      </trans-unit>
+      <trans-unit id="391" resname="Suriname" restype="string" datatype="javascript">
+        <source>Suriname</source>
+        <target state="translated">苏里南</target>
+      </trans-unit>
+      <trans-unit id="392" resname="Swaziland" restype="string" datatype="javascript">
+        <source>Swaziland</source>
+        <target state="translated">斯威士兰</target>
+      </trans-unit>
+      <trans-unit id="393" resname="Sweden" restype="string" datatype="javascript">
+        <source>Sweden</source>
+        <target state="translated">瑞典</target>
+      </trans-unit>
+      <trans-unit id="394" resname="Switzerland" restype="string" datatype="javascript">
+        <source>Switzerland</source>
+        <target state="translated">瑞士</target>
+      </trans-unit>
+      <trans-unit id="395" resname="Syria" restype="string" datatype="javascript">
+        <source>Syria</source>
+        <target state="translated">叙利亚</target>
+      </trans-unit>
+      <trans-unit id="396" resname="Taiwan" restype="string" datatype="javascript">
+        <source>Taiwan</source>
+        <target state="translated">台湾</target>
+      </trans-unit>
+      <trans-unit id="397" resname="Tajikistan" restype="string" datatype="javascript">
+        <source>Tajikistan</source>
+        <target state="translated">塔吉克斯坦</target>
+      </trans-unit>
+      <trans-unit id="398" resname="Tanzania" restype="string" datatype="javascript">
+        <source>Tanzania</source>
+        <target state="translated">坦桑尼亚</target>
+      </trans-unit>
+      <trans-unit id="399" resname="Thailand" restype="string" datatype="javascript">
+        <source>Thailand</source>
+        <target state="translated">泰国</target>
+      </trans-unit>
+      <trans-unit id="400" resname="Timor" restype="string" datatype="javascript">
+        <source>Timor</source>
+        <target state="translated">东帝汶</target>
+      </trans-unit>
+      <trans-unit id="401" resname="Leste" restype="string" datatype="javascript">
+        <source>Leste</source>
+        <target state="translated">东帝汶民主共和国</target>
+      </trans-unit>
+      <trans-unit id="402" resname="Togo" restype="string" datatype="javascript">
+        <source>Togo</source>
+        <target state="translated">多哥</target>
+      </trans-unit>
+      <trans-unit id="403" resname="Tonga" restype="string" datatype="javascript">
+        <source>Tonga</source>
+        <target state="translated">汤加</target>
+      </trans-unit>
+      <trans-unit id="404" resname="Trinidad and Tobago" restype="string" datatype="javascript">
+        <source>Trinidad and Tobago</source>
+        <target state="translated">特立尼达和多巴哥</target>
+      </trans-unit>
+      <trans-unit id="405" resname="Tunisia" restype="string" datatype="javascript">
+        <source>Tunisia</source>
+        <target state="translated">突尼斯</target>
+      </trans-unit>
+      <trans-unit id="406" resname="Turkey" restype="string" datatype="javascript">
+        <source>Turkey</source>
+        <target state="translated">土耳其</target>
+      </trans-unit>
+      <trans-unit id="407" resname="Turkmenistan" restype="string" datatype="javascript">
+        <source>Turkmenistan</source>
+        <target state="translated">土库曼斯坦</target>
+      </trans-unit>
+      <trans-unit id="408" resname="Tuvalu" restype="string" datatype="javascript">
+        <source>Tuvalu</source>
+        <target state="translated">图瓦卢</target>
+      </trans-unit>
+      <trans-unit id="409" resname="Uganda" restype="string" datatype="javascript">
+        <source>Uganda</source>
+        <target state="translated">乌干达</target>
+      </trans-unit>
+      <trans-unit id="410" resname="Ukraine" restype="string" datatype="javascript">
+        <source>Ukraine</source>
+        <target state="translated">乌克兰</target>
+      </trans-unit>
+      <trans-unit id="411" resname="United Arab Emirates" restype="string" datatype="javascript">
+        <source>United Arab Emirates</source>
+        <target state="translated">阿拉伯联合酋长国</target>
+      </trans-unit>
+      <trans-unit id="412" resname="United Kingdom" restype="string" datatype="javascript">
+        <source>United Kingdom</source>
+        <target state="translated">英国</target>
+      </trans-unit>
+      <trans-unit id="413" resname="Uruguay" restype="string" datatype="javascript">
+        <source>Uruguay</source>
+        <target state="translated">乌拉圭</target>
+      </trans-unit>
+      <trans-unit id="414" resname="Uzbekistan" restype="string" datatype="javascript">
+        <source>Uzbekistan</source>
+        <target state="translated">乌兹别克斯坦</target>
+      </trans-unit>
+      <trans-unit id="415" resname="Vanuatu" restype="string" datatype="javascript">
+        <source>Vanuatu</source>
+        <target state="translated">瓦努阿图</target>
+      </trans-unit>
+      <trans-unit id="416" resname="Venezuela" restype="string" datatype="javascript">
+        <source>Venezuela</source>
+        <target state="translated">委内瑞拉</target>
+      </trans-unit>
+      <trans-unit id="417" resname="Vietnam" restype="string" datatype="javascript">
+        <source>Vietnam</source>
+        <target state="translated">越南</target>
+      </trans-unit>
+      <trans-unit id="418" resname="Yemen" restype="string" datatype="javascript">
+        <source>Yemen</source>
+        <target state="translated">也门</target>
+      </trans-unit>
+      <trans-unit id="419" resname="Zambia" restype="string" datatype="javascript">
+        <source>Zambia</source>
+        <target state="translated">赞比亚</target>
+      </trans-unit>
+      <trans-unit id="420" resname="Zimbabwe" restype="string" datatype="javascript">
+        <source>Zimbabwe</source>
+        <target state="translated">津巴布韦</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
