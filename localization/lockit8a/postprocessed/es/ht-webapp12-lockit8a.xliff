@@ -398,14 +398,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="940" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">El informe de compensación desde {start_date} hasta {end_date} está siendo generado. 			Va a tomar un tiempo. ¡Obtendrás un correo electrónico una vez esté listo!</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/javascripts/controllers/user_questions/show_controller.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="941" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">

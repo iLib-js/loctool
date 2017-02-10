@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2">
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="408" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="new">正在生成{start_date}到{end_date}的收入报告。\n 这还需要一会儿，完成后您会收到一封邮件</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/javascripts/templates/layers/inviteFriendsSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="409" resname="Build your professional network on HealthTap,&lt;br&gt;and stay connected with trusted colleagues" restype="string" datatype="javascript">

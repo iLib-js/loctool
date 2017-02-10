@@ -31579,12 +31579,6 @@ Cum ad inimicus gubergren, vix an velit habemus democritum.Nam novum doming habe
   </file>
   <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="5837" resname="The compensation report from {start_date} to {end_date} is being generated. \    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. \
-      It is gonna take a while. You will get an email once it is ready!</source>
-        <target>正在生成{start_date}到{end_date}的报酬报告\
-      它还需要一会。当它完成后您会收到一封邮件</target>
-      </trans-unit>
       <trans-unit id="5838" resname="The compensation report from {start_date} to {end_date} has been generated ! Please check your email!" restype="string" datatype="javascript">
         <source>The compensation report from {start_date} to {end_date} has been generated ! Please check your email!</source>
         <target>从{start_date}到{end_date}的报酬报告已生成！请检查您的邮箱。</target>

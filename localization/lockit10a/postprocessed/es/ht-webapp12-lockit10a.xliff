@@ -192,14 +192,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="318" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">El reporte de compensación de {start_date} a {end_date} está siendo generado. Va a tomar un rato. ¡Recibirás un correo electrónico cuando esté listo!</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/javascripts/templates/share/share_your_story.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="319" resname="Send your story" restype="string" datatype="javascript">
@@ -744,14 +736,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="2" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">El reporte de compensación de {start_date} a {end_date} está siendo generado. Va a tomar un rato. ¡Recibirás un correo electrónico cuando esté listo!</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/feelGood/templates/pay_total.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="6" resname="Your total this month" restype="string" datatype="javascript">
@@ -960,14 +944,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="2334" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">El reporte de compensación de {start_date} a {end_date} está siendo generado. Va a tomar un rato. ¡Recibirás un correo electrónico cuando esté listo!</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/feelGood/templates/plan_subscribe.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="2339" resname="Just one consult" restype="string" datatype="javascript">
@@ -1081,14 +1057,6 @@
       <trans-unit id="2509" resname="r91472850" restype="string" datatype="x-haml">
         <source>Clinicians</source>
         <target state="translated">Clínicos</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="345" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">El reporte de compensación de {start_date} a {end_date} está siendo generado. Va a tomar un rato. ¡Recibirás un correo electrónico cuando esté listo!</target>
       </trans-unit>
     </body>
   </file>

@@ -458,8 +458,8 @@
   </file>
   <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
-      <trans-unit id="709" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+      <trans-unit id="709" resname="The compensation report from {start_date} to {end_date} is being generated.                   It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.                   It is gonna take a while. You will get an email once it is ready!</source>
         <target state="translated">El reporte de compensación de {start_date} a {end_date} está siendo generado. Va a tomar un rato. ¡Recibirás un correo electrónico cuando esté listo!</target>
       </trans-unit>
     </body>

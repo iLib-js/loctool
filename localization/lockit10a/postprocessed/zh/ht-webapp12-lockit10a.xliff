@@ -192,14 +192,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="139" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成从{start_date}到{end_date}的补偿报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/javascripts/templates/share/share_your_story.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="140" resname="Send your story" restype="string" datatype="javascript">
@@ -258,10 +250,6 @@
   </file>
   <file original="public/javascripts/templates/people/ipad_forgotPW.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="105" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成{start_date}到{end_date}的报酬报告			它还需要一会。当它完成后您会收到一封邮件</target>
-      </trans-unit>
       <trans-unit id="147" resname="Send Reset Email" restype="string" datatype="javascript">
         <source>Send Reset Email</source>
         <target state="translated">发送重置邮件</target>
@@ -920,14 +908,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="114" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成从{start_date}到{end_date}的补偿报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="117" resname="*Your number can help the doctor recognize you" restype="string" datatype="javascript">
@@ -1057,14 +1037,6 @@
       <trans-unit id="113" resname="Helpful Votes" restype="string" datatype="html">
         <source>Helpful Votes</source>
         <target state="translated">有帮助的投票</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="114" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成从{start_date}到{end_date}的补偿报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
       </trans-unit>
     </body>
   </file>
@@ -1213,14 +1185,6 @@
       <trans-unit id="537" resname="r91472850" restype="string" datatype="x-haml">
         <source>Clinicians</source>
         <target state="translated">临床医生</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="597" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成从{start_date}到{end_date}的补偿报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
       </trans-unit>
     </body>
   </file>
@@ -1389,14 +1353,6 @@
       <trans-unit id="96" resname="r35261176" restype="string" datatype="ruby">
         <source>expert</source>
         <target state="translated">专家</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="102" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成从{start_date}到{end_date}的报酬报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
       </trans-unit>
     </body>
   </file>
@@ -1965,14 +1921,6 @@
       <trans-unit id="135" resname="r82233625" restype="string" datatype="ruby">
         <source>only $10 USD / month</source>
         <target state="translated">只有10美元/月</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="139" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">正在生成从{start_date}到{end_date}的报酬报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
       </trans-unit>
     </body>
   </file>

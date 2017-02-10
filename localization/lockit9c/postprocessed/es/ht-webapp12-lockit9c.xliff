@@ -597,14 +597,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="1005" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!</source>
-        <target state="translated">El informe de compensación desde {start_date} hasta {end_date} está siendo generado. 			Va a tomar un tiempo. ¡Obtendrás un correo electrónico una vez esté listo!</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/javascripts/perf/topic_perf2.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="1013" resname=" It&apos;s helpful, private, &amp;amp; free " restype="string" datatype="javascript">

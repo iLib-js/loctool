@@ -158,8 +158,8 @@
   </file>
   <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="213" resname="The compensation report from {start_date} to {end_date} is being generated.    It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
-        <source>The compensation report from {start_date} to {end_date} is being generated. It is gonna take a while. You will get an email once it is ready!</source>
+      <trans-unit id="213" resname="The compensation report from {start_date} to {end_date} is being generated.                   It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.                   It is gonna take a while. You will get an email once it is ready!</source>
         <target state="translated">正在生成从{start_date}到{end_date}的报酬报告。这将需要一段时间。一旦准备就绪，您将收到一封电子邮件！</target>
       </trans-unit>
     </body>
