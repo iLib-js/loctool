@@ -29726,6 +29726,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="8" resname="deactivate" restype="string" datatype="x-android-resource">
+        <source>Deactivate</source>
+        <target state="translated">Desactivar</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/UnfollowLayerDialogBox.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="3" resname="r32892148" restype="string" datatype="java">
