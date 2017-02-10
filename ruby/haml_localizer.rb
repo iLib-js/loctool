@@ -146,8 +146,8 @@ def accumulate_values(root, values, path_name)
   if orig && orig.is_a?(String)
     s = Sanitize.clean(orig)
     if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
-      values << orig.gsub(/[^[:print:]]/ , '')
-      #values << orig
+      #values << orig.gsub(/[^[:print:]]/ , '')
+      values << orig
     elsif !(/(.*)(<[^>]*>)(.*)/.match(orig))
       #there is no html only special characters filtered out by Sanitize.clean
       values.concat(break_around_non_clean_chars(orig, s))
@@ -516,7 +516,7 @@ def process_file_content(template, path_name, locale_names, all_locale_mappings)
     else
       from_to = process_values(locale_mappings, values, unmapped_for_file)
     end
-    #puts "from_to=#{from_to}"
+    puts "from_to=#{from_to}"
     puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
     #process_values(locale_mappings, from_to.keys, unmapped_for_file)
     output_template = replace_with_translations2(template.dup, from_to)

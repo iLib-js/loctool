@@ -705,4 +705,88 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="23" resname="People also viewed" restype="string" datatype="x-objective-c">
+        <source>People also viewed</source>
+        <target state="translated">Personas también vieron</target>
+      </trans-unit>
+      <trans-unit id="25" resname="Conditions Treated" restype="string" datatype="x-objective-c">
+        <source>Conditions Treated</source>
+        <target state="translated">Condiciones Tratadas</target>
+      </trans-unit>
+      <trans-unit id="26" resname="condition" restype="string" datatype="x-objective-c">
+        <source>condition</source>
+        <target state="translated">condición</target>
+      </trans-unit>
+      <trans-unit id="27" resname="Immunizations" restype="string" datatype="x-objective-c">
+        <source>Immunizations</source>
+        <target state="translated">Inmunizaciones</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGSearchResultQuestionUserAnswer.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="31" resname="Send a secure message for expert advice" restype="string" datatype="x-objective-c">
+        <source>Send a secure message for expert advice</source>
+        <target state="translated">Envía un mensaje seguro para consejo experto</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGSearchResultMake.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="37" resname="A doctor will see you now " restype="string" datatype="x-objective-c">
+        <source>A doctor will see you now</source>
+        <target state="translated">Un doctor te verá ahora</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/TableViewCells/FGSearchResultAgeDistributionCell.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="63" resname="Very common" restype="string" datatype="x-objective-c">
+        <source>Very common</source>
+        <target state="translated">Muy común</target>
+      </trans-unit>
+      <trans-unit id="65" resname="Common" restype="string" datatype="x-objective-c">
+        <source>Common</source>
+        <target state="translated">Común</target>
+      </trans-unit>
+      <trans-unit id="67" resname="Rare" restype="string" datatype="x-objective-c">
+        <source>Rare</source>
+        <target state="translated">Raro</target>
+      </trans-unit>
+      <trans-unit id="69" resname="Very rare" restype="string" datatype="x-objective-c">
+        <source>Very rare</source>
+        <target state="translated">Muy raro</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Base.lproj/FGTopicListViewController~ipad.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="76" resname="Hvu-2b-Kwm.text" restype="string" datatype="x-xib">
+        <source>Add health topics</source>
+        <target state="translated">Añadir temas de salud</target>
+        <note annotates="source">Class = "UILabel"; text = "Add health topics"; ObjectID = "Hvu-2b-Kwm";</note>
+      </trans-unit>
+      <trans-unit id="77" resname="inc-kR-3x4.text" restype="string" datatype="x-xib">
+        <source>Add topics to your profile so doctors may provide you with better answers</source>
+        <target state="translated">Añade temas a tu perfil para que doctores puedan brindarte mejores respuestas</target>
+        <note annotates="source">Class = "UILabel"; text = "Add topics to your profile so doctors may provide you with better answers"; ObjectID = "inc-kR-3x4";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Base.lproj/FGTopicListViewController.xib" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="78" resname="EhN-6k-GKw.text" restype="string" datatype="x-xib">
+        <source>Add health topics</source>
+        <target state="translated">Añadir temas de salud</target>
+        <note annotates="source">Class = "UILabel"; text = "Add health topics"; ObjectID = "EhN-6k-GKw";</note>
+      </trans-unit>
+      <trans-unit id="79" resname="tb3-7a-KBu.text" restype="string" datatype="x-xib">
+        <source>Add topics to your profile so doctors may provide you with better answers</source>
+        <target state="translated">Añade temas a tu perfil para que doctores puedan brindarte mejores respuestas</target>
+        <note annotates="source">Class = "UILabel"; text = "Add topics to your profile so doctors may provide you with better answers"; ObjectID = "tb3-7a-KBu";</note>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

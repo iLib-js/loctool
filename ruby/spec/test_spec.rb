@@ -495,14 +495,6 @@ describe 'HamlLocalizer' do
       local_name_to_output['de-DE'].include?('powering the delivery').should be_false
     end
 
-    it 'works with fancy characters' do
-      template = '“I’m thrilled that in one easy interface I can see all the relevant information on my patients, including medical history, test results, and even browsing and adherence data, enabling me to tailor the best course of action for the most effective care.”'
-      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
-      #puts local_name_to_output['de-DE']
-      local_name_to_output['de-DE'].include?('thrilled that in one easy interface').should be_true
-      #expect(local_name_to_output['de-DE']).to eq('FOO')
-    end
-
     it 'should leave alone ruby hashes' do
       template = '
 - content_for :guest_content do
@@ -510,9 +502,25 @@ describe 'HamlLocalizer' do
     %a.questionPageLoggedOutBanner.hidden{:href=>"/sign_up"}
 '
       local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
-      puts local_name_to_output['de-DE']
+      #puts local_name_to_output['de-DE']
       local_name_to_output['de-DE'].include?(':href=>').should be_true
       local_name_to_output['de-DE'].include?('&gt;').should be_false
+    end
+
+    it 'should translate string in quotes' do
+      #source _doctor_experience.html.haml
+      template = '
+.doctor-experience
+  .vertical-align
+    %p.tiny.grey-medium
+      “I’m thrilled that in one easy interface I can see all the relevant information on my patients, including medical history, test results,  and even browsing and adherence data, enabling me to tailor the best course of action for the most effective care.”
+    %p.tiny.semi-bold
+      — Gary Yamada
+'
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      puts local_name_to_output['de-DE']
+      local_name_to_output['de-DE'].include?('thrilled that in one easy interface I can see all the relevant information on my patients').should be_false
+
     end
 
   end
