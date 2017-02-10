@@ -523,6 +523,25 @@ describe 'HamlLocalizer' do
 
     end
 
+    it 'should translate strings with U+2028 in it' do
+      #source _doctor_experience.html.haml
+      template = "
+.sos-features
+  %h2.header-medium
+    Trusted, immediate, simple doctor care
+  .row.clearfix
+    .feature-box.alternate
+      .pad
+        .img.doc
+        %span.title.small.semi-bold Trusted doctor knowledge 
+        %span.value-prop Personalized, contextual information  
+        %span.value-prop Doctor notifications and real-time health alerts (via push/SMS/email) to send important and helpful do’s and don'ts as well as other relevant information to affected members  
+"
+      local_name_to_output, unmapped_for_file = process_file_content(template, '/dont-care', ['de-DE'], {})
+      puts local_name_to_output['de-DE']
+      local_name_to_output['de-DE'].include?('contextual information').should be_false
+
+    end
   end
 
   describe 'british translation' do
