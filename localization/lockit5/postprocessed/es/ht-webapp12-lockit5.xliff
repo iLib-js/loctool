@@ -20474,7 +20474,7 @@
       </trans-unit>
       <trans-unit id="4706" resname="r239285109" restype="string" datatype="ruby">
         <source>%{number} doctors available for you</source>
-        <target>%{num} doctores disponibles para ti</target>
+        <target>%{number} doctores disponibles para ti</target>
       </trans-unit>
       <trans-unit id="4708" resname="r404231948" restype="string" datatype="ruby">
         <source>ADHD and Autism Specialist</source>
