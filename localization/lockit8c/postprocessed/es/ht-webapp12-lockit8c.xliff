@@ -32090,7 +32090,7 @@
       </trans-unit>
       <trans-unit id="7537" resname="r200058583" restype="string" datatype="ruby">
         <source>Doctor Tip on %{goal}</source>
-        <target state="translated">Tipo de Doctor sobre %{meta}</target>
+        <target state="translated">Tipo de Doctor sobre %{goal}</target>
       </trans-unit>
       <trans-unit id="7538" resname="r258059391" restype="string" datatype="ruby">
         <source>Question not found</source>
