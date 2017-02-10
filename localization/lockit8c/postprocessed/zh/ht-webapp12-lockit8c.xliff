@@ -9439,7 +9439,7 @@
       </trans-unit>
       <trans-unit id="1832" resname="r449353917" restype="string" datatype="ruby">
         <source>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is helping define the new field of &amp;ldquo;Interactive Health&amp;rdquo;—the sector that is moving consumer health information to new platforms&lt;/em&gt;, like smartphones and tablets, to provide portability and immediate access to actionable information. Consumers and physicians are increasingly joining the online conversation, and interactive health deserves the close attention of the investment community. &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; demonstrates the potential of this emerging space.</source>
-        <target state="translated">&lt;em&gt;&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;正在界定交&amp;ldquo;交互健康&amp;rdquo的新领域——这个领域正在将消费者的健康信息移向新的平台&lt;/em&gt;，比如智能手机和平板电脑，来提供可携带性和即时的信息获取。消费者和医生越来越多地加入在线咨询，互动式健康值得投资界的密切关注。&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;展示了这一新兴空间的潜力。</target>
+        <target state="translated">&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;正在界定交&amp;ldquo;交互健康&amp;rdquo;的新领域——这个领域正在将消费者的健康信息移向新的平台&lt;/em&gt;，比如智能手机和平板电脑，来提供可携带性和即时的信息获取。消费者和医生越来越多地加入在线咨询，互动式健康值得投资界的密切关注。&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;展示了这一新兴空间的潜力。</target>
       </trans-unit>
       <trans-unit id="1833" resname="r855068512" restype="string" datatype="ruby">
         <source>&lt;em&gt;HealthTap's approach is brilliant.&lt;/em&gt; It delivers what people miss about medicine most: a highly engaging personalized experience, with trusted doctors sharing helpful information.</source>
@@ -26178,7 +26178,7 @@
       </trans-unit>
       <trans-unit id="6070" resname="r433489744" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; gets a home: 575 High St.</source>
-        <target state="translated">&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;找到一个家：575大街</target>
+        <target state="translated">&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;找到一个家：575大街</target>
       </trans-unit>
       <trans-unit id="6071" resname="r776662912" restype="string" datatype="ruby">
         <source>After several months at HealthTap's first headquarters (Ron Gutman's whiteboard-equipped home office), we opened our doors at 575 High Street in a Palo Alto office suite formerly occupied by the FBI. It was a suitable location for top secret development work. There we created the new concept of Interactive Health.</source>
@@ -26242,7 +26242,7 @@
       </trans-unit>
       <trans-unit id="6086" resname="r937266270" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; CEO and Founder Ron Gutman's TED talk on the &amp;quot;Hidden Powers of Smiling&amp;quot; created buzz at the 2011 conference, but the ultimate success of the talk came when it was released online. Today, the talk has been viewed by millions, translated into more than 50 languages by enthusiastic viewers across the world and published as a TED book.</source>
-        <target state="translated">&lt;span class =’ht-name’&gt; HealthTap &lt;/span&gt;首席执行官兼创始人Ron Gutman在TED&amp;quot;微笑的隐藏力量&amp;quot的演讲在2011年会议上创造了一个热点，但是在网上发布后获得最终成功。今天，这场演讲已被数百万人观看，被世界各地热心的观众翻译成50多种语言，并作为TED图书出版。</target>
+        <target state="translated">&lt;span class ='ht-name'&gt; HealthTap &lt;/span&gt;首席执行官兼创始人Ron Gutman在TED&amp;quot;微笑的隐藏力量&amp;quot的演讲在2011年会议上创造了一个热点，但是在网上发布后获得最终成功。今天，这场演讲已被数百万人观看，被世界各地热心的观众翻译成50多种语言，并作为TED图书出版。</target>
       </trans-unit>
       <trans-unit id="6087" resname="r629161370" restype="string" datatype="ruby">
         <source>Walking healthy</source>
@@ -26250,7 +26250,7 @@
       </trans-unit>
       <trans-unit id="6088" resname="r120782056" restype="string" datatype="ruby">
         <source>Cool consumer health projects come with even cooler swag! Introducing the &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; shoe – if you see them on someone's feet, say hi!</source>
-        <target state="translated">冷酷消费者健康项目带有更冷酷的行囊！介绍&lt;span class=’ht-name’ &gt;HealthTap&lt;/span&gt;鞋子 - 如果您看到他们在某人的脚上，说您好！</target>
+        <target state="translated">冷酷消费者健康项目带有更冷酷的行囊！介绍&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;鞋子 - 如果您看到他们在某人的脚上，说您好！</target>
       </trans-unit>
       <trans-unit id="6089" resname="r106904492" restype="string" datatype="ruby">
         <source>Mar 2011</source>
@@ -43450,7 +43450,7 @@
       </trans-unit>
       <trans-unit id="10062" resname="Voted" restype="string" datatype="javascript">
         <source>Voted</source>
-        <target state="translated">投票</target>
+        <target state="translated">已投票</target>
       </trans-unit>
       <trans-unit id="10063" resname="App voted!" restype="string" datatype="javascript">
         <source>App voted!</source>
