@@ -36,11 +36,11 @@
       </trans-unit>
       <trans-unit id="14" resname="r194999707" restype="string" datatype="x-android-resource">
         <source>{start}Your total{end}No commitment, cancel anytime</source>
-        <target state="translated">{start}您的总计{end}没有任何承诺，可以随时取消</target>
+        <target state="translated">{start}您的总额{end}没有任何承诺，可以随时取消</target>
       </trans-unit>
       <trans-unit id="15" resname="r923373309" restype="string" datatype="x-android-resource">
         <source>Your total for 1 consult</source>
-        <target state="translated">您总计1次咨询</target>
+        <target state="translated">您1次咨询的总额</target>
       </trans-unit>
       <trans-unit id="16" resname="r580375147" restype="string" datatype="x-android-resource">
         <source>Your card ending in *{four_digit_number} has expired. \n Please add a new one</source>
@@ -48,7 +48,7 @@
       </trans-unit>
       <trans-unit id="17" resname="r715343662" restype="string" datatype="x-android-resource">
         <source>{start}Your total{end}\nFor additional options</source>
-        <target state="translated">{start}您总计{end}\n为其他选项</target>
+        <target state="translated">{start}您的总额{end}\n为其他选项</target>
       </trans-unit>
       <trans-unit id="18" resname="r947674940" restype="string" datatype="x-android-resource">
         <source>Failed while take picture:</source>
@@ -85,7 +85,7 @@
       </trans-unit>
       <trans-unit id="32" resname="r383257904" restype="string" datatype="x-android-resource">
         <source>Practicing:</source>
-        <target state="translated">诊疗中：</target>
+        <target state="translated">诊疗：</target>
       </trans-unit>
       <trans-unit id="33" resname="r437047272" restype="string" datatype="x-android-resource">
         <source>Question not posted</source>

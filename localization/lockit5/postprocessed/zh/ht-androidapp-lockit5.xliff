@@ -177,7 +177,7 @@
       </trans-unit>
       <trans-unit id="689" resname="r381986807" restype="string" datatype="java">
         <source>Out of office until %s</source>
-        <target>在%s前不再办公室</target>
+        <target>在%s前不在办公室</target>
       </trans-unit>
     </body>
   </file>
@@ -368,7 +368,7 @@
       </trans-unit>
       <trans-unit id="2230" resname="invite_doctor_location" restype="string" datatype="x-android-resource">
         <source>Your Doctor's Location</source>
-        <target>您医生的地址</target>
+        <target>您医生的位置</target>
       </trans-unit>
       <trans-unit id="2234" resname="starting_at" restype="string" datatype="x-android-resource">
         <source>Starting at</source>
@@ -437,7 +437,7 @@
       </trans-unit>
       <trans-unit id="2261" resname="symptom_triage_main_search_tap_text" restype="string" datatype="x-android-resource">
         <source>Tap anywhere to start</source>
-        <target>轻触任意位置即可开始</target>
+        <target>点击任意位置即可开始</target>
       </trans-unit>
       <trans-unit id="2262" resname="meter_high" restype="string" datatype="x-android-resource">
         <source>HIGHER</source>
