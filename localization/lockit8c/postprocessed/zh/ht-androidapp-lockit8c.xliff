@@ -80,7 +80,7 @@
       </trans-unit>
       <trans-unit id="24" resname="r682189599" restype="string" datatype="x-android-resource">
         <source>Location</source>
-        <target state="translated">地址</target>
+        <target state="translated">位置</target>
       </trans-unit>
       <trans-unit id="25" resname="r300488279" restype="string" datatype="x-android-resource">
         <source>Ethnicity</source>
@@ -348,7 +348,7 @@
       </trans-unit>
       <trans-unit id="91" resname="r279986767" restype="string" datatype="x-android-resource">
         <source>${price} a {plan_duration}</source>
-        <target state="translated">${price} {plan_duration}</target>
+        <target state="translated">${price}一{plan_duration}</target>
       </trans-unit>
       <trans-unit id="92" resname="r750456440" restype="string" datatype="x-android-resource">
         <source>Some plan</source>
@@ -488,7 +488,7 @@
       </trans-unit>
       <trans-unit id="126" resname="r987771035" restype="string" datatype="x-android-resource">
         <source>Sorry, there was a problem</source>
-        <target state="translated">对不起，这里有一个问题</target>
+        <target state="translated">对不起，出现了一个问题</target>
       </trans-unit>
       <trans-unit id="128" resname="r218644464" restype="string" datatype="x-android-resource">
         <source>Contact Support</source>
@@ -512,7 +512,7 @@
       </trans-unit>
       <trans-unit id="133" resname="r90090747" restype="string" datatype="x-android-resource">
         <source>None</source>
-        <target state="translated">没有</target>
+        <target state="translated">无</target>
       </trans-unit>
       <trans-unit id="134" resname="r156592917" restype="string" datatype="x-android-resource">
         <source>Prime (Pay-as-you-go)</source>
@@ -645,7 +645,7 @@
       </trans-unit>
       <trans-unit id="166" resname="r256437249" restype="string" datatype="x-android-resource">
         <source>Approx. {price}</source>
-        <target state="translated">{price}约为</target>
+        <target state="translated">约为{price}</target>
       </trans-unit>
       <trans-unit id="167" resname="r837205133" restype="string" datatype="x-android-resource">
         <source>Discount: {promo_code} ({discount_description})</source>
@@ -729,11 +729,11 @@
       </trans-unit>
       <trans-unit id="187" resname="r942559806" restype="string" datatype="x-android-resource">
         <source>(${original_price} regularly - ${credits} in credits)</source>
-        <target state="translated">(${original_price} 正常费用- ${credits} 余额)</target>
+        <target state="translated">(标价${original_price} - 余额${credits} )</target>
       </trans-unit>
       <trans-unit id="188" resname="r95353935" restype="string" datatype="x-android-resource">
         <source>($%s regularly)</source>
-        <target state="translated">($%s正常费用 )</target>
+        <target state="translated">(标价$%s )</target>
       </trans-unit>
       <trans-unit id="189" resname="r317602886" restype="string" datatype="x-android-resource">
         <source>Pay &amp; Send</source>
@@ -845,11 +845,11 @@
       </trans-unit>
       <trans-unit id="218" resname="r742115697" restype="string" datatype="x-android-resource">
         <source>Topics</source>
-        <target state="translated">专题</target>
+        <target state="translated">话题</target>
       </trans-unit>
       <trans-unit id="219" resname="r789310818" restype="string" datatype="x-android-resource">
         <source>Topic</source>
-        <target state="translated">专题</target>
+        <target state="translated">话题</target>
       </trans-unit>
       <trans-unit id="220" resname="r629190714" restype="string" datatype="x-android-resource">
         <source>{tip_topic_name} Tip</source>
@@ -1065,7 +1065,7 @@
       </trans-unit>
       <trans-unit id="276" resname="r747361338" restype="string" datatype="x-android-resource">
         <source>Change location</source>
-        <target state="translated">更改地址</target>
+        <target state="translated">更改位置</target>
       </trans-unit>
       <trans-unit id="277" resname="r728703766" restype="string" datatype="x-android-resource">
         <source>How would you like to consult {doctor_name}</source>
@@ -1219,7 +1219,7 @@
       </trans-unit>
       <trans-unit id="316" resname="r832518227" restype="string" datatype="x-android-resource">
         <source>HealthTap for Doctors</source>
-        <target state="translated">HealthTap for Doctors</target>
+        <target state="translated">HealthTap 医生版</target>
       </trans-unit>
       <trans-unit id="317" resname="r186921235" restype="string" datatype="x-android-resource">
         <source>Failed to get authorization!</source>
@@ -1452,7 +1452,7 @@
       </trans-unit>
       <trans-unit id="383" resname="r244192669" restype="string" datatype="x-android-resource">
         <source>Connect with</source>
-        <target state="translated">与…连接</target>
+        <target state="translated">连接</target>
       </trans-unit>
       <trans-unit id="384" resname="r657598817" restype="string" datatype="x-android-resource">
         <source>In order for</source>
@@ -1528,7 +1528,7 @@
       </trans-unit>
       <trans-unit id="402" resname="r230593847" restype="string" datatype="x-android-resource">
         <source>{topic_name} in the context of:</source>
-        <target state="translated">在...背景下的{topic_name}：</target>
+        <target state="translated">{topic_name}所在背景：</target>
       </trans-unit>
       <trans-unit id="403" resname="r825802996" restype="string" datatype="x-android-resource">
         <source>{doctor_specialty}, {years_in_practice}</source>
@@ -1536,7 +1536,7 @@
       </trans-unit>
       <trans-unit id="404" resname="r184978954" restype="string" datatype="x-android-resource">
         <source>A {specialist_name} asked:</source>
-        <target state="translated">{specialist_name}询问过：</target>
+        <target state="translated">{specialist_name}询问：</target>
       </trans-unit>
       <trans-unit id="405" resname="r1063497831" restype="string" datatype="x-android-resource">
         <source>{expert_specialty}, Known for {known_for_topic_name}</source>
@@ -1548,7 +1548,7 @@
       </trans-unit>
       <trans-unit id="408" resname="r964861592" restype="string" datatype="x-android-resource">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target state="translated">您有随访问题吗？立即在线咨询医生：</target>
+        <target state="translated">您有后续问题吗？立即在线咨询医生：</target>
       </trans-unit>
       <trans-unit id="409" resname="r129012652" restype="string" datatype="x-android-resource">
         <source>Answer assisted by Medical Student {name}</source>
@@ -1602,7 +1602,7 @@
       </trans-unit>
       <trans-unit id="421" resname="r17353811" restype="string" datatype="x-android-resource">
         <source>{count}x</source>
-        <target state="translated">{count}x</target>
+        <target state="translated">{count}次</target>
         <note annotates="source">e.g. 14x means 14 counts.</note>
       </trans-unit>
       <trans-unit id="422" resname="r326384535" restype="string" datatype="x-android-resource">
@@ -1873,7 +1873,7 @@
       </trans-unit>
       <trans-unit id="489" resname="r690308697" restype="string" datatype="x-android-resource">
         <source>Add treatment</source>
-        <target state="translated">添加治疗方法</target>
+        <target state="translated">添加治疗</target>
         <note annotates="source">This means to add treatments in a patient's health profile</note>
       </trans-unit>
       <trans-unit id="490" resname="r446307512" restype="string" datatype="x-android-resource">
@@ -2043,7 +2043,7 @@
       </trans-unit>
       <trans-unit id="530" resname="r141446606" restype="string" datatype="x-android-resource">
         <source>We're sorry to see you downgrade!</source>
-        <target state="translated">我们很抱歉对您的降级！</target>
+        <target state="translated">我们很抱歉看到您降级！</target>
       </trans-unit>
       <trans-unit id="531" resname="r151255723" restype="string" datatype="x-android-resource">
         <source>Change</source>
@@ -2071,7 +2071,7 @@
       </trans-unit>
       <trans-unit id="540" resname="r1053853380" restype="string" datatype="x-android-resource">
         <source>Sorry, there was a problem</source>
-        <target state="translated">对不起，这里有一个问题</target>
+        <target state="translated">对不起，这里出现了一个问题</target>
       </trans-unit>
       <trans-unit id="542" resname="r74555818" restype="string" datatype="x-android-resource">
         <source>Enter your language</source>
@@ -2591,7 +2591,7 @@
       </trans-unit>
       <trans-unit id="676" resname="r46160805" restype="string" datatype="x-android-resource">
         <source>(Failed)</source>
-        <target state="translated">（已失败）</target>
+        <target state="translated">（失败）</target>
         <note annotates="source">This means that a payment transaction failed. Punctuations also need to be translated.</note>
       </trans-unit>
       <trans-unit id="677" resname="r134934247" restype="string" datatype="x-android-resource">
@@ -2610,7 +2610,7 @@
       </trans-unit>
       <trans-unit id="680" resname="r321971325" restype="string" datatype="x-android-resource">
         <source>({0}, {1})</source>
-        <target state="translated">({0}, {1})</target>
+        <target state="translated">({0}, {1})岁</target>
         <note annotates="source">{0} is a patient name. {1} is this patient's age. Please translate punctuations '(' and ')'.</note>
       </trans-unit>
       <trans-unit id="681" resname="r304523712" restype="string" datatype="x-android-resource">
@@ -2848,7 +2848,7 @@
       </trans-unit>
       <trans-unit id="38" resname="helpful" restype="string" datatype="x-android-resource">
         <source>Helpful</source>
-        <target>有帮助的</target>
+        <target>有帮助</target>
       </trans-unit>
       <trans-unit id="39" resname="add_photo" restype="string" datatype="x-android-resource">
         <source>Add photo</source>

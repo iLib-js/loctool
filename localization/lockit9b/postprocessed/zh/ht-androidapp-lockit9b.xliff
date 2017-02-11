@@ -4,11 +4,11 @@
     <body>
       <trans-unit id="1" resname="grandson" restype="string" datatype="x-android-resource">
         <source>Grandson</source>
-        <target state="translated">外孙</target>
+        <target state="translated">孙子/外孙</target>
       </trans-unit>
       <trans-unit id="2" resname="granddaughter" restype="string" datatype="x-android-resource">
         <source>Granddaughter</source>
-        <target state="translated">外孙女</target>
+        <target state="translated">孙女/外孙女</target>
       </trans-unit>
       <trans-unit id="3" resname="stepson" restype="string" datatype="x-android-resource">
         <source>Stepson</source>
