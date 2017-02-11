@@ -1352,4 +1352,68 @@
       </trans-unit>
     </body>
   </file>
+  <file original="config/user_question_addons.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname=":display_string" restype="string" datatype="x-yaml" x-context=":priority@:faster">
+        <source>Priority (faster) responses</source>
+        <target>Respuestas prioritarias (más rápida)</target>
+      </trans-unit>
+      <trans-unit id="2" resname=":help_text" restype="string" datatype="x-yaml" x-context=":priority@:faster">
+        <source>This puts your question ahead of the line to be answered first</source>
+        <target>Esto pone a tu pregunta adelante de la línea para ser contestada primero</target>
+      </trans-unit>
+      <trans-unit id="3" resname=":display_string" restype="string" datatype="x-yaml" x-context=":guaranteed_answers@:two">
+        <source>Guarantee more than 1 answer</source>
+        <target>Garantiza más de 1 respuesta</target>
+      </trans-unit>
+      <trans-unit id="4" resname=":help_text" restype="string" datatype="x-yaml" x-context=":guaranteed_answers@:two">
+        <source>This option promotes the question to more doctors to get you more than one answer</source>
+        <target>Esta opción promueve la pregunta a más docotres para que obtengas más de una respuesta</target>
+      </trans-unit>
+      <trans-unit id="5" resname=":display_string" restype="string" datatype="x-yaml" x-context=":extra_characters@:hundred">
+        <source>Add details to your question (+100 characters)</source>
+        <target>Añade detalles a tus preguntas (100+ caracteres)</target>
+      </trans-unit>
+      <trans-unit id="6" resname=":help_text" restype="string" datatype="x-yaml" x-context=":extra_characters@:hundred">
+        <source>This gives you additional characters to add more details to your question.</source>
+        <target>Esto te da caracteres adicionales para añadir más detalles a tu pregunta.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/timezones.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="7" resname="American Samoa" restype="string" datatype="x-yaml">
+        <source>American Samoa</source>
+        <target>Soma americana</target>
+      </trans-unit>
+      <trans-unit id="8" resname="Pacific Time (US &amp; Canada)" restype="string" datatype="x-yaml">
+        <source>Pacific Time</source>
+        <target>Hora del Pacífico</target>
+      </trans-unit>
+      <trans-unit id="9" resname="Hawaii" restype="string" datatype="x-yaml">
+        <source>Hawaii Time</source>
+        <target>Hora de Hawái</target>
+      </trans-unit>
+      <trans-unit id="10" resname="Alaska" restype="string" datatype="x-yaml">
+        <source>Alaska Time</source>
+        <target>Hora de Alaska</target>
+      </trans-unit>
+      <trans-unit id="11" resname="Mountain Time (US &amp; Canada)" restype="string" datatype="x-yaml">
+        <source>Mountain Time</source>
+        <target>Hora de la Montaña</target>
+      </trans-unit>
+      <trans-unit id="12" resname="Central Time (US &amp; Canada)" restype="string" datatype="x-yaml">
+        <source>Central Time</source>
+        <target>Hora Central</target>
+      </trans-unit>
+      <trans-unit id="13" resname="Eastern Time (US &amp; Canada)" restype="string" datatype="x-yaml">
+        <source>Eastern Time</source>
+        <target>Hora del Este</target>
+      </trans-unit>
+      <trans-unit id="14" resname="Auckland" restype="string" datatype="x-yaml">
+        <source>auckland</source>
+        <target>Auckland</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
