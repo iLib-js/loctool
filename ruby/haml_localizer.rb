@@ -337,10 +337,12 @@ def process_line(skip_block_indent, ret, line, from_to)
               #  line = Sanitize.clean(line).gsub(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
               #end
 
-            elsif k.strip.match(/^[[:punct:]]/)
+            elsif k.strip.match(/^([[:punct:]]|[[:space:]])/)
+              #after stripping in beginning, still funny characters present like \u2028
               #puts '4'
               res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
-            elsif k.strip.match(/[[:punct:]]$/)
+            elsif k.strip.match(/([[:punct:]]|[[:space:]])$/)
+              #after stripping in end, still funny characters present like \u2028
               #puts '5'
               res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
             else
