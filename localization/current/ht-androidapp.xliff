@@ -14670,7 +14670,7 @@
       </trans-unit>
       <trans-unit id="38" resname="r415124616" restype="string" datatype="java">
         <source>Living</source>
-        <target>在世</target>
+        <target>健在</target>
       </trans-unit>
       <trans-unit id="39" resname="r199869805" restype="string" datatype="java">
         <source>Date of Birth</source>
@@ -14682,7 +14682,7 @@
       </trans-unit>
       <trans-unit id="41" resname="r682189599" restype="string" datatype="java">
         <source>Location</source>
-        <target>地址</target>
+        <target>位置</target>
       </trans-unit>
       <trans-unit id="42" resname="r300488279" restype="string" datatype="java">
         <source>Ethnicity</source>
@@ -14734,7 +14734,7 @@
       </trans-unit>
       <trans-unit id="54" resname="r195136348" restype="string" datatype="java">
         <source>Living Children</source>
-        <target>活了几个</target>
+        <target>在世的孩子</target>
       </trans-unit>
       <trans-unit id="55" resname="r363512150" restype="string" datatype="java">
         <source>Dietary Restrictions</source>
@@ -14862,7 +14862,7 @@
     <body>
       <trans-unit id="78" resname="r279986767" restype="string" datatype="java">
         <source>${price} a {plan_duration}</source>
-        <target>${price}一次{plan_duration}</target>
+        <target>${price}一{plan_duration}</target>
       </trans-unit>
     </body>
   </file>
@@ -14979,11 +14979,11 @@
       </trans-unit>
       <trans-unit id="99" resname="r811096653" restype="string" datatype="java">
         <source>Would you like to add anyone else to your plan?</source>
-        <target>您愿意在您的计划中添加其他人吗？</target>
+        <target>您想要在您的计划中添加其他人吗？</target>
       </trans-unit>
       <trans-unit id="100" resname="r110463270" restype="string" datatype="java">
         <source>Would you like to remove someone from your plan?</source>
-        <target>您愿意在您的计划中删除一些人吗？</target>
+        <target>您想要在您的计划中删除一些人吗？</target>
       </trans-unit>
     </body>
   </file>
@@ -15031,7 +15031,7 @@
       </trans-unit>
       <trans-unit id="111" resname="r987771035" restype="string" datatype="java">
         <source>Sorry, there was a problem</source>
-        <target>抱歉，这里有一个问题</target>
+        <target>抱歉，这里出现了一个问题</target>
       </trans-unit>
       <trans-unit id="112" resname="r208644008" restype="string" datatype="java">
         <source>We couldn't remove your card. Please try again or contact support if the problem persists.</source>
@@ -15059,7 +15059,7 @@
       </trans-unit>
       <trans-unit id="118" resname="r90090747" restype="string" datatype="java">
         <source>None</source>
-        <target>没有</target>
+        <target>无</target>
       </trans-unit>
       <trans-unit id="119" resname="r156592917" restype="string" datatype="java">
         <source>Prime (Pay-as-you-go)</source>
@@ -15135,7 +15135,7 @@
       </trans-unit>
       <trans-unit id="134" resname="r745022334" restype="string" datatype="java">
         <source>Your message subscription allows you to send as many messages as you need and get doctor advice, prescriptions, lab tests, and more.</source>
-        <target>您的消息订购允许您发送所需数量的信息并获取医生建议、处方、实验室检验及更多内容。</target>
+        <target>您的消息订购允许您发送无限制数量的信息并获取医生建议、处方、实验室检验及更多内容。</target>
       </trans-unit>
       <trans-unit id="135" resname="r487646575" restype="string" datatype="java">
         <source>Yes, confirm</source>
@@ -15143,7 +15143,7 @@
       </trans-unit>
       <trans-unit id="136" resname="r170829129" restype="string" datatype="java">
         <source>Failed to unsubscribe!</source>
-        <target>退订失败</target>
+        <target>退订失败！</target>
       </trans-unit>
     </body>
   </file>
@@ -15179,7 +15179,7 @@
     <body>
       <trans-unit id="141" resname="r898649411" restype="string" datatype="java">
         <source>Conditions &amp; Symptoms</source>
-        <target>健康状况&amp;症状</target>
+        <target>健康状况和症状</target>
       </trans-unit>
     </body>
   </file>
@@ -15235,7 +15235,7 @@
       </trans-unit>
       <trans-unit id="151" resname="r256437249" restype="string" datatype="java">
         <source>Approx. {price}</source>
-        <target>{price}约为</target>
+        <target>约为{price}</target>
       </trans-unit>
       <trans-unit id="152" resname="r837205133" restype="string" datatype="java">
         <source>Discount: {promo_code} ({discount_description})</source>
@@ -15251,7 +15251,7 @@
       </trans-unit>
       <trans-unit id="154" resname="r923373309" restype="string" datatype="java">
         <source>Your total for 1 consult</source>
-        <target>您总计为1个咨询</target>
+        <target>您1个咨询的总计为</target>
       </trans-unit>
       <trans-unit id="155" resname="r343887672" restype="string" datatype="java">
         <source>Prime consult</source>
@@ -15291,7 +15291,7 @@
       </trans-unit>
       <trans-unit id="163" resname="r250043534" restype="string" datatype="java">
         <source>Credit card number is not valid. Please input correct number.</source>
-        <target>无效的信用卡卡号请输入正确的号码</target>
+        <target>无效的信用卡卡号。请输入正确的号码</target>
       </trans-unit>
       <trans-unit id="164" resname="r564653974" restype="string" datatype="java">
         <source>Failed to update your payment method, please try again later</source>
@@ -15323,15 +15323,15 @@
       </trans-unit>
       <trans-unit id="170" resname="r541483380" restype="string" datatype="java">
         <source>Unknown error while paying!</source>
-        <target>付款时发生未知错误</target>
+        <target>付款时发生未知错误！</target>
       </trans-unit>
       <trans-unit id="171" resname="r942559806" restype="string" datatype="java">
         <source>(${original_price} regularly - ${credits} in credits)</source>
-        <target>(${original_price} 正常费用- ${credits} （账户）余额)</target>
+        <target>(标价${original_price} - 余额${credits} )</target>
       </trans-unit>
       <trans-unit id="172" resname="r95353935" restype="string" datatype="java">
         <source>($%s regularly)</source>
-        <target>($%s 正常费用)</target>
+        <target>(标价 $%s)</target>
       </trans-unit>
     </body>
   </file>
@@ -15343,7 +15343,7 @@
       </trans-unit>
       <trans-unit id="174" resname="r715343662" restype="string" datatype="java">
         <source>{start}Your total{end}\nFor additional options</source>
-        <target>{start}您总计{end}\n附件选项</target>
+        <target>{start}您的总计{end}\n为附加选项</target>
       </trans-unit>
       <trans-unit id="175" resname="r4430339" restype="string" datatype="java">
         <source>Error while fething price</source>
@@ -15487,7 +15487,7 @@
     <body>
       <trans-unit id="201" resname="r742115697" restype="string" datatype="java">
         <source>Topics</source>
-        <target>专题</target>
+        <target>话题</target>
       </trans-unit>
     </body>
   </file>
@@ -15495,7 +15495,7 @@
     <body>
       <trans-unit id="202" resname="r789310818" restype="string" datatype="java">
         <source>Topic</source>
-        <target>专题</target>
+        <target>话题</target>
       </trans-unit>
     </body>
   </file>
@@ -15507,7 +15507,7 @@
       </trans-unit>
       <trans-unit id="204" resname="r785672285" restype="string" datatype="java">
         <source>{current_tip_index} of {total_tips_number}</source>
-        <target>{current_tip_index}的{total_tips_number}</target>
+        <target>{total_tips_number}的{current_tip_index}</target>
       </trans-unit>
       <trans-unit id="205" resname="r757536250" restype="string" datatype="java">
         <source>Failed to get tips detail.</source>
@@ -15804,7 +15804,7 @@
       </trans-unit>
       <trans-unit id="255" resname="r747361338" restype="string" datatype="java">
         <source>Change location</source>
-        <target>更改地址</target>
+        <target>更改位置</target>
       </trans-unit>
       <trans-unit id="256" resname="r728703766" restype="string" datatype="java">
         <source>How would you like to consult {doctor_name}</source>
@@ -15836,7 +15836,7 @@
     <body>
       <trans-unit id="260" resname="r383257904" restype="string" datatype="java">
         <source>Practicing:</source>
-        <target>诊疗中：</target>
+        <target>诊疗：</target>
       </trans-unit>
       <trans-unit id="261" resname="r36845865" restype="string" datatype="java">
         <source>HealthTap Honor</source>
@@ -15960,11 +15960,11 @@
       </trans-unit>
       <trans-unit id="285" resname="r616076898" restype="string" datatype="java">
         <source>Agrees and comments ({count_num})</source>
-        <target>同意和意见 ({count_num})</target>
+        <target>同意和评论 ({count_num})</target>
       </trans-unit>
       <trans-unit id="286" resname="r845402666" restype="string" datatype="java">
         <source>Agrees and comments</source>
-        <target>同意和意见</target>
+        <target>同意和评论</target>
       </trans-unit>
     </body>
   </file>
@@ -16008,7 +16008,7 @@
       </trans-unit>
       <trans-unit id="294" resname="r832518227" restype="string" datatype="java">
         <source>HealthTap for Doctors</source>
-        <target>为医生的HealthTap</target>
+        <target>HealthTap医生版</target>
       </trans-unit>
     </body>
   </file>
@@ -16068,11 +16068,11 @@
     <body>
       <trans-unit id="304" resname="r524687314" restype="string" datatype="java">
         <source>Shared</source>
-        <target>分享的</target>
+        <target>已分享</target>
       </trans-unit>
       <trans-unit id="305" resname="r820717541" restype="string" datatype="java">
         <source>Helpful</source>
-        <target>有帮助的</target>
+        <target>有帮助</target>
       </trans-unit>
     </body>
   </file>
@@ -16148,7 +16148,7 @@
       </trans-unit>
       <trans-unit id="318" resname="r136777654" restype="string" datatype="java">
         <source>Appointment detected with {doctor_name}</source>
-        <target>预约检测{doctor_name}</target>
+        <target>检测到与{doctor_name}的预约</target>
       </trans-unit>
       <trans-unit id="319" resname="r476330744" restype="string" datatype="java">
         <source>Failed to start consult</source>
@@ -16160,7 +16160,7 @@
       </trans-unit>
       <trans-unit id="321" resname="r74842871" restype="string" datatype="java">
         <source>If you leave, your changes will be lost.</source>
-        <target>如果离开/退出，您的更改将会丢失。</target>
+        <target>如果离开，您的更改将会丢失。</target>
       </trans-unit>
       <trans-unit id="322" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
@@ -16172,7 +16172,7 @@
       </trans-unit>
       <trans-unit id="324" resname="r166851652" restype="string" datatype="java">
         <source>For medical emergencies, call {emergency_phone} or go to the nearest {emergency_room}.</source>
-        <target>医疗紧急联系，拨打电话{emergency_phone}或去最近的{emergency_room}.</target>
+        <target>若有紧急医疗状况，拨打电话{emergency_phone}或去最近的{emergency_room}.</target>
       </trans-unit>
       <trans-unit id="325" resname="r1022238927" restype="string" datatype="java">
         <source>By continuing, you understand the {start1}Guidelines{end1} for Virtual Consults and agree to the {start2}Terms{end2}.</source>
@@ -16209,7 +16209,7 @@
     <body>
       <trans-unit id="330" resname="r279656213" restype="string" datatype="java">
         <source>Request Sent</source>
-        <target>发送请求</target>
+        <target>请求已发送</target>
       </trans-unit>
     </body>
   </file>
@@ -16221,7 +16221,7 @@
       </trans-unit>
       <trans-unit id="332" resname="r475548486" restype="string" datatype="java">
         <source>Talk to</source>
-        <target>交流</target>
+        <target>对话</target>
       </trans-unit>
       <trans-unit id="333" resname="r588782950" restype="string" datatype="java">
         <source>{doctor_name} is licensed to see patients in {states}.</source>
@@ -16245,7 +16245,7 @@
       </trans-unit>
       <trans-unit id="338" resname="r182995781" restype="string" datatype="java">
         <source>I understand, get second opinion</source>
-        <target>我明白了，得到第二意见</target>
+        <target>我明白了，获取第二意见</target>
       </trans-unit>
       <trans-unit id="339" resname="r180912422" restype="string" datatype="java">
         <source>We're sorry, but</source>
@@ -16337,7 +16337,7 @@
       </trans-unit>
       <trans-unit id="357" resname="r244192669" restype="string" datatype="java">
         <source>Connect with</source>
-        <target>与...连接</target>
+        <target>连接</target>
       </trans-unit>
       <trans-unit id="358" resname="r657598817" restype="string" datatype="java">
         <source>In order for</source>
@@ -16445,7 +16445,7 @@
     <body>
       <trans-unit id="376" resname="r230593847" restype="string" datatype="java">
         <source>{topic_name} in the context of:</source>
-        <target>在{topic_name}的背景下</target>
+        <target>{topic_name}所在背景：</target>
       </trans-unit>
     </body>
   </file>
@@ -16481,7 +16481,7 @@
       </trans-unit>
       <trans-unit id="382" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target>您有随访问题吗？立即在线咨询医生：</target>
+        <target>您有后续问题吗？立即在线咨询医生：</target>
       </trans-unit>
       <trans-unit id="383" resname="r129012652" restype="string" datatype="java">
         <source>Answer assisted by Medical Student {name}</source>
@@ -17174,7 +17174,7 @@
       </trans-unit>
       <trans-unit id="506" resname="r312184836" restype="string" datatype="java">
         <source>We're committed to your satisfaction and providing a delightful experience. Please let us know why you'd like to downgrade.</source>
-        <target>我们努力使您满意并提供愉快的经验。请告诉我们您为什么要降级。</target>
+        <target>我们努力使您满意并提供愉快的体验。请告诉我们您为什么要降级。</target>
       </trans-unit>
       <trans-unit id="507" resname="r127795338" restype="string" datatype="java">
         <source>Please enter a reason.</source>
@@ -17394,7 +17394,7 @@
     <body>
       <trans-unit id="544" resname="r159204248" restype="string" datatype="java">
         <source>Only ${price} to get:</source>
-        <target>只获得${price} ：</target>
+        <target>只要${price}就可获得 ：</target>
         <note annotates="source">Description text for virtual consult price charge of a specific doctor</note>
       </trans-unit>
     </body>
@@ -17416,7 +17416,7 @@
     <body>
       <trans-unit id="547" resname="r724225387" restype="string" datatype="java">
         <source>Send as many messages as you need, or get advice, prescriptions, lab tests, and more</source>
-        <target>发送所需数量的信息并获取医生建议、处方、实验室检验及更多内容</target>
+        <target>发送无限制数量的信息并获取医生建议、处方、实验室检验及更多内容</target>
       </trans-unit>
       <trans-unit id="548" resname="r56642254" restype="string" datatype="java">
         <source>/month</source>
@@ -17684,7 +17684,7 @@
       </trans-unit>
       <trans-unit id="594" resname="r462124817" restype="string" datatype="java">
         <source>Did you also do the following?</source>
-        <target>您也做了以下？</target>
+        <target>您也做了以下这些吗？</target>
       </trans-unit>
       <trans-unit id="595" resname="r157231057" restype="string" datatype="java">
         <source>({checklist_item_count})</source>
@@ -17692,11 +17692,11 @@
       </trans-unit>
       <trans-unit id="596" resname="r1070181179" restype="string" datatype="java">
         <source>Thanked {name}</source>
-        <target>谢谢{name}</target>
+        <target>已感谢{name}</target>
       </trans-unit>
       <trans-unit id="597" resname="r901997440" restype="string" datatype="java">
         <source>Actions taken</source>
-        <target>采取的措施</target>
+        <target>已采取的措施</target>
       </trans-unit>
       <trans-unit id="598" resname="r123858632" restype="string" datatype="java">
         <source>checklist on {checklist_item_name}</source>
@@ -17744,7 +17744,7 @@
       </trans-unit>
       <trans-unit id="606" resname="r556911602" restype="string" datatype="java">
         <source>Insurances accepted</source>
-        <target>接受保险</target>
+        <target>接受的保险</target>
       </trans-unit>
       <trans-unit id="607" resname="r867855095" restype="string" datatype="java">
         <source>Please confirm currently accepted insurance plans directly with the doctor.</source>
@@ -17845,7 +17845,7 @@
     <body>
       <trans-unit id="625" resname="r586088259" restype="string" datatype="java">
         <source>AnswersLogger by topic</source>
-        <target>按话题回答</target>
+        <target>按话题回答记录</target>
       </trans-unit>
     </body>
   </file>
@@ -17936,7 +17936,7 @@
     <body>
       <trans-unit id="641" resname="r870767804" restype="string" datatype="java">
         <source>You're following this question!</source>
-        <target>您已关注这个问题！</target>
+        <target>您正在关注这个问题！</target>
       </trans-unit>
       <trans-unit id="642" resname="r762155906" restype="string" datatype="java">
         <source>We'll let you know when doctors add more answers or comments.</source>
@@ -17948,7 +17948,7 @@
       </trans-unit>
       <trans-unit id="644" resname="r301158221" restype="string" datatype="java">
         <source>You're following {0}!</source>
-        <target>您已关注{0}！</target>
+        <target>您正在关注{0}！</target>
         <note annotates="source">{0} is an influencer's name.</note>
       </trans-unit>
       <trans-unit id="645" resname="r147358463" restype="string" datatype="java">
@@ -18001,7 +18001,7 @@
       </trans-unit>
       <trans-unit id="652" resname="r321971325" restype="string" datatype="java">
         <source>({0}, {1})</source>
-        <target>({0}, {1})</target>
+        <target>({0}, {1}岁)</target>
         <note annotates="source">{0} is a patient name. {1} is this patient's age. Please translate punctuations '(' and ')'.</note>
       </trans-unit>
       <trans-unit id="653" resname="r304523712" restype="string" datatype="java">
@@ -18141,22 +18141,22 @@
       </trans-unit>
       <trans-unit id="677" resname="r769580246" restype="string" datatype="java">
         <source>You asked on {0}.</source>
-        <target>您在{0}上提出问题。</target>
+        <target>您在{0}询问。</target>
         <note annotates="source">This is a notification message.{0} is a date.</note>
       </trans-unit>
       <trans-unit id="678" resname="r432411785" restype="string" datatype="java">
         <source>You asked for {0} on {1}. No responses yet.</source>
-        <target>您在{1}上要求{0}。至今还没有回应</target>
+        <target>您在{1}询问了{0}。至今还没有回应</target>
         <note annotates="source">This is a notification message. {0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="679" resname="r987402210" restype="string" datatype="java">
         <source>You asked for {start}{0}{end} on {1}.</source>
-        <target>您在{1}上要求{start}{0}{end}。</target>
+        <target>您在{1}询问了{start}{0}{end}。</target>
         <note annotates="source">This is a notification message.{0} is a doctor name. {1} is a date.</note>
       </trans-unit>
       <trans-unit id="680" resname="r649803739" restype="string" datatype="java">
         <source>{0} answered:</source>
-        <target>{0}回答：</target>
+        <target>{0}回答了：</target>
         <note annotates="source">{0} is a doctor name.</note>
       </trans-unit>
     </body>
@@ -18242,7 +18242,7 @@
     <body>
       <trans-unit id="693" resname="r877964612" restype="string" datatype="java">
         <source>Are you sure you would like to close the HealthTap app?</source>
-        <target>您确定关闭HealthTap应用程式吗？</target>
+        <target>您确定要关闭HealthTap应用程序吗？</target>
       </trans-unit>
       <trans-unit id="694" resname="r973308393" restype="string" datatype="java">
         <source>Can't read picture file</source>
@@ -18426,7 +18426,7 @@
       </trans-unit>
       <trans-unit id="734" resname="text_Regularly__44" restype="string" datatype="x-android-resource" x-context="sw720dp">
         <source>Regularly $44</source>
-        <target>正常费用$44</target>
+        <target>标价$44</target>
       </trans-unit>
       <trans-unit id="735" resname="text_Change_the_card_ending_in___1122" restype="string" datatype="x-android-resource" x-context="sw720dp">
         <source>Change the card ending in   1122</source>
@@ -18502,7 +18502,7 @@
       </trans-unit>
       <trans-unit id="753" resname="text_Only" restype="string" datatype="x-android-resource" x-context="sw720dp">
         <source>Only</source>
-        <target>只有</target>
+        <target>只要</target>
       </trans-unit>
       <trans-unit id="754" resname="text_Continue_just_for_me" restype="string" datatype="x-android-resource" x-context="sw720dp">
         <source>Continue just for me</source>
@@ -18742,7 +18742,7 @@
       </trans-unit>
       <trans-unit id="807" resname="thanks_news" restype="string" datatype="x-android-resource">
         <source>{name} and Review Team appreciates your gratitude :)</source>
-        <target>{name} 和审核小组谢谢您的谢意 :)</target>
+        <target>{name} 和审核小组感谢您的谢意 :)</target>
       </trans-unit>
       <trans-unit id="808" resname="thanks" restype="string" datatype="x-android-resource">
         <source>Thank you!</source>
@@ -18766,7 +18766,7 @@
       </trans-unit>
       <trans-unit id="813" resname="thanked" restype="string" datatype="x-android-resource">
         <source>Thanked</source>
-        <target>感谢</target>
+        <target>已感谢</target>
       </trans-unit>
       <trans-unit id="814" resname="thanked_note" restype="string" datatype="x-android-resource">
         <source>Leave a note?</source>
@@ -18942,7 +18942,7 @@
       </trans-unit>
       <trans-unit id="857" resname="signup_docapp_confirm_body" restype="string" datatype="x-android-resource">
         <source>Please download the \“HealthTap for Doctors\” app to login or signup as a doctor with a valid US medical license</source>
-        <target>请下载“HealthTap for Doctors”应用程序，从而以具备有效的美国医疗执业资格医生的身份登录或注册</target>
+        <target>请下载“HealthTap for Doctors”医生版应用程序，从而以具备有效的美国医疗执业资格医生的身份登录或注册</target>
       </trans-unit>
       <trans-unit id="858" resname="signup_docapp_confirm_title" restype="string" datatype="x-android-resource">
         <source>For US Doctors</source>
@@ -19022,7 +19022,7 @@
       </trans-unit>
       <trans-unit id="877" resname="nux_demographics_message_title" restype="string" datatype="x-android-resource">
         <source>Almost done!</source>
-        <target>几乎完成！</target>
+        <target>马上就完成了！</target>
       </trans-unit>
       <trans-unit id="878" resname="nux_demographics_message_body_new" restype="string" datatype="x-android-resource">
         <source>Tell doctors a bit more so they can personalize their answers</source>
@@ -19042,11 +19042,11 @@
       </trans-unit>
       <trans-unit id="882" resname="nux_demographics_location_title" restype="string" datatype="x-android-resource">
         <source>Location</source>
-        <target>地址</target>
+        <target>位置</target>
       </trans-unit>
       <trans-unit id="883" resname="nux_demographics_location_current" restype="string" datatype="x-android-resource">
         <source>Use current location</source>
-        <target>使用当前地址</target>
+        <target>使用当前位置</target>
       </trans-unit>
       <trans-unit id="884" resname="nux_demographics_location_manual" restype="string" datatype="x-android-resource">
         <source>or Enter Manually</source>
@@ -19110,7 +19110,7 @@
       </trans-unit>
       <trans-unit id="899" resname="following_dialog_title" restype="string" datatype="x-android-resource">
         <source>Do you or someone you know have this?</source>
-        <target>您或者您认识的人是否患有此症状？</target>
+        <target>您或者您认识的人是否有此状况？</target>
       </trans-unit>
       <trans-unit id="900" resname="following_dialog_medication" restype="string" datatype="x-android-resource">
         <source>Do you or someone you know take this?</source>
@@ -19118,7 +19118,7 @@
       </trans-unit>
       <trans-unit id="901" resname="following_dialog_procedure" restype="string" datatype="x-android-resource">
         <source>Have you or someone you know had this?</source>
-        <target>您或者您认识的人曾患有此症状？</target>
+        <target>您或者您认识的人曾有此状况？</target>
       </trans-unit>
       <trans-unit id="902" resname="following_dialog_remove" restype="string" datatype="x-android-resource">
         <source>Add or Remove &lt;b&gt;{topic_name}&lt;/b&gt;</source>
@@ -19174,7 +19174,7 @@
       </trans-unit>
       <trans-unit id="914" resname="a_little_about_me" restype="string" datatype="x-android-resource">
         <source>A little about me</source>
-        <target>关于我的简单情况</target>
+        <target>关于我的简单介绍</target>
       </trans-unit>
       <trans-unit id="915" resname="i_specialize_in" restype="string" datatype="x-android-resource">
         <source>I specialize in</source>
@@ -19206,7 +19206,7 @@
       </trans-unit>
       <trans-unit id="922" resname="known_for" restype="string" datatype="x-android-resource">
         <source>I'm known for</source>
-        <target>我的特色</target>
+        <target>我的专攻领域</target>
       </trans-unit>
       <trans-unit id="923" resname="known_for_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Known for</source>
@@ -19230,7 +19230,7 @@
       </trans-unit>
       <trans-unit id="928" resname="i_am_located_at_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Location</source>
-        <target>地址</target>
+        <target>位置</target>
       </trans-unit>
       <trans-unit id="929" resname="i_was_educated_and_trained_at" restype="string" datatype="x-android-resource">
         <source>I was educated and trained at</source>
@@ -19258,7 +19258,7 @@
       </trans-unit>
       <trans-unit id="935" resname="ive_won_the_following_awards" restype="string" datatype="x-android-resource">
         <source>I've won the following awards</source>
-        <target>我获得以下奖励</target>
+        <target>我获得过以下奖励</target>
       </trans-unit>
       <trans-unit id="936" resname="ive_won_the_following_awards_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Awards received</source>
@@ -19322,11 +19322,11 @@
       </trans-unit>
       <trans-unit id="951" resname="kind_words_from_others" restype="string" datatype="x-android-resource">
         <source>Here are some kind words about me</source>
-        <target>这里有一些人们对我的赞美。</target>
+        <target>这里有一些人们对我的善言。</target>
       </trans-unit>
       <trans-unit id="952" resname="kind_words_from_others_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Kind words from others</source>
-        <target>来自他人的赞美。</target>
+        <target>来自他人的善言。</target>
       </trans-unit>
       <trans-unit id="953" resname="office_hours" restype="string" datatype="x-android-resource">
         <source>Virtual Practice Hours</source>
@@ -19342,7 +19342,7 @@
       </trans-unit>
       <trans-unit id="956" resname="accepted_insurance_plans" restype="string" datatype="x-android-resource">
         <source>Accepted Insurance Plans</source>
-        <target>已接受保险计划</target>
+        <target>接受的保险计划</target>
       </trans-unit>
       <trans-unit id="957" resname="accepted_insurance_plans_directory_expert_copy" restype="string" datatype="x-android-resource">
         <source>Insurance Plans</source>
@@ -19887,7 +19887,7 @@
       </trans-unit>
       <trans-unit id="1093" resname="update_pharmacy_dialog_header" restype="string" datatype="x-android-resource">
         <source>At which U.S. pharmacy do you prefer to pick up prescriptions?</source>
-        <target>您更喜欢在美国的哪个药房买药？</target>
+        <target>您喜欢在哪个美国的药房买药？</target>
       </trans-unit>
       <trans-unit id="1094" resname="profile_pharmacy_add_pharmacy" restype="string" datatype="x-android-resource">
         <source>Add pharmacy</source>
@@ -19895,7 +19895,7 @@
       </trans-unit>
       <trans-unit id="1095" resname="talk_to_doc_success_question_header" restype="string" datatype="x-android-resource">
         <source>Your question was sent to our doctors!</source>
-        <target>您的问题已经发送给我们医生！</target>
+        <target>您的问题已经发送给我们的医生！</target>
       </trans-unit>
       <trans-unit id="1096" resname="talk_to_doc_success_chat_header" restype="string" datatype="x-android-resource">
         <source>Your message was sent!</source>
@@ -19903,11 +19903,11 @@
       </trans-unit>
       <trans-unit id="1097" resname="success_notify_text" restype="string" datatype="x-android-resource">
         <source>We'll notify you as soon as our doctor responds.\nIn the meantime:</source>
-        <target>我们会尽快通知您我们医生的回复。\n同时：</target>
+        <target>我们会尽快通知您我们医生的回复。\n与此同时：</target>
       </trans-unit>
       <trans-unit id="1098" resname="talk_to_doc_sucess_chat_notify" restype="string" datatype="x-android-resource">
         <source>Typically, messages are responded within 24 hours.\nIn the meantime:</source>
-        <target>邮件通常会在24小时内得到回复。\n同时：</target>
+        <target>邮件通常会在24小时内得到回复。\n与此同时：</target>
       </trans-unit>
       <trans-unit id="1099" resname="talk_to_doc_success_learnmore" restype="string" datatype="x-android-resource">
         <source>Learn more</source>
@@ -20019,7 +20019,7 @@
       </trans-unit>
       <trans-unit id="1127" resname="settings_unavialable_state_dialog_body" restype="string" datatype="x-android-resource">
         <source>We're sorry but Virtual Consults are not yet available in {state_name}. Would you still like to subscribe to access Doctors when traveling out of state?</source>
-        <target>我们很抱歉，在线咨询在{state_name}尚不可用。在旅行时，您还想继续订购以咨询医生吗？</target>
+        <target>我们很抱歉，在线咨询在{state_name}尚不可用。在旅行到外州时，您还想继续订购以咨询医生吗？</target>
       </trans-unit>
       <trans-unit id="1128" resname="settings_unavialable_state_dialog_button" restype="string" datatype="x-android-resource">
         <source>OK, Subscribe</source>
@@ -20119,7 +20119,7 @@
       </trans-unit>
       <trans-unit id="1152" resname="prime_feature_main_3" restype="string" datatype="x-android-resource">
         <source>Get immediate advice, checklists, and treatments</source>
-        <target>即时获得建议、清单和治疗方法</target>
+        <target>即时获得建议、清单和治疗</target>
       </trans-unit>
       <trans-unit id="1153" resname="prime_feature_mid_1" restype="string" datatype="x-android-resource">
         <source>Who we are</source>
@@ -20227,7 +20227,7 @@
       </trans-unit>
       <trans-unit id="1179" resname="prime_coverage_text_6" restype="string" datatype="x-android-resource">
         <source>\"This app will change everything about healthcare.\"</source>
-        <target>《这款应用程序将改变医疗保健的方方方面面》</target>
+        <target>《这款应用程序将改变医疗保健的方方面面》</target>
       </trans-unit>
       <trans-unit id="1180" resname="read_more" restype="string" datatype="x-android-resource">
         <source>…Read more ›</source>
@@ -20267,7 +20267,7 @@
       </trans-unit>
       <trans-unit id="1189" resname="ask_picker_generic_title" restype="string" datatype="x-android-resource">
         <source>When would you like help?</source>
-        <target>什么时候您想要帮助?</target>
+        <target>您想什么时候得到帮助?</target>
       </trans-unit>
       <trans-unit id="1190" resname="compose_consult_attach" restype="string" datatype="x-android-resource">
         <source>Attach</source>
@@ -20391,7 +20391,7 @@
 \u00B7 所有受个别国家限制的处方药\n\n\
 \u00B7 所有关于精神或生活方式的处方药（例如，节食或勃起功能障碍药物）\n\n\
 \u00B7 用除英语外的其它语言咨询\n\n\
-\u00B7即时处理收件箱/消息咨询（考虑视频咨询&lt;b&gt;空闲&lt;/b&gt; 医生会更快处理）</target>
+\u00B7即时处理收件箱/消息咨询（考虑视频咨询&lt;b&gt;在线&lt;/b&gt; 医生会更快处理）</target>
       </trans-unit>
       <trans-unit id="1219" resname="notToUseVirtualConsultString" restype="string" datatype="x-android-resource">
         <source>\u00B7 Chest pain or pressure\n\n\
@@ -20407,7 +20407,7 @@
 \u00B7 Suicide ideation\n\n\
 \u00B7 Unconsciousness\n\n\
 \u00B7 Any other critical or life-threatening situation</source>
-        <target>\u00B7 胸痛或胸口郁闷\n\n\
+        <target>\u00B7 胸痛或胸口闷\n\n\
 \u00B7 痉挛或癫痫\n\n\
 \u00B7 呼吸困难\n\n\
 \u00B7 心理健康/行为健康/成瘾问题\n\
@@ -20418,7 +20418,7 @@
 \u00B7 严重肢体损伤或骨折\n\n\
 \u00B7 重大的，不可控的失血\n\n\
 \u00B7 自杀倾向\n\n\
-\u00B7 无意识\n\n\
+\u00B7 失去意识\n\n\
 \u00B7 所有其他严重或危及生命的情况</target>
       </trans-unit>
       <trans-unit id="1220" resname="reasonstouseConsultInitalValues" restype="string" datatype="x-android-resource">
@@ -20678,7 +20678,7 @@
       </trans-unit>
       <trans-unit id="1258" resname="payment_localization_approx" restype="string" datatype="x-android-resource">
         <source>Approx. {price}</source>
-        <target>{price}约为</target>
+        <target>约为{price}</target>
       </trans-unit>
       <trans-unit id="1259" resname="cancel_subscription_dialog_downgrade_cancel" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
@@ -20706,7 +20706,7 @@
       </trans-unit>
       <trans-unit id="1265" resname="unsubscribe_deactive_default_hint" restype="string" datatype="x-android-resource">
         <source>What can we do to improve?</source>
-        <target>我们怎么做可以提高？</target>
+        <target>我们可以怎样改善？</target>
       </trans-unit>
       <trans-unit id="1266" resname="date_picker_title" restype="string" datatype="x-android-resource">
         <source>When were you born ?</source>
@@ -20734,7 +20734,7 @@
       </trans-unit>
       <trans-unit id="1272" resname="subscribe_guarantee_tooltip_text" restype="string" datatype="x-android-resource">
         <source>We're committed to making you have a delightful experience with our doctors that leaves you feeling good. If you're unhappy with the quality and helpfulness of the Virtual Consult, you may contact us at any time to request a refund! We guarantee you'll be satisfied :)</source>
-        <target>我们致力于使您的医生咨询成为一段愉快的经历并使您feeling good。若您对在线咨询的质量和有助度不满意，您可以随时联系我们要求退款！我们保证您会满意:)</target>
+        <target>我们致力于使您的医生咨询成为一段愉快的体验并使您feeling good。若您对在线咨询的质量和有助度不满意，您可以随时联系我们要求退款！我们保证您会满意:)</target>
       </trans-unit>
       <trans-unit id="1273" resname="subscribe_guarantee_tooltip_conditions" restype="string" datatype="x-android-resource">
         <source>This guarantee is subject to your submission to HealthTap a documented explanation supporting your request for a refund.  All determinations of your eligibility for a refund are made solely by HealthTap and are final once HealthTap reaches its decision.</source>
@@ -20758,7 +20758,7 @@
       </trans-unit>
       <trans-unit id="1278" resname="cancel_previous_session_body" restype="string" datatype="x-android-resource">
         <source>Earlier, you requested to be notified when a doctor became available for another consult. Would you like to cancel that consult and start a new one?</source>
-        <target>初期的，您可以请求通知当您咨询的医生正在为其它咨询时。您要取消这个咨询并开始一个新的咨询吗？</target>
+        <target>早前，您请求在医生可以开始新咨询时通知您。您要取消这个咨询并开始一个新的咨询吗？</target>
       </trans-unit>
       <trans-unit id="1279" resname="cancel_previous_session_never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
@@ -20818,7 +20818,7 @@
       </trans-unit>
       <trans-unit id="1293" resname="subscirbe_permonth_limit_only" restype="string" datatype="x-android-resource">
         <source>per month. Limited time only</source>
-        <target>每月限制次数</target>
+        <target>每月。限时特供</target>
       </trans-unit>
       <trans-unit id="1294" resname="subscribe_default_price" restype="string" datatype="x-android-resource">
         <source>99</source>
@@ -20850,7 +20850,7 @@
       </trans-unit>
       <trans-unit id="1301" resname="payment_confirm_and_update" restype="string" datatype="x-android-resource">
         <source>Confirm &amp; update</source>
-        <target>确认&amp;更新</target>
+        <target>确认并更新</target>
       </trans-unit>
       <trans-unit id="1302" resname="payment_phone_number_hint" restype="string" datatype="x-android-resource">
         <source>Phone number</source>
@@ -21054,7 +21054,7 @@
       </trans-unit>
       <trans-unit id="1352" resname="cant_find_doctor" restype="string" datatype="x-android-resource">
         <source>Can't find your doctor? Invite them »</source>
-        <target>无法找到您的医生邀请他们»</target>
+        <target>无法找到您的医生？邀请他们»</target>
       </trans-unit>
       <trans-unit id="1353" resname="prime_talk_button" restype="string" datatype="x-android-resource">
         <source>Get Help Now</source>
@@ -21062,7 +21062,7 @@
       </trans-unit>
       <trans-unit id="1354" resname="we_sent_your_request_to" restype="string" datatype="x-android-resource">
         <source>We sent your request to connect with</source>
-        <target>我们已经发送了您的连接请求</target>
+        <target>我们已经发送了您的连接请求给</target>
       </trans-unit>
       <trans-unit id="1355" resname="find_a_doctor" restype="string" datatype="x-android-resource">
         <source>Find a doctor</source>
@@ -21134,7 +21134,7 @@
       </trans-unit>
       <trans-unit id="1372" resname="concierge_success_title_text" restype="string" datatype="x-android-resource">
         <source>We'll notify you when the doctor verifies you as a patient!</source>
-        <target>当医生接受您作为患者/患者时，我们会通知您。</target>
+        <target>当医生接受您为患者时，我们会通知您。</target>
       </trans-unit>
       <trans-unit id="1373" resname="concierge_success_title_append" restype="string" datatype="x-android-resource">
         <source>\nIn the mean time, would you like to schedule a video chat or message with the doctor?</source>
@@ -21218,7 +21218,7 @@
       </trans-unit>
       <trans-unit id="1393" resname="concierge_intro_cancel_confirm_body" restype="string" datatype="x-android-resource">
         <source>Are you sure you want to cancel the request to connect via an Introductory Consult? (We'll credit your account)</source>
-        <target>您确定取消通过介绍性咨询的连接请求吗？(我们会退款到您的账户)</target>
+        <target>您确定取消介绍性咨询的连接请求吗？(我们会退款到您的账户)</target>
       </trans-unit>
       <trans-unit id="1394" resname="concierge_term_and_privacy" restype="string" datatype="x-android-resource">
         <source>I agree to HealthTap's {start1}Terms{end1} and {start2}Privacy Policy{end2}.</source>
@@ -21330,7 +21330,7 @@
       </trans-unit>
       <trans-unit id="1421" resname="concierge_key_success_toaster_title" restype="string" datatype="x-android-resource">
         <source>Added to your Care-Team!</source>
-        <target>已添加您的医护团队</target>
+        <target>已添加到您的医护团队</target>
       </trans-unit>
       <trans-unit id="1422" resname="concierge_key_success_toaster_body" restype="string" datatype="x-android-resource">
         <source>You may now video chat, schedule appointments, or send messages to {doctor_name} from his Virtual Practice.</source>
@@ -21354,7 +21354,7 @@
       </trans-unit>
       <trans-unit id="1427" resname="generic_ask_picker_concierge_option_title" restype="string" datatype="x-android-resource">
         <source>Schedule an appointment</source>
-        <target>预约时间表</target>
+        <target>预约</target>
       </trans-unit>
       <trans-unit id="1428" resname="generic_ask_picker_concierge_option_subtitle" restype="string" datatype="x-android-resource">
         <source>By video, voice, or text chat with a specialist</source>
@@ -21386,7 +21386,7 @@
       </trans-unit>
       <trans-unit id="1435" resname="existing_session_warning_title" restype="string" datatype="x-android-resource">
         <source>Existing Consult</source>
-        <target>咨询现状</target>
+        <target>现有咨询</target>
       </trans-unit>
       <trans-unit id="1436" resname="existing_session_warning_body" restype="string" datatype="x-android-resource">
         <source>You already have a consult with this doctor that is not yet completed. You can add messages to this consult to share more information</source>
@@ -21454,7 +21454,7 @@
       </trans-unit>
       <trans-unit id="1452" resname="upsell_bold" restype="string" datatype="x-android-resource">
         <source>Do you have a follow-up question?</source>
-        <target>您有随访问题吗？</target>
+        <target>您有后续问题吗？</target>
       </trans-unit>
       <trans-unit id="1453" resname="concierge_upsell_title" restype="string" datatype="x-android-resource">
         <source>Send a secure message for expert advice</source>
@@ -21482,7 +21482,7 @@
       </trans-unit>
       <trans-unit id="1459" resname="thank_upsell_concierge_indication_connect" restype="string" datatype="x-android-resource">
         <source>I'm glad I could help!\nWould you like to chat further?</source>
-        <target>很高兴我可以帮助您\n您需要进一步的交流吗？</target>
+        <target>很高兴我可以帮助您！\n您需要进一步的交流吗？</target>
       </trans-unit>
       <trans-unit id="1460" resname="thank_upsell_connect" restype="string" datatype="x-android-resource">
         <source>Maybe later. Just connect for now ››</source>
@@ -21510,7 +21510,7 @@
       </trans-unit>
       <trans-unit id="1466" resname="thank_upsell_concierge_title" restype="string" datatype="x-android-resource">
         <source>{doc_name} appreciates your gratitude!</source>
-        <target>{doc_name} 谢谢您的谢意！</target>
+        <target>{doc_name} 感谢您的谢意！</target>
       </trans-unit>
       <trans-unit id="1467" resname="thank_upsell_concierge_subtitle" restype="string" datatype="x-android-resource">
         <source>Would you like to send a secure message to {doc_name}?</source>
@@ -21590,11 +21590,11 @@
       </trans-unit>
       <trans-unit id="1486" resname="gift_success_title" restype="string" datatype="x-android-resource">
         <source>Invitations sent!</source>
-        <target>发送邀请</target>
+        <target>邀请已发送！</target>
       </trans-unit>
       <trans-unit id="1487" resname="gift_success_text_concierge" restype="string" datatype="x-android-resource">
         <source>Your invite has been sent. We will notify you when you receive ${price} off :)</source>
-        <target>您的邀请已经发送！当您减免${price}时我们会通知您:)</target>
+        <target>您的邀请已经发送！当您获得减免${price}时我们会通知您:)</target>
       </trans-unit>
       <trans-unit id="1488" resname="gift_email_title" restype="string" datatype="x-android-resource">
         <source>Invite your contacts</source>
@@ -21662,11 +21662,11 @@
       </trans-unit>
       <trans-unit id="1504" resname="collect_info_dialog_header" restype="string" datatype="x-android-resource">
         <source>Get your prescription</source>
-        <target>得到您的处方</target>
+        <target>获取您的处方</target>
       </trans-unit>
       <trans-unit id="1505" resname="collect_info_dialog_green" restype="string" datatype="x-android-resource">
         <source>To get prescriptions, you must share the following accurately</source>
-        <target>为了得到处方，您必须准确地分享以下内容</target>
+        <target>为获得处方，您必须准确地分享以下内容</target>
       </trans-unit>
       <trans-unit id="1506" resname="compose_consult_error_text" restype="string" datatype="x-android-resource">
         <source>Please provide your reason for the consult</source>
@@ -21742,7 +21742,7 @@
       </trans-unit>
       <trans-unit id="1524" resname="nux_prime_header" restype="string" datatype="x-android-resource">
         <source>Get help anytime, anywhere from {doctor_num} doctors</source>
-        <target>从{doctor_num}医生随时随地得到帮助</target>
+        <target>随时随地获得{doctor_num}名医生的帮助</target>
       </trans-unit>
       <trans-unit id="1525" resname="choose_one" restype="string" datatype="x-android-resource">
         <source>Choose one of our services:</source>
@@ -21862,7 +21862,7 @@
       </trans-unit>
       <trans-unit id="1554" resname="alternate_plan_header" restype="string" datatype="x-android-resource">
         <source>A more affordable option!</source>
-        <target>一个更实惠的/廉价的选择！</target>
+        <target>一个更实惠的选择！</target>
       </trans-unit>
       <trans-unit id="1555" resname="alternate_plan_text" restype="string" datatype="x-android-resource">
         <source>We have a special plan that makes it more affordable for you to stay happy and healthy. Try our new Pay-as-you-go plan!</source>
@@ -21898,7 +21898,7 @@
       </trans-unit>
       <trans-unit id="1563" resname="change_plan_basic_title" restype="string" datatype="x-android-resource">
         <source>Basic</source>
-        <target>基本的</target>
+        <target>基本</target>
       </trans-unit>
       <trans-unit id="1564" resname="change_plan_basic_subtitle" restype="string" datatype="x-android-resource">
         <source>Brief anonymous text\nquestions</source>
@@ -21958,15 +21958,15 @@
       </trans-unit>
       <trans-unit id="1578" resname="signup_age_check_toast" restype="string" datatype="x-android-resource">
         <source>You must be %d years or older to use HealthTap</source>
-        <target>年满%d 才可以使用HealthTap</target>
+        <target>年满%d 岁才可以使用HealthTap</target>
       </trans-unit>
       <trans-unit id="1579" resname="consult_age_check_toast" restype="string" datatype="x-android-resource">
         <source>You must be %d years or older to consult with a doctor</source>
-        <target>年满%d 才可以使用咨询医生</target>
+        <target>年满%d 岁才可以使用咨询医生</target>
       </trans-unit>
       <trans-unit id="1580" resname="consult_follow_up_subtitle" restype="string" datatype="x-android-resource">
         <source>would like to check in:</source>
-        <target>想要报道：</target>
+        <target>想要回访：</target>
       </trans-unit>
       <trans-unit id="1581" resname="consult_follow_up_title" restype="string" datatype="x-android-resource">
         <source>How are you feeling?</source>
@@ -21990,7 +21990,7 @@
       </trans-unit>
       <trans-unit id="1586" resname="intro_ron_gutman" restype="string" datatype="x-android-resource">
         <source>Ron Gutman,\nFounder &amp; CEO</source>
-        <target>Ron Gutman,\n创始人&amp;CEO</target>
+        <target>Ron Gutman,\n创始人和CEO</target>
       </trans-unit>
       <trans-unit id="1587" resname="header_title_great" restype="string" datatype="x-android-resource">
         <source>Great to hear that!</source>
@@ -22034,7 +22034,7 @@
       </trans-unit>
       <trans-unit id="1597" resname="choose_supporter_goal_text" restype="string" datatype="x-android-resource">
         <source>Finish this sentence:\nI would like help to accomplish…</source>
-        <target>完成这句话：\n我想得到帮助以完成...</target>
+        <target>完成这句话：\n我想得到帮助以实现...</target>
       </trans-unit>
       <trans-unit id="1598" resname="choose_supporter_invite_text" restype="string" datatype="x-android-resource">
         <source>How would you like to invite them?</source>
@@ -22054,7 +22054,7 @@
       </trans-unit>
       <trans-unit id="1602" resname="invite_supporter_template_sms" restype="string" datatype="x-android-resource">
         <source>I'ld love your help to accomplish {goal_name}. Follow this link to see how: www.healthtap.com/togetherwecan?code={invite_link}</source>
-        <target>I'我愿意帮助您完成{goal_name}。点击下面链接：www.healthtap.com/togetherwecan?code={invite_link}</target>
+        <target>I'我愿意帮助您实现{goal_name}。点击下面链接：www.healthtap.com/togetherwecan?code={invite_link}</target>
       </trans-unit>
       <trans-unit id="1603" resname="kudos_success_title" restype="string" datatype="x-android-resource">
         <source>Success!</source>
@@ -22066,7 +22066,7 @@
       </trans-unit>
       <trans-unit id="1605" resname="kudos_message" restype="string" datatype="x-android-resource">
         <source>You helped {user_name} with {goal_name}</source>
-        <target>您帮助的{user_name} {goal_name}</target>
+        <target>您帮助了{user_name}{goal_name}</target>
       </trans-unit>
       <trans-unit id="1606" resname="custom_kudos_hint" restype="string" datatype="x-android-resource">
         <source>Enter a personlized message for {user_name}</source>
@@ -22442,7 +22442,7 @@
       </trans-unit>
       <trans-unit id="1699" resname="concierge_incentive_banner" restype="string" datatype="x-android-resource">
         <source>One time offer - $5 off!</source>
-        <target>一次性优惠5美元</target>
+        <target>一次性优惠——减免5美元</target>
       </trans-unit>
       <trans-unit id="1700" resname="ask_question_to_doc_similar_questions_title" restype="string" datatype="x-android-resource">
         <source>Before you send a new question to our doctors…</source>
@@ -22494,7 +22494,7 @@
       </trans-unit>
       <trans-unit id="1712" resname="lab_results_date_text" restype="string" datatype="x-android-resource">
         <source>Uploaded on %s</source>
-        <target>已上传%s</target>
+        <target>%s已上传</target>
       </trans-unit>
       <trans-unit id="1713" resname="lab_test_received_text" restype="string" datatype="x-android-resource">
         <source>We encourage you to have a follow-up consult with a doctor to understand what these results mean and what to do next.</source>
@@ -22534,7 +22534,7 @@
       </trans-unit>
       <trans-unit id="1722" resname="test_drive_upsell_submessage_text" restype="string" datatype="x-android-resource">
         <source>For a limited time only</source>
-        <target>一次有时间限制</target>
+        <target>限时特供</target>
       </trans-unit>
       <trans-unit id="1723" resname="test_drive_upsell_button_text" restype="string" datatype="x-android-resource">
         <source>Try it now</source>
@@ -22778,7 +22778,7 @@
       </trans-unit>
       <trans-unit id="1780" resname="zipcode_or_postcode_hint" restype="string" datatype="x-android-resource">
         <source>Zipcode or Postcode</source>
-        <target>邮政编码</target>
+        <target>邮政编码或邮政区号</target>
       </trans-unit>
       <trans-unit id="1781" resname="mailing_address_header_text" restype="string" datatype="x-android-resource">
         <source>At what mailing address can doctors, pharmacists or HealthTap reach you if needed?</source>
@@ -22794,7 +22794,7 @@
       </trans-unit>
       <trans-unit id="1784" resname="title_consult_activity" restype="string" datatype="x-android-resource">
         <source>Live Consult</source>
-        <target>现场咨询</target>
+        <target>实时咨询</target>
       </trans-unit>
       <trans-unit id="1785" resname="snapshot_section_type_overview" restype="string" datatype="x-android-resource">
         <source>overview</source>
@@ -22886,11 +22886,11 @@
       </trans-unit>
       <trans-unit id="1807" resname="snapshot_subsection_type_medical_devices" restype="string" datatype="x-android-resource">
         <source>medical_device</source>
-        <target>medical_device/医疗设备</target>
+        <target>医疗设备</target>
       </trans-unit>
       <trans-unit id="1808" resname="snapshot_subsection_type_other_treatment" restype="string" datatype="x-android-resource">
         <source>other_treatment</source>
-        <target>other_treatment/其他治疗</target>
+        <target>其他治疗</target>
       </trans-unit>
       <trans-unit id="1809" resname="snapshot_subsection_type_side_effect" restype="string" datatype="x-android-resource">
         <source>side_effect</source>
@@ -23210,7 +23210,7 @@
       </trans-unit>
       <trans-unit id="1888" resname="location" restype="string" datatype="x-android-resource">
         <source>Location</source>
-        <target>地址</target>
+        <target>位置</target>
       </trans-unit>
       <trans-unit id="1889" resname="condition_or_symptom" restype="string" datatype="x-android-resource">
         <source>Condition or Symptom</source>
@@ -23522,7 +23522,7 @@
       </trans-unit>
       <trans-unit id="1966" resname="text_Not_anymore" restype="string" datatype="x-android-resource">
         <source>Not anymore</source>
-        <target>不再</target>
+        <target>不再这样</target>
       </trans-unit>
       <trans-unit id="1967" resname="text_Some_notes_I_left_about_it__A_short_overview_description_of_the_condition_with_some_useful_info_for_the_doctors" restype="string" datatype="x-android-resource">
         <source>Some notes I left about it. A short overview description of the condition with some useful info for the doctors</source>
@@ -23642,7 +23642,7 @@
       </trans-unit>
       <trans-unit id="1996" resname="text_Actions_taken" restype="string" datatype="x-android-resource">
         <source>Actions taken</source>
-        <target>采取的措施</target>
+        <target>已采取的措施</target>
       </trans-unit>
       <trans-unit id="1997" resname="text____" restype="string" datatype="x-android-resource">
         <source>: )</source>
@@ -23674,7 +23674,7 @@
       </trans-unit>
       <trans-unit id="2004" resname="text_You_asked_for_" restype="string" datatype="x-android-resource">
         <source>You asked for</source>
-        <target>您咨询过</target>
+        <target>您询问了</target>
       </trans-unit>
       <trans-unit id="2005" resname="text_A" restype="string" datatype="x-android-resource">
         <source>A</source>
@@ -23810,7 +23810,7 @@
       </trans-unit>
       <trans-unit id="2038" resname="text_90_mo" restype="string" datatype="x-android-resource">
         <source>90/mo</source>
-        <target>90/mo</target>
+        <target>90/月</target>
       </trans-unit>
       <trans-unit id="2039" resname="text_Insurance_plan" restype="string" datatype="x-android-resource">
         <source>Insurance plan</source>
@@ -23898,7 +23898,7 @@
       </trans-unit>
       <trans-unit id="2060" resname="text_Try_it_now_" restype="string" datatype="x-android-resource">
         <source>Try it now!</source>
-        <target>现在立即尝试</target>
+        <target>现在立即尝试！</target>
       </trans-unit>
       <trans-unit id="2061" resname="text_85_000_top_doctors_standing_by" restype="string" datatype="x-android-resource">
         <source>85,000 top doctors standing by</source>
@@ -24058,11 +24058,11 @@
       </trans-unit>
       <trans-unit id="2100" resname="text_Have_this" restype="string" datatype="x-android-resource">
         <source>Have this</source>
-        <target>现有这情况</target>
+        <target>现有这个情况</target>
       </trans-unit>
       <trans-unit id="2101" resname="text_No_longer_have_this" restype="string" datatype="x-android-resource">
         <source>No longer have this</source>
-        <target>现在无但曾经有这情况</target>
+        <target>不再有这个情况</target>
       </trans-unit>
       <trans-unit id="2102" resname="hint_Email_address" restype="string" datatype="x-android-resource">
         <source>Email address</source>
@@ -24370,7 +24370,7 @@
       </trans-unit>
       <trans-unit id="2178" resname="text_Regularly__44" restype="string" datatype="x-android-resource">
         <source>Regularly $44</source>
-        <target>正常费用$44</target>
+        <target>标价$44</target>
       </trans-unit>
       <trans-unit id="2179" resname="text_Change_the_card_ending_in___1122" restype="string" datatype="x-android-resource">
         <source>Change the card ending in   1122</source>
@@ -24390,7 +24390,7 @@
       </trans-unit>
       <trans-unit id="2183" resname="text___0_regularly____0_in_credits_" restype="string" datatype="x-android-resource">
         <source>($0 regularly - $0 in credits)</source>
-        <target>($0 正常费用 - $0 余额)</target>
+        <target>(标价$0  - 余额$0 )</target>
       </trans-unit>
       <trans-unit id="2184" resname="text_100__Satisfaction_Guaranteed" restype="string" datatype="x-android-resource">
         <source>100% Satisfaction Guaranteed</source>
@@ -24554,7 +24554,7 @@
       </trans-unit>
       <trans-unit id="2224" resname="text_How_would_you_like_to_consult_Dr__Doctor" restype="string" datatype="x-android-resource">
         <source>How would you like to consult Dr. Doctor</source>
-        <target>您想要咨询医学博士吗？</target>
+        <target>您想要咨询医生吗？</target>
       </trans-unit>
       <trans-unit id="2225" resname="text_Schedule_a_video_appointment" restype="string" datatype="x-android-resource">
         <source>Schedule a video appointment</source>
@@ -24678,7 +24678,7 @@
       </trans-unit>
       <trans-unit id="2255" resname="text_Only" restype="string" datatype="x-android-resource">
         <source>Only</source>
-        <target>只有</target>
+        <target>只要</target>
       </trans-unit>
       <trans-unit id="2256" resname="text_Discover_checklists" restype="string" datatype="x-android-resource">
         <source>Discover checklists</source>
@@ -24774,7 +24774,7 @@
       </trans-unit>
       <trans-unit id="2279" resname="text_What_s_new_" restype="string" datatype="x-android-resource">
         <source>What's new!</source>
-        <target>新！</target>
+        <target>新内容！</target>
       </trans-unit>
       <trans-unit id="2280" resname="text_Grow_your_Doctor_Care_Team" restype="string" datatype="x-android-resource">
         <source>Grow your Doctor Care-Team</source>
@@ -24794,7 +24794,7 @@
       </trans-unit>
       <trans-unit id="2284" resname="text_Location" restype="string" datatype="x-android-resource">
         <source>Location</source>
-        <target>地址</target>
+        <target>位置</target>
       </trans-unit>
       <trans-unit id="2285" resname="text_Filter_results" restype="string" datatype="x-android-resource">
         <source>Filter results</source>
@@ -24922,7 +24922,7 @@
       </trans-unit>
       <trans-unit id="2315" resname="years_in_practice" restype="plural" datatype="x-android-resource" extype="other">
         <source>%d years in practice</source>
-        <target>从业%d年</target>
+        <target>%d年诊疗经验</target>
       </trans-unit>
       <trans-unit id="2316" resname="years" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 year</source>
@@ -24974,19 +24974,19 @@
       </trans-unit>
       <trans-unit id="2328" resname="more_action" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 more action</source>
-        <target>另1条建议</target>
+        <target>另1个行动</target>
       </trans-unit>
       <trans-unit id="2329" resname="more_action" restype="plural" datatype="x-android-resource" extype="other">
         <source>%d more actions</source>
-        <target>另%d次行动/活动</target>
+        <target>另%d个行动</target>
       </trans-unit>
       <trans-unit id="2330" resname="see_more_action" restype="plural" datatype="x-android-resource" extype="one">
         <source>See 1 more action</source>
-        <target>查看另1条建议…</target>
+        <target>查看另1个行动…</target>
       </trans-unit>
       <trans-unit id="2331" resname="see_more_action" restype="plural" datatype="x-android-resource" extype="other">
         <source>See %d more actions</source>
-        <target>查看更多的%d条建议…</target>
+        <target>查看%d个行动…</target>
       </trans-unit>
       <trans-unit id="2332" resname="search_result_responded" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor responded</source>
@@ -25054,11 +25054,11 @@
       </trans-unit>
       <trans-unit id="2348" resname="upsell1" restype="plural" datatype="x-android-resource" extype="one">
         <source>Do you have a follow-up question? Consult {expert_name}, a &lt;b&gt;{expert_specialty}&lt;/b&gt; specialist with 1 year in practice:</source>
-        <target>您有随访问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;从业1年的专家：</target>
+        <target>您有后续问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;从业1年的专家：</target>
       </trans-unit>
       <trans-unit id="2349" resname="upsell1" restype="plural" datatype="x-android-resource" extype="other">
         <source>Do you have a follow-up question? Consult {expert_name}, a &lt;b&gt;{expert_specialty}&lt;/b&gt; specialist with %d years in practice:</source>
-        <target>您有随访问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;从业%d年实的专家：</target>
+        <target>您有后续问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;从业%d年实的专家：</target>
       </trans-unit>
       <trans-unit id="2350" resname="see_more_answer" restype="plural" datatype="x-android-resource" extype="one">
         <source>See one more answer</source>
@@ -25634,15 +25634,15 @@
       </trans-unit>
       <trans-unit id="2509" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="2">
         <source>Awesome job!</source>
-        <target>出色的工作！</target>
+        <target>干得很棒！</target>
       </trans-unit>
       <trans-unit id="2510" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="3">
         <source>Super job!</source>
-        <target>出色的完成任务！</target>
+        <target>做的好！</target>
       </trans-unit>
       <trans-unit id="2511" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="4">
         <source>Excellent!</source>
-        <target>极好的！</target>
+        <target>极好！</target>
       </trans-unit>
       <trans-unit id="2512" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="5">
         <source>Keep it up!</source>
@@ -25670,39 +25670,39 @@
       </trans-unit>
       <trans-unit id="2518" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="0">
         <source>Great Work, {name}</source>
-        <target>干得漂亮！{name}</target>
+        <target>干得漂亮，{name}</target>
       </trans-unit>
       <trans-unit id="2519" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="1">
         <source>Nice one, {name}</source>
-        <target>很好！{name}</target>
+        <target>很好，{name}</target>
       </trans-unit>
       <trans-unit id="2520" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="2">
         <source>Awesome job, {name}</source>
-        <target>出色的工作！{name}</target>
+        <target>干得很棒，{name}</target>
       </trans-unit>
       <trans-unit id="2521" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="3">
         <source>Super job, {name}</source>
-        <target>极好的！{name}</target>
+        <target>干得好，{name}</target>
       </trans-unit>
       <trans-unit id="2522" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="4">
         <source>Excellent, {name}</source>
-        <target>极好的！{name}</target>
+        <target>极好，{name}</target>
       </trans-unit>
       <trans-unit id="2523" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="5">
         <source>Keep it up, {name}</source>
-        <target>坚持努力！{name}</target>
+        <target>坚持努力，{name}</target>
       </trans-unit>
       <trans-unit id="2524" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="6">
         <source>That's amazing, {name}</source>
-        <target>坚持努力！{name}</target>
+        <target>太厉害了，{name}</target>
       </trans-unit>
       <trans-unit id="2525" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="7">
         <source>You're awesome, {name}</source>
-        <target>您真棒！{name}</target>
+        <target>您真棒，{name}</target>
       </trans-unit>
       <trans-unit id="2526" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="8">
         <source>Good going, {name}</source>
-        <target>好运！{name}</target>
+        <target>继续，{name}</target>
       </trans-unit>
       <trans-unit id="2527" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="9">
         <source>Kudos, {name}</source>
@@ -25710,7 +25710,7 @@
       </trans-unit>
       <trans-unit id="2528" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="10">
         <source>So nice, {name}</source>
-        <target>好运！{name}</target>
+        <target>很好，{name}</target>
       </trans-unit>
       <trans-unit id="2529" resname="frequency" restype="array" datatype="x-android-resource" extype="0">
         <source>days in a row</source>
@@ -26894,11 +26894,11 @@
       </trans-unit>
       <trans-unit id="2824" resname="question_prime_text_array" restype="array" datatype="x-android-resource" extype="1">
         <source>The doctor will see you now\u00a0›</source>
-        <target>医生将会看到您\u00a0&gt;</target>
+        <target>医生现在可以见您\u00a0&gt;</target>
       </trans-unit>
       <trans-unit id="2825" resname="question_prime_text_array" restype="array" datatype="x-android-resource" extype="2">
         <source>A doctor will see you now\u00a0›</source>
-        <target>医生将会看到您\u00a0&gt;</target>
+        <target>医生现在可以见您\u00a0&gt;</target>
       </trans-unit>
       <trans-unit id="2826" resname="question_prime_text_array" restype="array" datatype="x-android-resource" extype="3">
         <source>See a doctor now\u00a0›</source>
@@ -26922,11 +26922,11 @@
       </trans-unit>
       <trans-unit id="2831" resname="question_concierge_1_text_array" restype="array" datatype="x-android-resource" extype="2">
         <source>Ask {doctor_last_name} now\u00a0›</source>
-        <target>询问{doctor_last_name}现在\u00a0›</target>
+        <target>现在询问{doctor_last_name}\u00a0›</target>
       </trans-unit>
       <trans-unit id="2832" resname="question_concierge_1_text_array" restype="array" datatype="x-android-resource" extype="3">
         <source>Speak with {doctor_last_name} now\u00a0›</source>
-        <target>交流{doctor_last_name}现在\u00a0›</target>
+        <target>现在与{doctor_last_name}交流\u00a0›</target>
       </trans-unit>
       <trans-unit id="2833" resname="question_concierge_1_text_array" restype="array" datatype="x-android-resource" extype="4">
         <source>Get help now\u00a0›</source>
@@ -26938,7 +26938,7 @@
       </trans-unit>
       <trans-unit id="2835" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="1">
         <source>{user_first_name}, do you have a follow-up question?\u00a0›</source>
-        <target>{user_first_name}, 您有随访问题吗？\u00a0›</target>
+        <target>{user_first_name}, 您有后续问题吗？\u00a0›</target>
       </trans-unit>
       <trans-unit id="2836" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="2">
         <source>{user_first_name}, would you like to send doctors a secure message?\u00a0›</source>
@@ -28010,11 +28010,11 @@
       </trans-unit>
       <trans-unit id="3104" resname="doctor_filter_availability" restype="array" datatype="x-android-resource" extype="3">
         <source>This week</source>
-        <target>这周</target>
+        <target>本周</target>
       </trans-unit>
       <trans-unit id="3105" resname="doctor_filter_availability" restype="array" datatype="x-android-resource" extype="4">
         <source>This month</source>
-        <target>这个月</target>
+        <target>本月</target>
       </trans-unit>
       <trans-unit id="3106" resname="doctor_filter_docScore" restype="array" datatype="x-android-resource" extype="0">
         <source>Any</source>
@@ -29212,7 +29212,7 @@
     <body>
       <trans-unit id="19" resname="r383257904" restype="string" datatype="java">
         <source>Practicing:</source>
-        <target state="translated">诊疗中：</target>
+        <target state="translated">诊疗：</target>
       </trans-unit>
     </body>
   </file>
@@ -29284,7 +29284,7 @@
       </trans-unit>
       <trans-unit id="31" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target state="translated">您有随访问题吗？立即在线询问医生：</target>
+        <target state="translated">您有后续问题吗？立即在线询问医生：</target>
       </trans-unit>
     </body>
   </file>
@@ -29292,7 +29292,7 @@
     <body>
       <trans-unit id="32" resname="r475478276" restype="string" datatype="java">
         <source>{name}'s</source>
-        <target state="translated">{name}'s</target>
+        <target state="translated">{name}的</target>
       </trans-unit>
     </body>
   </file>
@@ -29638,7 +29638,7 @@
       </trans-unit>
       <trans-unit id="2448" resname="dead_relationship_age" restype="array" datatype="x-android-resource" extype="17">
         <source>How old was your granddaughter?</source>
-        <target state="translated">您素女当时的年龄？</target>
+        <target state="translated">您孙女当时的年龄？</target>
       </trans-unit>
       <trans-unit id="2448" resname="dead_relationship_age" restype="array" datatype="x-android-resource" extype="18">
         <source>How old was your stepson?</source>
@@ -29758,7 +29758,7 @@
     <body>
       <trans-unit id="3" resname="r32892148" restype="string" datatype="java">
         <source>You're now following "{topic_name}"</source>
-        <target state="translated">你现在关注了 "{topic_name}"</target>
+        <target state="translated">您现在关注了 "{topic_name}"</target>
       </trans-unit>
     </body>
   </file>
@@ -29766,7 +29766,7 @@
     <body>
       <trans-unit id="4" resname="r440805493" restype="string" datatype="java">
         <source>You're now following the topic "{0}"!</source>
-        <target state="translated">你现在关注了此专题 "{0}"!</target>
+        <target state="translated">您现在关注了此话题 "{0}"!</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
     </body>
@@ -29775,7 +29775,7 @@
     <body>
       <trans-unit id="5" resname="r780459903" restype="string" datatype="java">
         <source>You're now following "{0}"</source>
-        <target state="translated">你现在关注了 "{0}"</target>
+        <target state="translated">您现在关注了 "{0}"</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
     </body>
@@ -29788,7 +29788,7 @@
       </trans-unit>
       <trans-unit id="8" resname="location_search_unavailable" restype="string" datatype="x-android-resource">
         <source>Sorry, changing your location is currently not available.</source>
-        <target>抱歉，现在无法更新您的地址。</target>
+        <target>抱歉，现在无法更新您的位置。</target>
       </trans-unit>
       <trans-unit id="9" resname="deactivate" restype="string" datatype="x-android-resource">
         <source>Deactivate</source>
@@ -34605,7 +34605,7 @@
     <body>
       <trans-unit id="84" resname="text_Regularly__44" restype="string" datatype="x-android-resource">
         <source>Regularly $44</source>
-        <target>正常费用$44</target>
+        <target>标价$44</target>
       </trans-unit>
       <trans-unit id="85" resname="text_Change_the_card_ending_in___1122" restype="string" datatype="x-android-resource">
         <source>Change the card ending in   1122</source>
@@ -34916,7 +34916,7 @@
     <body>
       <trans-unit id="132" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target>您有随访问题吗？立即在线咨询医生：</target>
+        <target>您有后续问题吗？立即在线咨询医生：</target>
       </trans-unit>
     </body>
   </file>
@@ -34952,7 +34952,7 @@
       </trans-unit>
       <trans-unit id="138" resname="r808907878" restype="string" datatype="java">
         <source>Please don't include a followup question in your note. {start}To do so, ask a question.{end}</source>
-        <target>请不要在您的备注中包含随访问题。{start}如有需要，请提出问题。{end}</target>
+        <target>请不要在您的备注中包含后续问题。{start}如有需要，请提出问题。{end}</target>
       </trans-unit>
     </body>
   </file>
@@ -35193,7 +35193,7 @@
       </trans-unit>
       <trans-unit id="182" resname="upcoming_appointment_subaccount_row_text" restype="string" datatype="x-android-resource">
         <source>{subaccount_name}'s consult</source>
-        <target>{Subaccount_name}\’s 咨询</target>
+        <target>{Subaccount_name}的咨询</target>
       </trans-unit>
     </body>
   </file>
@@ -35331,19 +35331,19 @@
       </trans-unit>
       <trans-unit id="213" resname="more_action" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 more action</source>
-        <target>另1行动</target>
+        <target>另1个行动</target>
       </trans-unit>
       <trans-unit id="214" resname="more_action" restype="plural" datatype="x-android-resource" extype="other">
         <source>%d more actions</source>
-        <target>更多的%d条建议</target>
+        <target>%d个行动</target>
       </trans-unit>
       <trans-unit id="215" resname="see_more_action" restype="plural" datatype="x-android-resource" extype="one">
         <source>See 1 more action</source>
-        <target>查看另1行动</target>
+        <target>查看另1个行动</target>
       </trans-unit>
       <trans-unit id="216" resname="see_more_action" restype="plural" datatype="x-android-resource" extype="other">
         <source>See %d more actions</source>
-        <target>查看更多的%d行动…</target>
+        <target>查看%个行动…</target>
       </trans-unit>
       <trans-unit id="217" resname="search_result_responded" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor responded</source>
@@ -35411,11 +35411,11 @@
       </trans-unit>
       <trans-unit id="233" resname="upsell1" restype="plural" datatype="x-android-resource" extype="one">
         <source>Do you have a follow-up question? Consult {expert_name}, a &lt;b&gt;{expert_specialty}&lt;/b&gt; specialist with 1 year in practice:</source>
-        <target>您有随访问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;1年诊疗经验的专家：</target>
+        <target>您有后续问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;1年诊疗经验的专家：</target>
       </trans-unit>
       <trans-unit id="234" resname="upsell1" restype="plural" datatype="x-android-resource" extype="other">
         <source>Do you have a follow-up question? Consult {expert_name}, a &lt;b&gt;{expert_specialty}&lt;/b&gt; specialist with %d years in practice:</source>
-        <target>您有随访问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;%d年诊疗经验的专家：</target>
+        <target>您有后续问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;%d年诊疗经验的专家：</target>
       </trans-unit>
       <trans-unit id="235" resname="see_more_answer" restype="plural" datatype="x-android-resource" extype="one">
         <source>See one more answer</source>
@@ -35998,7 +35998,7 @@
       </trans-unit>
       <trans-unit id="376" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="4">
         <source>Excellent!</source>
-        <target>极好的！</target>
+        <target>极好！</target>
       </trans-unit>
       <trans-unit id="377" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="5">
         <source>Keep it up!</source>
@@ -36026,39 +36026,39 @@
       </trans-unit>
       <trans-unit id="383" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="0">
         <source>Great Work, {name}</source>
-        <target>干得漂亮！{name}</target>
+        <target>干得漂亮，{name}</target>
       </trans-unit>
       <trans-unit id="384" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="1">
         <source>Nice one, {name}</source>
-        <target>很好！{name}</target>
+        <target>很好，{name}</target>
       </trans-unit>
       <trans-unit id="385" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="2">
         <source>Awesome job, {name}</source>
-        <target>出色的工作！{name}</target>
+        <target>干得棒，{name}</target>
       </trans-unit>
       <trans-unit id="386" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="3">
         <source>Super job, {name}</source>
-        <target>极好的！{name}</target>
+        <target>干得好，{name}</target>
       </trans-unit>
       <trans-unit id="387" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="4">
         <source>Excellent, {name}</source>
-        <target>极好的！{name}</target>
+        <target>极好，{name}</target>
       </trans-unit>
       <trans-unit id="388" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="5">
         <source>Keep it up, {name}</source>
-        <target>坚持努力！{name}</target>
+        <target>坚持努力，{name}</target>
       </trans-unit>
       <trans-unit id="389" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="6">
         <source>That's amazing, {name}</source>
-        <target>坚持努力！{name}</target>
+        <target>太棒了，{name}</target>
       </trans-unit>
       <trans-unit id="390" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="7">
         <source>You're awesome, {name}</source>
-        <target>您真棒！{name}</target>
+        <target>您真棒，{name}</target>
       </trans-unit>
       <trans-unit id="391" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="8">
         <source>Good going, {name}</source>
-        <target>好运！{name}</target>
+        <target>继续，{name}</target>
       </trans-unit>
       <trans-unit id="392" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="9">
         <source>Kudos, {name}</source>
@@ -36066,7 +36066,7 @@
       </trans-unit>
       <trans-unit id="393" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="10">
         <source>So nice, {name}</source>
-        <target>好运！{name}</target>
+        <target>真好，{name}</target>
       </trans-unit>
       <trans-unit id="394" resname="frequency" restype="array" datatype="x-android-resource" extype="0">
         <source>days in a row</source>
@@ -36102,7 +36102,7 @@
       </trans-unit>
       <trans-unit id="402" resname="notification_settings" restype="array" datatype="x-android-resource" extype="3">
         <source>Disabled</source>
-        <target>禁用</target>
+        <target>已禁用</target>
       </trans-unit>
       <trans-unit id="403" resname="languages" restype="array" datatype="x-android-resource" extype="0">
         <source>Afrikaans</source>
@@ -37294,7 +37294,7 @@
       </trans-unit>
       <trans-unit id="700" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="1">
         <source>{user_first_name}, do you have a follow-up question?\u00a0›</source>
-        <target>{user_first_name}, 您有随访问题吗？\u00a0›</target>
+        <target>{user_first_name}, 您有后续问题吗？\u00a0›</target>
       </trans-unit>
       <trans-unit id="701" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="2">
         <source>{user_first_name}, would you like to send doctors a secure message?\u00a0›</source>
@@ -37346,7 +37346,7 @@
       </trans-unit>
       <trans-unit id="713" resname="downgrade_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="2">
         <source>What would you be willing to pay?</source>
-        <target>您愿意支付什么？</target>
+        <target>您愿意支付多少？</target>
       </trans-unit>
       <trans-unit id="714" resname="downgrade_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="3">
         <source>What went wrong with your experience?</source>
@@ -37354,11 +37354,11 @@
       </trans-unit>
       <trans-unit id="715" resname="downgrade_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="4">
         <source>What can we do to improve?</source>
-        <target>我们怎么做可以提高？</target>
+        <target>我们可以怎样改善？</target>
       </trans-unit>
       <trans-unit id="716" resname="downgrade_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="5">
         <source>What can we do to improve?</source>
-        <target>我们怎么做可以提高？</target>
+        <target>我们可以怎样改善？</target>
       </trans-unit>
       <trans-unit id="717" resname="downgrade_survey_reasons_event" restype="array" datatype="x-android-resource" extype="0">
         <source>cannot_find_doctor</source>
@@ -37418,11 +37418,11 @@
       </trans-unit>
       <trans-unit id="731" resname="deactivate_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="3">
         <source>What can we do to improve?</source>
-        <target>我们怎么做可以提高？</target>
+        <target>我们可以怎样改善？</target>
       </trans-unit>
       <trans-unit id="732" resname="deactivate_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="4">
         <source>What can we do to improve?</source>
-        <target>我们怎么做可以提高？</target>
+        <target>我们可以怎样改善？</target>
       </trans-unit>
       <trans-unit id="733" resname="deactivate_survey_reasons_event" restype="array" datatype="x-android-resource" extype="0">
         <source>cannot_find_answer</source>
@@ -38370,7 +38370,7 @@
       </trans-unit>
       <trans-unit id="966" resname="doctor_filter_availability" restype="array" datatype="x-android-resource" extype="0">
         <source>None</source>
-        <target>没有</target>
+        <target>无</target>
       </trans-unit>
       <trans-unit id="967" resname="doctor_filter_availability" restype="array" datatype="x-android-resource" extype="1">
         <source>Anytime</source>
@@ -39174,7 +39174,7 @@
       </trans-unit>
       <trans-unit id="689" resname="r381986807" restype="string" datatype="java">
         <source>Out of office until %s</source>
-        <target>在%s前不再办公室</target>
+        <target>在%s前不在办公室</target>
       </trans-unit>
     </body>
   </file>
@@ -39365,7 +39365,7 @@
       </trans-unit>
       <trans-unit id="2230" resname="invite_doctor_location" restype="string" datatype="x-android-resource">
         <source>Your Doctor's Location</source>
-        <target>您医生的地址</target>
+        <target>您医生的位置</target>
       </trans-unit>
       <trans-unit id="2234" resname="starting_at" restype="string" datatype="x-android-resource">
         <source>Starting at</source>
@@ -39434,7 +39434,7 @@
       </trans-unit>
       <trans-unit id="2261" resname="symptom_triage_main_search_tap_text" restype="string" datatype="x-android-resource">
         <source>Tap anywhere to start</source>
-        <target>轻触任意位置即可开始</target>
+        <target>点击任意位置即可开始</target>
       </trans-unit>
       <trans-unit id="2262" resname="meter_high" restype="string" datatype="x-android-resource">
         <source>HIGHER</source>
@@ -43811,7 +43811,7 @@
       </trans-unit>
       <trans-unit id="13" resname="r581684694" restype="string" datatype="java">
         <source>Error getting request token</source>
-        <target>获取请求令牌时出错</target>
+        <target>获取请求时出错</target>
       </trans-unit>
       <trans-unit id="14" resname="r796300169" restype="string" datatype="java">
         <source>Failed opening authorization page</source>
@@ -43903,7 +43903,7 @@
       </trans-unit>
       <trans-unit id="32" resname="r682189599" restype="string" datatype="java">
         <source>Location</source>
-        <target>地址</target>
+        <target>位置</target>
       </trans-unit>
       <trans-unit id="33" resname="r300488279" restype="string" datatype="java">
         <source>Ethnicity</source>
@@ -44148,7 +44148,7 @@
     <body>
       <trans-unit id="77" resname="r279986767" restype="string" datatype="java">
         <source>${price} a {plan_duration}</source>
-        <target>${price} {plan_duration}</target>
+        <target>${price}一{plan_duration}</target>
       </trans-unit>
     </body>
   </file>
@@ -44465,7 +44465,7 @@
       </trans-unit>
       <trans-unit id="710" resname="r861565268" restype="string" datatype="java">
         <source>Checking location...</source>
-        <target>检测地点中...</target>
+        <target>检测位置中...</target>
       </trans-unit>
       <trans-unit id="711" resname="r827139210" restype="string" datatype="java">
         <source>Poor connection</source>
@@ -44557,7 +44557,7 @@
       </trans-unit>
       <trans-unit id="153" resname="r745022334" restype="string" datatype="java">
         <source>Your message subscription allows you to send as many messages as you need and get doctor advice, prescriptions, lab tests, and more.</source>
-        <target>您的消息订购允许您发送所需数量的信息并获取医生建议、处方、实验室检验及更多内容。</target>
+        <target>您的消息订购允许您发送无限制数量的信息并获取医生建议、处方、实验室检验及更多内容。</target>
       </trans-unit>
       <trans-unit id="154" resname="r487646575" restype="string" datatype="java">
         <source>Yes, confirm</source>
@@ -44758,11 +44758,11 @@
       </trans-unit>
       <trans-unit id="190" resname="r942559806" restype="string" datatype="java">
         <source>(${original_price} regularly - ${credits} in credits)</source>
-        <target>(${original_price} 正常费用 - ${credits} 余额)</target>
+        <target>(标价${original_price} - 余额${credits})</target>
       </trans-unit>
       <trans-unit id="191" resname="r95353935" restype="string" datatype="java">
         <source>($%s regularly)</source>
-        <target>($%s正常费用 )</target>
+        <target>(标价 $%s)</target>
       </trans-unit>
     </body>
   </file>
@@ -44906,11 +44906,11 @@
     <body>
       <trans-unit id="218" resname="r854757057" restype="string" datatype="java">
         <source>Failed to get request token</source>
-        <target>无法获取请求代币</target>
+        <target>无法获取请求</target>
       </trans-unit>
       <trans-unit id="219" resname="r816182285" restype="string" datatype="java">
         <source>Failed to get access token</source>
-        <target>无法获取访问代币</target>
+        <target>无法获取访问</target>
       </trans-unit>
     </body>
   </file>
@@ -44918,7 +44918,7 @@
     <body>
       <trans-unit id="220" resname="r742115697" restype="string" datatype="java">
         <source>Topics</source>
-        <target>专题</target>
+        <target>话题</target>
       </trans-unit>
     </body>
   </file>
@@ -44926,7 +44926,7 @@
     <body>
       <trans-unit id="221" resname="r789310818" restype="string" datatype="java">
         <source>Topic</source>
-        <target>专题</target>
+        <target>话题</target>
       </trans-unit>
     </body>
   </file>
@@ -45217,7 +45217,7 @@
       </trans-unit>
       <trans-unit id="270" resname="r747361338" restype="string" datatype="java">
         <source>Change location</source>
-        <target>更改地址</target>
+        <target>更改位置</target>
       </trans-unit>
       <trans-unit id="271" resname="r728703766" restype="string" datatype="java">
         <source>How would you like to consult {doctor_name}</source>
@@ -45309,7 +45309,7 @@
       </trans-unit>
       <trans-unit id="288" resname="r381986807" restype="string" datatype="java">
         <source>Out of office until %s</source>
-        <target>%s前不在办公室</target>
+        <target>不在办公室直到%s</target>
       </trans-unit>
     </body>
   </file>
@@ -45317,7 +45317,7 @@
     <body>
       <trans-unit id="289" resname="r831947664" restype="string" datatype="java">
         <source>Can't find a clinician?</source>
-        <target>找不到临床医生？</target>
+        <target>找不到医师？</target>
       </trans-unit>
       <trans-unit id="290" resname="r554083360" restype="string" datatype="java">
         <source>Invite them to HealthTap</source>
@@ -45417,7 +45417,7 @@
       </trans-unit>
       <trans-unit id="309" resname="r832518227" restype="string" datatype="java">
         <source>HealthTap for Doctors</source>
-        <target>HealthTap for Doctors</target>
+        <target>HealthTap 医生版</target>
       </trans-unit>
     </body>
   </file>
@@ -45481,7 +45481,7 @@
       </trans-unit>
       <trans-unit id="320" resname="r820717541" restype="string" datatype="java">
         <source>Helpful</source>
-        <target>有帮助的</target>
+        <target>有帮助</target>
       </trans-unit>
     </body>
   </file>
@@ -45529,7 +45529,7 @@
     <body>
       <trans-unit id="327" resname="r1046176237" restype="string" datatype="java">
         <source>Never mind</source>
-        <target state="accepted">算了, 暂不</target>
+        <target state="accepted">不用了</target>
         <note annotates="source">This is used to dismiss a popup dialog.</note>
       </trans-unit>
     </body>
@@ -45615,7 +45615,7 @@
     <body>
       <trans-unit id="337" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target state="accepted">算了, 暂不</target>
+        <target state="accepted">不用了</target>
         <note annotates="source">This is used to dismiss a popup dialog.</note>
       </trans-unit>
       <trans-unit id="469" resname="r856768157" restype="string" datatype="java">
@@ -45935,7 +45935,7 @@
       </trans-unit>
       <trans-unit id="395" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target>您有随访问题吗？立即在线咨询医生：</target>
+        <target>您有后续问题吗？立即在线咨询医生：</target>
       </trans-unit>
       <trans-unit id="396" resname="r129012652" restype="string" datatype="java">
         <source>Answer assisted by Medical Student {name}</source>
@@ -46001,12 +46001,12 @@
       </trans-unit>
       <trans-unit id="408" resname="r17353811" restype="string" datatype="java">
         <source>{count}x</source>
-        <target>{count}x</target>
+        <target>{count}次</target>
         <note annotates="source">e.g. 14x means 14 counts.</note>
       </trans-unit>
       <trans-unit id="409" resname="r326384535" restype="string" datatype="java">
         <source>Thank {name}</source>
-        <target>谢谢{name}</target>
+        <target>感谢{name}</target>
       </trans-unit>
     </body>
   </file>
@@ -46517,7 +46517,7 @@
       </trans-unit>
       <trans-unit id="498" resname="r808907878" restype="string" datatype="java">
         <source>Please don't include a followup question in your note. {start}To do so, ask a question.{end}</source>
-        <target>请不要在您的注意事项中包含随访问题。{start}如有需要，请提出问题。{end}</target>
+        <target>请不要在您的注意事项中包含后续问题。{start}如有需要，请提出问题。{end}</target>
       </trans-unit>
     </body>
   </file>
@@ -46733,7 +46733,7 @@
       </trans-unit>
       <trans-unit id="539" resname="r811762799" restype="string" datatype="java">
         <source>Being {topic_name}</source>
-        <target>作为{topic_name}</target>
+        <target>{topic_name}</target>
       </trans-unit>
       <trans-unit id="540" resname="r923208447" restype="string" datatype="java">
         <source>Expertise in {topic_name}</source>
@@ -46875,7 +46875,7 @@
     <body>
       <trans-unit id="560" resname="r724225387" restype="string" datatype="java">
         <source>Send as many messages as you need, or get advice, prescriptions, lab tests, and more</source>
-        <target>发送所需数量的信息并获取医生建议、处方、实验室检验及更多内容</target>
+        <target>发送无限制数量的信息并获取医生建议、处方、实验室检验及更多内容</target>
       </trans-unit>
       <trans-unit id="561" resname="r56642254" restype="string" datatype="java">
         <source>/month</source>
@@ -47181,7 +47181,7 @@
       </trans-unit>
       <trans-unit id="621" resname="r556911602" restype="string" datatype="java">
         <source>Insurances accepted</source>
-        <target>已接受的保险</target>
+        <target>接受的保险</target>
       </trans-unit>
       <trans-unit id="622" resname="r867855095" restype="string" datatype="java">
         <source>Please confirm currently accepted insurance plans directly with the doctor.</source>
@@ -47396,7 +47396,7 @@
       </trans-unit>
       <trans-unit id="664" resname="r321971325" restype="string" datatype="java">
         <source>({0}, {1})</source>
-        <target>({0}, {1})</target>
+        <target>({0}, {1})岁</target>
         <note annotates="source">{0} is a patient name. {1} is this patient's age. Please translate punctuations '(' and ')'.</note>
       </trans-unit>
       <trans-unit id="665" resname="r304523712" restype="string" datatype="java">
@@ -47667,7 +47667,7 @@
       </trans-unit>
       <trans-unit id="724" resname="picker_location_cta" restype="string" datatype="x-android-resource">
         <source>(Change)</source>
-        <target>(改变)</target>
+        <target>(更改)</target>
       </trans-unit>
       <trans-unit id="725" resname="picker_type_question_hint" restype="string" datatype="x-android-resource">
         <source>Type your question</source>
@@ -47695,11 +47695,11 @@
       </trans-unit>
       <trans-unit id="731" resname="picker_filter_location" restype="string" datatype="x-android-resource">
         <source>Location</source>
-        <target>地址</target>
+        <target>位置</target>
       </trans-unit>
       <trans-unit id="732" resname="picker_filter_years_in_practice" restype="string" datatype="x-android-resource">
         <source>Years in practice</source>
-        <target>年诊疗经验</target>
+        <target>多年诊疗经验</target>
       </trans-unit>
       <trans-unit id="733" resname="picker_filter_degrees" restype="string" datatype="x-android-resource">
         <source>Degrees</source>
@@ -47739,7 +47739,7 @@
       </trans-unit>
       <trans-unit id="742" resname="body_picker_rotate_text" restype="string" datatype="x-android-resource">
         <source>Rotate</source>
-        <target>翻转</target>
+        <target>旋转</target>
       </trans-unit>
       <trans-unit id="743" resname="symptom_triage_search_hint" restype="string" datatype="x-android-resource">
         <source>Type a symptom</source>
@@ -47853,7 +47853,7 @@
       </trans-unit>
       <trans-unit id="770" resname="feed_experiencing_symptoms" restype="string" datatype="x-android-resource">
         <source>Experiencing symptoms?</source>
-        <target>有症状？</target>
+        <target>有不舒服的症状？</target>
       </trans-unit>
       <trans-unit id="771" resname="feed_symptom_find_out_why" restype="string" datatype="x-android-resource">
         <source>Find out why</source>
@@ -51405,7 +51405,7 @@
       </trans-unit>
       <trans-unit id="24" resname="r682189599" restype="string" datatype="x-android-resource">
         <source>Location</source>
-        <target state="translated">地址</target>
+        <target state="translated">位置</target>
       </trans-unit>
       <trans-unit id="25" resname="r300488279" restype="string" datatype="x-android-resource">
         <source>Ethnicity</source>
@@ -51673,7 +51673,7 @@
       </trans-unit>
       <trans-unit id="91" resname="r279986767" restype="string" datatype="x-android-resource">
         <source>${price} a {plan_duration}</source>
-        <target state="translated">${price} {plan_duration}</target>
+        <target state="translated">${price}一{plan_duration}</target>
       </trans-unit>
       <trans-unit id="92" resname="r750456440" restype="string" datatype="x-android-resource">
         <source>Some plan</source>
@@ -51813,7 +51813,7 @@
       </trans-unit>
       <trans-unit id="126" resname="r987771035" restype="string" datatype="x-android-resource">
         <source>Sorry, there was a problem</source>
-        <target state="translated">对不起，这里有一个问题</target>
+        <target state="translated">对不起，出现了一个问题</target>
       </trans-unit>
       <trans-unit id="128" resname="r218644464" restype="string" datatype="x-android-resource">
         <source>Contact Support</source>
@@ -51837,7 +51837,7 @@
       </trans-unit>
       <trans-unit id="133" resname="r90090747" restype="string" datatype="x-android-resource">
         <source>None</source>
-        <target state="translated">没有</target>
+        <target state="translated">无</target>
       </trans-unit>
       <trans-unit id="134" resname="r156592917" restype="string" datatype="x-android-resource">
         <source>Prime (Pay-as-you-go)</source>
@@ -51970,7 +51970,7 @@
       </trans-unit>
       <trans-unit id="166" resname="r256437249" restype="string" datatype="x-android-resource">
         <source>Approx. {price}</source>
-        <target state="translated">{price}约为</target>
+        <target state="translated">约为{price}</target>
       </trans-unit>
       <trans-unit id="167" resname="r837205133" restype="string" datatype="x-android-resource">
         <source>Discount: {promo_code} ({discount_description})</source>
@@ -52054,11 +52054,11 @@
       </trans-unit>
       <trans-unit id="187" resname="r942559806" restype="string" datatype="x-android-resource">
         <source>(${original_price} regularly - ${credits} in credits)</source>
-        <target state="translated">(${original_price} 正常费用- ${credits} 余额)</target>
+        <target state="translated">(标价${original_price} - 余额${credits})</target>
       </trans-unit>
       <trans-unit id="188" resname="r95353935" restype="string" datatype="x-android-resource">
         <source>($%s regularly)</source>
-        <target state="translated">($%s正常费用 )</target>
+        <target state="translated">(标价 $%s)</target>
       </trans-unit>
       <trans-unit id="189" resname="r317602886" restype="string" datatype="x-android-resource">
         <source>Pay &amp; Send</source>
@@ -52170,11 +52170,11 @@
       </trans-unit>
       <trans-unit id="218" resname="r742115697" restype="string" datatype="x-android-resource">
         <source>Topics</source>
-        <target state="translated">专题</target>
+        <target state="translated">话题</target>
       </trans-unit>
       <trans-unit id="219" resname="r789310818" restype="string" datatype="x-android-resource">
         <source>Topic</source>
-        <target state="translated">专题</target>
+        <target state="translated">话题</target>
       </trans-unit>
       <trans-unit id="220" resname="r629190714" restype="string" datatype="x-android-resource">
         <source>{tip_topic_name} Tip</source>
@@ -52390,7 +52390,7 @@
       </trans-unit>
       <trans-unit id="276" resname="r747361338" restype="string" datatype="x-android-resource">
         <source>Change location</source>
-        <target state="translated">更改地址</target>
+        <target state="translated">更改位置</target>
       </trans-unit>
       <trans-unit id="277" resname="r728703766" restype="string" datatype="x-android-resource">
         <source>How would you like to consult {doctor_name}</source>
@@ -52544,7 +52544,7 @@
       </trans-unit>
       <trans-unit id="316" resname="r832518227" restype="string" datatype="x-android-resource">
         <source>HealthTap for Doctors</source>
-        <target state="translated">HealthTap for Doctors</target>
+        <target state="translated">HealthTap 医生版</target>
       </trans-unit>
       <trans-unit id="317" resname="r186921235" restype="string" datatype="x-android-resource">
         <source>Failed to get authorization!</source>
@@ -52777,7 +52777,7 @@
       </trans-unit>
       <trans-unit id="383" resname="r244192669" restype="string" datatype="x-android-resource">
         <source>Connect with</source>
-        <target state="translated">与…连接</target>
+        <target state="translated">连接</target>
       </trans-unit>
       <trans-unit id="384" resname="r657598817" restype="string" datatype="x-android-resource">
         <source>In order for</source>
@@ -52853,7 +52853,7 @@
       </trans-unit>
       <trans-unit id="402" resname="r230593847" restype="string" datatype="x-android-resource">
         <source>{topic_name} in the context of:</source>
-        <target state="translated">在...背景下的{topic_name}：</target>
+        <target state="translated">{topic_name}所在背景：</target>
       </trans-unit>
       <trans-unit id="403" resname="r825802996" restype="string" datatype="x-android-resource">
         <source>{doctor_specialty}, {years_in_practice}</source>
@@ -52861,7 +52861,7 @@
       </trans-unit>
       <trans-unit id="404" resname="r184978954" restype="string" datatype="x-android-resource">
         <source>A {specialist_name} asked:</source>
-        <target state="translated">{specialist_name}询问过：</target>
+        <target state="translated">{specialist_name}询问：</target>
       </trans-unit>
       <trans-unit id="405" resname="r1063497831" restype="string" datatype="x-android-resource">
         <source>{expert_specialty}, Known for {known_for_topic_name}</source>
@@ -52873,7 +52873,7 @@
       </trans-unit>
       <trans-unit id="408" resname="r964861592" restype="string" datatype="x-android-resource">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target state="translated">您有随访问题吗？立即在线咨询医生：</target>
+        <target state="translated">您有后续问题吗？立即在线咨询医生：</target>
       </trans-unit>
       <trans-unit id="409" resname="r129012652" restype="string" datatype="x-android-resource">
         <source>Answer assisted by Medical Student {name}</source>
@@ -52927,7 +52927,7 @@
       </trans-unit>
       <trans-unit id="421" resname="r17353811" restype="string" datatype="x-android-resource">
         <source>{count}x</source>
-        <target state="translated">{count}x</target>
+        <target state="translated">{count}次</target>
         <note annotates="source">e.g. 14x means 14 counts.</note>
       </trans-unit>
       <trans-unit id="422" resname="r326384535" restype="string" datatype="x-android-resource">
@@ -53198,7 +53198,7 @@
       </trans-unit>
       <trans-unit id="489" resname="r690308697" restype="string" datatype="x-android-resource">
         <source>Add treatment</source>
-        <target state="translated">添加治疗方法</target>
+        <target state="translated">添加治疗</target>
         <note annotates="source">This means to add treatments in a patient's health profile</note>
       </trans-unit>
       <trans-unit id="490" resname="r446307512" restype="string" datatype="x-android-resource">
@@ -53368,7 +53368,7 @@
       </trans-unit>
       <trans-unit id="530" resname="r141446606" restype="string" datatype="x-android-resource">
         <source>We're sorry to see you downgrade!</source>
-        <target state="translated">我们很抱歉对您的降级！</target>
+        <target state="translated">我们很抱歉看到您降级！</target>
       </trans-unit>
       <trans-unit id="531" resname="r151255723" restype="string" datatype="x-android-resource">
         <source>Change</source>
@@ -53396,7 +53396,7 @@
       </trans-unit>
       <trans-unit id="540" resname="r1053853380" restype="string" datatype="x-android-resource">
         <source>Sorry, there was a problem</source>
-        <target state="translated">对不起，这里有一个问题</target>
+        <target state="translated">对不起，这里出现了一个问题</target>
       </trans-unit>
       <trans-unit id="542" resname="r74555818" restype="string" datatype="x-android-resource">
         <source>Enter your language</source>
@@ -53916,7 +53916,7 @@
       </trans-unit>
       <trans-unit id="676" resname="r46160805" restype="string" datatype="x-android-resource">
         <source>(Failed)</source>
-        <target state="translated">（已失败）</target>
+        <target state="translated">（失败）</target>
         <note annotates="source">This means that a payment transaction failed. Punctuations also need to be translated.</note>
       </trans-unit>
       <trans-unit id="677" resname="r134934247" restype="string" datatype="x-android-resource">
@@ -53935,7 +53935,7 @@
       </trans-unit>
       <trans-unit id="680" resname="r321971325" restype="string" datatype="x-android-resource">
         <source>({0}, {1})</source>
-        <target state="translated">({0}, {1})</target>
+        <target state="translated">({0}, {1})岁</target>
         <note annotates="source">{0} is a patient name. {1} is this patient's age. Please translate punctuations '(' and ')'.</note>
       </trans-unit>
       <trans-unit id="681" resname="r304523712" restype="string" datatype="x-android-resource">
@@ -54173,7 +54173,7 @@
       </trans-unit>
       <trans-unit id="38" resname="helpful" restype="string" datatype="x-android-resource">
         <source>Helpful</source>
-        <target>有帮助的</target>
+        <target>有帮助</target>
       </trans-unit>
       <trans-unit id="39" resname="add_photo" restype="string" datatype="x-android-resource">
         <source>Add photo</source>
@@ -54436,11 +54436,11 @@
       </trans-unit>
       <trans-unit id="14" resname="r194999707" restype="string" datatype="x-android-resource">
         <source>{start}Your total{end}No commitment, cancel anytime</source>
-        <target state="translated">{start}您的总计{end}没有任何承诺，可以随时取消</target>
+        <target state="translated">{start}您的总额{end}没有任何承诺，可以随时取消</target>
       </trans-unit>
       <trans-unit id="15" resname="r923373309" restype="string" datatype="x-android-resource">
         <source>Your total for 1 consult</source>
-        <target state="translated">您总计1次咨询</target>
+        <target state="translated">您1次咨询的总额</target>
       </trans-unit>
       <trans-unit id="16" resname="r580375147" restype="string" datatype="x-android-resource">
         <source>Your card ending in *{four_digit_number} has expired. \n Please add a new one</source>
@@ -54448,7 +54448,7 @@
       </trans-unit>
       <trans-unit id="17" resname="r715343662" restype="string" datatype="x-android-resource">
         <source>{start}Your total{end}\nFor additional options</source>
-        <target state="translated">{start}您总计{end}\n为其他选项</target>
+        <target state="translated">{start}您的总额{end}\n为其他选项</target>
       </trans-unit>
       <trans-unit id="18" resname="r947674940" restype="string" datatype="x-android-resource">
         <source>Failed while take picture:</source>
@@ -54485,7 +54485,7 @@
       </trans-unit>
       <trans-unit id="32" resname="r383257904" restype="string" datatype="x-android-resource">
         <source>Practicing:</source>
-        <target state="translated">诊疗中：</target>
+        <target state="translated">诊疗：</target>
       </trans-unit>
       <trans-unit id="33" resname="r437047272" restype="string" datatype="x-android-resource">
         <source>Question not posted</source>
@@ -54866,11 +54866,11 @@
     <body>
       <trans-unit id="1" resname="grandson" restype="string" datatype="x-android-resource">
         <source>Grandson</source>
-        <target state="translated">外孙</target>
+        <target state="translated">孙子/外孙</target>
       </trans-unit>
       <trans-unit id="2" resname="granddaughter" restype="string" datatype="x-android-resource">
         <source>Granddaughter</source>
-        <target state="translated">外孙女</target>
+        <target state="translated">孙女/外孙女</target>
       </trans-unit>
       <trans-unit id="3" resname="stepson" restype="string" datatype="x-android-resource">
         <source>Stepson</source>
