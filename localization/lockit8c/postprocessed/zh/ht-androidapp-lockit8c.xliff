@@ -729,11 +729,11 @@
       </trans-unit>
       <trans-unit id="187" resname="r942559806" restype="string" datatype="x-android-resource">
         <source>(${original_price} regularly - ${credits} in credits)</source>
-        <target state="translated">(标价${original_price} - 余额${credits} )</target>
+        <target state="translated">(标价${original_price} - 余额${credits})</target>
       </trans-unit>
       <trans-unit id="188" resname="r95353935" restype="string" datatype="x-android-resource">
         <source>($%s regularly)</source>
-        <target state="translated">(标价$%s )</target>
+        <target state="translated">(标价 $%s)</target>
       </trans-unit>
       <trans-unit id="189" resname="r317602886" restype="string" datatype="x-android-resource">
         <source>Pay &amp; Send</source>

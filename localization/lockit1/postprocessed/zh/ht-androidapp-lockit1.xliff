@@ -897,7 +897,7 @@
       </trans-unit>
       <trans-unit id="172" resname="r95353935" restype="string" datatype="java">
         <source>($%s regularly)</source>
-        <target>(标价$%s )</target>
+        <target>(标价 $%s)</target>
       </trans-unit>
     </body>
   </file>
@@ -1682,7 +1682,7 @@
       </trans-unit>
       <trans-unit id="312" resname="r1046176237" restype="string" datatype="java">
         <source>Never mind</source>
-        <target state="accepted">不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
     </body>
   </file>
@@ -1730,7 +1730,7 @@
       </trans-unit>
       <trans-unit id="322" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target state="accepted">不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="323" resname="r586469932" restype="string" datatype="java">
         <source>Are you sure you want to remove this from your profile?</source>
@@ -4472,7 +4472,7 @@
       </trans-unit>
       <trans-unit id="848" resname="never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target state="accepted">不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="849" resname="not_member_msg" restype="string" datatype="x-android-resource">
         <source>Not a member?</source>
@@ -5573,7 +5573,7 @@
       </trans-unit>
       <trans-unit id="1124" resname="settings_nevermind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target state="accepted">不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1125" resname="default_error_payment_credit_card" restype="string" datatype="x-android-resource">
         <source>An error occurred</source>
@@ -5593,7 +5593,7 @@
       </trans-unit>
       <trans-unit id="1129" resname="settings_unavialable_state_dialog_button_nevermind" restype="string" datatype="x-android-resource">
         <source>Nevermind</source>
-        <target state="accepted">不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1130" resname="concierge_credit_balance" restype="string" datatype="x-android-resource">
         <source>Credit Balance</source>
@@ -6248,7 +6248,7 @@
       </trans-unit>
       <trans-unit id="1259" resname="cancel_subscription_dialog_downgrade_cancel" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target state="accepted">不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1260" resname="cancel_subscription_dialog_downgrade_downgrade" restype="string" datatype="x-android-resource">
         <source>Downgrade</source>
@@ -6328,7 +6328,7 @@
       </trans-unit>
       <trans-unit id="1279" resname="cancel_previous_session_never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target state="accepted">不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1280" resname="cancel_previous_session_yes" restype="string" datatype="x-android-resource">
         <source>Yes</source>
@@ -6844,7 +6844,7 @@
       </trans-unit>
       <trans-unit id="1408" resname="concierge_appointment_list_never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target state="accepted">不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="1409" resname="cancel_appointment_title" restype="string" datatype="x-android-resource">
         <source>Are you sure?</source>
@@ -8512,11 +8512,11 @@
       </trans-unit>
       <trans-unit id="1822" resname="insurance_form_primary_first_name" restype="string" datatype="x-android-resource">
         <source>Primary first name</source>
-        <target>主计划持有人姓</target>
+        <target>主保人姓</target>
       </trans-unit>
       <trans-unit id="1823" resname="insurance_form_primary_last_name" restype="string" datatype="x-android-resource">
         <source>Primary last name</source>
-        <target>主计划持有人名</target>
+        <target>主保人名</target>
       </trans-unit>
       <trans-unit id="1824" resname="insurance_form_alternate_phone" restype="string" datatype="x-android-resource">
         <source>Alternate Phone number</source>
@@ -8524,7 +8524,7 @@
       </trans-unit>
       <trans-unit id="1825" resname="insurance_form_relationship_title" restype="string" datatype="x-android-resource">
         <source>Relationship with primary plan holder</source>
-        <target>与主计划持有人的关系</target>
+        <target>与主保人的关系</target>
       </trans-unit>
       <trans-unit id="1826" resname="insurance_form_self" restype="string" datatype="x-android-resource">
         <source>Self</source>
@@ -8612,11 +8612,11 @@
       </trans-unit>
       <trans-unit id="1847" resname="insurance_form_apply_insurance_title" restype="string" datatype="x-android-resource">
         <source>Primary plan holder information:</source>
-        <target>主计划持有人信息：</target>
+        <target>主保人信息：</target>
       </trans-unit>
       <trans-unit id="1848" resname="insurance_form_primary_dob" restype="string" datatype="x-android-resource">
         <source>Primary date of birth</source>
-        <target>主计划持有人出生日期</target>
+        <target>主保人出生日期</target>
       </trans-unit>
       <trans-unit id="1849" resname="insurance_form_male" restype="string" datatype="x-android-resource">
         <source>Male</source>
@@ -8628,7 +8628,7 @@
       </trans-unit>
       <trans-unit id="1851" resname="insurance_form_gender_title" restype="string" datatype="x-android-resource">
         <source>Primary plan holder gender:</source>
-        <target>主计划持有人性别：</target>
+        <target>主保人性别：</target>
       </trans-unit>
       <trans-unit id="1852" resname="insurance_form_check_gender_title" restype="string" datatype="x-android-resource">
         <source>Your gender:</source>
@@ -8692,15 +8692,15 @@
       </trans-unit>
       <trans-unit id="1867" resname="insurance_summary_rel" restype="string" datatype="x-android-resource">
         <source>Primary relationship</source>
-        <target>与主计划持有人的关系</target>
+        <target>与主保人的关系</target>
       </trans-unit>
       <trans-unit id="1868" resname="insurance_summary_primary_first_name" restype="string" datatype="x-android-resource">
         <source>Primary first name</source>
-        <target>主计划持有人名</target>
+        <target>主保人名</target>
       </trans-unit>
       <trans-unit id="1869" resname="insurance_summary_first_last_name" restype="string" datatype="x-android-resource">
         <source>Primary last name</source>
-        <target>主计划持有人姓</target>
+        <target>主保人姓</target>
       </trans-unit>
       <trans-unit id="1870" resname="paypal_error" restype="string" datatype="x-android-resource">
         <source>Sorry, it seemed that an error occurred: %s</source>
@@ -9656,7 +9656,7 @@
       </trans-unit>
       <trans-unit id="2108" resname="text_Never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target state="accepted">不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="2109" resname="text_Change" restype="string" datatype="x-android-resource">
         <source>Change</source>
@@ -10416,7 +10416,7 @@
       </trans-unit>
       <trans-unit id="2298" resname="text_Never_Mind" restype="string" datatype="x-android-resource">
         <source>Never Mind</source>
-        <target state="accepted">不用了</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="2299" resname="text_Send_Report" restype="string" datatype="x-android-resource">
         <source>Send Report</source>
@@ -10792,19 +10792,19 @@
     <body>
       <trans-unit id="2390" resname="date_format_short" restype="string" datatype="x-android-resource">
         <source>MM/dd/yyyy</source>
-        <target>月月/日日/年年年年</target>
+        <target>MM/dd/yyyy</target>
       </trans-unit>
       <trans-unit id="2391" resname="date_format_short2" restype="string" datatype="x-android-resource">
         <source>MM/dd/yy</source>
-        <target>月月/日日/年年</target>
+        <target>MM/dd/yy</target>
       </trans-unit>
       <trans-unit id="2392" resname="date_format_medium" restype="string" datatype="x-android-resource">
         <source>MMM dd, yyyy</source>
-        <target>月月月，日日，年年年年</target>
+        <target>MMM dd, yyyy</target>
       </trans-unit>
       <trans-unit id="2393" resname="date_format_long" restype="string" datatype="x-android-resource">
         <source>EEE MM-dd-yyyy</source>
-        <target>EEE 月月-日日-年年年年</target>
+        <target>EEE MM-dd-yyyy</target>
       </trans-unit>
     </body>
   </file>

@@ -1035,11 +1035,11 @@
       </trans-unit>
       <trans-unit id="190" resname="r942559806" restype="string" datatype="java">
         <source>(${original_price} regularly - ${credits} in credits)</source>
-        <target>(标价${original_price}  - ${credits} 余额)</target>
+        <target>(标价${original_price} - 余额${credits})</target>
       </trans-unit>
       <trans-unit id="191" resname="r95353935" restype="string" datatype="java">
         <source>($%s regularly)</source>
-        <target>(标价$%s )</target>
+        <target>(标价 $%s)</target>
       </trans-unit>
     </body>
   </file>
