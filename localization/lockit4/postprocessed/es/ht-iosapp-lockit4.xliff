@@ -1273,7 +1273,7 @@
       </trans-unit>
       <trans-unit id="230" resname="Find a topic (e.g. Lose weight)" restype="string" datatype="x-objective-c">
         <source>Find a topic (e.g. Lose weight)</source>
-        <target state="accepted">Encuentra un tema (p. ej. meditación)</target>
+        <target state="ui-fix">Encuentra un tema</target>
       </trans-unit>
     </body>
   </file>
