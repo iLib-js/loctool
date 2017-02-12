@@ -15065,7 +15065,7 @@ aplicación y deja que el mundo lo sepa :)</target>
       </trans-unit>
       <trans-unit id="XmY-gz-ZOW.text" resname="XmY-gz-ZOW.text" restype="string" datatype="x-xib">
         <source>Only doctors can see this</source>
-        <target>Sólo los doctores pueden ver esto</target>
+        <target state="ui-fix">Sólo doctores ven esto</target>
         <note annotates="source">Class = "UILabel"; text = "Only doctors can see this"; ObjectID = "XmY-gz-ZOW";</note>
       </trans-unit>
       <trans-unit id="cf7-O4-V6d.normalTitle" resname="cf7-O4-V6d.normalTitle" restype="string" datatype="x-xib">
@@ -15109,7 +15109,7 @@ aplicación y deja que el mundo lo sepa :)</target>
       </trans-unit>
       <trans-unit id="ye9-TP-sSQ.text" resname="ye9-TP-sSQ.text" restype="string" datatype="x-xib">
         <source>Only doctors can see this</source>
-        <target>Sólo los doctores pueden ver esto</target>
+        <target state="ui-fix">Sólo doctores ven esto</target>
         <note annotates="source">Class = "UILabel"; text = "Only doctors can see this"; ObjectID = "ye9-TP-sSQ";</note>
       </trans-unit>
       <trans-unit id="zuT-73-HPf.text" resname="zuT-73-HPf.text" restype="string" datatype="x-xib">
@@ -15143,7 +15143,7 @@ aplicación y deja que el mundo lo sepa :)</target>
       </trans-unit>
       <trans-unit id="ye9-TP-sSQ.text" resname="ye9-TP-sSQ.text" restype="string" datatype="x-xib">
         <source>Only doctors can see this</source>
-        <target>Sólo los doctores pueden ver esto</target>
+        <target state="ui-fix">Sólo doctores ven esto</target>
         <note annotates="source">Class = "UILabel"; text = "Only doctors can see this"; ObjectID = "ye9-TP-sSQ";</note>
       </trans-unit>
       <trans-unit id="zuT-73-HPf.text" resname="zuT-73-HPf.text" restype="string" datatype="x-xib">
