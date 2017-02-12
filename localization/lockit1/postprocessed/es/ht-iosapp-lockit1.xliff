@@ -1374,7 +1374,7 @@
       </trans-unit>
       <trans-unit id="zEL-22-bH6.text" resname="zEL-22-bH6.text" restype="string" datatype="x-xib">
         <source>One consult with the doctor for advice, prescriptions, lab tests, and more</source>
-        <target state="accepted">Una consulta con el doctor para consejo, prueba de laboratorio, receta y más</target>
+        <target state="ui-fix">Una consulta con el doctor para consejos, pruebas, recetas y más</target>
         <note annotates="source">Class = "UILabel"; text = "One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more"; ObjectID = "zEL-22-bH6";</note>
       </trans-unit>
     </body>
@@ -1448,7 +1448,7 @@
       </trans-unit>
       <trans-unit id="wlf-6g-3lf.text" resname="wlf-6g-3lf.text" restype="string" datatype="x-xib">
         <source>One consult with the doctor for advice, prescriptions, lab tests, and more</source>
-        <target>Una consulta con el doctor para consejo, recetas, pruebas de laboratorio, y más</target>
+        <target state="ui-fix">Una consulta con el doctor para consejos, pruebas, recetas y más</target>
         <note annotates="source">Class = "UILabel"; text = "One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more"; ObjectID = "wlf-6g-3lf";</note>
       </trans-unit>
       <trans-unit id="xrV-M9-2UJ.text" resname="xrV-M9-2UJ.text" restype="string" datatype="x-xib">
