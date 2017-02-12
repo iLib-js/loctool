@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="3" resname="r32892148" restype="string" datatype="java">
         <source>You're now following "{topic_name}"</source>
-        <target state="translated">你现在关注了 "{topic_name}"</target>
+        <target state="translated">您现在关注了 "{topic_name}"</target>
       </trans-unit>
     </body>
   </file>
@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="4" resname="r440805493" restype="string" datatype="java">
         <source>You're now following the topic "{0}"!</source>
-        <target state="translated">你现在关注了此专题 "{0}"!</target>
+        <target state="translated">您现在关注了此话题 "{0}"!</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
     </body>
@@ -21,7 +21,7 @@
     <body>
       <trans-unit id="5" resname="r780459903" restype="string" datatype="java">
         <source>You're now following "{0}"</source>
-        <target state="translated">你现在关注了 "{0}"</target>
+        <target state="translated">您现在关注了 "{0}"</target>
         <note annotates="source">{0} is a topic name.</note>
       </trans-unit>
     </body>
@@ -34,7 +34,7 @@
       </trans-unit>
       <trans-unit id="8" resname="location_search_unavailable" restype="string" datatype="x-android-resource">
         <source>Sorry, changing your location is currently not available.</source>
-        <target>抱歉，现在无法更新您的地址。</target>
+        <target>抱歉，现在无法更新您的位置。</target>
       </trans-unit>
       <trans-unit id="9" resname="deactivate" restype="string" datatype="x-android-resource">
         <source>Deactivate</source>

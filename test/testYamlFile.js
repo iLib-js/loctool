@@ -274,6 +274,73 @@ module.exports = {
         test.done();
     },
 
+    testYamlFileParseMultipleLevels: function(test) {
+        test.expect(24);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+
+        yml.parse(
+			'duration:\n' +
+			'  top_header: Refine symptoms\n' +
+			'  header:\n' +
+			'    person: "%ACK_BRIDGE_SAMPLE%"\n' +
+			'    subaccount: "%ACK_BRIDGE_SAMPLE%" \n' + 
+			'  variations:\n' +
+			'    person: "Did your %TOPIC_NAME% start recently? Or have you been experiencing it for a while?"\n' +
+			'    subaccount: "Did %SUBACCOUNT_NAME%\'s %TOPIC_NAME% start recently? Or has %SUBACCOUNT_NAME% been experiencing it for a while?"\n' + 
+			'    asdf:\n' +
+			'      a: x y z\n' +
+			'      c: a b c\n'
+        );
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        var r = set.getAll();
+        test.ok(r);
+
+        test.equal(r.length, 5);
+
+        // locale is not special for this type of yml file, so it should appear in the context
+        test.equal(r[0].getSource(), "Refine symptoms");
+        test.equal(r[0].getLocale(), "en-US");
+        test.equal(r[0].getKey(), "top_header");
+        test.equal(r[0].getContext(), "duration");
+
+        test.equal(r[1].getSource(), "Did your %TOPIC_NAME% start recently? Or have you been experiencing it for a while?");
+        test.equal(r[1].getLocale(), "en-US");
+        test.equal(r[1].getKey(), "person");
+        test.equal(r[1].getContext(), "duration@variations");
+
+        test.equal(r[2].getSource(), 'Did %SUBACCOUNT_NAME%\'s %TOPIC_NAME% start recently? Or has %SUBACCOUNT_NAME% been experiencing it for a while?');
+        test.equal(r[2].getLocale(), "en-US");
+        test.equal(r[2].getKey(), "subaccount");
+        test.equal(r[2].getContext(), "duration@variations");
+
+        test.equal(r[3].getSource(), "x y z");
+        test.equal(r[3].getLocale(), "en-US");
+        test.equal(r[3].getKey(), "a");
+        test.equal(r[3].getContext(), "duration@variations@asdf");
+
+        test.equal(r[4].getSource(), "a b c");
+        test.equal(r[4].getLocale(), "en-US");
+        test.equal(r[4].getKey(), "c");
+        test.equal(r[4].getContext(), "duration@variations@asdf");
+
+        test.done();
+    },
+
     testYamlFileParseSimpleRightSize: function(test) {
         test.expect(4);
 

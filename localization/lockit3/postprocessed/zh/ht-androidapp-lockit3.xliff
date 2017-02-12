@@ -500,7 +500,7 @@
     <body>
       <trans-unit id="84" resname="text_Regularly__44" restype="string" datatype="x-android-resource">
         <source>Regularly $44</source>
-        <target>正常费用$44</target>
+        <target>标价$44</target>
       </trans-unit>
       <trans-unit id="85" resname="text_Change_the_card_ending_in___1122" restype="string" datatype="x-android-resource">
         <source>Change the card ending in   1122</source>
@@ -811,7 +811,7 @@
     <body>
       <trans-unit id="132" resname="r410094745" restype="string" datatype="java">
         <source>Do you have a follow-up question? Ask a doctor online now:</source>
-        <target>您有随访问题吗？立即在线咨询医生：</target>
+        <target>您有后续问题吗？立即在线咨询医生：</target>
       </trans-unit>
     </body>
   </file>
@@ -847,7 +847,7 @@
       </trans-unit>
       <trans-unit id="138" resname="r808907878" restype="string" datatype="java">
         <source>Please don't include a followup question in your note. {start}To do so, ask a question.{end}</source>
-        <target>请不要在您的备注中包含随访问题。{start}如有需要，请提出问题。{end}</target>
+        <target>请不要在您的备注中包含后续问题。{start}如有需要，请提出问题。{end}</target>
       </trans-unit>
     </body>
   </file>
@@ -1088,7 +1088,7 @@
       </trans-unit>
       <trans-unit id="182" resname="upcoming_appointment_subaccount_row_text" restype="string" datatype="x-android-resource">
         <source>{subaccount_name}'s consult</source>
-        <target>{Subaccount_name}\’s 咨询</target>
+        <target>{Subaccount_name}的咨询</target>
       </trans-unit>
     </body>
   </file>
@@ -1226,19 +1226,19 @@
       </trans-unit>
       <trans-unit id="213" resname="more_action" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 more action</source>
-        <target>另1行动</target>
+        <target>另1个行动</target>
       </trans-unit>
       <trans-unit id="214" resname="more_action" restype="plural" datatype="x-android-resource" extype="other">
         <source>%d more actions</source>
-        <target>更多的%d条建议</target>
+        <target>%d个行动</target>
       </trans-unit>
       <trans-unit id="215" resname="see_more_action" restype="plural" datatype="x-android-resource" extype="one">
         <source>See 1 more action</source>
-        <target>查看另1行动</target>
+        <target>查看另1个行动</target>
       </trans-unit>
       <trans-unit id="216" resname="see_more_action" restype="plural" datatype="x-android-resource" extype="other">
         <source>See %d more actions</source>
-        <target>查看更多的%d行动…</target>
+        <target>查看%个行动…</target>
       </trans-unit>
       <trans-unit id="217" resname="search_result_responded" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor responded</source>
@@ -1306,11 +1306,11 @@
       </trans-unit>
       <trans-unit id="233" resname="upsell1" restype="plural" datatype="x-android-resource" extype="one">
         <source>Do you have a follow-up question? Consult {expert_name}, a &lt;b&gt;{expert_specialty}&lt;/b&gt; specialist with 1 year in practice:</source>
-        <target>您有随访问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;1年诊疗经验的专家：</target>
+        <target>您有后续问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;1年诊疗经验的专家：</target>
       </trans-unit>
       <trans-unit id="234" resname="upsell1" restype="plural" datatype="x-android-resource" extype="other">
         <source>Do you have a follow-up question? Consult {expert_name}, a &lt;b&gt;{expert_specialty}&lt;/b&gt; specialist with %d years in practice:</source>
-        <target>您有随访问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;%d年诊疗经验的专家：</target>
+        <target>您有后续问题吗？咨询{expert_name}，&lt;b&gt; {expert_specialty} &lt;/b&gt;%d年诊疗经验的专家：</target>
       </trans-unit>
       <trans-unit id="235" resname="see_more_answer" restype="plural" datatype="x-android-resource" extype="one">
         <source>See one more answer</source>
@@ -1893,7 +1893,7 @@
       </trans-unit>
       <trans-unit id="376" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="4">
         <source>Excellent!</source>
-        <target>极好的！</target>
+        <target>极好！</target>
       </trans-unit>
       <trans-unit id="377" resname="congratulatory_text" restype="array" datatype="x-android-resource" extype="5">
         <source>Keep it up!</source>
@@ -1921,39 +1921,39 @@
       </trans-unit>
       <trans-unit id="383" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="0">
         <source>Great Work, {name}</source>
-        <target>干得漂亮！{name}</target>
+        <target>干得漂亮，{name}</target>
       </trans-unit>
       <trans-unit id="384" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="1">
         <source>Nice one, {name}</source>
-        <target>很好！{name}</target>
+        <target>很好，{name}</target>
       </trans-unit>
       <trans-unit id="385" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="2">
         <source>Awesome job, {name}</source>
-        <target>出色的工作！{name}</target>
+        <target>干得棒，{name}</target>
       </trans-unit>
       <trans-unit id="386" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="3">
         <source>Super job, {name}</source>
-        <target>极好的！{name}</target>
+        <target>干得好，{name}</target>
       </trans-unit>
       <trans-unit id="387" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="4">
         <source>Excellent, {name}</source>
-        <target>极好的！{name}</target>
+        <target>极好，{name}</target>
       </trans-unit>
       <trans-unit id="388" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="5">
         <source>Keep it up, {name}</source>
-        <target>坚持努力！{name}</target>
+        <target>坚持努力，{name}</target>
       </trans-unit>
       <trans-unit id="389" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="6">
         <source>That's amazing, {name}</source>
-        <target>坚持努力！{name}</target>
+        <target>太棒了，{name}</target>
       </trans-unit>
       <trans-unit id="390" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="7">
         <source>You're awesome, {name}</source>
-        <target>您真棒！{name}</target>
+        <target>您真棒，{name}</target>
       </trans-unit>
       <trans-unit id="391" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="8">
         <source>Good going, {name}</source>
-        <target>好运！{name}</target>
+        <target>继续，{name}</target>
       </trans-unit>
       <trans-unit id="392" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="9">
         <source>Kudos, {name}</source>
@@ -1961,7 +1961,7 @@
       </trans-unit>
       <trans-unit id="393" resname="congratulatory_text_format" restype="array" datatype="x-android-resource" extype="10">
         <source>So nice, {name}</source>
-        <target>好运！{name}</target>
+        <target>真好，{name}</target>
       </trans-unit>
       <trans-unit id="394" resname="frequency" restype="array" datatype="x-android-resource" extype="0">
         <source>days in a row</source>
@@ -1997,7 +1997,7 @@
       </trans-unit>
       <trans-unit id="402" resname="notification_settings" restype="array" datatype="x-android-resource" extype="3">
         <source>Disabled</source>
-        <target>禁用</target>
+        <target>已禁用</target>
       </trans-unit>
       <trans-unit id="403" resname="languages" restype="array" datatype="x-android-resource" extype="0">
         <source>Afrikaans</source>
@@ -3189,7 +3189,7 @@
       </trans-unit>
       <trans-unit id="700" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="1">
         <source>{user_first_name}, do you have a follow-up question?\u00a0›</source>
-        <target>{user_first_name}, 您有随访问题吗？\u00a0›</target>
+        <target>{user_first_name}, 您有后续问题吗？\u00a0›</target>
       </trans-unit>
       <trans-unit id="701" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="2">
         <source>{user_first_name}, would you like to send doctors a secure message?\u00a0›</source>
@@ -3241,7 +3241,7 @@
       </trans-unit>
       <trans-unit id="713" resname="downgrade_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="2">
         <source>What would you be willing to pay?</source>
-        <target>您愿意支付什么？</target>
+        <target>您愿意支付多少？</target>
       </trans-unit>
       <trans-unit id="714" resname="downgrade_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="3">
         <source>What went wrong with your experience?</source>
@@ -3249,11 +3249,11 @@
       </trans-unit>
       <trans-unit id="715" resname="downgrade_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="4">
         <source>What can we do to improve?</source>
-        <target>我们怎么做可以提高？</target>
+        <target>我们可以怎样改善？</target>
       </trans-unit>
       <trans-unit id="716" resname="downgrade_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="5">
         <source>What can we do to improve?</source>
-        <target>我们怎么做可以提高？</target>
+        <target>我们可以怎样改善？</target>
       </trans-unit>
       <trans-unit id="717" resname="downgrade_survey_reasons_event" restype="array" datatype="x-android-resource" extype="0">
         <source>cannot_find_doctor</source>
@@ -3313,11 +3313,11 @@
       </trans-unit>
       <trans-unit id="731" resname="deactivate_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="3">
         <source>What can we do to improve?</source>
-        <target>我们怎么做可以提高？</target>
+        <target>我们可以怎样改善？</target>
       </trans-unit>
       <trans-unit id="732" resname="deactivate_survey_reasons_hint" restype="array" datatype="x-android-resource" extype="4">
         <source>What can we do to improve?</source>
-        <target>我们怎么做可以提高？</target>
+        <target>我们可以怎样改善？</target>
       </trans-unit>
       <trans-unit id="733" resname="deactivate_survey_reasons_event" restype="array" datatype="x-android-resource" extype="0">
         <source>cannot_find_answer</source>
@@ -4265,7 +4265,7 @@
       </trans-unit>
       <trans-unit id="966" resname="doctor_filter_availability" restype="array" datatype="x-android-resource" extype="0">
         <source>None</source>
-        <target>没有</target>
+        <target>无</target>
       </trans-unit>
       <trans-unit id="967" resname="doctor_filter_availability" restype="array" datatype="x-android-resource" extype="1">
         <source>Anytime</source>
