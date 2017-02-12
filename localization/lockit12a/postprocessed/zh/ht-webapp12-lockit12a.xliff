@@ -2046,10 +2046,6 @@
         <source>How would you describe %SUBACCOUNT_NAME%’s %TOPIC_NAME%? Don’t worry, we understand it may fluctuate, so there’s no right or wrong answer.</source>
         <target>您如何形容%SUBACCOUNT_NAME%的%TOPIC_NAME%? 别担心，我们知道这些症状可能有起伏, 没有一定对的答案</target>
       </trans-unit>
-      <trans-unit id="260" resname="uitype" restype="string" datatype="x-yaml" x-context="severity">
-        <source>slider</source>
-        <target>slider</target>
-      </trans-unit>
       <trans-unit id="261" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="severity">
         <source>Severity</source>
         <target>严重程度</target>
@@ -2066,10 +2062,6 @@
         <source>Did %SUBACCOUNT_NAME%'s %TOPIC_NAME% start recently? Or has %SUBACCOUNT_NAME% been experiencing it for a while?</source>
         <target>%SUBACCOUNT_NAME%的%TOPIC_NAME%是最近才开始的吗?还是已经有一段时间了?</target>
       </trans-unit>
-      <trans-unit id="265" resname="uitype" restype="string" datatype="x-yaml" x-context="duration">
-        <source>slider</source>
-        <target>slider</target>
-      </trans-unit>
       <trans-unit id="266" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="duration">
         <source>Occurred</source>
         <target>开始时间</target>
@@ -2085,10 +2077,6 @@
       <trans-unit id="269" resname="subaccount" restype="string" datatype="x-yaml" x-context="abruptness@variations">
         <source>So, did %SUBACCOUNT_NAME% start experiencing %TOPIC_NAME% suddenly, or did it develop gradually?</source>
         <target>那么%SUBACCOUNT_NAME%的%TOPIC_NAME%是一下子出现的还是慢慢地发展起来的?</target>
-      </trans-unit>
-      <trans-unit id="270" resname="uitype" restype="string" datatype="x-yaml" x-context="abruptness">
-        <source>slider</source>
-        <target>slider</target>
       </trans-unit>
       <trans-unit id="271" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="abruptness">
         <source>Time Frame</source>
@@ -2114,10 +2102,6 @@
         <source>Do any of the following describe %SUBACCOUNT_NAME%'s %TOPIC_NAME%? If not, we can just continue.</source>
         <target>这描述了 %SUBACCOUNT_NAME% 的 %TOPIC_NAME%吗？如果没有，请继续。</target>
       </trans-unit>
-      <trans-unit id="277" resname="uitype" restype="string" datatype="x-yaml" x-context="quality">
-        <source>multiselect</source>
-        <target>multiselect</target>
-      </trans-unit>
       <trans-unit id="278" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="quality">
         <source>Quality</source>
         <target>质量</target>
@@ -2133,10 +2117,6 @@
       <trans-unit id="281" resname="subaccount" restype="string" datatype="x-yaml" x-context="radiation@variations">
         <source>Does %SUBACCOUNT_NAME%’s %TOPIC_NAME% radiate to any of these areas? Tell us which ones (if any). This can mean different things.</source>
         <target>%SUBACCOUNT_NAME%的%TOPIC_NAME%是否扩散到以下任何部位? 告诉我们扩散到了哪些部分(如果有)。这有可能意味着完全不同的起因</target>
-      </trans-unit>
-      <trans-unit id="282" resname="uitype" restype="string" datatype="x-yaml" x-context="radiation">
-        <source>yesno</source>
-        <target>yesno</target>
       </trans-unit>
       <trans-unit id="283" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="radiation">
         <source>Radiation</source>
@@ -2157,10 +2137,6 @@
       <trans-unit id="287" resname="female" restype="string" datatype="x-yaml" x-context="sidedness@variations@subaccount">
         <source>Where does %SUBACCOUNT_NAME% feel her %TOPIC_NAME%? You can pick some or even all places. If you skip any, we’ll assume the symptom doesn’t occur there.</source>
         <target>%SUBACCOUNT_NAME% 在哪感觉到 %TOPIC_NAME%? 您可以选择一处或多处。如果您跳过那些部位，我们将假设那些部位不存在症状。</target>
-      </trans-unit>
-      <trans-unit id="288" resname="uitype" restype="string" datatype="x-yaml" x-context="sidedness">
-        <source>yesno</source>
-        <target>yesno</target>
       </trans-unit>
       <trans-unit id="289" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="sidedness">
         <source>Side</source>
@@ -2186,10 +2162,6 @@
         <source>There still seem to be several possible explanations. Does %SUBACCOUNT_NAME%'s %TOPIC_NAME% get worse in any of these cases?</source>
         <target>可能会有几种不同的可能性。 %SUBACCOUNT_NAME% 的 %TOPIC_NAME% 有加重吗？</target>
       </trans-unit>
-      <trans-unit id="295" resname="uitype" restype="string" datatype="x-yaml" x-context="worsened">
-        <source>multiselect</source>
-        <target>multiselect</target>
-      </trans-unit>
       <trans-unit id="296" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="worsened">
         <source>Worsened by</source>
         <target>情况恶化</target>
@@ -2214,10 +2186,6 @@
         <source>If %SUBACCOUNT_NAME% has tried any of these remedies, did they help? If not, let's continue</source>
         <target>如果 %SUBACCOUNT_NAME% 试过任何一种治疗方法，那有帮助吗？如果没有，请继续。</target>
       </trans-unit>
-      <trans-unit id="302" resname="uitype" restype="string" datatype="x-yaml" x-context="alleviated">
-        <source>multiselect</source>
-        <target>multiselect</target>
-      </trans-unit>
       <trans-unit id="303" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="alleviated">
         <source>Better By</source>
         <target>最好在</target>
@@ -2238,10 +2206,6 @@
         <source>By any chance, is %SUBACCOUNT_NAME% pregnant? Pregnancy can make a big difference in explaining symptoms</source>
         <target>%SUBACCOUNT_NAME% 有可能现在有孕吗？是否怀孕对解释症状会有很大的影响</target>
       </trans-unit>
-      <trans-unit id="308" resname="uitype" restype="string" datatype="x-yaml" x-context="pregnancy">
-        <source>singleselect</source>
-        <target>singleselect</target>
-      </trans-unit>
       <trans-unit id="309" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="pregnancy">
         <source>Pregnant</source>
         <target>怀孕</target>
@@ -2257,10 +2221,6 @@
       <trans-unit id="312" resname="subaccount" restype="string" datatype="x-yaml" x-context="gender@variations">
         <source>Biologically speaking, what is %SUBACCOUNT_NAME%’s gender?</source>
         <target>从生物学来讲, %SUBACCOUNT_NAME% 性别是什么？</target>
-      </trans-unit>
-      <trans-unit id="313" resname="uitype" restype="string" datatype="x-yaml" x-context="gender">
-        <source>gender</source>
-        <target>gender</target>
       </trans-unit>
       <trans-unit id="314" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="gender">
         <source>Gender</source>
@@ -2285,10 +2245,6 @@
       <trans-unit id="319" resname="name_missing" restype="string" datatype="x-yaml" x-context="dob@variations@subaccount">
         <source>If you don’t mind me asking, when was %SUBACCOUNT_NAME% born? (Knowing age helps our doctors provide more accurate insights!)</source>
         <target>如果您不介意， %SUBACCOUNT_NAME% 是什么时候出生的? (年龄有助于我们的医生提供更准确相关的信息！)</target>
-      </trans-unit>
-      <trans-unit id="320" resname="uitype" restype="string" datatype="x-yaml" x-context="dob">
-        <source>date</source>
-        <target>date</target>
       </trans-unit>
       <trans-unit id="321" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="dob">
         <source>DoB</source>
@@ -2317,10 +2273,6 @@
       <trans-unit id="327" resname="subaccount" restype="string" datatype="x-yaml" x-context="first_of_any_type@header">
         <source>Help us understand %SUBACCOUNT_NAME%’s %TOPIC_NAME%</source>
         <target>帮助我们了解%SUBACCOUNT_NAME%的%TOPIC_NAME%</target>
-      </trans-unit>
-      <trans-unit id="328" resname="uitype" restype="string" datatype="x-yaml" x-context="first_of_any_type">
-        <source>multiselect</source>
-        <target>multiselect</target>
       </trans-unit>
     </body>
   </file>
@@ -2561,6 +2513,110 @@
       <trans-unit id="386" resname="Auckland" restype="string" datatype="x-yaml">
         <source>auckland</source>
         <target>奥克兰</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/chat/feelgood/chat_pdf/_referral_individual.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="55" resname="r679793727" restype="string" datatype="ruby">
+        <source>I'd like to refer you to:</source>
+        <target state="translated">我向您推荐：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person_notification.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="70" resname="r573774230" restype="string" datatype="ruby">
+        <source>responded</source>
+        <target state="translated">已回答</target>
+      </trans-unit>
+      <trans-unit id="71" resname="r1018498578" restype="string" datatype="ruby">
+        <source>answered</source>
+        <target state="translated">已回答</target>
+      </trans-unit>
+      <trans-unit id="75" resname="r236050162" restype="string" datatype="ruby">
+        <source>there</source>
+        <target state="translated">那里</target>
+      </trans-unit>
+      <trans-unit id="76" resname="r650101752" restype="string" datatype="ruby">
+        <source>your</source>
+        <target state="translated">您</target>
+      </trans-unit>
+      <trans-unit id="77" resname="r827947604" restype="string" datatype="ruby">
+        <source>PayPal</source>
+        <target state="translated">PayPal</target>
+      </trans-unit>
+      <trans-unit id="78" resname="r122353058" restype="string" datatype="ruby">
+        <source>PayPal account</source>
+        <target state="translated">PayPal账户</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="238" resname=" and " restype="string" datatype="javascript">
+        <source>and</source>
+        <target state="translated">和</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="244" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target state="translated">不是</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_soap_summary.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="250" resname="r884231903" restype="string" datatype="x-haml">
+        <source>Subjective (History):</source>
+        <target state="translated">主观性资料（历史）：</target>
+      </trans-unit>
+      <trans-unit id="251" resname="r696401974" restype="string" datatype="x-haml">
+        <source>Objective (Data):</source>
+        <target state="translated">客观性资料（数据）：</target>
+      </trans-unit>
+      <trans-unit id="252" resname="r795802560" restype="string" datatype="x-haml">
+        <source>Diagnosis codes:</source>
+        <target state="translated">诊断代码：</target>
+      </trans-unit>
+      <trans-unit id="253" resname="r729158437" restype="string" datatype="x-haml">
+        <source>Reason for follow-up:</source>
+        <target state="translated">跟进原因</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_referral_specialty.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="254" resname="r564113392" restype="string" datatype="x-haml">
+        <source>Find specialist</source>
+        <target state="translated">发现专家</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_lab_result.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="259" resname="r867221592" restype="string" datatype="x-haml">
+        <source>They have returned with a critical value that require your attention.</source>
+        <target state="translated">他们返回一个重要数值，需要您的注意。</target>
+      </trans-unit>
+      <trans-unit id="260" resname="r952103381" restype="string" datatype="x-haml">
+        <source>We encourage you to have a follow-up consult with a doctor again to understand what these results mean and how they affect you.</source>
+        <target state="translated">我们鼓励您再次与医生进行后续咨询，了解什么这些结果意味着什么以及它们如何影响您。</target>
+      </trans-unit>
+      <trans-unit id="261" resname="r581029507" restype="string" datatype="x-haml">
+        <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an "addendum note" to this consult using the chat.</source>
+        <target state="translated">请审查结果，提供您对这些结果的解释，并建议患者下一步该做什么。如要这样做，只需为这个聊天咨询留下一个“附录说明”。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_sos_features.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="262" resname="r794956291" restype="string" datatype="x-haml">
+        <source>), population managers receive real-time individual and population health insights, including information on what members need and where they are</source>
+        <target state="translated">), 人口管理经理会即时收到有关个人和群体健康的知识，包括人们需要什么。</target>
       </trans-unit>
     </body>
   </file>

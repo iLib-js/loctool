@@ -1416,4 +1416,388 @@
       </trans-unit>
     </body>
   </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="260" resname=" and " restype="string" datatype="javascript">
+        <source>and</source>
+        <target state="translated">y</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="269" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target state="translated">No</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_soap_summary.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="275" resname="r884231903" restype="string" datatype="x-haml">
+        <source>Subjective (History):</source>
+        <target state="translated">Subjetivo (Historia):</target>
+      </trans-unit>
+      <trans-unit id="276" resname="r696401974" restype="string" datatype="x-haml">
+        <source>Objective (Data):</source>
+        <target state="translated">Objectivo (Datos):</target>
+      </trans-unit>
+      <trans-unit id="277" resname="r795802560" restype="string" datatype="x-haml">
+        <source>Diagnosis codes:</source>
+        <target state="translated">Códigos de Diagnóstico:</target>
+      </trans-unit>
+      <trans-unit id="278" resname="r729158437" restype="string" datatype="x-haml">
+        <source>Reason for follow-up:</source>
+        <target state="translated">Razón para seguimiento:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_referral_specialty.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="279" resname="r564113392" restype="string" datatype="x-haml">
+        <source>Find specialist</source>
+        <target state="translated">Encontrar especialista</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_lab_result.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="286" resname="r581029507" restype="string" datatype="x-haml">
+        <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an "addendum note" to this consult using the chat.</source>
+        <target state="translated">Por favor revisa los resultados, proporciona tu interpretación de estos resultados, y asesora al paciente sobre los siguientes pasos. Para hacerlo, sólo deja una "nota anexo" a esta consulta utilizando el chat.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_sos_features.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="287" resname="r794956291" restype="string" datatype="x-haml">
+        <source>), population managers receive real-time individual and population health insights, including information on what members need and where they are</source>
+        <target state="translated">), administradores de población reciben perspicacias de salud individuales y de población en tiempo real, incluyendo información sobre qué necesitan los miembros y dónde están</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/symptom_triage_copy.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="top_header" restype="string" datatype="x-yaml" x-context="greeting">
+        <source>Get started</source>
+        <target state="translated">Empieza</target>
+      </trans-unit>
+      <trans-unit id="5" resname="top_header" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who needs help?</source>
+        <target state="translated">¿Quién necesita ayuda?</target>
+      </trans-unit>
+      <trans-unit id="6" resname="heading" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who are we here to help?</source>
+        <target state="translated">¿A quién estamos aquí para ayudar?</target>
+      </trans-unit>
+      <trans-unit id="7" resname="description" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Please choose, and then tap or type symptoms, or skip to ask our doctors directly.</source>
+        <target state="translated">Por favor, elige y luego toca o escribe síntomas, o salta a preguntarles directamente a nuestros doctores.</target>
+      </trans-unit>
+      <trans-unit id="8" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_dob">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="14" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_gender">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="17" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_pregnancy">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="21" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_body_part">
+        <source>Tap or type a symptom</source>
+        <target state="translated">Toca o escribe un síntoma</target>
+      </trans-unit>
+      <trans-unit id="24" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_symptom">
+        <source>Choose symptom</source>
+        <target state="translated">Elige síntoma</target>
+      </trans-unit>
+      <trans-unit id="28" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_symptom_no_body_part">
+        <source>Choose symptom</source>
+        <target state="translated">Elige síntoma</target>
+      </trans-unit>
+      <trans-unit id="32" resname="top_header" restype="string" datatype="x-yaml" x-context="symptom_added_success">
+        <source>Tap additional symptoms</source>
+        <target state="translated">Elige síntomas adicionales</target>
+      </trans-unit>
+      <trans-unit id="37" resname="top_header" restype="string" datatype="x-yaml" x-context="update_risk_factors">
+        <source>More about you</source>
+        <target state="translated">Más acerca de ti</target>
+      </trans-unit>
+      <trans-unit id="42" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report">
+        <source>Creating report</source>
+        <target state="translated">Creando reporte</target>
+      </trans-unit>
+      <trans-unit id="92" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report_error">
+        <source>Creating report</source>
+        <target state="translated">Creando reporte</target>
+      </trans-unit>
+      <trans-unit id="93" resname="heading" restype="string" datatype="x-yaml" x-context="creating_report_error">
+        <source>Hmm...</source>
+        <target state="translated">Hmm...</target>
+      </trans-unit>
+      <trans-unit id="96" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report_success">
+        <source>Possible explanations</source>
+        <target state="translated">Explicaciones posibles</target>
+      </trans-unit>
+      <trans-unit id="111" resname="top_header" restype="string" datatype="x-yaml" x-context="care_options">
+        <source>Care options</source>
+        <target state="translated">Opciones de atención</target>
+      </trans-unit>
+      <trans-unit id="115" resname="top_header" restype="string" datatype="x-yaml" x-context="emergency_medicine_condition">
+        <source>About this care option</source>
+        <target state="translated">Acerca de esta opción de atención</target>
+      </trans-unit>
+      <trans-unit id="119" resname="top_header" restype="string" datatype="x-yaml" x-context="disclaimer_generic">
+        <source>Disclaimer</source>
+        <target state="translated">Renuncia de responsabilidad</target>
+      </trans-unit>
+      <trans-unit id="121" resname="top_header" restype="string" datatype="x-yaml" x-context="disclaimer_condition_report">
+        <source>Disclaimer</source>
+        <target state="translated">Renuncia de responsabilidad</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/refinement_questions.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="234" resname="top_header" restype="string" datatype="x-yaml" x-context="severity">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="239" resname="top_header" restype="string" datatype="x-yaml" x-context="duration">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="244" resname="top_header" restype="string" datatype="x-yaml" x-context="abruptness">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="249" resname="top_header" restype="string" datatype="x-yaml" x-context="quality">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="255" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="quality">
+        <source>Quality</source>
+        <target state="translated">Calidad</target>
+      </trans-unit>
+      <trans-unit id="256" resname="top_header" restype="string" datatype="x-yaml" x-context="radiation">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="261" resname="top_header" restype="string" datatype="x-yaml" x-context="sidedness">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="267" resname="top_header" restype="string" datatype="x-yaml" x-context="worsened">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="274" resname="top_header" restype="string" datatype="x-yaml" x-context="alleviated">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="281" resname="top_header" restype="string" datatype="x-yaml" x-context="pregnancy">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="286" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="pregnancy">
+        <source>Pregnant</source>
+        <target state="translated">Embarazada</target>
+      </trans-unit>
+      <trans-unit id="287" resname="top_header" restype="string" datatype="x-yaml" x-context="gender">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="290" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="gender">
+        <source>Gender</source>
+        <target state="translated">Sexo</target>
+      </trans-unit>
+      <trans-unit id="291" resname="top_header" restype="string" datatype="x-yaml" x-context="dob">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/states.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="305" resname="AL" restype="string" datatype="x-yaml">
+        <source>Alabama</source>
+        <target state="translated">Alabama</target>
+      </trans-unit>
+      <trans-unit id="306" resname="AK" restype="string" datatype="x-yaml">
+        <source>Alaska</source>
+        <target state="translated">Alaska</target>
+      </trans-unit>
+      <trans-unit id="307" resname="AZ" restype="string" datatype="x-yaml">
+        <source>Arizona</source>
+        <target state="translated">Arizona</target>
+      </trans-unit>
+      <trans-unit id="308" resname="AR" restype="string" datatype="x-yaml">
+        <source>Arkansas</source>
+        <target state="translated">Arkansas</target>
+      </trans-unit>
+      <trans-unit id="309" resname="CA" restype="string" datatype="x-yaml">
+        <source>California</source>
+        <target state="translated">California</target>
+      </trans-unit>
+      <trans-unit id="310" resname="CO" restype="string" datatype="x-yaml">
+        <source>Colorado</source>
+        <target state="translated">Colorado</target>
+      </trans-unit>
+      <trans-unit id="311" resname="CT" restype="string" datatype="x-yaml">
+        <source>Connecticut</source>
+        <target state="translated">Connecticut</target>
+      </trans-unit>
+      <trans-unit id="312" resname="DE" restype="string" datatype="x-yaml">
+        <source>Delaware</source>
+        <target state="translated">Delaware</target>
+      </trans-unit>
+      <trans-unit id="313" resname="FL" restype="string" datatype="x-yaml">
+        <source>Florida</source>
+        <target state="translated">Florida</target>
+      </trans-unit>
+      <trans-unit id="314" resname="GA" restype="string" datatype="x-yaml">
+        <source>Georgia</source>
+        <target state="translated">Georgia</target>
+      </trans-unit>
+      <trans-unit id="315" resname="HI" restype="string" datatype="x-yaml">
+        <source>Hawaii</source>
+        <target state="translated">Hawaii</target>
+      </trans-unit>
+      <trans-unit id="316" resname="ID" restype="string" datatype="x-yaml">
+        <source>Idaho</source>
+        <target state="translated">Idaho</target>
+      </trans-unit>
+      <trans-unit id="317" resname="IL" restype="string" datatype="x-yaml">
+        <source>Illinois</source>
+        <target state="translated">Illinois</target>
+      </trans-unit>
+      <trans-unit id="318" resname="IN" restype="string" datatype="x-yaml">
+        <source>Indiana</source>
+        <target state="translated">Indiana</target>
+      </trans-unit>
+      <trans-unit id="319" resname="IA" restype="string" datatype="x-yaml">
+        <source>Iowa</source>
+        <target state="translated">Iowa</target>
+      </trans-unit>
+      <trans-unit id="320" resname="KS" restype="string" datatype="x-yaml">
+        <source>Kansas</source>
+        <target state="translated">Kansas</target>
+      </trans-unit>
+      <trans-unit id="321" resname="KY" restype="string" datatype="x-yaml">
+        <source>Kentucky</source>
+        <target state="translated">Kentucky</target>
+      </trans-unit>
+      <trans-unit id="322" resname="LA" restype="string" datatype="x-yaml">
+        <source>Louisiana</source>
+        <target state="translated">Louisiana</target>
+      </trans-unit>
+      <trans-unit id="323" resname="ME" restype="string" datatype="x-yaml">
+        <source>Maine</source>
+        <target state="translated">Maine</target>
+      </trans-unit>
+      <trans-unit id="324" resname="MD" restype="string" datatype="x-yaml">
+        <source>Maryland</source>
+        <target state="translated">Maryland</target>
+      </trans-unit>
+      <trans-unit id="325" resname="MA" restype="string" datatype="x-yaml">
+        <source>Massachusetts</source>
+        <target state="translated">Massachusetts</target>
+      </trans-unit>
+      <trans-unit id="326" resname="MI" restype="string" datatype="x-yaml">
+        <source>Michigan</source>
+        <target state="translated">Michigan</target>
+      </trans-unit>
+      <trans-unit id="327" resname="MN" restype="string" datatype="x-yaml">
+        <source>Minnesota</source>
+        <target state="translated">Minnesota</target>
+      </trans-unit>
+      <trans-unit id="328" resname="MS" restype="string" datatype="x-yaml">
+        <source>Mississippi</source>
+        <target state="translated">Mississippi</target>
+      </trans-unit>
+      <trans-unit id="329" resname="MO" restype="string" datatype="x-yaml">
+        <source>Missouri</source>
+        <target state="translated">Missouri</target>
+      </trans-unit>
+      <trans-unit id="330" resname="MT" restype="string" datatype="x-yaml">
+        <source>Montana</source>
+        <target state="translated">Montana</target>
+      </trans-unit>
+      <trans-unit id="331" resname="NE" restype="string" datatype="x-yaml">
+        <source>Nebraska</source>
+        <target state="translated">Nebraska</target>
+      </trans-unit>
+      <trans-unit id="332" resname="NV" restype="string" datatype="x-yaml">
+        <source>Nevada</source>
+        <target state="translated">Nevada</target>
+      </trans-unit>
+      <trans-unit id="336" resname="NY" restype="string" datatype="x-yaml">
+        <source>New York</source>
+        <target state="translated">New York</target>
+      </trans-unit>
+      <trans-unit id="337" resname="NC" restype="string" datatype="x-yaml">
+        <source>North Carolina</source>
+        <target state="translated">North Carolina</target>
+      </trans-unit>
+      <trans-unit id="338" resname="ND" restype="string" datatype="x-yaml">
+        <source>North Dakota</source>
+        <target state="translated">North Dakota</target>
+      </trans-unit>
+      <trans-unit id="339" resname="OH" restype="string" datatype="x-yaml">
+        <source>Ohio</source>
+        <target state="translated">Ohio</target>
+      </trans-unit>
+      <trans-unit id="340" resname="OK" restype="string" datatype="x-yaml">
+        <source>Oklahoma</source>
+        <target state="translated">Oklahoma</target>
+      </trans-unit>
+      <trans-unit id="341" resname="OR" restype="string" datatype="x-yaml">
+        <source>Oregon</source>
+        <target state="translated">Oregon</target>
+      </trans-unit>
+      <trans-unit id="342" resname="PA" restype="string" datatype="x-yaml">
+        <source>Pennsylvania</source>
+        <target state="translated">Pennsylvania</target>
+      </trans-unit>
+      <trans-unit id="346" resname="TN" restype="string" datatype="x-yaml">
+        <source>Tennessee</source>
+        <target state="translated">Tennessee</target>
+      </trans-unit>
+      <trans-unit id="347" resname="TX" restype="string" datatype="x-yaml">
+        <source>Texas</source>
+        <target state="translated">Texas</target>
+      </trans-unit>
+      <trans-unit id="348" resname="UT" restype="string" datatype="x-yaml">
+        <source>Utah</source>
+        <target state="translated">Utah</target>
+      </trans-unit>
+      <trans-unit id="349" resname="VT" restype="string" datatype="x-yaml">
+        <source>Vermont</source>
+        <target state="translated">Vermont</target>
+      </trans-unit>
+      <trans-unit id="350" resname="VA" restype="string" datatype="x-yaml">
+        <source>Virginia</source>
+        <target state="translated">Virginia</target>
+      </trans-unit>
+      <trans-unit id="351" resname="WA" restype="string" datatype="x-yaml">
+        <source>Washington</source>
+        <target state="translated">Washington</target>
+      </trans-unit>
+      <trans-unit id="352" resname="WV" restype="string" datatype="x-yaml">
+        <source>West Virginia</source>
+        <target state="translated">West Virginia</target>
+      </trans-unit>
+      <trans-unit id="353" resname="WI" restype="string" datatype="x-yaml">
+        <source>Wisconsin</source>
+        <target state="translated">Wisconsin</target>
+      </trans-unit>
+      <trans-unit id="354" resname="WY" restype="string" datatype="x-yaml">
+        <source>Wyoming</source>
+        <target state="translated">Wyoming</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
