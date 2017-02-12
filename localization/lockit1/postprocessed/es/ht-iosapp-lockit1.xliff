@@ -1309,7 +1309,7 @@
       </trans-unit>
       <trans-unit id="fYC-ZL-Tx6.text" resname="fYC-ZL-Tx6.text" restype="string" datatype="x-xib">
         <source>Send as many messages as you need, or get advice, prescriptions, lab tests, and more</source>
-        <target>Envía tantos mensajes como necesites, u obtén consejo, prueba de laboratorio, receta y más</target>
+        <target state="ui-fix">Envía cuantos mensajes necesites, obtén consejos, pruebas, recetas y más</target>
         <note annotates="source">Class = "UILabel"; text = "Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more"; ObjectID = "fYC-ZL-Tx6";</note>
       </trans-unit>
       <trans-unit id="AAx-12-Bl4.text" resname="AAx-12-Bl4.text" restype="string" datatype="x-xib">
@@ -1398,7 +1398,7 @@
       </trans-unit>
       <trans-unit id="Xnp-rB-1Op.text" resname="Xnp-rB-1Op.text" restype="string" datatype="x-xib">
         <source>Message subscription</source>
-        <target>Suscripción para mensajes</target>
+        <target state="ui-fix">Suscripción</target>
         <note annotates="source">Class = "UILabel"; text = "Message subscription"; ObjectID = "Xnp-rB-1Op";</note>
       </trans-unit>
       <trans-unit id="Y9Q-SL-pqt.text" resname="Y9Q-SL-pqt.text" restype="string" datatype="x-xib">
@@ -1418,7 +1418,7 @@
       </trans-unit>
       <trans-unit id="fYC-ZL-Tx6.text" resname="fYC-ZL-Tx6.text" restype="string" datatype="x-xib">
         <source>Send as many messages as you need, or get advice, prescriptions, lab tests, and more</source>
-        <target state="accepted">Envía tantos mensajes como necesites, u obtén consejo, prueba de laboratorio, receta y más</target>
+        <target state="ui-fix">Envía cuantos mensajes necesites, obtén consejos, pruebas, recetas y más</target>
         <note annotates="source">Class = "UILabel"; text = "Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more"; ObjectID = "fYC-ZL-Tx6";</note>
       </trans-unit>
       <trans-unit id="lfx-Yz-JPe.normalTitle" resname="lfx-Yz-JPe.normalTitle" restype="string" datatype="x-xib">
