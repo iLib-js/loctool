@@ -1325,7 +1325,7 @@
       </trans-unit>
       <trans-unit id="240" resname="Maybe Later" restype="string" datatype="x-objective-c">
         <source>Maybe Later</source>
-        <target>Tal Vez Después</target>
+        <target state="ui-fix">Después</target>
       </trans-unit>
     </body>
   </file>
