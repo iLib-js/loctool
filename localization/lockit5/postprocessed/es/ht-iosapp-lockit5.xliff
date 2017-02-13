@@ -910,12 +910,12 @@
     <body>
       <trans-unit id="361" resname="fYC-ZL-Tx6.text" restype="string" datatype="x-xib">
         <source>Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more</source>
-        <target>Envía tantos mensajes\ncomo necesites, u obtén consejo,\nrecetas, pruebas de laboratorio,\ny más</target>
+        <target state="ui-fix">Envía tantos mensajes\ncomo necesites, obtén consejos,\nrecetas, pruebas y más</target>
         <note annotates="source">Class = "UILabel"; text = "Send as many messages\nas you need, or get advice,\nprescriptions, lab tests,\nand more"; ObjectID = "fYC-ZL-Tx6";</note>
       </trans-unit>
       <trans-unit id="362" resname="wlf-6g-3lf.text" restype="string" datatype="x-xib">
         <source>One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more</source>
-        <target>Una consulta con\nel doctor para consejo,\nrecetas, pruebas de laboratorio\ny más</target>
+        <target state="ui-fix">Una consulta con\nel doctor para consejos,\nrecetas, pruebas y más</target>
         <note annotates="source">Class = "UILabel"; text = "One consult with\nthe doctor for advice,\nprescriptions, lab tests,\nand more"; ObjectID = "wlf-6g-3lf";</note>
       </trans-unit>
     </body>
@@ -924,12 +924,12 @@
     <body>
       <trans-unit id="363" resname="AAc-ZT-Xxm.text" restype="string" datatype="x-xib">
         <source>Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more</source>
-        <target>Envía tantos mensajes como \nnecesites, u obtén consejo, recetas,\npruebas de laboratorio, y más</target>
+        <target state="ui-fix">Envía tantos mensajes como \nnecesites, obtén consejos, recetas,\npruebas, y más</target>
         <note annotates="source">Class = "UILabel"; text = "Send as many messages as you\nneed, or get advice, prescriptions,\nlab tests, and more"; ObjectID = "AAc-ZT-Xxm";</note>
       </trans-unit>
       <trans-unit id="364" resname="zEL-22-bH6.text" restype="string" datatype="x-xib">
         <source>One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more</source>
-        <target>Una consulta con el doctor\npara consejo, recetas, pruebas\nde laboratorio, y más</target>
+        <target state="ui-fix">Una consulta con el doctor\npara consejos, recetas, pruebas\n, y más</target>
         <note annotates="source">Class = "UILabel"; text = "One consult with the doctor\nfor advice, prescriptions, lab\ntests, and more"; ObjectID = "zEL-22-bH6";</note>
       </trans-unit>
     </body>
