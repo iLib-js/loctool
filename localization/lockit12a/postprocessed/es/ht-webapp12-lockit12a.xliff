@@ -1800,4 +1800,56 @@
       </trans-unit>
     </body>
   </file>
+  <file original="config/refinement_questions.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="uitype" restype="string" datatype="x-yaml" x-context="severity">
+        <source>slider</source>
+        <target state="accepted">slider</target>
+      </trans-unit>
+      <trans-unit id="2" resname="uitype" restype="string" datatype="x-yaml" x-context="duration">
+        <source>slider</source>
+        <target state="accepted">slider</target>
+      </trans-unit>
+      <trans-unit id="3" resname="uitype" restype="string" datatype="x-yaml" x-context="abruptness">
+        <source>slider</source>
+        <target state="accepted">slider</target>
+      </trans-unit>
+      <trans-unit id="4" resname="uitype" restype="string" datatype="x-yaml" x-context="quality">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+      <trans-unit id="5" resname="uitype" restype="string" datatype="x-yaml" x-context="radiation">
+        <source>yesno</source>
+        <target state="accepted">yesno</target>
+      </trans-unit>
+      <trans-unit id="6" resname="uitype" restype="string" datatype="x-yaml" x-context="sidedness">
+        <source>yesno</source>
+        <target state="accepted">yesno</target>
+      </trans-unit>
+      <trans-unit id="7" resname="uitype" restype="string" datatype="x-yaml" x-context="worsened">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+      <trans-unit id="8" resname="uitype" restype="string" datatype="x-yaml" x-context="alleviated">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+      <trans-unit id="9" resname="uitype" restype="string" datatype="x-yaml" x-context="pregnancy">
+        <source>singleselect</source>
+        <target state="accepted">singleselect</target>
+      </trans-unit>
+      <trans-unit id="10" resname="uitype" restype="string" datatype="x-yaml" x-context="gender">
+        <source>gender</source>
+        <target state="accepted">gender</target>
+      </trans-unit>
+      <trans-unit id="11" resname="uitype" restype="string" datatype="x-yaml" x-context="dob">
+        <source>date</source>
+        <target state="accepted">date</target>
+      </trans-unit>
+      <trans-unit id="12" resname="uitype" restype="string" datatype="x-yaml" x-context="first_of_any_type">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

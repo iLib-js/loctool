@@ -100,15 +100,15 @@
     <body>
       <trans-unit id="209" resname="It seems you&apos;re in a different state than your preferred pharmacy. " restype="string" datatype="javascript">
         <source>It seems you're in a different state than your preferred pharmacy.</source>
-        <target state="new">看起来您选择的药房与您的当前地址不在同一个州。</target>
+        <target state="translated">看起来您选择的药房与您的当前地址不在同一个州。</target>
       </trans-unit>
       <trans-unit id="210" resname="Please let us know your preferred pharmacy in {state}" restype="string" datatype="javascript">
         <source>Please let us know your preferred pharmacy in {state}</source>
-        <target state="new">请选择您希望在 {state} 取药的药房</target>
+        <target state="translated">请选择您希望在 {state} 取药的药房</target>
       </trans-unit>
       <trans-unit id="211" resname="Update pharmacy" restype="string" datatype="javascript">
         <source>Update pharmacy</source>
-        <target state="new">更新药房信息</target>
+        <target state="translated">更新药房信息</target>
       </trans-unit>
     </body>
   </file>
@@ -2617,6 +2617,58 @@
       <trans-unit id="262" resname="r794956291" restype="string" datatype="x-haml">
         <source>), population managers receive real-time individual and population health insights, including information on what members need and where they are</source>
         <target state="translated">), 人口管理经理会即时收到有关个人和群体健康的知识，包括人们需要什么。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/refinement_questions.yml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="uitype" restype="string" datatype="x-yaml" x-context="severity">
+        <source>slider</source>
+        <target state="accepted">slider</target>
+      </trans-unit>
+      <trans-unit id="2" resname="uitype" restype="string" datatype="x-yaml" x-context="duration">
+        <source>slider</source>
+        <target state="accepted">slider</target>
+      </trans-unit>
+      <trans-unit id="3" resname="uitype" restype="string" datatype="x-yaml" x-context="abruptness">
+        <source>slider</source>
+        <target state="accepted">slider</target>
+      </trans-unit>
+      <trans-unit id="4" resname="uitype" restype="string" datatype="x-yaml" x-context="quality">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+      <trans-unit id="5" resname="uitype" restype="string" datatype="x-yaml" x-context="radiation">
+        <source>yesno</source>
+        <target state="accepted">yesno</target>
+      </trans-unit>
+      <trans-unit id="6" resname="uitype" restype="string" datatype="x-yaml" x-context="sidedness">
+        <source>yesno</source>
+        <target state="accepted">yesno</target>
+      </trans-unit>
+      <trans-unit id="7" resname="uitype" restype="string" datatype="x-yaml" x-context="worsened">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+      <trans-unit id="8" resname="uitype" restype="string" datatype="x-yaml" x-context="alleviated">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+      <trans-unit id="9" resname="uitype" restype="string" datatype="x-yaml" x-context="pregnancy">
+        <source>singleselect</source>
+        <target state="accepted">singleselect</target>
+      </trans-unit>
+      <trans-unit id="10" resname="uitype" restype="string" datatype="x-yaml" x-context="gender">
+        <source>gender</source>
+        <target state="accepted">gender</target>
+      </trans-unit>
+      <trans-unit id="11" resname="uitype" restype="string" datatype="x-yaml" x-context="dob">
+        <source>date</source>
+        <target state="accepted">date</target>
+      </trans-unit>
+      <trans-unit id="12" resname="uitype" restype="string" datatype="x-yaml" x-context="first_of_any_type">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
       </trans-unit>
     </body>
   </file>

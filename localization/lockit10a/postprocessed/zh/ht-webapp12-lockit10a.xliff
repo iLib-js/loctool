@@ -744,14 +744,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="t/vanessa/refinement_questions.yml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="441" resname="uitype" restype="string" datatype="x-yaml" x-context="gender">
-        <source>gender</source>
-        <target state="translated">性别</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="app/views/user_questions/feelGood/show.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="2" resname="r359045259" restype="plural" datatype="ruby" extype="one">
