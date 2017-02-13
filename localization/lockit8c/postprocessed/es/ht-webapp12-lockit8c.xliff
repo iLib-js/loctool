@@ -11438,7 +11438,7 @@
     <body>
       <trans-unit id="2213" resname="r1008955882" restype="string" datatype="ruby">
         <source>Find a goal (ex. Lose weight)</source>
-        <target state="translated">Encuentra una meta (ej. Perder de peso)</target>
+        <target state="translated">Encuentra una meta (ej. Meditación)</target>
       </trans-unit>
     </body>
   </file>
