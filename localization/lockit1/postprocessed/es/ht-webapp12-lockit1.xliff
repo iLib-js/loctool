@@ -19804,7 +19804,7 @@
     <body>
       <trans-unit id="4187" resname="By city or zip code" restype="string" datatype="html">
         <source>By city or zip code</source>
-        <target>Por ciudad o código postal</target>
+        <target>Ciudad/código postal</target>
       </trans-unit>
       <trans-unit id="4188" resname="Filter" restype="string" datatype="html">
         <source>Filter</source>
