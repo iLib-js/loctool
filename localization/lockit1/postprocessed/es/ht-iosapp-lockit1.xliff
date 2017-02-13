@@ -1099,7 +1099,7 @@
       </trans-unit>
       <trans-unit id="MkA-sa-mVy.text" resname="MkA-sa-mVy.text" restype="string" datatype="x-xib">
         <source>Add condition or symptom</source>
-        <target>Añadir una condición o síntoma</target>
+        <target state="ui-fix">Añadir condición o síntoma</target>
         <note annotates="source">Class = "UILabel"; text = "Add condition or symptom"; ObjectID = "MkA-sa-mVy";</note>
       </trans-unit>
       <trans-unit id="PA4-na-iDr.normalTitle" resname="PA4-na-iDr.normalTitle" restype="string" datatype="x-xib">
@@ -1109,22 +1109,22 @@
       </trans-unit>
       <trans-unit id="XoB-sm-Jcb.normalTitle" resname="XoB-sm-Jcb.normalTitle" restype="string" datatype="x-xib">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
         <note annotates="source">Class = "UIButton"; normalTitle = " Have this"; ObjectID = "XoB-sm-Jcb";</note>
       </trans-unit>
       <trans-unit id="XoB-sm-Jcb.selectedTitle" resname="XoB-sm-Jcb.selectedTitle" restype="string" datatype="x-xib">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
         <note annotates="source">Class = "UIButton"; selectedTitle = " Have this"; ObjectID = "XoB-sm-Jcb";</note>
       </trans-unit>
       <trans-unit id="eXo-Lg-cIZ.normalTitle" resname="eXo-Lg-cIZ.normalTitle" restype="string" datatype="x-xib">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
         <note annotates="source">Class = "UIButton"; normalTitle = " No longer have this"; ObjectID = "eXo-Lg-cIZ";</note>
       </trans-unit>
       <trans-unit id="eXo-Lg-cIZ.selectedTitle" resname="eXo-Lg-cIZ.selectedTitle" restype="string" datatype="x-xib">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
         <note annotates="source">Class = "UIButton"; selectedTitle = " No longer have this"; ObjectID = "eXo-Lg-cIZ";</note>
       </trans-unit>
       <trans-unit id="jah-Mw-dh8.placeholder" resname="jah-Mw-dh8.placeholder" restype="string" datatype="x-xib">
@@ -1153,7 +1153,7 @@
       </trans-unit>
       <trans-unit id="FpC-8n-8Ro.text" resname="FpC-8n-8Ro.text" restype="string" datatype="x-xib">
         <source>Add condition or symptom</source>
-        <target>Añadir una condición o síntoma</target>
+        <target state="ui-fix">Añadir condición o síntoma</target>
         <note annotates="source">Class = "UILabel"; text = "Add condition or symptom"; ObjectID = "FpC-8n-8Ro";</note>
       </trans-unit>
       <trans-unit id="WsZ-Xe-U8P.text" resname="WsZ-Xe-U8P.text" restype="string" datatype="x-xib">
@@ -1211,7 +1211,7 @@
       </trans-unit>
       <trans-unit id="s4x-f2-cSf.text" resname="s4x-f2-cSf.text" restype="string" datatype="x-xib">
         <source>Add condition or symptom</source>
-        <target>Añadir una condición o síntoma</target>
+        <target state="ui-fix">Añadir condición o síntoma</target>
         <note annotates="source">Class = "UILabel"; text = "Add condition or symptom"; ObjectID = "s4x-f2-cSf";</note>
       </trans-unit>
     </body>
@@ -7059,7 +7059,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Add condition or symptom" resname="Add condition or symptom" restype="string" datatype="x-objective-c">
         <source>Add condition or symptom</source>
-        <target>Añadir una condición o síntoma</target>
+        <target state="ui-fix">Añadir condición o síntoma</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Add credit card" resname="Add credit card" restype="string" datatype="x-objective-c">
@@ -7977,7 +7977,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Currently taking" resname="Currently taking" restype="string" datatype="x-objective-c">
         <source>Currently taking</source>
-        <target>Actualmente tomo</target>
+        <target state="ui-fix">Lo tomo</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Date" resname="Date" restype="string" datatype="x-objective-c">
@@ -8885,7 +8885,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Have this" resname="Have this" restype="string" datatype="x-objective-c">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
         <note annotates="source">selectable option to indicate a condition is ongoing</note>
       </trans-unit>
       <trans-unit id="Have you ever had sexual intercourse with men, women, or both?" resname="Have you ever had sexual intercourse with men, women, or both?" restype="string" datatype="x-objective-c">
@@ -9892,7 +9892,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="No longer have this" resname="No longer have this" restype="string" datatype="x-objective-c">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="No thanks" resname="No thanks" restype="string" datatype="x-objective-c">
@@ -18164,7 +18164,7 @@ aplicación y deja que el mundo lo sepa :)</target>
       </trans-unit>
       <trans-unit id="kJA-A9-hBl.text" resname="kJA-A9-hBl.text" restype="string" datatype="x-xib">
         <source>Currently taking</source>
-        <target>Actualmente tomo</target>
+        <target state="ui-fix">Lo tomo</target>
         <note annotates="source">Class = "UILabel"; text = "Currently taking"; ObjectID = "kJA-A9-hBl";</note>
       </trans-unit>
       <trans-unit id="lb3-gt-lAZ.text" resname="lb3-gt-lAZ.text" restype="string" datatype="x-xib">
@@ -18179,7 +18179,7 @@ aplicación y deja que el mundo lo sepa :)</target>
       </trans-unit>
       <trans-unit id="p3r-Zc-XV1.text" resname="p3r-Zc-XV1.text" restype="string" datatype="x-xib">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
         <note annotates="source">Class = "UILabel"; text = "No longer have this"; ObjectID = "p3r-Zc-XV1";</note>
       </trans-unit>
       <trans-unit id="pXR-yi-ahu.normalTitle" resname="pXR-yi-ahu.normalTitle" restype="string" datatype="x-xib">
@@ -18438,7 +18438,7 @@ aplicación y deja que el mundo lo sepa :)</target>
       </trans-unit>
       <trans-unit id="kJA-A9-hBl.text" resname="kJA-A9-hBl.text" restype="string" datatype="x-xib">
         <source>Currently taking</source>
-        <target>Actualmente tomo</target>
+        <target state="ui-fix">Lo tomo</target>
         <note annotates="source">Class = "UILabel"; text = "Currently taking"; ObjectID = "kJA-A9-hBl";</note>
       </trans-unit>
       <trans-unit id="lb3-gt-lAZ.text" resname="lb3-gt-lAZ.text" restype="string" datatype="x-xib">
@@ -18453,7 +18453,7 @@ aplicación y deja que el mundo lo sepa :)</target>
       </trans-unit>
       <trans-unit id="p3r-Zc-XV1.text" resname="p3r-Zc-XV1.text" restype="string" datatype="x-xib">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
         <note annotates="source">Class = "UILabel"; text = "No longer have this"; ObjectID = "p3r-Zc-XV1";</note>
       </trans-unit>
       <trans-unit id="pXR-yi-ahu.normalTitle" resname="pXR-yi-ahu.normalTitle" restype="string" datatype="x-xib">
@@ -18686,7 +18686,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para ha
       </trans-unit>
       <trans-unit id="sM4-7r-m1B.text" resname="sM4-7r-m1B.text" restype="string" datatype="x-xib">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
         <note annotates="source">Class = "UILabel"; text = "Have this"; ObjectID = "sM4-7r-m1B";</note>
       </trans-unit>
       <trans-unit id="t6Z-G7-MPb.text" resname="t6Z-G7-MPb.text" restype="string" datatype="x-xib">
@@ -18919,7 +18919,7 @@ Nos gustaría que te comunicaras con nosotros al [support@healthtap.com] para ha
       </trans-unit>
       <trans-unit id="sM4-7r-m1B.text" resname="sM4-7r-m1B.text" restype="string" datatype="x-xib">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
         <note annotates="source">Class = "UILabel"; text = "Have this"; ObjectID = "sM4-7r-m1B";</note>
       </trans-unit>
       <trans-unit id="y2b-CY-zAy.normalTitle" resname="y2b-CY-zAy.normalTitle" restype="string" datatype="x-xib">

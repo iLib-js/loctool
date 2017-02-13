@@ -712,11 +712,11 @@
     <body>
       <trans-unit id="216" resname=" Have this" restype="string" datatype="x-objective-c">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
       </trans-unit>
       <trans-unit id="217" resname=" No longer have this" restype="string" datatype="x-objective-c">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
       </trans-unit>
       <trans-unit id="218" resname=" Currently taking" restype="string" datatype="x-objective-c">
         <source>Currently taking</source>
@@ -1309,22 +1309,22 @@
     <body>
       <trans-unit id="328" resname="XoB-sm-Jcb.normalTitle" restype="string" datatype="x-xib">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
         <note annotates="source">Class = "UIButton"; normalTitle = " Have this"; ObjectID = "XoB-sm-Jcb";</note>
       </trans-unit>
       <trans-unit id="329" resname="XoB-sm-Jcb.selectedTitle" restype="string" datatype="x-xib">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target state="ui-fix">Lo tengo</target>
         <note annotates="source">Class = "UIButton"; selectedTitle = " Have this"; ObjectID = "XoB-sm-Jcb";</note>
       </trans-unit>
       <trans-unit id="330" resname="eXo-Lg-cIZ.normalTitle" restype="string" datatype="x-xib">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
         <note annotates="source">Class = "UIButton"; normalTitle = " No longer have this"; ObjectID = "eXo-Lg-cIZ";</note>
       </trans-unit>
       <trans-unit id="331" resname="eXo-Lg-cIZ.selectedTitle" restype="string" datatype="x-xib">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target state="ui-fix">Lo tuve</target>
         <note annotates="source">Class = "UIButton"; selectedTitle = " No longer have this"; ObjectID = "eXo-Lg-cIZ";</note>
       </trans-unit>
     </body>
