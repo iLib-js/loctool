@@ -728,14 +728,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="t/vanessa/refinement_questions.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="633" resname="uitype" restype="string" datatype="x-yaml" x-context="gender">
-        <source>gender</source>
-        <target state="translated">género</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/feelGood/templates/pay_total.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="6" resname="Your total this month" restype="string" datatype="javascript">
