@@ -5688,7 +5688,7 @@
     <body>
       <trans-unit id="1260" resname="r815745762" restype="string" datatype="ruby">
         <source>Sign up</source>
-        <target>Registrarse</target>
+        <target>Regístrate</target>
       </trans-unit>
     </body>
   </file>

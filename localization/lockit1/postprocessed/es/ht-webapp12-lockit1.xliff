@@ -264,7 +264,7 @@
       </trans-unit>
       <trans-unit id="58" resname="Sign up" restype="string" datatype="html">
         <source>Sign up</source>
-        <target>Registrarse</target>
+        <target>Regístrate</target>
       </trans-unit>
     </body>
   </file>
