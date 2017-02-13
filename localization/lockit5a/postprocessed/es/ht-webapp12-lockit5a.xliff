@@ -10713,7 +10713,7 @@
       </trans-unit>
       <trans-unit id="5595" resname="r241346073" restype="string" datatype="x-haml">
         <source>Invalid email and password combination. Try again.</source>
-        <target>Dirección correo electrónico y contraseña inválida. Por favor, intenta otra vez.</target>
+        <target>Dirección de correo electrónico y/o contraseña inválida. Por favor, intenta nuevamente.</target>
       </trans-unit>
       <trans-unit id="5596" resname="r149610645" restype="string" datatype="x-haml">
         <source>Hi, Dr.</source>
