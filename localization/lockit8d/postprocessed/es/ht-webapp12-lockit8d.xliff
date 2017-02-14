@@ -619,7 +619,7 @@
       </trans-unit>
       <trans-unit id="900" resname=":text" restype="string" datatype="x-yaml" x-context="Your Doctor Care-Team@3">
         <source>Doctor accepts you as a patient</source>
-        <target state="translated">Doctor te acepta como paciente</target>
+        <target state="translated">Un doctor te acepta como paciente</target>
       </trans-unit>
       <trans-unit id="901" resname=":text" restype="string" datatype="x-yaml" x-context="Your Doctor Care-Team@4">
         <source>Reminders when a doctor accepts you as a patient</source>

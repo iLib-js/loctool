@@ -23852,7 +23852,7 @@
       </trans-unit>
       <trans-unit id="4667" resname="r97424739" restype="string" datatype="ruby">
         <source>Doctor accepts you as a patient</source>
-        <target state="translated">Doctor te acepta como paciente</target>
+        <target state="translated">Un doctor te acepta como paciente</target>
       </trans-unit>
       <trans-unit id="4668" resname="r250639661" restype="string" datatype="ruby">
         <source>Reminders when a doctor accepts you as a patient</source>

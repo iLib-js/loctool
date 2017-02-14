@@ -12376,7 +12376,7 @@
       </trans-unit>
       <trans-unit id="2627" resname="r97424739" restype="string" datatype="ruby">
         <source>Doctor accepts you as a patient</source>
-        <target>Doctor te acepta como paciente</target>
+        <target>Un doctor te acepta como paciente</target>
       </trans-unit>
       <trans-unit id="2628" resname="r250639661" restype="string" datatype="ruby">
         <source>Reminders when a doctor accepts you as a patient</source>
