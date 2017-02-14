@@ -19956,7 +19956,7 @@
     <body>
       <trans-unit id="4204" resname="If you know, what is your last menstrual period?" restype="string" datatype="html">
         <source>If you know, what is your last menstrual period?</source>
-        <target>Si lo sabes, ¿cuál es tu último periodo menstrual?</target>
+        <target>Si lo sabes, ¿cuál es su último periodo menstrual?</target>
       </trans-unit>
     </body>
   </file>
