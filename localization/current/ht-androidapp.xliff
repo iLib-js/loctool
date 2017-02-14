@@ -22638,7 +22638,7 @@
       </trans-unit>
       <trans-unit id="1748" resname="similar_question_fork_consult_doc" restype="string" datatype="x-android-resource">
         <source>Talk\u00a0to\u00a0a\u00a0doctor\u00a0now</source>
-        <target>现在交流\u00a0to\u00a0a\u00a0doctor\u00a0</target>
+        <target>现在和医生交流</target>
       </trans-unit>
       <trans-unit id="1749" resname="similar_question_help_title" restype="string" datatype="x-android-resource">
         <source>Consult a doctor</source>
@@ -47821,7 +47821,7 @@
       </trans-unit>
       <trans-unit id="762" resname="symptom_triage_disclaimer_additional_info" restype="string" datatype="x-android-resource">
         <source>Additional Information</source>
-        <target>更多信息</target>
+        <target>附加信息</target>
       </trans-unit>
       <trans-unit id="763" resname="leave" restype="string" datatype="x-android-resource">
         <source>Leave</source>
