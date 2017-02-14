@@ -695,7 +695,7 @@
       </trans-unit>
       <trans-unit id="892" resname=":text" restype="string" datatype="x-yaml" x-context="Your Checklists@3">
         <source>Members try your checklist</source>
-        <target state="translated">Miembros prueban tu listado</target>
+        <target state="translated">Miembros aprueban tu listado</target>
       </trans-unit>
       <trans-unit id="905" resname=":text" restype="string" datatype="x-yaml" x-context="Announcements and offers@0">
         <source>Announcements and offers about HealthTap Prime</source>

@@ -23556,7 +23556,7 @@
       </trans-unit>
       <trans-unit id="4593" resname="r525805065" restype="string" datatype="ruby">
         <source>Members try your checklist</source>
-        <target state="translated">Miembros prueban tu listado</target>
+        <target state="translated">Miembros aprueban tu listado</target>
       </trans-unit>
       <trans-unit id="4594" resname="r866395136" restype="string" datatype="ruby">
         <source>Questions for You</source>
