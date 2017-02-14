@@ -280,4 +280,24 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="21" resname="nurse" restype="string" datatype="x-objective-c">
+        <source>nurse</source>
+        <target state="translated">enfermera</target>
+      </trans-unit>
+      <trans-unit id="22" resname="greeter" restype="string" datatype="x-objective-c">
+        <source>greeter</source>
+        <target state="translated">saludador</target>
+      </trans-unit>
+      <trans-unit id="23" resname="health professional" restype="string" datatype="x-objective-c">
+        <source>health professional</source>
+        <target state="translated">profesional de la salud</target>
+      </trans-unit>
+      <trans-unit id="24" resname="staff member" restype="string" datatype="x-objective-c">
+        <source>staff member</source>
+        <target state="translated">miembro de personal</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
