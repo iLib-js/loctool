@@ -39352,11 +39352,11 @@
       </trans-unit>
       <trans-unit id="9164" resname="What ethnicity is {first_name}?" restype="string" datatype="javascript">
         <source>What ethnicity is {first_name}?</source>
-        <target state="translated">¿Qué grupo étnico es {first_name}?</target>
+        <target state="translated">¿A qué grupo étnico pertenece {first_name}?</target>
       </trans-unit>
       <trans-unit id="9165" resname="What ethnicity is this person?" restype="string" datatype="javascript">
         <source>What ethnicity is this person?</source>
-        <target state="translated">¿Qué grupo étnico es esta persona?</target>
+        <target state="translated">¿A qué grupo étnico pertenece esta persona?</target>
       </trans-unit>
       <trans-unit id="9166" resname="What ethnicity are you?" restype="string" datatype="javascript">
         <source>What ethnicity are you?</source>

@@ -30764,11 +30764,11 @@
       </trans-unit>
       <trans-unit id="6473" resname="What ethnicity is {first_name}?" restype="string" datatype="javascript">
         <source>What ethnicity is {first_name}?</source>
-        <target>¿Qué grupo étnico es {first_name}?</target>
+        <target>¿A qué grupo étnico pertenece {first_name}?</target>
       </trans-unit>
       <trans-unit id="6474" resname="What ethnicity is this person?" restype="string" datatype="javascript">
         <source>What ethnicity is this person?</source>
-        <target>¿Qué grupo étnico es esta persona?</target>
+        <target>¿A qué grupo étnico pertenece esta persona?</target>
       </trans-unit>
       <trans-unit id="6475" resname="What is your height and weight?" restype="string" datatype="javascript">
         <source>What is your height and weight?</source>
