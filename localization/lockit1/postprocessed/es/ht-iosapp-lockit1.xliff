@@ -6211,12 +6211,12 @@
         <target>añadió este listado</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id=" agree" resname=" agree" restype="string" datatype="x-objective-c">
+      <trans-unit id=" agree" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
         <target state="accepted">aprueban</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id=" agrees" resname=" agrees" restype="string" datatype="x-objective-c">
+      <trans-unit id=" agrees" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
         <target state="accepted">aprueba</target>
         <note annotates="source">No comment provided by engineer.</note>

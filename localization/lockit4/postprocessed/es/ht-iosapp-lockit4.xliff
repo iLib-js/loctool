@@ -2883,11 +2883,11 @@
         <source>checklist for</source>
         <target>listado para</target>
       </trans-unit>
-      <trans-unit id="544" resname=" agree" restype="string" datatype="x-objective-c">
+      <trans-unit id="544" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
         <target state="accepted">aprueban</target>
       </trans-unit>
-      <trans-unit id="545" resname=" agrees" restype="string" datatype="x-objective-c">
+      <trans-unit id="545" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
         <target state="accepted">aprueba</target>
       </trans-unit>
