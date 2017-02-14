@@ -40864,7 +40864,7 @@
       </trans-unit>
       <trans-unit id="9505" resname="Technical Issues" restype="string" datatype="javascript">
         <source>Technical Issues</source>
-        <target state="translated">Problemas Técnicos</target>
+        <target state="translated">Problemas técnicos</target>
       </trans-unit>
       <trans-unit id="9506" resname="What went wrong with your experience?" restype="string" datatype="javascript">
         <source>What went wrong with your experience?</source>

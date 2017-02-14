@@ -32444,7 +32444,7 @@
       </trans-unit>
       <trans-unit id="6836" resname="Technical Issues" restype="string" datatype="javascript">
         <source>Technical Issues</source>
-        <target>Problemas Técnicos</target>
+        <target>Problemas técnicos</target>
       </trans-unit>
       <trans-unit id="6837" resname="What went wrong with your experience?" restype="string" datatype="javascript">
         <source>What went wrong with your experience?</source>
