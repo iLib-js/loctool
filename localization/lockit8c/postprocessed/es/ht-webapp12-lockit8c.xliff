@@ -24372,7 +24372,7 @@
       </trans-unit>
       <trans-unit id="4795" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
-        <target state="translated">No sexualmente activo</target>
+        <target state="translated">No es sexualmente activa/o</target>
       </trans-unit>
       <trans-unit id="4796" resname="r699411433" restype="string" datatype="ruby">
         <source>Men</source>
