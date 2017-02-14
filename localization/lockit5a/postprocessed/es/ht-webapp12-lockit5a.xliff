@@ -5872,7 +5872,7 @@
       </trans-unit>
       <trans-unit id="9985" resname="r475779675" restype="string" datatype="x-haml">
         <source>Help doctors help you better</source>
-        <target>Ayuda a doctores a ayudarte mejor</target>
+        <target>Ayuda a los médicos a ayudarte mejor</target>
       </trans-unit>
       <trans-unit id="9986" resname="r905385200" restype="string" datatype="x-haml">
         <source>Free text questions answered within 24 hours</source>
