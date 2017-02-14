@@ -33187,7 +33187,7 @@
     <body>
       <trans-unit id="7937" resname="r364116464" restype="string" datatype="ruby">
         <source>Credit card declined</source>
-        <target state="translated">Tarjeta de crédito declinada</target>
+        <target state="translated">Tarjeta de crédito rechazada</target>
       </trans-unit>
     </body>
   </file>
