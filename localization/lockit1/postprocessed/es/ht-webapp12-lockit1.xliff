@@ -30744,7 +30744,7 @@
     <body>
       <trans-unit id="6468" resname="Where is {first_name} located?" restype="string" datatype="javascript">
         <source>Where is {first_name} located?</source>
-        <target>¿Dónde está ubicado {first_name}?</target>
+        <target>¿Cuál es la ubicación de {first_name}?</target>
       </trans-unit>
       <trans-unit id="6469" resname="Where is this person located?" restype="string" datatype="javascript">
         <source>Where is this person located?</source>
