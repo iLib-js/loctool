@@ -2846,41 +2846,37 @@
         <source>{appointment_time} with {doctor_name}</source>
         <target state="translated">{appointment_time} con {doctor_name}</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
-    <body>
       <trans-unit id="10" resname="helpful" restype="string" datatype="x-android-resource">
         <source>Helpful</source>
-        <target>Útil</target>
+        <target state="new">Útil</target>
       </trans-unit>
       <trans-unit id="11" resname="add_photo" restype="string" datatype="x-android-resource">
         <source>Add photo</source>
-        <target>Añadir foto</target>
+        <target state="new">Añadir foto</target>
       </trans-unit>
       <trans-unit id="12" resname="add_condition" restype="string" datatype="x-android-resource">
         <source>Add condition</source>
-        <target>Añadir Condición</target>
+        <target state="new">Añadir Condición</target>
       </trans-unit>
       <trans-unit id="13" resname="add_medication" restype="string" datatype="x-android-resource">
         <source>Add medication</source>
-        <target>Añadir Medicamento</target>
+        <target state="new">Añadir Medicamento</target>
       </trans-unit>
       <trans-unit id="14" resname="add_allergy" restype="string" datatype="x-android-resource">
         <source>Add allergy</source>
-        <target>Añadir alergia</target>
+        <target state="new">Añadir alergia</target>
       </trans-unit>
       <trans-unit id="15" resname="guide_me" restype="string" datatype="x-android-resource">
         <source>Guide me</source>
-        <target>Guíame</target>
+        <target state="new">Guíame</target>
       </trans-unit>
       <trans-unit id="16" resname="share_feelgood_moment" restype="string" datatype="x-android-resource">
         <source>Share FeelGood Moment</source>
-        <target>Comparte un Momento para Sentirse Bien</target>
+        <target state="new">Comparte un Momento para Sentirse Bien</target>
       </trans-unit>
       <trans-unit id="17" resname="review" restype="string" datatype="x-android-resource">
         <source>Review</source>
-        <target>Crítica</target>
+        <target state="new">Crítica</target>
       </trans-unit>
     </body>
   </file>

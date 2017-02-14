@@ -121,7 +121,7 @@
       </trans-unit>
       <trans-unit id="29" resname="r118721288" restype="string" datatype="x-android-resource">
         <source>Please upload a file that is less than 10 MB.</source>
-        <target state="translated">Por favor sube un archivo que sea de menos de 10 MB.</target>
+        <target state="translated">Por favor, sube un archivo que sea de menos de 10 MB.</target>
       </trans-unit>
       <trans-unit id="31" resname="r195753892" restype="string" datatype="x-android-resource">
         <source>{sound_track_id}, Len: %d</source>
@@ -264,7 +264,7 @@
       </trans-unit>
       <trans-unit id="65" resname="r615851205" restype="string" datatype="x-android-resource">
         <source>Okay</source>
-        <target state="translated">Okay</target>
+        <target state="translated">Ok</target>
       </trans-unit>
     </body>
   </file>

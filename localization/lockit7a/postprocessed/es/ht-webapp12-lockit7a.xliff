@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="r305862038" restype="string" datatype="ruby">
         <source>Ask a health question...</source>
-        <target state="translated">Haz una pregunta médica...</target>
+        <target state="translated">Haz una pregunta de salud...</target>
       </trans-unit>
     </body>
   </file>
@@ -348,7 +348,7 @@
       </trans-unit>
       <trans-unit id="75" resname="r134148648" restype="string" datatype="ruby">
         <source>Global Rounds</source>
-        <target state="translated">Rondas Globales</target>
+        <target state="translated">Global Rounds</target>
       </trans-unit>
     </body>
   </file>
@@ -488,7 +488,7 @@
     <body>
       <trans-unit id="122" resname="r1035813495" restype="string" datatype="ruby">
         <source>Get help from a doctor now</source>
-        <target state="translated">Obtén ayuda de un médico ahora</target>
+        <target state="translated">Obtén ayuda de un doctor ahora</target>
       </trans-unit>
       <trans-unit id="123" resname="r265985830" restype="string" datatype="ruby">
         <source>What is your question for doctors?</source>
@@ -536,7 +536,7 @@
     <body>
       <trans-unit id="147" resname="r934090694" restype="string" datatype="ruby">
         <source>Type a question, topic, or doctor name</source>
-        <target state="translated">Escribe una pregunta, tema o nombre del médico</target>
+        <target state="translated">Escribe una pregunta, tema o nombre del doctor</target>
       </trans-unit>
     </body>
   </file>
@@ -697,7 +697,7 @@
     <body>
       <trans-unit id="181" resname="r625370133" restype="string" datatype="ruby">
         <source>Doctor Care-Team</source>
-        <target state="translated">Care-Team &#40;Equipo de atención&#41;</target>
+        <target state="translated">Equipo de Atención Médico</target>
       </trans-unit>
     </body>
   </file>
@@ -745,7 +745,7 @@
       </trans-unit>
       <trans-unit id="2403" resname="r436007555" restype="string" datatype="ruby">
         <source>Discover new, highly rated local doctors</source>
-        <target state="translated">Descrubre dcotores localesnuevos, altamente calificados.</target>
+        <target state="translated">Descubre doctores locales nuevos y altamente calificados.</target>
       </trans-unit>
     </body>
   </file>
@@ -817,7 +817,7 @@
     <body>
       <trans-unit id="243" resname="r796744370" restype="string" datatype="ruby">
         <source>Sign up today</source>
-        <target state="translated">Registrate hoy</target>
+        <target state="translated">Regístrate hoy</target>
       </trans-unit>
     </body>
   </file>
@@ -989,7 +989,7 @@
       </trans-unit>
       <trans-unit id="276" resname="r266668308" restype="string" datatype="ruby">
         <source>Personalized feed based on your health interests</source>
-        <target state="translated">Feed personalizado basado en tus intereses de salud</target>
+        <target state="translated">Fuente personalizada basada en tus intereses de salud</target>
       </trans-unit>
     </body>
   </file>
@@ -1018,14 +1018,6 @@
       <trans-unit id="280" resname="r1037103791" restype="string" datatype="ruby">
         <source>Subscribe now</source>
         <target state="translated">Suscríbete ahora</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="app/views/general_mailer/member_lowrating_2_star_consult.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="281" resname="r3013966" restype="string" datatype="ruby">
-        <source>.</source>
-        <target state="translated">.</target>
       </trans-unit>
     </body>
   </file>
@@ -1278,14 +1270,6 @@
       <trans-unit id="445" resname="r258267076" restype="string" datatype="ruby">
         <source>DrRutledge@healthtap.com</source>
         <target state="translated">DrRutledge@healthtap.com</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="app/views/general_mailer/doctor_prime_app_part2_approved.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="483" resname="r546801273" restype="string" datatype="ruby">
-        <source>.</source>
-        <target state="translated">.</target>
       </trans-unit>
     </body>
   </file>
@@ -1577,7 +1561,7 @@
     <body>
       <trans-unit id="798" resname="r715406547" restype="string" datatype="ruby">
         <source>billion</source>
-        <target state="translated">billón</target>
+        <target state="translated">billones</target>
       </trans-unit>
     </body>
   </file>
@@ -1605,7 +1589,7 @@
       </trans-unit>
       <trans-unit id="802" resname="r480997426" restype="string" datatype="ruby">
         <source>Wrong code. Please try again:</source>
-        <target state="translated">Código equivocado. Por favor intenta de nuevo:</target>
+        <target state="translated">Código equivocado. Por favor, intenta de nuevo:</target>
       </trans-unit>
     </body>
   </file>
@@ -2137,7 +2121,7 @@
     <body>
       <trans-unit id="1112" resname="We look forward to working with you! If you have any questions, please contact us at &lt;a href=&quot;mailto:ambassador@healthtap.com&quot;&gt;ambassador@healthtap.com&lt;/a&gt;." restype="string" datatype="html">
         <source>We look forward to working with you! If you have any questions, please contact us at &lt;a href=&quot;mailto:ambassador@healthtap.com&quot;&gt;ambassador@healthtap.com&lt;/a&gt;.</source>
-        <target state="translated">¡Esperamos trabajar contigo! Si tienes alguna pregunta, por favor contáctanos al &lt;a href=&quot;mailto:ambassador@healthtap.com&quot;&gt;ambassador@healthtap.com&lt;/a&gt;.</target>
+        <target state="translated">¡Esperamos trabajar contigo! Si tienes alguna pregunta, por favor, contáctanos al &lt;a href=&quot;mailto:ambassador@healthtap.com&quot;&gt;ambassador@healthtap.com&lt;/a&gt;.</target>
       </trans-unit>
     </body>
   </file>
@@ -2145,7 +2129,7 @@
     <body>
       <trans-unit id="1113" resname="We’re excited to work with you! If you have any questions, please contact us at &lt;a href=&quot;mailto:ambassador@healthtap.com&quot;&gt;ambassador@healthtap.com&lt;/a&gt;." restype="string" datatype="html">
         <source>We’re excited to work with you! If you have any questions, please contact us at &lt;a href=&quot;mailto:ambassador@healthtap.com&quot;&gt;ambassador@healthtap.com&lt;/a&gt;.</source>
-        <target state="translated">¡Estamos emocionados de trabajar contigo! Si tienes alguna pregunta, por favor contáctanos al &lt;a href=&quot;mailto:ambassador@healthtap.com&quot;&gt;ambassador@healthtap.com&lt;/a&gt;.</target>
+        <target state="translated">¡Estamos emocionados de trabajar contigo! Si tienes alguna pregunta, por favor, contáctanos al &lt;a href=&quot;mailto:ambassador@healthtap.com&quot;&gt;ambassador@healthtap.com&lt;/a&gt;.</target>
       </trans-unit>
     </body>
   </file>
@@ -2186,7 +2170,7 @@
     <body>
       <trans-unit id="1120" resname="Please wait &lt;span class=&quot;loading-dots&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Please wait &lt;span class=&quot;loading-dots&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;</source>
-        <target state="translated">Por favor espera &lt;span class=&quot;loading-dots&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;</target>
+        <target state="translated">Por favor, espera &lt;span class=&quot;loading-dots&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="1122" resname="One moment &lt;span class=&quot;loading-dots&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>One moment &lt;span class=&quot;loading-dots&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;</source>
@@ -2318,7 +2302,7 @@
     <body>
       <trans-unit id="1137" resname="Show them love and nominate them for a &quot;Top Doctor 2016 award&quot;!" restype="string" datatype="html">
         <source>Show them love and nominate them for a &quot;Top Doctor 2016 award&quot;!</source>
-        <target state="translated">¡Muéstrales amor y nomínalos para un &quot;Premio al Mejor Médico de 2016&quot;!</target>
+        <target state="translated">¡Muéstrales amor y nomínalos para un &quot;Premio al Mejor Médico del 2016&quot;!</target>
       </trans-unit>
     </body>
   </file>
@@ -2384,7 +2368,7 @@
     <body>
       <trans-unit id="1143" resname="Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an &quot;addendum note&quot; to this consult using the chat." restype="string" datatype="html">
         <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an &quot;addendum note&quot; to this consult using the chat.</source>
-        <target state="translated">Por favor revisa los resultados, proporciona tu interpretación de estos resultados, y asesora al paciente sobre los siguientes pasos. Para hacerlo, sólo deja una &quot;nota anexo&quot; a esta consulta utilizando el chat.</target>
+        <target state="translated">Por favor, revisa los resultados, proporciona tu interpretación de estos resultados, y asesora al paciente sobre los siguientes pasos. Para hacerlo, sólo deja una &quot;nota anexo&quot; a esta consulta utilizando el chat.</target>
       </trans-unit>
     </body>
   </file>
@@ -2604,7 +2588,7 @@
       </trans-unit>
       <trans-unit id="1182" resname="Each answer you author helps millions with the same question. We calculate &quot;people helped&quot; based on the number of times your answers are thanked, agreed, or viewed by people and doctors worldwide." restype="string" datatype="html">
         <source>Each answer you author helps millions with the same question. We calculate &quot;people helped&quot; based on the number of times your answers are thanked, agreed, or viewed by people and doctors worldwide.</source>
-        <target state="translated">Cada respuesta que escribas ayuda a millones con la misma pregunta. Calculamos a las &quot;personas ayudadas&quot; con base al número de veces que tus respuestas sean agradecidas, acordadas, o vistas por personas y médicos a nivel mundial.</target>
+        <target state="translated">Cada respuesta que escribas ayuda a millones con la misma pregunta. Calculamos a las &quot;personas ayudadas&quot; con base al número de veces que tus respuestas sean agradecidas, acordadas, o vistas por personas y doctores a nivel mundial.</target>
       </trans-unit>
       <trans-unit id="1183" resname="Answer &lt;span style=&quot;font-weight: 600;&quot;&gt;&lt;%= &#40;bonus_bar.answers_target - bonus_bar.answers_posted&#41; %&gt;&lt;/span&gt; more questions to" restype="string" datatype="html">
         <source>Answer &lt;span style=&quot;font-weight: 600;&quot;&gt;&lt;%= &#40;bonus_bar.answers_target - bonus_bar.answers_posted&#41; %&gt;&lt;/span&gt; more questions to</source>
@@ -2676,11 +2660,11 @@
     <body>
       <trans-unit id="1200" resname="You have no doctor recommendations yet. &lt;a class=&quot;recommendButtonRequest&quot;&gt;Request a recommendation &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>You have no doctor recommendations yet. &lt;a class=&quot;recommendButtonRequest&quot;&gt;Request a recommendation &amp;raquo;&lt;/a&gt;</source>
-        <target state="translated">Aún no tienes ninguna recomendación de médicos. &lt;a class=&quot;recommendButtonRequest&quot;&gt;Solicitar una recomendación &amp;raquo;&lt;/a&gt;</target>
+        <target state="translated">Aún no tienes ninguna recomendación de doctores. &lt;a class=&quot;recommendButtonRequest&quot;&gt;Solicitar una recomendación &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="1201" resname="This doctor doesn&apos;t have any recommendations yet. &lt;a class=&quot;recommendButtonAccolades&quot;&gt;Share one now &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>This doctor doesn&apos;t have any recommendations yet. &lt;a class=&quot;recommendButtonAccolades&quot;&gt;Share one now &amp;raquo;&lt;/a&gt;</source>
-        <target state="translated">Este médico aún no tiene recomendaciones. &lt;a class=&quot;recommendButtonAccolades&quot;&gt;Comparte una ahora &amp;raquo;&lt;/a&gt;</target>
+        <target state="translated">Este doctor aún no tiene recomendaciones. &lt;a class=&quot;recommendButtonAccolades&quot;&gt;Comparte una ahora &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -2764,7 +2748,7 @@
       </trans-unit>
       <trans-unit id="1217" resname="If you would like us to correct or update any information in this listing, please send us an email to &lt;a href=&quot;mailto:expertsupport@healthtap.com&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;" restype="string" datatype="html">
         <source>If you would like us to correct or update any information in this listing, please send us an email to &lt;a href=&quot;mailto:expertsupport@healthtap.com&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;</source>
-        <target state="translated">Si te gustaría que corrigiéramos cualquier información en este listado, por favor envíanos un correo electrónico a &lt;a href=&quot;mailto:expertsupport@healthtap.com&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;</target>
+        <target state="translated">Si te gustaría que corrigiéramos cualquier información en este listado, por favor, envíanos un correo electrónico a &lt;a href=&quot;mailto:expertsupport@healthtap.com&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -2912,7 +2896,7 @@
     <body>
       <trans-unit id="1256" resname="Get known! &quot;Known fors&quot; are the areas of your practice you want to highlight. Easily become the top doctor locally, regionally or nationally." restype="string" datatype="html">
         <source>Get known! &quot;Known fors&quot; are the areas of your practice you want to highlight. Easily become the top doctor locally, regionally or nationally.</source>
-        <target state="translated">¡Se reconocido! Los “Reconocimientos” son las áreas de tu práctica que deseas destacar. Conviértete fácilmente en un mejor médico a nivel local, regional o nacional.</target>
+        <target state="translated">¡Se reconocido! Los “Reconocimientos” son las áreas de tu práctica que deseas destacar. Conviértete fácilmente en el mejor doctor a nivel local, regional o nacional.</target>
       </trans-unit>
     </body>
   </file>
@@ -3040,7 +3024,7 @@
     <body>
       <trans-unit id="1290" resname="Doctor Recommendations&amp;nbsp;&#40;&lt;span id=&quot;docRecCount&quot;&gt;&lt;/span&gt;&#41;" restype="string" datatype="html">
         <source>Doctor Recommendations&amp;nbsp;&#40;&lt;span id=&quot;docRecCount&quot;&gt;&lt;/span&gt;&#41;</source>
-        <target state="translated">Recomendaciones del Médico&amp;nbsp;&#40;&lt;span id=&quot;docRecCount&quot;&gt;&lt;/span&gt;&#41;</target>
+        <target state="translated">Recomendaciones de Doctores&amp;nbsp;&#40;&lt;span id=&quot;docRecCount&quot;&gt;&lt;/span&gt;&#41;</target>
       </trans-unit>
       <trans-unit id="1291" resname="Patient Recommendations&amp;nbsp;&#40;&lt;span id=&quot;patientRecCount&quot;&gt;&lt;/span&gt;&#41;" restype="string" datatype="html">
         <source>Patient Recommendations&amp;nbsp;&#40;&lt;span id=&quot;patientRecCount&quot;&gt;&lt;/span&gt;&#41;</source>
@@ -3123,7 +3107,7 @@
     <body>
       <trans-unit id="1306" resname="Don&apos;t see your doctor on this list? &lt;a class=&quot;invite_doctor&quot;&gt;Invite them now.&lt;/a&gt;" restype="string" datatype="html">
         <source>Don&apos;t see your doctor on this list? &lt;a class=&quot;invite_doctor&quot;&gt;Invite them now.&lt;/a&gt;</source>
-        <target state="translated">¿No ves a tu médico en esta lista? &lt;a class=&quot;invite_doctor&quot;&gt;Invítalos ahora.&lt;/a&gt;</target>
+        <target state="translated">¿No ves a tu doctor en esta lista? &lt;a class=&quot;invite_doctor&quot;&gt;Invítalos ahora.&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3181,7 +3165,7 @@
     <body>
       <trans-unit id="1313" resname="Want some background details while you wait? There are thousands of doctors ready to answer your questions.&lt;br&gt;&lt;a id=&quot;quickAskLayer&quot;&gt;Ask &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Want some background details while you wait? There are thousands of doctors ready to answer your questions.&lt;br&gt;&lt;a id=&quot;quickAskLayer&quot;&gt;Ask &amp;raquo;&lt;/a&gt;</source>
-        <target state="translated">¿Deseas algunos detalles de antecedentes mientras esperas? Hay miles de médicos listos para responder tus preguntas.&lt;br&gt;&lt;a id=&quot;quickAskLayer&quot;&gt;Preguntar &amp;raquo;&lt;/a&gt;</target>
+        <target state="translated">¿Deseas algunos detalles de antecedentes mientras esperas? Hay miles de doctores listos para responder tus preguntas.&lt;br&gt;&lt;a id=&quot;quickAskLayer&quot;&gt;Preguntar &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3190,7 +3174,7 @@
       <trans-unit id="1314" resname="Ask Doctors Any Question  &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask Doctors Any Question
 		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
-        <target state="translated">Haz cualquier pregunta a los médicos
+        <target state="translated">Haz Cualquier Pregunta a los Doctores
 		&lt;span class=&quot;sub_title&quot;&gt;en cualquier momento. En cualquier lugar.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;Gratis.&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="1315" resname="improve your question to get a more personalized answer." restype="string" datatype="html">
@@ -3208,7 +3192,7 @@
       <trans-unit id="1316" resname="Ask doctors any question  &lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask doctors any question
 		&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere. &lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
-        <target state="translated">Pregunta a los médicos cualquier pregunta
+        <target state="translated">Haz cualquier pregunta a los doctores
 		&lt;span class=&quot;sub_title&quot;&gt;en cualquier momento. En cualquier lugar. &lt;span style=&quot;font-weight: bold&quot;&gt;Gratis.&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
     </body>
@@ -3442,7 +3426,7 @@
       </trans-unit>
       <trans-unit id="1342" resname="Doctors&lt;span style=&quot;color:&#35;999;font-weight: normal;font-size: 11px; margin-left: 5px;&quot;&gt;or request from your &lt;a onclick=&quot;App.session.closePanels&#40;&#41;;&quot; href=&quot;&lt;%App.session.device == &apos;ipad&apos; ?&apos;&apos;:&apos;/&apos;%&gt;&#35;expert/doctordirectory&quot; style=&quot;font-weight: normal;&quot;&gt;Doctor Network »&lt;/a&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Doctors&lt;span style=&quot;color:&#35;999;font-weight: normal;font-size: 11px; margin-left: 5px;&quot;&gt;or request from your &lt;a onclick=&quot;App.session.closePanels&#40;&#41;;&quot; href=&quot;&lt;%App.session.device == &apos;ipad&apos; ?&apos;&apos;:&apos;/&apos;%&gt;&#35;expert/doctordirectory&quot; style=&quot;font-weight: normal;&quot;&gt;Doctor Network »&lt;/a&gt;&lt;/span&gt;</source>
-        <target state="translated">Médicos&lt;span style=&quot;color:&#35;999;font-weight: normal;font-size: 11px; margin-left: 5px;&quot;&gt;o solicita desde tu &lt;a onclick=&quot;App.session.closePanels&#40;&#41;;&quot; href=&quot;&lt;%App.session.device == &apos;ipad&apos; ?&apos;&apos;:&apos;/&apos;%&gt;&#35;expert/doctordirectory&quot; style=&quot;font-weight: normal;&quot;&gt;Red de Médicos »&lt;/a&gt;&lt;/span&gt;</target>
+        <target state="translated">Doctores&lt;span style=&quot;color:&#35;999;font-weight: normal;font-size: 11px; margin-left: 5px;&quot;&gt;o solicita desde tu &lt;a onclick=&quot;App.session.closePanels&#40;&#41;;&quot; href=&quot;&lt;%App.session.device == &apos;ipad&apos; ?&apos;&apos;:&apos;/&apos;%&gt;&#35;expert/doctordirectory&quot; style=&quot;font-weight: normal;&quot;&gt;Red de Doctores»&lt;/a&gt;&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="1343" resname="We would love to invite patients on your behalf to connect with you on HealthTap! Send us a list of patient emails at &lt;a href=&quot;mailto:expertsupport@healthtap.com&quot;&gt;expertsupport@healthtap.com&lt;/a&gt; or contact us to learn more." restype="string" datatype="html">
         <source>We would love to invite patients on your behalf to connect with you on HealthTap! Send us a list of patient emails at &lt;a href=&quot;mailto:expertsupport@healthtap.com&quot;&gt;expertsupport@healthtap.com&lt;/a&gt; or contact us to learn more.</source>
@@ -3512,7 +3496,7 @@
         <source>Start a Private Conversation
 		&lt;span class=&quot;sub_title&quot;&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target state="translated">Comienza una Conversación Privada
-		&lt;span class=&quot;sub_title&quot;&gt;Haz una pregunta más detallada a un médico de tu elección aquí, en un entorno privado uno a uno protegido por HIPAA, por una pequeña tarifa. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</target>
+		&lt;span class=&quot;sub_title&quot;&gt;Haz una pregunta más detallada a un doctor de tu elección aquí, en un entorno privado uno a uno protegido por HIPAA, por una pequeña tarifa. Añade imágenes, escaneos o documentos de soporte para una respuesta aún más personalizada .&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3529,8 +3513,8 @@
       <trans-unit id="1356" resname="ASK A DOCTOR A QUESTION  &lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
         <source>ASK A DOCTOR A QUESTION
 		&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
-        <target state="translated">HAZ UNA PREGUNTA AL MÉDICO
-		&lt;span class=&quot;sub_title&quot;&gt;Obtén ayuda directa de cualquier médico HealthTap de tu elección utilizando los Créditos HealthTap para pagar al médico por su tiempo.&lt;/span&gt;</target>
+        <target state="translated">HAZ UNA PREGUNTA A UN DOCTOR
+		&lt;span class=&quot;sub_title&quot;&gt;Obtén ayuda directa de cualquier doctor deHealthTap de tu elección utilizando los Créditos HealthTap para pagarle al doctor por su tiempo.&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3538,7 +3522,7 @@
     <body>
       <trans-unit id="1358" resname="There was an issue verifying your Payoneer account. Please visit Payoneer&apos;s &lt;a href=&quot;https://payoneer.custhelp.com/app/Contact_us&quot;&gt;Contact page&lt;/a&gt; to get in touch with Payoneer&apos;s customer care team. Please remember that all deposits from HealthTap are subject to a $0.60 processing fee from Payoneer, which is simply withheld from your deposited earnings." restype="string" datatype="html">
         <source>There was an issue verifying your Payoneer account. Please visit Payoneer&apos;s &lt;a href=&quot;https://payoneer.custhelp.com/app/Contact_us&quot;&gt;Contact page&lt;/a&gt; to get in touch with Payoneer&apos;s customer care team. Please remember that all deposits from HealthTap are subject to a $0.60 processing fee from Payoneer, which is simply withheld from your deposited earnings.</source>
-        <target state="translated">Hubo un problema al verificar tu cuenta Payoneer. Por favor visita la &lt;a href=&quot;https://payoneer.custhelp.com/app/Contact_us&quot;&gt;Página de Contacto de Payoneer&lt;/a&gt; para ponerte en contacto con el equipo de atención al cliente de Payoneer. Por favor recuerda que todos los depósitos de HealthTap están sujetos a una tarifa de procesamiento de $0.60 por parte de Payoneer, la cual sencillamente es retenida de tus ganancias depositadas.</target>
+        <target state="translated">Hubo un problema al verificar tu cuenta Payoneer. Por favor, visita la &lt;a href=&quot;https://payoneer.custhelp.com/app/Contact_us&quot;&gt;Página de Contacto de Payoneer&lt;/a&gt; para ponerte en contacto con el equipo de atención al cliente de Payoneer. Por favor, recuerda que todos los depósitos de HealthTap están sujetos a una tarifa de procesamiento de $0.60 por parte de Payoneer, la cual sencillamente es retenida de tus ganancias depositadas.</target>
       </trans-unit>
       <trans-unit id="1359" resname="After you sign up and are verified for for a Payoneer account using the &quot;Complete Payment Info&quot; button above, the button will reflect your verified status and become inactive. All deposits from HealthTap are subject to a $0.60 processing fee from Payoneer, which is simply withheld from your deposited earnings." restype="string" datatype="html">
         <source>After you sign up and are verified for for a Payoneer account using the &quot;Complete Payment Info&quot; button above, the button will reflect your verified status and become inactive. All deposits from HealthTap are subject to a $0.60 processing fee from Payoneer, which is simply withheld from your deposited earnings.</source>
@@ -3618,7 +3602,7 @@
         <source>This question has been sent to doctors in the
 					&lt;%= App.session.referSpecialty %&gt;
 					field</source>
-        <target state="translated">Esta pregunta ha sido enviada a los médicos en el campo de
+        <target state="translated">Esta pregunta ha sido enviada a los doctores en el campo de
 					&lt;%= App.session.referSpecialty %&gt;</target>
       </trans-unit>
     </body>
@@ -3627,7 +3611,7 @@
     <body>
       <trans-unit id="1364" resname="Don&apos;t see your doctor here? &lt;a class=&quot;invite_doctor&quot;&gt;Invite your doctor!&lt;/a&gt;" restype="string" datatype="html">
         <source>Don&apos;t see your doctor here? &lt;a class=&quot;invite_doctor&quot;&gt;Invite your doctor!&lt;/a&gt;</source>
-        <target state="translated">¿No ves a tu médico aquí? &lt;a class=&quot;invite_doctor&quot;&gt;¡Invita a tu médico!&lt;/a&gt;</target>
+        <target state="translated">¿No ves a tu doctor aquí? &lt;a class=&quot;invite_doctor&quot;&gt;¡Invita a tu doctor!&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3635,7 +3619,7 @@
     <body>
       <trans-unit id="1365" resname="Are you a doctor? &lt;a href=&quot;&#35;expert_sign_up&quot;&gt;Sign up here&lt;/a&gt;" restype="string" datatype="html">
         <source>Are you a doctor? &lt;a href=&quot;&#35;expert_sign_up&quot;&gt;Sign up here&lt;/a&gt;</source>
-        <target state="translated">¿Eres médico? &lt;a href=&quot;&#35;expert_sign_up&quot;&gt;Regístrate aquí&lt;/a&gt;</target>
+        <target state="translated">¿Eres doctor? &lt;a href=&quot;&#35;expert_sign_up&quot;&gt;Regístrate aquí&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="1366" resname="Already have an account? &lt;a id=&quot;gotoLogin&quot; href=&quot;/people/sign_in&quot;&gt;Log in &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Already have an account? &lt;a id=&quot;gotoLogin&quot; href=&quot;/people/sign_in&quot;&gt;Log in &amp;raquo;&lt;/a&gt;</source>
@@ -3699,7 +3683,7 @@
       </trans-unit>
       <trans-unit id="1379" resname="Towards the end: &lt;span class=&quot;italic&quot;&gt;&quot;Dr. Joe Smith is a Distinguished Medical Expert on HealthTap &#40;www.healthtap.com&#41;&quot;&lt;/span&gt;" restype="string" datatype="html">
         <source>Towards the end: &lt;span class=&quot;italic&quot;&gt;&quot;Dr. Joe Smith is a Distinguished Medical Expert on HealthTap &#40;www.healthtap.com&#41;&quot;&lt;/span&gt;</source>
-        <target state="translated">Hasta el final: &lt;span class=&quot;italic&quot;&gt;&quot;Dr. Joe Smith es un Distinguido experto médico en HealthTap &#40;www.healthtap.com&#41;&quot;&lt;/span&gt;</target>
+        <target state="translated">Hasta el final: &lt;span class=&quot;italic&quot;&gt;&quot;Dr. Joe Smith es un Distinguido Experto Médico en HealthTap &#40;www.healthtap.com&#41;&quot;&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3707,11 +3691,11 @@
     <body>
       <trans-unit id="1380" resname="As a doctor, your vote will count toward this doctor&apos;s &quot;quality of care&quot; score." restype="string" datatype="html">
         <source>As a doctor, your vote will count toward this doctor&apos;s &quot;quality of care&quot; score.</source>
-        <target state="translated">Como médico, tu voto contará para el puntaje de &quot;calidad de atención&quot; de este médico.</target>
+        <target state="translated">Como doctor, tu voto contará para el puntaje de &quot;calidad de atención&quot; de este doctor.</target>
       </trans-unit>
       <trans-unit id="1381" resname="As a patient, your vote will count toward this doctor&apos;s &quot;bedside manner&quot; score." restype="string" datatype="html">
         <source>As a patient, your vote will count toward this doctor&apos;s &quot;bedside manner&quot; score.</source>
-        <target state="translated">Como médico, tu voto contará para el puntaje de &quot;comportamiento para con los pacientes&quot; de este médico.</target>
+        <target state="translated">Como doctor, tu voto contará para el puntaje de &quot;comportamiento para con los pacientes&quot; de este doctor.</target>
       </trans-unit>
       <trans-unit id="1382" resname="Vote for All&lt;span style=&quot;margin-left:2px; &quot;&gt;!&lt;/span&gt;" restype="string" datatype="html">
         <source>Vote for All&lt;span style=&quot;margin-left:2px; &quot;&gt;!&lt;/span&gt;</source>
@@ -3723,7 +3707,7 @@
     <body>
       <trans-unit id="1384" resname="Doctors you add as &quot;Your Doctor&quot; or private message can access your entire profile" restype="string" datatype="html">
         <source>Doctors you add as &quot;Your Doctor&quot; or private message can access your entire profile</source>
-        <target state="translated">Los médicos que agregues como &quot;Tu Médico&quot; o por mensaje privado, pueden tener acceso a tu perfil completo</target>
+        <target state="translated">Los doctores que agregues como &quot;Tu Doctor&quot; o por mensaje privado, pueden tener acceso a tu perfil completo</target>
       </trans-unit>
     </body>
   </file>
@@ -3731,7 +3715,7 @@
     <body>
       <trans-unit id="1388" resname="This is how your &lt;a href=&quot;/experts/&lt;%= id %&gt;&quot;&gt;Virtual Practice&lt;/a&gt; profile currently looks to millions who search for you and your expertise online. Please take &lt;b&gt;1 minute&lt;/b&gt; to review and update your information to make sure it is up-to-date and accurate." restype="string" datatype="html">
         <source>This is how your &lt;a href=&quot;/experts/&lt;%= id %&gt;&quot;&gt;Virtual Practice&lt;/a&gt; profile currently looks to millions who search for you and your expertise online. Please take &lt;b&gt;1 minute&lt;/b&gt; to review and update your information to make sure it is up-to-date and accurate.</source>
-        <target state="translated">Así es como tu perfil de &lt;a href=&quot;/experts/&lt;%= id %&gt;&quot;&gt;Práctica Virtual&lt;/a&gt; luce actualmente a millones que te busquen a ti y a tu experiencia en línea. Por favor, tómate &lt;b&gt;1 minuto&lt;/b&gt; para revisar y actualizar tu información para asegurarte que sea precisa y esté al día.</target>
+        <target state="translated">Así es como tu perfil de &lt;a href=&quot;/experts/&lt;%= id %&gt;&quot;&gt;Consultorio Virtual&lt;/a&gt; luce actualmente a millones que te busquen a ti y a tu experiencia en línea. Por favor, tómate &lt;b&gt;1 minuto&lt;/b&gt; para revisar y actualizar tu información para asegurarte que sea precisa y esté al día.</target>
       </trans-unit>
     </body>
   </file>
@@ -4189,7 +4173,7 @@
     <body>
       <trans-unit id="1461" resname="If you would like us to correct or update any information in this listing, please send us an email to &lt;a href=&quot;&quot; class=&quot;mail_to_h&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;" restype="string" datatype="html">
         <source>If you would like us to correct or update any information in this listing, please send us an email to &lt;a href=&quot;&quot; class=&quot;mail_to_h&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;</source>
-        <target state="translated">Si te gustaría que corrigiéramos o actualizaramos cualquier información en este listado, por favor envíanos un correo electrónico a &lt;a href=&quot;&quot; class=&quot;mail_to_h&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;</target>
+        <target state="translated">Si te gustaría que corrigiéramos o actualizaramos cualquier información en este listado, por favor, envíanos un correo electrónico a &lt;a href=&quot;&quot; class=&quot;mail_to_h&quot;&gt;expertsupport@healthtap.com&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="1462" resname="BASIC INFORMATION &lt;a class=&quot;edit_name_h&quot; style=&quot;margin-left: 20px&quot;&gt;Edit&lt;/a&gt;" restype="string" datatype="html">
         <source>BASIC INFORMATION &lt;a class=&quot;edit_name_h&quot; style=&quot;margin-left: 20px&quot;&gt;Edit&lt;/a&gt;</source>
@@ -5283,7 +5267,7 @@
       </trans-unit>
       <trans-unit id="1652" resname="Login" restype="string" datatype="javascript">
         <source>Login</source>
-        <target state="translated">Ingresar</target>
+        <target state="translated">Iniciar Sesión</target>
       </trans-unit>
       <trans-unit id="1653" resname="Update" restype="string" datatype="javascript">
         <source>Update</source>
@@ -5331,7 +5315,7 @@
       </trans-unit>
       <trans-unit id="1666" resname="You will no longer incur future subscription charges until you choose to resubscribe. Please take a moment to let us know why you are downgrading." restype="string" datatype="javascript">
         <source>You will no longer incur future subscription charges until you choose to resubscribe. Please take a moment to let us know why you are downgrading.</source>
-        <target state="translated">Ya no podrás incurrir cargos futuros por suscripción, a menos que elijas volver a suscribirte. Por favor toma un momento para hacernos saber por qué estás bajando de categoría.</target>
+        <target state="translated">Ya no podrás incurrir cargos futuros por suscripción, a menos que elijas volver a suscribirte. Por favor, toma un momento para hacernos saber por qué estás bajando de categoría.</target>
       </trans-unit>
       <trans-unit id="1667" resname="Downgrade" restype="string" datatype="javascript">
         <source>Downgrade</source>
@@ -5395,11 +5379,11 @@
     <body>
       <trans-unit id="1677" resname="SUBSCRIBE" restype="string" datatype="javascript">
         <source>SUBSCRIBE</source>
-        <target state="translated">SUSCRIBIR</target>
+        <target state="translated">SUSCRIBIRSE</target>
       </trans-unit>
       <trans-unit id="1678" resname="SUBSCRIBED" restype="string" datatype="javascript">
         <source>SUBSCRIBED</source>
-        <target state="translated">SUSCRIBIÓ</target>
+        <target state="translated">SUSCRITO</target>
       </trans-unit>
     </body>
   </file>
@@ -5407,7 +5391,7 @@
     <body>
       <trans-unit id="1679" resname="thanked" restype="string" datatype="javascript">
         <source>thanked</source>
-        <target state="translated">agradecido</target>
+        <target state="translated">agradeció</target>
       </trans-unit>
       <trans-unit id="1680" resname="Subscribe" restype="string" datatype="javascript">
         <source>Subscribe</source>
@@ -5825,7 +5809,7 @@
     <body>
       <trans-unit id="1776" resname="Please don&apos;t include a followup question in your note. To do so, {link_tag_start}send a private message{link_tag_end} to the doctor." restype="string" datatype="javascript">
         <source>Please don&apos;t include a followup question in your note. To do so, {link_tag_start}send a private message{link_tag_end} to the doctor.</source>
-        <target state="translated">Por favor no incluyas una pregunta de seguimiento en tu nota. Para hacerlo, {link_tag_start}envía un mensaje privado{link_tag_end} al médico.</target>
+        <target state="translated">Por favor, no incluyas una pregunta de seguimiento en tu nota. Para hacerlo, {link_tag_start}envía un mensaje privado{link_tag_end} al doctor.</target>
       </trans-unit>
     </body>
   </file>
@@ -5905,7 +5889,7 @@
     <body>
       <trans-unit id="1791" resname="Sign Up" restype="string" datatype="javascript">
         <source>Sign Up</source>
-        <target state="translated">Registrarse</target>
+        <target state="translated">Regístrate</target>
       </trans-unit>
       <trans-unit id="1792" resname="Log in &amp;raquo;" restype="string" datatype="javascript">
         <source>Log in &amp;raquo;</source>
@@ -5913,7 +5897,7 @@
       </trans-unit>
       <trans-unit id="1793" resname="Sign up" restype="string" datatype="javascript">
         <source>Sign up</source>
-        <target state="translated">Registrarse</target>
+        <target state="translated">Regístrate</target>
       </trans-unit>
     </body>
   </file>
@@ -5975,7 +5959,7 @@
       </trans-unit>
       <trans-unit id="1802" resname="Immunizations" restype="string" datatype="javascript">
         <source>Immunizations</source>
-        <target state="translated">Inmunizaciones</target>
+        <target state="translated">Vacunas</target>
       </trans-unit>
       <trans-unit id="1803" resname="Pharmacy Information" restype="string" datatype="javascript">
         <source>Pharmacy Information</source>
@@ -6621,7 +6605,7 @@
     <body>
       <trans-unit id="1928" resname="To send your thanks to {last_name} and receive follow-up doctor answers and tips for this question, please share your email:" restype="string" datatype="javascript">
         <source>To send your thanks to {last_name} and receive follow-up doctor answers and tips for this question, please share your email:</source>
-        <target state="translated">Para enviar tus agradecimientos a {last_name} y recibir respuestas de seguimiento y consejos del médico para esta pregunta, por favor comparte tu correo electrónico:</target>
+        <target state="translated">Para enviar tus agradecimientos a {last_name} y recibir respuestas de seguimiento y consejos del médico para esta pregunta, por favor, comparte tu correo electrónico:</target>
       </trans-unit>
       <trans-unit id="1929" resname="Send a thank you note to {doctor_name}!" restype="string" datatype="javascript">
         <source>Send a thank you note to {doctor_name}!</source>
@@ -6641,7 +6625,7 @@
       </trans-unit>
       <trans-unit id="1933" resname="Please don&apos;t include a followup question in your note. To do so, {link_tag_start}ask a question.{link_tag_end}" restype="string" datatype="javascript">
         <source>Please don&apos;t include a followup question in your note. To do so, {link_tag_start}ask a question.{link_tag_end}</source>
-        <target state="translated">Por favor no incluyas una pregunta de seguimiento en tu nota. Para hacerlo, {link_tag_start}haz una pregunta.{link_tag_end}</target>
+        <target state="translated">Por favor, no incluyas una pregunta de seguimiento en tu nota. Para hacerlo, {link_tag_start}haz una pregunta.{link_tag_end}</target>
       </trans-unit>
       <trans-unit id="1934" resname="I agree to the {terms_link_tag_start}Terms{link_tag_end} and {privacy_link_tag_start}Privacy Policy{link_tag_end}" restype="string" datatype="javascript">
         <source>I agree to the {terms_link_tag_start}Terms{link_tag_end} and {privacy_link_tag_start}Privacy Policy{link_tag_end}</source>
@@ -6665,7 +6649,7 @@
     <body>
       <trans-unit id="1937" resname="Please don&apos;t include a followup question in your note. To do so, {link_tag_start}ask a question{link_tag_end}." restype="string" datatype="javascript">
         <source>Please don&apos;t include a followup question in your note. To do so, {link_tag_start}ask a question{link_tag_end}.</source>
-        <target state="translated">Por favor no incluyas una pregunta de seguimiento en tu nota. Para hacerlo, {link_tag_start}haz una pregunta{link_tag_end}.</target>
+        <target state="translated">Por favor, no incluyas una pregunta de seguimiento en tu nota. Para hacerlo, {link_tag_start}haz una pregunta{link_tag_end}.</target>
       </trans-unit>
     </body>
   </file>
@@ -6757,7 +6741,7 @@
     <body>
       <trans-unit id="1953" resname="To connect with the doctor, please log in or tell us a little about yourself" restype="string" datatype="javascript">
         <source>To connect with the doctor, please log in or tell us a little about yourself</source>
-        <target state="translated">Para conectarte con el médico, por favor inicia sesión o cuéntanos un poco acerca de ti</target>
+        <target state="translated">Para conectarte con el médico, por favor, inicia sesión o cuéntanos un poco acerca de ti</target>
       </trans-unit>
     </body>
   </file>
@@ -7021,7 +7005,7 @@
     <body>
       <trans-unit id="2005" resname="Connect with other top doctors to build your Care-Team or get Virtual Care now" restype="string" datatype="javascript">
         <source>Connect with other top doctors to build your Care-Team or get Virtual Care now</source>
-        <target state="translated">Conéctate con otros mejores médicos para construir tu Care-Team, u obtén Cuidado Virtual ahora</target>
+        <target state="translated">Conéctate con otros de los mejores doctores para construir tu Equipo de Atención u obtén Atención Virtual ahora</target>
       </trans-unit>
     </body>
   </file>
@@ -7141,7 +7125,7 @@
     <body>
       <trans-unit id="2030" resname="Please explain &#40;optional&#41;" restype="string" datatype="javascript">
         <source>Please explain &#40;optional&#41;</source>
-        <target state="translated">Por favor explica &#40;opcional&#41;</target>
+        <target state="translated">Por favor, explica &#40;opcional&#41;</target>
       </trans-unit>
     </body>
   </file>
@@ -7221,7 +7205,7 @@
       </trans-unit>
       <trans-unit id="2045" resname="Created by top engineers, designers, and data scientists in Silicon Valley, {cobranded_product} is based on the experience of more than {n} clinicians and hundreds of millions of users. Your new Virtual Practice connects you to your patients and other clinicians, at your convenience, anytime, anywhere." restype="string" datatype="javascript">
         <source>Created by top engineers, designers, and data scientists in Silicon Valley, {cobranded_product} is based on the experience of more than {n} clinicians and hundreds of millions of users. Your new Virtual Practice connects you to your patients and other clinicians, at your convenience, anytime, anywhere.</source>
-        <target state="translated">Creada por los mejores ingenieros, diseñadores, y científicos de datos en Silicon Valley, {cobranded_product} está fundamentado en la experiencia de más de {n} médicos y cientos de millones de usuarios. Tu nueva Práctica Virtual te conecta a tus pacientes y otros médicos a tu conveniencia, en cualquier momento, en cualquier lugar.</target>
+        <target state="translated">Creada por los mejores ingenieros, diseñadores, y científicos de datos en Silicon Valley, {cobranded_product} está fundamentado en la experiencia de más de {n} médicos y cientos de millones de usuarios. Tu nueva Práctica Virtual te conecta a tus pacientes y otros médicos a tu conveniencia, en cualquier momento y en cualquier lugar.</target>
       </trans-unit>
     </body>
   </file>
@@ -7229,11 +7213,11 @@
     <body>
       <trans-unit id="2046" resname="Add to Care-Team" restype="string" datatype="javascript">
         <source>Add to Care-Team</source>
-        <target state="translated">Agregar a Care-Team</target>
+        <target state="translated">Añadir a Equipo de Atención</target>
       </trans-unit>
       <trans-unit id="2047" resname="To verify you as a patient, please enter {prefix}{last_name}&apos;s Concierge Keycode" restype="string" datatype="javascript">
         <source>To verify you as a patient, please enter {prefix}{last_name}&apos;s Concierge Keycode</source>
-        <target state="translated">Para verificarte como paciente, por favor ingresa la Clave Concierge de {prefix}{last_name}</target>
+        <target state="translated">Para verificarte como paciente, por favor, ingresa la Clave Concierge de {prefix}{last_name}</target>
       </trans-unit>
     </body>
   </file>
@@ -7245,7 +7229,7 @@
       </trans-unit>
       <trans-unit id="2049" resname="Video/text chat {em_tag_start}anywhere, anytime{em_tag_end} consults with top doctors" restype="string" datatype="javascript">
         <source>Video/text chat {em_tag_start}anywhere, anytime{em_tag_end} consults with top doctors</source>
-        <target state="translated">Consultas de chat en video o texto {em_tag_start}en cualquier momento, en cualquier lugar{em_tag_end} con los mejores médicos</target>
+        <target state="translated">Consultas de chat en video o texto {em_tag_start}en cualquier momento yen cualquier lugar{em_tag_end} con los mejores doctores</target>
       </trans-unit>
       <trans-unit id="2050" resname="Referral to {em_tag_start}specialists{em_tag_end}" restype="string" datatype="javascript">
         <source>Referral to {em_tag_start}specialists{em_tag_end}</source>
@@ -7285,7 +7269,7 @@
     <body>
       <trans-unit id="2057" resname="Invite to &lt;br&gt; Care-Team" restype="string" datatype="javascript">
         <source>Invite to &lt;br&gt; Care-Team</source>
-        <target state="translated">Invitar a &lt;br&gt; Care-Team</target>
+        <target state="translated">Invitar a &lt;br&gt; Equipo de Atención</target>
       </trans-unit>
     </body>
   </file>
@@ -7293,7 +7277,7 @@
     <body>
       <trans-unit id="2061" resname="Add to {break_tag} Care-Team" restype="string" datatype="javascript">
         <source>Add to {break_tag} Care-Team</source>
-        <target state="translated">Agregar a {break_tag} Care-Team</target>
+        <target state="translated">Añadir a {break_tag} Equipo de Atención</target>
       </trans-unit>
     </body>
   </file>
@@ -7301,7 +7285,7 @@
     <body>
       <trans-unit id="2062" resname="Your Health Professional Care-Team" restype="string" datatype="javascript">
         <source>Your Health Professional Care-Team</source>
-        <target state="translated">Tu Care-Team &#40;Equipo de atención&#41; de Salud Profesional</target>
+        <target state="translated">Equipo de Atención de Profesionales de la Salud</target>
       </trans-unit>
       <trans-unit id="2063" resname="Grow your Care-Team" restype="string" datatype="javascript">
         <source>Grow your Care-Team</source>
@@ -7309,7 +7293,7 @@
       </trans-unit>
       <trans-unit id="2064" resname="The more doctors you have on your Care-Team, the more likely one of them will be available for you when needed" restype="string" datatype="javascript">
         <source>The more doctors you have on your Care-Team, the more likely one of them will be available for you when needed</source>
-        <target state="translated">Mientras más médicos tengas en tu Care-Team, más probabilidad hay que uno de ellos esté disponible para ti cuando lo necesites</target>
+        <target state="translated">Mientras más doctores tengas en tu Equipo de Atenciónm, es más probable que uno de ellos esté disponible para ti cuando lo necesites</target>
       </trans-unit>
     </body>
   </file>
@@ -7457,7 +7441,7 @@
       </trans-unit>
       <trans-unit id="2095" resname="Connect with top doctors and build your Care-Team for free. Get covered anytime, anywhere" restype="string" datatype="javascript">
         <source>Connect with top doctors and build your Care-Team for free. Get covered anytime, anywhere</source>
-        <target state="translated">Conéctate con los mejores médicos y construye tu Care-Team gratis. Recibe atención en cualquier momento, en cualquier lugar</target>
+        <target state="translated">Conéctate con los mejores doctores y construye tu Equipo de Atención gratis. Recibe atención en cualquier momento y en cualquier lugar</target>
       </trans-unit>
       <trans-unit id="2096" resname="{span_tag_start}Get answers to your health questions{span_tag_end}{break_tag}{span_tag_start}from over {n} top doctors{span_tag_end}" restype="string" datatype="javascript">
         <source>{span_tag_start}Get answers to your health questions{span_tag_end}{break_tag}{span_tag_start}from over {n} top doctors{span_tag_end}</source>
@@ -7505,11 +7489,11 @@
     <body>
       <trans-unit id="2102" resname="To connect you with the right doctor please tell us where you are" restype="string" datatype="javascript">
         <source>To connect you with the right doctor please tell us where you are</source>
-        <target state="translated">Para conectarte con el médico correcto, por favor dinos dónde estás</target>
+        <target state="translated">Para conectarte con el médico correcto, por favor, dinos dónde estás</target>
       </trans-unit>
       <trans-unit id="2103" resname="Choose a doctor and send a secure message for advice or treatment:" restype="string" datatype="javascript">
         <source>Choose a doctor and send a secure message for advice or treatment:</source>
-        <target state="translated">Elige a un médico y envía un mensaje protegido para asesoría o tratamiento:</target>
+        <target state="translated">Elige a un doctor y envía un mensaje protegido para asesoría o tratamiento:</target>
       </trans-unit>
       <trans-unit id="2104" resname="Need help now?" restype="string" datatype="javascript">
         <source>Need help now?</source>
@@ -7517,7 +7501,7 @@
       </trans-unit>
       <trans-unit id="2105" resname="Build your Doctor Care-Team" restype="string" datatype="javascript">
         <source>Build your Doctor Care-Team</source>
-        <target state="translated">Construye tu Care-Team &#40;Equipo de atención&#41; del Médicos</target>
+        <target state="translated">Construye tu Equipo de Atención Médico</target>
       </trans-unit>
       <trans-unit id="2106" resname="Enter your location" restype="string" datatype="javascript">
         <source>Enter your location</source>
@@ -7869,7 +7853,7 @@
       </trans-unit>
       <trans-unit id="2188" resname="To ask for {name}, please add {name} to your account" restype="string" datatype="javascript">
         <source>To ask for {name}, please add {name} to your account</source>
-        <target state="translated">Para solicitar a {name}, por favor agrega a {name} a tu cuenta</target>
+        <target state="translated">Para solicitar a {name}, por favor, agrega a {name} a tu cuenta</target>
       </trans-unit>
       <trans-unit id="2189" resname="All {category}s" restype="string" datatype="javascript">
         <source>All {category}s</source>
@@ -8045,7 +8029,7 @@
       </trans-unit>
       <trans-unit id="2234" resname="You may need to {link_tag_start}give your browser permissions{link_tag_end} to load our plugin, or please continue by text chat" restype="string" datatype="javascript">
         <source>You may need to {link_tag_start}give your browser permissions{link_tag_end} to load our plugin, or please continue by text chat</source>
-        <target state="translated">Puedes necesitar {link_tag_start}darle permisos a tu navegador{link_tag_end} para cargar tu complemento, o por favor continúa mediante chat de texto</target>
+        <target state="translated">Puedes necesitar {link_tag_start}darle permisos a tu navegador{link_tag_end} para cargar tu complemento, o por favor, continúa mediante chat de texto</target>
       </trans-unit>
       <trans-unit id="2235" resname="If you think you have a medical emergency, call {emergency_extension} or go to the {emergency_room_abbreviation} immediately." restype="string" datatype="javascript">
         <source>If you think you have a medical emergency, call {emergency_extension} or go to the {emergency_room_abbreviation} immediately.</source>
@@ -8105,7 +8089,7 @@
       </trans-unit>
       <trans-unit id="2249" resname="The following values were assumed when calculating the ROI. To receive an even more customized ROI analysis tailored to your organization, please {link_tag_start}schedule a call{link_tag_end} with us." restype="string" datatype="javascript">
         <source>The following values were assumed when calculating the ROI. To receive an even more customized ROI analysis tailored to your organization, please {link_tag_start}schedule a call{link_tag_end} with us.</source>
-        <target state="translated">Los siguientes valores fueron asumidos cuando se calculó el ROI. Para recibir un análisis del ROI incluso más personalizado adecuado a tu organización, por favor {link_tag_start}programa una llamada{link_tag_end} con nosotros.</target>
+        <target state="translated">Los siguientes valores fueron asumidos cuando se calculó el ROI. Para recibir un análisis del ROI incluso más personalizado adecuado a tu organización, por favor, {link_tag_start}programa una llamada{link_tag_end} con nosotros.</target>
       </trans-unit>
       <trans-unit id="2250" resname="Send request" restype="string" datatype="javascript">
         <source>Send request</source>
@@ -8149,7 +8133,7 @@
       </trans-unit>
       <trans-unit id="2260" resname="{span_tag_start}{doc_name}{span_tag_end} and {n} others weighed in" restype="string" datatype="javascript">
         <source>{span_tag_start}{doc_name}{span_tag_end} and {n} others weighed in</source>
-        <target state="translated">{span_tag_start}{doc_name}{span_tag_end} and {n} otros estimados en</target>
+        <target state="translated">{span_tag_start}{doc_name}{span_tag_end} y {n} otros estimados en</target>
       </trans-unit>
       <trans-unit id="2261" resname="Credits earned this year: {credits}" restype="string" datatype="javascript">
         <source>Credits earned this year: {credits}</source>
@@ -8333,7 +8317,7 @@
       </trans-unit>
       <trans-unit id="2302" resname="Please take a moment to let us know why you are deactivating." restype="string" datatype="javascript">
         <source>Please take a moment to let us know why you are deactivating.</source>
-        <target state="translated">Por favor toma un momento para hacernos saber por qué estás desactivando.</target>
+        <target state="translated">Por favor, toma un momento para hacernos saber por qué estás desactivando.</target>
       </trans-unit>
     </body>
   </file>
@@ -8513,7 +8497,7 @@
       </trans-unit>
       <trans-unit id="2344" resname="To invite the doctor to respond to your message, please share your email:" restype="string" datatype="javascript">
         <source>To invite the doctor to respond to your message, please share your email:</source>
-        <target state="translated">Para invitar a que el médico responda a tu mensaje, por favor comparte tu correo electrónico:</target>
+        <target state="translated">Para invitar a que el médico responda a tu mensaje, por favor, comparte tu correo electrónico:</target>
       </trans-unit>
     </body>
   </file>
@@ -8665,7 +8649,7 @@
     <body>
       <trans-unit id="2382" resname="We couldn&apos;t remove your card. Please try again or contact support if the problem persists." restype="string" datatype="javascript">
         <source>We couldn&apos;t remove your card. Please try again or contact support if the problem persists.</source>
-        <target state="translated">No podemos eliminar tu tarjeta. Por favor intenta nuevamente o ponte en contacto con soporte si persiste el problema.</target>
+        <target state="translated">No podemos eliminar tu tarjeta. Por favor, intenta nuevamente o ponte en contacto con soporte si persiste el problema.</target>
       </trans-unit>
     </body>
   </file>
@@ -9005,7 +8989,7 @@
     <body>
       <trans-unit id="2465" resname="r637304562" restype="string" datatype="x-haml">
         <source>Sign up ›</source>
-        <target state="translated">Registrarse ›</target>
+        <target state="translated">Regístrate ›</target>
       </trans-unit>
     </body>
   </file>
@@ -9073,11 +9057,11 @@
     <body>
       <trans-unit id="2481" resname="r227539668" restype="string" datatype="x-haml">
         <source>Doctor Recommendations</source>
-        <target state="translated">Recomendaciones de doctor</target>
+        <target state="translated">Recomendaciones de Doctores</target>
       </trans-unit>
       <trans-unit id="2482" resname="r286377713" restype="string" datatype="x-haml">
         <source>Patient Recommendations</source>
-        <target state="translated">Recomendaciones de paciente</target>
+        <target state="translated">Recomendaciones de Pacientes</target>
       </trans-unit>
       <trans-unit id="2483" resname="r226637513" restype="string" datatype="x-haml">
         <source>Thank You Notes</source>

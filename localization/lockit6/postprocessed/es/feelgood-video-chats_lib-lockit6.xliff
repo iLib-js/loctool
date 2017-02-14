@@ -145,7 +145,7 @@
     <body>
       <trans-unit id="29" resname="r118721288" restype="string" datatype="java">
         <source>Please upload a file that is less than 10 MB.</source>
-        <target>Por favor sube un archivo que sea de menos de 10 MB.</target>
+        <target>Por favor, sube un archivo que sea de menos de 10 MB.</target>
       </trans-unit>
     </body>
   </file>
@@ -328,7 +328,7 @@
       </trans-unit>
       <trans-unit id="65" resname="r615851205" restype="string" datatype="java">
         <source>Okay</source>
-        <target>Okay</target>
+        <target>Ok</target>
       </trans-unit>
     </body>
   </file>

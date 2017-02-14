@@ -360,7 +360,7 @@
       </trans-unit>
       <trans-unit id="83" resname="r651656946" restype="string" datatype="ruby">
         <source>Specific, actionable doctor insights&lt;br/&gt;Answers, tips, and checklists</source>
-        <target>Perspicacias de doctor específicas y accioniables&lt;br/&gt;Respuestas, tips y listados</target>
+        <target>Perspicacias de doctores específicas y accioniables&lt;br/&gt;Respuestas, tips y listados</target>
       </trans-unit>
       <trans-unit id="84" resname="r1037881934" restype="string" datatype="ruby">
         <source>Immediate response and access&lt;br/&gt;%{num} doctors across 141 specialties</source>
@@ -913,7 +913,7 @@
       </trans-unit>
       <trans-unit id="210" resname="r807917159" restype="string" datatype="ruby">
         <source>What was impossible a year ago, is now POSSIBLE. I&apos;d have to say that each consult has been impactful, because each case is so different. It is unbelievable, the camaraderie, support, and peer-led education that&apos;s available for free. The EMR is also fantastic and quick to browse through.</source>
-        <target>Lo que era imposible hace un año, ahora es POSIBLE. Tendría que decir que cada consulta ha tenido impacto, porque cada caso es tan diferente. Es increíble, la camaradería, apoyo, y educación por pares que está disponible de forma gratuita. El EMR también es fantástico y rápido de ojear.</target>
+        <target>Lo que era imposible hace un año, ahora es POSIBLE. Tendría que decir que cada consulta ha tenido impacto, porque cada caso es tan diferente. Es increíble, la camaradería, apoyo, y educación por pares que está disponible de forma gratuita. El EMR también es fantástico y rápido de navegar.</target>
       </trans-unit>
       <trans-unit id="211" resname="r600615832" restype="string" datatype="ruby">
         <source>I think HealthTap will revolutionize medical care. I&apos;m so thrilled to be using HealthTap to connect with patients and physicians from around the world. I have over 8000 followers on HealthTap---that&apos;s incredible.</source>
@@ -1533,7 +1533,7 @@
       </trans-unit>
       <trans-unit id="322" resname="r457880092" restype="string" datatype="ruby">
         <source>Get special promotional codes to gift your friends and family - 15 days free of HealthTap Prime &#40;%{prime_price} value&#41; and earn $30 off for each referral you make</source>
-        <target>Obtén códigos promocionales especiales para regalar a tus amigos y familiares - 15 días gratis de HealthTap Prime &#40;%{prime_price} value&#41; and gana $30 de descuento por cada referencia que hagas</target>
+        <target>Obtén códigos promocionales especiales para regalar a tus amigos y familiares - 15 días gratis de HealthTap Prime &#40;%{prime_price} value&#41; y gana $30 de descuento por cada referencia que hagas</target>
       </trans-unit>
     </body>
   </file>
@@ -1806,7 +1806,7 @@
     <body>
       <trans-unit id="367" resname="r181579584" restype="string" datatype="ruby">
         <source>%{product} lets you provide your patients the right care, at the right time, at the right price.</source>
-        <target>%{product} te deja brindarles a tus pacientes la atención adecuada, en el tiempo adecuado y al precio adecuado.</target>
+        <target>%{product} te deja brindarles a tus pacientes la atención adecuada, en el momento adecuado y al precio adecuado.</target>
       </trans-unit>
     </body>
   </file>
@@ -1834,7 +1834,7 @@
       </trans-unit>
       <trans-unit id="372" resname="r785608414" restype="string" datatype="ruby">
         <source>Personalized doctor checklists and automated reminders improve adherence and outcomes. Highly-optimized, personalized feeds and newsletters keep healthy living top-of-mind.</source>
-        <target>Listados personalizados y recordatorios automatizados de doctores mejoran adherencia y resultados. Feeds y boletines personalizados y altamente optimizados para mantener cómo vivir sano como principal prioridad.</target>
+        <target>Listados personalizados y recordatorios automatizados de doctores mejoran adherencia y resultados. Fuentes y boletines personalizados y altamente optimizados para mantener cómo vivir sano como principal prioridad.</target>
       </trans-unit>
       <trans-unit id="373" resname="r1058091713" restype="string" datatype="ruby">
         <source>Our triage flow prevents unnecessary visits to the doctor’s office or ER, ensures your members get timely care, and only refers them to lower-cost “in-network” providers.</source>
@@ -1842,7 +1842,7 @@
       </trans-unit>
       <trans-unit id="374" resname="r637141669" restype="string" datatype="ruby">
         <source>Prescriptions can be ordered and fulfilled at any mail order or retail pharmacy. Tests can be ordered and resulted from any test lab. Wearables/app data can be presented to doctors at the point-of-care for better advice and treatment.</source>
-        <target>Se pueden ordenar y llenar recetas a cualquier farmacia a menudeo o por correo. Se pueden ordenar pruebas desde cualquier laboratorio. Vestimentas/datos de aplicación pueden ser presentados a doctores en el punto de atención para mejor consejo y tratamiento.</target>
+        <target>Se pueden ordenar y llenar recetas a cualquier farmacia a menudeo o por orden de correo. Se pueden ordenar pruebas desde cualquier laboratorio. Vestimentas/datos de aplicación pueden ser presentados a doctores en el punto de atención para mejor consejo y tratamiento.</target>
       </trans-unit>
       <trans-unit id="375" resname="r233512599" restype="string" datatype="ruby">
         <source>We offer a co-branded hub that provides one, easy-to-use interface for all health care needs, including single sign-on to your organization’s suite of websites, apps, and benefits.</source>
@@ -1895,7 +1895,7 @@
       </trans-unit>
       <trans-unit id="385" resname="r513799113" restype="string" datatype="ruby">
         <source>Specific, actionable doctor insights in the form of relevant answers, tips, and checklists.</source>
-        <target>Perspicacias de doctores accionables y específicas en la forma de respuestas, tips y listados.</target>
+        <target>Perspicacias de doctores viables y específicas en la forma de respuestas, tips y listados.</target>
       </trans-unit>
       <trans-unit id="386" resname="r521837342" restype="string" datatype="ruby">
         <source>Live responses from and access to primary care doctors and disaster specialists.</source>
@@ -1935,7 +1935,7 @@
       </trans-unit>
       <trans-unit id="394" resname="r645308597" restype="string" datatype="ruby">
         <source>Showcase doctors’ reputation and expertise online with Virtual Practice &#40;ViP&#41; profiles published to hundreds of millions worldwide.</source>
-        <target>Muestra la reputación y destreza de doctores en línea con perfiles de Consultorio Virtual &#40;ViP&#41; publicados a cientos de millones alrededor del mundo.</target>
+        <target>Muestra la reputación y destreza de doctores en línea con perfiles de Consultorio Virtual &#40;CoV&#41; publicados a cientos de millones alrededor del mundo.</target>
       </trans-unit>
       <trans-unit id="395" resname="r952011014" restype="string" datatype="ruby">
         <source>Save precious time by preventing repetitive answers by publishing them to our knowledgebase. Eliminate manual follow ups with your patients by you or your staff by automating reminders.</source>
@@ -3323,7 +3323,7 @@
       </trans-unit>
       <trans-unit id="726" resname="r507768574" restype="string" datatype="ruby">
         <source>Pediatric Infectious Disease Specialist</source>
-        <target>Especialista en Enfermedades Infecciosas Pediátricas</target>
+        <target>Especialista en Infectología Pediátrica</target>
       </trans-unit>
       <trans-unit id="727" resname="r746889760" restype="string" datatype="ruby">
         <source>Pediatric Nephrologist</source>
@@ -5020,7 +5020,7 @@
     <body>
       <trans-unit id="1079" resname="Leaderboard" restype="string" datatype="html">
         <source>Leaderboard</source>
-        <target>Tabla de clasificación</target>
+        <target>Tabla de posiciones</target>
       </trans-unit>
     </body>
   </file>
@@ -5096,7 +5096,7 @@
       </trans-unit>
       <trans-unit id="1097" resname="biweekly" restype="string" datatype="html">
         <source>biweekly</source>
-        <target>biweekly</target>
+        <target>dos veces a la semana</target>
       </trans-unit>
     </body>
   </file>
@@ -5356,7 +5356,7 @@
     <body>
       <trans-unit id="1139" resname="Sign Up &amp; Continue &amp;raquo;" restype="string" datatype="html">
         <source>Sign Up &amp; Continue &amp;raquo;</source>
-        <target>Registrarse &amp; Continuar &amp;raquo;</target>
+        <target>Regístrate &amp; Continúa &amp;raquo;</target>
       </trans-unit>
     </body>
   </file>
@@ -5372,7 +5372,7 @@
     <body>
       <trans-unit id="1141" resname="paypal" restype="string" datatype="html">
         <source>paypal</source>
-        <target>paypal</target>
+        <target>PayPal</target>
       </trans-unit>
       <trans-unit id="1142" resname="check" restype="string" datatype="html">
         <source>check</source>
@@ -6779,7 +6779,7 @@
       </trans-unit>
       <trans-unit id="2213" resname="r478026923" restype="string" datatype="x-haml">
         <source>A &quot;Consult&quot; within SmartHealth system will allow you to have either a video &#40;using a computer, a video camera and a microphone&#41; consultation or a typed / text consultation with a Waikato DHB clinician.  During the consultation, the Waikato DHB clinician will update information about the consultation &#40;e.g. information they provided you during the consultation such as diagnosis or treatment&#41;.  This information will be stored in SmartHealth system and also sent to update your clinical record maintained at Waikato DHB and the Primary Health Organisation &#40;e.g. your GP&#41; that you are registered with, just as if they saw you in person.</source>
-        <target>Una “Consulta” dentro del sistema de SmartHealth te permitirá tener ya sea un video &#40;usando una computadora, una videocámara y un micrófono&#41; consulta o una consulta escrita con un clínico de la Waikato DHB. Durante la consulta, el clínico de la Waikato DHB actualizará información sobre la consulta &#40;e.g. información que te otorgaron durante la consulta como un diagnóstico o tratamiento&#41;. La información será almacenada en el sistema de SmartHealth y también será enviada para actualizar tu expediente clínico mantenido en la Waikato DHB and y a la Organización de Salud Primaria &#40;e.g. tu MG&#41; con la que estas registrado, justo como si te hubieran visto en persona.</target>
+        <target>Una “Consulta” dentro del sistema de SmartHealth te permitirá tener ya sea un video &#40;usando una computadora, una videocámara y un micrófono&#41; consulta o una consulta escrita con un clínico de la Waikato DHB. Durante la consulta, el clínico de la Waikato DHB actualizará información sobre la consulta &#40;e.g. información que te otorgaron durante la consulta como un diagnóstico o tratamiento&#41;. La información será almacenada en el sistema de SmartHealth y también será enviada para actualizar tu expediente clínico mantenido en la Waikato DHB y a la Organización de Salud Primaria &#40;e.g. tu MG&#41; con la que estas registrado, justo como si te hubieran visto en persona.</target>
       </trans-unit>
       <trans-unit id="2214" resname="r184562975" restype="string" datatype="x-haml">
         <source>On a private, safe and highly secured computer storage system in the United States of America &#40;called a &quot;Cloud&quot;&#41;.   This system meets the information security standards of the United States of America and New Zealand.</source>

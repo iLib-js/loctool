@@ -264,7 +264,7 @@
       </trans-unit>
       <trans-unit id="58" resname="Sign up" restype="string" datatype="html">
         <source>Sign up</source>
-        <target>Registrarse</target>
+        <target>Regístrate</target>
       </trans-unit>
     </body>
   </file>
@@ -1108,11 +1108,11 @@
       </trans-unit>
       <trans-unit id="242" resname="Male" restype="string" datatype="html">
         <source>Male</source>
-        <target>Masculino</target>
+        <target>Hombre</target>
       </trans-unit>
       <trans-unit id="243" resname="Female" restype="string" datatype="html">
         <source>Female</source>
-        <target>Femenino</target>
+        <target>Mujer</target>
       </trans-unit>
       <trans-unit id="244" resname="BIRTH DATE" restype="string" datatype="html">
         <source>BIRTH DATE</source>
@@ -1464,11 +1464,11 @@
     <body>
       <trans-unit id="320" resname="female" restype="string" datatype="html">
         <source>female</source>
-        <target>femenino</target>
+        <target>mujer</target>
       </trans-unit>
       <trans-unit id="321" resname="male" restype="string" datatype="html">
         <source>male</source>
-        <target>masculino</target>
+        <target>hombre</target>
       </trans-unit>
       <trans-unit id="322" resname="&quot;&gt;" restype="string" datatype="html">
         <source>&quot;&gt;</source>
@@ -1488,7 +1488,7 @@
       </trans-unit>
       <trans-unit id="326" resname="Learn More &gt;" restype="string" datatype="html">
         <source>Learn More &gt;</source>
-        <target>Aprender más &gt;</target>
+        <target>Aprende más &gt;</target>
       </trans-unit>
       <trans-unit id="327" resname="Doctor Moms who’ve raised children of their own can provide a special perspective:" restype="string" datatype="html">
         <source>Doctor Moms who’ve raised children of their own can provide a special perspective:</source>
@@ -1728,7 +1728,7 @@
       </trans-unit>
       <trans-unit id="382" resname="Learn more" restype="string" datatype="html">
         <source>Learn more</source>
-        <target>Aprender más</target>
+        <target>Aprende más</target>
       </trans-unit>
     </body>
   </file>
@@ -1804,7 +1804,7 @@
       </trans-unit>
       <trans-unit id="397" resname="Remember: The higher your health score, the better care you get from doctors! &lt;a&gt;Learn More&lt;/a&gt;" restype="string" datatype="html">
         <source>Remember: The higher your health score, the better care you get from doctors! &lt;a&gt;Learn More&lt;/a&gt;</source>
-        <target>Recuerda: ¡Mientras más alto sea tu HealthScore, mejor atención recibirás de los doctores! &lt;a&gt;Aprender más&lt;/a&gt;</target>
+        <target>Recuerda: ¡Mientras más alto sea tu HealthScore, mejor atención recibirás de los doctores! &lt;a&gt;Aprende más&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -2696,7 +2696,7 @@
       </trans-unit>
       <trans-unit id="593" resname="Mail-order Pharmacy name" restype="string" datatype="html">
         <source>Mail-order Pharmacy name</source>
-        <target>Nombre de Farmacia por correo</target>
+        <target>Nombre de Farmacia por orden de correo</target>
       </trans-unit>
       <trans-unit id="594" resname="Fax" restype="string" datatype="html">
         <source>Fax</source>
@@ -2724,7 +2724,7 @@
       </trans-unit>
       <trans-unit id="599" resname="Mail-order Pharmacy Name" restype="string" datatype="html">
         <source>Mail-order Pharmacy Name</source>
-        <target>Nombre de Farmacia por correo</target>
+        <target>Nombre de Farmacia por orden de correo</target>
       </trans-unit>
       <trans-unit id="600" resname="Call your Pharmacy" restype="string" datatype="html">
         <source>Call your Pharmacy</source>
@@ -3652,7 +3652,7 @@
       </trans-unit>
       <trans-unit id="801" resname="Get discounts by increasing your HealthScore. &lt;a class=&quot;info_hover_buy_h info_hover_buy1_h&quot; id=&quot;buy1&quot; style=&quot;font-weight:600&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Get discounts by increasing your HealthScore. &lt;a class=&quot;info_hover_buy_h info_hover_buy1_h&quot; id=&quot;buy1&quot; style=&quot;font-weight:600&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
-        <target>Obtén descuentos aumentando tu HealthScore. &lt;a class=&quot;info_hover_buy_h info_hover_buy1_h&quot; id=&quot;buy1&quot; style=&quot;font-weight:600&quot;&gt;Aprender más &amp;raquo;&lt;/a&gt;</target>
+        <target>Obtén descuentos aumentando tu HealthScore. &lt;a class=&quot;info_hover_buy_h info_hover_buy1_h&quot; id=&quot;buy1&quot; style=&quot;font-weight:600&quot;&gt;Aprende más &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="802" resname="I have" restype="string" datatype="html">
         <source>I have</source>
@@ -4168,7 +4168,7 @@
     <body>
       <trans-unit id="915" resname="SIGN UP" restype="string" datatype="html">
         <source>SIGN UP</source>
-        <target>REGISTRARSE</target>
+        <target>REGÍSTRATE</target>
       </trans-unit>
       <trans-unit id="916" resname="LOG IN" restype="string" datatype="html">
         <source>LOG IN</source>
@@ -4280,7 +4280,7 @@
     <body>
       <trans-unit id="936" resname="No Current Feeds" restype="string" datatype="html">
         <source>No Current Feeds</source>
-        <target>No hay Feeds Actuales</target>
+        <target>No hay Fuentes Actuales</target>
       </trans-unit>
       <trans-unit id="937" resname="&quot;&#41; no-repeat center center; background-size:cover&apos;&gt;" restype="string" datatype="html">
         <source>&quot;&#41; no-repeat center center; background-size:cover&apos;&gt;</source>
@@ -4312,7 +4312,7 @@
     <body>
       <trans-unit id="941" resname="This feed will be back soon! Search for topics and doctors to follow in the mean time." restype="string" datatype="html">
         <source>This feed will be back soon! Search for topics and doctors to follow in the mean time.</source>
-        <target>¡Este feed estará de vuelta pronto! Mientras tanto, busca temas y doctores para seguirlos.</target>
+        <target>¡Esta fuente estará de vuelta pronto! Mientras tanto, busca temas y doctores para seguirlos.</target>
       </trans-unit>
       <trans-unit id="942" resname="Re: MedPub&#35;" restype="string" datatype="html">
         <source>Re: MedPub&#35;</source>
@@ -5340,7 +5340,7 @@
       </trans-unit>
       <trans-unit id="1162" resname="Additional Patient Information" restype="string" datatype="html">
         <source>Additional Patient Information</source>
-        <target>Información de Pacinete Adicional</target>
+        <target>Información de Paciente Adicional</target>
       </trans-unit>
       <trans-unit id="1163" resname="Answer guidelines" restype="string" datatype="html">
         <source>Answer guidelines</source>
@@ -7052,7 +7052,7 @@
       </trans-unit>
       <trans-unit id="1536" resname="Browse Topics" restype="string" datatype="html">
         <source>Browse Topics</source>
-        <target>Ojear Temas</target>
+        <target>Navegar Temas</target>
       </trans-unit>
       <trans-unit id="1537" resname="Living Healthier" restype="string" datatype="html">
         <source>Living Healthier</source>
@@ -7656,7 +7656,7 @@
       </trans-unit>
       <trans-unit id="1674" resname="Restate in your answer any pertinent facts from the member&apos;s profile, so other readers will understand the basis for your personalized answer. &lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; Reiterating relevant profile information helps ensure that your answer is not out of context and is useful for other readers who do not have access to this profile information&#40;e.g., &quot;Women over 40 who takes medicine X should...&quot;&#41; &lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Learn more &amp;&#35;155;&lt;/a&gt;" restype="string" datatype="html">
         <source>Restate in your answer any pertinent facts from the member&apos;s profile, so other readers will understand the basis for your personalized answer. &lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; Reiterating relevant profile information helps ensure that your answer is not out of context and is useful for other readers who do not have access to this profile information&#40;e.g., &quot;Women over 40 who takes medicine X should...&quot;&#41; &lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Learn more &amp;&#35;155;&lt;/a&gt;</source>
-        <target>Vuelve a plantear en tu respuesta todos los hechos pertinentes del perfil del miembro, para que así otros lectores entiendan el fundamento para tu respuesta personalizada. &lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; El reiterar la información relevante del perfil ayuda a asegurar que tu respuesta no esté fuera de contexto y sea útil para los demás lectores que no tienen acceso a esta información de perfil &#40;e.g., &quot;Las mujeres mayores a 40 que tomen la medicina X deberían...&quot;&#41; &lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Aprender más &amp;&#35;155;&lt;/a&gt;</target>
+        <target>Vuelve a plantear en tu respuesta todos los hechos pertinentes del perfil del miembro, para que así otros lectores entiendan el fundamento para tu respuesta personalizada. &lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; El reiterar la información relevante del perfil ayuda a asegurar que tu respuesta no esté fuera de contexto y sea útil para los demás lectores que no tienen acceso a esta información de perfil &#40;e.g., &quot;Las mujeres mayores a 40 que tomen la medicina X deberían...&quot;&#41; &lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Aprende más &amp;&#35;155;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="1675" resname="Refrain from any personal diagnosis, prescription, or advice." restype="string" datatype="html">
         <source>Refrain from any personal diagnosis, prescription, or advice.</source>
@@ -7860,14 +7860,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="public/mobile/app/js/templates/comments/comment.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
-    <body>
-      <trans-unit id="1719" resname="." restype="string" datatype="html">
-        <source>.</source>
-        <target>.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="public/mobile/app/js/templates/body_view/body_search.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="1720" resname="female view" restype="string" datatype="html">
@@ -7904,11 +7896,11 @@
       </trans-unit>
       <trans-unit id="1728" resname="&quot;&gt; Female" restype="string" datatype="html">
         <source>&quot;&gt; Female</source>
-        <target>&quot;&gt; Femenino</target>
+        <target>&quot;&gt; Mujer</target>
       </trans-unit>
       <trans-unit id="1729" resname="&quot;&gt; Male" restype="string" datatype="html">
         <source>&quot;&gt; Male</source>
-        <target>&quot;&gt; Masculino</target>
+        <target>&quot;&gt; Hombre</target>
       </trans-unit>
       <trans-unit id="1730" resname="Pregnant" restype="string" datatype="html">
         <source>Pregnant</source>
@@ -8968,7 +8960,7 @@
     <body>
       <trans-unit id="1939" resname="Mail-order Pharmacy" restype="string" datatype="html">
         <source>Mail-order Pharmacy</source>
-        <target>Farmacia por correo</target>
+        <target>Farmacia por orden de correo</target>
       </trans-unit>
     </body>
   </file>
@@ -9488,7 +9480,7 @@
       </trans-unit>
       <trans-unit id="2046" resname="To browse the best health information securely, please create your password below." restype="string" datatype="html">
         <source>To browse the best health information securely, please create your password below.</source>
-        <target>Para ojear la mejor información de salud de forma segura, por favor, crea tu contraseña a continuación.</target>
+        <target>Para navegar la mejor información de salud de forma segura, por favor, crea tu contraseña a continuación.</target>
       </trans-unit>
       <trans-unit id="2047" resname="It’s easy! Just choose a new password and we’ll log you in." restype="string" datatype="html">
         <source>It’s easy! Just choose a new password and we’ll log you in.</source>
@@ -9784,7 +9776,7 @@
       </trans-unit>
       <trans-unit id="2107" resname="Learn more &amp;raquo;" restype="string" datatype="html">
         <source>Learn more &amp;raquo;</source>
-        <target>Aprender más &amp;raquo;</target>
+        <target>Aprende más &amp;raquo;</target>
       </trans-unit>
       <trans-unit id="2108" resname="Skip this step" restype="string" datatype="html">
         <source>Skip this step</source>
@@ -10088,7 +10080,7 @@
       </trans-unit>
       <trans-unit id="2172" resname="Sign up as a:" restype="string" datatype="html">
         <source>Sign up as a:</source>
-        <target>Registrarse como:</target>
+        <target>Regístrate como:</target>
       </trans-unit>
       <trans-unit id="2173" resname="Member/Patient" restype="string" datatype="html">
         <source>Member/Patient</source>
@@ -10740,7 +10732,7 @@
       </trans-unit>
       <trans-unit id="2315" resname="No hassles, no overhead, no other costs&lt;br&gt;&lt;a href=&quot;/consult_application&quot;&gt;Learn More &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>No hassles, no overhead, no other costs&lt;br&gt;&lt;a href=&quot;/consult_application&quot;&gt;Learn More &amp;raquo;&lt;/a&gt;</source>
-        <target>Sin molestas, gastos generales, u otros costos&lt;br&gt;&lt;a href=&quot;/consult_application&quot;&gt;Aprender Más &amp;raquo;&lt;/a&gt;</target>
+        <target>Sin molestas, gastos generales, u otros costos&lt;br&gt;&lt;a href=&quot;/consult_application&quot;&gt;Aprende Más &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="2316" resname="Enhance your reputation" restype="string" datatype="html">
         <source>Enhance your reputation</source>
@@ -10928,7 +10920,7 @@
     <body>
       <trans-unit id="2359" resname="Activity Feed" restype="string" datatype="html">
         <source>Activity Feed</source>
-        <target>Feed de Actividades</target>
+        <target>Fuente de Actividades</target>
       </trans-unit>
       <trans-unit id="2360" resname="Conversations" restype="string" datatype="html">
         <source>Conversations</source>
@@ -11436,7 +11428,7 @@
       </trans-unit>
       <trans-unit id="2468" resname="Review &lt;span class=&quot;bold&quot;&gt;&lt;%= &#40;App.user.get&#40;&apos;person&apos;&#41;.editorial_board_threshold - App.user.get&#40;&apos;person&apos;&#41;.apps_recommended_num - 1&#41; %&gt; more apps&lt;/span&gt; and become eligible for Editorial status, and have your reviews publicly displayed! &lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1&#35;how_it_works/apprx&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Review &lt;span class=&quot;bold&quot;&gt;&lt;%= &#40;App.user.get&#40;&apos;person&apos;&#41;.editorial_board_threshold - App.user.get&#40;&apos;person&apos;&#41;.apps_recommended_num - 1&#41; %&gt; more apps&lt;/span&gt; and become eligible for Editorial status, and have your reviews publicly displayed! &lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1&#35;how_it_works/apprx&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
-        <target>Valora &lt;span class=&quot;bold&quot;&gt;&lt;%= &#40;App.user.get&#40;&apos;person&apos;&#41;.editorial_board_threshold - App.user.get&#40;&apos;person&apos;&#41;.apps_recommended_num - 1&#41; %&gt; aplicaciones más&lt;/span&gt; y vuelvete elegible para estado Editorial, y haz que tus valoraciones sean mostradas públicamente! &lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1&#35;how_it_works/apprx&quot;&gt;Aprender más &amp;raquo;&lt;/a&gt;</target>
+        <target>Valora &lt;span class=&quot;bold&quot;&gt;&lt;%= &#40;App.user.get&#40;&apos;person&apos;&#41;.editorial_board_threshold - App.user.get&#40;&apos;person&apos;&#41;.apps_recommended_num - 1&#41; %&gt; aplicaciones más&lt;/span&gt; y vuelvete elegible para estado Editorial, y haz que tus valoraciones sean mostradas públicamente! &lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1&#35;how_it_works/apprx&quot;&gt;Aprende más &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -11520,7 +11512,7 @@
       </trans-unit>
       <trans-unit id="2483" resname="Download now" restype="string" datatype="html">
         <source>Download now</source>
-        <target>Descarga ahora</target>
+        <target>Descargar ahora</target>
       </trans-unit>
       <trans-unit id="2484" resname="Continue to website version &amp;raquo;" restype="string" datatype="html">
         <source>Continue to website version &amp;raquo;</source>
@@ -11612,7 +11604,7 @@
       </trans-unit>
       <trans-unit id="2500" resname="Learn More" restype="string" datatype="html">
         <source>Learn More</source>
-        <target>Aprender Más</target>
+        <target>Aprende Más</target>
       </trans-unit>
     </body>
   </file>
@@ -11844,7 +11836,7 @@
       </trans-unit>
       <trans-unit id="2544" resname="Feed" restype="string" datatype="html">
         <source>Feed</source>
-        <target>Feed</target>
+        <target>Fuente</target>
       </trans-unit>
       <trans-unit id="2545" resname="Tips" restype="string" datatype="html">
         <source>Tips</source>
@@ -12832,7 +12824,7 @@
       </trans-unit>
       <trans-unit id="2738" resname="Millions of pregnant women and moms are seeking the expert knowledge and compassion of doctors who\n      have first-hand experiences as mothers.&lt;br&gt;\n        &lt;a target=&quot;_blank&quot; class=&quot;mommaDocMeta_h&quot;&gt;Learn more ›&lt;/a&gt;" restype="string" datatype="html">
         <source>Millions of pregnant women and moms are seeking the expert knowledge and compassion of doctors who have first-hand experiences as mothers.&lt;br&gt; &lt;a target=&quot;_blank&quot; class=&quot;mommaDocMeta_h&quot;&gt;Learn more ›&lt;/a&gt;</source>
-        <target>Millones de mujeres embarazadas y mamás están buscando el conocimiento experto y compasión de doctores que tienen experiencias de primera mano como madres. &lt;br&gt; &lt;a target=”_blank”class=”mommaDocMeta_h”&gt; Aprender más ›&lt;/a&gt;</target>
+        <target>Millones de mujeres embarazadas y mamás están buscando el conocimiento experto y compasión de doctores que tienen experiencias de primera mano como madres. &lt;br&gt; &lt;a target=”_blank”class=”mommaDocMeta_h”&gt; Aprende más ›&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -13524,7 +13516,7 @@
       </trans-unit>
       <trans-unit id="2888" resname="Earn 200,000 points to win an all-expense paid trip to Hawaii or the Caribbean, plus many more rewards! &amp;nbsp; &amp;nbsp; &lt;a href=&quot;mailto:expertsupport@healthtap.com?subject=Redeem%20Concierge%20Partner%20Rewards%20Points&quot;&gt;Learn more ›&lt;/a&gt;" restype="string" datatype="html">
         <source>Earn 200,000 points to win an all-expense paid trip to Hawaii or the Caribbean, plus many more rewards! &amp;nbsp; &amp;nbsp; &lt;a href=&quot;mailto:expertsupport@healthtap.com?subject=Redeem%20Concierge%20Partner%20Rewards%20Points&quot;&gt;Learn more ›&lt;/a&gt;</source>
-        <target>¡Gana 200,000 puntos para ganar un viaje con todos los gastos pagados a Hawái o el Caribe, además de muchas recompensas más! &amp;nbsp; &amp;nbsp; &lt;a href=&quot;mailto:expertsupport@healthtap.com?subject=Redimir%20Puntos de%20Recompensas%20de Socio%20Concierge&quot;&gt;Aprender más ›&lt;/a&gt;</target>
+        <target>¡Gana 200,000 puntos para ganar un viaje con todos los gastos pagados a Hawái o el Caribe, además de muchas recompensas más! &amp;nbsp; &amp;nbsp; &lt;a href=&quot;mailto:expertsupport@healthtap.com?subject=Redimir%20Puntos de%20Recompensas%20de Socio%20Concierge&quot;&gt;Aprende más ›&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="2889" resname="Your points balance:" restype="string" datatype="html">
         <source>Your points balance:</source>
@@ -14548,7 +14540,7 @@
       </trans-unit>
       <trans-unit id="3081" resname="Shift sign ups take effect immediately" restype="string" datatype="html">
         <source>Shift sign ups take effect immediately</source>
-        <target>Los registros de turno surten efecto de forma inmediata</target>
+        <target>Los registros para turno surten efecto de forma inmediata</target>
       </trans-unit>
     </body>
   </file>
@@ -14796,7 +14788,7 @@
     <body>
       <trans-unit id="3131" resname="FEED" restype="string" datatype="html">
         <source>FEED</source>
-        <target>FEED</target>
+        <target>FUENTE</target>
       </trans-unit>
       <trans-unit id="3132" resname="ABOUT" restype="string" datatype="html">
         <source>ABOUT</source>
@@ -15016,7 +15008,7 @@
       </trans-unit>
       <trans-unit id="3177" resname="Learn More &amp;raquo;" restype="string" datatype="html">
         <source>Learn More &amp;raquo;</source>
-        <target>Aprender Más &amp;raquo;</target>
+        <target>Aprende Más &amp;raquo;</target>
       </trans-unit>
       <trans-unit id="3178" resname="YOUR CREDIT BALANCE" restype="string" datatype="html">
         <source>YOUR CREDIT BALANCE</source>
@@ -15080,11 +15072,11 @@
     <body>
       <trans-unit id="3190" resname="Search feed" restype="string" datatype="html">
         <source>Search feed</source>
-        <target>Buscar en feed</target>
+        <target>Buscar en fuente</target>
       </trans-unit>
       <trans-unit id="3191" resname="Feed Filter:" restype="string" datatype="html">
         <source>Feed Filter:</source>
-        <target>Filtro de Feed:</target>
+        <target>Filtro de Fuente:</target>
       </trans-unit>
       <trans-unit id="3192" resname="Your speciality" restype="string" datatype="html">
         <source>Your speciality</source>
@@ -15096,7 +15088,7 @@
       </trans-unit>
       <trans-unit id="3194" resname="Edit Feed Subscriptions »" restype="string" datatype="html">
         <source>Edit Feed Subscriptions »</source>
-        <target>Editar Suscripciones de Feed »</target>
+        <target>Editar Suscripciones de Fuente»</target>
       </trans-unit>
     </body>
   </file>
@@ -15104,11 +15096,11 @@
     <body>
       <trans-unit id="3195" resname="New Feature - Feed Filters" restype="string" datatype="html">
         <source>New Feature - Feed Filters</source>
-        <target>Nueva Función - Filtros de Feed</target>
+        <target>Nueva Función - Filtros de Fuente</target>
       </trans-unit>
       <trans-unit id="3196" resname="Expand your feed to see new unanswered questions in all specialties!" restype="string" datatype="html">
         <source>Expand your feed to see new unanswered questions in all specialties!</source>
-        <target>¡Expande tu feed para ver nuevas preguntas sin contestar en todas las especialidades!</target>
+        <target>¡Expande tu fuente para ver nuevas preguntas sin contestar en todas las especialidades!</target>
       </trans-unit>
       <trans-unit id="3197" resname="Want to broaden your view? Take a look at some of the most recently asked questions across all fields of medicine with one click. Enable this option and we&apos;ll instantly add these questions to your queue. Use the filter options here to turn this feature on or off at any time. Enjoy!" restype="string" datatype="html">
         <source>Want to broaden your view? Take a look at some of the most recently asked questions across all fields of medicine with one click. Enable this option and we&apos;ll instantly add these questions to your queue. Use the filter options here to turn this feature on or off at any time. Enjoy!</source>
@@ -15128,7 +15120,7 @@
     <body>
       <trans-unit id="3200" resname="Feed filter:" restype="string" datatype="html">
         <source>Feed filter:</source>
-        <target>Filtro de feed:</target>
+        <target>Filtro de fuente:</target>
       </trans-unit>
       <trans-unit id="3201" resname="/&gt;\n  Also show other specialties" restype="string" datatype="html">
         <source>/&gt; Also show other specialties</source>
@@ -15228,7 +15220,7 @@
       </trans-unit>
       <trans-unit id="3220" resname="Your feed is empty because we don&apos;t know what you&apos;re interested in. &lt;br&gt;\n        &lt;a class=&quot;feed_settings_alt_link&quot;&gt;Let us know&lt;/a&gt;\n        what you&apos;d like to see here." restype="string" datatype="html">
         <source>Your feed is empty because we don&apos;t know what you&apos;re interested in. &lt;br&gt; &lt;a class=&quot;feed_settings_alt_link&quot;&gt;Let us know&lt;/a&gt; what you&apos;d like to see here.</source>
-        <target>Tu feed está vació porque no sabemos que te interesa. &lt;br&gt; &lt;a class=”feed_settings_alt_link”&gt;Haznos saber&lt;/a&gt; lo que te gustaría ver aquí.</target>
+        <target>Tu fuente está vacía porque no sabemos que te interesa. &lt;br&gt; &lt;a class=”feed_settings_alt_link”&gt;Haznos saber&lt;/a&gt; lo que te gustaría ver aquí.</target>
       </trans-unit>
       <trans-unit id="3221" resname="No search results found." restype="string" datatype="html">
         <source>No search results found.</source>
@@ -15516,7 +15508,7 @@
     <body>
       <trans-unit id="3284" resname="Edit Feed Preferences" restype="string" datatype="html">
         <source>Edit Feed Preferences</source>
-        <target>Editar Preferencias de Feed</target>
+        <target>Editar Preferencias de Fuente</target>
       </trans-unit>
     </body>
   </file>
@@ -15889,10 +15881,6 @@
       <trans-unit id="3365" resname="PUBLICATIONS" restype="string" datatype="html">
         <source>PUBLICATIONS</source>
         <target>PUBLICACIONES</target>
-      </trans-unit>
-      <trans-unit id="3366" resname="." restype="string" datatype="html">
-        <source>.</source>
-        <target>.</target>
       </trans-unit>
       <trans-unit id="3367" resname="blog&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;additional links" restype="string" datatype="html">
         <source>blog&amp;nbsp;&amp;nbsp;&amp;amp;&amp;nbsp;&amp;nbsp;additional links</source>
@@ -18572,7 +18560,7 @@
       </trans-unit>
       <trans-unit id="3947" resname="Learn more&amp;nbsp;›" restype="string" datatype="html">
         <source>Learn more&amp;nbsp;›</source>
-        <target>Aprender más&amp;nbsp;›</target>
+        <target>Aprende más&amp;nbsp;›</target>
       </trans-unit>
       <trans-unit id="3948" resname="Concierge Training" restype="string" datatype="html">
         <source>Concierge Training</source>
@@ -18656,7 +18644,7 @@
       </trans-unit>
       <trans-unit id="3966" resname="The Top Doctors Competition has ended.  The Top Doctor Competition awards that visitors to your Virtual Practice see are shown &lt;a href=&quot;/&#35;experts/&lt;%= App.user.id %&gt;/about&quot;&gt;here&lt;/a&gt;." restype="string" datatype="html">
         <source>The Top Doctors Competition has ended. The Top Doctor Competition awards that visitors to your Virtual Practice see are shown &lt;a href=&quot;/&#35;experts/&lt;%= App.user.id %&gt;/about&quot;&gt;here&lt;/a&gt;.</source>
-        <target>La Competición de los Mejores Doctores ha finalizado. Los galardones de la Competición del Mejor Doctor que los visitantes ven en tu Consultoroi Virtual son mostrados &lt;a href=&quot;/&#35;experts/&lt;%= App.user.id %&gt;/about&quot;&gt;aquí&lt;/a&gt;.</target>
+        <target>La Competición de los Mejores Doctores ha finalizado. Los galardones de la Competición del Mejor Doctor que los visitantes ven en tu Consultorio Virtual son mostrados &lt;a href=&quot;/&#35;experts/&lt;%= App.user.id %&gt;/about&quot;&gt;aquí&lt;/a&gt;.</target>
       </trans-unit>
       <trans-unit id="3967" resname="The Top Doctor Competition recognizes and shares with the world the best and most helpful medical experts on HealthTap. By helping people on HealthTap, you&apos;ll automatically be eligible for the Top Doctor, Top Specialist, Thought Leader, and Most Influential Doctor Awards. Participate actively on HealthTap during the competition and gain recognition for your accomplishments as a knowledgeable, caring, and helpful doctor who will be featured to millions in the new generation of HealthTap." restype="string" datatype="html">
         <source>The Top Doctor Competition recognizes and shares with the world the best and most helpful medical experts on HealthTap. By helping people on HealthTap, you&apos;ll automatically be eligible for the Top Doctor, Top Specialist, Thought Leader, and Most Influential Doctor Awards. Participate actively on HealthTap during the competition and gain recognition for your accomplishments as a knowledgeable, caring, and helpful doctor who will be featured to millions in the new generation of HealthTap.</source>
@@ -19068,7 +19056,7 @@
       </trans-unit>
       <trans-unit id="4054" resname="Repeat any information from the member&apos;s profile that informs your answer. &lt;a class=&quot;learn_more_guidelines&quot;&gt;Learn more&lt;/a&gt;" restype="string" datatype="html">
         <source>Repeat any information from the member&apos;s profile that informs your answer. &lt;a class=&quot;learn_more_guidelines&quot;&gt;Learn more&lt;/a&gt;</source>
-        <target>Repite cualquier información del perfil de miembros que informe tu respuesta. &lt;a class=&quot;learn_more_guidelines&quot;&gt;Aprender más&lt;/a&gt;</target>
+        <target>Repite cualquier información del perfil de miembros que informe tu respuesta. &lt;a class=&quot;learn_more_guidelines&quot;&gt;Aprende más&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="4055" resname="Reiterating relevant profile information helps to ensure that your answer is not out of context and is useful for other readers who do not have access to this profile information &#40;e.g. &quot;Women over 40 who take medicine X should...&quot;&#41;" restype="string" datatype="html">
         <source>Reiterating relevant profile information helps to ensure that your answer is not out of context and is useful for other readers who do not have access to this profile information &#40;e.g. &quot;Women over 40 who take medicine X should...&quot;&#41;</source>
@@ -19860,7 +19848,7 @@
       </trans-unit>
       <trans-unit id="4195" resname="Mail-order" restype="string" datatype="html">
         <source>Mail-order</source>
-        <target>Pedido por correo</target>
+        <target>Orden por correo</target>
       </trans-unit>
       <trans-unit id="4196" resname="In-store pickup" restype="string" datatype="html">
         <source>In-store pickup</source>
@@ -21216,7 +21204,7 @@
       </trans-unit>
       <trans-unit id="4401" resname="Do you want to remove this action from your &quot;To-Do&quot; list?" restype="string" datatype="html">
         <source>Do you want to remove this action from your &quot;To-Do&quot; list?</source>
-        <target>¿Quieres eliminar esta medida de tu lista de &quot;Qué hacer&quot;?</target>
+        <target>¿Quieres eliminar esta medida de tu lista de &quot;Por Hacer&quot;?</target>
       </trans-unit>
       <trans-unit id="4402" resname="Keep" restype="string" datatype="html">
         <source>Keep</source>
@@ -23196,7 +23184,7 @@
     <body>
       <trans-unit id="4770" resname="RB.getStringJS&#40;In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}.  These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.&#41;.format&#40;{\n     bold_tag_start: &apos;&lt;b&gt;&apos;,\n     bold_tag_end: &apos;&lt;/b&gt;&apos;\n    }&#41;" restype="string" datatype="html">
         <source>RB.getStringJS&#40;In addition to live virtual consults, you will also receive {bold_tag_start}Inbox Consults{bold_tag_end}. These are paid, detailed messages from your patients that appear at the top of your homepage feed and must be answered within 24 hours.&#41;.format&#40;{ bold_tag_start: &apos;&lt;b&gt;&apos;, bold_tag_end: &apos;&lt;/b&gt;&apos; }&#41;</source>
-        <target>RB.getStringJS&#40;Además de consultas virtuales en vivo, también recibirás {bold_tag_start}Consultas por Buzón de Entrada{bold_tag_end}. Estos son mensajes detallados pagados de tus pacientes que aparecen en la parte superior del feed de tu página de inicio y deben de ser contestadas en 24 horas.&#41;.format&#40;{ bold_tag_start: ‘&lt;b&gt;&apos;, bold_tag_end: ‘&lt;/b&gt;&apos; }&#41;</target>
+        <target>RB.getStringJS&#40;Además de consultas virtuales en vivo, también recibirás {bold_tag_start}Consultas por Buzón de Entrada{bold_tag_end}. Estos son mensajes detallados pagados de tus pacientes que aparecen en la parte superior de la fuente de tu página de inicio y deben de ser contestadas en 24 horas.&#41;.format&#40;{ bold_tag_start: ‘&lt;b&gt;&apos;, bold_tag_end: ‘&lt;/b&gt;&apos; }&#41;</target>
       </trans-unit>
       <trans-unit id="4771" resname="You will earn $&lt;%= inbox_compensation %&gt; when you complete patient consults and submit your SOAP Note." restype="string" datatype="html">
         <source>You will earn $&lt;%= inbox_compensation %&gt; when you complete patient consults and submit your SOAP Note.</source>
@@ -26072,7 +26060,7 @@
     <body>
       <trans-unit id="5258" resname="Take action" restype="string" datatype="html">
         <source>Take action</source>
-        <target>Tomar acción</target>
+        <target>Toma acción</target>
       </trans-unit>
       <trans-unit id="5259" resname="Try" restype="string" datatype="html">
         <source>Try</source>
@@ -26668,7 +26656,7 @@
     <body>
       <trans-unit id="5369" resname="In brief:" restype="string" datatype="html">
         <source>In brief:</source>
-        <target>En breve:</target>
+        <target>En resumen:</target>
       </trans-unit>
       <trans-unit id="5370" resname="...Read more" restype="string" datatype="html">
         <source>...Read more</source>
@@ -27348,7 +27336,7 @@
       </trans-unit>
       <trans-unit id="5470" resname="Learn more&lt;span class=&quot;more-arrow&quot;&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Learn more&lt;span class=&quot;more-arrow&quot;&gt;&lt;/span&gt;</source>
-        <target>Aprender más&lt;span class=&quot;more-arrow&quot;&gt;&lt;/span&gt;</target>
+        <target>Aprende más&lt;span class=&quot;more-arrow&quot;&gt;&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="5471" resname="We look forward to working with you! If you have any questions, please contact us at &lt;a href=&quot;mailto:ambassador@healthtap.com&quot;&gt;ambassador@healthtap.com&lt;/a&gt;." restype="string" datatype="html">
         <source>We look forward to working with you! If you have any questions, please contact us at &lt;a href=&quot;mailto:ambassador@healthtap.com&quot;&gt;ambassador@healthtap.com&lt;/a&gt;.</source>
@@ -28376,7 +28364,7 @@
       </trans-unit>
       <trans-unit id="5622" resname=" Learn more › " restype="string" datatype="javascript">
         <source>Learn more ›</source>
-        <target>Aprender más ›</target>
+        <target>Aprende más ›</target>
       </trans-unit>
       <trans-unit id="5623" resname="Connect with women doctors who are also mothers for deeper, experienced-based answers to all your pregnancy and parenting questions. " restype="string" datatype="javascript">
         <source>Connect with women doctors who are also mothers for deeper, experienced-based answers to all your pregnancy and parenting questions.</source>
@@ -28732,7 +28720,7 @@
       </trans-unit>
       <trans-unit id="5696" resname="Learn more ›" restype="string" datatype="javascript">
         <source>Learn more ›</source>
-        <target>Aprender más ›</target>
+        <target>Aprende más ›</target>
       </trans-unit>
       <trans-unit id="5697" resname="View all {n} comments »" restype="string" datatype="javascript">
         <source>View all {n} comments »</source>
@@ -29084,7 +29072,7 @@
     <body>
       <trans-unit id="5751" resname="Sign up &amp;amp; Send note" restype="string" datatype="javascript">
         <source>Sign up &amp;amp; Send note</source>
-        <target>Registrarse &amp;amp; Enviar nota</target>
+        <target>Regístrate &amp;amp; Enviar nota</target>
       </trans-unit>
     </body>
   </file>
@@ -31120,7 +31108,7 @@
       </trans-unit>
       <trans-unit id="6553" resname="&lt;b&gt;Checklists&lt;/b&gt; are recommended actions that help your patient achieve \\n                 a health goal or feel better. Patients receive timely reminders for each \\n                 to-do on the list. You can browse through a wealth of checklists that \\n                 doctors on HealthTap have created by topic and choose the best one for \\n                 your patient." restype="string" datatype="javascript">
         <source>&lt;b&gt;Checklists&lt;/b&gt; are recommended actions that help your patient achieve \ a health goal or feel better. Patients receive timely reminders for each \ to-do on the list. You can browse through a wealth of checklists that \ doctors on HealthTap have created by topic and choose the best one for \ your patient.</source>
-        <target>&lt;b&gt;Listados&lt;/b&gt; son acciones recomendadas que ayudan a tu paciente a lograr \ una meta de salud o sentirse mejor. Pacientes reciben recordatorios oportunos para cada \ qué hacer en la lista. Puedes ojear a través de una riqueza de listados que \doctores en HealthTap han creado por tema y elegir el mejor para tu paciente.</target>
+        <target>&lt;b&gt;Listados&lt;/b&gt; son acciones recomendadas que ayudan a tu paciente a lograr \ una meta de salud o sentirse mejor. Pacientes reciben recordatorios oportunos para cada \ por hacer en la lista. Puedes navegar a través de una riqueza de listados que \doctores en HealthTap han creado por tema y elegir el mejor para tu paciente.</target>
       </trans-unit>
       <trans-unit id="6554" resname="Try it out and then click continue." restype="string" datatype="javascript">
         <source>Try it out and then click continue.</source>
@@ -31236,11 +31224,11 @@
       </trans-unit>
       <trans-unit id="6581" resname="In addition to live virtual consults, you will also receive &lt;b&gt;Inbox \\n                   Consults&lt;/b&gt;. These are paid, detailed messages from your patients that \\n                   appear at the top of your homepage feed and must be answered within 24 \\n                   hours. You will earn $30 when you complete patient consults and submit \\n                   your SOAP Note." restype="string" datatype="javascript">
         <source>In addition to live virtual consults, you will also receive &lt;b&gt;Inbox \ Consults&lt;/b&gt;. These are paid, detailed messages from your patients that \ appear at the top of your homepage feed and must be answered within 24 \ hours. You will earn $30 when you complete patient consults and submit \ your SOAP Note.</source>
-        <target>Además de consultas virtuales en vivo, también recibirás &lt;b&gt;Consultas de \ Buzón de Entrada&lt;/b&gt;. Estos son mensajes detallados pagados de tus pacientes que \ aparecen en la parte superior del feed de tu página de inicio y deben de ser contestadas en 24 \ horas. Ganarás $30 cuando completes consultas de pacientes y envíes \ tu nota SOAP.</target>
+        <target>Además de consultas virtuales en vivo, también recibirás &lt;b&gt;Consultas de \ Buzón de Entrada&lt;/b&gt;. Estos son mensajes detallados pagados de tus pacientes que \ aparecen en la parte superior de la fuente de tu página de inicio y deben de ser contestadas en 24 \ horas. Ganarás $30 cuando completes consultas de pacientes y envíes \ tu nota SOAP.</target>
       </trans-unit>
       <trans-unit id="6582" resname="&lt;b&gt;Inbox Consults&lt;/b&gt; are detailed questions from your patients that \\n                     appear at the top of your homepage feed and must be answered within \\n                     24 hours. You can send clarification questions and have a conversation \\n                     with the patients. To end the consult, simply submit the SOAP note." restype="string" datatype="javascript">
         <source>&lt;b&gt;Inbox Consults&lt;/b&gt; are detailed questions from your patients that \ appear at the top of your homepage feed and must be answered within \ 24 hours. You can send clarification questions and have a conversation \ with the patients. To end the consult, simply submit the SOAP note.</source>
-        <target>&lt;b&gt;Consultas de Buzón de Entrada&lt;/b&gt; son preguntas detalladas de tus pacientes que \ aparecen en la parte superior del feed de tu página inicio y debe ser contestadas dentro de \ 24 horas. Puedes enviar preguntas de aclaración y tener una conversación con \ pacientes. Para terminar la consulta, simplemente envía la nota SOAP.</target>
+        <target>&lt;b&gt;Consultas de Buzón de Entrada&lt;/b&gt; son preguntas detalladas de tus pacientes que \ aparecen en la parte superior de la fuente de tu página inicio y debe ser contestadas dentro de \ 24 horas. Puedes enviar preguntas de aclaración y tener una conversación con \ pacientes. Para terminar la consulta, simplemente envía la nota SOAP.</target>
       </trans-unit>
       <trans-unit id="6583" resname="Tip: Please respond to any Inbox Consults within 24 hours. \\n               Submit your answer as a SOAP consult note, or ask your \\n               patient follow-up questions by entering your question and \\n               clicking the “Wait for response” button." restype="string" datatype="javascript">
         <source>Tip: Please respond to any Inbox Consults within 24 hours. \ Submit your answer as a SOAP consult note, or ask your \ patient follow-up questions by entering your question and \ clicking the “Wait for response” button.</source>
@@ -31960,7 +31948,7 @@
       </trans-unit>
       <trans-unit id="6720" resname="You&apos;ve already sent 50 requests today. &lt;br&gt; To send more appointment requests, please log in with Dr. {name}&apos;s account" restype="string" datatype="javascript">
         <source>You&apos;ve already sent 50 requests today. &lt;br&gt; To send more appointment requests, please log in with Dr. {name}&apos;s account</source>
-        <target>Ya has enviado 50 solicitudes hoy. &lt;br&gt; Para enviar más solicitudes de citas, por favor inicia sesión con la cuenta del Dr. {name}</target>
+        <target>Ya has enviado 50 solicitudes hoy. &lt;br&gt; Para enviar más solicitudes de citas, por favor, inicia sesión con la cuenta del Dr. {name}</target>
       </trans-unit>
     </body>
   </file>
@@ -32652,7 +32640,7 @@
       </trans-unit>
       <trans-unit id="6875" resname=" Learn more " restype="string" datatype="javascript">
         <source>Learn more</source>
-        <target>Aprender más</target>
+        <target>Aprende más</target>
       </trans-unit>
       <trans-unit id="6876" resname="HealthTap Honor" restype="string" datatype="javascript">
         <source>HealthTap Honor</source>
@@ -33192,7 +33180,7 @@
       </trans-unit>
       <trans-unit id="6980" resname="We&apos;ll highlight this doctor&apos;s insights for you on your feed." restype="string" datatype="javascript">
         <source>We&apos;ll highlight this doctor&apos;s insights for you on your feed.</source>
-        <target>Resaltaremos las perspicacias de este doctor para ti en tu feed.</target>
+        <target>Resaltaremos las perspicacias de este doctores para ti en tu fuente.</target>
       </trans-unit>
       <trans-unit id="6981" resname="Existing Consult" restype="string" datatype="javascript">
         <source>Existing Consult</source>
@@ -33552,7 +33540,7 @@
       </trans-unit>
       <trans-unit id="7062" resname=" More personalized doctor insights » " restype="string" datatype="javascript">
         <source>More personalized doctor insights »</source>
-        <target>Más perspicacias de doctor personalizadas »</target>
+        <target>Más perspicacias de doctores personalizadas »</target>
       </trans-unit>
       <trans-unit id="7063" resname="We&apos;ve sent your request to connect to" restype="string" datatype="javascript">
         <source>We&apos;ve sent your request to connect to</source>
@@ -33948,7 +33936,7 @@
       </trans-unit>
       <trans-unit id="7146" resname="Here are some doctor insights while you wait..." restype="string" datatype="javascript">
         <source>Here are some doctor insights while you wait...</source>
-        <target>Aquí están algunas perspicacias de doctor mientras esperas...</target>
+        <target>Aquí están algunas perspicacias de doctores mientras esperas...</target>
       </trans-unit>
       <trans-unit id="7147" resname="Here&apos;s something to help you FeelGood :&#41;" restype="string" datatype="javascript">
         <source>Here&apos;s something to help you FeelGood :&#41;</source>
@@ -34384,7 +34372,7 @@
       </trans-unit>
       <trans-unit id="7237" resname="Download Now" restype="string" datatype="javascript">
         <source>Download Now</source>
-        <target>Descarga Ahora</target>
+        <target>Descargar Ahora</target>
       </trans-unit>
     </body>
   </file>
