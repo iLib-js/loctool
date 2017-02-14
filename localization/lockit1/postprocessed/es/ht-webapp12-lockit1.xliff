@@ -32068,7 +32068,7 @@
       </trans-unit>
       <trans-unit id="6747" resname="No longer take this" restype="string" datatype="javascript">
         <source>No longer take this</source>
-        <target>Ya no tomo esto</target>
+        <target>Ya no toma esto</target>
       </trans-unit>
       <trans-unit id="6748" resname="Does this person have any allergies?" restype="string" datatype="javascript">
         <source>Does this person have any allergies?</source>
