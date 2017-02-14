@@ -23100,7 +23100,7 @@
     <body>
       <trans-unit id="4483" resname="r300477531" restype="string" datatype="ruby">
         <source>What is %{person}'s gender?</source>
-        <target state="translated">¿Cuál es el género de %{person}?</target>
+        <target state="translated">¿Cuál es el sexo de %{person}?</target>
       </trans-unit>
       <trans-unit id="4484" resname="r453205076" restype="string" datatype="ruby">
         <source>When was %{person_description} born?</source>
@@ -37056,7 +37056,7 @@
       </trans-unit>
       <trans-unit id="8731" resname="What gender is {first_name}?" restype="string" datatype="javascript">
         <source>What gender is {first_name}?</source>
-        <target state="translated">¿Cuál es el género de {first_name}?</target>
+        <target state="translated">¿Cuál es el sexo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="8732" resname="What gender is this person?" restype="string" datatype="javascript">
         <source>What gender is this person?</source>

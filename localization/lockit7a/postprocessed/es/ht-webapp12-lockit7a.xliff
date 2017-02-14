@@ -6481,7 +6481,7 @@
       </trans-unit>
       <trans-unit id="1915" resname="What gender is {first_name}?" restype="string" datatype="javascript">
         <source>What gender is {first_name}?</source>
-        <target state="translated">¿Cuál es el género de {first_name}?</target>
+        <target state="translated">¿Cuál es el sexo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="1916" resname="What gender is this person?" restype="string" datatype="javascript">
         <source>What gender is this person?</source>

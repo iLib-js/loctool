@@ -1770,7 +1770,7 @@
       </trans-unit>
       <trans-unit id="363" resname="r810227030" restype="string" datatype="ruby">
         <source>What is {$person}'s gender?</source>
-        <target state="translated">¿Cuál es el género de {$person}?</target>
+        <target state="translated">¿Cuál es el sexo de {$person}?</target>
       </trans-unit>
       <trans-unit id="364" resname="r136197315" restype="string" datatype="ruby">
         <source>Is {$person} currently pregnant?</source>
@@ -3717,7 +3717,7 @@
     <body>
       <trans-unit id="805" resname="What is {name}&apos;s gender?" restype="string" datatype="javascript">
         <source>What is {name}'s gender?</source>
-        <target state="translated">¿Cuál es el género de {name}?</target>
+        <target state="translated">¿Cuál es el sexo de {name}?</target>
       </trans-unit>
       <trans-unit id="806" resname="Please provide the following for {name}&apos;s consult" restype="string" datatype="javascript">
         <source>Please provide the following for {name}'s consult</source>
