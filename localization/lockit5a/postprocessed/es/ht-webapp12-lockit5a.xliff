@@ -13925,7 +13925,7 @@
       </trans-unit>
       <trans-unit id="7295" resname="r895599030" restype="string" datatype="x-haml">
         <source>What our investors have to say</source>
-        <target>Lo que nuestros inversionistas tienen que decir</target>
+        <target>Lo que dicen nuestros inversionistas</target>
       </trans-unit>
     </body>
   </file>
