@@ -35589,7 +35589,7 @@
     <body>
       <trans-unit id="13990" resname=" take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>take any over-the-counter or prescription medications?</source>
-        <target>¿tomas algún medicamento de libre venta o de receta?</target>
+        <target>¿tomas algún medicamento de venta libre o de receta?</target>
       </trans-unit>
     </body>
   </file>

@@ -33016,7 +33016,7 @@
       </trans-unit>
       <trans-unit id="6953" resname=" take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>take any over-the-counter or prescription medications?</source>
-        <target>toma(s) algún medicamento de libre venta o de receta?</target>
+        <target>toma(s) algún medicamento de venta libre o de receta?</target>
       </trans-unit>
       <trans-unit id="6954" resname="{pre} have any allergies?" restype="string" datatype="javascript">
         <source>{pre} have any allergies?</source>

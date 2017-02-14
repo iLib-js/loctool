@@ -3917,11 +3917,11 @@
       </trans-unit>
       <trans-unit id="862" resname="Does {name} take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>Does {name} take any over-the-counter or prescription medications?</source>
-        <target state="translated">¿{name} toma algún medicamento de libre venta o de receta?</target>
+        <target state="translated">¿{name} toma algún medicamento de venta libre o de receta?</target>
       </trans-unit>
       <trans-unit id="863" resname="Do you take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>Do you take any over-the-counter or prescription medications?</source>
-        <target state="translated">¿Tomas algún medicamento de libre venta o de receta?</target>
+        <target state="translated">¿Tomas algún medicamento de venta libre o de receta?</target>
       </trans-unit>
     </body>
   </file>
