@@ -12292,7 +12292,7 @@
       </trans-unit>
       <trans-unit id="2598" resname="r283299315" restype="string" datatype="ruby">
         <source>Updates on a question you asked</source>
-        <target>Actualizaciones a una pregunta que hiciste</target>
+        <target>Actualizaciones de una pregunta que hiciste</target>
       </trans-unit>
       <trans-unit id="2599" resname="r495465873" restype="string" datatype="ruby">
         <source>A doctor responds to Virtual Consult</source>

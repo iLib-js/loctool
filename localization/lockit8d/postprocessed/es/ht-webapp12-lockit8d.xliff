@@ -579,7 +579,7 @@
       </trans-unit>
       <trans-unit id="879" resname=":text" restype="string" datatype="x-yaml" x-context="Your Questions@4">
         <source>Updates on a question you asked</source>
-        <target state="translated">Actualizaciones a una pregunta que hiciste</target>
+        <target state="translated">Actualizaciones de una pregunta que hiciste</target>
       </trans-unit>
       <trans-unit id="887" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@7">
         <source>Updates on a consult you had</source>
