@@ -655,7 +655,7 @@
     <body>
       <trans-unit id="880" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@0">
         <source>A doctor shares feedback on your SOAP Note</source>
-        <target state="translated">Un doctor comparte comentario en tu Nota SOAP</target>
+        <target state="translated">Un doctor comparte su comentario en tu Nota SOAP</target>
       </trans-unit>
       <trans-unit id="881" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@1">
         <source>A doctor rates your consult 5-stars</source>

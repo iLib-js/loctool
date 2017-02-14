@@ -12240,7 +12240,7 @@
       </trans-unit>
       <trans-unit id="2582" resname="r420886578" restype="string" datatype="ruby">
         <source>A doctor shares feedback on your SOAP Note</source>
-        <target>Un doctor comparte comentario en tu Nota SOAP</target>
+        <target>Un doctor comparte su comentario en tu Nota SOAP</target>
       </trans-unit>
       <trans-unit id="2583" resname="r1026561444" restype="string" datatype="ruby">
         <source>A doctor rates your consult 5-stars</source>
