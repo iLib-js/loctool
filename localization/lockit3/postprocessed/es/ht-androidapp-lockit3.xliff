@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="4" resname="title_Message_subscriptions" restype="string" datatype="x-android-resource">
         <source>Message subscriptions</source>
-        <target state="translated">Suscripciones a Mensajes</target>
+        <target>Suscripciones a Mensajes</target>
       </trans-unit>
       <trans-unit id="5" resname="title_Transaction_history" restype="string" datatype="x-android-resource">
         <source>Transaction history</source>
