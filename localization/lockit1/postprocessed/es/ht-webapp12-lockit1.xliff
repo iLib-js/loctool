@@ -264,7 +264,7 @@
       </trans-unit>
       <trans-unit id="58" resname="Sign up" restype="string" datatype="html">
         <source>Sign up</source>
-        <target>Registrarse</target>
+        <target>Regístrate</target>
       </trans-unit>
     </body>
   </file>
@@ -19804,7 +19804,7 @@
     <body>
       <trans-unit id="4187" resname="By city or zip code" restype="string" datatype="html">
         <source>By city or zip code</source>
-        <target>Por ciudad o código postal</target>
+        <target>Ciudad/código postal</target>
       </trans-unit>
       <trans-unit id="4188" resname="Filter" restype="string" datatype="html">
         <source>Filter</source>
