@@ -25862,7 +25862,7 @@
       </trans-unit>
       <trans-unit id="5180" resname="r384671676" restype="string" datatype="ruby">
         <source>Suggested Doctors</source>
-        <target state="translated">Doctores Sugeridos</target>
+        <target state="translated">Doctores sugeridos</target>
       </trans-unit>
       <trans-unit id="5181" resname="r635197186" restype="string" datatype="ruby">
         <source>Safe for use during pregnancy</source>

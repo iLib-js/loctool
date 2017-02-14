@@ -8660,7 +8660,7 @@
       </trans-unit>
       <trans-unit id="2986" resname="r384671676" restype="string" datatype="ruby">
         <source>Suggested Doctors</source>
-        <target>Doctores Sugeridos</target>
+        <target>Doctores sugeridos</target>
       </trans-unit>
       <trans-unit id="2996" resname="r578209636" restype="string" datatype="ruby">
         <source>Related Medications</source>

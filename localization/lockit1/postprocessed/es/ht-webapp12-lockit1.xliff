@@ -9316,7 +9316,7 @@
     <body>
       <trans-unit id="2011" resname="Suggested Doctors" restype="string" datatype="html">
         <source>Suggested Doctors</source>
-        <target>Doctores Sugeridos</target>
+        <target>Doctores sugeridos</target>
       </trans-unit>
       <trans-unit id="2012" resname="See more »" restype="string" datatype="html">
         <source>See more »</source>
