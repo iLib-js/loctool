@@ -42076,7 +42076,7 @@
       </trans-unit>
       <trans-unit id="9765" resname="Dr. Agrees" restype="string" datatype="javascript">
         <source>Dr. Agrees</source>
-        <target state="translated">De Acuerdos de Dr.</target>
+        <target state="translated">Dres. que están de acuerdo</target>
       </trans-unit>
     </body>
   </file>

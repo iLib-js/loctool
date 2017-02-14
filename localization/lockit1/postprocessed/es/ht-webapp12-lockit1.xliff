@@ -32960,7 +32960,7 @@
       </trans-unit>
       <trans-unit id="6940" resname="Dr. Agrees" restype="string" datatype="javascript">
         <source>Dr. Agrees</source>
-        <target>De Acuerdos de Dr.</target>
+        <target>Dres. que están de acuerdo</target>
       </trans-unit>
     </body>
   </file>
