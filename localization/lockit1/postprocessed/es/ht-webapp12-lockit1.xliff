@@ -30788,7 +30788,7 @@
       </trans-unit>
       <trans-unit id="6479" resname="(Choose all that apply)" restype="string" datatype="javascript">
         <source>(Choose all that apply)</source>
-        <target>(Elige a todos los que aplican)</target>
+        <target>(Elige todos los que aplican)</target>
       </trans-unit>
       <trans-unit id="6480" resname="How would you classify your consumption of alcohol?" restype="string" datatype="javascript">
         <source>How would you classify your consumption of alcohol?</source>
