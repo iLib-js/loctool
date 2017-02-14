@@ -2893,7 +2893,7 @@
     <body>
       <trans-unit id="2499" resname="r325356960" restype="string" datatype="x-haml">
         <source>is supported by world-class investors, advisors, and experienced company builders who have helped create,</source>
-        <target state="translated">es apoyada por inversionistas, asesores y constructores de compañías de clase mundial quienes han ayudado a crear,</target>
+        <target state="translated">es apoyada por inversionistas, asesores y constructores de compañías mundiales quienes han ayudado a crear,</target>
       </trans-unit>
     </body>
   </file>
