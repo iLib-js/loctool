@@ -2848,35 +2848,35 @@
       </trans-unit>
       <trans-unit id="10" resname="helpful" restype="string" datatype="x-android-resource">
         <source>Helpful</source>
-        <target state="new">Útil</target>
+        <target>Útil</target>
       </trans-unit>
       <trans-unit id="11" resname="add_photo" restype="string" datatype="x-android-resource">
         <source>Add photo</source>
-        <target state="new">Añadir foto</target>
+        <target>Añadir foto</target>
       </trans-unit>
       <trans-unit id="12" resname="add_condition" restype="string" datatype="x-android-resource">
         <source>Add condition</source>
-        <target state="new">Añadir Condición</target>
+        <target>Añadir Condición</target>
       </trans-unit>
       <trans-unit id="13" resname="add_medication" restype="string" datatype="x-android-resource">
         <source>Add medication</source>
-        <target state="new">Añadir Medicamento</target>
+        <target>Añadir Medicamento</target>
       </trans-unit>
       <trans-unit id="14" resname="add_allergy" restype="string" datatype="x-android-resource">
         <source>Add allergy</source>
-        <target state="new">Añadir alergia</target>
+        <target>Añadir alergia</target>
       </trans-unit>
       <trans-unit id="15" resname="guide_me" restype="string" datatype="x-android-resource">
         <source>Guide me</source>
-        <target state="new">Guíame</target>
+        <target>Guíame</target>
       </trans-unit>
       <trans-unit id="16" resname="share_feelgood_moment" restype="string" datatype="x-android-resource">
         <source>Share FeelGood Moment</source>
-        <target state="new">Comparte un Momento para Sentirse Bien</target>
+        <target>Comparte un Momento para Sentirse Bien</target>
       </trans-unit>
       <trans-unit id="17" resname="review" restype="string" datatype="x-android-resource">
         <source>Review</source>
-        <target state="new">Crítica</target>
+        <target>Crítica</target>
       </trans-unit>
     </body>
   </file>

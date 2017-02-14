@@ -72,7 +72,7 @@
     \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
     \u00B7 Consults in languages other than English\n\
     \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
-        <target state="new">在线咨询的常见问题：
+        <target>在线咨询的常见问题：
 \u00B7 腹部疼痛\n\
 \u00B7 急性支气管炎\n\
 \u00B7 急性结膜炎\n\
@@ -166,7 +166,7 @@
     \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
     \u00B7 Consults in languages other than English\n\
                            \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
-        <target state="new">在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+        <target>在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -188,7 +188,7 @@
       </trans-unit>
       <trans-unit id="4" resname="At which pharmacy do you prefer to pick up prescriptions?" restype="string" datatype="x-objective-c">
         <source>At which pharmacy do you prefer to pick up prescriptions?</source>
-        <target state="new">未找到药店</target>
+        <target>未找到药店</target>
         <note annotates="source">question for getting pharmacy selection</note>
       </trans-unit>
     </body>
@@ -197,7 +197,7 @@
     <body>
       <trans-unit id="5" resname="Languages spoken" restype="string" datatype="x-objective-c">
         <source>Languages spoken</source>
-        <target state="new">语言</target>
+        <target>语言</target>
       </trans-unit>
     </body>
   </file>
@@ -205,7 +205,7 @@
     <body>
       <trans-unit id="15" resname="other" restype="string" datatype="x-objective-c">
         <source>other</source>
-        <target state="new">其它</target>
+        <target>其它</target>
       </trans-unit>
     </body>
   </file>
@@ -213,7 +213,7 @@
     <body>
       <trans-unit id="16" resname="Type your location" restype="string" datatype="x-objective-c">
         <source>Type your location</source>
-        <target state="new">输入您的位置</target>
+        <target>输入您的位置</target>
       </trans-unit>
     </body>
   </file>

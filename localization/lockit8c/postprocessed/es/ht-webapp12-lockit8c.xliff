@@ -9733,11 +9733,11 @@
       </trans-unit>
       <trans-unit id="1935" resname="r677129205" restype="string" datatype="ruby">
         <source>Gifting Care</source>
-        <target state="new">Gifting Care</target>
+        <target>Gifting Care</target>
       </trans-unit>
       <trans-unit id="1936" resname="r167426065" restype="string" datatype="ruby">
         <source>Gifting&lt;br/&gt;Care</source>
-        <target state="new">Gifting&lt;br/&gt;Care</target>
+        <target>Gifting&lt;br/&gt;Care</target>
       </trans-unit>
       <trans-unit id="1937" resname="r467764469" restype="string" datatype="ruby">
         <source>Provide homebound patients recovering from surgeries with easy, convenient doctor access</source>
