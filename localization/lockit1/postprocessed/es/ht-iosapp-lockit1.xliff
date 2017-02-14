@@ -10873,12 +10873,12 @@ el doctor pueda confirmarte como paciente</target>
         <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">place holder in search box</note>
       </trans-unit>
-      <trans-unit id="Search answers, topics, experts  " resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
+      <trans-unit id="Search answers, topics, experts" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
-      <trans-unit id="Search answers, topics, experts     " resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
+      <trans-unit id="Search answers, topics, experts" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">search box placeholder</note>
@@ -13266,7 +13266,7 @@ De forma alterna, puedes enviar tu pregunta para una respuesta o más desde nues
         <target>compartió un tip acerca de %@</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="shared a tip on %@ " resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
+      <trans-unit id="shared a tip on %@" resname="shared a tip on %@" restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
         <target>compartió un tip acerca de %@</target>
         <note annotates="source">Param: some topic</note>

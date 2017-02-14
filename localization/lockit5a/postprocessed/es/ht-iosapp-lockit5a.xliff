@@ -78,7 +78,7 @@
         <source>tip (%ld of %lu)</source>
         <target>tip (%ld de %lu)</target>
       </trans-unit>
-      <trans-unit id="15" resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
+      <trans-unit id="15" resname="shared a tip on %@" restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
         <target>compartió un tip el %@</target>
         <note annotates="source">Param: some topic</note>
@@ -248,7 +248,7 @@
   </file>
   <file original="feelgood/ViewControllers/FGMainSearchResultsViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="62" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
+      <trans-unit id="62" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">Place holder in search box</note>
@@ -377,7 +377,7 @@
   </file>
   <file original="feelgood/FGSearchBar.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
     <body>
-      <trans-unit id="143" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
+      <trans-unit id="143" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target state="accepted">Respuestas, temas y expertos</target>
         <note annotates="source">search box placeholder</note>
