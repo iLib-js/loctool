@@ -4176,7 +4176,7 @@
       </trans-unit>
       <trans-unit id="7681" resname="r9433786" restype="string" datatype="ruby">
         <source>I love that new patients find me on HealthTap and request virtual appointments with me. This is changing the face of medicine.</source>
-        <target state="translated">Amo que nuevos pacientes me encuentren en HealthTap y soliciten citas virtuales conmigo. Esto está cambiando la cara de la medicina.</target>
+        <target state="translated">Me encanta que nuevos pacientes me encuentren en HealthTap y soliciten citas virtuales conmigo. Esto está cambiando la cara de la medicina.</target>
       </trans-unit>
       <trans-unit id="7682" resname="r788129504" restype="string" datatype="ruby">
         <source>View my Virtual Practice landing page.</source>
@@ -7414,7 +7414,7 @@
     <body>
       <trans-unit id="1277" resname="r370192362" restype="string" datatype="ruby">
         <source>I love that HealthTap is backed by doctors in all areas of health, so I know the information I find is validated. I,m not going online in the middle of the night and getting some crazy parent. I also love that you can connect with your doctor on HealthTap or with the other doctor,s at their practice so in-and-out of the office, I feel at ease.</source>
-        <target state="translated">Amo que HealthTap esté respaldada por doctores en todas las áreas de la salud, así sé que la información que encuentro es válida. No voy a estar en línea a la mitad de la noche y me va a tocar un padre loco. También amo que puedes conectarte con tu doctor en HealthTap o con los otros doctores en sus consultorios dentro y fuera de la oficina, me siento tranquilo.</target>
+        <target state="translated">Me encanta que HealthTap esté respaldada por doctores en todas las áreas de la salud, así sé que la información que encuentro es válida. No voy a estar en línea a la mitad de la noche y me va a tocar un padre loco. También amo que puedes conectarte con tu doctor en HealthTap o con los otros doctores en sus consultorios dentro y fuera de la oficina, me siento tranquilo.</target>
       </trans-unit>
       <trans-unit id="1278" resname="r227048682" restype="string" datatype="ruby">
         <source>Leah D.</source>
