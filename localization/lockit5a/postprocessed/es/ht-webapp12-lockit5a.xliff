@@ -302,7 +302,7 @@
       </trans-unit>
       <trans-unit id="7063" resname="r413262416" restype="string" datatype="x-haml">
         <source>We took our aggregate decades of medical and computer science expertise, our business acumen, and the experience we’ve gained from serving and surveying hundreds of millions of people and hundreds of thousands of doctors over the years, and came to three major conclusions:</source>
-        <target>Tomamos el cúmulo de décadas de conocimiento médico y de ciencias de la computación, nuestra visión de los negocios, y la experiencia que hemos ganado de servir y encuestar a cientos de millones de personas y cientos de miles de médicos en todo el mundo, y llegamos a tres grandes conclusiones:</target>
+        <target>Tomamos el cúmulo de décadas de conocimiento médico y de ciencias de la computación, nuestra visión de los negocios, y la experiencia que hemos ganado de servir y encuestar a cientos de millones de personas y cientos de miles de doctores en todo el mundo, y llegamos a tres grandes conclusiones:</target>
       </trans-unit>
       <trans-unit id="7064" resname="r802585118" restype="string" datatype="x-haml">
         <source>It has to come from the most knowledgeable and trustworthy experts.</source>
