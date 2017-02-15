@@ -2143,7 +2143,7 @@
       </trans-unit>
       <trans-unit id="440" resname="r276834703" restype="string" datatype="ruby">
         <source>Marijuana</source>
-        <target>Mariguana</target>
+        <target>Marihuana</target>
       </trans-unit>
       <trans-unit id="441" resname="r468221601" restype="string" datatype="ruby">
         <source>Cocaine</source>
@@ -2159,11 +2159,11 @@
       </trans-unit>
       <trans-unit id="444" resname="r763555502" restype="string" datatype="ruby">
         <source>Ecstasy</source>
-        <target>Extasis</target>
+        <target>Éxtasis</target>
       </trans-unit>
       <trans-unit id="445" resname="r394864593" restype="string" datatype="ruby">
         <source>Barbiturates / Benzodiazepines</source>
-        <target>Barbitúricos / Benzodiacepinas</target>
+        <target>Barbitúricos / Benzodiazepinas</target>
       </trans-unit>
       <trans-unit id="446" resname="r678640256" restype="string" datatype="ruby">
         <source>LSD</source>
@@ -2171,7 +2171,7 @@
       </trans-unit>
       <trans-unit id="447" resname="r504881313" restype="string" datatype="ruby">
         <source>Psychedelic Mushrooms</source>
-        <target>Hongos Psicogélicos</target>
+        <target>Hongos Psicodélicos</target>
       </trans-unit>
       <trans-unit id="448" resname="r224468636" restype="string" datatype="ruby">
         <source>Uninsured</source>
