@@ -30796,11 +30796,11 @@
       </trans-unit>
       <trans-unit id="6481" resname="Does {first_name} smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Does {first_name} smoke or chew tobacco or recently quit?</source>
-        <target>¿{first_name} fuma o masca tabaco o lo dejó recientemente?</target>
+        <target>¿{first_name} fuma, mastica tabaco o lo dejó recientemente?</target>
       </trans-unit>
       <trans-unit id="6482" resname="Does this person smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Does this person smoke or chew tobacco or recently quit?</source>
-        <target>¿Esta persona fuma o masca tabaco o lo dejó recientemente?</target>
+        <target>¿Esta persona fuma, mastica tabaco o lo dejó recientemente?</target>
       </trans-unit>
       <trans-unit id="6483" resname="Do you smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Do you smoke or chew tobacco or recently quit?</source>
