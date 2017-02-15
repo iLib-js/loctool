@@ -494,7 +494,7 @@
       </trans-unit>
       <trans-unit id="7111" resname="r368530188" restype="string" datatype="x-haml">
         <source>Where we are headed</source>
-        <target>¿A dónde nos estamos dirigiendo?</target>
+        <target>¿A dónde nos dirigimos?</target>
       </trans-unit>
       <trans-unit id="7112" resname="r104941884" restype="string" datatype="x-haml">
         <source>of the world’s population. We’re laying the groundwork for a movement</source>
@@ -10641,7 +10641,7 @@
       </trans-unit>
       <trans-unit id="7771" resname="r328831441" restype="string" datatype="x-haml">
         <source>I think searching for information online is great for many things, I just don't think your health is one of them. With</source>
-        <target>Creo que buscar información en línea es bueno para muchas cosas, solo no creo que tu salud sea una de ella. Con</target>
+        <target>Creo que buscar información en línea es bueno para muchas cosas, solo no creo que tu salud sea una de ellas. Con</target>
       </trans-unit>
       <trans-unit id="7772" resname="r1000879257" restype="string" datatype="x-haml">
         <source>Jennifer J.,</source>
@@ -13641,7 +13641,7 @@
       </trans-unit>
       <trans-unit id="7225" resname="r479404643" restype="string" datatype="x-haml">
         <source>Having a good, hard laugh.</source>
-        <target>Riéndonos bueno y duro.</target>
+        <target>Reír intensamente.</target>
       </trans-unit>
       <trans-unit id="7226" resname="r297407413" restype="string" datatype="x-haml">
         <source>Paying someone a compliment.</source>
