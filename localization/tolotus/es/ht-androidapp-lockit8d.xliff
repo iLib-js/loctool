@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="src/com/healthtap/userhtexpress/fragments/main/AskQuestionToDocFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="r682432029" restype="string" datatype="java">
+        <source>Try a Virtual Consult ›</source>
+        <target state="translated">Prueba una Consulta Virtual ›</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="5" resname="r398172866" restype="string" datatype="x-android-resource">
+        <source>Error:</source>
+        <target state="translated">Error:</target>
+      </trans-unit>
+      <trans-unit id="6" resname="r465894884" restype="string" datatype="x-android-resource">
+        <source>Test Name:</source>
+        <target state="translated">Nombre de Prueba:</target>
+      </trans-unit>
+      <trans-unit id="8" resname="r704587734" restype="string" datatype="x-android-resource">
+        <source>Current Version:</source>
+        <target state="translated">Versión Actual:</target>
+      </trans-unit>
+      <trans-unit id="9" resname="r419221095" restype="string" datatype="x-android-resource">
+        <source>Size:</source>
+        <target state="translated">Tamaño:</target>
+      </trans-unit>
+      <trans-unit id="10" resname="r1043822317" restype="string" datatype="x-android-resource">
+        <source>In brief:</source>
+        <target state="translated">En resumen:</target>
+      </trans-unit>
+      <trans-unit id="13" resname="r901641921" restype="string" datatype="x-android-resource">
+        <source>per minute\n5-minute minimum</source>
+        <target state="translated">por minuto\n5 minutos mínimo</target>
+      </trans-unit>
+      <trans-unit id="14" resname="r194999707" restype="string" datatype="x-android-resource">
+        <source>{start}Your total{end}No commitment, cancel anytime</source>
+        <target state="translated">{start}Tu total{end}Sin compromiso, cancela en cualquier momento</target>
+      </trans-unit>
+      <trans-unit id="15" resname="r923373309" restype="string" datatype="x-android-resource">
+        <source>Your total for 1 consult</source>
+        <target state="translated">Tu total por 1 consulta</target>
+      </trans-unit>
+      <trans-unit id="16" resname="r580375147" restype="string" datatype="x-android-resource">
+        <source>Your card ending in *{four_digit_number} has expired. \n Please add a new one</source>
+        <target state="translated">Tu tarjeta terminando en *{four_digit_number} ha vencido. \n Por favor añade una nueva</target>
+      </trans-unit>
+      <trans-unit id="17" resname="r715343662" restype="string" datatype="x-android-resource">
+        <source>{start}Your total{end}\nFor additional options</source>
+        <target state="translated">{start}Tu total{end}\nPara opciones adicionales</target>
+      </trans-unit>
+      <trans-unit id="18" resname="r947674940" restype="string" datatype="x-android-resource">
+        <source>Failed while take picture:</source>
+        <target state="translated">Falló mientras se tomaba foto:</target>
+      </trans-unit>
+      <trans-unit id="19" resname="r119248257" restype="string" datatype="x-android-resource">
+        <source>\nPlease restart the app/device and try again.</source>
+        <target state="translated">\nPor favor, reinicia la aplicación/dispositivo e intenta otra vez.</target>
+      </trans-unit>
+      <trans-unit id="22" resname="r601449928" restype="string" datatype="x-android-resource">
+        <source>What to Ask Your Doc:</source>
+        <target state="translated">Qué Preguntarle a Tu Doc:</target>
+      </trans-unit>
+      <trans-unit id="23" resname="r412842851" restype="string" datatype="x-android-resource">
+        <source>Haiku:</source>
+        <target state="translated">Haiku:</target>
+      </trans-unit>
+      <trans-unit id="24" resname="r548900803" restype="string" datatype="x-android-resource">
+        <source>Myth:</source>
+        <target state="translated">Mito:</target>
+      </trans-unit>
+      <trans-unit id="25" resname="r142482154" restype="string" datatype="x-android-resource">
+        <source>agreed with {author_name}\'s tip on \n{topic_name}</source>
+        <target state="translated">estuvo de acuerdo con el tip de {author_name}\ acerca de \n{topic_name}</target>
+        <note annotates="source">Subject of this phrase is a doctor's name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
+      </trans-unit>
+      <trans-unit id="28" resname="r8034615" restype="string" datatype="x-android-resource">
+        <source>Failed to send kudos!</source>
+        <target state="translated">¡No se ha podido enviar kudos!</target>
+      </trans-unit>
+      <trans-unit id="29" resname="r279921341" restype="string" datatype="x-android-resource">
+        <source>Not finding what you need?</source>
+        <target state="translated">¿No encuentras lo que necesitas?</target>
+      </trans-unit>
+      <trans-unit id="32" resname="r383257904" restype="string" datatype="x-android-resource">
+        <source>Practicing:</source>
+        <target state="translated">Ejerciendo:</target>
+      </trans-unit>
+      <trans-unit id="33" resname="r437047272" restype="string" datatype="x-android-resource">
+        <source>Question not posted</source>
+        <target state="translated">Pregunta no publicada</target>
+      </trans-unit>
+      <trans-unit id="36" resname="r2882924" restype="string" datatype="x-android-resource">
+        <source>,</source>
+        <target state="translated">,</target>
+      </trans-unit>
+      <trans-unit id="37" resname="r338685022" restype="string" datatype="x-android-resource">
+        <source>Hi, Dr {doctor_name}!\n</source>
+        <target state="translated">¡Hola, Dr. {doctor_name}!\n</target>
+      </trans-unit>
+      <trans-unit id="38" resname="r9796713" restype="string" datatype="x-android-resource">
+        <source>To log in as a doctor, please download\n</source>
+        <target state="translated">Para ingresar como un doctor, por favor descarga\n</target>
+      </trans-unit>
+      <trans-unit id="49" resname="r50442212" restype="string" datatype="x-android-resource">
+        <source>Failed updating profile!</source>
+        <target state="translated">¡No se ha podido actualizar perfil!</target>
+      </trans-unit>
+      <trans-unit id="50" resname="r37614480" restype="string" datatype="x-android-resource">
+        <source>Failed sending request!</source>
+        <target state="translated">¡No se ha podido enviar solicitud!</target>
+      </trans-unit>
+      <trans-unit id="51" resname="r843399816" restype="string" datatype="x-android-resource">
+        <source>There are no checklists for this goal yet.\nWant a personalized checklist?</source>
+        <target state="translated">Aún no hay listados para esta meta.\n¿Quieres un listado personalizado?</target>
+      </trans-unit>
+      <trans-unit id="53" resname="r410094745" restype="string" datatype="x-android-resource">
+        <source>Do you have a follow-up question? Ask a doctor online now:</source>
+        <target state="translated">¿Tienes una pregunta de seguimiento? Pregúntale a un doctor en línea ahora:</target>
+      </trans-unit>
+      <trans-unit id="54" resname="r475478276" restype="string" datatype="x-android-resource">
+        <source>{name}\'s</source>
+        <target state="translated">{name}\</target>
+      </trans-unit>
+      <trans-unit id="55" resname="r390005620" restype="string" datatype="x-android-resource">
+        <source>{approver_name} agreed with {author_name}\'s checklist</source>
+        <target state="translated">{approver_name} estuvo de acuerdo con el listado de\ {author_name}</target>
+      </trans-unit>
+      <trans-unit id="56" resname="r984143101" restype="string" datatype="x-android-resource">
+        <source>Checklist:</source>
+        <target state="translated">Listado:</target>
+      </trans-unit>
+      <trans-unit id="58" resname="r30778288" restype="string" datatype="x-android-resource">
+        <source>{agreer_name} agrees with {answerer_name}\'s answer</source>
+        <target state="translated">{agreer_name} está de acuerdo con la respuesta de {answerer_name}</target>
+      </trans-unit>
+      <trans-unit id="59" resname="r153759784" restype="string" datatype="x-android-resource">
+        <source>{commenter_name} commented on {answerer_name}\'s answer</source>
+        <target state="translated">{commenter_name} comentó la respuesta de {answerer_name}</target>
+      </trans-unit>
+      <trans-unit id="60" resname="r920181258" restype="string" datatype="x-android-resource">
+        <source>Does {first_name}\'s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
+        <target state="translated">¿Los abuelos, padres o hermanos vivos de {first_name} tienen alguna condición médica mayor? (¿que atente contra la vida o no?)</target>
+      </trans-unit>
+      <trans-unit id="61" resname="r779525598" restype="string" datatype="x-android-resource">
+        <source>What is {first_name}\'s height and weight?</source>
+        <target state="translated">¿Cuál es la altura y peso de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="62" resname="r595763610" restype="string" datatype="x-android-resource">
+        <source>What is {first_name}\'s relationship to you</source>
+        <target state="translated">¿Cuál es la relación de {first_name} contigo?</target>
+      </trans-unit>
+      <trans-unit id="63" resname="r116490053" restype="string" datatype="x-android-resource">
+        <source>Please share {first_name}\'s obstetrics/pregnancy history</source>
+        <target state="translated">Por favor, comparte el historial obstétrico/de embarazo de {first_name}</target>
+      </trans-unit>
+      <trans-unit id="65" resname="r178597753" restype="string" datatype="x-android-resource">
+        <source>What is {first_name}\'s ethnicity?</source>
+        <target state="translated">¿Cuál es la etnia de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="66" resname="r482433768" restype="string" datatype="x-android-resource">
+        <source>How would you classify {first_name}\'s consumption of alcohol?</source>
+        <target state="translated">¿Cómo clasificarías el consumo de alcohol de {first_name}?</target>
+      </trans-unit>
+      <trans-unit id="68" resname="r287900893" restype="string" datatype="x-android-resource">
+        <source>Thank you!</source>
+        <target state="translated">¡Gracias!</target>
+      </trans-unit>
+      <trans-unit id="74" resname="r863086007" restype="string" datatype="x-android-resource">
+        <source>We appreciate you bringing this to our attention.</source>
+        <target state="translated">Apreciamos que nos traigas esto para nuestra consideración.</target>
+      </trans-unit>
+      <trans-unit id="77" resname="r252543260" restype="string" datatype="x-android-resource">
+        <source>Question:</source>
+        <target state="translated">Pregunta:</target>
+        <note annotates="source">Refers to a question previously posted by the user, followed by an error message.</note>
+      </trans-unit>
+      <trans-unit id="79" resname="r1018816419" restype="string" datatype="x-android-resource">
+        <source>Failed performing payment request. Error code:</source>
+        <target state="translated">No se ha podido realizar solicitud de pago. Código de error:</target>
+      </trans-unit>
+      <trans-unit id="89" resname="r884996706" restype="string" datatype="x-android-resource">
+        <source>One consult\t\t\t${0}</source>
+        <target state="translated">Una consulta\t\t\t${0}</target>
+        <note annotates="source">{0} is the price charged per consult. TODO: Localize currency?</note>
+      </trans-unit>
+      <trans-unit id="90" resname="r904183721" restype="string" datatype="x-android-resource">
+        <source>As this appointment is less than 24 hours away, it cannot be refunded if cancelled now.</source>
+        <target state="translated">Como esta cita está a menos de 24 horas, no puede ser reembolsada si es cancelada ahora.</target>
+      </trans-unit>
+      <trans-unit id="91" resname="r892816468" restype="string" datatype="x-android-resource">
+        <source>Failed to share on Facebook:</source>
+        <target state="translated">No se ha podido compartir en Facebook:</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

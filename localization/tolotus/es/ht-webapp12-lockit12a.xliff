@@ -1,0 +1,1855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/static_pages/raterx_results.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="53" resname="r108533132" restype="string" datatype="ruby">
+        <source>medication</source>
+        <target state="translated">medicamento</target>
+      </trans-unit>
+      <trans-unit id="55" resname="r1066207914" restype="string" datatype="ruby">
+        <source>procedure</source>
+        <target state="translated">procedimiento</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/chat/feelgood/chat_pdf/_referral_individual.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="143" resname="r679793727" restype="string" datatype="ruby">
+        <source>I'd like to refer you to:</source>
+        <target state="translated">Me gustaría referirte con:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/b2b/partial/_compass_phones.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="153" resname="r797088921" restype="string" datatype="ruby">
+        <source>Expert</source>
+        <target state="translated">Experto</target>
+      </trans-unit>
+      <trans-unit id="154" resname="r337038770" restype="string" datatype="ruby">
+        <source>Personalized</source>
+        <target state="translated">Personalizado</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person_notification.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="325" resname="r573774230" restype="string" datatype="ruby">
+        <source>responded</source>
+        <target state="translated">respondió</target>
+      </trans-unit>
+      <trans-unit id="326" resname="r1018498578" restype="string" datatype="ruby">
+        <source>answered</source>
+        <target state="translated">contestó</target>
+      </trans-unit>
+      <trans-unit id="330" resname="r236050162" restype="string" datatype="ruby">
+        <source>there</source>
+        <target state="translated">¿qué tal?</target>
+      </trans-unit>
+      <trans-unit id="331" resname="r650101752" restype="string" datatype="ruby">
+        <source>your</source>
+        <target state="translated">tu</target>
+      </trans-unit>
+      <trans-unit id="332" resname="r827947604" restype="string" datatype="ruby">
+        <source>PayPal</source>
+        <target state="translated">PayPal</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/loc_strings_dummy.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="525" resname="r688992261" restype="string" datatype="ruby">
+        <source>Credit card number is invalid.</source>
+        <target state="translated">El número de la tarjeta de crédito es inválido.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/kb_attribute_relationship.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="548" resname="r1015693398" restype="string" datatype="ruby">
+        <source>Clinical Finding</source>
+        <target state="translated">Hallazgo Clínico</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/expert.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="553" resname="r25035652" restype="string" datatype="ruby">
+        <source>Medical Student</source>
+        <target state="translated">Estudiantes de Medicina</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/api/v2/reference_controller.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="581" resname="r64369469" restype="string" datatype="ruby">
+        <source>Afrikaans</source>
+        <target state="translated">Afrikaans</target>
+      </trans-unit>
+      <trans-unit id="582" resname="r524484063" restype="string" datatype="ruby">
+        <source>Albanian</source>
+        <target state="translated">Albanés</target>
+      </trans-unit>
+      <trans-unit id="584" resname="r124831304" restype="string" datatype="ruby">
+        <source>Amharic</source>
+        <target state="translated">Amárico</target>
+      </trans-unit>
+      <trans-unit id="585" resname="r994530773" restype="string" datatype="ruby">
+        <source>Arabic</source>
+        <target state="translated">Árabe</target>
+      </trans-unit>
+      <trans-unit id="586" resname="r462809900" restype="string" datatype="ruby">
+        <source>Armenian</source>
+        <target state="translated">Armenio</target>
+      </trans-unit>
+      <trans-unit id="587" resname="r317301997" restype="string" datatype="ruby">
+        <source>Assamese</source>
+        <target state="translated">Asamés</target>
+      </trans-unit>
+      <trans-unit id="588" resname="r945574191" restype="string" datatype="ruby">
+        <source>Aymara</source>
+        <target state="translated">Aymara</target>
+      </trans-unit>
+      <trans-unit id="590" resname="r30469638" restype="string" datatype="ruby">
+        <source>Azeri</source>
+        <target state="translated">Azerí</target>
+      </trans-unit>
+      <trans-unit id="591" resname="r472736007" restype="string" datatype="ruby">
+        <source>Belarusian</source>
+        <target state="translated">Bielorruso</target>
+      </trans-unit>
+      <trans-unit id="592" resname="r842452302" restype="string" datatype="ruby">
+        <source>Bengali</source>
+        <target state="translated">Bengalí</target>
+      </trans-unit>
+      <trans-unit id="594" resname="r1034553322" restype="string" datatype="ruby">
+        <source>Bislama</source>
+        <target state="translated">Bislama</target>
+      </trans-unit>
+      <trans-unit id="595" resname="r553784659" restype="string" datatype="ruby">
+        <source>Bosnian</source>
+        <target state="translated">Bosnio</target>
+      </trans-unit>
+      <trans-unit id="596" resname="r252213779" restype="string" datatype="ruby">
+        <source>Bulgarian</source>
+        <target state="translated">Búlgaro</target>
+      </trans-unit>
+      <trans-unit id="597" resname="r600002441" restype="string" datatype="ruby">
+        <source>Burmese</source>
+        <target state="translated">Birmano</target>
+      </trans-unit>
+      <trans-unit id="599" resname="r477304668" restype="string" datatype="ruby">
+        <source>Catalan</source>
+        <target state="translated">Catalán</target>
+      </trans-unit>
+      <trans-unit id="604" resname="r392065641" restype="string" datatype="ruby">
+        <source>Croatian</source>
+        <target state="translated">Croata</target>
+      </trans-unit>
+      <trans-unit id="605" resname="r844605273" restype="string" datatype="ruby">
+        <source>Czech</source>
+        <target state="translated">Checo</target>
+      </trans-unit>
+      <trans-unit id="606" resname="r78420415" restype="string" datatype="ruby">
+        <source>Danish</source>
+        <target state="translated">Danés</target>
+      </trans-unit>
+      <trans-unit id="607" resname="r799749943" restype="string" datatype="ruby">
+        <source>Dari</source>
+        <target state="translated">Dari</target>
+      </trans-unit>
+      <trans-unit id="608" resname="r381131646" restype="string" datatype="ruby">
+        <source>Dhivehi</source>
+        <target state="translated">Dhivehi</target>
+      </trans-unit>
+      <trans-unit id="609" resname="r86086132" restype="string" datatype="ruby">
+        <source>Dutch</source>
+        <target state="translated">Holandés</target>
+      </trans-unit>
+      <trans-unit id="610" resname="r1062383319" restype="string" datatype="ruby">
+        <source>Dzongkha</source>
+        <target state="translated">Dzongkha</target>
+      </trans-unit>
+      <trans-unit id="611" resname="r418009985" restype="string" datatype="ruby">
+        <source>English</source>
+        <target state="translated">Inglés</target>
+      </trans-unit>
+      <trans-unit id="612" resname="r250949999" restype="string" datatype="ruby">
+        <source>Estonian</source>
+        <target state="translated">Estonio</target>
+      </trans-unit>
+      <trans-unit id="613" resname="r717637135" restype="string" datatype="ruby">
+        <source>Filipino</source>
+        <target state="translated">Filipino</target>
+      </trans-unit>
+      <trans-unit id="614" resname="r23207023" restype="string" datatype="ruby">
+        <source>Finnish</source>
+        <target state="translated">Finlandés</target>
+      </trans-unit>
+      <trans-unit id="615" resname="r385483397" restype="string" datatype="ruby">
+        <source>French</source>
+        <target state="translated">Francés</target>
+      </trans-unit>
+      <trans-unit id="616" resname="r998395174" restype="string" datatype="ruby">
+        <source>Gagauz</source>
+        <target state="translated">Gagauz</target>
+      </trans-unit>
+      <trans-unit id="617" resname="r336368566" restype="string" datatype="ruby">
+        <source>Georgian</source>
+        <target state="translated">Georgiano</target>
+      </trans-unit>
+      <trans-unit id="618" resname="r347310607" restype="string" datatype="ruby">
+        <source>German</source>
+        <target state="translated">Alemán</target>
+      </trans-unit>
+      <trans-unit id="619" resname="r1005233200" restype="string" datatype="ruby">
+        <source>Greek</source>
+        <target state="translated">Griego</target>
+      </trans-unit>
+      <trans-unit id="621" resname="r1052291476" restype="string" datatype="ruby">
+        <source>Gujarati</source>
+        <target state="translated">Gujarati</target>
+      </trans-unit>
+      <trans-unit id="622" resname="r393783724" restype="string" datatype="ruby">
+        <source>Haitian Creole</source>
+        <target state="translated">Criollo haitiano</target>
+      </trans-unit>
+      <trans-unit id="624" resname="r625231635" restype="string" datatype="ruby">
+        <source>Hebrew</source>
+        <target state="translated">Hebreo</target>
+      </trans-unit>
+      <trans-unit id="625" resname="r299343497" restype="string" datatype="ruby">
+        <source>Hindi</source>
+        <target state="translated">Hindi</target>
+      </trans-unit>
+      <trans-unit id="626" resname="r452474430" restype="string" datatype="ruby">
+        <source>Hiri Motu</source>
+        <target state="translated">Hiri Motu</target>
+      </trans-unit>
+      <trans-unit id="628" resname="r965769127" restype="string" datatype="ruby">
+        <source>Hungarian</source>
+        <target state="translated">Húngaro</target>
+      </trans-unit>
+      <trans-unit id="629" resname="r409900291" restype="string" datatype="ruby">
+        <source>Icelandic</source>
+        <target state="translated">Islandés</target>
+      </trans-unit>
+      <trans-unit id="631" resname="r58632739" restype="string" datatype="ruby">
+        <source>Indonesian</source>
+        <target state="translated">Indonesio</target>
+      </trans-unit>
+      <trans-unit id="632" resname="r808973021" restype="string" datatype="ruby">
+        <source>Irish Gaelic</source>
+        <target state="translated">Gaélico irlandés</target>
+      </trans-unit>
+      <trans-unit id="633" resname="r757336181" restype="string" datatype="ruby">
+        <source>Italian</source>
+        <target state="translated">Italiano</target>
+      </trans-unit>
+      <trans-unit id="634" resname="r747825251" restype="string" datatype="ruby">
+        <source>Japanese</source>
+        <target state="translated">Japonés</target>
+      </trans-unit>
+      <trans-unit id="635" resname="r715679316" restype="string" datatype="ruby">
+        <source>Kannada</source>
+        <target state="translated">Kannada</target>
+      </trans-unit>
+      <trans-unit id="636" resname="r823679694" restype="string" datatype="ruby">
+        <source>Kashmiri</source>
+        <target state="translated">Kashmiri</target>
+      </trans-unit>
+      <trans-unit id="637" resname="r97931707" restype="string" datatype="ruby">
+        <source>Kazakh</source>
+        <target state="translated">Kazajo</target>
+      </trans-unit>
+      <trans-unit id="638" resname="r172263155" restype="string" datatype="ruby">
+        <source>Khmer</source>
+        <target state="translated">Camboyano</target>
+      </trans-unit>
+      <trans-unit id="639" resname="r124563436" restype="string" datatype="ruby">
+        <source>Korean</source>
+        <target state="translated">Coreano</target>
+      </trans-unit>
+      <trans-unit id="640" resname="r585040718" restype="string" datatype="ruby">
+        <source>Kurdish</source>
+        <target state="translated">Kurdo</target>
+      </trans-unit>
+      <trans-unit id="642" resname="r887328646" restype="string" datatype="ruby">
+        <source>Kyrgyz</source>
+        <target state="translated">Kirguís</target>
+      </trans-unit>
+      <trans-unit id="643" resname="r653937649" restype="string" datatype="ruby">
+        <source>Lao</source>
+        <target state="translated">Lao</target>
+      </trans-unit>
+      <trans-unit id="644" resname="r1062369326" restype="string" datatype="ruby">
+        <source>Latvian</source>
+        <target state="translated">Letón</target>
+      </trans-unit>
+      <trans-unit id="645" resname="r922951220" restype="string" datatype="ruby">
+        <source>Lithuanian</source>
+        <target state="translated">Lituano</target>
+      </trans-unit>
+      <trans-unit id="646" resname="r24051303" restype="string" datatype="ruby">
+        <source>Luxembourgish</source>
+        <target state="translated">Luxemburgués</target>
+      </trans-unit>
+      <trans-unit id="647" resname="r969665863" restype="string" datatype="ruby">
+        <source>Macedonian</source>
+        <target state="translated">Macedonio</target>
+      </trans-unit>
+      <trans-unit id="648" resname="r39407306" restype="string" datatype="ruby">
+        <source>Malagasy</source>
+        <target state="translated">Malgache</target>
+      </trans-unit>
+      <trans-unit id="649" resname="r219334263" restype="string" datatype="ruby">
+        <source>Malay</source>
+        <target state="translated">Malayo</target>
+      </trans-unit>
+      <trans-unit id="650" resname="r1031327609" restype="string" datatype="ruby">
+        <source>Malayalam</source>
+        <target state="translated">Malabar</target>
+      </trans-unit>
+      <trans-unit id="651" resname="r992361300" restype="string" datatype="ruby">
+        <source>Maltese</source>
+        <target state="translated">Maltés</target>
+      </trans-unit>
+      <trans-unit id="653" resname="r295517461" restype="string" datatype="ruby">
+        <source>Marathi</source>
+        <target state="translated">Marathi</target>
+      </trans-unit>
+      <trans-unit id="654" resname="r929522856" restype="string" datatype="ruby">
+        <source>Moldovan</source>
+        <target state="translated">Moldavo</target>
+      </trans-unit>
+      <trans-unit id="655" resname="r128397088" restype="string" datatype="ruby">
+        <source>Mongolian</source>
+        <target state="translated">Mongól</target>
+      </trans-unit>
+      <trans-unit id="656" resname="r669599982" restype="string" datatype="ruby">
+        <source>Montenegrin</source>
+        <target state="translated">Montegrino</target>
+      </trans-unit>
+      <trans-unit id="658" resname="r273552979" restype="string" datatype="ruby">
+        <source>Ndebele</source>
+        <target state="translated">Ndebele</target>
+      </trans-unit>
+      <trans-unit id="659" resname="r877893297" restype="string" datatype="ruby">
+        <source>Nepali</source>
+        <target state="translated">Nepalés</target>
+      </trans-unit>
+      <trans-unit id="660" resname="r1025504566" restype="string" datatype="ruby">
+        <source>New Zealand Sign Language</source>
+        <target state="translated">Lenguaje de Señas de Nueva Zelanda</target>
+      </trans-unit>
+      <trans-unit id="661" resname="r804381022" restype="string" datatype="ruby">
+        <source>Northern Sotho</source>
+        <target state="translated">Sesotho del Norte</target>
+      </trans-unit>
+      <trans-unit id="662" resname="r288217785" restype="string" datatype="ruby">
+        <source>Norwegian</source>
+        <target state="translated">Noruego</target>
+      </trans-unit>
+      <trans-unit id="663" resname="r22766918" restype="string" datatype="ruby">
+        <source>Oriya</source>
+        <target state="translated">Oriya</target>
+      </trans-unit>
+      <trans-unit id="664" resname="r61468680" restype="string" datatype="ruby">
+        <source>Papiamento</source>
+        <target state="translated">Papicamento</target>
+      </trans-unit>
+      <trans-unit id="665" resname="r1018646491" restype="string" datatype="ruby">
+        <source>Pashto</source>
+        <target state="translated">Pastún</target>
+      </trans-unit>
+      <trans-unit id="666" resname="r509907104" restype="string" datatype="ruby">
+        <source>Persian</source>
+        <target state="translated">Persa</target>
+      </trans-unit>
+      <trans-unit id="667" resname="r505291131" restype="string" datatype="ruby">
+        <source>Polish</source>
+        <target state="translated">Polaco</target>
+      </trans-unit>
+      <trans-unit id="668" resname="r779355176" restype="string" datatype="ruby">
+        <source>Portuguese</source>
+        <target state="translated">Portugués</target>
+      </trans-unit>
+      <trans-unit id="671" resname="r844317309" restype="string" datatype="ruby">
+        <source>Punjabi</source>
+        <target state="translated">Panyabí</target>
+      </trans-unit>
+      <trans-unit id="672" resname="r89307646" restype="string" datatype="ruby">
+        <source>Quechua</source>
+        <target state="translated">Qechua</target>
+      </trans-unit>
+      <trans-unit id="673" resname="r492683575" restype="string" datatype="ruby">
+        <source>Romanian</source>
+        <target state="translated">Rumano</target>
+      </trans-unit>
+      <trans-unit id="674" resname="r344562292" restype="string" datatype="ruby">
+        <source>Russian</source>
+        <target state="translated">Ruso</target>
+      </trans-unit>
+      <trans-unit id="677" resname="r699427958" restype="string" datatype="ruby">
+        <source>Somali</source>
+        <target state="translated">Somalí</target>
+      </trans-unit>
+      <trans-unit id="678" resname="r76442835" restype="string" datatype="ruby">
+        <source>Sotho</source>
+        <target state="translated">Sesotho</target>
+      </trans-unit>
+      <trans-unit id="679" resname="r686765566" restype="string" datatype="ruby">
+        <source>Spanish</source>
+        <target state="translated">Español</target>
+      </trans-unit>
+      <trans-unit id="682" resname="r117674409" restype="string" datatype="ruby">
+        <source>Swahili</source>
+        <target state="translated">Swahili</target>
+      </trans-unit>
+      <trans-unit id="683" resname="r442888062" restype="string" datatype="ruby">
+        <source>Swati</source>
+        <target state="translated">Swati</target>
+      </trans-unit>
+      <trans-unit id="684" resname="r970745711" restype="string" datatype="ruby">
+        <source>Swedish</source>
+        <target state="translated">Sueco</target>
+      </trans-unit>
+      <trans-unit id="685" resname="r158036455" restype="string" datatype="ruby">
+        <source>Tajik</source>
+        <target state="translated">Tajiko</target>
+      </trans-unit>
+      <trans-unit id="686" resname="r318308471" restype="string" datatype="ruby">
+        <source>Tamil</source>
+        <target state="translated">Tamil</target>
+      </trans-unit>
+      <trans-unit id="687" resname="r1044065826" restype="string" datatype="ruby">
+        <source>Telugu</source>
+        <target state="translated">Télugu</target>
+      </trans-unit>
+      <trans-unit id="688" resname="r297392812" restype="string" datatype="ruby">
+        <source>Tetum</source>
+        <target state="translated">Tetum</target>
+      </trans-unit>
+      <trans-unit id="689" resname="r795893022" restype="string" datatype="ruby">
+        <source>Thai</source>
+        <target state="translated">Tailandés</target>
+      </trans-unit>
+      <trans-unit id="691" resname="r692896047" restype="string" datatype="ruby">
+        <source>Tok Pisin</source>
+        <target state="translated">Tok pisin</target>
+      </trans-unit>
+      <trans-unit id="692" resname="r783268954" restype="string" datatype="ruby">
+        <source>Tsonga</source>
+        <target state="translated">Tsonga</target>
+      </trans-unit>
+      <trans-unit id="693" resname="r406607083" restype="string" datatype="ruby">
+        <source>Tswana</source>
+        <target state="translated">Setsuana</target>
+      </trans-unit>
+      <trans-unit id="698" resname="r23136728" restype="string" datatype="ruby">
+        <source>West Frisian</source>
+        <target state="translated">Frisón occidental</target>
+      </trans-unit>
+      <trans-unit id="699" resname="r716865978" restype="string" datatype="ruby">
+        <source>Yiddish</source>
+        <target state="translated">Yidis</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/views/admin/compensation_report.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="709" resname="The compensation report from {start_date} to {end_date} is being generated.                   It is gonna take a while. You will get an email once it is ready!" restype="string" datatype="javascript">
+        <source>The compensation report from {start_date} to {end_date} is being generated.                   It is gonna take a while. You will get an email once it is ready!</source>
+        <target state="translated">El reporte de compensación de {start_date} a {end_date} está siendo generado. Va a tomar un rato. ¡Recibirás un correo electrónico cuando esté listo!</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/credit_card_simple.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="720" resname="United States" restype="string" datatype="javascript">
+        <source>United States</source>
+        <target state="translated">Estados Unidos</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="730" resname="Afghanistan" restype="string" datatype="javascript">
+        <source>Afghanistan</source>
+        <target state="translated">Afganistán</target>
+      </trans-unit>
+      <trans-unit id="731" resname="Albania" restype="string" datatype="javascript">
+        <source>Albania</source>
+        <target state="translated">Albania</target>
+      </trans-unit>
+      <trans-unit id="732" resname="Algeria" restype="string" datatype="javascript">
+        <source>Algeria</source>
+        <target state="translated">Algeria</target>
+      </trans-unit>
+      <trans-unit id="733" resname="Andorra" restype="string" datatype="javascript">
+        <source>Andorra</source>
+        <target state="translated">Andorra</target>
+      </trans-unit>
+      <trans-unit id="734" resname="Angola" restype="string" datatype="javascript">
+        <source>Angola</source>
+        <target state="translated">Angola</target>
+      </trans-unit>
+      <trans-unit id="735" resname="Antigua and Barbuda" restype="string" datatype="javascript">
+        <source>Antigua and Barbuda</source>
+        <target state="translated">Antigua y Barbuda</target>
+      </trans-unit>
+      <trans-unit id="736" resname="Argentina" restype="string" datatype="javascript">
+        <source>Argentina</source>
+        <target state="translated">Argentina</target>
+      </trans-unit>
+      <trans-unit id="737" resname="Armenia" restype="string" datatype="javascript">
+        <source>Armenia</source>
+        <target state="translated">Armenia</target>
+      </trans-unit>
+      <trans-unit id="738" resname="Aruba" restype="string" datatype="javascript">
+        <source>Aruba</source>
+        <target state="translated">Aruba</target>
+      </trans-unit>
+      <trans-unit id="739" resname="Australia" restype="string" datatype="javascript">
+        <source>Australia</source>
+        <target state="translated">Australia</target>
+      </trans-unit>
+      <trans-unit id="740" resname="Austria" restype="string" datatype="javascript">
+        <source>Austria</source>
+        <target state="translated">Austria</target>
+      </trans-unit>
+      <trans-unit id="741" resname="Azerbaijan" restype="string" datatype="javascript">
+        <source>Azerbaijan</source>
+        <target state="translated">Azerbaijan</target>
+      </trans-unit>
+      <trans-unit id="742" resname="Bahamas, The" restype="string" datatype="javascript">
+        <source>Bahamas, The</source>
+        <target state="translated">Bahamas, Las</target>
+      </trans-unit>
+      <trans-unit id="743" resname="Bahrain" restype="string" datatype="javascript">
+        <source>Bahrain</source>
+        <target state="translated">Bahrain</target>
+      </trans-unit>
+      <trans-unit id="744" resname="Bangladesh" restype="string" datatype="javascript">
+        <source>Bangladesh</source>
+        <target state="translated">Bangladesh</target>
+      </trans-unit>
+      <trans-unit id="745" resname="Barbados" restype="string" datatype="javascript">
+        <source>Barbados</source>
+        <target state="translated">Barbados</target>
+      </trans-unit>
+      <trans-unit id="746" resname="Belarus" restype="string" datatype="javascript">
+        <source>Belarus</source>
+        <target state="translated">Belarus</target>
+      </trans-unit>
+      <trans-unit id="747" resname="Belgium" restype="string" datatype="javascript">
+        <source>Belgium</source>
+        <target state="translated">Bélgica</target>
+      </trans-unit>
+      <trans-unit id="748" resname="Belize" restype="string" datatype="javascript">
+        <source>Belize</source>
+        <target state="translated">Belize</target>
+      </trans-unit>
+      <trans-unit id="749" resname="Benin" restype="string" datatype="javascript">
+        <source>Benin</source>
+        <target state="translated">Benín</target>
+      </trans-unit>
+      <trans-unit id="750" resname="Bhutan" restype="string" datatype="javascript">
+        <source>Bhutan</source>
+        <target state="translated">Bhutan</target>
+      </trans-unit>
+      <trans-unit id="751" resname="Bolivia" restype="string" datatype="javascript">
+        <source>Bolivia</source>
+        <target state="translated">Bolivia</target>
+      </trans-unit>
+      <trans-unit id="752" resname="Bosnia and Herzegovina" restype="string" datatype="javascript">
+        <source>Bosnia and Herzegovina</source>
+        <target state="translated">Bosnia y Herzegovina</target>
+      </trans-unit>
+      <trans-unit id="753" resname="Botswana" restype="string" datatype="javascript">
+        <source>Botswana</source>
+        <target state="translated">Botswana</target>
+      </trans-unit>
+      <trans-unit id="754" resname="Brazil" restype="string" datatype="javascript">
+        <source>Brazil</source>
+        <target state="translated">Brazil</target>
+      </trans-unit>
+      <trans-unit id="755" resname="Brunei" restype="string" datatype="javascript">
+        <source>Brunei</source>
+        <target state="translated">Brunei</target>
+      </trans-unit>
+      <trans-unit id="756" resname="Bulgaria" restype="string" datatype="javascript">
+        <source>Bulgaria</source>
+        <target state="translated">Bulgaria</target>
+      </trans-unit>
+      <trans-unit id="757" resname="Burkina Faso" restype="string" datatype="javascript">
+        <source>Burkina Faso</source>
+        <target state="translated">Burkina Faso</target>
+      </trans-unit>
+      <trans-unit id="758" resname="Burma" restype="string" datatype="javascript">
+        <source>Burma</source>
+        <target state="translated">Burma</target>
+      </trans-unit>
+      <trans-unit id="759" resname="Burundi" restype="string" datatype="javascript">
+        <source>Burundi</source>
+        <target state="translated">Burundi</target>
+      </trans-unit>
+      <trans-unit id="760" resname="Cambodia" restype="string" datatype="javascript">
+        <source>Cambodia</source>
+        <target state="translated">Camboya</target>
+      </trans-unit>
+      <trans-unit id="761" resname="Cameroon" restype="string" datatype="javascript">
+        <source>Cameroon</source>
+        <target state="translated">Camerún</target>
+      </trans-unit>
+      <trans-unit id="762" resname="Canada" restype="string" datatype="javascript">
+        <source>Canada</source>
+        <target state="translated">Canada</target>
+      </trans-unit>
+      <trans-unit id="763" resname="Cape Verde" restype="string" datatype="javascript">
+        <source>Cape Verde</source>
+        <target state="translated">Cabo Verde</target>
+      </trans-unit>
+      <trans-unit id="764" resname="Central African Republic" restype="string" datatype="javascript">
+        <source>Central African Republic</source>
+        <target state="translated">República Centroafricana</target>
+      </trans-unit>
+      <trans-unit id="765" resname="Chad" restype="string" datatype="javascript">
+        <source>Chad</source>
+        <target state="translated">Chad</target>
+      </trans-unit>
+      <trans-unit id="766" resname="Chile" restype="string" datatype="javascript">
+        <source>Chile</source>
+        <target state="translated">Chile</target>
+      </trans-unit>
+      <trans-unit id="767" resname="China" restype="string" datatype="javascript">
+        <source>China</source>
+        <target state="translated">China</target>
+      </trans-unit>
+      <trans-unit id="768" resname="Colombia" restype="string" datatype="javascript">
+        <source>Colombia</source>
+        <target state="translated">Colombia</target>
+      </trans-unit>
+      <trans-unit id="769" resname="Comoros" restype="string" datatype="javascript">
+        <source>Comoros</source>
+        <target state="translated">Comoros</target>
+      </trans-unit>
+      <trans-unit id="770" resname="Congo, Democratic Republic of the" restype="string" datatype="javascript">
+        <source>Congo, Democratic Republic of the</source>
+        <target state="translated">Congo, República Democrática del</target>
+      </trans-unit>
+      <trans-unit id="771" resname="Congo, Republic of the" restype="string" datatype="javascript">
+        <source>Congo, Republic of the</source>
+        <target state="translated">Congo, Repúblia del</target>
+      </trans-unit>
+      <trans-unit id="772" resname="Costa Rica" restype="string" datatype="javascript">
+        <source>Costa Rica</source>
+        <target state="translated">Costa Rica</target>
+      </trans-unit>
+      <trans-unit id="774" resname="Croatia" restype="string" datatype="javascript">
+        <source>Croatia</source>
+        <target state="translated">Croacia</target>
+      </trans-unit>
+      <trans-unit id="775" resname="Cuba" restype="string" datatype="javascript">
+        <source>Cuba</source>
+        <target state="translated">Cuba</target>
+      </trans-unit>
+      <trans-unit id="776" resname="Curacao" restype="string" datatype="javascript">
+        <source>Curacao</source>
+        <target state="translated">Curacao</target>
+      </trans-unit>
+      <trans-unit id="777" resname="Cyprus" restype="string" datatype="javascript">
+        <source>Cyprus</source>
+        <target state="translated">Chipre</target>
+      </trans-unit>
+      <trans-unit id="778" resname="Czech Republic" restype="string" datatype="javascript">
+        <source>Czech Republic</source>
+        <target state="translated">República Checa</target>
+      </trans-unit>
+      <trans-unit id="779" resname="Denmark" restype="string" datatype="javascript">
+        <source>Denmark</source>
+        <target state="translated">Dinamarca</target>
+      </trans-unit>
+      <trans-unit id="780" resname="Djibouti" restype="string" datatype="javascript">
+        <source>Djibouti</source>
+        <target state="translated">Djibouti</target>
+      </trans-unit>
+      <trans-unit id="781" resname="Dominica" restype="string" datatype="javascript">
+        <source>Dominica</source>
+        <target state="translated">Dominica</target>
+      </trans-unit>
+      <trans-unit id="782" resname="Dominican Republic" restype="string" datatype="javascript">
+        <source>Dominican Republic</source>
+        <target state="translated">República Dominicana</target>
+      </trans-unit>
+      <trans-unit id="783" resname="East Timor" restype="string" datatype="javascript">
+        <source>East Timor</source>
+        <target state="translated">Timor del Este</target>
+      </trans-unit>
+      <trans-unit id="784" resname="Ecuador" restype="string" datatype="javascript">
+        <source>Ecuador</source>
+        <target state="translated">Ecuador</target>
+      </trans-unit>
+      <trans-unit id="785" resname="Egypt" restype="string" datatype="javascript">
+        <source>Egypt</source>
+        <target state="translated">Egipto</target>
+      </trans-unit>
+      <trans-unit id="786" resname="El Salvador" restype="string" datatype="javascript">
+        <source>El Salvador</source>
+        <target state="translated">El Salvador</target>
+      </trans-unit>
+      <trans-unit id="787" resname="Equatorial Guinea" restype="string" datatype="javascript">
+        <source>Equatorial Guinea</source>
+        <target state="translated">Guinea Ecuatorial</target>
+      </trans-unit>
+      <trans-unit id="788" resname="Eritrea" restype="string" datatype="javascript">
+        <source>Eritrea</source>
+        <target state="translated">Eritrea</target>
+      </trans-unit>
+      <trans-unit id="789" resname="Estonia" restype="string" datatype="javascript">
+        <source>Estonia</source>
+        <target state="translated">Estonia</target>
+      </trans-unit>
+      <trans-unit id="790" resname="Ethiopia" restype="string" datatype="javascript">
+        <source>Ethiopia</source>
+        <target state="translated">Etiopia</target>
+      </trans-unit>
+      <trans-unit id="791" resname="Fiji" restype="string" datatype="javascript">
+        <source>Fiji</source>
+        <target state="translated">Fiji</target>
+      </trans-unit>
+      <trans-unit id="792" resname="Finland" restype="string" datatype="javascript">
+        <source>Finland</source>
+        <target state="translated">Finlandia</target>
+      </trans-unit>
+      <trans-unit id="793" resname="France" restype="string" datatype="javascript">
+        <source>France</source>
+        <target state="translated">Francia</target>
+      </trans-unit>
+      <trans-unit id="794" resname="Gabon" restype="string" datatype="javascript">
+        <source>Gabon</source>
+        <target state="translated">Gabon</target>
+      </trans-unit>
+      <trans-unit id="795" resname="Gambia" restype="string" datatype="javascript">
+        <source>Gambia</source>
+        <target state="translated">Gambia</target>
+      </trans-unit>
+      <trans-unit id="796" resname="Georgia" restype="string" datatype="javascript">
+        <source>Georgia</source>
+        <target state="translated">Georgia</target>
+      </trans-unit>
+      <trans-unit id="797" resname="Germany" restype="string" datatype="javascript">
+        <source>Germany</source>
+        <target state="translated">Alemania</target>
+      </trans-unit>
+      <trans-unit id="798" resname="Ghana" restype="string" datatype="javascript">
+        <source>Ghana</source>
+        <target state="translated">Ghana</target>
+      </trans-unit>
+      <trans-unit id="799" resname="Greece" restype="string" datatype="javascript">
+        <source>Greece</source>
+        <target state="translated">Grecia</target>
+      </trans-unit>
+      <trans-unit id="800" resname="Grenada" restype="string" datatype="javascript">
+        <source>Grenada</source>
+        <target state="translated">Granada</target>
+      </trans-unit>
+      <trans-unit id="801" resname="Guatemala" restype="string" datatype="javascript">
+        <source>Guatemala</source>
+        <target state="translated">Guatemala</target>
+      </trans-unit>
+      <trans-unit id="802" resname="Guinea" restype="string" datatype="javascript">
+        <source>Guinea</source>
+        <target state="translated">Guinea</target>
+      </trans-unit>
+      <trans-unit id="804" resname="Guyana" restype="string" datatype="javascript">
+        <source>Guyana</source>
+        <target state="translated">Guyana</target>
+      </trans-unit>
+      <trans-unit id="805" resname="Haiti" restype="string" datatype="javascript">
+        <source>Haiti</source>
+        <target state="translated">Haiti</target>
+      </trans-unit>
+      <trans-unit id="806" resname="Holy See" restype="string" datatype="javascript">
+        <source>Holy See</source>
+        <target state="translated">Santa Sede</target>
+      </trans-unit>
+      <trans-unit id="807" resname="Honduras" restype="string" datatype="javascript">
+        <source>Honduras</source>
+        <target state="translated">Honduras</target>
+      </trans-unit>
+      <trans-unit id="808" resname="Hong Kong" restype="string" datatype="javascript">
+        <source>Hong Kong</source>
+        <target state="translated">Hong Kong</target>
+      </trans-unit>
+      <trans-unit id="809" resname="Hungary" restype="string" datatype="javascript">
+        <source>Hungary</source>
+        <target state="translated">Hungría</target>
+      </trans-unit>
+      <trans-unit id="810" resname="Iceland" restype="string" datatype="javascript">
+        <source>Iceland</source>
+        <target state="translated">Islandia</target>
+      </trans-unit>
+      <trans-unit id="811" resname="India" restype="string" datatype="javascript">
+        <source>India</source>
+        <target state="translated">India</target>
+      </trans-unit>
+      <trans-unit id="812" resname="Indonesia" restype="string" datatype="javascript">
+        <source>Indonesia</source>
+        <target state="translated">Indonesia</target>
+      </trans-unit>
+      <trans-unit id="813" resname="Iran" restype="string" datatype="javascript">
+        <source>Iran</source>
+        <target state="translated">Iran</target>
+      </trans-unit>
+      <trans-unit id="814" resname="Iraq" restype="string" datatype="javascript">
+        <source>Iraq</source>
+        <target state="translated">Irak</target>
+      </trans-unit>
+      <trans-unit id="815" resname="Ireland" restype="string" datatype="javascript">
+        <source>Ireland</source>
+        <target state="translated">Irlanda</target>
+      </trans-unit>
+      <trans-unit id="816" resname="Israel" restype="string" datatype="javascript">
+        <source>Israel</source>
+        <target state="translated">Israel</target>
+      </trans-unit>
+      <trans-unit id="817" resname="Italy" restype="string" datatype="javascript">
+        <source>Italy</source>
+        <target state="translated">Italia</target>
+      </trans-unit>
+      <trans-unit id="818" resname="Jamaica" restype="string" datatype="javascript">
+        <source>Jamaica</source>
+        <target state="translated">Jamaica</target>
+      </trans-unit>
+      <trans-unit id="819" resname="Japan" restype="string" datatype="javascript">
+        <source>Japan</source>
+        <target state="translated">Japón</target>
+      </trans-unit>
+      <trans-unit id="820" resname="Jordan" restype="string" datatype="javascript">
+        <source>Jordan</source>
+        <target state="translated">Jordán</target>
+      </trans-unit>
+      <trans-unit id="821" resname="Kazakhstan" restype="string" datatype="javascript">
+        <source>Kazakhstan</source>
+        <target state="translated">Kazajistán</target>
+      </trans-unit>
+      <trans-unit id="822" resname="Kenya" restype="string" datatype="javascript">
+        <source>Kenya</source>
+        <target state="translated">Kenia</target>
+      </trans-unit>
+      <trans-unit id="823" resname="Kiribati" restype="string" datatype="javascript">
+        <source>Kiribati</source>
+        <target state="translated">Kiribati</target>
+      </trans-unit>
+      <trans-unit id="824" resname="Korea, North" restype="string" datatype="javascript">
+        <source>Korea, North</source>
+        <target state="translated">Corea, del Norte</target>
+      </trans-unit>
+      <trans-unit id="825" resname="Korea, South" restype="string" datatype="javascript">
+        <source>Korea, South</source>
+        <target state="translated">Corea, del Sur</target>
+      </trans-unit>
+      <trans-unit id="826" resname="Kosovo" restype="string" datatype="javascript">
+        <source>Kosovo</source>
+        <target state="translated">Kosovo</target>
+      </trans-unit>
+      <trans-unit id="827" resname="Kuwait" restype="string" datatype="javascript">
+        <source>Kuwait</source>
+        <target state="translated">Kuwait</target>
+      </trans-unit>
+      <trans-unit id="828" resname="Kyrgyzstan" restype="string" datatype="javascript">
+        <source>Kyrgyzstan</source>
+        <target state="translated">Kirguistán</target>
+      </trans-unit>
+      <trans-unit id="829" resname="Laos" restype="string" datatype="javascript">
+        <source>Laos</source>
+        <target state="translated">Laos</target>
+      </trans-unit>
+      <trans-unit id="830" resname="Latvia" restype="string" datatype="javascript">
+        <source>Latvia</source>
+        <target state="translated">Latvia</target>
+      </trans-unit>
+      <trans-unit id="831" resname="Lebanon" restype="string" datatype="javascript">
+        <source>Lebanon</source>
+        <target state="translated">Lebanon</target>
+      </trans-unit>
+      <trans-unit id="832" resname="Lesotho" restype="string" datatype="javascript">
+        <source>Lesotho</source>
+        <target state="translated">Lesoto</target>
+      </trans-unit>
+      <trans-unit id="833" resname="Liberia" restype="string" datatype="javascript">
+        <source>Liberia</source>
+        <target state="translated">Liberia</target>
+      </trans-unit>
+      <trans-unit id="834" resname="Libya" restype="string" datatype="javascript">
+        <source>Libya</source>
+        <target state="translated">Libia</target>
+      </trans-unit>
+      <trans-unit id="835" resname="Liechtenstein" restype="string" datatype="javascript">
+        <source>Liechtenstein</source>
+        <target state="translated">Liechtenstein</target>
+      </trans-unit>
+      <trans-unit id="836" resname="Lithuania" restype="string" datatype="javascript">
+        <source>Lithuania</source>
+        <target state="translated">Lituania</target>
+      </trans-unit>
+      <trans-unit id="837" resname="Luxembourg" restype="string" datatype="javascript">
+        <source>Luxembourg</source>
+        <target state="translated">Luxemburgo</target>
+      </trans-unit>
+      <trans-unit id="838" resname="Macau" restype="string" datatype="javascript">
+        <source>Macau</source>
+        <target state="translated">Macao</target>
+      </trans-unit>
+      <trans-unit id="839" resname="Macedonia" restype="string" datatype="javascript">
+        <source>Macedonia</source>
+        <target state="translated">Macedonia</target>
+      </trans-unit>
+      <trans-unit id="840" resname="Madagascar" restype="string" datatype="javascript">
+        <source>Madagascar</source>
+        <target state="translated">Madagascar</target>
+      </trans-unit>
+      <trans-unit id="841" resname="Malawi" restype="string" datatype="javascript">
+        <source>Malawi</source>
+        <target state="translated">Malaui</target>
+      </trans-unit>
+      <trans-unit id="842" resname="Malaysia" restype="string" datatype="javascript">
+        <source>Malaysia</source>
+        <target state="translated">Malasia</target>
+      </trans-unit>
+      <trans-unit id="843" resname="Maldives" restype="string" datatype="javascript">
+        <source>Maldives</source>
+        <target state="translated">Maldivas</target>
+      </trans-unit>
+      <trans-unit id="844" resname="Mali" restype="string" datatype="javascript">
+        <source>Mali</source>
+        <target state="translated">Mali</target>
+      </trans-unit>
+      <trans-unit id="845" resname="Malta" restype="string" datatype="javascript">
+        <source>Malta</source>
+        <target state="translated">Malta</target>
+      </trans-unit>
+      <trans-unit id="846" resname="Marshall Islands" restype="string" datatype="javascript">
+        <source>Marshall Islands</source>
+        <target state="translated">Islas Marshall</target>
+      </trans-unit>
+      <trans-unit id="847" resname="Mauritania" restype="string" datatype="javascript">
+        <source>Mauritania</source>
+        <target state="translated">Mauritania</target>
+      </trans-unit>
+      <trans-unit id="848" resname="Mauritius" restype="string" datatype="javascript">
+        <source>Mauritius</source>
+        <target state="translated">Mauritius</target>
+      </trans-unit>
+      <trans-unit id="849" resname="Mexico" restype="string" datatype="javascript">
+        <source>Mexico</source>
+        <target state="translated">México</target>
+      </trans-unit>
+      <trans-unit id="850" resname="Micronesia" restype="string" datatype="javascript">
+        <source>Micronesia</source>
+        <target state="translated">Micronesia</target>
+      </trans-unit>
+      <trans-unit id="851" resname="Moldova" restype="string" datatype="javascript">
+        <source>Moldova</source>
+        <target state="translated">Moldova</target>
+      </trans-unit>
+      <trans-unit id="852" resname="Monaco" restype="string" datatype="javascript">
+        <source>Monaco</source>
+        <target state="translated">Monaco</target>
+      </trans-unit>
+      <trans-unit id="853" resname="Mongolia" restype="string" datatype="javascript">
+        <source>Mongolia</source>
+        <target state="translated">Mongolia</target>
+      </trans-unit>
+      <trans-unit id="854" resname="Montenegro" restype="string" datatype="javascript">
+        <source>Montenegro</source>
+        <target state="translated">Montenegro</target>
+      </trans-unit>
+      <trans-unit id="855" resname="Morocco" restype="string" datatype="javascript">
+        <source>Morocco</source>
+        <target state="translated">Morocco</target>
+      </trans-unit>
+      <trans-unit id="856" resname="Mozambique" restype="string" datatype="javascript">
+        <source>Mozambique</source>
+        <target state="translated">Mozambique</target>
+      </trans-unit>
+      <trans-unit id="857" resname="Namibia" restype="string" datatype="javascript">
+        <source>Namibia</source>
+        <target state="translated">Namibia</target>
+      </trans-unit>
+      <trans-unit id="858" resname="Nauru" restype="string" datatype="javascript">
+        <source>Nauru</source>
+        <target state="translated">Nauru</target>
+      </trans-unit>
+      <trans-unit id="859" resname="Nepal" restype="string" datatype="javascript">
+        <source>Nepal</source>
+        <target state="translated">Nepal</target>
+      </trans-unit>
+      <trans-unit id="860" resname="Netherlands" restype="string" datatype="javascript">
+        <source>Netherlands</source>
+        <target state="translated">Países Bajos</target>
+      </trans-unit>
+      <trans-unit id="861" resname="Netherlands Antilles" restype="string" datatype="javascript">
+        <source>Netherlands Antilles</source>
+        <target state="translated">Antillas Neerlandesas</target>
+      </trans-unit>
+      <trans-unit id="862" resname="New Zealand" restype="string" datatype="javascript">
+        <source>New Zealand</source>
+        <target state="translated">Nueva Zelanda</target>
+      </trans-unit>
+      <trans-unit id="863" resname="Nicaragua" restype="string" datatype="javascript">
+        <source>Nicaragua</source>
+        <target state="translated">Nicaragua</target>
+      </trans-unit>
+      <trans-unit id="864" resname="Niger" restype="string" datatype="javascript">
+        <source>Niger</source>
+        <target state="translated">Níger</target>
+      </trans-unit>
+      <trans-unit id="865" resname="Nigeria" restype="string" datatype="javascript">
+        <source>Nigeria</source>
+        <target state="translated">Nigeria</target>
+      </trans-unit>
+      <trans-unit id="866" resname="North Korea" restype="string" datatype="javascript">
+        <source>North Korea</source>
+        <target state="translated">Corea del Norte</target>
+      </trans-unit>
+      <trans-unit id="867" resname="Norway" restype="string" datatype="javascript">
+        <source>Norway</source>
+        <target state="translated">Noruega</target>
+      </trans-unit>
+      <trans-unit id="868" resname="Oman" restype="string" datatype="javascript">
+        <source>Oman</source>
+        <target state="translated">Omán</target>
+      </trans-unit>
+      <trans-unit id="869" resname="Pakistan" restype="string" datatype="javascript">
+        <source>Pakistan</source>
+        <target state="translated">Pakistán</target>
+      </trans-unit>
+      <trans-unit id="870" resname="Palau" restype="string" datatype="javascript">
+        <source>Palau</source>
+        <target state="translated">Palau</target>
+      </trans-unit>
+      <trans-unit id="871" resname="Palestinian Territories" restype="string" datatype="javascript">
+        <source>Palestinian Territories</source>
+        <target state="translated">Territorios Palestinos</target>
+      </trans-unit>
+      <trans-unit id="872" resname="Panama" restype="string" datatype="javascript">
+        <source>Panama</source>
+        <target state="translated">Panamá</target>
+      </trans-unit>
+      <trans-unit id="873" resname="Papua New Guinea" restype="string" datatype="javascript">
+        <source>Papua New Guinea</source>
+        <target state="translated">Papua Nueva Guinea</target>
+      </trans-unit>
+      <trans-unit id="874" resname="Paraguay" restype="string" datatype="javascript">
+        <source>Paraguay</source>
+        <target state="translated">Paraguay</target>
+      </trans-unit>
+      <trans-unit id="875" resname="Peru" restype="string" datatype="javascript">
+        <source>Peru</source>
+        <target state="translated">Perú</target>
+      </trans-unit>
+      <trans-unit id="876" resname="Philippines" restype="string" datatype="javascript">
+        <source>Philippines</source>
+        <target state="translated">Filipinas</target>
+      </trans-unit>
+      <trans-unit id="877" resname="Poland" restype="string" datatype="javascript">
+        <source>Poland</source>
+        <target state="translated">Polonia</target>
+      </trans-unit>
+      <trans-unit id="878" resname="Portugal" restype="string" datatype="javascript">
+        <source>Portugal</source>
+        <target state="translated">Portugal</target>
+      </trans-unit>
+      <trans-unit id="879" resname="Qatar" restype="string" datatype="javascript">
+        <source>Qatar</source>
+        <target state="translated">Qatar</target>
+      </trans-unit>
+      <trans-unit id="880" resname="Romania" restype="string" datatype="javascript">
+        <source>Romania</source>
+        <target state="translated">Romania</target>
+      </trans-unit>
+      <trans-unit id="881" resname="Russia" restype="string" datatype="javascript">
+        <source>Russia</source>
+        <target state="translated">Rusia</target>
+      </trans-unit>
+      <trans-unit id="882" resname="Rwanda" restype="string" datatype="javascript">
+        <source>Rwanda</source>
+        <target state="translated">Ruanda</target>
+      </trans-unit>
+      <trans-unit id="883" resname="Saint Kitts and Nevis" restype="string" datatype="javascript">
+        <source>Saint Kitts and Nevis</source>
+        <target state="translated">San Cristóbal y Nieves</target>
+      </trans-unit>
+      <trans-unit id="884" resname="Saint Lucia" restype="string" datatype="javascript">
+        <source>Saint Lucia</source>
+        <target state="translated">Santa Lucía</target>
+      </trans-unit>
+      <trans-unit id="885" resname="Saint Vincent and the Grenadines" restype="string" datatype="javascript">
+        <source>Saint Vincent and the Grenadines</source>
+        <target state="translated">San Vicente y las Granadinas</target>
+      </trans-unit>
+      <trans-unit id="886" resname="Samoa" restype="string" datatype="javascript">
+        <source>Samoa</source>
+        <target state="translated">Samoa</target>
+      </trans-unit>
+      <trans-unit id="887" resname="San Marino" restype="string" datatype="javascript">
+        <source>San Marino</source>
+        <target state="translated">San Marino</target>
+      </trans-unit>
+      <trans-unit id="888" resname="Sao Tome and Principe" restype="string" datatype="javascript">
+        <source>Sao Tome and Principe</source>
+        <target state="translated">Santo Tomé y Príncipe</target>
+      </trans-unit>
+      <trans-unit id="889" resname="Saudi Arabia" restype="string" datatype="javascript">
+        <source>Saudi Arabia</source>
+        <target state="translated">Arabia Saudita</target>
+      </trans-unit>
+      <trans-unit id="890" resname="Senegal" restype="string" datatype="javascript">
+        <source>Senegal</source>
+        <target state="translated">Senegal</target>
+      </trans-unit>
+      <trans-unit id="891" resname="Serbia" restype="string" datatype="javascript">
+        <source>Serbia</source>
+        <target state="translated">Serbia</target>
+      </trans-unit>
+      <trans-unit id="892" resname="Seychelles" restype="string" datatype="javascript">
+        <source>Seychelles</source>
+        <target state="translated">Seychelles</target>
+      </trans-unit>
+      <trans-unit id="893" resname="Sierra Leone" restype="string" datatype="javascript">
+        <source>Sierra Leone</source>
+        <target state="translated">Sierra Leona</target>
+      </trans-unit>
+      <trans-unit id="894" resname="Singapore" restype="string" datatype="javascript">
+        <source>Singapore</source>
+        <target state="translated">Singapur</target>
+      </trans-unit>
+      <trans-unit id="895" resname="Sint Maarten" restype="string" datatype="javascript">
+        <source>Sint Maarten</source>
+        <target state="translated">Sint Maarten</target>
+      </trans-unit>
+      <trans-unit id="896" resname="Slovakia" restype="string" datatype="javascript">
+        <source>Slovakia</source>
+        <target state="translated">Eslovaquia</target>
+      </trans-unit>
+      <trans-unit id="897" resname="Slovenia" restype="string" datatype="javascript">
+        <source>Slovenia</source>
+        <target state="translated">Eslovenia</target>
+      </trans-unit>
+      <trans-unit id="898" resname="Solomon Islands" restype="string" datatype="javascript">
+        <source>Solomon Islands</source>
+        <target state="translated">Islas Salomón</target>
+      </trans-unit>
+      <trans-unit id="899" resname="Somalia" restype="string" datatype="javascript">
+        <source>Somalia</source>
+        <target state="translated">Somalia</target>
+      </trans-unit>
+      <trans-unit id="900" resname="South Africa" restype="string" datatype="javascript">
+        <source>South Africa</source>
+        <target state="translated">Sudáfrica</target>
+      </trans-unit>
+      <trans-unit id="901" resname="South Korea" restype="string" datatype="javascript">
+        <source>South Korea</source>
+        <target state="translated">Corea del Sur</target>
+      </trans-unit>
+      <trans-unit id="902" resname="South Sudan" restype="string" datatype="javascript">
+        <source>South Sudan</source>
+        <target state="translated">Sudán del Sur</target>
+      </trans-unit>
+      <trans-unit id="903" resname="Spain" restype="string" datatype="javascript">
+        <source>Spain</source>
+        <target state="translated">España</target>
+      </trans-unit>
+      <trans-unit id="904" resname="Sri Lanka" restype="string" datatype="javascript">
+        <source>Sri Lanka</source>
+        <target state="translated">Sri Lanka</target>
+      </trans-unit>
+      <trans-unit id="905" resname="Sudan" restype="string" datatype="javascript">
+        <source>Sudan</source>
+        <target state="translated">Sudán</target>
+      </trans-unit>
+      <trans-unit id="906" resname="Suriname" restype="string" datatype="javascript">
+        <source>Suriname</source>
+        <target state="translated">Surinam</target>
+      </trans-unit>
+      <trans-unit id="907" resname="Swaziland" restype="string" datatype="javascript">
+        <source>Swaziland</source>
+        <target state="translated">Suazilandia</target>
+      </trans-unit>
+      <trans-unit id="908" resname="Sweden" restype="string" datatype="javascript">
+        <source>Sweden</source>
+        <target state="translated">Suecia</target>
+      </trans-unit>
+      <trans-unit id="909" resname="Switzerland" restype="string" datatype="javascript">
+        <source>Switzerland</source>
+        <target state="translated">Suiza</target>
+      </trans-unit>
+      <trans-unit id="910" resname="Syria" restype="string" datatype="javascript">
+        <source>Syria</source>
+        <target state="translated">Siria</target>
+      </trans-unit>
+      <trans-unit id="911" resname="Taiwan" restype="string" datatype="javascript">
+        <source>Taiwan</source>
+        <target state="translated">Taiwan</target>
+      </trans-unit>
+      <trans-unit id="912" resname="Tajikistan" restype="string" datatype="javascript">
+        <source>Tajikistan</source>
+        <target state="translated">Tayikistán</target>
+      </trans-unit>
+      <trans-unit id="913" resname="Tanzania" restype="string" datatype="javascript">
+        <source>Tanzania</source>
+        <target state="translated">Tanzania</target>
+      </trans-unit>
+      <trans-unit id="914" resname="Thailand" restype="string" datatype="javascript">
+        <source>Thailand</source>
+        <target state="translated">Tailandia</target>
+      </trans-unit>
+      <trans-unit id="915" resname="Timor" restype="string" datatype="javascript">
+        <source>Timor</source>
+        <target state="translated">Timor</target>
+      </trans-unit>
+      <trans-unit id="916" resname="Leste" restype="string" datatype="javascript">
+        <source>Leste</source>
+        <target state="translated">Leste</target>
+      </trans-unit>
+      <trans-unit id="917" resname="Togo" restype="string" datatype="javascript">
+        <source>Togo</source>
+        <target state="translated">Togo</target>
+      </trans-unit>
+      <trans-unit id="918" resname="Tonga" restype="string" datatype="javascript">
+        <source>Tonga</source>
+        <target state="translated">Tonga</target>
+      </trans-unit>
+      <trans-unit id="919" resname="Trinidad and Tobago" restype="string" datatype="javascript">
+        <source>Trinidad and Tobago</source>
+        <target state="translated">Trinidad Y Tobago</target>
+      </trans-unit>
+      <trans-unit id="920" resname="Tunisia" restype="string" datatype="javascript">
+        <source>Tunisia</source>
+        <target state="translated">Tunisia</target>
+      </trans-unit>
+      <trans-unit id="921" resname="Turkey" restype="string" datatype="javascript">
+        <source>Turkey</source>
+        <target state="translated">Turquía</target>
+      </trans-unit>
+      <trans-unit id="922" resname="Turkmenistan" restype="string" datatype="javascript">
+        <source>Turkmenistan</source>
+        <target state="translated">Turkmenistán</target>
+      </trans-unit>
+      <trans-unit id="923" resname="Tuvalu" restype="string" datatype="javascript">
+        <source>Tuvalu</source>
+        <target state="translated">Tuvalu</target>
+      </trans-unit>
+      <trans-unit id="924" resname="Uganda" restype="string" datatype="javascript">
+        <source>Uganda</source>
+        <target state="translated">Uganda</target>
+      </trans-unit>
+      <trans-unit id="925" resname="Ukraine" restype="string" datatype="javascript">
+        <source>Ukraine</source>
+        <target state="translated">Ucrania</target>
+      </trans-unit>
+      <trans-unit id="926" resname="United Arab Emirates" restype="string" datatype="javascript">
+        <source>United Arab Emirates</source>
+        <target state="translated">Emiratos Árabes Unidos</target>
+      </trans-unit>
+      <trans-unit id="927" resname="United Kingdom" restype="string" datatype="javascript">
+        <source>United Kingdom</source>
+        <target state="translated">Reino Unido</target>
+      </trans-unit>
+      <trans-unit id="928" resname="Uruguay" restype="string" datatype="javascript">
+        <source>Uruguay</source>
+        <target state="translated">Uruguay</target>
+      </trans-unit>
+      <trans-unit id="929" resname="Uzbekistan" restype="string" datatype="javascript">
+        <source>Uzbekistan</source>
+        <target state="translated">Uzbekistán</target>
+      </trans-unit>
+      <trans-unit id="930" resname="Vanuatu" restype="string" datatype="javascript">
+        <source>Vanuatu</source>
+        <target state="translated">Vanuatu</target>
+      </trans-unit>
+      <trans-unit id="931" resname="Venezuela" restype="string" datatype="javascript">
+        <source>Venezuela</source>
+        <target state="translated">Venezuela</target>
+      </trans-unit>
+      <trans-unit id="932" resname="Vietnam" restype="string" datatype="javascript">
+        <source>Vietnam</source>
+        <target state="translated">Vietnam</target>
+      </trans-unit>
+      <trans-unit id="933" resname="Yemen" restype="string" datatype="javascript">
+        <source>Yemen</source>
+        <target state="translated">Yemen</target>
+      </trans-unit>
+      <trans-unit id="934" resname="Zambia" restype="string" datatype="javascript">
+        <source>Zambia</source>
+        <target state="translated">Zambia</target>
+      </trans-unit>
+      <trans-unit id="935" resname="Zimbabwe" restype="string" datatype="javascript">
+        <source>Zimbabwe</source>
+        <target state="translated">Zimbabue</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/ui_modules.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="942" resname="Update pharmacy" restype="string" datatype="javascript">
+        <source>Update pharmacy</source>
+        <target state="translated">Actualizar farmacia</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="975" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target state="translated">No</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_soap_summary.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1138" resname="r884231903" restype="string" datatype="x-haml">
+        <source>Subjective (History):</source>
+        <target state="translated">Subjetivo (Historia):</target>
+      </trans-unit>
+      <trans-unit id="1139" resname="r696401974" restype="string" datatype="x-haml">
+        <source>Objective (Data):</source>
+        <target state="translated">Objectivo (Datos):</target>
+      </trans-unit>
+      <trans-unit id="1141" resname="r795802560" restype="string" datatype="x-haml">
+        <source>Diagnosis codes:</source>
+        <target state="translated">Códigos de Diagnóstico:</target>
+      </trans-unit>
+      <trans-unit id="1145" resname="r729158437" restype="string" datatype="x-haml">
+        <source>Reason for follow-up:</source>
+        <target state="translated">Razón para seguimiento:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_referral_specialty.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1146" resname="r564113392" restype="string" datatype="x-haml">
+        <source>Find specialist</source>
+        <target state="translated">Encontrar especialista</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_lab_result.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1149" resname="r867221592" restype="string" datatype="x-haml">
+        <source>They have returned with a critical value that require your attention.</source>
+        <target state="translated">Han vuelto con un valor crítico que requiere tu atención.</target>
+      </trans-unit>
+      <trans-unit id="1150" resname="r952103381" restype="string" datatype="x-haml">
+        <source>We encourage you to have a follow-up consult with a doctor again to understand what these results mean and how they affect you.</source>
+        <target state="translated">Te alentamos a que vuelvas a tener una consulta de seguimiento con un doctor para comprender lo que quieren decir estos resultados y cómo te afectan.</target>
+      </trans-unit>
+      <trans-unit id="1153" resname="r581029507" restype="string" datatype="x-haml">
+        <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an "addendum note" to this consult using the chat.</source>
+        <target state="translated">Por favor revisa los resultados, proporciona tu interpretación de estos resultados, y asesora al paciente sobre los siguientes pasos. Para hacerlo, sólo deja una "nota anexo" a esta consulta utilizando el chat.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/user_question_addons.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname=":display_string" restype="string" datatype="x-yaml" x-context=":priority@:faster">
+        <source>Priority (faster) responses</source>
+        <target>Respuestas prioritarias (más rápida)</target>
+      </trans-unit>
+      <trans-unit id="2" resname=":help_text" restype="string" datatype="x-yaml" x-context=":priority@:faster">
+        <source>This puts your question ahead of the line to be answered first</source>
+        <target>Esto pone a tu pregunta adelante de la línea para ser contestada primero</target>
+      </trans-unit>
+      <trans-unit id="3" resname=":display_string" restype="string" datatype="x-yaml" x-context=":guaranteed_answers@:two">
+        <source>Guarantee more than 1 answer</source>
+        <target>Garantiza más de 1 respuesta</target>
+      </trans-unit>
+      <trans-unit id="4" resname=":help_text" restype="string" datatype="x-yaml" x-context=":guaranteed_answers@:two">
+        <source>This option promotes the question to more doctors to get you more than one answer</source>
+        <target>Esta opción promueve la pregunta a más docotres para que obtengas más de una respuesta</target>
+      </trans-unit>
+      <trans-unit id="5" resname=":display_string" restype="string" datatype="x-yaml" x-context=":extra_characters@:hundred">
+        <source>Add details to your question (+100 characters)</source>
+        <target>Añade detalles a tus preguntas (100+ caracteres)</target>
+      </trans-unit>
+      <trans-unit id="6" resname=":help_text" restype="string" datatype="x-yaml" x-context=":extra_characters@:hundred">
+        <source>This gives you additional characters to add more details to your question.</source>
+        <target>Esto te da caracteres adicionales para añadir más detalles a tu pregunta.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/timezones.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="7" resname="American Samoa" restype="string" datatype="x-yaml">
+        <source>American Samoa</source>
+        <target>Soma americana</target>
+      </trans-unit>
+      <trans-unit id="8" resname="Pacific Time (US &amp; Canada)" restype="string" datatype="x-yaml">
+        <source>Pacific Time</source>
+        <target>Hora del Pacífico</target>
+      </trans-unit>
+      <trans-unit id="9" resname="Hawaii" restype="string" datatype="x-yaml">
+        <source>Hawaii Time</source>
+        <target>Hora de Hawái</target>
+      </trans-unit>
+      <trans-unit id="10" resname="Alaska" restype="string" datatype="x-yaml">
+        <source>Alaska Time</source>
+        <target>Hora de Alaska</target>
+      </trans-unit>
+      <trans-unit id="11" resname="Mountain Time (US &amp; Canada)" restype="string" datatype="x-yaml">
+        <source>Mountain Time</source>
+        <target>Hora de la Montaña</target>
+      </trans-unit>
+      <trans-unit id="12" resname="Central Time (US &amp; Canada)" restype="string" datatype="x-yaml">
+        <source>Central Time</source>
+        <target>Hora Central</target>
+      </trans-unit>
+      <trans-unit id="13" resname="Eastern Time (US &amp; Canada)" restype="string" datatype="x-yaml">
+        <source>Eastern Time</source>
+        <target>Hora del Este</target>
+      </trans-unit>
+      <trans-unit id="14" resname="Auckland" restype="string" datatype="x-yaml">
+        <source>auckland</source>
+        <target>Auckland</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="260" resname=" and " restype="string" datatype="javascript">
+        <source>and</source>
+        <target state="translated">y</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="269" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target state="translated">No</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_soap_summary.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="275" resname="r884231903" restype="string" datatype="x-haml">
+        <source>Subjective (History):</source>
+        <target state="translated">Subjetivo (Historia):</target>
+      </trans-unit>
+      <trans-unit id="276" resname="r696401974" restype="string" datatype="x-haml">
+        <source>Objective (Data):</source>
+        <target state="translated">Objectivo (Datos):</target>
+      </trans-unit>
+      <trans-unit id="277" resname="r795802560" restype="string" datatype="x-haml">
+        <source>Diagnosis codes:</source>
+        <target state="translated">Códigos de Diagnóstico:</target>
+      </trans-unit>
+      <trans-unit id="278" resname="r729158437" restype="string" datatype="x-haml">
+        <source>Reason for follow-up:</source>
+        <target state="translated">Razón para seguimiento:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_referral_specialty.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="279" resname="r564113392" restype="string" datatype="x-haml">
+        <source>Find specialist</source>
+        <target state="translated">Encontrar especialista</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_lab_result.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="286" resname="r581029507" restype="string" datatype="x-haml">
+        <source>Please review the results, provide your interpretation of these results, and advise the patient on next steps. To do so, just leave an "addendum note" to this consult using the chat.</source>
+        <target state="translated">Por favor revisa los resultados, proporciona tu interpretación de estos resultados, y asesora al paciente sobre los siguientes pasos. Para hacerlo, sólo deja una "nota anexo" a esta consulta utilizando el chat.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_sos_features.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="287" resname="r794956291" restype="string" datatype="x-haml">
+        <source>), population managers receive real-time individual and population health insights, including information on what members need and where they are</source>
+        <target state="translated">), administradores de población reciben perspicacias de salud individuales y de población en tiempo real, incluyendo información sobre qué necesitan los miembros y dónde están</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/symptom_triage_copy.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="top_header" restype="string" datatype="x-yaml" x-context="greeting">
+        <source>Get started</source>
+        <target state="translated">Empieza</target>
+      </trans-unit>
+      <trans-unit id="5" resname="top_header" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who needs help?</source>
+        <target state="translated">¿Quién necesita ayuda?</target>
+      </trans-unit>
+      <trans-unit id="6" resname="heading" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who are we here to help?</source>
+        <target state="translated">¿A quién estamos aquí para ayudar?</target>
+      </trans-unit>
+      <trans-unit id="7" resname="description" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Please choose, and then tap or type symptoms, or skip to ask our doctors directly.</source>
+        <target state="translated">Por favor, elige y luego toca o escribe síntomas, o salta a preguntarles directamente a nuestros doctores.</target>
+      </trans-unit>
+      <trans-unit id="8" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_dob">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="14" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_gender">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="17" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_pregnancy">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="21" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_body_part">
+        <source>Tap or type a symptom</source>
+        <target state="translated">Toca o escribe un síntoma</target>
+      </trans-unit>
+      <trans-unit id="24" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_symptom">
+        <source>Choose symptom</source>
+        <target state="translated">Elige síntoma</target>
+      </trans-unit>
+      <trans-unit id="28" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_symptom_no_body_part">
+        <source>Choose symptom</source>
+        <target state="translated">Elige síntoma</target>
+      </trans-unit>
+      <trans-unit id="32" resname="top_header" restype="string" datatype="x-yaml" x-context="symptom_added_success">
+        <source>Tap additional symptoms</source>
+        <target state="translated">Elige síntomas adicionales</target>
+      </trans-unit>
+      <trans-unit id="37" resname="top_header" restype="string" datatype="x-yaml" x-context="update_risk_factors">
+        <source>More about you</source>
+        <target state="translated">Más acerca de ti</target>
+      </trans-unit>
+      <trans-unit id="42" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report">
+        <source>Creating report</source>
+        <target state="translated">Creando reporte</target>
+      </trans-unit>
+      <trans-unit id="92" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report_error">
+        <source>Creating report</source>
+        <target state="translated">Creando reporte</target>
+      </trans-unit>
+      <trans-unit id="93" resname="heading" restype="string" datatype="x-yaml" x-context="creating_report_error">
+        <source>Hmm...</source>
+        <target state="translated">Hmm...</target>
+      </trans-unit>
+      <trans-unit id="96" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report_success">
+        <source>Possible explanations</source>
+        <target state="translated">Explicaciones posibles</target>
+      </trans-unit>
+      <trans-unit id="111" resname="top_header" restype="string" datatype="x-yaml" x-context="care_options">
+        <source>Care options</source>
+        <target state="translated">Opciones de atención</target>
+      </trans-unit>
+      <trans-unit id="115" resname="top_header" restype="string" datatype="x-yaml" x-context="emergency_medicine_condition">
+        <source>About this care option</source>
+        <target state="translated">Acerca de esta opción de atención</target>
+      </trans-unit>
+      <trans-unit id="119" resname="top_header" restype="string" datatype="x-yaml" x-context="disclaimer_generic">
+        <source>Disclaimer</source>
+        <target state="translated">Renuncia de responsabilidad</target>
+      </trans-unit>
+      <trans-unit id="121" resname="top_header" restype="string" datatype="x-yaml" x-context="disclaimer_condition_report">
+        <source>Disclaimer</source>
+        <target state="translated">Renuncia de responsabilidad</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/refinement_questions.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="234" resname="top_header" restype="string" datatype="x-yaml" x-context="severity">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="239" resname="top_header" restype="string" datatype="x-yaml" x-context="duration">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="244" resname="top_header" restype="string" datatype="x-yaml" x-context="abruptness">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="249" resname="top_header" restype="string" datatype="x-yaml" x-context="quality">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="255" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="quality">
+        <source>Quality</source>
+        <target state="translated">Calidad</target>
+      </trans-unit>
+      <trans-unit id="256" resname="top_header" restype="string" datatype="x-yaml" x-context="radiation">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="261" resname="top_header" restype="string" datatype="x-yaml" x-context="sidedness">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="267" resname="top_header" restype="string" datatype="x-yaml" x-context="worsened">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="274" resname="top_header" restype="string" datatype="x-yaml" x-context="alleviated">
+        <source>Refine symptoms</source>
+        <target state="translated">Refinar síntomas</target>
+      </trans-unit>
+      <trans-unit id="281" resname="top_header" restype="string" datatype="x-yaml" x-context="pregnancy">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="286" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="pregnancy">
+        <source>Pregnant</source>
+        <target state="translated">Embarazada</target>
+      </trans-unit>
+      <trans-unit id="287" resname="top_header" restype="string" datatype="x-yaml" x-context="gender">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="290" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="gender">
+        <source>Gender</source>
+        <target state="translated">Sexo</target>
+      </trans-unit>
+      <trans-unit id="291" resname="top_header" restype="string" datatype="x-yaml" x-context="dob">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/states.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="305" resname="AL" restype="string" datatype="x-yaml">
+        <source>Alabama</source>
+        <target state="translated">Alabama</target>
+      </trans-unit>
+      <trans-unit id="306" resname="AK" restype="string" datatype="x-yaml">
+        <source>Alaska</source>
+        <target state="translated">Alaska</target>
+      </trans-unit>
+      <trans-unit id="307" resname="AZ" restype="string" datatype="x-yaml">
+        <source>Arizona</source>
+        <target state="translated">Arizona</target>
+      </trans-unit>
+      <trans-unit id="308" resname="AR" restype="string" datatype="x-yaml">
+        <source>Arkansas</source>
+        <target state="translated">Arkansas</target>
+      </trans-unit>
+      <trans-unit id="309" resname="CA" restype="string" datatype="x-yaml">
+        <source>California</source>
+        <target state="translated">California</target>
+      </trans-unit>
+      <trans-unit id="310" resname="CO" restype="string" datatype="x-yaml">
+        <source>Colorado</source>
+        <target state="translated">Colorado</target>
+      </trans-unit>
+      <trans-unit id="311" resname="CT" restype="string" datatype="x-yaml">
+        <source>Connecticut</source>
+        <target state="translated">Connecticut</target>
+      </trans-unit>
+      <trans-unit id="312" resname="DE" restype="string" datatype="x-yaml">
+        <source>Delaware</source>
+        <target state="translated">Delaware</target>
+      </trans-unit>
+      <trans-unit id="313" resname="FL" restype="string" datatype="x-yaml">
+        <source>Florida</source>
+        <target state="translated">Florida</target>
+      </trans-unit>
+      <trans-unit id="314" resname="GA" restype="string" datatype="x-yaml">
+        <source>Georgia</source>
+        <target state="translated">Georgia</target>
+      </trans-unit>
+      <trans-unit id="315" resname="HI" restype="string" datatype="x-yaml">
+        <source>Hawaii</source>
+        <target state="translated">Hawaii</target>
+      </trans-unit>
+      <trans-unit id="316" resname="ID" restype="string" datatype="x-yaml">
+        <source>Idaho</source>
+        <target state="translated">Idaho</target>
+      </trans-unit>
+      <trans-unit id="317" resname="IL" restype="string" datatype="x-yaml">
+        <source>Illinois</source>
+        <target state="translated">Illinois</target>
+      </trans-unit>
+      <trans-unit id="318" resname="IN" restype="string" datatype="x-yaml">
+        <source>Indiana</source>
+        <target state="translated">Indiana</target>
+      </trans-unit>
+      <trans-unit id="319" resname="IA" restype="string" datatype="x-yaml">
+        <source>Iowa</source>
+        <target state="translated">Iowa</target>
+      </trans-unit>
+      <trans-unit id="320" resname="KS" restype="string" datatype="x-yaml">
+        <source>Kansas</source>
+        <target state="translated">Kansas</target>
+      </trans-unit>
+      <trans-unit id="321" resname="KY" restype="string" datatype="x-yaml">
+        <source>Kentucky</source>
+        <target state="translated">Kentucky</target>
+      </trans-unit>
+      <trans-unit id="322" resname="LA" restype="string" datatype="x-yaml">
+        <source>Louisiana</source>
+        <target state="translated">Louisiana</target>
+      </trans-unit>
+      <trans-unit id="323" resname="ME" restype="string" datatype="x-yaml">
+        <source>Maine</source>
+        <target state="translated">Maine</target>
+      </trans-unit>
+      <trans-unit id="324" resname="MD" restype="string" datatype="x-yaml">
+        <source>Maryland</source>
+        <target state="translated">Maryland</target>
+      </trans-unit>
+      <trans-unit id="325" resname="MA" restype="string" datatype="x-yaml">
+        <source>Massachusetts</source>
+        <target state="translated">Massachusetts</target>
+      </trans-unit>
+      <trans-unit id="326" resname="MI" restype="string" datatype="x-yaml">
+        <source>Michigan</source>
+        <target state="translated">Michigan</target>
+      </trans-unit>
+      <trans-unit id="327" resname="MN" restype="string" datatype="x-yaml">
+        <source>Minnesota</source>
+        <target state="translated">Minnesota</target>
+      </trans-unit>
+      <trans-unit id="328" resname="MS" restype="string" datatype="x-yaml">
+        <source>Mississippi</source>
+        <target state="translated">Mississippi</target>
+      </trans-unit>
+      <trans-unit id="329" resname="MO" restype="string" datatype="x-yaml">
+        <source>Missouri</source>
+        <target state="translated">Missouri</target>
+      </trans-unit>
+      <trans-unit id="330" resname="MT" restype="string" datatype="x-yaml">
+        <source>Montana</source>
+        <target state="translated">Montana</target>
+      </trans-unit>
+      <trans-unit id="331" resname="NE" restype="string" datatype="x-yaml">
+        <source>Nebraska</source>
+        <target state="translated">Nebraska</target>
+      </trans-unit>
+      <trans-unit id="332" resname="NV" restype="string" datatype="x-yaml">
+        <source>Nevada</source>
+        <target state="translated">Nevada</target>
+      </trans-unit>
+      <trans-unit id="336" resname="NY" restype="string" datatype="x-yaml">
+        <source>New York</source>
+        <target state="translated">New York</target>
+      </trans-unit>
+      <trans-unit id="337" resname="NC" restype="string" datatype="x-yaml">
+        <source>North Carolina</source>
+        <target state="translated">North Carolina</target>
+      </trans-unit>
+      <trans-unit id="338" resname="ND" restype="string" datatype="x-yaml">
+        <source>North Dakota</source>
+        <target state="translated">North Dakota</target>
+      </trans-unit>
+      <trans-unit id="339" resname="OH" restype="string" datatype="x-yaml">
+        <source>Ohio</source>
+        <target state="translated">Ohio</target>
+      </trans-unit>
+      <trans-unit id="340" resname="OK" restype="string" datatype="x-yaml">
+        <source>Oklahoma</source>
+        <target state="translated">Oklahoma</target>
+      </trans-unit>
+      <trans-unit id="341" resname="OR" restype="string" datatype="x-yaml">
+        <source>Oregon</source>
+        <target state="translated">Oregon</target>
+      </trans-unit>
+      <trans-unit id="342" resname="PA" restype="string" datatype="x-yaml">
+        <source>Pennsylvania</source>
+        <target state="translated">Pennsylvania</target>
+      </trans-unit>
+      <trans-unit id="346" resname="TN" restype="string" datatype="x-yaml">
+        <source>Tennessee</source>
+        <target state="translated">Tennessee</target>
+      </trans-unit>
+      <trans-unit id="347" resname="TX" restype="string" datatype="x-yaml">
+        <source>Texas</source>
+        <target state="translated">Texas</target>
+      </trans-unit>
+      <trans-unit id="348" resname="UT" restype="string" datatype="x-yaml">
+        <source>Utah</source>
+        <target state="translated">Utah</target>
+      </trans-unit>
+      <trans-unit id="349" resname="VT" restype="string" datatype="x-yaml">
+        <source>Vermont</source>
+        <target state="translated">Vermont</target>
+      </trans-unit>
+      <trans-unit id="350" resname="VA" restype="string" datatype="x-yaml">
+        <source>Virginia</source>
+        <target state="translated">Virginia</target>
+      </trans-unit>
+      <trans-unit id="351" resname="WA" restype="string" datatype="x-yaml">
+        <source>Washington</source>
+        <target state="translated">Washington</target>
+      </trans-unit>
+      <trans-unit id="352" resname="WV" restype="string" datatype="x-yaml">
+        <source>West Virginia</source>
+        <target state="translated">West Virginia</target>
+      </trans-unit>
+      <trans-unit id="353" resname="WI" restype="string" datatype="x-yaml">
+        <source>Wisconsin</source>
+        <target state="translated">Wisconsin</target>
+      </trans-unit>
+      <trans-unit id="354" resname="WY" restype="string" datatype="x-yaml">
+        <source>Wyoming</source>
+        <target state="translated">Wyoming</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/refinement_questions.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="uitype" restype="string" datatype="x-yaml" x-context="severity">
+        <source>slider</source>
+        <target state="accepted">slider</target>
+      </trans-unit>
+      <trans-unit id="2" resname="uitype" restype="string" datatype="x-yaml" x-context="duration">
+        <source>slider</source>
+        <target state="accepted">slider</target>
+      </trans-unit>
+      <trans-unit id="3" resname="uitype" restype="string" datatype="x-yaml" x-context="abruptness">
+        <source>slider</source>
+        <target state="accepted">slider</target>
+      </trans-unit>
+      <trans-unit id="4" resname="uitype" restype="string" datatype="x-yaml" x-context="quality">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+      <trans-unit id="5" resname="uitype" restype="string" datatype="x-yaml" x-context="radiation">
+        <source>yesno</source>
+        <target state="accepted">yesno</target>
+      </trans-unit>
+      <trans-unit id="6" resname="uitype" restype="string" datatype="x-yaml" x-context="sidedness">
+        <source>yesno</source>
+        <target state="accepted">yesno</target>
+      </trans-unit>
+      <trans-unit id="7" resname="uitype" restype="string" datatype="x-yaml" x-context="worsened">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+      <trans-unit id="8" resname="uitype" restype="string" datatype="x-yaml" x-context="alleviated">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+      <trans-unit id="9" resname="uitype" restype="string" datatype="x-yaml" x-context="pregnancy">
+        <source>singleselect</source>
+        <target state="accepted">singleselect</target>
+      </trans-unit>
+      <trans-unit id="10" resname="uitype" restype="string" datatype="x-yaml" x-context="gender">
+        <source>gender</source>
+        <target state="accepted">gender</target>
+      </trans-unit>
+      <trans-unit id="11" resname="uitype" restype="string" datatype="x-yaml" x-context="dob">
+        <source>date</source>
+        <target state="accepted">date</target>
+      </trans-unit>
+      <trans-unit id="12" resname="uitype" restype="string" datatype="x-yaml" x-context="first_of_any_type">
+        <source>multiselect</source>
+        <target state="accepted">multiselect</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

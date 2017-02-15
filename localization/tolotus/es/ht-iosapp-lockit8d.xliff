@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/ViewControllers/FGBasicSearchViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="10" resname="Symptom" restype="string" datatype="x-objective-c">
+        <source>Symptom</source>
+        <target state="translated">Síntoma</target>
+        <note annotates="source">search bar place holder, format: Search Symptom</note>
+      </trans-unit>
+      <trans-unit id="11" resname="Resolution" restype="string" datatype="x-objective-c">
+        <source>Resolution</source>
+        <target state="translated">Resolución</target>
+        <note annotates="source">search bar place holder, format: Search Resolution</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTInsuranceManager.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="15" resname="female" restype="string" datatype="x-objective-c">
+        <source>female</source>
+        <target state="translated">femenino</target>
+      </trans-unit>
+      <trans-unit id="16" resname="male" restype="string" datatype="x-objective-c">
+        <source>male</source>
+        <target state="translated">masculino</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

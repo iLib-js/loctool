@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/HTSymptomTriageSelectBodyPartViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="10" resname="Any additional symptoms?" restype="string" datatype="x-objective-c">
+        <source>Any additional symptoms?</source>
+        <target state="translated">任何其他症状？</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/AskDocsV4/HTAskDocsV4SpecificExpertModesViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="16" resname="Server error" restype="string" datatype="x-objective-c">
+        <source>Server error</source>
+        <target state="translated">服务错误</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/iPadNative/Base.lproj/FGIpadMainViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="18" resname="Ad8-yA-EeG.normalTitle" restype="string" datatype="x-xib">
+        <source>To-Do</source>
+        <target state="translated">待办事项</target>
+        <note annotates="source">Class = "UIButton"; normalTitle = "To-Do"; ObjectID = "Ad8-yA-EeG";</note>
+      </trans-unit>
+      <trans-unit id="19" resname="Eaz-hs-x9h.normalTitle" restype="string" datatype="x-xib">
+        <source>Search</source>
+        <target state="translated">搜索</target>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Search"; ObjectID = "Eaz-hs-x9h";</note>
+      </trans-unit>
+      <trans-unit id="20" resname="k39-JV-hYA.normalTitle" restype="string" datatype="x-xib">
+        <source>Ask Docs</source>
+        <target state="translated">询问医生</target>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Ask Docs"; ObjectID = "k39-JV-hYA";</note>
+      </trans-unit>
+      <trans-unit id="21" resname="l44-cL-1gg.normalTitle" restype="string" datatype="x-xib">
+        <source>Feed</source>
+        <target state="translated">主页</target>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Feed"; ObjectID = "l44-cL-1gg";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Base.lproj/FGTipViewController.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="22" resname="sQO-Yv-5Ru.disabledTitle" restype="string" datatype="x-xib">
+        <source>Send note</source>
+        <target state="translated">发送感谢信</target>
+        <note annotates="source">Class = "UIButton"; disabledTitle = "Send note"; ObjectID = "sQO-Yv-5Ru";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocComposeConsultViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="23" resname="37r-yF-p8G.text" restype="string" datatype="x-xib">
+        <source>Voice Call</source>
+        <target state="translated">语音聊天</target>
+        <note annotates="source">Class = "UILabel"; text = "Voice Call"; ObjectID = "37r-yF-p8G";</note>
+      </trans-unit>
+      <trans-unit id="24" resname="QbZ-7A-7Nb.text" restype="string" datatype="x-xib">
+        <source>Video Call</source>
+        <target state="translated">视频聊天</target>
+        <note annotates="source">Class = "UILabel"; text = "Video Call"; ObjectID = "QbZ-7A-7Nb";</note>
+      </trans-unit>
+      <trans-unit id="25" resname="W8G-t5-FCd.text" restype="string" datatype="x-xib">
+        <source>Text Chat</source>
+        <target state="translated">文本聊天</target>
+        <note annotates="source">Class = "UILabel"; text = "Text Chat"; ObjectID = "W8G-t5-FCd";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Base.lproj/FGTalk2DocAskDoctorsViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="26" resname="pOC-fn-Kz7.text" restype="string" datatype="x-xib">
+        <source>Tell the doctor a little about you</source>
+        <target state="translated">告诉医生关于您的信息</target>
+        <note annotates="source">Class = "UILabel"; text = "Tell the doctor a little about you"; ObjectID = "pOC-fn-Kz7";</note>
+      </trans-unit>
+      <trans-unit id="27" resname="pq8-qG-WEY.text" restype="string" datatype="x-xib">
+        <source>Get a more personalized answer</source>
+        <target state="translated">获得一个更专属于您的回答</target>
+        <note annotates="source">Class = "UILabel"; text = "Get a more personalized answer"; ObjectID = "pq8-qG-WEY";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/Base.lproj/FGMomentDetailViewController~ipad.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="28" resname="u1p-9T-OIc.disabledTitle" restype="string" datatype="x-xib">
+        <source>Send note</source>
+        <target state="translated">发送感谢信</target>
+        <note annotates="source">Class = "UIButton"; disabledTitle = "Send note"; ObjectID = "u1p-9T-OIc";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Base.lproj/FGProfileNoneAttributeView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="29" resname="UXb-Ot-k4m.normalTitle" restype="string" datatype="x-xib">
+        <source>Add</source>
+        <target state="translated">添加</target>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Add"; ObjectID = "UXb-Ot-k4m";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Base.lproj/FGProfileCurrentAttributesView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="30" resname="dl8-8w-PEg.normalTitle" restype="string" datatype="x-xib">
+        <source>Add another</source>
+        <target state="translated">添加另一个</target>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Add another"; ObjectID = "dl8-8w-PEg";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Base.lproj/FGProfileAddAttributeView.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="31" resname="HQ0-Me-zcL.normalTitle" restype="string" datatype="x-xib">
+        <source>Add</source>
+        <target state="translated">添加</target>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Add"; ObjectID = "HQ0-Me-zcL";</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

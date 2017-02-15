@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/what_we_make/member_faqs.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2" resname="r715442563" restype="string" datatype="ruby">
+        <source>Who are the doctors on HealthTap?  Are they all U.S.-licensed doctors in good standing?  How are they selected?</source>
+        <target state="translated">HealthTap上的医生是谁？他们都是信誉良好的美国拥有执业执照的医生吗？他们是如何被挑选的？</target>
+      </trans-unit>
+      <trans-unit id="3" resname="r45257668" restype="string" datatype="ruby">
+        <source>All doctors on HealthTap are licensed to practice medicine in the U.S. and are in good standing.  They include doctors from leading U.S. medical institutions (like Stanford and Harvard), as well as private practices from across the country.  HealthTap Medical Experts are independent third parties, and are not employed by or affiliated with HealthTap.  Admission to the HealthTap network is by application and invitation only.</source>
+        <target state="translated">在HealthTap上所有的医生都持有执业证书并且有良好的信誉。他们包括美国顶级医学院（比如斯坦福和哈佛）的医生，也包括美国的私人医生。HealthTap的医学专家独立于第三方，他们并不受雇或附属于HealthTap。只有申请或受邀才能进入HealthTap网站。</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r925290825" restype="string" datatype="ruby">
+        <source>Yes - it’s true!  Health questions submitted to HealthTap are submitted to our network of thousands of doctor across the U.S.  These doctors try to answer every question that’s submitted.  Questions are most likely to be answered when they have not already been asked and answered, and they are good health questions (easy to understand and useful to the entire HealthTap community).  &lt;a href="/how_it_works/member_guides"&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
+        <target state="translated">是的 - 当然可以！HealthTap的问题将会上传到我们数以千计的医生网络中。这些医生会尝试回答每个被提交的问题。HealthTap的问题将会上传到我们数以千计的医生网络中。这些医生试着回答每个被提出的问题。&lt;a href=”/how_it_works/member_guides”&gt;了解更多 &amp;raquo;&lt;/a&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/partnerships.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="12" resname="r241966611" restype="string" datatype="ruby">
+        <source>Partner with an industry innovator to earn more income while improving client satisfaction and retention across your book of business</source>
+        <target state="translated">与行业创新者合作，以获得更多收入，同时提高客户满意度并始终保持您的业务</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/refinement_relationship.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="29" resname="r856013763" restype="string" datatype="ruby">
+        <source>N/A</source>
+        <target state="accepted">不适用</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/attribute/i18n.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="40" resname="r191374469" restype="string" datatype="ruby">
+        <source>Other Treatments</source>
+        <target state="translated">其他治疗</target>
+      </trans-unit>
+      <trans-unit id="44" resname="r854514419" restype="string" datatype="ruby">
+        <source>Personal</source>
+        <target state="translated">个人的</target>
+      </trans-unit>
+      <trans-unit id="45" resname="r939411172" restype="string" datatype="ruby">
+        <source>Family history</source>
+        <target state="translated">家族史</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_vp_director_of_marketing.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="49" resname="r482075706" restype="string" datatype="x-haml">
+        <source>%p.requirements With our marketing team you will:</source>
+        <target state="translated">%p.requirements与我们的营销团队，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_vp_director_of_business_development.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="50" resname="r980192517" restype="string" datatype="x-haml">
+        <source>%p.requirements As HealthTap's Director of Business Development, you will:</source>
+        <target state="translated">%p.requirements作为HealthTap的业务发展总监，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_ux_designer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="51" resname="r996685740" restype="string" datatype="x-haml">
+        <source>%p.requirements As a leading UX Designer at HealthTap, you will:</source>
+        <target state="translated">%p.requirements作为HealthTap领先的UX设计人员，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_special_assistant_to_the_ceo.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="52" resname="r23224757" restype="string" datatype="x-haml">
+        <source>%p.requirements As Special Assistant to the CEO at HealthTap, you will:</source>
+        <target state="translated">%p.requirements作为HealthTap首席执行官的特别助理，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_software_engineer_frontend.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="53" resname="r39290074" restype="string" datatype="x-haml">
+        <source>%p.requirements As a front End engineer at HealthTap, you will:</source>
+        <target state="translated">%p.requirements作为HealthTap的前端工程师，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_software_engineer_backend.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="54" resname="r819459591" restype="string" datatype="x-haml">
+        <source>%p.requirements As an engineer at HealthTap, you will:</source>
+        <target state="translated">%p.requirements作为HealthTap的工程师，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_quality_assurance_lead.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="55" resname="r514951256" restype="string" datatype="x-haml">
+        <source>%p.requirements As the Quality Assurance Lead at HealthTap, you will:</source>
+        <target state="translated">%p.requirements作为HealthTap的质量保证主管，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_office_manager.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="56" resname="r639409525" restype="string" datatype="x-haml">
+        <source>%p.requirements As HealthTap Office Manager you will:</source>
+        <target state="translated">%p.requirements作为HealthTap业务经理，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_mobile_app_developer_android_and_ios.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="57" resname="r325334734" restype="string" datatype="x-haml">
+        <source>%p.requirements As a mobile apps developer at HealthTap, you will:</source>
+        <target state="translated">%p.requirements作为HealthTap的移动应用程序开发人员，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_lead_product_manager.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="58" resname="r810238246" restype="string" datatype="x-haml">
+        <source>%p.requirements As a member of the product team at HealthTap, you will:</source>
+        <target state="translated">%p.requirements作为HealthTap产品团队的成员，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_it_and_operations_engineer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="59" resname="r658317127" restype="string" datatype="x-haml">
+        <source>%p.requirements As an IT Operations Engineer at HealthTap, you will:</source>
+        <target state="translated">%p.requirements作为HealthTap的IT运营工程师，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_director_of_medical_expert_network_physicians.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="60" resname="r578021258" restype="string" datatype="x-haml">
+        <source>%p.requirements With fellow team members you will:</source>
+        <target state="translated">%p.requirements与团队成员，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_director_of_engineering.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="61" resname="r12598767" restype="string" datatype="x-haml">
+        <source>%p.requirements As HealthTap's Director of Engineering, you will:</source>
+        <target state="translated">%p.requirements作为HealthTap的工程总监，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_director_of_community_development_users.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="62" resname="r973275320" restype="string" datatype="x-haml">
+        <source>%p.requirements With our community development team you will:</source>
+        <target state="translated">%p.requirements与我们的社区开发团队，您将：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="66" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target state="translated">不是</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="search_results.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="87" resname="r864785970" restype="string" datatype="x-haml">
+        <source>no</source>
+        <target state="translated">不是</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_broker_distribution_agreement.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="89" resname="r596760573" restype="string" datatype="x-haml">
+        <source>This HealthTap Software Distribution Agreement for Independent Brokers (this “Agreement”) is entered into by and between HealthTap, Inc., a Delaware corporation, having its principal place of business at 270 University Avenue, Floor 2, Palo Alto, California 94301 (“HealthTap”), and the broker entity or individual broker signatory to this Agreement (the “Licensee”), effective as of the date of execution of this Agreement by both parties (“Effective Date”). If this Agreement is entered into by or on behalf of an entity, it shall govern all brokers or agents of such entity and any broker not covered by this Agreement shall have no right or license to distribute the HealthTap Software.</source>
+        <target state="translated">此HealthTap Software独立经纪人分配协议将会由HealthTap有限公司或一个德拉威州的公司独立或共同处理。HealthTap有自己的主要办事机构，地址是270 University Avenue, Floor 2, Palo Alto, California 94301 (“HealthTap”)和本协议（“被许可人”）的经纪实体或个别经纪人（“被许可人”），自双方签署本协议之日起生效（“生效日期”）若此协议经由一个团体处理或是代表一个团体，那么此协议应当对此团体所有的经纪人或机构起效，任何不在协议中的经纪人应无权或许可出售HealthTap的软件。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_sos_features.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="138" resname="r730068882" restype="string" datatype="x-haml">
+        <source>), population managers receive real-time individual and population health insights, including information on what members need and where they are</source>
+        <target state="translated">), 人口管理经理会即时收到有关个人和群体健康的知识，包括人们需要什么。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/share/share_your_story.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="140" resname="Send your story" restype="string" datatype="javascript">
+        <source>Send your story</source>
+        <target state="translated">发送您的故事</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/profile/profile_pharmacy_template.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="99" resname="Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores." restype="string" datatype="javascript">
+        <source>Earn {span_tag_start}{points}{span_tag_end} points             and a boost in your Helpfulness and DocScores.</source>
+        <target state="translated">获得{span_tag_start}{points}{span_tag_end}  分数和提高您的有助度和医者评分。</target>
+      </trans-unit>
+      <trans-unit id="141" resname="Save »" restype="string" datatype="javascript">
+        <source>Save »</source>
+        <target state="translated">保存 »</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/people/sign_up.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="142" resname="Get app" restype="string" datatype="javascript">
+        <source>Get app</source>
+        <target state="translated">获得应用程序</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/people/settings.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="143" resname="Change Password" restype="string" datatype="javascript">
+        <source>Change Password</source>
+        <target state="translated">修改密码</target>
+      </trans-unit>
+      <trans-unit id="144" resname="Save Changes &amp;raquo;" restype="string" datatype="javascript">
+        <source>Save Changes &amp;raquo;</source>
+        <target state="translated">保存更改&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/people/resetPWmobile.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="145" resname="Change password &amp; log in &amp;raquo;" restype="string" datatype="javascript">
+        <source>Change password &amp; log in &amp;raquo;</source>
+        <target state="translated">修改密码并登录&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/people/login.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="146" resname="Login &amp;raquo;" restype="string" datatype="javascript">
+        <source>Login &amp;raquo;</source>
+        <target state="translated">登录&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/people/ipad_forgotPW.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="147" resname="Send Reset Email" restype="string" datatype="javascript">
+        <source>Send Reset Email</source>
+        <target state="translated">发送重置邮件</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/people/forgotPW.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="148" resname="Send Email &amp;raquo;" restype="string" datatype="javascript">
+        <source>Send Email &amp;raquo;</source>
+        <target state="translated">发送邮件&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/people/expert_claim_sign_up.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="149" resname="Update Profile" restype="string" datatype="javascript">
+        <source>Update Profile</source>
+        <target state="translated">更新资料</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/people/disable_account.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="150" resname="Deactivate my account now" restype="string" datatype="javascript">
+        <source>Deactivate my account now</source>
+        <target state="translated">立即停用我的帐户</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/people/ask_a_question.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="151" resname="Sign Up &amp; Ask Question" restype="string" datatype="javascript">
+        <source>Sign Up &amp; Ask Question</source>
+        <target state="translated">注册并询问问题</target>
+      </trans-unit>
+      <trans-unit id="152" resname="Continue &amp;rsaquo;" restype="string" datatype="javascript">
+        <source>Continue &amp;rsaquo;</source>
+        <target state="translated">继续&amp;rsaquo;</target>
+      </trans-unit>
+      <trans-unit id="153" resname="Send your question &amp;rsaquo;" restype="string" datatype="javascript">
+        <source>Send your question &amp;rsaquo;</source>
+        <target state="translated">询问您的问题&amp;rsaquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/pages/index/search.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="154" resname="Ask Doctors" restype="string" datatype="javascript">
+        <source>Ask Doctors</source>
+        <target state="translated">咨询医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/pages/deleteImageConfirm.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="155" resname="DELETE" restype="string" datatype="javascript">
+        <source>DELETE</source>
+        <target state="translated">删除</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/suggested_connection.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="156" resname="Add all to network" restype="string" datatype="javascript">
+        <source>Add all to network</source>
+        <target state="translated">添加到所有网络</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/similarQuestion.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="157" resname="BACK" restype="string" datatype="javascript">
+        <source>BACK</source>
+        <target state="translated">返回</target>
+      </trans-unit>
+      <trans-unit id="123" resname="heading" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who are we here to help?</source>
+        <target state="translated">谁需要帮助？</target>
+      </trans-unit>
+      <trans-unit id="158" resname="CANCEL" restype="string" datatype="javascript">
+        <source>CANCEL</source>
+        <target state="translated">取消</target>
+      </trans-unit>
+      <trans-unit id="159" resname="I WANT TO ASK THIS ANYWAY" restype="string" datatype="javascript">
+        <source>I WANT TO ASK THIS ANYWAY</source>
+        <target state="translated">您想要随时随地询问</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/requestAppt.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="160" resname="Request Appointment" restype="string" datatype="javascript">
+        <source>Request Appointment</source>
+        <target state="translated">请求预约</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/referColleagueSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="161" resname="OK, THANKS!" restype="string" datatype="javascript">
+        <source>OK, THANKS!</source>
+        <target state="translated">好，谢谢！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/referColleague.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="162" resname="SEND &amp;raquo;" restype="string" datatype="javascript">
+        <source>SEND &amp;raquo;</source>
+        <target state="translated">发送&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/newEpisode/newEpisodeSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="163" resname="UPDATE MY HEALTH PROFILE" restype="string" datatype="javascript">
+        <source>UPDATE MY HEALTH PROFILE</source>
+        <target state="translated">更新我的健康资料</target>
+      </trans-unit>
+      <trans-unit id="164" resname="OK, THANKS! CONTINUE &amp;raquo;" restype="string" datatype="javascript">
+        <source>OK, THANKS! CONTINUE &amp;raquo;</source>
+        <target state="translated">好，谢谢！继续&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/newEpisode/newEpisodeNoCredit.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="165" resname="&amp;laquo; Back" restype="string" datatype="javascript">
+        <source>&amp;laquo; Back</source>
+        <target state="translated">&amp;laquo; 返回</target>
+      </trans-unit>
+      <trans-unit id="166" resname="NEXT &amp;raquo;" restype="string" datatype="javascript">
+        <source>NEXT &amp;raquo;</source>
+        <target state="translated">下一步&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/newEpisode/newEpisodeHaveCredit.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="167" resname="SEND" restype="string" datatype="javascript">
+        <source>SEND</source>
+        <target state="translated">发送</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/invite_patients.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="168" resname="SEND INVITE &amp;raquo;" restype="string" datatype="javascript">
+        <source>SEND INVITE &amp;raquo;</source>
+        <target state="translated">发送邀请&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/invite_friends_m2.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="169" resname="LOG IN" restype="string" datatype="javascript">
+        <source>LOG IN</source>
+        <target state="translated">登陆</target>
+      </trans-unit>
+      <trans-unit id="170" resname="SEND INVITE" restype="string" datatype="javascript">
+        <source>SEND INVITE</source>
+        <target state="translated">发送邀请</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/guidelines.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="171" resname="Thanks" restype="string" datatype="javascript">
+        <source>Thanks</source>
+        <target state="translated">谢谢！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/expert_edit_profile.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="172" resname="DONE" restype="string" datatype="javascript">
+        <source>DONE</source>
+        <target state="translated">完成</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/editQuestion.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="173" resname="SAVE CHANGES &amp;raquo;" restype="string" datatype="javascript">
+        <source>SAVE CHANGES &amp;raquo;</source>
+        <target state="translated">保存更改&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/doc2doc.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="174" resname="SEND YOUR QUESTION" restype="string" datatype="javascript">
+        <source>SEND YOUR QUESTION</source>
+        <target state="translated">发送您的问题</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/claim_success.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="175" resname="OK!" restype="string" datatype="javascript">
+        <source>OK!</source>
+        <target state="translated">好！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/claim_money.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="176" resname="Redeem &amp;gt;&amp;gt;" restype="string" datatype="javascript">
+        <source>Redeem &amp;gt;&amp;gt;</source>
+        <target state="translated">兑换&amp;gt;&amp;gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/askDoctorLoggedOut.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="177" resname="Sign Up &amp; Continue &amp;raquo;" restype="string" datatype="javascript">
+        <source>Sign Up &amp; Continue &amp;raquo;</source>
+        <target state="translated">注册并继续&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/askDocSpelling.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="178" resname="SEND QUESTION TO DOCTORS" restype="string" datatype="javascript">
+        <source>SEND QUESTION TO DOCTORS</source>
+        <target state="translated">向医生发送问题</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/askDoc.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="179" resname="ASK YOUR QUESTION &amp;raquo;" restype="string" datatype="javascript">
+        <source>ASK YOUR QUESTION &amp;raquo;</source>
+        <target state="translated">询问您的问题&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/apptVerifyRetry.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="180" resname="Text me another code" restype="string" datatype="javascript">
+        <source>Text me another code</source>
+        <target state="translated">给我再次发送一个编码</target>
+      </trans-unit>
+      <trans-unit id="181" resname="Verify my phone" restype="string" datatype="javascript">
+        <source>Verify my phone</source>
+        <target state="translated">验证我的手机</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/apptVerifyCode.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="182" resname="Verify Code &amp;raquo;" restype="string" datatype="javascript">
+        <source>Verify Code &amp;raquo;</source>
+        <target state="translated">验证码&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/apptSuccess.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="183" resname="Complete &amp; Print Your Visit Prep Sheet." restype="string" datatype="javascript">
+        <source>Complete &amp; Print Your Visit Prep Sheet.</source>
+        <target state="translated">完成并打印您的访问准备表。</target>
+      </trans-unit>
+      <trans-unit id="184" resname="Continue &amp;raquo;" restype="string" datatype="javascript">
+        <source>Continue &amp;raquo;</source>
+        <target state="translated">继续&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/layers/apptOverRequested.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="185" resname="Ahh, I see!" restype="string" datatype="javascript">
+        <source>Ahh, I see!</source>
+        <target state="translated">啊, 我看到了！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/header/web/guest.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="186" resname="Log In &amp;raquo;" restype="string" datatype="javascript">
+        <source>Log In &amp;raquo;</source>
+        <target state="translated">登录&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/header/guest.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="187" resname="Log In" restype="string" datatype="javascript">
+        <source>Log In</source>
+        <target state="translated">登录</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/groups/thankednoteGroup.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="188" resname="RECOMMEND" restype="string" datatype="javascript">
+        <source>RECOMMEND</source>
+        <target state="translated">推荐</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/groups/recommend_note.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="189" resname="Send &amp;raquo;" restype="string" datatype="javascript">
+        <source>Send &amp;raquo;</source>
+        <target state="translated">发送&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/feed/thank_answer_note_m2.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="190" resname="Send Note" restype="string" datatype="javascript">
+        <source>Send Note</source>
+        <target state="translated">发送感谢信</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/feed/new_comment.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="191" resname="Comment" restype="string" datatype="javascript">
+        <source>Comment</source>
+        <target state="translated">评论</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/experts/settings/sharing.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="192" resname="Save Changes" restype="string" datatype="javascript">
+        <source>Save Changes</source>
+        <target state="translated">保存更改</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/experts/recommend_note.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="193" resname="Recommend &amp;raquo;" restype="string" datatype="javascript">
+        <source>Recommend &amp;raquo;</source>
+        <target state="translated">推荐&amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/experts/profile/specialities_template.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="194" resname="Add Specialty" restype="string" datatype="javascript">
+        <source>Add Specialty</source>
+        <target state="translated">添加专科</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/experts/profile/location_template.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="195" resname="Add Location" restype="string" datatype="javascript">
+        <source>Add Location</source>
+        <target state="translated">添加位置</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/experts/profile/information_template.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="196" resname="Add insurance" restype="string" datatype="javascript">
+        <source>Add insurance</source>
+        <target state="translated">添加保险</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/experts/nux.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="197" resname="Add Known fors &amp;raquo;" restype="string" datatype="javascript">
+        <source>Add Known fors &amp;raquo;</source>
+        <target state="translated">添加专攻 &amp;raquo;</target>
+      </trans-unit>
+      <trans-unit id="198" resname="Add Colleagues &amp;raquo;" restype="string" datatype="javascript">
+        <source>Add Colleagues &amp;raquo;</source>
+        <target state="translated">添加同事 &amp;raquo;</target>
+      </trans-unit>
+      <trans-unit id="199" resname="Complete profile &amp;raquo;" restype="string" datatype="javascript">
+        <source>Complete profile &amp;raquo;</source>
+        <target state="translated">完善资料 &amp;raquo;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/experts/answer_question_form_inline.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="200" resname="CO-SIGN" restype="string" datatype="javascript">
+        <source>CO-SIGN</source>
+        <target state="translated">共同签署</target>
+      </trans-unit>
+      <trans-unit id="201" resname="SAVE" restype="string" datatype="javascript">
+        <source>SAVE</source>
+        <target state="translated">保存</target>
+      </trans-unit>
+      <trans-unit id="202" resname="SEND ANSWER" restype="string" datatype="javascript">
+        <source>SEND ANSWER</source>
+        <target state="translated">发送回答</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/expert_posts/new.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="204" resname="Publish Post" restype="string" datatype="javascript">
+        <source>Publish Post</source>
+        <target state="translated">发帖</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/javascripts/templates/avvo/email_converter.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="205" resname="Send support request" restype="string" datatype="javascript">
+        <source>Send support request</source>
+        <target state="translated">发送支持请求</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/ui_modules/edit_mailing_address.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="206" resname="Country" restype="string" datatype="javascript">
+        <source>Country</source>
+        <target state="translated">国家</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/triage_source_of_truth.yml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="314" resname="0" restype="string" datatype="x-yaml" x-context="triage_samples@FIRST_GREET">
+        <source>Hello</source>
+        <target state="translated">您好</target>
+      </trans-unit>
+      <trans-unit id="316" resname="0" restype="string" datatype="x-yaml" x-context="triage_samples@GREET">
+        <source>Welcome back</source>
+        <target state="translated">欢迎回来</target>
+      </trans-unit>
+      <trans-unit id="317" resname="1" restype="string" datatype="x-yaml" x-context="triage_samples@GREET">
+        <source>Hi there</source>
+        <target state="translated">您好！</target>
+      </trans-unit>
+      <trans-unit id="319" resname="3" restype="string" datatype="x-yaml" x-context="triage_samples@GREET">
+        <source>Hello</source>
+        <target state="translated">您好</target>
+      </trans-unit>
+      <trans-unit id="320" resname="4" restype="string" datatype="x-yaml" x-context="triage_samples@GREET">
+        <source>Hi</source>
+        <target state="translated">您好</target>
+      </trans-unit>
+      <trans-unit id="324" resname="0" restype="string" datatype="x-yaml" x-context="triage_samples@START">
+        <source>Let's get started</source>
+        <target state="translated">我们开始吧</target>
+      </trans-unit>
+      <trans-unit id="334" resname="2" restype="string" datatype="x-yaml" x-context="triage_samples@ACKP">
+        <source>Got it</source>
+        <target state="translated">知道了</target>
+      </trans-unit>
+      <trans-unit id="336" resname="4" restype="string" datatype="x-yaml" x-context="triage_samples@ACKP">
+        <source>Okay</source>
+        <target state="translated">好</target>
+      </trans-unit>
+      <trans-unit id="340" resname="0" restype="string" datatype="x-yaml" x-context="triage_samples@ACKN">
+        <source>Got it</source>
+        <target state="translated">知道了</target>
+      </trans-unit>
+      <trans-unit id="346" resname="6" restype="string" datatype="x-yaml" x-context="triage_samples@ACKN">
+        <source>Thank you</source>
+        <target state="translated">谢谢</target>
+      </trans-unit>
+      <trans-unit id="347" resname="7" restype="string" datatype="x-yaml" x-context="triage_samples@ACKN">
+        <source>Thanks</source>
+        <target state="translated">谢谢！</target>
+      </trans-unit>
+      <trans-unit id="373" resname="4" restype="string" datatype="x-yaml" x-context="triage_samples@ACK_LAST">
+        <source>One more step!</source>
+        <target state="translated">还有一个步骤！</target>
+      </trans-unit>
+      <trans-unit id="376" resname="color" restype="string" datatype="x-yaml" x-context="triage_options@0">
+        <source>green</source>
+        <target state="translated">绿色</target>
+      </trans-unit>
+      <trans-unit id="387" resname=":title" restype="string" datatype="x-yaml" x-context="care_options@0">
+        <source>Learn more</source>
+        <target state="translated">了解更多</target>
+      </trans-unit>
+      <trans-unit id="390" resname=":title" restype="string" datatype="x-yaml" x-context="care_options@1">
+        <source>Take action</source>
+        <target state="translated">采取行动</target>
+      </trans-unit>
+      <trans-unit id="393" resname=":title" restype="string" datatype="x-yaml" x-context="care_options@2">
+        <source>Ask a question</source>
+        <target state="translated">询问一个问题</target>
+      </trans-unit>
+      <trans-unit id="403" resname=":title" restype="string" datatype="x-yaml" x-context="care_options@5">
+        <source>Emergency care</source>
+        <target state="translated">紧急医护</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/user_questions/feelGood/show.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2" resname="r359045259" restype="plural" datatype="ruby" extype="one">
+        <source>&lt;span class="num"&gt;1&lt;/span&gt; doctor agrees</source>
+        <target state="translated">&lt;span class="num"&gt;1&lt;/span&gt;名医生赞成</target>
+      </trans-unit>
+      <trans-unit id="3" resname="r359045259" restype="plural" datatype="ruby" extype="other">
+        <source>&lt;span class="num"&gt;%{count}&lt;/span&gt;名医生赞成</source>
+        <target state="translated">&lt;span class="num"&gt;%{count}&lt;/span&gt;名医生赞成</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/user_questions/feelGood/list_questions.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="4" resname="r658863033" restype="string" datatype="ruby">
+        <source>%{span_start}Get answers to your health questions%{span_end}&lt;br&gt;%{span_start}from over %{count} top doctors%{span_end}</source>
+        <target state="translated">%{span_start}从%{count}名美国顶级医生那里%{span_end}&lt;br&gt;%{span_start}获取对您的健康问题的回答%{span_end}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/for_members.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="9" resname="r808842909" restype="string" datatype="ruby">
+        <source>Curated by doctors to keep you&lt;br/&gt;informed on current events in medicine</source>
+        <target state="translated">医生组织的为了让您保持&lt;br/&gt;了解当前的医学事件</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/searchPages/symptoms.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="10" resname="r420577192" restype="string" datatype="ruby">
+        <source>Upper Abdomen</source>
+        <target state="translated">上腹</target>
+      </trans-unit>
+      <trans-unit id="11" resname="r569067464" restype="string" datatype="ruby">
+        <source>Lower Abdomen</source>
+        <target state="translated">小腹</target>
+      </trans-unit>
+      <trans-unit id="12" resname="r1040580325" restype="string" datatype="ruby">
+        <source>Upper Back</source>
+        <target state="translated">上背</target>
+      </trans-unit>
+      <trans-unit id="13" resname="r431798784" restype="string" datatype="ruby">
+        <source>Lower Back</source>
+        <target state="translated">后腰</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/searchPages/body_symptoms_search.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="16" resname="r366075547" restype="string" datatype="ruby">
+        <source>Edit symptoms</source>
+        <target state="translated">编辑症状</target>
+      </trans-unit>
+      <trans-unit id="17" resname="r306721015" restype="string" datatype="ruby">
+        <source>Who needs help?</source>
+        <target state="translated">谁需要帮助？</target>
+      </trans-unit>
+      <trans-unit id="18" resname="r783088456" restype="string" datatype="ruby">
+        <source>Tap symptoms or ask doctors</source>
+        <target state="translated">点击症状或询问医生</target>
+      </trans-unit>
+      <trans-unit id="22" resname="r996759903" restype="string" datatype="ruby">
+        <source>Care options</source>
+        <target state="translated">医护选项</target>
+      </trans-unit>
+      <trans-unit id="23" resname="r374668228" restype="string" datatype="ruby">
+        <source>Seek emergency medical attention</source>
+        <target state="translated">寻求紧急医疗医护</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/attribute.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="51" resname="r845077243" restype="string" datatype="ruby">
+        <source>Immunization</source>
+        <target state="translated">免疫/预防接种</target>
+      </trans-unit>
+      <trans-unit id="53" resname="r789310818" restype="string" datatype="ruby">
+        <source>Topic</source>
+        <target state="translated">话题</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/feed/_tip.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="24" resname="r978704542" restype="plural" datatype="ruby" extype="one">
+        <source>1 doctor &lt;span&gt;agrees&lt;/span&gt;</source>
+        <target state="translated">1名医生&lt;span&gt;同意&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="25" resname="r978704542" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} doctors &lt;span&gt;agree&lt;/span&gt;</source>
+        <target state="translated">%{count}名医生&lt;span&gt;同意&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/feed/_answer.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="26" resname="r316944342" restype="plural" datatype="ruby" extype="one">
+        <source>&lt;a class="agrees"&gt;1 doctor&lt;/a&gt; agrees</source>
+        <target state="translated">&lt;a class="agrees"&gt;1名医生&lt;/a&gt;同意</target>
+      </trans-unit>
+      <trans-unit id="27" resname="r316944342" restype="plural" datatype="ruby" extype="other">
+        <source>&lt;a class="agrees"&gt;%{count} doctors&lt;/a&gt; agree</source>
+        <target state="translated">&lt;a class="agrees"&gt;%{count}名医生&lt;/a&gt;同意</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/attribute.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="50" resname="r672739695" restype="string" datatype="ruby">
+        <source>Body Part</source>
+        <target state="translated">身体部分</target>
+      </trans-unit>
+      <trans-unit id="52" resname="r991089009" restype="string" datatype="ruby">
+        <source>Side Effect</source>
+        <target state="translated">副作用</target>
+      </trans-unit>
+      <trans-unit id="54" resname="r915826933" restype="string" datatype="ruby">
+        <source>Types of %{name}</source>
+        <target state="translated">%{name}类型</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="40" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target state="translated">不是</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="search_results.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="61" resname="r864785970" restype="string" datatype="x-haml">
+        <source>no</source>
+        <target state="translated">不是</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/connect_doctor_module.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="112" resname="Search name, specialty, topic" restype="string" datatype="html">
+        <source>Search name, specialty, topic</source>
+        <target state="translated">搜索姓名，专科，话题</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/news_reviews.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="113" resname="Helpful Votes" restype="string" datatype="html">
+        <source>Helpful Votes</source>
+        <target state="translated">有帮助的投票</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="117" resname="*Your number can help the doctor recognize you" restype="string" datatype="javascript">
+        <source>*Your number can help the doctor recognize you</source>
+        <target state="translated">*您的号码可以帮助医生认出您</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/searchPages/init_symptom_search.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="119" resname="Edit symptoms" restype="string" datatype="javascript">
+        <source>Edit symptoms</source>
+        <target state="translated">编辑症状</target>
+      </trans-unit>
+      <trans-unit id="120" resname="Added symptoms" restype="string" datatype="javascript">
+        <source>Added symptoms</source>
+        <target state="translated">已添加的症状</target>
+      </trans-unit>
+      <trans-unit id="122" resname="Refine symptoms" restype="string" datatype="javascript">
+        <source>Refine symptoms</source>
+        <target state="translated">改善症状</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/symptom_triage_copy.yml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="127" resname="top_header" restype="string" datatype="x-yaml" x-context="greeting">
+        <source>Get started</source>
+        <target state="translated">开始</target>
+      </trans-unit>
+      <trans-unit id="131" resname="top_header" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who needs help?</source>
+        <target state="translated">谁需要帮助？</target>
+      </trans-unit>
+      <trans-unit id="132" resname="heading" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who are we here to help?</source>
+        <target state="translated">我们在这里帮助谁？</target>
+      </trans-unit>
+      <trans-unit id="133" resname="description" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Please choose, and then tap or type symptoms, or skip to ask our doctors directly.</source>
+        <target state="translated">请选择，然后轻触或输入症状，或跳过此步骤直接询问我们的医生。</target>
+      </trans-unit>
+      <trans-unit id="134" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_dob">
+        <source>Update health profile</source>
+        <target state="translated">更新健康资料</target>
+      </trans-unit>
+      <trans-unit id="140" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_gender">
+        <source>Update health profile</source>
+        <target state="translated">更新健康资料</target>
+      </trans-unit>
+      <trans-unit id="143" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_pregnancy">
+        <source>Update health profile</source>
+        <target state="translated">更新健康资料</target>
+      </trans-unit>
+      <trans-unit id="147" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_body_part">
+        <source>Tap or type a symptom</source>
+        <target state="translated">点击或输入症状</target>
+      </trans-unit>
+      <trans-unit id="150" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_symptom">
+        <source>Choose symptom</source>
+        <target state="translated">选择症状</target>
+      </trans-unit>
+      <trans-unit id="154" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_symptom_no_body_part">
+        <source>Choose symptom</source>
+        <target state="translated">选择症状</target>
+      </trans-unit>
+      <trans-unit id="158" resname="top_header" restype="string" datatype="x-yaml" x-context="symptom_added_success">
+        <source>Tap additional symptoms</source>
+        <target state="translated">点击其他症状</target>
+      </trans-unit>
+      <trans-unit id="163" resname="top_header" restype="string" datatype="x-yaml" x-context="update_risk_factors">
+        <source>More about you</source>
+        <target state="translated">关于您的更多信息</target>
+      </trans-unit>
+      <trans-unit id="168" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report">
+        <source>Creating report</source>
+        <target state="translated">创建报告中</target>
+      </trans-unit>
+      <trans-unit id="218" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report_error">
+        <source>Creating report</source>
+        <target state="translated">创建报告中</target>
+      </trans-unit>
+      <trans-unit id="219" resname="heading" restype="string" datatype="x-yaml" x-context="creating_report_error">
+        <source>Hmm...</source>
+        <target state="translated">糟糕...</target>
+      </trans-unit>
+      <trans-unit id="222" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report_success">
+        <source>Possible explanations</source>
+        <target state="translated">可能的解释</target>
+      </trans-unit>
+      <trans-unit id="237" resname="top_header" restype="string" datatype="x-yaml" x-context="care_options">
+        <source>Care options</source>
+        <target state="translated">医护选项</target>
+      </trans-unit>
+      <trans-unit id="241" resname="top_header" restype="string" datatype="x-yaml" x-context="emergency_medicine_condition">
+        <source>About this care option</source>
+        <target state="translated">关于此医护选项</target>
+      </trans-unit>
+      <trans-unit id="245" resname="top_header" restype="string" datatype="x-yaml" x-context="disclaimer_generic">
+        <source>Disclaimer</source>
+        <target state="translated">免责申明</target>
+      </trans-unit>
+      <trans-unit id="247" resname="top_header" restype="string" datatype="x-yaml" x-context="disclaimer_condition_report">
+        <source>Disclaimer</source>
+        <target state="translated">免责申明</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/layouts/feelGood/static/_header_static_guest_new.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="20" resname="r466948495" restype="string" datatype="ruby">
+        <source>Dr. %{ai_trademark}</source>
+        <target state="translated">智能医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/connect_doctor_module.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="112" resname="Search name, specialty, topic" restype="string" datatype="html">
+        <source>Search name, specialty, topic</source>
+        <target state="translated">搜索姓名，专科，话题</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/news_reviews.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="113" resname="Helpful Votes" restype="string" datatype="html">
+        <source>Helpful Votes</source>
+        <target state="translated">有帮助的投票</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="117" resname="*Your number can help the doctor recognize you" restype="string" datatype="javascript">
+        <source>*Your number can help the doctor recognize you</source>
+        <target state="translated">*您的号码可以帮助医生认出您</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/searchPages/init_symptom_search.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="119" resname="Edit symptoms" restype="string" datatype="javascript">
+        <source>Edit symptoms</source>
+        <target state="translated">编辑症状</target>
+      </trans-unit>
+      <trans-unit id="120" resname="Added symptoms" restype="string" datatype="javascript">
+        <source>Added symptoms</source>
+        <target state="translated">已添加的症状</target>
+      </trans-unit>
+      <trans-unit id="122" resname="Refine symptoms" restype="string" datatype="javascript">
+        <source>Refine symptoms</source>
+        <target state="translated">改善症状</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/symptom_triage_copy.yml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="127" resname="top_header" restype="string" datatype="x-yaml" x-context="greeting">
+        <source>Get started</source>
+        <target state="translated">开始</target>
+      </trans-unit>
+      <trans-unit id="131" resname="top_header" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who needs help?</source>
+        <target state="translated">谁需要帮助？</target>
+      </trans-unit>
+      <trans-unit id="132" resname="heading" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Who are we here to help?</source>
+        <target state="translated">我们在这里帮助谁？</target>
+      </trans-unit>
+      <trans-unit id="133" resname="description" restype="string" datatype="x-yaml" x-context="account_selection">
+        <source>Please choose, and then tap or type symptoms, or skip to ask our doctors directly.</source>
+        <target state="translated">请选择，然后轻触或输入症状，或跳过此步骤直接询问我们的医生。</target>
+      </trans-unit>
+      <trans-unit id="134" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_dob">
+        <source>Update health profile</source>
+        <target state="translated">更新健康资料</target>
+      </trans-unit>
+      <trans-unit id="140" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_gender">
+        <source>Update health profile</source>
+        <target state="translated">更新健康资料</target>
+      </trans-unit>
+      <trans-unit id="143" resname="top_header" restype="string" datatype="x-yaml" x-context="update_health_profile_pregnancy">
+        <source>Update health profile</source>
+        <target state="translated">更新健康资料</target>
+      </trans-unit>
+      <trans-unit id="147" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_body_part">
+        <source>Tap or type a symptom</source>
+        <target state="translated">点击或输入症状</target>
+      </trans-unit>
+      <trans-unit id="150" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_symptom">
+        <source>Choose symptom</source>
+        <target state="translated">选择症状</target>
+      </trans-unit>
+      <trans-unit id="154" resname="top_header" restype="string" datatype="x-yaml" x-context="choose_symptom_no_body_part">
+        <source>Choose symptom</source>
+        <target state="translated">选择症状</target>
+      </trans-unit>
+      <trans-unit id="158" resname="top_header" restype="string" datatype="x-yaml" x-context="symptom_added_success">
+        <source>Tap additional symptoms</source>
+        <target state="translated">点击其他症状</target>
+      </trans-unit>
+      <trans-unit id="163" resname="top_header" restype="string" datatype="x-yaml" x-context="update_risk_factors">
+        <source>More about you</source>
+        <target state="translated">关于您的更多信息</target>
+      </trans-unit>
+      <trans-unit id="168" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report">
+        <source>Creating report</source>
+        <target state="translated">创建报告中</target>
+      </trans-unit>
+      <trans-unit id="218" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report_error">
+        <source>Creating report</source>
+        <target state="translated">创建报告中</target>
+      </trans-unit>
+      <trans-unit id="219" resname="heading" restype="string" datatype="x-yaml" x-context="creating_report_error">
+        <source>Hmm...</source>
+        <target state="translated">糟糕...</target>
+      </trans-unit>
+      <trans-unit id="222" resname="top_header" restype="string" datatype="x-yaml" x-context="creating_report_success">
+        <source>Possible explanations</source>
+        <target state="translated">可能的解释</target>
+      </trans-unit>
+      <trans-unit id="237" resname="top_header" restype="string" datatype="x-yaml" x-context="care_options">
+        <source>Care options</source>
+        <target state="translated">医护选项</target>
+      </trans-unit>
+      <trans-unit id="241" resname="top_header" restype="string" datatype="x-yaml" x-context="emergency_medicine_condition">
+        <source>About this care option</source>
+        <target state="translated">关于此医护选项</target>
+      </trans-unit>
+      <trans-unit id="245" resname="top_header" restype="string" datatype="x-yaml" x-context="disclaimer_generic">
+        <source>Disclaimer</source>
+        <target state="translated">免责申明</target>
+      </trans-unit>
+      <trans-unit id="247" resname="top_header" restype="string" datatype="x-yaml" x-context="disclaimer_condition_report">
+        <source>Disclaimer</source>
+        <target state="translated">免责申明</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="125" resname="Please enter a valid date" restype="string" datatype="javascript">
+        <source>Please enter a valid date</source>
+        <target state="translated">请输入有效日期</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="502" resname="r1014486431" restype="string" datatype="ruby">
+        <source>Dr. %{full_name}</source>
+        <target state="translated">%{full_name}医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/user_questions/feelGood/_related_questions.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="49" resname="r1072022560" restype="plural" datatype="ruby" extype="other">
+        <source>%{count} doctors responded</source>
+        <target state="translated">%{count}位医生回复</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="508" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target state="translated">不是</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_search_options.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="537" resname="r91472850" restype="string" datatype="x-haml">
+        <source>Clinicians</source>
+        <target state="translated">临床医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="600" resname="Invite your doctor" restype="string" datatype="javascript">
+        <source>Invite your doctor</source>
+        <target state="translated">邀请您的医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/searchPages/init_symptom_search.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="610" resname="Start over?" restype="string" datatype="javascript">
+        <source>Start over?</source>
+        <target state="translated">重新开始？</target>
+      </trans-unit>
+      <trans-unit id="611" resname="Heads up! If you go back from here, you&apos;ll lose the symptoms you shared." restype="string" datatype="javascript">
+        <source>Heads up! If you go back from here, you'll lose the symptoms you shared.</source>
+        <target state="translated">小心！如果您从此处返回，您分享的症状将丢失。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/member_profile_value_store.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="507" resname="r633096851" restype="string" datatype="ruby">
+        <source>father</source>
+        <target state="translated">父亲</target>
+      </trans-unit>
+      <trans-unit id="508" resname="r264783012" restype="string" datatype="ruby">
+        <source>brother</source>
+        <target state="translated">兄弟</target>
+      </trans-unit>
+      <trans-unit id="509" resname="r561552975" restype="string" datatype="ruby">
+        <source>son</source>
+        <target state="translated">儿子</target>
+      </trans-unit>
+      <trans-unit id="510" resname="r896982751" restype="string" datatype="ruby">
+        <source>stepson</source>
+        <target state="translated">继子</target>
+      </trans-unit>
+      <trans-unit id="511" resname="r738106537" restype="string" datatype="ruby">
+        <source>grandfather</source>
+        <target state="translated">祖父/外祖父</target>
+      </trans-unit>
+      <trans-unit id="512" resname="r240673246" restype="string" datatype="ruby">
+        <source>grandson</source>
+        <target state="translated">外孙</target>
+      </trans-unit>
+      <trans-unit id="513" resname="r866270457" restype="string" datatype="ruby">
+        <source>husband</source>
+        <target state="translated">丈夫</target>
+      </trans-unit>
+      <trans-unit id="514" resname="r928040231" restype="string" datatype="ruby">
+        <source>boyfriend</source>
+        <target state="translated">男朋友</target>
+      </trans-unit>
+      <trans-unit id="515" resname="r1050327994" restype="string" datatype="ruby">
+        <source>uncle</source>
+        <target state="translated">姑父/伯父/叔叔</target>
+      </trans-unit>
+      <trans-unit id="516" resname="r504558006" restype="string" datatype="ruby">
+        <source>nephew</source>
+        <target state="translated">侄子</target>
+      </trans-unit>
+      <trans-unit id="517" resname="r154538502" restype="string" datatype="ruby">
+        <source>mother</source>
+        <target state="translated">母亲</target>
+      </trans-unit>
+      <trans-unit id="518" resname="r739987589" restype="string" datatype="ruby">
+        <source>sister</source>
+        <target state="translated">姐妹</target>
+      </trans-unit>
+      <trans-unit id="519" resname="r805983089" restype="string" datatype="ruby">
+        <source>daughter</source>
+        <target state="translated">女儿</target>
+      </trans-unit>
+      <trans-unit id="520" resname="r143506102" restype="string" datatype="ruby">
+        <source>stepdaughter</source>
+        <target state="translated">继女</target>
+      </trans-unit>
+      <trans-unit id="521" resname="r259548188" restype="string" datatype="ruby">
+        <source>grandmother</source>
+        <target state="translated">祖母/外祖母</target>
+      </trans-unit>
+      <trans-unit id="522" resname="r1033810326" restype="string" datatype="ruby">
+        <source>granddaughter</source>
+        <target state="translated">外孙女</target>
+      </trans-unit>
+      <trans-unit id="523" resname="r7055697" restype="string" datatype="ruby">
+        <source>wife</source>
+        <target state="translated">妻子</target>
+      </trans-unit>
+      <trans-unit id="524" resname="r928663617" restype="string" datatype="ruby">
+        <source>girlfriend</source>
+        <target state="translated">女朋友</target>
+      </trans-unit>
+      <trans-unit id="525" resname="r1064168741" restype="string" datatype="ruby">
+        <source>aunt</source>
+        <target state="translated">姑姑/伯母/姨姨</target>
+      </trans-unit>
+      <trans-unit id="526" resname="r771377575" restype="string" datatype="ruby">
+        <source>niece</source>
+        <target state="translated">侄女</target>
+      </trans-unit>
+      <trans-unit id="527" resname="r897427041" restype="string" datatype="ruby">
+        <source>friend</source>
+        <target state="translated">朋友</target>
+      </trans-unit>
+      <trans-unit id="528" resname="r6691401" restype="string" datatype="ruby">
+        <source>cousin</source>
+        <target state="translated">堂兄弟姐妹</target>
+      </trans-unit>
+      <trans-unit id="529" resname="r190006147" restype="string" datatype="ruby">
+        <source>patient</source>
+        <target state="translated">患者</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/searchPages/init_symptom_search.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="607" resname="Are you sure you would like to remove this symptom?" restype="string" datatype="javascript">
+        <source>Are you sure you would like to remove this symptom?</source>
+        <target state="translated"> 您确定要删除这条症状吗？</target>
+      </trans-unit>
+      <trans-unit id="608" resname="Wait!" restype="string" datatype="javascript">
+        <source>Wait!</source>
+        <target state="translated">等待!</target>
+      </trans-unit>
+      <trans-unit id="609" resname="We don&apos;t have enough information to generate an accurate report" restype="string" datatype="javascript">
+        <source>We don't have enough information to generate an accurate report</source>
+        <target state="translated">我们目前没有足够信息来生成报告</target>
+      </trans-unit>
+      <trans-unit id="610" resname="Start over?" restype="string" datatype="javascript">
+        <source>Start over?</source>
+        <target state="translated">重新开始?</target>
+      </trans-unit>
+      <trans-unit id="611" resname="Heads up! If you go back from here, you&apos;ll lose the symptoms you shared." restype="string" datatype="javascript">
+        <source>Heads up! If you go back from here, you'll lose the symptoms you shared.</source>
+        <target state="translated">注意哦，如果您返回上一步，我们无法保存您添加的症状</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/expert/i18n.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="91" resname="r789219506" restype="string" datatype="ruby">
+        <source>doctor</source>
+        <target state="translated">医生</target>
+      </trans-unit>
+      <trans-unit id="92" resname="r320531015" restype="string" datatype="ruby">
+        <source>nurse</source>
+        <target state="translated">护士</target>
+      </trans-unit>
+      <trans-unit id="93" resname="r348008306" restype="string" datatype="ruby">
+        <source>greeter</source>
+        <target state="translated">接待人员</target>
+      </trans-unit>
+      <trans-unit id="94" resname="r272899738" restype="string" datatype="ruby">
+        <source>health professional</source>
+        <target state="translated">医护人员</target>
+      </trans-unit>
+      <trans-unit id="95" resname="r145265400" restype="string" datatype="ruby">
+        <source>staff member</source>
+        <target state="translated">员工</target>
+      </trans-unit>
+      <trans-unit id="96" resname="r35261176" restype="string" datatype="ruby">
+        <source>expert</source>
+        <target state="translated">专家</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/plan_subscribe.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="105" resname="Just one consult" restype="string" datatype="javascript">
+        <source>Just one consult</source>
+        <target state="translated">只是咨询</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/pay_total.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="106" resname="Your total this month" restype="string" datatype="javascript">
+        <source>Your total this month</source>
+        <target state="translated">您的本月总计</target>
+      </trans-unit>
+      <trans-unit id="108" resname="year" restype="string" datatype="javascript">
+        <source>year</source>
+        <target state="translated">年</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="114" resname="Spouse" restype="string" datatype="javascript">
+        <source>Spouse</source>
+        <target state="translated">配偶</target>
+      </trans-unit>
+      <trans-unit id="115" resname="Child" restype="string" datatype="javascript">
+        <source>Child</source>
+        <target state="translated">儿童</target>
+      </trans-unit>
+      <trans-unit id="116" resname="Self" restype="string" datatype="javascript">
+        <source>Self</source>
+        <target state="translated">自己</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/settingsPanel.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="125" resname="Prime (until {date})" restype="string" datatype="javascript">
+        <source>Prime (until {date})</source>
+        <target state="translated">Prime(直到{date})</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/questions.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="126" resname="specialist" restype="string" datatype="javascript">
+        <source>specialist</source>
+        <target state="translated">专家</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/consult_rating.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="140" resname="Vote" restype="string" datatype="javascript">
+        <source>Vote</source>
+        <target state="translated">投票</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/api/v2/reference_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="94" resname="r64369469" restype="string" datatype="ruby">
+        <source>Afrikaans</source>
+        <target state="translated">南非语</target>
+      </trans-unit>
+      <trans-unit id="95" resname="r524484063" restype="string" datatype="ruby">
+        <source>Albanian</source>
+        <target state="translated">阿尔巴尼亚语</target>
+      </trans-unit>
+      <trans-unit id="97" resname="r124831304" restype="string" datatype="ruby">
+        <source>Amharic</source>
+        <target state="translated">阿姆哈拉语</target>
+      </trans-unit>
+      <trans-unit id="98" resname="r994530773" restype="string" datatype="ruby">
+        <source>Arabic</source>
+        <target state="translated">阿拉伯语</target>
+      </trans-unit>
+      <trans-unit id="99" resname="r462809900" restype="string" datatype="ruby">
+        <source>Armenian</source>
+        <target state="translated">亚美尼亚语</target>
+      </trans-unit>
+      <trans-unit id="100" resname="r317301997" restype="string" datatype="ruby">
+        <source>Assamese</source>
+        <target state="translated">阿萨姆语</target>
+      </trans-unit>
+      <trans-unit id="101" resname="r945574191" restype="string" datatype="ruby">
+        <source>Aymara</source>
+        <target state="translated">艾马拉语</target>
+      </trans-unit>
+      <trans-unit id="103" resname="r30469638" restype="string" datatype="ruby">
+        <source>Azeri</source>
+        <target state="translated">阿塞拜疆语</target>
+      </trans-unit>
+      <trans-unit id="104" resname="r472736007" restype="string" datatype="ruby">
+        <source>Belarusian</source>
+        <target state="translated">白俄罗斯语</target>
+      </trans-unit>
+      <trans-unit id="105" resname="r842452302" restype="string" datatype="ruby">
+        <source>Bengali</source>
+        <target state="translated">孟加拉语</target>
+      </trans-unit>
+      <trans-unit id="107" resname="r1034553322" restype="string" datatype="ruby">
+        <source>Bislama</source>
+        <target state="translated">比斯拉马语</target>
+      </trans-unit>
+      <trans-unit id="108" resname="r553784659" restype="string" datatype="ruby">
+        <source>Bosnian</source>
+        <target state="translated">波斯尼亚语</target>
+      </trans-unit>
+      <trans-unit id="109" resname="r252213779" restype="string" datatype="ruby">
+        <source>Bulgarian</source>
+        <target state="translated">保加利亚语</target>
+      </trans-unit>
+      <trans-unit id="110" resname="r600002441" restype="string" datatype="ruby">
+        <source>Burmese</source>
+        <target state="translated">缅甸语</target>
+      </trans-unit>
+      <trans-unit id="112" resname="r477304668" restype="string" datatype="ruby">
+        <source>Catalan</source>
+        <target state="translated">加泰罗尼亚语</target>
+      </trans-unit>
+      <trans-unit id="115" resname="r392065641" restype="string" datatype="ruby">
+        <source>Croatian</source>
+        <target state="translated">克罗地亚语</target>
+      </trans-unit>
+      <trans-unit id="116" resname="r844605273" restype="string" datatype="ruby">
+        <source>Czech</source>
+        <target state="translated">捷克语</target>
+      </trans-unit>
+      <trans-unit id="117" resname="r78420415" restype="string" datatype="ruby">
+        <source>Danish</source>
+        <target state="translated">丹麦语</target>
+      </trans-unit>
+      <trans-unit id="118" resname="r799749943" restype="string" datatype="ruby">
+        <source>Dari</source>
+        <target state="translated">达里语</target>
+      </trans-unit>
+      <trans-unit id="119" resname="r381131646" restype="string" datatype="ruby">
+        <source>Dhivehi</source>
+        <target state="translated">迪维希语</target>
+      </trans-unit>
+      <trans-unit id="120" resname="r86086132" restype="string" datatype="ruby">
+        <source>Dutch</source>
+        <target state="translated">荷兰语</target>
+      </trans-unit>
+      <trans-unit id="121" resname="r1062383319" restype="string" datatype="ruby">
+        <source>Dzongkha</source>
+        <target state="translated">不丹语</target>
+      </trans-unit>
+      <trans-unit id="122" resname="r418009985" restype="string" datatype="ruby">
+        <source>English</source>
+        <target state="translated">英语</target>
+      </trans-unit>
+      <trans-unit id="123" resname="r250949999" restype="string" datatype="ruby">
+        <source>Estonian</source>
+        <target state="translated">爱沙尼亚语</target>
+      </trans-unit>
+      <trans-unit id="124" resname="r717637135" restype="string" datatype="ruby">
+        <source>Filipino</source>
+        <target state="translated">菲律宾语</target>
+      </trans-unit>
+      <trans-unit id="125" resname="r23207023" restype="string" datatype="ruby">
+        <source>Finnish</source>
+        <target state="translated">芬兰语</target>
+      </trans-unit>
+      <trans-unit id="126" resname="r385483397" restype="string" datatype="ruby">
+        <source>French</source>
+        <target state="translated">法语</target>
+      </trans-unit>
+      <trans-unit id="127" resname="r998395174" restype="string" datatype="ruby">
+        <source>Gagauz</source>
+        <target state="translated">加告兹语</target>
+      </trans-unit>
+      <trans-unit id="128" resname="r336368566" restype="string" datatype="ruby">
+        <source>Georgian</source>
+        <target state="translated">格鲁吉亚语</target>
+      </trans-unit>
+      <trans-unit id="129" resname="r347310607" restype="string" datatype="ruby">
+        <source>German</source>
+        <target state="translated">德语</target>
+      </trans-unit>
+      <trans-unit id="130" resname="r1005233200" restype="string" datatype="ruby">
+        <source>Greek</source>
+        <target state="translated">希腊语</target>
+      </trans-unit>
+      <trans-unit id="132" resname="r1052291476" restype="string" datatype="ruby">
+        <source>Gujarati</source>
+        <target state="translated">古吉拉特语</target>
+      </trans-unit>
+      <trans-unit id="133" resname="r393783724" restype="string" datatype="ruby">
+        <source>Haitian Creole</source>
+        <target state="translated">海地克里奥尔语</target>
+      </trans-unit>
+      <trans-unit id="135" resname="r625231635" restype="string" datatype="ruby">
+        <source>Hebrew</source>
+        <target state="translated">希伯来语</target>
+      </trans-unit>
+      <trans-unit id="136" resname="r299343497" restype="string" datatype="ruby">
+        <source>Hindi</source>
+        <target state="translated">印地语</target>
+      </trans-unit>
+      <trans-unit id="137" resname="r452474430" restype="string" datatype="ruby">
+        <source>Hiri Motu</source>
+        <target state="translated">希里摩图语</target>
+      </trans-unit>
+      <trans-unit id="139" resname="r965769127" restype="string" datatype="ruby">
+        <source>Hungarian</source>
+        <target state="translated">匈牙利语</target>
+      </trans-unit>
+      <trans-unit id="140" resname="r409900291" restype="string" datatype="ruby">
+        <source>Icelandic</source>
+        <target state="translated">冰岛语</target>
+      </trans-unit>
+      <trans-unit id="142" resname="r58632739" restype="string" datatype="ruby">
+        <source>Indonesian</source>
+        <target state="translated">印尼语</target>
+      </trans-unit>
+      <trans-unit id="143" resname="r808973021" restype="string" datatype="ruby">
+        <source>Irish Gaelic</source>
+        <target state="translated">爱尔兰语</target>
+      </trans-unit>
+      <trans-unit id="144" resname="r757336181" restype="string" datatype="ruby">
+        <source>Italian</source>
+        <target state="translated">意大利语</target>
+      </trans-unit>
+      <trans-unit id="145" resname="r747825251" restype="string" datatype="ruby">
+        <source>Japanese</source>
+        <target state="translated">日语</target>
+      </trans-unit>
+      <trans-unit id="146" resname="r715679316" restype="string" datatype="ruby">
+        <source>Kannada</source>
+        <target state="translated">卡纳达语</target>
+      </trans-unit>
+      <trans-unit id="147" resname="r823679694" restype="string" datatype="ruby">
+        <source>Kashmiri</source>
+        <target state="translated">克什米尔语</target>
+      </trans-unit>
+      <trans-unit id="148" resname="r97931707" restype="string" datatype="ruby">
+        <source>Kazakh</source>
+        <target state="translated">哈萨克语</target>
+      </trans-unit>
+      <trans-unit id="149" resname="r172263155" restype="string" datatype="ruby">
+        <source>Khmer</source>
+        <target state="translated">高棉语</target>
+      </trans-unit>
+      <trans-unit id="150" resname="r124563436" restype="string" datatype="ruby">
+        <source>Korean</source>
+        <target state="translated">韩语</target>
+      </trans-unit>
+      <trans-unit id="151" resname="r585040718" restype="string" datatype="ruby">
+        <source>Kurdish</source>
+        <target state="translated">库尔德语</target>
+      </trans-unit>
+      <trans-unit id="153" resname="r887328646" restype="string" datatype="ruby">
+        <source>Kyrgyz</source>
+        <target state="translated">吉尔吉斯坦语</target>
+      </trans-unit>
+      <trans-unit id="154" resname="r653937649" restype="string" datatype="ruby">
+        <source>Lao</source>
+        <target state="translated">老挝语</target>
+      </trans-unit>
+      <trans-unit id="155" resname="r1062369326" restype="string" datatype="ruby">
+        <source>Latvian</source>
+        <target state="translated">拉脱维亚语</target>
+      </trans-unit>
+      <trans-unit id="156" resname="r922951220" restype="string" datatype="ruby">
+        <source>Lithuanian</source>
+        <target state="translated">立陶宛语</target>
+      </trans-unit>
+      <trans-unit id="157" resname="r24051303" restype="string" datatype="ruby">
+        <source>Luxembourgish</source>
+        <target state="translated">卢森堡语</target>
+      </trans-unit>
+      <trans-unit id="158" resname="r969665863" restype="string" datatype="ruby">
+        <source>Macedonian</source>
+        <target state="translated">马其顿语</target>
+      </trans-unit>
+      <trans-unit id="159" resname="r39407306" restype="string" datatype="ruby">
+        <source>Malagasy</source>
+        <target state="translated">马拉加斯语</target>
+      </trans-unit>
+      <trans-unit id="160" resname="r219334263" restype="string" datatype="ruby">
+        <source>Malay</source>
+        <target state="translated">马来语</target>
+      </trans-unit>
+      <trans-unit id="161" resname="r1031327609" restype="string" datatype="ruby">
+        <source>Malayalam</source>
+        <target state="translated">马拉雅拉姆语</target>
+      </trans-unit>
+      <trans-unit id="162" resname="r992361300" restype="string" datatype="ruby">
+        <source>Maltese</source>
+        <target state="translated">马耳他语</target>
+      </trans-unit>
+      <trans-unit id="164" resname="r295517461" restype="string" datatype="ruby">
+        <source>Marathi</source>
+        <target state="translated">马拉地语</target>
+      </trans-unit>
+      <trans-unit id="165" resname="r929522856" restype="string" datatype="ruby">
+        <source>Moldovan</source>
+        <target state="translated">摩尔多瓦语</target>
+      </trans-unit>
+      <trans-unit id="166" resname="r128397088" restype="string" datatype="ruby">
+        <source>Mongolian</source>
+        <target state="translated">蒙古语</target>
+      </trans-unit>
+      <trans-unit id="167" resname="r669599982" restype="string" datatype="ruby">
+        <source>Montenegrin</source>
+        <target state="translated">蒙特内哥罗语</target>
+      </trans-unit>
+      <trans-unit id="169" resname="r273552979" restype="string" datatype="ruby">
+        <source>Ndebele</source>
+        <target state="translated">恩德贝勒语</target>
+      </trans-unit>
+      <trans-unit id="170" resname="r877893297" restype="string" datatype="ruby">
+        <source>Nepali</source>
+        <target state="translated">尼泊尔语</target>
+      </trans-unit>
+      <trans-unit id="171" resname="r1025504566" restype="string" datatype="ruby">
+        <source>New Zealand Sign Language</source>
+        <target state="translated">新西兰手语</target>
+      </trans-unit>
+      <trans-unit id="172" resname="r804381022" restype="string" datatype="ruby">
+        <source>Northern Sotho</source>
+        <target state="translated">北索托语</target>
+      </trans-unit>
+      <trans-unit id="173" resname="r288217785" restype="string" datatype="ruby">
+        <source>Norwegian</source>
+        <target state="translated">挪威语</target>
+      </trans-unit>
+      <trans-unit id="174" resname="r22766918" restype="string" datatype="ruby">
+        <source>Oriya</source>
+        <target state="translated">奥里亚语</target>
+      </trans-unit>
+      <trans-unit id="175" resname="r61468680" restype="string" datatype="ruby">
+        <source>Papiamento</source>
+        <target state="translated">帕皮阿门托语</target>
+      </trans-unit>
+      <trans-unit id="176" resname="r1018646491" restype="string" datatype="ruby">
+        <source>Pashto</source>
+        <target state="translated">普什图语</target>
+      </trans-unit>
+      <trans-unit id="177" resname="r509907104" restype="string" datatype="ruby">
+        <source>Persian</source>
+        <target state="translated">波斯语</target>
+      </trans-unit>
+      <trans-unit id="178" resname="r505291131" restype="string" datatype="ruby">
+        <source>Polish</source>
+        <target state="translated">波兰语</target>
+      </trans-unit>
+      <trans-unit id="179" resname="r779355176" restype="string" datatype="ruby">
+        <source>Portuguese</source>
+        <target state="translated">葡萄牙语</target>
+      </trans-unit>
+      <trans-unit id="182" resname="r844317309" restype="string" datatype="ruby">
+        <source>Punjabi</source>
+        <target state="translated">旁遮普语</target>
+      </trans-unit>
+      <trans-unit id="183" resname="r89307646" restype="string" datatype="ruby">
+        <source>Quechua</source>
+        <target state="translated">克丘亚语</target>
+      </trans-unit>
+      <trans-unit id="184" resname="r492683575" restype="string" datatype="ruby">
+        <source>Romanian</source>
+        <target state="translated">罗马尼亚语</target>
+      </trans-unit>
+      <trans-unit id="185" resname="r344562292" restype="string" datatype="ruby">
+        <source>Russian</source>
+        <target state="translated">俄语</target>
+      </trans-unit>
+      <trans-unit id="188" resname="r699427958" restype="string" datatype="ruby">
+        <source>Somali</source>
+        <target state="translated">索马里语</target>
+      </trans-unit>
+      <trans-unit id="189" resname="r76442835" restype="string" datatype="ruby">
+        <source>Sotho</source>
+        <target state="translated">索托语</target>
+      </trans-unit>
+      <trans-unit id="190" resname="r686765566" restype="string" datatype="ruby">
+        <source>Spanish</source>
+        <target state="translated">西班牙语</target>
+      </trans-unit>
+      <trans-unit id="193" resname="r117674409" restype="string" datatype="ruby">
+        <source>Swahili</source>
+        <target state="translated">斯瓦希里语</target>
+      </trans-unit>
+      <trans-unit id="194" resname="r442888062" restype="string" datatype="ruby">
+        <source>Swati</source>
+        <target state="translated">斯瓦特语</target>
+      </trans-unit>
+      <trans-unit id="195" resname="r970745711" restype="string" datatype="ruby">
+        <source>Swedish</source>
+        <target state="translated">瑞典语</target>
+      </trans-unit>
+      <trans-unit id="196" resname="r158036455" restype="string" datatype="ruby">
+        <source>Tajik</source>
+        <target state="translated">塔吉克语</target>
+      </trans-unit>
+      <trans-unit id="197" resname="r318308471" restype="string" datatype="ruby">
+        <source>Tamil</source>
+        <target state="translated">泰米尔语</target>
+      </trans-unit>
+      <trans-unit id="198" resname="r1044065826" restype="string" datatype="ruby">
+        <source>Telugu</source>
+        <target state="translated">泰卢固语</target>
+      </trans-unit>
+      <trans-unit id="199" resname="r297392812" restype="string" datatype="ruby">
+        <source>Tetum</source>
+        <target state="translated">德顿语</target>
+      </trans-unit>
+      <trans-unit id="200" resname="r795893022" restype="string" datatype="ruby">
+        <source>Thai</source>
+        <target state="translated">泰语</target>
+      </trans-unit>
+      <trans-unit id="202" resname="r692896047" restype="string" datatype="ruby">
+        <source>Tok Pisin</source>
+        <target state="translated">托克皮辛语</target>
+      </trans-unit>
+      <trans-unit id="203" resname="r783268954" restype="string" datatype="ruby">
+        <source>Tsonga</source>
+        <target state="translated">聪加语</target>
+      </trans-unit>
+      <trans-unit id="204" resname="r406607083" restype="string" datatype="ruby">
+        <source>Tswana</source>
+        <target state="translated">茨瓦纳语</target>
+      </trans-unit>
+      <trans-unit id="209" resname="r23136728" restype="string" datatype="ruby">
+        <source>West Frisian</source>
+        <target state="translated">西弗里斯语</target>
+      </trans-unit>
+      <trans-unit id="210" resname="r716865978" restype="string" datatype="ruby">
+        <source>Yiddish</source>
+        <target state="translated">意第绪语</target>
+      </trans-unit>
+      <trans-unit id="110" resname="r902962623" restype="string" datatype="ruby">
+        <source>American Sign Language</source>
+        <target state="translated">美国手语</target>
+      </trans-unit>
+      <trans-unit id="111" resname="r326691307" restype="string" datatype="ruby">
+        <source>Azerbaijani</source>
+        <target state="translated">阿塞拜疆</target>
+      </trans-unit>
+      <trans-unit id="113" resname="r413818187" restype="string" datatype="ruby">
+        <source>Cantonese</source>
+        <target state="translated">广东话</target>
+      </trans-unit>
+      <trans-unit id="114" resname="r384026336" restype="string" datatype="ruby">
+        <source>Chinese (Simplified)</source>
+        <target state="translated">简体中文</target>
+      </trans-unit>
+      <trans-unit id="115" resname="r404364090" restype="string" datatype="ruby">
+        <source>Chinese (Traditional)</source>
+        <target state="translated">中国传统的</target>
+      </trans-unit>
+      <trans-unit id="116" resname="r68179021" restype="string" datatype="ruby">
+        <source>Guarani</source>
+        <target state="translated">瓜拉尼</target>
+      </trans-unit>
+      <trans-unit id="117" resname="r311822480" restype="string" datatype="ruby">
+        <source>Hausa</source>
+        <target state="translated">豪萨</target>
+      </trans-unit>
+      <trans-unit id="120" resname="r918780086" restype="string" datatype="ruby">
+        <source>Kyrgiz</source>
+        <target state="translated">吉尔吉斯</target>
+      </trans-unit>
+      <trans-unit id="121" resname="r840511806" restype="string" datatype="ruby">
+        <source>Mandarin</source>
+        <target state="translated">普通话</target>
+      </trans-unit>
+      <trans-unit id="122" resname="r366588042" restype="string" datatype="ruby">
+        <source>Navajo</source>
+        <target state="translated">纳瓦霍</target>
+      </trans-unit>
+      <trans-unit id="123" resname="r955040749" restype="string" datatype="ruby">
+        <source>Portuguese (Brazil)</source>
+        <target state="translated">葡萄牙语（巴西）</target>
+      </trans-unit>
+      <trans-unit id="124" resname="r273071435" restype="string" datatype="ruby">
+        <source>Portuguese (Portugal)</source>
+        <target state="translated">葡萄牙语（葡萄牙）</target>
+      </trans-unit>
+      <trans-unit id="125" resname="r480179844" restype="string" datatype="ruby">
+        <source>Serbian</source>
+        <target state="translated">塞尔维亚</target>
+      </trans-unit>
+      <trans-unit id="126" resname="r479950306" restype="string" datatype="ruby">
+        <source>Slovak</source>
+        <target state="translated">斯洛伐克</target>
+      </trans-unit>
+      <trans-unit id="127" resname="r403306952" restype="string" datatype="ruby">
+        <source>Spanish (Latin American)</source>
+        <target state="translated">西班牙语（拉丁美洲）</target>
+      </trans-unit>
+      <trans-unit id="128" resname="r814842848" restype="string" datatype="ruby">
+        <source>Spanish (Spain)</source>
+        <target state="translated">西班牙语（西班牙）</target>
+      </trans-unit>
+      <trans-unit id="129" resname="r958401360" restype="string" datatype="ruby">
+        <source>Tigrinya</source>
+        <target state="translated">提格里尼亚</target>
+      </trans-unit>
+      <trans-unit id="130" resname="r1018926330" restype="string" datatype="ruby">
+        <source>Turkish</source>
+        <target state="translated">土耳其</target>
+      </trans-unit>
+      <trans-unit id="131" resname="r286762168" restype="string" datatype="ruby">
+        <source>Ukrainian</source>
+        <target state="translated">乌克兰</target>
+      </trans-unit>
+      <trans-unit id="132" resname="r963566393" restype="string" datatype="ruby">
+        <source>Urdu</source>
+        <target state="translated">乌尔都语</target>
+      </trans-unit>
+      <trans-unit id="133" resname="r382305876" restype="string" datatype="ruby">
+        <source>Vietnamese</source>
+        <target state="translated">越南语</target>
+      </trans-unit>
+      <trans-unit id="134" resname="r844207535" restype="string" datatype="ruby">
+        <source>Yoruba</source>
+        <target state="translated">约鲁巴</target>
+      </trans-unit>
+      <trans-unit id="113" resname="r376623140" restype="string" datatype="ruby">
+        <source>Bihari</source>
+        <target state="translated">比哈尔语</target>
+      </trans-unit>
+      <trans-unit id="114" resname="r259232445" restype="string" datatype="ruby">
+        <source>Chinese (Cantonese)</source>
+        <target state="translated">中文(粤语)</target>
+      </trans-unit>
+      <trans-unit id="115" resname="r808802199" restype="string" datatype="ruby">
+        <source>Chinese (Mandarin)</source>
+        <target state="translated">中文(普通话)</target>
+      </trans-unit>
+      <trans-unit id="116" resname="r1035491504" restype="string" datatype="ruby">
+        <source>Hmong</source>
+        <target state="translated">苗語</target>
+      </trans-unit>
+      <trans-unit id="117" resname="r419562358" restype="string" datatype="ruby">
+        <source>Igbo</source>
+        <target state="translated">伊博语</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/chat_session.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="98" resname="r842450398" restype="string" datatype="ruby">
+        <source>We're sorry but it appears the doctor ended this consult because they could not answer your consult, often because the question is not within the doctor's area of expertise.</source>
+        <target state="accepted">真抱歉，看起来好像是医生本人结束了本次咨询， 这常常是由于他/她不处于您所需要的专科而无法回答您的问题</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/people/feelGood/doctorPartials/_doctor_result.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="60" resname="r944712741" restype="string" datatype="ruby">
+        <source>In Dr. %{name}'s Referral Network</source>
+        <target state="translated">在%{name}医生的转诊网络内</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/api/v2/reference_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="135" resname="r82233625" restype="string" datatype="ruby">
+        <source>only $10 USD / month</source>
+        <target state="translated">只有10美元/月</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/kb_attribute_relationship.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="109" resname="r1015693398" restype="string" datatype="ruby">
+        <source>Clinical Finding</source>
+        <target state="translated">临床发现</target>
+      </trans-unit>
+      <trans-unit id="110" resname="r334558496" restype="string" datatype="ruby">
+        <source>Clinical finding</source>
+        <target state="translated">临床发现</target>
+      </trans-unit>
+      <trans-unit id="111" resname="r161249316" restype="string" datatype="ruby">
+        <source>Test Result</source>
+        <target state="translated">检验结果</target>
+      </trans-unit>
+      <trans-unit id="112" resname="r179500500" restype="string" datatype="ruby">
+        <source>Diet</source>
+        <target state="translated">饮食</target>
+      </trans-unit>
+      <trans-unit id="113" resname="r473163360" restype="string" datatype="ruby">
+        <source>Test result</source>
+        <target state="translated">检验结果</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/loc_strings_dummy.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="243" resname="r688992261" restype="string" datatype="ruby">
+        <source>Credit card number is invalid.</source>
+        <target state="accepted">信用卡号码无效</target>
+      </trans-unit>
+      <trans-unit id="265" resname="r963721111" restype="string" datatype="ruby">
+        <source>Postal code may contain no more than 9 letter or number characters.</source>
+        <target state="accepted">邮政编码不能超过9个字母或数字</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

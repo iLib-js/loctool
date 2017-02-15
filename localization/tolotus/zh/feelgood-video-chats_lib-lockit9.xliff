@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="android/res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="2" resname="r717299647" restype="string" datatype="x-android-resource">
+        <source>You haven't selected a stethoscope yet</source>
+        <target state="translated">您尚未选择听诊器</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

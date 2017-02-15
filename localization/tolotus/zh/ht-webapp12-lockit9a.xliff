@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="Would you like a translator to join you for this Prime consult?" restype="string" datatype="javascript">
+        <source>Would you like a translator to join you for this Prime consult?</source>
+        <target state="accepted">您想免费邀请同声翻译来加入这次咨询吗？如果不的话，您的医生可能不会说中文。如果指定医生的话，请确认医生档案里显示医生会说中文</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/invite_doctor_modal.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2" resname="Please tell us the following about your clinician so we can invite them to provide you Virtual Care on HealthTap" restype="string" datatype="javascript">
+        <source>Please tell us the following about your clinician so we can invite them to provide you Virtual Care on HealthTap</source>
+        <target state="accepted">为了邀请您的医师来HealthTap为您提供在线医疗咨询，请告诉我们以下关于您的医师的情况</target>
+      </trans-unit>
+      <trans-unit id="3" resname="Please tell us the following about your doctor so we can invite them to provide you Virtual Care on HealthTap" restype="string" datatype="javascript">
+        <source>Please tell us the following about your doctor so we can invite them to provide you Virtual Care on HealthTap</source>
+        <target state="accepted">为了邀请您的医生来HealthTap为您提供在线医疗咨询，请告诉我们以下关于您的医生的情况</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Please tell us the following about your clinician so we can invite them to provide you Virtual Care with your health insurance" restype="string" datatype="javascript">
+        <source>Please tell us the following about your clinician so we can invite them to provide you Virtual Care with your health insurance</source>
+        <target state="accepted">为了邀请您的医师来HealthTap为您提供可由保险支付的在线医疗咨询，请告诉我们以下关于您的医师的情况</target>
+      </trans-unit>
+      <trans-unit id="5" resname="Please tell us the following about your doctor so we can invite them to provide you Virtual Care with your health insurance" restype="string" datatype="javascript">
+        <source>Please tell us the following about your doctor so we can invite them to provide you Virtual Care with your health insurance</source>
+        <target state="accepted">为了邀请您的医生来HealthTap为您提供可由保险支付的在线医疗咨询，请告诉我们以下关于您的医生的情况</target>
+      </trans-unit>
+      <trans-unit id="6" resname="Your clinician&apos;s name" restype="string" datatype="javascript">
+        <source>Your clinician's name</source>
+        <target state="accepted">您医师的名字</target>
+      </trans-unit>
+      <trans-unit id="7" resname="Your doctor&apos;s name" restype="string" datatype="javascript">
+        <source>Your doctor's name</source>
+        <target state="accepted">您医生的名字</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

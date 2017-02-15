@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="8" resname="deactivate" restype="string" datatype="x-android-resource">
+        <source>Deactivate</source>
+        <target state="translated">Desactivar</target>
+      </trans-unit>
+      <trans-unit id="2" resname="twenty_four_hour" restype="string" datatype="x-android-resource">
+        <source>24-hour</source>
+        <target>24 horas</target>
+      </trans-unit>
+      <trans-unit id="3" resname="mail_order" restype="string" datatype="x-android-resource">
+        <source>Mail-order</source>
+        <target>Orden por correo</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

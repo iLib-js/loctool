@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/topics/feelgood/show.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2" resname="r497281813" restype="string" datatype="ruby">
+        <source>Goal</source>
+        <target state="translated">目标</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/topics/feelgood/_topics_snapshot_section.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="3" resname="r398698468" restype="string" datatype="ruby">
+        <source>Description</source>
+        <target state="translated">描述</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/static_pages/press.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="23" resname="r301114423" restype="string" datatype="ruby">
+        <source>Watch video</source>
+        <target state="translated">看录像</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_welcome_password.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="39" resname="r651103158" restype="string" datatype="ruby">
+        <source>We’re so excited to have you join us on a journey to a healthier, happier life and feeling good every day.</source>
+        <target state="translated">我们很高兴能有您加入我们通向更健康美好的生活的旅程，很高兴能让您们每天都过得很好。</target>
+      </trans-unit>
+      <trans-unit id="40" resname="r233052603" restype="string" datatype="ruby">
+        <source>You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists</source>
+        <target state="translated">您现在可以即时访问数百万医生回复，小贴士，新闻，应用程序推荐和检查清单。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/tip_subscription.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="63" resname="r374471473" restype="string" datatype="ruby">
+        <source>Living Healthier</source>
+        <target state="translated">生活更健康</target>
+      </trans-unit>
+      <trans-unit id="66" resname="r951784064" restype="string" datatype="ruby">
+        <source>Managing a Condition</source>
+        <target state="translated">管理症状/健康状况</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/personal_check/i18n.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="69" resname="r770815850" restype="string" datatype="ruby">
+        <source>Once</source>
+        <target state="translated">一次</target>
+      </trans-unit>
+      <trans-unit id="70" resname="r735891223" restype="string" datatype="ruby">
+        <source>Yearly</source>
+        <target state="translated">年</target>
+      </trans-unit>
+      <trans-unit id="71" resname="r1022379177" restype="string" datatype="ruby">
+        <source>once</source>
+        <target state="translated">一次</target>
+      </trans-unit>
+      <trans-unit id="72" resname="r1008668942" restype="string" datatype="ruby">
+        <source>daily</source>
+        <target state="translated">每天</target>
+      </trans-unit>
+      <trans-unit id="73" resname="r14852282" restype="string" datatype="ruby">
+        <source>weekly</source>
+        <target state="translated">每周</target>
+      </trans-unit>
+      <trans-unit id="74" resname="r65503907" restype="string" datatype="ruby">
+        <source>monthly</source>
+        <target state="translated">每月</target>
+      </trans-unit>
+      <trans-unit id="75" resname="r131067115" restype="string" datatype="ruby">
+        <source>hourly</source>
+        <target state="translated">每小时</target>
+      </trans-unit>
+      <trans-unit id="76" resname="r1047805267" restype="string" datatype="ruby">
+        <source>yearly</source>
+        <target state="translated">每年</target>
+      </trans-unit>
+      <trans-unit id="77" resname="r1019576474" restype="string" datatype="ruby">
+        <source>at bedtime</source>
+        <target state="translated">在睡前</target>
+      </trans-unit>
+      <trans-unit id="91" resname="r47749405" restype="string" datatype="ruby">
+        <source>every other hour</source>
+        <target state="translated">每隔一小时</target>
+      </trans-unit>
+      <trans-unit id="92" resname="r508195275" restype="string" datatype="ruby">
+        <source>every other day</source>
+        <target state="translated">每隔一天</target>
+      </trans-unit>
+      <trans-unit id="93" resname="r568610492" restype="string" datatype="ruby">
+        <source>every other week</source>
+        <target state="translated">每隔一周</target>
+      </trans-unit>
+      <trans-unit id="94" resname="r759177141" restype="string" datatype="ruby">
+        <source>every other month</source>
+        <target state="translated">每隔一月</target>
+      </trans-unit>
+      <trans-unit id="98" resname="r810055752" restype="string" datatype="ruby">
+        <source>Every other day</source>
+        <target state="translated">每隔一天</target>
+      </trans-unit>
+      <trans-unit id="99" resname="r445170629" restype="string" datatype="ruby">
+        <source>Every other week</source>
+        <target state="translated">每隔一周</target>
+      </trans-unit>
+      <trans-unit id="100" resname="r279068266" restype="string" datatype="ruby">
+        <source>Every other month</source>
+        <target state="translated">每个一月</target>
+      </trans-unit>
+      <trans-unit id="103" resname="r683821345" restype="string" datatype="ruby">
+        <source>every other hours, while awake</source>
+        <target state="translated">醒着时，每隔一小时</target>
+      </trans-unit>
+      <trans-unit id="151" resname="r40246091" restype="string" datatype="ruby">
+        <source>hourly, while awake</source>
+        <target state="translated">醒着时，每小时</target>
+      </trans-unit>
+      <trans-unit id="164" resname="r123414641" restype="string" datatype="ruby">
+        <source>once every night</source>
+        <target state="translated">每天晚上</target>
+      </trans-unit>
+      <trans-unit id="168" resname="r36233924" restype="string" datatype="ruby">
+        <source>in the morning</source>
+        <target state="translated">在早上</target>
+      </trans-unit>
+      <trans-unit id="170" resname="r380124102" restype="string" datatype="ruby">
+        <source>forever</source>
+        <target state="translated">永远</target>
+      </trans-unit>
+      <trans-unit id="171" resname="r1061259004" restype="string" datatype="ruby">
+        <source>Forever</source>
+        <target state="translated">一直</target>
+      </trans-unit>
+      <trans-unit id="173" resname="r273032820" restype="string" datatype="ruby">
+        <source>Always</source>
+        <target state="translated">总是</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person/concierge.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="179" resname="r229132038" restype="string" datatype="ruby">
+        <source>Primary care doctor</source>
+        <target state="translated">普通门诊医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/group.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="180" resname="r74609673" restype="string" datatype="ruby">
+        <source>&lt;p&gt;&lt;a href=&gt;Join Group&lt;/a&gt; to become a member of %{group_name} on HealthTap.&lt;/p&gt;
+                  &lt;br/&gt;Thanks!
+                  &lt;br/&gt;%{inviter}</source>
+        <target state="translated">&lt;p&gt;&lt;a href=&gt;加入群组&lt;/a&gt; 成为HealthTap上的%{group_name}会员。&lt;/p&gt;
+                  &lt;br/&gt;谢谢！&lt;br/&gt;%{inviter}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/expert/consults.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="182" resname="r434605350" restype="string" datatype="ruby">
+        <source>per consult</source>
+        <target state="translated">每次咨询</target>
+      </trans-unit>
+      <trans-unit id="183" resname="r92122798" restype="string" datatype="ruby">
+        <source>Starting at</source>
+        <target state="translated">起价</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/attribute.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="218" resname="r866270649" restype="string" datatype="ruby">
+        <source>Types of</source>
+        <target state="translated">各种类型的</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
