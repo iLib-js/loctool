@@ -3868,7 +3868,7 @@
     <body>
       <trans-unit id="918" resname="r899361143" restype="string" datatype="ruby">
         <source>Learn more about members</source>
-        <target>Aprender más acerca de miembros</target>
+        <target>Saber más acerca de miembros</target>
       </trans-unit>
       <trans-unit id="919" resname="r851737678" restype="string" datatype="ruby">
         <source>Learn about providers &amp; health systems</source>
@@ -3876,19 +3876,19 @@
       </trans-unit>
       <trans-unit id="920" resname="r839013275" restype="string" datatype="ruby">
         <source>Learn more about employers &amp; insurers</source>
-        <target>Aprender más acerca de empleadores &amp; aseguradores</target>
+        <target>Saber más acerca de empleadores &amp; aseguradores</target>
       </trans-unit>
       <trans-unit id="921" resname="r222053641" restype="string" datatype="ruby">
         <source>Learn more about doctors</source>
-        <target>Aprender más acerca de doctores</target>
+        <target>Saber más acerca de doctores</target>
       </trans-unit>
       <trans-unit id="922" resname="r107502447" restype="string" datatype="ruby">
         <source>Learn more about government &amp; population managers</source>
-        <target>Aprender más acerca de directores de población y gobierno</target>
+        <target>Saber más acerca de directores de población y gobierno</target>
       </trans-unit>
       <trans-unit id="923" resname="r603684140" restype="string" datatype="ruby">
         <source>Learn more about developers</source>
-        <target>Aprender más acerca de desarrolladores</target>
+        <target>Saber más acerca de desarrolladores</target>
       </trans-unit>
     </body>
   </file>

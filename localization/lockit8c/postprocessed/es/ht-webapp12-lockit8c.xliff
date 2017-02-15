@@ -9721,7 +9721,7 @@
     <body>
       <trans-unit id="1901" resname="r899361143" restype="string" datatype="ruby">
         <source>Learn more about members</source>
-        <target state="translated">Aprender más acerca de miembros</target>
+        <target state="translated">Saber más acerca de miembros</target>
       </trans-unit>
       <trans-unit id="1902" resname="r412671705" restype="string" datatype="ruby">
         <source>Members</source>
@@ -9749,7 +9749,7 @@
       </trans-unit>
       <trans-unit id="1908" resname="r839013275" restype="string" datatype="ruby">
         <source>Learn more about employers &amp; insurers</source>
-        <target state="translated">Aprender más acerca de empleadores &amp; aseguradores</target>
+        <target state="translated">Saber más acerca de empleadores &amp; aseguradores</target>
       </trans-unit>
       <trans-unit id="1909" resname="r499217305" restype="string" datatype="ruby">
         <source>Employers &amp; Insurers</source>
@@ -9757,11 +9757,11 @@
       </trans-unit>
       <trans-unit id="1910" resname="r111781423" restype="string" datatype="ruby">
         <source>Lower costs and improve productivity &amp; satisfaction by providing the right care at the right cost at the right time</source>
-        <target state="translated">Reduce los costos y mejora productividad y satisfacción brindando la atención adecuada al costo adecuado en el momento adecuado</target>
+        <target state="translated">Reduce los costos e incrementa la productividad y la satisfacción, brindando la atención adecuada, al costo adecuado, en el momento adecuado</target>
       </trans-unit>
       <trans-unit id="1911" resname="r222053641" restype="string" datatype="ruby">
         <source>Learn more about doctors</source>
-        <target state="translated">Aprender más acerca de doctores</target>
+        <target state="translated">Saber más acerca de doctores</target>
       </trans-unit>
       <trans-unit id="1912" resname="r799436858" restype="string" datatype="ruby">
         <source>Enhance your reputation, grow your practice</source>
@@ -9769,7 +9769,7 @@
       </trans-unit>
       <trans-unit id="1913" resname="r107502447" restype="string" datatype="ruby">
         <source>Learn more about government &amp; population managers</source>
-        <target state="translated">Aprender más acerca de directores de población y gobierno</target>
+        <target state="translated">Saber más acerca de directores de población y gobierno</target>
       </trans-unit>
       <trans-unit id="1914" resname="r690382453" restype="string" datatype="ruby">
         <source>Government &amp; Population Managers</source>
@@ -9781,7 +9781,7 @@
       </trans-unit>
       <trans-unit id="1916" resname="r603684140" restype="string" datatype="ruby">
         <source>Learn more about developers</source>
-        <target state="translated">Aprender más acerca de desarrolladores</target>
+        <target state="translated">Saber más acerca de desarrolladores</target>
       </trans-unit>
       <trans-unit id="1917" resname="r974419084" restype="string" datatype="ruby">
         <source>Developers</source>
