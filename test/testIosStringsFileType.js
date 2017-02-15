@@ -19,11 +19,11 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
-        
+
         test.ok(htf);
-        
+
         test.done();
     },
 
@@ -36,12 +36,12 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(htf.handles("foo.strings"));
-        
+
         test.done();
     },
 
@@ -54,15 +54,15 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("foostrings"));
-        
+
         test.done();
     },
-    
+
     testIosStringsFileTypeHandlesFalse: function(test) {
         test.expect(2);
 
@@ -72,15 +72,15 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("foo.html"));
-        
+
         test.done();
     },
-    
+
     testIosStringsFileTypeHandlesTrueWithDir: function(test) {
         test.expect(2);
 
@@ -90,12 +90,12 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(htf.handles("a/b/en-US.lproj/foo.strings"));
-        
+
         test.done();
     },
 
@@ -108,13 +108,13 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(htf.handles("a/b/en-US.lproj/FGSignUpViewController.strings"));
         test.ok(htf.handles("feelgood/en-US.lproj/FGGetHelpConciergeView.strings"));
-        
+
         test.done();
     },
 
@@ -127,12 +127,12 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("a/b/zh-Hans.lproj/FGSignUpViewController.strings"));
-        
+
         test.done();
     },
 
@@ -145,12 +145,12 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(htf.handles("feelgood/en-US.lproj/asdf.strings"));
-        
+
         test.done();
     },
 
@@ -163,13 +163,13 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("feelgood/en-US.lproj/Localizable.strings"));
         test.ok(!htf.handles("feelgood/Base.lproj/Localizable.strings"));
-        
+
         test.done();
     },
 
@@ -182,12 +182,12 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("a/b/Base.lproj/FGSignUpViewController.strings"));
-        
+
         test.done();
     },
 
@@ -200,15 +200,15 @@ module.exports = {
         		"objc": "feelgood"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("a/b/de.lproj/FGSignUpViewController.strings"));
-        
+
         test.done();
     },
-    
+
     testIosStringsFileTypeHandlesWithEnglishLocaleDirNotInResources: function(test) {
         test.expect(2);
 
@@ -218,12 +218,12 @@ module.exports = {
         		"objc": "foo"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(htf.handles("foo/en-US.lproj/FGSignUpViewController.strings"));
-        
+
         test.done();
     },
 
@@ -236,12 +236,12 @@ module.exports = {
         		"objc": "foo"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("foo/Base.lproj/FGSignUpViewController.strings"));
-        
+
         test.done();
     },
 
@@ -254,12 +254,12 @@ module.exports = {
         		"objc": "foo"
         	}
         }, "./testfiles");
-        
+
         var htf = new IosStringsFileType(p);
         test.ok(htf);
-        
+
         test.ok(!htf.handles("foo/de.lproj/FGSignUpViewController.strings"));
-        
+
         test.done();
     }
 };
