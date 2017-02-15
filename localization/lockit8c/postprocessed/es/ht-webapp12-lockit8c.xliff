@@ -42616,7 +42616,7 @@
       </trans-unit>
       <trans-unit id="9879" resname="Make an appointment with" restype="string" datatype="javascript">
         <source>Make an appointment with</source>
-        <target state="translated">Hacer una cita con</target>
+        <target state="translated">Tener una consulta con</target>
       </trans-unit>
       <trans-unit id="9880" resname="Please choose your preferred length for a consultation" restype="string" datatype="javascript">
         <source>Please choose your preferred length for a consultation</source>
