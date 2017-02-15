@@ -2746,7 +2746,7 @@ module.exports = {
     },
 
     testTranslationSetAddToClean: function(test) {
-        test.expect(3)
+        test.expect(5)
         var ts = new TranslationSet();
         test.ok(ts);
 
@@ -2766,10 +2766,11 @@ module.exports = {
             });
         ts.add(orig);
         ts.add(squished);
-        resourceKeys = Object.keys(ts.byKey);
-        cleanKeys = Object.keys(ts.byCleanKey);
-        test.equal(ts.resources.length,resourceKeys.length);
-        test.notEqual(resourceKeys.length, cleanKeys.length);
+        var allRes = ts.getAll();
+        test.equal(allRes.length,2);
+        test.equal(orig, ts.get(orig.hashKey()));
+        test.equal(squished, ts.get(squished.hashKey()));
+        test.equal(ts.getClean(orig.cleanHashKey()), ts.getClean(squished.cleanHashKey()));
         test.done();
     }
 };
