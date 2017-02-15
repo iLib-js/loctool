@@ -24388,7 +24388,7 @@
       </trans-unit>
       <trans-unit id="4799" resname="r276834703" restype="string" datatype="ruby">
         <source>Marijuana</source>
-        <target state="translated">Mariguana</target>
+        <target state="translated">Marihuana</target>
       </trans-unit>
       <trans-unit id="4800" resname="r468221601" restype="string" datatype="ruby">
         <source>Cocaine</source>
@@ -24404,11 +24404,11 @@
       </trans-unit>
       <trans-unit id="4803" resname="r763555502" restype="string" datatype="ruby">
         <source>Ecstasy</source>
-        <target state="translated">Extasis</target>
+        <target state="translated">Éxtasis</target>
       </trans-unit>
       <trans-unit id="4804" resname="r394864593" restype="string" datatype="ruby">
         <source>Barbiturates / Benzodiazepines</source>
-        <target state="translated">Barbitúricos / Benzodiacepinas</target>
+        <target state="translated">Barbitúricos / Benzodiazepinas</target>
       </trans-unit>
       <trans-unit id="4805" resname="r678640256" restype="string" datatype="ruby">
         <source>LSD</source>
@@ -24416,7 +24416,7 @@
       </trans-unit>
       <trans-unit id="4806" resname="r504881313" restype="string" datatype="ruby">
         <source>Psychedelic Mushrooms</source>
-        <target state="translated">Hongos Psicogélicos</target>
+        <target state="translated">Hongos Psicodélicos</target>
       </trans-unit>
       <trans-unit id="4807" resname="r361059927" restype="string" datatype="ruby">
         <source>Other</source>
@@ -39420,11 +39420,11 @@
       </trans-unit>
       <trans-unit id="9181" resname="Does {first_name} smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Does {first_name} smoke or chew tobacco or recently quit?</source>
-        <target state="translated">¿{first_name} fuma o masca tabaco o lo dejó recientemente?</target>
+        <target state="translated">¿{first_name} fuma, mastica tabaco o lo dejó recientemente?</target>
       </trans-unit>
       <trans-unit id="9182" resname="Does this person smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Does this person smoke or chew tobacco or recently quit?</source>
-        <target state="translated">¿Esta persona fuma o masca tabaco o lo dejó recientemente?</target>
+        <target state="translated">¿Esta persona fuma, mastica tabaco o lo dejó recientemente?</target>
       </trans-unit>
       <trans-unit id="9183" resname="Do you smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Do you smoke or chew tobacco or recently quit?</source>
@@ -39444,7 +39444,7 @@
       </trans-unit>
       <trans-unit id="9187" resname="Does {first_name} use any of the following recreational drugs?" restype="string" datatype="javascript">
         <source>Does {first_name} use any of the following recreational drugs?</source>
-        <target state="translated">¿{first_name} usa alguno de los siguientes fármacos recreativos?</target>
+        <target state="translated">¿{first_name} consume alguno de los siguientes fármacos recreativos?</target>
       </trans-unit>
       <trans-unit id="9188" resname="Does this person use any of the following recreational drugs?" restype="string" datatype="javascript">
         <source>Does this person use any of the following recreational drugs?</source>
