@@ -788,7 +788,7 @@
     \u00B7除英文外的其他语言咨询\n\
     \u00B7电子邮件或信息咨询的立即回复（考虑到视频咨询会有相应医生更快回复）</target>
       </trans-unit>
-      <trans-unit id="129" resname="Terms of Service " restype="string" datatype="x-objective-c">
+      <trans-unit id="129" resname="Terms of Service" restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
         <target>服务条款</target>
       </trans-unit>

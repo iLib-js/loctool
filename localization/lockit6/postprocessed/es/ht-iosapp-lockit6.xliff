@@ -143,7 +143,7 @@
         <source>United States of America</source>
         <target>Estados Unidos de América</target>
       </trans-unit>
-      <trans-unit id="24" resname="Terms of Service " restype="string" datatype="x-objective-c">
+      <trans-unit id="24" resname="Terms of Service" restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
         <target>Términos de Servicio</target>
       </trans-unit>

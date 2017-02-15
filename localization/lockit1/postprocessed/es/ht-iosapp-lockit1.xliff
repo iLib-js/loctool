@@ -11535,7 +11535,7 @@ el doctor pueda confirmarte como paciente</target>
         <target>Términos de Servicio</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Terms of Service " resname="Terms of Service " restype="string" datatype="x-objective-c">
+      <trans-unit id="Terms of Service" resname="Terms of Service" restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
         <target>Términos de Servicio</target>
         <note annotates="source">No comment provided by engineer.</note>

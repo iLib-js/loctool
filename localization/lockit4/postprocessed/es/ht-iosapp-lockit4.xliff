@@ -798,7 +798,7 @@
     \u00B7 Consultas en idiomas que no sea el inglés\n\
                            \u00B7 Respuestas inmediatas a consultas de buzón de entrada / mensaje (considera consultas por video con doctores disponibles para una atención más rápida)</target>
       </trans-unit>
-      <trans-unit id="129" resname="Terms of Service " restype="string" datatype="x-objective-c">
+      <trans-unit id="129" resname="Terms of Service" restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
         <target>Términos de Servicio</target>
       </trans-unit>

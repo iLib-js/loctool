@@ -111,7 +111,7 @@
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="31" resname="Terms of Service " restype="string" datatype="x-objective-c">
+      <trans-unit id="31" resname="Terms of Service" restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
         <target>服务条款</target>
       </trans-unit>
