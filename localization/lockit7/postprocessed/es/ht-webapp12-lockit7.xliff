@@ -737,7 +737,7 @@
       </trans-unit>
       <trans-unit id="169" resname="r111781423" restype="string" datatype="ruby">
         <source>Lower costs and improve productivity &amp; satisfaction by providing the right care at the right cost at the right time</source>
-        <target>Reduce los costos y mejora productividad y satisfacción brindando la atención adecuada al costo adecuado en el momento adecuado</target>
+        <target>Reduce los costos e incrementa la productividad y la satisfacción, brindando la atención adecuada, al costo adecuado, en el momento adecuado</target>
       </trans-unit>
       <trans-unit id="170" resname="r799436858" restype="string" datatype="ruby">
         <source>Enhance your reputation, grow your practice</source>
@@ -2075,19 +2075,19 @@
       </trans-unit>
       <trans-unit id="423" resname="r27919281" restype="string" datatype="ruby">
         <source>Vegan (no meat or animal products)</source>
-        <target>Vegano (no carne o productos de animal)</target>
+        <target>Vegano (no come carne o productos animales)</target>
       </trans-unit>
       <trans-unit id="424" resname="r836028066" restype="string" datatype="ruby">
         <source>Pescatarian (no meat, except fish)</source>
-        <target>Pescetariano (no carne, excepto pescado)</target>
+        <target>Pescetariano (no come carne, excepto pescado)</target>
       </trans-unit>
       <trans-unit id="425" resname="r720240330" restype="string" datatype="ruby">
         <source>Gluten-Free (no wheat, barley, or rye)</source>
-        <target>Libre de Gluten (no trigo, cebada o centeno)</target>
+        <target>Libre de Gluten (no consume trigo, avena, cebada o centeno)</target>
       </trans-unit>
       <trans-unit id="426" resname="r73724393" restype="string" datatype="ruby">
         <source>Lactose Intolerant (lactose-free dairy)</source>
-        <target>Intolerancia a la Lactosa (lácteos libres de lactosa)</target>
+        <target>Intolerancia a la Lactosa (Consume lácteos libres de lactosa)</target>
       </trans-unit>
       <trans-unit id="427" resname="r20329084" restype="string" datatype="ruby">
         <source>Social Drinker (0-7 drinks/week)</source>
@@ -2111,27 +2111,27 @@
       </trans-unit>
       <trans-unit id="432" resname="r1003968121" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a month</source>
-        <target>Sí, 0-2 cajetillas al mes</target>
+        <target>Sí, 0-2 paquetes al mes</target>
       </trans-unit>
       <trans-unit id="433" resname="r956725319" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a week</source>
-        <target>Sí, 0-2 cajetillas a la semana</target>
+        <target>Sí, 0-2 paquetes a la semana</target>
       </trans-unit>
       <trans-unit id="434" resname="r684140086" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a day</source>
-        <target>Sí, 0-2 cajetillas al día</target>
+        <target>Sí, 0-2 paquetes por día</target>
       </trans-unit>
       <trans-unit id="435" resname="r526642561" restype="string" datatype="ruby">
         <source>Yes, more than 2 packs a day</source>
-        <target>Sí, más de 2 cajetillas al día</target>
+        <target>Sí, más de 2 paquetes por día</target>
       </trans-unit>
       <trans-unit id="436" resname="r762126145" restype="string" datatype="ruby">
         <source>Yes, chewing tobacco</source>
-        <target>Sí, masticando tabaco</target>
+        <target>Sí, mastica tabaco</target>
       </trans-unit>
       <trans-unit id="437" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
-        <target>No sexualmente activo</target>
+        <target>No es sexualmente activa/o</target>
       </trans-unit>
       <trans-unit id="438" resname="r699411433" restype="string" datatype="ruby">
         <source>Men</source>
@@ -2143,7 +2143,7 @@
       </trans-unit>
       <trans-unit id="440" resname="r276834703" restype="string" datatype="ruby">
         <source>Marijuana</source>
-        <target>Mariguana</target>
+        <target>Marihuana</target>
       </trans-unit>
       <trans-unit id="441" resname="r468221601" restype="string" datatype="ruby">
         <source>Cocaine</source>
@@ -2159,11 +2159,11 @@
       </trans-unit>
       <trans-unit id="444" resname="r763555502" restype="string" datatype="ruby">
         <source>Ecstasy</source>
-        <target>Extasis</target>
+        <target>Éxtasis</target>
       </trans-unit>
       <trans-unit id="445" resname="r394864593" restype="string" datatype="ruby">
         <source>Barbiturates / Benzodiazepines</source>
-        <target>Barbitúricos / Benzodiacepinas</target>
+        <target>Barbitúricos / Benzodiazepinas</target>
       </trans-unit>
       <trans-unit id="446" resname="r678640256" restype="string" datatype="ruby">
         <source>LSD</source>
@@ -2171,7 +2171,7 @@
       </trans-unit>
       <trans-unit id="447" resname="r504881313" restype="string" datatype="ruby">
         <source>Psychedelic Mushrooms</source>
-        <target>Hongos Psicogélicos</target>
+        <target>Hongos Psicodélicos</target>
       </trans-unit>
       <trans-unit id="448" resname="r224468636" restype="string" datatype="ruby">
         <source>Uninsured</source>
@@ -6739,7 +6739,7 @@
       </trans-unit>
       <trans-unit id="2578" resname="r104998707" restype="string" datatype="x-haml">
         <source>using our Virtual Consult experience via high-definition video, voice, or text. Get help anywhere, 24/7, via the web or your mobile device, securely and privately. Share photos or test results, and get immediate answers, treatment, and referrals to help you feel good!</source>
-        <target>usando nuestra experiencia de Consulta Virtual a través de video de alta definición, voz o texto. Obtén ayuda desde cualquier lugar, 24/7, a través de la web o tu dipositivo móvio. de forma segura y privada. ¡Comparte fotos o resultados de pruebas de laboratorio, y obtén respuestas, tratamiento y referencias inmediatas para ayudarte a sentirte bien!</target>
+        <target>usando nuestra experiencia de Consulta Virtual a través de video de alta definición, voz o texto. Obtén ayuda desde cualquier lugar, las 24 hs., los 7 días de la semana, a través de la web o tu dispositivo móvil, de forma segura y privada. ¡Comparte fotos o resultados de pruebas de laboratorio, y obtén respuestas, tratamiento y referencias inmediatas para ayudarte a sentirte bien!</target>
       </trans-unit>
       <trans-unit id="2579" resname="r912871798" restype="string" datatype="x-haml">
         <source>personal physician</source>

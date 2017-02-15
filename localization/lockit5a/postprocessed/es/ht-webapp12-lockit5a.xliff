@@ -182,19 +182,19 @@
       </trans-unit>
       <trans-unit id="7032" resname="r144629454" restype="string" datatype="x-haml">
         <source>becomes more essential to anyone making important decisions about health and well-being.</source>
-        <target>se haga esencial para cualquier persona tomando decisiones importantes sobre salud y bienestar.</target>
+        <target>se vuelve esencial para cualquier persona que esté tomando decisiones importantes sobre salud y bienestar.</target>
       </trans-unit>
       <trans-unit id="7033" resname="r551762323" restype="string" datatype="x-haml">
         <source>Every day, top doctors grow, deepen, and improve this knowledgebase. As they do this,</source>
-        <target>Todos los días, los mejores doctores aumenta, profundizan y mejoran esta base de conocimientos. Mientras hacen esto,</target>
+        <target>Todos los días, los mejores doctores incrementan, profundizan y mejoran esta base de conocimientos. Mientras hacen esto,</target>
       </trans-unit>
       <trans-unit id="7034" resname="r113548532" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health,</source>
-        <target>está respaldada por doctores en todas las áreas de salud,</target>
+        <target>esté respaldada por doctores en todas las áreas de salud,</target>
       </trans-unit>
       <trans-unit id="7035" resname="r461675722" restype="string" datatype="x-haml">
         <source>I love that</source>
-        <target>Amo que</target>
+        <target>Me encanta que</target>
       </trans-unit>
       <trans-unit id="7036" resname="r640492638" restype="string" datatype="x-haml">
         <source>that you can connect with your doctor on</source>
@@ -298,11 +298,11 @@
       </trans-unit>
       <trans-unit id="7062" resname="r319334065" restype="string" datatype="x-haml">
         <source>We asked, what do people really want when it comes to healthcare?</source>
-        <target>Preguntamos, ¿qué es lo que la gente realmente quiere cuando se trata de atención a la salud?</target>
+        <target>Preguntamos, ¿qué es lo que la gente realmente quiere cuando se trata de atención de la salud?</target>
       </trans-unit>
       <trans-unit id="7063" resname="r413262416" restype="string" datatype="x-haml">
         <source>We took our aggregate decades of medical and computer science expertise, our business acumen, and the experience we’ve gained from serving and surveying hundreds of millions of people and hundreds of thousands of doctors over the years, and came to three major conclusions:</source>
-        <target>Tomamos nuestras décadas acumuladas de destreza médica y de ciencias computacionales, nuestra visión de negocios, y la experiencia que hemos ganado de servir y encuestar a cientos de millones de personas y cientos de miles de doctores en todo el mundo, y llegamos tres grandes conclusiones:</target>
+        <target>Tomamos el cúmulo de décadas de conocimiento médico y de ciencias de la computación, nuestra visión de los negocios, y la experiencia que hemos ganado de servir y encuestar a cientos de millones de personas y cientos de miles de doctores en todo el mundo, y llegamos a tres grandes conclusiones:</target>
       </trans-unit>
       <trans-unit id="7064" resname="r802585118" restype="string" datatype="x-haml">
         <source>It has to come from the most knowledgeable and trustworthy experts.</source>
@@ -494,7 +494,7 @@
       </trans-unit>
       <trans-unit id="7111" resname="r368530188" restype="string" datatype="x-haml">
         <source>Where we are headed</source>
-        <target>¿A dónde nos estamos dirigiendo?</target>
+        <target>¿A dónde nos dirigimos?</target>
       </trans-unit>
       <trans-unit id="7112" resname="r104941884" restype="string" datatype="x-haml">
         <source>of the world’s population. We’re laying the groundwork for a movement</source>
@@ -5872,11 +5872,11 @@
       </trans-unit>
       <trans-unit id="9985" resname="r475779675" restype="string" datatype="x-haml">
         <source>Help doctors help you better</source>
-        <target>Ayuda a doctores a ayudarte mejor</target>
+        <target>Ayuda a los médicos a ayudarte mejor</target>
       </trans-unit>
       <trans-unit id="9986" resname="r905385200" restype="string" datatype="x-haml">
         <source>Free text questions answered within 24 hours</source>
-        <target>Preguntas de texto gratis contestadas en 24 horas</target>
+        <target>Preguntas por mensaje de texto respondidas en 24 horas, gratis</target>
       </trans-unit>
       <trans-unit id="9987" resname="r477497420" restype="string" datatype="x-haml">
         <source>Goal-based checklists with timely reminders</source>
@@ -6526,7 +6526,7 @@
       </trans-unit>
       <trans-unit id="7483" resname="r832776716" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health, so I know the information I</source>
-        <target>está respaldada por doctores en todas las áreas de salud, así que sé que la información que yo</target>
+        <target>esté respaldada por doctores en todas las áreas de salud, así que sé que la información que yo</target>
       </trans-unit>
       <trans-unit id="7484" resname="r674098443" restype="string" datatype="x-haml">
         <source>or with the</source>
@@ -8660,7 +8660,7 @@
       </trans-unit>
       <trans-unit id="2986" resname="r384671676" restype="string" datatype="ruby">
         <source>Suggested Doctors</source>
-        <target>Doctores Sugeridos</target>
+        <target>Doctores sugeridos</target>
       </trans-unit>
       <trans-unit id="2996" resname="r578209636" restype="string" datatype="ruby">
         <source>Related Medications</source>
@@ -10549,7 +10549,7 @@
       </trans-unit>
       <trans-unit id="6675" resname="r882859413" restype="string" datatype="x-haml">
         <source>We're humbled by all the great things written about us</source>
-        <target>Nos llenan de humildad todas las maravillosas cosas que han sido escritas sobre nosotros</target>
+        <target>Nos honran todas las maravillosas cosas que han sido escritas sobre nosotros</target>
       </trans-unit>
       <trans-unit id="6676" resname="r713826713" restype="string" datatype="x-haml">
         <source>We're also delighted by what industry experts, professional journalists,</source>
@@ -10641,7 +10641,7 @@
       </trans-unit>
       <trans-unit id="7771" resname="r328831441" restype="string" datatype="x-haml">
         <source>I think searching for information online is great for many things, I just don't think your health is one of them. With</source>
-        <target>Creo que buscar información en línea es bueno para muchas cosas, solo no creo que tu salud sea una de ella. Con</target>
+        <target>Creo que buscar información en línea es bueno para muchas cosas, solo no creo que tu salud sea una de ellas. Con</target>
       </trans-unit>
       <trans-unit id="7772" resname="r1000879257" restype="string" datatype="x-haml">
         <source>Jennifer J.,</source>
@@ -13641,7 +13641,7 @@
       </trans-unit>
       <trans-unit id="7225" resname="r479404643" restype="string" datatype="x-haml">
         <source>Having a good, hard laugh.</source>
-        <target>Riéndonos bien y duro.</target>
+        <target>Reír intensamente.</target>
       </trans-unit>
       <trans-unit id="7226" resname="r297407413" restype="string" datatype="x-haml">
         <source>Paying someone a compliment.</source>
@@ -13917,7 +13917,7 @@
     <body>
       <trans-unit id="7293" resname="r325356960" restype="string" datatype="x-haml">
         <source>is supported by world-class investors, advisors, and experienced company builders who have helped create,</source>
-        <target>es apoyada por inversionistas, asesores y constructores de compañías de clase mundial quienes han ayudado a crear,</target>
+        <target>es apoyada por inversionistas, asesores y constructores de compañías mundiales quienes han ayudado a crear,</target>
       </trans-unit>
       <trans-unit id="7294" resname="r162156137" restype="string" datatype="x-haml">
         <source>develop, and direct some of the most successful companies of our day.</source>
@@ -13925,7 +13925,7 @@
       </trans-unit>
       <trans-unit id="7295" resname="r895599030" restype="string" datatype="x-haml">
         <source>What our investors have to say</source>
-        <target>Lo que nuestros inversionistas tienen que decir</target>
+        <target>Lo que dicen nuestros inversionistas</target>
       </trans-unit>
     </body>
   </file>
@@ -14105,11 +14105,11 @@
     <body>
       <trans-unit id="7424" resname="r439736920" restype="string" datatype="x-haml">
         <source>A New Healthcare Experience</source>
-        <target>Una Nueva Experiencia de Atención a la Salud</target>
+        <target>Una Nueva Experiencia de Atención de la Salud</target>
       </trans-unit>
       <trans-unit id="7425" resname="r340712015" restype="string" datatype="x-haml">
         <source>HealthTap is the world’s first Global Health Practice</source>
-        <target>HealthTap es el primer Consultorio de Salud Global</target>
+        <target>HealthTap es el primer Consultorio Medico</target>
       </trans-unit>
     </body>
   </file>
@@ -14129,7 +14129,7 @@
     <body>
       <trans-unit id="7428" resname="r580143816" restype="string" datatype="x-haml">
         <source>A personalized engaging health experience</source>
-        <target>Una atractiva experiencia de salud personalizada</target>
+        <target>Una atractiva experiencia médica personalizada</target>
       </trans-unit>
       <trans-unit id="7429" resname="r731765498" restype="string" datatype="x-haml">
         <source>For everyone at any stage of providing or receiving care, from query to cure</source>
@@ -14161,7 +14161,7 @@
     <body>
       <trans-unit id="7433" resname="r204214811" restype="string" datatype="x-haml">
         <source>HealthTap’s technology and integration teams are transforming fragmented complex systems into unified, and interoperable systems that are consumer-centric, constantly learning and smart.</source>
-        <target>Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados a sistemas unificados e interoperables, que son inteligentes, se centran en el consumidor, y están aprendiendo constantemente.</target>
+        <target>Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados en sistemas unificados e interactivos, que se centran en el consumidor, con un aprendizaje constante e inteligentes.</target>
       </trans-unit>
       <trans-unit id="7434" resname="r317955052" restype="string" datatype="x-haml">
         <source>Connected systems are smarter</source>
@@ -15485,7 +15485,7 @@
     <body>
       <trans-unit id="8047" resname="r737183367" restype="string" datatype="x-haml">
         <source>For questions or feedback about using</source>
-        <target>Para preguntas o comentarios acerca de usar</target>
+        <target>Para preguntas o comentarios sobre el uso de</target>
       </trans-unit>
       <trans-unit id="8048" resname="r998282891" restype="string" datatype="x-haml">
         <source>Come Visit Us!</source>
@@ -22605,7 +22605,7 @@
       </trans-unit>
       <trans-unit id="10407" resname="r513463810" restype="string" datatype="x-haml">
         <source>means an individual accepted to participate in the HealthTap Medical Expert Community and who participates on the Apps or interacts with others on or through the Apps, or other specialists or professionals who participate on HealthTap in their capacity as experts.</source>
-        <target>significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones, u otros especialistas o profesionistas que participan en HealthTap en su capacidad de expertos.</target>
+        <target>significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones u otros especialistas o profesionales que participen en HealthTap en su cualidad de expertos.</target>
       </trans-unit>
       <trans-unit id="10408" resname="r1010286189" restype="string" datatype="x-haml">
         <source>ALL INFORMATION PROVIDED ON HEALTHTAP OR IN CONNECTION WITH ANY COMMUNICATIONS SUPPORTED BY HEALTHTAP, INCLUDING BUT NOT LIMITED TO COMMUNICATIONS BETWEEN HEALTHTAP MEDICAL EXPERTS AND CONSUMERS, IS INTENDED TO BE FOR GENERAL INFORMATIONAL PURPOSES ONLY, AND IS IN NO WAY INTENDED TO CREATE A DOCTOR – PATIENT RELATIONSHIP AS DEFINED BY STATE AND FEDERAL LAW. HEALTHTAP IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL DIAGNOSIS OR TREATMENT. RELIANCE ON ANY INFORMATION PROVIDED BY HEALTHTAP OR ANY HEALTHTAP MEDICAL EXPERTS IS SOLELY AT YOUR OWN RISK.</source>
@@ -31261,7 +31261,7 @@
       </trans-unit>
       <trans-unit id="12741" resname="r856013763" restype="string" datatype="x-haml">
         <source>N/A</source>
-        <target state="accepted">不适用</target>
+        <target state="accepted">N/A</target>
       </trans-unit>
       <trans-unit id="12742" resname="r478313490" restype="string" datatype="x-haml">
         <source>Subscription fee(Groups of 5-20 doctors)</source>
@@ -35589,7 +35589,7 @@
     <body>
       <trans-unit id="13990" resname=" take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>take any over-the-counter or prescription medications?</source>
-        <target>¿tomas algún medicamento de libre venta o de receta?</target>
+        <target>¿tomas algún medicamento de venta libre o de receta?</target>
       </trans-unit>
     </body>
   </file>

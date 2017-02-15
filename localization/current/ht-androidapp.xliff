@@ -29796,6 +29796,41 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/PersonalizationSliderItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="r389939394" restype="string" datatype="java">
+        <source>{feet_num}'{inches_num}" ({height_in_meters}m)</source>
+        <target state="translated">{feet_num}'{inches_num}" ({height_in_meters}m)</target>
+        <note annotates="source">This refers to patient's height, for example, 5'7" (1.7m) TODO localize number format? translate into local measurements?</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/UnfollowLayerDialogBox.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2" resname="r32892148" restype="string" datatype="java">
+        <source>You're now following "{topic_name}"</source>
+        <target state="translated">Ahora estás siguiente a "{topic_name}"</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/click_listeners/FollowItemListener.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="3" resname="r440805493" restype="string" datatype="java">
+        <source>You're now following the topic "{0}"!</source>
+        <target state="translated">¡Ahora estás siguiendo el tema de "{0}"!</target>
+        <note annotates="source">{0} is a topic name.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/adapters/AllAttributeListAdapter.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="4" resname="r780459903" restype="string" datatype="java">
+        <source>You're now following "{0}"</source>
+        <target state="translated">Ahora estás siguiendo a "{0}"</target>
+        <note annotates="source">{0} is a topic name.</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="res/xml/settings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="1" resname="title_Billing_Settings" restype="string" datatype="x-android-resource">

@@ -1117,7 +1117,7 @@
       </trans-unit>
       <trans-unit id="2584" resname="r328831441" restype="string" datatype="x-haml">
         <source>I think searching for information online is great for many things, I just don't think your health is one of them. With</source>
-        <target>Creo que buscar información en línea es bueno para muchas cosas, solo no creo que tu salud sea una de ella. Con</target>
+        <target state="translated">Creo que buscar información en línea es bueno para muchas cosas, solo no creo que tu salud sea una de ellas. Con</target>
       </trans-unit>
       <trans-unit id="2585" resname="r1000879257" restype="string" datatype="x-haml">
         <source>Jennifer J.,</source>
@@ -2693,19 +2693,19 @@
       </trans-unit>
       <trans-unit id="2454" resname="r144629454" restype="string" datatype="x-haml">
         <source>becomes more essential to anyone making important decisions about health and well-being.</source>
-        <target>se haga esencial para cualquier persona tomando decisiones importantes sobre salud y bienestar.</target>
+        <target state="translated">se vuelve esencial para cualquier persona que esté tomando decisiones importantes sobre salud y bienestar.</target>
       </trans-unit>
       <trans-unit id="2455" resname="r551762323" restype="string" datatype="x-haml">
         <source>Every day, top doctors grow, deepen, and improve this knowledgebase. As they do this,</source>
-        <target>Todos los días, los mejores doctores aumenta, profundizan y mejoran esta base de conocimientos. Mientras hacen esto,</target>
+        <target state="translated">Todos los días, los mejores doctores incrementan, profundizan y mejoran esta base de conocimientos. Mientras hacen esto,</target>
       </trans-unit>
       <trans-unit id="2456" resname="r113548532" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health,</source>
-        <target>está respaldada por doctores en todas las áreas de salud,</target>
+        <target state="translated">esté respaldada por doctores en todas las áreas de salud,</target>
       </trans-unit>
       <trans-unit id="2457" resname="r461675722" restype="string" datatype="x-haml">
         <source>I love that</source>
-        <target>Amo que</target>
+        <target state="translated">Me encanta que</target>
       </trans-unit>
       <trans-unit id="2458" resname="r640492638" restype="string" datatype="x-haml">
         <source>that you can connect with your doctor on</source>
@@ -2893,7 +2893,7 @@
     <body>
       <trans-unit id="2499" resname="r325356960" restype="string" datatype="x-haml">
         <source>is supported by world-class investors, advisors, and experienced company builders who have helped create,</source>
-        <target>es apoyada por inversionistas, asesores y constructores de compañías de clase mundial quienes han ayudado a crear,</target>
+        <target state="translated">es apoyada por inversionistas, asesores y constructores de compañías mundiales quienes han ayudado a crear,</target>
       </trans-unit>
     </body>
   </file>
@@ -3005,7 +3005,7 @@
     <body>
       <trans-unit id="2516" resname="r204214811" restype="string" datatype="x-haml">
         <source>HealthTap’s technology and integration teams are transforming fragmented complex systems into unified, and interoperable systems that are consumer-centric, constantly learning and smart.</source>
-        <target>Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados a sistemas unificados e interoperables que son centrados en el consumidor, de aprendizaje constante e inteligentes.</target>
+        <target state="translated">Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados en sistemas unificados e interactivos, que se centran en el consumidor, con un aprendizaje constante e inteligentes.</target>
       </trans-unit>
     </body>
   </file>
@@ -3037,7 +3037,7 @@
       </trans-unit>
       <trans-unit id="2526" resname="r832776716" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health, so I know the information I</source>
-        <target>está respaldada por doctores en todas las áreas de salud, así que sé que la información que yo</target>
+        <target state="translated">esté respaldada por doctores en todas las áreas de salud, así que sé que la información que yo</target>
       </trans-unit>
       <trans-unit id="2527" resname="r674098443" restype="string" datatype="x-haml">
         <source>or with the</source>
@@ -3353,7 +3353,7 @@
       </trans-unit>
       <trans-unit id="2621" resname="r544270111" restype="string" datatype="x-haml">
         <source>doctors answer people’s questions, provide them with health tips, and curate those articles and research papers that will be most helpful to both individuals and society at large.</source>
-        <target>los doctores contestan preguntas de personas, les brindan tips de salud, y curan esos artículos e investigaciones que serán muy útiles tanto para individuos como a la sociedad en general.</target>
+        <target state="translated">los doctores contestan preguntas de personas, les brindan tips de salud, y comparten artículos e investigaciones que serán muy útiles tanto para individuos como a la sociedad en general.</target>
       </trans-unit>
       <trans-unit id="2622" resname="r555893575" restype="string" datatype="x-haml">
         <source>Medical Expert Network are invited to be HealthTap Prime doctors, they interact with patients live using video or voice via their PCs, phones, or mobile devices,</source>
@@ -3557,7 +3557,7 @@
       </trans-unit>
       <trans-unit id="2662" resname="r737183367" restype="string" datatype="x-haml">
         <source>For questions or feedback about using</source>
-        <target>Para preguntas o comentarios acerca de usar</target>
+        <target state="translated">Para preguntas o comentarios sobre el uso de</target>
       </trans-unit>
     </body>
   </file>
@@ -5557,7 +5557,7 @@
       </trans-unit>
       <trans-unit id="3129" resname="r513463810" restype="string" datatype="x-haml">
         <source>means an individual accepted to participate in the HealthTap Medical Expert Community and who participates on the Apps or interacts with others on or through the Apps, or other specialists or professionals who participate on HealthTap in their capacity as experts.</source>
-        <target>significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones, u otros especialistas o profesionistas que participan en HealthTap en su capacidad de expertos.</target>
+        <target state="translated">significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones u otros especialistas o profesionales que participen en HealthTap en su cualidad de expertos.</target>
       </trans-unit>
       <trans-unit id="3130" resname="r1010286189" restype="string" datatype="x-haml">
         <source>ALL INFORMATION PROVIDED ON HEALTHTAP OR IN CONNECTION WITH ANY COMMUNICATIONS SUPPORTED BY HEALTHTAP, INCLUDING BUT NOT LIMITED TO COMMUNICATIONS BETWEEN HEALTHTAP MEDICAL EXPERTS AND CONSUMERS, IS INTENDED TO BE FOR GENERAL INFORMATIONAL PURPOSES ONLY, AND IS IN NO WAY INTENDED TO CREATE A DOCTOR – PATIENT RELATIONSHIP AS DEFINED BY STATE AND FEDERAL LAW. HEALTHTAP IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL DIAGNOSIS OR TREATMENT. RELIANCE ON ANY INFORMATION PROVIDED BY HEALTHTAP OR ANY HEALTHTAP MEDICAL EXPERTS IS SOLELY AT YOUR OWN RISK.</source>

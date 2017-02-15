@@ -189,7 +189,7 @@
     <body>
       <trans-unit id="177" resname="r358657435" restype="string" datatype="ruby">
         <source>Share a detailed description of your symptoms, concerns, and how you'd like the doctor to help you. Attach images and files as necessary.</source>
-        <target state="translated">Comparte una descripción detallada de tus síntomas, preocupaciones, y cómo te gustaría que el doctor te ayudara. Adjunta imágenes y archivos como creas necesario.</target>
+        <target state="translated">Comparte una descripción detallada de tus síntomas, preocupaciones, y cómo te gustaría que el médico te ayudara. Adjunta las imágenes y los archivos que consideres necesarios.</target>
       </trans-unit>
       <trans-unit id="2237" resname="r143437710" restype="string" datatype="ruby">
         <source>Your zip code</source>
@@ -4176,7 +4176,7 @@
       </trans-unit>
       <trans-unit id="7681" resname="r9433786" restype="string" datatype="ruby">
         <source>I love that new patients find me on HealthTap and request virtual appointments with me. This is changing the face of medicine.</source>
-        <target state="translated">Amo que nuevos pacientes me encuentren en HealthTap y soliciten citas virtuales conmigo. Esto está cambiando la cara de la medicina.</target>
+        <target state="translated">Me encanta que nuevos pacientes me encuentren en HealthTap y soliciten citas virtuales conmigo. Esto está cambiando la cara de la medicina.</target>
       </trans-unit>
       <trans-unit id="7682" resname="r788129504" restype="string" datatype="ruby">
         <source>View my Virtual Practice landing page.</source>
@@ -6758,7 +6758,7 @@
       </trans-unit>
       <trans-unit id="1094" resname="r454993673" restype="string" datatype="ruby">
         <source>HealthTap is helping define the new field of "Interactive Health"- the sector that is moving consumer health information to new platforms, like smartphones and tablets, to provide portability and immediate access to actionable information. Consumers and physicians are increasingly joining the online conversation, and interactive health deserves the close attention of the investment community. HealthTap demonstrates the potential of this emerging space.</source>
-        <target state="translated">HealthTap está ayudando a definir el nuevo campo de "Salud Interactiva" - el sector que está moviendo información de salud para el consumidor a nuevas plataformas, como teléfonos inteligentes y tabletas, para brindar portabilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. HealthTap demuestra el potencial de este espacio emergente.</target>
+        <target state="translated">HealthTap está ayudando a definir el nuevo campo de "Salud Interactiva" - el sector que está moviendo información de salud para el consumidor a nuevas plataformas, como teléfonos inteligentes y tabletas, para brindar versatilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. HealthTap demuestra el potencial de este espacio emergente.</target>
       </trans-unit>
       <trans-unit id="1095" resname="r848654511" restype="string" datatype="ruby">
         <source>Bill Ericson, General Partner at Mohr Davidow Ventures</source>
@@ -7412,7 +7412,7 @@
     <body>
       <trans-unit id="1277" resname="r370192362" restype="string" datatype="ruby">
         <source>I love that HealthTap is backed by doctors in all areas of health, so I know the information I find is validated. I,m not going online in the middle of the night and getting some crazy parent. I also love that you can connect with your doctor on HealthTap or with the other doctor,s at their practice so in-and-out of the office, I feel at ease.</source>
-        <target state="translated">Amo que HealthTap esté respaldada por doctores en todas las áreas de la salud, así sé que la información que encuentro es válida. No voy a estar en línea a la mitad de la noche y me va a tocar un padre loco. También amo que puedes conectarte con tu doctor en HealthTap o con los otros doctores en sus consultorios dentro y fuera de la oficina, me siento tranquilo.</target>
+        <target state="translated">Me encanta que HealthTap esté respaldada por doctores en todas las áreas de la salud, así sé que la información que encuentro es válida. No voy a estar en línea a la mitad de la noche y me va a tocar un padre loco. También amo que puedes conectarte con tu doctor en HealthTap o con los otros doctores en sus consultorios dentro y fuera de la oficina, me siento tranquilo.</target>
       </trans-unit>
       <trans-unit id="1278" resname="r227048682" restype="string" datatype="ruby">
         <source>Leah D.</source>
@@ -9398,7 +9398,7 @@
       </trans-unit>
       <trans-unit id="1827" resname="r492272373" restype="string" datatype="ruby">
         <source>In its current state, our healthcare system is expensive, difficult to access, and error prone. On the brink of a massive reform in healthcare, dedicated, bright entrepreneurs and technologists can bring a great deal to the table by developing creative, forward thinking solutions that leverage health care professionals. &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is at the forefront of this development, improving patient care by creating quick, easy, and affordable access to doctors everywhere. The future of healthcare is at the confluence of big data, smart algorithms, and simple-to-use interfaces that will provide amplification of our MD's resources: &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is breaking ground in all three,&lt;/em&gt; and we're excited to help them make their compelling vision a transformative reality.</source>
-        <target state="translated">En su estado actual, nuestro sistema atención a la salud es caro, difícil de acceder, y propenso a errores. Al borde una masiva reforma a la atención a la salud, emprendedores y tecnólogos brillantes y dedicados pueden traer mucho a la mesa al desarrollar soluciones creativas y novedosas que se aprovechan de los profesionales de la atención a la salud. &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; está a la vanguardia de este desarrollo, mejorando la atención al paciente creando acceso accesible, fácil y rápido a doctores en todos lados. El futuro de la atención a la salud está en la convergencia de big data, algoritmos inteligentes e interfaz fáciles de usar que brindan amplificación de los recursos de nuestros MD: &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; es pionero en las tres,&lt;/em&gt; y estamos emocionados por ayudarlos a hacer su atractiva visión una realidad transformativa.</target>
+        <target state="translated">En su estado actual, nuestro sistema atención a la salud es caro, difícil de acceder, y propenso a errores. Al borde una masiva reforma de la atención a la salud, emprendedores y tecnólogos brillantes y dedicados pueden contribuir bastante, al desarrollar soluciones creativas y novedosas, que saquen provecho de los profesionales de la atención de la salud. &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; está a la vanguardia de este desarrollo, mejorando la atención al paciente creando acceso accesible, fácil y rápido a doctores en todos lados. El futuro de la atención a la salud está en la convergencia de big data, algoritmos inteligentes e interfaz fáciles de usar que brindan amplificación de los recursos de nuestros MD: &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; es pionero en las tres,&lt;/em&gt; y estamos emocionados por ayudarlos a hacer su atractiva visión una realidad transformativa.</target>
       </trans-unit>
       <trans-unit id="1828" resname="r170578528" restype="string" datatype="ruby">
         <source>Everyone will soon become the CEO of their own health. &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;, with its phenomenal growth in combination with its unique technology, has the potential to become the triaging platform for everyone's health.&lt;/em&gt; I am excited to work with the &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; team as the company scales to provide people with unparalleled immediate access to the most trusted medical knowledge, doctors, and health services.</source>
@@ -9406,7 +9406,7 @@
       </trans-unit>
       <trans-unit id="1829" resname="r1005945461" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; has the opportunity to  touch everyone on the planet and to become a great enterprise—maximizing both social and economic value.  It delivers value for patients, who will gain unprecedented access to doctors; value for doctors, who can treat more people more easily and cost-effectively; and value for society, which has been searching for a long time for a way to solve the healthcare dilemma of rising costs and an aging population. And given its unique and imaginative business model &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is poised to become one of the most profitable businesses in the world. It’s a real game changer.&lt;/em&gt;</source>
-        <target state="translated">&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; tiene la oportunidad de tocar a todos en el planeta y de convertirse en una gran empresa - maximizando tanto el valor social como el económico. Entrega valor para los pacientes, quienes ganaran acceso sin precedente a doctores; valor para doctores, quienes pueden tratar personas de forma más sencilla y económica; y valor para la sociedad, la cual ha estado buscando por mucho tiempo una forma de resolver el dilema de atención a la salud con los costos crecientes y una población que está envejeciendo. Y dado su único e imaginativo modelo de negocios &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; está posicionado para convertirse en uno de los negocios más lucrativos del mundo. Realmente cambia el juego.&lt;/em&gt;</target>
+        <target state="translated">&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; tiene la oportunidad de llegar a todo el planeta y de convertirse en una gran empresa, maximizando tanto su valor social como económico. Beneficia a los pacientes, que obtienen un acceso a los médicos sin precedentes; beneficia a los médicos, que pueden tratar a las personas de forma más sencilla y económica; y beneficia a la sociedad, que ha buscado por mucho tiempo una forma de resolver el dilema de la atención de la salud con costos crecientes y una población que envejece. Y dado su único e imaginativo modelo de negocios &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; está posicionado para convertirse en uno de los negocios más lucrativos del mundo. Realmente cambia el juego.&lt;/em&gt;</target>
       </trans-unit>
       <trans-unit id="1830" resname="r444875395" restype="string" datatype="ruby">
         <source>Mark Leslie at Leslie Ventures</source>
@@ -9414,11 +9414,11 @@
       </trans-unit>
       <trans-unit id="1831" resname="r999007113" restype="string" datatype="ruby">
         <source>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; embodies the powerful consumer Internet trend of moving high-value mainstream offline experiences, such as doctor-patient interactions, to the online world.&lt;/em&gt; The company leverages the three key innovation drivers that I'm most excited about: mobile apps that enable new kinds of rich, personalized interactions via smartphone and tablet; gamification that enhances user engagement and retention; and social mechanics, such as expert-based Q&amp;A and reputation graphs, that facilitate deep interest and trust. It's this kind of fresh thinking that will accelerate the &amp;ldquo;consumerization&amp;rdquo; of healthcare, and re-invigorate an extremely important and valuable industry that has been behind the IT curve and mired in inefficiency for decades.</source>
-        <target state="translated">&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; encarna la poderosa tendencia de consumidores en el Internet de mover experiencias mainstream valiosas offline, como interacciones médico-paciente, al mundo en línea.&lt;/em&gt; La compañía se aprovecha de tres motores de innovación clave de los cuales estoy más emocionado: aplicaciones móviles que permiten nuevas interacciones ricas y personalizadas vía teléfono inteligente y tabletas; ludificación que mejora las interacciones y retención de usuarios; y mecánicas sociales; como P&amp;R de expertos y gráficos de reputación, que facilitan profundo interés y confianza. Es este tipo de pensamiento fresco que acelerará la &amp;ldquo;consumidorización&amp;rdquo; de la atención a la salud, y volver a vigorizar una industria extremadamente importante y valiosa que ha estado detrás de la curva de IT y que ha estado inmersa en la ineficiencia por décadas.</target>
+        <target state="translated">&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; encarna la poderosa tendencia de consumidores en el Internet de llevar al mundo en línea experiencias mainstream que son valiosas offline, tales como las interacciones médico-paciente.&lt;/em&gt; Los tres motores de innovación más interesantes que esta compañía aprovecha son: aplicaciones móviles que permiten nuevas interacciones ricas y personalizadas vía teléfono inteligente y tabletas; ludificación que mejora las interacciones y retención de usuarios; y mecánicas sociales; como P&amp;R de expertos y gráficos de reputación, que facilitan profundo interés y confianza. Es este tipo de pensamiento fresco que acelerará la &amp;ldquo;consumidorización&amp;rdquo; de la atención a la salud, y volver a vigorizar una industria extremadamente importante y valiosa que ha estado detrás de la curva de IT y que ha estado inmersa en la ineficiencia por décadas.</target>
       </trans-unit>
       <trans-unit id="1832" resname="r449353917" restype="string" datatype="ruby">
         <source>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is helping define the new field of &amp;ldquo;Interactive Health&amp;rdquo;—the sector that is moving consumer health information to new platforms&lt;/em&gt;, like smartphones and tablets, to provide portability and immediate access to actionable information. Consumers and physicians are increasingly joining the online conversation, and interactive health deserves the close attention of the investment community. &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; demonstrates the potential of this emerging space.</source>
-        <target state="translated">&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;está ayudando a definir el nuevo campo de &amp;ldquo;Salud Interactiva&amp;rdquo; - el sector que está moviendo información de salud para el consumidor a nuevas plataformas&lt;/em&gt;, como teléfonos inteligentes y tabletas, para brindar portabilidad y acceso inmediato a información viable. Consumidores y doctores se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; demuestra el potencial de este espacio emergente.</target>
+        <target state="translated">&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;está ayudando a definir el nuevo campo de &amp;ldquo;Salud Interactiva&amp;rdquo; - el sector que está moviendo información de salud para el consumidor a nuevas plataformas&lt;/em&gt;, como teléfonos inteligentes y tabletas, para brindar versatilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; demuestra el potencial de este espacio emergente.</target>
       </trans-unit>
       <trans-unit id="1833" resname="r855068512" restype="string" datatype="ruby">
         <source>&lt;em&gt;HealthTap's approach is brilliant.&lt;/em&gt; It delivers what people miss about medicine most: a highly engaging personalized experience, with trusted doctors sharing helpful information.</source>
@@ -9719,7 +9719,7 @@
     <body>
       <trans-unit id="1901" resname="r899361143" restype="string" datatype="ruby">
         <source>Learn more about members</source>
-        <target state="translated">Aprende más acerca de miembros</target>
+        <target state="translated">Saber más acerca de miembros</target>
       </trans-unit>
       <trans-unit id="1902" resname="r412671705" restype="string" datatype="ruby">
         <source>Members</source>
@@ -9747,7 +9747,7 @@
       </trans-unit>
       <trans-unit id="1908" resname="r839013275" restype="string" datatype="ruby">
         <source>Learn more about employers &amp; insurers</source>
-        <target state="translated">Aprende más acerca de empleadores &amp; aseguradores</target>
+        <target state="translated">Saber más acerca de empleadores &amp; aseguradores</target>
       </trans-unit>
       <trans-unit id="1909" resname="r499217305" restype="string" datatype="ruby">
         <source>Employers &amp; Insurers</source>
@@ -9755,11 +9755,11 @@
       </trans-unit>
       <trans-unit id="1910" resname="r111781423" restype="string" datatype="ruby">
         <source>Lower costs and improve productivity &amp; satisfaction by providing the right care at the right cost at the right time</source>
-        <target state="translated">Reduce los costos y mejora productividad y satisfacción brindando la atención adecuada al costo adecuado en el momento adecuado</target>
+        <target state="translated">Reduce los costos e incrementa la productividad y la satisfacción, brindando la atención adecuada, al costo adecuado, en el momento adecuado</target>
       </trans-unit>
       <trans-unit id="1911" resname="r222053641" restype="string" datatype="ruby">
         <source>Learn more about doctors</source>
-        <target state="translated">Aprende más acerca de doctores</target>
+        <target state="translated">Saber más acerca de doctores</target>
       </trans-unit>
       <trans-unit id="1912" resname="r799436858" restype="string" datatype="ruby">
         <source>Enhance your reputation, grow your practice</source>
@@ -9767,7 +9767,7 @@
       </trans-unit>
       <trans-unit id="1913" resname="r107502447" restype="string" datatype="ruby">
         <source>Learn more about government &amp; population managers</source>
-        <target state="translated">Aprende más acerca de directores de población y gobierno</target>
+        <target state="translated">Saber más acerca de directores de población y gobierno</target>
       </trans-unit>
       <trans-unit id="1914" resname="r690382453" restype="string" datatype="ruby">
         <source>Government &amp; Population Managers</source>
@@ -9779,7 +9779,7 @@
       </trans-unit>
       <trans-unit id="1916" resname="r603684140" restype="string" datatype="ruby">
         <source>Learn more about developers</source>
-        <target state="translated">Aprende más acerca de desarrolladores</target>
+        <target state="translated">Saber más acerca de desarrolladores</target>
       </trans-unit>
       <trans-unit id="1917" resname="r974419084" restype="string" datatype="ruby">
         <source>Developers</source>
@@ -23098,7 +23098,7 @@
     <body>
       <trans-unit id="4483" resname="r300477531" restype="string" datatype="ruby">
         <source>What is %{person}'s gender?</source>
-        <target state="translated">¿Cuál es el género de %{person}?</target>
+        <target state="translated">¿Cuál es el sexo de %{person}?</target>
       </trans-unit>
       <trans-unit id="4484" resname="r453205076" restype="string" datatype="ruby">
         <source>When was %{person_description} born?</source>
@@ -23554,7 +23554,7 @@
       </trans-unit>
       <trans-unit id="4593" resname="r525805065" restype="string" datatype="ruby">
         <source>Members try your checklist</source>
-        <target state="translated">Miembros prueban tu listado</target>
+        <target state="translated">Miembros aprueban tu listado</target>
       </trans-unit>
       <trans-unit id="4594" resname="r866395136" restype="string" datatype="ruby">
         <source>Questions for You</source>
@@ -23694,7 +23694,7 @@
       </trans-unit>
       <trans-unit id="4628" resname="r420886578" restype="string" datatype="ruby">
         <source>A doctor shares feedback on your SOAP Note</source>
-        <target state="translated">Un doctor comparte comentario en tu Nota SOAP</target>
+        <target state="translated">Un doctor comparte su comentario en tu Nota SOAP</target>
       </trans-unit>
       <trans-unit id="4629" resname="r1026561444" restype="string" datatype="ruby">
         <source>A doctor rates your consult 5-stars</source>
@@ -23706,19 +23706,19 @@
       </trans-unit>
       <trans-unit id="4631" resname="r669633711" restype="string" datatype="ruby">
         <source>Poor network connection detected during a consult</source>
-        <target state="translated">Conexión de red pobre detectada durante consulta</target>
+        <target state="translated">Conexión de red pobre detectada durante una consulta</target>
       </trans-unit>
       <trans-unit id="4632" resname="r433964049" restype="string" datatype="ruby">
         <source>A patient responds to an Inbox Consults</source>
-        <target state="translated">Un paciente responde a una Consulta de Buzón de Entrada</target>
+        <target state="translated">Un paciente responde a una consulta de Buzón de Entrada</target>
       </trans-unit>
       <trans-unit id="4633" resname="r405339046" restype="string" datatype="ruby">
         <source>Reminder an Inbox Consults is pending your response</source>
-        <target state="translated">Recordatorio de una Consulta de Buzón de Entrada está pendiente de respuesta</target>
+        <target state="translated">Recordatorio de una consulta de Buzón de Entrada pendiente de respuesta</target>
       </trans-unit>
       <trans-unit id="4634" resname="r323126199" restype="string" datatype="ruby">
         <source>You missed an incoming Live Consult from a patient</source>
-        <target state="translated">Perdiste una Consulta en Vivo entrante de un paciente</target>
+        <target state="translated">Perdiste una consulta en vivo entrante de un paciente</target>
       </trans-unit>
       <trans-unit id="4635" resname="r741654474" restype="string" datatype="ruby">
         <source>Weekly Digest</source>
@@ -23758,7 +23758,7 @@
       </trans-unit>
       <trans-unit id="4644" resname="r283299315" restype="string" datatype="ruby">
         <source>Updates on a question you asked</source>
-        <target state="translated">Actualizaciones a una pregunta que hiciste</target>
+        <target state="translated">Actualizaciones de una pregunta que hiciste</target>
       </trans-unit>
       <trans-unit id="4645" resname="r495465873" restype="string" datatype="ruby">
         <source>A doctor responds to Virtual Consult</source>
@@ -23806,7 +23806,7 @@
       </trans-unit>
       <trans-unit id="4656" resname="r708190353" restype="string" datatype="ruby">
         <source>Reminder and Kudos for someone you support</source>
-        <target state="translated">Recordatorios y Kudos para alguien que apoyas</target>
+        <target state="translated">Recordatorios y Aclamación para alguien que apoyas</target>
       </trans-unit>
       <trans-unit id="4657" resname="r283175153" restype="string" datatype="ruby">
         <source>Kudos from your supporter(s)</source>
@@ -23814,7 +23814,7 @@
       </trans-unit>
       <trans-unit id="4658" resname="r628887346" restype="string" datatype="ruby">
         <source>Kudos for someone you support</source>
-        <target state="translated">Kudos para alguien que apoyas</target>
+        <target state="translated">Aclamación para alguien que apoyas</target>
       </trans-unit>
       <trans-unit id="4659" resname="r238259539" restype="string" datatype="ruby">
         <source>Doctor Insights For You</source>
@@ -23850,7 +23850,7 @@
       </trans-unit>
       <trans-unit id="4667" resname="r97424739" restype="string" datatype="ruby">
         <source>Doctor accepts you as a patient</source>
-        <target state="translated">Doctor te acepta como paciente</target>
+        <target state="translated">Un doctor te acepta como paciente</target>
       </trans-unit>
       <trans-unit id="4668" resname="r250639661" restype="string" datatype="ruby">
         <source>Reminders when a doctor accepts you as a patient</source>
@@ -24310,19 +24310,19 @@
       </trans-unit>
       <trans-unit id="4780" resname="r27919281" restype="string" datatype="ruby">
         <source>Vegan (no meat or animal products)</source>
-        <target state="translated">Vegano (no carne o productos de animal)</target>
+        <target state="translated">Vegano (no come carne o productos animales)</target>
       </trans-unit>
       <trans-unit id="4781" resname="r836028066" restype="string" datatype="ruby">
         <source>Pescatarian (no meat, except fish)</source>
-        <target state="translated">Pescetariano (no carne, excepto pescado)</target>
+        <target state="translated">Pescetariano (no come carne, excepto pescado)</target>
       </trans-unit>
       <trans-unit id="4782" resname="r720240330" restype="string" datatype="ruby">
         <source>Gluten-Free (no wheat, barley, or rye)</source>
-        <target state="translated">Libre de Gluten (no trigo, cebada o centeno)</target>
+        <target state="translated">Libre de Gluten (no consume trigo, avena, cebada o centeno)</target>
       </trans-unit>
       <trans-unit id="4783" resname="r73724393" restype="string" datatype="ruby">
         <source>Lactose Intolerant (lactose-free dairy)</source>
-        <target state="translated">Intolerancia a la Lactosa (lácteos libres de lactosa)</target>
+        <target state="translated">Intolerancia a la Lactosa (Consume lácteos libres de lactosa)</target>
       </trans-unit>
       <trans-unit id="4784" resname="r90090747" restype="string" datatype="ruby">
         <source>None</source>
@@ -24350,27 +24350,27 @@
       </trans-unit>
       <trans-unit id="4790" resname="r1003968121" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a month</source>
-        <target state="translated">Sí, 0-2 cajetillas al mes</target>
+        <target state="translated">Sí, 0-2 paquetes al mes</target>
       </trans-unit>
       <trans-unit id="4791" resname="r956725319" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a week</source>
-        <target state="translated">Sí, 0-2 cajetillas a la semana</target>
+        <target state="translated">Sí, 0-2 paquetes a la semana</target>
       </trans-unit>
       <trans-unit id="4792" resname="r684140086" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a day</source>
-        <target state="translated">Sí, 0-2 cajetillas al día</target>
+        <target state="translated">Sí, 0-2 paquetes por día</target>
       </trans-unit>
       <trans-unit id="4793" resname="r526642561" restype="string" datatype="ruby">
         <source>Yes, more than 2 packs a day</source>
-        <target state="translated">Sí, más de 2 cajetillas al día</target>
+        <target state="translated">Sí, más de 2 paquetes por día</target>
       </trans-unit>
       <trans-unit id="4794" resname="r762126145" restype="string" datatype="ruby">
         <source>Yes, chewing tobacco</source>
-        <target state="translated">Sí, masticando tabaco</target>
+        <target state="translated">Sí, mastica tabaco</target>
       </trans-unit>
       <trans-unit id="4795" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
-        <target state="translated">No sexualmente activo</target>
+        <target state="translated">No es sexualmente activa/o</target>
       </trans-unit>
       <trans-unit id="4796" resname="r699411433" restype="string" datatype="ruby">
         <source>Men</source>
@@ -24386,7 +24386,7 @@
       </trans-unit>
       <trans-unit id="4799" resname="r276834703" restype="string" datatype="ruby">
         <source>Marijuana</source>
-        <target state="translated">Mariguana</target>
+        <target state="translated">Marihuana</target>
       </trans-unit>
       <trans-unit id="4800" resname="r468221601" restype="string" datatype="ruby">
         <source>Cocaine</source>
@@ -24402,11 +24402,11 @@
       </trans-unit>
       <trans-unit id="4803" resname="r763555502" restype="string" datatype="ruby">
         <source>Ecstasy</source>
-        <target state="translated">Extasis</target>
+        <target state="translated">Éxtasis</target>
       </trans-unit>
       <trans-unit id="4804" resname="r394864593" restype="string" datatype="ruby">
         <source>Barbiturates / Benzodiazepines</source>
-        <target state="translated">Barbitúricos / Benzodiacepinas</target>
+        <target state="translated">Barbitúricos / Benzodiazepinas</target>
       </trans-unit>
       <trans-unit id="4805" resname="r678640256" restype="string" datatype="ruby">
         <source>LSD</source>
@@ -24414,7 +24414,7 @@
       </trans-unit>
       <trans-unit id="4806" resname="r504881313" restype="string" datatype="ruby">
         <source>Psychedelic Mushrooms</source>
-        <target state="translated">Hongos Psicogélicos</target>
+        <target state="translated">Hongos Psicodélicos</target>
       </trans-unit>
       <trans-unit id="4807" resname="r361059927" restype="string" datatype="ruby">
         <source>Other</source>
@@ -25860,7 +25860,7 @@
       </trans-unit>
       <trans-unit id="5180" resname="r384671676" restype="string" datatype="ruby">
         <source>Suggested Doctors</source>
-        <target state="translated">Doctores Sugeridos</target>
+        <target state="translated">Doctores sugeridos</target>
       </trans-unit>
       <trans-unit id="5181" resname="r635197186" restype="string" datatype="ruby">
         <source>Safe for use during pregnancy</source>
@@ -26992,7 +26992,7 @@
       </trans-unit>
       <trans-unit id="6279" resname="r377349525" restype="string" datatype="ruby">
         <source>HealthTap launches new proprietary algorithms to enable anyone to find health information tailored to them from the world’s largest library of doctor knowledge.</source>
-        <target state="translated">HealthTap lanza tus nuevos y propios algoritmos para permitirle a cualquier el encontrar información ajustada para ellos de la biblioteca de conocimiento de doctores más grande del mundo.</target>
+        <target state="translated">HealthTap lanza sus nuevos y propios algoritmos para permitir que cualquiera encuentre la información necesaria en la biblioteca de conocimiento de doctores más grande del mundo.</target>
       </trans-unit>
       <trans-unit id="6280" resname="r60920295" restype="string" datatype="ruby">
         <source>Nov 2016</source>
@@ -33185,7 +33185,7 @@
     <body>
       <trans-unit id="7937" resname="r364116464" restype="string" datatype="ruby">
         <source>Credit card declined</source>
-        <target state="translated">Tarjeta de crédito declinada</target>
+        <target state="translated">Tarjeta de crédito rechazada</target>
       </trans-unit>
     </body>
   </file>
@@ -37054,7 +37054,7 @@
       </trans-unit>
       <trans-unit id="8731" resname="What gender is {first_name}?" restype="string" datatype="javascript">
         <source>What gender is {first_name}?</source>
-        <target state="translated">¿Cuál es el género de {first_name}?</target>
+        <target state="translated">¿Cuál es el sexo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="8732" resname="What gender is this person?" restype="string" datatype="javascript">
         <source>What gender is this person?</source>
@@ -39330,7 +39330,7 @@
     <body>
       <trans-unit id="9159" resname="Where is {first_name} located?" restype="string" datatype="javascript">
         <source>Where is {first_name} located?</source>
-        <target state="translated">¿Dónde está ubicado {first_name}?</target>
+        <target state="translated">¿Cuál es la ubicación de {first_name}?</target>
       </trans-unit>
       <trans-unit id="9160" resname="Where is this person located?" restype="string" datatype="javascript">
         <source>Where is this person located?</source>
@@ -39350,11 +39350,11 @@
       </trans-unit>
       <trans-unit id="9164" resname="What ethnicity is {first_name}?" restype="string" datatype="javascript">
         <source>What ethnicity is {first_name}?</source>
-        <target state="translated">¿Qué grupo étnico es {first_name}?</target>
+        <target state="translated">¿A qué grupo étnico pertenece {first_name}?</target>
       </trans-unit>
       <trans-unit id="9165" resname="What ethnicity is this person?" restype="string" datatype="javascript">
         <source>What ethnicity is this person?</source>
-        <target state="translated">¿Qué grupo étnico es esta persona?</target>
+        <target state="translated">¿A qué grupo étnico pertenece esta persona?</target>
       </trans-unit>
       <trans-unit id="9166" resname="What ethnicity are you?" restype="string" datatype="javascript">
         <source>What ethnicity are you?</source>
@@ -39402,7 +39402,7 @@
       </trans-unit>
       <trans-unit id="9177" resname="(Choose all that apply)" restype="string" datatype="javascript">
         <source>(Choose all that apply)</source>
-        <target state="translated">(Elige a todos los que aplican)</target>
+        <target state="translated">(Elige todos los que aplican)</target>
       </trans-unit>
       <trans-unit id="9178" resname="How would you classify {first_name}&apos;s consumption of alcohol?" restype="string" datatype="javascript">
         <source>How would you classify {first_name}'s consumption of alcohol?</source>
@@ -39418,11 +39418,11 @@
       </trans-unit>
       <trans-unit id="9181" resname="Does {first_name} smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Does {first_name} smoke or chew tobacco or recently quit?</source>
-        <target state="translated">¿{first_name} fuma o masca tabaco o lo dejó recientemente?</target>
+        <target state="translated">¿{first_name} fuma, mastica tabaco o lo dejó recientemente?</target>
       </trans-unit>
       <trans-unit id="9182" resname="Does this person smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Does this person smoke or chew tobacco or recently quit?</source>
-        <target state="translated">¿Esta persona fuma o masca tabaco o lo dejó recientemente?</target>
+        <target state="translated">¿Esta persona fuma, mastica tabaco o lo dejó recientemente?</target>
       </trans-unit>
       <trans-unit id="9183" resname="Do you smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Do you smoke or chew tobacco or recently quit?</source>
@@ -39442,7 +39442,7 @@
       </trans-unit>
       <trans-unit id="9187" resname="Does {first_name} use any of the following recreational drugs?" restype="string" datatype="javascript">
         <source>Does {first_name} use any of the following recreational drugs?</source>
-        <target state="translated">¿{first_name} usa alguno de los siguientes fármacos recreativos?</target>
+        <target state="translated">¿{first_name} consume alguno de los siguientes fármacos recreativos?</target>
       </trans-unit>
       <trans-unit id="9188" resname="Does this person use any of the following recreational drugs?" restype="string" datatype="javascript">
         <source>Does this person use any of the following recreational drugs?</source>
@@ -40862,7 +40862,7 @@
       </trans-unit>
       <trans-unit id="9505" resname="Technical Issues" restype="string" datatype="javascript">
         <source>Technical Issues</source>
-        <target state="translated">Problemas Técnicos</target>
+        <target state="translated">Problemas técnicos</target>
       </trans-unit>
       <trans-unit id="9506" resname="What went wrong with your experience?" restype="string" datatype="javascript">
         <source>What went wrong with your experience?</source>
@@ -41082,11 +41082,11 @@
       </trans-unit>
       <trans-unit id="9546" resname="Have this" restype="string" datatype="javascript">
         <source>Have this</source>
-        <target state="translated">Tengo esto</target>
+        <target state="translated">Tiene esto</target>
       </trans-unit>
       <trans-unit id="9547" resname="No longer have this" restype="string" datatype="javascript">
         <source>No longer have this</source>
-        <target state="translated">Ya no tengo esto</target>
+        <target state="translated">Ya no tiene esto</target>
       </trans-unit>
       <trans-unit id="9548" resname="Are you taking any medications?" restype="string" datatype="javascript">
         <source>Are you taking any medications?</source>
@@ -41114,7 +41114,7 @@
       </trans-unit>
       <trans-unit id="9554" resname="No longer take this" restype="string" datatype="javascript">
         <source>No longer take this</source>
-        <target state="translated">Ya no tomo esto</target>
+        <target state="translated">Ya no toma esto</target>
       </trans-unit>
       <trans-unit id="9555" resname="Does this person have any allergies?" restype="string" datatype="javascript">
         <source>Does this person have any allergies?</source>
@@ -42074,7 +42074,7 @@
       </trans-unit>
       <trans-unit id="9765" resname="Dr. Agrees" restype="string" datatype="javascript">
         <source>Dr. Agrees</source>
-        <target state="translated">De Acuerdos de Dr.</target>
+        <target state="translated">Dres. que están de acuerdo</target>
       </trans-unit>
     </body>
   </file>
@@ -42614,7 +42614,7 @@
       </trans-unit>
       <trans-unit id="9879" resname="Make an appointment with" restype="string" datatype="javascript">
         <source>Make an appointment with</source>
-        <target state="translated">Hacer una cita con</target>
+        <target state="translated">Tener una consulta con</target>
       </trans-unit>
       <trans-unit id="9880" resname="Please choose your preferred length for a consultation" restype="string" datatype="javascript">
         <source>Please choose your preferred length for a consultation</source>

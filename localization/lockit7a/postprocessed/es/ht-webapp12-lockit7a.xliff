@@ -6481,7 +6481,7 @@
       </trans-unit>
       <trans-unit id="1915" resname="What gender is {first_name}?" restype="string" datatype="javascript">
         <source>What gender is {first_name}?</source>
-        <target state="translated">¿Cuál es el género de {first_name}?</target>
+        <target state="translated">¿Cuál es el sexo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="1916" resname="What gender is this person?" restype="string" datatype="javascript">
         <source>What gender is this person?</source>
@@ -8905,7 +8905,7 @@
       </trans-unit>
       <trans-unit id="2458" resname="r104998707" restype="string" datatype="x-haml">
         <source>using our Virtual Consult experience via high-definition video, voice, or text. Get help anywhere, 24/7, via the web or your mobile device, securely and privately. Share photos or test results, and get immediate answers, treatment, and referrals to help you feel good!</source>
-        <target state="translated">usando nuestra experiencia de Consulta Virtual a través de video de alta definición, voz o texto. Obtén ayuda desde cualquier lugar, 24/7, a través de la web o tu dipositivo móvio. de forma segura y privada. ¡Comparte fotos o resultados de pruebas de laboratorio, y obtén respuestas, tratamiento y referencias inmediatas para ayudarte a sentirte bien!</target>
+        <target state="translated">usando nuestra experiencia de Consulta Virtual a través de video de alta definición, voz o texto. Obtén ayuda desde cualquier lugar, las 24 hs., los 7 días de la semana, a través de la web o tu dispositivo móvil, de forma segura y privada. ¡Comparte fotos o resultados de pruebas de laboratorio, y obtén respuestas, tratamiento y referencias inmediatas para ayudarte a sentirte bien!</target>
       </trans-unit>
       <trans-unit id="2459" resname="r636341431" restype="string" datatype="x-haml">
         <source>Talk with a top doctor or your</source>

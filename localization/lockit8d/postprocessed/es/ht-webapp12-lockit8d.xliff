@@ -579,7 +579,7 @@
       </trans-unit>
       <trans-unit id="879" resname=":text" restype="string" datatype="x-yaml" x-context="Your Questions@4">
         <source>Updates on a question you asked</source>
-        <target state="translated">Actualizaciones a una pregunta que hiciste</target>
+        <target state="translated">Actualizaciones de una pregunta que hiciste</target>
       </trans-unit>
       <trans-unit id="887" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@7">
         <source>Updates on a consult you had</source>
@@ -591,7 +591,7 @@
       </trans-unit>
       <trans-unit id="893" resname=":text" restype="string" datatype="x-yaml" x-context="Your Checklists@4">
         <source>Kudos for someone you support</source>
-        <target state="translated">Kudos para alguien que apoyas</target>
+        <target state="translated">Aclamación para alguien que apoyas</target>
       </trans-unit>
       <trans-unit id="894" resname=":text" restype="string" datatype="x-yaml" x-context="Doctor Insights For You@0">
         <source>Tips</source>
@@ -619,7 +619,7 @@
       </trans-unit>
       <trans-unit id="900" resname=":text" restype="string" datatype="x-yaml" x-context="Your Doctor Care-Team@3">
         <source>Doctor accepts you as a patient</source>
-        <target state="translated">Doctor te acepta como paciente</target>
+        <target state="translated">Un doctor te acepta como paciente</target>
       </trans-unit>
       <trans-unit id="901" resname=":text" restype="string" datatype="x-yaml" x-context="Your Doctor Care-Team@4">
         <source>Reminders when a doctor accepts you as a patient</source>
@@ -655,7 +655,7 @@
     <body>
       <trans-unit id="880" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@0">
         <source>A doctor shares feedback on your SOAP Note</source>
-        <target state="translated">Un doctor comparte comentario en tu Nota SOAP</target>
+        <target state="translated">Un doctor comparte su comentario en tu Nota SOAP</target>
       </trans-unit>
       <trans-unit id="881" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@1">
         <source>A doctor rates your consult 5-stars</source>
@@ -667,19 +667,19 @@
       </trans-unit>
       <trans-unit id="883" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@3">
         <source>Poor network connection detected during a consult</source>
-        <target state="translated">Conexión de red pobre detectada durante consulta</target>
+        <target state="translated">Conexión de red pobre detectada durante una consulta</target>
       </trans-unit>
       <trans-unit id="884" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@4">
         <source>A patient responds to an Inbox Consults</source>
-        <target state="translated">Un paciente responde a una Consulta de Buzón de Entrada</target>
+        <target state="translated">Un paciente responde a una consulta de Buzón de Entrada</target>
       </trans-unit>
       <trans-unit id="885" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@5">
         <source>Reminder an Inbox Consults is pending your response</source>
-        <target state="translated">Recordatorio de una Consulta de Buzón de Entrada está pendiente de respuesta</target>
+        <target state="translated">Recordatorio de una consulta de Buzón de Entrada pendiente de respuesta</target>
       </trans-unit>
       <trans-unit id="886" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@6">
         <source>You missed an incoming Live Consult from a patient</source>
-        <target state="translated">Perdiste una Consulta en Vivo entrante de un paciente</target>
+        <target state="translated">Perdiste una consulta en vivo entrante de un paciente</target>
       </trans-unit>
       <trans-unit id="889" resname=":text" restype="string" datatype="x-yaml" x-context="Your Checklists@0">
         <source>Members complete actions from your checklist</source>
@@ -695,7 +695,7 @@
       </trans-unit>
       <trans-unit id="892" resname=":text" restype="string" datatype="x-yaml" x-context="Your Checklists@3">
         <source>Members try your checklist</source>
-        <target state="translated">Miembros prueban tu listado</target>
+        <target state="translated">Miembros aprueban tu listado</target>
       </trans-unit>
       <trans-unit id="905" resname=":text" restype="string" datatype="x-yaml" x-context="Announcements and offers@0">
         <source>Announcements and offers about HealthTap Prime</source>
