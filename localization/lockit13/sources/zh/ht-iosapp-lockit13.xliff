@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n" restype="string" datatype="x-objective-c">
+        <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n</source>
+        <target state="new">•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n</target>
+        <note annotates="source">Common reasons to use virtual consults bullets full list</note>
+      </trans-unit>
+      <trans-unit id="2" resname="See more\n" restype="string" datatype="x-objective-c">
+        <source>See more\n</source>
+        <target state="new">See more\n</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
