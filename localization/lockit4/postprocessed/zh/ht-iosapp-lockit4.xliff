@@ -1329,7 +1329,7 @@
   </file>
   <file original="feelgood/ViewControllers/FGMainSearchResultsViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="242" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
+      <trans-unit id="242" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">Place holder in search box</note>
@@ -2394,7 +2394,7 @@
   </file>
   <file original="feelgood/FGSearchBar.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="450" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
+      <trans-unit id="450" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">search box placeholder</note>

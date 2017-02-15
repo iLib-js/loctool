@@ -11325,12 +11325,12 @@ from the HealthTap app</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">place holder in search box</note>
       </trans-unit>
-      <trans-unit id="Search answers, topics, experts  " resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
+      <trans-unit id="Search answers, topics, experts" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
-      <trans-unit id="Search answers, topics, experts     " resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
+      <trans-unit id="Search answers, topics, experts" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">search box placeholder</note>
