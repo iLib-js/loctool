@@ -24352,23 +24352,23 @@
       </trans-unit>
       <trans-unit id="4790" resname="r1003968121" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a month</source>
-        <target state="translated">Sí, 0-2 cajetillas al mes</target>
+        <target state="translated">Sí, 0-2 paquetes al mes</target>
       </trans-unit>
       <trans-unit id="4791" resname="r956725319" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a week</source>
-        <target state="translated">Sí, 0-2 cajetillas a la semana</target>
+        <target state="translated">Sí, 0-2 paquetes a la semana</target>
       </trans-unit>
       <trans-unit id="4792" resname="r684140086" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a day</source>
-        <target state="translated">Sí, 0-2 cajetillas al día</target>
+        <target state="translated">Sí, 0-2 paquetes por día</target>
       </trans-unit>
       <trans-unit id="4793" resname="r526642561" restype="string" datatype="ruby">
         <source>Yes, more than 2 packs a day</source>
-        <target state="translated">Sí, más de 2 cajetillas al día</target>
+        <target state="translated">Sí, más de 2 paquetes por día</target>
       </trans-unit>
       <trans-unit id="4794" resname="r762126145" restype="string" datatype="ruby">
         <source>Yes, chewing tobacco</source>
-        <target state="translated">Sí, masticando tabaco</target>
+        <target state="translated">Sí, mastica tabaco</target>
       </trans-unit>
       <trans-unit id="4795" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
