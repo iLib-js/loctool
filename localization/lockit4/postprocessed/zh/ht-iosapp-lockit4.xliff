@@ -2873,11 +2873,11 @@
         <source>checklist for</source>
         <target>清单为</target>
       </trans-unit>
-      <trans-unit id="544" resname=" agree" restype="string" datatype="x-objective-c">
+      <trans-unit id="544" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
         <target>同意</target>
       </trans-unit>
-      <trans-unit id="545" resname=" agrees" restype="string" datatype="x-objective-c">
+      <trans-unit id="545" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
         <target>同意</target>
       </trans-unit>

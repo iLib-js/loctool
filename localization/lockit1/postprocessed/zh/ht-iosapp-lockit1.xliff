@@ -6194,12 +6194,12 @@ and more</source>
         <target>添加此清单</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id=" agree" resname=" agree" restype="string" datatype="x-objective-c">
+      <trans-unit id="agree" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
         <target>同意</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id=" agrees" resname=" agrees" restype="string" datatype="x-objective-c">
+      <trans-unit id="agrees" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
         <target>同意</target>
         <note annotates="source">No comment provided by engineer.</note>

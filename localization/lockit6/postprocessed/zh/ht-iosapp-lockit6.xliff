@@ -1063,11 +1063,11 @@
         <source>checklist for</source>
         <target>清单</target>
       </trans-unit>
-      <trans-unit id="176" resname=" agree" restype="string" datatype="x-objective-c">
+      <trans-unit id="176" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
         <target>同意</target>
       </trans-unit>
-      <trans-unit id="177" resname=" agrees" restype="string" datatype="x-objective-c">
+      <trans-unit id="177" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
         <target>同意</target>
       </trans-unit>
