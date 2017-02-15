@@ -4176,7 +4176,7 @@
       </trans-unit>
       <trans-unit id="7681" resname="r9433786" restype="string" datatype="ruby">
         <source>I love that new patients find me on HealthTap and request virtual appointments with me. This is changing the face of medicine.</source>
-        <target state="translated">Amo que nuevos pacientes me encuentren en HealthTap y soliciten citas virtuales conmigo. Esto está cambiando la cara de la medicina.</target>
+        <target state="translated">Me encanta que nuevos pacientes me encuentren en HealthTap y soliciten citas virtuales conmigo. Esto está cambiando la cara de la medicina.</target>
       </trans-unit>
       <trans-unit id="7682" resname="r788129504" restype="string" datatype="ruby">
         <source>View my Virtual Practice landing page.</source>
@@ -7414,7 +7414,7 @@
     <body>
       <trans-unit id="1277" resname="r370192362" restype="string" datatype="ruby">
         <source>I love that HealthTap is backed by doctors in all areas of health, so I know the information I find is validated. I,m not going online in the middle of the night and getting some crazy parent. I also love that you can connect with your doctor on HealthTap or with the other doctor,s at their practice so in-and-out of the office, I feel at ease.</source>
-        <target state="translated">Amo que HealthTap esté respaldada por doctores en todas las áreas de la salud, así sé que la información que encuentro es válida. No voy a estar en línea a la mitad de la noche y me va a tocar un padre loco. También amo que puedes conectarte con tu doctor en HealthTap o con los otros doctores en sus consultorios dentro y fuera de la oficina, me siento tranquilo.</target>
+        <target state="translated">Me encanta que HealthTap esté respaldada por doctores en todas las áreas de la salud, así sé que la información que encuentro es válida. No voy a estar en línea a la mitad de la noche y me va a tocar un padre loco. También amo que puedes conectarte con tu doctor en HealthTap o con los otros doctores en sus consultorios dentro y fuera de la oficina, me siento tranquilo.</target>
       </trans-unit>
       <trans-unit id="1278" resname="r227048682" restype="string" datatype="ruby">
         <source>Leah D.</source>
@@ -9721,7 +9721,7 @@
     <body>
       <trans-unit id="1901" resname="r899361143" restype="string" datatype="ruby">
         <source>Learn more about members</source>
-        <target state="translated">Aprender más acerca de miembros</target>
+        <target state="translated">Saber más acerca de miembros</target>
       </trans-unit>
       <trans-unit id="1902" resname="r412671705" restype="string" datatype="ruby">
         <source>Members</source>
@@ -9749,7 +9749,7 @@
       </trans-unit>
       <trans-unit id="1908" resname="r839013275" restype="string" datatype="ruby">
         <source>Learn more about employers &amp; insurers</source>
-        <target state="translated">Aprender más acerca de empleadores &amp; aseguradores</target>
+        <target state="translated">Saber más acerca de empleadores &amp; aseguradores</target>
       </trans-unit>
       <trans-unit id="1909" resname="r499217305" restype="string" datatype="ruby">
         <source>Employers &amp; Insurers</source>
@@ -9757,11 +9757,11 @@
       </trans-unit>
       <trans-unit id="1910" resname="r111781423" restype="string" datatype="ruby">
         <source>Lower costs and improve productivity &amp; satisfaction by providing the right care at the right cost at the right time</source>
-        <target state="translated">Reduce los costos y mejora productividad y satisfacción brindando la atención adecuada al costo adecuado en el momento adecuado</target>
+        <target state="translated">Reduce los costos e incrementa la productividad y la satisfacción, brindando la atención adecuada, al costo adecuado, en el momento adecuado</target>
       </trans-unit>
       <trans-unit id="1911" resname="r222053641" restype="string" datatype="ruby">
         <source>Learn more about doctors</source>
-        <target state="translated">Aprender más acerca de doctores</target>
+        <target state="translated">Saber más acerca de doctores</target>
       </trans-unit>
       <trans-unit id="1912" resname="r799436858" restype="string" datatype="ruby">
         <source>Enhance your reputation, grow your practice</source>
@@ -9769,7 +9769,7 @@
       </trans-unit>
       <trans-unit id="1913" resname="r107502447" restype="string" datatype="ruby">
         <source>Learn more about government &amp; population managers</source>
-        <target state="translated">Aprender más acerca de directores de población y gobierno</target>
+        <target state="translated">Saber más acerca de directores de población y gobierno</target>
       </trans-unit>
       <trans-unit id="1914" resname="r690382453" restype="string" datatype="ruby">
         <source>Government &amp; Population Managers</source>
@@ -9781,7 +9781,7 @@
       </trans-unit>
       <trans-unit id="1916" resname="r603684140" restype="string" datatype="ruby">
         <source>Learn more about developers</source>
-        <target state="translated">Aprender más acerca de desarrolladores</target>
+        <target state="translated">Saber más acerca de desarrolladores</target>
       </trans-unit>
       <trans-unit id="1917" resname="r974419084" restype="string" datatype="ruby">
         <source>Developers</source>
@@ -42616,7 +42616,7 @@
       </trans-unit>
       <trans-unit id="9879" resname="Make an appointment with" restype="string" datatype="javascript">
         <source>Make an appointment with</source>
-        <target state="translated">Hacer una cita con</target>
+        <target state="translated">Tener una consulta con</target>
       </trans-unit>
       <trans-unit id="9880" resname="Please choose your preferred length for a consultation" restype="string" datatype="javascript">
         <source>Please choose your preferred length for a consultation</source>

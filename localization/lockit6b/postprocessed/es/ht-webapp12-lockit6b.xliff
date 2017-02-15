@@ -2693,19 +2693,19 @@
       </trans-unit>
       <trans-unit id="2454" resname="r144629454" restype="string" datatype="x-haml">
         <source>becomes more essential to anyone making important decisions about health and well-being.</source>
-        <target state="translated">se haga esencial para cualquier persona tomando decisiones importantes sobre salud y bienestar.</target>
+        <target state="translated">se vuelve esencial para cualquier persona que esté tomando decisiones importantes sobre salud y bienestar.</target>
       </trans-unit>
       <trans-unit id="2455" resname="r551762323" restype="string" datatype="x-haml">
         <source>Every day, top doctors grow, deepen, and improve this knowledgebase. As they do this,</source>
-        <target state="translated">Todos los días, los mejores doctores aumenta, profundizan y mejoran esta base de conocimientos. Mientras hacen esto,</target>
+        <target state="translated">Todos los días, los mejores doctores incrementan, profundizan y mejoran esta base de conocimientos. Mientras hacen esto,</target>
       </trans-unit>
       <trans-unit id="2456" resname="r113548532" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health,</source>
-        <target state="translated">está respaldada por doctores en todas las áreas de salud,</target>
+        <target state="translated">esté respaldada por doctores en todas las áreas de salud,</target>
       </trans-unit>
       <trans-unit id="2457" resname="r461675722" restype="string" datatype="x-haml">
         <source>I love that</source>
-        <target state="translated">Amo que</target>
+        <target state="translated">Me encanta que</target>
       </trans-unit>
       <trans-unit id="2458" resname="r640492638" restype="string" datatype="x-haml">
         <source>that you can connect with your doctor on</source>
@@ -3005,7 +3005,7 @@
     <body>
       <trans-unit id="2516" resname="r204214811" restype="string" datatype="x-haml">
         <source>HealthTap’s technology and integration teams are transforming fragmented complex systems into unified, and interoperable systems that are consumer-centric, constantly learning and smart.</source>
-        <target state="translated">Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados a sistemas unificados e interoperables que son centrados en el consumidor, de aprendizaje constante e inteligentes.</target>
+        <target state="translated">Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados en sistemas unificados e interactivos, que se centran en el consumidor, con un aprendizaje constante e inteligentes.</target>
       </trans-unit>
     </body>
   </file>
@@ -3037,7 +3037,7 @@
       </trans-unit>
       <trans-unit id="2526" resname="r832776716" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health, so I know the information I</source>
-        <target state="translated">está respaldada por doctores en todas las áreas de salud, así que sé que la información que yo</target>
+        <target state="translated">esté respaldada por doctores en todas las áreas de salud, así que sé que la información que yo</target>
       </trans-unit>
       <trans-unit id="2527" resname="r674098443" restype="string" datatype="x-haml">
         <source>or with the</source>

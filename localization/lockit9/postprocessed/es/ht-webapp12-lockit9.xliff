@@ -744,7 +744,7 @@
     <body>
       <trans-unit id="161" resname="r889655063" restype="string" datatype="ruby">
         <source>Providing 24/7 immediate access to over %{num} top doctors via video, text, or voice</source>
-        <target state="translated">Brindando acceso inmediato, 24/7, a más de %{num} de los mejores doctores a través de video, texto o voz</target>
+        <target state="translated">Brindando acceso inmediato, las 24 hs., los 7 días de la semana, a más de %{num} de los mejores doctores a través de video, texto o voz</target>
       </trans-unit>
     </body>
   </file>
@@ -3151,7 +3151,7 @@
     <body>
       <trans-unit id="681" resname="r21122803" restype="string" datatype="x-haml">
         <source>Global health</source>
-        <target state="translated">Consultorio de Salud Global</target>
+        <target state="translated">Consultorio Medico</target>
       </trans-unit>
     </body>
   </file>

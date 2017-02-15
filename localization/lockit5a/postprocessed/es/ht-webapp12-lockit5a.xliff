@@ -182,19 +182,19 @@
       </trans-unit>
       <trans-unit id="7032" resname="r144629454" restype="string" datatype="x-haml">
         <source>becomes more essential to anyone making important decisions about health and well-being.</source>
-        <target>se haga esencial para cualquier persona tomando decisiones importantes sobre salud y bienestar.</target>
+        <target>se vuelve esencial para cualquier persona que esté tomando decisiones importantes sobre salud y bienestar.</target>
       </trans-unit>
       <trans-unit id="7033" resname="r551762323" restype="string" datatype="x-haml">
         <source>Every day, top doctors grow, deepen, and improve this knowledgebase. As they do this,</source>
-        <target>Todos los días, los mejores doctores aumenta, profundizan y mejoran esta base de conocimientos. Mientras hacen esto,</target>
+        <target>Todos los días, los mejores doctores incrementan, profundizan y mejoran esta base de conocimientos. Mientras hacen esto,</target>
       </trans-unit>
       <trans-unit id="7034" resname="r113548532" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health,</source>
-        <target>está respaldada por doctores en todas las áreas de salud,</target>
+        <target>esté respaldada por doctores en todas las áreas de salud,</target>
       </trans-unit>
       <trans-unit id="7035" resname="r461675722" restype="string" datatype="x-haml">
         <source>I love that</source>
-        <target>Amo que</target>
+        <target>Me encanta que</target>
       </trans-unit>
       <trans-unit id="7036" resname="r640492638" restype="string" datatype="x-haml">
         <source>that you can connect with your doctor on</source>
@@ -298,11 +298,11 @@
       </trans-unit>
       <trans-unit id="7062" resname="r319334065" restype="string" datatype="x-haml">
         <source>We asked, what do people really want when it comes to healthcare?</source>
-        <target>Preguntamos, ¿qué es lo que la gente realmente quiere cuando se trata de atención a la salud?</target>
+        <target>Preguntamos, ¿qué es lo que la gente realmente quiere cuando se trata de atención de la salud?</target>
       </trans-unit>
       <trans-unit id="7063" resname="r413262416" restype="string" datatype="x-haml">
         <source>We took our aggregate decades of medical and computer science expertise, our business acumen, and the experience we’ve gained from serving and surveying hundreds of millions of people and hundreds of thousands of doctors over the years, and came to three major conclusions:</source>
-        <target>Tomamos nuestros agregados de décadas de destreza médica y de ciencias computacionales, nuestro visión de negocios, y la experiencia que hemos ganado de servir y encuestar a cientos de millones de personas y cientos de miles de doctores en todo el mundo, y llegamos tres grandes conclusiones:</target>
+        <target>Tomamos el cúmulo de décadas de conocimiento médico y de ciencias de la computación, nuestra visión de los negocios, y la experiencia que hemos ganado de servir y encuestar a cientos de millones de personas y cientos de miles de doctores en todo el mundo, y llegamos a tres grandes conclusiones:</target>
       </trans-unit>
       <trans-unit id="7064" resname="r802585118" restype="string" datatype="x-haml">
         <source>It has to come from the most knowledgeable and trustworthy experts.</source>
@@ -6526,7 +6526,7 @@
       </trans-unit>
       <trans-unit id="7483" resname="r832776716" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health, so I know the information I</source>
-        <target>está respaldada por doctores en todas las áreas de salud, así que sé que la información que yo</target>
+        <target>esté respaldada por doctores en todas las áreas de salud, así que sé que la información que yo</target>
       </trans-unit>
       <trans-unit id="7484" resname="r674098443" restype="string" datatype="x-haml">
         <source>or with the</source>
@@ -14105,11 +14105,11 @@
     <body>
       <trans-unit id="7424" resname="r439736920" restype="string" datatype="x-haml">
         <source>A New Healthcare Experience</source>
-        <target>Una Nueva Experiencia de Atención a la Salud</target>
+        <target>Una Nueva Experiencia de Atención de la Salud</target>
       </trans-unit>
       <trans-unit id="7425" resname="r340712015" restype="string" datatype="x-haml">
         <source>HealthTap is the world’s first Global Health Practice</source>
-        <target>HealthTap es el primer Consultorio de Salud Global</target>
+        <target>HealthTap es el primer Consultorio Medico</target>
       </trans-unit>
     </body>
   </file>
@@ -14129,7 +14129,7 @@
     <body>
       <trans-unit id="7428" resname="r580143816" restype="string" datatype="x-haml">
         <source>A personalized engaging health experience</source>
-        <target>Una atractiva experiencia de salud personalizada</target>
+        <target>Una atractiva experiencia médica personalizada</target>
       </trans-unit>
       <trans-unit id="7429" resname="r731765498" restype="string" datatype="x-haml">
         <source>For everyone at any stage of providing or receiving care, from query to cure</source>
@@ -14161,7 +14161,7 @@
     <body>
       <trans-unit id="7433" resname="r204214811" restype="string" datatype="x-haml">
         <source>HealthTap’s technology and integration teams are transforming fragmented complex systems into unified, and interoperable systems that are consumer-centric, constantly learning and smart.</source>
-        <target>Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados a sistemas unificados e interoperables que son centrados en el consumidor, de aprendizaje constante e inteligentes.</target>
+        <target>Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados en sistemas unificados e interactivos, que se centran en el consumidor, con un aprendizaje constante e inteligentes.</target>
       </trans-unit>
       <trans-unit id="7434" resname="r317955052" restype="string" datatype="x-haml">
         <source>Connected systems are smarter</source>
