@@ -15485,7 +15485,7 @@
     <body>
       <trans-unit id="8047" resname="r737183367" restype="string" datatype="x-haml">
         <source>For questions or feedback about using</source>
-        <target>Para preguntas o comentarios acerca de usar</target>
+        <target>Para preguntas o comentarios sobre el uso de</target>
       </trans-unit>
       <trans-unit id="8048" resname="r998282891" restype="string" datatype="x-haml">
         <source>Come Visit Us!</source>

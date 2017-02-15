@@ -3557,7 +3557,7 @@
       </trans-unit>
       <trans-unit id="2662" resname="r737183367" restype="string" datatype="x-haml">
         <source>For questions or feedback about using</source>
-        <target state="translated">Para preguntas o comentarios acerca de usar</target>
+        <target state="translated">Para preguntas o comentarios sobre el uso de</target>
       </trans-unit>
     </body>
   </file>
