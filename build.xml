@@ -226,6 +226,10 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<run script="${build.test}/testUtils.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
 
+	<target name="debug.utils" description="Debug only the tests for the utils">
+		<debug script="${build.test}/testUtils.js" dir="${build.test}"/>
+	</target>
+
 	<target name="test.javascriptfile" description="Run only the tests for the JavaScript file object">
 		<run script="${build.test}/testJavaScriptFile.js" executable="${nodeunit}/bin/nodeunit" dir="${build.test}" args="" />
 	</target>
@@ -370,7 +374,7 @@ Copyright © 2015-2016, Translation Circle, Inc., All Right Reserved.
 		<debug script="${build.test}/testPseudoBritish.js" dir="${build.test}"/>
 	</target>
 
-	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype">
+	<target name="test" depends="test.translationset,test.set,test.resourcestring,test.resourcearray,test.resourceplural,test.javafile,test.javafiletype,test.dbtranslationset,test.androidlayoutfile,test.androidlayoutfiletype,test.androidresourcefile,test.androidresourcefiletype,test.xliff,test.localrepository,test.utils,test.javascriptfiletype,test.javascriptfile,test.htmltemplatefile,test.htmltemplatefiletype,test.javascriptresourcefile,test.javascriptresourcefiletype,test.objectivecfile,test.objectivecfiletype,test.iosstringsfile,test.iosstringsfiletype,test.rubyfile,test.rubyfiletype,test.yamlfiletype,test.yamlfile,test.hamlfiletype,test.yamlresourcefile,test.yamlresourcefiletype,test.pseudobritish">
 	</target>
 
 	<macrodef name="runsql">

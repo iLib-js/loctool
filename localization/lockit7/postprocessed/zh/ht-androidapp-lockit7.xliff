@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="2" resname="symptom_condition_back_description" restype="string" datatype="x-android-resource">
         <source>Would you like to start over with new symptoms or edit your current symptoms?</source>
-        <target>您希望重新开始新的症状还是编辑您当前的症状？</target>
+        <target>您希望重新开始新的症状还是编辑您的当前症状？</target>
       </trans-unit>
       <trans-unit id="3" resname="symptom_condition_back_start_over" restype="string" datatype="x-android-resource">
         <source>Start Over</source>
@@ -24,7 +24,7 @@
     <body>
       <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="other">
         <source>Thanks! %d symptoms added.\nAny additional symptoms?</source>
-        <target>谢谢！已添加%d个症状。\n还有其他症状吗？</target>
+        <target>谢谢！已添加%d个症状。\n还有更多症状吗？</target>
       </trans-unit>
     </body>
   </file>

@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="r431194129" restype="string" datatype="java">
         <source>Enter name, specialty, or topic</source>
-        <target>输入姓名，专科或话题</target>
+        <target>输入姓名，专科，或话题</target>
       </trans-unit>
       <trans-unit id="2" resname="r713954102" restype="string" datatype="java">
         <source>{doctor_name} invited.</source>
@@ -22,7 +22,7 @@
         <source>Invite others to session</source>
         <target>邀请其他人加入会议</target>
       </trans-unit>
-      <trans-unit id="5" resname="r236672717" restype="string" datatype="java">
+      <trans-unit id="5" resname="r812721282" restype="string" datatype="java">
         <source>Join my consult with:</source>
         <target>加入我的咨询：</target>
       </trans-unit>
@@ -30,33 +30,33 @@
         <source>How would you like to invite</source>
         <target>您希望如何邀请</target>
       </trans-unit>
-      <trans-unit id="7" resname="r412453752" restype="string" datatype="java">
+      <trans-unit id="7" resname="r796565643" restype="string" datatype="java">
         <source>Share via:</source>
         <target>分享：</target>
       </trans-unit>
       <trans-unit id="8" resname="r202246463" restype="string" datatype="java">
         <source>Failed to remove {person_name}: {message}</source>
-        <target>删除失败{person_name}:{message}</target>
+        <target>删除{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="9" resname="r425723870" restype="string" datatype="java">
         <source>Failed to remove {person_name}</source>
-        <target>删除失败{person_name}</target>
+        <target>删除{person_name}失败</target>
       </trans-unit>
       <trans-unit id="10" resname="r211395157" restype="string" datatype="java">
         <source>Failed to promote {person_name}: {message}</source>
-        <target>升级失败{person_name}:{message}</target>
+        <target>升级{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="11" resname="r653015505" restype="string" datatype="java">
         <source>Failed to promote {person_name}</source>
-        <target>升级失败{person_name}</target>
+        <target>升级{person_name}失败</target>
       </trans-unit>
       <trans-unit id="12" resname="r728008924" restype="string" datatype="java">
         <source>Failed to call {person_name}: {message}</source>
-        <target>呼叫失败 {person_name}:{message}</target>
+        <target>呼叫 {person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="13" resname="r260271836" restype="string" datatype="java">
         <source>Failed to call {person_name}</source>
-        <target>呼叫失败{person_name}</target>
+        <target>呼叫{person_name}失败</target>
       </trans-unit>
     </body>
   </file>
@@ -88,27 +88,27 @@
       </trans-unit>
       <trans-unit id="19" resname="r475455417" restype="string" datatype="java">
         <source>Transcript</source>
-        <target>复印件</target>
+        <target>记录副本</target>
         <note annotates="source">This refers to medical consult transcript</note>
       </trans-unit>
       <trans-unit id="20" resname="r388976557" restype="string" datatype="java">
         <source>Speakerphone on</source>
-        <target>打开扬声器</target>
+        <target>扬声器打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the speakerphone</note>
       </trans-unit>
       <trans-unit id="21" resname="r894038144" restype="string" datatype="java">
         <source>Speakerphone off</source>
-        <target>关闭扬声器</target>
+        <target>扬声器关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
       </trans-unit>
       <trans-unit id="22" resname="r732893650" restype="string" datatype="java">
         <source>Microphone on</source>
-        <target>打开麦克风</target>
+        <target>麦克风打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
       </trans-unit>
       <trans-unit id="23" resname="r66962854" restype="string" datatype="java">
         <source>Microphone off</source>
-        <target>关闭麦克风</target>
+        <target>麦克风关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
       </trans-unit>
       <trans-unit id="24" resname="r898356852" restype="string" datatype="java">
@@ -129,7 +129,7 @@
     <body>
       <trans-unit id="27" resname="r1052400974" restype="string" datatype="java">
         <source>You are currently on hold</source>
-        <target>您目前处于暂停状态</target>
+        <target>您目前处于等候接听状态</target>
       </trans-unit>
     </body>
   </file>
@@ -152,13 +152,13 @@
   <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="30" resname="r717299647" restype="string" datatype="java">
-        <source>You haven&apos;t selected a stethoscope yet</source>
+        <source>You haven't selected a stethoscope yet</source>
         <target>您尚未选择听诊器</target>
       </trans-unit>
       <trans-unit id="31" resname="r195753892" restype="string" datatype="java">
         <source>{sound_track_id}, Len: %d</source>
         <target>{sound_track_id}, Len:%d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="java">
         <source>Select a track you want to download</source>
@@ -180,7 +180,7 @@
         <source>Error occurred while reading audio</source>
         <target>读取音频时出错</target>
       </trans-unit>
-      <trans-unit id="37" resname="r98241011" restype="string" datatype="java">
+      <trans-unit id="37" resname="r902851796" restype="string" datatype="java">
         <source>Downloaded to:</source>
         <target>下载到：</target>
       </trans-unit>
@@ -192,9 +192,9 @@
         <source>Failed to download pdf</source>
         <target>无法下载pdf</target>
       </trans-unit>
-      <trans-unit id="39" resname="r324623762" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target>诊断码：\n</target>
+      <trans-unit id="39" resname="r795802560" restype="string" datatype="java">
+        <source>Diagnosis codes:</source>
+        <target>诊断代码：</target>
       </trans-unit>
     </body>
   </file>
@@ -218,11 +218,11 @@
       </trans-unit>
       <trans-unit id="43" resname="r48889349" restype="string" datatype="java">
         <source>Delivered on {time}</source>
-        <target>在{time}发送</target>
+        <target>已在{time}发送</target>
       </trans-unit>
       <trans-unit id="44" resname="r1062842433" restype="string" datatype="java">
         <source>Read on {time}</source>
-        <target>在{time}读取</target>
+        <target>{time}已读</target>
       </trans-unit>
     </body>
   </file>
@@ -291,7 +291,7 @@
       </trans-unit>
       <trans-unit id="57" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target>没有关系</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Positive Button text. Give up removing an attachment.</note>
       </trans-unit>
     </body>

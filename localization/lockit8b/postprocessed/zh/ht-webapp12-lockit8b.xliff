@@ -26,13 +26,13 @@
   </file>
   <file original="app/views/general_mailer/member_welcome_password.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="39" resname="r97093231" restype="string" datatype="ruby">
+      <trans-unit id="39" resname="r651103158" restype="string" datatype="ruby">
         <source>We’re so excited to have you join us on a journey to a healthier, happier life and feeling good every day.</source>
         <target state="translated">我们很高兴能有您加入我们通向更健康美好的生活的旅程，很高兴能让您们每天都过得很好。</target>
       </trans-unit>
-      <trans-unit id="40" resname="r159716466" restype="string" datatype="ruby">
+      <trans-unit id="40" resname="r233052603" restype="string" datatype="ruby">
         <source>You now have instant access to millions of doctor answers, tips, news, app recommendations, and checklists</source>
-        <target state="translated">您现在可以即时访问数百万医生回复，小贴士，新闻，应用推荐和检查清单。</target>
+        <target state="translated">您现在可以即时访问数百万医生回复，小贴士，新闻，应用程序推荐和检查清单。</target>
       </trans-unit>
     </body>
   </file>
@@ -44,7 +44,7 @@
       </trans-unit>
       <trans-unit id="66" resname="r951784064" restype="string" datatype="ruby">
         <source>Managing a Condition</source>
-        <target state="translated">管理一个条件/健康状况</target>
+        <target state="translated">管理症状/健康状况</target>
       </trans-unit>
     </body>
   </file>
@@ -116,11 +116,11 @@
       </trans-unit>
       <trans-unit id="103" resname="r683821345" restype="string" datatype="ruby">
         <source>every other hours, while awake</source>
-        <target state="translated">醒的时，每隔一小时</target>
+        <target state="translated">醒着时，每隔一小时</target>
       </trans-unit>
       <trans-unit id="151" resname="r40246091" restype="string" datatype="ruby">
         <source>hourly, while awake</source>
-        <target state="translated">醒的时，每小时</target>
+        <target state="translated">醒着时，每小时</target>
       </trans-unit>
       <trans-unit id="164" resname="r123414641" restype="string" datatype="ruby">
         <source>once every night</source>
@@ -154,7 +154,7 @@
   </file>
   <file original="app/models/group.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
-      <trans-unit id="180" resname="r1019979656" restype="string" datatype="ruby">
+      <trans-unit id="180" resname="r74609673" restype="string" datatype="ruby">
         <source>&lt;p&gt;&lt;a href=&gt;Join Group&lt;/a&gt; to become a member of %{group_name} on HealthTap.&lt;/p&gt;
                   &lt;br/&gt;Thanks!
                   &lt;br/&gt;%{inviter}</source>

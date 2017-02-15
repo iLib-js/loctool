@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/Classes/UI/FGDocScoreLayerView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="8" resname="Agrees, votes, and recommendations from other experts" restype="string" datatype="x-objective-c">
+        <source>Agrees, votes, and recommendations from other experts</source>
+        <target state="accepted">来自其他医生的赞同，投票和评论</target>
+      </trans-unit>
+      <trans-unit id="9" resname="Years of experience" restype="string" datatype="x-objective-c">
+        <source>Years of experience</source>
+        <target state="accepted">多年的经验</target>
+      </trans-unit>
+      <trans-unit id="10" resname="Quality of experts who refer to them" restype="string" datatype="x-objective-c">
+        <source>Quality of experts who refer to them</source>
+        <target state="accepted">参考他们的专家质量</target>
+      </trans-unit>
+      <trans-unit id="11" resname="Where the expert studied and trained" restype="string" datatype="x-objective-c">
+        <source>Where the expert studied and trained</source>
+        <target state="accepted">专家曾经学习和培训的地方</target>
+      </trans-unit>
+      <trans-unit id="12" resname="Board certification(s)" restype="string" datatype="x-objective-c">
+        <source>Board certification(s)</source>
+        <target state="accepted">美国医学委员会认证医</target>
+      </trans-unit>
+      <trans-unit id="13" resname="Other professional accomplishments (such as peer reviewed publications and awards)" restype="string" datatype="x-objective-c">
+        <source>Other professional accomplishments (such as peer reviewed publications and awards)</source>
+        <target state="accepted">其他专业成就 (如同行评审的出版物和奖项)</target>
+      </trans-unit>
+      <trans-unit id="14" resname="Thanks, votes, and recommendations from members" restype="string" datatype="x-objective-c">
+        <source>Thanks, votes, and recommendations from members</source>
+        <target state="accepted">来自会员的感谢，投票和建议</target>
+      </trans-unit>
+      <trans-unit id="15" resname="Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:\n\n" restype="string" datatype="x-objective-c">
+        <source>Every medical expert on HealthTap has a DocScore. This is a reputation score from 0 to 5 stars that reflects the peer-recognition that this doctor has received on HealthTap as well as relevant public information about this expert, including:\n\n</source>
+        <target state="accepted">每一个在HealthTap上的医学专家都有一个医者评分信誉评分从0到5星，反应了该医生在HealthTap上获得的同行认可，以及关于他的相关公开信息，包括:\n\n</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/iPadNative/Goals/FGGoalsBaseViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" restype="string" datatype="x-objective-c">
+        <source>We'll share more tips and checklists to help you with "%@"</source>
+        <target state="accepted">们会分享更多的小贴士和清单来帮助您"%@"</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/iPadNative/Checklist/FGIpadChecklistViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="Do you want to remove this action from your &quot;To Do&quot; list?" restype="string" datatype="x-objective-c">
+        <source>Do you want to remove this action from your "To Do" list?</source>
+        <target state="accepted">是否想将这项活动移出待做清单?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGNuxSignupViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="6" resname="Please download the &quot;HealthTap for Doctors&quot; app to login or signup as a doctor with a valid US medical license" restype="string" datatype="x-objective-c">
+        <source>Please download the "HealthTap for Doctors" app to login or signup as a doctor with a valid US medical license</source>
+        <target state="accepted">请下载"HealthTap for Doctors"应用程序登录或以美国有效的医疗执照注册成为医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGLiveChatViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="7" resname="A device connection code allows another app or medical device to securely send health data to this patient&apos;s chart. If you have an app requesting a &quot;device connection code&quot; or &quot;verification code&quot;, please use the code displayed here." restype="string" datatype="x-objective-c">
+        <source>A device connection code allows another app or medical device to securely send health data to this patient's chart. If you have an app requesting a "device connection code" or "verification code", please use the code displayed here.</source>
+        <target state="accepted">设备连接代码允许其他应用程序或医疗设备将健康数据安全地发送到该患者的图表. 如果您的应用请求了"设备连接代码”或“验证码"，请使用此处显示的代码.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTRateConsultCommentsViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="17" resname="Please provide details regarding &quot;%@&quot; (Optional)" restype="string" datatype="x-objective-c">
+        <source>Please provide details regarding "%@" (Optional)</source>
+        <target state="accepted">请提供有关“%@”的详细信息"可选"</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTBaseTutorialView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="18" resname="When you need to see a doctor,\nsimply tap the &quot;DocNow&quot; button\non your Apple Watch or iPhone" restype="string" datatype="x-objective-c">
+        <source>When you need to see a doctor,\nsimply tap the "DocNow" button\non your Apple Watch or iPhone</source>
+        <target state="accepted">当您需要见一位医生，只要在Apple Watch或iPhone上简单按下"DocNow"的按钮即可</target>
+        <note annotates="source">Tutorial step 1</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTImportContactsMainViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="13" resname="Please allow HealthTap to access your address book by going to\nSettings -&gt; Privacy -&gt; Contacts" restype="string" datatype="x-objective-c">
+        <source>Please allow HealthTap to access your address book by going to\nSettings -&gt; Privacy -&gt; Contacts</source>
+        <target state="accepted">请改变以下设定来允许HealthTap访问您的通讯录:\n设置 -&gt; 隐私 -&gt; 通讯录</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

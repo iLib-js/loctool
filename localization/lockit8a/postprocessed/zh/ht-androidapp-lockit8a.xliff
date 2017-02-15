@@ -4,11 +4,11 @@
     <body>
       <trans-unit id="20" resname="body_head" restype="string" datatype="x-android-resource">
         <source>Head</source>
-        <target state="translated">头</target>
+        <target state="translated">头部</target>
       </trans-unit>
       <trans-unit id="21" resname="body_eye" restype="string" datatype="x-android-resource">
         <source>Eye</source>
-        <target state="translated">眼睛</target>
+        <target state="translated">眼部</target>
       </trans-unit>
       <trans-unit id="22" resname="body_nose" restype="string" datatype="x-android-resource">
         <source>Nose</source>
@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="23" resname="body_mouth" restype="string" datatype="x-android-resource">
         <source>Mouth</source>
-        <target state="translated">口腔</target>
+        <target state="translated">嘴巴</target>
       </trans-unit>
       <trans-unit id="24" resname="body_neck_front" restype="string" datatype="x-android-resource">
         <source>Neck</source>
@@ -28,7 +28,7 @@
       </trans-unit>
       <trans-unit id="26" resname="body_ear" restype="string" datatype="x-android-resource">
         <source>Ear</source>
-        <target state="translated">听觉</target>
+        <target state="translated">耳朵</target>
       </trans-unit>
       <trans-unit id="27" resname="body_chest" restype="string" datatype="x-android-resource">
         <source>Chest</source>
@@ -36,11 +36,11 @@
       </trans-unit>
       <trans-unit id="28" resname="body_shoulder" restype="string" datatype="x-android-resource">
         <source>Shoulder</source>
-        <target state="translated">肩</target>
+        <target state="translated">肩部</target>
       </trans-unit>
       <trans-unit id="29" resname="body_arm" restype="string" datatype="x-android-resource">
         <source>Arm</source>
-        <target state="translated">胳膊</target>
+        <target state="translated">手臂</target>
       </trans-unit>
       <trans-unit id="30" resname="body_upper_abdomen" restype="string" datatype="x-android-resource">
         <source>Upper Abdomen</source>
@@ -60,7 +60,7 @@
       </trans-unit>
       <trans-unit id="34" resname="body_leg" restype="string" datatype="x-android-resource">
         <source>Leg</source>
-        <target state="translated">腿</target>
+        <target state="translated">腿部</target>
       </trans-unit>
       <trans-unit id="35" resname="body_hand" restype="string" datatype="x-android-resource">
         <source>Hand</source>

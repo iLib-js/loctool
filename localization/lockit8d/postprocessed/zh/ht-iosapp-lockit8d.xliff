@@ -9,7 +9,7 @@
       </trans-unit>
       <trans-unit id="11" resname="Resolution" restype="string" datatype="x-objective-c">
         <source>Resolution</source>
-        <target state="translated">分辨率</target>
+        <target state="translated"></target>
         <note annotates="source">search bar place holder, format: Search Resolution</note>
       </trans-unit>
     </body>

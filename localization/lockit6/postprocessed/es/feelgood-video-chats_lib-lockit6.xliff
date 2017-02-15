@@ -22,7 +22,7 @@
         <source>Invite others to session</source>
         <target>Invita a otros a sesión</target>
       </trans-unit>
-      <trans-unit id="5" resname="r236672717" restype="string" datatype="java">
+      <trans-unit id="5" resname="r812721282" restype="string" datatype="java">
         <source>Join my consult with:</source>
         <target>Úneta a mi consulta con:</target>
       </trans-unit>
@@ -30,7 +30,7 @@
         <source>How would you like to invite</source>
         <target>Cómo te gustaría invitar</target>
       </trans-unit>
-      <trans-unit id="7" resname="r412453752" restype="string" datatype="java">
+      <trans-unit id="7" resname="r796565643" restype="string" datatype="java">
         <source>Share via:</source>
         <target>Compatir vía:</target>
       </trans-unit>
@@ -152,13 +152,13 @@
   <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="30" resname="r717299647" restype="string" datatype="java">
-        <source>You haven&apos;t selected a stethoscope yet</source>
+        <source>You haven't selected a stethoscope yet</source>
         <target>No has seleccionado un estetoscopio aún</target>
       </trans-unit>
       <trans-unit id="31" resname="r195753892" restype="string" datatype="java">
         <source>{sound_track_id}, Len: %d</source>
         <target>{sound_track_id}, Len: %d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="java">
         <source>Select a track you want to download</source>
@@ -180,7 +180,7 @@
         <source>Error occurred while reading audio</source>
         <target>Ocurrió un error mientras se leía audio</target>
       </trans-unit>
-      <trans-unit id="37" resname="r98241011" restype="string" datatype="java">
+      <trans-unit id="37" resname="r902851796" restype="string" datatype="java">
         <source>Downloaded to:</source>
         <target>Descargado a:</target>
       </trans-unit>
@@ -192,9 +192,9 @@
         <source>Failed to download pdf</source>
         <target>No se ha podido descargar pdf</target>
       </trans-unit>
-      <trans-unit id="39" resname="r324623762" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target>Códigos de Diagnóstico:\n</target>
+      <trans-unit id="39" resname="r795802560" restype="string" datatype="java">
+        <source>Diagnosis codes:</source>
+        <target>Códigos de Diagnóstico:</target>
       </trans-unit>
     </body>
   </file>

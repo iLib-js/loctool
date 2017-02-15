@@ -1,10 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2">
+  <file original="android/res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="1" resname="r812721282" restype="string" datatype="x-android-resource">
+        <source>Join my consult with:</source>
+        <target state="translated">Úneta a mi consulta con:</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r796565643" restype="string" datatype="x-android-resource">
+        <source>Share via:</source>
+        <target state="translated">Compatir vía:</target>
+      </trans-unit>
+      <trans-unit id="3" resname="r902851796" restype="string" datatype="x-android-resource">
+        <source>Downloaded to:</source>
+        <target state="translated">Descargado a:</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r795802560" restype="string" datatype="x-android-resource">
+        <source>Diagnosis codes:</source>
+        <target state="translated">Códigos de Diagnóstico:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/Util.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="1" resname="r179401187" restype="string" datatype="java">
+        <source>Dr. {doctor_name}</source>
+        <target state="translated">Dr. {doctor_name}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="2" resname="full_name_format" restype="string" datatype="x-android-resource">
+        <source>{first_name} {last_name}</source>
+        <target state="translated">{first_name} {last_name}</target>
+        <note annotates="source">This refers to a person's full name. Translate it into local naming format.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/src/com/healthtap/live_consult/Util.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="1" resname="r179401187" restype="string" datatype="java">
+        <source>Dr. {doctor_name}</source>
+        <target state="translated">{doctor_name}医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="2" resname="full_name_format" restype="string" datatype="x-android-resource">
+        <source>{first_name} {last_name}</source>
+        <target state="translated">{last_name}{first_name}</target>
+        <note annotates="source">This refers to a person's full name. Translate it into local naming format.</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="android/res/layout/layout_refer_individual.xml" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="1" resname="text__test_Known_for_blah" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41;Known for blah</source>
-        <target>&#40;prueba&#41;Conocido por blah</target>
+        <source>(test)Known for blah</source>
+        <target>(prueba)Conocido por blah</target>
       </trans-unit>
     </body>
   </file>
@@ -30,7 +84,7 @@
         <source>Invite others to session</source>
         <target>Invita a otros a sesión</target>
       </trans-unit>
-      <trans-unit id="6" resname="r236672717" restype="string" datatype="java">
+      <trans-unit id="6" resname="r812721282" restype="string" datatype="java">
         <source>Join my consult with:</source>
         <target>Úneta a mi consulta con:</target>
       </trans-unit>
@@ -38,7 +92,7 @@
         <source>How would you like to invite</source>
         <target>Cómo te gustaría invitar</target>
       </trans-unit>
-      <trans-unit id="8" resname="r412453752" restype="string" datatype="java">
+      <trans-unit id="8" resname="r796565643" restype="string" datatype="java">
         <source>Share via:</source>
         <target>Compatir vía:</target>
       </trans-unit>
@@ -160,13 +214,13 @@
   <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="31" resname="r717299647" restype="string" datatype="java">
-        <source>You haven&apos;t selected a stethoscope yet</source>
+        <source>You haven't selected a stethoscope yet</source>
         <target>No has seleccionado un estetoscopio aún</target>
       </trans-unit>
       <trans-unit id="32" resname="r195753892" restype="string" datatype="java">
         <source>{sound_track_id}, Len: %d</source>
         <target>{sound_track_id}, Len: %d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="33" resname="r606329135" restype="string" datatype="java">
         <source>Select a track you want to download</source>
@@ -188,7 +242,7 @@
         <source>Error occurred while reading audio</source>
         <target>Ocurrió un error mientras se leía audio</target>
       </trans-unit>
-      <trans-unit id="38" resname="r98241011" restype="string" datatype="java">
+      <trans-unit id="38" resname="r902851796" restype="string" datatype="java">
         <source>Downloaded to:</source>
         <target>Descargado a:</target>
       </trans-unit>
@@ -200,9 +254,9 @@
         <source>Failed to download pdf</source>
         <target>No se ha podido descargar pdf</target>
       </trans-unit>
-      <trans-unit id="40" resname="r324623762" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target>Códigos de Diagnóstico:\n</target>
+      <trans-unit id="40" resname="r795802560" restype="string" datatype="java">
+        <source>Diagnosis codes:</source>
+        <target>Códigos de Diagnóstico:</target>
       </trans-unit>
     </body>
   </file>
@@ -424,15 +478,15 @@
         <target>Esperando a paciente para conectar...</target>
       </trans-unit>
       <trans-unit id="86" resname="live_consult_waiting_for_patient_live_video" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s video camera…</source>
+        <source>One moment while we connect to the patient\'s video camera…</source>
         <target>Un momento mientras nos conectamos a la video cámara del paciente...</target>
       </trans-unit>
       <trans-unit id="87" resname="live_consult_waiting_for_patient_live_audio" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s microphone…</source>
+        <source>One moment while we connect to the patient\'s microphone…</source>
         <target>Un momento mientras nos conectamos al micrófono del paciente...</target>
       </trans-unit>
       <trans-unit id="88" resname="live_consult_waiting_for_patient_live_text" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s text chat…</source>
+        <source>One moment while we connect to the patient\'s text chat…</source>
         <target>Un momento mientras nos conectamos al chat del paciente...</target>
       </trans-unit>
       <trans-unit id="89" resname="live_consult_waiting_for_doctor_text" restype="string" datatype="x-android-resource">
@@ -440,15 +494,15 @@
         <target>Esperando a doctor para conectar...</target>
       </trans-unit>
       <trans-unit id="90" resname="live_consult_waiting_for_doctor_live_video" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s video camera…</source>
+        <source>One moment while we connect to the doctor\'s video camera…</source>
         <target>Un momento mientras nos conectamos a la video cámara del doctor...</target>
       </trans-unit>
       <trans-unit id="91" resname="live_consult_waiting_for_doctor_live_audio" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s microphone…</source>
+        <source>One moment while we connect to the doctor\'s microphone…</source>
         <target>Un momento mientras nos conectamos al micrófono del doctor...</target>
       </trans-unit>
       <trans-unit id="92" resname="live_consult_waiting_for_doctor_live_text" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s text chat…</source>
+        <source>One moment while we connect to the doctor\'s text chat…</source>
         <target>Un momento mientras nos conectamos al chat del doctor...</target>
       </trans-unit>
       <trans-unit id="93" resname="keyboard_done_label" restype="string" datatype="x-android-resource">
@@ -577,11 +631,11 @@
         <target>Encontrar especialista</target>
       </trans-unit>
       <trans-unit id="123" resname="transcript_refer_specialist_text" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</source>
+        <source>I\'d like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</source>
         <target>Me gustaría referirte a &lt;b&gt;{specialist}&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="124" resname="transcript_refer_specialist_text_hmo" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;. As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</source>
+        <source>I\'d like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;. As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</source>
         <target>Me gustaría referir a &lt;b&gt;{specialist}&lt;/b&gt; Coomo un miembro de {network_name}, porfavor consulta con tu médico de atención primaria antes de ver a cualquier especialista.</target>
       </trans-unit>
       <trans-unit id="125" resname="soap_note_title_text" restype="string" datatype="x-android-resource">
@@ -589,12 +643,12 @@
         <target>Nota Resumen</target>
       </trans-unit>
       <trans-unit id="126" resname="soap_note_history_text" restype="string" datatype="x-android-resource">
-        <source>Subjective &#40;History&#41;:</source>
-        <target>Subjetivo &#40;Historia&#41;:</target>
+        <source>Subjective (History):</source>
+        <target>Subjetivo (Historia):</target>
       </trans-unit>
       <trans-unit id="127" resname="soap_note_data_text" restype="string" datatype="x-android-resource">
-        <source>Objective &#40;Data&#41;:</source>
-        <target>Objectivo &#40;Datos&#41;:</target>
+        <source>Objective (Data):</source>
+        <target>Objectivo (Datos):</target>
       </trans-unit>
       <trans-unit id="128" resname="soap_note_assessment_text" restype="string" datatype="x-android-resource">
         <source>Assessment:</source>
@@ -609,7 +663,7 @@
         <target>Ver listados</target>
       </trans-unit>
       <trans-unit id="131" resname="public_checklist_title_recommend_text" restype="string" datatype="x-android-resource">
-        <source>I recommend you try {name}\&apos;s checklist on {topic_name}</source>
+        <source>I recommend you try {name}\'s checklist on {topic_name}</source>
         <target>Recomiendo que intentes el listado de {name} acerca de {topic_name}</target>
       </trans-unit>
       <trans-unit id="132" resname="public_checklist_button_text" restype="string" datatype="x-android-resource">
@@ -621,7 +675,7 @@
         <target>Añadido</target>
       </trans-unit>
       <trans-unit id="134" resname="refer_individual_title_text" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer you to:</source>
+        <source>I\'d like to refer you to:</source>
         <target>Me gustaría referirte a:</target>
       </trans-unit>
       <trans-unit id="135" resname="refer_individual_call_text" restype="string" datatype="x-android-resource">
@@ -657,7 +711,7 @@
         <target>Archivos</target>
       </trans-unit>
       <trans-unit id="143" resname="no_previous_uploads" restype="string" datatype="x-android-resource">
-        <source>You haven\&apos;t uploaded any files or photos yet.</source>
+        <source>You haven\'t uploaded any files or photos yet.</source>
         <target>No has subido ningún archivo o foto aún.</target>
       </trans-unit>
       <trans-unit id="144" resname="connection_wrong" restype="string" datatype="x-android-resource">
@@ -685,11 +739,11 @@
         <target>Abandonar consulta</target>
       </trans-unit>
       <trans-unit id="150" resname="end_call_patient_body_text_format" restype="string" datatype="x-android-resource">
-        <source>Would you like to end this consult with {doctor_name}? The doctor hasn\&apos;t finished the session.</source>
+        <source>Would you like to end this consult with {doctor_name}? The doctor hasn\'t finished the session.</source>
         <target>¿Te gustaría terminar esta consulta con {doctor_name}? El doctor no ha terminado la sesión.</target>
       </trans-unit>
       <trans-unit id="151" resname="end_call_patient_body_text" restype="string" datatype="x-android-resource">
-        <source>Would you like to end this consult with the doctor? The doctor hasn\&apos;t finished the session.</source>
+        <source>Would you like to end this consult with the doctor? The doctor hasn\'t finished the session.</source>
         <target>¿Te gustaría terminar esta consulta con el docotr? El doctor no ha terminado la sesión.</target>
       </trans-unit>
       <trans-unit id="152" resname="end_call_doctor_body_text" restype="string" datatype="x-android-resource">
@@ -725,8 +779,8 @@
         <target>0/100</target>
       </trans-unit>
       <trans-unit id="160" resname="description_dialog_hint" restype="string" datatype="x-android-resource">
-        <source>Enter brief description &#40;ex. My chest xray&#41;</source>
-        <target>Ingresar descripción breve &#40;ex. Mi radiografía de tórax&#41;</target>
+        <source>Enter brief description (ex. My chest xray)</source>
+        <target>Ingresar descripción breve (ex. Mi radiografía de tórax)</target>
       </trans-unit>
       <trans-unit id="161" resname="title_remove_credit_card" restype="string" datatype="x-android-resource">
         <source>Are you sure?</source>
@@ -773,15 +827,15 @@
         <target>Cambiar a vista frontal</target>
       </trans-unit>
       <trans-unit id="172" resname="peer_unavailable_text" restype="string" datatype="x-android-resource">
-        <source>There is a problem with {peer_name}\&apos;s connection. One moment while we try to re-connect with {peer_name}.</source>
+        <source>There is a problem with {peer_name}\'s connection. One moment while we try to re-connect with {peer_name}.</source>
         <target>Hay un problema con la conexión de {peer_name}. Un momento mientras tratamos de volver a conectar con {peer_name}.</target>
       </trans-unit>
       <trans-unit id="173" resname="peer_unavailable_text_guest" restype="string" datatype="x-android-resource">
-        <source>There is a problem with the guest\&apos;s connection. One moment while we try to re-connect with the guest.</source>
+        <source>There is a problem with the guest\'s connection. One moment while we try to re-connect with the guest.</source>
         <target>Hay un problema con la conexión del invitado. Un momento mientras tratamos de volver a conectar con el invitado.</target>
       </trans-unit>
       <trans-unit id="174" resname="peer_unavailable_text_doctor" restype="string" datatype="x-android-resource">
-        <source>There is a problem with the doctor\&apos;s connection. One moment while we try to re-connect with the doctor.</source>
+        <source>There is a problem with the doctor\'s connection. One moment while we try to re-connect with the doctor.</source>
         <target>Hay un problema con la conexión del doctor. Un momento mientras tratamos de volver a conectar con el doctor.</target>
       </trans-unit>
       <trans-unit id="175" resname="local_connection_unavailable_text" restype="string" datatype="x-android-resource">
@@ -790,7 +844,7 @@
         <note annotates="source">%s refers to a person</note>
       </trans-unit>
       <trans-unit id="176" resname="disconnect_trigger_text_doctor" restype="string" datatype="x-android-resource">
-        <source>There seems to be a problem with the doctor\&apos;s connection. To continue by phone, please call:</source>
+        <source>There seems to be a problem with the doctor\'s connection. To continue by phone, please call:</source>
         <target>Parace que hay un problema con la conexión del doctor. Para continuar por teléfono, por favor llama a:</target>
       </trans-unit>
       <trans-unit id="177" resname="disconnect_trigger_text_patient" restype="string" datatype="x-android-resource">
@@ -798,7 +852,7 @@
         <target>Parace que hay un problema con tu conexión. Para continuar por teléfono, por favor llama a:</target>
       </trans-unit>
       <trans-unit id="178" resname="disconnect_trigger_text_doc" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source>
+        <source>We\'re offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source>
         <target>Estamos ofreciendo al paciente la opción de continuar esta consulta por teléfono y podemos llamarte en los próximos 2 minutos</target>
       </trans-unit>
       <trans-unit id="179" resname="standard_rates_text" restype="string" datatype="x-android-resource">
@@ -822,7 +876,7 @@
         <target>Intenta otra vez</target>
       </trans-unit>
       <trans-unit id="184" resname="peer_disconnected_im_done_text" restype="string" datatype="x-android-resource">
-        <source>Thanks, I\&apos;m done</source>
+        <source>Thanks, I\'m done</source>
         <target>Gracias, ya terminé</target>
       </trans-unit>
       <trans-unit id="185" resname="expert_peer_disconnected_text" restype="string" datatype="x-android-resource">
@@ -866,7 +920,7 @@
         <target>Subido en {date}</target>
       </trans-unit>
       <trans-unit id="195" resname="attach_file_dialog_error_opening_activity" restype="string" datatype="x-android-resource">
-        <source>Couldn\&apos;t find application to handle this!</source>
+        <source>Couldn\'t find application to handle this!</source>
         <target>¡No se ha podido encontrar aplicación para manejar esto!</target>
       </trans-unit>
       <trans-unit id="196" resname="vidyo_error_dialog_title" restype="string" datatype="x-android-resource">
@@ -878,19 +932,19 @@
         <target>Audio no disponible</target>
       </trans-unit>
       <trans-unit id="198" resname="vidyo_error_dialog_body" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re having trouble establising a video connection on your device. Please continue by chat or try again.</source>
+        <source>We\'re having trouble establising a video connection on your device. Please continue by chat or try again.</source>
         <target>Estamos teniendo problemas para establecer una conexión de video con tu dispositivo. Por favor continúa por chat o intenta otra vez.</target>
       </trans-unit>
       <trans-unit id="199" resname="camera_error_cant_connect" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t connect to camera</source>
+        <source>Can\'t connect to camera</source>
         <target>No se puede conectar a cámara</target>
       </trans-unit>
       <trans-unit id="200" resname="audio_error_cant_connect" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t connect to audio</source>
+        <source>Can\'t connect to audio</source>
         <target>No se puede conectar a audio</target>
       </trans-unit>
       <trans-unit id="201" resname="vidyo_error_audio_dialog_body" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re having trouble establising an audio connection on your device. Please continue by chat or try again.</source>
+        <source>We\'re having trouble establising an audio connection on your device. Please continue by chat or try again.</source>
         <target>Estamos teniendo problemas para establecer una conexión de audio con tu dispositivo. Por favor continúa por chat o intenta otra vez.</target>
       </trans-unit>
       <trans-unit id="202" resname="vidyo_error_dialog_chat" restype="string" datatype="x-android-resource">
@@ -934,8 +988,8 @@
         <target>Intenta otra vez</target>
       </trans-unit>
       <trans-unit id="212" resname="rated_consult_text" restype="string" datatype="x-android-resource">
-        <source>&quot;You rated this consult:&quot;</source>
-        <target>&quot;Calificaste esta consulta:&quot;</target>
+        <source>"You rated this consult:"</source>
+        <target>"Calificaste esta consulta:"</target>
       </trans-unit>
       <trans-unit id="213" resname="rated_consult_update_text" restype="string" datatype="x-android-resource">
         <source>Revise \u203a</source>
@@ -974,11 +1028,11 @@
         <target>Okay</target>
       </trans-unit>
       <trans-unit id="222" resname="background_copy_doctor" restype="string" datatype="x-android-resource">
-        <source>You just left in the middle of a live consult. If you didn\&apos;t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
+        <source>You just left in the middle of a live consult. If you didn\'t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
         <target>Te acabas de ir a la mitad de una consulta en vivo. Si no le has informado ya al paciente que regresarás en breve, por favor hazlo ahora para que el paciente sepa que esperar.</target>
       </trans-unit>
       <trans-unit id="223" resname="background_copy_patient" restype="string" datatype="x-android-resource">
-        <source>You just left in the middle of a live consult. If you didn\&apos;t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source>
+        <source>You just left in the middle of a live consult. If you didn\'t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source>
         <target>Te acabas de ir a la mitad de una consulta en vivo. Si no le has informado ya al doctor que regresarás en breve, por favor hazlo ahora para que el paciente sepa que esperar.</target>
       </trans-unit>
       <trans-unit id="224" resname="camera_permission_rationale" restype="string" datatype="x-android-resource">
@@ -1063,12 +1117,12 @@
         <target>Compartir el enlace</target>
       </trans-unit>
       <trans-unit id="244" resname="text__test__Benzamycin" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; Benzamycin</source>
-        <target>&#40;test&#41; Benzamycin</target>
+        <source>(test) Benzamycin</source>
+        <target>(test) Benzamycin</target>
       </trans-unit>
       <trans-unit id="245" resname="text__test__500_mg__oral_capsules__twice_daily__x200" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; 500 mg, oral capsules, twice daily, x200</source>
-        <target>&#40;test&#41; 500 mg, cápsulas orales, dos veces al día, x200</target>
+        <source>(test) 500 mg, oral capsules, twice daily, x200</source>
+        <target>(test) 500 mg, cápsulas orales, dos veces al día, x200</target>
       </trans-unit>
       <trans-unit id="246" resname="text_These_are_doctor_comments_about_this_medication" restype="string" datatype="x-android-resource">
         <source>These are doctor comments about this medication</source>
@@ -1095,16 +1149,16 @@
         <target>Toca para resumir</target>
       </trans-unit>
       <trans-unit id="252" resname="text_You_complained_of_headache__fever_and_stress__test_" restype="string" datatype="x-android-resource">
-        <source>You complained of headache, fever and stress.&#40;test&#41;</source>
-        <target>Te quejaste de un dolor de cabeza, fiebre y estrés.&#40;prueba&#41;</target>
+        <source>You complained of headache, fever and stress.(test)</source>
+        <target>Te quejaste de un dolor de cabeza, fiebre y estrés.(prueba)</target>
       </trans-unit>
       <trans-unit id="253" resname="text_You_have_an_elevated_heart_rate_and_red_skin___Test_" restype="string" datatype="x-android-resource">
-        <source>You have an elevated heart rate and red skin. &#40;Test&#41;</source>
-        <target>Tienes una frecuencia cardiaca elevada y piel roja. &#40;Prueba&#41;</target>
+        <source>You have an elevated heart rate and red skin. (Test)</source>
+        <target>Tienes una frecuencia cardiaca elevada y piel roja. (Prueba)</target>
       </trans-unit>
       <trans-unit id="254" resname="text_You_likely_have_a_cold__test_" restype="string" datatype="x-android-resource">
-        <source>You likely have a cold.&#40;test&#41;</source>
-        <target>Lo más probable es que tienes un resfriado.&#40;prueba&#41;</target>
+        <source>You likely have a cold.(test)</source>
+        <target>Lo más probable es que tienes un resfriado.(prueba)</target>
       </trans-unit>
       <trans-unit id="255" resname="text_Diagnosis_" restype="string" datatype="x-android-resource">
         <source>Diagnosis:</source>
@@ -1115,32 +1169,32 @@
         <target>Invita a un seguidor</target>
       </trans-unit>
       <trans-unit id="257" resname="text__test_Dr__blah_blah" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41;Dr. blah blah</source>
-        <target>&#40;prueba&#41;Dr. blah blah</target>
+        <source>(test)Dr. blah blah</source>
+        <target>(prueba)Dr. blah blah</target>
       </trans-unit>
       <trans-unit id="258" resname="text__test_blah__blah" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41;blah, blah</source>
-        <target>&#40;prueba&#41;blah, blah</target>
+        <source>(test)blah, blah</source>
+        <target>(prueba)blah, blah</target>
       </trans-unit>
       <trans-unit id="259" resname="text_I_recommend_the_following_medication_" restype="string" datatype="x-android-resource">
         <source>I recommend the following medication:</source>
         <target>Recomiendo el siguiente medicamento:</target>
       </trans-unit>
       <trans-unit id="260" resname="text__test__Walgreens" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; Walgreens</source>
-        <target>&#40;prueba&#41; Walgreens</target>
+        <source>(test) Walgreens</source>
+        <target>(prueba) Walgreens</target>
       </trans-unit>
       <trans-unit id="261" resname="text__test__774_University_Ave_" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; 774 University Ave,</source>
-        <target>&#40;prueba&#41; 774 University Ave,</target>
+        <source>(test) 774 University Ave,</source>
+        <target>(prueba) 774 University Ave,</target>
       </trans-unit>
       <trans-unit id="262" resname="text__test__Palo_Alto__CA_23423" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; Palo Alto, CA 23423</source>
-        <target>&#40;prueba&#41; Palo Alto, CA 23423</target>
+        <source>(test) Palo Alto, CA 23423</source>
+        <target>(prueba) Palo Alto, CA 23423</target>
       </trans-unit>
       <trans-unit id="263" resname="text_1__617__392_838" restype="string" datatype="x-android-resource">
-        <source>1 &#40;617&#41; 392-838</source>
-        <target>1 &#40;617&#41; 392-838</target>
+        <source>1 (617) 392-838</source>
+        <target>1 (617) 392-838</target>
       </trans-unit>
       <trans-unit id="264" resname="text_Speakerphone" restype="string" datatype="x-android-resource">
         <source>Speakerphone</source>
@@ -1151,16 +1205,16 @@
         <target>Micrófono</target>
       </trans-unit>
       <trans-unit id="266" resname="text_Medical_Report_test_" restype="string" datatype="x-android-resource">
-        <source>Medical Report&#40;test&#41;</source>
-        <target>Reporte Médico&#40;prueba&#41;</target>
+        <source>Medical Report(test)</source>
+        <target>Reporte Médico(prueba)</target>
       </trans-unit>
       <trans-unit id="267" resname="text_Uploaded_Jan_4__2013__test_" restype="string" datatype="x-android-resource">
-        <source>Uploaded Jan 4, 2013 &#40;test&#41;</source>
-        <target>Subido en Ene 4, 2013 &#40;prueba&#41;</target>
+        <source>Uploaded Jan 4, 2013 (test)</source>
+        <target>Subido en Ene 4, 2013 (prueba)</target>
       </trans-unit>
       <trans-unit id="268" resname="text_2_3Mb__test_" restype="string" datatype="x-android-resource">
-        <source>2.3Mb &#40;test&#41;</source>
-        <target>2.3Mb &#40;prueba&#41;</target>
+        <source>2.3Mb (test)</source>
+        <target>2.3Mb (prueba)</target>
       </trans-unit>
       <trans-unit id="269" resname="text_Dr__Example_Doctor" restype="string" datatype="x-android-resource">
         <source>Dr. Example Doctor</source>
@@ -1191,8 +1245,8 @@
   <file original="android/res/layout/layout_refer_individual.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="1" resname="text__test_Known_for_blah" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41;Known for blah</source>
-        <target>&#40;测试&#41;任意输入</target>
+        <source>(test)Known for blah</source>
+        <target>(测试)任意输入</target>
       </trans-unit>
     </body>
   </file>
@@ -1200,7 +1254,7 @@
     <body>
       <trans-unit id="2" resname="r431194129" restype="string" datatype="java">
         <source>Enter name, specialty, or topic</source>
-        <target>输入姓名，专业或主题</target>
+        <target>输入姓名，专科，或话题</target>
       </trans-unit>
       <trans-unit id="3" resname="r713954102" restype="string" datatype="java">
         <source>{doctor_name} invited.</source>
@@ -1208,7 +1262,7 @@
       </trans-unit>
       <trans-unit id="4" resname="r758668640" restype="string" datatype="java">
         <source>Failed to invite {doctor_name}</source>
-        <target>邀请失败 {doctor_name}</target>
+        <target>邀请 {doctor_name}失败</target>
       </trans-unit>
     </body>
   </file>
@@ -1218,7 +1272,7 @@
         <source>Invite others to session</source>
         <target>邀请其他人加入会议</target>
       </trans-unit>
-      <trans-unit id="6" resname="r236672717" restype="string" datatype="java">
+      <trans-unit id="6" resname="r812721282" restype="string" datatype="java">
         <source>Join my consult with:</source>
         <target>加入我的咨询：</target>
       </trans-unit>
@@ -1226,33 +1280,33 @@
         <source>How would you like to invite</source>
         <target>您想如何邀请</target>
       </trans-unit>
-      <trans-unit id="8" resname="r412453752" restype="string" datatype="java">
+      <trans-unit id="8" resname="r796565643" restype="string" datatype="java">
         <source>Share via:</source>
         <target>分享：</target>
       </trans-unit>
       <trans-unit id="9" resname="r202246463" restype="string" datatype="java">
         <source>Failed to remove {person_name}: {message}</source>
-        <target>移除失败 {person_name}: {message}</target>
+        <target>移除{person_name}失败: {message}</target>
       </trans-unit>
       <trans-unit id="10" resname="r425723870" restype="string" datatype="java">
         <source>Failed to remove {person_name}</source>
-        <target>移除失败 {person_name}</target>
+        <target>移除{person_name}失败</target>
       </trans-unit>
       <trans-unit id="11" resname="r211395157" restype="string" datatype="java">
         <source>Failed to promote {person_name}: {message}</source>
-        <target>升级失败 {person_name}: {message}</target>
+        <target>升级{person_name}失败: {message}</target>
       </trans-unit>
       <trans-unit id="12" resname="r653015505" restype="string" datatype="java">
         <source>Failed to promote {person_name}</source>
-        <target>升级失败 {person_name}</target>
+        <target>升级{person_name}失败</target>
       </trans-unit>
       <trans-unit id="13" resname="r728008924" restype="string" datatype="java">
         <source>Failed to call {person_name}: {message}</source>
-        <target>呼叫失败 {person_name}: {message}</target>
+        <target>呼叫{person_name}失败: {message}</target>
       </trans-unit>
       <trans-unit id="14" resname="r260271836" restype="string" datatype="java">
         <source>Failed to call {person_name}</source>
-        <target>呼叫失败 {person_name}</target>
+        <target>呼叫{person_name}失败</target>
       </trans-unit>
     </body>
   </file>
@@ -1284,27 +1338,27 @@
       </trans-unit>
       <trans-unit id="20" resname="r475455417" restype="string" datatype="java">
         <source>Transcript</source>
-        <target>复印件</target>
+        <target>记录副本</target>
         <note annotates="source">This refers to medical consult transcript</note>
       </trans-unit>
       <trans-unit id="21" resname="r388976557" restype="string" datatype="java">
         <source>Speakerphone on</source>
-        <target>打开扬声器</target>
+        <target>扬声器打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the speakerphone</note>
       </trans-unit>
       <trans-unit id="22" resname="r894038144" restype="string" datatype="java">
         <source>Speakerphone off</source>
-        <target>关闭扬声器</target>
+        <target>扬声器关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
       </trans-unit>
       <trans-unit id="23" resname="r732893650" restype="string" datatype="java">
         <source>Microphone on</source>
-        <target>打开麦克风</target>
+        <target>麦克风打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
       </trans-unit>
       <trans-unit id="24" resname="r66962854" restype="string" datatype="java">
         <source>Microphone off</source>
-        <target>关闭麦克风</target>
+        <target>麦克风关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
       </trans-unit>
       <trans-unit id="25" resname="r898356852" restype="string" datatype="java">
@@ -1325,7 +1379,7 @@
     <body>
       <trans-unit id="28" resname="r1052400974" restype="string" datatype="java">
         <source>You are currently on hold</source>
-        <target>您目前处于暂停状态</target>
+        <target>您目前处于等候接听状态</target>
       </trans-unit>
     </body>
   </file>
@@ -1348,13 +1402,13 @@
   <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="31" resname="r717299647" restype="string" datatype="java">
-        <source>You haven&apos;t selected a stethoscope yet</source>
+        <source>You haven't selected a stethoscope yet</source>
         <target>您尚未选择听诊器</target>
       </trans-unit>
       <trans-unit id="32" resname="r195753892" restype="string" datatype="java">
         <source>{sound_track_id}, Len: %d</source>
         <target>{sound_track_id}, Len: %d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="33" resname="r606329135" restype="string" datatype="java">
         <source>Select a track you want to download</source>
@@ -1376,9 +1430,9 @@
         <source>Error occurred while reading audio</source>
         <target>读取音频时出错</target>
       </trans-unit>
-      <trans-unit id="38" resname="r98241011" restype="string" datatype="java">
+      <trans-unit id="38" resname="r902851796" restype="string" datatype="java">
         <source>Downloaded to:</source>
-        <target>下载到：</target>
+        <target>已下载到：</target>
       </trans-unit>
     </body>
   </file>
@@ -1388,9 +1442,9 @@
         <source>Failed to download pdf</source>
         <target>无法下载pdf</target>
       </trans-unit>
-      <trans-unit id="40" resname="r324623762" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target>诊断码：\n</target>
+      <trans-unit id="40" resname="r795802560" restype="string" datatype="java">
+        <source>Diagnosis codes:</source>
+        <target>诊断代码：</target>
       </trans-unit>
     </body>
   </file>
@@ -1414,11 +1468,11 @@
       </trans-unit>
       <trans-unit id="44" resname="r48889349" restype="string" datatype="java">
         <source>Delivered on {time}</source>
-        <target>发送 {time}</target>
+        <target>已于{time}发送 </target>
       </trans-unit>
       <trans-unit id="45" resname="r1062842433" restype="string" datatype="java">
         <source>Read on {time}</source>
-        <target>读取 {time}</target>
+        <target>{time}已读</target>
       </trans-unit>
     </body>
   </file>
@@ -1487,7 +1541,7 @@
       </trans-unit>
       <trans-unit id="58" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target>没有关系</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Positive Button text. Give up removing an attachment.</note>
       </trans-unit>
     </body>
@@ -1605,39 +1659,39 @@
       </trans-unit>
       <trans-unit id="84" resname="live_consult_connecting_text" restype="string" datatype="x-android-resource">
         <source>One moment while we connect…</source>
-        <target>我们连接的时候...</target>
+        <target>稍等，正在连接中...</target>
       </trans-unit>
       <trans-unit id="85" resname="live_consult_waiting_for_patient_text" restype="string" datatype="x-android-resource">
         <source>Waiting for patient to connect…</source>
         <target>正在等待患者连接...</target>
       </trans-unit>
       <trans-unit id="86" resname="live_consult_waiting_for_patient_live_video" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s video camera…</source>
-        <target>我们连接到患者的摄像机时...</target>
+        <source>One moment while we connect to the patient's video camera…</source>
+        <target>患者摄像机连接中...</target>
       </trans-unit>
       <trans-unit id="87" resname="live_consult_waiting_for_patient_live_audio" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s microphone…</source>
-        <target>我们连接到患者的麦克风时...</target>
+        <source>One moment while we connect to the patient's microphone…</source>
+        <target>患者麦克风连接中...</target>
       </trans-unit>
       <trans-unit id="88" resname="live_consult_waiting_for_patient_live_text" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the patient\&apos;s text chat…</source>
-        <target>我们连接到患者的文字聊天时...</target>
+        <source>One moment while we connect to the patient's text chat…</source>
+        <target>患者文字聊天连接中...</target>
       </trans-unit>
       <trans-unit id="89" resname="live_consult_waiting_for_doctor_text" restype="string" datatype="x-android-resource">
         <source>Waiting for doctor to connect…</source>
         <target>正在等待医生连接...</target>
       </trans-unit>
       <trans-unit id="90" resname="live_consult_waiting_for_doctor_live_video" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s video camera…</source>
-        <target>我们连接到医生的摄像机时...</target>
+        <source>One moment while we connect to the doctor's video camera…</source>
+        <target>医生摄像机连接中...</target>
       </trans-unit>
       <trans-unit id="91" resname="live_consult_waiting_for_doctor_live_audio" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s microphone…</source>
-        <target>我们连接到医生的麦克风时...</target>
+        <source>One moment while we connect to the doctor's microphone…</source>
+        <target>医生麦克风连接中...</target>
       </trans-unit>
       <trans-unit id="92" resname="live_consult_waiting_for_doctor_live_text" restype="string" datatype="x-android-resource">
-        <source>One moment while we connect to the doctor\&apos;s text chat…</source>
-        <target>我们连接到医生的文字聊天时...</target>
+        <source>One moment while we connect to the doctor's text chat…</source>
+        <target>医生文字聊天连接中...</target>
       </trans-unit>
       <trans-unit id="93" resname="keyboard_done_label" restype="string" datatype="x-android-resource">
         <source>Send</source>
@@ -1649,7 +1703,7 @@
       </trans-unit>
       <trans-unit id="95" resname="nonaction_owner" restype="string" datatype="x-android-resource">
         <source>Owner</source>
-        <target>所有者</target>
+        <target>主治医生</target>
       </trans-unit>
       <trans-unit id="96" resname="nonaction_staff" restype="string" datatype="x-android-resource">
         <source>Staff</source>
@@ -1720,7 +1774,7 @@
       </trans-unit>
       <trans-unit id="112" resname="button_never_mind" restype="string" datatype="x-android-resource">
         <source>Never mind</source>
-        <target>没有关系</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="113" resname="button_cancel" restype="string" datatype="x-android-resource">
         <source>Cancel</source>
@@ -1764,40 +1818,40 @@
         <target>发现专家</target>
       </trans-unit>
       <trans-unit id="123" resname="transcript_refer_specialist_text" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</source>
+        <source>I'd like to refer you to a &lt;b&gt;{specialist}&lt;/b&gt;</source>
         <target>我向您推荐一位&lt;b&gt;{specialist}&lt;/b&gt;</target>
       </trans-unit>
       <trans-unit id="124" resname="transcript_refer_specialist_text_hmo" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;. As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</source>
+        <source>I'd like to refer to a &lt;b&gt;{specialist}&lt;/b&gt;. As a member of {network_name}, please first check with your primary care physician before seeing any specialist.</source>
         <target>我想推荐一位 &lt;b&gt;{specialist}&lt;/b&gt;作为{network_name}的会员，请先咨询您的普通门诊医生，然后再寻找其他专家。</target>
       </trans-unit>
       <trans-unit id="125" resname="soap_note_title_text" restype="string" datatype="x-android-resource">
         <source>Summary Note</source>
-        <target>简要注意</target>
+        <target>总结报告</target>
       </trans-unit>
       <trans-unit id="126" resname="soap_note_history_text" restype="string" datatype="x-android-resource">
-        <source>Subjective &#40;History&#41;:</source>
-        <target>主观（历史）：</target>
+        <source>Subjective (History):</source>
+        <target>主观性资料（历史）：</target>
       </trans-unit>
       <trans-unit id="127" resname="soap_note_data_text" restype="string" datatype="x-android-resource">
-        <source>Objective &#40;Data&#41;:</source>
-        <target>目标（数据）：</target>
+        <source>Objective (Data):</source>
+        <target>客观性资料（数据）：</target>
       </trans-unit>
       <trans-unit id="128" resname="soap_note_assessment_text" restype="string" datatype="x-android-resource">
         <source>Assessment:</source>
-        <target>评定：</target>
+        <target>诊断分析及评定：</target>
       </trans-unit>
       <trans-unit id="129" resname="soap_note_personal_checklist_title_text" restype="string" datatype="x-android-resource">
         <source>Plan:</source>
-        <target>计划：</target>
+        <target>治疗方案：</target>
       </trans-unit>
       <trans-unit id="130" resname="soap_note_personal_checklist_button_text" restype="string" datatype="x-android-resource">
         <source>See checklists</source>
         <target>查看清单</target>
       </trans-unit>
       <trans-unit id="131" resname="public_checklist_title_recommend_text" restype="string" datatype="x-android-resource">
-        <source>I recommend you try {name}\&apos;s checklist on {topic_name}</source>
-        <target>我建议您尝试{name}在{topic_name}的检查</target>
+        <source>I recommend you try {name}'s checklist on {topic_name}</source>
+        <target>我建议您尝试{name}关于{topic_name}的清单</target>
       </trans-unit>
       <trans-unit id="132" resname="public_checklist_button_text" restype="string" datatype="x-android-resource">
         <source>Try now</source>
@@ -1808,7 +1862,7 @@
         <target>已添加</target>
       </trans-unit>
       <trans-unit id="134" resname="refer_individual_title_text" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d like to refer you to:</source>
+        <source>I'd like to refer you to:</source>
         <target>我向您推荐：</target>
       </trans-unit>
       <trans-unit id="135" resname="refer_individual_call_text" restype="string" datatype="x-android-resource">
@@ -1844,7 +1898,7 @@
         <target>文件</target>
       </trans-unit>
       <trans-unit id="143" resname="no_previous_uploads" restype="string" datatype="x-android-resource">
-        <source>You haven\&apos;t uploaded any files or photos yet.</source>
+        <source>You haven't uploaded any files or photos yet.</source>
         <target>您尚未上传任何文件或照片。</target>
       </trans-unit>
       <trans-unit id="144" resname="connection_wrong" restype="string" datatype="x-android-resource">
@@ -1872,11 +1926,11 @@
         <target>离开咨询</target>
       </trans-unit>
       <trans-unit id="150" resname="end_call_patient_body_text_format" restype="string" datatype="x-android-resource">
-        <source>Would you like to end this consult with {doctor_name}? The doctor hasn\&apos;t finished the session.</source>
+        <source>Would you like to end this consult with {doctor_name}? The doctor hasn't finished the session.</source>
         <target>您要结束与{doctor_name}的咨询吗？医生没有完成会话。</target>
       </trans-unit>
       <trans-unit id="151" resname="end_call_patient_body_text" restype="string" datatype="x-android-resource">
-        <source>Would you like to end this consult with the doctor? The doctor hasn\&apos;t finished the session.</source>
+        <source>Would you like to end this consult with the doctor? The doctor hasn't finished the session.</source>
         <target>您要结束与医生的咨询吗？医生没有完成会话。</target>
       </trans-unit>
       <trans-unit id="152" resname="end_call_doctor_body_text" restype="string" datatype="x-android-resource">
@@ -1912,7 +1966,7 @@
         <target>0/100</target>
       </trans-unit>
       <trans-unit id="160" resname="description_dialog_hint" restype="string" datatype="x-android-resource">
-        <source>Enter brief description &#40;ex. My chest xray&#41;</source>
+        <source>Enter brief description (ex. My chest xray)</source>
         <target>输入简要说明（例如.我的胸部X射线）</target>
       </trans-unit>
       <trans-unit id="161" resname="title_remove_credit_card" restype="string" datatype="x-android-resource">
@@ -1925,7 +1979,7 @@
       </trans-unit>
       <trans-unit id="163" resname="description_dialog_never_mind_text" restype="string" datatype="x-android-resource">
         <source>Never Mind</source>
-        <target>没有关系</target>
+        <target state="accepted">算了, 暂不</target>
       </trans-unit>
       <trans-unit id="164" resname="description_dialog_remove_text" restype="string" datatype="x-android-resource">
         <source>Remove</source>
@@ -1960,37 +2014,37 @@
         <target>切换到前视图</target>
       </trans-unit>
       <trans-unit id="172" resname="peer_unavailable_text" restype="string" datatype="x-android-resource">
-        <source>There is a problem with {peer_name}\&apos;s connection. One moment while we try to re-connect with {peer_name}.</source>
-        <target>{peer_name}的连接有问题。我们尝试与{peer_name}重新连接时。</target>
+        <source>There is a problem with {peer_name}'s connection. One moment while we try to re-connect with {peer_name}.</source>
+        <target>{peer_name}的连接有问题。请稍后，我们正在尝试与{peer_name}重新连接。</target>
       </trans-unit>
       <trans-unit id="173" resname="peer_unavailable_text_guest" restype="string" datatype="x-android-resource">
-        <source>There is a problem with the guest\&apos;s connection. One moment while we try to re-connect with the guest.</source>
-        <target>顾客的连接有问题。我们尝试与顾客重新连接时。</target>
+        <source>There is a problem with the guest's connection. One moment while we try to re-connect with the guest.</source>
+        <target>顾客的连接有问题。请稍后，我们正在尝试与重新连接。</target>
       </trans-unit>
       <trans-unit id="174" resname="peer_unavailable_text_doctor" restype="string" datatype="x-android-resource">
-        <source>There is a problem with the doctor\&apos;s connection. One moment while we try to re-connect with the doctor.</source>
-        <target>医生的连接有问题。我们尝试与顾客重新连接时。</target>
+        <source>There is a problem with the doctor's connection. One moment while we try to re-connect with the doctor.</source>
+        <target>医生的连接有问题。请稍后，我们正在尝试与顾客重新连接。</target>
       </trans-unit>
       <trans-unit id="175" resname="local_connection_unavailable_text" restype="string" datatype="x-android-resource">
         <source>There is a problem with your connection. One moment while we try to re-connect with %s.</source>
-        <target>您的连接有一个问题。我们尝试与%s重新连接时。</target>
+        <target>您的连接有一个问题。请稍后，我们正在尝试与%s重新连接。</target>
         <note annotates="source">%s refers to a person</note>
       </trans-unit>
       <trans-unit id="176" resname="disconnect_trigger_text_doctor" restype="string" datatype="x-android-resource">
-        <source>There seems to be a problem with the doctor\&apos;s connection. To continue by phone, please call:</source>
-        <target>医生的连接似乎有一个问题。通过手机继续，请拨打：</target>
+        <source>There seems to be a problem with the doctor's connection. To continue by phone, please call:</source>
+        <target>医生的连接似乎有一个问题。若想通过电话继续，请拨打：</target>
       </trans-unit>
       <trans-unit id="177" resname="disconnect_trigger_text_patient" restype="string" datatype="x-android-resource">
         <source>There seems to be a problem with your connection. To continue by phone, please call:</source>
-        <target>您的连接似乎有一个问题通过手机继续，请拨打：</target>
+        <target>您的连接似乎有一个问题。若想通过电话继续，请拨打：</target>
       </trans-unit>
       <trans-unit id="178" resname="disconnect_trigger_text_doc" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source>
+        <source>We're offering the patient the option to resume this consult by phone and we may be calling you in the next 2 minutes</source>
         <target>我们为患者提供通过电话恢复此咨询的选项，我们可能会在接下来的2分钟内呼叫您</target>
       </trans-unit>
       <trans-unit id="179" resname="standard_rates_text" restype="string" datatype="x-android-resource">
         <source>Standard carrier rates may apply</source>
-        <target>可能需要支付标准费用</target>
+        <target>可能需要支付标准运行商费用</target>
       </trans-unit>
       <trans-unit id="180" resname="access_code_text" restype="string" datatype="x-android-resource">
         <source>+ Access code:</source>
@@ -2009,7 +2063,7 @@
         <target>再试一次</target>
       </trans-unit>
       <trans-unit id="184" resname="peer_disconnected_im_done_text" restype="string" datatype="x-android-resource">
-        <source>Thanks, I\&apos;m done</source>
+        <source>Thanks, I'm done</source>
         <target>谢谢，我完成了</target>
       </trans-unit>
       <trans-unit id="185" resname="expert_peer_disconnected_text" restype="string" datatype="x-android-resource">
@@ -2053,7 +2107,7 @@
         <target>在{date}已上传</target>
       </trans-unit>
       <trans-unit id="195" resname="attach_file_dialog_error_opening_activity" restype="string" datatype="x-android-resource">
-        <source>Couldn\&apos;t find application to handle this!</source>
+        <source>Couldn't find application to handle this!</source>
         <target>无法找到应用程序来处理这个问题！</target>
       </trans-unit>
       <trans-unit id="196" resname="vidyo_error_dialog_title" restype="string" datatype="x-android-resource">
@@ -2065,19 +2119,19 @@
         <target>音频不可用</target>
       </trans-unit>
       <trans-unit id="198" resname="vidyo_error_dialog_body" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re having trouble establising a video connection on your device. Please continue by chat or try again.</source>
+        <source>We're having trouble establising a video connection on your device. Please continue by chat or try again.</source>
         <target>我们无法在您的设备上建立视频连接。请通过聊天继续或再次尝试</target>
       </trans-unit>
       <trans-unit id="199" resname="camera_error_cant_connect" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t connect to camera</source>
+        <source>Can't connect to camera</source>
         <target>无法连接到相机</target>
       </trans-unit>
       <trans-unit id="200" resname="audio_error_cant_connect" restype="string" datatype="x-android-resource">
-        <source>Can\&apos;t connect to audio</source>
+        <source>Can't connect to audio</source>
         <target>无法连接到音频</target>
       </trans-unit>
       <trans-unit id="201" resname="vidyo_error_audio_dialog_body" restype="string" datatype="x-android-resource">
-        <source>We\&apos;re having trouble establising an audio connection on your device. Please continue by chat or try again.</source>
+        <source>We're having trouble establising an audio connection on your device. Please continue by chat or try again.</source>
         <target>我们无法在您的设备上建立音频连接。请通过聊天继续或再次尝试</target>
       </trans-unit>
       <trans-unit id="202" resname="vidyo_error_dialog_chat" restype="string" datatype="x-android-resource">
@@ -2121,7 +2175,7 @@
         <target>再试一次</target>
       </trans-unit>
       <trans-unit id="212" resname="rated_consult_text" restype="string" datatype="x-android-resource">
-        <source>&quot;You rated this consult:&quot;</source>
+        <source>"You rated this consult:"</source>
         <target>“您已对这次咨询做出评价：”</target>
       </trans-unit>
       <trans-unit id="213" resname="rated_consult_update_text" restype="string" datatype="x-android-resource">
@@ -2161,11 +2215,11 @@
         <target>好</target>
       </trans-unit>
       <trans-unit id="222" resname="background_copy_doctor" restype="string" datatype="x-android-resource">
-        <source>You just left in the middle of a live consult. If you didn\&apos;t already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
+        <source>You just left in the middle of a live consult. If you didn't already inform the patient that you would return shortly, please do so now so the patient knows what to expect.</source>
         <target>您刚刚在实时咨询中离开。如果您没有通知患者您会很快返回，请立刻这样做，以便患者知道接下来会发生什么。</target>
       </trans-unit>
       <trans-unit id="223" resname="background_copy_patient" restype="string" datatype="x-android-resource">
-        <source>You just left in the middle of a live consult. If you didn\&apos;t already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source>
+        <source>You just left in the middle of a live consult. If you didn't already inform the doctor that you would return shortly, please do so now so the doctor knows what to expect.</source>
         <target>您刚刚在实时咨询中离开。如果您没有通知医生您会很快返回，请立刻这样做，以便医生知道接下来会发生什么。</target>
       </trans-unit>
       <trans-unit id="224" resname="camera_permission_rationale" restype="string" datatype="x-android-resource">
@@ -2218,7 +2272,7 @@
       </trans-unit>
       <trans-unit id="236" resname="action_share_through_sms" restype="string" datatype="x-android-resource">
         <source>SMS</source>
-        <target>SMS</target>
+        <target>短信</target>
       </trans-unit>
       <trans-unit id="237" resname="action_share_through_link" restype="string" datatype="x-android-resource">
         <source>Share the link</source>
@@ -2243,19 +2297,19 @@
       </trans-unit>
       <trans-unit id="242" resname="title_SMS" restype="string" datatype="x-android-resource">
         <source>SMS</source>
-        <target>SMS</target>
+        <target>短信</target>
       </trans-unit>
       <trans-unit id="243" resname="title_Share_the_link" restype="string" datatype="x-android-resource">
         <source>Share the link</source>
         <target>分享链接</target>
       </trans-unit>
       <trans-unit id="244" resname="text__test__Benzamycin" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; Benzamycin</source>
-        <target>&#40;测试&#41;必麦森</target>
+        <source>(test) Benzamycin</source>
+        <target>(测试)必麦森</target>
       </trans-unit>
       <trans-unit id="245" resname="text__test__500_mg__oral_capsules__twice_daily__x200" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; 500 mg, oral capsules, twice daily, x200</source>
-        <target>&#40;测试&#41; 500毫克，口服胶囊，每日两次，x200</target>
+        <source>(test) 500 mg, oral capsules, twice daily, x200</source>
+        <target>(测试) 500毫克，口服胶囊，每日两次，x200</target>
       </trans-unit>
       <trans-unit id="246" resname="text_These_are_doctor_comments_about_this_medication" restype="string" datatype="x-android-resource">
         <source>These are doctor comments about this medication</source>
@@ -2271,7 +2325,7 @@
       </trans-unit>
       <trans-unit id="249" resname="text_Specialty" restype="string" datatype="x-android-resource">
         <source>Specialty</source>
-        <target>专业</target>
+        <target>专科</target>
       </trans-unit>
       <trans-unit id="250" resname="text_City__State" restype="string" datatype="x-android-resource">
         <source>City, State</source>
@@ -2282,15 +2336,15 @@
         <target>点击即可恢复</target>
       </trans-unit>
       <trans-unit id="252" resname="text_You_complained_of_headache__fever_and_stress__test_" restype="string" datatype="x-android-resource">
-        <source>You complained of headache, fever and stress.&#40;test&#41;</source>
-        <target>您抱怨头痛，发热和有压力&#40;测试&#41;</target>
+        <source>You complained of headache, fever and stress.(test)</source>
+        <target>您抱怨头痛，发热和有压力。(测试)</target>
       </trans-unit>
       <trans-unit id="253" resname="text_You_have_an_elevated_heart_rate_and_red_skin___Test_" restype="string" datatype="x-android-resource">
-        <source>You have an elevated heart rate and red skin. &#40;Test&#41;</source>
-        <target>您心率偏高和皮肤发红&#40;测试&#41;</target>
+        <source>You have an elevated heart rate and red skin. (Test)</source>
+        <target>您心率偏高和皮肤发红。(测试)</target>
       </trans-unit>
       <trans-unit id="254" resname="text_You_likely_have_a_cold__test_" restype="string" datatype="x-android-resource">
-        <source>You likely have a cold.&#40;test&#41;</source>
+        <source>You likely have a cold.(test)</source>
         <target>您可能感冒了。（测试）</target>
       </trans-unit>
       <trans-unit id="255" resname="text_Diagnosis_" restype="string" datatype="x-android-resource">
@@ -2302,32 +2356,32 @@
         <target>邀请一位支持者</target>
       </trans-unit>
       <trans-unit id="257" resname="text__test_Dr__blah_blah" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41;Dr. blah blah</source>
-        <target>&#40;测试&#41;医生 blah blah</target>
+        <source>(test)Dr. blah blah</source>
+        <target>(测试)医生 blah blah</target>
       </trans-unit>
       <trans-unit id="258" resname="text__test_blah__blah" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41;blah, blah</source>
-        <target>&#40;测试&#41;blah, blah</target>
+        <source>(test)blah, blah</source>
+        <target>(测试)blah, blah</target>
       </trans-unit>
       <trans-unit id="259" resname="text_I_recommend_the_following_medication_" restype="string" datatype="x-android-resource">
         <source>I recommend the following medication:</source>
         <target>我推荐您如下药物：</target>
       </trans-unit>
       <trans-unit id="260" resname="text__test__Walgreens" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; Walgreens</source>
-        <target>&#40;测试&#41; Walgreens</target>
+        <source>(test) Walgreens</source>
+        <target>(测试) Walgreens</target>
       </trans-unit>
       <trans-unit id="261" resname="text__test__774_University_Ave_" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; 774 University Ave,</source>
-        <target>&#40;test&#41; 774 University Ave,</target>
+        <source>(test) 774 University Ave,</source>
+        <target>(测试) 774 University Ave,</target>
       </trans-unit>
       <trans-unit id="262" resname="text__test__Palo_Alto__CA_23423" restype="string" datatype="x-android-resource">
-        <source>&#40;test&#41; Palo Alto, CA 23423</source>
-        <target>&#40;test&#41; Palo Alto, CA 23423</target>
+        <source>(test) Palo Alto, CA 23423</source>
+        <target>(测试) Palo Alto, CA 23423</target>
       </trans-unit>
       <trans-unit id="263" resname="text_1__617__392_838" restype="string" datatype="x-android-resource">
-        <source>1 &#40;617&#41; 392-838</source>
-        <target>1 &#40;617&#41; 392-838</target>
+        <source>1 (617) 392-838</source>
+        <target>1 (617) 392-838</target>
       </trans-unit>
       <trans-unit id="264" resname="text_Speakerphone" restype="string" datatype="x-android-resource">
         <source>Speakerphone</source>
@@ -2338,24 +2392,24 @@
         <target>麦克风</target>
       </trans-unit>
       <trans-unit id="266" resname="text_Medical_Report_test_" restype="string" datatype="x-android-resource">
-        <source>Medical Report&#40;test&#41;</source>
-        <target>医疗报告&#40;测试&#41;</target>
+        <source>Medical Report(test)</source>
+        <target>医疗报告(测试)</target>
       </trans-unit>
       <trans-unit id="267" resname="text_Uploaded_Jan_4__2013__test_" restype="string" datatype="x-android-resource">
-        <source>Uploaded Jan 4, 2013 &#40;test&#41;</source>
-        <target>于2013年1月4日上传&#40;测试&#41;</target>
+        <source>Uploaded Jan 4, 2013 (test)</source>
+        <target>于2013年1月4日上传(测试)</target>
       </trans-unit>
       <trans-unit id="268" resname="text_2_3Mb__test_" restype="string" datatype="x-android-resource">
-        <source>2.3Mb &#40;test&#41;</source>
-        <target>2.3Mb &#40;测试&#41;</target>
+        <source>2.3Mb (test)</source>
+        <target>2.3Mb (测试)</target>
       </trans-unit>
       <trans-unit id="269" resname="text_Dr__Example_Doctor" restype="string" datatype="x-android-resource">
         <source>Dr. Example Doctor</source>
-        <target>Example Doctor医生</target>
+        <target>举例 Doctor医生</target>
       </trans-unit>
       <trans-unit id="270" resname="text_Addiction_Medicine" restype="string" datatype="x-android-resource">
         <source>Addiction Medicine</source>
-        <target>成瘾性药</target>
+        <target>成瘾科</target>
       </trans-unit>
       <trans-unit id="271" resname="text_Palo_Alto__CA" restype="string" datatype="x-android-resource">
         <source>Palo Alto, CA</source>
@@ -2377,11 +2431,11 @@
   </file>
   <file original="android/src/com/healthtap/live_consult/paticipant/ParticipantsFragment.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
     <body>
-      <trans-unit id="1" resname="r236672717" restype="string" datatype="java">
+      <trans-unit id="1" resname="r812721282" restype="string" datatype="java">
         <source>Join my consult with:</source>
         <target>Únete a mi consulta con:</target>
       </trans-unit>
-      <trans-unit id="2" resname="r412453752" restype="string" datatype="java">
+      <trans-unit id="2" resname="r796565643" restype="string" datatype="java">
         <source>Share via:</source>
         <target>Compartir vía:</target>
       </trans-unit>
@@ -2389,7 +2443,7 @@
   </file>
   <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
     <body>
-      <trans-unit id="3" resname="r98241011" restype="string" datatype="java">
+      <trans-unit id="3" resname="r902851796" restype="string" datatype="java">
         <source>Downloaded to:</source>
         <target>Descargado a:</target>
       </trans-unit>
@@ -2397,11 +2451,11 @@
   </file>
   <file original="android/src/com/healthtap/live_consult/paticipant/ParticipantsFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
     <body>
-      <trans-unit id="1" resname="r236672717" restype="string" datatype="java">
+      <trans-unit id="1" resname="r812721282" restype="string" datatype="java">
         <source>Join my consult with:</source>
         <target>加入我的咨询：</target>
       </trans-unit>
-      <trans-unit id="2" resname="r412453752" restype="string" datatype="java">
+      <trans-unit id="2" resname="r796565643" restype="string" datatype="java">
         <source>Share via:</source>
         <target>分享：</target>
       </trans-unit>
@@ -2409,7 +2463,7 @@
   </file>
   <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
     <body>
-      <trans-unit id="3" resname="r98241011" restype="string" datatype="java">
+      <trans-unit id="3" resname="r902851796" restype="string" datatype="java">
         <source>Downloaded to:</source>
         <target>下载到：</target>
       </trans-unit>
@@ -2437,7 +2491,7 @@
         <source>Invite others to session</source>
         <target>Invita a otros a sesión</target>
       </trans-unit>
-      <trans-unit id="5" resname="r236672717" restype="string" datatype="java">
+      <trans-unit id="5" resname="r812721282" restype="string" datatype="java">
         <source>Join my consult with:</source>
         <target>Úneta a mi consulta con:</target>
       </trans-unit>
@@ -2445,7 +2499,7 @@
         <source>How would you like to invite</source>
         <target>Cómo te gustaría invitar</target>
       </trans-unit>
-      <trans-unit id="7" resname="r412453752" restype="string" datatype="java">
+      <trans-unit id="7" resname="r796565643" restype="string" datatype="java">
         <source>Share via:</source>
         <target>Compatir vía:</target>
       </trans-unit>
@@ -2567,13 +2621,13 @@
   <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="30" resname="r717299647" restype="string" datatype="java">
-        <source>You haven&apos;t selected a stethoscope yet</source>
+        <source>You haven't selected a stethoscope yet</source>
         <target>No has seleccionado un estetoscopio aún</target>
       </trans-unit>
       <trans-unit id="31" resname="r195753892" restype="string" datatype="java">
         <source>{sound_track_id}, Len: %d</source>
         <target>{sound_track_id}, Len: %d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="java">
         <source>Select a track you want to download</source>
@@ -2595,7 +2649,7 @@
         <source>Error occurred while reading audio</source>
         <target>Ocurrió un error mientras se leía audio</target>
       </trans-unit>
-      <trans-unit id="37" resname="r98241011" restype="string" datatype="java">
+      <trans-unit id="37" resname="r902851796" restype="string" datatype="java">
         <source>Downloaded to:</source>
         <target>Descargado a:</target>
       </trans-unit>
@@ -2607,9 +2661,9 @@
         <source>Failed to download pdf</source>
         <target>No se ha podido descargar pdf</target>
       </trans-unit>
-      <trans-unit id="39" resname="r324623762" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target>Códigos de Diagnóstico:\n</target>
+      <trans-unit id="39" resname="r795802560" restype="string" datatype="java">
+        <source>Diagnosis codes:</source>
+        <target>Códigos de Diagnóstico:</target>
       </trans-unit>
     </body>
   </file>
@@ -2751,7 +2805,7 @@
     <body>
       <trans-unit id="1" resname="r431194129" restype="string" datatype="java">
         <source>Enter name, specialty, or topic</source>
-        <target>输入姓名，专科或话题</target>
+        <target>输入姓名，专科，或话题</target>
       </trans-unit>
       <trans-unit id="2" resname="r713954102" restype="string" datatype="java">
         <source>{doctor_name} invited.</source>
@@ -2769,7 +2823,7 @@
         <source>Invite others to session</source>
         <target>邀请其他人加入会议</target>
       </trans-unit>
-      <trans-unit id="5" resname="r236672717" restype="string" datatype="java">
+      <trans-unit id="5" resname="r812721282" restype="string" datatype="java">
         <source>Join my consult with:</source>
         <target>加入我的咨询：</target>
       </trans-unit>
@@ -2777,33 +2831,33 @@
         <source>How would you like to invite</source>
         <target>您希望如何邀请</target>
       </trans-unit>
-      <trans-unit id="7" resname="r412453752" restype="string" datatype="java">
+      <trans-unit id="7" resname="r796565643" restype="string" datatype="java">
         <source>Share via:</source>
         <target>分享：</target>
       </trans-unit>
       <trans-unit id="8" resname="r202246463" restype="string" datatype="java">
         <source>Failed to remove {person_name}: {message}</source>
-        <target>删除失败{person_name}:{message}</target>
+        <target>删除{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="9" resname="r425723870" restype="string" datatype="java">
         <source>Failed to remove {person_name}</source>
-        <target>删除失败{person_name}</target>
+        <target>删除{person_name}失败</target>
       </trans-unit>
       <trans-unit id="10" resname="r211395157" restype="string" datatype="java">
         <source>Failed to promote {person_name}: {message}</source>
-        <target>升级失败{person_name}:{message}</target>
+        <target>升级{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="11" resname="r653015505" restype="string" datatype="java">
         <source>Failed to promote {person_name}</source>
-        <target>升级失败{person_name}</target>
+        <target>升级{person_name}失败</target>
       </trans-unit>
       <trans-unit id="12" resname="r728008924" restype="string" datatype="java">
         <source>Failed to call {person_name}: {message}</source>
-        <target>呼叫失败 {person_name}:{message}</target>
+        <target>呼叫 {person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="13" resname="r260271836" restype="string" datatype="java">
         <source>Failed to call {person_name}</source>
-        <target>呼叫失败{person_name}</target>
+        <target>呼叫{person_name}失败</target>
       </trans-unit>
     </body>
   </file>
@@ -2835,27 +2889,27 @@
       </trans-unit>
       <trans-unit id="19" resname="r475455417" restype="string" datatype="java">
         <source>Transcript</source>
-        <target>复印件</target>
+        <target>记录副本</target>
         <note annotates="source">This refers to medical consult transcript</note>
       </trans-unit>
       <trans-unit id="20" resname="r388976557" restype="string" datatype="java">
         <source>Speakerphone on</source>
-        <target>打开扬声器</target>
+        <target>扬声器打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the speakerphone</note>
       </trans-unit>
       <trans-unit id="21" resname="r894038144" restype="string" datatype="java">
         <source>Speakerphone off</source>
-        <target>关闭扬声器</target>
+        <target>扬声器关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
       </trans-unit>
       <trans-unit id="22" resname="r732893650" restype="string" datatype="java">
         <source>Microphone on</source>
-        <target>打开麦克风</target>
+        <target>麦克风打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
       </trans-unit>
       <trans-unit id="23" resname="r66962854" restype="string" datatype="java">
         <source>Microphone off</source>
-        <target>关闭麦克风</target>
+        <target>麦克风关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
       </trans-unit>
       <trans-unit id="24" resname="r898356852" restype="string" datatype="java">
@@ -2876,7 +2930,7 @@
     <body>
       <trans-unit id="27" resname="r1052400974" restype="string" datatype="java">
         <source>You are currently on hold</source>
-        <target>您目前处于暂停状态</target>
+        <target>您目前处于等候接听状态</target>
       </trans-unit>
     </body>
   </file>
@@ -2899,13 +2953,13 @@
   <file original="android/src/com/healthtap/live_consult/devices/LittlemanStethoscope.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="30" resname="r717299647" restype="string" datatype="java">
-        <source>You haven&apos;t selected a stethoscope yet</source>
+        <source>You haven't selected a stethoscope yet</source>
         <target>您尚未选择听诊器</target>
       </trans-unit>
       <trans-unit id="31" resname="r195753892" restype="string" datatype="java">
         <source>{sound_track_id}, Len: %d</source>
         <target>{sound_track_id}, Len:%d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="java">
         <source>Select a track you want to download</source>
@@ -2927,7 +2981,7 @@
         <source>Error occurred while reading audio</source>
         <target>读取音频时出错</target>
       </trans-unit>
-      <trans-unit id="37" resname="r98241011" restype="string" datatype="java">
+      <trans-unit id="37" resname="r902851796" restype="string" datatype="java">
         <source>Downloaded to:</source>
         <target>下载到：</target>
       </trans-unit>
@@ -2939,9 +2993,9 @@
         <source>Failed to download pdf</source>
         <target>无法下载pdf</target>
       </trans-unit>
-      <trans-unit id="39" resname="r324623762" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target>诊断码：\n</target>
+      <trans-unit id="39" resname="r795802560" restype="string" datatype="java">
+        <source>Diagnosis codes:</source>
+        <target>诊断代码：</target>
       </trans-unit>
     </body>
   </file>
@@ -2965,11 +3019,11 @@
       </trans-unit>
       <trans-unit id="43" resname="r48889349" restype="string" datatype="java">
         <source>Delivered on {time}</source>
-        <target>在{time}发送</target>
+        <target>已在{time}发送</target>
       </trans-unit>
       <trans-unit id="44" resname="r1062842433" restype="string" datatype="java">
         <source>Read on {time}</source>
-        <target>在{time}读取</target>
+        <target>{time}已读</target>
       </trans-unit>
     </body>
   </file>
@@ -3038,7 +3092,7 @@
       </trans-unit>
       <trans-unit id="57" resname="r794612910" restype="string" datatype="java">
         <source>Never Mind</source>
-        <target>没有关系</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Positive Button text. Give up removing an attachment.</note>
       </trans-unit>
     </body>
@@ -3205,7 +3259,7 @@
       <trans-unit id="31" resname="r195753892" restype="string" datatype="x-android-resource">
         <source>{sound_track_id}, Len: %d</source>
         <target state="translated">{sound_track_id}, Len: %d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="x-android-resource">
         <source>Select a track you want to download</source>
@@ -3351,7 +3405,7 @@
     <body>
       <trans-unit id="1" resname="r431194129" restype="string" datatype="x-android-resource">
         <source>Enter name, specialty, or topic</source>
-        <target state="translated">输入姓名，专科或话题</target>
+        <target state="translated">输入姓名，专科，或话题</target>
       </trans-unit>
       <trans-unit id="2" resname="r713954102" restype="string" datatype="x-android-resource">
         <source>{doctor_name} invited.</source>
@@ -3379,27 +3433,27 @@
       </trans-unit>
       <trans-unit id="8" resname="r202246463" restype="string" datatype="x-android-resource">
         <source>Failed to remove {person_name}: {message}</source>
-        <target state="translated">删除失败{person_name}:{message}</target>
+        <target state="translated">删除{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="9" resname="r425723870" restype="string" datatype="x-android-resource">
         <source>Failed to remove {person_name}</source>
-        <target state="translated">删除失败{person_name}</target>
+        <target state="translated">删除{person_name}失败</target>
       </trans-unit>
       <trans-unit id="10" resname="r211395157" restype="string" datatype="x-android-resource">
         <source>Failed to promote {person_name}: {message}</source>
-        <target state="translated">升级失败{person_name}:{message}</target>
+        <target state="translated">升级{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="11" resname="r653015505" restype="string" datatype="x-android-resource">
         <source>Failed to promote {person_name}</source>
-        <target state="translated">升级失败{person_name}</target>
+        <target state="translated">升级{person_name}失败</target>
       </trans-unit>
       <trans-unit id="12" resname="r728008924" restype="string" datatype="x-android-resource">
         <source>Failed to call {person_name}: {message}</source>
-        <target state="translated">呼叫失败 {person_name}:{message}</target>
+        <target state="translated">呼叫{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="13" resname="r260271836" restype="string" datatype="x-android-resource">
         <source>Failed to call {person_name}</source>
-        <target state="translated">呼叫失败{person_name}</target>
+        <target state="translated">呼叫{person_name}失败</target>
       </trans-unit>
       <trans-unit id="14" resname="r842940493" restype="string" datatype="x-android-resource">
         <source>{state}, {country}</source>
@@ -3423,27 +3477,27 @@
       </trans-unit>
       <trans-unit id="19" resname="r475455417" restype="string" datatype="x-android-resource">
         <source>Transcript</source>
-        <target state="translated">复印件</target>
+        <target state="translated">记录副本</target>
         <note annotates="source">This refers to medical consult transcript</note>
       </trans-unit>
       <trans-unit id="20" resname="r388976557" restype="string" datatype="x-android-resource">
         <source>Speakerphone on</source>
-        <target state="translated">打开扬声器</target>
+        <target state="translated">扬声器打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the speakerphone</note>
       </trans-unit>
       <trans-unit id="21" resname="r894038144" restype="string" datatype="x-android-resource">
         <source>Speakerphone off</source>
-        <target state="translated">关闭扬声器</target>
+        <target state="translated">扬声器关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
       </trans-unit>
       <trans-unit id="22" resname="r732893650" restype="string" datatype="x-android-resource">
         <source>Microphone on</source>
-        <target state="translated">打开麦克风</target>
+        <target state="translated">麦克风打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
       </trans-unit>
       <trans-unit id="23" resname="r66962854" restype="string" datatype="x-android-resource">
         <source>Microphone off</source>
-        <target state="translated">关闭麦克风</target>
+        <target state="translated">麦克风关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
       </trans-unit>
       <trans-unit id="24" resname="r898356852" restype="string" datatype="x-android-resource">
@@ -3473,7 +3527,7 @@
       <trans-unit id="31" resname="r195753892" restype="string" datatype="x-android-resource">
         <source>{sound_track_id}, Len: %d</source>
         <target state="translated">{sound_track_id}, Len:%d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="x-android-resource">
         <source>Select a track you want to download</source>
@@ -3505,7 +3559,7 @@
       </trans-unit>
       <trans-unit id="39" resname="r324623762" restype="string" datatype="x-android-resource">
         <source>Diagnosis codes:\n</source>
-        <target state="translated">诊断码：\n</target>
+        <target state="translated">诊断代码：\n</target>
       </trans-unit>
       <trans-unit id="40" resname="r402577151" restype="string" datatype="x-android-resource">
         <source>{duration}, {frequency}</source>
@@ -3529,7 +3583,7 @@
       </trans-unit>
       <trans-unit id="45" resname="r1062842433" restype="string" datatype="x-android-resource">
         <source>Read on {time}</source>
-        <target state="translated">在{time}读取</target>
+        <target state="translated">{time}已读</target>
       </trans-unit>
       <trans-unit id="46" resname="r284091905" restype="string" datatype="x-android-resource">
         <source>Read</source>
@@ -3578,7 +3632,7 @@
       </trans-unit>
       <trans-unit id="57" resname="r794612910" restype="string" datatype="x-android-resource">
         <source>Never Mind</source>
-        <target state="translated">没有关系</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Positive Button text. Give up removing an attachment.</note>
       </trans-unit>
       <trans-unit id="58" resname="r477931224" restype="string" datatype="x-android-resource">
@@ -3741,7 +3795,7 @@
       <trans-unit id="31" resname="r195753892" restype="string" datatype="x-android-resource">
         <source>{sound_track_id}, Len: %d</source>
         <target state="translated">{sound_track_id}, Len: %d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="x-android-resource">
         <source>Select a track you want to download</source>
@@ -3887,7 +3941,7 @@
     <body>
       <trans-unit id="1" resname="r431194129" restype="string" datatype="x-android-resource">
         <source>Enter name, specialty, or topic</source>
-        <target state="translated">输入姓名，专科或话题</target>
+        <target state="translated">输入姓名，专科，或话题</target>
       </trans-unit>
       <trans-unit id="2" resname="r713954102" restype="string" datatype="x-android-resource">
         <source>{doctor_name} invited.</source>
@@ -3915,27 +3969,27 @@
       </trans-unit>
       <trans-unit id="8" resname="r202246463" restype="string" datatype="x-android-resource">
         <source>Failed to remove {person_name}: {message}</source>
-        <target state="translated">删除失败{person_name}:{message}</target>
+        <target state="translated">删除{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="9" resname="r425723870" restype="string" datatype="x-android-resource">
         <source>Failed to remove {person_name}</source>
-        <target state="translated">删除失败{person_name}</target>
+        <target state="translated">删除{person_name}失败</target>
       </trans-unit>
       <trans-unit id="10" resname="r211395157" restype="string" datatype="x-android-resource">
         <source>Failed to promote {person_name}: {message}</source>
-        <target state="translated">升级失败{person_name}:{message}</target>
+        <target state="translated">升级{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="11" resname="r653015505" restype="string" datatype="x-android-resource">
         <source>Failed to promote {person_name}</source>
-        <target state="translated">升级失败{person_name}</target>
+        <target state="translated">升级{person_name}失败</target>
       </trans-unit>
       <trans-unit id="12" resname="r728008924" restype="string" datatype="x-android-resource">
         <source>Failed to call {person_name}: {message}</source>
-        <target state="translated">呼叫失败 {person_name}:{message}</target>
+        <target state="translated">呼叫{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="13" resname="r260271836" restype="string" datatype="x-android-resource">
         <source>Failed to call {person_name}</source>
-        <target state="translated">呼叫失败{person_name}</target>
+        <target state="translated">呼叫{person_name}失败</target>
       </trans-unit>
       <trans-unit id="14" resname="r842940493" restype="string" datatype="x-android-resource">
         <source>{state}, {country}</source>
@@ -3959,7 +4013,7 @@
       </trans-unit>
       <trans-unit id="19" resname="r475455417" restype="string" datatype="x-android-resource">
         <source>Transcript</source>
-        <target state="translated">复印件</target>
+        <target state="translated">记录副本</target>
         <note annotates="source">This refers to medical consult transcript</note>
       </trans-unit>
       <trans-unit id="20" resname="r388976557" restype="string" datatype="x-android-resource">
@@ -3969,17 +4023,17 @@
       </trans-unit>
       <trans-unit id="21" resname="r894038144" restype="string" datatype="x-android-resource">
         <source>Speakerphone off</source>
-        <target state="translated">关闭扬声器</target>
+        <target state="translated">扬声器关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
       </trans-unit>
       <trans-unit id="22" resname="r732893650" restype="string" datatype="x-android-resource">
         <source>Microphone on</source>
-        <target state="translated">打开麦克风</target>
+        <target state="translated">麦克风打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
       </trans-unit>
       <trans-unit id="23" resname="r66962854" restype="string" datatype="x-android-resource">
         <source>Microphone off</source>
-        <target state="translated">关闭麦克风</target>
+        <target state="translated">麦克风关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
       </trans-unit>
       <trans-unit id="24" resname="r898356852" restype="string" datatype="x-android-resource">
@@ -3996,7 +4050,7 @@
       </trans-unit>
       <trans-unit id="27" resname="r1052400974" restype="string" datatype="x-android-resource">
         <source>You are currently on hold</source>
-        <target state="translated">您目前处于暂停状态</target>
+        <target state="translated">您目前处于等候接听状态</target>
       </trans-unit>
       <trans-unit id="28" resname="r705098731" restype="string" datatype="x-android-resource">
         <source>Settings</source>
@@ -4009,7 +4063,7 @@
       <trans-unit id="31" resname="r195753892" restype="string" datatype="x-android-resource">
         <source>{sound_track_id}, Len: %d</source>
         <target state="translated">{sound_track_id}, Len:%d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="x-android-resource">
         <source>Select a track you want to download</source>
@@ -4041,7 +4095,7 @@
       </trans-unit>
       <trans-unit id="39" resname="r324623762" restype="string" datatype="x-android-resource">
         <source>Diagnosis codes:\n</source>
-        <target state="translated">诊断码：\n</target>
+        <target state="translated">诊断代码：\n</target>
       </trans-unit>
       <trans-unit id="40" resname="r402577151" restype="string" datatype="x-android-resource">
         <source>{duration}, {frequency}</source>
@@ -4057,7 +4111,7 @@
       </trans-unit>
       <trans-unit id="43" resname="r48889349" restype="string" datatype="x-android-resource">
         <source>Delivered on {time}</source>
-        <target state="translated">在{time}发送</target>
+        <target state="translated">已在{time}发送</target>
       </trans-unit>
       <trans-unit id="44" resname="r998864187" restype="string" datatype="x-android-resource">
         <source>Delivered</source>
@@ -4065,7 +4119,7 @@
       </trans-unit>
       <trans-unit id="45" resname="r1062842433" restype="string" datatype="x-android-resource">
         <source>Read on {time}</source>
-        <target state="translated">在{time}读取</target>
+        <target state="translated">{time}已读</target>
       </trans-unit>
       <trans-unit id="46" resname="r284091905" restype="string" datatype="x-android-resource">
         <source>Read</source>
@@ -4114,7 +4168,7 @@
       </trans-unit>
       <trans-unit id="57" resname="r794612910" restype="string" datatype="x-android-resource">
         <source>Never Mind</source>
-        <target state="translated">没有关系</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Positive Button text. Give up removing an attachment.</note>
       </trans-unit>
       <trans-unit id="58" resname="r477931224" restype="string" datatype="x-android-resource">
@@ -4174,8 +4228,8 @@
   <file original="android/src/com/healthtap/live_consult/chat/messages/SoapMessage.java" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="4" resname="r795802560" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target state="translated">Códigos de Diagnóstico:\n</target>
+        <source>Diagnosis codes:</source>
+        <target state="translated">Códigos de Diagnóstico:</target>
       </trans-unit>
     </body>
   </file>
@@ -4202,15 +4256,47 @@
   <file original="android/src/com/healthtap/live_consult/chat/messages/SoapMessage.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="4" resname="r795802560" restype="string" datatype="java">
-        <source>Diagnosis codes:\n</source>
-        <target state="translated">诊断码：\n</target>
+        <source>Diagnosis codes:</source>
+        <target state="translated">诊断代码：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="5" resname="r717299647" restype="string" datatype="x-android-resource">
+        <source>You haven't selected a stethoscope yet</source>
+        <target state="translated">No has seleccionado un estetoscopio aún</target>
       </trans-unit>
     </body>
   </file>
   <file original="android/res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="2" resname="r717299647" restype="string" datatype="x-android-resource">
-        <source>You haven\&apos;t selected a stethoscope yet</source>
+        <source>You haven't selected a stethoscope yet</source>
+        <target state="translated">您尚未选择听诊器</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="1" resname="r812721282" restype="string" datatype="x-android-resource">
+        <source>Join my consult with:</source>
+        <target state="translated">加入我的咨询：</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r796565643" restype="string" datatype="x-android-resource">
+        <source>Share via:</source>
+        <target state="translated">分享：</target>
+      </trans-unit>
+      <trans-unit id="3" resname="r902851796" restype="string" datatype="x-android-resource">
+        <source>Downloaded to:</source>
+        <target state="translated">下载到：</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r795802560" restype="string" datatype="x-android-resource">
+        <source>Diagnosis codes:\n</source>
+        <target state="translated">诊断代码：\n</target>
+      </trans-unit>
+      <trans-unit id="5" resname="r717299647" restype="string" datatype="x-android-resource">
+        <source>You haven't selected a stethoscope yet</source>
         <target state="translated">您尚未选择听诊器</target>
       </trans-unit>
     </body>

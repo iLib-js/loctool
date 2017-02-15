@@ -168,7 +168,7 @@ module.exports = {
         test.done();
     },
     
-    testJavaScriptResourceFileEscapeQuotes: function(test) {
+    testJavaScriptResourceFileEscapeDoubleQuotes: function(test) {
         test.expect(2);
 
         var p = new WebProject({
@@ -207,6 +207,51 @@ module.exports = {
         	'ilib.data.strings_de_DE = {\n' +
         	'    "source text": "Quellen\\"text",\n' +
         	'    "more source text": "mehr Quellen\\"text"\n' +
+        	'};\n'
+        );
+        
+        test.done();
+    },
+    
+    testJavaScriptResourceFileDontEscapeSingleQuotes: function(test) {
+        test.expect(2);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+        	sourceLocale: "en-US",
+        	resourceDirs: {
+        		"js": "feelGood/localized_js"
+        	}
+        }, "./testfiles");
+        
+        var jsrf = new JavaScriptResourceFile({
+        	project: p,
+        	pathName: "feelGood/localized_js/de-DE.js",
+        	locale: "de-DE"
+        });
+        
+        test.ok(jsrf);
+        [
+        	new ResourceString({
+        		project: "ht-webapp12",
+        		locale: "de-DE",
+        		key: "source text",
+        		source: "Quellen'text"     		
+        	}),
+        	new ResourceString({
+        		project: "ht-webapp12",
+        		locale: "de-DE",
+        		key: "more source text",
+        		source: "mehr Quellen'text"
+        	})
+        ].forEach(function(res) {
+        	jsrf.addResource(res);
+        });
+        
+        test.equal(jsrf.getContent(),
+        	'ilib.data.strings_de_DE = {\n' +
+        	'    "source text": "Quellen\'text",\n' +
+        	'    "more source text": "mehr Quellen\'text"\n' +
         	'};\n'
         );
         

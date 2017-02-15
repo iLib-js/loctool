@@ -10,7 +10,7 @@ if (!utils) {
 
 module.exports = {
     testUtilsIsAndroidResourceYes: function(test) {
-        test.expect(10);
+        test.expect(17);
         
         test.ok(utils.isAndroidResource("@anim/foo_bar_foo"));
         test.ok(utils.isAndroidResource("@array/foo_bar_foo"));
@@ -21,15 +21,23 @@ module.exports = {
         test.ok(utils.isAndroidResource("@integer/foo_bar_foo"));
         test.ok(utils.isAndroidResource("@layout/foo_bar_foo"));
         test.ok(utils.isAndroidResource("@string/foo_bar_foo"));
-        test.ok(utils.isAndroidResource("@style/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@+id/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@+style/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@+android:id/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@android:id/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@android:anim/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@android:color/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@android:id/foo_bar_foo"));
+        test.ok(utils.isAndroidResource("@android:style/foo_bar_foo"));
 
         test.done();
     },
 
     testUtilsIsAndroidResourceNo: function(test) {
-        test.expect(1);
+        test.expect(2);
 
         test.ok(!utils.isAndroidResource("foo bar faooasdfas"));
+        test.ok(!utils.isAndroidResource("@foobar/foobar"));
         
         test.done();
     },
@@ -143,5 +151,35 @@ module.exports = {
         test.equal(utils.hashKey("This is a test"), "r654479252");
         
         test.done();
+    },
+    
+    testTrimEscapedRealWhitespace: function(test) {
+        test.expect(4);
+        
+        test.equal(utils.trimEscaped("This is a test"), "This is a test");
+        test.equal(utils.trimEscaped(" \t \n   This is a test"), "This is a test");
+        test.equal(utils.trimEscaped("This is a test   \t  \n"), "This is a test");
+        test.equal(utils.trimEscaped("\n \t \r This is a test \r \t \n"), "This is a test");
+
+        test.done();
+    },
+
+    testTrimEscapedEscapedWhitespace: function(test) {
+        test.expect(3);
+        
+        test.equal(utils.trimEscaped(" \\t \\n   This is a test"), "This is a test");
+        test.equal(utils.trimEscaped("This is a test   \\t  \\n"), "This is a test");
+        test.equal(utils.trimEscaped("\\n \\t \\r This is a test \\r \\t \\n"), "This is a test");
+
+        test.done();
+    },
+    
+    testTrimEscapedEscapedUndefined: function(test) {
+        test.expect(1);
+        
+        test.equal(utils.trimEscaped(undefined), undefined);
+        
+        test.done();
     }
+
 }

@@ -106,7 +106,7 @@ def get_overlap_strings2(orig_with_markup, stripped)
     md = /(.*)(<[^>]*>)(.*)/.match(orig_with_markup)
   end
   if md.nil?
-    if stripped.include?(orig_with_markup)
+    if stripped.include?(orig_with_markup) || stripped.include?(Sanitize.clean(orig_with_markup))
       return [orig_with_markup]
     else
       return []
@@ -116,7 +116,7 @@ def get_overlap_strings2(orig_with_markup, stripped)
   #puts "md[1]=#{md[1]}"
   if md[3].length == 0
     ret = []
-  elsif stripped.include?(md[3])
+  elsif stripped.include?(Sanitize.clean(md[3]))
     #(0..md.length-1).each{|i| puts "md [#{i}]=#{puts md[i]}\n"}
     #puts "res=#{md[3]}"
     #puts "last-char=#{orig_with_markup[orig_with_markup.length - 1]} ord=#{orig_with_markup[orig_with_markup.length - 1].ord.to_s(16)}"
@@ -146,7 +146,8 @@ def accumulate_values(root, values, path_name)
   if orig && orig.is_a?(String)
     s = Sanitize.clean(orig)
     if s.gsub(/[^[:print:]]/ , '').strip == orig.gsub(/[^[:print:]]/ , '').strip
-      values << s.gsub(/[^[:print:]]/ , '')#.gsub(/[^a-zA-Z0-9_\s,\.'’_—\(\)!\?-]/, '').strip
+      #values << orig.gsub(/[^[:print:]]/ , '')
+      values << orig
     elsif !(/(.*)(<[^>]*>)(.*)/.match(orig))
       #there is no html only special characters filtered out by Sanitize.clean
       values.concat(break_around_non_clean_chars(orig, s))
@@ -173,6 +174,7 @@ def process_pseudo_values(values)
 end
 
 def pseudolocalize(string)
+  string = string.gsub(/(&.*?;)/, '')
   replaced = string.split('').map{|c| PSEUDO_MAP[c] ? PSEUDO_MAP[c] : c}.join('')
   padding = ((string.length * 0.4).to_i).downto(1).to_a.join('')
   (replaced).concat(padding)
@@ -185,7 +187,7 @@ def process_values(locale_mappings, values, unmapped_words)
   ret = {}
   values.each{|v|
     next if v.strip.length == 0
-    hashed_key = create_hashed_key(clean_string(v))
+    hashed_key = create_hashed_key(v)
     formatted_key = v.gsub('\n', '').gsub(' ','_').capitalize
     # puts "checking #{v} #{hashed_key} #{formatted_key}"
     # puts locale_mappings.keys.first(50).to_s
@@ -197,7 +199,9 @@ def process_values(locale_mappings, values, unmapped_words)
     elsif locale_mappings[v]
       ret[v] = locale_mappings[v]
     else
-      ret[v] = pseudolocalize(v)
+      # TODO: turn off pseudolocalize for missing translation via a command-line switch
+      # ret[v] = pseudolocalize(v)
+      ret[v] = v
       unmapped_words << v
     end
   }
@@ -234,7 +238,7 @@ def process_british_values(values)
       end
       if (!is_letter || last_character)
         processed << check_for_british(curr_word)
-        processed << c unless last_character
+        processed << c unless (last_character && is_letter)
         curr_word = ''
         if HTML_ESCAPE_CHARS.keys.include?(c) and !skipping
           skipping = true
@@ -329,10 +333,16 @@ def process_line(skip_block_indent, ret, line, from_to)
               #puts '3'
               #punctuation in beginning
               res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
-            elsif k.strip.match(/^[[:punct:]]/)
+              #if !res && Sanitize.clean(line).gsub(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
+              #  line = Sanitize.clean(line).gsub(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
+              #end
+
+            elsif k.strip.match(/^([[:punct:]]|[[:space:]])/)
+              #after stripping in beginning, still funny characters present like \u2028
               #puts '4'
               res = line.gsub!(/(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)\b/, v)
-            elsif k.strip.match(/[[:punct:]]$/)
+            elsif k.strip.match(/([[:punct:]]|[[:space:]])$/)
+              #after stripping in end, still funny characters present like \u2028
               #puts '5'
               res = line.gsub!(/\b(?<![-\/:_\.|#%"'])#{Regexp.escape(k)}(?![\.="']\S)/, v)
             else
@@ -399,7 +409,7 @@ def produce_unmapped(file_to_words)
   file_to_words.each do |filename,words|
     child_hash = {}
     words.each{|w|
-      child_hash[ create_hashed_key(clean_string(w)) ] = w.gsub("\n", "")
+      child_hash[ create_hashed_key(w) ] = w.gsub("\n", "")
     }
     h[filename] = child_hash unless child_hash.keys.count == 0
   end
@@ -429,18 +439,29 @@ end
 # and two strings that have whitespace or html differences but the same
 # text get hashed to the same thing
 def clean_string(string)
-  string.gsub(/<(['"][^'"]*['"]|[^>])*>/, "").gsub(/\s+/, " ").strip
+  string.
+    # gsub(/<(['"][^'"]*['"]|[^>])*>/, "").
+    gsub(/\u2028/,' '). # remove weird unicode space (line break character)
+    gsub(/\\\\/, "\\").
+    gsub(/\\t/, "\t").
+    gsub(/\\n/, "\n").
+    gsub(/\s+/, " ").
+    gsub(/\\'/, '\'').
+    gsub(/\\"/, '"').strip
 end
 
 # from loctool/lib/JavaFile.js
 def create_hashed_key(string)
   string = string.to_s unless string.is_a?(String) and !string.nil? and string != ''
+  string = clean_string(string)
+  # puts "cleaned string is '#{string}'"
   hashed_key = 0
   # these two numbers together = 46 bits so it won't blow out the precision of an integer in javascript
   modulus = 1073741789  # largest prime number that fits in 30 bits
   multiple = 65521      #largest prime that fits in 16 bits, co-prime with the modulus
 
   string.split('').each do |char|
+    # puts "hash #{hashed_key} char #{char.ord}=#{char}"
     hashed_key += char.ord
     hashed_key *= multiple
     hashed_key %= modulus
@@ -497,7 +518,7 @@ def process_file_content(template, path_name, locale_names, all_locale_mappings)
     else
       from_to = process_values(locale_mappings, values, unmapped_for_file)
     end
-    #puts "from_to=#{from_to}"
+    puts "from_to=#{from_to}"
     puts from_to if locale_name != PSEUDO_LOCALE and from_to.keys.count > 0
     #process_values(locale_mappings, from_to.keys, unmapped_for_file)
     output_template = replace_with_translations2(template.dup, from_to)

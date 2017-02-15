@@ -15,7 +15,7 @@
   <file original="src/com/healthtap/userhtexpress/fragments/main/SendKudosFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="7" resname="r948339101" restype="string" datatype="java">
-        <source>You&apos;re awesome</source>
+        <source>You're awesome</source>
         <target state="translated">您真厉害</target>
       </trans-unit>
     </body>
@@ -23,8 +23,8 @@
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/ThankLayerDialogBox.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="16" resname="r635494459" restype="string" datatype="java">
-        <source>{name} appreciates your gratitude :&#41;</source>
-        <target state="translated">{name} 感谢您的谢意:&#41;</target>
+        <source>{name} appreciates your gratitude :)</source>
+        <target state="translated">{name} 感谢您的谢意:)</target>
       </trans-unit>
     </body>
   </file>
@@ -48,7 +48,7 @@
     <body>
       <trans-unit id="24" resname="symptom_triage_condition_alert" restype="string" datatype="x-android-resource">
         <source>Would you like to start over with new symptoms or edit your current symptoms?</source>
-        <target state="translated">您希望重新开始新的症状还是编辑您当前的症状？</target>
+        <target state="translated">您希望重新开始新的症状还是编辑您的当前症状？</target>
       </trans-unit>
       <trans-unit id="25" resname="symptom_triage_condition_alert_positive" restype="string" datatype="x-android-resource">
         <source>Leave</source>

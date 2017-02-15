@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="src/com/healthtap/userhtexpress/adapters/DoctorsListAdapter.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="r563885918" restype="string" datatype="java">
+        <source>Ask {doctor_name} a question...</source>
+        <target state="new">Ask {doctor_name} a question...</target>
+        <note annotates="source">{0} is a name prefix, such as Dr. Jr. Sr. etc. {1} is the last name of a doctor.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="res/values/strings.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2" resname="body_fetus" restype="string" datatype="x-android-resource">
+        <source>Fetus</source>
+        <target>Fetus</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

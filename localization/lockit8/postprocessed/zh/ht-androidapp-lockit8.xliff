@@ -23,8 +23,8 @@
   <file original="src/com/healthtap/userhtexpress/fragments/nux/NUXProfileFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="6" resname="r119248257" restype="string" datatype="java">
-        <source>\nPlease restart the app/device and try again.</source>
-        <target>\n请重新启动应用程序或设备，然后重新尝试。</target>
+        <source>Please restart the app/device and try again.</source>
+        <target>请重新启动应用程序或设备，然后重试。</target>
       </trans-unit>
     </body>
   </file>
@@ -32,15 +32,15 @@
     <body>
       <trans-unit id="8" resname="r110253465" restype="string" datatype="java">
         <source>Upcoming Appointments</source>
-        <target>即将来临的预约</target>
+        <target>近期预约</target>
       </trans-unit>
     </body>
   </file>
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskPickerSearchFragment.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="9" resname="r74563301" restype="string" datatype="java">
-        <source>Can&apos;t find a doctor?</source>
-        <target>找不到一位医生？</target>
+        <source>Can't find a doctor?</source>
+        <target>查找不到医生？</target>
       </trans-unit>
     </body>
   </file>
@@ -48,11 +48,11 @@
     <body>
       <trans-unit id="10" resname="r308900797" restype="string" datatype="java">
         <source>Make Appointment with {doctor_name}</source>
-        <target>与{doctor_name}预约</target>
+        <target>预约{doctor_name}</target>
       </trans-unit>
       <trans-unit id="11" resname="r907394117" restype="string" datatype="java">
         <source>Message with {doctor_name}</source>
-        <target>与{doctor_name}发送信息</target>
+        <target>发信息给{doctor_name}</target>
       </trans-unit>
       <trans-unit id="12" resname="r291695355" restype="string" datatype="java">
         <source>Chat with {doctor_name}</source>
@@ -68,7 +68,7 @@
     <body>
       <trans-unit id="14" resname="r715650326" restype="string" datatype="java">
         <source>Connect with {doctor_name}</source>
-        <target>连接{doctor_name}</target>
+        <target>联系{doctor_name}</target>
       </trans-unit>
     </body>
   </file>
@@ -92,19 +92,19 @@
     <body>
       <trans-unit id="20" resname="gift_refer_linkedin_title" restype="string" datatype="x-android-resource">
         <source>{user_name} is gifting you ${price} off to talk to HealthTap doctors</source>
-        <target>{user_name}为您与HealthTap医生交谈减免${price}</target>
+        <target>{user_name}为您进行的HealthTap医生咨询赠予了${price}优惠</target>
       </trans-unit>
       <trans-unit id="21" resname="gift_refer_linkedin_summary" restype="string" datatype="x-android-resource">
-        <source>Get ${price} off video or text chat consults with your doctor or specialist on healthtap—advice &amp; prescriptions! :&#41;</source>
-        <target>在HealthTap上通过视频或文字咨询您的医生或专科医生，可以减免${price}—建议和处方！:&#41;</target>
+        <source>Get ${price} off video or text chat consults with your doctor or specialist on healthtap—advice &amp; prescriptions! :)</source>
+        <target>在HealthTap上通过视频或文本聊天咨询您的医生或专科医生并获取建议和处方，可享受${price}优惠！:)</target>
       </trans-unit>
       <trans-unit id="22" resname="symptom_triage_instructional_phr_title" restype="string" datatype="x-android-resource">
         <source>Hi, %s</source>
         <target>您好，%s</target>
       </trans-unit>
       <trans-unit id="23" resname="symptom_triage_instructional_phr_content" restype="string" datatype="x-android-resource">
-        <source>I\&apos;d love to get to know %s better.</source>
-        <target>我希望知道%s现在更好。</target>
+        <source>I'd love to get to know %s better.</source>
+        <target>我希望能更好地了解%s。</target>
       </trans-unit>
     </body>
   </file>

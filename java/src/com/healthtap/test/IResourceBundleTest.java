@@ -226,7 +226,30 @@ public class IResourceBundleTest extends TestCase
 		assertEquals("Email Sent", result.toString());
 		// assertEquals("emailsent", result.toString());
 	}
-	
+
+	public void testGetLocStringEchoWhitespace()
+	{
+		Locale l = Locale.forLanguageTag("es-ES");
+		MockResources res = new MockResources(l);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, l);
+		assertNotNull(resBundle);
+		
+		String result = resBundle.getString("Done");
+		assertEquals("Aceptar", result.toString());
+		
+		result = resBundle.getString("   Done");
+		assertEquals("   Aceptar", result.toString());
+
+		result = resBundle.getString("Done   ");
+		assertEquals("Aceptar   ", result.toString());
+
+		result = resBundle.getString("  Done   ");
+		assertEquals("  Aceptar   ", result.toString());
+		
+		result = resBundle.getString(" \t\n Done  \t\t\n ");
+		assertEquals(" \t\n Aceptar  \t\t\n ", result.toString());
+	}
+
 	public void testGetLocaleWithResourcesGermany()
 	{
 		final Locale locale = Locale.forLanguageTag("de-DE");
@@ -402,6 +425,17 @@ public class IResourceBundleTest extends TestCase
 		assertEquals("àçţüàľ šţàţë fõŕ Ŵífí: {foobar}9876543210", resBundle.getStringPseudo("actual state for Wifi: {foobar}").toString());
 	}
 	
+	public void testGetPseudoStringEchoWhitespace()
+	{
+		final Locale locale = Locale.forLanguageTag("en-GB");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setMissingType(MissingType.PSEUDO);
+		assertNotNull(resBundle);
+
+		assertEquals("    Ëñğàğëmëñţ þõíñţ!76543210\n\n", resBundle.getString("    Engagement point!\n\n").toString());
+	}
+
 	/*
 	 Do we even need this?
 	public void testGetStringPseudoTypeJavaSkipHTMLTags()
@@ -557,7 +591,17 @@ public class IResourceBundleTest extends TestCase
 		assertEquals("r909283218", resBundle.makeKey("Can\'t find an application for SMS"));
 		assertEquals("r909283218", resBundle.makeKey("Can\'t   \t\n \t   find an    \t \n \r   application for SMS"));
 	}
-	
+
+	public void testMakeKeyUnicodeEscapes()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		
+		assertEquals("r705871347", resBundle.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"));
+	}
+
 	public void testMakeKeyTrimWhiteSpace()
 	{
 		final Locale locale = Locale.forLanguageTag("de-DE");
@@ -570,5 +614,24 @@ public class IResourceBundleTest extends TestCase
 		
 		assertEquals("r909283218", resBundle.makeKey("Can\'t find an application for SMS"));
 		assertEquals("r909283218", resBundle.makeKey(" \t\t\n\r    Can\'t find an application for SMS   \n \t \r"));
+	}
+
+	public void testMakeKeyRubyCompatibility()
+	{
+		final Locale locale = Locale.forLanguageTag("de-DE");
+		MockResources res = new MockResources(locale);
+		IResourceBundle resBundle = new IResourceBundle(R.string.class, res, locale);
+		resBundle.setType(IResourceBundle.JAVA_TYPE);
+		
+        assertEquals("r487572481", resBundle.makeKey("This has \\\"double quotes\\\" in it."));
+        assertEquals("r900797640", resBundle.makeKey("This has \\\'single quotes\\\' in it."));
+        assertEquals("r494590307", resBundle.makeKey("This is a double quoted string"));
+        assertEquals("r683276274", resBundle.makeKey("This is a single quoted string"));
+        assertEquals("r246354917", resBundle.makeKey("This is a double quoted string with \\\"quotes\\\" in it."));
+        assertEquals("r248819747", resBundle.makeKey("This is a single quoted string with \\\'quotes\\\' in it."));
+        assertEquals("r1001831480", resBundle.makeKey("This is a double quoted string with \\n return chars in it"));
+        assertEquals("r147719125", resBundle.makeKey("This is a single quoted string with \\n return chars in it"));
+        assertEquals("r276797171", resBundle.makeKey("This is a double quoted string with \\t tab chars in it"));
+        assertEquals("r303137748", resBundle.makeKey("This is a single quoted string with \\t tab chars in it"));
 	}
 }

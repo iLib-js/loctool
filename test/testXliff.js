@@ -440,7 +440,8 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
+            project: "ht-webapp12",
+            origin: "source"
         });
         
         x.addResource(res);
@@ -450,7 +451,8 @@ module.exports = {
             locale: "en-US",
             key: "huzzah",
             pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
+            project: "ht-webapp12",
+            origin: "origin"
         });
         
         x.addResource(res);
@@ -476,54 +478,6 @@ module.exports = {
         test.done();
     },
 
-    testXliffSerializeWithSourceOnly: function(test) {
-        test.expect(2);
-
-        var x = new Xliff();
-        test.ok(x);
-        
-        var res = new ResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
-            key: "foobar",
-            pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp"
-        });
-        
-        x.addResource(res);
-
-        res = new ResourceString({
-            source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
-        });
-        
-        x.addResource(res);
-
-        test.equal(x.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
-                '        <source>baby baby</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
-        test.done();
-    },
-
     testXliffSerializeWithContext: function(test) {
         test.expect(2);
 
@@ -536,37 +490,39 @@ module.exports = {
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             project: "ht-androidapp",
-            context: "foobar"
+            context: "foobar",
+            origin: "source"
         });
         
         x.addResource(res);
 
         var res = new ContextResourceString({
-            source: "Asdf asdf",
-            locale: "en-US",
+            source: "gutver",
+            locale: "nl-NL",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             project: "ht-androidapp",
-            context: "asdf"
+            context: "foobar",
+            origin: "target"
         });
         
         x.addResource(res);
 
-        test.equal(x.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext" x-context="foobar">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="string" datatype="plaintext" x-context="asdf">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
-       
+        var actual = x.serialize();
+        var expected = '<?xml version="1.0" encoding="utf-8"?>\n' +
+	        '<xliff version="1.2">\n' +
+	        '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="ht-androidapp">\n' +
+	        '    <body>\n' +
+	        '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext" x-context="foobar">\n' +
+	        '        <source>Asdf asdf</source>\n' +
+	        '        <target>gutver</target>\n' +
+	        '      </trans-unit>\n' +
+	        '    </body>\n' +
+	        '  </file>\n' +
+	        '</xliff>';
+
+        diff(actual, expected);
+        test.equal(actual, expected);       
         test.done();
     },
 
@@ -582,6 +538,7 @@ module.exports = {
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             project: "ht-androidapp",
+            origin: "source",
             id: 4444444
         });
         
@@ -589,51 +546,57 @@ module.exports = {
 
         res = new ResourceString({
             source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
+            locale: "nl-NL",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            origin: "target",
+            id: 4444444
         });
         
         x.addResource(res);
 
-        diff(x.serialize(), 
-                '<?xml version="1.0" encoding="utf-8"?>\n' +
-                '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="4444444" resname="foobar" restype="string" datatype="plaintext">\n' +
-                '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="4444445" resname="huzzah" restype="string" datatype="plaintext">\n' +
-                '        <source>baby baby</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
-                '</xliff>');
+        res = new ResourceString({
+            source: "abcdef",
+            locale: "en-US",
+            key: "asdf",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            origin: "source"
+        });
+        
+        x.addResource(res);
 
-        test.equal(x.serialize(), 
+        res = new ResourceString({
+            source: "hijklmn",
+            locale: "nl-NL",
+            key: "asdf",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            origin: "target"
+        });
+        
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="4444444" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
+                '        <target>baby baby</target>\n' +
                 '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="4444445" resname="huzzah" restype="string" datatype="plaintext">\n' +
-                '        <source>baby baby</source>\n' +
+                '      <trans-unit id="4444445" resname="asdf" restype="string" datatype="plaintext">\n' +
+                '        <source>abcdef</source>\n' +
+                '        <target>hijklmn</target>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
-                '</xliff>');
+                '</xliff>';
+        diff(actual, expected);
+        test.equal(actual, expected);
        
         test.done();
     },
@@ -793,7 +756,7 @@ module.exports = {
                 '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
                 '        <target>foobarfoo</target>\n' +
-                '        <note annotates="source">foobar is where it&apos;s at!</note>\n' +
+                '        <note annotates="source">foobar is where it\'s at!</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
@@ -829,46 +792,42 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "ht-webapp12"
+            project: "ht-webapp12",
+            origin: "source"
         });
         
         x.addResource(res);
 
         res = new ResourceString({
             source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
+            locale: "nl-NL",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-webapp12",
+            origin: "target"
         });
         
         x.addResource(res);
 
-        test.equal(x.serialize(), 
+        var actual = x.serialize();
+        var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-webapp12">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="ht-webapp12">\n' +
                 '    <header>\n' +
             	'      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
                 '    </header>\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <header>\n' +
-                '      <tool tool-id="loctool" tool-name="Localization Tool" tool-version="1.2.34" tool-company="My Company, Inc." copyright="Copyright 2016, My Company, Inc. All rights reserved."></tool>\n' +
-                '    </header>\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
-                '        <source>baby baby</source>\n' +
+                '        <target>baby baby</target>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
-                '</xliff>');
+                '</xliff>';
        
+        diff(actual, expected);
+        test.equal(actual, expected);
         test.done();
     },
 
@@ -888,26 +847,52 @@ module.exports = {
             pathName: "foo/bar/asdf.java",
             project: "ht-androidapp",
             resType: "plural",
-            quantity: "one"
+            origin: "source",
+    		autoKey: true,
+    		state: "new",
+    		datatype: "ruby"
+        });
+        
+        x.addResource(res);
+        
+        res = new ResourcePlural({
+            strings: {
+            	"one": "Da gibts 1 Objekt.",
+            	"other": "Da gibts {n} Objekten."
+            },
+            locale: "de-DE",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            resType: "plural",
+            origin: "target",
+    		autoKey: true,
+    		state: "new",
+    		datatype: "ruby"
         });
         
         x.addResource(res);
 
-        test.equal(x.serialize(), 
+        var actual = x.serialize();
+        var expected = 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="x-android-resource" extype="one">\n' +
+                '      <trans-unit id="1" resname="foobar" restype="plural" datatype="ruby" extype="one">\n' +
                 '        <source>There is 1 object.</source>\n' +
+                '        <target state="new">Da gibts 1 Objekt.</target>\n' +
                 '      </trans-unit>\n' +
-                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="x-android-resource" extype="other">\n' +
+                '      <trans-unit id="2" resname="foobar" restype="plural" datatype="ruby" extype="other">\n' +
                 '        <source>There are {n} objects.</source>\n' +
+                '        <target state="new">Da gibts {n} Objekten.</target>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
-                '</xliff>');
-       
+                '</xliff>';
+        diff(actual, expected);
+        test.equal(actual, expected);
+        
         test.done();
     },
 
@@ -922,29 +907,46 @@ module.exports = {
             locale: "en-US",
             key: "foobar",
             pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp"
+            project: "ht-androidapp",
+            origin: "source"
+        });
+        
+        x.addResource(res);
+        
+        res = new ResourceArray({
+            array: ["Zero", "Eins", "Zwei"],
+            locale: "de-DE",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            origin: "target"
         });
         
         x.addResource(res);
 
-        test.equal(x.serialize(), 
+        var actual = x.serialize();
+        var expected =
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="array" datatype="x-android-resource" extype="0">\n' +
                 '        <source>Zero</source>\n' +
+                '        <target>Zero</target>\n' +
                 '      </trans-unit>\n' +
                 '      <trans-unit id="2" resname="foobar" restype="array" datatype="x-android-resource" extype="1">\n' +
                 '        <source>One</source>\n' +
+                '        <target>Eins</target>\n' +
                 '      </trans-unit>\n' +
                 '      <trans-unit id="3" resname="foobar" restype="array" datatype="x-android-resource" extype="2">\n' +
                 '        <source>Two</source>\n' +
+                '        <target>Zwei</target>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +
-                '</xliff>');
-       
+                '</xliff>';
+        diff(actual, expected)
+        test.equal(actual, expected);
         test.done();
     },
 
@@ -959,7 +961,19 @@ module.exports = {
             locale: "en-US",
             key: 'foobar "asdf"',
             pathName: "foo/bar/asdf.java",
-            project: "ht-androidapp"
+            project: "ht-androidapp",
+            origin: "source"
+        });
+        
+        x.addResource(res);
+
+        var res = new ResourceString({
+            source: "Asdf 'quotes'",
+            locale: "de-DE",
+            key: 'foobar "asdf"',
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            origin: "target"
         });
         
         x.addResource(res);
@@ -967,9 +981,76 @@ module.exports = {
         res = new ResourceString({
             source: "baby &lt;b&gt;baby&lt;/b&gt;",
             locale: "en-US",
-            key: "huzzah &quot;asdf&quot;",
+            key: "huzzah &quot;asdf&quot; #(test)",
             pathName: "foo/bar/j.java",
-            project: "ht-webapp12"
+            project: "ht-webapp12",
+            origin: "source"
+        });
+        
+        x.addResource(res);
+
+        res = new ResourceString({
+            source: "baby #(test)",
+            locale: "de-DE",
+            key: "huzzah &quot;asdf&quot; #(test)",
+            pathName: "foo/bar/j.java",
+            project: "ht-webapp12",
+            origin: "target"
+        });
+        
+        x.addResource(res);
+
+        var actual = x.serialize();
+        var expected =
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<xliff version="1.2">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="de-DE" product-name="ht-androidapp">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="1" resname="foobar &quot;asdf&quot;" restype="string" datatype="plaintext">\n' +
+                '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
+                '        <target>Asdf \'quotes\'</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' + 
+                '  <file original="foo/bar/j.java" source-language="en-US" target-language="de-DE" product-name="ht-webapp12">\n' +
+                '    <body>\n' +
+                '      <trans-unit id="2" resname="huzzah &amp;quot;asdf&amp;quot; #(test)" restype="string" datatype="plaintext">\n' +
+                '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
+                '        <target>baby #(test)</target>\n' +
+                '      </trans-unit>\n' +
+                '    </body>\n' +
+                '  </file>\n' +
+                '</xliff>';
+        
+        diff(actual, expected);
+        test.equal(actual, expected);
+        test.done();
+    },
+
+    testXliffSerializeWithXMLEscapingWithQuotes: function(test) {
+        test.expect(2);
+
+        var x = new Xliff();
+        test.ok(x);
+        
+        var res = new ResourceString({
+            source: "Here are \"double\" and 'single' quotes.",
+            locale: "en-US",
+            key: '"double" and \'single\'',
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            origin: "source"
+        });
+        
+        x.addResource(res);
+
+        var res = new ResourceString({
+            source: "Hier zijn \"dubbel\" en 'singel' quotaties.",
+            locale: "nl-NL",
+            key: '"double" and \'single\'',
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            origin: "target"
         });
         
         x.addResource(res);
@@ -977,20 +1058,14 @@ module.exports = {
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
-                '      <trans-unit id="1" resname="foobar &quot;asdf&quot;" restype="string" datatype="plaintext">\n' +
-                '        <source>Asdf &lt;b&gt;asdf&lt;/b&gt;</source>\n' +
+                '      <trans-unit id="1" resname="&quot;double&quot; and &apos;single&apos;" restype="string" datatype="plaintext">\n' +
+                '        <source>Here are "double" and \'single\' quotes.</source>\n' +
+                '        <target>Hier zijn "dubbel" en \'singel\' quotaties.</target>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah &amp;quot;asdf&amp;quot;" restype="string" datatype="plaintext">\n' +
-                '        <source>baby &amp;lt;b&amp;gt;baby&amp;lt;/b&amp;gt;</source>\n' +   // double escaped!
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' +
                 '</xliff>');
        
         test.done();
@@ -1008,18 +1083,20 @@ module.exports = {
             key: "foobar",
             pathName: "foo/bar/asdf.java",
             project: "ht-androidapp",
-            comment: "A very nice string"
+            comment: "A very nice string",
+            origin: "source"
         });
         
         x.addResource(res);
 
         res = new ResourceString({
             source: "baby baby",
-            locale: "en-US",
-            key: "huzzah",
-            pathName: "foo/bar/j.java",
-            project: "ht-webapp12",
-            comment: "Totally awesome."
+            locale: "nl-NL",
+            key: "foobar",
+            pathName: "foo/bar/asdf.java",
+            project: "ht-androidapp",
+            comment: "Totally awesome.",
+            origin: "target"
         });
         
         x.addResource(res);
@@ -1027,19 +1104,12 @@ module.exports = {
         test.equal(x.serialize(), 
                 '<?xml version="1.0" encoding="utf-8"?>\n' +
                 '<xliff version="1.2">\n' +
-                '  <file original="foo/bar/asdf.java" source-language="en-US" product-name="ht-androidapp">\n' +
+                '  <file original="foo/bar/asdf.java" source-language="en-US" target-language="nl-NL" product-name="ht-androidapp">\n' +
                 '    <body>\n' +
                 '      <trans-unit id="1" resname="foobar" restype="string" datatype="plaintext">\n' +
                 '        <source>Asdf asdf</source>\n' +
+                '        <target>baby baby</target>\n' +
                 '        <note annotates="source">A very nice string</note>\n' +
-                '      </trans-unit>\n' +
-                '    </body>\n' +
-                '  </file>\n' + 
-                '  <file original="foo/bar/j.java" source-language="en-US" product-name="ht-webapp12">\n' +
-                '    <body>\n' +
-                '      <trans-unit id="2" resname="huzzah" restype="string" datatype="plaintext">\n' +
-                '        <source>baby baby</source>\n' +
-                '        <note annotates="source">Totally awesome.</note>\n' +
                 '      </trans-unit>\n' +
                 '    </body>\n' +
                 '  </file>\n' +

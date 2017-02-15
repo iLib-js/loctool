@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1" resname="r431194129" restype="string" datatype="x-android-resource">
         <source>Enter name, specialty, or topic</source>
-        <target state="translated">输入姓名，专科或话题</target>
+        <target state="translated">输入姓名，专科，或话题</target>
       </trans-unit>
       <trans-unit id="2" resname="r713954102" restype="string" datatype="x-android-resource">
         <source>{doctor_name} invited.</source>
@@ -32,27 +32,27 @@
       </trans-unit>
       <trans-unit id="8" resname="r202246463" restype="string" datatype="x-android-resource">
         <source>Failed to remove {person_name}: {message}</source>
-        <target state="translated">删除失败{person_name}:{message}</target>
+        <target state="translated">删除{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="9" resname="r425723870" restype="string" datatype="x-android-resource">
         <source>Failed to remove {person_name}</source>
-        <target state="translated">删除失败{person_name}</target>
+        <target state="translated">删除{person_name}失败</target>
       </trans-unit>
       <trans-unit id="10" resname="r211395157" restype="string" datatype="x-android-resource">
         <source>Failed to promote {person_name}: {message}</source>
-        <target state="translated">升级失败{person_name}:{message}</target>
+        <target state="translated">升级{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="11" resname="r653015505" restype="string" datatype="x-android-resource">
         <source>Failed to promote {person_name}</source>
-        <target state="translated">升级失败{person_name}</target>
+        <target state="translated">升级{person_name}失败</target>
       </trans-unit>
       <trans-unit id="12" resname="r728008924" restype="string" datatype="x-android-resource">
         <source>Failed to call {person_name}: {message}</source>
-        <target state="translated">呼叫失败 {person_name}:{message}</target>
+        <target state="translated">呼叫{person_name}失败:{message}</target>
       </trans-unit>
       <trans-unit id="13" resname="r260271836" restype="string" datatype="x-android-resource">
         <source>Failed to call {person_name}</source>
-        <target state="translated">呼叫失败{person_name}</target>
+        <target state="translated">呼叫{person_name}失败</target>
       </trans-unit>
       <trans-unit id="14" resname="r842940493" restype="string" datatype="x-android-resource">
         <source>{state}, {country}</source>
@@ -76,27 +76,27 @@
       </trans-unit>
       <trans-unit id="19" resname="r475455417" restype="string" datatype="x-android-resource">
         <source>Transcript</source>
-        <target state="translated">复印件</target>
+        <target state="translated">记录副本</target>
         <note annotates="source">This refers to medical consult transcript</note>
       </trans-unit>
       <trans-unit id="20" resname="r388976557" restype="string" datatype="x-android-resource">
         <source>Speakerphone on</source>
-        <target state="translated">打开扬声器</target>
+        <target state="translated">扬声器打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the speakerphone</note>
       </trans-unit>
       <trans-unit id="21" resname="r894038144" restype="string" datatype="x-android-resource">
         <source>Speakerphone off</source>
-        <target state="translated">关闭扬声器</target>
+        <target state="translated">扬声器关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the speakerphone</note>
       </trans-unit>
       <trans-unit id="22" resname="r732893650" restype="string" datatype="x-android-resource">
         <source>Microphone on</source>
-        <target state="translated">打开麦克风</target>
+        <target state="translated">麦克风打开</target>
         <note annotates="source">This is a toggle button text for users to turn on the microphone</note>
       </trans-unit>
       <trans-unit id="23" resname="r66962854" restype="string" datatype="x-android-resource">
         <source>Microphone off</source>
-        <target state="translated">关闭麦克风</target>
+        <target state="translated">麦克风关闭</target>
         <note annotates="source">This is a toggle button text for users to turn off the microphone</note>
       </trans-unit>
       <trans-unit id="24" resname="r898356852" restype="string" datatype="x-android-resource">
@@ -126,7 +126,7 @@
       <trans-unit id="31" resname="r195753892" restype="string" datatype="x-android-resource">
         <source>{sound_track_id}, Len: %d</source>
         <target state="translated">{sound_track_id}, Len:%d</target>
-        <note annotates="source">&apos;Len&apos; is short for &apos;Length&apos;. This refers to the length of a sound track. %d is the sound track length.</note>
+        <note annotates="source">'Len' is short for 'Length'. This refers to the length of a sound track. %d is the sound track length.</note>
       </trans-unit>
       <trans-unit id="32" resname="r606329135" restype="string" datatype="x-android-resource">
         <source>Select a track you want to download</source>
@@ -158,7 +158,7 @@
       </trans-unit>
       <trans-unit id="39" resname="r324623762" restype="string" datatype="x-android-resource">
         <source>Diagnosis codes:\n</source>
-        <target state="translated">诊断码：\n</target>
+        <target state="translated">诊断代码：\n</target>
       </trans-unit>
       <trans-unit id="40" resname="r402577151" restype="string" datatype="x-android-resource">
         <source>{duration}, {frequency}</source>
@@ -182,7 +182,7 @@
       </trans-unit>
       <trans-unit id="45" resname="r1062842433" restype="string" datatype="x-android-resource">
         <source>Read on {time}</source>
-        <target state="translated">在{time}读取</target>
+        <target state="translated">{time}已读</target>
       </trans-unit>
       <trans-unit id="46" resname="r284091905" restype="string" datatype="x-android-resource">
         <source>Read</source>
@@ -231,7 +231,7 @@
       </trans-unit>
       <trans-unit id="57" resname="r794612910" restype="string" datatype="x-android-resource">
         <source>Never Mind</source>
-        <target state="translated">没有关系</target>
+        <target state="accepted">算了, 暂不</target>
         <note annotates="source">Positive Button text. Give up removing an attachment.</note>
       </trans-unit>
       <trans-unit id="58" resname="r477931224" restype="string" datatype="x-android-resource">

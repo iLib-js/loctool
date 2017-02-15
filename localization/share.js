@@ -8,6 +8,7 @@ var path = require("path");
 
 var Xliff = require("../lib/Xliff.js");
 var TranslationUnit = Xliff.TranslationUnit;
+log4js.configure("./log4js.json");
 
 console.log("Reading all xliffs...");
 
@@ -20,8 +21,6 @@ ios.deserialize(fs.readFileSync("./current/ht-iosapp.xliff", "utf-8"));
 var feelgood = new Xliff({pathName: "./current/feelgood-video-chats_lib.xliff"});
 feelgood.deserialize(fs.readFileSync("./current/feelgood-video-chats_lib.xliff", "utf-8"));
 
-log4js.configure("../log4js.json");
-
 console.log("Organizing the translation units");
 
 var webunits = web.getTranslationUnits();
@@ -29,18 +28,43 @@ var androidunits = android.getTranslationUnits();
 var iosunits = ios.getTranslationUnits();
 var feelgoodunits = feelgood.getTranslationUnits();
 
-var units = {};
+var units = {
+	bySource: {},
+	bySourceLower: {},
+	byKey: {}
+};
 
 function clean(string) {
 	return string.replace(/\s+/g, "").trim();
 }
 
 function addUnits(unit) {
-	if (!units[unit.targetLocale]) {
-		units[unit.targetLocale] = {};
+	if (!units.byKey[unit.targetLocale]) {
+		units.byKey[unit.targetLocale] = {};
+	}
+	if (!units.bySource[unit.targetLocale]) {
+		units.bySource[unit.targetLocale] = {};
+	}
+	if (!units.bySourceLower[unit.targetLocale]) {
+		units.bySourceLower[unit.targetLocale] = {};
 	}
 	
-	units[unit.targetLocale][unit.source] = unit.target;
+	units.bySource[unit.targetLocale][unit.source] = unit;
+	units.bySourceLower[unit.targetLocale][unit.source.toLowerCase()] = unit;
+	
+	// for the data types that use hashes, when the key
+	// is the same, then the string is the same
+	switch (unit.datatype) {
+	case "ruby":
+	case "java":
+	case "x-haml":
+	case "x-android-resource":
+		units.byKey[unit.targetLocale][unit.key] = unit;
+		break;
+		
+	default:
+		break;
+	}
 }
 
 webunits.forEach(addUnits);
@@ -69,13 +93,37 @@ web = android = ios = feelgood = undefined;
 			console.log("Sharing translations ...");
 					
 			newunits.forEach(function(unit) {
-				if (units[locale][unit.source]) {
-					var newunit = unit.clone();
-					newunit.target = units[locale][unit.source];
-					newunit.targetLocale = locale;
-					newunit.state = "translated";
-					shared.addTranslationUnit(newunit);
-					console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
+				var found;
+			
+				if (units.bySource[locale][unit.source]) {
+					found = units.bySource[locale][unit.source];
+				} else if (unit.datatype === "ruby" || unit.datatype === "x-haml" || unit.datatype === "java" || unit.datatype === "x-android-resource") {
+					if (units.byKey[locale][unit.key]) {
+						found = units.byKey[locale][unit.key];
+					} else if (units.bySource[locale][unit.source.trim()]) {
+						found = units.bySource[locale][unit.source.trim()];
+					} else if (locale === "zh-Hans-CN" && units.bySourceLower[locale][unit.source.toLowerCase()]) {
+						// since Chinese is not case-sensitive, we can search case insensitively in the English
+						// and get the right match in Chinese
+						found = units.bySourceLower[locale][unit.source.toLowerCase()];
+					}
+				}
+				
+				if (found) {
+					if (found.key !== unit.key || found.datatype !== unit.datatype || found.context !== unit.context ||
+							found.project !== unit.project || found.resType !== unit.resType || found.pathName !== unit.pathName ||
+							found.ordinal !== unit.ordinal || found.quantity !== unit.quantity) {
+						var newunit = unit.clone();
+						newunit.target = found.target;
+						newunit.targetLocale = locale;
+						newunit.state = "translated";
+						shared.addTranslationUnit(newunit);
+						console.log("Found a shared translation.\nSource: '" + newunit.source + "'\nTranslation: '" + newunit.target + "'\n");
+					} else {
+						console.log("Found a new string that has an exact translation... (loctool bug?)");
+						console.log("Found: " + JSON.stringify(found));
+						console.log("New: " + JSON.stringify(unit));
+					}
 				} else {
 					console.log("Found untranslated string.");
 					untranslated.addTranslationUnit(unit);

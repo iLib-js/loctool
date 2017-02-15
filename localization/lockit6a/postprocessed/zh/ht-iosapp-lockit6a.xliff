@@ -2,7 +2,7 @@
 <xliff version="1.2">
   <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="2" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivitis\n\\n    \u00B7 Acute Cystitis\n\\n    \u00B7 Acute Pharyngitis\n\\n    \u00B7 Acute Sinusitis\n\\n    \u00B7 Allergies\n\\n    \u00B7 Asthma &#40;stable / non-emergency&#41;\n\\n    \u00B7 Athlete’s Foot\n\\n    \u00B7 Back Pain\n\\n    \u00B7 Bee Sting\n\\n    \u00B7 Bladder infections\n\\n    \u00B7 Cellulitis &#40;skin infection&#41;\n\\n    \u00B7 Cold\n\\n    \u00B7 Cough\n\\n    \u00B7 Depression\n\\n    \u00B7 Diarrhea\n\\n    \u00B7 Dry Scalp\n\\n    \u00B7 Dry Skin &#40;Eczema&#41;\n\\n    \u00B7 Eye Irritation\n\\n    \u00B7 Fever\n\\n    \u00B7 Genital Lesions\n\\n    \u00B7 Hay Fever\n\\n    \u00B7 Headache\n\\n    \u00B7 Heartburn &#40;Gastroesophageal Reflux Disease, or GERD&#41;\n\\n    \u00B7 Influenza\n\\n    \u00B7 Lab Interpretation\n\\n    \u00B7 Lice\n\\n    \u00B7 Nasal Congestion\n\\n    \u00B7 Nausea\n\\n    \u00B7 Nosebleed\n\\n    \u00B7 Painful Urination\n\\n    \u00B7 Pink Eye\n\\n    \u00B7 Poison Oak / Poison Ivy\n\\n    \u00B7 Rash\n\\n    \u00B7 Respiratory Infection\n\\n    \u00B7 Rolled Ankle\n\\n    \u00B7 Scabies\n\\n    \u00B7 Seborrheic Dermatitis &#40;Dry Scalp&#41;\n\\n    \u00B7 Skin Infection\n\\n    \u00B7 Sports Injuries\n\\n    \u00B7 Strep Throat\n\\n    \u00B7 Travel Medicine\n\\n    \u00B7 Upper Respiratory Infection\n\\n    \u00B7 Urinary Tract Infection\n\\n    \u00B7 Vaginal Itching\n\\n    \u00B7 Yeast Infection\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication &#40;narcotics&#41;\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\\n    \u00B7 Consults in languages other than English\n\\n    \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
+      <trans-unit id="2" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivitis\n\\n    \u00B7 Acute Cystitis\n\\n    \u00B7 Acute Pharyngitis\n\\n    \u00B7 Acute Sinusitis\n\\n    \u00B7 Allergies\n\\n    \u00B7 Asthma (stable / non-emergency)\n\\n    \u00B7 Athlete’s Foot\n\\n    \u00B7 Back Pain\n\\n    \u00B7 Bee Sting\n\\n    \u00B7 Bladder infections\n\\n    \u00B7 Cellulitis (skin infection)\n\\n    \u00B7 Cold\n\\n    \u00B7 Cough\n\\n    \u00B7 Depression\n\\n    \u00B7 Diarrhea\n\\n    \u00B7 Dry Scalp\n\\n    \u00B7 Dry Skin (Eczema)\n\\n    \u00B7 Eye Irritation\n\\n    \u00B7 Fever\n\\n    \u00B7 Genital Lesions\n\\n    \u00B7 Hay Fever\n\\n    \u00B7 Headache\n\\n    \u00B7 Heartburn (Gastroesophageal Reflux Disease, or GERD)\n\\n    \u00B7 Influenza\n\\n    \u00B7 Lab Interpretation\n\\n    \u00B7 Lice\n\\n    \u00B7 Nasal Congestion\n\\n    \u00B7 Nausea\n\\n    \u00B7 Nosebleed\n\\n    \u00B7 Painful Urination\n\\n    \u00B7 Pink Eye\n\\n    \u00B7 Poison Oak / Poison Ivy\n\\n    \u00B7 Rash\n\\n    \u00B7 Respiratory Infection\n\\n    \u00B7 Rolled Ankle\n\\n    \u00B7 Scabies\n\\n    \u00B7 Seborrheic Dermatitis (Dry Scalp)\n\\n    \u00B7 Skin Infection\n\\n    \u00B7 Sports Injuries\n\\n    \u00B7 Strep Throat\n\\n    \u00B7 Travel Medicine\n\\n    \u00B7 Upper Respiratory Infection\n\\n    \u00B7 Urinary Tract Infection\n\\n    \u00B7 Vaginal Itching\n\\n    \u00B7 Yeast Infection\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication (narcotics)\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone(s)\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\\n    \u00B7 Consults in languages other than English\n\\n    \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)" restype="string" datatype="x-objective-c">
         <source>Common reasons to use Virtual Consults\n\
     \u00B7 Abdominal Pain\n\
     \u00B7 Acute Bronchitis\n\
@@ -11,24 +11,24 @@
     \u00B7 Acute Pharyngitis\n\
     \u00B7 Acute Sinusitis\n\
     \u00B7 Allergies\n\
-    \u00B7 Asthma &#40;stable / non-emergency&#41;\n\
+    \u00B7 Asthma (stable / non-emergency)\n\
     \u00B7 Athlete’s Foot\n\
     \u00B7 Back Pain\n\
     \u00B7 Bee Sting\n\
     \u00B7 Bladder infections\n\
-    \u00B7 Cellulitis &#40;skin infection&#41;\n\
+    \u00B7 Cellulitis (skin infection)\n\
     \u00B7 Cold\n\
     \u00B7 Cough\n\
     \u00B7 Depression\n\
     \u00B7 Diarrhea\n\
     \u00B7 Dry Scalp\n\
-    \u00B7 Dry Skin &#40;Eczema&#41;\n\
+    \u00B7 Dry Skin (Eczema)\n\
     \u00B7 Eye Irritation\n\
     \u00B7 Fever\n\
     \u00B7 Genital Lesions\n\
     \u00B7 Hay Fever\n\
     \u00B7 Headache\n\
-    \u00B7 Heartburn &#40;Gastroesophageal Reflux Disease, or GERD&#41;\n\
+    \u00B7 Heartburn (Gastroesophageal Reflux Disease, or GERD)\n\
     \u00B7 Influenza\n\
     \u00B7 Lab Interpretation\n\
     \u00B7 Lice\n\
@@ -42,7 +42,7 @@
     \u00B7 Respiratory Infection\n\
     \u00B7 Rolled Ankle\n\
     \u00B7 Scabies\n\
-    \u00B7 Seborrheic Dermatitis &#40;Dry Scalp&#41;\n\
+    \u00B7 Seborrheic Dermatitis (Dry Scalp)\n\
     \u00B7 Skin Infection\n\
     \u00B7 Sports Injuries\n\
     \u00B7 Strep Throat\n\
@@ -58,21 +58,21 @@
     \u00B7 Difficulty breathing\n\
     \u00B7 Mental health /  behavioral health / addiction issues\n\
     \u00B7 Moderate to severe burns\n\
-    \u00B7 Pain medication &#40;narcotics&#41;\n\
+    \u00B7 Pain medication (narcotics)\n\
     \u00B7 Poisoning\n\
     \u00B7 Serious head, neck, or back injury\n\
-    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\
+    \u00B7 Serious limb impairment or broken bone(s)\n\
     \u00B7 Significant, uncontrolled bleeding\n\
     \u00B7 Suicide ideation\n\
     \u00B7 Unconsciousness\n\
     \u00B7 Any other critical or life-threatening situation\n\n\
     What not to expect\n\n\
-    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\
+    \u00B7 Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n\
     \u00B7 Any prescriptions for medications that are restricted by individual states\n\
-    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
+    \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
-    \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
-        <target>在线咨询的常见问题：
+    \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
+        <target state="new">在线咨询的常见问题：
 \u00B7 腹部疼痛\n\
 \u00B7 急性支气管炎\n\
 \u00B7 急性结膜炎\n\
@@ -80,7 +80,7 @@
 \u00B7 急性咽炎\n\
 \u00B7 急性鼻窦炎\n\
 \u00B7 过敏\n\
-\u00B7 哮喘（稳定/非紧急）\n\
+\u00B7 哮喘（非急性）\n\
 \u00B7 脚气\n\
 \u00B7 背疼\n\
 \u00B7 蜜蜂蜇伤\n\
@@ -119,7 +119,7 @@
 \u00B7 上呼吸道感染\n\
 \u00B7 泌尿道感染\n\
 \u00B7 阴道瘙痒\n\
-\u00B7 酵母感染\n\n\何时不使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+\u00B7 酵母感染\n\n\何时不应使用在线功能\n \n \如果您有紧急情况，请立即呼叫%@或您当地的紧急服务。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -139,7 +139,7 @@
     \u00B7除英文外的其他语言咨询\n\
     \u00B7电子邮件或信息咨询的立即回复（考虑到视频咨询会有相应医生更快回复）</target>
       </trans-unit>
-      <trans-unit id="3" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivistis\n\\n    \u00B7 Acute Cystitis\n\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication &#40;narcotics&#41;\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\\n    \u00B7 Consults in languages other than English\n\\n                           \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;" restype="string" datatype="x-objective-c">
+      <trans-unit id="3" resname="Common reasons to use Virtual Consults\n\\n    \u00B7 Abdominal Pain\n\\n    \u00B7 Acute Bronchitis\n\\n    \u00B7 Acute Conjunctivistis\n\\n    \u00B7 Acute Cystitis\n\n\n\\n    When not to use Virtual Consults\n\n\\n    Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n\\n    \u00B7 Chest pain or pressure\n\\n    \u00B7 Convulsions or seizures\n\\n    \u00B7 Difficulty breathing\n\\n    \u00B7 Mental health /  behavioral health / addiction issues\n\\n    \u00B7 Moderate to severe burns\n\\n    \u00B7 Pain medication (narcotics)\n\\n    \u00B7 Poisoning\n\\n    \u00B7 Serious head, neck, or back injury\n\\n    \u00B7 Serious limb impairment or broken bone(s)\n\\n    \u00B7 Significant, uncontrolled bleeding\n\\n    \u00B7 Suicide ideation\n\\n    \u00B7 Unconsciousness\n\\n    \u00B7 Any other critical or life-threatening situation\n\n\\n    What not to expect\n\n\\n    \u00B7 Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n\\n    \u00B7 Any prescriptions for medications that are restricted by individual states\n\\n    \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\\n    \u00B7 Consults in languages other than English\n\\n                           \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)" restype="string" datatype="x-objective-c">
         <source>Common reasons to use Virtual Consults\n\
     \u00B7 Abdominal Pain\n\
     \u00B7 Acute Bronchitis\n\
@@ -152,21 +152,21 @@
     \u00B7 Difficulty breathing\n\
     \u00B7 Mental health /  behavioral health / addiction issues\n\
     \u00B7 Moderate to severe burns\n\
-    \u00B7 Pain medication &#40;narcotics&#41;\n\
+    \u00B7 Pain medication (narcotics)\n\
     \u00B7 Poisoning\n\
     \u00B7 Serious head, neck, or back injury\n\
-    \u00B7 Serious limb impairment or broken bone&#40;s&#41;\n\
+    \u00B7 Serious limb impairment or broken bone(s)\n\
     \u00B7 Significant, uncontrolled bleeding\n\
     \u00B7 Suicide ideation\n\
     \u00B7 Unconsciousness\n\
     \u00B7 Any other critical or life-threatening situation\n\n\
     What not to expect\n\n\
-    \u00B7 Any prescription for narcotics or DEA &#40;Drug Enforcement Administration&#41; controlled substances &#40;Schedule I, II, III, IV&#41;\n\
+    \u00B7 Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n\
     \u00B7 Any prescriptions for medications that are restricted by individual states\n\
-    \u00B7 Any prescriptions for psychiatric or lifestyle medications &#40;for example, diet or erectile dysfunction drugs&#41;\n\
+    \u00B7 Any prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n\
     \u00B7 Consults in languages other than English\n\
-                           \u00B7 Instant responses to inbox / message consults &#40;consider video consults with available doctors for faster care&#41;</source>
-        <target>在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
+                           \u00B7 Instant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
+        <target state="new">在线咨询的常见原因：\n                                                                                   \u00B7  腹痛\n                                                                                      \u00B7   急性支气管炎\n                                                                                      \u00B7 急性结膜炎  \n                                                                                          \u00B7 急性膀胱炎  \n                                                                                          如果您认为您需要紧急治疗，不要使用在线咨询，一定要立刻打电话给%1$@或当地应急服务人员。例如，如果您遇到以下任何医疗问题，请立即转到%@：\n \n                  \u00B7胸痛或胸闷\n\
      \u00B7痉挛或（心脏病、脑部疾病等）突发症状\n\
      \u00B7呼吸困难\n\
      \u00B7心理健康/行为健康/上瘾问题\n\
@@ -188,7 +188,7 @@
       </trans-unit>
       <trans-unit id="4" resname="At which pharmacy do you prefer to pick up prescriptions?" restype="string" datatype="x-objective-c">
         <source>At which pharmacy do you prefer to pick up prescriptions?</source>
-        <target>未找到药店</target>
+        <target state="new">您希望在哪个药房取药？</target>
         <note annotates="source">question for getting pharmacy selection</note>
       </trans-unit>
     </body>
@@ -197,7 +197,7 @@
     <body>
       <trans-unit id="5" resname="Languages spoken" restype="string" datatype="x-objective-c">
         <source>Languages spoken</source>
-        <target>语言</target>
+        <target state="new">所说语言</target>
       </trans-unit>
     </body>
   </file>
@@ -205,7 +205,7 @@
     <body>
       <trans-unit id="15" resname="other" restype="string" datatype="x-objective-c">
         <source>other</source>
-        <target>其它</target>
+        <target state="new">其它</target>
       </trans-unit>
     </body>
   </file>
@@ -213,7 +213,7 @@
     <body>
       <trans-unit id="16" resname="Type your location" restype="string" datatype="x-objective-c">
         <source>Type your location</source>
-        <target>输入您的位置</target>
+        <target state="new">输入您的位置</target>
       </trans-unit>
     </body>
   </file>
@@ -221,28 +221,28 @@
     <body>
       <trans-unit id="23" resname="FnY-tJ-Ru5.text" restype="string" datatype="x-xib">
         <source>Ask Docs</source>
-        <target>问医生</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Ask Docs&quot;; ObjectID = &quot;FnY-tJ-Ru5&quot;;</note>
+        <target>询问医生</target>
+        <note annotates="source">Class = "UILabel"; text = "Ask Docs"; ObjectID = "FnY-tJ-Ru5";</note>
       </trans-unit>
       <trans-unit id="24" resname="Jgd-39-xxH.text" restype="string" datatype="x-xib">
         <source>Feed</source>
-        <target>感觉</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Feed&quot;; ObjectID = &quot;Jgd-39-xxH&quot;;</note>
+        <target>主页</target>
+        <note annotates="source">Class = "UILabel"; text = "Feed"; ObjectID = "Jgd-39-xxH";</note>
       </trans-unit>
       <trans-unit id="25" resname="goV-9z-1Od.text" restype="string" datatype="x-xib">
         <source>To-Do</source>
         <target>待办事项</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;To-Do&quot;; ObjectID = &quot;goV-9z-1Od&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "To-Do"; ObjectID = "goV-9z-1Od";</note>
       </trans-unit>
       <trans-unit id="26" resname="iOz-4W-mIJ.normalTitle" restype="string" datatype="x-xib">
         <source>Back</source>
         <target>返回</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Back&quot;; ObjectID = &quot;iOz-4W-mIJ&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Back"; ObjectID = "iOz-4W-mIJ";</note>
       </trans-unit>
       <trans-unit id="27" resname="wwh-97-ddC.text" restype="string" datatype="x-xib">
         <source>Search</source>
         <target>搜索</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Search&quot;; ObjectID = &quot;wwh-97-ddC&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Search"; ObjectID = "wwh-97-ddC";</note>
       </trans-unit>
     </body>
   </file>
@@ -250,8 +250,8 @@
     <body>
       <trans-unit id="28" resname="hon-2k-uh7.disabledTitle" restype="string" datatype="x-xib">
         <source>Send note</source>
-        <target>寄信/给留言/发送便笺</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Send note&quot;; ObjectID = &quot;hon-2k-uh7&quot;;</note>
+        <target>发送便条</target>
+        <note annotates="source">Class = "UIButton"; disabledTitle = "Send note"; ObjectID = "hon-2k-uh7";</note>
       </trans-unit>
     </body>
   </file>
@@ -260,7 +260,7 @@
       <trans-unit id="29" resname="jVx-dd-Ebf.text" restype="string" datatype="x-xib">
         <source>United States</source>
         <target>美国</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;United States&quot;; ObjectID = &quot;jVx-dd-Ebf&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "United States"; ObjectID = "jVx-dd-Ebf";</note>
       </trans-unit>
     </body>
   </file>
@@ -269,17 +269,17 @@
       <trans-unit id="30" resname="3OY-k6-ura.disabledTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Continue&quot;; ObjectID = &quot;3OY-k6-ura&quot;;</note>
+        <note annotates="source">Class = "UIButton"; disabledTitle = "Continue"; ObjectID = "3OY-k6-ura";</note>
       </trans-unit>
       <trans-unit id="31" resname="3OY-k6-ura.normalTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Continue&quot;; ObjectID = &quot;3OY-k6-ura&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Continue"; ObjectID = "3OY-k6-ura";</note>
       </trans-unit>
       <trans-unit id="32" resname="H3A-5L-zru.placeholder" restype="string" datatype="x-xib">
         <source>Search name, specialty or topic</source>
-        <target>搜索名称，专科或话题</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Search name, specialty or topic&quot;; ObjectID = &quot;H3A-5L-zru&quot;;</note>
+        <target>搜索姓名、专科或话题</target>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Search name, specialty or topic"; ObjectID = "H3A-5L-zru";</note>
       </trans-unit>
     </body>
   </file>
@@ -288,7 +288,7 @@
       <trans-unit id="33" resname="NDY-sg-lLs.normalTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Continue&quot;; ObjectID = &quot;NDY-sg-lLs&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Continue"; ObjectID = "NDY-sg-lLs";</note>
       </trans-unit>
     </body>
   </file>
@@ -297,21 +297,21 @@
       <trans-unit id="34" resname="NDY-sg-lLs.disabledTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; disabledTitle = &quot;Continue&quot;; ObjectID = &quot;NDY-sg-lLs&quot;;</note>
+        <note annotates="source">Class = "UIButton"; disabledTitle = "Continue"; ObjectID = "NDY-sg-lLs";</note>
       </trans-unit>
       <trans-unit id="35" resname="NDY-sg-lLs.normalTitle" restype="string" datatype="x-xib">
         <source>Continue</source>
         <target>继续</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Continue&quot;; ObjectID = &quot;NDY-sg-lLs&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Continue"; ObjectID = "NDY-sg-lLs";</note>
       </trans-unit>
     </body>
   </file>
   <file original="feelgood/ViewControllers/Base.lproj/FGNuxGoalsTopicsAddSmallScreen.xib" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="36" resname="hsK-cr-X4C.placeholder" restype="string" datatype="x-xib">
-        <source>Find a topic &#40;e.g. Lose weight&#41;</source>
+        <source>Find a topic (e.g. Lose weight)</source>
         <target>查找话题（例如减肥）</target>
-        <note annotates="source">Class = &quot;UISearchBar&quot;; placeholder = &quot;Find a topic &#40;e.g. Lose weight&#41;&quot;; ObjectID = &quot;hsK-cr-X4C&quot;;</note>
+        <note annotates="source">Class = "UISearchBar"; placeholder = "Find a topic (e.g. Lose weight)"; ObjectID = "hsK-cr-X4C";</note>
       </trans-unit>
     </body>
   </file>
@@ -319,8 +319,8 @@
     <body>
       <trans-unit id="37" resname="GdQ-6V-dXe.normalTitle" restype="string" datatype="x-xib">
         <source>Return to log in</source>
-        <target>返回登陆</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Return to log in&quot;; ObjectID = &quot;GdQ-6V-dXe&quot;;</note>
+        <target>返回登录</target>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Return to log in"; ObjectID = "GdQ-6V-dXe";</note>
       </trans-unit>
     </body>
   </file>
@@ -329,12 +329,12 @@
       <trans-unit id="38" resname="Xt8-hH-Bt9.normalTitle" restype="string" datatype="x-xib">
         <source>Button</source>
         <target>按钮</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Button&quot;; ObjectID = &quot;Xt8-hH-Bt9&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Button"; ObjectID = "Xt8-hH-Bt9";</note>
       </trans-unit>
       <trans-unit id="39" resname="oae-ic-30W.normalTitle" restype="string" datatype="x-xib">
         <source>Update</source>
         <target>更新</target>
-        <note annotates="source">Class = &quot;UIButton&quot;; normalTitle = &quot;Update&quot;; ObjectID = &quot;oae-ic-30W&quot;;</note>
+        <note annotates="source">Class = "UIButton"; normalTitle = "Update"; ObjectID = "oae-ic-30W";</note>
       </trans-unit>
     </body>
   </file>
@@ -343,7 +343,7 @@
       <trans-unit id="41" resname="Vre-Aa-N6I.text" restype="string" datatype="x-xib">
         <source>Add another</source>
         <target>添加另一个</target>
-        <note annotates="source">Class = &quot;UILabel&quot;; text = &quot;Add another&quot;; ObjectID = &quot;Vre-Aa-N6I&quot;;</note>
+        <note annotates="source">Class = "UILabel"; text = "Add another"; ObjectID = "Vre-Aa-N6I";</note>
       </trans-unit>
     </body>
   </file>

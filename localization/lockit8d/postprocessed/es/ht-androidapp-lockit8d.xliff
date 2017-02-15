@@ -2,9 +2,9 @@
 <xliff version="1.2">
   <file original="src/com/healthtap/userhtexpress/fragments/main/AskQuestionToDocFragment.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
-      <trans-unit id="1" resname="r743681507" restype="string" datatype="java">
-        <source>\\nTry a Virtual Consult ›</source>
-        <target state="translated">\\nPrueba una Consulta Virtual ›</target>
+      <trans-unit id="1" resname="r682432029" restype="string" datatype="java">
+        <source>Try a Virtual Consult ›</source>
+        <target state="translated">Prueba una Consulta Virtual ›</target>
       </trans-unit>
     </body>
   </file>
@@ -71,9 +71,9 @@
         <target state="translated">Mito:</target>
       </trans-unit>
       <trans-unit id="25" resname="r142482154" restype="string" datatype="x-android-resource">
-        <source>agreed with {author_name}\&apos;s tip on \n{topic_name}</source>
+        <source>agreed with {author_name}\'s tip on \n{topic_name}</source>
         <target state="translated">estuvo de acuerdo con el tip de {author_name}\ acerca de \n{topic_name}</target>
-        <note annotates="source">Subject of this phrase is a doctor&apos;s name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
+        <note annotates="source">Subject of this phrase is a doctor's name displayed on seperate user interface, which should always be the first word of the complete sentence.</note>
       </trans-unit>
       <trans-unit id="28" resname="r8034615" restype="string" datatype="x-android-resource">
         <source>Failed to send kudos!</source>
@@ -120,11 +120,11 @@
         <target state="translated">¿Tienes una pregunta de seguimiento? Pregúntale a un doctor en línea ahora:</target>
       </trans-unit>
       <trans-unit id="54" resname="r475478276" restype="string" datatype="x-android-resource">
-        <source>{name}\&apos;s</source>
+        <source>{name}\'s</source>
         <target state="translated">{name}\</target>
       </trans-unit>
       <trans-unit id="55" resname="r390005620" restype="string" datatype="x-android-resource">
-        <source>{approver_name} agreed with {author_name}\&apos;s checklist</source>
+        <source>{approver_name} agreed with {author_name}\'s checklist</source>
         <target state="translated">{approver_name} estuvo de acuerdo con el listado de\ {author_name}</target>
       </trans-unit>
       <trans-unit id="56" resname="r984143101" restype="string" datatype="x-android-resource">
@@ -132,35 +132,35 @@
         <target state="translated">Listado:</target>
       </trans-unit>
       <trans-unit id="58" resname="r30778288" restype="string" datatype="x-android-resource">
-        <source>{agreer_name} agrees with {answerer_name}\&apos;s answer</source>
+        <source>{agreer_name} agrees with {answerer_name}\'s answer</source>
         <target state="translated">{agreer_name} está de acuerdo con la respuesta de {answerer_name}</target>
       </trans-unit>
       <trans-unit id="59" resname="r153759784" restype="string" datatype="x-android-resource">
-        <source>{commenter_name} commented on {answerer_name}\&apos;s answer</source>
+        <source>{commenter_name} commented on {answerer_name}\'s answer</source>
         <target state="translated">{commenter_name} comentó la respuesta de {answerer_name}</target>
       </trans-unit>
       <trans-unit id="60" resname="r920181258" restype="string" datatype="x-android-resource">
-        <source>Does {first_name}\&apos;s living grandparents, parents or siblings have any major medical conditions? &#40;life-threatening or otherwise?&#41;</source>
-        <target state="translated">¿Los abuelos, padres o hermanos vivos de {first_name} tienen alguna condición médica mayor? &#40;¿que atente contra la vida o no?&#41;</target>
+        <source>Does {first_name}\'s living grandparents, parents or siblings have any major medical conditions? (life-threatening or otherwise?)</source>
+        <target state="translated">¿Los abuelos, padres o hermanos vivos de {first_name} tienen alguna condición médica mayor? (¿que atente contra la vida o no?)</target>
       </trans-unit>
       <trans-unit id="61" resname="r779525598" restype="string" datatype="x-android-resource">
-        <source>What is {first_name}\&apos;s height and weight?</source>
+        <source>What is {first_name}\'s height and weight?</source>
         <target state="translated">¿Cuál es la altura y peso de {first_name}?</target>
       </trans-unit>
       <trans-unit id="62" resname="r595763610" restype="string" datatype="x-android-resource">
-        <source>What is {first_name}\&apos;s relationship to you</source>
+        <source>What is {first_name}\'s relationship to you</source>
         <target state="translated">¿Cuál es la relación de {first_name} contigo?</target>
       </trans-unit>
       <trans-unit id="63" resname="r116490053" restype="string" datatype="x-android-resource">
-        <source>Please share {first_name}\&apos;s obstetrics/pregnancy history</source>
+        <source>Please share {first_name}\'s obstetrics/pregnancy history</source>
         <target state="translated">Por favor, comparte el historial obstétrico/de embarazo de {first_name}</target>
       </trans-unit>
       <trans-unit id="65" resname="r178597753" restype="string" datatype="x-android-resource">
-        <source>What is {first_name}\&apos;s ethnicity?</source>
+        <source>What is {first_name}\'s ethnicity?</source>
         <target state="translated">¿Cuál es la etnia de {first_name}?</target>
       </trans-unit>
       <trans-unit id="66" resname="r482433768" restype="string" datatype="x-android-resource">
-        <source>How would you classify {first_name}\&apos;s consumption of alcohol?</source>
+        <source>How would you classify {first_name}\'s consumption of alcohol?</source>
         <target state="translated">¿Cómo clasificarías el consumo de alcohol de {first_name}?</target>
       </trans-unit>
       <trans-unit id="68" resname="r287900893" restype="string" datatype="x-android-resource">

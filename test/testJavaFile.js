@@ -234,6 +234,199 @@ module.exports = {
 		test.done();
 	},
 
+	testJavaFileMakeKeyNewLines: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        // makeKey is used for double-quoted strings, which ruby interprets before it is used
+        test.equals(jf.makeKey("A \n B"), "r191336864");
+        
+        test.done();
+	},
+
+	testJavaFileMakeKeyEscapeN: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        // makeKey is used for double-quoted strings, which ruby interprets before it is used
+        test.equals(jf.makeKey("A \\n B"), "r191336864");
+        
+        test.done();
+	},
+
+	testJavaFileMakeKeyTabs: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        test.equals(jf.makeKey("A \t B"), "r191336864");
+        
+        test.done();
+	},
+
+	testJavaFileMakeKeyEscapeT: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        test.equals(jf.makeKey("A \\t B"), "r191336864");
+        
+        test.done();
+	},
+
+	testJavaFileMakeKeyQuotes: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        test.equals(jf.makeKey("A \\'B\\' C"), "r935639115");
+        
+        test.done();
+	},
+
+	testJavaFileMakeKeyInterpretEscapedUnicodeChars: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        test.equals(jf.makeKey("\\u00A0 \\u0023"), "r2293235");
+        
+        test.done();
+	},
+
+	testJavaFileMakeKeyInterpretEscapedSpecialChars2: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        test.equals(jf.makeKey("Talk to a doctor live 24/7 via video or \u00a0 text\u00a0chat"), "r705871347");
+        
+        test.done();
+	},
+
+	testJavaFileMakeKeyInterpretEscapedOctalChars: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        test.equals(jf.makeKey("A \\40 \\011 B"), "r191336864");
+        
+        test.done();
+	},
+
+	testJavaFileMakeKeyJavaEscapeSequences: function(test) {
+        test.expect(2);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        test.equals(jf.makeKey("A \\b\\t\\n\\f\\r B"), "r191336864");
+        
+        test.done();
+	},
+
+	testJavaFileMakeKeyCheckRubyCompatibility: function(test) {
+        test.expect(13);
+
+        var p = new AndroidProject({
+        	id: "webapp",
+			sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var jf = new JavaFile({
+			project: p
+		});
+        test.ok(jf);
+
+        test.equals(jf.makeKey("This has \\\"double quotes\\\" in it."), "r487572481");
+        test.equals(jf.makeKey('This has \\\"double quotes\\\" in it.'), "r487572481");
+        test.equals(jf.makeKey("This has \\\'single quotes\\\' in it."), "r900797640");
+        test.equals(jf.makeKey('This has \\\'single quotes\\\' in it.'), "r900797640");
+        test.equals(jf.makeKey("This is a double quoted string"), "r494590307");
+        test.equals(jf.makeKey('This is a single quoted string'), "r683276274");
+        test.equals(jf.makeKey("This is a double quoted string with \\\"quotes\\\" in it."), "r246354917");
+        test.equals(jf.makeKey('This is a single quoted string with \\\'quotes\\\' in it.'), "r248819747");
+        test.equals(jf.makeKey("This is a double quoted string with \\n return chars in it"), "r1001831480");
+        test.equals(jf.makeKey('This is a single quoted string with \\n return chars in it'), "r147719125");
+        test.equals(jf.makeKey("This is a double quoted string with \\t tab chars in it"), "r276797171");
+        test.equals(jf.makeKey('This is a single quoted string with \\t tab chars in it'), "r303137748");
+        
+        test.done();
+	},
+	
     testJavaFileParseSimpleGetByKey: function(test) {
         test.expect(5);
 
@@ -324,6 +517,75 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileParseIgnoreLeadingAndTrailingWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("  \t \n  This is a test\n\n\t   ");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
+    testJavaFileParseDoubleEscapedWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('ssb.append(RB.getString("\\\\nTry a Virtual Consult ›"));');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("Try a Virtual Consult ›");
+        test.ok(r);
+        test.equal(r.getSource(), "Try a Virtual Consult ›");
+        test.equal(r.getKey(), "r682432029");
+        
+        test.done();
+    },
+
+    testJavaFileParseIgnoreEscapedLeadingAndTrailingWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("  \\t \\n  This is a test\\n\\n\\t   ");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "r654479252");
+        
+        test.done();
+    },
+
 
     testJavaFileParseSimpleRightSize: function(test) {
         test.expect(4);
@@ -395,6 +657,75 @@ module.exports = {
         test.done();
     },
 
+    testJavaFileParseWithEmbeddedDoubleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('\tRB.getString("This is a \\\"test\\\".");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a \"test\".");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a \"test\".");
+        test.equal(r.getKey(), "r446151779");
+        
+        test.done();
+    },
+
+    testJavaFileParseWithEmbeddedEscapedSingleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('\tRB.getString("This is a \\\'test\\\'.");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a 'test'.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a 'test'.");
+        test.equal(r.getKey(), "r531222461");
+        
+        test.done();
+    },
+
+    testJavaFileParseWithEmbeddedUnescapedSingleQuotes: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('\tRB.getString("This is a \'test\'.");');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a 'test'.");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a 'test'.");
+        test.equal(r.getKey(), "r531222461");
+        
+        test.done();
+    },
+
     testJavaFileParseWithKey: function(test) {
         test.expect(5);
 
@@ -406,6 +737,29 @@ module.exports = {
         test.ok(j);
         
         j.parse('RB.getString("This is a test", "unique_id")');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.get(ContextResourceString.hashKey(undefined, undefined, "en-US", "unique_id", "java"));
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "unique_id");
+        
+        test.done();
+    },
+
+    testJavaFileParseWithKeyIgnoreWhitespace: function(test) {
+        test.expect(5);
+
+        var p = new AndroidProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new JavaFile(p);
+        test.ok(j);
+        
+        j.parse('RB.getString("   \t\n This is a test       ", "unique_id")');
         
         var set = j.getTranslationSet();
         test.ok(set);

@@ -183,7 +183,6 @@ module.exports = {
         test.done();
     },
 
-
     testObjectiveCFileParseSimpleRightSize: function(test) {
         test.expect(4);
 
@@ -217,6 +216,36 @@ module.exports = {
         test.ok(j);
         
         j.parse('NSLocalizedString(@"This is a test", @"translator\'s comment")\n\ta.parse("This is another test.");\n\t\tNSLocalizedString(@"This is also a test", @"translator\'s comment 2")');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+        test.equal(r.getComment(), "translator's comment");
+        
+        r = set.getBySource("This is also a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is also a test");
+        test.equal(r.getKey(), "This is also a test");
+        test.equal(r.getComment(), "translator's comment 2");
+        
+        test.done();
+    },
+
+    testObjectiveCFileParseMultipleSameLine: function(test) {
+        test.expect(10);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new ObjectiveCFile(p);
+        test.ok(j);
+        
+        j.parse('NSLocalizedString(@"This is a test", @"translator\'s comment"); a.parse("This is another test."); NSLocalizedString(@"This is also a test", @"translator\'s comment 2")');
         
         var set = j.getTranslationSet();
         test.ok(set);
@@ -317,6 +346,54 @@ module.exports = {
         test.done();
     },
 
+    testObjectiveCFileParseNonNilComment: function(test) {
+        test.expect(6);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new ObjectiveCFile(p);
+        test.ok(j);
+        
+        j.parse('NSLocalizedString(@"This is a test", foobar)');
+        
+        var set = j.getTranslationSet();
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+        test.ok(!r.getComment());
+        
+        test.equal(set.size(), 1);
+        
+        test.done();
+    },
+
+    testObjectiveCFileParseZeroComment: function(test) {
+        test.expect(6);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new ObjectiveCFile(p);
+        test.ok(j);
+        
+        j.parse('NSLocalizedString(@"This is a test", 0)');
+        
+        var set = j.getTranslationSet();
+        var r = set.getBySource("This is a test");
+        test.ok(r);
+        test.equal(r.getSource(), "This is a test");
+        test.equal(r.getKey(), "This is a test");
+        test.ok(!r.getComment());
+        
+        test.equal(set.size(), 1);
+        
+        test.done();
+    },
+
     testObjectiveCFileParseEmptyParams: function(test) {
         test.expect(2);
 
@@ -366,6 +443,32 @@ module.exports = {
         j.parse('App.NSLocalizedString(@"This is a test", @"translator\'s comment")');
         
         var set = j.getTranslationSet();
+        test.equal(set.size(), 1);
+        
+        test.done();
+    },
+
+    testObjectiveCFileParseEscapedQuotes: function(test) {
+        test.expect(7);
+
+        var p = new ObjectiveCProject({
+        	sourceLocale: "en-US"
+        }, "./testfiles");
+        
+        var j = new ObjectiveCFile(p);
+        test.ok(j);
+
+        j.parse('NSLocalizedString(@"This \\\'is\\\' a \\\"test\\\"", @"translator\'s \\\'comment\\\'")');
+        
+        var set = j.getTranslationSet();
+        test.ok(set);
+        
+        var r = set.getBySource("This 'is' a \"test\"");
+        test.ok(r);
+        test.equal(r.getSource(), "This 'is' a \"test\"");
+        test.equal(r.getKey(), "This 'is' a \"test\"");
+        test.equal(r.getComment(), "translator's 'comment'");
+        
         test.equal(set.size(), 1);
         
         test.done();

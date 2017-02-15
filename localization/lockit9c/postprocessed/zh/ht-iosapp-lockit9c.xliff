@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/iPadNative/Goals/FGGoalsBaseViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="We&apos;ll share more tips and checklists to help you with &quot;%@&quot;" restype="string" datatype="x-objective-c">
+        <source>We'll share more tips and checklists to help you with "%@"</source>
+        <target state="translated">我们会分享更多的小贴士和清单来帮助您"%@"</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/iPadNative/Checklist/FGIpadChecklistViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="Do you want to remove this action from your &quot;To Do&quot; list?" restype="string" datatype="x-objective-c">
+        <source>Do you want to remove this action from your "To Do" list?</source>
+        <target state="translated">您是否想将这项活动移出待做清单？</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTRateConsultCommentsViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="17" resname="Please provide details regarding &quot;%@&quot; (Optional)" restype="string" datatype="x-objective-c">
+        <source>Please provide details regarding "%@" (Optional)</source>
+        <target state="translated">请提供有关“%@”的详细信息（可选）</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="20" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivitis\n•\tAcute Cystitis\n•\tAcute Pharyngitis\n•\tAcute Sinusitis\n•\tAllergies\n•\tAsthma (stable / non-emergency)\n•\tAthlete’s Foot\n•\tBack Pain\n•\tBee Sting\n•\tBladder infections\n•\tCellulitis (skin infection)\n•\tCold\n•\tCough\n•\tDepression\n•\tDiarrhea\n•\tDry Scalp\n•\tDry Skin (Eczema)\n•\tEye Irritation\n•\tFever\n•\tGenital Lesions\n•\tHay Fever\n•\tHeadache\n•\tHeartburn (Gastroesophageal Reflux Disease, or GERD)\n•\tInfluenza\n•\tLab Interpretation\n•\tLice\n•\tNasal Congestion\n•\tNausea\n•\tNosebleed\n•\tPainful Urination\n•\tPink Eye\n•\tPoison Oak / Poison Ivy\n•\tRash\n•\tRespiratory Infection\n•\tRolled Ankle\n•\tScabies\n•\tSeborrheic Dermatitis (Dry Scalp)\n•\tSkin Infection\n•\tSports Injuries\n•\tStrep Throat\n•\tTravel Medicine\n•\tUpper Respiratory Infection\n•\tUrinary Tract Infection\n•\tVaginal Itching\n•\tYeast Infection\n\n" restype="string" datatype="x-objective-c">
+        <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivitis\n•\tAcute Cystitis\n•\tAcute Pharyngitis\n•\tAcute Sinusitis\n•\tAllergies\n•\tAsthma (stable / non-emergency)\n•\tAthlete’s Foot\n•\tBack Pain\n•\tBee Sting\n•\tBladder infections\n•\tCellulitis (skin infection)\n•\tCold\n•\tCough\n•\tDepression\n•\tDiarrhea\n•\tDry Scalp\n•\tDry Skin (Eczema)\n•\tEye Irritation\n•\tFever\n•\tGenital Lesions\n•\tHay Fever\n•\tHeadache\n•\tHeartburn (Gastroesophageal Reflux Disease, or GERD)\n•\tInfluenza\n•\tLab Interpretation\n•\tLice\n•\tNasal Congestion\n•\tNausea\n•\tNosebleed\n•\tPainful Urination\n•\tPink Eye\n•\tPoison Oak / Poison Ivy\n•\tRash\n•\tRespiratory Infection\n•\tRolled Ankle\n•\tScabies\n•\tSeborrheic Dermatitis (Dry Scalp)\n•\tSkin Infection\n•\tSports Injuries\n•\tStrep Throat\n•\tTravel Medicine\n•\tUpper Respiratory Infection\n•\tUrinary Tract Infection\n•\tVaginal Itching\n•\tYeast Infection\n\n</source>
+        <target state="translated">•\t腹痛\n•\t急性支气管炎\n•\t急性结膜炎\n•\t急性膀胱炎\n•\t急性咽炎\n•\t急性鼻窦炎\n•\t过敏\n•\t哮喘（稳定/非紧急）\n•\t足癣\n•\t背疼\n•\t蜂蜇伤\n•\t膀胱感染\n•\t蜂窝织炎（皮肤感染）\n•\t感冒\n•\t咳嗽\n•\t抑郁症\n•\t腹泻\n•\t干性头皮\n•\t干性皮肤（湿疹）\n•\t眼睛刺激性\n•\t发烧\n•\t生殖器损伤\n•\t花粉过敏\n•\t头痛\n•\t胃灼热（胃食管反流病或胃食管反流病）\n•\t流行性感冒\n•\t实验室分析结果的解释\n•\t虱子\n•\t鼻塞\n•\t恶心\n•\t鼻出血\n•\t尿痛\n•\t红眼病\n•\t毒栎/毒藤\n•\t皮疹\n•\t呼吸道感染\n•\t脚裸弯曲\n•\t疥疮\n•\t脂溢性皮炎（干性皮炎）\n•\t皮肤感染\n•\t运动损伤\n•\t链球菌性喉炎\n•\t旅游医学\n•\t上呼吸道感染\n•\t泌尿道感染\n•\t阴道瘙痒\n•\t宫颈感染\n\n</target>
+        <note annotates="source">Common reasons to use virtual consults bullets full list</note>
+      </trans-unit>
+      <trans-unit id="21" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n\n\n" restype="string" datatype="x-objective-c">
+        <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n\n\n</source>
+        <target state="translated">•\t腹痛\n•\t急性支气管炎\n•\t急性结膜炎\n•\t性膀胱炎\n\n\n</target>
+        <note annotates="source">Common reasons to use virtual consults bullets full list</note>
+      </trans-unit>
+      <trans-unit id="22" resname="Common reasons to use Virtual Consults\n" restype="string" datatype="x-objective-c">
+        <source>Common reasons to use Virtual Consults\n</source>
+        <target state="translated">使用在线咨询的常见理由\n</target>
+      </trans-unit>
+      <trans-unit id="23" resname="Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n" restype="string" datatype="x-objective-c">
+        <source>Always call %@ or your local emergency service immediately if you think you have an emergency. For example, if you experience any of the following medical issues, go immediately to an %@:\n\n</source>
+        <target state="translated">如果您认为您有紧急情况，请立即呼叫%@或您当地的紧急服务。 例如，如果您遇到以下任何医疗问题，请立即转到%@:\n\n</target>
+        <note annotates="source">When not to use Virtual consults explanation</note>
+      </trans-unit>
+      <trans-unit id="24" resname="•\tChest pain or pressure\n•\tConvulsions or seizures\n•\tDifficulty breathing\n•\tMental health /  behavioral health / addiction issues\n•\tModerate to severe burns\n•\tPain medication (narcotics)\n•\tPoisoning\n•\tSerious head, neck, or back injury\n•\tSerious limb impairment or broken bone(s)\n•\tSignificant, uncontrolled bleeding\n•\tSuicide ideation\n•\tUnconsciousness\n•\tAny other critical or life-threatening situation\n\n" restype="string" datatype="x-objective-c">
+        <source>•\tChest pain or pressure\n•\tConvulsions or seizures\n•\tDifficulty breathing\n•\tMental health /  behavioral health / addiction issues\n•\tModerate to severe burns\n•\tPain medication (narcotics)\n•\tPoisoning\n•\tSerious head, neck, or back injury\n•\tSerious limb impairment or broken bone(s)\n•\tSignificant, uncontrolled bleeding\n•\tSuicide ideation\n•\tUnconsciousness\n•\tAny other critical or life-threatening situation\n\n</source>
+        <target state="translated">•\t胸痛或胸口郁闷\n•\t痉挛或癫痫\n•\t呼吸困难\n•\t心理健康/行为健康/成瘾问题\n•\t中度至重度烧伤\n•\t疼痛药（麻醉剂）\n•\t中毒\n•\t严重的头疼，脖子疼或背部受伤\n•\t严重肢体损伤或骨折\n•\t重大的，不可控的失血\n•\t自杀倾向\n•\t无意识\n
+•\t所有其他严重或危及生命的情况</target>
+        <note annotates="source">When not to use Virtual consults bullets</note>
+      </trans-unit>
+      <trans-unit id="25" resname="What not to expect\n" restype="string" datatype="x-objective-c">
+        <source>What not to expect\n</source>
+        <target state="translated">不应发生\n</target>
+      </trans-unit>
+      <trans-unit id="26" resname="•\tAny prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n•\tAny prescriptions for medications that are restricted by individual states\n•\tAny prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n•\tConsults in languages other than English\n•\tInstant responses to inbox / message consults (consider video consults with available doctors for faster care)" restype="string" datatype="x-objective-c">
+        <source>•\tAny prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)\n•\tAny prescriptions for medications that are restricted by individual states\n•\tAny prescriptions for psychiatric or lifestyle medications (for example, diet or erectile dysfunction drugs)\n•\tConsults in languages other than English\n•\tInstant responses to inbox / message consults (consider video consults with available doctors for faster care)</source>
+        <target state="translated">•\t麻醉品或DEA（禁毒执法管理）受控物质（附表I, II, III, IV）\n•\t所有受个别国家限制的药物处方\n•\t所有精神病学或生活方式药物处方（例如，饮食或勃起功能障碍药物）\n•\t用英语以外的其它语言咨询\n•\t即时回复收件箱/消息咨询（考虑与空闲医生的视频咨询，以获得更快的医护）</target>
+        <note annotates="source">What not to expect bullets</note>
+      </trans-unit>
+      <trans-unit id="27" resname="remove" restype="string" datatype="x-objective-c">
+        <source>remove</source>
+        <target state="translated">删除</target>
+      </trans-unit>
+      <trans-unit id="28" resname="Please enter 1 or more words" restype="string" datatype="x-objective-c">
+        <source>Please enter 1 or more words</source>
+        <target state="translated">请输入1个以上单词</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageStringsManager.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="29" resname="Hello!" restype="string" datatype="x-objective-c">
+        <source>Hello!</source>
+        <target state="translated">您好！</target>
+        <note annotates="source">symptom triage tutorial header string</note>
+      </trans-unit>
+      <trans-unit id="30" resname="I&apos;m Dr. A.I., and I work with over 94,000 doctors to help understand your symptoms and show you the best path to feeling good. Let&apos;s get started!" restype="string" datatype="x-objective-c">
+        <source>I'm Dr. A.I., and I work with over 94,000 doctors to help understand your symptoms and show you the best path to feeling good. Let's get started!</source>
+        <target state="translated">我是A.I.医生，我与超过94,000名医生合作，帮助了解您的症状，并告诉您最好的感觉良好的方法。 让我们开始吧！</target>
+        <note annotates="source">symptom triage tutorial subheader string</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageSelectBodyPartViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="31" resname="Tap and drag" restype="string" datatype="x-objective-c">
+        <source>Tap and drag</source>
+        <target state="translated">点按并拖动</target>
+        <note annotates="source">title of body picker while doing a long press zoom</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTAuthorizationViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="32" resname="Helping you to live a healthier, happier, longer life!" restype="string" datatype="x-objective-c">
+        <source>Helping you to live a healthier, happier, longer life!</source>
+        <target state="translated">帮助您生活的更健康，更快乐，更长寿！</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTAuthorizationPasswordRecoveryViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="33" resname="Password recovery" restype="string" datatype="x-objective-c">
+        <source>Password recovery</source>
+        <target state="translated">找回密码</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGSearchResultQuestionUserAnswer.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="34" resname="\n\n%@ approved this translation of %@" restype="string" datatype="x-objective-c">
+        <source>\n\n%@ approved this translation of %@</source>
+        <target state="translated">\n\n%@已批准此翻译%@</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGAvailableTalk2Docs.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="35" resname="In Dr. %@&apos;s referral network" restype="string" datatype="x-objective-c">
+        <source>In Dr. %@'s referral network</source>
+        <target state="translated">在医生%@的转诊网络</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/AskDocsV4/HTAskDocsV4SpecificExpertModesViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="36" resname="We&apos;re sorry but we are unable to contact the server. Please try again in a bit." restype="string" datatype="x-objective-c">
+        <source>We're sorry but we are unable to contact the server. Please try again in a bit.</source>
+        <target state="translated">很抱歉，我们无法与服器联络。 请稍后重新尝试。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
