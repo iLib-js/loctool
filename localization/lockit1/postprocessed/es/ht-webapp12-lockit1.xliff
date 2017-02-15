@@ -2564,7 +2564,7 @@
       </trans-unit>
       <trans-unit id="566" resname="I don&apos;t have this anymore" restype="string" datatype="html">
         <source>I don't have this anymore</source>
-        <target>Ya no tengo esto</target>
+        <target>Ya no tiene esto</target>
       </trans-unit>
     </body>
   </file>
@@ -8924,7 +8924,7 @@
       </trans-unit>
       <trans-unit id="1933" resname="I no longer have this" restype="string" datatype="html">
         <source>I no longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target>Ya no tiene esto</target>
       </trans-unit>
     </body>
   </file>
@@ -32036,11 +32036,11 @@
       </trans-unit>
       <trans-unit id="6739" resname="Have this" restype="string" datatype="javascript">
         <source>Have this</source>
-        <target>Tengo esto</target>
+        <target>Tiene esto</target>
       </trans-unit>
       <trans-unit id="6740" resname="No longer have this" restype="string" datatype="javascript">
         <source>No longer have this</source>
-        <target>Ya no tengo esto</target>
+        <target>Ya no tiene esto</target>
       </trans-unit>
       <trans-unit id="6741" resname="Are you taking any medications?" restype="string" datatype="javascript">
         <source>Are you taking any medications?</source>
