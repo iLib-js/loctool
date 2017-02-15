@@ -494,7 +494,7 @@
       </trans-unit>
       <trans-unit id="7111" resname="r368530188" restype="string" datatype="x-haml">
         <source>Where we are headed</source>
-        <target>¿A dónde nos estamos dirigiendo?</target>
+        <target>¿A dónde nos dirigimos?</target>
       </trans-unit>
       <trans-unit id="7112" resname="r104941884" restype="string" datatype="x-haml">
         <source>of the world’s population. We’re laying the groundwork for a movement</source>
