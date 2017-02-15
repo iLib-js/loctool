@@ -1024,7 +1024,7 @@
       </trans-unit>
       <trans-unit id="5148" resname="body" restype="string" datatype="x-yaml" x-context="doctor_added_doctor">
         <source>Your insights will now show up on %1’s feed.</source>
-        <target>Tus perspicacias ahora se mostrarán en el feed de %1.</target>
+        <target>Tus perspicacias ahora se mostrarán en la fuente de %1.</target>
       </trans-unit>
       <trans-unit id="5149" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_added_doctor">
         <source>Add %1 to your network</source>
@@ -1564,7 +1564,7 @@
       </trans-unit>
       <trans-unit id="5283" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_network_app_approved">
         <source>Log back in</source>
-        <target>Vuelve a ingresar</target>
+        <target>Vuelve a iniciar sesión</target>
       </trans-unit>
       <trans-unit id="5284" resname="email_subject" restype="string" datatype="x-yaml" x-context="member_marketing_subscribe">
         <source>%1, get ultimate peace of mind with a HealthTap Prime membership!</source>
