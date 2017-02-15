@@ -1550,7 +1550,7 @@
       </trans-unit>
       <trans-unit id="290" resname="r526219058" restype="string" datatype="java">
         <source>Do you want to remove this action from your To-Do list?</source>
-(??)        <target>¿Quieres quitar esta acción de tu lista de &quot;Qué Hacer&quot;?</target>
+        <target>¿Quieres quitar esta acción de tu lista de &quot;Por Hacer&quot;?</target>
       </trans-unit>
     </body>
   </file>
