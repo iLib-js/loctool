@@ -5781,8 +5781,8 @@
       <trans-unit id="2493" resname="We&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We&apos;ll do our best to make you happy so soon as possible!" restype="string" datatype="html">
         <source>We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of
     deactivating your account. We'll do our best to make you happy so soon as possible!</source>
-        <target>Estamos dedicados a cuidar de ti. Por favor, considera hacernos saber cómo podemos hacer tu experiencia mejor en vez de
-    desactivar tu cuenta. ¡Haremos nuestro mejor esfuerzo para hacer feliz lo antes posible!</target>
+        <target>Estamos dedicados a cuidar de ti. Por favor, haznos saber cómo podemos mejorar tu experiencia en vez de
+    desactivar tu cuenta. ¡Haremos nuestro mejor esfuerzo para hacerte feliz lo antes posible!</target>
       </trans-unit>
     </body>
   </file>
