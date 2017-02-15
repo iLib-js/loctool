@@ -376,6 +376,62 @@ module.exports = {
         test.done();
     },
 
+    testYamlFileParseIgnoreUnderscoreValues: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+
+        yml.parse('---\n' +
+        		'Working_at_HealthTap: Working_at_HealthTap\n' +
+        		'Jobs: Jobs_Report\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
+    testYamlFileParseIgnoreRubyIds: function(test) {
+        test.expect(3);
+
+        var p = new WebProject({
+        	id: "ht-webapp12",
+			sourceLocale: "en-US",
+        	resourceDirs: {
+        		yml: "a/b"
+        	}
+        }, "./testfiles");
+
+        var yml = new YamlFile({
+			project: p
+		});
+        test.ok(yml);
+
+        yml.parse('---\n' +
+        		'a: :foo\n' +
+        		'b: :bar\n');
+
+        var set = yml.getTranslationSet();
+        test.ok(set);
+
+        test.equal(set.size(), 0);
+
+        test.done();
+    },
+
     testYamlFileExtractFile: function(test) {
         test.expect(14);
 
