@@ -24312,19 +24312,19 @@
       </trans-unit>
       <trans-unit id="4780" resname="r27919281" restype="string" datatype="ruby">
         <source>Vegan (no meat or animal products)</source>
-        <target state="translated">Vegano (no carne o productos de animal)</target>
+        <target state="translated">Vegano (no come carne o productos animales)</target>
       </trans-unit>
       <trans-unit id="4781" resname="r836028066" restype="string" datatype="ruby">
         <source>Pescatarian (no meat, except fish)</source>
-        <target state="translated">Pescetariano (no carne, excepto pescado)</target>
+        <target state="translated">Pescetariano (no come carne, excepto pescado)</target>
       </trans-unit>
       <trans-unit id="4782" resname="r720240330" restype="string" datatype="ruby">
         <source>Gluten-Free (no wheat, barley, or rye)</source>
-        <target state="translated">Libre de Gluten (no trigo, cebada o centeno)</target>
+        <target state="translated">Libre de Gluten (no consume trigo, avena, cebada o centeno)</target>
       </trans-unit>
       <trans-unit id="4783" resname="r73724393" restype="string" datatype="ruby">
         <source>Lactose Intolerant (lactose-free dairy)</source>
-        <target state="translated">Intolerancia a la Lactosa (lácteos libres de lactosa)</target>
+        <target state="translated">Intolerancia a la Lactosa (Consume lácteos libres de lactosa)</target>
       </trans-unit>
       <trans-unit id="4784" resname="r90090747" restype="string" datatype="ruby">
         <source>None</source>
@@ -24352,23 +24352,23 @@
       </trans-unit>
       <trans-unit id="4790" resname="r1003968121" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a month</source>
-        <target state="translated">Sí, 0-2 cajetillas al mes</target>
+        <target state="translated">Sí, 0-2 paquetes al mes</target>
       </trans-unit>
       <trans-unit id="4791" resname="r956725319" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a week</source>
-        <target state="translated">Sí, 0-2 cajetillas a la semana</target>
+        <target state="translated">Sí, 0-2 paquetes a la semana</target>
       </trans-unit>
       <trans-unit id="4792" resname="r684140086" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a day</source>
-        <target state="translated">Sí, 0-2 cajetillas al día</target>
+        <target state="translated">Sí, 0-2 paquetes por día</target>
       </trans-unit>
       <trans-unit id="4793" resname="r526642561" restype="string" datatype="ruby">
         <source>Yes, more than 2 packs a day</source>
-        <target state="translated">Sí, más de 2 cajetillas al día</target>
+        <target state="translated">Sí, más de 2 paquetes por día</target>
       </trans-unit>
       <trans-unit id="4794" resname="r762126145" restype="string" datatype="ruby">
         <source>Yes, chewing tobacco</source>
-        <target state="translated">Sí, masticando tabaco</target>
+        <target state="translated">Sí, mastica tabaco</target>
       </trans-unit>
       <trans-unit id="4795" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
@@ -24388,7 +24388,7 @@
       </trans-unit>
       <trans-unit id="4799" resname="r276834703" restype="string" datatype="ruby">
         <source>Marijuana</source>
-        <target state="translated">Mariguana</target>
+        <target state="translated">Marihuana</target>
       </trans-unit>
       <trans-unit id="4800" resname="r468221601" restype="string" datatype="ruby">
         <source>Cocaine</source>
@@ -24404,11 +24404,11 @@
       </trans-unit>
       <trans-unit id="4803" resname="r763555502" restype="string" datatype="ruby">
         <source>Ecstasy</source>
-        <target state="translated">Extasis</target>
+        <target state="translated">Éxtasis</target>
       </trans-unit>
       <trans-unit id="4804" resname="r394864593" restype="string" datatype="ruby">
         <source>Barbiturates / Benzodiazepines</source>
-        <target state="translated">Barbitúricos / Benzodiacepinas</target>
+        <target state="translated">Barbitúricos / Benzodiazepinas</target>
       </trans-unit>
       <trans-unit id="4805" resname="r678640256" restype="string" datatype="ruby">
         <source>LSD</source>
@@ -24416,7 +24416,7 @@
       </trans-unit>
       <trans-unit id="4806" resname="r504881313" restype="string" datatype="ruby">
         <source>Psychedelic Mushrooms</source>
-        <target state="translated">Hongos Psicogélicos</target>
+        <target state="translated">Hongos Psicodélicos</target>
       </trans-unit>
       <trans-unit id="4807" resname="r361059927" restype="string" datatype="ruby">
         <source>Other</source>
@@ -39420,11 +39420,11 @@
       </trans-unit>
       <trans-unit id="9181" resname="Does {first_name} smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Does {first_name} smoke or chew tobacco or recently quit?</source>
-        <target state="translated">¿{first_name} fuma o masca tabaco o lo dejó recientemente?</target>
+        <target state="translated">¿{first_name} fuma, mastica tabaco o lo dejó recientemente?</target>
       </trans-unit>
       <trans-unit id="9182" resname="Does this person smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Does this person smoke or chew tobacco or recently quit?</source>
-        <target state="translated">¿Esta persona fuma o masca tabaco o lo dejó recientemente?</target>
+        <target state="translated">¿Esta persona fuma, mastica tabaco o lo dejó recientemente?</target>
       </trans-unit>
       <trans-unit id="9183" resname="Do you smoke or chew tobacco or recently quit?" restype="string" datatype="javascript">
         <source>Do you smoke or chew tobacco or recently quit?</source>
@@ -39444,7 +39444,7 @@
       </trans-unit>
       <trans-unit id="9187" resname="Does {first_name} use any of the following recreational drugs?" restype="string" datatype="javascript">
         <source>Does {first_name} use any of the following recreational drugs?</source>
-        <target state="translated">¿{first_name} usa alguno de los siguientes fármacos recreativos?</target>
+        <target state="translated">¿{first_name} consume alguno de los siguientes fármacos recreativos?</target>
       </trans-unit>
       <trans-unit id="9188" resname="Does this person use any of the following recreational drugs?" restype="string" datatype="javascript">
         <source>Does this person use any of the following recreational drugs?</source>
