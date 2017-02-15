@@ -5876,7 +5876,7 @@
       </trans-unit>
       <trans-unit id="9986" resname="r905385200" restype="string" datatype="x-haml">
         <source>Free text questions answered within 24 hours</source>
-        <target>Preguntas de texto gratis contestadas en 24 horas</target>
+        <target>Preguntas por mensaje de texto respondidas en 24 horas, gratis</target>
       </trans-unit>
       <trans-unit id="9987" resname="r477497420" restype="string" datatype="x-haml">
         <source>Goal-based checklists with timely reminders</source>
