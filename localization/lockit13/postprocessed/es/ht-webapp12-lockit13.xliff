@@ -1793,7 +1793,7 @@
       </trans-unit>
       <trans-unit id="417" resname="name" restype="string" datatype="x-yaml" x-context="triage_options@0">
         <source>self-treat</source>
-        <target state="translated">auto tratar</target>
+        <target state="accepted">self-treat</target>
       </trans-unit>
       <trans-unit id="418" resname="display_value" restype="string" datatype="x-yaml" x-context="triage_options@0">
         <source>Usually self-treatable</source>
@@ -1801,7 +1801,7 @@
       </trans-unit>
       <trans-unit id="419" resname="name" restype="string" datatype="x-yaml" x-context="triage_options@1">
         <source>non-urgent-consult</source>
-        <target state="translated">consulta-no-urgente</target>
+        <target state="accepted">non-urgent-consult</target>
       </trans-unit>
       <trans-unit id="420" resname="display_value" restype="string" datatype="x-yaml" x-context="triage_options@1">
         <source>Usually requires talking to a doctor</source>
@@ -1809,11 +1809,11 @@
       </trans-unit>
       <trans-unit id="421" resname="color" restype="string" datatype="x-yaml" x-context="triage_options@1">
         <source>orange</source>
-        <target state="translated">naranja</target>
+        <target state="accepted">orange</target>
       </trans-unit>
       <trans-unit id="422" resname="name" restype="string" datatype="x-yaml" x-context="triage_options@2">
         <source>urgent-consult</source>
-        <target state="translated">consulta-urgente</target>
+        <target state="accepted">urgent-consult</target>
       </trans-unit>
       <trans-unit id="423" resname="display_value" restype="string" datatype="x-yaml" x-context="triage_options@2">
         <source>Usually requires an immediate doctor consult</source>
@@ -1821,11 +1821,11 @@
       </trans-unit>
       <trans-unit id="424" resname="color" restype="string" datatype="x-yaml" x-context="triage_options@2">
         <source>orange</source>
-        <target state="translated">naranja</target>
+        <target state="accepted">orange</target>
       </trans-unit>
       <trans-unit id="425" resname="name" restype="string" datatype="x-yaml" x-context="triage_options@3">
         <source>emergency-attention</source>
-        <target state="translated">atención-de-emergencia</target>
+        <target state="accepted">emergency-attention</target>
       </trans-unit>
       <trans-unit id="426" resname="display_value" restype="string" datatype="x-yaml" x-context="triage_options@3">
         <source>Usually requires emergency attention</source>
@@ -1833,11 +1833,7 @@
       </trans-unit>
       <trans-unit id="427" resname="color" restype="string" datatype="x-yaml" x-context="triage_options@3">
         <source>red</source>
-        <target state="translated">rojo</target>
-      </trans-unit>
-      <trans-unit id="428" resname="0" restype="string" datatype="x-yaml" x-context="triage_options@3@care_options">
-        <source>:emergency</source>
-        <target state="translated">:emergencia</target>
+        <target state="accepted">red</target>
       </trans-unit>
       <trans-unit id="429" resname=":description" restype="string" datatype="x-yaml" x-context="care_options@0">
         <source>Read instant doctor answers, tips, news, and medication reviews, personalized just for you!</source>
@@ -1845,7 +1841,7 @@
       </trans-unit>
       <trans-unit id="430" resname=":triage_type" restype="string" datatype="x-yaml" x-context="care_options@0">
         <source>self-treat</source>
-        <target state="translated">auto tratar</target>
+        <target state="accepted">self-treat</target>
       </trans-unit>
       <trans-unit id="431" resname=":description" restype="string" datatype="x-yaml" x-context="care_options@1">
         <source>Get helpful checklists and reminders from top doctors on steps you can take to feel good faster.</source>
@@ -1853,7 +1849,7 @@
       </trans-unit>
       <trans-unit id="432" resname=":triage_type" restype="string" datatype="x-yaml" x-context="care_options@1">
         <source>self-treat</source>
-        <target state="translated">auto tratar</target>
+        <target state="accepted">self-treat</target>
       </trans-unit>
       <trans-unit id="433" resname=":description" restype="string" datatype="x-yaml" x-context="care_options@2">
         <source>Send your question to 104,000 top doctors in 141 specialties to get a brief, educational text answer on the road to feeling good.</source>
@@ -1861,7 +1857,7 @@
       </trans-unit>
       <trans-unit id="434" resname=":triage_type" restype="string" datatype="x-yaml" x-context="care_options@2">
         <source>self-treat</source>
-        <target state="translated">auto tratar</target>
+        <target state="accepted">self-treat</target>
       </trans-unit>
       <trans-unit id="435" resname=":title" restype="string" datatype="x-yaml" x-context="care_options@3">
         <source>Consult a doctor virtually</source>
@@ -1873,7 +1869,7 @@
       </trans-unit>
       <trans-unit id="437" resname=":triage_type" restype="string" datatype="x-yaml" x-context="care_options@3">
         <source>non-urgent-consult</source>
-        <target state="translated">consulta-no-urgente</target>
+        <target state="accepted">non-urgent-consult</target>
       </trans-unit>
       <trans-unit id="438" resname=":title" restype="string" datatype="x-yaml" x-context="care_options@4">
         <source>Visit a doctor’s office</source>
@@ -1885,11 +1881,7 @@
       </trans-unit>
       <trans-unit id="440" resname=":triage_type" restype="string" datatype="x-yaml" x-context="care_options@4">
         <source>non-urgent-consult</source>
-        <target state="translated">consulta-no-urgente</target>
-      </trans-unit>
-      <trans-unit id="441" resname=":name" restype="string" datatype="x-yaml" x-context="care_options@5">
-        <source>:emergency</source>
-        <target state="translated">:emergencia</target>
+        <target state="accepted">non-urgent-consult</target>
       </trans-unit>
       <trans-unit id="442" resname=":description" restype="string" datatype="x-yaml" x-context="care_options@5">
         <source>May require visiting the nearest emergency department for immediate medical attention.</source>
