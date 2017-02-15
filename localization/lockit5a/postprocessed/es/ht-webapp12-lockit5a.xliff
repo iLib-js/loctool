@@ -14105,11 +14105,11 @@
     <body>
       <trans-unit id="7424" resname="r439736920" restype="string" datatype="x-haml">
         <source>A New Healthcare Experience</source>
-        <target>Una Nueva Experiencia de Atención a la Salud</target>
+        <target>Una Nueva Experiencia de Atención de la Salud</target>
       </trans-unit>
       <trans-unit id="7425" resname="r340712015" restype="string" datatype="x-haml">
         <source>HealthTap is the world’s first Global Health Practice</source>
-        <target>HealthTap es el primer Consultorio de Salud Global</target>
+        <target>HealthTap es el primer Consultorio Medico</target>
       </trans-unit>
     </body>
   </file>
