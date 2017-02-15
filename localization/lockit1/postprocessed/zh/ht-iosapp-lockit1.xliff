@@ -13758,7 +13758,7 @@ with an available primary care doctor</source>
         <target>分享了关于%@的小贴士</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="shared a tip on %@ " resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
+      <trans-unit id="shared a tip on %@" resname="shared a tip on %@" restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
         <target>分享了关于%@的小贴士</target>
         <note annotates="source">Param: some topic</note>

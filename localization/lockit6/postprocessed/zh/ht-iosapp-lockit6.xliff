@@ -86,7 +86,7 @@
         <source>tip (%ld of %lu)</source>
         <target>小贴士(%ld的%lu)</target>
       </trans-unit>
-      <trans-unit id="14" resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
+      <trans-unit id="14" resname="shared a tip on %@" restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
         <target>在%@分享一些小贴士</target>
         <note annotates="source">Param: some topic</note>
