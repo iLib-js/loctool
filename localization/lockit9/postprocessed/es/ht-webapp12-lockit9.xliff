@@ -3817,7 +3817,7 @@
     <body>
       <trans-unit id="837" resname="Talk{space}to{space}Docs" restype="string" datatype="javascript">
         <source>Talk{space}to{space}Docs</source>
-        <target state="translated">Talk{space}to{space}Docs</target>
+        <target state="translated">Habla{space}con{space}los doctores</target>
       </trans-unit>
     </body>
   </file>
