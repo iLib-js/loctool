@@ -23708,19 +23708,19 @@
       </trans-unit>
       <trans-unit id="4631" resname="r669633711" restype="string" datatype="ruby">
         <source>Poor network connection detected during a consult</source>
-        <target state="translated">Conexión de red pobre detectada durante consulta</target>
+        <target state="translated">Conexión de red pobre detectada durante una consulta</target>
       </trans-unit>
       <trans-unit id="4632" resname="r433964049" restype="string" datatype="ruby">
         <source>A patient responds to an Inbox Consults</source>
-        <target state="translated">Un paciente responde a una Consulta de Buzón de Entrada</target>
+        <target state="translated">Un paciente responde a una consulta de Buzón de Entrada</target>
       </trans-unit>
       <trans-unit id="4633" resname="r405339046" restype="string" datatype="ruby">
         <source>Reminder an Inbox Consults is pending your response</source>
-        <target state="translated">Recordatorio de una Consulta de Buzón de Entrada está pendiente de respuesta</target>
+        <target state="translated">Recordatorio de una consulta de Buzón de Entrada pendiente de respuesta</target>
       </trans-unit>
       <trans-unit id="4634" resname="r323126199" restype="string" datatype="ruby">
         <source>You missed an incoming Live Consult from a patient</source>
-        <target state="translated">Perdiste una Consulta en Vivo entrante de un paciente</target>
+        <target state="translated">Perdiste una consulta en vivo entrante de un paciente</target>
       </trans-unit>
       <trans-unit id="4635" resname="r741654474" restype="string" datatype="ruby">
         <source>Weekly Digest</source>

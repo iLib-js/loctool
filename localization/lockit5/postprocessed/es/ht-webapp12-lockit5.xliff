@@ -12252,19 +12252,19 @@
       </trans-unit>
       <trans-unit id="2585" resname="r669633711" restype="string" datatype="ruby">
         <source>Poor network connection detected during a consult</source>
-        <target>Conexión de red pobre detectada durante consulta</target>
+        <target>Conexión de red pobre detectada durante una consulta</target>
       </trans-unit>
       <trans-unit id="2586" resname="r433964049" restype="string" datatype="ruby">
         <source>A patient responds to an Inbox Consults</source>
-        <target>Un paciente responde a una Consulta de Buzón de Entrada</target>
+        <target>Un paciente responde a una consulta de Buzón de Entrada</target>
       </trans-unit>
       <trans-unit id="2587" resname="r405339046" restype="string" datatype="ruby">
         <source>Reminder an Inbox Consults is pending your response</source>
-        <target>Recordatorio de una Consulta de Buzón de Entrada está pendiente de respuesta</target>
+        <target>Recordatorio de una consulta de Buzón de Entrada pendiente de respuesta</target>
       </trans-unit>
       <trans-unit id="2588" resname="r323126199" restype="string" datatype="ruby">
         <source>You missed an incoming Live Consult from a patient</source>
-        <target>Perdiste una Consulta en Vivo entrante de un paciente</target>
+        <target>Perdiste una consulta en vivo entrante de un paciente</target>
       </trans-unit>
       <trans-unit id="2590" resname="r291358712" restype="string" datatype="ruby">
         <source>Summary of your weekly activity on healthtap</source>

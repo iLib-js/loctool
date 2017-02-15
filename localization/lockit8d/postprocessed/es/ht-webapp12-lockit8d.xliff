@@ -667,19 +667,19 @@
       </trans-unit>
       <trans-unit id="883" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@3">
         <source>Poor network connection detected during a consult</source>
-        <target state="translated">Conexión de red pobre detectada durante consulta</target>
+        <target state="translated">Conexión de red pobre detectada durante una consulta</target>
       </trans-unit>
       <trans-unit id="884" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@4">
         <source>A patient responds to an Inbox Consults</source>
-        <target state="translated">Un paciente responde a una Consulta de Buzón de Entrada</target>
+        <target state="translated">Un paciente responde a una consulta de Buzón de Entrada</target>
       </trans-unit>
       <trans-unit id="885" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@5">
         <source>Reminder an Inbox Consults is pending your response</source>
-        <target state="translated">Recordatorio de una Consulta de Buzón de Entrada está pendiente de respuesta</target>
+        <target state="translated">Recordatorio de una consulta de Buzón de Entrada pendiente de respuesta</target>
       </trans-unit>
       <trans-unit id="886" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@6">
         <source>You missed an incoming Live Consult from a patient</source>
-        <target state="translated">Perdiste una Consulta en Vivo entrante de un paciente</target>
+        <target state="translated">Perdiste una consulta en vivo entrante de un paciente</target>
       </trans-unit>
       <trans-unit id="889" resname=":text" restype="string" datatype="x-yaml" x-context="Your Checklists@0">
         <source>Members complete actions from your checklist</source>
