@@ -9608,7 +9608,7 @@
       </trans-unit>
       <trans-unit id="7904" resname="r294936119" restype="string" datatype="x-haml">
         <source>While expanding my network, I’ve also expanded my patient base.</source>
-        <target>Mientras expando mi red, he expandido también mi base de pacientes.</target>
+        <target>Expandiendo mi red, se ha expandido también la base de mis pacientes.</target>
       </trans-unit>
       <trans-unit id="7905" resname="r983729143" restype="string" datatype="x-haml">
         <source>Greg Sorkin, emergency medicine specialist and member</source>
