@@ -3005,7 +3005,7 @@
     <body>
       <trans-unit id="2516" resname="r204214811" restype="string" datatype="x-haml">
         <source>HealthTap’s technology and integration teams are transforming fragmented complex systems into unified, and interoperable systems that are consumer-centric, constantly learning and smart.</source>
-        <target state="translated">Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados a sistemas unificados e interoperables que son centrados en el consumidor, de aprendizaje constante e inteligentes.</target>
+        <target state="translated">Los equipos de tecnología e integración de HealthTap están transformando complejos sistemas fragmentados en sistemas unificados e interactivos, que se centran en el consumidor, con un aprendizaje constante e inteligentes.</target>
       </trans-unit>
     </body>
   </file>
