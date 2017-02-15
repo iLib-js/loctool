@@ -418,7 +418,7 @@
       </trans-unit>
       <trans-unit id="7092" resname="r671701737" restype="string" datatype="x-haml">
         <source>billion doctors’ answers to many millions of people around the world. And among the hundreds of thousands of notes in which people thank us for our help, we’ve received more than</source>
-        <target>un billón de respuestas de doctores a muchos millones de personas alrededor del mundo. Y entre las cientos de miles de notas en las cuales la gente nos agradece por nuestra ayuda, hemos recibido más de</target>
+        <target>billón de respuestas de doctores a muchos millones de personas alrededor del mundo. Y entre las cientos de miles de notas en las cuales la gente nos agradece por nuestra ayuda, hemos recibido más de</target>
       </trans-unit>
       <trans-unit id="7093" resname="r34458330" restype="string" datatype="x-haml">
         <source>notes in which members specifically thank us for saving their lives.</source>
