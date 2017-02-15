@@ -14129,7 +14129,7 @@
     <body>
       <trans-unit id="7428" resname="r580143816" restype="string" datatype="x-haml">
         <source>A personalized engaging health experience</source>
-        <target>Una atractiva experiencia de salud personalizada</target>
+        <target>Una atractiva experiencia médica personalizada</target>
       </trans-unit>
       <trans-unit id="7429" resname="r731765498" restype="string" datatype="x-haml">
         <source>For everyone at any stage of providing or receiving care, from query to cure</source>
