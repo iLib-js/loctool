@@ -12340,7 +12340,7 @@
       </trans-unit>
       <trans-unit id="2610" resname="r708190353" restype="string" datatype="ruby">
         <source>Reminder and Kudos for someone you support</source>
-        <target>Recordatorios y Kudos para alguien que apoyas</target>
+        <target>Recordatorios y Aclamación para alguien que apoyas</target>
       </trans-unit>
       <trans-unit id="2611" resname="r283175153" restype="string" datatype="ruby">
         <source>Kudos from your supporter(s)</source>
@@ -12348,7 +12348,7 @@
       </trans-unit>
       <trans-unit id="2612" resname="r628887346" restype="string" datatype="ruby">
         <source>Kudos for someone you support</source>
-        <target>Kudos para alguien que apoyas</target>
+        <target>Aclamación para alguien que apoyas</target>
       </trans-unit>
       <trans-unit id="2613" resname="r238259539" restype="string" datatype="ruby">
         <source>Doctor Insights For You</source>

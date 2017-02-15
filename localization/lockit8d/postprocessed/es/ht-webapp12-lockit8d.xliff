@@ -591,7 +591,7 @@
       </trans-unit>
       <trans-unit id="893" resname=":text" restype="string" datatype="x-yaml" x-context="Your Checklists@4">
         <source>Kudos for someone you support</source>
-        <target state="translated">Kudos para alguien que apoyas</target>
+        <target state="translated">Aclamación para alguien que apoyas</target>
       </trans-unit>
       <trans-unit id="894" resname=":text" restype="string" datatype="x-yaml" x-context="Doctor Insights For You@0">
         <source>Tips</source>
