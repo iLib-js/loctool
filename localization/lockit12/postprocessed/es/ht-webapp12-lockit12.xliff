@@ -113,7 +113,7 @@
       </trans-unit>
       <trans-unit id="23" resname="r688534621" restype="string" datatype="ruby">
         <source>%{bold_start}"Medical Expert"%{bold_end}means an individual accepted to participate in the HealthTap Medical Expert Community and who participates on the Apps or interacts with others on orthrough the Apps, or other specialists or professionals who participate on HealthTap in their capacity as experts.</source>
-        <target state="translated">%{bold_start}"Experto Médico"%{bold_end} significa que un individuo aceptó participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones, u otros especialistas o profesionistas que participan en HealthTap en su capacidad de expertos.</target>
+        <target state="translated">%{bold_start}"Experto Médico"%{bold_end} significa que un individuo aceptó participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones u otros especialistas o profesionales que participen en HealthTap en su cualidad de expertos.</target>
       </trans-unit>
       <trans-unit id="24" resname="r454770434" restype="string" datatype="ruby">
         <source>If there is a conflict between these TOU and terms posted for a specific feature or part, the latter terms apply to your use of that feature or part.%{bold_start} These Terms of Use require the use of arbitration to resolve disputes and also limit the remedies available to you in the event of a dispute%{bold_end}.</source>

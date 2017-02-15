@@ -189,7 +189,7 @@
     <body>
       <trans-unit id="177" resname="r358657435" restype="string" datatype="ruby">
         <source>Share a detailed description of your symptoms, concerns, and how you'd like the doctor to help you. Attach images and files as necessary.</source>
-        <target state="translated">Comparte una descripción detallada de tus síntomas, preocupaciones, y cómo te gustaría que el médico te ayudara. Adjunta imágenes y archivos como creas necesario.</target>
+        <target state="translated">Comparte una descripción detallada de tus síntomas, preocupaciones, y cómo te gustaría que el médico te ayudara. Adjunta las imágenes y los archivos que consideres necesarios.</target>
       </trans-unit>
       <trans-unit id="2237" resname="r143437710" restype="string" datatype="ruby">
         <source>Your zip code</source>
@@ -6760,7 +6760,7 @@
       </trans-unit>
       <trans-unit id="1094" resname="r454993673" restype="string" datatype="ruby">
         <source>HealthTap is helping define the new field of "Interactive Health"- the sector that is moving consumer health information to new platforms, like smartphones and tablets, to provide portability and immediate access to actionable information. Consumers and physicians are increasingly joining the online conversation, and interactive health deserves the close attention of the investment community. HealthTap demonstrates the potential of this emerging space.</source>
-        <target state="translated">HealthTap está ayudando a definir el nuevo campo de "Salud Interactiva" - el sector que está moviendo información de salud para el consumidor a nuevas plataformas, como teléfonos inteligentes y tabletas, para brindar portabilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. HealthTap demuestra el potencial de este espacio emergente.</target>
+        <target state="translated">HealthTap está ayudando a definir el nuevo campo de "Salud Interactiva" - el sector que está moviendo información de salud para el consumidor a nuevas plataformas, como teléfonos inteligentes y tabletas, para brindar versatilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. HealthTap demuestra el potencial de este espacio emergente.</target>
       </trans-unit>
       <trans-unit id="1095" resname="r848654511" restype="string" datatype="ruby">
         <source>Bill Ericson, General Partner at Mohr Davidow Ventures</source>
@@ -9408,7 +9408,7 @@
       </trans-unit>
       <trans-unit id="1829" resname="r1005945461" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; has the opportunity to  touch everyone on the planet and to become a great enterprise—maximizing both social and economic value.  It delivers value for patients, who will gain unprecedented access to doctors; value for doctors, who can treat more people more easily and cost-effectively; and value for society, which has been searching for a long time for a way to solve the healthcare dilemma of rising costs and an aging population. And given its unique and imaginative business model &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is poised to become one of the most profitable businesses in the world. It’s a real game changer.&lt;/em&gt;</source>
-        <target state="translated">&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; tiene la oportunidad de tocar a todos en el planeta y de convertirse en una gran empresa - maximizando tanto el valor social como el económico. Entrega valor para los pacientes, quienes ganaran acceso sin precedente a doctores; valor para doctores, quienes pueden tratar personas de forma más sencilla y económica; y valor para la sociedad, la cual ha estado buscando por mucho tiempo una forma de resolver el dilema de atención a la salud con los costos crecientes y una población que está envejeciendo. Y dado su único e imaginativo modelo de negocios &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; está posicionado para convertirse en uno de los negocios más lucrativos del mundo. Realmente cambia el juego.&lt;/em&gt;</target>
+        <target state="translated">&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; tiene la oportunidad de llegar a todo el planeta y de convertirse en una gran empresa, maximizando tanto su valor social como económico. Beneficia a los pacientes, que obtienen un acceso a los médicos sin precedentes; beneficia a los médicos, que pueden tratar a las personas de forma más sencilla y económica; y beneficia a la sociedad, que ha buscado por mucho tiempo una forma de resolver el dilema de la atención de la salud con costos crecientes y una población que envejece. Y dado su único e imaginativo modelo de negocios &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; está posicionado para convertirse en uno de los negocios más lucrativos del mundo. Realmente cambia el juego.&lt;/em&gt;</target>
       </trans-unit>
       <trans-unit id="1830" resname="r444875395" restype="string" datatype="ruby">
         <source>Mark Leslie at Leslie Ventures</source>
@@ -9416,11 +9416,11 @@
       </trans-unit>
       <trans-unit id="1831" resname="r999007113" restype="string" datatype="ruby">
         <source>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; embodies the powerful consumer Internet trend of moving high-value mainstream offline experiences, such as doctor-patient interactions, to the online world.&lt;/em&gt; The company leverages the three key innovation drivers that I'm most excited about: mobile apps that enable new kinds of rich, personalized interactions via smartphone and tablet; gamification that enhances user engagement and retention; and social mechanics, such as expert-based Q&amp;A and reputation graphs, that facilitate deep interest and trust. It's this kind of fresh thinking that will accelerate the &amp;ldquo;consumerization&amp;rdquo; of healthcare, and re-invigorate an extremely important and valuable industry that has been behind the IT curve and mired in inefficiency for decades.</source>
-        <target state="translated">&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; encarna la poderosa tendencia de consumidores en el Internet de mover experiencias mainstream valiosas offline, como interacciones médico-paciente, al mundo en línea.&lt;/em&gt; La compañía se aprovecha de tres motores de innovación clave de los cuales estoy más emocionado: aplicaciones móviles que permiten nuevas interacciones ricas y personalizadas vía teléfono inteligente y tabletas; ludificación que mejora las interacciones y retención de usuarios; y mecánicas sociales; como P&amp;R de expertos y gráficos de reputación, que facilitan profundo interés y confianza. Es este tipo de pensamiento fresco que acelerará la &amp;ldquo;consumidorización&amp;rdquo; de la atención a la salud, y volver a vigorizar una industria extremadamente importante y valiosa que ha estado detrás de la curva de IT y que ha estado inmersa en la ineficiencia por décadas.</target>
+        <target state="translated">&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; encarna la poderosa tendencia de consumidores en el Internet de llevar al mundo en línea experiencias mainstream que son valiosas offline, tales como las interacciones médico-paciente.&lt;/em&gt; La compañía se aprovecha de tres motores de innovación clave de los cuales estoy más emocionado: aplicaciones móviles que permiten nuevas interacciones ricas y personalizadas vía teléfono inteligente y tabletas; ludificación que mejora las interacciones y retención de usuarios; y mecánicas sociales; como P&amp;R de expertos y gráficos de reputación, que facilitan profundo interés y confianza. Es este tipo de pensamiento fresco que acelerará la &amp;ldquo;consumidorización&amp;rdquo; de la atención a la salud, y volver a vigorizar una industria extremadamente importante y valiosa que ha estado detrás de la curva de IT y que ha estado inmersa en la ineficiencia por décadas.</target>
       </trans-unit>
       <trans-unit id="1832" resname="r449353917" restype="string" datatype="ruby">
         <source>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is helping define the new field of &amp;ldquo;Interactive Health&amp;rdquo;—the sector that is moving consumer health information to new platforms&lt;/em&gt;, like smartphones and tablets, to provide portability and immediate access to actionable information. Consumers and physicians are increasingly joining the online conversation, and interactive health deserves the close attention of the investment community. &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; demonstrates the potential of this emerging space.</source>
-        <target state="translated">&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;está ayudando a definir el nuevo campo de &amp;ldquo;Salud Interactiva&amp;rdquo; - el sector que está moviendo información de salud para el consumidor a nuevas plataformas&lt;/em&gt;, como teléfonos inteligentes y tabletas, para brindar portabilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; demuestra el potencial de este espacio emergente.</target>
+        <target state="translated">&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;está ayudando a definir el nuevo campo de &amp;ldquo;Salud Interactiva&amp;rdquo; - el sector que está moviendo información de salud para el consumidor a nuevas plataformas&lt;/em&gt;, como teléfonos inteligentes y tabletas, para brindar versatilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; demuestra el potencial de este espacio emergente.</target>
       </trans-unit>
       <trans-unit id="1833" resname="r855068512" restype="string" datatype="ruby">
         <source>&lt;em&gt;HealthTap's approach is brilliant.&lt;/em&gt; It delivers what people miss about medicine most: a highly engaging personalized experience, with trusted doctors sharing helpful information.</source>
@@ -23100,7 +23100,7 @@
     <body>
       <trans-unit id="4483" resname="r300477531" restype="string" datatype="ruby">
         <source>What is %{person}'s gender?</source>
-        <target state="translated">¿Cuál es el género de %{person}?</target>
+        <target state="translated">¿Cuál es el sexo de %{person}?</target>
       </trans-unit>
       <trans-unit id="4484" resname="r453205076" restype="string" datatype="ruby">
         <source>When was %{person_description} born?</source>
@@ -23556,7 +23556,7 @@
       </trans-unit>
       <trans-unit id="4593" resname="r525805065" restype="string" datatype="ruby">
         <source>Members try your checklist</source>
-        <target state="translated">Miembros prueban tu listado</target>
+        <target state="translated">Miembros aprueban tu listado</target>
       </trans-unit>
       <trans-unit id="4594" resname="r866395136" restype="string" datatype="ruby">
         <source>Questions for You</source>
@@ -23696,7 +23696,7 @@
       </trans-unit>
       <trans-unit id="4628" resname="r420886578" restype="string" datatype="ruby">
         <source>A doctor shares feedback on your SOAP Note</source>
-        <target state="translated">Un doctor comparte comentario en tu Nota SOAP</target>
+        <target state="translated">Un doctor comparte su comentario en tu Nota SOAP</target>
       </trans-unit>
       <trans-unit id="4629" resname="r1026561444" restype="string" datatype="ruby">
         <source>A doctor rates your consult 5-stars</source>
@@ -23760,7 +23760,7 @@
       </trans-unit>
       <trans-unit id="4644" resname="r283299315" restype="string" datatype="ruby">
         <source>Updates on a question you asked</source>
-        <target state="translated">Actualizaciones a una pregunta que hiciste</target>
+        <target state="translated">Actualizaciones de una pregunta que hiciste</target>
       </trans-unit>
       <trans-unit id="4645" resname="r495465873" restype="string" datatype="ruby">
         <source>A doctor responds to Virtual Consult</source>
@@ -23852,7 +23852,7 @@
       </trans-unit>
       <trans-unit id="4667" resname="r97424739" restype="string" datatype="ruby">
         <source>Doctor accepts you as a patient</source>
-        <target state="translated">Doctor te acepta como paciente</target>
+        <target state="translated">Un doctor te acepta como paciente</target>
       </trans-unit>
       <trans-unit id="4668" resname="r250639661" restype="string" datatype="ruby">
         <source>Reminders when a doctor accepts you as a patient</source>
@@ -24372,7 +24372,7 @@
       </trans-unit>
       <trans-unit id="4795" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
-        <target state="translated">No sexualmente activo</target>
+        <target state="translated">No es sexualmente activa/o</target>
       </trans-unit>
       <trans-unit id="4796" resname="r699411433" restype="string" datatype="ruby">
         <source>Men</source>
@@ -25862,7 +25862,7 @@
       </trans-unit>
       <trans-unit id="5180" resname="r384671676" restype="string" datatype="ruby">
         <source>Suggested Doctors</source>
-        <target state="translated">Doctores Sugeridos</target>
+        <target state="translated">Doctores sugeridos</target>
       </trans-unit>
       <trans-unit id="5181" resname="r635197186" restype="string" datatype="ruby">
         <source>Safe for use during pregnancy</source>
@@ -33187,7 +33187,7 @@
     <body>
       <trans-unit id="7937" resname="r364116464" restype="string" datatype="ruby">
         <source>Credit card declined</source>
-        <target state="translated">Tarjeta de crédito declinada</target>
+        <target state="translated">Tarjeta de crédito rechazada</target>
       </trans-unit>
     </body>
   </file>
@@ -37056,7 +37056,7 @@
       </trans-unit>
       <trans-unit id="8731" resname="What gender is {first_name}?" restype="string" datatype="javascript">
         <source>What gender is {first_name}?</source>
-        <target state="translated">¿Cuál es el género de {first_name}?</target>
+        <target state="translated">¿Cuál es el sexo de {first_name}?</target>
       </trans-unit>
       <trans-unit id="8732" resname="What gender is this person?" restype="string" datatype="javascript">
         <source>What gender is this person?</source>
@@ -39332,7 +39332,7 @@
     <body>
       <trans-unit id="9159" resname="Where is {first_name} located?" restype="string" datatype="javascript">
         <source>Where is {first_name} located?</source>
-        <target state="translated">¿Dónde está ubicado {first_name}?</target>
+        <target state="translated">¿Cuál es la ubicación de {first_name}?</target>
       </trans-unit>
       <trans-unit id="9160" resname="Where is this person located?" restype="string" datatype="javascript">
         <source>Where is this person located?</source>
@@ -39352,11 +39352,11 @@
       </trans-unit>
       <trans-unit id="9164" resname="What ethnicity is {first_name}?" restype="string" datatype="javascript">
         <source>What ethnicity is {first_name}?</source>
-        <target state="translated">¿Qué grupo étnico es {first_name}?</target>
+        <target state="translated">¿A qué grupo étnico pertenece {first_name}?</target>
       </trans-unit>
       <trans-unit id="9165" resname="What ethnicity is this person?" restype="string" datatype="javascript">
         <source>What ethnicity is this person?</source>
-        <target state="translated">¿Qué grupo étnico es esta persona?</target>
+        <target state="translated">¿A qué grupo étnico pertenece esta persona?</target>
       </trans-unit>
       <trans-unit id="9166" resname="What ethnicity are you?" restype="string" datatype="javascript">
         <source>What ethnicity are you?</source>
@@ -39404,7 +39404,7 @@
       </trans-unit>
       <trans-unit id="9177" resname="(Choose all that apply)" restype="string" datatype="javascript">
         <source>(Choose all that apply)</source>
-        <target state="translated">(Elige a todos los que aplican)</target>
+        <target state="translated">(Elige todos los que aplican)</target>
       </trans-unit>
       <trans-unit id="9178" resname="How would you classify {first_name}&apos;s consumption of alcohol?" restype="string" datatype="javascript">
         <source>How would you classify {first_name}'s consumption of alcohol?</source>
@@ -40864,7 +40864,7 @@
       </trans-unit>
       <trans-unit id="9505" resname="Technical Issues" restype="string" datatype="javascript">
         <source>Technical Issues</source>
-        <target state="translated">Problemas Técnicos</target>
+        <target state="translated">Problemas técnicos</target>
       </trans-unit>
       <trans-unit id="9506" resname="What went wrong with your experience?" restype="string" datatype="javascript">
         <source>What went wrong with your experience?</source>
@@ -41116,7 +41116,7 @@
       </trans-unit>
       <trans-unit id="9554" resname="No longer take this" restype="string" datatype="javascript">
         <source>No longer take this</source>
-        <target state="translated">Ya no tomo esto</target>
+        <target state="translated">Ya no toma esto</target>
       </trans-unit>
       <trans-unit id="9555" resname="Does this person have any allergies?" restype="string" datatype="javascript">
         <source>Does this person have any allergies?</source>
@@ -42076,7 +42076,7 @@
       </trans-unit>
       <trans-unit id="9765" resname="Dr. Agrees" restype="string" datatype="javascript">
         <source>Dr. Agrees</source>
-        <target state="translated">De Acuerdos de Dr.</target>
+        <target state="translated">Dres. que están de acuerdo</target>
       </trans-unit>
     </body>
   </file>

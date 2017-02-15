@@ -5872,7 +5872,7 @@
       </trans-unit>
       <trans-unit id="9985" resname="r475779675" restype="string" datatype="x-haml">
         <source>Help doctors help you better</source>
-        <target>Ayuda a doctores a ayudarte mejor</target>
+        <target>Ayuda a los médicos a ayudarte mejor</target>
       </trans-unit>
       <trans-unit id="9986" resname="r905385200" restype="string" datatype="x-haml">
         <source>Free text questions answered within 24 hours</source>
@@ -8660,7 +8660,7 @@
       </trans-unit>
       <trans-unit id="2986" resname="r384671676" restype="string" datatype="ruby">
         <source>Suggested Doctors</source>
-        <target>Doctores Sugeridos</target>
+        <target>Doctores sugeridos</target>
       </trans-unit>
       <trans-unit id="2996" resname="r578209636" restype="string" datatype="ruby">
         <source>Related Medications</source>
@@ -10549,7 +10549,7 @@
       </trans-unit>
       <trans-unit id="6675" resname="r882859413" restype="string" datatype="x-haml">
         <source>We're humbled by all the great things written about us</source>
-        <target>Nos llenan de humildad todas las maravillosas cosas que han sido escritas sobre nosotros</target>
+        <target>Nos honran todas las maravillosas cosas que han sido escritas sobre nosotros</target>
       </trans-unit>
       <trans-unit id="6676" resname="r713826713" restype="string" datatype="x-haml">
         <source>We're also delighted by what industry experts, professional journalists,</source>
@@ -13917,7 +13917,7 @@
     <body>
       <trans-unit id="7293" resname="r325356960" restype="string" datatype="x-haml">
         <source>is supported by world-class investors, advisors, and experienced company builders who have helped create,</source>
-        <target>es apoyada por inversionistas, asesores y constructores de compañías de clase mundial quienes han ayudado a crear,</target>
+        <target>es apoyada por inversionistas, asesores y constructores de compañías mundiales quienes han ayudado a crear,</target>
       </trans-unit>
       <trans-unit id="7294" resname="r162156137" restype="string" datatype="x-haml">
         <source>develop, and direct some of the most successful companies of our day.</source>
@@ -13925,7 +13925,7 @@
       </trans-unit>
       <trans-unit id="7295" resname="r895599030" restype="string" datatype="x-haml">
         <source>What our investors have to say</source>
-        <target>Lo que nuestros inversionistas tienen que decir</target>
+        <target>Lo que dicen nuestros inversionistas</target>
       </trans-unit>
     </body>
   </file>
@@ -15485,7 +15485,7 @@
     <body>
       <trans-unit id="8047" resname="r737183367" restype="string" datatype="x-haml">
         <source>For questions or feedback about using</source>
-        <target>Para preguntas o comentarios acerca de usar</target>
+        <target>Para preguntas o comentarios sobre el uso de</target>
       </trans-unit>
       <trans-unit id="8048" resname="r998282891" restype="string" datatype="x-haml">
         <source>Come Visit Us!</source>
@@ -22605,7 +22605,7 @@
       </trans-unit>
       <trans-unit id="10407" resname="r513463810" restype="string" datatype="x-haml">
         <source>means an individual accepted to participate in the HealthTap Medical Expert Community and who participates on the Apps or interacts with others on or through the Apps, or other specialists or professionals who participate on HealthTap in their capacity as experts.</source>
-        <target>significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones, u otros especialistas o profesionistas que participan en HealthTap en su capacidad de expertos.</target>
+        <target>significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones u otros especialistas o profesionales que participen en HealthTap en su cualidad de expertos.</target>
       </trans-unit>
       <trans-unit id="10408" resname="r1010286189" restype="string" datatype="x-haml">
         <source>ALL INFORMATION PROVIDED ON HEALTHTAP OR IN CONNECTION WITH ANY COMMUNICATIONS SUPPORTED BY HEALTHTAP, INCLUDING BUT NOT LIMITED TO COMMUNICATIONS BETWEEN HEALTHTAP MEDICAL EXPERTS AND CONSUMERS, IS INTENDED TO BE FOR GENERAL INFORMATIONAL PURPOSES ONLY, AND IS IN NO WAY INTENDED TO CREATE A DOCTOR – PATIENT RELATIONSHIP AS DEFINED BY STATE AND FEDERAL LAW. HEALTHTAP IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL DIAGNOSIS OR TREATMENT. RELIANCE ON ANY INFORMATION PROVIDED BY HEALTHTAP OR ANY HEALTHTAP MEDICAL EXPERTS IS SOLELY AT YOUR OWN RISK.</source>
@@ -35589,7 +35589,7 @@
     <body>
       <trans-unit id="13990" resname=" take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>take any over-the-counter or prescription medications?</source>
-        <target>¿tomas algún medicamento de libre venta o de receta?</target>
+        <target>¿tomas algún medicamento de venta libre o de receta?</target>
       </trans-unit>
     </body>
   </file>

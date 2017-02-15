@@ -9316,7 +9316,7 @@
     <body>
       <trans-unit id="2011" resname="Suggested Doctors" restype="string" datatype="html">
         <source>Suggested Doctors</source>
-        <target>Doctores Sugeridos</target>
+        <target>Doctores sugeridos</target>
       </trans-unit>
       <trans-unit id="2012" resname="See more »" restype="string" datatype="html">
         <source>See more »</source>
@@ -19956,7 +19956,7 @@
     <body>
       <trans-unit id="4204" resname="If you know, what is your last menstrual period?" restype="string" datatype="html">
         <source>If you know, what is your last menstrual period?</source>
-        <target>Si lo sabes, ¿cuál es tu último periodo menstrual?</target>
+        <target>Si lo sabes, ¿cuál es su último periodo menstrual?</target>
       </trans-unit>
     </body>
   </file>
@@ -30744,7 +30744,7 @@
     <body>
       <trans-unit id="6468" resname="Where is {first_name} located?" restype="string" datatype="javascript">
         <source>Where is {first_name} located?</source>
-        <target>¿Dónde está ubicado {first_name}?</target>
+        <target>¿Cuál es la ubicación de {first_name}?</target>
       </trans-unit>
       <trans-unit id="6469" resname="Where is this person located?" restype="string" datatype="javascript">
         <source>Where is this person located?</source>
@@ -30764,11 +30764,11 @@
       </trans-unit>
       <trans-unit id="6473" resname="What ethnicity is {first_name}?" restype="string" datatype="javascript">
         <source>What ethnicity is {first_name}?</source>
-        <target>¿Qué grupo étnico es {first_name}?</target>
+        <target>¿A qué grupo étnico pertenece {first_name}?</target>
       </trans-unit>
       <trans-unit id="6474" resname="What ethnicity is this person?" restype="string" datatype="javascript">
         <source>What ethnicity is this person?</source>
-        <target>¿Qué grupo étnico es esta persona?</target>
+        <target>¿A qué grupo étnico pertenece esta persona?</target>
       </trans-unit>
       <trans-unit id="6475" resname="What is your height and weight?" restype="string" datatype="javascript">
         <source>What is your height and weight?</source>
@@ -30788,7 +30788,7 @@
       </trans-unit>
       <trans-unit id="6479" resname="(Choose all that apply)" restype="string" datatype="javascript">
         <source>(Choose all that apply)</source>
-        <target>(Elige a todos los que aplican)</target>
+        <target>(Elige todos los que aplican)</target>
       </trans-unit>
       <trans-unit id="6480" resname="How would you classify your consumption of alcohol?" restype="string" datatype="javascript">
         <source>How would you classify your consumption of alcohol?</source>
@@ -32068,7 +32068,7 @@
       </trans-unit>
       <trans-unit id="6747" resname="No longer take this" restype="string" datatype="javascript">
         <source>No longer take this</source>
-        <target>Ya no tomo esto</target>
+        <target>Ya no toma esto</target>
       </trans-unit>
       <trans-unit id="6748" resname="Does this person have any allergies?" restype="string" datatype="javascript">
         <source>Does this person have any allergies?</source>
@@ -32444,7 +32444,7 @@
       </trans-unit>
       <trans-unit id="6836" resname="Technical Issues" restype="string" datatype="javascript">
         <source>Technical Issues</source>
-        <target>Problemas Técnicos</target>
+        <target>Problemas técnicos</target>
       </trans-unit>
       <trans-unit id="6837" resname="What went wrong with your experience?" restype="string" datatype="javascript">
         <source>What went wrong with your experience?</source>
@@ -32960,7 +32960,7 @@
       </trans-unit>
       <trans-unit id="6940" resname="Dr. Agrees" restype="string" datatype="javascript">
         <source>Dr. Agrees</source>
-        <target>De Acuerdos de Dr.</target>
+        <target>Dres. que están de acuerdo</target>
       </trans-unit>
     </body>
   </file>
@@ -33016,7 +33016,7 @@
       </trans-unit>
       <trans-unit id="6953" resname=" take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>take any over-the-counter or prescription medications?</source>
-        <target>toma(s) algún medicamento de libre venta o de receta?</target>
+        <target>toma(s) algún medicamento de venta libre o de receta?</target>
       </trans-unit>
       <trans-unit id="6954" resname="{pre} have any allergies?" restype="string" datatype="javascript">
         <source>{pre} have any allergies?</source>

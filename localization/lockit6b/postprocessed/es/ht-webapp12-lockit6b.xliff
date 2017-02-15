@@ -2893,7 +2893,7 @@
     <body>
       <trans-unit id="2499" resname="r325356960" restype="string" datatype="x-haml">
         <source>is supported by world-class investors, advisors, and experienced company builders who have helped create,</source>
-        <target state="translated">es apoyada por inversionistas, asesores y constructores de compañías de clase mundial quienes han ayudado a crear,</target>
+        <target state="translated">es apoyada por inversionistas, asesores y constructores de compañías mundiales quienes han ayudado a crear,</target>
       </trans-unit>
     </body>
   </file>
@@ -3557,7 +3557,7 @@
       </trans-unit>
       <trans-unit id="2662" resname="r737183367" restype="string" datatype="x-haml">
         <source>For questions or feedback about using</source>
-        <target state="translated">Para preguntas o comentarios acerca de usar</target>
+        <target state="translated">Para preguntas o comentarios sobre el uso de</target>
       </trans-unit>
     </body>
   </file>
@@ -5557,7 +5557,7 @@
       </trans-unit>
       <trans-unit id="3129" resname="r513463810" restype="string" datatype="x-haml">
         <source>means an individual accepted to participate in the HealthTap Medical Expert Community and who participates on the Apps or interacts with others on or through the Apps, or other specialists or professionals who participate on HealthTap in their capacity as experts.</source>
-        <target state="translated">significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones, u otros especialistas o profesionistas que participan en HealthTap en su capacidad de expertos.</target>
+        <target state="translated">significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones u otros especialistas o profesionales que participen en HealthTap en su cualidad de expertos.</target>
       </trans-unit>
       <trans-unit id="3130" resname="r1010286189" restype="string" datatype="x-haml">
         <source>ALL INFORMATION PROVIDED ON HEALTHTAP OR IN CONNECTION WITH ANY COMMUNICATIONS SUPPORTED BY HEALTHTAP, INCLUDING BUT NOT LIMITED TO COMMUNICATIONS BETWEEN HEALTHTAP MEDICAL EXPERTS AND CONSUMERS, IS INTENDED TO BE FOR GENERAL INFORMATIONAL PURPOSES ONLY, AND IS IN NO WAY INTENDED TO CREATE A DOCTOR – PATIENT RELATIONSHIP AS DEFINED BY STATE AND FEDERAL LAW. HEALTHTAP IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL DIAGNOSIS OR TREATMENT. RELIANCE ON ANY INFORMATION PROVIDED BY HEALTHTAP OR ANY HEALTHTAP MEDICAL EXPERTS IS SOLELY AT YOUR OWN RISK.</source>
