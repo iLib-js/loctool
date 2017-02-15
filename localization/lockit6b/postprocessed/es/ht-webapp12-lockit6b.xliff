@@ -3353,7 +3353,7 @@
       </trans-unit>
       <trans-unit id="2621" resname="r544270111" restype="string" datatype="x-haml">
         <source>doctors answer people’s questions, provide them with health tips, and curate those articles and research papers that will be most helpful to both individuals and society at large.</source>
-        <target state="translated">los doctores contestan preguntas de personas, les brindan tips de salud, y curan esos artículos e investigaciones que serán muy útiles tanto para individuos como a la sociedad en general.</target>
+        <target state="translated">los doctores contestan preguntas de personas, les brindan tips de salud, y comparten artículos e investigaciones que serán muy útiles tanto para individuos como a la sociedad en general.</target>
       </trans-unit>
       <trans-unit id="2622" resname="r555893575" restype="string" datatype="x-haml">
         <source>Medical Expert Network are invited to be HealthTap Prime doctors, they interact with patients live using video or voice via their PCs, phones, or mobile devices,</source>
