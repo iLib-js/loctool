@@ -1659,7 +1659,7 @@
     <body>
       <trans-unit id="350" resname="Billed monthly. Cancel anytime" restype="string" datatype="javascript">
         <source>Billed monthly. Cancel anytime</source>
-        <target state="translated">Facturado mensualmente. Cancela en cualquier momento</target>
+        <target state="translated">La facturación es mensual y puedes cancelar en cualquier momento.</target>
       </trans-unit>
       <trans-unit id="351" resname="Your total this year" restype="string" datatype="javascript">
         <source>Your total this year</source>
