@@ -7654,9 +7654,9 @@
         <source>If you use information from a member's profile, please:</source>
         <target>Si usas información del perfil de un miembro, por favor:</target>
       </trans-unit>
-      <trans-unit id="1674" resname="Restate in your answer any pertinent facts from the member&apos;s profile, so other readers will understand the basis for your personalized answer. &lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; Reiterating relevant profile information helps ensure that your answer is not out of context and is useful for other readers who do not have access to this profile information&#40;e.g., &quot;Women over 40 who takes medicine X should...&quot;&#41; &lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Learn more &amp;&#35;155;&lt;/a&gt;" restype="string" datatype="html">
-        <source>Restate in your answer any pertinent facts from the member&apos;s profile, so other readers will understand the basis for your personalized answer. &lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; Reiterating relevant profile information helps ensure that your answer is not out of context and is useful for other readers who do not have access to this profile information&#40;e.g., &quot;Women over 40 who takes medicine X should...&quot;&#41; &lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Learn more &amp;&#35;155;&lt;/a&gt;</source>
-        <target>Vuelve a plantear en tu respuesta todos los hechos pertinentes del perfil del miembro, para que así otros lectores entiendan el fundamento para tu respuesta personalizada. &lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; El reiterar la información relevante del perfil ayuda a asegurar que tu respuesta no esté fuera de contexto y sea útil para los demás lectores que no tienen acceso a esta información de perfil &#40;e.g., &quot;Las mujeres mayores a 40 que tomen la medicina X deberían...&quot;&#41; &lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Aprender más &amp;&#35;155;&lt;/a&gt;</target>
+      <trans-unit id="1674" resname="Restate in your answer any pertinent facts from the member&apos;s profile, so other readers will understand the basis for your personalized answer. &lt;span class=&quot;learn_more_content_h&quot; style=&quot;display: none&quot;&gt; Reiterating relevant profile information helps ensure that your answer is not out of context and is useful for other readers who do not have access to this profile information(e.g., &quot;Women over 40 who takes medicine X should...&quot;) &lt;/span&gt;&lt;a class=&quot;learn_more_h&quot;&gt;Learn more &amp;#155;&lt;/a&gt;" restype="string" datatype="html">
+        <source>Restate in your answer any pertinent facts from the member's profile, so other readers will understand the basis for your personalized answer. &lt;span class="learn_more_content_h" style="display: none"&gt; Reiterating relevant profile information helps ensure that your answer is not out of context and is useful for other readers who do not have access to this profile information(e.g., "Women over 40 who takes medicine X should...") &lt;/span&gt;&lt;a class="learn_more_h"&gt;Learn more &amp;#155;&lt;/a&gt;</source>
+        <target>Vuelve a plantear en tu respuesta todos los hechos pertinentes del perfil del miembro, para que así otros lectores entiendan el fundamento para tu respuesta personalizada. &lt;span class="learn_more_content_h" style="display: none"&gt; El reiterar la información relevante del perfil ayuda a asegurar que tu respuesta no esté fuera de contexto y sea útil para los demás lectores que no tienen acceso a esta información de perfil (e.g., "Las mujeres mayores a 40 que tomen la medicina X deberían...") &lt;/span&gt;&lt;a class="learn_more_h"&gt;Aprender más &amp;#155;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="1675" resname="Refrain from any personal diagnosis, prescription, or advice." restype="string" datatype="html">
         <source>Refrain from any personal diagnosis, prescription, or advice.</source>
@@ -11426,9 +11426,9 @@
         <source>Congratulations, you are now eligible for a position on our Editorial Board! The board will evaluate your candidacy and notify you soon.</source>
         <target>¡Felicidades! ¡Ahora eres elegible para una posición en nuestro Consejo Editorial! El consejo evaluará tu candidatura y te notificará pronto.</target>
       </trans-unit>
-      <trans-unit id="2468" resname="Review &lt;span class=&quot;bold&quot;&gt;&lt;%= &#40;App.user.get&#40;&apos;person&apos;&#41;.editorial_board_threshold - App.user.get&#40;&apos;person&apos;&#41;.apps_recommended_num - 1&#41; %&gt; more apps&lt;/span&gt; and become eligible for Editorial status, and have your reviews publicly displayed! &lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1&#35;how_it_works/apprx&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
-        <source>Review &lt;span class=&quot;bold&quot;&gt;&lt;%= &#40;App.user.get&#40;&apos;person&apos;&#41;.editorial_board_threshold - App.user.get&#40;&apos;person&apos;&#41;.apps_recommended_num - 1&#41; %&gt; more apps&lt;/span&gt; and become eligible for Editorial status, and have your reviews publicly displayed! &lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1&#35;how_it_works/apprx&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
-        <target>Valora &lt;span class=&quot;bold&quot;&gt;&lt;%= &#40;App.user.get&#40;&apos;person&apos;&#41;.editorial_board_threshold - App.user.get&#40;&apos;person&apos;&#41;.apps_recommended_num - 1&#41; %&gt; aplicaciones más&lt;/span&gt; y vuelvete elegible para estado Editorial, y haz que tus valoraciones sean mostradas públicamente! &lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1&#35;how_it_works/apprx&quot;&gt;Aprender más &amp;raquo;&lt;/a&gt;</target>
+      <trans-unit id="2468" resname="Review &lt;span class=&quot;bold&quot;&gt;&lt;%= (App.user.get(&apos;person&apos;).editorial_board_threshold - App.user.get(&apos;person&apos;).apps_recommended_num - 1) %&gt; more apps&lt;/span&gt; and become eligible for Editorial status, and have your reviews publicly displayed! &lt;a class=&quot;learn_more_editorial&quot; href=&quot;/?doctor=1#how_it_works/apprx&quot;&gt;Learn more &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
+        <source>Review &lt;span class="bold"&gt;&lt;%= (App.user.get('person').editorial_board_threshold - App.user.get('person').apps_recommended_num - 1) %&gt; more apps&lt;/span&gt; and become eligible for Editorial status, and have your reviews publicly displayed! &lt;a class="learn_more_editorial" href="/?doctor=1#how_it_works/apprx"&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
+        <target>Valora &lt;span class="bold"&gt;&lt;%= (App.user.get('person').editorial_board_threshold - App.user.get('person').apps_recommended_num - 1) %&gt; aplicaciones más&lt;/span&gt; y vuelvete elegible para estado Editorial, y haz que tus valoraciones sean mostradas públicamente! &lt;a class="learn_more_editorial" href="/?doctor=1#how_it_works/apprx"&gt;Aprender más &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -21203,8 +21203,8 @@
         <target>¿Estás seguro?</target>
       </trans-unit>
       <trans-unit id="4401" resname="Do you want to remove this action from your &quot;To-Do&quot; list?" restype="string" datatype="html">
-        <source>Do you want to remove this action from your &quot;To-Do&quot; list?</source>
-        <target>¿Quieres eliminar esta medida de tu lista de &quot;Qué hacer&quot;?</target>
+        <source>Do you want to remove this action from your "To-Do" list?</source>
+        <target>¿Quieres eliminar esta medida de tu lista de "Qué hacer"?</target>
       </trans-unit>
       <trans-unit id="4402" resname="Keep" restype="string" datatype="html">
         <source>Keep</source>
@@ -30947,7 +30947,7 @@
         <target>Hola, {name}.</target>
       </trans-unit>
       <trans-unit id="6514" resname=" I have a skin rash and I’m concerned it might be from                       food allergies." restype="string" datatype="javascript">
-        <source> I have a skin rash and I’m concerned it might be from                       food allergies.</source>
+        <source>I have a skin rash and I’m concerned it might be from                       food allergies.</source>
         <target>Tengo un sarpullido en la piel y me preocupa que pueda ser de  alergias alimentarias.</target>
       </trans-unit>
       <trans-unit id="6515" resname="Rash on left arm" restype="string" datatype="javascript">
@@ -31167,11 +31167,11 @@
         <target>¿Te ves a ti mismo? Si no es así, haz clic en el engrane blanco en la   izquierda superior para revisar la configuración de la cámara.</target>
       </trans-unit>
       <trans-unit id="6569" resname=" If you need additional support, please contact your IT                            department." restype="string" datatype="javascript">
-        <source> If you need additional support, please contact your IT                            department.</source>
+        <source>If you need additional support, please contact your IT                            department.</source>
         <target>Si necesitas ayuda adicional, por favor, contacta tu departamento de  IT.</target>
       </trans-unit>
       <trans-unit id="6570" resname=" If you need additional support, please email                           {email_link_tag_start}{email}{link_tag_end} or call us at {phone}." restype="string" datatype="javascript">
-        <source> If you need additional support, please email                           {email_link_tag_start}{email}{link_tag_end} or call us at {phone}.</source>
+        <source>If you need additional support, please email                           {email_link_tag_start}{email}{link_tag_end} or call us at {phone}.</source>
         <target>Si necesitas ayuda adicional, por favor, envía un correo electrónico a  {email_link_tag_start}{email}{link_tag_end} o llámanos al {phone}.</target>
       </trans-unit>
       <trans-unit id="6571" resname="It seems like you are still having issues granting permission to the                    plug-in. Don&apos;t worry, continue now and someone from our team will                    call you later to help you set up your plug-in." restype="string" datatype="javascript">

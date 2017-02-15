@@ -1550,7 +1550,7 @@
       </trans-unit>
       <trans-unit id="290" resname="r526219058" restype="string" datatype="java">
         <source>Do you want to remove this action from your To-Do list?</source>
-        <target>¿Quieres quitar esta acción de tu lista de &quot;Por Hacer&quot;?</target>
+        <target>¿Quieres quitar esta acción de tu lista de "Por Hacer"?</target>
       </trans-unit>
     </body>
   </file>
@@ -6068,13 +6068,13 @@
 \u00B7 Depresión\n\n\
 \u00B7 Diarrea\n\n\
 \u00B7 Cuero Cabelludo Seco\n\n\
-\u00B7 Piel Seca &#40;Eczema&#41;\n\n\
+\u00B7 Piel Seca (Eczema)\n\n\
 \u00B7 Irritación Ocular\n\n\
 \u00B7 Fiebre\n\n\
 \u00B7 Lesiones en los Genitales\n\n\
 \u00B7 Fiebre del Heno\n\n\
 \u00B7 Dolor de Cabeza\n\n\
-\u00B7 Acidez Estomacal &#40;Enfermedad por Reflujo Gastroesofágico, o ERGE&#41;\n\n\
+\u00B7 Acidez Estomacal (Enfermedad por Reflujo Gastroesofágico, o ERGE)\n\n\
 \u00B7 Influenza\n\n\
 \u00B7 Interpretación del Laboratorio\n\n\
 \u00B7 Piojos\n\n\
@@ -6088,7 +6088,7 @@
 \u00B7 Infección Respiratoria\n\n\
 \u00B7 Tobillo Torcido\n\n\
 \u00B7 Sarna\n\n\
-\u00B7 Dermatitis Seborréica &#40;Cuero Cabelludo Seco&#41;\n\n\
+\u00B7 Dermatitis Seborréica (Cuero Cabelludo Seco)\n\n\
 \u00B7 Infección en la Piel\n\n\
 \u00B7 Lesiones Deportivas\n\n\
 \u00B7 Faringitis Bacteriana\n\n\
