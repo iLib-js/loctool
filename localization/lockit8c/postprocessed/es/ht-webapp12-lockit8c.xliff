@@ -11588,7 +11588,7 @@
       </trans-unit>
       <trans-unit id="2242" resname="r245565904" restype="string" datatype="ruby">
         <source>For medical emergencies, call %{emergency_extension} (or your local emergency services) or go to the nearest %{emergency_room_abbreviation}.</source>
-        <target state="translated">Para emergencias médicas, llama al %{emergency_extension} (o a tus servicios de emergencia local) o ve a la más cercana %{emergency_room_abbreviation}.</target>
+        <target state="translated">Para emergencias médicas, llama al %{emergency_extension} (o a tus servicios de emergencia local) o ve a la %{emergency_room_abbreviation} más cercana.</target>
       </trans-unit>
     </body>
   </file>
@@ -31024,7 +31024,7 @@
       </trans-unit>
       <trans-unit id="7280" resname="r239285109" restype="string" datatype="ruby">
         <source>%{number} doctors available for you</source>
-        <target state="translated">%{num} doctores disponibles para ti</target>
+        <target state="translated">%{number} doctores disponibles para ti</target>
       </trans-unit>
       <trans-unit id="7281" resname="r920532238" restype="string" datatype="ruby">
         <source>Doctors are standing by to help</source>
