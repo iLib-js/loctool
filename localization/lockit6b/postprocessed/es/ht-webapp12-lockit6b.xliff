@@ -1117,7 +1117,7 @@
       </trans-unit>
       <trans-unit id="2584" resname="r328831441" restype="string" datatype="x-haml">
         <source>I think searching for information online is great for many things, I just don't think your health is one of them. With</source>
-        <target state="translated">Creo que buscar información en línea es bueno para muchas cosas, solo no creo que tu salud sea una de ella. Con</target>
+        <target state="translated">Creo que buscar información en línea es bueno para muchas cosas, solo no creo que tu salud sea una de ellas. Con</target>
       </trans-unit>
       <trans-unit id="2585" resname="r1000879257" restype="string" datatype="x-haml">
         <source>Jennifer J.,</source>
