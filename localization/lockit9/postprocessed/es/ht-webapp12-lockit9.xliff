@@ -52,7 +52,7 @@
       </trans-unit>
       <trans-unit id="11" resname="r580619632" restype="string" datatype="ruby">
         <source>HealthTap embodies the powerful consumer Internet trend of moving high-value mainstream offline experiences, such as doctor-patient interactions, to the online world. The company leverages the three key innovation drivers that I'm most excited about: mobile apps that enable new kinds of rich, personalized interactions via smartphone and tablet; gamification that enhances user engagement and retention; and social mechanics, such as expert-based Q&amp;A and reputation graphs, that facilitate deep interest and trust. It's this kind of fresh thinking that will accelerate the 'consumerization' of Healthcare, and re-invigorate an extremely important and valuable industry that has been behind the IT curve and mired in inefficiency for decades.</source>
-        <target state="translated">HealthTap encarna la poderosa tendencia de consumidores en el Internet de mover experiencias mainstream valiosas offline, como interacciones médico-paciente, al mundo en línea. La compañía se aprovecha de tres motores de innovación clave de los cuales estoy más emocionado: aplicaciones móviles que permiten nuevas interacciones ricas y personalizadas vía teléfono inteligente y tabletas; ludificación que mejora las interacciones y retención de usuarios; y mecánicas sociales; como P&amp;R de expertos y gráficos de reputación, que facilitan profundo interés y confianza. Esta clase de pensamiento innovador es el que acelerará la 'consumerización' de la Atención a la Salud, y revigorizará una industria extremadamente importante y valiosa que se ha quedado atrás en lo que respecta a IT, y que ha estado inmersa en la ineficiencia por décadas.</target>
+        <target state="translated">HealthTap encarna la poderosa tendencia de consumidores en el Internet de llevar al mundo en línea experiencias mainstream que son valiosas offline, tales como las interacciones médico-paciente. Los tres motores de innovación más interesantes que esta compañía aprovecha son: aplicaciones móviles que permiten nuevas interacciones ricas y personalizadas vía teléfono inteligente y tabletas; ludificación que mejora las interacciones y retención de usuarios; y mecánicas sociales; como P&amp;R de expertos y gráficos de reputación, que facilitan profundo interés y confianza. Esta clase de pensamiento innovador es el que acelerará la 'consumerización' de la Atención a la Salud, y revigorizará una industria extremadamente importante y valiosa que se ha quedado atrás en lo que respecta a IT, y que ha estado inmersa en la ineficiencia por décadas.</target>
       </trans-unit>
       <trans-unit id="12" resname="r822464772" restype="string" datatype="ruby">
         <source>HealthTap's approach is brilliant. It delivers what people miss about medicine most: a highly engaging personalized experience, with trusted doctors sharing helpful information.</source>
@@ -68,7 +68,7 @@
       </trans-unit>
       <trans-unit id="15" resname="r964068761" restype="string" datatype="ruby">
         <source>In its current state, our healthcare system is expensive, difficult to access, and error prone. On the brink of a massive reform in healthcare, dedicated, bright entrepreneurs and technologists can bring a great deal to the table by developing creative, forward thinking solutions that leverage health care professionals. HealthTap is at the forefront of this development, improving patient care by creating quick, easy, and affordable access to doctors everywhere. The future of healthcare is at the confluence of big data, smart algorithms, and simple-to-use interfaces that will provide amplification of our MD's resources: HealthTap is breaking ground in all three, and we're excited to help them make their compelling vision a transformative reality.</source>
-        <target state="translated">En su estado actual, nuestro sistema atención a la salud es caro, difícil de acceder, y propenso a errores. Al borde una masiva reforma a la atención a la salud, emprendedores y tecnólogos brillantes y dedicados pueden traer mucho a la mesa al desarrollar soluciones creativas y novedosas que se aprovechan de los profesionales de la atención a la salud. HealthTap está a la vanguardia de este desarrollo, mejorando la atención al paciente creando acceso accesible, fácil y rápido a doctores en todos lados. El futuro de la atención a la salud está en la convergencia de big data, algoritmos inteligentes e interfaz fáciles de usar que brindan amplificación de los recursos de nuestros MD: HealthTap es pionero en las tres, y estamos emocionados por ayudarlos a hacer su atractiva visión una realidad transformativa.</target>
+        <target state="translated">En su estado actual, nuestro sistema atención a la salud es caro, difícil de acceder, y propenso a errores. Al borde una masiva reforma de la atención a la salud, emprendedores y tecnólogos brillantes y dedicados pueden contribuir bastante, al desarrollar soluciones creativas y novedosas, que saquen provecho de los profesionales de la atención de la salud. HealthTap está a la vanguardia de este desarrollo, mejorando la atención al paciente creando acceso accesible, fácil y rápido a doctores en todos lados. El futuro de la atención a la salud está en la convergencia de big data, algoritmos inteligentes e interfaz fáciles de usar que brindan amplificación de los recursos de nuestros MD: HealthTap es pionero en las tres, y estamos emocionados por ayudarlos a hacer su atractiva visión una realidad transformativa.</target>
       </trans-unit>
     </body>
   </file>
@@ -744,7 +744,7 @@
     <body>
       <trans-unit id="161" resname="r889655063" restype="string" datatype="ruby">
         <source>Providing 24/7 immediate access to over %{num} top doctors via video, text, or voice</source>
-        <target state="translated">Brindando acceso inmediato, 24/7, a más de %{num} de los mejores doctores a través de video, texto o voz</target>
+        <target state="translated">Brindando acceso inmediato, las 24 hs., los 7 días de la semana, a más de %{num} de los mejores doctores a través de video, texto o voz</target>
       </trans-unit>
     </body>
   </file>
@@ -1770,7 +1770,7 @@
       </trans-unit>
       <trans-unit id="363" resname="r810227030" restype="string" datatype="ruby">
         <source>What is {$person}'s gender?</source>
-        <target state="translated">¿Cuál es el género de {$person}?</target>
+        <target state="translated">¿Cuál es el sexo de {$person}?</target>
       </trans-unit>
       <trans-unit id="364" resname="r136197315" restype="string" datatype="ruby">
         <source>Is {$person} currently pregnant?</source>
@@ -3151,7 +3151,7 @@
     <body>
       <trans-unit id="681" resname="r21122803" restype="string" datatype="x-haml">
         <source>Global health</source>
-        <target state="translated">Consultorio de Salud Global</target>
+        <target state="translated">Consultorio Medico</target>
       </trans-unit>
     </body>
   </file>
@@ -3717,7 +3717,7 @@
     <body>
       <trans-unit id="805" resname="What is {name}&apos;s gender?" restype="string" datatype="javascript">
         <source>What is {name}'s gender?</source>
-        <target state="translated">¿Cuál es el género de {name}?</target>
+        <target state="translated">¿Cuál es el sexo de {name}?</target>
       </trans-unit>
       <trans-unit id="806" resname="Please provide the following for {name}&apos;s consult" restype="string" datatype="javascript">
         <source>Please provide the following for {name}'s consult</source>
@@ -3917,11 +3917,11 @@
       </trans-unit>
       <trans-unit id="862" resname="Does {name} take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>Does {name} take any over-the-counter or prescription medications?</source>
-        <target state="translated">¿{name} toma algún medicamento de libre venta o de receta?</target>
+        <target state="translated">¿{name} toma algún medicamento de venta libre o de receta?</target>
       </trans-unit>
       <trans-unit id="863" resname="Do you take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>Do you take any over-the-counter or prescription medications?</source>
-        <target state="translated">¿Tomas algún medicamento de libre venta o de receta?</target>
+        <target state="translated">¿Tomas algún medicamento de venta libre o de receta?</target>
       </trans-unit>
     </body>
   </file>

@@ -1518,7 +1518,7 @@
     <body>
       <trans-unit id="274" resname="r506108837" restype="string" datatype="java">
         <source>To-Do</source>
-        <target>Qué Hacer</target>
+        <target>Por Hacer</target>
       </trans-unit>
     </body>
   </file>
@@ -1678,7 +1678,7 @@
       </trans-unit>
       <trans-unit id="305" resname="r526219058" restype="string" datatype="java">
         <source>Do you want to remove this action from your To-Do list?</source>
-        <target>¿Quieres quitar esta acción de tu lista de "Qué Hacer"?</target>
+        <target>¿Quieres quitar esta acción de tu lista de "Por Hacer"?</target>
       </trans-unit>
     </body>
   </file>

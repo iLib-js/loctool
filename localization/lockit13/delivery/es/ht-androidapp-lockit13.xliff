@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/PersonalizationSliderItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="r389939394" restype="string" datatype="java">
+        <source>{feet_num}'{inches_num}" ({height_in_meters}m)</source><seg-source><mrk mtype="seg" mid="1">{feet_num}'{inches_num}" ({height_in_meters}m)</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="1">{feet_num}'{inches_num}" ({height_in_meters}m)</mrk></target>
+        
+      <note>This refers to patient's height, for example, 5'7" (1.7m) TODO localize number format? translate into local measurements?</note></trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/UnfollowLayerDialogBox.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="2" resname="r32892148" restype="string" datatype="java">
+        <source>You're now following "{topic_name}"</source><seg-source><mrk mtype="seg" mid="2">You're now following "{topic_name}"</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="2">Ahora estás siguiente a "{topic_name}"</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/click_listeners/FollowItemListener.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="3" resname="r440805493" restype="string" datatype="java">
+        <source>You're now following the topic "{0}"!</source><seg-source><mrk mtype="seg" mid="3">You're now following the topic "{0}"!</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="3">¡Ahora estás siguiendo el tema de "{0}"!</mrk></target>
+        
+      <note>{0} is a topic name.</note></trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/adapters/AllAttributeListAdapter.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="4" resname="r780459903" restype="string" datatype="java">
+        <source>You're now following "{0}"</source><seg-source><mrk mtype="seg" mid="4">You're now following "{0}"</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="4">Ahora estás siguiendo a "{0}"</mrk></target>
+        
+      <note>{0} is a topic name.</note></trans-unit>
+    </body>
+  </file>
+</xliff>

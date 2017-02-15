@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="feelgood/iPadNative/Expert/FGDoctorBaseViewController.h" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Write recommendation" restype="string" datatype="x-objective-c">
+        <source>Write recommendation</source><seg-source><mrk mtype="seg" mid="1">Write recommendation</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="1">Escribir recomendación</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocUpgradeForSubAccountViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="2" resname="Update Subscription" restype="string" datatype="x-objective-c">
+        <source>Update Subscription</source><seg-source><mrk mtype="seg" mid="2">Update Subscription</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="2">Actualizar Suscripción</mrk></target>
+      </trans-unit>
+      <trans-unit id="3" resname="To ask for %@, please" restype="string" datatype="x-objective-c">
+        <source>To ask for %@, please</source><seg-source><mrk mtype="seg" mid="3">To ask for %@, please</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="3">Para solicitar %@, por favor</mrk></target>
+      </trans-unit>
+      <trans-unit id="4" resname="add %@ to your account" restype="string" datatype="x-objective-c">
+        <source>add %@ to your account</source><seg-source><mrk mtype="seg" mid="4">add %@ to your account</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="4">añadir %@ a tu cuenta</mrk></target>
+      </trans-unit>
+      <trans-unit id="5" resname="Add %@" restype="string" datatype="x-objective-c">
+        <source>Add %@</source><seg-source><mrk mtype="seg" mid="5">Add %@</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="5">Añadir %@</mrk></target>
+      </trans-unit>
+      <trans-unit id="6" resname="Only US $%@ / month" restype="string" datatype="x-objective-c">
+        <source>Only US $%@ / month</source><seg-source><mrk mtype="seg" mid="6">Only US $%@ / month</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="6">Solo US $%@ / mes</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="7" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n" restype="string" datatype="x-objective-c">
+        <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n</source><seg-source><mrk mtype="seg" mid="7">•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="7">•\tDolor Adominal\n•\tBronquitis Aguda\n•\tConjuntivitis Aguda\n•\tCistitis Aguda\n</mrk></target>
+        
+      <note>Common reasons to use virtual consults bullets full list</note></trans-unit>
+      <trans-unit id="8" resname="See more\n" restype="string" datatype="x-objective-c">
+        <source>See more\n</source><seg-source><mrk mtype="seg" mid="8">See more\n</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="8">Ver más\n</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGSideMenuViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="9" resname="%d'%d&quot; (%.02fm)" restype="string" datatype="x-objective-c">
+        <source>%d'%d" (%.02fm)</source><seg-source><mrk mtype="seg" mid="9">%d'%d" (%.02fm)</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="9">%d'%d" (%.02fm)</mrk></target>
+      </trans-unit>
+      <trans-unit id="10" resname="%@'0&quot; (%.02fm)" restype="string" datatype="x-objective-c">
+        <source>%@'0" (%.02fm)</source><seg-source><mrk mtype="seg" mid="10">%@'0" (%.02fm)</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="10">%@'0" (%.02fm)</mrk></target>
+      </trans-unit>
+      <trans-unit id="11" resname="%@'%@&quot; (%.02fm)" restype="string" datatype="x-objective-c">
+        <source>%@'%@" (%.02fm)</source><seg-source><mrk mtype="seg" mid="11">%@'%@" (%.02fm)</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="11">%@'%@" (%.02fm)</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTTopicSnapshotTableViewDataSource.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="12" resname="tests" restype="string" datatype="x-objective-c">
+        <source>tests</source><seg-source><mrk mtype="seg" mid="12">tests</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="12">pruebas</mrk></target>
+      </trans-unit>
+      <trans-unit id="13" resname="treatments" restype="string" datatype="x-objective-c">
+        <source>treatments</source><seg-source><mrk mtype="seg" mid="13">treatments</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="13">tratamientos</mrk></target>
+      </trans-unit>
+      <trans-unit id="14" resname="symptoms" restype="string" datatype="x-objective-c">
+        <source>symptoms</source><seg-source><mrk mtype="seg" mid="14">symptoms</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="14">síntomas</mrk></target>
+      </trans-unit>
+      <trans-unit id="15" resname="side effects" restype="string" datatype="x-objective-c">
+        <source>side effects</source><seg-source><mrk mtype="seg" mid="15">side effects</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="15">efectos secundarios</mrk></target>
+      </trans-unit>
+      <trans-unit id="16" resname="uses" restype="string" datatype="x-objective-c">
+        <source>uses</source><seg-source><mrk mtype="seg" mid="16">uses</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="16">usos</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageSelectBodyPartViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="17" resname="Thanks!{pre-number}1{post-number}symptom added." restype="string" datatype="x-objective-c">
+        <source>Thanks!{pre-number}1{post-number}symptom added.</source><seg-source><mrk mtype="seg" mid="17">Thanks!{pre-number}1{post-number}symptom added.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="17">¡Gracias!{pre-number}1{post-number}síntoma añadido.</mrk></target>
+        
+      <note>symptom triage 1 succesful symptom added banner text. "pre-number" represents text pre number and "post-number" what goes after the number. The number is always 1. No spaces between parts please.</note></trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageSearchViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="18" resname="Are you sure you want to remove &quot;%@&quot;?" restype="string" datatype="x-objective-c">
+        <source>Are you sure you want to remove "%@"?</source><seg-source><mrk mtype="seg" mid="18">Are you sure you want to remove "%@"?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="18">¿Estás seguro que deseas eliminar a "%@"?</mrk></target>
+        
+      <note>remove symptom confirmation message</note></trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageDisclaimerViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="19" resname="The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. &quot;Dr. A.I.&quot; is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions.  Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
+        <source>The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. "Dr. A.I." is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source><seg-source><mrk mtype="seg" mid="19">The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. "Dr. A.I." is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="19">La información en HealthTap (incluyendo esta herramienta) es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. "Dr. A.I." no es un doctor, es una herramienta que brinda información de una base de conocimiento médico creada por doctores, incluyendo síntomas y posibles condiciones relacionadas. Llama o visita inmediatamente a tu doctor o proveedor de servicios de emergencia local si crees que puedes estar teniendo una emergencia médica. Ver {start}Información Adicional{end}.</mrk></target>
+        
+      <note>Generic disclaimer message</note></trans-unit>
+      <trans-unit id="20" resname="&quot;Dr. A.I.&quot; is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have (or don't have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}." restype="string" datatype="x-objective-c">
+        <source>"Dr. A.I." is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have (or don't have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</source><seg-source><mrk mtype="seg" mid="20">"Dr. A.I." is not a doctor, it is a tool that provides information from a doctor-created medical knowledge-base, including symptoms and possible related conditions. When you choose to use this tool, we may calculate and present conditions or treatment options medically related to the symptoms and data you enter. This information is not a diagnosis, and it does not mean that you have (or don't have) any particular potential conditions. The information on HealthTap (including this tool) is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment recommendations. Immediately call or visit your doctor or local emergency services provider if you believe you may be having a medical emergency. See {start}Additional Information{end}.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="20">“Dr. A.I.” no es un doctor, es una herramienta que brinda información de una base de conocimiento médico creada por doctores, incluyendo síntomas y posibles condiciones relacionadas. Cuando eliges usar esta herramienta, podemos calcular y presentar condiciones u opciones de tratamiento médicamente relacionados a los síntomas y datos que ingreses. Esta información no es un diagnóstico y no significa que tienes (o no tienes) alguna condición particular en potencia. La información en HealthTap (incluyendo esta herramienta) es solo para propósitos educativos e informativos, y no constituye recomendaciones de consejo, diagnóstico o tratamiento médico. Llama o visita inmediatamente a tu doctor o proveedor local de servicios de emergencia si crees que puedes estar teniendo una emergencia médica. Ver {start}Información Adicional{end}.</mrk></target>
+        
+      <note>Nondiagnosis disclaimer message</note></trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTGlobalizationHelper.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="21" resname="nurse" restype="string" datatype="x-objective-c">
+        <source>nurse</source><seg-source><mrk mtype="seg" mid="21">nurse</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="21">enfermera</mrk></target>
+      </trans-unit>
+      <trans-unit id="22" resname="greeter" restype="string" datatype="x-objective-c">
+        <source>greeter</source><seg-source><mrk mtype="seg" mid="22">greeter</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="22">saludador</mrk></target>
+      </trans-unit>
+      <trans-unit id="23" resname="health professional" restype="string" datatype="x-objective-c">
+        <source>health professional</source><seg-source><mrk mtype="seg" mid="23">health professional</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="23">profesional de la salud</mrk></target>
+      </trans-unit>
+      <trans-unit id="24" resname="staff member" restype="string" datatype="x-objective-c">
+        <source>staff member</source><seg-source><mrk mtype="seg" mid="24">staff member</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="24">miembro de personal</mrk></target>
+      </trans-unit>
+      <trans-unit id="25" resname="Symptoms list" restype="string" datatype="x-objective-c">
+        <source>Symptoms list</source><seg-source><mrk mtype="seg" mid="25">Symptoms list</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="25">Lista de síntomas</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTBodyPickerViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="26" resname="Back_Body_Part" restype="string" datatype="x-objective-c">
+        <source>Back_Body_Part</source><seg-source><mrk mtype="seg" mid="26">Back_Body_Part</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="26">Back_Body_Part</mrk></target>
+        
+      <note>This should be the translation of 'Back' as a part of the body</note></trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGT2DPersonalizeSliderQuestion.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="27" resname="%d'%d&quot; (%.2fm)" restype="string" datatype="x-objective-c">
+        <source>%d'%d" (%.2fm)</source><seg-source><mrk mtype="seg" mid="27">%d'%d" (%.2fm)</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="27">%d'%d" (%.2fm)</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGSearchResultQuestionUserAnswer.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="28" resname="Do you have a follow-up question?\n" restype="string" datatype="x-objective-c">
+        <source>Do you have a follow-up question?\n</source><seg-source><mrk mtype="seg" mid="28">Do you have a follow-up question?\n</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="28">¿Tienes una pregunta de seguimiento?\n</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGSearchResultMake.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="29" resname="{firstname}, need to ask another question?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, need to ask another question?</source><seg-source><mrk mtype="seg" mid="29">{firstname}, need to ask another question?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="29">{firstname}, ¿necesitas hacer otra pregunta?</mrk></target>
+      </trans-unit>
+      <trans-unit id="30" resname="{firstname}, do you have a follow-up question?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, do you have a follow-up question?</source><seg-source><mrk mtype="seg" mid="30">{firstname}, do you have a follow-up question?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="30">{firstname}, ¿tienes una pregunta de seguimiento?</mrk></target>
+      </trans-unit>
+      <trans-unit id="31" resname="Need a more personalized answer? ›" restype="string" datatype="x-objective-c">
+        <source>Need a more personalized answer? ›</source><seg-source><mrk mtype="seg" mid="31">Need a more personalized answer? ›</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="31">¿Necesitas una pregunta más personalizada? ›</mrk></target>
+      </trans-unit>
+      <trans-unit id="32" resname="The doctor will see you now ›" restype="string" datatype="x-objective-c">
+        <source>The doctor will see you now ›</source><seg-source><mrk mtype="seg" mid="32">The doctor will see you now ›</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="32">El doctor te verá ahora ›</mrk></target>
+      </trans-unit>
+      <trans-unit id="33" resname="See a doctor now ›" restype="string" datatype="x-objective-c">
+        <source>See a doctor now ›</source><seg-source><mrk mtype="seg" mid="33">See a doctor now ›</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="33">Ve a un doctor ahora ›</mrk></target>
+      </trans-unit>
+      <trans-unit id="34" resname="Consult a doctor now ›" restype="string" datatype="x-objective-c">
+        <source>Consult a doctor now ›</source><seg-source><mrk mtype="seg" mid="34">Consult a doctor now ›</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="34">Consulta a un doctor ahora ›</mrk></target>
+      </trans-unit>
+      <trans-unit id="35" resname="{firstname}, would you like to talk to a doctor?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, would you like to talk to a doctor?</source><seg-source><mrk mtype="seg" mid="35">{firstname}, would you like to talk to a doctor?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="35">{firstname}, ¿te gustaría hablar con un doctor?</mrk></target>
+      </trans-unit>
+      <trans-unit id="36" resname="{firstname}, would you like to send doctors a secure message?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, would you like to send doctors a secure message?</source><seg-source><mrk mtype="seg" mid="36">{firstname}, would you like to send doctors a secure message?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="36">{firstname}, ¿te gustaría enviarles a doctores un mensaje seguro?</mrk></target>
+      </trans-unit>
+      <trans-unit id="37" resname="{firstname}, would you like to video chat with a doctor?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, would you like to video chat with a doctor?</source><seg-source><mrk mtype="seg" mid="37">{firstname}, would you like to video chat with a doctor?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="37">{firstname}, ¿te gustaría chatear por video con un doctor?</mrk></target>
+      </trans-unit>
+      <trans-unit id="38" resname="{firstname}, would you like to text chat with a doctor?" restype="string" datatype="x-objective-c">
+        <source>{firstname}, would you like to text chat with a doctor?</source><seg-source><mrk mtype="seg" mid="38">{firstname}, would you like to text chat with a doctor?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="38">{firstname}, ¿te gustaría chatear por texto con un doctor?</mrk></target>
+      </trans-unit>
+      <trans-unit id="39" resname="{firstname}, consult Dr. ${last_name} now ›" restype="string" datatype="x-objective-c">
+        <source>{firstname}, consult Dr. ${last_name} now ›</source><seg-source><mrk mtype="seg" mid="39">{firstname}, consult Dr. ${last_name} now ›</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="39">{firstname}, consulta a Dr. ${last_name} ahora ›</mrk></target>
+      </trans-unit>
+      <trans-unit id="40" resname="{firstname}, speak with Dr. ${last_name} now ›" restype="string" datatype="x-objective-c">
+        <source>{firstname}, speak with Dr. ${last_name} now ›</source><seg-source><mrk mtype="seg" mid="40">{firstname}, speak with Dr. ${last_name} now ›</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="40">{firstname}, habla con Dr. ${last_name} ahora ›</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGProfileInsuranceData.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="41" resname="\nName of Plan: %@ " restype="string" datatype="x-objective-c">
+        <source>\nName of Plan: %@ </source><seg-source><mrk mtype="seg" mid="41">\nName of Plan: %@ </mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="41">\nNombre de Plan: %@ </mrk></target>
+      </trans-unit>
+      <trans-unit id="42" resname="\nGroup #: %@ " restype="string" datatype="x-objective-c">
+        <source>\nGroup #: %@ </source><seg-source><mrk mtype="seg" mid="42">\nGroup #: %@ </mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="42">\nGrupo #: %@ </mrk></target>
+      </trans-unit>
+      <trans-unit id="43" resname="\nSubscriber ID: %@ " restype="string" datatype="x-objective-c">
+        <source>\nSubscriber ID: %@ </source><seg-source><mrk mtype="seg" mid="43">\nSubscriber ID: %@ </mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="43">\nID de Suscriptor: %@ </mrk></target>
+      </trans-unit>
+      <trans-unit id="44" resname="\nGroup: %@ " restype="string" datatype="x-objective-c">
+        <source>\nGroup: %@ </source><seg-source><mrk mtype="seg" mid="44">\nGroup: %@ </mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="44">\nGrupo: %@</mrk></target>
+      </trans-unit>
+      <trans-unit id="45" resname="\nMember ID: %@ " restype="string" datatype="x-objective-c">
+        <source>\nMember ID: %@ </source><seg-source><mrk mtype="seg" mid="45">\nMember ID: %@ </mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="45">\nID de Miembro: %@</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGDocPracticeDuration.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="46" resname="%ld year" restype="string" datatype="x-objective-c">
+        <source>%ld year</source><seg-source><mrk mtype="seg" mid="46">%ld year</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="46">%ld año</mrk></target>
+      </trans-unit>
+      <trans-unit id="47" resname="%ld years" restype="string" datatype="x-objective-c">
+        <source>%ld years</source><seg-source><mrk mtype="seg" mid="47">%ld years</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="47">%ld años</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatPodiatristData.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="48" resname="I'd like to refer you to a %@." restype="string" datatype="x-objective-c">
+        <source>I'd like to refer you to a %@.</source><seg-source><mrk mtype="seg" mid="48">I'd like to refer you to a %@.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="48">Me gustaría referirte a un %@.</mrk></target>
+      </trans-unit>
+      <trans-unit id="49" resname="I'd like to refer you to a " restype="string" datatype="x-objective-c">
+        <source>I'd like to refer you to a </source><seg-source><mrk mtype="seg" mid="49">I'd like to refer you to a </mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="49">Me gustaría referirte a un</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatCompositeHeaderData.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="50" resname="I recommend you try Dr. %@'s checklist on %@" restype="string" datatype="x-objective-c">
+        <source>I recommend you try Dr. %@'s checklist on %@</source><seg-source><mrk mtype="seg" mid="50">I recommend you try Dr. %@'s checklist on %@</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="50">Recomiendo que intentes el listado de Dr. %@ sobre %@</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGChatChecklistSection.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="51" resname="Try Now" restype="string" datatype="x-objective-c">
+        <source>Try Now</source><seg-source><mrk mtype="seg" mid="51">Try Now</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="51">Prueba Ahora</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Data/FGAvailableTalk2Docs.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="52" resname="Refers to Dr. %@" restype="string" datatype="x-objective-c">
+        <source>Refers to Dr. %@</source><seg-source><mrk mtype="seg" mid="52">Refers to Dr. %@</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="52">Refiere a Dr. %@</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/Util/FGStringUtil.h" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="53" resname="Thank you, your quick reply made me feel good!" restype="string" datatype="x-objective-c">
+        <source>Thank you, your quick reply made me feel good!</source><seg-source><mrk mtype="seg" mid="53">Thank you, your quick reply made me feel good!</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="53">¡Gracias, tu rápida respuesta me hizo sentir bien!</mrk></target>
+      </trans-unit>
+      <trans-unit id="54" resname="This saved my life. Thank you!" restype="string" datatype="x-objective-c">
+        <source>This saved my life. Thank you!</source><seg-source><mrk mtype="seg" mid="54">This saved my life. Thank you!</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="54">Esto salvó mi vida. ¡Gracias!</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/Util/FGHelpUtils.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="55" resname="Guaraní" restype="string" datatype="x-objective-c">
+        <source>Guaraní</source><seg-source><mrk mtype="seg" mid="55">Guaraní</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="55">Guaraní</mrk></target>
+      </trans-unit>
+      <trans-unit id="56" resname="Māori" restype="string" datatype="x-objective-c">
+        <source>Māori</source><seg-source><mrk mtype="seg" mid="56">Māori</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="56">Maorí</mrk></target>
+      </trans-unit>
+      <trans-unit id="57" resname="Zulu" restype="string" datatype="x-objective-c">
+        <source>Zulu</source><seg-source><mrk mtype="seg" mid="57">Zulu</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="57">Zulu</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/TableViewCells/FGSearchResultAgeDistributionCell.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="58" resname="very common" restype="string" datatype="x-objective-c">
+        <source>very common</source><seg-source><mrk mtype="seg" mid="58">very common</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="58">muy común</mrk></target>
+      </trans-unit>
+      <trans-unit id="59" resname="common" restype="string" datatype="x-objective-c">
+        <source>common</source><seg-source><mrk mtype="seg" mid="59">common</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="59">común</mrk></target>
+      </trans-unit>
+      <trans-unit id="60" resname="rare" restype="string" datatype="x-objective-c">
+        <source>rare</source><seg-source><mrk mtype="seg" mid="60">rare</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="60">raro</mrk></target>
+      </trans-unit>
+      <trans-unit id="61" resname="very rare" restype="string" datatype="x-objective-c">
+        <source>very rare</source><seg-source><mrk mtype="seg" mid="61">very rare</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="61">muy raro</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/FGFollowLayerView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="62" resname="Add or remove %@" restype="string" datatype="x-objective-c">
+        <source>Add or remove %@</source><seg-source><mrk mtype="seg" mid="62">Add or remove %@</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="62">Añadir o quitar %@</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGStateAbbreviator.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="63" resname="District of Columbia" restype="string" datatype="x-objective-c">
+        <source>District of Columbia</source><seg-source><mrk mtype="seg" mid="63">District of Columbia</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="63">Distrito de Columbia</mrk></target>
+      </trans-unit>
+      <trans-unit id="64" resname="New Hampshire" restype="string" datatype="x-objective-c">
+        <source>New Hampshire</source><seg-source><mrk mtype="seg" mid="64">New Hampshire</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="64">Nuevo Hampshire</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/DSLCalendarView/DSLCalendarMonthSelectorView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="65" resname="Th" restype="string" datatype="x-objective-c">
+        <source>Th</source><seg-source><mrk mtype="seg" mid="65">Th</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="65">Jue</mrk></target>
+        
+      <note>Day of the week: Thursday</note></trans-unit>
+      <trans-unit id="66" resname="Sa" restype="string" datatype="x-objective-c">
+        <source>Sa</source><seg-source><mrk mtype="seg" mid="66">Sa</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="66">Sab</mrk></target>
+        
+      <note>Day of the week: Saturday</note></trans-unit>
+    </body>
+  </file>
+</xliff>

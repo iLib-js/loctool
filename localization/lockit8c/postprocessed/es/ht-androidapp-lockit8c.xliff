@@ -1202,7 +1202,7 @@
       </trans-unit>
       <trans-unit id="312" resname="r526219058" restype="string" datatype="x-android-resource">
         <source>Do you want to remove this action from your To-Do list?</source>
-        <target state="translated">¿Quieres quitar esta acción de tu lista de "Qué Hacer"?</target>
+        <target state="translated">¿Quieres quitar esta acción de tu lista de "Por Hacer"?</target>
       </trans-unit>
       <trans-unit id="313" resname="r971402718" restype="string" datatype="x-android-resource">
         <source>Privacy Policy</source>
