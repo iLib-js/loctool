@@ -41222,11 +41222,11 @@
       </trans-unit>
       <trans-unit id="9581" resname="{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult</source>
-        <target state="translated">{span_tag_start}Un {language}{span_tag_end} interprete se te unirá para esta consulta</target>
+        <target state="translated">{span_tag_start}Un interprete {language}{span_tag_end} se te unirá para esta consulta</target>
       </trans-unit>
       <trans-unit id="9582" resname="{span_tag_start}A {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}A {language}{span_tag_end} interpeter will join you for this consult</source>
-        <target state="translated">{span_tag_start}Un {language}{span_tag_end} interprete se te unirá para esta consulta</target>
+        <target state="translated">{span_tag_start}Un interprete {language}{span_tag_end} se te unirá para esta consulta</target>
       </trans-unit>
       <trans-unit id="9583" resname="Company Name" restype="string" datatype="javascript">
         <source>Company Name</source>
