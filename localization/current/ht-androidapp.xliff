@@ -29752,6 +29752,14 @@
         <source>Deactivate</source>
         <target state="translated">Desactivar</target>
       </trans-unit>
+      <trans-unit id="2" resname="twenty_four_hour" restype="string" datatype="x-android-resource">
+        <source>24-hour</source>
+        <target>24 horas</target>
+      </trans-unit>
+      <trans-unit id="3" resname="mail_order" restype="string" datatype="x-android-resource">
+        <source>Mail-order</source>
+        <target>Orden por correo</target>
+      </trans-unit>
     </body>
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/customdialogboxes/UnfollowLayerDialogBox.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
@@ -29794,6 +29802,14 @@
         <source>Deactivate</source>
         <target>取消账户</target>
       </trans-unit>
+      <trans-unit id="3" resname="twenty_four_hour" restype="string" datatype="x-android-resource">
+        <source>24-hour</source>
+        <target>24小时</target>
+      </trans-unit>
+      <trans-unit id="4" resname="mail_order" restype="string" datatype="x-android-resource">
+        <source>Mail-order</source>
+        <target>邮购</target>
+      </trans-unit>
     </body>
   </file>
   <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/PersonalizationSliderItem.java" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
@@ -29828,6 +29844,15 @@
         <source>You're now following "{0}"</source>
         <target state="translated">Ahora estás siguiendo a "{0}"</target>
         <note annotates="source">{0} is a topic name.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/com/healthtap/userhtexpress/customviews/dynamic_list_items/PersonalizationSliderItem.java" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
+    <body>
+      <trans-unit id="1" resname="r389939394" restype="string" datatype="java">
+        <source>{feet_num}'{inches_num}" ({height_in_meters}m)</source>
+        <target state="needs-translation">{feet_num}英尺{inches_num}英寸 ({height_in_meters}米)</target>
+        <note annotates="source">This refers to patient's height, for example, 5'7" (1.7m) TODO localize number format? translate into local measurements?</note>
       </trans-unit>
     </body>
   </file>
