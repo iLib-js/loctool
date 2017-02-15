@@ -145,7 +145,7 @@
     <body>
       <trans-unit id="26" resname="Back_Body_Part" restype="string" datatype="x-objective-c">
         <source>Back_Body_Part</source>
-        <target state="translated">Back_Body_Part</target>
+        <target state="translated">Espalda</target>
         <note annotates="source">This should be the translation of 'Back' as a part of the body</note>
       </trans-unit>
     </body>
