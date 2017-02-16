@@ -789,4 +789,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Classes/UI/Concierge/FGConciergeAppointmentReminderPopupView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Checking location..." restype="string" datatype="x-objective-c">
+        <source>Checking location...</source>
+        <target state="accepted">Comprobando ubicación...</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Testing your connection..." restype="string" datatype="x-objective-c">
+        <source>Testing your connection...</source>
+        <target state="accepted">Probando conexión...</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
