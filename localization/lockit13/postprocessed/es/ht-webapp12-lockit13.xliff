@@ -1149,7 +1149,7 @@
       </trans-unit>
       <trans-unit id="261" resname="{person} is now following {topic_name}!" restype="string" datatype="javascript">
         <source>{person} is now following {topic_name}!</source>
-        <target state="translated">¡{people} ahora está siguiendo a {topic_name}!</target>
+        <target state="translated">¡{person} ahora está siguiendo a {topic_name}!</target>
       </trans-unit>
     </body>
   </file>
