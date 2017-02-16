@@ -36958,7 +36958,7 @@
     <body>
       <trans-unit id="8711" resname="Date performed (optional)" restype="string" datatype="javascript">
         <source>Date performed (optional)</source>
-        <target state="translated">Fecha en que se realizó (opcional)</target>
+        <target state="translated">Fecha realizado/a (opcional)</target>
       </trans-unit>
       <trans-unit id="8712" resname="Update" restype="string" datatype="javascript">
         <source>Update</source>
@@ -41150,7 +41150,7 @@
       </trans-unit>
       <trans-unit id="9563" resname="Name of treatment or procedure" restype="string" datatype="javascript">
         <source>Name of treatment or procedure</source>
-        <target state="translated">Nombre de tratamiento o procedimiento</target>
+        <target state="translated">Tratamiento o procedimiento</target>
       </trans-unit>
       <trans-unit id="9564" resname="Optional Notes (e.g., side effects, after-procedure instructions)" restype="string" datatype="javascript">
         <source>Optional Notes (e.g., side effects, after-procedure instructions)</source>
