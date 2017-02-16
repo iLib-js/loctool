@@ -4912,7 +4912,7 @@
       </trans-unit>
       <trans-unit id="958" resname="board_certified" restype="string" datatype="x-android-resource">
         <source>{doctor_name}, Board Certified</source>
-        <target>{specialty}, Certificado por Consejo</target>
+        <target>{doctor_name}, Certificado por Consejo</target>
       </trans-unit>
       <trans-unit id="959" resname="share_your_recommendation" restype="string" datatype="x-android-resource">
         <source>Write your recommendation</source>
@@ -5152,7 +5152,7 @@
       </trans-unit>
       <trans-unit id="1018" resname="signup_password_invalid" restype="string" datatype="x-android-resource">
         <source>Please provide a password with 6+ characters.</source>
-        <target>Por favor, proporciona una contraseña más de 6 caracteres.</target>
+        <target>Por favor, proporciona una contraseña de más de 6 caracteres.</target>
       </trans-unit>
       <trans-unit id="1019" resname="doc_score_title" restype="string" datatype="x-android-resource">
         <source>What is DocScore?</source>

@@ -28632,7 +28632,7 @@
       </trans-unit>
       <trans-unit id="13830" resname="Or, check your symptoms" restype="string" datatype="html">
         <source>Or, check your symptoms</source>
-        <target>O, verifica tus síntomas</target>
+        <target>O verifica tus síntomas</target>
       </trans-unit>
     </body>
   </file>
