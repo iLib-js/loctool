@@ -35,7 +35,7 @@
       </trans-unit>
       <trans-unit id="21" resname="l44-cL-1gg.normalTitle" restype="string" datatype="x-xib">
         <source>Feed</source>
-        <target>Feed</target>
+        <target state="accepted">Fuente</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Feed"; ObjectID = "l44-cL-1gg";</note>
       </trans-unit>
     </body>
