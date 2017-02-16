@@ -1082,4 +1082,28 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Prime unavailable" restype="string" datatype="x-objective-c">
+        <source>Prime unavailable</source>
+        <target state="accepted">Prime医生不在线</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+      <trans-unit id="2" resname="No Prime doctors are currently available in your area." restype="string" datatype="x-objective-c">
+        <source>No Prime doctors are currently available in your area.</source>
+        <target state="accepted">目前您的所在地没有Prime医生在线</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+      <trans-unit id="3" resname="Concierge unavailable" restype="string" datatype="x-objective-c">
+        <source>Concierge unavailable</source>
+        <target state="new">贵宾台专科医生不在线</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+      <trans-unit id="4" resname="Concierge is currently unavailable." restype="string" datatype="x-objective-c">
+        <source>Concierge is currently unavailable.</source>
+        <target state="accepted">贵宾台专科医生暂时不在线</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
