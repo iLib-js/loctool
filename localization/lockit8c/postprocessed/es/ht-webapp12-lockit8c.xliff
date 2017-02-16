@@ -36958,7 +36958,7 @@
     <body>
       <trans-unit id="8711" resname="Date performed (optional)" restype="string" datatype="javascript">
         <source>Date performed (optional)</source>
-        <target state="translated">Fecha en que se realizó (opcional)</target>
+        <target state="translated">Fecha realizado/a (opcional)</target>
       </trans-unit>
       <trans-unit id="8712" resname="Update" restype="string" datatype="javascript">
         <source>Update</source>
