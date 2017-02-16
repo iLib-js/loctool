@@ -2672,4 +2672,12 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="r848033169" restype="string" datatype="ruby">
+        <source>&lt;h3&gt;&lt;span&gt;Join the&lt;/span&gt;&lt;/h3&gt;&lt;h2&gt;&lt;span&gt;Feel Good :)&lt;/span&gt;&lt;/h2&gt;&lt;h3&gt;&lt;span&gt;movement&lt;/span&gt;&lt;/h3&gt;</source>
+        <target state="new">&lt;h3&gt;&lt;span&gt;加入&lt;/span&gt;&lt;/h3&gt;&lt;h2&gt;&lt;span&gt;Feel Good :)&lt;/span&gt;&lt;/h2&gt;&lt;h3&gt;&lt;span&gt;运动&lt;/span&gt;&lt;/h3&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
