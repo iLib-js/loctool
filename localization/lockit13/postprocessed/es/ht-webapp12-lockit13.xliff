@@ -132,7 +132,7 @@
     <body>
       <trans-unit id="21" resname="r622903322" restype="string" datatype="ruby">
         <source>I'd like to refer you to the following specialist. As a member of %{hmo_provider}, please first check with your primary care physician before seeing this specialist:</source>
-        <target state="translated">Me gustaría referirte con el siguiente especialista. Como un miembro de %{hmo_provider}, 
+        <target state="translated">Me gustaría referirte con el siguiente especialista. Como un miembro de %{hmo_provider},
   por favor, primero verifica con tu médico de atención primaria antes de ver a este especialista:</target>
       </trans-unit>
     </body>
@@ -1197,7 +1197,7 @@
       </trans-unit>
       <trans-unit id="269" resname="description" restype="string" datatype="x-yaml" x-context="greeting">
         <source>I’m Dr. A.I., and I work with over %DOCTORS_COUNT% doctors to help understand your symptoms and show you the best path to feeling good. Let’s get started!</source>
-        <target state="translated">Soy el Dr. A.I., y trabajo con más de %DOCTORS_COUNT% doctores para ayudar a entender tus síntomas y mostrarte el mejor camino para sentirte bien. ¡Hay que empezar!</target>
+        <target state="translated">Soy el Dr. A.I. y trabajo con más de 104.000 doctores para ayudarte a entender tus síntomas y mostrarte el mejor camino para sentirte bien. ¡Empecemos!</target>
       </trans-unit>
       <trans-unit id="270" resname="name_present" restype="string" datatype="x-yaml" x-context="update_health_profile_dob@description">
         <source>%LOGGED_IN_USER_NAME%, if you don’t mind me asking, when were you born? (Knowing your age helps our doctors provide more accurate insights!)</source>
