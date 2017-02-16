@@ -4912,7 +4912,7 @@
       </trans-unit>
       <trans-unit id="958" resname="board_certified" restype="string" datatype="x-android-resource">
         <source>{doctor_name}, Board Certified</source>
-        <target>{specialty}, Certificado por Consejo</target>
+        <target>{doctor_name}, Certificado por Consejo</target>
       </trans-unit>
       <trans-unit id="959" resname="share_your_recommendation" restype="string" datatype="x-android-resource">
         <source>Write your recommendation</source>
