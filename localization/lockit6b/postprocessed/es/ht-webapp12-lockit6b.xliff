@@ -76,7 +76,7 @@
     <body>
       <trans-unit id="977" resname="Choose how you&apos;d like to get help" restype="string" datatype="html">
         <source>Choose how you'd like to get help</source>
-        <target>Selecciona como te ngustaría obtener ayuda</target>
+        <target>Selecciona cómo te gustaría obtener ayuda</target>
       </trans-unit>
       <trans-unit id="978" resname="Invite them to HealthTap" restype="string" datatype="html">
         <source>Invite them to HealthTap</source>
