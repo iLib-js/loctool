@@ -10457,8 +10457,8 @@
         <target>Obtén respuestas a tus preguntas de salud de los mejores doctores</target>
       </trans-unit>
       <trans-unit id="2307" resname="from_top_doctors" restype="plural" datatype="x-android-resource" extype="other">
-        <source>Get answers to your health questions from %d top doctors</source>
-        <target>Obtén respuestas a tus preguntas de salud de los %d mejores doctores</target>
+        <source>Get answers to your health questions from %s top doctors</source>
+        <target>Obtén respuestas a tus preguntas de salud de los %s mejores doctores</target>
       </trans-unit>
       <trans-unit id="2308" resname="question_detail_related_question_adapter" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor answered</source>
@@ -24889,8 +24889,8 @@
         <target>从顶级医生那里获取对您的健康问题的回答</target>
       </trans-unit>
       <trans-unit id="2307" resname="from_top_doctors" restype="plural" datatype="x-android-resource" extype="other">
-        <source>Get answers to your health questions from %d top doctors</source>
-        <target>从%d名顶级医生那里获取对您的健康问题的回答</target>
+        <source>Get answers to your health questions from %s top doctors</source>
+        <target>从%s名顶级医生那里获取对您的健康问题的回答</target>
       </trans-unit>
       <trans-unit id="2308" resname="question_detail_related_question_adapter" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor answered</source>
@@ -29083,7 +29083,7 @@
     <body>
       <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="one">
         <source>Thanks! {start}1{end} symptom added.\nAny additional symptoms?</source>
-        <target state="translated">¡Gracias! %d síntomas añadidos.\n¿Algún síntoma adicional?</target>
+        <target state="translated">¡Gracias! {start}1{end} síntoma añadido.\n¿Algún síntoma adicional?</target>
       </trans-unit>
     </body>
   </file>
@@ -30993,8 +30993,8 @@
         <target>Obtén respuestas a tus preguntas de salud de los mejores doctores</target>
       </trans-unit>
       <trans-unit id="192" resname="from_top_doctors" restype="plural" datatype="x-android-resource" extype="other">
-        <source>Get answers to your health questions from %d top doctors</source>
-        <target>Obtén respuestas a tus preguntas de salud de los %d mejores doctores</target>
+        <source>Get answers to your health questions from %s top doctors</source>
+        <target>Obtén respuestas a tus preguntas de salud de los %s mejores doctores</target>
       </trans-unit>
       <trans-unit id="193" resname="question_detail_related_question_adapter" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor answered</source>
@@ -35302,8 +35302,8 @@
         <target>从顶级医生那里获取对您的健康问题的回答</target>
       </trans-unit>
       <trans-unit id="192" resname="from_top_doctors" restype="plural" datatype="x-android-resource" extype="other">
-        <source>Get answers to your health questions from %d top doctors</source>
-        <target>从%d名顶级医生那里获取对您的健康问题的回答</target>
+        <source>Get answers to your health questions from %s top doctors</source>
+        <target>从%s名顶级医生那里获取对您的健康问题的回答</target>
       </trans-unit>
       <trans-unit id="193" resname="question_detail_related_question_adapter" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor answered</source>
@@ -47944,8 +47944,8 @@
   <file original="res/values/plurals.xml" source-language="en-US" target-language="es-US" product-name="ht-androidapp">
     <body>
       <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="other">
-        <source>Thanks! %d symptoms added.\nAny additional symptoms?</source>
-        <target>¡Gracias! %d síntomas añadidos.\n¿Algún síntoma adicional?</target>
+        <source>Thanks! {start}%d{end} symptoms added.\nAny additional symptoms?</source>
+        <target>¡Gracias! {start}%d{end} síntomas añadidos.\n¿Algún síntoma adicional?</target>
       </trans-unit>
     </body>
   </file>
@@ -47972,8 +47972,8 @@
   <file original="res/values/plurals.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-androidapp">
     <body>
       <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="other">
-        <source>Thanks! %d symptoms added.\nAny additional symptoms?</source>
-        <target>谢谢！已添加%d个症状。\n还有更多症状吗？</target>
+        <source>Thanks! {start}%d{end} symptoms added.\nAny additional symptoms?</source>
+        <target>谢谢！已添加{start}%d{end}个症状。\n还有更多症状吗？</target>
       </trans-unit>
     </body>
   </file>
