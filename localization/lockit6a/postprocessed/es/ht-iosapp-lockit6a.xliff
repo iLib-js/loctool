@@ -320,7 +320,7 @@
     <body>
       <trans-unit id="36" resname="hsK-cr-X4C.placeholder" restype="string" datatype="x-xib">
         <source>Find a topic (e.g. Lose weight)</source>
-        <target state="accepted">Encuentra un tema (p. ej. meditación)</target>
+        <target state="ui-fix">Encuentra un tema</target>
         <note annotates="source">Class = "UISearchBar"; placeholder = "Find a topic (e.g. Lose weight)"; ObjectID = "hsK-cr-X4C";</note>
       </trans-unit>
     </body>

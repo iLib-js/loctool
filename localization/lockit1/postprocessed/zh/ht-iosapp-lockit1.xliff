@@ -6194,12 +6194,12 @@ and more</source>
         <target>添加此清单</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id=" agree" resname=" agree" restype="string" datatype="x-objective-c">
+      <trans-unit id="agree" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
         <target>同意</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id=" agrees" resname=" agrees" restype="string" datatype="x-objective-c">
+      <trans-unit id="agrees" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
         <target>同意</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -11325,12 +11325,12 @@ from the HealthTap app</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">place holder in search box</note>
       </trans-unit>
-      <trans-unit id="Search answers, topics, experts  " resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
+      <trans-unit id="Search answers, topics, experts" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">Place holder in search box</note>
       </trans-unit>
-      <trans-unit id="Search answers, topics, experts     " resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
+      <trans-unit id="Search answers, topics, experts" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">search box placeholder</note>
@@ -11998,7 +11998,7 @@ mobile device or desktop computer</source>
         <target>服务条款</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="Terms of Service " resname="Terms of Service " restype="string" datatype="x-objective-c">
+      <trans-unit id="Terms of Service" resname="Terms of Service" restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
         <target>服务条款</target>
         <note annotates="source">No comment provided by engineer.</note>
@@ -13758,7 +13758,7 @@ with an available primary care doctor</source>
         <target>分享了关于%@的小贴士</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
-      <trans-unit id="shared a tip on %@ " resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
+      <trans-unit id="shared a tip on %@" resname="shared a tip on %@" restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
         <target>分享了关于%@的小贴士</target>
         <note annotates="source">Param: some topic</note>
