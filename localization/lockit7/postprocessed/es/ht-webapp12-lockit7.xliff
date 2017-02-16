@@ -1037,7 +1037,7 @@
     <body>
       <trans-unit id="237" resname="r245565904" restype="string" datatype="ruby">
         <source>For medical emergencies, call %{emergency_extension} (or your local emergency services) or go to the nearest %{emergency_room_abbreviation}.</source>
-        <target>Para emergencias médicas, llama al %{emergency_extension} (o a tus servicios de emergencia local) o ve a la más cercana %{emergency_room_abbreviation}.</target>
+        <target>Para emergencias médicas, llama al %{emergency_extension} (o a tus servicios de emergencia local) o ve a la %{emergency_room_abbreviation} más cercana.</target>
       </trans-unit>
     </body>
   </file>
@@ -6507,11 +6507,11 @@
       </trans-unit>
       <trans-unit id="1352" resname="{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult</source>
-        <target>{span_tag_start}Un {language}{span_tag_end} interprete se te unirá para esta consulta</target>
+        <target>{span_tag_start}Un interprete {language}{span_tag_end} se te unirá para esta consulta</target>
       </trans-unit>
       <trans-unit id="1353" resname="{span_tag_start}A {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}A {language}{span_tag_end} interpeter will join you for this consult</source>
-        <target>{span_tag_start}Un {language}{span_tag_end} interprete se te unirá para esta consulta</target>
+        <target>{span_tag_start}Un interprete {language}{span_tag_end} se te unirá para esta consulta</target>
       </trans-unit>
       <trans-unit id="1354" resname="Company Name" restype="string" datatype="javascript">
         <source>Company Name</source>

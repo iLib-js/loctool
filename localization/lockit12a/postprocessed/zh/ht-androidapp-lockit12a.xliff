@@ -40,6 +40,14 @@
         <source>Deactivate</source>
         <target>取消账户</target>
       </trans-unit>
+      <trans-unit id="3" resname="twenty_four_hour" restype="string" datatype="x-android-resource">
+        <source>24-hour</source>
+        <target>24小时</target>
+      </trans-unit>
+      <trans-unit id="4" resname="mail_order" restype="string" datatype="x-android-resource">
+        <source>Mail-order</source>
+        <target>邮购</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

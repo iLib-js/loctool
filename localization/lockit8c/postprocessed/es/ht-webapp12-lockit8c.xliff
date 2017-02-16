@@ -11588,7 +11588,7 @@
       </trans-unit>
       <trans-unit id="2242" resname="r245565904" restype="string" datatype="ruby">
         <source>For medical emergencies, call %{emergency_extension} (or your local emergency services) or go to the nearest %{emergency_room_abbreviation}.</source>
-        <target state="translated">Para emergencias médicas, llama al %{emergency_extension} (o a tus servicios de emergencia local) o ve a la más cercana %{emergency_room_abbreviation}.</target>
+        <target state="translated">Para emergencias médicas, llama al %{emergency_extension} (o a tus servicios de emergencia local) o ve a la %{emergency_room_abbreviation} más cercana.</target>
       </trans-unit>
     </body>
   </file>
@@ -31024,7 +31024,7 @@
       </trans-unit>
       <trans-unit id="7280" resname="r239285109" restype="string" datatype="ruby">
         <source>%{number} doctors available for you</source>
-        <target state="translated">%{num} doctores disponibles para ti</target>
+        <target state="translated">%{number} doctores disponibles para ti</target>
       </trans-unit>
       <trans-unit id="7281" resname="r920532238" restype="string" datatype="ruby">
         <source>Doctors are standing by to help</source>
@@ -39098,7 +39098,7 @@
     <body>
       <trans-unit id="9106" resname="What would you like to ask our doctors?" restype="string" datatype="javascript">
         <source>What would you like to ask our doctors?</source>
-        <target state="translated">¿Qué te gustaría a nuestros doctores?</target>
+        <target state="translated">¿Qué te gustaría consultarle a nuestros doctores?</target>
       </trans-unit>
     </body>
   </file>
@@ -41222,11 +41222,11 @@
       </trans-unit>
       <trans-unit id="9581" resname="{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult</source>
-        <target state="translated">{span_tag_start}Un {language}{span_tag_end} interprete se te unirá para esta consulta</target>
+        <target state="translated">{span_tag_start}Un interprete {language}{span_tag_end} se te unirá para esta consulta</target>
       </trans-unit>
       <trans-unit id="9582" resname="{span_tag_start}A {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}A {language}{span_tag_end} interpeter will join you for this consult</source>
-        <target state="translated">{span_tag_start}Un {language}{span_tag_end} interprete se te unirá para esta consulta</target>
+        <target state="translated">{span_tag_start}Un interprete {language}{span_tag_end} se te unirá para esta consulta</target>
       </trans-unit>
       <trans-unit id="9583" resname="Company Name" restype="string" datatype="javascript">
         <source>Company Name</source>

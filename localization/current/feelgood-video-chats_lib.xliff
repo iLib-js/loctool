@@ -71,6 +71,23 @@
       </trans-unit>
     </body>
   </file>
+  <file original="android/src/com/healthtap/live_consult/Util.java" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="1" resname="r179401187" restype="string" datatype="java">
+        <source>Dr. {doctor_name}</source>
+        <target state="needs-translation">{doctor_name}医生</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="android/res/values/strings.xml" source-language="en-US" target-language="zh-Hans-CN" product-name="feelgood-video-chats_lib">
+    <body>
+      <trans-unit id="2" resname="full_name_format" restype="string" datatype="x-android-resource">
+        <source>{first_name} {last_name}</source>
+        <target state="translated">{first_name} {last_name}</target>
+        <note annotates="source">This refers to a person's full name. Translate it into local naming format.</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="android/res/layout/layout_refer_individual.xml" source-language="en-US" target-language="es-US" product-name="feelgood-video-chats_lib">
     <body>
       <trans-unit id="1" resname="text__test_Known_for_blah" restype="string" datatype="x-android-resource">

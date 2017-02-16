@@ -18730,7 +18730,7 @@
       </trans-unit>
       <trans-unit id="4268" resname="r734304825" restype="string" datatype="ruby">
         <source>10,000 lives saved</source>
-        <target>10,000 vidas salvadas</target>
+        <target>10.000 vidas salvadas</target>
       </trans-unit>
       <trans-unit id="4269" resname="r647168468" restype="string" datatype="ruby">
         <source>In Oct 2013, &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; received the 10,000th user note telling us that information on &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; saved a life. By making digital health personal, we're working hard to help many more thousands all over the world live longer, healthier lives.  &lt;a href='http://bits.blogs.nytimes.com/2013/10/05/how-to-save-10000-lives-with-an-app-flatter-doctors/?_php=true&amp;_type=blogs&amp;_r=0' target='_blank' rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
@@ -18746,7 +18746,7 @@
       </trans-unit>
       <trans-unit id="4272" resname="r422370229" restype="string" datatype="ruby">
         <source>50,000 doctors</source>
-        <target>50,000 doctores</target>
+        <target>50.000 doctores</target>
       </trans-unit>
       <trans-unit id="4273" resname="r938253770" restype="string" datatype="ruby">
         <source>We were thrilled when the 50,000th doctor signed up to join our Medical Expert Network!  The thank you notes keep pouring in from members who have been helped by our devoted and inspirational doctors. And the doctors are happy too! Word of mouth is spreading in the medical community about &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; and how it is helping millions of people around the world feel good!</source>
@@ -23182,7 +23182,7 @@
       </trans-unit>
       <trans-unit id="5387" resname="r74830827" restype="string" datatype="x-haml">
         <source>. We believe that the world is changed by passionate people who channel positive energy toward a vision they believe in. Positive energy fuels our progress and brings joy to our journey by helping us endure, see beyond, and overcome challenges and difficulties.</source>
-        <target>. Creemos que el mundo es cambiado por personas apasionadas que canalizan energía positiva hacia una visión en la que creen. La energía positiva alimenta nuestro progreso y trae alegría a nuestro viaje al permitirnos perdurar, ver más allá, y vencer desafíos y dificultades.</target>
+        <target>. Creemos que el mundo cambia cuando personas apasionadas canalizan energía positiva hacia una visión en la que creen. La energía positiva alimenta nuestro progreso y trae alegría a nuestro viaje al permitirnos perdurar, ver más allá, y vencer desafíos y dificultades.</target>
       </trans-unit>
       <trans-unit id="5388" resname="r564032041" restype="string" datatype="x-haml">
         <source>. We believe that 'work' can feel like play, and strive to find and bring into each day playfulness, fun and joy.</source>
@@ -23194,11 +23194,11 @@
       </trans-unit>
       <trans-unit id="5390" resname="r422082525" restype="string" datatype="x-haml">
         <source>. We are driven by changing the world and making a meaningful difference in the lives of millions of people everywhere. In order to achieve our goals, we are focused on driving short term measurable milestones that add up to long term real impact.</source>
-        <target>. Nos impulsa el cambiar el mundo y el hacer una diferencia significativa en la vida de millones de personas en todos lados. Para poder lograr nuestras metas, estamos enfocados en impulsar metas cuantificables a corto plazo que sumen un impacto real a largo plazo.</target>
+        <target>. Nos impulsa el cambiar el mundo y el hacer una diferencia significativa en la vida de millones de personas en todos lados. Para poder lograr nuestras metas, estamos concentrados en impulsar metas cuantificables a corto plazo que sumen un impacto real a largo plazo.</target>
       </trans-unit>
       <trans-unit id="5391" resname="r627350537" restype="string" datatype="x-haml">
         <source>. We are on a mission to create a healthier world, and we recognize that this starts at home. We pledge to take care of our own health and well-being, and to help others do the same. In large and small ways, we strive to help everyone with whom we interact improve their health and well-being.</source>
-        <target>. Estamos en una misión para crear un mundo más saludable, y reconocemos que esto empieza en casa. Nos comprometemos a cuidar de nuestra propia salud y bienestar, y a ayudar a otros a hacer lo mismo. En formas grandes y pequeñas, luchamos para ayudar a que todos con los que interactuamos mejoren su salud y bienestar.</target>
+        <target>. Estamos en la misión de crear un mundo más saludable, y reconocemos que esto empieza en casa. Nos comprometemos a cuidar de nuestra propia salud y bienestar, y a ayudar a otros a hacer lo mismo. De maneras grandes y pequeñas, nos esforzamos para ayudar a todos con quienes interactuamos a mejorar su salud y bienestar.</target>
       </trans-unit>
       <trans-unit id="5392" resname="r107973478" restype="string" datatype="x-haml">
         <source>. We believe that simple is better, and strive to reduce complexity to its essence. We believe that with good work, any idea can be described on a napkin, and that the effort required to simplify something to its essence is worthwhile.</source>
@@ -23206,11 +23206,11 @@
       </trans-unit>
       <trans-unit id="5393" resname="r515900975" restype="string" datatype="x-haml">
         <source>. We believe that facts and data in context lead to better, truly personalized decisions and improved outcomes. Whenever possible, we will use facts, data, and information as the language of our internal discussions and as the basis for our decisions. When a strong opinion and fact are in opposition, burden of proof will rest on the opinion.</source>
-        <target>. Creemos que los hechos y los datos en contexto llevan a mejores y realmente personalizadas decisiones, y que mejoran resultados. Siempre que es posible, usaremos hechos, datos, e información como el idioma de nuestras discusiones internas y como la base de nuestras decisiones. Cuando una fuerte opinión y un hecho estén en oposición, la carga de la prueba estará en la opinión.</target>
+        <target>. Creemos que la información y data en contexto llevan a tomar mejores decisiones personalizadas y con óptimos resultados. Cuando sea posible, usaremos ejemplos concretos, e información y data como el idioma de nuestras discusiones internas y como base de nuestras decisiones. Cuando una fuerte opinión y un hecho estén en oposición, la carga de la prueba estará en la opinión.</target>
       </trans-unit>
       <trans-unit id="5394" resname="r18580773" restype="string" datatype="x-haml">
         <source>. We believe that the feeling of being on a mission will help us achieve a greater purpose with our work. As with any adventure, we will take risks and embrace failures, but always learn from our mistakes to make us better. The path to success has its ups and downs and requires a fearless spirit. But most importantly, we recognize that the journey is as rewarding as the destination.</source>
-        <target>. Creemos que la sensación de estar en una misión nos ayudará a alcanzar un más grande propósito con nuestro trabajo. Como con cualquier aventura, tomaremos riesgos y acogeremos los fracasos, pero siempre aprenderemos de nuestros errores para hacernos mejores. El camino al éxito tiene sus altas y bajas, y requiere un espíritu intrépido. Pero lo más importante, es que reconocemos que el viaje es tan gratificante como la meta.</target>
+        <target>. Creemos que la sensación de estar en esta misión nos ayudará a alcanzar, con nuestro trabajo, un propósito aún más grande. Como con cualquier aventura, tomaremos riesgos y acogeremos los fracasos, pero siempre aprenderemos de nuestros errores para hacernos mejores. El camino al éxito tiene altos y bajos y requiere un espíritu intrépido. Pero lo más importante, es que reconocemos que el viaje es tan gratificante como la meta.</target>
       </trans-unit>
     </body>
   </file>
@@ -28632,7 +28632,7 @@
       </trans-unit>
       <trans-unit id="13830" resname="Or, check your symptoms" restype="string" datatype="html">
         <source>Or, check your symptoms</source>
-        <target>O, verifica tus síntomas</target>
+        <target>O verifica tus síntomas</target>
       </trans-unit>
     </body>
   </file>
