@@ -282,7 +282,7 @@
     <body>
       <trans-unit id="131" resname="r1008955882" restype="string" datatype="ruby">
         <source>Find a goal (ex. Lose weight)</source>
-        <target>Encuentra una meta (ej. Perder de peso)</target>
+        <target>Encuentra una meta (p. ej. Perder peso)</target>
       </trans-unit>
     </body>
   </file>
