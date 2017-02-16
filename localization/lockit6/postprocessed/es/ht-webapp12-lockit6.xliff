@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="4893" resname="subject" restype="string" datatype="x-yaml" x-context="saved_someone_else_life">
         <source>Feel good! Someone said a doctor’s answer to your question saved their life:</source>
-        <target>¡Siéntete bien! Alguien dijo que una respuesta de un doctor a tu pregunta salvó su vida:</target>
+        <target>¡Sentirse bien! Alguien dijo que una respuesta de un doctor a tu pregunta salvó su vida:</target>
       </trans-unit>
       <trans-unit id="4894" resname="body" restype="string" datatype="x-yaml" x-context="saved_someone_else_life">
         <source>%1</source>
@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="4896" resname="push_data" restype="string" datatype="x-yaml" x-context="saved_someone_else_life">
         <source>%1, feel good! A HealthTap member says an answer to your question saved their life.</source>
-        <target>%1, ¡siéntete bien! Un miembro de HealthTap dice que una respuesta a tu pregunta le salvó la vida.</target>
+        <target>%1, ¡Sentirse bien! Un miembro de HealthTap dice que una respuesta a tu pregunta le salvó la vida.</target>
       </trans-unit>
       <trans-unit id="4897" resname="subject" restype="string" datatype="x-yaml" x-context="member_answer_thank_follow_up">
         <source>Thank %1 for answering!</source>
@@ -940,7 +940,7 @@
       </trans-unit>
       <trans-unit id="5127" resname="email_subject" restype="string" datatype="x-yaml" x-context="member_influencer_fg_shared">
         <source>Feel good, %1! A follower shared your FeelGood:) moment!</source>
-        <target>¡Siéntete bien, %1! ¡Un seguidor compartió tu momento FeelGood:)!</target>
+        <target>¡Sentirse bien, %1! ¡Un seguidor compartió tu momento FeelGood:)!</target>
       </trans-unit>
       <trans-unit id="5128" resname="subject" restype="string" datatype="x-yaml" x-context="member_influencer_fg_shared">
         <source>%1, a follower shared your FeelGood moment!</source>

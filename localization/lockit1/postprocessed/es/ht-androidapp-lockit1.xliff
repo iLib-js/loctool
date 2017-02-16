@@ -5272,7 +5272,7 @@
       </trans-unit>
       <trans-unit id="1048" resname="checklist_discover_directions_body" restype="string" datatype="x-android-resource">
         <source>Find doctor-created checklists\nTry them out.\nFeel good :).</source>
-        <target>Encuentra listados creados por doctores\nPruébalos ahora.\nSiéntete bien :).</target>
+        <target>Encuentra listados creados por doctores\nPruébalos ahora.\nSentirse bien :).</target>
       </trans-unit>
       <trans-unit id="1049" resname="checklist_discover_search_hint" restype="string" datatype="x-android-resource">
         <source>Find a goal (e.g: Lose weight)</source>

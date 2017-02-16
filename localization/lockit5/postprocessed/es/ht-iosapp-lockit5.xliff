@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="8" resname="Find doctor-created checklists \n Try them out \n Feel Good :)" restype="string" datatype="x-objective-c">
         <source>Find doctor-created checklists \n Try them out \n Feel Good :)</source>
-        <target>Encuentra listados creados por doctores \n Pruébalos \n Siéntete Bien :)</target>
+        <target>Encuentra listados creados por doctores \n Pruébalos \n Sentirse Bien :)</target>
       </trans-unit>
     </body>
   </file>

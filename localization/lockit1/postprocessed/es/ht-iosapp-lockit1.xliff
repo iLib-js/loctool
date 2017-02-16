@@ -8482,7 +8482,7 @@ respuesta de %2$@ :</target>
       </trans-unit>
       <trans-unit id="Feel Good :)" resname="Feel Good :)" restype="string" datatype="x-objective-c">
         <source>Feel Good :)</source>
-        <target>Siéntete Bien :)</target>
+        <target>Sentirse Bien :)</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Feel Good?" resname="Feel Good?" restype="string" datatype="x-objective-c">
@@ -8561,7 +8561,7 @@ respuesta de %2$@ :</target>
  Feel Good :)</source>
         <target>Encuentra listados creadas por doctores 
  Pruébalos ahora 
- Siéntete bien :)</target>
+ Sentirse bien :)</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="Finish this sentence:\nI&apos;d like to accomplish my goal of..." resname="Finish this sentence:\nI&apos;d like to accomplish my goal of..." restype="string" datatype="x-objective-c">

@@ -4604,7 +4604,7 @@
       </trans-unit>
       <trans-unit id="9908" resname="r127725292" restype="string" datatype="x-haml">
         <source>Get help immediately 24/7 and feel good!</source>
-        <target>¡Obtén ayuda inmediatamente, 24/7, y siéntete bien!</target>
+        <target>¡Obtén ayuda inmediatamente, 24/7, y sentirse bien!</target>
       </trans-unit>
       <trans-unit id="9909" resname="r38026468" restype="string" datatype="x-haml">
         <source>Enjoy unlimited doctor consults anytime, anywhere!</source>
@@ -6386,7 +6386,7 @@
       </trans-unit>
       <trans-unit id="1510" resname="r533725680" restype="string" datatype="ruby">
         <source>Do good, do well, feel good,</source>
-        <target>Haz el bien, hazlo bien, siéntete bien.</target>
+        <target>Haz el bien, hazlo bien, sentirse bien.</target>
       </trans-unit>
     </body>
   </file>
@@ -6394,7 +6394,7 @@
     <body>
       <trans-unit id="1514" resname="r136526775" restype="string" datatype="x-haml">
         <source>Do good · Do well · Feel good</source>
-        <target>Haz el bien, hazlo bien, siéntete bien.</target>
+        <target>Haz el bien, hazlo bien, sentirse bien.</target>
       </trans-unit>
       <trans-unit id="11552" resname="r718730157" restype="string" datatype="x-haml">
         <source>This portal is incredibly easy to use, and will benefit your practice in many ways. Take a moment to login today!</source>
@@ -13585,7 +13585,7 @@
       </trans-unit>
       <trans-unit id="7206" resname="r833243616" restype="string" datatype="x-haml">
         <source>We’re excited to have reinvented how the world experiences health and</source>
-        <target>Estamos emocionados de haber reinventado como el mundo experimenta la salud y</target>
+        <target>Estamos emocionados de haber reinventado el modo como el mundo experimenta la salud y</target>
       </trans-unit>
       <trans-unit id="7207" resname="r203704905" restype="string" datatype="x-haml">
         <source>...to help everyone</source>
@@ -14609,7 +14609,7 @@
       </trans-unit>
       <trans-unit id="7606" resname="r709113876" restype="string" datatype="x-haml">
         <source>and feel good!</source>
-        <target>y siéntete bien!</target>
+        <target>y sentirse bien!</target>
       </trans-unit>
       <trans-unit id="7607" resname="r511436519" restype="string" datatype="x-haml">
         <source>Our doctors will</source>
@@ -14649,7 +14649,7 @@
       </trans-unit>
       <trans-unit id="7616" resname="r681983298" restype="string" datatype="x-haml">
         <source>Gain valuable insights and feel good!</source>
-        <target>¡Gana valiosa perspicacia y siéntete bien!</target>
+        <target>¡Gana valiosa perspicacia y sentirse bien!</target>
       </trans-unit>
       <trans-unit id="7617" resname="r531995203" restype="string" datatype="x-haml">
         <source>in 137 specialties are standing by</source>
@@ -15621,7 +15621,7 @@
       </trans-unit>
       <trans-unit id="8064" resname="r628785151" restype="string" datatype="x-haml">
         <source>Save time, money, and feel good faster</source>
-        <target>Ahorra tiempo, dinero y siéntete bien más rápido</target>
+        <target>Ahorra tiempo, dinero y sentirse bien más rápido</target>
       </trans-unit>
       <trans-unit id="8065" resname="r849741692" restype="string" datatype="x-haml">
         <source>Ask your question and we'll connect you to a doctor:</source>
@@ -21737,7 +21737,7 @@
       </trans-unit>
       <trans-unit id="10042" resname="r561156510" restype="string" datatype="x-haml">
         <source>Feel good faster with helpful doctor-created checklists and reminders!</source>
-        <target>¡Siéntete bien más rápido con útiles listas y recordatorios creados por doctores!</target>
+        <target>¡Sentirse bien más rápido con útiles listas y recordatorios creados por doctores!</target>
       </trans-unit>
       <trans-unit id="10043" resname="r239283721" restype="string" datatype="x-haml">
         <source>How other moms use HealthTap PRIME</source>
@@ -31601,7 +31601,7 @@
       </trans-unit>
       <trans-unit id="12826" resname="r18823598" restype="string" datatype="x-haml">
         <source>Accomplish your health goals and feel good faster with helpful doctor checklists and reminders</source>
-        <target>Haz realidad tus metas de salud y siéntete bien más rápido con ayuda de listas de cotejo de doctores y recordatorios</target>
+        <target>Haz realidad tus metas de salud y sentirse bien más rápido con ayuda de listas de cotejo de doctores y recordatorios</target>
       </trans-unit>
       <trans-unit id="12827" resname="r757472577" restype="string" datatype="x-haml">
         <source>Choose health topics from the 4 categories below — the more you select the better!</source>

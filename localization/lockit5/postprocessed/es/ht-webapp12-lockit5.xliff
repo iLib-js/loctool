@@ -4571,7 +4571,7 @@
     <body>
       <trans-unit id="1042" resname="r259378156" restype="string" datatype="ruby">
         <source>Feel good doing good</source>
-        <target>Siéntete bien haciendo el bien</target>
+        <target>Sentirse bien haciendo el bien</target>
       </trans-unit>
     </body>
   </file>
@@ -6388,7 +6388,7 @@
     <body>
       <trans-unit id="1453" resname="r582104691" restype="string" datatype="ruby">
         <source>Do good • Do well • Feel good</source>
-        <target>Haz el bien • Hazlo bien • Siéntete bien</target>
+        <target>Haz el bien • Hazlo bien • Sentirse bien</target>
       </trans-unit>
     </body>
   </file>
@@ -14979,7 +14979,7 @@
       </trans-unit>
       <trans-unit id="3290" resname="r436262553" restype="string" datatype="ruby">
         <source>Feel Good by Giving Thanks!</source>
-        <target>¡Siéntete Bien Agradeciendo!</target>
+        <target>¡Sentirse Bien Agradeciendo!</target>
       </trans-unit>
       <trans-unit id="3291" resname="r769815057" restype="string" datatype="ruby">
         <source>A friendly reminder from %{expert}</source>
@@ -21779,7 +21779,7 @@
       </trans-unit>
       <trans-unit id="5032" resname="r452513469" restype="string" datatype="ruby">
         <source>Manage your health and well-being right from your wrist. (1) DocNow: New, Instant, Trusted, Affordable Care App. Only $2.99 a minute. (2) HealthTap: Feel good anytime with helpful answers, tips, and reminders from %{doctor_count}. (3) HealthTap for Doctors: First of its kind doctor app for Apple Watch</source>
-        <target>Administra tu salud y bienestar desde tu muñeca. (1) DocNow: Nueva, Instantánea, Confiable y Accesible Aplicación de Atención. Solo $2.99 por minuto. (2) HealthTap: Siéntete bien en cualquier momento con útiles respuestas, tips y recordatorios de %{doctor_count}. (3) HealthTap for Doctors: La primera aplicación de su clase para el Apple Watch</target>
+        <target>Administra tu salud y bienestar desde tu muñeca. (1) DocNow: Nueva, Instantánea, Confiable y Accesible Aplicación de Atención. Solo $2.99 por minuto. (2) HealthTap: Sentirse bien en cualquier momento con útiles respuestas, tips y recordatorios de %{doctor_count}. (3) HealthTap for Doctors: La primera aplicación de su clase para el Apple Watch</target>
       </trans-unit>
       <trans-unit id="5033" resname="r1040533385" restype="string" datatype="ruby">
         <source>Order lab tests and get the results in your Virtual Consult — HealthTap</source>
@@ -25946,7 +25946,7 @@
       </trans-unit>
       <trans-unit id="7205" resname="r753011875" restype="string" datatype="x-haml">
         <source>. As we continue on our creative journey to help people smile and</source>
-        <target>. Mientras continuamos con nuestro viaje creativo para ayudar a la gente sonreír y</target>
+        <target>. Continuamos con nuestro viaje creativo para ayudar a la gente a sonreír y </target>
       </trans-unit>
       <trans-unit id="7214" resname="r242650219" restype="string" datatype="x-haml">
         <source>. We treat the personal information of individuals with the utmost care and maintain the highest standards of privacy and security.</source>

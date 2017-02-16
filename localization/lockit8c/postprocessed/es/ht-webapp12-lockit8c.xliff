@@ -1214,7 +1214,7 @@
       </trans-unit>
       <trans-unit id="5439" resname="r436262553" restype="string" datatype="ruby">
         <source>Feel Good by Giving Thanks!</source>
-        <target state="translated">¡Siéntete Bien Agradeciendo!</target>
+        <target state="translated">¡Sentirse Bien Agradeciendo!</target>
       </trans-unit>
       <trans-unit id="5440" resname="r769815057" restype="string" datatype="ruby">
         <source>A friendly reminder from %{expert}</source>
@@ -4095,7 +4095,7 @@
       </trans-unit>
       <trans-unit id="7661" resname="r452513469" restype="string" datatype="ruby">
         <source>Manage your health and well-being right from your wrist. (1) DocNow: New, Instant, Trusted, Affordable Care App. Only $2.99 a minute. (2) HealthTap: Feel good anytime with helpful answers, tips, and reminders from %{doctor_count}. (3) HealthTap for Doctors: First of its kind doctor app for Apple Watch</source>
-        <target state="translated">Administra tu salud y bienestar desde tu muñeca. (1) DocNow: Nueva, Instantánea, Confiable y Accesible Aplicación de Atención. Solo $2.99 por minuto. (2) HealthTap: Siéntete bien en cualquier momento con útiles respuestas, tips y recordatorios de %{doctor_count}. (3) HealthTap for Doctors: La primera aplicación de su clase para el Apple Watch</target>
+        <target state="translated">Administra tu salud y bienestar desde tu muñeca. (1) DocNow: Nueva, Instantánea, Confiable y Accesible Aplicación de Atención. Solo $2.99 por minuto. (2) HealthTap: Sentirse bien en cualquier momento con útiles respuestas, tips y recordatorios de %{doctor_count}. (3) HealthTap for Doctors: La primera aplicación de su clase para el Apple Watch</target>
       </trans-unit>
       <trans-unit id="7662" resname="r1040533385" restype="string" datatype="ruby">
         <source>Order lab tests and get the results in your Virtual Consult — HealthTap</source>
@@ -10860,7 +10860,7 @@
     <body>
       <trans-unit id="2103" resname="r259378156" restype="string" datatype="ruby">
         <source>Feel good doing good</source>
-        <target state="translated">Siéntete bien haciendo el bien</target>
+        <target state="translated">Sentirse bien haciendo el bien</target>
       </trans-unit>
       <trans-unit id="2104" resname="r701613617" restype="string" datatype="ruby">
         <source>Earn unlimited free AMA PRA Category 1&amp;trade; CME credits while sharing knowledge with colleagues and patients.</source>
@@ -14002,7 +14002,7 @@
     <body>
       <trans-unit id="2689" resname="r582104691" restype="string" datatype="ruby">
         <source>Do good • Do well • Feel good</source>
-        <target state="translated">Haz el bien • Hazlo bien • Siéntete bien</target>
+        <target state="translated">Haz el bien • Hazlo bien • Sentirse bien</target>
       </trans-unit>
     </body>
   </file>
@@ -14453,7 +14453,7 @@
       </trans-unit>
       <trans-unit id="2762" resname="r533725680" restype="string" datatype="ruby">
         <source>Do good, do well, feel good,</source>
-        <target state="translated">Haz el bien, hazlo bien, siéntete bien.</target>
+        <target state="translated">Haz el bien, hazlo bien, Sentirse bien.</target>
       </trans-unit>
     </body>
   </file>
@@ -14473,7 +14473,7 @@
       </trans-unit>
       <trans-unit id="2766" resname="r136526775" restype="string" datatype="ruby">
         <source>Do good · Do well · Feel good</source>
-        <target state="translated">Haz el bien, hazlo bien, siéntete bien.</target>
+        <target state="translated">Haz el bien, hazlo bien, Sentirse bien.</target>
       </trans-unit>
     </body>
   </file>
@@ -43618,7 +43618,7 @@
     <body>
       <trans-unit id="10105" resname="subject" restype="string" datatype="x-yaml" x-context="saved_someone_else_life">
         <source>Feel good! Someone said a doctor’s answer to your question saved their life:</source>
-        <target state="translated">¡Siéntete bien! Alguien dijo que una respuesta de un doctor a tu pregunta salvó su vida:</target>
+        <target state="translated">¡Sentirse bien! Alguien dijo que una respuesta de un doctor a tu pregunta salvó su vida:</target>
       </trans-unit>
       <trans-unit id="10106" resname="body" restype="string" datatype="x-yaml" x-context="saved_someone_else_life">
         <source>%1</source>
@@ -43630,7 +43630,7 @@
       </trans-unit>
       <trans-unit id="10108" resname="push_data" restype="string" datatype="x-yaml" x-context="saved_someone_else_life">
         <source>%1, feel good! A HealthTap member says an answer to your question saved their life.</source>
-        <target state="translated">%1, ¡siéntete bien! Un miembro de HealthTap dice que una respuesta a tu pregunta le salvó la vida.</target>
+        <target state="translated">%1, ¡Sentirse bien! Un miembro de HealthTap dice que una respuesta a tu pregunta le salvó la vida.</target>
       </trans-unit>
       <trans-unit id="10109" resname="subject" restype="string" datatype="x-yaml" x-context="member_answer_thank_follow_up">
         <source>Thank %1 for answering!</source>
@@ -44522,7 +44522,7 @@
       </trans-unit>
       <trans-unit id="10339" resname="email_subject" restype="string" datatype="x-yaml" x-context="member_influencer_fg_shared">
         <source>Feel good, %1! A follower shared your FeelGood:) moment!</source>
-        <target state="translated">¡Siéntete bien, %1! ¡Un seguidor compartió tu momento FeelGood:)!</target>
+        <target state="translated">¡Sentirse bien, %1! ¡Un seguidor compartió tu momento FeelGood:)!</target>
       </trans-unit>
       <trans-unit id="10340" resname="subject" restype="string" datatype="x-yaml" x-context="member_influencer_fg_shared">
         <source>%1, a follower shared your FeelGood moment!</source>
