@@ -1070,4 +1070,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/Classes/UI/Concierge/FGConciergeAppointmentReminderPopupView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Checking location..." restype="string" datatype="x-objective-c">
+        <source>Checking location...</source>
+        <target state="accepted">检测当前地址...</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Testing your connection..." restype="string" datatype="x-objective-c">
+        <source>Testing your connection...</source>
+        <target state="accepted">检测连接状况...</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
