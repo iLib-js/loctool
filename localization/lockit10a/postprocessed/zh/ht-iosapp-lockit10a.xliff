@@ -1057,6 +1057,19 @@
       </trans-unit>
     </body>
   </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n" restype="string" datatype="x-objective-c">
+        <source>•\tAbdominal Pain\n•\tAcute Bronchitis\n•\tAcute Conjunctivistis\n•\tAcute Cystitis\n</source>
+        <target state="accepted">•\t腹痛\n•\t急性支气管炎\n•\t急性结膜炎\n•\t急性膀胱炎\n</target>
+        <note annotates="source">Common reasons to use virtual consults bullets full list</note>
+      </trans-unit>
+      <trans-unit id="2" resname="See more\n" restype="string" datatype="x-objective-c">
+        <source>See more\n</source>
+        <target state="accepted">查看更多\n</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="feelgood/Classes/UI/Concierge/FGConciergeAppointmentReminderPopupView.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
       <trans-unit id="1" resname="Checking location..." restype="string" datatype="x-objective-c">

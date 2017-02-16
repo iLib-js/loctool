@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="18" resname="Experiencing symptoms?" restype="string" datatype="x-objective-c">
         <source>Experiencing symptoms?</source>
-        <target state="translated">¿Experimentando síntomas?</target>
+        <target state="ui-fix">¿Síntomas?</target>
       </trans-unit>
       <trans-unit id="19" resname="Find out why" restype="string" datatype="x-objective-c">
         <source>Find out why</source>

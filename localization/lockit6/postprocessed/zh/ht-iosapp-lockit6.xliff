@@ -86,7 +86,7 @@
         <source>tip (%ld of %lu)</source>
         <target>小贴士(%ld的%lu)</target>
       </trans-unit>
-      <trans-unit id="14" resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
+      <trans-unit id="14" resname="shared a tip on %@" restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
         <target>在%@分享一些小贴士</target>
         <note annotates="source">Param: some topic</note>
@@ -143,7 +143,7 @@
         <source>United States of America</source>
         <target>美国</target>
       </trans-unit>
-      <trans-unit id="24" resname="Terms of Service " restype="string" datatype="x-objective-c">
+      <trans-unit id="24" resname="Terms of Service" restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
         <target>服务条款</target>
       </trans-unit>
@@ -292,7 +292,7 @@
   </file>
   <file original="feelgood/ViewControllers/FGMainSearchResultsViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="51" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
+      <trans-unit id="51" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">Place holder in search box</note>
@@ -823,7 +823,7 @@
   </file>
   <file original="feelgood/FGSearchBar.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="133" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
+      <trans-unit id="133" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">search box placeholder</note>
@@ -1063,11 +1063,11 @@
         <source>checklist for</source>
         <target>清单</target>
       </trans-unit>
-      <trans-unit id="176" resname=" agree" restype="string" datatype="x-objective-c">
+      <trans-unit id="176" resname="agree" restype="string" datatype="x-objective-c">
         <source>agree</source>
         <target>同意</target>
       </trans-unit>
-      <trans-unit id="177" resname=" agrees" restype="string" datatype="x-objective-c">
+      <trans-unit id="177" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
         <target>同意</target>
       </trans-unit>

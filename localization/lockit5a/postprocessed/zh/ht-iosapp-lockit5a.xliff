@@ -78,7 +78,7 @@
         <source>tip (%ld of %lu)</source>
         <target>小贴士 (%ld of %lu)</target>
       </trans-unit>
-      <trans-unit id="15" resname="shared a tip on %@ " restype="string" datatype="x-objective-c">
+      <trans-unit id="15" resname="shared a tip on %@" restype="string" datatype="x-objective-c">
         <source>shared a tip on %@</source>
         <target>在%@分享一些建议</target>
         <note annotates="source">Param: some topic</note>
@@ -111,7 +111,7 @@
   </file>
   <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="31" resname="Terms of Service " restype="string" datatype="x-objective-c">
+      <trans-unit id="31" resname="Terms of Service" restype="string" datatype="x-objective-c">
         <source>Terms of Service</source>
         <target>服务条款</target>
       </trans-unit>
@@ -248,7 +248,7 @@
   </file>
   <file original="feelgood/ViewControllers/FGMainSearchResultsViewController.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="62" resname="Search answers, topics, experts  " restype="string" datatype="x-objective-c">
+      <trans-unit id="62" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">Place holder in search box</note>
@@ -377,7 +377,7 @@
   </file>
   <file original="feelgood/FGSearchBar.m" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-iosapp">
     <body>
-      <trans-unit id="143" resname="Search answers, topics, experts     " restype="string" datatype="x-objective-c">
+      <trans-unit id="143" resname="Search answers, topics, experts" restype="string" datatype="x-objective-c">
         <source>Search answers, topics, experts</source>
         <target>搜索回答、话题、专家</target>
         <note annotates="source">search box placeholder</note>
@@ -612,7 +612,7 @@
         <source>agree</source>
         <target>同意</target>
       </trans-unit>
-      <trans-unit id="199" resname=" agrees" restype="string" datatype="x-objective-c">
+      <trans-unit id="199" resname="agrees" restype="string" datatype="x-objective-c">
         <source>agrees</source>
         <target>同意</target>
       </trans-unit>
