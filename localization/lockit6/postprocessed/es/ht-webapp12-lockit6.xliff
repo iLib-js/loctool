@@ -211,16 +211,16 @@
         <target>Tu consulta</target>
       </trans-unit>
       <trans-unit id="4945" resname="body" restype="string" datatype="x-yaml" x-context="member_consult_summary_live">
-        <source>%1 shared %2 instructions and plan for you for your recent consult!</source>
-        <target>¡%1 compartió %2 instrucciones y plan para ti por tu consulta reciente!</target>
+        <source>%1 shared his instructions and plan for you for your recent consult!</source>
+        <target>¡%1 compartió sus instrucciones y un plan para ti por tu consulta reciente!</target>
       </trans-unit>
       <trans-unit id="4946" resname="ctoa" restype="string" datatype="x-yaml" x-context="member_consult_summary_live">
         <source>View %1’s response</source>
         <target>Ver la respuesta de %1</target>
       </trans-unit>
       <trans-unit id="4947" resname="push_data" restype="string" datatype="x-yaml" x-context="member_consult_summary_live">
-        <source>%1 shared %2 instructions and plan for you for your recent consult! View %1’s response</source>
-        <target>¡%1 compartió %2 instrucciones y plan para ti por tu consulta reciente! Ver la respuesta de %1</target>
+        <source>%1 shared his instructions and plan for you for your recent consult! View %1’s response</source>
+        <target>¡%1 compartió sus instrucciones y un plan para ti por tu consulta reciente! Ver la respuesta de %1</target>
       </trans-unit>
       <trans-unit id="4948" resname="category" restype="string" datatype="x-yaml" x-context="member_consult_summary_live">
         <source>m</source>
