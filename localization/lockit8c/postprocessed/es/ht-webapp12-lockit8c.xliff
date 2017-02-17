@@ -36942,7 +36942,7 @@
       </trans-unit>
       <trans-unit id="8709" resname="Mailing Address" restype="string" datatype="javascript">
         <source>Mailing Address</source>
-        <target state="translated">Dirección de Correo</target>
+        <target state="accepted">Dirección Postal</target>
       </trans-unit>
     </body>
   </file>
