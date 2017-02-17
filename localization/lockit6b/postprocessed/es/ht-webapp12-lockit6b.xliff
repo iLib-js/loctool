@@ -2797,11 +2797,11 @@
       </trans-unit>
       <trans-unit id="2477" resname="r356849928" restype="string" datatype="x-haml">
         <source>. Whether we’re trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better—and we always want to</source>
-        <target>. Ya sea que estemos intentando mejorar nuestra ya robusta salud, manejar una condición crónica, o afrontar una enfermedad seria, queremos vivir mejor - y siempre queremos</target>
+        <target>. Ya sea que estemos intentando mejorar nuestra ya robusta salud, manejando una condición crónica, o afrontando una enfermedad seria, queremos vivir mejor - y siempre queremos</target>
       </trans-unit>
       <trans-unit id="2478" resname="r539229476" restype="string" datatype="x-haml">
         <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to</source>
-        <target>Puede sonar altanero, pero creemos que se trata de algo muy básico. Todos -de corazón- simplemente queremos</target>
+        <target>Puede sonar altanero, pero creemos que se trata de algo muy básico. Todos simplemente queremos</target>
       </trans-unit>
       <trans-unit id="2479" resname="r429307520" restype="string" datatype="x-haml">
         <source>All these things make us</source>
