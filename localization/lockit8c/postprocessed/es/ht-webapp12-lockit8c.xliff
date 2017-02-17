@@ -11424,7 +11424,7 @@
       </trans-unit>
       <trans-unit id="2211" resname="r825582594" restype="string" datatype="ruby">
         <source>Great! You can now video or text chat with %{doctor_prefix_last_name}</source>
-        <target state="translated">¡Estupendo! Ahora puedes chatear por texto o video con %{doctor_prefix_last_name}</target>
+        <target state="accepted">¡Estupendo! Ahora puedes chatear por texto o video con el %{doctor_prefix_last_name}</target>
       </trans-unit>
       <trans-unit id="2212" resname="r442706071" restype="string" datatype="ruby">
         <source>How can %{doctor_prefix_last_name} help you? Enter your question...</source>
