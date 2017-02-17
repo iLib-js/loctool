@@ -5636,7 +5636,7 @@
       </trans-unit>
       <trans-unit id="1227" resname="Languages spoken:" restype="string" datatype="html">
         <source>Languages spoken:</source>
-        <target>Idiomas hablados:</target>
+        <target>Idiomas que hablas:</target>
       </trans-unit>
       <trans-unit id="1228" resname="- Select Language -" restype="string" datatype="html">
         <source>- Select Language -</source>
@@ -16460,7 +16460,7 @@
       </trans-unit>
       <trans-unit id="3488" resname="Languages spoken" restype="string" datatype="html">
         <source>Languages spoken</source>
-        <target>Idiomas hablados</target>
+        <target>Idiomas que hablas</target>
       </trans-unit>
       <trans-unit id="3489" resname="- Select language -" restype="string" datatype="html">
         <source>- Select language -</source>
