@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="32" resname="r117784319" restype="string" datatype="ruby">
         <source>doctors shared insights</source>
-        <target state="translated">doctores compartieron perspicacias</target>
+        <target state="translated">doctores compartieron conocimientos médico</target>
       </trans-unit>
     </body>
   </file>
@@ -599,7 +599,7 @@
       </trans-unit>
       <trans-unit id="895" resname=":text" restype="string" datatype="x-yaml" x-context="Doctor Insights For You@1">
         <source>A weekly email digest of doctor insights for you</source>
-        <target state="translated">Un compendio semanal de perspicacias de doctores para ti</target>
+        <target state="translated">Un compendio semanal de conocimientos médico de doctores para ti</target>
       </trans-unit>
       <trans-unit id="896" resname=":text" restype="string" datatype="x-yaml" x-context="Doctor Insights For You@2">
         <source>Your doctor's practice newsletter</source>

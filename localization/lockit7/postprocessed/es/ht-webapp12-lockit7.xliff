@@ -440,7 +440,7 @@
       </trans-unit>
       <trans-unit id="102" resname="r607444164" restype="string" datatype="ruby">
         <source>Advanced data and analytics tools and dashboards helps analyze utilization and trends, enabling predictive analysis of health insights within patient population.</source>
-        <target>Datos, herramientas de análisis y tableros avanzados ayudan a analizar uso y tendencias, permitiendo análisis predictivo de perspicacias de salud dentro de la población de pacientes.</target>
+        <target>Datos, herramientas de análisis y tableros avanzados ayudan a analizar uso y tendencias, permitiendo análisis predictivo de conocimientos médico de salud dentro de la población de pacientes.</target>
       </trans-unit>
       <trans-unit id="103" resname="r422908605" restype="string" datatype="ruby">
         <source>Build a visionary global brand and become a thought leader committed to delivering the best care possible.</source>
@@ -1761,7 +1761,7 @@
       </trans-unit>
       <trans-unit id="360" resname="r958093413" restype="string" datatype="ruby">
         <source>Advanced data and analytics help analyze utilization and trends, enabling predictive analysis of health insights within patient population. Metricizes and creates transparency around quality of care with doctor-doctor peer review, patient-to-doctor ratings, and doctor-to-patient ratings.</source>
-        <target>Datos y herramientas de análisis avanzadas ayudan a analizar uso y tendencias, permitiendo análisis predictivo de perspicacias de salud dentro de la población de pacientes. Da métricas y crea transparencia alrededor de la calidad de la atención con revisión por pares de doctor a doctor, calificaciones de paciente a doctor, y calificaciones de doctor a paciente.</target>
+        <target>Datos y herramientas de análisis avanzadas ayudan a analizar uso y tendencias, permitiendo análisis predictivo de conocimientos médico de salud dentro de la población de pacientes. Da métricas y crea transparencia alrededor de la calidad de la atención con revisión por pares de doctor a doctor, calificaciones de paciente a doctor, y calificaciones de doctor a paciente.</target>
       </trans-unit>
     </body>
   </file>
@@ -1797,7 +1797,7 @@
     <body>
       <trans-unit id="366" resname="r527860771" restype="string" datatype="ruby">
         <source>Patients get instant 24/7 access to world’s largest knowledge-base of doctor insights from your doctors and our network of %{doctors_count} top doctors</source>
-        <target>Los pacientes obtienen acceso instantáneo, 24/7, a la base de conocimientos de perspicacias de doctores más grande del mundo, de tus doctores y de nuestra red de %{doctors_count} de los mejores doctores</target>
+        <target>Los pacientes obtienen acceso instantáneo, 24/7, a la base de conocimientos de conocimientos médico de doctores más grande del mundo, de tus doctores y de nuestra red de %{doctors_count} de los mejores doctores</target>
         <note annotates="source">TODO pluralize</note>
       </trans-unit>
     </body>
@@ -1826,7 +1826,7 @@
     <body>
       <trans-unit id="370" resname="r474955460" restype="string" datatype="ruby">
         <source>The world’s largest library of doctor-created and peer-reviewed insights, with %{answer_count} billion answers served by %{doctor_count} top doctors across 140+ specialties.</source>
-        <target>La biblioteca de perspicacias creadas por doctores y con revisión por pares más grande del mundo, con %{answer_count} billones de respuestas servidas por %{doctor_count} de los mejores doctores de 140+ especialidades.</target>
+        <target>La biblioteca de conocimientos médico creadas por doctores y con revisión por pares más grande del mundo, con %{answer_count} billones de respuestas servidas por %{doctor_count} de los mejores doctores de 140+ especialidades.</target>
       </trans-unit>
       <trans-unit id="371" resname="r554727836" restype="string" datatype="ruby">
         <source>Virtual Consults enable access to fast, affordable, and convenient doctor advice, prescriptions, lab tests and referrals by HD video, voice, or text chat.</source>
@@ -1866,7 +1866,7 @@
       </trans-unit>
       <trans-unit id="380" resname="r136104146" restype="string" datatype="ruby">
         <source>Access a rich suite of utilization reports and real-time population health insights.</source>
-        <target>Accede a una rica suite de reportes de uso y perspicacias de salud poblacional en tiempo real.</target>
+        <target>Accede a una rica suite de reportes de uso y conocimientos médico de salud poblacional en tiempo real.</target>
       </trans-unit>
     </body>
   </file>

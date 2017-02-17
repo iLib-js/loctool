@@ -1234,7 +1234,7 @@
     <body>
       <trans-unit id="236" resname="r474955460" restype="string" datatype="ruby">
         <source>The world’s largest library of doctor-created and peer-reviewed insights, with %{answer_count} billion answers served by %{doctor_count} top doctors across 140+ specialties.</source>
-        <target state="translated">La biblioteca de perspicacias creadas por doctores y con revisión por pares más grande del mundo, con %{answer_count} billones de respuestas servidas por %{doctor_count} de los mejores doctores de 140+ especialidades.</target>
+        <target state="translated">La biblioteca de conocimientos médico creadas por doctores y con revisión por pares más grande del mundo, con %{answer_count} billones de respuestas servidas por %{doctor_count} de los mejores doctores de 140+ especialidades.</target>
       </trans-unit>
     </body>
   </file>
@@ -2250,11 +2250,11 @@
       </trans-unit>
       <trans-unit id="484" resname="r423369731" restype="string" datatype="ruby">
         <source>See helpful doctor insights for this "Medical Case: %{content}" %{short_url} via @HealthTap</source>
-        <target state="translated">Ver útiles perspicacias de doctores para este "Caso Médico: %{content}" %{short_url} vía @HealthTap</target>
+        <target state="translated">Ver útiles conocimientos médico de doctores para este "Caso Médico: %{content}" %{short_url} vía @HealthTap</target>
       </trans-unit>
       <trans-unit id="485" resname="r48081774" restype="string" datatype="ruby">
         <source>See helpful doctor insights for this "Medical Case: %{case_content}" %{short_url} via @HealthTap</source>
-        <target state="translated">Ver útiles perspicacias de doctores para este "Caso Médico: %{case_content}" %{short_url} vía @HealthTap</target>
+        <target state="translated">Ver útiles conocimientos médico de doctores para este "Caso Médico: %{case_content}" %{short_url} vía @HealthTap</target>
       </trans-unit>
       <trans-unit id="486" resname="r889985342" restype="string" datatype="ruby">
         <source>I found %{doctor_name}'s answer really helpful, and thought you might too:: \n "%{question}"</source>
@@ -2290,7 +2290,7 @@
       </trans-unit>
       <trans-unit id="494" resname="r980575871" restype="string" datatype="ruby">
         <source>I thought you'd be interested in getting doctors insights on %{topic_name}</source>
-        <target state="translated">Pensé que estarías interesado en obtener perspicacias de doctores sobre %{topic_name}</target>
+        <target state="translated">Pensé que estarías interesado en obtener conocimientos médico de doctores sobre %{topic_name}</target>
       </trans-unit>
       <trans-unit id="495" resname="r463168909" restype="string" datatype="ruby">
         <source>I recommend checking out doctor insights on %{topic_name} on HealthTap. You’ll find thousands of informative doctor's answers, tips, checklists, and news items there!</source>
@@ -2302,7 +2302,7 @@
       </trans-unit>
       <trans-unit id="497" resname="r833523846" restype="string" datatype="ruby">
         <source>I thought you'd be interested in getting doctors insights on "%{search_string}"</source>
-        <target state="translated">Pensé que estarías interesado en obtener perspicacias de doctores sobre "%{search_string}"</target>
+        <target state="translated">Pensé que estarías interesado en obtener conocimientos médico de doctores sobre "%{search_string}"</target>
       </trans-unit>
       <trans-unit id="498" resname="r346973693" restype="string" datatype="ruby">
         <source>I recommend checking out doctor insights on "%{search_string}" on HealthTap. You’ll find thousands of informative doctor's answers, tips, checklists, and news items there!</source>
@@ -2350,7 +2350,7 @@
       </trans-unit>
       <trans-unit id="509" resname="r40430975" restype="string" datatype="ruby">
         <source>I thought you'd be interested in doctor insights about %{goal}!</source>
-        <target state="translated">¡Pensé que estarías interesado en perspicacias de doctores acerca de %{goal}!</target>
+        <target state="translated">¡Pensé que estarías interesado en conocimientos médico de doctores acerca de %{goal}!</target>
       </trans-unit>
       <trans-unit id="510" resname="r325377029" restype="string" datatype="ruby">
         <source>I thought you like to check out %{goal} on HealthTap. HealthTap has  thousands of answers, articles, tips, and checklists designed to help you with this goal, so you can smile and feel good all the time!</source>
@@ -2434,7 +2434,7 @@
       </trans-unit>
       <trans-unit id="530" resname="r106615039" restype="string" datatype="ruby">
         <source>I thought you'd be interested in getting doctors insights on HealthTap</source>
-        <target state="translated">Pensé que estarías interesado en obtener perspicacias de doctores en HealthTap</target>
+        <target state="translated">Pensé que estarías interesado en obtener conocimientos médico de doctores en HealthTap</target>
       </trans-unit>
       <trans-unit id="531" resname="r165502120" restype="string" datatype="ruby">
         <source>I recommend checking out doctor insights on HealthTap. You’ll find thousands of informative doctor's answers, tips, checklists, and news items there!</source>
@@ -2518,7 +2518,7 @@
       </trans-unit>
       <trans-unit id="551" resname="r883181008" restype="string" datatype="ruby">
         <source>I found doctor insights on HealthTap that you may find helpful!</source>
-        <target state="translated">¡Encontré perspicacias de doctores en HealthTap que puedes encontrar útiles!</target>
+        <target state="translated">¡Encontré conocimientos médico de doctores en HealthTap que puedes encontrar útiles!</target>
       </trans-unit>
       <trans-unit id="552" resname="r62528669" restype="string" datatype="ruby">
         <source>I found a great doctor answer for you on HealthTap!</source>
@@ -2526,7 +2526,7 @@
       </trans-unit>
       <trans-unit id="553" resname="r1013003280" restype="string" datatype="ruby">
         <source>I found helpful doctor insights for you on HealthTap!</source>
-        <target state="translated">¡Encontré útiles perspicacias de doctores para ti en HealthTap!</target>
+        <target state="translated">¡Encontré útiles conocimientos médico de doctores para ti en HealthTap!</target>
       </trans-unit>
       <trans-unit id="554" resname="r714768303" restype="string" datatype="ruby">
         <source>Check out this FeelGood :) moment that made me think of you!</source>
@@ -2955,7 +2955,7 @@
     <body>
       <trans-unit id="645" resname="r287968148" restype="string" datatype="ruby">
         <source>Unlimited answers, tips, and insights from doctors</source>
-        <target state="translated">Respuestas, tips, y perspicacias de doctores ilimitadas</target>
+        <target state="translated">Respuestas, tips, y conocimientos médico de doctores ilimitadas</target>
       </trans-unit>
       <trans-unit id="646" resname="r796195908" restype="string" datatype="ruby">
         <source>For You</source>
