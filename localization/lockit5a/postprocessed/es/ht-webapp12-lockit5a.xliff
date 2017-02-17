@@ -14209,7 +14209,7 @@
     <body>
       <trans-unit id="7442" resname="r107388386" restype="string" datatype="x-haml">
         <source>HOPES: Interoperable, engaging, smart</source>
-        <target>HOPES: Interoperable, atractivo e inteligente</target>
+        <target state="accepted">HOPES: Interactivo, atractivo e inteligente</target>
       </trans-unit>
       <trans-unit id="7443" resname="r486641350" restype="string" datatype="x-haml">
         <source>We’ve built the world’s first Health Operating System (HOPES</source>
