@@ -15574,7 +15574,7 @@
       </trans-unit>
       <trans-unit id="2988" resname="r222985550" restype="string" datatype="ruby">
         <source>Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)</source>
-        <target state="translated">Cualquier receteta para narcóticos o sustancias controladas por la DEA (Drug Enforcement Administration) (http://www.deadiversion.usdoj.gov/schedules/) (Categoría I, II, III, IV)</target>
+        <target state="accepted">Cualquier receta para narcóticos o sustancias controladas por la DEA (Drug Enforcement Administration) (http://www.deadiversion.usdoj.gov/schedules/) (Categoría I, II, III, IV)</target>
       </trans-unit>
       <trans-unit id="2989" resname="r222248212" restype="string" datatype="ruby">
         <source>Any prescriptions for medications that are restricted by individual states</source>
@@ -37714,7 +37714,7 @@
       </trans-unit>
       <trans-unit id="8844" resname="Instant responses to inbox / message consults (consider video consults with {span_tag_start}available{span_tag_end} doctors for faster care)" restype="string" datatype="javascript">
         <source>Instant responses to inbox / message consults (consider video consults with {span_tag_start}available{span_tag_end} doctors for faster care)</source>
-        <target state="translated">Respuestas inmediatas a la bandeja de entrada / mensajes (considera consultas en video con médicos {span_tag_start}disponibles{span_tag_end} para una atención más rápida)</target>
+        <target state="accepted">Respuestas inmediatas en la bandeja de entrada / mensajes (considera consultas en video con médicos {span_tag_start}disponibles{span_tag_end} para una atención más rápida)</target>
       </trans-unit>
     </body>
   </file>
