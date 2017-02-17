@@ -8889,7 +8889,7 @@
       </trans-unit>
       <trans-unit id="8623" resname="r126622825" restype="string" datatype="x-haml">
         <source>So what are you waiting for?</source>
-        <target>¿Así que qué estas esperando?</target>
+        <target state="accepted">Así que ¿qué estás esperando?</target>
       </trans-unit>
     </body>
   </file>
