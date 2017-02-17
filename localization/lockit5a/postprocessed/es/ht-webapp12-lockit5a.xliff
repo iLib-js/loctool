@@ -13737,7 +13737,7 @@
     <body>
       <trans-unit id="7248" resname="r571784735" restype="string" datatype="x-haml">
         <source>Heart-warming stories from millions of members our doctors helped</source>
-        <target>Historias reconfortantes de millones me miembros que nuestros doctores han ayudado</target>
+        <target state="accepted">Historias alentadoras de millones de miembros ayudados por nuestros doctores</target>
       </trans-unit>
     </body>
   </file>
