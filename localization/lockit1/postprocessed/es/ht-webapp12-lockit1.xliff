@@ -23308,7 +23308,7 @@
       </trans-unit>
       <trans-unit id="4792" resname="Private storage and easy, secure sharing with doctors" restype="string" datatype="html">
         <source>Private storage and easy, secure sharing with doctors</source>
-        <target>Almacenamiento privado y sencilla capacidad de compartir con los doctores</target>
+        <target state="accepted">Almacenamiento privado y medio efectivo para compartir con los doctores</target>
       </trans-unit>
       <trans-unit id="4793" resname="Photos" restype="string" datatype="html">
         <source>Photos</source>
