@@ -14233,7 +14233,7 @@
       </trans-unit>
       <trans-unit id="7446" resname="r927171372" restype="string" datatype="x-haml">
         <source>to high-quality care anytime, anywhere</source>
-        <target>a cualquier hora y en cualquier lugar.</target>
+        <target state="accepted">a cualquier hora y en cualquier lugar.</target>
       </trans-unit>
     </body>
   </file>
