@@ -120,7 +120,7 @@
       </trans-unit>
       <trans-unit id="218" resname="r212262046" restype="string" datatype="ruby">
         <source>Here are kind words from others</source>
-        <target state="translated">Aquí están algunas palabras amables de otros</target>
+        <target state="accepted">Aquí están algunos comentarios de otros</target>
         <note annotates="source">this is a section title. Ie. Specialty: Internal Medicine</note>
       </trans-unit>
       <trans-unit id="219" resname="r873521129" restype="string" datatype="ruby">
