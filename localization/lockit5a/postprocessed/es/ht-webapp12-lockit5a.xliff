@@ -14201,7 +14201,7 @@
     <body>
       <trans-unit id="7441" resname="r903714548" restype="string" datatype="x-haml">
         <source>TRUSTED BY</source>
-        <target>CONFIADO POR</target>
+        <target state="accepted">AVALADO POR</target>
       </trans-unit>
     </body>
   </file>
