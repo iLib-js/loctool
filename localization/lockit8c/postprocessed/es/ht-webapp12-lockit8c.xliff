@@ -189,7 +189,7 @@
     <body>
       <trans-unit id="177" resname="r358657435" restype="string" datatype="ruby">
         <source>Share a detailed description of your symptoms, concerns, and how you'd like the doctor to help you. Attach images and files as necessary.</source>
-        <target state="translated">Comparte una descripción detallada de tus síntomas, preocupaciones, y cómo te gustaría que el médico te ayudara. Adjunta las imágenes y los archivos que consideres necesarios.</target>
+        <target state="accepted">Comparte una descripción detallada de tus síntomas, preocupaciones, y cómo te gustaría que el médico te ayudara. Adjunta imágenes y archivos que creas necesarios.</target>
       </trans-unit>
       <trans-unit id="2237" resname="r143437710" restype="string" datatype="ruby">
         <source>Your zip code</source>
@@ -11424,7 +11424,7 @@
       </trans-unit>
       <trans-unit id="2211" resname="r825582594" restype="string" datatype="ruby">
         <source>Great! You can now video or text chat with %{doctor_prefix_last_name}</source>
-        <target state="translated">¡Estupendo! Ahora puedes chatear por texto o video con %{doctor_prefix_last_name}</target>
+        <target state="accepted">¡Estupendo! Ahora puedes chatear por texto o video con el %{doctor_prefix_last_name}</target>
       </trans-unit>
       <trans-unit id="2212" resname="r442706071" restype="string" datatype="ruby">
         <source>How can %{doctor_prefix_last_name} help you? Enter your question...</source>
@@ -15574,7 +15574,7 @@
       </trans-unit>
       <trans-unit id="2988" resname="r222985550" restype="string" datatype="ruby">
         <source>Any prescription for narcotics or DEA (Drug Enforcement Administration) controlled substances (Schedule I, II, III, IV)</source>
-        <target state="translated">Cualquier receteta para narcóticos o sustancias controladas por la DEA (Drug Enforcement Administration) (http://www.deadiversion.usdoj.gov/schedules/) (Categoría I, II, III, IV)</target>
+        <target state="accepted">Cualquier receta para narcóticos o sustancias controladas por la DEA (Drug Enforcement Administration) (http://www.deadiversion.usdoj.gov/schedules/) (Categoría I, II, III, IV)</target>
       </trans-unit>
       <trans-unit id="2989" resname="r222248212" restype="string" datatype="ruby">
         <source>Any prescriptions for medications that are restricted by individual states</source>
@@ -36646,7 +36646,7 @@
       </trans-unit>
       <trans-unit id="8646" resname="Miscarriage" restype="string" datatype="javascript">
         <source>Miscarriage</source>
-        <target state="translated">Abortos</target>
+        <target state="accepted">Aborto natural</target>
       </trans-unit>
       <trans-unit id="8647" resname="Living Children" restype="string" datatype="javascript">
         <source>Living Children</source>
@@ -36942,7 +36942,7 @@
       </trans-unit>
       <trans-unit id="8709" resname="Mailing Address" restype="string" datatype="javascript">
         <source>Mailing Address</source>
-        <target state="translated">Dirección de Correo</target>
+        <target state="accepted">Dirección Postal</target>
       </trans-unit>
     </body>
   </file>
@@ -37714,7 +37714,7 @@
       </trans-unit>
       <trans-unit id="8844" resname="Instant responses to inbox / message consults (consider video consults with {span_tag_start}available{span_tag_end} doctors for faster care)" restype="string" datatype="javascript">
         <source>Instant responses to inbox / message consults (consider video consults with {span_tag_start}available{span_tag_end} doctors for faster care)</source>
-        <target state="translated">Respuestas inmediatas a la bandeja de entrada / mensajes (considera consultas en video con médicos {span_tag_start}disponibles{span_tag_end} para una atención más rápida)</target>
+        <target state="accepted">Respuestas inmediatas en la bandeja de entrada / mensajes (considera consultas en video con médicos {span_tag_start}disponibles{span_tag_end} para una atención más rápida)</target>
       </trans-unit>
     </body>
   </file>
@@ -42538,11 +42538,11 @@
     <body>
       <trans-unit id="9862" resname="Are you sure you want to cancel this appointment with {name} on {date} at {time}?" restype="string" datatype="javascript">
         <source>Are you sure you want to cancel this appointment with {name} on {date} at {time}?</source>
-        <target state="translated">¿Estás seguro que deseas cancelar esta cita con {name} el{date} a las {time}?</target>
+        <target state="accepted">¿Estás seguro que deseas cancelar esta cita con {name} el {date} a las {time}?</target>
       </trans-unit>
       <trans-unit id="9863" resname=" As this appointment is less than 24 hours away, it cannot be refunded if cancelled now." restype="string" datatype="javascript">
         <source>As this appointment is less than 24 hours away, it cannot be refunded if cancelled now.</source>
-        <target state="translated">Como esta cita está a menos de 24 horas, no puede ser reembolsada si es cancelada ahora.</target>
+        <target state="accepted">Como esta cita está a menos de 24 horas, no será reembolsada si se cancela ahora.</target>
       </trans-unit>
       <trans-unit id="9864" resname="Confirm cancellation" restype="string" datatype="javascript">
         <source>Confirm cancellation</source>

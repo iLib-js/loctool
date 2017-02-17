@@ -23308,7 +23308,7 @@
       </trans-unit>
       <trans-unit id="4792" resname="Private storage and easy, secure sharing with doctors" restype="string" datatype="html">
         <source>Private storage and easy, secure sharing with doctors</source>
-        <target>Almacenamiento privado y sencilla capacidad de compartir con los doctores</target>
+        <target state="accepted">Almacenamiento privado y medio efectivo para compartir con los doctores</target>
       </trans-unit>
       <trans-unit id="4793" resname="Photos" restype="string" datatype="html">
         <source>Photos</source>
@@ -23480,31 +23480,31 @@
       </trans-unit>
       <trans-unit id="4823" resname="Common reasons to use Virtual Consults" restype="string" datatype="html">
         <source>Common reasons to use Virtual Consults</source>
-        <target>Razones comúnes para usar Consultas Virtuales</target>
+        <target state="accepted">Razones comunes para usar Consultas Virtuales</target>
       </trans-unit>
       <trans-unit id="4824" resname="Abdominal Pain" restype="string" datatype="html">
         <source>Abdominal Pain</source>
-        <target>Dolor Abdominal</target>
+        <target state="accepted">Dolor abdominal</target>
       </trans-unit>
       <trans-unit id="4825" resname="Acute Bronchitis" restype="string" datatype="html">
         <source>Acute Bronchitis</source>
-        <target>Bronquitis Aguda</target>
+        <target state="accepted">Bronquitis aguda</target>
       </trans-unit>
       <trans-unit id="4826" resname="Acute Conjunctivitis" restype="string" datatype="html">
         <source>Acute Conjunctivitis</source>
-        <target>Conjuntivitis Aguda</target>
+        <target state="accepted">Conjuntivitis aguda</target>
       </trans-unit>
       <trans-unit id="4827" resname="Acute Cystitis" restype="string" datatype="html">
         <source>Acute Cystitis</source>
-        <target>Cistitis Aguda</target>
+        <target state="accepted">Cistitis aguda</target>
       </trans-unit>
       <trans-unit id="4828" resname="Acute Pharyngitis" restype="string" datatype="html">
         <source>Acute Pharyngitis</source>
-        <target>Faringitis Aguda</target>
+        <target state="accepted">Faringitis aguda</target>
       </trans-unit>
       <trans-unit id="4829" resname="Acute Sinusitis" restype="string" datatype="html">
         <source>Acute Sinusitis</source>
-        <target>Sinusitis Aguda</target>
+        <target state="accepted">Sinusitis aguda</target>
       </trans-unit>
       <trans-unit id="4830" resname="Asthma (stable / non-emergency)" restype="string" datatype="html">
         <source>Asthma (stable / non-emergency)</source>
@@ -23516,15 +23516,15 @@
       </trans-unit>
       <trans-unit id="4832" resname="Back Pain" restype="string" datatype="html">
         <source>Back Pain</source>
-        <target>Dolor de Espalda</target>
+        <target state="accepted">Dolor de espalda</target>
       </trans-unit>
       <trans-unit id="4833" resname="Bee Sting" restype="string" datatype="html">
         <source>Bee Sting</source>
-        <target>Picadura de Abeja</target>
+        <target state="accepted">Picadura de abeja</target>
       </trans-unit>
       <trans-unit id="4834" resname="Bladder infections" restype="string" datatype="html">
         <source>Bladder infections</source>
-        <target>Infecciones de la Vejiga</target>
+        <target state="accepted">Infecciones de la vejiga</target>
       </trans-unit>
       <trans-unit id="4835" resname="Cellulitis (skin infection)" restype="string" datatype="html">
         <source>Cellulitis (skin infection)</source>
@@ -23532,7 +23532,7 @@
       </trans-unit>
       <trans-unit id="4836" resname="Cold" restype="string" datatype="html">
         <source>Cold</source>
-        <target>Resfriado</target>
+        <target state="accepted">Resfrío</target>
       </trans-unit>
       <trans-unit id="4837" resname="Cough" restype="string" datatype="html">
         <source>Cough</source>
@@ -23548,7 +23548,7 @@
       </trans-unit>
       <trans-unit id="4840" resname="Dry Scalp" restype="string" datatype="html">
         <source>Dry Scalp</source>
-        <target>Cuero Cabelludo Seco</target>
+        <target state="accepted">Cuero cabelludo seco</target>
       </trans-unit>
       <trans-unit id="4841" resname="Dry Skin (Eczema)" restype="string" datatype="html">
         <source>Dry Skin (Eczema)</source>
@@ -23556,7 +23556,7 @@
       </trans-unit>
       <trans-unit id="4842" resname="Eye Irritation" restype="string" datatype="html">
         <source>Eye Irritation</source>
-        <target>Irritación Ocular</target>
+        <target state="accepted">Irritación ocular</target>
       </trans-unit>
       <trans-unit id="4843" resname="Fever" restype="string" datatype="html">
         <source>Fever</source>
@@ -23564,19 +23564,19 @@
       </trans-unit>
       <trans-unit id="4844" resname="Genital Lesions" restype="string" datatype="html">
         <source>Genital Lesions</source>
-        <target>Lesiones Genitales</target>
+        <target state="accepted">Lesiones genitales</target>
       </trans-unit>
       <trans-unit id="4845" resname="Hay Fever" restype="string" datatype="html">
         <source>Hay Fever</source>
-        <target>Fiebre del Heno</target>
+        <target state="accepted">Fiebre del heno</target>
       </trans-unit>
       <trans-unit id="4846" resname="Headache" restype="string" datatype="html">
         <source>Headache</source>
-        <target>Dolor de Cabeza</target>
+        <target state="accepted">Dolor de cabeza</target>
       </trans-unit>
       <trans-unit id="4847" resname="Heartburn (Gastroesophageal Reflux Disease, or GERD)" restype="string" datatype="html">
         <source>Heartburn (Gastroesophageal Reflux Disease, or GERD)</source>
-        <target>Acidez Estomacal (Enfermedad por Reflujo gastroesofágico, o ERGE)</target>
+        <target state="accepted">Acidez estomacal (Enfermedad por Reflujo gastroesofágico o ERGE)</target>
       </trans-unit>
       <trans-unit id="4848" resname="Influenza" restype="string" datatype="html">
         <source>Influenza</source>
@@ -23584,7 +23584,7 @@
       </trans-unit>
       <trans-unit id="4849" resname="Lab Interpretation" restype="string" datatype="html">
         <source>Lab Interpretation</source>
-        <target>Interpretación de Laboratorios</target>
+        <target state="accepted">Interpretación de laboratorios</target>
       </trans-unit>
       <trans-unit id="4850" resname="Lice" restype="string" datatype="html">
         <source>Lice</source>
@@ -23592,7 +23592,7 @@
       </trans-unit>
       <trans-unit id="4851" resname="Nasal Congestion" restype="string" datatype="html">
         <source>Nasal Congestion</source>
-        <target>Congestión Nasal</target>
+        <target state="accepted">Congestión nasal</target>
       </trans-unit>
       <trans-unit id="4852" resname="Nausea" restype="string" datatype="html">
         <source>Nausea</source>
@@ -23600,7 +23600,7 @@
       </trans-unit>
       <trans-unit id="4853" resname="Nosebleed" restype="string" datatype="html">
         <source>Nosebleed</source>
-        <target>Sangrado Nasal</target>
+        <target state="accepted">Sangrado nasal</target>
       </trans-unit>
       <trans-unit id="4854" resname="Painful Urination" restype="string" datatype="html">
         <source>Painful Urination</source>
@@ -23624,7 +23624,7 @@
       </trans-unit>
       <trans-unit id="4859" resname="Rolled Ankle" restype="string" datatype="html">
         <source>Rolled Ankle</source>
-        <target>Tobillo Torcido</target>
+        <target state="accepted">Tobillo torcido</target>
       </trans-unit>
       <trans-unit id="4860" resname="Scabies" restype="string" datatype="html">
         <source>Scabies</source>
@@ -23632,35 +23632,35 @@
       </trans-unit>
       <trans-unit id="4861" resname="Seborrheic Dermatitis (Dry Scalp)" restype="string" datatype="html">
         <source>Seborrheic Dermatitis (Dry Scalp)</source>
-        <target>Dermatitis Seborréica (Cuero Cabelludo Seco)</target>
+        <target state="accepted">Dermatitis seborreica (Cuero Cabelludo Seco)</target>
       </trans-unit>
       <trans-unit id="4862" resname="Skin Infection" restype="string" datatype="html">
         <source>Skin Infection</source>
-        <target>Infección Cutáneas</target>
+        <target state="accepted">Infección cutáneas</target>
       </trans-unit>
       <trans-unit id="4863" resname="Sports Injuries" restype="string" datatype="html">
         <source>Sports Injuries</source>
-        <target>Lesiones Deportivas</target>
+        <target state="accepted">Lesiones deportivas</target>
       </trans-unit>
       <trans-unit id="4864" resname="Strep Throat" restype="string" datatype="html">
         <source>Strep Throat</source>
-        <target>Faringitis Estroptocócica</target>
+        <target state="accepted">Faringitis estroptocócica</target>
       </trans-unit>
       <trans-unit id="4865" resname="Travel Medicine" restype="string" datatype="html">
         <source>Travel Medicine</source>
-        <target>Medicina de Viaje</target>
+        <target state="accepted">Medicina de viaje</target>
       </trans-unit>
       <trans-unit id="4866" resname="Upper Respiratory Infection" restype="string" datatype="html">
         <source>Upper Respiratory Infection</source>
-        <target>Infección de Vías Respiratorias Altas</target>
+        <target state="accepted">Infección de vías respiratorias altas</target>
       </trans-unit>
       <trans-unit id="4867" resname="Urinary Tract Infection" restype="string" datatype="html">
         <source>Urinary Tract Infection</source>
-        <target>Infección de Vías Urinarias</target>
+        <target state="accepted">Infección de vías urinarias</target>
       </trans-unit>
       <trans-unit id="4868" resname="Vaginal Itching" restype="string" datatype="html">
         <source>Vaginal Itching</source>
-        <target>Prurito Vaginal</target>
+        <target state="accepted">Prurito vaginal</target>
       </trans-unit>
       <trans-unit id="4869" resname="Yeast Infection" restype="string" datatype="html">
         <source>Yeast Infection</source>
@@ -23700,7 +23700,7 @@
       </trans-unit>
       <trans-unit id="4878" resname="Serious head, neck, or back injury" restype="string" datatype="html">
         <source>Serious head, neck, or back injury</source>
-        <target>Lesión seria en la cabeza, cuello, o espalda</target>
+        <target state="accepted">Lesión seria en la cabeza, cuello o espalda</target>
       </trans-unit>
       <trans-unit id="4879" resname="Serious limb impairment or broken bone(s)" restype="string" datatype="html">
         <source>Serious limb impairment or broken bone(s)</source>
@@ -23712,7 +23712,7 @@
       </trans-unit>
       <trans-unit id="4881" resname="Suicide ideation" restype="string" datatype="html">
         <source>Suicide ideation</source>
-        <target>Ideación suicida</target>
+        <target state="accepted">Tendencia suicida</target>
       </trans-unit>
       <trans-unit id="4882" resname="Unconsciousness" restype="string" datatype="html">
         <source>Unconsciousness</source>

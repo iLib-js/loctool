@@ -426,7 +426,7 @@
       </trans-unit>
       <trans-unit id="7094" resname="r690591364" restype="string" datatype="x-haml">
         <source>so I know the information I find is validated. I also love</source>
-        <target>así que sé que la información que encuentro es validada. También amo que</target>
+        <target state="accepted">así que sé que la información que encuentro está validada. También amo que</target>
       </trans-unit>
       <trans-unit id="7095" resname="r348586620" restype="string" datatype="x-haml">
         <source>We’re also committed to our amazing doctors.</source>
@@ -13737,7 +13737,7 @@
     <body>
       <trans-unit id="7248" resname="r571784735" restype="string" datatype="x-haml">
         <source>Heart-warming stories from millions of members our doctors helped</source>
-        <target>Historias reconfortantes de millones me miembros que nuestros doctores han ayudado</target>
+        <target state="accepted">Historias alentadoras de millones de miembros ayudados por nuestros doctores</target>
       </trans-unit>
     </body>
   </file>
@@ -14201,7 +14201,7 @@
     <body>
       <trans-unit id="7441" resname="r903714548" restype="string" datatype="x-haml">
         <source>TRUSTED BY</source>
-        <target>CONFIADO POR</target>
+        <target state="accepted">AVALADO POR</target>
       </trans-unit>
     </body>
   </file>
@@ -14945,7 +14945,7 @@
       </trans-unit>
       <trans-unit id="7728" resname="r385637418" restype="string" datatype="x-haml">
         <source>We just sent you a link to reset your password. If you don't see it after a few minutes, please check your Spam folder</source>
-        <target>Te acabamos de enviar un enlace para restablecer tu contraseña. Si no lo ves después de unos minutos, por favor, verifica tu folder de Spam</target>
+        <target state="accepted">Te acabamos de enviar un enlace para restablecer tu contraseña. Si no lo ves después de unos minutos, por favor, verifica tu carpeta de correo no deseado.</target>
       </trans-unit>
       <trans-unit id="7729" resname="r751548890" restype="string" datatype="x-haml">
         <source>Return to log in</source>
