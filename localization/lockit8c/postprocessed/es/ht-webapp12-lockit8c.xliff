@@ -36646,7 +36646,7 @@
       </trans-unit>
       <trans-unit id="8646" resname="Miscarriage" restype="string" datatype="javascript">
         <source>Miscarriage</source>
-        <target state="translated">Abortos</target>
+        <target state="accepted">Aborto natural</target>
       </trans-unit>
       <trans-unit id="8647" resname="Living Children" restype="string" datatype="javascript">
         <source>Living Children</source>
