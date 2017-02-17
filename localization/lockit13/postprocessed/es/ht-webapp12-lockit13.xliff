@@ -1201,11 +1201,11 @@
       </trans-unit>
       <trans-unit id="270" resname="name_present" restype="string" datatype="x-yaml" x-context="update_health_profile_dob@description">
         <source>%LOGGED_IN_USER_NAME%, if you don’t mind me asking, when were you born? (Knowing your age helps our doctors provide more accurate insights!)</source>
-        <target state="translated">%LOGGED_IN_USER_NAME%, si no te molesta que pregunte, ¿cuándo naciste? (¡Conocer tu edad le ayuda a nuestros doctores a brindarte perspicacias más acertadas!)</target>
+        <target state="translated">%LOGGED_IN_USER_NAME%, si no te molesta que pregunte, ¿cuándo naciste? (¡Conocer tu edad le ayuda a nuestros doctores a brindarte conocimientos médicos más acertadas!)</target>
       </trans-unit>
       <trans-unit id="271" resname="name_missing" restype="string" datatype="x-yaml" x-context="update_health_profile_dob@description">
         <source>If you don’t mind me asking, when were you born? (Knowing your age helps our doctors provide more accurate insights!)</source>
-        <target state="translated">Si no te molesta que pregunte, ¿cuándo naciste? (¡Conocer tu edad le ayuda a nuestros doctores a brindarte perspicacias más acertadas!)</target>
+        <target state="translated">Si no te molesta que pregunte, ¿cuándo naciste? (¡Conocer tu edad le ayuda a nuestros doctores a brindarte conocimientos médicos más acertadas!)</target>
       </trans-unit>
       <trans-unit id="272" resname="heading" restype="string" datatype="x-yaml" x-context="update_health_profile_dob@subaccount">
         <source>%SUBACCOUNT_NAME% — %ACKN_SAMPLE%</source>
@@ -1213,11 +1213,11 @@
       </trans-unit>
       <trans-unit id="273" resname="name_present" restype="string" datatype="x-yaml" x-context="update_health_profile_dob@subaccount@description">
         <source>%LOGGED_IN_USER_NAME%, if you don’t mind me asking, when was %SUBACCOUNT_NAME% born? (Knowing age helps our doctors provide more accurate insights!)</source>
-        <target state="translated">%LOGGED_IN_USER_NAME%, si no te molesta que pregunte, ¿cuándo nació %SUBACCOUNT_NAME%? (¡Conocer su edad les ayuda a nuestros doctores a brindarle perspicacias más acertadas!)</target>
+        <target state="translated">%LOGGED_IN_USER_NAME%, si no te molesta que pregunte, ¿cuándo nació %SUBACCOUNT_NAME%? (¡Conocer su edad les ayuda a nuestros doctores a brindarle conocimientos médicos más acertadas!)</target>
       </trans-unit>
       <trans-unit id="274" resname="name_missing" restype="string" datatype="x-yaml" x-context="update_health_profile_dob@subaccount@description">
         <source>If you don’t mind me asking, when was %SUBACCOUNT_NAME% born? (Knowing age helps our doctors provide more accurate insights!)</source>
-        <target state="translated">Si no te molesta que pregunte, ¿cuándo nació %SUBACCOUNT_NAME%? (¡Conocer su edad les ayuda a nuestros doctores a brindarle perspicacias más acertadas!)</target>
+        <target state="translated">Si no te molesta que pregunte, ¿cuándo nació %SUBACCOUNT_NAME%? (¡Conocer su edad les ayuda a nuestros doctores a brindarle conocimientos médicos más acertadas!)</target>
       </trans-unit>
       <trans-unit id="275" resname="description" restype="string" datatype="x-yaml" x-context="update_health_profile_gender">
         <source>Biologically speaking, what’s your gender?</source>
@@ -2181,19 +2181,19 @@
       </trans-unit>
       <trans-unit id="515" resname="name_present" restype="string" datatype="x-yaml" x-context="dob@variations@person">
         <source>%LOGGED_IN_USER_NAME%, if you don’t mind me asking, when were you born? (Knowing your age helps our doctors provide more accurate insights!)</source>
-        <target state="translated">%LOGGED_IN_USER_NAME%, si no te molesta que pregunte, ¿cuándo naciste? (¡Conocer tu edad le ayuda a nuestros doctores a brindarte perspicacias más acertadas!)</target>
+        <target state="translated">%LOGGED_IN_USER_NAME%, si no te molesta que pregunte, ¿cuándo naciste? (¡Conocer tu edad le ayuda a nuestros doctores a brindarte conocimientos médicos más acertadas!)</target>
       </trans-unit>
       <trans-unit id="516" resname="name_missing" restype="string" datatype="x-yaml" x-context="dob@variations@person">
         <source>If you don’t mind me asking, when were you born? (Knowing your age helps our doctors provide more accurate insights!)</source>
-        <target state="translated">Si no te molesta que pregunte, ¿cuándo naciste? (¡Conocer tu edad le ayuda a nuestros doctores a brindarte perspicacias más acertadas!)</target>
+        <target state="translated">Si no te molesta que pregunte, ¿cuándo naciste? (¡Conocer tu edad le ayuda a nuestros doctores a brindarte conocimientos médicos más acertadas!)</target>
       </trans-unit>
       <trans-unit id="517" resname="name_present" restype="string" datatype="x-yaml" x-context="dob@variations@subaccount">
         <source>%LOGGED_IN_USER_NAME%, if you don’t mind me asking, when was %SUBACCOUNT_NAME% born? (Knowing age helps our doctors provide more accurate insights!)</source>
-        <target state="translated">%LOGGED_IN_USER_NAME%, si no te molesta que pregunte, ¿cuándo nació %SUBACCOUNT_NAME%? (¡Conocer su edad le ayuda a nuestros doctores a brindarle perspicacias más acertadas!)</target>
+        <target state="translated">%LOGGED_IN_USER_NAME%, si no te molesta que pregunte, ¿cuándo nació %SUBACCOUNT_NAME%? (¡Conocer su edad le ayuda a nuestros doctores a brindarle conocimientos médicos más acertadas!)</target>
       </trans-unit>
       <trans-unit id="518" resname="name_missing" restype="string" datatype="x-yaml" x-context="dob@variations@subaccount">
         <source>If you don’t mind me asking, when was %SUBACCOUNT_NAME% born? (Knowing age helps our doctors provide more accurate insights!)</source>
-        <target state="translated">Si no te molesta que pregunte, ¿cuándo nació %SUBACCOUNT_NAME%? (¡Conocer su edad le ayuda a nuestros doctores a brindarle perspicacias más acertadas!)</target>
+        <target state="translated">Si no te molesta que pregunte, ¿cuándo nació %SUBACCOUNT_NAME%? (¡Conocer su edad le ayuda a nuestros doctores a brindarle conocimientos médicos más acertadas!)</target>
       </trans-unit>
       <trans-unit id="519" resname="user_friendly_name" restype="string" datatype="x-yaml" x-context="dob">
         <source>DoB</source>

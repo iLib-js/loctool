@@ -1024,7 +1024,7 @@
       </trans-unit>
       <trans-unit id="5148" resname="body" restype="string" datatype="x-yaml" x-context="doctor_added_doctor">
         <source>Your insights will now show up on %1’s feed.</source>
-        <target>Tus perspicacias ahora se mostrarán en la fuente de %1.</target>
+        <target>Tus conocimientos médicos ahora se mostrarán en la fuente de %1.</target>
       </trans-unit>
       <trans-unit id="5149" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_added_doctor">
         <source>Add %1 to your network</source>
@@ -1512,11 +1512,11 @@
       </trans-unit>
       <trans-unit id="5270" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_docscore_increasing">
         <source>Offer more insights</source>
-        <target>Ofrecer más perspicacias</target>
+        <target>Ofrecer más conocimientos médicos</target>
       </trans-unit>
       <trans-unit id="5271" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_docscore_increasing">
         <source>Your HealthTap DocScore just increased to %1! Congrats! Offer more insights</source>
-        <target>¡Tu DocScore de HealthTap se acaba de incrementar a %1! ¡Felicidades! Ofrecer más perspicacias</target>
+        <target>¡Tu DocScore de HealthTap se acaba de incrementar a %1! ¡Felicidades! Ofrecer más conocimientos médicos</target>
       </trans-unit>
       <trans-unit id="5272" resname="email_subject" restype="string" datatype="x-yaml" x-context="doctor_thanked_batch">
         <source>Wow! %1, you’re making a real difference in people’s lives!</source>
@@ -1620,11 +1620,11 @@
       </trans-unit>
       <trans-unit id="5297" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_followed_member">
         <source>Offer more insights</source>
-        <target>Ofrecer más perspicacias</target>
+        <target>Ofrecer más conocimientos médicos</target>
       </trans-unit>
       <trans-unit id="5298" resname="push_data" restype="string" datatype="x-yaml" x-context="doctor_followed_member">
         <source>%1 is now following you. Offer more insights</source>
-        <target>%1 ahora te está siguiendo. Ofrecer más perspicacias</target>
+        <target>%1 ahora te está siguiendo. Ofrecer más conocimientos médicos</target>
       </trans-unit>
       <trans-unit id="5299" resname="email_subject" restype="string" datatype="x-yaml" x-context="doctor_news_topicofinterest">
         <source>%1 a news article was just posted on %2!</source>
@@ -2132,11 +2132,11 @@
       </trans-unit>
       <trans-unit id="5425" resname="push_data" restype="string" datatype="x-yaml" x-context="member_nux_complete">
         <source>Get better, personalized care and insights from our doctors! Take a minute to complete your profile.</source>
-        <target>¡Obtén mejor y más personalizada atención y perspicacias de nuestros doctores! Tómate un minuto para completar tu perfil.</target>
+        <target>¡Obtén mejor y más personalizada atención y conocimientos médicos de nuestros doctores! Tómate un minuto para completar tu perfil.</target>
       </trans-unit>
       <trans-unit id="5426" resname="push_data" restype="string" datatype="x-yaml" x-context="member_nux_complete_day3">
         <source>Tip: By answering a few quick questions, we’ll be able match you with doctors and their insights that will help you accomplish your health goals! Complete your profile</source>
-        <target>Tip: ¡Al responder unas cuantas preguntas rápidas, podremos emparejarte con doctores y sus perspicacias que te ayudarán a alcanzar tus metas de salud! Completa tu perfil</target>
+        <target>Tip: ¡Al responder unas cuantas preguntas rápidas, podremos emparejarte con doctores y sus conocimientos médicos que te ayudarán a alcanzar tus metas de salud! Completa tu perfil</target>
       </trans-unit>
       <trans-unit id="5427" resname="push_data" restype="string" datatype="x-yaml" x-context="member_concierge_doctor_activation_campaign">
         <source>Get help today from %1, your doctor on HealthTap! Consult via video or text chat</source>
