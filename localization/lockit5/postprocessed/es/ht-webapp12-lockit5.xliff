@@ -112,11 +112,11 @@
       </trans-unit>
       <trans-unit id="29" resname="r527292478" restype="string" datatype="ruby">
         <source>TEDx Silicon Valley — Insights into Organizing Leading Speakers (Video)</source>
-        <target>TEDx Silicon Valley - Conocimientos médico en Organizando Oradores Líderes (Video)</target>
+        <target>TEDx Silicon Valley - Conocimientos médicos en Organizando Oradores Líderes (Video)</target>
       </trans-unit>
       <trans-unit id="30" resname="r1028424587" restype="string" datatype="ruby">
         <source>A talk with insights and tips on how to get some amazing thought-leading speakers for your events.</source>
-        <target>Una charla con conocimientos médico y tips acerca de cómo obtener asombrosos oradores líderes de pensamiento para tus eventos.</target>
+        <target>Una charla con conocimientos médicos y tips acerca de cómo obtener asombrosos oradores líderes de pensamiento para tus eventos.</target>
       </trans-unit>
       <trans-unit id="31" resname="r923132520" restype="string" datatype="ruby">
         <source>It,s a New Day. Personalized</source>
@@ -848,7 +848,7 @@
       </trans-unit>
       <trans-unit id="212" resname="r457987749" restype="string" datatype="ruby">
         <source>HealthTap’s DOConnect is an interactive map showing the referral network of doctors and doctors who treat the same patients at the same time.  Over 30 million connections are visible via HealthTap, and each doctor’s connections are visible directly from a doctor’s HealthTap profile page.  DOConnect makes it quick and easy to see which doctors are most often referred to by other trusted doctors and which doctors treat the same patients at the same time, providing immediate insights into how physicians share values, methods, and approaches to care.</source>
-        <target>DOConnect de HealthTap es un mapa interactivo que muestra la red de referencia de doctores, y doctores que tratan a los mismos pacientes al mismo tiempo. Más de 30 millones de conexiones son visibles a través de HealthTap, y las conexiones de cada doctor están visibles desde la página de perfil de un doctor en HealthTap. DOConnect hace fácil y rápido el ver cuáles doctores les refieren más seguido otros doctores de confianza, y cuáles doctores tratan a los mismos pacientes al mismo tiempo, brindando inmediatas conocimientos médico acerca de cómo los médicos comparten valores, métodos y métodos para la atención.</target>
+        <target>DOConnect de HealthTap es un mapa interactivo que muestra la red de referencia de doctores, y doctores que tratan a los mismos pacientes al mismo tiempo. Más de 30 millones de conexiones son visibles a través de HealthTap, y las conexiones de cada doctor están visibles desde la página de perfil de un doctor en HealthTap. DOConnect hace fácil y rápido el ver cuáles doctores les refieren más seguido otros doctores de confianza, y cuáles doctores tratan a los mismos pacientes al mismo tiempo, brindando inmediatas conocimientos médicos acerca de cómo los médicos comparten valores, métodos y métodos para la atención.</target>
       </trans-unit>
       <trans-unit id="213" resname="r293052615" restype="string" datatype="ruby">
         <source>HealthTap Acquires Avvo Health and Grows Directory to 1.2 Million Doctors (November 2012)</source>
@@ -996,7 +996,7 @@
       </trans-unit>
       <trans-unit id="249" resname="r711369743" restype="string" datatype="ruby">
         <source>July 2013 marked the first ever HealthTap Doctors’ Conference. Doctors from around the country from multiple specialities, practice sizes, and various stages in their career offered insights and feedback on the past, present and future of HealthTap.</source>
-        <target>El julio del 2013 marcó la primera Conferencia de Doctores HealthTap. Doctores de todo el país y de múltiples especialidades, tamaños de consultorios, y varias etapas en sus carreras ofrecieron conocimientos médico y comentarios sobre el pasado, presente y futuro de HealthTap.</target>
+        <target>El julio del 2013 marcó la primera Conferencia de Doctores HealthTap. Doctores de todo el país y de múltiples especialidades, tamaños de consultorios, y varias etapas en sus carreras ofrecieron conocimientos médicos y comentarios sobre el pasado, presente y futuro de HealthTap.</target>
       </trans-unit>
       <trans-unit id="250" resname="r265329736" restype="string" datatype="ruby">
         <source>Oct 13</source>
@@ -1902,7 +1902,7 @@
       </trans-unit>
       <trans-unit id="475" resname="r44039109" restype="string" datatype="ruby">
         <source>The absolute best feature of HealthTap is the level of involvement from experts in the Medical community. It makes me feel confident that when I search a condition or have a question, the knowledge and insights are not only helpful, but they,re accurate. It makes me feel at ease as a new mom.</source>
-        <target>La absolutamente mejor función de HealthTap es el nivel de participación de expertos de la comunidad Médica. Me hace sentir confiado que cuando busco una condición o tengo una pregunta, el conocimiento y los conocimientos médico no solo son útiles, sino que son acertadas. Me hace sentir tranquila como una nueva mamá.</target>
+        <target>La absolutamente mejor función de HealthTap es el nivel de participación de expertos de la comunidad Médica. Me hace sentir confiado que cuando busco una condición o tengo una pregunta, el conocimiento y los conocimientos médicos no solo son útiles, sino que son acertadas. Me hace sentir tranquila como una nueva mamá.</target>
       </trans-unit>
       <trans-unit id="476" resname="r1070722183" restype="string" datatype="ruby">
         <source>Alison J.</source>
@@ -4499,7 +4499,7 @@
       </trans-unit>
       <trans-unit id="5204" resname="r853047461" restype="string" datatype="ruby">
         <source>%{expert_name} is a Medical Student Expert on HealthTap. Read health Tips, Answers, and medical insights created by top-tier physicians and find the best physician in your area.</source>
-        <target>%{expert_name} es un Estudiante de Medicina Experto en HealthTap. Lee Tips de salud, Respuestas y conocimientos médico médicas creadas por los mejores médicos y encuentra al mejor médico en tu área.</target>
+        <target>%{expert_name} es un Estudiante de Medicina Experto en HealthTap. Lee Tips de salud, Respuestas y conocimientos médicos médicas creadas por los mejores médicos y encuentra al mejor médico en tu área.</target>
       </trans-unit>
       <trans-unit id="5205" resname="r10524378" restype="string" datatype="ruby">
         <source>%{expert_name} is a %{expert_specialty}</source>
@@ -6473,7 +6473,7 @@
       </trans-unit>
       <trans-unit id="1471" resname="r630866426" restype="string" datatype="ruby">
         <source>Doctor Insights for You</source>
-        <target>Conocimientos médico de Doctores para ti</target>
+        <target>Conocimientos médicos de Doctores para ti</target>
       </trans-unit>
     </body>
   </file>
@@ -7450,7 +7450,7 @@
       </trans-unit>
       <trans-unit id="1662" resname="r117984490" restype="string" datatype="ruby">
         <source>See related doctor insights on related topics</source>
-        <target>Ver conocimientos médico de doctores en temas relacionados</target>
+        <target>Ver conocimientos médicos de doctores en temas relacionados</target>
       </trans-unit>
       <trans-unit id="1663" resname="r505114431" restype="string" datatype="ruby">
         <source>If after looking at similar questions on HealthTap you don’t find an answer you’re 100 percent happy with, feel free to edit your question. Our doctors are able to select which questions to answer, and may skip questions that aren’t easily answerable, clear, or detailed enough.</source>
@@ -7538,7 +7538,7 @@
     <body>
       <trans-unit id="1679" resname="r132725165" restype="string" datatype="ruby">
         <source>Your profile is still incomplete. By answering a %{open_link}few quick questions%{close_link}, we’ll be able to match you with doctors whose insights will help you accomplish your health goals — whatever they may be!</source>
-        <target>Tu perfil todavía está incompleto. A responder unas %{open_link}cuantas preguntas rápidas%{close_link}, podremos emparejarte con doctores cuyas conocimientos médico te ayudarán a alcanzar tus metas de salud — ¡las que sean!</target>
+        <target>Tu perfil todavía está incompleto. A responder unas %{open_link}cuantas preguntas rápidas%{close_link}, podremos emparejarte con doctores cuyas conocimientos médicos te ayudarán a alcanzar tus metas de salud — ¡las que sean!</target>
       </trans-unit>
       <trans-unit id="1680" resname="r180963239" restype="string" datatype="ruby">
         <source>We’re ready to help you live a happier, healthier life: just take a few minutes to tell us a little more about yourself. Please complete your profile to start benefiting from a more personalized experience.</source>
@@ -8624,7 +8624,7 @@
       </trans-unit>
       <trans-unit id="1908" resname="r174173957" restype="string" datatype="ruby">
         <source>Remember, there are lots of things that can managed without an office visit. Through HealthTap Concierge, a doctor may refill prescriptions, answer questions, and share insights specific to you and your health concerns and goals.</source>
-        <target>Recuerda, hay muchas cosas que se pueden manejar sin una visita al consultorio. A través de HealthTap Concierge, un doctor puede resurtir recetas, contestar preguntas, y compartir conocimientos médico específicas para ti y tus preocupaciones y metas de salud.</target>
+        <target>Recuerda, hay muchas cosas que se pueden manejar sin una visita al consultorio. A través de HealthTap Concierge, un doctor puede resurtir recetas, contestar preguntas, y compartir conocimientos médicos específicas para ti y tus preocupaciones y metas de salud.</target>
       </trans-unit>
     </body>
   </file>
@@ -10693,7 +10693,7 @@
       </trans-unit>
       <trans-unit id="2217" resname="r1037087115" restype="string" datatype="ruby">
         <source>Unparalleled real-time data insights</source>
-        <target>Conocimientos médico de datos en tiempo real sin paralelos</target>
+        <target>Conocimientos médicos de datos en tiempo real sin paralelos</target>
       </trans-unit>
     </body>
   </file>
@@ -10713,15 +10713,15 @@
       </trans-unit>
       <trans-unit id="2221" resname="r262129610" restype="string" datatype="ruby">
         <source>Doctor insights on conditions and symptoms</source>
-        <target>Conocimientos médico de doctores sobre condiciones y síntomas</target>
+        <target>Conocimientos médicos de doctores sobre condiciones y síntomas</target>
       </trans-unit>
       <trans-unit id="2222" resname="r451908267" restype="string" datatype="ruby">
         <source>Doctor insights on procedures</source>
-        <target>Conocimientos médico de doctores sobre procedimientos</target>
+        <target>Conocimientos médicos de doctores sobre procedimientos</target>
       </trans-unit>
       <trans-unit id="2223" resname="r688454060" restype="string" datatype="ruby">
         <source>Doctor insights on medications</source>
-        <target>Conocimientos médico de doctores sobre medicamentos</target>
+        <target>Conocimientos médicos de doctores sobre medicamentos</target>
       </trans-unit>
       <trans-unit id="2224" resname="r76255039" restype="string" datatype="ruby">
         <source>Doctor-recommended health and medical apps</source>
@@ -10729,7 +10729,7 @@
       </trans-unit>
       <trans-unit id="2225" resname="r829127024" restype="string" datatype="ruby">
         <source>Doctor insights on 320+ health goals (prevention, wellness, disease management, and more)</source>
-        <target>Conocimientos médico de doctores sobre 320+ metas de salud (prevención, bienestar, manejo de enfermedad, y más)</target>
+        <target>Conocimientos médicos de doctores sobre 320+ metas de salud (prevención, bienestar, manejo de enfermedad, y más)</target>
       </trans-unit>
       <trans-unit id="2226" resname="r440782107" restype="string" datatype="ruby">
         <source>Comprehensive doctor directory and provider search</source>
@@ -10777,7 +10777,7 @@
       </trans-unit>
       <trans-unit id="2238" resname="r577967240" restype="string" datatype="ruby">
         <source>Personalized feeds of doctor insights</source>
-        <target>Fuentes personalizadas de conocimientos médico de doctores</target>
+        <target>Fuentes personalizadas de conocimientos médicos de doctores</target>
       </trans-unit>
       <trans-unit id="2239" resname="r897628374" restype="string" datatype="ruby">
         <source>Highly-optimized engagement campaigns validated by hundreds of millions of consumers</source>
@@ -10901,7 +10901,7 @@
       </trans-unit>
       <trans-unit id="2269" resname="r714945582" restype="string" datatype="ruby">
         <source>Population health insights and zeitgeist</source>
-        <target>Conocimientos médico y zeitgeist de salud poblacional</target>
+        <target>Conocimientos médicos y zeitgeist de salud poblacional</target>
       </trans-unit>
     </body>
   </file>
@@ -10914,7 +10914,7 @@
       </trans-unit>
       <trans-unit id="2306" resname="r1005514402" restype="string" datatype="ruby">
         <source>Billions of instant doctor-curated insights served: answers, tips, news articles, mobile apps, treatment reviews, and more</source>
-        <target>Billones de conocimientos médico instantáneas curadas por doctores servidas: respuestas, tips, artículos de noticias, aplicaciones móviles, valoraciones de tratamientos, y más</target>
+        <target>Billones de conocimientos médicos instantáneas curadas por doctores servidas: respuestas, tips, artículos de noticias, aplicaciones móviles, valoraciones de tratamientos, y más</target>
       </trans-unit>
       <trans-unit id="2307" resname="r1065189363" restype="string" datatype="ruby">
         <source>Doctor knowledge, tips, and checklists on more than 320 health goals (on prevention, wellness, disease management, and more)</source>
@@ -11748,7 +11748,7 @@
     <body>
       <trans-unit id="2458" resname="r977990354" restype="string" datatype="ruby">
         <source>%{title} - Doctors' Insights on HealthTap</source>
-        <target>%{title} -  Conocimientos médico de Doctores en HealthTap</target>
+        <target>%{title} -  Conocimientos médicos de Doctores en HealthTap</target>
       </trans-unit>
       <trans-unit id="2459" resname="r509413204" restype="string" datatype="ruby">
         <source>%{publication_title} - HealthTap</source>
@@ -12352,11 +12352,11 @@
       </trans-unit>
       <trans-unit id="2613" resname="r238259539" restype="string" datatype="ruby">
         <source>Doctor Insights For You</source>
-        <target state="accepted">Conocimientos médico de Doctores para ti</target>
+        <target state="accepted">Conocimientos médicos de Doctores para ti</target>
       </trans-unit>
       <trans-unit id="2621" resname="r650094699" restype="string" datatype="ruby">
         <source>A weekly email digest of doctor insights for you</source>
-        <target>Un compendio semanal de conocimientos médico de doctores para ti</target>
+        <target>Un compendio semanal de conocimientos médicos de doctores para ti</target>
       </trans-unit>
       <trans-unit id="2622" resname="r414696754" restype="string" datatype="ruby">
         <source>Your doctor's practice newsletter</source>
@@ -12608,7 +12608,7 @@
       </trans-unit>
       <trans-unit id="2683" resname="r843374699" restype="string" datatype="ruby">
         <source>Your insights will now show up on %{person}’s feed.</source>
-        <target>Tus conocimientos médico serán mostradas ahora en la fuente de %{person}.</target>
+        <target>Tus conocimientos médicos serán mostradas ahora en la fuente de %{person}.</target>
       </trans-unit>
       <trans-unit id="2684" resname="r566445842" restype="string" datatype="ruby">
         <source>Your expertise and reputation are recognized!</source>
@@ -16937,7 +16937,7 @@
       </trans-unit>
       <trans-unit id="3779" resname="r912881144" restype="string" datatype="ruby">
         <source>%{expert}, a top %{expert}, has helpful insights to share with you!</source>
-        <target>%{expert}, uno de los mejores %{expert}, ¡tiene conocimientos médico útiles para compartir contigo!</target>
+        <target>%{expert}, uno de los mejores %{expert}, ¡tiene conocimientos médicos útiles para compartir contigo!</target>
       </trans-unit>
       <trans-unit id="3780" resname="r379403693" restype="string" datatype="ruby">
         <source>Get help with a topic you followed!</source>
@@ -18722,7 +18722,7 @@
       </trans-unit>
       <trans-unit id="4266" resname="r1036786894" restype="string" datatype="ruby">
         <source>July 2013 marked the first ever &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;  Doctors’ Conference. Doctors from around the country from multiple specialities, practice sizes, and various stages in their careers offered insights and feedback on the past, present, and future of &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;.</source>
-        <target>El julio del 2013 marcó la primera Conferencia de Doctores &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;. Doctores de todo el país y de múltiples especialidades, tamaños de consultorios, y varias etapas de sus carreras ofrecieron conocimientos médico y comentarios sobre el pasado, presente y futuro de &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;.</target>
+        <target>El julio del 2013 marcó la primera Conferencia de Doctores &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;. Doctores de todo el país y de múltiples especialidades, tamaños de consultorios, y varias etapas de sus carreras ofrecieron conocimientos médicos y comentarios sobre el pasado, presente y futuro de &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;.</target>
       </trans-unit>
       <trans-unit id="4267" resname="r375132431" restype="string" datatype="ruby">
         <source>Oct 2013</source>
@@ -21354,7 +21354,7 @@
       </trans-unit>
       <trans-unit id="4924" resname="r441610480" restype="string" datatype="ruby">
         <source>- Doctor insights on HealthTap</source>
-        <target>- Conocimientos médico de doctores en HealthTap</target>
+        <target>- Conocimientos médicos de doctores en HealthTap</target>
       </trans-unit>
       <trans-unit id="4925" resname="r64535267" restype="string" datatype="ruby">
         <source>%{doctor_count} available to help you</source>
@@ -21374,11 +21374,11 @@
       </trans-unit>
       <trans-unit id="4930" resname="r367652288" restype="string" datatype="ruby">
         <source>%{topic_name} - %{expert_name}'s insights on HealthTap</source>
-        <target>%{topic_name} - conocimientos médico de %{expert_name} en HealthTap</target>
+        <target>%{topic_name} - conocimientos médicos de %{expert_name} en HealthTap</target>
       </trans-unit>
       <trans-unit id="4931" resname="r438462767" restype="string" datatype="ruby">
         <source>%{expert_name} shares insight on %{topic_name} - %{first_answer}</source>
-        <target>%{expert_name} comparte conocimientos médico sobre %{topic_name} - %{first_answer}</target>
+        <target>%{expert_name} comparte conocimientos médicos sobre %{topic_name} - %{first_answer}</target>
       </trans-unit>
       <trans-unit id="4932" resname="r471759729" restype="string" datatype="ruby">
         <source>Get millions of free, instant trustworthy answers, tips, and more from %{expert_name} and %{doctor_count} on %{topic_name}</source>
@@ -21386,7 +21386,7 @@
       </trans-unit>
       <trans-unit id="4933" resname="r738191272" restype="string" datatype="ruby">
         <source>%{expert_name}'s Top Insights on %{topic_name} on @HealthTap</source>
-        <target>Las Mejores Conocimientos médico de %{expert_name} sobre %{topic_name} en @HealthTap</target>
+        <target>Las Mejores Conocimientos médicos de %{expert_name} sobre %{topic_name} en @HealthTap</target>
       </trans-unit>
       <trans-unit id="4934" resname="r289296108" restype="string" datatype="ruby">
         <source>%{topic_name} - Doctor advice on HealthTap</source>
@@ -22073,7 +22073,7 @@
       </trans-unit>
       <trans-unit id="5081" resname="r879884819" restype="string" datatype="ruby">
         <source>%{query} - Top Doctor Insights on HealthTap</source>
-        <target>%{query} -  Conocimientos médico de Los Mejores Doctores en HealthTap</target>
+        <target>%{query} -  Conocimientos médicos de Los Mejores Doctores en HealthTap</target>
       </trans-unit>
       <trans-unit id="5082" resname="r524333309" restype="string" datatype="ruby">
         <source>Search Conditions</source>
@@ -24338,7 +24338,7 @@
     <body>
       <trans-unit id="5639" resname="r955831796" restype="string" datatype="x-haml">
         <source>Tell the doctors more about you to receive personalized insights. It'll only take a minute!</source>
-        <target>Cuéntale a los doctores más acerca de ti para recibir conocimientos médico personalizadas. ¡Sólo tomará un minuto!</target>
+        <target>Cuéntale a los doctores más acerca de ti para recibir conocimientos médicos personalizadas. ¡Sólo tomará un minuto!</target>
       </trans-unit>
       <trans-unit id="5640" resname="r26634851" restype="string" datatype="x-haml">
         <source>Congratulations! Your baby is due around:</source>
@@ -26574,7 +26574,7 @@
       </trans-unit>
       <trans-unit id="8653" resname="r13737919" restype="string" datatype="x-haml">
         <source>Doctor insights + timely data = the right action at the right time</source>
-        <target>Conocimientos médico de doctores + datos oportunos = la acción adecuada en el momento adecuado</target>
+        <target>Conocimientos médicos de doctores + datos oportunos = la acción adecuada en el momento adecuado</target>
       </trans-unit>
       <trans-unit id="8654" resname="r525820861" restype="string" datatype="x-haml">
         <source>(pulsing notification)</source>

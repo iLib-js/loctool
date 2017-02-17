@@ -17352,7 +17352,7 @@
       </trans-unit>
       <trans-unit id="3686" resname="Support your peers and guide patients to top quality insights." restype="string" datatype="html">
         <source>Support your peers and guide patients to top quality insights.</source>
-        <target>Apoya a tus compañeros y guía pacientes hacia las mejores conocimientos médico.</target>
+        <target>Apoya a tus compañeros y guía pacientes hacia las mejores conocimientos médicos.</target>
       </trans-unit>
       <trans-unit id="3687" resname="Create TipTaps" restype="string" datatype="html">
         <source>Create TipTaps</source>
@@ -17388,7 +17388,7 @@
       </trans-unit>
       <trans-unit id="3695" resname="Support your peers and guide patients to top quality insights" restype="string" datatype="html">
         <source>Support your peers and guide patients to top quality insights</source>
-        <target>Apoya a tus pares y guía a tus pacientes a conocimientos médico de alta calidad</target>
+        <target>Apoya a tus pares y guía a tus pacientes a conocimientos médicos de alta calidad</target>
       </trans-unit>
       <trans-unit id="3696" resname="Answer questions &amp; help millions" restype="string" datatype="html">
         <source>Answer questions &amp; help millions</source>
@@ -22648,7 +22648,7 @@
     <body>
       <trans-unit id="4680" resname="To learn more, check related insights by other doctors" restype="string" datatype="html">
         <source>To learn more, check related insights by other doctors</source>
-        <target>Para aprender más, revisa los conocimientos médico relacionadas de otros doctores.</target>
+        <target>Para aprender más, revisa los conocimientos médicos relacionadas de otros doctores.</target>
       </trans-unit>
     </body>
   </file>
@@ -23048,7 +23048,7 @@
       </trans-unit>
       <trans-unit id="4747" resname="See personalized doctor insights »" restype="string" datatype="html">
         <source>See personalized doctor insights »</source>
-        <target>Ver conocimientos médico de doctores personalizadas»</target>
+        <target>Ver conocimientos médicos de doctores personalizadas»</target>
       </trans-unit>
       <trans-unit id="4748" resname="Ok thanks" restype="string" datatype="html">
         <source>Ok thanks</source>
@@ -24900,7 +24900,7 @@
       </trans-unit>
       <trans-unit id="5086" resname="Impact from answers and insights:" restype="string" datatype="html">
         <source>Impact from answers and insights:</source>
-        <target>Impacto de respuestas y conocimientos médico:</target>
+        <target>Impacto de respuestas y conocimientos médicos:</target>
       </trans-unit>
       <trans-unit id="5087" resname="Received&lt;span class=&quot;insight-num&quot;&gt;&lt;%= feelGood.commafy(doctor.number_of_agrees_received) %&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Received &lt;span class="insight-num"&gt;&lt;%= feelGood.commafy(doctor.number_of_agrees_received) %&gt;&lt;/span&gt;</source>
@@ -30636,7 +30636,7 @@
       </trans-unit>
       <trans-unit id="6443" resname="We&apos;ll share more doctors insights related to this topic from now on." restype="string" datatype="javascript">
         <source>We'll share more doctors insights related to this topic from now on.</source>
-        <target>De ahora en adelante, compartiremos más conocimientos médico de doctores relacionadas con este tema.</target>
+        <target>De ahora en adelante, compartiremos más conocimientos médicos de doctores relacionadas con este tema.</target>
       </trans-unit>
       <trans-unit id="6444" resname="Add or remove &lt;b&gt;{topic_name}&lt;/b&gt;" restype="string" datatype="javascript">
         <source>Add or remove &lt;b&gt;{topic_name}&lt;/b&gt;</source>
@@ -32800,7 +32800,7 @@
       </trans-unit>
       <trans-unit id="6907" resname="You will receive an email when the doctor responds to your question. &lt;br&gt;&lt;br&gt;You can also get updates with personalized doctor tips, answers, news, and more &amp;ndash; to help you accomplish your health goals and feel good! &lt;br&gt;&lt;br&gt;To personalize these doctors&apos; insights, tell us about yourself." restype="string" datatype="javascript">
         <source>You will receive an email when the doctor responds to your question. &lt;br&gt;&lt;br&gt;You can also get updates with personalized doctor tips, answers, news, and more &amp;ndash; to help you accomplish your health goals and feel good! &lt;br&gt;&lt;br&gt;To personalize these doctors' insights, tell us about yourself.</source>
-        <target>Recibirás un correo electrónico cuando el doctor responda a tu pregunta. &lt;br&gt;&lt;br&gt;¡También puedes obtener actualizaciones con tips personalizados de doctores, respuestas, noticias y más, para ayudarte a completar tus metas de salud y sentirte bien! &lt;br&gt;&lt;br&gt;Para personalizar estas conocimientos médico de doctores, cuéntanos acerca de ti.</target>
+        <target>Recibirás un correo electrónico cuando el doctor responda a tu pregunta. &lt;br&gt;&lt;br&gt;¡También puedes obtener actualizaciones con tips personalizados de doctores, respuestas, noticias y más, para ayudarte a completar tus metas de salud y sentirte bien! &lt;br&gt;&lt;br&gt;Para personalizar estas conocimientos médicos de doctores, cuéntanos acerca de ti.</target>
       </trans-unit>
       <trans-unit id="6908" resname="We sincerely apologize, but there was an issue completing this transaction. For further assistance, please contact our Quality Care Team at support@healthtap.com." restype="string" datatype="javascript">
         <source>We sincerely apologize, but there was an issue completing this transaction. For further assistance, please contact our Quality Care Team at support@healthtap.com.</source>
@@ -33176,7 +33176,7 @@
       </trans-unit>
       <trans-unit id="6980" resname="We&apos;ll highlight this doctor&apos;s insights for you on your feed." restype="string" datatype="javascript">
         <source>We'll highlight this doctor's insights for you on your feed.</source>
-        <target>Resaltaremos los conocimientos médico de este doctores para ti en tu fuente.</target>
+        <target>Resaltaremos los conocimientos médicos de este doctores para ti en tu fuente.</target>
       </trans-unit>
       <trans-unit id="6981" resname="Existing Consult" restype="string" datatype="javascript">
         <source>Existing Consult</source>
@@ -33536,7 +33536,7 @@
       </trans-unit>
       <trans-unit id="7062" resname=" More personalized doctor insights » " restype="string" datatype="javascript">
         <source>More personalized doctor insights »</source>
-        <target>Más conocimientos médico de doctores personalizadas »</target>
+        <target>Más conocimientos médicos de doctores personalizadas »</target>
       </trans-unit>
       <trans-unit id="7063" resname="We&apos;ve sent your request to connect to" restype="string" datatype="javascript">
         <source>We've sent your request to connect to</source>
@@ -33932,7 +33932,7 @@
       </trans-unit>
       <trans-unit id="7146" resname="Here are some doctor insights while you wait..." restype="string" datatype="javascript">
         <source>Here are some doctor insights while you wait...</source>
-        <target>Aquí están algunas conocimientos médico de doctores mientras esperas...</target>
+        <target>Aquí están algunas conocimientos médicos de doctores mientras esperas...</target>
       </trans-unit>
       <trans-unit id="7147" resname="Here&apos;s something to help you FeelGood :)" restype="string" datatype="javascript">
         <source>Here's something to help you FeelGood :)</source>

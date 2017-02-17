@@ -1225,7 +1225,7 @@
     <body>
       <trans-unit id="399" resname="r889535527" restype="string" datatype="ruby">
         <source>Offer more insights</source>
-        <target state="translated">Ofrecer más conocimientos médico</target>
+        <target state="translated">Ofrecer más conocimientos médicos</target>
       </trans-unit>
       <trans-unit id="401" resname="r506855600" restype="string" datatype="ruby">
         <source>Update your profile</source>

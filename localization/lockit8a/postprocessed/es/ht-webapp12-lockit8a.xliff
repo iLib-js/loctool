@@ -24,7 +24,7 @@
       </trans-unit>
       <trans-unit id="50" resname="r872631323" restype="string" datatype="ruby">
         <source>Top Doctor Insights on</source>
-        <target state="translated">Mejores Conocimientos médico de Doctores en</target>
+        <target state="translated">Mejores Conocimientos médicos de Doctores en</target>
       </trans-unit>
     </body>
   </file>

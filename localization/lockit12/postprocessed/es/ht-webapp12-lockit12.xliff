@@ -1539,7 +1539,7 @@
       </trans-unit>
       <trans-unit id="332" resname="r791326900" restype="string" datatype="ruby">
         <source>%{expert}, a top %{expert_specialty}, has helpful insights to share with you!</source>
-        <target state="translated">¡%{expert}, uno de los mejores %{expert_specialty}, tiene conocimientos médico útiles para compartir contigo!</target>
+        <target state="translated">¡%{expert}, uno de los mejores %{expert_specialty}, tiene conocimientos médicos útiles para compartir contigo!</target>
       </trans-unit>
     </body>
   </file>
@@ -2739,7 +2739,7 @@
     <body>
       <trans-unit id="562" resname="r730068882" restype="string" datatype="x-haml">
         <source>), population managers receive real-time individual and population health insights, including information on what members need and where they are</source>
-        <target state="translated">), administradores de población reciben conocimientos médico de salud individuales y de población en tiempo real, incluyendo información sobre qué necesitan los miembros y dónde están</target>
+        <target state="translated">), administradores de población reciben conocimientos médicos de salud individuales y de población en tiempo real, incluyendo información sobre qué necesitan los miembros y dónde están</target>
       </trans-unit>
     </body>
   </file>

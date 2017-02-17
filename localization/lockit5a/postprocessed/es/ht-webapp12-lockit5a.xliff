@@ -638,7 +638,7 @@
       </trans-unit>
       <trans-unit id="8345" resname="r968903568" restype="string" datatype="x-haml">
         <source>Your analytics dashboard allows you to get insight into your employees health plans, increase engagement, and improve employee benefits ecosystem</source>
-        <target>Tu tablero de análisis te permite obtener conocimientos médico en los planes de salud de tus empleados, y mejorar el ecosistema de beneficios a empleados</target>
+        <target>Tu tablero de análisis te permite obtener conocimientos médicos en los planes de salud de tus empleados, y mejorar el ecosistema de beneficios a empleados</target>
       </trans-unit>
       <trans-unit id="8346" resname="r1036636400" restype="string" datatype="x-haml">
         <source>Triage employees to the right care, at the right time, at the right price</source>
@@ -1222,7 +1222,7 @@
       </trans-unit>
       <trans-unit id="13401" resname="r329103010" restype="string" datatype="x-haml">
         <source>Automate newsletters and offer personalized feeds of doctor insights’ for each of your patients to build loyalty to your practice</source>
-        <target>Automatiza boletines y ofrece fuentes personalizadas de conocimientos médico de doctores para cada uno de tus pacientes para construir lealtad a tu consultorio.</target>
+        <target>Automatiza boletines y ofrece fuentes personalizadas de conocimientos médicos de doctores para cada uno de tus pacientes para construir lealtad a tu consultorio.</target>
       </trans-unit>
       <trans-unit id="13402" resname="r851109188" restype="string" datatype="x-haml">
         <source>Payment</source>
@@ -1254,7 +1254,7 @@
       </trans-unit>
       <trans-unit id="13409" resname="r510272480" restype="string" datatype="x-haml">
         <source>HealthTap provides detailed utilization reports, a zeitgeist population health insights, and data analytics tools for historical, current, and predictive analysis that detail trends and insights within the patient population. This data-centric approach enables providers to deliver optimal care at a lower cost.</source>
-        <target>HealthTap brinda reportes de uso detallados, conocimientos médico de salud del zeitgeist de la población, y herramientas de análisis de datos para análisis histórico, actual, y predictivo que detalla tendencias y conocimientos médico dentro de la población de pacientes. Este enfoque centrado en datos permite al proveedor brindar atención óptima a un menor costo.</target>
+        <target>HealthTap brinda reportes de uso detallados, conocimientos médicos de salud del zeitgeist de la población, y herramientas de análisis de datos para análisis histórico, actual, y predictivo que detalla tendencias y conocimientos médicos dentro de la población de pacientes. Este enfoque centrado en datos permite al proveedor brindar atención óptima a un menor costo.</target>
       </trans-unit>
       <trans-unit id="13410" resname="r655317160" restype="string" datatype="x-haml">
         <source>Integrates with existing apps or sites so your IT ecosystem can be powered by the same underlying PHR, data, analytics, and technology services</source>
@@ -4821,7 +4821,7 @@
       </trans-unit>
       <trans-unit id="1093" resname="r752881470" restype="string" datatype="ruby">
         <source>Answers and Insights</source>
-        <target>Respuestas y Conocimientos médico</target>
+        <target>Respuestas y Conocimientos médicos</target>
         <note annotates="source">this is a section title. Ie. Specialty: Internal Medicine</note>
       </trans-unit>
       <trans-unit id="1094" resname="r326351033" restype="string" datatype="ruby">
@@ -5356,7 +5356,7 @@
       </trans-unit>
       <trans-unit id="13460" resname="r505954421" restype="string" datatype="x-haml">
         <source>Billions of doctor insights served</source>
-        <target>Billones de conocimientos médico de doctores servidas</target>
+        <target>Billones de conocimientos médicos de doctores servidas</target>
       </trans-unit>
       <trans-unit id="13461" resname="r980695831" restype="string" datatype="x-haml">
         <source>App recommendations</source>
@@ -8444,7 +8444,7 @@
       </trans-unit>
       <trans-unit id="9149" resname="r567271824" restype="string" datatype="x-haml">
         <source>My answers and insights have</source>
-        <target>Mis respuestas y conocimientos médico han</target>
+        <target>Mis respuestas y conocimientos médicos han</target>
       </trans-unit>
       <trans-unit id="9150" resname="r212262046" restype="string" datatype="x-haml">
         <source>Here are kind words from others</source>
@@ -8652,7 +8652,7 @@
       </trans-unit>
       <trans-unit id="2983" resname="r1050466975" restype="string" datatype="ruby">
         <source>Doctor insights</source>
-        <target>Conocimientos médico de doctores</target>
+        <target>Conocimientos médicos de doctores</target>
       </trans-unit>
       <trans-unit id="2984" resname="r418831845" restype="string" datatype="ruby">
         <source>Take action</source>
@@ -14817,7 +14817,7 @@
       </trans-unit>
       <trans-unit id="7658" resname="r593998915" restype="string" datatype="x-haml">
         <source>insights to the question or</source>
-        <target>conocimientos médico para la pregunta o</target>
+        <target>conocimientos médicos para la pregunta o</target>
       </trans-unit>
       <trans-unit id="7659" resname="r736960072" restype="string" datatype="x-haml">
         <source>case at hand, contributing</source>
@@ -14989,7 +14989,7 @@
       </trans-unit>
       <trans-unit id="7757" resname="r311916177" restype="string" datatype="x-haml">
         <source>Free personalized, timely doctor insights emailed to you each week!</source>
-        <target>¡Conocimientos médico gratis, personalizadas y oportunas enviadas a tu correo electrónico cada semana!</target>
+        <target>¡Conocimientos médicos gratis, personalizadas y oportunas enviadas a tu correo electrónico cada semana!</target>
       </trans-unit>
       <trans-unit id="7758" resname="r975855663" restype="string" datatype="x-haml">
         <source>Action-oriented checklists personalized to you</source>
@@ -17453,7 +17453,7 @@
       </trans-unit>
       <trans-unit id="8675" resname="r265705778" restype="string" datatype="x-haml">
         <source>Apple’s Health App data helps HealthTap doctors gain insights about you</source>
-        <target>Los datos de la Aplicación de Salud de Apple ayudan a los doctores de HealthTap a ganar conocimientos médico sobre ti</target>
+        <target>Los datos de la Aplicación de Salud de Apple ayudan a los doctores de HealthTap a ganar conocimientos médicos sobre ti</target>
       </trans-unit>
       <trans-unit id="8676" resname="r885449144" restype="string" datatype="x-haml">
         <source>Steve receives a personalized, actionable checklist from</source>
@@ -19277,7 +19277,7 @@
       </trans-unit>
       <trans-unit id="9023" resname="r404679213" restype="string" datatype="x-haml">
         <source>To see more doctor insights...</source>
-        <target>Para ver más conocimientos médico de doctores...</target>
+        <target>Para ver más conocimientos médicos de doctores...</target>
       </trans-unit>
       <trans-unit id="9024" resname="r13825231" restype="string" datatype="x-haml">
         <source>Send question to doctors</source>
@@ -19649,7 +19649,7 @@
       </trans-unit>
       <trans-unit id="9172" resname="r946959817" restype="string" datatype="x-haml">
         <source>Insights</source>
-        <target>Conocimientos médico</target>
+        <target>Conocimientos médicos</target>
       </trans-unit>
       <trans-unit id="9173" resname="r396672595" restype="string" datatype="x-haml">
         <source>Recommend me</source>
@@ -19661,7 +19661,7 @@
       </trans-unit>
       <trans-unit id="9175" resname="r187306068" restype="string" datatype="x-haml">
         <source>Here are some of my top insights</source>
-        <target>Aquí están algunas de mis mejores conocimientos médico</target>
+        <target>Aquí están algunas de mis mejores conocimientos médicos</target>
       </trans-unit>
     </body>
   </file>
@@ -25025,7 +25025,7 @@
       </trans-unit>
       <trans-unit id="11087" resname="r1014442925" restype="string" datatype="x-haml">
         <source>You have full control over everything you share on HealthTap and can use your insights in your</source>
-        <target>Tienes control completo sobre todo lo que compartes en HealthTap y puedes usar tus conocimientos médico en tu</target>
+        <target>Tienes control completo sobre todo lo que compartes en HealthTap y puedes usar tus conocimientos médicos en tu</target>
       </trans-unit>
       <trans-unit id="11088" resname="r61920049" restype="string" datatype="x-haml">
         <source>own blog, website, and in other publications. You can automatically syndicate your posts on other</source>
@@ -25389,7 +25389,7 @@
       </trans-unit>
       <trans-unit id="11169" resname="r370892119" restype="string" datatype="x-haml">
         <source>Your shared insights</source>
-        <target>Tus conocimientos médico compartidas</target>
+        <target>Tus conocimientos médicos compartidas</target>
       </trans-unit>
     </body>
   </file>
@@ -27313,11 +27313,11 @@
       </trans-unit>
       <trans-unit id="11673" resname="r1072598420" restype="string" datatype="x-haml">
         <source>Empathetic, compassionate, and caring insights</source>
-        <target>Conocimientos médico empáticas, compasivas y bondadosas</target>
+        <target>Conocimientos médicos empáticas, compasivas y bondadosas</target>
       </trans-unit>
       <trans-unit id="11674" resname="r775307423" restype="string" datatype="x-haml">
         <source>Deeper insights into women's issues</source>
-        <target>Conocimientos médico más profundas a problemas de la mujer.</target>
+        <target>Conocimientos médicos más profundas a problemas de la mujer.</target>
       </trans-unit>
       <trans-unit id="11675" resname="r40405332" restype="string" datatype="x-haml">
         <source>Are you a parent or parent-to-be? Have you ever had questions about your partner's pregnancy or child's health?</source>
@@ -31129,7 +31129,7 @@
       </trans-unit>
       <trans-unit id="12710" resname="r333921003" restype="string" datatype="x-haml">
         <source>Are you ready to be well compensated for the time you spend helping your patients by email and phone? Many doctors are now consulting their patients virtually and getting paid for responding to previously uncompensated questions, simple problems, and requests for medication refills. You can even order lab tests; then when the lab results are made available to you on HealthTap, you will be able to share your insights to guide your patients. Increase efficiency in your practice by giving virtual consults to patients who do not need to see you in your office. Bonus: your patients will love the flexibility and convenient access to your high-quality care!</source>
-        <target>¿Estás listo para ser bien compensado por el tiempo que dedicas a tus pacientes por correo electrónico o teléfono? Muchos doctores están consultando a sus pacientes virtualmente ahora y están siendo pagados por responder preguntas que antes no eran compensadas, problemas simples y solicitudes para resurtir medicamentos. Puedes incluso ordenar análisis de laboratorio; luego cuando los resultados de laboratorio estén disponibles para ti, podrás ser capaz de compartir tus conocimientos médico para guiar a tus pacientes. Incrementa la eficiencia en tu consultorio dando consultas virtuales a pacientes que necesitan verte en tu oficina. Bono: ¡tus pacientes amarán el acceso flexible y conveniente de tu atención de alta calidad!</target>
+        <target>¿Estás listo para ser bien compensado por el tiempo que dedicas a tus pacientes por correo electrónico o teléfono? Muchos doctores están consultando a sus pacientes virtualmente ahora y están siendo pagados por responder preguntas que antes no eran compensadas, problemas simples y solicitudes para resurtir medicamentos. Puedes incluso ordenar análisis de laboratorio; luego cuando los resultados de laboratorio estén disponibles para ti, podrás ser capaz de compartir tus conocimientos médicos para guiar a tus pacientes. Incrementa la eficiencia en tu consultorio dando consultas virtuales a pacientes que necesitan verte en tu oficina. Bono: ¡tus pacientes amarán el acceso flexible y conveniente de tu atención de alta calidad!</target>
       </trans-unit>
       <trans-unit id="12711" resname="r309721998" restype="string" datatype="x-haml">
         <source>How much does this cost?</source>
@@ -32877,7 +32877,7 @@
       </trans-unit>
       <trans-unit id="13340" resname="r665608595" restype="string" datatype="x-haml">
         <source>Curated feed of doctor insights in the form of answers to frequently asked questions, tips, and checklists</source>
-        <target>Fuente curada de conocimientos médico de doctores en la forma de respuestas para preguntas frecuentemente hechas, tips y listados</target>
+        <target>Fuente curada de conocimientos médicos de doctores en la forma de respuestas para preguntas frecuentemente hechas, tips y listados</target>
       </trans-unit>
       <trans-unit id="13341" resname="r28496798" restype="string" datatype="x-haml">
         <source>Two-way empathetic communication</source>
@@ -35645,7 +35645,7 @@
       </trans-unit>
       <trans-unit id="14000" resname=" More personalized doctor insights » " restype="string" datatype="javascript">
         <source>More personalized doctor insights »</source>
-        <target>Más conocimientos médico de doctores personalizadas »</target>
+        <target>Más conocimientos médicos de doctores personalizadas »</target>
       </trans-unit>
     </body>
   </file>
