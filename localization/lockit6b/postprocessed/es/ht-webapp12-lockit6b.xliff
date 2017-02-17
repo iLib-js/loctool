@@ -3229,7 +3229,7 @@
     <body>
       <trans-unit id="2589" resname="r834200430" restype="string" datatype="x-haml">
         <source>The benefits of joining</source>
-        <target>Los beneficios de unirse</target>
+        <target state="accepted">Los beneficios de unirse a</target>
       </trans-unit>
       <trans-unit id="2590" resname="r354128866" restype="string" datatype="x-haml">
         <source>instantly promotes these to a global audience, and connects you to people and peers looking for doctors with your expertise.</source>
