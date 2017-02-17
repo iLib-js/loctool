@@ -5156,7 +5156,7 @@
       </trans-unit>
       <trans-unit id="817" resname="r527292478" restype="string" datatype="ruby">
         <source>TEDx Silicon Valley — Insights into Organizing Leading Speakers (Video)</source>
-        <target state="translated">TEDx Silicon Valley - Perspicacias en Organizando Oradores Líderes (Video)</target>
+        <target state="translated">TEDx Silicon Valley - Conocimientos médico en Organizando Oradores Líderes (Video)</target>
       </trans-unit>
       <trans-unit id="818" resname="r1028424587" restype="string" datatype="ruby">
         <source>A talk with insights and tips on how to get some amazing thought-leading speakers for your events.</source>
@@ -8326,7 +8326,7 @@
       </trans-unit>
       <trans-unit id="1466" resname="r644800481" restype="string" datatype="ruby">
         <source>Real-time population health insights&lt;br/&gt;Based on location and demographic</source>
-        <target state="translated">Perspicacias de salud poblacional en tiempo real&lt;br/&gt;Basadas en ubicación y demografía</target>
+        <target state="translated">Conocimientos médico de salud poblacional en tiempo real&lt;br/&gt;Basadas en ubicación y demografía</target>
       </trans-unit>
       <trans-unit id="1467" resname="r108584069" restype="string" datatype="ruby">
         <source>Get Support</source>
@@ -8342,7 +8342,7 @@
       </trans-unit>
       <trans-unit id="1470" resname="r651656946" restype="string" datatype="ruby">
         <source>Specific, actionable doctor insights&lt;br/&gt;Answers, tips, and checklists</source>
-        <target state="translated">Perspicacias de doctores específicas y viables&lt;br/&gt;Respuestas, tips y listados</target>
+        <target state="translated">Conocimientos médico de doctores específicas y viables&lt;br/&gt;Respuestas, tips y listados</target>
       </trans-unit>
       <trans-unit id="1471" resname="r784084451" restype="string" datatype="ruby">
         <source>Get Help</source>
@@ -11100,11 +11100,11 @@
       </trans-unit>
       <trans-unit id="2156" resname="r872631323" restype="string" datatype="ruby">
         <source>Top Doctor Insights on</source>
-        <target state="translated">Mejores Perspicacias de Doctores en</target>
+        <target state="translated">Mejores Conocimientos médico de Doctores en</target>
       </trans-unit>
       <trans-unit id="2157" resname="r1050466975" restype="string" datatype="ruby">
         <source>Doctor insights</source>
-        <target state="translated">Perspicacias de doctores</target>
+        <target state="translated">Conocimientos médico de doctores</target>
       </trans-unit>
     </body>
   </file>
@@ -11349,7 +11349,7 @@
       </trans-unit>
       <trans-unit id="2199" resname="r752881470" restype="string" datatype="ruby">
         <source>Answers and Insights</source>
-        <target state="translated">Respuestas y Perspicacias</target>
+        <target state="translated">Respuestas y Conocimientos médico</target>
         <note annotates="source">this is a section title. Ie. Specialty: Internal Medicine</note>
       </trans-unit>
       <trans-unit id="2200" resname="r326351033" restype="string" datatype="ruby">
@@ -14155,7 +14155,7 @@
       </trans-unit>
       <trans-unit id="2713" resname="r630866426" restype="string" datatype="ruby">
         <source>Doctor Insights for You</source>
-        <target state="translated">Perspicacias de Doctores para ti</target>
+        <target state="translated">Conocimientos médico de Doctores para ti</target>
       </trans-unit>
     </body>
   </file>
@@ -21177,7 +21177,7 @@
       </trans-unit>
       <trans-unit id="4045" resname="r1037087115" restype="string" datatype="ruby">
         <source>Unparalleled real-time data insights</source>
-        <target state="translated">Perspicacias de datos en tiempo real sin paralelos</target>
+        <target state="translated">Conocimientos médico de datos en tiempo real sin paralelos</target>
       </trans-unit>
       <trans-unit id="4046" resname="r958093413" restype="string" datatype="ruby">
         <source>Advanced data and analytics help analyze utilization and trends, enabling predictive analysis of health insights within patient population. Metricizes and creates transparency around quality of care with doctor-doctor peer review, patient-to-doctor ratings, and doctor-to-patient ratings.</source>
@@ -21205,15 +21205,15 @@
       </trans-unit>
       <trans-unit id="4051" resname="r262129610" restype="string" datatype="ruby">
         <source>Doctor insights on conditions and symptoms</source>
-        <target state="translated">Perspicacias de doctores sobre condiciones y síntomas</target>
+        <target state="translated">Conocimientos médico de doctores sobre condiciones y síntomas</target>
       </trans-unit>
       <trans-unit id="4052" resname="r451908267" restype="string" datatype="ruby">
         <source>Doctor insights on procedures</source>
-        <target state="translated">Perspicacias de doctores sobre procedimientos</target>
+        <target state="translated">Conocimientos médico de doctores sobre procedimientos</target>
       </trans-unit>
       <trans-unit id="4053" resname="r688454060" restype="string" datatype="ruby">
         <source>Doctor insights on medications</source>
-        <target state="translated">Perspicacias de doctores sobre medicamentos</target>
+        <target state="translated">Conocimientos médico de doctores sobre medicamentos</target>
       </trans-unit>
       <trans-unit id="4054" resname="r76255039" restype="string" datatype="ruby">
         <source>Doctor-recommended health and medical apps</source>
@@ -21221,7 +21221,7 @@
       </trans-unit>
       <trans-unit id="4055" resname="r829127024" restype="string" datatype="ruby">
         <source>Doctor insights on 320+ health goals (prevention, wellness, disease management, and more)</source>
-        <target state="translated">Perspicacias de doctores sobre 320+ metas de salud (prevención, bienestar, manejo de enfermedad, y más)</target>
+        <target state="translated">Conocimientos médico de doctores sobre 320+ metas de salud (prevención, bienestar, manejo de enfermedad, y más)</target>
       </trans-unit>
       <trans-unit id="4056" resname="r440782107" restype="string" datatype="ruby">
         <source>Comprehensive doctor directory and provider search</source>
@@ -21405,7 +21405,7 @@
       </trans-unit>
       <trans-unit id="4102" resname="r714945582" restype="string" datatype="ruby">
         <source>Population health insights and zeitgeist</source>
-        <target state="translated">Perspicacias y zeitgeist de salud poblacional</target>
+        <target state="translated">Conocimientos médico y zeitgeist de salud poblacional</target>
       </trans-unit>
     </body>
   </file>
@@ -21736,7 +21736,7 @@
       </trans-unit>
       <trans-unit id="4171" resname="r579637420" restype="string" datatype="ruby">
         <source>Real-time population health insights. Based on location and demographic.</source>
-        <target state="translated">Perspicacias de salud poblacional en tiempo real. Basadas en ubicación y demografía.</target>
+        <target state="translated">Conocimientos médico de salud poblacional en tiempo real. Basadas en ubicación y demografía.</target>
       </trans-unit>
       <trans-unit id="4172" resname="r867896794" restype="string" datatype="ruby">
         <source>Always available technical support. Warm transfer capabilities and protocols.</source>
@@ -21748,7 +21748,7 @@
       </trans-unit>
       <trans-unit id="4174" resname="r513799113" restype="string" datatype="ruby">
         <source>Specific, actionable doctor insights in the form of relevant answers, tips, and checklists.</source>
-        <target state="translated">Perspicacias de doctores viables y específicas en la forma de respuestas, tips y listados.</target>
+        <target state="translated">Conocimientos médico de doctores viables y específicas en la forma de respuestas, tips y listados.</target>
       </trans-unit>
       <trans-unit id="4175" resname="r224070642" restype="string" datatype="ruby">
         <source>Live help</source>
@@ -22522,7 +22522,7 @@
     <body>
       <trans-unit id="4343" resname="r977990354" restype="string" datatype="ruby">
         <source>%{title} - Doctors' Insights on HealthTap</source>
-        <target state="translated">%{title} - Perspicacias de Doctores en HealthTap</target>
+        <target state="translated">%{title} - Conocimientos médico de Doctores en HealthTap</target>
       </trans-unit>
       <trans-unit id="4344" resname="r509413204" restype="string" datatype="ruby">
         <source>%{publication_title} - HealthTap</source>
@@ -23818,7 +23818,7 @@
       </trans-unit>
       <trans-unit id="4659" resname="r238259539" restype="string" datatype="ruby">
         <source>Doctor Insights For You</source>
-        <target state="translated">Perspicacias de Doctores para ti</target>
+        <target state="translated">Conocimientos médico de Doctores para ti</target>
       </trans-unit>
       <trans-unit id="4660" resname="r884061707" restype="string" datatype="ruby">
         <source>FeelGood Moments</source>
@@ -32184,11 +32184,11 @@
       </trans-unit>
       <trans-unit id="7557" resname="r738191272" restype="string" datatype="ruby">
         <source>%{expert_name}'s Top Insights on %{topic_name} on @HealthTap</source>
-        <target state="translated">Las Mejores Perspicacias de %{expert_name} sobre %{topic_name} en @HealthTap</target>
+        <target state="translated">Las Mejores Conocimientos médico de %{expert_name} sobre %{topic_name} en @HealthTap</target>
       </trans-unit>
       <trans-unit id="7558" resname="r441610480" restype="string" datatype="ruby">
         <source>- Doctor insights on HealthTap</source>
-        <target state="translated">- Perspicacias de doctores en HealthTap</target>
+        <target state="translated">- Conocimientos médico de doctores en HealthTap</target>
       </trans-unit>
       <trans-unit id="7559" resname="r581935120" restype="string" datatype="ruby">
         <source>- Doctor answers on HealthTap</source>
@@ -32401,7 +32401,7 @@
       </trans-unit>
       <trans-unit id="7719" resname="r879884819" restype="string" datatype="ruby">
         <source>%{query} - Top Doctor Insights on HealthTap</source>
-        <target state="translated">%{query} - Perspicacias de Los Mejores Doctores en HealthTap</target>
+        <target state="translated">%{query} - Conocimientos médico de Los Mejores Doctores en HealthTap</target>
       </trans-unit>
       <trans-unit id="7720" resname="r524333309" restype="string" datatype="ruby">
         <source>Search Conditions</source>
@@ -42722,7 +42722,7 @@
       </trans-unit>
       <trans-unit id="9906" resname=" More personalized doctor insights » " restype="string" datatype="javascript">
         <source>More personalized doctor insights »</source>
-        <target state="translated">Perspicacias de doctores más personalizadas »</target>
+        <target state="translated">Conocimientos médico de doctores más personalizadas »</target>
       </trans-unit>
       <trans-unit id="9907" resname="We&apos;ve sent your request to connect to" restype="string" datatype="javascript">
         <source>We've sent your request to connect to</source>

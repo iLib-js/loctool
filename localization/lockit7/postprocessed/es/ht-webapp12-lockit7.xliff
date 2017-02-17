@@ -352,7 +352,7 @@
       </trans-unit>
       <trans-unit id="81" resname="r644800481" restype="string" datatype="ruby">
         <source>Real-time population health insights&lt;br/&gt;Based on location and demographic</source>
-        <target>Perspicacias de salud poblacional en tiempo real&lt;br/&gt;Basadas en ubicación y demografía</target>
+        <target>Conocimientos médico de salud poblacional en tiempo real&lt;br/&gt;Basadas en ubicación y demografía</target>
       </trans-unit>
       <trans-unit id="82" resname="r31776158" restype="string" datatype="ruby">
         <source>Always available technical support&lt;br/&gt;Warm transfer capabilities and protocols</source>
@@ -360,7 +360,7 @@
       </trans-unit>
       <trans-unit id="83" resname="r651656946" restype="string" datatype="ruby">
         <source>Specific, actionable doctor insights&lt;br/&gt;Answers, tips, and checklists</source>
-        <target>Perspicacias de doctores específicas y accioniables&lt;br/&gt;Respuestas, tips y listados</target>
+        <target>Conocimientos médico de doctores específicas y accioniables&lt;br/&gt;Respuestas, tips y listados</target>
       </trans-unit>
       <trans-unit id="84" resname="r329110499" restype="string" datatype="ruby">
         <source>Immediate response and access&lt;br/&gt;%{num} doctors across 141 specialties</source>
@@ -1887,7 +1887,7 @@
       </trans-unit>
       <trans-unit id="383" resname="r579637420" restype="string" datatype="ruby">
         <source>Real-time population health insights. Based on location and demographic.</source>
-        <target>Perspicacias de salud poblacional en tiempo real. Basadas en ubicación y demografía.</target>
+        <target>Conocimientos médico de salud poblacional en tiempo real. Basadas en ubicación y demografía.</target>
       </trans-unit>
       <trans-unit id="384" resname="r867896794" restype="string" datatype="ruby">
         <source>Always available technical support. Warm transfer capabilities and protocols.</source>
@@ -1895,7 +1895,7 @@
       </trans-unit>
       <trans-unit id="385" resname="r513799113" restype="string" datatype="ruby">
         <source>Specific, actionable doctor insights in the form of relevant answers, tips, and checklists.</source>
-        <target>Perspicacias de doctores viables y específicas en la forma de respuestas, tips y listados.</target>
+        <target>Conocimientos médico de doctores viables y específicas en la forma de respuestas, tips y listados.</target>
       </trans-unit>
       <trans-unit id="386" resname="r521837342" restype="string" datatype="ruby">
         <source>Live responses from and access to primary care doctors and disaster specialists.</source>

@@ -4821,7 +4821,7 @@
       </trans-unit>
       <trans-unit id="1093" resname="r752881470" restype="string" datatype="ruby">
         <source>Answers and Insights</source>
-        <target>Respuestas y Perspicacias</target>
+        <target>Respuestas y Conocimientos médico</target>
         <note annotates="source">this is a section title. Ie. Specialty: Internal Medicine</note>
       </trans-unit>
       <trans-unit id="1094" resname="r326351033" restype="string" datatype="ruby">
@@ -8652,7 +8652,7 @@
       </trans-unit>
       <trans-unit id="2983" resname="r1050466975" restype="string" datatype="ruby">
         <source>Doctor insights</source>
-        <target>Perspicacias de doctores</target>
+        <target>Conocimientos médico de doctores</target>
       </trans-unit>
       <trans-unit id="2984" resname="r418831845" restype="string" datatype="ruby">
         <source>Take action</source>
@@ -14989,7 +14989,7 @@
       </trans-unit>
       <trans-unit id="7757" resname="r311916177" restype="string" datatype="x-haml">
         <source>Free personalized, timely doctor insights emailed to you each week!</source>
-        <target>¡Perspicacias gratis, personalizadas y oportunas enviadas a tu correo electrónico cada semana!</target>
+        <target>¡Conocimientos médico gratis, personalizadas y oportunas enviadas a tu correo electrónico cada semana!</target>
       </trans-unit>
       <trans-unit id="7758" resname="r975855663" restype="string" datatype="x-haml">
         <source>Action-oriented checklists personalized to you</source>
@@ -19649,7 +19649,7 @@
       </trans-unit>
       <trans-unit id="9172" resname="r946959817" restype="string" datatype="x-haml">
         <source>Insights</source>
-        <target>Perspicacias</target>
+        <target>Conocimientos médico</target>
       </trans-unit>
       <trans-unit id="9173" resname="r396672595" restype="string" datatype="x-haml">
         <source>Recommend me</source>
@@ -27313,11 +27313,11 @@
       </trans-unit>
       <trans-unit id="11673" resname="r1072598420" restype="string" datatype="x-haml">
         <source>Empathetic, compassionate, and caring insights</source>
-        <target>Perspicacias empáticas, compasivas y bondadosas</target>
+        <target>Conocimientos médico empáticas, compasivas y bondadosas</target>
       </trans-unit>
       <trans-unit id="11674" resname="r775307423" restype="string" datatype="x-haml">
         <source>Deeper insights into women's issues</source>
-        <target>Perspicacias más profundas a problemas de la mujer.</target>
+        <target>Conocimientos médico más profundas a problemas de la mujer.</target>
       </trans-unit>
       <trans-unit id="11675" resname="r40405332" restype="string" datatype="x-haml">
         <source>Are you a parent or parent-to-be? Have you ever had questions about your partner's pregnancy or child's health?</source>
