@@ -9787,7 +9787,7 @@
       </trans-unit>
       <trans-unit id="1918" resname="r746961734" restype="string" datatype="ruby">
         <source>HealthTap Cloud enables developers to build interoperable, engaging, and smart health experiences, powered by HOPES&lt;sup&gt;TM&lt;/sup&gt;</source>
-        <target state="translated">HealthTap Cloud les permite a desarrolladores construir experiencias de salud inteligentes, atractivas e interoperables, impulsadas por HOPES&lt;sup&gt;TM&lt;/sup&gt;</target>
+        <target state="accepted">HealthTap Cloud permite a los desarrolladores generar experiencias de salud inteligentes, atractivas e interactivas, impulsadas por HOPES&lt;sup&gt;TM&lt;/sup&gt;</target>
       </trans-unit>
     </body>
   </file>
