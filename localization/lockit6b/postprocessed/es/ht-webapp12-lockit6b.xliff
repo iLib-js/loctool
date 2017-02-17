@@ -2821,11 +2821,11 @@
       </trans-unit>
       <trans-unit id="2483" resname="r753011875" restype="string" datatype="x-haml">
         <source>. As we continue on our creative journey to help people smile and</source>
-        <target>. Mientras continuamos con nuestro viaje creativo para ayudar a la gente a sonreír y a</target>
+        <target state="accepted">. Mientras continuamos con nuestro viaje creativo para ayudar a la gente a sonreír y a</target>
       </trans-unit>
       <trans-unit id="2484" resname="r833243616" restype="string" datatype="x-haml">
         <source>We’re excited to have reinvented how the world experiences health and</source>
-        <target>Estamos entusiasmados de haber reinventado como el mundo experimenta la salud y</target>
+        <target state="accepted">Estamos entusiasmados de haber reinventado como el mundo experimenta la salud y</target>
       </trans-unit>
       <trans-unit id="2485" resname="r203704905" restype="string" datatype="x-haml">
         <source>...to help everyone</source>

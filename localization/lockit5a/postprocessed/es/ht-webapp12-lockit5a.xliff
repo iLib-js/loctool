@@ -13581,7 +13581,7 @@
       </trans-unit>
       <trans-unit id="7204" resname="r628043353" restype="string" datatype="x-haml">
         <source>every day, please join us!</source>
-        <target>todos los días, por favor únete a nosotros!</target>
+        <target state="accepted">todos los días, por favor únete a nosotros!</target>
       </trans-unit>
       <trans-unit id="7206" resname="r833243616" restype="string" datatype="x-haml">
         <source>We’re excited to have reinvented how the world experiences health and</source>
