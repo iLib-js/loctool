@@ -14229,11 +14229,11 @@
     <body>
       <trans-unit id="7445" resname="r4022987" restype="string" datatype="x-haml">
         <source>HealthTap instantly connects millions of people</source>
-        <target>HealthTap conecta instantáneamente a millones de personas</target>
+        <target state="accepted">HealthTap proporciona instantáneamente atención de la salud de alta calidad a millones de personas,</target>
       </trans-unit>
       <trans-unit id="7446" resname="r927171372" restype="string" datatype="x-haml">
         <source>to high-quality care anytime, anywhere</source>
-        <target>a atención a la salud de alta calidad, a cualquier hora y en cualquier lugar.</target>
+        <target state="accepted">a cualquier hora y en cualquier lugar.</target>
       </trans-unit>
     </body>
   </file>
