@@ -10459,11 +10459,11 @@
       </trans-unit>
       <trans-unit id="2064" resname="r699856334" restype="string" datatype="ruby">
         <source>HealthTap Compass brings you&lt;br&gt;immediate answers&lt;br&gt;to your most pressing concerns&lt;br&gt;with convenience and compassion</source>
-        <target state="translated">HealthTap Compass te brinda&lt;br&gt;respuestas inmediatas&lt;br&gt;a tus más urgentes preocupaciones&lt;br&gt;con conveniencia y compasión</target>
+        <target state="accepted">HealthTap Compass brinda&lt;br&gt;respuestas inmediatas&lt;br&gt;para tus preocupaciones más urgentes,&lt;br&gt;de manera conveniente y compasiva</target>
       </trans-unit>
       <trans-unit id="2065" resname="r988622612" restype="string" datatype="ruby">
         <source>HealthTap Compass brings&lt;br&gt;you immediate answers&lt;br&gt;to your most pressing&lt;br&gt;concerns with convenience&lt;br&gt;and compassion</source>
-        <target state="translated">HealthTap Compass te brinda&lt;br&gt;respuestas inmediatas&lt;br&gt;a tus más urgentes&lt;br&gt;preocupaciones con conveniencia&lt;br&gt;y compasión</target>
+        <target state="accepted">HealthTap Compass brinda&lt;br&gt;respuestas inmediatas&lt;br&gt;para tus preocupaciones&lt;br&gt;más urgentes, de manera&lt;br&gt;conveniente y compasiva</target>
       </trans-unit>
       <trans-unit id="2066" resname="r768297829" restype="string" datatype="ruby">
         <source>No waiting rooms,&lt;br&gt;only immediate knowledge and immediate care</source>
