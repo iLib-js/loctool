@@ -16220,7 +16220,7 @@ aplicación y deja que el mundo lo sepa :)</target>
       </trans-unit>
       <trans-unit id="mwU-ZZ-rog.normalTitle" resname="mwU-ZZ-rog.normalTitle" restype="string" datatype="x-xib">
         <source>Filter Results</source>
-        <target>Filtrar</target>
+        <target state="ui-fix">Filtrar</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Filter Results"; ObjectID = "mwU-ZZ-rog";</note>
       </trans-unit>
       <trans-unit id="oQj-RC-pXP.text" resname="oQj-RC-pXP.text" restype="string" datatype="x-xib">
