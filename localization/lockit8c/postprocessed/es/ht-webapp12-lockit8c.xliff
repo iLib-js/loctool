@@ -14095,7 +14095,7 @@
       </trans-unit>
       <trans-unit id="2704" resname="r903076345" restype="string" datatype="ruby">
         <source>Learn more</source>
-        <target state="translated">Aprende más</target>
+        <target state="accepted">Saber más</target>
       </trans-unit>
     </body>
   </file>
