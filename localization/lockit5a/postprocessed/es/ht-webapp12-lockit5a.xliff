@@ -426,7 +426,7 @@
       </trans-unit>
       <trans-unit id="7094" resname="r690591364" restype="string" datatype="x-haml">
         <source>so I know the information I find is validated. I also love</source>
-        <target>así que sé que la información que encuentro es validada. También amo que</target>
+        <target state="accepted">así que sé que la información que encuentro está validada. También amo que</target>
       </trans-unit>
       <trans-unit id="7095" resname="r348586620" restype="string" datatype="x-haml">
         <source>We’re also committed to our amazing doctors.</source>
