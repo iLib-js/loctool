@@ -16115,7 +16115,7 @@ aplicación y deja que el mundo lo sepa :)</target>
       </trans-unit>
       <trans-unit id="GKB-4T-MRt.text" resname="GKB-4T-MRt.text" restype="string" datatype="x-xib">
         <source>Sort by:</source>
-        <target>Ordenar por:</target>
+        <target state="ui-fix">Orden:</target>
         <note annotates="source">Class = "UILabel"; text = "Sort by:"; ObjectID = "GKB-4T-MRt";</note>
       </trans-unit>
       <trans-unit id="KwY-dw-9WS.text" resname="KwY-dw-9WS.text" restype="string" datatype="x-xib">
@@ -16155,7 +16155,7 @@ aplicación y deja que el mundo lo sepa :)</target>
       </trans-unit>
       <trans-unit id="V5U-vU-GX2.normalTitle" resname="V5U-vU-GX2.normalTitle" restype="string" datatype="x-xib">
         <source>Filter Results</source>
-        <target>Filtrar Resultados</target>
+        <target state="ui-fix">Filtrar</target>
         <note annotates="source">Class = "UIButton"; normalTitle = "Filter Results"; ObjectID = "V5U-vU-GX2";</note>
       </trans-unit>
       <trans-unit id="WJk-9j-qqD.normalTitle" resname="WJk-9j-qqD.normalTitle" restype="string" datatype="x-xib">
