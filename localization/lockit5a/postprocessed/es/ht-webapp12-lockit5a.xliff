@@ -14605,7 +14605,7 @@
       </trans-unit>
       <trans-unit id="7605" resname="r489957734" restype="string" datatype="x-haml">
         <source>Gain valuable insights</source>
-        <target>¡Gana valiosa perspicacia</target>
+        <target>¡Gana valiosa conocimiento médico</target>
       </trans-unit>
       <trans-unit id="7606" resname="r709113876" restype="string" datatype="x-haml">
         <source>and feel good!</source>
@@ -14649,7 +14649,7 @@
       </trans-unit>
       <trans-unit id="7616" resname="r681983298" restype="string" datatype="x-haml">
         <source>Gain valuable insights and feel good!</source>
-        <target>¡Gana valiosa perspicacia y sentirse bien!</target>
+        <target>¡Gana valiosa conocimiento médico y sentirse bien!</target>
       </trans-unit>
       <trans-unit id="7617" resname="r531995203" restype="string" datatype="x-haml">
         <source>in 137 specialties are standing by</source>
