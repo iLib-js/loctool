@@ -10451,7 +10451,7 @@
       </trans-unit>
       <trans-unit id="2062" resname="r352626996" restype="string" datatype="ruby">
         <source>You get doctor advice,&lt;br&gt;actionable plans,&lt;br&gt;prescriptions, referrals,&lt;br&gt;and even lab tests</source>
-        <target state="translated">Obtienes consejo de doctores,&lt;br&gt;planes viables,&lt;br&gt;recetas, referencias&lt;br&gt;y hasta pruebas de laboratorio</target>
+        <target state="translated">Obtienes consejos médicos,&lt;br&gt;planes de acción,&lt;br&gt;recetas, referencias&lt;br&gt;y hasta pruebas de laboratorio</target>
       </trans-unit>
       <trans-unit id="2063" resname="r917056356" restype="string" datatype="ruby">
         <source>Safe, secure, and private:&lt;br&gt; We provide the right care when you need it most</source>
