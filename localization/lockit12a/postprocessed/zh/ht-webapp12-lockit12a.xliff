@@ -2680,4 +2680,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/static_pages/mission.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="4361" resname="r887589526" restype="string" datatype="ruby">
+        <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to &lt;span class="no-break"&gt;Feel Good&lt;/span&gt;. Whether we’re trying to improve our already robust health, manage a chronic condition, or cope with a serious illness, we want to live better—and we always want to &lt;span class="no-break"&gt;Feel Good&lt;/span&gt;.</source>
+        <target>它可能听起来很崇高，但我们归结它为一些非常基本的东西。我们都-在>心里 – 简单地想要&lt;span class="no-break"&gt;Feel Good&lt;/span&gt;. 我们不论是努力尝试进一步强身健体，还是控制慢性疾病的发展，或是>完善治疗各种重大疾病，我们所期望的都是能够生活的更健康更幸福——而这也是我们长久以
+来的愿望&lt;span class="no-break"&gt;Feel Good&lt;/span&gt;。</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
