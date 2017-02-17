@@ -8885,7 +8885,7 @@
       </trans-unit>
       <trans-unit id="8622" resname="r719535550" restype="string" datatype="x-haml">
         <source>How HealthTap has changed lives</source>
-        <target>¿Cómo HealthTap ha cambiado vidas?</target>
+        <target state="accepted">¿Cómo ha cambiado vidas HealthTap?</target>
       </trans-unit>
       <trans-unit id="8623" resname="r126622825" restype="string" datatype="x-haml">
         <source>So what are you waiting for?</source>
