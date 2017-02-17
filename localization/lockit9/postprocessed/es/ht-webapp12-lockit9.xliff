@@ -160,7 +160,7 @@
     <body>
       <trans-unit id="31" resname="r930257171" restype="string" datatype="ruby">
         <source>doctor shared a insight</source>
-        <target state="translated">doctor compartió una perspicacia</target>
+        <target state="translated">doctor compartió un conocimiento médico</target>
       </trans-unit>
     </body>
   </file>
