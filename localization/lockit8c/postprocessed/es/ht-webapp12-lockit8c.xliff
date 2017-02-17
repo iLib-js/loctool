@@ -9727,11 +9727,11 @@
       </trans-unit>
       <trans-unit id="1903" resname="r975034919" restype="string" datatype="ruby">
         <source>Immediate access to top doctors and their expertise, anytime, anywhere</source>
-        <target state="translated">Acceso inmediato a los mejores doctores y a su destreza, a cualquier hora y en cualquier lugar</target>
+        <target state="translated">Acceso inmediato a los mejores médicos, a cualquier hora y en cualquier lugar</target>
       </trans-unit>
       <trans-unit id="1904" resname="r851737678" restype="string" datatype="ruby">
         <source>Learn about providers &amp; health systems</source>
-        <target state="translated">Aprender acerca de proveedores &amp; sistemas de salud</target>
+        <target state="translated">Saber acerca de proveedores &amp; sistemas de salud</target>
       </trans-unit>
       <trans-unit id="1905" resname="r600853519" restype="string" datatype="ruby">
         <source>Learn about medical practices and clinics</source>
