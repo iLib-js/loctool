@@ -22648,7 +22648,7 @@
     <body>
       <trans-unit id="4680" resname="To learn more, check related insights by other doctors" restype="string" datatype="html">
         <source>To learn more, check related insights by other doctors</source>
-        <target>Para aprender más, revisa las perspicacias relacionadas de otros doctores.</target>
+        <target>Para aprender más, revisa los conocimientos médico relacionadas de otros doctores.</target>
       </trans-unit>
     </body>
   </file>
@@ -33176,7 +33176,7 @@
       </trans-unit>
       <trans-unit id="6980" resname="We&apos;ll highlight this doctor&apos;s insights for you on your feed." restype="string" datatype="javascript">
         <source>We'll highlight this doctor's insights for you on your feed.</source>
-        <target>Resaltaremos las perspicacias de este doctores para ti en tu fuente.</target>
+        <target>Resaltaremos los conocimientos médico de este doctores para ti en tu fuente.</target>
       </trans-unit>
       <trans-unit id="6981" resname="Existing Consult" restype="string" datatype="javascript">
         <source>Existing Consult</source>

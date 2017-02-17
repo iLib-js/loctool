@@ -2294,7 +2294,7 @@
       </trans-unit>
       <trans-unit id="495" resname="r463168909" restype="string" datatype="ruby">
         <source>I recommend checking out doctor insights on %{topic_name} on HealthTap. You’ll find thousands of informative doctor's answers, tips, checklists, and news items there!</source>
-        <target state="translated">Recomiendo dar un vistazo a las perspicacias de doctores sobre %{topic_name} en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
+        <target state="translated">Recomiendo dar un vistazo a los conocimientos médico de doctores sobre %{topic_name} en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
       </trans-unit>
       <trans-unit id="496" resname="r373725722" restype="string" datatype="ruby">
         <source>Top doctors answer questions and share tips on "%{topic_name}" on #HealthTap!</source>
@@ -2306,7 +2306,7 @@
       </trans-unit>
       <trans-unit id="498" resname="r346973693" restype="string" datatype="ruby">
         <source>I recommend checking out doctor insights on "%{search_string}" on HealthTap. You’ll find thousands of informative doctor's answers, tips, checklists, and news items there!</source>
-        <target state="translated">Recomiendo dar un vistazo a las perspicacias de doctores sobre "%{search_string}" en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
+        <target state="translated">Recomiendo dar un vistazo a los conocimientos médico de doctores sobre "%{search_string}" en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
       </trans-unit>
       <trans-unit id="499" resname="r38768222" restype="string" datatype="ruby">
         <source>Top doctors answer questions and share tips on "%{search_string}" on #HealthTap!</source>
@@ -2438,7 +2438,7 @@
       </trans-unit>
       <trans-unit id="531" resname="r165502120" restype="string" datatype="ruby">
         <source>I recommend checking out doctor insights on HealthTap. You’ll find thousands of informative doctor's answers, tips, checklists, and news items there!</source>
-        <target state="translated">Recomiendo dar un vistazo a las perspicacias de doctores en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
+        <target state="translated">Recomiendo dar un vistazo a los conocimientos médico de doctores en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
       </trans-unit>
       <trans-unit id="532" resname="r952148758" restype="string" datatype="ruby">
         <source>Connect with me on HealthTap with my special keycode: %{key_code}! Schedule appointments to video chat, text, or message me during on my Virtual Practice!</source>

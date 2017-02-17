@@ -7420,7 +7420,7 @@
       </trans-unit>
       <trans-unit id="1279" resname="r44039109" restype="string" datatype="ruby">
         <source>The absolute best feature of HealthTap is the level of involvement from experts in the Medical community. It makes me feel confident that when I search a condition or have a question, the knowledge and insights are not only helpful, but they,re accurate. It makes me feel at ease as a new mom.</source>
-        <target state="translated">La absolutamente mejor función de HealthTap es el nivel de participación de expertos de la comunidad Médica. Me hace sentir confiado que cuando busco una condición o tengo una pregunta, el conocimiento y las perspicacias no solo son útiles, sino que son acertadas. Me hace sentir tranquila como una nueva mamá.</target>
+        <target state="translated">La absolutamente mejor función de HealthTap es el nivel de participación de expertos de la comunidad Médica. Me hace sentir confiado que cuando busco una condición o tengo una pregunta, el conocimiento y los conocimientos médico no solo son útiles, sino que son acertadas. Me hace sentir tranquila como una nueva mamá.</target>
       </trans-unit>
       <trans-unit id="1280" resname="r1070722183" restype="string" datatype="ruby">
         <source>Alison J.</source>
@@ -42350,7 +42350,7 @@
       </trans-unit>
       <trans-unit id="9820" resname="We&apos;ll highlight this doctor&apos;s insights for you on your feed." restype="string" datatype="javascript">
         <source>We'll highlight this doctor's insights for you on your feed.</source>
-        <target state="translated">Resaltaremos las perspicacias de este doctor para ti en tu fuente.</target>
+        <target state="translated">Resaltaremos los conocimientos médico de este doctor para ti en tu fuente.</target>
       </trans-unit>
       <trans-unit id="9821" resname="Existing Consult" restype="string" datatype="javascript">
         <source>Existing Consult</source>
