@@ -2449,7 +2449,7 @@
       </trans-unit>
       <trans-unit id="2401" resname="r256517412" restype="string" datatype="x-haml">
         <source>Mi historia empezó cuando me detectaron colitis ulcerativa. A menudo buscaba información acerca de lo que no sabía. Me preocupaba y me avergonzaba hablar de mi condición con el doctor y gracias a HealthTap, me ha ayudado a obtener respuestas a mis preguntas. Quiero agradecer a los doctores de HealthTap quienes han sido inmensamente amables respondiendo mis preguntas. Sin ellos, aun estaria buscando.</source>
-        <target>Mi historia empezó cuando me detectaron colitis ulcerativa. A menudo buscaba información acerca de lo que no sabía. Me preocupaba y me avergonzaba hablar de mi condición con el doctor y gracias a HealthTap, me ha ayudado a obtener respuestas a mis preguntas. Quiero agradecer a los doctores de HealthTap, quienes han sido inmensamente amables respondiendo mis preguntas. Sin ellos, aun estaría buscando.</target>
+        <target state="accepted">Mi historia empezó cuando me detectaron colitis ulcerativa. A menudo buscaba información acerca de lo que no sabía. Me preocupaba y me avergonzaba hablar de mi condición con el doctor. HealthTap me ha ayudado a obtener respuestas a mis preguntas. Quiero agradecer a los doctores de HealthTap, quienes han sido inmensamente amables respondiendo mis preguntas. Sin ellos, aún estaría buscando.</target>
       </trans-unit>
       <trans-unit id="2402" resname="r582528020" restype="string" datatype="x-haml">
         <source>Richie</source>
