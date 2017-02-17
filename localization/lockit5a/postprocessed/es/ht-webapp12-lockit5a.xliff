@@ -14945,7 +14945,7 @@
       </trans-unit>
       <trans-unit id="7728" resname="r385637418" restype="string" datatype="x-haml">
         <source>We just sent you a link to reset your password. If you don't see it after a few minutes, please check your Spam folder</source>
-        <target>Te acabamos de enviar un enlace para restablecer tu contraseña. Si no lo ves después de unos minutos, por favor, verifica tu folder de Spam</target>
+        <target state="accepted">Te acabamos de enviar un enlace para restablecer tu contraseña. Si no lo ves después de unos minutos, por favor, verifica tu carpeta de correo no deseado.</target>
       </trans-unit>
       <trans-unit id="7729" resname="r751548890" restype="string" datatype="x-haml">
         <source>Return to log in</source>
