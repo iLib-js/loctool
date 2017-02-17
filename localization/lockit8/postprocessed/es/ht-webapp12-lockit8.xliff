@@ -5664,7 +5664,7 @@
     <body>
       <trans-unit id="2460" resname="r467602620" restype="string" datatype="x-haml">
         <source>We believe healthcare is a fundamental human right</source>
-        <target>Creemos que la atención a la salud es un derecho humano fundamental</target>
+        <target state="accepted">Creemos que la atención de la salud es un derecho humano fundamental</target>
       </trans-unit>
     </body>
   </file>
