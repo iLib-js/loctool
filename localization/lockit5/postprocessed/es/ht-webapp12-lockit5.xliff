@@ -21386,7 +21386,7 @@
       </trans-unit>
       <trans-unit id="4933" resname="r738191272" restype="string" datatype="ruby">
         <source>%{expert_name}'s Top Insights on %{topic_name} on @HealthTap</source>
-        <target>Las Mejores Conocimientos médicos de %{expert_name} sobre %{topic_name} en @HealthTap</target>
+        <target>Las Mejores Conocimientos Médicos de %{expert_name} sobre %{topic_name} en @HealthTap</target>
       </trans-unit>
       <trans-unit id="4934" resname="r289296108" restype="string" datatype="ruby">
         <source>%{topic_name} - Doctor advice on HealthTap</source>
