@@ -1868,4 +1868,56 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/pages/feelGood/login.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="3" resname="r333922407" restype="string" datatype="ruby">
+        <source>Welcome back</source>
+        <target state="translated">Bienvenido de vuelta</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r391775707" restype="string" datatype="ruby">
+        <source>Login</source>
+        <target state="translated">Iniciar sesión</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/symptom_checker_session.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="5" resname="r314412560" restype="string" datatype="ruby">
+        <source>Update health profile</source>
+        <target state="translated">Actualizar perfil de salud</target>
+      </trans-unit>
+      <trans-unit id="6" resname="r38074302" restype="string" datatype="ruby">
+        <source>Quick question</source>
+        <target state="translated">Pequeña pregunta</target>
+      </trans-unit>
+      <trans-unit id="7" resname="r777866617" restype="string" datatype="ruby">
+        <source>Add condition</source>
+        <target state="translated">Añade una condición</target>
+      </trans-unit>
+      <trans-unit id="8" resname="r888997785" restype="string" datatype="ruby">
+        <source>Add medication</source>
+        <target state="new">Añade un medicamento</target>
+      </trans-unit>
+      <trans-unit id="9" resname="r319575533" restype="string" datatype="ruby">
+        <source>Add an allergy</source>
+        <target state="new">Añade una alergia</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/utility.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="14" resname="Are you sure you&apos;d like to close this form without submitting?" restype="string" datatype="javascript">
+        <source>Are you sure you'd like to close this form without submitting?</source>
+        <target state="new">¿Estás seguro/a que quiere cerrar este formulario sin enviarlo?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="login.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="209" resname="r35583273" restype="string" datatype="x-haml">
+        <source>Invalid email and password</source>
+        <target>Correo electrónico y contraseña invalidos</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
