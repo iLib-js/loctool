@@ -2252,19 +2252,19 @@
       </trans-unit>
       <trans-unit id="322" resname="person" restype="string" datatype="x-yaml" x-context="dob@minimum_value">
         <source>130 years ago</source>
-        <target>130年前</target>
+        <target state="accepted">130 years ago</target>
       </trans-unit>
       <trans-unit id="323" resname="subaccount" restype="string" datatype="x-yaml" x-context="dob@minimum_value">
         <source>130 years ago</source>
-        <target>130年前</target>
+        <target state="accepted">130 years ago</target>
       </trans-unit>
       <trans-unit id="324" resname="person" restype="string" datatype="x-yaml" x-context="dob@maximum_value">
         <source>18 years ago</source>
-        <target>18年前</target>
+        <target state="accepted">18 years ago</target>
       </trans-unit>
       <trans-unit id="325" resname="subaccount" restype="string" datatype="x-yaml" x-context="dob@maximum_value">
         <source>today</source>
-        <target>今天</target>
+        <target state="accepted">today</target>
       </trans-unit>
       <trans-unit id="326" resname="person" restype="string" datatype="x-yaml" x-context="first_of_any_type@header">
         <source>Help us understand your %TOPIC_NAME%</source>
