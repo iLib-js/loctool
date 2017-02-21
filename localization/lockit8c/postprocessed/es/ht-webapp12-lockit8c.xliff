@@ -41202,7 +41202,7 @@
       </trans-unit>
       <trans-unit id="9576" resname="When was the last time? (year)" restype="string" datatype="javascript">
         <source>When was the last time? (year)</source>
-        <target state="translated">¿Cuándo fue la última vez? (Año)</target>
+        <target state="accepted">¿Última vez recibida? (Año)</target>
       </trans-unit>
       <trans-unit id="9577" resname="Which vaccinations have you had?" restype="string" datatype="javascript">
         <source>Which vaccinations have you had?</source>
