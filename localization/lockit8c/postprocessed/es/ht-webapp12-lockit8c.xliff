@@ -11104,7 +11104,7 @@
       </trans-unit>
       <trans-unit id="2157" resname="r1050466975" restype="string" datatype="ruby">
         <source>Doctor insights</source>
-        <target state="translated">Conocimientos médicos de doctores</target>
+        <target state="translated">Conocimientos médicos</target>
       </trans-unit>
     </body>
   </file>

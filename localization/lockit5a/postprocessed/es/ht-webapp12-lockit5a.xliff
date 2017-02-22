@@ -8652,7 +8652,7 @@
       </trans-unit>
       <trans-unit id="2983" resname="r1050466975" restype="string" datatype="ruby">
         <source>Doctor insights</source>
-        <target>Conocimientos médicos de doctores</target>
+        <target>Conocimientos médicos</target>
       </trans-unit>
       <trans-unit id="2984" resname="r418831845" restype="string" datatype="ruby">
         <source>Take action</source>
