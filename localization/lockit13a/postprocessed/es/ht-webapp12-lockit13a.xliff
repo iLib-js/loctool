@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/people/feelGood/doctorFeedbackView.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="r419637818" restype="string" datatype="ruby">
+        <source>%{doctor_name} appreciates your response and is committed to improving your care.</source>
+        <target state="new">%{doctor_name} agradece su respuesta y se compromete a mejorar su atención.</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r545952306" restype="string" datatype="ruby">
+        <source>Have a question for %{doctor_name}?</source>
+        <target state="new">¿Tienes una pregunta para %{doctor_name}? </target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/notify_user_support_for_missing_email.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="3" resname="r213752724" restype="string" datatype="ruby">
+        <source>Member ID = %{person_id}</source>
+        <target state="new">ID de miembro = %{person_id}</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r120036777" restype="string" datatype="ruby">
+        <source>Phone = %{phone_number}</source>
+        <target state="new">Teléfono = %{phone_number}</target>
+      </trans-unit>
+      <trans-unit id="5" resname="r888995837" restype="string" datatype="ruby">
+        <source>Consult = %{doctor_name} %{doctor_id} in %{state}</source>
+        <target state="new">Consulta = %{doctor_name} %{doctor_id} en %{state}</target>
+      </trans-unit>
+      <trans-unit id="6" resname="r498215184" restype="string" datatype="ruby">
+        <source>Time %{date_time}</source>
+        <target state="new">Hora %{date_time}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/symptom_checker_session.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="7" resname="r300936911" restype="string" datatype="ruby">
+        <source>Does %{subaccount_name} have any current conditions, medications, and allergies that our doctors should know about?</source>
+        <target state="new">¿Tiene %{subaccount_name} alguna condición actual, medicamentos y alergias que nuestros médicos deben saber? </target>
+      </trans-unit>¿
+      <trans-unit id="8" resname="r420770535" restype="string" datatype="ruby">
+        <source>Is this an up-to-date list of current conditions, medications, and allergies that our doctors should know about for %{subaccount_name}?</source>
+        <target state="new"> ¿Es esta una lista actualizada de las condiciones actuales, medicamentos y alergias que nuestros médicos deben saber sobre %{subaccount_name}?</target>
+      </trans-unit>
+      <trans-unit id="9" resname="r565119556" restype="string" datatype="ruby">
+        <source>Do you have any current conditions, medications, and allergies that our doctors should know about?</source>
+        <target state="new">¿Tienes alguna condición actual, medicamentos y alergias que nuestros médicos deben conocer?</target>
+      </trans-unit>
+      <trans-unit id="10" resname="r176358279" restype="string" datatype="ruby">
+        <source>Is this an up-to-date list of current conditions, medications, and allergies that our doctors should know about for you?</source>
+        <target state="new"> ¿Es esta una lista actualizada de las condiciones actuales, medicamentos y alergias que nuestros médicos deben saber sobre usted?</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/user_questions_controller.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="11" resname="r218086073" restype="string" datatype="ruby">
+        <source>- Answered by top doctors on HealthTap</source>
+        <target state="new">- Respondidas por los mejores doctores de HealthTap</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/static_pages_controller.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="12" resname="r211195506" restype="string" datatype="ruby">
+        <source>TED 2016 Special: HealthTap Prime for peace of mind</source>
+        <target state="new">TED 2016 Especial: HealthTap Prime para la tranquilidad</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/install_extension.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="13" resname="Add to Chrome" restype="string" datatype="html">
+        <source>Add to Chrome</source>
+        <target state="new">Agregar a Chrome</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/search_first_load.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="14" resname="Please enter a search term, or..." restype="string" datatype="html">
+        <source>Please enter a search term, or...</source>
+        <target state="new">Por favor introduzca un término de búsqueda, o ..</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/training_room.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="15" resname="In the unlikely event that the consult cannot be completed successfully or the patient behaves inappropriately, please &lt;b&gt;flag the consult&lt;/b&gt;. This notifies us and ends the consult. Always inform your patient before you press the &lt;b&gt;flag&lt;/b&gt;, as it will end the consult." restype="string" datatype="javascript">
+        <source>In the unlikely event that the consult cannot be completed successfully or the patient behaves inappropriately, please &lt;b&gt;flag the consult&lt;/b&gt;. This notifies us and ends the consult. Always inform your patient before you press the &lt;b&gt;flag&lt;/b&gt;, as it will end the consult.</source>
+        <target state="new">En el caso improbable de que la consulta no se pueda completar con éxito o el paciente se comporte de manera inapropiada, por favo &lt;b&gt;señale la consulta&lt;/b&gt;. Esto nos notifica y termina la consulta. Siempre informe a su paciente antes de presionar &lt;b&gt;flag&lt;/b&gt;,  ya que finalizará la consulta.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/simplified_payment.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="16" resname="Your phone number {phone_number} and payment method is now linked to a HealthTap account" restype="string" datatype="javascript">
+        <source>Your phone number {phone_number} and payment method is now linked to a HealthTap account</source>
+        <target state="new">Su número de teléfono {phone_number} y el método de pago ahora están vinculados a una cuenta de HealthTap</target>
+      </trans-unit>
+      <trans-unit id="17" resname="Start a doctor consult" restype="string" datatype="javascript">
+        <source>Start a doctor consult</source>
+        <target state="new">Iniciar una consulta con el médico</target>
+      </trans-unit>
+      <trans-unit id="18" resname="Call us at the following number" restype="string" datatype="javascript">
+        <source>Call us at the following number</source>
+        <target state="new">Llámanos al siguiente número </target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/concierge_utils.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="19" resname="1# You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to this location.|# You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to one of these locations." restype="string" datatype="javascript">
+        <source>1# You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to this location.|# You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to one of these locations.</source>
+        <target state="new">1  Todavía puede solicitar conectarse, sin embargo, solo podrá consultar {doctor_prefix}{last_name} cuando viaje a esta ubicación. Sólo podrá consultar {doctor_prefix}{last_name} cuando viaje a una de estas ubicaciones. </target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/triage_source_of_truth.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="20" resname="0" restype="string" datatype="x-yaml" x-context="triage_options@3@care_options">
+        <source>:emergency</source>
+        <target state="new">:la emergencia</target>
+      </trans-unit>
+      <trans-unit id="21" resname=":name" restype="string" datatype="x-yaml" x-context="care_options@5">
+        <source>:emergency</source>
+        <target state="new">:la emergencia</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="index.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="206" resname="r3013966" restype="string" datatype="x-haml">
+        <source>.</source>
+        <target>.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="207" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target>No</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="search_results.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="208" resname="r864785970" restype="string" datatype="x-haml">
+        <source>no</source>
+        <target>no</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="doctorFeedbackView.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="209" resname="r746565366" restype="string" datatype="x-haml">
+        <source>Please schedule a video chat or send a secure message:</source>
+        <target>Por favor, reserva un video chat o envíe un mensaje seguro:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="login.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="210" resname="r518643225" restype="string" datatype="x-haml">
+        <source>By logging in you agree to HealthTap's</source>
+        <target>Cuando incies la sesión, estás de acuerdo con los siguientes de HealthTap: </target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="send_chat_session_daily_report.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="211" resname="r343852585" restype="string" datatype="x-haml">
+        <source>Experts</source>
+        <target>Los Expertos</target>
+      </trans-unit>
+      <trans-unit id="212" resname="r213766323" restype="string" datatype="x-haml">
+        <source>Tyler (&amp; Arthur)</source>
+        <target>Tyler (&amp; Arthur)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_prime_settings.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="213" resname="r156018669" restype="string" datatype="x-haml">
+        <source>Medical licenses</source>
+        <target>Las licencias médicas</target>
+      </trans-unit>
+      <trans-unit id="214" resname="r697003901" restype="string" datatype="x-haml">
+        <source>See more patients and add additional medical licenses.</source>
+        <target>See more patients and add additional medical licenses.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

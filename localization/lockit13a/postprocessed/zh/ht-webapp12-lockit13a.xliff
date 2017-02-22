@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/people/feelGood/doctorFeedbackView.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="r419637818" restype="string" datatype="ruby">
+        <source>%{doctor_name} appreciates your response and is committed to improving your care.</source>
+        <target state="translated">%{doctor_name} 感谢您的回复并关心您的健康。</target>
+      </trans-unit>
+      <trans-unit id="2" resname="r545952306" restype="string" datatype="ruby">
+        <source>Have a question for %{doctor_name}?</source>
+        <target state="translated">需要向 %{doctor_name}提问？</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/notify_user_support_for_missing_email.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="3" resname="r213752724" restype="string" datatype="ruby">
+        <source>Member ID = %{person_id}</source>
+        <target state="translated">会员号ID = %{person_id}</target>
+      </trans-unit>
+      <trans-unit id="4" resname="r120036777" restype="string" datatype="ruby">
+        <source>Phone = %{phone_number}</source>
+        <target state="translated">电话号码 = %{phone_number}</target>
+      </trans-unit>
+      <trans-unit id="5" resname="r888995837" restype="string" datatype="ruby">
+        <source>Consult = %{doctor_name} %{doctor_id} in %{state}</source>
+        <target state="translated">咨询 = %{doctor_name} %{doctor_id} 在 %{state}</target>
+      </trans-unit>
+      <trans-unit id="6" resname="r498215184" restype="string" datatype="ruby">
+        <source>Time %{date_time}</source>
+        <target state="translated">时间 %{date_time}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/symptom_checker_session.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="7" resname="r300936911" restype="string" datatype="ruby">
+        <source>Does %{subaccount_name} have any current conditions, medications, and allergies that our doctors should know about?</source>
+        <target state="translated"> %{subaccount_name} 现在有哪些症状，过敏或在服药物，需要告知医生吗？</target>
+      </trans-unit>
+      <trans-unit id="8" resname="r420770535" restype="string" datatype="ruby">
+        <source>Is this an up-to-date list of current conditions, medications, and allergies that our doctors should know about for %{subaccount_name}?</source>
+        <target state="translated">这是最近更新过的给医生看的清单吗，包括 %{subaccount_name}的症状，在服药物和过敏？</target>
+      </trans-unit>
+      <trans-unit id="9" resname="r565119556" restype="string" datatype="ruby">
+        <source>Do you have any current conditions, medications, and allergies that our doctors should know about?</source>
+        <target state="translated">您现在有哪些症状，过敏或在服药物，需要告知医生吗？</target>
+      </trans-unit>
+      <trans-unit id="10" resname="r176358279" restype="string" datatype="ruby">
+        <source>Is this an up-to-date list of current conditions, medications, and allergies that our doctors should know about for you?</source>
+        <target state="translated">这是最近更新过的给医生看的清单吗，包括您的症状，在服药物和过敏？</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/user_questions_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="11" resname="r218086073" restype="string" datatype="ruby">
+        <source>- Answered by top doctors on HealthTap</source>
+        <target state="translated">- 由HealthTap平台的顶级医生回答</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/controllers/static_pages_controller.rb" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="12" resname="r211195506" restype="string" datatype="ruby">
+        <source>TED 2016 Special: HealthTap Prime for peace of mind</source>
+        <target state="translated">TED 2016 特辑: HealthTap Prime 让您放心和舒心</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/search_first_load.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="13" resname="Please enter a search term, or..." restype="string" datatype="html">
+        <source>Please enter a search term, or...</source>
+        <target state="translated">请输入关键字，或...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/training_room.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="14" resname="In the unlikely event that the consult cannot be completed successfully or the patient behaves inappropriately, please &lt;b&gt;flag the consult&lt;/b&gt;. This notifies us and ends the consult. Always inform your patient before you press the &lt;b&gt;flag&lt;/b&gt;, as it will end the consult." restype="string" datatype="javascript">
+        <source>In the unlikely event that the consult cannot be completed successfully or the patient behaves inappropriately, please &lt;b&gt;flag the consult&lt;/b&gt;. This notifies us and ends the consult. Always inform your patient before you press the &lt;b&gt;flag&lt;/b&gt;, as it will end the consult.</source>
+        <target state="translated">虽然概率较小，但如果咨询不能顺利进行或病人行为有异常，请 &lt;b&gt;举报这个咨询&lt;/b&gt;. 这将通知我们并结束这次咨询。记住请通知病人在您点击 &lt;b&gt;举报&lt;/b&gt;前，因为这将结束咨询。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/simplified_payment.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="15" resname="Your phone number {phone_number} and payment method is now linked to a HealthTap account" restype="string" datatype="javascript">
+        <source>Your phone number {phone_number} and payment method is now linked to a HealthTap account</source>
+        <target state="translated">您的电话号码 {phone_number} 和支付方式现在都已更新并链接到了HealthTap账户</target>
+      </trans-unit>
+      <trans-unit id="16" resname="Start a doctor consult" restype="string" datatype="javascript">
+        <source>Start a doctor consult</source>
+        <target state="translated">开始医生咨询</target>
+      </trans-unit>
+      <trans-unit id="17" resname="Call us at the following number" restype="string" datatype="javascript">
+        <source>Call us at the following number</source>
+        <target state="translated">致电以下号码以联系我们</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/concierge_utils.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="18" resname="1# You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to this location.|# You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to one of these locations." restype="string" datatype="javascript">
+        <source>1# You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to this location.|# You may still request to connect, however you will only be able to consult {doctor_prefix}{last_name} when you are traveling to one of these locations.</source>
+        <target state="translated">1# 您仍然可以发送请求给医生，但同 {doctor_prefix}{last_name} 的咨询只能发生在您身在此地址时。|# 您仍然可以发送请求给医生，但同 {doctor_prefix}{last_name} 的咨询只能发生在您身在以下地址时。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="index.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="203" resname="r3013966" restype="string" datatype="x-haml">
+        <source>.</source>
+        <target>.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="204" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target>不</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="search_results.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="205" resname="r864785970" restype="string" datatype="x-haml">
+        <source>no</source>
+        <target>不</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="doctorFeedbackView.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="206" resname="r746565366" restype="string" datatype="x-haml">
+        <source>Please schedule a video chat or send a secure message:</source>
+        <target>请预约一个视频咨询或发送安全消息:</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="login.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="207" resname="r518643225" restype="string" datatype="x-haml">
+        <source>By logging in you agree to HealthTap's</source>
+        <target>登录将默认您同意HealthTap的</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="send_chat_session_daily_report.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="208" resname="r343852585" restype="string" datatype="x-haml">
+        <source>Experts</source>
+        <target>医护专家</target>
+      </trans-unit>
+      <trans-unit id="209" resname="r213766323" restype="string" datatype="x-haml">
+        <source>Tyler (&amp; Arthur)</source>
+        <target>Tyler (&amp; Arthur)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_prime_settings.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="210" resname="r156018669" restype="string" datatype="x-haml">
+        <source>Medical licenses</source>
+        <target>医学证书</target>
+      </trans-unit>
+      <trans-unit id="211" resname="r697003901" restype="string" datatype="x-haml">
+        <source>See more patients and add additional medical licenses.</source>
+        <target>添加其他医学证书，看更多的病人。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
