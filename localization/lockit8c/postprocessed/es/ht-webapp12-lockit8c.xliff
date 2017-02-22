@@ -23818,7 +23818,7 @@
       </trans-unit>
       <trans-unit id="4659" resname="r238259539" restype="string" datatype="ruby">
         <source>Doctor Insights For You</source>
-        <target state="translated">Conocimientos médicos de Doctores para ti</target>
+        <target state="accepted">Conocimientos médicos para ti</target>
       </trans-unit>
       <trans-unit id="4660" resname="r884061707" restype="string" datatype="ruby">
         <source>FeelGood Moments</source>
