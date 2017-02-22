@@ -44,7 +44,7 @@
       </trans-unit>
       <trans-unit id="9" resname="r565119556" restype="string" datatype="ruby">
         <source>Do you have any current conditions, medications, and allergies that our doctors should know about?</source>
-        <target state="new">¿Tienes alguna condición actual, medicamentos y alergias que nuestros médicos deben conocer?/target>
+        <target state="new">¿Tienes alguna condición actual, medicamentos y alergias que nuestros médicos deben conocer?</target>
       </trans-unit>
       <trans-unit id="10" resname="r176358279" restype="string" datatype="ruby">
         <source>Is this an up-to-date list of current conditions, medications, and allergies that our doctors should know about for you?</source>
