@@ -108,6 +108,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="public/feelGood/js/searchPages/init_symptom_search.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="19" resname="Name of condition" restype="string" datatype="javascript">
+        <source>Name of condition</source>
+        <target state="accepted">症状名称</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="index.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="203" resname="r3013966" restype="string" datatype="x-haml">
