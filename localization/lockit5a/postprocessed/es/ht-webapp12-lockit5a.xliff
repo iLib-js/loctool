@@ -19649,7 +19649,7 @@
       </trans-unit>
       <trans-unit id="9172" resname="r946959817" restype="string" datatype="x-haml">
         <source>Insights</source>
-        <target>Conocimientos médicos</target>
+        <target state="accepted">Conocimientos</target>
       </trans-unit>
       <trans-unit id="9173" resname="r396672595" restype="string" datatype="x-haml">
         <source>Recommend me</source>
