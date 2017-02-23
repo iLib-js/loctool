@@ -13641,19 +13641,19 @@
       </trans-unit>
       <trans-unit id="7225" resname="r479404643" restype="string" datatype="x-haml">
         <source>Having a good, hard laugh.</source>
-        <target>Reír intensamente.</target>
+        <target state="accepted">Reirse con ganas.</target>
       </trans-unit>
       <trans-unit id="7226" resname="r297407413" restype="string" datatype="x-haml">
         <source>Paying someone a compliment.</source>
-        <target>Hacerle un cumplido a alguien.</target>
+        <target state="accepted">Halagar a alguien.</target>
       </trans-unit>
       <trans-unit id="7227" resname="r728720522" restype="string" datatype="x-haml">
         <source>Sharing a delicious meal with people we care about.</source>
-        <target>Compartir una deliciosa comida con la gente que nos importa.</target>
+        <target state="accepted">Compartir una comida deliciosa con quienes nos importan.</target>
       </trans-unit>
       <trans-unit id="7228" resname="r791261932" restype="string" datatype="x-haml">
         <source>Looking up and noticing the beauty of our surroundings.</source>
-        <target>Observando y notando la belleza de nuestro alrededor.</target>
+        <target state="accepted">Observar y reconocer la belleza a nuestro alrededor.</target>
       </trans-unit>
       <trans-unit id="7229" resname="r255728008" restype="string" datatype="x-haml">
         <source>Gratitude.</source>
