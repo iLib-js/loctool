@@ -5065,7 +5065,7 @@
     <body>
       <trans-unit id="1181" resname="r233380280" restype="string" datatype="ruby">
         <source>START FREE</source>
-        <target>INICIA GRATIS</target>
+        <target>COMIENZA GRATIS</target>
       </trans-unit>
       <trans-unit id="1182" resname="r819443111" restype="string" datatype="ruby">
         <source>Claim free gift</source>
@@ -5193,15 +5193,15 @@
       </trans-unit>
       <trans-unit id="1210" resname="r848869956" restype="string" datatype="ruby">
         <source>Get beautiful, bite-sized tips of health information created by doctors, personalized for you.</source>
-        <target>Obtén, hermosos tips de información de salud tamaño mordida creados por doctores y personalizados para ti.</target>
+        <target>Obtén geniales tips informativos formulados por médicos y personalizados para ti.</target>
       </trans-unit>
       <trans-unit id="1211" resname="r273624032" restype="string" datatype="ruby">
         <source>Take action to achieve your health goals with our proprietary, customizable doctor-created checklists!</source>
-        <target>¡Toma acción para alcanzar tus metas de salud con nuestros propios y personalizables listados creados por doctores!</target>
+        <target>¡Ponte en acción para alcanzar tus metas de salud con nuestros propios listados, creados por médicos y personalizables!</target>
       </trans-unit>
       <trans-unit id="1212" resname="r11511262" restype="string" datatype="ruby">
         <source>Keep your health records accessible, private, and secure so that you can easily share them with doctors to get better care whenever necessary.</source>
-        <target>Mantén tu expediente clínico accesible, privado y seguro para que puedas fácilmente compartirlo con doctores para obtener mejor atención cuando sea necesario.</target>
+        <target>Mantén tu historia clínica accesible, privado y seguro para que puedas fácilmente compartirlo con doctores para obtener mejor atención cuando sea necesario.</target>
       </trans-unit>
     </body>
   </file>

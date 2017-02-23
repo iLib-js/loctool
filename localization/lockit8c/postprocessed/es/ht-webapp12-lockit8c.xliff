@@ -12046,7 +12046,7 @@
     <body>
       <trans-unit id="2332" resname="r233380280" restype="string" datatype="ruby">
         <source>START FREE</source>
-        <target state="translated">INICIA GRATIS</target>
+        <target state="translated">COMIENZA GRATIS</target>
       </trans-unit>
       <trans-unit id="2333" resname="r974887686" restype="string" datatype="ruby">
         <source>Start Exploring</source>
@@ -12342,15 +12342,15 @@
       </trans-unit>
       <trans-unit id="2384" resname="r848869956" restype="string" datatype="ruby">
         <source>Get beautiful, bite-sized tips of health information created by doctors, personalized for you.</source>
-        <target state="translated">Obtén, hermosos tips de información de salud tamaño mordida creados por doctores y personalizados para ti.</target>
+        <target state="translated">Obtén geniales tips informativos formulados por médicos y personalizados para ti.</target>
       </trans-unit>
       <trans-unit id="2385" resname="r273624032" restype="string" datatype="ruby">
         <source>Take action to achieve your health goals with our proprietary, customizable doctor-created checklists!</source>
-        <target state="translated">¡Toma acción para alcanzar tus metas de salud con nuestros propios y personalizables listados creados por doctores!</target>
+        <target state="translated">¡Ponte en acción para alcanzar tus metas de salud con nuestros propios listados, creados por médicos y personalizables!</target>
       </trans-unit>
       <trans-unit id="2386" resname="r11511262" restype="string" datatype="ruby">
         <source>Keep your health records accessible, private, and secure so that you can easily share them with doctors to get better care whenever necessary.</source>
-        <target state="translated">Mantén tu expediente clínico accesible, privado y seguro para que puedas fácilmente compartirlo con doctores para obtener mejor atención cuando sea necesario.</target>
+        <target state="translated">Mantén tu historia clínica accesible, privado y seguro para que puedas fácilmente compartirlo con doctores para obtener mejor atención cuando sea necesario.</target>
       </trans-unit>
       <trans-unit id="2387" resname="r246313789" restype="string" datatype="ruby">
         <source>Feel free to start exploring HealthTap now!</source>
