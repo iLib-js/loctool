@@ -41110,11 +41110,11 @@
       </trans-unit>
       <trans-unit id="9553" resname="Take this" restype="string" datatype="javascript">
         <source>Take this</source>
-        <target state="translated">Toma esto</target>
+        <target state="accepted">Tomo esto</target>
       </trans-unit>
       <trans-unit id="9554" resname="No longer take this" restype="string" datatype="javascript">
         <source>No longer take this</source>
-        <target state="translated">Ya no toma esto</target>
+        <target state="accepted">Ya no tomo esto</target>
       </trans-unit>
       <trans-unit id="9555" resname="Does this person have any allergies?" restype="string" datatype="javascript">
         <source>Does this person have any allergies?</source>
