@@ -116,6 +116,22 @@
       </trans-unit>
     </body>
   </file>
+  <file original="app/views/user_questions/feelGood/_answers.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="20" resname="r472251286" restype="string" datatype="ruby">
+        <source>%{doctor_link}%{doctor_name}%{link_end} weighed in</source>
+        <target state="accepted">%{doctor_link}%{doctor_name}%{link_end} 给予了建议回答</target>
+      </trans-unit>
+      <trans-unit id="21" resname="r300979937" restype="string" datatype="ruby">
+        <source>Asked for %{name} on %{month} %{day}, %{year}</source>
+        <target state="accepted">为 %{name} 询问，在 %{month} %{day}, %{year}</target>
+      </trans-unit>
+      <trans-unit id="22" resname="r106853148" restype="string" datatype="ruby">
+        <source>Asked on %{month} %{day}, %{year}</source>
+        <target state="new">询问时间 %{month} %{day}, %{year}</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="index.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
     <body>
       <trans-unit id="203" resname="r3013966" restype="string" datatype="x-haml">
