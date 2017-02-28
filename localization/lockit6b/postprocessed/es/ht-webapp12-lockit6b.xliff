@@ -2803,10 +2803,6 @@
         <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to</source>
         <target>Puede sonar altanero, pero creemos que se trata de algo muy básico. Todos simplemente queremos</target>
       </trans-unit>
-      <trans-unit id="2479" resname="r429307520" restype="string" datatype="x-haml">
-        <source>All these things make us</source>
-        <target>Todas estas cosas nos hacen</target>
-      </trans-unit>
       <trans-unit id="2480" resname="r54568686" restype="string" datatype="x-haml">
         <source>by taking care of us and giving us comfort when we need it most. We can take care of each other, too. By bringing the fun back into taking care of each other, we work with doctors to make the world a better place.</source>
         <target>al cuidarnos y proporcionarnos comodidad cuando más lo necesitamos. También nos podemos cuidar los unos a los otros. Trayendo de regreso la diversión al cuidado del uno al otro, trabajamos con doctores para hacer del mundo un lugar mejor.</target>
