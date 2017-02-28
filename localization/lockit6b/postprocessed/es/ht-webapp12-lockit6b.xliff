@@ -2809,11 +2809,11 @@
       </trans-unit>
       <trans-unit id="2480" resname="r54568686" restype="string" datatype="x-haml">
         <source>by taking care of us and giving us comfort when we need it most. We can take care of each other, too. By bringing the fun back into taking care of each other, we work with doctors to make the world a better place.</source>
-        <target>al cuidarnos y proporcionarnos comodidad cuando más lo necesitamos. También nos podemos cuidar los unos a los otros. Trayendo de regreso la diversión al cuidado del uno al otro, trabajamos con doctores para hacer del mundo un lugar mejor.</target>
+        <target state="accepted">al cuidarnos y al consolarnos cuando más lo necesitamos. También nos podemos cuidar los unos a los otros. Para entregar una manera entretenida de cuidarnos entre si, trabajamos con doctores que hacen del mundo un mejor lugar.</target>
       </trans-unit>
       <trans-unit id="2481" resname="r52930992" restype="string" datatype="x-haml">
         <source>Doctors help us</source>
-        <target>¡Doctores nos ayudan</target>
+        <target state="accepted">¡Los doctores nos ayudan a</target>
       </trans-unit>
       <trans-unit id="2482" resname="r628043353" restype="string" datatype="x-haml">
         <source>every day, please join us!</source>
@@ -2893,7 +2893,7 @@
     <body>
       <trans-unit id="2499" resname="r325356960" restype="string" datatype="x-haml">
         <source>is supported by world-class investors, advisors, and experienced company builders who have helped create,</source>
-        <target state="translated">es apoyada por inversionistas, asesores y constructores de compañías mundiales quienes han ayudado a crear,</target>
+        <target state="accepted">es apoyada por inversionistas, asesores y empresarios de clase mundial quienes han ayudado a crear,</target>
       </trans-unit>
     </body>
   </file>

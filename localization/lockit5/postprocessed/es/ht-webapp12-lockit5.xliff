@@ -23130,7 +23130,7 @@
     <body>
       <trans-unit id="5367" resname="r700847358" restype="string" datatype="x-haml">
         <source>These values reflect who we are, both as individuals and as a company. We discuss these values at every team meeting and measure ourselves against them at every opportunity to do so. They guide who we hire and how we work together. They shape the decisions we make and how we grow.</source>
-        <target>Estos valores reflejan quienes somos, tanto como individuos como compañía. Discutimos estos valores en cada reunión de equipo y nos medimos contra ellos a cada oportunidad. Ellos guían a quien contratamos y como trabajamos juntos. Ellos forman las decisiones que hacemos y como trabajamos.</target>
+        <target state="accepted">Estos valores reflejan quienes somos, tanto como individuos como compañía. Discutimos estos valores en cada reunión de equipo y nos medimos contra ellos a cada oportunidad. Ellos guían a quien contratamos y cómo trabajamos juntos. Ellos forman las decisiones que tomamos y cómo trabajamos.</target>
       </trans-unit>
       <trans-unit id="5368" resname="r680464649" restype="string" datatype="x-haml">
         <source>We're committed to creating a healthier, happier world — one person at a time. To accomplish this, we provide people with reliable, personal health information and trusted answers to real health questions. Our goal is to support doctors and other health experts in helping people make the best possible health decisions.</source>
