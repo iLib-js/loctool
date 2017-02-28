@@ -115,7 +115,7 @@
       </trans-unit>
       <trans-unit id="217" resname="r567271824" restype="string" datatype="ruby">
         <source>My answers and insights have</source>
-        <target state="translated">Mis respuestas y perspicacias tienen</target>
+        <target state="translated">Mis respuestas y perspicacias han</target>
         <note annotates="source">this is a section title. Ie. Specialty: Internal Medicine</note>
       </trans-unit>
       <trans-unit id="218" resname="r212262046" restype="string" datatype="ruby">

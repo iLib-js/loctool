@@ -1560,7 +1560,7 @@
       </trans-unit>
       <trans-unit id="5282" resname="body" restype="string" datatype="x-yaml" x-context="doctor_network_app_approved">
         <source>You’ve been admitted to HealthTap’s Medical Expert Network! Log out and log back in to your account to unlock the full suite of functionality now available to you!</source>
-        <target>¡Has sido admitido a la Red de Experto Médicos de HealthTap! ¡Cierra sesión y vuelve a ingresar a tu cuenta para desbloquear todo el paquete de funcionalidad que ya está disponible para ti!</target>
+        <target>¡Has sido admitido a la Red de Experto Médicos de HealthTap! ¡Cierra sesión y vuelve a iniciar sesión a tu cuenta para desbloquear todo el paquete de funcionalidad que ya está disponible para ti!</target>
       </trans-unit>
       <trans-unit id="5283" resname="ctoa" restype="string" datatype="x-yaml" x-context="doctor_network_app_approved">
         <source>Log back in</source>

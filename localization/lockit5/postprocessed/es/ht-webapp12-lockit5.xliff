@@ -976,7 +976,7 @@
       </trans-unit>
       <trans-unit id="244" resname="r336979988" restype="string" datatype="ruby">
         <source>In May 2013, HealthTap launched ‘AppRX’ so our users can get app recommendations from real doctors. With AppRX, we make it fast and easy to find health and wellness apps by creating intuitive, user-friendly categories, and adding doctor recommendations and written reviews to apps.</source>
-        <target>En mayo del 2013, HealthTap lanzó ‘AppRx’ para que nuestros usuarios pudieran recibir recomendaciones de aplicaciones de doctores de verdad. Con AppRx, hacemos fácil y sencillo encontrar aplicaciones de salud y bienestar al crear categorías intuitivas y amigables con el usuario, y añadiendo recomendaciones y valoraciones escritas por doctores para aplicaciones.</target>
+        <target>En mayo del 2013, HealthTap lanzó ‘AppRx’ para que nuestros usuarios pudieran recibir recomendaciones de aplicaciones de doctores de verdad. Con AppRx, hacemos fácil y sencillo encontrar aplicaciones de salud y bienestar al crear categorías intuitivas y amigables con el usuario, y añadiendo recomendaciones y críticas escritas por doctores para aplicaciones.</target>
       </trans-unit>
       <trans-unit id="245" resname="r382982541" restype="string" datatype="ruby">
         <source>July 13</source>
@@ -1230,7 +1230,7 @@
       </trans-unit>
       <trans-unit id="306" resname="r454993673" restype="string" datatype="ruby">
         <source>HealthTap is helping define the new field of "Interactive Health"- the sector that is moving consumer health information to new platforms, like smartphones and tablets, to provide portability and immediate access to actionable information. Consumers and physicians are increasingly joining the online conversation, and interactive health deserves the close attention of the investment community. HealthTap demonstrates the potential of this emerging space.</source>
-        <target>HealthTap está ayudando a definir el nuevo campo de "Salud Interactiva" - el sector que está moviendo información de salud para el consumidor a nuevas plataformas, como teléfonos inteligentes y tabletas, para brindar versatilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. HealthTap demuestra el potencial de este espacio emergente.</target>
+        <target>HealthTap está ayudando a definir el nuevo campo de "Salud Interactiva" - el sector que está moviendo información de salud para el consumidor a nuevas plataformas, como teléfonos inteligentes y tabletas, para brindar portabilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. HealthTap demuestra el potencial de este espacio emergente.</target>
       </trans-unit>
       <trans-unit id="307" resname="r848654511" restype="string" datatype="ruby">
         <source>Bill Ericson, General Partner at Mohr Davidow Ventures</source>
@@ -1694,7 +1694,7 @@
       </trans-unit>
       <trans-unit id="431" resname="r589947305" restype="string" datatype="ruby">
         <source>&lt;a href="/how_it_works/club_md"&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
-        <target>&lt;a href="/how_it_works/club_md"&gt;Aprende más &amp;raquo;&lt;/a&gt;</target>
+        <target>&lt;a href="/how_it_works/club_md"&gt;Aprender más &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="432" resname="r82074674" restype="string" datatype="ruby">
         <source>What is a Founding Expert?</source>
@@ -1702,7 +1702,7 @@
       </trans-unit>
       <trans-unit id="433" resname="r893956031" restype="string" datatype="ruby">
         <source>&lt;a class="relocate" href="/how_it_works/club_md"&gt;Learn more &amp;raquo;&lt;/a&gt;</source>
-        <target>&lt;a class="relocate" href="/how_it_works/club_md"&gt;Aprende más &amp;raquo;&lt;/a&gt;</target>
+        <target>&lt;a class="relocate" href="/how_it_works/club_md"&gt;Aprender más &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="434" resname="r206737874" restype="string" datatype="ruby">
         <source>New Patients</source>
@@ -1838,7 +1838,7 @@
       </trans-unit>
       <trans-unit id="460" resname="r1000495085" restype="string" datatype="ruby">
         <source>HealthTap allows patients to cut through the clutter of Internet health information. HealthTap fills a much needed vacuum in the way health information is delivered through the Internet.</source>
-        <target>HealthTap les permite a pacientes tomar un atajo a través del desorden que es la información de salud en Internet. HealthTap llena un vació en la forma en que la información de salud es entregada a través del Internet.</target>
+        <target>HealthTap les permite a pacientes tomar un atajo a través del desorden que es la información de salud en Internet. HealthTap llena un vacío en la forma en que la información de salud es entregada a través del Internet.</target>
       </trans-unit>
       <trans-unit id="461" resname="r83529828" restype="string" datatype="ruby">
         <source>Dr. Ruben Nazario</source>
@@ -1898,7 +1898,7 @@
     <body>
       <trans-unit id="473" resname="r370192362" restype="string" datatype="ruby">
         <source>I love that HealthTap is backed by doctors in all areas of health, so I know the information I find is validated. I,m not going online in the middle of the night and getting some crazy parent. I also love that you can connect with your doctor on HealthTap or with the other doctor,s at their practice so in-and-out of the office, I feel at ease.</source>
-        <target>Me encanta que HealthTap esté respaldada por doctores en todas las áreas de la salud, así sé que la información que encuentro es válida. No voy a estar en línea a la mitad de la noche y me va a tocar un padre loco. También amo que puedes conectarte con tu doctor en HealthTap o con los otros doctores en sus consultorios dentro y fuera de la oficina, me siento tranquilo.</target>
+        <target>Amo que HealthTap esté respaldada por doctores en todas las áreas de la salud, así sé que la información que encuentro es válida. No voy a estar en línea a la mitad de la noche y me va a tocar un padre loco. También amo que puedes conectarte con tu doctor en HealthTap o con los otros doctores en sus consultorios dentro y fuera de la oficina, me siento tranquilo.</target>
       </trans-unit>
       <trans-unit id="475" resname="r44039109" restype="string" datatype="ruby">
         <source>The absolute best feature of HealthTap is the level of involvement from experts in the Medical community. It makes me feel confident that when I search a condition or have a question, the knowledge and insights are not only helpful, but they,re accurate. It makes me feel at ease as a new mom.</source>
@@ -2127,7 +2127,7 @@
     <body>
       <trans-unit id="6933" resname="r499825980" restype="string" datatype="x-haml">
         <source>RateRx Reviews</source>
-        <target>Valoraciones RateRx</target>
+        <target>Críticas RateRx</target>
       </trans-unit>
       <trans-unit id="6934" resname="r1073708023" restype="string" datatype="x-haml">
         <source>Second Opinions</source>
@@ -2500,7 +2500,7 @@
       </trans-unit>
       <trans-unit id="6226" resname="r483485383" restype="string" datatype="x-haml">
         <source>the right care at the right time at the right price. Our mission is to help people live healthier, happier lives</source>
-        <target>la atención adecuada, en el momento adecuado y al precio adecuado. Nuestra misión es ayudar a la gente a vivir vidas más saludables y felices.</target>
+        <target>la atención adecuada en el momento adecuado al precio adecuado. Nuestra misión es ayudar a la gente a vivir vidas más saludables y felices.</target>
       </trans-unit>
     </body>
   </file>
@@ -2776,7 +2776,7 @@
       </trans-unit>
       <trans-unit id="640" resname="r372242239" restype="string" datatype="ruby">
         <source>HealthTap’s Digital Healthcare Network Reaches 100k Doctors</source>
-        <target>La Red de Atención a la Salud Digital de HealthTap Alcanza 100,000 Doctores</target>
+        <target>La Red de Atención a la Salud Digital de HealthTap Alcanza 100k Doctores</target>
       </trans-unit>
       <trans-unit id="641" resname="r948656317" restype="string" datatype="ruby">
         <source>HealthTap’s Digital Healthcare Network Now Tops %{static_doctors_count} Doctors</source>
@@ -3564,7 +3564,7 @@
       </trans-unit>
       <trans-unit id="848" resname="r492272373" restype="string" datatype="ruby">
         <source>In its current state, our healthcare system is expensive, difficult to access, and error prone. On the brink of a massive reform in healthcare, dedicated, bright entrepreneurs and technologists can bring a great deal to the table by developing creative, forward thinking solutions that leverage health care professionals. &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is at the forefront of this development, improving patient care by creating quick, easy, and affordable access to doctors everywhere. The future of healthcare is at the confluence of big data, smart algorithms, and simple-to-use interfaces that will provide amplification of our MD's resources: &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is breaking ground in all three,&lt;/em&gt; and we're excited to help them make their compelling vision a transformative reality.</source>
-        <target>En su estado actual, nuestro sistema atención a la salud es caro, difícil de acceder, y propenso a errores. Al borde una masiva reforma de la atención a la salud, emprendedores y tecnólogos brillantes y dedicados pueden contribuir bastante, al desarrollar soluciones creativas y novedosas, que saquen provecho de los profesionales de la atención de la salud. &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; está a la vanguardia de este desarrollo, mejorando la atención al paciente creando acceso accesible, fácil y rápido a doctores en todos lados. El futuro de la atención a la salud está en la convergencia de big data, algoritmos inteligentes e interfaz fáciles de usar que brindan amplificación de los recursos de nuestros MD: &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; es pionero en las tres,&lt;/em&gt; y estamos emocionados por ayudarlos a hacer su atractiva visión una realidad transformativa.</target>
+        <target>En su estado actual, nuestro sistema atención a la salud es caro, difícil de acceder, y propenso a errores. Al borde una masiva reforma a la atención a la salud, emprendedores y tecnólogos brillantes y dedicados pueden traer mucho a la mesa al desarrollar soluciones creativas y novedosas que se aprovechan de los profesionales de la atención a la salud. &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; está a la vanguardia de este desarrollo, mejorando la atención al paciente creando acceso accesible, fácil y rápido a doctores en todos lados. El futuro de la atención a la salud está en la convergencia de big data, algoritmos inteligentes e interfaz fáciles de usar que brindan amplificación de los recursos de nuestros MD: &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; es pionero en las tres,&lt;/em&gt; y estamos emocionados por ayudarlos a hacer su atractiva visión una realidad transformativa.</target>
       </trans-unit>
       <trans-unit id="849" resname="r170578528" restype="string" datatype="ruby">
         <source>Everyone will soon become the CEO of their own health. &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;, with its phenomenal growth in combination with its unique technology, has the potential to become the triaging platform for everyone's health.&lt;/em&gt; I am excited to work with the &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; team as the company scales to provide people with unparalleled immediate access to the most trusted medical knowledge, doctors, and health services.</source>
@@ -3572,7 +3572,7 @@
       </trans-unit>
       <trans-unit id="850" resname="r1005945461" restype="string" datatype="ruby">
         <source>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; has the opportunity to  touch everyone on the planet and to become a great enterprise—maximizing both social and economic value.  It delivers value for patients, who will gain unprecedented access to doctors; value for doctors, who can treat more people more easily and cost-effectively; and value for society, which has been searching for a long time for a way to solve the healthcare dilemma of rising costs and an aging population. And given its unique and imaginative business model &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is poised to become one of the most profitable businesses in the world. It’s a real game changer.&lt;/em&gt;</source>
-        <target>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; tiene la oportunidad de llegar a todo el planeta y de convertirse en una gran empresa, maximizando tanto su valor social como económico. Beneficia a los pacientes, que obtienen un acceso a los médicos sin precedentes; beneficia a los médicos, que pueden tratar a las personas de forma más sencilla y económica; y beneficia a la sociedad, que ha buscado por mucho tiempo una forma de resolver el dilema de la atención de la salud con costos crecientes y una población que envejece. Y dado su único e imaginativo modelo de negocios &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; está posicionado para convertirse en uno de los negocios más lucrativos del mundo. Realmente cambia el juego.&lt;/em&gt;</target>
+        <target>&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; tiene la oportunidad de tocar a todos en el planeta y de convertirse en una gran empresa - maximizando tanto el valor social como el económico. Entrega valor para los pacientes, quienes ganaran acceso sin precedente a doctores; valor para doctores, quienes pueden tratar personas de forma más sencilla y económica; y valor para la sociedad, la cual ha estado buscando por mucho tiempo una forma de resolver el dilema de atención a la salud con los costos crecientes y una población que está envejeciendo. Y dado su único e imaginativo modelo de negocios &lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; está posicionado para convertirse en uno de los negocios más lucrativos del mundo. Realmente cambia el juego.&lt;/em&gt;</target>
       </trans-unit>
       <trans-unit id="851" resname="r444875395" restype="string" datatype="ruby">
         <source>Mark Leslie at Leslie Ventures</source>
@@ -3580,23 +3580,23 @@
       </trans-unit>
       <trans-unit id="852" resname="r999007113" restype="string" datatype="ruby">
         <source>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; embodies the powerful consumer Internet trend of moving high-value mainstream offline experiences, such as doctor-patient interactions, to the online world.&lt;/em&gt; The company leverages the three key innovation drivers that I'm most excited about: mobile apps that enable new kinds of rich, personalized interactions via smartphone and tablet; gamification that enhances user engagement and retention; and social mechanics, such as expert-based Q&amp;A and reputation graphs, that facilitate deep interest and trust. It's this kind of fresh thinking that will accelerate the &amp;ldquo;consumerization&amp;rdquo; of healthcare, and re-invigorate an extremely important and valuable industry that has been behind the IT curve and mired in inefficiency for decades.</source>
-        <target>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; encarna la poderosa tendencia de consumidores en el Internet de llevar al mundo en línea experiencias mainstream que son valiosas offline, tales como las interacciones médico-paciente.&lt;/em&gt; Los tres motores de innovación más interesantes que esta compañía aprovecha son: aplicaciones móviles que permiten nuevas interacciones ricas y personalizadas vía teléfono inteligente y tabletas; ludificación que mejora las interacciones y retención de usuarios; y mecánicas sociales; como P&amp;R de expertos y gráficos de reputación, que facilitan profundo interés y confianza. Es este tipo de pensamiento fresco que acelerará la &amp;ldquo;consumidorización&amp;rdquo; de la atención a la salud, y volver a vigorizar una industria extremadamente importante y valiosa que ha estado detrás de la curva de IT y que ha estado inmersa en la ineficiencia por décadas.</target>
+        <target>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; encarna la poderosa tendencia de consumidores en el Internet de mover experiencias mainstream valiosas offline, como interacciones médico-paciente, al mundo en línea.&lt;/em&gt; La compañía se aprovecha de tres motores de innovación clave de los cuales estoy más emocionado: aplicaciones móviles que permiten nuevas interacciones ricas y personalizadas vía teléfono inteligente y tabletas; ludificación que mejora las interacciones y retención de usuarios; y mecánicas sociales; como P&amp;R de expertos y gráficos de reputación, que facilitan profundo interés y confianza. Es este tipo de pensamiento fresco que acelerará la &amp;ldquo;consumidorización&amp;rdquo; de la atención a la salud, y volver a vigorizar una industria extremadamente importante y valiosa que ha estado detrás de la curva de IT y que ha estado inmersa en la ineficiencia por décadas.</target>
       </trans-unit>
       <trans-unit id="853" resname="r449353917" restype="string" datatype="ruby">
         <source>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; is helping define the new field of &amp;ldquo;Interactive Health&amp;rdquo;—the sector that is moving consumer health information to new platforms&lt;/em&gt;, like smartphones and tablets, to provide portability and immediate access to actionable information. Consumers and physicians are increasingly joining the online conversation, and interactive health deserves the close attention of the investment community. &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; demonstrates the potential of this emerging space.</source>
-        <target>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;está ayudando a definir el nuevo campo de &amp;ldquo;Salud Interactiva&amp;rdquo; - el sector que está moviendo información de salud para el consumidor a nuevas plataformas&lt;/em&gt;, como teléfonos inteligentes y tabletas, para brindar versatilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; demuestra el potencial de este espacio emergente.</target>
+        <target>&lt;em&gt;&lt;span class='ht-name' &gt;HealthTap&lt;/span&gt;está ayudando a definir el nuevo campo de &amp;ldquo;Salud Interactiva&amp;rdquo; - el sector que está moviendo información de salud para el consumidor a nuevas plataformas&lt;/em&gt;, como teléfonos inteligentes y tabletas, para brindar portabilidad y acceso inmediato a información accionable. Consumidores y médicos se están uniendo cada vez más a la conversación en línea, y la salud interactiva se merece la detenida atención de la comunidad de inversionistas. &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; demuestra el potencial de este espacio emergente.</target>
       </trans-unit>
       <trans-unit id="854" resname="r855068512" restype="string" datatype="ruby">
         <source>&lt;em&gt;HealthTap's approach is brilliant.&lt;/em&gt; It delivers what people miss about medicine most: a highly engaging personalized experience, with trusted doctors sharing helpful information.</source>
         <target>&lt;em&gt;El abordaje de HealthTap es brillante.&lt;/em&gt; Entrega lo que la gente más extraña sobre la medicina: una experiencia sumamente personalizada, con doctores confiables compartiendo información útil.</target>
-      </trans-unit>k
+      </trans-unit>
       <trans-unit id="855" resname="r739109990" restype="string" datatype="ruby">
         <source>Mari Baker, Investor, Board of Trustees of Stanford University</source>
         <target>Mari Baker, Inversionista, Consejo de Fideicomisarios de Stanford University</target>
       </trans-unit>
       <trans-unit id="856" resname="r218182974" restype="string" datatype="ruby">
         <source>I tend to [invest in] things that are e-commerce, like healthcare. Things that are actually more complex to do and solving a real problem in a big market where there's nobody else doing what HealthTap is doing. &lt;em&gt;What HealthTap is doing is revolutionary.&lt;/em&gt;</source>
-        <target>Yo tiendo a [invertir en] cosas que son comercio en línea, como la atención a la salud. Las cosas que son más complejas de hacer, y resolver un problema real en un mercado grande donde nadie está haciendo lo que HealthTap está haciendo. &lt;em&gt;Lo que HealthTap está haciendo es revolucionario.&lt;/em&gt;</target>
+        <target>Yo tiendo [invertir en] cosas que son comercio en línea, como la atención a la salud. Las cosas que son más complejas de hacer, y resolver un problema real en un mercado grado donde nadie está haciendo lo que HealthTap está haciendo. &lt;em&gt;Lo que HealthTap está haciendo es revolucionario.&lt;\em&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -3628,7 +3628,7 @@
       </trans-unit>
       <trans-unit id="863" resname="r6949867" restype="string" datatype="ruby">
         <source>Speaking from past experience, a good internship is one where &lt;em&gt;you're empowered to take initiative&lt;/em&gt; and be able to make a difference even as an intern in such a short time. In that sense, the internship experience at HealthTap delivered in spades. Very happy to be part of such a great team at such an important time for the company.</source>
-        <target>Hablando por experiencias pasadas, una buena práctica profesional es una donde &lt;em&gt; tienes el poder para tomar iniciativa &lt;/em&gt; y eres capaz de hacer una diferencia aún si eres un practicante por tan poco tiempo. En ese sentido, la experiencia de práctica profesional en HealthTap ha cumplido completamente. Estoy muy feliz de ser parte de tan gran equipo en un momento tan importante para la compañía.</target>
+        <target>Hablando por experiencias pasadas, una buena práctica profesional es una donde &lt;em&gt; tienes el poder para tomar iniciativa &lt;\em&gt; y eres capaz de hacer una diferencia aún si eres un practicante por tan poco tiempo. En ese sentido, la experiencia de práctica profesional en HealthTap ha cumplido completamente. Estoy muy feliz de ser parte de tan gran equipo en un momento tan importante para la compañía.</target>
       </trans-unit>
       <trans-unit id="864" resname="r644174358" restype="string" datatype="ruby">
         <source>Stanford Graduate School of Business</source>
@@ -3696,7 +3696,7 @@
       </trans-unit>
       <trans-unit id="881" resname="r36246525" restype="string" datatype="ruby">
         <source>There aren’t many places that you can get an experience like you would at HealthTap. From day one you are empowered to take on projects that make a significant difference and you are expected to achieve those goals but &lt;em&gt;given the support to learn and hone new skills to get there.&lt;/em&gt; That would be a fulfilling internship in it of itself but what separates HealthTap is the opportunity to solve challenging and important problems with an incredibly talented and passionate group of people.</source>
-        <target>No hay muchos lugares donde puedas obtener una experiencia como la que puedes tener en HealthTap . Desde el primer día tienes el poder de enfrentar proyectos que hacen una diferencia significativa y se espera que alcances esas metas, pero &lt;em&gt; también se te da el apoyo para aprender y perfeccionar nuevas habilidades para hacerlo.&lt;/em&gt; Eso sería una práctica profesional gratificante por sí misma, pero lo que separa a HealthTap es la oportunidad de resolver problemas desafiantes e importantes con un grupo de personas increíblemente apasionadas y talentosas.</target>
+        <target>No hay muchos lugares donde puedas obtener una experiencia como la que puedes tener en HealthTap. Desde el primer día tienes el poder de enfrentar proyectos que hacen una diferencia significativa y se espera que alcances esas metas, pero &lt;em&gt; también se te da el apoyo para aprender y perfeccionar nuevas habilidades para hacerlo.&lt;\em&gt; Eso sería una práctica profesional gratificante por sí misma, pero lo que separa a HealthTap es la oportunidad de resolver problemas desafiantes e importantes con un grupo de personas increíblemente apasionadas y talentosas.</target>
       </trans-unit>
       <trans-unit id="882" resname="r610885097" restype="string" datatype="ruby">
         <source>Kellogg School of Management</source>
@@ -3756,7 +3756,7 @@
       </trans-unit>
       <trans-unit id="897" resname="r222933024" restype="string" datatype="ruby">
         <source>There are so many reasons why I'm excited to walk into the HealthTap office every morning. In many internship programs, mentors play a supportive role and teach students a lot. What makes the HealthTap internship program unique, though, is that I have been given some real, important responsibilties and I am therefore able to play a role in the growth of a movement. The people here are energetic and inspiring. &lt;em&gt;Every day, I'm challenged to take charge of a project and see it through to completion.&lt;/em&gt; It's so exciting to work at HealthTap!</source>
-        <target>Hay muchas razones por las cuales estoy emocionada por entrar a las oficinas de HealthTap cada mañana. En muchos programas de prácticas profesionales, los mentores juegan un rol de soporte y les enseñan mucho a los estudiantes. Lo que hace único al programa de prácticas profesionales de HealthTap, es que se me han dado responsabilidades reales e importantes y por lo tanto soy capaz de tener un rol en el crecimiento de un movimiento. Las personas aquí son energéticas e inspiradoras. &lt;em&gt;Cada día, soy desafiado para tomar el control de un proyecto y llevarlo hasta el final.&lt;/em&gt; ¡Es muy emocionante trabajar en HealthTap!</target>
+        <target>Hay muchas razones por las cuales estoy emocionada por entrar a las oficinas de HealthTap cada mañana. En muchos programas de prácticas profesionales, los mentores juegan un rol de soporte y les enseñan mucho a los estudiantes. Lo que hace único al programa de prácticas profesionales de HealthTap, es que se me han dado responsabilidades reales e importantes y por lo tanto soy capaz de tener un rol en el crecimiento de un movimiento. Las personas aquí son energéticas e inspiradoras. &lt;em&gt;Cada día, soy desafiada para tomar el control de un proyecto y llevarlo hasta el final.&lt;/em&gt; ¡Es muy emocionante trabajar en HealthTap!</target>
       </trans-unit>
       <trans-unit id="898" resname="r29758956" restype="string" datatype="ruby">
         <source>B.S. in Biology</source>
@@ -3868,27 +3868,27 @@
     <body>
       <trans-unit id="918" resname="r899361143" restype="string" datatype="ruby">
         <source>Learn more about members</source>
-        <target>Saber más acerca de miembros</target>
+        <target>Aprender más acerca de miembros</target>
       </trans-unit>
       <trans-unit id="919" resname="r851737678" restype="string" datatype="ruby">
         <source>Learn about providers &amp; health systems</source>
-        <target>Aprende acerca de proveedores &amp; sistemas de salud</target>
+        <target>Aprender acerca de proveedores &amp; sistemas de salud</target>
       </trans-unit>
       <trans-unit id="920" resname="r839013275" restype="string" datatype="ruby">
         <source>Learn more about employers &amp; insurers</source>
-        <target>Saber más acerca de empleadores &amp; aseguradores</target>
+        <target>Aprender más acerca de empleadores &amp; aseguradores</target>
       </trans-unit>
       <trans-unit id="921" resname="r222053641" restype="string" datatype="ruby">
         <source>Learn more about doctors</source>
-        <target>Saber más acerca de doctores</target>
+        <target>Aprender más acerca de doctores</target>
       </trans-unit>
       <trans-unit id="922" resname="r107502447" restype="string" datatype="ruby">
         <source>Learn more about government &amp; population managers</source>
-        <target>Saber más acerca de directores de población y gobierno</target>
+        <target>Aprender más acerca de directores de población y gobierno</target>
       </trans-unit>
       <trans-unit id="923" resname="r603684140" restype="string" datatype="ruby">
         <source>Learn more about developers</source>
-        <target>Saber más acerca de desarrolladores</target>
+        <target>Aprender más acerca de desarrolladores</target>
       </trans-unit>
     </body>
   </file>
@@ -4363,7 +4363,7 @@
       </trans-unit>
       <trans-unit id="1032" resname="r123360442" restype="string" datatype="ruby">
         <source>Exp.(MM/YY)</source>
-        <target>Exp.(MM/YY)</target>
+        <target>Exp.(MM/AA)</target>
       </trans-unit>
       <trans-unit id="1033" resname="r507273284" restype="string" datatype="ruby">
         <source>Security code</source>
@@ -4735,7 +4735,7 @@
       </trans-unit>
       <trans-unit id="1087" resname="r892577334" restype="string" datatype="ruby">
         <source>See %{number} more %{answer_or_answers}</source>
-        <target>Ver %{number} %{answer_or_answers} más</target>
+        <target>Ve %{number} más %{answer_or_answers}</target>
         <note annotates="source">TODO pluralization</note>
       </trans-unit>
     </body>
@@ -5608,7 +5608,7 @@
     <body>
       <trans-unit id="1293" resname="r640345384" restype="string" datatype="ruby">
         <source>Browse answers to similar questions »</source>
-        <target>Navegar por respuestas a preguntas similares »</target>
+        <target>Ojea respuestas a preguntas similares »</target>
       </trans-unit>
       <trans-unit id="1294" resname="r237091917" restype="string" datatype="ruby">
         <source>edit your question</source>
@@ -6112,7 +6112,7 @@
     <body>
       <trans-unit id="1393" resname="r517982647" restype="string" datatype="ruby">
         <source>%{product} is a revolutionary new way to get the right care, at the right time from any mobile device or personal computer 24/7.</source>
-        <target>%{product} es una nueva y revolucionaria forma de obtener la atención adecuada, en el momento adecuado y desde cualquier dispositivo móvil o computadora personal, 24/7.</target>
+        <target>%{product} es una nueva y revolucionaria forma de obtener la atención adecuada en el momento adecuado desde cualquier dispositivo móvil o computadora personal, 24/7.</target>
       </trans-unit>
     </body>
   </file>
@@ -6473,7 +6473,7 @@
       </trans-unit>
       <trans-unit id="1471" resname="r630866426" restype="string" datatype="ruby">
         <source>Doctor Insights for You</source>
-        <target>Perspicacias de Doctores para ti</target>
+        <target>Perspicacias de Doctor para ti</target>
       </trans-unit>
     </body>
   </file>
@@ -8052,11 +8052,11 @@
     <body>
       <trans-unit id="1785" resname="r1937982" restype="string" datatype="ruby">
         <source>At your request, we’ve deactivated your HealthTap account. Your profile will no longer be visible or accessible by our doctors and you will no longer receive communications from our team.</source>
-        <target>A tu solicitud, hemos desactivado tu cuenta HealthTap. Tu perfil ya no está visible o accesible para nuestros doctores y no podrás recibir comunicación con nuestro equipo.</target>
+        <target>A tu solicitud, hemos desactivado tu cuenta HealthTap. Tu perfil ya no está visible o accesible para nuestros doctores y no podrás recibir comunicaciones de nuestro equipo.</target>
       </trans-unit>
       <trans-unit id="1786" resname="r584908175" restype="string" datatype="ruby">
         <source>Before you leave us, we’d appreciate it if you %{open_link}reach out%{close_link} to our Quality Care team and tell us why you’re going. We’d be delighted to help in any way to ensure you had a wonderful experience at HealthTap and feel good every day.</source>
-        <target>Antes de que nos dejes, agradeceríamos si te %{open_link}pones en contacto%{close_link} con nuestro equipo de Atención de Calidad y nos digas por qué te vas. Estaremos encantados de ayudar de cualquier forma para asegurar que tuviste una maravillosa experiencia en HealthTap y te sientes bien cada día.</target>
+        <target>Antes de que nos dejes, agradeceríamos si te %{open_link}pones en contacto%{close_link} con nuestro equipo de Atención de Calidad y nos digas por qué te vas. Estaríamos encantados de ayudar de cualquier forma para asegurar que tuviste una maravillosa experiencia en HealthTap y te sientes bien cada día.</target>
       </trans-unit>
       <trans-unit id="1787" resname="r303654817" restype="string" datatype="ruby">
         <source>So … are you sure you want to go? Think of what you’ll miss!</source>
@@ -8572,11 +8572,11 @@
       </trans-unit>
       <trans-unit id="1897" resname="r814014116" restype="string" datatype="ruby">
         <source>In the meantime, feel free to browse your personalized health feed that includes doctor answers, tips, news articles, and apps relevant to health topics you follow.</source>
-        <target>Mientras tanto, siéntete libre de navegar por tu fuente de salud personalizada que incluye respuestas médicas, tips, artículos de noticias, y aplicaciones relevantes a temas de la salud que sigues.</target>
+        <target>Mientras tanto, siéntete libre de navegar tu fuente de salud personalizada que incluye respuestas médicas, tips, artículos de noticias, y aplicaciones relevantes a temas de la salud que sigues.</target>
       </trans-unit>
       <trans-unit id="1898" resname="r892318825" restype="string" datatype="ruby">
         <source>Check out your feed ›</source>
-        <target>Echa un vistazo a tu fuente›</target>
+        <target>Echa un vistazo a tu fuente ›</target>
       </trans-unit>
     </body>
   </file>
@@ -9164,15 +9164,15 @@
       </trans-unit>
       <trans-unit id="7790" resname="r918774171" restype="string" datatype="x-haml">
         <source>To help people feel good, and measurably prolong the life</source>
-        <target>Ayudar a personas a sentirse bien, y prolongar la expectativa de vida</target>
+        <target>Ayudar a personas a sentirse bien, y de manera mesurable prolongar la</target>
       </trans-unit>
       <trans-unit id="7791" resname="r889979875" restype="string" datatype="x-haml">
         <source>expectancy of humankind by providing immediate access to</source>
-        <target>de la humanidad de manera cuantificable al brindar acceso inmediato a</target>
+        <target>esperanza de vida de la humanidad brindando acceso inmediato a</target>
       </trans-unit>
       <trans-unit id="7792" resname="r195369196" restype="string" datatype="x-haml">
         <source>top medical experts and their trusted health advice, anytime anywhere</source>
-        <target>los mejores expertos médicos y a sus confiables consejos de salud, a cualquier hora y en cualquier lugar</target>
+        <target>los mejores expertos médicos y sus confiables consejos de salud, a cualquier hora y en cualquier lugar</target>
       </trans-unit>
       <trans-unit id="7793" resname="r834200430" restype="string" datatype="x-haml">
         <source>The benefits of joining</source>
@@ -9188,7 +9188,7 @@
       </trans-unit>
       <trans-unit id="7796" resname="r811660786" restype="string" datatype="x-haml">
         <source>insurance. By becoming a HealthTap Prime doctor, you practice medicine on your own terms—from anywhere at anytime. All you need is a PC or mobile device and an internet connection. And you’ll be well compensated for doing what you love without being entangled in insurance company reimbursement procedures!</source>
-        <target>los seguros. Convirtiéndote en un doctor HealthTap Primer, practicas medicina en tus propios términos—a cualquier hora y desde cualquier lugar. Todo lo que necesitas es una PC o dispositivo móvil y una conexión a internet. ¡Y serás bien compensado por hacer lo que amas, sin enredarte con procedimientos de reembolso por compañías de seguros!</target>
+        <target>aseguranzas. Convirtiéndote en un doctor HealthTap Primer, practicas medicina en tus propios términos—desde cualquier lugar y a cualquier hora. Todo lo que necesitas es una PC o dispositivo móvil y una conexión a internet. ¡Y serás bien compensado por hacer lo que amas sin ser enredado en compañías de seguro y procedimientos de reembolso!</target>
       </trans-unit>
       <trans-unit id="7797" resname="r413509199" restype="string" datatype="x-haml">
         <source>TODAY</source>
@@ -9252,7 +9252,7 @@
       </trans-unit>
       <trans-unit id="7812" resname="r169913241" restype="string" datatype="x-haml">
         <source>Get a free Virtual Practice (ViP) that complements your existing practice!</source>
-        <target>¡Obtén un Consultorio Virtual (CoV) gratis que complemente tu consultorio existente!</target>
+        <target>¡Obtén un Consultorio Virtual (ViP) gratis que complemente tu consultorio existente!</target>
       </trans-unit>
       <trans-unit id="7813" resname="r827871201" restype="string" datatype="x-haml">
         <source>Having broad online visibility and easily interacting with patients via digital means are critical to creating a modern thriving practice,</source>
@@ -9284,7 +9284,7 @@
       </trans-unit>
       <trans-unit id="7820" resname="r605751315" restype="string" datatype="x-haml">
         <source>A fully customizable profile page alongside an interactive Virtual Practice (ViP) can replace</source>
-        <target>Una página de perfil completamente personalizable junto con un Consultorio Virtual interactivo (CoV) que puede reemplazar</target>
+        <target>Una página de perfil completamente personalizable junto con un Consultorio Virtual interactivo (ViP) que puede reemplazar</target>
       </trans-unit>
       <trans-unit id="7821" resname="r2620795" restype="string" datatype="x-haml">
         <source>your existing website or blog as a way to promote your practice and interact with your patients 24/7.</source>
@@ -9332,7 +9332,7 @@
       </trans-unit>
       <trans-unit id="7832" resname="r670328568" restype="string" datatype="x-haml">
         <source>Be part of the next big thing in health</source>
-        <target>Sé parte de el próximo hito en la atención de la salud</target>
+        <target>Sé parte de la siguiente gran cosa en la salud</target>
       </trans-unit>
       <trans-unit id="7833" resname="r439413945" restype="string" datatype="x-haml">
         <source>Join us in revolutionizing healthcare by harnessing technology to innovate, save lives, and help millions feel good!</source>
@@ -9340,7 +9340,7 @@
       </trans-unit>
       <trans-unit id="7834" resname="r1000701168" restype="string" datatype="x-haml">
         <source>Influence what health news people read and what apps they choose by sharing your opinions and views.</source>
-        <target>Influencia qué noticias de salud lee la gente lee y qué aplicaciones eligen, al compartir tus opiniones yescogen compartiendo tus opiniones y puntos de vista.</target>
+        <target>Ten influencia sobre las noticias de salud que la gente lee y qué aplicaciones escogen compartiendo tus opiniones y vistas.</target>
       </trans-unit>
       <trans-unit id="7835" resname="r303426420" restype="string" datatype="x-haml">
         <source>Make patient visits more efficient</source>
@@ -9376,7 +9376,7 @@
       </trans-unit>
       <trans-unit id="7843" resname="r993664762" restype="string" datatype="x-haml">
         <source>brings a smile. I feel honored to participate.</source>
-        <target>trae una sonrisa. Me siento honrada de participar.</target>
+        <target>trae una sonrisa. Me siento honrado de participar.</target>
       </trans-unit>
       <trans-unit id="7844" resname="r763885469" restype="string" datatype="x-haml">
         <source>Dr. Andrea Brand, Family Medicine</source>
@@ -9468,11 +9468,11 @@
       </trans-unit>
       <trans-unit id="7866" resname="r888618104" restype="string" datatype="x-haml">
         <source>HeathTap Concierge is a private paid video or text connection between you and your patients from anywhere in the world at your convenience.</source>
-        <target>HealthTap Concierge es una conexión privada y pagada, por texto o video, entre tú y tus pacientes desde cualquier lugar del mundo y a tu conveniencia.</target>
+        <target>HealthTap Concierge es una conexión privada de video o texto pagada entre tú y tus pacientes desde cualquier lugar del mundo a tu conveniencia.</target>
       </trans-unit>
       <trans-unit id="7867" resname="r120676927" restype="string" datatype="x-haml">
         <source>Claim your Virtual Practice page (ViP) today and establish your paid virtual office hours in minutes.</source>
-        <target>Pide tu página de Consultorio Virtual (CoV) hoy y establece tu horario de oficina virtual pagado en minutos.</target>
+        <target>Pide tu página de Consultorio Virtual (ViP) hoy y establece tu horario de oficina virtual pagado en minutos.</target>
       </trans-unit>
       <trans-unit id="7868" resname="r81549895" restype="string" datatype="x-haml">
         <source>See more ›</source>
@@ -9480,7 +9480,7 @@
       </trans-unit>
       <trans-unit id="7869" resname="r1004273586" restype="string" datatype="x-haml">
         <source>through HealthTap Global Rounds. Doctors can access peer-reviewed medical literature, and use that knowledge to respond to real medical questions from real HealthTap members. Inspired by the tradition of medical education through grand rounds, HealthTap Global Rounds also allows doctors to submit challenging, interesting, or unsolved medical cases for debate and discussion.</source>
-        <target>a través de HealthTap Global Rounds. Los doctores pueden acceder a literatura médica con revisión por pares, y usar ese conocimiento para responder a preguntas médicas reales de miembros de HealthTap reales. Inspirado por la tradición de la educación médica a través de pases de visita, HealthTap Global Rounds también les permite a los doctores presentar casos médicos desafiantes, interesantes o sin resolver, para debate y discusión.</target>
+        <target>a través de HealthTap Global Rounds. Los doctores pueden acceder a literatura médica con revisión por pares, y usar ese conocimiento para responder a preguntas médicas reales de miembros de HealthTap reales. Inspirado por la tradición de la educación médica a través de mesas redondas, HealthTap Global Rounds también permite a doctores presentar casos médicos desafiantes, interesantes o sin resolver, para debate y discusión.</target>
       </trans-unit>
       <trans-unit id="7871" resname="r944366247" restype="string" datatype="x-haml">
         <source>earning AMA PRA Category 1 Credits</source>
@@ -9504,7 +9504,7 @@
       </trans-unit>
       <trans-unit id="7876" resname="r320834824" restype="string" datatype="x-haml">
         <source>, we put an extraordinarily high value on trust and quality. That’s why we select only the top doctors in every specialty, and highlight their expertise to people and peers throughout our special programs. We provide our best doctors with special privileges on</source>
-        <target>, ponemos un valor extraordinariamente alto en la confianza y la calidad. Es por eso que seleccionamos sólo a los mejores doctores en cada especialidad, y resaltamos su destreza a personas y pares a través de nuestros programas especiales. Brindamos privilegios especiales a nuestros mejores doctores en</target>
+        <target>, ponemos un valor extraordinariamente alto en la confianza y calidad. Es por eso que seleccionamos sólo a los mejores doctores en cada especialidad, y resaltamos su destreza a personas y pares a través de nuestros programas especiales. Brindamos privilegios especiales a nuestros mejores doctores en</target>
       </trans-unit>
       <trans-unit id="7878" resname="r1030762523" restype="string" datatype="x-haml">
         <source>ClubMD members are doctors who regularly participate on</source>
@@ -9604,11 +9604,11 @@
       </trans-unit>
       <trans-unit id="7903" resname="r33283907" restype="string" datatype="x-haml">
         <source>provides me with an interactive forum with tens of thousands of patients and colleagues.</source>
-        <target>me brinda un foro interactivo con decenas de miles de pacientes y colegas.</target>
+        <target>me brinda un foro interactivo con decenas de miles de pacientes y colegas</target>
       </trans-unit>
       <trans-unit id="7904" resname="r294936119" restype="string" datatype="x-haml">
         <source>While expanding my network, I’ve also expanded my patient base.</source>
-        <target>Expandiendo mi red, se ha expandido también la base de mis pacientes.</target>
+        <target>Mientras expando mi red, he expandido también mi base de pacientes.</target>
       </trans-unit>
       <trans-unit id="7905" resname="r983729143" restype="string" datatype="x-haml">
         <source>Greg Sorkin, emergency medicine specialist and member</source>
@@ -9616,11 +9616,11 @@
       </trans-unit>
       <trans-unit id="7906" resname="r188937521" restype="string" datatype="x-haml">
         <source>doctors delight in</source>
-        <target>les encanta</target>
+        <target>doctores les encanta</target>
       </trans-unit>
       <trans-unit id="7907" resname="r786643384" restype="string" datatype="x-haml">
         <source>What</source>
-        <target>Lo que a los doctores de</target>
+        <target>Qué</target>
       </trans-unit>
       <trans-unit id="7908" resname="r594079546" restype="string" datatype="x-haml">
         <source>Sharing their wisdom through answers, tips, and news</source>
@@ -9628,7 +9628,7 @@
       </trans-unit>
       <trans-unit id="7909" resname="r544270111" restype="string" datatype="x-haml">
         <source>doctors answer people’s questions, provide them with health tips, and curate those articles and research papers that will be most helpful to both individuals and society at large.</source>
-        <target>los doctores contestan preguntas de personas, les brindan tips de salud, y comparten artículos e investigaciones que serán muy útiles tanto para individuos como a la sociedad en general.</target>
+        <target>los doctores contestan preguntas de personas, les brindan tips de salud, y curan esos artículos e investigaciones que serán muy útiles tanto para individuos como a la sociedad en general.</target>
       </trans-unit>
       <trans-unit id="7910" resname="r387819728" restype="string" datatype="x-haml">
         <source>They also explain and interpret the information so that laypersons easily understand its impact.</source>
@@ -9640,11 +9640,11 @@
       </trans-unit>
       <trans-unit id="7912" resname="r555893575" restype="string" datatype="x-haml">
         <source>Medical Expert Network are invited to be HealthTap Prime doctors, they interact with patients live using video or voice via their PCs, phones, or mobile devices,</source>
-        <target>son invitados a ser doctores de HealthTap Prime, ellos interactúan con pacientes en vivo usando video o voz a través de sus PCs, teléfonos o dispositivos móviles,</target>
+        <target>Red de Expertos Médicos están invitados a ser doctores de HealthTap Prime, ellos interactúan con pacientes en vivo usando video o voz a través de sus PCs, teléfonos o dispositivos móviles,</target>
       </trans-unit>
       <trans-unit id="7913" resname="r267298083" restype="string" datatype="x-haml">
         <source>If members of the</source>
-        <target>Si los miembros de la Red de Expertos Médicos de</target>
+        <target>Si los miembros del</target>
       </trans-unit>
       <trans-unit id="7914" resname="r357776892" restype="string" datatype="x-haml">
         <source>supported by documents, photos, lab results, and other documentation. They also perform consults by text messages. All this is done at their convenience—they pick the days and hours they work—and from wherever they choose.</source>
@@ -9672,7 +9672,7 @@
       </trans-unit>
       <trans-unit id="7920" resname="r252552466" restype="string" datatype="x-haml">
         <source>True Wealth Through Sharing:</source>
-        <target>Verdadera Riqueza Compartiendo:</target>
+        <target>Verdadera Riqueza a Través de Compartir:</target>
       </trans-unit>
       <trans-unit id="7921" resname="r981474296" restype="string" datatype="x-haml">
         <source>I am so thrilled that I am part of your Heath Tap consultant group because you have given me the opportunity to share my unique combination of knowledge and experience as a retired US Air Force Colonel medical officer with experience in general surgery, aerospace medicine, cancer medicine, emergency medicine, and anatomic and clinical pathology.</source>
@@ -9680,7 +9680,7 @@
       </trans-unit>
       <trans-unit id="7922" resname="r743782736" restype="string" datatype="x-haml">
         <source>This is our chance as physicians to create true wealth by sharing our knowledge and experience with those who seek elucidations of different illnesses and comfort in their inner selves before proceeding in making their own difficult decisions on what to do next. We are all humans helping humanity and that is why we are physicians who offer comfort and who are always willing to heal the very sick and the least fortunate in life, and making certain to do no harm to anybody, anywhere, anytime.</source>
-        <target>Esta es nuestra oportunidad, cómo médicos, de crear verdadera riqueza compartiendo nuestro conocimiento y experiencia con aquellos que buscan aclaraciones en diferentes enfermedades y comodidad en sus yo internos antes de proceder a tomar decisiones difíciles sobre lo que harán después. Todos somos humanos ayudando a la humanidad, y esa es la razón de por la que somos médicos que ofrecen comodidad, y que simpere están dispuestos a sanar a los más enfermos y a los más desafortunados en la vida, y asegurarnos de no dañar a nadie, en ningún lugar y en ningún momento.</target>
+        <target>Esta es nuestra oportunidad de crear verdadera riqueza compartiendo nuestro conocimiento y experiencia con aquellos que buscan aclaraciones de diferentes enfermedades y comodidad en sus yo internos antes de proceder a tomar decisiones difíciles sobre lo que harán después. Todos somos humanos ayudando a la humanidad, y esa es la razón de por la que somos médicos que ofrecen comodidad, y quienes estamos dispuestos a sanar a los más enfermos y a los más desafortunados en la vida, y asegurarnos de no dañar a nadie, en ningún lugar y en ningún momento.</target>
       </trans-unit>
       <trans-unit id="7923" resname="r510575104" restype="string" datatype="x-haml">
         <source>Dr. Hermilando Payen, Pathology</source>
@@ -9688,7 +9688,7 @@
       </trans-unit>
       <trans-unit id="7924" resname="r10467099" restype="string" datatype="x-haml">
         <source>This app has improved my life vastly. I have had for a while now more questions than answers. It is unreasonable to call my GP every five seconds. This app has proven to be an invaluable tool along with my primary care.</source>
-        <target>Esta aplicación ha mejorado mi vida ampliamente. Por un tiempo he tenido más preguntas que respuestas. No es razonable llamar a mi MG cada cinco minutos. Esta aplicación ha probado ser una herramienta invaluable junto con mi atención primaria.</target>
+        <target>Esta aplicación ha mejorado mi vida ampliamente. Por un tiempo he tenido más preguntas que respuestas. No es razonable llamar a mi MG cada cinco minutos. Esta aplicación a probado ser una herramienta invaluable junto con mi atención primaria.</target>
       </trans-unit>
       <trans-unit id="7925" resname="r494745973" restype="string" datatype="x-haml">
         <source>My local practice patients were delighted to learn that I spend some of my</source>
@@ -9752,7 +9752,7 @@
     <body>
       <trans-unit id="2017" resname="r859347478" restype="string" datatype="ruby">
         <source>This is Dr. Geoff Rutledge, the Chief Medical Officer at HealthTap. I'd like to personally offer you a benefits solution that will significantly reduce healthcare costs for your clients, deliver peace of mind for their employees, and strengthen your customer relationships. Our award-winning approach is already delighting hundreds of millions of people across the world and rapidly displacing traditional telemedicine offerings within dozens of Fortune 500 companies. Today, we are offering this proven solution to you at an unprecedented value that will help you make more money and retain your book of business.</source>
-        <target>Este es el Dr. Geoff Rutledge, el Oficial Médico en Jefe en HealthTap. Me gustaría ofrecerte personalmente una solución de beneficios que reducirá significativamente los costos de la atención a la salud para tus clientes, entregar paz mental a sus empleados, y fortalecerá tus relaciones con tus clientes. Nuestro enfoque galardonado ya está deleitando a cientos de millones de personas en todo el mundo y desplazando rápidamente a las ofertas de telemedicina tradicional en docenas de compañías Fortune 500. Hoy, te estamos ofreciendo esta solución probada a un valor sin precedentes que te ayudará a ganar más dinero y retener tu libreta de negocios.</target>
+        <target>Este es el Dr. Geoff Rutledge, el Oficial Médico en Jefe en HealthTap. Me gustaría ofrecerte personalmente una solución de beneficios que reducirá significativamente los costos del cuidado a la salud para tus clientes, entregar paz mental a sus empleados, y fortalecerá tus relaciones con tus clientes. Nuestro enfoque galardonado ya está deleitando a cientos de millones de personas en todo el mundo y desplazando rápidamente a las ofertas de telemedicina tradicional en docenas de compañías Fortune 500. Hoy, te estamos ofreciendo esta solución probada a un valor sin precedentes que te ayudará a ganar más dinero y retener tu libreta de negocios.</target>
       </trans-unit>
       <trans-unit id="2018" resname="r514330511" restype="string" datatype="ruby">
         <source>HealthTap is a Silicon Valley based company that is revolutionizing healthcare by providing individuals with immediate access to personalized information and guidance from over 71,000 highly qualified doctors with over 20 years of experience on average. We are the World Economic Forum Technology Pioneer of 2016, joining the ranks of past winners like Google, Twitter, AirBnB and Uber. Other recent accolades include:</source>
@@ -9965,7 +9965,7 @@
       </trans-unit>
       <trans-unit id="2055" resname="r1055449147" restype="string" datatype="ruby">
         <source>Provide advice and diagnosis with a SOAP note that includes actionable checklists</source>
-        <target>Brinda consejo y diagnóstico con una nota de SOAP que incluya listados viables</target>
+        <target>Brinda consejo y diagnóstico con una nota de SOAP que incluya listados de acciones</target>
       </trans-unit>
       <trans-unit id="2056" resname="r658522715" restype="string" datatype="ruby">
         <source>Acquire Category 1 CME credits for free</source>
@@ -10869,7 +10869,7 @@
       </trans-unit>
       <trans-unit id="2261" resname="r63116807" restype="string" datatype="ruby">
         <source>Prescriptions instantly transmitted to any retail or mail-order pharmacy</source>
-        <target>Recetas transmitidas instantáneamente a cualquier farmacia a menudeo o por orden de correo</target>
+        <target>Recetas transmitidas instantáneamente a cualquier farmacia a menudeo o por órdenes por correo</target>
       </trans-unit>
       <trans-unit id="2262" resname="r529468816" restype="string" datatype="ruby">
         <source>Secure single sign-on (SSO) capability with other services</source>
@@ -10962,7 +10962,7 @@
       </trans-unit>
       <trans-unit id="2318" resname="r861338793" restype="string" datatype="ruby">
         <source>Prescriptions instantly sent to any retail or mail-order pharmacy nationwide</source>
-        <target>Recetas enviadas instantáneamente a cualquier farmacia de menudeo o por orden de correo en todo el país</target>
+        <target>Recetas enviadas instantáneamente a cualquier farmacia de menudeo o por correo en todo el país</target>
       </trans-unit>
       <trans-unit id="2319" resname="r157428958" restype="string" datatype="ruby">
         <source>Lab tests ordered at any test lab and results shared virtually</source>
@@ -10986,7 +10986,7 @@
     <body>
       <trans-unit id="2271" resname="r957313495" restype="string" datatype="ruby">
         <source>Prescriptions instantly transmitted to any retail or mail-order pharmacy nationwide</source>
-        <target>Recetas transmitidas instantáneamente a cualquier farmacia de menudeo o por orden de correo en todo el país</target>
+        <target>Recetas transmitidas instantáneamente a cualquier farmacia de menudeo o por correo en todo el país</target>
       </trans-unit>
     </body>
   </file>
@@ -11058,7 +11058,7 @@
       </trans-unit>
       <trans-unit id="2291" resname="r279939839" restype="string" datatype="ruby">
         <source>million</source>
-        <target>millones</target>
+        <target>millón</target>
       </trans-unit>
       <trans-unit id="2294" resname="r784821996" restype="string" datatype="ruby">
         <source>Top doctors in 141 specialties</source>
@@ -11126,7 +11126,7 @@
       </trans-unit>
       <trans-unit id="2323" resname="r847001485" restype="string" datatype="ruby">
         <source>Actionable checklists</source>
-        <target>Listados viables</target>
+        <target>Listados accionables</target>
       </trans-unit>
     </body>
   </file>
@@ -11520,7 +11520,7 @@
       </trans-unit>
       <trans-unit id="2406" resname="r724699989" restype="string" datatype="ruby">
         <source>Add details to your question (+100 characters)</source>
-        <target>Añade detalles a tus preguntas (100+ caracteres)</target>
+        <target>Añade detalles a tus preguntas (Más de 100 caracteres)</target>
       </trans-unit>
     </body>
   </file>
@@ -11788,7 +11788,7 @@
     <body>
       <trans-unit id="2466" resname="r300477531" restype="string" datatype="ruby">
         <source>What is %{person}'s gender?</source>
-        <target>¿Cuál es el sexo de %{person}?</target>
+        <target>¿Cuál es el género de %{person}?</target>
       </trans-unit>
       <trans-unit id="2468" resname="r453205076" restype="string" datatype="ruby">
         <source>When was %{person_description} born?</source>
@@ -12104,7 +12104,7 @@
       </trans-unit>
       <trans-unit id="2547" resname="r525805065" restype="string" datatype="ruby">
         <source>Members try your checklist</source>
-        <target>Miembros aprueban tu listado</target>
+        <target>Miembros prueban tu listado</target>
       </trans-unit>
       <trans-unit id="2548" resname="r866395136" restype="string" datatype="ruby">
         <source>Questions for You</source>
@@ -12240,7 +12240,7 @@
       </trans-unit>
       <trans-unit id="2582" resname="r420886578" restype="string" datatype="ruby">
         <source>A doctor shares feedback on your SOAP Note</source>
-        <target>Un doctor comparte su comentario en tu Nota SOAP</target>
+        <target>Un doctor comparte comentario en tu Nota SOAP</target>
       </trans-unit>
       <trans-unit id="2583" resname="r1026561444" restype="string" datatype="ruby">
         <source>A doctor rates your consult 5-stars</source>
@@ -12252,19 +12252,19 @@
       </trans-unit>
       <trans-unit id="2585" resname="r669633711" restype="string" datatype="ruby">
         <source>Poor network connection detected during a consult</source>
-        <target>Conexión de red pobre detectada durante una consulta</target>
+        <target>Conexión de red pobre detectada durante consulta</target>
       </trans-unit>
       <trans-unit id="2586" resname="r433964049" restype="string" datatype="ruby">
         <source>A patient responds to an Inbox Consults</source>
-        <target>Un paciente responde a una consulta de Buzón de Entrada</target>
+        <target>Un paciente responde a una Consulta de Buzón de Entrada</target>
       </trans-unit>
       <trans-unit id="2587" resname="r405339046" restype="string" datatype="ruby">
         <source>Reminder an Inbox Consults is pending your response</source>
-        <target>Recordatorio de una consulta de Buzón de Entrada pendiente de respuesta</target>
+        <target>Recordatorio de una Consulta de Buzón de Entrada está pendiente de respuesta</target>
       </trans-unit>
       <trans-unit id="2588" resname="r323126199" restype="string" datatype="ruby">
         <source>You missed an incoming Live Consult from a patient</source>
-        <target>Perdiste una consulta en vivo entrante de un paciente</target>
+        <target>Perdiste una Consulta en Vivo entrante de un paciente</target>
       </trans-unit>
       <trans-unit id="2590" resname="r291358712" restype="string" datatype="ruby">
         <source>Summary of your weekly activity on healthtap</source>
@@ -12292,7 +12292,7 @@
       </trans-unit>
       <trans-unit id="2598" resname="r283299315" restype="string" datatype="ruby">
         <source>Updates on a question you asked</source>
-        <target>Actualizaciones de una pregunta que hiciste</target>
+        <target>Actualizaciones a una pregunta que hiciste</target>
       </trans-unit>
       <trans-unit id="2599" resname="r495465873" restype="string" datatype="ruby">
         <source>A doctor responds to Virtual Consult</source>
@@ -12332,7 +12332,7 @@
       </trans-unit>
       <trans-unit id="2608" resname="r1037682197" restype="string" datatype="ruby">
         <source>Reminders for actions on your to do list</source>
-        <target>Recordatorios para acciones en tu lista de quehaceres</target>
+        <target>Recordatorios para acciones en tu lista de Por Hacer</target>
       </trans-unit>
       <trans-unit id="2609" resname="r885383099" restype="string" datatype="ruby">
         <source>Reminder and Kudos for supporter(s)</source>
@@ -12340,7 +12340,7 @@
       </trans-unit>
       <trans-unit id="2610" resname="r708190353" restype="string" datatype="ruby">
         <source>Reminder and Kudos for someone you support</source>
-        <target>Recordatorios y Aclamación para alguien que apoyas</target>
+        <target>Recordatorios y Kudos para alguien que apoyas</target>
       </trans-unit>
       <trans-unit id="2611" resname="r283175153" restype="string" datatype="ruby">
         <source>Kudos from your supporter(s)</source>
@@ -12348,11 +12348,11 @@
       </trans-unit>
       <trans-unit id="2612" resname="r628887346" restype="string" datatype="ruby">
         <source>Kudos for someone you support</source>
-        <target>Aclamación para alguien que apoyas</target>
+        <target>Kudos para alguien que apoyas</target>
       </trans-unit>
       <trans-unit id="2613" resname="r238259539" restype="string" datatype="ruby">
         <source>Doctor Insights For You</source>
-        <target state="accepted">Perspicacias de Doctores para ti</target>
+        <target state="accepted">Perspicacias de Doctor para ti</target>
       </trans-unit>
       <trans-unit id="2621" resname="r650094699" restype="string" datatype="ruby">
         <source>A weekly email digest of doctor insights for you</source>
@@ -12376,7 +12376,7 @@
       </trans-unit>
       <trans-unit id="2627" resname="r97424739" restype="string" datatype="ruby">
         <source>Doctor accepts you as a patient</source>
-        <target>Un doctor te acepta como paciente</target>
+        <target>Doctor te acepta como paciente</target>
       </trans-unit>
       <trans-unit id="2628" resname="r250639661" restype="string" datatype="ruby">
         <source>Reminders when a doctor accepts you as a patient</source>
@@ -12708,11 +12708,11 @@
     <body>
       <trans-unit id="2706" resname="r964868232" restype="string" datatype="ruby">
         <source>Thanks for using HealthTap! Our network of 50k top U.S. doctors is here to answer your questions. Ask doctors by replying in less than 150 characters.</source>
-        <target>¡Gracias por usar HealthTap! Nuestra red de 50,000 de los mejores doctores de EE.UU. están aquí para contestar tus preguntas. Pregunta a doctores contestando en menos de 150 caracteres.</target>
+        <target>¡Gracias por usar HealthTap! Nuestra red de 50K de los mejores doctores de EE.UU. están aquí para contestar tus preguntas. Pregunta a doctores contestando en menos de 150 caracteres.</target>
       </trans-unit>
       <trans-unit id="2707" resname="r183898673" restype="string" datatype="ruby">
         <source>Welcome back to HealthTap! Our network of 50k top U.S. doctors is here to answer your questions. Ask doctors by replying in less than 150 characters.</source>
-        <target>¡Bienvenido de regreso a HealthTap! Nuestra red de 50,000 de los mejores doctores de EE.UU. están aquí para contestar tus preguntas. Pregunta a doctores contestando en menos de 150 caracteres.</target>
+        <target>¡Bienvenido a HealthTap! Nuestra red de 50K de los mejores doctores de EE.UU. están aquí para contestar tus preguntas. Pregunta a doctores contestando en menos de 150 caracteres.</target>
       </trans-unit>
       <trans-unit id="2708" resname="r856269843" restype="string" datatype="ruby">
         <source>Sorry, we're unable to process your request. Pls reply 'b' to go back, 'x' to start over.</source>
@@ -12744,11 +12744,11 @@
       </trans-unit>
       <trans-unit id="2715" resname="r661378715" restype="string" datatype="ruby">
         <source>HealthTap's 50k top US doctors are here to help. Ask a question and be as detailed as possible in less than 150 characters.</source>
-        <target>Los 50,000 mejores doctores de los EE.UU. de HealthTap están aquí para ayudar. Haz una pregunta, y sé lo más detallado posible en menos de 150 caracteres.</target>
+        <target>Los 50K mejores doctores de los EE.UU. de HealthTap están aquí para ayudar. Haz una pregunta, y sé lo más detallado posible en menos de 150 caracteres.</target>
       </trans-unit>
       <trans-unit id="2716" resname="r406023049" restype="string" datatype="ruby">
         <source>Welcome back to HealthTap! Our doctors have answered similar questions recently asked by other patients:</source>
-        <target>¡Bienvenido de regreso a HealthTap! Nuestros doctores han contestado preguntas similares hechas por otros pacientes recientemente:</target>
+        <target>¡Bienvenido a HealthTap! Nuestros doctores han contestado preguntas similares hechas por otros pacientes recientemente:</target>
       </trans-unit>
     </body>
   </file>
@@ -12816,7 +12816,7 @@
       </trans-unit>
       <trans-unit id="2731" resname="r78118445" restype="string" datatype="ruby">
         <source>Please join me as a doctor on HealthTap's Medical Expert Network. Sign up @ %{link}</source>
-        <target>Por favor, únete a mí como un doctor en la Red de Expertos Médicos HealthTap. Regístrate @ %{link}</target>
+        <target>Por favor, únete a mí como un doctor en la Red de Expertos Médicos HealthTap. Registrarse @ %{link}</target>
       </trans-unit>
       <trans-unit id="2732" resname="r358956375" restype="string" datatype="ruby">
         <source>Please join me as part of HealthTap's Medical Expert Network</source>
@@ -12832,7 +12832,7 @@
       </trans-unit>
       <trans-unit id="2735" resname="r255777749" restype="string" datatype="ruby">
         <source>I am using HealthTap to connect with patients online. Sign up @ %{link}</source>
-        <target>Estoy usando HealthTap para conectar con pacientes en línea. Regístrate @ %{link}</target>
+        <target>Estoy usando HealthTap para conectar con pacientes en línea. Registrarse @ %{link}</target>
       </trans-unit>
       <trans-unit id="2736" resname="r127252301" restype="string" datatype="ruby">
         <source>Please join me on HealthTap so I can provide you with better care.</source>
@@ -12908,7 +12908,7 @@
       </trans-unit>
       <trans-unit id="2754" resname="r144962538" restype="string" datatype="ruby">
         <source>Support our Alma Matter on HealthTap and help millions of patients. Sign up @ %{link}</source>
-        <target>Apoya a nuestra Alma Matter en HealthTap y ayuda a millones de pacientes. Regístrate @ %{link}</target>
+        <target>Apoya a nuestra Alma Matter en HealthTap y ayuda a millones de pacientes. Registrarse @ %{link}</target>
       </trans-unit>
       <trans-unit id="2755" resname="r104781247" restype="string" datatype="ruby">
         <source>Help patients everywhere and support our Alma Mater</source>
@@ -13575,7 +13575,7 @@
       </trans-unit>
       <trans-unit id="2918" resname="r943465409" restype="string" datatype="ruby">
         <source>Session already claimed by loggedin user</source>
-        <target>La sesión ya fue solicitada por un usuario ingresado</target>
+        <target>La sesión ya fue reclamada por un usuario que inició sesión</target>
       </trans-unit>
       <trans-unit id="2919" resname="r32253533" restype="string" datatype="ruby">
         <source>Already interacting with this patient. Cannot start new session</source>
@@ -17094,7 +17094,7 @@
       </trans-unit>
       <trans-unit id="3819" resname="r889856664" restype="string" datatype="ruby">
         <source>member of %{group} powered by HealthTap</source>
-        <target>miembro de %{group} impulsado por HealthTap</target>
+        <target>miembro de %{group} propulsado por HealthTap</target>
       </trans-unit>
       <trans-unit id="3821" resname="r972670261" restype="string" datatype="ruby">
         <source>HealthTap member</source>
@@ -17130,7 +17130,7 @@
       </trans-unit>
       <trans-unit id="6793" resname="r455658295" restype="string" datatype="x-haml">
         <source>It was extremely helpful for me. My mom accidentally took the wrong medication late one night. I tried calling my family doctor, who did not pick my call. I didn’t know what to do, but suddenly remembered this application. I clicked “Talk to a doctor,” and HealthTap immediately connected me to a doctor. We talked about what happened, and he helped me with first aid and sent me a to-do list for more help. It was extremely helpful at midnight, when I couldn't get any doctor help. It also helped me understand other health issues and benefits suggested by many other doctors. I recommend our employees use this application</source>
-        <target>Fue extremadamente útil para mí. Mi mamá tomó el medicamento incorrecto tarde en una noche. Intenté llamar a mi doctor familiar, el cual no contestó mi llamada. No sabía qué hacer, pero de repente recordé esta aplicación. Hice clic en "Hablar con un doctor," y HealthTap me conectó inmediatamente con un doctor. Hablamos sobre lo que pasó, y me ayudó con primeros auxilios y me envió una lista de quehaceres para más ayuda. Fue extremadamente útil a media noche, cuando no podía tener ninguna ayuda médica. También me ayudó a entender otros problemas y beneficios de salud sugeridos por muchos otros doctores. Le recomiendo a nuestros empleados esta aplicación</target>
+        <target>Fue extremadamente útil para mí. Mi mamá tomó el medicamento incorrecto tarde en una noche. Intenté llamar a mi doctor familiar, el cual no contestó mi llamada. No sabía qué hacer, pero de repente recordé esta aplicación. Hice clic en "Hablar con un doctor," y HealthTap me conectó inmediatamente con un doctor. Hablamos sobre lo que pasó, y me ayudó con primeros auxilios y me envió una lista de acciones por hacer para más ayuda. Fue extremadamente útil a media noche, cuando no podía tener ninguna ayuda médica. También me ayudó a entender otros problemas y beneficios de salud sugeridos por muchos otros doctores. Le recomiendo a nuestros empleados esta aplicación</target>
       </trans-unit>
       <trans-unit id="6794" resname="r741069752" restype="string" datatype="x-haml">
         <source>I am very thankful to be part of this Flex family. Post-flood, we were in the process of cleaning our house, which took more than 1-2 weeks. My wife has been carrying twins, and she was in her second trimester. She had sudden onset of pain and continuous vomiting early in the morning. I was left with very few options to get her to hospital. Fortunately, HealthTap helped me at that time. Dr. Radwan assisted me by virtually checking my wife’s condition and giving appropriate advice, which saved us. Particularly, his personal attention towards our concern and his detailed explanation on the treatment plan was very much appreciated.</source>
@@ -18218,15 +18218,15 @@
       </trans-unit>
       <trans-unit id="4136" resname="r378502483" restype="string" datatype="ruby">
         <source>Infectious disease</source>
-        <target>Infectología</target>
+        <target>Enfermedades infecciosas</target>
       </trans-unit>
       <trans-unit id="4137" resname="r178909025" restype="string" datatype="ruby">
         <source>infectious disease</source>
-        <target>infectología</target>
+        <target>enfermedades infecciosas</target>
       </trans-unit>
       <trans-unit id="4138" resname="r336568407" restype="string" datatype="ruby">
         <source>Advice and treatment from a top US  infectious disease specialist about about hepititis, STDs, HIV, or any other health concerns &amp;mdash; conveniently and privately via live video or text chat from your mobile</source>
-        <target>Consejo y tratamiento de uno de los mejores especialistas en infectología de los EE.UU. acerca de hepatitis, ITS, HIV o cualquier otra preocupación de salud &amp;mdash; de forma conveniente y privada vía chat de texto o video desde tu dispositivo móvil o computadora</target>
+        <target>Consejo y tratamiento de uno de los mejores especialistas en enfermedades infecciosas de los EE.UU. acerca de hepatitis, ITS, HIV o cualquier otra preocupación de salud &amp;mdash; de forma conveniente y privada vía chat de texto o video desde tu dispositivo móvil o computadora</target>
       </trans-unit>
       <trans-unit id="4139" resname="r340734675" restype="string" datatype="ruby">
         <source>Advice and treatment from a top US dermatologist about acne, rashes, anti-aging, or any other health concerns &amp;mdash; conveniently and privately via live video or text chat from your mobile device or computer</source>
@@ -18702,7 +18702,7 @@
       </trans-unit>
       <trans-unit id="4261" resname="r796496547" restype="string" datatype="ruby">
         <source>In May 2013, &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; launched AppRX so our users can get app recommendations from real doctors. With AppRX, we make it fast and easy to find health and wellness apps by creating intuitive, user-friendly categories, and posting doctor recommendations and written reviews.  &lt;a href='http://venturebeat.com/2013/05/30/healthtap-apprx/' target='_blank' rel=nofollow &gt;Read&amp;nbsp;article&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</source>
-        <target>En mayo del 2013 &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; lanzó AppRx, para que los usuarios puedieran obtener recomendaciones de aplicaciones de doctores de verdad Con AppRx, hacemos fácil y sencillo encontrar aplicaciones de salud y bienestar al crear categorías intuitivas y accesible para el usuario, y añadiendo recomendaciones y valoraciones escritas por doctores para aplicaciones. &lt;a href='http://venturebeat.com/2013/05/30/healthtap-apprx/' target='_blank' rel=nofollow &gt;Leer&amp;nbsp;artículo&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
+        <target>En mayo del 2013 &lt;span class='ht-name' &gt;HealthTap&lt;/span&gt; lanzó AppRx, para que los usuarios puedieran obtener recomendaciones de aplicaciones de doctores de verdad Con AppRx, hacemos fácil y sencillo encontrar aplicaciones de salud y bienestar al crear categorías intuitivas y accesible para el usuario, y añadiendo recomendaciones y críticas escritas por doctores para aplicaciones. &lt;a href='http://venturebeat.com/2013/05/30/healthtap-apprx/' target='_blank' rel=nofollow &gt;Leer&amp;nbsp;artículo&amp;nbsp;&amp;rsaquo;&lt;/a&gt;</target>
       </trans-unit>
       <trans-unit id="4262" resname="r998021805" restype="string" datatype="ruby">
         <source>Jul 2013</source>
@@ -19238,7 +19238,7 @@
       </trans-unit>
       <trans-unit id="4396" resname="r905833358" restype="string" datatype="ruby">
         <source>American Board of Internal Medicine - Infectious Disease</source>
-        <target>American Board of Internal Medicine - Infectología</target>
+        <target>American Board of Internal Medicine - Enfermedades Infecciosas</target>
       </trans-unit>
       <trans-unit id="4397" resname="r1053147855" restype="string" datatype="ruby">
         <source>American Board of Internal Medicine - Interventional Cardiology</source>
@@ -19478,7 +19478,7 @@
       </trans-unit>
       <trans-unit id="4456" resname="r514658035" restype="string" datatype="ruby">
         <source>American Board of Pediatrics - Pediatric Infectious Diseases</source>
-        <target>American Board of Pediatrics – Infectología Pediátrica</target>
+        <target>American Board of Pediatrics – Enfermedades Infecciosas Pediátricas</target>
       </trans-unit>
       <trans-unit id="4457" resname="r299021453" restype="string" datatype="ruby">
         <source>American Board of Pediatrics - Pediatric Nephrology</source>
@@ -19762,7 +19762,7 @@
       </trans-unit>
       <trans-unit id="4527" resname="r8671447" restype="string" datatype="ruby">
         <source>Emergency Medicine (AOBEM)</source>
-        <target>Medicina de Urgencias (AOBEM)</target>
+        <target>Medicina de Emergencias (AOBEM)</target>
       </trans-unit>
       <trans-unit id="4528" resname="r529360717" restype="string" datatype="ruby">
         <source>Family Physicians (AOBFP)</source>
@@ -20338,7 +20338,7 @@
       </trans-unit>
       <trans-unit id="4672" resname="r867893033" restype="string" datatype="ruby">
         <source>Healthier, happier workforce. Lower costs</source>
-        <target>Una fuerza de trabajo más feliz y sana. Reduce costos</target>
+        <target>Fuerza de trabajo más feliz y sana. Reducir costos</target>
       </trans-unit>
       <trans-unit id="4673" resname="r95063595" restype="string" datatype="ruby">
         <source>Product tour</source>
@@ -20510,7 +20510,7 @@
       </trans-unit>
       <trans-unit id="4716" resname="r1043001442" restype="string" datatype="ruby">
         <source>Infectious Disease Specialist</source>
-        <target>Especialista en Infectología</target>
+        <target>Especialista en Enfermedades Infecciosas</target>
       </trans-unit>
       <trans-unit id="4717" resname="r63384949" restype="string" datatype="ruby">
         <source>Neonatologist</source>
@@ -21046,7 +21046,7 @@
       </trans-unit>
       <trans-unit id="4860" resname="r472132183" restype="string" datatype="ruby">
         <source>&lt;em&gt;100% Guarantee.&lt;/em&gt;&lt;br/&gt; Only $99 per month for unlimited visits. Cancel anytime.</source>
-        <target>&lt;em&gt;Garantía al 100%.&lt;/em&gt;&lt;br/&gt; Solo $99 al mes por visitas ilimitadas. Cancela en cualquier momento.</target>
+        <target>&lt;em&gt;100% Garantizado.&lt;/em&gt;&lt;br/&gt; Solo $99 al mes por visitas ilimitadas. Cancela en cualquier momento.</target>
       </trans-unit>
       <trans-unit id="4861" resname="r13464715" restype="string" datatype="ruby">
         <source>Unlimited text chat or video with doctors from any mobile device or desktop.</source>
@@ -21058,7 +21058,7 @@
       </trans-unit>
       <trans-unit id="4866" resname="r472132183" restype="string" datatype="ruby">
         <source>&lt;em&gt;100% Guarantee.&lt;/em&gt;&lt;br/&gt; Only $99 per month for unlimited visits. Cancel anytime.</source>
-        <target>&lt;em&gt;Garantía al 100%.&lt;/em&gt;&lt;br/&gt; Solo $99 al mes por visitas ilimitadas. Cancela en cualquier momento.</target>
+        <target>&lt;em&gt;100% Garantizado.&lt;/em&gt;&lt;br/&gt; Solo $99 al mes por visitas ilimitadas. Cancela en cualquier momento.</target>
       </trans-unit>
       <trans-unit id="4867" resname="r1020406272" restype="string" datatype="ruby">
         <source>Ask a Doctor About Your Upset Stomach</source>
@@ -21362,7 +21362,7 @@
       </trans-unit>
       <trans-unit id="4926" resname="r492626346" restype="string" datatype="ruby">
         <source>Top %{feed_count} on %{topic_name} - HealthTap</source>
-        <target>Lo mejor %{feed_count} sobre %{topic_name} - HealthTap</target>
+        <target>Los mejores %{feed_count} sobre %{topic_name} - HealthTap</target>
       </trans-unit>
       <trans-unit id="4927" resname="r964290858" restype="string" datatype="ruby">
         <source>HealthTap: Get millions of instant trustworthy answers from top doctors on %{topic_name}</source>
@@ -21844,7 +21844,7 @@
       </trans-unit>
       <trans-unit id="5049" resname="r386600708" restype="string" datatype="ruby">
         <source>100k Doctors — HealthTap</source>
-        <target>100,000 Doctores - HealthTap</target>
+        <target>100k Doctores - HealthTap</target>
       </trans-unit>
       <trans-unit id="5050" resname="r113813636" restype="string" datatype="ruby">
         <source>HealthTap Prime Consult</source>
@@ -21868,7 +21868,7 @@
       </trans-unit>
       <trans-unit id="5055" resname="r9433786" restype="string" datatype="ruby">
         <source>I love that new patients find me on HealthTap and request virtual appointments with me. This is changing the face of medicine.</source>
-        <target>Me encanta que nuevos pacientes me encuentren en HealthTap y soliciten citas virtuales conmigo. Esto está cambiando la cara de la medicina.</target>
+        <target>Amo que nuevos pacientes me encuentren en HealthTap y soliciten citas virtuales conmigo. Esto está cambiando la cara de la medicina.</target>
       </trans-unit>
       <trans-unit id="5056" resname="r788129504" restype="string" datatype="ruby">
         <source>View my Virtual Practice landing page.</source>
@@ -22189,7 +22189,7 @@
       </trans-unit>
       <trans-unit id="5112" resname="r306486934" restype="string" datatype="ruby">
         <source>You must be logged in</source>
-        <target>Debes de haber ingresado</target>
+        <target>Debes de haber iniciado sesión</target>
       </trans-unit>
       <trans-unit id="5113" resname="r237971384" restype="string" datatype="ruby">
         <source>No tip found with it:%{id}</source>
@@ -22481,7 +22481,7 @@
     <body>
       <trans-unit id="5224" resname="r328350082" restype="string" datatype="ruby">
         <source>Logged on person cannot claim credits</source>
-        <target>Persona ingresada no puede reclamar créditos</target>
+        <target>Persona con sesión iniciada no puede reclamar créditos</target>
       </trans-unit>
     </body>
   </file>
@@ -22569,7 +22569,7 @@
     <body>
       <trans-unit id="5240" resname="r290061518" restype="string" datatype="ruby">
         <source>must be logged in.</source>
-        <target>debes de haber ingresado</target>
+        <target>debes de haber iniciado sesión.</target>
       </trans-unit>
       <trans-unit id="5241" resname="r1036468223" restype="string" datatype="ruby">
         <source>attribute not found</source>
@@ -22745,7 +22745,7 @@
     <body>
       <trans-unit id="5287" resname="r364116464" restype="string" datatype="ruby">
         <source>Credit card declined</source>
-        <target>Tarjeta de crédito rechazada</target>
+        <target>Tarjeta de crédito declinada</target>
       </trans-unit>
     </body>
   </file>
@@ -23166,7 +23166,7 @@
       </trans-unit>
       <trans-unit id="5379" resname="r430724114" restype="string" datatype="x-haml">
         <source>. We believe that being kind is central to living a healthy life, and having a healthy company. However we may differ in our ideas, approaches and perspectives, caring for one another unites us.</source>
-        <target>. Creemos que ser bondadosos es central para vivir una vida saludable, y tener una compañía saludable. Aunque difiramos en nuestras ideas, métodos y perspectivas, el preocuparnos uno por el otro nos une.</target>
+        <target>. Creemos que ser bondadosos es central para vivir una vida saludable, y tener una compañía saludable. No obstante que difiramos en nuestras ideas, métodos y perspectivas, el preocuparnos uno por el otro nos une.</target>
       </trans-unit>
       <trans-unit id="5382" resname="r238547288" restype="string" datatype="x-haml">
         <source>. We believe that being open and transparent facilitates collaboration and teamwork and creates a constructive environment in which the best ideas flourish, regardless of their origins. We believe that openness and transparency, together with integrity and honesty, form the foundation of trust required for our success.</source>
@@ -23178,7 +23178,7 @@
       </trans-unit>
       <trans-unit id="5386" resname="r975629740" restype="string" datatype="x-haml">
         <source>. We believe that something worth doing is worth doing right. We hold ourselves to the highest standards and consistently aim to excel. We like to win, and we love to learn. We enjoy challenging ourselves and strive for personal mastery.</source>
-        <target>. Creemos que todo lo que valga la pena debe hacerse bien. Nos ceñimos a los más altos estándares y consistentemente apuntamos a sobresalir. Nos gusta ganar, y amamos aprender. Disfrutamos desafiándonos y luchamos por dominio personal.</target>
+        <target>. Creemos que algo que vale la pena hacerse, vale la pena hacer bien. Nos ceñimos a los más altos estándares y consistentemente apuntamos a sobresalir. Nos gusta ganar, y amamos aprender. Disfrutamos desafiándonos y luchamos por dominio personal.</target>
       </trans-unit>
       <trans-unit id="5387" resname="r74830827" restype="string" datatype="x-haml">
         <source>. We believe that the world is changed by passionate people who channel positive energy toward a vision they believe in. Positive energy fuels our progress and brings joy to our journey by helping us endure, see beyond, and overcome challenges and difficulties.</source>
@@ -23430,7 +23430,7 @@
       </trans-unit>
       <trans-unit id="5444" resname="r8160077" restype="string" datatype="x-haml">
         <source>Geoff is HealthTap's co-founder and Chief Medical Information Officer. He is responsible for the architecture of HealthTap's Medical Knowledge Base. Prior to joining HealthTap, Geoff served as the Chief Medical Officer and the Executive Vice President of Product Development at ePocrates, as the Chief Medical Officer of Wellsphere, and created the first consumer health site at Healtheon (WebMD). Additionally, Geoff has served as the Chief of Medical Informatics in Emergency Medicine for Harvard University teaching hospital Beth Israel, and on the clinical faculty in Emergency Medicine at Stanford University and UCSD.</source>
-        <target>Geoff es el cofundador y Oficial de Información Médica en Jefe de HealthTap. Él es responsable de la arquitectura de la Base de Conocimientos Médicos de HealthTap. Antes de unirse a HealthTap, Geoff servía como el Oficial Médico en Jefe y el Vice Presidente Ejecutivo de Gestión de Producto en Epocrates, como el Oficial Médico en Jefe en Wellsphere, y creó el primer sitio de salud para el consumidor en Healtheon (WebMD). Además, Geoff ha servido como Jefe de Información Médica en Medicina de Urgencias para el hospital de enseñanza Beth Israel de Harvard University, y como facultativo clínico en Medicina de Urgencias en Standford University y UCSD.</target>
+        <target>Geoff es el cofundador y Oficial de Información Médica en Jefe de HealthTap. Él es responsable de la arquitectura de la Base de Conocimientos Médicos de HealthTap. Antes de unirse a HealthTap, Geoff servía como el Oficial Médico en Jefe y el Vice Presidente Ejecutivo de Gestión de Producto en Epocrates, como el Oficial Médico en Jefe en Wellsphere, y creó el primer sitio de salud para el consumidor en Healtheon (WebMD). Además, Geoff ha servido como Jefe de Información Médica en Medicina de Emergencias para el hospital de enseñanza Beth Israel de Harvard University, y como facultativo clínico en Medicina de Emergencias en Standford University y UCSD.</target>
       </trans-unit>
       <trans-unit id="5445" resname="r480483473" restype="string" datatype="x-haml">
         <source>Sean is HealthTap’s Head of Product. He is responsible for taking product ideas and feedback from concept to market, and into the hands of millions of patients and doctors around the world. Sean is an engineer, designer, and serial technology entrepreneur. Prior to HealthTap, Sean was the co-founder of PayoutHub, a social game-monetization platform (acquired in 2009), and the co-founder and COO of GXStudios (GoCrossCampus and PickTeams), a venture-backed pioneer of online team-based casual games. Sean has also worked with leading health and technology firms. Sean also co-founded and led the Yale Entrepreneurial Institute, the University’s official incubator and fellowship program for entrepreneurs. Sean has a technical background in UIUX development and design, and holds inventions in the fields of oral drug delivery, urinary incontinence, genetic testing, and polymer nanocomposites.</source>
@@ -23722,7 +23722,7 @@
       </trans-unit>
       <trans-unit id="5508" resname="r587293839" restype="string" datatype="x-haml">
         <source>Members can easily access relevant information that you share under five tabs: Answers, Tips &amp; Health Guides (the content you've created), Feed (your HealthTap activity and the activity of your network), Network (your Network), About (your professional contact information and your accomplishments), and Award Wall (the Awards and Thanks you've received).</source>
-        <target>Los miembros pueden acceder fácilmente a información relevante que compartes bajo cinco pestañas: Respuestas, Tips &amp; Guías de Salud (el contenido que has creado), Feed (tu actividad en HealthTap y la actividad de tu red), Red (tu Red), Acerca de (tu información de contacto profesional y tus logros), y tu Pared de Premios (Los Premios y Agradecimientos que has recibido)</target>
+        <target>Los miembros pueden acceder fácilmente a información relevante que compartes bajo cinco pestañas: Respuestas, Tips &amp; Guías de Salud (el contenido que has creado), Fuente (tu actividad en HealthTap y la actividad de tu red), Red (tu Red), Acerca de (tu información de contacto profesional y tus logros), y tu Pared de Premios (Los Premios y Agradecimientos que has recibido)</target>
       </trans-unit>
       <trans-unit id="5509" resname="r911785260" restype="string" datatype="x-haml">
         <source>Your statistics are a reflection of your engagement on HealthTap. Raising your stats raises your rank among your peers and enhances your Trust Score, which helps get you featured to new and existing patients.</source>
@@ -23862,7 +23862,7 @@
       </trans-unit>
       <trans-unit id="5538" resname="r364971773" restype="string" datatype="x-haml">
         <source>Ask one question; get multiple answers from trusted doctors across the country. Access your own personalized, relevant health feed that’s always up-to-date.</source>
-        <target>Haz una pregunta; obtén múltiples respuestas de doctores confiables a través del país. Accede a tu propia fuente de salud relevante y personalizado que siempre esta actualizado.</target>
+        <target>Haz una pregunta; obtén múltiples respuestas de doctores confiables a través del país. Accede a tu propia fuente de salud relevante y personalizada que siempre esta actualizada.</target>
       </trans-unit>
       <trans-unit id="5539" resname="r913103717" restype="string" datatype="x-haml">
         <source>Receive daily TipTaps on topics that matter most to you. TipTaps are beautiful, bite-sized, tid-bits of health wisdom delivered to you by the world's best doctors!</source>
@@ -24362,7 +24362,7 @@
       </trans-unit>
       <trans-unit id="5657" resname="r291967490" restype="string" datatype="x-haml">
         <source>Building a world-changing platform is exciting, inspiring, and challenging. Trying to make a change in people’s lives for the better is even more so. It takes the smartest and most compassionate people, with deep problem-solving capabilities, multidisciplinary skills, the ability to reduce comprehensive complex systems to their essence, and a thorough kindness of heart to succeed.</source>
-        <target>Construir una plataforma para cambiar el mundo es emocionante, inspirador y desafiante. Tratar de crear un cambio en la vida de la gente para bien es aún mejor. El éxito involucra personas inteligentes y compasivas, capaces de resolver problemas, con competencias multidisciplinarias, la habilidad de llevar a su esencia sistemas complejos y una profunda bondad en el corazón.</target>
+        <target>Construir una plataforma para cambiar el mundo es emocionante, inspirador y desafiante. Tratar de crear un cambio en la vida de la gente para bien es aún mejor. Toma a la gente más inteligente y compasiva, con intensa capacidad de resolver problemas, habilidades multidisciplinarias, la habilidad para reducir sistemas complejos completos a su esencia, y una profunda bondad del corazón para tener éxito.</target>
       </trans-unit>
       <trans-unit id="5658" resname="r595399328" restype="string" datatype="x-haml">
         <source>CHECK OUT OUR JOB OPENINGS</source>
@@ -24382,7 +24382,7 @@
       </trans-unit>
       <trans-unit id="5662" resname="r545414002" restype="string" datatype="x-haml">
         <source>We believe our ability to marry healthcare and technology will have a great impact on the world, and will prolong the life expectancy of humankind. We’re excited about improving the efficiency of care, while enhancing the quality of people’s lives, and making people’s feel good every day.</source>
-        <target>Creemos que nuestra habilidad de reunir la atención de la salud con la tecnología tendrá un gran impacto en el mundo y prolongará la expectativa de vida de la humanidad. Estamos emocionados acerca de mejorar la eficiencia de la atención, mientras mejoramos la calidad de vida de la gente, haciendo a la gente sentirse bien todos los días.</target>
+        <target>Creemos en nuestra habilidad de casar a la atención a la salud con la tecnología tendrá un gran impacto en el mundo, y prolongará la expectativa de vida de la humanidad. Estamos emocionados acerca de mejorar la eficiencia de la atención, mientras mejoramos la calidad de vida de la gente, haciendo a la gente sentirse bien todos los días.</target>
       </trans-unit>
       <trans-unit id="5663" resname="r232786897" restype="string" datatype="x-haml">
         <source>We value health and happiness. This means that you get full health benefits (health, dental, vision), one of Silicon Valley’s best PTO policies, healthy catered lunches, dinners, and snacks throughout the day, lots of great company events and outings, subsidized gym memberships, yearly retreats to fun places, and much, much more.</source>
@@ -24458,7 +24458,7 @@
       </trans-unit>
       <trans-unit id="5685" resname="r105949840" restype="string" datatype="x-haml">
         <source>A cookie is a tiny little file that's stored on your computer. It contains the address of the Web site and codes that your internet browser sends back to the Web site each time you visit a page there. Cookies from SmartHealth do not contain personal information or anything dangerous; they are useful in making your experience with SmartHealth a better experience. When you browse the Web and access a Web page, the Web server needs to know who you are if you want to do things that require logging in or putting items in a virtual shopping cart or completing any other process that requires that the Web site remember information about you as you move from page to page.</source>
-        <target>Una cookie es un pequeñísimo archivo que está almacenado en tu computadora. Contiene la dirección del sitio Web y codifica que tu navegador de Internet, y códigos que envía de regreso al sitio Web cada vez que visitas una página ahí. Cookies de SmartHealth no contienen información personal o algo peligroso; son usadas para hacer tu experiencia con SmartHealth una mejor experiencia. Cuando exploras la Web o acceder una página Web, el servidor Web necesita saber quién eres si quieres hacer cosas que requieran iniciar sesión o colocar objetos en un carro de compras virtual, o completar cualquier otro proceso que requiera que el sitio Web recuerde información acerca de ti mientras te mueves de página a página.</target>
+        <target>Una cookie es un pequeñísimo archivo que está almacenado en tu computadora. Contiene la dirección del sitio Web y codifica que tu navegador de Internet, y códigos que envía de regreso al sitio Web cada vez que visitas una página ahí. Cookies de SmartHealth no contienen información personal o algo peligroso; son usadas para hacer tu experiencia con SmartHealth una mejor experiencia. Cuando exploras la Web o acceder una página Web, el servidor Web necesita saber quién eres si quieres hacer cosas que requieran ingresar o colocar objetos en un carro de compras virtual, o completar cualquier otro proceso que requiera que el sitio Web recuerde información acerca de ti mientras te mueves de página a página.</target>
       </trans-unit>
       <trans-unit id="5686" resname="r910698582" restype="string" datatype="x-haml">
         <source>The information that you enter into SmartHealth will be used to provide you:</source>
@@ -24542,7 +24542,7 @@
       </trans-unit>
       <trans-unit id="5702" resname="r632621604" restype="string" datatype="x-haml">
         <source>“Thanks doc!” is multimedia art installation taking viewers on a symbolic journey of care and gratitude, and highlighting the impact of caring for others by sharing knowledge and showing compassion. The piece uses actual words of thanks that patients have shared with doctors, demonstrating the often unspoken appreciation we feel for the doctors who help us overcome adversity and tend to us when we need it most.</source>
-        <target>“Thanks doc!” es una instalación de arte multimedia que lleva a los espectadores en un viaje simbólico de atención y gratitud, y resaltando el impacto que tiene el cuidar de otros al compartir información y mostrar compasión. La pieza usa palabras reales de agradecimiento que pacientes han compartido con doctores, demostrando el muchas veces silencioso agradecimiento que sentimos por los doctores que nos ayudan a superar la adversidad, y quienes nos atienden cuando lo necesitamos más.</target>
+        <target>“Thanks doc!” es una instalación de arte multimedia que lleva a los espectadores en un viaje simbólico de cuidado y gratitud, y resaltando el impacto que tiene el cuidar de otros al compartir información y mostrar compasión. La pieza usa palabras reales de agradecimiento que pacientes han compartido con doctores, demostrando el muchas veces silencioso agradecimiento que sentimos por los doctores que nos ayudan a superar la adversidad, y quienes nos atienden cuando lo necesitamos más.</target>
       </trans-unit>
       <trans-unit id="5703" resname="r23157652" restype="string" datatype="x-haml">
         <source>The series of 18 panels (above) combines images of doctors with thank-you notes from patients. The installation was first displayed at the Stanford MedicineX Conference at the Stanford School of Medicine on September 29–30, 2012.</source>
@@ -24666,7 +24666,7 @@
       </trans-unit>
       <trans-unit id="5748" resname="r283691226" restype="string" datatype="x-haml">
         <source>On HealthTap Prime and Concierge, as available and appropriate for virtual consults, diagnosis and prescriptions are available. HealthTap Prime and Concierge are not a substitute for: health insurance, a primary care doctor, or in-person health care interactions. You agree not to use HealthTap Prime as a substitute for health insurance or a primary care doctor or in- person doctor visits. You understand and agree that prescriptions on HealthTap prime are limited in type and duration, and you agree not to use HealthTap Prime to request prescriptions for any medications or for any duration not permitted via HealthTap Prime.</source>
-        <target>En HealthTap Prime y Concierge, según sean disponibles y apropiados para consultas virtuales, diagnóstico y recetas están disponibles. HealthTap Prime y Concierge no son un sustituto para: seguro médico, doctor de atención primaria, o interacciones de atención a la salud en persona. Aceptas no usar HealthTap Prime como un sustituto para tu seguro médico o tu médico de atención primaria, o para las consultas médicas en persona. Entiendes y estás de acuerdo que las recetas en HealthTap Prime son limitadas en tipo y duración, y aceptas no usar HealthTap Prime para solicitar recetas para cualquier medicamento o por cualquier duración de tiempo no permitida a través de HealthTap Prime.</target>
+        <target>En HealthTap Prime y Concierge, según sean disponibles y apropiados para consultas virtuales, diagnóstico y recetas están disponibles. HealthTap Prime y Concierge no son un sustituto para: seguro médico, doctor de atención primaria, o interacciones de atención a la salud en persona. Aceptas no usar HealthTap Prime como un sustituto para seguro médico o doctor de atención primaria, o visitas al doctor en persona. Entiendes y estás de acuerdo que las recetas en HealthTap Prime son limitadas en tipo y duración, y aceptas no usar HealthTap Prime para solicitar recetas para cualquier medicamento o por cualquier duración de tiempo no permitida a través de HealthTap Prime.</target>
       </trans-unit>
       <trans-unit id="5750" resname="r352044749" restype="string" datatype="x-haml">
         <source>Generally, this agreement governs your use of the Apps. Other terms may apply to your use of a specific features or parts of our Apps. If there is a conflict between these TOU and terms posted for a specific feature or part, the latter terms apply to your use of that feature or part.</source>
@@ -24694,7 +24694,7 @@
       </trans-unit>
       <trans-unit id="5756" resname="r216273983" restype="string" datatype="x-haml">
         <source>The use of HealthTap does not create a doctor-patient relationship. HealthTap contains Content, and may help you identify services or may offer services. Everything on HealthTap, including Content accessed or Services provided through HealthTap, are for your information, and should be used for informational purposes only. This means that Content and Services are not a substitute for medical advice, diagnosis, treatment, or care from your physician.</source>
-        <target>El uso de HealthTap no crea una relación médico - paciente. HealthTap contiene Contenido, y puede ayudarte a identificar servicios o puede ofrecerte servicios. Todo en HealthTap, incluyendo el Contenido accedido o los Servicios brindados a través de HealthTap, son para su información, y deberán ser usados para fines informativos solamente. Esto significa que el Contenido y Servicios no son sustituto para consejo médico, diagnóstico, tratamiento, o atención de tu médico.</target>
+        <target>El uso de HealthTap no crea una relación médico - paciente. HealthTap contiene Contenido, y puede ayudarte a identificar servicios o puede ofrecerte servicios. Todo en HealthTap, incluyendo el Contenido accedido o los Servicios brindados a través de HealthTap, son para su información, y deberán ser usados para fines informativos solamente. Esto significa que el Contenido y Servicios no son sustitutos para consejo médico, diagnóstico, tratamiento, o atención de tu médico.</target>
       </trans-unit>
       <trans-unit id="5757" resname="r928976790" restype="string" datatype="x-haml">
         <source>HealthTap Prime and HealthTap Concierge support doctor-patient relationships. HealthTap</source>
@@ -24842,7 +24842,7 @@
       </trans-unit>
       <trans-unit id="5794" resname="r880679331" restype="string" datatype="x-haml">
         <source>You agree to use the Apps and any Service responsibly, and in a manner that is not: unlawful, threatening, harassing, abusive, defamatory, slanderous, libelous, harmful to minors, vulgar, gratuitously violent, obscene, pornographic, indecent, lewd, invasive of another's privacy, or racially, ethnically or otherwise offensive, hateful or abusive. You also agree not to intentionally overuse any Service or</source>
-        <target>Tu aceptas usar las Aplicaciones y cualquier otro Servicio responsablemente, en una forma que no sea: ilícita, amenazante, abusiva, difamatoria, calumniosa, dañina a menores, vulgar, injustificadamente violenta, obscena, pornográfica, indecente, lasciva, invasiva de la privacidad de otro, ofensiva a razas o etnias, llena de odio o abusiva. También aceptas no intencionalmente usar excesivamente cualquier Servicio o</target>
+        <target>Tú aceptas usar las Aplicaciones y cualquier otro Servicio responsablemente, en una forma que no sea: ilícita, amenazante, abusiva, difamatoria, calumniosa, dañina a menores, vulgar, injustificadamente violenta, obscena, pornográfica, indecente, lasciva, invasiva de la privacidad de otro, ofensiva a razas o etnias, llena de odio o abusiva. También aceptas no intencionalmente usar excesivamente cualquier Servicio o</target>
       </trans-unit>
       <trans-unit id="5795" resname="r876235835" restype="string" datatype="x-haml">
         <source>The Content and Services may not be used for any illegal purpose. You may not access our networks, computers, or the Content and Services in any manner that could damage, disable, overburden, or impair them, or interfere with any other person's use and enjoyment. You may not attempt to gain unauthorized access to any Content or Services, other accounts, computer systems, or networks connected with HealthTap, the Content, or Services. You may not use any automated means (such as a scraper) to access HealthTap, the Content, or Services for any purpose. Such unauthorized access includes, but is not limited to, using another person's login credentials to access HealthTap. Any attempt by any individual or entity to solicit login information of any other user or HealthTap Medical Expert or to access any such account is an express and direct violation of these Terms of Use and of applicable law, including relevant privacy and security laws and laws prohibiting unfair or unethical business practices.</source>
@@ -24958,7 +24958,7 @@
       </trans-unit>
       <trans-unit id="5824" resname="r713820193" restype="string" datatype="x-haml">
         <source>We have obtained or applied for various Trademarks and service marks. HealthTap, the HealthTap logo, other HealthTap Trademarks and service marks and other HealthTap logos and product and service names are our trademarks (the "HealthTap Marks"). If you would like to use or display any HealthTap Marks, you must ask our permission. Without our prior written permission, or according to the media use guidelines we publish, you agree not to display or use in any manner the HealthTap Marks. All trademarks, brands, and content on HealthTap are the property of their respective owners.</source>
-        <target>Nosotros hemos obtenido o aplicado para varias Marcas Registrada y marcas de servicio. HealthTap, el logo de HealthTap, otras Marcas Registradas de HealthTap y marcas de servicio otros logos de HealthTap y los nombres de productos y servicios son nuestras marcas registradas (las “Marcas HealthTap”). Si tú desearas usar o mostrar cualquier Marca HealthTap, tú debes pedir nuestro permiso. Sin nuestro previo permiso por escrito, o de acuerdo con las directrices de uso de medios que nosotros publicamos, tu aceptas no mostrar o usar de ninguna manera las Marcas HealthTap. Todas las marcas registradas, marcas y contenido en HealthTap son la propiedad de sus respectivos dueños.</target>
+        <target>Nosotros hemos obtenido o aplicado para varias Marcas Registrada y marcas de servicio. HealthTap, el logo de HealthTap, otras Marcas Registradas de HealthTap y marcas de servicio otros logos de HealthTap y los nombres de productos y servicios son nuestras marcas registradas (las “Marcas HealthTap”). Si tú desearas usar o mostrar cualquier Marca HealthTap, tú debes pedir nuestro permiso. Sin nuestro previo permiso por escrito, o de acuerdo con las directrices de uso de medios que nosotros publicamos, tú aceptas no mostrar o usar de ninguna manera las Marcas HealthTap. Todas las marcas registradas, marcas y contenido en HealthTap son la propiedad de sus respectivos dueños.</target>
       </trans-unit>
       <trans-unit id="5825" resname="r159586326" restype="string" datatype="x-haml">
         <source>You agree not to engage in any activity that would constitute copyright infringement with respect to the Content. You may not reproduce, create derivative works of, distribute, publicly perform or publicly display the Content or any portion thereof without our prior written consent. You may, however, use the Apps as they are designed and intended to be used, including using App features which allow you to re-post Content or portions of Content, including those which permit you to distribute Content through other third party applications and mediums (such as Facebook or Twitter), so long as you do not modify that Content or the functionality of those features in any way. This right to re-post Content does not create for you or grant to you any additional rights in such Content. Additionally, you may not use any metatags or any other "hidden text" utilizing the name "HealthTap" without our prior written permission.</source>
@@ -24966,7 +24966,7 @@
       </trans-unit>
       <trans-unit id="5826" resname="r131110200" restype="string" datatype="x-haml">
         <source>You agree not to access, attempt to access, request access not authorized by the Apps or use any any App Content or data without our Permission. This means that you agree not to transmit, download, upload, post, sell, rent, license, transfer, disclose, mirror, frame, reverse engineer, decompile, disassemble, or use any aspect of the Apps or any Content, in whole or in part, in any form or by any means.</source>
-        <target>Tú aceptas no acceder, intentar acceder, solicitar acceso no autorizado por las Aplicaciones o usar cualquier Contenido de la Aplicación o datos sin nuestro Permiso. Esto significa que tu aceptas no transmitir, descargar, subir, publicar, vender, rentar, dar licencias, transferir, divulgar, replicar, enmarcar, realizar ingeniería inversa, descompilar, desarmar, o usar cualquier aspecto de las Aplicaciones o cualquier Contenido, completo o en parte, en cualquier forma o por cualquier medio.</target>
+        <target>Tú aceptas no acceder, intentar acceder, solicitar acceso no autorizado por las Aplicaciones o usar cualquier Contenido de la Aplicación o datos sin nuestro Permiso. Esto significa que tú aceptas no transmitir, descargar, subir, publicar, vender, rentar, dar licencias, transferir, divulgar, replicar, enmarcar, realizar ingeniería inversa, descompilar, desarmar, o usar cualquier aspecto de las Aplicaciones o cualquier Contenido, completo o en parte, en cualquier forma o por cualquier medio.</target>
       </trans-unit>
       <trans-unit id="5828" resname="r235881178" restype="string" datatype="x-haml">
         <source>. If you are an expert you agree to the</source>
@@ -25454,7 +25454,7 @@
       </trans-unit>
       <trans-unit id="6046" resname="r880856328" restype="string" datatype="x-haml">
         <source>By continuing to use HealthTap, you agree to this Privacy Statement and any updates to it. This means that if the Privacy Statement changes, you agree to these changes if you keep using HealthTap. When this policy is changed (other than for typographical corrections or minor changes that do not alter its meaning), we will update the "last modified" date at the top of the policy. We may provide a summary at the bottom of the policy, describing the types of changes made.</source>
-        <target>Al continuar usando HealthTap, aceptas este Aviso de Privacidad y cualquier actualización a este. Esto significa que, si el Aviso de Privacidad cambia, tu aceptas estos cambios si sigues usando HealthTap. Cuando esta política sea cambiada (aparte de por correcciones tipográficas o para cambios menores que no alteran su significado), actualizaremos la fecha de “última modificación” en la parte superior de la política. Nosotros podremos brindarte un resumen en la parte inferior de la política, describiendo los tipos de cambios realizados.</target>
+        <target>Al continuar usando HealthTap, aceptas este Aviso de Privacidad y cualquier actualización a este. Esto significa que, si el Aviso de Privacidad cambia, tú aceptas estos cambios si sigues usando HealthTap. Cuando esta política sea cambiada (aparte de por correcciones tipográficas o para cambios menores que no alteran su significado), actualizaremos la fecha de “última modificación” en la parte superior de la política. Nosotros podremos brindarte un resumen en la parte inferior de la política, describiendo los tipos de cambios realizados.</target>
       </trans-unit>
       <trans-unit id="6047" resname="r261084037" restype="string" datatype="x-haml">
         <source>Your use of HealthTap is anonymous. Your Personally Identifiable Information (your real name, date of birth, email address and other such information) is not visible to others. Staying anonymous on HealthTap is easy - simply don't post personally identifiable information (such as your name) in your questions or other content visible to others.</source>
@@ -25638,7 +25638,7 @@
       </trans-unit>
       <trans-unit id="9554" resname="r1008017041" restype="string" datatype="x-haml">
         <source>Because of this, we’ve designed our Privacy Statement with our members in mind, creating links to the most common questions members may have about the site and how it works where privacy issues may be involved. We’ve also written everything in plain, understandable language.</source>
-        <target>Por esto, hemos diseñado nuestro Aviso de Privacidad con nuestros miembros en mente, creando enlaces hacia las preguntas más comunes que miembros puedan tener acerca del sitio y cómo funciona donde puedan estar involucrados problemas de privacidad. También hemos escrito todo en lenguaje común y entendible.</target>
+        <target>Por esto, hemos diseñado nuestro Aviso de Privacidad con nuestros miembros en mente, creando enlaces hacia las preguntas más comunes que miembros puedan tener acerca del sitio y como funciona donde puedan estar involucrados problemas de privacidad. También hemos escrito todo en lenguaje común y entendible.</target>
       </trans-unit>
       <trans-unit id="9556" resname="r115769934" restype="string" datatype="x-haml">
         <source>that describes our core beliefs about privacy and your core rights as a user of our site. These documents are located on our</source>
@@ -25706,7 +25706,7 @@
       </trans-unit>
       <trans-unit id="9587" resname="r309314949" restype="string" datatype="x-haml">
         <source>Yes. By continuing to use HealthTap, you agree to this Privacy Statement and any updates to it. This means that if the Privacy Statement changes, you agree to these changes if you keep using HealthTap. When this policy is changed (other than for typographical corrections that do not change its meaning), we will update the "last modified" date at the top of the policy. We also will provide a summary at the bottom of the policy, describing the types of changes made.</source>
-        <target>Sí. Al continuar usando HealthTap, aceptas este Aviso de Privacidad y cualquier actualización a este. Esto significa que, si el Aviso de Privacidad cambia, tu aceptas estos cambios si sigues usando HealthTap. Cuando esta política sea cambiada (aparte de por correcciones tipográficas que no cambien su significado), actualizaremos la fecha de “última modificación” en la parte superior de la política. Nosotros también te brindaremos un resumen en la parte inferior de la política, describiendo los tipos de cambios realizados.</target>
+        <target>Sí. Al continuar usando HealthTap, aceptas este Aviso de Privacidad y cualquier actualización a este. Esto significa que, si el Aviso de Privacidad cambia, tú aceptas estos cambios si sigues usando HealthTap. Cuando esta política sea cambiada (aparte de por correcciones tipográficas que no cambien su significado), actualizaremos la fecha de “última modificación” en la parte superior de la política. Nosotros también te brindaremos un resumen en la parte inferior de la política, describiendo los tipos de cambios realizados.</target>
       </trans-unit>
     </body>
   </file>
@@ -25846,7 +25846,7 @@
       </trans-unit>
       <trans-unit id="6848" resname="r402849379" restype="string" datatype="x-haml">
         <source>Receive an actionable checklist with reminders</source>
-        <target>Recibe un listado viable con recordatorios</target>
+        <target>Recibe un listado accionable con recordatorios</target>
       </trans-unit>
     </body>
   </file>
@@ -26574,7 +26574,7 @@
       </trans-unit>
       <trans-unit id="8653" resname="r13737919" restype="string" datatype="x-haml">
         <source>Doctor insights + timely data = the right action at the right time</source>
-        <target>Perspicacias de doctores + datos oportunos = la acción adecuada en el momento adecuado</target>
+        <target>Perspicacias de doctor + datos oportunos = la acción adecuada en el momento adecuado</target>
       </trans-unit>
       <trans-unit id="8654" resname="r525820861" restype="string" datatype="x-haml">
         <source>(pulsing notification)</source>
@@ -27074,7 +27074,7 @@
       </trans-unit>
       <trans-unit id="10191" resname="r89012350" restype="string" datatype="x-haml">
         <source>Cancel anytime. 100% Guarantee.</source>
-        <target>Cancela en cualquier momento. Garantía al 100%.</target>
+        <target>Cancela en cualquier momento. 100% Garantizado.</target>
       </trans-unit>
     </body>
   </file>
@@ -27846,7 +27846,7 @@
     <body>
       <trans-unit id="11762" resname="r212980594" restype="string" datatype="x-haml">
         <source>With HealthTap Prime you get 24/7 unlimited immediate access to top doctors by video or text chat. You get: Advice, Prescriptions, Reminders</source>
-        <target>Con HealthTap Prime obtienes acceso inmediato e ilimitado, 24/7, a los mejores doctores por video o chat de texto. Obtienes: Consejo, Recetas y Recordatorios</target>
+        <target>Con HealthTap Prime obtienes acceso inmediato ilimitado 24/7 a doctores top por chat en video o texto. Obtienes: Consejo, Recetas y Recordatorios</target>
       </trans-unit>
     </body>
   </file>
@@ -28170,7 +28170,7 @@
     <body>
       <trans-unit id="12817" resname="r885622481" restype="string" datatype="x-haml">
         <source>To Do</source>
-        <target>Por Hacer</target>
+        <target>Qué Hacer</target>
       </trans-unit>
     </body>
   </file>
@@ -28358,7 +28358,7 @@
     <body>
       <trans-unit id="13415" resname="r511673984" restype="string" datatype="x-haml">
         <source>HealthTap partnered with Waikato District Health Board (DHB) in New Zealand to launch “SmartHealth powered by HealthTap”</source>
-        <target>HealthTap se asoció con la Waikato District Health Board (DHB) in Nueva Zelanda para lanzar “SmartHealth impulsado por HealthTap”</target>
+        <target>HealthTap se asoció con la Waikato District Health Board (DHB) in Nueva Zelanda para lanzar “SmartHealth propulsado por HealthTap”</target>
       </trans-unit>
     </body>
   </file>

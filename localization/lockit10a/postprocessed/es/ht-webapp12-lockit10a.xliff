@@ -28,7 +28,7 @@
     <body>
       <trans-unit id="59" resname="r856013763" restype="string" datatype="ruby">
         <source>N/A</source>
-        <target state="accepted">N/A</target>
+        <target state="accepted">不适用</target>
       </trans-unit>
     </body>
   </file>
@@ -664,7 +664,7 @@
       </trans-unit>
       <trans-unit id="508" resname="0" restype="string" datatype="x-yaml" x-context="triage_samples@GREET">
         <source>Welcome back</source>
-        <target state="translated">Bienvenido de vuelta</target>
+        <target state="translated">Bienvenido</target>
       </trans-unit>
       <trans-unit id="509" resname="1" restype="string" datatype="x-yaml" x-context="triage_samples@GREET">
         <source>Hi there</source>
@@ -708,11 +708,11 @@
       </trans-unit>
       <trans-unit id="568" resname="color" restype="string" datatype="x-yaml" x-context="triage_options@0">
         <source>green</source>
-        <target state="accepted">green</target>
+        <target state="translated">verde</target>
       </trans-unit>
       <trans-unit id="579" resname=":title" restype="string" datatype="x-yaml" x-context="care_options@0">
         <source>Learn more</source>
-        <target state="translated">Aprende más</target>
+        <target state="translated">Aprender más</target>
       </trans-unit>
       <trans-unit id="582" resname=":title" restype="string" datatype="x-yaml" x-context="care_options@1">
         <source>Take action</source>

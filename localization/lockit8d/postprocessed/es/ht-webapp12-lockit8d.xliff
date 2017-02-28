@@ -12,7 +12,7 @@
     <body>
       <trans-unit id="183" resname="r99458770" restype="string" datatype="ruby">
         <source>other doctors agreed:</source>
-        <target state="translated">otros doctores estuvieron de acuerdo:</target>
+        <target state="translated">otros doctores están de acuerdo:</target>
         <note annotates="source">TODO pluralization</note>
       </trans-unit>
     </body>
@@ -21,7 +21,7 @@
     <body>
       <trans-unit id="478" resname="r1032934369" restype="string" datatype="ruby">
         <source>male</source>
-        <target state="translated">hombre</target>
+        <target state="translated">masculino</target>
       </trans-unit>
       <trans-unit id="479" resname="r781371042" restype="string" datatype="ruby">
         <source>Male</source>
@@ -29,11 +29,11 @@
       </trans-unit>
       <trans-unit id="480" resname="r809623071" restype="string" datatype="ruby">
         <source>Female</source>
-        <target state="translated">Mujer</target>
+        <target state="translated">Femenino</target>
       </trans-unit>
       <trans-unit id="481" resname="r47795326" restype="string" datatype="ruby">
         <source>female</source>
-        <target state="translated">mujer</target>
+        <target state="translated">femenino</target>
       </trans-unit>
       <trans-unit id="482" resname="r31605355" restype="string" datatype="ruby">
         <source>other</source>
@@ -109,12 +109,12 @@
 			Answer &lt;b&gt;X&lt;/b&gt; more questions in the next &lt;b&gt;X&lt;/b&gt; hours to double your daily points.</source>
         <target state="translated">Hoy, has ganado &lt;span class="todays_points_highlight"&gt; 180 puntos&lt;/span&gt; por ayudar a millones.
 			&lt;br&gt;
-			Contesta &lt;b&gt;X&lt;/b&gt; más preguntas en las próximas &lt;b&gt;X&lt;/b&gt; horas para duplicar tus puntos diarios.</target>
+			Responde &lt;b&gt;X&lt;/b&gt; más preguntas en las próximas &lt;b&gt;X&lt;/b&gt; horas para duplicar tus puntos diarios.</target>
       </trans-unit>
       <trans-unit id="715" resname="Here are a few patient questions to keep you going.&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;" restype="string" datatype="html">
         <source>Here are a few patient questions to keep you going.
 		&lt;a&gt;See all your questions &amp;raquo;&lt;/a&gt;</source>
-        <target state="translated">Aquí están unas cuantas preguntas de pacientes para que sigas.
+        <target state="translated">Acá están unas pocas preguntas de pacientes para que sigas.
 		&lt;a&gt;Ver todas tus preguntas &amp;raquo;&lt;/a&gt;</target>
       </trans-unit>
     </body>
@@ -124,7 +124,7 @@
       <trans-unit id="722" resname="Create a Tip&lt;span class=&quot;sub_title&quot;&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;" restype="string" datatype="html">
         <source>Create a Tip
 		&lt;span class="sub_title"&gt;Help millions with 100 characters. Inform, inspire, motivate.&lt;/span&gt;</source>
-        <target state="translated">Crear un Tip
+        <target state="translated">Crear un Consejo
 		&lt;span class="sub_title"&gt;Ayuda a millones con 100 caracteres. Informa, inspira, motiva.&lt;/span&gt;</target>
       </trans-unit>
     </body>
@@ -134,8 +134,8 @@
       <trans-unit id="723" resname="Ask Doctors Any Question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask Doctors Any Question
 		&lt;span class="sub_title"&gt;Anytime. Anywhere.&amp;nbsp;&lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
-        <target state="translated">Haz cualquier pregunta a los doctores
-		&lt;span class="sub_title"&gt;A cualquier hora. En cualquier lugar.&amp;nbsp;&lt;span style="font-weight: bold"&gt;Gratis.&lt;/span&gt;&lt;/span&gt;</target>
+        <target state="translated">Haz cualquier pregunta a los médicos
+		&lt;span class="sub_title"&gt;en cualquier momento. En cualquier lugar.&amp;nbsp;&lt;span style="font-weight: bold"&gt;Gratis.&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -144,8 +144,8 @@
       <trans-unit id="724" resname="Ask doctors any question&lt;span class=&quot;sub_title&quot;&gt;Anytime. Anywhere.&lt;span style=&quot;font-weight: bold&quot;&gt;For free.&lt;/span&gt;&lt;/span&gt;" restype="string" datatype="html">
         <source>Ask doctors any question
 		&lt;span class="sub_title"&gt;Anytime. Anywhere. &lt;span style="font-weight: bold"&gt;For free.&lt;/span&gt;&lt;/span&gt;</source>
-        <target state="translated">Haz cualquier pregunta a los doctores
-		&lt;span class="sub_title"&gt;A cualquier hora. En cualquier lugar. &lt;span style="font-weight: bold"&gt;Gratis.&lt;/span&gt;&lt;/span&gt;</target>
+        <target state="translated">Pregunta a los médicos cualquier pregunta
+		&lt;span class="sub_title"&gt;en cualquier momento. En cualquier lugar. &lt;span style="font-weight: bold"&gt;Gratis.&lt;/span&gt;&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -154,7 +154,7 @@
       <trans-unit id="725" resname="Curbside Consult&lt;span class=&quot;super&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;sub_title&quot;&gt;Great answers from your expert colleagues.&lt;/span&gt;" restype="string" datatype="html">
         <source>Curbside Consult &lt;span class="super"&gt;beta&lt;/span&gt;
 			&lt;span class="sub_title"&gt;Great answers from your expert colleagues.&lt;/span&gt;</source>
-        <target state="translated">Consulta de Banqueta &lt;span class="super"&gt;beta&lt;/span&gt;
+        <target state="translated">Consulta al Borde de la Acera &lt;span class="super"&gt;beta&lt;/span&gt;
 			&lt;span class="sub_title"&gt;Estupendas respuestas de tus colegas expertos.&lt;/span&gt;</target>
       </trans-unit>
     </body>
@@ -174,8 +174,8 @@
       <trans-unit id="727" resname="GUIDELINES&lt;span class=&quot;sub_title&quot;&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;" restype="string" datatype="html">
         <source>GUIDELINES
 		&lt;span class="sub_title"&gt;To ask a great HealthTap question, use these helpful guidelines&lt;/span&gt;</source>
-        <target state="translated">DIRECTRICES
-		&lt;span class="sub_title"&gt;Para hacer una pregunta estupenda a HealthTap, utiliza estas útiles directrices&lt;/span&gt;</target>
+        <target state="translated">INSTRUCCIONES
+		&lt;span class="sub_title"&gt;Para hacer una pregunta estupenda a HealthTap, utiliza estas útiles instrucciones&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="728" resname="Sweat the details... at least a little.&lt;a onclick=&quot;$(&amp;apos;#ex1&amp;apos;).toggle();&quot; class=&apos;exampleToggle&apos; id=&apos;h1&apos;&gt;Hide examples&lt;/a&gt;&lt;br&gt;&lt;span id=&apos;ex1&apos; class=&apos;guidelineEx&apos;&gt;&lt;span class=&quot;good&quot;&gt;Good:&lt;/span&gt;I had an itchy dry rash on the inside of my elbows for 3 weeks. What could be the causes?&lt;br&gt;&lt;span class=&quot;bad&quot;&gt;Not so good:&lt;/span&gt;Why do I have a rash?&lt;/span&gt;" restype="string" datatype="html">
         <source>Sweat the details... at least a little.  &lt;a onclick="$(&amp;apos;#ex1&amp;apos;).toggle();" class='exampleToggle' id='h1'&gt;Hide examples&lt;/a&gt;&lt;br&gt;
@@ -348,7 +348,7 @@
         <source>Start a Private Conversation
 		&lt;span class="sub_title"&gt;Ask a more detailed question to a doctor of your choice here, in a private, HIPAA-secure one-on-one setting for a small fee. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</source>
         <target state="translated">Comienza una Conversación Privada
-		&lt;span class="sub_title"&gt;Haz una pregunta más detallada a un doctor de tu elección aquí, en un entorno privado, uno a uno, y protegido por HIPAA, por una pequeña tarifa. Añade imágenes, escaneos o documentos de soporte para una respuesta aún más personalizada.&lt;/span&gt;</target>
+		&lt;span class="sub_title"&gt;Haz una pregunta más detallada a un médico de tu elección aquí, en un entorno privado uno a uno protegido por HIPAA, por una pequeña tarifa. Add images, scans or supporting documents for an even more personalized answer.&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -357,8 +357,8 @@
       <trans-unit id="744" resname="ASK A DOCTOR A QUESTION&lt;span class=&quot;sub_title&quot;&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;" restype="string" datatype="html">
         <source>ASK A DOCTOR A QUESTION
 		&lt;span class="sub_title"&gt;Get help directly from any HealthTap doctor of your choice using HealthTap Credits to pay the doctor for their time.&lt;/span&gt;</source>
-        <target state="translated">HAZ UNA PREGUNTA A UN DOCTOR
-		&lt;span class="sub_title"&gt;Obtén ayuda directa de cualquier doctor de HealthTap de tu elección utilizando los Créditos HealthTap para pagar al doctor por su tiempo.&lt;/span&gt;</target>
+        <target state="translated">HAZ UNA PREGUNTA AL MÉDICO
+		&lt;span class="sub_title"&gt;Obtén ayuda directa de cualquier médico HealthTap de tu elección utilizando los Créditos HealthTap para pagar al médico por su tiempo.&lt;/span&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -367,7 +367,7 @@
       <trans-unit id="745" resname="REFER TO A COLLEAGUE&lt;span class=&quot;sub_title&quot;&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;" restype="string" datatype="html">
         <source>REFER TO A COLLEAGUE
 		&lt;span class="sub_title"&gt;Know someone who can answer this question? That’s great! Just let us know who and we’ll send it to them.&lt;/span&gt;</source>
-        <target state="translated">REFERIR A UN COLEGA
+        <target state="translated">REMITIR A UN COLEGA
 		&lt;span class="sub_title"&gt;¿Conoces a alguien que pueda responder esta pregunta? ¡Eso es grandioso! Sólo permítenos saber quién y se la enviaremos.&lt;/span&gt;</target>
       </trans-unit>
     </body>
@@ -378,7 +378,7 @@
         <source>This question has been sent to doctors in the
 					&lt;%= App.session.referSpecialty %&gt;
 					field</source>
-        <target state="translated">Esta pregunta ha sido enviada a los doctores en el campo de
+        <target state="translated">Esta pregunta ha sido enviada a los médicos en el campo de
 					&lt;%= App.session.referSpecialty %&gt;</target>
       </trans-unit>
     </body>
@@ -391,15 +391,15 @@
       </trans-unit>
       <trans-unit id="751" resname="*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment." restype="string" datatype="javascript">
         <source>*HealthTap credits are not awarded for clarifications, appointment requests,               responses sent after 72 hours of receiving a patient message or when a patient uses               your promo code for payment.</source>
-        <target state="translated">*Los créditos HealthTap no son otorgados por aclaraciones, solicitudes de citas,               respuestas enviadas luego de 72 horas de recibir un mensaje del paciente o cuando un paciente utiliza               tu código promocional por el pago.</target>
-    </trans-unit>
+        <target state="translated">*Los créditos HealthTap no son otorgados por aclaratorias, solicitudes de citas,               respuestas enviadas luego de 72 horas de recibir un mensaje del paciente o cuando un paciente utiliza               tu código de promoción por el pago.</target>
+      </trans-unit>
     </body>
   </file>
   <file original="public/multipage/legacy/js/mvc/feed_view.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
     <body>
       <trans-unit id="754" resname="HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
         <source>HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target state="translated">HealthTap es sólo para fines informativos.           El contenido en HealthTap (incluyendo las respuestas) no deberán usarse para consejo,           diagnóstico o tratamiento médico, y las interacciones en HealthTap no crean una           relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar consejo médico profesional           en persona por algo que veas en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si           crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
+        <target state="translated">HealthTap es sólo para fines informativos.           El contenido en HealthTap (incluyendo las respuestas) no deberán usarse para asesoría,           diagnóstico o tratamiento médico, y las interacciones en HealthTap no crean una           relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría médica profesional           en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si           crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -407,11 +407,11 @@
     <body>
       <trans-unit id="764" resname="HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
         <source>HealthTap is for informational purposes only.  Content on HealthTap     (including answers) should not be used for medical advice, diagnosis, or treatment, and interactions     on HealthTap do not create a doctor-patient relationship.  Never disregard or delay seeking professional     medical advice in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if     you think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target state="translated">HealthTap es sólo para fines informativos.  El contenido en HealthTap     (incluyendo las respuestas) no deberán usarse para consejo, diagnóstico o tratamiento médico, y las interacciones     en HealthTap no crean una relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar consejo     médico profesional en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si     crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
+        <target state="translated">HealthTap es sólo para fines informativos.  El contenido en HealthTap     (incluyendo las respuestas) no deberán usarse para asesoría, diagnóstico o tratamiento médico, y las interacciones     en HealthTap no crean una relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría     médica profesional en persona por nada del mundo en HealthTap. Llama a tu médico o al 911 (en los EE.UU.) si     crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
       <trans-unit id="765" resname="Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions." restype="string" datatype="javascript">
         <source>Connect with women doctors who are also mothers for deeper,     experience-based answers to all your pregnancy and parenting questions.</source>
-        <target state="translated">Conéctate con doctoras que también son mamás para respuestas más profundas     y basadas en experiencia a todas tus preguntas de embarazo y crianza.</target>
+        <target state="translated">Conéctate con doctoras que también son mamás para unas respuestas más profundas     y experimentadas a todas tus preguntas de embarazo y crianza.</target>
       </trans-unit>
     </body>
   </file>
@@ -419,7 +419,7 @@
     <body>
       <trans-unit id="780" resname="1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!" restype="string" datatype="javascript">
         <source>1#There is &lt;b&gt;{n} more answer&lt;/b&gt; from doctors for this question!|            #There are &lt;b&gt;{n} more answers&lt;/b&gt; from doctors for this question!</source>
-        <target state="translated">1#¡Hay &lt;b&gt;{n} respuesta más&lt;/b&gt; de los doctores para esta pregunta!|#¡Hay &lt;b&gt;{n} respuestas más&lt;/b&gt; de los doctores para esta pregunta!</target>
+        <target state="translated">1#¡Hay &lt;b&gt;{n} respuesta más&lt;/b&gt; de los médicos para esta pregunta!|            #¡Hay &lt;b&gt;{n} respuestas más&lt;/b&gt; de los médicos para esta pregunta!</target>
       </trans-unit>
     </body>
   </file>
@@ -439,7 +439,7 @@
       </trans-unit>
       <trans-unit id="793" resname="Female" restype="string" datatype="javascript">
         <source>Female</source>
-        <target state="translated">Mujer</target>
+        <target state="translated">Femenino</target>
       </trans-unit>
     </body>
   </file>
@@ -547,7 +547,7 @@
     <body>
       <trans-unit id="870" resname="Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties." restype="string" datatype="javascript">
         <source>Send your question to receive one or more information text answers           within a day from our network of {n} doctors across 137 specialties.</source>
-        <target state="translated">Envía tu pregunta para recibir una respuesta textual educativa o más           dentro de un día por parte de nuestra red de {n} doctores en 137 especialidades.</target>
+        <target state="translated">Envía tu pregunta para recibir una respuesta textual educativa o más           dentro de un día por parte de nuestra red de {n} médicos a lo largo de 137 especialidades.</target>
       </trans-unit>
     </body>
   </file>
@@ -579,7 +579,7 @@
       </trans-unit>
       <trans-unit id="879" resname=":text" restype="string" datatype="x-yaml" x-context="Your Questions@4">
         <source>Updates on a question you asked</source>
-        <target state="translated">Actualizaciones de una pregunta que hiciste</target>
+        <target state="translated">Actualizaciones a una pregunta que hiciste</target>
       </trans-unit>
       <trans-unit id="887" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@7">
         <source>Updates on a consult you had</source>
@@ -591,7 +591,7 @@
       </trans-unit>
       <trans-unit id="893" resname=":text" restype="string" datatype="x-yaml" x-context="Your Checklists@4">
         <source>Kudos for someone you support</source>
-        <target state="translated">Aclamación para alguien que apoyas</target>
+        <target state="translated">Kudos para alguien que apoyas</target>
       </trans-unit>
       <trans-unit id="894" resname=":text" restype="string" datatype="x-yaml" x-context="Doctor Insights For You@0">
         <source>Tips</source>
@@ -619,7 +619,7 @@
       </trans-unit>
       <trans-unit id="900" resname=":text" restype="string" datatype="x-yaml" x-context="Your Doctor Care-Team@3">
         <source>Doctor accepts you as a patient</source>
-        <target state="translated">Un doctor te acepta como paciente</target>
+        <target state="translated">Doctor te acepta como paciente</target>
       </trans-unit>
       <trans-unit id="901" resname=":text" restype="string" datatype="x-yaml" x-context="Your Doctor Care-Team@4">
         <source>Reminders when a doctor accepts you as a patient</source>
@@ -655,7 +655,7 @@
     <body>
       <trans-unit id="880" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@0">
         <source>A doctor shares feedback on your SOAP Note</source>
-        <target state="translated">Un doctor comparte su comentario en tu Nota SOAP</target>
+        <target state="translated">Un doctor comparte comentario en tu Nota SOAP</target>
       </trans-unit>
       <trans-unit id="881" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@1">
         <source>A doctor rates your consult 5-stars</source>
@@ -667,19 +667,19 @@
       </trans-unit>
       <trans-unit id="883" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@3">
         <source>Poor network connection detected during a consult</source>
-        <target state="translated">Conexión de red pobre detectada durante una consulta</target>
+        <target state="translated">Conexión de red pobre detectada durante consulta</target>
       </trans-unit>
       <trans-unit id="884" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@4">
         <source>A patient responds to an Inbox Consults</source>
-        <target state="translated">Un paciente responde a una consulta de Buzón de Entrada</target>
+        <target state="translated">Un paciente responde a una Consulta de Buzón de Entrada</target>
       </trans-unit>
       <trans-unit id="885" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@5">
         <source>Reminder an Inbox Consults is pending your response</source>
-        <target state="translated">Recordatorio de una consulta de Buzón de Entrada pendiente de respuesta</target>
+        <target state="translated">Recordatorio de una Consulta de Buzón de Entrada está pendiente de respuesta</target>
       </trans-unit>
       <trans-unit id="886" resname=":text" restype="string" datatype="x-yaml" x-context="Your Consults@6">
         <source>You missed an incoming Live Consult from a patient</source>
-        <target state="translated">Perdiste una consulta en vivo entrante de un paciente</target>
+        <target state="translated">Perdiste una Consulta en Vivo entrante de un paciente</target>
       </trans-unit>
       <trans-unit id="889" resname=":text" restype="string" datatype="x-yaml" x-context="Your Checklists@0">
         <source>Members complete actions from your checklist</source>
@@ -695,7 +695,7 @@
       </trans-unit>
       <trans-unit id="892" resname=":text" restype="string" datatype="x-yaml" x-context="Your Checklists@3">
         <source>Members try your checklist</source>
-        <target state="translated">Miembros aprueban tu listado</target>
+        <target state="translated">Miembros prueban tu listado</target>
       </trans-unit>
       <trans-unit id="905" resname=":text" restype="string" datatype="x-yaml" x-context="Announcements and offers@0">
         <source>Announcements and offers about HealthTap Prime</source>
@@ -951,11 +951,11 @@
       </trans-unit>
       <trans-unit id="970" resname=":help_text" restype="string" datatype="x-yaml" x-context=":guaranteed_answers@:two">
         <source>This option promotes the question to more doctors to get you more than one answer</source>
-        <target state="translated">Esta opción promueve la pregunta a más doctores para que obtengas más de una respuesta</target>
+        <target state="translated">Esta opción promueve la pregunta a más docotres para que obtengas más de una respuesta</target>
       </trans-unit>
       <trans-unit id="971" resname=":display_string" restype="string" datatype="x-yaml" x-context=":extra_characters@:hundred">
         <source>Add details to your question (+100 characters)</source>
-        <target state="translated">Añade detalles a tus preguntas (100+ caracteres)</target>
+        <target state="translated">Añade detalles a tus preguntas (más de 100 caracteres)</target>
       </trans-unit>
       <trans-unit id="972" resname=":help_text" restype="string" datatype="x-yaml" x-context=":extra_characters@:hundred">
         <source>This gives you additional characters to add more details to your question.</source>
