@@ -2031,7 +2031,7 @@
       </trans-unit>
       <trans-unit id="415" resname="r1049751047" restype="string" datatype="ruby">
         <source>This option promotes the question to more doctors to get you more than one answer</source>
-        <target>Esta opción promueve la pregunta a más docotres para que obtengas más de una respuesta</target>
+        <target>Esta opción promueve la pregunta a más doctores para que obtengas más de una respuesta</target>
       </trans-unit>
       <trans-unit id="416" resname="r699298540" restype="string" datatype="ruby">
         <source>This gives you additional characters to add more details to your question.</source>

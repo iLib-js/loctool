@@ -9960,7 +9960,7 @@
       </trans-unit>
       <trans-unit id="2147" resname="3.&lt;strong&gt;Find&lt;/strong&gt;the best doctors" restype="string" datatype="html">
         <source>3. &lt;strong&gt;Find&lt;/strong&gt; the best doctors</source>
-        <target>3. &lt;strong&gt;Encuentra a&lt;/strong&gt; los mejores docotres</target>
+        <target>3. &lt;strong&gt;Encuentra a&lt;/strong&gt; los mejores doctores</target>
       </trans-unit>
       <trans-unit id="2148" resname="4.&lt;strong&gt;Connect&lt;/strong&gt;directly with physicians" restype="string" datatype="html">
         <source>4. &lt;strong&gt;Connect&lt;/strong&gt; directly with physicians</source>
@@ -16352,7 +16352,7 @@
       </trans-unit>
       <trans-unit id="3465" resname="Doctors appreciate your gratitude for their compassion and sharing." restype="string" datatype="html">
         <source>Doctors appreciate your gratitude for their compassion and sharing.</source>
-        <target>Los docotres aprecian tu gratitud por su compasión y por compartir.</target>
+        <target>Los doctores aprecian tu gratitud por su compasión y por compartir.</target>
       </trans-unit>
     </body>
   </file>
@@ -17432,7 +17432,7 @@
     <body>
       <trans-unit id="3704" resname="There are no doctor connections to display." restype="string" datatype="html">
         <source>There are no doctor connections to display.</source>
-        <target>No hay conexiones de docotres que mostrar.</target>
+        <target>No hay conexiones de doctores que mostrar.</target>
       </trans-unit>
       <trans-unit id="3705" resname="Invite Colleagues &amp;raquo;" restype="string" datatype="html">
         <source>Invite Colleagues &amp;raquo;</source>
