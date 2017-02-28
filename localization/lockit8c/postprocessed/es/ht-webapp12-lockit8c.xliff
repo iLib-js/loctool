@@ -11104,7 +11104,7 @@
       </trans-unit>
       <trans-unit id="2157" resname="r1050466975" restype="string" datatype="ruby">
         <source>Doctor insights</source>
-        <target state="translated">Conocimientos médicos de doctores</target>
+        <target state="translated">Conocimientos médicos</target>
       </trans-unit>
     </body>
   </file>
@@ -12046,7 +12046,7 @@
     <body>
       <trans-unit id="2332" resname="r233380280" restype="string" datatype="ruby">
         <source>START FREE</source>
-        <target state="translated">INICIA GRATIS</target>
+        <target state="translated">COMIENZA GRATIS</target>
       </trans-unit>
       <trans-unit id="2333" resname="r974887686" restype="string" datatype="ruby">
         <source>Start Exploring</source>
@@ -12342,15 +12342,15 @@
       </trans-unit>
       <trans-unit id="2384" resname="r848869956" restype="string" datatype="ruby">
         <source>Get beautiful, bite-sized tips of health information created by doctors, personalized for you.</source>
-        <target state="translated">Obtén, hermosos tips de información de salud tamaño mordida creados por doctores y personalizados para ti.</target>
+        <target state="translated">Obtén geniales tips informativos formulados por médicos y personalizados para ti.</target>
       </trans-unit>
       <trans-unit id="2385" resname="r273624032" restype="string" datatype="ruby">
         <source>Take action to achieve your health goals with our proprietary, customizable doctor-created checklists!</source>
-        <target state="translated">¡Toma acción para alcanzar tus metas de salud con nuestros propios y personalizables listados creados por doctores!</target>
+        <target state="translated">¡Ponte en acción para alcanzar tus metas de salud con nuestros propios listados, creados por médicos y personalizables!</target>
       </trans-unit>
       <trans-unit id="2386" resname="r11511262" restype="string" datatype="ruby">
         <source>Keep your health records accessible, private, and secure so that you can easily share them with doctors to get better care whenever necessary.</source>
-        <target state="translated">Mantén tu expediente clínico accesible, privado y seguro para que puedas fácilmente compartirlo con doctores para obtener mejor atención cuando sea necesario.</target>
+        <target state="translated">Mantén tu historia clínica accesible, privado y seguro para que puedas fácilmente compartirlo con doctores para obtener mejor atención cuando sea necesario.</target>
       </trans-unit>
       <trans-unit id="2387" resname="r246313789" restype="string" datatype="ruby">
         <source>Feel free to start exploring HealthTap now!</source>
@@ -23818,7 +23818,7 @@
       </trans-unit>
       <trans-unit id="4659" resname="r238259539" restype="string" datatype="ruby">
         <source>Doctor Insights For You</source>
-        <target state="translated">Conocimientos médicos de Doctores para ti</target>
+        <target state="accepted">Conocimientos médicos para ti</target>
       </trans-unit>
       <trans-unit id="4660" resname="r884061707" restype="string" datatype="ruby">
         <source>FeelGood Moments</source>
@@ -29856,7 +29856,7 @@
       </trans-unit>
       <trans-unit id="6989" resname="r347680202" restype="string" datatype="ruby">
         <source>A personal health hub that helps your employees navigate healthcare, easily and cost-effectively</source>
-        <target state="translated">Un centro para salud personal que ayuda a tus empleados a navegar la atención a la salud, de forma fácil y económica</target>
+        <target state="translated">Un centro para salud personal que ayuda a tus empleados a informarse sobre atención de la salud, de forma fácil y económica</target>
       </trans-unit>
       <trans-unit id="6990" resname="r618823135" restype="string" datatype="ruby">
         <source>HealthTap HOPES for Doctor Practices</source>
@@ -41110,11 +41110,11 @@
       </trans-unit>
       <trans-unit id="9553" resname="Take this" restype="string" datatype="javascript">
         <source>Take this</source>
-        <target state="translated">Toma esto</target>
+        <target state="accepted">Tomo esto</target>
       </trans-unit>
       <trans-unit id="9554" resname="No longer take this" restype="string" datatype="javascript">
         <source>No longer take this</source>
-        <target state="translated">Ya no toma esto</target>
+        <target state="accepted">Ya no tomo esto</target>
       </trans-unit>
       <trans-unit id="9555" resname="Does this person have any allergies?" restype="string" datatype="javascript">
         <source>Does this person have any allergies?</source>
@@ -41202,7 +41202,7 @@
       </trans-unit>
       <trans-unit id="9576" resname="When was the last time? (year)" restype="string" datatype="javascript">
         <source>When was the last time? (year)</source>
-        <target state="translated">¿Cuándo fue la última vez? (Año)</target>
+        <target state="accepted">¿Última vez recibida? (Año)</target>
       </trans-unit>
       <trans-unit id="9577" resname="Which vaccinations have you had?" restype="string" datatype="javascript">
         <source>Which vaccinations have you had?</source>

@@ -686,8 +686,7 @@
       </trans-unit>
       <trans-unit id="206" resname="r42937035" restype="string" datatype="x-haml">
         <source>I understand that there are risks from Virtual Consults, including the following: 1) Loss of records from failure of electronic equipment, 2) power or other technical failures with loss of communication, and 3) invasion of electronic records by outsiders (hackers). Finally, I understand that it is impossible to list every possible risk, that my condition may not be cured or improved, and in rare cases, may get worse.</source>
-        <target state="translated">我理解在线咨询存在风险，包括以下内容：1）电子设备故障的记录丢失，2）电源或其他技术故障，通信丢失，以及
-3）外来者（黑客）入侵电子记录。最后，我明白，不可能列出所有可能的风险，我的病症可能无法治愈或改善，在极少数情况下，可能会变得更糟。</target>
+        <target state="translated">我理解在线咨询存在风险，包括以下内容：1）电子设备故障的记录丢失，2）电源或其他技术故障，通信丢失，以及 3）外来者（黑客）入侵电子记录。最后，我明白，不可能列出所有可能的风险，我的病症可能无法治愈或改善，在极少数情况下，可能会变得更糟。</target>
       </trans-unit>
       <trans-unit id="207" resname="r199230938" restype="string" datatype="x-haml">
         <source>The following terms apply to your use of HealthTap Concierge and live virtual consults performed by video or audio or asynchronous inbox consults (collectively, "Virtual Consults"). By using HealthTap Concierge you represent that you understand and agree to all of the following:</source>
@@ -771,8 +770,7 @@
       </trans-unit>
       <trans-unit id="227" resname="r77340267" restype="string" datatype="x-haml">
         <source>Risks. I understand that there are risks from Virtual Consults, including the following: 1) Loss of records from failure of electronic equipment, 2) power or other technical failures with loss of communication, and 3) invasion of electronic records by outsiders (hackers). Finally, I understand that it is impossible to list every possible risk, that my condition may not be cured or improved, and in rare cases, may get worse.</source>
-        <target state="translated">风险。我理解在线咨询存在风险，包括以下内容：1）电子设备故障的记录丢失，2）电源或其他技术故障，通信丢失，以及
-3）外来者（黑客）入侵电子记录。最后，我明白，不可能列出所有可能的风险，我的病症可能无法治愈或改善，在极少数情况下，可能会变得更糟。</target>
+        <target state="translated">风险。我理解在线咨询存在风险，包括以下内容：1）电子设备故障的记录丢失，2）电源或其他技术故障，通信丢失，以及 3）外来者（黑客）入侵电子记录。最后，我明白，不可能列出所有可能的风险，我的病症可能无法治愈或改善，在极少数情况下，可能会变得更糟。</target>
       </trans-unit>
       <trans-unit id="228" resname="r1008566820" restype="string" datatype="x-haml">
         <source>Benefits. I understand that I can expect the following benefits from Virtual Consults, but that no results can be guaranteed or assured: (i) reduced visit time, (ii) rapid innovation of treatments, and (iii) focused information.</source>
