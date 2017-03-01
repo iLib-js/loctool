@@ -265,7 +265,7 @@
     <body>
       <trans-unit id="58" resname="r53097884" restype="string" datatype="ruby">
         <source>...[HealthTap's] ecosystem of the doctors and peer review are how [it creates] a transparency..., a rating system..., and a learning system, ...to create a place where people can manage their health from query-to-cure.</source>
-        <target state="translated">...el ecosistema de [HealthTap] de doctores y revisión por pares es cómo [crea] una transparencia..., un sistema de calificaciones... y un sistema de aprendizaje, ...para crear un lugar donde la gente pueda administrar su salud de duda a cura.</target>
+        <target state="accepted">...el ecosistema de HealthTap de doctores y de evaluación entre sus pares es cómo se crea transparencia..., un sistema de calificaciones... y un sistema de aprendizaje, ...que genera un lugar donde la gente puede administrar su propia salud desde la duda a la sanación.</target>
       </trans-unit>
       <trans-unit id="59" resname="r471419186" restype="string" datatype="ruby">
         <source>You Can Now Download an Artificial Intelligence Doctor</source>

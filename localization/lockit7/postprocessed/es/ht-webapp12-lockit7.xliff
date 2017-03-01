@@ -4379,7 +4379,7 @@
     <body>
       <trans-unit id="985" resname="Our mission is to measurably prolong the life expectancy of humankind and help everyone Feel Good by providing immediate access to top medical experts and their trusted health advice anytime, anywhere." restype="string" datatype="html">
         <source>Our mission is to measurably prolong the life expectancy of humankind and help everyone Feel Good by providing immediate access to top medical experts and their trusted health advice anytime, anywhere.</source>
-        <target>Nuestra misión es prolongar la expectativa de vida de la humanidad de forma cuantificable, y ayudar a todos a Sentirse Bien al brindar acceso inmediato a los mejores expertos médicos y a su confiable consejo de salud, a cualquier hora y en cualquier lugar.</target>
+        <target state="accepted">Nuestra misión es prolongar la expectativa de vida de la humanidad de manera cuantificable y ayudar a todos Sentirse Bien brinda acceso inmediato a médicos expertos y a su confiable consejo a cualquier hora, en cualquier lugar.</target>
       </trans-unit>
     </body>
   </file>
