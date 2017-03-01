@@ -9616,11 +9616,11 @@
       </trans-unit>
       <trans-unit id="7906" resname="r188937521" restype="string" datatype="x-haml">
         <source>doctors delight in</source>
-        <target>les encanta</target>
+        <target>les encanta a los médicos</target>
       </trans-unit>
       <trans-unit id="7907" resname="r786643384" restype="string" datatype="x-haml">
         <source>What</source>
-        <target>Lo que a los doctores de</target>
+        <target>&nbsp;</target>
       </trans-unit>
       <trans-unit id="7908" resname="r594079546" restype="string" datatype="x-haml">
         <source>Sharing their wisdom through answers, tips, and news</source>
@@ -9696,11 +9696,11 @@
       </trans-unit>
       <trans-unit id="7926" resname="r899375604" restype="string" datatype="x-haml">
         <source>free time continuing to help people about medical issues that I am passionate</source>
-        <target>tiempo libre ayudando a personas con problemas médicos por los que me</target>
+        <target>tiempo libre ayudando a personas con problemas médicos.</target>
       </trans-unit>
       <trans-unit id="7927" resname="r620495158" restype="string" datatype="x-haml">
         <source>about. I feel fortunate to be able to participate in this way, and</source>
-        <target>apasiono. Me siento afortunado de ser capaz de participar de esta forma, y</target>
+        <target>Me siento afortunado de ser capaz de participar de esta forma, y</target>
       </trans-unit>
       <trans-unit id="7928" resname="r566247406" restype="string" datatype="x-haml">
         <source>look forward to continuing.</source>
@@ -25958,7 +25958,7 @@
       </trans-unit>
       <trans-unit id="7217" resname="r469541448" restype="string" datatype="x-haml">
         <source>can feel like play, and strive to find and bring into each day playfulness, fun, and joy.</source>
-        <target>Creemos que el “trabajo” se puede sentir como juego, y luchamos por encontrar y traer a cada día alegría, diversión y júbilo.</target>
+        <target>Creemos que el “trabajo” se puede sentir como un juego, y nos esforzamos para encontrar y traer cada día alegría, diversión y júbilo.</target>
       </trans-unit>
       <trans-unit id="7218" resname="r304273233" restype="string" datatype="x-haml">
         <source>work</source>

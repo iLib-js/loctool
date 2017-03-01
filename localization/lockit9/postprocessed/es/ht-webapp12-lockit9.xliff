@@ -752,7 +752,7 @@
     <body>
       <trans-unit id="162" resname="r451630274" restype="string" datatype="ruby">
         <source>Tap into a vast (and growing) universe of fresh health knowledge—the only one created, curated, edited, and organized by doctors themselves. With HealthTap and %{num} of the world's top doctors, you get access to:</source>
-        <target state="translated">Explota un vasto (y creciente) universo de conocimiento de salud fresco - el único creado, curado, editado y organizado por doctores. Con HealthTap y %{num} de los mejores doctores del mundo, tú obtienes acceso a:</target>
+        <target state="translated">Explora un vasto (y creciente) universo de conocimiento de salud fresco - el único creado, mantenido, editado y organizado por doctores. Con HealthTap y %{num} de los mejores doctores del mundo, tú obtienes acceso a:</target>
       </trans-unit>
     </body>
   </file>
