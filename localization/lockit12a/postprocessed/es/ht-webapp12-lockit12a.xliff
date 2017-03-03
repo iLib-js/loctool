@@ -1368,7 +1368,7 @@
       </trans-unit>
       <trans-unit id="4" resname=":help_text" restype="string" datatype="x-yaml" x-context=":guaranteed_answers@:two">
         <source>This option promotes the question to more doctors to get you more than one answer</source>
-        <target>Esta opción promueve la pregunta a más docotres para que obtengas más de una respuesta</target>
+        <target>Esta opción promueve la pregunta a más doctores para que obtengas más de una respuesta</target>
       </trans-unit>
       <trans-unit id="5" resname=":display_string" restype="string" datatype="x-yaml" x-context=":extra_characters@:hundred">
         <source>Add details to your question (+100 characters)</source>

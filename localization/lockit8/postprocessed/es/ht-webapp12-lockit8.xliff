@@ -20,7 +20,7 @@
     <body>
       <trans-unit id="29" resname="r861586815" restype="string" datatype="ruby">
         <source>Quick search on topic feed</source>
-        <target>Búsqueda rápida en fuente de tema</target>
+        <target>Búsqueda rápida en la fuente del tema</target>
       </trans-unit>
     </body>
   </file>
@@ -120,11 +120,11 @@
       </trans-unit>
       <trans-unit id="87" resname="r363561295" restype="string" datatype="ruby">
         <source>You get doctor advice, actionable plans,&lt;br&gt; prescriptions, referrals, and even lab tests</source>
-        <target>Obtienes consejo de doctores, planes viables,&lt;br&gt; recetas, referencias y hasta pruebas de laboratorio</target>
+        <target>Obtienes consejo de doctores, planes accionables,&lt;br&gt; recetas, referencias y hasta pruebas de laboratorio</target>
       </trans-unit>
       <trans-unit id="88" resname="r352626996" restype="string" datatype="ruby">
         <source>You get doctor advice,&lt;br&gt;actionable plans,&lt;br&gt;prescriptions, referrals,&lt;br&gt;and even lab tests</source>
-        <target>Obtienes consejo de doctores,&lt;br&gt;planes viables,&lt;br&gt;recetas, referencias&lt;br&gt;y hasta pruebas de laboratorio</target>
+        <target>Obtienes consejo de doctores,&lt;br&gt;planes accionables,&lt;br&gt;recetas, referencias&lt;br&gt;y hasta pruebas de laboratorio</target>
       </trans-unit>
       <trans-unit id="89" resname="r917056356" restype="string" datatype="ruby">
         <source>Safe, secure, and private:&lt;br&gt; We provide the right care when you need it most</source>
@@ -908,7 +908,7 @@
       </trans-unit>
       <trans-unit id="332" resname="r301786139" restype="string" datatype="ruby">
         <source>Working with data from hundreds of millions of people, and tens of thousands of doctors, and with numerous product iterations, we architected our proprietary path to feeling good in 3 easy steps: “Learn More”, “Get Help”, and “Take Action.” We realized that we are not in the business of just providing health information, or mere “telemedicine” or simply scheduling doctor appointments, we officially and wholeheartedly entered the business of helping people feel good!</source>
-        <target>Trabajando con datos de cientos de millones de personas, y de decenas de miles de doctores, y con numerosas iteraciones de producto, diseñamos nuestro propio camino para sentirse bien en 3 pasos fáciles: "Aprende Más", "Obtén Ayuda", y "Toma Acción." Nos dimos cuenta que no solo estamos en el negocio de brindar información de salud, o mera "telemedicina" o simplemente agendar citas al doctor, ¡hemos entrado oficialmente y de todo corazón al negocio de ayudar a la gente a sentirse bien!</target>
+        <target>Trabajando con datos de cientos de millones de personas, y de decenas de miles de doctores, y con numerosas iteraciones de producto, diseñamos nuestro propio camino para sentirse bien en 3 pasos fáciles: "Aprender Más", "Obtener Ayuda", y "Tomar Acción." Nos dimos cuenta que no solo estamos en el negocio de brindar información de salud, o mera "telemedicina" o simplemente agendar citas al doctor, ¡hemos entrado oficialmente y de todo corazón al negocio de ayudar a la gente a sentirse bien!</target>
       </trans-unit>
       <trans-unit id="333" resname="r31866236" restype="string" datatype="ruby">
         <source>Simultaneously, we hired the best technical/product/design team in digital health, and one of the best in Silicon Valley, bringing together the brightest engineers with deep expertise in all frameworks and platforms (iOS, Android, Web, and wearables), and with a deep passion for innovation and helping others. We fortified the team with some of the Valley’s finest designers, data geeks, and product managers, and a fabulous customer care and Medical Expert ops team, and together, we repeatedly iterated with millions of users and tens of thousands of doctors, until we were ready to launch our new groundbreaking platform to the world.</source>
@@ -1258,7 +1258,7 @@
     <body>
       <trans-unit id="411" resname="r323542924" restype="string" datatype="ruby">
         <source>You’ve received a low one-star rating for the third time from a patient for a Virtual Consult. Because we take these ratings very seriously, we would like to discuss it with you before you continue on HealthTap. Please contact us at</source>
-        <target>Has recibido una baja calificación de una estrella por tercera vez, de un paciente por una Consulta Virtual. Debido a que nos tomamos estas calificaciones muy en serio, nos gustaría discutirla contigo antes de que continúes a HealthTap. Por favor, contáctanos al</target>
+        <target>Has recibido una baja calificación de una estrella por tercera vez, de un paciente por una Consulta Virtual. Debido a que nos tomamos estas calificaciones muy en serio, nos gustaría discutirla contigo antes de que continúes a HealthTap. Por favor, contáctanos a</target>
       </trans-unit>
       <trans-unit id="412" resname="r852860018" restype="string" datatype="ruby">
         <source>Review guidelines</source>
@@ -1350,7 +1350,7 @@
     <body>
       <trans-unit id="430" resname="r593016016" restype="string" datatype="ruby">
         <source>Please contact us if you believe this is an error, please contact us at</source>
-        <target>Por favor, contáctanos si crees que esto es un error, por favor, contáctanos al</target>
+        <target>Por favor, contáctanos si crees que esto es un error, por favor, contáctanos a</target>
       </trans-unit>
     </body>
   </file>
@@ -2950,7 +2950,7 @@
       </trans-unit>
       <trans-unit id="761" resname="r583894017" restype="string" datatype="ruby">
         <source>Share your personal URL or promo code on Facebook, Twitter, or send through email to friends and family—however you’d like you spread the word</source>
-        <target>Comparte tu URL personal o código promocional en Facebook, Twitter, o envíalo a tra´ves de correo electrónico a amigos y familiares — de la forma que quieras correr la voz</target>
+        <target>Comparte tu URL personal o código promocional en Facebook, Twitter, o envíalo a través de correo electrónico a amigos y familiares — de la forma que quieras correr la voz</target>
       </trans-unit>
       <trans-unit id="762" resname="r66634134" restype="string" datatype="ruby">
         <source>When someone uses your link to buy a consult they’ll get a $5 credit and you’ll get $5 added to your account</source>
@@ -3770,7 +3770,7 @@
       </trans-unit>
       <trans-unit id="1001" resname="r377349525" restype="string" datatype="ruby">
         <source>HealthTap launches new proprietary algorithms to enable anyone to find health information tailored to them from the world’s largest library of doctor knowledge.</source>
-        <target>HealthTap lanza sus nuevos y propios algoritmos para permitir que cualquiera encuentre la información necesaria en la biblioteca de conocimiento de doctores más grande del mundo.</target>
+        <target>HealthTap lanza tus nuevos y propios algoritmos para permitirle a cualquier el encontrar información ajustada para ellos de la biblioteca de conocimiento de doctores más grande del mundo.</target>
       </trans-unit>
       <trans-unit id="1002" resname="r60920295" restype="string" datatype="ruby">
         <source>Nov 2016</source>
@@ -3794,7 +3794,7 @@
       </trans-unit>
       <trans-unit id="1007" resname="r599216549" restype="string" datatype="ruby">
         <source>Doctor %{ai_serif} is a personal %{ai_serif}-powered physician trained by HealthTap’s network of more than 105,000 top doctors that uses machine learning algorithms to apply doctor-sourced clinical expertise. Dr. %{ai_serif} converses with the patient to understand their health profile to determine the possible causes of their symptoms and route users to the right care immediately.</source>
-        <target>El doctor %{ai_serif} es un médico personal impulsado por %{ai_serif} entrenado por la rede de HealthTap de más de 105,000 de los mejores doctores que usa algoritmos de aprendizaje automático para aplicar destreza clínica sacada de doctores. El Dr. %{ai_serif} conversa con el paciente para entender su perfil de salud y determinar las causas probables de sus síntomas y enviar a usuarios a la atención adecuada inmediatamente.</target>
+        <target>El doctor %{ai_serif} es un médico personal propulsado por %{ai_serif} entrenado por la rede de HealthTap de más de 105,000 de los mejores doctores que usa algoritmos de aprendizaje automático para aplicar destreza clínica sacada de doctores. El Dr. %{ai_serif} conversa con el paciente para entender su perfil de salud y determinar las causas probables de sus síntomas y enviar a usuarios a la atención adecuada inmediatamente.</target>
       </trans-unit>
     </body>
   </file>
@@ -4883,7 +4883,7 @@
         &lt;a target="_blank" class="mommaDocMeta_h"&gt;Learn more ›&lt;/a&gt;</source>
         <target>Millones de mujeres embarazadas y mamás están buscando el conocimiento experto y compasión de doctores que
       tienen experiencias de primera mano como madres. &lt;br&gt;
-      &lt;a target=”_blank”class=”mommaDocMeta_h”&gt; Aprende más ›&lt;/a&gt;</target>
+      &lt;a target=”_blank”class=”mommaDocMeta_h”&gt; Aprender más ›&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -5144,7 +5144,7 @@
         <source>Already a member?
                 &lt;a href="#login"&gt;Log in&lt;/a&gt;</source>
         <target>¿Ya eres un miembro?
-                &lt;a href="#login"&gt;Iniciar sesión&lt;/a&gt;</target>
+                &lt;a href="#login"&gt;Log in&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -5336,7 +5336,7 @@
     <body>
       <trans-unit id="1919" resname="Contact us at {link_tag_start}{email}{link_tag_end}" restype="string" datatype="javascript">
         <source>Contact us at {link_tag_start}{email}{link_tag_end}</source>
-        <target>Contáctanos al {link_tag_start}{email}{link_tag_end}</target>
+        <target>Contáctanos a {link_tag_start}{email}{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -5616,7 +5616,7 @@
     <body>
       <trans-unit id="2395" resname="We&apos;ll now help you with {goal_name} with timely, friendly reminders on behalf of Dr. {last_name}" restype="string" datatype="javascript">
         <source>We'll now help you with {goal_name} with timely, friendly reminders on behalf of Dr. {last_name}</source>
-        <target>Ahora te ayudaremos con {goal_name} con recordatorios oportunos y amigables en nombre del Dr. {last_name}</target>
+        <target>Ahora te ayudaremos con {goal_name} con recordatorios oportunos y amigables en nombre de Dr. {last_name}</target>
       </trans-unit>
     </body>
   </file>
@@ -5781,8 +5781,8 @@
       <trans-unit id="2493" resname="We&apos;re dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of deactivating your account. We&apos;ll do our best to make you happy so soon as possible!" restype="string" datatype="html">
         <source>We're dedicated to taking care of you. Please consider letting us know how we may make your experience better instead of
     deactivating your account. We'll do our best to make you happy so soon as possible!</source>
-        <target>Estamos dedicados a cuidar de ti. Por favor, haznos saber cómo podemos mejorar tu experiencia en vez de
-    desactivar tu cuenta. ¡Haremos nuestro mejor esfuerzo para hacerte feliz lo antes posible!</target>
+        <target>Estamos dedicados a cuidar de ti. Por favor, considera hacernos saber cómo podemos hacer tu experiencia mejor en vez de
+    desactivar tu cuenta. ¡Haremos nuestro mejor esfuerzo para hacer feliz lo antes posible!</target>
       </trans-unit>
     </body>
   </file>
