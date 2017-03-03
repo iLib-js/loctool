@@ -3730,7 +3730,7 @@
     <body>
       <trans-unit id="627" resname="r640116199" restype="string" datatype="ruby">
         <source>%{name}'s Topics - HealthTap</source>
-        <target state="translated">%{name}'s Temas - HealthTap</target>
+        <target state="translated">Temas de %{name} - HealthTap</target>
       </trans-unit>
       <trans-unit id="7571" resname="r881729341" restype="string" datatype="ruby">
         <source>Your selling price needs to be set higher than $%{price}!</source>

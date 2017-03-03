@@ -7393,7 +7393,7 @@
     <body>
       <trans-unit id="3586" resname="r1004613819" restype="string" datatype="x-haml">
         <source>'s</source>
-        <target state="translated">'s</target>
+        <target state="translated">的</target>
       </trans-unit>
     </body>
   </file>

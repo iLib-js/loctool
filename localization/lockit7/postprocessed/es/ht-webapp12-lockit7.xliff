@@ -6019,7 +6019,7 @@
     <body>
       <trans-unit id="1242" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target>estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</target>
+        <target>estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt; de &lt;%=user_answer.actor.name%&gt;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -6027,7 +6027,7 @@
     <body>
       <trans-unit id="1243" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target>estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</target>
+        <target>estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt; de &lt;%=user_answer.actor.name%&gt;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>

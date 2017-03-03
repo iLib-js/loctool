@@ -2194,7 +2194,7 @@
       </trans-unit>
       <trans-unit id="466" resname="r1028567604" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; (%{specialty}) had something to add to &lt;b&gt;%{other_person}'s&lt;/b&gt; answer to your question &lt;b&gt;"%{q_text} "&lt;/b&gt; &lt;span style='color:#039;'&gt;See the comment.&lt;/span&gt;</source>
-        <target state="translated">&lt;b&gt;%{person}&lt;/b&gt; (%{specialty}) tuvo algo que agregar a la respuesta &lt;b&gt;%{other_person}'s&lt;/b&gt; a tu pregunta &lt;b&gt;"%{q_text}"&lt;/b&gt;. &lt;span style='color:#039;'&gt;Ver el comentario.&lt;/span&gt;</target>
+        <target state="translated">&lt;b&gt;%{person}&lt;/b&gt; (%{specialty}) tuvo algo que agregar a la respuesta de &lt;b&gt;%{other_person}&lt;/b&gt; a tu pregunta &lt;b&gt;"%{q_text}"&lt;/b&gt;. &lt;span style='color:#039;'&gt;Ver el comentario.&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="467" resname="r216002396" restype="string" datatype="ruby">
         <source>&lt;div style="color:#d8ac45;padding-bottom:5px"&gt;&lt;b&gt;Congrats! You have earned a medal!&lt;/b&gt;&lt;/div&gt; &lt;div style='padding-bottom:5px'&gt;&lt;b&gt;%{name}:&lt;/b&gt; &lt;i style='font-style: italic;'&gt;%{trigger}&lt;/i&gt;&lt;/d][Earn more medals to gain recognition for your expertise and compassion.&lt;br&gt;&lt;b&gt;Unlock the %{next_name} medal next. &lt;a href='/#expert/home'&gt;Learn How &amp;raquo;&lt;/a&gt;&lt;/b&gt;&lt;/div&gt;</source>

@@ -21454,7 +21454,7 @@
       </trans-unit>
       <trans-unit id="4948" resname="r640116199" restype="string" datatype="ruby">
         <source>%{name}'s Topics - HealthTap</source>
-        <target>%{name}'s Temas - HealthTap</target>
+        <target>Temas de %{name} - HealthTap</target>
       </trans-unit>
       <trans-unit id="4949" resname="r1018994954" restype="string" datatype="ruby">
         <source>Unsubscribe - HealthTap</source>

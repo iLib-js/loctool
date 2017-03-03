@@ -1586,7 +1586,7 @@
       </trans-unit>
       <trans-unit id="417" resname="r33874383" restype="string" datatype="x-android-resource">
         <source>{name}\'s</source>
-        <target state="translated">{name}\</target>
+        <target state="trans ated">de {name}</target>
       </trans-unit>
       <trans-unit id="418" resname="r221517291" restype="string" datatype="x-android-resource">
         <source>checklist on</source>

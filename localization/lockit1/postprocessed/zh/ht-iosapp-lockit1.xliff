@@ -6130,7 +6130,7 @@ and more</source>
       </trans-unit>
       <trans-unit id=" %@&apos;s " resname=" %@&apos;s " restype="string" datatype="x-objective-c">
         <source>%@'s</source>
-        <target>%@'s</target>
+        <target>%@的</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id=" )" resname=" )" restype="string" datatype="x-objective-c">
@@ -6400,12 +6400,12 @@ accepted</source>
       </trans-unit>
       <trans-unit id="%@ agreed with %@&apos;s answer." resname="%@ agreed with %@&apos;s answer." restype="string" datatype="x-objective-c">
         <source>%1$@ agreed with %2$@'s answer.</source>
-        <target>%1$@ 同意%2$@'s 回答。</target>
+        <target>%1$@ 同意%2$@的回答。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ agrees with %@&apos;s answer:" resname="%@ agrees with %@&apos;s answer:" restype="string" datatype="x-objective-c">
         <source>%1$@ agrees with %2$@'s answer:</source>
-        <target>%1$@ 同意%2$@'s 回答。</target>
+        <target>%1$@ 同意%2$@的回答。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ and " resname="%@ and " restype="string" datatype="x-objective-c">
@@ -6467,7 +6467,7 @@ accepted</source>
       </trans-unit>
       <trans-unit id="%@ commented on %@&apos;s answer" resname="%@ commented on %@&apos;s answer" restype="string" datatype="x-objective-c">
         <source>%1$@ commented on %2$@'s answer</source>
-        <target>%1$@ 同意%2$@'s 回答。</target>
+        <target>%1$@ 同意%2$@的回答。</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="%@ commented on \r\n%@&apos;s answer:" resname="%@ commented on \r\n%@&apos;s answer:" restype="string" datatype="x-objective-c">
@@ -6604,7 +6604,7 @@ accepted</source>
       </trans-unit>
       <trans-unit id="%@&apos;s" resname="%@&apos;s" restype="string" datatype="x-objective-c">
         <source>%@'s</source>
-        <target>%@'s</target>
+        <target>%@的</target>
         <note annotates="source">Para: word to show ownership after person's name</note>
       </trans-unit>
       <trans-unit id="%@, %@ and" resname="%@, %@ and" restype="string" datatype="x-objective-c">
@@ -9693,7 +9693,7 @@ Would you like to connect?</source>
       </trans-unit>
       <trans-unit id="If you know it, when its %@&apos;s expected due date?" resname="If you know it, when its %@&apos;s expected due date?" restype="string" datatype="x-objective-c">
         <source>If you know it, when its %@'s expected due date?</source>
-        <target>%@'s的预产期是何时？</target>
+        <target>%@的预产期是何时？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="If you leave, your changes will be lost." resname="If you leave, your changes will be lost." restype="string" datatype="x-objective-c">
@@ -12795,7 +12795,7 @@ doctor picks up)</source>
       </trans-unit>
       <trans-unit id="What is %@&apos;s height and weight?" resname="What is %@&apos;s height and weight?" restype="string" datatype="x-objective-c">
         <source>What is %@'s height and weight?</source>
-        <target>%@'s的身高和体重？</target>
+        <target>%@的身高和体重？</target>
         <note annotates="source">No comment provided by engineer.</note>
       </trans-unit>
       <trans-unit id="What is their name?" resname="What is their name?" restype="string" datatype="x-objective-c">
@@ -20397,7 +20397,7 @@ Ask Dr. Smith, a dietician, for only $44</source>
       </trans-unit>
       <trans-unit id="VcR-do-QUz.text" resname="VcR-do-QUz.text" restype="string" datatype="x-xib">
         <source>I agree to the HealthTap's</source>
-        <target>我同意 HealthTap's</target>
+        <target>我同意 HealthTap的</target>
         <note annotates="source">Class = "UILabel"; text = "I agree to the HealthTap's"; ObjectID = "VcR-do-QUz";</note>
       </trans-unit>
       <trans-unit id="WPj-dJ-ga9.text" resname="WPj-dJ-ga9.text" restype="string" datatype="x-xib">
