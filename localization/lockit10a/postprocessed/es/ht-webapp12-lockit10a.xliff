@@ -708,7 +708,7 @@
       </trans-unit>
       <trans-unit id="568" resname="color" restype="string" datatype="x-yaml" x-context="triage_options@0">
         <source>green</source>
-        <target state="translated">verde</target>
+        <target state="accepted">green</target>
       </trans-unit>
       <trans-unit id="579" resname=":title" restype="string" datatype="x-yaml" x-context="care_options@0">
         <source>Learn more</source>
