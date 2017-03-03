@@ -341,7 +341,7 @@
     <body>
       <trans-unit id="72" resname="r808842909" restype="string" datatype="ruby">
         <source>Curated by doctors to keep you&lt;br/&gt;informed on current events in medicine</source>
-        <target state="translated">Curado por doctores para mantenerte&lt;br/&gt;informado en los eventos actuales de la medicina</target>
+        <target state="translated">Atendido por doctores para mantenerte&lt;br/&gt;informado en los eventos actuales de la medicina</target>
       </trans-unit>
       <trans-unit id="73" resname="r691446454" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered "physician", trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>

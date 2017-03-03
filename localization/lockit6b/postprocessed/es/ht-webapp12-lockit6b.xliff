@@ -2803,10 +2803,6 @@
         <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to</source>
         <target>Puede sonar altanero, pero creemos que se trata de algo muy básico. Todos simplemente queremos</target>
       </trans-unit>
-      <trans-unit id="2479" resname="r429307520" restype="string" datatype="x-haml">
-        <source>All these things make us</source>
-        <target>Todas estas cosas nos hacen</target>
-      </trans-unit>
       <trans-unit id="2480" resname="r54568686" restype="string" datatype="x-haml">
         <source>by taking care of us and giving us comfort when we need it most. We can take care of each other, too. By bringing the fun back into taking care of each other, we work with doctors to make the world a better place.</source>
         <target state="accepted">al cuidarnos y al consolarnos cuando más lo necesitamos. También nos podemos cuidar los unos a los otros. Para entregar una manera entretenida de cuidarnos entre si, trabajamos con doctores que hacen del mundo un mejor lugar.</target>
@@ -3342,14 +3338,6 @@
       <trans-unit id="2618" resname="r33283907" restype="string" datatype="x-haml">
         <source>provides me with an interactive forum with tens of thousands of patients and colleagues.</source>
         <target>me brinda un foro interactivo con decenas de miles de pacientes y colegas.</target>
-      </trans-unit>
-      <trans-unit id="2619" resname="r188937521" restype="string" datatype="x-haml">
-        <source>doctors delight in</source>
-        <target>les encanta</target>
-      </trans-unit>
-      <trans-unit id="2620" resname="r786643384" restype="string" datatype="x-haml">
-        <source>What</source>
-        <target>Lo que a los doctores de</target>
       </trans-unit>
       <trans-unit id="2621" resname="r544270111" restype="string" datatype="x-haml">
         <source>doctors answer people’s questions, provide them with health tips, and curate those articles and research papers that will be most helpful to both individuals and society at large.</source>

@@ -13567,10 +13567,6 @@
         <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to</source>
         <target>Puede sonar altanero, pero creemos que se trata de algo muy básico. Todos -de corazón- simplemente queremos</target>
       </trans-unit>
-      <trans-unit id="7201" resname="r429307520" restype="string" datatype="x-haml">
-        <source>All these things make us</source>
-        <target>Todas estas cosas nos hacen</target>
-      </trans-unit>
       <trans-unit id="7202" resname="r54568686" restype="string" datatype="x-haml">
         <source>by taking care of us and giving us comfort when we need it most. We can take care of each other, too. By bringing the fun back into taking care of each other, we work with doctors to make the world a better place.</source>
         <target>al cuidarnos y dándonos comodidad cuando más lo necesitamos. También nos podemos cuidar los unos a los otros. Trayendo de regreso la diversión al cuidado del uno al otro, trabajamos con doctores para hacer del mundo un lugar mejor.</target>
@@ -13585,7 +13581,7 @@
       </trans-unit>
       <trans-unit id="7206" resname="r833243616" restype="string" datatype="x-haml">
         <source>We’re excited to have reinvented how the world experiences health and</source>
-        <target>Estamos emocionados de haber reinventado el modo como el mundo experimenta la salud y</target>
+        <target>Estamos entusiasmados de haber reinventado como el mundo experimenta la salud y</target>
       </trans-unit>
       <trans-unit id="7207" resname="r203704905" restype="string" datatype="x-haml">
         <source>...to help everyone</source>
@@ -13653,7 +13649,7 @@
       </trans-unit>
       <trans-unit id="7228" resname="r791261932" restype="string" datatype="x-haml">
         <source>Looking up and noticing the beauty of our surroundings.</source>
-        <target state="accepted">Observar y reconocer la belleza a nuestro alrededor.</target>
+        <target state="accepted">Observar y notar la belleza de nuestro alrededor.</target>
       </trans-unit>
       <trans-unit id="7229" resname="r255728008" restype="string" datatype="x-haml">
         <source>Gratitude.</source>
@@ -13709,7 +13705,7 @@
       </trans-unit>
       <trans-unit id="7242" resname="r672694585" restype="string" datatype="x-haml">
         <source>, and to help others do the same. In large and small ways, we strive to help everyone with whom we</source>
-        <target>, y para ayudar a otros a hacer lo mismo. De formas grandes y pequeñas, luchamos para ayudar a todos con quienes nosotros</target>
+        <target>, y para ayudar a otros a hacer lo mismo. De maneras grandes y pequeñas, nos esforzamos para ayudar a todos con quienes</target>
       </trans-unit>
       <trans-unit id="7243" resname="r789467963" restype="string" datatype="x-haml">
         <source>We value sense of adventure</source>
@@ -31601,7 +31597,7 @@
       </trans-unit>
       <trans-unit id="12826" resname="r18823598" restype="string" datatype="x-haml">
         <source>Accomplish your health goals and feel good faster with helpful doctor checklists and reminders</source>
-        <target>Haz realidad tus metas de salud y sentirse bien más rápido con ayuda de listas de cotejo de doctores y recordatorios</target>
+        <target>Haz realidad tus metas de salud y sentirte bien más rápido con ayuda de listas de cotejo de doctores y recordatorios</target>
       </trans-unit>
       <trans-unit id="12827" resname="r757472577" restype="string" datatype="x-haml">
         <source>Choose health topics from the 4 categories below — the more you select the better!</source>
