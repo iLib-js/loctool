@@ -197,7 +197,7 @@
     <body>
       <trans-unit id="6" resname="symptom_triage_added_symptom_text" restype="plural" datatype="x-android-resource" extype="one">
         <source>Thanks! {start}1{end} symptom added.\nAny additional symptoms?</source>
-        <target state="translated">¡Gracias! %d síntomas añadidos.\n¿Algún síntoma adicional?</target>
+        <target state="translated">¡Gracias! {start}1{end} síntoma añadido.\n¿Algún síntoma adicional?</target>
       </trans-unit>
     </body>
   </file>

@@ -352,7 +352,7 @@
       </trans-unit>
       <trans-unit id="81" resname="r644800481" restype="string" datatype="ruby">
         <source>Real-time population health insights&lt;br/&gt;Based on location and demographic</source>
-        <target>Perspicacias de salud poblacional en tiempo real&lt;br/&gt;Basadas en ubicación y demografía</target>
+        <target>Conocimientos médicos de salud poblacional en tiempo real&lt;br/&gt;Basadas en ubicación y demografía</target>
       </trans-unit>
       <trans-unit id="82" resname="r31776158" restype="string" datatype="ruby">
         <source>Always available technical support&lt;br/&gt;Warm transfer capabilities and protocols</source>
@@ -360,7 +360,7 @@
       </trans-unit>
       <trans-unit id="83" resname="r651656946" restype="string" datatype="ruby">
         <source>Specific, actionable doctor insights&lt;br/&gt;Answers, tips, and checklists</source>
-        <target>Perspicacias de doctor específicas y accioniables&lt;br/&gt;Respuestas, tips y listados</target>
+(??)        <target>Perspicacias de doctores específicas y accioniables&lt;br/&gt;Respuestas, tips y listados</target>
       </trans-unit>
       <trans-unit id="84" resname="r329110499" restype="string" datatype="ruby">
         <source>Immediate response and access&lt;br/&gt;%{num} doctors across 141 specialties</source>
@@ -440,7 +440,7 @@
       </trans-unit>
       <trans-unit id="102" resname="r607444164" restype="string" datatype="ruby">
         <source>Advanced data and analytics tools and dashboards helps analyze utilization and trends, enabling predictive analysis of health insights within patient population.</source>
-        <target>Datos, herramientas de análisis y tableros avanzados ayudan a analizar uso y tendencias, permitiendo análisis predictivo de perspicacias de salud dentro de la población de pacientes.</target>
+        <target>Datos, herramientas de análisis y tableros avanzados ayudan a analizar uso y tendencias, permitiendo análisis predictivo de conocimientos médicos de salud dentro de la población de pacientes.</target>
       </trans-unit>
       <trans-unit id="103" resname="r422908605" restype="string" datatype="ruby">
         <source>Build a visionary global brand and become a thought leader committed to delivering the best care possible.</source>
@@ -1037,7 +1037,7 @@
     <body>
       <trans-unit id="237" resname="r245565904" restype="string" datatype="ruby">
         <source>For medical emergencies, call %{emergency_extension} (or your local emergency services) or go to the nearest %{emergency_room_abbreviation}.</source>
-        <target>Para emergencias médicas, llama al %{emergency_extension} (o a tus servicios de emergencia local) o ve a la más cercana %{emergency_room_abbreviation}.</target>
+        <target>Para emergencias médicas, llama al %{emergency_extension} (o a tus servicios de emergencia local) o ve a la %{emergency_room_abbreviation} más cercana.</target>
       </trans-unit>
     </body>
   </file>
@@ -1761,7 +1761,7 @@
       </trans-unit>
       <trans-unit id="360" resname="r958093413" restype="string" datatype="ruby">
         <source>Advanced data and analytics help analyze utilization and trends, enabling predictive analysis of health insights within patient population. Metricizes and creates transparency around quality of care with doctor-doctor peer review, patient-to-doctor ratings, and doctor-to-patient ratings.</source>
-        <target>Datos y herramientas de análisis avanzadas ayudan a analizar uso y tendencias, permitiendo análisis predictivo de perspicacias de salud dentro de la población de pacientes. Da métricas y crea transparencia alrededor de la calidad de la atención con revisión por pares de doctor a doctor, calificaciones de paciente a doctor, y calificaciones de doctor a paciente.</target>
+        <target>Datos y herramientas de análisis avanzadas ayudan a analizar uso y tendencias, permitiendo análisis predictivo de conocimientos médicos de salud dentro de la población de pacientes. Da métricas y crea transparencia alrededor de la calidad de la atención con revisión por pares de doctor a doctor, calificaciones de paciente a doctor, y calificaciones de doctor a paciente.</target>
       </trans-unit>
     </body>
   </file>
@@ -1797,7 +1797,7 @@
     <body>
       <trans-unit id="366" resname="r527860771" restype="string" datatype="ruby">
         <source>Patients get instant 24/7 access to world’s largest knowledge-base of doctor insights from your doctors and our network of %{doctors_count} top doctors</source>
-        <target>Los pacientes obtienen acceso instantáneo, 24/7, a la base de conocimientos de perspicacias de doctores más grande del mundo, de tus doctores y de nuestra red de %{doctors_count} de los mejores doctores</target>
+        <target>Los pacientes obtienen acceso instantáneo, 24/7, a la base de conocimientos de conocimientos médicos de doctores más grande del mundo, de tus doctores y de nuestra red de %{doctors_count} de los mejores doctores</target>
         <note annotates="source">TODO pluralize</note>
       </trans-unit>
     </body>
@@ -1826,7 +1826,7 @@
     <body>
       <trans-unit id="370" resname="r474955460" restype="string" datatype="ruby">
         <source>The world’s largest library of doctor-created and peer-reviewed insights, with %{answer_count} billion answers served by %{doctor_count} top doctors across 140+ specialties.</source>
-        <target>La biblioteca de perspicacias creadas por doctores y con revisión por pares más grande del mundo, con %{answer_count} billones de respuestas servidas por %{doctor_count} de los mejores doctores de 140+ especialidades.</target>
+        <target>La biblioteca de conocimientos médicos creadas por doctores y con revisión por pares más grande del mundo, con %{answer_count} billones de respuestas servidas por %{doctor_count} de los mejores doctores de 140+ especialidades.</target>
       </trans-unit>
       <trans-unit id="371" resname="r554727836" restype="string" datatype="ruby">
         <source>Virtual Consults enable access to fast, affordable, and convenient doctor advice, prescriptions, lab tests and referrals by HD video, voice, or text chat.</source>
@@ -1866,7 +1866,7 @@
       </trans-unit>
       <trans-unit id="380" resname="r136104146" restype="string" datatype="ruby">
         <source>Access a rich suite of utilization reports and real-time population health insights.</source>
-        <target>Accede a una rica suite de reportes de uso y perspicacias de salud poblacional en tiempo real.</target>
+        <target>Accede a una rica suite de reportes de uso y conocimientos médicos de salud poblacional en tiempo real.</target>
       </trans-unit>
     </body>
   </file>
@@ -1887,7 +1887,7 @@
       </trans-unit>
       <trans-unit id="383" resname="r579637420" restype="string" datatype="ruby">
         <source>Real-time population health insights. Based on location and demographic.</source>
-        <target>Perspicacias de salud poblacional en tiempo real. Basadas en ubicación y demografía.</target>
+        <target>Conocimientos médicos de salud poblacional en tiempo real. Basadas en ubicación y demografía.</target>
       </trans-unit>
       <trans-unit id="384" resname="r867896794" restype="string" datatype="ruby">
         <source>Always available technical support. Warm transfer capabilities and protocols.</source>
@@ -1895,7 +1895,7 @@
       </trans-unit>
       <trans-unit id="385" resname="r513799113" restype="string" datatype="ruby">
         <source>Specific, actionable doctor insights in the form of relevant answers, tips, and checklists.</source>
-        <target>Perspicacias de doctores accionables y específicas en la forma de respuestas, tips y listados.</target>
+        <target>Conocimientos médicos de doctores viables y específicas en la forma de respuestas, tips y listados.</target>
       </trans-unit>
       <trans-unit id="386" resname="r521837342" restype="string" datatype="ruby">
         <source>Live responses from and access to primary care doctors and disaster specialists.</source>
@@ -2983,7 +2983,7 @@
       </trans-unit>
       <trans-unit id="642" resname="r347680202" restype="string" datatype="ruby">
         <source>A personal health hub that helps your employees navigate healthcare, easily and cost-effectively</source>
-        <target>Un centro de salud personal que ayuda a tus empleados a navegar la atención a la salud, de forma fácil y económica</target>
+        <target>Un centro de salud personal que ayuda a tus empleados a informarse sobre atención de la salud, de forma fácil y económica</target>
       </trans-unit>
       <trans-unit id="643" resname="r398480132" restype="string" datatype="ruby">
         <source>Assign account manager</source>
@@ -4379,7 +4379,7 @@
     <body>
       <trans-unit id="985" resname="Our mission is to measurably prolong the life expectancy of humankind and help everyone Feel Good by providing immediate access to top medical experts and their trusted health advice anytime, anywhere." restype="string" datatype="html">
         <source>Our mission is to measurably prolong the life expectancy of humankind and help everyone Feel Good by providing immediate access to top medical experts and their trusted health advice anytime, anywhere.</source>
-        <target>Nuestra misión es prolongar la expectativa de vida de la humanidad de forma cuantificable, y ayudar a todos a Sentirse Bien al brindar acceso inmediato a los mejores expertos médicos y a su confiable consejo de salud, a cualquier hora y en cualquier lugar.</target>
+        <target state="accepted">Nuestra misión es prolongar la expectativa de vida de la humanidad de manera cuantificable y ayudar a todos Sentirse Bien brinda acceso inmediato a médicos expertos y a su confiable consejo a cualquier hora, en cualquier lugar.</target>
       </trans-unit>
     </body>
   </file>
@@ -5372,7 +5372,7 @@
     <body>
       <trans-unit id="1141" resname="paypal" restype="string" datatype="html">
         <source>paypal</source>
-        <target>paypal</target>
+        <target>PayPal</target>
       </trans-unit>
       <trans-unit id="1142" resname="check" restype="string" datatype="html">
         <source>check</source>
@@ -6507,11 +6507,11 @@
       </trans-unit>
       <trans-unit id="1352" resname="{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult</source>
-        <target>{span_tag_start}Un intérprete de {language}{span_tag_end} se te unirá para esta consulta</target>
+        <target>{span_tag_start}Un intérprete {language}{span_tag_end} se te unirá para esta consulta</target>
       </trans-unit>
       <trans-unit id="1353" resname="{span_tag_start}A {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}A {language}{span_tag_end} interpeter will join you for this consult</source>
-        <target>{span_tag_start}Un intérprete de {language}{span_tag_end} se te unirá para esta consulta</target>
+        <target>{span_tag_start}Un intérprete {language}{span_tag_end} se te unirá para esta consulta</target>
       </trans-unit>
       <trans-unit id="1354" resname="Company Name" restype="string" datatype="javascript">
         <source>Company Name</source>

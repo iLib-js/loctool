@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="18" resname="Experiencing symptoms?" restype="string" datatype="x-objective-c">
         <source>Experiencing symptoms?</source>
-        <target state="translated">¿Experimentando síntomas?</target>
+        <target state="ui-fix">¿Síntomas?</target>
       </trans-unit>
       <trans-unit id="19" resname="Find out why" restype="string" datatype="x-objective-c">
         <source>Find out why</source>
@@ -786,6 +786,73 @@
         <source>Add topics to your profile so doctors may provide you with better answers</source>
         <target state="translated">Añade temas a tu perfil para que doctores puedan brindarte mejores respuestas</target>
         <note annotates="source">Class = "UILabel"; text = "Add topics to your profile so doctors may provide you with better answers"; ObjectID = "tb3-7a-KBu";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/Classes/UI/Concierge/FGConciergeAppointmentReminderPopupView.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Checking location..." restype="string" datatype="x-objective-c">
+        <source>Checking location...</source>
+        <target state="accepted">Comprobando ubicación...</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Testing your connection..." restype="string" datatype="x-objective-c">
+        <source>Testing your connection...</source>
+        <target state="accepted">Probando conexión...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/ViewControllers/FGTalk2DocComposeConsultViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="Prime unavailable" restype="string" datatype="x-objective-c">
+        <source>Prime unavailable</source>
+        <target state="accepted">Prime indisponible</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+      <trans-unit id="2" resname="No Prime doctors are currently available in your area." restype="string" datatype="x-objective-c">
+        <source>No Prime doctors are currently available in your area.</source>
+        <target state="accepted">Ningun doctor Prime esta disponible en su area.</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+      <trans-unit id="3" resname="Concierge unavailable" restype="string" datatype="x-objective-c">
+        <source>Concierge unavailable</source>
+        <target state="accepted">Concierge indisponible</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+      <trans-unit id="4" resname="Concierge is currently unavailable." restype="string" datatype="x-objective-c">
+        <source>Concierge is currently unavailable.</source>
+        <target state="accepted">Concierge no esta disponible ahorita.</target>
+        <note annotates="source">OK button</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="feelgood/HTSymptomTriageConditionsPHRViewController.m" source-language="en-US" target-language="es-US" product-name="ht-iosapp">
+    <body>
+      <trans-unit id="1" resname="We were unable to add the condition. Please try again" restype="string" datatype="x-objective-c">
+        <source>We were unable to add the condition. Please try again</source>
+        <target state="accepted">No pudimos agregar la condición. Porfavor intente de nuevo</target>
+      </trans-unit>
+      <trans-unit id="2" resname="Dismiss" restype="string" datatype="x-objective-c">
+        <source>Dismiss</source>
+        <target state="accepted">Cerrar</target>
+        <note annotates="source">Dismiss button</note>
+      </trans-unit>
+      <trans-unit id="3" resname="We were unable to remove the condition. Please try again" restype="string" datatype="x-objective-c">
+        <source>We were unable to remove the condition. Please try again</source>
+        <target state="accepted">No pudimos remover la condición. Porfavor intente de nuevo</target>
+      </trans-unit>
+      <trans-unit id="4" resname="Remove condition" restype="string" datatype="x-objective-c">
+        <source>Remove condition</source>
+        <target state="accepted">Remover condición</target>
+        <note annotates="source">remove  condition alert title</note>
+      </trans-unit>
+      <trans-unit id="5" resname="Already added" restype="string" datatype="x-objective-c">
+        <source>Already added</source>
+        <target state="accepted">Condición previamente agregada</target>
+        <note annotates="source">condition already added title</note>
+      </trans-unit>
+      <trans-unit id="6" resname="You&apos;ve already added that condition before." restype="string" datatype="x-objective-c">
+        <source>You've already added that condition before.</source>
+        <target state="accepted">Esta condición ya ha sido agregada</target>
       </trans-unit>
     </body>
   </file>

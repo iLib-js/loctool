@@ -670,7 +670,7 @@
       </trans-unit>
       <trans-unit id="197" resname="T" restype="string" datatype="x-objective-c">
         <source>T</source>
-        <target state="translated">J</target>
+        <target state="translated">Ma</target>
         <note annotates="source">Day of the week: Tuesday</note>
       </trans-unit>
       <trans-unit id="198" resname="W" restype="string" datatype="x-objective-c">

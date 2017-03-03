@@ -282,7 +282,7 @@
     <body>
       <trans-unit id="131" resname="r1008955882" restype="string" datatype="ruby">
         <source>Find a goal (ex. Lose weight)</source>
-        <target>Encuentra una meta (ej. Perder de peso)</target>
+        <target>Encuentra una meta (p. ej. Perder peso)</target>
       </trans-unit>
     </body>
   </file>
@@ -1158,7 +1158,7 @@
     <body>
       <trans-unit id="385" resname="r522824896" restype="string" datatype="ruby">
         <source>We need your help to complete an upcoming public report on RateRx that will reveal the incredible insights of what doctors know are the most effective treatments.</source>
-        <target>Necesitamos tu ayuda para completar un próximo reporte público en RateRx que revelará las increíbles perspicacias acerca de lo que los doctores saben que son los tratamientos más efectivos.</target>
+        <target>Necesitamos tu ayuda para completar un próximo reporte público en RateRx que revelará las increíbles conocimientos médicos acerca de lo que los doctores saben que son los tratamientos más efectivos.</target>
       </trans-unit>
       <trans-unit id="386" resname="r127981919" restype="string" datatype="ruby">
         <source>Share your knowledge with just one click today, and your ratings will be included in the RateRx report that will very soon reach millions. Simply click on the star for your rating:</source>
@@ -5664,7 +5664,7 @@
     <body>
       <trans-unit id="2460" resname="r467602620" restype="string" datatype="x-haml">
         <source>We believe healthcare is a fundamental human right</source>
-        <target>Creemos que la atención a la salud es un derecho humano fundamental</target>
+        <target state="accepted">Creemos que la atención de la salud es un derecho humano fundamental</target>
       </trans-unit>
     </body>
   </file>
@@ -5692,7 +5692,7 @@
     <body>
       <trans-unit id="2470" resname="r617502185" restype="string" datatype="x-haml">
         <source>A private, personal health record where you can transform your data into useful and actionable insights</source>
-        <target>Un expediente clínico personal y privado donde puedes transformar tus datos en perspicacias útiles y accionables</target>
+        <target>Un expediente clínico personal y privado donde puedes transformar tus datos en conocimientos médicos útiles y viables</target>
       </trans-unit>
       <trans-unit id="2471" resname="r30407274" restype="string" datatype="x-haml">
         <source>Unlimited, instant access to the world’s largest library of doctor knowledge</source>

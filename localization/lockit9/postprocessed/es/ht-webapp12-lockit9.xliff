@@ -52,7 +52,7 @@
       </trans-unit>
       <trans-unit id="11" resname="r580619632" restype="string" datatype="ruby">
         <source>HealthTap embodies the powerful consumer Internet trend of moving high-value mainstream offline experiences, such as doctor-patient interactions, to the online world. The company leverages the three key innovation drivers that I'm most excited about: mobile apps that enable new kinds of rich, personalized interactions via smartphone and tablet; gamification that enhances user engagement and retention; and social mechanics, such as expert-based Q&amp;A and reputation graphs, that facilitate deep interest and trust. It's this kind of fresh thinking that will accelerate the 'consumerization' of Healthcare, and re-invigorate an extremely important and valuable industry that has been behind the IT curve and mired in inefficiency for decades.</source>
-        <target state="translated">HealthTap encarna la poderosa tendencia de consumidores en el Internet de mover experiencias mainstream valiosas offline, como interacciones médico-paciente, al mundo en línea. La compañía se aprovecha de tres motores de innovación clave de los cuales estoy más emocionado: aplicaciones móviles que permiten nuevas interacciones ricas y personalizadas vía teléfono inteligente y tabletas; ludificación que mejora las interacciones y retención de usuarios; y mecánicas sociales; como P&amp;R de expertos y gráficos de reputación, que facilitan profundo interés y confianza. Esta clase de pensamiento innovador es el que acelerará la 'consumerización' de la Atención a la Salud, y revigorizará una industria extremadamente importante y valiosa que se ha quedado atrás en lo que respecta a IT, y que ha estado inmersa en la ineficiencia por décadas.</target>
+        <target state="accepted">HealthTap encarna la poderosa tendencia de consumidores en el Internet de mover experiencias mainstream valiosas offline, como interacciones médico-paciente, al mundo en línea. La compañía se aprovecha de tres motores de innovación claves y de los cuales estoy más entusiasmado: aplicaciones móviles que permiten nuevas interacciones ricas y personalizadas vía teléfono inteligente y tabletas; actividades lúdicas que mejoran la interaccion y retención de usuarios; y mecánicas sociales; como P&amp;R de expertos y gráficos de reputación, que facilitan profundo interés y confianza. Es este tipo de pensamiento fresco que acelerará la “consumedorización” de la atención a la salud, y volvera a vigorizar una industria extremadamente importante y valiosa que ha estado detrás de la curva de IT y que ha estado inmersa en la ineficiencia por décadas.</target>
       </trans-unit>
       <trans-unit id="12" resname="r822464772" restype="string" datatype="ruby">
         <source>HealthTap's approach is brilliant. It delivers what people miss about medicine most: a highly engaging personalized experience, with trusted doctors sharing helpful information.</source>
@@ -60,15 +60,15 @@
       </trans-unit>
       <trans-unit id="13" resname="r275394734" restype="string" datatype="ruby">
         <source>I tend to [invest in] things that are e-commerce, like healthcare. Things that are actually more complex to do and solving a real problem in a big market where there's nobody else doing what HealthTap is doing. What HealthTap is doing is revolutionary.</source>
-        <target state="translated">Yo tiendo a [invertir en] cosas que son comercio en línea, como la atención a la salud. Las cosas que son más complejas de hacer, y resolver un problema real en un mercado grande donde nadie está haciendo lo que HealthTap está haciendo. Lo que HealthTap está haciendo es revolucionario.</target>
+        <target state="accepted">Yo tiendo a [invertir en] cosas que son de comercio en línea, como la atención a la salud. Las cosas que son más complejas de hacer y de resolver, un problema real en un inmenso mercado donde no hay nadie mas haciendo lo que HealthTap hace. Lo que HealthTap está haciendo es revolucionario.</target>
       </trans-unit>
       <trans-unit id="14" resname="r86146743" restype="string" datatype="ruby">
         <source>Everyone will soon become the CEO of their own health. HealthTap, with its phenomenal growth in combination with its unique technology, has the potential to become the triaging platform for everyone's health. I am excited to work with the HealthTap team as the company scales to provide people with unparalleled immediate access to the most trusted medical knowledge, doctors, and health services.</source>
-        <target state="translated">Pronto todos se convertirán en el CEO de su propia salud. HealthTap&gt;, con su crecimiento fenomenal en combinación con su tecnología única, tiene el potencial de convertirse en la plataforma de triage para la salud de todos. Estoy emocionado por trabajar con el equipo HealthTap mientras la compañía se escala para brindar acceso inmediato y sin igual al conocimiento médico, doctores y servicios de salud más confiables.</target>
+        <target state="accepted">Pronto todos se convertirán en el CEO de su propia salud. HealthTap&gt;, con su crecimiento fenomenal en combinación con su tecnología única, tiene el potencial de convertirse en la plataforma de triage para la salud de todos. Estoy entusiasmado de trabajar con el equipo HealthTap mientras la compañía escala para brindar acceso inmediato y sin igual al mas confiable conocimiento médico, de doctores y servicios de salud.</target>
       </trans-unit>
       <trans-unit id="15" resname="r964068761" restype="string" datatype="ruby">
         <source>In its current state, our healthcare system is expensive, difficult to access, and error prone. On the brink of a massive reform in healthcare, dedicated, bright entrepreneurs and technologists can bring a great deal to the table by developing creative, forward thinking solutions that leverage health care professionals. HealthTap is at the forefront of this development, improving patient care by creating quick, easy, and affordable access to doctors everywhere. The future of healthcare is at the confluence of big data, smart algorithms, and simple-to-use interfaces that will provide amplification of our MD's resources: HealthTap is breaking ground in all three, and we're excited to help them make their compelling vision a transformative reality.</source>
-        <target state="translated">En su estado actual, nuestro sistema atención a la salud es caro, difícil de acceder, y propenso a errores. Al borde una masiva reforma a la atención a la salud, emprendedores y tecnólogos brillantes y dedicados pueden traer mucho a la mesa al desarrollar soluciones creativas y novedosas que se aprovechan de los profesionales de la atención a la salud. HealthTap está a la vanguardia de este desarrollo, mejorando la atención al paciente creando acceso accesible, fácil y rápido a doctores en todos lados. El futuro de la atención a la salud está en la convergencia de big data, algoritmos inteligentes e interfaz fáciles de usar que brindan amplificación de los recursos de nuestros MD: HealthTap es pionero en las tres, y estamos emocionados por ayudarlos a hacer su atractiva visión una realidad transformativa.</target>
+        <target state="accepted">En su estado actual, nuestro sistema de atención a la salud es caro, difícil de acceder, y propenso a errores. Al borde de una masiva reforma a la atención a la salud, dedicados emprendedores y tecnólogos brillantes pueden traer mucho a la mesa al desarrollar soluciones creativas y novedosas que aprovechan a los profesionales de la salud. HealthTap está a la vanguardia en este desarrollo, mejorando la atención al paciente, creando acceso fácil y rápido a doctores en todo el mundo. El futuro de la atención a la salud está en la convergencia de la numerosa data, algoritmos inteligentes, e interfaces fáciles de usar que brindan amplificación de los recursos de nuestros MD: HealthTap es pionero en las tres, y estamos entusiasmados en apoyarlos a hacer su atractiva visión en una realidad transformadora.</target>
       </trans-unit>
     </body>
   </file>
@@ -160,7 +160,7 @@
     <body>
       <trans-unit id="31" resname="r930257171" restype="string" datatype="ruby">
         <source>doctor shared a insight</source>
-        <target state="translated">doctor compartió una perspicacia</target>
+        <target state="translated">doctor compartió un consejo médico</target>
       </trans-unit>
     </body>
   </file>
@@ -1234,7 +1234,7 @@
     <body>
       <trans-unit id="236" resname="r474955460" restype="string" datatype="ruby">
         <source>The world’s largest library of doctor-created and peer-reviewed insights, with %{answer_count} billion answers served by %{doctor_count} top doctors across 140+ specialties.</source>
-        <target state="translated">La biblioteca de perspicacias creadas por doctores y con revisión por pares más grande del mundo, con %{answer_count} billones de respuestas servidas por %{doctor_count} de los mejores doctores de 140+ especialidades.</target>
+        <target state="translated">La biblioteca de conocimientos médicos creadas por doctores y con revisión por pares más grande del mundo, con %{answer_count} billones de respuestas servidas por %{doctor_count} de los mejores doctores de 140+ especialidades.</target>
       </trans-unit>
     </body>
   </file>
@@ -2250,11 +2250,11 @@
       </trans-unit>
       <trans-unit id="484" resname="r423369731" restype="string" datatype="ruby">
         <source>See helpful doctor insights for this "Medical Case: %{content}" %{short_url} via @HealthTap</source>
-        <target state="translated">Ver útiles perspicacias de doctores para este "Caso Médico: %{content}" %{short_url} vía @HealthTap</target>
+        <target state="translated">Ver útiles conocimientos médicos de doctores para este "Caso Médico: %{content}" %{short_url} vía @HealthTap</target>
       </trans-unit>
       <trans-unit id="485" resname="r48081774" restype="string" datatype="ruby">
         <source>See helpful doctor insights for this "Medical Case: %{case_content}" %{short_url} via @HealthTap</source>
-        <target state="translated">Ver útiles perspicacias de doctores para este "Caso Médico: %{case_content}" %{short_url} vía @HealthTap</target>
+        <target state="translated">Ver útiles conocimientos médicos de doctores para este "Caso Médico: %{case_content}" %{short_url} vía @HealthTap</target>
       </trans-unit>
       <trans-unit id="486" resname="r889985342" restype="string" datatype="ruby">
         <source>I found %{doctor_name}'s answer really helpful, and thought you might too:: \n "%{question}"</source>
@@ -2290,11 +2290,11 @@
       </trans-unit>
       <trans-unit id="494" resname="r980575871" restype="string" datatype="ruby">
         <source>I thought you'd be interested in getting doctors insights on %{topic_name}</source>
-        <target state="translated">Pensé que estarías interesado en obtener perspicacias de doctores sobre %{topic_name}</target>
+        <target state="translated">Pensé que estarías interesado en obtener conocimientos médicos de doctores sobre %{topic_name}</target>
       </trans-unit>
       <trans-unit id="495" resname="r463168909" restype="string" datatype="ruby">
         <source>I recommend checking out doctor insights on %{topic_name} on HealthTap. You’ll find thousands of informative doctor's answers, tips, checklists, and news items there!</source>
-        <target state="translated">Recomiendo dar un vistazo a las perspicacias de doctores sobre %{topic_name} en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
+        <target state="translated">Recomiendo dar un vistazo a los conocimientos médicos de doctores sobre %{topic_name} en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
       </trans-unit>
       <trans-unit id="496" resname="r373725722" restype="string" datatype="ruby">
         <source>Top doctors answer questions and share tips on "%{topic_name}" on #HealthTap!</source>
@@ -2302,11 +2302,11 @@
       </trans-unit>
       <trans-unit id="497" resname="r833523846" restype="string" datatype="ruby">
         <source>I thought you'd be interested in getting doctors insights on "%{search_string}"</source>
-        <target state="translated">Pensé que estarías interesado en obtener perspicacias de doctores sobre "%{search_string}"</target>
+        <target state="translated">Pensé que estarías interesado en obtener conocimientos médicos de doctores sobre "%{search_string}"</target>
       </trans-unit>
       <trans-unit id="498" resname="r346973693" restype="string" datatype="ruby">
         <source>I recommend checking out doctor insights on "%{search_string}" on HealthTap. You’ll find thousands of informative doctor's answers, tips, checklists, and news items there!</source>
-        <target state="translated">Recomiendo dar un vistazo a las perspicacias de doctores sobre "%{search_string}" en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
+        <target state="translated">Recomiendo dar un vistazo a los conocimientos médicos de doctores sobre "%{search_string}" en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
       </trans-unit>
       <trans-unit id="499" resname="r38768222" restype="string" datatype="ruby">
         <source>Top doctors answer questions and share tips on "%{search_string}" on #HealthTap!</source>
@@ -2350,7 +2350,7 @@
       </trans-unit>
       <trans-unit id="509" resname="r40430975" restype="string" datatype="ruby">
         <source>I thought you'd be interested in doctor insights about %{goal}!</source>
-        <target state="translated">¡Pensé que estarías interesado en perspicacias de doctores acerca de %{goal}!</target>
+        <target state="translated">¡Pensé que estarías interesado en conocimientos médicos de doctores acerca de %{goal}!</target>
       </trans-unit>
       <trans-unit id="510" resname="r325377029" restype="string" datatype="ruby">
         <source>I thought you like to check out %{goal} on HealthTap. HealthTap has  thousands of answers, articles, tips, and checklists designed to help you with this goal, so you can smile and feel good all the time!</source>
@@ -2434,11 +2434,11 @@
       </trans-unit>
       <trans-unit id="530" resname="r106615039" restype="string" datatype="ruby">
         <source>I thought you'd be interested in getting doctors insights on HealthTap</source>
-        <target state="translated">Pensé que estarías interesado en obtener perspicacias de doctores en HealthTap</target>
+        <target state="translated">Pensé que estarías interesado en obtener conocimientos médicos de doctores en HealthTap</target>
       </trans-unit>
       <trans-unit id="531" resname="r165502120" restype="string" datatype="ruby">
         <source>I recommend checking out doctor insights on HealthTap. You’ll find thousands of informative doctor's answers, tips, checklists, and news items there!</source>
-        <target state="translated">Recomiendo dar un vistazo a las perspicacias de doctores en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
+        <target state="translated">Recomiendo dar un vistazo a los conocimientos médicos de doctores en HealthTap. ¡Encontrarás miles de informativas respuestas de doctores, tips, listados y noticias ahí!</target>
       </trans-unit>
       <trans-unit id="532" resname="r952148758" restype="string" datatype="ruby">
         <source>Connect with me on HealthTap with my special keycode: %{key_code}! Schedule appointments to video chat, text, or message me during on my Virtual Practice!</source>
@@ -2518,7 +2518,7 @@
       </trans-unit>
       <trans-unit id="551" resname="r883181008" restype="string" datatype="ruby">
         <source>I found doctor insights on HealthTap that you may find helpful!</source>
-        <target state="translated">¡Encontré perspicacias de doctores en HealthTap que puedes encontrar útiles!</target>
+        <target state="translated">¡Encontré conocimientos médicos de doctores en HealthTap que puedes encontrar útiles!</target>
       </trans-unit>
       <trans-unit id="552" resname="r62528669" restype="string" datatype="ruby">
         <source>I found a great doctor answer for you on HealthTap!</source>
@@ -2526,7 +2526,7 @@
       </trans-unit>
       <trans-unit id="553" resname="r1013003280" restype="string" datatype="ruby">
         <source>I found helpful doctor insights for you on HealthTap!</source>
-        <target state="translated">¡Encontré útiles perspicacias de doctores para ti en HealthTap!</target>
+        <target state="translated">¡Encontré útiles conocimientos médicos de doctores para ti en HealthTap!</target>
       </trans-unit>
       <trans-unit id="554" resname="r714768303" restype="string" datatype="ruby">
         <source>Check out this FeelGood :) moment that made me think of you!</source>
@@ -2955,7 +2955,7 @@
     <body>
       <trans-unit id="645" resname="r287968148" restype="string" datatype="ruby">
         <source>Unlimited answers, tips, and insights from doctors</source>
-        <target state="translated">Respuestas, tips, y perspicacias de doctores ilimitadas</target>
+        <target state="translated">Respuestas, tips, y conocimientos médicos de doctores ilimitadas</target>
       </trans-unit>
       <trans-unit id="646" resname="r796195908" restype="string" datatype="ruby">
         <source>For You</source>

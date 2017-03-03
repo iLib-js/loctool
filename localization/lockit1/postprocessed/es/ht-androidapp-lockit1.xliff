@@ -4912,7 +4912,7 @@
       </trans-unit>
       <trans-unit id="958" resname="board_certified" restype="string" datatype="x-android-resource">
         <source>{doctor_name}, Board Certified</source>
-        <target>{specialty}, Certificado por Consejo</target>
+        <target>{doctor_name}, Certificado por Consejo</target>
       </trans-unit>
       <trans-unit id="959" resname="share_your_recommendation" restype="string" datatype="x-android-resource">
         <source>Write your recommendation</source>
@@ -5152,7 +5152,7 @@
       </trans-unit>
       <trans-unit id="1018" resname="signup_password_invalid" restype="string" datatype="x-android-resource">
         <source>Please provide a password with 6+ characters.</source>
-        <target>Por favor, proporciona una contraseña más de 6 caracteres.</target>
+        <target>Por favor, proporciona una contraseña de más de 6 caracteres.</target>
       </trans-unit>
       <trans-unit id="1019" resname="doc_score_title" restype="string" datatype="x-android-resource">
         <source>What is DocScore?</source>
@@ -5272,7 +5272,7 @@
       </trans-unit>
       <trans-unit id="1048" resname="checklist_discover_directions_body" restype="string" datatype="x-android-resource">
         <source>Find doctor-created checklists\nTry them out.\nFeel good :).</source>
-        <target>Encuentra listados creados por doctores\nPruébalos ahora.\nSiéntete bien :).</target>
+        <target>Encuentra listados creados por doctores\nPruébalos ahora.\nSentirse bien :).</target>
       </trans-unit>
       <trans-unit id="1049" resname="checklist_discover_search_hint" restype="string" datatype="x-android-resource">
         <source>Find a goal (e.g: Lose weight)</source>
@@ -10457,8 +10457,8 @@
         <target>Obtén respuestas a tus preguntas de salud de los mejores doctores</target>
       </trans-unit>
       <trans-unit id="2307" resname="from_top_doctors" restype="plural" datatype="x-android-resource" extype="other">
-        <source>Get answers to your health questions from %d top doctors</source>
-        <target>Obtén respuestas a tus preguntas de salud de los %d mejores doctores</target>
+        <source>Get answers to your health questions from %s top doctors</source>
+        <target>Obtén respuestas a tus preguntas de salud de los %s mejores doctores</target>
       </trans-unit>
       <trans-unit id="2308" resname="question_detail_related_question_adapter" restype="plural" datatype="x-android-resource" extype="one">
         <source>1 doctor answered</source>
