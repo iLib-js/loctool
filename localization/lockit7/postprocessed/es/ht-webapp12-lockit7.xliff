@@ -360,7 +360,7 @@
       </trans-unit>
       <trans-unit id="83" resname="r651656946" restype="string" datatype="ruby">
         <source>Specific, actionable doctor insights&lt;br/&gt;Answers, tips, and checklists</source>
-(??)        <target>Perspicacias de doctores específicas y accioniables&lt;br/&gt;Respuestas, tips y listados</target>
+        <target>Conocimientos médicos de doctores específicas y accioniables&lt;br/&gt;Respuestas, tips y listados</target>
       </trans-unit>
       <trans-unit id="84" resname="r329110499" restype="string" datatype="ruby">
         <source>Immediate response and access&lt;br/&gt;%{num} doctors across 141 specialties</source>
