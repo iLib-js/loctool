@@ -29348,7 +29348,7 @@
     <body>
       <trans-unit id="40" resname="r116490053" restype="string" datatype="java">
         <source>Please share {first_name}'s obstetrics/pregnancy history</source>
-        <target state="translated">请分享{first_name}'s的产科/怀孕史</target>
+        <target state="translated">请分享{first_name}的产科/怀孕史</target>
       </trans-unit>
     </body>
   </file>
@@ -50091,7 +50091,7 @@
       </trans-unit>
       <trans-unit id="417" resname="r33874383" restype="string" datatype="x-android-resource">
         <source>{name}\'s</source>
-        <target state="translated">{name}\</target>
+        <target state="trans ated">de {name}</target>
       </trans-unit>
       <trans-unit id="418" resname="r221517291" restype="string" datatype="x-android-resource">
         <source>checklist on</source>
