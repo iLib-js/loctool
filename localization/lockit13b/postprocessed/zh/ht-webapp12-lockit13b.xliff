@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/general_mailer/partials/provider/_member_provider_signup_reminder_3.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="6" resname="r685693077" restype="string" datatype="ruby">
+        <source>Tap-In</source>
+        <target state="translated">点击</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/multipage/js/expert/createTips/createTips.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="17" resname="Sorry, no results were found" restype="string" datatype="javascript">
+        <source>Sorry, no results were found</source>
+        <target state="translated">对不起，没有找到结果</target>
+      </trans-unit>
+      <trans-unit id="18" resname="Please try another search" restype="string" datatype="javascript">
+        <source>Please try another search</source>
+        <target state="translated">请尝试其它搜索</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/multipage/js/expert/consultApplication/app_form_2.js" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="21" resname="Popular time for consults" restype="string" datatype="javascript">
+        <source>Popular time for consults</source>
+        <target state="translated">咨询热门时间</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/ui_modules/edit_pregnancy_date.tmpl.html" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="26" resname="If you know, what is your expected due date?" restype="string" datatype="javascript">
+        <source>If you know, what is your expected due date?</source>
+        <target state="translated">预产期是何时？</target>
+      </trans-unit>
+      <trans-unit id="27" resname="If you know, what is your last menstrual period?" restype="string" datatype="javascript">
+        <source>If you know, what is your last menstrual period?</source>
+        <target state="translated">如果您知道，预产期大概在哪一天？</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="test_call.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="37" resname="r927688850" restype="string" datatype="x-haml">
+        <source>No</source>
+        <target state="translated">不是</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="index.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="43" resname="r923364379" restype="string" datatype="x-haml">
+        <source>OK</source>
+        <target state="translated">好</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="show.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="44" resname="r889029760" restype="string" datatype="x-haml">
+        <source>by</source>
+        <target state="translated">通过</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_prescription.html.haml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="46" resname="r822695720" restype="string" datatype="x-haml">
+        <source>I will be sending this prescription to the following pharmacy:</source>
+        <target state="translated">我会将把这个处方发送给以下药房：</target>
+      </trans-unit>
+      <trans-unit id="47" resname="r811474507" restype="string" datatype="x-haml">
+        <source>I recommend the following medication:</source>
+        <target state="translated">我推荐您如下药物：</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/voice_app_interactions.yml" source-language="en-US" target-language="zh-Hans-CN" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="24" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@ask_pregnancy_question">
+        <source>It's hard to see from over here, but by any chance, are you pregnant?</source>
+        <target state="translated">从这里很难看到，但是以防万一，您怀孕了吗？</target>
+      </trans-unit>
+      <trans-unit id="25" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@ask_pregnancy_question">
+        <source>It's hard to see from over here, but by any chance, is %SUBACCOUNT_NAME% pregnant?</source>
+        <target state="translated">从这里很难看到，但是以防万一，%SUBACCOUNT_NAME%怀孕了吗？</target>
+      </trans-unit>
+      <trans-unit id="27" resname="not_pregnant" restype="string" datatype="x-yaml" x-context="speak_content@ask_pregnancy_confirm">
+        <source>Good to know. Thank you.</source>
+        <target state="translated">我很高兴可以知道，谢谢您。</target>
+      </trans-unit>
+      <trans-unit id="29" resname="symptom_question_confirm" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>OK, you said %SYMPTOM_NAME%.</source>
+        <target state="translated">好的，您说是％SYMPTOM_NAME％。</target>
+      </trans-unit>
+      <trans-unit id="36" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_duration">
+        <source>Did your %SYMPTOM_NAME% start recently? Or have you been experiencing it for a while?</source>
+        <target state="translated">您的％SYMPTOM_NAME％是最近开始的吗？ 还是您已经有了一段时间？</target>
+      </trans-unit>
+      <trans-unit id="37" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_duration">
+        <source>Did %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% start recently? Or has %SUBACCOUNT_NAME% been experiencing it for a while?</source>
+        <target state="translated">%SUBACCOUNT_NAME%的％SYMPTOM_NAME％是最近开始的吗？ 还是%SUBACCOUNT_NAME%已经有了一段时间？</target>
+      </trans-unit>
+      <trans-unit id="40" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_sidedness@person">
+        <source>Do you feel your %SYMPTOM_NAME% in the %ONLY_OPTION% area?</source>
+        <target state="translated">您在％ONLY_OPTION％区域中感觉到您的％SYMPTOM_NAME％吗？</target>
+      </trans-unit>
+      <trans-unit id="42" resname="male" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_sidedness@subaccount@one_option">
+        <source>Does %SUBACCOUNT_NAME% feel his %SYMPTOM_NAME% in the %ONLY_OPTION% area?</source>
+        <target state="translated">%SUBACCOUNT_NAME%在％ONLY_OPTION％区域中感觉到他的％SYMPTOM_NAME％吗？</target>
+      </trans-unit>
+      <trans-unit id="43" resname="female" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_sidedness@subaccount@one_option">
+        <source>Does %SUBACCOUNT_NAME% feel her %SYMPTOM_NAME% in the %ONLY_OPTION% area?</source>
+        <target state="translated">%SUBACCOUNT_NAME%在％ONLY_OPTION％区域中感觉到她的％SYMPTOM_NAME％吗？</target>
+      </trans-unit>
+      <trans-unit id="46" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_quality@person">
+        <source>Does the following quality describe your %SYMPTOM_NAME%? %ONLY_OPTION%</source>
+        <target state="translated">以下特点是否描述了您的％SYMPTOM_NAME％？％ONLY_OPTION％</target>
+      </trans-unit>
+      <trans-unit id="47" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_quality@person">
+        <source>Do any of the following qualities describe your %SYMPTOM_NAME%?</source>
+        <target state="translated">以下任何特点是否描述了您的％SYMPTOM_NAME％？</target>
+      </trans-unit>
+      <trans-unit id="48" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_quality@subaccount">
+        <source>Does the following quality describe %SUBACCOUNT_NAME%'s %SYMPTOM_NAME%? %ONLY_OPTION%</source>
+        <target state="translated">以下特点是否描述了%SUBACCOUNT_NAME%的％SYMPTOM_NAME％？％ONLY_OPTION％</target>
+      </trans-unit>
+      <trans-unit id="49" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_quality@subaccount">
+        <source>Do any of the following qualities describe %SUBACCOUNT_NAME%'s %SYMPTOM_NAME%?</source>
+        <target state="translated">以下任何特点是否描述了%SUBACCOUNT_NAME%的％SYMPTOM_NAME％？</target>
+      </trans-unit>
+      <trans-unit id="54" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_worsened@person">
+        <source>Does your %SYMPTOM_NAME% get worse in this case? %ONLY_OPTION%</source>
+        <target state="translated">您的％SYMPTOM_NAME％在这种情况下会变得更糟吗？％ONLY_OPTION％</target>
+      </trans-unit>
+      <trans-unit id="55" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_worsened@person">
+        <source>Does your %SYMPTOM_NAME% get worse in any of these cases?</source>
+        <target state="translated">您的％SYMPTOM_NAME％在这些情况下会变得更糟吗？</target>
+      </trans-unit>
+      <trans-unit id="57" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_worsened@subaccount">
+        <source>Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% get worse in any of these cases?</source>
+        <target state="translated">%SUBACCOUNT_NAME%的％SYMPTOM_NAME％在这些情况下会变得更糟吗？</target>
+      </trans-unit>
+      <trans-unit id="58" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_alleviated@person">
+        <source>Does your %SYMPTOM_NAME% get alleviated by the following? %ONLY_OPTION%</source>
+        <target state="translated">您的％SYMPTOM_NAME％是否会通过以下方式得到缓解？％ONLY_OPTION％</target>
+      </trans-unit>
+      <trans-unit id="59" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_alleviated@person">
+        <source>Does your %SYMPTOM_NAME% get alleviated by any of these cases?</source>
+        <target state="translated">您的％SYMPTOM_NAME％是否会通过这些情况而得到缓解？</target>
+      </trans-unit>
+      <trans-unit id="60" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_alleviated@subaccount">
+        <source>Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% get alleviated by the following? %ONLY_OPTION%</source>
+        <target state="translated">%SUBACCOUNT_NAME%的％SYMPTOM_NAME％是否会通过以下方式得到缓解？％ONLY_OPTION％</target>
+      </trans-unit>
+      <trans-unit id="61" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_alleviated@subaccount">
+        <source>Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% get alleviated by any of these cases?</source>
+        <target state="translated">%SUBACCOUNT_NAME%的％SYMPTOM_NAME％是否会通过这些情况而得到缓解？</target>
+      </trans-unit>
+      <trans-unit id="110" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@INTRO_NOT_LINKED">
+        <source>Hmm...</source>
+        <target state="translated">糟糕...</target>
+      </trans-unit>
+      <trans-unit id="119" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GENDER_ACK">
+        <source>Got it. Thanks.</source>
+        <target state="translated">明白了。谢谢。</target>
+      </trans-unit>
+      <trans-unit id="120" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GENDER_ACK">
+        <source>Good to know. Thank you.</source>
+        <target state="translated">我很高兴可以知道，谢谢您。</target>
+      </trans-unit>
+      <trans-unit id="152" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Ok, great, thanks</source>
+        <target state="translated">噢，太好了，谢谢您</target>
+      </trans-unit>
+      <trans-unit id="154" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Okay, next</source>
+        <target state="translated">好的，下一个</target>
+      </trans-unit>
+      <trans-unit id="157" resname="7" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Understood — moving on</source>
+        <target state="translated">明白了-继续</target>
+      </trans-unit>
+      <trans-unit id="158" resname="8" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Alright — on we go</source>
+        <target state="translated">好的-我们继续</target>
+      </trans-unit>
+      <trans-unit id="160" resname="10" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>I see — moving forward</source>
+        <target state="translated">我明白了--继续</target>
+      </trans-unit>
+      <trans-unit id="161" resname="11" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Thanks — continuing along</source>
+        <target state="translated">谢谢——咱们继续吧</target>
+      </trans-unit>
+      <trans-unit id="189" resname="default" restype="string" datatype="x-yaml" x-context="properties@array_join_string_first_N_minus_1_elements">
+        <source>,</source>
+        <target state="translated">,</target>
+      </trans-unit>
+      <trans-unit id="190" resname="single_select_refinement_options" restype="string" datatype="x-yaml" x-context="properties@array_join_string_first_N_minus_1_elements">
+        <source>,</source>
+        <target state="translated">,</target>
+      </trans-unit>
+      <trans-unit id="191" resname="multi_select_refinement_options" restype="string" datatype="x-yaml" x-context="properties@array_join_string_first_N_minus_1_elements">
+        <source>,</source>
+        <target state="translated">,</target>
+      </trans-unit>
+      <trans-unit id="192" resname="also_have_symptoms" restype="string" datatype="x-yaml" x-context="properties@array_join_string_first_N_minus_1_elements">
+        <source>,</source>
+        <target state="translated">,</target>
+      </trans-unit>
+      <trans-unit id="193" resname="single_select_refinement_options" restype="string" datatype="x-yaml" x-context="properties@array_join_string_last_two_elements">
+        <source>or</source>
+        <target state="translated">或</target>
+      </trans-unit>
+      <trans-unit id="194" resname="multi_select_refinement_options" restype="string" datatype="x-yaml" x-context="properties@array_join_string_last_two_elements">
+        <source>or</source>
+        <target state="translated">或</target>
+      </trans-unit>
+      <trans-unit id="195" resname="also_have_symptoms" restype="string" datatype="x-yaml" x-context="properties@array_join_string_last_two_elements">
+        <source>or</source>
+        <target state="translated">或</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
