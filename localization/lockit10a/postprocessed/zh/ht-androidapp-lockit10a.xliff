@@ -261,7 +261,7 @@
     <body>
       <trans-unit id="40" resname="r116490053" restype="string" datatype="java">
         <source>Please share {first_name}'s obstetrics/pregnancy history</source>
-        <target state="translated">请分享{first_name}'s的产科/怀孕史</target>
+        <target state="translated">请分享{first_name}的产科/怀孕史</target>
       </trans-unit>
     </body>
   </file>

@@ -12510,7 +12510,7 @@
       </trans-unit>
       <trans-unit id="2836" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="2">
         <source>{user_first_name}, would you like to send doctors a secure message?\u00a0›</source>
-        <target>{user_first_name}, ¿te gustaría enviarle a docotres un mensaje seguro?\u00a0›</target>
+        <target>{user_first_name}, ¿te gustaría enviarle a doctores un mensaje seguro?\u00a0›</target>
       </trans-unit>
       <trans-unit id="2837" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="3">
         <source>{user_first_name}, would you like to video chat with a doctor?\u00a0›</source>
@@ -29348,7 +29348,7 @@
     <body>
       <trans-unit id="40" resname="r116490053" restype="string" datatype="java">
         <source>Please share {first_name}'s obstetrics/pregnancy history</source>
-        <target state="translated">请分享{first_name}'s的产科/怀孕史</target>
+        <target state="translated">请分享{first_name}的产科/怀孕史</target>
       </trans-unit>
     </body>
   </file>
@@ -33049,7 +33049,7 @@
       </trans-unit>
       <trans-unit id="701" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="2">
         <source>{user_first_name}, would you like to send doctors a secure message?\u00a0›</source>
-        <target>{user_first_name}, ¿te gustaría enviarle a docotres un mensaje seguro?\u00a0›</target>
+        <target>{user_first_name}, ¿te gustaría enviarle a doctores un mensaje seguro?\u00a0›</target>
       </trans-unit>
       <trans-unit id="702" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="3">
         <source>{user_first_name}, would you like to video chat with a doctor?\u00a0›</source>
@@ -35403,7 +35403,7 @@
       </trans-unit>
       <trans-unit id="216" resname="see_more_action" restype="plural" datatype="x-android-resource" extype="other">
         <source>See %d more actions</source>
-        <target>查看%个行动…</target>
+        <target>查看%d个行动…</target>
       </trans-unit>
       <trans-unit id="217" resname="search_result_responded" restype="plural" datatype="x-android-resource" extype="one">
         <source>&lt;b&gt;1&lt;/b&gt; doctor responded</source>
@@ -50091,7 +50091,7 @@
       </trans-unit>
       <trans-unit id="417" resname="r33874383" restype="string" datatype="x-android-resource">
         <source>{name}\'s</source>
-        <target state="translated">{name}\</target>
+        <target state="trans ated">de {name}</target>
       </trans-unit>
       <trans-unit id="418" resname="r221517291" restype="string" datatype="x-android-resource">
         <source>checklist on</source>

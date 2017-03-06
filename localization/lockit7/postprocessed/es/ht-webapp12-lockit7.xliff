@@ -737,7 +737,7 @@
       </trans-unit>
       <trans-unit id="169" resname="r111781423" restype="string" datatype="ruby">
         <source>Lower costs and improve productivity &amp; satisfaction by providing the right care at the right cost at the right time</source>
-        <target>Reduce los costos e incrementa la productividad y la satisfacción, brindando la atención adecuada, al costo adecuado, en el momento adecuado</target>
+        <target>Reduce los costos y mejora productividad y satisfacción brindando la atención adecuada al costo adecuado en el momento adecuado</target>
       </trans-unit>
       <trans-unit id="170" resname="r799436858" restype="string" datatype="ruby">
         <source>Enhance your reputation, grow your practice</source>
@@ -913,7 +913,7 @@
       </trans-unit>
       <trans-unit id="210" resname="r807917159" restype="string" datatype="ruby">
         <source>What was impossible a year ago, is now POSSIBLE. I'd have to say that each consult has been impactful, because each case is so different. It is unbelievable, the camaraderie, support, and peer-led education that's available for free. The EMR is also fantastic and quick to browse through.</source>
-        <target>Lo que era imposible hace un año, ahora es POSIBLE. Tendría que decir que cada consulta ha tenido impacto, porque cada caso es tan diferente. Es increíble, la camaradería, apoyo, y educación por pares que está disponible de forma gratuita. El EMR también es fantástico y rápido de navegar.</target>
+        <target>Lo que era imposible hace un año, ahora es POSIBLE. Tendría que decir que cada consulta ha tenido impacto, porque cada caso es tan diferente. Es increíble, la camaradería, apoyo, y educación por pares que está disponible de forma gratuita. El EMR también es fantástico y rápido de ojear.</target>
       </trans-unit>
       <trans-unit id="211" resname="r600615832" restype="string" datatype="ruby">
         <source>I think HealthTap will revolutionize medical care. I'm so thrilled to be using HealthTap to connect with patients and physicians from around the world. I have over 8000 followers on HealthTap---that's incredible.</source>
@@ -1533,7 +1533,7 @@
       </trans-unit>
       <trans-unit id="322" resname="r457880092" restype="string" datatype="ruby">
         <source>Get special promotional codes to gift your friends and family - 15 days free of HealthTap Prime (%{prime_price} value) and earn $30 off for each referral you make</source>
-        <target>Obtén códigos promocionales especiales para regalar a tus amigos y familiares - 15 días gratis de HealthTap Prime (%{prime_price} value) y gana $30 de descuento por cada referencia que hagas</target>
+        <target>Obtén códigos promocionales especiales para regalar a tus amigos y familiares - 15 días gratis de HealthTap Prime (%{prime_price} value) and gana $30 de descuento por cada referencia que hagas</target>
       </trans-unit>
     </body>
   </file>
@@ -1806,7 +1806,7 @@
     <body>
       <trans-unit id="367" resname="r198638661" restype="string" datatype="ruby">
         <source>%{product} lets you provide your patients the right care, at the right time, at the right price.</source>
-        <target>%{product} te deja brindarles a tus pacientes la atención adecuada, en el momento adecuado y al precio adecuado.</target>
+        <target>%{product} te deja brindarles a tus pacientes la atención adecuada, en el tiempo adecuado y al precio adecuado.</target>
       </trans-unit>
     </body>
   </file>
@@ -1842,7 +1842,7 @@
       </trans-unit>
       <trans-unit id="374" resname="r637141669" restype="string" datatype="ruby">
         <source>Prescriptions can be ordered and fulfilled at any mail order or retail pharmacy. Tests can be ordered and resulted from any test lab. Wearables/app data can be presented to doctors at the point-of-care for better advice and treatment.</source>
-        <target>Se pueden ordenar y llenar recetas a cualquier farmacia a menudeo o por orden de correo. Se pueden ordenar pruebas desde cualquier laboratorio. Vestimentas/datos de aplicación pueden ser presentados a doctores en el punto de atención para mejor consejo y tratamiento.</target>
+        <target>Se pueden ordenar y llenar recetas a cualquier farmacia a menudeo o por correo. Se pueden ordenar pruebas desde cualquier laboratorio. Vestimentas/datos de aplicación pueden ser presentados a doctores en el punto de atención para mejor consejo y tratamiento.</target>
       </trans-unit>
       <trans-unit id="375" resname="r233512599" restype="string" datatype="ruby">
         <source>We offer a co-branded hub that provides one, easy-to-use interface for all health care needs, including single sign-on to your organization’s suite of websites, apps, and benefits.</source>
@@ -1935,7 +1935,7 @@
       </trans-unit>
       <trans-unit id="394" resname="r645308597" restype="string" datatype="ruby">
         <source>Showcase doctors’ reputation and expertise online with Virtual Practice (ViP) profiles published to hundreds of millions worldwide.</source>
-        <target>Muestra la reputación y destreza de doctores en línea con perfiles de Consultorio Virtual (CoV) publicados a cientos de millones alrededor del mundo.</target>
+        <target>Muestra la reputación y destreza de doctores en línea con perfiles de Consultorio Virtual (ViP) publicados a cientos de millones alrededor del mundo.</target>
       </trans-unit>
       <trans-unit id="395" resname="r952011014" restype="string" datatype="ruby">
         <source>Save precious time by preventing repetitive answers by publishing them to our knowledgebase. Eliminate manual follow ups with your patients by you or your staff by automating reminders.</source>
@@ -2031,7 +2031,7 @@
       </trans-unit>
       <trans-unit id="415" resname="r1049751047" restype="string" datatype="ruby">
         <source>This option promotes the question to more doctors to get you more than one answer</source>
-        <target>Esta opción promueve la pregunta a más docotres para que obtengas más de una respuesta</target>
+        <target>Esta opción promueve la pregunta a más doctores para que obtengas más de una respuesta</target>
       </trans-unit>
       <trans-unit id="416" resname="r699298540" restype="string" datatype="ruby">
         <source>This gives you additional characters to add more details to your question.</source>
@@ -2075,19 +2075,19 @@
       </trans-unit>
       <trans-unit id="423" resname="r27919281" restype="string" datatype="ruby">
         <source>Vegan (no meat or animal products)</source>
-        <target>Vegano (no come carne o productos animales)</target>
+        <target>Vegano (no carne o productos de animal)</target>
       </trans-unit>
       <trans-unit id="424" resname="r836028066" restype="string" datatype="ruby">
         <source>Pescatarian (no meat, except fish)</source>
-        <target>Pescetariano (no come carne, excepto pescado)</target>
+        <target>Pescetariano (no carne, excepto pescado)</target>
       </trans-unit>
       <trans-unit id="425" resname="r720240330" restype="string" datatype="ruby">
         <source>Gluten-Free (no wheat, barley, or rye)</source>
-        <target>Libre de Gluten (no consume trigo, avena, cebada o centeno)</target>
+        <target>Libre de Gluten (no trigo, cebada o centeno)</target>
       </trans-unit>
       <trans-unit id="426" resname="r73724393" restype="string" datatype="ruby">
         <source>Lactose Intolerant (lactose-free dairy)</source>
-        <target>Intolerancia a la Lactosa (Consume lácteos libres de lactosa)</target>
+        <target>Intolerancia a la Lactosa (lácteos libres de lactosa)</target>
       </trans-unit>
       <trans-unit id="427" resname="r20329084" restype="string" datatype="ruby">
         <source>Social Drinker (0-7 drinks/week)</source>
@@ -2111,27 +2111,27 @@
       </trans-unit>
       <trans-unit id="432" resname="r1003968121" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a month</source>
-        <target>Sí, 0-2 paquetes al mes</target>
+        <target>Sí, 0-2 cajetillas al mes</target>
       </trans-unit>
       <trans-unit id="433" resname="r956725319" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a week</source>
-        <target>Sí, 0-2 paquetes a la semana</target>
+        <target>Sí, 0-2 cajetillas a la semana</target>
       </trans-unit>
       <trans-unit id="434" resname="r684140086" restype="string" datatype="ruby">
         <source>Yes, 0-2 packs a day</source>
-        <target>Sí, 0-2 paquetes por día</target>
+        <target>Sí, 0-2 cajetillas al día</target>
       </trans-unit>
       <trans-unit id="435" resname="r526642561" restype="string" datatype="ruby">
         <source>Yes, more than 2 packs a day</source>
-        <target>Sí, más de 2 paquetes por día</target>
+        <target>Sí, más de 2 cajetillas al día</target>
       </trans-unit>
       <trans-unit id="436" resname="r762126145" restype="string" datatype="ruby">
         <source>Yes, chewing tobacco</source>
-        <target>Sí, mastica tabaco</target>
+        <target>Sí, masticando tabaco</target>
       </trans-unit>
       <trans-unit id="437" resname="r597123813" restype="string" datatype="ruby">
         <source>Not sexually active</source>
-        <target>No es sexualmente activa/o</target>
+        <target>No sexualmente activo</target>
       </trans-unit>
       <trans-unit id="438" resname="r699411433" restype="string" datatype="ruby">
         <source>Men</source>
@@ -2143,7 +2143,7 @@
       </trans-unit>
       <trans-unit id="440" resname="r276834703" restype="string" datatype="ruby">
         <source>Marijuana</source>
-        <target>Marihuana</target>
+        <target>Mariguana</target>
       </trans-unit>
       <trans-unit id="441" resname="r468221601" restype="string" datatype="ruby">
         <source>Cocaine</source>
@@ -2159,11 +2159,11 @@
       </trans-unit>
       <trans-unit id="444" resname="r763555502" restype="string" datatype="ruby">
         <source>Ecstasy</source>
-        <target>Éxtasis</target>
+        <target>Extasis</target>
       </trans-unit>
       <trans-unit id="445" resname="r394864593" restype="string" datatype="ruby">
         <source>Barbiturates / Benzodiazepines</source>
-        <target>Barbitúricos / Benzodiazepinas</target>
+        <target>Barbitúricos / Benzodiacepinas</target>
       </trans-unit>
       <trans-unit id="446" resname="r678640256" restype="string" datatype="ruby">
         <source>LSD</source>
@@ -2171,7 +2171,7 @@
       </trans-unit>
       <trans-unit id="447" resname="r504881313" restype="string" datatype="ruby">
         <source>Psychedelic Mushrooms</source>
-        <target>Hongos Psicodélicos</target>
+        <target>Hongos Psicogélicos</target>
       </trans-unit>
       <trans-unit id="448" resname="r224468636" restype="string" datatype="ruby">
         <source>Uninsured</source>
@@ -2835,7 +2835,7 @@
       </trans-unit>
       <trans-unit id="607" resname="r906156403" restype="string" datatype="ruby">
         <source>so that you can easily share them with doctors to get better care whenever necessary</source>
-        <target>para que puedas compartir fácilmente con doctores para obtener mejor atención cuando sea necesario</target>
+        <target>para que puedas compartirlo fácilmente con doctores para obtener mejor atención cuando sea necesario</target>
       </trans-unit>
       <trans-unit id="608" resname="r296867451" restype="string" datatype="ruby">
         <source>to make it meaningful, answerable, and easy to understand.</source>
@@ -3323,7 +3323,7 @@
       </trans-unit>
       <trans-unit id="726" resname="r507768574" restype="string" datatype="ruby">
         <source>Pediatric Infectious Disease Specialist</source>
-        <target>Especialista en Infectología Pediátrica</target>
+        <target>Especialista en Enfermedades Infecciosas Pediátricas</target>
       </trans-unit>
       <trans-unit id="727" resname="r746889760" restype="string" datatype="ruby">
         <source>Pediatric Nephrologist</source>
@@ -5020,7 +5020,7 @@
     <body>
       <trans-unit id="1079" resname="Leaderboard" restype="string" datatype="html">
         <source>Leaderboard</source>
-        <target>Tabla de posiciones</target>
+        <target>Tabla de clasificación</target>
       </trans-unit>
     </body>
   </file>
@@ -5096,7 +5096,7 @@
       </trans-unit>
       <trans-unit id="1097" resname="biweekly" restype="string" datatype="html">
         <source>biweekly</source>
-        <target>dos veces a la semana</target>
+        <target>biweekly</target>
       </trans-unit>
     </body>
   </file>
@@ -5356,7 +5356,7 @@
     <body>
       <trans-unit id="1139" resname="Sign Up &amp; Continue &amp;raquo;" restype="string" datatype="html">
         <source>Sign Up &amp; Continue &amp;raquo;</source>
-        <target>Regístrate &amp; Continúa &amp;raquo;</target>
+        <target>Registrarse &amp; Continuar &amp;raquo;</target>
       </trans-unit>
     </body>
   </file>
@@ -6019,7 +6019,7 @@
     <body>
       <trans-unit id="1242" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target>estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</target>
+        <target>estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt; de &lt;%=user_answer.actor.name%&gt;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -6027,7 +6027,7 @@
     <body>
       <trans-unit id="1243" resname="agreed with&lt;a href=&quot;#expert_vip/&lt;%=user_answer.actor.id%&gt;/&quot; class=&quot;a_handler&quot;&gt;&lt;%=user_answer.actor.name%&gt;&apos;s&lt;/a&gt;" restype="string" datatype="html">
         <source>agreed with &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</source>
-        <target>estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt;&lt;%=user_answer.actor.name%&gt;'s&lt;/a&gt;</target>
+        <target>estuvo de acuerdo con &lt;a href="#expert_vip/&lt;%=user_answer.actor.id%&gt;/" class="a_handler"&gt; de &lt;%=user_answer.actor.name%&gt;&lt;/a&gt;</target>
       </trans-unit>
     </body>
   </file>
@@ -6507,11 +6507,11 @@
       </trans-unit>
       <trans-unit id="1352" resname="{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}An {language}{span_tag_end} interpeter will join you for this consult</source>
-        <target>{span_tag_start}Un interprete {language}{span_tag_end} se te unirá para esta consulta</target>
+        <target>{span_tag_start}Un intérprete {language}{span_tag_end} se te unirá para esta consulta</target>
       </trans-unit>
       <trans-unit id="1353" resname="{span_tag_start}A {language}{span_tag_end} interpeter will join you for this consult" restype="string" datatype="javascript">
         <source>{span_tag_start}A {language}{span_tag_end} interpeter will join you for this consult</source>
-        <target>{span_tag_start}Un interprete {language}{span_tag_end} se te unirá para esta consulta</target>
+        <target>{span_tag_start}Un intérprete {language}{span_tag_end} se te unirá para esta consulta</target>
       </trans-unit>
       <trans-unit id="1354" resname="Company Name" restype="string" datatype="javascript">
         <source>Company Name</source>
@@ -6739,7 +6739,7 @@
       </trans-unit>
       <trans-unit id="2578" resname="r104998707" restype="string" datatype="x-haml">
         <source>using our Virtual Consult experience via high-definition video, voice, or text. Get help anywhere, 24/7, via the web or your mobile device, securely and privately. Share photos or test results, and get immediate answers, treatment, and referrals to help you feel good!</source>
-        <target>usando nuestra experiencia de Consulta Virtual a través de video de alta definición, voz o texto. Obtén ayuda desde cualquier lugar, las 24 hs., los 7 días de la semana, a través de la web o tu dispositivo móvil, de forma segura y privada. ¡Comparte fotos o resultados de pruebas de laboratorio, y obtén respuestas, tratamiento y referencias inmediatas para ayudarte a sentirte bien!</target>
+        <target>usando nuestra experiencia de Consulta Virtual a través de video de alta definición, voz o texto. Obtén ayuda desde cualquier lugar, 24/7, a través de la web o tu dipositivo móvio. de forma segura y privada. ¡Comparte fotos o resultados de pruebas de laboratorio, y obtén respuestas, tratamiento y referencias inmediatas para ayudarte a sentirte bien!</target>
       </trans-unit>
       <trans-unit id="2579" resname="r912871798" restype="string" datatype="x-haml">
         <source>personal physician</source>
@@ -6779,7 +6779,7 @@
       </trans-unit>
       <trans-unit id="2213" resname="r380692069" restype="string" datatype="x-haml">
         <source>A "Consult" within SmartHealth system will allow you to have either a video (using a computer, a video camera and a microphone) consultation or a typed / text consultation with a Waikato DHB clinician.  During the consultation, the Waikato DHB clinician will update information about the consultation (e.g. information they provided you during the consultation such as diagnosis or treatment).  This information will be stored in SmartHealth system and also sent to update your clinical record maintained at Waikato DHB and the Primary Health Organisation (e.g. your GP) that you are registered with, just as if they saw you in person.</source>
-        <target>Una “Consulta” dentro del sistema de SmartHealth te permitirá tener ya sea un video (usando una computadora, una videocámara y un micrófono) consulta o una consulta escrita con un clínico de la Waikato DHB. Durante la consulta, el clínico de la Waikato DHB actualizará información sobre la consulta (e.g. información que te otorgaron durante la consulta como un diagnóstico o tratamiento). La información será almacenada en el sistema de SmartHealth y también será enviada para actualizar tu expediente clínico mantenido en la Waikato DHB y a la Organización de Salud Primaria (e.g. tu MG) con la que estas registrado, justo como si te hubieran visto en persona.</target>
+        <target>Una “Consulta” dentro del sistema de SmartHealth te permitirá tener ya sea un video (usando una computadora, una videocámara y un micrófono) consulta o una consulta escrita con un clínico de la Waikato DHB. Durante la consulta, el clínico de la Waikato DHB actualizará información sobre la consulta (e.g. información que te otorgaron durante la consulta como un diagnóstico o tratamiento). La información será almacenada en el sistema de SmartHealth y también será enviada para actualizar tu expediente clínico mantenido en la Waikato DHB and y a la Organización de Salud Primaria (e.g. tu MG) con la que estas registrado, justo como si te hubieran visto en persona.</target>
       </trans-unit>
       <trans-unit id="2214" resname="r258845252" restype="string" datatype="x-haml">
         <source>On a private, safe and highly secured computer storage system in the United States of America (called a "Cloud").   This system meets the information security standards of the United States of America and New Zealand.</source>
@@ -6983,7 +6983,7 @@
       </trans-unit>
       <trans-unit id="2459" resname="r585635326" restype="string" datatype="x-haml">
         <source>so I feel at ease both in and  out of the office.</source>
-        <target>así que me siento en paz tanto dentro como fuera de la oficina.</target>
+        <target>así me siento en paz tanto dentro como fuera de la oficina.</target>
       </trans-unit>
     </body>
   </file>
@@ -7103,7 +7103,7 @@
     <body>
       <trans-unit id="2753" resname="r536151692" restype="string" datatype="x-haml">
         <source>All you need is a smartphone, tablet, computer, or smartwatch to access HealthTap Compass</source>
-        <target>Todo lo que necesitas es un teléfono inteligente, tableta, computadora o teléfono inteligente con acceso a HealthTap Compass</target>
+        <target>Todo lo que necesitas es un teléfono inteligente, tableta, computadora o reloj inteligente con acceso a HealthTap Compass</target>
       </trans-unit>
     </body>
   </file>

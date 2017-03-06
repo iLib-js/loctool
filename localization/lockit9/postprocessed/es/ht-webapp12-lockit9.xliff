@@ -744,7 +744,7 @@
     <body>
       <trans-unit id="161" resname="r889655063" restype="string" datatype="ruby">
         <source>Providing 24/7 immediate access to over %{num} top doctors via video, text, or voice</source>
-        <target state="translated">Brindando acceso inmediato, las 24 hs., los 7 días de la semana, a más de %{num} de los mejores doctores a través de video, texto o voz</target>
+        <target state="translated">Brindando acceso inmediato, 24/7, a más de %{num} de los mejores doctores a través de video, texto o voz</target>
       </trans-unit>
     </body>
   </file>
@@ -1770,7 +1770,7 @@
       </trans-unit>
       <trans-unit id="363" resname="r810227030" restype="string" datatype="ruby">
         <source>What is {$person}'s gender?</source>
-        <target state="translated">¿Cuál es el sexo de {$person}?</target>
+        <target state="translated">¿Cuál es el género de {$person}?</target>
       </trans-unit>
       <trans-unit id="364" resname="r136197315" restype="string" datatype="ruby">
         <source>Is {$person} currently pregnant?</source>
@@ -2194,7 +2194,7 @@
       </trans-unit>
       <trans-unit id="466" resname="r1028567604" restype="string" datatype="ruby">
         <source>&lt;b&gt;%{person}&lt;/b&gt; (%{specialty}) had something to add to &lt;b&gt;%{other_person}'s&lt;/b&gt; answer to your question &lt;b&gt;"%{q_text} "&lt;/b&gt; &lt;span style='color:#039;'&gt;See the comment.&lt;/span&gt;</source>
-        <target state="translated">&lt;b&gt;%{person}&lt;/b&gt; (%{specialty}) tuvo algo que agregar a la respuesta &lt;b&gt;%{other_person}'s&lt;/b&gt; a tu pregunta &lt;b&gt;"%{q_text}"&lt;/b&gt;. &lt;span style='color:#039;'&gt;Ver el comentario.&lt;/span&gt;</target>
+        <target state="translated">&lt;b&gt;%{person}&lt;/b&gt; (%{specialty}) tuvo algo que agregar a la respuesta de &lt;b&gt;%{other_person}&lt;/b&gt; a tu pregunta &lt;b&gt;"%{q_text}"&lt;/b&gt;. &lt;span style='color:#039;'&gt;Ver el comentario.&lt;/span&gt;</target>
       </trans-unit>
       <trans-unit id="467" resname="r216002396" restype="string" datatype="ruby">
         <source>&lt;div style="color:#d8ac45;padding-bottom:5px"&gt;&lt;b&gt;Congrats! You have earned a medal!&lt;/b&gt;&lt;/div&gt; &lt;div style='padding-bottom:5px'&gt;&lt;b&gt;%{name}:&lt;/b&gt; &lt;i style='font-style: italic;'&gt;%{trigger}&lt;/i&gt;&lt;/d][Earn more medals to gain recognition for your expertise and compassion.&lt;br&gt;&lt;b&gt;Unlock the %{next_name} medal next. &lt;a href='/#expert/home'&gt;Learn How &amp;raquo;&lt;/a&gt;&lt;/b&gt;&lt;/div&gt;</source>
@@ -2258,7 +2258,7 @@
       </trans-unit>
       <trans-unit id="486" resname="r889985342" restype="string" datatype="ruby">
         <source>I found %{doctor_name}'s answer really helpful, and thought you might too:: \n "%{question}"</source>
-        <target state="translated">Encontré muy útil la respuesta de %{doctor_name}, y creo que tal vez tu también lo harás: \n "%{question}"</target>
+        <target state="translated">Encontré muy útil la respuesta de %{doctor_name}, y creo que tal vez tu también lo harás: "%{question}"</target>
       </trans-unit>
       <trans-unit id="487" resname="r466963951" restype="string" datatype="ruby">
         <source>@HealthTap: "%{question}..." - Get %{doctor_name}'s' answer</source>
@@ -2278,7 +2278,7 @@
       </trans-unit>
       <trans-unit id="491" resname="r219320126" restype="string" datatype="ruby">
         <source>I found this doctor answer really helpful, and thought you might too: \n "%{question_name}"</source>
-        <target state="translated">Encontré muy útil la respuesta de este doctor, y creo que tal vez tú también lo harás: \n "%{question_name}"</target>
+        <target state="translated">Encontré muy útil la respuesta de este doctor, y creo que tal vez tú también lo harás: "%{question_name}"</target>
       </trans-unit>
       <trans-unit id="492" resname="r423282384" restype="string" datatype="ruby">
         <source>Found an answer! "%{question_name}..." %{short_url} via @HealthTap</source>
@@ -2911,7 +2911,7 @@
       </trans-unit>
       <trans-unit id="638" resname="r302595438" restype="string" datatype="ruby">
         <source>Doctor %{ai_serif} is an %{ai_serif}-powered personal "physician", trained by HealthTap’s network of more than 105,000 doctors, incorporates both context and clinical expertise of doctors who have helped triage hundreds of millions of patients worldwide to right levels of doctor-recommended care. Just like a sympathetic human physician, Dr. %{ai_serif} converses with the user to understand their current complaints or concerns and uses the user’s health profile to compute the probable causes of their symptoms.</source>
-        <target state="translated">Doctor %{ai_serif} is un "médico" personal impulsado por %{ai_serif}, entrenado por la red de más de 105,000 doctores de HealthTap, que incorpora contexto y destreza clínica  de los doctores que han ayudado a hacer triage a cientos de millones de pacientes alrededor del mundo a los nievles adecuaados de atención recomendada por doctores. Justo como un comprensivo médico humano, Dr. %{ai_serif} charla con el usuario para entender sus quejas o preocupaciones actuales, y usa el perfil de salud del usuario para computar las causas probables de sus síntomas.</target>
+        <target state="translated">Doctor %{ai_serif} is un "médico" personal propulsado por %{ai_serif}, entrenado por la red de más de 105,000 doctores de HealthTap, que incorpora contexto y destreza clínica  de los doctores que han ayudado a hacer triage a cientos de millones de pacientes alrededor del mundo a los nievles adecuaados de atención recomendada por doctores. Justo como un comprensivo médico humano, Dr. %{ai_serif} charla con el usuario para entender sus quejas o preocupaciones actuales, y usa el perfil de salud del usuario para computar las causas probables de sus síntomas.</target>
       </trans-unit>
     </body>
   </file>
@@ -3043,7 +3043,7 @@
     <body>
       <trans-unit id="660" resname="r173072090" restype="string" datatype="x-haml">
         <source>Members of HealthTap's Medical Expert Network also review the latest health apps and post news that they believe will interest</source>
-        <target state="translated">Los miembros de la Red de Expertos Médicos de HealthTap también valoran las últimas aplicaciones de salud y publican las noticias que creen que le interesarán</target>
+        <target state="translated">Los miembros de la Red de Expertos Médicos de HealthTap también valoran las últimas aplicaciones de salud y publican las noticias que creen que les interesarán</target>
       </trans-unit>
     </body>
   </file>
@@ -3151,7 +3151,7 @@
     <body>
       <trans-unit id="681" resname="r21122803" restype="string" datatype="x-haml">
         <source>Global health</source>
-        <target state="translated">Consultorio Medico</target>
+        <target state="translated">Consultorio de Salud Global</target>
       </trans-unit>
     </body>
   </file>
@@ -3717,7 +3717,7 @@
     <body>
       <trans-unit id="805" resname="What is {name}&apos;s gender?" restype="string" datatype="javascript">
         <source>What is {name}'s gender?</source>
-        <target state="translated">¿Cuál es el sexo de {name}?</target>
+        <target state="translated">¿Cuál es el género de {name}?</target>
       </trans-unit>
       <trans-unit id="806" resname="Please provide the following for {name}&apos;s consult" restype="string" datatype="javascript">
         <source>Please provide the following for {name}'s consult</source>
@@ -3917,11 +3917,11 @@
       </trans-unit>
       <trans-unit id="862" resname="Does {name} take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>Does {name} take any over-the-counter or prescription medications?</source>
-        <target state="translated">¿{name} toma algún medicamento de venta libre o de receta?</target>
+        <target state="translated">¿{name} toma algún medicamento de libre venta o de receta?</target>
       </trans-unit>
       <trans-unit id="863" resname="Do you take any over-the-counter or prescription medications?" restype="string" datatype="javascript">
         <source>Do you take any over-the-counter or prescription medications?</source>
-        <target state="translated">¿Tomas algún medicamento de venta libre o de receta?</target>
+        <target state="translated">¿Tomas algún medicamento de libre venta o de receta?</target>
       </trans-unit>
     </body>
   </file>
@@ -3945,7 +3945,7 @@
     <body>
       <trans-unit id="866" resname="We&apos;ll now help you with {goal_name} with timely, friendly reminders on behalf of Dr. {last_name}" restype="string" datatype="javascript">
         <source>We'll now help you with {goal_name} with timely, friendly reminders on behalf of Dr. {last_name}</source>
-        <target state="translated">Ahora te ayudaremos con {goal_name} con recordatorios oportunos y amigables en nombre del Dr. {last_name}</target>
+        <target state="translated">Ahora te ayudaremos con {goal_name} con recordatorios oportunos y amigables en nombre de Dr. {last_name}</target>
       </trans-unit>
     </body>
   </file>
