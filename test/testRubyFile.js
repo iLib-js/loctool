@@ -26,7 +26,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile(p, "./ruby/external_user_metric.rb");
 
@@ -41,7 +43,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -57,7 +61,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -75,7 +81,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -93,7 +101,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -111,7 +121,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -130,7 +142,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -148,7 +162,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -166,7 +182,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -184,7 +202,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -202,7 +222,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -220,7 +242,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -238,7 +262,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -273,7 +299,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -292,7 +320,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -310,7 +340,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -328,7 +360,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -346,7 +380,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -364,7 +400,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -382,7 +420,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -409,7 +449,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -436,7 +478,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -462,7 +506,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -488,7 +534,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -514,7 +562,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -541,7 +591,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -568,7 +620,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -591,7 +645,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -618,7 +674,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -643,7 +701,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -670,7 +730,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -701,7 +763,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -732,7 +796,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -763,7 +829,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -796,7 +864,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -829,7 +899,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -867,7 +939,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -895,7 +969,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -917,7 +993,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -938,7 +1016,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -959,7 +1039,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -980,7 +1062,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -1001,7 +1085,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -1022,7 +1108,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
         	project: p,
@@ -1056,7 +1144,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -1079,7 +1169,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
         	project: p,
@@ -1103,7 +1195,9 @@ module.exports = {
         var p = new WebProject({
         	id: "webapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
 			project: p
@@ -1178,7 +1272,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1203,7 +1299,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1228,7 +1326,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1253,7 +1353,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1278,7 +1380,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1303,7 +1407,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1328,7 +1434,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1353,7 +1461,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1373,7 +1483,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1398,7 +1510,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1427,7 +1541,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p
@@ -1452,7 +1568,9 @@ module.exports = {
         var p = new WebProject({
             id: "webapp",
             sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var rf = new RubyFile({
             project: p

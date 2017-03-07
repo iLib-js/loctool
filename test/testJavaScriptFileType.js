@@ -15,7 +15,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         
@@ -29,7 +31,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -44,7 +48,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -59,7 +65,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -74,7 +82,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -89,7 +99,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -104,7 +116,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -119,7 +133,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -134,7 +150,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -149,7 +167,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -164,7 +184,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -179,7 +201,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -194,7 +218,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -209,7 +235,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -224,7 +252,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -239,7 +269,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -254,7 +286,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -269,7 +303,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -284,7 +320,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -299,7 +337,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -314,7 +354,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);
@@ -329,7 +371,9 @@ module.exports = {
 
         var p = new WebProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var htf = new JavaScriptFileType(p);
         test.ok(htf);

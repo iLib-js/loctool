@@ -43,7 +43,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlResourceFile({
             project: p,
@@ -64,7 +66,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "foo/bar"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlResourceFile({
         	project: p,
@@ -86,7 +90,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
 			project: p
@@ -126,7 +132,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
 			project: p
@@ -203,7 +211,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
 			project: p
@@ -281,7 +291,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
 			project: p
@@ -317,7 +329,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -368,7 +382,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
 			project: p
@@ -394,7 +410,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -421,7 +439,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -473,7 +493,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -525,7 +547,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -581,7 +605,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -604,7 +630,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -636,7 +664,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -670,7 +700,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -704,7 +736,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -735,7 +769,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var yml = new YamlResourceFile({
         	project: p, 
@@ -787,7 +823,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         var yml = new YamlResourceFile({
             project: p,
             pathName: "./zh.yml",
@@ -832,7 +870,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         var yml = new YamlResourceFile({
             project: p,
             pathName: "./zh.yml",

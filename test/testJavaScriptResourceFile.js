@@ -28,7 +28,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -50,7 +52,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -98,7 +102,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -151,7 +157,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -177,7 +185,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,
@@ -222,7 +232,9 @@ module.exports = {
         	resourceDirs: {
         		"js": "feelGood/localized_js"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var jsrf = new JavaScriptResourceFile({
         	project: p,

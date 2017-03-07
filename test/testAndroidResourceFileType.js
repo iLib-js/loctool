@@ -15,7 +15,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         
@@ -29,7 +31,9 @@ module.exports = {
 
         var p = new AndroidProject({
         	sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -47,7 +51,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -65,7 +71,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -83,7 +91,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -101,7 +111,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -119,7 +131,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -137,7 +151,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -155,7 +171,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -173,7 +191,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -191,7 +211,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -209,7 +231,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
@@ -227,7 +251,9 @@ module.exports = {
         	"resourceDirs": {
         		"java": "android/res"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var alf = new AndroidResourceFileType(p);
         test.ok(alf);
