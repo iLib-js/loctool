@@ -1360,7 +1360,7 @@
     <body>
       <trans-unit id="106" resname="Your total this month" restype="string" datatype="javascript">
         <source>Your total this month</source>
-        <target state="translated">您的本月总计</target>
+        <target state="accepted">您本月总计</target>
       </trans-unit>
       <trans-unit id="108" resname="year" restype="string" datatype="javascript">
         <source>year</source>
