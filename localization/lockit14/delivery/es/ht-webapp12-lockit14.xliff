@@ -1,0 +1,863 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="app/views/people/feelGood/_checklist_todo.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="2" resname="r443876069" restype="string" datatype="ruby">
+        <source>%{author_span_start}%{author_link_start}%{author_name}'s%{link_end} checklist on %{span_end}%{checklist_span_start}%{checklist_link_start}%{checklist_name}%{link_end}%{span_end}%{for_span_start} for %{first_name} %{last_name}%{span_end}</source><seg-source><mrk mtype="seg" mid="1">%{author_span_start}%{author_link_start}%{author_name}'s%{link_end} checklist on %{span_end}%{checklist_span_start}%{checklist_link_start}%{checklist_name}%{link_end}%{span_end}%{for_span_start} for %{first_name} %{last_name}%{span_end}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="1">El listado de %{author_span_start}%{author_link_start}%{author_name}%{link_end} sobre %{span_end}%{checklist_span_start}%{checklist_link_start}%{checklist_name}%{link_end}%{span_end}%{for_span_start} para %{first_name} %{last_name}%{span_end}</mrk></target>
+      </trans-unit>
+      <trans-unit id="3" resname="r65716308" restype="string" datatype="ruby">
+        <source>%{author_span_start}%{author_link_start}%{author_name}'s%{link_end} checklist on %{span_end}%{checklist_span_start}%{checklist_link_start}%{checklist_name}%{link_end}%{span_end}</source><seg-source><mrk mtype="seg" mid="2">%{author_span_start}%{author_link_start}%{author_name}'s%{link_end} checklist on %{span_end}%{checklist_span_start}%{checklist_link_start}%{checklist_name}%{link_end}%{span_end}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="2">El listado de %{author_span_start}%{author_link_start}%{author_name}%{link_end} sobre %{span_end}%{checklist_span_start}%{checklist_link_start}%{checklist_name}%{link_end}%{span_end}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/partials/provider/_member_provider_signup_reminder_7.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="4" resname="r191834829" restype="string" datatype="ruby">
+        <source>%{first_name}</source><seg-source><mrk mtype="seg" mid="3">%{first_name}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="3">%{first_name}</mrk></target>
+      </trans-unit>
+      <trans-unit id="5" resname="r13009213" restype="string" datatype="ruby">
+        <source>Sign-up Today</source><seg-source><mrk mtype="seg" mid="4">Sign-up Today</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="4">Regístrate Hoy</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/partials/provider/_member_provider_signup_reminder_3.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="6" resname="r685693077" restype="string" datatype="ruby">
+        <source>Tap-In</source><seg-source><mrk mtype="seg" mid="5">Tap-In</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="5">Ingresa</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/general_mailer/member_concierge_doctor_invitation_3days.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="7" resname="r422194407" restype="string" datatype="ruby">
+        <source>Accept %{expert}'s invitation to join %{expert} virtual practice. Get your health questions answered, prescriptions sent to your local pharmacy, lab tests ordered, and so much more—all from your phone or computer. With %{expert} on your doctor care-team, you'll have access to a doctor whenever you need it, wherever you are.</source><seg-source><mrk mtype="seg" mid="6">Accept %{expert}'s invitation to join %{expert} virtual practice. Get your health questions answered, prescriptions sent to your local pharmacy, lab tests ordered, and so much more—all from your phone or computer. With %{expert} on your doctor care-team, you'll have access to a doctor whenever you need it, wherever you are.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="6">Acepta la invitación de %{expert} para unirte al consultorio virtual de %{expert}. Obtén respuestas para tus preguntas de salud, envio de recetas a tu farmacia local, órdenes para pruebas de laboratorio, y mucho más — todo desde tu teléfono o computadora. Con %{expert} en tu equipo de atención médico, tendrás acceso a un doctor cuando sea que lo necesites, donde sea que estés.</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/views/chat/feelgood/chat_history_pdf.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="8" resname="r554363471" restype="string" datatype="ruby">
+        <source>%{date}, started at %{time}</source><seg-source><mrk mtype="seg" mid="7">%{date}, started at %{time}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="7">%{date}, empezó a las %{time}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/person.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="9" resname="r425664130" restype="string" datatype="ruby">
+        <source>patient, %{name}</source><seg-source><mrk mtype="seg" mid="8">patient, %{name}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="8">paciente, %{name}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/models/chat_session.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="10" resname="r842306503" restype="string" datatype="ruby">
+        <source>From %{patient}%{gender}%{subaccount}%{descriptor}</source><seg-source><mrk mtype="seg" mid="9">From %{patient}%{gender}%{subaccount}%{descriptor}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="9">De %{patient}%{gender}%{subaccount}%{descriptor}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="app/mailers/general_mailer.rb" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="11" resname="r897470155" restype="string" datatype="ruby">
+        <source>Have you signed up with %{cobranded_product} today?</source><seg-source><mrk mtype="seg" mid="10">Have you signed up with %{cobranded_product} today?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="10">¿Ya te registraste con %{cobranded_product} hoy?</mrk></target>
+      </trans-unit>
+      <trans-unit id="12" resname="r744027496" restype="string" datatype="ruby">
+        <source>%{greeting}, Get started with your %{cobranded_product}!</source><seg-source><mrk mtype="seg" mid="11">%{greeting}, Get started with your %{cobranded_product}!</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="11">%{greeting}, ¡Inicia con tu %{cobranded_product}!</mrk></target>
+      </trans-unit>
+      <trans-unit id="13" resname="r499901157" restype="string" datatype="ruby">
+        <source>%{greeting}, Let’s get you started with %{cobranded_product}!</source><seg-source><mrk mtype="seg" mid="12">%{greeting}, Let’s get you started with %{cobranded_product}!</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="12">%{greeting}, ¡Empecemos con %{cobranded_product}!</mrk></target>
+      </trans-unit>
+      <trans-unit id="14" resname="r758106493" restype="string" datatype="ruby">
+        <source>Reminder: Connect with %{expert}</source><seg-source><mrk mtype="seg" mid="13">Reminder: Connect with %{expert}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="13">Recordatorio: Conéctate con %{expert}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/multipage/js/expert/createTips/createTips.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="15" resname="There has been a problem completing your search. Please refresh the page and try again." restype="string" datatype="javascript">
+        <source>There has been a problem completing your search. Please refresh the page and try again.</source><seg-source><mrk mtype="seg" mid="14">There has been a problem completing your search. Please refresh the page and try again.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="14">Ha habido un problema completando tu búsqueda. Por favor, refresca la página e intenta otra vez.</mrk></target>
+      </trans-unit>
+      <trans-unit id="16" resname="Sorry, no other results were found" restype="string" datatype="javascript">
+        <source>Sorry, no other results were found</source><seg-source><mrk mtype="seg" mid="15">Sorry, no other results were found</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="15">Perdón, no se encontraron otros resultados.</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/multipage/js/expert/consultApplication/app_form_2.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="19" resname="am" restype="string" datatype="javascript">
+        <source>am</source><seg-source><mrk mtype="seg" mid="16">am</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="16">am</mrk></target>
+      </trans-unit>
+      <trans-unit id="20" resname="pm" restype="string" datatype="javascript">
+        <source>pm</source><seg-source><mrk mtype="seg" mid="17">pm</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="17">pm</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/ui_modules/edit_pregnancy_date.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="22" resname="What is {name}'s expected due date?" restype="string" datatype="javascript">
+        <source>What is {name}'s expected due date?</source><seg-source><mrk mtype="seg" mid="18">What is {name}'s expected due date?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="18">¿Cuál es la fecha probable de parto de {name}?</mrk></target>
+      </trans-unit>
+      <trans-unit id="23" resname="What is {name}'s last menstrual period?" restype="string" datatype="javascript">
+        <source>What is {name}'s last menstrual period?</source><seg-source><mrk mtype="seg" mid="19">What is {name}'s last menstrual period?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="19">¿Cuándo fue el último periodo menstrual de {name}?</mrk></target>
+      </trans-unit>
+      <trans-unit id="24" resname="What is this person's expected due date?" restype="string" datatype="javascript">
+        <source>What is this person's expected due date?</source><seg-source><mrk mtype="seg" mid="20">What is this person's expected due date?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="20">¿Cuál es la fecha probable de parto de esta persona?</mrk></target>
+      </trans-unit>
+      <trans-unit id="25" resname="When is this person's last menstrual period?" restype="string" datatype="javascript">
+        <source>When is this person's last menstrual period?</source><seg-source><mrk mtype="seg" mid="21">When is this person's last menstrual period?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="21">¿Cuándo fue el último periodo menstrual de esta persona?</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/templates/consult_list_item.tmpl.html" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="28" resname="{name}'s Private Consult on {date}" restype="string" datatype="javascript">
+        <source>{name}'s Private Consult on {date}</source><seg-source><mrk mtype="seg" mid="22">{name}'s Private Consult on {date}</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="22">La Consulta Privada de {name} el {date}</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/profilePanel.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="29" resname="Something went wrong,Please try later!" restype="string" datatype="javascript">
+        <source>Something went wrong,Please try later!</source><seg-source><mrk mtype="seg" mid="23">Something went wrong,Please try later!</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="23">Algo salió mal. ¡Por favor intenta más tarde!</mrk></target>
+      </trans-unit>
+      <trans-unit id="30" resname="This date is before {first_name}'s birthday." restype="string" datatype="javascript">
+        <source>This date is before {first_name}'s birthday.</source><seg-source><mrk mtype="seg" mid="24">This date is before {first_name}'s birthday.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="24">Esta fecha es antes del cumpleaños de {first_name}.</mrk></target>
+      </trans-unit>
+      <trans-unit id="31" resname="This date is before this person's birthday." restype="string" datatype="javascript">
+        <source>This date is before this person's birthday.</source><seg-source><mrk mtype="seg" mid="25">This date is before this person's birthday.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="25">Esta fecha es antes del cumpleaños de esta persona.</mrk></target>
+      </trans-unit>
+      <trans-unit id="32" resname="This date is before your birthday." restype="string" datatype="javascript">
+        <source>This date is before your birthday.</source><seg-source><mrk mtype="seg" mid="26">This date is before your birthday.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="26">Esta fecha es antes de tu cumpleaños.</mrk></target>
+      </trans-unit>
+      <trans-unit id="33" resname="This date is too far in the past." restype="string" datatype="javascript">
+        <source>This date is too far in the past.</source><seg-source><mrk mtype="seg" mid="27">This date is too far in the past.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="27">Esta fecha está demasiado atrás en el pasado.</mrk></target>
+      </trans-unit>
+      <trans-unit id="34" resname="This date is too far in the future." restype="string" datatype="javascript">
+        <source>This date is too far in the future.</source><seg-source><mrk mtype="seg" mid="28">This date is too far in the future.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="28">Esta fecha está demasiado adelante en el futuro.</mrk></target>
+      </trans-unit>
+      <trans-unit id="35" resname="This date is in the future." restype="string" datatype="javascript">
+        <source>This date is in the future.</source><seg-source><mrk mtype="seg" mid="29">This date is in the future.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="29">Esta fecha está en el futuro.</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="public/feelGood/js/helpers/compose_consult.js" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="36" resname="Are you sure you want to remove this translator?" restype="string" datatype="javascript">
+        <source>Are you sure you want to remove this translator?</source><seg-source><mrk mtype="seg" mid="30">Are you sure you want to remove this translator?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="30">¿Estás seguro que quieres eliminar a este traductor?</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_member_provider_signup_reminder_7.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="39" resname="r519704881" restype="string" datatype="x-haml">
+        <source>All you need to get started is a computer, smartphone, or tablet. Get immediate and personalized health services from a network of top doctors to your fingertips</source><seg-source><mrk mtype="seg" mid="31">All you need to get started is a computer, smartphone, or tablet. Get immediate and personalized health services from a network of top doctors to your fingertips</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="31">Todo lo que necesitas para empezar es una computadora, teléfono inteligente o tableta. Obtén servicios de salud personalizados e inmediatos de una red de los mejores doctores a la punta de tus dedos.</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_member_provider_signup_reminder_3.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="40" resname="r347273921" restype="string" datatype="x-haml">
+        <source>All you need is a computer, smartphone, or tablet. Tap into the wisdom of top doctors to help you take control of your health and well-being to feel good every day.</source><seg-source><mrk mtype="seg" mid="32">All you need is a computer, smartphone, or tablet. Tap into the wisdom of top doctors to help you take control of your health and well-being to feel good every day.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="32">Todo lo que necesitas es una computadora, teléfono inteligente o tableta. Aprovecha la sabiduría de los mejores doctores para ayudarte a hacerte cargo de tu salud y bienestar para sentirte bien todos los días.</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_member_provider_signup_reminder_14.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="41" resname="r567558732" restype="string" datatype="x-haml">
+        <source>Let’s get you signed up today so you can receive the care and support you and your loved ones need from your mobile device or personal computer.</source><seg-source><mrk mtype="seg" mid="33">Let’s get you signed up today so you can receive the care and support you and your loved ones need from your mobile device or personal computer.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="33">¡Hay que registrarte hoy para que puedas recibir la atención y apoyo que tu y tus seres queridos necesitan desde tu dispositivo móvil o computadora personal.</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="email_link_for_admin_exported_content.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="42" resname="r387010333" restype="string" datatype="x-haml">
+        <source>This link will expire in 24 hours and can only be accessed while logged into the account using this email.</source><seg-source><mrk mtype="seg" mid="34">This link will expire in 24 hours and can only be accessed while logged into the account using this email.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="34">Este enlace expirará en 24 horas y solo puede ser accedido mientras se haya iniciado sesión en la cuenta que usa este correo electrónico.</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="_prescription.html.haml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="45" resname="r25021196" restype="string" datatype="x-haml">
+        <source>Prescribed Medications:</source><seg-source><mrk mtype="seg" mid="35">Prescribed Medications:</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="35">Medicamentos Recetados:</mrk></target>
+      </trans-unit>
+      <trans-unit id="48" resname="r206156218" restype="string" datatype="x-haml">
+        <source>Pharmacy:</source><seg-source><mrk mtype="seg" mid="36">Pharmacy:</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="36">Farmacia:</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="config/voice_app_interactions.yml" source-language="en-US" target-language="es-US" product-name="ht-webapp12">
+    <body>
+      <trans-unit id="1" resname="first_time" restype="string" datatype="x-yaml" x-context="speak_content@session_greeting">
+        <source>%TIME_BASED_GREET%. Your voice is music to my ears, but I don't think we've met. I'm Doctor A.I., and I work with more than %DOCTORS_COUNT% top doctors to put our heads together and show you the best path to feeling good.</source><seg-source><mrk mtype="seg" mid="37">%TIME_BASED_GREET%. Your voice is music to my ears, but I don't think we've met. I'm Doctor A.I., and I work with more than %DOCTORS_COUNT% top doctors to put our heads together and show you the best path to feeling good.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="37">%TIME_BASED_GREET%. Tu voz es música para mis oídos, pero no creo que no hayamos conocido. Soy Doctor A.I., y trabajo con más de %DOCTORS_COUNT%  de los mejores doctores para juntar nuestras cabezas y mostrarte el mejor camino para sentirte bien</mrk></target>
+      </trans-unit>
+      <trans-unit id="2" resname="name_present" restype="string" datatype="x-yaml" x-context="speak_content@session_greeting@returning_user">
+        <source>%TIME_BASED_GREET%. It's Doctor A.I. ...Welcome back %LOGGED_IN_USER_NAME%. %GREETING_RETURNING% I've been wondering how you've been since we last connected.</source><seg-source><mrk mtype="seg" mid="38">%TIME_BASED_GREET%. It's Doctor A.I. ...Welcome back %LOGGED_IN_USER_NAME%. %GREETING_RETURNING% I've been wondering how you've been since we last connected.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="38">%TIME_BASED_GREET%. Es Doctor A.I. ...Bienvenido %LOGGED_IN_USER_NAME%. %GREETING_RETURNING% Me he estado preguntando cómo has estado desde la última vez que nos conectamos</mrk></target>
+      </trans-unit>
+      <trans-unit id="3" resname="name_missing" restype="string" datatype="x-yaml" x-context="speak_content@session_greeting@returning_user">
+        <source>%TIME_BASED_GREET%. It's Doctor A.I. ...Welcome back. %GREETING_RETURNING% I've been wondering how you've been since we last connected.</source><seg-source><mrk mtype="seg" mid="39">%TIME_BASED_GREET%. It's Doctor A.I. ...Welcome back. %GREETING_RETURNING% I've been wondering how you've been since we last connected.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="39">%TIME_BASED_GREET%. Es Doctor A.I. ...Bienvenido. %GREETING_RETURNING% Me he estado preguntando cómo has estado desde la última vez que nos conectamos</mrk></target>
+      </trans-unit>
+      <trans-unit id="4" resname="first_time" restype="string" datatype="x-yaml" x-context="speak_content@ask_link_account_question">
+        <source>I have a great idea: You'll get more accurate advice if I link to your account. Do you have a HealthTap account that you'd like me to link now?</source><seg-source><mrk mtype="seg" mid="40">I have a great idea: You'll get more accurate advice if I link to your account. Do you have a HealthTap account that you'd like me to link now?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="40">Tengo una gran idea: Obtendrás consejo más acertado si me enlazo a tu cuenta. ¿Tienes una cuenta de HealthTap a la que te gustaría que me enlazara en este momento?</mrk></target>
+      </trans-unit>
+      <trans-unit id="5" resname="returning_user" restype="string" datatype="x-yaml" x-context="speak_content@ask_link_account_question">
+        <source>Just a quick reminder that I can give you better guidance if we link your account. How about we do it now?</source><seg-source><mrk mtype="seg" mid="41">Just a quick reminder that I can give you better guidance if we link your account. How about we do it now?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="41">Solo un rápido recordatorio de que puedo darte mejor orientación si enlazamos tu cuenta. ¿Qué tal si hacemos eso ahora?</mrk></target>
+      </trans-unit>
+      <trans-unit id="6" resname="link_account_question_skipped" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>%OPENER%. We can link it later.</source><seg-source><mrk mtype="seg" mid="42">%OPENER%. We can link it later.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="42">%OPENER%. Podemos enlazarla más tarde.</mrk></target>
+      </trans-unit>
+      <trans-unit id="7" resname="link_account_question_confirmed" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>I can already tell we're going to get along fabulously. I sent a link to your Alexa app — just tap to log in and link your HealthTap account. When you're done, just start our conversation again. I will be standing by. Talk to you soon!</source><seg-source><mrk mtype="seg" mid="43">I can already tell we're going to get along fabulously. I sent a link to your Alexa app — just tap to log in and link your HealthTap account. When you're done, just start our conversation again. I will be standing by. Talk to you soon!</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="43">Ya puedo ver que nos vamos a llevar muy bien. Envié un enlace a tu aplicación de Alexa — solo tócalo para iniciar sesión y enlazar tu cuenta de HealthTap. Cuando termines, solo comienza nuestra conversación otra vez. Estaré en espera. ¡Hablamos pronto!</mrk></target>
+      </trans-unit>
+      <trans-unit id="8" resname="link_account_failure" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Hmm, it appears your account is still not linked. Tap 'Link Account' in your Alexa app and say 'Done' once you've completed the process. Or just say 'Cancel' if you change your mind.</source><seg-source><mrk mtype="seg" mid="44">Hmm, it appears your account is still not linked. Tap 'Link Account' in your Alexa app and say 'Done' once you've completed the process. Or just say 'Cancel' if you change your mind.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="44">Hmm, parece que tu cuenta aún no está enlazada. Toca 'Enlazar Cuenta' en tu aplicación de Alexa y si 'Listo' una vez que hayas completado el proceso. O solo di 'Cancelar' si cambias de opinión. </mrk></target>
+      </trans-unit>
+      <trans-unit id="9" resname="link_account_success" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Success! We've got you linked.</source><seg-source><mrk mtype="seg" mid="45">Success! We've got you linked.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="45">¡Éxito! Te hemos enlazado!</mrk></target>
+      </trans-unit>
+      <trans-unit id="10" resname="subaccounts_missing" restype="string" datatype="x-yaml" x-context="speak_content@ask_choose_account_question">
+        <source>%OPENING_TRANSITION% I'm still working on my communication skills. If it helps at any point in our conversation, you can ask me to repeat myself. Now, tell me who we're here for today — are we helping you, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</source><seg-source><mrk mtype="seg" mid="46">%OPENING_TRANSITION% I'm still working on my communication skills. If it helps at any point in our conversation, you can ask me to repeat myself. Now, tell me who we're here for today — are we helping you, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="46">%OPENING_TRANSITION% Todavía estoy trabajando en mis habilidades de comunicación. Si ayudaría, en cualquier momento en nuestra conversación puedes pedirme que repita algo. Ahora, dime por quién estamos aquí hoy — te estamos ayudando a ti, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% o a alguien más?</mrk></target>
+      </trans-unit>
+      <trans-unit id="11" resname="subaccounts_present" restype="string" datatype="x-yaml" x-context="speak_content@ask_choose_account_question">
+        <source>%OPENING_TRANSITION% I'm still working on my communication skills. If it helps at any point in our conversation, you can ask me to repeat myself. Now, tell me who we're here for today — are we helping you, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% %SUBACCOUNTS% %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</source><seg-source><mrk mtype="seg" mid="47">%OPENING_TRANSITION% I'm still working on my communication skills. If it helps at any point in our conversation, you can ask me to repeat myself. Now, tell me who we're here for today — are we helping you, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% %SUBACCOUNTS% %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="47">%OPENING_TRANSITION% Todavía estoy trabajando en mis habilidades de comunicación. Si ayudaría, en cualquier momento en nuestra conversación puedes pedirme que repita algo. Ahora, dime por quién estamos aquí hoy — te estamos ayudando a ti, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% o a alguien más?</mrk></target>
+      </trans-unit>
+      <trans-unit id="12" resname="ask_relationship" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Oh, someone new! I love meeting new people. How are they related to you? You can say things like husband, mother, or daughter...</source><seg-source><mrk mtype="seg" mid="48">Oh, someone new! I love meeting new people. How are they related to you? You can say things like husband, mother, or daughter...</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="48">¡Oh, alguien nuevo! Amo conocer a nuevas personas. ¿Cuál es su relación contigo? Puedes decir cosas como esposo, madre o hija...</mrk></target>
+      </trans-unit>
+      <trans-unit id="13" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@choose_account_confirm">
+        <source>I see. I'm here for you. Let's continue.</source><seg-source><mrk mtype="seg" mid="49">I see. I'm here for you. Let's continue.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="49">Ya veo. Estoy aquí para ti. Continuemos.</mrk></target>
+      </trans-unit>
+      <trans-unit id="14" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@choose_account_confirm">
+        <source>I see. I'm here for %SUBACCOUNT_NAME%. Let's continue.</source><seg-source><mrk mtype="seg" mid="50">I see. I'm here for %SUBACCOUNT_NAME%. Let's continue.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="50">Ya veo. Estoy aquí para %SUBACCOUNT_NAME%. Continuemos.</mrk></target>
+      </trans-unit>
+      <trans-unit id="15" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@ask_dob_question">
+        <source>For more accurate advice, it helps our doctors to know the year you were born. Your voice is certainly not giving away your age. Please say the birth year, or just approximate it if you're not sure.</source><seg-source><mrk mtype="seg" mid="51">For more accurate advice, it helps our doctors to know the year you were born. Your voice is certainly not giving away your age. Please say the birth year, or just approximate it if you're not sure.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="51">Para consejo más certero, le ayuda a nuestros doctores saber el año en que naciste. Tu voz no nos dice tu edad. Por favor, di tu año de nacimiento o da una aproximación si no estás seguro.</mrk></target>
+      </trans-unit>
+      <trans-unit id="16" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@ask_dob_question">
+        <source>For more accurate advice, it helps our doctors to know the year %SUBACCOUNT_NAME% was born. Please say the birth year, or just approximate it if you're not sure.</source><seg-source><mrk mtype="seg" mid="52">For more accurate advice, it helps our doctors to know the year %SUBACCOUNT_NAME% was born. Please say the birth year, or just approximate it if you're not sure.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="52">Para consejo más certero, le ayuda a nuestros doctores saber el año en que nació %SUBACCOUNT_NAME%. Por favor, di el año de nacimiento o da una aproximación si no estás seguro.</mrk></target>
+      </trans-unit>
+      <trans-unit id="17" resname="less_than_ten" restype="string" datatype="x-yaml" x-context="speak_content@ask_dob_question_confirm">
+        <source>%AGE_TO_USE% years old! Such a wonderful age. We would never have guessed.</source><seg-source><mrk mtype="seg" mid="53">%AGE_TO_USE% years old! Such a wonderful age. We would never have guessed.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="53">¡%AGE_TO_USE% años de edad! Qué tan maravillosa edad. Nunca lo hubiéramos adivinado.</mrk></target>
+      </trans-unit>
+      <trans-unit id="18" resname="less_than_thirteen" restype="string" datatype="x-yaml" x-context="speak_content@ask_dob_question_confirm">
+        <source>%AGE_TO_USE% years old! A growing child. We would never have guessed.</source><seg-source><mrk mtype="seg" mid="54">%AGE_TO_USE% years old! A growing child. We would never have guessed.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="54">¡%AGE_TO_USE% años de edad! Un niño en crecimiento. Nunca lo hubiéramos adivinado.</mrk></target>
+      </trans-unit>
+      <trans-unit id="19" resname="regular_age" restype="string" datatype="x-yaml" x-context="speak_content@ask_dob_question_confirm">
+        <source>%AGE_TO_USE% years young! Splendid. I would never have guessed.</source><seg-source><mrk mtype="seg" mid="55">%AGE_TO_USE% years young! Splendid. I would never have guessed.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="55">¡%AGE_TO_USE% años de juventud! Espléndido. Nunca lo hubiéramos adivinado.</mrk></target>
+      </trans-unit>
+      <trans-unit id="20" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@ask_gender_question">
+        <source>I'm really bad at guessing. Are you a male or a female?</source><seg-source><mrk mtype="seg" mid="56">I'm really bad at guessing. Are you a male or a female?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="56">Soy muy malo adivinando. ¿Eres hombre o mujer?</mrk></target>
+      </trans-unit>
+      <trans-unit id="21" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@ask_gender_question">
+        <source>I'm really bad at guessing. Is %SUBACCOUNT_NAME% a male or a female?</source><seg-source><mrk mtype="seg" mid="57">I'm really bad at guessing. Is %SUBACCOUNT_NAME% a male or a female?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="57">Soy muy malo adivinando. ¿%SUBACCOUNT_NAME% es hombre o mujer?</mrk></target>
+      </trans-unit>
+      <trans-unit id="22" resname="male" restype="string" datatype="x-yaml" x-context="speak_content@ask_gender_confirm">
+        <source>Male. %GENDER_ACK%</source><seg-source><mrk mtype="seg" mid="58">Male. %GENDER_ACK%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="58">Hombre. %GENDER_ACK%</mrk></target>
+      </trans-unit>
+      <trans-unit id="23" resname="female" restype="string" datatype="x-yaml" x-context="speak_content@ask_gender_confirm">
+        <source>Female. %GENDER_ACK%</source><seg-source><mrk mtype="seg" mid="59">Female. %GENDER_ACK%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="59">Mujer. %GENDER_ACK%</mrk></target>
+      </trans-unit>
+      <trans-unit id="26" resname="pregnant" restype="string" datatype="x-yaml" x-context="speak_content@ask_pregnancy_confirm">
+        <source>That's great — Congratulations! So glad I asked.</source><seg-source><mrk mtype="seg" mid="60">That's great — Congratulations! So glad I asked.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="60">Eso es estupendo — ¡Felicidades! Estoy muy feliz de que hayas preguntado.</mrk></target>
+      </trans-unit>
+      <trans-unit id="28" resname="first" restype="string" datatype="x-yaml" x-context="speak_content@symptom_question">
+        <source>%SYMPTOMS_INTRO%. So what symptoms do we need to know about? You can say things like fever, rash, headache, and so on.</source><seg-source><mrk mtype="seg" mid="61">%SYMPTOMS_INTRO%. So what symptoms do we need to know about? You can say things like fever, rash, headache, and so on.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="61">%SYMPTOMS_INTRO%. ¿Entonces que síntomas necesitamos saber acerca de ti? Puedes decir cosas como fiebre, sarpullido, dolor de cabeza, etc.</mrk></target>
+      </trans-unit>
+      <trans-unit id="30" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_prompt@single_value">
+        <source>I will read you one option. Just repeat it or say 'continue'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</source><seg-source><mrk mtype="seg" mid="62">I will read you one option. Just repeat it or say 'continue'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="62">Te leeré una opción. Solo repítela o di 'continuar'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</mrk></target>
+      </trans-unit>
+      <trans-unit id="31" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_prompt@single_value">
+        <source>I will read you %REFINEMENT_OPTIONS_COUNT% options. Just repeat one or say 'continue'. %REFINEMENT_OPTIONS%</source><seg-source><mrk mtype="seg" mid="63">I will read you %REFINEMENT_OPTIONS_COUNT% options. Just repeat one or say 'continue'. %REFINEMENT_OPTIONS%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="63">Te leeré opciones de %REFINEMENT_OPTIONS_COUNT%. Solo repite una o di 'continuar'. %REFINEMENT_OPTIONS%</mrk></target>
+      </trans-unit>
+      <trans-unit id="32" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_prompt@multi_value">
+        <source>I will read you one option. Just repeat it or say 'continue'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</source><seg-source><mrk mtype="seg" mid="64">I will read you one option. Just repeat it or say 'continue'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="64">Te leeré una opción. Solo repítela o di 'continuar'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</mrk></target>
+      </trans-unit>
+      <trans-unit id="33" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_prompt@multi_value">
+        <source>I will read you %REFINEMENT_OPTIONS_COUNT% options. Just repeat one or more, or say 'continue'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</source><seg-source><mrk mtype="seg" mid="65">I will read you %REFINEMENT_OPTIONS_COUNT% options. Just repeat one or more, or say 'continue'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="65">Te leeré opciones de %REFINEMENT_OPTIONS_COUNT%. Solo repite una o más, o di 'continuar'. %SPECIAL_TAG%&lt;break time='1.0s'/&gt;%SPECIAL_TAG% %REFINEMENT_OPTIONS%</mrk></target>
+      </trans-unit>
+      <trans-unit id="34" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_severity">
+        <source>How would you describe your %SYMPTOM_NAME% right now? Don’t worry, we understand it may fluctuate, so there’s no right or wrong answer.</source><seg-source><mrk mtype="seg" mid="66">How would you describe your %SYMPTOM_NAME% right now? Don’t worry, we understand it may fluctuate, so there’s no right or wrong answer.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="66">¿Cómo describirías tu %SYMPTOM_NAME% en este momento? No te preocupes, entendemos que puede fluctuar, así que no hay una respuesta correcta o incorrecta.</mrk></target>
+      </trans-unit>
+      <trans-unit id="35" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_severity">
+        <source>How would you describe %SUBACCOUNT_NAME%’s %SYMPTOM_NAME% right now? Don’t worry, we understand it may fluctuate, so there’s no right or wrong answer.</source><seg-source><mrk mtype="seg" mid="67">How would you describe %SUBACCOUNT_NAME%’s %SYMPTOM_NAME% right now? Don’t worry, we understand it may fluctuate, so there’s no right or wrong answer.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="67">¿Cómo describirías el %SYMPTOM_NAME% de %SUBACCOUNT_NAME% en este momento? No te preocupes, entendemos que puede fluctuar, así que no hay una respuesta correcta o incorrecta.</mrk></target>
+      </trans-unit>
+      <trans-unit id="38" resname="person" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_abruptness">
+        <source>So, how quickly did the %SYMPTOM_NAME% develop?</source><seg-source><mrk mtype="seg" mid="68">So, how quickly did the %SYMPTOM_NAME% develop?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="68">Entonces, ¿qué tan rápido se desarrollo el/la %SYMPTOM_NAME%?</mrk></target>
+      </trans-unit>
+      <trans-unit id="39" resname="subaccount" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_abruptness">
+        <source>So, how quickly did the %SYMPTOM_NAME% develop?</source><seg-source><mrk mtype="seg" mid="69">So, how quickly did the %SYMPTOM_NAME% develop?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="69">Entonces, ¿qué tan rápido se desarrollo el/la %SYMPTOM_NAME%?</mrk></target>
+      </trans-unit>
+      <trans-unit id="41" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_sidedness@person">
+        <source>Where do you feel your %SYMPTOM_NAME%? You can pick one or more places.</source><seg-source><mrk mtype="seg" mid="70">Where do you feel your %SYMPTOM_NAME%? You can pick one or more places.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="70">¿Dónde sientes tu %SYMPTOM_NAME%? Puedes elegir uno o más lugares.</mrk></target>
+      </trans-unit>
+      <trans-unit id="44" resname="male" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_sidedness@subaccount@multiple_option">
+        <source>Where does %SUBACCOUNT_NAME% feel his %SYMPTOM_NAME%? You can pick one or more places.</source><seg-source><mrk mtype="seg" mid="71">Where does %SUBACCOUNT_NAME% feel his %SYMPTOM_NAME%? You can pick one or more places.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="71">¿Dónde siente %SUBACCOUNT_NAME% su %SYMPTOM_NAME%? Puedes elegir uno o más lugares.</mrk></target>
+      </trans-unit>
+      <trans-unit id="45" resname="female" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_sidedness@subaccount@multiple_option">
+        <source>Where does %SUBACCOUNT_NAME% feel her %SYMPTOM_NAME%? You can pick one or more places.</source><seg-source><mrk mtype="seg" mid="72">Where does %SUBACCOUNT_NAME% feel her %SYMPTOM_NAME%? You can pick one or more places.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="72">¿Dónde siente %SUBACCOUNT_NAME% su %SYMPTOM_NAME%? Puedes elegir uno o más lugares.</mrk></target>
+      </trans-unit>
+      <trans-unit id="50" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_radiation@person">
+        <source>Ok. Does your %SYMPTOM_NAME% radiate to the %ONLY_OPTION%?</source><seg-source><mrk mtype="seg" mid="73">Ok. Does your %SYMPTOM_NAME% radiate to the %ONLY_OPTION%?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="73">Ok. ¿Tu %SYMPTOM_NAME% se irradia a %ONLY_OPTION%?</mrk></target>
+      </trans-unit>
+      <trans-unit id="51" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_radiation@person">
+        <source>Ok. Does your %SYMPTOM_NAME% radiate to any of these areas? Tell us which ones (if any)</source><seg-source><mrk mtype="seg" mid="74">Ok. Does your %SYMPTOM_NAME% radiate to any of these areas? Tell us which ones (if any)</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="74">Ok. ¿Tu %SYMPTOM_NAME% se irradia a alguna de estas áreas? Dínos a cuáles (si a alguna)</mrk></target>
+      </trans-unit>
+      <trans-unit id="52" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_radiation@subaccount">
+        <source>Ok. Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% radiate to the %ONLY_OPTION%</source><seg-source><mrk mtype="seg" mid="75">Ok. Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% radiate to the %ONLY_OPTION%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="75">Ok. ¿El/La %SYMPTOM_NAME% de %SUBACCOUNT_NAME% se irradia a %ONLY_OPTION%?</mrk></target>
+      </trans-unit>
+      <trans-unit id="53" resname="multiple_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_radiation@subaccount">
+        <source>Ok. Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% radiate to any of these areas? Tell us which ones?</source><seg-source><mrk mtype="seg" mid="76">Ok. Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% radiate to any of these areas? Tell us which ones?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="76">Ok. ¿El/La %SYMPTOM_NAME% de %SUBACCOUNT_NAME% se irradia a alguna de estas áreas? Dínos a cuáles (si a alguna)</mrk></target>
+      </trans-unit>
+      <trans-unit id="56" resname="one_option" restype="string" datatype="x-yaml" x-context="speak_content@refinement_question@has_worsened@subaccount">
+        <source>Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% get worse in this case? %ONLY_OPTION%</source><seg-source><mrk mtype="seg" mid="77">Does %SUBACCOUNT_NAME%'s %SYMPTOM_NAME% get worse in this case? %ONLY_OPTION%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="77">¿El/La %SYMPTOM_NAME% de %SUBACCOUNT_NAME% empeora en este caso? %ONLY_OPTION%</mrk></target>
+      </trans-unit>
+      <trans-unit id="62" resname="refinement_answered" restype="string" datatype="x-yaml" x-context="speak_content@refinement_confirm">
+        <source>%REFINEMENT_ACK% %REFINEMENT_MINIMUM_DISTANCE_MATCH%</source><seg-source><mrk mtype="seg" mid="78">%REFINEMENT_ACK% %REFINEMENT_MINIMUM_DISTANCE_MATCH%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="78">%REFINEMENT_ACK% %REFINEMENT_MINIMUM_DISTANCE_MATCH%</mrk></target>
+      </trans-unit>
+      <trans-unit id="63" resname="refinement_prefix_second_or_more" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>%ACK_REFINEMENT% Hang in there. Just a few more questions...</source><seg-source><mrk mtype="seg" mid="79">%ACK_REFINEMENT% Hang in there. Just a few more questions...</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="79">%ACK_REFINEMENT% Aguanta. Solo unas preguntas más...</mrk></target>
+      </trans-unit>
+      <trans-unit id="64" resname="one_option_also_have" restype="string" datatype="x-yaml" x-context="speak_content@also_have_symptom_question@person">
+        <source>Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Does this apply to you? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</source><seg-source><mrk mtype="seg" mid="80">Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Does this apply to you? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="80">Lo tengo %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. Hay una última cosa que necesito preguntar para que nuestros doctores te puedan dar la orientación más acertada. ¿Esto aplica a ti? Solo repite uno más, o di 'continuar' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</mrk></target>
+      </trans-unit>
+      <trans-unit id="65" resname="multi_option_also_have" restype="string" datatype="x-yaml" x-context="speak_content@also_have_symptom_question@person">
+        <source>Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Do any of these apply to you? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</source><seg-source><mrk mtype="seg" mid="81">Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Do any of these apply to you? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="81">Lo tengo %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. Hay una última cosa que necesito preguntar para que nuestros doctores te puedan dar la orientación más acertada. ¿Alguno de estos aplican a ti? Solo repite uno más, o di 'continuar' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</mrk></target>
+      </trans-unit>
+      <trans-unit id="66" resname="one_option_also_have" restype="string" datatype="x-yaml" x-context="speak_content@also_have_symptom_question@subaccount">
+        <source>Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Does this apply to %SUBACCOUNT_NAME%? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</source><seg-source><mrk mtype="seg" mid="82">Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Does this apply to %SUBACCOUNT_NAME%? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="82">Lo tengo %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. Hay una última cosa que necesito preguntar para que nuestros doctores te puedan dar la orientación más acertada. ¿Esto aplica a %SUBACCOUNT_NAME%? Solo repite uno más, o di 'continuar' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</mrk></target>
+      </trans-unit>
+      <trans-unit id="67" resname="multi_option_also_have" restype="string" datatype="x-yaml" x-context="speak_content@also_have_symptom_question@subaccount">
+        <source>Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Do any of these apply to %SUBACCOUNT_NAME%? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</source><seg-source><mrk mtype="seg" mid="83">Got it %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. So, there's one last thing I need to ask so our doctors can give you the most accurate guidance. Do any of these apply to %SUBACCOUNT_NAME%? Just repeat one or more back to me, or say 'continue' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="83">Lo tengo %SPECIAL_TAG%&lt;break time='0.25s'/&gt;%SPECIAL_TAG%. Hay una última cosa que necesito preguntar para que nuestros doctores te puedan dar la orientación más acertada. ¿Alguno de estos aplican a %SUBACCOUNT_NAME%? Solo repite uno más, o di 'continuar' %SPECIAL_TAG%&lt;break time='500ms'/&gt;%SPECIAL_TAG% %ALSO_HAVE_SYMPTOM_NAMES%</mrk></target>
+      </trans-unit>
+      <trans-unit id="68" resname="generating_report" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Now, while we review your symptoms, it's a good time to remind you that I'm only here to help you be better informed. I've been trained by thousands of doctors, but I still don't have my medical school degree. Only a real doctor can give you advice or a diagnosis. I could connect you with a real doctor in just a moment. But If you believe you may be having a medical emergency, please call your doctor, or seek medical emergency care immediately. Thanks for listening. Now let's go over our findings.</source><seg-source><mrk mtype="seg" mid="84">Now, while we review your symptoms, it's a good time to remind you that I'm only here to help you be better informed. I've been trained by thousands of doctors, but I still don't have my medical school degree. Only a real doctor can give you advice or a diagnosis. I could connect you with a real doctor in just a moment. But If you believe you may be having a medical emergency, please call your doctor, or seek medical emergency care immediately. Thanks for listening. Now let's go over our findings.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="84">Ahora, mientras revisamos tus síntomas, es un bueno momento para recordarte que solo estoy aquí para ayudarte a estar mejor informado. He sido entrenado por miles de doctores, pero todavía no tengo mi título de la escuela de medicina. Solo un doctor real te puede dar consejo o un diagnóstico. Te podría conectar con un doctor en solo un momento. Pero si crees que puedes estar teniendo una emergencia médica, por favor llama a tu doctor, o busca atención médica de emergencia inmediatamente. Gracias por escuchar. Ahora repasemos nuestros hallazgos.</mrk></target>
+      </trans-unit>
+      <trans-unit id="69" resname="condition_details" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Ok, %EXPERTS_INVOLVED_COUNT% doctors helped me compute these findings. Wow, that's a lot of white coats. %CONDITION_REPORT%.</source><seg-source><mrk mtype="seg" mid="85">Ok, %EXPERTS_INVOLVED_COUNT% doctors helped me compute these findings. Wow, that's a lot of white coats. %CONDITION_REPORT%.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="85">Ok, %EXPERTS_INVOLVED_COUNT% doctores me ayudaron a computar estos hallazgos. Wow, esas son muchas batas blancas. %CONDITION_REPORT%.</mrk></target>
+      </trans-unit>
+      <trans-unit id="70" resname="condition_explanation" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>So, what is it? %CONDITION_DESCRIPTION% ... Many of our doctors believe that %CONDITION_EXPLANATION%. %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% Would you like to talk to a doctor about this now by phone? There may be a charge of 44 dollars.</source><seg-source><mrk mtype="seg" mid="86">So, what is it? %CONDITION_DESCRIPTION% ... Many of our doctors believe that %CONDITION_EXPLANATION%. %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% Would you like to talk to a doctor about this now by phone? There may be a charge of 44 dollars.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="86">Entonces, ¿qué es? %CONDITION_DESCRIPTION% ... Muchos de nuestros doctores creen que %CONDITION_EXPLANATION%. %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% ¿Te gustaría hablar con  un doctor al respecto por teléfono en este momento? Puede haber un cargo de 44 dólares.</mrk></target>
+      </trans-unit>
+      <trans-unit id="71" resname="specific_relationship_male" restype="string" datatype="x-yaml" x-context="speak_content@ask_question_subaccount_name">
+        <source>It's so good of you to help your %SUBACCOUNT_RELATIONSHIP_TYPE%. What is his name?</source><seg-source><mrk mtype="seg" mid="87">It's so good of you to help your %SUBACCOUNT_RELATIONSHIP_TYPE%. What is his name?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="87">Es muy bueno de tu parte que estés ayudando a tu %SUBACCOUNT_RELATIONSHIP_TYPE%. ¿Cuál es su nombre?</mrk></target>
+      </trans-unit>
+      <trans-unit id="72" resname="specific_relationship_female" restype="string" datatype="x-yaml" x-context="speak_content@ask_question_subaccount_name">
+        <source>It's so good of you to help your %SUBACCOUNT_RELATIONSHIP_TYPE%. What is her name?</source><seg-source><mrk mtype="seg" mid="88">It's so good of you to help your %SUBACCOUNT_RELATIONSHIP_TYPE%. What is her name?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="88">Es muy bueno de tu parte que estés ayudando a tu %SUBACCOUNT_RELATIONSHIP_TYPE%. ¿Cuál es su nombre?</mrk></target>
+      </trans-unit>
+      <trans-unit id="73" resname="other_relationship" restype="string" datatype="x-yaml" x-context="speak_content@ask_question_subaccount_name">
+        <source>It's so good of you to help. What is the name of this person</source><seg-source><mrk mtype="seg" mid="89">It's so good of you to help. What is the name of this person</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="89">Es muy bueno de tu parte ayudar. ¿Cuál es el nombre de esta persona?</mrk></target>
+      </trans-unit>
+      <trans-unit id="74" resname="consult_confirmation" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Would you like to talk to a doctor about this now by phone? There may be a charge of 44 dollars.</source><seg-source><mrk mtype="seg" mid="90">Would you like to talk to a doctor about this now by phone? There may be a charge of 44 dollars.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="90">¿Te gustaría hablar con  un doctor al respecto por teléfono en este momento? Puede haber un cargo de 44 dólares.</mrk></target>
+      </trans-unit>
+      <trans-unit id="75" resname="phone_number_asked" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>OK. Please tell me your phone number where you can receive U.S. calls and text messages and I will call you to connect you with a doctor now. Or just say 'skip'.</source><seg-source><mrk mtype="seg" mid="91">OK. Please tell me your phone number where you can receive U.S. calls and text messages and I will call you to connect you with a doctor now. Or just say 'skip'.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="91">OK. Por favor, dime tu número de teléfono donde puedas recibir llamadas y mensajes de texto de EE.UU. y te llamaré para conectarte con un doctor ahora. O solo di 'saltar'.</mrk></target>
+      </trans-unit>
+      <trans-unit id="76" resname="phone_number_asked_again" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Oops, sorry about that. I should see an Audiologist to get my hearing checked! Please say your phone number again.</source><seg-source><mrk mtype="seg" mid="92">Oops, sorry about that. I should see an Audiologist to get my hearing checked! Please say your phone number again.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="92">Oops, perdón por eso. ¡Debería de ver a un audiólogo para que me revisen mi oído! Por favor, di tu número de teléfono otra vez.</mrk></target>
+      </trans-unit>
+      <trans-unit id="77" resname="phone_number_asked_incorrect" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Sorry, that didn't seem like a valid phone number. Can you say a phone number where you can receive calls and text messages? You can always say 'Never mind' if you no longer want to connect with a doctor.</source><seg-source><mrk mtype="seg" mid="93">Sorry, that didn't seem like a valid phone number. Can you say a phone number where you can receive calls and text messages? You can always say 'Never mind' if you no longer want to connect with a doctor.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="93">Perdón, eso no pareció un número de teléfono válido. ¿Puedes decir un número de teléfono donde puedas recibir llamadas y mensajes de texto? Siempre puedes decir 'No importa' si ya no quieres conectarte con un doctor.</mrk></target>
+      </trans-unit>
+      <trans-unit id="78" resname="confirm_phone_number_keys" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Got it. I heard %PHONE_NUMBER%. Did I get that right?</source><seg-source><mrk mtype="seg" mid="94">Got it. I heard %PHONE_NUMBER%. Did I get that right?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="94">Lo tengo. Escuche %PHONE_NUMBER%. ¿Estuvo bien?</mrk></target>
+      </trans-unit>
+      <trans-unit id="79" resname="begin_call" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Alright, excellent. Now just sit back, relax, and we'll be calling you momentarily!</source><seg-source><mrk mtype="seg" mid="95">Alright, excellent. Now just sit back, relax, and we'll be calling you momentarily!</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="95">Bien, excelente. ¡Ahora siéntate, relájate y te llamaremos momentáneamente!</mrk></target>
+      </trans-unit>
+      <trans-unit id="80" resname="terminate_session" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Excellent. It was very nice speaking with you. I'm Doctor A.I. and I'm signing off now. From all of us at HealthTap, we wish you the best in health and happiness. Good bye.</source><seg-source><mrk mtype="seg" mid="96">Excellent. It was very nice speaking with you. I'm Doctor A.I. and I'm signing off now. From all of us at HealthTap, we wish you the best in health and happiness. Good bye.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="96">Excelente. Fue muy agradable hablar contigo. Soy Doctor A.I. y me despido. De todos nosotros en HealthTap, te deseamos lo mejor en salud y felicidad. Adiós.</mrk></target>
+      </trans-unit>
+      <trans-unit id="81" resname="final_goodbye" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Alright, it was a pleasure chatting with you. Remember, the doctor is always in at HealthTap. Take good care. This is Doctor A.I. signing off.</source><seg-source><mrk mtype="seg" mid="97">Alright, it was a pleasure chatting with you. Remember, the doctor is always in at HealthTap. Take good care. This is Doctor A.I. signing off.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="97">Bueno, fue un placer platicar contigo. Recuerda, el doctor siempre está en HealthTap. Cuídate. Este es Doctor A.I. despidiéndose.</mrk></target>
+      </trans-unit>
+      <trans-unit id="82" resname="promo_code_asked_question" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Great, one last question. By any chance, do you have a HealthTap Prime pre-paid access code? If so, please say the five-digit code or or say 'no'.</source><seg-source><mrk mtype="seg" mid="98">Great, one last question. By any chance, do you have a HealthTap Prime pre-paid access code? If so, please say the five-digit code or or say 'no'.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="98">Estupendo, una última pregunta. De casualidad, ¿tienes un código de acceso de prepago para HealthTap Prime? Si es así, por favor di el código de cinco dígitos o di 'no'.</mrk></target>
+      </trans-unit>
+      <trans-unit id="83" resname="terminate_reset_account" restype="string" datatype="x-yaml" x-context="speak_content">
+        <source>Your account has been reset and the current session is ended</source><seg-source><mrk mtype="seg" mid="99">Your account has been reset and the current session is ended</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="99">Tu cuenta ha sido reiniciada y la sesión actual ha terminado</mrk></target>
+      </trans-unit>
+      <trans-unit id="84" resname="static" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Doctor A.I. helps you understand your symptoms to show you the best path to feeling good. If you need me to repeat any instructions, simply say Repeat'. You can always say 'Start Over' to go back to the beginning. Or say 'Stop' to end our conversation.</source><seg-source><mrk mtype="seg" mid="100">Doctor A.I. helps you understand your symptoms to show you the best path to feeling good. If you need me to repeat any instructions, simply say Repeat'. You can always say 'Start Over' to go back to the beginning. Or say 'Stop' to end our conversation.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="100">Doctor A.I. te ayuda a comprender tus síntomas para mostrarte el mejor camino para sentirte bien. Si necesitas que repita cualquier instrucción, simplemente di 'Repetir'. Siempre puedes decir 'Volver a Empezar' para volver al comienzo. O di 'Detener' para terminar nuestra conversación.</mrk></target>
+      </trans-unit>
+      <trans-unit id="85" resname="link_account_question_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>You can say either 'Yes' or 'No' depending on whether you have a HealthTap account and you want to link it to your Alexa device.</source><seg-source><mrk mtype="seg" mid="101">You can say either 'Yes' or 'No' depending on whether you have a HealthTap account and you want to link it to your Alexa device.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="101">Puedes decir ya sea 'Sí' o 'No' dependiendo de si tienes una cuenta de HealthTap y la quieres enlazar a tu dispositivo Alexa.</mrk></target>
+      </trans-unit>
+      <trans-unit id="86" resname="person" restype="string" datatype="x-yaml" x-context="help_content@gender_question_asked">
+        <source>Are you a male or a female?</source><seg-source><mrk mtype="seg" mid="102">Are you a male or a female?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="102">¿Eres hombre o mujer?</mrk></target>
+      </trans-unit>
+      <trans-unit id="87" resname="subaccount" restype="string" datatype="x-yaml" x-context="help_content@gender_question_asked">
+        <source>Is %SUBACCOUNT_NAME% a male or a female?</source><seg-source><mrk mtype="seg" mid="103">Is %SUBACCOUNT_NAME% a male or a female?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="103">¿%SUBACCOUNT_NAME% es hombre o mujer?</mrk></target>
+      </trans-unit>
+      <trans-unit id="88" resname="person" restype="string" datatype="x-yaml" x-context="help_content@dob_question_asked">
+        <source>Simply say the year in which you were born. Please say the birth year, or just approximate it if you're not sure.</source><seg-source><mrk mtype="seg" mid="104">Simply say the year in which you were born. Please say the birth year, or just approximate it if you're not sure.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="104">Simplemente di el año en que naciste. Por favor, di el año de nacimiento, o trata de aproximarte si no estás seguro.</mrk></target>
+      </trans-unit>
+      <trans-unit id="89" resname="subaccount" restype="string" datatype="x-yaml" x-context="help_content@dob_question_asked">
+        <source>Simply say the year in which %SUBACCOUNT_NAME% was born. Please say the birth year, or just approximate it if you're not sure.</source><seg-source><mrk mtype="seg" mid="105">Simply say the year in which %SUBACCOUNT_NAME% was born. Please say the birth year, or just approximate it if you're not sure.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="105">Simplemente di el año en que nació %SUBACCOUNT_NAME%. Por favor, di el año de nacimiento, o trata de aproximarte si no estás seguro.</mrk></target>
+      </trans-unit>
+      <trans-unit id="90" resname="person" restype="string" datatype="x-yaml" x-context="help_content@pregnancy_question_asked">
+        <source>Are you pregnant? Just say Yes or No or I don't know</source><seg-source><mrk mtype="seg" mid="106">Are you pregnant? Just say Yes or No or I don't know</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="106">¿Estás embarazada? Solo di Sí o No o No sé</mrk></target>
+      </trans-unit>
+      <trans-unit id="91" resname="subaccount" restype="string" datatype="x-yaml" x-context="help_content@pregnancy_question_asked">
+        <source>Is %SUBACCOUNT_NAME% pregnant? Just say Yes or No or I don't know</source><seg-source><mrk mtype="seg" mid="107">Is %SUBACCOUNT_NAME% pregnant? Just say Yes or No or I don't know</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="107">¿%SUBACCOUNT_NAME% está embarazada? Solo di Sí o No o No sé</mrk></target>
+      </trans-unit>
+      <trans-unit id="92" resname="symptoms_question_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Say the name of a symptom like 'cough', 'back pain', or 'fever'.</source><seg-source><mrk mtype="seg" mid="108">Say the name of a symptom like 'cough', 'back pain', or 'fever'.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="108">Di el nombre de un síntoma como 'tos', 'dolor de espalda' o 'fiebre'.</mrk></target>
+      </trans-unit>
+      <trans-unit id="93" resname="link_account_confirm_question_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>In your Alexa app, select 'Link accounts' to connect your HealthTap account. When you're done, say 'done.' Or you can always say 'cancel' if you change your mind.</source><seg-source><mrk mtype="seg" mid="109">In your Alexa app, select 'Link accounts' to connect your HealthTap account. When you're done, say 'done.' Or you can always say 'cancel' if you change your mind.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="109">En tu aplicación de Alexa selecciona 'Enlazar cuentas' para conectarte con tu cuenta de HealthTap. Cuanto termines, di 'listo.' O siempre puedes decir 'cancelar' si cambias de opinión.</mrk></target>
+      </trans-unit>
+      <trans-unit id="94" resname="subaccounts_present" restype="string" datatype="x-yaml" x-context="help_content@choose_account_question_asked_state">
+        <source>Who are we helping today? Say me, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% %SUBACCOUNTS% %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</source><seg-source><mrk mtype="seg" mid="110">Who are we helping today? Say me, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% %SUBACCOUNTS% %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="110">¿A quién estamos ayudando hoy? Di a mí, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% %SUBACCOUNTS% %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% o a alguien más?</mrk></target>
+      </trans-unit>
+      <trans-unit id="95" resname="subaccounts_missing" restype="string" datatype="x-yaml" x-context="help_content@choose_account_question_asked_state">
+        <source>Who are we helping today? Say me, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</source><seg-source><mrk mtype="seg" mid="111">Who are we helping today? Say me, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% or someone else?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="111">¿A quién estamos ayudando hoy? Di a mí, %SPECIAL_TAG%&lt;break time='0.5s'/&gt;%SPECIAL_TAG% o a alguien más?</mrk></target>
+      </trans-unit>
+      <trans-unit id="96" resname="have_more_symptoms_question_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Say 'yes' if you have other symptoms to report. Otherwise say 'no'. Do you have any more symptoms to tell me?</source><seg-source><mrk mtype="seg" mid="112">Say 'yes' if you have other symptoms to report. Otherwise say 'no'. Do you have any more symptoms to tell me?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="112">Di 'sí' si tienes otros síntomas que reportar. De otra forma di 'no'. ¿Tienes alguno síntoma más que contarme?</mrk></target>
+      </trans-unit>
+      <trans-unit id="97" resname="subaccount_relationship_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>You can say any one of the following: %ALL_RELATIONSHIPS%</source><seg-source><mrk mtype="seg" mid="113">You can say any one of the following: %ALL_RELATIONSHIPS%</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="113">Puedes decir cualquiera de las siguientes: %ALL_RELATIONSHIPS%</mrk></target>
+      </trans-unit>
+      <trans-unit id="98" resname="subaccount_name_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Say the name or a nickname for your %SUBACCOUNT_RELATIONSHIP_TYPE% to continue</source><seg-source><mrk mtype="seg" mid="114">Say the name or a nickname for your %SUBACCOUNT_RELATIONSHIP_TYPE% to continue</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="114">Di el nombre o apodo de tu %SUBACCOUNT_RELATIONSHIP_TYPE% para continuar</mrk></target>
+      </trans-unit>
+      <trans-unit id="99" resname="phone_number_asked" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Please say your phone number where you can receive calls and text messages. Or say cancel.</source><seg-source><mrk mtype="seg" mid="115">Please say your phone number where you can receive calls and text messages. Or say cancel.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="115">Por favor, di tu número de teléfono donde puedas recibir llamadas y mensajes de texto. O di cancelar.</mrk></target>
+      </trans-unit>
+      <trans-unit id="100" resname="confirm_phone_number_state" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Did I hear your phone number correctly? Is it %PHONE_NUMBER%? Say 'yes' or 'no'.</source><seg-source><mrk mtype="seg" mid="116">Did I hear your phone number correctly? Is it %PHONE_NUMBER%? Say 'yes' or 'no'.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="116">¿Escuche tu número de teléfono correctamente? ¿Es %PHONE_NUMBER%? Di 'sí' o 'no'.</mrk></target>
+      </trans-unit>
+      <trans-unit id="101" resname="consult_confirmation_state" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>I can arrange for you to talk to a doctor by phone for just 44 dollars. Would you like me to set up a call?</source><seg-source><mrk mtype="seg" mid="117">I can arrange for you to talk to a doctor by phone for just 44 dollars. Would you like me to set up a call?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="117">Puedo arreglar que hables con un doctor por teléfono por solo 44 dólares. ¿Te gustaría que realizara una llamada?</mrk></target>
+      </trans-unit>
+      <trans-unit id="102" resname="promo_code_asked_state" restype="string" datatype="x-yaml" x-context="help_content">
+        <source>Do you have a special payment code? Say the five-digit access code you may have or say 'no'</source><seg-source><mrk mtype="seg" mid="118">Do you have a special payment code? Say the five-digit access code you may have or say 'no'</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="118">¿Tienes un código de pago especial? Di el código de acceso de cinco dígitos que puedas tener o di 'no'</mrk></target>
+      </trans-unit>
+      <trans-unit id="103" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GREETING_RETURNING">
+        <source>Great to hear from you again.</source><seg-source><mrk mtype="seg" mid="119">Great to hear from you again.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="119">Es bueno escuchar de ti otra vez.</mrk></target>
+      </trans-unit>
+      <trans-unit id="104" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GREETING_RETURNING">
+        <source>It's good to hear from you again.</source><seg-source><mrk mtype="seg" mid="120">It's good to hear from you again.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="120">Es bueno oír de ti otra vez.</mrk></target>
+      </trans-unit>
+      <trans-unit id="105" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GREETING_RETURNING">
+        <source>I missed you.</source><seg-source><mrk mtype="seg" mid="121">I missed you.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="121">Te extrañe.</mrk></target>
+      </trans-unit>
+      <trans-unit id="106" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GREETING_RETURNING">
+        <source>I've had you on my mind.</source><seg-source><mrk mtype="seg" mid="122">I've had you on my mind.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="122">Has estado en mi mente.</mrk></target>
+      </trans-unit>
+      <trans-unit id="107" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@INTRO_NOT_LINKED">
+        <source>They say an apple a day keeps the doctor away, but...</source><seg-source><mrk mtype="seg" mid="123">They say an apple a day keeps the doctor away, but...</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="123">Dicen que una manzana al día mantiene al doctor lejos, pero...</mrk></target>
+      </trans-unit>
+      <trans-unit id="108" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@INTRO_NOT_LINKED">
+        <source>It's my duty to give you sound advice, and...</source><seg-source><mrk mtype="seg" mid="124">It's my duty to give you sound advice, and...</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="124">Es mi deber darte buen consejo, y...</mrk></target>
+      </trans-unit>
+      <trans-unit id="109" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@INTRO_NOT_LINKED">
+        <source>I took an oath to give you sound advice, and...</source><seg-source><mrk mtype="seg" mid="125">I took an oath to give you sound advice, and...</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="125">Tome un juramente para darte buen consejo, y...</mrk></target>
+      </trans-unit>
+      <trans-unit id="111" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENER">
+        <source>That's okay. My feelings aren't hurt.</source><seg-source><mrk mtype="seg" mid="126">That's okay. My feelings aren't hurt.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="126">Está bien. Mis sentimientos no están heridos.</mrk></target>
+      </trans-unit>
+      <trans-unit id="112" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENER">
+        <source>That's OK. We've got work to do.</source><seg-source><mrk mtype="seg" mid="127">That's OK. We've got work to do.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="127">Está bien. Tenemos trabajo que hacer.</mrk></target>
+      </trans-unit>
+      <trans-unit id="113" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENER">
+        <source>That's OK. You have other things on your mind.</source><seg-source><mrk mtype="seg" mid="128">That's OK. You have other things on your mind.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="128">Está bien. Tienes otras cosas en la cabeza.</mrk></target>
+      </trans-unit>
+      <trans-unit id="114" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENER">
+        <source>That's okay. But you know I'm going to nag you about that next time. Just sayin'.</source><seg-source><mrk mtype="seg" mid="129">That's okay. But you know I'm going to nag you about that next time. Just sayin'.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="129">Está bien. Pero sabes que voy a molestarte por eso la próxima vez. Solo te aviso.</mrk></target>
+      </trans-unit>
+      <trans-unit id="115" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENER">
+        <source>That's okay. I'm happy to remind you about that later.</source><seg-source><mrk mtype="seg" mid="130">That's okay. I'm happy to remind you about that later.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="130">Está bien. Estoy feliz de recordarte eso después.</mrk></target>
+      </trans-unit>
+      <trans-unit id="116" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENING_TRANSITION">
+        <source>Let's begin.</source><seg-source><mrk mtype="seg" mid="131">Let's begin.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="131">Empecemos.</mrk></target>
+      </trans-unit>
+      <trans-unit id="117" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENING_TRANSITION">
+        <source>Let's get started.</source><seg-source><mrk mtype="seg" mid="132">Let's get started.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="132">Hay que empezar.</mrk></target>
+      </trans-unit>
+      <trans-unit id="118" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@OPENING_TRANSITION">
+        <source>Let's get into it.</source><seg-source><mrk mtype="seg" mid="133">Let's get into it.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="133">Hay que darle.</mrk></target>
+      </trans-unit>
+      <trans-unit id="121" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GENDER_ACK">
+        <source>Very good. Thank you.</source><seg-source><mrk mtype="seg" mid="134">Very good. Thank you.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="134">Muy bien. Gracias.</mrk></target>
+      </trans-unit>
+      <trans-unit id="122" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@GENDER_ACK">
+        <source>Got it. Making a note. Thanks.</source><seg-source><mrk mtype="seg" mid="135">Got it. Making a note. Thanks.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="135">Lo tengo. Haciendo una nota. Gracias.</mrk></target>
+      </trans-unit>
+      <trans-unit id="123" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_INTRO">
+        <source>OK.</source><seg-source><mrk mtype="seg" mid="136">OK.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="136">OK.</mrk></target>
+      </trans-unit>
+      <trans-unit id="124" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_INTRO">
+        <source>Alright.</source><seg-source><mrk mtype="seg" mid="137">Alright.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="137">Bien.</mrk></target>
+      </trans-unit>
+      <trans-unit id="125" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_INTRO">
+        <source>Moving along.</source><seg-source><mrk mtype="seg" mid="138">Moving along.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="138">Sigamos.</mrk></target>
+      </trans-unit>
+      <trans-unit id="126" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_INTRO">
+        <source>OK, here we go.</source><seg-source><mrk mtype="seg" mid="139">OK, here we go.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="139">Ok, aquí vamos.</mrk></target>
+      </trans-unit>
+      <trans-unit id="127" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>OK. You said</source><seg-source><mrk mtype="seg" mid="140">OK. You said</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="140">Ok. Tú dijiste</mrk></target>
+      </trans-unit>
+      <trans-unit id="128" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>Got it. You said</source><seg-source><mrk mtype="seg" mid="141">Got it. You said</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="141">Lo tengo. Tú dijiste</mrk></target>
+      </trans-unit>
+      <trans-unit id="129" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>Alright. You said</source><seg-source><mrk mtype="seg" mid="142">Alright. You said</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="142">Bueno. Tú dijiste</mrk></target>
+      </trans-unit>
+      <trans-unit id="130" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>Got it. I heard</source><seg-source><mrk mtype="seg" mid="143">Got it. I heard</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="143">Lo tengo. Escuché</mrk></target>
+      </trans-unit>
+      <trans-unit id="131" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>I got you. You said</source><seg-source><mrk mtype="seg" mid="144">I got you. You said</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="144">Te tengo. Tú dijiste</mrk></target>
+      </trans-unit>
+      <trans-unit id="132" resname="5" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOM_ACK">
+        <source>Gotcha. You said</source><seg-source><mrk mtype="seg" mid="145">Gotcha. You said</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="145">Te tengo. Tú dijiste</mrk></target>
+      </trans-unit>
+      <trans-unit id="133" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@MORE_SYMPTOMS_QUERY">
+        <source>Are there more symptoms you'd like to tell me about? Say yes...or no'</source><seg-source><mrk mtype="seg" mid="146">Are there more symptoms you'd like to tell me about? Say yes...or no'</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="146">¿Hay más síntomas de los que te gustaría contarme? Di sí...o no'</mrk></target>
+      </trans-unit>
+      <trans-unit id="134" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@MORE_SYMPTOMS_QUERY">
+        <source>Are there other symptoms I should know about? Say yes...or no'</source><seg-source><mrk mtype="seg" mid="147">Are there other symptoms I should know about? Say yes...or no'</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="147">¿Hay algún otro síntoma del que debería de saber? Di sí...o no'</mrk></target>
+      </trans-unit>
+      <trans-unit id="135" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@MORE_SYMPTOMS_QUERY">
+        <source>Any other symptoms? Say yes...or 'no'</source><seg-source><mrk mtype="seg" mid="148">Any other symptoms? Say yes...or 'no'</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="148">¿Algún otro síntoma? Di sí...o 'no'</mrk></target>
+      </trans-unit>
+      <trans-unit id="136" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_TRANSITION">
+        <source>I'm all ears. Tell me the next symptom.</source><seg-source><mrk mtype="seg" mid="149">I'm all ears. Tell me the next symptom.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="149">Soy todo oídos. Dime tu próximo síntoma.</mrk></target>
+      </trans-unit>
+      <trans-unit id="137" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_TRANSITION">
+        <source>OK, tell me the other symptom.</source><seg-source><mrk mtype="seg" mid="150">OK, tell me the other symptom.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="150">Ok, dime el otro síntoma.</mrk></target>
+      </trans-unit>
+      <trans-unit id="138" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@SYMPTOMS_TRANSITION">
+        <source>Go ahead, I'm listening.</source><seg-source><mrk mtype="seg" mid="151">Go ahead, I'm listening.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="151">Adelante, estoy escuchando.</mrk></target>
+      </trans-unit>
+      <trans-unit id="139" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@REFINEMENT_ACK">
+        <source>Got it, I heard</source><seg-source><mrk mtype="seg" mid="152">Got it, I heard</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="152">Lo tengo, escuché</mrk></target>
+      </trans-unit>
+      <trans-unit id="140" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@REFINEMENT_ACK">
+        <source>Alright. You said</source><seg-source><mrk mtype="seg" mid="153">Alright. You said</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="153">Bueno. Tú dijiste</mrk></target>
+      </trans-unit>
+      <trans-unit id="141" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@REFINEMENT_ACK">
+        <source>I see. Sounds like it's</source><seg-source><mrk mtype="seg" mid="154">I see. Sounds like it's</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="154">Ya veo. Suena como si</mrk></target>
+      </trans-unit>
+      <trans-unit id="142" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REFINEMENT">
+        <source>Almost done.</source><seg-source><mrk mtype="seg" mid="155">Almost done.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="155">Casi listo.</mrk></target>
+      </trans-unit>
+      <trans-unit id="143" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REFINEMENT">
+        <source>Stay with me now.</source><seg-source><mrk mtype="seg" mid="156">Stay with me now.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="156">Quédate conmigo.</mrk></target>
+      </trans-unit>
+      <trans-unit id="144" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REFINEMENT">
+        <source>Doing OK?</source><seg-source><mrk mtype="seg" mid="157">Doing OK?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="157">¿Todo bien?</mrk></target>
+      </trans-unit>
+      <trans-unit id="145" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REFINEMENT">
+        <source>I appreciate your patience.</source><seg-source><mrk mtype="seg" mid="158">I appreciate your patience.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="158">Aprecio tu paciencia</mrk></target>
+      </trans-unit>
+      <trans-unit id="146" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_RISKFACTOR">
+        <source>I see...</source><seg-source><mrk mtype="seg" mid="159">I see...</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="159">Ya veo...</mrk></target>
+      </trans-unit>
+      <trans-unit id="147" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_RISKFACTOR">
+        <source>Got it...</source><seg-source><mrk mtype="seg" mid="160">Got it...</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="160">Lo tengo...</mrk></target>
+      </trans-unit>
+      <trans-unit id="148" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_RISKFACTOR">
+        <source>Understood.</source><seg-source><mrk mtype="seg" mid="161">Understood.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="161">Entendido</mrk></target>
+      </trans-unit>
+      <trans-unit id="149" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_RISKFACTOR">
+        <source>Alright. Let’s see...</source><seg-source><mrk mtype="seg" mid="162">Alright. Let’s see...</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="162">Bueno. Veamos...</mrk></target>
+      </trans-unit>
+      <trans-unit id="150" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Let’s keep going</source><seg-source><mrk mtype="seg" mid="163">Let’s keep going</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="163">Sigamos</mrk></target>
+      </trans-unit>
+      <trans-unit id="151" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Thank you — let’s continue</source><seg-source><mrk mtype="seg" mid="164">Thank you — let’s continue</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="164">Gracias — continuemos</mrk></target>
+      </trans-unit>
+      <trans-unit id="153" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>I see — let’s move on</source><seg-source><mrk mtype="seg" mid="165">I see — let’s move on</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="165">Ya veo — sigamos</mrk></target>
+      </trans-unit>
+      <trans-unit id="155" resname="5" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Alright — let’s continue?</source><seg-source><mrk mtype="seg" mid="166">Alright — let’s continue?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="166">Bueno — ¿continuemos?</mrk></target>
+      </trans-unit>
+      <trans-unit id="156" resname="6" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Okay — let’s keep going</source><seg-source><mrk mtype="seg" mid="167">Okay — let’s keep going</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="167">Ok — sigamos</mrk></target>
+      </trans-unit>
+      <trans-unit id="159" resname="9" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_BRIDGE">
+        <source>Got it — let’s proceed</source><seg-source><mrk mtype="seg" mid="168">Got it — let’s proceed</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="168">Lo tengo — procedamos</mrk></target>
+      </trans-unit>
+      <trans-unit id="162" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>OK, here's what I can tell you about</source><seg-source><mrk mtype="seg" mid="169">OK, here's what I can tell you about</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="169">Ok, esto es de lo que te puedo hablar</mrk></target>
+      </trans-unit>
+      <trans-unit id="163" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Alright, here's what I can tell you about</source><seg-source><mrk mtype="seg" mid="170">Alright, here's what I can tell you about</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="170">Bueno, esto es de lo que te puedo hablar</mrk></target>
+      </trans-unit>
+      <trans-unit id="164" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>OK, here's what I know about</source><seg-source><mrk mtype="seg" mid="171">OK, here's what I know about</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="171">Ok, esto es lo que sé</mrk></target>
+      </trans-unit>
+      <trans-unit id="165" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Alright, here's what we know about</source><seg-source><mrk mtype="seg" mid="172">Alright, here's what we know about</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="172">Ok, esto es lo que sabemos</mrk></target>
+      </trans-unit>
+      <trans-unit id="166" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Let's see. Here's what we know about</source><seg-source><mrk mtype="seg" mid="173">Let's see. Here's what we know about</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="173">Veamos. Esto es lo que sabemos</mrk></target>
+      </trans-unit>
+      <trans-unit id="167" resname="5" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Let's see. This is what we know about</source><seg-source><mrk mtype="seg" mid="174">Let's see. This is what we know about</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="174">Veamos. Esto es lo que sabemos</mrk></target>
+      </trans-unit>
+      <trans-unit id="168" resname="6" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Got it. Here's what I can tell you about</source><seg-source><mrk mtype="seg" mid="175">Got it. Here's what I can tell you about</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="175">Lo tengo. Esto es de lo que te puedo hablar</mrk></target>
+      </trans-unit>
+      <trans-unit id="169" resname="7" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@CARE_OPTION_INTRO">
+        <source>Got it. Here's what I know about</source><seg-source><mrk mtype="seg" mid="176">Got it. Here's what I know about</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="176">Lo tengo. Esto es lo que sé</mrk></target>
+      </trans-unit>
+      <trans-unit id="170" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@APOLOGIES">
+        <source>Sorry, I didn't get that.</source><seg-source><mrk mtype="seg" mid="177">Sorry, I didn't get that.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="177">Perdón, no escuché eso.</mrk></target>
+      </trans-unit>
+      <trans-unit id="171" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@APOLOGIES">
+        <source>Sorry, I didn't understand.</source><seg-source><mrk mtype="seg" mid="178">Sorry, I didn't understand.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="178">Perdón, no entendí.</mrk></target>
+      </trans-unit>
+      <trans-unit id="172" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@APOLOGIES">
+        <source>Sorry, I'm not sure I understood you.</source><seg-source><mrk mtype="seg" mid="179">Sorry, I'm not sure I understood you.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="179">Perdón, no estoy seguro de que te entendí.</mrk></target>
+      </trans-unit>
+      <trans-unit id="173" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@APOLOGIES">
+        <source>My apologies, but I didn't understand that.</source><seg-source><mrk mtype="seg" mid="180">My apologies, but I didn't understand that.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="180">Disculpa, pero no entendí eso.</mrk></target>
+      </trans-unit>
+      <trans-unit id="174" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@APOLOGIES">
+        <source>I better get my ears checked.</source><seg-source><mrk mtype="seg" mid="181">I better get my ears checked.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="181">Mejor me voy a revisar los oídos.</mrk></target>
+      </trans-unit>
+      <trans-unit id="175" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Sure, happy to repeat myself.</source><seg-source><mrk mtype="seg" mid="182">Sure, happy to repeat myself.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="182">Seguro, estoy feliz de repetir.</mrk></target>
+      </trans-unit>
+      <trans-unit id="176" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Okay, I'll repeat.</source><seg-source><mrk mtype="seg" mid="183">Okay, I'll repeat.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="183">Ok, repetiré.</mrk></target>
+      </trans-unit>
+      <trans-unit id="177" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>No problem, I'll repeat myself.</source><seg-source><mrk mtype="seg" mid="184">No problem, I'll repeat myself.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="184">No hay problema, repetiré.</mrk></target>
+      </trans-unit>
+      <trans-unit id="178" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Happy to repeat myself.</source><seg-source><mrk mtype="seg" mid="185">Happy to repeat myself.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="185">Estoy feliz de repetir.</mrk></target>
+      </trans-unit>
+      <trans-unit id="179" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Of course, I'll repeat myself.</source><seg-source><mrk mtype="seg" mid="186">Of course, I'll repeat myself.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="186">Por supuesto, repetiré.</mrk></target>
+      </trans-unit>
+      <trans-unit id="180" resname="5" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>My pleasure. I will repeat myself.</source><seg-source><mrk mtype="seg" mid="187">My pleasure. I will repeat myself.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="187">Un placer. Repetiré.</mrk></target>
+      </trans-unit>
+      <trans-unit id="181" resname="6" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Absolutely. I'll repeat myself now.</source><seg-source><mrk mtype="seg" mid="188">Absolutely. I'll repeat myself now.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="188">Absolutamente. Repetiré ahora.</mrk></target>
+      </trans-unit>
+      <trans-unit id="182" resname="7" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Alright, I'll repeat myself.</source><seg-source><mrk mtype="seg" mid="189">Alright, I'll repeat myself.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="189">Bueno, repetiré.</mrk></target>
+      </trans-unit>
+      <trans-unit id="183" resname="8" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPEAT">
+        <source>Yes, will repeat myself now.</source><seg-source><mrk mtype="seg" mid="190">Yes, will repeat myself now.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="190">Sí, repetiré ahora.</mrk></target>
+      </trans-unit>
+      <trans-unit id="184" resname="0" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPROMPT">
+        <source>Sorry I didn't hear anything.</source><seg-source><mrk mtype="seg" mid="191">Sorry I didn't hear anything.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="191">Perdón, no escuché nada.</mrk></target>
+      </trans-unit>
+      <trans-unit id="185" resname="1" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPROMPT">
+        <source>Are you still there?</source><seg-source><mrk mtype="seg" mid="192">Are you still there?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="192">¿Sigues ahí?</mrk></target>
+      </trans-unit>
+      <trans-unit id="186" resname="2" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPROMPT">
+        <source>Hello? Still there?</source><seg-source><mrk mtype="seg" mid="193">Hello? Still there?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="193">¿Hola? ¿Sigues ahí?</mrk></target>
+      </trans-unit>
+      <trans-unit id="187" resname="3" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPROMPT">
+        <source>I hear crickets. Are you still there?</source><seg-source><mrk mtype="seg" mid="194">I hear crickets. Are you still there?</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="194">Oigo grillos. ¿Sigues ahí?</mrk></target>
+      </trans-unit>
+      <trans-unit id="188" resname="4" restype="string" datatype="x-yaml" x-context="ack_bridge_samples@ACK_REPROMPT">
+        <source>Let's try that again.</source><seg-source><mrk mtype="seg" mid="195">Let's try that again.</mrk></seg-source>
+        <target state="translated"><mrk mtype="seg" mid="195">Intentemos eso de nuevo</mrk></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
