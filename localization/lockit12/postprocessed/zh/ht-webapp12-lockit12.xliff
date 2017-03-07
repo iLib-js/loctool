@@ -382,15 +382,15 @@
     <body>
       <trans-unit id="142" resname="Billed monthly. Cancel anytime" restype="string" datatype="javascript">
         <source>Billed monthly. Cancel anytime</source>
-        <target state="translated">按月计费。随时取消</target>
+        <target state="accepted">按月付款，随时取消</target>
       </trans-unit>
       <trans-unit id="143" resname="Your total this year" restype="string" datatype="javascript">
         <source>Your total this year</source>
-        <target state="translated">您今年的总额</target>
+        <target state="accepted">您本年总计</target>
       </trans-unit>
       <trans-unit id="144" resname="Billed annually. Cancel anytime" restype="string" datatype="javascript">
         <source>Billed annually. Cancel anytime</source>
-        <target state="translated">按年计费。随时取消</target>
+        <target state="accepted">按年付款，随时取消</target>
       </trans-unit>
     </body>
   </file>
