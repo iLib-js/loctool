@@ -93,7 +93,7 @@
       </trans-unit>
       <trans-unit id="18" resname="r463563763" restype="string" datatype="ruby">
         <source>%{bold_start}"HealthTap"%{bold_end} or the %{bold_start}"Apps"%{bold_end} means %{healthtap_link}https://www.healthtap.com%{link_end} and related web sites and HealthTap's mobile applications, including HealthTap, HealthTap for Doctors, Talk to Docs (%{nuance_link}other terms%{link_end} apply), HealthTap Prime (%{prime_link}other terms%{link_end} apply), HealthTap Concierge (%{concierge_link}other terms%{link_end} apply) and any other Apps we release.</source>
-        <target state="translated">%{bold_start}"HealthTap"%{bold_end} o las %{bold_start}"Aplicaciones"%{bold_end} significan %{healthtap_link}https://www.healthtap.com%{link_end} y sitios web relacionados y aplicaciones móviles de HealthTap, incluyendo a HealthTap, HealthTap for Doctors, Talk to Docs (aplican %{nuance_link}otros términos%{link_end}), HealthTap Prime (aplican %{prime_link}otros términos%{link_end}), HealthTap Concierge (aplican %{concierge_link}otros términos%{link_end} apply) y cualquier otra Aplicación que lancemos.</target>
+        <target state="translated">%{bold_start}"HealthTap"%{bold_end} o las %{bold_start}"Aplicaciones"%{bold_end} significan %{healthtap_link}https://www.healthtap.com%{link_end} y sitios web relacionados y aplicaciones móviles de HealthTap, incluyendo a HealthTap, HealthTap for Doctors, Talk to Docs (aplican %{nuance_link}otros términos%{link_end}), HealthTap Prime (aplican %{prime_link}otros términos%{link_end}), HealthTap Concierge (aplican %{concierge_link}otros términos%{link_end}) y cualquier otra Aplicación que lancemos.</target>
       </trans-unit>
       <trans-unit id="19" resname="r541770064" restype="string" datatype="ruby">
         <source>%{bold_start}"Company," "we," "us,"%{bold_end} or %{bold_start}"our"%{bold_end} means HealthTap Inc., a Delaware corporation, and any other companies that are subsidiaries and affiliates of HealthTap Inc. and professional corporations to which HealthTap provides administrative services, including, without limitation, HealthTap Medical Group, P.C., a California professional corporation, HealthTap Medical Group, P.C., a Colorado professional corporation, HealthTap Medical Group, P.C., a Massachusetts professional corporation, HealthTap Medical Group, P.C., a Michigan professional service corporation, and HealthTap Medical Group, P.C., a New Jersey professional service corporation.</source>
@@ -113,11 +113,11 @@
       </trans-unit>
       <trans-unit id="23" resname="r688534621" restype="string" datatype="ruby">
         <source>%{bold_start}"Medical Expert"%{bold_end}means an individual accepted to participate in the HealthTap Medical Expert Community and who participates on the Apps or interacts with others on orthrough the Apps, or other specialists or professionals who participate on HealthTap in their capacity as experts.</source>
-        <target state="translated">%{bold_start}"Experto Médico"%{bold_end} significa que un individuo aceptó participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones u otros especialistas o profesionales que participen en HealthTap en su cualidad de expertos.</target>
+        <target state="translated">%{bold_start}"Experto Médico"%{bold_end} significa que un individuo aceptó participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones, u otros especialistas o profesionistas que participan en HealthTap en su capacidad de expertos.</target>
       </trans-unit>
       <trans-unit id="24" resname="r454770434" restype="string" datatype="ruby">
         <source>If there is a conflict between these TOU and terms posted for a specific feature or part, the latter terms apply to your use of that feature or part.%{bold_start} These Terms of Use require the use of arbitration to resolve disputes and also limit the remedies available to you in the event of a dispute%{bold_end}.</source>
-        <target state="translated">Si hay un conflicto entre estos TDU y los términos publicados para una función o parte específica, los últimos términos aplican a tu uso de la función o parte.%{bold_start} Estos Términos de Uso requieren el uso de conciliación para resolver disputas y limitar los remedios disponibles para usted en el evento de una dipusta%{bold_end}.</target>
+        <target state="translated">Si hay un conflicto entre estos TDU y los términos publicados para una función o parte específica, los últimos términos aplican a tu uso de la función o parte.%{bold_start} Estos Términos de Uso requieren el uso de conciliación para resolver disputas y limitar los remedios disponibles para usted en el evento de una disputa%{bold_end}.</target>
       </trans-unit>
       <trans-unit id="25" resname="r761588926" restype="string" datatype="ruby">
         <source>%{link_start}Additional terms apply to HealthTap Prime%{link_end}, where care is available.</source>
@@ -149,7 +149,7 @@
       </trans-unit>
       <trans-unit id="32" resname="r117938572" restype="string" datatype="ruby">
         <source>You agree that you will not upload or transmit any communications or content of any type that infringes or violates any rights of any party. The personal information you submit to HealthTap is governed by the %{privacy_link}, the terms of which shall govern in the event of any inconsistency with this Agreement.</source>
-        <target state="translated">Usted acepta que no subirá o transmitirá ninguna comunicación o contenido de cualquier tipo que infrinja o viole los derechos de cualquier parte. La información personal que presente a HealthTap está regida por el %{privacy_link}, los términos del cual regirán en el evento de cualquier inconsitencia con este Acuerdo.</target>
+        <target state="translated">Usted acepta que no subirá o transmitirá ninguna comunicación o contenido de cualquier tipo que infrinja o viole los derechos de cualquier parte. La información personal que presente a HealthTap está regida por el %{privacy_link}, los términos del cual regirán en el evento de cualquier inconsistencia con este Acuerdo.</target>
       </trans-unit>
       <trans-unit id="33" resname="r221832601" restype="string" datatype="ruby">
         <source>If you are a member you agree to the %{member_link}Member Submission Terms and Policies%{link_end}. If you are an expert you agree to the %{submission_link}Expert Submission Terms and Policies%{link_end}.</source>
@@ -177,7 +177,7 @@
       </trans-unit>
       <trans-unit id="39" resname="r799451960" restype="string" datatype="ruby">
         <source>You will receive compensation for participating in HealthTap Prime and Concierge according to the %{prime_link}Prime Additional Terms%{link_end}and %{concierge_link}Concierge Additional Terms%{link_end} and related agreements, which are incorporated herein by reference.</source>
-        <target state="translated">Usted recibirá compensación por participar en HealthTap Prime y Concierge de acuerdo con los %{prime_link}Términos Adicionales de Prime%{link_end}y %{concierge_link}Términos Adicionales de Concierge%{link_end} y acuerdos relacionados, los cuales están incorporados a continuación por referencia</target>
+        <target state="translated">Usted recibirá compensación por participar en HealthTap Prime y Concierge de acuerdo con los %{prime_link}Términos Adicionales de Prime%{link_end} y %{concierge_link}Términos Adicionales de Concierge%{link_end} y acuerdos relacionados, los cuales están incorporados a continuación por referencia.</target>
       </trans-unit>
       <trans-unit id="40" resname="r1010847074" restype="string" datatype="ruby">
         <source>%{bold_start}"Access Method"%{bold_end} means a direct access method, such as through a HyperText Transfer Protocol ("HTTP") that is provided by NUANCE and is used by LICENSEE to access the Service from the LICENSEE Product.</source>
@@ -265,7 +265,7 @@
     <body>
       <trans-unit id="58" resname="r53097884" restype="string" datatype="ruby">
         <source>...[HealthTap's] ecosystem of the doctors and peer review are how [it creates] a transparency..., a rating system..., and a learning system, ...to create a place where people can manage their health from query-to-cure.</source>
-        <target state="translated">...el ecosistema de [HealthTap] de doctores y revisión por pares es cómo [crea] una transparencia..., un sistema de calificaciones... y un sistema de aprendizaje, ...para crear un lugar donde la gente pueda administrar su salud de duda a cura.</target>
+        <target state="accepted">...el ecosistema de HealthTap de doctores y de evaluación entre sus pares es cómo se crea transparencia..., un sistema de calificaciones... y un sistema de aprendizaje, ...que genera un lugar donde la gente puede administrar su propia salud desde la duda a la sanación.</target>
       </trans-unit>
       <trans-unit id="59" resname="r471419186" restype="string" datatype="ruby">
         <source>You Can Now Download an Artificial Intelligence Doctor</source>
@@ -321,7 +321,7 @@
     <body>
       <trans-unit id="69" resname="r786893194" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark} — your personal %{ai_serif}-powered "physician"</source>
-        <target state="translated">Dr. %{ai_trademark} — tu "médico" personal impulsado por %{ai_serif}</target>
+        <target state="translated">Dr. %{ai_trademark} — tu "médico" personal propulsado por %{ai_serif}</target>
       </trans-unit>
       <trans-unit id="70" resname="r655383491" restype="string" datatype="ruby">
         <source>Based on your symptoms, Dr. %{ai_trademark} routes or "triages" you to the right level of care at the right time. By conducting an interactive conversation, Dr. %{ai_trademark} instantaneously translates concerns about symptoms into a path to feeling good.</source>
@@ -333,7 +333,7 @@
     <body>
       <trans-unit id="71" resname="r494573058" restype="string" datatype="ruby">
         <source>We’ve built the world’s first Health Operating System (HOPES&amp;trade;), powering the delivery of world-class healthcare, from Query-to-Cure</source>
-        <target state="translated">Hemos construido el primer Sistema Operativo de Salud del mundo (HOPES&amp;trade;), que impulsa la entrega de atención a la salud de clase mundial, de Duda a Cura.</target>
+        <target state="translated">Hemos construido el primer Sistema Operativo de Salud del mundo (HOPES&amp;trade;), que propulsa la entrega de atención a la salud de clase mundial, de Duda a Cura.</target>
       </trans-unit>
     </body>
   </file>
@@ -341,7 +341,7 @@
     <body>
       <trans-unit id="72" resname="r808842909" restype="string" datatype="ruby">
         <source>Curated by doctors to keep you&lt;br/&gt;informed on current events in medicine</source>
-        <target state="translated">Curado por doctores para mantenerte&lt;br/&gt;informado en los eventos actuales de la medicina</target>
+        <target state="translated">Atendido por doctores para mantenerte&lt;br/&gt;informado en los eventos actuales de la medicina</target>
       </trans-unit>
       <trans-unit id="73" resname="r691446454" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark}, your personal %{ai_serif}-powered "physician", trained by doctors, translates your symptoms into personalized, doctor-recommended courses of action.</source>
@@ -1547,7 +1547,7 @@
     <body>
       <trans-unit id="333" resname="r620205649" restype="string" datatype="ruby">
         <source>Dr. %{ai_trademark} is an %{ai_serif}-powered personal "physician", trained by HealthTap’s network of more than 105,000 doctors, incorporates both context and clinical expertise of doctors who have helped triage hundreds of millions of patients worldwide to right levels of doctor-recommended care. Just like a sympathetic human physician, Dr. %{ai_trademark} converses with the user to understand their current complaints or concerns and uses the user’s health profile to compute the probable causes of their symptoms.</source>
-        <target state="translated">Dr. %{ai_trademark} es un "médico" personal impulsado por %{ai_serif}, entrenado por la red de más de 105,000 doctores de HealthTap, que incorpora contexto y destreza clínica  de los doctores que han ayudado a hacer triage a cientos de millones de pacientes alrededor del mundo a los niveles adecuados de atención recomendada por doctores. Justo como un comprensivo médico humano, Dr. %{ai_trademark} charla con el usuario para entender sus quejas o preocupaciones actuales, y usa el perfil de salud del usuario para computar las causas probables de sus síntomas.</target>
+        <target state="translated">Dr. %{ai_trademark} es un "médico" personal propulsado por %{ai_serif}, entrenado por la red de más de 105,000 doctores de HealthTap, que incorpora contexto y destreza clínica  de los doctores que han ayudado a hacer triage a cientos de millones de pacientes alrededor del mundo a los niveles adecuados de atención recomendada por doctores. Justo como un comprensivo médico humano, Dr. %{ai_trademark} charla con el usuario para entender sus quejas o preocupaciones actuales, y usa el perfil de salud del usuario para computar las causas probables de sus síntomas.</target>
       </trans-unit>
       <trans-unit id="334" resname="r289095764" restype="string" datatype="ruby">
         <source>New "Doctor %{ai_trademark}" instantaneously translates symptoms into a path to feeling good</source>
@@ -1579,7 +1579,7 @@
     <body>
       <trans-unit id="338" resname="r959180041" restype="string" datatype="ruby">
         <source>Processor Declined</source>
-        <target state="translated">Procesador Rechazado</target>
+        <target state="translated">Rechazada por Procesador</target>
       </trans-unit>
     </body>
   </file>
@@ -1659,7 +1659,7 @@
     <body>
       <trans-unit id="350" resname="Billed monthly. Cancel anytime" restype="string" datatype="javascript">
         <source>Billed monthly. Cancel anytime</source>
-        <target state="translated">La facturación es mensual y puedes cancelar en cualquier momento.</target>
+        <target state="translated">Facturado mensualmente. Cancela en cualquier momento</target>
       </trans-unit>
       <trans-unit id="351" resname="Your total this year" restype="string" datatype="javascript">
         <source>Your total this year</source>
@@ -1927,7 +1927,7 @@
       </trans-unit>
       <trans-unit id="401" resname="r288766811" restype="string" datatype="x-haml">
         <source>This Terms of Use (or "TOU") is an agreement between you and HealthTap, Inc. ("HealthTap"). There are rules you agree to follow when using our mobile applications and website(s) (the "Apps"), including when you ask questions and when you view or input content on or into the Apps.</source>
-        <target state="translated">Estos Términos de Uso (o “TDU”) es un acuerdo entre usted y HealthTap, Inc("HealthTap").). Hay reglas que acepta seguir cuando use nuestras aplicaciones móviles y sitio(s) web (las “Aplicaciones”), incluyendo cuando hace preguntas y cuando ve o ingresa contenido en o a las Aplicaciones.</target>
+        <target state="translated">Estos Términos de Uso (o “TDU”) es un acuerdo entre tú y HealthTap, Inc. ("HealthTap").). Hay reglas que aceptas seguir cuando use nuestras aplicaciones móviles y sitio(s) web (las “Aplicaciones”), incluyendo cuando hace preguntas y cuando ve o ingresa contenido en o a las Aplicaciones.</target>
       </trans-unit>
       <trans-unit id="402" resname="r803803940" restype="string" datatype="x-haml">
         <source>Additional terms govern your use of HealthTap Prime and HealthTap Concierge.</source>
@@ -1939,7 +1939,7 @@
       </trans-unit>
       <trans-unit id="404" resname="r934381021" restype="string" datatype="x-haml">
         <source>HealthTap is designed to support the health decisions and choices that you make. These decisions and choices are yours, and we believe that you are the best decision maker about your health and that these decisions should be made in connection with the advice you receive within a formal doctor-patient relationship. Always use common sense when making health decisions. HealthTap cannot make decisions for you. We can help you find good health information and, where available and appropriate, connect with doctors for care via HealthTap Prime or HealthTap Concierge or for in-person care.</source>
-        <target state="translated">HealthTap está diseñada para apoyar las decisiones y elecciones de salud que usted haga. Estas decisiones y elecciones son suyas, y creemos que usted es el mejor tomador de decisiones en lo que respecta a su salud, y que estas decisiones deben tomarse en conexión con el consejo que reciba dentro de una relación médico - paciente formal. Siempre use el sentido común cuando tome decisiones de salud. HealthTap no puede tomar decisiones por usted. Podemos ayudarle a encontrar buena información de salud y, donde sea disponible y apropiado, conectarlo con doctores para atención a través de HealthTap Prime o HealthTap Concierge o para atención en persona.</target>
+        <target state="translated">HealthTap está diseñada para apoyar las decisiones y elecciones de salud que hagas. Estas decisiones y elecciones son tuyas, y creemos que eres es el mejor tomador de decisiones en lo que respecta a tu salud, y que estas decisiones deben tomarse en conexión con el consejo que recibas dentro de una relación médico - paciente formal. Siempre usa el sentido común cuando tomes decisiones de salud. HealthTap no puede tomar decisiones por ti. Podemos ayudarte a encontrar buena información de salud y, donde sea disponible y apropiado, conectarte con doctores para atención a través de HealthTap Prime o HealthTap Concierge o para atención en persona.</target>
       </trans-unit>
       <trans-unit id="405" resname="r359415925" restype="string" datatype="x-haml">
         <source>On HealthTap Prime and Concierge you can obtain care (if you are located in a state where such service is available). This TOU applies to HealthTap. Additional terms apply to HealthTap Prime and HealthTap Concierge.</source>
@@ -1951,11 +1951,11 @@
       </trans-unit>
       <trans-unit id="407" resname="r591932131" restype="string" datatype="x-haml">
         <source>Whenever we use the words "your physician" or "your doctor" or "healthcare provider" or similar words on HealthTap, including in these Terms of Use, we mean your personal doctor with whom you have of an actual, mutually acknowledged, doctor-patient relationship (or the same kind of formal, real-world relationship between you and your personal professional healthcare provider) within the United States. Medical Experts on HealthTap are not "your" doctor, physician, or healthcare provider. When you participate in a Virtual Consult on HealthTap Prime, you understand and agree that Medical Experts on HealthTap Prime are not your Primary Care Physician and you agree not to use HealthTap Prime as a substitute for interactions with your Primary Care Physician. Where available to you, you may use HealthTap Concierge for Virtual Consults with your existing doctor(s).</source>
-        <target state="translated">Siempre que usemos las palabras “su médico” o “su doctor” o “proveedor de atención a la salud” o palabras similares en HealthTap, incluyendo en estos Términos de Uso, nos referimos a su doctor personal con quien tiene una real relación médico – paciente real, mutuamente aceptada (o el mismo tipo de relación formal en el mundo real entre usted y su proveedor profesional de atención a la salud personal) dentro de los Estados Unidos. Expertos Médicos en HealthTap no son “su” doctor, médico o proveedor de atención a la salud. Cuando usted participa en una Consulta Virtual en HealthTap Prime, entiende y acepta que los Expertos Médicos en HealthTap Prime no son su Médico de Atención Primaria y acepta no usar HealthTap Prime como un sustituto para interacciones con su Médico de Atención Primaria. Donde sea disponible para usted, puede usar HealthTap Concierge para Consultas Virtuales con su(s) doctor(es) existentes.</target>
+        <target state="translated">Siempre que usemos las palabras “tu médico” o “tu doctor” o “proveedor de atención a la salud” o palabras similares en HealthTap, incluyendo en estos Términos de Uso, nos referimos a tu doctor personal con quien tienes una relación médico – paciente real, mutuamente aceptada (o el mismo tipo de relación formal en el mundo real entre tú y tu proveedor profesional de atención a la salud personal) dentro de los Estados Unidos. Los Expertos Médicos en HealthTap no son “tu” doctor, médico o proveedor de atención a la salud. Cuando participas en una Consulta Virtual en HealthTap Prime, entiendes y aceptas que los Expertos Médicos en HealthTap Prime no son tu Médico de Atención Primaria y aceptas no usar HealthTap Prime como un sustituto para interacciones con tu Médico de Atención Primaria. Donde sea disponible para ti, puedes usar HealthTap Concierge para Consultas Virtuales con tu(s) doctor(es) existentes.</target>
       </trans-unit>
       <trans-unit id="408" resname="r264611700" restype="string" datatype="x-haml">
         <source>Interactions on HealthTap do not constitute the practice of medicine and consultations cannot be used for providing a formal medical diagnosis, for a physical examination, for obtaining prescriptions, or for treatment. Do not use HealthTap or Content or Services to diagnose or treat a medical condition. Use HealthTap Prime or Concierge (where appropriate and permitted) or see your doctor in person if you are looking for a personal medial evaluation, diagnosis, or prescription.</source>
-        <target state="translated">Interacciones en HealthTap no constituyen la práctica de la medicina y las consultas no pueden ser usadas para brindar un diagnóstico médico formal, para una exploración física, para obtener recetas, o para tratamiento. No use HealthTap o Contenido o Servicios para diagnosticar o tratar una condición médica. Use HealthTap Prime o Concierge (donde apropiado y permitido) o vea a un doctor en persona si estás buscando una evaluación médica personal, diagnóstico, o recetas.</target>
+        <target state="translated">Interacciones en HealthTap no constituyen la práctica de la medicina y las consultas no pueden ser usadas para brindar un diagnóstico médico formal, para una exploración física, para obtener recetas, o para tratamiento. No uses HealthTap o Contenido o Servicios para diagnosticar o tratar una condición médica. Usa HealthTap Prime o Concierge (donde apropiado y permitido) o ve a un doctor en persona si estás buscando una evaluación médica personal, diagnóstico, o recetas.</target>
       </trans-unit>
       <trans-unit id="409" resname="r632305463" restype="string" datatype="x-haml">
         <source>HealthTap is a Business Associate of health care professionals under the federal health care privacy and security law known as HIPAA. Your personal information will be stored in a secure manner. HealthTap has implemented various encryption and security technologies and procedures to protect, from unauthorized access, your personal information which is stored in our computer systems. We also maintain standard physical and electronic procedural safeguards that limit access to your personal information to our employees (or people working on our behalf and under confidentiality agreements) who, through the course of standard business activities, need to access your personal information. Full access to the Apps is enabled only by usernames and passwords. You are fully and solely responsible for any and all use of the Apps using your username and password. We reserve the right to revoke or deactivate your username and password at any time.</source>
@@ -2067,11 +2067,11 @@
       </trans-unit>
       <trans-unit id="436" resname="r854392394" restype="string" datatype="x-haml">
         <source>You understand that if your medical condition warrants emergency help, you will be directed to the nearest local hospital emergency department or emergency room.</source>
-        <target state="translated">Usted entiende que, si su condición médica justifica ayuda de emergencia, será dirigido al departamento de urgencias o sala de urgencias del hospital local más cercano.</target>
+        <target state="translated">Usted entiende que, si su condición médica justifica ayuda de emergencia, será dirigido al departamento de emergencias o sala de emergencias del hospital local más cercano.</target>
       </trans-unit>
       <trans-unit id="437" resname="r976039807" restype="string" datatype="x-haml">
         <source>You understand that the services offered by HealthTap, Inc. are not health insurance, are not a substitute for health insurance, and you agree not to use such services as health insurance. HealthTap Concierge is designed for use independent of health insurance as an out-of-pocket cost service and that associated fees may not qualify for insurance or HSA or similar reimbursement.</source>
-        <target state="translated">Usted entiende que los servicios ofrecidos por HealthTap, Inc. no son seguro médico, no son sustituto para seguro médico, y acepta no usar dichos servicios como seguro médico. HealthTap Concierge está diseñado para uso independiente de seguro médico como un servicio con costo directo de bolsillo y qué cuotas asociadas pueden no calificar para reembolso de seguro o HSA o similar.</target>
+        <target state="translated">Usted entiende que los servicios ofrecidos por HealthTap, Inc. no son seguro médico, no son sustitutos para seguro médico, y acepta no usar dichos servicios como seguro médico. HealthTap Concierge está diseñado para uso independiente de seguro médico como un servicio con costo directo de bolsillo y qué cuotas asociadas pueden no calificar para reembolso de seguro o HSA o similar.</target>
       </trans-unit>
       <trans-unit id="438" resname="r375704868" restype="string" datatype="x-haml">
         <source>HealthTap, Inc. is the provider of certain administrative and technical services to doctors using the services and does not provide professional medical services.</source>
@@ -2139,7 +2139,7 @@
       </trans-unit>
       <trans-unit id="454" resname="r610492878" restype="string" datatype="x-haml">
         <source>I agree to consult with my primary care physician or specialist in person for follow-up treatment, and/or seek treatment, if necessary at a local hospital emergency department, in the event that the diagnosis or treatment provided via the virtual consult using HealthTap Concierge does not resolve the medical issue for which the consultation was sought.</source>
-        <target state="translated">Yo acepto consultar con mi médico de atención primaria o especialista en persona para tratamiento de seguimiento, y/o para buscar tratamiento, si fuera necesario en un departamento de urgencias de un hospital local, en el evento de que el diagnóstico o tratamiento proporcionado a través de la consulta virtual usando HealthTap Concierge no resuelva el problema médico por el cual se buscó la consulta.</target>
+        <target state="translated">Yo acepto consultar con mi médico de atención primaria o especialista en persona para tratamiento de seguimiento, y/o para buscar tratamiento, si fuera necesario en un departamento de emergencias de un hospital local, en el evento de que el diagnóstico o tratamiento proporcionado a través de la consulta virtual usando HealthTap Concierge no resuelva el problema médico por el cual se buscó la consulta.</target>
       </trans-unit>
       <trans-unit id="455" resname="r5909741" restype="string" datatype="x-haml">
         <source>I understand that, by consenting to live virtual consults performed by video or audio or asynchronous inbox consults, my physician may communicate medical information concerning me to physicians and other health care practitioners located in other parts of the state/jurisdiction or outside the state/jurisdiction.</source>
@@ -2519,7 +2519,7 @@
     <body>
       <trans-unit id="522" resname="r46724211" restype="string" datatype="x-haml">
         <source>Did you miss our last email? We’ve noticed that you haven’t completed your tutorial for SmartHealth powered by HealthTap yet.</source>
-        <target state="translated">¿No viste nuestro último correo electrónico? Nos hemos dado cuenta de que no aún has completado tu tutorial para SmartHealth impulsado por HealthTap.</target>
+        <target state="translated">¿No viste nuestro último correo electrónico? Nos hemos dado cuenta de que no aún has completado tu tutorial para SmartHealth propulsado por HealthTap.</target>
       </trans-unit>
       <trans-unit id="523" resname="r992067617" restype="string" datatype="x-haml">
         <source>This is your second reminder.</source>
@@ -2543,7 +2543,7 @@
     <body>
       <trans-unit id="527" resname="r860757861" restype="string" datatype="x-haml">
         <source>We’ve noticed that you haven’t completed your tutorial for SmartHealth powered by HealthTap yet.</source>
-        <target state="translated">Nos hemos dado cuenta de que no aún has completado tu tutorial para SmartHealth impulsado por HealthTap.</target>
+        <target state="translated">Nos hemos dado cuenta de que no aún has completado tu tutorial para SmartHealth propulsado por HealthTap.</target>
       </trans-unit>
       <trans-unit id="529" resname="r181694603" restype="string" datatype="x-haml">
         <source>If you’d prefer to do it later, you can access the tutorial any time by following these steps:</source>

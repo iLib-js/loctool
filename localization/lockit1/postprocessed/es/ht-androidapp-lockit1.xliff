@@ -12510,7 +12510,7 @@
       </trans-unit>
       <trans-unit id="2836" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="2">
         <source>{user_first_name}, would you like to send doctors a secure message?\u00a0›</source>
-        <target>{user_first_name}, ¿te gustaría enviarle a docotres un mensaje seguro?\u00a0›</target>
+        <target>{user_first_name}, ¿te gustaría enviarle a doctores un mensaje seguro?\u00a0›</target>
       </trans-unit>
       <trans-unit id="2837" resname="question_prime_with_user_name" restype="array" datatype="x-android-resource" extype="3">
         <source>{user_first_name}, would you like to video chat with a doctor?\u00a0›</source>

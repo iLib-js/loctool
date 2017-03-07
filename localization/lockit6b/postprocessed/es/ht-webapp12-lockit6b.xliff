@@ -337,7 +337,7 @@
     <body>
       <trans-unit id="1276" resname="HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}" restype="string" datatype="javascript">
         <source>HealthTap is for informational purposes only.           Content on HealthTap (including answers) should not be used for medical advice,           diagnosis, or treatment, and interactions on HealthTap do not create a           doctor-patient relationship.  Never disregard or delay seeking professional medical advice           in person because of anything on HealthTap. Call your doctor or 911 (in the U.S.) if you           think you may have a medical emergency. See {link_tag_start}Additional Information &amp;rsaquo;{link_tag_end}</source>
-        <target state="translated">>HealthTap es sólo para fines informativos.           El contenido en HealthTap &#40;incluyendo las respuestas&#41; no deberán usarse para consejo,           diagnóstico o tratamiento médico, y las interacciones en HealthTap no crean una           relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría médica profesional           en persona por nada que veas en HealthTap. Llama a tu doctor o al 911 &#40;en los EE.UU.&#41; si           crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
+        <target state="translated">HealthTap es sólo para fines informativos.           El contenido en HealthTap &#40;incluyendo las respuestas&#41; no deberán usarse para consejo,           diagnóstico o tratamiento médico, y las interacciones en HealthTap no crean una           relación médico-paciente.  Nunca hagas caso omiso o te atrases en buscar asesoría médica profesional           en persona por nada que veas en HealthTap. Llama a tu doctor o al 911 &#40;en los EE.UU.&#41; si           crees que puedas tener una emergencia médica. Ver {link_tag_start}Información Adicional &amp;rsaquo;{link_tag_end}</target>
       </trans-unit>
     </body>
   </file>
@@ -389,7 +389,7 @@
       </trans-unit>
       <trans-unit id="1346" resname="Your password was updated. Going forward, please use this to log in" restype="string" datatype="javascript">
         <source>Your password was updated. Going forward, please use this to log in</source>
-        <target>Tu contraseña fue actualizada. En adelante, por favor, utiliza esta para iniciar sesión.</target>
+        <target>Tu contraseña fue actualizada. En adelante, por favor, utiliza ésta para iniciar sesión.</target>
       </trans-unit>
       <trans-unit id="1347" resname="Couldn&apos;t find the answer I was looking for" restype="string" datatype="javascript">
         <source>Couldn't find the answer I was looking for</source>
@@ -1817,11 +1817,11 @@
       </trans-unit>
       <trans-unit id="2262" resname="r992296240" restype="string" datatype="x-haml">
         <source>Do not post material that infringes on the copyrights or other intellectual property rights of others or on the privacy or publicity rights of others; do not post impersonating another person or entity.</source>
-        <target>No publiques materiales que este en violación de derechos de autor u otros derechos de propiedad intelectual o drechos de privacidad o publicidad; no publiques haciendote pasar por otra persona u entidad.</target>
+        <target>No publiques materiales que este en violación de derechos de autor u otros derechos de propiedad intelectual o drechos de privacidad o publicidad; no publiques haciéndote pasar por otra persona u entidad.</target>
       </trans-unit>
       <trans-unit id="2263" resname="r998855293" restype="string" datatype="x-haml">
         <source>Do not post material that is unlawful, misleading, obscene, derogatory, defamatory, threatening, harassing, abusive, slanderous, hateful, or embarrassing to any other person or entity as determined by us in our sole discretion.</source>
-        <target>No publiques material que sea ilícito, engañoso, obsceno, despectivo, difamatorio, amenasante, acosador, abusivo, calumnioso, lleno de odio o vergonzoso para cualquier otra persona o entidad según determinado por nosotros en nuestra discresión exclusiva.</target>
+        <target>No publiques material que sea ilícito, engañoso, obsceno, despectivo, difamatorio, amenasante, acosador, abusivo, calumnioso, lleno de odio o vergonzoso para cualquier otra persona o entidad según determinado por nosotros en nuestra discreción exclusiva.</target>
       </trans-unit>
       <trans-unit id="2264" resname="r496270880" restype="string" datatype="x-haml">
         <source>Do not use the Apps excessively or</source>
@@ -1853,7 +1853,7 @@
       </trans-unit>
       <trans-unit id="2274" resname="r872894683" restype="string" datatype="x-haml">
         <source>I have the right to inspect all medical information transmitted during a Virtual Consult, including, without limitation, the name of the licensed physician associated with HealthTap Medical Group, P.C. treating me, and may receive copies of this information for a reasonable fee.</source>
-        <target>Tengo el derecho de inspeccionar la información médica transmitida durante una Consulta Virtual, incluyendo, sin limitacio´n, el nombre del médico acreditado asociado con HealthTap Medical Group, P.C. tratándome, y puedo recibir copias de esta información por una cuota razonable.</target>
+        <target>Tengo el derecho de inspeccionar la información médica transmitida durante una Consulta Virtual, incluyendo, sin limitación, el nombre del médico acreditado asociado con HealthTap Medical Group, P.C. tratándome, y puedo recibir copias de esta información por una cuota razonable.</target>
       </trans-unit>
       <trans-unit id="2275" resname="r650556941" restype="string" datatype="x-haml">
         <source>I understand that the laws that protect the confidentiality of medical information apply to Virtual Consults, and that no information or images from such interaction which identify me will be disclosed to other entities without my consent.</source>
@@ -1889,7 +1889,7 @@
       </trans-unit>
       <trans-unit id="2283" resname="r698629491" restype="string" datatype="x-haml">
         <source>You agree to pay all fees or charges to your account in accordance with the fees, charges, and billing terms in effect at the time a fee or charge is due and payable. You authorize HealthTap to immediately invoice your credit card or other payment account provided for all fees and charges due and payable and agree that no additional notice or consent is required. HealthTap's fees are net of any applicable sales tax and if any services or payments for any goods or services are subject to sales tax in any jurisdiction. You will be responsible for payment of such sales tax and any related penalties or interest and will indemnify HealthTap for any liability or expense incurred in connection with such sales taxes (including any use tax and any other tax measured by sales proceeds that HealthTap is permitted to pass to you) and HealthTap may automatically charge and withhold such taxes for services to be delivered within any jurisdictions that it deems is required. Unless otherwise agreed to by HealthTap in writing, all fees paid are non-refundable. HealthTap reserves the right, without notice, to modify, change, terminate, or suspend service for a subscription plan you are on if, for any reason, payment for such plan is not made or cannot be processed on the due date. This right to modify a subscription plan includes, but is not limited to, the right to change a subscription plan type (for example, from a fixed fee plan without consult co-pays to a lower priced fixed-fee plan with consult co-pays). You may adjust your subscription settings at any time (where applicable, by paying any amounts due).</source>
-        <target state="translated">Tú aceptas pagar todas las cuotas o cargos a tu cuenta en conformidad con los términos de cuotas, cargos o cobranza en efecto en el momento en que una cuota o cargo sea debido y pagable. Tú autorizas a HealthTap a inmediatamente facturar a tu tarjeta de crédito u otra cuenta de pago proporcionada para todas las cuotas y cargos debidos y pagables y aceptas que no se requiere aviso o consentimiento adicional. Las cuotas de HealthTap son el neto de cualquier impuesto de venta aplicable y si cualesquiera servicios o pagos por cualesquiera bienes o servicios estan sujetos a impuesto de venta en cualquier jurisdicción. Tú serás responsable del pago de dicho impuesto de venta y cualquier sanción o interés relacionado y compensarás a HealthTap por cualquier gasto o reponsabilidad incurrida en conexión con dichos impuestos de venta (incluyendo cualquier impuesto de venta y cualquier otro impuesto cuantificado por la recaudación de ventas que HealthTap este permitido pasar hacia ti) y que HealthTap puede automáticamente hacer cargos o retener dichos impuestos por servicios a ser entregados dentro de cualquier jurisdicción que considere requerida. A menos que haya sido aceptado de otra forma por HealthTap por escrito, todas las cuotas pagadas son no reembolsables. HealthTap se reserva el derecho, sin aviso, de modificar, cambiar, terminar o suspender servicio para un plan de suscripción en el que estas si, por cualquier razón, no se realiza pago para dicho plan o no puede ser procesado en la fecha de vencimiento. Este derecho a modificar un plan de suscripción incluye, pero no está limitado a, el derecho a cambiar un tipo de plan de suscripción (por ejemplo, de un plan de cuota fija sin copagos de consulta a un plan de cuota fija más barato con copagos de consulta). Tú puedes ajustar la configuración de tu cuenta en cualquier momento (donde sea aplicable, pagando cualquier cantidad debida)</target>
+        <target state="translated">Tú aceptas pagar todas las cuotas o cargos a tu cuenta en conformidad con los términos de cuotas, cargos o cobranza en efecto en el momento en que una cuota o cargo sea debido y pagable. Tú autorizas a HealthTap a inmediatamente facturar a tu tarjeta de crédito u otra cuenta de pago proporcionada para todas las cuotas y cargos debidos y pagables y aceptas que no se requiere aviso o consentimiento adicional. Las cuotas de HealthTap son el neto de cualquier impuesto de venta aplicable y si cualesquiera servicios o pagos por cualesquiera bienes o servicios están sujetos a impuesto de venta en cualquier jurisdicción. Tú serás responsable del pago de dicho impuesto de venta y cualquier sanción o interés relacionado y compensarás a HealthTap por cualquier gasto o reponsabilidad incurrida en conexión con dichos impuestos de venta (incluyendo cualquier impuesto de venta y cualquier otro impuesto cuantificado por la recaudación de ventas que HealthTap esté permitido pasar hacia ti) y que HealthTap puede automáticamente hacer cargos o retener dichos impuestos por servicios a ser entregados dentro de cualquier jurisdicción que considere requerida. A menos que haya sido aceptado de otra forma por HealthTap por escrito, todas las cuotas pagadas son no reembolsables. HealthTap se reserva el derecho, sin aviso, de modificar, cambiar, terminar o suspender servicio para un plan de suscripción en el que estas si, por cualquier razón, no se realiza pago para dicho plan o no puede ser procesado en la fecha de vencimiento. Este derecho a modificar un plan de suscripción incluye, pero no está limitado a, el derecho a cambiar un tipo de plan de suscripción (por ejemplo, de un plan de cuota fija sin copagos de consulta a un plan de cuota fija más barato con copagos de consulta). Tú puedes ajustar la configuración de tu cuenta en cualquier momento (donde sea aplicable, pagando cualquier cantidad debida)</target>
       </trans-unit>
       <trans-unit id="2284" resname="r340073102" restype="string" datatype="x-haml">
         <source>You will agree to seek emergency help when needed or as recommended by doctors on HealthTap Prime and you agree continue to consult with your primary care doctor as recommended by your primary care doctor or the doctors on HealthTap Prime.</source>
@@ -2225,7 +2225,7 @@
       </trans-unit>
       <trans-unit id="2947" resname="r395541068" restype="string" datatype="x-haml">
         <source>Personally Identifiable Information is information that identifies specifically who you are. This includes information like your full name and your email address. We keep this information private by not displaying it or sharing it unless you agree. We keep this information secure, using state of the art encryption among other security measures. More information about our security can be found on our</source>
-        <target>Información Personalmente Identificable es información que identifica específicamente quien eres tú. Esto incluye información como tu nombre completo y tu dirección de correo electrónico. Mantenemos esta información privada al no mostrarla o compartirla a menos de que tu aceptes Mantenemos esta información segura usando cifrado de vanguardia entre otras medidas de seguridad. Más información sobre nuestra seguridad puede ser encontrada en nuestro</target>
+        <target>Información Personalmente Identificable es información que identifica específicamente quién eres tú. Esto incluye información como tu nombre completo y tu dirección de correo electrónico. Mantenemos esta información privada al no mostrarla o compartirla a menos de que tu aceptes Mantenemos esta información segura usando cifrado de vanguardia entre otras medidas de seguridad. Más información sobre nuestra seguridad puede ser encontrada en nuestro</target>
       </trans-unit>
       <trans-unit id="2948" resname="r335031872" restype="string" datatype="x-haml">
         <source>Examples of information that are not Personally Identifiable Information, and how we may use that information, are discussed in this Privacy Statement. To help you stay private and safe, we've created tips and suggestions for</source>
@@ -2429,7 +2429,7 @@
       </trans-unit>
       <trans-unit id="2397" resname="r965346722" restype="string" datatype="x-haml">
         <source>Not in</source>
-        <target>No estás en</target>
+        <target>¿No estás en</target>
       </trans-unit>
     </body>
   </file>
@@ -2701,7 +2701,7 @@
       </trans-unit>
       <trans-unit id="2456" resname="r113548532" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health,</source>
-        <target state="translated">esté respaldada por doctores en todas las áreas de salud,</target>
+        <target state="translated">está respaldada por doctores en todas las áreas de salud,</target>
       </trans-unit>
       <trans-unit id="2457" resname="r461675722" restype="string" datatype="x-haml">
         <source>I love that</source>
@@ -2803,17 +2803,13 @@
         <source>It may sound lofty, but we believe it comes down to something very basic. We all—at heart—simply want to</source>
         <target>Puede sonar altanero, pero creemos que se trata de algo muy básico. Todos simplemente queremos</target>
       </trans-unit>
-      <trans-unit id="2479" resname="r429307520" restype="string" datatype="x-haml">
-        <source>All these things make us</source>
-        <target>Todas estas cosas nos hacen</target>
-      </trans-unit>
       <trans-unit id="2480" resname="r54568686" restype="string" datatype="x-haml">
         <source>by taking care of us and giving us comfort when we need it most. We can take care of each other, too. By bringing the fun back into taking care of each other, we work with doctors to make the world a better place.</source>
-        <target>al cuidarnos y proporcionarnos comodidad cuando más lo necesitamos. También nos podemos cuidar los unos a los otros. Trayendo de regreso la diversión al cuidado del uno al otro, trabajamos con doctores para hacer del mundo un lugar mejor.</target>
+        <target state="accepted">al cuidarnos y al consolarnos cuando más lo necesitamos. También nos podemos cuidar los unos a los otros. Para entregar una manera entretenida de cuidarnos entre si, trabajamos con doctores que hacen del mundo un mejor lugar.</target>
       </trans-unit>
       <trans-unit id="2481" resname="r52930992" restype="string" datatype="x-haml">
         <source>Doctors help us</source>
-        <target>¡Doctores nos ayudan</target>
+        <target state="accepted">¡Los doctores nos ayudan a</target>
       </trans-unit>
       <trans-unit id="2482" resname="r628043353" restype="string" datatype="x-haml">
         <source>every day, please join us!</source>
@@ -2893,7 +2889,7 @@
     <body>
       <trans-unit id="2499" resname="r325356960" restype="string" datatype="x-haml">
         <source>is supported by world-class investors, advisors, and experienced company builders who have helped create,</source>
-        <target state="translated">es apoyada por inversionistas, asesores y constructores de compañías mundiales quienes han ayudado a crear,</target>
+        <target state="accepted">es apoyada por inversionistas, asesores y empresarios de clase mundial quienes han ayudado a crear,</target>
       </trans-unit>
     </body>
   </file>
@@ -3037,7 +3033,7 @@
       </trans-unit>
       <trans-unit id="2526" resname="r832776716" restype="string" datatype="x-haml">
         <source>is backed by doctors in all areas of health, so I know the information I</source>
-        <target state="translated">esté respaldada por doctores en todas las áreas de salud, así que sé que la información que yo</target>
+        <target state="translated">está respaldada por doctores en todas las áreas de salud, así que sé que la información que yo</target>
       </trans-unit>
       <trans-unit id="2527" resname="r674098443" restype="string" datatype="x-haml">
         <source>or with the</source>
@@ -3237,7 +3233,7 @@
       </trans-unit>
       <trans-unit id="2591" resname="r743406361" restype="string" datatype="x-haml">
         <source>, you get a fully equipped ViP that gives you easy access to millions of patients worldwide. You’ll get recognized for your previous accomplishments, your published knowledge, as well as the answers, tips, and checklists you will share.</source>
-        <target>, obtienes una ViP completamente equipado que te brinda fácil acceso a millones de pacientes en todo el mundo. Serás reconocido por tus logros previos, tu conocimiento publicado, así como las respuestas, tips, y listados que compartirás.</target>
+        <target>, obtienes un CoV completamente equipado que te brinda fácil acceso a millones de pacientes en todo el mundo. Serás reconocido por tus logros previos, tu conocimiento publicado, así como las respuestas, tips, y listados que compartirás.</target>
       </trans-unit>
       <trans-unit id="2592" resname="r78183098" restype="string" datatype="x-haml">
         <source>but it can be costly and confusing to set up and manage. With</source>
@@ -3301,7 +3297,7 @@
       </trans-unit>
       <trans-unit id="2608" resname="r320834824" restype="string" datatype="x-haml">
         <source>, we put an extraordinarily high value on trust and quality. That’s why we select only the top doctors in every specialty, and highlight their expertise to people and peers throughout our special programs. We provide our best doctors with special privileges on</source>
-        <target>, ponemos un valor extraordinariamente alto en la confianza y la calidad. Es por eso que seleccionamos sólo a los mejores doctores en cada especialidad, y resaltamos su destreza a personas y pares a través de nuestros programas especiales. Brindamos privilegios especiales a nuestros mejores doctores en</target>
+        <target>, ponemos un valor extraordinariamente alto en la confianza en la calidad. Es por eso que seleccionamos sólo a los mejores doctores en cada especialidad, y resaltamos su destreza a personas y pares a través de nuestros programas especiales. Brindamos privilegios especiales a nuestros mejores doctores en</target>
       </trans-unit>
       <trans-unit id="2609" resname="r953570750" restype="string" datatype="x-haml">
         <source>At</source>
@@ -3342,14 +3338,6 @@
       <trans-unit id="2618" resname="r33283907" restype="string" datatype="x-haml">
         <source>provides me with an interactive forum with tens of thousands of patients and colleagues.</source>
         <target>me brinda un foro interactivo con decenas de miles de pacientes y colegas.</target>
-      </trans-unit>
-      <trans-unit id="2619" resname="r188937521" restype="string" datatype="x-haml">
-        <source>doctors delight in</source>
-        <target>les encanta</target>
-      </trans-unit>
-      <trans-unit id="2620" resname="r786643384" restype="string" datatype="x-haml">
-        <source>What</source>
-        <target>Lo que a los doctores de</target>
       </trans-unit>
       <trans-unit id="2621" resname="r544270111" restype="string" datatype="x-haml">
         <source>doctors answer people’s questions, provide them with health tips, and curate those articles and research papers that will be most helpful to both individuals and society at large.</source>
@@ -3745,7 +3733,7 @@
       </trans-unit>
       <trans-unit id="2701" resname="r675731532" restype="string" datatype="x-haml">
         <source>“End User Agreement” means the agreement between HealthTap and the End User, governing use of the HealthTap Software, the terms of which are subject to change by Licensor, at its sole discretion.</source>
-        <target>“Acuerdo de Usuario Final” significa el acuerdo entre HealthTap y el Usuaroi Final, gobernando el uso de Software de HealthTap, los términos de los cales estan sujetos a cambio por Licenciador, a su sola discreción.</target>
+        <target>“Acuerdo de Usuario Final” significa el acuerdo entre HealthTap y el Usuaroi Final, gobernando el uso de Software de HealthTap, los términos de los cales están sujetos a cambio por Licenciador, a su sola discreción.</target>
       </trans-unit>
       <trans-unit id="2702" resname="r871142554" restype="string" datatype="x-haml">
         <source>“HealthTap Minimum Retained Commission” means the commission identified in Exhibit A, based on the Annual Revenue Minimum.</source>
@@ -4501,7 +4489,7 @@
       </trans-unit>
       <trans-unit id="2863" resname="r356712107" restype="string" datatype="x-haml">
         <source>Fellowships</source>
-        <target>Fellowships</target>
+        <target state="translated">Becas</target>
       </trans-unit>
     </body>
   </file>
@@ -4849,7 +4837,7 @@
       </trans-unit>
       <trans-unit id="2930" resname="r536714321" restype="string" datatype="x-haml">
         <source>is comprised of a select group of specialty thought leaders who have proven, through their recognized efforts on HealthTap, that they are passionate about our mission to provide the most trusted and highest quality health information online.</source>
-        <target>está compuesto de un selecto grupo de líderes de pensamiento de especialidad que han probado, a través de sus esfuerzos reconocidos en HealthTap, que estan apasionados por nuestra misión de brindar la información de salud en línea más confiable y de mejor calidad.</target>
+        <target>está compuesto de un selecto grupo de líderes de pensamiento de especialidad que han probado, a través de sus esfuerzos reconocidos en HealthTap, que están apasionados por nuestra misión de brindar la información de salud en línea más confiable y de mejor calidad.</target>
       </trans-unit>
       <trans-unit id="2931" resname="r611306139" restype="string" datatype="x-haml">
         <source>Polo Shirt</source>
@@ -4981,7 +4969,7 @@
     <body>
       <trans-unit id="2989" resname="r924183074" restype="string" datatype="x-haml">
         <source>Typically, you will see patients who are physically located in a state in which you are licensed. However, HealthTap is a global service that helps millions worldwide. Given the demand around the world for access to top doctors such as yourself, you may be asked to take international consults occasionally. These may be from U.S. citizens who are traveling or living overseas, or from English-speaking foreign citizens who wish to ask advice of American-trained doctors. You should take these calls no matter what state you practice in. You should treat the patient just as you would if he or she were calling from within the United States, including recommending the appropriate prescription in your SOAP note.</source>
-        <target>Típicamente, verás a pacientes que estan ubicados físicamente en un estado en el cuál estas acreditado. Sin embargo, HealthTap es un servicio global que ayuda a millones alrededor del mundo. Dada la demanda alrededor del mundo por los mejores doctores como tú, puede que se te pida tomar consultas internacionales ocasionalmente. Estas pueden ser de ciudadanod e EE.UU. que estan viajando o viviendo en el extranjero, o de ciudadanos extranjeros que hablen inglés que deseen pedir consejo de doctores entrenados en América. Debes de tomar estas llamadas sin importar en que estado ejerzas. Debes de tratar al paciente justo como si lo harías si estuviera llamando desde dentro de los Estados Unidos, incluyendo recomendando la receta apropiada en tu nota SOAP.</target>
+        <target>Típicamente, verás a pacientes que están ubicados físicamente en un estado en el cuál estas acreditado. Sin embargo, HealthTap es un servicio global que ayuda a millones alrededor del mundo. Dada la demanda alrededor del mundo por los mejores doctores como tú, puede que se te pida tomar consultas internacionales ocasionalmente. Estas pueden ser de ciudadanod e EE.UU. que estan viajando o viviendo en el extranjero, o de ciudadanos extranjeros que hablen inglés que deseen pedir consejo de doctores entrenados en América. Debes de tomar estas llamadas sin importar en que estado ejerzas. Debes de tratar al paciente justo como si lo harías si estuviera llamando desde dentro de los Estados Unidos, incluyendo recomendando la receta apropiada en tu nota SOAP.</target>
       </trans-unit>
       <trans-unit id="2990" resname="r147826362" restype="string" datatype="x-haml">
         <source>Seeing international patients.</source>
@@ -5321,7 +5309,7 @@
       </trans-unit>
       <trans-unit id="3077" resname="r173510312" restype="string" datatype="x-haml">
         <source>top doctors are available for</source>
-        <target>los mejores doctores estan disponibles por</target>
+        <target>los mejores doctores están disponibles por</target>
       </trans-unit>
       <trans-unit id="3078" resname="r647987542" restype="string" datatype="x-haml">
         <source>Personalized answers, tips, news, and more for</source>
@@ -5557,7 +5545,7 @@
       </trans-unit>
       <trans-unit id="3129" resname="r513463810" restype="string" datatype="x-haml">
         <source>means an individual accepted to participate in the HealthTap Medical Expert Community and who participates on the Apps or interacts with others on or through the Apps, or other specialists or professionals who participate on HealthTap in their capacity as experts.</source>
-        <target state="translated">significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones u otros especialistas o profesionales que participen en HealthTap en su cualidad de expertos.</target>
+        <target state="translated">significa que un individuo acepto participar en la Comunidad de Expertos Médicos de HealthTap y quien participa en las Aplicaciones o interactúa con otros en o a través de las Aplicaciones u otros especialistas o profesionistas que participan en HealthTap en su capacidad de expertos.</target>
       </trans-unit>
       <trans-unit id="3130" resname="r1010286189" restype="string" datatype="x-haml">
         <source>ALL INFORMATION PROVIDED ON HEALTHTAP OR IN CONNECTION WITH ANY COMMUNICATIONS SUPPORTED BY HEALTHTAP, INCLUDING BUT NOT LIMITED TO COMMUNICATIONS BETWEEN HEALTHTAP MEDICAL EXPERTS AND CONSUMERS, IS INTENDED TO BE FOR GENERAL INFORMATIONAL PURPOSES ONLY, AND IS IN NO WAY INTENDED TO CREATE A DOCTOR – PATIENT RELATIONSHIP AS DEFINED BY STATE AND FEDERAL LAW. HEALTHTAP IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL DIAGNOSIS OR TREATMENT. RELIANCE ON ANY INFORMATION PROVIDED BY HEALTHTAP OR ANY HEALTHTAP MEDICAL EXPERTS IS SOLELY AT YOUR OWN RISK.</source>
@@ -5617,7 +5605,7 @@
       </trans-unit>
       <trans-unit id="3146" resname="r559160176" restype="string" datatype="x-haml">
         <source>Email and short message service (SMS) or text message communications from HealthTap are not encrypted, and this information is not secured. You can opt out of receiving email, SMS, and text messages. By using HealthTap, you release HealthTap from any liability for interception or unauthorized access to unsecured communications.</source>
-        <target state="translated">Comunicaciones por correo electrónico, short message service (SMS) o de mensaje de texto de HealthTap no estan cifradas, y esta información no es segura. Puedes renunciar a recibir correos electrónicos, SMS y mensajes de texto. Al suar HealthTap, tú liberas a HealthTap de cualquier responsabilidad por intercepción o acceso no autorizado a comunicaciones no seguras.</target>
+        <target state="translated">Comunicaciones por correo electrónico, short message service (SMS) o de mensaje de texto de HealthTap no están cifradas, y esta información no es segura. Puedes renunciar a recibir correos electrónicos, SMS y mensajes de texto. Al suar HealthTap, tú liberas a HealthTap de cualquier responsabilidad por intercepción o acceso no autorizado a comunicaciones no seguras.</target>
       </trans-unit>
       <trans-unit id="3147" resname="r423043832" restype="string" datatype="x-haml">
         <source>There is no advertising on HealthTap.</source>
@@ -5629,7 +5617,7 @@
       </trans-unit>
       <trans-unit id="3149" resname="r989418785" restype="string" datatype="x-haml">
         <source>We have obtained or applied for various Trademarks and service marks. HealthTap, the HealthTap logo, other HealthTap trademarks and service marks and other HealthTap logos and product and service names are our trademarks (the "HealthTap Marks"). If you would like to use or display any HealthTap Marks, you must ask our permission. Without our prior written permission, or according to the terms and guidelines we will publish in a media section of the Apps, you agree not to display or use in any manner the HealthTap Marks. All trademarks, brands, and content on HealthTap are the property of their respective owners.</source>
-        <target state="translated">Nosotros hemos obtenido o aplicado para varias Marcas Registrada y markas de servicio. HealthTap, el logo de HealthTap, otras Marcas Registradas de HealthTap y marcas de servicio otros logos de HealthTap y los nombres de productos y servicios son nuestras marcas registradas (las “Marcas HealthTap”). Si tú desearas usar o mostrar cualquier Marca HealthTap, tu debes pedir nuestro permiso. Sin nuestro previo permiso por escrito, o de acuerdo con los términos y directrices nosotros publicamos en una sección de media de las Aplicaciones, tu aceptas no mostrar o usar de ninguna manera las Marcas HealthTap. Todas las marcas registradas, marcas y contenido en HealthTap son la propiedad de sus respectivos dueños.</target>
+        <target state="translated">Nosotros hemos obtenido o aplicado para varias Marcas Registrada y markas de servicio. HealthTap, el logo de HealthTap, otras Marcas Registradas de HealthTap y marcas de servicio otros logos de HealthTap y los nombres de productos y servicios son nuestras marcas registradas (las “Marcas HealthTap”). Si tú desearas usar o mostrar cualquier Marca HealthTap, tu debes pedir nuestro permiso. Sin nuestro previo permiso por escrito, o de acuerdo con los términos y directrices nosotros publicamos en una sección de media de las Aplicaciones, tú aceptas no mostrar o usar de ninguna manera las Marcas HealthTap. Todas las marcas registradas, marcas y contenido en HealthTap son la propiedad de sus respectivos dueños.</target>
       </trans-unit>
       <trans-unit id="3150" resname="r636878772" restype="string" datatype="x-haml">
         <source>You agree not to engage in any activity that would constitute copyright infringement with respect to the Content. You may not reproduce, create derivative works of, distribute, publicly perform or publicly display the Content or any portion thereof without our prior written consent. You may, however, use HealthTap as it is designed and intended to be used, including using HealthTap features which allow you to re-post Content or portions of Content, such as those which permit you to distribute Content through other third party applications and mediums, such as Facebook or Twitter, so long as you do not modify that Content or the functionality of those features in any way. This right to re-post Content does not create for you or grant to you any additional rights in such Content. Additionally, you may not use any metatags or any other "hidden text" utilizing the name "HealthTap" without our prior written permission.</source>
@@ -5637,7 +5625,7 @@
       </trans-unit>
       <trans-unit id="3151" resname="r746026877" restype="string" datatype="x-haml">
         <source>You agree not to access, attempt to access, request access not authorized by HealthTap or use any HealthTap data without our Permission. This means that you agree not to transmit, download, upload, post, sell, rent, license, transfer, disclose, mirror, frame, reverse engineer, decompile, disassemble, or use any aspect of HealthTap or any Content, in whole or in part, in any form or by any means.</source>
-        <target>Tú aceptas no accesar, intentar accesar, solicitar acceso no autorizado por HealthTap o usar cualquier Contenido de HealthTap o datos sin nuestro Permiso. Esto significa que tu aceptas no transmitir, descargar, subir, publicar, vender, rentar, dar licensias, transferir, divulgar, mirror, enmarcar, realizar ingeniería inversa, descompilar, desarmar, o usar cualquier aspecto de HealthTap o cualquier Contenido, completo o en parte, en cualquier forma o por cualquier medio.</target>
+        <target>Tú aceptas no accesar, intentar accesar, solicitar acceso no autorizado por HealthTap o usar cualquier Contenido de HealthTap o datos sin nuestro Permiso. Esto significa que tú aceptas no transmitir, descargar, subir, publicar, vender, rentar, dar licensias, transferir, divulgar, mirror, enmarcar, realizar ingeniería inversa, descompilar, desarmar, o usar cualquier aspecto de HealthTap o cualquier Contenido, completo o en parte, en cualquier forma o por cualquier medio.</target>
       </trans-unit>
       <trans-unit id="3152" resname="r442610529" restype="string" datatype="x-haml">
         <source>If you believe any materials accessible on or from HealthTap infringe your copyright, you may request removal of those materials (or access thereto) from us by contacting and providing us with information pursuant to our</source>
@@ -5661,7 +5649,7 @@
       </trans-unit>
       <trans-unit id="3158" resname="r559109255" restype="string" datatype="x-haml">
         <source>Do not post material that is unlawful, obscene, derogatory, defamatory, threatening, harassing, abusive, slanderous, hateful, or embarrassing to any other person or entity as determined by us in our sole discretion.</source>
-        <target>No publiques material que sea ilícito, obsceno, despectivo, difamatorio, amenasante, acosador, abusivo, calumnioso, lleno de odio o vergonzoso para cualquier otra persona o entidad según determinado por nosotros en nuestra discresión exclusiva.</target>
+        <target>No publiques material que sea ilícito, obsceno, despectivo, difamatorio, amenazante, acosador, abusivo, calumnioso, lleno de odio o vergonzoso para cualquier otra persona o entidad según determinado por nosotros en nuestra discresión exclusiva.</target>
       </trans-unit>
       <trans-unit id="3159" resname="r104601039" restype="string" datatype="x-haml">
         <source>Do not post advertisements or solicitations or links to other websites or individuals.</source>
@@ -5793,7 +5781,7 @@
       </trans-unit>
       <trans-unit id="3195" resname="r167079728" restype="string" datatype="x-haml">
         <source>Responses should always be appropriate. Brief, casual, and friendly responses are the most useful. Help HealthTap remain a trusted resource, by avoiding potentially offensive content whenever possible.</source>
-        <target>Respuestas siempre deben ser apropiadas. Respuestas breves, casuales y amistosisas son las más útiles. Ayuda a HealthTap a permanecer como un recurso confiable, evadiendo contenido potencialmente ofensivo siempre que sea posible.</target>
+        <target>Respuestas siempre deben ser apropiadas. Respuestas breves, casuales y amistosas son las más útiles. Ayuda a HealthTap a permanecer como un recurso confiable, evadiendo contenido potencialmente ofensivo siempre que sea posible.</target>
       </trans-unit>
       <trans-unit id="3197" resname="r97195377" restype="string" datatype="x-haml">
         <source>You are allowed to link to external websites that are both appropriate and related to your responses, but answers on HealthTap should be complete and should not be used for primarily promotional purposes. Please do not plagiarize and cite sources where applicable. Using answers as a vehicle to promote a product or service is prohibited. Providing members with useful and beneficial information and attracting new patients through useful Content is permitted, but mere schilling is not.</source>
@@ -7405,7 +7393,7 @@
     <body>
       <trans-unit id="3586" resname="r1004613819" restype="string" datatype="x-haml">
         <source>'s</source>
-        <target state="translated">'s</target>
+        <target state="translated">的</target>
       </trans-unit>
     </body>
   </file>

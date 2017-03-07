@@ -26,7 +26,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile(p, "./testfiles/objc/Base.lproj/Localizable.strings");
         
@@ -41,7 +43,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
 			project: p
@@ -57,7 +61,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
 			project: p
@@ -88,7 +94,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
 			project: p
@@ -119,7 +127,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
 			project: p
@@ -151,7 +161,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
 			project: p
@@ -182,7 +194,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
 			project: p
@@ -210,7 +224,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
 			project: p
@@ -250,7 +266,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
         	project: p, 
@@ -298,7 +316,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
         	project: p, 
@@ -346,7 +366,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
 			project: p
@@ -369,7 +391,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
         	project: p, 
@@ -393,7 +417,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
         	project: p, 
@@ -436,7 +462,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
         	project: p, 
@@ -479,7 +507,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
         	project: p, 
@@ -513,7 +543,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
         	project: p, 
@@ -532,7 +564,9 @@ module.exports = {
         var p = new ObjectiveCProject({
         	id: "ht-iosapp",
 			sourceLocale: "en-US"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
         
         var strings = new IosStringsFile({
         	project: p, 

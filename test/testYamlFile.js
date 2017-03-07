@@ -44,7 +44,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -65,7 +67,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
         	project: p,
@@ -87,7 +91,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -127,7 +133,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -204,7 +212,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -283,7 +293,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -350,7 +362,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -385,7 +399,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -413,7 +429,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -441,7 +459,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -492,7 +512,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
 			project: p
@@ -518,7 +540,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -545,7 +569,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -595,7 +621,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -645,7 +673,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -699,7 +729,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -757,7 +789,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -780,7 +814,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -812,7 +848,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -846,7 +884,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -880,7 +920,9 @@ module.exports = {
         	resourceDirs: {
         		yml: "a/b"
         	}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
         	project: p,
@@ -911,7 +953,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-    	}, "./testfiles");
+    	}, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -972,7 +1016,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-    	}, "./testfiles");
+    	}, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1014,7 +1060,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-    	}, "./testfiles");
+    	}, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1056,7 +1104,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-    	}, "./testfiles");
+    	}, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1098,7 +1148,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-    	}, "./testfiles");
+    	}, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1141,7 +1193,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1207,7 +1261,9 @@ module.exports = {
     		resourceDirs: {
     			yml: "a/b"
     		}
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
     	var yml = new YamlFile({
     		project: p
@@ -1302,7 +1358,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1323,7 +1381,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p
@@ -1343,7 +1403,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1363,7 +1425,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1384,7 +1448,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1405,7 +1471,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1429,7 +1497,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1462,7 +1532,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1482,7 +1554,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1503,7 +1577,9 @@ module.exports = {
             resourceDirs: {
                 yml: "a/b"
             }
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1525,7 +1601,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1547,7 +1625,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1569,7 +1649,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1589,7 +1671,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1613,7 +1697,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1637,7 +1723,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: 1 // Do not remove this from the test, TranslationSet.remove requires it
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var y = new YamlFile({
             project: p,
@@ -1664,7 +1752,9 @@ module.exports = {
                 yml: "a/b"
             },
             id: "foo"
-        }, "./testfiles");
+        }, "./testfiles", {
+			locales:["en-GB"]
+		});
 
         var yml = new YamlFile({
             project: p,
