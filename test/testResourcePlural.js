@@ -6,8 +6,7 @@
 
 if (!ResourcePlural) {
     var ResourcePlural = require("../lib/ResourcePlural.js");
-    var ilib = require("ilib");
-    var ResBundle = require("ilib/lib/ResBundle");
+    var RegularPseudo = require("../lib/RegularPseudo.js");
 }
 
 module.exports = {
@@ -273,9 +272,8 @@ module.exports = {
         });
         test.ok(rp);
 
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var rp2 = rp.generatePseudo("de-DE", rb);
@@ -301,9 +299,8 @@ module.exports = {
         });
         test.ok(rp);
 
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var rp2 = rp.generatePseudo("de-DE", rb);
@@ -314,10 +311,10 @@ module.exports = {
 
         test.ok(t);
         test.deepEqual(t, {
-    		"one": "Ťĥíš íš šíñğüľàŕ",
-    		"two": "Ťĥíš íš ðõübľë",
-    		"few": "Ťĥíš íš ţĥë fëŵ çàšë",
-    		"many": "Ťĥíš íš ţĥë màñÿ çàšë"
+    		"one": "Ťĥíš íš šíñğüľàŕ76543210",
+    		"two": "Ťĥíš íš ðõübľë6543210",
+    		"few": "Ťĥíš íš ţĥë fëŵ çàšë9876543210",
+    		"many": "Ťĥíš íš ţĥë màñÿ çàšë6543210"
     	});
 
         test.done();
@@ -338,9 +335,8 @@ module.exports = {
         });
         test.ok(rp);
 
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var rp2 = rp.generatePseudo("de-DE", rb);
@@ -351,10 +347,10 @@ module.exports = {
 
         test.ok(t);
         test.deepEqual(t, {
-    		"one": "Ťĥíš íš %s šíñğüľàŕ",
-    		"two": "Ťĥíš íš %d ðõübľë",
-    		"few": "Ťĥíš íš ţĥë fëŵ %2$-2.2f çàšë",
-    		"many": "Ťĥíš íš ţĥë màñÿ %7x çàšë"
+    		"one": "Ťĥíš íš %s šíñğüľàŕ9876543210",
+    		"two": "Ťĥíš íš %d ðõübľë876543210",
+    		"few": "Ťĥíš íš ţĥë fëŵ %2$-2.2f çàšë9876543210",
+    		"many": "Ťĥíš íš ţĥë màñÿ %7x çàšë76543210"
     	});
 
         test.done();
@@ -375,9 +371,8 @@ module.exports = {
         });
         test.ok(rp);
 
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var rp2 = rp.generatePseudo(undefined, rb);

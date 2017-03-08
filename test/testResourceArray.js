@@ -7,7 +7,7 @@
 if (!ResourceArray) {
     var ResourceArray = require("../lib/ResourceArray.js");
     var ilib = require("ilib");
-    var ResBundle = require("ilib/lib/ResBundle");
+    var RegularPseudo = require("../lib/RegularPseudo.js");
 }
 
 module.exports = {
@@ -263,9 +263,8 @@ module.exports = {
         });
         test.ok(ra);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var ra2 = ra.generatePseudo("de-DE", rb);
@@ -286,9 +285,8 @@ module.exports = {
         });
         test.ok(ra);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var ra2 = ra.generatePseudo("de-DE", rb);
@@ -300,9 +298,9 @@ module.exports = {
         
         test.ok(strings);
         test.equal(strings.length, 3);
-        test.equal(strings[0], "Ťĥíš íš à ţëšţ");
-        test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ");
-        test.equal(strings[2], "Ťĥíš íš ñõţ");
+        test.equal(strings[0], "Ťĥíš íš à ţëšţ6543210");
+        test.equal(strings[1], "Ťĥíš íš àľšõ à ţëšţ9876543210");
+        test.equal(strings[2], "Ťĥíš íš ñõţ543210");
         
         test.done();
     },
@@ -317,9 +315,8 @@ module.exports = {
         });
         test.ok(ra);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var ra2 = ra.generatePseudo("de-DE", rb);
@@ -331,9 +328,9 @@ module.exports = {
         
         test.ok(strings);
         test.equal(strings.length, 3);
-        test.equal(strings[0], "Ťĥíš íš à %s ţëšţ");
-        test.equal(strings[1], "Ťĥíš íš àľšõ à %f ţëšţ");
-        test.equal(strings[2], "Ťĥíš íš ñõţ %4$-2.2d");
+        test.equal(strings[0], "Ťĥíš íš à %s ţëšţ876543210");
+        test.equal(strings[1], "Ťĥíš íš àľšõ à %f ţëšţ6543210");
+        test.equal(strings[2], "Ťĥíš íš ñõţ %4$-2.2d9876543210");
         
         test.done();
     },
@@ -348,9 +345,8 @@ module.exports = {
         });
         test.ok(ra);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var ra2 = ra.generatePseudo(undefined, rb);

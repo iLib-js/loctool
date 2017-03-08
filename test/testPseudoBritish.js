@@ -28,7 +28,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("traveler"), "traveller");
+        test.equal(pb.getString("traveler"), "traveller");
         
         test.done();
     },
@@ -41,7 +41,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("I am a traveler of regions far and wide."), "I am a traveller of regions far and wide.");
+        test.equal(pb.getString("I am a traveler of regions far and wide."), "I am a traveller of regions far and wide.");
         
         test.done();
     },
@@ -54,7 +54,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("I am a traveler, for the most part, of regions far and wide."), "I am a traveller, for the most part, of regions far and wide.");
+        test.equal(pb.getString("I am a traveler, for the most part, of regions far and wide."), "I am a traveller, for the most part, of regions far and wide.");
         
         test.done();
     },
@@ -67,7 +67,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("I am a traveler."), "I am a traveller.");
+        test.equal(pb.getString("I am a traveler."), "I am a traveller.");
         
         test.done();
     },
@@ -80,7 +80,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("globalization"), "globalisation");
+        test.equal(pb.getString("globalization"), "globalisation");
         
         test.done();
     },
@@ -93,7 +93,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("Globalization"), "Globalisation");
+        test.equal(pb.getString("Globalization"), "Globalisation");
         
         test.done();
     },
@@ -106,7 +106,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("GLOBALIZATION"), "GLOBALISATION");
+        test.equal(pb.getString("GLOBALIZATION"), "GLOBALISATION");
         
         test.done();
     },
@@ -119,7 +119,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("I'm not about to retire"), "I'm not about to retire"); // no translation
+        test.equal(pb.getString("I'm not about to retire"), "I'm not about to retire"); // no translation
         
         test.done();
     },
@@ -132,7 +132,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("The spirochete's proteins were difficult to decipher."), "The spirochaete's proteins were difficult to decipher.");
+        test.equal(pb.getString("The spirochete's proteins were difficult to decipher."), "The spirochaete's proteins were difficult to decipher.");
         
         test.done();
     },
@@ -145,7 +145,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "java"
 		});
-        test.equal(pb.getStringJS("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {estrogen} supplements.");
+        test.equal(pb.getString("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {estrogen} supplements.");
         
         test.done();
     },
@@ -158,7 +158,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "javascript"
 		});
-        test.equal(pb.getStringJS("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {estrogen} supplements.");
+        test.equal(pb.getString("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {estrogen} supplements.");
         
         test.done();
     },
@@ -171,7 +171,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "html"
 		});
-        test.equal(pb.getStringJS("Skip the unflavored <span name=\"estrogen\">supplements</a>."), "Skip the unflavoured <span name=\"estrogen\">supplements</a>.");
+        test.equal(pb.getString("Skip the unflavored <span name=\"estrogen\">supplements</a>."), "Skip the unflavoured <span name=\"estrogen\">supplements</a>.");
         
         test.done();
     },
@@ -184,7 +184,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "xml"
 		});
-        test.equal(pb.getStringJS("Skip the unflavored <source id=\"estrogen\">supplements</source>."), "Skip the unflavoured <source id=\"estrogen\">supplements</source>.");
+        test.equal(pb.getString("Skip the unflavored <source id=\"estrogen\">supplements</source>."), "Skip the unflavoured <source id=\"estrogen\">supplements</source>.");
         
         test.done();
     },
@@ -197,7 +197,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "template"
 		});
-        test.equal(pb.getStringJS("Skip the unflavored <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements."), "Skip the unflavoured <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements.");
+        test.equal(pb.getString("Skip the unflavored <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements."), "Skip the unflavoured <%= (i > 4) ? RB.getString(\"estrogen\") : RB.getString(\"%\") %> supplements.");
         
         test.done();
     },
@@ -210,7 +210,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "ruby"
 		});
-        test.equal(pb.getStringJS("Skip the unflavored %{estrogen} #{estrogen} supplements."), "Skip the unflavoured %{estrogen} #{estrogen} supplements.");
+        test.equal(pb.getString("Skip the unflavored %{estrogen} #{estrogen} supplements."), "Skip the unflavoured %{estrogen} #{estrogen} supplements.");
         
         test.done();
     },
@@ -223,7 +223,7 @@ module.exports = {
 			locale: "en-GB",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {oestrogen} supplements.");
+        test.equal(pb.getString("Skip the unflavored {estrogen} supplements."), "Skip the unflavoured {oestrogen} supplements.");
         
         test.done();
     },
@@ -236,7 +236,7 @@ module.exports = {
 			locale: "en-NZ",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("colorful globalization traveler"), "colourful globalisation traveller");
+        test.equal(pb.getString("colorful globalization traveler"), "colourful globalisation traveller");
         
         test.done();
     },
@@ -249,7 +249,7 @@ module.exports = {
 			locale: "en-AU",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("colorful globalization traveler"), "colourful globalisation traveller");
+        test.equal(pb.getString("colorful globalization traveler"), "colourful globalisation traveller");
         
         test.done();
     },
@@ -262,7 +262,7 @@ module.exports = {
 			locale: "en-ZA",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("colorful globalization traveler"), "colourful globalisation traveller");
+        test.equal(pb.getString("colorful globalization traveler"), "colourful globalisation traveller");
         
         test.done();
     },
@@ -275,7 +275,7 @@ module.exports = {
 			locale: "en-HK",
 			type: "text"
 		});
-        test.equal(pb.getStringJS("colorful globalization traveler"), "colourful globalisation traveller");
+        test.equal(pb.getString("colorful globalization traveler"), "colourful globalisation traveller");
         
         test.done();
     },

@@ -809,11 +809,11 @@ module.exports = {
         
         var arf = new AndroidResourceFile({
         	project: p, 
-        	pathName: "./res/values-zh-sHant-rCN-bar/foo.xml"
+        	pathName: "./res/values-zh-sHans-rCN-bar/foo.xml"
         });
         test.ok(arf);
         
-        test.equal(arf.getLocale(), "zh-Hant-CN");
+        test.equal(arf.getLocale(), "zh-Hans-CN");
         test.equal(arf.getContext(), "bar");
 
         test.done();

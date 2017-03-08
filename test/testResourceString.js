@@ -8,8 +8,7 @@ if (!ResourceString) {
     var ResourceString = require("../lib/ResourceString.js");
     var ContextResourceString = require("../lib/ContextResourceString.js");
     var IosLayoutResourceString = require("../lib/IosLayoutResourceString.js");
-    var ilib = require("ilib");
-    var ResBundle = require("ilib/lib/ResBundle");
+    var RegularPseudo = require("../lib/RegularPseudo.js");
 }
 
 module.exports = {
@@ -239,8 +238,7 @@ module.exports = {
         });
         test.ok(rs);
         
-        var rb = new ResBundle({
-            locale: "zxx-XX", // the pseudo-locale!
+        var rb = new RegularPseudo({
             type: "c"
         });
 
@@ -261,15 +259,14 @@ module.exports = {
         });
         test.ok(rs);
         
-        var rb = new ResBundle({
-            locale: "zxx-XX", // the pseudo-locale!
+        var rb = new RegularPseudo({
             type: "c"
         });
 
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
-        test.equal(rs2.getSource(), "Ťĥíš íš à ţëšţ");
+        test.equal(rs2.getSource(), "Ťĥíš íš à ţëšţ6543210");
         
         test.done();
     },
@@ -284,15 +281,14 @@ module.exports = {
         });
         test.ok(rs);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
-        test.equal(rs2.getSource(), "Ťĥíš %2$-2.2s íš à %s ţëšţ");
+        test.equal(rs2.getSource(), "Ťĥíš %2$-2.2s íš à %s ţëšţ876543210");
         
         test.done();
     },
@@ -307,15 +303,14 @@ module.exports = {
         });
         test.ok(rs);
         
-        var rb = new ResBundle({
-        	type: "html",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "html"
         });
 
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
-        test.equal(rs2.getSource(), "Ťĥíš <span class=\"foobar\">íš à</span> ţëšţ");
+        test.equal(rs2.getSource(), "Ťĥíš <span class=\"foobar\">íš à</span> ţëšţ76543210");
         
         test.done();
     },
@@ -330,15 +325,14 @@ module.exports = {
         });
         test.ok(rs);
         
-        var rb = new ResBundle({
-        	type: "html",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "html"
         });
 
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
-        test.equal(rs2.getSource(), "Ťĥíš <%= a ? \"foo\" : \"bar\" %> íš à ţëšţ");
+        test.equal(rs2.getSource(), "Ťĥíš <%= a ? \"foo\" : \"bar\" %> íš à ţëšţ2109876543210");
         
         test.done();
     },
@@ -353,15 +347,14 @@ module.exports = {
         });
         test.ok(rs);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var rs2 = rs.generatePseudo("de-DE", rb);
 
         test.ok(rs2);
-        test.equal(rs2.getSource(), "Ťĥíš %2$-2.2s íš à %s {foobar} ţëšţ");
+        test.equal(rs2.getSource(), "Ťĥíš %2$-2.2s íš à %s {foobar} ţëšţ109876543210");
         
         test.done();
     },
@@ -376,9 +369,8 @@ module.exports = {
         });
         test.ok(rs);
         
-        var rb = new ResBundle({
-        	type: "c",
-            locale: "zxx-XX" // the pseudo-locale!
+        var rb = new RegularPseudo({
+        	type: "c"
         });
 
         var rs2 = rs.generatePseudo(undefined, rb);

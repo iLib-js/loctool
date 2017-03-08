@@ -747,11 +747,11 @@ module.exports = {
         
         var alf = new AndroidLayoutFile({
         	project: p, 
-        	pathName: "./res/layout-zh-sHant-rCN-bar/foo.xml"
+        	pathName: "./res/layout-zh-sHans-rCN-bar/foo.xml"
         });
         test.ok(alf);
         
-        test.equal(alf.getLocale(), "zh-Hant-CN");
+        test.equal(alf.getLocale(), "zh-Hans-CN");
         test.equal(alf.getContext(), "bar");
 
         test.done();
